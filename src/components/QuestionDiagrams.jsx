@@ -354,8 +354,6 @@ export const CoordinatePointsDiagram = ({ points = [], xMin = -10, xMax = 10, yM
 // =============================================================================
 export const QuadraticInterceptsDiagram = ({ intercepts = [0, 4], vertex = null }) => {
   const [x1, x2] = intercepts;
-  const h = (x1 + x2) / 2;
-  const k = -0.3 * Math.pow((x2 - x1) / 2, 2);
 
   const generatePath = (toX, toY) => {
     let path = '';

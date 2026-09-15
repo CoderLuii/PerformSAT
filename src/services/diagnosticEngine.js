@@ -23,7 +23,7 @@
 import { convertToSATScore, scaleResponseVector, getItemParams, isAnswerCorrect, estimatePercentile as _estimatePercentile, inferDomain } from './scoring';
 import { isCompositeScaleTarget, DEFAULT_GOAL_SCORE } from './selectors/goalProgress';
 
-import { getSkillById, skillTaxonomy, getSkillsForDomain } from '../data/skillTaxonomy';
+import { getSkillById, skillTaxonomy } from '../data/skillTaxonomy';
 // Pure-constant imports (Stage 2a bundle split): pulled from aliases.js /
 // taxonomy.js so this engine stays corpus-free — importing the bank/rwBank
 // indexes would weld both question corpora into every chunk that needs
@@ -90,14 +90,6 @@ const getQuestionSkills = (q) => {
   if (typeof q?.skill === 'string' && q.skill) return [q.skill];
   return [];
 };
-
-/**
- * Determine which test section a skill belongs to.
- *
- * @param {string} skillId
- * @returns {'math' | 'rw'}
- */
-const getSkillSection = (skillId) => RW_SKILL_SET.has(skillId) ? 'rw' : 'math';
 
 /**
  * Infer a question's SAT domain from its (normalized) skill id array,
@@ -253,12 +245,12 @@ const ERROR_TYPE_COLORS = {
  * Returns: { errorType, confidence, reasoning }
  */
 const classifyError = (question, userAnswer, telemetry, skillProgress) => {
-  const { difficulty, correctAnswer, choices, type } = question;
+  const { difficulty } = question;
   // Normalize math (skills: array) and R&W (skill: string) shapes so R&W
   // misses classify against their real in-test mastery seed instead of the
   // default-50 fallback that calculateAvgSkillMastery returns for [].
   const skills = getQuestionSkills(question);
-  const { timeSpent = 0, visits = 0, answerChanges = 0 } = telemetry || {};
+  const { timeSpent = 0, answerChanges = 0 } = telemetry || {};
 
   // ── UNANSWERED ──
   if (userAnswer === undefined || userAnswer === null || userAnswer === '') {
@@ -1941,8 +1933,8 @@ const generateTrendMessage = (scoreChange, trend) => {
   if (scoreChange > 10) return `Good progress! +${scoreChange} points since your last test. Keep it up!`;
   if (scoreChange > 0) return `Slight improvement (+${scoreChange} points). Stay consistent with your study plan.`;
   if (scoreChange === 0) return 'Same score as last time. Review your study plan and focus on your weak areas.';
-  if (scoreChange > -20) return `Score dipped ${scoreChange} points. Don\'t worry — focus on the areas flagged below.`;
-  return `Score dropped ${scoreChange} points. Let\'s adjust your study plan to address the gaps.`;
+  if (scoreChange > -20) return `Score dipped ${scoreChange} points. Don't worry — focus on the areas flagged below.`;
+  return `Score dropped ${scoreChange} points. Let's adjust your study plan to address the gaps.`;
 };
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -2359,7 +2351,6 @@ const generateMistakeFingerprint = (diagnostic, previousTests) => {
   };
 
   // Determine archetype from dominant error pattern
-  const dominant = errorPatterns.dominantPattern;
   const trapPct = (errorPatterns.summary.find(s => s.type === ERROR_TYPES.TRAP_SUSCEPTIBILITY)?.percentage || 0);
   const carelessPct = (errorPatterns.summary.find(s => s.type === ERROR_TYPES.CARELESS_ERROR)?.percentage || 0);
   const conceptPct = (errorPatterns.summary.find(s => s.type === ERROR_TYPES.CONCEPTUAL_GAP)?.percentage || 0);

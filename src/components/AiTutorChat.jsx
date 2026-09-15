@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { chatWithTutor, checkTutorMath, prewarmTutor } from '../services/aiTutorService';
 import CoachModePicker from './CoachModePicker';
 import { trackCoachModeUsed, trackEvent } from '../services/analyticsService';
@@ -997,6 +997,7 @@ Your goal is to build their problem-solving instincts. Every question they solve
     };
 
     persistToFirestore();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- practiceContext?.skills is only stamped onto a newly created session; practiceContext is a prop object rebuilt by the parent, so depending on it would re-fire this Firestore persist on every render
   }, [messages, storageKey, userId, sessionId, moduleId, lessonId, lessonTitle, standalone, isPracticeQuestion]);
 
   // Flush pending writes on unmount / conversation switch. Snapshot the ref in
@@ -1361,6 +1362,7 @@ Your goal is to build their problem-solving instincts. Every question they solve
     // Deps are deliberately narrower than everything buildPrefixContexts
     // reads: the warm should fire once per question-open, not on every
     // progress-state change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- see the note above: buildPrefixContexts is a per-render function, and the pre-warm must fire once per question-open, not on every progress-state change
   }, [isOpen, prewarmEnabled, moduleId, lessonId, practiceContext?.questionId]);
 
   const handleSend = async (overrideText, regenBase) => {

@@ -9,7 +9,6 @@
  */
 
 import React from 'react';
-import { colors } from '../design/tokens';
 import { ArrowRightIcon, BookOpenIcon, PencilIcon } from '../design/icons';
 
 const SEVERITY_DOT = {

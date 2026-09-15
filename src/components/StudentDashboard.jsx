@@ -1,19 +1,15 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { showToast } from './ui/Toaster';
 import { generateRecommendations } from '../services/recommendationService';
-import SkillDiagnosticSummary from './SkillDiagnosticSummary';
 import ScoreSlider from './ScoreSlider';
-import CollegePicker from './CollegePicker';
 import StudyPlanDashboard from './StudyPlanDashboard';
 import PredictedVsActualCard from './PredictedVsActualCard';
 import CalendarMonth from './CalendarMonth';
 import { countRemainingTodayTasks } from '../services/selectors/todaySlice';
 import { buildLivingDaySlice } from '../services/livingPlan';
 import { resolveActivityDrill, pickModuleWeakness } from '../services/activityDrillRouter';
-import { getSessionAdherence } from '../services/selectors/sessionAdherence';
 import { summarizePredictions } from '../services/selectors/predictionSummary';
 import { getPracticedDayKeys } from '../services/selectors/practicedDays';
-import { formatDailyIntro } from '../services/selectors/dailyIntro';
 import { getMathWeaknesses, getRWWeaknesses } from '../services/selectors/weaknesses';
 import { isGoalAchieved, goalDelta } from '../services/selectors/goalProgress';
 import { isScoreableAttempt, getLatestTestStats } from '../services/selectors/latestTestStats';
@@ -37,14 +33,11 @@ import { getRecentMisses } from '../services/selectors/recentMisses';
 import { buildDailySession } from '../services/dailyReviewEngine';
 import { formatPatternLabel } from '../services/selectors/missedPatternLabel';
 import { loadPracticeTests, loadMathBank, loadRWBank } from '../data/corpusLoader';
-import { MathText } from './MathText';
 import { trackAddPhotoClicked } from '../services/analyticsService';
-import { PlayIcon, ChartBarIcon, TrendingUpIcon, ClipboardIcon, CameraIcon, MicroscopeIcon, TimerIcon, ArrowRightIcon, BrainIcon, TargetIcon, VideoCameraIcon, CheckCircleIcon, CrossIcon, LockIcon } from '../design/icons';
+import { ClipboardIcon, CameraIcon, MicroscopeIcon, TimerIcon, ArrowRightIcon, BrainIcon, TargetIcon, VideoCameraIcon, CheckCircleIcon, CrossIcon, LockIcon } from '../design/icons';
 import { parseLocalDate } from '../utils/localDate';
 import { injectAnimations, useCountUp } from '../design/animations';
-import { DataCard } from './ui/DataCard';
 import { DashboardSkeleton } from './ui/Skeleton';
-import { PrimaryButton, SecondaryButton } from './ui/Button';
 import Avatar, { AVATAR_SIZES } from './ui/Avatar';
 import './StudentDashboard.css';
 import './StudentDashboardV2.css';
@@ -52,25 +45,6 @@ import './StudentDashboardV2.css';
 // Official SAT test dates live in the canonical source: src/data/satTestDates.js
 // (import { SAT_TEST_DATES, getUpcomingSATDates, getSATNameFromDate } when the
 // dashboard needs an official-date picker; see the inner-onboarding chips).
-
-const MODULES = [
-  { id: 'linear-equations', title: 'Linear Equations', lessonCount: 24 },
-  { id: 'functions', title: 'Functions', lessonCount: 10 },
-  { id: 'systems', title: 'System of Equations', lessonCount: 14 },
-  { id: 'transformations', title: 'Transformations', lessonCount: 15 },
-  { id: 'exponents', title: 'Exponents & Exponential Functions', lessonCount: 12 },
-  { id: 'percents', title: 'Percents', lessonCount: 17 },
-  { id: 'equivalent-expressions', title: 'Equivalent Expressions', lessonCount: 3 },
-  { id: 'quadratics', title: 'Quadratic Functions & Equations', lessonCount: 18 },
-  { id: 'radians-degrees', title: 'Radians & Degrees', lessonCount: 4 },
-  { id: 'triangles', title: 'Triangles', lessonCount: 35 },
-  { id: 'circles', title: 'Circles', lessonCount: 22 },
-  { id: 'volume', title: 'Volume', lessonCount: 9 },
-  { id: 'statistics', title: 'Statistics', lessonCount: 12 },
-  { id: 'dimensional-analysis', title: 'Dimensional Analysis', lessonCount: 4 }
-];
-
-const TOTAL_LESSONS = 199;
 
 
 const StudentDashboard = ({
@@ -162,26 +136,8 @@ const StudentDashboard = ({
   const [showDatePicker, setShowDatePicker] = useState(false);
   // The rail countdown's own copy of the date manager (the hero has another).
   const [countdownManaging, setCountdownManaging] = useState(false);
-  const [showTargetPicker, setShowTargetPicker] = useState(false);
   const [showCurrentScorePicker, setShowCurrentScorePicker] = useState(false);
-  const [selectedDate, setSelectedDate] = useState(user?.testDate || '');
-  const [tempTargetScore, setTempTargetScore] = useState(user?.targetScore || 600);
   const [tempCurrentScore, setTempCurrentScore] = useState(user?.currentScore || 500);
-
-  const totalCompleted = Object.values(completedLessons || {}).filter(l => l?.completed).length;
-  const completionPercent = Math.round((totalCompleted / TOTAL_LESSONS) * 100);
-
-  const getModuleCompleted = (moduleId) => {
-    return Object.keys(completedLessons || {}).filter(key =>
-      key.startsWith(`${moduleId}-`) && completedLessons[key]?.completed
-    ).length;
-  };
-
-  const moduleProgress = MODULES.map(m => ({
-    ...m,
-    completed: getModuleCompleted(m.id),
-    percent: Math.round((getModuleCompleted(m.id) / m.lessonCount) * 100)
-  }));
 
   const practiceEntries = Object.entries(practiceProgress || {}).filter(([_, p]) => p.bestScore !== undefined);
   // Performance data for the three colorful tiles, derived from the most
@@ -295,10 +251,6 @@ const StudentDashboard = ({
     () => buildLivingDaySlice(studyPlan, { todayDayName, skillProgress, practiceTestResults, reviewQueue }),
     [studyPlan, todayDayName, skillProgress, practiceTestResults, reviewQueue]
   );
-  const sessionAdherence = useMemo(
-    () => getSessionAdherence({ practiceProgress, practiceTestResults, drillDays }),
-    [practiceProgress, practiceTestResults, drillDays],
-  );
   const hasStudyPlan = !!(studyPlan && Array.isArray(studyPlan.weeks) && studyPlan.weeks.length > 0);
   // First-run (no-data) dashboard: no scored practice test, no study plan AND
   // no completed diagnostic. In this state the protected performance grid +
@@ -358,18 +310,6 @@ const StudentDashboard = ({
   // the arrow can never contradict the number (e.g. an up-arrow on a lower
   // retake). getLatestTestStats returns null on a single attempt or a
   // section/composite scale mismatch, and the render already hides null deltas.
-  const scoreDelta = latestStats ? latestStats.scoreDelta : null;
-  const topWeakness = useMemo(() => {
-    if (!studyPlan) return null;
-    const math = getMathWeaknesses(studyPlan);
-    const rw = getRWWeaknesses(studyPlan);
-    const merged = [...math, ...rw].sort((a, b) => (a.accuracy ?? 100) - (b.accuracy ?? 100));
-    return merged[0] || null;
-  }, [studyPlan]);
-  const dailyIntro = useMemo(
-    () => formatDailyIntro({ todaySlice, latestScore, topWeakness, firstName: user?.firstName }),
-    [todaySlice, latestScore, topWeakness, user?.firstName],
-  );
   // "Questions you struggled with" (item 16) — wrong answers from the last
   // test, hardest first, each with a retry-similar path into the bank.
   // Empty until the practice-tests chunk delivers the resolver (effect
@@ -437,13 +377,6 @@ const StudentDashboard = ({
       return sum + acts.filter(a => !a.completed).length;
     }, 0);
   }, [studyPlan]);
-
-  const handleSelectTargetSchools = (schools) => {
-    if (schools && schools.length > 0 && onUpdateTargetSchools) {
-      onUpdateTargetSchools(schools);
-    }
-    setShowTargetPicker(false);
-  };
 
   const handleSelectCurrentScore = (score) => {
     if (score && onUpdateCurrentScore) {
@@ -541,15 +474,6 @@ const StudentDashboard = ({
     const launch = onStartPacing || onStartPracticeTest;
     if (typeof launch === 'function') launch(session.config);
   };
-
-  const formatTestDate = (dateStr) => {
-    if (!dateStr) return '';
-    // parseLocalDate: date-only strings must parse as LOCAL midnight (UTC
-    // parse shows the previous day in negative-offset timezones).
-    const date = parseLocalDate(dateStr);
-    return date ? date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
-  };
-
 
   useEffect(() => { injectAnimations(); }, []);
 

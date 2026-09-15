@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { colors, typography, spacing, radius, transitions, breakpoints, shadows } from '../design/tokens';
+import { colors } from '../design/tokens';
 import { MathText } from './MathText';
 import { getQuestionsBySkillIds, getTargetedWeaknessSet } from '../data/questions/bank';
 import {
@@ -51,7 +51,6 @@ import { groupFlaggedBySection, flaggedCount as countFlagged, toDrillSeeds } fro
 import { partitionReviewQueue } from '../services/selectors/planReviewQueue';
 import {
   ClipboardIcon,
-  VideoCameraIcon,
   BookOpenIcon,
   PencilIcon,
   BrainIcon,
@@ -191,7 +190,6 @@ function buildPlanModule(w, i, skillProgress, diagnosticSentence) {
   // fixed (review finding). recentDrill comes from annotateFocusAreas
   // (already sinceMs-cut to this plan's generatedAt).
   const recent = w.drillStats || null;
-  const attempts = recent?.attempts ?? 0;
   const mastery = recent?.accuracy ?? 0;
   const hasStarted = !!w.hasDrillSignal;
 
@@ -393,7 +391,6 @@ const StudyPlanLoaded = ({
   const visibleActivities = (week) => (week?.activities || []).filter(isVisibleActivity);
 
   const delta = studyPlanArtifact?.delta || studyPlan._diff || null;
-  const longitudinal = studyPlanArtifact?.longitudinal || null;
   const { weeks } = studyPlan;
   // Prediction-aware Focus Areas ordering (2026-06 audit gap 2): weaknesses
   // the engine flags as likely struggle areas on the NEXT test move to the
@@ -512,14 +509,6 @@ const StudyPlanLoaded = ({
   // the prediction-trust record, and the target-school anchor.
   const identityInsights = useMemo(() => getIdentityInsights(studyPlan), [studyPlan]);
   const predictionTrust = useMemo(() => getPredictionTrust(predictionLog), [predictionLog]);
-  const targetSchool = useMemo(() => {
-    const schools = Array.isArray(user?.targetSchools)
-      ? user.targetSchools.filter(s => s && typeof s.satMath === 'number')
-      : [];
-    if (schools.length === 0) return null;
-    // Anchor to the stretch school — the highest mid-50% Math among picks.
-    return schools.reduce((a, b) => (b.satMath > a.satMath ? b : a));
-  }, [user?.targetSchools]);
   // Review streak — localStorage-backed; only show a LIVE streak (touched
   // today or yesterday, at least 2 days). A stale or 1-day "streak" is noise.
   const reviewStreak = useMemo(() => {
@@ -620,6 +609,7 @@ const StudyPlanLoaded = ({
       if (out.length >= 4) break;
     }
     return out;
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- DAY_NAMES is a per-render literal with fixed contents; adding it would recompute every render without ever changing the result
   }, [weeks, displayCurrentWeek, todayDayName]);
 
   // ── Handlers ─────────────────────────────────────────────────────────

@@ -39,14 +39,6 @@ const SATIntersectingLines = ({
     y2: centerY - lineLength * Math.sin((line2Angle * Math.PI) / 180),
   };
 
-  // Angle positions (clockwise from right)
-  const anglePositions = [
-    { angle: (line1Angle + line2Angle) / 2, label: angles[0] },           // Top-right
-    { angle: 90 + (line1Angle + line2Angle) / 2, label: angles[1] },      // Top-left
-    { angle: 180 + (line1Angle + line2Angle) / 2, label: angles[2] },     // Bottom-left
-    { angle: 270 + (line1Angle + line2Angle) / 2, label: angles[3] },     // Bottom-right
-  ];
-
   // Draw angle arc helper
   const drawAngleArc = (startAngle, endAngle, label, radius = 30) => {
     if (!label) return null;
@@ -91,9 +83,6 @@ const SATIntersectingLines = ({
       </g>
     );
   };
-
-  // Calculate angle bounds between the lines
-  const angleBetween = line2Angle - line1Angle;
 
   return (
     <svg

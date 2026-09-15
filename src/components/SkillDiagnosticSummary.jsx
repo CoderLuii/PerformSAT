@@ -1,6 +1,6 @@
 import React from 'react';
 import { skillTaxonomy } from '../data/skillTaxonomy';
-import { colors, typography, spacing, radius } from '../design/tokens';
+import { colors, radius } from '../design/tokens';
 import { cardStyles } from '../design/components';
 import { WarningIcon, CheckIcon } from '../design/icons';
 

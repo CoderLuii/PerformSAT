@@ -60,7 +60,7 @@ export const canonKey = (t) => (t || '').toLowerCase().replace(/[^a-z0-9]/g, '')
 
 /** Short cost stat from an estimatedImpact string ("~30 points" → "~30 pts"). */
 function shortCost(impact) {
-  const m = String(impact || '').match(/([~≈+\-]?\d[\d,]*(?:\s*[-–]\s*\d[\d,]*)?)\s*(?:points?|pts)/i);
+  const m = String(impact || '').match(/([~≈+-]?\d[\d,]*(?:\s*[-–]\s*\d[\d,]*)?)\s*(?:points?|pts)/i);
   return m ? `${m[1]} pts` : null;
 }
 

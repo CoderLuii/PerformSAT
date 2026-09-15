@@ -139,23 +139,6 @@ function buildPointLoss(report) {
 }
 
 /**
- * Build "Highest ROI Fixes" from prioritized actions + score projection.
- */
-function buildROIFixes(report) {
-  const { prioritizedActions, scoreProjection } = report;
-  if (!prioritizedActions) return [];
-
-  return prioritizedActions.slice(0, 5).map(a => ({
-    title: a.title,
-    description: a.description,
-    estimatedGain: a.estimatedGain,
-    effort: a.effort,
-    category: a.category,
-    actionItems: a.actionItems || [],
-  }));
-}
-
-/**
  * Build domain performance data in stable SAT order.
  */
 function buildDomainPerformance(report) {
@@ -193,7 +176,7 @@ function buildDomainPerformance(report) {
  * and raw diagnosticData.
  */
 function buildBehaviorSignals(report, rawDiagnosticData) {
-  const { timeAnalysis, stamina, answerPatterns } = report;
+  const { timeAnalysis, stamina } = report;
   const raw = rawDiagnosticData || {};
 
   const signals = [];
@@ -294,24 +277,6 @@ function buildBehaviorSignals(report, rawDiagnosticData) {
   }
 
   return signals;
-}
-
-/**
- * Build difficulty breakdown from the engine's difficultyAnalysis.
- */
-function buildDifficultyBreakdown(report) {
-  const { difficultyAnalysis } = report;
-  if (!difficultyAnalysis?.levels) return null;
-
-  return ['easy', 'medium', 'hard'].map(level => {
-    const d = difficultyAnalysis.levels[level] || { correct: 0, total: 0, accuracy: 0 };
-    return {
-      level,
-      correct: d.correct,
-      total: d.total,
-      accuracy: d.accuracy,
-    };
-  });
 }
 
 /**
@@ -695,7 +660,7 @@ function buildQuickStats(report) {
  * Derive a trigger-context string for a weakness: when/where does it show up?
  */
 function deriveTriggerContext(report, weaknessName) {
-  const { difficultyAnalysis, timeAnalysis, domainAnalysis, stamina } = report;
+  const { difficultyAnalysis, domainAnalysis, stamina } = report;
 
   const lowestDiffLevel = (() => {
     if (!difficultyAnalysis?.levels) return null;

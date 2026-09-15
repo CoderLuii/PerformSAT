@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { colors, typography, spacing, radius, shadows, transitions } from '../design/tokens';
+import { colors, typography, spacing } from '../design/tokens';
 import { cardStyles, inputStyles } from '../design/components';
 import { Button } from './ui/Button';
 import { Modal } from './ui/Modal';

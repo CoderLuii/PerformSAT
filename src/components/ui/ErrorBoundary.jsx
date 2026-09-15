@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Sentry from '@sentry/react';
-import { colors, typography, spacing, radius, shadows } from '../../design/tokens';
+import { colors, typography, spacing, radius } from '../../design/tokens';
 import { Button } from './Button';
 
 // A deploy rotates webpack chunk hashes, so a stale session's first lazy

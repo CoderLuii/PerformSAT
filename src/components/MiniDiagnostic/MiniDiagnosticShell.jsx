@@ -21,7 +21,7 @@
  * so resume re-derives the exact same items from the stored attemptId +
  * excludeIds snapshot instead of persisting full question bodies.
  */
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { MathText } from '../MathText';
 import { parsePassageMarkup, buildSegments } from '../rw/HighlightablePassage';
 import QuestionDiagram from '../QuestionDiagrams';
@@ -208,6 +208,7 @@ const MiniDiagnosticShell = ({
       }
     })();
     return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- mount-only sampling/resume; savedProgress and user?.uid are read once on purpose, and re-running on either would re-sample the check-in mid-session
   }, []);
 
   const inSection = phase === 'rw' || phase === 'math';
@@ -243,6 +244,7 @@ const MiniDiagnosticShell = ({
         enteredAtRef.current = null;
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- visits are counted per question KEY; adding currentQuestion (a fresh lookup each render) would re-run the enter/exit pair and inflate visits and timeSpent
   }, [qKey, inSection]);
 
   // ── Section clock ─────────────────────────────────────────────────────────
@@ -263,6 +265,7 @@ const MiniDiagnosticShell = ({
       window.removeEventListener('visibilitychange', onVisible);
       window.removeEventListener('focus', onVisible);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- handleSectionEnd is a per-render function; depending on it would tear down and restart the 500ms section clock on every render
   }, [inSection, deadlineTs, phase]);
 
   // ── Resume persistence (2s debounce, PracticeTest convention) ────────────

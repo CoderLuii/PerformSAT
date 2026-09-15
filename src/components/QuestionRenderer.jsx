@@ -96,10 +96,9 @@ export const createQuestion = (template) => {
   if (typeof template !== 'string') return template;
 
   const segments = [];
-  let remaining = template;
 
   // Match $...$ patterns
-  const mathRegex = /\$([^\$]+)\$/g;
+  const mathRegex = /\$([^$]+)\$/g;
   let lastIndex = 0;
   let match;
 

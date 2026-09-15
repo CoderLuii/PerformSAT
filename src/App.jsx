@@ -59,7 +59,6 @@ import { getReadyAiDiagnostic, loadAttemptSnapshot } from './services/practiceTe
 import { reprioritizePlan } from './services/adaptivePlanService';
 import { findMatchingPlanActivity } from './services/selectors/planActivityMatch';
 import { buildTestFlagEntries } from './services/selectors/flaggedQuestions';
-import { DEFAULT_GOAL_SCORE } from './services/selectors/goalProgress';
 import { logInfo, logWarn } from './utils/log';
 import { CB_MATH_SKILLS, CB_RW_SKILLS } from './data/questions/cbSkillTaxonomy';
 // Direct (non-lazy) import: the drill calculator must open instantly when the
@@ -429,7 +428,7 @@ const PerformSAT = () => {
   }, [showCalculator]);
 
   const { user, loading, logout, updateTestDate, updateTestDates, recordScoreReport, updateTargetScore, updateCurrentScore, updateTargetSchools, updateProfilePhoto, updateFirstName, markOnboardingComplete, markOnboardingSkipped, completeInnerOnboarding } = useAuth();
-  const { loading: progressLoading, hydrated: progressHydrated, completedLessons, practiceProgress, drillDays, reviewQueue, reviewStreak, skillProgress, answeredQuestionIds, practiceTestResults, inProgressTests, studyPlan, studyPlanMeta, studyPlanArtifact, predictionLog, interventionLog, studentFingerprint, miniDiagnostic, bankPractice, activeDrill, flaggedQuestions, recordDrillSkillAttempts, recordPracticedDay, recordBankPractice, saveActiveDrill, clearActiveDrill, toggleFlagQuestion, unflagQuestion, flagQuestionsBatch, getDueCount, getReviewStatistics, getSkillDiagnosticSummary, getSkillBreakdown, recordPracticeTestAttempt, getTestBestScore, getTestAttempts, saveTestProgress, clearTestProgress, resetPracticeTest, removeTestAttempt, getTestProgress, hasTestProgress, saveMiniDiagnostic, saveStudyPlan, saveEditedStudyPlan, markStudyActivityComplete, unmarkStudyActivityComplete, markLessonComplete, isLessonCompleted, getModuleProgress, chaptersRead, markChapterComplete, unmarkChapterComplete, isChapterComplete, lastSaveStatus, retryLastSave } = useProgress(user?.uid);
+  const { loading: progressLoading, hydrated: progressHydrated, completedLessons, practiceProgress, drillDays, reviewQueue, reviewStreak, skillProgress, answeredQuestionIds, practiceTestResults, inProgressTests, studyPlan, studyPlanMeta, studyPlanArtifact, predictionLog, interventionLog, studentFingerprint, miniDiagnostic, bankPractice, activeDrill, flaggedQuestions, recordDrillSkillAttempts, recordPracticedDay, recordBankPractice, saveActiveDrill, clearActiveDrill, toggleFlagQuestion, unflagQuestion, flagQuestionsBatch, getDueCount, getSkillDiagnosticSummary, getSkillBreakdown, recordPracticeTestAttempt, getTestBestScore, getTestAttempts, saveTestProgress, clearTestProgress, resetPracticeTest, removeTestAttempt, getTestProgress, hasTestProgress, saveMiniDiagnostic, saveStudyPlan, saveEditedStudyPlan, markStudyActivityComplete, unmarkStudyActivityComplete, markLessonComplete, isLessonCompleted, getModuleProgress, chaptersRead, markChapterComplete, unmarkChapterComplete, isChapterComplete, lastSaveStatus, retryLastSave } = useProgress(user?.uid);
 
   // Mount the analytics session lifecycle (session_start / session_end +
   // beforeunload flush). Previously orphaned — the hook existed but was never
@@ -659,7 +658,7 @@ const PerformSAT = () => {
       setShowCalculator(false);
       setView('practice');
     }
-  }, []);
+  }, [ensurePracticeAccess]);
 
   // ── Re-engagement nudge deep-link (?next=review|tasks) ──────────────────
   // A push nudge's click action lands the student on /course?next=review. Read
@@ -770,6 +769,7 @@ const PerformSAT = () => {
     pendingBankDrillRef.current = session;
     const timer = setTimeout(() => { saveActiveDrill(session); pendingBankDrillRef.current = null; }, 600);
     return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- deliberately keyed on the four practiceState fields that must trigger a save; whole-object `practiceState` would re-fire (and re-debounce) on every unrelated field change, and saveActiveDrill/clearActiveDrill/activeSection are fresh per render and are read live inside
   }, [user?.uid, view, practiceState.currentQuestionIndex, practiceState.answers, practiceState.currentRoundIndex, practiceState.isComplete]);
 
   // Flush a pending bank-drill save when the student LEAVES the practice view by
@@ -785,6 +785,7 @@ const PerformSAT = () => {
       saveActiveDrill(pendingBankDrillRef.current);
       pendingBankDrillRef.current = null;
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- saveActiveDrill is a fresh closure every render (no useCallback), so depending on it would run this leave-flush on every render instead of only on a practice -> elsewhere transition
   }, [view]);
 
   // Best-effort flush when the tab is hidden / closed (covers a hard refresh
@@ -805,6 +806,7 @@ const PerformSAT = () => {
     // correct-userId saveActiveDrill once auth resolves (an empty dep array would
     // freeze the pre-auth, userId-null closure and never flush). The handler
     // reads pendingBankDrillRef.current live, so nothing goes stale between.
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- see the note above: depending on the per-render saveActiveDrill closure would re-subscribe the visibilitychange listener on every render
   }, [user?.uid]);
 
   // On-ramp eligibility — decided once per session after progress hydrates.
@@ -1399,6 +1401,7 @@ const PerformSAT = () => {
     setView('practiceBank');
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- intentionally a plain per-render function; wrapping it in useCallback would freeze the large set of state values it closes over and change launch behavior
   const startAssignedPractice = async (questionIds, meta = {}) => {
     if (!ensurePracticeAccess()) return;
     let resolveAssignedQuestions;
@@ -2958,7 +2961,6 @@ const PerformSAT = () => {
             getTestAttempts={getTestAttempts}
             inProgressTests={inProgressTests}
             miniDiagnostic={miniDiagnostic}
-            onViewDiagnosis={miniDiagnostic ? () => openDiagnosis('practiceTests') : undefined}
             diagnosticReviewStatus={diagnosticSitting.status}
             onReviewDiagnosticQuestions={() => openDiagnosticReview(0, 'practiceTests')}
             onViewDiagnosis={(test) => openPastAttempt(test, 'diagnosis')}
@@ -3211,7 +3213,6 @@ const PerformSAT = () => {
         {view === 'practice' && activeSection && (() => {
           const isAssigned = practiceState.practiceMode === 'assigned';
           const isAdaptive = practiceState.practiceMode === 'adaptive';
-          const isStudyPlanMode = isAssigned || isAdaptive;
           // Every path into view==='practice' populates shuffledQuestions
           // via an async start* handler (Stage 2b: the render path can no
           // longer reach the topic-question corpus synchronously). The empty

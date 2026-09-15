@@ -493,7 +493,7 @@ const findRecurringTrapForSkills = (practiceTestResults, skillIds) => {
   return topTrap ? { trapType: topTrap[0], count: topTrap[1] } : null;
 };
 
-export default {
+const proactiveRecommendationService = {
   generateProactiveRecommendation,
   shouldOfferProactiveHint,
   getRelatedSkillSuggestions,
@@ -501,3 +501,5 @@ export default {
   buildSkillContextForAI,
   generateCrossSessionRecommendation
 };
+
+export default proactiveRecommendationService;

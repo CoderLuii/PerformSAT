@@ -29,9 +29,6 @@ const SATTable = ({
     });
   }
 
-  // Calculate column count
-  const colCount = finalHeaders.length || (finalRows[0] ? finalRows[0].length : 0);
-
   // Table styles
   const tableStyle = {
     borderCollapse: 'collapse',

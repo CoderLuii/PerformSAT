@@ -70,8 +70,6 @@ export const RightTriangle = ({
     ]);
   }
 
-  const [v0, v1, v2] = scaledVerts;
-
   // Right angle marker
   const rightAngleSize = 15;
   const rv = scaledVerts[rightAngleVertex];
@@ -504,4 +502,6 @@ export const SimilarTriangles = ({
   );
 };
 
-export default { RightTriangle, TriangleWithAngles, RightTriangleWithAltitude, SimilarTriangles };
+const SATTriangleDiagramsBundle = { RightTriangle, TriangleWithAngles, RightTriangleWithAltitude, SimilarTriangles };
+
+export default SATTriangleDiagramsBundle;

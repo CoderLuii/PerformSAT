@@ -1,31 +1,10 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { colors, typography, spacing, radius, shadows, transitions, zIndex } from '../../design/tokens';
+import React, { useState, useEffect } from 'react';
+import { colors, typography, spacing, radius, transitions, zIndex } from '../../design/tokens';
 import { injectAnimations } from '../../design/animations';
 import { useViewport } from '../../hooks/useViewport';
 import Wordmark from './Wordmark';
 import Mark from './Mark';
 import Avatar from './Avatar';
-
-// Route ↔ view state mapping
-const VIEW_ROUTES = {
-  dashboard: '/app',
-  learnTab: '/app/learn',
-  learnChapter: '/app/learn/chapter',
-  modules: '/app/videos',
-  list: '/app/videos/module',
-  lesson: '/app/videos/lesson',
-  practice: '/app/practice',
-  practiceBank: '/app/practice-bank',
-  practiceTests: '/app/tests',
-  takingTest: '/app/tests/active',
-  diagnosticReport: '/app/diagnostic',
-  studyPlan: '/app/study-plan',
-};
-
-const ROUTE_VIEWS = Object.fromEntries(
-  Object.entries(VIEW_ROUTES).map(([k, v]) => [v, k])
-);
 
 // Navigation items.
 //

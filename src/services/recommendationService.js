@@ -4,7 +4,6 @@
  * Inspired by Acely AI SAT's "tell students what to do" approach
  */
 
-import { getDueReviewCount } from './reviewService';
 import { parseLocalDate } from '../utils/localDate';
 
 // Module metadata for context

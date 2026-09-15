@@ -129,7 +129,6 @@ export function renderAxes(coordSystem, options = {}) {
     showYAxis = true,
     xTickInterval = 1,
     yTickInterval = 1,
-    showOrigin = true,
     xAxisLabel = 'x',
     yAxisLabel = 'y',
   } = options;

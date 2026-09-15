@@ -21,7 +21,7 @@ export default function normalizeFractions(text) {
   result = result.replace(/`[^`]+`/g, m => ph(m));
   // 2. Protect existing math delimiters
   result = result.replace(/\$\$[\s\S]*?\$\$/g, m => ph(m));
-  result = result.replace(/\$[^\$]+?\$/g, m => ph(m));
+  result = result.replace(/\$[^$]+?\$/g, m => ph(m));
   result = result.replace(/\\\[[\s\S]*?\\\]/g, m => ph(m));
   result = result.replace(/\\\([^)]+\\\)/g, m => ph(m));
   // 3. Protect URLs and file paths
@@ -31,7 +31,7 @@ export default function normalizeFractions(text) {
 
   // Convert standalone numeric fractions: optional negative, integer numerator/denominator
   result = result.replace(
-    /(?<![a-zA-Z\d.$\/\\])(-?\d+)\s*\/\s*(\d+)(?![a-zA-Z\d.$\/])/g,
+    /(?<![a-zA-Z\d.$/\\])(-?\d+)\s*\/\s*(\d+)(?![a-zA-Z\d.$/])/g,
     (_, num, den) => `$\\frac{${num}}{${den}}$`
   );
 

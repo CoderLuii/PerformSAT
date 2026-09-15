@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SolutionExplanation from './SolutionExplanation';
 import { MathText } from './MathText';
-import { colors, typography, radius, shadows, transitions } from '../design/tokens';
+import { colors, typography, shadows } from '../design/tokens';
 import { CheckIcon, CrossIcon } from '../design/icons';
 
 const PracticeLesson = ({ lesson, onComplete, onBack }) => {

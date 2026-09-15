@@ -24,7 +24,7 @@ import { hasQuestionsForSection, getSectionsWithQuestions } from '../data/questi
 import { getTargetedWeaknessSet as bankTargetedWeaknessSet, getQuestionsBySkillIds as bankQuestionsBySkillIds } from '../data/questions/bank';
 import { DEFAULT_GOAL_SCORE } from './selectors/goalProgress';
 import { getSkillById, skillTaxonomy } from '../data/skillTaxonomy';
-import { ERROR_TYPES, ERROR_TYPE_LABELS, ERROR_TYPE_ICONS } from './diagnosticEngine';
+import { ERROR_TYPES } from './diagnosticEngine';
 import { generatePracticeAssignments, buildAdaptiveQueueSeed, buildStrengthFocusAssignments, serializeAdaptiveState, createAdaptiveSessionState } from './practiceAssignmentService';
 // SKILL_ALIAS_MAP from aliases.js (pure constants, Stage 2a bundle split);
 // resolveQuestionById (practiceAssignmentService) dispatches by id namespace
@@ -123,9 +123,6 @@ const buildSkillToModuleMap = () => {
 
 const SKILL_TO_MODULE_MAP = buildSkillToModuleMap();
 
-// Day names for the weekly schedule
-const DAY_NAMES = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-
 // ═══════════════════════════════════════════════════════════════════════════
 // MAIN STUDY PLAN GENERATOR
 // ═══════════════════════════════════════════════════════════════════════════
@@ -137,10 +134,9 @@ function computeDifficultyMix(difficultyAnalysis) {
   if (!difficultyAnalysis?.levels) {
     return { easy: 0.30, medium: 0.45, hard: 0.25 };
   }
-  const { easy, medium, hard } = difficultyAnalysis.levels;
+  const { easy, medium } = difficultyAnalysis.levels;
   const easyAcc = easy?.accuracy ?? 70;
   const medAcc = medium?.accuracy ?? 50;
-  const hardAcc = hard?.accuracy ?? 30;
   const cliff = difficultyAnalysis.difficultyCliff;
 
   if (cliff === 'easy' || easyAcc < 60) {
@@ -811,7 +807,6 @@ const topSkillForErrorType = (diagnostic, errorType) => {
 const generateStrategyActivities = (diagnostic) => {
   const activities = [];
   const errorCounts = diagnostic.errorPatterns.counts;
-  const hasRWGaps = (diagnostic.skillAnalysis?.weakSkills || []).some(s => s.section === 'rw');
 
   // Trap-answer drill — a REAL set on the skill where the traps actually bit.
   if ((errorCounts[ERROR_TYPES.TRAP_SUSCEPTIBILITY] || 0) >= 2) {
@@ -1038,7 +1033,7 @@ const distributeAcrossWeeks = (activities, strategyActivities, totalWeeks, minut
   ].sort((a, b) => b.priority - a.priority);
 
   // Track which activities have been assigned
-  let activityPool = [...allActivities];
+  const activityPool = [...allActivities];
 
   // ═══ SECTION BALANCE (Plan v3 A1) ═══
   // A TRUE plan never goes single-section. Weekly skill minutes split between
@@ -1158,7 +1153,12 @@ const distributeAcrossWeeks = (activities, strategyActivities, totalWeeks, minut
           weekPhase: 'start',
         });
         weekMinutesUsed += reviewActivity.duration;
-        activityPool = activityPool.filter(a => a !== reviewActivity);
+        // Same effect as `activityPool.filter(a => a !== reviewActivity)`, done
+        // in place so the pool stays a const (and the per-week helpers below
+        // are not closures over a reassignable binding).
+        for (let i = activityPool.length - 1; i >= 0; i--) {
+          if (activityPool[i] === reviewActivity) activityPool.splice(i, 1);
+        }
       }
     }
 
@@ -1237,11 +1237,14 @@ const distributeAcrossWeeks = (activities, strategyActivities, totalWeeks, minut
       && weekMinutesUsed < Math.round(weekMinutesBudget * 0.85)
     ) {
       const wantSection = (sectionMinutes.rw - targetFor('rw')) <= (sectionMinutes.math - targetFor('math')) ? 'rw' : 'math';
+      // Snapshot the running total: both predicates below read it synchronously
+      // and it is only bumped after the picks, so this is the same value.
+      const usedSoFar = weekMinutesUsed;
       let bIdx = backfillPool.findIndex(
-        (a) => sectionOf(a) === wantSection && weekMinutesUsed + a.duration <= weekMinutesBudget + 10,
+        (a) => sectionOf(a) === wantSection && usedSoFar + a.duration <= weekMinutesBudget + 10,
       );
       if (bIdx === -1) {
-        bIdx = backfillPool.findIndex((a) => weekMinutesUsed + a.duration <= weekMinutesBudget + 10);
+        bIdx = backfillPool.findIndex((a) => usedSoFar + a.duration <= weekMinutesBudget + 10);
       }
       if (bIdx === -1) break;
       const picked = backfillPool[bIdx];
@@ -1399,7 +1402,8 @@ const buildPlanArc = ({ weeks, gapBasis, currentScore, targetScore, testDate, da
   for (let p = 0; p < phaseCount; p++) {
     const span = base + (p < extra ? 1 : 0);
     if (span === 0) continue;
-    const weekNumbers = Array.from({ length: span }, (_, i) => cursor + i);
+    const phaseStart = cursor;
+    const weekNumbers = Array.from({ length: span }, (_, i) => phaseStart + i);
     const phaseWeeks = weekNumbers.map((n) => weeks[n - 1]).filter(Boolean);
     const focusDomains = [...new Set(phaseWeeks.flatMap((w) => w.focusDomains || []))].slice(0, 3);
     phases.push({ index: p, label: labels[p], weekNumbers, focusDomains });

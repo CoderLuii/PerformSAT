@@ -217,4 +217,6 @@ const buildScoreTrajectory = (testAttempts) => {
   return `${scores.join(' -> ')} (${direction} over ${scores.length} tests)`;
 };
 
-export default { buildTrendContext };
+const trendContextBuilder = { buildTrendContext };
+
+export default trendContextBuilder;

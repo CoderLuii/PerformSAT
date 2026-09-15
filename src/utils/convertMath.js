@@ -89,7 +89,7 @@ export const containsMath = (text) => {
   if (!text || typeof text !== 'string') return false;
 
   // Check for LaTeX delimiters
-  if (/\$[^\$]+\$/.test(text)) return true;
+  if (/\$[^$]+\$/.test(text)) return true;
   if (/\$\$[\s\S]+\$\$/.test(text)) return true;
 
   // Check for plain math notation that might need conversion
@@ -126,10 +126,12 @@ export const LaTeXTemplates = {
   div: () => '\\div',
 };
 
-export default {
+const convertMath = {
   convertToLaTeX,
   convertQuestion,
   convertAllQuestions,
   containsMath,
   LaTeXTemplates,
 };
+
+export default convertMath;

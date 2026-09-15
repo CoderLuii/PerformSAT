@@ -292,203 +292,6 @@ const QuestionGrid = memo(({ questions, currentIndex, answers, markedForReview, 
   );
 });
 
-// OLD MathText component - NOW USING KaTeX-based version from ./MathText.jsx
-// Keeping for reference only
-const OldMathText_DISABLED = ({ text, style = {} }) => {
-  if (!text) return null;
-
-  const baseStyle = {
-    fontFamily: 'Times New Roman, Georgia, serif',
-    ...style
-  };
-
-  // Parse and render math expressions
-  const renderMath = (str) => {
-    if (typeof str !== 'string') return str;
-
-    const elements = [];
-    let remaining = str;
-    let key = 0;
-
-    while (remaining.length > 0) {
-      // Match fraction pattern: numerator/denominator or (expr)/(expr)
-      const fractionMatch = remaining.match(/^\(([^)]+)\)\/\(([^)]+)\)/);
-      if (fractionMatch) {
-        elements.push(
-          <span key={key++} style={{
-            display: 'inline-flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            verticalAlign: 'middle',
-            margin: '0 2px'
-          }}>
-            <span style={{ borderBottom: '1px solid currentColor', padding: '0 4px', lineHeight: '1.2' }}>
-              {renderMath(fractionMatch[1])}
-            </span>
-            <span style={{ padding: '0 4px', lineHeight: '1.2' }}>
-              {renderMath(fractionMatch[2])}
-            </span>
-          </span>
-        );
-        remaining = remaining.slice(fractionMatch[0].length);
-        continue;
-      }
-
-      // Match square root pattern: √(content) or √content
-      const sqrtMatch = remaining.match(/^√\(([^)]+)\)/) || remaining.match(/^√(\d+)/);
-      if (sqrtMatch) {
-        elements.push(
-          <span key={key++} style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            verticalAlign: 'middle'
-          }}>
-            <span style={{ fontSize: '1.2em', marginRight: '1px' }}>√</span>
-            <span style={{
-              borderTop: '1px solid currentColor',
-              paddingTop: '2px',
-              paddingLeft: '2px',
-              paddingRight: '2px'
-            }}>
-              {renderMath(sqrtMatch[1])}
-            </span>
-          </span>
-        );
-        remaining = remaining.slice(sqrtMatch[0].length);
-        continue;
-      }
-
-      // Match exponent patterns: x^2, x^(expr), base^exp
-      const expMatch = remaining.match(/^(\w+|\))\^(\d+)/) || remaining.match(/^(\w+|\))\^\(([^)]+)\)/);
-      if (expMatch) {
-        // Don't add the base if we just added it (e.g., for cases like "x^2")
-        const base = expMatch[1];
-        const exp = expMatch[2];
-
-        // Check if base was already added as last element
-        if (elements.length > 0 && typeof elements[elements.length - 1] === 'string' &&
-            elements[elements.length - 1].endsWith(base)) {
-          // Remove the base from the last string element
-          elements[elements.length - 1] = elements[elements.length - 1].slice(0, -base.length);
-        } else if (base !== ')') {
-          elements.push(<span key={key++}>{base}</span>);
-        }
-
-        elements.push(
-          <sup key={key++} style={{ fontSize: '0.75em', verticalAlign: 'super' }}>
-            {renderMath(exp)}
-          </sup>
-        );
-        remaining = remaining.slice(expMatch[0].length);
-        continue;
-      }
-
-      // Match Unicode superscript numbers and convert them
-      const superMatch = remaining.match(/^([⁰¹²³⁴⁵⁶⁷⁸⁹]+)/);
-      if (superMatch) {
-        const superMap = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
-        const converted = superMatch[1].split('').map(c => superMap[c] || c).join('');
-        elements.push(
-          <sup key={key++} style={{ fontSize: '0.75em', verticalAlign: 'super' }}>
-            {converted}
-          </sup>
-        );
-        remaining = remaining.slice(superMatch[0].length);
-        continue;
-      }
-
-      // Match subscript pattern: x_n or x_(expr)
-      const subMatch = remaining.match(/^(\w)_(\w)/) || remaining.match(/^(\w)_\(([^)]+)\)/);
-      if (subMatch) {
-        elements.push(
-          <span key={key++}>
-            {subMatch[1]}
-            <sub style={{ fontSize: '0.75em', verticalAlign: 'sub' }}>
-              {renderMath(subMatch[2])}
-            </sub>
-          </span>
-        );
-        remaining = remaining.slice(subMatch[0].length);
-        continue;
-      }
-
-      // Match pi symbol
-      if (remaining.startsWith('π') || remaining.toLowerCase().startsWith('pi')) {
-        const len = remaining.startsWith('π') ? 1 : 2;
-        elements.push(<span key={key++} style={{ fontStyle: 'normal' }}>π</span>);
-        remaining = remaining.slice(len);
-        continue;
-      }
-
-      // Match degree symbol
-      if (remaining.startsWith('°')) {
-        elements.push(<span key={key++}>°</span>);
-        remaining = remaining.slice(1);
-        continue;
-      }
-
-      // Match ± symbol
-      if (remaining.startsWith('+-') || remaining.startsWith('±')) {
-        const len = remaining.startsWith('±') ? 1 : 2;
-        elements.push(<span key={key++}>±</span>);
-        remaining = remaining.slice(len);
-        continue;
-      }
-
-      // Match infinity
-      if (remaining.startsWith('∞') || remaining.toLowerCase().startsWith('infinity')) {
-        const len = remaining.startsWith('∞') ? 1 : 8;
-        elements.push(<span key={key++}>∞</span>);
-        remaining = remaining.slice(len);
-        continue;
-      }
-
-      // Match ≤, ≥, ≠
-      if (remaining.startsWith('<=')) {
-        elements.push(<span key={key++}>≤</span>);
-        remaining = remaining.slice(2);
-        continue;
-      }
-      if (remaining.startsWith('>=')) {
-        elements.push(<span key={key++}>≥</span>);
-        remaining = remaining.slice(2);
-        continue;
-      }
-      if (remaining.startsWith('!=')) {
-        elements.push(<span key={key++}>≠</span>);
-        remaining = remaining.slice(2);
-        continue;
-      }
-
-      // Default: add character as-is
-      elements.push(remaining[0]);
-      remaining = remaining.slice(1);
-    }
-
-    // Combine adjacent strings
-    const combined = [];
-    let currentString = '';
-    for (const el of elements) {
-      if (typeof el === 'string') {
-        currentString += el;
-      } else {
-        if (currentString) {
-          combined.push(currentString);
-          currentString = '';
-        }
-        combined.push(el);
-      }
-    }
-    if (currentString) {
-      combined.push(currentString);
-    }
-
-    return combined.length === 1 ? combined[0] : combined;
-  };
-
-  return <span style={baseStyle}>{renderMath(text)}</span>;
-};
-
 // Fraction component for standalone fractions
 const Fraction = ({ numerator, denominator, style = {} }) => (
   <span style={{
@@ -1054,6 +857,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     // NOTE: onSaveProgress is deliberately absent from the deps — see the ref
     // note above. Adding it back re-opens the write loop (measured: a single
     // answer click then produced ~3 writes per 8 idle seconds, forever).
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- test?.isDiagnostic / test.diagnosticManifest are fixed for the life of a sitting and are read live inside the builder; adding the manifest object would re-open the write loop described above
   }, [answers, currentModule, currentQuestion, markedForReview, eliminatedChoices, highlightsByKey, testCompleted, bluebookReview, isTimed, module2Variant, m2VariantManuallySet, rwModule2Variant, rwM2VariantManuallySet, moduleCompleted]);
 
   useEffect(() => {
@@ -1374,22 +1178,20 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
       // App-level onSaveResult handler so they appear in the Review Queue's
       // Flagged group. No correctness signal — flagging stays user-driven.
       const markedForReviewRefs = [];
-      {
-        effectiveModules.forEach((mod, modIdx) => {
-          mod.questions.forEach((q, qIdx) => {
-            const key = `${modIdx}-${qIdx}`;
-            if (!questionDetails[key]?.markedForReview) return;
-            markedForReviewRefs.push({
-              questionId: q.id,
-              section: mod.section ?? null,
-              moduleIndex: modIdx,
-              questionIndex: qIdx,
-              skills: getQuestionSkills(q),
-              snippet: q.stem ?? q.question ?? null,
-            });
+      effectiveModules.forEach((mod, modIdx) => {
+        mod.questions.forEach((q, qIdx) => {
+          const key = `${modIdx}-${qIdx}`;
+          if (!questionDetails[key]?.markedForReview) return;
+          markedForReviewRefs.push({
+            questionId: q.id,
+            section: mod.section ?? null,
+            moduleIndex: modIdx,
+            questionIndex: qIdx,
+            skills: getQuestionSkills(q),
+            snippet: q.stem ?? q.question ?? null,
           });
         });
-      }
+      });
 
       const resultsToSave = {
         attemptId: newAttemptId,
@@ -1626,6 +1428,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
       clearTimeout(completionTimer);
       completionInFlight.current = false;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- this fires once per completed test and is guarded by completionInFlight/resultSaved; the listed extras are per-render derivations read live at submit time, and depending on them would re-enter scoring and study-plan generation
   }, [testCompleted, onSaveResult, onSessionComplete, onClearProgress, resultSaved, test, answers, isTimed, user, completedLessons, practiceProgress, practiceTestResults, onSaveStudyPlan, runDiagnosticFinish]);
 
   // Post-test: generate AI diagnostic narrative automatically
@@ -2009,7 +1812,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
       }
       setTestCompleted(true);
     }
-  }, [test.modules.length, test.module2Easy, test.rwModule2Easy, test.modules, mathM1Index, rwM1Index, module2Variant, m2VariantManuallySet, rwModule2Variant, rwM2VariantManuallySet, answers, onClearProgress, onBack]);
+  }, [test.module2Easy, test.rwModule2Easy, test.modules, mathM1Index, rwM1Index, module2Variant, m2VariantManuallySet, rwModule2Variant, rwM2VariantManuallySet, answers, onClearProgress, onBack]);
 
   useEffect(() => { moduleCompletedRef.current = moduleCompleted; }, [moduleCompleted]);
 
@@ -2197,26 +2000,6 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
   const handleCancelAction = () => {
     setConfirmAction(null);
     setIsPaused(false);
-  };
-
-  // Calculate total score
-  const calculateTotalScore = () => {
-    let total = 0;
-    effectiveModules.forEach((mod, modIdx) => {
-      mod.questions.forEach((q, qIdx) => {
-        if (isAnswerCorrect(q, answers[`${modIdx}-${qIdx}`])) total++;
-      });
-    });
-    return total;
-  };
-
-  // Get score level description
-  const getScoreLevel = (scaledScore) => {
-    if (scaledScore >= 750) return { level: 'Excellent', color: colors.semantic.success };
-    if (scaledScore >= 650) return { level: 'Good', color: colors.semantic.success };
-    if (scaledScore >= 550) return { level: 'Average', color: colors.semantic.warning };
-    if (scaledScore >= 450) return { level: 'Below Average', color: colors.accent.orange };
-    return { level: 'Needs Improvement', color: colors.semantic.error };
   };
 
   // Module completion screen

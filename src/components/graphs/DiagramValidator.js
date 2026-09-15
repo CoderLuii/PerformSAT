@@ -306,7 +306,7 @@ const diagramValidators = {
     const errors = [];
     const warnings = [];
 
-    const { vertices, labels } = params;
+    const { vertices } = params;
 
     if (!vertices || vertices.length !== 3) {
       errors.push('rightTriangle must have exactly 3 vertices');
@@ -483,10 +483,12 @@ export function runStartupValidation(practiceTests) {
   return allValid;
 }
 
-export default {
+const diagramValidator = {
   validateDiagram,
   validatePracticeTest,
   validateAllPracticeTests,
   reportValidationResults,
   runStartupValidation,
 };
+
+export default diagramValidator;

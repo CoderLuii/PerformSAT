@@ -8,7 +8,6 @@
 import React, { useState } from 'react';
 import { MathText } from './MathText';
 import { ChevronDownIcon, ChevronUpIcon } from '../design/icons';
-import { resolveSkillLink } from '../services/scoring/remediationLinker';
 
 const TRAP_TYPE_LABELS = {
   partial_calculation: 'Partial Calculation Trap',
@@ -27,7 +26,6 @@ const QuestionInsightCard = ({ insight, questionLabel }) => {
   if (!insight) return null;
 
   const trapLabel = TRAP_TYPE_LABELS[insight.trapType] || TRAP_TYPE_LABELS.unknown;
-  const skillLink = insight.relatedSkillId ? resolveSkillLink(insight.relatedSkillId) : null;
 
   return (
     <div style={{

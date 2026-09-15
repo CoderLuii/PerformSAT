@@ -133,14 +133,7 @@ const TestResults = ({
   savedStudyPlan,
   user,
 }) => {
-  const [expandedWeakness, setExpandedWeakness] = useState(0);
-  const [showImpact, setShowImpact] = useState(false);
-  const [showProof, setShowProof] = useState(false);
-  const [showNarrativeDetails, setShowNarrativeDetails] = useState(false);
-  const [showBehaviorDetail, setShowBehaviorDetail] = useState(false);
   const [showEvidenceDetail, setShowEvidenceDetail] = useState(false);
-  const [activeDomainTab, setActiveDomainTab] = useState(null);
-  const [showQuestionInsights, setShowQuestionInsights] = useState(false);
   // Domains & Skills block: which domain rows are expanded to their skills.
   // Keyed `${section}:${domainId}`. Collapsed by default (empty set).
   const [diagEntrance, setDiagEntrance] = useState(true);
@@ -186,7 +179,6 @@ const TestResults = ({
   // AI diagnostic comes pre-populated from PracticeTest's auto-generation pipeline
   const aiStatus = aiDiagnosticState?.status || 'idle';
   const aiNarrative = aiDiagnosticState?.narrative || null;
-  const aiError = aiDiagnosticState?.error || null;
 
   // Calculate scores
   const calculateModuleScore = (moduleIndex) => {
@@ -252,15 +244,6 @@ const TestResults = ({
   const headlineLabel = isMultiSection
     ? 'Total Score'
     : (test.modules[0]?.section === 'reading-writing' ? 'Reading & Writing Score' : 'Math Score');
-
-  const allQuestionEntries = test.modules.flatMap((mod, modIdx) =>
-    mod.questions.map((q, qIdx) => {
-      const key = `${modIdx}-${qIdx}`;
-      const userAnswer = answers[key];
-      const isAnswered = userAnswer !== undefined && userAnswer !== null && userAnswer !== '';
-      return { key, question: q, isAnswered, isCorrect: isAnswered && isAnswerCorrect(q, userAnswer) };
-    })
-  );
 
   // Header meta: total attempt time ("1h 13m") from telemetry, when present.
   const headerTimeSeconds = Object.values(diagnosticData?.questionDetails || {})
@@ -440,7 +423,6 @@ const TestResults = ({
     // would inflate "improvement from first" and chart on the trajectory.
     const testHistory = practiceTestResults?.[test.id];
     const attempts = (testHistory?.attempts || []).filter(a => !isBlankAttempt(a));
-    const pastAttempts = attempts.filter(a => a.scaledScore !== satScore || a.completedAt !== attempts[attempts.length - 1]?.completedAt);
     const hasHistory = attempts.length > 1;
     const bestScore = testHistory?.bestScaledScore || satScore;
     // attempts is newest-first after Firestore hydration (trimAttempts sorts
@@ -876,19 +858,7 @@ const TestResults = ({
     const narrative = buildNarrativeFlow(uni);
     if (!narrative) return null;
 
-    const { blocks, details, meta } = narrative;
-
-    // Use Acely/PerformSAT primary orange brand colors
-    const aiGradient = 'linear-gradient(135deg, var(--color-brand-orange-500) 0%, var(--color-brand-orange-600) 100%)';
-    const aiGradientGlow = 'rgba(251, 146, 60, 0.25)'; // orange-400
-    const aiColorText = 'var(--color-brand-orange-600)';
-
-    const sevColors = {
-      critical:    { bg: 'var(--color-error-100)', border: 'rgba(239,68,68,0.2)', dot: 'var(--color-error-600)' },
-      significant: { bg: 'rgba(239,68,68,0.04)', border: 'rgba(239,68,68,0.1)', dot: 'var(--color-error-600)' },
-      moderate:    { bg: 'var(--color-warning-100)', border: 'rgba(245,158,11,0.2)', dot: 'var(--color-warning-600)' },
-      warning:     { bg: 'rgba(245,158,11,0.04)', border: 'rgba(245,158,11,0.1)', dot: 'var(--color-warning-600)' },
-    };
+    const { blocks, meta } = narrative;
 
     const renderBlock = (block, idx) => {
       if (block.id === 'context') {
@@ -1252,35 +1222,12 @@ const TestResults = ({
     };
 
     const getBlock = (id) => blocks.find(b => b.id === id);
-    const hasDetails = (details.overflowDiagnosis && details.overflowDiagnosis.length > 0) || details.uncertainties || details.qualityFailed;
-
-    const hasWhatHappened = getBlock('context') || getBlock('behaviorAmplifier');
     const hasEvidence = getBlock('evidence');
-    const hasAction = getBlock('nextMove');
-    let stepCounter = 0;
 
     // ─── Extract the #1 hero finding from context block (skip score restatements) ───
     const contextBlock = getBlock('context');
     const contextItems = contextBlock?.items || [];
     const scoreRestateRe = /^(you scored|you're scoring|your score|you got \d+\/|you are \d+ points|your percentile|scoring at the \d+)/i;
-    const heroItem = contextItems.find(item => {
-      const text = typeof item === 'string' ? item : item?.text || '';
-      return text.length > 0 && !scoreRestateRe.test(text.trim());
-    }) || contextItems[0] || null;
-    const heroIdx = heroItem ? contextItems.indexOf(heroItem) : 0;
-    const heroText = heroItem ? (typeof heroItem === 'string' ? heroItem : heroItem.text || '') : '';
-    const heroCause = heroItem?.causalMechanism || null;
-    const heroImpact = heroItem?.estimatedImpact || null;
-    const additionalFindings = contextItems.filter((_, i) => i !== heroIdx);
-
-    // Compute total recoverable points
-    const remPathBlock = getBlock('remediationPath');
-    const totalRecoverable = (remPathBlock?.items || [])
-      .reduce((sum, item) => sum + (item.estimatedGain || 0), 0);
-
-    // MetaStrip stats
-    const metaBlock = getBlock('metaStrip');
-    const metaStats = metaBlock?.items || [];
 
     // All context items are diagnosis findings (no prescriptive content)
     const allFindings = contextItems.filter(item => {

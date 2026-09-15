@@ -10,7 +10,7 @@ import {
   generateId,
   LABEL_HALO,
 } from './SATGraphCore';
-import { validateParams, calculateYInterceptFromIntersection, verifyPointOnLine } from './BaseCoordinateSystem';
+import { validateParams } from './BaseCoordinateSystem';
 
 /**
  * CRITICAL: Calculate y-intercepts FROM the intersection point

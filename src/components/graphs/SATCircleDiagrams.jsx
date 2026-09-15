@@ -770,4 +770,6 @@ export const CircleWithInscribedTriangle = ({
   );
 };
 
-export default { CircleWithSector, CircleWithSquare, CircleInscribed, CircleWithInscribedTriangle };
+const SATCircleDiagramsBundle = { CircleWithSector, CircleWithSquare, CircleInscribed, CircleWithInscribedTriangle };
+
+export default SATCircleDiagramsBundle;

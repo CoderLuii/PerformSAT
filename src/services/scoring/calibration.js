@@ -10,9 +10,7 @@
  */
 
 import {
-  DIFFICULTY,
   MODULE_ROUTE,
-  DEFAULT_IRT_PARAMS,
   resolveItemParams,
 } from './scoringSchema';
 

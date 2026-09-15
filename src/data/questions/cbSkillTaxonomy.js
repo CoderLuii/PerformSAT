@@ -339,7 +339,6 @@ export const PATTERN_TO_CB_SKILL = {
 // ── Lookup helpers ───────────────────────────────────────────────────────────
 
 const CB_MATH_BY_SLUG = new Map(CB_MATH_SKILLS.map(s => [s.slug, s]));
-const CB_RW_BY_SLUG = new Map(CB_RW_SKILLS.map(s => [s.slug, s]));
 
 /**
  * Returns the CB math skill object for a given pattern slug, or null.
