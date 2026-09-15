@@ -15,7 +15,16 @@ npm install
 npm start          # dev server (CRA, port 3000)
 npm test           # Jest watcher
 CI=true npx react-scripts test --watchAll=false   # run all tests once
+CI=true npm run build                             # what CI runs: lint warnings FAIL the build
 ```
+
+Node 24 is required (`.nvmrc`, `engines.node`); the functions runtime and CI use
+it too. The lockfile must stay valid under npm 10 as well as npm 11 — after any
+dependency change run `npx -y npm@10 ci --dry-run --ignore-scripts` and expect
+zero `npm error` lines. CI (`.github/workflows/ci.yml`) is the gate: unit tests,
+content-bank validators, a `CI=true` production build, functions typecheck +
+lint + tests, Firestore rules tests, and a hermetic browser E2E. A commit is not
+done until `gh run list --branch main --limit 1` shows it green.
 
 Firebase config lives in `src/firebase/config.js`. To run against a real project you need a `.env.local` with the Firebase keys (template at `.env.local.template`). To dogfood the study plan or drill flow locally, run `npm run dev:emulator` then `npm run dev:seed` (seeds one student + a completed test + a study plan). No `schools` doc is needed: the school/principal (B2B2C) model was removed 2026-05-29 in favor of direct-to-consumer; the app is now owner-only.
 

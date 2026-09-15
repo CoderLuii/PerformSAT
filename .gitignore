@@ -85,3 +85,6 @@ marketing/carousel-generator/node_modules/
 marketing/flyers/src/node_modules/
 marketing/flyers/src/.work/
 knowledge/reference/
+
+# Claude Code agent worktrees (local only)
+.claude/worktrees/
