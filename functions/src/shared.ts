@@ -55,9 +55,9 @@ export async function verifyAuth(
 // (where provided) the student uid — the per-student cost/latency dashboard
 // we otherwise fly blind on. Inert without the key: URL and headers collapse
 // to the plain Anthropic values.
-export const ANTHROPIC_MESSAGES_URL = process.env.HELICONE_API_KEY
-  ? "https://anthropic.helicone.ai/v1/messages"
-  : "https://api.anthropic.com/v1/messages";
+export const ANTHROPIC_MESSAGES_URL = process.env.HELICONE_API_KEY ?
+  "https://anthropic.helicone.ai/v1/messages" :
+  "https://api.anthropic.com/v1/messages";
 
 /**
  * Standard Anthropic request headers, plus Helicone auth/attribution when

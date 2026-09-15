@@ -15,7 +15,6 @@ const {
 
 const DAY = 24 * 60 * 60 * 1000;
 const NOW = Date.parse("2026-05-31T12:00:00Z");
-const TODAY = "2026-05-31";
 const YESTERDAY = "2026-05-30";
 
 test("classifyNudge: active today is never nudged", () => {

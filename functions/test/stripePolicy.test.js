@@ -421,24 +421,24 @@ test("self-heal: null/undefined doc is a safe no-op", () => {
 });
 
 // ── sanitizeRefSlug (creator link attribution) ────────────────────────────
-const { sanitizeRefSlug } = require('../lib/stripePolicy.js');
+const {sanitizeRefSlug} = require("../lib/stripePolicy.js");
 
-test('sanitizeRefSlug accepts clean slugs and lowercases', () => {
-  assert.equal(sanitizeRefSlug('bella'), 'bella');
-  assert.equal(sanitizeRefSlug('  Bella '), 'bella');
-  assert.equal(sanitizeRefSlug('study-with-bella'), 'study-with-bella');
-  assert.equal(sanitizeRefSlug('a1'), 'a1');
+test("sanitizeRefSlug accepts clean slugs and lowercases", () => {
+  assert.equal(sanitizeRefSlug("bella"), "bella");
+  assert.equal(sanitizeRefSlug("  Bella "), "bella");
+  assert.equal(sanitizeRefSlug("study-with-bella"), "study-with-bella");
+  assert.equal(sanitizeRefSlug("a1"), "a1");
 });
 
-test('sanitizeRefSlug rejects garbage, injections, and over-length', () => {
-  assert.equal(sanitizeRefSlug(''), null);
-  assert.equal(sanitizeRefSlug('-leading-dash'), null);
-  assert.equal(sanitizeRefSlug('has space'), null);
-  assert.equal(sanitizeRefSlug('semi;colon'), null);
-  assert.equal(sanitizeRefSlug('a'.repeat(33)), null);
+test("sanitizeRefSlug rejects garbage, injections, and over-length", () => {
+  assert.equal(sanitizeRefSlug(""), null);
+  assert.equal(sanitizeRefSlug("-leading-dash"), null);
+  assert.equal(sanitizeRefSlug("has space"), null);
+  assert.equal(sanitizeRefSlug("semi;colon"), null);
+  assert.equal(sanitizeRefSlug("a".repeat(33)), null);
   assert.equal(sanitizeRefSlug(null), null);
   assert.equal(sanitizeRefSlug(42), null);
-  assert.equal(sanitizeRefSlug('UPPER_SCORE'), null);
+  assert.equal(sanitizeRefSlug("UPPER_SCORE"), null);
 });
 
 // ── CANCELABLE_STATUSES (deleteAccount must not orphan a billable sub) ─────

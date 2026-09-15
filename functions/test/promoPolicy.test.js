@@ -68,20 +68,23 @@ test("disabled code (active:false) -> invalid", () => {
 });
 
 test("cap reached (redemptions >= maxRedemptions) -> exhausted", () => {
-  const d = evaluatePromoRedemption(active({maxRedemptions: 50, redemptions: 50}), {alreadyHasAccess: false, alreadyRedeemed: false});
+  const d = evaluatePromoRedemption(
+    active({maxRedemptions: 50, redemptions: 50}), {alreadyHasAccess: false, alreadyRedeemed: false});
   assert.strictEqual(d.ok, false);
   assert.strictEqual(d.outcome, "exhausted");
   assert.strictEqual(d.consumeSlot, false);
 });
 
 test("last slot (49/50) still grants", () => {
-  const d = evaluatePromoRedemption(active({maxRedemptions: 50, redemptions: 49}), {alreadyHasAccess: false, alreadyRedeemed: false});
+  const d = evaluatePromoRedemption(
+    active({maxRedemptions: 50, redemptions: 49}), {alreadyHasAccess: false, alreadyRedeemed: false});
   assert.strictEqual(d.outcome, "granted");
   assert.strictEqual(d.consumeSlot, true);
 });
 
 test("null maxRedemptions = unlimited (never exhausts)", () => {
-  const d = evaluatePromoRedemption(active({maxRedemptions: null, redemptions: 999}), {alreadyHasAccess: false, alreadyRedeemed: false});
+  const d = evaluatePromoRedemption(
+    active({maxRedemptions: null, redemptions: 999}), {alreadyHasAccess: false, alreadyRedeemed: false});
   assert.strictEqual(d.outcome, "granted");
 });
 

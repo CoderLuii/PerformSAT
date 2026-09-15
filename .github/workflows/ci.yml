@@ -5,8 +5,9 @@ name: CI
 #   test      — Jest unit tests + math/R&W content-bank validators + a
 #               production build (catches eslint warnings-as-errors and
 #               broken imports that tests alone miss).
-#   functions — Cloud Functions typecheck (tsc --noEmit) + unit tests on
-#               node 24 (matches functions/package.json engines).
+#   functions — Cloud Functions typecheck (tsc --noEmit) + eslint (google
+#               style at 120 cols, src/ and test/) + unit tests on node 24
+#               (matches functions/package.json engines).
 
 on:
   push:
@@ -48,6 +49,8 @@ jobs:
       - run: npm ci
       - name: Typecheck
         run: npx tsc --noEmit
+      - name: Lint
+        run: npm run lint
       - name: Functions unit tests
         run: npm test
 
