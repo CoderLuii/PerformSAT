@@ -75,6 +75,16 @@ describe('buildDayNarrative', () => {
     expect(generic).toContain('full practice test');
   });
 
+  it("names the starter plan's check-in as the diagnostic, never a full practice test", () => {
+    const diag = buildDayNarrative({
+      activities: [{ type: 'test', activityType: 'miniDiagnostic', title: 'Take your diagnostic' }],
+      daysUntilTest: 79,
+    });
+    expect(diag).toContain('your diagnostic');
+    expect(diag).toContain('half the length');
+    expect(diag).not.toContain('full practice test');
+  });
+
   describe('days-until-test phrasing bounds', () => {
     const day = { activities: [mathAct()], weaknesses: [] };
     const at = (d) => buildDayNarrative({ ...day, daysUntilTest: d });

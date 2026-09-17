@@ -98,3 +98,15 @@ describe('buildStarterPlan', () => {
     expect(() => buildStarterPlan()).not.toThrow();
   });
 });
+
+// The Today-slice selector mirrors the starter planSource string (it cannot
+// import this service without dragging the whole generator into every
+// dashboard chunk). Keep the two in lockstep.
+describe('STARTER_PLAN_SOURCE contract', () => {
+  test('matches the copy mirrored in selectors/todaySlice', () => {
+    // eslint-disable-next-line global-require
+    const { STARTER_PLAN_SOURCE: mirrored, isStarterPlan } = require('../selectors/todaySlice');
+    expect(mirrored).toBe(STARTER_PLAN_SOURCE);
+    expect(isStarterPlan(buildStarterPlan({ targetScore: 1300, weakMathAreas: ['algebra'], studyDaysPerWeek: 3 }))).toBe(true);
+  });
+});

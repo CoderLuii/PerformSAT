@@ -5,7 +5,7 @@ import ScoreSlider from './ScoreSlider';
 import StudyPlanDashboard from './StudyPlanDashboard';
 import PredictedVsActualCard from './PredictedVsActualCard';
 import CalendarMonth from './CalendarMonth';
-import { countRemainingTodayTasks } from '../services/selectors/todaySlice';
+import { countRemainingTodayTasks, isStarterPlan } from '../services/selectors/todaySlice';
 import { buildLivingDaySlice } from '../services/livingPlan';
 import { resolveActivityDrill, pickModuleWeakness } from '../services/activityDrillRouter';
 import { summarizePredictions } from '../services/selectors/predictionSummary';
@@ -261,7 +261,15 @@ const StudentDashboard = ({
   // gap — e.g. right after resetting the only practice test — can never tell a
   // measured student to "take your diagnostic" again.
   const hasCompletedDiagnostic = !!miniDiagnostic;
-  const noData = !performanceTiles.hasData && !hasStudyPlan && !hasCompletedDiagnostic;
+  // The onboarding STARTER plan is a scaffold, not a measurement: it exists
+  // only to hold the check-in until the diagnostic rebuilds it. It must not
+  // count as "data" here — when it did, the first-run home (the screen that
+  // carries the "Take your diagnostic" hero) never rendered for a freshly
+  // onboarded student, and the plan-present home only showed the diagnostic
+  // as "Today's focus" on the one weekday the generator pinned it to, so most
+  // new users never saw a diagnostic at all (founder, 2026-09-17).
+  const starterPlanOnly = hasStudyPlan && isStarterPlan(studyPlan);
+  const noData = !performanceTiles.hasData && (!hasStudyPlan || starterPlanOnly) && !hasCompletedDiagnostic;
   // Predicted vs Actual (Day 5 ADD B). summarizePredictions returns null when
   // no validated prediction exists yet, so the card hides itself pre-2nd-test.
   const predictionSummary = useMemo(
@@ -769,8 +777,12 @@ const StudentDashboard = ({
                 <span className="fr-step-num is-locked"><LockIcon size={11} color="currentColor" /> Step 2</span>
               </div>
               <div className="fr-step-title">A week-by-week plan</div>
-              <p className="fr-step-desc">Built from your diagnostic — what to drill first, scheduled day by day.</p>
-              <span className="fr-step-note">Unlocks with your diagnostic <ArrowRightIcon size={14} color="currentColor" /></span>
+              <p className="fr-step-desc">
+                {starterPlanOnly
+                  ? 'Your starter plan is built from your answers. The diagnostic rebuilds it from real evidence, day by day.'
+                  : 'Built from your diagnostic — what to drill first, scheduled day by day.'}
+              </p>
+              <span className="fr-step-note">{starterPlanOnly ? 'Rebuilt by your diagnostic' : 'Unlocks with your diagnostic'} <ArrowRightIcon size={14} color="currentColor" /></span>
             </div>
             <div className="fr-step is-locked">
               <div className="fr-step-top">

@@ -2963,6 +2963,7 @@ const PerformSAT = () => {
             miniDiagnostic={miniDiagnostic}
             diagnosticReviewStatus={diagnosticSitting.status}
             onReviewDiagnosticQuestions={() => openDiagnosticReview(0, 'practiceTests')}
+            onStartDiagnostic={handleResumeOnRamp}
             onViewDiagnosis={(test) => openPastAttempt(test, 'diagnosis')}
             onViewResults={(test) => openPastAttempt(test, 'review')}
             onResetTest={(test) => resetPracticeTest(test.id)}

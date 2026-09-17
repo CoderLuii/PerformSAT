@@ -26,7 +26,7 @@ import {
   setSchedule,
 } from '../services/studyPlanEditor';
 import { scheduledDayNames, deriveSchedule } from '../services/studySchedule';
-import { countRemainingTodayTasks } from '../services/selectors/todaySlice';
+import { countRemainingTodayTasks, isStarterPlan } from '../services/selectors/todaySlice';
 import { buildLivingDaySlice } from '../services/livingPlan';
 import { activitySummary, activityBreakdown } from '../services/selectors/activitySummary';
 import { buildDayNarrative } from '../services/selectors/dayNarrative';
@@ -920,6 +920,9 @@ const StudyPlanLoaded = ({
     const done = act.completed;
     const isTip = act.type === 'strategy' || act.type === 'review';
     const isTest = act.type === 'test';
+    // The starter plan's check-in launches the diagnostic, not a full test —
+    // label it as such so the button matches the card's promise.
+    const isDiagnostic = isTest && act.activityType === 'miniDiagnostic';
     const isNavigable = act.type === 'lesson' || act.type === 'practice' || act.type === 'test';
     const meta = TYPE_META[act.type] || TYPE_META.lesson;
     const chip = chipColorsFor(act);
@@ -968,7 +971,7 @@ const StudyPlanLoaded = ({
         || (act.activityType === 'pacingDrill' && typeof onStartPacing === 'function')
         || (act.activityType === 'testMissReview' && !!act.testId && typeof onReviewTestWrong === 'function')
       );
-      const launchLabel = isTest ? 'Start test' : (inProgress ? 'Continue' : 'Start');
+      const launchLabel = isDiagnostic ? 'Start diagnostic' : isTest ? 'Start test' : (inProgress ? 'Continue' : 'Start');
       return (
         <div className={`sp-s-card${done ? ' is-done' : ''}${act.skipped ? ' is-skipped' : ''}`}>
           <div className="sp-s-head">
@@ -1132,7 +1135,7 @@ const StudyPlanLoaded = ({
             )
           ) : (!done && isNavigable && (
             <button className={`sp-task-action${isTest ? ' is-test' : ''}`} onClick={(e) => { e.stopPropagation(); handleGo(act); }}>
-              {isTest ? 'Start test' : 'Launch'}
+              {isDiagnostic ? 'Start diagnostic' : isTest ? 'Start test' : 'Launch'}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </button>
           ))}
@@ -1215,10 +1218,22 @@ const StudyPlanLoaded = ({
       reviewSession = null,
     } = opts;
     const fullActivities = week?.activities || [];
+    // Starter plan, Today panel: the owed diagnostic is today's first session
+    // every day until it's taken, whatever weekday it was pinned to. Nothing
+    // is measured without it, yet a check-in on a rest day (or a day already
+    // behind the student) otherwise fell out of this panel entirely
+    // ("Nothing is scheduled for today") — new users couldn't find their
+    // diagnostic (founder, 2026-09-17). Same rule as getTodaySlice.
+    const pinDiagnostic = todayOnly && isStarterPlan(studyPlan);
     // In edit mode, also surface skipped tasks (greyed) so they can be
     // un-skipped or removed; otherwise hidden.
     const acts = fullActivities
-      .map((act, origIdx) => ({ act, origIdx }))
+      .map((act, origIdx) => ({
+        act: (pinDiagnostic && act?.activityType === 'miniDiagnostic' && !act.completed && !act.skipped)
+          ? { ...act, day: todayDayName }
+          : act,
+        origIdx,
+      }))
       .filter(({ act }) => (editMode
         ? (act.type !== 'lesson' && matchesSectionFilter(act, sectionFilter))
         : isVisibleActivity(act)));

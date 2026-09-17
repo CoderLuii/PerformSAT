@@ -3,6 +3,8 @@ import { getAllPracticeTests } from '../data/practiceTests';
 import { ArrowLeftIcon, ArrowRightIcon, ChevronDownIcon, TimerIcon, CircleDotIcon, TargetIcon } from '../design/icons';
 import { Modal } from './ui/Modal';
 import { showToast } from './ui/Toaster';
+import { useFeatureFlag } from '../hooks/useFeatureFlag';
+import { hasRealTestScore } from '../services/selectors/diagnosticVariant';
 import './PracticeTestList.css';
 
 // SAT section scores top out at 800; used for the section progress bars.
@@ -73,8 +75,17 @@ const PracticeTestList = ({
   // gating the card's "Review answers"; the handler opens the review runner.
   diagnosticReviewStatus = 'idle',
   onReviewDiagnosticQuestions,
+  // Launches the diagnostic (the home "Take your diagnostic" path). While the
+  // student is unmeasured — no diagnostic record, no scoreable full test —
+  // the list leads with a "Diagnostic · Not taken yet" card so the diagnostic
+  // is findable from the Tests page too, not only from Home.
+  onStartDiagnostic,
 }) => {
   const tests = getAllPracticeTests();
+  const ffDiagnosticV2 = useFeatureFlag('diagnosticV2');
+  const diagnosticOwed = !miniDiagnostic
+    && typeof onStartDiagnostic === 'function'
+    && !hasRealTestScore(practiceTestResults);
   // One open launch dropdown at a time, keyed by `${testId}:launch`.
   const [openDropdown, setOpenDropdown] = useState(null);
   const [expandedTestId, setExpandedTestId] = useState(null);
@@ -209,6 +220,13 @@ const PracticeTestList = ({
       )}
 
       <div className="pt-list">
+        {diagnosticOwed && (
+          <DiagnosticPendingCard
+            inProgress={!!inProgressTests?.['mini-diagnostic']}
+            fullLength={ffDiagnosticV2}
+            onStart={onStartDiagnostic}
+          />
+        )}
         {miniDiagnostic && typeof onViewDiagnosis === 'function' && (
           <DiagnosticCard
             record={miniDiagnostic}
@@ -354,6 +372,38 @@ const LaunchMenu = ({ totalTime, onPick, up }) => (
     </button>
   </div>
 );
+
+/**
+ * The diagnostic the student still owes, listed above Digital SAT #1 until a
+ * sitting completes (then DiagnosticCard takes the slot). One action: take
+ * it — or resume it when a sitting is saved mid-way.
+ */
+const DiagnosticPendingCard = ({ inProgress = false, fullLength = true, onStart }) => {
+  const meta = fullLength
+    ? 'Adaptive · 40 questions · about half a full test · builds your study plan'
+    : 'Adaptive · 24 questions · about 15 minutes · builds your study plan';
+  return (
+    <div className="pt-card is-diagnostic">
+      <div className="pt-card-row">
+        <span className="pt-badge is-diagnostic" aria-hidden="true">
+          <TargetIcon size={20} color="currentColor" />
+        </span>
+        <div className="pt-card-main">
+          <div className="pt-card-titlerow">
+            <span className="pt-card-title">Diagnostic</span>
+            <span className={`pt-pill ${inProgress ? 'is-progress' : 'is-notstarted'}`}>{inProgress ? 'In progress' : 'Not taken yet'}</span>
+          </div>
+          <div className="pt-card-meta">{meta}</div>
+        </div>
+        <div className="pt-diag-actions">
+          <button type="button" className="pt-btn is-primary" onClick={onStart}>
+            {inProgress ? 'Resume diagnostic' : 'Take diagnostic'} <ArrowRightIcon size={16} color="currentColor" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 /**
  * The student's diagnostic sitting, listed above Digital SAT #1. It is a

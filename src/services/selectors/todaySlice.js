@@ -14,12 +14,27 @@
 const DAY_ORDER = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 /**
+ * planSource stamped by starterPlanService on the onboarding scaffold plan —
+ * the plan that exists BEFORE any measurement (no diagnostic, no scored test).
+ * Mirrored here rather than imported so this module stays import-free
+ * (starterPlanService pulls the whole generator); starterPlanService.test
+ * pins the two strings equal.
+ */
+export const STARTER_PLAN_SOURCE = 'onboarding-starter';
+
+/** True for the provisional plan built from onboarding answers alone. */
+export const isStarterPlan = (plan) => !!plan && plan.planSource === STARTER_PLAN_SOURCE;
+
+/**
  * An activity that actually shows up as work in the day slice: not a lesson,
  * not skipped. Mirrors the same predicate used in getTodaySlice so "next work
  * on Thursday" can never point at a rest day (a day holding only skipped or
  * lesson activities).
  */
 const isVisibleActivity = (a) => a && a.type !== 'lesson' && !a.skipped;
+
+/** The starter plan's diagnostic check-in (its first activity) while still owed. */
+const isPendingDiagnostic = (a) => isVisibleActivity(a) && a.activityType === 'miniDiagnostic' && !a.completed;
 
 /**
  * Return the next day name (Sunday-cycled) in the same week that has at
@@ -106,10 +121,22 @@ export function getTodaySlice(plan, todayDayName) {
   // student-added custom task) can be completed from the Today card via the
   // same mark-complete handler the Weekly view uses. Index is taken BEFORE
   // filtering so it points at the real position in week.activities.
-  const todayActivities = (week.activities || [])
+  const stamped = (week.activities || [])
     .map((a, i) => ({ ...a, weekIndex: currentWeekIndex, activityIndex: i }))
-    .filter(isVisibleActivity)
-    .filter(a => a.day === todayDayName);
+    .filter(isVisibleActivity);
+  let todayActivities = stamped.filter(a => a.day === todayDayName);
+
+  // Starter plan: the owed diagnostic leads TODAY every day until it's taken,
+  // whatever weekday the generator pinned it to. It is the gate for the whole
+  // plan (nothing is measured without it), yet a check-in scheduled on a
+  // rest day, or on a day the student has already passed, otherwise vanishes
+  // from Home and the Today panel — new users couldn't find their diagnostic
+  // (founder, 2026-09-17). Only the scaffold plan gets this treatment: a
+  // measured student's periodic check-in keeps its scheduled day.
+  if (isStarterPlan(plan) && !todayActivities.some(isPendingDiagnostic)) {
+    const owed = stamped.find(isPendingDiagnostic);
+    if (owed) todayActivities = [{ ...owed, pinned: true }, ...todayActivities];
+  }
 
   if (todayActivities.length === 0) {
     return {
