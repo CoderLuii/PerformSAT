@@ -1,0 +1,6 @@
+{
+  "id": "bank-geo-229",
+  "question": "A long-radius bend in a water main follows a circular arc of radius $54$ feet, and the pipe along that bend measures $12\\pi$ feet. Through how many degrees does the bend turn?",
+  "correctAnswer": "40",
+  "explanation": "**SAT Pattern: Arc Length**\n\n**The correct answer is $40$.**\n\n**The Fast Way (~35s):** The circumference is $108\\pi$, and $\\frac{12\\pi}{108\\pi}=\\frac{1}{9}$ of a full turn, which is $40°$.\n\n**The Full Solution:**\n\nStep 1: Find the circumference. $C=2\\pi(54)=108\\pi$ feet.\n\nStep 2: Compare the arc to the whole. $\\frac{12\\pi}{108\\pi}=\\frac{1}{9}$.\n\nStep 3: Convert to degrees. $\\frac{1}{9}(360°)=40°$.\n\nCheck: $\\frac{40}{360}(108\\pi)=12\\pi$ feet, the given bend length.\n\n**Common Mistakes:**\n\n* $20$: uses the diameter $108$ in place of the radius, halving the resulting angle.\n* $80$: uses $\\pi r=54\\pi$ as the circumference instead of $2\\pi r$.\n* $12$: reports the coefficient of $\\pi$ in the arc length rather than converting to degrees.\n\n**Test Day Takeaway:** The ratio of arc length to circumference equals the ratio of the central angle to $360°$ — set that proportion and solve."
+}

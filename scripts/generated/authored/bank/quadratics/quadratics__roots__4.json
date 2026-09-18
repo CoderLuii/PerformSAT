@@ -1,0 +1,52 @@
+{
+  "id": 4,
+  "question": "The graph of $y = f(x)$ shown gives a county's weekly count of confirmed influenza cases minus its outbreak threshold, $x$ weeks after a school term begins. Which of the following could define $f$?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": 4,
+        "k": -9
+      },
+      "a": 1,
+      "xRange": [
+        0,
+        8
+      ],
+      "yRange": [
+        -10,
+        8
+      ],
+      "showVertex": false,
+      "xTickInterval": 1,
+      "yTickInterval": 2,
+      "gridInterval": 1
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(x) = (x + 1)(x + 7)$"
+    },
+    {
+      "id": "B",
+      "text": "$f(x) = (x - 1)(x + 7)$"
+    },
+    {
+      "id": "C",
+      "text": "$f(x) = (x - 7)(x + 1)$"
+    },
+    {
+      "id": "D",
+      "text": "$f(x) = (x - 1)(x - 7)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "places both zeros at negative weeks, x = -7 and x = -1, before the term begins",
+    "B": "keeps the crossing at x = 1 but reflects the later one, putting a zero at x = -7",
+    "C": "keeps the crossing at x = 7 but reflects the earlier one, putting a zero at x = -1"
+  },
+  "correctAnswer": "D",
+  "hint": "Each factor vanishes at one of the weeks where the curve meets the threshold.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~20s):** The curve meets the threshold at $x = 1$ and $x = 7$, so $f(x) = (x - 1)(x - 7)$.\n\n**The Full Solution:**\nStep 1: Read the crossings. The weekly count equals the outbreak threshold at $x = 1$ week and $x = 7$ weeks, so $f(1) = 0$ and $f(7) = 0$.\nStep 2: Build the factors. A zero at $x = 1$ needs the factor $(x - 1)$; a zero at $x = 7$ needs $(x - 7)$.\nStep 3: Check the low point. The graph bottoms out at $(4, -9)$, and $(4 - 1)(4 - 7) = (3)(-3) = -9$ cases below the threshold. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(x + 1)(x + 7)$): has zeros at $-1$ and $-7$, both before the term begins; the graph never meets the threshold at a negative week.\n* Choice B ($(x - 1)(x + 7)$): keeps the crossing at $x = 1$ but puts the second one at $x = -7$ instead of $x = 7$.\n* Choice C ($(x - 7)(x + 1)$): keeps the crossing at $x = 7$ but puts the first one at $x = -1$ instead of $x = 1$.\n\n**Test Day Takeaway:** A zero at $x = r$ comes from the factor $(x - r)$ — the sign inside the parenthesis is the OPPOSITE of the crossing value."
+}

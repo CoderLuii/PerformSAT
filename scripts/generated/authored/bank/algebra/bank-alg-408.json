@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-408",
+ "question": "In a street-grid plan, the distance $d$, in meters, between two hydrants on the same block face must satisfy the equation $|d - 145| = 38$. What is the sum of the two possible values of $d$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$76$"
+  },
+  {
+   "id": "B",
+   "text": "$107$"
+  },
+  {
+   "id": "C",
+   "text": "$183$"
+  },
+  {
+   "id": "D",
+   "text": "$290$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "doubles 38 instead of 145",
+  "B": "reports only the smaller distance, 145 - 38",
+  "C": "reports only the larger distance, 145 + 38"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The two distances are $145 \\pm 38$, and the shifts cancel when they are added: $107 + 183 = 290$.\n\n**The Full Solution:**\nStep 1: Split the equation: $d - 145 = 38$ gives $d = 183$, and $d - 145 = -38$ gives $d = 107$.\nStep 2: Add the two possible distances: $183 + 107 = 290$.\nStep 3: The sum is $290$ meters. Check: the two values sit symmetrically about $145$, so their sum is $2(145) = 290$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($76$): doubles the gap $38$ instead of the center $145$.\n* Choice B ($107$): reports only the smaller distance and never adds the second one.\n* Choice C ($183$): reports only the larger distance and never adds the second one.\n\n**Test Day Takeaway:** The solutions of $|d - c| = k$ average to $c$, so their sum is $2c$ no matter what $k$ is."
+}

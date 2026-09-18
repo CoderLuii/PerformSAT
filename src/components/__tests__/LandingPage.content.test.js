@@ -41,6 +41,7 @@ jest.mock('firebase/firestore', () => ({
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import LandingPage from '../LandingPage';
+import { setFeatureFlagForTest } from '../../hooks/useFeatureFlag';
 
 // Emoji + dingbat/symbol blocks — UI copy must never contain emojis.
 const EMOJI_RE = /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u;
@@ -126,5 +127,113 @@ describe('LandingPage content', () => {
 
   test('contains no emojis', () => {
     expect(html).not.toMatch(EMOJI_RE);
+  });
+});
+
+// Creator-link ribbon: shown only when a /r/<slug> referral is stored AND
+// billing is live — the page must never promise a checkout discount that
+// checkout can't apply.
+describe('LandingPage creator-link ribbon', () => {
+  const RIBBON =
+    'Creator discount active — 20% off your first 3 months, applied automatically at checkout.';
+
+  afterEach(() => {
+    window.localStorage.removeItem('seva:ref');
+    setFeatureFlagForTest('billing', undefined);
+  });
+
+  test('hidden for direct (non-referred) visitors', () => {
+    setFeatureFlagForTest('billing', true);
+    expect(render(<LandingPage />)).not.toContain('Creator discount');
+  });
+
+  test('shown for referred visitors while billing is live', () => {
+    setFeatureFlagForTest('billing', true);
+    window.localStorage.setItem('seva:ref', JSON.stringify({ slug: 'iksha', at: Date.now() }));
+    expect(render(<LandingPage />)).toContain(RIBBON);
+  });
+
+  test('never promises the discount while billing is dark', () => {
+    setFeatureFlagForTest('billing', false);
+    window.localStorage.setItem('seva:ref', JSON.stringify({ slug: 'iksha', at: Date.now() }));
+    expect(render(<LandingPage />)).not.toContain('Creator discount');
+  });
+});
+
+// ── landingV2 (Acely-style rebuild, 2026-09-10) ───────────────────────────
+// The flag-on page is LandingPageV2: a restrained, sectioned page that leads
+// with the diagnosis recording, walks three steps, and hands the visitor one
+// real question. Pin what it shows and what it stopped claiming.
+describe('LandingPage v2 (ff:landingV2)', () => {
+  let html;
+  beforeAll(() => {
+    setFeatureFlagForTest('landingV2', true);
+    html = render(<LandingPage />);
+  });
+  afterAll(() => { setFeatureFlagForTest('landingV2', undefined); });
+
+  test('leads with the diagnosis promise and the three steps', () => {
+    expect(html).toContain('Find out why you miss SAT questions. Then fix exactly that.');
+    expect(html).toContain('Three steps to a higher score.');
+    expect(html).toContain('Take the diagnostic.');
+    expect(html).toContain('Get your plan.');
+    expect(html).toContain('Drill what costs you points.');
+  });
+
+  test('names the four ways the product raises a score', () => {
+    for (const t of ['A plan that adapts.', 'The why behind every miss.', 'True-to-test practice.', 'A score you can watch move.']) {
+      expect(html).toContain(t);
+    }
+  });
+
+  test('hands the visitor a real question, rendered with the app\'s own choice list', () => {
+    expect(html).toContain('Try a real question');
+    expect(html).toContain('Adobe buildings are made of earthen bricks'); // rw-1201, verbatim from the bank
+    expect(html).toContain('answer-choice-card'); // shared/AnswerChoiceList, the drill's rows
+    expect(html).toContain('Check answer');
+  });
+
+  test('shows exactly one recording: the diagnosis, muted and inline', () => {
+    expect(html.match(/<video /g)).toHaveLength(1);
+    expect(html).toMatch(/<video [^>]*muted[^>]*playsinline/i);
+    expect(html).toContain('/showcase/video/diagnosis.webm');
+    expect(html).toContain('/showcase/video/diagnosis.mp4');
+    expect(html).toContain('/showcase/video/diagnosis-poster@2x.webp');
+    // The lossless still lives inside the <video> as its fallback.
+    expect(html).toContain('/showcase/diagnosis@2x.webp 2880w');
+    expect(html).toContain('/showcase/diagnosis@2x.png');
+    // The five recordings the rebuild dropped are gone from the page.
+    for (const shot of ['test-runner', 'study-plan', 'drill', 'practice-bank', 'dashboard']) {
+      expect(html).not.toContain(`/showcase/video/${shot}.mp4`);
+    }
+  });
+
+  test('answers the six questions a visitor actually asks', () => {
+    expect(html).toContain('Frequently asked questions.');
+    expect(html.match(/<details/g)).toHaveLength(6);
+    expect(html).toContain('What is SEVA?');
+    expect(html).toContain('How long is the diagnostic?');
+    expect(html).toContain('What does it cost?');
+  });
+
+  test('drops the slogan-only sections and the unsupported crowd claim', () => {
+    expect(html).not.toContain('Knows you like');
+    expect(html).not.toContain('A prep course tells you');
+    expect(html).not.toContain('Three steps to a smarter prep');
+    expect(html).not.toContain('Thousands of students');
+    expect(html).not.toContain('Ready to find your next 200 points?');
+    expect(html).not.toContain("A Tutor's Heart");
+    expect(html).toContain('Real students.');
+  });
+
+  test('keeps the honest inventory, the results, the pricing and the final CTA', () => {
+    expect(html).toContain('2,200+');
+    expect(html).toContain('Hand-authored questions');
+    expect(html).toContain('Jake C.');
+    expect(html).toMatch(/free during early access/i);
+    expect(html).toContain('Get your diagnosis today.');
+    expect(html).toContain('SAT is a registered trademark of the College Board');
+    expect(html).not.toMatch(EMOJI_RE);
+    expect(html).not.toContain('href="#"');
   });
 });

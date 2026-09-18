@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-147",
+  "question": "A quality inspector tests $400$ circuit boards. Of these, $120$ boards have a defect, and $90\\%$ of the boards with a defect fail the test. Of the $280$ boards without a defect, $42$ fail the test. If a board that failed the test is selected at random, what is the probability that it does not have a defect?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{21}{200}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{3}{20}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{7}{25}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{18}{25}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "42/400, divides by all boards",
+    "B": "42/280, the probability that a non-defective board fails (condition reversed)",
+    "D": "108/150, the probability that a failed board IS defective, the complement"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Two-Way Table Conditional Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Failed boards: $0.9(120) + 42 = 108 + 42 = 150$. Of those, $42$ have no defect: $\\frac{42}{150} = \\frac{7}{25}$.\n\n**The Full Solution:**\nStep 1: Fill in the table. Defective boards that fail: $90\\%$ of $120$ is $0.9 \\times 120 = 108$. Non-defective boards that fail: $42$ (given).\nStep 2: The condition \"failed the test\" makes the denominator the total number of failures: $108 + 42 = 150$.\nStep 3: The numerator is the failed boards without a defect, $42$: $\\frac{42}{150} = \\frac{7}{25}$. Check: $\\frac{7}{25} = 0.28$, and $0.28 \\times 150 = 42$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{21}{200}$): This is $\\frac{42}{400}$, dividing by all boards instead of only those that failed.\n* Choice B ($\\frac{3}{20}$): This is $\\frac{42}{280}$, the probability that a non-defective board fails; the condition runs the wrong way.\n* Choice D ($\\frac{18}{25}$): This is $\\frac{108}{150}$, the probability that a failed board is defective, the complement of what was asked.\n\n**Test Day Takeaway:** Convert every percent into a count, total the \"given\" group, and keep the direction of the condition straight: given failed, not given defective."
+}

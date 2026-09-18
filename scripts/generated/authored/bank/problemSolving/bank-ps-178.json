@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-178",
+  "question": "Each face of a fair $20$-sided die is labeled with a different integer from $1$ through $20$. If the die is rolled once, what is the probability that the result is a multiple of $3$ or a multiple of $4$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{4}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{3}{10}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{1}{2}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{11}{20}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "5/20, multiples of 4 only",
+    "B": "6/20, multiples of 3 only",
+    "D": "6 + 5 = 11 without removing the double-counted 12"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Multiples of $3$: $3, 6, 9, 12, 15, 18$ (six). Multiples of $4$: $4, 8, 12, 16, 20$ (five). The number $12$ is in both lists, so there are $6 + 5 - 1 = 10$ favorable faces: $\\frac{10}{20} = \\frac{1}{2}$.\n\n**The Full Solution:**\nStep 1: Count multiples of $3$ from $1$ to $20$: $\\lfloor 20/3 \\rfloor = 6$. Count multiples of $4$: $\\lfloor 20/4 \\rfloor = 5$.\nStep 2: Multiples of both $3$ and $4$ are multiples of $12$: only $12$ itself, so $1$ overlap. Favorable $= 6 + 5 - 1 = 10$.\nStep 3: Probability $= \\frac{10}{20} = \\frac{1}{2}$. Check by listing: $3, 4, 6, 8, 9, 12, 15, 16, 18, 20$ is ten distinct faces. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{4}$): Counts only the five multiples of $4$.\n* Choice B ($\\frac{3}{10}$): Counts only the six multiples of $3$.\n* Choice D ($\\frac{11}{20}$): Adds $6 + 5$ without subtracting the face $12$, which was counted twice.\n\n**Test Day Takeaway:** For \"A or B,\" count A, count B, and subtract the overlap (here the multiples of the least common multiple); listing the outcomes is a reliable check."
+}

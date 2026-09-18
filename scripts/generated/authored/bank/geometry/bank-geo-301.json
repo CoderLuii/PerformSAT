@@ -1,0 +1,29 @@
+{
+ "question": "A carillon bell tower at $(-4, -3)$ in the $xy$-plane is heard out to a bench at $(8, 2)$, where coordinates are in meters. Which equation describes the edge of the region in which the carillon is heard?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x + 4)^2 + (y + 3)^2 = 13$"
+  },
+  {
+   "id": "B",
+   "text": "$(x - 4)^2 + (y - 3)^2 = 169$"
+  },
+  {
+   "id": "C",
+   "text": "$(x - 8)^2 + (y - 2)^2 = 169$"
+  },
+  {
+   "id": "D",
+   "text": "$(x + 4)^2 + (y + 3)^2 = 169$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "puts the radius 13 on the right side instead of r squared",
+  "B": "flips the signs of the tower's coordinates inside the parentheses",
+  "C": "centers the region at the bench instead of at the tower"
+ },
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The radius is $\\sqrt{12^2 + 5^2} = 13$ meters, so the edge is $(x + 4)^2 + (y + 3)^2 = 169$.\n\n**The Full Solution:**\nStep 1: The edge is a circle centered at the tower $(-4, -3)$, so the parentheses read $(x + 4)^2$ and $(y + 3)^2$.\nStep 2: The radius reaches the bench: $\\sqrt{(8 - (-4))^2 + (2 - (-3))^2} = \\sqrt{144 + 25} = 13$ meters.\nStep 3: The right side is $r^2 = 169$, giving $(x + 4)^2 + (y + 3)^2 = 169$. Check: substituting $(8, 2)$ gives $144 + 25 = 169$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: uses the radius $13$ where $r^2$ belongs, shrinking the region drastically.\n* Choice B: writes $(x - 4)^2 + (y - 3)^2$, which centers the region at $(4, 3)$.\n* Choice C: centers the region at the bench, the point on the edge rather than the source.\n\n**Test Day Takeaway:** The center goes inside the parentheses with flipped signs, and the distance to a known edge point gets SQUARED on the right.",
+ "id": "bank-geo-301"
+}

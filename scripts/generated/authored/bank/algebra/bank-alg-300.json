@@ -1,0 +1,29 @@
+{
+ "question": "Two response lines of a gas chromatograph meet at the point where the expressions $8x-13$ and $mx+11$ are equal, and that meeting occurs at $x=6$. What is the value of the constant $m$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reports the given solution x = 6 instead of the constant m",
+  "C": "copies the coefficient 8 from the left side",
+  "D": "finds 6m = 24 and stops without dividing by 6"
+ },
+ "explanation": "**SAT Pattern: Linear Equation with Variables on Both Sides**\n\n**Choice A is correct.** Substituting $x=6$ gives $35=6m+11$, so $6m=24$ and $m=4$.\n\n**The Fast Way (~30s):** $8(6)-13=35$, and $35-11=24=6m$, so $m=4$.\n\n**The Full Solution:**\n\nStep 1: Substitute $x=6$ into both sides: $8(6)-13=m(6)+11$.\n\nStep 2: Simplify the left side: $48-13=35$, so $35=6m+11$.\n\nStep 3: Subtract $11$ and divide by $6$: $6m=24$, so $m=4$. Check: with $m=4$ the equation $8x-13=4x+11$ gives $4x=24$ and $x=6$, the stated meeting point.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($6$): reports the given value of $x$ instead of the constant being asked for.\n* Choice C ($8$): copies the coefficient on the left side, as though the two lines had to share a slope.\n* Choice D ($24$): stops at $6m=24$ without dividing by $6$.\n\n**Test Day Takeaway:** When a solution is handed to you, substitute it and the equation becomes a one-step problem in the unknown constant.",
+ "id": "bank-alg-300"
+}

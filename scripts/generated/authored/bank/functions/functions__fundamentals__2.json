@@ -1,0 +1,29 @@
+{
+ "question": "A cannery charges $C(w) = 4w + 12$ dollars to process a delivery of $w$ kilograms of fruit, where the fixed part of the charge covers setup. What is the value of $C(9)$?",
+ "hint": "The number in parentheses takes the place of $w$.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$21$"
+  },
+  {
+   "id": "B",
+   "text": "$36$"
+  },
+  {
+   "id": "C",
+   "text": "$48$"
+  },
+  {
+   "id": "D",
+   "text": "$144$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 9 + 12 and never multiplies by 4",
+  "B": "computes 4(9) and drops the 12",
+  "D": "multiplies the whole expression, computing (4 + 12)(9)"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~10s):** $C(9) = 4(9) + 12 = 48$.\n\n**The Full Solution:**\nStep 1: $C(9)$ means substitute $w = 9$ into $4w + 12$.\nStep 2: Multiply first: $4(9) = 36$.\nStep 3: Add the fixed charge: $36 + 12 = 48$ dollars. Check: nine kilograms at \\$4 each is \\$36, plus the \\$12 base ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($21$): adds $9 + 12$ and skips the rate entirely.\n* Choice B ($36$): computes $4(9)$ and forgets the $12$.\n* Choice D ($144$): multiplies the entire expression by $9$, as if the $12$ were also charged per kilogram.\n\n**Test Day Takeaway:** Function notation is a substitution instruction: replace the variable, then follow the order of operations."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "A limnologist's linear model gives the depth of a lake's oxygen-poor layer as $3.2$ meters in week $5$ and $9.6$ meters in week $13$. What is the slope of this model, in meters per week?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-0.8$"
+  },
+  {
+   "id": "B",
+   "text": "$0.8$"
+  },
+  {
+   "id": "C",
+   "text": "$1.25$"
+  },
+  {
+   "id": "D",
+   "text": "$6.4$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the depths in the reverse order while keeping the weeks in order: (3.2 - 9.6)/(13 - 5) = -0.8",
+  "C": "inverts the ratio, computing (13 - 5)/(9.6 - 3.2) = 1.25",
+  "D": "reports the change in depth, 9.6 - 3.2 = 6.4, without dividing by the 8 weeks"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The depth climbs $6.4$ meters across $8$ weeks, and $\\dfrac{6.4}{8} = 0.8$.\n\n**The Full Solution:**\nStep 1: The two measurements are the points $(5, 3.2)$ and $(13, 9.6)$, with the week as the input.\nStep 2: Slope is $\\dfrac{y_2 - y_1}{x_2 - x_1} = \\dfrac{9.6 - 3.2}{13 - 5} = \\dfrac{6.4}{8}$.\nStep 3: $\\dfrac{6.4}{8} = 0.8$ meter per week.\nCheck: starting at $3.2$ m in week $5$ and adding $0.8$ m for each of $8$ weeks gives $3.2 + 6.4 = 9.6$ m in week $13$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-0.8$): subtracts the depths in one order and the weeks in the other, $\\dfrac{3.2 - 9.6}{13 - 5}$; the layer is deepening, so a negative slope contradicts the data.\n* Choice C ($1.25$): inverts the ratio to $\\dfrac{13 - 5}{9.6 - 3.2}$, which measures weeks per meter, not meters per week.\n* Choice D ($6.4$): reports only the change in depth and forgets to divide by the $8$ weeks it took.\n\n**Test Day Takeaway:** Keep the same point first in both subtractions, and let the requested units tell you which difference belongs on top."
+}

@@ -1,0 +1,55 @@
+{
+ "id": 1,
+ "question": "A snowplow blade carries the triangular reflective panel shown, with its three side lengths marked in centimeters. Reflective film covers both faces of the panel. How many square centimeters of film does the panel take?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     15,
+     8
+    ]
+   ],
+   "sideLabels": [
+    "15",
+    "8",
+    "17"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$60$"
+  },
+  {
+   "id": "B",
+   "text": "$120$"
+  },
+  {
+   "id": "C",
+   "text": "$136$"
+  },
+  {
+   "id": "D",
+   "text": "$240$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "covers one face only",
+  "C": "uses the 17-centimeter hypotenuse as a height, giving 2 times 68",
+  "D": "skips the one-half in the area formula, giving 2 times 120"
+ },
+ "correctAnswer": "B",
+ "hint": "Count how many surfaces the film has to cover.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** One face is $\\frac{1}{2}(15)(8) = 60$ square centimeters, and both faces take $120$.\n\n**The Full Solution:**\nStep 1: The panel is a right triangle, so its two legs, $15$ and $8$ centimeters, are its base and height.\nStep 2: One face has area $\\frac{1}{2}(15)(8) = 60$ square centimeters.\nStep 3: Film covers both faces, so the total is $2(60) = 120$ square centimeters. Check: $15$, $8$, $17$ satisfies $15^2 + 8^2 = 225 + 64 = 289 = 17^2$, confirming the right angle ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($60$): covering one face only, when the film covers both.\n* Choice C ($136$): using the $17$-centimeter hypotenuse as a height, giving $2 \\cdot \\frac{1}{2}(8)(17)$.\n* Choice D ($240$): skipping the $\\frac{1}{2}$ in the area formula, giving $2(15)(8)$.\n\n**Test Day Takeaway:** In a right triangle the two legs are the base and height; the hypotenuse never is."
+}

@@ -1,0 +1,29 @@
+{
+  "id": 9,
+  "question": "A pair of values $x$ and $y$ satisfies both $y = 2x + 3$ and $4x - y = 9$, and no other pair of values satisfies both. What is the value of $x + y$ for that pair?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$15$"
+    },
+    {
+      "id": "D",
+      "text": "$21$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "drops the minus sign and solves 4x + y = 9, giving (1, 5) and a sum of 6",
+    "B": "subtracts only the 2x when substituting, using 4x - 2x + 3 = 9, which gives (3, 9) and a sum of 12",
+    "C": "solves the system correctly but reports y alone instead of x + y"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Substitute $2x + 3$ for $y$ in the second equation: $4x - (2x + 3) = 9$ gives $2x = 12$, so $x = 6$, $y = 15$, and $x + y = 21$.\n\n**The Full Solution:**\nStep 1: The first equation already gives $y$ in terms of $x$, so replace $y$ in the second equation: $4x - (2x + 3) = 9$.\nStep 2: Distribute the subtraction across both terms in the parentheses: $4x - 2x - 3 = 9$, so $2x - 3 = 9$, $2x = 12$, and $x = 6$.\nStep 3: Substitute back: $y = 2(6) + 3 = 15$, so $x + y = 6 + 15 = 21$. Check: $4(6) - 15 = 24 - 15 = 9$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): comes from reading the second equation as $4x + y = 9$. That system solves to $(1, 5)$, whose coordinates sum to $6$ — and $6$ is also the correct value of $x$, which makes it doubly attractive.\n* Choice B ($12$): comes from writing $4x - 2x + 3 = 9$, distributing the minus sign to only the first term inside the parentheses. That gives $(3, 9)$ and a sum of $12$.\n* Choice C ($15$): this is $y$. The system is solved correctly, but only half of the requested sum is reported.\n\n**Test Day Takeaway:** When you substitute a two-term expression into a subtraction, wrap it in parentheses first. Then reread the question — these items usually ask for a combination, not for one variable."
+}

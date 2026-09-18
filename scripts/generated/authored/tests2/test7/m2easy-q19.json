@@ -1,0 +1,29 @@
+{
+  "id": 19,
+  "question": "A site plan shows a drainage line that is perpendicular to the segment joining $(0, 8)$ and $(15, 2)$, and the point $(-2, 7)$ lies on the drainage line. Which of the following equations represents the drainage line, where $x$ and $y$ are measured in meters from a survey marker?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = -\\frac{5}{2}x + 2$"
+    },
+    {
+      "id": "B",
+      "text": "$y = -\\frac{2}{5}x + \\frac{31}{5}$"
+    },
+    {
+      "id": "C",
+      "text": "$y = \\frac{2}{5}x + \\frac{39}{5}$"
+    },
+    {
+      "id": "D",
+      "text": "$y = \\frac{5}{2}x + 12$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the reciprocal of the segment's slope but keeps it negative, using -5/2 instead of 5/2",
+    "B": "reuses the segment's own slope of -2/5, giving a parallel line rather than a perpendicular one",
+    "C": "flips the sign of the segment's slope to 2/5 without taking the reciprocal"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The segment's slope is $\\frac{2-8}{15-0}=-\\frac{2}{5}$, so the drainage line's slope is $\\frac{5}{2}$; through $(-2,7)$ that gives $y=\\frac{5}{2}x+12$.\n\n**The Full Solution:**\nStep 1: Slope of the segment: $\\dfrac{2-8}{15-0}=\\dfrac{-6}{15}=-\\dfrac{2}{5}$. Reducing the fraction matters here — the unreduced $-\\frac{6}{15}$ hides the clean reciprocal.\nStep 2: Perpendicular slopes are negative reciprocals, so the drainage line has slope $\\dfrac{5}{2}$. Both the sign and the flip are required.\nStep 3: Use $(-2,7)$: $7=\\dfrac{5}{2}(-2)+b=-5+b$, so $b=12$ and the line is $y=\\dfrac{5}{2}x+12$. Check: $\\left(-\\frac{2}{5}\\right)\\left(\\frac{5}{2}\\right)=-1$, and substituting $x=-2$ gives $y=7$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($y=-\\frac{5}{2}x+2$): flips the fraction but keeps the negative sign, so the slope is $-\\frac{5}{2}$ instead of $\\frac{5}{2}$.\n* Choice B ($y=-\\frac{2}{5}x+\\frac{31}{5}$): keeps the segment's own slope, producing a line parallel to the segment rather than perpendicular to it.\n* Choice C ($y=\\frac{2}{5}x+\\frac{39}{5}$): changes the sign but never takes the reciprocal, so the slope is $\\frac{2}{5}$.\n\n**Test Day Takeaway:** Perpendicular means negative AND reciprocal — do both moves, then confirm by multiplying the two slopes and looking for $-1$."
+}

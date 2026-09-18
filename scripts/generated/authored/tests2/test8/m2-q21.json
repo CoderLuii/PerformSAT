@@ -1,0 +1,32 @@
+{
+  "id": 21,
+  "question": "A machinist cuts the right-triangular bracing plate shown from sheet metal, using $90$ centimeters of edge in total. In this plate, $\\cos R = \\dfrac{12}{13}$. How long is $\\overline{RQ}$, in centimeters?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          5
+        ]
+      ],
+      "labels": [
+        "R",
+        "Q",
+        "S"
+      ],
+      "rightAngleVertex": 1,
+      "figureNote": true
+    }
+  },
+  "correctAnswer": "36",
+  "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**The correct answer is $36$.**\n\n**The Fast Way (~45s):** $\\cos R = \\frac{12}{13}$ marks a $5$-$12$-$13$ triangle, whose edges total $30$ parts; $90 \\div 30 = 3$, and $\\overline{RQ}$ is the $12$-part edge, so it measures $36$ centimeters.\n\n**The Full Solution:**\nStep 1: The right angle is at $Q$, so $\\overline{RS}$ is the hypotenuse and $\\overline{RQ}$ is the leg adjacent to angle $R$. Then $\\cos R = \\frac{RQ}{RS} = \\frac{12}{13}$, so $RQ = 12m$ and $RS = 13m$ for some positive $m$.\nStep 2: The third edge follows from the Pythagorean theorem: $QS = \\sqrt{(13m)^2 - (12m)^2} = \\sqrt{25m^2} = 5m$.\nStep 3: The three edges total $12m + 13m + 5m = 30m = 90$, so $m = 3$ and $RQ = 12(3) = 36$ centimeters. Check the whole plate: the edges are $36$, $39$, and $15$ centimeters, $36^2 + 15^2 = 1296 + 225 = 1521 = 39^2$, and the three add to $90$ ✓\n\n**Common Mistakes:**\n* $39$: reports the hypotenuse $\\overline{RS}$, the $13$-part edge, instead of the adjacent leg.\n* $15$: reports the short leg $\\overline{QS}$, the $5$-part edge opposite angle $R$.\n* $12$: reads the $12$ straight out of the cosine ratio without scaling by $m = 3$.\n\n**Test Day Takeaway:** A trig ratio fixes the shape but not the size, so write every edge as a multiple of one scale factor and let the perimeter pin that factor down."
+}

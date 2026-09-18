@@ -20,6 +20,8 @@ const {
   shouldGrandfatherExisting,
   subscriptionPatchUsedTrial,
   trialDaysForCheckout,
+  subscriptionsShowTrialUsed,
+  CANCELABLE_STATUSES,
 } = require("../lib/stripePolicy");
 
 const NOW = Date.parse("2026-07-15T12:00:00Z");
@@ -419,22 +421,83 @@ test("self-heal: null/undefined doc is a safe no-op", () => {
 });
 
 // ── sanitizeRefSlug (creator link attribution) ────────────────────────────
-const { sanitizeRefSlug } = require('../lib/stripePolicy.js');
+const {sanitizeRefSlug} = require("../lib/stripePolicy.js");
 
-test('sanitizeRefSlug accepts clean slugs and lowercases', () => {
-  assert.equal(sanitizeRefSlug('bella'), 'bella');
-  assert.equal(sanitizeRefSlug('  Bella '), 'bella');
-  assert.equal(sanitizeRefSlug('study-with-bella'), 'study-with-bella');
-  assert.equal(sanitizeRefSlug('a1'), 'a1');
+test("sanitizeRefSlug accepts clean slugs and lowercases", () => {
+  assert.equal(sanitizeRefSlug("bella"), "bella");
+  assert.equal(sanitizeRefSlug("  Bella "), "bella");
+  assert.equal(sanitizeRefSlug("study-with-bella"), "study-with-bella");
+  assert.equal(sanitizeRefSlug("a1"), "a1");
 });
 
-test('sanitizeRefSlug rejects garbage, injections, and over-length', () => {
-  assert.equal(sanitizeRefSlug(''), null);
-  assert.equal(sanitizeRefSlug('-leading-dash'), null);
-  assert.equal(sanitizeRefSlug('has space'), null);
-  assert.equal(sanitizeRefSlug('semi;colon'), null);
-  assert.equal(sanitizeRefSlug('a'.repeat(33)), null);
+test("sanitizeRefSlug rejects garbage, injections, and over-length", () => {
+  assert.equal(sanitizeRefSlug(""), null);
+  assert.equal(sanitizeRefSlug("-leading-dash"), null);
+  assert.equal(sanitizeRefSlug("has space"), null);
+  assert.equal(sanitizeRefSlug("semi;colon"), null);
+  assert.equal(sanitizeRefSlug("a".repeat(33)), null);
   assert.equal(sanitizeRefSlug(null), null);
   assert.equal(sanitizeRefSlug(42), null);
-  assert.equal(sanitizeRefSlug('UPPER_SCORE'), null);
+  assert.equal(sanitizeRefSlug("UPPER_SCORE"), null);
+});
+
+// ── CANCELABLE_STATUSES (deleteAccount must not orphan a billable sub) ─────
+
+test("CANCELABLE_STATUSES covers every status that can still bill", () => {
+  for (const live of
+    ["trialing", "active", "past_due", "unpaid", "incomplete", "paused"]) {
+    assert.ok(CANCELABLE_STATUSES.has(live), `${live} must be cancelable`);
+  }
+});
+
+test("CANCELABLE_STATUSES excludes already-terminal statuses", () => {
+  assert.ok(!CANCELABLE_STATUSES.has("canceled"));
+  assert.ok(!CANCELABLE_STATUSES.has("incomplete_expired"));
+});
+
+// ── subscriptionsShowTrialUsed (delete-proof one-trial-per-customer) ───────
+
+test("no prior subscriptions -> no trial used", () => {
+  assert.strictEqual(subscriptionsShowTrialUsed([]), false);
+});
+
+test("a subscription that never trialed does not burn the trial", () => {
+  assert.strictEqual(
+    subscriptionsShowTrialUsed([{trial_start: null, trial_end: null}]),
+    false,
+  );
+});
+
+test("a canceled subscription that DID trial still burns the trial", () => {
+  // The exact delete-and-resubscribe case: the app-side entitlement doc is
+  // gone, but Stripe still carries trial_end on the old canceled sub.
+  const subs = [{
+    status: "canceled",
+    trial_start: 1755000000,
+    trial_end: 1755259200,
+  }];
+  assert.strictEqual(subscriptionsShowTrialUsed(subs), true);
+  assert.strictEqual(trialDaysForCheckout({trialUsed: true}), null);
+});
+
+test("trial_end alone is enough (Stripe keeps it after conversion)", () => {
+  assert.strictEqual(
+    subscriptionsShowTrialUsed([{trial_end: 1755259200}]), true);
+});
+
+test("one trialed sub among several untrialed ones still counts", () => {
+  const subs = [
+    {trial_start: null, trial_end: null},
+    {trial_end: 1755259200},
+    {trial_start: null, trial_end: null},
+  ];
+  assert.strictEqual(subscriptionsShowTrialUsed(subs), true);
+});
+
+test("garbage input never throws and never grants a free trial loop", () => {
+  assert.strictEqual(subscriptionsShowTrialUsed(null), false);
+  assert.strictEqual(subscriptionsShowTrialUsed(undefined), false);
+  assert.strictEqual(subscriptionsShowTrialUsed([null, undefined]), false);
+  assert.strictEqual(
+    subscriptionsShowTrialUsed([{trial_end: "not-a-number"}]), false);
 });

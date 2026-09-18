@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-097",
+  "question": "A random sample of $400$ of the $12{,}000$ members of a professional association was surveyed. Based on the sample, it is estimated that $35\\%$ of all the members attended the annual conference, with an associated margin of error of $4\\%$. Based on this estimate and margin of error, what is the greatest number of the $12{,}000$ members who could plausibly have attended the conference?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3{,}720$"
+    },
+    {
+      "id": "B",
+      "text": "$4{,}200$"
+    },
+    {
+      "id": "C",
+      "text": "$4{,}368$"
+    },
+    {
+      "id": "D",
+      "text": "$4{,}680$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the lower endpoint, 31%, of the interval",
+    "B": "ignores the margin of error and uses 35%",
+    "C": "increases the estimate by 4% of itself instead of by 4 percentage points"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The greatest plausible percent is $35\\% + 4\\% = 39\\%$, and $0.39(12{,}000) = 4{,}680$.\n\n**The Full Solution:**\nStep 1: The interval of plausible values for the percent of all members who attended is $35\\% \\pm 4\\%$, or $31\\%$ to $39\\%$.\nStep 2: The greatest plausible percent is $39\\%$.\nStep 3: Apply it to the membership: $0.39 \\times 12{,}000 = 4{,}680$ members.\nCheck: $4{,}680 \\div 12{,}000 = 0.39$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3{,}720$): This uses $31\\%$, the least plausible percent, which answers the opposite question.\n* Choice B ($4{,}200$): This uses the estimate $35\\%$ alone and ignores the margin of error.\n* Choice C ($4{,}368$): This raises $4{,}200$ by $4\\%$ of itself rather than by $4$ percentage points of the membership.\n\n**Test Day Takeaway:** Push the percent to the end of its plausible interval first, then convert to a count."
+}

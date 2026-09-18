@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-350",
+  "question": "A florist has $\\$960$ to spend on roses and peonies for an event. Roses cost $\\$3$ each and peonies cost $\\$9$ each. If the florist buys exactly $120$ roses, what is the greatest number of peonies the florist can buy?",
+  "correctAnswer": "66",
+  "explanation": "**SAT Pattern: Inequality Word Problem (Floor)**\n\n**The correct answer is $66$.**\n\n**The Fast Way (~15s):** Roses cost $120 \\times 3 = 360$, leaving $600$. Then $600 \\div 9 = 66.67$, so $66$ peonies.\n\n**The Full Solution:**\nStep 1: Let $p$ be the number of peonies. Budget constraint: $3(120) + 9p \\leq 960$.\nStep 2: Simplify: $360 + 9p \\leq 960$, so $9p \\leq 600$.\nStep 3: $p \\leq 66.67$; the greatest whole number is $66$.\nCheck: $360 + 9(66) = 360 + 594 = 954 \\leq 960$, while $67$ peonies would cost $963$ total, over budget. $\\checkmark$\n\n**Common Mistakes:** Rounding $66.67$ up to $67$; dividing $960$ by $9$ without paying for the roses (giving $106$); or dividing $600$ by $3$ instead of $9$.\n\n**Test Day Takeaway:** \"Greatest number\" under a budget means divide the remaining money by the unit price and take the floor, never the nearest integer."
+}

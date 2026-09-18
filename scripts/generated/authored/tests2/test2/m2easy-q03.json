@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A land-use plan sets aside $x$ acres of parkland and $y$ acres of wetland, and the plan's stormwater credit requirement is $6x + 10y = 84$. Which equation, paired with the given equation, forms a system with infinitely many solutions?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x + 5y = 42$"
+  },
+  {
+   "id": "B",
+   "text": "$3x + 5y = 84$"
+  },
+  {
+   "id": "C",
+   "text": "$6x + 10y = 42$"
+  },
+  {
+   "id": "D",
+   "text": "$12x + 20y = 84$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "halves the coefficients but leaves the constant at 84, so the lines are parallel and the system has no solution",
+  "C": "halves the constant to 42 but leaves the coefficients unchanged, again giving parallel lines",
+  "D": "doubles the coefficients but leaves the constant at 84 instead of doubling it to 168"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Divide every term of $6x + 10y = 84$ by $2$: $3x + 5y = 42$.\n\n**The Full Solution:**\nStep 1: A system has infinitely many solutions only when the two equations are multiples of each other, term for term, including the constant.\nStep 2: Scale the given equation by $\\frac{1}{2}$. Then $6x$ becomes $3x$, $10y$ becomes $5y$, and $84$ becomes $42$.\nStep 3: The equivalent equation is $3x + 5y = 42$. Check: multiplying it back by $2$ gives $6x + 10y = 84$, so the two equations describe the same line. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($3x + 5y = 84$): scales the left side only. Since $3x + 5y$ cannot equal both $42$ and $84$, this system has no solution.\n* Choice C ($6x + 10y = 42$): scales the right side only, leaving two parallel lines with no point in common.\n* Choice D ($12x + 20y = 84$): doubles the coefficients but not the constant, which should have become $168$.\n\n**Test Day Takeaway:** Equivalent means every term scales by the same factor. Check the constant last, because that is the term the eye skips."
+}

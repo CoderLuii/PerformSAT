@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-057",
+ "question": "Expanding the product $(5x + c)(2x - 3)$ gives $10x^2 + 11x - 39$ for exactly one constant $c$, which a coach reads as a hurdle spacing in meters before laying out a lane on the track. What is the value of that constant?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-13$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$11$"
+  },
+  {
+   "id": "D",
+   "text": "$13$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "solves $-3c = 39$, flipping the sign of the constant term",
+  "B": "quotes the $3$ inside $2x - 3$ instead of solving for $c$",
+  "C": "reports the middle coefficient $11$ rather than the constant $c$"
+ },
+ "explanation": "**SAT Pattern: FOIL Two Binomials**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The constant term of the product is $c(-3) = -39$, so $c = 13$.\n\n**The Full Solution:**\nStep 1: Expand: $(5x + c)(2x - 3) = 10x^2 - 15x + 2cx - 3c$.\nStep 2: The constant term is $-3c$, and it must equal $-39$, so $c = 13$.\nStep 3: Confirm with the middle term: $-15 + 2(13) = 11$, matching $11x$. Check: $(5x + 13)(2x - 3) = 10x^2 + 11x - 39$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-13$): loses a negative sign, since $-3c = -39$ gives a positive $c$.\n* Choice B ($3$): copies a number out of the given binomial.\n* Choice C ($11$): reads off the coefficient of $x$, which is $-15 + 2c$, not $c$.\n\n**Test Day Takeaway:** The constant term of a product comes only from the two constants — solve there first, then use the middle term as a check."
+}

@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "question": "Which choice best describes the function of the underlined sentence (\"More recent work ... sign language\") in the text as a whole?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It introduces a further line of evidence that extends the passage's case for treating sign languages as full languages to systems that arose without any prior model."
-    },
-    {
-      "id": "B",
-      "text": "It concedes a limitation of the early American Sign Language research described in the previous sentence by pointing to grammatical cases that the established rules cannot adequately explain."
-    },
-    {
-      "id": "C",
-      "text": "It restates the outdated view mentioned at the start of the passage in order to show why that view was eventually abandoned by scholars."
-    },
-    {
-      "id": "D",
-      "text": "It shifts the passage's focus from grammar toward the social conditions under which deaf communities have historically been excluded."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The previous sentence reports that research established the grammar of an existing sign language; the underlined sentence adds a stronger case—village sign languages that develop full grammar on their own, without any model—and the final sentence ties this to the broad question the passage raises. So the sentence extends the argument with a further line of evidence. Choice B misreads it as conceding a flaw in the earlier work, but it supports that work rather than qualifying it. Choice C says it repeats the discredited \"pantomime\" view, which it does not, and Choice D claims a shift to social exclusion, a topic the passage never takes up.",
-  "passage": "Sign languages were long dismissed by hearing scholars as crude systems of pantomime rather than true languages. Research beginning in the 1960s overturned that view by showing that a sign language such as American Sign Language has its own grammar, including rules for word order and for marking questions through facial expression. More recent work has documented village sign languages that arise spontaneously in communities with many deaf members and that develop complex grammar within a few generations, without any model from an established sign language. Such findings bear on a central question in linguistics: whether the structures common to human languages reflect a capacity that emerges whenever people need to communicate.",
-  "_meta": {
-    "anchor": "sign-language linguistics: established vs. emerging (village) sign languages"
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "question": "Which choice best describes the function of the underlined sentence (\"Because every call ... fires and storms\") in the text as a whole?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It points out that operators took on duties beyond the connecting of calls."
   },
-  "id": 1106,
-  "module": 1
+  {
+   "id": "B",
+   "text": "It explains why switchboard operators were eventually replaced by automatic machines."
+  },
+  {
+   "id": "C",
+   "text": "It questions whether a skilled operator could really work as quickly as the text claims."
+  },
+  {
+   "id": "D",
+   "text": "It describes the equipment that operators used to link one line to another."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** After detailing the core job — connecting calls by hand — the underlined sentence widens the picture: operators \"also became an informal directory service,\" locating doctors and relaying news.\n\n**The Full Solution:**\n- The first four sentences establish what the job officially was: answering, asking, and connecting lines with patch cords, at speed.\n- The underlined sentence begins \"Because every call passed through their hands,\" then adds the word \"also\" — a signal that a further, unofficial role is being introduced.\n- Its function is therefore to extend the account of operators' work past the switchboard itself.\n\n**Why the other choices are wrong:**\n- B: The text never mentions automatic switching or the replacement of operators.\n- C: The sentence adds to the account of operators' work; it casts no doubt on the speed claim that precedes it.\n- D: The equipment — sockets, cranks, patch cords — is described earlier in the text, not in the underlined sentence.",
+ "passage": "In the first decades of telephone service, a call did not go through on its own. A subscriber turned a crank, and a switchboard operator answered, asked for the destination, and connected the two lines by hand with a short cable called a patch cord. Operators sat shoulder to shoulder before tall panels of sockets, plugging and unplugging cords hundreds of times an hour. A skilled operator could complete a connection in a few seconds. __Because every call passed through their hands, operators also became an informal directory service, tracking down doctors after hours and passing along news of fires and storms.__",
+ "_meta": {
+  "anchor": "telephone switchboard operators — manual exchange work and informal community role",
+  "distractors": {
+   "B": "imports later history the text omits",
+   "C": "misreads addition as doubt",
+   "D": "points at the wrong sentences"
+  }
+ },
+ "id": 1106,
+ "module": 1
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-014",
+  "question": "A community garden charges $\\$32$ per season for a plot plus $\\$4$ for each bag of compost a gardener buys. A gardener paid a total of $\\$68$ for one season. Which equation can be used to find $b$, the number of bags of compost the gardener bought?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4b - 32 = 68$"
+    },
+    {
+      "id": "B",
+      "text": "$32b + 4 = 68$"
+    },
+    {
+      "id": "C",
+      "text": "$36b = 68$"
+    },
+    {
+      "id": "D",
+      "text": "$32 + 4b = 68$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the plot fee instead of adding it",
+    "B": "swaps the fee and the per-bag price",
+    "C": "adds the fee to the per-bag price as if the fee were charged per bag"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Linear Cost Equation Setup**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Fixed plot fee $32$ plus $4$ per bag for $b$ bags equals the total $68$: $32 + 4b = 68$.\n\n**The Full Solution:**\nStep 1: The total cost is the one-time plot fee plus the compost cost. The compost cost is $4$ dollars per bag times $b$ bags, or $4b$.\nStep 2: Set the sum equal to the amount paid: $32 + 4b = 68$.\nStep 3: Check by solving: $4b = 36$, so $b = 9$. Nine bags at $4$ dollars is $36$ dollars, and $32 + 36 = 68$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4b - 32 = 68$): subtracts the plot fee, treating it as a discount rather than a charge.\n* Choice B ($32b + 4 = 68$): swaps the numbers, charging $32$ per bag with a $4$ fee.\n* Choice C ($36b = 68$): adds $32 + 4$ and multiplies by $b$, charging the plot fee once per bag.\n\n**Test Day Takeaway:** Fixed charge plus rate times quantity equals total; solve the equation you wrote and confirm the answer is a whole number of items."
+}

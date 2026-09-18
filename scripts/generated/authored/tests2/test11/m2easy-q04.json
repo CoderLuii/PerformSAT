@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A monthly budget assigns $x$ dollars to transit and $3x$ dollars to rent, and those two categories together account for $\\$1{,}596$ of the month's spending. What is the value of $x$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$399$"
+  },
+  {
+   "id": "B",
+   "text": "$532$"
+  },
+  {
+   "id": "C",
+   "text": "$798$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}197$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the total by 3, using only the coefficient of the rent term",
+  "C": "divides the total by 2, treating the two categories as equal amounts",
+  "D": "reports the rent, 3x, instead of the value of x"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The two categories are $x + 3x = 4x$ dollars, so $4x = 1{,}596$ and $x = 399$.\n\n**The Full Solution:**\nStep 1: Translate the sentence: transit plus rent is $x + 3x$, and that total is $1{,}596$.\nStep 2: Combine like terms on the left: $4x = 1{,}596$.\nStep 3: Divide both sides by $4$: $x = 399$. Check: transit is $\\$399$, rent is $3(399) = \\$1{,}197$, and $399 + 1{,}197 = 1{,}596$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($532$): divides $1{,}596$ by $3$, using the rent coefficient alone and ignoring the transit dollar.\n* Choice C ($798$): divides by $2$ because there are two categories, which would be right only if the categories were equal.\n* Choice D ($1{,}197$): this is the rent, $3x$ — the largest piece of the total, but not what the question defines as $x$.\n\n**Test Day Takeaway:** Combine the like terms before dividing; the number you divide by is the total count of $x$'s, not the count of categories."
+}

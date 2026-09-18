@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "On a hiking trail map with coordinates given in kilometers, three markers are at $(0, 0)$, $(p, 0)$, and $(q, r)$, where $p$, $q$, and $r$ are positive constants. Which expression gives the area, in square kilometers, of the triangle formed by the three markers?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{1}{2}pq$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{1}{2}qr$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{1}{2}pr$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{1}{2}(p + q)r$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses q, the third marker's horizontal coordinate, as the height instead of its vertical coordinate r",
+  "B": "uses q as the base instead of p, the length of the side lying on the horizontal axis",
+  "D": "adds the two horizontal coordinates to form the base, as if the figure were a trapezoid"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The side from $(0, 0)$ to $(p, 0)$ lies along the horizontal axis, so the base is $p$ and the height is the third marker's vertical distance from that axis, $r$: area $= \\frac{1}{2}pr$.\n\n**The Full Solution:**\nStep 1: Choose the side that is easiest to measure. The markers $(0, 0)$ and $(p, 0)$ both have vertical coordinate $0$, so the segment joining them is horizontal with length $p$. Take that as the base.\nStep 2: The height is the perpendicular distance from the third marker to the line containing the base. That line is the horizontal axis, so the distance is the third marker's vertical coordinate, $r$. Its horizontal coordinate $q$ only slides the marker along, which does not change the height.\nStep 3: Area $= \\frac{1}{2}(\\text{base})(\\text{height}) = \\frac{1}{2}pr$. Check with numbers: for $p = 6$, $q = 5$, $r = 4$ the triangle has vertices $(0,0)$, $(6,0)$, $(5,4)$ and area $\\frac{1}{2}(6)(4) = 12$, which does not depend on $q$ at all. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{2}pq$): keeps the correct base but uses $q$ as the height. $q$ measures sideways motion, and sliding the top marker sideways leaves the area unchanged.\n* Choice B ($\\frac{1}{2}qr$): pairs the correct height with the wrong base, using the third marker's horizontal coordinate instead of the length $p$ of the side on the axis.\n* Choice D ($\\frac{1}{2}(p + q)r$): adds the two horizontal coordinates, which is the trapezoid rule $\\frac{1}{2}(b_1 + b_2)h$ applied to a triangle.\n\n**Test Day Takeaway:** With one side on an axis, the area needs only two numbers: the length of that side and the perpendicular coordinate of the opposite vertex. Any coordinate that slides a vertex parallel to the base is irrelevant."
+}

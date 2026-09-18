@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-016",
+  "question": "A bicycle shop buys a helmet for $\\$40$ and marks up this cost by $75\\%$ to set the regular price. During a sale, the regular price is reduced by $20\\%$. What is the sale price of the helmet, in dollars?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$22$"
+    },
+    {
+      "id": "B",
+      "text": "$56$"
+    },
+    {
+      "id": "C",
+      "text": "$62$"
+    },
+    {
+      "id": "D",
+      "text": "$70$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts both percents from the cost ($40 \\times 0.55$), treating the markup as a decrease.",
+    "C": "nets the percents to $+55\\%$ and applies $1.55$ to the cost; the $20\\%$ is taken off the larger regular price, not the cost.",
+    "D": "stops at the regular price and never applies the sale discount."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Markup Then Discount**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Regular price: $40 \\times 1.75 = 70$. Sale price: $70 \\times 0.80 = 56$.\n\n**The Full Solution:**\nStep 1: A $75\\%$ markup multiplies the cost by $1.75$: regular price $= 40 \\times 1.75 = 70$ dollars.\nStep 2: A $20\\%$ reduction multiplies by $0.80$: sale price $= 70 \\times 0.80 = 56$ dollars.\nStep 3: Check with one combined factor: $1.75 \\times 0.80 = 1.40$, and $40 \\times 1.40 = 56$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($22$): subtracts both percents from the cost ($40 \\times 0.55$), treating the markup as a decrease.\n* Choice C ($62$): nets the percents to $+55\\%$ and applies $1.55$ to the cost; the $20\\%$ is taken off the larger regular price, not the cost.\n* Choice D ($70$): stops at the regular price and never applies the sale discount.\n\n**Test Day Takeaway:** Chain percent changes as multipliers in order: $\\times 1.75$ then $\\times 0.80$. Percents that apply to different bases cannot be added or subtracted."
+}

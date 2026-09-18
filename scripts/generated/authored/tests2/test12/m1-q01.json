@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "question": "Peak wind gusts at four automated stations during one storm are listed in the table, in meters per second. Using $3.6$ kilometers per hour for every $1$ meter per second, convert Brantley's peak gust to kilometers per hour.",
+  "questionTable": {
+    "headers": [
+      "Station",
+      "Peak gust (m/s)"
+    ],
+    "rows": [
+      [
+        "Aldergrove",
+        "18"
+      ],
+      [
+        "Brantley",
+        "25"
+      ],
+      [
+        "Coulee",
+        "12"
+      ],
+      [
+        "Denman",
+        "30"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6.9$"
+    },
+    {
+      "id": "B",
+      "text": "$64.8$"
+    },
+    {
+      "id": "C",
+      "text": "$90$"
+    },
+    {
+      "id": "D",
+      "text": "$108$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by the conversion factor instead of multiplying: 25 / 3.6 = 6.9",
+    "B": "converts Aldergrove's 18 m/s instead of Brantley's 25 m/s: 18 x 3.6 = 64.8",
+    "D": "converts Denman's 30 m/s instead of Brantley's 25 m/s: 30 x 3.6 = 108"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Proportion Solving**\n\n**Choice C is correct.** The Brantley row lists a peak gust of $25$ meters per second, and each meter per second is $3.6$ kilometers per hour, so the gust is $25 \\times 3.6 = 90$ kilometers per hour.\n\n**The Fast Way (~15s):** Read $25$ from the Brantley row and multiply by $3.6$ to get $90$.\n\n**The Full Solution:**\nStep 1: Find Brantley in the table. Its peak gust is $25$ meters per second, not $18$, $12$, or $30$.\nStep 2: Write the conversion as a rate whose bottom unit is the unit being replaced: $\\frac{3.6 \\text{ km/h}}{1 \\text{ m/s}}$.\nStep 3: $25 \\text{ m/s} \\times \\frac{3.6 \\text{ km/h}}{1 \\text{ m/s}} = 90 \\text{ km/h}$. Check by converting back: $90 \\div 3.6 = 25$ meters per second, exactly the table value. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6.9$): divides by the conversion factor instead of multiplying, giving $25 \\div 3.6 \\approx 6.9$. One meter per second is worth several kilometers per hour, so the number has to grow.\n* Choice B ($64.8$): converts the wrong row, Aldergrove's $18$ meters per second, giving $18 \\times 3.6 = 64.8$.\n* Choice D ($108$): converts the wrong row, Denman's $30$ meters per second, giving $30 \\times 3.6 = 108$.\n\n**Test Day Takeaway:** Set a conversion up as a fraction whose denominator carries the unit you are leaving; the units cancel and the multiply-or-divide decision is made for you."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-249",
+ "question": "A rope $54$ centimeters long is cut into two pieces. The length of the longer piece is $5$ times the length of the shorter piece. What is the length, in centimeters, of the longer piece?",
+ "correctAnswer": "45",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**The correct answer is $45$.**\n\n**The Fast Way (~10s):** The pieces are in a $5:1$ ratio, so the rope is $6$ equal parts of $9$ cm; the longer piece is $5 \\cdot 9 = 45$ cm.\n\n**The Full Solution:**\nStep 1: Let $s$ be the shorter length and $\\ell$ the longer length, in centimeters. Then $s + \\ell = 54$ and $\\ell = 5s$.\nStep 2: Substitute: $s + 5s = 54$, so $6s = 54$ and $s = 9$.\nStep 3: The longer piece is $\\ell = 5(9) = 45$. Check: $9 + 45 = 54$. $\\checkmark$\n\n**Common Mistakes:** Reporting the shorter piece, $9$, or dividing $54$ by $5$ instead of by $6$ (forgetting that the total is $6$ equal parts).\n\n**Test Day Takeaway:** \"One is $k$ times the other\" splits a total into $k + 1$ equal parts."
+}

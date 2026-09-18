@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-149",
+  "question": "A hearing-screening booth reports its excess noise level, in decibels above the booth's rated limit, as $L(x)=x^{2}-6x+1$, where $x$ is the door-seal offset, in centimeters, from the position at which the booth was calibrated. What is the value of $L(-4)$?",
+  "correctAnswer": "41",
+  "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**The correct answer is $41$.**\n\n**The Fast Way (~20s):** $(-4)^{2}=16$ and $-6(-4)=24$, so $L(-4)=16+24+1=41$.\n\n**The Full Solution:**\nStep 1: Substitute $-4$ for $x$: $L(-4)=(-4)^{2}-6(-4)+1$.\nStep 2: Square first: $(-4)^{2}=16$. Then $-6(-4)=24$, a positive term.\nStep 3: Combine: $16+24+1=41$ decibels above the rated limit. Check: $16+24=40$, and adding 1 gives 41 ✓\n\n**Common Mistakes:** Writing $(-4)^{2}$ as $-16$ gives $-16+24+1=9$. Treating $-6(-4)$ as $-24$ gives $16-24+1=-7$. Forgetting the constant term gives 40.\n\n**Test Day Takeaway:** Two sign flips hide in a quadratic at a negative input: the square is positive, and a negative coefficient times a negative input is positive."
+}

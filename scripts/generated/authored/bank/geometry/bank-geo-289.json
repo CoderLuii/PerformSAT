@@ -1,0 +1,48 @@
+{
+ "question": "An atoll lagoon's shoreline is modeled in the $xy$-plane by $(x + 4)^2 + (y - 3)^2 = 169$, with coordinates in kilometers, and the figure plots the shoreline's center together with a survey marker on the shoreline. What is the horizontal distance, in kilometers, between them?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -4,
+     3
+    ],
+    [
+     8,
+     8
+    ]
+   ],
+   "xMin": -6,
+   "xMax": 10,
+   "yMin": -2,
+   "yMax": 10
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$17$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the vertical distance, 8 - 3 = 5",
+  "C": "reports the straight-line distance, which is the radius 13",
+  "D": "adds the horizontal and vertical distances, 12 + 5"
+ },
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The center is $(-4, 3)$ and the plotted marker is $(8, 8)$, so the horizontal gap is $8 - (-4) = 12$ kilometers.\n\n**The Full Solution:**\nStep 1: Standard form gives center $(-4, 3)$ and $r = \\sqrt{169} = 13$ kilometers, so the lower-left plotted point is the center.\nStep 2: Read the other plotted point from the grid: $(8, 8)$. It is on the shoreline because $(8 + 4)^2 + (8 - 3)^2 = 144 + 25 = 169$ ✓\nStep 3: Horizontal distance means the difference in $x$-coordinates: $8 - (-4) = 12$ kilometers.\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): gives the vertical difference $8 - 3$ instead of the horizontal one.\n* Choice C ($13$): gives the straight-line distance, which is the radius, not the horizontal offset.\n* Choice D ($17$): adds the horizontal and vertical gaps, $12 + 5$, instead of reporting just one.\n\n**Test Day Takeaway:** Standard form hands you the center for free; read the second point off the grid and subtract only the coordinate the question names.",
+ "id": "bank-geo-289"
+}

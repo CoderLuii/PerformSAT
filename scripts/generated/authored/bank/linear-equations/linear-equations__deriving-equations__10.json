@@ -1,0 +1,48 @@
+{
+  "id": 10,
+  "question": "In the $xy$-plane, the graph shown models the combinations of $x$ small crates and $y$ large crates that exactly fill one delivery truck. Which equation could represent this relationship?",
+  "diagram": {
+    "type": "linearLine",
+    "params": {
+      "points": [
+        [
+          0,
+          15
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "xRange": [
+        0,
+        24
+      ],
+      "yRange": [
+        0,
+        20
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4x + 3y = 60$"
+    },
+    {
+      "id": "B",
+      "text": "$3x + 4y = 20$"
+    },
+    {
+      "id": "C",
+      "text": "$3x + 4y = 60$"
+    },
+    {
+      "id": "D",
+      "text": "$20x + 15y = 60$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "Both intercepts are visible on the graph; the correct equation has to be satisfied by each of them.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** The line hits $(20, 0)$ and $(0, 15)$; only $3x + 4y = 60$ gives $60$ at both — choice C.\n\n**The Full Solution:**\nStep 1: Read the intercepts from the graph: the line passes through $(20, 0)$ and $(0, 15)$.\nStep 2: Substitute $(20, 0)$ into $3x + 4y = 60$: $3(20)+4(0) = 60$. $\\checkmark$\nStep 3: Substitute $(0, 15)$ into the same equation: $3(0)+4(15) = 60$. $\\checkmark$ Both intercepts satisfy it, so it represents the graph.\n\n**Why the wrong answers are tempting:**\n* Choice A ($4x + 3y = 60$): swaps the coefficients, which places the intercepts at $(15, 0)$ and $(0, 20)$ instead.\n* Choice B ($3x + 4y = 20$): keeps the correct coefficients but uses an intercept value, $20$, as the constant; at $(20, 0)$ the left side is $60$, not $20$.\n* Choice D ($20x + 15y = 60$): uses the intercepts themselves as the coefficients; at $(20, 0)$ the left side is $400$, not $60$.\n\n**Test Day Takeaway:** With a line in standard form, test the two intercepts rather than converting to slope-intercept form — two substitutions settle it."
+}

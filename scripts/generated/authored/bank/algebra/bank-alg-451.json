@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-451",
+  "question": "The function $A(t) = 12.5 - 0.4t$ models the area $A$, in thousands of square kilometers, of an ice sheet $t$ years after 2000. Which of the following is the best interpretation of $0.4$ in this context?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The area of the ice sheet decreases by $400$ square kilometers each year."
+    },
+    {
+      "id": "B",
+      "text": "The area of the ice sheet decreases by $0.4$ square kilometers each year."
+    },
+    {
+      "id": "C",
+      "text": "The area of the ice sheet in 2000 was $400$ square kilometers."
+    },
+    {
+      "id": "D",
+      "text": "The area of the ice sheet decreases by $12{,}500$ square kilometers each year."
+    }
+  ],
+  "distractorNotes": {
+    "B": "ignores that A is measured in thousands of square kilometers.",
+    "C": "confuses the rate with the initial value; the area in 2000 was 12.5 thousand, or 12{,}500, square kilometers.",
+    "D": "uses the initial value 12.5 thousand as if it were the yearly change."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The slope $-0.4$ is in thousands of square kilometers per year; $0.4$ thousand is $400$ square kilometers lost each year.\n\n**The Full Solution:**\nStep 1: The model is linear with slope $-0.4$ and constant $12.5$. The negative slope means $A$ decreases as $t$ increases.\nStep 2: The units of $A$ are thousands of square kilometers, so a change of $0.4$ in $A$ is $0.4 \\times 1{,}000 = 400$ square kilometers, per year.\nStep 3: Check: $A(0) = 12.5$ and $A(1) = 12.1$; the drop of $0.4$ thousand square kilometers is $400$ square kilometers. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (The area of the ice sheet decreases by $0.4$ square kilometers each year.): ignores that $A$ is measured in thousands of square kilometers.\n* Choice C (The area of the ice sheet in 2000 was $400$ square kilometers.): confuses the rate with the initial value; the area in 2000 was $12.5$ thousand, or $12{,}500$, square kilometers.\n* Choice D (The area of the ice sheet decreases by $12{,}500$ square kilometers each year.): uses the initial value $12.5$ thousand as if it were the yearly change.\n\n**Test Day Takeaway:** Check the units attached to the output variable; a slope of $0.4$ in \"thousands\" is a change of $400$ per unit of input."
+}

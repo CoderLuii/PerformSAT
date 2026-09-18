@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-285",
+ "question": "$6(x + 2) - 4x = 2x + a$\n\nIn the given equation, $a$ is a constant. The equation has no solution for every value of $a$ except one. What is that value of $a$?",
+ "correctAnswer": "12",
+ "explanation": "**SAT Pattern: Identifying Identity / Contradiction Equations**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~10s):** Simplify the left side: $6x + 12 - 4x = 2x + 12$. The $x$-terms match the right side, so the equation has no solution unless $a = 12$, when it becomes an identity.\n\n**The Full Solution:**\nStep 1: Distribute and combine: $6(x + 2) - 4x = 2x + 12$.\nStep 2: The equation is $2x + 12 = 2x + a$. Subtracting $2x$ leaves $12 = a$.\nStep 3: If $a \\neq 12$ the statement is false and there is no solution; if $a = 12$ it is true for every $x$. The exceptional value is $a = 12$. $\\checkmark$\n\n**Common Mistakes:** Answering $2$ (the $x$-coefficient) or $6$ (the leading factor) instead of the simplified constant; the deciding comparison is between constants after the $x$-terms cancel.\n\n**Test Day Takeaway:** When the variable terms cancel, the equation is either always true or never true; the single constant that makes it true is the boundary."
+}

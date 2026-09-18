@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "Consider the equation $\\sqrt{2x + 3} = x - 6$, where $x$ is a real number. Which statement correctly describes its solutions?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The equation has exactly one real solution, $x = 11$."
+  },
+  {
+   "id": "B",
+   "text": "The equation has exactly one real solution, $x = 3$."
+  },
+  {
+   "id": "C",
+   "text": "The equation has two real solutions, $x = 3$ and $x = 11$."
+  },
+  {
+   "id": "D",
+   "text": "The equation has no real solutions."
+  }
+ ],
+ "distractorNotes": {
+  "B": "keeps the candidate 3, for which the right side is -3, and discards the candidate that actually works",
+  "C": "squares both sides and accepts both roots of x^2 - 14x + 33 = 0 without substituting them back",
+  "D": "sees one candidate fail the check and discards the other candidate along with it"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Squaring gives $x^2 - 14x + 33 = 0$, so $x = 3$ or $x = 11$. A square root is never negative, and $x - 6$ is negative at $x = 3$, so only $x = 11$ survives.\n\n**The Full Solution:**\nStep 1: Square both sides: $2x + 3 = (x - 6)^2 = x^2 - 12x + 36$, which rearranges to $x^2 - 14x + 33 = 0$.\nStep 2: Factor: $(x - 3)(x - 11) = 0$, so the candidates are $x = 3$ and $x = 11$. Squaring can create solutions the original equation does not have, so both must be tested.\nStep 3: Test them in the original equation. At $x = 11$: $\\sqrt{2(11) + 3} = \\sqrt{25} = 5$ and $11 - 6 = 5$, so $x = 11$ works. $\\checkmark$ At $x = 3$: $\\sqrt{2(3) + 3} = \\sqrt{9} = 3$, but $3 - 6 = -3$, and $3 \\ne -3$. So $x = 3$ is extraneous and the equation has exactly one real solution.\n\n**Why the wrong answers are tempting:**\n* Choice B ($x = 3$ only): the right candidate is thrown out and the extraneous one kept. The test is whether the right-hand side is non-negative; at $x = 3$ it equals $-3$.\n* Choice C (both $3$ and $11$): stopping after factoring. Every squaring step obliges you to substitute back.\n* Choice D (no real solutions): one failed candidate does not condemn the other. $x = 11$ satisfies the original equation exactly.\n\n**Test Day Takeaway:** Squaring a radical equation can invent roots. Solve, then substitute every candidate into the original: the side equal to the radical must come out non-negative."
+}

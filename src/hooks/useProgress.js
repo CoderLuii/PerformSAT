@@ -341,8 +341,14 @@ export const useProgress = (userId) => {
             hydratingArtifact.current = true;
             console.log('[useProgress] Hydrating study plan via latest-query');
 
+            // Survivor-aware: after a practice-test reset the NEWEST artifact
+            // can be an orphan (its source test is gone) while the diagnostic's
+            // starter plan underneath it is still valid — the plain latest
+            // query returned the orphan and the account fell into the
+            // first-run "take your diagnostic" state despite a completed
+            // diagnostic (2026-08-29 founder repro).
             import('../services/hybridStudyPlanService')
-              .then(({ getLatestStudyPlanArtifact }) => getLatestStudyPlanArtifact(userId))
+              .then(({ getLatestSurvivingStudyPlanArtifact }) => getLatestSurvivingStudyPlanArtifact(userId, data.practiceTestResults || {}))
               .then(art => {
               // Stale-resolve guard: account switched while this fetch was in
               // flight — do not write the previous user's plan into state.
@@ -1032,17 +1038,47 @@ export const useProgress = (userId) => {
   const saveMiniDiagnostic = async (record) => {
     if (!userId || !record) return false;
 
+    // A focus-weighted check-in's band is sampled from the student's WEAKEST
+    // skills — treating it as a representative score deflates the baseline
+    // right after two weeks of studying. Carry the last representative
+    // (full-variant) band forward; the check-in still refreshes everything
+    // else (domains, skills, plan).
+    // The carried band inherits the PRIOR record's flag — stamping it clean
+    // would launder a deflated first-checkin band into "representative" on
+    // the following check-in.
+    const toSave = (record?.scoreBandFocusWeighted && miniDiagnostic?.scoreBand)
+      ? {
+          ...record,
+          scoreBand: miniDiagnostic.scoreBand,
+          scoreBandFocusWeighted: !!miniDiagnostic.scoreBandFocusWeighted,
+        }
+      : record;
+
     // Optimistic update — onSnapshot will confirm.
-    setMiniDiagnostic(record);
+    setMiniDiagnostic(toSave);
 
     try {
       const progressRef = doc(db, 'progress', userId);
-      const itemIds = (record.itemIds || []).slice(0, 400); // arrayUnion limit guard
-      await withTimeout(setDoc(progressRef, {
-        miniDiagnostic: record,
-        ...(itemIds.length > 0 ? { answeredQuestionIds: arrayUnion(...itemIds) } : {}),
-        lastUpdated: serverTimestamp(),
-      }, { merge: true }));
+      const itemIds = (toSave.itemIds || []).slice(0, 400); // arrayUnion limit guard
+      // updateDoc (dotted-path semantics on a top-level key) REPLACES the
+      // miniDiagnostic map outright. setDoc+merge deep-merged it, so a v2
+      // check-in record (no geometry key, different shape) merged INTO the
+      // old full-diagnostic record produced chimera data whose domain totals
+      // no longer summed to totalCount.
+      try {
+        await withTimeout(updateDoc(progressRef, {
+          miniDiagnostic: toSave,
+          ...(itemIds.length > 0 ? { answeredQuestionIds: arrayUnion(...itemIds) } : {}),
+          lastUpdated: serverTimestamp(),
+        }));
+      } catch (err) {
+        if (err?.code !== 'not-found') throw err;
+        await withTimeout(setDoc(progressRef, {
+          miniDiagnostic: toSave,
+          ...(itemIds.length > 0 ? { answeredQuestionIds: arrayUnion(...itemIds) } : {}),
+          lastUpdated: serverTimestamp(),
+        }, { merge: true }));
+      }
       return true;
     } catch (err) {
       console.error('Failed to save mini-diagnostic record:', err);

@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-142",
+ "question": "A straight cooling duct of uniform rectangular bore encloses $6{,}048$ cubic centimeters of air. The bore measures $14$ centimeters across and $12$ centimeters high, and the duct's sheet-metal thickness is small enough to ignore. How long, in centimeters, is the duct?",
+ "correctAnswer": "36",
+ "explanation": "**SAT Pattern: Volume of a Rectangular Prism**\n\n**The correct answer is $36$.**\n\n**The Fast Way (~30s):** The bore's area is $14 \\times 12 = 168$, and $6{,}048 \\div 168 = 36$.\n\n**The Full Solution:**\nStep 1: The duct is a rectangular prism, so its volume equals the cross-sectional area times the length: $V = A\\ell$.\nStep 2: The bore has area $14 \\times 12 = 168$ square centimeters, so $6{,}048 = 168\\ell$.\nStep 3: Dividing gives $\\ell = \\frac{6{,}048}{168} = 36$ centimeters.\n\nCheck: $168 \\times 36 = 6{,}048$, the stated volume. $\\checkmark$\n\n**Common Mistakes:**\n* Answering $432$ by dividing by only the width, $6{,}048 \\div 14$.\n* Answering $504$ by dividing by only the height, $6{,}048 \\div 12$.\n* Answering $26$ by adding the two bore dimensions instead of multiplying them.\n\n**Test Day Takeaway:** To recover a missing dimension, divide the volume by the product of the two you already know."
+}

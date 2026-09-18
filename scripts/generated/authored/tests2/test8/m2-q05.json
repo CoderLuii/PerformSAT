@@ -1,0 +1,63 @@
+{
+  "id": 5,
+  "question": "For nine trials, a chemist recorded the reaction rate, in millimoles per liter per minute, at temperature $T$, in degrees Celsius; the scatterplot and its line of best fit $\\hat{r} = 0.5T - 4$ are shown. A tenth trial, not plotted, had a residual of $1.5$ and a measured rate of $15.5$. At what temperature was the tenth trial run?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          20,
+          6.9
+        ],
+        [
+          25,
+          7.4
+        ],
+        [
+          30,
+          11.6
+        ],
+        [
+          35,
+          12.8
+        ],
+        [
+          40,
+          17.3
+        ],
+        [
+          45,
+          18.0
+        ],
+        [
+          50,
+          21.8
+        ],
+        [
+          55,
+          22.3
+        ],
+        [
+          60,
+          26.4
+        ]
+      ],
+      "xMin": 15,
+      "xMax": 65,
+      "yMin": 0,
+      "yMax": 30,
+      "xGridStep": 5,
+      "yGridStep": 5,
+      "xLabelStep": 10,
+      "yLabelStep": 10,
+      "xLabel": "Temperature (degrees Celsius)",
+      "yLabel": "Rate (mmol per L per min)",
+      "bestFitLine": {
+        "slope": 0.5,
+        "intercept": -4
+      }
+    }
+  },
+  "correctAnswer": "36",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**The correct answer is $36$.**\n\n**The Fast Way (~25s):** A residual of $1.5$ means the measurement sits $1.5$ above the line, so the predicted rate was $15.5 - 1.5 = 14$; solving $0.5T - 4 = 14$ gives $T = 36$.\n\n**The Full Solution:**\nStep 1: Residual equals measured value minus predicted value, so $1.5 = 15.5 - \\hat{r}$ and the predicted rate for that trial is $\\hat{r} = 14$.\nStep 2: The prediction comes from the line of best fit, so set $0.5T - 4 = 14$.\nStep 3: Add $4$ to both sides to get $0.5T = 18$, then divide by $0.5$ to get $T = 36$. Check: at $T = 36$ the line predicts $0.5(36) - 4 = 14$, and $15.5 - 14 = 1.5$, the stated residual ✓\n\n**Common Mistakes:**\n* $42$: adds the residual to the measured rate, using $\\hat{r} = 17$ and solving $0.5T - 4 = 17$.\n* $39$: skips the residual entirely and sets the line equal to the measured rate, $0.5T - 4 = 15.5$.\n* $28$: solves $0.5T = 14$ without first undoing the $-4$ in the model.\n\n**Test Day Takeaway:** Residual = actual $-$ predicted, so a positive residual means the point sits above the line and the prediction is the smaller number."
+}

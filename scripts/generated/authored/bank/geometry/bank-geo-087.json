@@ -1,0 +1,29 @@
+{
+ "question": "A cylindrical section of a lava tube has a radius of $r$ meters, a length of $h$ meters, and a volume of $V$ cubic meters. Which expression gives the volume of a section whose radius is $3r$ and whose length is $\\frac{h}{2}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3V}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$3V$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{9V}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$9V$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "applies the factor 3 without squaring it, then halves",
+  "B": "scales by the radius factor 3 only and ignores the halved length",
+  "D": "squares the radius factor but ignores the halved length"
+ },
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Volume scales as radius squared times length, so the factor is $3^2 \\cdot \\frac{1}{2} = \\frac{9}{2}$.\n\n**The Full Solution:**\nStep 1: The original section has $V = \\pi r^2 h$.\nStep 2: The new section has volume $\\pi(3r)^2\\left(\\frac{h}{2}\\right) = \\pi \\cdot 9r^2 \\cdot \\frac{h}{2}$.\nStep 3: Factor out the original: $\\frac{9}{2}\\pi r^2 h = \\frac{9V}{2}$. Check: with $r = 1$, $h = 2$, $V = 2\\pi$, and the new section is $\\pi(9)(1) = 9\\pi = \\frac{9}{2}(2\\pi)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3V}{2}$): multiplies by $3$ rather than $3^2$, forgetting that the radius is squared.\n* Choice B ($3V$): scales only by the radius factor and never applies the halved length.\n* Choice D ($9V$): squares the radius factor correctly but leaves the length unchanged.\n\n**Test Day Takeaway:** In $\\pi r^2 h$ a radius factor enters squared and a height factor enters once — multiply the two effects.",
+ "id": "bank-geo-087"
+}

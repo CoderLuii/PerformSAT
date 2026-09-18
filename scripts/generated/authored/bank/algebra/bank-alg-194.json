@@ -1,0 +1,6 @@
+{
+ "question": "A chemist prepares $x$ milliliters of buffer and $y$ milliliters of diluent for a single assay, using $27$ milliliters in total, and the diluent volume $y$ is twice the buffer volume $x$. What is the value of $y$?",
+ "correctAnswer": "18",
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**The correct answer is $18$.**\n\n**The Fast Way (~20s):** Replacing $y$ with $2x$ gives $3x=27$, so $x=9$ and $y=2(9)=18$.\n\n**The Full Solution:**\n\nStep 1: Substitute $y=2x$ into $x+y=27$: $x+2x=27$.\n\nStep 2: Combine like terms and solve: $3x=27$, so $x=9$ milliliters of buffer.\n\nStep 3: Return to $y=2x$: $y=2(9)=18$ milliliters of diluent. Check: $9+18=27$, and $18$ is twice $9$.\n\n**Common Mistakes:** Reporting $9$ answers for $x$, the buffer volume, rather than the diluent volume asked for. Dividing $27$ by $2$ gives $13.5$ and ignores that the total is three equal parts, not two.\n\n**Test Day Takeaway:** After substituting, always return to the substitution equation to get the second variable, and reread which one the question wants.",
+ "id": "bank-alg-194"
+}

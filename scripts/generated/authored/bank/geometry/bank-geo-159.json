@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-159",
+ "question": "A workshop cuts square felt tiles in two sizes, and the perimeter of a large tile is $3$ times the perimeter of a small tile. The area of a large tile is $k$ times the area of a small tile. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\sqrt{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$27$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "square-roots the perimeter ratio instead of squaring it",
+  "B": "reports the perimeter ratio 3 as though area scaled the same way",
+  "D": "cubes the ratio, 3^3, as if comparing volumes"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Square Perimeter and Area Scaling**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Perimeter scales like a side, so the sides are in the ratio $3$, and areas scale by $3^2=9$.\n\n**The Full Solution:**\n\nStep 1 — Let the small tile have side $s$, so its perimeter is $4s$ and its area is $s^2$.\n\nStep 2 — The large perimeter is $3(4s)=12s$, so the large side is $\\frac{12s}{4}=3s$.\n\nStep 3 — The large area is $(3s)^2=9s^2$, which is $9$ times $s^2$, so $k=9$. Check: with $s=2$, the tiles have perimeters $8$ and $24$ and areas $4$ and $36$, and $\\frac{36}{4}=9$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\sqrt{3}$): this takes a square root when the step from length to area calls for a square.\n* Choice B ($3$): this reuses the perimeter ratio, which governs lengths, not areas.\n* Choice D ($27$): this cubes the ratio, the rule for volumes of similar solids.\n\n**Test Day Takeaway:** Perimeter and side length scale by $k$; area scales by $k^2$ — pick the exponent from the dimension being compared."
+}

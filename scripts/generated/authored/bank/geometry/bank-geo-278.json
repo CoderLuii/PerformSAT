@@ -1,0 +1,42 @@
+{
+ "id": "bank-geo-278",
+ "question": "A solar tracker rotates a panel, and its outer corner traces arc $AB$ in the figure below, marked in feet. How far does the corner travel?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 150,
+   "angleLabel": "5π/6",
+   "radius": 12,
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "showRadiusLabel": true,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$10\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$20\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$60\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the sector-area coefficient one half to the arc, giving 5 pi",
+  "C": "uses the diameter 24 in place of the radius, giving 20 pi",
+  "D": "computes the sector's area, one half r squared theta = 60 pi"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Arc Length**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** With the angle already in radians, arc $=r\\theta=12\\cdot\\frac{5\\pi}{6}=10\\pi$ feet.\n\n**The Full Solution:**\n\nStep 1: Recognize the angle's units. The label $\\frac{5\\pi}{6}$ is a radian measure, equal to $150°$.\n\nStep 2: Apply the radian arc formula. Arc length $=r\\theta$ when $\\theta$ is in radians.\n\nStep 3: Substitute. $12\\cdot\\frac{5\\pi}{6}=\\frac{60\\pi}{6}=10\\pi$ feet.\n\nCheck: in degrees, $\\frac{150}{360}(2\\pi\\cdot12)=\\frac{5}{12}(24\\pi)=10\\pi$, the same value.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5\\pi$): applies the sector-area coefficient $\\frac{1}{2}$ to the arc formula.\n* Choice C ($20\\pi$): uses the diameter $24$ in place of the radius in $r\\theta$.\n* Choice D ($60\\pi$): computes the sector's area, $\\frac{1}{2}r^{2}\\theta=\\frac{1}{2}(144)\\left(\\frac{5\\pi}{6}\\right)$.\n\n**Test Day Takeaway:** A central angle written with $\\pi$ is in radians, and then arc length is simply $r\\theta$ — no $360$ anywhere."
+}

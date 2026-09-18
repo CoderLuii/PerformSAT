@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "inferences",
   "module": 1,
-  "passage": "In Ain't I a Woman: Black Women and Feminism (1981), cultural critic bell hooks, who later joined the faculty of Berea College, examined how the mainstream feminist movement of the mid-twentieth century in the United States constructed its picture of \"women's\" political concerns. According to hooks, that movement consistently took the experiences of middle-class white women as its central frame of reference when defining what feminism was for. She also stressed, however, that the historical situation of Black women in the United States — shaped by the joint legacies of slavery, segregation, and gendered labor — differed in kind from the experience that frame of reference described. Hooks's analysis therefore implies that a feminist agenda derived from that frame of reference would tend to ______",
+  "passage": "The wooden writing tablets recovered at Vindolanda, a Roman fort near Hadrian's Wall, preserve the everyday correspondence of soldiers and their households — a birthday invitation, a request for warm socks, complaints about the roads. Wood rarely survives from antiquity; the tablets endured only because they were discarded into oxygen-poor, waterlogged ground that halted decay. Sites with ordinary, drier soils presumably received just as much casual correspondence, but none of it remains. Any picture of Roman letter-writing drawn from the surviving documents therefore ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "treat the experiences of Black women as its single most central organizing concern."
+      "text": "understates how expensive writing materials must have been for the ordinary soldiers stationed along the Roman frontier."
     },
     {
       "id": "B",
-      "text": "address inequalities rooted in class more readily than inequalities rooted in race."
+      "text": "suggests that soldiers at frontier forts like Vindolanda wrote far more often than residents of Roman towns elsewhere, whose casual letters were less likely to be preserved in the ground beneath them."
     },
     {
       "id": "C",
-      "text": "overlook the political concerns that arise from Black women's distinct historical situation."
+      "text": "reflects the accidents of preservation as much as the actual distribution of letter-writing across the Roman world."
     },
     {
       "id": "D",
-      "text": "prove unable to secure reforms that benefited Black women in any area of public life."
+      "text": "demonstrates that wooden tablets were the preferred writing material for casual correspondence throughout the empire."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. Hooks argues that mainstream feminism took middle-class white women's experience as its frame of reference and that Black women's situation differed in kind from what that frame described. It follows that an agenda built on that frame would leave out the concerns arising from Black women's distinct history—the inference in C. Choice A reverses the logic: hooks's point is that this feminism centered white women's experience, not Black women's. Choice B introduces a class-versus-race ranking the passage does not set up. Choice D goes too far; the passage implies such an agenda would overlook those concerns, not that it could never benefit Black women in any way at all."
+  "explanation": "**Choice C is correct.** The premises establish that survival depended on unusual burial conditions, not on where writing actually happened — so what survives mirrors preservation luck as much as ancient practice.\n\n**The Full Solution:**\n- Premise one: the Vindolanda tablets survived only because of a rare accident — oxygen-poor, waterlogged ground.\n- Premise two: drier sites \"presumably received just as much casual correspondence,\" yet none of it remains.\n- If writing was widespread but survival was rare and location-dependent, then the surviving record is shaped by where conditions favored preservation. Choice C draws exactly that conclusion, and no more.\n\n**Why the other choices are wrong:**\n- A: Cost is never mentioned; nothing in the premises bears on how expensive writing materials were.\n- B: This is the trap the passage warns against — reading survival as frequency. The premises say drier sites likely received just as much correspondence, which contradicts the idea that frontier soldiers wrote more.\n- D: The tablets' survival at one waterlogged site cannot show what materials the whole empire preferred; the premises are about preservation, not preference."
 }

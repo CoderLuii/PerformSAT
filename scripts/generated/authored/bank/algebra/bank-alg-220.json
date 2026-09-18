@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-220",
+ "question": "A packaging line's floor plan places the guide bar along $8x + 6y = 45$ and installs a crossbar perpendicular to the guide bar. What is the slope of the crossbar?",
+ "correctAnswer": "3/4",
+ "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**The correct answer is $\\frac{3}{4}$.**\n\n**The Fast Way (~25s):** The guide bar has slope $-\\frac{4}{3}$, so the crossbar has slope $\\frac{3}{4}$.\n\n**The Full Solution:**\nStep 1: Rewrite $8x + 6y = 45$ as $y = -\\frac{4}{3}x + \\frac{15}{2}$, so the guide bar has slope $-\\frac{4}{3}$.\nStep 2: The crossbar is perpendicular, so its slope is the negative reciprocal.\nStep 3: Flipping and negating $-\\frac{4}{3}$ gives $\\frac{3}{4}$. Check: $-\\frac{4}{3} \\cdot \\frac{3}{4} = -1$.\n\n**Common Mistakes:**\n* Reporting $-\\frac{3}{4}$ inverts the slope but keeps the negative sign.\n* Reporting $\\frac{4}{3}$ changes the sign without inverting.\n* Reporting $-\\frac{4}{3}$ gives the guide bar's own slope rather than the crossbar's.\n\n**Test Day Takeaway:** Reduce $-\\frac{A}{B}$ before inverting; $-\\frac{8}{6}$ and $-\\frac{4}{3}$ are the same slope, but the reduced form is faster to flip."
+}

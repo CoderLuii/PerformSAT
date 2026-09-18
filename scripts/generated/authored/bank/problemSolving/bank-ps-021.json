@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-021",
+  "question": "The value of a piece of manufacturing equipment decreases by $12\\%$ every $3$ years. The equipment is worth $\\$45{,}000$ today. Which of the following expressions gives the value of the equipment, in dollars, $t$ years from today?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$45{,}000(0.12)^{\\frac{t}{3}}$"
+    },
+    {
+      "id": "B",
+      "text": "$45{,}000(0.88)^{3t}$"
+    },
+    {
+      "id": "C",
+      "text": "$45{,}000(1.12)^{\\frac{t}{3}}$"
+    },
+    {
+      "id": "D",
+      "text": "$45{,}000(0.88)^{\\frac{t}{3}}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the rate of decrease, $0.12$, as the base instead of the fraction that remains, $0.88$.",
+    "B": "uses exponent $3t$, which applies the $12\\%$ drop three times per year instead of once every three years.",
+    "C": "uses a growth factor of $1.12$, which makes the value increase instead of decrease."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Exponential Depreciation Expression**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Each $3$-year period multiplies the value by $1 - 0.12 = 0.88$, and $t$ years contain $\\frac{t}{3}$ such periods, so the value is $45{,}000(0.88)^{t/3}$.\n\n**The Full Solution:**\nStep 1: A $12\\%$ decrease leaves $88\\%$ of the value, so the decay factor per period is $0.88$.\nStep 2: The period is $3$ years, not $1$ year. In $t$ years the number of periods is $\\frac{t}{3}$, so the exponent is $\\frac{t}{3}$.\nStep 3: Value $= 45{,}000(0.88)^{t/3}$. Check: at $t = 3$ the exponent is $1$ and the value is $45{,}000 \\times 0.88 = 39{,}600$, exactly one $12\\%$ drop. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($45{,}000(0.12)^{\\frac{t}{3}}$): uses the rate of decrease, $0.12$, as the base instead of the fraction that remains, $0.88$.\n* Choice B ($45{,}000(0.88)^{3t}$): uses exponent $3t$, which applies the $12\\%$ drop three times per year instead of once every three years.\n* Choice C ($45{,}000(1.12)^{\\frac{t}{3}}$): uses a growth factor of $1.12$, which makes the value increase instead of decrease.\n\n**Test Day Takeaway:** Exponential change is $\\text{initial} \\times (\\text{factor})^{\\text{number of periods}}$. When the period is $k$ years, the exponent is $\\frac{t}{k}$; test it with $t = k$."
+}

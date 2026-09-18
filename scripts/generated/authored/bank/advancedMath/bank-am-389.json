@@ -1,0 +1,46 @@
+{
+ "id": "bank-am-389",
+ "question": "A mobile library records route stops above its monthly minimum with the quadratic function $f$; the graph shown includes the vertex and one additional marked point. If $f(x)=a(x+3)^2+k$ for constants $a$ and $k$, what is the value of $a+k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$-4.5$"
+  },
+  {
+   "id": "C",
+   "text": "$-2.5$"
+  },
+  {
+   "id": "D",
+   "text": "$0.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports k alone",
+  "C": "multiplies a and k instead of adding them",
+  "D": "reports a alone"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The vertex $(-3,-5)$ gives $k=-5$, and the marked point $(1,3)$ gives $16a-5=3$, so $a=0.5$ and $a+k=-4.5$.\n\n**The Full Solution:**\nStep 1: In $f(x)=a(x+3)^2+k$ the vertex is $(-3,k)$; the graph shows the vertex at $(-3,-5)$, so $k=-5$.\nStep 2: The marked point is $(1,3)$, so $a(1+3)^2-5=3$, that is $16a=8$ and $a=0.5$.\nStep 3: Add: $a+k=0.5+(-5)=-4.5$. Check: $f(x)=0.5(x+3)^2-5$ gives $f(1)=8-5=3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-5$): reports $k$ alone and never finds $a$.\n* Choice C ($-2.5$): multiplies $a$ and $k$ instead of adding them.\n* Choice D ($0.5$): reports $a$ alone.\n\n**Test Day Takeaway:** Read the vertex for one constant, use the extra point for the other, and re-read what combination the question asks for.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    -3,
+    -5
+   ],
+   "a": 0.5,
+   "showVertex": true,
+   "showPoints": [
+    [
+     1,
+     3
+    ]
+   ]
+  }
+ }
+}

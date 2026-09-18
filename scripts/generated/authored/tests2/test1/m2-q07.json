@@ -1,0 +1,29 @@
+{
+  "id": 7,
+  "question": "A traffic study models the number of vehicles crossing a bridge during hour $x$ by the expression $9(x - 2) - 3x$ for northbound vehicles and by the expression $2(x + 8) - 6$ for southbound vehicles. For what value of $x$ do the two expressions give equal numbers of vehicles?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-2$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$7$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "moves the constant the wrong way: from 6x - 18 = 2x + 10 writes 4x = 10 - 18 = -8, so x = -2",
+    "B": "multiplies the 9 by x only, so the northbound expression becomes 6x - 2 and the equation gives x = 3",
+    "C": "multiplies the 2 by x only, so the southbound expression becomes 2x + 2 and the equation gives x = 5"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Simplify each side first: the northbound expression is $6x - 18$ and the southbound expression is $2x + 10$. Then $4x = 28$, so $x = 7$.\n\n**The Full Solution:**\nStep 1: Distribute in the northbound expression: $9(x - 2) - 3x = 9x - 18 - 3x = 6x - 18$.\nStep 2: Distribute in the southbound expression: $2(x + 8) - 6 = 2x + 16 - 6 = 2x + 10$.\nStep 3: Set the simplified expressions equal: $6x - 18 = 2x + 10$. Subtract $2x$ to get $4x - 18 = 10$, add $18$ to get $4x = 28$, so $x = 7$. Check: $6(7) - 18 = 24$ and $2(7) + 10 = 24$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): comes from $4x = 10 - 18$, subtracting the $18$ instead of adding it when moving the constant across the equals sign.\n* Choice B ($3$): multiplies $9$ by $x$ but not by $-2$, so the northbound side becomes $6x - 2$ and the equation gives $x = 3$.\n* Choice C ($5$): multiplies $2$ by $x$ but not by $8$, so the southbound side becomes $2x + 2$ and the equation gives $x = 5$.\n\n**Test Day Takeaway:** Simplify each side completely before you move anything across the equals sign. Both classic misses here are half-finished distributions, and both produce answers that sit right next to the real one."
+}

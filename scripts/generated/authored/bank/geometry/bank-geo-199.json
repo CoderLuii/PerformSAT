@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-199",
+ "question": "A blueprint of a rectangular courtyard is redrawn so that every length in the drawing is multiplied by $1.5$. The area of the redrawn courtyard is how many times the area of the original drawing?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.5$"
+  },
+  {
+   "id": "B",
+   "text": "$2.25$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$3.375$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the linear factor",
+  "C": "doubles the linear factor instead of squaring it",
+  "D": "cubes the linear factor"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Similar Figures Area Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Area scales by the square of the linear factor: $1.5^2 = 2.25$.\n\n**The Full Solution:**\nStep 1: Let the original rectangle have length $L$ and width $W$, so its area is $LW$.\nStep 2: The redrawn rectangle has length $1.5L$ and width $1.5W$, so its area is $(1.5L)(1.5W) = 2.25LW$.\nStep 3: The area is therefore $2.25$ times the original.\n\nVerification: a $4$ by $6$ rectangle has area $24$; scaled to $6$ by $9$ it has area $54$, and $\\frac{54}{24} = 2.25$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.5$): reports the scale factor itself, which applies to lengths, not areas.\n* Choice C ($3$): doubles $1.5$ instead of squaring it, confusing \"two dimensions\" with \"times two.\"\n* Choice D ($3.375$): cubes the factor; that is how volume would scale, not area.\n\n**Test Day Takeaway:** Both dimensions grow, so the factor appears twice: $k \\cdot k = k^2$. That is why $1.5$ becomes $2.25$, not $3$."
+}

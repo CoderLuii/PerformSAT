@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A taxiway wind-fence panel is a right triangle whose two acute angles measure $x^\\circ$ and $y^\\circ$. If $\\sin(x^\\circ) = \\frac{20}{29}$, what is the value of $\\cos(y^\\circ)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{20}{29}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{21}{29}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{20}{21}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{29}{20}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "computes the cosine of x using the third side 21",
+  "C": "computes the tangent of x",
+  "D": "inverts the ratio"
+ },
+ "correctAnswer": "A",
+ "hint": "No side length is needed to answer this.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** The two acute angles are complementary, and the cosine of an angle equals the sine of its complement, so $\\cos(y^\\circ) = \\frac{20}{29}$.\n\n**The Full Solution:**\nStep 1: In a right triangle the two acute angles satisfy $x + y = 90$, so they are complementary.\nStep 2: The side opposite $x^\\circ$ is the side adjacent to $y^\\circ$, and both ratios are taken over the same hypotenuse.\nStep 3: Therefore $\\cos(y^\\circ) = \\sin(x^\\circ) = \\frac{20}{29}$. Check: with legs $20$ and $21$ and hypotenuse $29$, $\\cos(y^\\circ) = \\frac{20}{29}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{21}{29}$): computing $\\cos(x^\\circ)$ with the third side $21$; the complement swaps which leg is adjacent.\n* Choice C ($\\frac{20}{21}$): computing $\\tan(x^\\circ)$, a ratio of the two legs rather than a leg over the hypotenuse.\n* Choice D ($\\frac{29}{20}$): inverting the ratio, which no sine or cosine of an acute angle can exceed $1$.\n\n**Test Day Takeaway:** Complementary angles trade sine for cosine — no side lengths are needed at all."
+}

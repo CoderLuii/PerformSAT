@@ -1,34 +1,34 @@
 {
-  "id": 504,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "By drilling deep into the Antarctic and Greenland ice sheets, glaciologists recover cores in which bubbles of ancient air are trapped layer by layer. Because those bubbles preserve a direct sample of the atmosphere at the time the snow fell, researchers can ______ past carbon dioxide levels straight from the trapped gas, rather than inferring them from the indirect proxies they must rely on where no such air is preserved.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "dispute"
-    },
-    {
-      "id": "B",
-      "text": "measure"
-    },
-    {
-      "id": "C",
-      "text": "approximate"
-    },
-    {
-      "id": "D",
-      "text": "conceal"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"measure.\" The sentence contrasts reading carbon dioxide levels \"straight from the trapped gas\" with having to infer them \"from the indirect proxies\" used elsewhere. The blank needs a verb for obtaining the values directly, and \"measure\" fits: the trapped air can be sampled and quantified. \"Approximate\" is the tempting near-miss, but it describes what the indirect proxies do, which is exactly the alternative the sentence sets the trapped air against. \"Dispute\" and \"conceal\" do not fit a process meant to determine the values cleanly.",
-  "_meta": {
-    "anchor": "Glaciology — polar ice cores and trapped air as a direct record of past CO2"
+ "id": 504,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "Most mountain glaciers respond to changes in climate gradually, thickening or thinning over decades. Some glaciers in the Karakoram range behave differently: after long quiet periods during which the ice barely moves, they abruptly ______, with the ice front advancing hundreds of meters in a single season before the glacier subsides into stillness again.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "retreat"
+  },
+  {
+   "id": "B",
+   "text": "accelerate"
+  },
+  {
+   "id": "C",
+   "text": "melt"
+  },
+  {
+   "id": "D",
+   "text": "solidify"
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The blank must describe a sudden burst of motion after near-stillness, and \"accelerate\" names exactly that change of pace.\n\n**The Full Solution:**\n- The contrast is between long quiet periods when \"the ice barely moves\" and an abrupt episode of activity.\n- The clause after the blank specifies what that activity looks like: the ice front advances hundreds of meters in a single season.\n- A glacier that goes from barely moving to advancing rapidly has sped up, so \"accelerate\" is the logical and precise choice.\n\n**Why the other choices are wrong:**\n- A: \"Retreat\" reverses the direction the text describes; the ice front advances.\n- C: \"Melt\" describes loss of ice, which would shrink the glacier rather than push its front forward.\n- D: \"Solidify\" describes the quiet state, not the abrupt change from it.",
+ "_meta": {
+  "anchor": "Karakoram surge-type glaciers — abrupt advance after decades of quiet"
+ }
 }

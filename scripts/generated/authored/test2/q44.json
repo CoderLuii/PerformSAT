@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 2,
-  "passage": "The Antarctic ice sheet holds enough frozen water to raise global sea levels by many meters. The portions of it that rest on bedrock lying below sea level — the sectors that comparatively warm ocean water can reach from ______ are the parts glaciologists watch most closely as they try to anticipate the coming century's changes.",
+  "passage": "The IceCube Neutrino Observatory watches for the faint flashes produced when a neutrino strikes the Antarctic ice. Its light sensors are buried as deep as 2.5 kilometers ______ overlying ice shields them from the shower of ordinary particles that would otherwise drown out the signal.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "beneath,"
+      "text": "down, the"
     },
     {
       "id": "B",
-      "text": "beneath"
+      "text": "down the"
     },
     {
       "id": "C",
-      "text": "beneath;"
+      "text": "down; and the"
     },
     {
       "id": "D",
-      "text": "beneath —"
+      "text": "down, and the"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The phrase \"the sectors that comparatively warm ocean water can reach from beneath\" is a nonessential appositive set off by an opening dash; to close it, the sentence needs a matching dash before the main verb \"are.\" Choice A uses a comma, which does not pair with the opening dash and leaves the punctuation mismatched. Choice B supplies no closing mark at all, so the dashed insertion is never closed and the sentence runs together. Choice C uses a semicolon, which would have to join two independent clauses, but \"are the parts glaciologists watch most closely...\" is not independent of the subject it belongs to."
+  "explanation": "**Choice D is correct.** Two independent clauses meet at the blank — \"Its light sensors are buried as deep as 2.5 kilometers down\" and \"the overlying ice shields them...\" — and a comma plus the coordinating conjunction \"and\" is a standard way to join them.\n\n**The Full Solution:**\n- Verify independence on both sides: the first clause has subject \"sensors\" and verb \"are buried\"; the second has subject \"ice\" and verb \"shields.\" Each could stand alone as a sentence.\n- Independent clauses may be joined by a comma plus a coordinating conjunction (and, but, so...), by a semicolon, or split by a period.\n- Choice D applies the comma-plus-conjunction pattern correctly: \"...2.5 kilometers down, and the overlying ice shields them...\"\n\n**Why the other choices are wrong:**\n- A: A comma with no conjunction between two independent clauses is a comma splice.\n- B: No punctuation at all fuses the clauses into a run-on sentence.\n- C: A semicolon already joins independent clauses by itself; pairing it with \"and\" doubles the connective, a combination Standard English does not use between two clauses of this kind."
 }

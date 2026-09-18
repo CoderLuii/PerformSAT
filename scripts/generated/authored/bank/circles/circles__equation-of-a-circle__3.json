@@ -1,0 +1,29 @@
+{
+ "question": "A weather balloon's circular path is $(x - 2)^2 + (y + 7)^2 = 64$, and the balloon reaches the point $(2, t)$ with $t$ positive. What is the value of $t$?",
+ "hint": "What happens to the first square when $x$ equals $2$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-15$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$57$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes the negative square root, which the condition t > 0 rules out",
+  "C": "reports the radius 8",
+  "D": "solves t + 7 = 64 without taking a square root"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** At $x = 2$ the first square vanishes, so $(t + 7)^2 = 64$ and the positive choice is $t = 1$.\n\n**The Full Solution:**\nStep 1: Substitute $x = 2$: $(2 - 2)^2 + (t + 7)^2 = 64$, so $(t + 7)^2 = 64$.\nStep 2: Take both square roots: $t + 7 = 8$ or $t + 7 = -8$, giving $t = 1$ or $t = -15$.\nStep 3: The problem states $t$ is positive, so $t = 1$. Check: $(2 - 2)^2 + (1 + 7)^2 = 64$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-15$): the other square root, ruled out because $t$ must be positive.\n* Choice C ($8$): reports the radius instead of the coordinate.\n* Choice D ($57$): solves $t + 7 = 64$, skipping the square root entirely.\n\n**Test Day Takeaway:** Substituting a coordinate that matches the center kills one square and leaves a simple equation to solve."
+}

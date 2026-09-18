@@ -1,0 +1,25 @@
+{
+ "question": "In the $xy$-plane, the two plotted points are the endpoints of a segment, and line $\\ell$ contains that segment. A second line has a slope three times the slope of line $\\ell$. What is the slope of the second line?",
+ "correctAnswer": "-4.5",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**The correct answer is $-4.5$.**\n\n**The Fast Way (~25s):** The plotted points $(-3, 7)$ and $(5, -5)$ give slope $\\frac{-12}{8} = -1.5$, and three times that is $-4.5$.\n\n**The Full Solution:**\n\nStep 1: Read the two plotted points: $(-3, 7)$ and $(5, -5)$.\n\nStep 2: The slope of line $\\ell$ is $\\frac{-5 - 7}{5 - (-3)} = \\frac{-12}{8} = -\\frac{3}{2}$.\n\nStep 3: The second line's slope is $3\\left(-\\frac{3}{2}\\right) = -\\frac{9}{2} = -4.5$. Check: a line of slope $-4.5$ falls $9$ units over a run of $2$, three times as steeply as line $\\ell$.\n\n**Common Mistakes:** Reporting the slope of line $\\ell$ itself, $-1.5$; dropping the negative sign and reporting $4.5$; inverting rise and run before tripling and reporting $-2$.\n\n**Test Day Takeaway:** Compute the slope from the two points first, then apply the multiplier the question describes; the sign travels with it.",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -3,
+     7
+    ],
+    [
+     5,
+     -5
+    ]
+   ],
+   "xMin": -6,
+   "xMax": 8,
+   "yMin": -8,
+   "yMax": 10
+  }
+ },
+ "id": "bank-alg-165"
+}

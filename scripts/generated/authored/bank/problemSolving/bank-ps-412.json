@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-412",
+  "question": "A geologist measured a mineral sample with a mass of $60$ grams. If $45\\%$ of the sample's mass is quartz, what is the mass, in grams, of the quartz in the sample?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$24$"
+    },
+    {
+      "id": "C",
+      "text": "$27$"
+    },
+    {
+      "id": "D",
+      "text": "$33$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts $45$ from $60$ instead of taking $45\\%$ of $60$",
+    "B": "uses $40\\%$ instead of $45\\%$",
+    "D": "computes $55\\%$ of the mass, the part that is not quartz"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** $45\\%$ of $60$ is $0.45(60) = 27$ grams.\n\n**The Full Solution:**\nStep 1: \"$45\\%$ of the sample's mass\" means $\\frac{45}{100}$ times $60$ grams.\nStep 2: Convert the percent to a decimal and multiply: $0.45(60)$.\nStep 3: $0.45(60) = 27$ grams. Check: $10\\%$ of $60$ is $6$, so $40\\%$ is $24$ and $5\\%$ is $3$, and $24 + 3 = 27$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): subtracts $45$ from $60$ instead of taking $45\\%$ of $60$\n* Choice B ($24$): uses $40\\%$ instead of $45\\%$\n* Choice D ($33$): computes $55\\%$ of the mass, the part that is not quartz\n\n**Test Day Takeaway:** \"Percent of\" means multiply. Convert the percent to a decimal first, then multiply by the whole."
+}

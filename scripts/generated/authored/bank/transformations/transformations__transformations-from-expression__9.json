@@ -1,0 +1,30 @@
+{
+ "id": 9,
+ "question": "A cranberry bog's water depth, in meters, is $f(x)$ at a point $x$ meters east of the center dike. A second survey counts distance west of the dike as positive and references a datum $5$ meters lower. Which expression models the second survey's depth?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-f(x) + 5$"
+  },
+  {
+   "id": "B",
+   "text": "$-f(x) - 5$"
+  },
+  {
+   "id": "C",
+   "text": "$f(-x) + 5$"
+  },
+  {
+   "id": "D",
+   "text": "$f(-x) - 5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "negates the depth instead of the distance and raises the datum",
+  "B": "negates the depth rather than the distance",
+  "C": "reflects the distance correctly but raises the datum instead of lowering it"
+ },
+ "correctAnswer": "D",
+ "hint": "One of the two changes renames the positions and the other renames the levels.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~25s):** Reversing which direction counts as positive replaces $x$ with $-x$, and a datum $5$ meters lower subtracts $5$ from every depth.\n\n**The Full Solution:**\nStep 1: A point $x$ meters east of the dike is $-x$ meters west of it, so the second survey records at $x$ what the first survey recorded at $-x$: the expression begins $f(-x)$.\nStep 2: A datum $5$ meters lower reduces every recorded depth by $5$, which is an operation on the output.\nStep 3: Combining them gives $f(-x) - 5$. Check: a point $3$ meters east with depth $2$ meters is listed by the second survey at $x = -3$ with depth $2 - 5 = -3$ meters ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-f(x) + 5$): negating the depth instead of the distance, and raising the datum instead of lowering it.\n* Choice B ($-f(x) - 5$): negating the depth rather than the distance; the reversed measuring direction acts on the input.\n* Choice C ($f(-x) + 5$): reflecting the distance correctly but adding $5$; a lower datum subtracts.\n\n**Test Day Takeaway:** Reversing the measuring direction acts inside the function; changing the reference level acts outside it."
+}

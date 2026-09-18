@@ -1,34 +1,34 @@
 {
-  "id": 537,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "Modern tests on cores drilled from ancient Roman harbor structures have helped explain why some of that concrete has survived two thousand years of seawater. The Romans mixed volcanic ash with lime and seawater, and over time the seawater reacted with the ash to grow interlocking crystals of a rare mineral within the cement. Rather than being slowly broken down by the sea, as modern marine concrete usually is, the Roman material grew stronger as those crystals filled cracks and bound the matrix together. Researchers caution, though, that the recipe suited slow-curing harbor works and would not directly serve the fast construction schedules modern projects require.",
-  "question": "Based on the text, what happened when seawater reacted with the volcanic ash in Roman marine concrete?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The concrete cured far more quickly than modern marine concrete typically does."
-    },
-    {
-      "id": "B",
-      "text": "The volcanic ash was gradually dissolved and washed out of the surrounding cement."
-    },
-    {
-      "id": "C",
-      "text": "Interlocking crystals of a rare mineral grew within the cement and strengthened it."
-    },
-    {
-      "id": "D",
-      "text": "The harbor structures became unsuitable for any further use in saltwater."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage states that the seawater reacted with the ash \"to grow interlocking crystals of a rare mineral within the cement\" and that the material \"grew stronger\" as those crystals filled cracks. Choice A claims faster curing, which the passage does not say and which runs against its note that the recipe suited slow-curing works. Choice B has the ash dissolving away, the opposite of the strengthening reaction described. Choice D claims the structures became unusable, contradicting the point that the concrete endured.",
-  "_meta": {
-    "anchor": "Roman marine concrete; seawater-ash reaction grows strengthening crystals"
+ "id": 537,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "Before drawing conclusions from a fossil deposit, paleontologists must ask how far its bones traveled before burial: an assemblage swept together by a river tells a different story than animals buried where they died. To calibrate the signs of transport, researchers have run controlled experiments, placing fresh bones in rotating drums with water and gravel to mimic the tumbling of river transport over distances equivalent to many kilometers. The outcomes were consistent: projecting edges and crests rounded off first, fine surface traces such as cut marks and gnaw marks wore away, and the smallest bones lost mass fastest. Matching the wear on excavated bones to these experimental stages lets researchers estimate how far a specimen moved before it came to rest.",
+ "question": "Based on the text, what happened when researchers tumbled fresh bones with water and gravel?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The bones broke into fragments too small to be identified."
+  },
+  {
+   "id": "B",
+   "text": "The bones' surfaces hardened, protecting fine marks from further wear."
+  },
+  {
+   "id": "C",
+   "text": "The bones' projecting edges rounded off and fine marks on their surfaces wore away."
+  },
+  {
+   "id": "D",
+   "text": "The bones showed no measurable change until the equivalent of many kilometers had passed."
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The text reports the experimental outcome directly: \"projecting edges and crests rounded off first, fine surface traces such as cut marks and gnaw marks wore away.\"\n\n**The Full Solution:**\n- The question asks for the result of the tumbling experiments, which the sentence beginning \"The outcomes were consistent\" itemizes.\n- Its first two items are precisely choice C's contents: rounding of projecting edges, loss of fine surface marks.\n- The third item, small bones losing mass fastest, is additional detail consistent with C rather than contrary to it.\n\n**Why the other choices are wrong:**\n- A: Fragmentation beyond identification is never reported; the bones wore progressively, which is what makes the stages usable for calibration.\n- B: Hardening reverses the finding — the marks wore away instead of being protected.\n- D: The text describes an ordered sequence of wear (\"rounded off first\"), not an absence of change followed by sudden damage.",
+ "_meta": {
+  "anchor": "taphonomy tumbling experiments — calibrating bone wear to transport distance"
+ }
 }

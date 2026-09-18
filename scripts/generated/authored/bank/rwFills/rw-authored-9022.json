@@ -1,0 +1,36 @@
+{
+  "id": 9022,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "An ice core is a cylinder drilled out of a glacier or ice sheet; each year of snowfall is preserved in it as a separate layer.",
+      "A speleothem is a mineral deposit, such as a stalagmite, that builds up where water drips onto a cave floor and leaves calcite behind.",
+      "Speleothems also grow in layers, added over hundreds or thousands of years.",
+      "The ratio of oxygen isotopes in a layer of ice reflects the temperature at the time that snow fell.",
+      "The same isotope ratio, measured in a layer of a speleothem, reflects the conditions in the rainfall that fed the drip.",
+      "Ice cores trap bubbles of ancient air, which speleothems do not; speleothems can be dated from the decay of uranium in their calcite."
+    ],
+    "goal": "The student wants to emphasize a similarity between ice cores and speleothems."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Ice cores trap bubbles of ancient air, a record that speleothems cannot preserve at all."
+    },
+    {
+      "id": "B",
+      "text": "A speleothem is a mineral deposit that builds up where water drips onto the floor of a cave."
+    },
+    {
+      "id": "C",
+      "text": "Ice cores and speleothems both grow layer by layer, and the oxygen isotopes in those layers record past conditions."
+    },
+    {
+      "id": "D",
+      "text": "Speleothems can be dated from the decay of uranium in their calcite, over hundreds of thousands of years."
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** The goal is a similarity, and the notes give two properties to both records: each is built up in layers, and the oxygen isotopes in each layer preserve information about past conditions.\n\n**The Full Solution:**\n- Pair the notes. The first and third notes both describe layered growth; the fourth and fifth both describe an oxygen-isotope record. Those pairings are the similarity.\n- Name both subjects in the sentence, then attach the shared properties: \"Ice cores and speleothems both grow layer by layer.\"\n- Leave out the features the notes mark as belonging to one record only, however interesting they are.\n\n**Why the other choices are wrong:**\n- A: Trapped air is presented in the notes as something ice cores have and speleothems do not, so this is a difference.\n- B: This defines a speleothem without mentioning ice cores, so no comparison is made.\n- D: Uranium dating is a method available for speleothems alone, which again distinguishes the two records rather than joining them."
+}

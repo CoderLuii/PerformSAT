@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "craft-and-structure",
  "skill": "words-in-context",
+ "type": "multiple-choice",
+ "passage": "When a whale dies at sea, its body sinks to a seafloor that is otherwise starved of food. The carcass can ______ a dense community of scavengers and specialized organisms — some found nowhere else on Earth — for decades, functioning less like a single meal than like a long-lived oasis.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "permitted"
+   "text": "resemble"
   },
   {
    "id": "B",
-   "text": "warranted"
+   "text": "sustain"
   },
   {
    "id": "C",
-   "text": "challenged"
+   "text": "assemble"
   },
   {
    "id": "D",
-   "text": "advertised"
+   "text": "conceal"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"warranted.\" The passage says the depth and stride of the footprints gave researchers the grounds for a fairly strong claim about how the hominins walked. The blank needs a verb meaning to provide adequate grounds for a conclusion, and \"warranted\" fits: physical evidence justifies the conclusion about upright walking without overstating it as proof. \"Permitted the conclusion\" would mean the conclusion was merely allowed rather than supported, but the sentence presents it as the researchers' argument. \"Challenged\" reverses the relation, treating the evidence as casting doubt on the conclusion it actually supports. \"Advertised\" is sometimes used loosely for \"made evident,\" but it is not how careful scientific writing describes evidence supporting a claim.",
+ "explanation": "**Choice B is correct.** The carcass supports a community \"for decades\" on a seafloor \"starved of food,\" and the oasis comparison seals it: what an oasis does for life around it is sustain it.\n\n**The Full Solution:**\n- The blank's verb must describe what the carcass does for the community over a long span — provide for it, keep it alive.\n- \"Sustain\" pairs naturally with both the duration (\"for decades\") and the food-scarcity setup, and it matches the closing image of a long-lived oasis.\n\n**Why the other choices are wrong:**\n- A: \"Resemble\" would make the carcass look like a community rather than feed one, and the sentence's own comparison (\"functioning... like an oasis\") already handles resemblance elsewhere.\n- C: \"Assemble\" is the near-miss — the community does gather at the carcass, but the sentence's time span and oasis image describe ongoing support, not the initial gathering.\n- D: \"Conceal\" introduces hiding, which nothing in the passage suggests.",
  "_meta": {
-  "anchor": "Laetoli footprints (unnamed researchers); ~3.6 million years; bipedal hominin gait inference"
- },
- "passage": "In a 1979 report on a 27-meter trail of fossilized footprints at Laetoli, in northern Tanzania, researchers described prints preserved in volcanic ash and dating to roughly 3.6 million years ago. The depth and stride of the prints, they argued, ______ the conclusion that the hominins who made them walked upright on two legs much as modern humans do, rather than only intermittently or with the swinging gait of primates that knuckle-walk.",
- "type": "multiple-choice"
+  "anchor": "Whale falls as long-lived deep-sea food oases (unnamed marine biologists)"
+ }
 }

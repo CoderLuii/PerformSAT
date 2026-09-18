@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-190",
+  "question": "A microfilm scanner's cost per reel matches its budgeted rate at the two distinct settings that satisfy $7x^2+cx+63=0$, where $c$ is a nonzero constant. Which expression is equal to the sum of the two settings?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{7}{c}$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{7}{c}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{c}{7}$"
+    },
+    {
+      "id": "D",
+      "text": "$-\\frac{c}{7}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverts the ratio and drops the negative sign",
+    "B": "inverts -b/a into -a/b",
+    "C": "uses b/a and drops the negative sign"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Sum/Product of Roots — Vieta's**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** With $a=7$ and $b=c$, the two solutions add to $-\\frac{b}{a}=-\\frac{c}{7}$.\n\n**The Full Solution:**\nStep 1: Match $7x^2+cx+63=0$ to $ax^2+bx+c_0=0$, so $a=7$ and the linear coefficient is $c$.\nStep 2: The sum of the solutions is $-\\frac{\\text{linear coefficient}}{a}$.\nStep 3: Substitute to get $-\\frac{c}{7}$. Check: with $c=-70$ the equation is $7x^2-70x+63=0$, which factors as $7(x-1)(x-9)=0$; its solutions $1$ and $9$ add to $10=-\\frac{-70}{7}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{7}{c}$): inverts the ratio and also drops the negative sign.\n* Choice B ($-\\frac{7}{c}$): keeps the sign but inverts $-\\frac{b}{a}$ into $-\\frac{a}{b}$.\n* Choice C ($\\frac{c}{7}$): uses $\\frac{b}{a}$ and omits the negative sign.\n\n**Test Day Takeaway:** Vieta's sum works with letters exactly as with numbers: divide the linear coefficient by the leading one, then negate."
+}

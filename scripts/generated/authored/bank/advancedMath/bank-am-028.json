@@ -1,0 +1,29 @@
+{
+  "question": "A quality-control model uses the equation $2x^{2}+kx+5=0$, where $k$ is a constant. Which of the following expressions is equal to $b^{2}-4ac$ for this equation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$k^{2}-40$"
+    },
+    {
+      "id": "B",
+      "text": "$k^{2}-20$"
+    },
+    {
+      "id": "C",
+      "text": "$k^{2}-10$"
+    },
+    {
+      "id": "D",
+      "text": "$k^{2}+40$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "used 4ac as 4 times 5, omitting the leading coefficient 2",
+    "C": "used 2 times 5 for 4ac",
+    "D": "added 4ac instead of subtracting it"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Compute Discriminant**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** With $a=2$, $b=k$, and $c=5$, the discriminant is $k^{2}-4(2)(5)=k^{2}-40$.\n\n**The Full Solution:**\nStep 1: Identify the coefficients of $2x^{2}+kx+5=0$: $a=2$, $b=k$, $c=5$.\nStep 2: The discriminant is $b^{2}-4ac$, so substitute: $k^{2}-4(2)(5)$.\nStep 3: Simplify: $k^{2}-40$. Check with $k=10$: $2x^{2}+10x+5=0$ has discriminant $100-40=60$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($k^{2}-20$): uses $4c$ only, omitting the leading coefficient $2$.\n* Choice C ($k^{2}-10$): uses $2\\cdot 5$ in place of $4ac$.\n* Choice D ($k^{2}+40$): adds $4ac$ instead of subtracting it.\n\n**Test Day Takeaway:** All three coefficients enter the discriminant — $a$ is easy to drop when the leading term is not $x^{2}$.",
+  "id": "bank-am-028"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "bank-geo-065",
+  "question": "A base strut runs from a microwave-link mast to the roof deck, meeting the deck at the angle $A$ shown, where $\\tan A = \\frac{7}{24}$. At what height, in centimeters, does the strut meet the mast?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          96,
+          0
+        ],
+        [
+          96,
+          28
+        ]
+      ],
+      "labels": [
+        "A",
+        "",
+        ""
+      ],
+      "sideLabels": [
+        "",
+        "",
+        "100 cm"
+      ],
+      "rightAngleVertex": 1
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7$"
+    },
+    {
+      "id": "B",
+      "text": "$28$"
+    },
+    {
+      "id": "C",
+      "text": "$96$"
+    },
+    {
+      "id": "D",
+      "text": "$100$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "reads the tangent's numerator as a length rather than scaling the 7-24-25 triple",
+    "C": "reports the horizontal distance from the mast to the anchor instead of the height",
+    "D": "reports the strut's own length, which is the hypotenuse"
+  },
+  "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice B is correct.** $\\tan A = \\frac{7}{24}$ makes the sides $7k$, $24k$, $25k$; with $25k = 100$, $k = 4$ and the height is $7(4) = 28$ centimeters.\n\n**The Fast Way (~30s):** $7$-$24$-$25$ scaled by $4$ gives $28$-$96$-$100$, so the height is $28$.\n\n**The Full Solution:**\n\nStep 1: $\\tan A = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{7}{24}$, so the legs can be written $7k$ and $24k$ for some positive $k$.\n\nStep 2: The hypotenuse is $\\sqrt{(7k)^2 + (24k)^2} = 25k$, and the strut is the hypotenuse, so $25k = 100$ and $k = 4$.\n\nStep 3: The vertical leg, which is the height on the mast, is $7(4) = 28$ centimeters. Check: $28^2 + 96^2 = 784 + 9216 = 10000 = 100^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($7$): reads the tangent's numerator as an actual length.\n* Choice C ($96$): gives the horizontal distance from the mast to the anchor.\n* Choice D ($100$): reports the strut itself, the hypotenuse.\n\n**Test Day Takeaway:** A tangent value hands you the leg RATIO; find the scale factor from the hypotenuse before reporting any single side."
+}

@@ -182,9 +182,6 @@ const SATParabola = ({
 
       {/* Label - positioned in empty space away from the curve */}
       {label && (() => {
-        // Check where curve is to find empty space
-        const curveAtLeft = a * Math.pow((xMin + 1) - h, 2) + k;
-        const curveAtRight = a * Math.pow((xMax - 1) - h, 2) + k;
         const midY = (yMin + yMax) / 2;
 
         let placementX, placementY;

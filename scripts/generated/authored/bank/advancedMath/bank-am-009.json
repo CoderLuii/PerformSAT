@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-009",
+  "question": "In the equation $x^2 - 13x + 30 = 0$, the left side is the product of two binomials with integer constants. What are all solutions to this equation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$x = -10$ and $x = -3$"
+    },
+    {
+      "id": "B",
+      "text": "$x = -3$ and $x = 10$"
+    },
+    {
+      "id": "C",
+      "text": "$x = 3$ and $x = 10$"
+    },
+    {
+      "id": "D",
+      "text": "$x = 3$ and $x = 30$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "keeps the signs of the numbers inside the factors instead of solving",
+    "B": "flips the sign of only one factor",
+    "D": "pairs one true root with the constant term"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Factor and Solve**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Two numbers multiply to $30$ and add to $-13$: $-3$ and $-10$. So $(x - 3)(x - 10) = 0$ and $x = 3$ or $x = 10$.\n\n**The Full Solution:**\nStep 1: Factor $x^2 - 13x + 30$. The constant is positive and the middle coefficient is negative, so both numbers are negative: $(-3)(-10) = 30$ and $-3 + (-10) = -13$.\nStep 2: Write $(x - 3)(x - 10) = 0$.\nStep 3: Set each factor to zero: $x - 3 = 0$ gives $x = 3$, and $x - 10 = 0$ gives $x = 10$. Check $x = 3$: $9 - 39 + 30 = 0$. Check $x = 10$: $100 - 130 + 30 = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-10$ and $-3$): reports the numbers that appear inside the factors instead of the values that make each factor zero.\n* Choice B ($-3$ and $10$): flips the sign of one root only; then the product of the roots would be $-30$, not $30$.\n* Choice D ($3$ and $30$): keeps one correct root and grabs the constant term $30$ for the other.\n\n**Test Day Takeaway:** After factoring, the roots are the values that make each factor zero — the OPPOSITES of the numbers you see inside the parentheses."
+}

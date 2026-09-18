@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
-  "passage": "Linguists who record ordinary conversation have noticed that speakers do not produce sentences as smooth, continuous streams. They release language in short bursts, each lasting only a few seconds, separated by brief pauses and resets in pitch. On one widely discussed account, these breaks are not mere mannerisms but ______ markers of the limited amount of information a speaker can hold in focal attention at any one moment.",
+  "passage": "Time-lapse footage of young sunflowers has fixed the popular image of a flower that follows the sun across the sky from dawn to dusk. Mature sunflowers, however, are essentially ______: once the head opens, the stem stiffens and the bloom settles into a permanent eastward orientation, warming quickly in the morning light — a position that, researchers have found, draws more pollinators than a cooler, west-facing bloom does.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "involuntary"
+      "text": "stationary"
     },
     {
       "id": "B",
-      "text": "decorative"
+      "text": "symmetrical"
     },
     {
       "id": "C",
-      "text": "deliberate"
+      "text": "dormant"
     },
     {
       "id": "D",
-      "text": "optional"
+      "text": "fragile"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"involuntary.\" The account treats the pauses and pitch resets not as habits a speaker chooses but as automatic signs of a real limit on how much a speaker can hold in attention at once; \"involuntary\" captures that they are produced unbidden by that limit rather than adopted as a style. \"Decorative\" would make them ornamental flourishes, which is the \"mere mannerisms\" reading the sentence rejects. \"Deliberate\" implies the speaker chooses them, the opposite of a fixed limit, and \"optional\" suggests they could simply be left out, which again contradicts the claim that they reflect a constraint the speaker cannot escape."
+  "explanation": "**Choice A is correct.** The \"however\" opposes the sun-following image, and the colon explains the opposite condition: the stem stiffens and the bloom settles into one permanent orientation — that is, the mature flower is \"stationary.\"\n\n**The Full Solution:**\n- Before the blank: the popular image of constant motion, tracking the sun.\n- \"However\" reverses that image for mature plants, and the elaboration — stiffened stem, \"permanent eastward orientation\" — restates the blank as fixed in place.\n\n**Why the other choices are wrong:**\n- B: \"Symmetrical\" describes shape, not the motion-versus-fixity contrast the sentence is built on.\n- C: \"Dormant\" means inactive or asleep, but the mature bloom is busily warming and attracting pollinators — only its movement has stopped.\n- D: \"Fragile\" contradicts the stiffened stem and has no support elsewhere."
 }

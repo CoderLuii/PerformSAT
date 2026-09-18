@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-264",
+  "question": "A shipment contains $40$ batteries, $5$ of which are defective. Two batteries will be selected at random from the shipment without replacement. What is the probability that both batteries selected are defective?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{78}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{1}{64}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{1}{8}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{1}{4}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "with replacement: (5/40)(5/40) = 25/1600",
+    "C": "stops after the first draw (5/40)",
+    "D": "adds 5/40 + 5/40 instead of multiplying"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** $\\frac{5}{40} \\times \\frac{4}{39} = \\frac{1}{8} \\times \\frac{4}{39} = \\frac{4}{312} = \\frac{1}{78}$.\n\n**The Full Solution:**\nStep 1: First draw: $5$ defective out of $40$, so $\\frac{5}{40} = \\frac{1}{8}$.\nStep 2: Second draw, after one defective battery is removed: $4$ defective out of $39$, so $\\frac{4}{39}$.\nStep 3: Multiply: $\\frac{1}{8} \\times \\frac{4}{39} = \\frac{4}{312} = \\frac{1}{78}$. Check: $\\frac{5 \\times 4}{40 \\times 39} = \\frac{20}{1{,}560} = \\frac{1}{78}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{1}{64}$): $\\frac{5}{40} \\times \\frac{5}{40} = \\frac{25}{1{,}600}$ assumes the first battery is returned before the second draw.\n* Choice C ($\\frac{1}{8}$): $\\frac{5}{40}$ is the probability that only the first battery is defective.\n* Choice D ($\\frac{1}{4}$): $\\frac{5}{40} + \\frac{5}{40}$ adds when the two draws must both happen, which calls for multiplying.\n\n**Test Day Takeaway:** \"Both\" means multiply; \"without replacement\" means the second fraction uses one fewer success and one fewer item."
+}

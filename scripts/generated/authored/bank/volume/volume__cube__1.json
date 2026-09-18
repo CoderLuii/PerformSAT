@@ -1,0 +1,50 @@
+{
+  "id": 1,
+  "question": "A university archive stores microfilm reels in cube-shaped boxes. The table gives the edge length, in inches, of each of the three box sizes the archive uses. What is the volume, in cubic inches, of one Large box?",
+  "questionTable": {
+    "headers": [
+      "Box size",
+      "Edge length (inches)"
+    ],
+    "rows": [
+      [
+        "Small",
+        "$6$"
+      ],
+      [
+        "Medium",
+        "$9$"
+      ],
+      [
+        "Large",
+        "$12$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36$"
+    },
+    {
+      "id": "B",
+      "text": "$144$"
+    },
+    {
+      "id": "C",
+      "text": "$864$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}728$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies the edge by 3 instead of raising it to the third power: 3 times 12 = 36",
+    "B": "stops at 12 squared = 144, the area of one face rather than the volume",
+    "C": "computes the surface area 6 times 12 squared = 864 square inches"
+  },
+  "correctAnswer": "D",
+  "hint": "Every edge of a cube is the same length, so a single entry from the table fixes all three dimensions.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~15s):** A cube's volume is its edge length cubed, and the Large box has edge $12$ inches, so $V = 12^3 = 1{,}728$ cubic inches.\n\n**The Full Solution:**\nStep 1: The table gives the Large box an edge length of $12$ inches. In a cube the length, width, and height are all equal, so all three are $12$ inches.\nStep 2: The volume of a rectangular solid is $V = \\ell w h$, which for a cube with edge $s$ becomes $V = s^3$. Substituting $s = 12$ gives $V = 12^3$.\nStep 3: $12^3 = 12 \\cdot 12 \\cdot 12 = 1{,}728$ cubic inches. Check: dividing back, $1{,}728 \\div 12 = 144$ and $144 \\div 12 = 12$, returning the edge length ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($36$): multiplies the edge by $3$ instead of raising it to the third power, giving $3 \\cdot 12 = 36$.\n* Choice B ($144$): stops at $12^2 = 144$, which is the area of one square face, not the volume.\n* Choice C ($864$): computes the surface area $6 \\cdot 12^2 = 864$ square inches instead of the volume.\n\n**Test Day Takeaway:** Cubing and squaring differ by one factor of the edge — read the units in the question (cubic inches versus square inches) to confirm which power the answer needs."
+}

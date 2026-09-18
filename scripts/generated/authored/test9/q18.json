@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 1,
-  "passage": "After reading Karl Jansky's reports, the amateur astronomer Grote Reber built a thirty-foot dish antenna in his backyard in the late 1930s. The faint radio signals that his homemade instrument detected from the plane of the Milky Way ______ patiently recorded over many nights and later combined into the first systematic map of the radio sky.",
+  "passage": "A network of river gauges strung along the lower Mississippi ______ forecasters with hourly readings of the water's height, so that towns downstream can be warned days before a flood crest arrives.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "was"
-    },
-    {
-      "id": "B",
-      "text": "is"
-    },
-    {
-      "id": "C",
-      "text": "has been"
-    },
-    {
-      "id": "D",
-      "text": "were"
-    }
+    { "id": "A", "text": "provide" },
+    { "id": "B", "text": "are providing" },
+    { "id": "C", "text": "have provided" },
+    { "id": "D", "text": "provides" }
   ],
   "correctAnswer": "D",
-  "explanation": "The subject of the verb is \"signals,\" which is plural, so the verb must be \"were\"—choice D. The singular nouns nearest the blank (\"instrument,\" \"Milky Way\") are not the subject; they sit inside the clause describing which signals are meant. \"Was,\" \"is,\" and \"has been\" are all singular and do not agree with \"signals.\"",
-  "_meta": {
-    "anchor": "Grote Reber, radio sky map"
-  }
+  "explanation": "**Choice D is correct.** The subject is the singular \"network,\" so the verb must be the singular \"provides.\"\n\n**The Full Solution:**\n- \"Of river gauges strung along the lower Mississippi\" is a prepositional phrase between subject and verb; it does not change the subject's number.\n- Strip the phrase and the agreement is plain: \"A network... provides forecasters with hourly readings.\"\n\n**Why the other choices are wrong:**\n- A: A plural verb agreeing with the nearby \"gauges\" rather than with the true subject — the classic nearest-noun trap.\n- B: Plural again, and the progressive adds nothing the sentence needs.\n- C: The plural \"have\" fails agreement, and the perfect tense clashes with the sentence's statement of an ongoing arrangement."
 }

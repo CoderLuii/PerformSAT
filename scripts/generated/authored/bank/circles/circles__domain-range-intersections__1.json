@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "In the $xy$-plane, the graph of $(x + 3)^2 + (y - 1)^2 = 16$ is a circle. What is the least possible value of $x$ for a point $(x, y)$ on this circle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-19$"
+  },
+  {
+   "id": "B",
+   "text": "$-7$"
+  },
+  {
+   "id": "C",
+   "text": "$-3$"
+  },
+  {
+   "id": "D",
+   "text": "$1$"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "Picture the leftmost point of the circle relative to its center.",
+ "distractorNotes": {
+  "A": "subtracts r squared",
+  "C": "reports the center",
+  "D": "adds the radius instead"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** The center is $(-3, 1)$ and the radius is $4$, so the smallest $x$-value is $-3 - 4 = -7$.\n\n**The Full Solution:**\nStep 1: In standard form the center is $(-3, 1)$ and $r^2 = 16$, so $r = 4$.\nStep 2: Horizontally the circle reaches $4$ units on either side of the center, so $x$ ranges from $-3 - 4$ to $-3 + 4$.\nStep 3: The least value is $-7$. Check: at $x = -7$, the equation gives $16 + (y - 1)^2 = 16$, so $y = 1$ and the point $(-7, 1)$ is on the circle.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-19$): subtracts $r^2 = 16$ from the center's $x$-coordinate instead of the radius.\n* Choice C ($-3$): reports the center's $x$-coordinate, which is the middle of the range rather than its edge.\n* Choice D ($1$): adds the radius, giving the greatest $x$-value instead of the least.\n\n**Test Day Takeaway:** A circle's $x$-values run from $h - r$ to $h + r$. Take the square root of the constant before you go anywhere near the center."
+}

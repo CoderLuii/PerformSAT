@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A loaded pallet holds $n$ identical crates. The equation $12n + 6n + 45 = 315$ relates $n$ to the total mass of the loaded pallet, in kilograms. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$17.5$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "folds the constant 45 in with the coefficients, solving 63n=315 to get 5",
+  "C": "divides 315 by 18 without first subtracting the constant 45, giving 17.5",
+  "D": "adds 45 to both sides instead of subtracting it, solving 18n=360 to get 20"
+ },
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Combine the like terms to get $18n + 45 = 315$, so $18n = 270$ and $n = 15$.\n\n**The Full Solution:**\nStep 1: Combine the two terms that contain $n$: $12n + 6n = 18n$, so the equation becomes $18n + 45 = 315$.\nStep 2: Subtract $45$ from both sides to isolate the variable term: $18n = 270$.\nStep 3: Divide both sides by $18$: $n = 15$. Check: $12(15) + 6(15) + 45 = 180 + 90 + 45 = 315$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): treats $45$ as another coefficient of $n$, solving $63n = 315$ to get $5$. The $45$ has no $n$ attached, so it cannot join $12n$ and $6n$.\n* Choice C ($17.5$): combines the like terms correctly but divides before subtracting, computing $\\frac{315}{18} = 17.5$ and leaving the $45$ unaccounted for.\n* Choice D ($20$): moves the $45$ to the other side with the wrong sign, solving $18n = 315 + 45 = 360$ to get $20$.\n\n**Test Day Takeaway:** Only terms carrying the same variable combine; strip the lone constant off with the opposite operation before you divide by the coefficient."
+}

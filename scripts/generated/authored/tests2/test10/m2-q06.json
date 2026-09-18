@@ -1,0 +1,49 @@
+{
+ "id": 6,
+ "question": "The table gives the monthly cost of residential electricity plan A at three usage levels, where $x$ is usage in hundreds of kilowatt-hours and $y$ is cost in dollars. Plan B's monthly cost satisfies $cx - 4y = 30$, where $c$ is a constant. For what value of $c$ do the two plans never cost the same amount?",
+ "questionTable": {
+  "headers": [
+   "$x$ (hundreds of kilowatt-hours)",
+   "$y$ (dollars)"
+  ],
+  "rows": [
+   [
+    "$2$",
+    "$34$"
+   ],
+   [
+    "$5$",
+    "$55$"
+   ],
+   [
+    "$8$",
+    "$76$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-28$"
+  },
+  {
+   "id": "B",
+   "text": "$1.75$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$28$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "forms the proportion as 7/c = -1/4 instead of -1/-4, giving c = -28",
+  "B": "divides plan A's x-coefficient 7 by 4 instead of multiplying, giving 1.75",
+  "C": "copies plan A's x-coefficient 7 and never accounts for the -4y term in plan B"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** The table gives plan A a slope of $7$, so $7x - y = -20$. Parallel lines need $7(-4) = c(-1)$, so $c = 28$.\n\n**The Full Solution:**\nStep 1: Find plan A's equation from the table. The slope is $\\frac{55 - 34}{5 - 2} = \\frac{21}{3} = 7$, and $34 = 7(2) + b$ gives $b = 20$. So plan A is $y = 7x + 20$, or in standard form $7x - y = -20$. The third row checks: $7(8) + 20 = 76$.\nStep 2: Two lines $a_1x + b_1y = k_1$ and $a_2x + b_2y = k_2$ never meet exactly when $a_1b_2 = a_2b_1$ while the equations are not multiples of each other. Here $7(-4) = c(-1)$, so $-28 = -c$ and $c = 28$.\nStep 3: Confirm the lines are distinct, not identical. Multiplying $7x - y = -20$ by $4$ gives $28x - 4y = -80$, while plan B is $28x - 4y = 30$. Same left side, different right side, so the costs are never equal ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-28$): sets up the proportion as $\\frac{7}{c} = \\frac{-1}{4}$, losing the negative on the $-4y$ term, and lands on $c = -28$. With $c = -28$ the two lines have opposite slopes and do cross.\n* Choice B ($1.75$): divides $7$ by $4$ instead of multiplying, giving $1.75$. The $y$-coefficients scale by $4$, so the $x$-coefficients must scale by $4$ as well.\n* Choice C ($7$): copies plan A's $x$-coefficient straight across, which would make plan B $7x - 4y = 30$ — a line with slope $1.75$ that crosses plan A.\n\n**Test Day Takeaway:** \"Never equal\" means parallel and distinct: match the coefficient ratios, then verify the constants do **not** match, or you have described the same line instead."
+}

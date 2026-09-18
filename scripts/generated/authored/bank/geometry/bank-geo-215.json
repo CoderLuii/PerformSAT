@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-215",
+ "question": "A cable-tray hanger's triangular frame has interior angles of $(3n)^\\circ$ and $(7n)^\\circ$ at two of its corners. Extending one side past the third corner creates a $140^\\circ$ angle. How many degrees does the larger of the two labeled angles measure?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$14$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$42$"
+  },
+  {
+   "id": "D",
+   "text": "$98$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "stops at n = 14 instead of evaluating 7n",
+  "B": "reports the interior angle at the third corner, 180 - 140 = 40",
+  "C": "reports 3n = 42, the smaller of the two labeled angles"
+ },
+ "explanation": "**SAT Pattern: Exterior Angle Theorem**\n\n**Choice D is correct.** The $140^\\circ$ angle is exterior at the third corner, so $3n + 7n = 140$, giving $n = 14$ and $7n = 98$.\n\n**The Fast Way (~35s):** $10n = 140$, so $n = 14$; the larger labeled angle is $7(14) = 98$.\n\n**The Full Solution:**\n\nStep 1: Extending a side past a vertex produces the exterior angle there, which equals the sum of the two nonadjacent interior angles: $(3n) + (7n) = 140$.\n\nStep 2: Solve: $10n = 140$, so $n = 14$. The two labeled angles are $3(14) = 42^\\circ$ and $7(14) = 98^\\circ$.\n\nStep 3: Check. The interior angle at the third corner is $180^\\circ - 140^\\circ = 40^\\circ$, and $42 + 98 + 40 = 180$, so the frame closes. The larger labeled angle is $98^\\circ$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($14$): stops at the scale factor $n$ instead of evaluating $7n$.\n* Choice B ($40$): reports the interior angle at the third corner, $180 - 140$, rather than a labeled angle.\n* Choice C ($42$): evaluates $3n$, the smaller of the two labeled angles.\n\n**Test Day Takeaway:** Solve for the letter, then finish the job the question actually asked for — the value of the expression, not the letter."
+}

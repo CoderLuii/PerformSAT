@@ -9,32 +9,32 @@
   "passages": [
     {
       "label": "Text 1",
-      "text": "Advocates of historically informed performance contend that Baroque music is best served by reconstructing the conditions under which it was first played. On their account, the gut strings, lighter bows, valveless brass, and lower tuning pitch of the period are not antiquarian curiosities but the very means by which composers such as Bach and Handel calculated their effects. A modern symphony orchestra, with its powerful steel-strung instruments and standardized concert pitch, inevitably overlays the music with a sound its composers never imagined. By returning to period instruments and to the tempos and ornamentation documented in contemporary treatises, performers can let today's listeners hear these works much as their first audiences did, recovering expressive detail that modern practice flattens."
+      "text": "Economic historian Robert Allen argues that the Industrial Revolution began in eighteenth-century Britain for bluntly material reasons. British workers earned unusually high wages, while coal from the country's abundant mines was exceptionally cheap. Machines such as the spinning jenny and the steam engine paid for themselves in Britain — and, at first, almost nowhere else — because they replaced expensive labor with cheap fuel and capital. On Allen's account, Britain industrialized first not because its people were uniquely inventive but because its prices made mechanization profitable."
     },
     {
       "label": "Text 2",
-      "text": "The musicologist Richard Taruskin questioned whether such recovery is possible even in principle. We can rebuild the instruments, he granted, and we can read the treatises, but we cannot reconstruct the ears of an eighteenth-century listener—the expectations, the unfamiliarity, the surrounding silence against which the music first sounded. What the early-music movement markets as historical authenticity is, on his reading, a distinctly modern aesthetic: a taste for lean textures, brisk tempos, and literal fidelity to the notated text that reveals far more about twentieth-century sensibilities than about the past. The period instruments are real enough; the claim that they deliver the composer's own sound-world is, in Taruskin's view, a comforting fiction."
+      "text": "Economic historian Joel Mokyr contends that favorable prices cannot explain the Industrial Revolution's most striking feature: it kept going. Other societies had faced incentives to save labor, and their bursts of invention petered out. What distinguished eighteenth-century Britain, Mokyr argues, was a culture connecting scientists, engineers, and artisans — a community committed to testing ideas, publishing results, and applying useful knowledge to production. Without that culture, he suggests, a handful of profitable machines would have remained isolated tricks rather than the start of sustained technological progress."
     }
   ],
-  "question": "Based on the texts, how would Taruskin (Text 2) most likely respond to the argument made in Text 1?",
+  "question": "Based on the texts, how would Mokyr (Text 2) most likely respond to the argument presented in Text 1?",
   "choices": [
     {
       "id": "A",
-      "text": "Period instruments, he would argue, distort Baroque music even more than modern orchestral instruments do, leaving today's performers further from the composer's intentions rather than closer to them."
+      "text": "He would deny that British wages in the eighteenth century were unusually high compared with wages elsewhere in Europe."
     },
     {
       "id": "B",
-      "text": "He would accept that period instruments reproduce the original sound of these works but doubt that modern audiences are trained well enough to notice the difference."
+      "text": "He would agree that prices fully explain the onset of industrialization but insist that culture determined which specific machines British inventors chose to build first."
     },
     {
       "id": "C",
-      "text": "What such performers take for a recovery of the past, he would respond, is really an expression of present-day taste, since the historical listener's experience cannot be reconstructed even when the instruments can."
+      "text": "He would maintain that wages and energy prices might explain why certain machines were first adopted in Britain, but not why innovation there continued instead of stalling as it had elsewhere."
     },
     {
       "id": "D",
-      "text": "The treatises and tunings on which the performers rely, he would contend, misdescribe how Baroque music was actually notated, so their reconstructions rest on faulty sources."
+      "text": "He would argue that the community of scientists, engineers, and artisans that Text 2 describes emerged only after profitable machines had already transformed British manufacturing, so that culture played little role at the outset."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. Text 1 claims that period instruments and documented performance practice let modern listeners hear Baroque music as its first audiences did. Taruskin's argument in Text 2 grants that the instruments can be rebuilt but denies that the original listening experience can be recovered, and he reads the movement's \"authenticity\" as a modern aesthetic preference—exactly the response in C. Choice A overstates his position: he does not claim period instruments distort the music more than modern ones; his point is about the listener, not the hardware. Choice B is the trap, because it sounds like a concession, but Taruskin specifically denies that the original sound is reproduced, so he would not grant that premise. Choice D invents a claim he never makes; he treats the treatises and tunings as genuine, not as misdescriptions of how the music was notated."
+  "explanation": "**Choice C is correct.** Mokyr's stated target is the staying power of British innovation — prices \"cannot explain\" why it \"kept going\" — so he would grant Allen's mechanism a role in adoption while denying it can account for the sustained progress that followed.\n\n**The Full Solution:**\n- Text 1's argument: Britain's high wages and cheap coal made mechanization profitable, which is why industrialization started there.\n- Text 2 does not dispute those prices. Its objection is aimed at sufficiency: other societies had labor-saving incentives too, and their inventive bursts \"petered out.\"\n- Mokyr's positive claim — a knowledge-sharing culture turned profitable machines into \"the start of sustained technological progress\" — is a response about continuation, exactly as choice C frames it.\n\n**Why the other choices are wrong:**\n- A: It attacks a premise Mokyr never questions; Text 2 accepts the price story as far as it goes and objects only to what it leaves unexplained.\n- B: It concedes too much (\"fully explain\") and then assigns culture a role — selecting which machines came first — that appears nowhere in Text 2.\n- D: It reverses Mokyr's causal order: in Text 2 the culture is what allowed the machines to matter, not a byproduct that arose after they had already transformed manufacturing."
 }

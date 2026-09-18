@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "An alpine station recorded $38$ days above freezing in 2019 and $46$ such days in 2024. Which expression gives the percent increase in the number of days above freezing?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{38}{46} \\cdot 100$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{46}{38} \\cdot 100$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{46 - 38}{46} \\cdot 100$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{46 - 38}{38} \\cdot 100$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the 2019 count as a percent of the 2024 count (82.6), not an increase",
+  "B": "reports the 2024 count as a percent of the 2019 count (121.1); the increase is that minus 100",
+  "C": "divides the 8-day increase by the new count instead of the original, giving 17.4 rather than 21.1"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Percent Increase**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Percent increase is $\\dfrac{\\text{increase}}{\\text{original}} \\cdot 100$, and the original year is 2019.\n\n**The Full Solution:**\nStep 1: The increase is $46 - 38 = 8$ days.\nStep 2: Percent increase compares that increase to the starting count, so the denominator is the 2019 count, $38$.\nStep 3: The expression is $\\dfrac{46 - 38}{38} \\cdot 100$, which evaluates to about $21.1$ percent.\nCheck: raising $38$ by $21.1$ percent gives $38 \\cdot 1.211 \\approx 46$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{38}{46} \\cdot 100$): about $82.6$; this says the 2019 count was $82.6$ percent of the 2024 count, which is a comparison, not an increase.\n* Choice B ($\\frac{46}{38} \\cdot 100$): about $121.1$; the new count is $121.1$ percent of the old, so the increase is $21.1$ percent, not $121.1$.\n* Choice C ($\\frac{46 - 38}{46} \\cdot 100$): about $17.4$; it divides by the new count, which answers percent decrease from 2024 back to 2019.\n\n**Test Day Takeaway:** The denominator of a percent change is always the amount you started with — read the sentence for the earlier year."
+}

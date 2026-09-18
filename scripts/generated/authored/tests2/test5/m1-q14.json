@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A parabola given by $y = 2x^2 + 50$ and a line given by $y = -bx$ meet at two different points in the $xy$-plane. If $b$ is a positive integer, what is its smallest possible value?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$20$"
+  },
+  {
+   "id": "D",
+   "text": "$21$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "drops the factor 4, using b^2 - (2)(50) > 0, so b > 10 and the least integer is 11",
+  "B": "drops the leading coefficient a = 2, using b^2 - 4(50) > 0, so b > 14.14 and the least integer is 15",
+  "C": "allows the discriminant to equal 0, which gives one point of tangency, not two intersections"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** Setting the two expressions equal gives $2x^2 + bx + 50 = 0$, so $b^2 > 4(2)(50) = 400$ and $b > 20$; the least integer is $21$.\n\n**The Full Solution:**\nStep 1: The graphs meet where $2x^2 + 50 = -bx$. Rearranged, that is $2x^2 + bx + 50 = 0$, a quadratic in $x$ whose real solutions are the $x$-coordinates of the intersection points.\nStep 2: Two DIFFERENT intersection points means two distinct real solutions, which requires a strictly positive discriminant: $b^2 - 4(2)(50) > 0$, or $b^2 > 400$.\nStep 3: Since $b$ is positive, $b > 20$, so the smallest integer value is $b = 21$. Check: at $b = 21$ the discriminant is $441 - 400 = 41 > 0$, while at $b = 20$ it is $400 - 400 = 0$, a single point of tangency.\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): drops the factor of $4$ and uses $b^2 - (2)(50) > 0$, giving $b > 10$. At $b = 11$ the true discriminant is $121 - 400 = -279$, so the graphs would not meet at all.\n* Choice B ($15$): drops the leading coefficient and uses $b^2 - 4(50) > 0$, giving $b > \\sqrt{200} \\approx 14.14$. At $b = 15$ the true discriminant is $225 - 400 = -175$, again negative.\n* Choice C ($20$): uses $b^2 - 400 \\ge 0$ instead of $> 0$. Equality makes the discriminant zero, which is exactly ONE shared point — the line is tangent to the parabola, not a secant.\n\n**Test Day Takeaway:** Two different points always means discriminant $> 0$, never $\\ge 0$, so an exact square root is the boundary you must step past. Set the two expressions equal first; the coefficients $a$, $b$, and $c$ all come from the combined equation."
+}

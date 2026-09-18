@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "A titration was repeated nine times on one acid sample. The drop counts recorded were $13$, $22$, $13$, $19$, $16$, $13$, $24$, $18$, and $21$. Which drop count occurred most often?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the range, 24 - 13 = 11, instead of the most frequent value",
+  "C": "reports the median, the fifth value of the ordered list, instead of the mode",
+  "D": "reports the largest value in the data set instead of the most frequent one"
+ },
+ "explanation": "**SAT Pattern: Mode of a Data Set**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Scan for a repeat. Only $13$ appears more than once, and it appears three times, so the mode is $13$.\n\n**The Full Solution:**\nStep 1: The mode of a data set is the value that occurs most often, so tally how many times each value appears.\nStep 2: The tallies are $13$ three times and $16$, $18$, $19$, $21$, $22$, and $24$ once each.\nStep 3: Three is the largest tally, so the mode is $13$. Check: the nine trials account for $3 + 1 + 1 + 1 + 1 + 1 + 1 = 9$ readings, and no other value repeats ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): this is the range, $24 - 13 = 11$. The range measures spread; the mode is an actual data value.\n* Choice C ($18$): ordering the trials gives $13$, $13$, $13$, $16$, $18$, $19$, $21$, $22$, $24$, whose middle value is $18$. That is the median, not the mode.\n* Choice D ($24$): this is the maximum reading. The largest value and the most frequent value are different statistics, and here they are different numbers.\n\n**Test Day Takeaway:** Mode means \"most often,\" so count repeats before you order or average anything — ordering the list is what leads students into the median by mistake."
+}

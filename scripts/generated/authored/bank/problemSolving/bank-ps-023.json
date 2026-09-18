@@ -1,0 +1,63 @@
+{
+  "id": "bank-ps-023",
+  "question": "The dot plot shows the number of seedlings that sprouted in each of $10$ trays in a greenhouse. What is the mean number of seedlings per tray?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 2,
+          "count": 1
+        },
+        {
+          "value": 3,
+          "count": 2
+        },
+        {
+          "value": 4,
+          "count": 3
+        },
+        {
+          "value": 5,
+          "count": 1
+        },
+        {
+          "value": 6,
+          "count": 2
+        },
+        {
+          "value": 8,
+          "count": 1
+        }
+      ],
+      "xMin": 1,
+      "xMax": 9,
+      "xLabel": "Number of seedlings"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$4.5$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$7.5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the mode (the tallest stack) or the median, not the mean.",
+    "C": "reports the range, $8 - 2$.",
+    "D": "divides the sum by $6$, the number of distinct values on the axis, instead of by the $10$ dots."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Basic Mean**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Read the dots: $2, 3, 3, 4, 4, 4, 5, 6, 6, 8$. The sum is $45$, and $\\frac{45}{10} = 4.5$.\n\n**The Full Solution:**\nStep 1: Each dot is one tray. Listing the values: $2, 3, 3, 4, 4, 4, 5, 6, 6, 8$, a total of $10$ trays.\nStep 2: Sum $= 2 + 6 + 12 + 5 + 12 + 8 = 45$.\nStep 3: Mean $= \\frac{45}{10} = 4.5$. Check: $4.5$ sits between the middle values $4$ and the larger values $5$ through $8$ that pull the mean above the mode. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reports the mode (the tallest stack) or the median, not the mean.\n* Choice C ($6$): reports the range, $8 - 2$.\n* Choice D ($7.5$): divides the sum by $6$, the number of distinct values on the axis, instead of by the $10$ dots.\n\n**Test Day Takeaway:** On a dot plot, count every dot in the total and in the divisor: repeated values count each time they appear."
+}

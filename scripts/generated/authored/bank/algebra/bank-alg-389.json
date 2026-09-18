@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-389",
+  "question": "A freight elevator has a maximum load of $1{,}500$ kilograms. A worker who weighs $90$ kilograms will ride the elevator with $n$ identical crates that each weigh $55$ kilograms. What is the greatest possible value of $n$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$25$"
+    },
+    {
+      "id": "B",
+      "text": "$26$"
+    },
+    {
+      "id": "C",
+      "text": "$27$"
+    },
+    {
+      "id": "D",
+      "text": "$28$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "rounds 25.6 up instead of down",
+    "C": "ignores the worker: 1500/55 rounded down",
+    "D": "adds the worker to the limit: 1590/55 rounded down"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: One-Variable Linear Inequality**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The crates may weigh at most $1{,}500 - 90 = 1{,}410$ kilograms, and $\\dfrac{1{,}410}{55} \\approx 25.6$, so at most $25$ whole crates fit.\n\n**The Full Solution:**\nStep 1: Translate the limit into an inequality. The total load is the worker plus the crates: $90 + 55n \\leq 1{,}500$.\nStep 2: Subtract $90$: $55n \\leq 1{,}410$. Divide by $55$: $n \\leq 25.6\\overline{36}$.\nStep 3: The number of crates must be a whole number, so the greatest possible $n$ is $25$. Check: $90 + 55(25) = 1{,}465 \\leq 1{,}500$, while $90 + 55(26) = 1{,}520 > 1{,}500$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($26$): rounds $25.6$ up; the $26$th crate pushes the load to $1{,}520$ kilograms, over the limit.\n* Choice C ($27$): divides $1{,}500$ by $55$ and ignores the worker's $90$ kilograms.\n* Choice D ($28$): adds the worker's weight to the limit instead of subtracting it, dividing $1{,}590$ by $55$.\n\n**Test Day Takeaway:** For a \"greatest number that fits\" question, subtract the fixed part from the limit, divide by the per-item amount, and round down; then confirm one more item breaks the limit."
+}

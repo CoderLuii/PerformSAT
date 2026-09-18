@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-223",
+  "question": "In a wind-tunnel test rig, a boom lies on a line of slope $\\frac{k - 3}{4}$ and a tether lies on a line of slope $\\frac{8}{k}$, where $k$ is a nonzero constant. The boom and the tether cross at a right angle. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{4}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{1}{2}$"
+    },
+    {
+      "id": "C",
+      "text": "$2$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "distributes only to $k$, solving $8k - 3 = -4k$ and then $12k = 3$",
+    "B": "divides in the wrong order at the last step, reporting $\\frac{12}{24}$ rather than $\\frac{24}{12}$",
+    "D": "sets the product of the slopes to $1$ instead of $-1$, giving $8k - 24 = 4k$ and $4k = 24$"
+  },
+  "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Setting $\\frac{k - 3}{4} \\cdot \\frac{8}{k} = -1$ gives $8k - 24 = -4k$, so $k = 2$.\n\n**The Full Solution:**\nStep 1: Perpendicular lines have slopes whose product is $-1$, so $\\frac{k - 3}{4} \\cdot \\frac{8}{k} = -1$.\nStep 2: Multiplying both sides by $4k$ gives $8(k - 3) = -4k$, so $8k - 24 = -4k$.\nStep 3: Then $12k = 24$ and $k = 2$. Check: the slopes are $\\frac{2 - 3}{4} = -\\frac{1}{4}$ and $\\frac{8}{2} = 4$, whose product is $-1$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{4}$): distributes only to $k$, solving $8k - 3 = -4k$ and then $12k = 3$\n* Choice B ($\\frac{1}{2}$): divides in the wrong order at the last step, reporting $\\frac{12}{24}$ rather than $\\frac{24}{12}$\n* Choice D ($6$): sets the product of the slopes to $1$ instead of $-1$, giving $8k - 24 = 4k$ and $4k = 24$\n\n**Test Day Takeaway:** Multiply the two slope expressions, clear the denominator, and only then distribute."
+}

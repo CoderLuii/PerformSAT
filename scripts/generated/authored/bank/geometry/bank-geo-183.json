@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-183",
+ "question": "A lint-collection roller sweeps the circular region modeled by $(x+5)^2+(y-4)^2=9$, with units in centimeters. A horizontal guide rail lies along the line $y=k$ and meets that region at exactly one point. What is the greatest possible value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the lower tangent y = 4 - 3 = 1 rather than the greatest value",
+  "B": "reports the radius 3 instead of a y-value",
+  "C": "reports the center's y-coordinate, a line that crosses the region twice"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Tangent Line to Circle (Discriminant = 0)**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The region is centered at $(-5,4)$ with radius $3$, so horizontal tangents are $y=4\\pm 3$, and the greatest is $y=7$.\n\n**The Full Solution:**\n\nStep 1 — Read the standard form: center $(-5,4)$ and radius $\\sqrt{9}=3$ centimeters.\n\nStep 2 — A horizontal line $y=k$ meets the circle once exactly when its distance from the center equals the radius, so $|k-4|=3$.\n\nStep 3 — Solve: $k=7$ or $k=1$, and the greater is $k=7$. Check: substituting $y=7$ gives $(x+5)^2+9=9$, so $x=-5$ is the only solution.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($1$): this is the lower tangent line, not the greatest value.\n* Choice B ($3$): this is the radius, not a location on the $y$-axis.\n* Choice C ($4$): this is the center's height, and $y=4$ crosses the region at two points.\n\n**Test Day Takeaway:** Horizontal tangents sit one radius above and below the center — the question's word \"greatest\" picks which one."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A refrigerated locker is loaded with cartons of frozen peas weighing $14.5$ kilograms each on a steel dolly weighing $62$ kilograms. What is the least number of cartons $c$ for which $14.5c + 62 \\ge 250$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$22$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "truncates 12.96 down to 12 instead of moving up to the next whole carton",
+  "C": "divides 250 by 14.5 and ignores the 62-kilogram dolly, rounding 17.2 up",
+  "D": "adds the dolly mass to 250 instead of subtracting it, rounding 21.5 up"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Smallest Integer in an Inequality**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $14.5c \\ge 188$ gives $c \\ge 12.96\\ldots$, and cartons come whole, so the least value is $13$.\n\n**The Full Solution:**\nStep 1: Subtract the dolly mass from both sides: $14.5c + 62 \\ge 250$ becomes $14.5c \\ge 188$.\nStep 2: Divide both sides by $14.5$: $c \\ge \\frac{188}{14.5} = 12.965\\ldots$\nStep 3: The least integer at or above $12.965\\ldots$ is $13$. Check: $14.5(13) + 62 = 188.5 + 62 = 250.5 \\ge 250$, while $14.5(12) + 62 = 236 < 250$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): rounds $12.96$ down. Twelve cartons give only $236$ kilograms, which misses the $250$-kilogram requirement.\n* Choice C ($18$): divides $250$ by $14.5$ to get $17.2$ and rounds up, forgetting that the $62$-kilogram dolly already counts toward the total.\n* Choice D ($22$): adds the dolly mass instead of subtracting it, dividing $312$ by $14.5$ to get $21.5$ and rounding up.\n\n**Test Day Takeaway:** Isolate the variable first, then round in the direction the inequality demands: for $c \\ge$ a decimal, always round up, even when the decimal part is tiny."
+}

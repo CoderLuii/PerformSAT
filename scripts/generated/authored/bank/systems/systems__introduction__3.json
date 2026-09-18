@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "One equation in a system of two linear equations is $6x - 4y = 10$. The system has no solution. Which of the following could be the other equation in this system?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3x - 2y = 5$"
+    },
+    {
+      "id": "B",
+      "text": "$3x - 2y = 8$"
+    },
+    {
+      "id": "C",
+      "text": "$3x + 2y = 8$"
+    },
+    {
+      "id": "D",
+      "text": "$2x - 3y = 8$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "this is the given equation divided by $2$, so the two equations describe the same line and the system has infinitely many solutions.",
+    "C": "the sign of the $y$-coefficient changes, so the slopes differ and the lines meet at exactly one point.",
+    "D": "the coefficients are swapped, which again changes the slope and gives exactly one solution."
+  },
+  "correctAnswer": "B",
+  "hint": "A system has no solution when the two lines are parallel but not identical.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~35s):** Dividing the given equation by $2$ gives $3x - 2y = 5$. Keeping those coefficients but changing the constant to $8$ produces a parallel, distinct line.\n\n**The Full Solution:**\nStep 1: A system of two linear equations has no solution exactly when its graphs are parallel and distinct.\nStep 2: Two equations in the form $ax + by = c$ are parallel when their $x$- and $y$-coefficients are proportional. Halving the given equation gives $3x - 2y = 5$, so the second equation must have coefficients proportional to $3$ and $-2$.\nStep 3: The equation $3x - 2y = 8$ has exactly those coefficients but a different constant, so the lines are parallel and distinct and the system has no solution. Check: subtracting the two equations gives $0 = -3$, which is never true. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3x - 2y = 5$): this is the given equation divided by $2$, so the two equations describe the same line and the system has infinitely many solutions.\n* Choice C ($3x + 2y = 8$): the sign of the $y$-coefficient changes, so the slopes differ and the lines meet at exactly one point.\n* Choice D ($2x - 3y = 8$): the coefficients are swapped, which again changes the slope and gives exactly one solution.\n\n**Test Day Takeaway:** For no solution, match the coefficient ratio and break the constant. Matching everything gives infinitely many solutions instead."
+}

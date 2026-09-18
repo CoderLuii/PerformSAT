@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "The cross section of a parabolic trough reflector has height $h$, in centimeters, at horizontal distance $d$ centimeters from its left edge, where $h = d^2 - 8d + 22$. A straight support bar lies along the line $h = 2d + c$, where $c$ is a constant, and the bar touches the cross section at exactly one point. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$22$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "forces the support bar through the lowest point (4, 6) of the cross section instead of imposing a single point of contact",
+  "C": "leaves 2d on the right side, using the discriminant of d^2 - 8d + (22 - c) and getting c = 6",
+  "D": "reads c off the constant term of the reflector's equation instead of solving for it"
+ },
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** Setting the two heights equal gives $d^2 - 10d + (22 - c) = 0$. One point of contact means the discriminant is $0$: $100 - 4(22 - c) = 0$, so $c = -3$.\n\n**The Full Solution:**\nStep 1: The bar touches the cross section where the two heights agree, so $d^2 - 8d + 22 = 2d + c$. Move every term to one side: $d^2 - 10d + (22 - c) = 0$.\nStep 2: A quadratic has exactly one real solution precisely when its discriminant $b^2 - 4ac$ equals $0$. Here $a = 1$, $b = -10$, and the constant is $22 - c$, so $(-10)^2 - 4(1)(22 - c) = 0$.\nStep 3: Expand: $100 - 88 + 4c = 0$, so $4c = -12$ and $c = -3$. Check: with $c = -3$ the equation becomes $d^2 - 10d + 25 = 0$, or $(d - 5)^2 = 0$, a single contact at $d = 5$, where the reflector height is $25 - 40 + 22 = 7$ and the bar height is $2(5) - 3 = 7$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-2$): puts the bar through the lowest point of the cross section, $(4, 6)$, since $6 = 2(4) - 2$. A line of slope $2$ through that point actually crosses the curve twice, not once.\n* Choice C ($6$): forgets to bring $2d$ across, applying the discriminant to $d^2 - 8d + (22 - c)$ and getting $64 - 4(22 - c) = 0$. The linear term must be combined before the discriminant is used.\n* Choice D ($22$): copies the constant term of the reflector's equation. That number is the height of the cross section at $d = 0$, not the bar's intercept.\n\n**Test Day Takeaway:** \"Touches at exactly one point\" is a discriminant instruction: set the curves equal, collect every term on one side, and set $b^2 - 4ac = 0$."
+}

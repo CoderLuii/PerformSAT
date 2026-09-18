@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 2,
-  "passage": "The Yankton Sioux scholar Ella Cara Deloria, who studied at Columbia University under Franz Boas, devoted decades to documenting the languages and social organization of the Dakota and Lakota peoples. In Speaking of Indians (1944), Deloria argued that Sioux society could not be understood through the narrow Anglo-American vocabulary of the immediate household. Drawing on the kin-terms speakers actually used, she showed that an extensive web of named relationships ______ daily conduct among the Sioux, prescribing specific obligations of respect, avoidance, and assistance for each pair of kin.",
+  "passage": "A mixture of cornstarch and water behaves like an ordinary liquid when stirred gently but stiffens dramatically under sudden stress: slap the surface and it momentarily resists like a solid. Materials scientists are studying such shear-thickening fluids for use in protective equipment, reasoning that a flexible fabric infused with one would stay supple during everyday movement yet become ______ at the instant of an impact.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "affects"
+      "text": "brittle"
     },
     {
       "id": "B",
-      "text": "disrupts"
+      "text": "porous"
     },
     {
       "id": "C",
-      "text": "categorizes"
+      "text": "elastic"
     },
     {
       "id": "D",
-      "text": "regulates"
+      "text": "rigid"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"regulates.\" The clause that follows the blank tells the reader exactly what the verb has to mean: the web of named relationships is \"prescribing specific obligations of respect, avoidance, and assistance for each pair of kin.\" To prescribe obligations is to lay down binding rules for how members of a society are to behave toward one another, so the verb in the blank must name the action of imposing rule-governed control over behavior. \"Regulates\" captures that exactly: a system regulates conduct when it sets out what must, may, and may not be done. The word also matches the scholarly register Deloria's argument occupies — Speaking of Indians treats Sioux kinship as an ordered institution, not a loose influence on social life — and it covers the full range Deloria emphasizes (respect, avoidance, and assistance), each of which is a rule-bound expectation rather than a casual tendency.\n\nChoice C is incorrect. \"categorizes\" collocates strongly with the language of the passage. Deloria's research is about \"kin-terms\" and \"named relationships,\" and a reader primed by that vocabulary may hear \"categorizes daily conduct\" as a natural fit, since to categorize is to assign things to named classes. But the verb has to describe what the web of relationships does to behavior, not how the linguist arranges her data. To categorize daily conduct would mean to sort actions into types — an analytic, descriptive operation — whereas the passage says the kinship system prescribes obligations, which is a prescriptive, rule-imposing operation. The word picks up the surface vocabulary of taxonomy while missing the rule-governed force the sentence calls for. Choice A is incorrect. \"affects\" lives in the same general neighborhood as \"regulates\" (both describe one thing acting on another), but its scope is wrong. To affect daily conduct is to have some influence on it, in a vague and unspecified way; the verb is compatible with mild, occasional, or partial pressure. The passage, by contrast, describes a system that prescribes specific obligations for each pair of kin, which is a much stronger and more structured claim. \"Affects\" gets the direction of the relation right but is far too weak in register and specificity for the institutional ordering Deloria attributes to Sioux kinship. Choice B is incorrect. \"disrupts\" reverses the relationship the passage establishes. To disrupt daily conduct would mean to throw it into disorder or to break up its normal course, but the sentence describes the kinship system as the source of order in Sioux daily life, prescribing the very obligations that organize behavior. If the web of relationships disrupted conduct, it could not at the same time be prescribing the obligations that pattern it. The verb runs directly opposite to the structuring, regulative function the passage attributes to the kinship system."
+  "explanation": "**Choice D is correct.** The fluid's defining trick is stiffening under sudden stress — resisting \"like a solid\" — so fabric infused with it must become \"rigid\" at the moment of impact.\n\n**The Full Solution:**\n- The first sentence defines the behavior the blank must echo: gentle handling leaves the mixture liquid, but sudden stress makes it stiffen and resist like a solid.\n- The second sentence maps that behavior onto protective gear through an explicit contrast: \"supple during everyday movement yet ______ at the instant of an impact.\"\n- The word opposing \"supple\" and matching \"stiffens... like a solid\" is \"rigid.\"\n\n**Why the other choices are wrong:**\n- A: \"brittle\" means hard but liable to shatter — a failure mode, not a protective one, and nothing in the text suggests the stiffened fluid breaks.\n- B: \"porous\" describes permeability to liquids or air, a property the passage never discusses and one irrelevant to stopping an impact.\n- C: \"elastic\" names the fabric's everyday stretchiness — the \"supple\" side of the contrast — when the blank needs its opposite, the state the impact triggers."
 }

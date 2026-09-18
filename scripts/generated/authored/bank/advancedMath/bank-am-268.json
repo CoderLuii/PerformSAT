@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-268",
+ "question": "A resonance model uses the rule $h(x) = c \\cdot f(x)$, where $f(x) = x^2 - 6x + 5$, $c$ is a positive constant, and $x$ is the driving frequency in hertz. The least value the model takes is $-20$. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the size of f's minimum, 4, instead of the stretch factor",
+  "C": "subtracts, -20 - (-4) = -16, and drops the sign",
+  "D": "reports the size of h's minimum, 20"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertical Stretch**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The minimum of $f$ is $f(3) = -4$, and stretching multiplies it by $c$, so $-4c = -20$ and $c = 5$.\n\n**The Full Solution:**\nStep 1: The graph of $f$ is a parabola opening upward with its vertex at $x = -\\frac{-6}{2(1)} = 3$, so the least value of $f$ is $f(3) = 9 - 18 + 5 = -4$.\nStep 2: Multiplying by a positive constant preserves which input gives the least output, so the least value of $h$ is $h(3) = c \\cdot (-4) = -4c$.\nStep 3: Setting $-4c = -20$ gives $c = 5$. Check: $h(x) = 5x^2 - 30x + 25$, and $h(3) = 45 - 90 + 25 = -20$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reports the size of the minimum of $f$, which is $4$, rather than the stretch factor.\n* Choice C ($16$): subtracts instead of dividing: $-20 - (-4) = -16$, then drops the sign.\n* Choice D ($20$): reports the size of the minimum of $h$, which the question already gives.\n\n**Test Day Takeaway:** For $h = c \\cdot f$ with $c > 0$, the extreme value scales by $c$ while the input that produces it stays put."
+}

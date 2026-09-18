@@ -1,0 +1,59 @@
+{
+  "id": 21,
+  "question": "Right triangle $PQR$ is shown, with the right angle at vertex $Q$ and with the side from $P$ to $Q$ measuring $24$ units. The lengths of the other two sides are not marked in the figure. Given that $\\tan(P) = \\frac{3}{4}$, what is the length, in units, of the side from $P$ to $R$?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ],
+        [
+          24,
+          18
+        ]
+      ],
+      "labels": [
+        "P",
+        "Q",
+        "R"
+      ],
+      "sideLabels": [
+        "24",
+        "",
+        ""
+      ],
+      "rightAngleVertex": 1
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$18$"
+    },
+    {
+      "id": "B",
+      "text": "$30$"
+    },
+    {
+      "id": "C",
+      "text": "$40$"
+    },
+    {
+      "id": "D",
+      "text": "$42$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports QR, the side opposite angle P, instead of the hypotenuse PR",
+    "C": "scales the 3-4-5 triple from the wrong leg, dividing 24 by 3 and multiplying by 5",
+    "D": "adds the two legs, 24 + 18, instead of applying the Pythagorean theorem"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** $\\tan(P) = \\frac{QR}{PQ} = \\frac{3}{4}$ with $PQ = 24$ gives $QR = 18$. The legs $18$ and $24$ are a $3$-$4$-$5$ triple scaled by $6$, so $PR = 30$.\n\n**The Full Solution:**\nStep 1: The right angle is at $Q$, so from angle $P$ the opposite side is $\\overline{QR}$ and the adjacent side is $\\overline{PQ}$. Therefore $\\tan(P) = \\frac{QR}{PQ}$.\nStep 2: Substitute the given values: $\\frac{QR}{24} = \\frac{3}{4}$, so $QR = 24 \\cdot \\frac{3}{4} = 18$.\nStep 3: The side from $P$ to $R$ is the hypotenuse, so $PR = \\sqrt{24^2 + 18^2} = \\sqrt{576 + 324} = \\sqrt{900} = 30$. Check: $18$, $24$, $30$ is the $3$-$4$-$5$ triple scaled by $6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($18$): this is $QR$, the leg found in the middle step. It is the side opposite angle $P$, not the side from $P$ to $R$.\n* Choice C ($40$): scales the $3$-$4$-$5$ triple using the wrong leg, matching $24$ to the $3$ instead of the $4$: $24 \\div 3 = 8$ and $8 \\times 5 = 40$.\n* Choice D ($42$): adds the legs, $24 + 18$. The hypotenuse is always shorter than the sum of the legs, so this value can be ruled out on sight.\n\n**Test Day Takeaway:** Name the sides relative to the angle in the ratio before you compute — opposite over adjacent for tangent. Then check whether the question wants a leg or the hypotenuse, and look for a familiar triple to skip the arithmetic."
+}

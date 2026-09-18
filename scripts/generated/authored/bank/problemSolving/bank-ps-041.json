@@ -1,0 +1,44 @@
+{
+  "id": "bank-ps-041",
+  "question": "The box plot summarizes the lengths, in millimeters, of the leaves in a sample taken from a shrub. What is the range, in millimeters, of the lengths of the leaves in the sample?",
+  "diagram": {
+    "type": "boxPlot",
+    "params": {
+      "min": 38,
+      "q1": 47,
+      "median": 55,
+      "q3": 63,
+      "max": 82,
+      "xLabel": "Length (mm)",
+      "xMin": 30,
+      "xMax": 90,
+      "xGridStep": 5,
+      "xLabelStep": 10
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$"
+    },
+    {
+      "id": "B",
+      "text": "$16$"
+    },
+    {
+      "id": "C",
+      "text": "$27$"
+    },
+    {
+      "id": "D",
+      "text": "$44$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the first quartile from the median, $55 - 47$, the width of the left half of the box.",
+    "B": "subtracts the box edges, $63 - 47$, which is the interquartile range, not the range.",
+    "C": "subtracts the median from the maximum, $82 - 55$, using the wrong lower value."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Range from Min and Max**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Range $=$ maximum $-$ minimum. The whiskers end at $82$ and $38$, so the range is $82 - 38 = 44$.\n\n**The Full Solution:**\nStep 1: A box plot marks five values: minimum (left whisker end), first quartile (left edge of the box), median (line in the box), third quartile (right edge), and maximum (right whisker end).\nStep 2: The range uses only the two extremes: minimum $= 38$ and maximum $= 82$.\nStep 3: Range $= 82 - 38 = 44$ millimeters. Check: the box ($47$ to $63$) and both whiskers all lie within a $44$-millimeter span. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): subtracts the first quartile from the median, $55 - 47$, the width of the left half of the box.\n* Choice B ($16$): subtracts the box edges, $63 - 47$, which is the interquartile range, not the range.\n* Choice C ($27$): subtracts the median from the maximum, $82 - 55$, using the wrong lower value.\n\n**Test Day Takeaway:** Range is whisker end to whisker end; the box edges give the interquartile range. Read the extremes, not the quartiles."
+}

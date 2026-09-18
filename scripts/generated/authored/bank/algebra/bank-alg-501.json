@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-501",
+ "question": "A dairy barn's feed trough is shaped so that $y = 3x^2 + bx + c$, and its lowest point is at $(-7, 5)$. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$54$"
+  },
+  {
+   "id": "C",
+   "text": "$147$"
+  },
+  {
+   "id": "D",
+   "text": "$152$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports 5, the height of the lowest point, as the constant term",
+  "B": "adds 49 + 5 without multiplying 49 by 3",
+  "C": "computes 3(49) = 147 and stops before adding 5"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The trough is $y = 3(x + 7)^2 + 5$, whose constant term is $3(49) + 5 = 152$.\n\n**The Full Solution:**\nStep 1: A lowest point at $(-7, 5)$ means the equation can be written as $y = 3(x + 7)^2 + 5$.\nStep 2: Expand: $3(x^2 + 14x + 49) + 5 = 3x^2 + 42x + 147 + 5$.\nStep 3: Combine constants: $y = 3x^2 + 42x + 152$, so $c = 152$. Check at $x = -7$: $3(49) + 42(-7) + 152 = 147 - 294 + 152 = 5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): reports the height of the lowest point instead of the value at $x = 0$.\n* Choice B ($54$): adds $49 + 5$ without multiplying the $49$ by $3$.\n* Choice C ($147$): computes $3(49) = 147$ and never adds the $5$.\n\n**Test Day Takeaway:** A known turning point gives the vertex form immediately; the constant term is what that form produces at $x = 0$."
+}

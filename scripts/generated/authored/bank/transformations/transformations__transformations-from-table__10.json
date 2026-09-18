@@ -1,0 +1,54 @@
+{
+ "id": 10,
+ "question": "The table gives a cubesat's battery charge $f(n)$, in watt-hours, at the end of orbit $n$. A second cubesat launched four orbits later has charge $g(n) = f(n - 4)$. If $g(a) = 27$ watt-hours, what is the value of $a$?",
+ "questionTable": {
+  "headers": [
+   "$n$",
+   "$f(n)$"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$9$"
+   ],
+   [
+    "$2$",
+    "$15$"
+   ],
+   [
+    "$3$",
+    "$27$"
+   ],
+   [
+    "$4$",
+    "$44$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-1$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$31$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes 3 - 4 instead of 3 + 4",
+  "B": "reports the orbit at which the first cubesat reached 27 watt-hours",
+  "D": "adds 4 to the charge 27 rather than to the orbit number"
+ },
+ "correctAnswer": "C",
+ "hint": "The second cubesat repeats the first cubesat's charges, but not on the same orbit.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** $g(a) = f(a - 4) = 27$, and the table shows $f(3) = 27$, so $a - 4 = 3$ and $a = 7$.\n\n**The Full Solution:**\nStep 1: Write the condition in terms of $f$: $g(a) = f(a - 4) = 27$ watt-hours.\nStep 2: The table shows $f(3) = 27$, so $a - 4 = 3$.\nStep 3: Therefore $a = 7$. Check: $g(7) = f(7 - 4) = f(3) = 27$ watt-hours ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-1$): computing $3 - 4$; the second cubesat lags, so its orbit number is larger.\n* Choice B ($3$): reporting the first cubesat's orbit rather than the second cubesat's.\n* Choice D ($31$): adding the $4$ to the charge $27$ instead of to the orbit number.\n\n**Test Day Takeaway:** Rewrite the transformed value as a value of the original function, then match it to the table."
+}

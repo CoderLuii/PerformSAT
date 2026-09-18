@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-168",
+  "question": "The numbers of applications a department received on $6$ days were $4$, $6$, $6$, $8$, $11$, and $k$. If the mean of these six numbers is $8$, what is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5$"
+    },
+    {
+      "id": "B",
+      "text": "$8$"
+    },
+    {
+      "id": "C",
+      "text": "$13$"
+    },
+    {
+      "id": "D",
+      "text": "$48$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "5 x 8 - 35, counting only the five known days",
+    "B": "repeats the mean",
+    "D": "the total sum 6 x 8, not the missing value"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Six values with mean $8$ sum to $48$. The known values sum to $4 + 6 + 6 + 8 + 11 = 35$, so $k = 48 - 35 = 13$.\n\n**The Full Solution:**\nStep 1: Total $=$ mean $\\times$ count $= 8 \\times 6 = 48$.\nStep 2: Known sum: $4 + 6 + 6 + 8 + 11 = 35$.\nStep 3: $k = 48 - 35 = 13$. Check: $\\frac{35 + 13}{6} = \\frac{48}{6} = 8$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): Uses $5 \\times 8 = 40$ as the total, counting only the five known days, then $40 - 35 = 5$.\n* Choice B ($8$): Repeats the mean; the known values average $7$, so $k$ must be above $8$ to pull the mean up.\n* Choice D ($48$): The total of all six values, not the sixth value itself.\n\n**Test Day Takeaway:** The unknown must be counted in the total; use the full count when multiplying by the mean."
+}

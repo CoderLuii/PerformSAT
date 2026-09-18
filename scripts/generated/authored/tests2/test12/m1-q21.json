@@ -1,0 +1,53 @@
+{
+  "id": 21,
+  "question": "Beaver lodge counts for a river basin in four survey years are given in the table, and the function $N(t) = 32(1.5)^{t/3}$ models the number of lodges $t$ years after the first survey. What does this model indicate about the number of lodges?",
+  "questionTable": {
+    "headers": [
+      "Years after first survey",
+      "Lodges counted"
+    ],
+    "rows": [
+      [
+        "0",
+        "32"
+      ],
+      [
+        "4",
+        "55"
+      ],
+      [
+        "8",
+        "94"
+      ],
+      [
+        "12",
+        "162"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The lodge count grows by $1.5$ lodges each year."
+    },
+    {
+      "id": "B",
+      "text": "The lodge count is $1.5$ times as great every $3$ years."
+    },
+    {
+      "id": "C",
+      "text": "The lodge count is $1.5$ times as great each year."
+    },
+    {
+      "id": "D",
+      "text": "The lodge count grows by $1.5\\%$ every $3$ years."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the growth factor 1.5 as an amount added each year, describing linear rather than exponential growth",
+    "C": "drops the division by 3 in the exponent, applying the factor once per year instead of once per 3 years",
+    "D": "reads the factor 1.5 as a percent increase of 1.5%, when 1.5 means a 50% increase"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**Choice B is correct.** In $N(t) = 32(1.5)^{t/3}$ the base $1.5$ is applied once for every $3$ years, so the count is multiplied by $1.5$ each $3$-year span.\n\n**The Fast Way (~30s):** The base is the multiplier and the $3$ under $t$ is how long one multiplication takes: $1.5$ times as many lodges every $3$ years.\n\n**The Full Solution:**\nStep 1: In $a(b)^{t/n}$, the value $a$ is the starting amount, $b$ is the factor applied in one full period, and $n$ is the length of that period. Here $a = 32$, $b = 1.5$, and $n = 3$ years.\nStep 2: Increasing $t$ by $3$ increases the exponent by exactly $1$, which multiplies the count by $1.5$ once.\nStep 3: So the count is $1.5$ times as great every $3$ years. Check against the table: $12$ years hold four $3$-year spans, so the count should grow by a factor of $(1.5)^4 = 5.0625$, and $32 \\times 5.0625 = 162$, the year-$12$ entry. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (an added $1.5$ lodges a year): treats $1.5$ as lodges added per year. The recorded counts rise by $23$, then $39$, then $68$ lodges over successive $4$-year spans, so the increase is not constant.\n* Choice C (factor $1.5$ applied yearly): ignores the $3$ in the exponent. Multiplying by $1.5$ once a year would put the count near $32(1.5)^4 = 162$ lodges by year $4$, but the survey records $55$.\n* Choice D (an increase of $1.5$ percent): reads $1.5$ as $1.5\\%$. A factor of $1.5$ is a $50\\%$ increase, which is far more than the table would allow.\n\n**Test Day Takeaway:** Read an exponential model as three separate facts: the coefficient is the start, the base is the multiplier, and the denominator under $t$ is how long one multiplication takes."
+}

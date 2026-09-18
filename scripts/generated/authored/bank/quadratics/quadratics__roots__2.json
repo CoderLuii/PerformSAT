@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "One solution to the equation $x^2 - 9x + k = 0$ is $x = 2$, where $k$ is a constant. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-14$"
+    },
+    {
+      "id": "B",
+      "text": "$7$"
+    },
+    {
+      "id": "C",
+      "text": "$14$"
+    },
+    {
+      "id": "D",
+      "text": "$18$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "sign error isolating k",
+    "B": "subtracts the root from the coefficient",
+    "D": "ignores the squared term"
+  },
+  "correctAnswer": "C",
+  "hint": "A solution makes the equation true, so substitute it and solve for the unknown constant.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** $4 - 18 + k = 0$ gives $k = 14$.\n\n**The Full Solution:**\nStep 1: Because $x = 2$ is a solution, substituting $2$ must make the equation true: $2^2 - 9(2) + k = 0$.\nStep 2: Simplify the numbers: $4 - 18 + k = 0$, so $-14 + k = 0$.\nStep 3: Add $14$ to both sides: $k = 14$. Check by factoring: $x^2 - 9x + 14 = (x - 2)(x - 7)$, whose solutions are $2$ and $7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-14$): solves $-14 + k = 0$ as $k = -14$, moving the term across without changing its sign.\n* Choice B ($7$): subtracts the solution from the middle coefficient, computing $9 - 2$.\n* Choice D ($18$): uses only the product $9(2) = 18$ and never accounts for the $x^2$ term.\n\n**Test Day Takeaway:** Substituting a known solution turns a quadratic with an unknown coefficient into a one-step linear equation."
+}

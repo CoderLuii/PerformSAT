@@ -1,0 +1,50 @@
+{
+ "id": "bank-am-144",
+ "question": "The graph shows a monorail bogie's vertical displacement $y$, in millimeters, at time $x$, in seconds, after it crosses a rail joint. The curve is the graph of $y=2(x-r)(x-s)$ for constants $r$ and $s$. What is the value of $rs$?",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    3,
+    -8
+   ],
+   "a": 2,
+   "showPoints": [
+    [
+     1,
+     0
+    ],
+    [
+     5,
+     0
+    ]
+   ],
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps a negative sign, as if the zeros were -1 and 5, giving -5",
+  "C": "reports r + s = 1 + 5 = 6 instead of the product",
+  "D": "reports the depth of the lowest point, 8, instead of the product of the zeros"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Quadratic via Factoring**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The curve meets the horizontal axis at $x=1$ and $x=5$, so $r=1$ and $s=5$ and $rs=5$.\n\n**The Full Solution:**\n\nStep 1: In the form $y=2(x-r)(x-s)$, the graph is zero exactly at $x=r$ and $x=s$.\n\nStep 2: The graph crosses the horizontal axis at the marked points $(1,0)$ and $(5,0)$, so the two constants are $1$ and $5$.\n\nStep 3: Multiply: $rs=1\\cdot5=5$. Check: $y=2(x-1)(x-5)$ has its lowest point at $x=3$, where $y=2(2)(-2)=-8$, matching the marked turning point.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-5$): treats the left intercept as $-1$ rather than $1$, producing a negative product.\n* Choice C ($6$): adds the two intercepts instead of multiplying them.\n* Choice D ($8$): reads the depth of the turning point, $8$ millimeters, as the answer.\n\n**Test Day Takeaway:** In a factored form, each $(x-k)$ names an intercept directly — read the intercepts off the graph and do only the arithmetic the question asks for."
+}

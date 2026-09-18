@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-083",
+ "question": "Two coaches model a rowing club's weekly kilometers differently: one uses $4(3)^{t}$ and the other uses $972(3)^{-t}$, where $t$ is the number of weeks from now and both models stay in use all season. At what value of $t$ do the two models agree?",
+ "correctAnswer": "2.5",
+ "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**The correct answer is $2.5$.**\n\n**The Fast Way (~35s):** Setting them equal gives $3^{2t} = \\frac{972}{4} = 243 = 3^{5}$, so $2t = 5$ and $t = 2.5$.\n\n**The Full Solution:**\nStep 1: Set the models equal: $4(3)^{t} = 972(3)^{-t}$.\nStep 2: Divide both sides by $4$ and multiply by $3^{t}$: $3^{t} \\cdot 3^{t} = 243$, so $3^{2t} = 243$.\nStep 3: Since $243 = 3^{5}$, equal bases force $2t = 5$, so $t = 2.5$. Check: $4(3)^{2.5} \\approx 62.35$ and $972(3)^{-2.5} \\approx 62.35$ ✓\n\n**Common Mistakes:**\n* $5$ — stopping at $2t = 5$ and reporting the exponent instead of $t$.\n* $243$ — reporting the power of $3$ that the two sides share rather than solving for the week.\n\n**Test Day Takeaway:** A negative exponent on the far side becomes a positive one when you multiply across — that is what collects both copies of the variable into $3^{2t}$."
+}

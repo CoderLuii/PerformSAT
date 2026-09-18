@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A freight desk charges a flat fee of \\$15 per crate plus \\$2.50 for each kilogram of a crate's mass above $30$ kilograms. One crate was charged \\$75. What was that crate's mass, in kilograms?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$24$"
+  },
+  {
+   "id": "B",
+   "text": "$39$"
+  },
+  {
+   "id": "C",
+   "text": "$54$"
+  },
+  {
+   "id": "D",
+   "text": "$60$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the 60-dollar overage by 2.50 but never adds the 30-kilogram allowance back",
+  "B": "treats the 15-dollar flat fee as a 15-kilogram allowance, solving 15 + 2.50(m - 15) = 75",
+  "D": "divides the full 75-dollar charge by 2.50 before removing the flat fee, then adds 30"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Word-to-Expression Translation**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The charge above the flat fee is $75 - 15 = 60$ dollars, which buys $\\frac{60}{2.50} = 24$ kilograms beyond the $30$-kilogram allowance, so the mass is $54$ kilograms.\n\n**The Full Solution:**\nStep 1: Translate the fee structure. With mass $m$ kilograms, only the part above $30$ is billed per kilogram, so the charge is $15 + 2.50(m - 30)$ dollars.\nStep 2: Set the charge equal to $75$: $15 + 2.50(m - 30) = 75$. Subtract $15$: $2.50(m - 30) = 60$.\nStep 3: Divide by $2.50$ and add $30$: $m - 30 = 24$, so $m = 54$ kilograms. Check: $2.50(54 - 30) = 2.50(24) = 60$ dollars, and $15 + 60 = 75$ dollars. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($24$): correctly finds the billable $24$ kilograms above the allowance but reports that as the mass. The first $30$ kilograms still count toward the crate's mass; they are just not billed per kilogram.\n* Choice B ($39$): reads the $15$ as a mass allowance, solving $15 + 2.50(m - 15) = 75$. The $15$ is a fee in dollars, and the allowance is $30$ kilograms.\n* Choice D ($60$): divides the entire $75$-dollar charge by $2.50$ to get $30$, then adds the $30$-kilogram allowance. The flat fee must come off before the per-kilogram rate is applied.\n\n**Test Day Takeaway:** In a fee with an allowance, the per-unit rate applies only to the excess. Peel off the flat fee first, divide by the rate, then add the allowance back to answer for the total."
+}

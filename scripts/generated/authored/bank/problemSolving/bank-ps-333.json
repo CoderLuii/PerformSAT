@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-333",
+  "question": "A linear model gives the volume of water $y$, in gallons, remaining in a barrel $x$ days after a leak began: $\\hat{y} = -3.5x + 42$. According to this model, how many gallons of water were in the barrel when the leak began?",
+  "correctAnswer": "42",
+  "explanation": "**SAT Pattern: Interpret Intercept of Best Fit**\n\n**The correct answer is $42$.**\n\n**The Fast Way (~10s):** The leak began at $x = 0$, and $\\hat{y} = -3.5(0) + 42 = 42$ gallons.\n\n**The Full Solution:**\nStep 1: The phrase \"when the leak began\" sets $x = 0$, since $x$ counts days after the leak began.\nStep 2: Substituting $x = 0$ into $\\hat{y} = -3.5x + 42$ leaves only the constant term.\nStep 3: The predicted starting volume is $42$ gallons. Check: after $2$ days the model predicts $35$ gallons, which is $42$ gallons minus $2$ days of $3.5$-gallon losses. $\\checkmark$\n\n**Common Mistakes:** Reporting $3.5$ gives the daily loss, the slope, instead of the starting volume. Reporting $38.5$ evaluates at $x = 1$ rather than $x = 0$. Solving $-3.5x + 42 = 0$ gives $12$, the day the model predicts the barrel is empty, which answers a different question.\n\n**Test Day Takeaway:** \"At the start,\" \"originally,\" and \"before any time passed\" all mean $x = 0$, so the answer is the constant term of the model."
+}

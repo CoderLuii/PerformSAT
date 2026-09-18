@@ -1,0 +1,29 @@
+{
+ "question": "A telescope's field of view is bounded by $(x + 5)^2 + (y - 3)^2 = 49$ in the $xy$-plane. Which of the following statements about that boundary is true?",
+ "hint": "Start by writing down the center and the radius.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The boundary passes through the origin."
+  },
+  {
+   "id": "B",
+   "text": "The boundary is tangent to the $x$-axis."
+  },
+  {
+   "id": "C",
+   "text": "The point $(2, 3)$ lies on the boundary."
+  },
+  {
+   "id": "D",
+   "text": "The center of the boundary lies in Quadrant III."
+  }
+ ],
+ "distractorNotes": {
+  "A": "assumes the origin is one radius away, though its distance is the square root of 34",
+  "B": "compares the radius 7 with the center's height 3",
+  "D": "reads the center as (-5, -3)"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~35s):** The center is $(-5, 3)$ with radius $7$, and $(2, 3)$ sits exactly $7$ units to its right.\n\n**The Full Solution:**\nStep 1: Standard form gives center $(-5, 3)$ and $r = \\sqrt{49} = 7$.\nStep 2: Test the point: $(2 + 5)^2 + (3 - 3)^2 = 49 + 0 = 49$, which matches the right side.\nStep 3: So $(2, 3)$ lies on the boundary. Check: the horizontal distance from $-5$ to $2$ is $7$, exactly the radius ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: the origin is $\\sqrt{25 + 9} = \\sqrt{34} \\approx 5.83$ units from the center, not $7$.\n* Choice B: tangency to the $x$-axis would need the center's height $3$ to equal the radius $7$.\n* Choice D: reads the center as $(-5, -3)$; the actual center $(-5, 3)$ lies in Quadrant II.\n\n**Test Day Takeaway:** Extract the center and radius first, then every statement about a circle becomes a one-line check."
+}

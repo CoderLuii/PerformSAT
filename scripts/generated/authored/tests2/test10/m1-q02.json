@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "An observatory books $x$ hours of imaging time and $y$ hours of spectroscopy time, and its two scheduling rules give $5x + 3y = 7k$ and $3x + 5y = 9k$ for a positive constant $k$. Which expression gives the total booked hours $x + y$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-k$"
+  },
+  {
+   "id": "B",
+   "text": "$k$"
+  },
+  {
+   "id": "C",
+   "text": "$2k$"
+  },
+  {
+   "id": "D",
+   "text": "$8k$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the two equations instead of adding, which gives x - y = -k",
+  "B": "adds correctly to 8x + 8y = 16k but divides 16k by 16 instead of by 8",
+  "D": "adds correctly to 8x + 8y = 16k but divides by 2 instead of by 8"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice C is correct.** Adding the two equations collapses them into a single statement about $x + y$, with no need to find $x$ and $y$ separately.\n\n**The Fast Way (~15s):** Add: $8x + 8y = 16k$. Divide by $8$: $x + y = 2k$.\n\n**The Full Solution:**\nStep 1: Line the equations up and add them: $(5x + 3y) + (3x + 5y) = 7k + 9k$, so $8x + 8y = 16k$.\nStep 2: Factor the left side: $8(x + y) = 16k$.\nStep 3: Divide both sides by $8$ to get $x + y = 2k$. Check: solving the system gives $x = 0.5k$ and $y = 1.5k$; then $5(0.5k) + 3(1.5k) = 7k$ ✓ and $0.5k + 1.5k = 2k$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-k$): subtracts the equations instead of adding, producing $2x - 2y = -2k$, that is, $x - y = -k$ — the difference, not the sum.\n* Choice B ($k$): reaches $8x + 8y = 16k$ but divides $16k$ by $16$ rather than by the coefficient $8$.\n* Choice D ($8k$): reaches $8x + 8y = 16k$ and divides by $2$, leaving $8k$ instead of dividing by $8$.\n\n**Test Day Takeaway:** When a question asks for a combination such as $x + y$, add or subtract the equations first — solving for each variable is almost always the slow road."
+}

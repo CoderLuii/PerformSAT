@@ -1,0 +1,29 @@
+{
+  "question": "The two forms of a pump's flow expression satisfy $x^{2}+kx+40=(x+h)^{2}+4$ for all values of $x$, where $h$ and $k$ are positive constants. What is the value of $h+k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$18$"
+    },
+    {
+      "id": "D",
+      "text": "$46$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reported h alone instead of h + k",
+    "B": "reported k alone instead of h + k",
+    "D": "added h to the constant term 40 instead of to k"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Completing the Square**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Constants give $h^{2}+4=40$, so $h=6$; then $k=2h=12$ and $h+k=18$.\n\n**The Full Solution:**\nStep 1: Expand the right side: $(x+h)^{2}+4=x^{2}+2hx+h^{2}+4$.\nStep 2: Match constants: $h^{2}+4=40$, so $h^{2}=36$ and $h=6$ because $h$ is positive.\nStep 3: Match the $x$-terms: $k=2h=12$, so $h+k=18$. Check: $(x+6)^{2}+4=x^{2}+12x+40$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): reports $h$ alone.\n* Choice B ($12$): reports $k$ alone.\n* Choice D ($46$): adds $h$ to the constant term $40$ instead of to $k$.\n\n**Test Day Takeaway:** Matching two forms means matching every coefficient — the constants pin down $h$, and the $x$-terms then pin down $k$.",
+  "id": "bank-am-294"
+}

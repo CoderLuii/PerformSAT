@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-319",
+  "question": "Orchestra P recorded rehearsal lengths, in minutes, of $88$, $90$, $92$, $94$, and $96$. Orchestra Q recorded rehearsal lengths, in minutes, of $80$, $86$, $92$, $98$, and $104$. Which statement correctly compares the standard deviations of the two lists of rehearsal lengths?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The standard deviations are equal, because the two lists have the same mean."
+    },
+    {
+      "id": "B",
+      "text": "The standard deviations are equal, because the two lists have the same number of values."
+    },
+    {
+      "id": "C",
+      "text": "The standard deviation of orchestra P is greater, because its values sit farther from their mean."
+    },
+    {
+      "id": "D",
+      "text": "The standard deviation of orchestra Q is greater, because its values sit farther from their mean."
+    }
+  ],
+  "distractorNotes": {
+    "A": "concludes from the equal means of 92 minutes that the spreads must match as well",
+    "B": "concludes from the equal count of five values that the spreads must match as well",
+    "C": "reverses the comparison; orchestra P is the list clustered tightly around 92 minutes"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Standard Deviation Comparison**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Both lists center on $92$ minutes, but P spans $88$ to $96$ while Q spans $80$ to $104$, so Q is more spread out.\n\n**The Full Solution:**\nStep 1: Find the centers. Orchestra P: $\\frac{88 + 90 + 92 + 94 + 96}{5} = 92$. Orchestra Q: $\\frac{80 + 86 + 92 + 98 + 104}{5} = 92$. Same mean.\nStep 2: Compare the distances from that center. P deviates by $4$, $2$, $0$, $2$, $4$ minutes; Q deviates by $12$, $6$, $0$, $6$, $12$ minutes — each Q deviation is three times the matching P deviation.\nStep 3: Conclude. Larger deviations from the same mean mean a larger standard deviation, so orchestra Q has the greater standard deviation. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (equal, same mean): uses the mean, which measures center. Two lists can share a center and still differ wildly in spread.\n* Choice B (equal, same count): uses the number of values, which does not fix the spread either.\n* Choice C (P greater): reverses the comparison: P is the list packed tightly around $92$ minutes.\n\n**Test Day Takeaway:** Standard deviation answers \"how far from the mean,\" not \"where is the mean\" or \"how many values.\" Compare the distances, never the centers."
+}

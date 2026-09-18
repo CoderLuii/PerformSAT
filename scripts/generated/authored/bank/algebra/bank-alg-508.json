@@ -1,0 +1,52 @@
+{
+  "id": "bank-alg-508",
+  "question": "Let $f$ be a linear function, and let $g(x) = \\dfrac{f(x)}{x + 2}$ for all $x \\neq -2$. Three values of $g(x)$ are shown in the table. Which equation defines $f$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "g(x)"
+      ],
+      "rows": [
+        [
+          "-4",
+          "9"
+        ],
+        [
+          "2",
+          "0"
+        ],
+        [
+          "4",
+          "1"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(x) = 3x - 6$"
+    },
+    {
+      "id": "B",
+      "text": "$f(x) = 3x + 6$"
+    },
+    {
+      "id": "C",
+      "text": "$f(x) = 9x - 18$"
+    },
+    {
+      "id": "D",
+      "text": "$f(x) = -\\dfrac{3}{2}x + 3$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "solves 0 = 3(2) + b with a sign slip, giving b = +6",
+    "C": "multiplies g(x) by x - 2 instead of x + 2, so f(-4) = -54 and the slope through (2, 0) is 9",
+    "D": "treats the table values as values of f itself and fits a line through (-4, 9) and (2, 0)"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Recover Linear $f$ from $g(x)=f(x)/(x+c)$**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Since $f(x) = g(x)(x + 2)$, the table gives $f(-4) = 9(-2) = -18$, $f(2) = 0(4) = 0$, and $f(4) = 1(6) = 6$. The slope from $(-4, -18)$ to $(2, 0)$ is $\\dfrac{18}{6} = 3$, and $0 = 3(2) + b$ gives $b = -6$, so $f(x) = 3x - 6$.\n\n**The Full Solution:**\nStep 1: Multiply both sides of $g(x) = \\dfrac{f(x)}{x + 2}$ by $x + 2$ to recover $f$: $f(x) = g(x) \\cdot (x + 2)$. Apply it to each row: $f(-4) = 9 \\cdot (-4 + 2) = -18$; $f(2) = 0 \\cdot (2 + 2) = 0$; $f(4) = 1 \\cdot (4 + 2) = 6$.\nStep 2: $f$ is linear, so use two of the points $(-4, -18)$, $(2, 0)$, $(4, 6)$: slope $= \\dfrac{0 - (-18)}{2 - (-4)} = \\dfrac{18}{6} = 3$. The third point confirms it: $\\dfrac{6 - 0}{4 - 2} = 3$.\nStep 3: With slope $3$ and the point $(2, 0)$: $0 = 3(2) + b$, so $b = -6$ and $f(x) = 3x - 6$. Check the first row: $g(-4) = \\dfrac{3(-4) - 6}{-4 + 2} = \\dfrac{-18}{-2} = 9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($f(x) = 3x + 6$): has the right slope but solves $0 = 6 + b$ as $b = 6$; this $f$ gives $f(2) = 12$, not $0$.\n* Choice C ($f(x) = 9x - 18$): multiplies by $x - 2$ instead of $x + 2$, producing $f(-4) = -54$ and a slope of $9$ through $(2, 0)$.\n* Choice D ($f(x) = -\\dfrac{3}{2}x + 3$): reads the table as values of $f$ rather than $g$ and fits a line through $(-4, 9)$ and $(2, 0)$, skipping the multiplication by $x + 2$.\n\n**Test Day Takeaway:** When $g$ is $f$ divided by a linear factor, multiply each table value by that factor to get points on $f$, then build the line from two of them and check with the third."
+}

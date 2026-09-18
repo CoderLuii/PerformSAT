@@ -1,0 +1,38 @@
+{
+  "id": 9008,
+  "passage": "Mary E. Wilkins Freeman's 1891 story \"A New England Nun\" follows Louisa Ellis, who has kept house alone for years and has grown exact about how everything in it is done. The story opens on an ordinary late afternoon: the sewing folded away, currants picked in the garden, supper laid on a small square table. A reader might argue that the narrator presents these routines as ceremonies Louisa performs for her own sake, with no visitor there to see them.",
+  "question": "Which quotation from \"A New England Nun\" most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "\"Louisa was slow and still in her movements; it took her a long time to prepare her tea; but when ready it was set forth with as much grace as if she had been a veritable guest to her own self.\""
+    },
+    {
+      "id": "B",
+      "text": "\"Louisa Ellis could not remember that ever in her life she had mislaid one of these little feminine appurtenances, which had become, from long use and constant association, a very part of her personality.\""
+    },
+    {
+      "id": "C",
+      "text": "\"The little square table stood exactly in the centre of the kitchen, and was covered with a starched linen cloth whose border pattern of flowers glistened.\""
+    },
+    {
+      "id": "D",
+      "text": "\"Then she went into the garden with a little blue crockery bowl, to pick some currants for her tea.\""
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** The sentence describes the care Louisa takes over an ordinary supper and then names who that care is for: the table is set with as much grace \"as if she had been a veritable guest to her own self.\"\n\n**The Full Solution:**\n- The claim has two parts, so hold both in view: the quotation must show a routine performed with ceremony, and it must show that the ceremony is directed at Louisa herself.\n- Choice A supplies each part. \"It took her a long time to prepare her tea\" is the ceremony; \"a veritable guest to her own self\" makes Louisa both host and audience, which is the claim's second half exactly.\n- Eliminate quotations that record exactness alone. Order in the house is easy to find in this story, but only one quotation says whom the trouble is taken for.\n\n**Why the other choices are wrong:**\n- B: This establishes that Louisa never misplaces her sewing things, which shows lifelong habit and order but says nothing about performing that order for herself.\n- C: This describes the table and its starched cloth, a piece of setting rather than an account of what Louisa does or why.\n- D: This reports a plain errand into the garden for currants, an ordinary chore that carries none of the ceremony the claim depends on.",
+  "source": {
+    "title": "A New England Nun",
+    "author": "Mary E. Wilkins Freeman",
+    "year": 1891,
+    "publicDomain": true,
+    "sourceUrl": "https://en.wikisource.org/wiki/A_New_England_Nun_and_Other_Stories/A_New_England_Nun"
+  },
+  "people": [
+    {
+      "name": "Mary E. Wilkins Freeman",
+      "sourceUrl": "https://en.wikisource.org/wiki/Author:Mary_Eleanor_Wilkins_Freeman"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "A clock face is a circle with a radius of $11$ inches. What is the length, in inches, of a diameter of the clock face?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5.5$"
+  },
+  {
+   "id": "B",
+   "text": "$11$"
+  },
+  {
+   "id": "C",
+   "text": "$22$"
+  },
+  {
+   "id": "D",
+   "text": "$121$"
+  }
+ ],
+ "correctAnswer": "C",
+ "hint": "Cross the circle straight through its center and count how many radii you travel.",
+ "distractorNotes": {
+  "A": "halves the radius",
+  "B": "reports the radius",
+  "D": "squares the radius"
+ },
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~10s):** A diameter is twice a radius, so $d = 2(11) = 22$ inches.\n\n**The Full Solution:**\nStep 1: A diameter runs from one side of the circle to the other through the center, so it is made of two radii: $d = 2r$.\nStep 2: Substitute $r = 11$: $d = 2(11) = 22$ inches.\nStep 3: Check: half of $22$ is $11$, the given radius.\n\n**Why the wrong answers are tempting:**\n* Choice A ($5.5$): halves the radius instead of doubling it.\n* Choice B ($11$): repeats the radius, treating the two words as interchangeable.\n* Choice D ($121$): squares the radius, a habit borrowed from the area formula $A = \\pi r^2$.\n\n**Test Day Takeaway:** Doubling is the only operation that turns a radius into a diameter. Squaring belongs to area, never to a length."
+}

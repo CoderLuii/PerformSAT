@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "A steel gusset on a trailer frame is a right triangle whose hypotenuse measures 24 inches and whose shorter leg measures 12 inches. How many square inches does the gusset cover?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$24\\sqrt{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$72\\sqrt{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$72\\sqrt{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$144\\sqrt{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 12 by the square root of 3 instead of multiplying, taking the second leg as 4 times the square root of 3",
+  "C": "adds the squares instead of subtracting, taking the second leg as the square root of 720",
+  "D": "multiplies the two legs but omits the factor of one half"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**Choice B is correct.** The missing leg is $\\sqrt{24^2 - 12^2} = \\sqrt{432} = 12\\sqrt{3}$ inches, so the area is $\\frac{1}{2}(12)(12\\sqrt{3}) = 72\\sqrt{3}$ square inches.\n\n**The Fast Way (~30s):** A leg that is half the hypotenuse makes a $30$-$60$-$90$ triangle, so the other leg is $12\\sqrt{3}$ and the area is $\\frac{1}{2}(12)(12\\sqrt{3}) = 72\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: Call the missing leg $b$. The Pythagorean theorem gives $12^2 + b^2 = 24^2$, so $b^2 = 576 - 144 = 432$.\nStep 2: Simplify: $b = \\sqrt{432} = \\sqrt{144 \\cdot 3} = 12\\sqrt{3}$ inches.\nStep 3: The legs are perpendicular, so the area is $\\frac{1}{2}(12)(12\\sqrt{3}) = 72\\sqrt{3}$ square inches. Check: $12^2 + (12\\sqrt{3})^2 = 144 + 432 = 576 = 24^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($24\\sqrt{3}$): takes the second leg as $\\frac{12}{\\sqrt{3}} = 4\\sqrt{3}$, dividing by $\\sqrt{3}$ where the ratio calls for multiplying, and gets $\\frac{1}{2}(12)(4\\sqrt{3})$.\n* Choice C ($72\\sqrt{5}$): adds instead of subtracting inside the radical, $\\sqrt{576 + 144} = 12\\sqrt{5}$. The hypotenuse is the longest side, so the missing leg must be shorter than $24$.\n* Choice D ($144\\sqrt{3}$): multiplies the two legs, $12 \\cdot 12\\sqrt{3}$, and forgets the $\\frac{1}{2}$ in the triangle-area formula.\n\n**Test Day Takeaway:** In a right triangle the two legs ARE the base and height. Solve for the missing leg by subtracting inside the radical, then halve the product."
+}

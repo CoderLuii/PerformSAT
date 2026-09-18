@@ -1,31 +1,31 @@
 {
-  "id": 1225,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "Engineers once assumed that the most effective way to reduce a tall building's sway in high winds was to make its frame as rigid as possible. Studies of how skyscrapers actually respond to gusts complicated that view. A perfectly stiff tower transmits a gust's energy directly to its occupants as a sharp jolt, whereas a structure allowed to flex slightly can absorb and dissipate that energy over time. ______ many modern towers are deliberately engineered with a controlled degree of flexibility, sometimes aided by a massive counterweight that shifts to oppose the building's motion.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "For example,"
-    },
-    {
-      "id": "B",
-      "text": "As a result,"
-    },
-    {
-      "id": "C",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "D",
-      "text": "In contrast,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The preceding sentences establish that a flexible structure dissipates a gust's energy better than a rigid one, and the final sentence reports the design practice that follows from that finding, so \"As a result\" marks the consequence. \"For example\" would introduce an illustration of a prior claim, but this is an outcome, not an instance. \"Nevertheless\" would signal a result that runs against expectation, which does not fit. \"In contrast\" would set up an opposition, yet the flexible-tower practice agrees with the finding rather than opposing it."
+ "id": 1225,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "A harpsichord plucks its strings: pressing a key raises a small plectrum that snaps past the string, and the note sounds at the same loudness however firmly the player strikes. Eighteenth-century builders of the early piano replaced the plectrum with a leather-covered hammer whose force depends on the player's touch, so that a single keyboard could whisper or thunder at will. ______ composers writing for the new instrument began marking gradations of loudness directly into their scores — indications that would have been meaningless on the harpsichord.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "For example,"
+  },
+  {
+   "id": "B",
+   "text": "As a result,"
+  },
+  {
+   "id": "C",
+   "text": "Even so,"
+  },
+  {
+   "id": "D",
+   "text": "Until then,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The hammer action gave players control over loudness, and the final sentence reports what FOLLOWED from that new capability — composers began writing dynamics into their scores — so the cause-and-effect link \"As a result\" fits.\n\n**The Full Solution:**\n- The harpsichord's plectrum made every note equally loud, whatever the player did.\n- The early piano's hammer put loudness under the player's control: the keyboard \"could whisper or thunder at will.\"\n- The last sentence gives the consequence of that control: marked gradations of loudness now meant something, so composers started writing them. A consequence takes a result transition.\n\n**Why the other choices are wrong:**\n- A: \"For example\" would make the composers' markings an illustration of the hammer mechanism, but the markings are an outcome of it, not an instance.\n- C: \"Even so\" signals a result that arrives despite what came before, but the marking of dynamics flows from the new instrument rather than defying it.\n- D: \"Until then\" points to the time before the change, yet the sentence describes what composers began doing after the new instrument existed."
 }

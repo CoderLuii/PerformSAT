@@ -34,6 +34,8 @@ const FLAG_DEFAULTS = {
   todaysTasks: true,  // dashboard shows the Today's Tasks hero, not the legacy banner
   innerOnboarding: true, // post-signup inner onboarding runs before the diagnostic; kill-switch via REACT_APP_FF_INNER_ONBOARDING=false
   tutorPrewarm: true, // panel-open cache prewarm (measured: tutor TTFB 6.5s → 3.9s). Safe since the prewarm-aware aiTutor deployed 2026-07-21; kill-switch via REACT_APP_FF_TUTOR_PREWARM=false
+  planV3: true, // TRUE-plan generator + mission-control timeline (built 2026-08-13, live-verified on prod bundle 2026-08-14); kill-switch via REACT_APP_FF_PLAN_V3=false
+  diagnosticV2: true, // 40Q adaptive diagnostic in the real test runner (built 2026-08-13, full 40Q E2E live-verified same day); kill-switch via REACT_APP_FF_DIAGNOSTIC_V2=false
 };
 
 function camelToScreamingSnake(key) {

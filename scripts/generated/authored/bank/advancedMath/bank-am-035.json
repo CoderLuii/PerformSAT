@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-035",
+ "question": "A greenhouse control model gives the energy use, in kilowatt-hours, as $E(x)=x^{2}-14x+58$, where $x$ is the vent opening in centimeters. When $E(x)$ is written in the form $(x-h)^{2}+k$, what is the value of $k$?",
+ "correctAnswer": "9",
+ "explanation": "**SAT Pattern: Standard to Vertex (k value)**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~30s):** Half of $14$ is $7$, and $7^{2}=49$, so $E(x)=(x-7)^{2}+58-49=(x-7)^{2}+9$.\n\n**The Full Solution:**\n\nStep 1: Take half the coefficient of $x$: $\\frac{-14}{2}=-7$, so the completed square is $(x-7)^{2}$.\n\nStep 2: Expanding $(x-7)^{2}$ gives $x^{2}-14x+49$, which is $49$ instead of the actual constant $58$.\n\nStep 3: Add the difference back: $k=58-49=9$, so $E(x)=(x-7)^{2}+9$. Check: at $x=7$ the model gives $49-98+58=9$, matching the value of $k$.\n\n**Common Mistakes:**\n\n* Reporting $7$, the value of $h$, instead of $k$.\n* Subtracting $14$ rather than $\\left(\\frac{14}{2}\\right)^{2}=49$ gives $58-14=44$.\n\n**Test Day Takeaway:** Completing the square subtracts the square of half the linear coefficient from the constant; $k$ is what is left over, and it equals the function's value at $x=h$."
+}

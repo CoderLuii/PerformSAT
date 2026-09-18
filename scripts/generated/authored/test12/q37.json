@@ -1,31 +1,31 @@
 {
-  "id": 1237,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "During a smallpox outbreak in Boston in 1721, the minister Cotton Mather urged the city's physicians to try a preventive practice he had learned of from an enslaved West African man named Onesimus and from reports out of Constantinople: introducing material from a smallpox sore into a healthy person, a procedure called variolation. The idea was fiercely resisted, since most physicians thought it reckless to give a healthy person the disease on purpose. Only one, Zabdiel Boylston, agreed to try it, and he kept careful records. When the epidemic subsided, the numbers told a striking story: among those he had variolated, the death rate was far lower than among those who caught smallpox in the ordinary way. The data did not end the controversy, but they were some of the earliest quantitative evidence that the procedure saved lives.",
-  "question": "Based on the text, what was notable about the records Boylston kept during the 1721 epidemic?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "They appeared at first to demonstrate that the procedure of variolation carried virtually no risk of any kind to the otherwise healthy people who agreed to undergo it."
-    },
-    {
-      "id": "B",
-      "text": "They persuaded the majority of Boston's physicians to take up the practice of variolation well before the epidemic had run its course."
-    },
-    {
-      "id": "C",
-      "text": "They showed that the practice of variolation had actually originated in Boston rather than in West Africa or in Constantinople."
-    },
-    {
-      "id": "D",
-      "text": "They offered early quantitative evidence that people who were variolated died of smallpox far less often than those who were infected in the ordinary way."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage states that Boylston's figures showed a far lower death rate among the variolated than among those who caught smallpox naturally, providing some of the earliest numerical evidence that the procedure saved lives. A overstates the case; the text speaks of a lower death rate, not the absence of all risk. B contradicts the passage, which says the data \"did not end the controversy.\" C misattributes the procedure's origin, which the text traces to West Africa and Constantinople, not Boston."
+ "id": 1237,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "In the seventeenth-century map trade, coloring was a specialized craft carried on in workshops, often by several colorists working under a master. Because a large atlas passed through many hands, workshops faced a problem of consistency: the purchaser of a two-volume atlas expected the provinces of a region to be washed in the same greens and yellows from the first plate to the last. The solution was the pattern sheet — a printed copy of each map, colored once by the master and kept in the shop. Colorists laid their work beside it and matched their washes to its choices, so that an atlas colored by six hands left the workshop looking like the work of one. Surviving pattern sheets, worn and paint-spotted, are now prized by historians as rare direct evidence of how such workshops actually operated.",
+ "question": "Based on the text, what was notable about the pattern sheets kept in map-coloring workshops?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "They were colored by the workshop's newest members as practice before those members were trusted with maps intended for sale."
+  },
+  {
+   "id": "B",
+   "text": "They recorded the prices that a workshop charged for coloring atlases of different sizes and for work in different pigments."
+  },
+  {
+   "id": "C",
+   "text": "They were printed in larger numbers than the maps they reproduced, so that every colorist in a workshop could keep a personal copy."
+  },
+  {
+   "id": "D",
+   "text": "They let many colorists produce uniform work, and the surviving examples now give historians direct evidence of workshop practice."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The passage assigns the pattern sheets two distinctions, and D captures both: in their own time they solved the consistency problem (six hands producing work \"like the work of one\"), and today the survivors serve historians as \"rare direct evidence of how such workshops actually operated.\"\n\n**The Full Solution:**\n- The problem: an atlas colored by many people had to look uniform to its purchaser.\n- The solution: a master-colored reference copy of each map, kept in the shop, that every colorist matched washes against.\n- The afterlife: worn, paint-spotted survivors are prized as direct evidence of workshop practice. A detail question wants what the text actually says was notable, and D restates both halves.\n\n**Why the other choices are wrong:**\n- A: The text says the master colored the pattern sheets, not novices practicing — it reverses the hierarchy.\n- B: Nothing in the passage connects the sheets to prices; they recorded color choices.\n- C: It contradicts the text, which describes a single reference copy \"kept in the shop,\" not personal copies for every colorist."
 }

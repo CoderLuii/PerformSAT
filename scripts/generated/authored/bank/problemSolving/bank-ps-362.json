@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-362",
+  "question": "A press printed $1{,}400$ sheets during the first $20$ minutes of a run and $1{,}200$ sheets during the next $30$ minutes. What was the press's average rate, in sheets per minute, for the entire $50$-minute run?",
+  "correctAnswer": "52",
+  "explanation": "**SAT Pattern: Average Rate**\n\n**The correct answer is $52$.**\n\n**The Fast Way (~20s):** Total sheets $= 1{,}400 + 1{,}200 = 2{,}600$ over $50$ minutes, so the rate is $\\frac{2600}{50} = 52$.\n\n**The Full Solution:**\nStep 1: An average rate over a whole run is the total output divided by the total time.\nStep 2: Total output $= 1{,}400 + 1{,}200 = 2{,}600$ sheets; total time $= 20 + 30 = 50$ minutes.\nStep 3: Average rate $= \\frac{2600}{50} = 52$ sheets per minute. Check: $52 \\times 50 = 2{,}600$. $\\checkmark$\n\n**Common Mistakes:** Averaging the two interval rates, $\\frac{70 + 40}{2} = 55$, which over-weights the shorter interval; dividing the total by the number of intervals, $\\frac{2600}{2} = 1{,}300$; or reporting only the first interval's rate, $\\frac{1400}{20} = 70$.\n\n**Test Day Takeaway:** When two intervals have different lengths, average the totals, not the rates: add all the output, add all the time, then divide once."
+}

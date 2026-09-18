@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
-  "passage": "Historians of the period argue that the new transit authority reshaped the city by laying down subway lines, by setting fares low enough to draw daily riders, and ______ several competing private bus companies into a single public network that riders could cross with one fare.",
+  "passage": "The village cooperative set out to revive the abandoned olive terraces above the valley by rebuilding the dry-stone retaining walls, by clearing the choked irrigation channels, and ______ the shared mill that had pressed the valley's harvest for generations.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "they merged"
+      "text": "they reopened"
     },
     {
       "id": "B",
-      "text": "by merging"
+      "text": "by reopening"
     },
     {
       "id": "C",
-      "text": "the merger of"
+      "text": "the reopening of"
     },
     {
       "id": "D",
-      "text": "merging"
+      "text": "reopening"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"by merging.\" The sentence lists three things the authority did, and the first two are phrased in parallel as \"by laying down . . .\" and \"by setting . . . .\" The third item must match that form, so \"by merging\" completes the parallel series. Choice A inserts a new clause with its own subject, breaking the pattern. Choice C turns the third item into a noun phrase, and choice D drops the \"by,\" so neither matches the \"by . . .-ing\" structure of the first two items."
+  "explanation": "**Choice B is correct.** The sentence lists three means to one end, and the first two are cast as \"by\" plus a gerund — \"by rebuilding..., by clearing...\" — so the third must match: \"by reopening.\"\n\n**The Full Solution:**\n- Identify the series: three coordinated phrases describing how the cooperative pursued the revival.\n- The established frame is \"by + gerund,\" repeated at each item; parallel structure requires the final item to keep the frame.\n\n**Why the other choices are wrong:**\n- A: \"They reopened\" switches to a finite clause mid-series, breaking the parallel and leaving \"and\" joining unlike structures.\n- C: \"The reopening of\" swaps in a noun phrase where the series has prepositional phrases.\n- D: Bare \"reopening\" drops the \"by\" that the first two items made part of the pattern, leaving the third item off-balance."
 }

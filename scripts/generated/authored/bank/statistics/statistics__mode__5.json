@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "A data set of $15$ integers has a single mode of $24$, which occurs $4$ times. The value $19$ occurs $3$ times in this data set. Three more values, each equal to $19$, are then added. Which statement about the mode of the resulting $18$-value data set is true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mode is still $24$."
+    },
+    {
+      "id": "B",
+      "text": "The mode is $19$."
+    },
+    {
+      "id": "C",
+      "text": "The data set has two modes, $19$ and $24$."
+    },
+    {
+      "id": "D",
+      "text": "The data set has no mode."
+    }
+  ],
+  "distractorNotes": {
+    "A": "assumes the original mode cannot be overtaken, but frequencies elsewhere can grow past it.",
+    "C": "keeps $24$ on the list because it was the original mode and adds $19$ alongside it; only the current frequencies count, and $6 > 4$.",
+    "D": "assumes that a change in the most frequent value leaves the data set without a mode."
+  },
+  "correctAnswer": "B",
+  "hint": "Track the new frequency of each candidate value rather than the original ranking.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~45s):** The value $19$ now occurs $3 + 3 = 6$ times while $24$ still occurs $4$ times, so $19$ is the new mode.\n\n**The Full Solution:**\nStep 1: Adding values changes only the frequencies of the values added, so $24$ still occurs $4$ times.\nStep 2: The value $19$ occurred $3$ times and gains $3$ more, so it now occurs $6$ times.\nStep 3: Since $6 > 4$ and every other value occurred fewer than $4$ times originally, the single mode of the new data set is $19$. Check: the data set now has $15 + 3 = 18$ values, and no value occurs more than $6$ times. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: assumes the original mode cannot be overtaken, but frequencies elsewhere can grow past it.\n* Choice C: keeps $24$ on the list because it was the original mode and adds $19$ alongside it; only the current frequencies count, and $6 > 4$.\n* Choice D: assumes that a change in the most frequent value leaves the data set without a mode.\n\n**Test Day Takeaway:** When values are added to a data set, update the frequency count of every affected value before naming a mode."
+}

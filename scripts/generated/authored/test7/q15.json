@@ -1,31 +1,31 @@
 {
-  "id": 715,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 1,
-  "passage": "Aboard a 1992 space shuttle mission, a series of biology experiments tested how the absence of normal gravity affects living things. Two results stood out. Frog embryos that developed in orbit followed unusual developmental paths rather than the trajectories familiar from laboratories on the ground. Separately, isolated bone cells changed their characteristic patterns of growth and chemical signaling once the pull of gravity was removed. Because both a whole developing organism and a single specialized cell type behaved differently when gravity was taken away, the combined results suggest that ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "almost any biological process studied in orbit will end up producing results that directly contradict what is normally seen on the ground."
-    },
-    {
-      "id": "B",
-      "text": "gravity is among the environmental factors that shape how at least some living systems function on Earth."
-    },
-    {
-      "id": "C",
-      "text": "removing gravity leaves the behavior of isolated bone cells essentially identical to their behavior on Earth."
-    },
-    {
-      "id": "D",
-      "text": "frog embryos cannot develop normally unless Earth’s gravity acts on them at every single stage of growth."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. Two different living systems — a developing organism and an isolated cell type — behaved differently once gravity was removed, which supports the modest conclusion that gravity helps shape how at least some living systems work. Choice A overgeneralizes from two cases to \"almost any\" process and predicts direct contradiction rather than mere difference. Choice C denies the very change the bone-cell result describes, and Choice D draws an absolute claim about every stage of development that the single observation cannot support."
+ "id": 715,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 1,
+ "passage": "Male bowerbirds build display structures — avenues of woven sticks opening onto courts decorated with sorted pebbles, bones, and bits of glass — that females inspect before choosing mates. Field studies report two consistent observations. First, males spend hours each day maintaining their bowers, and when researchers deliberately disarrange the decorations, the builders restore the layout within hours. Second, females visit many bowers repeatedly, and they mate most often with the males whose displays remain the most consistently ordered across those visits. Taken together, the observations suggest that ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "females select mates according to bower arrangement alone, ignoring every other male trait."
+  },
+  {
+   "id": "B",
+   "text": "the arrangement of a bower, and not merely its existence, carries information that females weigh when choosing among males."
+  },
+  {
+   "id": "C",
+   "text": "males restore disarranged decorations chiefly to recover scarce building materials."
+  },
+  {
+   "id": "D",
+   "text": "bowerbird species that build no bowers at all are unable to attract mates."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Both observations point at arrangement specifically — males labor to restore a disturbed layout, and females favor the most consistently ordered displays — so the modest conclusion is that arrangement itself carries information females use.\n\n**The Full Solution:**\n- Observation one shows males treating the layout, not just the structure, as worth hours of daily upkeep and prompt repair.\n- Observation two ties female choice to how consistently ordered a display remains across repeated visits.\n- The safe inference joins them: arrangement is a signal females weigh — note B's careful wording, which claims no more than the evidence shows.\n\n**Why the other choices are wrong:**\n- A: \"Alone\" and \"ignoring every other trait\" overreach — the observations show arrangement matters, not that nothing else does.\n- C: It substitutes a motive the evidence undercuts — males restore the layout of the same materials, which is effort spent on order, not on recovering supplies.\n- D: It leaps to species that build no bowers, about which the passage offers no evidence at all."
 }

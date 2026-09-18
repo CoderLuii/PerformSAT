@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 1,
-  "passage": "Roman aqueducts moved water across great distances using gravity alone, so the channel had to descend at a steady, almost imperceptible grade for mile after mile. Where a ridge rose across the route and threatened to interrupt that gentle slope, the engineers chose to ______ the obstacle by boring a tunnel straight through the hill, preserving the continuous downward grade on which the whole system depended.",
+  "passage": "The vicuña, a wild Andean relative of the alpaca, yields its prized fleece only ______: in the traditional roundups known as chaccu, herders gather the free-ranging animals no more than once every two to three years, shear a few ounces of fiber from each one, and release the herd unharmed.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
-    {
-      "id": "A",
-      "text": "exaggerate"
-    },
-    {
-      "id": "B",
-      "text": "ignore"
-    },
-    {
-      "id": "C",
-      "text": "surmount"
-    },
-    {
-      "id": "D",
-      "text": "postpone"
-    }
+    { "id": "A", "text": "reluctantly" },
+    { "id": "B", "text": "seasonally" },
+    { "id": "C", "text": "sparingly" },
+    { "id": "D", "text": "profitably" }
   ],
   "correctAnswer": "C",
-  "explanation": "Roman engineers faced a real difficulty: a ridge that broke the gentle, continuous slope their gravity-fed channel required. They responded by tunneling through the hill, so the blank needs a verb meaning to get past or overcome that obstacle. \"Surmount,\" choice C, fits. \"Ignore\" is wrong because they did not leave the ridge alone but worked through it, and \"exaggerate\" and \"postpone\" describe neither overcoming nor addressing the problem.",
-  "_meta": {
-    "anchor": "Roman aqueduct engineering: the gravity gradient"
-  }
+  "explanation": "**Choice C is correct.** The clause after the colon restates the blank in concrete terms — shearing once every two to three years, a few ounces at a time — and \"sparingly\" is the word that sums up such small, infrequent yields.\n\n**The Full Solution:**\n- The colon signals that what follows spells out the blank's meaning.\n- The details are all about smallness and infrequency: gatherings years apart, mere ounces per animal.\n- \"Sparingly\" — in small amounts, with restraint — is the precise one-word restatement of that pattern.\n\n**Why the other choices are wrong:**\n- A: \"Reluctantly\" attributes unwillingness to an animal; the text describes quantity and frequency, not attitude.\n- B: \"Seasonally\" implies a yearly rhythm, but the roundups happen only once every two to three years.\n- D: \"Profitably\" concerns money, which the sentence never mentions; the colon's details describe scarcity, not earnings."
 }

@@ -1,34 +1,34 @@
 {
-  "id": 501,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "Marine biologist Sylvia Earle, who has logged thousands of hours observing the ocean from submersibles, argues that protecting underwater life depends on firsthand experience rather than secondhand records. Even the most detailed seafloor maps and sonar surveys, she points out, cannot ______ what a diver perceives directly inside a kelp forest: the shifting, living relationships among the organisms that shape such places from one hour to the next.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "classify"
-    },
-    {
-      "id": "B",
-      "text": "anticipate"
-    },
-    {
-      "id": "C",
-      "text": "convey"
-    },
-    {
-      "id": "D",
-      "text": "replace"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"convey.\" The sentence contrasts two ways of knowing the ocean: the static products of mapping and sonar on one hand, and what a diver perceives directly on the other. The blank needs a verb meaning to communicate or transmit that lived knowledge, and \"convey\" fits exactly—maps and surveys, however detailed, cannot transmit the living relationships a diver experiences. \"Classify\" means sort into categories, but the sentence is about communicating an experience, not organizing one; \"anticipate\" means foresee, but the relationships already exist and are being observed, not predicted; and \"replace\" would say a map cannot substitute for the relationships themselves, a different claim from the one the sentence builds about what direct observation makes evident.",
-  "_meta": {
-    "anchor": "Sylvia Earle — marine biologist; firsthand undersea observation vs. maps and sonar"
+ "id": 501,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "Archerfish hunt insects that rest on leaves overhanging the water, knocking them down with a jet of water spat from the mouth. Because light bends where air meets water, an insect's apparent position differs from its true one, so a hunting fish must ______ that distortion: a jet aimed straight at what the fish sees would sail past its target.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "ignore"
+  },
+  {
+   "id": "B",
+   "text": "prevent"
+  },
+  {
+   "id": "C",
+   "text": "offset"
+  },
+  {
+   "id": "D",
+   "text": "imitate"
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The fish must counteract the bending of light when it aims, and \"offset\" means to counterbalance or compensate for something.\n\n**The Full Solution:**\n- The text sets up a problem: light bends at the water's surface, so the insect appears somewhere it is not.\n- The colon then explains the stakes: a jet aimed straight at the apparent position \"would sail past its target.\"\n- The blank must name what a successful hunter does about the distortion: it corrects for it. \"Offset\" expresses exactly that compensation.\n\n**Why the other choices are wrong:**\n- A: \"Ignore\" is the opposite of what the text requires; a fish that ignored the distortion would miss, as the final clause says.\n- B: \"Prevent\" fails because the fish cannot stop light from bending; it can only adjust its aim.\n- D: \"Imitate\" makes no sense; the fish is not copying the distortion but correcting for it.",
+ "_meta": {
+  "anchor": "archerfish — compensating for refraction when spitting at prey"
+ }
 }

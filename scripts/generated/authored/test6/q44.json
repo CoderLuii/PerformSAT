@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
-  "passage": "Recent surveys of precolonial West African urbanism have highlighted a feature that earlier scholarship had largely ______ many of the Yoruba towns now being mapped were once ringed by massive earthen walls, some running for tens of kilometers around a single community.",
+  "passage": "Investigations of nineteenth-century mill disasters kept returning to a hazard that outsiders were inclined to ______ the flour dust suspended in a mill's air is explosive, and a stray spark could — as it famously did in Minneapolis in 1878 — level an entire mill in seconds.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "overlooked:"
+      "text": "dismiss:"
     },
     {
       "id": "B",
-      "text": "overlooked"
+      "text": "dismiss"
     },
     {
       "id": "C",
-      "text": "overlooked,"
+      "text": "dismiss,"
     },
     {
       "id": "D",
-      "text": "overlooked;"
+      "text": "dismiss;"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"overlooked:\". The first part of the sentence is a complete clause that announces an overlooked \"feature,\" and the part after the blank then specifies what that feature is. A colon is the mark that introduces such a specification after a complete statement. Choice B supplies no punctuation, fusing the two parts into a run-on. Choice C, a comma, is too weak to introduce the explanatory clause and creates a comma splice. Choice D, a semicolon, would simply link two independent statements as equals rather than presenting the second as the promised explanation of the first."
+  "explanation": "**Choice A is correct.** The first clause promises a specification — a hazard outsiders dismissed — and what follows delivers it. A colon after the independent opening clause is the mark that introduces that explanation.\n\n**The Full Solution:**\n- The clause before the blank is independent and ends on a noun phrase (\"a hazard that outsiders were inclined to dismiss\") that begs to be spelled out.\n- Everything after the blank is the spelling-out: what the hazard is (explosive dust) and what it could do.\n- An independent clause followed by its own elaboration takes a colon.\n\n**Why the other choices are wrong:**\n- B: With nothing at the boundary, two complete clauses fuse into a run-on.\n- C: A comma between the two independent clauses is a comma splice.\n- D: A semicolon merely coordinates two related statements; it fails to signal that the second clause is the promised content of the first — the announcing relationship the sentence is built on."
 }

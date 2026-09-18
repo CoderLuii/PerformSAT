@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "A laboratory models its daily assay throughput, in completed assays, by $Q(x) = -2x^2 + kx + 90$, where $x$ is the centrifuge speed setting and $k$ is a constant. The modeled throughput is greatest when $x = 9$. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-36$"
+    },
+    {
+      "id": "B",
+      "text": "$-18$"
+    },
+    {
+      "id": "C",
+      "text": "$18$"
+    },
+    {
+      "id": "D",
+      "text": "$36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses x = k / (2a) with a = -2, giving 9 = k / -4 and k = -36, dropping the minus in the formula",
+    "B": "uses x = -k / 2, ignoring the leading coefficient, which gives k = -18",
+    "C": "uses x = -k / a instead of x = -k / (2a), which gives k = 18"
+  },
+  "correctAnswer": "D",
+  "hint": "The peak of a parabola sits at the axis of symmetry.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~20s):** The peak is at $x = -\\frac{k}{2(-2)} = \\frac{k}{4}$, so $\\frac{k}{4} = 9$ and $k = 36$.\n\n**The Full Solution:**\nStep 1: Locate the peak. For $Q(x) = ax^2 + bx + c$ the turning point sits at $x = -\\frac{b}{2a}$; here $a = -2$ and $b = k$, so $x = -\\frac{k}{-4} = \\frac{k}{4}$.\nStep 2: Set that equal to the given setting. $\\frac{k}{4} = 9$, so $k = 36$.\nStep 3: Check. $Q(x) = -2x^2 + 36x + 90$ peaks at $x = -\\frac{36}{-4} = 9$, and $Q(9) = -162 + 324 + 90 = 252$, higher than $Q(8) = 250$ and $Q(10) = 250$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-36$): uses $x = \\frac{k}{2a}$ and drops the minus sign in front of $b$.\n* Choice B ($-18$): uses $x = -\\frac{k}{2}$, leaving the leading coefficient out of the denominator.\n* Choice C ($18$): uses $x = -\\frac{k}{a}$, missing the factor of $2$ in $2a$.\n\n**Test Day Takeaway:** The axis of symmetry is $x = -\\frac{b}{2a}$. Both the minus sign and the $2$ matter, and a negative $a$ makes sign slips especially easy."
+}

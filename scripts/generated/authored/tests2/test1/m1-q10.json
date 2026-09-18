@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "A machinist marks two positions on a number line, one at $x = -3$ and one at $x = 15$, and both positions satisfy the equation $|2x - c| = 18$ for a single constant $c$. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-24$"
+  },
+  {
+   "id": "B",
+   "text": "$-12$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "pairs the position at -3 with the positive case, solving 2(-3) - c = 18 to get -24",
+  "B": "reverses the subtraction at the last step, computing 18 - 30 instead of 30 - 18",
+  "D": "pairs the position at 15 with the negative case, solving 2(15) - c = -18 to get 48"
+ },
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The two positions are $18$ apart in the expression $2x$, so use the larger one: $2(15) - c = 18$ gives $c = 12$.\n\n**The Full Solution:**\nStep 1: The equation $|2x - c| = 18$ splits into $2x - c = 18$ and $2x - c = -18$. Since $2x$ grows as $x$ grows, the larger position goes with the positive case.\nStep 2: Substitute $x = 15$ into the positive case: $2(15) - c = 18$, so $30 - c = 18$ and $c = 12$.\nStep 3: Confirm with the other position: $2(-3) - 12 = -6 - 12 = -18$, and $|-18| = 18$, so both marks satisfy the equation ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-24$): pairs the position at $-3$ with the positive case, solving $-6 - c = 18$. Testing it at $x = 15$ gives $|30 + 24| = 54$, not $18$.\n* Choice B ($-12$): reverses the final subtraction, computing $18 - 30$ instead of $30 - 18$.\n* Choice D ($48$): pairs the position at $15$ with the negative case, solving $30 - c = -18$. Testing it at $x = -3$ gives $|-6 - 48| = 54$, not $18$.\n\n**Test Day Takeaway:** With a constant hidden inside absolute value bars, substitute one known solution, then verify the constant against the other solution — only one of the two cases will satisfy both."
+}

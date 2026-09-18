@@ -1,0 +1,25 @@
+{
+  "id": "bank-alg-088",
+  "question": "The table gives the temperature $T$, in degrees Celsius, of a metal rod at two times $t$, in minutes, after the rod was removed from a furnace. If $T$ is a linear function of $t$, what is the temperature of the rod, in degrees Celsius, at $t = 16$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Time (minutes)",
+        "Temperature (°C)"
+      ],
+      "rows": [
+        [
+          "4",
+          "62"
+        ],
+        [
+          "10",
+          "47"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "32",
+  "explanation": "**SAT Pattern: Linear Extrapolation**\n\n**The correct answer is $32$.**\n\n**The Fast Way (~15s):** The rod loses $62 - 47 = 15$ degrees over $6$ minutes, a rate of $-2.5$ degrees per minute. From $t = 10$ to $t = 16$ is another $6$ minutes, so $T = 47 - 15 = 32$.\n\n**The Full Solution:**\nStep 1: Rate of change from the two rows: $\\frac{47 - 62}{10 - 4} = \\frac{-15}{6} = -2.5$ degrees per minute.\nStep 2: Extend from the later row: $t = 16$ is $6$ minutes after $t = 10$, so the temperature changes by $-2.5 \\cdot 6 = -15$.\nStep 3: $T(16) = 47 - 15 = 32$. Check via the full model: $T(t) = 62 - 2.5(t - 4)$, so $T(16) = 62 - 2.5(12) = 62 - 30 = 32$. $\\checkmark$\n\n**Common Mistakes:** Treating $62$ as the temperature at $t = 0$ and computing $62 - 2.5(16) = 22$; adding instead of subtracting to get $47 + 15 = 62$; dividing $15$ by $16$ instead of by the $6$-minute gap.\n\n**Test Day Takeaway:** Find the rate from the two given points, then step from the nearest known point by the exact time gap, keeping the sign of the rate."
+}

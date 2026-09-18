@@ -41,3 +41,31 @@ export function clearPendingPromoCode() {
     /* ignore */
   }
 }
+
+// A code that FAILED background redemption right after signup. Without this,
+// the failure was log-only: the student typed a code in the funnel, was told
+// "full access free, no card required", then landed on the paywall with no
+// explanation and the code silently gone. The paywall reads this once and
+// prefills its promo form so the student can see what happened and retry.
+const FAILED_PROMO_KEY = 'seva:failedPromoCode';
+
+/** Record a code whose background redeem failed, for the paywall to surface. */
+export function markPendingPromoFailed(code) {
+  try {
+    const c = String(code || '').trim();
+    if (c) window.sessionStorage.setItem(FAILED_PROMO_KEY, c);
+  } catch {
+    /* ignore */
+  }
+}
+
+/** One-shot read of the failed code (clears on read), or null. */
+export function takeFailedPromoCode() {
+  try {
+    const c = window.sessionStorage.getItem(FAILED_PROMO_KEY);
+    window.sessionStorage.removeItem(FAILED_PROMO_KEY);
+    return c && c.trim() ? c.trim() : null;
+  } catch {
+    return null;
+  }
+}

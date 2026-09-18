@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-072",
+  "question": "A photocopier produces $45$ copies per minute. At this rate, how many copies does the photocopier produce in $12$ minutes?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3.75$"
+    },
+    {
+      "id": "B",
+      "text": "$57$"
+    },
+    {
+      "id": "C",
+      "text": "$540$"
+    },
+    {
+      "id": "D",
+      "text": "$5{,}400$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the rate by the time (45/12)",
+    "B": "adds 45 + 12",
+    "D": "factor-of-10 slip (as if 120 minutes)"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Rate × Time**\n\n**Choice C is correct.**\n\n**The Fast Way (~5s):** $45 \\times 12 = 540$ copies.\n\n**The Full Solution:**\nStep 1: A rate in copies per minute times a number of minutes gives copies: $\\frac{45 \\text{ copies}}{1 \\text{ min}} \\times 12 \\text{ min}$.\nStep 2: $45 \\times 12 = 45 \\times 10 + 45 \\times 2 = 450 + 90 = 540$.\nStep 3: Check the units: minutes cancel, leaving copies, and $\\frac{540}{12} = 45$ recovers the rate. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3.75$): divides the rate by the time, $\\frac{45}{12}$, which produces a meaningless unit.\n* Choice B ($57$): adds $45 + 12$ instead of multiplying.\n* Choice D ($5{,}400$): a factor-of-$10$ slip, as if the copier ran for $120$ minutes.\n\n**Test Day Takeaway:** Rate $\\times$ time $=$ amount; let the units cancel to confirm you multiplied the right way."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A community solar array produced $5{,}500$ megawatt-hours of electricity in 2025, which was $25\\%$ greater than the amount it produced in 2024. How many megawatt-hours did the array produce in 2024?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1{,}375$"
+  },
+  {
+   "id": "B",
+   "text": "$4{,}125$"
+  },
+  {
+   "id": "C",
+   "text": "$4{,}400$"
+  },
+  {
+   "id": "D",
+   "text": "$6{,}875$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes 25% of 5,500 (0.25 x 5,500 = 1,375) instead of reversing the increase",
+  "B": "subtracts 25% of the 2025 output: 5,500 - 1,375 = 4,125",
+  "D": "increases 5,500 by 25% instead of undoing the increase: 1.25 x 5,500 = 6,875"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Percent Increase**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The 2025 figure is $1.25$ times the 2024 figure, so $5{,}500 \\div 1.25 = 4{,}400$.\n\n**The Full Solution:**\nStep 1: Let $P$ be the 2024 output. A $25\\%$ increase multiplies $P$ by $1 + 0.25 = 1.25$, so $1.25P = 5{,}500$.\nStep 2: Divide both sides by $1.25$: $P = \\frac{5{,}500}{1.25} = 4{,}400$.\nStep 3: Check by increasing $4{,}400$ by $25\\%$: $25\\%$ of $4{,}400$ is $1{,}100$, and $4{,}400 + 1{,}100 = 5{,}500$, which matches the 2025 output.\n\n**Why the wrong answers are tempting:**\n* Choice A ($1{,}375$): computes $0.25(5{,}500) = 1{,}375$, the size of a $25\\%$ slice of the 2025 output. That is neither year's production.\n* Choice B ($4{,}125$): subtracts $25\\%$ of the LARGER number, $5{,}500 - 1{,}375 = 4{,}125$. Percent increases are computed from the original, so removing $25\\%$ of the new value overshoots the reduction.\n* Choice D ($6{,}875$): multiplies by $1.25$ instead of dividing, giving $6{,}875$. That is what 2026 would be if the array grew another $25\\%$, not what 2024 was.\n\n**Test Day Takeaway:** A percent increase runs forward by multiplying by $1 + r$; running it backward means dividing by $1 + r$. Subtracting the same percent from the new value is the classic trap and always lands short."
+}

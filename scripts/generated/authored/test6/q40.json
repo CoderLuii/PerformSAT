@@ -6,46 +6,34 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
-  "passage": "Surveys conducted by the Pew Research Center across the past decade have tracked U.S. adults' use of major social media platforms at multiple points in time. A research team analyzing those surveys has argued that not every platform's growth pattern across this period was the same: in particular, although several platforms recorded steady increases in adoption between 2012 and 2021, Facebook stands out for showing a sharp jump in the first half of the decade and only marginal change in the second half. The data shown in the table support the team's specific characterization of Facebook because _______",
+  "passage": "Scheduled airline service reaches more than three thousand airports worldwide, from sprawling international hubs to single-runway regional fields. Analysts reviewing annual traffic statistics have argued that passenger travel is far more concentrated than the network's size suggests: a small group of hub airports, they claim, absorbs a share of total boardings wildly out of proportion to its numbers.",
   "questionTable": {
     "type": "table",
-    "caption": "Percentage of U.S. adults who use selected social media platforms (Pew Research Center)",
+    "caption": "Passenger boardings at airports with scheduled airline service in selected years",
     "headers": [
-      "Platform",
-      "2012",
-      "2016",
-      "2021"
+      "Year",
+      "Total boardings (billions)",
+      "Boardings at the 25 busiest airports (billions)",
+      "Share received by the 25 busiest airports"
     ],
     "rows": [
       [
-        "Facebook",
-        "54%",
-        "68%",
-        "69%"
+        "2015",
+        "3.5",
+        "1.1",
+        "31%"
       ],
       [
-        "Instagram",
-        "13%",
-        "28%",
-        "40%"
+        "2019",
+        "4.5",
+        "1.4",
+        "31%"
       ],
       [
-        "LinkedIn",
-        "20%",
-        "25%",
-        "28%"
-      ],
-      [
-        "Twitter",
-        "16%",
-        "21%",
-        "23%"
-      ],
-      [
-        "YouTube",
-        "—",
-        "73%",
-        "81%"
+        "2023",
+        "4.4",
+        "1.5",
+        "34%"
       ]
     ]
   },
@@ -53,21 +41,21 @@
   "choices": [
     {
       "id": "A",
-      "text": "Instagram use among U.S. adults rose from 13% in 2012 to 40% in 2021, more than tripling across the period."
+      "text": "Total passenger boardings across the world's airports rose from 3.5 billion in 2015 to 4.5 billion in 2019 before dipping slightly to 4.4 billion in 2023."
     },
     {
       "id": "B",
-      "text": "Among the platforms shown, YouTube reached the highest 2021 adoption rate, with 81% of U.S. adults reporting use."
+      "text": "The 25 busiest airports received 1.5 billion boardings in 2023, more than they received in either 2015 or 2019."
     },
     {
       "id": "C",
-      "text": "Facebook use among U.S. adults rose from 54% in 2012 to 68% in 2016, a fourteen-percentage-point increase, but moved only one further percentage point, to 69%, between 2016 and 2021."
+      "text": "In each year shown, the 25 busiest airports — a small fraction of the more than three thousand served — received about a third of all boardings."
     },
     {
       "id": "D",
-      "text": "Between 2012 and 2021, Facebook adoption among U.S. adults rose from 54% to 69%, an increase that was steady across the decade as a whole."
+      "text": "The number of airports with scheduled service grew steadily even as total boardings remained roughly stable."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The team's claim about Facebook has two parts that must both be matched: a sharp jump in the first half of the decade and only marginal change in the second. Choice C supplies both, citing the 54-to-68 percent rise from 2012 to 2016 and the move of just one point, to 69 percent, from 2016 to 2021. Choice A reports Instagram's growth, a different platform than the claim is about. Choice B cites YouTube's high 2021 figure, again a different platform and only a single number. Choice D has the right platform and overall range but calls the increase \"steady across the decade,\" which contradicts both the claim and the data, since the first-half gain dwarfs the second-half gain."
+  "explanation": "**Choice C is correct.** The claim is about disproportion — a few hubs taking a share \"wildly out of proportion to its numbers\" — and C exhibits the disproportion directly: 25 airports out of more than three thousand drawing about a third of all boardings, in every year shown.\n\n**The Full Solution:**\n- Supporting a concentration claim requires relating the small group's size to its share.\n- C does both: it counts the group against the whole network and cites the 31-34% shares across all three years, showing the pattern is persistent rather than a one-year quirk.\n\n**Why the other choices are wrong:**\n- A: The trajectory of total boardings says nothing about how those boardings are distributed among airports.\n- B: The top airports' raw counts, without the network totals, cannot show a disproportionate share.\n- D: The table contains no counts of airports over time, so this statement cannot be drawn from it — and network growth is not the claim at issue."
 }

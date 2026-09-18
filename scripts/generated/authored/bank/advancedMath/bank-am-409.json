@@ -1,0 +1,6 @@
+{
+  "question": "The daily energy cost, in dollars, of running a mixer at setting $x$ is modeled by $C(x)=2x^{2}-16x+35$. The horizontal line $y=k$ meets the graph of $y=C(x)$ at exactly one point. What is the value of $k$?",
+  "correctAnswer": "3",
+  "explanation": "**SAT Pattern: Discriminant Equals Zero (System of Quadratic and Horizontal Line)**\n\n**The correct answer is $3$.**\n\n**The Fast Way (~25s):** One intersection means the line passes through the vertex, and $C(x)=2(x-4)^{2}+3$, so $k=3$.\n\n**The Full Solution:**\nStep 1: Setting $C(x)=k$ gives $2x^{2}-16x+35-k=0$, which must have exactly one real solution.\nStep 2: Its discriminant must be $0$: $(-16)^{2}-4(2)(35-k)=256-280+8k=8k-24=0$.\nStep 3: So $k=3$. Check: $2x^{2}-16x+32=2(x-4)^{2}=0$ has the single solution $x=4$ ✓\n\n**Common Mistakes:**\n* $35$: used the constant term of $C(x)$, which is $C(0)$, not the minimum.\n* $4$: reported the setting $x=4$ at which the single intersection occurs.\n* $-3$: solved $8k+24=0$, mishandling the sign when distributing $-4(2)(35-k)$.\n\n**Test Day Takeaway:** A horizontal line meets a parabola once only at the vertex — either complete the square or set the discriminant to $0$.",
+  "id": "bank-am-409"
+}

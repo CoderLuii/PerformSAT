@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-147",
+ "question": "A sidewalk project builds $r$ curb ramps and $s$ concrete slabs, where $s = 3r$ and $r + s = 48$. How many concrete slabs are built?",
+ "correctAnswer": "36",
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**The correct answer is $36$.**\n\n**The Fast Way (~15s):** Replacing $s$ with $3r$ gives $4r = 48$, so $r = 12$ and $s = 3(12) = 36$.\n\n**The Full Solution:**\nStep 1: The first equation already isolates $s$, so substitute $3r$ for $s$ in the second equation: $r + 3r = 48$.\nStep 2: Combine like terms and divide: $4r = 48$, so $r = 12$.\nStep 3: Return to $s = 3r$ to get the requested count: $s = 3(12) = 36$. Check: $12 + 36 = 48$ and $36 = 3(12)$. $\\checkmark$\n\n**Common Mistakes:** Reporting $12$, the ramp count, instead of the slab count; solving $3r = 48$ and reporting $16$; splitting $48$ evenly into $24$ and $24$ as if the two counts were equal.\n\n**Test Day Takeaway:** Substitute the isolated variable, solve for the other one, and then take the extra step back to whichever quantity the question names."
+}

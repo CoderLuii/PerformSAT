@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-406",
+ "question": "A drill log meets a basalt contact at two depths, in meters, that are the solutions of $x^2 - 16x + k = 0$ for some constant $k$, and one of those depths is triple the other. What is the greater of the two depths, in meters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the shallower depth",
+  "B": "halves the sum, treating the two depths as equal",
+  "D": "reports the constant k, which is the product of the depths"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vieta Sum & Product of Roots**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The depths sum to $16$, so writing them as $r$ and $3r$ gives $4r = 16$, $r = 4$, and the greater depth is $12$.\n\n**The Full Solution:**\nStep 1: For $x^2 - 16x + k = 0$, the two solutions add to $-\\frac{-16}{1} = 16$.\nStep 2: Name the shallower depth $r$; the other is $3r$, so $r + 3r = 16$, which gives $4r = 16$ and $r = 4$.\nStep 3: The greater depth is $3r = 12$ meters. Check: $4 + 12 = 16$ and $4 \\times 12 = 48$, so $k = 48$ and $x^2 - 16x + 48 = (x - 4)(x - 12)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reports the shallower depth instead of the greater one.\n* Choice B ($8$): halves the sum, which would be right only if the two depths were equal.\n* Choice D ($48$): reports $k$, the product of the two depths, rather than a depth.\n\n**Test Day Takeaway:** When roots are in a stated ratio, name them $r$ and $mr$ and feed that into the sum $-\\frac{b}{a}$ before touching the product."
+}

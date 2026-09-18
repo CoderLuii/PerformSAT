@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-339",
+  "question": "To estimate the percentage of households in a county that own a bicycle, a random sample of $400$ households was selected, and the estimate had an associated margin of error of $4.8$ percentage points. The study was repeated with a new random sample of $1{,}600$ households from the same county, using the same methods. Which of the following is closest to the margin of error associated with the new estimate?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1.2$ percentage points"
+    },
+    {
+      "id": "B",
+      "text": "$2.4$ percentage points"
+    },
+    {
+      "id": "C",
+      "text": "$4.8$ percentage points"
+    },
+    {
+      "id": "D",
+      "text": "$19.2$ percentage points"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the margin of error by $4$, the sample-size factor, instead of by $\\sqrt{4} = 2$.",
+    "C": "assumes a larger sample leaves the margin of error unchanged.",
+    "D": "multiplies by $4$, making the margin of error grow when the sample grows."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sample Size for Margin Reduction**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The sample size is multiplied by $4$, and the margin of error scales with $\\frac{1}{\\sqrt{n}}$, so it is divided by $\\sqrt{4} = 2$: $\\frac{4.8}{2} = 2.4$.\n\n**The Full Solution:**\nStep 1: With the same methods and population, the margin of error is inversely proportional to $\\sqrt{n}$.\nStep 2: The sample size goes from $400$ to $1{,}600$, a factor of $\\frac{1{,}600}{400} = 4$, so $\\sqrt{n}$ grows by a factor of $2$.\nStep 3: The margin of error is therefore about $\\frac{4.8}{2} = 2.4$ percentage points. Check: to halve a margin of error you need four times the sample, which is exactly the change described. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.2$): divides the margin of error by $4$, the sample-size factor, instead of by $\\sqrt{4} = 2$.\n* Choice C ($4.8$): assumes a larger sample leaves the margin of error unchanged.\n* Choice D ($19.2$): multiplies by $4$, making the margin of error grow when the sample grows.\n\n**Test Day Takeaway:** Margin of error shrinks with the square root of the sample size: four times the data cuts it in half, nine times the data cuts it to a third."
+}

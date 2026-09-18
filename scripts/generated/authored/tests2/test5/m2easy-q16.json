@@ -1,0 +1,33 @@
+{
+ "id": 16,
+ "question": "The bar chart gives the total data transferred, in terabytes, by a data center in each of four quarters of one year. What was the percent decrease in data transferred from quarter 2 to quarter 3?",
+ "diagram": {
+  "type": "barChart",
+  "params": {
+   "data": [
+    {
+     "label": "Q1",
+     "value": 240
+    },
+    {
+     "label": "Q2",
+     "value": 300
+    },
+    {
+     "label": "Q3",
+     "value": 180
+    },
+    {
+     "label": "Q4",
+     "value": 210
+    }
+   ],
+   "xAxisLabel": "Quarter",
+   "yAxisLabel": "Data transferred (TB)",
+   "yMax": 330,
+   "yStep": 30
+  }
+ },
+ "correctAnswer": "40",
+ "explanation": "**SAT Pattern: Percent Decrease**\n\n**The correct answer is $40$.**\n\n**The Fast Way (~20s):** The drop is $300 - 180 = 120$, and $\\frac{120}{300} = 0.4$, or $40\\%$.\n\n**The Full Solution:**\nStep 1: Read the two bars: quarter 2 is $300$ terabytes and quarter 3 is $180$ terabytes.\nStep 2: The decrease is $300 - 180 = 120$ terabytes.\nStep 3: Percent decrease divides the change by the original amount: $\\frac{120}{300} = 0.4 = 40\\%$; check: $300$ reduced by $40\\%$ is $300 - 0.4(300) = 180$ ✓\n\n**Common Mistakes:**\n* Dividing by the new value gives $\\frac{120}{180} \\approx 66.7$, which answers how much quarter 3 would have to grow to reach quarter 2.\n* Reporting the share that remains gives $\\frac{180}{300} = 60$, the percent kept rather than the percent lost.\n* Reporting the raw drop gives $120$, a count of terabytes rather than a percent.\n\n**Test Day Takeaway:** Percent change always divides by the starting value — the quantity you are moving away from, never the one you land on."
+}

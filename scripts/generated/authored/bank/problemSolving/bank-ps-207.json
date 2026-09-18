@@ -1,0 +1,52 @@
+{
+  "id": "bank-ps-207",
+  "question": "The table gives the number of birds observed at a monitoring station for three species. Observations of a fourth species, thrush, are not shown. If one observation from the station is selected at random, the probability of selecting a thrush observation is $0.32$. How many observations were recorded at the station in all?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Species",
+        "Observations"
+      ],
+      "rows": [
+        [
+          "Warbler",
+          "186"
+        ],
+        [
+          "Sparrow",
+          "142"
+        ],
+        [
+          "Finch",
+          "97"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$136$"
+    },
+    {
+      "id": "B",
+      "text": "$200$"
+    },
+    {
+      "id": "C",
+      "text": "$425$"
+    },
+    {
+      "id": "D",
+      "text": "$625$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "computes 0.32 x 425, applying the probability to the listed species",
+    "B": "reports the thrush count and stops before finding the total",
+    "C": "reports the observations of the three listed species only"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** The three listed species account for $425$ observations, which must be $68\\%$ of the total, so the total is $\\frac{425}{0.68} = 625$.\n\n**The Full Solution:**\nStep 1: Add the listed species: $186 + 142 + 97 = 425$ observations.\nStep 2: Thrush observations are $32\\%$ of the total, so the three listed species make up $100\\% - 32\\% = 68\\%$ of it. Let $n$ be the total: $0.68n = 425$.\nStep 3: Solve: $n = \\frac{425}{0.68} = 625$. Check: the thrush count is $625 - 425 = 200$, and $\\frac{200}{625} = 0.32$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($136$): computes $0.32 \\times 425$, applying the probability to the three listed species instead of to the whole set of observations.\n* Choice B ($200$): this is the number of thrush observations, one step short of the total the question asks for.\n* Choice C ($425$): counts only the three species shown in the table.\n\n**Test Day Takeaway:** When one category is missing, work with its complement: the listed part is $1$ minus the missing probability, and dividing the part by that fraction returns the whole."
+}

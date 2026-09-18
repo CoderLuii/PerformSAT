@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-319",
+  "question": "A two-layer embankment has cross-sectional area $(4x^2 + bx - 9) + (cx^2 - 5x + 2)$ square meters at station $x$, and that area equals $10x^2 + 3x - 7$ square meters at every station, where $b$ and $c$ are constants. What is the value of $bc$?",
+  "correctAnswer": "48",
+  "explanation": "**SAT Pattern: Combining Like Terms**\n\n**The correct answer is $48$.**\n\n**The Fast Way (~35s):** Matching $x^2$-terms gives $4 + c = 10$, so $c = 6$; matching $x$-terms gives $b - 5 = 3$, so $b = 8$, and $bc = 48$.\n\n**The Full Solution:**\nStep 1: Combine the two groups: $(4 + c)x^2 + (b - 5)x + (-9 + 2)$, which simplifies to $(4 + c)x^2 + (b - 5)x - 7$.\nStep 2: Because the areas agree at every station, matching coefficients gives $4 + c = 10$ and $b - 5 = 3$, so $c = 6$ and $b = 8$.\nStep 3: Then $bc = 8 \\times 6 = 48$. Check: $(4x^2 + 8x - 9) + (6x^2 - 5x + 2) = 10x^2 + 3x - 7$ ✓\n\n**Common Mistakes:** Answering $14$ reports $b + c$ instead of $bc$; answering $-12$ solves $b - 5 = 3$ as $b = 3 - 5 = -2$; answering $6$ or $8$ stops at one constant instead of multiplying the two.\n\n**Test Day Takeaway:** Equal polynomials match power by power, so each power gives its own small equation — solve them all before combining the constants."
+}

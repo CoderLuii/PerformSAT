@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-179",
+ "question": "A conveyor belt in a textile mill runs along the line $y=2x+c$ and just grazes a circular drum modeled by $x^2+y^2=20$, with units in meters. If $c>0$, what is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2\\sqrt{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the drum's radius sqrt(20) = 2 sqrt(5) as the intercept",
+  "B": "divides the correct intercept by the slope 2",
+  "D": "uses r^2 = 20 in place of the radius when scaling"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Tangent Line to Circle (Discriminant = 0)**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Substituting gives $5x^2+4cx+c^2-20=0$; tangency forces the discriminant to zero, $16c^2-20(c^2-20)=0$, so $c^2=100$ and $c=10$.\n\n**The Full Solution:**\n\nStep 1 — Substitute $y=2x+c$ into $x^2+y^2=20$: $x^2+(2x+c)^2=20$, which expands to $5x^2+4cx+c^2-20=0$.\n\nStep 2 — One intersection point means one solution, so the discriminant is zero: $(4c)^2-4(5)(c^2-20)=16c^2-20c^2+400=-4c^2+400=0$.\n\nStep 3 — Solve: $c^2=100$, so $c=10$ since $c>0$. Check: with $c=10$ the equation becomes $5x^2+40x+80=0$, or $5(x+4)^2=0$, whose only root is $x=-4$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2\\sqrt{5}$): this is the drum's radius $\\sqrt{20}$, not the intercept of the tangent line.\n* Choice B ($5$): this divides the correct intercept by the slope $2$.\n* Choice D ($20$): this uses $r^2=20$ where the radius itself belongs.\n\n**Test Day Takeaway:** Substitute, collect into one quadratic, and set the discriminant to zero — tangency always means exactly one root."
+}

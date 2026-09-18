@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "A clinic computes an antibiotic dose in milligrams as $d = 7w + 15$, where $w$ is a patient's mass in kilograms. Which expression gives the dose for a patient whose mass is $4$ kilograms greater than $w$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7w + 19$"
+  },
+  {
+   "id": "B",
+   "text": "$7w + 28$"
+  },
+  {
+   "id": "C",
+   "text": "$7w + 43$"
+  },
+  {
+   "id": "D",
+   "text": "$7w + 60$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 4 to the constant term instead of to the mass, giving 15 + 4 = 19",
+  "B": "replaces the constant with 7(4) = 28 and drops the original 15",
+  "D": "multiplies the constant by 4 instead of adding 4 to the mass, giving 15(4) = 60"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Substitute $w + 4$ for $w$: $7(w + 4) + 15 = 7w + 28 + 15 = 7w + 43$.\n\n**The Full Solution:**\nStep 1: The rule takes a mass and returns a dose, so a patient $4$ kilograms heavier has mass $w + 4$, and that whole quantity goes where $w$ goes.\nStep 2: $d = 7(w + 4) + 15$. Distribute the $7$ across both terms inside the parentheses: $7w + 28 + 15$.\nStep 3: Combine the constants: $7w + 43$. Check with $w = 10$: the original rule gives $7(10) + 15 = 85$, and a $14$-kilogram patient gets $7(14) + 15 = 113$, which matches $7(10) + 43 = 113$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7w + 19$): adds the $4$ to the constant term, $15 + 4 = 19$, but the extra mass enters the rule before the multiplication by $7$, not after.\n* Choice B ($7w + 28$): multiplies the $4$ by $7$ correctly but then drops the original $15$, which every dose still includes.\n* Choice D ($7w + 60$): multiplies the constant by $4$, giving $15(4) = 60$, treating the shift as a scaling of the whole rule.\n\n**Test Day Takeaway:** A shifted input goes inside the parentheses. Write $f(w + 4)$ first, then distribute — the coefficient multiplies the shift, so a $4$-unit increase in mass raises the dose by $7(4) = 28$."
+}

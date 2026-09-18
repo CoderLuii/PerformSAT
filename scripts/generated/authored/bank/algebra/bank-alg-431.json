@@ -1,0 +1,58 @@
+{
+  "id": "bank-alg-431",
+  "question": "Line $p$ is shown in the $xy$-plane. Which of the following equations defines a line that is parallel to line $p$ and has a $y$-intercept of $(0, 4)$?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 2,
+      "yIntercept": -1,
+      "xRange": [
+        -4,
+        4
+      ],
+      "yRange": [
+        -6,
+        8
+      ],
+      "xTickInterval": 1,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          0,
+          -1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "label": "p"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = -2x + 4$"
+    },
+    {
+      "id": "B",
+      "text": "$y = -\\frac{1}{2}x + 4$"
+    },
+    {
+      "id": "C",
+      "text": "$y = 2x - 1$"
+    },
+    {
+      "id": "D",
+      "text": "$y = 2x + 4$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "negates the slope; y = -2x + 4 is a reflection of the direction, not a parallel line, and it crosses line p.",
+    "B": "uses the negative reciprocal -\\frac{1}{2}, which is the slope of a perpendicular line.",
+    "C": "is the equation of line p itself; it has the right slope but the wrong y-intercept."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Parallel Line through a Point**\n\n**Choice D is correct.**\n\n**The Fast Way (~8s):** Line $p$ rises $4$ over a run of $2$, slope $2$. Parallel means slope $2$; intercept $4$ gives $y = 2x + 4$.\n\n**The Full Solution:**\nStep 1: Read two lattice points on line $p$: $(0, -1)$ and $(2, 3)$. Slope $= \\frac{3 - (-1)}{2 - 0} = \\frac{4}{2} = 2$.\nStep 2: Parallel lines have equal slopes, so the new line has slope $2$. Its $y$-intercept is given as $4$, so $y = 2x + 4$.\nStep 3: Check: the new line is not line $p$ (intercepts $4 \\neq -1$) and has the same slope, so it is parallel. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -2x + 4$): negates the slope; $y = -2x + 4$ is a reflection of the direction, not a parallel line, and it crosses line $p$.\n* Choice B ($y = -\\frac{1}{2}x + 4$): uses the negative reciprocal $-\\frac{1}{2}$, which is the slope of a perpendicular line.\n* Choice C ($y = 2x - 1$): is the equation of line $p$ itself; it has the right slope but the wrong $y$-intercept.\n\n**Test Day Takeaway:** Parallel means same slope, different intercept; read the slope from two grid points, then plug in the given intercept."
+}

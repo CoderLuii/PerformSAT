@@ -1,0 +1,50 @@
+{
+  "id": 3,
+  "question": "The figure shows two lines drawn in the $xy$-plane. If the ordered pair $(x, y)$ lies on both lines, what is the value of $x + y$?",
+  "diagram": {
+    "type": "twoLineGraph",
+    "params": {
+      "intersection": {
+        "x": 4,
+        "y": -2
+      },
+      "slope1": -1,
+      "slope2": 0.5,
+      "xRange": [
+        -6,
+        6
+      ],
+      "yRange": [
+        -6,
+        6
+      ],
+      "showIntersection": false
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-2$"
+    },
+    {
+      "id": "B",
+      "text": "$2$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the $y$-coordinate alone instead of the sum.",
+    "C": "reports the $x$-coordinate alone instead of the sum.",
+    "D": "computes $x - y$ instead of $x + y$, dropping the negative sign on $y$."
+  },
+  "correctAnswer": "B",
+  "hint": "Read both coordinates of the crossing point before combining them.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** The lines cross at $(4, -2)$, so $x + y = 4 + (-2) = 2$.\n\n**The Full Solution:**\nStep 1: A point lying on both lines must be their point of intersection.\nStep 2: The lines cross four units right of the vertical axis and two units below the horizontal axis, so $x = 4$ and $y = -2$.\nStep 3: Therefore $x + y = 4 + (-2) = 2$. Check: the lines shown are $y = -x + 2$ and $y = \\frac{1}{2}x - 4$, and both give $y = -2$ when $x = 4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): reports the $y$-coordinate alone instead of the sum.\n* Choice C ($4$): reports the $x$-coordinate alone instead of the sum.\n* Choice D ($6$): computes $x - y$ instead of $x + y$, dropping the negative sign on $y$.\n\n**Test Day Takeaway:** Read a graphed solution as a full ordered pair, then perform the arithmetic the question asks for. Watch signs below the horizontal axis."
+}

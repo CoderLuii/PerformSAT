@@ -1,43 +1,43 @@
 {
-  "id": 508,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "module": 1,
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "In 2016, the glaciologists Robert DeConto and David Pollard added a mechanism called marine ice-cliff instability to computer models of the Antarctic ice sheet. Where a floating ice shelf breaks up, it can leave behind a sheer cliff of glacier ice facing the ocean; above a certain height, such a cliff is too tall to support its own weight and collapses, exposing a new cliff just behind it. Once started, the process could feed on itself. With the mechanism included, the researchers' model reproduced the very high sea levels recorded in warm periods millions of years ago—and projected that Antarctica alone could add more than a meter to global sea level by 2100."
-    },
-    {
-      "label": "Text 2",
-      "text": "The glaciologist Tamsin Edwards and her colleagues revisited that conclusion. Retesting the model against the same ancient warm periods with methods that let many versions of it compete, they found that simulations without ice-cliff collapse matched the geological sea-level evidence about as well as simulations that included it. The ancient record, they argued, does not require the new mechanism—and since runaway cliff collapse has not been observed at any glacier today, projections that build it in should be treated as one possible future among several rather than as the most likely outcome."
-    }
-  ],
-  "question": "Based on the texts, how would Edwards and her colleagues (Text 2) most likely respond to the projection described in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "They would accept it as the most likely outcome for the coming century, on the grounds that runaway cliff collapse has already begun at several of Antarctica's largest glaciers."
-    },
-    {
-      "id": "B",
-      "text": "They would caution that the ancient sea-level evidence can be matched without cliff collapse, so a projection that depends on the mechanism describes a possibility rather than the most likely outcome."
-    },
-    {
-      "id": "C",
-      "text": "They would argue that it understates the danger, because the model leaves out other processes that are known to be accelerating the loss of ice from Antarctica."
-    },
-    {
-      "id": "D",
-      "text": "They would object that evidence about sea levels millions of years ago can have no bearing on how the Antarctic ice sheet is likely to behave over the coming century."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. When Edwards and her colleagues retested the model against sea levels from ancient warm periods, versions without ice-cliff collapse fit the evidence about as well as versions with it, and they note that the runaway process has not been observed at any present-day glacier. Their conclusion is that a projection built on the mechanism describes one possible future rather than the most likely one—exactly what choice B says. Choice A attributes to them an observation Text 2 explicitly says does not exist. Choice C has them faulting the projection for being too low, when their concern runs the other way: the mechanism's central place is not yet earned. Choice D goes further than they do—they treat the ancient record as informative; they simply deny that it forces the new mechanism into the models.",
-  "_meta": {
-    "anchor": "DeConto & Pollard (2016) vs Tamsin Edwards et al. (2019) — marine ice-cliff instability"
+ "id": 508,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "module": 1,
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "In 2014 and again in 2020, paleontologist Nizar Ibrahim and colleagues described new fossils of Spinosaurus, a sail-backed predator from Cretaceous rocks in Morocco. They pointed to unusually dense limb bones, nostrils set high on the skull, and a deep, flexible, paddle-like tail as evidence that Spinosaurus was a largely aquatic animal — a pursuit predator that propelled itself through deep river channels with strokes of its tail, running down fish in open water."
+  },
+  {
+   "label": "Text 2",
+   "text": "Paleontologists David Hone and Thomas Holtz have compared Spinosaurus's anatomy with that of living aquatic hunters. Its buoyant, air-filled trunk would have made submersion difficult, they observe, and biomechanical modeling suggests the celebrated tail generated too little thrust for effective underwater pursuit. Spinosaurus, they conclude, likely fed the way a giant heron does: wading in shallow water and seizing fish near the surface rather than chasing them beneath it."
   }
+ ],
+ "question": "Based on the texts, how would Hone and Holtz (Text 2) most likely respond to the account of Spinosaurus presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "They would deny that the Moroccan fossil remains described in Text 1 can provide any reliable information about how a predator like Spinosaurus obtained its food."
+  },
+  {
+   "id": "B",
+   "text": "They would accept that Spinosaurus took fish from rivers while rejecting the claim that it hunted by swimming down its prey in deep water."
+  },
+  {
+   "id": "C",
+   "text": "They would argue that Spinosaurus's tail was even better suited to underwater propulsion than Text 1 suggests."
+  },
+  {
+   "id": "D",
+   "text": "They would object that comparisons with living animals cannot illuminate the behavior of an extinct predator like Spinosaurus."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Hone and Holtz agree that Spinosaurus ate fish — their heron model has it \"seizing fish near the surface\" — but their anatomical and biomechanical objections target precisely the deep-water pursuit swimming that Text 1 proposes.\n\n**The Full Solution:**\n- Text 1's account has two parts: Spinosaurus fed on fish, and it did so as an aquatic pursuit predator swimming through deep channels.\n- Text 2 keeps the first part: the heron comparison is a fish-catching model, just executed by wading in shallows.\n- Text 2 attacks the second part on two grounds — a buoyant trunk that resisted submersion and a tail that modeling shows produced too little thrust for underwater pursuit.\n- Accepting the diet while rejecting the deep-water hunting method is exactly the response choice B describes.\n\n**Why the other choices are wrong:**\n- A: It overshoots — Hone and Holtz dispute the interpretation of the fossils, not the fossils' relevance; their own argument reasons from the animal's anatomy.\n- C: It reverses their position on the tail, which they argue generated too little thrust, not more.\n- D: It contradicts their own method — the heron comparison is itself an argument from a living animal.",
+ "_meta": {
+  "anchor": "Spinosaurus feeding-ecology debate — Ibrahim's aquatic pursuit model vs. Hone and Holtz's wading model"
+ }
 }

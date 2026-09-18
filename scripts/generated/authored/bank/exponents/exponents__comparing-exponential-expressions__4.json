@@ -1,0 +1,29 @@
+{
+ "question": "An observatory logs $2^{30}$ frames on one night and $4^{16}$ frames on another. Which statement correctly compares the two totals?",
+ "hint": "The bases $2$ and $4$ are not independent of each other.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2^{30}$ is greater than $4^{16}$."
+  },
+  {
+   "id": "B",
+   "text": "$4^{16}$ is twice as large as $2^{30}$."
+  },
+  {
+   "id": "C",
+   "text": "$4^{16}$ is four times as large as $2^{30}$."
+  },
+  {
+   "id": "D",
+   "text": "The two expressions are equal."
+  }
+ ],
+ "distractorNotes": {
+  "A": "compares the exponents 30 and 16 directly without matching bases",
+  "B": "reads the exponent gap 32 - 30 = 2 as the ratio",
+  "D": "assumes doubling the base exactly offsets halving the exponent"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** $4^{16} = 2^{32}$, and $2^{32} = 2^2 \\cdot 2^{30} = 4 \\cdot 2^{30}$.\n\n**The Full Solution:**\nStep 1: Write both with base $2$: $4 = 2^2$, so $4^{16} = (2^2)^{16} = 2^{32}$.\nStep 2: Compare $2^{32}$ with $2^{30}$ by dividing: $\\dfrac{2^{32}}{2^{30}} = 2^{2} = 4$.\nStep 3: So $4^{16}$ is four times $2^{30}$. Check: $2^{30} = 1{,}073{,}741{,}824$ and $4 \\times$ that is $4^{16}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: compares $30$ with $16$ directly, which is only valid when the bases match.\n* Choice B: reports the exponent gap $32 - 30 = 2$ as if it were the ratio.\n* Choice D: assumes squaring the base cancels halving the exponent, which would require $4^{15}$.\n\n**Test Day Takeaway:** Rewrite to a common base, then the exponents alone decide the comparison."
+}

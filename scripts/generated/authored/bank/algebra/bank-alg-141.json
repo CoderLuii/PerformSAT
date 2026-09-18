@@ -1,0 +1,33 @@
+{
+  "id": "bank-alg-141",
+  "question": "The table gives the estimated volume $V$, in cubic meters, of water in a reservoir $d$ days after a spillway was opened. The relationship between $d$ and $V$ is linear. By how many cubic meters does the volume of water decrease each day?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "d",
+        "V"
+      ],
+      "rows": [
+        [
+          "0",
+          "9,000"
+        ],
+        [
+          "2",
+          "8,300"
+        ],
+        [
+          "4",
+          "7,600"
+        ],
+        [
+          "6",
+          "6,900"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "350",
+  "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**The correct answer is $350$.**\n\n**The Fast Way (~8s):** Between consecutive rows, $d$ increases by $2$ and $V$ drops by $700$. Per day, that is $\\frac{700}{2} = 350$ cubic meters.\n\n**The Full Solution:**\nStep 1: Compute the slope from two rows: $\\frac{8{,}300 - 9{,}000}{2 - 0} = \\frac{-700}{2} = -350$ cubic meters per day.\nStep 2: Confirm with another pair: $\\frac{6{,}900 - 7{,}600}{6 - 4} = -350$, consistent with a linear relationship.\nStep 3: The slope's magnitude, $350$, is the daily decrease. Check: $9{,}000 - 350(6) = 6{,}900$, matching the last row. $\\checkmark$\n\n**Common Mistakes:** Entering $700$ (the drop between rows, which spans $2$ days, not $1$); entering $-350$ (the question asks by how much the volume decreases, a positive amount); entering $2{,}100$ (the total drop over $6$ days).\n\n**Test Day Takeaway:** Rate per day means slope with $\\Delta d = 1$. When a table's rows are spaced by more than one unit, divide the change in the output by the actual spacing."
+}

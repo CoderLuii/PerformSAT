@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "inferences",
  "module": 1,
- "passage": "Each year, snow that falls on a polar ice sheet is buried and compressed by the snow above it, eventually trapping small bubbles of air. Because deeper ice is older, a core drilled through an ice sheet preserves a layered archive of the atmosphere, and the trapped bubbles let researchers measure the concentration of gases such as carbon dioxide directly for hundreds of thousands of years into the past. The air in a bubble, however, is always somewhat younger than the ice enclosing it, because the snow does not seal completely until it has been buried for decades. It follows that a researcher comparing the age of the ice with the age of the gas it contains must ______",
+ "passage": "The war crimes trials held at Nuremberg after the Second World War were conducted in four languages at once: English, French, Russian, and German. Under the consecutive method then standard in courtrooms, each statement would have been delivered and then rendered into the other three languages in turn, with the court idle through every rendering. The tribunal instead adopted a largely untested arrangement in which interpreters, seated in glass booths, spoke their translations while the original speech was still under way, and the proceedings ran only slightly slower than a trial in a single language. Given the length of the sessions and the number of languages involved, it is reasonable to conclude that the consecutive method ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "assume that the trapped air and the surrounding ice formed during exactly the same year, despite the decades of burial that the passage describes."
+   "text": "would have yielded renderings more accurate than any that interpreters speaking in real time from glass booths could reasonably have been expected to produce."
   },
   {
    "id": "B",
-   "text": "conclude that ice cores cannot preserve any reliable record of past atmospheric gases."
+   "text": "was retained for routine sessions and set aside only when testimony was expected to be lengthy."
   },
   {
    "id": "C",
-   "text": "account for the gap between the two ages rather than treating the gas as exactly as old as the ice around it."
+   "text": "would have multiplied the proceedings' duration considerably, since the court would have sat idle through three successive renderings of every statement."
   },
   {
    "id": "D",
-   "text": "rely on the gas bubbles alone, since the surrounding ice carries no information about past climate."
+   "text": "had already been abandoned by most courts in the years before the tribunal convened."
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The passage states that the trapped air is always somewhat younger than the ice enclosing it, because snow does not seal completely until it has been buried for decades. A researcher comparing the age of the ice with the age of the gas must therefore allow for that offset rather than treat them as identical—exactly what Choice C says. Choice A assumes the very equality the passage rules out. Choice B overreacts, since the passage presents ice cores as a valuable archive despite the offset. Choice D discards the ice as uninformative, but the passage treats both ice and gas as carrying age information."
+ "explanation": "**Choice C is correct.** The passage supplies the arithmetic and asks for its consequence: with four languages, every statement would be followed by three renderings during which the court waited, so a consecutive trial would have run several times longer.\n\n**The Full Solution:**\n- The key premises: each statement gets rendered \"into the other three languages in turn,\" the court is \"idle through every rendering,\" and the simultaneous system ran \"only slightly slower than a trial in a single language.\"\n- If simultaneity is what kept the trial near single-language speed, then its absence, three waits per statement across long sessions, must have threatened a large multiplication of time. That is C.\n\n**Why the other choices are wrong:**\n- A: The passage compares the methods' speed, never their accuracy, so no conclusion about better renderings follows.\n- B: The text says the tribunal \"instead adopted\" the booth system, indicating replacement, not selective retention.\n- D: The consecutive method is described as \"then standard,\" which is incompatible with its having been already abandoned."
 }

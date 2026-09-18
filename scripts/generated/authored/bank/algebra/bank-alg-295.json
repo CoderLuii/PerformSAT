@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-295",
+ "question": "A dredging plan accepts a channel depth $x$, in meters, exactly when that depth satisfies the equation $|3x - 21| = p$, where $p$ is a positive constant, and the two accepted depths differ by $9$ meters. What is the value of $p$?",
+ "correctAnswer": "13.5",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**The correct answer is $13.5$.**\n\n**The Fast Way (~35s):** The solutions are $\\frac{21 + p}{3}$ and $\\frac{21 - p}{3}$, whose difference is $\\frac{2p}{3}$; setting $\\frac{2p}{3} = 9$ gives $p = 13.5$.\n\n**The Full Solution:**\nStep 1: Split the equation: $3x - 21 = p$ gives $x = \\frac{21 + p}{3}$, and $3x - 21 = -p$ gives $x = \\frac{21 - p}{3}$.\nStep 2: Their difference is $\\frac{21 + p}{3} - \\frac{21 - p}{3} = \\frac{2p}{3}$.\nStep 3: Setting $\\frac{2p}{3} = 9$ gives $2p = 27$ and $p = 13.5$. Check: the depths are $\\frac{34.5}{3} = 11.5$ and $\\frac{7.5}{3} = 2.5$ meters, and $11.5 - 2.5 = 9$ ✓\n\n**Common Mistakes:** Answering $9$ treats the gap between the depths as $p$ itself; answering $4.5$ halves the gap without dividing by the coefficient $3$; answering $27$ stops at $2p$.\n\n**Test Day Takeaway:** For $|cx - k| = p$ the two solutions are always $\\frac{2p}{c}$ apart — the coefficient $c$ shrinks the gap, and $k$ never affects it."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-318",
+ "question": "A pipeline-inspection routine must replace the radical equation $\\sqrt{x+5}=x-1$ with a polynomial equation whose solutions include every solution of the original. Which of the following equations has that property?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x+5=x^{2}-2x+1$"
+  },
+  {
+   "id": "B",
+   "text": "$x+5=x^{2}-1$"
+  },
+  {
+   "id": "C",
+   "text": "$x+5=x^{2}+1$"
+  },
+  {
+   "id": "D",
+   "text": "$x^{2}+5=x^{2}-2x+1$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "expands (x - 1) squared as a difference of squares, giving x squared minus 1",
+  "C": "squares x and -1 separately, giving x squared plus 1 and dropping the -2x term",
+  "D": "squares only the x inside the radical, leaving x squared plus 5 on the left"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Squaring both sides replaces the left side by $x+5$ and the right side by $(x-1)^{2}=x^{2}-2x+1$.\n\n**The Full Solution:**\n\nStep 1: If a number satisfies $\\sqrt{x+5}=x-1$, then the squares of the two sides are equal as well.\n\nStep 2: The left side squares to $x+5$, because $\\left(\\sqrt{x+5}\\right)^{2}=x+5$ whenever the radicand is nonnegative.\n\nStep 3: The right side squares to $(x-1)^{2}=x^{2}-2x+1$, so every solution satisfies $x+5=x^{2}-2x+1$. Check: that equation is $x^{2}-3x-4=0$, with solutions $4$ and $-1$; $x=4$ satisfies the original equation, and the polynomial equation does contain it.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: expands $(x-1)^{2}$ as $x^{2}-1$, a difference-of-squares pattern that does not apply.\n* Choice C: squares $x$ and $-1$ separately and loses the $-2x$ cross term.\n* Choice D: squares only the $x$ inside the radical instead of the whole radicand.\n\n**Test Day Takeaway:** Squaring acts on each entire side, so a binomial side must be expanded with the cross term intact."
+}

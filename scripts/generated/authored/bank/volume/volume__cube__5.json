@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "Cube $A$ has a volume of $1{,}000$ cubic centimeters. Cube $B$ has a surface area that is $9$ times the surface area of cube $A$. What is the volume, in cubic centimeters, of cube $B$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3{,}000$"
+  },
+  {
+   "id": "B",
+   "text": "$9{,}000$"
+  },
+  {
+   "id": "C",
+   "text": "$27{,}000$"
+  },
+  {
+   "id": "D",
+   "text": "$729{,}000$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies the volume by the edge ratio $3$",
+  "B": "multiplies the volume by the surface-area ratio",
+  "D": "cubes the surface-area ratio instead of the edge ratio"
+ },
+ "correctAnswer": "C",
+ "hint": "Areas compare by the square of the edge ratio and volumes by its cube.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~60s):** Surface areas in the ratio $9$ mean edges in the ratio $3$, so volumes are in the ratio $27$: $27{,}000$.\n\n**The Full Solution:**\nStep 1: Cube $A$ has edge $\\sqrt[3]{1000} = 10$ centimeters and surface area $6(10^2) = 600$ square centimeters.\nStep 2: Cube $B$ has surface area $9(600) = 5{,}400$, so $6s^2 = 5400$, $s^2 = 900$, and $s = 30$ centimeters.\nStep 3: $V = 30^3 = 27{,}000$ cubic centimeters.\n\nVerification: $\\frac{30}{10} = 3$ and $3^3 = 27$, so $27(1{,}000) = 27{,}000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3{,}000$): multiplies the volume by the edge ratio $3$.\n* Choice B ($9{,}000$): multiplies the volume by the surface-area ratio.\n* Choice D ($729{,}000$): cubes the surface-area ratio instead of the edge ratio.\n\n**Test Day Takeaway:** An area ratio squares the length ratio and a volume ratio cubes it — travel through the length ratio to connect them."
+}

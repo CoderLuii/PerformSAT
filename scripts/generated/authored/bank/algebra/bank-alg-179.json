@@ -1,0 +1,58 @@
+{
+ "id": "bank-alg-179",
+ "question": "The graph shows line $p$. A laser cutter's kerf crosses line $p$ at a right angle and runs through $(-3, 4)$. At what value of $x$ does the kerf's line reach the $x$-axis?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -0.5,
+   "yIntercept": 3,
+   "xRange": [
+    -6,
+    6
+   ],
+   "yRange": [
+    -4,
+    6
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "label": "p"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "computes $b$ as $y + mx = 4 + 2(-3) = -2$, giving $0 = 2x - 2$ and $x = 1$",
+  "C": "keeps line $p$'s slope $-\\frac{1}{2}$, giving $y = -\\frac{1}{2}x + \\frac{5}{2}$ and $x = 5$",
+  "D": "reports the kerf line's $y$-intercept instead of its $x$-intercept"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Line $p$ has slope $-\\frac{1}{2}$, so the kerf has slope $2$; $y = 2x + 10$ meets the $x$-axis at $x = -5$.\n\n**The Full Solution:**\nStep 1: Line $p$ passes through $(0, 3)$ and $(2, 2)$, so its slope is $\\frac{2 - 3}{2 - 0} = -\\frac{1}{2}$.\nStep 2: The kerf crosses at a right angle, so its slope is $2$; substituting $(-3, 4)$ gives $4 = -6 + b$ and $b = 10$.\nStep 3: Setting $y = 0$ in $y = 2x + 10$ gives $x = -5$. Check: $2(-5) + 10 = 0$, and $-\\frac{1}{2}(2) = -1$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($1$): computes $b$ as $y + mx = 4 + 2(-3) = -2$, giving $0 = 2x - 2$ and $x = 1$\n* Choice C ($5$): keeps line $p$'s slope $-\\frac{1}{2}$, giving $y = -\\frac{1}{2}x + \\frac{5}{2}$ and $x = 5$\n* Choice D ($10$): reports the kerf line's $y$-intercept instead of its $x$-intercept\n\n**Test Day Takeaway:** Build the perpendicular line first, then set $y = 0$; the two intercepts are easy to confuse under time pressure."
+}

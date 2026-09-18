@@ -1,0 +1,29 @@
+{
+  "id": 7,
+  "question": "An excavated channel is modeled in cross-section with the ground surface along $y = x^2 - 6x + 11$ and a straight drain pipe along $y = 2x + c$. The pipe meets the ground surface at exactly one point. What is the value of the constant $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-5$"
+    },
+    {
+      "id": "B",
+      "text": "$2$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$7$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "never subtracts the line's 2x, using b = -6 in the discriminant, which gives c = 2",
+    "C": "drops the sign when solving 4c = -20, reporting 5 instead of -5",
+    "D": "combines -6x and 2x as -4x instead of -8x, which gives c = 7"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Setting the two expressions equal gives $x^2 - 8x + (11 - c) = 0$, and one shared point means the discriminant vanishes: $64 - 4(11 - c) = 0$, so $c = -5$.\n\n**The Full Solution:**\nStep 1: A shared point satisfies both equations, so set them equal: $x^2 - 6x + 11 = 2x + c$. Move everything to one side: $x^2 - 8x + (11 - c) = 0$.\nStep 2: \"Exactly one point\" means this quadratic has exactly one real root, so its discriminant $b^2 - 4ac$ is $0$: $(-8)^2 - 4(1)(11 - c) = 0$.\nStep 3: Expand and solve: $64 - 44 + 4c = 0$, so $4c = -20$ and $c = -5$. Check: with $c = -5$ the quadratic is $x^2 - 8x + 16 = (x - 4)^2$, whose only root is $x = 4$; there the line gives $2(4) - 5 = 3$ and the parabola gives $16 - 24 + 11 = 3$, the same point $(4, 3)$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($2$): uses $b = -6$ from the parabola without subtracting the line's $2x$. Then $36 - 4(11 - c) = 0$ gives $4c = 8$ and $c = 2$, but the line $y = 2x + 2$ actually cuts the parabola twice.\n* Choice C ($5$): reaches $4c = -20$ correctly and then reports $5$, losing the negative sign.\n* Choice D ($7$): writes $-6x + 2x$ as $-4x$. Then $16 - 4(11 - c) = 0$ gives $4c = 28$ and $c = 7$.\n\n**Test Day Takeaway:** One intersection point equals one root equals discriminant $= 0$. Combine the linear terms carefully before you square $b$ — that subtraction is where the item hides its trap."
+}

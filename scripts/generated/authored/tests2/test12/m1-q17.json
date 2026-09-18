@@ -1,0 +1,30 @@
+{
+  "id": 17,
+  "question": "A parabola is given by $y = 2x^2 + bx + 18$, no point of its graph touches the x-axis, and the constant $b$ is an integer. Which statement below gives all of the values $b$ can take?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-5 \\leq b \\leq 5$"
+    },
+    {
+      "id": "B",
+      "text": "$-11 \\leq b \\leq 11$"
+    },
+    {
+      "id": "C",
+      "text": "$-12 \\leq b \\leq 12$"
+    },
+    {
+      "id": "D",
+      "text": "$b \\leq -12$ or $b \\geq 12$"
+    }
+  ],
+  "choiceOrderNote": "Choices are intervals of integer values, not single numbers, so they are listed from narrowest to widest and then the complement.",
+  "distractorNotes": {
+    "A": "omits the factor 4 in b^2 - 4ac, solving b^2 < 36 instead of b^2 < 144",
+    "C": "includes b = -12 and b = 12, where the discriminant is 0 and the graph touches the x-axis at one point",
+    "D": "reverses the inequality and gives the values for which the graph does cross the x-axis twice"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice B is correct.** No point of the graph touching the x-axis means $b^2 - 4ac < 0$, so $b^2 - 4(2)(18) < 0$, that is $b^2 < 144$ and $-12 < b < 12$; the integers in that range run from $-11$ to $11$.\n\n**The Fast Way (~40s):** $b^2 < 4(2)(18) = 144$ gives $|b| < 12$, and the integer values stop at $\\pm 11$.\n\n**The Full Solution:**\nStep 1: The graph meets the x-axis exactly where $2x^2 + bx + 18 = 0$ has real solutions, so \"no point touches the x-axis\" means the equation has no real solutions and the discriminant is negative.\nStep 2: Compute the discriminant with $a = 2$ and $c = 18$: $b^2 - 4(2)(18) = b^2 - 144$, and require $b^2 - 144 < 0$, so $b^2 < 144$ and $-12 < b < 12$.\nStep 3: Because $b$ is an integer, the endpoints $\\pm 12$ are excluded and the largest allowed magnitude is $11$, giving $-11 \\leq b \\leq 11$. Check: $b = 11$ gives $121 - 144 = -23 < 0$, no x-intercepts, while $b = 12$ gives $144 - 144 = 0$, a single touching point. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-5 \\leq b \\leq 5$): forgets the $4$ in $b^2 - 4ac$ and solves $b^2 < 2(18) = 36$, which caps $b$ at $5$ instead of $11$.\n* Choice C ($-12 \\leq b \\leq 12$): keeps the endpoints. At $b = \\pm 12$ the discriminant is exactly $0$, so the parabola has one point on the x-axis, which the question forbids.\n* Choice D ($b \\leq -12$ or $b \\geq 12$): describes when the discriminant is nonnegative, the values for which the graph does meet the x-axis.\n\n**Test Day Takeaway:** Turn \"touches the x-axis\" language into a discriminant inequality first; then let the word \"integer\" decide whether the boundary values survive."
+}

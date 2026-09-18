@@ -1,0 +1,67 @@
+{
+  "id": "bank-alg-204",
+  "question": "The scatterplot shows the fuel efficiency $y$, in miles per gallon, of a delivery van for several trips, plotted against the cargo load $x$, in hundreds of pounds, carried on each trip. The line of best fit is $\\hat{y} = -0.6x + 24$. According to the line of best fit, by how many miles per gallon is the fuel efficiency predicted to decrease for each additional hundred pounds of cargo?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          23.9
+        ],
+        [
+          2,
+          22.4
+        ],
+        [
+          3,
+          22.6
+        ],
+        [
+          4,
+          21.1
+        ],
+        [
+          5,
+          22
+        ],
+        [
+          6,
+          20.3
+        ],
+        [
+          7,
+          20.6
+        ],
+        [
+          8,
+          18.9
+        ],
+        [
+          9,
+          19.5
+        ],
+        [
+          10,
+          17.6
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 10,
+      "yMin": 16,
+      "yMax": 26,
+      "xGridStep": 1,
+      "yGridStep": 1,
+      "xLabelStep": 2,
+      "yLabelStep": 2,
+      "xLabel": "Cargo load (hundreds of pounds)",
+      "yLabel": "Fuel efficiency (mpg)",
+      "bestFitLine": {
+        "slope": -0.6,
+        "intercept": 24
+      }
+    }
+  },
+  "correctAnswer": "0.6",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**The correct answer is $0.6$.**\n\n**The Fast Way (~10s):** The slope of $\\hat{y} = -0.6x + 24$ is $-0.6$ miles per gallon per hundred pounds. The question asks for the size of the decrease, so the answer is $0.6$.\n\n**The Full Solution:**\nStep 1: The slope of the line of best fit is the predicted change in $y$ (miles per gallon) for each one-unit increase in $x$ (one hundred pounds of cargo).\nStep 2: The slope is $-0.6$; the negative sign means fuel efficiency goes down as cargo goes up.\nStep 3: A decrease of $0.6$ miles per gallon per hundred pounds. Check: the predicted value at $x = 5$ is $21$ and at $x = 6$ is $20.4$, a drop of $0.6$. $\\checkmark$\n\n**Common Mistakes:** Entering $24$ (the intercept, the predicted efficiency with no cargo); entering $-0.6$ when the question asks \"by how many\" (a decrease of $0.6$, entered as a positive amount); entering $6$ by misplacing the decimal.\n\n**Test Day Takeaway:** The slope carries the rate; its sign tells you the direction. When a question says \"decrease by how many,\" report the magnitude."
+}

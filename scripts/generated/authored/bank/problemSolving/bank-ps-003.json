@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-003",
+  "question": "In a germination trial, $0.186$ of the seeds that were planted sprouted within one week. What percent of the seeds that were planted sprouted within one week?",
+  "correctAnswer": "18.6",
+  "explanation": "**SAT Pattern: Decimal to Percent**\n\n**The correct answer is $18.6$.**\n\n**The Fast Way (~5s):** Multiply by $100$: $0.186 \\times 100 = 18.6$, so $18.6\\%$ of the seeds sprouted.\n\n**The Full Solution:**\nStep 1: A decimal is converted to a percent by multiplying by $100$ (moving the decimal point two places to the right).\nStep 2: $0.186 \\times 100 = 18.6$.\nStep 3: Check: $18.6\\% = \\frac{18.6}{100} = 0.186$, the original decimal. $\\checkmark$\n\n**Common Mistakes:** Entering $1.86$ (moving the decimal point only one place); entering $0.186$ (forgetting to convert at all); entering $186$ (moving it three places).\n\n**Test Day Takeaway:** Read the decimal, shift two places right, and enter only the number: $0.186$ becomes $18.6$, with no percent sign in the answer box."
+}

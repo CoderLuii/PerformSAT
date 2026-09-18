@@ -1,0 +1,100 @@
+{
+ "id": 4,
+ "question": "A hydrogel sample soaked for $8$ hours had a measured mass of $53$ grams. Using the line of best fit $y = 3.5x + 18$ drawn with the plotted data, by how many grams does that measured mass exceed the mass the line predicts at $8$ hours?",
+ "diagram": {
+  "type": "scatterplot",
+  "params": {
+   "points": [
+    [
+     1,
+     20
+    ],
+    [
+     2,
+     27
+    ],
+    [
+     4,
+     30
+    ],
+    [
+     5,
+     38
+    ],
+    [
+     6,
+     36
+    ],
+    [
+     8,
+     53
+    ],
+    [
+     10,
+     50
+    ],
+    [
+     11,
+     59
+    ],
+    [
+     13,
+     61
+    ],
+    [
+     14,
+     70
+    ],
+    [
+     16,
+     72
+    ]
+   ],
+   "xMin": 0,
+   "xMax": 16,
+   "yMin": 0,
+   "yMax": 80,
+   "xGridStep": 2,
+   "yGridStep": 10,
+   "xLabelStep": 4,
+   "yLabelStep": 20,
+   "xLabel": "Soaking time (hours)",
+   "yLabel": "Mass (grams)",
+   "bestFitLine": {
+    "slope": 3.5,
+    "intercept": 18
+   },
+   "highlightPoint": [
+    8,
+    53
+   ],
+   "highlightLabel": "(8, 53)",
+   "showResidual": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$25$"
+  },
+  {
+   "id": "C",
+   "text": "$46$"
+  },
+  {
+   "id": "D",
+   "text": "$53$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "drops the intercept, predicting 3.5(8) = 28 and reporting 53 - 28",
+  "C": "reports the predicted mass instead of the difference",
+  "D": "reports the measured mass instead of the difference"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Predict, then subtract. At $x = 8$ the line gives $3.5(8) + 18 = 46$ grams, and $53 - 46 = 7$ grams.\n\n**The Full Solution:**\nStep 1: Evaluate the line of best fit at the stated time. Substituting $x = 8$ into $y = 3.5x + 18$ gives $y = 28 + 18 = 46$ grams.\nStep 2: Identify the measured value. The plotted point at $8$ hours sits at $(8, 53)$, so the measured mass is $53$ grams.\nStep 3: Subtract in the order the question asks. The measured mass exceeds the predicted mass by $53 - 46 = 7$ grams. Check: adding $7$ back to the prediction returns $46 + 7 = 53$, the measured value ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($25$): uses $3.5(8) = 28$ as the prediction and computes $53 - 28 = 25$, dropping the $18$-gram intercept.\n* Choice C ($46$): stops at the predicted mass. That is the middle of the calculation, not the gap the question asks for.\n* Choice D ($53$): reports the measured mass straight off the plot without comparing it to the line.\n\n**Test Day Takeaway:** The vertical gap between a plotted point and the line of best fit is measured value minus predicted value. Always run the x-value through the whole equation, intercept included, before subtracting."
+}

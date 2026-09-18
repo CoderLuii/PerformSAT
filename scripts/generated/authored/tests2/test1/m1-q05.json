@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "The inequality $7x - 12 > 3x + 41$ is true for infinitely many values of $x$, and $x$ represents an integer. What is the smallest possible value of $x$ for which the inequality is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$14$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "moves -12 to the right side without changing its sign, solving 4x > 41-12 = 29 and rounding 7.25 up to 8",
+  "B": "rounds 13.25 down to 13, which does not satisfy the strict inequality",
+  "D": "rounds 13.25 up to 14 and then adds one more, as if 14 itself failed"
+ },
+ "explanation": "**SAT Pattern: Smallest Integer in an Inequality**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Collecting terms gives $4x > 53$, so $x > 13.25$, and the smallest integer greater than $13.25$ is $14$.\n\n**The Full Solution:**\nStep 1: Subtract $3x$ from both sides: $4x - 12 > 41$.\nStep 2: Add $12$ to both sides: $4x > 53$, so $x > \\frac{53}{4} = 13.25$.\nStep 3: The inequality is strict, so $x$ must be greater than $13.25$; the least integer that qualifies is $14$. Check: $7(14) - 12 = 86$ and $3(14) + 41 = 83$, and $86 > 83$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): moves the $-12$ to the right side without changing its sign, solving $4x > 41 - 12 = 29$, then rounds $7.25$ up to $8$.\n* Choice B ($13$): rounds $13.25$ down. Testing it fails: $7(13) - 12 = 79$ is not greater than $3(13) + 41 = 80$.\n* Choice D ($15$): rounds $13.25$ up to $14$ and then steps up once more, as if the strict inequality ruled out $14$ as well.\n\n**Test Day Takeaway:** Solve first, then round in the direction the inequality points; with a strict $>$, round a non-integer boundary up, and always test the integer you choose in the original inequality."
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1,
+  "question": "In the $xy$-plane, the graph of $f(x) = x^2 - 10x + 21$ is shown, with its two $x$-intercepts marked. What is the $x$-coordinate of the vertex of this graph?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        5,
+        -4
+      ],
+      "a": 1,
+      "showVertex": false,
+      "showPoints": [
+        [
+          3,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-10$"
+    },
+    {
+      "id": "B",
+      "text": "$-5$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$21$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports b",
+    "B": "drops the leading negative sign",
+    "D": "reports the constant term"
+  },
+  "correctAnswer": "C",
+  "hint": "The vertex sits halfway between the two $x$-intercepts, and $x = -\\frac{b}{2a}$ says the same thing.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** $x = -\\frac{b}{2a} = -\\frac{-10}{2(1)} = 5$.\n\n**The Full Solution:**\nStep 1: Identify the coefficients: $a = 1$, $b = -10$, and $c = 21$.\nStep 2: The vertex of $y = ax^2 + bx + c$ has $x = -\\frac{b}{2a}$, so $x = -\\frac{-10}{2} = 5$.\nStep 3: Confirm with the marked intercepts. Factoring gives $(x - 3)(x - 7)$, so the intercepts are $3$ and $7$, whose midpoint is $\\frac{3 + 7}{2} = 5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-10$): reports $b$ itself instead of $-\\frac{b}{2a}$.\n* Choice B ($-5$): computes $\\frac{b}{2a}$ and forgets the leading negative sign in the formula.\n* Choice D ($21$): reports the constant term $c$, which is the $y$-intercept rather than anything about the vertex.\n\n**Test Day Takeaway:** Two routes give the same vertex $x$-value: $-\\frac{b}{2a}$, or the midpoint of the two $x$-intercepts when they exist."
+}

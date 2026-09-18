@@ -7,8 +7,6 @@
  * streak tracking, and post-session summary logic.
  */
 
-import { getDueReviewCount, getReviewStats } from './reviewService';
-
 const MAX_DAILY_ITEMS = 15;
 
 /**

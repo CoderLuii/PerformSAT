@@ -3,16 +3,19 @@ import React from 'react';
 
 // SAT Graph Styling Constants
 export const SAT_GRAPH_STYLES = {
+  // Serif figure typography (2026-08-13 Bluebook-ink restyle): official
+  // educator-bank figures set tick numbers and labels in the serif math
+  // face, matching KaTeX stems — verified against the 2026-08 CB release.
   font: {
-    primary: "'Arial', 'Helvetica', sans-serif",
-    axis: "'Arial', sans-serif",
+    primary: "'Times New Roman', Georgia, serif",
+    axis: "'Times New Roman', Georgia, serif",
   },
   colors: {
     axis: '#000000',
     gridLine: '#e0e0e0',
     dataLine: '#000000',
     pointFill: '#000000',
-    pointHighlight: '#c92a2a',
+    pointHighlight: '#000000',  // emphasis by geometry (open point), never color
     background: '#ffffff',
     border: '#d1d5db',
   },
@@ -126,7 +129,6 @@ export function renderAxes(coordSystem, options = {}) {
     showYAxis = true,
     xTickInterval = 1,
     yTickInterval = 1,
-    showOrigin = true,
     xAxisLabel = 'x',
     yAxisLabel = 'y',
   } = options;

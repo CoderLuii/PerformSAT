@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-231",
+ "question": "Each hangtag a mill prints is a triangle whose base measures $b$ centimeters and whose height is $4$ centimeters shorter than the base. Which expression represents the number of square centimeters of card stock in one hangtag?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{b^2-4b}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{b^2-4}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{b-4}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$b^2-4b$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "fails to distribute b across the -4, leaving a bare constant",
+  "C": "halves the height and never multiplies by the base",
+  "D": "omits the factor 1/2 and gives the area of a rectangle instead"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Triangle Area**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The height is $b-4$, so $A=\\frac{1}{2}b(b-4)=\\frac{b^2-4b}{2}$.\n\n**The Full Solution:**\n\nStep 1 — Write the height in terms of the base: it is $4$ centimeters shorter, so the height is $b-4$ centimeters.\n\nStep 2 — Apply the area formula: $A=\\frac{1}{2}bh=\\frac{1}{2}b(b-4)$.\n\nStep 3 — Distribute: $\\frac{1}{2}(b^2-4b)=\\frac{b^2-4b}{2}$ square centimeters. Check with $b=10$: the triangle is $10$ by $6$, giving $30$, and $\\frac{100-40}{2}=30$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($\\frac{b^2-4}{2}$): this multiplies $b$ by $b$ but not by $4$; at $b=10$ it gives $48$, not $30$.\n* Choice C ($\\frac{b-4}{2}$): this halves the height and never multiplies by the base.\n* Choice D ($b^2-4b$): this omits the factor $\\frac{1}{2}$, giving the rectangle's area.\n\n**Test Day Takeaway:** Translate the comparison into an expression first, substitute into $\\frac{1}{2}bh$, and test one friendly value against every choice."
+}

@@ -20,15 +20,19 @@
  * "you scored 640."
  */
 
-import { getSkillById, skillTaxonomy, getSkillsForDomain } from '../data/skillTaxonomy';
+import { convertToSATScore, scaleResponseVector, getItemParams, isAnswerCorrect, estimatePercentile as _estimatePercentile, inferDomain } from './scoring';
+import { isCompositeScaleTarget, DEFAULT_GOAL_SCORE } from './selectors/goalProgress';
+
+import { getSkillById, skillTaxonomy } from '../data/skillTaxonomy';
 // Pure-constant imports (Stage 2a bundle split): pulled from aliases.js /
 // taxonomy.js so this engine stays corpus-free — importing the bank/rwBank
 // indexes would weld both question corpora into every chunk that needs
 // diagnostics (App.jsx imports runDiagnostic eagerly).
-import { SKILL_ALIAS_MAP } from '../data/questions/bank/aliases';
 import { RW_CANONICAL_SKILLS, RW_DOMAINS } from '../data/questions/rwBank/taxonomy';
 import { deriveRWPattern } from '../data/questions/rwBank/deriveRWPattern';
 import { extractSatPattern } from '../data/questions/extractSatPattern';
+import { getCBSkillLabel } from '../data/questions/cbSkillTaxonomy';
+import { formatPatternLabel } from './selectors/missedPatternLabel';
 // Zero-import selector (bundleGuard-safe) — the single source of truth for
 // what counts as a blank/abandoned attempt.
 import { isBlankAttempt } from './selectors/latestTestStats';
@@ -88,14 +92,6 @@ const getQuestionSkills = (q) => {
 };
 
 /**
- * Determine which test section a skill belongs to.
- *
- * @param {string} skillId
- * @returns {'math' | 'rw'}
- */
-const getSkillSection = (skillId) => RW_SKILL_SET.has(skillId) ? 'rw' : 'math';
-
-/**
  * Infer a question's SAT domain from its (normalized) skill id array,
  * section-aware. R&W skills resolve through RW_SKILL_TO_DOMAIN
  * (craft-and-structure etc.); everything else goes through the shared math
@@ -123,20 +119,13 @@ const humanizeSkillId = (id) => {
   // Try taxonomy first
   const skill = getSkillById(id);
   if (skill?.name) return skill.name;
-  // Try resolving the first canonical target from the alias map for a better name
-  const aliases = SKILL_ALIAS_MAP[id];
-  if (aliases && aliases.length > 0) {
-    const canonical = getSkillById(aliases[0]);
-    if (canonical?.name) {
-      // Use the alias key itself but humanized, since it's broader than any single canonical
-      return id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    }
-  }
-  // Last resort: humanize the kebab-case ID
-  return id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  // Canonical CB display name (both sections) — keeps official punctuation
+  // ("Form, Structure, and Sense"), which naive de-slugging loses.
+  const cbLabel = getCBSkillLabel(id);
+  if (cbLabel) return cbLabel;
+  // Last resort: polished de-slug (small words stay lowercase).
+  return formatPatternLabel(id) || id;
 };
-import { convertToSATScore, scaleResponseVector, getItemParams, isAnswerCorrect, estimatePercentile as _estimatePercentile, inferDomain } from './scoring';
-import { isCompositeScaleTarget, DEFAULT_GOAL_SCORE } from './selectors/goalProgress';
 
 // ═══════════════════════════════════════════════════════════════════════════
 // CONSTANTS
@@ -256,12 +245,12 @@ const ERROR_TYPE_COLORS = {
  * Returns: { errorType, confidence, reasoning }
  */
 const classifyError = (question, userAnswer, telemetry, skillProgress) => {
-  const { difficulty, correctAnswer, choices, type } = question;
+  const { difficulty } = question;
   // Normalize math (skills: array) and R&W (skill: string) shapes so R&W
   // misses classify against their real in-test mastery seed instead of the
   // default-50 fallback that calculateAvgSkillMastery returns for [].
   const skills = getQuestionSkills(question);
-  const { timeSpent = 0, visits = 0, answerChanges = 0 } = telemetry || {};
+  const { timeSpent = 0, answerChanges = 0 } = telemetry || {};
 
   // ── UNANSWERED ──
   if (userAnswer === undefined || userAnswer === null || userAnswer === '') {
@@ -1177,7 +1166,13 @@ const analyzeSkills = (questionAnalysis, skillProgress = {}) => {
   const strongSkills = skills.filter(s => s.isStrong).sort((a, b) => b.testAccuracy - a.testAccuracy);
   const allSkills = skills.sort((a, b) => a.testAccuracy - b.testAccuracy);
 
-  return { weakSkills, strongSkills, allSkills, skillMap };
+  // skillMap is the raw aggregation state and carries live Set objects
+  // (missedPatternsSet), which Firestore hard-rejects. It must never leave
+  // this function: the report rides inside recordPracticeTestResult's score
+  // transaction on a test's FIRST attempt, and a single Set fails the whole
+  // save. Everything callers need is already on weakSkills/allSkills
+  // (missedPatterns as a plain array).
+  return { weakSkills, strongSkills, allSkills };
 };
 
 /**
@@ -1938,8 +1933,8 @@ const generateTrendMessage = (scoreChange, trend) => {
   if (scoreChange > 10) return `Good progress! +${scoreChange} points since your last test. Keep it up!`;
   if (scoreChange > 0) return `Slight improvement (+${scoreChange} points). Stay consistent with your study plan.`;
   if (scoreChange === 0) return 'Same score as last time. Review your study plan and focus on your weak areas.';
-  if (scoreChange > -20) return `Score dipped ${scoreChange} points. Don\'t worry — focus on the areas flagged below.`;
-  return `Score dropped ${scoreChange} points. Let\'s adjust your study plan to address the gaps.`;
+  if (scoreChange > -20) return `Score dipped ${scoreChange} points. Don't worry — focus on the areas flagged below.`;
+  return `Score dropped ${scoreChange} points. Let's adjust your study plan to address the gaps.`;
 };
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -2356,7 +2351,6 @@ const generateMistakeFingerprint = (diagnostic, previousTests) => {
   };
 
   // Determine archetype from dominant error pattern
-  const dominant = errorPatterns.dominantPattern;
   const trapPct = (errorPatterns.summary.find(s => s.type === ERROR_TYPES.TRAP_SUSCEPTIBILITY)?.percentage || 0);
   const carelessPct = (errorPatterns.summary.find(s => s.type === ERROR_TYPES.CARELESS_ERROR)?.percentage || 0);
   const conceptPct = (errorPatterns.summary.find(s => s.type === ERROR_TYPES.CONCEPTUAL_GAP)?.percentage || 0);
@@ -2599,7 +2593,7 @@ export function formatDiagnosticSentence(weakness) {
   if (!weakness || typeof weakness !== 'object') return '';
 
   const skill = weakness.skill || (weakness.skillId
-    ? weakness.skillId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+    ? (getCBSkillLabel(weakness.skillId) || formatPatternLabel(weakness.skillId) || weakness.skillId)
     : null);
   const errorTypeId = normalizeErrorTypeId(weakness.errorType);
   const facts = parseEvidenceFacts(weakness.evidence);

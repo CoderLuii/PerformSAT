@@ -1,0 +1,31 @@
+{
+ "id": 6,
+ "question": "A vertical mast on an outdoor festival stage is braced by a guy wire that runs from the top of the mast to an anchor in the deck, as shown. What is the height $h$ of the mast, in feet?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     45
+    ]
+   ],
+   "sideLabels": [
+    "24 ft",
+    "h",
+    "51 ft"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "correctAnswer": "45",
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**The correct answer is $45$.** The mast, the deck, and the guy wire form a right triangle in which the wire is the hypotenuse, so the mast is a leg.\n\n**The Fast Way (~20s):** $51^2 - 24^2 = 2601 - 576 = 2025$, and $\\sqrt{2025} = 45$ feet.\n\n**The Full Solution:**\nStep 1: The mast is vertical and the deck is horizontal, so the right angle sits at the base of the mast and the $51$-foot wire is the hypotenuse.\nStep 2: Write the Pythagorean relationship with $h$ as the unknown leg: $24^2 + h^2 = 51^2$.\nStep 3: $576 + h^2 = 2601$, so $h^2 = 2025$ and $h = 45$ feet. Check: $24^2 + 45^2 = 576 + 2025 = 2601 = 51^2$ ✓\n\n**Common Mistakes:**\n* $27$: subtracting the lengths, $51 - 24 = 27$, instead of subtracting their squares. Side lengths do not subtract that way.\n* $56.4$: adding the squares, $\\sqrt{51^2 + 24^2} = \\sqrt{3177} \\approx 56.4$, which treats the $51$-foot wire as a leg rather than the hypotenuse.\n* $2025$: stopping at $h^2 = 2025$ and never taking the square root.\n\n**Test Day Takeaway:** Identify the hypotenuse before you write the equation — it is the side opposite the right angle, and it always sits alone on one side of $a^2 + b^2 = c^2$."
+}

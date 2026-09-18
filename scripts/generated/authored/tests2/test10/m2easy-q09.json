@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A hydrophone calibration routine requires the exponential statement $9^{2t} = 3^{t + 10}$ to hold, where the constant $t$ is the routine's damping level. Which equation must $t$ satisfy?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2t = t + 10$"
+  },
+  {
+   "id": "B",
+   "text": "$4t = t + 10$"
+  },
+  {
+   "id": "C",
+   "text": "$6t = t + 10$"
+  },
+  {
+   "id": "D",
+   "text": "$4t = 3(t + 10)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats the base 9 as though it were already 3 and keeps the exponent 2t",
+  "C": "rewrites 9 as 3 cubed instead of 3 squared",
+  "D": "rewrites the left side correctly but also multiplies the right exponent by 3"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**Choice B is correct.** Since $9 = 3^2$, the left side is $3^{4t}$, and equal powers of $3$ force $4t = t + 10$.\n\n**The Fast Way (~15s):** Rewrite $9^{2t}$ as $(3^2)^{2t} = 3^{4t}$; with base $3$ on both sides the exponents must match.\n\n**The Full Solution:**\nStep 1: Write both sides over one base. Because $9 = 3^2$, $9^{2t} = (3^2)^{2t}$.\nStep 2: A power raised to a power multiplies the exponents: $(3^2)^{2t} = 3^{2 \\cdot 2t} = 3^{4t}$. The statement becomes $3^{4t} = 3^{t + 10}$.\nStep 3: Exponential functions with the same base are one-to-one, so the exponents are equal: $4t = t + 10$. Check by solving: $3t = 10$, so $t = \\frac{10}{3}$, and $4\\left(\\frac{10}{3}\\right) = \\frac{40}{3}$ matches $\\frac{10}{3} + 10 = \\frac{40}{3}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2t = t + 10$): carries the exponent $2t$ straight across without converting the base $9$ to base $3$. That skips the step that makes the bases comparable.\n* Choice C ($6t = t + 10$): uses $9 = 3^3$, which is $27$. Multiplying $2t$ by $3$ instead of $2$ gives an exponent that is too large.\n* Choice D ($4t = 3(t + 10)$): converts the left side correctly, then scales the right exponent as well. The right side was already written in base $3$ and needs no change.\n\n**Test Day Takeaway:** Convert one side so both sides share a base, multiply exponents when a power is raised to a power, and only then set the exponents equal."
+}

@@ -1,0 +1,49 @@
+{
+ "id": 1,
+ "question": "A glazing crew charges a one-time setup fee plus a fixed amount for each panel it installs. The table gives the crew's total charge for three different panel counts. Which equation gives the total charge $C$, in dollars, for $p$ panels?",
+ "questionTable": {
+  "headers": [
+   "Panels installed",
+   "Total charge (dollars)"
+  ],
+  "rows": [
+   [
+    "$4$",
+    "$440$"
+   ],
+   [
+    "$7$",
+    "$635$"
+   ],
+   [
+    "$12$",
+    "$960$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$C = 65p$"
+  },
+  {
+   "id": "B",
+   "text": "$C = 110p$"
+  },
+  {
+   "id": "C",
+   "text": "$C = 65p + 180$"
+  },
+  {
+   "id": "D",
+   "text": "$C = 180p + 65$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "finds the per-panel rate but drops the one-time setup fee",
+  "B": "divides one total by its panel count (440/4 = 110) and treats the whole charge as per-panel",
+  "D": "swaps the two constants, charging 180 dollars per panel and 65 dollars once"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Linear Cost Setup**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Three more panels raise the charge by $\\$195$, so the rate is $\\$65$ per panel, and $440 - 4(65) = 180$ is the setup fee.\n\n**The Full Solution:**\nStep 1: A setup fee plus a per-panel amount is linear: $C = rp + f$, where $r$ is the rate per panel and $f$ is the fee charged once.\nStep 2: The first two rows give $r = \\frac{635 - 440}{7 - 4} = \\frac{195}{3} = 65$ dollars per panel.\nStep 3: Substituting the first row, $440 = 65(4) + f$, so $f = 180$; check the third row: $65(12) + 180 = 780 + 180 = 960$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($C = 65p$): reads the rate correctly but forgets the fee, predicting $65(4) = 260$ dollars for $4$ panels instead of $440$.\n* Choice B ($C = 110p$): divides a single total by its panel count, $440 \\div 4 = 110$, folding the one-time fee into the rate; at $7$ panels it predicts $770$ dollars, not $635$.\n* Choice D ($C = 180p + 65$): swaps the roles of the two constants and predicts $180(4) + 65 = 785$ dollars for $4$ panels.\n\n**Test Day Takeaway:** In a linear cost table the per-unit rate is the change in cost divided by the change in units; the fixed fee is whatever is left after the rate is paid for."
+}

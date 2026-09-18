@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-499",
+ "question": "A cold-storage room's daily water use, in cubic meters, is modeled by $G(d) = 2d^2 - 20d + 63$, where $d$ is the number of days after a filter change. Which of the following equivalent forms shows the minimum daily use as a constant?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2(d - 10)^2 + 13$"
+  },
+  {
+   "id": "B",
+   "text": "$2(d - 5)^2 + 13$"
+  },
+  {
+   "id": "C",
+   "text": "$2(d - 5)^2 + 63$"
+  },
+  {
+   "id": "D",
+   "text": "$2(d + 5)^2 + 13$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses b = -20 as the shift instead of -b/(2a) = 5",
+  "C": "keeps the original constant 63 instead of adjusting it to 13",
+  "D": "flips the sign inside the square, putting the vertex at d = -5"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The turning point is at $d = \\dfrac{20}{2(2)} = 5$, where $G(5) = 13$, so the form is $2(d - 5)^2 + 13$.\n\n**The Full Solution:**\nStep 1: Factor $2$ from the variable terms: $2(d^2 - 10d) + 63$.\nStep 2: Complete the square inside: $d^2 - 10d = (d - 5)^2 - 25$, so $G(d) = 2(d - 5)^2 - 50 + 63$.\nStep 3: Combine constants: $G(d) = 2(d - 5)^2 + 13$, so the minimum daily use is $13$ cubic meters. Check: expanding gives $2d^2 - 20d + 50 + 13 = 2d^2 - 20d + 63$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2(d - 10)^2 + 13$): uses the coefficient $-20$ as the shift instead of $-\\dfrac{b}{2a} = 5$; expanding it gives $2d^2 - 40d + 213$.\n* Choice C ($2(d - 5)^2 + 63$): keeps the original constant $63$ and forgets that removing $-50$ requires adding it back.\n* Choice D ($2(d + 5)^2 + 13$): flips the sign inside the square, placing the minimum at $d = -5$ instead of $d = 5$.\n\n**Test Day Takeaway:** Only the vertex form displays the minimum value directly, and completing the square always changes the constant term."
+}

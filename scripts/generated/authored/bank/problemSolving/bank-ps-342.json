@@ -1,0 +1,86 @@
+{
+  "id": "bank-ps-342",
+  "question": "The scatterplot shows the monthly electricity use $y$, in kilowatt-hours, of a workshop and the number of machines $x$ in operation that month, for $9$ months, along with the line of best fit $\\hat{y} = 145x + 60$. In the month with $6$ machines in operation, the recorded electricity use was $1{,}000$ kilowatt-hours. What is the residual for that month, in kilowatt-hours?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          2,
+          340
+        ],
+        [
+          3,
+          520
+        ],
+        [
+          4,
+          610
+        ],
+        [
+          5,
+          800
+        ],
+        [
+          6,
+          1000
+        ],
+        [
+          7,
+          1050
+        ],
+        [
+          8,
+          1240
+        ],
+        [
+          9,
+          1330
+        ],
+        [
+          10,
+          1540
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 11,
+      "yMin": 0,
+      "yMax": 1800,
+      "xGridStep": 1,
+      "yGridStep": 200,
+      "xLabelStep": 2,
+      "yLabelStep": 400,
+      "xLabel": "Machines in operation",
+      "yLabel": "Electricity use (kWh)",
+      "bestFitLine": {
+        "slope": 145,
+        "intercept": 60
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-70$"
+    },
+    {
+      "id": "B",
+      "text": "$70$"
+    },
+    {
+      "id": "C",
+      "text": "$930$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts in the reverse order, predicted minus actual, which flips the sign of the residual.",
+    "C": "reports the predicted value $145(6) + 60 = 930$ instead of the difference.",
+    "D": "reports the recorded value, the height of the data point rather than its distance from the line."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Residual**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Predicted use is $145(6) + 60 = 930$, so the residual is $1{,}000 - 930 = 70$ kilowatt-hours.\n\n**The Full Solution:**\nStep 1: A residual is the actual value minus the value the model predicts at that same $x$.\nStep 2: At $x = 6$ the line of best fit predicts $145(6) + 60 = 870 + 60 = 930$ kilowatt-hours.\nStep 3: The residual is $1{,}000 - 930 = 70$ kilowatt-hours. Check: the point lies above the line on the scatterplot, and a point above the line has a positive residual. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-70$): subtracts in the reverse order, predicted minus actual, which flips the sign of the residual.\n* Choice C ($930$): reports the predicted value $145(6) + 60 = 930$ instead of the difference.\n* Choice D ($1{,}000$): reports the recorded value, the height of the data point rather than its distance from the line.\n\n**Test Day Takeaway:** Residual $=$ actual $-$ predicted, in that order. Above the line is positive, below the line is negative — check the sign against the picture before answering."
+}

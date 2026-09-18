@@ -1,0 +1,30 @@
+{
+ "id": 12,
+ "question": "Two accounting rules for a grant budget, in thousands of dollars, are written as $4x - 6y = 14$ and $-6x + 9y = c$, where $c$ is a constant. For what value of $c$ does every pair $(x, y)$ satisfying one rule also satisfy the other?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-21$"
+  },
+  {
+   "id": "B",
+   "text": "$-14$"
+  },
+  {
+   "id": "C",
+   "text": "$14$"
+  },
+  {
+   "id": "D",
+   "text": "$21$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "copies the first rule's constant and only negates it, skipping the factor 3/2",
+  "C": "copies the first rule's constant unchanged, applying no scale factor at all",
+  "D": "applies the factor 3/2 but keeps the result positive, ignoring the sign of the multiplier"
+ },
+ "correctAnswer": "A",
+ "hint": "One equation should be a multiple of the other, constants included.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~45s):** Multiplying $4x - 6y = 14$ by $-\\frac{3}{2}$ gives $-6x + 9y = -21$, so $c = -21$.\n\n**The Full Solution:**\nStep 1: Two linear equations describe the same set of points exactly when one is a nonzero multiple of the other, coefficients and constant alike.\nStep 2: To turn $4x$ into $-6x$ the multiplier must be $-\\frac{6}{4} = -\\frac{3}{2}$. That same multiplier sends $-6y$ to $9y$, which matches the second rule.\nStep 3: Applying the multiplier to the constant gives $-\\frac{3}{2}(14) = -21$, so $c = -21$.\n\nCheck: Dividing $-6x + 9y = -21$ by $-\\frac{3}{2}$ returns $4x - 6y = 14$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-14$): negates the first constant without applying the factor $\\frac{3}{2}$.\n* Choice C ($14$): copies the first constant unchanged, applying no scale factor at all.\n* Choice D ($21$): applies the factor $\\frac{3}{2}$ but keeps the result positive, ignoring that the multiplier is negative.\n\n**Test Day Takeaway:** The scale factor that matches the coefficients must be applied to the constant too, sign and all."
+}

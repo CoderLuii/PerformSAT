@@ -1,31 +1,31 @@
 {
-  "id": 725,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "Coral reefs damaged by heat and storms can sometimes be rebuilt by attaching fragments of living coral to bare reef surfaces, where they grow and fuse. Such restoration is slow and expensive, and it cannot keep pace with the scale of global reef loss. ______ small restored patches have proved useful as outdoor laboratories, letting researchers test which coral varieties best withstand warmer water before those varieties are planted more widely.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "As a result,"
-    },
-    {
-      "id": "B",
-      "text": "Even so,"
-    },
-    {
-      "id": "C",
-      "text": "For instance,"
-    },
-    {
-      "id": "D",
-      "text": "In short,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage concedes a limitation — restoration is slow and cannot match the scale of reef loss — and then notes a benefit anyway, so the concessive transition \"Even so\" fits. \"As a result\" would wrongly make the benefit a consequence of the limitation. \"For instance\" would introduce an example of the prior point, and \"In short\" would signal a summary, neither of which matches the turn from drawback to value."
+ "id": 725,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "Stacked hydroponic farms can raise leafy greens in the middle of a city in any season, but the economics remain difficult: sunlight must be replaced with electric light, climate control runs around the clock, and only a few fast-growing, high-value crops repay the expense. ______ the farms have proved valuable as testing grounds, letting growers trial soilless nutrient mixes and new cultivars under conditions no open field can hold steady.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Therefore,"
+  },
+  {
+   "id": "B",
+   "text": "Even so,"
+  },
+  {
+   "id": "C",
+   "text": "For instance,"
+  },
+  {
+   "id": "D",
+   "text": "In other words,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage concedes a drawback — the economics remain difficult — and then reports a benefit that stands despite it, the \"yes, but still\" relationship that \"Even so\" marks.\n\n**The Full Solution:**\n- Before the blank: costs are high and only a few crops repay them — a genuine limitation.\n- After the blank: the farms nonetheless deliver value as controlled testing grounds.\n- A positive point surviving an acknowledged negative calls for a concessive turn, and \"Even so\" supplies it.\n\n**Why the other choices are wrong:**\n- A: \"Therefore\" would derive the farms' usefulness from their poor economics, but the difficulty causes no such benefit.\n- C: \"For instance\" would make the testing-ground role an example of the economic difficulty, which it is not.\n- D: \"In other words\" would restate the prior sentence, yet the sentence after the blank introduces new information rather than rephrasing."
 }

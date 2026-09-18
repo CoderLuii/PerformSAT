@@ -1,0 +1,50 @@
+{
+ "id": "bank-am-245",
+ "question": "A tidal barrage generator's output above its rated minimum is modeled by the quadratic function $f$ whose graph is shown. The function $g$ is defined by $g(x)=f(x)+c$ for a constant $c$. For what value of $c$ does the graph of $y=g(x)$ touch the $x$-axis at exactly one point?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$0$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$4$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "lowers the vertex to -8 instead of raising it to 0",
+  "B": "assumes the graph already meets the axis once, though it crosses twice",
+  "C": "halves the depth of the vertex below the axis"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertical Shift**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The vertex sits at $(-2,-4)$; a graph touches the $x$-axis once only when its vertex is on the axis, so $c$ must raise $-4$ to $0$, giving $c=4$.\n\n**The Full Solution:**\nStep 1: Read the vertex of $f$ from the graph: $(-2,-4)$, and note the parabola opens upward.\nStep 2: Adding $c$ moves the vertex to $(-2,-4+c)$ without changing its shape. An upward parabola meets the $x$-axis exactly once only when its vertex lies on that axis.\nStep 3: Set $-4+c=0$, so $c=4$. Check: $f(x)=(x+2)^2-4$ gives $g(x)=(x+2)^2$, whose only zero is $x=-2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-4$): lowers the vertex to $-8$, leaving two $x$-intercepts.\n* Choice B ($0$): assumes the graph already meets the axis once, but as drawn it crosses at $-4$ and $0$.\n* Choice C ($2$): raises the vertex only halfway, to $-2$, so the graph still crosses twice.\n\n**Test Day Takeaway:** Exactly one $x$-intercept means the vertex is on the axis — set the shifted vertex output to zero.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    -2,
+    -4
+   ],
+   "a": 1,
+   "showVertex": true,
+   "showPoints": [
+    [
+     -4,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  }
+ }
+}

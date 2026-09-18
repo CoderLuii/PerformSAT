@@ -1,0 +1,42 @@
+{
+  "id": 9024,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "Linda Nochlin was an art historian at the Institute of Fine Arts, New York University.",
+      "In 1971 she published an essay asking why the standard histories of European art name so few women.",
+      "European academies barred women from the life-drawing class, which was the core of training for large historical paintings.",
+      "Workshop apprenticeships and public commissions were largely closed to women as well.",
+      "Women who did paint professionally before 1900 were often the daughters of artists, who could train them at home.",
+      "Nochlin rejected the idea that the question is one about individual genius."
+    ],
+    "goal": "The student wants to present Nochlin’s central claim about the scarcity of women in the canon of European painting."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Nochlin examined how European painters were trained in the academies and the workshops of the years before 1900."
+    },
+    {
+      "id": "B",
+      "text": "Women who painted professionally before 1900 were often the daughters of artists."
+    },
+    {
+      "id": "C",
+      "text": "Nochlin taught art history at the Institute of Fine Arts at New York University."
+    },
+    {
+      "id": "D",
+      "text": "The scarcity of celebrated women painters records institutions that withheld training, not a scarcity of talent."
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** The notes catalog what was withheld from women and then reject the talent explanation, and Choice D states that argument directly.\n\n**The Full Solution:**\n- Underline the bullets that name something withheld: the life-drawing class, workshop apprenticeships, public commissions.\n- The final bullet fixes the second half of the argument by ruling out individual genius as the variable. Choice D keeps both halves — institutions withheld access, and talent is not the explanation.\n- Notes that describe what was studied, or how a few women trained anyway, are evidence for that argument rather than the argument.\n\n**Why the other choices are wrong:**\n- A: Describes the subject examined, not the conclusion reached about it.\n- B: A supporting observation. It explains how a handful of women trained; it does not state the claim the observation supports.\n- C: Biography. Where a scholar taught has no bearing on what she argued.",
+  "people": [
+    {
+      "name": "Linda Nochlin",
+      "sourceUrl": "https://www.nyu.edu/about/news-publications/news/2017/november/linda-nochlin.html"
+    }
+  ]
+}

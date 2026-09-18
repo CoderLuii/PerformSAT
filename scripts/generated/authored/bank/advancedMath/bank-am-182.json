@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-182",
+  "question": "In $2015$, a coastal ferry carried $4{,}800$ riders each week. The weekly ridership decreased by $6\\%$ each year after $2015$. Which function $R$ models the weekly ridership $t$ years after $2015$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$R(t) = 4{,}800(0.06)^t$"
+    },
+    {
+      "id": "B",
+      "text": "$R(t) = 4{,}800(0.94)^t$"
+    },
+    {
+      "id": "C",
+      "text": "$R(t) = 4{,}800(1.06)^t$"
+    },
+    {
+      "id": "D",
+      "text": "$R(t) = 4{,}800 - 288t$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the rate itself as the multiplier (a 94% drop per year)",
+    "C": "grows by 6% instead of decreasing",
+    "D": "subtracts 6% of the ORIGINAL ridership each year (linear decrease)"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** A $6\\%$ decrease leaves $94\\%$, so the yearly multiplier is $0.94$ and the model is $4{,}800(0.94)^t$.\n\n**The Full Solution:**\nStep 1: An exponential model has the form $R(t) = R_0 b^t$, where $R_0$ is the value at $t = 0$. Here $R_0 = 4{,}800$.\nStep 2: Decreasing by $6\\%$ multiplies the previous year's ridership by $1 - 0.06 = 0.94$, so $b = 0.94$.\nStep 3: $R(t) = 4{,}800(0.94)^t$. Check at $t = 1$: $4{,}800(0.94) = 4{,}512$, which is $4{,}800 - 288$, a $6\\%$ drop. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4{,}800(0.06)^t$): puts the rate in the base instead of $1 - $ the rate; after one year it predicts $288$ riders, a $94\\%$ collapse.\n* Choice C ($4{,}800(1.06)^t$): the multiplier for a $6\\%$ INCREASE; the stem says the ridership decreased.\n* Choice D ($4{,}800 - 288t$): subtracts $6\\%$ of the original $4{,}800$ every year, which is constant (linear) loss, not a constant percent loss.\n\n**Test Day Takeaway:** For a constant percent change, the base is $1 + r$ for growth and $1 - r$ for decay — the rate alone is never the base."
+}

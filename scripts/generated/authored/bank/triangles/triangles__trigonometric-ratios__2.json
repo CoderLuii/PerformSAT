@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "A milking-parlor rail bracket forms right triangle $LMN$, with its right angle at $M$, $LM = 9$ centimeters, and $MN = 40$ centimeters. Which expression is equal to $\\tan L$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{9}{41}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{9}{40}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{40}{41}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{40}{9}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives cosine of L, adjacent over hypotenuse",
+  "B": "inverts the tangent, adjacent over opposite",
+  "C": "gives sine of L, opposite over hypotenuse"
+ },
+ "correctAnswer": "D",
+ "hint": "Only two of the three sides are given, and this question does not need the third.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~15s):** From angle $L$, the opposite leg is $MN = 40$ and the adjacent leg is $LM = 9$, so $\\tan L = \\frac{40}{9}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $M$, so the two legs are $LM$ and $MN$ and the hypotenuse is $LN$.\nStep 2: Viewed from angle $L$, the leg $MN = 40$ is opposite and the leg $LM = 9$ is adjacent.\nStep 3: Tangent is opposite over adjacent, so $\\tan L = \\frac{40}{9}$. Check: $LN = \\sqrt{9^2 + 40^2} = \\sqrt{1681} = 41$, and $\\frac{\\sin L}{\\cos L} = \\frac{40/41}{9/41} = \\frac{40}{9}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{9}{41}$): this is $\\cos L$, adjacent over hypotenuse.\n* Choice B ($\\frac{9}{40}$): this inverts the tangent, giving adjacent over opposite.\n* Choice C ($\\frac{40}{41}$): this is $\\sin L$, opposite over hypotenuse.\n\n**Test Day Takeaway:** Tangent never uses the hypotenuse; name the opposite and adjacent legs from the angle in question first."
+}

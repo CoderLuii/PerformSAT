@@ -1,0 +1,71 @@
+{
+ "id": "bank-ps-137",
+ "question": "The scatterplot shows the number of coats of sealant $x$ on each of $11$ wood samples and the time $y$, in hours, until water penetrated each sample, with the line of best fit $\\hat{y} = 2.75x + 6.5$. What is the predicted time, in hours, for a sample with $4$ coats?",
+ "diagram": {
+  "type": "scatterplot",
+  "params": {
+   "points": [
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     10
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     12
+    ],
+    [
+     2,
+     13
+    ],
+    [
+     3,
+     15
+    ],
+    [
+     3,
+     14
+    ],
+    [
+     4,
+     18
+    ],
+    [
+     5,
+     20
+    ],
+    [
+     5,
+     21
+    ],
+    [
+     6,
+     23
+    ]
+   ],
+   "xMin": 0,
+   "xMax": 7,
+   "yMin": 0,
+   "yMax": 28,
+   "xGridStep": 1,
+   "yGridStep": 2,
+   "xLabelStep": 1,
+   "yLabelStep": 4,
+   "xLabel": "Coats of sealant",
+   "yLabel": "Time (hours)",
+   "bestFitLine": {
+    "slope": 2.75,
+    "intercept": 6.5
+   }
+  }
+ },
+ "correctAnswer": "17.5",
+ "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**The correct answer is $17.5$.**\n\n**The Fast Way (~10s):** $\\hat{y} = 2.75(4) + 6.5 = 11 + 6.5 = 17.5$.\n\n**The Full Solution:**\nStep 1: Substitute $x = 4$ into the line: $2.75 \\times 4 = 11$.\nStep 2: Add the intercept: $11 + 6.5 = 17.5$ hours.\nStep 3: Check against the plot: the data point at $x = 4$ is $(4, 18)$, just above the line's $17.5$. $\\checkmark$\n\n**Common Mistakes:** Adding instead of multiplying, $2.75+4+6.5=13.25$; reading the dot at $x = 4$ ($18$ hours) rather than the line; forgetting the intercept and answering $11$.\n\n**Test Day Takeaway:** Multiply the slope by $x$ first, then add the intercept, and keep decimals exact: $17.5$, not $18$."
+}

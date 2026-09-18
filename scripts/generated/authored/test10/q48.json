@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 2,
- "passage": "When the corroded bronze fragments now known as the Antikythera mechanism were recovered from a Roman-era shipwreck, many scholars took them for the remains of a simple navigational ______ detailed X-ray imaging has since revealed dozens of precisely cut interlocking gears, the components of an intricate device for predicting the positions of the Sun, Moon, and planets.",
+ "passage": "Rail operators retired most of Europe's sleeping cars in the early 2000s, when cheap short-haul flights seemed to have made overnight trains obsolete. Two decades later, travelers looking for alternatives to flying have returned in numbers across ______ the specialized cars needed to carry them take years to order and build, and several relaunched routes have had to begin service with borrowed, decades-old stock.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "instrument, however,"
+   "text": "Europe, however,"
   },
   {
    "id": "B",
-   "text": "instrument however,"
+   "text": "Europe however,"
   },
   {
    "id": "C",
-   "text": "instrument, however;"
+   "text": "Europe, however;"
   },
   {
    "id": "D",
-   "text": "instrument; however,"
+   "text": "Europe; however,"
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The blank joins two independent clauses—one about scholars taking the fragments for a simple instrument, the other about imaging revealing intricate gears—linked by the conjunctive adverb \"however.\" Two independent clauses joined this way need a semicolon before \"however\" and a comma after it. Choice A uses only commas, producing a comma splice. Choice B omits the punctuation before \"however.\" Choice C reverses the marks, putting the comma first and the semicolon after, which is not how a conjunctive adverb is punctuated between clauses."
+ "explanation": "**Choice D is correct.** Two independent clauses meet at the blank, and the second opens with the conjunctive adverb \"however.\" The standard pattern is a semicolon before the conjunctive adverb and a comma after it: \"...have returned in numbers across Europe; however, the specialized cars... take years to order and build...\"\n\n**The Full Solution:**\n- Clause one is complete: travelers \"have returned in numbers across Europe.\"\n- Clause two is complete: \"the specialized cars needed to carry them take years to order and build...\"\n- \"However\" is not a coordinating conjunction, so it cannot join clauses with a comma alone; it needs the semicolon boundary before it.\n\n**Why the other choices are wrong:**\n- A: A comma before \"however\" leaves two independent clauses joined by a comma, a splice that the adverb cannot repair.\n- B: With no boundary before \"however,\" the clauses fuse outright.\n- C: It reverses the marks: the semicolon must precede \"however\" at the clause boundary, and the comma must follow it.",
+ "_meta": {
+  "rule": "semicolon before conjunctive adverb joining independent clauses",
+  "distractors": {
+   "A": "comma splice around however",
+   "B": "fused sentence",
+   "C": "punctuation pair reversed"
+  }
+ }
 }

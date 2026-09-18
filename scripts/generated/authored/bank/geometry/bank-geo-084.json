@@ -1,0 +1,32 @@
+{
+ "id": "bank-geo-084",
+ "question": "In the burette stand shown, a diagonal stay reaches $2$ centimeters farther than the vertical post it braces, and the horizontal base measures $12$ centimeters. How many centimeters of tubing make up the triangle?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     12,
+     0
+    ],
+    [
+     12,
+     35
+    ]
+   ],
+   "sideLabels": [
+    "12 cm",
+    "b",
+    "b + 2"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "84",
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**The correct answer is $84$.**\n\n**The Fast Way (~50s):** $12^2 + b^2 = (b + 2)^2$ collapses to $144 = 4b + 4$, so $b = 35$, the stay is $37$, and $12 + 35 + 37 = 84$.\n\n**The Full Solution:**\n\nStep 1: Let the post be $b$ centimeters; the stay is $b + 2$ and is the hypotenuse, so $12^2 + b^2 = (b + 2)^2$.\n\nStep 2: Expand the right side: $144 + b^2 = b^2 + 4b + 4$. The $b^2$ terms cancel, leaving $140 = 4b$, so $b = 35$ centimeters and the stay is $37$ centimeters.\n\nStep 3: The tubing follows all three sides: $12 + 35 + 37 = 84$ centimeters. Check: $12^2 + 35^2 = 144 + 1225 = 1369 = 37^2$.\n\n**Common Mistakes:**\n\n* $47$ — adding only the base and the post, $12 + 35$, and leaving out the stay.\n* $35$ — stopping at the post's length.\n* $210$ — computing the area $\\frac{1}{2}(12)(35)$ instead of the perimeter.\n\n**Test Day Takeaway:** When the hypotenuse is written as a leg plus a constant, the squared terms cancel and the Pythagorean equation becomes linear."
+}

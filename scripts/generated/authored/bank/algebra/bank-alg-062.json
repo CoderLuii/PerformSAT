@@ -1,0 +1,58 @@
+{
+  "id": "bank-alg-062",
+  "question": "A reservoir's modeled water level, in centimeters, at hour $x$ is given by the function $f$, whose graph is shown in the $xy$-plane. A rival model gives the level as $g(x) = -2x + 13$. At which point do the graphs of the two models meet?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 1,
+      "yIntercept": 4,
+      "xRange": [
+        0,
+        10
+      ],
+      "yRange": [
+        0,
+        16
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 4,
+      "gridInterval": 2,
+      "showPoints": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "label": "f"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-9, -5)$"
+    },
+    {
+      "id": "B",
+      "text": "$(3, 7)$"
+    },
+    {
+      "id": "C",
+      "text": "$(7, 3)$"
+    },
+    {
+      "id": "D",
+      "text": "$(9, 13)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses +2x instead of -2x for g, solving x + 4 = 2x + 13",
+    "C": "reverses the coordinates of the correct point",
+    "D": "drops the -2x term and solves x + 4 = 13"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Find Intersection by Setting Equal**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The graph gives $f(x) = x + 4$; setting $x + 4 = -2x + 13$ yields $3x = 9$, so $x = 3$ and the height is $7$.\n\n**The Full Solution:**\nStep 1: Read $f$ from the graph: it passes through $(0, 4)$ and $(4, 8)$, so its slope is $1$ and $f(x) = x + 4$.\nStep 2: The graphs meet where the outputs agree: $x + 4 = -2x + 13$.\nStep 3: Collect terms: $3x = 9$, so $x = 3$, and $f(3) = 3 + 4 = 7$, giving the point $(3, 7)$. Check: $g(3) = -6 + 13 = 7$, the same height ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-9, -5)$): uses $+2x$ instead of $-2x$ for $g$, solving $x + 4 = 2x + 13$.\n* Choice C ($(7, 3)$): reverses the coordinates of the correct point.\n* Choice D ($(9, 13)$): drops the $-2x$ term and solves $x + 4 = 13$.\n\n**Test Day Takeaway:** Read the graphed function's rule off two lattice points first; only then set the two rules equal."
+}

@@ -1,0 +1,29 @@
+{
+  "id": 22,
+  "question": "In a field-archery round, a hit in the inner ring scores $5$ points and a hit in the outer ring scores $3$ points. An archer scored $254$ points, and the number of outer-ring hits was $2$ fewer than half the number of inner-ring hits. How many outer-ring hits did the archer record?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$18$"
+    },
+    {
+      "id": "B",
+      "text": "$40$"
+    },
+    {
+      "id": "C",
+      "text": "$48$"
+    },
+    {
+      "id": "D",
+      "text": "$58$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the 40 inner-ring hits instead of the outer-ring hits the question asks for",
+    "C": "swaps the relationship, making the inner-ring count 2 fewer than half the outer-ring count, which gives 48 outer-ring hits",
+    "D": "reports the total number of scoring hits, 40 + 18 = 58"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice A is correct.** With $i$ inner-ring and $r$ outer-ring hits, $5i + 3r = 254$ and $r = \\frac{i}{2} - 2$; substituting gives $6.5i = 260$, so $i = 40$ and $r = 18$.\n\n**The Fast Way (~50s):** Replace $r$ with $\\frac{i}{2} - 2$: $5i + 1.5i - 6 = 254$, so $6.5i = 260$, $i = 40$, and $r = 20 - 2 = 18$.\n\n**The Full Solution:**\nStep 1: Name the counts. Let $i$ be inner-ring hits and $r$ outer-ring hits. The score gives $5i + 3r = 254$.\nStep 2: Translate the comparison. \"Two fewer than half the inner-ring hits\" is $\\frac{i}{2} - 2$, so $r = \\frac{i}{2} - 2$. Substitute into the score equation: $5i + 3\\left(\\frac{i}{2} - 2\\right) = 254$, which becomes $5i + 1.5i - 6 = 254$.\nStep 3: Solve: $6.5i = 260$, so $i = 40$, and then $r = \\frac{40}{2} - 2 = 18$. Check: $5(40) + 3(18) = 200 + 54 = 254$ points, and $18$ is indeed $2$ fewer than half of $40$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($40$): is the inner-ring count. It comes out of the algebra first, which makes it easy to stop there.\n* Choice C ($48$): reverses the comparison to $i = \\frac{r}{2} - 2$, giving $11i = 242$, $i = 22$, and $r = 48$. The sentence defines the outer count in terms of the inner count, not the other way around.\n* Choice D ($58$): totals the two counts, $40 + 18$, answering how many scoring hits there were rather than how many were in the outer ring.\n\n**Test Day Takeaway:** Write the comparison sentence as an equation exactly in the order it is stated, then circle the letter the question asks for before you start solving."
+}

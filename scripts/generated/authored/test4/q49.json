@@ -5,30 +5,30 @@
   "band": 4,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
+  "module": 2,
+  "passage": "______ a hydrologist waded into the same bend of the river every week for eleven years, lowering a current meter at measured intervals across the channel and noting the stage, the ice, and the drift of every season in a field book that colleagues still consult.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "While studying the pack's behavior"
+      "text": "While gauging the river's flow by hand"
     },
     {
       "id": "B",
-      "text": "Having studied the pack's behavior,"
+      "text": "Having gauged the river's flow by hand,"
     },
     {
       "id": "C",
-      "text": "Studying the pack's behavior,"
+      "text": "Gauging the river's flow by hand,"
     },
     {
       "id": "D",
-      "text": "Studying the pack's behavior"
+      "text": "Gauging the river's flow by hand"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The introductory phrase modifies \"a biologist,\" and the studying she did was the same activity as the three winters of following the pack, so the present participle \"Studying …,\" with its closing comma, fits. The perfect participle \"Having studied\" (B) wrongly implies the studying was finished before the following began; \"While studying\" (A) is a subordinate fragment with no finite verb; and \"Studying\" without a comma (D) runs the phrase into the subject.",
-  "passage": "______ a biologist spent three winters following a single wolf pack across the high mountains of the northern Rockies, recording every hunt, every birth, and every territorial dispute that she and her two field assistants were able to observe from a distance.",
+  "explanation": "**Choice C is correct.** An introductory present-participial phrase modifying \"a hydrologist\" must end with a comma before the main clause begins, and its tense must fit the ongoing weekly work the sentence describes.\n\n**The Full Solution:**\n- The main clause is \"a hydrologist waded into the same bend ... every week for eleven years.\"\n- \"Gauging the river's flow by hand\" describes what the wading amounted to — action simultaneous with the waded visits, so the present participle is right.\n- An introductory modifier is set off from the clause it modifies with a comma: \"Gauging the river's flow by hand, a hydrologist waded ...\"\n\n**Why the other choices are wrong:**\n- A: The subordinate \"While gauging ...\" lacks the required comma before the main clause.\n- B: \"Having gauged\" marks the gauging as finished before the waded visits began, contradicting the eleven years of simultaneous work.\n- D: The participial phrase is correct but the comma is missing, running the modifier into its clause.",
   "_meta": {
-    "anchor": "wolf-pack field study; present-participial modifier; single defensible answer"
-  },
-  "module": 2
+    "anchor": "stream gauging by hand; present-participial modifier; single defensible answer"
+  }
 }

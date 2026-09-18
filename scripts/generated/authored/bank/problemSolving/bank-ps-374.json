@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-374",
+  "question": "An investment of $\\$4{,}000$ earns $8\\%$ simple annual interest. A second investment of $\\$4{,}000$ earns $8\\%$ interest compounded annually. To the nearest dollar, how much greater is the value of the second investment than the value of the first investment after $5$ years?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$277$"
+    },
+    {
+      "id": "B",
+      "text": "$320$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}600$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}877$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports one year's interest on $\\$4{,}000$",
+    "C": "reports the simple interest earned over the $5$ years",
+    "D": "reports the compound interest earned, not the difference between the two accounts"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Simple Interest**\n\n**Choice A is correct.**\n\n**The Fast Way (~45s):** Simple: $4000 + 4000(0.08)(5) = 5{,}600$. Compound: $4000(1.08)^5 \\approx 5{,}877.31$. The difference is about $\\$277$.\n\n**The Full Solution:**\nStep 1: The simple-interest value is $4000 + 4000(0.08)(5) = 4000 + 1600 = 5{,}600$ dollars.\nStep 2: The compound value is $4000(1.08)^5 \\approx 4000(1.469328) \\approx 5{,}877.31$ dollars.\nStep 3: The difference is $5877.31 - 5600 = 277.31$, which is $\\$277$ to the nearest dollar. Check: compounding earns $\\$1{,}877$ of interest against $\\$1{,}600$ of simple interest, and $1877 - 1600 = 277$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($320$): reports one year's interest on $\\$4{,}000$\n* Choice C ($1{,}600$): reports the simple interest earned over the $5$ years\n* Choice D ($1{,}877$): reports the compound interest earned, not the difference between the two accounts\n\n**Test Day Takeaway:** Compound interest earns interest on interest, so it always exceeds simple interest at the same rate; the question asks for the gap, not for either balance."
+}

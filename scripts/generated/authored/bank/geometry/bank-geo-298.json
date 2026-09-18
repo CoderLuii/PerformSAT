@@ -1,0 +1,29 @@
+{
+ "question": "A subway ventilation shaft is a cylinder $40$ meters deep with a radius of $3$ meters, and a concrete lining $0.5$ meter thick is poured against the shaft wall for the full depth. What is the volume, in cubic meters, of the lining?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$110\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$120\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$360\\pi$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "squares the thickness, computing pi times 0.5 squared times 40",
+  "C": "multiplies the curved surface 2 pi r h by the thickness",
+  "D": "reports the volume of the entire shaft, pi times 9 times 40"
+ },
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The lining is the difference of two cylinders: $\\pi(3^2 - 2.5^2)(40) = \\pi(2.75)(40) = 110\\pi$ cubic meters.\n\n**The Full Solution:**\nStep 1: The shaft wall has radius $3$ meters, and a $0.5$-meter lining poured against it leaves an open radius of $3 - 0.5 = 2.5$ meters.\nStep 2: The lining is the region between the two circles, with cross-sectional area $\\pi(3^2) - \\pi(2.5^2) = \\pi(9 - 6.25) = 2.75\\pi$ square meters.\nStep 3: Multiply by the $40$-meter depth: $2.75\\pi(40) = 110\\pi$ cubic meters. Check: the lining must be less than the whole shaft's $360\\pi$, and $110\\pi$ is ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($10\\pi$): squares the thickness itself, as if the lining were a $0.5$-meter-radius cylinder.\n* Choice C ($120\\pi$): multiplies the shaft's curved surface by the thickness, which overstates the ring because the inner circle is smaller.\n* Choice D ($360\\pi$): gives the entire shaft's volume and ignores the open space inside the lining.\n\n**Test Day Takeaway:** A lining or pipe wall is a difference of squares of radii — subtract the areas first, then multiply by the length.",
+ "id": "bank-geo-298"
+}

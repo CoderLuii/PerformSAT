@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-379",
+  "question": "A monitoring station placed on the $x$-axis must be the same distance from each of the two points shown in the $xy$-plane, where each unit represents one kilometer of ground distance. What is the $x$-coordinate of the point at which the station must be placed?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -4,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "xMin": -7,
+      "xMax": 9,
+      "yMin": -4,
+      "yMax": 12
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$10$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the x-coordinate of the midpoint of the two points",
+    "C": "averages the two y-coordinates",
+    "D": "reports the horizontal separation of the two points"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** Setting $(x + 4)^2 + 9 = (x - 6)^2 + 49$ gives $8x + 25 = -12x + 85$, so $20x = 60$ and $x = 3$.\n\n**The Full Solution:**\nStep 1: The station is $(x, 0)$, and the two points are $(-4, 3)$ and $(6, 7)$. Equal distances means equal squared distances: $(x + 4)^2 + (0 - 3)^2 = (x - 6)^2 + (0 - 7)^2$.\nStep 2: Expand both sides: $x^2 + 8x + 16 + 9 = x^2 - 12x + 36 + 49$, so $8x + 25 = -12x + 85$.\nStep 3: Then $20x = 60$ and $x = 3$. Check: from $(3, 0)$ the distances are $\\sqrt{7^2 + 3^2} = \\sqrt{58}$ and $\\sqrt{3^2 + 7^2} = \\sqrt{58}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): uses the midpoint of the two points, which is equidistant only when the points are level with each other.\n* Choice C ($5$): averages the two $y$-coordinates, which are not $x$-coordinates at all.\n* Choice D ($10$): reports the horizontal separation between the two points.\n\n**Test Day Takeaway:** Equidistant conditions are cleanest squared: set the two squared distances equal and the $x^2$ terms cancel on their own."
+}

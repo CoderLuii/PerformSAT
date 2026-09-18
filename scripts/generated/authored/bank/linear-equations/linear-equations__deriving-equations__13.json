@@ -1,0 +1,55 @@
+{
+ "id": 13,
+ "question": "During calibration a pressure sensor produced the four output voltages listed in the table for the applied pressures shown. Which equation gives the output $V$, in volts, at an applied pressure of $p$ kilopascals?",
+ "diagram": {
+  "type": "table",
+  "params": {
+   "xHeader": "Applied pressure (kPa)",
+   "yHeader": "Output (V)",
+   "rows": [
+    [
+     "10",
+     "1.4"
+    ],
+    [
+     "20",
+     "2.0"
+    ],
+    [
+     "30",
+     "2.6"
+    ],
+    [
+     "40",
+     "3.2"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$V = 0.6p + 0.8$"
+  },
+  {
+   "id": "B",
+   "text": "$V = 0.8p + 0.06$"
+  },
+  {
+   "id": "C",
+   "text": "$V = 0.06p + 1.4$"
+  },
+  {
+   "id": "D",
+   "text": "$V = 0.06p + 0.8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 0.6, the rise per table row, as the rise per kilopascal",
+  "B": "swaps the rate and the value at zero pressure",
+  "C": "uses the first listed output, 1.4, as the value at zero pressure"
+ },
+ "correctAnswer": "D",
+ "hint": "The pressure values step up by equal amounts, so watch what one step does to the output.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~40s):** Each $10$-kilopascal step raises the output by $0.6$ volt, so the rate is $0.06$ volt per kilopascal, and backing up from $(10,\\ 1.4)$ gives $0.8$ volt at $p = 0$.\n\n**The Full Solution:**\nStep 1: The outputs rise by $0.6$ volt for every $10$-kilopascal increase, so the relationship is linear with slope $\\frac{0.6}{10} = 0.06$ volt per kilopascal.\nStep 2: Write $V = 0.06p + b$ and substitute the first row: $1.4 = 0.06(10) + b = 0.6 + b$, so $b = 0.8$.\nStep 3: The equation is $V = 0.06p + 0.8$.\n\nCheck: At $p = 40$ the equation gives $0.06(40) + 0.8 = 2.4 + 0.8 = 3.2$ volts, matching the last row. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($V = 0.6p + 0.8$): treats the $0.6$-volt jump between rows as the change per kilopascal; at $p = 40$ it predicts $24.8$ volts.\n* Choice B ($V = 0.8p + 0.06$): swaps the rate and the value at zero pressure.\n* Choice C ($V = 0.06p + 1.4$): uses the first recorded output as the value at $p = 0$, ignoring that the first row is at $10$ kilopascals.\n\n**Test Day Takeaway:** Divide the change in output by the change in input, not by the number of rows."
+}

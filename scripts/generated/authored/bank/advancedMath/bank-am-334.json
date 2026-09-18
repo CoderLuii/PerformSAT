@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-334",
+  "question": "The function $h$ is defined by $h(x) = 3x^2 + 6x - 45$. In the $xy$-plane, the graph of $y = h(x)$ intersects the $x$-axis at points $M$ and $N$. What is the length of $\\overline{MN}$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$8$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the sum of the zeros",
+    "B": "reports only the positive zero",
+    "C": "reports half the distance"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** Factor out $3$: $3(x^2 + 2x - 15) = 3(x + 5)(x - 3)$, so the zeros are $-5$ and $3$ and $MN = 8$.\n\n**The Full Solution:**\nStep 1: Set $h(x) = 0$ and factor out the common factor: $3\\left(x^2 + 2x - 15\\right) = 0$.\nStep 2: $x^2 + 2x - 15 = (x + 5)(x - 3)$, so the zeros are $x = -5$ and $x = 3$; dividing by $3$ does not change where the graph crosses.\nStep 3: $MN = |3 - (-5)| = 8$. Check: $h(-5) = 75 - 30 - 45 = 0$ and $h(3) = 27 + 18 - 45 = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): uses $|-5 + 3| = 2$, adding the zeros instead of subtracting.\n* Choice B ($3$): reports only the positive zero.\n* Choice C ($4$): reports the distance from the axis of symmetry $x = -1$ to one intercept, which is half of $MN$.\n\n**Test Day Takeaway:** Divide out the leading coefficient before factoring — it changes the shape of the parabola but not its $x$-intercepts."
+}

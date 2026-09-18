@@ -1,0 +1,66 @@
+{
+ "id": 5,
+ "question": "The graph shown gives a grain-silo probe's moisture reading $m(x)$, in percent, at depth $x$ meters. Exactly one depth satisfies $m(x) = 14 - m(x)$. At what depth, in meters, does that occur?",
+ "diagram": {
+  "type": "piecewiseLinear",
+  "params": {
+   "points": [
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     12,
+     11
+    ]
+   ],
+   "xRange": [
+    0,
+    12
+   ],
+   "yRange": [
+    0,
+    12
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "xLabel": "Depth (m)",
+   "yLabel": "Moisture (%)"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0$"
+  },
+  {
+   "id": "B",
+   "text": "$2$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves m(x) = -7 and reads the depth of the lowest reading",
+  "C": "reports the moisture value 7 instead of the depth",
+  "D": "solves m(x) = 14 and picks the deepest point on the graph"
+ },
+ "correctAnswer": "B",
+ "hint": "Nothing on the graph reads $14$, so the equation has to be simplified first.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** $m(x) = 14 - m(x)$ gives $2m(x) = 14$, so $m(x) = 7$, and the graph reaches $7$ percent only at $x = 2$.\n\n**The Full Solution:**\nStep 1: Add $m(x)$ to both sides: $2m(x) = 14$, so $m(x) = 7$.\nStep 2: Read across the graph at a height of $7$ percent. The curve rises from $(0, 1)$ to $(3, 10)$, crossing $7$ once, and it never returns to $7$ afterward because it stays at or above $8$ percent from $x = 3$ on.\nStep 3: That single crossing is at $x = 2$. Check: the segment from $(0, 1)$ to $(3, 10)$ rises $3$ percent per meter, so at $x = 2$ the reading is $1 + 3(2) = 7$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$): solving $m(x) = -7$ after moving the term the wrong way, then reading the depth of the lowest point.\n* Choice C ($7$): reporting the moisture reading $7$ instead of the depth the question asks for.\n* Choice D ($12$): solving $2m(x) = 14$ as $m(x) = 14$ and picking the deepest point, where the reading is greatest.\n\n**Test Day Takeaway:** Collect the function on one side before you read the graph; only then does the picture answer the question."
+}

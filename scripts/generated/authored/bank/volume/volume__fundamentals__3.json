@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "The volume of a right prism is $V = Bh$, where $B$ is the area of a base and $h$ is the height. If the base area of a right prism is tripled and its height is unchanged, how does the volume of the prism change?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It is multiplied by $\\frac{1}{3}$."
+  },
+  {
+   "id": "B",
+   "text": "It is multiplied by $3$."
+  },
+  {
+   "id": "C",
+   "text": "It is multiplied by $9$."
+  },
+  {
+   "id": "D",
+   "text": "It is multiplied by $27$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by $3$ instead of multiplying by it",
+  "C": "squares the factor, as if two dimensions had changed",
+  "D": "cubes the factor, as if all three dimensions had changed"
+ },
+ "correctAnswer": "B",
+ "hint": "Only one of the two quantities in the formula changed.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** $V = Bh$ is a single product, so tripling $B$ triples $V$.\n\n**The Full Solution:**\nStep 1: The original volume is $V = Bh$.\nStep 2: Replacing $B$ with $3B$ while keeping $h$ gives $V^{\\prime} = (3B)h = 3(Bh)$.\nStep 3: So $V^{\\prime} = 3V$, three times the original volume.\n\nVerification: A prism with $B = 10$ and $h = 4$ has $V = 40$; with $B = 30$ and $h = 4$ it has $V = 120 = 3(40)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (It is multiplied by $\\frac{1}{3}$.): divides by $3$ instead of multiplying by it.\n* Choice C (It is multiplied by $9$.): squares the factor, as if two dimensions had changed.\n* Choice D (It is multiplied by $27$.): cubes the factor, as if all three dimensions had changed.\n\n**Test Day Takeaway:** Only the quantities that actually change contribute a factor — a tripled base area is one factor of $3$, not three of them."
+}

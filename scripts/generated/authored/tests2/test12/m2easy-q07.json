@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "During a contact window a deep-space probe transmits $f(x) = 3x + c$ megabytes in $x$ hours, where the constant $c$ accounts for a fixed header block sent once per window. Given that $f(2) = 17$, what is the value of $f(6)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$29$"
+  },
+  {
+   "id": "C",
+   "text": "$33$"
+  },
+  {
+   "id": "D",
+   "text": "$51$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the input 2 as the constant, computing 3(6) + 2",
+  "C": "finds c = 17 - 2 = 15 by subtracting the input instead of 3 times the input",
+  "D": "triples f(2), treating f as if it were proportional"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $f(2) = 6 + c = 17$ gives $c = 11$, so $f(6) = 18 + 11 = 29$.\n\n**The Full Solution:**\nStep 1: Substitute $x = 2$ into the rule: $f(2) = 3(2) + c = 6 + c$.\nStep 2: Set that equal to the given output: $6 + c = 17$, so $c = 11$ and the function is $f(x) = 3x + 11$.\nStep 3: Evaluate at $x = 6$: $f(6) = 3(6) + 11 = 18 + 11 = 29$. Check the rule against the given data point: $f(2) = 3(2) + 11 = 17$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): plugs the input $2$ in where the constant belongs, computing $3(6) + 2$. The number $2$ is an hour count, not the header size.\n* Choice C ($33$): finds $c = 17 - 2 = 15$ by subtracting the input rather than $3(2) = 6$, then computes $18 + 15$.\n* Choice D ($51$): multiplies $f(2)$ by $3$ because the input tripled. A function with a nonzero constant term is not proportional, so outputs do not scale with inputs.\n\n**Test Day Takeaway:** Pin the unknown constant with the given data point first, then evaluate. Never scale outputs in proportion to inputs unless the constant term is zero."
+}

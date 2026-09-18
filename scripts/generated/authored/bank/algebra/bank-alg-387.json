@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-387",
+  "question": "In the $xy$-plane, point $M(3, -1)$ is the midpoint of segment $PQ$, and point $N(7, 4)$ is the midpoint of segment $QR$. If point $P$ has coordinates $(-2, 3)$, what are the coordinates of point $R$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\left(5, \\dfrac{3}{2}\\right)$"
+    },
+    {
+      "id": "B",
+      "text": "$(8, -5)$"
+    },
+    {
+      "id": "C",
+      "text": "$(16, 5)$"
+    },
+    {
+      "id": "D",
+      "text": "$(6, 13)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "finds the midpoint of M and N",
+    "B": "stops after finding Q",
+    "C": "reflects P through N instead of reflecting Q through N"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** $Q = 2M - P = (6 + 2, -2 - 3) = (8, -5)$; then $R = 2N - Q = (14 - 8, 8 + 5) = (6, 13)$.\n\n**The Full Solution:**\nStep 1: Find $Q$ from the first midpoint. Since $M$ is the midpoint of $PQ$, each coordinate of $Q$ is twice the coordinate of $M$ minus the coordinate of $P$: $Q = (2(3) - (-2), 2(-1) - 3) = (8, -5)$.\nStep 2: Find $R$ from the second midpoint. Since $N$ is the midpoint of $QR$: $R = (2(7) - 8, 2(4) - (-5)) = (6, 13)$.\nStep 3: Check both midpoints. Midpoint of $P(-2, 3)$ and $Q(8, -5)$: $\\left(\\dfrac{6}{2}, \\dfrac{-2}{2}\\right) = (3, -1) = M$. Midpoint of $Q(8, -5)$ and $R(6, 13)$: $\\left(\\dfrac{14}{2}, \\dfrac{8}{2}\\right) = (7, 4) = N$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\left(5, \\dfrac{3}{2}\\right)$): averages $M$ and $N$, but neither midpoint is an endpoint of a segment with the other.\n* Choice B ($(8, -5)$): correctly finds $Q$ but stops there instead of continuing to $R$.\n* Choice C ($(16, 5)$): computes $2N - P$, reflecting the wrong point through $N$; $N$ is the midpoint of $QR$, not $PR$.\n\n**Test Day Takeaway:** Chain midpoint problems one segment at a time, using endpoint $= 2(\\text{midpoint}) - (\\text{other endpoint})$, and confirm each recovered point by recomputing its midpoint."
+}

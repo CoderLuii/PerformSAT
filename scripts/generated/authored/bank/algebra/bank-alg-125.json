@@ -1,0 +1,49 @@
+{
+ "id": "bank-alg-125",
+ "question": "Three ordered pairs from a levee inspection log are shown; each satisfies the same linear equation in $x$ and $y$. For what value of the constant $k$ does the system consisting of that equation and $kx - 4y = 20$ have no solution?",
+ "questionTable": {
+  "headers": [
+   "Hours worked, $x$",
+   "Segments cleared, $y$"
+  ],
+  "rows": [
+   [
+    "1",
+    "7"
+   ],
+   [
+    "3",
+    "13"
+   ],
+   [
+    "5",
+    "19"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-12$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "attaches the minus sign of -4y to k, solving k / (-4) = 3 to get -12",
+  "B": "reports the slope 3 itself instead of the coefficient k that produces it",
+  "C": "matches the constants, 20 / 4 = 5, instead of matching the slopes"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The table's line has slope $3$; $kx - 4y = 20$ has slope $\\frac{k}{4}$, so parallel lines need $\\frac{k}{4} = 3$, giving $k = 12$ (and the constants differ, so the lines are distinct).\n\n**The Full Solution:**\nStep 1: Build the equation behind the table. From $(1, 7)$ to $(3, 13)$ the slope is $\\frac{13 - 7}{3 - 1} = 3$, and $y = 3x + 4$ fits all three rows, so the equation is $3x - y = -4$.\nStep 2: A system has no solution when the two lines are parallel but distinct. Solving $kx - 4y = 20$ for $y$ gives $y = \\frac{k}{4}x - 5$, so its slope is $\\frac{k}{4}$. Setting $\\frac{k}{4} = 3$ gives $k = 12$.\nStep 3: Verify the lines are distinct: with $k = 12$, $12x - 4y = 20$ reduces to $3x - y = 5$, and $5 \\neq -4$, so the lines never meet. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-12$): attaches the minus sign from $-4y$ to $k$ and solves $\\frac{k}{-4} = 3$, producing $-12$, which gives slope $-3$ and one intersection.\n* Choice B ($3$): reports the slope $3$ itself instead of the coefficient $k$ that produces that slope.\n* Choice C ($5$): matches the constants, $\\frac{20}{4} = 5$, instead of matching the slopes.\n\n**Test Day Takeaway:** For \"no solution,\" force the slopes to match and then CONFIRM the constants do not; solving for $y$ first keeps the sign of the $y$-coefficient from being lost."
+}

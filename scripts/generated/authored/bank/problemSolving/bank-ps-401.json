@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-401",
+  "question": "A greenhouse trial assigned $180$ plants to one of two fertilizer treatments and recorded whether each plant flowered, as summarized in the table. If one of these plants is selected at random, what is the probability of selecting a plant that received treatment B?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Flowered",
+        "Did not flower",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Treatment A",
+          "48",
+          "27",
+          "75"
+        ],
+        [
+          "Treatment B",
+          "63",
+          "42",
+          "105"
+        ],
+        [
+          "Total",
+          "111",
+          "69",
+          "180"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{7}{30}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{7}{20}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{5}{12}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{7}{12}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses only the $42$ treatment B plants that did not flower",
+    "B": "uses only the $63$ treatment B plants that flowered",
+    "C": "gives the probability of selecting a plant that received treatment A"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The treatment B row totals $105$ out of $180$ plants, so the probability is $\\frac{105}{180} = \\frac{7}{12}$.\n\n**The Full Solution:**\nStep 1: The question places no condition on flowering, so the whole treatment B row is favorable.\nStep 2: That row totals $63 + 42 = 105$ plants out of the $180$ in the trial.\nStep 3: The probability is $\\frac{105}{180} = \\frac{7}{12}$, dividing numerator and denominator by $15$. Check: treatment A accounts for $\\frac{75}{180} = \\frac{5}{12}$, and $\\frac{5}{12} + \\frac{7}{12} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{7}{30}$): uses only the $42$ treatment B plants that did not flower\n* Choice B ($\\frac{7}{20}$): uses only the $63$ treatment B plants that flowered\n* Choice C ($\\frac{5}{12}$): gives the probability of selecting a plant that received treatment A\n\n**Test Day Takeaway:** A single cell answers a joint question; a row or column total answers a marginal one. Match the total to the number of conditions in the question."
+}

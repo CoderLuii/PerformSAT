@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "A public-health model gives the number of new daily cases $t$ weeks after an intervention as $c(t) = 3t^2 - 24t + 59$, for values of $t$ from 0 through 10. According to this model, what is the least number of new daily cases during that period?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11$"
+  },
+  {
+   "id": "B",
+   "text": "$43$"
+  },
+  {
+   "id": "C",
+   "text": "$75$"
+  },
+  {
+   "id": "D",
+   "text": "$107$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts 16 rather than 3 times 16 when moving the completed square outside the parentheses, giving 59 - 16",
+  "C": "adds 16 instead of subtracting 48, giving 59 + 16",
+  "D": "adds 48 instead of subtracting it, giving 59 + 48"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Quadratic — Completing the Square**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Factor out the $3$ and complete the square: $3(t^2 - 8t) + 59 = 3(t - 4)^2 + 11$. The squared term is never negative, so the least value is $11$.\n\n**The Full Solution:**\nStep 1: Factor $3$ from the variable terms: $c(t) = 3(t^2 - 8t) + 59$.\nStep 2: Half of $-8$ is $-4$ and $(-4)^2 = 16$, so $t^2 - 8t = (t - 4)^2 - 16$. Multiplying that $-16$ by the factored-out $3$ gives $-48$: $c(t) = 3(t - 4)^2 - 48 + 59 = 3(t - 4)^2 + 11$.\nStep 3: The minimum occurs at $t = 4$, which lies in the interval from $0$ to $10$, and there $c(4) = 3(16) - 24(4) + 59 = 48 - 96 + 59 = 11$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($43$): this is $59 - 16$. The $16$ sits inside the parentheses, so it is multiplied by the factored-out $3$ before it leaves them.\n* Choice C ($75$): this is $59 + 16$, adding the completing term instead of subtracting it and skipping the factor of $3$ as well.\n* Choice D ($107$): this is $59 + 48$. The correct constant $-48$ is subtracted, because $(t - 4)^2$ overshoots $t^2 - 8t$ by $16$ in each of the three copies.\n\n**Test Day Takeaway:** When the leading coefficient is not $1$, factor it out of the variable terms first — the constant you add back is multiplied by that coefficient. The vertex constant is then the minimum for an upward parabola."
+}

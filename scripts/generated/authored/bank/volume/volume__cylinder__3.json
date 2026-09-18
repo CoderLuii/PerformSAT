@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "A cylindrical can has a diameter of $9$ centimeters and a height of $16$ centimeters. What is the volume, in cubic centimeters, of the can?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$108\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$144\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$324\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}296\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the cone formula, dividing the correct volume by $3$",
+  "B": "doubles the radius instead of squaring it",
+  "D": "uses the diameter as the radius"
+ },
+ "correctAnswer": "C",
+ "hint": "The formula wants a radius, and the problem hands you a diameter.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** The radius is $4.5$, so $V = \\pi(4.5)^2(16) = 324\\pi$.\n\n**The Full Solution:**\nStep 1: The radius is half the diameter: $r = \\frac{9}{2} = 4.5$ centimeters.\nStep 2: $r^2 = 20.25$ square centimeters.\nStep 3: $V = \\pi(20.25)(16) = 324\\pi$ cubic centimeters.\n\nVerification: $20.25 \\cdot 16 = 324$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($108\\pi$): applies the cone formula, dividing the correct volume by $3$.\n* Choice B ($144\\pi$): doubles the radius instead of squaring it.\n* Choice D ($1{,}296\\pi$): uses the diameter as the radius.\n\n**Test Day Takeaway:** A stated diameter has to be halved before it enters $\\pi r^2 h$."
+}

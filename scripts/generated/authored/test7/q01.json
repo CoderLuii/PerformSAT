@@ -1,31 +1,31 @@
 {
-  "id": 701,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "In the tropical forests of Mexico and beyond, the gradual loss of animal populations from places where no species has yet gone extinct is reshaping the plant life. Ecologists call this quiet crisis \"defaunation.\" Field studies suggest that the decline ______ plant communities well before any extinctions are recorded: when large seed-dispersing animals disappear, trees with big seeds fail to spread, and the forest's composition slowly tilts toward smaller-seeded plants.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "damages"
-    },
-    {
-      "id": "B",
-      "text": "preserves"
-    },
-    {
-      "id": "C",
-      "text": "examines"
-    },
-    {
-      "id": "D",
-      "text": "alters"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage describes a gradual change in the makeup of the forest — large-seeded trees give way to smaller-seeded plants — so the decline \"alters\" plant communities. \"Damages\" overstates and editorializes where the text frames the change as a shift in composition, not harm per se. \"Preserves\" is the opposite of what happens, and \"examines\" makes no sense for a process acting on the forest rather than studying it."
+ "id": 701,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "Tardigrades, nearly microscopic animals that live in moss and soil, can survive being dried out completely. As the water around it disappears, a tardigrade draws in its legs, contracts into a compact form, and ______ nearly all activity: its metabolism slows until it is barely measurable, and the animal simply waits, sometimes for years, until moisture returns.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "resumes"
+  },
+  {
+   "id": "B",
+   "text": "conceals"
+  },
+  {
+   "id": "C",
+   "text": "observes"
+  },
+  {
+   "id": "D",
+   "text": "suspends"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The colon spells out what the blank means: metabolism slows until it is barely measurable and the animal waits for water. Activity is put on hold, and \"suspends\" means exactly that.\n\n**The Full Solution:**\n- The clue sits right after the blank: the tardigrade's metabolism \"slows until it is barely measurable,\" and the animal \"waits...until moisture returns.\"\n- The blank therefore needs a word meaning to pause or halt temporarily, and \"suspends\" carries that meaning.\n- The opening sentence — the animal survives drying out — confirms that its life processes stop for a time rather than continue or end for good.\n\n**Why the other choices are wrong:**\n- A: \"Resumes\" means starts up again, the reverse of what happens as the water disappears.\n- B: \"Conceals\" would mean the tardigrade hides its activity, but the text describes activity stopping, not being kept out of sight.\n- C: \"Observes\" would have the animal watching its own activity, which does not fit a description of shutting down."
 }

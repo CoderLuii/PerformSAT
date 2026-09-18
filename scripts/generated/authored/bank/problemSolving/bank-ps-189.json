@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-189",
+  "question": "Of the $80$ entries submitted to a photography contest, $45\\%$ were black-and-white photographs. How many of the entries were black-and-white photographs?",
+  "correctAnswer": "36",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**The correct answer is $36$.**\n\n**The Fast Way (~5s):** $0.45 \\times 80 = 36$.\n\n**The Full Solution:**\nStep 1: The base is the total number of entries, $80$, and the percent is $45\\%$.\nStep 2: Multiply: $\\frac{45}{100} \\times 80 = 36$.\nStep 3: Check: $10\\%$ of $80$ is $8$, so $45\\%$ is $4.5 \\times 8 = 36$. $\\checkmark$\n\n**Common Mistakes:** Computing the complement, $0.55 \\times 80 = 44$ (the color entries); dividing $80 \\div 45 \\approx 1.78$; or misplacing the decimal to get $0.045 \\times 80 = 3.6$.\n\n**Test Day Takeaway:** For a percent of a number, the $10\\%$ benchmark ($\\frac{1}{10}$ of the base) is the fastest mental check — scale it up to the percent you need."
+}

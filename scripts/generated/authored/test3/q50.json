@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "expression-of-ideas",
  "skill": "transitions",
+ "type": "multiple-choice",
+ "passage": "The spring phytoplankton bloom in cold northern seas was long explained by sunlight: as the days lengthen, the upper ocean warms and settles into layers, trapping drifting cells near the bright surface, where growth outruns loss. Satellite records complicate that story, revealing blooms that begin in the dead of winter, weeks before the surface warms or forms layers at all. ______ some oceanographers now argue that winter storms themselves set the stage — by churning phytoplankton through so deep a layer of water that the tiny grazers that normally hold them in check can no longer find them.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "Likewise,"
+   "text": "In contrast,"
   },
   {
    "id": "B",
-   "text": "Then,"
+   "text": "Accordingly,"
   },
   {
    "id": "C",
-   "text": "For example,"
+   "text": "In the meantime,"
   },
   {
    "id": "D",
-   "text": "Otherwise,"
+   "text": "Similarly,"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"Then,\". The first sentence sets the 1980s baseline: a clinical picture of opportunistic infections and steady decline, with treatments that extended survival but could not halt viral replication. The sentence after the blank introduces a mid-1990s development — the case for a three-drug combination that suppressed the virus far below earlier limits and could make the infection chronic and manageable. The relation is simple temporal succession, marked by \"Then,\" and confirmed by the cue \"in the mid-1990s.\" \"Likewise,\" would treat the development as a parallel to the baseline rather than a change to it; \"For example,\" would make it an instance of the baseline; and \"Otherwise,\" would signal a counterfactual the passage does not pose.",
+ "explanation": "**Choice B is correct.** The final sentence is the response the awkward evidence demands: because satellites show blooms starting before the sunlight mechanism could operate, oceanographers propose a new account. \"Accordingly\" signals a step taken in line with what was just established.\n\n**The Full Solution:**\n- Sentence two undermines the old explanation with winter-start blooms.\n- Sentence three offers a hypothesis engineered to fit that very observation — storms, a winter phenomenon, as the trigger. The new argument follows from the complication, so the transition must mark consequence.\n\n**Why the other choices are wrong:**\n- A: \"In contrast\" would oppose the final sentence to the satellite findings, but the storm hypothesis is motivated by those findings, not set against them.\n- C: \"In the meantime\" implies simultaneous, unrelated developments; the relationship here is evidence-then-response.\n- D: \"Similarly\" claims the storm proposal parallels the satellite records, but one is data and the other is an explanation prompted by the data — sequence, not resemblance.",
  "_meta": {
-  "anchor": "David Ho — virologist; mid-1990s case for three-drug combination therapy for HIV"
- },
- "passage": "Through the 1980s, the dominant clinical picture of AIDS emphasized opportunistic infections and steady late-stage decline; the treatments developed then extended survival but could not halt the underlying viral replication. ______ in the mid-1990s, the virologist David Ho and his colleagues argued that combining three drugs acting at different points in the HIV life cycle could suppress the virus far below the level any single drug had reached, turning a late-stage infection into a manageable chronic condition for many patients with sustained access to care.",
- "type": "multiple-choice"
+  "anchor": "Winter onset of phytoplankton blooms — storm-dilution hypothesis; consequence transition"
+ }
 }

@@ -1,0 +1,46 @@
+{
+ "id": "bank-alg-278",
+ "question": "The graph of the function $g$ in the $xy$-plane is shown. The vertex of the graph is $(-3, 2)$, and the graph passes through the point $(-1, -6)$. If $g(x) = px^2 + qx + r$, where $p$, $q$, and $r$ are constants, what is the value of $p + q + r$?",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    -3,
+    2
+   ],
+   "a": -2,
+   "showPoints": [
+    [
+     -1,
+     -6
+    ]
+   ],
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-32$"
+  },
+  {
+   "id": "B",
+   "text": "$-30$"
+  },
+  {
+   "id": "C",
+   "text": "$-16$"
+  },
+  {
+   "id": "D",
+   "text": "$34$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "forgets the +2 when expanding (r = -18)",
+  "C": "reports r alone",
+  "D": "uses p = 2 (sign error from the point)"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $p + q + r = g(1)$. With vertex $(-3, 2)$ the function is $g(x) = a(x + 3)^2 + 2$; the point gives $4a + 2 = -6$, so $a = -2$, and $g(1) = -2(16) + 2 = -30$.\n\n**The Full Solution:**\nStep 1: Vertex form: $g(x) = a(x + 3)^2 + 2$. Substitute $(-1, -6)$: $a(2)^2 + 2 = -6$, so $a = -2$.\nStep 2: Expand: $-2(x^2 + 6x + 9) + 2 = -2x^2 - 12x - 18 + 2 = -2x^2 - 12x - 16$, so $p = -2$, $q = -12$, $r = -16$.\nStep 3: $p + q + r = -2 - 12 - 16 = -30$. Check: $g(1) = -2(4)^2 + 2 = -30$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-32$): drops the $+2$ from the vertex form, using $r = -18$.\n* Choice C ($-16$): reports $r$ alone instead of the sum of the three coefficients.\n* Choice D ($34$): solves $4a + 2 = -6$ with a sign error to get $a = 2$; the graph opens downward, so $a$ must be negative.\n\n**Test Day Takeaway:** $p + q + r$ is just $g(1)$; once $a$ is known, evaluate the vertex form at $1$ instead of expanding."
+}

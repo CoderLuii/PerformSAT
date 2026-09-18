@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-148",
+ "question": "The function $h$ gives the expansion, in millimeters, of a bridge joint at a deck temperature of $t$ degrees Celsius, where $h(t)=1.2t+30$. What is the expansion when the deck temperature is $-15$ degrees Celsius?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-18$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports only the product 1.2(-15) = -18, dropping the constant 30",
+  "C": "evaluates at t = 0 instead of t = -15",
+  "D": "substitutes t = 15, ignoring the negative sign: 1.2(15) + 30 = 48"
+ },
+ "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $1.2(-15)=-18$, and $-18+30=12$ millimeters.\n\n**The Full Solution:**\nStep 1: Substitute $-15$ for $t$: $h(-15)=1.2(-15)+30$.\nStep 2: A positive rate times a negative temperature is negative: $1.2(-15)=-18$.\nStep 3: Add the constant: $-18+30=12$ millimeters. Check: at $0$ degrees the joint reads 30 mm, and cooling by 15 degrees removes 18 mm, leaving 12 ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-18$): stops at $1.2(-15)$ and never adds the constant 30.\n* Choice C ($30$): evaluates the model at $t=0$ rather than at $t=-15$.\n* Choice D ($48$): drops the negative sign and substitutes $t=15$.\n\n**Test Day Takeaway:** Substitute the negative input inside parentheses so the sign travels through the multiplication before the constant is added."
+}

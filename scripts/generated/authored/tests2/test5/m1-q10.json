@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "Of the $n$ students at a community college, $18\\%$ are enrolled in an evening section, and $40\\%$ of those evening students also take a laboratory course. Which expression represents the number of students who are enrolled in an evening section and take a laboratory course?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.072n$"
+  },
+  {
+   "id": "B",
+   "text": "$0.22n$"
+  },
+  {
+   "id": "C",
+   "text": "$0.40n$"
+  },
+  {
+   "id": "D",
+   "text": "$0.58n$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts the percents (0.40 - 0.18 = 0.22) instead of multiplying them",
+  "C": "applies the 40% to all n students rather than to the 18% who are evening students",
+  "D": "adds the percents (0.18 + 0.40 = 0.58) instead of multiplying them"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** A percent of a percent multiplies: $0.40 \\times 0.18 = 0.072$, so the count is $0.072n$.\n\n**The Full Solution:**\nStep 1: The number of evening students is $18\\%$ of $n$, which is $0.18n$.\nStep 2: Of THOSE students, $40\\%$ take a laboratory course, so the count is $0.40(0.18n)$.\nStep 3: Multiply the decimals: $0.40 \\times 0.18 = 0.072$, giving $0.072n$. Check with $n = 1{,}000$: there are $180$ evening students, $40\\%$ of $180$ is $72$, and $0.072(1{,}000) = 72$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($0.22n$): subtracts the two percents, $0.40 - 0.18 = 0.22$. Subtraction would answer a question about students in one group but not the other, and here neither percent is a part of the other on the same base.\n* Choice C ($0.40n$): applies $40\\%$ to the entire enrollment. The $40\\%$ is measured within the evening group only, so its base is $0.18n$, not $n$.\n* Choice D ($0.58n$): adds the percents, $0.18 + 0.40 = 0.58$. Adding would count students in EITHER group; the question asks for students in both at once, which is always the smaller number.\n\n**Test Day Takeaway:** \"$q\\%$ of the students who...\" signals a second percent taken on a reduced base. Multiply the decimals; the answer must come out smaller than either percent alone."
+}

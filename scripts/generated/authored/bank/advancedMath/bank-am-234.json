@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-234",
+ "question": "The functions $f$ and $g$ are defined for every real number $x$, and they are related by $g(x)=f(x+7)-4$. The greatest value taken by $f$ is $M$, and $f$ attains it when $x=a$. Which statement about $g$ must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The greatest value of $g$ is $M-4$, and it occurs when $x=a+7$."
+  },
+  {
+   "id": "B",
+   "text": "The greatest value of $g$ is $M$, and it occurs when $x=a-7$."
+  },
+  {
+   "id": "C",
+   "text": "The greatest value of $g$ is $M-4$, and it occurs when $x=a-7$."
+  },
+  {
+   "id": "D",
+   "text": "The greatest value of $g$ is $M-11$, and it occurs when $x=a-7$."
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "shifts the input right instead of left, reading x + 7 as a delay",
+  "B": "applies the horizontal shift but ignores the 4 subtracted from every output",
+  "D": "subtracts both 7 and 4 from the maximum value, treating the horizontal shift as vertical"
+ },
+ "explanation": "**SAT Pattern: Function from Shifted Graph**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** $g$ is greatest when its inner input equals $a$, so $x+7=a$ and $x=a-7$; the output there is $M-4$.\n\n**The Full Solution:**\nStep 1: The outputs of $g$ are outputs of $f$ lowered by 4, so the greatest value of $g$ is $M-4$.\nStep 2: That greatest value occurs where $f$ is evaluated at $a$, that is, where $x+7=a$.\nStep 3: Solving gives $x=a-7$, so the maximum of $g$ is $M-4$ at $x=a-7$. Check: with $f(x)=-x^{2}$, $M=0$ at $a=0$, and $g(x)=-(x+7)^{2}-4$ peaks at $-4$ when $x=-7$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: reads $x+7$ as a shift to the right; adding inside the function moves the graph left.\n* Choice B: tracks the horizontal shift but leaves the maximum value unchanged.\n* Choice D: subtracts the horizontal shift from the maximum value as well, giving $M-11$.\n\n**Test Day Takeaway:** Inside the function, changes move the graph horizontally and in the opposite direction; outside, they move it vertically in the direction written."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-221",
+  "question": "The value of an investment fund has grown by $20\\%$ each year for the past two years, and the fund is now worth $\\$7{,}200$. What was the value of the fund, in dollars, two years ago?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4{,}320$"
+    },
+    {
+      "id": "B",
+      "text": "$5{,}000$"
+    },
+    {
+      "id": "C",
+      "text": "$6{,}000$"
+    },
+    {
+      "id": "D",
+      "text": "$10{,}368$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts 40% from the current value",
+    "C": "undoes only one year of growth",
+    "D": "applies two more years of growth instead of undoing them"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse Exponential Back in Time**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Two years of $20\\%$ growth multiply by $1.2^2 = 1.44$, so the original value is $7{,}200 \\div 1.44 = 5{,}000$.\n\n**The Full Solution:**\nStep 1: If $V$ is the value two years ago, then $V(1.2)^2 = 7{,}200$.\nStep 2: $(1.2)^2 = 1.44$, so $1.44V = 7{,}200$ and $V = \\dfrac{7{,}200}{1.44}$.\nStep 3: $V = 5{,}000$ dollars. Check forward: $5{,}000 \\to 6{,}000 \\to 7{,}200$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4{,}320$): computes $7{,}200(0.6)$, subtracting two $20\\%$ shares of the CURRENT value.\n* Choice C ($6{,}000$): divides by $1.2$ only once, landing one year ago.\n* Choice D ($10{,}368$): multiplies by $1.44$, projecting two years into the future.\n\n**Test Day Takeaway:** Each year backward divides by $1 + r$ once; raise the multiplier to the number of years and divide a single time."
+}

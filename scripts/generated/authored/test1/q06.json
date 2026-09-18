@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
  "module": 1,
- "passage": "Science writer Ed Yong describes how recording technology has reshaped the study of animal sound. Microphones left in forests and reefs for months capture noises beyond the range of human hearing and across spans of time no researcher could sit through in person. The archives they produce are so large, Yong notes, that biologists now depend on software to sift through them. Patterns buried in those recordings—regularities in the calls of bats and whales—have turned out to include signals that decades of direct listening had missed entirely.",
- "question": "Which choice best states the main purpose of the text?",
+ "passage": "Why does the barreleye, a fish of the ocean's twilight zone, have a transparent, fluid-filled dome where most fish have an opaque skull? For decades the dome was a puzzle, in part because it collapsed when specimens were brought to the surface. Observations from remotely operated vehicles suggest an answer. The barreleye's tubular eyes, which sit inside the dome, can rotate from pointing upward — scanning for prey silhouetted against the faint light above — to pointing forward as the fish feeds. The transparent dome may shield the eyes while still allowing them to gather light from any direction.",
+ "question": "Which choice best describes the overall structure of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "To explain how long-term recording technology has expanded what researchers can detect about animal communication."
+   "text": "It describes a behavior shared by several deep-sea species, then explains how one species' version of the behavior differs."
   },
   {
    "id": "B",
-   "text": "To compare the hearing ranges of bats and whales with the hearing range of human beings."
+   "text": "It presents a scientific consensus about an unusual anatomical feature, then summarizes the evidence that overturned it."
   },
   {
    "id": "C",
-   "text": "To argue that software analysis has made the direct observation of animals largely unnecessary."
+   "text": "It explains how a research tool works, then lists several discoveries that the tool has made possible."
   },
   {
    "id": "D",
-   "text": "To describe the practical difficulties of leaving microphones in forests and reefs for months at a time."
+   "text": "It poses a question about an unusual anatomical feature, then presents a possible explanation for that feature."
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A. The passage explains that microphones left in place for long stretches capture sounds people cannot hear and cover time no observer could, and that the resulting recordings have revealed signals direct listening had missed—so the point is how the technology widens what researchers can detect. B fixes on the bats-and-whales detail, which is an example rather than the purpose; C overstates the passage, which describes software as a tool for handling large archives, not a replacement for observation; and D treats the passing mention of months-long deployment as if it were the focus."
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The text poses an explicit question about the barreleye's transparent dome and then uses new observations to offer a tentative answer — a question-then-possible-answer structure.\n\n**The Full Solution:**\n- The opening states the question directly: why does the barreleye have a transparent dome?\n- The middle explains why the question stayed open, and the ROV observations then support a tentative answer (\"may shield the eyes while still allowing them to gather light\").\n- Choice D describes exactly that structure.\n\n**Why the other choices are wrong:**\n- A: Only one species is discussed.\n- B: No prior consensus is described, let alone overturned — the dome was an unsolved puzzle.\n- C: The ROVs are mentioned only in passing as the source of the observations, not explained as a tool."
 }

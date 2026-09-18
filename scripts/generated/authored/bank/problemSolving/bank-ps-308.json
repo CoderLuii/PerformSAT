@@ -1,0 +1,44 @@
+{
+  "id": "bank-ps-308",
+  "question": "The box plot summarizes the scores of the $40$ applicants who took a road test at a licensing office. Which of the following statements must be true?",
+  "diagram": {
+    "type": "boxPlot",
+    "params": {
+      "min": 52,
+      "q1": 68,
+      "median": 77,
+      "q3": 86,
+      "max": 98,
+      "xLabel": "Road test score",
+      "xMin": 45,
+      "xMax": 100,
+      "xGridStep": 5,
+      "xLabelStep": 10
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mean score of the $40$ applicants is $77$."
+    },
+    {
+      "id": "B",
+      "text": "At least $20$ of the applicants scored $77$ or higher."
+    },
+    {
+      "id": "C",
+      "text": "Exactly $10$ of the applicants scored higher than $86$."
+    },
+    {
+      "id": "D",
+      "text": "The scores are spread evenly between $52$ and $98$."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the median as a mean; a box plot displays no mean, and a skewed data set can have a mean far from $77$.",
+    "C": "treats the quartile as an exact count; ties at $86$ can put more or fewer than $10$ scores strictly above it.",
+    "D": "assumes equal spacing, but the box halves and the whiskers have different widths, so the data are not evenly spread."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Box Plot Interpretation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The median of $40$ scores is $77$, so the upper half of the ordered list — $20$ scores — is at least $77$.\n\n**The Full Solution:**\nStep 1: With $40$ ordered scores, the median $77$ sits between the $20$th and $21$st values, so the $21$st value is at least $77$.\nStep 2: Every score from the $21$st through the $40$th is at least as large as the $21$st, which gives $20$ scores of $77$ or higher.\nStep 3: That is exactly half of $40$, so \"at least $20$\" must be true. Check: this argument uses only the position of the median, so it holds no matter how the scores are distributed. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reads the median as a mean; a box plot displays no mean, and a skewed data set can have a mean far from $77$.\n* Choice C: treats the quartile as an exact count; ties at $86$ can put more or fewer than $10$ scores strictly above it.\n* Choice D: assumes equal spacing, but the box halves and the whiskers have different widths, so the data are not evenly spread.\n\n**Test Day Takeaway:** \"Must be true\" statements survive only if they follow from the five marked values. Statements about the mean, exact quartile counts, or even spacing do not."
+}

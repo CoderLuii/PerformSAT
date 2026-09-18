@@ -1,0 +1,51 @@
+{
+ "id": "bank-alg-472",
+ "question": "To plan a projection-mapping rig, an engineer writes the two equations summarized in the table, where $t$ is a constant. Which value of $t$ makes every solution of one equation also a solution of the other?",
+ "questionTable": {
+  "headers": [
+   "Equation",
+   "$x$-term coefficient",
+   "$y$-term coefficient",
+   "Right side"
+  ],
+  "rows": [
+   [
+    "First",
+    "$t$",
+    "$6$",
+    "$9$"
+   ],
+   [
+    "Second",
+    "$8$",
+    "$t + 2$",
+    "$12$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads the reduced constant ratio 9/12 = 3/4 and reports the numerator 3 as t",
+  "B": "sets t + 2 = 6, assuming the y-coefficients must be equal rather than proportional",
+  "D": "sets t = 8, assuming the x-coefficients must be equal rather than proportional"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** The constants fix the ratio at $\\frac{9}{12} = \\frac{3}{4}$, so $\\frac{t}{8} = \\frac{3}{4}$ gives $t = 6$, and $\\frac{6}{t + 2} = \\frac{6}{8} = \\frac{3}{4}$ checks out.\n\n**The Full Solution:**\nStep 1: The two equations are $tx + 6y = 9$ and $8x + (t + 2)y = 12$. They share every solution only when all three columns are in the same ratio, first to second.\nStep 2: The constants are the only column with both numbers known, so the ratio is $\\frac{9}{12} = \\frac{3}{4}$. From the $x$-column, $\\frac{t}{8} = \\frac{3}{4}$, so $t = 6$.\nStep 3: The $y$-column must agree with the same $t$: $\\frac{6}{t + 2} = \\frac{6}{8} = \\frac{3}{4}$, which matches. So $t = 6$ makes the first equation $6x + 6y = 9$ and the second $8x + 8y = 12$, and $\\frac{4}{3}(6x + 6y = 9)$ is exactly $8x + 8y = 12$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reduces the constants to $\\frac{3}{4}$ and reports the numerator $3$ as the value of $t$ instead of solving $\\frac{t}{8} = \\frac{3}{4}$.\n* Choice B ($4$): sets $t + 2 = 6$, forcing the $y$-coefficients to be EQUAL rather than proportional.\n* Choice D ($8$): sets $t = 8$, forcing the $x$-coefficients to be equal for the same reason.\n\n**Test Day Takeaway:** With an unknown in two different columns, start from the column that is fully known, solve for the unknown once, and then verify it in the remaining column."
+}

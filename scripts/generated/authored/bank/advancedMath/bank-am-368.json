@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-368",
+  "question": "For a gallery exhibition, the function $C$ gives the framing cost, in dollars, for $n$ prints, and the function $p$ gives the number of prints produced in $w$ weeks. Which expression gives the framing cost for the prints produced in $w$ weeks?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$C(p(w))$"
+    },
+    {
+      "id": "B",
+      "text": "$C(w)+p(w)$"
+    },
+    {
+      "id": "C",
+      "text": "$C(w) \\cdot p(w)$"
+    },
+    {
+      "id": "D",
+      "text": "$p(C(w))$"
+    }
+  ],
+  "correctAnswer": "A",
+  "distractorNotes": {
+    "B": "adds a cost to a count of prints, two quantities in different units",
+    "C": "multiplies a cost by a count, charging each print the full order cost",
+    "D": "reverses the roles, feeding a dollar amount into the print-count function"
+  },
+  "explanation": "**SAT Pattern: Function Composition**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Weeks enter $p$, and $p$'s output (a number of prints) is exactly what $C$ takes, so the cost is $C(p(w))$.\n\n**The Full Solution:**\nStep 1: Identify the inputs and outputs: $p$ takes weeks and returns prints; $C$ takes prints and returns dollars.\nStep 2: To go from weeks to dollars, the output of $p$ must be the input of $C$.\nStep 3: That chain is written $C(p(w))$. Check: if $p(4)=90$ prints and $C(90)=1{,}260$ dollars, then $C(p(4))=1{,}260$ dollars ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($C(w)+p(w)$): adds dollars to a number of prints and also treats $w$ as a print count.\n* Choice C ($C(w) \\cdot p(w)$): multiplies a cost by a count, charging the full order cost once per print.\n* Choice D ($p(C(w))$): reverses the chain, feeding a dollar amount into the function that counts prints.\n\n**Test Day Takeaway:** Match units at the seam: the inner function's output units must be the outer function's input units."
+}

@@ -1,0 +1,26 @@
+{
+ "id": 1,
+ "question": "The table shows visitors surveyed at each entrance of a national park. Of the visitors surveyed at the East entrance, $45\\%$ stayed overnight in the park. How many East entrance visitors did not stay overnight?",
+ "questionTable": {
+  "headers": [
+   "Entrance",
+   "Visitors surveyed"
+  ],
+  "rows": [
+   [
+    "North",
+    "$260$"
+   ],
+   [
+    "East",
+    "$180$"
+   ],
+   [
+    "South",
+    "$160$"
+   ]
+  ]
+ },
+ "correctAnswer": "99",
+ "explanation": "**SAT Pattern: Percent Complement**\n\n**The correct answer is $99$.**\n\n**The Fast Way (~15s):** The complement of $45\\%$ is $55\\%$, and $0.55(180) = 99$.\n\n**The Full Solution:**\nStep 1: The percent statement applies only to the East entrance row, so the group being described has $180$ visitors, not the $600$ surveyed in all.\nStep 2: Staying overnight and not staying overnight are complementary outcomes, so the percent who did not stay overnight is $100\\% - 45\\% = 55\\%$.\nStep 3: Take $55\\%$ of the East entrance total: $0.55(180) = 99$ visitors. Check: $0.45(180) = 81$ visitors did stay overnight, and $81 + 99 = 180$, the full East entrance group. ✓\n\n**Common Mistakes:**\n* $81$: computes $0.45(180)$, the number who DID stay overnight, instead of the complement the question asks for.\n* $55$: reports the leftover percent itself as though it were a count of visitors.\n* $330$: applies $55\\%$ to all $600$ surveyed visitors instead of to the $180$ from the East entrance.\n\n**Test Day Takeaway:** A complement question has two moves: subtract the percent from $100\\%$, then apply the result to the exact group the sentence names — which in a table is one row, not the total."
+}

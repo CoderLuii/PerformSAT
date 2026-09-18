@@ -1,31 +1,31 @@
 {
-  "id": 801,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "Bioarchaeologist Laurie Reitsema of the University of Georgia studies what skeletal remains reveal about ordinary life. By measuring carbon and nitrogen isotope ratios in bone collagen from medieval European cemetery populations—ratios that track the plant and animal sources of a lifetime's diet—Reitsema is able to ____ shifts in what people actually ate as rural communities gave way to growing towns.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "imagine"
-    },
-    {
-      "id": "B",
-      "text": "reconstruct"
-    },
-    {
-      "id": "C",
-      "text": "predict"
-    },
-    {
-      "id": "D",
-      "text": "exaggerate"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. Reitsema works backward from chemical signals locked into ancient bone to recover dietary changes that took place centuries ago, so the blank needs a verb meaning to piece together a past state of affairs from physical evidence. \"Reconstruct\" fits that exactly. \"Predict\" points forward to events that have not yet happened, the wrong direction for a study of medieval diets; \"imagine\" implies forming a picture without firm evidence, when the passage stresses measurement; and \"exaggerate\" would have her overstating her data, which the passage never suggests."
+ "id": 801,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "Verdigris, the blue-green pigment scraped from copper plates exposed to vinegar fumes, gave Renaissance painters their most brilliant green. Because the pigment reacts slowly with oil and darkens in a characteristic way over centuries, a conservator examining a panel today can often ____ original passages of green from retouches added by later restorers, whose newer paint has not aged in the same manner.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "conceal"
+  },
+  {
+   "id": "B",
+   "text": "distinguish"
+  },
+  {
+   "id": "C",
+   "text": "imitate"
+  },
+  {
+   "id": "D",
+   "text": "reconstruct"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The blank needs a verb meaning to tell two things apart, and \"distinguish\" names exactly what the pigment's telltale aging lets conservators do with original paint and later retouches.\n\n**The Full Solution:**\n- The passage explains that verdigris reacts with oil and darkens in a characteristic way over centuries.\n- Retouches added later have not aged the same way, so the difference in the paint's condition lets a conservator separate one from the other — that is, \"distinguish\" them.\n\n**Why the other choices are wrong:**\n- A: \"Conceal\" reverses the point — the aging makes the difference visible, not hidden.\n- C: \"Imitate\" describes copying, but the conservator is identifying paint, not reproducing it.\n- D: \"Postpone\" concerns delaying an event and cannot apply to telling two kinds of paint apart."
 }

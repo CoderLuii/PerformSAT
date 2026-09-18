@@ -1,0 +1,51 @@
+{
+  "id": "bank-am-333",
+  "question": "The graph of the quadratic function $g$, where $g(x) = x^2 + 4x - 21$, is shown in the $xy$-plane. The graph intersects the $x$-axis at two points. What is the distance between those two points?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": -2,
+        "k": -25
+      },
+      "a": 1,
+      "xRange": [
+        -9,
+        5
+      ],
+      "yRange": [
+        -28,
+        8
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 4,
+      "gridInterval": 2,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$10$"
+    },
+    {
+      "id": "D",
+      "text": "$21$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the sum of the zeros",
+    "B": "reports half the distance",
+    "D": "uses the constant term"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** $x^2 + 4x - 21 = (x + 7)(x - 3)$, so the zeros are $-7$ and $3$ and the distance is $3 - (-7) = 10$.\n\n**The Full Solution:**\nStep 1: The intercepts satisfy $g(x) = 0$, so factor: $x^2 + 4x - 21 = (x + 7)(x - 3)$.\nStep 2: The zeros are $x = -7$ and $x = 3$, the two crossings visible on the graph.\nStep 3: The distance between $(-7, 0)$ and $(3, 0)$ is $|3 - (-7)| = 10$. Check: the vertex sits at $x = -2$, which is $5$ units from each intercept. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): uses $|-7 + 3| = 4$, adding the zeros instead of subtracting them.\n* Choice B ($5$): reports the distance from the axis of symmetry to one intercept, which is half the answer.\n* Choice D ($21$): reads the constant term as a length.\n\n**Test Day Takeaway:** Factor, list the zeros, subtract — and remember the vertex is the midpoint, so half-distances are a common trap."
+}

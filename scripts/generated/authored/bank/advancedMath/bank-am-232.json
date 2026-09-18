@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-232",
+ "question": "The function $R$ gives ticket revenue, in dollars, for a show with $x$ seats sold, and $R(150)=3{,}200$. A second show's revenue function $S$ satisfies $S(x)=R(x-40)+500$. What is the value of $S(190)$?",
+ "correctAnswer": "3700",
+ "explanation": "**SAT Pattern: Function from Shifted Graph**\n\n**The correct answer is $3700$.**\n\n**The Fast Way (~20s):** $S(190)=R(190-40)+500=R(150)+500=3{,}200+500=3{,}700$.\n\n**The Full Solution:**\nStep 1: The rule shifts the input by 40, so $S(190)=R(150)+500$.\nStep 2: The given value $R(150)=3{,}200$ is exactly the revenue needed.\nStep 3: Add the vertical shift: $3{,}200+500=3{,}700$ dollars. Check: the second show sells 40 more seats to earn the first show's revenue, plus a flat 500 dollars ✓\n\n**Common Mistakes:** Adding 40 to the input gives $R(230)$, a value the problem never supplies. Dropping the constant leaves 3,200. Applying the 40 to the revenue instead of the seat count gives $3{,}200-40+500=3{,}660$.\n\n**Test Day Takeaway:** In $f(x-h)+k$ the shift $h$ acts on the input before the function runs, and $k$ acts on the output afterward."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-051",
+ "question": "In a regatta heat, a coxed four covers the $2{,}000$-meter course in $6$ minutes and $40$ seconds at a steady pace. What is the crew's average speed over the course, in kilometers per hour?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.3$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$300$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "stops at kilometers per minute, $\\frac{2}{6\\frac{2}{3}} = 0.3$, without converting minutes to hours",
+  "B": "reports meters per second, $\\frac{2{,}000}{400} = 5$, instead of kilometers per hour",
+  "D": "reports meters per minute, $\\frac{2{,}000}{6\\frac{2}{3}} = 300$, converting neither unit"
+ },
+ "explanation": "**SAT Pattern: Compound Unit Conversion**\n\n**Choice C is correct.** The course is $2$ kilometers and the time is $\\frac{400}{3{,}600}$ hour, so the average speed is $2 \\div \\frac{1}{9} = 18$ kilometers per hour.\n\n**The Fast Way (~40s):** $6$ minutes $40$ seconds is $\\frac{1}{9}$ of an hour, and $2$ kilometers in $\\frac{1}{9}$ hour is $18$ kilometers per hour.\n\n**The Full Solution:**\n\nStep 1: Convert the distance. $2{,}000$ meters is $\\frac{2{,}000}{1{,}000} = 2$ kilometers.\n\nStep 2: Convert the time. $6$ minutes $40$ seconds is $400$ seconds, and $\\frac{400}{3{,}600} = \\frac{1}{9}$ hour.\n\nStep 3: Divide distance by time: $\\frac{2 \\text{ km}}{\\frac{1}{9} \\text{ h}} = 2(9) = 18$ kilometers per hour. Check: at $18$ kilometers per hour the crew covers $18{,}000$ meters in $3{,}600$ seconds, which is $5$ meters per second, and $5(400) = 2{,}000$ meters.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($0.3$): converts the distance but leaves the time in minutes, giving kilometers per minute.\n* Choice B ($5$): leaves both units untouched, giving meters per second.\n* Choice D ($300$): converts neither unit, giving meters per minute.\n\n**Test Day Takeaway:** A compound rate needs both units converted -- write the target units first, then convert the numerator and denominator one at a time."
+}

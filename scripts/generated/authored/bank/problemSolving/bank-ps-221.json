@@ -1,0 +1,56 @@
+{
+  "id": "bank-ps-221",
+  "question": "The table gives the number of passengers who boarded a commuter train at each of four stations one morning. Of all the passengers who boarded, $18\\%$ purchased a ticket on board. How many of these passengers did not purchase a ticket on board?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Station",
+        "Passengers"
+      ],
+      "rows": [
+        [
+          "Ashfield",
+          "210"
+        ],
+        [
+          "Brookline",
+          "190"
+        ],
+        [
+          "Cranmore",
+          "240"
+        ],
+        [
+          "Deerpath",
+          "160"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$144$"
+    },
+    {
+      "id": "B",
+      "text": "$656$"
+    },
+    {
+      "id": "C",
+      "text": "$782$"
+    },
+    {
+      "id": "D",
+      "text": "$800$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the passengers who did purchase on board",
+    "C": "subtracts 18 passengers instead of 18% of 800",
+    "D": "reports the total number of passengers who boarded"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $800$ passengers boarded, and $100\\% - 18\\% = 82\\%$ did not buy on board: $0.82 \\times 800 = 656$.\n\n**The Full Solution:**\nStep 1: Total the four stations: $210 + 190 + 240 + 160 = 800$ passengers.\nStep 2: Take the complement of the on-board share: $100 - 18 = 82$, so $82\\%$ bought a ticket before boarding.\nStep 3: Multiply: $0.82 \\times 800 = 656$. Check: $0.18 \\times 800 = 144$, and $144 + 656 = 800$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($144$): computes $18\\%$ of $800$, the passengers who did purchase on board — the group the question excludes.\n* Choice C ($782$): subtracts $18$ passengers rather than $18\\%$ of the passengers.\n* Choice D ($800$): reports the total that boarded, ignoring the percent entirely.\n\n**Test Day Takeaway:** Underline the group the question actually wants before you multiply — half of these items hinge on which side of the complement you report."
+}

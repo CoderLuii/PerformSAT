@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "A national park's visitor center recorded $6{,}000$ shuttle boardings in June and $4{,}800$ in July. If the percent decrease from July to August equals the percent decrease from June to July, how many shuttle boardings are projected for August?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$960$"
+  },
+  {
+   "id": "B",
+   "text": "$3{,}600$"
+  },
+  {
+   "id": "C",
+   "text": "$3{,}840$"
+  },
+  {
+   "id": "D",
+   "text": "$5{,}760$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the size of the July-to-August decrease, 0.20 x 4800 = 960, not the August total",
+  "B": "subtracts the same number of boardings (1,200) instead of the same percent: 4800 - 1200 = 3600",
+  "D": "increases July by 20% instead of decreasing it: 4800 x 1.20 = 5760"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** July is $\\frac{4800}{6000} = 0.8$ of June, so August is $0.8$ of July: $4800(0.8) = 3840$.\n\n**The Full Solution:**\nStep 1: The June-to-July decrease is $6000 - 4800 = 1200$ boardings, so the percent decrease is $\\frac{1200}{6000} = 0.20$, or $20\\%$.\nStep 2: A $20\\%$ decrease multiplies a value by $1 - 0.20 = 0.80$. Applying that same percent to July gives $4800(0.80)$.\nStep 3: $4800(0.80) = 3840$ boardings. Check: $4800 - 3840 = 960$, and $\\frac{960}{4800} = 0.20$, the required $20\\%$ decrease. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($960$): this is the decrease itself, $0.20(4800) = 960$, not the number of boardings left in August.\n* Choice B ($3{,}600$): repeats the drop of $1{,}200$ boardings rather than the drop of $20\\%$, giving $4800 - 1200 = 3600$. Equal percents are not equal amounts once the base shrinks.\n* Choice D ($5{,}760$): multiplies by $1.20$ instead of $0.80$, turning the decrease into an increase.\n\n**Test Day Takeaway:** Convert a percent change into a single multiplier ($0.80$ here) before you use it twice. Repeating an amount and repeating a percent give different answers, and the SAT always builds a choice from the wrong one."
+}

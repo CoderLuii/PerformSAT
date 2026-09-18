@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-330",
+  "question": "A pet groomer charges a $\\$40$ base price for a bath plus $\\$6$ for each add-on treatment. If a customer's total was $\\$94$, how many add-on treatments were included?",
+  "correctAnswer": "9",
+  "explanation": "**SAT Pattern: Linear Cost Equation Setup**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~10s):** $94 - 40 = 54$ dollars went to add-ons, and $54 \\div 6 = 9$.\n\n**The Full Solution:**\nStep 1: Let $a$ be the number of add-on treatments. The total is the base price plus $6$ per add-on: $40 + 6a = 94$.\nStep 2: Subtract the base price: $6a = 54$.\nStep 3: Divide by $6$: $a = 9$.\nCheck: $40 + 6(9) = 40 + 54 = 94$. $\\checkmark$\n\n**Common Mistakes:** Dividing $94$ by $6$ (about $15.7$) without removing the base price; or adding $40$ instead of subtracting it, giving $6a = 134$. Neither produces a whole number, which is the signal to recheck the setup.\n\n**Test Day Takeaway:** A non-integer count of items almost always means the fixed part of the cost was handled incorrectly; subtract it before dividing."
+}

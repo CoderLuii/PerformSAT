@@ -1,0 +1,29 @@
+{
+ "question": "A storm drain pipe of length $L$ meters has an inside diameter of $d$ meters. Which expression gives the number of cubic meters the pipe's interior holds?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{\\pi d^2 L}{4}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{\\pi d^2 L}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\pi d^2 L$"
+  },
+  {
+   "id": "D",
+   "text": "$2\\pi d L$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "squares d but halves only once, so the denominator is 2 instead of 4",
+  "C": "uses the diameter where the radius belongs",
+  "D": "uses the lateral surface formula 2 pi r L with d in place of r"
+ },
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** With $r = \\frac{d}{2}$, $V = \\pi r^2 L = \\pi\\frac{d^2}{4}L = \\frac{\\pi d^2 L}{4}$.\n\n**The Full Solution:**\nStep 1: The pipe is a cylinder whose length $L$ plays the role of the height.\nStep 2: Its radius is half the inside diameter: $r = \\frac{d}{2}$ meters.\nStep 3: Substitute into $V = \\pi r^2 h$: $V = \\pi\\left(\\frac{d}{2}\\right)^2 L = \\frac{\\pi d^2 L}{4}$ cubic meters. Check: with $d = 2$ and $L = 5$ this gives $5\\pi$, matching $\\pi(1)^2(5)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: squares the $d$ but not the $2$, halving the denominator that should be $4$.\n* Choice C: substitutes the diameter directly for the radius, inflating the volume fourfold.\n* Choice D: uses $2\\pi r L$, which measures the pipe's curved surface, not the space inside it.\n\n**Test Day Takeaway:** Halving the diameter happens BEFORE squaring, so the $2$ becomes a $4$ in the denominator.",
+ "id": "bank-geo-085"
+}

@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
  "module": 2,
- "passage": "For most of the nineteenth century, opera houses staged every scene with painted backdrops—flat canvas panels depicting forests, palaces, or storms in fixed perspective. The scenographer Adolphe Appia argued that such backdrops worked against the very drama they were meant to serve: a painted shadow could not move as a singer moved, and a flat panel flattened the living body standing before it. In place of painted scenery, Appia proposed three-dimensional structures—steps, platforms, and shifting light—that would respond to the performer in real time. His designs were rarely built in his lifetime, but the principle that stage space should be sculpted by light rather than painted onto canvas reshaped twentieth-century staging.",
+ "passage": "Ensembles specializing in historically informed performance play Bach and Handel on gut strings and valveless horns at lower pitch, with the stated aim of restoring the sound such music had for its first audiences. Musicologist Richard Taruskin argued that this aim misdescribes the movement's real achievement: since instruments alone cannot recover vanished habits of listening, and since the movement's hallmark virtues — lean textures, brisk tempos, transparency — align neatly with twentieth-century modernist taste, period performance is better understood as a vital contemporary style than as a reconstruction. On Taruskin's account, listeners should therefore judge such performances by their present persuasiveness rather than by their fidelity to a past that cannot be audited.",
  "question": "Which choice best describes the overall structure of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "It describes a staging technique and then explains why the opera composers of the period came to prefer it."
+   "text": "It describes a performance movement's stated aim, presents a scholar's argument that the movement's practice is better understood in different terms, and then notes the standard of judgment that follows from that reinterpretation."
   },
   {
    "id": "B",
-   "text": "It establishes a long-standing staging convention, presents one figure's critique of that convention, and notes the lasting influence of the alternative he proposed."
+   "text": "It traces the historical development of a performance movement from its origins to the present, identifies the technical obstacles the movement has yet to overcome, and then predicts that continued research into early instruments will eventually resolve those obstacles."
   },
   {
    "id": "C",
-   "text": "It contrasts two scenographers' rival designs and then explains why neither was widely adopted during their lifetimes."
+   "text": "It presents a scholar's objection to a performance movement, recounts the movement's successful rebuttal of that objection, and then concludes that the original objection rested on a misunderstanding."
   },
   {
    "id": "D",
-   "text": "It traces the steady technical improvement of painted backdrops across the course of the nineteenth century."
+   "text": "It contrasts two rival performance movements, evaluates the evidence supporting each movement's claims about historical accuracy, and then endorses the movement whose claims are better documented."
   }
  ],
- "correctAnswer": "B",
- "explanation": "The correct answer is B. The passage first describes the established convention of painted backdrops, then gives Appia's objection that such backdrops fight the live drama, then his alternative of sculpted space and light, and finally notes that the alternative, rarely built in his lifetime, reshaped later staging. A reverses the passage's stance by claiming composers preferred the old technique; C invents a second scenographer and a rivalry the text does not contain; and D describes a story of improving backdrops, whereas the passage is about replacing them."
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The text presents the movement's stated aim, Taruskin's reinterpretation of it, and the standard of judgment that follows — in that order.\n\n**The Full Solution:**\n- Opening: the movement's self-description — period instruments and pitch restore \"the sound such music had for its first audiences.\"\n- Middle: Taruskin's reframing — the practice cannot recover past listening and in fact embodies modernist taste, making it \"a vital contemporary style\" rather than a reconstruction.\n- Close: the consequence — judge performances \"by their present persuasiveness rather than by their fidelity to a past that cannot be audited.\"\n\n**Why the other choices are wrong:**\n- B: No historical development is traced and no resolution is predicted.\n- C: It reverses the argumentative traffic — the movement never rebuts Taruskin in the text.\n- D: Only one movement is discussed; Taruskin proposes a rival description of it, not a rival ensemble practice."
 }

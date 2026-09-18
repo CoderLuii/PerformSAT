@@ -38,6 +38,8 @@ import {
   createPortalSession,
   stripeWebhook,
   hasEntitlementAccess,
+  cancelSubscriptionsForUid,
+  stripeSecretKey,
 } from "./stripe";
 // AI-tutor systemBlocks v2 (cacheable multi-block system) + the deterministic
 // math-verification pass. Pure validation/mapping/parsing lives in these
@@ -47,6 +49,7 @@ import {
   toAnthropicSystem,
   withOperatingConstraint,
   AnthropicSystemBlock,
+  TUTOR_CACHE_TTL,
 } from "./tutorSystemBlocks";
 import {parseMathCheckResult, MathCheckResult} from "./tutorMathCheckPolicy";
 
@@ -152,7 +155,9 @@ async function fetchFromYouTube(videoId: string): Promise<TranscriptResult | nul
     const captionResponse = await fetch(captionUrl);
     if (!captionResponse.ok) return null;
 
-    const captionData = await captionResponse.json() as {events?: Array<{tStartMs?: number; dDurationMs?: number; segs?: Array<{utf8?: string}>}>};
+    const captionData = await captionResponse.json() as {
+      events?: Array<{tStartMs?: number; dDurationMs?: number; segs?: Array<{utf8?: string}>}>;
+    };
     const segments: TranscriptSegment[] = [];
 
     if (captionData.events) {
@@ -373,7 +378,7 @@ export const aiTutor = onRequest(
           [{
             type: "text",
             text: typeof system === "string" ? system : String(system),
-            cache_control: {type: "ephemeral"},
+            cache_control: {type: "ephemeral", ttl: TUTOR_CACHE_TTL},
           }] :
           "";
       }
@@ -411,15 +416,20 @@ export const aiTutor = onRequest(
           // dashboard then breaks down tutor spend by uid.
           headers: anthropicHeaders(apiKey, user.uid),
           body: JSON.stringify({
-            model: "claude-sonnet-4-6",
-            // Tutor answers are coaching replies, not essays — but the 2026-06-28
-            // per-choice breakdown format (GOAL → WHY-RIGHT → EVERY-CHOICE →
-            // TAKEAWAY) regularly ran past 2000 and truncated mid-choice, so the
-            // client shows a truncation note. 3000 clears the observed breakdown
-            // sizes while still guarding against a runaway response. (Thinking is
-            // off — see below — so no thinking tokens count toward this.)
+            // Sonnet 5 (2026-08-06): same price tier as Sonnet 4.6, meaningfully
+            // smarter at the same settings — Sonnet 5 at effort medium lands
+            // where Sonnet 4.6 did at high. thinking:disabled is still accepted
+            // on Sonnet 5; do NOT add temperature (Sonnet 5 rejects non-default
+            // sampling params with a 400 — that's why the diagnostic-narrative
+            // passes below stay on 4.6).
+            model: "claude-sonnet-5",
+            // Tutor answers are coaching replies, not essays — but the full
+            // per-choice breakdown format regularly ran past 2000 and truncated
+            // mid-choice. Sonnet 5's tokenizer spends ~30% more tokens on the
+            // same text than 4.6, so the old 3000 cap would truncate breakdowns
+            // that used to fit — 4000 restores the same effective headroom.
             // Pre-warm: max_tokens 0 = prefill-only (cache write, no output).
-            max_tokens: isPrewarm ? 0 : 3000,
+            max_tokens: isPrewarm ? 0 : 4000,
             // Thinking DISABLED for the interactive tutor. Adaptive thinking ran
             // a reasoning pass before every reply, so the student stared at a
             // spinner before the first streamed token — the single biggest
@@ -826,14 +836,18 @@ export const generateStudyPlan = onRequest(
     }
 
     try {
-      const {diagnosticReport, userProfile, previousPlans, longitudinalContext, deterministicWeeks, nextActionTitle} = request.body;
+      const {
+        diagnosticReport, userProfile, previousPlans, longitudinalContext, deterministicWeeks, nextActionTitle,
+      } = request.body;
 
       if (!diagnosticReport) {
         response.status(400).json({error: "diagnosticReport is required"});
         return;
       }
 
-      if (exceedsRequestBodyCap(diagnosticReport, userProfile, previousPlans, longitudinalContext, deterministicWeeks)) {
+      if (exceedsRequestBodyCap(
+        diagnosticReport, userProfile, previousPlans, longitudinalContext, deterministicWeeks,
+      )) {
         response.status(400).json({error: "Request too large", code: "payload_too_large"});
         return;
       }
@@ -1177,7 +1191,8 @@ function scoreNarrativeQuality(narrative: Record<string, unknown>, hasHistory = 
 
   const numericPattern = /\d+/;
 
-  const diagPts = Array.isArray(narrative.diagnosisPoints) ? narrative.diagnosisPoints as Array<Record<string, unknown>> : [];
+  const diagPts = Array.isArray(narrative.diagnosisPoints) ?
+    narrative.diagnosisPoints as Array<Record<string, unknown>> : [];
   diagPts.forEach((pt) => {
     evidenceTotal++;
     numericTotal++;
@@ -1187,7 +1202,8 @@ function scoreNarrativeQuality(narrative: Record<string, unknown>, hasHistory = 
     if (numericPattern.test(claim)) numericHits++;
   });
 
-  const scorePts = Array.isArray(narrative.scoreImpactPoints) ? narrative.scoreImpactPoints as Array<Record<string, unknown>> : [];
+  const scorePts = Array.isArray(narrative.scoreImpactPoints) ?
+    narrative.scoreImpactPoints as Array<Record<string, unknown>> : [];
   scorePts.forEach((pt) => {
     evidenceTotal++;
     numericTotal++;
@@ -1197,7 +1213,8 @@ function scoreNarrativeQuality(narrative: Record<string, unknown>, hasHistory = 
     if (numericPattern.test(claim)) numericHits++;
   });
 
-  const behaviorPts = Array.isArray(narrative.behaviorInsightPoints) ? narrative.behaviorInsightPoints as Array<Record<string, unknown>> : [];
+  const behaviorPts = Array.isArray(narrative.behaviorInsightPoints) ?
+    narrative.behaviorInsightPoints as Array<Record<string, unknown>> : [];
   behaviorPts.forEach((pt) => {
     evidenceTotal++;
     numericTotal++;
@@ -1221,7 +1238,7 @@ function scoreNarrativeQuality(narrative: Record<string, unknown>, hasHistory = 
   const numericSpecificity = numericTotal > 0 ? numericHits / numericTotal : 0;
 
   let schemaPoints = 0;
-  let schemaTotal = 6;
+  const schemaTotal = 6;
   if (narrative.diagnosis) schemaPoints++;
   if (diagPts.length >= 1) schemaPoints++;
   if (weaknesses.length >= 1) schemaPoints++;
@@ -1313,7 +1330,9 @@ function scoreNarrativeQuality(narrative: Record<string, unknown>, hasHistory = 
   if (diagPts.length > 0) {
     let surfaceCount = 0;
     diagPts.forEach((pt) => {
-      if (typeof pt !== "object") { surfaceCount++; return; }
+      if (typeof pt !== "object") {
+        surfaceCount++; return;
+      }
       const claim = pt.claim as string || "";
       const mechanism = pt.causalMechanism as string || "";
       const impact = pt.estimatedImpact as string || "";
@@ -1336,7 +1355,9 @@ function scoreNarrativeQuality(narrative: Record<string, unknown>, hasHistory = 
   if (behaviorPts.length > 0) {
     let shallowBehavior = 0;
     behaviorPts.forEach((pt) => {
-      if (typeof pt !== "object") { shallowBehavior++; return; }
+      if (typeof pt !== "object") {
+        shallowBehavior++; return;
+      }
       const claim = pt.claim as string || "";
       const mechanism = pt.causalMechanism as string || "";
       const impact = pt.estimatedImpact as string || "";
@@ -1374,7 +1395,8 @@ function scoreNarrativeQuality(narrative: Record<string, unknown>, hasHistory = 
     (schemaCompleteness * 0.12) +
     (causalDepth * 0.23) +
     (crossTestUtilization * 0.10) +
-    (0.27 - contradictionPenalty - redundancyPenalty - genericPenalty - surfacePenalty - behaviorDepthPenalty - slopPenalty) +
+    (0.27 - contradictionPenalty - redundancyPenalty - genericPenalty -
+      surfacePenalty - behaviorDepthPenalty - slopPenalty) +
     questionInsightsBonus
   ));
 
@@ -1652,21 +1674,21 @@ function buildDiagnosticNarrativeUserPrompt(
     sections.push(`\n## Archetype: ${fp.archetypeLabel}\n${fp.archetypeDescription || ""}`);
     const traits = fp.traits as Array<Record<string, unknown>>;
     if (traits && traits.length > 0) {
-      sections.push("Traits: " + traits.map(t => `${t.trait} (${t.severity})`).join(", "));
+      sections.push("Traits: " + traits.map((t) => `${t.trait} (${t.severity})`).join(", "));
     }
   }
 
   const ep = evidence.errorPatterns as Record<string, unknown>;
   if (ep?.summary) {
     const errStr = (ep.summary as Array<Record<string, unknown>>)
-      .map(e => `- ${e.label}: ${e.count} (${e.percentage}%) — ${e.description || ""}`)
+      .map((e) => `- ${e.label}: ${e.count} (${e.percentage}%) — ${e.description || ""}`)
       .join("\n");
     sections.push(`\n## Error Patterns (${ep.totalWrong} wrong)\n${errStr}`);
   }
 
   const da = evidence.domainAnalysis as Array<Record<string, unknown>>;
   if (da && da.length > 0) {
-    sections.push(`\n## Domain Performance\n${da.map(d =>
+    sections.push(`\n## Domain Performance\n${da.map((d) =>
       `- ${d.displayName}: ${d.accuracy}% (${d.correct}/${d.total}), error types: ${JSON.stringify(d.errorTypes || {})}`
     ).join("\n")}`);
   }
@@ -1674,7 +1696,7 @@ function buildDiagnosticNarrativeUserPrompt(
   const sa = evidence.skillAnalysis as Record<string, unknown>;
   const weak = (sa?.weakSkills as Array<Record<string, unknown>>) || [];
   if (weak.length > 0) {
-    sections.push(`\n## Weak Skills\n${weak.map(s => {
+    sections.push(`\n## Weak Skills\n${weak.map((s) => {
       const blanks = Number(s.blanks) || 0;
       const attempted = s.attempted != null ? Number(s.attempted) : null;
       const attemptedNote = blanks > 0 && attempted != null ?
@@ -1687,7 +1709,7 @@ function buildDiagnosticNarrativeUserPrompt(
 
   const wq = evidence.wrongQuestions as Array<Record<string, unknown>>;
   if (wq && wq.length > 0) {
-    sections.push(`\n## Wrong Questions (${wq.length} total)\n${wq.slice(0, 15).map(q =>
+    sections.push(`\n## Wrong Questions (${wq.length} total)\n${wq.slice(0, 15).map((q) =>
       `- ${q.key} [${q.difficulty}/${q.domain}]: ${q.errorType} (conf ${q.confidence}), ` +
       `${q.timeSpent}s (${q.timeVsDifficulty}), skills: ${(q.skillNames as string[] || []).join(", ")}` +
       `${q.wasBlank ? ", LEFT BLANK" : (q.userAnswer != null && q.correctAnswer != null ? `, picked ${q.userAnswer} (correct: ${q.correctAnswer})` : "")}` +
@@ -1701,21 +1723,21 @@ function buildDiagnosticNarrativeUserPrompt(
   const drill = evidence.drillEvidence as Record<string, unknown> | null;
   const recentDrills = (drill?.recentDrills as Array<Record<string, unknown>>) || [];
   if (recentDrills.length > 0) {
-    sections.push(`\n## Drill Work Before This Test (practice since the previous test, on skills this test covered)\n${recentDrills.map(d =>
+    sections.push(`\n## Drill Work Before This Test (practice since the previous test, on skills this test covered)\n${recentDrills.map((d) =>
       `- ${d.skillId}: ${d.accuracy}% over ${d.attempts} drill questions`
     ).join("\n")}\nCompare each drilled skill's drill accuracy against its performance on THIS test: if it held up, the practice TRANSFERRED — credit it in changesSinceLast or a diagnosis point. If it collapsed under test conditions, that transfer gap (drills fine, test misses) is itself a diagnosis — usually pacing, pressure, or format, not knowledge.`);
   }
 
   const rcc = evidence.rootCauseClusters as Array<Record<string, unknown>>;
   if (rcc && rcc.length > 0) {
-    sections.push(`\n## Root-Cause Clusters\n${rcc.map(c =>
+    sections.push(`\n## Root-Cause Clusters\n${rcc.map((c) =>
       `- ${c.label} (${c.severity}): ${c.description}`
     ).join("\n")}`);
   }
 
   const sc = evidence.skillClusters as Array<Record<string, unknown>>;
   if (sc && sc.length > 0) {
-    sections.push(`\n## Skill Clusters (related skills failing together)\n${sc.map(c =>
+    sections.push(`\n## Skill Clusters (related skills failing together)\n${sc.map((c) =>
       `- ${c.name}: ${(c.failedSkills as string[]).join(", ")} (${c.severity})`
     ).join("\n")}`);
   }
@@ -1751,7 +1773,7 @@ function buildDiagnosticNarrativeUserPrompt(
     sections.push(`\n## Trend: ${trend.trend} (${sc2 > 0 ? "+" : ""}${sc2} pts)`);
     const pw = trend.persistentWeaknesses as Array<Record<string, unknown>>;
     if (pw && pw.length > 0) {
-      sections.push(`Persistent weaknesses: ${pw.map(p => `${p.name} (${p.testCount} tests)`).join(", ")}`);
+      sections.push(`Persistent weaknesses: ${pw.map((p) => `${p.name} (${p.testCount} tests)`).join(", ")}`);
     }
     const dec = trend.decliningSkills as string[];
     if (dec && dec.length > 0) sections.push(`Declining: ${dec.join(", ")}`);
@@ -2106,7 +2128,7 @@ ${stamina.message || ""}`);
     sections.push(`\n## Longitudinal Evidence (${totalTests} tests)`);
 
     if (scoreTrajectory.length >= 2) {
-      const trend = scoreTrajectory.map(s => s.scaledScore).join(" → ");
+      const trend = scoreTrajectory.map((s) => s.scaledScore).join(" → ");
       const delta = Number(scoreTrajectory[scoreTrajectory.length - 1]?.scaledScore || 0) -
                     Number(scoreTrajectory[0]?.scaledScore || 0);
       sections.push(`Score trajectory: ${trend} (net change: ${delta >= 0 ? "+" : ""}${delta})`);
@@ -2114,7 +2136,7 @@ ${stamina.message || ""}`);
 
     if (persistentWeaknesses.length > 0) {
       sections.push(`\nPERSISTENT WEAKNESSES — weak across ${totalTests} tests. These need reteaching, not practice:`);
-      persistentWeaknesses.forEach(pw => {
+      persistentWeaknesses.forEach((pw) => {
         const trend = pw.trend === "declining" ? "↓ declining" : pw.trend === "flat" ? "→ flat" : "↑ improving";
         sections.push(`  - ${pw.skillId}: ${pw.accuracy}% avg accuracy across ${pw.testCount} tests (${trend})`);
       });
@@ -2124,8 +2146,8 @@ ${stamina.message || ""}`);
     // narration should credit this work, not re-flag the skill.
     const recovered = lc.recoveredSkills as Array<Record<string, unknown>> || [];
     if (recovered.length > 0) {
-      sections.push(`\nRECOVERED SINCE LAST TEST (drilled back to health — credit this, don't nag):`);
-      recovered.forEach(r => {
+      sections.push("\nRECOVERED SINCE LAST TEST (drilled back to health — credit this, don't nag):");
+      recovered.forEach((r) => {
         sections.push(`  - ${r.skillId}: was ${r.testAccuracy}% on tests, now ${r.drillAccuracy}% over ${r.drillAttempts} recent drills`);
       });
     }
@@ -2151,10 +2173,10 @@ ${stamina.message || ""}`);
       sections.push(`\nNew regressions — add to plan immediately: ${newWeaknesses.join(", ")}`);
     }
 
-    sections.push(`\nCRITICAL: deltaFromPrevious must explicitly name what changed and why. Example: "Quadratics moved 30% to 65%, so it's out of your weeks. Statistics is the new week-1 focus (40% this test). Slope-intercept gets retaught from the concept up — it's been weak across all 3 tests."`);
+    sections.push("\nCRITICAL: deltaFromPrevious must explicitly name what changed and why. Example: \"Quadratics moved 30% to 65%, so it's out of your weeks. Statistics is the new week-1 focus (40% this test). Slope-intercept gets retaught from the concept up — it's been weak across all 3 tests.\"");
   }
 
-  sections.push(`\nGenerate the JSON narration now.`);
+  sections.push("\nGenerate the JSON narration now.");
   return sections.join("\n");
 }
 
@@ -2534,7 +2556,14 @@ export const sendReEngagementNudges = onSchedule("every day 23:00", async () => 
  * first so a failed Auth delete can be retried while still authenticated.
  */
 export const deleteAccount = onRequest(
-  {cors: ALLOWED_ORIGINS, timeoutSeconds: 300, memory: "512MiB"},
+  // secrets: deletion now cancels the Stripe subscription first, so this
+  // function needs the Stripe key bound to it.
+  {
+    cors: ALLOWED_ORIGINS,
+    timeoutSeconds: 300,
+    memory: "512MiB",
+    secrets: [stripeSecretKey],
+  },
   async (request, response) => {
     if (request.method !== "POST") {
       response.status(405).json({error: "Method not allowed"});
@@ -2556,6 +2585,14 @@ export const deleteAccount = onRequest(
     }
     const uid = user.uid;
     try {
+      // 0. STRIPE FIRST — cancel any live subscription before a byte of data
+      //    is removed. Deleting the account while the subscription runs bills
+      //    a customer who no longer has an account, and strands them: the
+      //    Customer Portal needs entitlements/{uid}.stripeCustomerId plus a
+      //    live Auth login, both of which the steps below destroy. Doing this
+      //    first also means a Stripe failure aborts the whole deletion with
+      //    nothing removed yet, so the retry below is clean.
+      const canceledSubs = await cancelSubscriptionsForUid(uid, user.email);
       // 1. progress/{uid} + ALL subcollections (studyPlanArtifacts, attempts,
       //    aiDiagnostics, aiChatSessions, and any added later)
       await db.recursiveDelete(db.collection("progress").doc(uid));
@@ -2587,7 +2624,13 @@ export const deleteAccount = onRequest(
       }
       // 5. Auth record LAST
       await getAuth().deleteUser(uid);
-      logger.info(`[deleteAccount] deleted all data for ${uid}`);
+      logger.info(
+        `[deleteAccount] deleted all data for ${uid}` +
+        (canceledSubs.length ?
+          ` (canceled ${canceledSubs.length} subscription(s): ` +
+          `${canceledSubs.join(", ")})` :
+          " (no live subscription)"),
+      );
       response.json({ok: true});
     } catch (error) {
       logger.error(`[deleteAccount] failed for ${uid}:`, error);

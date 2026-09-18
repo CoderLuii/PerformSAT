@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-175",
+ "question": "A clerestory truss panel is shaped as a right triangle whose hypotenuse measures $h$ meters and whose smaller acute angle measures $\\theta$. Which expression gives the perimeter, in meters, of the panel?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$h(\\sin\\theta + \\cos\\theta)$"
+  },
+  {
+   "id": "B",
+   "text": "$h(1 + \\tan\\theta)$"
+  },
+  {
+   "id": "C",
+   "text": "$h(\\sin\\theta\\cos\\theta + 1)$"
+  },
+  {
+   "id": "D",
+   "text": "$h(1 + \\sin\\theta + \\cos\\theta)$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "adds the two legs but leaves out the hypotenuse itself",
+  "B": "uses the tangent, which compares the legs to each other rather than to the hypotenuse, and counts only one leg",
+  "C": "multiplies the two leg ratios instead of adding them"
+ },
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice D is correct.** The legs are $h\\sin\\theta$ and $h\\cos\\theta$, so the perimeter is $h + h\\sin\\theta + h\\cos\\theta = h(1 + \\sin\\theta + \\cos\\theta)$.\n\n**The Fast Way (~30s):** Legs are $h\\sin\\theta$ and $h\\cos\\theta$; add the hypotenuse $h$ and factor.\n\n**The Full Solution:**\n\nStep 1: For the acute angle $\\theta$, the opposite leg is $h\\sin\\theta$ and the adjacent leg is $h\\cos\\theta$, since each ratio is a leg over the hypotenuse.\n\nStep 2: The perimeter adds all three sides: $h + h\\sin\\theta + h\\cos\\theta$.\n\nStep 3: Factor out $h$: $h(1 + \\sin\\theta + \\cos\\theta)$. Check with $\\theta = 30^\\circ$ and $h = 2$: the legs are $1$ and $\\sqrt{3}$, the perimeter is $3 + \\sqrt{3} \\approx 4.73$, and $2\\left(1 + \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\right) = 3 + \\sqrt{3}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($h(\\sin\\theta + \\cos\\theta)$): adds the two legs but omits the hypotenuse.\n* Choice B ($h(1 + \\tan\\theta)$): the tangent compares the legs with each other, not with $h$, so $h\\tan\\theta$ is not a side here.\n* Choice C ($h(\\sin\\theta\\cos\\theta + 1)$): multiplies the two leg ratios instead of adding them.\n\n**Test Day Takeaway:** Sine and cosine convert a hypotenuse into both legs; a perimeter in terms of $h$ and $\\theta$ always factors as $h(1 + \\sin\\theta + \\cos\\theta)$."
+}

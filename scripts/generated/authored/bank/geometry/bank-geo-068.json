@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-068",
+ "question": "A rafter tie meets a rafter and a post at a right angle; the two legs measure $b$ and $b + 7$ inches, and the tangent of the smaller acute angle is $\\frac{8}{15}$. What is the length, in inches, of the hypotenuse?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$17$"
+  },
+  {
+   "id": "D",
+   "text": "$23$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the shorter leg b = 8 instead of the hypotenuse",
+  "B": "reports the longer leg b + 7 = 15",
+  "D": "adds the two legs, 8 + 15, instead of applying the Pythagorean theorem"
+ },
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice C is correct.** The smaller acute angle faces the shorter leg, so $\\frac{b}{b + 7} = \\frac{8}{15}$ gives $b = 8$, and the hypotenuse is $\\sqrt{8^2 + 15^2} = 17$ inches.\n\n**The Fast Way (~40s):** $15b = 8b + 56$ gives $b = 8$; the legs are $8$ and $15$, so the hypotenuse is $17$.\n\n**The Full Solution:**\n\nStep 1: The smaller acute angle lies opposite the shorter leg, so its tangent is $\\frac{b}{b + 7}$.\n\nStep 2: Set $\\frac{b}{b + 7} = \\frac{8}{15}$ and cross-multiply: $15b = 8b + 56$, so $7b = 56$ and $b = 8$ inches.\n\nStep 3: The legs are $8$ and $15$, so the hypotenuse is $\\sqrt{64 + 225} = \\sqrt{289} = 17$ inches. Check: $15 - 8 = 7$, matching the stated difference, and $\\tan = \\frac{8}{15}$ as given.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($8$): reports the shorter leg $b$.\n* Choice B ($15$): reports the longer leg $b + 7$.\n* Choice D ($23$): adds the legs instead of using the Pythagorean theorem.\n\n**Test Day Takeaway:** Which angle a ratio belongs to decides which leg goes on top — the smaller acute angle always faces the shorter leg."
+}

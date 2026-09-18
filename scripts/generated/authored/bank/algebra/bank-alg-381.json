@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-381",
+  "question": "The points $(-6, 3)$ and $(4, 9)$ are shown in the $xy$-plane. What is the midpoint of the line segment that has these two points as its endpoints?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -6,
+          3
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      "xMin": -8,
+      "xMax": 6,
+      "yMin": -2,
+      "yMax": 10
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-5, -3)$"
+    },
+    {
+      "id": "B",
+      "text": "$(-2, 12)$"
+    },
+    {
+      "id": "C",
+      "text": "$(5, 3)$"
+    },
+    {
+      "id": "D",
+      "text": "$(-1, 6)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "halves the differences of the coordinates instead of the sums",
+    "B": "adds the coordinates but never divides by 2",
+    "C": "halves the differences taken in the other order"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Average the $x$-coordinates and average the $y$-coordinates: $\\dfrac{-6 + 4}{2} = -1$ and $\\dfrac{3 + 9}{2} = 6$, so the midpoint is $(-1, 6)$.\n\n**The Full Solution:**\nStep 1: The midpoint of the segment from $(x_1, y_1)$ to $(x_2, y_2)$ is $\\left(\\dfrac{x_1 + x_2}{2}, \\dfrac{y_1 + y_2}{2}\\right)$, the point halfway along in each direction.\nStep 2: $x$-coordinate: $\\dfrac{-6 + 4}{2} = \\dfrac{-2}{2} = -1$. $y$-coordinate: $\\dfrac{3 + 9}{2} = \\dfrac{12}{2} = 6$.\nStep 3: The midpoint is $(-1, 6)$. Check: from $(-6, 3)$, moving $5$ right and $3$ up reaches $(-1, 6)$, and another $5$ right and $3$ up reaches $(4, 9)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-5, -3)$): halves the differences $-6 - 4$ and $3 - 9$; the midpoint uses sums, not differences.\n* Choice B ($(-2, 12)$): adds the coordinates correctly but skips the division by $2$.\n* Choice C ($(5, 3)$): halves the differences $4 - (-6)$ and $9 - 3$, which gives half the displacement rather than a location.\n\n**Test Day Takeaway:** A midpoint is an average in each coordinate: add the two values and divide by $2$; a difference gives a displacement, never a point."
+}

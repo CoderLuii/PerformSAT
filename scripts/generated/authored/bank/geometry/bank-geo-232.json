@@ -1,0 +1,31 @@
+{
+ "id": "bank-geo-232",
+ "question": "The gusset plate shown is cut for a bridge truss, and its two legs are measured in centimeters. How many square centimeters of steel does the plate contain?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     21,
+     0
+    ],
+    [
+     21,
+     16
+    ]
+   ],
+   "sideLabels": [
+    "21",
+    "16",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "correctAnswer": "168",
+ "explanation": "**SAT Pattern: Triangle Area**\n\n**The correct answer is $168$.**\n\n**The Fast Way (~20s):** The two legs meet at the right angle, so they are the base and the height: $\\frac{1}{2}(21)(16) = 168$.\n\n**The Full Solution:**\nStep 1: The right-angle mark sits between the legs of length $21$ centimeters and $16$ centimeters, so those two segments are perpendicular.\nStep 2: In a right triangle the two legs serve as base and height, so the area is $\\frac{1}{2}(21)(16)$.\nStep 3: $\\frac{1}{2}(21)(16) = \\frac{336}{2} = 168$ square centimeters.\n\nCheck: The plate sits inside a $21$ by $16$ rectangle of area $336$, and it fills exactly half of it. $\\checkmark$\n\n**Common Mistakes:**\n* Answering $336$ by multiplying the legs and forgetting the factor $\\frac{1}{2}$.\n* Answering $37$ by adding the two leg lengths instead of multiplying them.\n* Answering $18.5$ by halving the sum $21 + 16$ rather than halving the product.\n\n**Test Day Takeaway:** In a right triangle the two legs are already a base and its height, so no extra altitude is needed."
+}

@@ -6,42 +6,35 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
-  "passage": "Climate scientists at the NASA Goddard Institute for Space Studies maintain a long-running record, GISTEMP, of global land-ocean surface temperature anomalies relative to a 1951–1980 baseline. A research team examining the GISTEMP record at twenty-year intervals has argued that, although the long-term trajectory across the late nineteenth and twentieth centuries is unmistakably warming, the warming was not strictly monotonic across every twenty-year period: a small interruption appears in the middle of the record before the strong warming of the most recent decades takes hold. The data shown in the table support the team's specific characterization of an interruption embedded within an overall warming trend because _______",
+  "passage": "The carbon dioxide record kept since 1958 at the Mauna Loa Observatory in Hawaii traces a rising curve with a sawtooth edge: each year the concentration dips as Northern Hemisphere plants leaf out and draw carbon from the air, then climbs again as leaves fall and decay. A research team reviewing the record has argued that the two motions are strikingly independent — the seasonal breathing of the land, they claim, has continued at nearly the same amplitude even as the long-term baseline has climbed relentlessly beneath it.",
   "questionTable": {
     "type": "table",
-    "caption": "Global land-ocean temperature anomaly (°C) relative to 1951–1980 baseline, twenty-year averages (NASA GISS GISTEMP v4)",
+    "caption": "Atmospheric carbon dioxide at Mauna Loa Observatory in selected years",
     "headers": [
-      "Period",
-      "Anomaly (°C)"
+      "Year",
+      "Annual mean (parts per million)",
+      "Seasonal swing, spring peak to autumn low (parts per million)"
     ],
     "rows": [
       [
-        "1880-1899",
-        "-0.21"
+        "1970",
+        "325.7",
+        "5.9"
       ],
       [
-        "1900-1919",
-        "-0.24"
+        "1990",
+        "354.4",
+        "6.0"
       ],
       [
-        "1920-1939",
-        "-0.06"
+        "2010",
+        "389.9",
+        "6.2"
       ],
       [
-        "1940-1959",
-        "+0.02"
-      ],
-      [
-        "1960-1979",
-        "-0.01"
-      ],
-      [
-        "1980-1999",
-        "+0.30"
-      ],
-      [
-        "2000-2019",
-        "+0.78"
+        "2023",
+        "419.3",
+        "6.3"
       ]
     ]
   },
@@ -49,21 +42,21 @@
   "choices": [
     {
       "id": "A",
-      "text": "the 2000–2019 anomaly of +0.78°C is the highest of the seven twenty-year periods, exceeding every earlier period in the record."
+      "text": "The annual mean concentration rose from 325.7 parts per million in 1970 to 419.3 parts per million in 2023."
     },
     {
       "id": "B",
-      "text": "two of the seven periods, 1880–1899 and 1900–1919, registered negative anomalies, indicating that the late nineteenth century was the coolest stretch in the record."
+      "text": "The seasonal swing was smallest in 1970, at 5.9 parts per million, and largest in 2023, at 6.3 parts per million."
     },
     {
       "id": "C",
-      "text": "across the seven twenty-year periods, the temperature anomaly rose monotonically from −0.21°C in 1880–1899 to +0.78°C in 2000–2019."
+      "text": "In every one of the years shown in the table, the seasonal swing from spring peak to autumn low was far smaller than the annual mean concentration recorded for that same year."
     },
     {
       "id": "D",
-      "text": "the 1960–1979 anomaly of −0.01°C is slightly cooler than the 1940–1959 anomaly of +0.02°C, even though the 1980–1999 and 2000–2019 anomalies are warmer than every earlier period."
+      "text": "While the annual mean climbed by more than 90 parts per million between 1970 and 2023, the seasonal swing stayed within a narrow band of 5.9 to 6.3 parts per million."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The team's claim is narrow: a brief interruption sits inside an overall warming trend. A supporting choice has to show both the dip and the surrounding rise. Choice D does so, pairing the 1960-1979 anomaly of -0.01 C, slightly below the preceding 1940-1959 value of +0.02 C, with the observation that the two most recent periods are warmer than every earlier one. That is a mid-record dip embedded in a long climb. Choice A cites only the single highest value and so cannot show an interruption. Choice C calls the rise monotonic, which both contradicts the table and erases the very dip the claim is about. Choice B reports that two early periods were negative, which speaks to the coolest stretch of the record, not to an interruption partway through a warming trend."
+  "explanation": "**Choice D is correct.** The claim joins two motions — a relentlessly climbing baseline and a seasonal cycle of nearly constant amplitude — so support requires both columns at once, and D supplies them: a rise of more than 90 parts per million against a swing confined to 5.9-6.3.\n\n**The Full Solution:**\n- Break the claim into its parts: (1) the baseline climbed steeply; (2) the seasonal amplitude held nearly steady; (3) the two are independent.\n- D documents (1) with the 325.7-to-419.3 rise and (2) with the narrow 5.9-6.3 band, and setting them side by side exhibits (3).\n\n**Why the other choices are wrong:**\n- A: It gives only the rising baseline, leaving the claim's other half — the steady seasonal swing — without evidence.\n- B: It emphasizes the extremes of the swing as though it varied meaningfully, which tilts against the claim rather than supporting it, and it ignores the baseline entirely.\n- C: Comparing the swing's size with the mean's size is beside the point — the claim concerns how each changed over time, not their relative magnitudes."
 }

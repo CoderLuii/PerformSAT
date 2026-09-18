@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "question": "A survey team budgets $\\$29{,}450$ for one drilling season: a single rig-mobilization charge of $\\$650$ plus $\\$2{,}400$ for each borehole drilled. Which equation gives the number of boreholes, $n$, that the budget covers?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$650n + 2{,}400 = 29{,}450$"
+    },
+    {
+      "id": "B",
+      "text": "$2{,}400(n + 650) = 29{,}450$"
+    },
+    {
+      "id": "C",
+      "text": "$2{,}400n - 650 = 29{,}450$"
+    },
+    {
+      "id": "D",
+      "text": "$2{,}400n + 650 = 29{,}450$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "swaps the per-borehole cost with the one-time mobilization charge",
+    "B": "adds the mobilization charge to n before multiplying, billing the charge once per borehole",
+    "C": "subtracts the mobilization charge instead of adding it"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Word-to-Expression Translation**\n\n**Choice D is correct.** The cost is $2{,}400$ per borehole plus a single $650$ charge, so $2{,}400n + 650 = 29{,}450$.\n\n**The Fast Way (~15s):** The per-item price multiplies the count; the one-time charge is added once. That is $2{,}400n + 650$, set equal to the season's budget.\n\n**The Full Solution:**\nStep 1: Name the repeating cost. Each borehole costs $\\$2{,}400$, and there are $n$ of them, so drilling costs $2{,}400n$ dollars.\nStep 2: The mobilization charge is paid once, no matter how many boreholes are drilled, so it is added on its own: $2{,}400n + 650$.\nStep 3: Total spending equals the budget: $2{,}400n + 650 = 29{,}450$. Check: $n = 12$ gives $2{,}400(12) + 650 = 28{,}800 + 650 = 29{,}450$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($650n + 2{,}400 = 29{,}450$): swaps the two dollar amounts, charging $\\$650$ per borehole and $\\$2{,}400$ once. It solves to $n = 41.6$, not a whole number of boreholes.\n* Choice B ($2{,}400(n + 650) = 29{,}450$): puts the charge inside the parentheses, which bills $\\$650$ for every borehole. The left side is already over a million dollars at $n = 1$.\n* Choice C ($2{,}400n - 650 = 29{,}450$): subtracts the mobilization charge, as if the team were refunded it instead of paying it.\n\n**Test Day Takeaway:** A per-unit rate multiplies the unknown; a one-time charge is added outside any parentheses. Test your equation with a whole number before you move on."
+}

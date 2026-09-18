@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-065",
+  "question": "In the system of equations $bx - 10y = 14$ and $9x - 15y = 21$, $b$ is a constant. If the system has infinitely many solutions, what is the value of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-6$"
+    },
+    {
+      "id": "B",
+      "text": "$6$"
+    },
+    {
+      "id": "C",
+      "text": "$9$"
+    },
+    {
+      "id": "D",
+      "text": "$13.5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "sign slip from the negative y-coefficients",
+    "C": "copies the x-coefficient of the second equation",
+    "D": "multiplies 9 by 3/2 instead of dividing"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Parameter for Proportional Equations**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The second equation must be a multiple of the first. From the $y$-terms and constants, $\\frac{-15}{-10} = \\frac{21}{14} = \\frac{3}{2}$, so $\\frac{9}{b} = \\frac{3}{2}$ and $b = 6$.\n\n**The Full Solution:**\nStep 1: Infinitely many solutions means the second equation equals $k$ times the first for some constant $k$.\nStep 2: Compare the $y$-coefficients: $-15 = k(-10)$, so $k = \\frac{3}{2}$. The constants agree: $\\frac{3}{2}(14) = 21$. $\\checkmark$\nStep 3: Compare the $x$-coefficients: $9 = \\frac{3}{2}b$, so $b = 6$. Check: $\\frac{3}{2}(6x - 10y = 14)$ gives $9x - 15y = 21$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6$): a sign slip from the negative $y$-coefficients; the ratio $\\frac{-15}{-10}$ is positive.\n* Choice C ($9$): copies the $x$-coefficient of the second equation, ignoring that the second equation is scaled by $\\frac{3}{2}$.\n* Choice D ($13.5$): multiplies $9$ by $\\frac{3}{2}$ instead of dividing by it.\n\n**Test Day Takeaway:** Find the scale factor from a pair of known coefficients (or the constants), confirm it on a second pair, then solve for the unknown coefficient with that same factor."
+}

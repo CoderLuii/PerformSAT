@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-204",
+ "question": "Stall 14 of a farmers market holds a triangular sample table whose corners fall at $(0,0)$, $(10,0)$, and $(4,k)$ on the site grid, where $k>0$ and one unit is a foot. Which expression gives its area in square feet?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2k$"
+  },
+  {
+   "id": "B",
+   "text": "$5k$"
+  },
+  {
+   "id": "C",
+   "text": "$10k$"
+  },
+  {
+   "id": "D",
+   "text": "$20k$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 4, the third vertex's x-coordinate, as the base, giving 2k",
+  "C": "omits the factor one half, giving the rectangle's area 10k",
+  "D": "doubles the base-height product instead of halving it"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The base on the $x$-axis is $10$ and the height is $k$, so the area is $\\frac{1}{2}(10)(k)=5k$.\n\n**The Full Solution:**\n\nStep 1: Choose the base. The points $(0,0)$ and $(10,0)$ both lie on the $x$-axis, so that side has length $10$ feet.\n\nStep 2: Read the height. The height is the perpendicular distance from $(4,k)$ to the $x$-axis, which is $k$ feet.\n\nStep 3: Apply the formula. Area $=\\frac{1}{2}(10)(k)=5k$ square feet.\n\nCheck: with $k=6$ the area is $30$, and the triangle is half of a $10$-by-$6$ rectangle.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2k$): uses $4$, the third vertex's $x$-coordinate, as the base.\n* Choice C ($10k$): omits the factor $\\frac{1}{2}$ and reports the rectangle's area.\n* Choice D ($20k$): doubles the base-height product instead of halving it.\n\n**Test Day Takeaway:** The apex's $x$-coordinate never affects the area — only its distance from the line containing the base does."
+}

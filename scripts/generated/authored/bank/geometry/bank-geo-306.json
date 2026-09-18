@@ -1,0 +1,60 @@
+{
+ "id": "bank-geo-306",
+ "question": "In triangle $PQR$, angle $Q$ is a right angle, $PQ=7$, and $QR=24$. What is the length of $\\overline{PR}$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     7
+    ]
+   ],
+   "labels": [
+    "R",
+    "Q",
+    "P"
+   ],
+   "sideLabels": [
+    "24",
+    "7",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$14$"
+  },
+  {
+   "id": "B",
+   "text": "$17$"
+  },
+  {
+   "id": "C",
+   "text": "$25$"
+  },
+  {
+   "id": "D",
+   "text": "$31$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "doubles the shorter leg as in a 30-60-90 triangle",
+  "B": "subtracts the legs",
+  "D": "adds the legs"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Pythagorean Triple Recognition**\n\n**Choice C is correct.**\n\n**The Fast Way (~5s):** The right angle at $Q$ makes $\\overline{PR}$ the hypotenuse, and $7$, $24$, $25$ is a Pythagorean triple, so $PR=25$.\n\n**The Full Solution:**\nStep 1: The side opposite the right angle is the hypotenuse, so $PQ$ and $QR$ are the legs and $PR$ is the hypotenuse.\nStep 2: $PR^2=7^2+24^2=49+576=625$.\nStep 3: $PR=\\sqrt{625}=25$.\n\nCheck: $25^2=625=49+576$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($14$): doubled the shorter leg, applying the $30$-$60$-$90$ rule that the hypotenuse is twice the short leg. That rule needs a $30^\\circ$ angle, which is not given here.\n* Choice B ($17$): subtracted the legs, $24-7$, instead of combining their squares.\n* Choice D ($31$): added the legs, $7+24$.\n\n**Test Day Takeaway:** Identify the hypotenuse first: it is always the side opposite the right angle, never one of the two sides that form it."
+}

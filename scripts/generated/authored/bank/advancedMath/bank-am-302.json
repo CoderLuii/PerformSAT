@@ -1,0 +1,48 @@
+{
+  "id": "bank-am-302",
+  "question": "Selected values of the polynomial function $q$ are given in the table, where $q(x) = x^3 + mx^2 + nx - 4$ and $m$ and $n$ are constants. Which equation relating $m$ and $n$ must be true?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "q(x)"
+      ],
+      "rows": [
+        [
+          "0",
+          "-4"
+        ],
+        [
+          "2",
+          "10"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2m - n = 11$"
+    },
+    {
+      "id": "B",
+      "text": "$2m + n = -2$"
+    },
+    {
+      "id": "C",
+      "text": "$2m + n = 1$"
+    },
+    {
+      "id": "D",
+      "text": "$2m + n = 3$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "substitutes x = -2",
+    "B": "sets q(2) = 0",
+    "C": "drops the constant term"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Polynomial Remainder Theorem**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The table gives $q(2) = 10$. Substituting $x = 2$ gives $8 + 4m + 2n - 4 = 10$, which reduces to $2m + n = 3$.\n\n**The Full Solution:**\nStep 1: The second row of the table says $q(2) = 10$, so substitute $x = 2$ into the definition of $q$.\nStep 2: $q(2) = 8 + 4m + 2n - 4 = 4m + 2n + 4$, so $4m + 2n + 4 = 10$.\nStep 3: Subtracting $4$ gives $4m + 2n = 6$, and dividing by $2$ gives $2m + n = 3$. Check: $m = 1$ and $n = 1$ satisfy this, and $q(x) = x^3 + x^2 + x - 4$ does give $q(2) = 8 + 4 + 2 - 4 = 10$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2m - n = 11$): substitutes $x = -2$ instead of $x = 2$, giving $-8 + 4m - 2n - 4 = 10$.\n* Choice B ($2m + n = -2$): sets $q(2) = 0$ instead of the listed value $10$.\n* Choice C ($2m + n = 1$): drops the constant term $-4$ when substituting, solving $8 + 4m + 2n = 10$.\n\n**Test Day Takeaway:** A table entry is an instruction to substitute: put the listed $x$ into the expression and set it equal to the listed output."
+}

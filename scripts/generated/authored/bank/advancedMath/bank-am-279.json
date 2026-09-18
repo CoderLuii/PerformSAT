@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-279",
+ "question": "A feed mixer's blend condition is $\\dfrac{3}{x-5}=\\dfrac{x}{x-5}$, where $x$ is the additive mass in kilograms. Which of the following describes the values of $x$ that satisfy this condition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Only $x=3$"
+  },
+  {
+   "id": "B",
+   "text": "Only $x=5$"
+  },
+  {
+   "id": "C",
+   "text": "Both $x=3$ and $x=5$"
+  },
+  {
+   "id": "D",
+   "text": "There is no such value of $x$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "takes x = 5, the value that makes both denominators zero, as a solution",
+  "C": "lists the excluded value 5 alongside the genuine solution 3",
+  "D": "assumes the shared denominator makes the equation unsolvable"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Rational Equation with Extraneous Solution**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Equal denominators force equal numerators, so $x=3$; the value $x=5$ is barred because it makes the denominators $0$.\n\n**The Full Solution:**\n\nStep 1: Both sides share the denominator $x-5$, which cannot be $0$, so $x\\neq5$ from the start.\n\nStep 2: For $x\\neq5$, multiplying both sides by $x-5$ leaves $3=x$.\n\nStep 3: The single candidate $x=3$ is allowed, since $3-5=-2\\neq0$. Check: at $x=3$ both sides equal $\\frac{3}{-2}=-\\frac{3}{2}$, while at $x=5$ neither side is defined.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: reports $x=5$, the value that makes both denominators $0$ and is therefore excluded.\n* Choice C: keeps the excluded value $5$ next to the genuine solution $3$.\n* Choice D: assumes the matching denominators make the equation impossible to satisfy.\n\n**Test Day Takeaway:** List the excluded inputs before solving; the value that kills a denominator can never be reported as a solution."
+}

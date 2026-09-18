@@ -13,9 +13,19 @@
  *
  * No card form ever renders in-app — Checkout and the Portal are Stripe-owned
  * redirects.
+ *
+ * Escape hatches: even the hard-gated wall always offers "Sign out", and a
+ * never-subscribed account can also delete itself right here (type-DELETE
+ * confirm → deleteAccount Cloud Function → onLogout). Without these, a fresh
+ * signup that stops at the wall was permanently trapped: the sidebar (and its
+ * sign-out) is hidden on view='paywall', and Profile — the only other delete
+ * path — sits behind the very gate they can't pass.
  */
 import React, { useState, useEffect } from 'react';
 import { startCheckout, openBillingPortal, redeemPromoCode } from '../../services/billingService';
+import { deleteAccount } from '../../services/accountService';
+import { takeFailedPromoCode } from '../../services/pendingPromo';
+import { PRICE_MONTHLY, PRICE_ANNUAL_MONTHLY, PRICE_ANNUAL_TOTAL, ANNUAL_SAVINGS, TRIAL_DAYS } from '../../services/pricing';
 import './PaywallScreen.css';
 
 const FEATURES = [
@@ -65,7 +75,7 @@ function statusLine(entitlement) {
   return null;
 }
 
-function PaywallScreen({ entitlement, onBack }) {
+function PaywallScreen({ entitlement, onBack, onLogout }) {
   const [redirecting, setRedirecting] = useState(null); // 'monthly' | 'annual' | 'portal' | null
   const [error, setError] = useState(null);
 
@@ -112,6 +122,20 @@ function PaywallScreen({ entitlement, onBack }) {
   const [promoError, setPromoError] = useState(null);
   const [promoDone, setPromoDone] = useState(false);
 
+  // A code typed during onboarding whose background redeem failed lands the
+  // student here with no idea why. Surface it: open the promo form prefilled
+  // with their code and say what happened (a typo'd comp code can be retried;
+  // a creator DISCOUNT code only works on Stripe's payment page).
+  useEffect(() => {
+    const failed = takeFailedPromoCode();
+    if (!failed) return;
+    setPromoOpen(true);
+    setPromoCode(failed);
+    setPromoError(
+      `We couldn't apply the code "${failed}". Check it and try again — or if it's a percent-off code from a creator, enter it on the payment page after you click below.`,
+    );
+  }, []);
+
   const redeem = async (e) => {
     e?.preventDefault?.();
     if (promoBusy || !promoCode.trim()) return;
@@ -127,6 +151,30 @@ function PaywallScreen({ entitlement, onBack }) {
     }
   };
 
+  // Delete-account escape (hard-gated accounts only). Mirrors Profile's flow:
+  // type DELETE to confirm → server removes all data + the Auth record →
+  // onLogout routes to the landing page.
+  const [deleteOpen, setDeleteOpen] = useState(false);
+  const [deleteText, setDeleteText] = useState('');
+  const [deleteBusy, setDeleteBusy] = useState(false);
+  const [deleteError, setDeleteError] = useState(null);
+
+  const confirmDelete = async (e) => {
+    e?.preventDefault?.();
+    if (deleteBusy || deleteText !== 'DELETE') return;
+    setDeleteBusy(true);
+    setDeleteError(null);
+    try {
+      await deleteAccount();
+      // Auth record is gone server-side, but the local ID token stays valid
+      // for up to an hour — sign out so the app doesn't keep acting on it.
+      onLogout?.();
+    } catch (err) {
+      setDeleteError(err?.message || 'Could not delete your account. Please try again.');
+      setDeleteBusy(false);
+    }
+  };
+
   const mode = paywallMode(entitlement);
   const status = statusLine(entitlement);
   // Hard gate: a never-subscribed account (no access, no card on file) has
@@ -135,8 +183,8 @@ function PaywallScreen({ entitlement, onBack }) {
   const hardGated = !entitlement?.hasAccess && !entitlement?.hasBillingAccount;
   const startCta = mode === 'start' ? 'Start free trial' : 'Subscribe';
 
-  let title = 'Start your 3-day free trial';
-  let sub = 'Add a card to unlock everything free for 3 days. You will not be charged until day 3 — cancel anytime before then and you pay nothing.';
+  let title = `Start your ${TRIAL_DAYS}-day free trial`;
+  let sub = `Add a card to unlock everything free for ${TRIAL_DAYS} days. You will not be charged until day ${TRIAL_DAYS} — cancel anytime before then and you pay nothing.`;
   if (mode === 'resubscribe') {
     title = 'Your access has ended';
     sub = 'Your scores and progress are saved. Subscribe to pick up exactly where you left off — every test, drill, and tutor session unlocks instantly.';
@@ -180,10 +228,10 @@ function PaywallScreen({ entitlement, onBack }) {
             <div className="pw-plan">
               <h2 className="pw-plan-name">Monthly</h2>
               <div className="pw-plan-price">
-                <span className="pw-plan-amount">$85</span>
+                <span className="pw-plan-amount">{`$${PRICE_MONTHLY}`}</span>
                 <span className="pw-plan-cadence">/ month</span>
               </div>
-              <p className="pw-plan-note">Free for 3 days, then $85/month. Cancel anytime.</p>
+              <p className="pw-plan-note">{`Free for ${TRIAL_DAYS} days, then $${PRICE_MONTHLY}/month. Cancel anytime.`}</p>
               <button
                 type="button"
                 className="pw-plan-cta is-secondary"
@@ -203,10 +251,10 @@ function PaywallScreen({ entitlement, onBack }) {
               <span className="pw-plan-flag">Best value</span>
               <h2 className="pw-plan-name">Annual</h2>
               <div className="pw-plan-price">
-                <span className="pw-plan-amount">$29</span>
+                <span className="pw-plan-amount">{`$${PRICE_ANNUAL_MONTHLY}`}</span>
                 <span className="pw-plan-cadence">/ month</span>
               </div>
-              <p className="pw-plan-note">Free for 3 days, then one payment of $349 per year — save $671 vs monthly.</p>
+              <p className="pw-plan-note">{`Free for ${TRIAL_DAYS} days, then one payment of $${PRICE_ANNUAL_TOTAL} per year — save $${ANNUAL_SAVINGS} vs monthly.`}</p>
               <button
                 type="button"
                 className="pw-plan-cta is-primary"
@@ -258,11 +306,65 @@ function PaywallScreen({ entitlement, onBack }) {
         <p className="pw-fineprint">
           Secure checkout by Stripe. {mode === 'grace'
             ? 'Manage or cancel your plan anytime from Profile.'
-            : 'You will not be charged until your 3-day free trial ends — cancel anytime before then and you pay nothing. Manage or cancel anytime from Profile.'}{' '}
+            : `You will not be charged until your ${TRIAL_DAYS}-day free trial ends — cancel anytime before then and you pay nothing. Manage or cancel anytime from Profile.`}{' '}
           By {mode === 'start' ? 'starting your trial' : 'subscribing'} you agree
           to the <a href="/terms" target="_blank" rel="noreferrer">Terms</a> and{' '}
           <a href="/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>.
         </p>
+
+        {onLogout && (
+          <div className="pw-escape">
+            <p className="pw-escape-line">
+              Not ready to start?{' '}
+              <button type="button" className="pw-escape-link" onClick={onLogout} disabled={deleteBusy}>
+                Sign out
+              </button>
+              {hardGated && (
+                <>
+                  {' · '}
+                  <button
+                    type="button"
+                    className="pw-escape-link is-danger"
+                    onClick={() => { setDeleteOpen((v) => !v); setDeleteError(null); }}
+                    disabled={deleteBusy}
+                  >
+                    Delete my account
+                  </button>
+                </>
+              )}
+            </p>
+            {hardGated && deleteOpen && (
+              <form className="pw-delete" onSubmit={confirmDelete}>
+                <p className="pw-delete-warn">
+                  This permanently deletes your account and all of its data — there is no
+                  way to undo it. Type <strong>DELETE</strong> to confirm.
+                </p>
+                <div className="pw-delete-row">
+                  <input
+                    type="text"
+                    className="pw-delete-input"
+                    placeholder="DELETE"
+                    value={deleteText}
+                    onChange={(e) => { setDeleteText(e.target.value); setDeleteError(null); }}
+                    autoCapitalize="characters"
+                    autoCorrect="off"
+                    spellCheck="false"
+                    aria-label="Type DELETE to confirm account deletion"
+                    disabled={deleteBusy}
+                  />
+                  <button
+                    type="submit"
+                    className="pw-delete-confirm"
+                    disabled={deleteBusy || deleteText !== 'DELETE'}
+                  >
+                    {deleteBusy ? 'Deleting…' : 'Delete account'}
+                  </button>
+                </div>
+                {deleteError && <p className="pw-promo-error" role="alert">{deleteError}</p>}
+              </form>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

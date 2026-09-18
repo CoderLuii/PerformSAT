@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "inferences",
  "module": 1,
- "passage": "When Frances Oldham Kelsey, a medical officer at the U.S. Food and Drug Administration, declined to approve the sedative thalidomide for the American market in 1960, her objection was that the manufacturer's submitted studies described the drug's effects in adult patients but provided little direct evidence about how it would affect a developing fetus. Reports of severe birth defects in countries where the drug was already in use soon confirmed her caution. In response, Congress passed the Kefauver-Harris Amendments in 1962, which for the first time required manufacturers to supply rigorous safety data and to demonstrate a drug's effectiveness before approval. Kelsey's case therefore suggests that the federal drug-review framework in effect before the amendments ______",
+ "passage": "Seagrass meadows draw carbon dioxide from seawater and lock carbon into their leaves, roots, and the sediments beneath them. Marine ecologists studying a chain of tropical meadows found that where large predatory fish were abundant, grazing by sea turtles and herbivorous fish was modest and the meadows accumulated carbon-rich sediment steadily. In areas where fishing had removed most large predators, grazing pressure rose sharply and the meadows' carbon accumulation slowed or reversed. The ecologists therefore reasoned that ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "had imposed stricter requirements on the testing of drugs in pregnant patients than the system that replaced it after 1962."
+   "text": "sea turtles and herbivorous fish contribute more to carbon storage in seagrass meadows than the seagrasses themselves do."
   },
   {
    "id": "B",
-   "text": "had been written at a point when many of the medical concerns now associated with prenatal drug exposure were not yet recognized by working regulators."
+   "text": "seagrass meadows in tropical waters store carbon more quickly than seagrass meadows in temperate waters."
   },
   {
    "id": "C",
-   "text": "had not required pharmaceutical companies to conduct any premarket testing of new drugs before those drugs reached American patients."
+   "text": "removing herbivores from seagrass meadows would have little effect on how much carbon the meadows store."
   },
   {
    "id": "D",
-   "text": "had treated evidence of a drug's safety in adult patients as though it sufficiently demonstrated the drug's safety for a developing fetus."
+   "text": "protecting populations of large predatory fish may indirectly help maintain the carbon stored in seagrass meadows."
   }
  ],
  "correctAnswer": "D",
- "explanation": "The passage establishes two premises: (1) Kelsey withheld approval of thalidomide because the manufacturer's submission described effects in adult patients but supplied little direct evidence about effects on a developing fetus, and (2) Congress responded by passing the Kefauver-Harris Amendments, which for the first time required manufacturers to supply rigorous safety data before approval. The minimum inference these two premises jointly force is that the pre-1962 framework had been accepting adult-only evidence as adequate stand-in evidence for fetal safety — otherwise Kelsey would not have had to refuse approval on those grounds, and Congress would not have had to amend the framework to fix the gap. Choice D states exactly that hedged claim, using 'as though' to capture the framework's implicit substitution without overreaching.\n\nThe inference combines both premises. Premise (1) alone, about one manufacturer's submission, does not by itself tell us how the broader framework treated such evidence. Premise (2) alone, about a tightening of requirements, does not by itself specify what kind of evidence the old framework was substituting for what. Only the joint claim that the old framework treated adult-safety evidence as sufficient for fetal-safety conclusions is licensed."
+ "explanation": "**Choice D is correct.** The premises license one inference: sustaining predators should, indirectly, sustain carbon storage — and D states it with appropriately hedged force (\"may indirectly help\").\n\n**The Full Solution:**\n- The passage sets up a causal chain: abundant predators keep grazing modest, and modest grazing lets meadows accumulate carbon.\n- Where predators are fished out, grazing rises and carbon accumulation falters — so the chain runs from predators, through grazing pressure, to carbon.\n- The completion must follow that chain and keep its hedged, indirect character, which choice D does.\n\n**Why the other choices are wrong:**\n- A: It inverts the ecology — heavy grazing is associated with less carbon accumulation, not more.\n- B: It introduces a tropical-temperate comparison no premise touches.\n- C: It contradicts the observed link between rising grazing pressure and slowed accumulation."
 }

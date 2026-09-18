@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-192",
+ "question": "The luggage bay of a tour bus is a rectangular prism of volume $6w^3+30w^2$ cubic feet, with a width of $3w$ feet and a height of $w$ feet. Its length is $2w+n$ feet. What is the value of $n$?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Symbolic Area or Volume**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~35s):** Dividing the volume by $w(3w)=3w^2$ gives $\\frac{6w^3+30w^2}{3w^2}=2w+10$, so $n=10$.\n\n**The Full Solution:**\n\nStep 1 — Volume equals length times width times height, so length $=\\frac{6w^3+30w^2}{w(3w)}$.\n\nStep 2 — Simplify the denominator to $3w^2$ and divide term by term: $\\frac{6w^3}{3w^2}=2w$ and $\\frac{30w^2}{3w^2}=10$, so the length is $2w+10$ feet.\n\nStep 3 — Match to $2w+n$: the constants must agree, so $n=10$. Check with $w=2$: the volume is $6(8)+30(4)=168$, and $2(6)(14)=168$.\n\n**Common Mistakes:** Dividing by $w$ alone gives $6w^2+30w$ and no match. Dividing by $3w$ gives $2w^2+10w$, whose constant is $0$. Reading the coefficient of $w$ instead of the constant reports $2$.\n\n**Test Day Takeaway:** When a dimension is given in the form $2w+n$, divide the volume by the other two dimensions and read the constant term."
+}

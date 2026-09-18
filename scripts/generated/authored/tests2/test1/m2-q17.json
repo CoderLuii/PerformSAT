@@ -1,0 +1,29 @@
+{
+  "id": 17,
+  "question": "A hatchery holding tank contains $18$ trout, and $6$ of them carry a tag. Two trout will be netted one after the other, and the first is not returned to the tank before the second is netted. What is the probability that exactly one of the two netted trout carries a tag?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{4}{17}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{1}{3}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{8}{17}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{2}{3}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "counts only the tagged-then-untagged order and never doubles for the untagged-then-tagged order",
+    "B": "reports 6/18, the probability that a single netted trout carries a tag",
+    "D": "reports 12/18, the probability that a single netted trout does not carry a tag"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** Exactly one tagged happens in two orders, each with probability $\\frac{6}{18} \\cdot \\frac{12}{17} = \\frac{4}{17}$. Doubling gives $\\frac{8}{17}$.\n\n**The Full Solution:**\nStep 1: Because the first trout is not returned, the second draw comes from $17$ trout. Consider the order tagged first, untagged second: the probability is $\\frac{6}{18} \\cdot \\frac{12}{17} = \\frac{1}{3} \\cdot \\frac{12}{17} = \\frac{4}{17}$.\nStep 2: Now the order untagged first, tagged second: the probability is $\\frac{12}{18} \\cdot \\frac{6}{17} = \\frac{2}{3} \\cdot \\frac{6}{17} = \\frac{4}{17}$. The two orders give the same value, which is typical for exactly-one problems.\nStep 3: The two orders are mutually exclusive, so add them: $\\frac{4}{17} + \\frac{4}{17} = \\frac{8}{17}$. Check with counts: the number of ordered pairs with exactly one tagged is $6 \\cdot 12 + 12 \\cdot 6 = 144$, out of $18 \\cdot 17 = 306$ ordered pairs, and $\\frac{144}{306} = \\frac{8}{17}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{4}{17}$): the arithmetic for one order is done correctly, but \"exactly one\" allows two arrangements. This is the single most common miss on this pattern.\n* Choice B ($\\frac{1}{3}$): this is $\\frac{6}{18}$, the probability that one trout selected at random carries a tag. It answers a one-draw question.\n* Choice D ($\\frac{2}{3}$): this is $\\frac{12}{18}$, the probability that one trout selected at random does not carry a tag — the complement of choice B, not a two-draw probability.\n\n**Test Day Takeaway:** Without replacement, the second denominator drops by one. When the question says \"exactly one,\" count the arrangements before you commit to an answer — one order is only half the story."
+}

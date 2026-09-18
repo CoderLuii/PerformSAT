@@ -6,26 +6,26 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 1,
-  "passage": "Developmental psychologists once expected that the death of an infant would trigger the same intense grief in every mother, regardless of where she lived. Fieldwork in a Northeastern Brazilian shantytown, where infant mortality was extremely high, told a more complicated story. There, the anthropologist Nancy Scheper-Hughes found, mothers cultivated a practiced emotional restraint, holding back deep attachment from the frailest newborns. ______ scarce maternal care could be concentrated on the infants most likely to survive.",
+  "passage": "In a second-price auction, the winner pays not her own bid but the second-highest one — a design that, in theory, makes bidding one's true maximum the best strategy no matter what other bidders do. Online auction sites implement precisely this design through automated proxy bidding, and the strategic advice follows directly: enter your maximum once and walk away. ______ a large share of bidders keep returning to nudge their bids upward in small increments, responding to rivals as though the auction rewarded haggling.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "As a result,"
-    },
-    {
-      "id": "B",
       "text": "Nevertheless,"
     },
     {
+      "id": "B",
+      "text": "Consequently,"
+    },
+    {
       "id": "C",
-      "text": "For instance,"
+      "text": "For example,"
     },
     {
       "id": "D",
-      "text": "By contrast,"
+      "text": "Likewise,"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The sentence before the blank describes mothers withholding attachment from the frailest newborns; the sentence after states the consequence—that limited care could then be focused on the infants most likely to live. \"As a result,\" marks that cause-and-effect link. \"Nevertheless,\" would signal a contrast, but the second statement is the outcome of the first, not a reversal of it. \"For instance,\" would introduce an example, yet concentrating care is a result of the restraint, not an illustration of it. \"By contrast,\" sets two things in opposition, which misreads a relationship that is plainly causal."
+  "explanation": "**Choice A is correct.** The passage builds an expectation — theory and site design both say bid once and walk away — and the final sentence reports behavior that defies it. \"Nevertheless\" concedes the force of what came before while introducing the contrary fact.\n\n**The Full Solution:**\n- Sentences one and two converge on a clear prediction: rational bidders should enter their maximum a single time.\n- The blank sentence describes what bidders actually do: return repeatedly, raising bids in small increments as though haggling paid.\n- Actual behavior contradicting a well-grounded expectation is exactly the relationship \"Nevertheless\" signals — despite all that, the opposite happens.\n\n**Why the other choices are wrong:**\n- B: \"Consequently\" would present the haggling as the outcome of the strategic advice, inverting the logic — the behavior flouts the advice rather than following from it.\n- C: \"For example\" would make incremental bidding an illustration of the bid-once strategy, but it is a violation of that strategy, not an instance of it.\n- D: \"Likewise\" marks similarity with what precedes; the final sentence introduces a divergence between prediction and behavior, not a parallel case."
 }

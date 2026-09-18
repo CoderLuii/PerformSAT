@@ -9,34 +9,34 @@
  "studentNotes": {
   "intro": "While researching a topic, a student has taken the following notes:",
   "bullets": [
-   "Florence Nightingale is best known as a nurse during the Crimean War (1853–1856).",
-   "She was also a pioneering statistician and an early member of the Royal Statistical Society.",
-   "During the war, she found that far more soldiers were dying from preventable disease in army hospitals than from battle wounds.",
-   "To make this pattern clear to officials, she designed a circular \"rose\" diagram that displayed deaths by cause for each month.",
-   "The shaded wedges showed at a glance that disease, not combat, was the leading killer.",
-   "Her visual argument helped persuade the British government to reform sanitary conditions in military hospitals."
+   "Meteors bright enough to drop meteorites to the ground are called fireballs.",
+   "Before 1959, no meteorite had ever been traced to a known orbit around the Sun.",
+   "On April 7, 1959, cameras at two Czechoslovak observing stations photographed the same fireball from different angles.",
+   "The astronomer Zdeněk Ceplecha used the paired photographs to calculate the fireball's atmospheric trajectory and its orbit.",
+   "Fragments of the meteorite, named Příbram, were then recovered from the ground.",
+   "Příbram became the first recovered meteorite with a precisely known orbit."
   ],
-  "goal": "The student wants to emphasize how Nightingale used data visualization to bring about reform."
+  "goal": "The student wants to emphasize the significance of the Příbram photographs for meteor science."
  },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Florence Nightingale, best known as a Crimean War nurse, was also an early member of the Royal Statistical Society."
+   "text": "Cameras at two separate Czechoslovak observing stations photographed the same bright fireball on April 7, 1959, and searchers recovered fragments of the fallen meteorite from the ground soon afterward."
   },
   {
    "id": "B",
-   "text": "During the Crimean War, more soldiers died from preventable disease in army hospitals than from wounds received in battle."
+   "text": "Zdeněk Ceplecha, an astronomer, calculated the trajectory of a fireball by using photographs that had been taken from two different angles."
   },
   {
    "id": "C",
-   "text": "To show officials that disease, not combat, was killing most soldiers, Nightingale designed a circular \"rose\" diagram of monthly deaths by cause—a visual argument that helped persuade the government to reform military hospital sanitation."
+   "text": "Photographed from two stations at once, the Příbram fireball yielded a calculable orbit, making it the first recovered meteorite ever traced to a known path around the Sun."
   },
   {
    "id": "D",
-   "text": "Nightingale's circular \"rose\" diagram used shaded wedges to display the number of deaths by cause in each month of the Crimean War."
+   "text": "Meteors that are bright enough to drop meteorites to the ground, which astronomers refer to as fireballs, are sometimes photographed by more than one camera station."
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The goal is to emphasize how Nightingale used data visualization to bring about reform, so the best choice ties the diagram to its persuasive purpose and its outcome. Choice C does this: it names the rose diagram, states what it was meant to show officials, and connects it to the sanitary reforms it helped secure. Choice A reports her statistical credentials without the diagram or the reform. Choice B states the underlying finding but not the visualization or its effect. Choice D describes the diagram's mechanics but stops short of its persuasive role and result."
+ "explanation": "**Choice C is correct.** The goal is significance, and C states it: because the fireball was photographed from two stations, its orbit could be computed, a first in the field, ending the era in which no recovered meteorite had a known orbit.\n\n**The Full Solution:**\n- The notes' significance lives in the last bullet, first recovered meteorite with a precisely known orbit, combined with the second bullet's \"never before 1959.\"\n- C links the method (two-station photography) to that milestone, which is exactly what \"emphasize the significance of the photographs\" requires.\n\n**Why the other choices are wrong:**\n- A: It reports the event and the recovery but never says why either mattered to meteor science.\n- B: It credits Ceplecha's calculation without mentioning the result's unprecedented status, so the significance is lost.\n- D: It generalizes about fireballs and cameras, dropping Příbram and its milestone entirely."
 }

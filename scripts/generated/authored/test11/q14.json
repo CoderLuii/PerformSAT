@@ -1,71 +1,75 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the European share of the foreign-born fell from 86 percent in 1900 to 12 percent in 2010, a 74-percentage-point decline that is the largest single change recorded in the table."
-    },
-    {
-      "id": "B",
-      "text": "the Asian share of the foreign-born grew from 5 percent in 1960 to 28 percent in 2010, more than tripling over those five decades and outpacing the gains made by every other region in the table."
-    },
-    {
-      "id": "C",
-      "text": "the share of the foreign-born born in Latin America rose from 1 percent in 1900 to 9 percent in 1960 and to 53 percent in 2010, the only region in the table to account for more than half of the foreign-born population in any year shown."
-    },
-    {
-      "id": "D",
-      "text": "the share of the foreign-born from regions outside Europe, Latin America, and Asia held essentially steady at 11 percent in 1900 and 1960 before slipping to 7 percent in 2010, a far smaller change than that of any other category."
-    }
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "91% of shipments on the Chicago route arrived in good condition, the highest share of any route in the table."
+  },
+  {
+   "id": "B",
+   "text": "shipments traveled as far as 3,200 miles, and three of the four routes covered more than 2,000 miles."
+  },
+  {
+   "id": "C",
+   "text": "the Boston route, the longest shown, saw 89% of shipments arrive in good condition, while the shorter Atlanta route, with the widest station spacing, saw only 64%."
+  },
+  {
+   "id": "D",
+   "text": "shipments to Atlanta arrived in good condition less often than shipments to New Orleans, even though the two routes differed in length by only several hundred miles."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The historian's claim pits two variables against each other — distance versus station spacing — and C cites the pair of routes that separates them: the longest route (Boston, stations every 260 miles) succeeded, while a shorter route (Atlanta, stations every 610 miles) failed.\n\n**The Full Solution:**\n- If distance set the limits of the trade, the 3,200-mile Boston route should fare worst. It did not: 89% arrived in good condition.\n- If station spacing set the limits, Atlanta — 800 miles shorter but with intervals more than twice as wide — should fare worst. It did: 64%.\n- Only that cross-comparison isolates the icing network as the operative constraint, which is exactly what the conclusion asserts.\n\n**Why the other choices are wrong:**\n- A: A single route's success rate, with no reference to spacing or distance, cannot arbitrate between the two variables.\n- B: It reports distances alone and never touches the outcome the claim is about.\n- D: The Atlanta-New Orleans contrast never mentions station spacing, so it leaves open the possibility that some other difference explains the gap.",
+ "passage": "Before mechanical refrigeration, a refrigerated rail car was an insulated box cooled by blocks of ice loaded through roof hatches, and the ice had to be replenished at icing stations along the route. A historian of the produce trade argues that in the early twentieth century, the system's reach was limited less by how much ice a car could carry than by where the icing stations stood: shipments moved reliably only along corridors with stations at close intervals. The historian concludes that the icing network, rather than car design, set the geography of the trade because ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "California lettuce shipments arriving in good condition, by route, 1915 (industry survey)",
+  "headers": [
+   "Route",
+   "Distance (miles)",
+   "Average interval between icing stations (miles)",
+   "Shipments arriving in good condition (%)"
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The claim singles out the rise of one region of origin to majority status, so the evidence must name that region, trace its rise, and show that it crossed half by the most recent year. Choice C does all three: Latin America rises from 1 percent in 1900 to 9 percent in 1960 to 53 percent in 2010, the only figure in the table above 50 percent. Choice A reports the European share's 74-point fall, the largest single change, but a decline cannot demonstrate a rise to majority. Choice B notes that the Asian share more than tripled, which is true but never reaches a majority. Choice D highlights the nearly flat \"Other\" row, the smallest movement in the table, when the claim turns on the dominant rising trend.",
-  "passage": "Demographers studying the U.S. foreign-born population over the long twentieth century have noted that its regional composition was repeatedly reorganized by changes in immigration law, transportation, and economic geography. Drawing on Pew Research Center compilations of census records, one team argues that the most striking single feature of the period is not the broad shift away from European origins but the rise of one specific region of origin, which by the most recent benchmark constituted a majority of the foreign-born population, because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Percentage of the foreign-born U.S. population by region of origin, selected years (Pew Research Center, Modern Immigration Wave, 2015)",
-    "headers": [
-      "Region",
-      "1900",
-      "1960",
-      "2010"
-    ],
-    "rows": [
-      [
-        "Europe",
-        "86%",
-        "75%",
-        "12%"
-      ],
-      [
-        "Latin America",
-        "1%",
-        "9%",
-        "53%"
-      ],
-      [
-        "Asia",
-        "2%",
-        "5%",
-        "28%"
-      ],
-      [
-        "Other",
-        "11%",
-        "11%",
-        "7%"
-      ]
-    ]
-  },
-  "_meta": {
-    "anchor": "Pew Research Center, regional composition of U.S. foreign-born 1900-2010",
-    "dataset": "qd-016"
-  },
-  "id": 1114,
-  "module": 1
+  "rows": [
+   [
+    "To Chicago",
+    "2,200",
+    "250",
+    "91"
+   ],
+   [
+    "To New Orleans",
+    "2,000",
+    "320",
+    "88"
+   ],
+   [
+    "To Atlanta",
+    "2,400",
+    "610",
+    "64"
+   ],
+   [
+    "To Boston",
+    "3,200",
+    "260",
+    "89"
+   ]
+  ]
+ },
+ "_meta": {
+  "anchor": "refrigerated rail cars — icing-station spacing vs. distance as the constraint on the produce trade",
+  "distractors": {
+   "A": "single row, no variable isolation",
+   "B": "distance only, outcome ignored",
+   "D": "comparison that omits the station-spacing variable"
+  }
+ },
+ "id": 1114,
+ "module": 1
 }

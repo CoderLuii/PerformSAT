@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-079",
+  "question": "A sample of a compound has a mass of $180$ milligrams, and the mass is reduced by half every $12$ minutes. Which function $M$ gives the mass, in milligrams, $t$ minutes after the sample was measured?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$M(t) = 90\\left(\\frac{1}{2}\\right)^{\\frac{t}{12}}$"
+    },
+    {
+      "id": "B",
+      "text": "$M(t) = 180\\left(\\frac{1}{2}\\right)^{12t}$"
+    },
+    {
+      "id": "C",
+      "text": "$M(t) = 180\\left(\\frac{1}{2}\\right)^{\\frac{t}{12}}$"
+    },
+    {
+      "id": "D",
+      "text": "$M(t) = 180(2)^{\\frac{t}{12}}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "halves the initial mass instead of using it as the coefficient",
+    "B": "multiplies $t$ by $12$ instead of dividing, so the mass halves every minute twelve times over",
+    "D": "uses a base of $2$, which doubles the mass instead of halving it"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Start at $180$, multiply by $\\frac{1}{2}$, and let the exponent count $12$-minute periods: $M(t) = 180\\left(\\frac{1}{2}\\right)^{\\frac{t}{12}}$.\n\n**The Full Solution:**\nStep 1: The model is $M(t) = M_0(b)^{\\frac{t}{p}}$, where $M_0$ is the initial mass, $b$ is the factor per period, and $p$ is the length of one period.\nStep 2: Here $M_0 = 180$ milligrams, $b = \\frac{1}{2}$ because the mass halves, and $p = 12$ minutes.\nStep 3: So $M(t) = 180\\left(\\frac{1}{2}\\right)^{\\frac{t}{12}}$. Check at $t = 12$: $180\\left(\\frac{1}{2}\\right)^1 = 90$ milligrams, exactly half the starting mass. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: uses $90$ as the coefficient, which is the mass after one half-life, not at $t = 0$.\n* Choice B: writes the exponent as $12t$, so at $t = 12$ the mass would be halved $144$ times.\n* Choice D: keeps the right period but uses base $2$, which models doubling; at $t = 12$ it gives $360$ milligrams.\n\n**Test Day Takeaway:** Divide the time variable by the length of one period. If a period is $p$ units long, the exponent is $\\frac{t}{p}$ — never $pt$."
+}

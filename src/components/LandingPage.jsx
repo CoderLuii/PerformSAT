@@ -1,8 +1,13 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { useFeatureFlag } from '../hooks/useFeatureFlag';
+import { getReferral } from '../services/refTracker';
+import { PRICE_MONTHLY, PRICE_ANNUAL_MONTHLY, PRICE_ANNUAL_TOTAL, ANNUAL_SAVINGS, TRIAL_DAYS } from '../services/pricing';
 import { Modal } from './ui/Modal';
 import Wordmark from './ui/Wordmark';
+import LandingPageV2 from './LandingPageV2';
+import { Avatar, svgBase } from './landingShared';
+import { ROSTER, PRICING_INCLUDES } from '../data/landingRoster';
 import './LandingPage.css';
 
 // The pre-signup quiz funnel is its own chunk: the landing page must stay
@@ -14,7 +19,6 @@ const prefersReducedMotion = () =>
   typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
 /* ── Inline icon helpers (match the mockup's SVGs exactly) ──────────────── */
-const svgBase = { fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' };
 const ArrowRight = ({ size = 17 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.4" {...svgBase}><path d="M5 12h14M13 6l6 6-6 6" /></svg>
 );
@@ -132,23 +136,10 @@ const TrajectoryChart = () => {
   );
 };
 
-// Testimonial avatar: renders the student's initials, then overlays their
-// photo from public/testimonials/ when it exists. onError hides a missing
-// photo so we never flash a broken-image icon before the real photos land.
-const Avatar = ({ src, name }) => {
-  const initials = name.split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
-  return (
-    <span className="lp-avatar" style={{ width: 46, height: 46 }} aria-hidden="true">
-      {initials}
-      <img className="lp-avatar-img" src={src} alt="" loading="lazy" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-    </span>
-  );
-};
-
 // Feature cards — icon inherits `currentColor` from the wrapper's color.
 const FEATURES = [
   { title: 'Adaptive Diagnostic', iconBg: 'var(--lp-orange-tint)', iconCol: 'var(--lp-orange)',
-    desc: 'A 15-minute adaptive test that pinpoints every weak skill — the foundation the rest of your prep is built on.',
+    desc: 'A full adaptive diagnostic — about half the length of a real SAT — that pinpoints every weak skill, the foundation the rest of your prep is built on.',
     icon: <><circle cx="12" cy="12" r="8" /><circle cx="12" cy="12" r="3.5" /><circle cx="12" cy="12" r="0.6" fill="currentColor" stroke="none" /></> },
   { title: 'Diagnostic-Driven Plan', iconBg: 'var(--lp-purple-tint)', iconCol: 'var(--lp-purple)',
     desc: 'A week-by-week study plan that starts where the points are cheapest to win and adapts as you improve.',
@@ -169,7 +160,7 @@ const FEATURES = [
 
 const STEPS = [
   { n: '1', title: 'Take your diagnostic', bg: 'orange',
-    desc: 'A short adaptive test finds exactly which skills are costing you points.',
+    desc: 'An adaptive diagnostic finds exactly which skills are costing you points.',
     icon: <><circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" /><path d="M11 8v6M8 11h6" /></> },
   { n: '2', title: 'Get your custom plan', bg: 'purple',
     desc: 'SEVA builds a week-by-week plan around your weak spots and your test date.',
@@ -177,31 +168,6 @@ const STEPS = [
   { n: '3', title: 'Practice what matters', bg: 'lime',
     desc: 'Drill the right questions with an AI tutor beside you, and watch your score climb.',
     icon: <path d="M13 2 3 14h9l-1 8 10-12h-9z" /> },
-];
-
-// Real, product-owner-cleared student results (approved to publish by name +
-// college on 2026-07-07). Photos live in public/testimonials/; until they land
-// the Avatar falls back to initials. Order + photo mapping match the mockup.
-const ROSTER = [
-  { img: '/testimonials/student-1.png', name: 'Jake C.', meta: 'Princeton University', from: '1420', to: '1540',
-    quote: 'The best decision I made in my whole SAT journey. It found the exact grammar slips costing me points and drilled them until they were gone.' },
-  { img: '/testimonials/student-2.png', name: 'Gino S.', meta: 'University of Florida · Honors', from: '1220', to: '1490',
-    quote: 'It taught me to see the SAT as patterns, not random questions. My score jumped 270 points and I earned over $350K in scholarships.' },
-  { img: '/testimonials/student-3.png', name: 'Sansai H.', meta: 'Villanova University', from: '1250', to: '1430',
-    quote: 'I stopped chasing volume and started following a real system. The improvement felt structural — it just clicked into place.' },
-  { img: '/testimonials/student-5.png', name: 'Rocco D.', meta: 'Fordham University', from: '1180', to: '1420',
-    quote: "I couldn't have gotten these results without SEVA. By test day I wasn't guessing anymore — I was executing." },
-  { img: '/testimonials/student-4.png', name: 'Luca S.', meta: 'Tufts University', from: '1280', to: '1410',
-    quote: 'It matched the intensity I bring to the field. Once I saw the structure beneath each question, my accuracy and timing transformed.' },
-];
-
-const PRICING_INCLUDES = [
-  '2,200+ hand-authored practice questions',
-  '12 full-length adaptive practice tests',
-  'Six-class error diagnosis after every test',
-  'Targeted drills for the exact question types you miss',
-  'AI tutor with step-by-step, inline graphs',
-  'A study plan built around your gaps',
 ];
 
 // Skill marquee rows — real skills from the bank, math up top, R&W below.
@@ -221,6 +187,16 @@ const LandingPage = () => {
   // paywall so the landing page never promises "free forever" once the
   // 3-day-trial model is live (and never promises a trial before it exists).
   const billingLive = useFeatureFlag('billing');
+  // landingV2: the "show, don't tell" page (try-it hero + product tour).
+  // `?lp=v2` previews it without touching the flag, so a reviewer can open the
+  // new page by link on any deploy; `?lp=v1` forces the old page the same way.
+  const v2Flag = useFeatureFlag('landingV2');
+  const lpParam = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('lp') : null;
+  const v2 = lpParam === 'v2' ? true : lpParam === 'v1' ? false : v2Flag;
+  // Creator-link visitors (sevaprep.com/r/<slug>) get a confirmation ribbon so
+  // the promised 20% reads as real before the Stripe page finally shows it.
+  // getReferral never throws and returns null for everyone else.
+  const creatorRef = getReferral();
   const [showAuth, setShowAuth] = useState(false); // login modal
   const [showFunnel, setShowFunnel] = useState(false); // signup quiz funnel
   const [active, setActive] = useState(0); // results carousel index (can go +/-, wrapped on read)
@@ -232,10 +208,9 @@ const LandingPage = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const { signup, login } = useAuth();
+  const { signup, login, user, loading: authLoading } = useAuth();
   const rootRef = useRef(null);
   const progressRef = useRef(null);
-  const heroVisRef = useRef(null);
   const plxRefs = useRef([]);
   const addPlx = useCallback((el) => {
     if (el && !plxRefs.current.includes(el)) plxRefs.current.push(el);
@@ -245,7 +220,7 @@ const LandingPage = () => {
   // variants slide from the left/right or scale in; `.lp-stag` staggers its
   // children. Re-runs when we come back from the funnel.
   useEffect(() => {
-    if (showFunnel) return undefined;
+    if (showFunnel || v2) return undefined;
     const root = rootRef.current;
     if (!root) return undefined;
     const els = Array.from(root.querySelectorAll('.lp-reveal, .lp-stag'));
@@ -267,13 +242,13 @@ const LandingPage = () => {
     els.forEach((e) => io.observe(e));
     const fallback = setTimeout(() => els.forEach((e) => e.classList.add('in')), 2800);
     return () => { io.disconnect(); clearTimeout(fallback); };
-  }, [showFunnel]);
+  }, [showFunnel, v2]);
 
   // One scroll pass drives everything scroll-linked: the tri-color progress
   // bar, the nav elevation, and the parallax glow blobs. rAF-throttled,
   // passive, transform-only — no layout writes outside the frame.
   useEffect(() => {
-    if (showFunnel) return undefined;
+    if (showFunnel || v2) return undefined;
     const reduced = prefersReducedMotion();
     plxRefs.current = plxRefs.current.filter((el) => el && el.isConnected);
     let raf = 0;
@@ -302,40 +277,9 @@ const LandingPage = () => {
       window.removeEventListener('resize', onScroll);
       cancelAnimationFrame(raf);
     };
-  }, [showFunnel]);
+  }, [showFunnel, v2]);
 
   // Pointer tilt on the hero product panel — desktop pointers only.
-  useEffect(() => {
-    if (showFunnel) return undefined;
-    const el = heroVisRef.current;
-    if (!el) return undefined;
-    if (prefersReducedMotion() || window.matchMedia?.('(pointer: coarse)').matches) return undefined;
-    let raf = 0;
-    const onMove = (e) => {
-      const r = el.getBoundingClientRect();
-      const dx = (e.clientX - r.left) / r.width - 0.5;
-      const dy = (e.clientY - r.top) / r.height - 0.5;
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        el.style.setProperty('--lp-tilt-x', `${(dy * -4.5).toFixed(2)}deg`);
-        el.style.setProperty('--lp-tilt-y', `${(dx * 6.5).toFixed(2)}deg`);
-      });
-    };
-    const onLeave = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        el.style.setProperty('--lp-tilt-x', '0deg');
-        el.style.setProperty('--lp-tilt-y', '0deg');
-      });
-    };
-    el.addEventListener('pointermove', onMove);
-    el.addEventListener('pointerleave', onLeave);
-    return () => {
-      el.removeEventListener('pointermove', onMove);
-      el.removeEventListener('pointerleave', onLeave);
-      cancelAnimationFrame(raf);
-    };
-  }, [showFunnel]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -352,12 +296,23 @@ const LandingPage = () => {
   };
 
   // Every signup CTA routes through the quiz funnel; only "Log in" opens
-  // the modal directly.
-  const openAuth = (loginMode = false) => {
+  // the modal directly. A plan-specific pricing CTA carries its plan into
+  // the funnel (the signup step then skips the plan question); generic CTAs
+  // pass none and the funnel asks.
+  const [funnelPlan, setFunnelPlan] = useState(null); // 'monthly' | 'annual' | null
+  const openAuth = (loginMode = false, plan = null) => {
     if (loginMode) {
       setShowFunnel(false);
       setShowAuth(true);
+    } else if (user || authLoading) {
+      // Defense-in-depth behind the App route gate: a live (or still
+      // resolving) session must never reach the signup funnel — completing
+      // it against an existing account mutates that account (bug filed
+      // 2026-08-13). The route redirects signed-in visitors anyway; this
+      // guard covers any direct mount during the auth-restore window.
+      return;
     } else {
+      setFunnelPlan(plan === 'monthly' || plan === 'annual' ? plan : null);
       setShowAuth(false);
       setShowFunnel(true);
     }
@@ -377,12 +332,13 @@ const LandingPage = () => {
   const prevCard = ROSTER[(ri - 1 + rn) % rn];
   const nextCard = ROSTER[(ri + 1) % rn];
 
-  if (showFunnel) {
+  if (showFunnel && !user) {
     return (
       <React.Suspense fallback={<div style={{ minHeight: '100vh', background: '#F6F4EF' }} />}>
         <OnboardingFunnel
           signup={signup}
           billingLive={billingLive}
+          presetPlan={funnelPlan}
           onExit={() => setShowFunnel(false)}
           onLogIn={() => openAuth(true)}
         />
@@ -390,10 +346,117 @@ const LandingPage = () => {
     );
   }
 
+  // The login modal is shared by both landing pages (signup always goes
+  // through the funnel), so it is built once and rendered after whichever
+  // page body is active.
+  const loginModal = (
+    <Modal isOpen={showAuth} onClose={() => setShowAuth(false)} title="Welcome Back" maxWidth="480px">
+      <p className="auth-form-subtitle" style={{ marginTop: '-0.5rem', marginBottom: '1.5rem', color: 'var(--color-slate-500)' }}>
+        Log in to continue learning
+      </p>
+      <form onSubmit={handleSubmit}>
+        <div className="auth-form-group">
+          <label className="auth-form-label" htmlFor="email">Email</label>
+          <input id="email" type="email" className="auth-form-input" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" required />
+        </div>
+        <div className="auth-form-group">
+          <label className="auth-form-label" htmlFor="password">Password</label>
+          <input id="password" type="password" className="auth-form-input" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••" required minLength="6" />
+        </div>
+        {error && <div className="auth-form-error">{error}</div>}
+        <button type="submit" className="auth-form-submit" disabled={loading}>{loading ? 'Please wait...' : 'Log In'}</button>
+        <button type="button" className="auth-form-toggle" onClick={() => { setShowAuth(false); openAuth(false); }}>
+          Don't have an account? Sign up
+        </button>
+      </form>
+    </Modal>
+  );
+
+  // landingV2 — the Acely-style rebuild. Its own component, its own CSS; this
+  // file keeps only the behaviour (auth, funnel, billing flag, modal).
+  if (v2) {
+    return (
+      <>
+        <LandingPageV2
+          openAuth={openAuth}
+          billingLive={billingLive}
+          creatorRibbon={Boolean(creatorRef) && billingLive}
+          pricing={{ TRIAL_DAYS, PRICE_MONTHLY, PRICE_ANNUAL_MONTHLY, PRICE_ANNUAL_TOTAL, ANNUAL_SAVINGS }}
+        />
+        {loginModal}
+      </>
+    );
+  }
+
+  const findingCard = (
+          <div className="lp-finding lp-stag" aria-label="Example diagnosis finding">
+            <div className="lp-finding-head">
+              <span className="lp-finding-chip">1</span>
+              <div className="lp-finding-cost">
+                <div className="lp-finding-cost-num">~40 pts</div>
+                <div className="lp-finding-cost-label">est. cost</div>
+              </div>
+            </div>
+            <p className="lp-finding-headline">Word problems break at the translation step, not the algebra.</p>
+            <p className="lp-finding-story">You set up the wrong relationship before the math even starts — and you give these <strong>38 seconds</strong> against <strong>64</strong> on the ones you get right.</p>
+            <p className="lp-finding-why"><strong>Why:</strong> you feel the uncertainty early and rush to commit instead of re-reading the setup.</p>
+            <div className="lp-finding-pills">
+              <span>Word problems: 2/7</span>
+              <span>38s vs 64s on correct</span>
+              <span>4 misses · same setup slip</span>
+            </div>
+          </div>
+  );
+  const brandSection = (
+      <section id="why" className="lp-brand lp-reveal">
+        <div className="lp-brand-card">
+          <div className="lp-brand-blob-a lp-plx" data-speed="0.06" ref={addPlx} aria-hidden="true" />
+          <div className="lp-brand-blob-b lp-plx" data-speed="0.1" ref={addPlx} aria-hidden="true" />
+          <div className="lp-brand-grid">
+            <div>
+              <div className="lp-brand-kicker">
+                <span className="lp-brand-kicker-line" />
+                <span className="lp-brand-kicker-text">The SEVA promise</span>
+              </div>
+              <h2 className="lp-brand-title">
+                <span>A Tutor's</span>
+                <span className="grad">Heart.</span>
+                <span className="mt">A Machine's</span>
+                <span className="lime">Reach.</span>
+              </h2>
+            </div>
+            <div>
+              <p className="lp-brand-copy">The patience and insight of a great tutor — the kind who notices <i>why</i> you missed a question, not just that you did — delivered to every student, on every question, at any hour.</p>
+              <div className="lp-brand-rows">
+                <div className="lp-brand-row">
+                  <span className="lp-brand-row-icon orange">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#F2865C" stroke="none"><path d="M12 21s-7.5-4.6-10-9.3C.3 8.4 1.7 5 4.9 5c2 0 3.3 1.2 4.1 2.4l.9 1.3.9-1.3C11.7 6.2 13 5 15 5c3.3 0 4.7 3.4 2.9 6.7C19.5 16.4 12 21 12 21z" /></svg>
+                  </span>
+                  <span>Explanations that adapt to how <i>you</i> think</span>
+                </div>
+                <div className="lp-brand-row">
+                  <span className="lp-brand-row-icon lime">
+                    <svg width="20" height="20" viewBox="0 0 24 24" stroke="#C0F054" strokeWidth="2" {...svgBase}><circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" /></svg>
+                  </span>
+                  <span>Available the second you're stuck — never a wait</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  );
+
   return (
     <div className="landing-container" ref={rootRef}>
       {/* Tri-color scroll progress — the brand S, stretched across the page. */}
       <div className="lp-progress" ref={progressRef} aria-hidden="true" />
+
+      {creatorRef && billingLive && (
+        <div className="lp-ref-banner" role="status">
+          Creator discount active — 20% off your first 3 months, applied automatically at checkout.
+        </div>
+      )}
 
       {/* ===== NAV ===== */}
       <nav className={`lp-nav${navScrolled ? ' is-scrolled' : ''}`}>
@@ -412,11 +475,11 @@ const LandingPage = () => {
         </div>
       </nav>
 
-      {/* ===== HERO ===== */}
+      {/* ===== HERO: slogan + dashboard stage ===== */}
       <header className="lp-hero">
         <div className="lp-hero-blob lp-hero-blob-a lp-plx" data-speed="0.10" ref={addPlx} aria-hidden="true" />
         <div className="lp-hero-blob lp-hero-blob-b lp-plx" data-speed="0.16" ref={addPlx} aria-hidden="true" />
-        <div className="lp-hero-inner">
+        <div className="lp-hero-inner is-centered">
           <div>
             <span className="lp-badge lp-enter" style={{ '--d': '0ms' }}><span className="lp-badge-dot" />Built for the Digital SAT</span>
             <h1 className="lp-hero-title">
@@ -434,7 +497,7 @@ const LandingPage = () => {
               <a className="lp-btn-ghost-bordered" href="#how" onClick={scrollTo('how')}>See how it works</a>
             </div>
             {billingLive ? (
-              <p className="lp-hero-note lp-enter" style={{ '--d': '560ms' }}>Free for 3 days, then $85/month or $349/year. Cancel anytime before day 3 and you won't be charged.</p>
+              <p className="lp-hero-note lp-enter" style={{ '--d': '560ms' }}>{`Free for ${TRIAL_DAYS} days, then $${PRICE_MONTHLY}/month or $${PRICE_ANNUAL_TOTAL}/year. Cancel anytime before day ${TRIAL_DAYS} and you won't be charged.`}</p>
             ) : (
               <div className="lp-hero-trust lp-enter" style={{ '--d': '560ms' }}>
                 <span><CheckMark />Free to start</span>
@@ -443,52 +506,26 @@ const LandingPage = () => {
             )}
           </div>
 
-          <div className="lp-hero-visual lp-enter" style={{ '--d': '300ms' }} ref={heroVisRef}>
-            <div className="lp-demo-panel lp-tilt">
-              <div className="lp-demo-blob-a" aria-hidden="true" />
-              <div className="lp-demo-blob-b" aria-hidden="true" />
-              <div className="lp-demo-head">
-                <span className="lp-demo-eyebrow">Your progress</span>
-                <span className="lp-demo-live"><span className="lp-demo-live-dot" />Live</span>
-              </div>
-              <div className="lp-demo-card lp-float">
-                <div className="lp-demo-card-top">
-                  <div className="lp-demo-card-label">Current Score</div>
-                  <span className="lp-demo-delta">
-                    <svg width="12" height="12" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.6" {...svgBase}><path d="M7 17 17 7M9 7h8v8" /></svg>+90 pts
-                  </span>
-                </div>
-                <div className="lp-demo-scorerow">
-                  <CountUp className="lp-demo-score" to={1280} duration={1900} />
-                  <span className="lp-demo-scoremax">/ 1600</span>
-                </div>
-                <div className="lp-demo-bar">
-                  <div className="lp-demo-bar-fill" />
-                  <div className="lp-demo-bar-goal" />
-                </div>
-                <div className="lp-demo-barlabels"><span>Now</span><span style={{ color: 'var(--lp-lime-deep)' }}>Goal 1500</span></div>
-                <div className="lp-demo-tiles">
-                  <div className="lp-demo-tile lp-demo-tile-orange">
-                    <div className="lp-demo-tile-num">40%</div>
-                    <div className="lp-demo-tile-label">Accuracy</div>
-                  </div>
-                  <div className="lp-demo-tile lp-demo-tile-lime">
-                    <div className="lp-demo-tile-num">R&amp;W</div>
-                    <div className="lp-demo-tile-label">Strongest</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lp-tutor-pill">
-              <span className="lp-tutor-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" stroke="var(--lp-purple)" strokeWidth="2" {...svgBase}><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6z" /></svg>
-              </span>
-              <div>
-                <div className="lp-tutor-title">AI Tutor</div>
-                <div className="lp-tutor-sub">explaining question 4…</div>
-              </div>
-            </div>
-          </div>
+        </div>
+
+        {/* The product itself, right under the promise: the Home dashboard a
+            student sees every day, on a navy stage that runs into the stats. */}
+        <div className="lp-hero-stage">
+          <figure className="lp-hero-product lp-enter" style={{ '--d': '520ms' }}>
+            <div className="lp-shot-bar" aria-hidden="true"><span /><span /><span /></div>
+            <picture>
+              <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/showcase/dashboard.webp 1440w, ${process.env.PUBLIC_URL}/showcase/dashboard@2x.webp 2880w`} sizes="(max-width: 1264px) calc(100vw - 64px), 1200px" />
+              <img
+                src={`${process.env.PUBLIC_URL}/showcase/dashboard@2x.png`}
+                srcSet={`${process.env.PUBLIC_URL}/showcase/dashboard.png 1440w, ${process.env.PUBLIC_URL}/showcase/dashboard@2x.png 2880w`}
+                sizes="(max-width: 1264px) calc(100vw - 64px), 1200px"
+                alt="SEVA Home dashboard: performance snapshot with overall accuracy, consistency and pacing tiles, an estimated starting score of 1400 with Math and R&W ranges, days until the test, a practice calendar, and weak spots to pick up"
+                width="2880"
+                height="1800"
+                fetchpriority="high" decoding="async"
+              />
+            </picture>
+          </figure>
         </div>
       </header>
 
@@ -582,23 +619,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="lp-finding lp-stag" aria-label="Example diagnosis finding">
-            <div className="lp-finding-head">
-              <span className="lp-finding-chip">1</span>
-              <div className="lp-finding-cost">
-                <div className="lp-finding-cost-num">~40 pts</div>
-                <div className="lp-finding-cost-label">est. cost</div>
-              </div>
-            </div>
-            <p className="lp-finding-headline">Word problems break at the translation step, not the algebra.</p>
-            <p className="lp-finding-story">You set up the wrong relationship before the math even starts — and you give these <strong>38 seconds</strong> against <strong>64</strong> on the ones you get right.</p>
-            <p className="lp-finding-why"><strong>Why:</strong> you feel the uncertainty early and rush to commit instead of re-reading the setup.</p>
-            <div className="lp-finding-pills">
-              <span>Word problems: 2/7</span>
-              <span>38s vs 64s on correct</span>
-              <span>4 misses · same setup slip</span>
-            </div>
-          </div>
+          {findingCard}
         </div>
       </section>
 
@@ -640,29 +661,24 @@ const LandingPage = () => {
         <div className="lp-section-head">
           <span className="lp-eyebrow">See it in action</span>
           <h2 className="lp-section-title">This is what your prep looks like.</h2>
-          <p className="lp-section-sub">The real product — the dashboard that runs your prep, and the Bluebook-style runner you'll take every practice test in.</p>
+          <p className="lp-section-sub">The real product, not a mockup — the test runner, the answer review, and the diagnosis that comes after every test.</p>
         </div>
 
         <div className="lp-shot-row">
           <figure className="lp-shot-frame">
             <div className="lp-shot-bar" aria-hidden="true"><span /><span /><span /></div>
-            <img src={`${process.env.PUBLIC_URL}/showcase/app-dashboard.png`} alt="SEVA dashboard: current score 1220 with Math and R&W splits, goal progress bar, practice accuracy, SAT-day calendar, and a retry queue of missed questions" loading="lazy" width="1920" height="1080" />
-          </figure>
-          <div className="lp-shot-copy">
-            <h3 className="lp-shot-title">A dashboard that knows exactly where you stand</h3>
-            <ul className="lp-shot-list">
-              <li><strong>Your score, live.</strong> Current score, section splits, and distance to your goal — updated after every test.</li>
-              <li><strong>Strongest section vs. biggest opportunity,</strong> pulled straight from your latest test.</li>
-              <li><strong>A calendar counting down</strong> to your SAT test day, with every practiced day marked.</li>
-              <li><strong>Pick up where you struggled.</strong> The hard questions you missed, queued up to retry.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="lp-shot-row is-flipped">
-          <figure className="lp-shot-frame">
-            <div className="lp-shot-bar" aria-hidden="true"><span /><span /><span /></div>
-            <img src={`${process.env.PUBLIC_URL}/showcase/app-test-runner.png`} alt="SEVA test runner on a math question: Bluebook-style two-pane layout with question strip, answer choices, Mark for Review, and the built-in Desmos graphing calculator graphing a quadratic" loading="lazy" width="1920" height="1080" />
+            <picture>
+              <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/showcase/test-runner.webp 1440w, ${process.env.PUBLIC_URL}/showcase/test-runner@2x.webp 2880w`} sizes="(max-width: 960px) calc(100vw - 64px), (max-width: 1264px) calc((100vw - 112px) * 0.58), 660px" />
+              <img
+                src={`${process.env.PUBLIC_URL}/showcase/test-runner@2x.png`}
+                srcSet={`${process.env.PUBLIC_URL}/showcase/test-runner.png 1440w, ${process.env.PUBLIC_URL}/showcase/test-runner@2x.png 2880w`}
+                sizes="(max-width: 960px) calc(100vw - 64px), (max-width: 1264px) calc((100vw - 112px) * 0.58), 660px"
+                alt="SEVA test runner on a Reading and Writing question: Bluebook-style two-pane layout with the passage on the left, the question and four answer choices on the right, a question strip, Mark for Review, timer and Pause"
+                width="2880"
+                height="1800"
+                loading="lazy" decoding="async"
+              />
+            </picture>
           </figure>
           <div className="lp-shot-copy">
             <h3 className="lp-shot-title">Practice tests that feel like the real thing</h3>
@@ -674,46 +690,64 @@ const LandingPage = () => {
             </ul>
           </div>
         </div>
-      </section>
 
-      {/* ===== BRAND MOMENT ===== */}
-      <section id="why" className="lp-brand lp-reveal">
-        <div className="lp-brand-card">
-          <div className="lp-brand-blob-a lp-plx" data-speed="0.06" ref={addPlx} aria-hidden="true" />
-          <div className="lp-brand-blob-b lp-plx" data-speed="0.1" ref={addPlx} aria-hidden="true" />
-          <div className="lp-brand-grid">
-            <div>
-              <div className="lp-brand-kicker">
-                <span className="lp-brand-kicker-line" />
-                <span className="lp-brand-kicker-text">The SEVA promise</span>
-              </div>
-              <h2 className="lp-brand-title">
-                <span>A Tutor's</span>
-                <span className="grad">Heart.</span>
-                <span className="mt">A Machine's</span>
-                <span className="lime">Reach.</span>
-              </h2>
-            </div>
-            <div>
-              <p className="lp-brand-copy">The patience and insight of a great tutor — the kind who notices <i>why</i> you missed a question, not just that you did — delivered to every student, on every question, at any hour.</p>
-              <div className="lp-brand-rows">
-                <div className="lp-brand-row">
-                  <span className="lp-brand-row-icon orange">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#F2865C" stroke="none"><path d="M12 21s-7.5-4.6-10-9.3C.3 8.4 1.7 5 4.9 5c2 0 3.3 1.2 4.1 2.4l.9 1.3.9-1.3C11.7 6.2 13 5 15 5c3.3 0 4.7 3.4 2.9 6.7C19.5 16.4 12 21 12 21z" /></svg>
-                  </span>
-                  <span>Explanations that adapt to how <i>you</i> think</span>
-                </div>
-                <div className="lp-brand-row">
-                  <span className="lp-brand-row-icon lime">
-                    <svg width="20" height="20" viewBox="0 0 24 24" stroke="#C0F054" strokeWidth="2" {...svgBase}><circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" /></svg>
-                  </span>
-                  <span>Available the second you're stuck — never a wait</span>
-                </div>
-              </div>
-            </div>
+        <div className="lp-shot-row is-flipped">
+          <figure className="lp-shot-frame">
+            <div className="lp-shot-bar" aria-hidden="true"><span /><span /><span /></div>
+            <picture>
+              <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/showcase/review.webp 1440w, ${process.env.PUBLIC_URL}/showcase/review@2x.webp 2880w`} sizes="(max-width: 960px) calc(100vw - 64px), (max-width: 1264px) calc((100vw - 112px) * 0.58), 660px" />
+              <img
+                src={`${process.env.PUBLIC_URL}/showcase/review@2x.png`}
+                srcSet={`${process.env.PUBLIC_URL}/showcase/review.png 1440w, ${process.env.PUBLIC_URL}/showcase/review@2x.png 2880w`}
+                sizes="(max-width: 960px) calc(100vw - 64px), (max-width: 1264px) calc((100vw - 112px) * 0.58), 660px"
+                alt="SEVA answer review on the same test screen: module tabs showing 15 of 27 and 16 of 27 correct, the correct choice marked with a green check, a Correct pill, the explanation open below, and an Ask the tutor button"
+                width="2880"
+                height="1800"
+                loading="lazy" decoding="async"
+              />
+            </picture>
+          </figure>
+          <div className="lp-shot-copy">
+            <h3 className="lp-shot-title">Every question, marked — with the why</h3>
+            <ul className="lp-shot-list">
+              <li><strong>Review on the screen you took the test on.</strong> Correct and wrong answers marked, module by module.</li>
+              <li><strong>The explanation is already open</strong> — a full walkthrough, every step written out, plus why the other choices are wrong.</li>
+              <li><strong>Your score per module</strong> in the tabs, so you can see exactly where the points went.</li>
+              <li><strong>Ask the AI tutor</strong> the second an explanation doesn't land.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="lp-shot-row">
+          <figure className="lp-shot-frame">
+            <div className="lp-shot-bar" aria-hidden="true"><span /><span /><span /></div>
+            <picture>
+              <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/showcase/diagnosis.webp 1440w, ${process.env.PUBLIC_URL}/showcase/diagnosis@2x.webp 2880w`} sizes="(max-width: 960px) calc(100vw - 64px), (max-width: 1264px) calc((100vw - 112px) * 0.58), 660px" />
+              <img
+                src={`${process.env.PUBLIC_URL}/showcase/diagnosis@2x.png`}
+                srcSet={`${process.env.PUBLIC_URL}/showcase/diagnosis.png 1440w, ${process.env.PUBLIC_URL}/showcase/diagnosis@2x.png 2880w`}
+                sizes="(max-width: 960px) calc(100vw - 64px), (max-width: 1264px) calc((100vw - 112px) * 0.58), 660px"
+                alt="SEVA diagnosis after a practice test: score 990 against a 1500 target, 510 points to target, easy wins worth 50 points, Geometry and Trigonometry named the biggest lever, and the diagnosis naming recurring concept gaps as the biggest challenge"
+                width="2880"
+                height="1800"
+                loading="lazy" decoding="async"
+              />
+            </picture>
+          </figure>
+          <div className="lp-shot-copy">
+            <h3 className="lp-shot-title">A diagnosis, not just a score</h3>
+            <ul className="lp-shot-list">
+              <li><strong>Your biggest challenge, named.</strong> Pacing misses, concept gaps, execution slips — in that order, from your actual answers and timing.</li>
+              <li><strong>Points to target and the easy wins</strong> you can bank first.</li>
+              <li><strong>The one domain</strong> that is your biggest lever right now.</li>
+              <li><strong>What to focus on next</strong> — wired straight into your study plan.</li>
+            </ul>
           </div>
         </div>
       </section>
+
+      {/* ===== BRAND MOMENT ===== */}
+      {brandSection}
 
       {/* ===== PHILOSOPHY (word-by-word reveal) ===== */}
       <section className="lp-philosophy lp-reveal">
@@ -815,16 +849,16 @@ const LandingPage = () => {
             <div className="lp-pricing-cards">
               <div className="lp-pricing-card">
                 <h3 className="lp-plan-name">Monthly</h3>
-                <div className="lp-plan-amount"><span className="lp-plan-price">$85</span><span className="lp-plan-period">/month</span></div>
+                <div className="lp-plan-amount"><span className="lp-plan-price">{`$${PRICE_MONTHLY}`}</span><span className="lp-plan-period">/month</span></div>
                 <p className="lp-plan-note">Billed monthly. Cancel anytime.</p>
-                <button type="button" className="lp-pricing-cta" onClick={() => openAuth(false)}>Start your 3-day free trial</button>
+                <button type="button" className="lp-pricing-cta" onClick={() => openAuth(false, 'monthly')}>{`Start your ${TRIAL_DAYS}-day free trial`}</button>
               </div>
               <div className="lp-pricing-card is-featured">
                 <span className="lp-pricing-badge">Best value</span>
                 <h3 className="lp-plan-name">Annual</h3>
-                <div className="lp-plan-amount"><span className="lp-plan-price">$29</span><span className="lp-plan-period">/month</span></div>
-                <p className="lp-plan-savings">One payment of $349 per year — save $671 vs monthly</p>
-                <button type="button" className="lp-pricing-cta" onClick={() => openAuth(false)}>Start your 3-day free trial</button>
+                <div className="lp-plan-amount"><span className="lp-plan-price">{`$${PRICE_ANNUAL_MONTHLY}`}</span><span className="lp-plan-period">/month</span></div>
+                <p className="lp-plan-savings">{`One payment of $${PRICE_ANNUAL_TOTAL} per year — save $${ANNUAL_SAVINGS} vs monthly`}</p>
+                <button type="button" className="lp-pricing-cta" onClick={() => openAuth(false, 'annual')}>{`Start your ${TRIAL_DAYS}-day free trial`}</button>
               </div>
             </div>
             <p className="lp-pricing-reassurance">Cancel anytime before day 3 and you won't be charged.</p>
@@ -851,8 +885,8 @@ const LandingPage = () => {
           <h2 className="lp-final-title">Ready to find your next 200 points?</h2>
           <p className="lp-final-sub">
             {billingLive
-              ? "Take the free diagnostic. In 15 minutes you'll know exactly where they are — then try everything free for 3 days."
-              : "Take the free diagnostic. In 15 minutes you'll know exactly where they are."}
+              ? "Take the free diagnostic. In about an hour you'll know exactly where they are — then try everything free for 3 days."
+              : "Take the free diagnostic. In about an hour you'll know exactly where they are."}
           </p>
           <button type="button" className="lp-final-cta" onClick={() => openAuth(false)}>
             Start your free diagnostic<ArrowRight />
@@ -893,26 +927,7 @@ const LandingPage = () => {
       </footer>
 
       {/* ===== Login Modal (signup happens in the onboarding funnel) ===== */}
-      <Modal isOpen={showAuth} onClose={() => setShowAuth(false)} title="Welcome Back" maxWidth="480px">
-        <p className="auth-form-subtitle" style={{ marginTop: '-0.5rem', marginBottom: '1.5rem', color: 'var(--color-slate-500)' }}>
-          Log in to continue learning
-        </p>
-        <form onSubmit={handleSubmit}>
-          <div className="auth-form-group">
-            <label className="auth-form-label" htmlFor="email">Email</label>
-            <input id="email" type="email" className="auth-form-input" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" required />
-          </div>
-          <div className="auth-form-group">
-            <label className="auth-form-label" htmlFor="password">Password</label>
-            <input id="password" type="password" className="auth-form-input" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••" required minLength="6" />
-          </div>
-          {error && <div className="auth-form-error">{error}</div>}
-          <button type="submit" className="auth-form-submit" disabled={loading}>{loading ? 'Please wait...' : 'Log In'}</button>
-          <button type="button" className="auth-form-toggle" onClick={() => { setShowAuth(false); openAuth(false); }}>
-            Don't have an account? Sign up
-          </button>
-        </form>
-      </Modal>
+      {loginModal}
     </div>
   );
 };

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-057",
+ "question": "A right circular cylinder has a radius of $r$ and a height of $h$. A second right circular cylinder has a radius of $3r$ and a height of $3h$. The volume of the second cylinder is how many times the volume of the first cylinder?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$27$"
+  },
+  {
+   "id": "D",
+   "text": "$81$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the linear factor only",
+  "B": "multiplies the two factors of 3 without squaring the radius",
+  "D": "squares the height factor as well as the radius factor"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Pure Volume Scaling**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** $V = \\pi r^2 h$, so tripling both $r$ and $h$ multiplies the volume by $3^2 \\cdot 3 = 27$.\n\n**The Full Solution:**\nStep 1: The first cylinder has volume $V_1 = \\pi r^2 h$.\nStep 2: The second has volume $V_2 = \\pi(3r)^2(3h) = \\pi(9r^2)(3h) = 27\\pi r^2 h$.\nStep 3: Divide: $\\frac{V_2}{V_1} = \\frac{27\\pi r^2 h}{\\pi r^2 h} = 27$.\n\nVerification: the two cylinders are similar with linear factor $3$, and volumes of similar solids scale by $3^3 = 27$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reports the linear factor, which scales a single length, not a volume.\n* Choice B ($9$): multiplies $3 \\cdot 3$ for the two changed dimensions but never squares the radius.\n* Choice D ($81$): squares the height factor along with the radius factor, using $3^2 \\cdot 3^2$.\n\n**Test Day Takeaway:** Substitute the scaled quantities into the formula and simplify. The exponent on each variable tells you how its factor compounds."
+}

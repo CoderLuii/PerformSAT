@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-153",
+  "question": "The number of bats in a colony increased by $25\\%$ from year $1$ to year $2$ and then decreased by $12\\%$ from year $2$ to year $3$. If the colony had $176$ bats in year $3$, how many bats did it have in year $1$?",
+  "correctAnswer": "160",
+  "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**The correct answer is $160$.**\n\n**The Fast Way (~15s):** The two changes multiply to $1.25 \\times 0.88 = 1.1$, so year $3$ is $1.1$ times year $1$: $\\frac{176}{1.1} = 160$.\n\n**The Full Solution:**\nStep 1: Let $n$ be the year-$1$ count. A $25\\%$ increase gives $1.25n$ in year $2$.\nStep 2: A $12\\%$ decrease multiplies by $0.88$: year $3$ is $0.88(1.25n) = 1.1n$.\nStep 3: Set $1.1n = 176$, so $n = 160$. Check: $160 \\times 1.25 = 200$, and $200 \\times 0.88 = 176$. $\\checkmark$\n\n**Common Mistakes:** Netting the percents to $+13\\%$ and computing $\\frac{176}{1.13} \\approx 155.75$; reversing the changes by multiplying $176$ by $0.75$ and $1.12$ to get $147.84$; dividing by $1.25$ only, which gives $140.8$.\n\n**Test Day Takeaway:** To reverse successive percent changes, divide the final amount by the product of the multipliers; never subtract the percents or apply them backward."
+}

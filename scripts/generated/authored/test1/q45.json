@@ -6,26 +6,26 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 2,
- "passage": "In Team of Rivals: The Political Genius of Abraham Lincoln (2005), historian Doris Kearns Goodwin argues that Lincoln strengthened his administration by appointing his most prominent political opponents to top posts. On her account, the cabinet of rivals that he assembled in 1861 ______ as the new president's most reliable instrument of wartime governance, with internal disagreement treated as a feature of effective decision-making rather than a flaw.",
+ "passage": "Rising from hydrothermal vents on the seafloor, plumes of mineral-rich water spread for kilometers through the deep ocean. The chemistry of these plumes, which mix vent fluids with the seawater surrounding them, ______ oceanographers a way to detect undiscovered vent fields: an instrument towed through the water column can register the plumes' faint chemical signatures long before any camera could spot the vents themselves.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "are functioning"
+   "text": "offer"
   },
   {
    "id": "B",
-   "text": "have functioned"
+   "text": "offers"
   },
   {
    "id": "C",
-   "text": "functions"
+   "text": "are offering"
   },
   {
    "id": "D",
-   "text": "function"
+   "text": "have offered"
   }
  ],
- "correctAnswer": "C",
- "explanation": "The grammatical subject of the blank is the singular collective noun 'cabinet,' not the plural noun 'rivals' inside the intervening prepositional phrase 'of rivals.' Standard English treats a singular collective noun as a unit and pairs it with a singular verb when, as here, the noun names the body acting as a whole. The phrase 'the cabinet ... functions as the new president's most reliable instrument' agrees in number, so 'functions' is the correct form."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The subject is the singular \"chemistry,\" so the verb must be the singular \"offers.\"\n\n**The Full Solution:**\n- The intervening elements — \"of these plumes\" and the relative clause \"which mix vent fluids with the seawater surrounding them\" — sit between subject and verb precisely to invite agreement with the nearer plural nouns.\n- Strip the interrupters and the agreement is plain: \"The chemistry ... offers oceanographers a way to detect undiscovered vent fields.\"\n\n**Why the other choices are wrong:**\n- A: \"Offer\" is plural — it agrees with \"plumes\" or \"fluids,\" not the true subject \"chemistry.\"\n- C: \"Are offering\" is likewise plural, the same nearest-noun trap.\n- D: \"Have offered\" is plural as well; only the singular form matches the subject."
 }

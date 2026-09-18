@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-367",
+ "question": "A rehearsal-hall timer applies $v(x)=x-6$ to an entered value $x$ and then applies $u(x)=\\frac{x}{4}$ to that result. If the timer's output is $-3$, what value was entered?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-18$"
+  },
+  {
+   "id": "B",
+   "text": "$-12$"
+  },
+  {
+   "id": "C",
+   "text": "$-6$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "subtracts 6 instead of adding it when undoing the first step: 4(-3) - 6 = -18",
+  "B": "reports the value after the subtraction step, -12, rather than the entered value",
+  "D": "adds 6 before multiplying by 4, reversing the order of the undo steps: (-3 + 6)(4) = 12"
+ },
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Undo the outer step first: $u$'s input was $4(-3)=-12$, so $x-6=-12$ and $x=-6$.\n\n**The Full Solution:**\nStep 1: The composition is $u(v(x))=\\frac{x-6}{4}$, and this equals $-3$.\nStep 2: Multiply both sides by 4: $x-6=-12$.\nStep 3: Add 6 to both sides: $x=-6$. Check: $v(-6)=-12$ and $u(-12)=\\frac{-12}{4}=-3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-18$): subtracts 6 instead of adding it, giving $4(-3)-6$.\n* Choice B ($-12$): stops at the intermediate value $x-6=-12$ instead of solving for $x$.\n* Choice D ($12$): adds 6 before multiplying by 4, undoing the two steps in the wrong order.\n\n**Test Day Takeaway:** To reverse a composition, undo the outermost operation first and work inward."
+}

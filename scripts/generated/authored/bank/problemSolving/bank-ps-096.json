@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-096",
+  "question": "A researcher selected a random sample of $180$ of the $2{,}400$ employees at a company and found that $30\\%$ of the employees selected use the company's shuttle service. Which of the following is the largest group to which the results of this sample can be appropriately generalized?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The $180$ employees selected for the sample"
+    },
+    {
+      "id": "B",
+      "text": "All $2{,}400$ employees at the company"
+    },
+    {
+      "id": "C",
+      "text": "All employees at companies in the same city"
+    },
+    {
+      "id": "D",
+      "text": "All adults in the same city"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops at the sample, which random selection is designed to move beyond",
+    "C": "extends past the population the sample was drawn from",
+    "D": "extends to a population that was never sampled"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** A random sample supports conclusions about the population it was drawn from: the $2{,}400$ employees at the company.\n\n**The Full Solution:**\nStep 1: Identify the population that was sampled. The $180$ employees were selected at random from the $2{,}400$ employees at the company.\nStep 2: Random selection makes the sample representative of that population, so the estimate of $30\\%$ generalizes to all $2{,}400$ employees.\nStep 3: No employees of other companies and no non-employees had a chance of being selected, so the results say nothing about them.\nCheck: the largest group the sample represents is the group it was drawn from. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: The $180$ employees are the sample itself; random selection exists so that the result can be extended to the full company.\n* Choice C: Employees at other companies were never in the pool from which the sample was drawn.\n* Choice D: Adults who do not work at the company had no chance of being selected, so the estimate does not describe them.\n\n**Test Day Takeaway:** Conclusions reach exactly as far as the population that was randomly sampled — no farther."
+}

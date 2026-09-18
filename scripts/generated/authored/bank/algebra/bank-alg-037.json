@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-037",
+ "question": "On a gantry drawing, one track lies on the graph of $8x + qy = 20$ and a second track lies on the graph of $y = \\frac{2}{5}x - 6$. The two tracks cross at a right angle, where $q$ is a constant. What is the value of $q$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-20$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{16}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{16}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "uses the parallel slope $\\frac{2}{5}$, solving $-\\frac{8}{q} = \\frac{2}{5}$",
+  "B": "uses $\\frac{5}{2}$ without the negative sign",
+  "D": "uses $-\\frac{2}{5}$, negating the given slope instead of taking its negative reciprocal"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Line Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The second track has slope $\\frac{2}{5}$, so the first needs slope $-\\frac{5}{2}$: $-\\frac{8}{q} = -\\frac{5}{2}$ gives $q = \\frac{16}{5}$.\n\n**The Full Solution:**\nStep 1: Rewrite $8x + qy = 20$ as $y = -\\frac{8}{q}x + \\frac{20}{q}$, so its slope is $-\\frac{8}{q}$.\nStep 2: Tracks that cross at a right angle have slopes whose product is $-1$, and the second slope is $\\frac{2}{5}$, so the first must be $-\\frac{5}{2}$.\nStep 3: Solving $-\\frac{8}{q} = -\\frac{5}{2}$ gives $5q = 16$ and $q = \\frac{16}{5}$. Check: $\\frac{2}{5}\\left(-\\frac{5}{2}\\right) = -1$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-20$): uses the parallel slope $\\frac{2}{5}$, solving $-\\frac{8}{q} = \\frac{2}{5}$\n* Choice B ($-\\frac{16}{5}$): uses $\\frac{5}{2}$ without the negative sign\n* Choice D ($20$): uses $-\\frac{2}{5}$, negating the given slope instead of taking its negative reciprocal\n\n**Test Day Takeaway:** Perpendicular means flip and negate; write the standard-form slope as $-\\frac{A}{B}$ before setting up the equation."
+}

@@ -1,0 +1,57 @@
+{
+  "id": 1,
+  "question": "The table shows the value of the function $f$ at four inputs. What is the value of $f(f(3))$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)"
+      ],
+      "rows": [
+        [
+          "1",
+          "3"
+        ],
+        [
+          "2",
+          "5"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "4",
+          "1"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$5$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "starts from x = 4 instead of x = 3",
+    "C": "stops at the inner value f(3)",
+    "D": "adds f(3) and f(4)"
+  },
+  "correctAnswer": "A",
+  "hint": "Look up the inner output in the table first, then treat that number as a new input.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** $f(3) = 4$, and the row for $4$ gives $f(4) = 1$.\n\n**The Full Solution:**\nStep 1: Read the inner value. The row with $x = 3$ shows $f(3) = 4$.\nStep 2: Replace the inside: $f(f(3)) = f(4)$.\nStep 3: Read $f(4)$ from the row with $x = 4$: $f(4) = 1$. Check the order — applying $f$ twice starting at $3$ gives $3 \\to 4 \\to 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($3$): starts from the wrong input and computes $f(f(4)) = f(1) = 3$.\n* Choice C ($4$): stops after the inner step and reports $f(3)$.\n* Choice D ($5$): adds the two table values $f(3) + f(4) = 4 + 1$ instead of composing them.\n\n**Test Day Takeaway:** With a table, composition is two lookups: find the inner output, then find that number in the input column."
+}

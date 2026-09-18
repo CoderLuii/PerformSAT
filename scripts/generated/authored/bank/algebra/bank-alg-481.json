@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-481",
+ "question": "A print studio's edition model pairs $y = 4x - n$ with $2x + y = 30$, where $n$ is a constant. The pair satisfying both has $y = 14$. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$14$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$46$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports x = 8, the coordinate found on the way, instead of n",
+  "B": "reports the given y = 14 instead of n",
+  "D": "adds instead of subtracting, computing 14 + 32 = 46"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System of Equations (Substitution)**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** With $y = 14$, the second equation gives $2x = 16$ and $x = 8$; then $14 = 4(8) - n$ makes $n = 18$.\n\n**The Full Solution:**\nStep 1: Use the equation free of the unknown constant. Substituting $y = 14$ into $2x + y = 30$ gives $2x + 14 = 30$.\nStep 2: Solve for the missing coordinate: $2x = 16$, so $x = 8$.\nStep 3: Put both coordinates into the first equation: $14 = 4(8) - n$, so $14 = 32 - n$ and $n = 18$. Check: $y = 4(8) - 18 = 14$, and $2(8) + 14 = 30$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): reports $x = 8$, the coordinate uncovered along the way, instead of the constant.\n* Choice B ($14$): reports the $y$-value that the question supplied.\n* Choice D ($46$): treats $14 = 32 - n$ as $n = 14 + 32$, adding where the sign calls for subtraction.\n\n**Test Day Takeaway:** A known coordinate belongs first in the equation that has no unknown constant; the constant then falls out of the remaining equation."
+}

@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 1,
-  "passage": "Rudolf and Joan Benesh introduced their movement-notation system in 1955 to record ballet on a five-line stave. Within a decade, Britain's Royal Ballet ______ the system to preserve its repertory, and notators trained in the method now document new choreography as it is created.",
+  "passage": "The emperor Frederick II began assembling his treatise on falconry around 1240, near the end of his reign. By the time the first copies circulated among European courts, he ______ more than thirty years training and observing hawks — experience he trusted above the claims of ancient authorities.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "is adopting"
-    },
-    {
-      "id": "B",
-      "text": "adopted"
-    },
-    {
-      "id": "C",
-      "text": "has adopted"
-    },
-    {
-      "id": "D",
-      "text": "will adopt"
-    }
+    { "id": "A", "text": "spends" },
+    { "id": "B", "text": "had spent" },
+    { "id": "C", "text": "has spent" },
+    { "id": "D", "text": "will have spent" }
   ],
   "correctAnswer": "B",
-  "explanation": "The sentence places the Royal Ballet's adoption \"within a decade\" of 1955—a completed action in the past—while the present-tense \"now document\" describes today. Simple past \"adopted\" fits that completed past event, so choice B is correct. The present \"is adopting\" (A) and future \"will adopt\" (D) clash with the timeframe, and the present perfect \"has adopted\" (C) is not needed once the time is specified.",
-  "_meta": {
-    "anchor": "Benesh Movement Notation"
-  }
+  "explanation": "**Choice B is correct.** The sentence describes one past event completed before another past event — the years of training came before the copies circulated — and that sequence takes the past perfect, \"had spent.\"\n\n**The Full Solution:**\n- The time frame is anchored in the past: \"By the time the first copies circulated...\"\n- The training preceded that past moment, so the verb must reach further back than simple past: \"he had spent more than thirty years.\"\n\n**Why the other choices are wrong:**\n- A: The present tense breaks the passage's past narrative frame.\n- C: The present perfect connects a past action to the present moment, but the reference point here (\"circulated\") is itself in the past.\n- D: The future perfect points forward from now, which contradicts events set in the thirteenth century."
 }

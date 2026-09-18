@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A pattern enlargement multiplies each of $30$ recorded thread lengths by $1.5$. The original lengths have a median of $62$ centimeters and a standard deviation of $8$ centimeters. Which statement describes the enlarged lengths?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Median $63.5$ centimeters and standard deviation $9.5$ centimeters"
+  },
+  {
+   "id": "B",
+   "text": "Median $93$ centimeters and standard deviation $8$ centimeters"
+  },
+  {
+   "id": "C",
+   "text": "Median $93$ centimeters and standard deviation $12$ centimeters"
+  },
+  {
+   "id": "D",
+   "text": "Median $139.5$ centimeters and standard deviation $18$ centimeters"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 1.5 to each statistic instead of multiplying, giving 62 + 1.5 = 63.5 and 8 + 1.5 = 9.5",
+  "B": "scales the median to 93 but leaves the standard deviation at 8, as if spread were unaffected by scaling",
+  "D": "applies the factor twice, multiplying by 2.25 to get 139.5 and 18"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Scaling a Data Set by a Constant**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Multiplying every value by $1.5$ multiplies both the median and the standard deviation by $1.5$: $62(1.5) = 93$ and $8(1.5) = 12$.\n\n**The Full Solution:**\nStep 1: Multiplying every value by a positive constant stretches the whole distribution by that constant. The value sitting in the middle before the stretch is still in the middle after it, so the median is multiplied by $1.5$.\nStep 2: The median becomes $62(1.5) = 93$ centimeters.\nStep 3: Standard deviation measures typical distance from the mean, and every distance is stretched by the same factor, so it becomes $8(1.5) = 12$ centimeters. Check with two values $8$ apart, say $58$ and $66$: after scaling they are $87$ and $99$, still $12$ apart. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (median $63.5$, standard deviation $9.5$): adds $1.5$ to each statistic. Adding a constant to every value would shift the median and leave the spread alone; it is not what multiplying does.\n* Choice B (median $93$, standard deviation $8$): scales the center but freezes the spread. That is the rule for ADDING a constant, not for multiplying by one.\n* Choice D (median $139.5$, standard deviation $18$): multiplies by $2.25$, applying the factor $1.5$ a second time.\n\n**Test Day Takeaway:** Adding a constant moves center and leaves spread; multiplying by a constant scales center AND spread by the same factor."
+}

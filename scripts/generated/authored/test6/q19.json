@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
-  "passage": "Among the institutions that hold extensive Pacific Islander material culture are three that emerged from very different museum histories: the Bishop Museum in Honolulu, founded in 1889 by Charles Reed Bishop; Te Papa Tongarewa in Wellington, opened in its current form in ______ and the Australian Museum in Sydney, established in 1827 and the oldest of the three.",
+  "passage": "A few scientific experiments begun generations ago are still running: the Broadbalk wheat experiment, sown at Rothamsted in England in 1843 to compare fertilizers plot by plot; the Oxford Electric Bell, which has been ringing on a single battery since ______ the pitch-drop experiment in Brisbane, started in 1927, whose ninth drop of near-solid pitch fell in 2014.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "1998, and"
+      "text": "1840, and"
     },
     {
       "id": "B",
-      "text": "1998"
+      "text": "1840 and"
     },
     {
       "id": "C",
-      "text": "1998;"
+      "text": "1840; and"
     },
     {
       "id": "D",
-      "text": "1998,"
+      "text": "1840,"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"1998;\". The sentence lists three institutions, and each item already contains internal commas from its appositive description (city, date, founder or rank). When the items in a series themselves contain commas, Standard English separates the items with semicolons so their boundaries stay clear. A semicolon already divides the first item from the second (after \"Charles Reed Bishop\"), so the divider between the second and third items must also be a semicolon. Choice D, a comma, blurs that boundary; choice B, no punctuation, fuses the second and third items; and choice A, a comma plus \"and,\" breaks the parallel semicolon series the sentence has begun."
+  "explanation": "**Choice C is correct.** The sentence is a list of three experiments whose items contain internal commas, so the items must be separated by semicolons — including the boundary between the second item and the final one.\n\n**The Full Solution:**\n- Map the series: item one ends \"...plot by plot;\" — the list has already committed to semicolon separators because each item carries commas of its own.\n- The blank sits at the end of item two, before the final item, so it needs the same separator plus the closing conjunction: \"...since 1840; and the pitch-drop experiment...\"\n\n**Why the other choices are wrong:**\n- A: A comma plus \"and\" gives the final boundary a weaker separator than the first, letting the items' internal commas blur the list.\n- B: With no punctuation at all, items two and three run together.\n- D: A comma alone both mismatches the semicolon series and drops the conjunction the final item needs."
 }

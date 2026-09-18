@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-032",
+  "question": "In the $xy$-plane, the graph of $y = (x - 7)^2 + 4$ is a parabola. Which of the following equations, written in the form $y = ax^2 + bx + c$, defines the same parabola?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = x^2 - 14x + 53$"
+    },
+    {
+      "id": "B",
+      "text": "$y = x^2 - 14x + 45$"
+    },
+    {
+      "id": "C",
+      "text": "$y = x^2 + 14x + 53$"
+    },
+    {
+      "id": "D",
+      "text": "$y = x^2 + 53$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracts the $4$ instead of adding it",
+    "C": "loses the negative sign on the middle term",
+    "D": "squares term by term, treating $(x - 7)^2$ as $x^2 + 49$ with no middle term"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Vertex to Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** $(x - 7)^2 = x^2 - 14x + 49$, and adding $4$ gives $x^2 - 14x + 53$.\n\n**The Full Solution:**\nStep 1: Expand the square: $(x - 7)^2 = (x - 7)(x - 7) = x^2 - 7x - 7x + 49 = x^2 - 14x + 49$.\nStep 2: Add the constant outside the square: $x^2 - 14x + 49 + 4 = x^2 - 14x + 53$.\nStep 3: Check at $x = 7$: the vertex form gives $0 + 4 = 4$, and the expanded form gives $49 - 98 + 53 = 4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: uses $49 - 4$; the $+4$ sits outside the square and is added.\n* Choice C: writes $+14x$, which would come from $(x + 7)^2$ and move the vertex to $x = -7$.\n* Choice D: squares each term separately, dropping the middle term $-14x$ entirely.\n\n**Test Day Takeaway:** $(x - h)^2$ always contributes three terms, not two — the middle term $-2hx$ is where expansions go wrong."
+}

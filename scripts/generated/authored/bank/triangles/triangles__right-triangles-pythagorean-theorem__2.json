@@ -1,0 +1,55 @@
+{
+ "id": 2,
+ "question": "A hop trellis pole rises from level ground, and an anchor cable ties its top to a point on the ground, as the figure shows with lengths in feet. How tall, in feet, is the pole?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     7,
+     24
+    ]
+   ],
+   "sideLabels": [
+    "7",
+    "",
+    "25"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18$"
+  },
+  {
+   "id": "B",
+   "text": "$24$"
+  },
+  {
+   "id": "C",
+   "text": "$26$"
+  },
+  {
+   "id": "D",
+   "text": "$32$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the lengths, 25 - 7, instead of their squares",
+  "C": "adds the squares instead of subtracting them",
+  "D": "adds the two given lengths"
+ },
+ "correctAnswer": "B",
+ "hint": "The longest side of this triangle is already known.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** $25^2 - 7^2 = 625 - 49 = 576$, and $\\sqrt{576} = 24$ feet.\n\n**The Full Solution:**\nStep 1: The $25$-foot cable is the hypotenuse and the $7$-foot ground distance is one leg, so the pole's height $h$ satisfies $7^2 + h^2 = 25^2$.\nStep 2: That gives $h^2 = 625 - 49 = 576$.\nStep 3: Taking the square root, $h = 24$ feet. Check: $7^2 + 24^2 = 49 + 576 = 625 = 25^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($18$): subtracting the lengths, $25 - 7$, instead of subtracting their squares.\n* Choice C ($26$): adding the squares, $\\sqrt{625 + 49} \\approx 26$, which would make the pole longer than the cable.\n* Choice D ($32$): adding the two given lengths.\n\n**Test Day Takeaway:** When the hypotenuse is known, subtract the squares; when it is not, add them."
+}

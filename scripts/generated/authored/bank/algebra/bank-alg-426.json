@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-426",
+ "question": "A packing station places 24 folded scarves in each carton, and the equation $\\frac{c}{24} = 35$ gives the total number of scarves $c$ that were packed. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11$"
+  },
+  {
+   "id": "B",
+   "text": "$24$"
+  },
+  {
+   "id": "C",
+   "text": "$59$"
+  },
+  {
+   "id": "D",
+   "text": "$840$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "subtracts 24 from 35 instead of multiplying",
+  "B": "reports the number of scarves per carton that was already given",
+  "C": "adds 24 to 35 instead of multiplying"
+ },
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Multiply both sides by $24$: $c = 24(35) = 840$.\n\n**The Full Solution:**\n\nStep 1: The equation $\\frac{c}{24} = 35$ says the total divided into groups of $24$ gives $35$ cartons.\n\nStep 2: Undo the division by multiplying both sides by $24$: $c = 24(35)$.\n\nStep 3: $c = 840$. Check: $\\frac{840}{24} = 35$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($11$): computes $35 - 24$, subtracting where the equation calls for multiplication.\n* Choice B ($24$): reports the number packed in each carton, which the equation already supplies.\n* Choice C ($59$): computes $35 + 24$, adding where the equation calls for multiplication.\n\n**Test Day Takeaway:** A variable divided by a number is freed by multiplying, and the answer must be larger than the quotient."
+}

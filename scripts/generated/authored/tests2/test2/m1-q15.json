@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "Exactly two lines through the point $(0, -6)$ in the xy-plane are tangent to the graph of $y = x^2 + 4x + 3$, touching it at exactly one point each. One of these two lines touches the graph at a point whose $x$-coordinate is positive. What is the slope of that line?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports the slope of the other tangent line, -2, which touches the graph at x=-3, where the x-coordinate is negative",
+  "B": "sets only the linear coefficient to zero, solving 4-m=0, and never uses the -4ac part of the discriminant",
+  "C": "drops the factor of 4 in the discriminant, solving (4-m)^2=9 instead of (4-m)^2=36, and reports the larger root 7"
+ },
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** Setting $mx - 6 = x^2 + 4x + 3$ gives $x^2 + (4 - m)x + 9 = 0$; tangency needs $(4 - m)^2 = 36$, so $m = -2$ or $m = 10$, and the double root $x = \\frac{m - 4}{2}$ is positive only for $m = 10$.\n\n**The Full Solution:**\nStep 1: A line through $(0, -6)$ has equation $y = mx - 6$. Setting the two expressions for $y$ equal gives $mx - 6 = x^2 + 4x + 3$, or $x^2 + (4 - m)x + 9 = 0$.\nStep 2: Tangency means this quadratic has exactly one real solution, so its discriminant is $0$: $(4 - m)^2 - 4(1)(9) = 0$, which gives $(4 - m)^2 = 36$ and $4 - m = \\pm 6$, so $m = -2$ or $m = 10$.\nStep 3: A one-solution quadratic has its double root at $x = \\frac{m - 4}{2}$, so $m = -2$ touches at $x = -3$ and $m = 10$ touches at $x = 3$. The positive $x$-coordinate belongs to $m = 10$. Check: with $m = 10$ the quadratic becomes $x^2 - 6x + 9 = (x - 3)^2 = 0$, and at $x = 3$ both graphs give $y = 24$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): is the slope of the other tangent line. It satisfies the discriminant condition, but it touches the graph at $x = -3$, and the question names the line whose point of contact has a positive $x$-coordinate.\n* Choice B ($4$): comes from setting the middle coefficient $4 - m$ to zero. A zero middle coefficient makes $x^2 + 9 = 0$, which has no real solution at all, so that line misses the parabola entirely.\n* Choice C ($7$): drops the factor of $4$ in $b^2 - 4ac$, solving $(4 - m)^2 = 9$ and getting $m = 1$ or $m = 7$. The discriminant needs $4ac = 4(1)(9) = 36$, not $9$.\n\n**Test Day Takeaway:** Tangent to a parabola means the substituted equation has a double root: set the discriminant to zero, then read the double root $x = -\\frac{b}{2a}$ to tell the two tangent lines apart."
+}

@@ -1,0 +1,40 @@
+{
+  "id": "bank-am-164",
+  "question": "The graph of the quadratic function $f$ is shown in the $xy$-plane, and its minimum occurs at the marked point. If $f(x) = (x - h)^2 + k$, where $h$ and $k$ are constants, what is the value of $h + k$?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        3,
+        -5
+      ],
+      "a": 1,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-8$"
+    },
+    {
+      "id": "B",
+      "text": "$-5$"
+    },
+    {
+      "id": "C",
+      "text": "$-2$"
+    },
+    {
+      "id": "D",
+      "text": "$8$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads $h$ as $-3$ from the $(x - h)$ form, giving $-3 + (-5)$",
+    "B": "reports $k$ alone rather than the requested sum",
+    "D": "computes $h - k$ instead of $h + k$"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The minimum sits at $(3, -5)$, so $h = 3$ and $k = -5$, and $h + k = -2$.\n\n**The Full Solution:**\nStep 1: In vertex form $f(x) = (x - h)^2 + k$, the vertex is the point $(h, k)$, and for an upward-opening parabola that vertex is the minimum.\nStep 2: The marked minimum on the graph is $(3, -5)$, so $h = 3$ and $k = -5$.\nStep 3: Then $h + k = 3 + (-5) = -2$. Check: $f(x) = (x - 3)^2 - 5$ gives $f(3) = -5$, and $f(0) = 9 - 5 = 4$, matching the graph's $y$-intercept. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$): the sign in $(x - h)$ is misread, making $h = -3$.\n* Choice B ($-5$): this is $k$, the minimum value, reported without adding $h$.\n* Choice D ($8$): subtracting instead of adding gives $3 - (-5)$.\n\n**Test Day Takeaway:** In $(x - h)^2 + k$ the vertex is $(h, k)$ with the sign of $h$ already flipped; read both coordinates before combining them."
+}

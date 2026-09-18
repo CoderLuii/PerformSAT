@@ -1,0 +1,61 @@
+{
+  "id": "bank-ps-431",
+  "question": "For each of four weekdays, the table gives the number of prescriptions a hospital pharmacy actually refilled and the number its staffing model predicted it would refill. On which weekday does the number refilled exceed the predicted number by the greatest amount?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Weekday",
+        "Prescriptions refilled",
+        "Prescriptions predicted"
+      ],
+      "rows": [
+        [
+          "Monday",
+          "312",
+          "298"
+        ],
+        [
+          "Tuesday",
+          "372",
+          "355"
+        ],
+        [
+          "Wednesday",
+          "289",
+          "312"
+        ],
+        [
+          "Thursday",
+          "366",
+          "348"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Monday"
+    },
+    {
+      "id": "B",
+      "text": "Tuesday"
+    },
+    {
+      "id": "C",
+      "text": "Wednesday"
+    },
+    {
+      "id": "D",
+      "text": "Thursday"
+    }
+  ],
+  "distractorNotes": {
+    "A": "picks the weekday with the smallest predicted count, 298, instead of the largest excess (14)",
+    "B": "picks the weekday with the largest refilled count, 372, instead of the largest excess (17)",
+    "C": "picks the weekday with the largest gap in size, 23, but there the model is greater, not smaller"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Residual**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Subtract predicted from refilled for each row: $14$, $17$, $-23$, $18$. The largest positive value is Thursday.\n\n**The Full Solution:**\nStep 1: Subtract in one direction for every row. Monday: $312 - 298 = 14$. Tuesday: $372 - 355 = 17$. Wednesday: $289 - 312 = -23$. Thursday: $366 - 348 = 18$.\nStep 2: Keep only the rows where the refilled count is the larger one, so the difference is positive: Monday, Tuesday, and Thursday.\nStep 3: Compare those three. $18 > 17 > 14$, so Thursday has the greatest excess. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (Monday): has the smallest predicted count, $298$, but its excess is only $14$.\n* Choice B (Tuesday): has the largest number refilled, $372$, but its prediction is high too, so its excess is $17$.\n* Choice C (Wednesday): has the largest gap in size, $23$, but there the model predicts MORE than was refilled — a negative residual.\n\n**Test Day Takeaway:** A \"greatest excess\" question is about the signed difference actual $-$ predicted, not about the biggest number in either column."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-253",
+  "question": "The value of $m$ is $60\\%$ greater than the value of $n$, where $n > 0$. The value of $n$ is $p\\%$ less than the value of $m$. What is the value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$37.5$"
+    },
+    {
+      "id": "B",
+      "text": "$40$"
+    },
+    {
+      "id": "C",
+      "text": "$60$"
+    },
+    {
+      "id": "D",
+      "text": "$62.5$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "computes 100 - 60 = 40, subtracting the percent from 100",
+    "C": "assumes the percent less equals the percent greater",
+    "D": "reports n as a percent of m (100/1.6) instead of the percent less"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent Greater Than / Less Than**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** $m = 1.6n$, so $n = \\frac{m}{1.6} = 0.625m$. Then $n$ is $1 - 0.625 = 0.375$, or $37.5\\%$, less than $m$.\n\n**The Full Solution:**\nStep 1: Translate the first sentence: $m = n + 0.60n = 1.6n$.\nStep 2: Express $n$ as a fraction of $m$: $n = \\frac{m}{1.6} = \\frac{10m}{16} = \\frac{5}{8}m = 0.625m$.\nStep 3: The percent less is based on $m$: $\\frac{m - n}{m} = \\frac{m - 0.625m}{m} = 0.375 = 37.5\\%$. Check with $n = 100$: $m = 160$, and $\\frac{160 - 100}{160} = \\frac{60}{160} = 0.375$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($40$): $100 - 60 = 40$ subtracts the percent from $100$, which has no meaning here.\n* Choice C ($60$): assumes the percent less equals the percent greater, but the bases differ: $60$ is $60\\%$ of $100$ yet only $37.5\\%$ of $160$.\n* Choice D ($62.5$): $\\frac{100}{1.6} = 62.5$ is what percent $n$ is OF $m$, not what percent LESS than $m$.\n\n**Test Day Takeaway:** Percent change depends on its base. Going up by $p\\%$ and coming back down are different percents because the base changes."
+}

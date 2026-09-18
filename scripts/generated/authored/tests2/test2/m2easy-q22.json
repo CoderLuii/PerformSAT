@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "In a list of three positive numbers, the second number is $\\frac{9}{4}$ times the first and the third number is $\\frac{11}{9}$ times the second. The three numbers have a sum of $480$. By how much does the third number exceed the first?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$80$"
+  },
+  {
+   "id": "C",
+   "text": "$100$"
+  },
+  {
+   "id": "D",
+   "text": "$140$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the common part 480 divided by 24 = 20 instead of the difference it produces",
+  "B": "reports the first number, 80, rather than the gap between the third and the first",
+  "C": "computes the gap between the second and the first, 180 - 80, instead of the third and the first"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** The three numbers are in the ratio $4 : 9 : 11$, so $24$ parts equal $480$, one part is $20$, and the gap is $(11 - 4)(20) = 140$.\n\n**The Full Solution:**\nStep 1: Write the numbers in parts. Let the first be $4u$. The second is $\\frac{9}{4}(4u) = 9u$, and the third is $\\frac{11}{9}(9u) = 11u$, so the ratio is $4 : 9 : 11$.\nStep 2: The parts sum to $4u + 9u + 11u = 24u$, and that equals $480$, so $u = 20$. The numbers are $80$, $180$, and $220$.\nStep 3: The third exceeds the first by $220 - 80 = 140$. Check: $80 + 180 + 220 = 480$, and $\\frac{180}{80} = \\frac{9}{4}$, $\\frac{220}{180} = \\frac{11}{9}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): the value of one part. It has to be multiplied by the $7$-part gap between $11u$ and $4u$.\n* Choice B ($80$): the first number itself, not a difference.\n* Choice C ($100$): the gap between the second and the first, $180 - 80$. The question compares the third with the first.\n\n**Test Day Takeaway:** Chain two ratios by rewriting both against a shared quantity, then let one variable carry all three parts so the sum becomes a single equation."
+}

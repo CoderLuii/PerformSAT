@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A worksheet asks students to compare the expressions $4(3x + 7)$ and $12x + 28$. Which statement correctly describes the values of $x$ for which the two expressions are equal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "No value of $x$ makes the two expressions equal."
+  },
+  {
+   "id": "B",
+   "text": "Only $x = 0$ makes the two expressions equal."
+  },
+  {
+   "id": "C",
+   "text": "Only $x = 7$ makes the two expressions equal."
+  },
+  {
+   "id": "D",
+   "text": "Every value of $x$ makes the two expressions equal."
+  }
+ ],
+ "distractorNotes": {
+  "A": "distributes the 4 only to 3x, getting 12x + 7, which never equals 12x + 28",
+  "B": "adds 12x to both sides instead of subtracting, getting 24x + 28 = 28 and x = 0",
+  "C": "divides 28 by 4 to get 7 and reports that as the solution"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Distributing gives $12x + 28$, the same expression on both sides, so every $x$ works.\n\n**The Full Solution:**\nStep 1: Distribute the $4$ across BOTH terms inside the parentheses: $4(3x + 7) = 4(3x) + 4(7) = 12x + 28$.\nStep 2: Compare coefficients. The $x$-coefficients match ($12 = 12$) and the constants match ($28 = 28$), so the two expressions are identical, not merely equal at one point.\nStep 3: Check with two different inputs. At $x = 0$: $4(0 + 7) = 28$ and $12(0) + 28 = 28$. At $x = 5$: $4(15 + 7) = 88$ and $12(5) + 28 = 88$. Both agree, as an identity requires.\n\n**Why the wrong answers are tempting:**\n* Choice A (no value): distributes the $4$ only to the $3x$, producing $12x + 7$. Then $12x + 7 = 12x + 28$ would give $7 = 28$, which is false for every $x$ — the right conclusion drawn from the wrong left side.\n* Choice B (only $x = 0$): moves $12x$ to the left by ADDING it, giving $24x + 28 = 28$ and therefore $x = 0$. The term must be subtracted from both sides, and when it is, the $x$-terms vanish entirely.\n* Choice C (only $x = 7$): pulls the $7$ out of the parentheses (or computes $28 \\div 4$) and reports it as a solution. The $7$ is a constant inside the expression, not a value of $x$.\n\n**Test Day Takeaway:** Distribute first, then compare the $x$-coefficient and the constant separately. Same coefficient and same constant means infinitely many solutions; same coefficient and different constant means none."
+}

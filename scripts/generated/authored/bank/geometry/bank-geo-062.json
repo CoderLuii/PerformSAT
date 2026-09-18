@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-062",
+ "question": "A disk-shelf mounting bracket is cut as right triangle $JKL$, whose right angle is at $J$ and whose edges measure $8$, $15$, and $17$ centimeters. What is the value of $\\tan K$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     0,
+     8
+    ]
+   ],
+   "labels": [
+    "J",
+    "K",
+    "L"
+   ],
+   "sideLabels": [
+    "15",
+    "17",
+    "8"
+   ],
+   "rightAngleVertex": 0
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{8}{17}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{8}{15}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{15}{17}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{15}{8}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "gives sin K, opposite over hypotenuse, 8 over 17",
+  "C": "gives cos K, adjacent over hypotenuse, 15 over 17",
+  "D": "inverts the tangent, adjacent over opposite, 15 over 8"
+ },
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice B is correct.** $\\tan K = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{JL}{JK} = \\frac{8}{15}$.\n\n**The Fast Way (~15s):** From $K$, the opposite leg is $8$ and the adjacent leg is $15$, so $\\tan K = \\frac{8}{15}$.\n\n**The Full Solution:**\n\nStep 1: The right angle is at $J$, so $\\overline{KL} = 17$ is the hypotenuse and the legs are $\\overline{JK} = 15$ and $\\overline{JL} = 8$.\n\nStep 2: Angle $K$ sits at one end of leg $\\overline{JK}$, so $\\overline{JK}$ is adjacent to $K$ and $\\overline{JL}$ is opposite it.\n\nStep 3: Tangent is opposite over adjacent: $\\tan K = \\frac{8}{15}$. Check: $\\frac{\\sin K}{\\cos K} = \\frac{8/17}{15/17} = \\frac{8}{15}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{8}{17}$): that is $\\sin K$, which uses the hypotenuse.\n* Choice C ($\\frac{15}{17}$): that is $\\cos K$.\n* Choice D ($\\frac{15}{8}$): inverts the tangent by writing adjacent over opposite.\n\n**Test Day Takeaway:** Tangent is the only one of the three basic ratios that never touches the hypotenuse — if a $17$ appears in your answer, you used the wrong ratio."
+}

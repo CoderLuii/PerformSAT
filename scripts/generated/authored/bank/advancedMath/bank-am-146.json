@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-146",
+ "question": "In a chairlift tension model, the function $g$ defined by $g(x)=ax^{2}-5x-12$ has $4$ as one of its two zeros, where $a$ is a positive constant. What is the sum of the two zeros of $g$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-6$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{3}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{5}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies the two zeros, 4 times -3/2 = -6, instead of adding them",
+  "B": "reports only the second zero, -3/2",
+  "D": "skips solving for a and uses -b/a with a = 1, giving 5"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Quadratic via Factoring**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** $g(4)=0$ forces $16a=32$, so $a=2$; then $2x^{2}-5x-12=(2x+3)(x-4)$ and the zeros $4$ and $-\\frac{3}{2}$ sum to $\\frac{5}{2}$.\n\n**The Full Solution:**\n\nStep 1: Because $4$ is a zero, $g(4)=16a-20-12=0$, so $16a=32$ and $a=2$.\n\nStep 2: The function is $g(x)=2x^{2}-5x-12$, which factors as $(2x+3)(x-4)$, giving zeros $x=-\\frac{3}{2}$ and $x=4$.\n\nStep 3: Add them: $4+\\left(-\\frac{3}{2}\\right)=\\frac{5}{2}$. Check: for $2x^{2}-5x-12$ the sum of the zeros is $-\\frac{-5}{2}=\\frac{5}{2}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-6$): multiplies the zeros, $4\\cdot\\left(-\\frac{3}{2}\\right)=-6$, instead of adding them.\n* Choice B ($-\\frac{3}{2}$): stops at the second zero.\n* Choice D ($5$): never solves for $a$ and uses $-\\frac{b}{a}$ with $a=1$.\n\n**Test Day Takeaway:** A known zero pins down an unknown leading coefficient; recover it first, because every later shortcut depends on it."
+}

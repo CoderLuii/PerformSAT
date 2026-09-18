@@ -1,0 +1,67 @@
+{
+ "id": 16,
+ "question": "Twelve daily wave heights, in decimeters, recorded at a buoy appear in the dot plot. A thirteenth reading of $4$ decimeters is then added. Which statement correctly describes how the mean and the median of the enlarged set differ from the original ones?",
+ "diagram": {
+  "type": "dotPlot",
+  "params": {
+   "data": [
+    {
+     "value": 18,
+     "count": 1
+    },
+    {
+     "value": 19,
+     "count": 2
+    },
+    {
+     "value": 20,
+     "count": 3
+    },
+    {
+     "value": 21,
+     "count": 2
+    },
+    {
+     "value": 22,
+     "count": 2
+    },
+    {
+     "value": 23,
+     "count": 1
+    },
+    {
+     "value": 24,
+     "count": 1
+    }
+   ],
+   "xMin": 16,
+   "xMax": 26,
+   "xLabel": "Wave height (decimeters)"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "Both the mean and the median decrease, and the mean decreases by more."
+  },
+  {
+   "id": "B",
+   "text": "Both the mean and the median decrease, and the median decreases by more."
+  },
+  {
+   "id": "C",
+   "text": "The mean decreases, and the median stays the same."
+  },
+  {
+   "id": "D",
+   "text": "The median decreases, and the mean stays the same."
+  }
+ ],
+ "distractorNotes": {
+  "B": "assumes the median is dragged as far as the mean by a distant value; the median falls only 0.5, the mean about 1.29",
+  "C": "assumes an added value outside the range can never move the median, missing that the middle position shifts from between the 6th and 7th values to the 7th",
+  "D": "reverses which measure resists an outlier, treating the median as the sensitive one and the mean as the stable one"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice A is correct.**\n\n**The Fast Way (~50s):** The new reading sits far below every other, so it pulls the mean down hard (from $20.75$ to about $19.46$) while the median slides only one position (from $20.5$ to $20$).\n\n**The Full Solution:**\nStep 1: Read the original $12$ readings off the dot plot: $18$, $19$, $19$, $20$, $20$, $20$, $21$, $21$, $22$, $22$, $23$, $24$. Their sum is $249$, so the mean is $\\dfrac{249}{12}=20.75$, and the median is the average of the sixth and seventh values, $\\dfrac{20+21}{2}=20.5$.\nStep 2: Add the reading of $4$. The new sum is $253$ over $13$ readings, so the new mean is $\\dfrac{253}{13}\\approx 19.46$ — a drop of about $1.29$.\nStep 3: With $13$ values the median is the seventh in order. Sorted, the list starts $4$, $18$, $19$, $19$, $20$, $20$, $20$, so the new median is $20$ — a drop of exactly $0.5$. Since $1.29>0.5$, both measures fall and the mean falls by more ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: assumes the far-away value drags the median as hard as it drags the mean. The median only counts positions, so it moved a single step, from $20.5$ to $20$.\n* Choice C: assumes an outlier below the whole data set cannot touch the median. Adding a thirteenth value changes the middle from a two-value average to a single value, which moved it.\n* Choice D: has the roles backwards. The mean uses every value's size, so it is the one an extreme reading distorts.\n\n**Test Day Takeaway:** An extreme value moves the mean by its full distance spread over the count, but moves the median only as far as the next value in line. When a question compares them, compute both — the ordering of the two drops is the whole question."
+}

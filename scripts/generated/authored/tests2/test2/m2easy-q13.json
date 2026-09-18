@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "A pressing plant produced 450 records, each either a 7-inch or a 12-inch disc. A 7-inch disc uses 90 grams of vinyl and a 12-inch disc uses 180 grams, and the plant used 63,000 grams in all. How many 12-inch discs were produced?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$200$"
+  },
+  {
+   "id": "B",
+   "text": "$225$"
+  },
+  {
+   "id": "C",
+   "text": "$250$"
+  },
+  {
+   "id": "D",
+   "text": "$350$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves the system correctly but reports the number of 7-inch discs, 200, instead of the 12-inch discs",
+  "B": "splits the 450 discs evenly, 450 divided by 2, ignoring the vinyl totals entirely",
+  "D": "divides all 63,000 grams by 180, as if every disc were a 12-inch disc"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System of Equations — Elimination**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** If all $450$ were 7-inch, the vinyl would be $40{,}500$ g. Each swap to 12-inch adds $90$ g, and $\\frac{63{,}000 - 40{,}500}{90} = 250$.\n\n**The Full Solution:**\nStep 1: Let $s$ be the number of 7-inch discs and $t$ the number of 12-inch discs. Then $s + t = 450$ and $90s + 180t = 63{,}000$.\nStep 2: Multiply the first equation by $90$ to line up the $s$ terms: $90s + 90t = 40{,}500$. Subtract it from the second equation: $90t = 22{,}500$.\nStep 3: $t = \\frac{22{,}500}{90} = 250$ twelve-inch discs. Check: $s = 450 - 250 = 200$, and $90(200) + 180(250) = 18{,}000 + 45{,}000 = 63{,}000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($200$): the number of 7-inch discs. The elimination is right, but the wrong variable gets reported.\n* Choice B ($225$): assumes an even split of the $450$ discs, which ignores the vinyl equation.\n* Choice D ($350$): computes $\\frac{63{,}000}{180}$, treating every disc as a 12-inch disc, which contradicts the count of $450$.\n\n**Test Day Takeaway:** Scale one equation so a variable's coefficients match, subtract, then circle back to which quantity the question actually names."
+}

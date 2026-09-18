@@ -1,0 +1,48 @@
+{
+ "id": 18,
+ "question": "For each of two electives at a high school, the table gives the number of eleventh graders and the number of twelfth graders enrolled. One student will be chosen at random from those enrolled in debate, and the probability that this student is an eleventh grader is $0.6$. What is the value of $n$?",
+ "questionTable": {
+  "headers": [
+   "",
+   "Photography",
+   "Debate"
+  ],
+  "rows": [
+   [
+    "Eleventh grade",
+    "$44$",
+    "$n$"
+   ],
+   [
+    "Twelfth grade",
+    "$35$",
+    "$48$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$32$"
+  },
+  {
+   "id": "B",
+   "text": "$66$"
+  },
+  {
+   "id": "C",
+   "text": "$72$"
+  },
+  {
+   "id": "D",
+   "text": "$120$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the complement 0.4 in place of 0.6, solving n/(n + 48) = 0.4 to get 32",
+  "B": "computes the probability that an eleventh grader is enrolled in debate, solving n/(44 + n) = 0.6 to get 66",
+  "D": "solves n = 0.6n + 48, forgetting to multiply the 48 by 0.6, and gets 120"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The condition restricts us to the debate column, so $\\frac{n}{n + 48} = 0.6$; cross-multiplying gives $0.4n = 28.8$ and $n = 72$.\n\n**The Full Solution:**\nStep 1: \"Given that the student is enrolled in debate\" makes the debate column the whole sample space. That column holds $n$ eleventh graders and $48$ twelfth graders, so it has $n + 48$ students. The photography column plays no part.\nStep 2: The probability that the chosen debate student is an eleventh grader is $\\frac{n}{n + 48}$, and the stem sets this equal to $0.6$. Multiplying both sides by $n + 48$ gives $n = 0.6n + 28.8$.\nStep 3: Subtracting $0.6n$ leaves $0.4n = 28.8$, so $n = 72$. Check: the debate column would then hold $72 + 48 = 120$ students, and $\\frac{72}{120} = 0.6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($32$): solves with $0.4$, the probability of the twelfth-grade outcome, giving $\\frac{n}{n + 48} = 0.4$ and $n = 32$. Then $\\frac{32}{80} = 0.4$, the complement of what was asked.\n* Choice B ($66$): reverses the condition and asks what fraction of eleventh graders chose debate, solving $\\frac{n}{44 + n} = 0.6$ for $n = 66$. That uses the eleventh-grade **row**, not the debate column.\n* Choice D ($120$): multiplies $0.6$ by $n$ but not by $48$, solving $n = 0.6n + 48$ for $n = 120$. That value is the size of the whole debate column, not the eleventh-grade part of it.\n\n**Test Day Takeaway:** A conditional probability lives entirely inside one row or one column — circle that line of the table first, and the numbers outside it stop being distractions."
+}

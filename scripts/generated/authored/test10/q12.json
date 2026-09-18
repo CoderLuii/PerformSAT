@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-textual",
  "module": 1,
- "passage": "Paleobotanists have proposed that plants could not colonize dry land until they evolved stomata—small adjustable pores that admit carbon dioxide for photosynthesis while limiting the water a plant loses to the air. On this account, stomata were not an incidental feature of early land plants but the very innovation that made life away from permanently wet ground possible. A botanist wants to test this claim using the fossil and living record of early land plants.",
- "question": "Which finding, if true, would most directly support the claim?",
+ "passage": "Alpine meadows above the tree line in the European Alps have been grazed each summer for centuries under the practice of transhumance, in which herds are walked up from the valleys as the snow retreats. Ecologists studying these meadows argue that the seasonal grazing is not incidental to their character but constitutive of it: the annual arrival of the herds, they claim, is what maintains the meadows' unusually high diversity of flowering plants.",
+ "question": "Which finding, if true, would most directly support the ecologists' claim?",
  "choices": [
   {
    "id": "A",
-   "text": "The earliest land plants known to have grown in seasonally dry settings already possessed stomata, while contemporaneous plants restricted to waterlogged ground typically lacked them."
+   "text": "On pastures where summer grazing recently ceased, shrubs have spread and flowering species have declined, while grazed pastures nearby have kept their diversity."
   },
   {
    "id": "B",
-   "text": "Stomata in modern plants open and close in response to the intensity of light as well as to the dryness of the air immediately around the leaf."
+   "text": "Alpine meadows at higher elevations contain fewer flowering plant species than meadows situated closer to the tree line."
   },
   {
    "id": "C",
-   "text": "Some early land plants reproduced by releasing spores that could be carried considerable distances by the wind."
+   "text": "The plant species characteristic of grazed alpine meadows also occur, at lower densities and in smaller patches, in valley grasslands that the migrating herds never visit."
   },
   {
    "id": "D",
-   "text": "The oldest known fossils of land plants are often preserved in fine-grained rock that formed in calm, shallow water."
+   "text": "Herders have gradually shortened the summer grazing season in response to changes in the timing of snowmelt."
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The claim is causal: stomata were the innovation that let plants live away from permanently wet ground. Evidence that the earliest plants in seasonally dry habitats had stomata while those confined to wet ground did not links the trait directly to survival in dryness, which is what the claim needs. Choice B describes how modern stomata respond to light, a mechanism that says nothing about colonizing dry land. Choice C concerns spore dispersal, a different function. Choice D is about how fossils were preserved, not about what allowed plants to live in dry settings."
+ "explanation": "**Choice A is correct.** The claim is causal, grazing maintains diversity, and A supplies the closest thing to a controlled comparison: remove grazing and diversity falls, keep grazing and diversity persists.\n\n**The Full Solution:**\n- To support \"the annual arrival of the herds is what maintains the diversity,\" evidence must connect the presence or absence of grazing to the presence or absence of diversity.\n- A does this in both directions: abandoned pastures lose species as shrubs spread, while nearby pastures that kept their herds kept their species. The \"nearby\" detail matters, since it holds climate and terrain roughly constant.\n\n**Why the other choices are wrong:**\n- B: An elevation gradient says nothing about grazing; both meadow types could be grazed identically.\n- C: Shared species at lower densities elsewhere neither ties diversity to herds nor tracks what happens when grazing stops.\n- D: A shorter season shows grazing is changing, but with no information about how plant diversity responded, it cannot support the causal claim."
 }

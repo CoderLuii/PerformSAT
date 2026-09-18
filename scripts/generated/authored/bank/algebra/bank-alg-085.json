@@ -1,0 +1,29 @@
+{
+ "question": "A CAD file stores a curve as $y=f(x)$. Exporting it negates each height, moves the curve $c$ units left, and then lifts it $d$ units, where $c$ and $d$ are positive constants. Which equation defines the exported curve $y=g(x)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$g(x)=-f(x+c)+d$"
+  },
+  {
+   "id": "B",
+   "text": "$g(x)=-f(x-c)+d$"
+  },
+  {
+   "id": "C",
+   "text": "$g(x)=-f(x+c)-d$"
+  },
+  {
+   "id": "D",
+   "text": "$g(x)=f(x+c)+d$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "uses x - c for a left shift, but subtracting inside the function moves the curve c units right",
+  "C": "subtracts d, lowering the curve d units instead of lifting it",
+  "D": "omits the negation, so every height keeps its original sign"
+ },
+ "explanation": "**SAT Pattern: Identify Multiple Transformations**\n\n**Choice A is correct.** Negating heights gives $-f(x)$, the left shift replaces $x$ with $x+c$, and the lift adds $d$, so $g(x)=-f(x+c)+d$.\n\n**The Fast Way (~40s):** Outside changes act as written ($-$ then $+d$); the inside change acts in reverse, so a left shift of $c$ is $x+c$.\n\n**The Full Solution:**\n\nStep 1: Negating each height multiplies every output by $-1$, producing $-f(x)$.\n\nStep 2: Moving the curve $c$ units left replaces the input $x$ with $x+c$, producing $-f(x+c)$. A horizontal shift always uses the opposite sign of the direction of motion.\n\nStep 3: Lifting the curve $d$ units adds $d$ to every output, producing $g(x)=-f(x+c)+d$. Check: a point $(a,b)$ on $y=f(x)$ should export to $(a-c,\\,-b+d)$, and $g(a-c)=-f(a)+d=-b+d$, as required.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($g(x)=-f(x-c)+d$): reads \"left\" as a subtraction inside the function, which actually shifts the curve $c$ units right.\n* Choice C ($g(x)=-f(x+c)-d$): drops the curve $d$ units instead of lifting it.\n* Choice D ($g(x)=f(x+c)+d$): leaves out the negation, so the exported heights are never reflected.\n\n**Test Day Takeaway:** Inside the function, horizontal shifts use the opposite sign; outside the function, reflections and vertical shifts read exactly as written.",
+ "id": "bank-alg-085"
+}

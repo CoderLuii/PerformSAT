@@ -1,31 +1,31 @@
 {
-  "id": 818,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "In 1978, Mary Leakey's team uncovered a trail of fossilized footprints at Laetoli, in Tanzania, pressed into volcanic ash that had hardened soon after it fell. The footprints, preserved with their arches and toe impressions intact, ______ that human ancestors were walking fully upright more than three million years ago.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "indicate"
-    },
-    {
-      "id": "B",
-      "text": "indicates"
-    },
-    {
-      "id": "C",
-      "text": "is indicating"
-    },
-    {
-      "id": "D",
-      "text": "has indicated"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The subject of the verb is the plural noun \"footprints\" (the phrase \"preserved with their arches and toe impressions intact\" is a nonessential modifier set off by commas), so the verb must be the plural \"indicate.\" The singular \"indicates\" in B and the singular \"is indicating\" in C disagree with the plural subject, and \"has indicated\" in D is also singular and shifts the tense away from the straightforward present the sentence calls for."
+ "id": 818,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "A pound lock encloses boats in a chamber so that the water around them can be raised or lowered gradually. The gates at each end of the chamber, braced against the full weight of the upper water, ______ open only when the water on both sides stands level.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "swing"
+  },
+  {
+   "id": "B",
+   "text": "swings"
+  },
+  {
+   "id": "C",
+   "text": "is swinging"
+  },
+  {
+   "id": "D",
+   "text": "has swung"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The subject is the plural \"gates,\" so the verb must be the plural \"swing.\"\n\n**The Full Solution:**\n- The subject of the sentence is \"The gates at each end of the chamber\"; its head noun, \"gates,\" is plural.\n- The interrupting phrase \"braced against the full weight of the upper water\" does not change the subject's number.\n- Strip the interrupter and the agreement is plain: \"The gates ... swing open only when the water on both sides stands level.\"\n\n**Why the other choices are wrong:**\n- B: \"Swings\" is singular and does not agree with the plural \"gates.\"\n- C: \"Is swinging\" is likewise singular, the same agreement error in a progressive form.\n- D: \"Has swung\" is singular as well; only the plural form matches the subject."
 }

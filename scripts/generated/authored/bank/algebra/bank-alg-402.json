@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-402",
+ "question": "A quilting line uses $3(4q + 5) - 2q$ square meters of batting to finish $q$ quilts, and one production run uses $105$ square meters in all. What is the value of $q$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7.5$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$10.5$"
+  },
+  {
+   "id": "D",
+   "text": "$90$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "drops the -2q and solves 12q + 15 = 105",
+  "C": "divides 105 by 10 without first subtracting the constant 15",
+  "D": "subtracts 15 from 105 but never divides by 10"
+ },
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The expression simplifies to $10q + 15$, so $10q = 90$ and $q = 9$.\n\n**The Full Solution:**\n\nStep 1: Distribute: $3(4q + 5) = 12q + 15$.\n\nStep 2: Combine with the $-2q$: $12q + 15 - 2q = 10q + 15$, so $10q + 15 = 105$.\n\nStep 3: Subtract $15$ and divide by $10$: $10q = 90$, so $q = 9$. Check: $3(36 + 5) - 18 = 123 - 18 = 105$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($7.5$): drops the $-2q$ and solves $12q + 15 = 105$.\n* Choice C ($10.5$): divides $105$ by $10$ without first removing the constant $15$.\n* Choice D ($90$): subtracts $15$ correctly but reports $10q$ instead of $q$.\n\n**Test Day Takeaway:** Simplify the whole left side to the form $mx + b$ before solving; the constant must go before the coefficient does."
+}

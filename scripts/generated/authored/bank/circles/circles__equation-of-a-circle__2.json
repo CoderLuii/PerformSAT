@@ -1,0 +1,29 @@
+{
+ "question": "An orchard sprinkler wets the ground inside the circle $(x - 9)^2 + (y + 4)^2 = 144$, where one unit represents one meter. How many meters is the sprinkler's reach?",
+ "hint": "The number on the right side is not the reach itself.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$24$"
+  },
+  {
+   "id": "C",
+   "text": "$72$"
+  },
+  {
+   "id": "D",
+   "text": "$144$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "doubles 12 and reports the diameter",
+  "C": "halves 144",
+  "D": "reports 144, which is the square of the reach"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~10s):** The right side is $r^2 = 144$, so the reach is $\\sqrt{144} = 12$ meters.\n\n**The Full Solution:**\nStep 1: Compare with $(x - h)^2 + (y - k)^2 = r^2$; here $r^2 = 144$.\nStep 2: Take the positive square root: $r = 12$.\nStep 3: One unit is one meter, so the sprinkler reaches $12$ meters. Check: the point $(21, -4)$ is $12$ meters from the center $(9, -4)$ and satisfies $144 + 0 = 144$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($24$): doubles the radius and reports the diameter.\n* Choice C ($72$): halves $144$ instead of taking its square root.\n* Choice D ($144$): reports $r^2$ straight from the equation.\n\n**Test Day Takeaway:** The right side of the standard form is the square of the radius, so one square root is always owed."
+}

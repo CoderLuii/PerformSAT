@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-314",
+ "question": "The rectangular face of a server-room air baffle covers $216$ square centimeters; it is $3k$ centimeters long and $(k + 6)$ centimeters wide for some positive constant $k$. How long, in centimeters, is that face?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$36$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "stops at k = 6 instead of evaluating the length 3k",
+  "B": "reports the width, k + 6 = 12, rather than the length",
+  "D": "drops the factor 3, solving k(k + 6) = 216 to get k = 12 and then 3k = 36"
+ },
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice C is correct.** $3k(k + 6) = 216$ gives $k^2 + 6k - 72 = 0$, so $k = 6$ and the length is $3k = 18$ centimeters.\n\n**The Fast Way (~35s):** Divide by $3$ first: $k(k + 6) = 72$, so $k = 6$ and $3k = 18$.\n\n**The Full Solution:**\n\nStep 1: Area is length times width: $3k(k + 6) = 216$.\n\nStep 2: Divide both sides by $3$ and expand: $k^2 + 6k = 72$, so $k^2 + 6k - 72 = 0$, which factors as $(k + 12)(k - 6) = 0$.\n\nStep 3: Only $k = 6$ is positive, so the length is $3(6) = 18$ centimeters. Check: the width is $6 + 6 = 12$, and $18 \\times 12 = 216$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($6$): stops at $k$ instead of evaluating the length $3k$.\n* Choice B ($12$): reports the width $k + 6$ rather than the length.\n* Choice D ($36$): drops the coefficient $3$, solving $k(k + 6) = 216$ to get $k = 12$, then triples it.\n\n**Test Day Takeaway:** Keep every coefficient attached when you set up the area equation, and finish by evaluating the expression the question names, not the letter."
+}

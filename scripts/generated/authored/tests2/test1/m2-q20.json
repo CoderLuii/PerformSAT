@@ -1,0 +1,29 @@
+{
+  "id": 20,
+  "question": "A rectangular solar panel is mounted on a flat roof so that its shorter side measures $x$ inches and its longer side measures $x + 7$ inches. A brace runs straight along a diagonal of the panel and measures $17$ inches. What is the value of $x$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5$"
+    },
+    {
+      "id": "B",
+      "text": "$8$"
+    },
+    {
+      "id": "C",
+      "text": "$10$"
+    },
+    {
+      "id": "D",
+      "text": "$15$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the two sides and sets the sum equal to the diagonal: x + (x + 7) = 17 gives x = 5",
+    "C": "subtracts 7 from 17, treating the diagonal and the sides as if they lay along one line",
+    "D": "solves correctly for x = 8 but reports the longer side x + 7 = 15"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** The diagonal splits the rectangle into a right triangle with legs $x$ and $x + 7$, so $x^2 + (x + 7)^2 = 17^2$. That reduces to $(x + 15)(x - 8) = 0$, and a length must be positive, so $x = 8$.\n\n**The Full Solution:**\nStep 1: A diagonal of a rectangle is the hypotenuse of a right triangle whose legs are the two sides. So $x^2 + (x + 7)^2 = 17^2 = 289$.\nStep 2: Expand and collect: $x^2 + x^2 + 14x + 49 = 289$, so $2x^2 + 14x - 240 = 0$. Divide by $2$: $x^2 + 7x - 120 = 0$.\nStep 3: Factor: $(x + 15)(x - 8) = 0$, so $x = -15$ or $x = 8$. A side length cannot be negative, so $x = 8$. Check: the sides are $8$ and $15$, and $8^2 + 15^2 = 64 + 225 = 289 = 17^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): comes from $x + (x + 7) = 17$, adding the two sides instead of using the Pythagorean theorem. The two legs of a right triangle always sum to more than the hypotenuse.\n* Choice C ($10$): comes from $17 - 7$, subtracting the difference in side lengths from the diagonal as though all three lengths lay along one line.\n* Choice D ($15$): this is the longer side, $x + 7$. The equation is solved correctly, but the question asks for $x$.\n\n**Test Day Takeaway:** When both legs carry the same variable, the Pythagorean theorem produces a quadratic. Expect two roots, discard the negative one because it is a length, and confirm which side the question named."
+}

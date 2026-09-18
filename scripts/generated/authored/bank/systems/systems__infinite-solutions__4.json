@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "A student solves a system of two linear equations by elimination. After combining the equations, both variables drop out and the result is the true statement $0 = 0$. Which statement about the system must be true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The system has no solution."
+    },
+    {
+      "id": "B",
+      "text": "The system has exactly one solution."
+    },
+    {
+      "id": "C",
+      "text": "The system has infinitely many solutions."
+    },
+    {
+      "id": "D",
+      "text": "The system has exactly two solutions."
+    }
+  ],
+  "distractorNotes": {
+    "A": "no solution shows up as a false statement such as $0 = 7$, not as a true one.",
+    "B": "exactly one solution appears when elimination leaves a single variable with a single value, such as $5y = 20$.",
+    "D": "a system of two linear equations can never have exactly two solutions."
+  },
+  "correctAnswer": "C",
+  "hint": "Ask whether the surviving statement is always true or never true.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** Both variables vanishing into a true statement means the second equation adds nothing new, so every solution of one equation solves the other.\n\n**The Full Solution:**\nStep 1: Elimination combines the two equations. If both variables cancel, the second equation carried no information beyond the first.\nStep 2: The leftover statement $0 = 0$ is true for every $x$ and $y$, so no ordered pair is ruled out by the combination.\nStep 3: The two equations therefore describe the same line, and every point on that line solves the system, giving infinitely many solutions. Check: eliminating between $x + 2y = 5$ and $3x + 6y = 15$ produces $0 = 0$, and those equations are multiples of each other. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: no solution shows up as a false statement such as $0 = 7$, not as a true one.\n* Choice B: exactly one solution appears when elimination leaves a single variable with a single value, such as $5y = 20$.\n* Choice D: a system of two linear equations can never have exactly two solutions.\n\n**Test Day Takeaway:** When elimination erases both variables, read the leftover statement: true means infinitely many solutions, false means none."
+}

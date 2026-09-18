@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-308",
+ "question": "A spectrometer's optical-bench brace is the right triangle shown; its longest edge is $29$ centimeters and one of the other two edges is $21$ centimeters. How many centimeters of edging trim wrap the entire brace?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     21,
+     0
+    ],
+    [
+     21,
+     20
+    ]
+   ],
+   "sideLabels": [
+    "21 cm",
+    "",
+    "29 cm"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$29$"
+  },
+  {
+   "id": "B",
+   "text": "$41$"
+  },
+  {
+   "id": "C",
+   "text": "$50$"
+  },
+  {
+   "id": "D",
+   "text": "$70$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports the longest edge alone instead of the distance around",
+  "B": "adds only the two legs, 21 + 20, and omits the 29 cm edge",
+  "C": "adds the two edges printed on the figure, 21 + 29, and never finds the third"
+ },
+ "explanation": "**SAT Pattern: Pythagorean Triple Recognition**\n\n**Choice D is correct.** The third edge is $\\sqrt{29^2 - 21^2} = 20$, so the trim measures $21 + 20 + 29 = 70$ centimeters.\n\n**The Fast Way (~30s):** $20$-$21$-$29$ is a Pythagorean triple, so the missing edge is $20$ and the perimeter is $70$.\n\n**The Full Solution:**\n\nStep 1: The $29$-centimeter edge is the hypotenuse, so the missing leg satisfies $b^2 = 841 - 441 = 400$.\n\nStep 2: Therefore $b = 20$ centimeters.\n\nStep 3: The trim follows all three edges: $21 + 20 + 29 = 70$ centimeters. Check: $20^2 + 21^2 = 400 + 441 = 841 = 29^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($29$): reports the longest edge alone rather than the distance around the brace.\n* Choice B ($41$): adds only the two legs and leaves the $29$-centimeter edge uncovered.\n* Choice C ($50$): adds the two lengths printed on the figure without ever finding the third.\n\n**Test Day Takeaway:** $20$-$21$-$29$ is a less familiar triple, so verify with $a^2 + b^2 = c^2$ and then answer the question actually asked — here, a perimeter."
+}

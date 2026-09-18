@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 1,
- "passage": "In her 2003 account of the Green Belt Movement, Kenyan ecologist Wangari Maathai describes how community-led tree planting can address several rural problems at once. Across degraded hillsides in central Kenya, women's groups organized by the movement plant indigenous seedlings that, once mature, anchor topsoil, replenish local water sources, and yield fuelwood and fruit for sale. According to Maathai, the work therefore strengthens rural ______ even as it restores the surrounding ecosystem.",
+ "passage": "Deep inside a mountain on the Arctic island of Spitsbergen, the Svalbard Global Seed Vault holds duplicate samples of seeds from gene banks around the world. Because the vault is carved into permafrost and sealed behind airlocked doors, its collections can survive power failures, equipment breakdowns, and even regional disasters. For the crop varieties stored there, the facility serves as a ______ against permanent loss.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "livelihoods"
+   "text": "burden"
   },
   {
    "id": "B",
-   "text": "hobbies"
+   "text": "safeguard"
   },
   {
    "id": "C",
-   "text": "careers"
+   "text": "novelty"
   },
   {
    "id": "D",
-   "text": "hardships"
+   "text": "substitute"
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A, \"livelihoods.\" The passage spells out exactly what the women's groups gain from the planted trees: fuelwood and fruit \"for sale,\" alongside the soil and water benefits that keep their land productive. The blank needs a noun meaning the means by which rural people support themselves economically, and \"livelihoods\" fits precisely: it covers subsistence income and material resources together, matching Maathai's claim that tree planting is simultaneously an economic and an ecological intervention."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The blank needs a noun meaning a protection against harm, and \"safeguard against permanent loss\" states exactly the function the passage has been describing.\n\n**The Full Solution:**\n- The passage builds a single idea: the vault's location in permafrost and its airlocked construction let its seed collections survive failures and disasters.\n- The previous sentence describes that protective function directly, so the blank must name a thing that protects — a \"safeguard.\"\n\n**Why the other choices are wrong:**\n- A: \"Burden\" reverses the vault's value — the passage presents it as protective, not costly.\n- C: \"Novelty\" reduces the vault to a curiosity, ignoring the protective function every sentence describes.\n- D: \"Substitute\" mistakes the vault's role — it stores duplicates so the original collections are protected, not replaced."
 }

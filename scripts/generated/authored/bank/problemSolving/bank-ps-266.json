@@ -1,0 +1,49 @@
+{
+  "id": "bank-ps-266",
+  "question": "The table shows the number of volunteers at a food bank by assigned role. Two of the volunteers will be selected at random, without replacement, to attend a training session. What is the probability that neither volunteer selected is a driver?",
+  "questionTable": {
+    "headers": [
+      "Role",
+      "Number of volunteers"
+    ],
+    "rows": [
+      [
+        "Driver",
+        "6"
+      ],
+      [
+        "Cook",
+        "4"
+      ],
+      [
+        "Sorter",
+        "5"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{7}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{12}{35}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{9}{25}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3}{5}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "probability that BOTH are drivers (6/15 times 5/14)",
+    "C": "with replacement: (9/15)(9/15) = 81/225",
+    "D": "stops after the first draw (9/15)"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Total volunteers: $6 + 4 + 5 = 15$; non-drivers: $9$. Neither is a driver: $\\frac{9}{15} \\times \\frac{8}{14} = \\frac{72}{210} = \\frac{12}{35}$.\n\n**The Full Solution:**\nStep 1: From the table, there are $15$ volunteers, of whom $4 + 5 = 9$ are not drivers.\nStep 2: First selection is a non-driver: $\\frac{9}{15}$. Second selection is a non-driver, with one non-driver already chosen: $\\frac{8}{14}$.\nStep 3: Multiply: $\\frac{9}{15} \\times \\frac{8}{14} = \\frac{72}{210} = \\frac{12}{35}$. Check: $\\frac{12}{35} \\approx 0.34$, which is reasonable since a bit more than half the volunteers are non-drivers and both picks must be non-drivers. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{7}$): $\\frac{6}{15} \\times \\frac{5}{14} = \\frac{30}{210}$ is the probability that both volunteers ARE drivers.\n* Choice C ($\\frac{9}{25}$): $\\frac{9}{15} \\times \\frac{9}{15}$ keeps the counts fixed, as if the first volunteer could be selected again.\n* Choice D ($\\frac{3}{5}$): $\\frac{9}{15}$ covers the first selection only.\n\n**Test Day Takeaway:** \"Neither\" is a two-step event: count the \"other\" group from the table, then multiply two fractions that each shrink by $1$."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-017",
+  "question": "A total of $240$ people applied to a fellowship program. Of the applicants, $75\\%$ were invited to an interview, and $35\\%$ of those interviewed were offered a fellowship. How many of the applicants were offered a fellowship?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$63$"
+    },
+    {
+      "id": "B",
+      "text": "$84$"
+    },
+    {
+      "id": "C",
+      "text": "$117$"
+    },
+    {
+      "id": "D",
+      "text": "$180$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "takes $35\\%$ of all $240$ applicants rather than of the $180$ who were interviewed.",
+    "C": "finds the interviewed applicants who were not offered a fellowship, $180 - 63$.",
+    "D": "stops after the first filter and reports the number interviewed."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Compound Filter**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Interviewed: $0.75 \\times 240 = 180$. Offered: $0.35 \\times 180 = 63$.\n\n**The Full Solution:**\nStep 1: Apply the first filter to all applicants: $0.75 \\times 240 = 180$ were interviewed.\nStep 2: Apply the second filter to the interviewed group only: $0.35 \\times 180 = 63$ were offered a fellowship.\nStep 3: Check: the combined fraction is $0.75 \\times 0.35 = 0.2625$, and $0.2625 \\times 240 = 63$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($84$): takes $35\\%$ of all $240$ applicants rather than of the $180$ who were interviewed.\n* Choice C ($117$): finds the interviewed applicants who were not offered a fellowship, $180 - 63$.\n* Choice D ($180$): stops after the first filter and reports the number interviewed.\n\n**Test Day Takeaway:** Each \"of those\" narrows the base. Apply the percents in sequence, each to the group the previous step produced."
+}

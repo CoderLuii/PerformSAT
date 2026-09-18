@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-172",
+ "question": "A handrail bracket is a right triangle whose legs measure $5m$ and $12m$ millimeters for a positive constant $m$, and whose perimeter is $120$ millimeters. What is the value of $m$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Right Triangle Trig — Perimeter Constraint to Sides**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~30s):** Legs $5m$ and $12m$ give hypotenuse $13m$, so $30m = 120$ and $m = 4$.\n\n**The Full Solution:**\n\nStep 1: With legs $5m$ and $12m$, the hypotenuse is $\\sqrt{25m^2 + 144m^2} = \\sqrt{169m^2} = 13m$.\n\nStep 2: The perimeter is $5m + 12m + 13m = 30m$, and this equals $120$ millimeters.\n\nStep 3: So $m = \\frac{120}{30} = 4$. Check: the sides are $20$, $48$, and $52$ millimeters, $20 + 48 + 52 = 120$, and $20^2 + 48^2 = 400 + 2304 = 2704 = 52^2$.\n\n**Common Mistakes:**\n\n* $20$ — reporting the shorter leg $5m$ instead of the constant $m$.\n* $48$ — reporting the longer leg $12m$.\n* $7.06$ — leaving the hypotenuse out of the perimeter and solving $17m = 120$.\n\n**Test Day Takeaway:** When both legs share a constant factor, the hypotenuse carries the same factor — write the perimeter as a single multiple of that constant before dividing."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-191",
+ "question": "The two week numbers at which study-room reservations reach capacity are the solutions of $x^2+(k-3)x+18=0$, where $k$ is a constant. If those two week numbers have a sum of $11$, what is the value of $k$?",
+ "correctAnswer": "-8",
+ "explanation": "**SAT Pattern: Sum/Product of Roots — Vieta's**\n\n**The correct answer is $-8$.**\n\n**The Fast Way (~20s):** The sum of the solutions is $-(k-3)$, so $-(k-3)=11$ gives $k-3=-11$ and $k=-8$.\n\n**The Full Solution:**\nStep 1: With $a=1$, the sum of the solutions is $-\\frac{b}{a}=-(k-3)$.\nStep 2: Set $-(k-3)=11$, so $k-3=-11$.\nStep 3: Add $3$ to both sides: $k=-8$. Check: $k=-8$ gives $x^2-11x+18=0$, whose solutions $2$ and $9$ add to $11$ ✓\n\n**Common Mistakes:**\n* $14$: sets $k-3=11$ and skips the negative sign in $-\\frac{b}{a}$.\n* $8$: solves correctly to $k=-8$ but reports the value without its negative sign.\n* $-11$: stops at $k-3=-11$ and reports that instead of $k$.\n\n**Test Day Takeaway:** Write the sum as $-\\frac{b}{a}$ first, then solve for the constant — the minus sign is where these items are won or lost."
+}

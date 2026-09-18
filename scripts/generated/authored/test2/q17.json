@@ -1,31 +1,31 @@
 {
-  "id": 217,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "Margie West, a curator at the Museum and Art Gallery of the Northern Territory in Darwin, became widely known for her work on bark paintings from Arnhem Land. West curated such paintings for ______ her 1988 book The Inspired Dream: Life as Art in Aboriginal Australia argued that these paintings encode ancestral narratives whose meaning is layered for different audiences.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "decades:"
-    },
-    {
-      "id": "B",
-      "text": "decades"
-    },
-    {
-      "id": "C",
-      "text": "decades,"
-    },
-    {
-      "id": "D",
-      "text": "decades;"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"decades;\". The blank sits at the boundary between two independent clauses: \"West curated such paintings for decades\" can stand alone as a complete sentence, and so can \"her 1988 book The Inspired Dream: Life as Art in Aboriginal Australia argued that these paintings encode ancestral narratives whose meaning is layered for different audiences.\" Standard English allows two independent clauses to be joined by a semicolon (or by a period, or by a comma plus a coordinating conjunction). The semicolon in choice D cleanly marks the boundary between the two clauses without a coordinating conjunction.\n\nChoice C is incorrect. (\"decades,\"): — a comma between two independent clauses is the classic comma splice. It looks like the correct comma + coordinating conjunction pattern (\"…for decades, and her 1988 book argued…\"), but with no conjunction the comma alone cannot legally join two independent clauses. Choice B is incorrect. (\"decades\"): inverse — supplying no punctuation at all is the opposite of the correct semicolon. The two independent clauses run straight into each other, producing a fused (run-on) sentence with no boundary mark of any kind. Choice A is incorrect. (\"decades:\"): — a colon tests a different boundary rule. A colon may follow an independent clause, but only when the material that follows amplifies, defines, or introduces a list arising from that clause. The second clause here is a separate factual statement about West's 1988 book; it does not amplify or define \"decades\" or what came before, so a colon is not the appropriate mark."
+ "id": 217,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "Textile artist Anni Albers entered the Bauhaus, the influential German design school, in 1922. The weaving workshop—the only course of study the school then offered its women ______ became the site of her most radical experiments, and her 1965 book On Weaving is still a standard reference for textile artists.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "students"
+  },
+  {
+   "id": "B",
+   "text": "students,"
+  },
+  {
+   "id": "C",
+   "text": "students;"
+  },
+  {
+   "id": "D",
+   "text": "students—"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The sentence interrupts itself with a supplement that opens with a dash (“the only course of study the school then offered its women students”), and an interruption opened with a dash must be closed with a matching dash.\n\n**The Full Solution:**\n- Strip the supplement out and the frame reads cleanly: “The weaving workshop … became the site of her most radical experiments.”\n- Because the supplement was opened with a dash after “workshop,” the boundary at the blank must be the paired closing dash — punctuation marks that set off an interruption must match.\n\n**Why the other choices are wrong:**\n- A: With no punctuation, the supplement crashes into the main verb (“students became”), handing the sentence a second subject and leaving the opening dash unclosed.\n- B: A comma cannot close an interruption that a dash opened — mismatched pairs (dash–comma) are nonstandard.\n- C: A semicolon joins two independent clauses; what follows the blank is the original sentence’s predicate, not a new clause."
 }

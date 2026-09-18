@@ -1,0 +1,29 @@
+{
+ "question": "A gravimeter at $(-9, 4)$ in the $xy$-plane detects mass changes within $r$ units, and a source at $(-1, -2)$ lies exactly on the edge of its range. A second gravimeter with the same range is at $(6, k)$ and has a source at $(6, -6)$ on its edge. What are the possible values of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-20$ and $8$"
+  },
+  {
+   "id": "B",
+   "text": "$-12$ and $0$"
+  },
+  {
+   "id": "C",
+   "text": "$-16$ and $4$"
+  },
+  {
+   "id": "D",
+   "text": "$-4$ and $16$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "adds the coordinate differences to get r = 14, then computes -6 plus or minus 14",
+  "B": "uses only the vertical difference, r = 6, then computes -6 plus or minus 6",
+  "D": "solves k - 6 = plus or minus 10, adding 6 instead of subtracting"
+ },
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** The first pair gives $r = \\sqrt{8^2 + 6^2} = 10$; the second source is directly below, so $|k + 6| = 10$ and $k = 4$ or $k = -16$.\n\n**The Full Solution:**\nStep 1: The source $(-1, -2)$ is one range from $(-9, 4)$, so $r = \\sqrt{(-1 + 9)^2 + (-2 - 4)^2} = \\sqrt{64 + 36} = 10$ units.\nStep 2: The second gravimeter at $(6, k)$ and its source $(6, -6)$ share an $x$-coordinate, so their distance is $|k - (-6)| = |k + 6|$.\nStep 3: Setting $|k + 6| = 10$ gives $k + 6 = 10$ or $k + 6 = -10$, so $k = 4$ or $k = -16$. Check: from $(6, 4)$ to $(6, -6)$ is $10$ units, and from $(6, -16)$ to $(6, -6)$ is also $10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: adds the coordinate gaps $8 + 6$ to get $r = 14$ instead of using the Pythagorean sum.\n* Choice B: uses only the vertical gap of $6$ as the range.\n* Choice D: solves $k - 6 = \\pm 10$, subtracting the source's $y$-coordinate instead of adding it.\n\n**Test Day Takeaway:** Work the given edge point backwards to the radius first, then let the shared coordinate turn the second condition into a simple absolute-value equation with two roots.",
+ "id": "bank-geo-304"
+}

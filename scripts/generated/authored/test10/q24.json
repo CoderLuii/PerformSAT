@@ -6,16 +6,16 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 1,
- "passage": "As the global climate has warmed, the great majority of mountain glaciers have been losing ice, retreating up their valleys year after year. ______ a small number of glaciers in a few coastal ranges have actually advanced over the same decades—not because their surroundings are cooling, but because warmer, moister air has delivered heavier snowfall to their upper reaches faster than melting can remove it.",
+ "passage": "The arithmometer, the first commercially successful calculating machine, required its operator to set each number on a row of sliders and then turn a crank to register it; entering a single figure took several deliberate motions. ______ the key-driven comptometer, introduced in 1887, added a digit the instant a key was struck, and a practiced operator's fingers could run well ahead of conscious thought.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "For instance,"
+   "text": "As a result,"
   },
   {
    "id": "B",
-   "text": "Therefore,"
+   "text": "Similarly,"
   },
   {
    "id": "C",
@@ -23,9 +23,9 @@
   },
   {
    "id": "D",
-   "text": "Likewise,"
+   "text": "In other words,"
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The passage first states the dominant pattern—most mountain glaciers are losing ice and retreating—and then turns to glaciers that have done the opposite by advancing. \"By contrast\" marks that opposition between the general trend and the exceptional case. \"For instance\" would present an example of the first claim rather than a counter-case; \"Therefore\" would signal a consequence; and \"Likewise\" would signal similarity, the reverse of the contrast the sentence sets up."
+ "explanation": "**Choice C is correct.** The two sentences set opposed methods side by side, slow, multi-motion entry on the arithmometer versus instant, single-keystroke entry on the comptometer, and \"By contrast\" is the transition that marks such an opposition.\n\n**The Full Solution:**\n- Sentence one characterizes the arithmometer by its slowness: several deliberate motions per figure.\n- Sentence two characterizes the comptometer by the opposite quality: a digit registered the instant a key is struck.\n- The blank must flag that the second machine is being weighed against the first, which is contrast, not consequence or restatement.\n\n**Why the other choices are wrong:**\n- A: \"As a result\" would make the comptometer's speed an effect of the arithmometer's slowness, a causal link the text does not draw.\n- B: \"Similarly\" announces a likeness, but the sentences emphasize how the machines differ.\n- D: \"In other words\" introduces a restatement, yet the second sentence describes a different machine, not the first machine in new terms."
 }

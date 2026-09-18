@@ -1,0 +1,35 @@
+{
+  "id": "bank-alg-132",
+  "question": "The graph of $y = h(x)$ is shown in the $xy$-plane, where $h$ is a linear function. What is the value of $h(4)$?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 2,
+      "yIntercept": -3,
+      "xRange": [
+        -4,
+        6
+      ],
+      "yRange": [
+        -6,
+        8
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          0,
+          -3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "label": "y = h(x)"
+    }
+  },
+  "correctAnswer": "5",
+  "explanation": "**SAT Pattern: Function Evaluation**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~8s):** $h(4)$ is the $y$-value on the line where $x = 4$. From the marked points $(0, -3)$ and $(3, 3)$ the line rises $2$ for each $1$ to the right, so at $x = 4$ it reaches $3 + 2 = 5$.\n\n**The Full Solution:**\nStep 1: Read two points off the graph: $(0, -3)$ and $(3, 3)$. Slope $= \\frac{3 - (-3)}{3 - 0} = \\frac{6}{3} = 2$, and the $y$-intercept is $-3$, so $h(x) = 2x - 3$.\nStep 2: Evaluate: $h(4) = 2(4) - 3 = 8 - 3 = 5$.\nStep 3: Check on the graph: one unit to the right of $(3, 3)$, the line is at height $5$. $\\checkmark$\n\n**Common Mistakes:** Entering $-3$ (the $y$-intercept, the value at $x = 0$); entering $3.5$ (solving $h(x) = 4$ instead of finding $h(4)$); entering $8$ (using the slope times $4$ without the intercept).\n\n**Test Day Takeaway:** $h(4)$ asks for the height of the graph at $x = 4$. Either read it directly or write the rule from two clean points and substitute."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "In the $xy$-plane, a circle with center $(3, 5)$ passes through the point $(7, 2)$. Which of the following equations defines the line that is tangent to this circle at $(7, 2)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -\\frac{4}{3}x + \\frac{34}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$y = -\\frac{3}{4}x + \\frac{29}{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$y = \\frac{3}{4}x - \\frac{13}{4}$"
+  },
+  {
+   "id": "D",
+   "text": "$y = \\frac{4}{3}x - \\frac{22}{3}$"
+  }
+ ],
+ "correctAnswer": "D",
+ "hint": "Find the radius's slope first; the tangent line is perpendicular to it at the point where they meet.",
+ "distractorNotes": {
+  "A": "inverts without changing the sign",
+  "B": "uses the radius slope",
+  "C": "changes the sign without inverting"
+ },
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~60s):** The radius has slope $\\frac{2 - 5}{7 - 3} = -\\frac{3}{4}$, so the tangent's slope is $\\frac{4}{3}$; through $(7, 2)$ that is $y = \\frac{4}{3}x - \\frac{22}{3}$.\n\n**The Full Solution:**\nStep 1: The radius joins $(3, 5)$ and $(7, 2)$, so its slope is $\\frac{2 - 5}{7 - 3} = -\\frac{3}{4}$.\nStep 2: The tangent line is perpendicular to that radius, so its slope is the negative reciprocal, $\\frac{4}{3}$.\nStep 3: Point-slope form gives $y - 2 = \\frac{4}{3}(x - 7)$, so $y = \\frac{4}{3}x - \\frac{28}{3} + 2 = \\frac{4}{3}x - \\frac{22}{3}$. Check: at $x = 7$, $y = \\frac{28 - 22}{3} = 2$, the point of tangency.\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -\\frac{4}{3}x + \\frac{34}{3}$): inverts the radius's slope but keeps it negative, so the line is not perpendicular.\n* Choice B ($y = -\\frac{3}{4}x + \\frac{29}{4}$): uses the radius's own slope $-\\frac{3}{4}$ for the tangent line.\n* Choice C ($y = \\frac{3}{4}x - \\frac{13}{4}$): changes the sign of the radius's slope without inverting it.\n\n**Test Day Takeaway:** Perpendicular means flip and negate, both moves. Every choice here passes through the point of tangency, so only the slope separates them."
+}

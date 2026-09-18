@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-064",
+ "question": "The sloped edge of the cantilever bracket shown measures $18$ centimeters and meets the horizontal edge at $30^\\circ$. How long, in centimeters, is that horizontal edge?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15.5885,
+     0
+    ],
+    [
+     15.5885,
+     9
+    ]
+   ],
+   "labels": [
+    "30°",
+    "",
+    ""
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "18 cm"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$9\\sqrt{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$9\\sqrt{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$18\\sqrt{3}$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "gives the vertical edge, the side opposite the 30 degree angle",
+  "B": "uses the 45-45-90 ratio, multiplying 18 by one over root 2",
+  "D": "multiplies the hypotenuse by root 3 instead of by root 3 over 2"
+ },
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice C is correct.** The horizontal edge is adjacent to the $30^\\circ$ angle, so it equals $18\\cos 30^\\circ = 18 \\cdot \\frac{\\sqrt{3}}{2} = 9\\sqrt{3}$ centimeters.\n\n**The Fast Way (~20s):** In a $30$-$60$-$90$ triangle the sides are $x$, $x\\sqrt{3}$, $2x$; here $2x = 18$, so $x = 9$ and the longer leg is $9\\sqrt{3}$.\n\n**The Full Solution:**\n\nStep 1: The $18$-centimeter sloped edge is the hypotenuse, and the horizontal edge is adjacent to the $30^\\circ$ angle.\n\nStep 2: $\\cos 30^\\circ = \\frac{\\text{adjacent}}{18}$, and $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$.\n\nStep 3: So the adjacent edge is $18 \\cdot \\frac{\\sqrt{3}}{2} = 9\\sqrt{3} \\approx 15.6$ centimeters. Check: the opposite edge is $18\\sin 30^\\circ = 9$, and $9^2 + (9\\sqrt{3})^2 = 81 + 243 = 324 = 18^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($9$): gives the vertical edge, the side opposite the $30^\\circ$ angle.\n* Choice B ($9\\sqrt{2}$): applies the $45$-$45$-$90$ ratio to a $30$-$60$-$90$ triangle.\n* Choice D ($18\\sqrt{3}$): multiplies the hypotenuse by $\\sqrt{3}$ instead of $\\frac{\\sqrt{3}}{2}$, producing a leg longer than the hypotenuse.\n\n**Test Day Takeaway:** In a $30$-$60$-$90$ triangle the hypotenuse is twice the short leg; halve it first and the other two sides follow without a calculator."
+}

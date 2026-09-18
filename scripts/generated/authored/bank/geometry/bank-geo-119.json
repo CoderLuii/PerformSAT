@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-119",
+ "question": "A rectangular heat-sink base measures $k$ millimeters by $(k + 5)$ millimeters and covers an area of $84$ square millimeters. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$18.5$"
+  },
+  {
+   "id": "D",
+   "text": "$79$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "uses the rejected root k = -12 of the factored equation and drops the negative sign",
+  "C": "treats 84 as the perimeter, solving 2(k + k + 5) = 84",
+  "D": "subtracts 5 from 84 instead of factoring the quadratic"
+ },
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice A is correct.** $k(k + 5) = 84$ gives $k^2 + 5k - 84 = 0$, which factors as $(k + 12)(k - 7) = 0$, so $k = 7$.\n\n**The Fast Way (~30s):** Two factors of $84$ that differ by $5$ are $7$ and $12$, so $k = 7$.\n\n**The Full Solution:**\n\nStep 1: Area of a rectangle is length times width: $k(k + 5) = 84$.\n\nStep 2: Expand and set equal to zero: $k^2 + 5k - 84 = 0$, which factors as $(k + 12)(k - 7) = 0$.\n\nStep 3: The roots are $k = -12$ and $k = 7$; a side length must be positive, so $k = 7$. Check: $7 \\times 12 = 84$ square millimeters.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($12$): takes the rejected root $k = -12$ and drops the sign.\n* Choice C ($18.5$): treats $84$ as the perimeter, solving $4k + 10 = 84$.\n* Choice D ($79$): subtracts $5$ from $84$ as if the two dimensions added to $84$.\n\n**Test Day Takeaway:** A rectangle-area equation with a variable side is a quadratic — factor it, then throw away the negative root before answering."
+}

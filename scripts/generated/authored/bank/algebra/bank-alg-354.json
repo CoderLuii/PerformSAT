@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-354",
+  "question": "A youth soccer league has $\\$2{,}250$ to spend on balls and must buy at least $250$ balls to receive a bulk rate. Training balls cost $\\$7$ each and match balls cost $\\$16$ each. What is the greatest number of match balls the league can buy?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$31$"
+    },
+    {
+      "id": "B",
+      "text": "$55$"
+    },
+    {
+      "id": "C",
+      "text": "$56$"
+    },
+    {
+      "id": "D",
+      "text": "$140$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "divided the leftover 500 by the full match-ball price 16 instead of the 9 difference",
+    "C": "rounded 55.56 up, exceeding the budget",
+    "D": "ignored the 250-ball minimum: 2250/16"
+  },
+  "explanation": "**SAT Pattern: Inequality Word Problem (Floor)**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Buy exactly $250$ balls. All training balls cost $1{,}750$, leaving $500$. Each match-ball upgrade costs $16 - 7 = 9$ more, so $500 \\div 9 = 55.56$, and the floor is $55$.\n\n**The Full Solution:**\nStep 1: Let $m$ be the number of match balls and $t$ the number of training balls: $7t + 16m \\leq 2{,}250$ and $t + m \\geq 250$.\nStep 2: Set $t = 250 - m$: $7(250 - m) + 16m \\leq 2{,}250$, so $1{,}750 + 9m \\leq 2{,}250$ and $9m \\leq 500$.\nStep 3: $m \\leq 55.56$, so the greatest whole number is $55$.\nCheck: $195$ training and $55$ match balls cost $1{,}365 + 880 = 2{,}245 \\leq 2{,}250$; $56$ match balls would cost $1{,}358 + 896 = 2{,}254$, over budget. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($31$): divides the leftover $500$ by $16$, the full price, instead of by the $9$-dollar upgrade cost.\n* Choice C ($56$): rounds $55.56$ up; the check shows it exceeds the budget by $\\$4$.\n* Choice D ($140$): computes $2{,}250 \\div 16$ and forgets that at least $250$ balls must be bought.\n\n**Test Day Takeaway:** Two constraints, one plan: hit the minimum count with the cheap item, upgrade with the leftover at the price gap, and floor the result."
+}

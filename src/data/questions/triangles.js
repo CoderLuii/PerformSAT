@@ -7,77 +7,92 @@ export const trianglesQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "What is the sum of the interior angles of any triangle?",
+      question: "In triangle $JKL$, the measures of angles $J$, $K$, and $L$ are $x°$, $y°$, and $z°$, respectively. What is the value of $x + y + z$?",
       choices: [
-        { id: "A", text: "90°" },
-        { id: "B", text: "180°" },
-        { id: "C", text: "270°" },
-        { id: "D", text: "360°" }
+        // distractor: the measure of a single right angle, not the total of all three angles
+        { id: "A", text: "$90$" },
+        { id: "B", text: "$180$" },
+        // distractor: adds an extra $90$ to the correct total, as if a right angle were counted separately
+        { id: "C", text: "$270$" },
+        // distractor: the interior-angle sum of a quadrilateral, not of a triangle
+        { id: "D", text: "$360$" }
       ],
       correctAnswer: "B",
-      hint: "Think about what happens when you tear off all three corners of a triangle and put them together. They form a straight line.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~5s):** The interior angles of any triangle always sum to $180^\\circ$. That is choice B.\n\n**The Full Solution:**\nStep 1: The Triangle Angle Sum Theorem says that for any triangle with angles $A$, $B$, and $C$, $A + B + C = 180^\\circ$.\nStep 2: This holds for every triangle — acute, right, obtuse, equilateral, isosceles, or scalene. Tearing off the three corners and lining them up always forms a straight line, $180^\\circ$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($90^\\circ$): the measure of a single right angle, not the sum of all three.\n* Choice C ($270^\\circ$): comes from adding $90^\\circ$ to $180^\\circ$ or confusing this with a reflex sum.\n* Choice D ($360^\\circ$): the interior-angle sum of a quadrilateral (or the exterior-angle sum of any convex polygon), not a triangle.\n\n**Test Day Takeaway:** A triangle's interior angles always total $180^\\circ$ — a quadrilateral totals $360^\\circ$. Keep those two numbers straight.",
-      skills: ['triangle-angle-sum']
+      hint: "Draw any triangle you like and add its three angle measures — the total never changes.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** The interior angles of any triangle add to $180°$, so $x + y + z = 180$.\n\n**The Full Solution:**\nStep 1: The Triangle Angle Sum Theorem states that the three interior angles of every triangle have measures totaling $180°$.\nStep 2: Here those measures are $x°$, $y°$, and $z°$, so $x° + y° + z° = 180°$.\nStep 3: Reading off the numerical values gives $x + y + z = 180$.\n\nVerification: An equilateral triangle has angles $60°$, $60°$, and $60°$, and $60 + 60 + 60 = 180$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($90$): the measure of a single right angle, not the total of all three angles.\n* Choice C ($270$): adds an extra $90$ to the correct total, as if a right angle were counted separately.\n* Choice D ($360$): the interior-angle sum of a quadrilateral, not of a triangle.\n\n**Test Day Takeaway:** Every triangle carries exactly $180°$ of interior angle and every quadrilateral carries $360°$. Fixing those two numbers turns most angle questions into one subtraction.",
+      skills: ["triangle-angle-sum"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "A triangle has sides of length 3, 4, and 5. What type of triangle is this?",
+      question: "The side lengths of a triangle are $11$, $11$, and $17$. Which of the following best describes this triangle?",
       choices: [
+        // distractor: requires all three side lengths to be equal, but $17 \neq 11$
         { id: "A", text: "Equilateral" },
         { id: "B", text: "Isosceles" },
-        { id: "C", text: "Scalene" },
-        { id: "D", text: "Cannot determine" }
+        // distractor: would require $11^2 + 11^2 = 17^2$, and $242 \neq 289$
+        { id: "C", text: "Right" },
+        // distractor: requires no two sides to be equal, but two sides here measure $11$
+        { id: "D", text: "Scalene" }
       ],
-      correctAnswer: "C",
-      hint: "Compare all three side lengths. How many of them are equal to each other?",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~10s):** All three sides are different ($3$, $4$, $5$), so the triangle is scalene — choice C.\n\n**The Full Solution:**\nStep 1: Classify by sides. Equilateral means all three equal; isosceles means exactly two equal; scalene means no two equal.\nStep 2: Compare: $3 \\neq 4$, $4 \\neq 5$, $3 \\neq 5$. No two sides match, so the triangle is scalene.\n\n**Why the wrong answers are tempting:**\n* Choice A (Equilateral): requires all three sides equal, like $5$-$5$-$5$. Here they are all different.\n* Choice B (Isosceles): requires two equal sides. None of these match.\n* Choice D (Cannot determine): three side lengths fully determine the side classification — no ambiguity. (As a bonus, $3^2 + 4^2 = 5^2$, so this is also a right triangle, but the question asks about sides.)\n\n**Test Day Takeaway:** Classify by sides first by counting how many lengths are equal: three equal $\\Rightarrow$ equilateral, two equal $\\Rightarrow$ isosceles, none equal $\\Rightarrow$ scalene.",
-      skills: ['triangle-types']
+      correctAnswer: "B",
+      hint: "Count how many of the three lengths are equal to each other.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** Exactly two of the three side lengths are equal, so the triangle is isosceles.\n\n**The Full Solution:**\nStep 1: Classify by sides: equilateral means all three lengths equal, isosceles means exactly two equal, and scalene means no two equal.\nStep 2: Compare the given lengths: $11 = 11$, while $11 \\neq 17$.\nStep 3: Exactly two sides match, so the triangle is isosceles.\n\nVerification: The two equal sides force two equal angles, which is exactly what an isosceles triangle has. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (Equilateral): requires all three side lengths to be equal, but $17 \\neq 11$.\n* Choice C (Right): would require $11^2 + 11^2 = 17^2$, and $242 \\neq 289$.\n* Choice D (Scalene): requires no two sides to be equal, but two sides here measure $11$.\n\n**Test Day Takeaway:** Classify by counting how many side lengths match — three, two, or none — before testing anything else.",
+      skills: ["triangle-types"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "In an isosceles triangle, if one of the equal angles is 70°, what is the third angle?",
+      question: "A solar sail's triangular gore has a right angle at one corner, and its other two angles measure $(4k + 6)$ degrees and $(2k - 6)$ degrees. What is the value of $k$?",
       choices: [
-        { id: "A", text: "40°" },
-        { id: "B", text: "55°" },
-        { id: "C", text: "70°" },
-        { id: "D", text: "110°" }
+        { id: "A", text: "$15$" },
+        // distractor: reports the angle (2k - 6) rather than k
+        { id: "B", text: "$24$" },
+        // distractor: sets the two acute angles equal to 180 instead of 90
+        { id: "C", text: "$30$" },
+        // distractor: reports the angle (4k + 6) rather than k
+        { id: "D", text: "$66$" }
       ],
       correctAnswer: "A",
-      hint: "In an isosceles triangle, two angles are equal. Use the fact that all three angles must sum to 180°.",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~10s):** In an isosceles triangle the two equal angles match, so both base angles are $70^\\circ$. The third is $180^\\circ - 70^\\circ - 70^\\circ = 40^\\circ$ — choice A.\n\n**The Full Solution:**\nStep 1: The triangle has two equal angles. One is $70^\\circ$, so the other equal angle is also $70^\\circ$.\nStep 2: Apply the angle sum: $70^\\circ + 70^\\circ + x = 180^\\circ$, so $140^\\circ + x = 180^\\circ$.\nStep 3: Solve: $x = 40^\\circ$. Check: $70^\\circ + 70^\\circ + 40^\\circ = 180^\\circ$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($55^\\circ$): splits the leftover $110^\\circ$ into two equal parts, wrongly treating the unknown pair as the equal angles.\n* Choice C ($70^\\circ$): three $70^\\circ$ angles sum to $210^\\circ$, which is impossible.\n* Choice D ($110^\\circ$): subtracts only one $70^\\circ$ from $180^\\circ$, forgetting the second equal angle.\n\n**Test Day Takeaway:** In an isosceles triangle, both base angles are equal, so the third angle is $180^\\circ - 2 \\times (\\text{base angle})$.",
-      skills: ['triangle-angle-sum', 'triangle-types']
+      hint: "One of the three angles is already known, though the stem gives no number for it.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~25s):** The two acute angles of a right triangle total $90$ degrees, so $6k = 90$ and $k = 15$.\n\n**The Full Solution:**\nStep 1: Because one angle is a right angle, the other two must total $180 - 90 = 90$ degrees.\nStep 2: So $(4k + 6) + (2k - 6) = 90$, which simplifies to $6k = 90$.\nStep 3: Therefore $k = 15$. Check: the angles are $4(15) + 6 = 66$ and $2(15) - 6 = 24$, and $66 + 24 + 90 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($24$): reporting the angle $(2k - 6)$ instead of the constant $k$.\n* Choice C ($30$): setting the two acute angles equal to $180$ degrees, which double-counts the right angle.\n* Choice D ($66$): reporting the angle $(4k + 6)$ instead of the constant $k$.\n\n**Test Day Takeaway:** A right angle uses $90$ of the $180$ degrees, so the remaining two angles share exactly $90$.",
+      skills: ["triangle-angle-sum", "triangle-types"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "Can a triangle have sides of length 2, 3, and 7?",
+      question: "The triangular brace of a star-tracker tripod has two struts of lengths $11$ centimeters and $26$ centimeters. If the third strut must also be a whole number of centimeters long, how many different lengths could it have?",
       choices: [
-        { id: "A", text: "Yes" },
-        { id: "B", text: "No, because 2 + 3 < 7" },
-        { id: "C", text: "No, because 7 is too large" },
-        { id: "D", text: "Only if it's a right triangle" }
+        // distractor: reports the difference 26 - 11 instead of counting lengths
+        { id: "A", text: "$15$" },
+        // distractor: computes 36 - 16 and omits one endpoint
+        { id: "B", text: "$20$" },
+        { id: "C", text: "$21$" },
+        // distractor: reports the sum 26 + 11 instead of counting lengths
+        { id: "D", text: "$37$" }
       ],
-      correctAnswer: "B",
-      hint: "Apply the Triangle Inequality Theorem: the sum of any two sides must be greater than the third side.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** Add the two shortest sides: $2 + 3 = 5$, which is less than $7$. They can't reach to close the triangle, so no — choice B.\n\n**The Full Solution:**\nStep 1: The Triangle Inequality says the sum of any two sides must be strictly greater than the third: $a + b > c$.\nStep 2: Test the binding case, the two smallest against the largest: $2 + 3 = 5$, and $5 < 7$.\nStep 3: Since the inequality fails, no such triangle exists.\n\n**Why the wrong answers are tempting:**\n* Choice A (Yes): skips the inequality check and assumes any three positive numbers work.\n* Choice C (No, because $7$ is too large): right conclusion but vague reason — the precise failure is $2 + 3 < 7$.\n* Choice D (Only if it's a right triangle): triangle type is irrelevant; once the inequality fails, no triangle of any type can form.\n\n**Test Day Takeaway:** A set of lengths forms a triangle only if the two shortest sides sum to more than the longest. Check that one inequality first.",
-      skills: ['triangle-inequality']
+      correctAnswer: "C",
+      hint: "A count of whole numbers between two bounds is not the difference of those bounds.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~40s):** The third strut must satisfy $15 < s < 37$, so $s$ runs from $16$ to $36$: that is $21$ lengths.\n\n**The Full Solution:**\nStep 1: For three lengths to close into a triangle, the third strut must be longer than the difference of the other two and shorter than their sum: $26 - 11 < s < 26 + 11$, or $15 < s < 37$.\nStep 2: The whole numbers strictly between $15$ and $37$ run from $16$ through $36$.\nStep 3: That is $36 - 16 + 1 = 21$ lengths. Check: $16 + 11 = 27 > 26$ and $36 < 37$, so both endpoints work ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): reporting the difference $26 - 11$, which is a boundary length, not a count.\n* Choice B ($20$): computing $36 - 16$ and forgetting that both endpoints count.\n* Choice D ($37$): reporting the sum $26 + 11$, again a boundary rather than a count.\n\n**Test Day Takeaway:** Set the strict bounds first, then count inclusively: last minus first, plus one.",
+      skills: ["triangle-inequality"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "An equilateral triangle has a side length of 6. What is its perimeter?",
+      question: "In triangle $ABC$, $AB = AC$ and the measure of angle $A$ is $x°$. If triangle $ABC$ is an obtuse triangle, which of the following gives all possible values of $x$?",
       choices: [
-        { id: "A", text: "12" },
-        { id: "B", text: "18" },
-        { id: "C", text: "24" },
-        { id: "D", text: "36" }
+        // distractor: describes the vertex angles for which angle $A$ is the smallest angle, not the obtuse cases
+        { id: "A", text: "$0 < x < 60$" },
+        // distractor: the range that keeps angle $A$ acute, which leaves the triangle acute rather than obtuse
+        { id: "B", text: "$0 < x < 90$" },
+        // distractor: makes angle $A$ the largest angle but still less than $90°$, so no angle is obtuse
+        { id: "C", text: "$60 < x < 90$" },
+        { id: "D", text: "$90 < x < 180$" }
       ],
-      correctAnswer: "B",
-      hint: "Remember that 'equilateral' means all sides are equal. Perimeter is the sum of all sides.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~5s):** An equilateral triangle has three equal sides, so $P = 3 \\times 6 = 18$ — choice B.\n\n**The Full Solution:**\nStep 1: Equilateral means all three sides equal the given length $s = 6$.\nStep 2: Perimeter is the sum of the sides: $P = 6 + 6 + 6 = 3 \\times 6 = 18$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): $2 \\times 6$ — counts only two sides.\n* Choice C ($24$): $4 \\times 6$ — treats the shape as a square with four sides.\n* Choice D ($36$): $6 \\times 6$ — squares the side, computing something area-like instead of a perimeter.\n\n**Test Day Takeaway:** The perimeter of an equilateral triangle is $P = 3s$ — multiply one side by $3$, never square it.",
-      skills: ['triangle-types']
+      correctAnswer: "D",
+      hint: "Only one angle in a triangle can be larger than $90°$ — decide which one it has to be here.",
+      explanation: "**Choice D is correct.**\n\n**The Fast Way (~45s):** The two base angles are equal, so only the vertex angle can exceed $90°$: $90 < x < 180$.\n\n**The Full Solution:**\nStep 1: Since $AB = AC$, angles $B$ and $C$ are equal; call each $y°$, so $x + 2y = 180$.\nStep 2: If a base angle were obtuse then $y > 90$, so $2y > 180$, which is impossible. The obtuse angle must therefore be angle $A$.\nStep 3: Angle $A$ is obtuse exactly when $x > 90$, and $x < 180$ is needed to leave positive base angles, so $90 < x < 180$.\n\nVerification: $x = 100$ leaves base angles of $40°$ each and an obtuse triangle, while $x = 80$ leaves base angles of $50°$ and an acute triangle. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0 < x < 60$): describes the vertex angles for which angle $A$ is the smallest angle, not the obtuse cases.\n* Choice B ($0 < x < 90$): the range that keeps angle $A$ acute, which leaves the triangle acute rather than obtuse.\n* Choice C ($60 < x < 90$): makes angle $A$ the largest angle but still less than $90°$, so no angle is obtuse.\n\n**Test Day Takeaway:** A triangle has at most one non-acute angle. In an isosceles triangle that angle can only be the one between the two equal sides.",
+      skills: ["triangle-types"]
     }
   ],
 
@@ -86,77 +101,96 @@ export const trianglesQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "In a triangle, two angles measure 45° and 75°. What is the third angle?",
+      question: "The roof truss shown spans a packing shed. Rafter $AB$ meets the tie beam at $52$ degrees, and rafter $CB$ meets the same beam at $71$ degrees. What is the measure, in degrees, of the angle at the peak $B$?",
+      diagram: { type: "triangleWithAngles", params: { angleLabels: ["52°", "71°", "x°"], vertexLabels: ["A", "C", "B"], figureNote: true } },
       choices: [
-        { id: "A", text: "30°" },
-        { id: "B", text: "60°" },
-        { id: "C", text: "90°" },
-        { id: "D", text: "120°" }
+        { id: "A", text: "$57$" },
+        // distractor: subtracts only the 71-degree angle from 180
+        { id: "B", text: "$109$" },
+        // distractor: adds the two given angles instead of subtracting their sum from 180
+        { id: "C", text: "$123$" },
+        // distractor: subtracts only the 52-degree angle from 180
+        { id: "D", text: "$128$" }
       ],
-      correctAnswer: "B",
-      hint: "All three angles in a triangle must add up to 180°. Subtract the known angles from this total.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** Subtract the two known angles from $180^\\circ$: $180^\\circ - 45^\\circ - 75^\\circ = 60^\\circ$ — choice B.\n\n**The Full Solution:**\nStep 1: The three interior angles sum to $180^\\circ$: $45^\\circ + 75^\\circ + x = 180^\\circ$.\nStep 2: Combine and solve: $120^\\circ + x = 180^\\circ$, so $x = 60^\\circ$. Check: $45^\\circ + 75^\\circ + 60^\\circ = 180^\\circ$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($30^\\circ$): comes from subtracting the two given angles ($75^\\circ - 45^\\circ$) instead of subtracting their sum from $180^\\circ$.\n* Choice C ($90^\\circ$): a reflex guess toward a right angle; $45^\\circ + 75^\\circ + 90^\\circ = 210^\\circ$, too large.\n* Choice D ($120^\\circ$): the sum of the two known angles, reported instead of the missing one.\n\n**Test Day Takeaway:** The missing angle is $180^\\circ$ minus the sum of the two known angles — add first, then subtract from $180^\\circ$.",
-      skills: ['triangle-angle-sum']
+      correctAnswer: "A",
+      hint: "The two rafter angles and the peak angle all belong to the same triangle.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~10s):** The three interior angles total $180$ degrees, so the peak measures $180 - 52 - 71 = 57$ degrees.\n\n**The Full Solution:**\nStep 1: The truss is a triangle, so its three interior angles sum to $180$ degrees.\nStep 2: Two of them measure $52$ and $71$ degrees, a total of $123$ degrees.\nStep 3: The peak angle is $180 - 123 = 57$ degrees. Check: $52 + 71 + 57 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($109$): subtracting only the $71$-degree angle from $180$ and forgetting the other rafter.\n* Choice C ($123$): reporting the sum of the two given angles instead of what is left of $180$.\n* Choice D ($128$): subtracting only the $52$-degree angle from $180$.\n\n**Test Day Takeaway:** Add the known angles first, then take that total away from $180$ once.",
+      skills: ["triangle-angle-sum"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "An exterior angle of a triangle is 110°. What is the sum of the two non-adjacent interior angles?",
+      question: "An exterior angle at vertex $C$ of triangle $ABC$ has a measure of $142°$. What is the sum, in degrees, of the measures of angles $A$ and $B$?",
       choices: [
-        { id: "A", text: "70°" },
-        { id: "B", text: "90°" },
-        { id: "C", text: "110°" },
-        { id: "D", text: "180°" }
+        // distractor: gives the interior angle at $C$, the supplement, rather than the sum of the other two angles
+        { id: "A", text: "$38$" },
+        // distractor: halves the exterior angle, assuming angles $A$ and $B$ are equal
+        { id: "B", text: "$71$" },
+        { id: "C", text: "$142$" },
+        // distractor: subtracts the exterior angle from $360$ instead of using the exterior angle relationship
+        { id: "D", text: "$218$" }
       ],
       correctAnswer: "C",
-      hint: "The Exterior Angle Theorem states that an exterior angle equals the sum of the two remote (non-adjacent) interior angles.",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~5s):** The Exterior Angle Theorem says an exterior angle equals the sum of the two remote interior angles, so the sum is $110^\\circ$ — choice C.\n\n**The Full Solution:**\nStep 1: The exterior angle equals the sum of the two non-adjacent (remote) interior angles. That sum is therefore $110^\\circ$.\nStep 2: Confirm the long way: the adjacent interior angle is $180^\\circ - 110^\\circ = 70^\\circ$, so the remaining two interior angles sum to $180^\\circ - 70^\\circ = 110^\\circ$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($70^\\circ$): $180^\\circ - 110^\\circ$ — this is the adjacent interior angle (the supplement), not the remote pair.\n* Choice B ($90^\\circ$): a default guess with no basis here.\n* Choice D ($180^\\circ$): the sum of all three interior angles, not just the two remote ones.\n\n**Test Day Takeaway:** An exterior angle of a triangle equals the sum of the two remote interior angles — no need to find the angles individually.",
-      skills: ['triangle-angle-sum']
+      hint: "Find the interior angle at $C$ first, then use the $180°$ total.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~20s):** An exterior angle equals the sum of the two remote interior angles, so $m\\angle A + m\\angle B = 142$.\n\n**The Full Solution:**\nStep 1: The interior angle at $C$ is the supplement of the exterior angle: $180 - 142 = 38$.\nStep 2: The three interior angles total $180$: $m\\angle A + m\\angle B + 38 = 180$.\nStep 3: So $m\\angle A + m\\angle B = 142$, the measure of the exterior angle itself.\n\nVerification: $142 + 38 = 180$, so the exterior and interior angles at $C$ are supplementary. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($38$): gives the interior angle at $C$, the supplement, rather than the sum of the other two angles.\n* Choice B ($71$): halves the exterior angle, assuming angles $A$ and $B$ are equal.\n* Choice D ($218$): subtracts the exterior angle from $360$ instead of using the exterior angle relationship.\n\n**Test Day Takeaway:** An exterior angle of a triangle equals the sum of the two interior angles it does not touch.",
+      skills: ["triangle-angle-sum"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "In a right triangle, if one acute angle is 35°, what is the other acute angle?",
+      question: "A container-yard gantry rests on the triangular support shown, whose three interior angle measures, in degrees, are $(x + 12)$, $(2x)$, and $(x - 8)$. Which of the following is the largest of the three measures?",
+      diagram: { type: "triangleWithAngles", params: { angleLabels: ["(x + 12)°", "(2x)°", "(x - 8)°"], figureNote: true } },
       choices: [
-        { id: "A", text: "35°" },
-        { id: "B", text: "45°" },
-        { id: "C", text: "55°" },
-        { id: "D", text: "145°" }
+        // distractor: reports the smallest angle, (x - 8)
+        { id: "A", text: "$36$" },
+        // distractor: reports the value of x rather than an angle measure
+        { id: "B", text: "$44$" },
+        // distractor: reports the angle (x + 12) instead of the largest
+        { id: "C", text: "$56$" },
+        { id: "D", text: "$88$" }
       ],
-      correctAnswer: "C",
-      hint: "A right triangle has one 90° angle. The two acute angles must together make up the remaining degrees.",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~5s):** The two acute angles of a right triangle add to $90^\\circ$, so the other is $90^\\circ - 35^\\circ = 55^\\circ$ — choice C.\n\n**The Full Solution:**\nStep 1: A right triangle has a $90^\\circ$ angle. The angle sum gives $90^\\circ + 35^\\circ + x = 180^\\circ$.\nStep 2: Solve: $125^\\circ + x = 180^\\circ$, so $x = 55^\\circ$. Check the shortcut: $35^\\circ + 55^\\circ = 90^\\circ$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($35^\\circ$): assumes the two acute angles are equal, which only holds for a $45$-$45$-$90$ triangle.\n* Choice B ($45^\\circ$): the acute angle of a $45$-$45$-$90$ triangle — a familiar value grabbed without calculating.\n* Choice D ($145^\\circ$): $180^\\circ - 35^\\circ$, forgetting the $90^\\circ$ angle; an angle that large can't share a triangle with a right angle.\n\n**Test Day Takeaway:** In a right triangle the two acute angles are complementary — they sum to $90^\\circ$, so subtract the known one from $90^\\circ$.",
-      skills: ['triangle-angle-sum']
+      correctAnswer: "D",
+      hint: "Which expression is largest is not settled until $x$ has a value.",
+      explanation: "**Choice D is correct.**\n\n**The Fast Way (~30s):** $(x + 12) + 2x + (x - 8) = 180$ gives $x = 44$, so the angles are $56$, $88$, and $36$ degrees.\n\n**The Full Solution:**\nStep 1: Set the sum of the three measures equal to $180$: $(x + 12) + 2x + (x - 8) = 180$, which simplifies to $4x + 4 = 180$.\nStep 2: Solving gives $4x = 176$, so $x = 44$.\nStep 3: The three angles are $44 + 12 = 56$, $2(44) = 88$, and $44 - 8 = 36$ degrees, so the largest is $88$. Check: $56 + 88 + 36 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($36$): reporting the smallest angle, $(x - 8)$, instead of the largest.\n* Choice B ($44$): reporting the value of $x$; $x$ is not itself an angle measure here.\n* Choice C ($56$): reporting $(x + 12)$, which is larger than $(x - 8)$ but smaller than $2x$.\n\n**Test Day Takeaway:** Solve for the variable, then evaluate every expression before deciding which one the question wants.",
+      skills: ["triangle-angle-sum"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "If all angles of a triangle are less than 90°, the triangle is:",
+      question: "The spreader brace of a picking ladder forms the isosceles triangle shown, in which the two base angles each measure $z$ degrees. What is the value of $z$?",
+      diagram: { type: "triangleWithAngles", params: { angleLabels: ["z°", "z°", "48°"], figureNote: true } },
       choices: [
-        { id: "A", text: "Acute" },
-        { id: "B", text: "Right" },
-        { id: "C", text: "Obtuse" },
-        { id: "D", text: "Equilateral" }
+        // distractor: computes 90 - 48, treating the base angles as complementary to the apex
+        { id: "A", text: "$42$" },
+        { id: "B", text: "$66$" },
+        // distractor: doubles the apex angle
+        { id: "C", text: "$96$" },
+        // distractor: stops at 180 - 48 without halving
+        { id: "D", text: "$132$" }
       ],
-      correctAnswer: "A",
-      hint: "Triangles are classified by their largest angle: acute (all < 90°), right (one = 90°), or obtuse (one > 90°).",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~5s):** All three angles below $90^\\circ$ is the definition of an acute triangle — choice A.\n\n**The Full Solution:**\nStep 1: Classify by angles: acute means all three angles $< 90^\\circ$; right means exactly one $= 90^\\circ$; obtuse means exactly one $> 90^\\circ$.\nStep 2: Every angle here is less than $90^\\circ$, matching the acute definition exactly. Example: $50^\\circ$, $60^\\circ$, $70^\\circ$.\n\n**Why the wrong answers are tempting:**\n* Choice B (Right): needs exactly one $90^\\circ$ angle, but all angles are below $90^\\circ$.\n* Choice C (Obtuse): needs one angle above $90^\\circ$, which is ruled out here.\n* Choice D (Equilateral): an equilateral triangle is acute, but \"equilateral\" classifies by sides, and not every acute triangle is equilateral.\n\n**Test Day Takeaway:** Angle classification depends on the largest angle: all under $90^\\circ \\Rightarrow$ acute, one equal to $90^\\circ \\Rightarrow$ right, one over $90^\\circ \\Rightarrow$ obtuse.",
-      skills: ['triangle-angle-sum']
+      correctAnswer: "B",
+      hint: "The apex angle is the only one of the three that is not $z$.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** The two base angles share what is left of $180$ after the $48$-degree apex: $\\frac{132}{2} = 66$.\n\n**The Full Solution:**\nStep 1: The three interior angles sum to $180$ degrees, so $z + z + 48 = 180$.\nStep 2: Combine and subtract: $2z = 132$.\nStep 3: Divide by $2$: $z = 66$. Check: $66 + 66 + 48 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($42$): computing $90 - 48$, which would apply only if the base angles were complementary to the apex.\n* Choice C ($96$): doubling the apex angle instead of sharing the remaining $132$ degrees.\n* Choice D ($132$): stopping at $180 - 48$ without splitting that total between the two equal angles.\n\n**Test Day Takeaway:** In an isosceles triangle, subtract the odd angle from $180$ and split what remains in half.",
+      skills: ["triangle-angle-sum"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "In triangle ABC, angle A = 2x, angle B = 3x, angle C = 4x. What is angle B?",
+      question: "A telescope pier is braced by the triangle shown, whose interior angle measures are given in degrees. No interior angle of the brace is supposed to reach $100$ degrees. By how many degrees does the largest angle overshoot that limit?",
+      diagram: { type: "triangleWithAngles", params: { angleLabels: ["(x + 9)°", "(4x)°", "(x + 3)°"], figureNote: true } },
       choices: [
-        { id: "A", text: "20°" },
-        { id: "B", text: "40°" },
-        { id: "C", text: "60°" },
-        { id: "D", text: "80°" }
+        { id: "A", text: "$12$" },
+        // distractor: reports the value of x rather than the overshoot
+        { id: "B", text: "$28$" },
+        // distractor: reports the angle (x + 9) instead of the largest angle
+        { id: "C", text: "$37$" },
+        // distractor: reports the largest angle without subtracting the 100-degree limit
+        { id: "D", text: "$112$" }
       ],
-      correctAnswer: "C",
-      hint: "First, set up an equation using the fact that 2x + 3x + 4x = 180°. Solve for x, then find angle B.",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** Sum the angles: $2x + 3x + 4x = 9x = 180^\\circ$, so $x = 20^\\circ$. Then angle $B = 3x = 60^\\circ$ — choice C.\n\n**The Full Solution:**\nStep 1: The angles sum to $180^\\circ$: $2x + 3x + 4x = 180^\\circ$, so $9x = 180^\\circ$.\nStep 2: Solve: $x = \\frac{180^\\circ}{9} = 20^\\circ$.\nStep 3: Angle $B = 3x = 3 \\times 20^\\circ = 60^\\circ$. Check: $40^\\circ + 60^\\circ + 80^\\circ = 180^\\circ$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($20^\\circ$): the value of $x$, not angle $B$ — forgot to multiply by the coefficient $3$.\n* Choice B ($40^\\circ$): $2x$, which is angle $A$, not $B$.\n* Choice D ($80^\\circ$): $4x$, which is angle $C$, not $B$.\n\n**Test Day Takeaway:** When angles are multiples of a variable, sum the coefficients, set equal to $180^\\circ$, solve for the variable, then substitute back into the exact angle requested.",
-      skills: ['triangle-angle-sum']
+      correctAnswer: "A",
+      hint: "The question asks for a difference, not for an angle.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~45s):** $6x + 12 = 180$ gives $x = 28$, so the largest angle is $4(28) = 112$ degrees, which is $12$ past the limit.\n\n**The Full Solution:**\nStep 1: Add the three measures: $(x + 9) + 4x + (x + 3) = 180$, which simplifies to $6x + 12 = 180$.\nStep 2: Solving gives $6x = 168$, so $x = 28$, and the angles are $37$, $112$, and $31$ degrees.\nStep 3: The largest is $112$ degrees, which exceeds $100$ by $112 - 100 = 12$ degrees. Check: $37 + 112 + 31 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($28$): reporting the value of $x$; the question asks how far the largest angle passes the limit.\n* Choice C ($37$): reporting $(x + 9)$, which is not the largest of the three measures.\n* Choice D ($112$): reporting the largest angle itself without subtracting the $100$-degree limit.\n\n**Test Day Takeaway:** Evaluate every expression before choosing one, then answer the exact question — here, a difference, not an angle.",
+      skills: ["triangle-angle-sum"]
     }
   ],
 
@@ -165,77 +199,95 @@ export const trianglesQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "What is the area of a triangle with base 10 and height 6?",
+      question: "A snowplow blade carries the triangular reflective panel shown, with its three side lengths marked in centimeters. Reflective film covers both faces of the panel. How many square centimeters of film does the panel take?",
+      diagram: { type: "rightTriangle", params: { vertices: [[0, 0], [15, 0], [15, 8]], sideLabels: ["15", "8", "17"], rightAngleVertex: 1 } },
       choices: [
-        { id: "A", text: "16" },
-        { id: "B", text: "30" },
-        { id: "C", text: "60" },
-        { id: "D", text: "120" }
+        // distractor: covers one face only
+        { id: "A", text: "$60$" },
+        { id: "B", text: "$120$" },
+        // distractor: uses the 17-centimeter hypotenuse as a height, giving 2 times 68
+        { id: "C", text: "$136$" },
+        // distractor: skips the one-half in the area formula, giving 2 times 120
+        { id: "D", text: "$240$" }
       ],
       correctAnswer: "B",
-      hint: "The area formula for a triangle is half of base times height: A = (1/2) × b × h.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~5s):** $A = \\frac{1}{2}bh = \\frac{1}{2}(10)(6) = 30$ — choice B.\n\n**The Full Solution:**\nStep 1: The triangle area formula is $A = \\frac{1}{2} \\times b \\times h$.\nStep 2: Substitute: $A = \\frac{1}{2} \\times 10 \\times 6 = \\frac{60}{2} = 30$. A triangle is exactly half the bounding rectangle ($10 \\times 6 = 60$, then halve).\n\n**Why the wrong answers are tempting:**\n* Choice A ($16$): $10 + 6$ — adds base and height instead of multiplying.\n* Choice C ($60$): $10 \\times 6$ — the rectangle's area, forgetting the $\\frac{1}{2}$.\n* Choice D ($120$): $2 \\times 10 \\times 6$ — doubles instead of halving the product.\n\n**Test Day Takeaway:** Triangle area is $A = \\frac{1}{2}bh$ — half of base times height, not the full product.",
-      skills: ['triangle-area']
+      hint: "Count how many surfaces the film has to cover.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~20s):** One face is $\\frac{1}{2}(15)(8) = 60$ square centimeters, and both faces take $120$.\n\n**The Full Solution:**\nStep 1: The panel is a right triangle, so its two legs, $15$ and $8$ centimeters, are its base and height.\nStep 2: One face has area $\\frac{1}{2}(15)(8) = 60$ square centimeters.\nStep 3: Film covers both faces, so the total is $2(60) = 120$ square centimeters. Check: $15$, $8$, $17$ satisfies $15^2 + 8^2 = 225 + 64 = 289 = 17^2$, confirming the right angle ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($60$): covering one face only, when the film covers both.\n* Choice C ($136$): using the $17$-centimeter hypotenuse as a height, giving $2 \\cdot \\frac{1}{2}(8)(17)$.\n* Choice D ($240$): skipping the $\\frac{1}{2}$ in the area formula, giving $2(15)(8)$.\n\n**Test Day Takeaway:** In a right triangle the two legs are the base and height; the hypotenuse never is.",
+      skills: ["triangle-area"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "A triangle has area 24 and base 8. What is its height?",
+      question: "In triangle $MNP$, the altitude drawn to side $\\overline{MN}$ has length $16$ centimeters. If the area of triangle $MNP$ is $176$ square centimeters, what is the length, in centimeters, of $\\overline{MN}$?",
       choices: [
-        { id: "A", text: "3" },
-        { id: "B", text: "6" },
-        { id: "C", text: "12" },
-        { id: "D", text: "16" }
+        // distractor: divides the area by the altitude without doubling it first, effectively solving $bh = 176$
+        { id: "A", text: "$11$" },
+        { id: "B", text: "$22$" },
+        // distractor: halves the area and stops, never bringing the altitude into the calculation
+        { id: "C", text: "$88$" },
+        // distractor: reports $2A = 352$, stopping just before the division by the altitude
+        { id: "D", text: "$352$" }
       ],
       correctAnswer: "B",
-      hint: "Rearrange the area formula A = (1/2) × b × h to solve for h when you know A and b.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** Use $h = \\frac{2A}{b} = \\frac{2(24)}{8} = \\frac{48}{8} = 6$ — choice B.\n\n**The Full Solution:**\nStep 1: Start from $A = \\frac{1}{2}bh$ and plug in: $24 = \\frac{1}{2} \\times 8 \\times h$.\nStep 2: Simplify the right side: $24 = 4h$.\nStep 3: Solve: $h = \\frac{24}{4} = 6$. Check: $\\frac{1}{2} \\times 8 \\times 6 = 24$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): $\\frac{24}{8}$ — divides area by base but drops the factor of $2$ from rearranging $A = \\frac{1}{2}bh$.\n* Choice C ($12$): an algebra slip, such as doubling $24$ then dividing by $4$ instead of $8$.\n* Choice D ($16$): $2 \\times 8$, unrelated to the given area.\n\n**Test Day Takeaway:** To get height from area, use $h = \\frac{2A}{b}$ — double the area before dividing by the base.",
-      skills: ['triangle-area']
+      hint: "Put what you know into the area formula and solve for the one missing factor.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~20s):** $MN = \\frac{2A}{h} = \\frac{352}{16} = 22$.\n\n**The Full Solution:**\nStep 1: The altitude to $\\overline{MN}$ is the height that pairs with base $MN$, so $A = \\frac{1}{2}(MN)(16)$.\nStep 2: Substitute the area: $176 = 8(MN)$.\nStep 3: Divide by $8$: $MN = 22$ centimeters.\n\nVerification: $\\frac{1}{2}(22)(16) = 176$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): divides the area by the altitude without doubling it first, effectively solving $bh = 176$.\n* Choice C ($88$): halves the area and stops, never bringing the altitude into the calculation.\n* Choice D ($352$): reports $2A = 352$, stopping just before the division by the altitude.\n\n**Test Day Takeaway:** A base and the altitude drawn to it are the only pair the area formula accepts — clear the $\\frac{1}{2}$ into $2A = bh$ and the rest is one division.",
+      skills: ["triangle-area"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "If the base and height of a triangle are both doubled, the area is multiplied by:",
+      question: "The base of a triangle is multiplied by $3$ and its height is multiplied by $\\frac{1}{2}$. The area of the resulting triangle is $k$ times the area of the original triangle. What is the value of $k$?",
       choices: [
-        { id: "A", text: "2" },
-        { id: "B", text: "4" },
-        { id: "C", text: "8" },
-        { id: "D", text: "16" }
+        // distractor: inverts both factors, using $\frac{1}{3}$ and $2$
+        { id: "A", text: "$\\frac{2}{3}$" },
+        { id: "B", text: "$\\frac{3}{2}$" },
+        // distractor: applies only the change to the base and ignores the height
+        { id: "C", text: "$3$" },
+        // distractor: adds the two factors, $3 + \frac{1}{2}$, instead of multiplying them
+        { id: "D", text: "$\\frac{7}{2}$" }
       ],
       correctAnswer: "B",
-      hint: "Substitute 2b and 2h into the area formula and compare to the original area (1/2)bh.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** Area depends on the product of base and height, so doubling both multiplies the area by $2 \\times 2 = 4$.\n\n**The Full Solution:**\nStep 1: Original area is $A = \\frac{1}{2}bh$.\nStep 2: Double both dimensions: $A_{\\text{new}} = \\frac{1}{2}(2b)(2h) = \\frac{1}{2}(4bh) = 4 \\cdot \\frac{1}{2}bh = 4A$.\nStep 3: Quick check with $b=3$, $h=4$: original $= \\frac{1}{2}(3)(4) = 6$, new $= \\frac{1}{2}(6)(8) = 24$, and $\\frac{24}{6} = 4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): scaled only one dimension, not both — each factor of $2$ multiplies the area, so two of them compound.\n* Choice C ($8$): used $2^3$, the volume scale factor, not the area scale factor.\n* Choice D ($16$): used $2^4$, squaring the scale factor an extra time.\n\n**Test Day Takeaway:** When every linear dimension scales by $k$, area scales by $k^2$ and volume by $k^3$. Here $k=2$, so area scales by $2^2 = 4$.",
-      skills: ['triangle-area']
+      hint: "Write the new base and new height into the area formula and compare with the original.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~30s):** Area scales by the product of the two factors: $3 \\cdot \\frac{1}{2} = \\frac{3}{2}$.\n\n**The Full Solution:**\nStep 1: The original area is $A = \\frac{1}{2}bh$.\nStep 2: The new base is $3b$ and the new height is $\\frac{1}{2}h$, so $A^{\\prime} = \\frac{1}{2}(3b)\\left(\\frac{1}{2}h\\right) = \\frac{3}{2}\\left(\\frac{1}{2}bh\\right)$.\nStep 3: Therefore $A^{\\prime} = \\frac{3}{2}A$, so $k = \\frac{3}{2}$.\n\nVerification: A triangle with $b = 4$ and $h = 6$ has area $12$; the new one has $b = 12$ and $h = 3$, area $18$, and $\\frac{18}{12} = \\frac{3}{2}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{2}{3}$): inverts both factors, using $\\frac{1}{3}$ and $2$.\n* Choice C ($3$): applies only the change to the base and ignores the height.\n* Choice D ($\\frac{7}{2}$): adds the two factors, $3 + \\frac{1}{2}$, instead of multiplying them.\n\n**Test Day Takeaway:** Scaling a base and a height multiplies the area by the product of the two scale factors, never by their sum.",
+      skills: ["triangle-area"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "A right triangle has legs of length 5 and 12. What is its area?",
+      question: "A right triangle has a hypotenuse of length $17$ centimeters and one leg of length $8$ centimeters. What is the area, in square centimeters, of the triangle?",
+      diagram: { type: "rightTriangle", params: { sideLabels: ["8", "", "17"], rightAngleVertex: 1, figureNote: true } },
       choices: [
-        { id: "A", text: "30" },
-        { id: "B", text: "60" },
-        { id: "C", text: "65" },
-        { id: "D", text: "85" }
+        { id: "A", text: "$60$" },
+        // distractor: uses the hypotenuse as the second leg, computing $\frac{1}{2}(8)(17)$
+        { id: "B", text: "$68$" },
+        // distractor: finds the missing leg correctly but omits the factor $\frac{1}{2}$
+        { id: "C", text: "$120$" },
+        // distractor: multiplies the leg by the hypotenuse and also omits the $\frac{1}{2}$
+        { id: "D", text: "$136$" }
       ],
       correctAnswer: "A",
-      hint: "In a right triangle, the two legs are perpendicular, so one can serve as the base and the other as the height.",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~10s):** In a right triangle the two legs are perpendicular, so they are the base and height directly: $A = \\frac{1}{2}(5)(12) = 30$.\n\n**The Full Solution:**\nStep 1: The legs meet at the right angle, so one leg is the base and the other is the height — no extra height calculation needed.\nStep 2: $A = \\frac{1}{2} \\cdot 5 \\cdot 12 = \\frac{60}{2} = 30$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($60$): computed $5 \\times 12$ but forgot the $\\frac{1}{2}$ — the single most common area slip.\n* Choice C ($65$): tried to involve the hypotenuse $13$; the legs, not the hypotenuse, are the base and height.\n* Choice D ($85$): combined the numbers with no valid area formula.\n\n**Test Day Takeaway:** For a right triangle, $A = \\frac{1}{2}(\\text{leg}_1)(\\text{leg}_2)$. The legs are already perpendicular, so use them and never drop the $\\frac{1}{2}$.",
-      skills: ['triangle-area']
+      hint: "The two perpendicular sides are the base and the height, and only one of them is given.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~35s):** The missing leg is $\\sqrt{17^2 - 8^2} = 15$, so the area is $\\frac{1}{2}(8)(15) = 60$.\n\n**The Full Solution:**\nStep 1: The legs of a right triangle are perpendicular, so they serve as base and height; find the second leg first.\nStep 2: By the Pythagorean theorem, $8^2 + b^2 = 17^2$, so $b^2 = 289 - 64 = 225$ and $b = 15$.\nStep 3: Area $= \\frac{1}{2}(8)(15) = 60$ square centimeters.\n\nVerification: $8^2 + 15^2 = 64 + 225 = 289 = 17^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($68$): uses the hypotenuse as the second leg, computing $\\frac{1}{2}(8)(17)$.\n* Choice C ($120$): finds the missing leg correctly but omits the factor $\\frac{1}{2}$.\n* Choice D ($136$): multiplies the leg by the hypotenuse and also omits the $\\frac{1}{2}$.\n\n**Test Day Takeaway:** The legs of a right triangle are its base and height — the hypotenuse is never a height.",
+      skills: ["triangle-area"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "An equilateral triangle has side length 4. What is its height?",
+      question: "A triangular hail-netting panel over a cherry block is shown, with two of its side lengths given in meters. What is the area, in square meters, of the panel?",
+      diagram: { type: "rightTriangle", params: { vertices: [[0, 0], [10.392, 0], [10.392, 6]], sideLabels: ["", "6", "12"], rightAngleVertex: 1 } },
       choices: [
-        { id: "A", text: "2" },
-        { id: "B", text: "2√3" },
-        { id: "C", text: "4" },
-        { id: "D", text: "4√3" }
+        // distractor: uses the 6-meter side as both legs
+        { id: "A", text: "$18$" },
+        { id: "B", text: "$18\\sqrt{3}$" },
+        // distractor: uses the 12-meter hypotenuse as the height
+        { id: "C", text: "$36$" },
+        // distractor: finds the missing leg correctly but skips the one-half
+        { id: "D", text: "$36\\sqrt{3}$" }
       ],
       correctAnswer: "B",
-      hint: "Draw the height from one vertex to the opposite side. This creates two 30-60-90 triangles.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** The altitude of an equilateral triangle is $h = \\frac{s\\sqrt{3}}{2} = \\frac{4\\sqrt{3}}{2} = 2\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: Drop an altitude to the base. It bisects the base, creating a $30$-$60$-$90$ right triangle with hypotenuse $4$ (the side) and short leg $2$ (half the base).\nStep 2: Apply the Pythagorean theorem: $h^2 + 2^2 = 4^2 \\Rightarrow h^2 + 4 = 16 \\Rightarrow h^2 = 12 \\Rightarrow h = \\sqrt{12} = 2\\sqrt{3}$.\nStep 3: This matches the $30$-$60$-$90$ ratio $1 : \\sqrt{3} : 2$, where the height (long leg) is $2\\sqrt{3} \\approx 3.46$ — sensibly less than the side of $4$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): stopped at half the base, which is the short leg, not the height.\n* Choice C ($4$): reported the side length; the height is always shorter than the side.\n* Choice D ($4\\sqrt{3}$): used the full side $4$ instead of half the base in the ratio — that is the height for a side of $8$.\n\n**Test Day Takeaway:** An equilateral triangle's height is $h = \\frac{s\\sqrt{3}}{2}$, which comes straight from the $30$-$60$-$90$ triangle the altitude creates.",
-      skills: ['triangle-area', 'special-right-triangles']
+      hint: "An area needs two legs, and the figure marks only one of them.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~35s):** A leg half the hypotenuse marks a $30$-$60$-$90$ triangle, so the other leg is $6\\sqrt{3}$ and the area is $18\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: The given leg, $6$ meters, is exactly half the $12$-meter hypotenuse, so the triangle is a $30$-$60$-$90$ triangle.\nStep 2: In such a triangle the longer leg is $\\sqrt{3}$ times the shorter leg, so it measures $6\\sqrt{3}$ meters.\nStep 3: The area is $\\frac{1}{2}(6)(6\\sqrt{3}) = 18\\sqrt{3}$ square meters. Check: $6^2 + (6\\sqrt{3})^2 = 36 + 108 = 144 = 12^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($18$): using the $6$-meter side as both legs, computing $\\frac{1}{2}(6)(6)$.\n* Choice C ($36$): using the $12$-meter hypotenuse as the height, computing $\\frac{1}{2}(6)(12)$.\n* Choice D ($36\\sqrt{3}$): finding the missing leg correctly but leaving out the $\\frac{1}{2}$.\n\n**Test Day Takeaway:** A leg that is half the hypotenuse identifies a $30$-$60$-$90$ triangle and hands you the third side.",
+      skills: ["triangle-area", "special-right-triangles"]
     }
   ],
 
@@ -244,77 +296,93 @@ export const trianglesQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "Triangles ABC and DEF are similar. If AB = 6, DE = 9, and BC = 8, what is EF?",
+      question: "Triangle $PQR$ is similar to triangle $STU$, where $P$, $Q$, and $R$ correspond to $S$, $T$, and $U$, respectively. If $PQ = 10$, $QR = 14$, and $ST = 25$, what is the length of $\\overline{TU}$?",
+      diagram: { type: "similarTriangles", params: { triangle1: { labels: ["P", "Q", "R"], sideLabels: ["10", "14", ""] }, triangle2: { labels: ["S", "T", "U"], sideLabels: ["25", "", ""] }, figureNote: true } },
       choices: [
-        { id: "A", text: "10" },
-        { id: "B", text: "12" },
-        { id: "C", text: "14" },
-        { id: "D", text: "16" }
+        // distractor: divides by the scale factor instead of multiplying by it
+        { id: "A", text: "$5.6$" },
+        // distractor: adds the difference $25 - 10$ to $14$ rather than scaling
+        { id: "B", text: "$29$" },
+        { id: "C", text: "$35$" },
+        // distractor: multiplies $14$ by $25$ without dividing by $10$
+        { id: "D", text: "$350$" }
       ],
-      correctAnswer: "B",
-      hint: "Find the scale factor by comparing corresponding sides (DE/AB), then multiply BC by this factor.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** The scale factor is $\\frac{DE}{AB} = \\frac{9}{6} = \\frac{3}{2}$, so $EF = 8 \\cdot \\frac{3}{2} = 12$.\n\n**The Full Solution:**\nStep 1: Corresponding sides of similar triangles are proportional. $AB$ matches $DE$, and $BC$ matches $EF$.\nStep 2: Set up the proportion $\\frac{DE}{AB} = \\frac{EF}{BC} \\Rightarrow \\frac{9}{6} = \\frac{EF}{8}$.\nStep 3: Solve: $EF = 8 \\cdot \\frac{9}{6} = 8 \\cdot \\frac{3}{2} = 12$. Check the ratios: $\\frac{9}{6} = 1.5$ and $\\frac{12}{8} = 1.5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($10$): a rough estimate that does not satisfy $\\frac{9}{6} = \\frac{EF}{8}$.\n* Choice C ($14$): added the side difference $9 - 6 = 3$ to a wrong base; similarity scales by multiplication, not addition.\n* Choice D ($16$): used a scale factor of $2$ instead of $\\frac{3}{2}$.\n\n**Test Day Takeaway:** Similar triangles scale by a multiplicative factor: find $k$ from a known pair of corresponding sides, then multiply.",
-      skills: ['similar-triangles']
+      correctAnswer: "C",
+      hint: "Compare the two corresponding sides you know to get a single ratio.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~25s):** The scale factor is $\\frac{25}{10} = 2.5$, so $TU = 2.5(14) = 35$.\n\n**The Full Solution:**\nStep 1: Corresponding sides of similar triangles are proportional: $\\frac{ST}{PQ} = \\frac{TU}{QR}$.\nStep 2: Substitute the given lengths: $\\frac{25}{10} = \\frac{TU}{14}$.\nStep 3: Cross multiply: $10 \\cdot TU = 350$, so $TU = 35$.\n\nVerification: $\\frac{25}{10} = 2.5$ and $\\frac{35}{14} = 2.5$, the same factor. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5.6$): divides by the scale factor instead of multiplying by it.\n* Choice B ($29$): adds the difference $25 - 10$ to $14$ rather than scaling.\n* Choice D ($350$): multiplies $14$ by $25$ without dividing by $10$.\n\n**Test Day Takeaway:** Build the proportion with both numerators from the same triangle; one factor governs every pair of corresponding sides.",
+      skills: ["similar-triangles"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "Two similar triangles have a scale factor of 2:5. If the smaller triangle has perimeter 24, what is the perimeter of the larger triangle?",
+      question: "A drying barn has a triangular gable vent with a $20$-centimeter base and two $15$-centimeter sides meeting at the apex. A louver parallel to the base crosses each slanted side at a point $6$ centimeters from the apex. How wide, in centimeters, is the louver?",
       choices: [
-        { id: "A", text: "48" },
-        { id: "B", text: "60" },
-        { id: "C", text: "96" },
-        { id: "D", text: "150" }
+        { id: "A", text: "$8$" },
+        // distractor: subtracts 9 from the base width instead of scaling
+        { id: "B", text: "$11$" },
+        // distractor: uses the lower 9 centimeters of each side, giving 20 times 9/15
+        { id: "C", text: "$12$" },
+        // distractor: inverts the ratio, giving 20 times 15/6
+        { id: "D", text: "$50$" }
       ],
-      correctAnswer: "B",
-      hint: "The ratio of perimeters equals the ratio of corresponding sides. Multiply the smaller perimeter by 5/2.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** Perimeter scales by the side ratio, so the larger perimeter is $24 \\cdot \\frac{5}{2} = 60$.\n\n**The Full Solution:**\nStep 1: Perimeter is a sum of lengths, so it scales linearly with the side ratio $\\frac{5}{2}$.\nStep 2: $P_{\\text{larger}} = 24 \\cdot \\frac{5}{2} = \\frac{120}{2} = 60$. Check: $\\frac{60}{24} = \\frac{5}{2}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($48$): multiplied by $2$ instead of $\\frac{5}{2}$, using only part of the ratio.\n* Choice C ($96$): multiplied by $4$, treating the ratio like an area-style factor.\n* Choice D ($150$): applied the area ratio $\\frac{25}{4}$ to the perimeter; perimeter scales by $k$, area by $k^2$.\n\n**Test Day Takeaway:** Perimeters of similar figures scale by the side ratio $k$; only area scales by $k^2$. Don't square the ratio for a length.",
-      skills: ['similar-triangles']
+      correctAnswer: "A",
+      hint: "A parallel cut scales lengths; it does not shorten them by a fixed number of centimeters.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~25s):** The triangle above the louver is similar to the whole vent at a ratio of $\\frac{6}{15}$, so the louver is $\\frac{2}{5}(20) = 8$ centimeters.\n\n**The Full Solution:**\nStep 1: Because the louver is parallel to the base, the triangle above it is similar to the whole gable triangle.\nStep 2: The $6$ centimeters above the louver and the full $15$-centimeter side are corresponding sides, so the scale factor is $\\frac{6}{15} = \\frac{2}{5}$.\nStep 3: The louver is therefore $\\frac{2}{5}(20) = 8$ centimeters wide. Check: $\\frac{8}{20} = \\frac{2}{5} = \\frac{6}{15}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($11$): subtracting $9$ from the base width, which treats the change as a fixed amount rather than a ratio.\n* Choice C ($12$): using the lower $9$ centimeters of each slanted side, computing $20 \\cdot \\frac{9}{15}$; the similar triangle is the one containing the apex.\n* Choice D ($50$): inverting the ratio, computing $20 \\cdot \\frac{15}{6}$, which makes the louver wider than the base.\n\n**Test Day Takeaway:** A line parallel to one side cuts off a similar triangle; scale by the ratio of corresponding sides, never by a difference.",
+      skills: ["similar-triangles"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "Similar triangles have areas in the ratio 4:9. What is the ratio of their corresponding sides?",
+      question: "A spectrograph's two triangular light baffles are similar, with edge $AB$ of the smaller baffle corresponding to edge $DE$ of the larger one. If $AB = 14$ centimeters, $DE = 21$ centimeters, and $EF = 18$ centimeters, what is the length, in centimeters, of $BC$?",
       choices: [
-        { id: "A", text: "2:3" },
-        { id: "B", text: "4:9" },
-        { id: "C", text: "16:81" },
-        { id: "D", text: "8:27" }
+        // distractor: subtracts the 7-centimeter difference between the corresponding edges
+        { id: "A", text: "$11$" },
+        { id: "B", text: "$12$" },
+        // distractor: copies the given edge DE
+        { id: "C", text: "$21$" },
+        // distractor: multiplies by 3/2 instead of dividing, scaling the wrong direction
+        { id: "D", text: "$27$" }
       ],
-      correctAnswer: "A",
-      hint: "Area ratio equals the square of the side ratio. Take the square root of the area ratio to find the side ratio.",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~10s):** The side ratio is the square root of the area ratio: $\\sqrt{\\frac{4}{9}} = \\frac{2}{3}$, so $2:3$.\n\n**The Full Solution:**\nStep 1: For similar figures, $\\frac{A_1}{A_2} = \\left(\\frac{s_1}{s_2}\\right)^2$.\nStep 2: Take the square root: $\\frac{s_1}{s_2} = \\sqrt{\\frac{4}{9}} = \\frac{2}{3}$. Check: $\\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($4:9$): reported the area ratio unchanged — forgot to take the square root.\n* Choice C ($16:81$): squared the area ratio, going the wrong direction.\n* Choice D ($8:27$): cubed the side numbers, which gives the volume ratio.\n\n**Test Day Takeaway:** Side ratio $= k$, area ratio $= k^2$, volume ratio $= k^3$. To recover the side ratio from areas, take the square root.",
-      skills: ['similar-triangles']
+      correctAnswer: "B",
+      hint: "$BC$ belongs to the smaller baffle, so it has to come out smaller than $EF$.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~30s):** The smaller baffle is $\\frac{14}{21} = \\frac{2}{3}$ of the larger, so $BC = \\frac{2}{3}(18) = 12$ centimeters.\n\n**The Full Solution:**\nStep 1: Corresponding edges give the scale factor from larger to smaller: $\\frac{AB}{DE} = \\frac{14}{21} = \\frac{2}{3}$.\nStep 2: Since $BC$ corresponds to $EF$, $\\frac{BC}{EF} = \\frac{2}{3}$.\nStep 3: So $BC = \\frac{2}{3}(18) = 12$ centimeters. Check: $\\frac{12}{18} = \\frac{2}{3} = \\frac{14}{21}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): subtracting the $7$-centimeter difference between the corresponding edges; similar figures scale by a ratio, not a difference.\n* Choice C ($21$): copying the given edge $DE$ instead of computing the matching edge of the smaller baffle.\n* Choice D ($27$): multiplying by $\\frac{3}{2}$ instead of $\\frac{2}{3}$, which enlarges rather than reduces.\n\n**Test Day Takeaway:** Write the scale factor in the direction the question needs before you multiply.",
+      skills: ["similar-triangles"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "Two similar triangles have corresponding sides of 3 and 5. If the smaller has area 18, what is the area of the larger?",
+      question: "Triangle $ABC$ is similar to triangle $DEF$, and each side length of triangle $DEF$ is $\\frac{2}{3}$ times the corresponding side length of triangle $ABC$. If the area of triangle $ABC$ is $90$ square units, what is the area, in square units, of triangle $DEF$?",
       choices: [
-        { id: "A", text: "30" },
-        { id: "B", text: "50" },
-        { id: "C", text: "54" },
-        { id: "D", text: "90" }
+        { id: "A", text: "$40$" },
+        // distractor: multiplies by $\frac{2}{3}$ once instead of squaring the scale factor
+        { id: "B", text: "$60$" },
+        // distractor: inverts the ratio and uses $\frac{3}{2}$ once
+        { id: "C", text: "$135$" },
+        // distractor: inverts the ratio and squares it, using $\frac{9}{4}$
+        { id: "D", text: "$202.5$" }
       ],
-      correctAnswer: "B",
-      hint: "The area ratio is the square of the side ratio. Find (5/3)² and multiply by the smaller area.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** The area ratio is the side ratio squared: $\\left(\\frac{5}{3}\\right)^2 = \\frac{25}{9}$, so $A = 18 \\cdot \\frac{25}{9} = 50$.\n\n**The Full Solution:**\nStep 1: The side ratio is $k = \\frac{5}{3}$.\nStep 2: Areas scale by $k^2$: $k^2 = \\frac{25}{9}$.\nStep 3: $A_{\\text{larger}} = 18 \\cdot \\frac{25}{9} = \\frac{450}{9} = 50$. Check: $\\frac{50}{18} = \\frac{25}{9}$ and $\\sqrt{\\frac{25}{9}} = \\frac{5}{3}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($30$): multiplied by the side ratio $\\frac{5}{3}$ instead of the area ratio $\\frac{25}{9}$.\n* Choice C ($54$): multiplied by $3$, using the wrong factor.\n* Choice D ($90$): multiplied by $5$, ignoring both the squaring and the denominator.\n\n**Test Day Takeaway:** Area of a similar figure $= A_{\\text{small}} \\cdot k^2$, where $k$ is the ratio of corresponding sides. Square the ratio before scaling area.",
-      skills: ['similar-triangles']
+      correctAnswer: "A",
+      hint: "The factor that applies to area is not the same as the one that applies to length.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~30s):** Area scales by $\\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}$, so the area is $90 \\cdot \\frac{4}{9} = 40$.\n\n**The Full Solution:**\nStep 1: Corresponding lengths scale by $\\frac{2}{3}$, so areas scale by $\\left(\\frac{2}{3}\\right)^2$.\nStep 2: $\\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}$.\nStep 3: The area of triangle $DEF$ is $90 \\cdot \\frac{4}{9} = 40$ square units.\n\nVerification: $\\frac{40}{90} = \\frac{4}{9} = \\left(\\frac{2}{3}\\right)^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($60$): multiplies by $\\frac{2}{3}$ once instead of squaring the scale factor.\n* Choice C ($135$): inverts the ratio and uses $\\frac{3}{2}$ once.\n* Choice D ($202.5$): inverts the ratio and squares it, using $\\frac{9}{4}$.\n\n**Test Day Takeaway:** Shrink every length by a factor and the area shrinks by that factor squared.",
+      skills: ["similar-triangles"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "Which condition is NOT sufficient to prove two triangles are similar?",
+      question: "In triangle $ABC$, point $D$ lies on $\\overline{AB}$ and point $E$ lies on $\\overline{AC}$ so that $\\overline{DE}$ is parallel to $\\overline{BC}$. If $AD = 6$, $DB = 4$, and $BC = 20$, what is the length of $\\overline{DE}$?",
       choices: [
-        { id: "A", text: "AA (two angles equal)" },
-        { id: "B", text: "SSS (all sides proportional)" },
-        { id: "C", text: "SAS (two sides proportional and included angle equal)" },
-        { id: "D", text: "SSA (two sides proportional and non-included angle equal)" }
+        // distractor: uses $\frac{DB}{AB} = \frac{4}{10}$ instead of $\frac{AD}{AB}$
+        { id: "A", text: "$8$" },
+        { id: "B", text: "$12$" },
+        // distractor: subtracts $AD$ from $BC$ rather than scaling
+        { id: "C", text: "$14$" },
+        // distractor: uses $\frac{AD}{DB} = \frac{6}{4}$, comparing the two pieces of $\overline{AB}$ instead of a piece to the whole
+        { id: "D", text: "$30$" }
       ],
-      correctAnswer: "D",
-      hint: "Think about which combinations uniquely determine a triangle's shape. One of these can produce two different triangles.",
-      explanation: "**Choice D is correct.**\n\n**The Fast Way (~15s):** SSA is the ambiguous case — two sides and a non-included angle can produce two different triangles, so it cannot fix a shape and is not a valid similarity criterion.\n\n**The Full Solution:**\nStep 1: The valid similarity criteria each lock the shape. AA: two equal angles force the third (angles sum to $180^\\circ$). SSS: all three side pairs proportional forces the shape. SAS: two proportional sides with the included angle equal fixes the shape.\nStep 2: SSA does not. With two sides and a non-included angle fixed, the angle opposite the second side can be acute or obtuse, yielding two distinct triangles (or zero or one). Since the shape isn't uniquely determined, SSA proves nothing about similarity.\n\n**Why the wrong answers are tempting:**\n* Choice A (AA): valid and the most-used criterion — two equal angles guarantee the third.\n* Choice B (SSS): valid — all three sides proportional forces the same shape.\n* Choice C (SAS): valid — the included angle between two proportional sides locks the shape.\n\n**Test Day Takeaway:** The valid similarity criteria are AA, SSS, and SAS. SSA is the ambiguous case and proves neither similarity nor congruence.",
-      skills: ['similar-triangles']
+      correctAnswer: "B",
+      hint: "The whole side $\\overline{AB}$, not the piece $\\overline{DB}$, is what $\\overline{AD}$ should be compared with.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~50s):** $AB = 6 + 4 = 10$, so $DE = 20 \\cdot \\frac{6}{10} = 12$.\n\n**The Full Solution:**\nStep 1: Because $\\overline{DE}$ is parallel to $\\overline{BC}$, triangles $ADE$ and $ABC$ have congruent corresponding angles and are similar.\nStep 2: The scale factor compares a side of $ADE$ to the whole corresponding side: $\\frac{AD}{AB} = \\frac{6}{6 + 4} = \\frac{3}{5}$.\nStep 3: So $DE = \\frac{3}{5}(20) = 12$.\n\nVerification: $\\frac{12}{20} = \\frac{3}{5} = \\frac{6}{10}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): uses $\\frac{DB}{AB} = \\frac{4}{10}$ instead of $\\frac{AD}{AB}$.\n* Choice C ($14$): subtracts $AD$ from $BC$ rather than scaling.\n* Choice D ($30$): uses $\\frac{AD}{DB} = \\frac{6}{4}$, comparing the two pieces of $\\overline{AB}$ instead of a piece to the whole.\n\n**Test Day Takeaway:** When a parallel segment cuts a triangle, compare a piece to the whole side, never a piece to the other piece.",
+      skills: ["similar-triangles"]
     }
   ],
 
@@ -323,77 +391,96 @@ export const trianglesQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "A right triangle has legs 6 and 8. What is the hypotenuse?",
+      question: "The diagonal brace of a barge loading ramp forms the right triangle shown, with two side lengths given in feet. What is the length, in feet, of the brace?",
+      diagram: { type: "rightTriangle", params: { vertices: [[0, 0], [21, 0], [21, 20]], sideLabels: ["21", "20", ""], rightAngleVertex: 1 } },
       choices: [
-        { id: "A", text: "7" },
-        { id: "B", text: "10" },
-        { id: "C", text: "14" },
-        { id: "D", text: "100" }
+        // distractor: subtracts the squares, 441 - 400 = 41
+        { id: "A", text: "$\\sqrt{41}$" },
+        { id: "B", text: "$29$" },
+        // distractor: adds the two legs instead of their squares
+        { id: "C", text: "$41$" },
+        // distractor: stops at 29 squared without taking the square root
+        { id: "D", text: "$841$" }
       ],
       correctAnswer: "B",
-      hint: "Use the Pythagorean Theorem: a² + b² = c², where c is the hypotenuse.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** $6$-$8$-$10$ is the $3$-$4$-$5$ triple doubled, so the hypotenuse is $10$.\n\n```seva-figure\n{\"type\":\"rightTriangle\",\"params\":{\"vertices\":[[0,0],[6,0],[6,8]],\"sideLabels\":[\"6\",\"8\",\"10\"],\"rightAngleVertex\":1},\"caption\":\"Legs 6 and 8 — hypotenuse 10.\"}\n```\n\n**The Full Solution:**\nStep 1: Apply the Pythagorean theorem: $c^2 = 6^2 + 8^2 = 36 + 64 = 100$.\nStep 2: Take the square root: $c = \\sqrt{100} = 10$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): averaged the legs, $\\frac{6+8}{2}$; the hypotenuse is not the average.\n* Choice C ($14$): added the legs, $6+8$; the hypotenuse is shorter than the legs' sum.\n* Choice D ($100$): stopped at $c^2$ and forgot to take the square root.\n\n**Test Day Takeaway:** Use $a^2 + b^2 = c^2$, then take the square root for $c$ — don't report $c^2$. Spotting $3$-$4$-$5$ multiples saves the arithmetic.",
-      skills: ['pythagorean-theorem']
+      hint: "The brace is the side opposite the right angle.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** $21^2 + 20^2 = 441 + 400 = 841$, and $\\sqrt{841} = 29$ feet.\n\n**The Full Solution:**\nStep 1: The brace is the hypotenuse, so $21^2 + 20^2 = c^2$.\nStep 2: That gives $441 + 400 = 841$.\nStep 3: Taking the square root, $c = 29$ feet. Check: $29^2 = 841 = 441 + 400$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\sqrt{41}$): subtracting the squares, $441 - 400$, which finds a leg rather than the hypotenuse.\n* Choice C ($41$): adding the two legs directly; the theorem adds their squares.\n* Choice D ($841$): stopping at $c^2$ and never taking the square root.\n\n**Test Day Takeaway:** Add the squares of the legs to get the square of the hypotenuse, then take the root.",
+      skills: ["pythagorean-theorem"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "A ladder 13 feet long leans against a wall. If the base is 5 feet from the wall, how high up the wall does it reach?",
+      question: "A hop trellis pole rises from level ground, and an anchor cable ties its top to a point on the ground, as the figure shows with lengths in feet. How tall, in feet, is the pole?",
+      diagram: { type: "rightTriangle", params: { vertices: [[0, 0], [7, 0], [7, 24]], sideLabels: ["7", "", "25"], rightAngleVertex: 1 } },
       choices: [
-        { id: "A", text: "8 feet" },
-        { id: "B", text: "12 feet" },
-        { id: "C", text: "18 feet" },
-        { id: "D", text: "144 feet" }
+        // distractor: subtracts the lengths, 25 - 7, instead of their squares
+        { id: "A", text: "$18$" },
+        { id: "B", text: "$24$" },
+        // distractor: adds the squares instead of subtracting them
+        { id: "C", text: "$26$" },
+        // distractor: adds the two given lengths
+        { id: "D", text: "$32$" }
       ],
       correctAnswer: "B",
-      hint: "The ladder forms a right triangle with the wall and ground. The ladder is the hypotenuse.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** The ladder, base, and wall form a $5$-$12$-$13$ right triangle, so the wall height is $12$ feet.\n\n```seva-figure\n{\"type\":\"rightTriangle\",\"params\":{\"vertices\":[[0,0],[5,0],[5,12]],\"sideLabels\":[\"5\",\"12\",\"13\"],\"rightAngleVertex\":1},\"caption\":\"The ladder is the hypotenuse (13); base 5, wall height 12.\"}\n```\n\n**The Full Solution:**\nStep 1: The ladder is the hypotenuse $c = 13$, the ground distance is one leg $a = 5$, and the wall height $h$ is the other leg.\nStep 2: $13^2 = 5^2 + h^2 \\Rightarrow 169 = 25 + h^2 \\Rightarrow h^2 = 144 \\Rightarrow h = \\sqrt{144} = 12$. Check: $5^2 + 12^2 = 25 + 144 = 169 = 13^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): computed $13 - 5$; the sides relate quadratically, not by subtraction.\n* Choice C ($18$): added $13 + 5$, which has no meaning here.\n* Choice D ($144$): stopped at $h^2$ and forgot the square root.\n\n**Test Day Takeaway:** In word problems, the longest side (here the ladder) is the hypotenuse. Set it as $c$, solve for the leg, and take the square root.",
-      skills: ['pythagorean-theorem']
+      hint: "The longest side of this triangle is already known.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** $25^2 - 7^2 = 625 - 49 = 576$, and $\\sqrt{576} = 24$ feet.\n\n**The Full Solution:**\nStep 1: The $25$-foot cable is the hypotenuse and the $7$-foot ground distance is one leg, so the pole's height $h$ satisfies $7^2 + h^2 = 25^2$.\nStep 2: That gives $h^2 = 625 - 49 = 576$.\nStep 3: Taking the square root, $h = 24$ feet. Check: $7^2 + 24^2 = 49 + 576 = 625 = 25^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($18$): subtracting the lengths, $25 - 7$, instead of subtracting their squares.\n* Choice C ($26$): adding the squares, $\\sqrt{625 + 49} \\approx 26$, which would make the pole longer than the cable.\n* Choice D ($32$): adding the two given lengths.\n\n**Test Day Takeaway:** When the hypotenuse is known, subtract the squares; when it is not, add them.",
+      skills: ["pythagorean-theorem"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "Is a triangle with sides 7, 24, 25 a right triangle?",
+      question: "The triangular platform brace of a launch tower is shown, with two of its side lengths in meters. Steel bar for the brace costs \\$14 per meter. What is the total cost, in dollars, of the bar needed for all three sides?",
+      diagram: { type: "rightTriangle", params: { vertices: [[0, 0], [24, 0], [24, 10]], sideLabels: ["", "10", "26"], rightAngleVertex: 1 } },
       choices: [
-        { id: "A", text: "Yes, because 7² + 24² = 25²" },
-        { id: "B", text: "No, because 7² + 24² ≠ 25²" },
-        { id: "C", text: "Yes, because 7 + 24 > 25" },
-        { id: "D", text: "Cannot determine" }
+        // distractor: uses 10 + 24 = 34 meters and leaves out the hypotenuse
+        { id: "A", text: "$476$" },
+        // distractor: uses only the two given sides, 10 + 26 = 36 meters
+        { id: "B", text: "$504$" },
+        { id: "C", text: "$840$" },
+        // distractor: doubles the perimeter before multiplying
+        { id: "D", text: "$1{,}680$" }
       ],
-      correctAnswer: "A",
-      hint: "Test the Pythagorean Theorem with the two shorter sides and the longest side (potential hypotenuse).",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~10s):** Test the longest side as the hypotenuse: $7^2 + 24^2 = 49 + 576 = 625 = 25^2$, so the triangle is right.\n\n```seva-figure\n{\"type\":\"rightTriangle\",\"params\":{\"vertices\":[[0,0],[7,0],[7,24]],\"sideLabels\":[\"7\",\"24\",\"25\"],\"rightAngleVertex\":1},\"caption\":\"Test the triple: does 7² + 24² equal 25²?\"}\n```\n\n**The Full Solution:**\nStep 1: By the converse of the Pythagorean theorem, a triangle is right exactly when $a^2 + b^2 = c^2$ for the longest side $c$.\nStep 2: $7^2 + 24^2 = 49 + 576 = 625$ and $25^2 = 625$, so $625 = 625$. The equation holds, so it is a right triangle. $7$-$24$-$25$ is a known triple.\n\n**Why the wrong answers are tempting:**\n* Choice B: claims $7^2 + 24^2 \\neq 25^2$, but the arithmetic gives $625 = 625$ — likely a miscomputation of $24^2$.\n* Choice C: $7 + 24 > 25$ only confirms the triangle inequality (a valid triangle exists), not that it is right.\n* Choice D: three side lengths are enough to apply the converse, so the answer is fully determinable.\n\n**Test Day Takeaway:** Converse of the Pythagorean theorem: if $a^2 + b^2 = c^2$ with $c$ the longest side, the triangle is right. Memorize $3$-$4$-$5$, $5$-$12$-$13$, $7$-$24$-$25$, $8$-$15$-$17$.",
-      skills: ['pythagorean-theorem']
+      correctAnswer: "C",
+      hint: "The figure prints only two of the three lengths the price applies to.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~40s):** The missing leg is $24$ meters, so the perimeter is $60$ meters and the bar costs $60(14) = 840$ dollars.\n\n**The Full Solution:**\nStep 1: The $26$-meter side is the hypotenuse, so the missing leg satisfies $10^2 + b^2 = 26^2$, giving $b^2 = 676 - 100 = 576$ and $b = 24$ meters.\nStep 2: The perimeter is $10 + 24 + 26 = 60$ meters.\nStep 3: At $14$ dollars per meter the cost is $60(14) = 840$ dollars. Check: $10^2 + 24^2 = 100 + 576 = 676 = 26^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($476$): using $10 + 24 = 34$ meters and leaving the hypotenuse out of the perimeter.\n* Choice B ($504$): using only the two side lengths printed in the figure, $10 + 26 = 36$ meters.\n* Choice D ($1{,}680$): doubling the perimeter to $120$ meters before multiplying by the price.\n\n**Test Day Takeaway:** Recover the missing side first, then add all three lengths before applying any rate.",
+      skills: ["pythagorean-theorem"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "A right triangle has hypotenuse 15 and one leg 9. What is the other leg?",
+      question: "In right triangle $XYZ$, angle $Y$ is a right angle, the hypotenuse $\\overline{XZ}$ has length $26$, and leg $\\overline{XY}$ has length $24$. What is the length of $\\overline{YZ}$?",
+      diagram: { type: "rightTriangle", params: { labels: ["X", "Y", "Z"], sideLabels: ["24", "", "26"], rightAngleVertex: 1, figureNote: true } },
       choices: [
-        { id: "A", text: "6" },
-        { id: "B", text: "12" },
-        { id: "C", text: "18" },
-        { id: "D", text: "24" }
+        // distractor: subtracts the two given lengths instead of their squares
+        { id: "A", text: "$2$" },
+        { id: "B", text: "$10$" },
+        // distractor: averages the hypotenuse and the given leg
+        { id: "C", text: "$25$" },
+        // distractor: adds the two given lengths
+        { id: "D", text: "$50$" }
       ],
       correctAnswer: "B",
-      hint: "Rearrange the Pythagorean Theorem to solve for the missing leg: b² = c² - a².",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** $(9, 12, 15)$ is the $3$-$4$-$5$ triple tripled, so the missing leg is $12$.\n\n```seva-figure\n{\"type\":\"rightTriangle\",\"params\":{\"vertices\":[[0,0],[12,0],[12,9]],\"sideLabels\":[\"12\",\"9\",\"15\"],\"rightAngleVertex\":1},\"caption\":\"Legs 9 and 12 — hypotenuse 15, the 3-4-5 triple scaled by 3.\"}\n```\n\n**The Full Solution:**\nStep 1: To find a leg, rearrange the Pythagorean theorem: $b^2 = c^2 - a^2 = 15^2 - 9^2$.\nStep 2: $b^2 = 225 - 81 = 144 \\Rightarrow b = \\sqrt{144} = 12$. Check: $9^2 + 12^2 = 81 + 144 = 225 = 15^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): computed $15 - 9$, using subtraction instead of the quadratic relationship.\n* Choice C ($18$): added the squares ($\\sqrt{225 + 81}$) instead of subtracting; a leg requires subtraction.\n* Choice D ($24$): added hypotenuse and leg, $15 + 9$, which has no Pythagorean meaning.\n\n**Test Day Takeaway:** To find a missing leg, $b = \\sqrt{c^2 - a^2}$ — subtract the known leg squared from the hypotenuse squared. Only add squares when solving for the hypotenuse.",
-      skills: ['pythagorean-theorem']
+      hint: "The hypotenuse is the one given, so the missing side comes out of a subtraction.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~20s):** $YZ = \\sqrt{26^2 - 24^2} = \\sqrt{100} = 10$.\n\n**The Full Solution:**\nStep 1: Angle $Y$ is the right angle, so $\\overline{XZ}$ is the hypotenuse and $\\overline{XY}$ and $\\overline{YZ}$ are the legs.\nStep 2: $24^2 + YZ^2 = 26^2$, so $YZ^2 = 676 - 576 = 100$.\nStep 3: $YZ = \\sqrt{100} = 10$.\n\nVerification: $24^2 + 10^2 = 576 + 100 = 676 = 26^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): subtracts the two given lengths instead of their squares.\n* Choice C ($25$): averages the hypotenuse and the given leg.\n* Choice D ($50$): adds the two given lengths.\n\n**Test Day Takeaway:** Solving for a leg subtracts squares, not lengths: square first, subtract, then take the root.",
+      skills: ["pythagorean-theorem"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "The diagonal of a rectangle is 10 and one side is 6. What is the other side?",
+      question: "In right triangle $ABC$, angle $C$ is a right angle. The legs have lengths $AC = x$ and $BC = x + 7$, and the hypotenuse has length $AB = 17$. What is the value of $x$?",
       choices: [
-        { id: "A", text: "4" },
-        { id: "B", text: "8" },
-        { id: "C", text: "√64" },
-        { id: "D", text: "Both B and C" }
+        // distractor: solves $x + (x + 7) = 17$, adding the legs to reach the hypotenuse
+        { id: "A", text: "$5$" },
+        { id: "B", text: "$8$" },
+        // distractor: subtracts $7$ from the hypotenuse
+        { id: "C", text: "$10$" },
+        // distractor: gives $BC = x + 7$ instead of $x$ itself
+        { id: "D", text: "$15$" }
       ],
-      correctAnswer: "D",
-      hint: "A rectangle's diagonal creates a right triangle with the two sides. The diagonal is the hypotenuse.",
-      explanation: "**Choice D is correct.**\n\n**The Fast Way (~10s):** The diagonal is the hypotenuse: $s=\\sqrt{10^2-6^2}=\\sqrt{64}=8$. Choice B writes it as $8$ and choice C writes it as $\\sqrt{64}$ — the same number — so \"Both B and C\" is the answer.\n\n```seva-figure\n{\"type\":\"rightTriangle\",\"params\":{\"vertices\":[[0,0],[6,0],[6,8.0]],\"sideLabels\":[\"6\",\"8\",\"10\"],\"rightAngleVertex\":1},\"caption\":\"Legs 6 and 8 — hypotenuse 10.\"}\n```\n\n**The Full Solution:**\nStep 1: A rectangle's diagonal splits it into two right triangles, so $d^2=l^2+w^2$, giving $10^2=6^2+s^2$.\nStep 2: $100=36+s^2 \\Rightarrow s^2=64 \\Rightarrow s=8$.\nStep 3: $\\sqrt{64}=8$, so choices B ($8$) and C ($\\sqrt{64}$) are identical values. Both are correct, so the answer is D. Check: $6^2+8^2=36+64=100=10^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): subtracts the sides linearly ($10-6$) instead of using the Pythagorean theorem. Test: $6^2+4^2=52\\neq100$.\n* Choice B ($8$) alone: numerically right, but ignores that C names the same value, so it's incomplete.\n* Choice C ($\\sqrt{64}$) alone: also right, but ignores that B is the same number simplified.\n\n**Test Day Takeaway:** When two answer choices are equivalent expressions (like $8$ and $\\sqrt{64}$), a \"Both\" option is usually the intended answer — always simplify before you choose.",
-      skills: ['pythagorean-theorem']
+      correctAnswer: "B",
+      hint: "Write the theorem with the expressions in place, then expand before solving.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~60s):** $x^2 + (x + 7)^2 = 289$ reduces to $x^2 + 7x - 120 = 0$, so $x = 8$.\n\n**The Full Solution:**\nStep 1: The legs are $x$ and $x + 7$ and the hypotenuse is $17$, so $x^2 + (x + 7)^2 = 17^2$.\nStep 2: Expand: $x^2 + x^2 + 14x + 49 = 289$, so $2x^2 + 14x - 240 = 0$, or $x^2 + 7x - 120 = 0$.\nStep 3: Factor: $(x + 15)(x - 8) = 0$. A length must be positive, so $x = 8$.\n\nVerification: The legs are $8$ and $15$, and $8^2 + 15^2 = 64 + 225 = 289 = 17^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): solves $x + (x + 7) = 17$, adding the legs to reach the hypotenuse.\n* Choice C ($10$): subtracts $7$ from the hypotenuse.\n* Choice D ($15$): gives $BC = x + 7$ instead of $x$ itself.\n\n**Test Day Takeaway:** When the legs are expressions, square them into a quadratic and throw out the negative root.",
+      skills: ["pythagorean-theorem"]
     }
   ],
 
@@ -402,77 +489,93 @@ export const trianglesQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "In a right triangle, sin(θ) equals:",
+      question: "In right triangle $KLM$, angle $L$ is a right angle, $KL = 24$, $LM = 7$, and $KM = 25$. What is the value of $\\sin K$?",
+      diagram: { type: "rightTriangle", params: { labels: ["K", "L", "M"], sideLabels: ["24", "7", "25"], rightAngleVertex: 1, figureNote: true } },
       choices: [
-        { id: "A", text: "Adjacent/Hypotenuse" },
-        { id: "B", text: "Opposite/Hypotenuse" },
-        { id: "C", text: "Opposite/Adjacent" },
-        { id: "D", text: "Hypotenuse/Opposite" }
+        { id: "A", text: "$\\frac{7}{25}$" },
+        // distractor: the value of $\tan K$, using the adjacent leg in the denominator instead of the hypotenuse
+        { id: "B", text: "$\\frac{7}{24}$" },
+        // distractor: the value of $\cos K$, using the adjacent leg in the numerator
+        { id: "C", text: "$\\frac{24}{25}$" },
+        // distractor: the reciprocal of $\tan K$, swapping the opposite and adjacent legs
+        { id: "D", text: "$\\frac{24}{7}$" }
       ],
-      correctAnswer: "B",
-      hint: "Remember SOH-CAH-TOA: Sine = Opposite/Hypotenuse, Cosine = Adjacent/Hypotenuse, Tangent = Opposite/Adjacent.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~5s):** SOH: $\\sin(\\theta)=\\frac{\\text{Opposite}}{\\text{Hypotenuse}}$, which is choice B.\n\n**The Full Solution:**\nStep 1: The mnemonic SOH-CAH-TOA gives the three ratios: $\\sin=\\frac{O}{H}$, $\\cos=\\frac{A}{H}$, $\\tan=\\frac{O}{A}$.\nStep 2: The first block, SOH, reads $\\sin(\\theta)=\\frac{\\text{Opposite}}{\\text{Hypotenuse}}$. Check with a $3$-$4$-$5$ triangle: with $\\theta$ opposite the side of length $3$, $\\sin(\\theta)=\\frac{3}{5}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$): that's $\\cos(\\theta)$, the most common sine/cosine swap.\n* Choice C ($\\frac{\\text{Opposite}}{\\text{Adjacent}}$): that's $\\tan(\\theta)$.\n* Choice D ($\\frac{\\text{Hypotenuse}}{\\text{Opposite}}$): that's $\\csc(\\theta)$, the reciprocal of sine — the fraction is flipped.\n\n**Test Day Takeaway:** Lock in SOH-CAH-TOA. Sine pairs Opposite over Hypotenuse; the hypotenuse sits in the denominator for both sine and cosine.",
-      skills: ['soh-cah-toa']
+      correctAnswer: "A",
+      hint: "Sine pairs the side across from the angle with the longest side of the triangle.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~20s):** $\\sin K$ is opposite over hypotenuse: $\\frac{LM}{KM} = \\frac{7}{25}$.\n\n**The Full Solution:**\nStep 1: Angle $L$ is the right angle, so $\\overline{KM}$ is the hypotenuse.\nStep 2: The leg opposite angle $K$ is $\\overline{LM}$, of length $7$.\nStep 3: Therefore $\\sin K = \\frac{7}{25}$.\n\nVerification: $\\left(\\frac{7}{25}\\right)^2 + \\left(\\frac{24}{25}\\right)^2 = \\frac{49 + 576}{625} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{7}{24}$): the value of $\\tan K$, using the adjacent leg in the denominator instead of the hypotenuse.\n* Choice C ($\\frac{24}{25}$): the value of $\\cos K$, using the adjacent leg in the numerator.\n* Choice D ($\\frac{24}{7}$): the reciprocal of $\\tan K$, swapping the opposite and adjacent legs.\n\n**Test Day Takeaway:** Locate the hypotenuse first, then read opposite and adjacent from the angle actually named in the ratio.",
+      skills: ["soh-cah-toa"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "In a right triangle, the side opposite to a 30° angle is 5. What is the hypotenuse?",
+      question: "A milking-parlor rail bracket forms right triangle $LMN$, with its right angle at $M$, $LM = 9$ centimeters, and $MN = 40$ centimeters. Which expression is equal to $\\tan L$?",
       choices: [
-        { id: "A", text: "5" },
-        { id: "B", text: "10" },
-        { id: "C", text: "5√3" },
-        { id: "D", text: "10√3" }
+        // distractor: gives cosine of L, adjacent over hypotenuse
+        { id: "A", text: "$\\frac{9}{41}$" },
+        // distractor: inverts the tangent, adjacent over opposite
+        { id: "B", text: "$\\frac{9}{40}$" },
+        // distractor: gives sine of L, opposite over hypotenuse
+        { id: "C", text: "$\\frac{40}{41}$" },
+        { id: "D", text: "$\\frac{40}{9}$" }
       ],
-      correctAnswer: "B",
-      hint: "Use the fact that sin(30°) = 1/2. Set up the equation: opposite/hypotenuse = 1/2.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** The side opposite $30^\\circ$ is half the hypotenuse, so the hypotenuse is $2\\times5=10$, which is choice B.\n\n**The Full Solution:**\nStep 1: Use sine with the known angle and its opposite side: $\\sin(30^\\circ)=\\frac{\\text{Opposite}}{\\text{Hypotenuse}}=\\frac{5}{h}$.\nStep 2: Since $\\sin(30^\\circ)=\\frac{1}{2}$, $\\frac{1}{2}=\\frac{5}{h} \\Rightarrow h=10$.\nStep 3: Check the $30$-$60$-$90$ ratio $1:\\sqrt{3}:2$: short leg $\\frac{10}{2}=5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): repeats the opposite side; the hypotenuse must be the longest side, so it can't equal a leg.\n* Choice C ($5\\sqrt{3}$): that's the longer leg, opposite the $60^\\circ$ angle — wrong side.\n* Choice D ($10\\sqrt{3}$): multiplies the hypotenuse by an extra $\\sqrt{3}$ that doesn't belong.\n\n**Test Day Takeaway:** In a $30$-$60$-$90$ triangle the side opposite $30^\\circ$ is half the hypotenuse, so hypotenuse $=2\\times$ short leg.",
-      skills: ['soh-cah-toa']
+      correctAnswer: "D",
+      hint: "Only two of the three sides are given, and this question does not need the third.",
+      explanation: "**Choice D is correct.**\n\n**The Fast Way (~15s):** From angle $L$, the opposite leg is $MN = 40$ and the adjacent leg is $LM = 9$, so $\\tan L = \\frac{40}{9}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $M$, so the two legs are $LM$ and $MN$ and the hypotenuse is $LN$.\nStep 2: Viewed from angle $L$, the leg $MN = 40$ is opposite and the leg $LM = 9$ is adjacent.\nStep 3: Tangent is opposite over adjacent, so $\\tan L = \\frac{40}{9}$. Check: $LN = \\sqrt{9^2 + 40^2} = \\sqrt{1681} = 41$, and $\\frac{\\sin L}{\\cos L} = \\frac{40/41}{9/41} = \\frac{40}{9}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{9}{41}$): this is $\\cos L$, adjacent over hypotenuse.\n* Choice B ($\\frac{9}{40}$): this inverts the tangent, giving adjacent over opposite.\n* Choice C ($\\frac{40}{41}$): this is $\\sin L$, opposite over hypotenuse.\n\n**Test Day Takeaway:** Tangent never uses the hypotenuse; name the opposite and adjacent legs from the angle in question first.",
+      skills: ["soh-cah-toa"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "If cos(θ) = 0.8 in a right triangle with adjacent side 12, what is the hypotenuse?",
+      question: "An almond huller's grading chute forms right triangle $PQR$, with its right angle at $Q$. If $\\sin R = \\frac{5}{13}$ and $PR = 39$ centimeters, what is the length, in centimeters, of $PQ$?",
       choices: [
-        { id: "A", text: "9.6" },
-        { id: "B", text: "15" },
-        { id: "C", text: "16" },
-        { id: "D", text: "20" }
+        // distractor: reports the numerator of the ratio as a length
+        { id: "A", text: "$5$" },
+        // distractor: reports the denominator of the ratio as a length
+        { id: "B", text: "$13$" },
+        { id: "C", text: "$15$" },
+        // distractor: finds QR, the other leg, instead of PQ
+        { id: "D", text: "$36$" }
       ],
-      correctAnswer: "B",
-      hint: "Cosine equals adjacent over hypotenuse. Set up: 0.8 = 12/h and solve for h.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** Cosine puts the adjacent side over the hypotenuse, so $h=\\frac{\\text{Adjacent}}{\\cos\\theta}=\\frac{12}{0.8}=15$, which is choice B.\n\n**The Full Solution:**\nStep 1: $\\cos(\\theta)=\\frac{\\text{Adjacent}}{\\text{Hypotenuse}}=\\frac{12}{h}$.\nStep 2: Substitute $\\cos(\\theta)=0.8$: $0.8=\\frac{12}{h} \\Rightarrow h=\\frac{12}{0.8}=15$.\nStep 3: Check: $\\frac{12}{15}=0.8$, and the opposite side is $\\sqrt{15^2-12^2}=\\sqrt{81}=9$, a $9$-$12$-$15$ triangle ($3\\times$ a $3$-$4$-$5$). $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($9.6$): computes $12\\times0.8$ — multiplies by cosine instead of dividing.\n* Choice C ($16$): an arithmetic slip; $\\frac{12}{0.8}$ is $15$, not $16$.\n* Choice D ($20$): uses $\\frac{12}{0.6}$, swapping in $\\sin\\theta=0.6$ for $\\cos\\theta=0.8$.\n\n**Test Day Takeaway:** To find the hypotenuse from an adjacent side, divide by cosine: $\\text{Hyp}=\\frac{\\text{Adj}}{\\cos\\theta}$. Division, not multiplication.",
-      skills: ['soh-cah-toa']
+      correctAnswer: "C",
+      hint: "A ratio of $\\frac{5}{13}$ does not make any side $5$ or $13$ centimeters long.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~25s):** $\\sin R = \\frac{PQ}{PR}$, so $\\frac{PQ}{39} = \\frac{5}{13}$ and $PQ = 15$ centimeters.\n\n**The Full Solution:**\nStep 1: With the right angle at $Q$, the hypotenuse is $PR$ and the leg opposite angle $R$ is $PQ$.\nStep 2: So $\\sin R = \\frac{PQ}{PR} = \\frac{PQ}{39} = \\frac{5}{13}$.\nStep 3: Multiplying gives $PQ = \\frac{5}{13}(39) = 15$ centimeters. Check: $QR = \\sqrt{39^2 - 15^2} = \\sqrt{1296} = 36$, and $\\frac{15}{39} = \\frac{5}{13}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): reporting the numerator of the ratio as though it were the length itself.\n* Choice B ($13$): reporting the denominator of the ratio as though it were the length itself.\n* Choice D ($36$): computing $QR$, the leg adjacent to angle $R$, instead of the requested $PQ$.\n\n**Test Day Takeaway:** A ratio scales: multiply the hypotenuse by the sine to get the opposite leg, and name the sides before substituting.",
+      skills: ["soh-cah-toa"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "In a right triangle with legs 3 and 4, what is tan(θ) where θ is the angle opposite the side of length 3?",
+      question: "In a dockside crane, the jib $ST$, the mast $TU$, and the tie $SU$ meet so that the right angle falls at $U$. The tie is $42$ meters long and $\\tan S = \\frac{20}{21}$. How long, in meters, is the jib?",
       choices: [
-        { id: "A", fraction: { numerator: "3", denominator: "4" } },
-        { id: "B", fraction: { numerator: "4", denominator: "3" } },
-        { id: "C", fraction: { numerator: "3", denominator: "5" } },
-        { id: "D", fraction: { numerator: "4", denominator: "5" } }
+        // distractor: reports the mast TU instead of the jib
+        { id: "A", text: "$40$" },
+        { id: "B", text: "$58$" },
+        // distractor: adds the two legs, 42 + 40
+        { id: "C", text: "$82$" },
+        // distractor: doubles the tie, as though the hypotenuse were twice the adjacent leg
+        { id: "D", text: "$84$" }
       ],
-      correctAnswer: "A",
-      hint: "Tangent = opposite/adjacent. Identify which leg is opposite to angle θ and which is adjacent.",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~10s):** TOA: tangent is the opposite leg over the adjacent leg. Opposite $\\theta$ is $3$, adjacent is $4$, so $\\tan(\\theta)=\\frac{3}{4}$, which is choice A.\n\n**The Full Solution:**\nStep 1: Identify the sides relative to $\\theta$: opposite $=3$, adjacent $=4$. The hypotenuse ($5$) isn't needed for tangent.\nStep 2: Apply TOA: $\\tan(\\theta)=\\frac{\\text{Opposite}}{\\text{Adjacent}}=\\frac{3}{4}$.\nStep 3: Check: $\\arctan\\left(\\frac{3}{4}\\right)\\approx36.87^\\circ$, a valid acute angle. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{4}{3}$): tangent of the other acute angle, or $\\cot(\\theta)$ — the ratio is flipped.\n* Choice C ($\\frac{3}{5}$): that's $\\frac{\\text{Opposite}}{\\text{Hypotenuse}}=\\sin(\\theta)$, not tangent.\n* Choice D ($\\frac{4}{5}$): that's $\\frac{\\text{Adjacent}}{\\text{Hypotenuse}}=\\cos(\\theta)$, not tangent.\n\n**Test Day Takeaway:** Tangent uses only the two legs: $\\tan(\\theta)=\\frac{\\text{Opposite}}{\\text{Adjacent}}$. The hypotenuse never appears.",
-      skills: ['soh-cah-toa']
+      correctAnswer: "B",
+      hint: "The jib is the one side that the tangent of $S$ never touches.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~40s):** $\\tan S = \\frac{TU}{42} = \\frac{20}{21}$ gives $TU = 40$, and $\\sqrt{42^2 + 40^2} = 58$ meters.\n\n**The Full Solution:**\nStep 1: The right angle is at $U$, so from angle $S$ the mast $TU$ is opposite and the tie $SU$ is adjacent: $\\tan S = \\frac{TU}{42} = \\frac{20}{21}$.\nStep 2: Solving gives $TU = \\frac{20}{21}(42) = 40$ meters.\nStep 3: The jib $ST$ is the hypotenuse: $ST = \\sqrt{42^2 + 40^2} = \\sqrt{1764 + 1600} = \\sqrt{3364} = 58$ meters. Check: $\\frac{40}{42} = \\frac{20}{21}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($40$): reporting the mast $TU$, the leg the tangent produces, instead of the jib.\n* Choice C ($82$): adding the two legs, $42 + 40$, instead of using the Pythagorean theorem.\n* Choice D ($84$): doubling the tie, which assumes a $30$-$60$-$90$ relationship that does not hold here.\n\n**Test Day Takeaway:** Tangent hands you the second leg; the hypotenuse still needs the Pythagorean theorem.",
+      skills: ["soh-cah-toa"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "If sin(A) = cos(B) in a right triangle, then angles A and B are:",
+      question: "A taxiway wind-fence panel is a right triangle whose two acute angles measure $x^\\circ$ and $y^\\circ$. If $\\sin(x^\\circ) = \\frac{20}{29}$, what is the value of $\\cos(y^\\circ)$?",
       choices: [
-        { id: "A", text: "Equal" },
-        { id: "B", text: "Complementary (sum to 90°)" },
-        { id: "C", text: "Supplementary (sum to 180°)" },
-        { id: "D", text: "No relationship" }
+        { id: "A", text: "$\\frac{20}{29}$" },
+        // distractor: computes the cosine of x using the third side 21
+        { id: "B", text: "$\\frac{21}{29}$" },
+        // distractor: computes the tangent of x
+        { id: "C", text: "$\\frac{20}{21}$" },
+        // distractor: inverts the ratio
+        { id: "D", text: "$\\frac{29}{20}$" }
       ],
-      correctAnswer: "B",
-      hint: "Recall that sin(θ) = cos(90° - θ). What relationship must A and B have for sin(A) = cos(B)?",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** The co-function identity says $\\sin(A)=\\cos(90^\\circ-A)$. If $\\sin(A)=\\cos(B)$, then $B=90^\\circ-A$, so $A+B=90^\\circ$ — complementary, choice B.\n\n**The Full Solution:**\nStep 1: Apply the co-function identity: $\\sin(A)=\\cos(90^\\circ-A)$.\nStep 2: Set equal to the given $\\cos(B)$: $\\cos(90^\\circ-A)=\\cos(B) \\Rightarrow 90^\\circ-A=B$.\nStep 3: Rearrange: $A+B=90^\\circ$, the definition of complementary angles. Check with $A=30^\\circ$, $B=60^\\circ$: $\\sin(30^\\circ)=0.5=\\cos(60^\\circ)$ and $30^\\circ+60^\\circ=90^\\circ$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (Equal): $\\sin(A)=\\cos(A)$ only at $A=45^\\circ$ — a single special case, not the general rule.\n* Choice C (Supplementary): supplementary means $180^\\circ$; here the sum is $90^\\circ$.\n* Choice D (No relationship): the co-function identity gives a precise relationship.\n\n**Test Day Takeaway:** $\\sin(\\theta)=\\cos(90^\\circ-\\theta)$. Whenever $\\sin(A)=\\cos(B)$ in these problems, the angles are complementary: $A+B=90^\\circ$.",
-      skills: ['soh-cah-toa']
+      correctAnswer: "A",
+      hint: "No side length is needed to answer this.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~20s):** The two acute angles are complementary, and the cosine of an angle equals the sine of its complement, so $\\cos(y^\\circ) = \\frac{20}{29}$.\n\n**The Full Solution:**\nStep 1: In a right triangle the two acute angles satisfy $x + y = 90$, so they are complementary.\nStep 2: The side opposite $x^\\circ$ is the side adjacent to $y^\\circ$, and both ratios are taken over the same hypotenuse.\nStep 3: Therefore $\\cos(y^\\circ) = \\sin(x^\\circ) = \\frac{20}{29}$. Check: with legs $20$ and $21$ and hypotenuse $29$, $\\cos(y^\\circ) = \\frac{20}{29}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{21}{29}$): computing $\\cos(x^\\circ)$ with the third side $21$; the complement swaps which leg is adjacent.\n* Choice C ($\\frac{20}{21}$): computing $\\tan(x^\\circ)$, a ratio of the two legs rather than a leg over the hypotenuse.\n* Choice D ($\\frac{29}{20}$): inverting the ratio, which no sine or cosine of an acute angle can exceed $1$.\n\n**Test Day Takeaway:** Complementary angles trade sine for cosine — no side lengths are needed at all.",
+      skills: ["soh-cah-toa"]
     }
   ],
 
@@ -481,77 +584,94 @@ export const trianglesQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "In a 45-45-90 triangle, if one leg is 6, what is the hypotenuse?",
+      question: "A $45°$-$45°$-$90°$ triangle has legs of length $11$ centimeters. What is the length, in centimeters, of its hypotenuse?",
+      diagram: { type: "rightTriangle", params: { labels: ["45°", "", "45°"], sideLabels: ["11", "11", ""], rightAngleVertex: 1, figureNote: true } },
       choices: [
-        { id: "A", text: "6" },
-        { id: "B", text: "6√2" },
-        { id: "C", text: "6√3" },
-        { id: "D", text: "12" }
+        // distractor: adds the legs and then takes a square root, instead of adding their squares
+        { id: "A", text: "$\\sqrt{22}$" },
+        { id: "B", text: "$11\\sqrt{2}$" },
+        // distractor: uses $\sqrt{3}$, which belongs to the $30°$-$60°$-$90°$ ratios
+        { id: "C", text: "$11\\sqrt{3}$" },
+        // distractor: doubles a leg, which is the $30°$-$60°$-$90°$ hypotenuse rule
+        { id: "D", text: "$22$" }
       ],
       correctAnswer: "B",
-      hint: "In a 45-45-90 triangle, the sides are in the ratio 1:1:√2 (leg:leg:hypotenuse).",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~5s):** In a $45$-$45$-$90$ triangle the hypotenuse is a leg times $\\sqrt{2}$, so $6\\sqrt{2}$, which is choice B.\n\n```seva-figure\n{\"type\":\"rightTriangle\",\"params\":{\"vertices\":[[0,0],[6,0],[6,6]],\"sideLabels\":[\"6\",\"6\",\"6√2\"],\"rightAngleVertex\":1},\"caption\":\"Isosceles right triangle — legs 6 and 6, hypotenuse 6√2.\"}\n```\n\n**The Full Solution:**\nStep 1: The side ratio is $\\text{leg}:\\text{leg}:\\text{hypotenuse}=1:1:\\sqrt{2}$.\nStep 2: With leg $=6$, hypotenuse $=6\\sqrt{2}$.\nStep 3: Check with the Pythagorean theorem: $\\sqrt{6^2+6^2}=\\sqrt{72}=6\\sqrt{2}\\approx8.49$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): repeats the leg; the hypotenuse must be longer than either leg.\n* Choice C ($6\\sqrt{3}$): borrows the $\\sqrt{3}$ multiplier from a $30$-$60$-$90$ triangle.\n* Choice D ($12$): doubles the leg, which is the $30$-$60$-$90$ rule, not $45$-$45$-$90$.\n\n**Test Day Takeaway:** $45$-$45$-$90$ sides go $x:x:x\\sqrt{2}$. The hypotenuse is leg $\\times\\sqrt{2}$ — never $\\sqrt{3}$ or $2$.",
-      skills: ['special-right-triangles']
+      hint: "The two legs are equal, so the Pythagorean theorem gives twice one square.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** In a $45°$-$45°$-$90°$ triangle the hypotenuse is $\\sqrt{2}$ times a leg, so it is $11\\sqrt{2}$.\n\n**The Full Solution:**\nStep 1: The two legs are equal, so the sides are in the ratio $1 : 1 : \\sqrt{2}$.\nStep 2: With each leg $11$, the hypotenuse is $11\\sqrt{2}$ centimeters.\nStep 3: Check with the Pythagorean theorem: $11^2 + 11^2 = 242$ and $(11\\sqrt{2})^2 = 121(2) = 242$.\n\nVerification: $11\\sqrt{2} \\approx 15.6$, longer than either leg and shorter than their sum of $22$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\sqrt{22}$): adds the legs and then takes a square root, instead of adding their squares.\n* Choice C ($11\\sqrt{3}$): uses $\\sqrt{3}$, which belongs to the $30°$-$60°$-$90°$ ratios.\n* Choice D ($22$): doubles a leg, which is the $30°$-$60°$-$90°$ hypotenuse rule.\n\n**Test Day Takeaway:** Leg to hypotenuse in a $45°$-$45°$-$90°$ triangle multiplies by $\\sqrt{2}$; going the other way divides.",
+      skills: ["special-right-triangles"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "In a 30-60-90 triangle, if the shortest side is 5, what is the longest side?",
+      question: "In a $30°$-$60°$-$90°$ triangle, the side opposite the $30°$ angle has length $9$. What is the length of the side opposite the $90°$ angle?",
+      diagram: { type: "rightTriangle", params: { labels: ["30°", "", "60°"], sideLabels: ["", "9", ""], rightAngleVertex: 1, figureNote: true } },
       choices: [
-        { id: "A", text: "5√2" },
-        { id: "B", text: "5√3" },
-        { id: "C", text: "10" },
-        { id: "D", text: "10√3" }
+        // distractor: uses $\sqrt{2}$, which belongs to the $45°$-$45°$-$90°$ ratios
+        { id: "A", text: "$9\\sqrt{2}$" },
+        // distractor: gives the side opposite the $60°$ angle
+        { id: "B", text: "$9\\sqrt{3}$" },
+        { id: "C", text: "$18$" },
+        // distractor: triples the shorter leg instead of doubling it
+        { id: "D", text: "$27$" }
       ],
       correctAnswer: "C",
-      hint: "In a 30-60-90 triangle, sides are in ratio 1:√3:2. The shortest side is opposite 30°, and the longest is the hypotenuse.",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~5s):** In a $30$-$60$-$90$ triangle the hypotenuse (longest side) is twice the shortest side: $2\\times5=10$, which is choice C.\n\n**The Full Solution:**\nStep 1: The side ratio is $x:x\\sqrt{3}:2x$, where $x$ is the shortest side and $2x$ is the hypotenuse.\nStep 2: With $x=5$, the longest side is $2x=10$.\nStep 3: Check: the sides are $5$, $5\\sqrt{3}$, $10$, and $5^2+(5\\sqrt{3})^2=25+75=100=10^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5\\sqrt{2}$): uses the $\\sqrt{2}$ multiplier from a $45$-$45$-$90$ triangle.\n* Choice B ($5\\sqrt{3}$): that's the middle side (opposite $60^\\circ$), not the longest side.\n* Choice D ($10\\sqrt{3}$): applies both multipliers — doubles and then multiplies by $\\sqrt{3}$.\n\n**Test Day Takeaway:** $30$-$60$-$90$ sides go $x:x\\sqrt{3}:2x$. Shortest side $\\times2=$ hypotenuse; shortest side $\\times\\sqrt{3}=$ longer leg.",
-      skills: ['special-right-triangles']
+      hint: "The side opposite the largest angle is the hypotenuse — compare it with the shortest side.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** The hypotenuse is twice the side opposite the $30°$ angle: $2(9) = 18$.\n\n**The Full Solution:**\nStep 1: The side opposite the $90°$ angle is the hypotenuse.\nStep 2: In a $30°$-$60°$-$90°$ triangle the sides are in the ratio $1 : \\sqrt{3} : 2$, shortest to longest.\nStep 3: The shorter leg is $9$, so the hypotenuse is $2(9) = 18$.\n\nVerification: $9^2 + (9\\sqrt{3})^2 = 81 + 243 = 324 = 18^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($9\\sqrt{2}$): uses $\\sqrt{2}$, which belongs to the $45°$-$45°$-$90°$ ratios.\n* Choice B ($9\\sqrt{3}$): gives the side opposite the $60°$ angle.\n* Choice D ($27$): triples the shorter leg instead of doubling it.\n\n**Test Day Takeaway:** The shorter leg of a $30°$-$60°$-$90°$ triangle is exactly half the hypotenuse.",
+      skills: ["special-right-triangles"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "In a 45-45-90 triangle, if the hypotenuse is 10, what is each leg?",
+      question: "A dome shutter's diagonal stay makes a $45^\\circ$ angle with the horizontal rail beneath it. If the stay spans $9$ meters horizontally, how long is the stay, in meters?",
       choices: [
-        { id: "A", text: "5" },
-        { id: "B", text: "5√2" },
-        { id: "C", text: "10/√2 = 5√2" },
-        { id: "D", text: "Both B and C" }
+        // distractor: divides by the square root of 2 instead of multiplying
+        { id: "A", text: "$\\frac{9\\sqrt{2}}{2}$" },
+        { id: "B", text: "$9\\sqrt{2}$" },
+        // distractor: uses the 30-60-90 ratio of the square root of 3
+        { id: "C", text: "$9\\sqrt{3}$" },
+        // distractor: doubles the run, as though the hypotenuse were twice a leg
+        { id: "D", text: "$18$" }
       ],
-      correctAnswer: "C",
-      hint: "To find a leg from the hypotenuse in a 45-45-90 triangle, divide by √2. Then rationalize the denominator.",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~10s):** Each leg is the hypotenuse divided by $\\sqrt{2}$: $\\frac{10}{\\sqrt{2}}=5\\sqrt{2}$. Choice C shows that exact step.\n\n**The Full Solution:**\nStep 1: In a $45$-$45$-$90$ triangle, hypotenuse $=\\text{leg}\\times\\sqrt{2}$, so $\\text{leg}=\\frac{\\text{hypotenuse}}{\\sqrt{2}}=\\frac{10}{\\sqrt{2}}$.\nStep 2: Rationalize: $\\frac{10}{\\sqrt{2}}\\cdot\\frac{\\sqrt{2}}{\\sqrt{2}}=\\frac{10\\sqrt{2}}{2}=5\\sqrt{2}$.\nStep 3: Check: $(5\\sqrt{2})^2+(5\\sqrt{2})^2=50+50=100=10^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): divides by $2$ instead of $\\sqrt{2}$; halving is the $30$-$60$-$90$ rule. Test: $5^2+5^2=50\\neq100$.\n* Choice B ($5\\sqrt{2}$): the right number, but choice C is the form that shows the $\\frac{10}{\\sqrt{2}}=5\\sqrt{2}$ derivation the question is keyed to.\n* Choice D (Both B and C): only C is presented as the full derivation, so it is the single intended answer.\n\n**Test Day Takeaway:** To go from hypotenuse to leg in a $45$-$45$-$90$ triangle, divide by $\\sqrt{2}$, then rationalize: $\\frac{a}{\\sqrt{2}}=\\frac{a\\sqrt{2}}{2}$.",
-      skills: ['special-right-triangles']
+      correctAnswer: "B",
+      hint: "A $45^\\circ$ angle with the rail settles the third angle as well.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~20s):** A $45^\\circ$ stay makes a $45$-$45$-$90$ triangle, whose hypotenuse is $\\sqrt{2}$ times a leg: $9\\sqrt{2}$.\n\n**The Full Solution:**\nStep 1: The stay, the horizontal run, and the vertical rise form a right triangle with a $45^\\circ$ angle, so the third angle is also $45^\\circ$.\nStep 2: In a $45$-$45$-$90$ triangle the two legs are equal and the hypotenuse is $\\sqrt{2}$ times a leg.\nStep 3: The stay is the hypotenuse, so it measures $9\\sqrt{2}$ meters. Check: $9^2 + 9^2 = 162 = (9\\sqrt{2})^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{9\\sqrt{2}}{2}$): dividing the leg by $\\sqrt{2}$ instead of multiplying, which makes the hypotenuse shorter than a leg.\n* Choice C ($9\\sqrt{3}$): using the $30$-$60$-$90$ ratio $\\sqrt{3}$, which belongs to a different special triangle.\n* Choice D ($18$): doubling the run; only in a $30$-$60$-$90$ triangle is the hypotenuse twice a side, and then twice the shorter leg.\n\n**Test Day Takeaway:** Identify which special triangle the given angle creates before reaching for a ratio.",
+      skills: ["special-right-triangles"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "In a 30-60-90 triangle with hypotenuse 8, what is the side opposite the 60° angle?",
+      question: "In right triangle $ABC$, the measure of angle $A$ is $30°$, the measure of angle $B$ is $60°$, and $AB = 22$. What is the length of $\\overline{AC}$?",
       choices: [
-        { id: "A", text: "4" },
-        { id: "B", text: "4√3" },
-        { id: "C", text: "8√3" },
-        { id: "D", text: "8/√3" }
+        // distractor: gives $BC$, the side opposite the $30°$ angle
+        { id: "A", text: "$11$" },
+        // distractor: uses the $45°$-$45°$-$90°$ ratio
+        { id: "B", text: "$11\\sqrt{2}$" },
+        { id: "C", text: "$11\\sqrt{3}$" },
+        // distractor: multiplies the hypotenuse by $\sqrt{3}$ without halving it first
+        { id: "D", text: "$22\\sqrt{3}$" }
       ],
-      correctAnswer: "B",
-      hint: "First find the shortest side (opposite 30°) using the ratio 1:√3:2. Then multiply by √3 for the side opposite 60°.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** Find $x$ from the hypotenuse $2x=8 \\Rightarrow x=4$, then the side opposite $60^\\circ$ is $x\\sqrt{3}=4\\sqrt{3}$, which is choice B.\n\n**The Full Solution:**\nStep 1: Use the $30$-$60$-$90$ ratio $x:x\\sqrt{3}:2x$. The hypotenuse is $2x=8$, so $x=4$.\nStep 2: The side opposite $60^\\circ$ is the longer leg, $x\\sqrt{3}=4\\sqrt{3}$.\nStep 3: Check: the sides are $4$, $4\\sqrt{3}$, $8$, and $4^2+(4\\sqrt{3})^2=16+48=64=8^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): that's the short side (opposite $30^\\circ$) — students find $x$ and stop before multiplying by $\\sqrt{3}$.\n* Choice C ($8\\sqrt{3}$): multiplies the hypotenuse by $\\sqrt{3}$ instead of multiplying $x$.\n* Choice D ($\\frac{8}{\\sqrt{3}}$): divides the hypotenuse by $\\sqrt{3}$, which matches no side of the triangle.\n\n**Test Day Takeaway:** For $30$-$60$-$90$ triangles, always solve for $x$ first from the side you know, then build the target side as $x\\sqrt{3}$ or $2x$.",
-      skills: ['special-right-triangles']
+      correctAnswer: "C",
+      hint: "Work through the shortest side before reaching for $\\sqrt{3}$.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~30s):** $\\overline{AB}$ is the hypotenuse, so $BC = 11$ and $AC = 11\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: Angle $C$ measures $180 - 30 - 60 = 90°$, so $\\overline{AB}$ is the hypotenuse.\nStep 2: The side opposite the $30°$ angle is $\\overline{BC}$, half the hypotenuse: $BC = 11$.\nStep 3: The side opposite the $60°$ angle is $\\overline{AC}$, which is $\\sqrt{3}$ times the shorter leg: $AC = 11\\sqrt{3}$.\n\nVerification: $11^2 + (11\\sqrt{3})^2 = 121 + 363 = 484 = 22^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): gives $BC$, the side opposite the $30°$ angle.\n* Choice B ($11\\sqrt{2}$): uses the $45°$-$45°$-$90°$ ratio.\n* Choice D ($22\\sqrt{3}$): multiplies the hypotenuse by $\\sqrt{3}$ without halving it first.\n\n**Test Day Takeaway:** Build a $30°$-$60°$-$90°$ triangle from its shortest side: halve the hypotenuse, then multiply by $\\sqrt{3}$.",
+      skills: ["special-right-triangles"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "The diagonal of a square is 10. What is the side length?",
+      question: "A beet-loading conveyor rises from the field to a trailer at an angle of $30^\\circ$ with the level ground, and its horizontal run measures $4\\sqrt{3}$ meters. What is the length, in meters, of the conveyor?",
       choices: [
-        { id: "A", text: "5" },
-        { id: "B", text: "5√2" },
-        { id: "C", text: "10/√2 = 5√2" },
-        { id: "D", text: "10√2" }
+        // distractor: reports the vertical rise instead of the conveyor's length
+        { id: "A", text: "$4$" },
+        // distractor: repeats the given horizontal run
+        { id: "B", text: "$4\\sqrt{3}$" },
+        { id: "C", text: "$8$" },
+        // distractor: doubles the run instead of the rise
+        { id: "D", text: "$8\\sqrt{3}$" }
       ],
       correctAnswer: "C",
-      hint: "A square's diagonal divides it into two 45-45-90 triangles. The diagonal is the hypotenuse of these triangles.",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~10s):** A square's diagonal is the hypotenuse of a $45$-$45$-$90$ triangle, so the side is $\\frac{\\text{diagonal}}{\\sqrt{2}}=\\frac{10}{\\sqrt{2}}=5\\sqrt{2}$. Choice C shows that step.\n\n**The Full Solution:**\nStep 1: The diagonal splits the square into two $45$-$45$-$90$ triangles, with the diagonal as the hypotenuse and the sides as the legs.\nStep 2: $\\text{side}=\\frac{\\text{diagonal}}{\\sqrt{2}}=\\frac{10}{\\sqrt{2}}$.\nStep 3: Rationalize: $\\frac{10}{\\sqrt{2}}=\\frac{10\\sqrt{2}}{2}=5\\sqrt{2}$. Check: $(5\\sqrt{2})^2+(5\\sqrt{2})^2=50+50=100=10^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): divides by $2$ instead of $\\sqrt{2}$; a square with side $5$ has diagonal $5\\sqrt{2}\\approx7.07$, not $10$.\n* Choice B ($5\\sqrt{2}$): the right number, but choice C is the form that displays the $\\frac{10}{\\sqrt{2}}=5\\sqrt{2}$ derivation the question is keyed to.\n* Choice D ($10\\sqrt{2}$): multiplies the diagonal by $\\sqrt{2}$ instead of dividing — that gives the diagonal of a side-$10$ square, the inverse operation.\n\n**Test Day Takeaway:** A square with side $s$ has diagonal $s\\sqrt{2}$, so to recover the side from the diagonal, divide by $\\sqrt{2}$: $s=\\frac{d}{\\sqrt{2}}=\\frac{d\\sqrt{2}}{2}$.",
-      skills: ['special-right-triangles']
+      hint: "The run is not the side opposite the $30^\\circ$ angle.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~35s):** The run is the longer leg, $4\\sqrt{3}$, so the shorter leg is $4$ and the conveyor, the hypotenuse, is $8$ meters.\n\n**The Full Solution:**\nStep 1: The conveyor, its horizontal run, and its vertical rise form a $30$-$60$-$90$ triangle, and the run lies opposite the $60^\\circ$ angle, so it is the longer leg.\nStep 2: The longer leg is $\\sqrt{3}$ times the shorter leg, so the rise is $\\frac{4\\sqrt{3}}{\\sqrt{3}} = 4$ meters.\nStep 3: The hypotenuse is twice the shorter leg, so the conveyor is $8$ meters long. Check: $4^2 + (4\\sqrt{3})^2 = 16 + 48 = 64 = 8^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reporting the vertical rise, the shorter leg, instead of the conveyor itself.\n* Choice B ($4\\sqrt{3}$): repeating the horizontal run that the question already gave.\n* Choice D ($8\\sqrt{3}$): doubling the run; the hypotenuse is twice the SHORTER leg, not twice the longer one.\n\n**Test Day Takeaway:** In a $30$-$60$-$90$ triangle, find the shorter leg first — every other length is measured from it.",
+      skills: ["special-right-triangles"]
     }
   ]
 };

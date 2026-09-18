@@ -5,30 +5,30 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
+  "module": 2,
+  "passage": "Maize farmers in East Africa contend with two entwined pests: stemborer moths, whose larvae hollow out the growing stalks, and striga, a parasitic weed that fastens onto maize roots. The entomologist Zeyaur Khan and his colleagues developed a counterintuitive remedy called push-pull: the fodder legume desmodium is sown between the maize rows, and napier grass is planted as a border around the field. __Desmodium releases volatile compounds that repel egg-laying stemborer moths, while the napier grass at the field's edge emits odors that attract them, drawing the infestation away from the crop.__ Desmodium's roots, meanwhile, induce striga seeds to germinate before they can attach, so the parasite exhausts itself in the soil. What looks like folk gardening is, in mechanism, applied chemical ecology.",
   "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
   "choices": [
     {
       "id": "A",
-      "text": "It introduces a revised standard of success that the rest of the passage uses to reinterpret what coral-reef restoration should aim to achieve."
+      "text": "It supplies the chemical mechanism behind the planting arrangement, grounding the passage's closing claim that the method is applied science rather than folk practice."
     },
     {
       "id": "B",
-      "text": "It argues that simply counting how many coral transplants are still alive after a single year is the most reliable possible measure of a restoration project's success."
+      "text": "It concedes that the push-pull arrangement fails against one of the two pests the passage says farmers must contend with."
     },
     {
       "id": "C",
-      "text": "It provides the chemical explanation for why corals transplanted onto degraded reefs so often fail to survive in warming seas."
+      "text": "It introduces a rival explanation of the method's success that the passage's final sentence rejects."
     },
     {
       "id": "D",
-      "text": "It describes the specific nursery techniques used to grow the coral fragments before they are transplanted onto a degraded reef."
+      "text": "It reports the results of a field trial comparing yields in push-pull plots with yields in conventionally planted fields."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage contrasts an old standard of restoration success (counting surviving transplants) with a newer one, and the underlined sentence states that newer standard — whether the patch resumes the functions of a reef — which the rest of the passage then uses to reinterpret what restoration should aim for. Choice B endorses the old standard the sentence moves beyond; choice C invents a chemical explanation; and choice D describes nursery techniques the passage does not discuss.",
-  "passage": "Coral reefs damaged by warming seas do not always recover on their own, and restoration projects have begun transplanting nursery-grown coral fragments onto degraded reefs. Early projects measured success simply by counting how many transplants were still alive a year later. __More recent work, however, has shifted the standard of success from the survival of individual fragments to whether the restored patch resumes the ecological functions of a reef — sheltering fish, cementing new limestone, and producing enough larvae to seed reefs downstream.__ By that measure, a plot crowded with living coral may still be judged a failure if no fish return and no new larvae are produced. The change reflects a broader recognition that a reef is not merely a collection of corals but a working system whose value lies in what it does.",
+  "explanation": "**Choice A is correct.** The underlined sentence explains why the planting arrangement works — repellent volatiles inside the field, attractant odors at its edge — and that mechanism is what licenses the final sentence's verdict: applied chemical ecology, not folk gardening.\n\n**The Full Solution:**\n- Before the underline: the arrangement is described but unexplained, and called \"counterintuitive.\"\n- The underlined sentence converts arrangement into mechanism: push (desmodium repels) and pull (napier grass attracts).\n- The closing sentence generalizes from exactly this — the method's scientific character — so the underline is its foundation.\n\n**Why the other choices are wrong:**\n- B: The sentence shows the method working against stemborers; the striga mechanism follows in the next sentence. Nothing is conceded.\n- C: It gives the passage's own explanation, not a rival one, and the final sentence embraces it.\n- D: No trial, plots, or yields appear anywhere in the passage.",
   "_meta": {
-    "anchor": "coral reef restoration — function-based success metrics (NEW)"
-  },
-  "module": 2
+    "anchor": "Zeyaur Khan — push-pull intercropping; mechanism sentence grounding the closing claim"
+  }
 }

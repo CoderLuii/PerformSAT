@@ -1,0 +1,25 @@
+{
+  "id": 9,
+  "question": "The table shows the number of juniors and seniors at a high school who ride the bus to school and who walk to school, where $k$ is a constant. The probability that a randomly selected bus rider is a senior is $0.4$. What is the value of $k$?",
+  "questionTable": {
+    "headers": [
+      "",
+      "Rides the bus",
+      "Walks"
+    ],
+    "rows": [
+      [
+        "Juniors",
+        "$45$",
+        "$60$"
+      ],
+      [
+        "Seniors",
+        "$k$",
+        "$72$"
+      ]
+    ]
+  },
+  "correctAnswer": "30",
+  "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**The correct answer is $30$.**\n\n**The Fast Way (~25s):** Seniors are $0.4$ of the bus riders, so juniors are the other $0.6$; $45$ juniors correspond to $0.6$, so $0.4$ corresponds to $45\\cdot\\frac{0.4}{0.6}=30$.\n\n**The Full Solution:**\nStep 1: “A randomly selected bus rider is a senior” restricts the sample space to the bus column, whose total is $45+k$. The favorable count is $k$.\nStep 2: So $\\dfrac{k}{45+k}=0.4$. Multiply both sides by $45+k$: $k=0.4(45+k)=18+0.4k$.\nStep 3: Then $0.6k=18$, so $k=30$. Check: the bus column totals $45+30=75$, and $\\dfrac{30}{75}=0.4$ ✓\n\n**Common Mistakes:**\n* $18$: computes $0.4(45)$, using only the junior bus count as the denominator instead of the whole bus column.\n* $48$: reverses the condition and solves $\\dfrac{k}{k+72}=0.4$, which answers “the probability that a senior rides the bus.”\n* $27$: computes $0.6(45)$, applying the leftover $60\\%$ to the junior count rather than solving the equation.\n\n**Test Day Takeaway:** In a conditional probability the given condition names the denominator — here the bus column — and that denominator must include the unknown when the unknown sits inside it."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 702,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "Genome-wide studies have established that human populations living in Africa carry more genetic variation than those of the rest of the world combined—a legacy of the continent's especially deep evolutionary history. Because so many distinct lineages trace back to ancestral African populations, these groups ______ a wealth of inherited variants found nowhere else, variants that researchers need in order to understand both human evolution and the genetic roots of disease.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "harbor"
-    },
-    {
-      "id": "B",
-      "text": "display"
-    },
-    {
-      "id": "C",
-      "text": "lack"
-    },
-    {
-      "id": "D",
-      "text": "express"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage says African populations contain an unusually large store of genetic variants, so they \"harbor\" that variation — the word captures the sense of holding or containing within. \"Display\" suggests outward showing rather than possessing a reservoir, \"lack\" reverses the meaning, and \"express\" is a narrower biological term about activating genes that does not fit the idea of carrying many inherited variants."
+ "id": 702,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "In the mangrove forests of Southeast Asia, thousands of male fireflies gather in single trees at night and flash in near-perfect unison. Researchers studying the displays note that a lone male's flash is easily lost among the leaves. Synchronized flashing ______ the signal: a whole tree pulsing on one beat can be seen by females far across the water, where a single insect's light would never carry.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "amplifies"
+  },
+  {
+   "id": "B",
+   "text": "delays"
+  },
+  {
+   "id": "C",
+   "text": "records"
+  },
+  {
+   "id": "D",
+   "text": "interrupts"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** One flash is easily lost among the leaves, but a whole tree pulsing on one beat can be seen far across the water — flashing together makes the signal stronger, which is what \"amplifies\" means.\n\n**The Full Solution:**\n- The passage sets up a problem: a lone male's flash is \"easily lost among the leaves.\"\n- The colon after the blank gives the payoff of synchrony: the combined display reaches females \"far across the water,\" farther than one insect's light could.\n- A word meaning to strengthen or boost fits that cause-and-effect, and \"amplifies\" means exactly that.\n\n**Why the other choices are wrong:**\n- B: \"Delays\" is about timing, not strength — nothing suggests the signal is postponed.\n- C: \"Records\" would mean the flashing stores the signal, but the fireflies are producing it, not preserving it.\n- D: \"Interrupts\" would mean the synchrony breaks the signal, the opposite of making it visible farther away."
 }

@@ -1,0 +1,87 @@
+{
+ "id": "bank-geo-355",
+ "question": "A supply catalog lists two similar triangular gauze panels, shown with corresponding vertices $ABC$ and $DEF$ and with lengths given in inches. Panel $ABC$ has an area of $24$ square inches. What is the area, in square inches, of panel $DEF$?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "vertices": [
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      8,
+      0
+     ]
+    ],
+    "labels": [
+     "A",
+     "B",
+     "C"
+    ],
+    "sideLabels": [
+     "6",
+     "8",
+     "10"
+    ]
+   },
+   "triangle2": {
+    "vertices": [
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      0
+     ]
+    ],
+    "labels": [
+     "D",
+     "E",
+     "F"
+    ],
+    "sideLabels": [
+     "",
+     "12",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$36$"
+  },
+  {
+   "id": "B",
+   "text": "$54$"
+  },
+  {
+   "id": "C",
+   "text": "$81$"
+  },
+  {
+   "id": "D",
+   "text": "$96$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales the area by the length ratio 1.5 without squaring it: 24 x 1.5 = 36",
+  "C": "cubes the length ratio as if scaling a volume: 24 x 1.5^3 = 81",
+  "D": "pairs the 12 with AB = 6 instead of BC = 8, giving ratio 2 and 24 x 2^2 = 96"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Similar Figures Area Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** $\\overline{EF}$ corresponds to $\\overline{BC}$, so the length ratio is $\\frac{12}{8}=1.5$ and the area ratio is $1.5^2=2.25$; then $24(2.25)=54$ square inches.\n\n**The Full Solution:**\n\nStep 1 — Match the sides. The vertex order $ABC \\to DEF$ pairs $B$ with $E$ and $C$ with $F$, so the labeled side $\\overline{EF}=12$ corresponds to $\\overline{BC}=8$, not to $\\overline{AB}=6$.\n\nStep 2 — Find the ratios. Length ratio $=\\frac{12}{8}=\\frac{3}{2}$, so area ratio $=\\left(\\frac{3}{2}\\right)^2=\\frac{9}{4}$.\n\nStep 3 — Scale the area: $24\\left(\\frac{9}{4}\\right)=54$ square inches. Check: panel $ABC$ is a $6$-$8$-$10$ right triangle of area $\\frac{1}{2}(6)(8)=24$, and $DEF$ is $9$-$12$-$15$ with area $\\frac{1}{2}(9)(12)=54$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($36$): this scales the area by $1.5$ instead of by $1.5^2$.\n* Choice C ($81$): this cubes the ratio, $24(1.5)^3=81$, which is how volumes scale, not areas.\n* Choice D ($96$): pairing $12$ with $\\overline{AB}=6$ gives ratio $2$ and $24(2)^2=96$.\n\n**Test Day Takeaway:** Read the correspondence from the vertex order before dividing — a mismatched pair poisons every step that follows."
+}

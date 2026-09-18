@@ -1,42 +1,42 @@
 {
-  "id": 1254,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 2,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Lonnie G. Bunch III was founding director of the Smithsonian's National Museum of African American History and Culture (NMAAHC).",
-      "When Bunch began the project in 2005, the museum had no building, no staff, and no founding collection.",
-      "Rather than draw on existing institutional holdings, Bunch launched a public initiative called Save Our African American Treasures.",
-      "At regional sessions, families brought heirlooms—photographs, garments, documents—for evaluation by curators and conservators.",
-      "Many objects acquired through the initiative were later donated and became part of NMAAHC's founding collection.",
-      "Bunch argued that the museum had to be built from material ordinary families had preserved, not assembled top-down from existing collections."
-    ],
-    "goal": "The student wants to emphasize the central principle that guided Bunch's approach to assembling NMAAHC's founding collection."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Lonnie G. Bunch III, the founding director of the Smithsonian's National Museum of African American History and Culture, began the project in 2005 with no building, no permanent staff, and no founding collection."
-    },
-    {
-      "id": "B",
-      "text": "Bunch held that an African American history museum had to be built from objects ordinary families had preserved, not from existing institutional holdings, and he created the Save Our African American Treasures initiative to gather such heirlooms for the museum's founding collection."
-    },
-    {
-      "id": "C",
-      "text": "Faced with no building, staff, or collection in 2005, Bunch turned to existing institutional holdings to assemble the material from which the museum's founding collection would eventually be built."
-    },
-    {
-      "id": "D",
-      "text": "Through Save Our African American Treasures, Bunch's team held regional sessions where families brought photographs, garments, and documents for evaluation by curators, many of which were later donated to the museum."
-    }
+ "id": 1254,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 2,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "The Shakers were a religious community that established villages across the northeastern United States beginning in the late eighteenth century.",
+   "Shaker craftsmen built furniture for the community's own dwellings, workshops, and meetinghouses.",
+   "Community rules discouraged carving, veneer, and other ornament as worldly display.",
+   "Shaker belief held that labor was a form of worship and that an object's beauty lay in its fitness for use.",
+   "Chairs were made light enough to hang from wall pegs; cupboards and drawers were often built into the walls themselves.",
+   "Museums now exhibit Shaker furniture as a landmark of functional design."
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to emphasize the central principle behind Bunch's approach, and B names it—the museum had to be built from what ordinary families had preserved rather than from existing holdings—and connects that principle to the initiative he created to act on it. A reports the project's bare-bones start without the guiding idea. C contradicts the notes, which say Bunch deliberately avoided existing institutional holdings. D describes the mechanics of the initiative but leaves the underlying principle unstated."
+  "goal": "The student wants to emphasize the central principle that guided Shaker furniture making."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The Shakers were a religious community that established villages across the northeastern United States beginning in the late eighteenth century."
+  },
+  {
+   "id": "B",
+   "text": "Holding that labor was worship and that beauty lay in fitness for use, Shaker craftsmen shunned ornament and built furniture whose every feature answered a practical need."
+  },
+  {
+   "id": "C",
+   "text": "Museums now exhibit the furniture that Shaker craftsmen made for their communities as a landmark in the history of functional design."
+  },
+  {
+   "id": "D",
+   "text": "Shaker chairs were made light enough to hang from pegs set into the wall, and Shaker cupboards and chests of drawers were often built directly into the walls of the rooms that they served."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The goal asks for the principle behind the furniture, and B states it in the Shakers' own terms — labor as worship, beauty as fitness for use — and then shows the principle at work in the shunning of ornament and the practicality of every feature.\n\n**The Full Solution:**\n- A principle is a guiding belief, so the right choice must lead with the belief, not with facts around it.\n- The notes give the belief twice over: ornament was rejected as worldly display, and beauty was located in fitness for use.\n- B opens with exactly that creed and ties it to the practice it produced, which is what \"emphasize the central principle\" requires.\n\n**Why the other choices are wrong:**\n- A: It supplies background about the community's villages and says nothing about furniture or belief.\n- C: It reports how museums regard the furniture today — reception, not the principle that guided its making.\n- D: It gives two vivid examples of the principle's results while leaving the principle itself unstated."
 }

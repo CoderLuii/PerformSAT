@@ -1,0 +1,63 @@
+{
+  "id": 6,
+  "question": "For each of six trials, a technician recorded the value of $x$ and the corresponding value of $y$. The scatterplot shows the results. Which equation is the most appropriate linear model for these data?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          4,
+          23
+        ],
+        [
+          5,
+          27
+        ],
+        [
+          6,
+          32
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 7,
+      "yMin": 0,
+      "yMax": 35,
+      "xGridStep": 1,
+      "yGridStep": 5,
+      "yLabelStep": 10
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = 2x + 5$"
+    },
+    {
+      "id": "B",
+      "text": "$y = 5x + 2$"
+    },
+    {
+      "id": "C",
+      "text": "$y = 5x - 2$"
+    },
+    {
+      "id": "D",
+      "text": "$y = -5x + 2$"
+    }
+  ],
+  "correctAnswer": "B",
+  "hint": "Fix the sign of the rate of change from the direction of the trend, then read where the pattern would meet the vertical axis.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** The points climb about $5$ units per step and, traced back to $x = 0$, land near $2$: $y = 5x + 2$ — choice B.\n\n**The Full Solution:**\nStep 1: The values rise as $x$ rises, so the rate of change is positive, which rules out the negative-slope choice.\nStep 2: Estimate the rate from the two end points, $(1, 7)$ and $(6, 32)$: $\\frac{32-7}{6-1} = \\frac{25}{5} = 5$.\nStep 3: Estimate the starting value: at $x = 1$ the data are near $7$, so at $x = 0$ they would be near $7 - 5 = 2$, a positive number.\nStep 4: That gives $y = 5x + 2$, which lands within a unit or two of every plotted point. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = 2x + 5$): swaps the rate of change and the starting value; at $x = 6$ it predicts $17$, while the data are near $32$.\n* Choice C ($y = 5x - 2$): has the right rate of change but a negative starting value; the trend traced back to $x = 0$ sits above the axis, not below it.\n* Choice D ($y = -5x + 2$): uses a negative rate of change, but the plotted values increase as $x$ increases.\n\n**Test Day Takeaway:** For a scatterplot model, settle the sign of the slope and the sign of the intercept first — that alone usually eliminates three of the four choices."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-286",
+ "question": "A rover wheel's slip ratio is modeled by $h(x)=\\dfrac{3x}{x-4}$, where $x\\neq 4$ is the drive current in amperes. At one current the slip ratio is $4$ greater than its value at $x=2$. What is that current?",
+ "correctAnswer": "-2",
+ "explanation": "**SAT Pattern: Rational Equation with Extraneous Solution**\n\n**The correct answer is $-2$.**\n\n**The Fast Way (~45s):** $h(2)=\\frac{6}{-2}=-3$, so the target is $1$; solving $\\frac{3x}{x-4}=1$ gives $3x=x-4$ and $x=-2$.\n\n**The Full Solution:**\n\nStep 1: Evaluate the reference value: $h(2)=\\frac{3(2)}{2-4}=\\frac{6}{-2}=-3$, so $h(2)+4=1$.\n\nStep 2: Set the model equal to that target: $\\frac{3x}{x-4}=1$, and multiply by $x-4$ to get $3x=x-4$.\n\nStep 3: Solve: $2x=-4$, so $x=-2$, which is allowed since $-2\\neq4$. Check: $h(-2)=\\frac{-6}{-6}=1$, exactly $h(2)+4$.\n\n**Common Mistakes:**\n\n* Solving $h(x)=-3$ instead of $h(x)=1$ returns the given input $x=2$.\n* Reading $h(2)+4$ as $h(6)$ gives the target $9$ and the wrong current $x=6$.\n\n**Test Day Takeaway:** Compute the numerical target completely before setting the function equal to it; the $+4$ shifts the value, not the input."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "An ecologist rates two replanting schedules for a burned hillside, assigning the index values $25^{2x + 1}$ and $125^{x - c}$ after $x$ growing seasons, where $c$ is a constant. The two schedules receive equal index values only when $x = 7$. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-23$"
+  },
+  {
+   "id": "B",
+   "text": "$-8$"
+  },
+  {
+   "id": "C",
+   "text": "$-3$"
+  },
+  {
+   "id": "D",
+   "text": "$3$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "rewrites only the left side in base 5, solving 4x + 2 = x - c at x = 7",
+  "B": "equates the printed exponents without rewriting either side in base 5, solving 2x + 1 = x - c",
+  "D": "drops the negative when isolating c in 30 = 21 - 3c"
+ },
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**Choice C is correct.** Writing both sides in base $5$ gives $5^{4x + 2} = 5^{3x - 3c}$, so $4x + 2 = 3x - 3c$. At $x = 7$, $30 = 21 - 3c$, so $c = -3$.\n\n**The Fast Way (~30s):** $4(7) + 2 = 30$ and $3(7 - c) = 30$ gives $7 - c = 10$, so $c = -3$.\n\n**The Full Solution:**\nStep 1: $25 = 5^2$ and $125 = 5^3$, so the two index values are $5^{2(2x + 1)} = 5^{4x + 2}$ and $5^{3(x - c)} = 5^{3x - 3c}$.\nStep 2: Equal powers of the same base force equal exponents: $4x + 2 = 3x - 3c$. Substituting $x = 7$ gives $30 = 21 - 3c$, so $-3c = 9$ and $c = -3$.\nStep 3: Check with the true value: with $c = -3$ the second index value is $125^{x + 3}$, and at $x = 7$ that is $125^{10} = 5^{30}$, while $25^{15} = 5^{30}$ as well.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-23$): converts only $25$ to base $5$ and leaves $125$ alone, solving $4x + 2 = x - c$, which gives $30 = 7 - c$.\n* Choice B ($-8$): sets the printed exponents equal without any base conversion, solving $2x + 1 = x - c$, which gives $15 = 7 - c$.\n* Choice D ($3$): reaches $30 = 21 - 3c$ correctly but divides $9$ by $3$ without carrying the negative sign.\n\n**Test Day Takeaway:** Rewrite both sides over the same base before touching the exponents, and remember that the outer exponent multiplies everything inside the parentheses, including a constant."
+}

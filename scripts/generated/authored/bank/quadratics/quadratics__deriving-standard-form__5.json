@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "The function $f$ is defined by $f(x) = -3(x - 4)^2 + 27$. This function can also be written as $f(x) = a(x - r)(x - s)$, where $a$, $r$, and $s$ are constants and $r < s$. What is the value of $r + s$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-8$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$8$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "attaches the sign of a to the sum",
+    "B": "reports the axis of symmetry",
+    "C": "reports the distance between the zeros"
+  },
+  "correctAnswer": "D",
+  "hint": "The constants $r$ and $s$ are the zeros of the function, so set the vertex form equal to zero.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~35s):** $-3(x - 4)^2 + 27 = 0$ gives $(x - 4)^2 = 9$, so the zeros are $1$ and $7$ and their sum is $8$.\n\n**The Full Solution:**\nStep 1: In the form $a(x - r)(x - s)$ the constants $r$ and $s$ are the zeros of $f$, so solve $f(x) = 0$.\nStep 2: From $-3(x - 4)^2 + 27 = 0$, isolate the square: $(x - 4)^2 = 9$, so $x - 4 = \\pm 3$ and $x = 1$ or $x = 7$.\nStep 3: With $r = 1$ and $s = 7$, the sum is $r + s = 8$. Check: $-3(x - 1)(x - 7) = -3(x^2 - 8x + 7) = -3x^2 + 24x - 21$, and expanding the vertex form gives the same. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$): attaches the sign of $a = -3$ to the sum, but the leading coefficient does not affect where the zeros are.\n* Choice B ($4$): reports the axis of symmetry, which is the AVERAGE of the two zeros rather than their sum.\n* Choice C ($6$): reports $7 - 1$, the distance between the zeros, instead of their sum.\n\n**Test Day Takeaway:** Vertex form converts to factored form through the zeros; the vertex's $x$-coordinate is always the midpoint of those zeros, never their sum."
+}

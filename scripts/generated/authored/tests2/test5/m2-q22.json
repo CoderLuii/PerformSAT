@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "The depth of a tidal channel, in meters, at a horizontal distance $x$ meters from its west bank is modeled by $d(x)=-0.05x^{2}+2x$ for $0\\le x\\le 40$. A vessel requires a depth of at least $15$ meters. Which inequality describes every position where the channel is deep enough?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0\\le x\\le 10$"
+  },
+  {
+   "id": "B",
+   "text": "$10\\le x\\le 20$"
+  },
+  {
+   "id": "C",
+   "text": "$10\\le x\\le 30$"
+  },
+  {
+   "id": "D",
+   "text": "$30\\le x\\le 40$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reverses the inequality and takes the stretch before the depth first reaches 15 meters, where the channel is too shallow",
+  "B": "stops at the vertex x = 20, the deepest point, assuming the depth drops below 15 meters right after the maximum",
+  "D": "takes the stretch past the second crossing at x = 30, where the depth has already fallen back below 15 meters"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice C is correct.**\n\n**The Fast Way (~55s):** Solve $-0.05x^{2}+2x=15$: multiplying by $-20$ gives $x^{2}-40x+300=0$, so $x=10$ and $x=30$. The parabola opens downward, so the depth is at least $15$ between those crossings.\n\n**The Full Solution:**\nStep 1: Write the requirement as an inequality: $-0.05x^{2}+2x\\ge 15$. Multiply both sides by $-20$ and reverse the inequality sign: $x^{2}-40x\\le -300$, or $x^{2}-40x+300\\le 0$.\nStep 2: Find where the expression equals zero. Factoring, $x^{2}-40x+300=(x-10)(x-30)$, so the boundary positions are $x=10$ and $x=30$.\nStep 3: Decide which side satisfies the inequality. Since $x^{2}-40x+300$ opens upward, it is negative or zero exactly between its zeros, so $10\\le x\\le 30$, and both endpoints lie inside the given domain. Check the midpoint: $d(20)=-0.05(400)+40=20$ meters, which clears $15$, while $d(5)=-1.25+10=8.75$ meters, which does not ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0\\le x\\le 10$): keeps the wrong side of the first crossing. At $x=5$ the depth is only $8.75$ meters.\n* Choice B ($10\\le x\\le 20$): stops at the vertex $x=20$. That is where the channel is deepest, not where it stops being deep enough; the depth stays above $15$ meters until $x=30$.\n* Choice D ($30\\le x\\le 40$): takes the stretch beyond the second crossing. At $x=35$ the depth is $8.75$ meters, the mirror image of the $x=5$ position.\n\n**Test Day Takeaway:** Solve the equation first to get the boundary values, then use the direction the parabola opens to pick the region. A downward parabola is above a horizontal cutoff between its two crossings and below it outside them — test one interior point to confirm."
+}

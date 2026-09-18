@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-478",
+  "question": "A set-carpentry crew's framing model doubles $4x + 7y = 31$ and adds the result to $ax - 14y = b$, where $x$ is the hours spent framing one flat and $y$ the hours spent sheathing it; the $y$-terms cancel and $19x = 100$ remains. What is the value of $a + b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-49$"
+    },
+    {
+      "id": "B",
+      "text": "$11$"
+    },
+    {
+      "id": "C",
+      "text": "$38$"
+    },
+    {
+      "id": "D",
+      "text": "$49$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the doubled equation instead of adding it, giving a = -11 and b = -38",
+    "B": "reports only a = 11 and never solves for b",
+    "C": "reports only b = 38 and never solves for a"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: System of Equations (Elimination)**\n\n**Choice D is correct.**\n\n**The Fast Way (~50s):** Doubling gives $8x + 14y = 62$; adding $ax - 14y = b$ leaves $(8 + a)x = 62 + b$, so $8 + a = 19$ and $62 + b = 100$, making $a = 11$, $b = 38$, and $a + b = 49$.\n\n**The Full Solution:**\nStep 1: Double the first equation: $2(4x + 7y) = 2(31)$ gives $8x + 14y = 62$. Doubling must reach the constant as well as both variable terms.\nStep 2: Add the second equation term by term: the $y$-terms $14y$ and $-14y$ cancel, the $x$-terms give $(8 + a)x$, and the constants give $62 + b$. So $(8 + a)x = 62 + b$.\nStep 3: Match this against $19x = 100$: $8 + a = 19$ gives $a = 11$, and $62 + b = 100$ gives $b = 38$. Therefore $a + b = 49$. Check: $8x + 14y = 62$ plus $11x - 14y = 38$ is $19x = 100$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-49$): subtracts the doubled equation instead of adding it, producing $8 - a = 19$ and $62 - b = 100$, so $a = -11$ and $b = -38$.\n* Choice B ($11$): finds $a$ correctly but stops before solving for $b$.\n* Choice C ($38$): finds $b$ correctly but stops before solving for $a$.\n\n**Test Day Takeaway:** Reverse an elimination by matching the combined equation term by term — the surviving coefficient and the surviving constant each give one equation."
+}

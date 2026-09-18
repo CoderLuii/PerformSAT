@@ -1,0 +1,44 @@
+{
+ "id": 5,
+ "question": "In the figure, square $ABCD$ is inscribed in a circle with center $O$. If the area of square $ABCD$ is $72$ square centimeters, what is the area, in square centimeters, of the circle?",
+ "diagram": {
+  "type": "circleWithSquare",
+  "params": {
+   "labels": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D",
+    "O": "O"
+   },
+   "showDiagonals": false,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$36\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$72\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$144\\pi$"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "A diameter of the circle is hiding inside the square.",
+ "distractorNotes": {
+  "A": "uses half a side as the radius",
+  "C": "uses the square area as r squared",
+  "D": "uses the diagonal as the radius"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~45s):** The square's side is $\\sqrt{72} = 6\\sqrt{2}$, so its diagonal is $6\\sqrt{2} \\cdot \\sqrt{2} = 12$. That diagonal is a diameter, so $r = 6$ and the circle's area is $36\\pi$.\n\n**The Full Solution:**\nStep 1: From $s^2 = 72$, the side length is $s = 6\\sqrt{2}$ centimeters.\nStep 2: A square's diagonal is $s\\sqrt{2}$, so the diagonal is $6\\sqrt{2} \\cdot \\sqrt{2} = 12$ centimeters. Because all four vertices lie on the circle, this diagonal passes through $O$ and is a diameter.\nStep 3: The radius is $\\frac{12}{2} = 6$, so the area is $\\pi(6)^2 = 36\\pi$ square centimeters. Check: $r^2 = 36$ is half of $72$, which matches the fact that the square's area is $2r^2$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($18\\pi$): uses half a side, $3\\sqrt{2}$, as the radius, which reaches only the midpoint of a side, not a vertex.\n* Choice C ($72\\pi$): treats the square's area as $r^2$ and multiplies it by $\\pi$.\n* Choice D ($144\\pi$): uses the whole diagonal $12$ as the radius instead of as the diameter.\n\n**Test Day Takeaway:** For a square inscribed in a circle, the square's diagonal is the circle's diameter. Convert side to diagonal with the factor $\\sqrt{2}$."
+}

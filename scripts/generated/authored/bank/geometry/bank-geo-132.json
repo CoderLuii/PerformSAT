@@ -1,0 +1,6 @@
+{
+ "question": "A seismograph station at $(3, -4)$ records a tremor whose epicenter is at $(-5, 2)$, where coordinates are in kilometers. A circle centered at the station passes through the epicenter. What is the radius, in kilometers, of that circle?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~20s):** The radius is the distance from the center to a point on the circle: $\\sqrt{8^2 + 6^2} = 10$ kilometers.\n\n**The Full Solution:**\nStep 1: The circle is centered at the station $(3, -4)$ and passes through the epicenter $(-5, 2)$, so its radius is the distance between those points.\nStep 2: The horizontal difference is $3 - (-5) = 8$ and the vertical difference is $-4 - 2 = -6$.\nStep 3: Apply the distance formula: $\\sqrt{8^2 + (-6)^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10$ kilometers. Check: $(-5, 2)$ satisfies $(x - 3)^2 + (y + 4)^2 = 100$ ✓\n\n**Common Mistakes:**\n* $100$ — stops at the squared distance, which is $r^2$, not $r$.\n* $14$ — adds the coordinate differences, $8 + 6$, instead of using the Pythagorean sum.\n* $2$ — subtracts the differences, $8 - 6$.\n\n**Test Day Takeaway:** Any point on a circle is exactly one radius from the center — the distance formula is the whole method.",
+ "id": "bank-geo-132"
+}

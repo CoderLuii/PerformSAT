@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "Loading a ferry takes a fixed $96$ seconds to secure the ramp plus $23$ seconds for each vehicle driven aboard. Which equation gives the number of vehicles $v$ loaded during an $878$-second loading period?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$23v + 96 = 878$"
+  },
+  {
+   "id": "B",
+   "text": "$23v - 96 = 878$"
+  },
+  {
+   "id": "C",
+   "text": "$96v + 23 = 878$"
+  },
+  {
+   "id": "D",
+   "text": "$23(v + 96) = 878$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts the fixed ramp time instead of adding it to the per-vehicle time",
+  "C": "swaps the roles of 96 and 23, charging 96 seconds per vehicle and 23 seconds once",
+  "D": "multiplies the ramp time by the per-vehicle rate instead of adding it separately"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Time per vehicle times the number of vehicles, plus the one-time ramp cost, equals the total: $23v + 96 = 878$.\n\n**The Full Solution:**\nStep 1: The $23$ seconds is charged once per vehicle, so the vehicles account for $23v$ seconds.\nStep 2: The $96$ seconds is charged once for the whole loading, so it is a constant added to $23v$, not multiplied by $v$.\nStep 3: The two parts fill the $878$-second period: $23v + 96 = 878$. Solving gives $v = \\frac{782}{23} = 34$ vehicles, and $23(34) + 96 = 782 + 96 = 878$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($23v - 96 = 878$): subtracting the ramp time treats it as time saved. It would give $v = \\frac{974}{23} \\approx 42.3$ vehicles, more than the period allows.\n* Choice C ($96v + 23 = 878$): this swaps the two rates, charging $96$ seconds per vehicle. It gives $v \\approx 8.9$, far too few for a $14$-minute load.\n* Choice D ($23(v + 96) = 878$): distributing gives $23v + 2{,}208$, which already exceeds $878$ before a single vehicle boards.\n\n**Test Day Takeaway:** A one-time charge is added outside the parentheses; only the quantity that repeats gets multiplied by the count."
+}

@@ -1,0 +1,48 @@
+{
+  "id": "bank-ps-446",
+  "question": "The table gives the percent increase in the number of active subscriptions to a service for each of two consecutive years. At the end of the two years there were $10{,}800$ active subscriptions. How many active subscriptions were there at the start of the two years?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Year",
+        "Percent increase"
+      ],
+      "rows": [
+        [
+          "Year 1",
+          "25%"
+        ],
+        [
+          "Year 2",
+          "8%"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8{,}000$"
+    },
+    {
+      "id": "B",
+      "text": "$8{,}181.82$"
+    },
+    {
+      "id": "C",
+      "text": "$8{,}640$"
+    },
+    {
+      "id": "D",
+      "text": "$14{,}580$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "adds the two percents to a single $32\\%$ increase instead of multiplying the factors.",
+    "C": "undoes only the Year 1 increase.",
+    "D": "multiplies by the combined factor $1.35$ instead of dividing by it."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Reverse Percent Multi-Step**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The table gives increases of $25\\%$ then $8\\%$, a combined factor of $1.25\\times 1.08=1.35$, so the starting count is $\\frac{10{,}800}{1.35}=8{,}000$.\n\n**The Full Solution:**\nStep 1: Let $s$ be the number of subscriptions at the start. Year 1 multiplies it by $1.25$.\nStep 2: Year 2 multiplies that result by $1.08$, giving $1.08(1.25s)=1.35s=10{,}800$.\nStep 3: $s=\\frac{10{,}800}{1.35}=8{,}000$. Check: $1.25(8{,}000)=10{,}000$, and $1.08(10{,}000)=10{,}800$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($8{,}181.82$): divides by $1.32$, adding $25\\%$ and $8\\%$ rather than compounding them.\n* Choice C ($8{,}640$): divides by $1.25$ only, ignoring the second year.\n* Choice D ($14{,}580$): computes $1.35\\times 10{,}800$, applying both increases again.\n\n**Test Day Takeaway:** Read each row of the table as a multiplier, take their product, and divide the ending amount by it."
+}

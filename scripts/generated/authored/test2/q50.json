@@ -6,26 +6,26 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 2,
-  "passage": "When a bridge is built, engineers cannot test the finished structure under every load it may eventually bear, so they rely on scale models and computer simulations to predict how it will behave. These methods are powerful, but they reproduce only the conditions the engineers have thought to include. ______ many major bridges are now fitted with networks of sensors after they open, so that the structure's real response to traffic, wind, and temperature can be monitored directly throughout its working life.",
+  "passage": "By the early 2000s, the mills weaving Harris Tweed faced a tempting path: shift production to mainland factories, cut costs, and compete with mass-market wool cloth on price. The industry's governing body refused that bargain. ______ it tightened its grip on the strictest possible definition — under a 1993 act of Parliament, cloth may carry the Harris Tweed mark only if it is dyed, spun, and handwoven at weavers' homes in the Outer Hebrides — wagering that scarcity and provenance, not price, were the fabric's real assets.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "For example,"
+      "text": "Specifically,"
     },
     {
       "id": "B",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "C",
       "text": "Meanwhile,"
     },
     {
+      "id": "C",
+      "text": "In addition,"
+    },
+    {
       "id": "D",
-      "text": "Therefore,"
+      "text": "Instead,"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage says simulations capture only the conditions engineers anticipate; the response to that limitation is to add sensors that monitor a real bridge directly. Because installing sensors follows as a consequence of the limitation, the causal connector \"Therefore,\" fits. \"For example,\" is wrong because the sensors are not an instance of the simulations' limits. \"Nevertheless,\" signals a contrast, but the sensor networks address the limitation rather than working against it. \"Meanwhile,\" merely marks simultaneous events and misses the cause-and-effect link the passage draws."
+  "explanation": "**Choice D is correct.** The governing body rejected one course — cheap mainland production — and took its opposite, doubling down on restrictive, place-bound craft. \"Instead\" is the transition that introduces the alternative chosen in place of a rejected option.\n\n**The Full Solution:**\n- The first sentence lays out the rejected path: mainland factories, lower costs, price competition.\n- The second sentence records the rejection: \"The industry's governing body refused that bargain.\"\n- The blank sentence describes what the body did in place of the rejected path — tightening the legal definition and betting on scarcity. Substitution after refusal is exactly what \"Instead\" signals.\n\n**Why the other choices are wrong:**\n- A: \"Specifically\" would make the tightening a detailed elaboration of the refusal, but the sentence presents a positive countermove, not a closer description of the refusing.\n- B: \"Meanwhile\" implies separate events unfolding in parallel; the tightening is the direct sequel to the refusal, not a simultaneous side development.\n- C: \"In addition\" stacks the tightening on top of the mainland strategy as if both were pursued, but the passage presents them as mutually exclusive alternatives."
 }

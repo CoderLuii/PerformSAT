@@ -1,35 +1,41 @@
 {
-  "id": 1212,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "module": 1,
-  "passage": "Percy Bysshe Shelley's sonnet \"Ozymandias\" (1818) describes a traveler's account of the ruins of a once-mighty king's monument, now broken and half-buried in the desert. A reader might argue that the poem makes a pointed claim about the impermanence of political power: the ruler's own boastful words, meant to overawe future ages, are made to sound hollow by the emptiness that now surrounds the wreck.",
-  "question": "Which quotation from \"Ozymandias\" most effectively illustrates the claim?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "\"Two vast and trunkless legs of stone / Stand in the desert.\""
-    },
-    {
-      "id": "B",
-      "text": "\"My name is Ozymandias, King of Kings; / Look on my Works, ye Mighty, and despair! / Nothing beside remains.\""
-    },
-    {
-      "id": "C",
-      "text": "\"And wrinkled lip, and sneer of cold command, / Tell that its sculptor well those passions read.\""
-    },
-    {
-      "id": "D",
-      "text": "\"Round the decay / Of that colossal Wreck, boundless and bare / The lone and level sands stretch far away.\""
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The claim is that the king's boast is hollowed out by the surrounding emptiness, and these lines do exactly that: the proud inscription—\"My name is Ozymandias, King of Kings; / Look on my Works, ye Mighty, and despair!\"—is immediately answered by \"Nothing beside remains,\" so the boast collapses against the void. A simply sets the scene of the broken statue. C praises the sculptor's skill at capturing the king's expression, a different idea. D describes the bare desert around the ruin and conveys emptiness, but without the boastful inscription it does not show the contrast the claim depends on.",
-  "_meta": {
-    "quoteVerify": true,
-    "source": "Percy Bysshe Shelley, \"Ozymandias\" (1818)"
+ "id": 1212,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "module": 1,
+ "passage": "Paul Laurence Dunbar's poem \"Sympathy\" (1899) centers on a caged bird whose condition the speaker claims to understand from within. A reader might argue that the poem's final stanza insists on reinterpreting the bird's song: what a passerby could mistake for contentment is, in the poem's account, an anguished appeal — an expression not of happiness but of longing wrung from pain.",
+ "question": "Which quotation from \"Sympathy\" most effectively illustrates the claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "\"When the sun is bright on the upland slopes; / When the wind stirs soft through the springing grass, / And the river flows like a stream of glass\""
+  },
+  {
+   "id": "B",
+   "text": "\"It is not a carol of joy or glee, / But a prayer that he sends from his heart's deep core\""
+  },
+  {
+   "id": "C",
+   "text": "\"I know why the caged bird beats his wing / Till its blood is red on the cruel bars\""
+  },
+  {
+   "id": "D",
+   "text": "\"I know why the caged bird sings, ah me, / When his wing is bruised and his bosom sore\""
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The claim is that the poem reinterprets the song — not contentment but an anguished appeal — and these lines perform that reinterpretation in full: they deny the happy reading (\"not a carol of joy or glee\") and supply the true one (\"a prayer that he sends from his heart's deep core\").\n\n**The Full Solution:**\n- The claim has two halves: rejecting the mistaken reading of the song, and replacing it with the real meaning.\n- Choice B contains both — the denial and the substitute — so it illustrates the reinterpretation, not just the bird's suffering.\n- A prayer sent \"from his heart's deep core\" is precisely an appeal wrung from pain, matching the claim's language.\n\n**Why the other choices are wrong:**\n- A: These lines describe the inviting springtime world outside the cage; they say nothing about the song or its meaning.\n- C: The beating wing and bloodied bars show the bird's pain, but the claim is specifically about how the song should be understood.\n- D: It names the song and the suffering that accompanies it, but it never says what the song means — the reinterpretation the claim describes happens only in choice B.",
+ "_meta": {
+  "anchor": "Paul Laurence Dunbar, \"Sympathy\" (1899) — quotations verbatim",
+  "quoteVerify": true,
+  "source": "Paul Laurence Dunbar, \"Sympathy,\" Lyrics of the Hearthside (1899); quotations verified verbatim against the Wikisource transcription of The Complete Poems of Paul Laurence Dunbar (1913)",
+  "distractors": {
+   "A": "scene outside the cage, silent on the song",
+   "C": "shows pain but not the song's reinterpretation",
+   "D": "names the song and the pain but not the song's meaning"
+  }
+ }
 }

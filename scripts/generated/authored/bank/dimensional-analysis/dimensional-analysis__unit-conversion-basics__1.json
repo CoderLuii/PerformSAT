@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "question": "A bookshelf is $7.5$ feet tall. Given that $1$ foot is equal to $12$ inches, what is the height of the bookshelf, in inches?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.625$"
+    },
+    {
+      "id": "B",
+      "text": "$19.5$"
+    },
+    {
+      "id": "C",
+      "text": "$84$"
+    },
+    {
+      "id": "D",
+      "text": "$90$"
+    }
+  ],
+  "correctAnswer": "D",
+  "hint": "An inch is smaller than a foot, so the number of inches must come out larger than the number of feet.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~10s):** $7.5(12)=90$ inches — choice D.\n\n**The Full Solution:**\nStep 1: Set up the conversion so the unwanted unit cancels: $7.5\\text{ feet}\\times\\frac{12\\text{ inches}}{1\\text{ foot}}$.\nStep 2: The unit of feet cancels, leaving $7.5(12)=90$ inches.\nStep 3: Check: $7$ feet is $84$ inches and the extra half foot is $6$ inches, so $84+6=90$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.625$): divides by $12$ instead of multiplying: $7.5\\div 12=0.625$, which would shrink the measurement rather than expressing it in smaller units.\n* Choice B ($19.5$): adds the conversion factor to the measurement: $7.5+12=19.5$.\n* Choice C ($84$): converts only the whole number of feet, $7(12)=84$, and drops the extra $0.5$ foot.\n\n**Test Day Takeaway:** Write the conversion factor as a fraction and let the unit cancel. Converting to a smaller unit always multiplies, so the count goes up."
+}

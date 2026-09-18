@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "Three steel disks and two brass disks have a combined mass of $1{,}260$ grams, and three steel disks and five brass disks have a combined mass of $1{,}710$ grams. All steel disks have the same mass, and all brass disks have the same mass. What is the mass, in grams, of one brass disk?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$150$"
+  },
+  {
+   "id": "B",
+   "text": "$225$"
+  },
+  {
+   "id": "C",
+   "text": "$320$"
+  },
+  {
+   "id": "D",
+   "text": "$450$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the 450-gram difference by 2, the number of brass disks in the first weighing, instead of by the 3 brass disks the difference represents",
+  "C": "solves for the mass of one steel disk instead of one brass disk",
+  "D": "stops at 3b = 450 and never divides by 3"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: System of Equations — Elimination**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Both weighings contain three steel disks, so subtracting them cancels the steel: $3$ extra brass disks account for $1{,}710 - 1{,}260 = 450$ grams, or $150$ grams each.\n\n**The Full Solution:**\nStep 1: Let $s$ be the mass of one steel disk and $b$ the mass of one brass disk: $3s + 2b = 1{,}260$ and $3s + 5b = 1{,}710$.\nStep 2: Subtract the first equation from the second. The $3s$ terms cancel, leaving $3b = 450$, so $b = 150$.\nStep 3: Back-substitute: $3s + 2(150) = 1{,}260$ gives $3s = 960$ and $s = 320$. Check the second weighing: $3(320) + 5(150) = 960 + 750 = 1{,}710$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($225$): divides the $450$-gram difference by $2$ instead of $3$; the difference between the weighings is three brass disks, not two.\n* Choice C ($320$): this is the mass of one steel disk — the value you get after back-substituting, not the value the question asks for.\n* Choice D ($450$): stops at $3b = 450$, reporting the mass of all three extra brass disks.\n\n**Test Day Takeaway:** When two equations share an identical term, subtract them on sight — elimination is faster than substitution, and the leftover coefficient tells you what to divide by."
+}

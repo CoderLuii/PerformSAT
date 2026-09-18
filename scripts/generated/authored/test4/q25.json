@@ -5,6 +5,8 @@
   "band": 4,
   "domain": "expression-of-ideas",
   "skill": "transitions",
+  "module": 1,
+  "passage": "In the 1840s, Matthew Fontaine Maury of the United States Naval Observatory began extracting wind and current observations from thousands of old ships' logbooks and charting the averages by season and route. Captains who followed the tracks his charts recommended cut days, sometimes weeks, from long passages. ______ shipmasters by the hundreds accepted Maury's price for the charts: they agreed to keep standardized logs of their own voyages and send them to the observatory, feeding the next edition.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
@@ -17,18 +19,16 @@
     },
     {
       "id": "C",
-      "text": "As a result,"
+      "text": "Consequently,"
     },
     {
       "id": "D",
-      "text": "Earlier,"
+      "text": "Likewise,"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The unstable, flammable film stock and the studios' neglect explain why so many silent films were lost; the final sentence states the consequence, that archivists must now reconstruct films from scattered prints, so a result transition fits. \"Nevertheless\" (A) signals contrast; \"For instance\" (B) signals an example; and \"Earlier\" (D) marks time rather than consequence.",
-  "passage": "Most films made during the silent era have been lost. Early motion pictures were printed on a nitrate film stock that was both highly flammable and chemically unstable, and studios, seeing little commercial value in old titles, rarely paid to store them properly. ______ archivists today must often reconstruct a single film from incomplete prints scattered among collections on several continents.",
+  "explanation": "**Choice C is correct.** The charts demonstrably shortened passages; the shipmasters' willingness to pay Maury's price in logbooks follows from that demonstrated value. The relation is cause and effect.\n\n**The Full Solution:**\n- Cause: captains using the charts saved days or weeks on long passages.\n- Effect: hundreds of shipmasters accepted the charts' price — keeping and submitting standardized logs.\n- \"Consequently\" marks the second sentence as the result of the first.\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" would signal the shipmasters acting against the charts' proven value, not because of it.\n- B: \"For instance\" would make the mass adoption an example of the time savings, but it is a response to them.\n- D: \"Likewise\" would claim the two sentences describe parallel cases, when the second grows out of the first.",
   "_meta": {
-    "anchor": "early film preservation — nitrate stock losses (NEW); result transition"
-  },
-  "module": 1
+    "anchor": "Matthew Fontaine Maury — wind and current charts; result transition"
+  }
 }

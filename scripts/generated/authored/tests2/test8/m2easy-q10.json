@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "An infusion pump has delivered $v = 8t + 16$ milliliters of fluid after running for $t$ minutes. For how many minutes has the pump run when it has delivered $96$ milliliters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 96 by the constant 16 instead of by the rate 8",
+  "C": "divides 96 by 8 and ignores the 16 milliliters already in the line",
+  "D": "adds 16 instead of subtracting it before dividing, computing (96 + 16)/8 = 14"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Set $8t + 16 = 96$. Subtract $16$ to get $8t = 80$, so $t = 10$ minutes.\n\n**The Full Solution:**\nStep 1: The question gives the output and asks for the input, so substitute $96$ for $v$: $8t + 16 = 96$.\nStep 2: Undo the addition first. Subtracting $16$ from both sides leaves $8t = 80$, which strips off the $16$ milliliters the pump delivers before the per-minute rate starts counting.\nStep 3: Undo the multiplication: $t = \\frac{80}{8} = 10$ minutes. Check: $8(10) + 16 = 80 + 16 = 96$ milliliters. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): divides $96$ by $16$, the constant term, rather than by $8$, the per-minute rate.\n* Choice C ($12$): computes $\\frac{96}{8}$ and never removes the $16$ milliliters, so it credits the rate for fluid the pump did not deliver over time.\n* Choice D ($14$): adds the $16$ before dividing, computing $\\frac{112}{8}$, which reverses the sign of the step that undoes $+16$.\n\n**Test Day Takeaway:** Working backward through a linear rule reverses the order of operations: undo the addition first, then the multiplication."
+}

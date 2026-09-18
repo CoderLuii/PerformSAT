@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-441",
+  "question": "A bicycle sells for $\\$286$ after a $12\\%$ discount is applied to its list price. A second bicycle has a list price that is $\\$40$ greater than the list price of the first bicycle. What is the price, in dollars, of the second bicycle after the same $12\\%$ discount is applied?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$321.20$"
+    },
+    {
+      "id": "B",
+      "text": "$325$"
+    },
+    {
+      "id": "C",
+      "text": "$326$"
+    },
+    {
+      "id": "D",
+      "text": "$365$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the list price of the first bicycle.",
+    "C": "adds the full $\\$40$ to the discounted price, leaving the extra $\\$40$ undiscounted.",
+    "D": "reports the list price of the second bicycle without applying the discount."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Reverse Percent**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The first list price is $\\frac{286}{0.88}=325$, so the second is $365$, and $0.88(365)=321.20$ dollars.\n\n**The Full Solution:**\nStep 1: A $12\\%$ discount leaves $88\\%$ of the list price, so $0.88L=286$ and $L=\\frac{286}{0.88}=325$ dollars.\nStep 2: The second bicycle lists for $325+40=365$ dollars.\nStep 3: Apply the same discount: $0.88(365)=321.20$ dollars. Check: the extra $\\$40$ is also discounted, contributing $0.88(40)=35.20$, and $286+35.20=321.20$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($325$): stops at the first bicycle's list price.\n* Choice C ($326$): adds $\\$40$ straight onto $\\$286$, forgetting that the additional $\\$40$ of list price is discounted too.\n* Choice D ($365$): reports the second list price and never applies the discount.\n\n**Test Day Takeaway:** A difference stated in list prices shrinks by the same factor once the discount is applied. Undo the percent first, adjust, then reapply."
+}

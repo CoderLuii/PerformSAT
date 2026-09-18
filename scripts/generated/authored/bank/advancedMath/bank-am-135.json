@@ -1,0 +1,6 @@
+{
+  "question": "A nozzle's flow model requires that $ax^{2}-12x+3=0$ be satisfied by exactly one real value of $x$, where $a$ is a positive constant. What is the value of $a$?",
+  "correctAnswer": "12",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~20s):** Exactly one real solution means $b^{2}-4ac=0$, so $144=12a$ and $a=12$.\n\n**The Full Solution:**\nStep 1: With $b=-12$ and $c=3$, the discriminant is $(-12)^{2}-4(a)(3)=144-12a$.\nStep 2: Exactly one real solution requires the discriminant to equal $0$: $144-12a=0$.\nStep 3: So $a=12$. Check: $12x^{2}-12x+3=3(2x-1)^{2}$, whose only solution is $x=\\dfrac{1}{2}$ ✓\n\n**Common Mistakes:**\n* $48$: used $b^{2}=3a$, omitting the factor $4$ in $4ac$.\n* $1$: used $b=12$ in place of $b^{2}$, solving $12-12a=0$.\n* $-12$: wrote $(-12)^{2}$ as $-144$, solving $-144-12a=0$.\n\n**Test Day Takeaway:** Exactly one real solution is the equation $b^{2}=4ac$ — set it up before touching the algebra.",
+  "id": "bank-am-135"
+}

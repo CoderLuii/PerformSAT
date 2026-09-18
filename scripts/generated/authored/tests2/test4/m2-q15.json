@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "At a vaccination clinic, $60\\%$ of the doses administered went to adults. Of the doses that did not go to adults, $45\\%$ went to children under $5$ years old. If $216$ doses went to children under $5$, how many doses were administered in all?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$360$"
+  },
+  {
+   "id": "B",
+   "text": "$480$"
+  },
+  {
+   "id": "C",
+   "text": "$540$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}200$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 216 by 0.6, using the adult share as though the 216 doses were 60% of the total",
+  "B": "divides 216 by 0.45 only, treating the 216 doses as 45% of the whole clinic rather than of the non-adult group",
+  "C": "divides 216 by 0.4, skipping the 45% step entirely"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** Non-adults are $40\\%$ of the total, and children under $5$ are $45\\%$ of those: $0.40 \\times 0.45 = 0.18$. So $0.18T = 216$ and $T = 1200$.\n\n**The Full Solution:**\nStep 1: If $60\\%$ of doses went to adults, the complement, $100\\% - 60\\% = 40\\%$, went to everyone else.\nStep 2: The $45\\%$ applies to that complement, not to the whole clinic, so children under $5$ received $0.45 \\times 0.40 = 0.18$ of all doses.\nStep 3: $0.18T = 216$, so $T = \\frac{216}{0.18} = 1200$. Check: $40\\%$ of $1200$ is $480$ non-adult doses, and $45\\%$ of $480$ is $216$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($360$): this is $\\frac{216}{0.6}$, applying the adult percentage to a group of children. The $60\\%$ describes the doses the $216$ are not part of.\n* Choice B ($480$): this is $\\frac{216}{0.45}$, the number of non-adult doses. It is a real quantity in the problem, but it is the subgroup, not the whole.\n* Choice C ($540$): this is $\\frac{216}{0.4}$, which uses the complement but never applies the $45\\%$, so one of the two nested percentages is missing.\n\n**Test Day Takeaway:** \"Of the ones that did not ...\" resets the base to the complement. Multiply the two fractions to get a single share of the whole, then divide once."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 817,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "In November 1922, after years of methodical searching in the Valley of the Kings, the archaeologist Howard Carter uncovered the entrance to the tomb of Tutankhamun ______ the find proved to be the most nearly intact royal burial ever recovered from ancient Egypt.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Tutankhamun;"
-    },
-    {
-      "id": "B",
-      "text": "Tutankhamun,"
-    },
-    {
-      "id": "C",
-      "text": "Tutankhamun"
-    },
-    {
-      "id": "D",
-      "text": "Tutankhamun, however"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. Two independent clauses meet at the blank: \"the archaeologist Howard Carter uncovered the entrance to the tomb of Tutankhamun\" and \"the find proved to be the most nearly intact royal burial ever recovered.\" With no coordinating conjunction joining them, a semicolon is the conventional way to link two complete clauses. The comma in B creates a comma splice, the bare phrase in C produces a run-on, and the comma-plus-\"however\" in D still leaves only a comma between two independent clauses, which is also a splice."
+ "id": 817,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "In 1815 the surveyor William Smith published the first geological map of England and Wales ______ the hand-colored sheet traced every major rock formation across the country, from the coal measures of the north to the chalk of the southern downs.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Wales;"
+  },
+  {
+   "id": "B",
+   "text": "Wales,"
+  },
+  {
+   "id": "C",
+   "text": "Wales"
+  },
+  {
+   "id": "D",
+   "text": "Wales, therefore"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Two independent clauses meet at the blank, and a semicolon is a conventional boundary between them.\n\n**The Full Solution:**\n- The first clause is complete: \"In 1815 the surveyor William Smith published the first geological map of England and Wales.\"\n- The second is also complete: \"the hand-colored sheet traced every major rock formation across the country.\"\n- A semicolon joins two related independent clauses correctly.\n\n**Why the other choices are wrong:**\n- B: A comma alone between two independent clauses is a comma splice.\n- C: No punctuation at all fuses the two clauses into a run-on.\n- D: \"Wales, therefore\" still splices the clauses with only a comma; the conjunctive adverb does not repair the boundary."
 }

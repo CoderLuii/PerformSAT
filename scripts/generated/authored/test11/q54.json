@@ -1,45 +1,49 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "\"Certified Organic Intellectual\" and \"The Historian as Curandera\" both appear in Medicine Stories (1998) and both draw on Levins Morales's Puerto Rican Jewish heritage."
-    },
-    {
-      "id": "B",
-      "text": "\"Certified Organic Intellectual\" criticizes the academic separation of research from the communities it concerns, while \"The Historian as Curandera\" goes further, casting the historian's task as treating, not only describing, the harm a community has suffered."
-    },
-    {
-      "id": "C",
-      "text": "In \"Certified Organic Intellectual,\" Levins Morales argues that scholarship rooted in a community can recover sources and questions that more detached scholarship tends to overlook."
-    },
-    {
-      "id": "D",
-      "text": "Medicine Stories (1998), by the Puerto Rican Jewish writer Aurora Levins Morales, combines personal narrative with historical analysis throughout its essays."
-    }
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "In his 1881 book Das Polarlicht, Fritz mapped the auroral zone and connected the frequency of auroras to the sunspot cycle."
+  },
+  {
+   "id": "B",
+   "text": "Whereas the 1873 Verzeichniss compiled centuries of aurora reports without interpreting them, Das Polarlicht drew on that assembled record to argue for conclusions, mapping the auroral zone and linking auroras to the sunspot cycle."
+  },
+  {
+   "id": "C",
+   "text": "In his 1873 Verzeichniss, Fritz compiled thousands of aurora observations reported over more than a millennium, arranging them in chronological order."
+  },
+  {
+   "id": "D",
+   "text": "Hermann Fritz, a Swiss engineer and scientist, studied historical records of the aurora borealis and published two separate works about them."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Comparing the aims of two works means stating each work's aim and setting them against each other. B does exactly that: the Verzeichniss compiles without interpreting; Das Polarlicht interprets what was compiled — with the \"Whereas\" frame making the comparison explicit.\n\n**The Full Solution:**\n- The notes assign each book a distinct character: the catalog \"gives each sighting's date and place without interpreting them\"; the 1881 book \"draws on the assembled reports to argue for conclusions.\"\n- A comparison must carry both characterizations in one sentence and mark their relation; B's whereas-construction does so and even names the conclusions reached.\n- The choice also preserves the works' order and dependency — the second book builds on the first — matching the notes.\n\n**Why the other choices are wrong:**\n- A: It characterizes only Das Polarlicht; with one work absent, no comparison occurs.\n- C: It characterizes only the Verzeichniss — the same failure from the other side.\n- D: It says two works exist but never distinguishes their aims, which is the entire goal.",
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Hermann Fritz (1830-1900) was a Swiss engineer and scientist who studied historical records of the aurora borealis.",
+   "His 1873 work Verzeichniss beobachteter Polarlichter is a catalog compiling thousands of aurora observations reported over more than a millennium.",
+   "The catalog arranges the reports chronologically, giving each sighting's date and place without interpreting them.",
+   "His 1881 book Das Polarlicht draws on the assembled reports to argue for conclusions about the aurora.",
+   "In it, Fritz mapped the auroral zone — the ring around the geomagnetic pole where auroras appear most often — and connected auroral frequency to the sunspot cycle."
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to compare the analytical projects of two essays, and Choice B names both and states what each does: one criticizes the separation of research from the communities it concerns, while the other goes further, casting the historian's task as treating, not only describing, a community's harm. Choice A compares the essays only by where they appear and what heritage they draw on, not by their arguments; Choice C describes a single essay; and Choice D introduces the collection as a whole without comparing the two essays at all.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Aurora Levins Morales is a Puerto Rican Jewish writer and historian.",
-      "Her 1998 collection Medicine Stories combines personal narrative with historical analysis.",
-      "The essay \"Certified Organic Intellectual\" criticizes the academic separation of historical research from the communities it concerns.",
-      "It argues that scholarship rooted in those communities can recover sources and questions that detached scholarship overlooks.",
-      "The essay \"The Historian as Curandera\" proposes that the historian's task includes treating, not only describing, the harm a community has suffered.",
-      "It frames historical writing as a form of repair work, comparable to traditional healing."
-    ],
-    "goal": "The student wants to compare the analytical projects of two essays in Levins Morales's collection."
-  },
-  "_meta": {
-    "anchor": "Aurora Levins Morales, Medicine Stories (1998): 'Certified Organic Intellectual' and 'The Historian as Curandera'"
-  },
-  "id": 1154,
-  "module": 2
+  "goal": "The student wants to compare the aims of the two works."
+ },
+ "_meta": {
+  "anchor": "aurora observation history — Hermann Fritz: 1873 catalog vs. 1881 synthesis",
+  "distractors": {
+   "A": "one work only",
+   "C": "one work only",
+   "D": "two works named, aims undistinguished"
+  }
+ },
+ "id": 1154,
+ "module": 2
 }

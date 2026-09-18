@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-496",
+ "question": "In a tram departure model, the constant $n$ must make the equation $6t - 5 = 2t + n$ true at $t = 9$ minutes. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-31$"
+  },
+  {
+   "id": "B",
+   "text": "$31$"
+  },
+  {
+   "id": "C",
+   "text": "$41$"
+  },
+  {
+   "id": "D",
+   "text": "$49$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "moves n to the wrong side, solving 49 + n = 18 to get -31",
+  "C": "adds the -5 instead of subtracting it: 4(9) + 5 = 41",
+  "D": "reports the left-side value 6(9) - 5 = 49 instead of n"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** At $t = 9$ the left side is $49$ and the right side is $18 + n$, so $n = 31$.\n\n**The Full Solution:**\nStep 1: Substitute $t = 9$ into $6t - 5 = 2t + n$, giving $6(9) - 5 = 2(9) + n$.\nStep 2: Evaluate each side: $54 - 5 = 49$ on the left and $18 + n$ on the right, so $49 = 18 + n$.\nStep 3: Subtract $18$ from both sides to get $n = 31$. Check: $2(9) + 31 = 49$, which matches the left side ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-31$): moves $n$ to the wrong side, solving $49 + n = 18$ and reporting $-31$.\n* Choice C ($41$): adds the $-5$ instead of subtracting it, giving $4(9) + 5 = 41$.\n* Choice D ($49$): stops after evaluating the left side, $6(9) - 5 = 49$, which is the common value of the two sides, not $n$.\n\n**Test Day Takeaway:** When a constant is defined by an equation that holds at a stated input, substitute the input first — the equation collapses to one subtraction."
+}

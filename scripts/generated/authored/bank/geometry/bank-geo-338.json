@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-338",
+ "question": "A composite shear web is trimmed to the outline drawn here, in which only two of the three edges carry a length in centimeters. The right angle of the outline is at vertex $Q$. What is the value of $\\tan P$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     28,
+     0
+    ],
+    [
+     28,
+     45
+    ]
+   ],
+   "labels": [
+    "P",
+    "Q",
+    "R"
+   ],
+   "sideLabels": [
+    "",
+    "45",
+    "53"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{28}{53}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{28}{45}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{45}{53}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{45}{28}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports cos P = 28/53, adjacent over hypotenuse",
+  "B": "inverts the tangent, dividing the adjacent leg by the opposite leg",
+  "C": "reports sin P = 45/53, opposite over hypotenuse"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Trig Ratio with Known Triple**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The missing leg is $\\sqrt{53^2 - 45^2} = 28$, so $\\tan P = \\frac{45}{28}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $Q$, so $\\overline{RP} = 53$ is the hypotenuse and $\\overline{QR} = 45$ is a leg.\nStep 2: The unlabeled leg is $\\overline{PQ} = \\sqrt{53^2 - 45^2} = \\sqrt{2{,}809 - 2{,}025} = \\sqrt{784} = 28$ centimeters.\nStep 3: Relative to angle $P$ the opposite leg is $45$ and the adjacent leg is $28$, so $\\tan P = \\frac{45}{28}$.\n\nCheck: $28^2 + 45^2 = 784 + 2{,}025 = 2{,}809 = 53^2$, so $28$-$45$-$53$ is a Pythagorean triple. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{28}{53}$): uses the hypotenuse in the denominator, giving $\\cos P$.\n* Choice B ($\\frac{28}{45}$): inverts the tangent by dividing adjacent by opposite.\n* Choice C ($\\frac{45}{53}$): uses the hypotenuse in the denominator, giving $\\sin P$.\n\n**Test Day Takeaway:** Recover the missing side before choosing a ratio; a tangent needs both legs and neither is optional."
+}

@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-textual",
  "module": 2,
- "passage": "In the 1790s the physician Edward Jenner investigated a piece of rural folklore: that dairymaids who had caught cowpox, a mild disease of cattle, seemed never to catch the far deadlier smallpox. Jenner argued that exposure to cowpox somehow protected a person against smallpox and that this protection could be transferred deliberately from one person to another. A historian of medicine wants to support the claim that Jenner's case rested on more than the folklore he started from.",
+ "passage": "The sleeping cars that crossed Europe's borders in the late nineteenth century belonged not to the railways themselves but to an independent operator, the Compagnie Internationale des Wagons-Lits, founded by the Belgian engineer Georges Nagelmackers. A historian of railways claims that the company's decisive innovation was diplomatic rather than mechanical: what set it apart was not the comfort of its carriages but its success in persuading a chain of national railway administrations to haul one through-carriage across their successive networks.",
  "question": "Which finding, if true, would most directly support the historian's claim?",
  "choices": [
   {
    "id": "A",
-   "text": "Cowpox was widely known among rural dairy workers in eighteenth-century England as a mild illness caught from cattle."
+   "text": "Surviving Wagons-Lits carriages feature interior fittings and furnishings considerably more elaborate than those found in the ordinary first-class coaches of the period."
   },
   {
    "id": "B",
-   "text": "Folk beliefs about the protective power of cowpox had circulated among dairy farmers for generations before Jenner began his work."
+   "text": "Several national railways of the era operated their own sleeping cars on routes within their home countries."
   },
   {
    "id": "C",
-   "text": "Smallpox was one of the most feared and lethal diseases in eighteenth-century Europe at the time Jenner was working."
+   "text": "Nagelmackers modeled his first sleeping cars on designs he had studied during a tour of the United States."
   },
   {
    "id": "D",
-   "text": "Jenner deliberately exposed a healthy boy to material from a cowpox sore and later found that the boy did not contract smallpox when exposed to it."
+   "text": "Company records show that Nagelmackers negotiated separate running agreements with each national railway on a route before any through-carriage entered service."
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The historian's claim is that Jenner's case rested on more than the folklore he started from. A deliberate test—exposing a person to cowpox and then finding that smallpox did not take hold—goes beyond the inherited belief and supplies evidence of the kind the claim says Jenner had. Choice D reports just such a test. Choices A and B restate the folklore and its currency, which is the very starting point the claim says Jenner moved past. Choice C establishes how dangerous smallpox was, important context but not evidence that Jenner's case went beyond folklore."
+ "explanation": "**Choice D is correct.** The claim locates the company's achievement in persuasion, getting many national administrations to haul one carriage, and D is direct documentary evidence of exactly that: negotiated running agreements, railway by railway, as the precondition for through service.\n\n**The Full Solution:**\n- The historian's claim has a specific shape: the innovation was diplomatic (agreements across networks), not mechanical (the carriages themselves).\n- Supporting evidence must therefore show the diplomatic work mattering. D shows it as the bottleneck: no through-carriage ran until each network's agreement was in hand.\n\n**Why the other choices are wrong:**\n- A: Elaborate fittings are evidence for the mechanical-comfort account the historian explicitly sets aside.\n- B: Domestic sleeping cars run by single railways involve no cross-border persuasion, so they cannot show diplomacy was the differentiator.\n- C: Borrowed design ideas concern the carriages' engineering origins, not the negotiation of passage across networks."
 }

@@ -1,0 +1,60 @@
+{
+ "id": "bank-am-366",
+ "question": "An inspection log records the corrosion depth $f(x)$, in millimeters, at five marked pipe joints $x$. A field crew numbers the same joints using $g(x)=2x-1$. What is the value of $f(g(3))$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Joint x",
+    "Corrosion depth f(x) (mm)"
+   ],
+   "rows": [
+    [
+     "1",
+     "12"
+    ],
+    [
+     "3",
+     "20"
+    ],
+    [
+     "5",
+     "26"
+    ],
+    [
+     "7",
+     "31"
+    ],
+    [
+     "9",
+     "33"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$26$"
+  },
+  {
+   "id": "C",
+   "text": "$31$"
+  },
+  {
+   "id": "D",
+   "text": "$33$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reads f at 3 without applying g first",
+  "C": "uses g(x) = 2x + 1, landing on joint 7",
+  "D": "treats the output 5 as a row position and reads the fifth row, joint 9"
+ },
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $g(3)=5$, and the row for joint $5$ gives $f(5)=26$ millimeters.\n\n**The Full Solution:**\nStep 1: Evaluate the inner function: $g(3)=2(3)-1=5$.\nStep 2: The composition asks for $f$ at that joint number, so read the table at $x=5$.\nStep 3: The table gives $f(5)=26$ millimeters. Check: the crew's joint 3 is the log's joint 5, whose recorded depth is 26 ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): reads $f(3)=20$, skipping the conversion $g$ entirely.\n* Choice C ($31$): uses $g(x)=2x+1$, which lands on joint 7.\n* Choice D ($33$): treats the output $5$ as a row number and reads the fifth row, joint 9.\n\n**Test Day Takeaway:** When one function is a table and the other is a rule, evaluate the rule first and use its output as the table's input."
+}

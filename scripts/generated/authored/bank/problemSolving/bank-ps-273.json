@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-273",
+  "question": "A wildlife biologist studied the relationship between the age and the shell length of a certain species of turtle. The biologist selected $120$ turtles at random from all the turtles tagged in a nature reserve. The table shows the information for the $90$ selected turtles whose shell length was at least $12$ centimeters. Which of the following is the largest population to which the results of the study can be generalized?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "Shell length",
+        "Less than 10 years old",
+        "10 years old or more",
+        "Total"
+      ],
+      "rows": [
+        [
+          "12 to 20 centimeters",
+          "34",
+          "11",
+          "45"
+        ],
+        [
+          "More than 20 centimeters",
+          "6",
+          "39",
+          "45"
+        ],
+        [
+          "Total",
+          "40",
+          "50",
+          "90"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The $90$ selected turtles whose shell length was at least $12$ centimeters"
+    },
+    {
+      "id": "B",
+      "text": "All turtles tagged in the reserve"
+    },
+    {
+      "id": "C",
+      "text": "The $120$ selected turtles"
+    },
+    {
+      "id": "D",
+      "text": "All turtles of this species"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops at the subgroup displayed in the table",
+    "C": "stops at the sample instead of the population it represents",
+    "D": "extends beyond the reserve, where no turtles could have been selected"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The turtles were selected at random from the tagged turtles in the reserve, so the results generalize to all tagged turtles in the reserve. The table is a subgroup of the sample, not the population.\n\n**The Full Solution:**\nStep 1: The population sampled is stated in the design: all turtles tagged in the reserve. The $120$ turtles were selected at random from that population.\nStep 2: Random selection of a reasonable-size sample makes the sample representative, so results from the sample can be applied to the tagged turtles in the reserve.\nStep 3: Check the two directions of error. Reporting the table's $90$ turtles or the $120$ selected turtles is too narrow, because random selection buys more; reporting all turtles of the species is too wide, because untagged turtles and turtles outside the reserve had no chance of selection. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the table displays only the $90$ turtles with shell length at least $12$ centimeters, so this looks like the studied group; but the generalization is set by how the sample was drawn, not by which rows are shown.\n* Choice C: the $120$ selected turtles are the sample. A sample always describes itself; the point of random selection is that it also describes the population.\n* Choice D: turtles of this species living outside the reserve, or inside it but untagged, were never in the sampling frame.\n\n**Test Day Takeaway:** Generalization is fixed by the sentence containing \"at random from,\" not by whichever subgroup the table happens to display."
+}

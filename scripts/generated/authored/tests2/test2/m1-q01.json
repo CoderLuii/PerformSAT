@@ -1,0 +1,67 @@
+{
+ "id": 1,
+ "question": "An observatory logged the number of meteors captured by its all-sky camera during each of eight consecutive nights, and the results appear in the dot plot. What is the mean nightly count for these eight nights?",
+ "diagram": {
+  "type": "dotPlot",
+  "params": {
+   "data": [
+    {
+     "value": 39,
+     "count": 1
+    },
+    {
+     "value": 44,
+     "count": 1
+    },
+    {
+     "value": 46,
+     "count": 1
+    },
+    {
+     "value": 47,
+     "count": 1
+    },
+    {
+     "value": 48,
+     "count": 2
+    },
+    {
+     "value": 49,
+     "count": 1
+    },
+    {
+     "value": 51,
+     "count": 1
+    }
+   ],
+   "xMin": 38,
+   "xMax": 52,
+   "xLabel": "Meteors recorded"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$46.5$"
+  },
+  {
+   "id": "C",
+   "text": "$47.5$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the range of the eight counts, 51-39=12, instead of their mean",
+  "C": "reports the median, the average of the fourth and fifth counts (47+48)/2=47.5",
+  "D": "reports the mode, the only count that appears twice (48)"
+ },
+ "explanation": "**SAT Pattern: Mean from List**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** One dot is one night: $39, 44, 46, 47, 48, 48, 49, 51$. The eight counts total $372$, so the mean is $\\frac{372}{8} = 46.5$.\n\n**The Full Solution:**\nStep 1: Read one value per dot, including the repeat. The stack of two dots above $48$ means two of the nights had $48$ meteors, so the eight counts are $39, 44, 46, 47, 48, 48, 49, 51$.\nStep 2: Add them: $39 + 44 + 46 + 47 + 48 + 48 + 49 + 51 = 372$.\nStep 3: The mean is the total divided by the number of nights: $\\frac{372}{8} = 46.5$ meteors per night. Check: $8 \\times 46.5 = 372$, the total read from the plot ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): reports the range, $51 - 39 = 12$. The range measures spread, not center, so it answers a different question entirely.\n* Choice C ($47.5$): reports the median. With eight values the median is the average of the fourth and fifth, $\\frac{47 + 48}{2} = 47.5$, which is close to the mean here but is not it.\n* Choice D ($48$): reports the mode, the one value that appears twice. A repeated value pulls the mean toward itself but does not become the mean.\n\n**Test Day Takeaway:** On a dot plot, count dots, not tick marks: every dot in a stack is a separate data value that must appear in the sum and in the divisor."
+}

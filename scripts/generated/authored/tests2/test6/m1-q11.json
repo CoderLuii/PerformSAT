@@ -1,0 +1,29 @@
+{
+ "id": 11,
+ "question": "A drug's concentration in a patient's blood, in milligrams per liter, is $c(t) = -2(t - h)^2 + k$, where $t$ is the number of hours after an injection and the constants $h$ and $k$ can be read from the graph. When $c(t)$ is rewritten in the form $-2t^2 + bt + d$, what is the value of $b$?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 3,
+    "k": 20
+   },
+   "a": -2,
+   "xRange": [
+    0,
+    6
+   ],
+   "yRange": [
+    0,
+    22
+   ],
+   "showVertex": true,
+   "gridInterval": 2,
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "label": "y = c(t)"
+  }
+ },
+ "correctAnswer": "12",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**The correct answer is $12$.** The graph shows the vertex at $(3, 20)$, so $c(t) = -2(t - 3)^2 + 20$, and expanding gives $-2t^2 + 12t + 2$.\n\n**The Fast Way (~30s):** With $h = 3$, the middle term is $-2 \\cdot (-2h)t = 4(3)t = 12t$, so $b = 12$.\n\n**The Full Solution:**\nStep 1: Read the vertex from the graph: $h = 3$ and $k = 20$, so $c(t) = -2(t - 3)^2 + 20$.\nStep 2: Expand the square: $(t - 3)^2 = t^2 - 6t + 9$, so $c(t) = -2t^2 + 12t - 18 + 20 = -2t^2 + 12t + 2$.\nStep 3: Comparing with $-2t^2 + bt + d$ gives $b = 12$ and $d = 2$. Check at $t = 0$: vertex form gives $-2(9) + 20 = 2$, and standard form gives $2$ ✓\n\n**Common Mistakes:**\n* $-12$: dropping a sign when distributing $-2$ over $-6t$. Two negatives multiply to a positive, so the middle term is $+12t$.\n* $6$: reporting $2h = 6$ and forgetting to multiply by the leading coefficient $-2$.\n* $2$: reporting $d$, the constant term, instead of $b$, the coefficient of $t$.\n\n**Test Day Takeaway:** Expanding $a(t - h)^2 + k$ always gives a middle term of $-2ah$ — read the vertex off the graph, then let that formula do the work instead of re-deriving it each time."
+}

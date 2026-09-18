@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-409",
+  "question": "The number of daylight hours recorded at a station fell from $14.4$ hours on one date to $11.7$ hours on a later date. What was the percent decrease in the number of daylight hours?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2.7\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$18.75\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$23.1\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$81.25\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the raw decrease of $2.7$ hours as if it were a percent",
+    "C": "divides the decrease by the later value, $\\frac{2.7}{11.7}$",
+    "D": "reports the later value as a percent of the earlier one, $\\frac{11.7}{14.4}$"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The decrease is $14.4 - 11.7 = 2.7$ hours, and $\\frac{2.7}{14.4} = 0.1875$, or $18.75\\%$.\n\n**The Full Solution:**\nStep 1: The decrease is $14.4 - 11.7 = 2.7$ hours.\nStep 2: Percent decrease compares that drop to the starting value: $\\frac{2.7}{14.4}$.\nStep 3: $\\frac{2.7}{14.4} = 0.1875$, which is $18.75\\%$. Check: $14.4 - 0.1875(14.4) = 14.4 - 2.7 = 11.7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.7\\%$): reports the raw decrease of $2.7$ hours as if it were a percent\n* Choice C ($23.1\\%$): divides the decrease by the later value, $\\frac{2.7}{11.7}$\n* Choice D ($81.25\\%$): reports the later value as a percent of the earlier one, $\\frac{11.7}{14.4}$\n\n**Test Day Takeaway:** Decimals do not change the method: subtract, divide by the original, convert to a percent, then verify by applying the percent back."
+}

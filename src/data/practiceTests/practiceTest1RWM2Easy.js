@@ -1,12 +1,14 @@
 // Practice Test 1 — Reading & Writing Module 2 Easy variant (27 questions)
+// R&W seating varied 2026-09-07 (scripts/varyRWSeating.mjs): items re-dealt inside their official skill blocks with a per-test seed — block flow and per-skill counts unchanged.
 // For students routed to the easier path after Module 1 (~<60% correct).
 // Distribution: 8E / 16M / 3H. Q1-2 easy openers. Max-score ceiling: ~600.
 // Domain mix: 8 Craft and Structure / 8 Information and Ideas /
 // 6 Standard English Conventions / 5 Expression of Ideas.
 //
-// All passages are ORIGINAL prose written for this variant. Nothing is taken
-// or paraphrased from College Board materials, prep books, or other
-// copyrighted sources.
+// Recreated 2026-08-31 against the official Educator Question Bank register
+// (docs/TEST_RECREATION_SPEC.md). All passages are ORIGINAL prose written for
+// this variant. Nothing is taken or paraphrased from College Board materials,
+// prep books, or other copyrighted sources.
 
 export const practiceTest1RWM2Easy = {
   id: "rw-module-2-easy",
@@ -24,52 +26,16 @@ export const practiceTest1RWM2Easy = {
       "band": 2,
       "domain": "craft-and-structure",
       "skill": "words-in-context",
-      "passage": "Unlike wind and sunlight, which rise and fall with the weather, the tides follow a schedule set by the moon. Engineers testing underwater turbines in a narrow coastal channel note that they can say years in advance exactly when the current there will run fastest. For an electricity grid that must match supply to demand hour by hour, that kind of ______ output is unusually valuable.",
+      "passage": "Merriam's kangaroo rats live in deserts where standing water is scarce, and adults have been observed going months without drinking. The seeds they eat look completely dry, but digesting the starches in those seeds produces water inside the animal's body. Together with kidneys that lose remarkably little moisture, this chemistry lets the rats ______ nearly all the water they need from their food.",
       "question": "Which choice completes the text with the most logical and precise word or phrase?",
       "choices": [
-        { "id": "A", "text": "predictable" },
-        { "id": "B", "text": "seasonal" },
-        { "id": "C", "text": "sudden" },
-        { "id": "D", "text": "unlimited" }
-      ],
-      "correctAnswer": "A",
-      "explanation": "**Choice A is correct.** The blank names a quality the passage has just described - output engineers can know about in advance - and \"predictable\" says exactly that.\n\n**The Full Solution:**\n- How to spot it: read the sentences before the blank and ask what quality they establish. The tides run on a schedule set by the moon, so engineers can say \"years in advance\" when the current will be fastest.\n- The phrase \"that kind of\" points straight back to that quality, so the blank has to name it.\n- \"Predictable\" means able to be known ahead of time. Plug it in and the last sentence follows from the first two.\n\n**Why the other choices are wrong:**\n- B: \"Seasonal\" would mean the output rises and falls with the time of year, which the text never says.\n- C: \"Sudden\" means arriving without warning - the opposite of a schedule known years ahead.\n- D: \"Unlimited\" is about how much power there is, not about knowing when it will arrive."
-    },
-    {
-      "id": 156,
-      "type": "multiple-choice",
-      "difficulty": "easy",
-      "band": 2,
-      "domain": "craft-and-structure",
-      "skill": "words-in-context",
-      "passage": "In the dance halls of Kansas City in the 1930s, bandleaders often built new numbers without writing a note down. One section of the band would play a short, catchy phrase; another section would answer it; and a soloist would improvise over both. Because the players learned these phrases by ear and ______ them from memory night after night, many of the era's most popular arrangements were never printed at all.",
-      "question": "Which choice completes the text with the most logical and precise word or phrase?",
-      "choices": [
-        { "id": "A", "text": "composed" },
-        { "id": "B", "text": "repeated" },
-        { "id": "C", "text": "notated" },
-        { "id": "D", "text": "discarded" }
+        { "id": "A", "text": "conserve" },
+        { "id": "B", "text": "derive" },
+        { "id": "C", "text": "release" },
+        { "id": "D", "text": "detect" }
       ],
       "correctAnswer": "B",
-      "explanation": "**Choice B is correct.** The blank needs a verb for playing the same phrases again and again, and \"repeated\" fits the words \"from memory night after night.\"\n\n**The Full Solution:**\n- How to spot it: look at the words on both sides of the blank. The players \"learned these phrases by ear\" and then did something with them \"from memory night after night.\"\n- Learning by ear and then working from memory evening after evening means playing the same phrases over again.\n- \"Repeated\" means doing something again, which is exactly why these arrangements never had to be written down.\n\n**Why the other choices are wrong:**\n- A: \"Composed\" means making the music up in the first place, but the sentence is about players who had already learned the phrases.\n- C: \"Notated\" means writing music down, which contradicts the ending - the arrangements \"were never printed at all.\"\n- D: \"Discarded\" would mean throwing the phrases away, yet the bands played them night after night."
-    },
-    {
-      "id": 157,
-      "type": "multiple-choice",
-      "difficulty": "medium",
-      "band": 3,
-      "domain": "craft-and-structure",
-      "skill": "words-in-context",
-      "passage": "A Roman aqueduct moved water across many miles without a single pump. Surveyors managed this by giving the channel a slope so slight — often a drop of less than a foot per mile — that the water crept forward steadily without tearing at the masonry. Holding that gradient across valleys and ridges demanded instruments and record keeping ______ enough to register differences in height that the eye alone would never catch.",
-      "question": "Which choice completes the text with the most logical and precise word or phrase?",
-      "choices": [
-        { "id": "A", "text": "elaborate" },
-        { "id": "B", "text": "precise" },
-        { "id": "C", "text": "durable" },
-        { "id": "D", "text": "traditional" }
-      ],
-      "correctAnswer": "B",
-      "explanation": "**Choice B is correct.** The blank describes tools and records able to catch tiny differences in height, and \"precise\" is the word for that exactness.\n\n**The Full Solution:**\n- How to spot it: read what comes right after the blank, because that is what the blank has to support - instruments and record keeping \"enough to register differences in height that the eye alone would never catch.\"\n- The passage supplies the reason: the channel dropped less than a foot per mile, so every measurement had to be exact.\n- \"Precise\" means exact and finely measured, which is the quality needed to hold a slope that small across valleys and ridges.\n\n**Why the other choices are wrong:**\n- A: \"Elaborate\" means complicated, and a complicated instrument is not necessarily an accurate one.\n- C: \"Durable\" is about lasting a long time, not about detecting small differences.\n- D: \"Traditional\" says the methods were customary, which tells you nothing about their accuracy."
+      "explanation": "**Choice B is correct.** The blank needs a verb for getting water out of food, and \"derive\" means to obtain something from a source.\n\n**The Full Solution:**\n- How to spot it: the words \"from their food\" right after the blank tell you the verb must describe taking something from a source.\n- The passage has already explained the mechanism — digesting starches \"produces water inside the animal's body.\"\n- \"Derive\" means to obtain from, so the rats derive the water they need from seeds. The sentence now matches the chemistry the passage described.\n\n**Why the other choices are wrong:**\n- A: \"Conserve\" describes what the kidneys do with water the animal already has — it does not describe getting water \"from their food.\"\n- C: \"Release\" would mean giving the water up, the opposite of what a desert animal needs to do.\n- D: \"Detect\" means to notice something, but the rats are not searching for water — their bodies are producing it."
     },
     {
       "id": 158,
@@ -78,34 +44,52 @@ export const practiceTest1RWM2Easy = {
       "band": 3,
       "domain": "craft-and-structure",
       "skill": "words-in-context",
-      "passage": "The brown crust on a loaf of bread is not merely the surface scorching. As the outside of the dough climbs past about 300 degrees Fahrenheit, sugars and amino acids there combine in a cascade of reactions that ______ hundreds of compounds, among them the ones responsible for the roasted, nutty smell of a fresh loaf. None of those compounds is present in the pale, raw dough.",
+      "passage": "A Cepheid variable star brightens and dims on a fixed cycle, and the length of that cycle is tied directly to the star's true brightness. By comparing a Cepheid's true brightness with how bright it appears from Earth, astronomers can calculate how far away it is. Because the link between cycle and brightness holds so firmly from one Cepheid to the next, astronomers treat these stars as ______ markers of cosmic distance.",
       "question": "Which choice completes the text with the most logical and precise word or phrase?",
       "choices": [
-        { "id": "A", "text": "release" },
-        { "id": "B", "text": "conceal" },
-        { "id": "C", "text": "generate" },
-        { "id": "D", "text": "preserve" }
+        { "id": "A", "text": "luminous" },
+        { "id": "B", "text": "ancient" },
+        { "id": "C", "text": "visible" },
+        { "id": "D", "text": "dependable" }
       ],
-      "correctAnswer": "C",
-      "explanation": "**Choice C is correct.** The blank needs a word meaning to bring something new into being, and the last sentence proves those compounds were not in the dough before.\n\n**The Full Solution:**\n- How to spot it: check the sentence after the blank before choosing. It says none of those compounds \"is present in the pale, raw dough.\"\n- So the reactions cannot be uncovering or holding on to something already there - they must be making the compounds.\n- \"Generate\" means to produce or create, which is exactly what a cascade of reactions does to hundreds of new compounds.\n\n**Why the other choices are wrong:**\n- A: \"Release\" would mean the compounds were already in the dough waiting to escape, which the last sentence rules out.\n- B: \"Conceal\" means hide, but these compounds are what you smell in a fresh loaf.\n- D: \"Preserve\" means keeping something that already exists, again ruled out by the last sentence."
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** The blank must describe markers astronomers can count on, and \"dependable\" follows directly from a relationship that \"holds so firmly.\"\n\n**The Full Solution:**\n- How to spot it: the word \"Because\" opens the final sentence, so the blank has to be a consequence of what that clause says — the cycle-brightness link holds firmly for every Cepheid.\n- A rule that never wavers makes the stars trustworthy tools.\n- \"Dependable\" states that trustworthiness, completing the cause-and-effect the sentence sets up.\n\n**Why the other choices are wrong:**\n- A: \"Luminous\" is true of these stars but doesn't follow from the \"because\" clause — brightness alone is not what makes them useful yardsticks.\n- B: \"Ancient\" introduces the stars' age, which the passage never discusses.\n- C: \"Visible\" says only that the stars can be seen; the passage's point is that their behavior can be trusted, not merely observed."
     },
     {
-      "id": 159,
+      "id": 156,
       "type": "multiple-choice",
       "difficulty": "easy",
       "band": 2,
       "domain": "craft-and-structure",
-      "skill": "text-structure-and-purpose",
-      "passage": "The short paragraph beside a museum object is argued over long before any visitor reads it. In roughly fifty words a curator must choose which of an object's many stories to tell, knowing that most visitors will give the label a few seconds and will never open the catalog. A label that lists every detail teaches less than one that makes a single point a visitor can carry into the next room.",
-      "question": "Which choice best states the main purpose of the text?",
+      "skill": "words-in-context",
+      "passage": "Every five years, hundreds of volunteers fan out to count and measure every street tree in the city. Organizers give each counter the same training, the same measuring tools, and the same forms, so that a maple recorded in one neighborhood is documented exactly like a maple recorded in another. Because the counting method is so ______, planners can compare results across neighborhoods — and across decades — with confidence.",
+      "question": "Which choice completes the text with the most logical and precise word or phrase?",
       "choices": [
-        { "id": "A", "text": "To explain why writing a brief museum label requires difficult choices about what to leave out." },
-        { "id": "B", "text": "To describe the route that most visitors take as they move from one museum gallery to the next." },
-        { "id": "C", "text": "To argue that museums should replace object labels with printed catalogs." },
-        { "id": "D", "text": "To compare labels written by curators with labels written by museum educators." }
+        { "id": "A", "text": "consistent" },
+        { "id": "B", "text": "ambitious" },
+        { "id": "C", "text": "flexible" },
+        { "id": "D", "text": "popular" }
       ],
       "correctAnswer": "A",
-      "explanation": "**Choice A is correct.** Every sentence works toward one point: a fifty-word label forces a curator into hard choices about what to leave out.\n\n**The Full Solution:**\n- How to spot it: ask what each sentence is doing. The first says the label is argued over long before anyone reads it.\n- The second gives the reason: in about fifty words the curator must pick which of an object's many stories to tell, because visitors read for seconds and never open the catalog.\n- The last states the payoff - a label listing every detail teaches less than one making a single point. Together they explain why the choosing is hard, which is the purpose.\n\n**Why the other choices are wrong:**\n- B: The passage never describes the route visitors take through the galleries.\n- C: It never argues for replacing labels with catalogs; the catalog appears only as something visitors skip.\n- D: No comparison between curators' labels and educators' labels appears in the text."
+      "explanation": "**Choice A is correct.** The blank describes a method that works the same way everywhere, and \"consistent\" means unchanging from case to case.\n\n**The Full Solution:**\n- How to spot it: the sentence before the blank is one long description of sameness — same training, same tools, same forms, a maple in one place recorded \"exactly like\" a maple in another.\n- The blank names the quality that all that sameness creates.\n- \"Consistent\" captures it, and it explains the payoff in the same sentence: results that can be compared across neighborhoods and decades.\n\n**Why the other choices are wrong:**\n- B: \"Ambitious\" describes the project's size, but the sentence is about why comparisons can be trusted, not how big the effort is.\n- C: \"Flexible\" is the opposite of what the passage describes — the whole point is that nothing about the method bends.\n- D: \"Popular\" is about how many people like the count, which says nothing about whether its results line up."
+    },
+    {
+      "id": 157,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "craft-and-structure",
+      "skill": "words-in-context",
+      "passage": "In the Andes, Inka administrators tracked census figures and storehouse inventories without writing as Europeans understood it. They used khipus: long cords from which hung rows of knotted strings, with the type and position of each knot standing for particular quantities. Trained officials could ______ these arrangements of knots into precise numerical records, reading a cord's contents much as a clerk elsewhere might read a ledger.",
+      "question": "Which choice completes the text with the most logical and precise word or phrase?",
+      "choices": [
+        { "id": "A", "text": "conceal" },
+        { "id": "B", "text": "multiply" },
+        { "id": "C", "text": "translate" },
+        { "id": "D", "text": "arrange" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** The officials turned one form of information (knots) into another (numerical records), and \"translate\" names exactly that conversion.\n\n**The Full Solution:**\n- How to spot it: the blank sits between two forms of the same information — \"arrangements of knots\" on one side, \"precise numerical records\" on the other, joined by \"into.\"\n- A verb that fits must mean converting from one form to the other.\n- \"Translate\" does precisely that, and the closing comparison — reading a cord \"much as a clerk elsewhere might read a ledger\" — confirms the officials were extracting meaning, not altering the cords.\n\n**Why the other choices are wrong:**\n- A: \"Conceal\" means to hide, but the officials were recovering information, not hiding it.\n- B: \"Multiply\" is arithmetic performed on numbers, not a way of reading knots into numbers.\n- D: \"Arrange\" describes making the knot patterns in the first place, but these officials are described as reading existing cords."
     },
     {
       "id": 160,
@@ -114,16 +98,16 @@ export const practiceTest1RWM2Easy = {
       "band": 3,
       "domain": "craft-and-structure",
       "skill": "text-structure-and-purpose",
-      "passage": "For much of the twentieth century, farmers in many regions left fields bare between cash crops, on the assumption that a resting field lost nothing but a season. Agronomists who compared bare plots with plots sown to rye and clover found otherwise. Over a single winter the bare plots gave up several times as much topsoil to rain and wind, and their surfaces crusted so hard that the next planting struggled to root. Resting a field, the researchers concluded, had quietly been costing farmers the soil the next crop depended on.",
+      "passage": "On a summer afternoon, a dark asphalt roof can be sixty degrees hotter than the air above it, and a city full of such roofs bakes: heat soaks into buildings by day and radiates back out all night, driving up both temperatures and air-conditioning bills. One response requires no new technology at all. In trials across several cities, coating roofs with a bright reflective layer lowered rooftop surface temperatures by dozens of degrees and measurably cut the electricity the buildings beneath them used for cooling.",
       "question": "Which choice best describes the overall structure of the text?",
       "choices": [
-        { "id": "A", "text": "It describes a method for measuring the topsoil that a field loses over a winter and then explains why other researchers have found that method hard to repeat." },
-        { "id": "B", "text": "It compares two cover crops, rye and clover, and then explains why one of them protected the soil better." },
-        { "id": "C", "text": "It traces the gradual adoption of cover crops and then lists the objections that critics have continued to raise." },
-        { "id": "D", "text": "It states a long-held assumption about leaving fields bare, reports comparative findings that contradict it, and gives the conclusion drawn from those findings." }
+        { "id": "A", "text": "It describes a newly invented technology, then explains why most cities have so far been slow to adopt it." },
+        { "id": "B", "text": "It presents a problem that affects cities, then describes an inexpensive response and evidence of that response's effect." },
+        { "id": "C", "text": "It presents two competing explanations for a phenomenon, then endorses one of them over the other." },
+        { "id": "D", "text": "It makes a prediction about future city temperatures, then presents data that call the prediction into question." }
       ],
-      "correctAnswer": "D",
-      "explanation": "**Choice D is correct.** The passage states an old assumption, reports findings that contradict it, and closes with the conclusion those findings support.\n\n**The Full Solution:**\n- How to spot it: track the job of each sentence instead of the topic. The opening gives the assumption - a field left bare \"lost nothing but a season.\"\n- The middle reports a comparison: bare plots against plots sown to rye and clover, with the bare plots losing several times as much topsoil and crusting hard.\n- The last sentence draws the conclusion - resting a field had been costing farmers their soil. Assumption, contradicting evidence, conclusion.\n\n**Why the other choices are wrong:**\n- A: No measuring method is described, and no one calls it hard to repeat.\n- B: Rye and clover are sown together in the same plots; the passage never pits them against each other.\n- C: The text tells no story of gradual adoption and reports no critics."
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The text moves from a problem (hot roofs heating cities) to a simple response (reflective coatings) to trial evidence that the response works.\n\n**The Full Solution:**\n- How to spot it: structure questions are about the order of jobs the sentences do, not the topic. Label each part: sentence 1 = the problem; sentence 2 = a pivot to a response; sentence 3 = trial results.\n- That sequence — problem, response, evidence — is exactly what choice B describes.\n- Check the fit of every phrase: \"inexpensive\" matches \"no new technology at all,\" and \"evidence of that response's effect\" matches the measured temperature and electricity results.\n\n**Why the other choices are wrong:**\n- A: The passage stresses that the coating is NOT new technology, and adoption speed is never discussed.\n- C: No competing explanations appear — the cause of hot roofs is never in dispute.\n- D: The text reports trial results that already happened; it makes no prediction and nothing is called into question."
     },
     {
       "id": 161,
@@ -132,16 +116,16 @@ export const practiceTest1RWM2Easy = {
       "band": 3,
       "domain": "craft-and-structure",
       "skill": "text-structure-and-purpose",
-      "passage": "A signer describing two people does not keep repeating their names. The signer instead assigns each person a point in the space in front of the body — one to the left, one to the right — and then aims a verb from one point toward the other to show who did what to whom. The direction of that movement, rather than the order in which the signs appear, carries information that a spoken language would deliver through pronouns and word order.",
+      "passage": "A paper map is flat, but the land it depicts is not, and mapmakers have long needed a way to show a hiker where the ground climbs. Contour lines solve the problem: each line connects points that share the same elevation, so a single line traces a level path around a hillside. Where lines crowd together, elevation is changing quickly and the slope is steep; where they spread apart, the ground rises gently. A reader who has never seen the terrain can thus judge, from spacing alone, whether a trail crosses a plain or scales a ridge.",
       "question": "Which choice best states the main purpose of the text?",
       "choices": [
-        { "id": "A", "text": "To explain how signers use locations in space to convey relationships that spoken languages express by other means." },
-        { "id": "B", "text": "To argue that signed languages are easier for adults to learn than spoken languages are." },
-        { "id": "C", "text": "To describe the difficulties translators face when they put signed conversation into writing." },
-        { "id": "D", "text": "To compare the vocabularies of two signed languages used in different countries." }
+        { "id": "A", "text": "To argue that paper maps represent elevation more accurately than newer alternatives do" },
+        { "id": "B", "text": "To describe the training that mapmakers must complete before they are permitted to draw contour lines" },
+        { "id": "C", "text": "To explain how a mapping convention allows flat maps to convey the shape of the terrain" },
+        { "id": "D", "text": "To recount how a particular hiker used a contour map to plan an especially difficult route" }
       ],
-      "correctAnswer": "A",
-      "explanation": "**Choice A is correct.** The whole text explains how a signer uses points in space to show who did what to whom.\n\n**The Full Solution:**\n- How to spot it: ask what every sentence is building toward. The first says a signer does not keep repeating names.\n- The second gives the method: each person is assigned a point in the space in front of the body, and a verb aimed from one point to the other shows who acted on whom.\n- The last names the payoff - direction, not sign order, carries what a spoken language handles with pronouns and word order. That is the purpose.\n\n**Why the other choices are wrong:**\n- B: The passage never compares how hard signed and spoken languages are to learn.\n- C: Translation into writing is never mentioned.\n- D: Only one signing practice is described; no two signed languages are compared."
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** The text exists to explain how contour lines let a flat map communicate three-dimensional terrain.\n\n**The Full Solution:**\n- How to spot it: the first sentence poses the challenge (flat maps, unflat land), the second introduces the convention, and the rest explains how to read it — crowded lines mean steep, spread lines mean gentle.\n- The final sentence states the payoff: a reader can judge terrain \"from spacing alone.\"\n- Choice C wraps that arc in one sentence: a convention that makes flat maps convey shape.\n\n**Why the other choices are wrong:**\n- A: No alternatives to paper maps are mentioned, so no comparison of accuracy can be the purpose.\n- B: Mapmakers' training is never discussed.\n- D: The hiker is a hypothetical reader used for illustration, not a person whose route the text recounts."
     },
     {
       "id": 162,
@@ -153,22 +137,40 @@ export const practiceTest1RWM2Easy = {
       "passages": [
         {
           "label": "Text 1",
-          "text": "Long-distance migratory songbirds have declined sharply across North America, and one line of conservation research locates the cause on the breeding grounds. Where continuous northern forest has been broken into small woodlots, nests sit closer to open edges, where predators find them more often. Fewer young leave the nest each summer than a population needs to hold steady. On this account, the way to reverse the decline is to protect and reconnect large blocks of breeding forest, since a pair that fledges no young cannot be helped later in the year."
+          "text": "Monarch butterfly numbers in North America have fallen steeply over three decades, and many ecologists who study the butterflies' summer range locate the cause on the breeding grounds. Milkweed — the only plant on which monarchs lay eggs — has been pushed out of millions of acres of Midwestern farmland by modern herbicide use. On this view, recovery depends on one intervention above all: restoring corridors of milkweed through the agricultural heart of the monarchs' summer range."
         },
         {
           "label": "Text 2",
-          "text": "That nesting success matters is not in dispute. But a migratory songbird spends only part of the year on its breeding ground, and the journey imposes demands of its own: many species must nearly double their weight at a handful of coastal marshes and river mouths before crossing open water. Most of those refueling sites sit on land that has been drained, filled, or built over, and tracking work shows that birds leaving a degraded stopover in poor condition are far less likely to complete the crossing. Protecting breeding forest, on this view, cannot by itself carry a population through a route whose refueling stations are disappearing."
+          "text": "Analyses of monarch populations point to the winter, not the summer, as the season that sets the species' fate. Nearly the entire eastern population crowds each winter into a few mountain forests in central Mexico, where thinning tree canopies — degraded by logging and storms — expose the butterflies to lethal cold and wet. In years when winter mortality is high, abundant summer habitat goes unused; the population that returns north is simply too small to fill it."
         }
       ],
-      "question": "Based on the texts, how would the author of Text 2 most likely respond to the claim presented in Text 1?",
+      "question": "Based on the texts, how would the author of Text 2 most likely respond to the recommendation presented in Text 1?",
       "choices": [
-        { "id": "A", "text": "By denying that the fragmentation of northern forest measurably affects the nesting success of migratory songbirds." },
-        { "id": "B", "text": "The author would grant that the loss of breeding forest harms these birds but would insist that the disappearance of coastal refueling sites is also decisive." },
-        { "id": "C", "text": "Text 2 would treat the reported decline of long-distance migratory songbirds as far less severe than Text 1 claims." },
-        { "id": "D", "text": "With a recommendation that conservation funding be shifted away from coastal wetlands and toward the protection of northern forest." }
+        { "id": "A", "text": "Expanding summer breeding habitat is the surest available way to rebuild the monarch population." },
+        { "id": "B", "text": "Milkweed scarcity is unlikely to have contributed to the monarchs' decline in any meaningful way." },
+        { "id": "C", "text": "The eastern population's winter range in Mexico is too small for conservation efforts there to succeed." },
+        { "id": "D", "text": "Restored milkweed would be of limited value in years when winter losses leave too few returning monarchs to make use of it." }
       ],
-      "correctAnswer": "B",
-      "explanation": "**Choice B is correct.** The author of Text 2 grants that nesting matters but argues that the vanishing coastal refueling sites are also decisive.\n\n**The Full Solution:**\n- How to spot it: find the line where the second text agrees before it pushes back. Text 2 opens with \"That nesting success matters is not in dispute.\"\n- Then locate the disagreement. Text 1 says protecting breeding forest is the way to reverse the decline; Text 2 answers that migrants must nearly double their weight at a few coastal marshes and river mouths, and most of those sites have been drained, filled, or built over.\n- The right answer has to keep BOTH halves - the agreement and the added objection. Text 2's closing line does exactly that: breeding forest alone \"cannot by itself carry a population through a route whose refueling stations are disappearing.\"\n\n**Why the other choices are wrong:**\n- A: Text 2 explicitly accepts that nesting success matters, so it does not deny the effect of fragmentation.\n- C: Neither text questions that these populations have declined.\n- D: Text 2 argues that the refueling sites need protecting, not that funding should be moved away from them."
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** Text 2's author sees winter survival as the limiting factor and states directly that in high-mortality years, \"abundant summer habitat goes unused\" — which is precisely what choice D says about restored milkweed.\n\n**The Full Solution:**\n- First pin down each position. Text 1: the decline is driven by milkweed loss on the breeding grounds, so restore milkweed corridors. Text 2: winter mortality in degraded Mexican forests sets the population's fate.\n- Text 2 even anticipates the exchange: when winter losses are high, the returning population is \"simply too small to fill\" the summer habitat that already exists.\n- Apply that logic to Text 1's recommendation: adding still more summer habitat cannot help in the years when winter has already shrunk the population. That is choice D — a limit on the recommendation, not a rejection of it.\n\n**Why the other choices are wrong:**\n- A: This is Text 1's own position; Text 2 explicitly points \"to the winter, not the summer.\"\n- B: Text 2 never denies that milkweed loss contributed — it argues a different season matters more, which is a disagreement about emphasis, not about whether milkweed matters at all.\n- C: Text 2 describes the winter range as vulnerable, but nothing in the text suggests protecting it is hopeless — that would undercut the author's own emphasis on winter survival."
+    },
+    {
+      "id": 159,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "craft-and-structure",
+      "skill": "text-structure-and-purpose",
+      "passage": "Early lighthouses wasted most of their lamps' light: rays sped off toward the sky and the water, and only a small fraction reached the ships that needed the warning. In the 1820s, the French engineer Augustin-Jean Fresnel addressed the problem with a lens assembled from concentric rings of glass prisms. Each ring catches light that would otherwise escape and bends it into a single flat, brilliant beam aimed at the horizon. Lighthouses fitted with the ringed lens could be seen from more than twenty miles away, and versions of Fresnel's design still focus the beams of lighthouses, headlights, and traffic signals today.",
+      "question": "Which choice best states the main purpose of the text?",
+      "choices": [
+        { "id": "A", "text": "To explain how a lens design solved the problem of lighthouses wasting most of their light" },
+        { "id": "B", "text": "To argue that modern lighthouses should replace Fresnel's ringed lenses with newer designs" },
+        { "id": "C", "text": "To recount Augustin-Jean Fresnel's career from his early education to his later fame" },
+        { "id": "D", "text": "To compare the brightness of lighthouse beams with that of car headlights and traffic signals" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** The text exists to explain how Fresnel's ringed lens fixed a specific problem — lighthouses losing most of their light.\n\n**The Full Solution:**\n- Trace what each sentence does. The first states the problem (most light wasted); the second introduces Fresnel's lens; the third explains how the rings redirect escaping light into one beam; the last reports the results and the design's lasting uses.\n- Problem, solution, mechanism, result — the shared job of every sentence is explaining how the design solved the problem, which is exactly what choice A says.\n\n**Why the other choices are wrong:**\n- B: The text celebrates the design's longevity (\"still focus the beams ... today\") and never argues for replacing it.\n- C: Only one period of Fresnel's work appears; his education and later fame are never mentioned.\n- D: Headlights and traffic signals appear only in a closing list of the design's uses — nothing compares their brightness with lighthouse beams."
     },
     // ============================================================
     // Q9-Q16: Information and Ideas
@@ -180,154 +182,16 @@ export const practiceTest1RWM2Easy = {
       "band": 2,
       "domain": "information-and-ideas",
       "skill": "central-ideas-and-details",
-      "passage": "A day-old loaf turns firm and crumbly, and it is tempting to blame the change on drying out. Food chemists have shown that the main cause is different: as the loaf cools and sits, the starch inside it slowly rearranges into rigid, crystal-like structures that squeeze out the water they had taken up during baking. Because that rearrangement can be partly undone by heat, a stale loaf warmed in an oven turns soft again for a while — something a loaf that had simply dried out could never do.",
-      "question": "Which choice best states the main idea of the text?",
+      "passage": "When floodwater soaks a library's collection, conservators move fast — but not to dry the books. Within about forty-eight hours, soaked volumes are packed spine-down in crates and placed in commercial freezers. Freezing does not repair any damage, but it stops new damage from starting: mold cannot grow in a frozen book, and wet inks that would otherwise bleed across pages are held in place. Stabilized this way, a collection can wait weeks or months while conservators plan how each volume will eventually be dried and treated.",
+      "question": "According to the text, why do conservators freeze water-damaged books soon after a flood?",
       "choices": [
-        { "id": "A", "text": "A day-old loaf of bread becomes firm and crumbly rather than staying soft." },
-        { "id": "B", "text": "Warming a stale loaf in an oven softens it for a short time." },
-        { "id": "C", "text": "Bread goes stale mainly because its starch rearranges into rigid structures rather than because the loaf dries out, which is why heating a stale loaf can soften it again." },
-        { "id": "D", "text": "The water that a loaf takes up during baking is driven out of the bread as the loaf cools, and no amount of reheating can put the lost softness back." }
+        { "id": "A", "text": "To dry the soaked volumes more quickly and completely than leaving them in open air would" },
+        { "id": "B", "text": "To repair the damage that the floodwater has already caused" },
+        { "id": "C", "text": "To prevent mold growth and ink damage until the books can be treated" },
+        { "id": "D", "text": "To make the crates of books easier to transport" }
       ],
       "correctAnswer": "C",
-      "explanation": "**Choice C is correct.** It states the passage's central claim - staling comes from starch rearranging, not from drying out - along with the evidence that heat can reverse it.\n\n**The Full Solution:**\n- How to spot it: look for the sentence the rest of the text is built to support. Here it is the second one: the main cause is starch rearranging into rigid, crystal-like structures.\n- The opening sets up the belief being corrected (that bread dries out), and the closing gives the proof: warming a stale loaf softens it again, which drying could never explain.\n- The best answer holds the claim and its support together instead of shrinking to one detail.\n\n**Why the other choices are wrong:**\n- A: It reports only the observation the passage sets out to explain.\n- B: It gives one supporting detail, the reheating, without the cause it demonstrates.\n- D: It twists the text - the water is squeezed out of the starch inside the loaf, and reheating shows the change is not permanent."
-    },
-    {
-      "id": 164,
-      "type": "multiple-choice",
-      "difficulty": "medium",
-      "band": 3,
-      "domain": "information-and-ideas",
-      "skill": "central-ideas-and-details",
-      "passage": "The big bands that filled American dance halls before the Second World War were expensive machines: fifteen or more players, a staff arranger, and a bus. When wartime travel restrictions and a postwar tax on dancing thinned the halls, many leaders could no longer hold such a payroll together. The groups that replaced them were small — a rhythm section and two or three horns — and the music changed with the size. Without written arrangements to carry the weight, a quintet's players stretched a tune's chord changes into long improvised lines, and the solo, rather than the ensemble chorus, became the center of the performance.",
-      "question": "Which choice best states the main idea of the text?",
-      "choices": [
-        { "id": "A", "text": "Big bands playing before the Second World War employed more than fifteen players along with a staff arranger." },
-        { "id": "B", "text": "A postwar tax on dancing reduced attendance at the American dance halls where big bands had performed." },
-        { "id": "C", "text": "The small jazz groups that replaced the big bands in the postwar years typically consisted of a rhythm section along with two or three horn players, a far smaller payroll." },
-        { "id": "D", "text": "Economic pressures after the Second World War replaced big bands with small groups, and the smaller format moved the music's center from written ensemble arrangements to extended improvised solos." }
-      ],
-      "correctAnswer": "D",
-      "explanation": "**Choice D is correct.** It joins the two things the passage links: the money pressure that shrank the bands and the musical change that followed.\n\n**The Full Solution:**\n- How to spot it: a main idea has to cover the whole passage, so check that your answer carries the cause AND the effect. The first half gives the cause - big bands were expensive, and travel restrictions plus a tax on dancing thinned the halls.\n- The second half gives the effect: small groups replaced them, and \"the music changed with the size.\"\n- The last sentence spells that change out - without written arrangements, players stretched chord changes into long improvised lines and the solo became the center. An answer keeping only one half is too narrow.\n\n**Why the other choices are wrong:**\n- A: It gives one detail about big-band size and staffing.\n- B: It reports one cause among several and stops before the musical change.\n- C: It describes the size of the small groups without saying what changed in the music."
-    },
-    {
-      "id": 165,
-      "type": "multiple-choice",
-      "difficulty": "medium",
-      "band": 3,
-      "domain": "information-and-ideas",
-      "skill": "central-ideas-and-details",
-      "passage": "Before the nineteenth century, a lighthouse concentrated its light with a polished metal reflector set behind the lamp. The reflector caught only the light that happened to strike it, and the rest escaped upward or out to the sides, where it was of no use to a ship. The stepped glass lens that replaced these reflectors surrounded the lamp with concentric rings of prisms, each ring bending light that would otherwise have been lost back into a single horizontal beam. A lamp of unchanged brightness could then be seen from far greater distances at sea.",
-      "question": "According to the text, what advantage did the stepped glass lens have over the polished metal reflector?",
-      "choices": [
-        { "id": "A", "text": "It allowed keepers to burn a far brighter lamp than a metal reflector could withstand." },
-        { "id": "B", "text": "It bent light that a reflector would have let escape into the beam directed toward ships." },
-        { "id": "C", "text": "It required less frequent cleaning than a polished metal surface exposed to sea air." },
-        { "id": "D", "text": "It let a single lighthouse send beams in several directions at the same time." }
-      ],
-      "correctAnswer": "B",
-      "explanation": "**Choice B is correct.** The passage says the lens bent light that a reflector let escape back into the beam ships could see.\n\n**The Full Solution:**\n- How to spot it: this is a detail question, so go back to the sentences that compare the two devices rather than picking what sounds impressive.\n- The reflector \"caught only the light that happened to strike it,\" and the rest \"escaped upward or out to the sides, where it was of no use to a ship.\"\n- The lens fixed exactly that: rings of prisms bent \"light that would otherwise have been lost back into a single horizontal beam,\" so the same lamp could be seen farther away.\n\n**Why the other choices are wrong:**\n- A: The passage says the lamp's brightness was unchanged, not that a brighter lamp became possible.\n- C: Cleaning is never mentioned.\n- D: The lens gathered light into one horizontal beam rather than sending beams in several directions."
-    },
-    {
-      "id": 166,
-      "type": "multiple-choice",
-      "difficulty": "medium",
-      "band": 3,
-      "domain": "information-and-ideas",
-      "skill": "command-of-evidence-textual",
-      "passage": "Paintings are often finished with a clear varnish, which over time turns yellow and dulls the colors beneath it. Conservators have generally attributed the yellowing to the slow chemical breakdown of the varnish as it ages. A conservation team has proposed something more specific: that the change is driven chiefly by exposure to light rather than by the passage of time alone.",
-      "question": "Which finding, if true, would most directly support the team's proposal?",
-      "choices": [
-        { "id": "A", "text": "Panels varnished in the same year yellowed far more where they had hung in a daylit gallery than where they had been kept in a dark storeroom." },
-        { "id": "B", "text": "Varnish applied in a thick layer took longer to yellow than varnish applied in a thin layer." },
-        { "id": "C", "text": "Paintings whose varnish was applied more than a century ago were, on average, distinctly yellower than paintings that were varnished within the past decade in the same collection." },
-        { "id": "D", "text": "The solvents conservators use to remove aged varnish also dissolve some of the paint beneath it." }
-      ],
-      "correctAnswer": "A",
-      "explanation": "**Choice A is correct.** The proposal is that light, not age alone, drives the yellowing, so the evidence has to hold age steady and vary the light - and A does.\n\n**The Full Solution:**\n- How to spot it: pin down the exact claim first. It is narrow: the change comes \"chiefly by exposure to light rather than by the passage of time alone.\"\n- To support that, you need varnish of the SAME age that received different amounts of light. Evidence that changes both at once cannot separate the two causes.\n- Choice A gives precisely that comparison: panels varnished in the same year, some hung in daylight and some kept in the dark, with far more yellowing on the lit ones.\n\n**Why the other choices are wrong:**\n- B: Thickness is a different variable and says nothing about light.\n- C: Older varnish being yellower fits the age explanation the team is arguing past.\n- D: Solvent damage during cleaning has nothing to do with why varnish yellows."
-    },
-    {
-      "id": 167,
-      "type": "multiple-choice",
-      "difficulty": "easy",
-      "band": 2,
-      "domain": "information-and-ideas",
-      "skill": "command-of-evidence-quantitative",
-      "passage": "The energy a tidal-stream site can supply depends on how fast the water moves past the turbine, and the water moves fastest where the difference between high and low tide is greatest. After surveying four candidate channels, a team of engineers concluded that a site's daily energy output rises along with its tidal range because _______",
-      "questionTable": {
-        "type": "table",
-        "caption": "Mean tidal range and estimated daily electricity output at four candidate tidal-stream sites",
-        "headers": [
-          "Site",
-          "Mean tidal range (m)",
-          "Estimated daily output (MWh)"
-        ],
-        "rows": [
-          ["Site 1", "3.1", "12"],
-          ["Site 2", "4.8", "21"],
-          ["Site 3", "7.2", "38"],
-          ["Site 4", "9.6", "60"]
-        ]
-      },
-      "question": "Which choice most effectively uses data from the table to complete the statement?",
-      "choices": [
-        { "id": "A", "text": "Site 4, with a mean tidal range of 9.6 m, had the highest estimated daily output of the four channels surveyed, 60 MWh." },
-        { "id": "B", "text": "Site 1 had a mean tidal range of 3.1 m, the smallest of the four channels the engineers surveyed." },
-        { "id": "C", "text": "the four sites fall in the same order on both measures: output climbed from 12 MWh at the 3.1 m site to 21 MWh at 4.8 m, 38 MWh at 7.2 m, and 60 MWh at 9.6 m." },
-        { "id": "D", "text": "Site 3, with a mean tidal range of 7.2 m, had an estimated daily output of 38 MWh, more than three times the output estimated for Site 1." }
-      ],
-      "correctAnswer": "C",
-      "explanation": "**Choice C is correct.** The claim describes a pattern across all four sites, so the evidence has to run through every row - and only C does.\n\n**The Full Solution:**\n- How to spot it: check the scope of the claim before reading the choices. The engineers say output rises \"along with its tidal range,\" which is a pattern across sites, not a fact about one site.\n- A pattern claim needs the whole table: as the range climbs from 3.1 m to 4.8 m to 7.2 m to 9.6 m, output climbs from 12 to 21 to 38 to 60 MWh.\n- Choice C walks through all four pairs and shows they line up in the same order, which is what a rise-together claim requires.\n\n**Why the other choices are wrong:**\n- A: It reports the single highest site, which cannot establish a pattern.\n- B: It gives one site's tidal range and no output figure at all.\n- D: It compares two sites only, leaving half the table unused."
-    },
-    {
-      "id": 168,
-      "type": "multiple-choice",
-      "difficulty": "medium",
-      "band": 3,
-      "domain": "information-and-ideas",
-      "skill": "command-of-evidence-quantitative",
-      "passage": "Not all of the water a soil holds can be taken up by roots; some clings so tightly to the soil particles that plants cannot pull it free. Comparing four soil textures, agronomists have argued that the soil supplying plants with the most water is not the soil that holds the most water overall because _______",
-      "questionTable": {
-        "type": "table",
-        "caption": "Total water held and plant-available water for four soil textures, per meter of soil depth",
-        "headers": [
-          "Soil texture",
-          "Total water held (mm)",
-          "Water available to plants (mm)"
-        ],
-        "rows": [
-          ["Sand", "80", "50"],
-          ["Sandy loam", "150", "110"],
-          ["Loam", "230", "170"],
-          ["Clay", "320", "120"]
-        ]
-      },
-      "question": "Which choice most effectively uses data from the table to complete the statement?",
-      "choices": [
-        { "id": "A", "text": "clay held 320 mm of water per meter of depth, more than any other texture in the table." },
-        { "id": "B", "text": "sand held the least water of the four textures, 80 mm, and also made the least available to plants, 50 mm." },
-        { "id": "C", "text": "loam made 170 mm of water available to plants, more than sandy loam's 110 mm and more than sand's 50 mm." },
-        { "id": "D", "text": "clay held the most water overall, 320 mm, but made only 120 mm of it available to plants, while loam held less in total, 230 mm, and yet made 170 mm available." }
-      ],
-      "correctAnswer": "D",
-      "explanation": "**Choice D is correct.** The claim has two parts - the soil holding the most water is not the soil supplying plants with the most - so the evidence must use both columns, and D does.\n\n**The Full Solution:**\n- How to spot it: break the claim into requirements. It needs (1) the soil that holds the most water overall and (2) a different soil that makes the most available to plants.\n- Clay tops the \"total water held\" column at 320 mm, but only 120 mm of that reaches plants.\n- Loam holds less overall, 230 mm, yet supplies 170 mm, the highest in the availability column. Choice D sets those two rows side by side, which is exactly the comparison the claim rests on.\n\n**Why the other choices are wrong:**\n- A: It gives clay's total only and never mentions what plants can use.\n- B: Sand is lowest on both measures, so it shows no gap between the two columns.\n- C: It ranks loam against sandy loam and sand but leaves out clay, the soil that holds the most water."
-    },
-    {
-      "id": 169,
-      "type": "multiple-choice",
-      "difficulty": "medium",
-      "band": 3,
-      "domain": "information-and-ideas",
-      "skill": "inferences",
-      "passage": "Modern harbor structures are built from concrete that seawater slowly destroys: salt water works into the pores, corrodes the steel reinforcement, and cracks the surrounding material within a few decades. The Roman piers and breakwaters still standing in the Mediterranean were made instead from a mixture of lime and volcanic ash, and where seawater has percolated through their cracks over two thousand years it has left behind interlocking crystals of new minerals that were not present when the concrete was poured. Studying these structures therefore suggests that seawater, which shortens the life of a modern harbor wall, ______",
-      "question": "Which choice most logically completes the text?",
-      "choices": [
-        { "id": "A", "text": "must have been deliberately mixed into the lime and volcanic ash while the Roman concrete was still being poured." },
-        { "id": "B", "text": "acted on Roman marine concrete in a way that reinforced it rather than only breaking it down." },
-        { "id": "C", "text": "damages any structure built without steel reinforcement more quickly than it damages a reinforced one." },
-        { "id": "D", "text": "has had no measurable chemical effect on the Roman piers and breakwaters that remain standing." }
-      ],
-      "correctAnswer": "B",
-      "explanation": "**Choice B is correct.** Seawater left new interlocking minerals inside the Roman concrete, so for those structures it did more than wear the material down.\n\n**The Full Solution:**\n- How to spot it: an inference question asks what MUST follow, so list the facts first. Fact 1: in modern harbor concrete, seawater corrodes the reinforcement and cracks the material within decades.\n- Fact 2: in Roman lime-and-ash concrete, seawater working through the cracks has left \"interlocking crystals of new minerals that were not present when the concrete was poured.\"\n- Crystals that interlock inside a crack bind material together rather than break it apart, so the safe conclusion is that the same seawater strengthened the Roman mixture instead of only destroying it.\n\n**Why the other choices are wrong:**\n- A: The passage describes seawater seeping in over two thousand years, not being added during construction.\n- C: The text never compares unreinforced modern structures with reinforced ones.\n- D: It denies the chemical effect the passage actually reports - the new minerals themselves."
+      "explanation": "**Choice C is correct.** The text says freezing \"stops new damage from starting\" — mold cannot grow and wet inks are held in place — while treatment is planned.\n\n**The Full Solution:**\n- How to spot it: this is a detail question, so the answer must restate something the text says outright.\n- Find the sentence about what freezing does: it names two threats stopped cold — mold growth and bleeding ink.\n- The final sentence adds the time element: the frozen collection \"can wait weeks or months\" for treatment. Choice C combines both, and nothing in it goes beyond the text.\n\n**Why the other choices are wrong:**\n- A: The text says conservators freeze the books precisely because they are NOT drying them yet — drying comes later, after planning.\n- B: The text states the opposite: \"Freezing does not repair any damage.\"\n- D: Transport is never mentioned anywhere in the text."
     },
     {
       "id": 170,
@@ -336,38 +200,149 @@ export const practiceTest1RWM2Easy = {
       "band": 4,
       "domain": "information-and-ideas",
       "skill": "inferences",
-      "passage": "When deaf children who had grown up in separate households were first brought together at a new school, they had no language in common. Within a few years the earliest students had built a system of gestures that let them communicate, though its word order varied from signer to signer and its markers for who did what to whom were applied inconsistently. Younger children entering the school afterward learned that system from those older students and produced a version of it that was markedly more regular than the one they had been shown, with consistent ordering and markers used the same way every time. Because the younger signers were exposed only to the older students' variable input, their output suggests that ______",
+      "passage": "Archaeologists often date a Mediterranean shipwreck by its amphorae — the ceramic shipping jars whose shapes changed with time and place in well-documented ways. The method has a complication: amphorae were durable and routinely reused, sometimes serving aboard ships for decades after they were made, so a single cargo can mix jars manufactured generations apart. A ship, however, cannot sink before any object it carries has been made. Recognizing this, careful excavators treat the assemblage asymmetrically: they conclude that ______",
       "question": "Which choice most logically completes the text?",
       "choices": [
-        { "id": "A", "text": "the first students at the school had been deliberately teaching their younger schoolmates a fixed set of grammatical rules." },
-        { "id": "B", "text": "a communication system cannot become grammatically regular unless its earliest users already agree on a single word order." },
-        { "id": "C", "text": "much of the system's grammatical regularity was contributed by the children learning it rather than by the children who first produced it." },
-        { "id": "D", "text": "the gestures the first students invented were understood by every member of the surrounding hearing community." }
+        { "id": "A", "text": "averaging the manufacturing dates of all the amphorae in a cargo yields the best estimate of the sinking date." },
+        { "id": "B", "text": "the oldest amphorae in a cargo, having witnessed the longest span of seafaring, provide the most trustworthy estimate of when the ship went down." },
+        { "id": "C", "text": "reuse makes amphora-based dates so unreliable that excavators should date wrecks by coins, hull timbers, or other artifacts whenever any are present." },
+        { "id": "D", "text": "the most recently manufactured amphorae aboard a wreck set the earliest date the ship could have sunk, while older jars reveal little about the sinking itself." }
+      ],
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** Since jars can be old but cannot be from the future, the newest jar aboard bounds the sinking date; the old ones, being possibly reused, tell you almost nothing about when the ship sank.\n\n**The Full Solution:**\n- The passage plants two premises. Reuse means a jar can be much OLDER than the voyage it sailed on. The sinking, though, \"cannot\" happen \"before any object it carries has been made\" — no jar can be YOUNGER than the wreck.\n- Now apply the asymmetry the last sentence promises. An old jar is ambiguous: made long ago, possibly reused for decades. But the newest jar is decisive in one direction — the ship must have sunk at or after that jar's manufacture.\n- Choice D is the only option that captures both halves: newest jars set the earliest possible sinking date; older jars \"reveal little,\" precisely because reuse makes their presence uninformative.\n\n**Why the other choices are wrong:**\n- A: Averaging treats every jar as equally informative, which is exactly what the promised \"asymmetric\" treatment rejects — one recent jar outweighs any number of old ones.\n- B: Backwards. The oldest jars are the ones reuse most thoroughly compromises — they could predate the voyage by generations.\n- C: The passage describes excavators refining the amphora method, not abandoning it; \"so unreliable\" contradicts the constructive turn of the final sentence."
+    },
+    {
+      "id": 168,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "command-of-evidence-quantitative",
+      "passage": "In a six-month trial, a city gave 120 households free composting bins of three different designs — 40 households per design — and weighed the food waste each household diverted from the trash. Because dropout can distort such comparisons, the researchers also recorded how many households in each group were still composting when the trial ended. The researchers argue that the tumbling drum's advantage reflects the design itself rather than unusually committed participants because _______",
+      "questionTable": {
+        "type": "table",
+        "caption": "Results of a six-month home-composting trial, by bin design",
+        "headers": ["Bin design", "Households", "Food waste diverted (kg per household per week)", "Still participating at six months"],
+        "rows": [
+          ["Tumbling drum", "40", "3.9", "78%"],
+          ["Open bay", "40", "2.6", "74%"],
+          ["Worm bin", "40", "3.1", "52%"]
+        ]
+      },
+      "question": "Which choice most effectively uses data from the table to complete the statement?",
+      "choices": [
+        { "id": "A", "text": "only 52% of worm-bin households were still composting when the six-month trial ended." },
+        { "id": "B", "text": "tumbling-drum households had the highest participation rate in the trial, which shows that they were the most committed of the three groups." },
+        { "id": "C", "text": "tumbling-drum households diverted the most waste per week (3.9 kilograms) while participating at nearly the same rate (78%) as open-bay households (74%)." },
+        { "id": "D", "text": "tumbling-drum households diverted an average of 3.9 kilograms of food waste per household per week over the six months, more than either of the other two groups managed." }
       ],
       "correctAnswer": "C",
-      "explanation": "**Choice C is correct.** The younger children produced a more regular system than the one they were shown, so the regularity came from the learners themselves.\n\n**The Full Solution:**\n- How to spot it: for an inference, line up the facts and take only the step they force. Fact 1: the first students built a system whose word order varied and whose markers were used inconsistently.\n- Fact 2: the younger children learned that variable system and produced a markedly more regular version, with consistent ordering and consistent markers.\n- Fact 3: the passage closes off any other source - they were \"exposed only to the older students' variable input.\" The regularity was not in what they were shown, so it had to come from the children learning it.\n\n**Why the other choices are wrong:**\n- A: Nothing suggests deliberate teaching, and the older students had no consistent rules to teach.\n- B: It says a system \"cannot\" become regular without early agreement, which this very case disproves.\n- D: The surrounding hearing community is never mentioned."
+      "explanation": "**Choice C is correct.** To show the design — not commitment — explains the advantage, the evidence must pair the diversion numbers with participation rates that are roughly equal, and choice C does exactly that.\n\n**The Full Solution:**\n- The claim is a comparison with a built-in objection: maybe tumbling-drum households just tried harder. Effective evidence has to rule that out.\n- Participation is the table's measure of staying power. Tumbling drum (78%) and open bay (74%) are nearly level — yet the drum households diverted 3.9 kg per week to the open bay's 2.6.\n- Similar commitment, different results: the difference must come from the design. Choice C is the only option that makes this two-variable argument.\n\n**Why the other choices are wrong:**\n- A: The worm-bin dropout rate is real but supports a different point (worm bins lose participants); it says nothing about why tumbling drums outperformed.\n- B: This choice argues AGAINST the researchers, attributing the result to commitment — and 78% versus 74% is far too small a gap to carry that argument.\n- D: The diversion number alone restates the advantage without addressing the commitment objection, which is the entire point of the sentence being completed."
+    },
+    {
+      "id": 167,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "information-and-ideas",
+      "skill": "command-of-evidence-quantitative",
+      "passage": "Marlow County's library system kept its four branches open only until 5 p.m. for years. In 2023, the county extended hours at every branch to 8 p.m. on weekdays and tracked monthly visits before and after the change. Library administrators concluded that the later hours drew more visitors systemwide and that the effect was strongest at the Riverside branch because _______",
+      "questionTable": {
+        "type": "table",
+        "caption": "Average monthly visits at Marlow County library branches before and after extended evening hours (2023)",
+        "headers": ["Branch", "Visits before", "Visits after", "Change"],
+        "rows": [
+          ["Cedar Park", "2,100", "2,570", "+470"],
+          ["Fairground", "1,850", "2,210", "+360"],
+          ["Riverside", "1,600", "2,340", "+740"],
+          ["Walnut Street", "1,980", "2,150", "+170"]
+        ]
+      },
+      "question": "Which choice most effectively uses data from the table to complete the statement?",
+      "choices": [
+        { "id": "A", "text": "monthly visits rose at all four branches, and Riverside's gain of 740 visits was the largest in the table." },
+        { "id": "B", "text": "Cedar Park recorded the highest total number of monthly visits of any branch in the county after the change to evening hours." },
+        { "id": "C", "text": "monthly visits rose at two of the four branches, with Riverside showing the smaller of the two gains." },
+        { "id": "D", "text": "Walnut Street's monthly visits changed more than those of any other branch." }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** The claim has two parts — more visitors systemwide, strongest effect at Riverside — and choice A supplies the data for both.\n\n**The Full Solution:**\n- Break the administrators' conclusion into its claims: (1) later hours drew more visitors at every branch, and (2) Riverside felt the effect most.\n- Now check choice A against the Change column: every branch shows a positive change (+470, +360, +740, +170), and Riverside's +740 is the biggest number in the column.\n- One choice, both claims covered, every number checkable in the table — that is what \"most effectively uses data\" means.\n\n**Why the other choices are wrong:**\n- B: Cedar Park's 2,570 is indeed the highest \"after\" total, but the claim is about the size of the CHANGE, not the size of the branch — and this choice ignores the systemwide claim entirely.\n- C: The table contradicts this twice: all four branches rose, not two, and Riverside's gain was the largest, not the smaller.\n- D: Walnut Street's +170 is the smallest change in the table, not the largest."
+    },
+    {
+      "id": 164,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "central-ideas-and-details",
+      "passage": "In 1843, the mathematician Ada Lovelace published an English translation of a French paper describing Charles Babbage's proposed Analytical Engine. What made the publication remarkable was not the translation but the notes Lovelace appended to it, which ran nearly three times the length of the original. In them she worked out, step by step, how the machine could be instructed to compute a series of numbers — and then went further, observing that a device that manipulated symbols according to rules need not confine itself to arithmetic. Such an engine, she suggested, might one day compose music.",
+      "question": "Which choice best states the main idea of the text?",
+      "choices": [
+        { "id": "A", "text": "Lovelace's notes on the Analytical Engine went beyond translation to offer original insight into what such a machine might do" },
+        { "id": "B", "text": "Lovelace's translation corrected several mathematical errors that had appeared in the original French paper" },
+        { "id": "C", "text": "Babbage relied on the calculations in Lovelace's appended notes when he began constructing a working model of the Analytical Engine" },
+        { "id": "D", "text": "Lovelace believed that machines would eventually replace human composers of music" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** The text's through-line is that the notes — not the translation — contained Lovelace's own thinking, culminating in her insight that the machine's powers could extend beyond arithmetic.\n\n**The Full Solution:**\n- The second sentence hands you the emphasis: what was remarkable \"was not the translation but the notes.\"\n- The rest of the text catalogs what the notes contained: a worked computation, then the further observation about symbols beyond numbers, then the music example.\n- A main idea must cover that whole arc without exaggerating any piece. Choice A does: the notes went beyond translation into original insight about the machine's possibilities.\n\n**Why the other choices are wrong:**\n- B: The text never mentions errors in the French paper.\n- C: Babbage's construction plans are not discussed, and the engine is described only as \"proposed.\"\n- D: The text says she suggested an engine \"might one day compose music\" — a possibility about machines, not a claim that they would replace human composers."
+    },
+    {
+      "id": 165,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "central-ideas-and-details",
+      "passage": "Along the coast of South Carolina and Georgia, Gullah Geechee artisans have coiled baskets from local grasses for more than three centuries, winding bundles of soft sweetgrass into spirals bound with strips of palmetto leaf. The technique has been handed down within families largely unchanged. The materials, however, have had to shift: as coastal development fenced off the marshes and dunes where sweetgrass grows, many makers began working stiffer bulrush into their coils. The baskets' forms have adapted with the materials, but the coiling method itself remains the tradition's unbroken thread.",
+      "question": "According to the text, why have some basket makers incorporated bulrush into their work?",
+      "choices": [
+        { "id": "A", "text": "Bulrush is softer than sweetgrass and therefore easier to wind into coils" },
+        { "id": "B", "text": "Coastal development has limited their access to the places where sweetgrass grows" },
+        { "id": "C", "text": "Basket buyers in coastal markets began requesting sturdier baskets made from stiffer, longer-lasting materials" },
+        { "id": "D", "text": "The palmetto strips traditionally used to bind sweetgrass coils became difficult to find" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The text ties the shift to bulrush directly to development: it \"fenced off the marshes and dunes where sweetgrass grows.\"\n\n**The Full Solution:**\n- Locate the sentence about the material change — it begins \"The materials, however, have had to shift.\"\n- The colon construction gives the cause first (development closing off sweetgrass habitat) and the response second (makers \"began working stiffer bulrush into their coils\").\n- Choice B restates that cause without adding anything, which is exactly what a detail answer must do.\n\n**Why the other choices are wrong:**\n- A: The text calls bulrush \"stiffer\" than sweetgrass, not softer, and says nothing about either grass being easier to work.\n- C: Buyers' preferences never appear in the text.\n- D: Palmetto is mentioned as the binding material, but the text never says it grew scarce."
+    },
+    {
+      "id": 166,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "command-of-evidence-textual",
+      "passage": "The Amazon rain forest grows on soils that are, by geological standards, ancient and nutrient-poor: rain has been leaching phosphorus out of them for millions of years. Atmospheric scientists tracking dust with satellites have proposed a claim that ties the forest's continued fertility to a desert an ocean away: dust lifted from dry lakebeds in the Sahara, they argue, rides the trade winds across the Atlantic and delivers enough nutrients to help offset what Amazonian rains continually wash away.",
+      "question": "Which finding, if true, would most directly support the researchers' claim?",
+      "choices": [
+        { "id": "A", "text": "Satellite images show that plumes of Saharan dust are visible over the Atlantic Ocean during most months of the year" },
+        { "id": "B", "text": "Several thousand years ago, much of the Sahara was covered by lakes and grasslands rather than desert" },
+        { "id": "C", "text": "Amazonian soils far from rivers are even more nutrient-poor than soils on the forest's floodplains" },
+        { "id": "D", "text": "Dust collected as it settles over the Amazon contains phosphorus in yearly amounts comparable to the phosphorus that rainfall leaches from the forest's soils" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** The claim has two links — Saharan dust reaches the Amazon, and it delivers enough nutrients to offset losses — and D confirms both at once by measuring phosphorus actually arriving in amounts that match what rain removes.\n\n**The Full Solution:**\n- Pin down the claim precisely: dust crosses the Atlantic AND supplies enough nutrients to help offset what rain leaches away. Support must connect arriving dust to replacement-scale nutrients.\n- Choice D does exactly this: the dust is collected as it settles over the forest (arrival confirmed), it contains phosphorus (the very nutrient being lost), and the yearly amounts are comparable to the losses (replacement-scale, matching \"offset\").\n\n**Why the other choices are wrong:**\n- A: Visible plumes over the ocean show transport partway, but say nothing about what the dust contains or whether it reaches and fertilizes the forest.\n- B: The Sahara's greener past explains why dry lakebeds exist, but it is background history, not evidence that today's dust feeds the Amazon.\n- C: A comparison among Amazonian soils never mentions dust — it cannot link the desert to the forest's fertility."
+    },
+    {
+      "id": 169,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "inferences",
+      "passage": "Cliff swallows build their gourd-shaped mud nests on vertical faces sheltered by an overhang, a combination that natural cliffs provide only patchily across the landscape. Highway bridges and concrete culverts offer both features in abundance, and the birds have moved in: colonies numbering in the thousands now cluster under bridges spanning open farmland and prairie — country that offers the flying insects swallows eat in quantity, but little in the way of natural rock. This suggests that ______",
+      "question": "Which choice most logically completes the text?",
+      "choices": [
+        { "id": "A", "text": "flying insect populations are larger near highway bridges than near natural cliffs." },
+        { "id": "B", "text": "bridges and culverts have allowed cliff swallows to breed in regions that historically offered them few natural nesting sites." },
+        { "id": "C", "text": "cliff swallows now prefer artificial structures to natural cliffs wherever both are available." },
+        { "id": "D", "text": "cliff swallow colonies on natural cliff faces have been abandoned as the birds have shifted to nesting under bridges throughout their range." }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The passage sets up exactly this conclusion: the birds need two features natural cliffs supply only \"patchily,\" bridges supply both, and colonies now thrive in food-rich country with \"little in the way of natural rock.\"\n\n**The Full Solution:**\n- Gather the given facts: (1) nesting requires vertical faces plus overhangs; (2) natural cliffs offer that combination unevenly; (3) bridges offer it abundantly; (4) huge colonies now sit over insect-rich land that lacks rock.\n- The gap the inference must fill: what do these facts, together, show? That artificial structures opened up breeding territory the birds could not have used before — places with plenty of food but no place to build.\n- Choice B states that and nothing more. It stays within the evidence: \"few natural nesting sites\" mirrors \"little in the way of natural rock.\"\n\n**Why the other choices are wrong:**\n- A: The passage says the farmland offers abundant insects — it never compares insect numbers near bridges versus near cliffs.\n- C: Preference would require comparing what swallows do when both options are available, and the passage describes no such comparison.\n- D: \"Abandoned... throughout their range\" goes far beyond the evidence; new colonies under bridges say nothing about old colonies on cliffs."
     },
     // ============================================================
     // Q17-Q22: Standard English Conventions
     // ============================================================
-    {
-      "id": 171,
-      "type": "multiple-choice",
-      "difficulty": "easy",
-      "band": 2,
-      "domain": "standard-english-conventions",
-      "skill": "boundaries",
-      "passage": "Weather radar was built to track storms, but it picks up more than rain. On clear nights each autumn, the radar screens over the eastern United States fill with a spreading blue ______ of songbirds are lifting off at once and heading south in the dark.",
-      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-      "choices": [
-        { "id": "A", "text": "haze. Millions" },
-        { "id": "B", "text": "haze, millions" },
-        { "id": "C", "text": "haze millions" },
-        { "id": "D", "text": "haze, and millions," }
-      ],
-      "correctAnswer": "A",
-      "explanation": "**Choice A is correct.** Both halves are complete sentences on their own, so they need a full stop between them.\n\n**The Full Solution:**\n- How to spot it: cover the blank and test each side. Before: \"the radar screens over the eastern United States fill with a spreading blue haze\" - a complete sentence.\n- After: \"Millions of songbirds are lifting off at once and heading south in the dark\" - also a complete sentence.\n- Two complete sentences cannot be joined by a comma or by nothing at all. A period ends the first and starts the second cleanly.\n\n**Why the other choices are wrong:**\n- B: A comma between two complete sentences is the classic comma-splice error.\n- C: No punctuation at all runs the two sentences together.\n- D: The comma after \"millions\" cuts the subject off from \"of songbirds,\" which never takes a comma."
-    },
     {
       "id": 172,
       "type": "multiple-choice",
@@ -375,34 +350,34 @@ export const practiceTest1RWM2Easy = {
       "band": 2,
       "domain": "standard-english-conventions",
       "skill": "form-structure-and-sense",
-      "passage": "The steelpan was invented in Trinidad in the years around the Second World War, when musicians there began working with discarded oil drums. In 1946, one drum maker ______ the flat end of a barrel into a shallow bowl and hammered dents across its surface, each dent tuned to sound a different pitch when struck.",
+      "passage": "The main mirror of a modern segmented telescope is not a single sheet of glass but a mosaic of hexagonal panels. Each of the ______ its own set of motorized supports, which tilt and flex the panel until all the segments act together as one smooth reflecting surface.",
       "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
       "choices": [
-        { "id": "A", "text": "has sunk" },
-        { "id": "B", "text": "sinks" },
-        { "id": "C", "text": "had sunk" },
-        { "id": "D", "text": "sank" }
-      ],
-      "correctAnswer": "D",
-      "explanation": "**Choice D is correct.** The action is pinned to a finished year, so it takes the plain past-tense verb \"sank.\"\n\n**The Full Solution:**\n- How to spot it: look for a date. \"In 1946\" fixes the action at one finished moment in the past, which calls for the simple past.\n- Check the verbs around it - \"began,\" \"hammered\" - and match them. Keeping finished actions in the same tense holds the timeline steady.\n- \"Sank ... and hammered\" pairs the two actions in the same form, so the sentence reads straight through.\n\n**Why the other choices are wrong:**\n- A: \"Has sunk\" is the \"has done\" form, used when there is no fixed date - it clashes with \"In 1946.\"\n- B: \"Sinks\" is present tense, wrong for something that happened decades ago.\n- C: \"Had sunk\" only fits when one past action comes before another past action, and there is no earlier event here for it to precede."
-    },
-    {
-      "id": 173,
-      "type": "multiple-choice",
-      "difficulty": "medium",
-      "band": 3,
-      "domain": "standard-english-conventions",
-      "skill": "boundaries",
-      "passage": "A major Roman road was not simply a paved strip but a stack of engineered ______ a bed of fist-sized stones, a layer of gravel bound with lime mortar, and a surface of close-fitted blocks that shed rain toward ditches on either side.",
-      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-      "choices": [
-        { "id": "A", "text": "layers:" },
-        { "id": "B", "text": "layers," },
-        { "id": "C", "text": "layers" },
-        { "id": "D", "text": "layers;" }
+        { "id": "A", "text": "segments has" },
+        { "id": "B", "text": "segments have" },
+        { "id": "C", "text": "segments are having" },
+        { "id": "D", "text": "segments were having" }
       ],
       "correctAnswer": "A",
-      "explanation": "**Choice A is correct.** A complete sentence promises a stack of layers, and a colon introduces the list that names them.\n\n**The Full Solution:**\n- How to spot it: check whether the words before the blank could stand alone. \"A major Roman road was not simply a paved strip but a stack of engineered layers\" is a complete sentence, and it leaves you waiting to hear what the layers were.\n- What follows is not a new sentence but a list of noun phrases: the stone bed, the mortared gravel, the fitted blocks.\n- A colon is the mark for \"complete sentence, and here is what I mean.\" It also keeps the seam clear when the list already has commas of its own.\n\n**Why the other choices are wrong:**\n- B: A comma is too weak here and blurs into the commas inside the list.\n- C: With no punctuation the list crashes straight into the sentence.\n- D: A semicolon needs a complete sentence after it, but what follows is only a list of phrases."
+      "explanation": "**Choice A is correct.** The subject is \"Each,\" which is singular, so the verb must be \"has.\"\n\n**The Full Solution:**\n- Find the true subject. It is \"Each\" — the phrase \"of the segments\" is a prepositional phrase describing which each, and the noun inside a prepositional phrase never controls the verb.\n- \"Each\" is grammatically singular: each one has.\n- The rest of the paragraph is in the present tense (\"is not a single sheet,\" \"tilt and flex\"), so present-tense \"has\" fits the context.\n\n**Why the other choices are wrong:**\n- B: \"Have\" agrees with the nearby plural \"segments,\" but that noun is inside the prepositional phrase — the subject is still singular \"Each.\"\n- C: Besides repeating the agreement error, \"are having\" uses the progressive for a permanent state of affairs; possession is not an ongoing action.\n- D: \"Were having\" is both plural and past tense in a passage set entirely in the present."
+    },
+    {
+      "id": 171,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "standard-english-conventions",
+      "skill": "boundaries",
+      "passage": "Comets are sometimes described as dirty snowballs: loose masses of ice and dust left over from the solar system's formation. Each time a comet swings near the sun, heat boils some of its ice away, and gas and dust stream off the ______ the released dust does not vanish but spreads slowly along the comet's entire orbit.",
+      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "choices": [
+        { "id": "A", "text": "nucleus, the" },
+        { "id": "B", "text": "nucleus the" },
+        { "id": "C", "text": "nucleus. The" },
+        { "id": "D", "text": "nucleus and, the" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** Two complete sentences meet at the blank, and a period is a correct way to separate them.\n\n**The Full Solution:**\n- Test what stands on each side of the blank. Before: \"heat boils some of its ice away, and gas and dust stream off the nucleus\" — a complete sentence. After: \"the released dust does not vanish but spreads slowly...\" — also a complete sentence.\n- Two independent clauses need a real boundary: a period, a semicolon, or a comma plus a coordinating conjunction.\n- Choice C supplies the period. Reading the result aloud confirms two clean sentences.\n\n**Why the other choices are wrong:**\n- A: A comma alone between two independent clauses is a comma splice.\n- B: No punctuation at all runs the two sentences together.\n- D: \"And\" could join the clauses only with a comma BEFORE it (\"nucleus, and the\"); placing the comma after \"and\" breaks the conjunction away from the clause it introduces."
     },
     {
       "id": 174,
@@ -411,16 +386,16 @@ export const practiceTest1RWM2Easy = {
       "band": 3,
       "domain": "standard-english-conventions",
       "skill": "form-structure-and-sense",
-      "passage": "Soil scientists studying pasture ground have measured how quickly rainfall soaks in where earthworms are abundant. The dense network of vertical channels that large populations of earthworms leave behind ______ water down past the surface far faster than an undisturbed crust of soil can absorb it.",
+      "passage": "To learn where meltwater goes after it disappears from a glacier's surface, the research team drilled boreholes hundreds of feet into the ice, lowered waterproof pressure sensors into them, and ______ pulses of harmless dye released into streams upstream.",
       "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
       "choices": [
-        { "id": "A", "text": "carry" },
-        { "id": "B", "text": "have carried" },
-        { "id": "C", "text": "were carrying" },
-        { "id": "D", "text": "carries" }
+        { "id": "A", "text": "tracking" },
+        { "id": "B", "text": "to track" },
+        { "id": "C", "text": "have tracked" },
+        { "id": "D", "text": "tracked" }
       ],
       "correctAnswer": "D",
-      "explanation": "**Choice D is correct.** The subject is the singular word \"network,\" so the verb has to be singular: \"carries.\"\n\n**The Full Solution:**\n- How to spot it: find the one word the verb is really about and ignore everything wedged between them. The verb belongs to \"The dense network\" - one network.\n- The trap is the plural \"populations of earthworms\" sitting right before the blank inside a describing phrase. Being close to the verb does not make a word the subject.\n- Strip the sentence to its bones: \"The network ... carries water down past the surface.\" Singular subject, singular verb.\n\n**Why the other choices are wrong:**\n- A: \"Carry\" is plural, matching the nearby \"populations\" instead of \"network.\"\n- B: \"Have carried\" is plural and also shifts the time frame for no reason.\n- C: \"Were carrying\" is plural and past, wrong on both counts for a singular, present-tense subject."
+      "explanation": "**Choice D is correct.** The blank is the third item in a list of past-tense verbs — \"drilled,\" \"lowered,\" and \"tracked\" — and list items must match in form.\n\n**The Full Solution:**\n- Map the sentence's skeleton: the team did three things — drilled boreholes, lowered sensors, and ______ dye pulses.\n- The first two verbs are simple past. Parallel structure requires the third to be simple past as well.\n- \"Tracked\" completes the matched series; read the three verbs in a row to hear the parallelism.\n\n**Why the other choices are wrong:**\n- A: \"Tracking\" breaks the series with an -ing form: \"drilled, lowered, and tracking.\"\n- B: \"To track\" turns the third item into an infinitive of purpose, leaving \"and\" joining a verb to a purpose phrase — the list falls apart.\n- C: \"Have tracked\" shifts into the present perfect mid-list, clashing with the simple past of \"drilled\" and \"lowered.\""
     },
     {
       "id": 175,
@@ -429,16 +404,16 @@ export const practiceTest1RWM2Easy = {
       "band": 3,
       "domain": "standard-english-conventions",
       "skill": "boundaries",
-      "passage": "Although a tidal lagoon costs far more to build than a wind farm of comparable ______ the electricity it will deliver can be scheduled years ahead from a tide table, which makes the project easier for a utility to plan around.",
+      "passage": "Tyrian purple was among the most expensive substances in the ancient Mediterranean; extracting enough dye for a single garment consumed thousands of sea snails. The color also proved unusually ______ garments dyed with it kept their deep hue long after cheaper colors had faded to gray.",
       "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
       "choices": [
-        { "id": "A", "text": "capacity," },
-        { "id": "B", "text": "capacity" },
-        { "id": "C", "text": "capacity;" },
-        { "id": "D", "text": "capacity:" }
+        { "id": "A", "text": "durable:" },
+        { "id": "B", "text": "durable," },
+        { "id": "C", "text": "durable" },
+        { "id": "D", "text": "durable, for example," }
       ],
       "correctAnswer": "A",
-      "explanation": "**Choice A is correct.** The sentence opens with an incomplete \"Although\" clause, so a comma marks the seam before the complete sentence that follows.\n\n**The Full Solution:**\n- How to spot it: notice the opening word. \"Although\" makes whatever follows it incomplete - it cannot stand alone as a sentence.\n- Test it: \"Although a tidal lagoon costs far more to build than a wind farm of comparable capacity\" leaves you waiting for the rest.\n- When an incomplete opener like that is followed by a complete sentence, a comma goes at the joint. So the comma is the answer.\n\n**Why the other choices are wrong:**\n- B: No punctuation runs the opener straight into the main sentence with no pause.\n- C: A semicolon joins two complete sentences, and the \"Although\" part is not one.\n- D: A colon follows a complete sentence to introduce something, but the opener is not complete."
+      "explanation": "**Choice A is correct.** Two independent clauses meet at the blank, and the second explains the first — a colon is built for exactly that.\n\n**The Full Solution:**\n- Check both sides of the blank. Before: \"The color also proved unusually durable\" — complete. After: \"garments dyed with it kept their deep hue...\" — also complete.\n- Independent clauses need a genuine boundary. A colon is a correct one, and here it does double duty: the second clause spells out what \"durable\" meant in practice.\n- The passage's first sentence uses a semicolon for the same two-clause structure, so a colon here keeps the punctuation varied but equally correct.\n\n**Why the other choices are wrong:**\n- B: A comma alone between independent clauses is a comma splice.\n- C: With no punctuation, the two sentences run together.\n- D: \"For example\" set off by commas still leaves only commas holding two independent clauses apart — the splice remains, and the second clause is an explanation, not an example."
     },
     {
       "id": 176,
@@ -447,20 +422,56 @@ export const practiceTest1RWM2Easy = {
       "band": 4,
       "domain": "standard-english-conventions",
       "skill": "form-structure-and-sense",
-      "passage": "Oil and water do not mix, and yet mayonnaise holds them together for weeks. Adding the oil a few drops at a time while whisking without pause, ______ the oil into droplets too small and too thoroughly coated to find one another and merge again.",
+      "passage": "Over the past decade, dozens of cities have built monitoring stations into their sewer systems — networks of samplers that draw wastewater on a fixed schedule, screen it for traces of circulating viruses, and in doing so ______ health officials days of warning before an outbreak surfaces in clinics.",
       "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
       "choices": [
-        { "id": "A", "text": "the egg yolk's molecules break" },
-        { "id": "B", "text": "a cook breaks" },
-        { "id": "C", "text": "the emulsion that results breaks" },
-        { "id": "D", "text": "there is enough shearing force to break" }
+        { "id": "A", "text": "gives" },
+        { "id": "B", "text": "give" },
+        { "id": "C", "text": "giving" },
+        { "id": "D", "text": "has given" }
       ],
       "correctAnswer": "B",
-      "explanation": "**Choice B is correct.** The opening describing phrase has to attach to whoever is adding the oil, and only a person can do that.\n\n**The Full Solution:**\n- How to spot it: when a sentence starts with a describing phrase - here \"Adding the oil a few drops at a time while whisking without pause\" - the very next thing named has to be the one performing that action.\n- Ask who can add oil and whisk. A person can. Molecules, an emulsion, and \"there\" cannot.\n- \"A cook breaks\" puts the cook right after the comma, so the same cook both adds the oil and breaks it into droplets. The sentence holds together.\n\n**Why the other choices are wrong:**\n- A: \"The egg yolk's molecules\" cannot add oil or whisk, so the opening phrase dangles.\n- C: \"The emulsion that results\" is the outcome, not the person doing the whisking - the phrase dangles again.\n- D: \"There is enough shearing force\" puts no actor after the comma at all, leaving the phrase attached to nothing."
+      "explanation": "**Choice B is correct.** The blank is the third verb in the relative clause \"that draw..., screen..., and give...,\" whose subject is the plural \"networks.\"\n\n**The Full Solution:**\n- Untangle the structure. After the dash, everything describes \"networks of samplers that\" do three things: \"draw wastewater,\" \"screen it,\" and \"______ health officials days of warning.\"\n- The relative pronoun \"that\" stands for \"networks\" — plural — so every verb in the series must be plural: draw, screen, give.\n- The interrupter \"in doing so\" is just a modifier between the conjunction and the verb; it does not change the series. Plural \"give\" completes the parallel chain.\n\n**Why the other choices are wrong:**\n- A: \"Gives\" is singular; it wrongly agrees with a nearby singular noun like \"wastewater\" or \"schedule\" instead of the true subject, \"networks.\"\n- C: \"Giving\" breaks the three-verb series, leaving \"and\" with nothing parallel to join — the sentence loses its third verb entirely.\n- D: \"Has given\" is both singular and a tense shift; the series is in the simple present (\"draw,\" \"screen\")."
+    },
+    {
+      "id": 173,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "standard-english-conventions",
+      "skill": "boundaries",
+      "passage": "Fazlur Rahman ______ argued that a tall building should carry its loads in its outer walls, much as a hollow tube resists bending. The \"tube\" framing systems he introduced in the 1960s made towers of unprecedented height both lighter and stiffer than their conventionally framed predecessors.",
+      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "choices": [
+        { "id": "A", "text": "Khan, the structural engineer behind several of the twentieth century's tallest buildings" },
+        { "id": "B", "text": "Khan, the structural engineer behind several of the twentieth century's tallest buildings," },
+        { "id": "C", "text": "Khan the structural engineer behind several of the twentieth century's tallest buildings," },
+        { "id": "D", "text": "Khan the structural engineer, behind several of the twentieth century's tallest buildings," }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The engineer description is a nonessential appositive dropped into the middle of the sentence, so it needs a comma on BOTH sides.\n\n**The Full Solution:**\n- Strip the descriptive phrase out and the sentence still works: \"Fazlur Rahman Khan argued that a tall building should carry its loads in its outer walls.\" That test proves the phrase is nonessential.\n- A nonessential phrase in mid-sentence must be fenced off by a matching pair of commas — one before \"the structural engineer,\" one after \"buildings.\"\n- Choice B supplies both commas; the appositive lifts cleanly out.\n\n**Why the other choices are wrong:**\n- A: Only the opening comma appears; without the closing comma, the appositive crashes into the verb \"argued.\"\n- C: Only the closing comma appears; the appositive needs its opening boundary too.\n- D: The comma after \"engineer\" splits the appositive itself in half, separating \"the structural engineer\" from the phrase that completes it."
     },
     // ============================================================
     // Q23-Q27: Expression of Ideas
     // ============================================================
+    {
+      "id": 179,
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "band": 4,
+      "domain": "expression-of-ideas",
+      "skill": "transitions",
+      "passage": "Bioluminescent dinoflagellates flash only when the water around them is abruptly disturbed — by a breaking wave, a darting fish, or a passing paddle. Laboratory studies indicate that the sudden burst startles the small grazers that feed on the plankton and can attract the larger predators that eat those grazers. The light, ______, is not a beacon the organism shines but an alarm it sounds when touched.",
+      "question": "Which choice completes the text with the most logical transition?",
+      "choices": [
+        { "id": "A", "text": "by contrast" },
+        { "id": "B", "text": "in addition" },
+        { "id": "C", "text": "for this reason" },
+        { "id": "D", "text": "in other words" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** The final sentence does not add new evidence — it restates the meaning of the two sentences before it in a sharper form: alarm, not beacon.\n\n**The Full Solution:**\n- Track what each sentence contributes. First: the flash happens only when the water is disturbed. Second: the flash startles grazers and summons their predators. Third: the light \"is not a beacon... but an alarm... when touched.\"\n- The third sentence introduces no new observation; \"alarm it sounds when touched\" repackages the disturbance-triggered, defense-serving behavior already described.\n- A sentence that recasts what came before takes a restatement transition: \"in other words.\"\n\n**Why the other choices are wrong:**\n- A: \"By contrast\" needs two opposed items in the passage; the beacon/alarm opposition lives INSIDE the final sentence itself, not between that sentence and the previous ones.\n- B: \"In addition\" promises a new point, but the sentence supplies a summary, not an addition — nothing new is being stacked on.\n- C: \"For this reason\" is tempting because the earlier sentences do support the conclusion, but the final sentence states what the light IS, not something that happened because of it; the relationship is interpretation, not consequence."
+    },
     {
       "id": 177,
       "type": "multiple-choice",
@@ -468,16 +479,16 @@ export const practiceTest1RWM2Easy = {
       "band": 2,
       "domain": "expression-of-ideas",
       "skill": "transitions",
-      "passage": "A bird flying just behind and to one side of another catches the rising air its neighbor sheds, so each wingbeat costs it less effort than flying alone would. ______ birds that cross long distances, such as geese and pelicans, almost always travel in V-shaped lines instead of singly.",
+      "passage": "Many native bees do not live in hives at all; they nest alone, each female sealing her eggs inside a small cavity. Gardeners can support these solitary species with simple, inexpensive structures. ______ a bundle of hollow plant stems tied beneath a fence rail gives mason bees a ready row of nesting tunnels.",
       "question": "Which choice completes the text with the most logical transition?",
       "choices": [
         { "id": "A", "text": "However," },
-        { "id": "B", "text": "In addition," },
-        { "id": "C", "text": "Therefore," },
-        { "id": "D", "text": "Meanwhile," }
+        { "id": "B", "text": "Meanwhile," },
+        { "id": "C", "text": "For example," },
+        { "id": "D", "text": "In contrast," }
       ],
       "correctAnswer": "C",
-      "explanation": "**Choice C is correct.** The second sentence reports what birds do because of the energy saving described in the first, and \"Therefore,\" marks a result.\n\n**The Full Solution:**\n- How to spot it: ask whether the second sentence follows FROM the first. Sentence 1 explains a mechanism - a bird tucked behind and beside another rides its neighbor's rising air, so each wingbeat costs less.\n- Sentence 2 reports the behavior that mechanism produces: long-distance travelers fly in V-shaped lines rather than singly.\n- A cause in one sentence and its effect in the next calls for a result word, and \"Therefore\" is that word.\n\n**Why the other choices are wrong:**\n- A: \"However\" signals a clash, but the two sentences agree.\n- B: \"In addition\" would introduce a separate new point, not the outcome of the first.\n- D: \"Meanwhile\" only means \"at the same time\" and misses the cause-and-effect link."
+      "explanation": "**Choice C is correct.** The sentence before the blank makes a general claim — simple structures can help — and the sentence after gives one specific instance of such a structure.\n\n**The Full Solution:**\n- Read the two sentences the transition must connect. First: gardeners can help with \"simple, inexpensive structures.\" Second: a bundle of hollow stems gives mason bees nesting tunnels.\n- The second sentence is one concrete case of the first sentence's general statement — the relationship is illustration.\n- \"For example\" is the transition that announces an illustration, so it fits exactly.\n\n**Why the other choices are wrong:**\n- A: \"However\" signals a reversal, but the stem bundle supports the previous claim rather than pushing against it.\n- B: \"Meanwhile\" signals two things happening at the same time, and there is no second timeline here.\n- D: \"In contrast\" requires two things being set against each other, but the sentences agree completely."
     },
     {
       "id": 178,
@@ -486,34 +497,16 @@ export const practiceTest1RWM2Easy = {
       "band": 3,
       "domain": "expression-of-ideas",
       "skill": "transitions",
-      "passage": "A ten-inch shellac record turning at 78 revolutions per minute held a little over three minutes of music on a side, and no jazz group recording before the long-playing disc arrived could exceed that limit. ______ solos that ran chorus after chorus on a club bandstand were pared down to eight or sixteen bars the moment a band stepped into a studio.",
+      "passage": "The earliest daguerreotype portraits required a sitter to hold perfectly still for a minute or longer, since even a small shift of the head left the finished image blurred. ______ portrait studios of the 1840s fitted their chairs with discreet iron clamps that braced each customer's head for the full length of the exposure.",
       "question": "Which choice completes the text with the most logical transition?",
       "choices": [
-        { "id": "A", "text": "For instance," },
-        { "id": "B", "text": "Nevertheless," },
-        { "id": "C", "text": "In the same way," },
-        { "id": "D", "text": "As a result," }
-      ],
-      "correctAnswer": "D",
-      "explanation": "**Choice D is correct.** The three-minute limit is the cause and the shortened solos are its effect, so the blank needs a result word.\n\n**The Full Solution:**\n- How to spot it: ask what the second sentence does with the first. Sentence 1 states a hard limit - a little over three minutes a side, which no group recording before the long-playing disc could exceed.\n- Sentence 2 reports what happened because of that limit: solos that ran chorus after chorus in a club were cut to eight or sixteen bars in the studio.\n- A limit followed by what it forced musicians to do is cause and effect, and \"As a result,\" marks the effect side.\n\n**Why the other choices are wrong:**\n- A: \"For instance\" would make the second sentence an example of the limit, but it is the consequence of the limit.\n- B: \"Nevertheless\" signals that something happened despite the first sentence, yet the shortened solos happened because of it.\n- C: \"In the same way\" claims a parallel between two situations, and only one situation is described."
-    },
-    {
-      "id": 179,
-      "type": "multiple-choice",
-      "difficulty": "hard",
-      "band": 4,
-      "domain": "expression-of-ideas",
-      "skill": "transitions",
-      "passage": "Because signed languages are produced with the hands, early hearing observers catalogued handshapes carefully and treated a signer's face as emotional accompaniment to the real message. ______ brow raises, mouth positions, and head tilts turn out to do grammatical work: they begin and end with the exact clause they govern, and a sentence signed without them is not merely flat but ungrammatical.",
-      "question": "Which choice completes the text with the most logical transition?",
-      "choices": [
-        { "id": "A", "text": "In fact," },
-        { "id": "B", "text": "Likewise," },
-        { "id": "C", "text": "For example," },
-        { "id": "D", "text": "Therefore," }
+        { "id": "A", "text": "As a result," },
+        { "id": "B", "text": "For instance," },
+        { "id": "C", "text": "Similarly," },
+        { "id": "D", "text": "In any case," }
       ],
       "correctAnswer": "A",
-      "explanation": "**Choice A is correct.** The second sentence corrects the view stated in the first, and \"In fact,\" is the signal for setting the record straight.\n\n**The Full Solution:**\n- How to spot it: ask whether the second sentence agrees with the first, extends it, or corrects it. Sentence 1 reports what early observers assumed - that the face was emotional accompaniment to the real message in the hands.\n- Sentence 2 says the opposite is true: brow raises, mouth positions, and head tilts \"turn out to do grammatical work,\" and a sentence signed without them is ungrammatical.\n- When a sentence overturns the belief just described, you need the corrective transition, and \"In fact\" introduces what is actually the case.\n\n**Why the other choices are wrong:**\n- B: \"Likewise\" signals that the second point matches the first, but here it overturns it.\n- C: \"For example\" would make the second sentence an instance of the early assumption, which it contradicts instead.\n- D: \"Therefore\" would make the grammatical findings a result of the early cataloguing, which they are not."
+      "explanation": "**Choice A is correct.** The head clamps are a direct consequence of the problem in the first sentence — long exposures ruined by small movements.\n\n**The Full Solution:**\n- Identify the relationship: sentence one states a problem (any movement over a minute-long exposure blurs the image); sentence two describes what studios did about it (clamps that braced the head).\n- Problem, then response to that problem, is a cause-and-effect relationship.\n- \"As a result\" marks the second sentence as the consequence of the first — studios installed clamps BECAUSE stillness was required.\n\n**Why the other choices are wrong:**\n- B: \"For instance\" would make the clamps an example of blurred portraits, but they are a response to the blurring, not a case of it.\n- C: \"Similarly\" needs two parallel situations; here the second sentence answers the first rather than resembling it.\n- D: \"In any case\" waves the previous sentence aside, but the clamps only make sense because of it."
     },
     {
       "id": 180,
@@ -525,24 +518,23 @@ export const practiceTest1RWM2Easy = {
       "studentNotes": {
         "intro": "While researching a topic, a student has taken the following notes:",
         "bullets": [
-          "In parts of the Andes, communities still build footbridges across river gorges out of braided grass rope.",
-          "Highland grass is soaked, pounded, and twisted into cords, and the cords are braided into cables as thick as a person's thigh.",
-          "Grass rope weakens as it weathers, and a finished bridge stays sound for only about a year.",
-          "Each year the community cuts down the old bridge and weaves a new one across the same gorge over several days of work.",
-          "Families are assigned particular lengths of rope to prepare before the rebuilding begins.",
-          "Because the cables are replaced before they can fail, the crossing itself has been maintained for centuries."
+          "Mária Telkes (1900-1995) was a Hungarian American engineer who specialized in capturing and storing the sun's heat.",
+          "In 1948 she designed the heating system for the Dover Sun House in Massachusetts, one of the first inhabited houses warmed almost entirely by solar energy.",
+          "The system stored heat in tanks of Glauber's salt, a compound that absorbs heat as it melts and releases heat as it resolidifies.",
+          "The house stayed warm through two New England winters without a conventional furnace.",
+          "Telkes also patented solar stills that turn seawater into drinkable water."
         ],
-        "goal": "The student wants to explain how a bridge built from grass can remain safe to cross."
+        "goal": "The student wants to introduce Telkes and one of her achievements to an audience unfamiliar with her work."
       },
       "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
       "choices": [
-        { "id": "A", "text": "Highland grass is soaked, pounded, and twisted into cords, and those cords are then braided together into the thick cables, as wide as a person's thigh, that carry the bridge across the gorge." },
-        { "id": "B", "text": "Before the rebuilding begins, families in the community are each assigned particular lengths of rope to prepare." },
-        { "id": "C", "text": "Because grass rope weakens as it weathers, a bridge stays sound for only about a year, so the community weaves a new one annually, replacing the cables before they can fail." },
-        { "id": "D", "text": "Andean communities have maintained grass footbridges across river gorges for centuries, weaving them from cords of braided highland grass." }
+        { "id": "A", "text": "Telkes's best-known project, the Dover Sun House in Massachusetts, stayed warm through two full New England winters without ever lighting a conventional furnace." },
+        { "id": "B", "text": "Mária Telkes, a Hungarian American engineer specializing in solar heat storage, designed the heating system of the 1948 Dover Sun House, one of the first houses warmed almost entirely by sunlight." },
+        { "id": "C", "text": "The Dover Sun House's heating system stored the sun's heat in large tanks of Glauber's salt, a compound that soaks up heat as it melts and gives that heat back as it slowly resolidifies." },
+        { "id": "D", "text": "Some twentieth-century houses were warmed almost entirely by solar energy, and some engineers of the era patented solar stills that turn seawater into drinkable water." }
       ],
-      "correctAnswer": "C",
-      "explanation": "**Choice C is correct.** The goal asks how a grass bridge stays safe, and C gives the reason: the cables are replaced each year before the rope can weaken past use.\n\n**The Full Solution:**\n- How to spot it: read the goal first and turn it into a test. This one asks HOW the bridge remains safe, so the right answer must name a cause, not just describe the bridge.\n- Two bullets supply that cause: grass rope weakens as it weathers and lasts about a year, and the community cuts the old bridge down and weaves a new one each year.\n- Choice C puts those together - the rebuilding happens before the cables can fail - which is exactly the explanation the goal calls for.\n\n**Why the other choices are wrong:**\n- A: It describes how the rope is made but never says why the finished bridge stays safe.\n- B: It reports how the work is divided among families, which does not explain the bridge's safety.\n- D: It says the crossings have lasted for centuries without giving the reason they hold."
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** For readers who have never heard of Telkes, it says who she was (a Hungarian American engineer specializing in solar heat storage) and pairs that with one concrete achievement (the Dover Sun House system).\n\n**The Full Solution:**\n- The goal has two requirements: INTRODUCE Telkes — so the sentence must identify her — and present ONE of her achievements.\n- Choice B delivers both in one sentence: name, nationality, specialty, then the 1948 achievement with enough context (\"one of the first houses warmed almost entirely by sunlight\") for the achievement to register as significant.\n- Every fact in the sentence comes straight from the notes — nothing is invented, and nothing assumes prior knowledge.\n\n**Why the other choices are wrong:**\n- A: \"Telkes's best-known project\" assumes the reader already knows Telkes, which is exactly what the goal says the audience does not.\n- C: It describes the salt chemistry without ever saying who Telkes was — the person the goal says to introduce never appears.\n- D: It strips out Telkes entirely, reducing the notes to anonymous generalities about \"some engineers.\""
     },
     {
       "id": 181,
@@ -554,24 +546,23 @@ export const practiceTest1RWM2Easy = {
       "studentNotes": {
         "intro": "While researching a topic, a student has taken the following notes:",
         "bullets": [
-          "A museum can display only a small fraction of its collection at any one time.",
-          "The rest is held in closed storage rooms that visitors never enter.",
-          "Some museums have built visible storage: glass-walled rooms where stored objects sit on shelves in full view of the public.",
-          "Visible storage packs objects densely and labels them only briefly, unlike a curated gallery.",
-          "A visitor to visible storage may see several thousand objects rather than the few dozen chosen for a themed exhibition.",
-          "Curators note that visible storage conveys the scale of a collection but explains individual objects far less than a gallery does."
+          "Egyptian blue, first produced about 4,500 years ago, is considered the world's oldest synthetic pigment.",
+          "Artisans made it by heating sand, a copper mineral, and a calcium compound together at high temperatures.",
+          "When lit with ordinary visible light, Egyptian blue emits infrared light that specialized cameras can detect.",
+          "The infrared glow remains detectable even where so little pigment survives that a surface looks unpainted to the eye.",
+          "Conservators now photograph ancient statues and paintings in infrared to map traces of Egyptian blue invisible to visitors."
         ],
-        "goal": "The student wants to explain the trade-off that visible storage involves."
+        "goal": "The student wants to emphasize a modern scientific use of Egyptian blue."
       },
       "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
       "choices": [
-        { "id": "A", "text": "A museum can display only a small fraction of its collection at any one time, while the rest of it remains in the closed storage rooms that visitors to the museum's galleries never enter and almost never see." },
-        { "id": "B", "text": "Visible storage lets a visitor see thousands of objects rather than the few dozen in a themed exhibition, but because they are packed densely and barely labeled, it explains each one far less than a gallery does." },
-        { "id": "C", "text": "In visible storage, objects that would otherwise sit in closed storage rooms are shelved in glass-walled rooms where the public can see them." },
-        { "id": "D", "text": "Curators who have built visible storage rooms report that visitors leaving them understand a collection's scale better than visitors leaving a themed exhibition do." }
+        { "id": "A", "text": "Artisans produced Egyptian blue by heating sand, a copper mineral, and a calcium compound together at high temperatures." },
+        { "id": "B", "text": "First produced about 4,500 years ago, Egyptian blue is considered by many scholars to be the world's oldest synthetic pigment." },
+        { "id": "C", "text": "Conservators now photograph ancient statues and paintings in infrared to map traces of Egyptian blue too faint for the eye to see." },
+        { "id": "D", "text": "Egyptian blue's infrared glow, which specialized cameras are able to detect, is one of several optical properties that scientists have found worth studying." }
       ],
-      "correctAnswer": "B",
-      "explanation": "**Choice B is correct.** A trade-off needs both sides, and B names the gain (thousands of objects in view) and the cost (far less explanation of each).\n\n**The Full Solution:**\n- How to spot it: turn the goal into a checklist. A trade-off means something gained AND something given up, so any choice carrying only one half fails.\n- The gain sits in one bullet: a visitor may see several thousand objects instead of the few dozen in a themed exhibition.\n- The cost sits in two others: objects are packed densely and labeled only briefly, so visible storage \"explains individual objects far less than a gallery does.\" Choice B keeps both.\n\n**Why the other choices are wrong:**\n- A: It gives background about closed storage and names no trade-off.\n- C: It defines visible storage without saying what is gained or lost.\n- D: It claims visitors understand a collection's scale better than exhibition visitors do, a comparison the notes never make."
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** It centers the modern use — conservators mapping invisible pigment traces with infrared photography — which is exactly what the goal asks the sentence to emphasize.\n\n**The Full Solution:**\n- The goal word is \"emphasize\": the modern scientific use must be the sentence's main event, not a side remark.\n- Choice C is built around that use: conservators (the modern practitioners), infrared photography (the scientific technique), and mapping invisible traces on ancient objects (the payoff).\n- It draws directly on the last two notes and stays entirely within them.\n\n**Why the other choices are wrong:**\n- A: The ancient recipe is the opposite of a modern application.\n- B: The pigment's age and priority are historical facts; no modern use appears.\n- D: It names the glow but buries the application — \"worth studying\" mentions no actual use, so nothing is emphasized."
     }
   ]
 };

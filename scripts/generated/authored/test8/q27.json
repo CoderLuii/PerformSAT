@@ -1,41 +1,41 @@
 {
-  "id": 827,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 1,
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Syukuro Manabe built some of the first computer models that coupled the atmosphere and the ocean into a single system."
-    },
-    {
-      "id": "B",
-      "text": "In a 1967 study with Richard Wetherald, Manabe estimated how much global surface temperature would rise if the carbon dioxide in the air were doubled."
-    },
-    {
-      "id": "C",
-      "text": "Across both his early general-purpose models and his 1967 study with Richard Wetherald, Manabe helped establish computer simulation as a central tool of climate science, one that researchers around the world would later adopt."
-    },
-    {
-      "id": "D",
-      "text": "Whereas Manabe’s early work built general-purpose models meant to reproduce the climate as a whole, his 1967 study with Wetherald ran a focused calculation of how much warming a doubling of carbon dioxide would produce."
-    }
+ "id": 827,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 1,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Emanuela Guidoboni is a historical seismologist who studies the earthquakes of medieval Italy.",
+   "Earlier earthquake catalogs were compiled by tallying reports found in old chronicles at face value.",
+   "Copied chronicles could turn one earthquake into several, each with a different date.",
+   "Guidoboni traced every report back to its earliest surviving source.",
+   "Her revised catalogs discarded duplicated or misdated entries, removing some destructive earthquakes that never actually happened."
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The goal is to contrast two kinds of work, and D sets the early general-purpose models against the 1967 study's focused calculation, naming both sides of the difference. A and B each describe only one of the two efforts, so neither draws a contrast; C groups the two works together under a shared significance, which blurs rather than highlights the difference the student wants to show.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Syukuro Manabe is a climate scientist who built some of the first computer models coupling the atmosphere and ocean.",
-      "His early work focused on constructing general-purpose models meant to reproduce the broad features of the climate system.",
-      "In a 1967 study with Richard Wetherald, Manabe instead ran a focused calculation.",
-      "That study estimated how much global surface temperature would rise if the amount of carbon dioxide in the air were doubled.",
-      "The 1967 result became an early, widely cited estimate of the climate's sensitivity to carbon dioxide."
-    ],
-    "goal": "The student wants to highlight a difference in approach between Manabe's early model-building work and his 1967 study with Wetherald."
+  "goal": "The student wants to emphasize a difference between Guidoboni's method and the practice of earlier catalog compilers."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Earlier compilers of earthquake catalogs accepted the reports they found in old chronicles at face value, tallying each mention as a separate event."
+  },
+  {
+   "id": "B",
+   "text": "Guidoboni's re-examination of the sources removed from the catalogs several destructive earthquakes that turned out never to have happened."
+  },
+  {
+   "id": "C",
+   "text": "Emanuela Guidoboni is a historical seismologist who has devoted her career to the earthquakes of medieval Italy."
+  },
+  {
+   "id": "D",
+   "text": "Whereas earlier compilers tallied old earthquake reports at face value, Guidoboni traced each report to its earliest source, discarding entries that proved to be duplicated or misdated."
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The goal is to set Guidoboni's method against the earlier compilers' practice, and D holds the two side by side: they counted reports at face value; she traced each report to its earliest source and struck the entries that dissolved.\n\n**The Full Solution:**\n- A difference is only emphasized when both approaches appear in one frame.\n- Choice D's \"Whereas\" construction does exactly that, pairing the old practice (tallying at face value) with hers (tracing sources, discarding duplicated or misdated entries).\n\n**Why the other choices are wrong:**\n- A: It describes only the earlier compilers and never presents Guidoboni's alternative.\n- B: It reports one striking result of her work, not how her method differed from anyone's.\n- C: It identifies her field and subject without contrasting her procedure with earlier practice."
 }

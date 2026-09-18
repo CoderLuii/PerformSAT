@@ -1,0 +1,25 @@
+{
+  "id": 9014,
+  "passage": "Desert seedlings face their hardest test in their first summers, when the soil surface can reach temperatures that kill young tissue and the top few centimeters dry out within days of a rain. A shrub canopy changes both conditions, shading the ground through the hottest hours and slowing evaporation beneath it, so a seed that germinates under a shrub is far likelier to survive than one that germinates in the open. Columnar cacti grow slowly and eventually overtop the shrubs that sheltered them. A botanist mapping the position and size of every cactus in a study plot should expect that ______",
+  "question": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "the largest cacti in the plot stand beneath shrub canopies more often than the youngest ones do."
+    },
+    {
+      "id": "B",
+      "text": "cacti of every size are spread evenly between shrub canopies and open ground."
+    },
+    {
+      "id": "C",
+      "text": "the youngest cacti in the plot stand beneath shrub canopies more often than in the open."
+    },
+    {
+      "id": "D",
+      "text": "the youngest cacti in the open grow faster than those beneath shrub canopies."
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** Survival in the first years is much higher under a canopy, so the young cacti still present in the plot should be found under shrubs far more often than in open ground.\n\n**The Full Solution:**\n- Note what the shrub actually does: it raises the odds that a seedling survives. The prediction therefore concerns where surviving young plants are found, not how fast anything grows.\n- Apply the rule to the youngest size class, since those are the plants still inside the window when shade matters.\n- Watch the direction of the comparison. More young cacti under canopies than in the open is what a survival advantage produces.\n\n**Why the other choices are wrong:**\n- A: This reverses the pattern. The text notes that cacti eventually overtop their shrubs, so shelter is characteristic of the youngest plants rather than the largest.\n- B: An even spread is what you would expect if the canopy made no difference, which is the opposite of what the text establishes.\n- D: The passage links canopies to survival, not to growth rate, so a claim about which seedlings grow faster goes beyond the evidence."
+}

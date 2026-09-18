@@ -1,0 +1,29 @@
+{
+ "question": "A harvester's grain-flow ratio is $\\dfrac{18x^5}{3x^{-2}}$, where $x$ is the drum speed in revolutions per second, and the ratio equals $ax^b$ for every $x > 0$. What is the value of $a + b$?",
+ "hint": "Watch the sign of the exponent in the denominator.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$22$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts as 5 - 2 = 3, ignoring the negative exponent, then adds 6",
+  "C": "multiplies the exponents to get 10 and adds 6",
+  "D": "subtracts the coefficients, 18 - 3 = 15, and adds 7"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** $\\dfrac{18}{3} = 6$ and $x^{5 - (-2)} = x^{7}$, so $a + b = 6 + 7 = 13$.\n\n**The Full Solution:**\nStep 1: Divide the coefficients: $\\dfrac{18}{3} = 6$, so $a = 6$.\nStep 2: Subtract the exponents: $5 - (-2) = 7$, so $b = 7$.\nStep 3: Add: $a + b = 6 + 7 = 13$. Check at $x = 1$: the ratio is $\\dfrac{18}{3} = 6$ and $6(1)^7 = 6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): computes $5 - 2 = 3$, dropping the minus sign on the denominator's exponent, and adds $6 + 3$.\n* Choice C ($16$): multiplies the exponents instead of subtracting them, giving $6 + 10$.\n* Choice D ($22$): subtracts the coefficients, $18 - 3 = 15$, and adds the correct exponent $7$.\n\n**Test Day Takeaway:** Subtracting a negative exponent adds it, so the exponent grows rather than shrinks."
+}

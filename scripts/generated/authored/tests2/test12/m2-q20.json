@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A tank holds $60$ liters of water containing $45$ milligrams of chlorine. Water containing $1.2$ milligrams of chlorine per liter is then added. After $v$ liters have been added, the chlorine concentration, in milligrams per liter, is $\\frac{45 + 1.2v}{60 + v}$. For what value of $c$ does the equation $\\frac{45 + 1.2v}{60 + v} = c$ have no solution?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.75$"
+  },
+  {
+   "id": "B",
+   "text": "$1.00$"
+  },
+  {
+   "id": "C",
+   "text": "$1.20$"
+  },
+  {
+   "id": "D",
+   "text": "$1.95$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "gives the concentration before any water is added, 45/60, which the equation reaches at v = 0",
+  "B": "sets the numerator equal to the denominator, 45 + 1.2v = 60 + v, which has the solution v = 75",
+  "D": "adds the two concentrations, 0.75 + 1.2, instead of examining the equation"
+ },
+ "explanation": "**SAT Pattern: Rational Equation with No Solution**\n\n**Choice C is correct.** Clearing the denominator gives $45 + 1.2v = c(60 + v)$, or $(1.2 - c)v = 60c - 45$. At $c = 1.2$ the coefficient of $v$ is $0$ while the right side is $27$, so no value of $v$ works.\n\n**The Fast Way (~45s):** A rational equation has no solution exactly when the variable cancels and leaves a false statement. Here the $v$-terms cancel when $c$ equals the added water's concentration, $1.2$.\n\n**The Full Solution:**\nStep 1: Multiply both sides by $60 + v$: $45 + 1.2v = 60c + cv$.\nStep 2: Collect the $v$-terms on one side: $1.2v - cv = 60c - 45$, so $(1.2 - c)v = 60c - 45$.\nStep 3: This has a solution for every $c$ except one: when $1.2 - c = 0$, the left side is $0$ for every $v$, and the right side is $60(1.2) - 45 = 27 \\ne 0$. So $c = 1.20$ makes the equation unsolvable. Check a nearby value: at $c = 1.19$, $(0.01)v = 26.4$ gives $v = 2{,}640$, a genuine solution — the mixture creeps toward $1.2$ but never reaches it. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.75$): the concentration of the tank before anything is added, $\\frac{45}{60}$. The equation reaches it at $v = 0$, so it is a solution, not a gap.\n* Choice B ($1.00$): comes from setting the numerator equal to the denominator, $45 + 1.2v = 60 + v$; that gives $v = 75$ and a concentration of exactly $1$, again a solution.\n* Choice D ($1.95$): adds $0.75$ and $1.2$ as if concentrations stacked. Mixing two liquids can never produce a concentration above the stronger of the two.\n\n**Test Day Takeaway:** A rational equation fails only when the variable disappears and leaves a contradiction. Move everything to one side, factor out the variable, and ask which constant zeroes its coefficient."
+}

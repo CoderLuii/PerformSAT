@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "Of the $640$ soil samples tested at a lab, $44$ exceeded the moisture threshold, $36$ exceeded the density threshold, and $16$ exceeded both thresholds. What is the probability that a randomly selected sample from this group exceeded at least one threshold?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{1}{40}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{40}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{1}{10}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{1}{8}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "counts only the 16 samples that exceeded both thresholds",
+  "B": "removes the 16 overlap samples twice, using 44 + 36 - 32 = 48",
+  "D": "adds 44 and 36 without removing the 16 counted in both groups"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The $16$ double-counted samples come out once: $44 + 36 - 16 = 64$ samples exceeded at least one threshold, and $\\frac{64}{640} = \\frac{1}{10}$.\n\n**The Full Solution:**\nStep 1: Count the favorable samples. A sample counted in the $44$ and a sample counted in the $36$ can be the same sample, and $16$ samples are in both counts, so adding $44$ and $36$ counts those $16$ twice.\nStep 2: Remove the double count once. The number exceeding at least one threshold is $44 + 36 - 16 = 64$.\nStep 3: Divide by the total. The probability is $\\frac{64}{640} = \\frac{1}{10}$. Check: $28$ samples exceeded moisture only, $20$ exceeded density only, and $16$ exceeded both, and $28 + 20 + 16 = 64$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{40}$): uses only the $16$ samples over both thresholds, giving $\\frac{16}{640}$. That is the probability of exceeding both, not at least one.\n* Choice B ($\\frac{3}{40}$): subtracts the overlap from each group, using $44 + 36 - 32 = 48$ and giving $\\frac{48}{640}$. The overlap is removed once, not twice.\n* Choice D ($\\frac{1}{8}$): adds the two counts as if no sample were in both, giving $\\frac{80}{640}$.\n\n**Test Day Takeaway:** Whenever two groups can share members, the count of \"at least one\" is first group plus second group minus the overlap. Subtract the shared count exactly once, then divide by the total."
+}

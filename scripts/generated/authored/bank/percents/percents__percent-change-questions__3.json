@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "The enrollment in a training program increased by $20\\%$ from 2021 to 2022 and then decreased by $15\\%$ from 2022 to 2023. The enrollment was $500$ in 2021. What was the enrollment in 2023?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$425$"
+    },
+    {
+      "id": "B",
+      "text": "$510$"
+    },
+    {
+      "id": "C",
+      "text": "$525$"
+    },
+    {
+      "id": "D",
+      "text": "$600$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies only the decrease",
+    "C": "takes 15 percent of the original",
+    "D": "stops after the increase"
+  },
+  "correctAnswer": "B",
+  "hint": "The second percent is applied to the amount that exists after the first change.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** $500(1.20) = 600$, then $600(0.85) = 510$.\n\n**The Full Solution:**\nStep 1: An increase of $20\\%$ multiplies by $1.20$: the 2022 enrollment is $500(1.20) = 600$.\nStep 2: A decrease of $15\\%$ multiplies by $0.85$, and it applies to the 2022 enrollment: $600(0.85) = 510$.\nStep 3: The 2023 enrollment is $510$ students. Check: $15\\%$ of $600$ is $90$, and $600 - 90 = 510$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($425$): applies only the decrease, computing $500(0.85)$ and skipping the increase.\n* Choice C ($525$): takes $15\\%$ of the original $500$ instead of the new $600$, computing $600 - 75$.\n* Choice D ($600$): stops after the increase and never applies the decrease.\n\n**Test Day Takeaway:** Chain percent changes by multiplying scale factors in order; each factor acts on the result of the one before it."
+}

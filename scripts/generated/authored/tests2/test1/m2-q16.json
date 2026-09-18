@@ -1,0 +1,49 @@
+{
+  "id": 16,
+  "question": "The table gives the value of a quadratic function $f$ at three inputs. Exactly two values of $x$, not necessarily shown in the table, make the output of $f$ equal to zero. What is the positive difference between those two values?",
+  "questionTable": {
+    "headers": [
+      "$x$",
+      "$f(x)$"
+    ],
+    "rows": [
+      [
+        "$0$",
+        "$-7$"
+      ],
+      [
+        "$2$",
+        "$-15$"
+      ],
+      [
+        "$6$",
+        "$-7$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$7$"
+    },
+    {
+      "id": "C",
+      "text": "$8$"
+    },
+    {
+      "id": "D",
+      "text": "$64$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the two zeros, -1 and 7, instead of subtracting them",
+    "B": "reports the larger zero, 7, rather than the difference between the two zeros",
+    "D": "reports the discriminant b squared minus 4ac = 64 instead of its square root"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** $f(0) = f(6) = -7$, so the axis of symmetry is $x = 3$. Using $f(2) = -15$ gives $f(x) = (x - 3)^2 - 16$, whose zeros are $3 \\pm 4$, a difference of $8$.\n\n**The Full Solution:**\nStep 1: Write $f(x) = a(x - h)^2 + k$. Since $f(0)$ and $f(6)$ are equal, the inputs $0$ and $6$ are the same distance from the axis of symmetry, so $h = 3$.\nStep 2: Substitute the two remaining points. From $f(2) = -15$: $a(2 - 3)^2 + k = a + k = -15$. From $f(0) = -7$: $a(0 - 3)^2 + k = 9a + k = -7$. Subtracting gives $8a = 8$, so $a = 1$ and $k = -16$. Thus $f(x) = (x - 3)^2 - 16$.\nStep 3: Set $f(x) = 0$: $(x - 3)^2 = 16$, so $x - 3 = \\pm 4$ and $x = -1$ or $x = 7$. The positive difference is $7 - (-1) = 8$. Check in standard form, $f(x) = x^2 - 6x - 7 = (x - 7)(x + 1)$, which has the same two zeros ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): adds the zeros, $-1 + 7$. The sum of the zeros is $-\\frac{b}{a} = 6$, a real feature of this quadratic, but distance is a difference.\n* Choice B ($7$): reports the larger zero itself. It is the last number written down before the subtraction step.\n* Choice D ($64$): reports $b^2 - 4ac = 36 + 28 = 64$. The distance between the zeros is $\\frac{\\sqrt{b^2 - 4ac}}{|a|}$, so the square root is still owed.\n\n**Test Day Takeaway:** Two equal outputs pin the axis of symmetry halfway between their inputs. Once you have the vertex form, the zeros sit symmetrically on either side and their distance is twice the horizontal shift."
+}

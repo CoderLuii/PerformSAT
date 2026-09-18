@@ -1,40 +1,40 @@
 {
-  "id": 835,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "module": 2,
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "Most memories fade, but people often report that they can recall exactly where they were and what they were doing when they learned of a shocking public event. Studying such recollections, the psychologists Roger Brown and James Kulik proposed in 1977 that surprising, emotionally charged news triggers a special memory mechanism unlike ordinary remembering. This mechanism, they suggested, captures the circumstances of the moment—the place, the people present, what one was doing—in unusually vivid and durable detail, almost like a photograph. The strength of the conviction with which people recount these memories, and the richness of the detail they supply, were for Brown and Kulik signs that something more reliable than everyday memory was at work."
-    },
-    {
-      "label": "Text 2",
-      "text": "The psychologist Ulric Neisser set out to test such claims directly. The morning after the 1986 explosion of the space shuttle Challenger, he had students write down exactly how they had heard the news. Nearly three years later he asked the same students to recall the same moment. Many gave accounts that were vivid, confidently delivered, and detailed—and flatly contradicted what they had written down at the time. Some, shown their own earlier handwriting, still trusted the later memory. Neisser concluded that memories of dramatic news are not protected from the distortions that affect ordinary memory; what sets them apart is the confidence with which they are held, not their accuracy."
-    }
-  ],
-  "question": "Based on the texts, how would Neisser (Text 2) most likely respond to the claim made by Brown and Kulik in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "He would argue that the vividness and confidence Brown and Kulik treat as marks of reliability do not guarantee accuracy, since his own subjects recalled the Challenger news confidently even after their accounts had demonstrably changed."
-    },
-    {
-      "id": "B",
-      "text": "He would accept that such memories are unusually accurate but trace that accuracy to frequent retelling rather than to any special mechanism of the kind Brown and Kulik propose."
-    },
-    {
-      "id": "C",
-      "text": "He would limit Brown and Kulik’s special mechanism to events a person witnesses firsthand, arguing that it cannot apply to news learned secondhand, and that this restriction explains the errors he documented in his own study."
-    },
-    {
-      "id": "D",
-      "text": "Pointing to his own findings, he would conclude that memory research can no longer say anything useful about how people recall dramatic public events."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. Brown and Kulik treat the vivid detail and strong conviction of these memories as evidence that a special, reliable mechanism is at work. Neisser's Challenger study found that confidently held, detailed memories of dramatic news frequently contradicted what the same people had recorded at the time, which leads him to deny that vividness and confidence indicate accuracy. B has Neisser conceding the memories are accurate, the opposite of his finding; C invents a witnessed-versus-secondhand distinction neither text raises; and D overreaches into a claim that the field can say nothing useful, which his own research contradicts."
+ "id": 835,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "module": 2,
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "For centuries painters showed galloping horses in the \"flying gallop,\" forelegs and hind legs stretched out together like a rocking horse. In 1878, Eadweard Muybridge's sequential photographs caught what no eye could: a galloping horse gathers its hooves beneath its body when airborne. Many accounts hold that these images settled the question at once — the camera was an impartial witness, and painters and scientists alike accepted its verdict."
+  },
+  {
+   "label": "Text 2",
+   "text": "The art historian Marta Braun has traced how Muybridge's pictures were actually received. Many painters went on depicting the flying gallop for decades, and prominent critics argued that a pose invisible to the human eye, however real, was false to the experience a painting should convey. The photographs' authority, Braun argues, was not self-evident; it had to be argued for, and the argument took a generation."
+  }
+ ],
+ "question": "Based on the texts, how would Braun (Text 2) most likely respond to the account presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "She would object that the photographs' evidence did not compel acceptance by itself, noting that many artists long continued to paint poses the camera had contradicted."
+  },
+  {
+   "id": "B",
+   "text": "She would argue that the photographs were technically flawed and therefore misrepresented the positions of the horse's legs."
+  },
+  {
+   "id": "C",
+   "text": "She would contend that the shutters of early cameras were too unreliable for the sequences to count as evidence."
+  },
+  {
+   "id": "D",
+   "text": "She would insist that credit for the photographic sequences belongs to the track owners who financed them."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Braun's central point is that the photographs' authority had to be argued for, not merely displayed — so she would object to Text 1's claim that the camera's impartial evidence settled matters by itself, citing the artists who went on painting the old poses.\n\n**The Full Solution:**\n- Text 1's account: instantaneous photographs resolved the gallop debate because the camera was an impartial witness whose verdict was accepted.\n- Text 2 assembles counterevidence: painters kept the flying gallop for decades, and critics argued that poses no eye could see were false to art.\n- Choice A is precisely that response — the evidence did not compel assent on its own.\n\n**Why the other choices are wrong:**\n- B: Braun never questions the photographs' technical accuracy, only the assumption that accuracy commanded acceptance.\n- C: Text 2 says nothing about the cameras or their shutters being unreliable.\n- D: Braun discusses the reception of the photographs, not who deserves credit for making them."
 }

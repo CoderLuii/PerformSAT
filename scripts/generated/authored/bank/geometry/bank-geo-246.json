@@ -1,0 +1,41 @@
+{
+  "id": "bank-geo-246",
+  "question": "A rack-mounted cooling louver swings open through the angle shown. Which expression gives the measure of that angle in radians?",
+  "diagram": {
+    "type": "circleWithSector",
+    "params": {
+      "centralAngle": 135,
+      "angleLabel": "135°",
+      "showAngleLabel": true,
+      "labelCenter": "O",
+      "labelPoint1": "A",
+      "labelPoint2": "B",
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{3\\pi}{8}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{3\\pi}{4}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{4\\pi}{3}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3\\pi}{2}$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "multiplies by pi over 360 instead of pi over 180, halving the correct measure",
+    "C": "inverts the fraction to 4 over 3, which is the radian measure of 240 degrees",
+    "D": "doubles the correct measure, giving the radian measure of 270 degrees"
+  },
+  "explanation": "**SAT Pattern: Radians ↔ Degrees Conversion**\n\n**Choice B is correct.** $135 \\cdot \\frac{\\pi}{180} = \\frac{135\\pi}{180} = \\frac{3\\pi}{4}$ radians.\n\n**The Fast Way (~15s):** $135^\\circ$ is $\\frac{3}{4}$ of $180^\\circ$, so it is $\\frac{3}{4}$ of $\\pi$ radians.\n\n**The Full Solution:**\n\nStep 1: Degrees convert to radians by multiplying by $\\frac{\\pi}{180}$.\n\nStep 2: $135 \\cdot \\frac{\\pi}{180} = \\frac{135\\pi}{180}$, and dividing numerator and denominator by $45$ gives $\\frac{3\\pi}{4}$.\n\nStep 3: Check by converting back: $\\frac{3\\pi}{4} \\cdot \\frac{180}{\\pi} = \\frac{540}{4} = 135^\\circ$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{3\\pi}{8}$): multiplies by $\\frac{\\pi}{360}$ instead of $\\frac{\\pi}{180}$, halving the measure.\n* Choice C ($\\frac{4\\pi}{3}$): flips $\\frac{3}{4}$ to $\\frac{4}{3}$, which is $240^\\circ$.\n* Choice D ($\\frac{3\\pi}{2}$): doubles the correct value, which is $270^\\circ$.\n\n**Test Day Takeaway:** Compare the angle to $180^\\circ$ — whatever fraction of $180^\\circ$ it is, it is that same fraction of $\\pi$ radians."
+}

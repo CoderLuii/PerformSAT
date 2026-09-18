@@ -1,0 +1,40 @@
+{
+ "id": "bank-geo-280",
+ "question": "In the circle with center $O$ shown, sector $AOB$ has a central angle of $\\dfrac{5\\pi}{6}$ radians and an arc length of $35\\pi$ centimeters. What is the area, in square centimeters, of sector $AOB$?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 150,
+   "angleLabel": "5π/6",
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$17.5\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$735\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$1470\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$1764\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses half r theta as the area",
+  "C": "omits the one-half",
+  "D": "gives the whole circle's area"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Arc Length**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** $r = \\frac{s}{\\theta} = \\frac{35\\pi}{5\\pi/6} = 42$, and sector area $= \\frac{1}{2}rs = \\frac{1}{2}(42)(35\\pi) = 735\\pi$.\n\n**The Full Solution:**\nStep 1: For a radian angle, $s = r\\theta$. Solve for the radius: $r = \\frac{35\\pi}{\\frac{5\\pi}{6}} = 35\\pi \\cdot \\frac{6}{5\\pi} = 42$ centimeters.\nStep 2: The area of a sector with a radian angle is $A = \\frac{1}{2}r^2\\theta$, which is the same as $\\frac{1}{2}rs$.\nStep 3: $A = \\frac{1}{2}(42)^2\\left(\\frac{5\\pi}{6}\\right) = \\frac{1}{2}(1764)\\left(\\frac{5\\pi}{6}\\right) = 735\\pi$ square centimeters. Check: $\\frac{5\\pi}{6}$ is $\\frac{5}{12}$ of a full turn, and $\\frac{5}{12}$ of the circle's area $1764\\pi$ is $735\\pi$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($17.5\\pi$): computes $\\frac{1}{2}r\\theta$, using the angle where the arc length belongs.\n* Choice C ($1470\\pi$): uses $r^2\\theta$ without the factor $\\frac{1}{2}$.\n* Choice D ($1764\\pi$): reports $\\pi r^2$, the area of the entire circle rather than the sector.\n\n**Test Day Takeaway:** Arc length recovers the radius; the radius unlocks the area. Keep the two radian formulas paired: $s = r\\theta$ and $A = \\frac{1}{2}r^2\\theta$."
+}

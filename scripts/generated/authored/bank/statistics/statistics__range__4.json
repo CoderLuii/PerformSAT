@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "Data set P consists of $30$ values. Data set Q consists of every value in data set P together with one additional value that is greater than each value in data set P. Which measure must be greater for data set Q than for data set P?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The minimum"
+    },
+    {
+      "id": "B",
+      "text": "The median"
+    },
+    {
+      "id": "C",
+      "text": "The mode"
+    },
+    {
+      "id": "D",
+      "text": "The range"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the added value is above every value in P, so the least value of the data set does not move.",
+    "B": "the median shifts to the sixteenth ordered value, which is at least the old median but can equal it.",
+    "C": "one new value cannot outnumber an existing most frequent value, so the mode may be unchanged."
+  },
+  "correctAnswer": "D",
+  "hint": "Ask which measure is guaranteed to change, not merely likely to.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~40s):** The added value raises the maximum and leaves the minimum alone, so the range must grow.\n\n**The Full Solution:**\nStep 1: The added value exceeds every value in data set P, so the maximum of Q is that new value and the minimum of Q equals the minimum of P.\nStep 2: Range equals maximum minus minimum, and only the maximum increased, so the range of Q is strictly greater than the range of P.\nStep 3: No other listed measure is guaranteed to increase. Check: the minimum is unchanged, the median can stay the same when the two central values of P are equal, and the mode need not change at all. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the added value is above every value in P, so the least value of the data set does not move.\n* Choice B: the median shifts to the sixteenth ordered value, which is at least the old median but can equal it.\n* Choice C: one new value cannot outnumber an existing most frequent value, so the mode may be unchanged.\n\n**Test Day Takeaway:** On a \"must be\" question, look for the measure whose definition forces a change; a measure that merely usually changes is not the answer."
+}

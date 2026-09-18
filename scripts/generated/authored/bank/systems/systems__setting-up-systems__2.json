@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A shipping center packs items into small cartons that each hold $4$ items and large cartons that each hold $9$ items. The center filled $32$ cartons completely and packed $218$ items in all. Which system of equations, where $s$ is the number of small cartons and $l$ is the number of large cartons, represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$s + l = 218$ and $4s + 9l = 32$"
+    },
+    {
+      "id": "B",
+      "text": "$s + l = 32$ and $4s + 9l = 218$"
+    },
+    {
+      "id": "C",
+      "text": "$s + l = 32$ and $9s + 4l = 218$"
+    },
+    {
+      "id": "D",
+      "text": "$s + l = 32$ and $13(s + l) = 218$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "swaps the two totals, using $218$ as the number of cartons and $32$ as the number of items.",
+    "C": "attaches each capacity to the wrong carton size.",
+    "D": "adds the two capacities and applies the sum to every carton, which assumes each carton holds $13$ items."
+  },
+  "correctAnswer": "B",
+  "hint": "Decide which total counts containers and which total counts contents.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** Cartons give $s + l = 32$; items give $4s + 9l = 218$.\n\n**The Full Solution:**\nStep 1: The center filled $32$ cartons altogether, so $s + l = 32$.\nStep 2: The small cartons hold $4s$ items and the large cartons hold $9l$ items.\nStep 3: Since $218$ items were packed, $4s + 9l = 218$. Check: $s = 14$ and $l = 18$ satisfy both, since $14 + 18 = 32$ and $4(14) + 9(18) = 56 + 162 = 218$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: swaps the two totals, using $218$ as the number of cartons and $32$ as the number of items.\n* Choice C: attaches each capacity to the wrong carton size.\n* Choice D: adds the two capacities and applies the sum to every carton, which assumes each carton holds $13$ items.\n\n**Test Day Takeaway:** In a two-container word problem, one equation counts the containers and the other counts what is inside them. Match each capacity to its own variable."
+}

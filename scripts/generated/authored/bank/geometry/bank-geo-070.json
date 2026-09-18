@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-070",
+ "question": "Sensors at a pharmacy watch a circular zone whose boundary satisfies $x^{2}+y^{2}+16x-12y+51=0$ on a plan measured in feet. How many feet is the radius of that zone?",
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~35s):** $r^{2}=8^{2}+6^{2}-51=49$, so $r=7$ feet.\n\n**The Full Solution:**\n\nStep 1: Complete the square in $x$. $x^{2}+16x$ becomes $(x+8)^{2}-64$.\n\nStep 2: Complete the square in $y$. $y^{2}-12y$ becomes $(y-6)^{2}-36$.\n\nStep 3: Collect constants. $(x+8)^{2}+(y-6)^{2}=64+36-51=49$, so $r=\\sqrt{49}=7$ feet.\n\nCheck: expanding $(x+8)^{2}+(y-6)^{2}=49$ gives $x^{2}+y^{2}+16x-12y+51=0$.\n\n**Common Mistakes:**\n\n* $49$: reports $r^{2}$ instead of taking the square root.\n* $10$: omits the constant $51$, using $r^{2}=64+36=100$.\n* $51$: reports the equation's constant term as though it were the radius.\n\n**Test Day Takeaway:** The constant already in the equation must be subtracted from the two completed squares — it never disappears."
+}

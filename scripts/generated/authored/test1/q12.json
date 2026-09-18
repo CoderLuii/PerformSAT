@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-textual",
  "module": 1,
- "passage": "Forest ecologist Suzanne Simard has proposed that trees are linked below ground by networks of fungal threads, and that older \"hub\" trees can pass carbon through these connections to nearby seedlings growing in shade. A research team wants to test the more specific claim that this carbon moves preferentially toward shaded seedlings rather than being shared at random among a hub tree's neighbors.",
+ "passage": "Many songbirds establish territory and attract mates with songs that carry low-frequency notes. City environments, however, are saturated with low-frequency noise from traffic and machinery. A research team studying great tits in a European capital hypothesized that the birds adjust their songs to avoid this acoustic interference, singing at higher minimum frequencies in noisier locations so that their songs remain audible to other great tits.",
  "question": "Which finding, if true, would most directly support the team's hypothesis?",
  "choices": [
   {
    "id": "A",
-   "text": "Shaded seedlings linked to a hub tree received measurably more of that tree's labeled carbon than equally linked seedlings growing in full sunlight did."
+   "text": "Great tits living in the city begin singing earlier in the morning and sing more often throughout the day than great tits in nearby undisturbed forests do, especially on weekday mornings when traffic is heaviest."
   },
   {
    "id": "B",
-   "text": "Seedlings cut off from the fungal network grew more slowly than seedlings that remained connected to it."
+   "text": "The city's great tits build nests at approximately the same heights as great tits in quieter rural areas."
   },
   {
    "id": "C",
-   "text": "Hub trees were found to host a wider variety of fungal species on their roots than younger trees did."
+   "text": "Within the same city, great tits holding territories along busy roads sing with higher minimum frequencies than great tits in quiet parks a short distance away."
   },
   {
    "id": "D",
-   "text": "Carbon labeled in a hub tree's leaves appeared in the surrounding fungal threads within a few days."
+   "text": "Several other city-dwelling bird species produce calls that are louder than the calls of their rural counterparts."
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A. The hypothesis is specifically that carbon flows preferentially to shaded seedlings rather than spreading evenly, so the supporting evidence has to compare shaded and sunlit seedlings and show the shaded ones getting more. A makes exactly that comparison. B shows only that the network matters for growth, not that carbon favors shaded recipients; C concerns fungal diversity, which says nothing about where carbon goes; and D shows carbon entering the network but not that it is directed toward shaded seedlings in particular."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** It is the direct test of the hypothesis: same species, same city, differing mainly in noise exposure — and the predicted frequency difference appears.\n\n**The Full Solution:**\n- The hypothesis ties one variable to another: more low-frequency noise should mean higher minimum song frequency.\n- Choice C isolates exactly that relationship — birds of the same species in the same city, differing mainly in local noise exposure, show the predicted pitch difference.\n\n**Why the other choices are wrong:**\n- A: It concerns how often birds sing, not the pitch adjustment the hypothesis predicts.\n- B: It is irrelevant to song frequency altogether.\n- D: It involves different species and loudness rather than frequency; louder calls are a different strategy from the pitch shift the team proposes, so it cannot directly support this hypothesis."
 }

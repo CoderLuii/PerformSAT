@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "A rectangular carton face has an area of $1{,}350$ square centimeters, and its longer side is $1.5$ times its shorter side. A triangular label on that face has its base along the longer side and a height equal to two-fifths of the shorter side. What is the area, in square centimeters, of the part of the face the label does not cover?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$810$"
+  },
+  {
+   "id": "B",
+   "text": "$945$"
+  },
+  {
+   "id": "C",
+   "text": "$1{,}080$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}170$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "omits the one-half in the triangle's area, subtracting 45(12) = 540 from 1350",
+  "B": "uses two-fifths of the longer side, 18, as the height, subtracting (1/2)(45)(18) = 405 from 1350",
+  "D": "puts the base along the shorter side, subtracting (1/2)(30)(12) = 180 from 1350"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The sides are $30$ and $45$ since $1.5s^2 = 1350$. The label's area is $\\frac{1}{2}(45)\\left(\\frac{2}{5} \\cdot 30\\right) = \\frac{1}{2}(45)(12) = 270$, so $1350 - 270 = 1080$ square centimeters remain.\n\n**The Full Solution:**\nStep 1: Let $s$ be the shorter side, so the longer side is $1.5s$ and the area is $1.5s^2 = 1350$. Then $s^2 = 900$ and $s = 30$ centimeters, making the longer side $45$ centimeters.\nStep 2: The label's base is the longer side, $45$ centimeters, and its height is $\\frac{2}{5}(30) = 12$ centimeters, so its area is $\\frac{1}{2}(45)(12) = 270$ square centimeters.\nStep 3: Subtract: $1350 - 270 = 1080$ square centimeters are not covered. Check: $270$ is exactly one-fifth of $1350$, and $\\frac{4}{5}(1350) = 1080$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($810$): computes the label's area as $45(12) = 540$, treating it as a rectangle. A triangle on the same base and height covers half that.\n* Choice B ($945$): takes two-fifths of $45$ instead of two-fifths of $30$, giving a height of $18$ and a label area of $405$. The height is measured against the shorter side.\n* Choice D ($1{,}170$): places the base on the shorter side, giving $\\frac{1}{2}(30)(12) = 180$. The problem fixes the base along the longer side.\n\n**Test Day Takeaway:** Solve for the rectangle's actual side lengths before touching the inscribed figure; then read the problem's own words for which side is the base and which length is the height."
+}

@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Ottoman customs registers and merchant correspondence are the only surviving sources available for the study of early modern Mediterranean trade."
-    },
-    {
-      "id": "B",
-      "text": "European buyers generally preferred to purchase Ottoman goods at the water's edge rather than travel inland to the major commercial centers of the empire to negotiate directly."
-    },
-    {
-      "id": "C",
-      "text": "The early modern Ottoman economy collapsed once European merchants began to take control of the long-distance trade of the Mediterranean."
-    },
-    {
-      "id": "D",
-      "text": "Records of Ottoman commerce indicate that the empire was an active trading system whose own institutions shaped Mediterranean trade, not merely a passive supplier to Europe."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage sets the standard view—the Ottomans as a passive supplier—against historians who use Ottoman records to show that the empire ran its own networks, set its own prices, and dictated its own credit terms, making it an active commercial system. Choice D captures that conclusion. Choice A overstates the evidence as the \"only\" sources; Choice B states a detail the passage actually denies; and Choice C describes a collapse the passage never mentions.",
-  "passage": "The standard account of early modern Mediterranean commerce treats the Ottoman Empire mainly as a supplier of raw materials to a rising European economy. Drawing on Ottoman customs registers and merchant correspondence, some historians have challenged that framing. These records show that Ottoman merchants did not simply hand goods to European buyers at the water's edge; they ran their own long-distance networks, set prices through their own guilds and courts, and extended credit across imperial borders on terms they themselves dictated. On this reading, the empire was not a passive periphery feeding European growth but an active commercial system whose institutions shaped the terms on which Mediterranean trade was conducted.",
-  "_meta": {
-    "anchor": "Ottoman trade history: empire as active commercial system, not passive periphery"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Medieval guilds usually preferred to enroll their apprentices from distant regions rather than from the cities and villages closest to them."
   },
-  "id": 1136,
-  "module": 2
+  {
+   "id": "B",
+   "text": "Historians have found that most medieval apprentices failed to complete their terms of service."
+  },
+  {
+   "id": "C",
+   "text": "Apprenticeship registers are too fragmentary to support broad conclusions about medieval society."
+  },
+  {
+   "id": "D",
+   "text": "Linked apprenticeship registers suggest that medieval young people traveled farther than the familiar image of a rooted population allows."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The text's pivot sentence announces it: the linked entries \"complicate the familiar image of a medieval population rooted in place,\" and the examples that follow — village boys crossing England, German towns weeks apart — all document long-distance movement.\n\n**The Full Solution:**\n- The registers are introduced as a source; the linking of registers across cities is what makes the new picture possible.\n- The evidence sentences give the substance: apprentices drawn from \"villages across the length of England,\" boys enrolled from \"towns weeks of travel away.\"\n- The closing sentence generalizes to the apprentice's own experience — \"the longest journey of their lives\" — sealing mobility as the idea every part serves. That is choice D.\n\n**Why the other choices are wrong:**\n- A: The text says apprentices came from far away, not that guilds preferred distant recruits over local ones.\n- B: Completion rates are never mentioned.\n- C: It reverses the text's stance — the registers are presented as revealing patterns \"no other source preserved,\" not as too broken to use.",
+ "passage": "Medieval guilds kept careful rolls of the apprentices their masters enrolled, recording each boy's name, origin, and term of service. Historians have begun linking these registers across cities, and the entries complicate the familiar image of a medieval population rooted in place. London's companies drew apprentices from villages across the length of England; German guilds enrolled boys from towns weeks of travel away. For many, an apprenticeship was not only training for a trade but the occasion for the longest journey of their lives, undertaken on the strength of a contract with a master they had never met.",
+ "_meta": {
+  "anchor": "medieval guild apprenticeships — registers as evidence of long-distance youth migration",
+  "distractors": {
+   "A": "distorts distance evidence into a preference claim",
+   "B": "fabricated completion statistic",
+   "C": "reverses the text's stance on the source"
+  }
+ },
+ "id": 1136,
+ "module": 2
 }

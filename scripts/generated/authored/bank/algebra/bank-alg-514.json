@@ -1,0 +1,33 @@
+{
+ "question": "The table gives the mean shell length, in millimeters, of mussels sampled at four distances from a river mouth, and the four values lie on a line. What is the slope of that line?",
+ "correctAnswer": "-0.75",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**The correct answer is $-0.75$.**\n\n**The Fast Way (~25s):** Shell length falls $3$ millimeters for every $4$ kilometers, so the slope is $-\\frac{3}{4} = -0.75$.\n\n**The Full Solution:**\n\nStep 1: Take the first and last rows of the table as points: $(0, 46)$ and $(12, 37)$.\n\nStep 2: The slope is $\\frac{37 - 46}{12 - 0} = \\frac{-9}{12}$.\n\nStep 3: Reduce to $-\\frac{3}{4} = -0.75$ millimeter per kilometer. Check a middle row: $46 - 0.75(8) = 40$, which matches the table.\n\n**Common Mistakes:** Reporting $0.75$ and losing the sign of a decreasing quantity; using consecutive rows as a change of $-3$ per row and reporting $-3$; inverting the ratio and reporting $-1.33$.\n\n**Test Day Takeaway:** Divide the change in the measured value by the change in the input column, not by the number of rows between them.",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Distance from river mouth (km)",
+    "Mean shell length (mm)"
+   ],
+   "rows": [
+    [
+     "0",
+     "46"
+    ],
+    [
+     "4",
+     "43"
+    ],
+    [
+     "8",
+     "40"
+    ],
+    [
+     "12",
+     "37"
+    ]
+   ]
+  }
+ },
+ "id": "bank-alg-514"
+}

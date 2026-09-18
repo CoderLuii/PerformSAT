@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-474",
+ "question": "A county received one shipment of $2$ pallets of antigen kits and $3$ pallets of swabs holding $860$ items, and a second of $2$ pallets of kits and $5$ pallets of swabs holding $1{,}180$ items. Each pallet of a type holds the same count. How many items are on one pallet of swabs?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$160$"
+  },
+  {
+   "id": "B",
+   "text": "$190$"
+  },
+  {
+   "id": "C",
+   "text": "$320$"
+  },
+  {
+   "id": "D",
+   "text": "$350$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports the 190 items on a kit pallet instead of a swab pallet",
+  "C": "stops at 2s = 320, the count on the two extra swab pallets",
+  "D": "adds the two pallet counts, 160 + 190 = 350"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: System of Equations (Elimination)**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Both shipments carry $2$ pallets of kits, so the extra $320$ items ride on the $2$ extra swab pallets: $s = 160$.\n\n**The Full Solution:**\nStep 1: Let $k$ be the items on one kit pallet and $s$ the items on one swab pallet. The shipments give $2k + 3s = 860$ and $2k + 5s = 1{,}180$.\nStep 2: The $k$-terms match, so subtract the first from the second: $2s = 320$, and $s = 160$.\nStep 3: Confirm with the first shipment: $2k + 3(160) = 860$ gives $2k = 380$ and $k = 190$, and $2(190) + 5(160) = 380 + 800 = 1{,}180$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($190$): solves the system correctly but reports the kit-pallet count instead of the swab-pallet count.\n* Choice C ($320$): stops at $2s = 320$, which is the load on the two EXTRA swab pallets, not one pallet.\n* Choice D ($350$): adds the two pallet counts, $160 + 190 = 350$.\n\n**Test Day Takeaway:** Identical terms cancel by subtraction in one line; then divide by the number of extra units before reporting a per-unit amount."
+}

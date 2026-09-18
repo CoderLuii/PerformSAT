@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-177",
+  "question": "A bin contains only small, medium, and large bolts, in the ratio $3 : 4 : 8$, respectively. If one bolt is selected at random, what is the probability that it is a large bolt?",
+  "correctAnswer": "8/15",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**The correct answer is $\\frac{8}{15}$.**\n\n**The Fast Way (~10s):** The ratio has $3 + 4 + 8 = 15$ parts, and large bolts are $8$ of them: $\\frac{8}{15}$.\n\n**The Full Solution:**\nStep 1: A ratio gives relative counts: for some $k$, there are $3k$ small, $4k$ medium, and $8k$ large bolts.\nStep 2: Total $= 15k$; favorable (large) $= 8k$.\nStep 3: Probability $= \\frac{8k}{15k} = \\frac{8}{15}$. Check: with $k = 1$, $8$ of $15$ bolts are large. $\\checkmark$\n\n**Common Mistakes:** Dividing by the other parts only, $\\frac{8}{7}$, which exceeds $1$; answering $\\frac{1}{3}$ because there are three sizes; using $\\frac{8}{12}$ by leaving out the small bolts.\n\n**Test Day Takeaway:** A probability from a ratio is (the part's number) over (the sum of all the parts); the actual counts cancel."
+}

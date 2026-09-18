@@ -1,0 +1,29 @@
+{
+  "id": 22,
+  "question": "The number of algal cells in a 1-liter seawater sample $t$ days after a bloom begins is given by the expression $\\frac{2^{4t} \\cdot 8^{t+3}}{4^{3t-2}}$. Which expression is equivalent to this one?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2^{t+13}$"
+    },
+    {
+      "id": "B",
+      "text": "$2^{t+5}$"
+    },
+    {
+      "id": "C",
+      "text": "$2^{7-t}$"
+    },
+    {
+      "id": "D",
+      "text": "$2^{13t+5}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracts the denominator's -4 instead of adding it, giving 7t + 9 - 6t - 4 = t + 5",
+    "C": "leaves 8^(t+3) unconverted, using exponent t + 3 instead of 3t + 9",
+    "D": "adds the denominator's exponent instead of subtracting it, giving 7t + 9 + 6t - 4"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice A is correct.**\n\n**The Fast Way (~45s):** Rewriting everything in base $2$ gives $\\frac{2^{4t} \\cdot 2^{3t+9}}{2^{6t-4}} = 2^{(7t+9)-(6t-4)} = 2^{t+13}$.\n\n**The Full Solution:**\nStep 1: Convert each base to a power of $2$. Since $8 = 2^3$, $8^{t+3} = 2^{3(t+3)} = 2^{3t+9}$; since $4 = 2^2$, $4^{3t-2} = 2^{2(3t-2)} = 2^{6t-4}$.\nStep 2: Multiply in the numerator by adding exponents: $2^{4t} \\cdot 2^{3t+9} = 2^{4t+3t+9} = 2^{7t+9}$.\nStep 3: Divide by subtracting exponents: $2^{(7t+9)-(6t-4)} = 2^{7t+9-6t+4} = 2^{t+13}$. Check: at $t = 1$ the original is $\\frac{2^4 \\cdot 8^4}{4^1} = \\frac{16 \\cdot 4096}{4} = 16{,}384$, and $2^{1+13} = 2^{14} = 16{,}384$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($2^{t+5}$): subtracts the constant $-4$ as if it were $+4$, giving $7t + 9 - 6t - 4$. Subtracting a negative exponent adds.\n* Choice C ($2^{7-t}$): forgets to rewrite $8^{t+3}$ in base $2$ and uses $t + 3$ for its exponent, which loses the factor of $3$.\n* Choice D ($2^{13t+5}$): adds the denominator's exponent instead of subtracting it. That result grows far faster than the original, which is $2^{14}$ at $t = 1$ rather than $2^{18}$.\n\n**Test Day Takeaway:** Get every base identical first, distribute the outer exponent, then add for multiplication and subtract for division. Test $t = 1$ in both the original and your answer as a $10$-second safety check."
+}

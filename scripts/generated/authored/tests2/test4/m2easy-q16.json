@@ -1,0 +1,40 @@
+{
+ "id": 16,
+ "question": "Twelve one-hundred-gram samples were drawn at an olive press, and the dot plot records how many undersized olives each sample contained. What is the median of the twelve sample counts?",
+ "diagram": {
+  "type": "dotPlot",
+  "params": {
+   "data": [
+    {
+     "value": 3,
+     "count": 5
+    },
+    {
+     "value": 4,
+     "count": 2
+    },
+    {
+     "value": 6,
+     "count": 1
+    },
+    {
+     "value": 7,
+     "count": 1
+    },
+    {
+     "value": 8,
+     "count": 2
+    },
+    {
+     "value": 11,
+     "count": 1
+    }
+   ],
+   "xMin": 2,
+   "xMax": 12,
+   "xLabel": "Undersized olives per sample"
+  }
+ },
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Median Calculation**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~25s):** With $12$ values the median averages the $6$th and $7$th. Five dots sit at $3$ and two at $4$, so both middle values are $4$.\n\n**The Full Solution:**\nStep 1: Read the counts off the plot: five samples at $3$, two at $4$, one at $6$, one at $7$, two at $8$, one at $11$, for $12$ samples in all.\nStep 2: In order the values are $3, 3, 3, 3, 3, 4, 4, 6, 7, 8, 8, 11$. An even count means the median is the mean of the $6$th and $7$th values.\nStep 3: Those are $4$ and $4$, so the median is $\\frac{4 + 4}{2} = 4$. Check the split: the lower six values are $3, 3, 3, 3, 3, 4$ and the upper six are $4, 6, 7, 8, 8, 11$ ✓\n\n**Common Mistakes:**\n* $6.5$: averaging the middle two of the six distinct values $3, 4, 6, 7, 8, 11$. Every dot counts, so a value stacked five times pulls the middle down.\n* $5.25$: computing the mean, $\\frac{63}{12}$. The single sample at $11$ drags the mean above the median.\n* $3$: reporting the most frequent value. That is the mode; the median is a position, not a peak.\n\n**Test Day Takeaway:** On a dot plot, count the dots, not the labeled values — the median sits at the middle position of the full list, so tall stacks matter."
+}

@@ -1,0 +1,6 @@
+{
+ "question": "A studio cable spool's flange measures $96\\pi$ centimeters around. A larger spool's flange has a radius $7$ centimeters greater than the smaller flange's radius. The larger flange measures $k\\pi$ centimeters around. What is $k$?",
+ "correctAnswer": "110",
+ "explanation": "**SAT Pattern: Circumference of a Circle**\n\n**The correct answer is $110$.**\n\n**The Fast Way (~30s):** The smaller radius is $\\frac{96\\pi}{2\\pi} = 48$, so the larger is $55$ and its circumference is $2\\pi(55) = 110\\pi$.\n\n**The Full Solution:**\nStep 1: From $2\\pi r = 96\\pi$, the smaller flange has radius $r = 48$ centimeters.\nStep 2: The larger flange's radius is $48 + 7 = 55$ centimeters.\nStep 3: Its circumference is $2\\pi(55) = 110\\pi$ centimeters, so $k = 110$. Check: increasing a radius by $7$ increases the circumference by $2\\pi(7) = 14\\pi$, and $96 + 14 = 110$ ✓\n\n**Common Mistakes:**\n* $55$ — reports the larger radius instead of its circumference.\n* $103$ — adds the $7$ directly to $96$, as if the coefficient were a radius.\n* $206$ — treats $96$ as the smaller radius and computes $2(96 + 7)$.\n\n**Test Day Takeaway:** A change in radius scales into circumference by $2\\pi$ — convert to a radius, adjust, then convert back.",
+ "id": "bank-geo-240"
+}

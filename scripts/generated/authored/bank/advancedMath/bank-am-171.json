@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-171",
+ "question": "A biogas digester's daily methane yield, in cubic meters, is modeled by $M(t)=-\\frac{1}{2}t^2+14t+60$, where $t$ is the number of days after startup. By how many cubic meters does the greatest daily yield exceed the yield on the startup day?",
+ "correctAnswer": "98",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**The correct answer is $98$.**\n\n**The Fast Way (~40s):** The peak is at $t=-\\frac{14}{2(-1/2)}=14$, where $M=158$; the startup yield is $M(0)=60$, so the excess is $98$.\n\n**The Full Solution:**\nStep 1: The maximum occurs at $t=-\\frac{b}{2a}=-\\frac{14}{2(-\\frac{1}{2})}=14$ days.\nStep 2: Evaluate there: $M(14)=-\\frac{1}{2}(196)+14(14)+60=-98+196+60=158$.\nStep 3: The startup yield is $M(0)=60$, so the excess is $158-60=98$ cubic meters. Check: $M(13)=-84.5+182+60=157.5$ and $M(15)=157.5$, both below $158$ ✓\n\n**Common Mistakes:**\n* $158$: reports the greatest daily yield itself instead of how much it exceeds the startup yield.\n* $14$: reports the day on which the greatest yield occurs.\n* $60$: reports the startup yield rather than the difference.\n\n**Test Day Takeaway:** Two-part questions end with a subtraction — compute the vertex value, then answer the comparison actually asked."
+}

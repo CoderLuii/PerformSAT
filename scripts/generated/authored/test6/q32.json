@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
-  "passage": "In the 1870s, the photographer Eadweard Muybridge was hired to settle a wager about whether a galloping horse ever lifts all four hooves off the ground at once. Using a row of cameras triggered in sequence as a horse ran past, he produced a series of stop-motion images. *The photographs showed that the horse does leave the ground entirely, but only when its legs are gathered beneath its body, not when they are stretched out as painters had long assumed.* The sequence is often described as a step toward the motion picture.",
+  "passage": "A satellite's solar panels must survive launch folded inside a rocket's narrow fairing and then deploy in orbit, where a jammed hinge cannot be reached and repaired. Engineers have drawn on paper folding for a solution. __A pattern of creases devised by the astrophysicist Koryo Miura folds a flat sheet into a compact block that opens with a single continuous motion: pull on two opposite corners, and the whole array unfolds at once.__ A panel folded this way needs no network of independently driven hinges, each a potential point of failure, and versions of the pattern have flown on spacecraft since the 1990s.",
   "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
   "choices": [
     {
       "id": "A",
-      "text": "It questions whether Muybridge's row of sequenced cameras could capture motion quickly enough to settle the original wager about the galloping horse's stride."
+      "text": "It identifies the constraint that makes deploying solar panels in orbit riskier than folding them for launch."
     },
     {
       "id": "B",
-      "text": "It reports the specific result of Muybridge's experiment and corrects a longstanding assumption about how a galloping horse moves."
+      "text": "It describes the folding pattern whose distinctive property — unfolding in one motion — answers the problem the text presents."
     },
     {
       "id": "C",
-      "text": "It explains why Muybridge had been hired to photograph a galloping horse in the first place."
+      "text": "It explains why a jammed hinge on an orbiting satellite cannot be reached and repaired by engineers on the ground."
     },
     {
       "id": "D",
-      "text": "It introduces the claim that Muybridge's photographs led directly to the invention of the motion picture."
+      "text": "It questions whether techniques borrowed from paper folding can withstand the stresses of an actual launch."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The underlined sentence delivers the experiment's finding, that the horse is airborne only when its legs are tucked beneath it, and in doing so overturns the painters' assumption that the legs were extended. That is both a report of the result and a correction, which choice B states. The sentence raises no doubt about the cameras (choice A) and does not give the reason Muybridge was hired (choice C), which the opening sentence supplies. Choice D points to the closing remark about the motion picture, a separate idea the underlined sentence does not address."
+  "explanation": "**Choice B is correct.** The text sets a problem (deployment must not fail in unreachable orbit) and promises a paper-folding solution; the underlined sentence delivers it, presenting the Miura pattern and the one-motion unfolding that makes hinge networks unnecessary.\n\n**The Full Solution:**\n- Sentence one states the stakes; sentence two announces that a solution comes from paper folding.\n- The underlined sentence is that solution made concrete: the crease pattern and its key property, a single continuous unfolding motion.\n- The final sentence draws the consequence — no failure-prone hinges — confirming that the underlined sentence carried the answering mechanism.\n\n**Why the other choices are wrong:**\n- A: The constraint is laid out in the first sentence, before the underlined one.\n- C: The unreachability of orbit is asserted earlier and never explained anywhere in the text.\n- D: The sentence advances the paper-folding approach confidently; no doubt about launch stresses is raised in it or anywhere else."
 }

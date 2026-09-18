@@ -1,0 +1,86 @@
+{
+  "id": 8,
+  "question": "The scatterplot shows the depth, in meters, and the water temperature, in degrees Celsius, at each of ten sampling sites in a lake, along with the line of best fit for the data. The line of best fit passes through the points $(5, 22)$ and $(20, 10)$. Which equation represents the line of best fit?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          2,
+          25
+        ],
+        [
+          4,
+          23
+        ],
+        [
+          6,
+          20
+        ],
+        [
+          8,
+          21
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          16,
+          14
+        ],
+        [
+          19,
+          10
+        ],
+        [
+          22,
+          9
+        ],
+        [
+          24,
+          6
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 25,
+      "yMin": 0,
+      "yMax": 28,
+      "xGridStep": 5,
+      "yGridStep": 4,
+      "xLabelStep": 5,
+      "yLabelStep": 8,
+      "xLabel": "Depth (meters)",
+      "yLabel": "Temperature (degrees Celsius)",
+      "bestFitLine": {
+        "slope": -0.8,
+        "intercept": 26
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = -1.25x + 28.25$"
+    },
+    {
+      "id": "B",
+      "text": "$y = -0.8x + 22$"
+    },
+    {
+      "id": "C",
+      "text": "$y = -0.8x + 26$"
+    },
+    {
+      "id": "D",
+      "text": "$y = 0.8x + 18$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "Two points determine the line exactly — no estimating is needed once you use them both.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** $m = \\frac{10-22}{20-5} = -0.8$, and $22 = -0.8(5)+b$ gives $b = 26$: $y = -0.8x + 26$ — choice C.\n\n**The Full Solution:**\nStep 1: Rate of change from the two given points: $m = \\frac{10-22}{20-5} = \\frac{-12}{15} = -0.8$ degree Celsius per meter.\nStep 2: Substitute $(5, 22)$ into $y = -0.8x + b$: $22 = -4 + b$, so $b = 26$.\nStep 3: The equation is $y = -0.8x + 26$. Check the second point: $-0.8(20)+26 = -16+26 = 10$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -1.25x + 28.25$): inverts the rate of change, computing $\\frac{20-5}{10-22} = -1.25$; anchoring that at $(5, 22)$ then forces $b = 28.25$.\n* Choice B ($y = -0.8x + 22$): has the correct rate of change but takes $22$, the temperature at a depth of $5$ meters, as the value at depth $0$.\n* Choice D ($y = 0.8x + 18$): drops the negative sign on the rate of change, which would make deeper water warmer; anchoring $+0.8$ at $(5, 22)$ gives $b = 18$.\n\n**Test Day Takeaway:** When a stem hands you two points on the line, compute the slope from them and back-solve the intercept — then confirm with the point you did not use."
+}

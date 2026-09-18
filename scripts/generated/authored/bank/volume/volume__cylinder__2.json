@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A battery manufacturer models the interior volume $V$, in cubic millimeters, of a cylindrical lithium cell whose base has radius $r$ millimeters by the equation $V = \\pi r^2(65)$. Which of the following is the best interpretation of $65$ in this context?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The interior height, in millimeters, of the cell."
+    },
+    {
+      "id": "B",
+      "text": "The radius, in millimeters, of the interior base of the cell."
+    },
+    {
+      "id": "C",
+      "text": "The interior volume, in cubic millimeters, of a cell whose base has radius $1$ millimeter."
+    },
+    {
+      "id": "D",
+      "text": "The increase in interior volume, in cubic millimeters, for each increase of $1$ millimeter in the radius."
+    }
+  ],
+  "distractorNotes": {
+    "B": "assigns 65 to the radius, the quantity the model already names r",
+    "C": "reads 65 as the volume at r = 1, but substituting r = 1 gives 65 pi, not 65",
+    "D": "treats 65 as a constant rate of change, though volume grows with the square of the radius"
+  },
+  "correctAnswer": "A",
+  "hint": "The model already names the radius $r$, so $65$ must stand for something else.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** A cylinder's volume is $V = \\pi r^2 h$; matching it to $V = \\pi r^2(65)$ puts $65$ in the position of $h$, the height in millimeters.\n\n**The Full Solution:**\nStep 1: For any cylinder, $V = \\pi r^2 h$, where $r$ is the base radius and $h$ is the height, both in the same length unit.\nStep 2: The model is $V = \\pi r^2(65)$, with $r$ already used for the base radius in millimeters. The only factor left to identify is $65$, which occupies the $h$ slot.\nStep 3: So the cell is $65$ millimeters tall. Check: a cell with $r = 4$ would hold $\\pi(4)^2(65) = 1{,}040\\pi$ cubic millimeters, exactly the volume of a cylinder of radius $4$ and height $65$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: assigns $65$ to the radius, but the model already names the radius $r$ and leaves it variable.\n* Choice C: reads $65$ as the volume when $r = 1$; substituting $r = 1$ actually gives $65\\pi \\approx 204$ cubic millimeters, not $65$.\n* Choice D: treats $65$ as a constant rate of change, but volume grows with $r^2$, so the increase per millimeter of radius is not constant.\n\n**Test Day Takeaway:** To interpret a constant in a geometric model, line the model up with the standard formula and read off which variable the constant replaced."
+}

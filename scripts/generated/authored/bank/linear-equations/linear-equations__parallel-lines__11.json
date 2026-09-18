@@ -1,0 +1,30 @@
+{
+ "id": 11,
+ "question": "A guy-wire profile on a grid marked in meters runs parallel to $y = -\\frac{3}{8}x + 2$. The profile contains the points $(-16, r)$ and $(8, 1)$, and $r$ is a constant. What is the value of $r$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-10$"
+  },
+  {
+   "id": "B",
+   "text": "$-8$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds the y-values in the numerator, solving (1 + r)/24 = -3/8",
+  "B": "drops the negative sign of the slope, solving (1 - r)/24 = 3/8",
+  "C": "uses 8 as the horizontal change instead of the full 24 meters"
+ },
+ "correctAnswer": "D",
+ "hint": "The two given points must produce the stated slope.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~45s):** The run is $8 - (-16) = 24$, so $\\frac{1 - r}{24} = -\\frac{3}{8}$ gives $1 - r = -9$ and $r = 10$.\n\n**The Full Solution:**\nStep 1: Parallel lines have equal slopes, so the profile has slope $-\\frac{3}{8}$.\nStep 2: The slope through the two points is $\\frac{1 - r}{8 - (-16)} = \\frac{1 - r}{24}$, so $\\frac{1 - r}{24} = -\\frac{3}{8}$.\nStep 3: Multiplying both sides by $24$ gives $1 - r = -9$, so $r = 10$.\n\nCheck: From $(-16,\\ 10)$ to $(8,\\ 1)$ the drop is $9$ meters over a run of $24$ meters, and $-\\frac{9}{24} = -\\frac{3}{8}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-10$): adds the $y$-values in the numerator, solving $\\frac{1 + r}{24} = -\\frac{3}{8}$.\n* Choice B ($-8$): drops the negative sign on the slope and solves $\\frac{1 - r}{24} = \\frac{3}{8}$.\n* Choice C ($4$): uses $8$ as the horizontal change instead of the full $24$ meters between the two $x$-values.\n\n**Test Day Takeaway:** Compute the run as a difference, including the sign of a negative coordinate, before setting up the slope equation."
+}

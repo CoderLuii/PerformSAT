@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-197",
+ "question": "The function $v$ defined by $v(t) = 18{,}000(0.86)^t$ gives the estimated value, in dollars, of a delivery van $t$ years after it was purchased. By what percent does the estimated value of the van decrease each year?",
+ "correctAnswer": "14",
+ "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**The correct answer is $14$.**\n\n**The Fast Way (~15s):** The base $0.86$ keeps $86\\%$ of the value, so $100\\% - 86\\% = 14\\%$ is lost each year.\n\n**The Full Solution:**\nStep 1: Each year the value is multiplied by $b = 0.86$.\nStep 2: For decay, $b = 1 - r$, so $0.86=1-r$ and $r = 0.14$.\nStep 3: As a percent, $r = 14\\%$. Check: $v(0) = 18{,}000$ and $v(1) = 15{,}480$, a drop of $2{,}520$, and $\\dfrac{2{,}520}{18{,}000} = 0.14$. $\\checkmark$\n\n**Common Mistakes:** Answering $86$, which is the percent of the value that REMAINS, not the percent lost. Answering $0.14$ — the question asks for a percent, so the decimal must be converted.\n\n**Test Day Takeaway:** With a base below $1$, the percent decrease is $1 - b$ written as a percent; the base itself always reports what is left over."
+}

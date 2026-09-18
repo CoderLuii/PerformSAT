@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "An audio engineer models the total latency $L$, in milliseconds, of a signal chain containing $n$ effects units as $L=3n+12$, where $n$ is a whole number. Which expression gives $n$ in terms of $L$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{L+12}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{12-L}{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{L-12}{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{L-3}{12}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 12 instead of subtracting it, undoing the +12 in the wrong direction",
+  "B": "reverses the order of subtraction, writing 12 - L instead of L - 12",
+  "D": "swaps the roles of the coefficient 3 and the constant 12"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Undo the operations on $n$ in reverse order: subtract $12$, then divide by $3$, giving $n=\\dfrac{L-12}{3}$.\n\n**The Full Solution:**\nStep 1: Start from $L=3n+12$. To isolate $n$, first remove the constant term by subtracting $12$ from both sides: $L-12=3n$.\nStep 2: The coefficient of $n$ is $3$, so divide both sides by $3$: $\\dfrac{L-12}{3}=n$.\nStep 3: Confirm the expression by testing a value. If $n=4$, the model gives $L=3(4)+12=24$; substituting $L=24$ into $\\dfrac{L-12}{3}$ gives $\\dfrac{24-12}{3}=4$, the original number of units ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{L+12}{3}$): adds $12$ rather than subtracting it. Testing $L=24$ gives $12$, not $4$.\n* Choice B ($\\frac{12-L}{3}$): reverses the subtraction. Testing $L=24$ gives $-4$, a negative number of effects units.\n* Choice D ($\\frac{L-3}{12}$): trades the coefficient and the constant. Testing $L=24$ gives $1.75$, not $4$.\n\n**Test Day Takeaway:** Solving a formula for a different variable is the same two moves as solving for a number: strip the constant first, then divide by the coefficient. Test one value at the end — a wrong rearrangement fails instantly."
+}

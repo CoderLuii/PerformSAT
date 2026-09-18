@@ -1,0 +1,30 @@
+{
+ "id": 10,
+ "question": "On a process chart a solder line and a flux line are graphed as $y = \\frac{a}{6}x + 4$ and $y = \\frac{3}{2}x - 2$, where $a$ is a constant and both graphs extend without bound. The two graphs never cross. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the target slope, solving a/6 = 2/3",
+  "C": "multiplies 6 by the denominator 2 instead of by the fraction 3/2",
+  "D": "multiplies 6 by the numerator 3 and never divides by 2"
+ },
+ "correctAnswer": "B",
+ "hint": "Two graphs that never cross rise at the same rate.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~35s):** Never crossing means equal slopes, so $\\frac{a}{6} = \\frac{3}{2}$ and $a = 9$.\n\n**The Full Solution:**\nStep 1: Two lines in the plane fail to cross exactly when they are parallel and distinct, so their slopes must be equal.\nStep 2: The slopes are $\\frac{a}{6}$ and $\\frac{3}{2}$, so $\\frac{a}{6} = \\frac{3}{2}$ and $2a = 18$, giving $a = 9$.\nStep 3: With $a = 9$ the solder line is $y = \\frac{3}{2}x + 4$; its constant term $4$ differs from $-2$, so the lines are parallel and distinct and indeed never cross.\n\nCheck: At $x = 4$ the two lines give $10$ and $4$; at $x = 10$ they give $19$ and $13$. The gap stays $6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): inverts the target slope and solves $\\frac{a}{6} = \\frac{2}{3}$.\n* Choice C ($12$): multiplies $6$ by the denominator $2$ instead of by the whole fraction $\\frac{3}{2}$.\n* Choice D ($18$): multiplies $6$ by the numerator $3$ and forgets to divide by $2$.\n\n**Test Day Takeaway:** Equal slopes alone give parallel; confirm the constant terms differ before claiming the graphs never meet."
+}

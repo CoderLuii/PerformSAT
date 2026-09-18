@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-344",
+  "question": "A sample of a radioactive isotope has a mass of $96$ milligrams, and the isotope has a half-life of $8$ days. The table gives the mass remaining at the time of measurement and at two later times. Which function $m$ gives the mass, in milligrams, remaining $t$ days after the sample was measured?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Time (days)",
+        "Mass remaining (milligrams)"
+      ],
+      "rows": [
+        [
+          "0",
+          "96"
+        ],
+        [
+          "8",
+          "48"
+        ],
+        [
+          "16",
+          "24"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$m(t) = 96\\left(\\dfrac{1}{2}\\right)^{8t}$"
+    },
+    {
+      "id": "B",
+      "text": "$m(t) = 96\\left(\\dfrac{1}{2}\\right)^{t/8}$"
+    },
+    {
+      "id": "C",
+      "text": "$m(t) = 96\\left(\\dfrac{1}{2}\\right)^{t}$"
+    },
+    {
+      "id": "D",
+      "text": "$m(t) = 96 - 6t$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies by the half-life instead of dividing",
+    "C": "treats the half-life as one day",
+    "D": "models a constant loss per day"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Build Exponential Model**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The mass halves once per $8$ days, so the number of halvings is $\\dfrac{t}{8}$ and $m(t) = 96\\left(\\dfrac{1}{2}\\right)^{t/8}$.\n\n**The Full Solution:**\nStep 1: Half-life decay has the form $m(t) = m_0\\left(\\dfrac{1}{2}\\right)^{t/H}$, where $H$ is the half-life and $m_0$ is the starting mass.\nStep 2: Here $m_0 = 96$ and $H = 8$, so the exponent is $\\dfrac{t}{8}$.\nStep 3: $m(t) = 96\\left(\\dfrac{1}{2}\\right)^{t/8}$. Check: at $t = 8$ the exponent is $1$, giving $48$; at $t = 16$ it is $2$, giving $24$ — the last two table rows. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($m(t) = 96\\left(\\dfrac{1}{2}\\right)^{8t}$): multiplies by the half-life instead of dividing, which would leave far less than $48$ milligrams at $t = 8$.\n* Choice C ($m(t) = 96\\left(\\dfrac{1}{2}\\right)^{t}$): treats the half-life as one day, halving the mass every day.\n* Choice D ($m(t) = 96 - 6t$): treats the first $48$-milligram drop as a constant $6$ milligrams per day, which would reach $0$ at $t = 16$.\n\n**Test Day Takeaway:** The exponent counts how many half-lives have passed, so divide the elapsed time by the half-life."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-224",
+ "question": "A garment factory cuts triangular collar interfacings in two similar sizes, and each side of the larger size is $k$ times the matching side of the smaller size. The three sides of the smaller size total $45$ centimeters, and the three sides of the larger size total $72$ centimeters. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.625$"
+  },
+  {
+   "id": "B",
+   "text": "$1.6$"
+  },
+  {
+   "id": "C",
+   "text": "$2.56$"
+  },
+  {
+   "id": "D",
+   "text": "$4.096$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the ratio, computing 45/72 = 0.625",
+  "C": "squares the ratio as if comparing areas: 1.6^2 = 2.56",
+  "D": "cubes the ratio as if comparing volumes: 1.6^3 = 4.096"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Perimeters of similar figures scale exactly as sides do, so $k=\\frac{72}{45}=1.6$.\n\n**The Full Solution:**\n\nStep 1 — Name the sides. Let the smaller interfacing have sides $a$, $b$, and $c$, so the larger has sides $ka$, $kb$, and $kc$.\n\nStep 2 — Add them: the larger perimeter is $ka+kb+kc=k(a+b+c)$, so $72=k(45)$.\n\nStep 3 — Solve: $k=\\frac{72}{45}=\\frac{8}{5}=1.6$. Check: $1.6(45)=72$, the stated total.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($0.625$): this computes $\\frac{45}{72}$, the factor that shrinks the larger size to the smaller one.\n* Choice C ($2.56$): this squares the ratio, $1.6^2$, which compares areas rather than lengths.\n* Choice D ($4.096$): this cubes the ratio, $1.6^3$, which compares volumes.\n\n**Test Day Takeaway:** Perimeter is a sum of lengths, so it scales by the same factor $k$ as any single side — no squaring, no cubing."
+}

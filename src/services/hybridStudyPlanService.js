@@ -20,6 +20,7 @@ import {
   runTransaction,
 } from 'firebase/firestore';
 import { isSafeFirestoreFieldPathKey } from './firestoreFieldPath';
+import { isOrphanArtifact } from './studyPlanReset';
 import { generateStudyPlan as generateDeterministic } from './studyPlanGenerator';
 import { generateStudyPlan as generateAIPlan } from './studyPlanService';
 import {
@@ -409,6 +410,40 @@ export const getLatestStudyPlanArtifact = async (userId) => {
 
   const d = snap.docs[0];
   return { id: d.id, ...d.data() };
+};
+
+/**
+ * Newest study-plan artifact whose source data still exists.
+ *
+ * Artifacts can't be deleted client-side, so after a practice-test reset the
+ * NEWEST artifact may be an orphan (its source test is gone) while an older
+ * one — typically the diagnostic's starter plan — is still valid. The plain
+ * latest-query would surface the orphan and the hydration guard would then
+ * render the empty state, which reads as "you never took your diagnostic".
+ * This walks the newest N artifacts and returns the first non-orphan with a
+ * usable plan, or null when none survive. Read-only: the pointer is repaired
+ * by the next reset/completion write, not here.
+ *
+ * @param {string} userId
+ * @param {Object} practiceTestResults - current progress.practiceTestResults map
+ * @param {number} [maxResults=10]
+ * @returns {Promise<Object|null>} artifact ({ id, ...data }) or null
+ */
+export const getLatestSurvivingStudyPlanArtifact = async (userId, practiceTestResults = {}, maxResults = 10) => {
+  if (!userId) return null;
+
+  const colRef = collection(db, 'progress', userId, 'studyPlanArtifacts');
+  const q = query(colRef, orderBy('createdAt', 'desc'), limit(maxResults));
+  const snap = await getDocs(q);
+  if (snap.empty) return null;
+
+  for (const d of snap.docs) {
+    const art = { id: d.id, ...d.data() };
+    if (!art?.plan?.weeks?.length) continue;
+    if (isOrphanArtifact(art, practiceTestResults || {})) continue;
+    return art;
+  }
+  return null;
 };
 
 /**

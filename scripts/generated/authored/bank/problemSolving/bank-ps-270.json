@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-270",
+  "question": "A researcher recorded the type of thermostat and the monthly energy bill for each of $400$ households. Households with programmable thermostats had a lower mean monthly energy bill than households without programmable thermostats. Which of the following is the most appropriate conclusion?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Installing a programmable thermostat causes a household's monthly energy bill to decrease."
+    },
+    {
+      "id": "B",
+      "text": "Households without programmable thermostats would pay less if they installed one."
+    },
+    {
+      "id": "C",
+      "text": "Programmable thermostats have no effect on monthly energy bills."
+    },
+    {
+      "id": "D",
+      "text": "For these households, thermostat type is associated with the monthly energy bill, but the study does not show that thermostat type affects the bill."
+    }
+  ],
+  "distractorNotes": {
+    "A": "claims causation from an observational study with no random assignment",
+    "B": "predicts the effect of an intervention that was never tested",
+    "C": "denies any relationship although an association was observed"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Observational vs Experimental Study**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** The researcher only recorded what households already had; nobody assigned thermostats at random. Without random assignment, the data show an association, not a cause.\n\n**The Full Solution:**\nStep 1: Classify the study. Thermostat type was observed, not assigned, so this is an observational study.\nStep 2: In an observational study, other differences between the groups can explain the result. Households that install programmable thermostats may also have newer insulation, smaller homes, or more attention to energy use.\nStep 3: The appropriate conclusion is limited to an association between thermostat type and energy bill among these households. Check: only random assignment of thermostat type would let the difference in bills be attributed to the thermostats. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: \"causes\" requires an experiment with random assignment, which this study did not have.\n* Choice B: predicting what would happen after installing a thermostat is a causal claim in disguise.\n* Choice C: the study did observe a difference in mean bills; the limitation is about cause, not about whether an association exists.\n\n**Test Day Takeaway:** Observed, not assigned, means association only. Save the word \"causes\" for randomized experiments."
+}

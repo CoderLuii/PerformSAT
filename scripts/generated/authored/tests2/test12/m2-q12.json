@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "In a traffic-signal timing model, the constants $c$ and $k$, both measured in seconds, satisfy $\\frac{2c + 9}{5} = k$. What is the value of $\\frac{2c + 29}{5}$ in terms of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$k + 4$"
+  },
+  {
+   "id": "B",
+   "text": "$k + \\frac{29}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$k + 20$"
+  },
+  {
+   "id": "D",
+   "text": "$5k + 20$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "adds 29/5 to k without removing the 9/5 that is already inside k",
+  "C": "adds the raw difference 20 without dividing it by 5",
+  "D": "multiplies the whole equation by 5 and then adds 20, so the k-term is scaled too"
+ },
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice A is correct.** Since $\\frac{2c + 29}{5} = \\frac{(2c + 9) + 20}{5} = \\frac{2c + 9}{5} + \\frac{20}{5}$, the second expression equals $k + 4$.\n\n**The Fast Way (~20s):** The numerator grows by $20$ and everything is divided by $5$, so the output grows by $\\frac{20}{5} = 4$.\n\n**The Full Solution:**\nStep 1: Compare the two numerators: $2c + 29$ is exactly $20$ more than $2c + 9$.\nStep 2: Split the fraction: $\\frac{(2c + 9) + 20}{5} = \\frac{2c + 9}{5} + \\frac{20}{5}$.\nStep 3: The first piece is $k$ by the given equation and the second is $4$, so the value is $k + 4$. Check with a number: if $c = 8$, then $k = \\frac{25}{5} = 5$ and $\\frac{2(8) + 29}{5} = \\frac{45}{5} = 9$, which is $k + 4$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($k + \\frac{29}{5}$): adds the whole new constant as if the original numerator had none, double-counting the $9$ that is already baked into $k$.\n* Choice C ($k + 20$): notices the numerator rose by $20$ but forgets that the $5$ in the denominator shrinks that jump to $4$.\n* Choice D ($5k + 20$): clears the denominator on one side only, scaling $k$ by $5$ while the question still asks for the divided value.\n\n**Test Day Takeaway:** Do not solve for the hidden variable. Write the new expression as the old one plus a constant and let the given value carry the weight."
+}

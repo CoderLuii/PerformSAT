@@ -1,0 +1,52 @@
+{
+  "id": 3,
+  "question": "The table gives the mass, in grams, of each of four mineral samples collected on a field trip. Given that $1$ kilogram is equal to $1{,}000$ grams, what is the total mass of the four samples, in kilograms?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Sample",
+        "Mass (grams)"
+      ],
+      "rows": [
+        [
+          "W",
+          "1,250"
+        ],
+        [
+          "X",
+          "860"
+        ],
+        [
+          "Y",
+          "2,340"
+        ],
+        [
+          "Z",
+          "550"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.5$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$50$"
+    },
+    {
+      "id": "D",
+      "text": "$5{,}000$"
+    }
+  ],
+  "correctAnswer": "B",
+  "hint": "Combine the four masses in the unit the table uses, then convert the single total once.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** The masses total $5{,}000$ grams, and $\\frac{5{,}000}{1{,}000}=5$ kilograms — choice B.\n\n**The Full Solution:**\nStep 1: Add the four masses in grams: $1{,}250+860+2{,}340+550=5{,}000$ grams.\nStep 2: Convert once, at the end: $5{,}000\\text{ grams}\\times\\frac{1\\text{ kilogram}}{1{,}000\\text{ grams}}$.\nStep 3: The grams cancel, leaving $\\frac{5{,}000}{1{,}000}=5$ kilograms. Check: $5$ kilograms is $5(1{,}000)=5{,}000$ grams, the total from step 1. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.5$): divides the total by $10{,}000$ rather than $1{,}000$.\n* Choice C ($50$): divides by $100$, as if a kilogram were $100$ grams.\n* Choice D ($5{,}000$): reports the correct total but leaves it in grams, never performing the conversion the question asks for.\n\n**Test Day Takeaway:** Convert once, after the arithmetic, not sample by sample — fewer conversions means fewer places to slip a factor of ten."
+}

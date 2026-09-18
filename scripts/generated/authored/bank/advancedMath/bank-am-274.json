@@ -1,0 +1,6 @@
+{
+  "question": "A credit union pays interest compounded annually at an annual rate of $r$ percent, so a $\\$3{,}200$ deposit is worth $3200\\left(1+\\frac{r}{100}\\right)^{2}$ dollars two years later. That deposit is worth $\\$3{,}528$ after two years. What is the value of $r$?",
+  "correctAnswer": "5",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~25s):** $3528/3200=1.1025$, and $\\sqrt{1.1025}=1.05$, so $r=5$.\n\n**The Full Solution:**\nStep 1: Divide both sides by $3200$: $\\left(1+\\dfrac{r}{100}\\right)^{2}=\\dfrac{3528}{3200}=1.1025$.\nStep 2: Take the positive square root: $1+\\dfrac{r}{100}=1.05$.\nStep 3: So $\\dfrac{r}{100}=0.05$ and $r=5$. Check: $3200(1.05)^{2}=3200(1.1025)=3{,}528$ ✓\n\n**Common Mistakes:**\n* $10.25$: used the two-year growth of $10.25\\%$ as the annual rate, skipping the square root.\n* $1.05$: reported the annual growth factor instead of the percent rate.\n* $328$: reported the total interest earned rather than the rate.\n\n**Test Day Takeaway:** Two years of compounding is the annual factor squared — undo it with a square root, not by halving.",
+  "id": "bank-am-274"
+}

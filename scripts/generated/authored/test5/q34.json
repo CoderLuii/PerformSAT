@@ -1,34 +1,34 @@
 {
-  "id": 534,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "A great deal of Baroque music was never fully written out. In place of a complete keyboard part, composers often supplied only a bass line marked with small numbers—a figured bass—indicating which chords to build above each note. The player was expected to realize this shorthand in performance, choosing how to space the chords, when to add ornaments, and how full or sparse the texture should be from moment to moment. Two skilled performers working from the same figured bass could therefore produce noticeably different accompaniments, both of them correct. For modern players trained to reproduce a score exactly, this is an unfamiliar freedom; for Baroque musicians, improvising within the rules of the figured bass was simply part of what it meant to know the music.",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It argues that modern performers play Baroque music far more accurately than the composers' own contemporaries ever managed to."
-    },
-    {
-      "id": "B",
-      "text": "It explains a Baroque notational shorthand and then draws out the improvisatory freedom that performing from it required."
-    },
-    {
-      "id": "C",
-      "text": "It traces the gradual replacement of the figured bass by fully written-out keyboard parts over the course of the eighteenth century."
-    },
-    {
-      "id": "D",
-      "text": "It describes the mathematical system by which the numbers in a figured bass were calculated from the notes of the bass line."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage first explains what a figured bass is—a bass line with numbers telling the player which chords to build—and then develops the freedom that realizing it demanded, noting that two players could produce different yet equally correct accompaniments. Its structure is explanation followed by the point about performer freedom. Choice A makes an accuracy claim the passage does not support. Choice C describes a historical replacement the passage does not narrate. Choice D invents a mathematical system that the passage does not describe.",
-  "_meta": {
-    "anchor": "Figured bass in Baroque music; notation and improvisatory realization"
+ "id": 534,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "Adults in many communities address infants in a distinctive register: pitch rises, vowels stretch, sentences shorten, and the voice swings through wider melodic curves than adult conversation employs. Infants are demonstrably responsive to this style, attending longer to infant-directed speech than to speech between adults, and its exaggerated vowels present unusually clear examples of the sound categories a language distinguishes. Some researchers therefore propose that a manner of speaking adults fall into without any instruction functions as a natural teaching tool, tuned to the listeners most in need of language lessons.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It presents a disagreement between researchers about why adults alter their speech around infants and endorses one side."
+  },
+  {
+   "id": "B",
+   "text": "It describes the features of a speech style, notes infants' responsiveness to it, and then presents a proposed function that the style may serve."
+  },
+  {
+   "id": "C",
+   "text": "It recommends that caregivers adopt a particular way of speaking and lists the benefits that are likely to follow."
+  },
+  {
+   "id": "D",
+   "text": "It traces how the way adults speak to infants has changed across generations and questions whether those changes have actually helped infants learn their native language."
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The text moves through exactly three stages: the register's features, the evidence of infants' engagement with it, and the researchers' proposal that it works as a natural teaching tool.\n\n**The Full Solution:**\n- Sentence one inventories features: raised pitch, stretched vowels, shortened sentences, wide melodic curves.\n- Sentence two turns to the listeners: infants attend longer to this style, and its clear vowels showcase the language's sound categories.\n- Sentence three, flagged by \"therefore propose,\" advances the function: an untaught speaking style may serve as instruction tuned to infants. That describe-note-propose sequence is choice B.\n\n**Why the other choices are wrong:**\n- A: No disagreement appears; the researchers named all advance the same proposal.\n- C: The text analyzes a style adults already \"fall into without any instruction\"; it recommends nothing to caregivers.\n- D: Nothing in the text concerns change over time.",
+ "_meta": {
+  "anchor": "infant-directed speech — features, infant attention, and the natural-teaching proposal"
+ }
 }

@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "A line is tangent to a circle at point $T$, and $O$ is the center of the circle. Which of the following must be true about the tangent line and $\\overline{OT}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The tangent line is parallel to $\\overline{OT}$."
+  },
+  {
+   "id": "B",
+   "text": "The tangent line is perpendicular to $\\overline{OT}$."
+  },
+  {
+   "id": "C",
+   "text": "The tangent line contains $\\overline{OT}$."
+  },
+  {
+   "id": "D",
+   "text": "The tangent line bisects $\\overline{OT}$."
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "A tangent touches at exactly one point, so think about the shortest path from the center to that line.",
+ "distractorNotes": {
+  "A": "parallel lines would never touch the radius",
+  "C": "a line through the center is a secant",
+  "D": "bisecting would send the line through the interior"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** The radius drawn to the point of tangency is the shortest segment from the center to the line, and the shortest such segment is always perpendicular to the line.\n\n**The Full Solution:**\nStep 1: A tangent line meets the circle only at $T$, so every other point of the line lies outside the circle.\nStep 2: That makes $OT$ the shortest distance from $O$ to the line, since any other point of the line is farther than one radius from $O$.\nStep 3: The shortest segment from a point to a line is perpendicular to it, so the tangent line is perpendicular to $\\overline{OT}$. Check: every point $P$ on the tangent line other than $T$ lies outside the circle, so $OP > OT$, which is exactly what makes $T$ the foot of the perpendicular.\n\n**Why the wrong answers are tempting:**\n* Choice A: a line parallel to $\\overline{OT}$ could never meet it, yet the tangent line passes through $T$, an endpoint of that radius.\n* Choice C: a line through the center cuts the circle at two points, making it a secant rather than a tangent.\n* Choice D: bisecting $\\overline{OT}$ would force the line through the interior of the circle, producing two intersection points.\n\n**Test Day Takeaway:** Radius drawn to the point of tangency, right angle guaranteed. That right angle is what turns most tangent problems into right-triangle problems."
+}

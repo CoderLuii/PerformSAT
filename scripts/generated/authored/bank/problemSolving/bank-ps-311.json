@@ -1,0 +1,44 @@
+{
+  "id": "bank-ps-311",
+  "question": "The box plot summarizes the diameters, in millimeters, of the $60$ ball bearings in a production sample. Approximately how many of the $60$ bearings have a diameter greater than $12.4$ millimeters?",
+  "diagram": {
+    "type": "boxPlot",
+    "params": {
+      "min": 11.2,
+      "q1": 11.8,
+      "median": 12.1,
+      "q3": 12.4,
+      "max": 13.0,
+      "xLabel": "Diameter (mm)",
+      "xMin": 11.0,
+      "xMax": 13.2,
+      "xGridStep": 0.2,
+      "xLabelStep": 0.4
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$30$"
+    },
+    {
+      "id": "C",
+      "text": "$45$"
+    },
+    {
+      "id": "D",
+      "text": "$60$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses the half of the data above the median instead of the quarter above the third quartile, $0.50(60)$.",
+    "C": "gives the $75\\%$ of bearings at or below $12.4$ millimeters, the complement of what was asked, $0.75(60)$.",
+    "D": "counts the whole sample, the span from the minimum to the maximum."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Box Plot Interpretation**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** $12.4$ is the third quartile, and about $25\\%$ of the data lies above $Q_3$, so $0.25(60) = 15$ bearings.\n\n**The Full Solution:**\nStep 1: The right edge of the box is at $12.4$ millimeters, so $12.4$ is the third quartile.\nStep 2: By definition, about three quarters of the values are at most $Q_3$ and about one quarter exceed it.\nStep 3: One quarter of $60$ is $0.25(60) = 15$ bearings. Check: $15$ above $Q_3$ plus $45$ at or below it accounts for all $60$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($30$): uses the half of the data above the median instead of the quarter above the third quartile, $0.50(60)$.\n* Choice C ($45$): gives the $75\\%$ of bearings at or below $12.4$ millimeters, the complement of what was asked, $0.75(60)$.\n* Choice D ($60$): counts the whole sample, the span from the minimum to the maximum.\n\n**Test Day Takeaway:** Each of the four sections of a box plot holds about $25\\%$ of the data. Match the boundary in the question to a quartile, then multiply the total by the right fraction."
+}

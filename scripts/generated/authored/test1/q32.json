@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
  "module": 2,
- "passage": "Microbiologists once assumed that the microbes living in the deepest ocean trenches were simply ordinary seafloor bacteria that had drifted downward and managed to survive. Studying organisms recovered from depths where the pressure exceeds a thousand times that at the surface, microbiologist Douglas Bartlett and his colleagues expected to find familiar species pushed to the edge of tolerance. Instead, they found bacteria whose membranes, enzymes, and even genetic machinery were specifically structured for high pressure—features that would function poorly nearer the surface. Bartlett concluded that these organisms are not stray survivors but a distinct community adapted to conditions that would disable most surface life.",
+ "passage": "A scratch in a car's paint or a crack in a phone case ordinarily marks permanent damage, because the polymer chains in conventional plastics, once severed, cannot rejoin. Materials chemists have engineered an alternative: polymers threaded with reversible bonds — hydrogen bonds or metal-ligand links — that break preferentially under stress and then re-form when the damaged surfaces are pressed together, restoring much of the material's original strength. Yet these self-healing plastics remain rare in commercial products, largely because the reversible bonds that permit repair also soften the material, and manufacturers have been unwilling to trade durability in daily use for recovery after damage.",
  "question": "Which choice best describes the overall structure of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "It lays out two competing theories about deep-sea microbes and explains why neither has yet been confirmed."
+   "text": "It presents a longstanding debate among materials chemists, summarizes the experimental evidence on each side, and then indicates which position has come to prevail."
   },
   {
    "id": "B",
-   "text": "It describes a researcher's method in detail and then questions whether that method can be applied at extreme depths."
+   "text": "It describes a widely used class of materials, traces the manufacturing process by which those materials are produced, and then predicts how that process is likely to change."
   },
   {
    "id": "C",
-   "text": "It states a prior assumption, describes a study undertaken expecting to confirm it, and reports a finding that overturned it."
+   "text": "It identifies a limitation of conventional plastics, describes an engineered mechanism that overcomes that limitation, and then explains why the resulting materials have nonetheless seen little commercial adoption."
   },
   {
    "id": "D",
-   "text": "It explains how deep-sea microbes drift down from the surface and gradually adapt to the increasing pressure."
+   "text": "It introduces a newly developed class of polymers, catalogs the range of commercial products in which those polymers currently appear, and then acknowledges lingering doubts about whether the products perform as their manufacturers advertise."
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C. The passage begins with the old assumption that deep-trench microbes were drifters from above, notes that Bartlett's team set out expecting to confirm it, and then reports the finding that overturned it: the bacteria are built for high pressure and would do poorly near the surface. A turns the single overturned assumption into two unresolved theories; B treats the work as a methods critique, though no method is questioned; and D restates the very drift-and-adapt picture that the team's results contradict."
+ "explanation": "**Choice C is correct.** The text moves from a limitation of conventional plastics, to the engineered solution, to the trade-off that has kept the solution out of products — and C tracks all three movements in order.\n\n**The Full Solution:**\n- First move: conventional plastics' severed polymer chains \"cannot rejoin,\" so damage is permanent.\n- Second move: the engineered solution — polymers with reversible bonds that break under stress and re-form on contact.\n- Third move: the pivot \"Yet\" introduces why adoption is limited: the same bonds that permit repair soften the material, a trade-off manufacturers have refused.\n\n**Why the other choices are wrong:**\n- A: The text stages no debate between camps and weighs no competing evidence.\n- B: Self-healing polymers are described as \"rare in commercial products,\" not widely used, and no manufacturing process is traced.\n- D: The text catalogs no products containing the polymers — their absence from products is the point of the final sentence."
 }

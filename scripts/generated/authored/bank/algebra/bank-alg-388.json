@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-388",
+ "question": "A ropes course is mapped on the $xy$-plane. A zipline runs from an anchor post at $(2a, 9)$ to a landing platform at $(4, b)$, and its midpoint tower stands at $(7, 1)$. What is the value of $a + b$?",
+ "correctAnswer": "-2",
+ "explanation": "**SAT Pattern: Midpoint Formula**\n\n**The correct answer is $-2$.**\n\n**The Fast Way (~35s):** $\\frac{2a + 4}{2} = 7$ gives $a = 5$, and $\\frac{9 + b}{2} = 1$ gives $b = -7$, so $a + b = -2$.\n\n**The Full Solution:**\n\nStep 1: The midpoint of the zipline is $\\left(\\frac{2a + 4}{2}, \\frac{9 + b}{2}\\right)$, and this equals $(7, 1)$.\n\nStep 2: From the $x$-coordinates, $2a + 4 = 14$, so $2a = 10$ and $a = 5$.\n\nStep 3: From the $y$-coordinates, $9 + b = 2$, so $b = -7$. Then $a + b = 5 + (-7) = -2$. Check: the midpoint of $(10, 9)$ and $(4, -7)$ is $(7, 1)$.\n\n**Common Mistakes:**\n\n* $5$ — finding $a = 5$ correctly and reporting it instead of the requested sum.\n* $-7$ — finding $b = -7$ correctly and reporting it instead of the requested sum.\n* $12$ — dropping the negative sign on $b$ and computing $5 + 7$.\n\n**Test Day Takeaway:** Two unknown coordinates means two independent midpoint equations; solve each axis separately, then combine only at the end."
+}

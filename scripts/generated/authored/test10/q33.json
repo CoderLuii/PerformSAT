@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
  "module": 2,
- "passage": "In the early 1970s, working at an Exxon laboratory during an oil crisis, the chemist Stanley Whittingham built a rechargeable battery around an unusual idea: rather than consuming its electrode materials in a chemical reaction, the battery would let lithium ions slip in and out of a layered electrode without destroying its structure—a process called intercalation. The cell he demonstrated could be recharged many times, but it relied on metallic lithium that was prone to catching fire, and falling oil prices soon ended Exxon's interest. Whittingham's intercalation principle, however, survived: later chemists kept the idea while replacing the dangerous components, and it became the foundation of the lithium-ion batteries in use today.",
+ "passage": "A bare boulder face looks like the last place anything could live: no soil, no shade, no standing water. In *Gathering Moss*, the ethnobotanist Robin Wall Kimmerer examines how mosses make such surfaces habitable, and not merely for themselves. A moss cushion traps windblown dust that becomes a first soil, holds rainwater like a sponge, and shelters within its leaves rotifers, mites, and insect larvae that could not endure the exposed rock an inch away. What appears to be a simple green film, Kimmerer argues, is better understood as a functioning ecological community at a miniature scale.",
  "question": "Which choice best states the main purpose of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "To describe how Whittingham's intercalation principle, though abandoned commercially in his own cell, became the foundation of modern lithium-ion batteries."
+   "text": "To present a case that moss growths, far from being mere surface coverings, operate as small-scale ecosystems that make bare rock habitable for other organisms."
   },
   {
    "id": "B",
-   "text": "To explain why the steep fall in oil prices during the 1970s ultimately led Exxon to abandon its support for rechargeable-battery research."
+   "text": "To describe the physical conditions that prevent most plants from colonizing exposed boulder faces."
   },
   {
    "id": "C",
-   "text": "To argue that Whittingham's original battery was safer than the lithium-ion batteries that later replaced it."
+   "text": "To trace how Kimmerer's early fieldwork on mosses led her to question established methods in ecology."
   },
   {
    "id": "D",
-   "text": "To trace the chemistry by which lithium ions move in and out of a layered electrode during intercalation."
+   "text": "To catalog the animal species that depend on moss cushions at some stage of their life cycles."
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The passage explains Whittingham's intercalation idea, notes that his particular cell was dropped for safety and commercial reasons, and then stresses that the principle survived and became the basis of today's lithium-ion batteries. That trajectory—idea, commercial dead end, enduring foundation—is the main purpose, which Choice A states. Choice B treats the oil-price detail as the focus. Choice C reverses the passage, which calls his cell's metallic lithium prone to fire. Choice D isolates the chemistry of intercalation, a supporting detail rather than the overall point."
+ "explanation": "**Choice A is correct.** The text moves from the apparent lifelessness of bare rock to the argument, attributed to Kimmerer, that a moss cushion is \"a functioning ecological community at a miniature scale,\" with the middle sentences supplying the supporting mechanisms.\n\n**The Full Solution:**\n- The opening establishes the puzzle: rock offers no soil, shade, or water.\n- The middle shows moss solving each lack, trapping dust that becomes soil, holding rainwater, sheltering small animals, which is habitability created for others.\n- The final sentence states the thesis the whole text serves: not a simple film but a small ecosystem. That is A's claim exactly.\n\n**Why the other choices are wrong:**\n- B: The harsh conditions occupy only the first sentence and exist to set up the moss's achievement, not as the text's subject.\n- C: The text presents Kimmerer's argument, not her biography; no development of her methods or doubts appears.\n- D: Rotifers, mites, and larvae are cited as evidence of the cushion's role, not cataloged for their own sake."
 }

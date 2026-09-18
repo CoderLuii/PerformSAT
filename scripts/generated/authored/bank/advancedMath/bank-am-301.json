@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-301",
+  "question": "The polynomial function $p$ is defined by $p(x) = 2x^3 - 7x^2 + cx - 9$, where $c$ is a constant. If $x - 3$ is a factor of $p(x)$, what is the value of $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$18$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats the constant term as +9",
+    "B": "drops the constant term",
+    "D": "forgets the factor of 3 on cx"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Polynomial Remainder Theorem**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** If $x - 3$ is a factor, then $p(3) = 0$. Substituting gives $54 - 63 + 3c - 9 = 0$, so $3c = 18$ and $c = 6$.\n\n**The Full Solution:**\nStep 1: The factor theorem says $x - 3$ is a factor of $p(x)$ exactly when $p(3) = 0$.\nStep 2: $p(3) = 2(27) - 7(9) + c(3) - 9 = 54 - 63 + 3c - 9 = 3c - 18$.\nStep 3: Setting $3c - 18 = 0$ gives $c = 6$. Check: with $c = 6$, $p(3) = 54 - 63 + 18 - 9 = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$): treats the constant term as $+9$, solving $54 - 63 + 3c + 9 = 0$.\n* Choice B ($3$): drops the constant term $-9$ entirely, solving $54 - 63 + 3c = 0$.\n* Choice D ($18$): substitutes $x = 3$ into every term except $cx$, solving $54 - 63 + c - 9 = 0$.\n\n**Test Day Takeaway:** A factor $x - r$ means the polynomial is zero at $x = r$ — substitute $r$, keep every term, and solve the resulting linear equation."
+}

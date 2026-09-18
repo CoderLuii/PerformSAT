@@ -1,31 +1,31 @@
 {
-  "id": 824,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "For most of the nineteenth century, the architects who designed concert halls accepted the inherited craft of their profession, including its assumption that a room's sound could be judged only by ear once the hall was built. ______ the physicist Wallace Sabine objected to leaving acoustics to chance, and he worked out a measurable quantity, now called reverberation time, to replace the rules of thumb that builders had long found least reliable.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "B",
-      "text": "Therefore,"
-    },
-    {
-      "id": "C",
-      "text": "Likewise,"
-    },
-    {
-      "id": "D",
-      "text": "For instance,"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The first sentence says that hall designers accepted the inherited craft, including the practice of judging a room's sound only after construction; the second says that Sabine nonetheless objected to leaving the result to chance and devised a measurable quantity instead, a contrast that calls for \"Nevertheless.\" \"Therefore\" would signal that his objection follows logically from that acceptance, which it does not; \"Likewise\" would mark agreement rather than the tension the passage sets up; and \"For instance\" would introduce an example of the inherited craft, but reverberation time is a break from it, not an illustration."
+ "id": 824,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "William Smith was a canal surveyor with no university training, and the gentlemen who founded London's first geological society at first refused him membership. A rival publisher undersold his great map with a plagiarized copy, and in 1819 Smith was imprisoned for debt. ______ his method of identifying strata by their fossils became standard geological practice, and in 1831 the society that had once excluded him awarded him its first medal for achievement in the science.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Even so,"
+  },
+  {
+   "id": "B",
+   "text": "Accordingly,"
+  },
+  {
+   "id": "C",
+   "text": "Likewise,"
+  },
+  {
+   "id": "D",
+   "text": "Previously,"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The passage pivots from Smith's years of rejection and misfortune to the eventual triumph of his method, a reversal that the concessive \"Even so,\" marks precisely.\n\n**The Full Solution:**\n- The first sentences pile up setbacks: the gentlemen of science dismissed the surveyor, his map was undersold by a plagiarism, and he was imprisoned for debt.\n- The final sentence runs the other way: his fossil-based method became standard practice and the same society later honored him.\n- A contrast transition is needed to turn from misfortune to vindication: \"Even so.\"\n\n**Why the other choices are wrong:**\n- B: \"Accordingly,\" would present the honors as the logical outcome of the rejection, inverting the passage's logic.\n- C: \"Likewise,\" promises another item in the same direction, but the final sentence reverses direction.\n- D: \"Previously,\" is a time cue pointing backward, and the vindication came after the setbacks, not before."
 }

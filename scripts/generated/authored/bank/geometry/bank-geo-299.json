@@ -1,0 +1,29 @@
+{
+ "question": "A streetlight at $(6, 8)$ in the $xy$-plane lights every point within $10$ units of its base. Which point lies exactly on the edge of the lit region?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(0, 0)$"
+  },
+  {
+   "id": "B",
+   "text": "$(0, 8)$"
+  },
+  {
+   "id": "C",
+   "text": "$(6, 0)$"
+  },
+  {
+   "id": "D",
+   "text": "$(10, 8)$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "moves only horizontally to the y-axis, landing 6 units from the base",
+  "C": "moves only vertically to the x-axis, landing 8 units from the base",
+  "D": "reads the radius 10 as an x-coordinate, landing 4 units from the base"
+ },
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The edge is $10$ units from $(6, 8)$, and $(0, 0)$ is $\\sqrt{36 + 64} = 10$ units away.\n\n**The Full Solution:**\nStep 1: The lit region is the disk of radius $10$ centered at $(6, 8)$, so its edge is the set of points exactly $10$ units from the base.\nStep 2: Test $(0, 0)$: the differences are $6$ and $8$, so the distance is $\\sqrt{36 + 64} = \\sqrt{100} = 10$ ✓\nStep 3: The others fall short: $(0, 8)$ is $6$ units away, $(6, 0)$ is $8$ units away, and $(10, 8)$ is $4$ units away, so all three lie inside the lit region.\n\n**Why the wrong answers are tempting:**\n* Choice B ($(0, 8)$): shares the streetlight's $y$-coordinate, so only the $6$-unit horizontal gap counts.\n* Choice C ($(6, 0)$): shares the $x$-coordinate, so only the $8$-unit vertical gap counts.\n* Choice D ($(10, 8)$): borrows the radius $10$ as a coordinate, which lands just $4$ units from the base.\n\n**Test Day Takeaway:** \"On the edge\" is a distance test — compute the distance to each candidate and compare it with the radius.",
+ "id": "bank-geo-299"
+}

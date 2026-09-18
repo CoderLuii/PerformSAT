@@ -1,0 +1,36 @@
+{
+  "id": 9020,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "Diatoms are single-celled algae that drift in sunlit surface water and make their food by photosynthesis.",
+      "Radiolarians are single-celled plankton that drift deeper in the water column and feed on other organisms.",
+      "A diatom builds a two-part shell of opaline silica, the material that also forms opal.",
+      "A radiolarian builds an intricate internal skeleton, also of opaline silica.",
+      "When these organisms die, their silica parts sink and can pile up on the seafloor as a deposit called siliceous ooze.",
+      "Cores drilled into that ooze let researchers study plankton communities from millions of years ago."
+    ],
+    "goal": "The student wants to emphasize a similarity between diatoms and radiolarians."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Diatoms and radiolarians both build their hard parts from opaline silica, which settles on the seafloor as siliceous ooze."
+    },
+    {
+      "id": "B",
+      "text": "Diatoms are algae that photosynthesize in sunlit water, unlike radiolarians, which drift deeper and feed on other organisms."
+    },
+    {
+      "id": "C",
+      "text": "A radiolarian builds an intricate skeleton that sits inside the cell rather than enclosing it in two parts."
+    },
+    {
+      "id": "D",
+      "text": "Cores drilled into siliceous ooze let researchers study the plankton communities that lived millions of years ago."
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** The goal is a similarity, and this sentence names both organisms and the property the notes assign to each of them: hard parts made of opaline silica, which end up on the seafloor as siliceous ooze.\n\n**The Full Solution:**\n- Scan the notes for a property stated twice. The third and fourth notes both give opaline silica as the building material, once for the diatom's shell and once for the radiolarian's skeleton.\n- Write the sentence with both subjects in it. \"Diatoms and radiolarians both build their hard parts from opaline silica\" does that directly.\n- Discard the details that split the two organisms apart, such as where they drift and how they feed. Those support a contrast, not a similarity.\n\n**Why the other choices are wrong:**\n- B: The word \"unlike\" makes this a contrast between how the two organisms live rather than a statement of what they share.\n- C: This describes the radiolarian's skeleton alone and even stresses how it differs from the diatom's two-part shell.\n- D: This is about what researchers can learn from the ooze; neither organism is compared with the other."
+}

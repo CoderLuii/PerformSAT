@@ -4,7 +4,7 @@
  *
  * Extracts the LIVE system prompts from src/services/aiTutorService.js, runs
  * realistic student scenarios through the exact production model settings
- * (claude-sonnet-4-6, thinking disabled, effort medium, max_tokens 3000), and
+ * (claude-sonnet-5, thinking disabled, effort medium, max_tokens 4000), and
  * lints every reply for the AI-tells the VOICE section bans: formulaic
  * openers, closing ceremony, missing contractions, exclamation spam,
  * bullet-pointed conversation, self-reference as an AI.
@@ -216,8 +216,8 @@ const callClaude = async (system, messages) => {
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 3000,
+        model: 'claude-sonnet-5',
+        max_tokens: 4000,
         thinking: { type: 'disabled' },
         output_config: { effort: 'medium' },
         system,

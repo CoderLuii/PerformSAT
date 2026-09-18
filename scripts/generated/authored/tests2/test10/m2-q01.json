@@ -1,0 +1,87 @@
+{
+ "id": 1,
+ "question": "Two triangular braces for a rooftop solar collector are shown, where brace $ABC$ is similar to brace $DEF$. Aluminum edging runs all the way around brace $DEF$. How many centimeters of edging does brace $DEF$ require?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      15,
+      0
+     ],
+     [
+      0,
+      8
+     ]
+    ],
+    "labels": [
+     "A",
+     "B",
+     "C"
+    ],
+    "sideLabels": [
+     "15 cm",
+     "17 cm",
+     "8 cm"
+    ]
+   },
+   "triangle2": {
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      45,
+      0
+     ],
+     [
+      0,
+      24
+     ]
+    ],
+    "labels": [
+     "D",
+     "E",
+     "F"
+    ],
+    "sideLabels": [
+     "45 cm",
+     "",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$70$"
+  },
+  {
+   "id": "B",
+   "text": "$86$"
+  },
+  {
+   "id": "C",
+   "text": "$120$"
+  },
+  {
+   "id": "D",
+   "text": "$225$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps EF and FD at the small brace's 17 cm and 8 cm and scales only AB, giving 45 + 17 + 8 = 70",
+  "B": "scales the two legs by 3 but leaves the hypotenuse at 17, giving 45 + 24 + 17 = 86",
+  "D": "matches the 45 cm side to the 8 cm side, so the scale factor becomes 45/8 = 5.625 and the perimeter becomes 40 x 5.625 = 225"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $\\overline{DE}$ corresponds to $\\overline{AB}$, so the scale factor is $45 \\div 15 = 3$. Perimeters scale by the same factor, so the answer is $3(8 + 15 + 17) = 120$.\n\n**The Full Solution:**\nStep 1: Brace $ABC$ is similar to brace $DEF$, so $A$, $B$, $C$ correspond to $D$, $E$, $F$ in that order. That makes $\\overline{AB}$ correspond to $\\overline{DE}$. The figure gives $AB = 15$ centimeters and $DE = 45$ centimeters, so the scale factor from $ABC$ to $DEF$ is $\\frac{45}{15} = 3$.\nStep 2: In similar figures every length is multiplied by the same factor, so the perimeter is multiplied by that factor too. The perimeter of brace $ABC$ is $8 + 15 + 17 = 40$ centimeters.\nStep 3: The perimeter of brace $DEF$ is $3(40) = 120$ centimeters. Check: scaling the sides one at a time gives $3(8) = 24$, $3(15) = 45$, and $3(17) = 51$, and $24 + 45 + 51 = 120$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($70$): replaces only $\\overline{AB}$ with $45$ and leaves the other two sides at $17$ and $8$, giving $45 + 17 + 8 = 70$. Every side of the larger brace grows, not just one.\n* Choice B ($86$): scales the two legs to $24$ and $45$ but forgets to scale the hypotenuse, giving $45 + 24 + 17 = 86$.\n* Choice D ($225$): pairs the $45$ centimeter side with the $8$ centimeter side, producing a scale factor of $\\frac{45}{8} = 5.625$ and a perimeter of $40 \\times 5.625 = 225$. Correspondence follows the letter order, not the picture.\n\n**Test Day Takeaway:** Once you have the scale factor between similar figures, apply it to the whole perimeter at once instead of rebuilding side by side — and read correspondence off the letter order in the similarity statement."
+}

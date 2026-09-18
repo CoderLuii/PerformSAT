@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-013",
+ "question": "A machinist has brass rods cut to the lengths listed in each choice, in centimeters. Which set of three lengths can be joined end to end to form a triangle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$, $6$, and $11$"
+  },
+  {
+   "id": "B",
+   "text": "$5$, $9$, and $14$"
+  },
+  {
+   "id": "C",
+   "text": "$6$, $8$, and $15$"
+  },
+  {
+   "id": "D",
+   "text": "$7$, $10$, and $16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "4 + 6 = 10, which is less than 11, so the two shorter rods cannot reach",
+  "B": "5 + 9 = 14 exactly, so the three rods lie flat instead of enclosing a region",
+  "C": "6 + 8 = 14, which is less than 15, so the frame cannot close"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Triangle Inequality**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Only in choice D do the two shorter rods beat the longest: $7 + 10 = 17 > 16$.\n\n**The Full Solution:**\nStep 1: Three lengths form a triangle exactly when the sum of the two shorter lengths is greater than the longest length.\nStep 2: Test each set: $4 + 6 = 10 < 11$; $5 + 9 = 14 = 14$; $6 + 8 = 14 < 15$; $7 + 10 = 17 > 16$.\nStep 3: Only the last set satisfies the strict inequality, so $7$, $10$, and $16$ centimeters can close into a triangle.\n\nCheck: The other two inequalities also hold for choice D, since $7 + 16 = 23 > 10$ and $10 + 16 = 26 > 7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$, $6$, $11$): $4 + 6 = 10$ falls short of $11$, so the two shorter rods never meet.\n* Choice B ($5$, $9$, $14$): $5 + 9 = 14$ exactly, so the rods lie flat along the longest one and enclose no area.\n* Choice C ($6$, $8$, $15$): $6 + 8 = 14$ is less than $15$, leaving a one-centimeter gap.\n\n**Test Day Takeaway:** Add the two smallest lengths and compare with the largest; equality is a straight line, not a triangle."
+}

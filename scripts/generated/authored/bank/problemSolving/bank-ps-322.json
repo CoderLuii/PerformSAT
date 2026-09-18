@@ -1,0 +1,86 @@
+{
+ "id": "bank-ps-322",
+ "question": "Nine sampling sites below a reservoir outlet were scored for mayfly nymphs per sample, and the line drawn through the plotted points models nymph count against distance downstream, in kilometers. Which statement best describes what that line's slope represents?",
+ "diagram": {
+  "type": "scatterplot",
+  "params": {
+   "points": [
+    [
+     1,
+     12
+    ],
+    [
+     2,
+     13
+    ],
+    [
+     3,
+     20
+    ],
+    [
+     5,
+     24
+    ],
+    [
+     6,
+     32
+    ],
+    [
+     7,
+     36
+    ],
+    [
+     8,
+     36
+    ],
+    [
+     10,
+     44
+    ],
+    [
+     11,
+     52
+    ]
+   ],
+   "xMin": 0,
+   "xMax": 12,
+   "yMin": 0,
+   "yMax": 60,
+   "xGridStep": 1,
+   "yGridStep": 5,
+   "xLabelStep": 2,
+   "yLabelStep": 10,
+   "xLabel": "Distance downstream (km)",
+   "yLabel": "Mayfly nymphs per sample",
+   "bestFitLine": {
+    "slope": 4,
+    "intercept": 6
+   }
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The number of nymphs per sample the model predicts at the outlet."
+  },
+  {
+   "id": "B",
+   "text": "The total number of nymphs counted across the nine sampling sites."
+  },
+  {
+   "id": "C",
+   "text": "The distance downstream, in kilometers, at which the model predicts no nymphs."
+  },
+  {
+   "id": "D",
+   "text": "The increase in predicted nymphs per sample for each additional kilometer downstream."
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "describes the line's value at zero kilometers, the constant term, not its slope",
+  "B": "describes a total count from the data; the slope describes a rate of change in the model",
+  "C": "reads the slope as a distance rather than as a change in nymphs per kilometer"
+ },
+ "explanation": "**SAT Pattern: Interpret Slope of Best Fit**\n\n**Choice D is correct.** The slope of a modeling line is the change in the vertical quantity for a one-unit increase in the horizontal quantity, here nymphs per sample per kilometer downstream.\n\n**The Fast Way (~30s):** Slope equals rise over run, so it reports how many more nymphs per sample the model predicts for each extra kilometer.\n\n**The Full Solution:**\n\nStep 1: Name the axes. The horizontal axis is distance downstream in kilometers and the vertical axis is nymphs per sample.\n\nStep 2: Recall what a slope measures. It is the change in the vertical variable divided by the change in the horizontal variable, so its units here are nymphs per sample per kilometer.\n\nStep 3: Match that to the choices. Only Choice D reports a change in nymphs per sample for each additional kilometer. Check: the line rises from about $6$ nymphs at the outlet to about $54$ nymphs at $12$ kilometers, a gain of about $4$ nymphs per sample per kilometer.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: describes the line's height at zero kilometers, which is the constant term, not the slope.\n* Choice B: reports a total from the data set. A slope describes a rate, not a sum.\n* Choice C: gives a distance in kilometers, which cannot be a slope whose units are nymphs per kilometer.\n\n**Test Day Takeaway:** Say the slope's units out loud -- \"vertical unit per horizontal unit\" eliminates every choice phrased in the wrong quantity."
+}

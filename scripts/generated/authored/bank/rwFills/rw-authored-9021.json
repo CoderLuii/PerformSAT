@@ -1,0 +1,36 @@
+{
+  "id": 9021,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "Io and Europa are two of Jupiter's four largest moons.",
+      "Their orbits are locked in a resonance, so the moons pass one another at regular intervals and pull on each other as they do.",
+      "Those pulls keep each orbit slightly stretched, and along a stretched orbit Jupiter's gravity squeezes and releases the moon.",
+      "The repeated flexing turns into heat inside the moon, a process called tidal heating.",
+      "Io is the most volcanically active body in the solar system, with hundreds of erupting vents.",
+      "Europa's outer shell of ice is thought to lie above a global ocean of liquid water."
+    ],
+    "goal": "The student wants to emphasize a similarity between Io and Europa."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Io is the most volcanically active body in the solar system, with hundreds of erupting vents on its surface."
+    },
+    {
+      "id": "B",
+      "text": "Io and Europa are both heated from within by the flexing that Jupiter's gravity produces as they orbit."
+    },
+    {
+      "id": "C",
+      "text": "Europa's outer shell of ice is thought to cover a global ocean of liquid water beneath it."
+    },
+    {
+      "id": "D",
+      "text": "Io's surface is remade by volcanic eruptions, while Europa's is a shell of ice."
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** The goal asks for a similarity, and tidal heating is the one process the notes apply to both moons: each is flexed by Jupiter's gravity along a stretched orbit, and that flexing warms its interior.\n\n**The Full Solution:**\n- Sort the notes into shared and separate. The second, third, and fourth notes describe a mechanism that acts on both moons; the fifth and sixth describe what each moon looks like on its own.\n- Build the sentence from the shared column, with both subjects named: \"Io and Europa are both heated from within.\"\n- Be careful with the striking details. Volcanoes and a buried ocean are the memorable facts here, but each belongs to one moon only.\n\n**Why the other choices are wrong:**\n- A: This is about Io alone, so it says nothing about what the two moons have in common.\n- C: This is about Europa alone and leaves Io out of the comparison.\n- D: This puts the two moons side by side in order to contrast their surfaces, which is the opposite of the goal."
+}

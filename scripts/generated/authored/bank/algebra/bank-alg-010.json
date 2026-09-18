@@ -1,0 +1,29 @@
+{
+ "question": "A model relating weekly sunshine hours $x$ and a crop-stress index $y$ over a growing season is given by $6x - 15y = 45$. Which equation gives $y$ in terms of $x$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -\\frac{2}{5}x - 3$"
+  },
+  {
+   "id": "B",
+   "text": "$y = \\frac{2}{5}x - 3$"
+  },
+  {
+   "id": "C",
+   "text": "$y = \\frac{2}{5}x + 3$"
+  },
+  {
+   "id": "D",
+   "text": "$y = \\frac{5}{2}x - 3$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "divides $-6x$ by $15$ instead of by $-15$, leaving the slope negative",
+  "C": "divides $45$ by $-15$ as if the quotient were $+3$",
+  "D": "inverts the coefficient ratio, using $\\frac{15}{6}$ for the slope"
+ },
+ "explanation": "**SAT Pattern: Standard to Slope-Intercept**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Solving $6x - 15y = 45$ for $y$ divides everything by $-15$, giving $y = \\frac{2}{5}x - 3$.\n\n**The Full Solution:**\n\nStep 1: Move the $x$-term: $-15y = -6x + 45$.\n\nStep 2: Divide every term by $-15$: $y = \\frac{-6}{-15}x + \\frac{45}{-15}$.\n\nStep 3: Simplify: $y = \\frac{2}{5}x - 3$. Check $(5, -1)$: $6(5) - 15(-1) = 45$, and $\\frac{2}{5}(5) - 3 = -1$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($y = -\\frac{2}{5}x - 3$): divides the $x$-term by $15$ but the constant by $-15$, so the slope keeps a stray negative.\n\n* Choice C ($y = \\frac{2}{5}x + 3$): gets the slope right but treats $\\frac{45}{-15}$ as $+3$.\n\n* Choice D ($y = \\frac{5}{2}x - 3$): uses $\\frac{15}{6}$ for the slope, flipping the ratio of the coefficients.\n\n**Test Day Takeaway:** Divide every term by the same signed number; the constant is where a dropped negative usually shows up.",
+ "id": "bank-alg-010"
+}

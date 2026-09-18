@@ -6,8 +6,8 @@
 
 import { db } from '../firebase/config';
 import {
-  doc, collection, addDoc, getDoc, getDocs, updateDoc, setDoc,
-  query, where, orderBy, limit as firestoreLimit, serverTimestamp, Timestamp
+  doc, collection, addDoc, getDoc, getDocs, updateDoc,
+  query, where, orderBy, limit as firestoreLimit, serverTimestamp
 } from 'firebase/firestore';
 
 // Debounce tracking
@@ -348,7 +348,7 @@ export const flushPendingWrites = async (userId, sessionId) => {
   }
 };
 
-export default {
+const chatSessionService = {
   saveSession,
   updateSessionMessages,
   loadActiveSession,
@@ -358,3 +358,5 @@ export default {
   flushPendingWrites,
   clearChatSessionStorage,
 };
+
+export default chatSessionService;

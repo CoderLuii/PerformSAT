@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-229",
+ "question": "An engineer translates the graph of $y=f(x)$ six units right; the translated curve reaches its minimum at $(10,-3)$. Before the translation, at what value of $x$ did the curve reach its minimum?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the y-coordinate of the minimum instead of the x-coordinate",
+  "C": "reports the translated minimum's x-coordinate, ignoring the shift",
+  "D": "adds 6 instead of subtracting, translating right a second time"
+ },
+ "explanation": "**SAT Pattern: Function from Shifted Graph**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** A right shift of 6 moved the minimum to $x=10$, so before the shift it sat at $10-6=4$.\n\n**The Full Solution:**\nStep 1: Translating a graph six units right replaces each point $(p,q)$ with $(p+6,q)$.\nStep 2: The image of the minimum is $(10,-3)$, so its preimage satisfies $p+6=10$.\nStep 3: Therefore $p=4$. Check: shifting $(4,-3)$ six units right does land on $(10,-3)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-3$): gives the minimum's $y$-coordinate, which a horizontal shift never changes.\n* Choice C ($10$): reports the position after the translation rather than before it.\n* Choice D ($16$): shifts right again instead of undoing the shift.\n\n**Test Day Takeaway:** To undo a horizontal translation, move the given point back by the same amount — vertical coordinates are untouched."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-200",
+ "question": "A tour operator enlarges a triangular pennant so that the new pennant is similar to the original and uses $2.25$ times as much cloth. The original pennant's longest edge measures $24$ centimeters. What is the length, in centimeters, of the longest edge of the new pennant?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$16$"
+  },
+  {
+   "id": "B",
+   "text": "$27$"
+  },
+  {
+   "id": "C",
+   "text": "$36$"
+  },
+  {
+   "id": "D",
+   "text": "$54$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by the scale factor 1.5 instead of multiplying: 24 / 1.5 = 16",
+  "B": "halves the area ratio to get 1.125 rather than taking its square root: 24 x 1.125 = 27",
+  "D": "applies the area ratio 2.25 directly to the edge: 24 x 2.25 = 54"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Similar Figures Area Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Cloth is area, so the length ratio is $\\sqrt{2.25}=1.5$, and $24(1.5)=36$ centimeters.\n\n**The Full Solution:**\n\nStep 1 — Identify what $2.25$ measures. Cloth used is an area, so $2.25$ is the ratio of areas, not of lengths.\n\nStep 2 — Convert to a length ratio. For similar figures, area ratio $=$ (length ratio)$^2$, so the length ratio is $\\sqrt{2.25}=1.5$.\n\nStep 3 — Scale the edge: $24(1.5)=36$ centimeters. Check: an edge $1.5$ times as long comes with $1.5^2=2.25$ times the area, exactly the cloth stated.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($16$): this divides by $1.5$ instead of multiplying, shrinking the pennant the question enlarged.\n* Choice B ($27$): halving $2.25$ gives $1.125$, but the length ratio comes from a square root, not from halving.\n* Choice D ($54$): this uses the area ratio $2.25$ as though it scaled lengths, giving $24(2.25)=54$.\n\n**Test Day Takeaway:** Going from an area comparison back to a length takes a square root — the same relationship run in reverse."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "bank-ps-206",
+  "question": "The dot plot summarizes the number of service calls a technician received on each of $20$ days. If one of these days is selected at random, what is the probability that the technician received more than $3$ service calls on that day? Express your answer as a decimal.",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 1,
+          "count": 3
+        },
+        {
+          "value": 2,
+          "count": 5
+        },
+        {
+          "value": 3,
+          "count": 7
+        },
+        {
+          "value": 4,
+          "count": 3
+        },
+        {
+          "value": 5,
+          "count": 2
+        }
+      ],
+      "xMin": 0,
+      "xMax": 6,
+      "xLabel": "Service calls"
+    }
+  },
+  "correctAnswer": "0.25",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**The correct answer is $0.25$.**\n\n**The Fast Way (~20s):** Days with more than $3$ calls are the $4$s and the $5$s: $3 + 2 = 5$ days, so $\\frac{5}{20} = 0.25$.\n\n**The Full Solution:**\nStep 1: \"More than $3$\" means $4$ or $5$ service calls, so count only the dots above $4$ and above $5$.\nStep 2: There are $3$ dots at $4$ and $2$ dots at $5$, for $5$ favorable days.\nStep 3: Divide by the $20$ days: $\\frac{5}{20} = 0.25$. Check: the five columns hold $3 + 5 + 7 + 3 + 2 = 20$ dots. $\\checkmark$\n\n**Common Mistakes:** Including the $7$ days with exactly $3$ calls, which gives $\\frac{12}{20} = 0.6$ and answers \"$3$ or more\"; counting the two dot columns above $3$ instead of the days they represent, giving $\\frac{2}{5} = 0.4$; or dividing by the number of columns rather than by the $20$ days.\n\n**Test Day Takeaway:** On a dot plot, each dot is one observation — the denominator is the number of dots, not the number of columns."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 851,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "Gregor Mendel's experiments with pea plants are often retold as the lucky discovery of a gardening monk who stumbled onto the laws of heredity. ______ Mendel designed his crosses with deliberate care, choosing traits that appeared in clear either-or forms, raising thousands of plants so that his ratios would be statistically meaningful, and counting the offspring with a rigor that was unusual for biology in his day.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "In reality,"
-    },
-    {
-      "id": "B",
-      "text": "Likewise,"
-    },
-    {
-      "id": "C",
-      "text": "For example,"
-    },
-    {
-      "id": "D",
-      "text": "As a result,"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The first sentence reports a popular image of Mendel as a lucky amateur; the second corrects it, describing the careful design behind his work, so the transition must signal that the truth differs from the impression. \"In reality\" does that. \"Likewise\" would mark agreement, but the second sentence contradicts the first; \"For example\" would offer an instance of the lucky-discovery story, which it does not; and \"As a result\" would mark a consequence, though no cause-and-effect link is drawn."
+ "id": 851,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "Even at a walking pace, the canal boat held one advantage the railway companies were slow to erase: on still water, a single horse could move a load that would have crowded a highway. ______ a boat drawn by one horse and worked by a crew of two could carry some thirty tons of coal, a cargo that would have required a dozen wagons and their teams on the turnpike.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Specifically,"
+  },
+  {
+   "id": "B",
+   "text": "Alternatively,"
+  },
+  {
+   "id": "C",
+   "text": "As a result,"
+  },
+  {
+   "id": "D",
+   "text": "By contrast,"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The second sentence descends from the general claim — the canal's advantage lay in what one horse could move — to the precise figures behind it, and \"Specifically,\" is the transition that introduces exactly that sharpening.\n\n**The Full Solution:**\n- Sentence one makes a general economic point: the canals' case against the railways rested on the extraordinary load a single horse could draw on water.\n- Sentence two supplies the particulars: one horse, two crew, thirty tons — against the dozen wagons the same load would demand on the road.\n- Moving from claim to exact detail calls for \"Specifically.\"\n\n**Why the other choices are wrong:**\n- B: \"Likewise,\" promises a parallel new point, but the second sentence details the first rather than adding another.\n- C: \"As a result,\" would make the figures a consequence of the claim, though they are its content.\n- D: \"By contrast,\" signals opposition, and no opposing idea appears between the two sentences."
 }

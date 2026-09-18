@@ -1,31 +1,31 @@
 {
-  "id": 750,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "Through the first half of the twentieth century, most geologists held that the continents were permanently fixed in place and that the floors of the oceans were ancient, largely unchanging surfaces. ______ magnetic surveys carried out in the late 1950s and 1960s found that the rocks of the seafloor grow steadily younger toward the mid-ocean ridges, evidence that new crust forms continuously along those ridges and spreads outward, slowly carrying the continents along with it.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "However,"
-    },
-    {
-      "id": "B",
-      "text": "Therefore,"
-    },
-    {
-      "id": "C",
-      "text": "As a result,"
-    },
-    {
-      "id": "D",
-      "text": "For example,"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage contrasts the long-held belief that continents and ocean floors were fixed and unchanging with survey results showing that the seafloor is continually created and spreading, so the contrast transition \"However\" fits. \"Therefore\" and \"As a result\" both signal that the second sentence follows as a consequence of the first, which reverses the logic, and \"For example\" would introduce an illustration of the prevailing view rather than evidence against it."
+ "id": 750,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "Shipwrights of the ancient Mediterranean worked shell first: a hull's planks were edge-joined with thousands of tight mortise-and-tenon joints, and ribs were fitted in afterward to stiffen a shell that was already watertight — a method demanding enormous skill and labor at the planking stage. ______ the frame-first method that spread through medieval Europe raised a skeleton of ribs before any planking went on, letting less specialized workers bend and fasten planks around a form that already fixed the hull's shape.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "By contrast,"
+  },
+  {
+   "id": "B",
+   "text": "Consequently,"
+  },
+  {
+   "id": "C",
+   "text": "Likewise,"
+  },
+  {
+   "id": "D",
+   "text": "In fact,"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The passage sets two construction methods side by side and opposes them point for point — planks before ribs versus ribs before planks, specialist labor versus less specialized work — the relationship \"By contrast\" exists to mark.\n\n**The Full Solution:**\n- Sentence one: shell-first building, with its edge-joined planks and skill-intensive planking stage.\n- Sentence two: frame-first building, reversing the sequence and easing the demand for specialized labor.\n- The sentences describe opposed approaches to the same task, so a comparative-contrast transition is the logical join.\n\n**Why the other choices are wrong:**\n- B: \"Consequently\" would make frame-first construction a result of shell-first construction, but the second method replaces the first rather than following from it.\n- C: \"Likewise\" promises a parallel case, and the second sentence delivers an opposite one.\n- D: \"In fact\" intensifies or corrects the preceding claim, but the second sentence neither strengthens nor corrects the description of shell-first work — it turns to a different method."
 }

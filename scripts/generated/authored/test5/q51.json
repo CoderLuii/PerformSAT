@@ -1,34 +1,34 @@
 {
-  "id": 551,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "Human circadian timing drifts in a predictable direction during adolescence: teenagers' internal clocks shift later, so that falling asleep before eleven at night becomes genuinely difficult for many of them and early school start times cut into their sleep. ______ many older adults experience the opposite shift: their clocks move earlier, leaving them drowsy in the early evening and wide awake well before dawn.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "As a result,"
-    },
-    {
-      "id": "B",
-      "text": "By contrast,"
-    },
-    {
-      "id": "C",
-      "text": "For example,"
-    },
-    {
-      "id": "D",
-      "text": "Likewise,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"By contrast,\". The first sentence describes adolescents' internal clocks shifting later; the second describes older adults' clocks shifting earlier—an opposite pattern in a different group, which calls for a contrast. \"As a result,\" would make the older adults' earlier timing a consequence of the teenagers' later timing, which the text does not suggest. \"For example,\" would make the second group an instance of the first pattern, when it is the reverse of it. And \"Likewise,\" would claim the two groups shift in the same direction.",
-  "_meta": {
-    "anchor": "circadian phase across the lifespan — adolescent delay vs older-adult advance"
+ "id": 551,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "Many reef fishes invest nothing in their offspring after spawning: a female releases many thousands of eggs into open water, currents scatter them, predators take the overwhelming majority, and the strategy succeeds by arithmetic alone, with enormous numbers offsetting enormous losses. ______ certain cichlid fishes shelter broods of only a few dozen young inside a parent's mouth for weeks, the guarding parent forgoing food almost entirely while it carries a family small enough to count.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "As a result,"
+  },
+  {
+   "id": "B",
+   "text": "By contrast,"
+  },
+  {
+   "id": "C",
+   "text": "Specifically,"
+  },
+  {
+   "id": "D",
+   "text": "Nevertheless,"
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage sets two opposite parental strategies side by side — thousands of abandoned eggs versus a few dozen young guarded at great cost — and \"By contrast\" is the transition built for exactly that opposition.\n\n**The Full Solution:**\n- Sentence one describes the broadcast strategy: no care, vast numbers, survival by arithmetic.\n- Sentence two describes its mirror image: intensive care, tiny numbers, heavy parental sacrifice.\n- The second sentence neither follows from nor qualifies the first; it opposes it point for point, which calls for a comparative-contrast transition.\n\n**Why the other choices are wrong:**\n- A: \"As a result\" would make mouthbrooding a consequence of broadcast spawning, a causal link the text never draws.\n- C: \"Specifically\" would introduce a detailed instance of the first strategy, but the cichlids practice a different strategy altogether.\n- D: \"Nevertheless\" concedes an expectation and defies it; the second sentence describes a separate group's approach, not a surprising exception within the first group.",
+ "_meta": {
+  "anchor": "broadcast spawning vs. cichlid mouthbrooding — opposed parental strategies; contrast transition"
+ }
 }

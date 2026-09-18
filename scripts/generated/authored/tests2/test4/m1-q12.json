@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A streamside survey recorded frogs, newts, and salamanders in the ratio $5 : 3 : k$, where $k$ is a positive constant. The survey recorded $448$ amphibians in all, $160$ of them frogs. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "copies the newt term of the ratio instead of solving for the salamander term",
+  "C": "computes (448 - 160)/32 = 9, the newt-and-salamander parts together, and forgets to remove the 3 newt parts",
+  "D": "reports the total number of parts, 448/32 = 14, instead of the salamander part k"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** One part is $\\dfrac{160}{5} = 32$ amphibians, the survey holds $\\dfrac{448}{32} = 14$ parts, and $14 - 5 - 3 = 6$.\n\n**The Full Solution:**\nStep 1: The ratio $5 : 3 : k$ means the counts are $5p$, $3p$, and $kp$ for one common part size $p$. The frogs give $5p = 160$, so $p = 32$.\nStep 2: The total count is $(5 + 3 + k)p = 448$, so $5 + 3 + k = \\dfrac{448}{32} = 14$.\nStep 3: Therefore $k = 14 - 8 = 6$.\nCheck: the counts are $5(32) = 160$ frogs, $3(32) = 96$ newts, and $6(32) = 192$ salamanders, and $160 + 96 + 192 = 448$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): copies the newt term straight out of the ratio; the salamander term is what the question asks for.\n* Choice C ($9$): divides the $288$ non-frog amphibians by $32$ to get $9$ parts, which still includes the $3$ newt parts.\n* Choice D ($14$): this is the total number of parts in the ratio, not the salamander share of them.\n\n**Test Day Takeaway:** Find the size of one part first; every other quantity in a ratio problem is then a multiplication or a subtraction away."
+}

@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "question": "A reforestation crew models the average height of its planted firs, in meters, by $H(t) = 1.4 + 0.35t$, with $t$ the number of years since planting. Which statement best describes $0.35$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The predicted average height increases by $0.35$ meter for each additional year since planting."
+    },
+    {
+      "id": "B",
+      "text": "The predicted average height decreases by $0.35$ meter for each additional year since planting."
+    },
+    {
+      "id": "C",
+      "text": "Each additional meter of average height takes $0.35$ year."
+    },
+    {
+      "id": "D",
+      "text": "At the time of planting, the predicted average height is $0.35$ meter."
+    }
+  ],
+  "distractorNotes": {
+    "B": "flips the sign of the slope, reading a rising model as a falling one",
+    "C": "swaps the input and output, reading 0.35 as years per meter instead of meters per year",
+    "D": "reads 0.35 as the starting value of the model instead of its rate of change; the starting value is 1.4"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice A is correct.** In $H(t) = 1.4 + 0.35t$ the coefficient of $t$ is $0.35$, so each additional year after planting raises the predicted average height by $0.35$ meter.\n\n**The Fast Way (~15s):** The number multiplied by $t$ is the per-year change, and it is positive, so the height rises $0.35$ meter each year.\n\n**The Full Solution:**\nStep 1: Match the model to slope-intercept form: the constant $1.4$ is the value at $t = 0$ and $0.35$ is the slope.\nStep 2: Slope is output units per input unit here, meters per year, so the predicted average height changes by $0.35$ meter each year.\nStep 3: A positive coefficient means an increase. Check: $H(0) = 1.4$ and $H(4) = 1.4 + 1.4 = 2.8$ meters, a gain of $1.4$ meters across four years, which is $0.35$ meter per year. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (a $0.35$-meter drop per year): keeps the size of the slope but reverses its sign. The $+0.35t$ term is what makes the firs taller, not shorter.\n* Choice C ($0.35$ year per meter): inverts the rate, reporting years per meter rather than meters per year. The slope is always output per input.\n* Choice D ($0.35$ meter at planting): describes the starting value, which is $1.4$ meters; $0.35$ never appears as a height in this model.\n\n**Test Day Takeaway:** Read the coefficient of the input as \"output units per one input unit\", and carry its sign into the sentence before you compare choices."
+}

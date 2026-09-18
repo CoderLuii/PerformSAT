@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-169",
+ "question": "A retrofit program models streetlight fixture wattage saved by $f(x)=-2(x-c)^2+40$, where $c$ is a positive constant and $x$ is the fixture number. If $f(0)=8$, what is the value of $c$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~25s):** $f(0)=-2c^2+40=8$ gives $c^2=16$, and $c$ is positive, so $c=4$.\n\n**The Full Solution:**\nStep 1: Substitute $x=0$: $-2(0-c)^2+40=8$, so $-2c^2+40=8$.\nStep 2: Rearrange: $2c^2=32$, so $c^2=16$ and $c=\\pm4$.\nStep 3: The constant is positive, so $c=4$. Check: $f(x)=-2(x-4)^2+40$ gives $f(0)=-32+40=8$ ✓\n\n**Common Mistakes:**\n* $-4$: keeps the negative square root even though $c$ is stated to be positive.\n* $16$: reports $c^2$ instead of $c$.\n* $32$: reports $40-8=32$ without dividing by $2$ or taking a square root.\n\n**Test Day Takeaway:** Substituting one point into vertex form leaves a squared unknown — solve it, then apply the stated sign restriction."
+}

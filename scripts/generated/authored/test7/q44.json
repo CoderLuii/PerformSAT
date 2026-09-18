@@ -1,31 +1,31 @@
 {
-  "id": 744,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "In the early 1990s, many researchers assumed that HIV stayed largely dormant during the long, symptom-free period before AIDS. Measurements reported in 1995 revealed something quite ______ a virus replicating and being cleared at extraordinarily high rates even in patients who showed no symptoms, a finding that motivated the development of combination drug therapy.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "different,"
-    },
-    {
-      "id": "B",
-      "text": "different"
-    },
-    {
-      "id": "C",
-      "text": "different:"
-    },
-    {
-      "id": "D",
-      "text": "different;"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. What follows the blank explains and specifies the \"something quite different\" that the measurements revealed, and a colon correctly introduces that explanation. Choice A's comma is too weak to set off the elaboration cleanly, and Choice B omits punctuation where a pause is needed. Choice D's semicolon is wrong because what follows (\"a virus replicating and being cleared...\") is not an independent clause."
+ "id": 744,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "For decades, most geologists assumed that the rock of Earth's deep mantle was essentially dry. A battered diamond carried up from more than 500 kilometers below the surface suggested something quite ______ sealed inside it was a fleck of ringwoodite, a deep-mantle mineral, holding about one percent water by weight — a hint that the mantle may store oceans' worth of water bound inside rock.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "unexpected,"
+  },
+  {
+   "id": "B",
+   "text": "unexpected"
+  },
+  {
+   "id": "C",
+   "text": "unexpected:"
+  },
+  {
+   "id": "D",
+   "text": "unexpected;"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The clause before the blank is complete — the diamond \"suggested something quite unexpected\" — and what follows spells out what that something was; a colon is the mark that introduces such an explanation.\n\n**The Full Solution:**\n- Check the left side: \"A battered diamond...suggested something quite unexpected\" can stand alone as a sentence, which a colon requires.\n- Check the relationship: \"sealed inside it was a fleck of ringwoodite...\" delivers the promised surprise, unpacking \"something quite unexpected.\"\n- A complete statement followed by its elaboration is the colon's defining use.\n\n**Why the other choices are wrong:**\n- A: A comma is too weak to hold two independent statements apart — it produces a comma splice here.\n- B: With no punctuation, the two statements run together ungrammatically.\n- D: A semicolon signals two coordinate statements, but the second exists to explain the first — the colon's introducing function, not the semicolon's balancing one."
 }

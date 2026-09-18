@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-046",
+  "question": "Account $J$ has a value of $2{,}000(1.05)^{t}$ dollars $t$ years after it was opened, and Account $K$ has a value of $2{,}000(1.09)^{t}$ dollars $t$ years after it was opened. To the nearest dollar, how much greater is the value of Account $K$ than the value of Account $J$ after $10$ years?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$800$"
+    },
+    {
+      "id": "B",
+      "text": "$1{,}477$"
+    },
+    {
+      "id": "C",
+      "text": "$3{,}258$"
+    },
+    {
+      "id": "D",
+      "text": "$4{,}735$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses simple interest instead of compounding",
+    "C": "reports Account $J$'s value rather than the difference",
+    "D": "reports Account $K$'s value rather than the difference"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compare Compound Interest**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $2{,}000(1.09)^{10} \\approx 4{,}734.73$ and $2{,}000(1.05)^{10} \\approx 3{,}257.79$; the difference is about $1{,}477$ dollars.\n\n**The Full Solution:**\nStep 1: Evaluate each model at $t = 10$. Account $K$: $2{,}000(1.09)^{10} \\approx 2{,}000(2.36736) \\approx 4{,}734.73$ dollars.\nStep 2: Account $J$: $2{,}000(1.05)^{10} \\approx 2{,}000(1.62889) \\approx 3{,}257.79$ dollars.\nStep 3: Subtract: $4{,}734.73 - 3{,}257.79 \\approx 1{,}476.94$, which rounds to $1{,}477$ dollars. Check the sizes: $K$ is roughly $45\\%$ larger than $J$, and $\\dfrac{1{,}477}{3{,}258} \\approx 0.45$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($800$): treats the growth as simple interest, computing $2{,}000(0.09)(10) - 2{,}000(0.05)(10) = 1{,}800 - 1{,}000$.\n* Choice C ($3{,}258$): stops after evaluating Account $J$.\n* Choice D ($4{,}735$): stops after evaluating Account $K$ and never subtracts.\n\n**Test Day Takeaway:** \"How much greater\" always ends in a subtraction. Evaluate both exponential models fully before comparing — the gap grows much faster than the rate difference suggests."
+}

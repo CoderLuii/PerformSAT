@@ -1,0 +1,40 @@
+{
+ "id": "bank-geo-279",
+ "question": "A garden center lays a curved paver border along arc $AB$ of the circle drawn below, and the border measures $14\\pi$ feet. What is the radius, in feet, of that circle?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 40,
+   "angleLabel": "40°",
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$31.5$"
+  },
+  {
+   "id": "C",
+   "text": "$63$"
+  },
+  {
+   "id": "D",
+   "text": "$126$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats the arc as the whole circumference, solving 2 pi r = 14 pi",
+  "B": "divides the central angle by 180 instead of 360, giving r = 31.5",
+  "D": "uses pi r instead of 2 pi r, which produces the diameter 126"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Arc Length**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** A $40°$ arc is $\\frac{1}{9}$ of the circle, so the circumference is $9(14\\pi)=126\\pi$ and $r=63$ feet.\n\n**The Full Solution:**\n\nStep 1: Convert the angle. $\\frac{40}{360}=\\frac{1}{9}$ of the full circle.\n\nStep 2: Recover the circumference. If $\\frac{1}{9}C=14\\pi$, then $C=126\\pi$ feet.\n\nStep 3: Solve for the radius. $2\\pi r=126\\pi$ gives $r=63$ feet.\n\nCheck: $\\frac{40}{360}\\left(2\\pi\\cdot63\\right)=\\frac{1}{9}(126\\pi)=14\\pi$, the border length.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($7$): treats the arc as the entire circumference, solving $2\\pi r=14\\pi$.\n* Choice B ($31.5$): divides the central angle by $180$ instead of $360$, halving the radius.\n* Choice D ($126$): uses $\\pi r$ in place of $2\\pi r$, which produces the diameter rather than the radius.\n\n**Test Day Takeaway:** Running the arc-length proportion backwards recovers the circumference first; only then divide by $2\\pi$."
+}

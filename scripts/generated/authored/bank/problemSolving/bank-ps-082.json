@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-082",
+  "question": "A materials laboratory tested two batches of cord. Batch P consists of $18$ cords with a mean breaking strength of $46$ newtons, and batch Q consists of $n$ cords with a mean breaking strength of $58$ newtons. The mean breaking strength of all $18 + n$ cords is $54$ newtons. What is the value of $n$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$9$"
+    },
+    {
+      "id": "B",
+      "text": "$18$"
+    },
+    {
+      "id": "C",
+      "text": "$27$"
+    },
+    {
+      "id": "D",
+      "text": "$36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverts the balance: 18 x (58-54)/(54-46) = 9",
+    "B": "uses 52, the average of the two means, as the combined mean",
+    "C": "uses the full spread 58-46 instead of 58-54: 18 x 12/8 = 27"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Mean from List**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The combined mean is $8$ above batch P's mean and $4$ below batch Q's mean, so batch Q holds twice as many cords: $n = 2(18) = 36$.\n\n**The Full Solution:**\nStep 1: Totals add, so $18(46) + 58n = 54(18 + n)$.\nStep 2: $828 + 58n = 972 + 54n$, so $4n = 144$.\nStep 3: $n = 36$. Check: $\\dfrac{828 + 58(36)}{18 + 36} = \\dfrac{2{,}916}{54} = 54$ newtons. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): This inverts the balance, computing $18 \\times \\dfrac{58 - 54}{54 - 46} = 9$. The batch farther from the combined mean is the smaller batch, not the larger one.\n* Choice B ($18$): This uses $52$, the average of $46$ and $58$, as the combined mean; equal distances would force equal counts, but the given combined mean is $54$.\n* Choice C ($27$): This uses the full spread $58 - 46 = 12$ in place of $58 - 54 = 4$, giving $18 \\times \\dfrac{12}{8} = 27$.\n\n**Test Day Takeaway:** A combined mean is a weighted mean: the group sizes are inversely proportional to the distances from the combined mean."
+}

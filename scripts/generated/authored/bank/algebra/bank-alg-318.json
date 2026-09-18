@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-318",
+  "question": "An extrusion setup card lists the polynomials $4x + a$ and $bx - 7$, in which $a$ and $b$ are constants. For every value of $x$, twice the first polynomial minus the second polynomial is equal to $5x + 25$. What is the value of the product $ab$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12$"
+    },
+    {
+      "id": "B",
+      "text": "$27$"
+    },
+    {
+      "id": "C",
+      "text": "$48$"
+    },
+    {
+      "id": "D",
+      "text": "$54$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "reports the sum $a + b = 9 + 3$ instead of the product",
+    "C": "solves $2a - 7 = 25$, subtracting the $7$ instead of adding it, so $a = 16$ and $ab = 48$",
+    "D": "doubles only the $4x$ and not the $a$, solving $a + 7 = 25$ to get $a = 18$ and $ab = 54$"
+  },
+  "explanation": "**SAT Pattern: Polynomial Identity with Two Parameters**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Doubling the first polynomial and subtracting the second gives $(8 - b)x + (2a + 7)$, so $b = 3$, $a = 9$, and $ab = 27$.\n\n**The Full Solution:**\nStep 1: Twice the first polynomial minus the second is $2(4x + a) - (bx - 7) = 8x + 2a - bx + 7$, which collects to $(8 - b)x + (2a + 7)$.\nStep 2: Matching the coefficient of $x$ gives $8 - b = 5$, so $b = 3$.\nStep 3: Matching the constant terms gives $2a + 7 = 25$, so $a = 9$ and $ab = 27$. Check: $2(4x + 9) - (3x - 7) = 8x + 18 - 3x + 7 = 5x + 25$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): reports the sum $a + b = 9 + 3$ instead of the product\n* Choice C ($48$): solves $2a - 7 = 25$, subtracting the $7$ instead of adding it, so $a = 16$ and $ab = 48$\n* Choice D ($54$): doubles only the $4x$ and not the $a$, solving $a + 7 = 25$ to get $a = 18$ and $ab = 54$\n\n**Test Day Takeaway:** Distribute the multiplier through both terms of the first polynomial and the subtraction through both terms of the second before matching anything."
+}

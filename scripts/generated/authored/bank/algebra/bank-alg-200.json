@@ -1,0 +1,6 @@
+{
+ "question": "A dispatcher applies two rules to each shift: $y=3x-k$ and $2x+y=k+22$, where $k$ is a constant that is the same in both rules. If the single pair $(x,y)$ satisfying both rules has $x=6$, what is the value of $k$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~50s):** At $x=6$, $y=18-k$, so $12+18-k=k+22$ gives $30-k=k+22$, $2k=8$, and $k=4$.\n\n**The Full Solution:**\n\nStep 1: Substitute $x=6$ into the first equation: $y=3(6)-k=18-k$.\n\nStep 2: Put both $x=6$ and $y=18-k$ into the second equation: $2(6)+(18-k)=k+22$, so $30-k=k+22$.\n\nStep 3: Add $k$ to both sides and subtract $22$: $8=2k$, so $k=4$. Check: $y=18-4=14$, and $2(6)+14=26=4+22$.\n\n**Common Mistakes:** Solving $30-k=k+22$ as $30-22=k$ gives $8$ and forgets that $k$ appears on both sides. Reading $3x-k$ as $3x+k$ turns the equation into $30+k=k+22$, an impossible statement that suggests no value works.\n\n**Test Day Takeaway:** When an unknown constant sits on both sides after substitution, collect it on one side before dividing — the coefficient will not be $1$.",
+ "id": "bank-alg-200"
+}

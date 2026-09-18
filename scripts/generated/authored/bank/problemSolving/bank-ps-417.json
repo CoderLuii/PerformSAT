@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-417",
+  "question": "A tide gauge logged $57$ hours during which the water level exceeded the flood threshold, and those hours make up $15\\%$ of the whole monitoring period. How many hours long was the monitoring period?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8.55$"
+    },
+    {
+      "id": "B",
+      "text": "$72$"
+    },
+    {
+      "id": "C",
+      "text": "$380$"
+    },
+    {
+      "id": "D",
+      "text": "$855$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "multiplies by the decimal instead of dividing, $0.15(57) = 8.55$",
+    "B": "adds $15$ to $57$, treating the percent as a count of hours",
+    "D": "multiplies by $15$ instead of dividing by $0.15$, giving $855$"
+  },
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**Choice C is correct.** If $57$ is $15\\%$ of the period $T$, then $0.15T = 57$ and $T = \\frac{57}{0.15} = 380$ hours.\n\n**The Fast Way (~30s):** $57$ is $15\\%$ of the total, so the total is $\\frac{57}{0.15} = 380$ hours.\n\n**The Full Solution:**\n\nStep 1: Name the unknown. Let $T$ be the length of the monitoring period, in hours.\n\nStep 2: Translate the sentence. The flood hours are $15\\%$ of $T$, so $0.15T = 57$.\n\nStep 3: Solve: $T = \\frac{57}{0.15} = 380$ hours. Check: $0.15(380) = 57$ hours, and $57$ is a small slice of $380$, as $15\\%$ should be.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($8.55$): computes $15\\%$ of $57$. The $57$ is already the part, so the whole must be larger, not smaller.\n* Choice B ($72$): adds $15$ hours, treating a percent as a count.\n* Choice D ($855$): multiplies by $15$ instead of dividing by $0.15$, overshooting the period by a factor of $15(0.15) = 2.25$.\n\n**Test Day Takeaway:** When the part is given and the whole is missing, divide -- and sanity-check that the answer is bigger than the part."
+}

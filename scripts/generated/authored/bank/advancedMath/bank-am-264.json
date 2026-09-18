@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-264",
+ "question": "The function $f$ gives the number of literacy workshop attendees on day $x$ of a program, and the function $g$ is defined by $g(x)=4f(x)$. Which statement best describes the relationship between the two functions?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Each output of $g$ is $4$ more than the corresponding output of $f$."
+  },
+  {
+   "id": "B",
+   "text": "Each output of $g$ is one fourth of the corresponding output of $f$."
+  },
+  {
+   "id": "C",
+   "text": "Each input of $g$ is $4$ times the corresponding input of $f$."
+  },
+  {
+   "id": "D",
+   "text": "Each output of $g$ is $4$ times the corresponding output of $f$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads the multiplier as an addition",
+  "B": "inverts the factor of 4",
+  "C": "applies the factor to the input rather than the output"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertical Stretch**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** The factor $4$ sits outside $f$, so it multiplies every output: $g(x)=4f(x)$.\n\n**The Full Solution:**\nStep 1: The rule $g(x)=4f(x)$ evaluates $f$ at the same input $x$ and then multiplies the result.\nStep 2: Because the $4$ is applied after $f$, it scales outputs, not inputs.\nStep 3: So each output of $g$ is $4$ times the matching output of $f$. Check: if $f(5)=30$ attendees, then $g(5)=120$, four times as many on the same day ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: reads the multiplier as an addition, which would be $g(x)=f(x)+4$.\n* Choice B: inverts the factor, which would be $g(x)=\\frac{1}{4}f(x)$.\n* Choice C: applies the $4$ to the input, which would be $g(x)=f(4x)$.\n\n**Test Day Takeaway:** A constant multiplying the whole function stretches outputs vertically; the inputs are untouched."
+}

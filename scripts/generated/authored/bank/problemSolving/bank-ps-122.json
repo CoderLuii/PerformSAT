@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-122",
+  "question": "A nursery plants red, yellow, and white tulip bulbs in the ratio $5 : 3 : 2$, respectively. The nursery plants $90$ more red bulbs than white bulbs. How many of the bulbs planted are not yellow?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$90$"
+    },
+    {
+      "id": "B",
+      "text": "$150$"
+    },
+    {
+      "id": "C",
+      "text": "$210$"
+    },
+    {
+      "id": "D",
+      "text": "$300$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the yellow count, 3 parts x 30 = 90 (also equal to the given difference), when the question asks for bulbs that are NOT yellow",
+    "B": "the red count alone (5 parts), dropping the white bulbs",
+    "D": "the total of all 10 parts, never removing the yellow bulbs"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Red minus white is $5 - 2 = 3$ parts, and that difference is $90$ bulbs, so one part is $30$. Not yellow means red plus white, $5 + 2 = 7$ parts: $7(30) = 210$.\n\n**The Full Solution:**\nStep 1: Let one part be $k$ bulbs. Then red $= 5k$, yellow $= 3k$, white $= 2k$.\nStep 2: The difference between red and white is given: $5k - 2k = 90$, so $3k = 90$ and $k = 30$.\nStep 3: The bulbs that are not yellow are the red and white ones: $5k + 2k = 7k = 7(30) = 210$. Check: red $= 150$, white $= 60$, and $150 - 60 = 90$. $\\checkmark$ Yellow $= 90$, and the total $150 + 90 + 60 = 300$ minus the $90$ yellow bulbs is $210$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($90$): This is the number of yellow bulbs, $3k = 90$ (it happens to equal the given difference), but the question asks for the bulbs that are *not* yellow.\n* Choice B ($150$): This is the red count alone, $5k$; it leaves out the $60$ white bulbs.\n* Choice D ($300$): This is the total of all three colors, $10k$; the $90$ yellow bulbs were never removed.\n\n**Test Day Takeaway:** When a ratio problem gives a difference instead of a total, set the difference of the parts equal to it to find one part, then reread exactly which parts the question wants."
+}

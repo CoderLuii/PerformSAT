@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "A quality report lists $50$ measured pipe diameters, in millimeters, with a mean of $60$ millimeters and a standard deviation of $\\sigma$ millimeters. Each diameter is converted to centimeters and then increased by $3$ centimeters to record an outer bound. In terms of $\\sigma$, what is the standard deviation, in centimeters, of the recorded outer bounds?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{\\sigma}{10}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{\\sigma}{10} + 3$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{\\sigma + 3}{10}$"
+    },
+    {
+      "id": "D",
+      "text": "$10\\sigma$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "adds the 3-centimeter allowance to the spread, but a shift moves every value equally",
+    "C": "adds 3 before dividing, which again lets the shift reach the spread",
+    "D": "multiplies by 10 instead of dividing, converting centimeters to millimeters"
+  },
+  "correctAnswer": "A",
+  "hint": "Only one of the two operations changes how far the values sit from each other.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~25s):** Dividing every diameter by $10$ divides the standard deviation by $10$; adding $3$ centimeters changes nothing about the spread.\n\n**The Full Solution:**\nStep 1: Handle the unit change. One centimeter is $10$ millimeters, so each diameter in centimeters is the millimeter value divided by $10$, and the standard deviation becomes $\\frac{\\sigma}{10}$ centimeters.\nStep 2: Handle the shift. Adding $3$ centimeters to every value slides the whole data set without changing any distance between values, so the standard deviation is unchanged.\nStep 3: Test two diameters. If two pipes measure $60$ and $80$ millimeters, they become $6$ and $8$ centimeters, then $9$ and $11$ centimeters. The gap shrinks from $20$ to $2$ and then stays at $2$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{\\sigma}{10} + 3$): adds the allowance to the spread. Every value moved up by the same $3$, so no distance between values changed.\n* Choice C ($\\frac{\\sigma + 3}{10}$): adds the $3$ before dividing, again letting a shift reach the spread.\n* Choice D ($10\\sigma$): multiplies by $10$, which would convert centimeters into millimeters — the wrong direction.\n\n**Test Day Takeaway:** Scaling multiplies the standard deviation; shifting leaves it alone. The mean of $60$ is a distractor: a spread question never needs the center."
+}

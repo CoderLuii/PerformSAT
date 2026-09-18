@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-400",
+ "question": "A compounding formula calls for $8(2p + 5)$ grams of base, and a second formula calls for $4(4p + n)$ grams, where $p$ is the number of prescriptions filled. The two formulas agree for every value of $p$. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$20$"
+  },
+  {
+   "id": "D",
+   "text": "$40$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "copies the constant 5 from the first formula's parentheses",
+  "C": "divides 40 by 2 instead of by 4",
+  "D": "expands the left side but never divides the constant by 4"
+ },
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Both sides expand to $16p$ plus a constant, and $40 = 4n$ gives $n = 10$.\n\n**The Full Solution:**\n\nStep 1: Expand the first formula: $8(2p + 5) = 16p + 40$.\n\nStep 2: Expand the second: $4(4p + n) = 16p + 4n$. The coefficients of $p$ already agree.\n\nStep 3: The constants must agree for every value of $p$, so $4n = 40$ and $n = 10$. Check with $p = 3$: $8(6 + 5) = 88$ and $4(12 + 10) = 88$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5$): copies the $5$ from the first formula's parentheses, as though the two constants inside the parentheses had to match.\n* Choice C ($20$): divides $40$ by $2$ rather than by the factor $4$ that multiplies $n$.\n* Choice D ($40$): expands the left side correctly but forgets that $n$ is still multiplied by $4$.\n\n**Test Day Takeaway:** When both sides are factored, expand both before matching; the constant you want is usually still buried under a factor."
+}

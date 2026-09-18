@@ -1,0 +1,52 @@
+{
+  "question": "The parabola shown is the graph of $y=2x^{2}+bx+5$ in the $xy$-plane, where $b$ is a constant. Which of the following must be true about $b^{2}-40$?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": -1,
+        "k": 3
+      },
+      "a": 2,
+      "xRange": [
+        -6,
+        4
+      ],
+      "yRange": [
+        -2,
+        18
+      ],
+      "showVertex": false,
+      "gridInterval": 2,
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "label": "y = 2x^2 + bx + 5"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$b^{2}-40<0$"
+    },
+    {
+      "id": "B",
+      "text": "$b^{2}-40=0$"
+    },
+    {
+      "id": "C",
+      "text": "$b^{2}-40>0$"
+    },
+    {
+      "id": "D",
+      "text": "$b^{2}-20<0$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "would mean the parabola touches the x-axis at exactly one point",
+    "C": "would mean the parabola crosses the x-axis twice",
+    "D": "used 4ac = 4 times 5 = 20, omitting the leading coefficient 2"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The parabola never meets the $x$-axis, so its discriminant $b^{2}-4(2)(5)=b^{2}-40$ must be negative.\n\n**The Full Solution:**\nStep 1: The $x$-intercepts of the graph are the real solutions of $2x^{2}+bx+5=0$.\nStep 2: The graph lies entirely above the $x$-axis, so that equation has no real solutions.\nStep 3: No real solutions means a negative discriminant, and here $b^{2}-4ac=b^{2}-40$, so $b^{2}-40<0$. Check: the drawn parabola is $y=2x^{2}+4x+5$, and $16-40=-24<0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($b^{2}-40=0$): would mean the parabola touches the $x$-axis at exactly one point.\n* Choice C ($b^{2}-40>0$): would mean the parabola crosses the $x$-axis twice.\n* Choice D ($b^{2}-20<0$): uses $4c=20$ for $4ac$, omitting the leading coefficient $2$.\n\n**Test Day Takeaway:** Read the number of $x$-intercepts off the picture, then translate it straight into the sign of $b^{2}-4ac$.",
+  "id": "bank-am-349"
+}

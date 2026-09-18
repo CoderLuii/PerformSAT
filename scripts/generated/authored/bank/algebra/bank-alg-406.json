@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-406",
+ "question": "The height, in centimeters, of a stack of $d$ identical tiles on a base is $h(d) = 1.4d + 26$. Which of the following best describes the meaning of $1.4$ in this model?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The height, in centimeters, of the base when no tiles rest on it."
+  },
+  {
+   "id": "B",
+   "text": "The number of tiles in a stack that is $26$ centimeters tall."
+  },
+  {
+   "id": "C",
+   "text": "The total height, in centimeters, of $26$ tiles."
+  },
+  {
+   "id": "D",
+   "text": "The increase in the stack's height, in centimeters, for each additional tile."
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "describes $h(0) = 26$, the constant term, not the coefficient",
+  "B": "describes a count of tiles, but $1.4$ is measured in centimeters per tile",
+  "C": "multiplies rather than interpreting; $26$ tiles would add $36.4$ centimeters"
+ },
+ "explanation": "**SAT Pattern: Reading Slope-Intercept Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** In $h(d) = 1.4d + 26$, the coefficient $1.4$ is the height added by each tile.\n\n**The Full Solution:**\nStep 1: The model gives height in centimeters for $d$ tiles, so $26$ is the height with no tiles and $1.4$ multiplies the count.\nStep 2: Replacing $d$ by $d + 1$ gives $1.4(d + 1) + 26 = h(d) + 1.4$.\nStep 3: So each additional tile raises the stack by $1.4$ centimeters. Check: $h(0) = 26$ and $h(1) = 27.4$.\n\n**Why the wrong answers are tempting:**\n* Choice A (The height, in centimeters, of the base when no tiles rest on it.): describes $h(0) = 26$, the constant term, not the coefficient\n* Choice B (The number of tiles in a stack that is $26$ centimeters tall.): describes a count of tiles, but $1.4$ is measured in centimeters per tile\n* Choice C (The total height, in centimeters, of $26$ tiles.): multiplies rather than interpreting; $26$ tiles would add $36.4$ centimeters\n\n**Test Day Takeaway:** In a linear model the coefficient is a rate with the units output per input, and the constant is the output at zero."
+}

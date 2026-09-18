@@ -1,0 +1,49 @@
+{
+ "id": 16,
+ "question": "A radio antenna receives power $P(t) = -3t^2 + 24t + c$ microwatts when tilted $t$ degrees above a reference position, where $c$ is a constant. The table gives three tilts and the power measured at each. What is the greatest power, in microwatts, this model predicts?",
+ "questionTable": {
+  "headers": [
+   "Tilt (degrees)",
+   "Power (microwatts)"
+  ],
+  "rows": [
+   [
+    "2",
+    "49"
+   ],
+   [
+    "6",
+    "49"
+   ],
+   [
+    "8",
+    "13"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$49$"
+  },
+  {
+   "id": "D",
+   "text": "$61$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the tilt at which the maximum occurs, 4 degrees, rather than the power there",
+  "B": "reports the constant c = 13, which is the power at a tilt of 0 degrees",
+  "C": "reads the largest power listed in the table instead of the model's peak"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice D is correct.** Any row pins down $c$: from $t = 2$, $-3(4) + 24(2) + c = 49$, so $c = 13$. The parabola opens downward with vertex at $t = \\frac{-24}{2(-3)} = 4$, and $P(4) = -48 + 96 + 13 = 61$ microwatts.\n\n**The Fast Way (~35s):** The table's equal powers at $t = 2$ and $t = 6$ put the peak halfway between, at $t = 4$; with $c = 13$, $P(4) = 61$.\n\n**The Full Solution:**\nStep 1: Substitute a table row to find $c$: $P(2) = -3(2)^2 + 24(2) + c = -12 + 48 + c = 49$, so $c = 13$.\nStep 2: Locate the vertex. For $P(t) = -3t^2 + 24t + 13$, the axis of symmetry is $t = \\frac{-24}{2(-3)} = 4$ degrees; the leading coefficient is negative, so this is a maximum.\nStep 3: Evaluate there: $P(4) = -3(16) + 24(4) + 13 = -48 + 96 + 13 = 61$ microwatts. Check the third row: $P(8) = -3(64) + 24(8) + 13 = -192 + 192 + 13 = 13$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): this is the tilt at which the peak occurs, not the power at that tilt.\n* Choice B ($13$): this is $c$, the power at a tilt of $0$ degrees — the model's value at the reference position, not its maximum.\n* Choice C ($49$): the biggest number printed in the table. The table samples the model; the true peak sits between $t = 2$ and $t = 6$.\n\n**Test Day Takeaway:** A maximum has two coordinates. Find the input with $t = \\frac{-b}{2a}$ or by symmetry, then substitute to get the output the question asked for."
+}

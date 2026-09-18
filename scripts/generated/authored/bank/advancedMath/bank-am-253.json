@@ -1,0 +1,40 @@
+{
+  "id": "bank-am-253",
+  "question": "The graph of $y = g(x)$ is shown in the $xy$-plane, where $g(x) = f(x + 5)$ for some function $f$. At what value of $x$ does $f$ attain its minimum value?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        -1,
+        -7
+      ],
+      "a": 0.6,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-7$"
+    },
+    {
+      "id": "B",
+      "text": "$-6$"
+    },
+    {
+      "id": "C",
+      "text": "$-1$"
+    },
+    {
+      "id": "D",
+      "text": "$4$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the minimum value instead of where it occurs",
+    "B": "shifts the wrong way, computing $-1 - 5$",
+    "C": "reports where $g$ is smallest without undoing the shift"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Horizontal Shift**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** $g$ bottoms out at $x = -1$, and $g(-1) = f(-1 + 5) = f(4)$, so $f$ bottoms out at $x = 4$.\n\n**The Full Solution:**\nStep 1: From the graph, the lowest point of $y = g(x)$ is $(-1, -7)$, so the smallest output of $g$ is $-7$, produced at $x = -1$.\nStep 2: Since $g(x) = f(x + 5)$, that smallest output is $g(-1) = f(-1 + 5) = f(4)$. The functions $f$ and $g$ take exactly the same set of outputs, so $-7$ is also the smallest output of $f$.\nStep 3: $f$ attains it at the input $4$. Check: $g(-1) = f(4) = -7$, and the graph of $g$ is the graph of $f$ slid $5$ units LEFT, so $f$'s low point sits $5$ units right of $-1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7$): that is the minimum VALUE read off the graph, not the input that produces it.\n* Choice B ($-6$): this shifts left again ($-1 - 5$); going from $g$ back to $f$ reverses the direction.\n* Choice C ($-1$): this is where $g$ is smallest; the question asks about $f$.\n\n**Test Day Takeaway:** When the shifted function is the one you can see, run the substitution backwards: set the inside expression equal to the unknown input and solve."
+}

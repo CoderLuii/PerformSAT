@@ -1,0 +1,38 @@
+{
+  "id": 9004,
+  "passage": "In Mark Twain's 1883 memoir Life on the Mississippi, the narrator recalls his training as a steamboat pilot, when he learned to read the surface of the river the way a reader takes in a page. A dimple on the water, a floating log, a silver streak in the shade of the forest: each mark told him something about the channel below. A reader might argue that the narrator counts what that skill cost him as carefully as what it gained him.",
+  "question": "Which quotation from Life on the Mississippi most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "\"No, the romance and the beauty were all gone from the river. All the value any feature of it had for me now was the amount of usefulness it could furnish toward compassing the safe piloting of a steamboat.\""
+    },
+    {
+      "id": "B",
+      "text": "\"Throughout the long twelve hundred miles there was never a page that was void of interest, never one that you could leave unread without loss, never one that you would want to skip, thinking you could find higher enjoyment in some other thing.\""
+    },
+    {
+      "id": "C",
+      "text": "\"I stood like one bewitched. I drank it in, in a speechless rapture. The world was new to me, and I had never seen anything like this at home.\""
+    },
+    {
+      "id": "D",
+      "text": "\"It is the faintest and simplest expression the water ever makes, and the most hideous to a pilot's eye.\""
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** The quotation names the loss and the gain together: the river's \"romance and the beauty\" are gone, and what remains is the water's \"usefulness\" for piloting safely.\n\n**The Full Solution:**\n- The claim is a trade, so the quotation has to show both sides of it: something the narrator no longer sees, and the practical reading that replaced it.\n- Choice A pairs them in consecutive sentences. The first announces what is gone; the second says exactly what took its place, measuring every feature of the river by \"the amount of usefulness\" it offers a pilot.\n- Eliminate quotations that show only the beauty or only the expertise. A quotation that never puts the two in the same frame cannot illustrate a trade.\n\n**Why the other choices are wrong:**\n- B: This praises the river as endlessly interesting reading, so it records the gain in skill with no hint that anything was surrendered for it.\n- C: This captures the rapture of an early sunset, before the training took hold, and so gives the beauty without the loss.\n- D: This reads one small ripple as a danger sign, which shows the trained eye at work but says nothing about what that eye stopped seeing.",
+  "source": {
+    "title": "Life on the Mississippi",
+    "author": "Mark Twain",
+    "year": 1883,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/245"
+  },
+  "people": [
+    {
+      "name": "Mark Twain",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/245"
+    }
+  ]
+}

@@ -6,35 +6,35 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 2,
- "passage": "In her landmark 1989 article \"Demarginalizing the Intersection of Race and Sex,\" Kimberlé Crenshaw, then a young law professor at UCLA, identified a single blind spot in antidiscrimination ______ the doctrine's treatment of race and sex as mutually exclusive axes, an analytical move that renders claims by Black women, whose grievances arise at the intersection of those categories, systematically invisible to the courts.",
+ "passage": "In the early 1950s, cartographer Marie Tharp plotted thousands of ocean-depth soundings gathered by research vessels crossing the Atlantic — measurements taken with echo sounders, which were then still ______ the seafloor profiles she drew from those soundings revealed a continuous rift valley running down the center of the Mid-Atlantic Ridge, evidence that the ocean floor was splitting apart.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "doctrine:"
+   "text": "novel, and"
   },
   {
    "id": "B",
-   "text": "doctrine,"
+   "text": "a novel technology;"
   },
   {
    "id": "C",
-   "text": "doctrine"
+   "text": "a novel technology,"
   },
   {
    "id": "D",
-   "text": "doctrine;"
+   "text": "a novel technology; however,"
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A, \"doctrine:\". The material before the blank is a complete independent clause: \"Kimberlé Crenshaw, then a young law professor at UCLA, identified a single blind spot in antidiscrimination doctrine.\" The material after the blank is a noun-phrase amplification that defines what the blind spot actually is — \"the doctrine's treatment of race and sex as mutually exclusive axes, an analytical move that renders claims by Black women, whose grievances arise at the intersection of those categories, systematically invisible to the courts.\" The head noun \"treatment\" anchors a long appositive (the apposed phrase \"an analytical move that renders…\" sits inside, modified by the relative clause \"whose grievances arise…\"), and there is no main verb whose subject is \"the doctrine's treatment\"; the whole thing is a single noun phrase that names and elaborates the \"blind spot\" just announced. Standard English uses a colon at exactly this boundary — a complete clause that has just announced something, followed by an extended noun-phrase amplification that defines or specifies it. Choice A supplies that colon, allowing the post-colon material to land as a definitional amplification of \"blind spot.\"",
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** What follows the blank is a new independent clause, and the semicolon in \"a novel technology;\" closes the first statement — supplement included — and joins the second to it.\n\n**The Full Solution:**\n- The sentence's first part ends inside a supplementary element (\"measurements taken with echo sounders, which were then still a novel technology\").\n- \"The seafloor profiles she drew ... revealed a continuous rift valley ...\" is a complete independent clause, so the boundary between the statements must be sentence-strength.\n\n**Why the other choices are wrong:**\n- A: \"Novel, and\" ties the new clause into the relative clause \"which were then still novel...\" as though the profiles were something the echo sounders \"were,\" garbling the sense.\n- C: A comma produces a comma splice between the two independent statements.\n- D: Punctuationally legal but logically wrong — \"however\" asserts a contrast, yet the rift valley's revelation is the payoff of Tharp's plotting, not a turn against it.",
  "_meta": {
-  "rule": "colon to introduce a defining noun-phrase amplification (with internal commas) after a complete independent clause",
-  "anchor": "Kimberlé Crenshaw — \"Demarginalizing the Intersection of Race and Sex\" (1989), UCLA School of Law; intersectionality, antidiscrimination doctrine, Black women's claims at race/sex intersection",
+  "rule": "semicolon closing a dash-opened supplement before a second independent clause; splice, faulty coordination, and illogical conjunctive-adverb distractors",
+  "anchor": "Marie Tharp — Mid-Atlantic Ridge rift valley, seafloor spreading (with Bruce Heezen, 1950s)",
   "distractors": {
-   "B": "scope-shift (semicolon as IC-IC marker — fails because RHS is a noun phrase, not an IC)",
-   "C": "surface-match (comma as appositive opener — fails when appositive has internal commas)",
-   "D": "inverse (no punctuation)"
+   "A": "coordination grafted onto the relative clause (sense failure)",
+   "C": "comma splice",
+   "D": "grammatical but illogical contrast ('however')"
   }
  }
 }

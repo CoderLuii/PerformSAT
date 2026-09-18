@@ -1,0 +1,29 @@
+{
+  "id": 15,
+  "question": "The edge of a sprinkler's watered region is graphed in the $xy$-plane, and every point on that edge satisfies $x^{2} - 10x + y^{2} + 6y = m$ for some constant $m$. If the region has a radius of $8$ meters, what is the value of $m$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-26$"
+    },
+    {
+      "id": "B",
+      "text": "$30$"
+    },
+    {
+      "id": "C",
+      "text": "$39$"
+    },
+    {
+      "id": "D",
+      "text": "$98$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the radius 8 where the radius squared belongs: 8 - 34 = -26",
+    "C": "completes the square on the x-terms only, adding 25 but forgetting the 9 from the y-terms: 64 - 25 = 39",
+    "D": "adds 34 to 64 instead of subtracting it: 64 + 34 = 98"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Completing both squares adds $25+9=34$ to the left side, so $m+34=8^{2}=64$ and $m=30$.\n\n**The Full Solution:**\nStep 1: Group the variables: $(x^{2}-10x)+(y^{2}+6y)=m$. Half of $-10$ is $-5$ and $(-5)^{2}=25$; half of $6$ is $3$ and $3^{2}=9$.\nStep 2: Add $25$ and $9$ to both sides: $(x-5)^{2}+(y+3)^{2}=m+25+9=m+34$.\nStep 3: In standard form the right side is $r^{2}$, so $m+34=8^{2}=64$ and $m=30$. Check: with $m=30$ the right side is $30+34=64$, and $\\sqrt{64}=8$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-26$): sets $m+34=8$, using the radius itself where $r^{2}$ belongs.\n* Choice C ($39$): completes the square on the $x$-terms only, adding $25$ and forgetting the $9$ the $y$-terms require: $64-25=39$.\n* Choice D ($98$): adds $34$ to $64$ instead of subtracting, moving the completing-the-square constants to the wrong side.\n\n**Test Day Takeaway:** Completing the square adds the SAME constants to both sides; the right side then equals $r^{2}$, never $r$."
+}

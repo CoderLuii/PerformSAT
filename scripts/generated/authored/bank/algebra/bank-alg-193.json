@@ -1,0 +1,29 @@
+{
+ "question": "A conduit layout satisfies the system $x=2y+3$ and $5x-y=24$. Which equation in $y$ alone results when the expression $2y+3$ is written in place of $x$ in the second equation of the system?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5(2y+3)=24$"
+  },
+  {
+   "id": "B",
+   "text": "$10y+3-y=24$"
+  },
+  {
+   "id": "C",
+   "text": "$5(2y+3)+y=24$"
+  },
+  {
+   "id": "D",
+   "text": "$5(2y+3)-y=24$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "drops the -y term from the second equation entirely",
+  "B": "multiplies only the 2y by 5 and leaves the 3 undistributed",
+  "C": "adds y instead of subtracting it"
+ },
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**Choice D is correct.** Replacing $x$ with $2y+3$ in $5x-y=24$ gives $5(2y+3)-y=24$.\n\n**The Fast Way (~20s):** Substitution swaps $x$ for the whole expression $2y+3$, leaving the rest of the equation untouched: $5(2y+3)-y=24$.\n\n**The Full Solution:**\n\nStep 1: The first equation gives $x$ alone, so every $x$ in the second equation can be replaced by $2y+3$.\n\nStep 2: The second equation is $5x-y=24$; replacing $x$ gives $5(2y+3)-y=24$.\n\nStep 3: Simplifying confirms it is an equation in $y$ alone: $10y+15-y=24$, so $9y=9$ and $y=1$. Check: then $x=2(1)+3=5$, and $5(5)-1=24$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: drops the $-y$ term, changing the second equation instead of only substituting into it.\n* Choice B: multiplies only the $2y$ by $5$ and leaves the $3$ undistributed, giving $10y+3$ instead of $10y+15$.\n* Choice C: adds $y$ where the original equation subtracts it.\n\n**Test Day Takeaway:** Substitution replaces the variable with the whole expression, parentheses included; every other term in the equation stays exactly as it was.",
+ "id": "bank-alg-193"
+}

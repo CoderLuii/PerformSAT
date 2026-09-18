@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "A coffee roaster's bean temperature, in degrees Celsius, $m$ minutes into a roast is $T(m)$. On a cooler morning the same roast follows $y = T(m) - 12$ over the whole interval. How does that graph compare with the graph of $y = T(m)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It is shifted $12$ units left."
+  },
+  {
+   "id": "B",
+   "text": "It is shifted $12$ units right."
+  },
+  {
+   "id": "C",
+   "text": "It is shifted $12$ units up."
+  },
+  {
+   "id": "D",
+   "text": "It is shifted $12$ units down."
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads a change outside the function as a horizontal move",
+  "B": "reads the minus sign as a move to the right",
+  "C": "reverses the direction of the vertical shift"
+ },
+ "correctAnswer": "D",
+ "hint": "Compare the two roasts at the same minute mark.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~10s):** Subtracting $12$ after the function lowers every temperature by $12$, so the graph drops $12$ units.\n\n**The Full Solution:**\nStep 1: The $-12$ is applied to the output of $T$, not to the input $m$.\nStep 2: Every point $(m, T(m))$ therefore becomes $(m, T(m) - 12)$: the horizontal position is unchanged and the height falls by $12$.\nStep 3: The graph is shifted $12$ units down. Check: if $T(6) = 140$, the cooler morning gives $140 - 12 = 128$ at the same minute $6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (left $12$): treating an outside change as a horizontal move; only changes to the input shift a graph sideways.\n* Choice B (right $12$): reading the minus sign as a rightward move, which would require $T(m - 12)$.\n* Choice C (up $12$): reversing the direction; subtracting lowers each output.\n\n**Test Day Takeaway:** Outside the function means vertical, and the sign reads straight: subtract to move down."
+}

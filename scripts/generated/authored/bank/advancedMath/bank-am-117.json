@@ -1,0 +1,6 @@
+{
+  "question": "A materials lab prepares $5$ identical batches, and each batch contains $5^{6}$ granules of powder. The total number of granules in the batches is $5^{m}$. What is the value of $m$?",
+  "correctAnswer": "7",
+  "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~10s):** $5\\cdot 5^{6}=5^{1}\\cdot 5^{6}=5^{7}$, so $m=7$.\n\n**The Full Solution:**\nStep 1: The total is $5$ groups of $5^{6}$ granules, or $5\\cdot 5^{6}$.\nStep 2: Write the factor $5$ as $5^{1}$, so the product is $5^{1}\\cdot 5^{6}$.\nStep 3: Multiplying powers of the same base adds exponents: $5^{1+6}=5^{7}$, so $m=7$. Check: $5\\cdot 15{,}625=78{,}125=5^{7}$ ✓\n\n**Common Mistakes:**\n* $6$: ignored the factor of $5$ batches and reported the exponent in one batch.\n* $30$: multiplied the exponents, treating $5\\cdot 5^{6}$ as $(5^{6})^{5}$.\n* $11$: added $5$ to the exponent instead of adding $1$.\n\n**Test Day Takeaway:** A lone base is a power with exponent $1$ — write it that way before combining.",
+  "id": "bank-am-117"
+}

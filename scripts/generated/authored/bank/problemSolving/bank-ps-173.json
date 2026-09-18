@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-173",
+  "question": "A spinner is divided into $10$ equal sectors numbered $1$ through $10$. If the spinner is spun once, what is the probability that it lands on a sector numbered with a prime number?",
+  "correctAnswer": "2/5",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**The correct answer is $\\frac{2}{5}$.**\n\n**The Fast Way (~10s):** The primes from $1$ to $10$ are $2, 3, 5, 7$: four of ten sectors, so $\\frac{4}{10} = \\frac{2}{5}$.\n\n**The Full Solution:**\nStep 1: List the primes among $1$ through $10$: $2, 3, 5, 7$. ($1$ is not prime; $4, 6, 8, 9, 10$ are composite.)\nStep 2: Favorable sectors: $4$. Total equally likely sectors: $10$.\nStep 3: Probability $= \\frac{4}{10} = \\frac{2}{5}$, which can also be entered as $0.4$. Check: $4$ favorable out of $10$ is $40\\%$. $\\checkmark$\n\n**Common Mistakes:** Counting $1$ as prime, which gives $\\frac{5}{10} = \\frac{1}{2}$; counting $9$ as prime; counting the odd numbers instead of the primes, also $\\frac{5}{10}$.\n\n**Test Day Takeaway:** For a probability over numbered outcomes, list the favorable numbers explicitly; $1$ is not prime and $2$ is."
+}

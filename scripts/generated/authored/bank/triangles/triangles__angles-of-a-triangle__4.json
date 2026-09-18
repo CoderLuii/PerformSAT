@@ -1,0 +1,41 @@
+{
+ "id": 4,
+ "question": "The spreader brace of a picking ladder forms the isosceles triangle shown, in which the two base angles each measure $z$ degrees. What is the value of $z$?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "z°",
+    "z°",
+    "48°"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$42$"
+  },
+  {
+   "id": "B",
+   "text": "$66$"
+  },
+  {
+   "id": "C",
+   "text": "$96$"
+  },
+  {
+   "id": "D",
+   "text": "$132$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes 90 - 48, treating the base angles as complementary to the apex",
+  "C": "doubles the apex angle",
+  "D": "stops at 180 - 48 without halving"
+ },
+ "correctAnswer": "B",
+ "hint": "The apex angle is the only one of the three that is not $z$.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** The two base angles share what is left of $180$ after the $48$-degree apex: $\\frac{132}{2} = 66$.\n\n**The Full Solution:**\nStep 1: The three interior angles sum to $180$ degrees, so $z + z + 48 = 180$.\nStep 2: Combine and subtract: $2z = 132$.\nStep 3: Divide by $2$: $z = 66$. Check: $66 + 66 + 48 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($42$): computing $90 - 48$, which would apply only if the base angles were complementary to the apex.\n* Choice C ($96$): doubling the apex angle instead of sharing the remaining $132$ degrees.\n* Choice D ($132$): stopping at $180 - 48$ without splitting that total between the two equal angles.\n\n**Test Day Takeaway:** In an isosceles triangle, subtract the odd angle from $180$ and split what remains in half."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A hotel's occupancy rate, as a percent, is modeled by a linear function of $d$, the number of days after a festival began. The model gives a rate of $38$ when $d = 2$ and a rate of $86$ when $d = 8$. What is the slope of this function?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.125$"
+  },
+  {
+   "id": "B",
+   "text": "$4.8$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the ratio, computing run over rise as 6/48 = 0.125",
+  "B": "uses the sum of the day numbers, 2 + 8 = 10, as the run: 48/10 = 4.8",
+  "C": "uses the later day number 8 as the run instead of the change in days: 48/8 = 6"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice D is correct.** The slope is the change in occupancy rate divided by the change in days: $\\frac{86 - 38}{8 - 2} = 8$.\n\n**The Fast Way (~20s):** The rate climbs $48$ points across $6$ days, so the slope is $\\frac{48}{6} = 8$.\n\n**The Full Solution:**\nStep 1: The two given data pairs are $(2, 38)$ and $(8, 86)$, with $d$ as the input and the occupancy rate as the output.\nStep 2: Apply the slope formula: $\\frac{86 - 38}{8 - 2} = \\frac{48}{6} = 8$.\nStep 3: Check by stepping forward from $(2, 38)$: six days at $8$ points per day adds $48$, and $38 + 48 = 86$, matching the second pair ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.125$): this computes $\\frac{6}{48}$, the change in days over the change in rate. Slope is always output change over input change.\n* Choice B ($4.8$): this uses $2 + 8 = 10$ as the run. The run is the difference of the inputs, not their sum.\n* Choice C ($6$): this divides by the later day number $8$ rather than by the $6$-day gap, forgetting that the first observation is at $d = 2$, not $d = 0$.\n\n**Test Day Takeaway:** Subtract in the same order top and bottom, and make sure the denominator is a difference of inputs — using a single input value as the run is the classic slip when the data do not start at zero."
+}

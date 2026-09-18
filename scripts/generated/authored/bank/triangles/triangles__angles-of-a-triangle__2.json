@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "An exterior angle at vertex $C$ of triangle $ABC$ has a measure of $142°$. What is the sum, in degrees, of the measures of angles $A$ and $B$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$38$"
+  },
+  {
+   "id": "B",
+   "text": "$71$"
+  },
+  {
+   "id": "C",
+   "text": "$142$"
+  },
+  {
+   "id": "D",
+   "text": "$218$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the interior angle at $C$, the supplement, rather than the sum of the other two angles",
+  "B": "halves the exterior angle, assuming angles $A$ and $B$ are equal",
+  "D": "subtracts the exterior angle from $360$ instead of using the exterior angle relationship"
+ },
+ "correctAnswer": "C",
+ "hint": "Find the interior angle at $C$ first, then use the $180°$ total.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** An exterior angle equals the sum of the two remote interior angles, so $m\\angle A + m\\angle B = 142$.\n\n**The Full Solution:**\nStep 1: The interior angle at $C$ is the supplement of the exterior angle: $180 - 142 = 38$.\nStep 2: The three interior angles total $180$: $m\\angle A + m\\angle B + 38 = 180$.\nStep 3: So $m\\angle A + m\\angle B = 142$, the measure of the exterior angle itself.\n\nVerification: $142 + 38 = 180$, so the exterior and interior angles at $C$ are supplementary. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($38$): gives the interior angle at $C$, the supplement, rather than the sum of the other two angles.\n* Choice B ($71$): halves the exterior angle, assuming angles $A$ and $B$ are equal.\n* Choice D ($218$): subtracts the exterior angle from $360$ instead of using the exterior angle relationship.\n\n**Test Day Takeaway:** An exterior angle of a triangle equals the sum of the two interior angles it does not touch."
+}

@@ -1,0 +1,25 @@
+{
+  "id": 2,
+  "question": "A conveyor belt carries boxes past a scanner at a constant rate of $2{,}700$ boxes per hour. At this rate, how many boxes pass the scanner per minute?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.75$"
+    },
+    {
+      "id": "B",
+      "text": "$27$"
+    },
+    {
+      "id": "C",
+      "text": "$45$"
+    },
+    {
+      "id": "D",
+      "text": "$162{,}000$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "A minute is a small slice of an hour, so the count per minute must be far smaller than the count per hour.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** There are $60$ minutes in an hour, so $\\frac{2{,}700}{60}=45$ boxes per minute — choice C.\n\n**The Full Solution:**\nStep 1: Write the rate as a fraction: $\\frac{2{,}700\\text{ boxes}}{1\\text{ hour}}$.\nStep 2: Multiply by $\\frac{1\\text{ hour}}{60\\text{ minutes}}$ so that hours cancel: $\\frac{2{,}700}{60}$ boxes per minute.\nStep 3: Divide: $\\frac{2{,}700}{60}=45$ boxes per minute. Check: $45(60)=2{,}700$ boxes in one hour. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.75$): divides by $3{,}600$, converting all the way to boxes per second instead of boxes per minute.\n* Choice B ($27$): divides by $100$, treating an hour as $100$ minutes.\n* Choice D ($162{,}000$): multiplies by $60$ instead of dividing, which scales the rate up when a shorter time interval must scale it down.\n\n**Test Day Takeaway:** Decide the direction before you compute: a shorter time interval means a smaller count, so the $60$ belongs in the denominator."
+}

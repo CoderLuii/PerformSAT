@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-393",
+  "question": "In the $xy$-plane, the graph of $y = 2(x - h)^2 - 18$ crosses the $x$-axis at $x = -9$ and $x = -3$, where $h$ is a constant. What is the value of $h$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-12$"
+    },
+    {
+      "id": "B",
+      "text": "$-6$"
+    },
+    {
+      "id": "C",
+      "text": "$-3$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the two intercepts instead of averaging them",
+    "C": "reports the larger intercept",
+    "D": "flips the sign of $h$"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The vertex sits midway between the intercepts, so $h = \\dfrac{-9 + (-3)}{2} = -6$.\n\n**The Full Solution:**\nStep 1: A parabola is symmetric about its vertical axis, and that axis is $x = h$ for $y = 2(x - h)^2 - 18$.\nStep 2: The axis passes through the midpoint of the two $x$-intercepts: $\\dfrac{-9 + (-3)}{2} = \\dfrac{-12}{2} = -6$.\nStep 3: $h = -6$. Check: $y = 2(x + 6)^2 - 18$ gives $2(9) - 18 = 0$ at $x = -9$ and $2(9) - 18 = 0$ at $x = -3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-12$): adds the intercepts but forgets to divide by $2$.\n* Choice C ($-3$): reports one of the intercepts rather than the value halfway between them.\n* Choice D ($6$): finds the correct distance but flips the sign, reading $(x - h)$ as $(x + h)$.\n\n**Test Day Takeaway:** The axis of symmetry is the AVERAGE of the two $x$-intercepts, and that average is exactly $h$ in vertex form."
+}

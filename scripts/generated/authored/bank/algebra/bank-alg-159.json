@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-159",
+ "question": "A canal-boat operator sets two scheduling requirements: $ax - 6y = 5$ for morning departures and $2x - 3y = 11$ for afternoon departures. The requirements conflict, so no pair $(x, y)$ satisfies both. What is the value of the constant $a$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~30s):** The $y$-coefficients scale by $2$, so $a = 2(2) = 4$.\n\n**The Full Solution:**\n\nStep 1: For no pair to satisfy both requirements, the two left sides must be proportional while the constants are not.\n\nStep 2: Compare the $y$-coefficients: $-6 = 2(-3)$, so the scale factor is $2$. Applying it to the $x$-coefficient gives $a = 2(2) = 4$.\n\nStep 3: Check the constants: doubling $2x - 3y = 11$ gives $4x - 6y = 22$, and $22 \\ne 5$, so the requirements conflict. Thus $a = 4$.\n\n**Common Mistakes:**\n\n* $2$ — copying the coefficient of $x$ from the second requirement without applying the scale factor.\n* $-4$ — attaching the minus sign from the $y$-terms to the $x$-coefficient as well.\n* $1$ — halving instead of doubling, applying the scale factor in the wrong direction.\n\n**Test Day Takeaway:** The scale factor comes from whichever pair of coefficients is fully known; apply it to the unknown coefficient, never to the constants."
+}

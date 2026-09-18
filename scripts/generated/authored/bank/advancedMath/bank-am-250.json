@@ -1,0 +1,28 @@
+{
+  "id": "bank-am-250",
+  "question": "The figure graphs the floor elevation $f$, in centimeters above a benchmark, of a culvert at a distance $x$, in meters, from a reference marker. If $h(x)=f(x+3)$, what is the $x$-coordinate of the vertex of the graph of $y=h(x)$?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": -4,
+        "k": 1
+      },
+      "a": 0.5,
+      "xRange": [
+        -9,
+        1
+      ],
+      "yRange": [
+        0,
+        14
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showVertex": false
+    }
+  },
+  "correctAnswer": "-7",
+  "explanation": "**SAT Pattern: Horizontal Shift**\n\n**The correct answer is $-7$.**\n\n**The Fast Way (~20s):** The drawn low point is at $x=-4$; adding 3 inside shifts the graph 3 units left, to $x=-7$.\n\n**The Full Solution:**\nStep 1: The figure shows the turning point of $f$ at $x=-4$.\nStep 2: The vertex of $h$ occurs where the inner input equals $-4$, that is, where $x+3=-4$.\nStep 3: Solving gives $x=-7$ meters. Check: $h(-7)=f(-7+3)=f(-4)$, the low point ✓\n\n**Common Mistakes:** Adding 3 to the vertex gives $-1$, the shift in the wrong direction. Reporting the vertex's height, 1, answers a different question. Leaving the vertex at $-4$ ignores the shift entirely.\n\n**Test Day Takeaway:** Set the expression inside the function equal to the original input, then solve — that is where the transformed feature lands."
+}

@@ -1,0 +1,54 @@
+{
+ "id": 1,
+ "question": "The table records the number of unsold seats remaining for a scenic railway excursion on four days after tickets went on sale. Which of the following best describes the meaning of the slope of the linear model of these data?",
+ "questionTable": {
+  "headers": [
+   "Days after tickets went on sale",
+   "Unsold seats"
+  ],
+  "rows": [
+   [
+    "0",
+    "240"
+   ],
+   [
+    "2",
+    "210"
+   ],
+   [
+    "4",
+    "180"
+   ],
+   [
+    "6",
+    "150"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The number of unsold seats decreased by $15$ each day."
+  },
+  {
+   "id": "B",
+   "text": "The number of unsold seats decreased by $30$ each day."
+  },
+  {
+   "id": "C",
+   "text": "The number of unsold seats decreased by $240$ each day."
+  },
+  {
+   "id": "D",
+   "text": "There were $15$ unsold seats when tickets went on sale."
+  }
+ ],
+ "distractorNotes": {
+  "B": "reads the 30-seat drop between consecutive table rows as a one-day drop, ignoring that the rows are 2 days apart",
+  "C": "uses the day-0 value 240 as the rate of change instead of as the starting amount",
+  "D": "interprets the slope 15 as the y-intercept, that is, as a starting number of seats"
+ },
+ "correctAnswer": "A",
+ "choiceOrderNote": "Choices are interpretive statements, not numeric values, so they are ordered by the quantity each statement misreads.",
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice A is correct.** The slope of a linear model is the change in the output for a one-unit change in the input, so here it is the change in unsold seats per day.\n\n**The Fast Way (~15s):** Seats fall $30$ over each $2$-day step in the table, so the per-day change is $30 \\div 2 = 15$ seats lost per day.\n\n**The Full Solution:**\nStep 1: Take any two rows, say $(0, 240)$ and $(6, 150)$. The change in unsold seats is $150 - 240 = -90$ and the change in days is $6 - 0 = 6$.\nStep 2: The slope is $\\frac{-90}{6} = -15$. The negative sign means the number of unsold seats is decreasing.\nStep 3: Check with a different pair: from $(2, 210)$ to $(4, 180)$ the slope is $\\frac{180 - 210}{4 - 2} = \\frac{-30}{2} = -15$, the same value, so the data are linear and $15$ seats are lost per day ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($30$ per day): $30$ is the drop from one table row to the next, but consecutive rows are $2$ days apart, so $30$ is a two-day drop, not a daily one.\n* Choice C ($240$ per day): $240$ is the value at day $0$, the y-intercept of the model, not its rate of change.\n* Choice D ($15$ seats at the start): this attaches the slope value $15$ to the starting amount; the model starts at $240$ unsold seats.\n\n**Test Day Takeaway:** When a table's input values step by more than $1$, divide the output change by the actual input change — never read the row-to-row difference as the slope."
+}

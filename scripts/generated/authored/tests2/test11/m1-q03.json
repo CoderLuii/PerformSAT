@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "Renting a scissor lift costs $\\$95$ for delivery plus $\\$40$ for each day it stays on site. Which equation gives the total cost $C$, in dollars, of renting the lift for $d$ days?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$C = 95d + 40$"
+  },
+  {
+   "id": "B",
+   "text": "$C = 135d$"
+  },
+  {
+   "id": "C",
+   "text": "$C = 40d - 95$"
+  },
+  {
+   "id": "D",
+   "text": "$C = 40d + 95$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the one-time delivery charge with the daily rate",
+  "B": "adds the delivery charge into the daily rate and charges it every day",
+  "C": "subtracts the delivery charge instead of adding it"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Linear Cost Setup**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The charge that repeats attaches to $d$ and the charge that happens once stands alone, so $C = 40d + 95$.\n\n**The Full Solution:**\nStep 1: The lift costs $\\$40$ for each day on site, so $d$ days of rental cost $40d$ dollars.\nStep 2: Delivery is charged one time no matter how long the lift stays, so it contributes the constant $95$ dollars.\nStep 3: The total is the sum of the two parts: $C = 40d + 95$. Check with $d = 3$: the equation gives $40(3) + 95 = 215$ dollars, which matches $\\$120$ for three days plus the $\\$95$ delivery. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($C = 95d + 40$): this attaches the one-time $\\$95$ to the number of days. At $d = 3$ it charges $\\$325$, which bills delivery three times.\n* Choice B ($C = 135d$): this rolls the delivery charge into the daily rate, giving $\\$405$ for three days instead of $\\$215$.\n* Choice C ($C = 40d - 95$): this subtracts delivery, giving only $\\$25$ for three days, less than the daily charges alone.\n\n**Test Day Takeaway:** Sort each amount into per-unit or one-time before writing the equation: per-unit amounts multiply the variable, one-time amounts are the constant."
+}

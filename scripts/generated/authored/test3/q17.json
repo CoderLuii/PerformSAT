@@ -5,30 +5,31 @@
  "band": 3,
  "domain": "standard-english-conventions",
  "skill": "boundaries",
+ "type": "multiple-choice",
+ "passage": "Pando, a stand of quaking aspen in central Utah, is not a forest of separate trees but a single organism whose roughly 47,000 stems sprout from one enormous root system. Individual aspen stems are short-lived, rarely standing for even two ______ the root system beneath Pando has endured, by some estimates, for thousands of years.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "twenty-three,"
+   "text": "centuries,"
   },
   {
    "id": "B",
-   "text": "twenty-three"
+   "text": "centuries"
   },
   {
    "id": "C",
-   "text": "twenty-three;"
+   "text": "centuries;"
   },
   {
    "id": "D",
-   "text": "twenty-three:"
+   "text": "centuries:"
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C, \"twenty-three;\". The blank falls between two independent clauses: \"The painter Jacob Lawrence completed his sixty-panel Migration Series in 1941, when he was only twenty-three\" can stand alone, and so can \"the series traces … the movement of African Americans from the rural South to the cities of the North.\" Two independent clauses require a period, a semicolon, or a comma plus a coordinating conjunction; among these options only the semicolon does the job. The comma alone (A) produces a comma splice, and no punctuation at all (B) leaves a fused sentence. The colon (D) would signal that the second clause defines or explains the first, but the second clause simply continues the account rather than explaining how old Lawrence was.",
+ "explanation": "**Choice C is correct.** The blank sits between two independent clauses — \"Individual aspen stems are short-lived...\" and \"the root system beneath Pando has endured...\" — and a semicolon is the standard way to join two related independent clauses without a conjunction.\n\n**The Full Solution:**\n- Test each side: both halves have a subject and a verb and can stand alone as sentences.\n- Two independent clauses may be joined by a period, a semicolon, or a comma plus a coordinating conjunction. Among the options, only the semicolon qualifies.\n- The clauses contrast (short-lived stems, ancient roots), a relationship the semicolon handles naturally.\n\n**Why the other choices are wrong:**\n- A: A comma alone between independent clauses produces a comma splice.\n- B: No punctuation at all fuses the two clauses into a run-on.\n- D: A colon signals that what follows explains or specifies what precedes; the second clause instead pivots to a contrasting fact, so the colon misrepresents the relationship.",
  "_meta": {
-  "anchor": "Jacob Lawrence — painter; Migration Series (1941); independent-clause boundary"
- },
- "passage": "The painter Jacob Lawrence completed his sixty-panel Migration Series in 1941, when he was only twenty-three ______ the series traces, in spare and brightly colored scenes, the movement of African Americans from the rural South to the cities of the North.",
- "type": "multiple-choice"
+  "anchor": "Pando quaking-aspen clone, Utah — semicolon between contrasting independent clauses",
+  "rule": "semicolon joining two independent clauses"
+ }
 }

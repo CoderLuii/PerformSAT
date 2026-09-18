@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-045",
+  "question": "For an evening event, an aquarium sold adult tickets for $\\$14$ each and child tickets for $\\$9$ each. The number of child tickets sold was $3$ times the number of adult tickets sold, and the total ticket revenue was $\\$2{,}460$. If $a$ adult tickets and $c$ child tickets were sold, which system of equations represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$a = 3c$ and $14a + 9c = 2{,}460$"
+    },
+    {
+      "id": "B",
+      "text": "$c = 3a$ and $9a + 14c = 2{,}460$"
+    },
+    {
+      "id": "C",
+      "text": "$a + c = 3$ and $14a + 9c = 2{,}460$"
+    },
+    {
+      "id": "D",
+      "text": "$c = 3a$ and $14a + 9c = 2{,}460$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses the ratio (makes adults 3 times children)",
+    "B": "swaps the two prices",
+    "C": "misreads \"3 times\" as a total of 3 tickets"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Ticket Sales System**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** \"Child tickets were $3$ times adult tickets\" is $c = 3a$. Revenue: $14a + 9c = 2{,}460$.\n\n**The Full Solution:**\nStep 1: Translate the comparison: the child count equals $3$ times the adult count, so $c = 3a$ (not $a = 3c$).\nStep 2: Revenue is price times count for each type: $14a + 9c = 2{,}460$.\nStep 3: Check by solving: substitute $c = 3a$ to get $14a + 27a = 41a = 2{,}460$, so $a = 60$ and $c = 180$; indeed $180 = 3(60)$ and $840 + 1{,}620 = 2{,}460$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($a = 3c$ and $14a + 9c = 2{,}460$): reverses the ratio, making adult tickets triple the child tickets.\n* Choice B ($c = 3a$ and $9a + 14c = 2{,}460$): attaches the child price to the adult count and vice versa.\n* Choice C ($a + c = 3$ and $14a + 9c = 2{,}460$): turns \"3 times\" into a total of $3$ tickets, which cannot produce $\\$2{,}460$.\n\n**Test Day Takeaway:** \"$X$ was $k$ times $Y$\" translates to $X = kY$: the multiplier attaches to the quantity being compared TO, and the larger quantity stands alone."
+}

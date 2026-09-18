@@ -1,0 +1,47 @@
+{
+ "id": 2,
+ "question": "In a $30°$-$60°$-$90°$ triangle, the side opposite the $30°$ angle has length $9$. What is the length of the side opposite the $90°$ angle?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "30°",
+    "",
+    "60°"
+   ],
+   "sideLabels": [
+    "",
+    "9",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9\\sqrt{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$9\\sqrt{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$27$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses $\\sqrt{2}$, which belongs to the $45°$-$45°$-$90°$ ratios",
+  "B": "gives the side opposite the $60°$ angle",
+  "D": "triples the shorter leg instead of doubling it"
+ },
+ "correctAnswer": "C",
+ "hint": "The side opposite the largest angle is the hypotenuse — compare it with the shortest side.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** The hypotenuse is twice the side opposite the $30°$ angle: $2(9) = 18$.\n\n**The Full Solution:**\nStep 1: The side opposite the $90°$ angle is the hypotenuse.\nStep 2: In a $30°$-$60°$-$90°$ triangle the sides are in the ratio $1 : \\sqrt{3} : 2$, shortest to longest.\nStep 3: The shorter leg is $9$, so the hypotenuse is $2(9) = 18$.\n\nVerification: $9^2 + (9\\sqrt{3})^2 = 81 + 243 = 324 = 18^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($9\\sqrt{2}$): uses $\\sqrt{2}$, which belongs to the $45°$-$45°$-$90°$ ratios.\n* Choice B ($9\\sqrt{3}$): gives the side opposite the $60°$ angle.\n* Choice D ($27$): triples the shorter leg instead of doubling it.\n\n**Test Day Takeaway:** The shorter leg of a $30°$-$60°$-$90°$ triangle is exactly half the hypotenuse."
+}

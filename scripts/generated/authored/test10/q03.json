@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 1,
- "passage": "The Swiss designer Adolphe Appia argued that the painted backdrops of nineteenth-century opera, however detailed, flattened the living bodies of singers against them. In place of such scenery, he proposed three-dimensional platforms, steps, and shifting light that would ______ with the performers' movement rather than sit behind it as a static picture, so that the stage itself became an active element of the drama.",
+ "passage": "Most modern tea estates are planted with rooted cuttings, so every bush is a genetic copy of a single selected parent and the leaf it yields is strikingly uniform from row to row. Gardens raised from seed are another matter: because each plant carries its own combination of traits, the leaf they produce is far more ______ in flavor, ripening time, and appearance.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "compete"
+   "text": "consistent"
   },
   {
    "id": "B",
-   "text": "interfere"
+   "text": "expensive"
   },
   {
    "id": "C",
-   "text": "interact"
+   "text": "variable"
   },
   {
    "id": "D",
-   "text": "coincide"
+   "text": "fragrant"
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. Appia rejects flat painted scenery and proposes platforms, steps, and shifting light that move with the performers instead of sitting behind them, so the stage becomes an active partner in the drama. \"Interact\" captures that working-together relationship. \"Compete\" and \"interfere\" both imply the scenery would work against the performers, the opposite of his aim, and \"coincide\" merely means to occur at the same time, which misses the sense of responsive collaboration the passage describes."
+ "explanation": "**Choice C is correct.** The sentence contrasts seed-raised gardens with genetically identical cuttings, so the blank must mean the opposite of \"strikingly uniform\": variable.\n\n**The Full Solution:**\n- The first sentence establishes the baseline: bushes grown from cuttings are copies of one parent, and their leaf is uniform.\n- \"Another matter\" signals a contrast, and the reason given, that each seed-grown plant \"carries its own combination of traits,\" points to leaf that differs from plant to plant, that is, variable leaf.\n\n**Why the other choices are wrong:**\n- A: \"Consistent\" repeats the quality of the cutting-grown estates instead of contrasting with it.\n- B: \"Expensive\" is about price, which the passage never discusses.\n- D: \"Fragrant\" names a single pleasant quality, but the sentence is about differences across plants, not about aroma."
 }

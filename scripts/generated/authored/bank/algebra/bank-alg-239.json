@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-239",
+ "question": "The number of passes a visitor center issues on day $t$ of a summer season is given both by $4(ct - 3) - 5t$ and by $19t + d$, where $c$ and $d$ are constants. What is the value of $c + d$?",
+ "correctAnswer": "-6",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**The correct answer is $-6$.**\n\n**The Fast Way (~30s):** $4c - 5 = 19$ gives $c = 6$, and the constant is $d = -12$, so $c + d = -6$.\n\n**The Full Solution:**\n\nStep 1: Distribute and combine: $4(ct - 3) - 5t = 4ct - 12 - 5t = (4c - 5)t - 12$.\n\nStep 2: Match the coefficients of $t$: $4c - 5 = 19$, so $4c = 24$ and $c = 6$.\n\nStep 3: Match the constants: $d = -12$. Therefore $c + d = 6 + (-12) = -6$. Check with $t = 1$: $4(6 - 3) - 5 = 7$ and $19(1) - 12 = 7$.\n\n**Common Mistakes:**\n\n* $6$ — stopping at $c$ and never reporting the sum the question asks for.\n* $18$ — adding $c = 6$ to $12$ instead of to $-12$, losing the sign of the constant.\n* $-3$ — treating the $-3$ inside the parentheses as $d$ without distributing the $4$.\n\n**Test Day Takeaway:** After matching coefficients, reread the question: it often asks for a combination of the constants, not for one of them."
+}

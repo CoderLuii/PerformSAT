@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-405",
+ "question": "In a lake-temperature model, the two depths, in meters, at which the modeled profile crosses a reference temperature are the two solutions of the equation $4x^2 - 28x + 33 = 0$. What is the product of the two depths?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8.25$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$8.25$"
+  },
+  {
+   "id": "D",
+   "text": "$33$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses -c/a for the product instead of c/a",
+  "B": "reports the sum of the depths, 28/4",
+  "D": "uses the constant term 33 without dividing by the leading coefficient 4"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vieta Sum & Product of Roots**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The product of the solutions is $\\frac{c}{a} = \\frac{33}{4} = 8.25$.\n\n**The Full Solution:**\nStep 1: Identify $a = 4$, $b = -28$, and $c = 33$ in $4x^2 - 28x + 33 = 0$.\nStep 2: The product of the two solutions of a quadratic equation is $\\frac{c}{a}$, so the product of the depths is $\\frac{33}{4}$.\nStep 3: As a decimal, $\\frac{33}{4} = 8.25$. Check: the equation factors as $(2x - 3)(2x - 11) = 0$, giving depths $1.5$ and $5.5$ meters, and $1.5 \\times 5.5 = 8.25$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8.25$): uses $-\\frac{c}{a}$; the minus belongs to the sum formula, not the product formula.\n* Choice B ($7$): reports the sum $\\frac{28}{4} = 7$ rather than the product.\n* Choice D ($33$): uses the constant term alone, skipping the division by the leading coefficient $4$.\n\n**Test Day Takeaway:** Product of the roots is $\\frac{c}{a}$ and sum is $-\\frac{b}{a}$ — only the sum carries the minus sign."
+}

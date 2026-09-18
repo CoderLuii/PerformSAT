@@ -1,0 +1,29 @@
+{
+ "id": 6,
+ "question": "The table gives the volume of fuel, in liters, remaining in a tour boat's tank after $x$ minutes of cruising, where the volume is a linear function $L$ of $x$. For what value of $t$ is $L(t)$ equal to half of $L(4)$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Minutes cruising, x",
+    "Fuel remaining, L(x) (liters)"
+   ],
+   "rows": [
+    [
+     "5",
+     "210"
+    ],
+    [
+     "12",
+     "168"
+    ],
+    [
+     "25",
+     "90"
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "22",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**The correct answer is $22$.**\n\n**The Fast Way (~40s):** From $(5, 210)$ to $(12, 168)$ the volume falls $6$ liters per minute, so $L(x) = 240 - 6x$. Then $L(4) = 216$, half of which is $108$, and $240 - 6t = 108$ gives $t = 22$.\n\n**The Full Solution:**\nStep 1: Find the rate. Between the first two rows the fuel drops $210 - 168 = 42$ liters over $12 - 5 = 7$ minutes, a rate of $-6$ liters per minute. The third row confirms it: $168 - 90 = 78$ over $25 - 12 = 13$ minutes is also $-6$.\nStep 2: Build the rule. Using $(5, 210)$: $L(x) = 210 - 6(x - 5) = 240 - 6x$. So $L(4) = 240 - 24 = 216$ liters, and half of that is $108$ liters.\nStep 3: Solve $240 - 6t = 108$: $6t = 132$, so $t = 22$. Check: $L(22) = 240 - 132 = 108$, exactly half of $L(4) = 216$. ✓\n\n**Common Mistakes:**\n* $108$: reports the fuel volume the question describes instead of the time $t$ at which the tank holds it.\n* $18$: divides $108$ by the rate of $6$ liters per minute and forgets the $240$-liter starting volume, solving $6t = 108$ instead of $240 - 6t = 108$.\n* $2$: halves the input, answering $\\frac{4}{2}$, rather than halving the output $L(4)$.\n\n**Test Day Takeaway:** Half of $L(4)$ means half of the OUTPUT. Turn the table into a rule first, evaluate at the named input, and only then apply the words half, twice, or three times to that value."
+}

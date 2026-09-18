@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-331",
+ "question": "A thermocouple mounting tab, drawn here, is a right triangle whose three edges total $154$ millimeters. The right angle of the tab is at vertex $B$, and only two of its three edges carry a labeled length. What is the value of $\\sin C$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     33,
+     0
+    ],
+    [
+     33,
+     56
+    ]
+   ],
+   "labels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "sideLabels": [
+    "",
+    "56",
+    "65"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{33}{65}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{33}{56}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{56}{65}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{65}{56}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports tan C = 33/56, opposite over adjacent",
+  "C": "reports cos C = 56/65, adjacent over hypotenuse",
+  "D": "inverts cos C, giving hypotenuse over adjacent"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Trig Ratio from Perimeter**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The unlabeled edge is $154 - 56 - 65 = 33$, and it lies opposite angle $C$, so $\\sin C = \\frac{33}{65}$.\n\n**The Full Solution:**\nStep 1: Two edges are labeled $56$ and $65$ millimeters, so the third is $154 - 56 - 65 = 33$ millimeters.\nStep 2: The right angle is at $B$, so $\\overline{CA} = 65$ is the hypotenuse, $\\overline{AB} = 33$ is opposite angle $C$, and $\\overline{BC} = 56$ is adjacent to angle $C$.\nStep 3: $\\sin C = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{33}{65}$.\n\nCheck: $33^2 + 56^2 = 1{,}089 + 3{,}136 = 4{,}225 = 65^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{33}{56}$): divides the opposite leg by the adjacent leg, which is $\\tan C$.\n* Choice C ($\\frac{56}{65}$): uses the adjacent leg over the hypotenuse, which is $\\cos C$.\n* Choice D ($\\frac{65}{56}$): inverts $\\cos C$; a sine can never exceed $1$.\n\n**Test Day Takeaway:** Sine and cosine both sit over the hypotenuse, so the only decision left is which leg faces the angle."
+}

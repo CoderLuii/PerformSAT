@@ -1,0 +1,51 @@
+{
+  "id": "bank-ps-048",
+  "question": "The table shows the results of two surveys, each of a different random sample of commuters in a city, that estimated the percent of commuters in the city who use public transit. Based on both surveys, which of the following is a plausible value for the percent of all commuters in the city who use public transit?",
+  "questionTable": {
+    "headers": [
+      "Survey",
+      "Sample size",
+      "Estimate",
+      "Margin of error"
+    ],
+    "rows": [
+      [
+        "1",
+        "400",
+        "47%",
+        "5%"
+      ],
+      [
+        "2",
+        "1,600",
+        "52%",
+        "2.5%"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$45\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$51\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$54\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$57\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "lies within survey 1's range but below survey 2's lower bound of $49.5\\%$.",
+    "C": "lies within survey 2's range but above survey 1's upper bound of $52\\%$.",
+    "D": "adds survey 1's $5\\%$ margin to survey 2's estimate; it is outside both ranges."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Confidence Intervals**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Survey 1 gives a plausible range of $42\\%$ to $52\\%$; survey 2 gives $49.5\\%$ to $54.5\\%$. Only $51\\%$ lies in both ranges.\n\n**The Full Solution:**\nStep 1: Each survey's plausible range is its estimate $\\pm$ its margin of error. Survey 1: $47\\% \\pm 5\\%$, or $42\\%$ to $52\\%$. Survey 2: $52\\% \\pm 2.5\\%$, or $49.5\\%$ to $54.5\\%$.\nStep 2: A value consistent with BOTH surveys must lie in the overlap of the two ranges: $49.5\\%$ to $52\\%$.\nStep 3: Of the choices, only $51\\%$ falls in $49.5\\%$ to $52\\%$. Check: $51$ is within $5$ of $47$ and within $2.5$ of $52$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($45\\%$): lies within survey 1's range but below survey 2's lower bound of $49.5\\%$.\n* Choice C ($54\\%$): lies within survey 2's range but above survey 1's upper bound of $52\\%$.\n* Choice D ($57\\%$): adds survey 1's $5\\%$ margin to survey 2's estimate; it is outside both ranges.\n\n**Test Day Takeaway:** Each survey yields an interval; a value supported by two surveys must sit in the intersection of their intervals. Larger samples give tighter intervals."
+}

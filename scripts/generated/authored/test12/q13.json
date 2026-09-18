@@ -1,73 +1,67 @@
 {
-  "id": 1213,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 1,
-  "passage": "Astronomers measure the average iron abundance of a galaxy's stars — its mean stellar metallicity, written [Fe/H] — to gauge how much chemical enrichment the galaxy's stars have inherited from prior generations. In a 2013 paper in the Astrophysical Journal, Evan Kirby and colleagues compared mean [Fe/H] values across five dwarf spheroidal galaxies orbiting the Milky Way and reported that, despite the galaxies' shared classification, one galaxy stood out from the rest because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Mean stellar metallicity [Fe/H] of selected dwarf galaxies (Kirby et al., 2013, Astrophysical Journal)",
-    "headers": [
-      "Galaxy",
-      "Type",
-      "Mean [Fe/H]",
-      "Number of stars analyzed"
-    ],
-    "rows": [
-      [
-        "Sculptor",
-        "dSph",
-        "-1.68",
-        "376"
-      ],
-      [
-        "Fornax",
-        "dSph",
-        "-1.04",
-        "675"
-      ],
-      [
-        "Sextans",
-        "dSph",
-        "-1.94",
-        "141"
-      ],
-      [
-        "Leo I",
-        "dSph",
-        "-1.43",
-        "827"
-      ],
-      [
-        "Draco",
-        "dSph",
-        "-1.93",
-        "298"
-      ]
-    ]
-  },
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Fornax has a mean [Fe/H] of -1.04, the highest (least negative) value among the five galaxies and well above the next-highest value of -1.43 for Leo I."
-    },
-    {
-      "id": "B",
-      "text": "Sextans has a mean [Fe/H] of -1.94, the highest value of the five galaxies and a clear sign of advanced chemical enrichment."
-    },
-    {
-      "id": "C",
-      "text": "Leo I, with 827 stars analyzed, has the largest sample size of the five galaxies surveyed by Kirby and colleagues."
-    },
-    {
-      "id": "D",
-      "text": "Sculptor has a mean [Fe/H] of -1.68, more enriched than Fornax's -1.04 and slightly less enriched than Leo I's -1.43."
-    }
+ "id": 1213,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 1,
+ "passage": "In target competition, hot-air balloon pilots attempt to drop a weighted marker as close as possible to a target laid out on the ground, and a pilot's performance over a championship is summarized by the mean distance from marker to target across all scored tasks. Reviewing one national championship, the event's organizers noted that although the top five finishers were closely matched on most measures, one competitor stood clearly apart from the rest because ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Top five finishers at a national hot-air balloon championship",
+  "headers": [
+   "Pilot",
+   "Mean distance from target (meters)",
+   "Tasks scored"
   ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The statement needs the galaxy that \"stood out from the rest,\" and the table shows Fornax at −1.04, the least negative—and therefore highest—value, far above the next-highest, Leo I at −1.43. A uses those figures correctly. B misreads the scale: −1.94 is the lowest, not the highest, value, so Sextans does not stand out for enrichment. C cites the sample size, which is not what makes a galaxy unusual in metallicity. D states the relationships among three galaxies accurately enough but does not identify the one outlier the statement calls for."
+  "rows": [
+   [
+    "Pilot 1",
+    "4.2",
+    "18"
+   ],
+   [
+    "Pilot 2",
+    "21.5",
+    "18"
+   ],
+   [
+    "Pilot 3",
+    "24.8",
+    "17"
+   ],
+   [
+    "Pilot 4",
+    "27.1",
+    "18"
+   ],
+   [
+    "Pilot 5",
+    "29.9",
+    "16"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Pilot 1's mean marker distance of 4.2 meters was by far the lowest of the five, less than a fifth of the next-best mean of 21.5 meters."
+  },
+  {
+   "id": "B",
+   "text": "Pilot 5 recorded the highest mean marker distance of the five in the table, 29.9 meters, and also scored the fewest tasks of any of the finishers."
+  },
+  {
+   "id": "C",
+   "text": "Pilot 3 scored 17 tasks, one fewer than the 18 tasks scored by each of three of the other pilots and one more than the 16 tasks scored by Pilot 5."
+  },
+  {
+   "id": "D",
+   "text": "the five pilots' mean marker distances ranged from 4.2 meters at the low end to 29.9 meters at the high end."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The sentence needs the competitor who \"stood clearly apart from the rest,\" and the table shows Pilot 1 at 4.2 meters — a mean less than one fifth of the next-best 21.5 meters, while the other four cluster between 21.5 and 29.9.\n\n**The Full Solution:**\n- In this event a lower mean distance is better, so scan the distance column for a value separated from the pack.\n- Pilots 2 through 5 sit within about 8 meters of one another (21.5 to 29.9) — that is the \"closely matched\" group the sentence describes.\n- Pilot 1's 4.2 meters lies far below that cluster, so Pilot 1 is the one who stands apart, exactly as choice A states.\n\n**Why the other choices are wrong:**\n- B: Pilot 5's 29.9 meters sits only 2.8 meters from Pilot 4's mean — the worst of the cluster, not a competitor set apart from it.\n- C: Task counts differ by at most two across the field; they show the pilots' similarity, not one standing apart.\n- D: Stating the overall range never identifies which pilot stands apart or by how much."
 }

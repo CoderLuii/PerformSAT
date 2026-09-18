@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-498",
+ "question": "A receiver's signal noise, in millivolts, is modeled by $N(f) = 6(f - 2)^2 + 25$, where $f$ is the tuning frequency in gigahertz. Written in the form $af^2 + bf + c$, what is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$24$"
+  },
+  {
+   "id": "B",
+   "text": "$25$"
+  },
+  {
+   "id": "C",
+   "text": "$29$"
+  },
+  {
+   "id": "D",
+   "text": "$49$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes 6(2)^2 = 24 and stops before adding 25",
+  "B": "reports 25, the constant inside the vertex form",
+  "C": "adds 4 + 25 without multiplying the 4 by 6"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The constant term is the value at $f = 0$: $6(4) + 25 = 49$.\n\n**The Full Solution:**\nStep 1: Expand the square: $(f - 2)^2 = f^2 - 4f + 4$.\nStep 2: Multiply by $6$: $6f^2 - 24f + 24$.\nStep 3: Add $25$: $N(f) = 6f^2 - 24f + 49$, so $c = 49$. Check: $N(0) = 6(0 - 2)^2 + 25 = 49$, matching the constant term ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($24$): computes $6(2)^2 = 24$ and never adds the outside $25$.\n* Choice B ($25$): reports the constant that sits inside the vertex form rather than the expanded constant.\n* Choice C ($29$): adds $4 + 25$, forgetting that the $4$ is multiplied by $6$ first.\n\n**Test Day Takeaway:** The constant term of the expanded form equals the function's value at an input of zero."
+}

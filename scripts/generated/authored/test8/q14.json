@@ -1,31 +1,61 @@
 {
-  "id": 814,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 1,
-  "passage": "Since 1993, satellite altimeters have produced a continuous record of global mean sea level. Researchers maintaining the dataset argue that it shows more than a simple rise: the rate of rise has itself increased over time. A student preparing a public talk wants to use the decadal averages below to argue that the satellite record demonstrates an accelerating rate of sea-level rise across the past three decades rather than a constant rate, because _______\n\nMean rate of global mean sea-level rise by decadal window (satellite altimetry)\n| Decadal window | Mean rate of rise (mm per year) |\n|---|---|\n| 1993-2002 | 2.7 |\n| 1998-2007 | 3.1 |\n| 2003-2012 | 3.0 |\n| 2008-2017 | 3.8 |\n| 2013-2022 | 4.5 |",
-  "question": "Which choice most effectively uses data from the table to support the claim?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the 1998-2007 rate (3.1 mm per year) was slightly higher than the 2003-2012 rate (3.0 mm per year)."
-    },
-    {
-      "id": "B",
-      "text": "the mean rate of rise climbed from 2.7 mm per year in 1993-2002 to 4.5 mm per year in 2013-2022, the latest window showing the fastest rate."
-    },
-    {
-      "id": "C",
-      "text": "the cumulative rise across the full record reached roughly 100 mm, the largest total the satellite record has documented."
-    },
-    {
-      "id": "D",
-      "text": "the 2008-2017 rate (3.8 mm per year) falls between the earliest and latest windows, showing that the rate has held essentially steady."
-    }
+ "id": 814,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 1,
+ "passage": "Canning began as handwork: for decades after the tin can's introduction, each can was cut, formed, and soldered shut by a skilled tinsmith and his helper. Machines then took over the work piecemeal — first stamped bodies, later the automatic double-seam closing machines that needed no solder at all. A student preparing an exhibit panel wants to use the benchmark figures below to argue that mechanization did not raise canning output evenly but accelerated it, with the later innovations bringing far larger gains than the earlier refinements, because _______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Cans sealed per hour by a two-person team, selected benchmark years",
+  "headers": [
+   "Benchmark year",
+   "Cans sealed per hour"
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. To show acceleration, the data must trace the rate climbing across the record, ending at its highest value, and B does that by moving from the earliest window's 2.7 mm per year to the latest window's 4.5 mm per year. A cites a one-tenth difference between two middle windows, far too small to establish a trend; C reports a cumulative total, which speaks to how much the sea has risen but not to whether the rate is changing; and D actually argues for a steady rate, the opposite of the claim."
+  "rows": [
+   [
+    "1810",
+    "6"
+   ],
+   [
+    "1840",
+    "12"
+   ],
+   [
+    "1870",
+    "55"
+   ],
+   [
+    "1900",
+    "320"
+   ],
+   [
+    "1925",
+    "1,500"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to support the claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "output rose from 6 cans per hour in 1810 to 12 in 1840, doubling within the method's first three decades."
+  },
+  {
+   "id": "B",
+   "text": "output edged from 6 cans per hour in 1810 to 55 in 1870, then leapt to 320 by 1900 and 1,500 by 1925, the largest gains coming in the latest intervals."
+  },
+  {
+   "id": "C",
+   "text": "by 1925 a two-person team could seal 1,500 cans per hour, the highest rate recorded in the table."
+  },
+  {
+   "id": "D",
+   "text": "output was higher at each benchmark year in the table than it had been at the benchmark before, rising without interruption across more than a century of canning."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** An acceleration claim needs the whole span and the shape of the change, and B provides both: output crept from 6 to 55 cans per hour over the first six decades, then vaulted to 1,500 by 1925, the gains concentrated in the later intervals.\n\n**The Full Solution:**\n- The claim is not merely that output rose but that it rose unevenly, with later mechanization bringing far larger gains than earlier refinements.\n- Choice B traces the full sequence and points out where the big jumps fall — after 1870 — which is precisely the accelerating pattern the student wants to demonstrate.\n\n**Why the other choices are wrong:**\n- A: Comparing only 1810 with 1840 shows a modest early rise and says nothing about later acceleration.\n- C: The 1925 figure alone documents a high endpoint, not how the pace of change was distributed.\n- D: Noting that every interval shows an increase supports steady growth — the very reading the claim argues against."
 }

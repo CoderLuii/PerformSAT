@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-233",
+ "question": "A coating machine applies $8(6t - 5)$ milligrams of film to a tablet in $t$ seconds, which equals $pt - 40$ milligrams for every value of $t$. What is the value of $p$?",
+ "correctAnswer": "48",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**The correct answer is $48$.**\n\n**The Fast Way (~15s):** Distributing gives $48t - 40$, so $p = 48$.\n\n**The Full Solution:**\n\nStep 1: Distribute: $8(6t - 5) = 8 \\cdot 6t - 8 \\cdot 5 = 48t - 40$.\n\nStep 2: The two expressions $48t - 40$ and $pt - 40$ are equal for every value of $t$, so their $t$-coefficients must be equal: $p = 48$.\n\nStep 3: Check with $t = 3$: $8(18 - 5) = 104$ and $48(3) - 40 = 104$.\n\n**Common Mistakes:**\n\n* $6$ — copying the coefficient inside the parentheses without multiplying it by $8$.\n* $14$ — adding $8$ and $6$ instead of multiplying them.\n* $-40$ — reporting the constant term, which was already given, instead of the coefficient of $t$.\n\n**Test Day Takeaway:** Matching coefficients works term by term: the coefficient of $t$ on one side must equal the coefficient of $t$ on the other."
+}

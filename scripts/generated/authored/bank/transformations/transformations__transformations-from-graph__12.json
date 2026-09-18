@@ -1,0 +1,30 @@
+{
+  "id": 12,
+  "question": "The graph of $y=f(x)$ in the $xy$-plane is a parabola with vertex $(-3,6)$. The function $g$ is defined by $g(x)=2f(x+5)-9$. What is the vertex of the graph of $y=g(x)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-8,-6)$"
+    },
+    {
+      "id": "B",
+      "text": "$(-8,3)$"
+    },
+    {
+      "id": "C",
+      "text": "$(-8,12)$"
+    },
+    {
+      "id": "D",
+      "text": "$(2,3)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies the vertical shift before the stretch",
+    "C": "omits the vertical shift",
+    "D": "shifts right instead of left"
+  },
+  "correctAnswer": "B",
+  "hint": "Three things happen to the vertex, and only one of them changes its first coordinate.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~35s):** $x+5$ moves the vertex to $x=-8$; the height becomes $2(6)-9=3$, so the vertex is $(-8,3)$.\n\n**The Full Solution:**\nStep 1: Inside the function, $x+5$ shifts the graph $5$ units left, so the vertex moves from $x=-3$ to $x=-3-5=-8$.\nStep 2: The factor $2$ multiplies the output first: $2(6)=12$. Then the $-9$ lowers it: $12-9=3$.\nStep 3: The vertex of $g$ is $(-8,3)$. Check: $g(-8)=2f(-8+5)-9=2f(-3)-9=2(6)-9=3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-8,-6)$): subtracts $9$ before doubling: $2(6-9)=-6$, but the $-9$ is applied after the stretch.\n* Choice C ($(-8,12)$): stretches the height but never applies the $-9$.\n* Choice D ($(2,3)$): shifts right; a $+5$ inside the function moves the graph left.\n\n**Test Day Takeaway:** Outside operations act in written order: multiply the height first, then add or subtract."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-208",
+ "question": "A wind-farm site plan shows a triangular buffer zone with corners $(0,0)$, $(14,0)$, and $(0,k)$, where $k>0$ and units are hundreds of feet. That zone covers $63$ square units. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4.5$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$31.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "omits the factor one half, solving 14k = 63",
+  "B": "reports half the base, 7, instead of k",
+  "D": "divides the area by 2 rather than by half the base, giving 31.5"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** $\\frac{1}{2}(14)(k)=63$ gives $7k=63$, so $k=9$.\n\n**The Full Solution:**\n\nStep 1: Identify the legs. The side from $(0,0)$ to $(14,0)$ lies on the $x$-axis with length $14$; the side from $(0,0)$ to $(0,k)$ lies on the $y$-axis with length $k$.\n\nStep 2: Write the area. These legs meet at a right angle, so the area is $\\frac{1}{2}(14)(k)=7k$ square units.\n\nStep 3: Solve. $7k=63$ gives $k=9$.\n\nCheck: $\\frac{1}{2}(14)(9)=63$ square units, as given.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($4.5$): omits the factor $\\frac{1}{2}$ and solves $14k=63$.\n* Choice B ($7$): reports half the base rather than the unknown $k$.\n* Choice D ($31.5$): divides the area by $2$ instead of by half the base.\n\n**Test Day Takeaway:** When both legs sit on the axes, the area is half their product — solve for the missing leg, not for half the base."
+}

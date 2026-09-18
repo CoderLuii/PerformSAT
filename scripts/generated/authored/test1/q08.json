@@ -9,32 +9,32 @@
  "passages": [
   {
    "label": "Text 1",
-   "text": "The geographer Andrew Sharp argued that the spread of people across the Pacific is better explained by accident than by intention. The islands of Polynesia, he noted, lie hundreds or thousands of miles apart, often below the horizon until a vessel is nearly upon them. Without compasses, charts, or written records, he reasoned, ancient voyagers could not have held a deliberate course across such distances or reliably found a particular island and then sailed home from it. The settlement of the Pacific, on Sharp's account, was the work of canoes blown off course or carried by currents, their landfalls a matter of chance rather than of planned, two-way exploration."
+   "text": "In 1980, physicist Luis Alvarez, geologist Walter Alvarez, and colleagues reported that a thin clay layer marking the end of the Cretaceous period is unusually rich in iridium, an element rare in Earth's crust but abundant in asteroids. They proposed that a massive asteroid impact threw sun-blocking debris into the atmosphere, collapsing food chains and driving the extinction of the non-avian dinosaurs. The later identification of the enormous Chicxulub crater, of the right age, off Mexico's Yucatán Peninsula convinced many scientists that the impact hypothesis explained the extinction."
   },
   {
    "label": "Text 2",
-   "text": "The anthropologist Ben Finney accepted that Polynesian voyagers carried none of the instruments European sailors relied on, but he drew the opposite conclusion. Traditional navigators, he argued, fixed direction by the rising and setting points of particular stars, read the long ocean swells that bend around islands, and watched seabirds returning to land at dusk—an integrated body of knowledge that needed no writing to be exact. To test whether such methods could sustain deliberate voyages, Finney helped build a double-hulled canoe, the Hōkūleʻa, and sailed it from Hawaii to Tahiti and back with no instruments, guided only by a traditional navigator. The crossing, he contended, showed that the dispersal Sharp attributed to chance lay well within the reach of intentional wayfinding."
+   "text": "Paleontologist Gerta Keller has long questioned whether the Chicxulub impact alone can account for the end-Cretaceous extinction. She points to the Deccan Traps, a vast volcanic province in India where eruptions released climate-altering gases over hundreds of thousands of years spanning the extinction. In Keller's reading of the fossil record, many species were already declining well before the impact, a pattern she argues fits prolonged volcanic stress better than a single instantaneous catastrophe. The impact, on her account, may have been one contributor among several rather than the sole cause."
   }
  ],
- "question": "Based on the texts, how would Finney (Text 2) most likely respond to the claim presented in Text 1?",
+ "question": "Based on the texts, how would Keller (Text 2) most likely respond to the conclusion presented in Text 1?",
  "choices": [
   {
    "id": "A",
-   "text": "He would accept that Polynesian voyagers carried no instruments yet argue that the star paths, swells, and returning seabirds they tracked made deliberate two-way voyaging possible."
+   "text": "She would deny that the iridium-rich clay layer provides any evidence that an asteroid struck Earth at the end of the Cretaceous period."
   },
   {
    "id": "B",
-   "text": "He would dispute Sharp's assumption that the islands of Polynesia lie far enough apart for the distances between them to have posed any real obstacle to early canoes."
+   "text": "She would argue that the Chicxulub crater formed too recently to be connected to the extinction of the non-avian dinosaurs."
   },
   {
    "id": "C",
-   "text": "He would concede that the settlement of the Pacific was largely accidental but propose that only its final stages involved any deliberate navigation."
+   "text": "She would contend that patterns of decline in the fossil record indicate that the impact was not the sole cause of the extinction, whatever role it may have played."
   },
   {
    "id": "D",
-   "text": "He would question whether canoes of the kind available to ancient voyagers could have stayed seaworthy across open water for as long as such crossings required."
+   "text": "She would agree that the impact played the decisive role in the extinction but insist that the Deccan Traps eruptions deserve equal credit for shaping the slow recovery of ecosystems in the aftermath."
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A. Sharp's case rests on the absence of instruments: without compasses or charts, he holds, deliberate long-distance voyaging was impossible, so settlement must have been accidental. Finney grants the very premise—Polynesians had no such instruments—but rejects the conclusion, because the star paths, swells, and seabird cues he describes (and the instrument-free Hōkūleʻa voyage he sailed to demonstrate them) show that precise, intentional navigation did not depend on instruments at all. B has Finney quarrel with the distances, a point he never disputes; C has him accept the accidental account he sets out to overturn; and D raises a seaworthiness worry that appears nowhere in his argument."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** Keller challenges the impact hypothesis's sufficiency, not the impact itself — she reads the fossil record's pattern of earlier declines as evidence the impact was \"one contributor among several rather than the sole cause,\" whatever role it played.\n\n**The Full Solution:**\n- Text 1's conclusion is that the impact hypothesis \"explained the extinction.\"\n- Text 2 builds Keller's position on the fossil record: many species were declining before the impact, a pattern she reads as evidence of prolonged volcanic stress.\n- Her measured conclusion — the impact may have contributed but was not the sole cause — is exactly what choice C attributes to her.\n\n**Why the other choices are wrong:**\n- A: It overshoots — Keller questions the impact's sufficiency as a cause, not the evidence that an impact occurred.\n- B: It attributes a timing claim she never makes.\n- D: It miscasts her view twice: she does not grant the impact sole causal credit, and Text 2 says nothing about recovery."
 }

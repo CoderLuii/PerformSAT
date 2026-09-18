@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A concrete mix combines cement, sand, and gravel in the ratio $2 : 3 : k$ by volume. A batch that contains $18$ cubic feet of cement has a total volume of $99$ cubic feet. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$11$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "confuses the scale factor 9 with the number of parts, solving 2 + 3 + k = 9",
+  "C": "treats the remaining 99 - 18 = 81 cubic feet as gravel alone, giving 81/9 = 9 parts",
+  "D": "reports the total number of parts, 99/9 = 11, instead of k"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Cement is $2$ parts $= 18$, so one part is $9$ cubic feet; $99 \\div 9 = 11$ parts total, and $11 - 2 - 3 = 6$.\n\n**The Full Solution:**\nStep 1: The three quantities are $2x$, $3x$, and $kx$ cubic feet for one common part size $x$. Cement gives $2x = 18$, so $x = 9$ cubic feet per part.\nStep 2: The batch total is $(2 + 3 + k)x = 99$, so $2 + 3 + k = \\frac{99}{9} = 11$.\nStep 3: Therefore $k = 11 - 5 = 6$; check: $2(9) + 3(9) + 6(9) = 18 + 27 + 54 = 99$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): uses the part size $9$ as though it were the number of parts and solves $2 + 3 + k = 9$, which gives $4$ but produces a batch of only $81$ cubic feet.\n* Choice C ($9$): subtracts the cement, $99 - 18 = 81$, and assigns all of it to gravel, giving $81 \\div 9 = 9$ parts and leaving no sand in the mix.\n* Choice D ($11$): stops one step early and reports the total number of parts, $99 \\div 9 = 11$, rather than the gravel part $k$.\n\n**Test Day Takeaway:** In a sum-of-parts ratio, first convert one known amount into the size of a single part, then divide the total by that size to get the total number of parts."
+}

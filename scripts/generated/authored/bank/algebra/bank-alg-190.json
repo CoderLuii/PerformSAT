@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-190",
+ "question": "A weaver holds $s$ skeins of yarn and uses two-thirds of them for a wall hanging, so that $\\frac{2}{3}s = 54$ skeins are used. What is the value of $s$?",
+ "correctAnswer": "81",
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**The correct answer is $81$.**\n\n**The Fast Way (~15s):** Multiply both sides by $\\frac{3}{2}$: $s = 54 \\cdot \\frac{3}{2} = 81$.\n\n**The Full Solution:**\n\nStep 1: The equation is $\\frac{2}{3}s = 54$.\n\nStep 2: Undo the multiplication by $\\frac{2}{3}$ by multiplying both sides by its reciprocal, $\\frac{3}{2}$.\n\nStep 3: $s = 54 \\cdot \\frac{3}{2} = 81$. Check: $\\frac{2}{3}(81) = 54$ skeins used.\n\n**Common Mistakes:**\n\n* $36$ — multiplying by $\\frac{2}{3}$ again instead of by the reciprocal.\n* $108$ — multiplying by $2$ and forgetting to divide by $3$.\n* $27$ — dividing by $2$ and forgetting to multiply by $3$.\n\n**Test Day Takeaway:** A fractional coefficient is undone by its reciprocal; multiply by the flipped fraction in one move."
+}

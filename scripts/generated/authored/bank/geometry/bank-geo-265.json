@@ -1,0 +1,41 @@
+{
+ "id": "bank-geo-265",
+ "question": "Above a transformer yard, two guy wires cross at a spreader. The figure gives the degree measures of two angles that share a side, each written in terms of $x$. How many degrees are in the angle opposite the one marked $(2x + 11)^\\circ$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "(2x + 11)°",
+    "(3x + 4)°",
+    "",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$25$"
+  },
+  {
+   "id": "B",
+   "text": "$33$"
+  },
+  {
+   "id": "C",
+   "text": "$77$"
+  },
+  {
+   "id": "D",
+   "text": "$103$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats the two adjacent angles as vertical angles, solving 2x + 11 = 3x + 4 for x = 7 and reporting 25",
+  "B": "stops at x = 33 instead of substituting to get an angle measure",
+  "D": "reports the measure of the other marked angle, 3(33) + 4 = 103"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The two marked angles form a linear pair, so $5x + 15 = 180$ and $x = 33$; the angle vertical to $(2x+11)^\\circ$ has the same measure, $77$ degrees.\n\n**The Full Solution:**\nStep 1: The marked angles are adjacent along a straight wire, so $(2x + 11) + (3x + 4) = 180$.\nStep 2: That simplifies to $5x + 15 = 180$, so $5x = 165$ and $x = 33$.\nStep 3: The angle marked $(2x+11)^\\circ$ measures $2(33) + 11 = 77$ degrees, and its vertical angle has the same measure, $77$ degrees.\n\nCheck: The other marked angle measures $3(33) + 4 = 103$ degrees, and $77 + 103 = 180$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($25$): treats the adjacent pair as vertical angles, solving $2x + 11 = 3x + 4$ for $x = 7$.\n* Choice B ($33$): reports $x$ rather than an angle measure.\n* Choice D ($103$): substitutes correctly but into the other marked expression.\n\n**Test Day Takeaway:** Vertical angles copy a measure; adjacent angles on a line complete it to $180^\\circ$."
+}

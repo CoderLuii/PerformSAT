@@ -1,0 +1,51 @@
+{
+ "id": "bank-am-336",
+ "question": "The parabola drawn in the $xy$-plane is $y = f(x)$, and its lowest point is labeled on the grid. A second function $g$ returns, for each input, a value exactly $7$ above the value returned by $f$. How far apart are the two $x$-intercepts of the graph of $g$?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 3,
+    "k": -16
+   },
+   "a": 1,
+   "xRange": [
+    -3,
+    9
+   ],
+   "yRange": [
+    -18,
+    7
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 1,
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "answers for $f$ itself, ignoring the vertical shift of $7$",
+  "C": "reports $|{-9}|$, the depth of the vertex of $g$, as though it were a width",
+  "D": "reports $|{-16}|$, the depth of the labeled minimum of $f$, as though it were a width"
+ },
+ "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The labeled minimum gives $f(x) = (x - 3)^2 - 16$, so $g(x) = (x - 3)^2 - 9$, whose zeros are $3 \\pm 3$ — a separation of $6$.\n\n**The Full Solution:**\nStep 1: The parabola has minimum $(3, -16)$ and passes through $(-1, 0)$, so $f(x) = (x - 3)^2 - 16$.\nStep 2: Adding $7$ to every output gives $g(x) = (x - 3)^2 - 16 + 7 = (x - 3)^2 - 9$.\nStep 3: Setting $g(x) = 0$ gives $(x - 3)^2 = 9$, so $x = 0$ and $x = 6$, a distance of $6 - 0 = 6$. Check: both zeros sit $3$ units from the axis of symmetry $x = 3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($8$): the distance between the $x$-intercepts of $f$, read straight off the figure without applying the shift.\n* Choice C ($9$): the size of the new constant term, which is a vertical depth, not a horizontal width.\n* Choice D ($16$): the depth of the labeled minimum of $f$, again a vertical measurement.\n\n**Test Day Takeaway:** Raising a parabola shrinks the gap between its $x$-intercepts — rewrite in vertex form and take twice the square root of the new depth."
+}

@@ -246,6 +246,9 @@ function ActivityRow({ activity, isComplete, onStart, onStartStrategy, onTakeTes
           {subtitle && !collapsed && (
             <div className="ttc-activity-sub">{subtitle}</div>
           )}
+          {activity.because && !collapsed && (
+            <div className="ttc-activity-because">{activity.because}</div>
+          )}
         </div>
 
         <div className="ttc-activity-meta">

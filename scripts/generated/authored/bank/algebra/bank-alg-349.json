@@ -1,0 +1,25 @@
+{
+  "id": "bank-alg-349",
+  "question": "The table shows the cost per seat for two types of seats a theater is purchasing. The theater has a budget of $\\$5{,}400$ and must purchase at least $300$ seats to qualify for free delivery. What is the greatest number of cushioned seats the theater can purchase?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Seat type",
+        "Cost per seat (dollars)"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "12"
+        ],
+        [
+          "Cushioned",
+          "27"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "120",
+  "explanation": "**SAT Pattern: Inequality Word Problem (Floor)**\n\n**The correct answer is $120$.**\n\n**The Fast Way (~40s):** Pin the order at $300$ seats. All standard would cost $3{,}600$, leaving $1{,}800$. Each upgrade to cushioned costs $27 - 12 = 15$ more, so $1{,}800 \\div 15 = 120$.\n\n**The Full Solution:**\nStep 1: Let $c$ be the number of cushioned seats and $s$ the number of standard seats: $12s + 27c \\leq 5{,}400$ and $s + c \\geq 300$.\nStep 2: Extra standard seats beyond the minimum only use budget, so set $s = 300 - c$: $12(300 - c) + 27c \\leq 5{,}400$, which simplifies to $3{,}600 + 15c \\leq 5{,}400$.\nStep 3: $15c \\leq 1{,}800$, so $c \\leq 120$. Here the bound is a whole number, so the maximum is exactly $120$.\nCheck: $180$ standard and $120$ cushioned cost $2{,}160 + 3{,}240 = 5{,}400$, using the budget exactly. $\\checkmark$\n\n**Common Mistakes:** Ignoring the $300$-seat minimum and computing $5{,}400 \\div 27 = 200$; dividing the leftover $1{,}800$ by $27$ (giving $66$) instead of by the $15$-dollar difference; or reporting $180$, the number of standard seats.\n\n**Test Day Takeaway:** Fill the required count with the cheaper item, then spend the leftover budget on upgrades priced at the difference between the two costs."
+}

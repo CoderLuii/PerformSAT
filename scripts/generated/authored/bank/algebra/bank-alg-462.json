@@ -1,0 +1,29 @@
+{
+ "question": "Adult birds and juvenile birds banded at one station satisfy $9x + ky = 50$, and the same birds counted at a second station satisfy $4x + 3y = 22$, where $k$ is a constant. Subtracting the second station's equation from the first gives $5x + 4y = 28$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-1$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "solves $3 - k = 4$, subtracting the coefficients in the wrong order",
+  "B": "copies the second station's $y$-coefficient",
+  "C": "copies the $y$-coefficient of the difference"
+ },
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Subtracting makes the $y$-coefficient $k - 3$, and that must be $4$, so $k = 7$.\n\n**The Full Solution:**\n\nStep 1: Subtract term by term: $(9 - 4)x + (k - 3)y = 50 - 22$.\n\nStep 2: The stem says the difference is $5x + 4y = 28$, and $9 - 4 = 5$ and $50 - 22 = 28$ both check out.\n\nStep 3: Match the $y$-coefficients: $k - 3 = 4$, so $k = 7$. Check with $x = 4$ and $y = 2$: $9(4) + 7(2) = 50$ and $4(4) + 3(2) = 22$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-1$): solves $3 - k = 4$, reversing the order of the subtraction.\n\n* Choice B ($3$): copies the second station's $y$-coefficient rather than solving for the first station's.\n\n* Choice C ($4$): copies the $y$-coefficient of the difference, which is what $k$ must exceed by $3$.\n\n**Test Day Takeaway:** Subtraction runs first equation minus second in every column; write $k - 3$, never $3 - k$.",
+ "id": "bank-alg-462"
+}

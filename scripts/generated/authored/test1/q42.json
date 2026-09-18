@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "inferences",
  "module": 2,
- "passage": "Reviewing decades of urban school reform in the United States, the sociologist of education Pedro Noguera has emphasized two persistent features of the policy landscape. First, the public schools serving the country's poorest urban neighborhoods have been asked to compensate for housing instability, concentrated joblessness, and unequal access to health care — inequities that originate outside the schoolhouse and over which educators have no direct control. Second, the reform packages most often pursued in those districts — new curricula, new accountability systems, new school leaders — have repeatedly produced short-term gains that fade once the surrounding neighborhood conditions reassert themselves. Noguera's account therefore suggests that durable academic improvement in such districts is unlikely unless reform efforts ______",
+ "passage": "Roman harbor concrete has survived two millennia of pounding surf that destroys modern marine concrete within decades. Analyzing drill cores from breakwaters at Portus Cosanus and elsewhere, geologists found that seawater percolating through the Roman material for centuries dissolved parts of its volcanic ash and lime and, in the voids left behind, grew interlocking mineral crystals that knit the concrete more tightly together over time. Engineers who mix chemically faithful reproductions of the Roman recipe, however, should not expect their samples to match the ancient breakwaters' strength right away, since ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "concentrate even more intensively on curriculum, accountability, and school leadership inside the schoolhouse, since those are the levers educators directly control."
+   "text": "modern testing standards measure the strength of concrete samples far more precisely than any method available to Roman builders."
   },
   {
    "id": "B",
-   "text": "are written so that every urban district in the country adopts an identical package of housing, employment, and instructional measures simultaneously."
+   "text": "the volcanic ash the Romans quarried came from particular deposits near the Bay of Naples that modern engineers can no longer access in the quantities that harbor-scale construction would demand."
   },
   {
    "id": "C",
-   "text": "abandon any focus on curriculum and accountability and rely solely on changes to housing and employment policy in the surrounding neighborhoods."
+   "text": "the reinforcing crystals are not an original ingredient of the concrete but the product of centuries of seawater exposure that new samples have not yet undergone."
   },
   {
    "id": "D",
-   "text": "are paired with neighborhood-level economic and housing policies that address the surrounding conditions the schools have been asked to compensate for."
+   "text": "Roman builders reserved their most durable concrete formulations for harbors and used weaker mixtures in structures on land."
   }
  ],
- "correctAnswer": "D",
- "explanation": "The passage establishes two premises. First, urban schools serving the poorest neighborhoods have been asked to compensate for inequities — housing instability, joblessness, unequal health care — that originate outside the school and lie beyond educators' direct control. Second, reform packages aimed only at what happens inside the schoolhouse (new curricula, accountability systems, school leaders) have produced short-term gains that fade once the surrounding neighborhood conditions reassert themselves. The minimum inference these two premises jointly force is that durable improvement is unlikely unless the reform reaches the surrounding conditions the schools have been asked to compensate for. Choice D captures exactly that paired claim, linking instructional reform to neighborhood-level economic and housing policy without overreaching.\n\nThe stem requires the conclusion that the two premises together license. Premise (1) alone tells us only that schools face external inequities; it does not by itself prescribe a remedy. Premise (2) alone tells us that inside-the-schoolhouse reform fades; it does not by itself say what would not fade. Only the joint claim — that improvement requires reform paired with neighborhood-level policy — is licensed."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** If the strengthening agent is produced by centuries of seawater exposure rather than included in the mix, a chemically exact reproduction necessarily begins life without it.\n\n**The Full Solution:**\n- The passage locates the durability's source in a slow process: seawater percolated through the material \"for centuries,\" dissolving components and growing interlocking crystals \"over time.\"\n- The blank must explain why faithful new samples \"should not\" match the breakwaters' strength \"right away\" — and C draws precisely that inference: the strength develops with exposure, so young samples lack it.\n\n**Why the other choices are wrong:**\n- A: Better measurement changes what engineers can detect, not how strong the samples are.\n- B: It raises a supply problem the sentence has already set aside by stipulating \"chemically faithful reproductions.\"\n- D: The harbor-versus-land comparison says nothing about why a faithful reproduction of the harbor recipe would underperform the ancient original."
 }

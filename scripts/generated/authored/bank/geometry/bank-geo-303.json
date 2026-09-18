@@ -1,0 +1,29 @@
+{
+ "question": "A rotating traffic camera at $(7, -6)$ in the $xy$-plane covers a circular region whose edge passes through a signal at $(2, 6)$, where coordinates are in meters. What is the circumference, in meters, of the edge of the covered region?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$13\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$26\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$169\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$338\\pi$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "uses pi r, which is half the circumference",
+  "C": "uses the area formula pi r squared",
+  "D": "uses 2 pi r squared, mixing the circumference and area formulas"
+ },
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The radius is $\\sqrt{5^2 + 12^2} = 13$ meters, so the circumference is $2\\pi(13) = 26\\pi$.\n\n**The Full Solution:**\nStep 1: The radius is the distance from the camera to the signal on the edge: the differences are $7 - 2 = 5$ and $-6 - 6 = -12$.\nStep 2: So $r = \\sqrt{25 + 144} = \\sqrt{169} = 13$ meters.\nStep 3: The circumference is $C = 2\\pi r = 26\\pi$ meters. Check: the diameter is $26$ meters, and $C = \\pi d = 26\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($13\\pi$): computes $\\pi r$, which is only half the way around.\n* Choice C ($169\\pi$): uses $\\pi r^2$, the area of the covered region rather than its perimeter.\n* Choice D ($338\\pi$): doubles the area expression, combining both formulas.\n\n**Test Day Takeaway:** Two steps here — distance formula for the radius, then $2\\pi r$; squaring the radius would answer a different question.",
+ "id": "bank-geo-303"
+}

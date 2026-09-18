@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A pharmacist starts with $900$ milliliters of a stock solution, prepares $n$ identical $15$-milliliter doses from it, and discards $45$ milliliters of residue, leaving $180$ milliliters of the stock solution. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$45$"
+  },
+  {
+   "id": "B",
+   "text": "$48$"
+  },
+  {
+   "id": "C",
+   "text": "$51$"
+  },
+  {
+   "id": "D",
+   "text": "$57$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "ignores the 45 mL of discarded residue: (900 - 180)/15 = 48",
+  "C": "adds the discarded residue instead of subtracting it: (900 + 45 - 180)/15 = 51",
+  "D": "forgets the 180 mL still left in the container: (900 - 45)/15 = 57"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The doses account for $900 - 45 - 180 = 675$ milliliters, and $\\frac{675}{15} = 45$.\n\n**The Full Solution:**\nStep 1: Every milliliter of the original $900$ ends up in one of three places: the doses ($15n$), the residue ($45$), or what is left ($180$). That gives $15n + 45 + 180 = 900$.\nStep 2: Combine the constants and isolate the variable term: $15n + 225 = 900$, so $15n = 675$.\nStep 3: Divide: $n = \\frac{675}{15} = 45$. Check: $15(45) + 45 + 180 = 675 + 225 = 900$ milliliters. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($48$): drops the $45$ milliliters of residue from the accounting, solving $15n + 180 = 900$.\n* Choice C ($51$): treats the residue as something added to the supply rather than taken from it, solving $15n + 180 = 945$.\n* Choice D ($57$): forgets that $180$ milliliters is still in the container, solving $15n + 45 = 900$.\n\n**Test Day Takeaway:** In a multi-step linear setup, write one equation that accounts for the whole starting amount before you solve. Every number in the stem should appear once in that equation — if one is missing, the answer is one of the traps."
+}

@@ -1,0 +1,59 @@
+{
+ "id": 1,
+ "question": "Reinforcement patches $ABC$ and $DEF$ are cut to the same shape at two different sizes for a garment seam, with $AB$ corresponding to $DE$. If patch $DEF$ covers $81$ square centimeters of fabric, how many square centimeters does patch $ABC$ cover?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "labels": [
+     "A",
+     "B",
+     "C"
+    ],
+    "sideLabels": [
+     "12",
+     "",
+     ""
+    ]
+   },
+   "triangle2": {
+    "labels": [
+     "D",
+     "E",
+     "F"
+    ],
+    "sideLabels": [
+     "18",
+     "",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$36$"
+  },
+  {
+   "id": "B",
+   "text": "$54$"
+  },
+  {
+   "id": "C",
+   "text": "$121.5$"
+  },
+  {
+   "id": "D",
+   "text": "$182.25$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "applies the side ratio 2/3 to the area instead of squaring it: 81 x 2/3 = 54",
+  "C": "uses the scale factor upside down and unsquared: 81 x 3/2 = 121.5",
+  "D": "squares the scale factor but inverts it: 81 x 9/4 = 182.25"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Similar Triangles and Area Ratio**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Corresponding sides are $12$ and $18$, a ratio of $\\frac{2}{3}$, so the areas are in the ratio $\\frac{4}{9}$: $81 \\cdot \\frac{4}{9} = 36$.\n\n**The Full Solution:**\nStep 1: The patches are the same shape at different sizes, so the triangles are similar. The corresponding sides $AB = 12$ and $DE = 18$ give the scale factor $\\frac{AB}{DE} = \\frac{12}{18} = \\frac{2}{3}$.\nStep 2: For similar figures, the ratio of the areas is the SQUARE of the ratio of corresponding sides: $\\left(\\frac{2}{3}\\right)^{2} = \\frac{4}{9}$.\nStep 3: The area of $ABC$ is $\\frac{4}{9}(81) = 36$ square centimeters. Check: scaling $36$ back up by $\\frac{9}{4}$ returns $81$, the area of $DEF$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($54$): applies the side ratio $\\frac{2}{3}$ directly to the area, $81 \\cdot \\frac{2}{3} = 54$, forgetting that area scales by the square of the ratio.\n* Choice C ($121.5$): flips the scale factor to $\\frac{3}{2}$ and applies it unsquared, $81 \\cdot \\frac{3}{2} = 121.5$, enlarging the patch that should be smaller.\n* Choice D ($182.25$): squares the scale factor but inverts it, $81 \\cdot \\frac{9}{4} = 182.25$.\n\n**Test Day Takeaway:** Lengths scale by $k$, areas by $k^{2}$, volumes by $k^{3}$. Write the ratio smaller-over-larger the same way the question asks, then square it once — before touching the arithmetic."
+}

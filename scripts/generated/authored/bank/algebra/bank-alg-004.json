@@ -1,0 +1,22 @@
+{
+  "id": "bank-alg-004",
+  "question": "The table gives the volume of propane, in gallons, in a heating tank on two days of a winter. If the volume decreased at a constant rate, at what rate, in gallons per day, did the volume decrease?",
+  "questionTable": {
+    "headers": [
+      "Day",
+      "Volume (gallons)"
+    ],
+    "rows": [
+      [
+        "6",
+        "210"
+      ],
+      [
+        "21",
+        "150"
+      ]
+    ]
+  },
+  "correctAnswer": "4",
+  "explanation": "**SAT Pattern: Rate from Two Points (Negative Slope)**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~15s):** The volume fell $210 - 150 = 60$ gallons over $21 - 6 = 15$ days, so it decreased at $\\frac{60}{15} = 4$ gallons per day.\n\n**The Full Solution:**\nStep 1: Treat the rows as points $(6, 210)$ and $(21, 150)$. The slope is $\\frac{150 - 210}{21 - 6} = \\frac{-60}{15} = -4$ gallons per day.\nStep 2: The negative sign means the volume is decreasing; the question asks for the rate of decrease, which is the size of the change, $4$ gallons per day.\nStep 3: Check: from $210$ gallons on day $6$, losing $4$ gallons per day for $15$ days gives $210 - 4(15) = 150$ gallons on day $21$. $\\checkmark$\n\n**Common Mistakes:** Entering $-4$ when the question asks for the rate of decrease as a positive quantity; dividing $60$ by $21$ (the day number) instead of by the $15$ elapsed days; dividing $210$ by $21$ to get $10$, which ignores the first reading entirely.\n\n**Test Day Takeaway:** Compute the slope with signs, then read the question's wording: \"rate of decrease\" wants the magnitude, while \"rate of change\" keeps the sign."
+}

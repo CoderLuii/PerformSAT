@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A biologist will estimate the mean wing length of a species of moth and report the estimate with an associated margin of error. The biologist is deciding between a random sample of $150$ moths and a random sample of $600$ moths. Compared with the smaller sample, using the larger sample would most likely produce which result?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "A smaller margin of error"
+    },
+    {
+      "id": "B",
+      "text": "A larger margin of error"
+    },
+    {
+      "id": "C",
+      "text": "A greater estimated mean wing length"
+    },
+    {
+      "id": "D",
+      "text": "A smaller estimated mean wing length"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reverses the relationship; more data narrows the interval rather than widening it.",
+    "C": "changes the estimate itself, but sample size does not push the estimated mean up.",
+    "D": "also changes the estimate rather than the margin of error, and gives no reason a larger sample would lower it."
+  },
+  "correctAnswer": "A",
+  "hint": "More data from the same population pins the estimate down more tightly.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** A larger random sample from the same population generally produces a smaller margin of error.\n\n**The Full Solution:**\nStep 1: The margin of error measures how much the estimate could differ from the true population value.\nStep 2: A larger random sample gives more information about the population, so the estimate is less variable.\nStep 3: Therefore the sample of $600$ moths would most likely give a smaller margin of error than the sample of $150$ moths. Check: sample size affects the width of the interval, not where it is centered. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: reverses the relationship; more data narrows the interval rather than widening it.\n* Choice C: changes the estimate itself, but sample size does not push the estimated mean up.\n* Choice D: also changes the estimate rather than the margin of error, and gives no reason a larger sample would lower it.\n\n**Test Day Takeaway:** Sample size controls the width of the interval, not its center. Larger random sample, smaller margin of error."
+}

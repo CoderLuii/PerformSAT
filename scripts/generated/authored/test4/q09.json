@@ -5,30 +5,30 @@
   "band": 2,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
+  "module": 1,
+  "passage": "Nineteenth-century European expeditions often fared badly in conditions Arctic peoples had lived with for centuries. Crews that ignored local practice hauled heavy sledges by hand, wore woolens that soaked through and froze, and subsisted on tinned rations. Expeditions that learned from Inuit communities did far better: dog teams pulled loads at many times a walker's pace, fur clothing shed moisture before it froze, and fresh meat warded off the deficiency diseases that crippled other parties. Again and again, the polar record shows that success depended less on new equipment shipped from Europe than on a crew's willingness to adopt techniques refined over generations in the Arctic itself.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "The outer planets of our solar system orbit the Sun more slowly than the inner planets, a pattern Rubin showed also holds for stars in the disk of a typical spiral galaxy."
+      "text": "European expeditions failed in the Arctic primarily because their crews lacked the physical endurance of the region's inhabitants."
     },
     {
       "id": "B",
-      "text": "Rubin's measurements of stellar orbits in spiral galaxies revealed flat rotation patterns inconsistent with the visible mass, leading her to conclude that the galaxies must contain a great deal of unseen mass."
+      "text": "Expeditions that adopted the equipment and techniques of Arctic peoples tended to succeed where those that relied on European methods struggled."
     },
     {
       "id": "C",
-      "text": "Rubin's first observations of Andromeda were less precise than she had expected, but later work with collaborators eventually confirmed the rotation pattern she had set out to measure."
+      "text": "The dog teams used by nineteenth-century expeditions could haul heavier loads than any machine available at the time."
     },
     {
       "id": "D",
-      "text": "Spiral galaxies are difficult to study because the velocities of their stars cannot be measured directly with the spectrographs that were available to Rubin."
+      "text": "Arctic peoples developed clothing and travel methods over generations that European manufacturers of the nineteenth century repeatedly tried and failed to copy."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage sets up the orbital pattern Rubin expected, reports the unexpected flat rotation she measured, and ends with her conclusion that the galaxies must hold a great deal of unseen mass. Choice A keeps only the planetary analogy she used as a contrast; choice C invents a story about imprecise early measurements; and choice D claims stellar velocities could not be measured, which the passage shows they could.",
-  "passage": "When the astronomer Vera Rubin began measuring how stars in the spiral galaxy Andromeda orbit its center, she expected a familiar pattern: stars near the visible edge moving more slowly than stars near the bright central bulge, just as the outer planets in our solar system move more slowly than the inner ones. Instead, the velocities she measured stayed roughly constant out to the limits of her observations, with stars near the edge of the disk circling at about the same speed as stars far closer in. Rubin and her collaborators found the same flat rotation pattern in many other spiral galaxies and concluded that the galaxies must contain large amounts of mass that is not visible in the disk itself.",
+  "explanation": "**Choice B is correct.** The text's contrast runs from start to finish: crews that ignored Arctic practice suffered; crews that adopted it thrived; and the closing sentence generalizes the pattern.\n\n**The Full Solution:**\n- The first half catalogs the failures of European methods: hand-hauling, freezing woolens, tinned rations.\n- The second half catalogs the successes of adopted techniques: dog teams, fur clothing, fresh meat.\n- The final sentence states the lesson — success turned on willingness to adopt local techniques — which choice B restates.\n\n**Why the other choices are wrong:**\n- A: The text attributes failure to methods, not to the crews' endurance.\n- C: Machines are never discussed; the dog teams are compared to walkers hauling sledges.\n- D: Copying by European manufacturers appears nowhere in the text.",
   "_meta": {
-    "anchor": "Vera Rubin — galaxy rotation curves and dark matter (entity_keep)"
-  },
-  "module": 1
+    "anchor": "polar expeditions — adoption of Inuit equipment and techniques"
+  }
 }

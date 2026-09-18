@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-207",
+  "question": "A rectangular pen will be enclosed with $120$ meters of fencing, so the width $w$ and the length of the pen add to $60$ meters. The table gives the area of the pen, in square meters, for three values of $w$. Which type of function best models the area of the pen as a function of $w$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "w (meters)",
+        "Area (square meters)"
+      ],
+      "rows": [
+        [
+          "10",
+          "500"
+        ],
+        [
+          "30",
+          "900"
+        ],
+        [
+          "50",
+          "500"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Decreasing linear"
+    },
+    {
+      "id": "B",
+      "text": "Increasing linear"
+    },
+    {
+      "id": "C",
+      "text": "Increasing exponential"
+    },
+    {
+      "id": "D",
+      "text": "Quadratic"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the area rises before it falls",
+    "B": "the area falls after $w = 30$",
+    "C": "an exponential function never turns around"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Classify Physical Motion Model**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The length is $60 - w$, so the area is $w(60 - w) = 60w - w^2$ — a squared term, so the model is quadratic.\n\n**The Full Solution:**\nStep 1: Since $w + \\text{length} = 60$, the length is $60 - w$ and the area is $A(w) = w(60 - w)$.\nStep 2: Expanding gives $A(w) = 60w - w^2$, a degree-$2$ polynomial, so $A$ is quadratic.\nStep 3: The table confirms the shape: the area rises from $500$ to $900$, then falls back to $500$. Check: $A(10) = 10(50) = 500$, $A(30) = 30(30) = 900$, $A(50) = 50(10) = 500$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (decreasing linear): matches only the second half of the table; the area increases from $w = 10$ to $w = 30$.\n* Choice B (increasing linear): matches only the first half; the area decreases after $w = 30$.\n* Choice C (increasing exponential): an exponential model rises without ever turning around, and equal steps in $w$ here do not give equal ratios.\n\n**Test Day Takeaway:** A quantity that rises to a maximum and then falls symmetrically is quadratic — a product of two expressions that move in opposite directions is the usual source."
+}

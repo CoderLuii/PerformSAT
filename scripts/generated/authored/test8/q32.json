@@ -1,35 +1,31 @@
 {
-  "id": 832,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "The following text is from Paul Laurence Dunbar's poem \"We Wear the Mask,\" published in 1896.\n\nWe wear the mask that grins and lies, / It hides our cheeks and shades our eyes,— / This debt we pay to human guile; / With torn and bleeding hearts we smile, / And mouth with myriad subtleties. // Why should the world be over-wise, / In counting all our tears and sighs? / Nay, let them only see us, while / We wear the mask. // We smile, but, O great Christ, our cries / To thee from tortured souls arise. / We sing, but oh the clay is vile / Beneath our feet, and long the mile; / But let the world dream otherwise, / We wear the mask!",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The speaker names a concealing outward expression, then reveals the suffering it hides and insists the concealment continue."
-    },
-    {
-      "id": "B",
-      "text": "The speaker recalls a past sorrow, then explains how it was gradually overcome through the passage of time."
-    },
-    {
-      "id": "C",
-      "text": "The speaker poses a question about human nature, then answers it by describing a single remembered scene."
-    },
-    {
-      "id": "D",
-      "text": "The speaker praises an admired figure, then urges readers to imitate that figure’s composure."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The poem opens by naming the mask, the grinning face that hides the speakers' true feelings; the middle and final stanzas then disclose the \"torn and bleeding hearts\" and \"tortured souls\" beneath it, and each stanza closes by insisting that the mask stay on (\"We wear the mask\"). B invents a sorrow overcome over time, but the poem ends with the concealment still in force; C treats the rhetorical question as the structuring move, though it is one moment within a larger pattern; and D describes praise of an admired figure that the poem does not contain.",
-  "_meta": {
-    "quoteVerify": true,
-    "source": "Paul Laurence Dunbar, \"We Wear the Mask\" (1896), complete poem"
+ "id": 832,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "The following text is adapted from William Butler Yeats's 1890 poem \"The Lake Isle of Innisfree.\"\n\nI will arise and go now, and go to Innisfree, / And a small cabin build there, of clay and wattles made: / Nine bean-rows will I have there, a hive for the honey-bee; / And live alone in the bee-loud glade. // And I shall have some peace there, for peace comes dropping slow, / Dropping from the veils of the morning to where the cricket sings; / There midnight's all a glimmer, and noon a purple glow, / And evening full of the linnet's wings. // I will arise and go now, for always night and day / I hear lake water lapping with low sounds by the shore; / While I stand on the roadway, or on the pavements grey, / I hear it in the deep heart's core.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The speaker declares a resolve to leave for an island, elaborates the solitary life imagined there, and finally reveals that the island's sounds haunt him where he presently stands, amid the city."
+  },
+  {
+   "id": "B",
+   "text": "The speaker remembers an island he visited long ago in childhood and mourns that both the place and the person he was when he first saw it have since changed beyond all recognition."
+  },
+  {
+   "id": "C",
+   "text": "The speaker weighs the arguments for and against leaving the city and ultimately decides to remain."
+  },
+  {
+   "id": "D",
+   "text": "The speaker describes an island's landscape and then urges a companion to make the journey there."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The poem opens with a resolve to depart, spends its middle lines furnishing the imagined island life, and ends by disclosing that the island's sounds reach the speaker where he actually stands — on gray city pavements.\n\n**The Full Solution:**\n- Stanza one announces the decision (\"I will arise and go now\") and the cabin, beans, and hive the speaker plans.\n- Stanza two deepens the imagined life into peace, cricket song, and evening light.\n- Stanza three turns: the speaker has not gone at all; standing \"on the roadway, or on the pavements grey,\" he hears the lake water \"in the deep heart's core\" — the longing persists amid the city, exactly the arc choice A traces.\n\n**Why the other choices are wrong:**\n- B: The poem recalls no past visit; the island life is imagined in the future tense throughout.\n- C: The speaker never weighs arguments against going or abandons the plan — the resolve is restated in the final stanza.\n- D: No listener is addressed or urged to travel; the closing lines report the speaker's own inner state."
 }

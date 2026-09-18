@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-302",
+  "question": "A laboratory has $450$ milliliters of a solution that is $24\\%$ glycerol by volume. How many milliliters of pure water must be added so that the resulting solution is $18\\%$ glycerol by volume?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$27$"
+    },
+    {
+      "id": "B",
+      "text": "$81$"
+    },
+    {
+      "id": "C",
+      "text": "$150$"
+    },
+    {
+      "id": "D",
+      "text": "$600$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the difference of the two percents as a percent of the original volume, $0.06(450) = 27$.",
+    "B": "computes $0.18(450) = 81$, the glycerol a $450$-milliliter sample would hold at the target concentration.",
+    "D": "solves $\\frac{108}{0.18} = 600$ correctly but reports the final volume instead of the water added."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Mixture Problems**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Adding water leaves the glycerol fixed at $0.24(450) = 108$ milliliters. For $108$ to be $18\\%$ of the final volume, that volume is $\\frac{108}{0.18} = 600$, so $600 - 450 = 150$ milliliters of water are added.\n\n**The Full Solution:**\nStep 1: Water contains no glycerol, so the amount of glycerol never changes: $0.24(450) = 108$ milliliters.\nStep 2: Let $w$ be the milliliters of water added. Then $\\frac{108}{450 + w} = 0.18$, so $108 = 0.18(450 + w) = 81 + 0.18w$.\nStep 3: $27 = 0.18w$, so $w = 150$. Check: the final volume is $600$ milliliters and $\\frac{108}{600} = 0.18$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($27$): takes the difference of the two percents as a percent of the original volume, $0.06(450) = 27$.\n* Choice B ($81$): computes $0.18(450) = 81$, the glycerol a $450$-milliliter sample would hold at the target concentration.\n* Choice D ($600$): solves $\\frac{108}{0.18} = 600$ correctly but reports the final volume instead of the water added.\n\n**Test Day Takeaway:** When pure solvent is added, hold the solute constant and solve for the new total; then subtract the starting volume to answer \"how much was added.\""
+}

@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-384",
+  "question": "A chemist models the mass of a sample, in grams, by $M(d) = 240(0.75)^d$, where $d$ is the number of days since the sample was prepared. The table shows the mass for the first three days. Which of the following is the best interpretation of $0.75$ in this model?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Days, d",
+        "Mass (grams)"
+      ],
+      "rows": [
+        [
+          "0",
+          "240"
+        ],
+        [
+          "1",
+          "180"
+        ],
+        [
+          "2",
+          "135"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Each day, the mass of the sample is $75\\%$ less than the mass on the previous day."
+    },
+    {
+      "id": "B",
+      "text": "Each day, the mass of the sample decreases by $0.75$ gram."
+    },
+    {
+      "id": "C",
+      "text": "Each day, the mass of the sample is $75\\%$ of the mass on the previous day."
+    },
+    {
+      "id": "D",
+      "text": "Each day, the mass of the sample decreases by $25$ grams."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the decay factor as the percent lost",
+    "B": "reads a multiplier as a constant amount",
+    "D": "turns the percent lost into a fixed amount"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Interpret Exponential Parameters**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** A base of $0.75$ means each day's mass is $0.75$ times, or $75\\%$ of, the previous day's mass.\n\n**The Full Solution:**\nStep 1: The model is $M(d) = a(b)^d$ with $a = 240$ grams and $b = 0.75$.\nStep 2: Increasing $d$ by $1$ multiplies the mass by $0.75$. The table shows this: $240 \\to 180 \\to 135$, and $\\frac{180}{240} = 0.75$.\nStep 3: So each day's mass is $75\\%$ of the day before, which is a $25\\%$ decrease. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reads $0.75$ as the fraction LOST; losing $75\\%$ would leave a base of $0.25$.\n* Choice B: reads the multiplier as an amount in grams, which would describe a linear model.\n* Choice D: converts the $25\\%$ loss into a fixed $25$ grams; the actual drops are $60$ grams and then $45$ grams.\n\n**Test Day Takeaway:** For $0 < b < 1$, the base is the fraction that REMAINS; the percent lost is $(1 - b) \\times 100\\%$."
+}

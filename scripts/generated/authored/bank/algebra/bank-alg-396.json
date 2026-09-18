@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-396",
+  "question": "Two input-output pairs of the linear function $h$ are shown in the table. What is the value of $h(9)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "h(x)"
+      ],
+      "rows": [
+        [
+          "1",
+          "4"
+        ],
+        [
+          "5",
+          "16"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20$"
+    },
+    {
+      "id": "B",
+      "text": "$27$"
+    },
+    {
+      "id": "C",
+      "text": "$28$"
+    },
+    {
+      "id": "D",
+      "text": "$40$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the change in x (4) to 16 instead of the change in h",
+    "B": "uses h(x) = 3x, dropping the y-intercept",
+    "D": "measures the step from x = 1 instead of from x = 5, adding 3(8) to 16"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Line from Two Points**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The rate is $\\dfrac{16 - 4}{5 - 1} = 3$ per unit of $x$. From $x = 5$ to $x = 9$ is $4$ more units, so $h(9) = 16 + 3(4) = 28$.\n\n**The Full Solution:**\nStep 1: A linear function has a constant rate of change. From the table, slope $= \\dfrac{16 - 4}{5 - 1} = \\dfrac{12}{4} = 3$.\nStep 2: Write the rule. Using $(1, 4)$ in $h(x) = 3x + b$: $4 = 3 + b$, so $b = 1$ and $h(x) = 3x + 1$.\nStep 3: $h(9) = 3(9) + 1 = 28$. Check with the second row: $h(5) = 15 + 1 = 16$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): adds the change in $x$, which is $4$, to $16$ instead of the change in $h$, which is $3 \\times 4 = 12$.\n* Choice B ($27$): uses $h(x) = 3x$ and forgets the intercept $1$.\n* Choice D ($40$): steps from $x = 1$ by $8$ units but starts from $h = 16$, the value at $x = 5$; the starting value and starting input must come from the same row.\n\n**Test Day Takeaway:** Two rows of a linear table give the slope; then either write the full rule or step forward from the nearer row by slope times the change in $x$."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-016",
+  "question": "A road crew has already paved $850$ meters of a road and continues paving at a constant rate of $125$ meters per hour. How many more hours will the crew need to pave until the total paved length is $2{,}600$ meters?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6.8$"
+    },
+    {
+      "id": "B",
+      "text": "$14$"
+    },
+    {
+      "id": "C",
+      "text": "$20.8$"
+    },
+    {
+      "id": "D",
+      "text": "$27.6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "850/125, the hours already worked rather than the hours remaining",
+    "C": "2,600/125, ignoring the 850 meters already paved",
+    "D": "(2,600 + 850)/125, adding the paved length instead of subtracting it"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Linear Equation with Starting Quantity**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Remaining length $= 2{,}600 - 850 = 1{,}750$ meters, and $\\frac{1{,}750}{125} = 14$ hours.\n\n**The Full Solution:**\nStep 1: Let $h$ be the additional hours. The paved length after $h$ more hours is $850 + 125h$.\nStep 2: Set it equal to the target: $850 + 125h = 2{,}600$, so $125h = 1{,}750$ and $h = 14$.\nStep 3: Check: $14$ hours at $125$ meters per hour is $1{,}750$ meters, and $850 + 1{,}750 = 2{,}600$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6.8$): computes $\\frac{850}{125}$, the time the crew has already spent, not the time remaining.\n* Choice C ($20.8$): computes $\\frac{2{,}600}{125}$, as if the crew were starting from zero.\n* Choice D ($27.6$): adds $850$ to $2{,}600$ instead of subtracting it before dividing.\n\n**Test Day Takeaway:** \"Already has\" is a starting value on the same side as the rate term; subtract it from the target before dividing by the rate."
+}

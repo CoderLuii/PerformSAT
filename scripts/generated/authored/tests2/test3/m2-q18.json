@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "A resort's site plan places its north gate at $(-6, 11)$ and its south gate at $(14, -3)$. An information kiosk is planned for the point halfway between the two gates. Which ordered pair locates the kiosk?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(-10, 7)$"
+  },
+  {
+   "id": "B",
+   "text": "$(4, 4)$"
+  },
+  {
+   "id": "C",
+   "text": "$(8, 8)$"
+  },
+  {
+   "id": "D",
+   "text": "$(20, -14)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves the differences of the coordinates instead of their sums: ((-6-14)/2, (11+3)/2)",
+  "C": "adds the coordinates but forgets to divide each sum by 2",
+  "D": "subtracts the coordinates, giving the change from one gate to the other rather than a location"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Average each coordinate: $\\frac{-6 + 14}{2} = 4$ and $\\frac{11 + (-3)}{2} = 4$, so the kiosk is at $(4, 4)$.\n\n**The Full Solution:**\nStep 1: The midpoint of the segment joining $(x_{1}, y_{1})$ and $(x_{2}, y_{2})$ is $\\left(\\frac{x_{1} + x_{2}}{2}, \\frac{y_{1} + y_{2}}{2}\\right)$ — the average of the $x$-coordinates paired with the average of the $y$-coordinates.\nStep 2: Average the $x$-coordinates: $\\frac{-6 + 14}{2} = \\frac{8}{2} = 4$.\nStep 3: Average the $y$-coordinates: $\\frac{11 + (-3)}{2} = \\frac{8}{2} = 4$, so the kiosk sits at $(4, 4)$. Check: from $(-6, 11)$ to $(4, 4)$ is a move of $10$ right and $7$ down, and from $(4, 4)$ to $(14, -3)$ is the same move. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-10, 7)$): halves the DIFFERENCES rather than the sums. Half a difference measures how far apart the gates are, not where the point between them is.\n* Choice C ($(8, 8)$): adds the coordinates correctly but never divides by $2$, landing outside the segment entirely.\n* Choice D ($(20, -14)$): subtracts one point from the other, which describes the trip from one gate to the other rather than a location on the map.\n\n**Test Day Takeaway:** A midpoint is an average, so the answer must land BETWEEN the two given points in both coordinates. Glance at your answer against the endpoints before you bubble — three of the four choices here fail that check instantly."
+}

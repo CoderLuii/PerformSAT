@@ -5,40 +5,40 @@
   "band": 4,
   "domain": "expression-of-ideas",
   "skill": "rhetorical-synthesis",
+  "module": 2,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "Claudio Monteverdi (1567-1643) was an Italian composer employed at the court of Mantua.",
+      "His opera L'Orfeo, first performed in 1607, retold the Greek myth of Orpheus in music and staged drama.",
+      "L'Orfeo combined sung recitation, arias, choruses, and a large, varied instrumental ensemble.",
+      "A handful of earlier sung dramas existed, but none holds a place in today's repertoire.",
+      "Many historians consider L'Orfeo the earliest opera still regularly staged."
+    ],
+    "goal": "The student wants to emphasize the historical significance of L'Orfeo."
+  },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Marie Tharp was a geologist and mapmaker who spent the 1950s working at Columbia University in New York."
+      "text": "Monteverdi's L'Orfeo, first performed before the court of Mantua in 1607, retold the ancient Greek myth of Orpheus through music and staged drama."
     },
     {
       "id": "B",
-      "text": "For years, the maps Tharp drew were published under the name of a male colleague rather than under her own."
+      "text": "L'Orfeo combined sung recitation, arias, choruses, and a large and notably varied ensemble of instruments."
     },
     {
       "id": "C",
-      "text": "Marie Tharp's maps of the North Atlantic floor revealed a mid-ocean mountain range split by a deep rift valley — evidence that helped establish the then-radical idea that the seafloor spreads apart."
+      "text": "First performed in 1607, Monteverdi's L'Orfeo is considered the earliest opera still regularly staged; where its predecessors vanished from the repertoire, it endured."
     },
     {
       "id": "D",
-      "text": "Tharp drew her maps of the ocean floor by hand, plotting thousands of individual depth measurements collected by ships crossing the North Atlantic over many years."
+      "text": "Claudio Monteverdi, an Italian composer who lived from 1567 to 1643, spent much of his long and productive musical career employed as a court musician by the ruling family of Mantua in northern Italy."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The goal is to emphasize the historical significance of Tharp's work, and choice C names what her maps revealed and why it mattered — evidence for the once-radical idea that the seafloor spreads apart. Choice A gives only a biographical fact; choice B focuses on the credit she was denied rather than on her contribution; and choice D describes her method without stating its significance.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Marie Tharp was a geologist and cartographer who worked at Columbia University in the 1950s.",
-      "Working from ship soundings of ocean depth, Tharp drew detailed maps of the floor of the North Atlantic.",
-      "Her maps revealed a continuous mountain range running down the middle of the ocean, with a deep rift valley along its crest.",
-      "The rift valley was important evidence for the then-controversial idea that the seafloor spreads apart over time.",
-      "For years, Tharp's name did not appear on the published maps, which were credited mainly to a male colleague."
-    ],
-    "goal": "The student wants to emphasize the historical significance of Tharp's contribution to the study of the ocean floor."
-  },
+  "explanation": "**Choice C is correct.** Historical significance is a claim about a work's place in history, and C makes it: the earliest opera still regularly staged, surviving where its predecessors vanished.\n\n**The Full Solution:**\n- The notes locate the significance in two facts: earlier sung dramas left the repertoire (bullet 4), and L'Orfeo is the earliest opera still staged (bullet 5).\n- C joins them into a single claim of endurance and priority, anchored by the 1607 date.\n- That is emphasis on significance, not mere description.\n\n**Why the other choices are wrong:**\n- A: Date, place, and plot describe the premiere without asserting the work's importance to history.\n- B: A list of musical ingredients carries no claim of significance at all.\n- D: A biography of Monteverdi never mentions L'Orfeo, the subject the goal names.",
   "_meta": {
-    "anchor": "Marie Tharp — mid-ocean ridge cartography"
-  },
-  "module": 2
+    "anchor": "Claudio Monteverdi — L'Orfeo; historical-significance goal"
+  }
 }

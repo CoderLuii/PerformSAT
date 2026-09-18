@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "A drying barn has a triangular gable vent with a $20$-centimeter base and two $15$-centimeter sides meeting at the apex. A louver parallel to the base crosses each slanted side at a point $6$ centimeters from the apex. How wide, in centimeters, is the louver?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$11$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts 9 from the base width instead of scaling",
+  "C": "uses the lower 9 centimeters of each side, giving 20 times 9/15",
+  "D": "inverts the ratio, giving 20 times 15/6"
+ },
+ "correctAnswer": "A",
+ "hint": "A parallel cut scales lengths; it does not shorten them by a fixed number of centimeters.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~25s):** The triangle above the louver is similar to the whole vent at a ratio of $\\frac{6}{15}$, so the louver is $\\frac{2}{5}(20) = 8$ centimeters.\n\n**The Full Solution:**\nStep 1: Because the louver is parallel to the base, the triangle above it is similar to the whole gable triangle.\nStep 2: The $6$ centimeters above the louver and the full $15$-centimeter side are corresponding sides, so the scale factor is $\\frac{6}{15} = \\frac{2}{5}$.\nStep 3: The louver is therefore $\\frac{2}{5}(20) = 8$ centimeters wide. Check: $\\frac{8}{20} = \\frac{2}{5} = \\frac{6}{15}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($11$): subtracting $9$ from the base width, which treats the change as a fixed amount rather than a ratio.\n* Choice C ($12$): using the lower $9$ centimeters of each slanted side, computing $20 \\cdot \\frac{9}{15}$; the similar triangle is the one containing the apex.\n* Choice D ($50$): inverting the ratio, computing $20 \\cdot \\frac{15}{6}$, which makes the louver wider than the base.\n\n**Test Day Takeaway:** A line parallel to one side cuts off a similar triangle; scale by the ratio of corresponding sides, never by a difference."
+}

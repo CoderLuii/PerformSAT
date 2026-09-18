@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-048",
+  "question": "A colony of algae doubles in size every $6$ hours. The colony contains $150$ cells at time $t = 0$. Which of the following functions models the number of cells in the colony $t$ hours after $t = 0$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(t) = 2(150)^{t/6}$"
+    },
+    {
+      "id": "B",
+      "text": "$f(t) = 150(2)^{6t}$"
+    },
+    {
+      "id": "C",
+      "text": "$f(t) = 150(2)^{t/6}$"
+    },
+    {
+      "id": "D",
+      "text": "$f(t) = 150(6)^{t/2}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "swaps the starting amount and the growth factor",
+    "B": "multiplies $t$ by the doubling time instead of dividing",
+    "D": "swaps the growth factor and the doubling time"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Exponential Model from Doubling Time**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Start at $150$, multiply by $2$ once per $6$ hours: $f(t) = 150(2)^{t/6}$.\n\n**The Full Solution:**\nStep 1: An exponential model has the form (starting amount)(growth factor) raised to (number of growth periods). The starting amount is $150$ and the growth factor is $2$.\nStep 2: One doubling period is $6$ hours, so in $t$ hours the number of periods is $\\dfrac{t}{6}$.\nStep 3: The model is $f(t) = 150(2)^{t/6}$. Check: $f(0) = 150(2)^{0} = 150$, and $f(6) = 150(2)^{1} = 300$, exactly double. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: puts $150$ in the base, so $f(0) = 2$ — the colony would start with $2$ cells.\n* Choice B: $f(6) = 150(2)^{36}$, an absurd jump; multiplying by $6$ counts $6$ doublings per hour.\n* Choice D: uses $6$ as the growth factor, so $f(2) = 150(6) = 900$, which is six times the start after only $2$ hours.\n\n**Test Day Takeaway:** The doubling time belongs in the DENOMINATOR of the exponent — it converts elapsed time into a count of growth periods."
+}

@@ -1,0 +1,42 @@
+{
+ "id": 3,
+ "question": "A right triangular prism has a volume of $360$ cubic centimeters and a length of $15$ centimeters. Its triangular base is a right triangle with one leg measuring $8$ centimeters. What is the length, in centimeters, of the other leg?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "sideLabels": [
+    "8",
+    "",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the base area by $8$ but never doubles it first",
+  "C": "gives the area of the triangular base rather than a leg",
+  "D": "doubles the base area but never divides by $8$"
+ },
+ "correctAnswer": "B",
+ "hint": "Recover the area of the triangular face before touching the legs.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~45s):** The base area is $\\frac{360}{15} = 24$, so $\\frac{1}{2}(8)L = 24$ and $L = 6$.\n\n**The Full Solution:**\nStep 1: $V = Bh$ gives $360 = B(15)$, so the base area is $B = 24$ square centimeters.\nStep 2: The base is a right triangle with legs $8$ and $L$: $\\frac{1}{2}(8)L = 24$.\nStep 3: That is $4L = 24$, so $L = 6$ centimeters.\n\nVerification: $\\frac{1}{2}(8)(6)(15) = 24(15) = 360$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): divides the base area by $8$ but never doubles it first.\n* Choice C ($24$): gives the area of the triangular base rather than a leg.\n* Choice D ($48$): doubles the base area but never divides by $8$.\n\n**Test Day Takeaway:** Take the prism apart in the order it was built: volume to base area, then base area to the missing length."
+}

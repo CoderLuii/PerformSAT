@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "For values of $x$ greater than $3$, the fraction $\\frac{3x^2 - 12}{x^2 + 5x + 6}$ can be reduced to lowest terms. Which of the following is the reduced fraction?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3(x + 2)}{x + 3}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3(x - 2)}{x + 3}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3(x - 2)}{x + 2}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{x - 2}{x + 3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "cancels the factor (x - 2) instead of the shared factor (x + 2), keeping the wrong binomial",
+  "C": "cancels (x + 3) from the denominator rather than the shared factor (x + 2)",
+  "D": "drops the coefficient 3 when factoring 3x^2 - 12 as a difference of squares"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $3x^2 - 12 = 3(x - 2)(x + 2)$ and $x^2 + 5x + 6 = (x + 2)(x + 3)$. Cancel the shared $(x + 2)$: the fraction equals $\\frac{3(x - 2)}{x + 3}$.\n\n**The Full Solution:**\nStep 1: Factor the numerator. Pull out the common factor $3$ first: $3x^2 - 12 = 3(x^2 - 4)$, and $x^2 - 4$ is a difference of squares, so $3x^2 - 12 = 3(x - 2)(x + 2)$.\nStep 2: Factor the denominator. Two numbers with product $6$ and sum $5$ are $2$ and $3$, so $x^2 + 5x + 6 = (x + 2)(x + 3)$.\nStep 3: The factor $(x + 2)$ appears in both, and it is not zero when $x > 3$, so it cancels: $\\frac{3(x - 2)(x + 2)}{(x + 2)(x + 3)} = \\frac{3(x - 2)}{x + 3}$. Check at $x = 4$: the original is $\\frac{48 - 12}{16 + 20 + 6} = \\frac{36}{42} = \\frac{6}{7}$, and the reduced form gives $\\frac{3(2)}{7} = \\frac{6}{7}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3(x + 2)}{x + 3}$): the shared factor is $(x + 2)$, so it is $(x + 2)$ that disappears and $(x - 2)$ that survives. At $x = 4$ this gives $\\frac{18}{7}$, not $\\frac{6}{7}$.\n* Choice C ($\\frac{3(x - 2)}{x + 2}$): cancelling $(x + 3)$ from the denominator, which is not a factor of the numerator. At $x = 4$ it gives $1$, not $\\frac{6}{7}$.\n* Choice D ($\\frac{x - 2}{x + 3}$): losing the factor $3$ that was pulled out of the numerator. At $x = 4$ it gives $\\frac{2}{7}$, one third of the correct value.\n\n**Test Day Takeaway:** Factor completely — common factors first, then difference of squares or a trinomial — and cancel only factors shared by the whole numerator and the whole denominator. Test one legal value of $x$ to confirm."
+}

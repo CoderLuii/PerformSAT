@@ -1,0 +1,6 @@
+{
+  "question": "A rectangular gasket measures $9$ inches by $12$ inches, and a uniform border of width $w$ inches is added on all four sides. The bordered gasket has an area of $208$ square inches. What is the value of $w$?",
+  "correctAnswer": "2",
+  "explanation": "**SAT Pattern: Area Equation to Quadratic**\n\n**The correct answer is $2$.**\n\n**The Fast Way (~25s):** The bordered gasket is $(9+2w)$ by $(12+2w)$, so $4w^{2}+42w+108=208$, which reduces to $2w^{2}+21w-50=0$ and factors to $(2w+25)(w-2)=0$.\n\n**The Full Solution:**\nStep 1: The border adds $w$ to each side of both dimensions, so the outer dimensions are $9+2w$ and $12+2w$.\nStep 2: Set the area equal to $208$: $(9+2w)(12+2w)=4w^{2}+42w+108=208$, so $4w^{2}+42w-100=0$, or $2w^{2}+21w-50=0$.\nStep 3: Factor: $(2w+25)(w-2)=0$, so $w=-12.5$ or $w=2$. A width must be positive, so $w=2$. Check: $(9+4)(12+4)=13\\cdot 16=208$ ✓\n\n**Common Mistakes:**\n* $4$: added $w$ rather than $2w$ to each dimension, solving $(9+w)(12+w)=208$.\n* $-12.5$: kept the negative solution of the quadratic, which cannot be a width.\n* $100$: stopped at the constant term of $4w^{2}+42w-100=0$ instead of solving.\n\n**Test Day Takeaway:** A border of width $w$ adds $2w$ to each full dimension — write the outer dimensions first, then set the product equal to the given area.",
+  "id": "bank-am-012"
+}

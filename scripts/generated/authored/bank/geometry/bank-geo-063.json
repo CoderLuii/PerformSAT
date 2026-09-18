@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-063",
+ "question": "For the acute angle $P$ marked on the condenser support arm shown, $\\sin P = \\frac{5}{13}$, and the arm's sloped edge is $26$ centimeters. How long, in centimeters, is the edge opposite $P$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     10
+    ]
+   ],
+   "labels": [
+    "P",
+    "",
+    ""
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "26 cm"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$67.6$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reads the numerator of the ratio as a length instead of scaling it",
+  "C": "reports the edge adjacent to P rather than the one opposite it",
+  "D": "inverts the ratio, computing 26 times 13 over 5"
+ },
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice B is correct.** $\\sin P = \\frac{\\text{opposite}}{\\text{hypotenuse}}$, so the opposite edge is $26 \\cdot \\frac{5}{13} = 10$ centimeters.\n\n**The Fast Way (~20s):** $\\frac{5}{13}$ of $26$ is $10$.\n\n**The Full Solution:**\n\nStep 1: The sloped edge is the hypotenuse, so $\\sin P = \\frac{\\text{opposite}}{26} = \\frac{5}{13}$.\n\nStep 2: Cross-multiply: $13 \\cdot \\text{opposite} = 5 \\cdot 26 = 130$.\n\nStep 3: So the opposite edge is $10$ centimeters. Check: the third side is $\\sqrt{26^2 - 10^2} = 24$, and $10$-$24$-$26$ is a valid right triangle with $\\sin P = \\frac{10}{26} = \\frac{5}{13}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5$): reads the ratio's numerator as a length instead of scaling it to the $26$-centimeter hypotenuse.\n* Choice C ($24$): gives the edge adjacent to $P$, not the one opposite.\n* Choice D ($67.6$): inverts the ratio, computing $26 \\cdot \\frac{13}{5}$, which exceeds the hypotenuse and cannot be a side.\n\n**Test Day Takeaway:** A trig ratio is a scale factor: multiply the hypotenuse by $\\sin$ to get the opposite leg, and sanity-check that no leg exceeds the hypotenuse."
+}

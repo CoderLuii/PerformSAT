@@ -1,0 +1,29 @@
+{
+ "question": "A plankton net's circular mouth measures $C$ centimeters around. Which expression gives the number of square centimeters the mouth encloses?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{C^2}{4\\pi}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{C^2}{2\\pi}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{C^2}{\\pi}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{\\pi C^2}{4}$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "squares only C, leaving pi times C squared over 2 pi squared",
+  "C": "uses C = pi r, so r = C over pi and the area becomes C squared over pi",
+  "D": "uses r = C/2, confusing the circumference with the diameter"
+ },
+ "explanation": "**SAT Pattern: Circumference of a Circle**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** From $C = 2\\pi r$ the radius is $\\frac{C}{2\\pi}$, so the area is $\\pi\\left(\\frac{C}{2\\pi}\\right)^2 = \\frac{C^2}{4\\pi}$.\n\n**The Full Solution:**\nStep 1: Solve the circumference formula for the radius: $r = \\frac{C}{2\\pi}$.\nStep 2: Substitute into the area formula: $A = \\pi r^2 = \\pi \\cdot \\frac{C^2}{4\\pi^2}$.\nStep 3: Cancel one factor of $\\pi$: $A = \\frac{C^2}{4\\pi}$ square centimeters. Check: if $r = 3$ then $C = 6\\pi$ and $\\frac{(6\\pi)^2}{4\\pi} = \\frac{36\\pi^2}{4\\pi} = 9\\pi = \\pi r^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{C^2}{2\\pi}$): squares the numerator but not the $2$ in the denominator, losing a factor of $2$.\n* Choice C ($\\frac{C^2}{\\pi}$): starts from $C = \\pi r$, which is the diameter form, so the radius comes out twice too large.\n* Choice D ($\\frac{\\pi C^2}{4}$): treats $C$ as the diameter and uses $r = \\frac{C}{2}$.\n\n**Test Day Takeaway:** To link circumference and area, solve for $r$ first and square the WHOLE fraction — denominator included.",
+ "id": "bank-geo-238"
+}

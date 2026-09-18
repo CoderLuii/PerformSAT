@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "For the system of equations $2x - y = 7$ and $6x + ky = 5$, where $k$ is a constant, there is exactly one solution for every value of $k$ except one. What is that value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-12$"
+    },
+    {
+      "id": "B",
+      "text": "$-3$"
+    },
+    {
+      "id": "C",
+      "text": "$3$"
+    },
+    {
+      "id": "D",
+      "text": "$12$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverts the slope comparison, setting $-\\frac{k}{6} = 2$.",
+    "C": "drops the negative sign when reading the slope of $6x + ky = 5$, setting $\\frac{6}{k} = 2$.",
+    "D": "both inverts the ratio and drops the sign, setting $\\frac{k}{6} = 2$."
+  },
+  "correctAnswer": "B",
+  "hint": "The exceptional value is the one that makes substitution eliminate $x$ as well as $y$.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~55s):** Substituting $y = 2x - 7$ into the second equation gives $(6 + 2k)x = 5 + 7k$. The $x$ term vanishes when $6 + 2k = 0$, so $k = -3$.\n\n**The Full Solution:**\nStep 1: Solve the first equation for $y$: $y = 2x - 7$.\nStep 2: Substitute into the second equation: $6x + k(2x - 7) = 5$, which becomes $(6 + 2k)x = 5 + 7k$.\nStep 3: This has exactly one solution for $x$ whenever $6 + 2k \\ne 0$. The single exception is $6 + 2k = 0$, so $k = -3$. Check: with $k = -3$ the second equation is $6x - 3y = 5$, or $2x - y = \\frac{5}{3}$, which is parallel to and distinct from $2x - y = 7$, so the system has no solution. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-12$): inverts the slope comparison, setting $-\\frac{k}{6} = 2$.\n* Choice C ($3$): drops the negative sign when reading the slope of $6x + ky = 5$, setting $\\frac{6}{k} = 2$.\n* Choice D ($12$): both inverts the ratio and drops the sign, setting $\\frac{k}{6} = 2$.\n\n**Test Day Takeaway:** Carry the parameter through the substitution and watch the coefficient of the surviving variable. When it hits zero, the system stops having exactly one solution."
+}

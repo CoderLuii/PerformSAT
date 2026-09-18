@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-379",
+ "question": "A sound designer subtracts 9 from every output of the level function $f$, defining a new function $h$ by $h(x)=f(x)-9$. How does the graph of $h$ compare with the graph of $f$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It is the graph of $f$ shifted down 9 units."
+  },
+  {
+   "id": "B",
+   "text": "It is the graph of $f$ shifted up 9 units."
+  },
+  {
+   "id": "C",
+   "text": "It is the graph of $f$ shifted left 9 units."
+  },
+  {
+   "id": "D",
+   "text": "It is the graph of $f$ shifted right 9 units."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reverses the direction of the vertical shift",
+  "C": "reads the subtraction as a horizontal shift, the effect of f(x + 9)",
+  "D": "reads the subtraction as the horizontal shift produced by f(x - 9)"
+ },
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Subtracting 9 outside the function lowers every point 9 units.\n\n**The Full Solution:**\nStep 1: The rule changes outputs, not inputs, so the motion is vertical.\nStep 2: Subtracting makes each output smaller, so the motion is downward.\nStep 3: The graph of $h$ is the graph of $f$ shifted down 9 units. Check: if $(4,20)$ is on the graph of $f$, then $(4,11)$ is on the graph of $h$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: moves the graph up, the effect of $f(x)+9$.\n* Choice C: reads the change as horizontal; a left shift comes from $f(x+9)$.\n* Choice D: also horizontal; a right shift comes from $f(x-9)$.\n\n**Test Day Takeaway:** Outside the parentheses the graph moves vertically in the direction the sign suggests; inside, it moves horizontally the opposite way."
+}

@@ -1,0 +1,29 @@
+{
+  "question": "The equation $px^{2}+qx+r=0$, where $p$, $q$, and $r$ are nonzero constants, has exactly one real solution. Which of the following expressions is equal to that solution?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-\\dfrac{q}{p}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\dfrac{q}{2p}$"
+    },
+    {
+      "id": "C",
+      "text": "$-\\dfrac{q}{2p}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\dfrac{r}{p}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "omitted the 2 in the denominator of -b/(2a)",
+    "B": "dropped the negative sign of -b/(2a)",
+    "D": "gave the product of the two solutions, r/p, instead of the solution itself"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** One real solution means the radical vanishes, leaving $x=-\\dfrac{q}{2p}$.\n\n**The Full Solution:**\nStep 1: The quadratic formula gives $x=\\dfrac{-q\\pm\\sqrt{q^{2}-4pr}}{2p}$.\nStep 2: Exactly one real solution means $q^{2}-4pr=0$, so the square root term is $0$.\nStep 3: The formula collapses to $x=\\dfrac{-q}{2p}$. Check with $x^{2}+6x+9=0$: $p=1$, $q=6$, and the only solution is $-3=-\\dfrac{6}{2}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\dfrac{q}{p}$): omits the $2$ in the denominator.\n* Choice B ($\\dfrac{q}{2p}$): drops the negative sign.\n* Choice D ($\\dfrac{r}{p}$): gives the product of the two solutions rather than the solution.\n\n**Test Day Takeaway:** A zero discriminant means the double root sits exactly at the vertex, $x=-\\dfrac{b}{2a}$.",
+  "id": "bank-am-350"
+}

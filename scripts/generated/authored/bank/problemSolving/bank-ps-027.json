@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-027",
+  "question": "Sample A consists of $15$ measurements of the caffeine content, in milligrams, of a beverage and has a mean of $42$ milligrams. Sample B consists of $25$ measurements of the same beverage. When the two samples are combined, the $40$ measurements have a mean of $48$ milligrams. What is the mean caffeine content, in milligrams, of sample B?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$32.25$"
+    },
+    {
+      "id": "B",
+      "text": "$51.6$"
+    },
+    {
+      "id": "C",
+      "text": "$54$"
+    },
+    {
+      "id": "D",
+      "text": "$58$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides sample B's sum, $1{,}290$, by all $40$ measurements instead of by the $25$ in sample B.",
+    "C": "treats the samples as equal in size and solves $\\frac{42 + x}{2} = 48$; the combined mean is a weighted mean, not a simple average.",
+    "D": "swaps the sample sizes, using $25$ for sample A and $15$ for sample B."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Weighted Combined Mean**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Combined sum $40 \\times 48 = 1{,}920$; sample A's sum $15 \\times 42 = 630$. Sample B's sum is $1{,}290$, so its mean is $\\frac{1{,}290}{25} = 51.6$.\n\n**The Full Solution:**\nStep 1: Convert each mean to a sum. Combined: $40 \\times 48 = 1{,}920$ mg. Sample A: $15 \\times 42 = 630$ mg.\nStep 2: Sample B's sum is $1{,}920 - 630 = 1{,}290$ mg, so its mean is $\\frac{1{,}290}{25} = 51.6$ mg.\nStep 3: Check with weights: $\\frac{15(42) + 25(51.6)}{40} = \\frac{630 + 1{,}290}{40} = 48$. $\\checkmark$ (Also, $48$ lies closer to $51.6$ than to $42$, as it should with B the larger sample.)\n\n**Why the wrong answers are tempting:**\n* Choice A ($32.25$): divides sample B's sum, $1{,}290$, by all $40$ measurements instead of by the $25$ in sample B.\n* Choice C ($54$): treats the samples as equal in size and solves $\\frac{42 + x}{2} = 48$; the combined mean is a weighted mean, not a simple average.\n* Choice D ($58$): swaps the sample sizes, using $25$ for sample A and $15$ for sample B.\n\n**Test Day Takeaway:** A combined mean is a weighted mean. Work in sums: (combined sum) $-$ (known sum) $=$ (unknown sum), then divide by the unknown group's own count."
+}

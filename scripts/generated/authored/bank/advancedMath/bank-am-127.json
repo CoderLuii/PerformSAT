@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-127",
+ "question": "A cafe's monthly orders of espresso machine descaling kits above its contract minimum are modeled by $y=x^2+2x+k$, where $k$ is a constant, and the line $y=6x-11$ touches this graph at exactly one point. What is the $x$-coordinate of that point?",
+ "correctAnswer": "2",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**The correct answer is $2$.**\n\n**The Fast Way (~25s):** Equating gives $x^2-4x+(k+11)=0$; a single solution is the double root $x=-\\frac{-4}{2}=2$, whatever $k$ is.\n\n**The Full Solution:**\nStep 1: Set $x^2+2x+k=6x-11$, which rearranges to $x^2-4x+(k+11)=0$.\nStep 2: A single shared point means this quadratic has a double root, and a double root sits at $x=-\\frac{b}{2a}$.\nStep 3: Compute $x=-\\frac{-4}{2(1)}=2$. Check: a double root at $2$ means the quadratic is $(x-2)^2=x^2-4x+4$, so $k+11=4$ and $k=-7$; then $x^2+2x-7=6x-11$ does reduce to $(x-2)^2=0$ ✓\n\n**Common Mistakes:**\n* $-2$: uses $\\frac{b}{2a}$ and keeps the sign of $b$ instead of negating it.\n* $4$: uses $-b$ and forgets to divide by $2a$.\n* $6$: reports the slope of the line instead of an $x$-coordinate.\n\n**Test Day Takeaway:** The point of tangency is always the vertex of the difference quadratic, so $x=-\\frac{b}{2a}$ answers it even when a constant is unknown."
+}

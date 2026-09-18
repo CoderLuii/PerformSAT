@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "A cyclist rides $66$ kilometers with the wind in $2$ hours and $42$ kilometers against the wind in $2$ hours. Let $c$ be the cyclist’s speed in still air and let $w$ be the speed of the wind, both in kilometers per hour. Which system of equations represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2(c + w) = 66$ and $2(c - w) = 42$"
+    },
+    {
+      "id": "B",
+      "text": "$2(c + w) = 42$ and $2(c - w) = 66$"
+    },
+    {
+      "id": "C",
+      "text": "$c + w = 66$ and $c - w = 42$"
+    },
+    {
+      "id": "D",
+      "text": "$2c + w = 66$ and $2c - w = 42$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "assigns the longer distance to the trip against the wind, which would make the wind slow the cyclist down over the greater distance.",
+    "C": "omits the $2$ hours, equating a speed with a distance.",
+    "D": "multiplies only the cyclist’s speed by the time, leaving the wind term untimed."
+  },
+  "correctAnswer": "A",
+  "hint": "Wind adds to the cyclist’s speed one way and subtracts from it the other way; distance is speed times time.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~35s):** With the wind the speed is $c + w$ and with $2$ hours of riding the distance is $2(c + w) = 66$; against the wind it is $2(c - w) = 42$.\n\n**The Full Solution:**\nStep 1: Riding with the wind, the cyclist’s effective speed is $c + w$; riding against it, the effective speed is $c - w$.\nStep 2: Distance equals speed times time, and each ride lasts $2$ hours, so the distances are $2(c + w)$ and $2(c - w)$.\nStep 3: Setting those equal to the given distances yields $2(c + w) = 66$ and $2(c - w) = 42$. Check: $c = 27$ and $w = 6$ give $2(33) = 66$ and $2(21) = 42$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: assigns the longer distance to the trip against the wind, which would make the wind slow the cyclist down over the greater distance.\n* Choice C: omits the $2$ hours, equating a speed with a distance.\n* Choice D: multiplies only the cyclist’s speed by the time, leaving the wind term untimed.\n\n**Test Day Takeaway:** For with-and-against problems, write the two combined speeds first, then multiply each by its own time before setting it equal to a distance."
+}

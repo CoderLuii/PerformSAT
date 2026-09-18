@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-338",
+  "question": "A random sample of $600$ residents of a city was surveyed. Based on the sample, the mean number of hours per week a resident spends volunteering is estimated to be $3.4$ hours, with an associated margin of error of $0.3$ hour. Which of the following is the most appropriate conclusion about the mean number of hours per week all residents of the city spend volunteering?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It is plausible that the mean is between $3.1$ hours and $3.7$ hours."
+    },
+    {
+      "id": "B",
+      "text": "The mean is exactly $3.4$ hours."
+    },
+    {
+      "id": "C",
+      "text": "Every resident of the city volunteers between $3.1$ hours and $3.7$ hours per week."
+    },
+    {
+      "id": "D",
+      "text": "It is plausible that the mean is between $3.4$ hours and $3.7$ hours."
+    }
+  ],
+  "distractorNotes": {
+    "B": "treats the sample estimate as the exact population value, which is what the margin of error exists to rule out.",
+    "C": "applies the interval to individual residents; the interval estimates the population mean, not each person's hours.",
+    "D": "uses the margin of error on one side only, halving the interval instead of extending it in both directions."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The plausible interval is estimate $\\pm$ margin of error: $3.4 - 0.3 = 3.1$ to $3.4 + 0.3 = 3.7$ hours.\n\n**The Full Solution:**\nStep 1: A margin of error is applied in both directions around the sample estimate.\nStep 2: The lower bound is $3.4 - 0.3 = 3.1$ hours and the upper bound is $3.4 + 0.3 = 3.7$ hours.\nStep 3: The appropriate conclusion is that the mean for all residents plausibly lies between $3.1$ and $3.7$ hours. Check: the interval is centered on $3.4$ and is $2(0.3) = 0.6$ hour wide. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: treats the sample estimate as the exact population value, which is what the margin of error exists to rule out.\n* Choice C: applies the interval to individual residents; the interval estimates the population mean, not each person's hours.\n* Choice D: uses the margin of error on one side only, halving the interval instead of extending it in both directions.\n\n**Test Day Takeaway:** Estimate $\\pm$ margin of error gives a plausible range for the population value — not a guarantee, and never a range for individual members of the population."
+}

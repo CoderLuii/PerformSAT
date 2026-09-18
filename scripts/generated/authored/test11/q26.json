@@ -1,44 +1,49 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Ulugh Beg's 1437 catalog, the Zij-i Sultani, was notable because its nearly 1,000 star positions were measured directly at his Samarkand observatory rather than copied from older catalogs and remained among the most accurate available until the telescope."
-    },
-    {
-      "id": "B",
-      "text": "Ulugh Beg, a fifteenth-century ruler and astronomer in Samarkand, in present-day Uzbekistan, built a large observatory equipped with a giant stone sextant set into the ground, and with a team of astronomers he compiled the Zij-i Sultani there in 1437."
-    },
-    {
-      "id": "C",
-      "text": "The Zij-i Sultani, compiled by Ulugh Beg together with a team of astronomers, listed the positions of nearly 1,000 stars and was consulted widely by later astronomers."
-    },
-    {
-      "id": "D",
-      "text": "Working with a team of astronomers at his observatory in Samarkand, Ulugh Beg compiled a star catalog that he completed and made public in the year 1437."
-    }
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The weave of a Montecristi superfino can be so tight that the hat holds water and can be rolled up to pass through a wedding ring."
+  },
+  {
+   "id": "B",
+   "text": "Toquilla-straw weaving was added to UNESCO's list of Intangible Cultural Heritage in 2012."
+  },
+  {
+   "id": "C",
+   "text": "So-called panama hats are actually woven in Ecuador rather than in Panama, from straw that weavers prepare from the leaves of the toquilla palm."
+  },
+  {
+   "id": "D",
+   "text": "A hat's fineness is measured by its weave count, and the town of Montecristi is located in Ecuador."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The goal is to emphasize the fineness that sets a Montecristi superfino apart, and A delivers the notes' two most vivid measures of that fineness: a weave tight enough to hold water and supple enough to pass through a wedding ring.\n\n**The Full Solution:**\n- The goal word is \"fineness\" — the sentence must make the quality of the weave itself the star.\n- The fourth note supplies exactly the demonstration: water-tightness and the wedding-ring roll are consequences only an extraordinarily tight weave could produce.\n- Choice A converts that note into a single claim about the superfino, accomplishing the emphasis directly.\n\n**Why the other choices are wrong:**\n- B: The UNESCO listing honors the craft tradition but conveys nothing about how fine a superfino's weave is.\n- C: The Ecuador-not-Panama correction is geography, not fineness.\n- D: It defines the measurement and locates the town but never says what makes a superfino's weave remarkable.",
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "So-called panama hats are woven in Ecuador from straw of the toquilla palm.",
+   "The town of Montecristi is known for the finest examples, called superfinos.",
+   "A hat's fineness is measured by its weave count — the number of rows of weave per inch.",
+   "A superfino's weave can be so tight that the hat holds water and can be rolled up to pass through a wedding ring.",
+   "In 2012, UNESCO added toquilla-straw weaving to its list of Intangible Cultural Heritage."
   ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The goal is to emphasize what made the catalog notable, and Choice A names the two features the notes mark as distinctive: its star positions were measured directly rather than copied, and they remained the most accurate available until the telescope. Choice B recounts the observatory, its instrument, and the circumstances of the catalog's compilation without saying what set the catalog apart; Choice C reports the number of stars and later use without saying what set the work apart; and Choice D records who compiled it and when, which is provenance rather than significance.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Ulugh Beg was a fifteenth-century ruler and astronomer in Samarkand, in present-day Uzbekistan.",
-      "He built a large observatory equipped with a giant stone sextant set into the ground.",
-      "With a team of astronomers, he compiled a star catalog, the Zij-i Sultani (1437), listing the positions of nearly 1,000 stars.",
-      "The catalog's star positions were measured directly rather than copied from older Greek catalogs.",
-      "Its measurements remained among the most accurate available until the telescope came into use."
-    ],
-    "goal": "The student wants to emphasize what made Ulugh Beg's star catalog notable."
-  },
-  "_meta": {
-    "anchor": "Ulugh Beg, Zij-i Sultani (1437), Samarkand observatory star catalog"
-  },
-  "id": 1126,
-  "module": 1
+  "goal": "The student wants to emphasize the fineness that distinguishes a Montecristi superfino."
+ },
+ "_meta": {
+  "anchor": "panama-hat weaving — Montecristi superfino fineness",
+  "distractors": {
+   "B": "honor, not fineness",
+   "C": "geography, not fineness",
+   "D": "definition without the distinguishing quality"
+  }
+ },
+ "id": 1126,
+ "module": 1
 }

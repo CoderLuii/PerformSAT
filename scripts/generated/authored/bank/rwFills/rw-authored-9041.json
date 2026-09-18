@@ -1,0 +1,32 @@
+{
+  "id": 9041,
+  "passage": "Eveline, one of the stories in James Joyce’s 1914 collection Dubliners, follows a young woman through the evening on which she has decided to leave her family’s house for a life abroad. A reader might argue that the story registers her attachment to that house not in anything she says about it but in the household things she has kept in order for years.",
+  "question": "Which quotation from Dubliners most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "“She looked round the room, reviewing all its familiar objects which she had dusted once a week for so many years, wondering where on earth all the dust came from.”"
+    },
+    {
+      "id": "B",
+      "text": "“Her head was leaned against the window curtains and in her nostrils was the odour of dusty cretonne.”"
+    },
+    {
+      "id": "C",
+      "text": "“Then a man from Belfast bought the field and built houses in it—not like their little brown houses but bright brick houses with shining roofs.”"
+    },
+    {
+      "id": "D",
+      "text": "“The man out of the last house passed on his way home; she heard his footsteps clacking along the concrete pavement and afterwards crunching on the cinder path before the new red houses.”"
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** The sentence puts her attachment entirely into objects she has tended — the familiar things of the room, dusted once a week for so many years — without a word about how she feels.\n\n**The Full Solution:**\n- The claim has two requirements: household objects that she herself has kept in order, and no statement of feeling. Test each quotation against both.\n- Choice A meets both. Reviewing all its familiar objects supplies the household things, which she had dusted once a week for so many years supplies the years of tending, and nothing in the sentence names an emotion.\n- Discard quotations that describe the street or the neighborhood, however atmospheric, since the claim is about objects inside the house that she has maintained.\n\n**Why the other choices are wrong:**\n- B: The curtains and the smell of cretonne are household details, but they are things she is resting against rather than things she has kept in order, so the second half of the claim goes unmet.\n- C: This describes a builder’s work on a field outside, not the interior she has tended.\n- D: A sound from the street. It records the neighborhood in the evening and involves no household object of hers at all.",
+  "source": {
+    "title": "Dubliners",
+    "author": "James Joyce",
+    "year": 1914,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/2814"
+  }
+}

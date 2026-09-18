@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-203",
+ "question": "On a school playground plan, a triangular sandbox has corners at $(0,0)$, $(b,0)$, and $(0,h)$, where $b>0$, $h>0$, and units are meters. Which expression gives the sandbox's area, in square meters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{bh}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{b+h}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$b+h$"
+  },
+  {
+   "id": "D",
+   "text": "$bh$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "averages the two legs instead of halving their product",
+  "C": "adds the two legs, which is part of the perimeter, not the area",
+  "D": "gives the area of the surrounding rectangle, omitting the factor one half"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The legs along the axes are $b$ and $h$, so the area is $\\frac{1}{2}bh$.\n\n**The Full Solution:**\n\nStep 1: Locate the legs. From $(0,0)$ to $(b,0)$ is a horizontal segment of length $b$; from $(0,0)$ to $(0,h)$ is a vertical segment of length $h$.\n\nStep 2: Note the right angle. Those two segments meet at the origin at a right angle, so they serve as base and height.\n\nStep 3: Apply the formula. Area $=\\frac{1}{2}(b)(h)=\\frac{bh}{2}$ square meters.\n\nCheck: with $b=6$ and $h=4$ the triangle is half of a $6$-by-$4$ rectangle, area $12$, and $\\frac{(6)(4)}{2}=12$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($\\frac{b+h}{2}$): averages the two legs instead of halving their product.\n* Choice C ($b+h$): adds the legs, which measures distance, not area.\n* Choice D ($bh$): gives the area of the surrounding rectangle, omitting the factor $\\frac{1}{2}$.\n\n**Test Day Takeaway:** When two vertices share an axis with the origin, the legs are the coordinates themselves — no distance formula needed."
+}

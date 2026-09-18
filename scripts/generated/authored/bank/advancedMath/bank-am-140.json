@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-140",
+ "question": "A model gives the vertical offset, in centimeters, of a ferry ramp relative to its dock as $x^{2}-9x+18$, where $x$ is the tide height in decimeters. What is the lesser of the two tide heights at which the offset is $0$ centimeters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-6$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$4.5$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "factors as (x + 3)(x + 6) with both signs flipped and takes the lesser value -6",
+  "C": "reports 9/2, the tide height halfway between the two zeros",
+  "D": "reports the greater of the two tide heights instead of the lesser"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Quadratic via Factoring**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $x^{2}-9x+18=(x-3)(x-6)$, so the offset is $0$ at $x=3$ and $x=6$; the lesser height is $3$.\n\n**The Full Solution:**\n\nStep 1: Set the model equal to zero: $x^{2}-9x+18=0$.\n\nStep 2: Find two numbers with product $18$ and sum $-9$: they are $-3$ and $-6$, so the expression factors as $(x-3)(x-6)$.\n\nStep 3: Each factor gives a tide height: $x=3$ or $x=6$, and the question asks for the lesser, $3$. Check: $3^{2}-9(3)+18=9-27+18=0$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-6$): factors as $(x+3)(x+6)$, flipping both signs, and reports the lesser negative value.\n* Choice C ($4.5$): reports $\\frac{9}{2}$, the height midway between the two zeros.\n* Choice D ($6$): solves correctly but reports the greater of the two tide heights.\n\n**Test Day Takeaway:** After factoring, reread which of the two solutions the question actually wants."
+}

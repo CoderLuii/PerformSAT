@@ -1,0 +1,48 @@
+{
+  "id": "bank-am-186",
+  "question": "The function $f$ is defined by $f(x) = ab^x$, where $a$ and $b$ are positive constants. The table gives the value of $f$ at two values of $x$. What is the value of $f(2)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)"
+      ],
+      "rows": [
+        [
+          "0",
+          "5"
+        ],
+        [
+          "3",
+          "320"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20$"
+    },
+    {
+      "id": "B",
+      "text": "$80$"
+    },
+    {
+      "id": "C",
+      "text": "$215$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}280$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "evaluates $f(1)$ instead of $f(2)$",
+    "C": "treats the change from $5$ to $320$ as constant addition",
+    "D": "evaluates $f(4)$, multiplying by $b$ twice too often"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $f(0) = a = 5$, so $5b^3 = 320$ gives $b^3 = 64$ and $b = 4$; then $f(2) = 5(4)^2 = 80$.\n\n**The Full Solution:**\nStep 1: Substituting $x = 0$ gives $f(0) = ab^0 = a$, and the table gives $f(0) = 5$, so $a = 5$.\nStep 2: Substituting $x = 3$ gives $5b^3 = 320$, so $b^3 = 64$ and $b = 4$ (the positive cube root).\nStep 3: $f(2) = 5(4)^2 = 5(16) = 80$. Check the chain: $5 \\to 20 \\to 80 \\to 320$, four times at each step. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): this is $f(1) = 5(4)$, one factor short.\n* Choice C ($215$): treats the model as linear — the total increase is $315$ over $3$ units, so $5 + 2(105) = 215$. But $f$ multiplies, it does not add.\n* Choice D ($1{,}280$): this is $f(4) = 5(4)^4$, one factor past the requested input.\n\n**Test Day Takeaway:** Two points determine $ab^x$: read $a$ off the $x = 0$ row, then take the appropriate root of the ratio to get $b$."
+}

@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "nourish"
-    },
-    {
-      "id": "B",
-      "text": "warm"
-    },
-    {
-      "id": "C",
-      "text": "reveal"
-    },
-    {
-      "id": "D",
-      "text": "damage"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"damage.\" The passage states that ultraviolet radiation at high altitude \"can break down the molecules inside living cells,\" so the hairs are valuable because they soak up that radiation before it can harm the tissue beneath. \"Damage\" names exactly the threat the hairs guard against. \"Nourish\" describes a benefit, the opposite of what the sentence sets up as a danger. \"Warm\" might tempt a reader who knows alpine plants struggle with cold, but the sentence is about radiation's destructive effect, not temperature. \"Reveal\" treats the light as merely illuminating the tissue, which does not match the protective role the hairs are said to play.",
-  "passage": "High on alpine slopes, sunlight carries far more ultraviolet radiation than it does in the valleys below, and such radiation can break down the molecules inside living cells. The flowering plant edelweiss is covered in a dense coat of tiny white hairs. Studies of these hairs suggest that their microscopic structure absorbs ultraviolet wavelengths, soaking up the radiation before it can reach and ______ the delicate tissue underneath.",
-  "_meta": {
-    "anchor": "edelweiss (Leontopodium alpinum): woolly hairs that absorb ultraviolet light at high altitude"
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "reverse"
   },
-  "id": 1101,
-  "module": 1
+  {
+   "id": "B",
+   "text": "conceal"
+  },
+  {
+   "id": "C",
+   "text": "measure"
+  },
+  {
+   "id": "D",
+   "text": "halt"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The proteins latch onto a crystal \"before the crystal can cause harm,\" so the blank needs a word meaning to stop the crystal's growth — \"halt.\"\n\n**The Full Solution:**\n- The passage sets up the danger: an ice crystal \"could grow until it blocks blood vessels.\"\n- The antifreeze proteins are the remedy, and they act on the crystal's growth: latching on and stopping that growth is what would prevent the harm.\n- \"Halt\" expresses precisely that action — the crystal stays small and harmless.\n\n**Why the other choices are wrong:**\n- A: \"Reverse\" would mean the proteins shrink or melt the crystal; the text describes stopping growth, not undoing it.\n- B: \"Conceal\" means to hide — hiding a crystal's growth would not protect blood vessels from being blocked.\n- C: \"Measure\" describes observation, not protection; measuring growth would leave the danger untouched.",
+ "passage": "The waters around Antarctica hover below the freezing point of fish blood, and a single ice crystal that enters a fish's body could grow until it blocks blood vessels. Antarctic notothenioid fish survive because their blood carries special antifreeze proteins. These proteins latch onto any tiny ice crystal that slips inside the body and ______ its growth before the crystal can cause harm.",
+ "_meta": {
+  "anchor": "Antarctic notothenioid fish — antifreeze proteins arrest ice-crystal growth",
+  "distractors": {
+   "A": "overshoot — proteins stop growth, they do not melt crystals",
+   "B": "wrong domain — hiding, not stopping",
+   "C": "wrong domain — observing, not stopping"
+  }
+ },
+ "id": 1101,
+ "module": 1
 }

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-088",
+ "question": "In a kelp bed monitored all summer, the equality $\\sqrt[3]{x^{k}} = x^{2}\\sqrt[3]{x}$ holds whenever the light-attenuation ratio $x$ is positive, and the constant $k$ never changes between readings. Determine the value of $k$.",
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Exponent Rules with Radicals**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~25s):** The right side is $x^{2 + 1/3} = x^{7/3}$, so $\\frac{k}{3} = \\frac{7}{3}$ and $k = 7$.\n\n**The Full Solution:**\nStep 1: The left side is $x^{k/3}$, since a cube root divides the exponent by $3$.\nStep 2: The right side is $x^{2} \\cdot x^{1/3} = x^{2 + 1/3} = x^{7/3}$.\nStep 3: Equal bases force $\\frac{k}{3} = \\frac{7}{3}$, so $k = 7$. Check: $\\sqrt[3]{x^{7}} = x^{7/3} = x^{2}\\sqrt[3]{x}$ ✓\n\n**Common Mistakes:**\n* $6$ — ignoring the $\\sqrt[3]{x}$ on the right and solving $\\frac{k}{3} = 2$.\n* $\\frac{7}{3}$ — reporting the exponent of the right-hand side rather than $k$ itself.\n\n**Test Day Takeaway:** Turn both sides into a single power of the base before matching; a stray root on the far side is worth exactly one extra fractional unit."
+}

@@ -6,29 +6,14 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 2,
-  "passage": "Most public transit systems recover only part of their operating costs from fares, with the rest covered by public subsidy. Raising fares to close that gap can backfire, because higher prices drive away some riders, and the lost fares partly cancel the intended gain. ______ many agencies have looked elsewhere to balance their budgets, trimming service, seeking dedicated tax revenue, or redesigning routes to carry more riders per vehicle.",
+  "passage": "Levees along the lower Mississippi now keep the river from spilling across its floodplain during high water. The sediment that each flood once spread over the surrounding delta instead stays in the channel and rides the current out to deep water beyond the coast. ______ large areas of the delta, cut off from the deposits that once offset their natural settling, are slowly sinking below sea level.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "B",
-      "text": "Consequently,"
-    },
-    {
-      "id": "C",
-      "text": "For example,"
-    },
-    {
-      "id": "D",
-      "text": "By contrast,"
-    }
+    { "id": "A", "text": "For example," },
+    { "id": "B", "text": "Consequently," },
+    { "id": "C", "text": "Still," },
+    { "id": "D", "text": "Likewise," }
   ],
   "correctAnswer": "B",
-  "explanation": "Because raising fares drives away riders and cancels much of the intended gain, agencies turn to other ways of balancing their budgets. That makes the next sentence a consequence, so \"Consequently,\" choice B, fits. \"Nevertheless\" and \"By contrast\" signal opposition, and \"For example\" would wrongly present the budget measures as an instance of the fare problem.",
-  "_meta": {
-    "anchor": "transit farebox recovery and fare policy"
-  }
+  "explanation": "**Choice B is correct.** The final sentence is the downstream result of the chain the first two build — levees stop the flooding, so the sediment bypasses the delta, so the delta sinks. \"Consequently\" marks that cause-and-effect relation.\n\n**The Full Solution:**\n- Sentence one states the intervention; sentence two states its side effect (sediment carried past the delta).\n- Sentence three reports what follows from that side effect: land \"cut off from the deposits\" subsides.\n- The sentence even restates the cause inside itself (\"cut off from the deposits\"), confirming that the blank must signal consequence.\n\n**Why the other choices are wrong:**\n- A: The sinking delta is not an example of sediment riding the current; it is the outcome of it.\n- C: \"Still\" would concede a countercurrent, but the third sentence extends the chain rather than resisting it.\n- D: \"Likewise\" announces a parallel case, and no second, similar situation has been introduced."
 }

@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "A bridge inspection team logged $50$ defects, each rated minor or major. Each minor defect adds $2$ deduction points to the span's rating and each major defect adds $8$, for a total of $232$ deduction points. How many of the defects were rated major?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$22$"
+  },
+  {
+   "id": "B",
+   "text": "$25$"
+  },
+  {
+   "id": "C",
+   "text": "$28$"
+  },
+  {
+   "id": "D",
+   "text": "$29$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "splits the 50 defects evenly, assuming half of each rating without using the 232 points",
+  "C": "solves the system correctly but reports 28, the number of minor defects",
+  "D": "divides 232 by 8, treating every point as coming from a major defect"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: System of Equations — Elimination**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** If all $50$ were minor the score would be $100$. Each swap to major adds $6$, and $\\frac{232 - 100}{6} = 22$.\n\n**The Full Solution:**\nStep 1: Let $m$ be the number of minor defects and $j$ the number of major ones. Then $m + j = 50$ and $2m + 8j = 232$.\nStep 2: Multiply the first equation by $2$ to line up the $m$ terms: $2m + 2j = 100$. Subtract it from the second: $6j = 132$.\nStep 3: $j = 22$, so $m = 28$. Check: $2(28) + 8(22) = 56 + 176 = 232$, and $28 + 22 = 50$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($25$): this splits $50$ in half. An even split gives $2(25) + 8(25) = 250$ points, not $232$, so it fails the second equation.\n* Choice C ($28$): this is $m$, the number of minor defects. Both counts fall out of the same system, so the last step is deciding which one the question named.\n* Choice D ($29$): this is $\\frac{232}{8}$, which credits every point to a major defect. That ignores the $2$ points each minor defect contributes.\n\n**Test Day Takeaway:** Multiply the count equation by the smaller point value and subtract. Elimination hands you one variable in a single line, but check which variable the question actually wants."
+}

@@ -1,0 +1,56 @@
+{
+  "id": "bank-ps-184",
+  "question": "The table gives the mass, in kilograms, of each type of material collected during a community recycling drive. The mass of glass collected is $p\\%$ of the total mass collected. What is the value of $p$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Material",
+        "Mass (kg)"
+      ],
+      "rows": [
+        [
+          "Paper",
+          "84"
+        ],
+        [
+          "Plastic",
+          "36"
+        ],
+        [
+          "Glass",
+          "60"
+        ],
+        [
+          "Metal",
+          "20"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$18$"
+    },
+    {
+      "id": "B",
+      "text": "$30$"
+    },
+    {
+      "id": "C",
+      "text": "$42$"
+    },
+    {
+      "id": "D",
+      "text": "$60$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the plastic row (36/200)",
+    "C": "uses the paper row (84/200)",
+    "D": "reports the mass of glass, not a percent"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Total mass $= 84 + 36 + 60 + 20 = 200$ kilograms. Glass is $\\frac{60}{200} = 0.30$, so $p = 30$.\n\n**The Full Solution:**\nStep 1: The \"whole\" is the total mass: $84 + 36 + 60 + 20 = 200$ kilograms.\nStep 2: The part is the glass row, $60$ kilograms. Percent $= \\frac{\\text{part}}{\\text{whole}} \\times 100 = \\frac{60}{200} \\times 100 = 30$.\nStep 3: Check: $30\\%$ of $200$ is $0.30 \\times 200 = 60$, the glass mass in the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($18$): reads the plastic row instead of the glass row, $\\frac{36}{200} = 18\\%$.\n* Choice C ($42$): reads the paper row, $\\frac{84}{200} = 42\\%$.\n* Choice D ($60$): reports the mass of glass in kilograms rather than its percent of the total.\n\n**Test Day Takeaway:** For \"what percent of the total,\" first add every row to get the whole, then divide the one row asked about by that total."
+}

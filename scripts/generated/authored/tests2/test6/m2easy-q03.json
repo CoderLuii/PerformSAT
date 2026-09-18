@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "question": "In a soil lab the nitrogen dose $a$ and the potassium dose $b$, both in grams, must satisfy $2a + 5b = 9$. A second requirement, $8a + 20b = c$, is met by exactly the same dose pairs $(a, b)$. What is the value of $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2.25$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$9$"
+    },
+    {
+      "id": "D",
+      "text": "$36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides 9 by the scale factor 4 instead of multiplying (9/4 = 2.25)",
+    "B": "reports the scale factor 4 itself instead of applying it to the constant",
+    "C": "copies the constant unchanged, scaling only the coefficients"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The coefficients quadruple, $2 \\to 8$ and $5 \\to 20$, so the constant must quadruple too: $c = 4(9) = 36$.\n\n**The Full Solution:**\nStep 1: Two equations are satisfied by exactly the same pairs only when one is a constant multiple of the other.\nStep 2: Compare matching coefficients: $\\frac{8}{2} = 4$ and $\\frac{20}{5} = 4$, so the multiplier is $4$.\nStep 3: Apply that multiplier to the constant: $c = 4 \\times 9 = 36$. Check by scaling the first equation outright: $4(2a + 5b) = 4(9)$ gives $8a + 20b = 36$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.25$): divides the constant by the scale factor instead of multiplying, giving $9 \\div 4 = 2.25$ — the constant would shrink while the coefficients grow.\n* Choice B ($4$): reports the scale factor itself and never applies it to $9$.\n* Choice C ($9$): copies the constant unchanged. Then $8a + 20b = 9$ is a parallel line with no shared pairs at all, not the same set of pairs.\n\n**Test Day Takeaway:** Identical solution sets means one equation is the other times a single number. Read that number off the coefficients, then multiply the constant by it."
+}

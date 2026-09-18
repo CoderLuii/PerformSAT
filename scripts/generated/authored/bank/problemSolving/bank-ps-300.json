@@ -1,0 +1,51 @@
+{
+  "id": "bank-ps-300",
+  "question": "The table gives the volume and the acid concentration, by volume, of each of two solutions. The two solutions are combined to form a new solution. What is the acid concentration, by volume, of the new solution?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Solution",
+        "Volume (liters)",
+        "Acid concentration"
+      ],
+      "rows": [
+        [
+          "A",
+          "8",
+          "15%"
+        ],
+        [
+          "B",
+          "12",
+          "40%"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$27.5\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$30\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$55\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "pairs each concentration with the other solution's volume",
+    "B": "averages the two concentrations without weighting by volume",
+    "D": "adds the two concentrations"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Mixture Problems**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Acid: $0.15(8) + 0.40(12) = 1.2 + 4.8 = 6$ liters in $8 + 12 = 20$ liters, so $\\frac{6}{20} = 30\\%$.\n\n**The Full Solution:**\nStep 1: Find the acid contributed by each solution: solution A gives $0.15 \\times 8 = 1.2$ liters, and solution B gives $0.40 \\times 12 = 4.8$ liters.\nStep 2: Total the acid and the volume: $1.2 + 4.8 = 6$ liters of acid in $8 + 12 = 20$ liters of new solution.\nStep 3: The concentration is $\\frac{6}{20} = 0.30$, or $30\\%$. Check: the answer must lie between $15\\%$ and $40\\%$ and closer to $40\\%$, since more of the mixture came from solution B, and $30\\%$ does. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($25\\%$): $\\frac{0.40(8) + 0.15(12)}{20}$, which attaches each concentration to the wrong volume.\n* Choice B ($27.5\\%$): $\\frac{15 + 40}{2}$, the plain average of the concentrations; that is the answer only when the two volumes are equal.\n* Choice D ($55\\%$): $15 + 40$; concentrations of combined solutions are weighted averages, so the result can never exceed the larger concentration.\n\n**Test Day Takeaway:** Track the acid, not the percents: multiply each concentration by its own volume, add, and divide by the total volume."
+}

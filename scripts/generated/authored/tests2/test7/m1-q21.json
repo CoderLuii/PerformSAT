@@ -1,0 +1,59 @@
+{
+ "id": 21,
+ "question": "An engineer's drawing shows similar steel gusset plates $ABC$ and $DEF$, whose vertices correspond in that order, with the marked lengths given in centimeters. What is the perimeter, in centimeters, of plate $DEF$?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "labels": [
+     "A",
+     "B",
+     "C"
+    ],
+    "sideLabels": [
+     "8",
+     "12",
+     "10"
+    ]
+   },
+   "triangle2": {
+    "labels": [
+     "D",
+     "E",
+     "F"
+    ],
+    "sideLabels": [
+     "",
+     "18",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$27$"
+  },
+  {
+   "id": "B",
+   "text": "$45$"
+  },
+  {
+   "id": "C",
+   "text": "$48$"
+  },
+  {
+   "id": "D",
+   "text": "$54$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales only the two unmarked sides, 1.5 times 8 plus 1.5 times 10, and leaves out the side that measures 18",
+  "C": "adds the difference 18 minus 12 to each side of ABC instead of multiplying by the scale factor",
+  "D": "pairs the 18 with side CA of length 10, using a scale factor of 1.8"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $EF$ corresponds to $BC$, so the scale factor is $\\frac{18}{12} = 1.5$. Perimeters scale the same way: $1.5(8 + 12 + 10) = 1.5(30) = 45$.\n\n**The Full Solution:**\nStep 1: The correspondence $D \\to A$, $E \\to B$, $F \\to C$ matches $EF$ with $BC$, so the scale factor is $k = \\frac{EF}{BC} = \\frac{18}{12} = \\frac{3}{2}$.\nStep 2: Every side of $DEF$ is $\\frac{3}{2}$ times its partner in $ABC$: $DE = \\frac{3}{2}(8) = 12$, $EF = \\frac{3}{2}(12) = 18$, and $FD = \\frac{3}{2}(10) = 15$.\nStep 3: The perimeter is $12 + 18 + 15 = 45$ centimeters. Check against the shortcut: the perimeter of $ABC$ is $30$ and $\\frac{3}{2}(30) = 45$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($27$): this scales $8$ and $10$ but forgets to include the third side. A perimeter needs all three, and $18$ is already the scaled version of $12$.\n* Choice C ($48$): this adds $6$ to each side, treating similar figures as though corresponding sides differ by a constant. Similarity multiplies; it does not add.\n* Choice D ($54$): this pairs $18$ with $CA = 10$ for a factor of $1.8$. The letter order in \"$ABC$ and $DEF$\" fixes which sides correspond, and $EF$ matches $BC$.\n\n**Test Day Takeaway:** Read the correspondence off the letter order before setting up any ratio, then use the fact that perimeters of similar figures scale by the same factor as the sides — one multiplication replaces three."
+}

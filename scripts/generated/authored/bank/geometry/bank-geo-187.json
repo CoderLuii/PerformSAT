@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-187",
+ "question": "A sterilizer basket has a square bottom measuring $x$ centimeters on a side and walls $x-3$ centimeters high. How many cubic centimeters does the basket hold?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x^2-3x$"
+  },
+  {
+   "id": "B",
+   "text": "$x^3-3$"
+  },
+  {
+   "id": "C",
+   "text": "$x^3-3x^2$"
+  },
+  {
+   "id": "D",
+   "text": "$x^3+3x^2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies one side by the height and forgets the second base dimension",
+  "B": "fails to distribute x^2 across the -3, leaving a bare constant",
+  "D": "slips the sign, adding 3 to the height instead of subtracting"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Symbolic Area or Volume**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The capacity is (base area)(height) $=x^2(x-3)=x^3-3x^2$ cubic centimeters.\n\n**The Full Solution:**\n\nStep 1 — The bottom is a square of side $x$, so the base area is $x\\cdot x=x^2$ square centimeters.\n\nStep 2 — The height is $x-3$ centimeters, so the volume is $x^2(x-3)$.\n\nStep 3 — Distribute: $x^2(x)-x^2(3)=x^3-3x^2$ cubic centimeters. Check with $x=5$: the basket is $5$ by $5$ by $2$, holding $50$, and $5^3-3(5)^2=125-75=50$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($x^2-3x$): this multiplies only one side by the height, dropping a dimension.\n* Choice B ($x^3-3$): this multiplies $x^2$ by $x$ but not by $3$.\n* Choice D ($x^3+3x^2$): this adds $3$ to the height instead of subtracting it.\n\n**Test Day Takeaway:** Substituting a friendly number such as $x=5$ into the setup and into each choice settles symbolic volume questions fast."
+}

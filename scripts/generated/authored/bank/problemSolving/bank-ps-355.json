@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-355",
+  "question": "At a treatment plant, $25$ measured turbidity readings have mean $m$ and standard deviation $s$. Each measured value $v$ is replaced by the quality index $9 - 2v$. Which of the following gives the mean and the standard deviation of the $25$ quality index values?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Mean $9 - 2m$; standard deviation $-2s$"
+    },
+    {
+      "id": "B",
+      "text": "Mean $9 - 2m$; standard deviation $2s$"
+    },
+    {
+      "id": "C",
+      "text": "Mean $2m - 9$; standard deviation $2s$"
+    },
+    {
+      "id": "D",
+      "text": "Mean $9 - 2m$; standard deviation $s$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "carries the negative sign into the standard deviation, which can never be negative",
+    "C": "reverses the order of the transformation for the mean, computing 2m - 9 instead of 9 - 2m",
+    "D": "leaves the standard deviation unchanged, treating the multiplier by -2 as though it were a shift"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Scaling a Data Set**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The mean follows the rule itself, $9 - 2m$, while the standard deviation is multiplied by $|-2| = 2$.\n\n**The Full Solution:**\nStep 1: Transform the mean. The index is $9 - 2v$, and the mean of $9 - 2v$ is $9 - 2m$, because a mean passes through multiplication and addition in order.\nStep 2: Transform the spread. Each deviation from the mean is multiplied by $-2$, and standard deviation measures distance, so it is multiplied by $|-2| = 2$, giving $2s$.\nStep 3: Test two values. Suppose the values are $1$ and $3$, so $m = 2$. The indices are $7$ and $3$, with mean $5 = 9 - 2(2)$, and the gap grows from $2$ to $4$, so the spread doubles. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2s$): carries the minus sign into the spread. A standard deviation is a distance and is never negative.\n* Choice C ($2m - 9$): applies the transformation backwards; the index is $9 - 2v$, not $2v - 9$.\n* Choice D ($s$): leaves the spread unchanged, which is what ADDING $9$ alone would do. The factor $-2$ stretches it.\n\n**Test Day Takeaway:** Under $y = av + b$: the mean becomes $am + b$ and the standard deviation becomes $|a|s$ — the sign disappears from the spread but not from the center."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "A quality-control formula sets $\\frac{x^{2} - 9}{x - 3}$ equal to a constant $k$. Exactly one value of $k$ makes it impossible for any real number $x$ to satisfy that equation. What is that value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$0$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes the negative solution of x^2 - 9 = 0 instead of finding k",
+  "B": "factors x^2 - 9 as (x - 3)^2, cancels to x - 3, and evaluates it at x = 3 to get 0",
+  "C": "reports the excluded value of x rather than the value of k"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Rational Equation with No Solution**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The expression simplifies to $x + 3$ for every $x \\neq 3$, so it takes every value except the one at $x = 3$, namely $6$.\n\n**The Full Solution:**\nStep 1: Factor the numerator: $x^{2} - 9 = (x + 3)(x - 3)$. Cancelling the common factor gives $\\frac{(x + 3)(x - 3)}{x - 3} = x + 3$, valid for every $x$ except $x = 3$, where the original expression is undefined.\nStep 2: Solve $x + 3 = k$: the only candidate is $x = k - 3$.\nStep 3: That candidate fails only when it lands on the excluded value: $k - 3 = 3$, so $k = 6$. For every other $k$ the equation has the solution $x = k - 3$. Check: with $k = 6$, $x + 3 = 6$ forces $x = 3$, which makes the denominator $0$ — no real $x$ works. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-3$): solves $x^{2} - 9 = 0$ and reports the negative root. That is a value of $x$, and it makes the whole expression $0$, not undefined.\n* Choice B ($0$): factors $x^{2} - 9$ as $(x - 3)^{2}$, which is wrong, and then evaluates the cancelled expression $x - 3$ at $x = 3$.\n* Choice C ($3$): reports the excluded $x$-value. The question asks for the constant $k$ that this exclusion kills, which is the value the simplified expression would take there.\n\n**Test Day Takeaway:** Cancel the common factor, note which $x$ is banned, and then ask what value the SIMPLIFIED expression would have taken at that banned $x$. That value is the one constant the equation can never equal."
+}

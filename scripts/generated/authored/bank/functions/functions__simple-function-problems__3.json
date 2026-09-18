@@ -1,0 +1,57 @@
+{
+  "id": 3,
+  "question": "The table gives the values of the linear functions $f$ and $g$ at three values of $x$. Which expression is equivalent to $f(x) + g(x)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)",
+        "g(x)"
+      ],
+      "rows": [
+        [
+          "1",
+          "7",
+          "8"
+        ],
+        [
+          "2",
+          "10",
+          "7"
+        ],
+        [
+          "3",
+          "13",
+          "6"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2x + 4$"
+    },
+    {
+      "id": "B",
+      "text": "$2x + 13$"
+    },
+    {
+      "id": "C",
+      "text": "$2x + 15$"
+    },
+    {
+      "id": "D",
+      "text": "$4x + 13$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "keeps only f's intercept",
+    "C": "uses the value at x = 1 as the intercept",
+    "D": "adds slope magnitudes, ignoring g's sign"
+  },
+  "correctAnswer": "B",
+  "hint": "Add the two outputs at each $x$ first, then find the line that fits those three sums.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** The sums are $15$, $17$, $19$ — a rise of $2$ per step — so the sum is $2x + 13$.\n\n**The Full Solution:**\nStep 1: Add the two table values at each input: $7 + 8 = 15$, $10 + 7 = 17$, and $13 + 6 = 19$.\nStep 2: The inputs go up by $1$ and the sums go up by $2$, so the sum function is linear with slope $2$.\nStep 3: Back up one step from $x = 1$: at $x = 0$ the sum would be $15 - 2 = 13$, so $f(x) + g(x) = 2x + 13$. Check at $x = 3$: $2(3) + 13 = 19$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2x + 4$): finds the slope of the sum correctly but keeps only $f$'s $y$-intercept of $4$.\n* Choice C ($2x + 15$): uses the sum at $x = 1$ as the $y$-intercept without backing up to $x = 0$.\n* Choice D ($4x + 13$): adds the sizes of the two slopes, $3$ and $1$, ignoring that $g$ decreases.\n\n**Test Day Takeaway:** To add two linear functions, add their outputs column by column; the slopes add with their signs and so do the intercepts."
+}

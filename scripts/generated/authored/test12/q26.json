@@ -1,42 +1,42 @@
 {
-  "id": 1226,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 1,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Annie Jump Cannon worked as an astronomer at the Harvard College Observatory in the early 1900s.",
-      "Astronomers classify stars by the patterns of dark lines in their light, called spectra.",
-      "Earlier classification schemes were inconsistent and used many overlapping categories.",
-      "Cannon devised a simplified sequence of spectral classes—O, B, A, F, G, K, M—ordered by temperature.",
-      "She personally classified several hundred thousand stars using this system.",
-      "Her ordering became the basis of the stellar classification system astronomers still use."
-    ],
-    "goal": "The student wants to explain Cannon's main contribution to an audience unfamiliar with how stars are classified."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Annie Jump Cannon worked as an astronomer at the Harvard College Observatory in the early 1900s, where she classified several hundred thousand individual stars."
-    },
-    {
-      "id": "B",
-      "text": "Astronomers classify stars by the patterns of dark lines that appear in their light, which are known as spectra."
-    },
-    {
-      "id": "C",
-      "text": "Cannon replaced earlier, inconsistent star-classification schemes with a simplified sequence of spectral classes ordered by temperature—O, B, A, F, G, K, M—that remains the basis of the system astronomers use today."
-    },
-    {
-      "id": "D",
-      "text": "Cannon's ordering of stars into classes by temperature became the basis of the stellar classification system that professional astronomers around the world still rely on today."
-    }
+ "id": 1226,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 1,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Curtis F. Marbut (1863-1935) was an American soil scientist.",
+   "In 1913 he took charge of the national soil survey of the United States.",
+   "Earlier surveys had classified each soil chiefly by the rock beneath it, treating soil as little more than crushed rock.",
+   "Marbut argued that a soil is a natural body in its own right, formed by climate, vegetation, and time acting on the land.",
+   "He reorganized American soil classification around the soil's own layered profile rather than its parent rock.",
+   "His system became the framework for the national soil maps used by farmers and land planners."
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The goal is to explain Cannon's main contribution to readers unfamiliar with stellar classification, and C does that: it names the problem she solved (inconsistent earlier schemes), describes her temperature-ordered sequence, and notes its lasting importance. A gives biographical facts and a figure but not the contribution itself. B explains what spectra are without mentioning Cannon's work at all. D states the contribution's importance but omits what the system actually was, leaving an unfamiliar reader without the key explanation."
+  "goal": "The student wants to explain Marbut's main contribution to an audience unfamiliar with soil science."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Curtis F. Marbut, an American soil scientist who lived from 1863 to 1935, took charge of the national soil survey of the United States in 1913 and went on to direct its fieldwork and its county-by-county mapping for more than two decades afterward."
+  },
+  {
+   "id": "B",
+   "text": "Under Marbut's direction, government surveyors carried the national soil survey of the United States forward using his reorganized system of classification."
+  },
+  {
+   "id": "C",
+   "text": "Soil scientist Curtis F. Marbut rebuilt American soil classification on the idea that a soil is a natural body formed by climate, vegetation, and time — not merely crushed rock — a framework that still underlies the national soil maps."
+  },
+  {
+   "id": "D",
+   "text": "Marbut's classification replaced an earlier system and became the accepted framework for producing the national soil maps of the United States."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The goal is to explain Marbut's main contribution to readers who know nothing of soil science, and C does the whole job: it identifies him, states the idea he introduced, contrasts it with what it replaced, and notes why it still matters.\n\n**The Full Solution:**\n- An unfamiliar audience needs the substance of the contribution, not just its reception: what did Marbut actually change?\n- C names the old view (soil as crushed rock), the new idea (soil as a natural body formed by climate, vegetation, and time), and the lasting result (the framework behind the national soil maps).\n- That is the contribution itself, explained from the ground up — exactly what the goal demands.\n\n**Why the other choices are wrong:**\n- A: It gives dates and a job title but never says what Marbut contributed.\n- B: It reports that his system was used without ever saying what the system was.\n- D: It says the contribution was adopted but leaves its content a mystery — an unfamiliar reader still cannot say what Marbut's idea actually was."
 }

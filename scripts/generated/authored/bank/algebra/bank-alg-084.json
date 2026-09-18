@@ -1,0 +1,62 @@
+{
+ "id": "bank-alg-084",
+ "question": "The graph of the linear function $f$ appears in the $xy$-plane. Translating that graph down $6$ units produces the graph of $g$. At what value of $y$ does the graph of $g$ meet the $y$-axis?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -0.5,
+   "yIntercept": 4,
+   "xRange": [
+    -6,
+    8
+   ],
+   "yRange": [
+    -4,
+    8
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     4
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     8,
+     0
+    ]
+   ],
+   "label": "y = f(x)"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-6$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the size of the translation instead of the new intercept",
+  "C": "subtracts 6 from the x-intercept 8 instead of from the y-intercept",
+  "D": "adds 6 to 4 instead of subtracting"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: y-Intercept After Vertical Shift**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The graph of $f$ meets the $y$-axis at $4$, and $4 - 6 = -2$.\n\n**The Full Solution:**\nStep 1: Read the $y$-intercept of $f$ from the graph: the line crosses the $y$-axis at $(0, 4)$.\nStep 2: A translation down $6$ units means $g(x) = f(x) - 6$ for every $x$.\nStep 3: At $x = 0$, $g(0) = 4 - 6 = -2$, so the graph of $g$ meets the $y$-axis at $-2$. Check: $f(x) = -0.5x + 4$, so $g(x) = -0.5x - 2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6$): reports the size of the translation rather than the new intercept.\n* Choice C ($2$): subtracts $6$ from the $x$-intercept $8$, answering about the wrong axis.\n* Choice D ($10$): adds $6$ to $4$ instead of subtracting, translating the graph upward.\n\n**Test Day Takeaway:** A vertical translation changes every $y$-value by the same amount, so the $y$-intercept moves by exactly that amount."
+}

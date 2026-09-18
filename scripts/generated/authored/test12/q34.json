@@ -1,31 +1,31 @@
 {
-  "id": 1234,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "Before the 1880s, towns across North America kept their own local time, setting noon by the moment the sun stood highest overhead. The practice worked well enough when travel was slow, but it became a hazard once railroads linked distant places on tight schedules: a train running between cities whose clocks differed by several minutes invited collisions and missed connections, and printed timetables grew nearly unusable. In 1883 the major railroad companies, acting on their own rather than waiting for legislation, divided the continent into a small number of standard time zones and agreed to run their trains by them. Local resistance was real—some towns refused for years to abandon \"God's time\" for \"railroad time\"—but the convenience proved decisive, and the zones the railroads drew became the basis for the standard time later written into law. What began as a private fix for a scheduling problem had quietly reorganized how an entire continent kept time.",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To argue that the railroad companies overstepped their proper authority by imposing standard time zones on the public without first obtaining the approval of any elected legislature."
-    },
-    {
-      "id": "B",
-      "text": "To describe the engineering advances that allowed nineteenth-century trains to keep far more precise schedules than earlier forms of transport had managed."
-    },
-    {
-      "id": "C",
-      "text": "To explain how a scheduling problem created by the railroads led them to adopt standard time zones that reshaped how the continent kept time."
-    },
-    {
-      "id": "D",
-      "text": "To contrast the timekeeping customs of small rural towns with those of the larger cities that the new railroad lines connected to one another."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage explains how the railroads' scheduling crisis prompted them to impose time zones that eventually became the standard written into law, reorganizing timekeeping across the continent. A reads a verdict about overreach into a text that simply reports resistance and outcome. B points to engineering precision, which the passage does not discuss. D notes the town-versus-railroad friction, but contrasting rural and urban customs is not the purpose; the spread of standard time is."
+ "id": 1234,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "By the middle of the nineteenth century, the open-air food markets of many growing cities had become unmanageable. Stalls spilled into traffic; there was no roof against the rain, no drainage, and no practical way to inspect a street's worth of perishable goods. City governments responded by building covered market halls — great sheds of cast iron and glass in which every stall had a numbered place, water was piped in, refuse was carted out, and inspectors could walk the aisles. The halls did more than tidy the trade they housed. Fixed stalls with regular rents turned casual street selling into settled shopkeeping, and the buildings themselves, often among the largest a city possessed, became civic showpieces copied from one country to the next. A tool of sanitary reform ended by changing how city dwellers bought their food.",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To argue that city governments exceeded their legitimate authority when they compelled independent street sellers to rent regulated indoor stalls."
+  },
+  {
+   "id": "B",
+   "text": "To describe the structural innovations in cast iron and glass that first allowed nineteenth-century builders to roof very large open spaces without any interior supports."
+  },
+  {
+   "id": "C",
+   "text": "To explain how the disorder of open-air markets led cities to build covered halls that ended up transforming the urban food trade itself."
+  },
+  {
+   "id": "D",
+   "text": "To contrast the crowded food markets of nineteenth-century cities with the smaller and more orderly weekly markets of the countryside."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage follows one chain from start to finish: the problem (unmanageable open-air markets), the response (covered halls with numbered stalls, piped water, and inspection), and the larger consequence (settled shopkeeping, civic showpieces — a sanitary tool that changed how cities bought food).\n\n**The Full Solution:**\n- The opening establishes the problem: stalls in traffic, no roof, no drainage, no way to inspect perishables.\n- The middle gives the governments' solution and its immediate workings inside the new halls.\n- The close widens the lens: the halls \"did more than tidy the trade,\" converting street selling into shopkeeping and becoming copied showpieces. The final sentence states the arc outright — a reform tool \"ended by changing how city dwellers bought their food.\" Explaining that problem-response-transformation chain is the text's purpose.\n\n**Why the other choices are wrong:**\n- A: The passage passes no judgment on the governments' authority; it reports what they built and what followed.\n- B: The iron-and-glass construction is mentioned, but the engineering that made it possible is never described.\n- D: Country markets never appear in the passage at all."
 }

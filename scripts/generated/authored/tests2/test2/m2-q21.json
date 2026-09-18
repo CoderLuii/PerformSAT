@@ -1,0 +1,53 @@
+{
+ "id": 21,
+ "question": "A library endowment compounds interest quarterly, and the table gives the account's balance at the end of each of its first four quarters. If $B$ is the balance in dollars after $t$ years, which equation is true for every whole number $t$?",
+ "questionTable": {
+  "headers": [
+   "Quarter",
+   "Balance (dollars)"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$8{,}120.00$"
+   ],
+   [
+    "$2$",
+    "$8{,}241.80$"
+   ],
+   [
+    "$3$",
+    "$8{,}365.43$"
+   ],
+   [
+    "$4$",
+    "$8{,}490.91$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$B = 8000(1.015)^{t}$"
+  },
+  {
+   "id": "B",
+   "text": "$B = 8000(1.06)^{t}$"
+  },
+  {
+   "id": "C",
+   "text": "$B = 8000(1.06)^{4t}$"
+  },
+  {
+   "id": "D",
+   "text": "$B = 8000(1.015)^{4t}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the quarterly factor 1.015 but counts one compounding period per year instead of four",
+  "B": "compounds the 6 percent annual rate once a year, which is not what the quarterly balances in the table show",
+  "C": "applies the annual factor 1.06 once in each of the 4t quarters, compounding 6 percent four times a year"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** Each quarter multiplies the balance by $\\frac{8241.80}{8120} = 1.015$, and the opening balance was $\\frac{8120}{1.015} = 8000$. In $t$ years there are $4t$ quarters, so $B = 8000(1.015)^{4t}$.\n\n**The Full Solution:**\nStep 1: Find the quarterly growth factor from consecutive table rows: $\\frac{8241.80}{8120} = 1.015$, and $\\frac{8365.43}{8241.80} = 1.015$ as well, so the balance is multiplied by $1.015$ each quarter.\nStep 2: Work backwards to the opening balance: $\\frac{8120}{1.015} = 8000$ dollars, the principal before any interest was credited.\nStep 3: Count the periods. Quarterly compounding gives $4$ periods per year, so after $t$ years the balance is $B = 8000(1.015)^{4t}$. Check at $t = 1$: $8000(1.015)^4 = 8490.91$, matching the fourth quarter in the table ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($B = 8000(1.015)^{t}$): pairs the quarterly factor with a count of years, applying the growth once a year. At $t = 1$ it gives $8{,}120$, the balance after one quarter, not one year.\n* Choice B ($B = 8000(1.06)^{t}$): compounds the $6\\%$ annual rate a single time per year, giving $8{,}480$ after one year — close to the table's $8{,}490.91$ but not equal, because quarterly compounding earns slightly more.\n* Choice C ($B = 8000(1.06)^{4t}$): applies the full annual factor in every quarter, which would give $8000(1.06)^4 \\approx 10{,}099$ after one year, far above the table.\n\n**Test Day Takeaway:** Read the growth factor straight from the ratio of consecutive table entries, then match the exponent to the number of those periods in the time unit the question uses."
+}

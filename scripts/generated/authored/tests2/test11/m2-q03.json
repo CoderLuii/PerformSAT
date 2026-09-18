@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A patient's daily dose of a medication starts at $12$ milligrams and is increased by $4$ milligrams each day after the first. What is the least number of days after the start for which the daily dose is at least $75$ milligrams?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$16$"
+  },
+  {
+   "id": "C",
+   "text": "$19$"
+  },
+  {
+   "id": "D",
+   "text": "$22$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "truncates 15.75 to 15 instead of rounding up, and 12 + 4(15) = 72 is below 75",
+  "C": "ignores the 12 mg starting dose and solves 4d >= 75, giving d >= 18.75 and d = 19",
+  "D": "adds the starting dose instead of subtracting it, solving 4d >= 87 and rounding 21.75 up to 22"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Smallest Integer in an Inequality**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The dose after $d$ days is $12 + 4d$. Solving $12 + 4d \\ge 75$ gives $d \\ge 15.75$, and the least whole number of days that clears that bar is $16$.\n\n**The Full Solution:**\nStep 1: Write the dose. Day $0$ is $12$ mg, and each later day adds $4$ mg, so after $d$ days the dose is $12 + 4d$ milligrams.\nStep 2: Set up and solve the inequality $12 + 4d \\ge 75$. Subtracting gives $4d \\ge 63$, so $d \\ge 15.75$. Days are whole numbers, and $d$ must be *at least* $15.75$, so the least value is $d = 16$.\nStep 3: Check both sides of the boundary: at $d = 16$ the dose is $12 + 64 = 76 \\ge 75$, and at $d = 15$ it is $12 + 60 = 72 < 75$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): dropping the decimal part of $15.75$ instead of rounding up. Day $15$ reaches only $72$ mg, short of the target.\n* Choice C ($19$): forgetting the $12$ mg the patient already receives and solving $4d \\ge 75$, which gives $d \\ge 18.75$.\n* Choice D ($22$): moving the $12$ to the wrong side, solving $4d \\ge 87$ and rounding $21.75$ up to $22$ — six days later than necessary.\n\n**Test Day Takeaway:** For a \"least number of\" question, solve the inequality first, then round in the direction the inequality demands: round **up** for \"at least,\" down for \"at most.\" Always test the integer on each side of the boundary."
+}

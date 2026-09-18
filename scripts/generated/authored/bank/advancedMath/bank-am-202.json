@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-202",
+  "question": "The population of a town is modeled by $P(t) = a(1.02)^t$, where $a$ is a constant and $t$ is the number of years after $2010$. According to the model, the population in $2015$ was $k$. Which expression represents the population the model predicts for $2020$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\dfrac{k}{(1.02)^5}$"
+    },
+    {
+      "id": "B",
+      "text": "$k(1.02)^5$"
+    },
+    {
+      "id": "C",
+      "text": "$k(1.02)^{10}$"
+    },
+    {
+      "id": "D",
+      "text": "$k(1.10)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "moves 5 years backward instead of forward",
+    "C": "counts the years from 2010 rather than from 2015",
+    "D": "adds the 2% rate five times into a single 10% increase"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** From $2015$ to $2020$ is $5$ years, and each year multiplies by $1.02$, so the population is $k(1.02)^5$.\n\n**The Full Solution:**\nStep 1: The year $2015$ is $t = 5$, so $P(5) = a(1.02)^5 = k$.\nStep 2: The year $2020$ is $t = 10$, so $P(10) = a(1.02)^{10} = a(1.02)^5 \\cdot (1.02)^5$.\nStep 3: Replacing $a(1.02)^5$ with $k$ gives $P(10) = k(1.02)^5$. Check with $a = 100$: $k = 100(1.02)^5 \\approx 110.41$, and $100(1.02)^{10} \\approx 121.90 = k(1.02)^5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{k}{(1.02)^5}$): this is the population in $2010$ — dividing runs the model backward.\n* Choice C ($k(1.02)^{10}$): applies ten years of growth to a population that is already five years in.\n* Choice D ($k(1.10)$): treats five years of $2\\%$ growth as a flat $10\\%$; compounding makes the true factor slightly larger.\n\n**Test Day Takeaway:** When a model's value at one time is named, measure the exponent from THAT time — the constant $a$ never has to be found."
+}

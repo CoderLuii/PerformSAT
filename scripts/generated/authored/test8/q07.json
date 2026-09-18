@@ -1,31 +1,31 @@
 {
-  "id": 807,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "Early in the twentieth century, seismologists knew that the Earth had a liquid outer core, because certain earthquake waves bent around it and left a \"shadow zone\" where they were not detected. In 1936 the Danish seismologist Inge Lehmann noticed that faint waves were nonetheless arriving inside that shadow zone, where the liquid-core model predicted silence. She argued that the readings made sense only if a smaller, solid inner core sat at the planet's center, deflecting the waves inward. Decades of later observations confirmed the boundary she had inferred, and the solid inner core is now a standard feature of the Earth's interior.",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To list the kinds of seismographic instruments available to researchers working in the 1930s."
-    },
-    {
-      "id": "B",
-      "text": "To argue that the liquid outer core has a greater influence on earthquake waves than the inner core does."
-    },
-    {
-      "id": "C",
-      "text": "To explain how Lehmann used an unexpected seismic observation to infer the existence of Earth’s solid inner core."
-    },
-    {
-      "id": "D",
-      "text": "To describe the damage that large earthquakes caused in the regions Lehmann studied."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage traces a single line of reasoning: waves appeared where the existing model predicted none, and Lehmann inferred a solid inner core to account for them, a conclusion later observations confirmed. A turns to instruments the text never discusses; B invents a comparison of the two cores' influence; and D shifts to earthquake damage, which is not the passage's concern."
+ "id": 807,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "In 1795 the French government offered a substantial prize for a dependable way to preserve food for its army and navy. The confectioner Nicolas Appert spent years on the problem and claimed the award in 1810: he packed foods into stout glass bottles, corked them tightly, and held the sealed bottles for hours in boiling water. Meats, vegetables, and even milk treated this way stayed wholesome for months. Appert could not say why the process worked — the microbes that spoil food would not be understood until Louis Pasteur's experiments half a century later — yet his procedure was sound enough that it spread across Europe within a decade.",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To describe the problems of feeding a navy on long voyages in the early nineteenth century."
+  },
+  {
+   "id": "B",
+   "text": "To compare Appert's preserving method with the salting and drying techniques it eventually replaced."
+  },
+  {
+   "id": "C",
+   "text": "To explain how Appert developed a way of preserving food that worked long before science could say why it worked."
+  },
+  {
+   "id": "D",
+   "text": "To trace how Appert's glass-bottling technique was gradually transformed into the tin-can machinery that equips modern preserving factories around the world."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The text explains what Appert did — sealing food in bottles and boiling them — and stresses that his method preserved food reliably half a century before science could explain why.\n\n**The Full Solution:**\n- The first sentences report the prize and Appert's technique.\n- The closing sentence delivers the point the text is built around: the method worked long before the role of microbes was understood.\n- Choice C captures both the method and that gap between practice and explanation.\n\n**Why the other choices are wrong:**\n- A: The text mentions the navy's need only as background for the prize, not as its focus.\n- B: No rival preservation methods are compared.\n- D: The text does not discuss modern canning factories or their equipment."
 }

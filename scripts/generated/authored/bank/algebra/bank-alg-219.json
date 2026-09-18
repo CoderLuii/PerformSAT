@@ -1,0 +1,58 @@
+{
+ "id": "bank-alg-219",
+ "question": "A truss diagram graphs line $r$ in the $xy$-plane. One member of the truss lies on a line that meets line $r$ at a right angle and includes the point $(-1, -2)$. Which equation defines the member's line?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -0.3333333,
+   "yIntercept": 2,
+   "xRange": [
+    -6,
+    6
+   ],
+   "yRange": [
+    -4,
+    6
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     2
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "label": "r"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -\\frac{1}{3}x - \\frac{7}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$y = 3x - 5$"
+  },
+  {
+   "id": "C",
+   "text": "$y = -3x - 5$"
+  },
+  {
+   "id": "D",
+   "text": "$y = 3x + 1$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "copies line $r$'s slope, giving a parallel line rather than a perpendicular one",
+  "B": "computes $b$ as $y + mx = -2 + 3(-1) = -5$",
+  "C": "negates the perpendicular slope to $-3$, giving $-2 = 3 + b$ and $b = -5$"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Line Through a Point**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Line $r$ has slope $-\\frac{1}{3}$, so the member has slope $3$, and $-2 = 3(-1) + b$ gives $b = 1$.\n\n**The Full Solution:**\nStep 1: Line $r$ passes through $(0, 2)$ and $(3, 1)$, so its slope is $\\frac{1 - 2}{3 - 0} = -\\frac{1}{3}$.\nStep 2: A right angle requires the negative reciprocal, so the member's line has slope $3$.\nStep 3: Substituting $(-1, -2)$ into $y = 3x + b$ gives $-2 = -3 + b$, so $b = 1$ and the line is $y = 3x + 1$. Check: $3(-1) + 1 = -2$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -\\frac{1}{3}x - \\frac{7}{3}$): copies line $r$'s slope, giving a parallel line rather than a perpendicular one\n* Choice B ($y = 3x - 5$): computes $b$ as $y + mx = -2 + 3(-1) = -5$\n* Choice C ($y = -3x - 5$): negates the perpendicular slope to $-3$, giving $-2 = 3 + b$ and $b = -5$\n\n**Test Day Takeaway:** Take the negative reciprocal of the graphed slope, then use the given point only to set $b$."
+}

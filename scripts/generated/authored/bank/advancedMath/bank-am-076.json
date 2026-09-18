@@ -1,0 +1,49 @@
+{
+  "id": "bank-am-076",
+  "question": "The table gives the mass, in grams, of a yeast culture at three times during an experiment, and the mass grows exponentially with time. Which function $m$ gives the mass, in grams, $t$ hours after the experiment began?",
+  "questionTable": {
+    "headers": [
+      "Time t (hours)",
+      "Mass (grams)"
+    ],
+    "rows": [
+      [
+        "0",
+        "40"
+      ],
+      [
+        "1",
+        "120"
+      ],
+      [
+        "2",
+        "360"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$m(t) = 40(3)^t$"
+    },
+    {
+      "id": "B",
+      "text": "$m(t) = 3(40)^t$"
+    },
+    {
+      "id": "C",
+      "text": "$m(t) = 40(3t)$"
+    },
+    {
+      "id": "D",
+      "text": "$m(t) = 120(3)^t$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "swaps the initial amount and the growth factor",
+    "C": "multiplies by $3t$ instead of raising $3$ to the power $t$",
+    "D": "uses the mass at $t = 1$ as the initial amount"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The mass triples each hour ($40 \\to 120 \\to 360$) and starts at $40$ grams, so $m(t) = 40(3)^t$.\n\n**The Full Solution:**\nStep 1: An exponential model has the form $m(t) = m_0(b)^t$, where $m_0$ is the value at $t = 0$ and $b$ is the factor per hour.\nStep 2: The table gives $m_0 = 40$ grams, and each step multiplies the mass by $\\frac{120}{40} = 3$, so $b = 3$.\nStep 3: The model is $m(t) = 40(3)^t$. Check at $t = 2$: $40(3)^2 = 40(9) = 360$ grams, matching the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($m(t) = 3(40)^t$): puts the growth factor in front and the initial mass in the exponent's base; at $t = 0$ this gives $3$ grams, not $40$.\n* Choice C ($m(t) = 40(3t)$): multiplies by $3t$ instead of raising $3$ to the $t$, which describes a linear pattern; at $t = 2$ it gives $240$ grams.\n* Choice D ($m(t) = 120(3)^t$): reads the initial amount from the $t = 1$ row instead of the $t = 0$ row.\n\n**Test Day Takeaway:** In $m_0(b)^t$, the coefficient is the value at $t = 0$ and the base is the constant multiplier per unit of time. Get both from the table before you look at the choices."
+}

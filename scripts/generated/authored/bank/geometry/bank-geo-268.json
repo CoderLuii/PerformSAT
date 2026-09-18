@@ -1,0 +1,41 @@
+{
+  "id": "bank-geo-268",
+  "question": "On a schematic two hydraulic hoses cross at a manifold, and one angle formed is three times the measure of an adjacent angle, as the figure marks. The angle marked $z$ degrees lies opposite the smaller of those two. What is the value of $z$?",
+  "diagram": {
+    "type": "intersectingLines",
+    "params": {
+      "angles": [
+        "a°",
+        "3a°",
+        "z°",
+        ""
+      ],
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$45$"
+    },
+    {
+      "id": "B",
+      "text": "$60$"
+    },
+    {
+      "id": "C",
+      "text": "$90$"
+    },
+    {
+      "id": "D",
+      "text": "$135$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "solves 3a = 180 instead of a + 3a = 180, giving a = 60",
+    "C": "assumes the two adjacent angles are equal, so each measures 90 degrees",
+    "D": "reports the larger angle 3a = 135 instead of the angle vertical to a"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The adjacent angles give $a + 3a = 180$, so $a = 45$, and $z$ marks the angle vertical to $a^\\circ$.\n\n**The Full Solution:**\nStep 1: The angles marked $3a^\\circ$ and $a^\\circ$ lie side by side along one hose, so they form a linear pair: $3a + a = 180$.\nStep 2: That gives $4a = 180$, so $a = 45$ and the two angles measure $135$ degrees and $45$ degrees.\nStep 3: The angle marked $z^\\circ$ is directly opposite the angle marked $a^\\circ$, so $z = a = 45$.\n\nCheck: The four angles around the crossing measure $135$, $45$, $135$, and $45$ degrees, which total $360$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($60$): solves $3a = 180$, using only the larger angle instead of the pair.\n* Choice C ($90$): assumes the two adjacent angles must be equal, which would make the hoses perpendicular.\n* Choice D ($135$): reports the larger angle rather than the one opposite $a^\\circ$.\n\n**Test Day Takeaway:** Write the linear-pair equation first, then trace the vertical angle to the measure the question names."
+}

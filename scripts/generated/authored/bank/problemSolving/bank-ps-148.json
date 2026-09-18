@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-148",
+  "question": "In a greenhouse, the number of tomato plants is $35\\%$ of the combined number of pepper plants and cucumber plants. There are $140$ pepper plants and $80$ cucumber plants. How many tomato plants are in the greenhouse?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$28$"
+    },
+    {
+      "id": "B",
+      "text": "$49$"
+    },
+    {
+      "id": "C",
+      "text": "$77$"
+    },
+    {
+      "id": "D",
+      "text": "$297$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "35% of the 80 cucumber plants only",
+    "B": "35% of the 140 pepper plants only",
+    "D": "adds 35% to 220 (a 35% increase, 220 + 77) instead of taking 35% of it"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Combine first: $140 + 80 = 220$. Then $35\\%$ of $220$ is $0.35 \\times 220 = 77$.\n\n**The Full Solution:**\nStep 1: The percent is taken of the *combined* number, so add: $140 + 80 = 220$.\nStep 2: Convert $35\\%$ to a decimal: $0.35$.\nStep 3: Multiply: $0.35 \\times 220 = 77$ tomato plants. Check: $10\\%$ of $220$ is $22$, so $35\\%$ is $3.5 \\times 22 = 77$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($28$): $35\\%$ of the $80$ cucumber plants alone.\n* Choice B ($49$): $35\\%$ of the $140$ pepper plants alone.\n* Choice D ($297$): $220 + 77$, increasing the combined count by $35\\%$ instead of taking $35\\%$ of it.\n\n**Test Day Takeaway:** \"$p\\%$ of the combined number\" means add the pieces first, then multiply by $\\frac{p}{100}$."
+}

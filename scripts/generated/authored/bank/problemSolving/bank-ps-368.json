@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-368",
+  "question": "A city holds a municipal bond with a face value of $\\$4{,}500$. The bond pays the city interest each year equal to $r$ percent of that face value, and the city spends the interest rather than reinvesting it. Which expression gives the face value plus all interest paid, in dollars, after $t$ years?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4{,}500 + \\frac{rt}{100}$"
+    },
+    {
+      "id": "B",
+      "text": "$4{,}500\\left(1 + rt\\right)$"
+    },
+    {
+      "id": "C",
+      "text": "$4{,}500\\left(1 + \\frac{r}{100}\\right)^{t}$"
+    },
+    {
+      "id": "D",
+      "text": "$4{,}500\\left(1 + \\frac{rt}{100}\\right)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the rate expression itself rather than the interest it earns on the 4,500 face value",
+    "B": "uses r as a decimal, so the rate is 100 times too large when r is a percent",
+    "C": "compounds the interest, which happens only when the interest is reinvested"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Simple Interest**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Each year pays $4{,}500 \\cdot \\frac{r}{100}$, so $t$ years pay $\\frac{4{,}500rt}{100}$, and the total is $4{,}500\\left(1 + \\frac{rt}{100}\\right)$.\n\n**The Full Solution:**\nStep 1: Find one year of interest. $r$ percent of $4{,}500$ is $4{,}500 \\cdot \\frac{r}{100}$ dollars.\nStep 2: Multiply by the number of years. Because the interest is spent rather than reinvested, every year pays the same amount, so $t$ years pay $\\frac{4{,}500rt}{100}$ dollars.\nStep 3: Add the face value and factor. Total $= 4{,}500 + \\frac{4{,}500rt}{100} = 4{,}500\\left(1 + \\frac{rt}{100}\\right)$. With $r = 5$ and $t = 2$ this gives $4{,}500(1.1) = 4950$, and $2$ years of $\\$225$ interest is indeed $\\$450$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4{,}500 + \\frac{rt}{100}$): adds a bare $\\frac{rt}{100}$ instead of that fraction of the $4{,}500$ face value.\n* Choice B ($4{,}500(1 + rt)$): treats $r$ as a decimal. Since $r$ is a percent, it must be divided by $100$ first.\n* Choice C ($4{,}500\\left(1 + \\frac{r}{100}\\right)^{t}$): is the compound-interest formula, which applies only when each year's interest earns interest of its own.\n\n**Test Day Takeaway:** Simple interest is linear in time: the same dollar amount every year. An exponent on the year count is the signature of compounding."
+}

@@ -1,17 +1,36 @@
 import { useState, useEffect } from 'react';
 import { auth, db } from '../firebase/config';
+import { getUserTestDates, derivePrimaryTestDate, normalizeTestDates, withPrimaryReplaced } from '../services/selectors/testDates';
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signOut
 } from 'firebase/auth';
-import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, getDoc, getDocFromServer, setDoc, serverTimestamp } from 'firebase/firestore';
 import { TERMS_VERSION } from '../constants/legal';
 import { toCompositeGoal } from '../services/selectors/goalProgress';
 import { setReviewStreakUser } from '../services/dailyReviewEngine';
 import { clearChatSessionStorage } from '../services/chatSessionService';
 import { phIdentify, phReset } from '../services/posthogClient';
+
+export const ALREADY_SIGNED_IN_MSG = 'You are already signed in. Log out first to create a new account.';
+
+/**
+ * Throws ALREADY_SIGNED_IN_MSG when a signup is attempted over a live
+ * Firebase session. Creating an account while signed in is never a valid
+ * state here — the funnel is the only signup surface, and completing it
+ * against an existing session risks writing onboarding data over the
+ * signed-in account (bug filed 2026-08-13). Pure and exported so the guard
+ * is testable without a renderer.
+ *
+ * @param {Object|null} currentUser - firebase auth.currentUser at call time
+ */
+export const assertNotAlreadySignedIn = (currentUser) => {
+  if (currentUser) {
+    throw new Error(ALREADY_SIGNED_IN_MSG);
+  }
+};
 
 /**
  * Build the users/{uid} document written at signup.
@@ -71,6 +90,34 @@ export const buildSignupUserDoc = (email, firstName = '', additionalInfo = {}) =
  * @param {Object} profile - the assembled user profile (uid + Firestore data)
  * @returns {Object} the profile to hand to setUser, with a composite targetScore
  */
+/**
+ * Keep users/{uid}.testDate = the NEXT sitting in users/{uid}.testDates as
+ * time passes (see selectors/testDates). Read-time derivation is what every
+ * consumer sees; a drifted stored value is re-persisted best-effort so
+ * server-side readers (re-engagement) catch up too.
+ *
+ * @param {Object} profile
+ * @param {Date} [today]
+ * @returns {Object}
+ */
+export const normalizeProfileTestDates = (profile, today = new Date()) => {
+  if (!profile) return profile;
+  const list = getUserTestDates(profile);
+  if (list.length === 0) return profile;
+  const primary = derivePrimaryTestDate(list, today);
+  const listChanged = !Array.isArray(profile.testDates) || profile.testDates.length !== list.length || profile.testDates.some((d, i) => d !== list[i]);
+  if (primary === profile.testDate && !listChanged) return profile;
+  if (profile.uid && primary !== profile.testDate) {
+    Promise.resolve(
+      setDoc(doc(db, 'users', profile.uid), { testDate: primary, testDates: list }, { merge: true })
+    ).catch((err) => console.error('Error persisting derived test date:', err));
+  }
+  return { ...profile, testDate: primary, testDates: list };
+};
+
+/** Every read-time profile normalization, in order. */
+const normalizeProfile = (profile) => normalizeProfileTestDates(normalizeProfileGoal(profile));
+
 export const normalizeProfileGoal = (profile) => {
   if (!profile || typeof profile.targetScore !== 'number') return profile;
   // A goal written through the composite slider (400-1600) is stamped
@@ -87,6 +134,28 @@ export const normalizeProfileGoal = (profile) => {
     ).catch((err) => console.error('Error persisting goal-scale migration:', err));
   }
   return { ...profile, targetScore: migrated };
+};
+
+/**
+ * Read the student's profile doc, preferring a SERVER round trip.
+ *
+ * Why not plain getDoc: on the landing-page login path, `login()` writes
+ * `lastLoginAt` (merge) on a doc this client has never read. The auth
+ * listener's concurrent getDoc then resolves from the local write overlay —
+ * a doc that "exists" with ONLY `lastLoginAt` — and the whole session runs
+ * on that shell profile (no firstName, no testDate, no onboarding stamps →
+ * inner onboarding re-seized returning students; reproduced 2026-08-22).
+ * getDocFromServer bypasses the overlay; getDoc is the offline fallback.
+ *
+ * @param {import('firebase/firestore').DocumentReference} ref
+ * @returns {Promise<import('firebase/firestore').DocumentSnapshot>}
+ */
+const readProfileDoc = async (ref) => {
+  try {
+    return await getDocFromServer(ref);
+  } catch {
+    return getDoc(ref);
+  }
 };
 
 export const useAuth = () => {
@@ -116,7 +185,7 @@ export const useAuth = () => {
         const isStale = () => auth.currentUser?.uid !== firebaseUser.uid;
         try {
           // Fetch user profile from Firestore
-          let userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));
+          let userDoc = await readProfileDoc(doc(db, 'users', firebaseUser.uid));
           if (!userDoc.exists() && !isStale()) {
             // Signup race: the signup flow's users-doc write usually lands
             // within ~1.5s of the auth user existing. Retry once before
@@ -124,11 +193,11 @@ export const useAuth = () => {
             // doesn't strand a fresh signup without firstName/goal fields.
             await new Promise((resolve) => setTimeout(resolve, 1500));
             if (isStale()) return;
-            userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));
+            userDoc = await readProfileDoc(doc(db, 'users', firebaseUser.uid));
           }
           if (isStale()) return;
           if (userDoc.exists()) {
-            setUser(normalizeProfileGoal({
+            setUser(normalizeProfile({
               uid: firebaseUser.uid,
               email: firebaseUser.email,
               ...userDoc.data()
@@ -175,6 +244,13 @@ export const useAuth = () => {
       const msg = 'Please confirm you are 13 or older and agree to the Terms of Service and Privacy Policy.';
       setError(msg);
       throw new Error(msg);
+    }
+
+    // Same before-the-try placement as the consent guard, for the same
+    // reason: the catch below rewrites unknown errors to a generic message.
+    if (auth.currentUser) {
+      setError(ALREADY_SIGNED_IN_MSG);
+      assertNotAlreadySignedIn(auth.currentUser);
     }
 
     try {
@@ -236,20 +312,25 @@ export const useAuth = () => {
       // Sign in with Firebase
       const result = await signInWithEmailAndPassword(auth, email, password);
 
-      // Update last login time
-      await setDoc(doc(db, 'users', result.user.uid), {
-        lastLoginAt: serverTimestamp()
-      }, { merge: true });
-
-      // Fetch user data
-      const userDoc = await getDoc(doc(db, 'users', result.user.uid));
-      const userData = normalizeProfileGoal({
+      // Fetch user data FIRST — from the server. The lastLoginAt merge below
+      // used to run before this read; on a doc this client had never read,
+      // the concurrent auth-listener getDoc resolved from the local write
+      // overlay ({ lastLoginAt } only) and the session ran on a shell
+      // profile. Read, then stamp.
+      const userDoc = await readProfileDoc(doc(db, 'users', result.user.uid));
+      const userData = normalizeProfile({
         uid: result.user.uid,
         email: result.user.email,
         ...userDoc.data()
       });
 
       setUser(userData);
+
+      // Update last login time — best-effort, never blocks the login.
+      setDoc(doc(db, 'users', result.user.uid), {
+        lastLoginAt: serverTimestamp()
+      }, { merge: true }).catch((e) => console.warn('lastLoginAt stamp failed:', e?.message || e));
+
       return userData;
     } catch (err) {
       console.error('Error logging in:', err);
@@ -297,16 +378,77 @@ export const useAuth = () => {
     // string can never be persisted.
     const cleared = testDate === '' || testDate === null || testDate === undefined;
     if (!cleared && !/^\d{4}-\d{2}-\d{2}$/.test(testDate)) return;
-    const nextTestDate = cleared ? null : testDate;
+    // Single-date editors (Profile, onboarding) set the PRIMARY: swap it in
+    // the full list and keep the other sittings.
+    const list = withPrimaryReplaced(getUserTestDates(user), user.testDate || null, cleared ? null : testDate);
+    const nextTestDate = derivePrimaryTestDate(list) ?? null;
 
     try {
       await setDoc(doc(db, 'users', user.uid), {
-        testDate: nextTestDate
+        testDate: nextTestDate,
+        testDates: list,
       }, { merge: true });
 
-      setUser(prev => ({ ...prev, testDate: nextTestDate }));
+      setUser(prev => ({ ...prev, testDate: nextTestDate, testDates: list }));
     } catch (err) {
       console.error('Error updating test date:', err);
+      throw err;
+    }
+  };
+
+  /**
+   * Replace the student's full list of SAT dates (the inline picker). The
+   * primary (testDate) is re-derived from the list.
+   *
+   * @param {string[]} dates - 'YYYY-MM-DD' strings; [] clears everything
+   */
+  const updateTestDates = async (dates) => {
+    if (!user?.uid) return;
+    const list = normalizeTestDates(dates);
+    const primary = derivePrimaryTestDate(list) ?? null;
+    try {
+      await setDoc(doc(db, 'users', user.uid), { testDate: primary, testDates: list }, { merge: true });
+      setUser(prev => ({ ...prev, testDate: primary, testDates: list }));
+    } catch (err) {
+      console.error('Error updating test dates:', err);
+      throw err;
+    }
+  };
+
+  /**
+   * Record what happened with an official SAT sitting (Home's score prompt).
+   * Stored as users/{uid}.scoreReports[testDate] so the prompt never re-asks
+   * for a date the student already answered. A reported composite also
+   * becomes currentScore — an official score is the most authoritative
+   * "where you are" the app can have.
+   *
+   * @param {string} testDate - 'YYYY-MM-DD'
+   * @param {{status:'reported'|'declined'|'not-taken', composite?:number, rw?:number, math?:number}} report
+   */
+  const recordScoreReport = async (testDate, report) => {
+    if (!user?.uid) return;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(testDate || '')) return;
+    const status = ['reported', 'declined', 'not-taken'].includes(report?.status) ? report.status : null;
+    if (!status) return;
+    const entry = { status, reportedAt: new Date().toISOString() };
+    if (status === 'reported') {
+      if (!Number.isFinite(report.composite)) return;
+      entry.composite = report.composite;
+      if (Number.isFinite(report.rw)) entry.rw = report.rw;
+      if (Number.isFinite(report.math)) entry.math = report.math;
+    }
+    const patch = { scoreReports: { [testDate]: entry } };
+    if (status === 'reported') patch.currentScore = report.composite;
+    try {
+      // setDoc+merge deep-merges the map: other dates' entries survive.
+      await setDoc(doc(db, 'users', user.uid), patch, { merge: true });
+      setUser(prev => ({
+        ...prev,
+        scoreReports: { ...(prev?.scoreReports || {}), [testDate]: entry },
+        ...(status === 'reported' ? { currentScore: report.composite } : {}),
+      }));
+    } catch (err) {
+      console.error('Error recording score report:', err);
       throw err;
     }
   };
@@ -319,14 +461,23 @@ export const useAuth = () => {
    */
   const updateProfilePhoto = async (photoDataUrl) => {
     if (!user?.uid) return;
-
+    const next = photoDataUrl || null;
+    const prev = user.photoDataUrl ?? null;
+    // Optimistic: every avatar updates immediately. The setDoc used to gate
+    // the local update, and a hung write (SDK memory persistence + flaky
+    // network never settles) left the UI stale until a refresh re-hydrated
+    // the eventually-flushed doc. Race an 8s timeout so the caller's busy
+    // state always clears; the SDK still flushes the write when it can.
+    setUser((p) => ({ ...p, photoDataUrl: next }));
     try {
-      await setDoc(doc(db, 'users', user.uid), {
-        photoDataUrl: photoDataUrl || null
-      }, { merge: true });
-
-      setUser(prev => ({ ...prev, photoDataUrl: photoDataUrl || null }));
+      let timer;
+      await Promise.race([
+        setDoc(doc(db, 'users', user.uid), { photoDataUrl: next }, { merge: true }),
+        new Promise((resolve) => { timer = setTimeout(resolve, 8000); }),
+      ]).finally(() => clearTimeout(timer));
     } catch (err) {
+      // Definite rejection (rules/validation) — roll the avatar back.
+      setUser((p) => ({ ...p, photoDataUrl: prev }));
       console.error('Error updating profile photo:', err);
       throw err;
     }
@@ -465,6 +616,7 @@ export const useAuth = () => {
     const {
       feeling, testDate, currentScore, targetScore,
       confidentArea, worryArea, gradYear,
+      weakMathAreas, weakRWAreas, studyDaysPerWeek,
     } = payload;
 
     const update = { innerOnboardingCompletedAt: new Date().toISOString() };
@@ -473,6 +625,7 @@ export const useAuth = () => {
     // testDate: only a real 'YYYY-MM-DD' string is stored (plan pacing parses it).
     if (typeof testDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(testDate)) {
       update.testDate = testDate;
+      update.testDates = [testDate];
     }
     if (Number.isFinite(currentScore)) update.currentScore = currentScore;
     if (Number.isFinite(targetScore)) {
@@ -482,6 +635,10 @@ export const useAuth = () => {
     if (typeof confidentArea === 'string' && confidentArea) update.confidentArea = confidentArea;
     if (typeof worryArea === 'string' && worryArea) update.worryArea = worryArea;
     if (Number.isFinite(gradYear)) update.gradYear = gradYear;
+    // Detailed self-report — the starter plan's inputs (see starterPlanService).
+    if (Array.isArray(weakMathAreas) && weakMathAreas.length) update.weakMathAreas = weakMathAreas;
+    if (Array.isArray(weakRWAreas) && weakRWAreas.length) update.weakRWAreas = weakRWAreas;
+    if (Number.isFinite(studyDaysPerWeek)) update.studyDaysPerWeek = studyDaysPerWeek;
 
     try {
       await setDoc(doc(db, 'users', user.uid), update, { merge: true });
@@ -544,6 +701,8 @@ export const useAuth = () => {
     login,
     logout,
     updateTestDate,
+    updateTestDates,
+    recordScoreReport,
     updateTargetScore,
     updateCurrentScore,
     updateTargetSchools,

@@ -1,0 +1,41 @@
+{
+  "id": 3,
+  "question": "The function $f$ is defined by $f(x)=(x-h)^{2}+k$, where $h$ and $k$ are constants, and the graph of $y=f(x)$ is shown in the $xy$-plane. The function $g$ is defined by $g(x)=f(x+6)$. If $g(x)=(x-p)^{2}+q$, where $p$ and $q$ are constants, what is the value of $p+q$?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        4,
+        -5
+      ],
+      "a": 1,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-7$"
+    },
+    {
+      "id": "B",
+      "text": "$-3$"
+    },
+    {
+      "id": "C",
+      "text": "$-1$"
+    },
+    {
+      "id": "D",
+      "text": "$5$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads p with the wrong sign",
+    "C": "ignores the shift",
+    "D": "shifts right instead of left"
+  },
+  "correctAnswer": "A",
+  "hint": "Write $g$ in the same vertex form as $f$ and read $p$ off with its sign, not its size.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~45s):** The graph gives $f(x)=(x-4)^{2}-5$, so $g(x)=(x+2)^{2}-5$, meaning $p=-2$, $q=-5$, and $p+q=-7$.\n\n**The Full Solution:**\nStep 1: The vertex shown is $(4,-5)$, so $h=4$ and $k=-5$, giving $f(x)=(x-4)^{2}-5$.\nStep 2: Substituting, $g(x)=f(x+6)=\\left((x+6)-4\\right)^{2}-5=(x+2)^{2}-5$.\nStep 3: To match the form $(x-p)^{2}+q$, write $(x+2)^{2}$ as $\\left(x-(-2)\\right)^{2}$, so $p=-2$ and $q=-5$, and $p+q=-7$. Check: the vertex of $g$ is $(-2,-5)$, which is the vertex of $f$ moved $6$ units left. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-3$): reads $p$ as $2$ from $(x+2)^{2}$; the form requires $x-p$, so $p=-2$.\n* Choice C ($-1$): uses the vertex of $f$ itself: $4+(-5)=-1$, ignoring the shift.\n* Choice D ($5$): shifts right instead of left: $10+(-5)=5$.\n\n**Test Day Takeaway:** In $(x-p)^{2}+q$ the constant $p$ carries the opposite sign of what appears inside the parentheses."
+}

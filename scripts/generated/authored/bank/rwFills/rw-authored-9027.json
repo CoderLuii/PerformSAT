@@ -1,0 +1,25 @@
+{
+  "id": 9027,
+  "passage": "When container shipping spread in the 1960s, the box itself was the cheapest part of the change. Carrying one container from a factory in one country to a warehouse in another meant rebuilding the ______ around it: cranes tall enough to lift a loaded box, truck chassis cut to its dimensions, rail cars fitted with matching locks, and docks with acres of paved storage. Ports that would not rebuild lost their traffic to ports that did.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "vocabulary"
+    },
+    {
+      "id": "B",
+      "text": "infrastructure"
+    },
+    {
+      "id": "C",
+      "text": "workforce"
+    },
+    {
+      "id": "D",
+      "text": "paperwork"
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** Cranes, chassis, rail cars, and paved docks are all fixed physical equipment, and infrastructure is the category those examples belong to.\n\n**The Full Solution:**\n- The colon signals that the list defines the blank, so read the four items before choosing: cranes, truck chassis, rail cars, paved storage.\n- Every item is a piece of built equipment that had to be replaced or resized. Infrastructure names that category precisely, and it also explains why a port that refused the expense lost its traffic.\n- Reject any word that would fit only a document, only a person, or only a name.\n\n**Why the other choices are wrong:**\n- A: Vocabulary would name words. Cranes and docks are equipment, not terminology.\n- C: A workforce is made of people. Not one item in the list is a worker.\n- D: Paperwork would name forms and records. The text lists things that had to be built, not filed."
+}

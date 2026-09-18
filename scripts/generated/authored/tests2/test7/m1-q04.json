@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A print studio charges \\$6 for each poster after the first 4, which are free. A second studio charges an \\$8 setup fee plus \\$2 for each poster. For how many posters do the two studios charge the same amount?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "distributes the 6 to only the first term, solving 6n - 4 = 2n + 8",
+  "B": "adds the two per-poster rates instead of subtracting them, solving 8n = 32",
+  "D": "divides 32 by the second studio's rate of 2 rather than by the difference of the rates, 4"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Set $6(n - 4) = 2n + 8$. Expanding gives $6n - 24 = 2n + 8$, so $4n = 32$ and $n = 8$.\n\n**The Full Solution:**\nStep 1: With $n$ posters, the first studio charges for $n - 4$ of them at \\$6 each, or $6(n - 4)$ dollars; the second charges $2n + 8$ dollars.\nStep 2: Set the two totals equal and distribute: $6n - 24 = 2n + 8$.\nStep 3: Subtract $2n$ and add $24$ to both sides: $4n = 32$, so $n = 8$. Check: $6(8 - 4) = 24$ and $2(8) + 8 = 24$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): this comes from $6n - 4 = 2n + 8$, where the $6$ was multiplied only by $n$. The factor outside a parenthesis reaches every term inside it.\n* Choice B ($4$): this comes from $8n = 32$, adding the rates $6$ and $2$. Bringing $2n$ to the left subtracts it, giving $4n$.\n* Choice D ($16$): this divides $32$ by $2$, the second studio's rate, instead of by $4$, the coefficient that survives after combining like terms.\n\n**Test Day Takeaway:** \"Free for the first $k$ items\" always becomes a parenthesis, $rate \\times (n - k)$. Distribute it before you combine like terms, and divide by the coefficient you actually end up with."
+}

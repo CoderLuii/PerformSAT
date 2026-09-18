@@ -1,0 +1,56 @@
+{
+ "question": "The table gives the soil moisture, as a percent, at a test plot on four days after irrigation, and the four readings lie on a line. The equation $ax + 12y = 180$ has that same graph in the $xy$-plane, where $a$ is a constant. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.75$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$36$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the magnitude of the slope $\\frac{3}{4}$ instead of a coefficient",
+  "B": "copies the $x$-coefficient of $3x + 4y = 60$ without scaling by $3$",
+  "D": "multiplies the $x$-coefficient $3$ by the target's $y$-coefficient $12$"
+ },
+ "explanation": "**SAT Pattern: Same Line Infinitely Many Solutions**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The readings drop $3$ percent every $4$ days from $15$, so $3x + 4y = 60$. Tripling gives $9x + 12y = 180$, and $a = 9$.\n\n**The Full Solution:**\n\nStep 1: From the table the moisture falls from $15$ to $6$ as the day count rises from $0$ to $12$, a slope of $-\\frac{9}{12} = -\\frac{3}{4}$, so $y = 15 - \\frac{3}{4}x$.\n\nStep 2: Clear the fraction by multiplying by $4$: $4y = 60 - 3x$, or $3x + 4y = 60$.\n\nStep 3: For $ax + 12y = 180$ to be the same line, scale by $\\frac{12}{4} = 3$: $9x + 12y = 180$, so $a = 9$. Check $(4, 12)$: $9(4) + 12(12) = 180$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($0.75$): reports the size of the slope $\\frac{3}{4}$, not the coefficient of $x$ in standard form.\n\n* Choice B ($3$): copies the $x$-coefficient of $3x + 4y = 60$ and skips the scaling.\n\n* Choice D ($36$): multiplies $3$ by $12$, the target's $y$-coefficient, instead of by the scale factor $3$.\n\n**Test Day Takeaway:** Turn table data into standard form first, then read the scale factor off the coefficient you can match.",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Days after irrigation",
+    "Soil moisture (percent)"
+   ],
+   "rows": [
+    [
+     "0",
+     "15"
+    ],
+    [
+     "4",
+     "12"
+    ],
+    [
+     "8",
+     "9"
+    ],
+    [
+     "12",
+     "6"
+    ]
+   ]
+  }
+ },
+ "id": "bank-alg-447"
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-274",
+ "question": "A spectrograph transmits $P(w) = -2(w - 5)^2 + 90$ percent of the incoming light when its slit width is $w$ micrometers. When this model is written as $P(w) = aw^2 + bw + c$, which of the following gives the values of $b$ and $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$b = -20$ and $c = 40$"
+  },
+  {
+   "id": "B",
+   "text": "$b = 20$ and $c = -50$"
+  },
+  {
+   "id": "C",
+   "text": "$b = 20$ and $c = 40$"
+  },
+  {
+   "id": "D",
+   "text": "$b = 20$ and $c = 140$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps the sign of -10w after multiplying by -2, giving b = -20",
+  "B": "drops the +90, leaving c = -50",
+  "D": "treats -2(25) as +50, giving c = 50 + 90 = 140"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Multiplying $w^2 - 10w + 25$ by $-2$ gives $-2w^2 + 20w - 50$; adding $90$ leaves $b = 20$ and $c = 40$.\n\n**The Full Solution:**\nStep 1: Expand the square: $(w - 5)^2 = w^2 - 10w + 25$.\nStep 2: Multiply each term by $-2$: $-2w^2 + 20w - 50$.\nStep 3: Add $90$: $P(w) = -2w^2 + 20w + 40$, so $b = 20$ and $c = 40$. Check at $w = 5$: $-2(25) + 20(5) + 40 = 90$, the peak throughput ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($b = -20$ and $c = 40$): keeps the middle term negative, ignoring that $-2$ times $-10w$ is $+20w$.\n* Choice B ($b = 20$ and $c = -50$): stops at $-2(25) = -50$ and never adds the $90$.\n* Choice D ($b = 20$ and $c = 140$): reads $-2(25)$ as $+50$, giving $50 + 90 = 140$.\n\n**Test Day Takeaway:** A negative leading coefficient flips the sign of every term of the expansion, including the middle one."
+}

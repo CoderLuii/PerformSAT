@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "A harbor ferry made $x$ weekday crossings and $y$ weekend crossings last month. Its logs give $y = 4x + 6$ and $3x + y = 48$. If the ferry made $30$ weekend crossings, how many weekday crossings did it make?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves 30 = 4x + 6 as 4x = 36, adding 6 instead of subtracting",
+  "C": "divides 48 by 3 without removing the 30 weekend crossings",
+  "D": "subtracts 30 from 48 but never divides by 3"
+ },
+ "correctAnswer": "A",
+ "hint": "Not every equation the logs give is needed.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** Putting $y = 30$ into $3x + y = 48$ leaves $3x = 18$, so $x = 6$.\n\n**The Full Solution:**\nStep 1: Substitute the known weekend count into the equation that still contains both variables: $3x + 30 = 48$.\nStep 2: Subtract $30$ from both sides: $3x = 18$, so $x = 6$.\nStep 3: Confirm with the other log: $4(6) + 6 = 30$ weekend crossings ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($9$): solving $30 = 4x + 6$ as $4x = 36$, adding the $6$ instead of subtracting it.\n* Choice C ($16$): dividing $48$ by $3$ without first removing the $30$ weekend crossings.\n* Choice D ($18$): stopping at $3x = 18$ and reporting $18$ instead of dividing by $3$.\n\n**Test Day Takeaway:** When one value is handed to you, substitute it into whichever equation is left with a single unknown."
+}

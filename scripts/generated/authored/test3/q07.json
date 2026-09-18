@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
+ "type": "multiple-choice",
+ "passage": "During the influenza pandemic of 1918, American cities differed sharply in how quickly they acted. Philadelphia allowed a large public parade to proceed in late September; within weeks its hospitals were overwhelmed, and its death rate became one of the highest of any major city. __St. Louis, by contrast, closed schools, theaters, and other gathering places within days of its first cases, and its death rate remained well below Philadelphia's.__ Historians of public health caution that the two cities differed in more ways than their policies, but the comparison remains a touchstone in debates over how governments should act in an epidemic's earliest days.",
  "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
  "choices": [
   {
    "id": "A",
-   "text": "It supplies the chemical evidence the conservators used to defend their cleaning of the ceiling."
+   "text": "It offers a competing explanation for the severity of the outbreak that Philadelphia experienced"
   },
   {
    "id": "B",
-   "text": "It concedes that the critics of the cleaning had no real basis for their objection to it."
+   "text": "It concedes that early action by a city government could do little to alter the course of the pandemic"
   },
   {
    "id": "C",
-   "text": "It explains why the frescoes had darkened so severely over the many centuries before the cleaning began."
+   "text": "It introduces the reservation that historians raise about drawing conclusions from the two cities"
   },
   {
    "id": "D",
-   "text": "It states the objection that gives the dispute its substance, which the next sentence answers."
+   "text": "It supplies the contrasting case that gives the comparison between the two cities its force, setting up both the historians' caution and the ongoing debate described in the final sentence"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D. The underlined sentence presents the critics' charge — that the cleaning removed a layer of shadow Michelangelo had brushed on himself, flattening his figures — and that charge is what gives the dispute its substance. The very next sentence has the conservators answer it by reporting that chemical analysis identified the dark material as later grime and glue, and the passage then frames the whole quarrel as a question of attribution. The chemical evidence belongs to the following sentence, not the underlined one, so A misassigns it. B reverses the sentence, which voices the objection rather than dismissing it. C names a cause of darkening the passage never explains.",
+ "explanation": "**Choice D is correct.** The underlined sentence provides the second half of the comparison — the city that acted fast and fared better — and everything after it (the historians' caution, the policy debate) is a response to the contrast it completes.\n\n**The Full Solution:**\n- The passage is built on a paired example: Philadelphia's delay and its consequences, then St. Louis's speed and its consequences.\n- Without the underlined sentence there is no comparison, no reason for historians to urge caution about it, and no \"touchstone\" for later debates — the final sentence refers directly to the pairing this sentence creates.\n\n**Why the other choices are wrong:**\n- A: The sentence explains nothing about Philadelphia; it reports a different city's different outcome.\n- B: It implies the opposite of a concession — St. Louis's early action coincided with a far lower death rate.\n- C: The reservation belongs to the following sentence; the underlined sentence presents the evidence the reservation is about.",
  "_meta": {
-  "anchor": "Sistine Chapel ceiling fresco cleaning (1980-1994); a-secco shadow dispute [theme: Renaissance fresco conservation]"
- },
- "passage": "Between 1980 and 1994, conservators cleaned the frescoes of Michelangelo's Sistine Chapel ceiling, removing centuries of soot, glue, and earlier restoration varnish. The recovered colors were far brighter than anyone expected, and the result provoked an unusually public dispute. *Some art historians argued that the cleaning had stripped away a final layer of shadow that Michelangelo himself had brushed on in glue-based paint after the plaster dried, flattening the figures the artist had deliberately modeled.* The conservators replied that chemical analysis showed the dark material was not original paint but later grime and animal glue. The disagreement turned, in the end, on which marks were Michelangelo's and which were added afterward.",
- "type": "multiple-choice"
+  "anchor": "1918 influenza — Philadelphia vs. St. Louis early-intervention comparison (unnamed historians of public health)"
+ }
 }

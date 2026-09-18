@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-091",
+  "question": "A ferry charges $\\$7$ per passenger plus a fixed fee of $\\$12$ per vehicle. A group traveling with one vehicle and $p$ passengers paid a total of $\\$61$. What would the total have been, in dollars, for the same vehicle with $p + 3$ passengers?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\$64$"
+    },
+    {
+      "id": "B",
+      "text": "$\\$82$"
+    },
+    {
+      "id": "C",
+      "text": "$\\$94$"
+    },
+    {
+      "id": "D",
+      "text": "$\\$97$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the count 3 as dollars",
+    "C": "adds a second vehicle fee",
+    "D": "uses the vehicle fee as the per-passenger price"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Three more passengers add $3 \\cdot \\$7 = \\$21$. The vehicle fee does not change, so the new total is $\\$61 + \\$21 = \\$82$.\n\n**The Full Solution:**\nStep 1: The cost equation is $7p + 12 = 61$, so $7p = 49$ and $p = 7$ passengers.\nStep 2: With $p + 3 = 10$ passengers and one vehicle: $7(10) + 12 = 70 + 12 = 82$.\nStep 3: Shortcut check without solving for $p$: adding $3$ passengers adds $3 \\cdot 7 = 21$, and $61 + 21 = 82$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\$64$): adds the count $3$ as dollars instead of $3 \\cdot \\$7 = \\$21$.\n* Choice C ($\\$94$): adds a second vehicle fee, $82 + 12$, though the group still has one vehicle.\n* Choice D ($\\$97$): uses the vehicle fee $\\$12$ as the per-passenger price, $61 + 3 \\cdot 12$.\n\n**Test Day Takeaway:** In a rate-plus-fixed-fee model, changing the count changes only the rate part; multiply the extra count by the rate and leave the fixed fee alone."
+}

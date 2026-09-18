@@ -1,0 +1,98 @@
+{
+  "id": "bank-ps-139",
+  "question": "The scatterplot shows the number of visitors $x$, in hundreds, to a museum and the museum shop's sales $y$, in hundreds of dollars, for $12$ days, with the line of best fit $\\hat{y} = 0.65x + 21$. According to the line of best fit, when the number of visitors increases by $1{,}200$, by how many hundreds of dollars do predicted sales increase?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          10,
+          26
+        ],
+        [
+          14,
+          32
+        ],
+        [
+          18,
+          30
+        ],
+        [
+          22,
+          37
+        ],
+        [
+          24,
+          39
+        ],
+        [
+          26,
+          36
+        ],
+        [
+          30,
+          42
+        ],
+        [
+          34,
+          41
+        ],
+        [
+          38,
+          47
+        ],
+        [
+          42,
+          46
+        ],
+        [
+          46,
+          52
+        ],
+        [
+          50,
+          54
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 60,
+      "yMin": 0,
+      "yMax": 60,
+      "xGridStep": 5,
+      "yGridStep": 5,
+      "xLabelStep": 10,
+      "yLabelStep": 10,
+      "xLabel": "Visitors (hundreds)",
+      "yLabel": "Sales (hundreds of dollars)",
+      "bestFitLine": {
+        "slope": 0.65,
+        "intercept": 21
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.65$"
+    },
+    {
+      "id": "B",
+      "text": "$7.8$"
+    },
+    {
+      "id": "C",
+      "text": "$21$"
+    },
+    {
+      "id": "D",
+      "text": "$780$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the slope alone, which is the increase per 100 visitors, not per 1,200",
+    "C": "the intercept, which cancels in any difference of predictions",
+    "D": "uses a change in x of 1,200 instead of 12, ignoring that x is in hundreds"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $x$ is in hundreds, so $1{,}200$ visitors is a change of $12$ in $x$. The change in $\\hat{y}$ is slope $\\times$ change in $x$: $0.65(12) = 7.8$ hundred dollars.\n\n**The Full Solution:**\nStep 1: Convert the change to the model's units: $1{,}200$ visitors $= 12$ hundreds, so $\\Delta x = 12$.\nStep 2: For a linear model, $\\Delta \\hat{y} = m \\cdot \\Delta x = 0.65 \\times 12 = 7.8$; the intercept $21$ cancels when two predictions are subtracted.\nStep 3: Check with two actual predictions: $x = 40$ gives $0.65(40) + 21 = 47$, and $x = 52$ gives $0.65(52) + 21 = 54.8$; the difference is $7.8$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.65$): The slope by itself is the increase per $1$ unit of $x$, that is, per $100$ visitors, not per $1{,}200$.\n* Choice C ($21$): The intercept plays no role in a change; it cancels when predictions are subtracted.\n* Choice D ($780$): Uses $\\Delta x = 1{,}200$ instead of $12$, ignoring that $x$ is measured in hundreds.\n\n**Test Day Takeaway:** Read the units on both axes; a change in the prediction is slope $\\times \\Delta x$, and $\\Delta x$ must be expressed in the model's units."
+}

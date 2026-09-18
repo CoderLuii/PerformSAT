@@ -6,30 +6,30 @@
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
  "module": 2,
- "passage": "The following text is adapted from Jerome K. Jerome's 1889 humorous novel \"Three Men in a Boat (To Say Nothing of the Dog).\" The narrator, J., has just spent an afternoon at the British Museum reading a medical reference book.\n\nI sat for a while, frozen with horror; and then, in the listlessness of despair, I again turned over the pages. I came to typhoid fever — read the symptoms — discovered that I had typhoid fever, must have had it for months without knowing it — wondered what else I had got; turned up St. Vitus's Dance — found, as I expected, that I had that too — began to get interested in my case, and determined to sift it to the bottom, and so started alphabetically. Cholera I had, with severe complications; and diphtheria I seemed to have been born with. I plodded conscientiously through the twenty-six letters, and the only malady I could conclude I had not got was housemaid's knee.",
+ "passage": "The following text is Emily Dickinson's poem \"Hope is the thing with feathers,\" published in 1891.\n\nHope is the thing with feathers\nThat perches in the soul,\nAnd sings the tune without the words,\nAnd never stops at all,\n\nAnd sweetest in the gale is heard;\nAnd sore must be the storm\nThat could abash the little bird\nThat kept so many warm.\n\nI've heard it in the chillest land,\nAnd on the strangest sea;\nYet, never, in extremity,\nIt asked a crumb of me.",
  "question": "Which choice best describes the overall structure of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "The narrator catalogues a series of illnesses he has actually suffered and then arranges them by the order in which they appeared."
+   "text": "The speaker describes hope's song in times of comfort, contrasts it with hope's silence in times of crisis, and closes by questioning whether hope can be relied upon when circumstances become truly desperate."
   },
   {
    "id": "B",
-   "text": "The narrator considers consulting a doctor and then decides to settle the matter himself by reading further in the book."
+   "text": "The speaker recalls encountering a bird in a storm, expresses regret at having failed to shelter it, and closes by resolving to be more generous in the future."
   },
   {
    "id": "C",
-   "text": "The narrator describes his alarmed first response to a reference book and then methodically extends that response into an absurdly comprehensive self-diagnosis."
+   "text": "The speaker proposes a metaphor for hope, tests it against several competing metaphors, and closes by conceding that no comparison can fully capture the feeling."
   },
   {
    "id": "D",
-   "text": "The narrator records a sober medical self-examination and then notes the single condition that escaped his diagnosis."
+   "text": "The speaker introduces a metaphor that likens hope to a singing bird, describes the bird's persistence through hardship, and closes by observing that it has never asked anything of her in return."
   }
  ],
- "correctAnswer": "C",
- "explanation": "The correct answer is C. The passage opens with the narrator's alarmed first reaction to the medical book—\"frozen with horror,\" turning the pages \"in the listlessness of despair\"—as he discovers he has typhoid fever and then St. Vitus's Dance. The decisive turn is small: he resolves to \"sift it to the bottom\" and works through the volume \"alphabetically,\" diagnosing himself with cholera and diphtheria as he goes, until the only malady he can conclude he has not got is housemaid's knee. The structure thus moves from an alarmed first response into a methodical, absurdly thorough extension of it, and the comedy lies in the mismatch between the orderly method and the ridiculous result. The narrator has suffered none of these illnesses (A), never weighs and rejects a visit to a doctor (B), and the closing housemaid's-knee line is the joke's payoff rather than a sober counterweight (D).",
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The poem establishes its governing metaphor, develops the bird's persistence under duress, and closes by observing that the bird has never asked anything of the speaker — the movement D describes.\n\n**The Full Solution:**\n- The first stanza establishes the metaphor — hope is a feathered thing that \"perches in the soul\" and sings \"without the words\" — and its defining trait: the song \"never stops at all.\"\n- The middle stanza develops persistence under duress: the song is \"sweetest in the gale,\" and only the sorest storm \"could abash the little bird.\"\n- The final stanza extends that persistence to the speaker's own extremes (\"the chillest land,\" \"the strangest sea\") and pivots on \"Yet\" to the closing observation: the bird has \"never, in extremity,\" asked \"a crumb\" of her.\n\n**Why the other choices are wrong:**\n- A: It inverts the poem's central claim — the song is sweetest in the gale; hope is loudest, not silent, in crisis.\n- B: It misreads the metaphorical bird as a literal one and invents regret the poem never expresses.\n- C: No competing metaphors are entertained.",
  "_meta": {
   "quoteVerify": true,
-  "source": "Jerome K. Jerome, Three Men in a Boat (1889), ch. 1 — 'housemaid's knee' passage"
+  "source": "Emily Dickinson, \"Hope is the thing with feathers\" — Poems, Second Series (1891); punctuation follows the 1891 printing"
  }
 }

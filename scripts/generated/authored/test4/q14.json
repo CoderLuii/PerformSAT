@@ -5,30 +5,71 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
+  "module": 1,
+  "passage": "A nineteenth-century triangulation survey began from a baseline whose length was measured directly on the ground, since every distance in the network would ultimately be computed from it. A historian of surveying claims that the compensated measuring bars adopted at mid-century marked a decisive advance: baselines measured with the bars closed with far smaller errors than those measured with steel chains, even though the bar-measured baselines were longer.",
+  "questionTable": {
+    "type": "table",
+    "caption": "Baselines measured by one national survey, 1821-1867",
+    "headers": [
+      "Baseline",
+      "Year",
+      "Apparatus",
+      "Length (miles)",
+      "Closure error (inches per mile)"
+    ],
+    "rows": [
+      [
+        "Ashford Flats",
+        "1821",
+        "Steel chain",
+        "5.2",
+        "3.1"
+      ],
+      [
+        "Redstone Valley",
+        "1838",
+        "Steel chain",
+        "6.0",
+        "2.7"
+      ],
+      [
+        "Millbrook Plain",
+        "1852",
+        "Compensated bars",
+        "7.4",
+        "0.6"
+      ],
+      [
+        "Saltmarsh Level",
+        "1867",
+        "Compensated bars",
+        "8.9",
+        "0.4"
+      ]
+    ]
+  },
   "question": "Which choice most effectively uses data from the table to support the claim?",
   "choices": [
     {
       "id": "A",
-      "text": "The female-male gap rose from 2.0 years in 1900 to 7.6 years in 1970 but fell back to 5.4 years by 2000, even as both male and female life expectancy continued to rise during 1970–2000."
+      "text": "The baselines measured with compensated bars, at 7.4 and 8.9 miles, were longer than either chain-measured baseline, yet they closed with errors of 0.6 and 0.4 inches per mile, against 3.1 and 2.7 for the chains."
     },
     {
       "id": "B",
-      "text": "The female-male gap rose from 2.0 years in 1900 to 5.5 years in 1950, indicating that female life expectancy improved more rapidly than male life expectancy in the first half of the century."
+      "text": "The Saltmarsh Level baseline, measured with compensated bars in 1867, was the longest of the four baselines listed in the table, at 8.9 miles."
     },
     {
       "id": "C",
-      "text": "Female life expectancy was 79.5 years in 2000, the highest value in the female column, and male life expectancy reached 74.1 years in the same year."
+      "text": "The survey's closure errors declined with every successive baseline it measured between 1821 and 1867, whatever apparatus was in use."
     },
     {
       "id": "D",
-      "text": "The 1970 female-male gap of 7.6 years was the largest of any year shown, and male life expectancy that year stood at 67.1 years."
+      "text": "The Ashford Flats baseline of 1821, measured with a steel chain, closed with an error of 3.1 inches per mile, the largest error of the four in the table."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The claim has three parts — the gap widened from 1900 to 1970, narrowed from 1970 to 2000, and both columns kept rising in the later window — and choice A reports all three: 2.0 to 7.6 years, 7.6 back to 5.4 years, and the continued rise in both life-expectancy columns. Choice B covers only the early widening; choice C cites the year-2000 endpoints without showing any change in the gap; and choice D notes the 1970 peak alone.",
-  "passage": "Demographers studying U.S. life expectancy in the twentieth century have noted that the gap between female and male life expectancy at birth did not move in a single direction across the century. A historian of health wants to argue that the female-male gap widened steadily from 1900 through 1970 but then narrowed between 1970 and 2000, even as both male and female life expectancy continued to rise. To support this claim with data from the table below, the writer needs the values that establish both the earlier widening and the later narrowing.\n\nU.S. life expectancy at birth (years), selected years (CDC, National Vital Statistics Reports)\n| Year | Male | Female | Female-Male gap |\n|------|------|--------|-----------------|\n| 1900 | 46.3 | 48.3   | 2.0             |\n| 1930 | 58.1 | 61.6   | 3.5             |\n| 1950 | 65.6 | 71.1   | 5.5             |\n| 1970 | 67.1 | 74.7   | 7.6             |\n| 2000 | 74.1 | 79.5   | 5.4             |",
+  "explanation": "**Choice A is correct.** The claim compares apparatus under a handicap — smaller errors from the bars even on longer baselines — and A cites the lengths and the errors for both pairs, completing the comparison.\n\n**The Full Solution:**\n- The claim's structure: bars beat chains on error despite longer lines.\n- A establishes the handicap (7.4 and 8.9 miles versus 5.2 and 6.0) and the result (0.6 and 0.4 inches per mile versus 3.1 and 2.7).\n- Both conditions of the claim are documented; nothing is left to inference.\n\n**Why the other choices are wrong:**\n- B: One baseline's length says nothing about closure errors or the chain comparison.\n- C: A steady decline over time blurs the claim's point — it credits the sequence of measurements rather than the change of apparatus.\n- D: The single worst chain error omits the bar measurements entirely, so no comparison is made.",
   "_meta": {
-    "anchor": "CDC NVSR — twentieth-century U.S. life expectancy by sex; dataset qd-013"
-  },
-  "module": 1
+    "anchor": "history of surveying — chain versus compensated-bar baselines; original survey table"
+  }
 }

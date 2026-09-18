@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-219",
+  "question": "A theater releases same-day rush seats at $\\$90$ each, a price that is $25\\%$ less than the regular price of $k$ dollars for the same seat. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$72$"
+    },
+    {
+      "id": "B",
+      "text": "$112.50$"
+    },
+    {
+      "id": "C",
+      "text": "$120$"
+    },
+    {
+      "id": "D",
+      "text": "$360$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by 1.25 instead of 0.75: 90 / 1.25 = 72, reversing an increase rather than a discount",
+    "B": "adds 25 percent of the rush price to the rush price: 90 x 1.25 = 112.50",
+    "D": "divides by the discount rate 0.25 instead of the retained fraction 0.75: 90 / 0.25 = 360"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Reverse Percent (Find Original from Sale)**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The rush price keeps $75\\%$ of the regular price, so $k = \\frac{90}{0.75} = 120$.\n\n**The Full Solution:**\nStep 1: Translate the discount. A price $25\\%$ less than $k$ is $k - 0.25k = 0.75k$, so $0.75k = 90$.\nStep 2: Solve. $k = \\frac{90}{0.75} = 120$ dollars.\nStep 3: Check forward. $25\\%$ of $120$ is $30$, and $120 - 30 = 90$, the rush price. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($72$): divides by $1.25$: $\\frac{90}{1.25} = 72$. That undoes a $25\\%$ increase, not a $25\\%$ discount.\n* Choice B ($112.50$): computes $90 \\times 1.25 = 112.50$, taking the $25\\%$ of the rush price. The discount is $25\\%$ of the REGULAR price.\n* Choice D ($360$): divides by $0.25$: $\\frac{90}{0.25} = 360$. That treats $90$ as the discount instead of the price paid.\n\n**Test Day Takeaway:** After a $p\\%$ discount the buyer pays $(1 - p)$ of the original, so recover the original by dividing by $(1 - p)$, never by $p$."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "A scenic arch meets the stage floor at the two solutions of $2x^2 - 26x + 60 = 0$, where $x$ is measured in feet from the wings. How many feet apart are the two points where the arch meets the floor?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$14$"
+  },
+  {
+   "id": "D",
+   "text": "$30$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports the sum of the two solutions, 26 divided by 2, instead of their difference",
+  "C": "computes the square root of the discriminant, 14, but never divides by the leading coefficient 2",
+  "D": "reports the product of the two solutions, 60 divided by 2"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Quadratic — Vieta's Sum/Product**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The solutions sum to $\\frac{26}{2} = 13$ and multiply to $\\frac{60}{2} = 30$. Two numbers with sum $13$ and product $30$ are $3$ and $10$, which are $7$ apart.\n\n**The Full Solution:**\nStep 1: For $ax^2 + bx + c = 0$ the solutions satisfy $p + q = -\\frac{b}{a} = \\frac{26}{2} = 13$ and $pq = \\frac{c}{a} = \\frac{60}{2} = 30$.\nStep 2: The gap between the solutions follows from $(p - q)^2 = (p + q)^2 - 4pq = 169 - 120 = 49$, so $|p - q| = 7$.\nStep 3: Confirm by factoring: $2x^2 - 26x + 60 = 2(x - 3)(x - 10)$, so the arch meets the floor at $3$ feet and $10$ feet, which are $7$ feet apart ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($13$): this is $p + q$, the sum of the two positions. The question asks how far apart they are, which is the difference.\n* Choice C ($14$): this is $\\sqrt{b^2 - 4ac} = \\sqrt{196}$. That expression equals $a|p - q|$, so with $a = 2$ it must still be divided by $2$.\n* Choice D ($30$): this is $pq$, the product. A product of two lengths is not a distance.\n\n**Test Day Takeaway:** Sum and product come straight off the coefficients as $-\\frac{b}{a}$ and $\\frac{c}{a}$. Any question about the gap between the roots is $(p+q)^2 - 4pq$ under a square root — divide out the leading coefficient before you trust the number."
+}

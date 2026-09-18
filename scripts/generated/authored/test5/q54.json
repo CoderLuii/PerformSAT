@@ -1,44 +1,44 @@
 {
-  "id": 554,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 2,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Charles Darwin (1809–1882) was a British naturalist.",
-      "His 1859 book On the Origin of Species argued that species change over time through natural selection.",
-      "The Origin deliberately said almost nothing about human beings.",
-      "His 1871 book The Descent of Man applied evolution by natural and sexual selection directly to human origins.",
-      "The 1871 book extended to human beings the explanatory approach the 1859 book had developed for other species."
-    ],
-    "goal": "The student wants to emphasize that Darwin's 1871 book extends the explanatory approach he developed in his 1859 book."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Darwin's 1871 book The Descent of Man extended to human origins the explanatory approach he had developed in On the Origin of Species (1859), which argued that species change through natural selection but said almost nothing about human beings."
-    },
-    {
-      "id": "B",
-      "text": "Charles Darwin's 1859 book On the Origin of Species argued that species change over time through the process of natural selection."
-    },
-    {
-      "id": "C",
-      "text": "Charles Darwin (1809–1882) was a British naturalist whose books shaped the modern understanding of how living species change over time."
-    },
-    {
-      "id": "D",
-      "text": "Darwin's 1871 book The Descent of Man applied evolution by natural and sexual selection directly to the question of human origins."
-    }
+ "id": 554,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 2,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "George Ellery Hale (1868-1938) was an American astronomer and a tireless organizer of observatories.",
+   "In the 1890s he secured the funding for Yerkes Observatory in Wisconsin, whose 40-inch refractor was the world's largest telescope when it was completed in 1897.",
+   "Convinced that larger instruments would open new science, he founded the Mount Wilson Observatory in California in 1904.",
+   "At Mount Wilson he oversaw the 60-inch reflector of 1908 and the 100-inch reflector of 1917, each the world's largest telescope upon completion.",
+   "Observations with the 100-inch telescope soon reshaped astronomers' understanding of the scale of the universe."
   ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The goal is to emphasize that the 1871 book extends the approach of the 1859 book, so the sentence must connect the two and name the extension. Choice A does this: it states that The Descent of Man carried Darwin's explanatory approach to human origins, while noting that the Origin had developed that approach for other species and left humans aside. Choices B and D each describe a single book and stage no extension between them. Choice C introduces Darwin generally without relating the two books' approaches.",
-  "_meta": {
-    "anchor": "Charles Darwin — Origin (1859) approach extended to humans in Descent of Man (1871)"
+  "goal": "The student wants to emphasize that Hale's work at Mount Wilson continued an approach he had already used at Yerkes."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Having already secured the world's largest telescope for Yerkes in the 1890s, Hale repeated the formula at Mount Wilson, where the 60-inch and then the 100-inch reflectors each claimed that title in turn."
+  },
+  {
+   "id": "B",
+   "text": "Convinced that larger instruments would open new science, Hale founded the Mount Wilson Observatory in California in 1904."
+  },
+  {
+   "id": "C",
+   "text": "Observations with the 100-inch telescope at Mount Wilson soon reshaped astronomers' understanding of the scale of the universe."
+  },
+  {
+   "id": "D",
+   "text": "Yerkes Observatory's 40-inch refractor was the world's largest telescope when it was completed in 1897, and George Ellery Hale, who had secured its funding, was an American astronomer and a tireless organizer of observatories."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The goal is continuity — Mount Wilson as a continuation of the Yerkes approach — and A binds the two explicitly: having secured the world's largest telescope once, Hale \"repeated the formula,\" producing successive record-holders at Mount Wilson.\n\n**The Full Solution:**\n- Emphasizing continuation requires both episodes and a link that presents the later one as the earlier one's extension.\n- Choice A supplies the earlier episode (\"the world's largest telescope for Yerkes in the 1890s\"), the connective logic (\"repeated the formula\"), and the later episodes (the 60-inch and 100-inch, \"each claimed that title in turn\").\n- The sentence's structure — \"Having already... repeated...\" — is itself the emphasis the goal demands.\n\n**Why the other choices are wrong:**\n- B: It records the founding of Mount Wilson without mentioning Yerkes, so no continuity is expressed.\n- C: It celebrates a result at Mount Wilson but connects it to nothing that came before.\n- D: It sets two facts side by side without any link presenting one project as continuing the other.",
+ "_meta": {
+  "anchor": "George Ellery Hale — world's-largest-telescope strategy repeated from Yerkes to Mount Wilson"
+ }
 }

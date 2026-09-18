@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-057",
+ "question": "A seismic array records two totals, $41$ and $-8$, described by $3x + 5y = 41$ and $3x + ky = -8$ for a constant $k$, where $x$ and $y$ are the array's two calibration offsets. Both descriptions hold when $y = 7$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-7$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides -14 by 2 instead of by the given y-value 7",
+  "C": "drops the negative sign after dividing",
+  "D": "reports the given y-value instead of k"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Elimination (Subtract to Cancel x)**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Both equations share $3x$; the first with $y = 7$ gives $3x = 6$, and then $6 + 7k = -8$ gives $k = -2$.\n\n**The Full Solution:**\nStep 1: Substitute $y = 7$ into the first equation: $3x + 35 = 41$, so $3x = 6$.\nStep 2: The second equation shares the same $3x$ term, so subtracting the two equations cancels $x$ directly; substituting $3x = 6$ gives $6 + 7k = -8$.\nStep 3: Then $7k = -14$ and $k = -2$. Check: $x = 2$, so $3(2) + (-2)(7) = 6 - 14 = -8$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7$): divides $-14$ by $2$ instead of by the given value $y = 7$.\n* Choice C ($2$): drops the negative sign after dividing $-14$ by $7$.\n* Choice D ($7$): reports the given value of $y$ rather than the constant $k$.\n\n**Test Day Takeaway:** Matching $x$-coefficients mean the two equations differ only in the $y$-term and the constant — subtract and the $x$ never has to be found separately."
+}

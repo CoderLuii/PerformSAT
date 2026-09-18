@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "inferences",
  "module": 1,
- "passage": "Working with maize at Cold Spring Harbor Laboratory in the 1940s, the geneticist Barbara McClintock noticed that the kernels on certain ears displayed irregular patches of pigment whose distribution did not fit established rules of inheritance. By tracking how these patterns reappeared across many generations of carefully bred plants, and by mapping the chromosomes of plants that produced them, she concluded that particular elements were physically changing location within the genome and, in doing so, switching adjacent pigment genes on or off in the cells where the elements landed. McClintock's 1950 paper proposing such mobile elements was largely set aside by other geneticists for several decades, but the central claim of her account implies that ______",
+ "passage": "The Antikythera mechanism, a geared astronomical device recovered from a Roman-era shipwreck, is often described as an isolated wonder — a machine so far ahead of its time that it stands alone in the ancient world. Several lines of evidence complicate that picture. Cicero, writing in the first century BCE, describes geared spheres that modeled the motions of the sun, moon, and planets, attributing such devices to more than one maker. The mechanism's own plates carry engraved instructions, as though intended for an owner who was educated but not the machine's builder. And the confidence of its miniaturized gearwork implies design refined through earlier attempts. Taken together, the evidence suggests that ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "the activity of a pigment gene in maize is determined entirely by the gene's own sequence and is unaffected by the position it occupies on the chromosome."
+   "text": "the Antikythera mechanism was built by the same craftsman whose devices Cicero describes in his writings."
   },
   {
    "id": "B",
-   "text": "in every species of flowering plant, mobile chromosomal elements are the principal mechanism that regulates the expression of pigment genes."
+   "text": "geared astronomical devices were common enough in the ancient Mediterranean that most educated households would have owned one."
   },
   {
    "id": "C",
-   "text": "irregular patches of pigment cannot appear on a maize kernel unless a chromosomal element has relocated at some point during the plant's development."
+   "text": "the mechanism is better understood as a product of an established tradition of astronomical machine-making than as a solitary anomaly."
   },
   {
    "id": "D",
-   "text": "whether a particular pigment gene in maize is active can depend not only on the gene itself but also on what lies near it on the chromosome."
+   "text": "ancient writers exaggerated the sophistication of the geared devices they described, since no other comparable mechanism has been recovered from any ancient Mediterranean site."
   }
  ],
- "correctAnswer": "D",
- "explanation": "The passage establishes two premises. First, McClintock observed pigment patches whose distribution did not fit established inheritance rules. Second, she concluded that chromosomal elements were changing position and, in doing so, switching adjacent pigment genes on or off. The minimum inference these premises force is that gene activity in maize is not fixed by the gene alone: what sits next to a gene on the chromosome can determine whether it is expressed. Choice D captures exactly this measured claim, using 'can depend' rather than 'must depend' and limiting the scope to maize pigment genes — the population the premises actually concern.\n\nThe stem requires the conclusion the premises license, not a consistent-sounding claim that exceeds them."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The premises jointly force only the modest conclusion C draws: the mechanism came out of a craft tradition, not a solitary anomaly.\n\n**The Full Solution:**\n- Each premise chips at the \"isolated wonder\" framing from a different side: Cicero's testimony points to multiple makers of comparable devices; the engraved instructions imply a user distinct from the builder, which presumes devices circulated; and gearwork refined through earlier attempts presumes predecessors.\n- Together they support a tradition of practice — exactly what choice C concludes, and no more.\n\n**Why the other choices are wrong:**\n- A: It leaps to an identification no premise supports.\n- B: It inflates \"more than one maker\" into widespread ownership, far beyond the evidence.\n- D: It reverses the passage's direction, using the mechanism's uniqueness as recovered evidence to discount the very testimony the passage treats as credible."
 }

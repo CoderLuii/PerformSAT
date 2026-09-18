@@ -1,0 +1,51 @@
+{
+  "id": "bank-ps-367",
+  "question": "For each of the two segments of a light-rail run, the table gives the distance traveled and the time elapsed. What was the train's average speed, in miles per hour, for the entire run?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Segment",
+        "Distance (mi)",
+        "Time (min)"
+      ],
+      "rows": [
+        [
+          "1",
+          "8",
+          "10"
+        ],
+        [
+          "2",
+          "22",
+          "20"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$48$"
+    },
+    {
+      "id": "B",
+      "text": "$57$"
+    },
+    {
+      "id": "C",
+      "text": "$60$"
+    },
+    {
+      "id": "D",
+      "text": "$66$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the first segment's speed, $8$ miles in $10$ minutes",
+    "B": "averages the two segment speeds, $\\frac{48 + 66}{2}$, without weighting them by time",
+    "D": "reports the second segment's speed, $22$ miles in $20$ minutes"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Average Rate**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Total distance $= 8 + 22 = 30$ miles in $10 + 20 = 30$ minutes, which is $0.5$ hour, so the average speed is $\\frac{30}{0.5} = 60$.\n\n**The Full Solution:**\nStep 1: Add across the table: total distance $= 8 + 22 = 30$ miles and total time $= 10 + 20 = 30$ minutes.\nStep 2: Convert the time to hours: $30$ minutes $= \\frac{30}{60} = 0.5$ hour.\nStep 3: Average speed $= \\frac{30 \\text{ miles}}{0.5 \\text{ hour}} = 60$ miles per hour. Check: at $60$ miles per hour, $30$ miles takes exactly half an hour. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($48$): reports the first segment's speed, $8$ miles in $10$ minutes\n* Choice B ($57$): averages the two segment speeds, $\\frac{48 + 66}{2}$, without weighting them by time\n* Choice D ($66$): reports the second segment's speed, $22$ miles in $20$ minutes\n\n**Test Day Takeaway:** Convert to the requested unit only once, at the end. Add the raw distances and times first, then divide and convert."
+}

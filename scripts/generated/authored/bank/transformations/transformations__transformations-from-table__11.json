@@ -1,0 +1,30 @@
+{
+ "id": 11,
+ "question": "A vineyard probe reports the soil tension above target, in kilopascals, at position $x$ meters from the row's midpoint, so that $f(-2) = 5$, $f(0) = -1$, and $f(3) = 8$. A second probe reports $h(x) = f(-x) + 2$. Which of the following must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$h(-2) = 7$"
+  },
+  {
+   "id": "B",
+   "text": "$h(2) = 3$"
+  },
+  {
+   "id": "C",
+   "text": "$h(3) = 10$"
+  },
+  {
+   "id": "D",
+   "text": "$h(2) = 7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "pairs the correct output with the un-reflected input",
+  "B": "subtracts the 2 instead of adding it",
+  "C": "reads f(3) directly and skips the sign reversal on the input"
+ },
+ "correctAnswer": "D",
+ "hint": "Only three readings of the first probe are given; the true statement has to use one of them.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~25s):** $h(2) = f(-2) + 2 = 5 + 2 = 7$ kilopascals.\n\n**The Full Solution:**\nStep 1: To evaluate $h$ at an input $x$, the probe reading needed is $f(-x)$.\nStep 2: Choosing $x = 2$ gives $h(2) = f(-2) + 2$, and $f(-2) = 5$ is one of the given readings.\nStep 3: So $h(2) = 5 + 2 = 7$. Check: no other listed reading pairs with a known input, since $h(-2) = f(2) + 2$ and $f(2)$ is not given ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($h(-2) = 7$): pairing the correct output with the un-reflected input; $h(-2)$ needs $f(2)$, which is not given.\n* Choice B ($h(2) = 3$): subtracting the $2$ instead of adding it, giving $5 - 2$.\n* Choice C ($h(3) = 10$): reading $f(3) = 8$ directly and skipping the sign reversal; $h(3)$ needs $f(-3)$.\n\n**Test Day Takeaway:** With $f(-x)$, first ask which input makes $-x$ a value you were actually given."
+}

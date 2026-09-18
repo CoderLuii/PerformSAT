@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-204",
+  "question": "A copy center charges a flat fee of $\\$12$ for each order plus $\\$0.06$ for each page printed. Which type of function best models the total charge for an order as a function of the number of pages printed?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Decreasing exponential"
+    },
+    {
+      "id": "B",
+      "text": "Decreasing linear"
+    },
+    {
+      "id": "C",
+      "text": "Increasing exponential"
+    },
+    {
+      "id": "D",
+      "text": "Increasing linear"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the charge rises with each page, and the change is not a constant percent",
+    "B": "the charge rises rather than falls",
+    "C": "treats a fixed charge per page as a constant percent increase"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Classify Physical Motion Model**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Each page adds the same $\\$0.06$, so the total rises by a constant amount per page — increasing linear.\n\n**The Full Solution:**\nStep 1: Let $p$ be the number of pages. The total charge is $12 + 0.06p$ dollars.\nStep 2: A function of the form $mx + b$ is linear, and here $m = 0.06 > 0$, so the total charge increases.\nStep 3: The charge is therefore modeled by an increasing linear function. Check: $100$ pages cost $\\$18$ and $200$ pages cost $\\$24$ — each extra $100$ pages adds the same $\\$6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (decreasing exponential): would require the total to fall toward a floor as pages are added.\n* Choice B (decreasing linear): the constant $\\$0.06$ per page is added, not subtracted.\n* Choice C (increasing exponential): would require each page to multiply the total by a fixed factor, so page $200$ would cost far more than page $2$.\n\n**Test Day Takeaway:** Constant amount per unit means linear; constant PERCENT per unit means exponential."
+}

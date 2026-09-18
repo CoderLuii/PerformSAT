@@ -1,0 +1,46 @@
+{
+ "id": "bank-geo-030",
+ "question": "In right triangle $DEF$, the right angle is at $E$. The length of $\\overline{DE}$ is $9$ and the length of $\\overline{DF}$ is $41$. What is the value of $\\cos(D)$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "D",
+    "E",
+    "F"
+   ],
+   "sideLabels": [
+    "9",
+    "",
+    "41"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{9}{41}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{9}{40}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{40}{41}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{41}{9}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses the other leg 40 in place of the hypotenuse",
+  "C": "gives the sine of D",
+  "D": "inverts the ratio"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Cosine in a Right Triangle**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Angle $D$ has adjacent leg $\\overline{DE} = 9$ and hypotenuse $\\overline{DF} = 41$, so $\\cos(D) = \\frac{9}{41}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $E$, so the hypotenuse is the side opposite $E$, namely $\\overline{DF} = 41$.\nStep 2: CAH means cosine equals the adjacent side over the hypotenuse. The leg adjacent to angle $D$ is $\\overline{DE} = 9$.\nStep 3: $\\cos(D) = \\frac{9}{41}$, already in lowest terms.\n\nVerification: the third side is $\\sqrt{41^2 - 9^2} = \\sqrt{1600} = 40$, and $\\left(\\frac{9}{41}\\right)^2 + \\left(\\frac{40}{41}\\right)^2 = \\frac{81 + 1600}{1681} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{9}{40}$): divides the adjacent leg by the other leg $40$ instead of by the hypotenuse; that ratio is $\\frac{1}{\\tan(D)}$, not a cosine.\n* Choice C ($\\frac{40}{41}$): uses the opposite leg over the hypotenuse, which is $\\sin(D)$.\n* Choice D ($\\frac{41}{9}$): inverts the ratio; a cosine of an acute angle can never exceed $1$.\n\n**Test Day Takeaway:** Find the hypotenuse first by locating the right angle, then label the remaining legs as opposite or adjacent to the angle named in the question."
+}

@@ -1,0 +1,25 @@
+{
+ "id": "bank-alg-251",
+ "question": "The table gives the price per flask, in dollars, for each of two capacities of laboratory flask. A laboratory ordered a total of $20$ flasks of these two capacities for a total price of $\\$252$. How many $500$-milliliter flasks did the laboratory order?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Flask capacity",
+    "Price per flask (dollars)"
+   ],
+   "rows": [
+    [
+     "250 mL",
+     "9"
+    ],
+    [
+     "500 mL",
+     "15"
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "12",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~20s):** If all $20$ flasks were the $250$-mL size the order would cost $\\$180$. The extra $\\$72$ comes from upgrades that each add $\\$6$, so $72 \\div 6 = 12$ flasks are the $500$-mL size.\n\n**The Full Solution:**\nStep 1: Let $a$ be the number of $250$-mL flasks and $b$ the number of $500$-mL flasks. Then $a + b = 20$ and $9a + 15b = 252$.\nStep 2: Substitute $a = 20 - b$: $9(20 - b) + 15b = 252$, so $180 + 6b = 252$ and $b = 12$.\nStep 3: Then $a = 8$. Check: $9(8) + 15(12) = 72 + 180 = 252$. $\\checkmark$\n\n**Common Mistakes:** Reporting $8$, the number of $250$-mL flasks, or dividing $252$ by $15$ and rounding, which assumes every flask is the larger size.\n\n**Test Day Takeaway:** Read the prices from the table into a value equation, pair it with the count equation, and substitute."
+}

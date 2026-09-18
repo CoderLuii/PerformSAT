@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-036",
+ "question": "A spectrometer's drift over one run is the line through $(6, 19)$ and $(14, 9)$. Written as a decimal, what is the slope of a line at a right angle to the drift line?",
+ "correctAnswer": "0.8",
+ "explanation": "**SAT Pattern: Perpendicular Slope as Decimal**\n\n**The correct answer is $0.8$.**\n\n**The Fast Way (~25s):** The drift line has slope $-1.25$, so the perpendicular slope is $0.8$.\n\n**The Full Solution:**\nStep 1: The drift line joins $(6, 19)$ and $(14, 9)$, so its slope is $\\frac{9 - 19}{14 - 6} = \\frac{-10}{8} = -1.25$.\nStep 2: A right angle requires the negative reciprocal, which is $\\frac{8}{10}$ with the sign made positive.\nStep 3: That value is $0.8$. Check: $-1.25 \\times 0.8 = -1$.\n\n**Common Mistakes:**\n* Reporting $-1.25$ gives the drift line's own slope rather than the perpendicular one.\n* Reporting $-0.8$ inverts the slope but leaves the sign negative.\n* Reversing rise and run makes the drift slope $-0.8$ and the answer $1.25$.\n\n**Test Day Takeaway:** Convert to a decimal only at the end; inverting $-\\frac{10}{8}$ is cleaner than inverting $-1.25$."
+}

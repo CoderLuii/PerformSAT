@@ -1,31 +1,31 @@
 {
-  "id": 1242,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 2,
-  "passage": "Public-health researchers studying antibiotic resistance distinguish between two ways resistant bacteria can spread. One is direct: a person takes antibiotics, resistant strains in their body are favored, and those strains pass to others. The other is environmental: antibiotics used in large quantities in livestock farming enter soil and water, where they exert selective pressure on bacteria that never inhabited a human body but can later transfer resistance genes to bacteria that do. Surveys have found resistance genes in waterways far from any clinic, downstream of agricultural operations. Researchers who emphasize this second pathway argue that a strategy for slowing resistance that focuses only on how doctors prescribe antibiotics to patients ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "will almost certainly succeed on its own, because the antibiotics used in livestock farming have no measurable effect on the bacteria that ultimately infect humans."
-    },
-    {
-      "id": "B",
-      "text": "risks leaving a major source of selective pressure unaddressed, since resistance can also build in the environment through agricultural antibiotic use."
-    },
-    {
-      "id": "C",
-      "text": "addresses the only pathway by which resistant bacteria are presently known to reach the human populations that public-health agencies monitor."
-    },
-    {
-      "id": "D",
-      "text": "should be abandoned outright, since the way doctors prescribe antibiotics plays no real role at all in the spread of resistance among patients."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The researchers describe a second, environmental pathway in which agricultural antibiotic use breeds resistance outside any clinic, so a strategy aimed only at prescribing would miss that source of selective pressure. B draws exactly that inference. A and C deny the environmental pathway the passage documents, with A claiming farm antibiotics have no effect and C calling prescribing the only route. D overcorrects in the opposite direction, dismissing the prescribing pathway, which the passage treats as one of two real routes."
+ "id": 1242,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 2,
+ "passage": "Biologists tracking the decline of wild rice describe two separate pressures on the plant. One operates through water levels: manoomin germinates on lake bottoms in spring and needs shallow water that recedes gradually as the plant grows, so dams that hold lakes at a fixed height can keep seedlings submerged past the point of survival. The other operates through water chemistry: sulfate washing in from disturbed watersheds is converted in lake sediments to sulfide, which damages the plant's roots however well the water level suits it. Surveys have in fact documented failing stands on lakes whose levels are close to ideal. Biologists who emphasize this second pressure argue that a restoration plan confined to the management of water levels ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "will succeed wherever the dams in question are removed, because a lake's chemistry rebalances of its own accord once the water's natural seasonal rise and fall has been restored."
+  },
+  {
+   "id": "B",
+   "text": "risks leaving a major cause of the decline untouched, since stands can fail from sulfide in the sediment even where levels suit the plant well."
+  },
+  {
+   "id": "C",
+   "text": "addresses the only pressure on the plant that surveys of failing stands have so far been able to document."
+  },
+  {
+   "id": "D",
+   "text": "should be abandoned, since fixed water levels play no meaningful part in whether wild rice seedlings survive."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage establishes two independent causes of decline and then documents stands failing where water levels are nearly ideal — failures the level-focused plan cannot touch. A plan confined to levels therefore leaves the chemical cause in place, which is B.\n\n**The Full Solution:**\n- Cause one: fixed water levels drown seedlings — addressable by managing levels.\n- Cause two: sulfate-derived sulfide damages roots \"however well the water level suits\" the plant — untouched by any level management.\n- The clincher is the survey evidence: failing stands on lakes with near-ideal levels, which only the chemical pathway explains.\n- So the biologists' criticism of a levels-only plan must be that it misses that second pathway — exactly what B states.\n\n**Why the other choices are wrong:**\n- A: It invents a self-correcting chemistry the passage never mentions, and the sulfate arrives from watersheds, not from dam operations.\n- C: It reverses the survey evidence — the documented failures at ideal levels point to the chemical cause, not the level one.\n- D: It throws out the first pressure entirely, though the passage presents drowned seedlings as one of two real causes."
 }

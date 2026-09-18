@@ -1,0 +1,36 @@
+{
+  "id": 6,
+  "question": "A practice throwing zone $ABC$ and a regulation zone $DEF$ are similar triangles, with sides $AB$ and $DE$ labeled in feet. Zone $ABC$ covers $56$ square feet of turf. How many square feet does zone $DEF$ cover?",
+  "diagram": {
+    "type": "similarTriangles",
+    "params": {
+      "triangle1": {
+        "labels": [
+          "A",
+          "B",
+          "C"
+        ],
+        "sideLabels": [
+          "8",
+          "",
+          ""
+        ]
+      },
+      "triangle2": {
+        "labels": [
+          "D",
+          "E",
+          "F"
+        ],
+        "sideLabels": [
+          "20",
+          "",
+          ""
+        ]
+      },
+      "figureNote": true
+    }
+  },
+  "correctAnswer": "350",
+  "explanation": "**SAT Pattern: Similar Triangles and Area Ratio**\n\n**The correct answer is $350$.**\n\n**The Fast Way (~25s):** The sides are in the ratio $20 : 8 = 2.5$, so the areas are in the ratio $2.5^2 = 6.25$, and $56 \\times 6.25 = 350$.\n\n**The Full Solution:**\nStep 1: Find the scale factor from the labeled corresponding sides: $\\frac{DE}{AB} = \\frac{20}{8} = \\frac{5}{2}$.\nStep 2: For similar figures the ratio of areas is the square of the ratio of corresponding lengths: $\\left(\\frac{5}{2}\\right)^2 = \\frac{25}{4} = 6.25$.\nStep 3: Multiply the known area by that ratio: $56 \\times \\frac{25}{4} = 14 \\times 25 = 350$ square feet. Check the reverse direction: $350 \\div 6.25 = 56$ ✓\n\n**Common Mistakes:**\n* $140$: multiplies the area by the length ratio $2.5$ instead of by its square, giving $56 \\times 2.5 = 140$.\n* $22.4$: divides by $2.5$ instead of multiplying, shrinking the larger zone: $56 \\div 2.5 = 22.4$.\n* $8.96$: uses the correct squared ratio but divides by it, giving $56 \\div 6.25 = 8.96$.\n\n**Test Day Takeaway:** Lengths scale by $k$, areas scale by $k^2$, volumes by $k^3$. Decide which quantity you were given before you multiply, and check that the larger figure ends up with the larger number."
+}

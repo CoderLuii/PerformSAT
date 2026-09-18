@@ -1,0 +1,34 @@
+{
+  "question": "The line shown in the $xy$-plane is the graph of $y = f(x)$, where $f$ gives a turbine's net output, in kilowatts, at a wind speed of $x$ meters per second. The sum $f(a) + f(a + 1)$ equals $10$ for exactly one number $a$. What is that number?",
+  "correctAnswer": "6",
+  "explanation": "**SAT Pattern: Solve for Input from Output**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~45s):** From the graph $f(x) = 2x - 8$, so $f(a) + f(a+1) = 4a - 14$; setting that equal to $10$ gives $a = 6$.\n\n**The Full Solution:**\n\nStep 1: The line passes through $(0, -8)$ and $(4, 0)$, so its slope is $2$ and $f(x) = 2x - 8$.\n\nStep 2: Then $f(a) = 2a - 8$ and $f(a + 1) = 2(a + 1) - 8 = 2a - 6$, so the sum is $4a - 14$.\n\nStep 3: Solve $4a - 14 = 10$: $4a = 24$, so $a = 6$. Check: $f(6) = 4$ and $f(7) = 6$, and $4 + 6 = 10$.\n\n**Common Mistakes:** Reading $f(a) + f(a+1)$ as $f(2a + 1)$ and reporting $4$; forgetting the extra slope step in $f(a+1)$ and solving $4a - 16 = 10$; solving $2a - 8 = 10$ for one term only and reporting $9$.\n\n**Test Day Takeaway:** Get the function's rule off the graph first; then a sum of two outputs is ordinary algebra in one unknown.",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 2,
+      "yIntercept": -8,
+      "xRange": [
+        -2,
+        10
+      ],
+      "yRange": [
+        -10,
+        12
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 4,
+      "gridInterval": 2,
+      "showPoints": [
+        [
+          0,
+          -8
+        ],
+        [
+          4,
+          0
+        ]
+      ]
+    }
+  },
+  "id": "bank-alg-326"
+}

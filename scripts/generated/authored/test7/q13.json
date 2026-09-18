@@ -1,67 +1,57 @@
 {
-  "id": 713,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 1,
-  "passage": "Since 1958, researchers have tracked the wolf and moose populations of Isle Royale, an isolated island in Lake Superior, to study how a top predator regulates its prey. Vucetich and Peterson, who lead the long-running census, hypothesize that periods of unusually low wolf abundance permit moose herds to expand sharply, producing an inverse relationship between the two species' counts in any given year. A student examining their data argues that the 2020 census most clearly bears out this prediction because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Wolf and moose counts recorded in the Isle Royale winter census, selected years (Vucetich and Peterson)",
-    "headers": [
-      "Year",
-      "Wolves",
-      "Moose"
-    ],
-    "rows": [
-      [
-        "1980",
-        "14",
-        "664"
-      ],
-      [
-        "1990",
-        "16",
-        "1,216"
-      ],
-      [
-        "2000",
-        "29",
-        "850"
-      ],
-      [
-        "2010",
-        "19",
-        "510"
-      ],
-      [
-        "2020",
-        "12",
-        "1,876"
-      ]
-    ]
-  },
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "in 2000 the wolf count reached 29, the highest of the years shown, indicating that wolf numbers can rise even as moose decline from prior decades."
-    },
-    {
-      "id": "B",
-      "text": "in 1980 the wolf count of 14 was near the low end of the series and the moose count of 664 was likewise modest, showing both populations falling together."
-    },
-    {
-      "id": "C",
-      "text": "in 2020 the wolf count of 12 was the lowest of the years shown, while the moose count of 1,876 was the highest, illustrating the predicted inverse pairing."
-    },
-    {
-      "id": "D",
-      "text": "in 1990 the wolves and moose were recorded at 16 and 1,216 respectively, a year when both species sustained relatively healthy counts."
-    }
+ "id": 713,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 1,
+ "passage": "Slow-growing boulder corals may take decades to reach the size at which they reproduce, a serious obstacle for reef restoration. In a technique called microfragmentation, restoration teams cut a colony into fragments of a few square centimeters, which heal and then add tissue far faster than an intact colony would. A yearlong trial raised microfragments and conventionally propagated fragments of the same coral species side by side at three nurseries. The team concludes that microfragmentation accelerated growth at every nursery in the trial because ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Mean tissue area added per fragment over one year at three coral nurseries (square centimeters)",
+  "headers": [
+   "Nursery",
+   "Microfragments",
+   "Conventional fragments"
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The student's claim is narrow: the 2020 census in particular shows low wolf abundance paired with high moose abundance. Choice C isolates 2020 and reports both halves of that pattern — 12 wolves, the lowest count in the table, alongside 1,876 moose, the highest — the strongest single-year illustration of the predicted inverse relationship. Choice A cites a different year (2000) and the wolf peak, neither of which is what the claim is about. Choice D reports 1990, a year when both populations were moderate to high and so cannot show an inverse pattern, and Choice B pairs low wolves with low moose in 1980, a co-occurrence that would actually weaken the hypothesis rather than support it."
+  "rows": [
+   [
+    "North Key",
+    "41",
+    "12"
+   ],
+   [
+    "Turtle Bank",
+    "33",
+    "9"
+   ],
+   [
+    "Lagoon Station",
+    "37",
+    "14"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "at North Key, microfragments added 41 square centimeters of tissue, the largest gain recorded for any fragment type at any nursery."
+  },
+  {
+   "id": "B",
+   "text": "microfragments at the three nurseries added a combined 111 square centimeters of tissue over the year of the trial."
+  },
+  {
+   "id": "C",
+   "text": "microfragments outgrew conventional fragments at all three nurseries, adding 33 to 41 square centimeters compared with 9 to 14."
+  },
+  {
+   "id": "D",
+   "text": "conventional fragments at Lagoon Station added more tissue than conventional fragments at either of the other two nurseries."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The claim covers \"every nursery in the trial,\" so the supporting data must compare the two methods at all three sites — and C does, showing microfragments ahead everywhere, 33 to 41 square centimeters against 9 to 14.\n\n**The Full Solution:**\n- The conclusion has two requirements: a comparison between methods, and coverage of all three nurseries.\n- C meets both, pairing the microfragment range (33-41) against the conventional range (9-14) so that even the weakest microfragment result beats the strongest conventional one.\n- That is precisely the all-sites pattern an \"every nursery\" claim needs.\n\n**Why the other choices are wrong:**\n- A: It cites one site's best number with no comparison to conventional fragments at that site or any other.\n- B: It totals only the microfragments, so nothing in it shows the conventional method being outgrown.\n- D: It compares conventional fragments across sites — a comparison within one method, irrelevant to whether microfragmentation accelerated growth."
 }

@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "A machine's total setup time, in minutes, for $x$ parts is given by $g(x) = 8x + 13$. What is the value of $g(6)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$35$"
+    },
+    {
+      "id": "B",
+      "text": "$61$"
+    },
+    {
+      "id": "C",
+      "text": "$110$"
+    },
+    {
+      "id": "D",
+      "text": "$152$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the constant instead of adding it",
+    "C": "multiplies 13 by 8 and adds the input",
+    "D": "adds before multiplying"
+  },
+  "correctAnswer": "B",
+  "hint": "Replace every $x$ in the rule with $6$, then multiply before you add.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~10s):** Substitute $6$ for $x$: $8(6) + 13 = 48 + 13 = 61$.\n\n**The Full Solution:**\nStep 1: The notation $g(6)$ asks for the output of $g$ when the input is $6$, so replace $x$ with $6$ in $g(x) = 8x + 13$.\nStep 2: Multiply first: $8(6) = 48$.\nStep 3: Add the constant: $48 + 13 = 61$. Check by reversing the steps: $61 - 13 = 48$, and $48 \\div 8 = 6$, the input. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($35$): subtracts the constant instead of adding it, giving $48 - 13$.\n* Choice C ($110$): multiplies the constant by $8$ and then adds the input, giving $8(13) + 6$.\n* Choice D ($152$): adds inside the parentheses first, giving $8(6 + 13)$, which ignores order of operations.\n\n**Test Day Takeaway:** $g(6)$ means substitute $6$ for the variable everywhere it appears, then follow order of operations — multiplication before addition."
+}

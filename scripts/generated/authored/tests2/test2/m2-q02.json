@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "A bicycle shop sold $58$ helmets and tire tubes combined in one week and took in $\\$1{,}040$ from these sales. Each helmet sold for $\\$32$ and each tire tube sold for $\\$8$. How many helmets did the shop sell that week?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18$"
+  },
+  {
+   "id": "B",
+   "text": "$24$"
+  },
+  {
+   "id": "C",
+   "text": "$26$"
+  },
+  {
+   "id": "D",
+   "text": "$34$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the leftover money by the helmet price instead of by the price difference: (1040 - 464)/32 = 18",
+  "C": "treats every sale as one helmet paired with one tube, computing 1040/(32 + 8) = 26",
+  "D": "solves the system correctly but reports 34, the number of tire tubes, instead of the number of helmets"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** If all $58$ items were tubes the shop would have taken in $8(58) = 464$ dollars. Each helmet adds $32 - 8 = 24$ dollars, so there are $\\frac{1040 - 464}{24} = 24$ helmets.\n\n**The Full Solution:**\nStep 1: Let $h$ be the number of helmets and $t$ the number of tire tubes. The count gives $h + t = 58$ and the revenue gives $32h + 8t = 1040$.\nStep 2: Substitute $t = 58 - h$ into the revenue equation: $32h + 8(58 - h) = 1040$, so $32h + 464 - 8h = 1040$ and $24h = 576$.\nStep 3: Divide: $h = 24$. Check: $t = 58 - 24 = 34$, and $32(24) + 8(34) = 768 + 272 = 1040$ dollars ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($18$): subtracts the all-tubes revenue correctly but then divides by the helmet price, $\\frac{1040 - 464}{32} = 18$. The leftover money is the *extra* each helmet brings in, so it must be divided by the $\\$24$ difference in price.\n* Choice C ($26$): assumes each sale was a helmet-and-tube pair costing $\\$40$, giving $\\frac{1040}{40} = 26$. Nothing in the problem pairs the two items.\n* Choice D ($34$): the correct value of the *other* variable. Substituting for $h$ instead of $t$ lands on the tube count, so the answer must be checked against the question's wording.\n\n**Test Day Takeaway:** In a count-plus-value system, price every item at the cheaper rate first; the money left over, divided by the difference in price, counts the expensive items directly."
+}

@@ -1,0 +1,51 @@
+{
+  "id": "bank-ps-279",
+  "question": "Two surveys of residents of the same city were conducted at the same time using the same methodology. Each survey estimated the percent of the city's residents who commute by rail. The table gives the estimate and the associated margin of error for each survey. Which of the following statements is best supported by the data in the table?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Survey",
+        "Estimated percent",
+        "Margin of error"
+      ],
+      "rows": [
+        [
+          "Survey 1",
+          "38%",
+          "2%"
+        ],
+        [
+          "Survey 2",
+          "41%",
+          "3%"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The percent of the city's residents who commute by rail increased between the two surveys."
+    },
+    {
+      "id": "B",
+      "text": "Survey 2 produced the more precise estimate, because its estimated percent is greater."
+    },
+    {
+      "id": "C",
+      "text": "Because $41\\%$ is greater than $38\\%$, more than $40\\%$ of the city's residents commute by rail."
+    },
+    {
+      "id": "D",
+      "text": "The intervals of plausible values from the two surveys overlap, so both surveys are consistent with the same percent for the city's residents."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads a change over time into two simultaneous surveys",
+    "B": "confuses a larger estimate with a smaller margin of error",
+    "C": "compares point estimates while ignoring both margins of error"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Confidence Interval Interpretation**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Survey 1 gives $38\\% \\pm 2\\%$, or $36\\%$ to $40\\%$; survey 2 gives $41\\% \\pm 3\\%$, or $38\\%$ to $44\\%$. The intervals share the values from $38\\%$ to $40\\%$, so one percent could produce both estimates.\n\n**The Full Solution:**\nStep 1: Build each interval of plausible values. Survey 1: $38 - 2 = 36$ to $38 + 2 = 40$. Survey 2: $41 - 3 = 38$ to $41 + 3 = 44$.\nStep 2: Compare them. The intervals overlap on $38\\%$ to $40\\%$, so a single population percent in that range is consistent with both surveys.\nStep 3: Check: because the overlap is not empty, the data do not establish that the two surveys are estimating different values, so no claim of a real difference is supported. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the surveys were conducted at the same time, so there is no before and after to compare; a difference of $3$ percentage points between two estimates is not a change over time.\n* Choice B: precision is measured by the margin of error, and survey 2's margin ($3\\%$) is the larger of the two, so survey 2 is the less precise survey.\n* Choice C: this compares $38\\%$ and $41\\%$ as if both were exact. Since $36\\%$ is plausible from survey 1, the data do not establish that the percent exceeds $40\\%$.\n\n**Test Day Takeaway:** Two estimates differ meaningfully only when their intervals of plausible values do not overlap. Compare intervals, never the point estimates alone."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "On an airport survey grid, a taxiway lies along the line $3x + ky = 12$, where $k$ is a constant, and a service road that crosses the taxiway at a right angle has slope $-\\frac{5}{3}$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{9}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{9}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$5$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "takes the negative reciprocal in the wrong direction, solving -3/k = 5/3",
+  "C": "gives the taxiway the same slope as the service road, solving -3/k = -5/3",
+  "D": "reads the taxiway's slope as 3/k, dropping the sign produced by moving 3x across"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The taxiway must have slope $\\frac{3}{5}$, the negative reciprocal of $-\\frac{5}{3}$. Its slope is $-\\frac{3}{k}$, so $-\\frac{3}{k} = \\frac{3}{5}$ and $k = -5$.\n\n**The Full Solution:**\nStep 1: Put the taxiway in slope-intercept form: $ky = -3x + 12$, so $y = -\\frac{3}{k}x + \\frac{12}{k}$ and its slope is $-\\frac{3}{k}$.\nStep 2: Perpendicular slopes multiply to $-1$: $\\left(-\\frac{3}{k}\\right)\\left(-\\frac{5}{3}\\right) = \\frac{5}{k} = -1$.\nStep 3: Solving gives $k = -5$. Check: with $k = -5$ the taxiway is $3x - 5y = 12$, slope $\\frac{3}{5}$, and $\\frac{3}{5} \\cdot \\left(-\\frac{5}{3}\\right) = -1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-\\frac{9}{5}$): this sets $-\\frac{3}{k}$ equal to $\\frac{5}{3}$, flipping the fraction but keeping the wrong sign. That taxiway slope is $\\frac{5}{3}$, parallel in steepness but not perpendicular.\n* Choice C ($\\frac{9}{5}$): this gives the taxiway the same slope, $-\\frac{5}{3}$, as the service road. Two lines with equal slopes are parallel, so they never cross at a right angle.\n* Choice D ($5$): this reads the taxiway's slope as $\\frac{3}{k}$ and solves $\\frac{3}{k} = \\frac{3}{5}$, forgetting that moving $3x$ across makes the slope negative. With $k = 5$ the taxiway is $3x + 5y = 12$, whose slope is $-\\frac{3}{5}$, and $-\\frac{3}{5} \\cdot \\left(-\\frac{5}{3}\\right) = 1$, not $-1$.\n\n**Test Day Takeaway:** Solve for $y$ before reading a slope out of $Ax + By = C$, then apply the negative reciprocal in the right direction — flip the fraction and change the sign, not one or the other."
+}

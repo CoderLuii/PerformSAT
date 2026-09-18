@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A rectangular scaffold platform measures $16$ feet by $12$ feet. A vertical post $21$ feet tall is fixed at one corner of the platform. What is the distance, in feet, from the top of the post to the corner of the platform diagonally opposite the post?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$29$"
+  },
+  {
+   "id": "C",
+   "text": "$41$"
+  },
+  {
+   "id": "D",
+   "text": "$49$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at the platform's diagonal and never brings in the post height",
+  "C": "adds the 20-foot diagonal and the 21-foot post instead of combining them as legs",
+  "D": "adds the three given lengths, 16 + 12 + 21"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The platform's diagonal is $\\sqrt{16^2 + 12^2} = 20$ feet, and that diagonal is perpendicular to the post, so the distance is $\\sqrt{20^2 + 21^2} = \\sqrt{841} = 29$ feet.\n\n**The Full Solution:**\nStep 1: The platform is a rectangle, so its two sides and its diagonal form a right triangle: the diagonal is $\\sqrt{16^2 + 12^2} = \\sqrt{256 + 144} = \\sqrt{400} = 20$ feet.\nStep 2: The post is vertical, so it is perpendicular to the platform and therefore to that diagonal. The post, the diagonal, and the segment from the top of the post to the far corner form a second right triangle with legs $21$ feet and $20$ feet.\nStep 3: The required distance is $\\sqrt{21^2 + 20^2} = \\sqrt{441 + 400} = \\sqrt{841} = 29$ feet. Check: $29^2 = 841$ and $20^2 + 21^2 = 841$, so the triangle with sides $20$, $21$, and $29$ is right. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): this is the platform's own diagonal, the distance between the two corners along the deck, with the $21$-foot climb ignored.\n* Choice C ($41$): this adds $20$ and $21$. Adding the legs always overshoots a hypotenuse, which must be less than their sum.\n* Choice D ($49$): this adds all three given lengths, $16 + 12 + 21$, which measures a path along the edges rather than a straight-line distance.\n\n**Test Day Takeaway:** For a distance across a box-shaped setup, apply the Pythagorean theorem twice — once for the base diagonal, then with the vertical height."
+}

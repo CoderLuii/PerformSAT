@@ -1,0 +1,6 @@
+{
+  "id": 12,
+  "question": "A supplier prints rectangular price tags whose length is $2.5$ times their width. One tag covers $40$ square centimeters of a shelf strip. How many centimeters wide is a tag?",
+  "correctAnswer": "4",
+  "explanation": "**SAT Pattern: Rectangle Area**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~20s):** Area $=w(2.5w)=2.5w^2=40$, so $w^2=16$ and $w=4$ centimeters.\n\n**The Full Solution:**\nStep 1: Let $w$ be the width in centimeters. The length is $2.5w$, so the area is $w(2.5w)=2.5w^2$.\nStep 2: Set the area equal to the given value: $2.5w^2=40$, so $w^2=\\dfrac{40}{2.5}=16$.\nStep 3: Since a width must be positive, $w=\\sqrt{16}=4$ centimeters. Check: the length is $2.5(4)=10$, and $4(10)=40$ square centimeters ✓\n\n**Common Mistakes:**\n* $10$: solves correctly but reports the length $2.5w$ instead of the width.\n* $16$: stops at $w^2=16$ without taking the square root.\n* $6.32$: computes $\\sqrt{40}$, treating the tag as a square and ignoring the $2.5$ ratio.\n\n**Test Day Takeaway:** When one dimension is a multiple of the other, write both in terms of a single variable before setting the area equation — the square root at the end is the step most often skipped."
+}

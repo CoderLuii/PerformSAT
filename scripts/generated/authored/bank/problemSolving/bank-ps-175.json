@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-175",
+  "question": "A shipment contains $48$ light bulbs, of which $30$ are LED bulbs and the rest are halogen bulbs. If one bulb is selected at random, what is the probability that it is a halogen bulb?",
+  "correctAnswer": "3/8",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**The correct answer is $\\frac{3}{8}$.**\n\n**The Fast Way (~10s):** Halogen bulbs: $48 - 30 = 18$. Probability $= \\frac{18}{48} = \\frac{3}{8}$.\n\n**The Full Solution:**\nStep 1: Find the favorable count: $48 - 30 = 18$ halogen bulbs.\nStep 2: The total is $48$ bulbs.\nStep 3: Probability $= \\frac{18}{48}$; divide numerator and denominator by $6$ to get $\\frac{3}{8}$, or $0.375$. Check: $\\frac{3}{8}$ of $48$ is $18$. $\\checkmark$\n\n**Common Mistakes:** Answering the LED probability, $\\frac{30}{48} = \\frac{5}{8}$; dividing by the LED count, $\\frac{18}{30} = \\frac{3}{5}$; leaving the fraction as $\\frac{18}{48}$ is accepted, but $\\frac{30}{18}$ (inverted) is not a probability.\n\n**Test Day Takeaway:** \"The rest\" means subtract from the total first; the denominator is always the whole group."
+}

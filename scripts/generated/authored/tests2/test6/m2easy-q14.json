@@ -1,0 +1,29 @@
+{
+  "id": 14,
+  "question": "An offshore buoy flags any wind reading $w$, in knots, that satisfies $|2w - 48| = 18$ during a squall calibration test. What is the lesser of the two wind speeds that the buoy flags?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$33$"
+    },
+    {
+      "id": "C",
+      "text": "$48$"
+    },
+    {
+      "id": "D",
+      "text": "$66$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "solves the positive case only and reports the greater speed, 33",
+    "C": "reports the sum of the two flagged speeds, 15 + 33 = 48",
+    "D": "solves 2w = 66 but forgets to divide by 2"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $2w - 48 = \\pm 18$ gives $2w = 66$ or $2w = 30$, so $w = 33$ or $w = 15$. The lesser is $15$.\n\n**The Full Solution:**\nStep 1: An absolute value equals $18$ when the inside equals $18$ or $-18$, so split into $2w - 48 = 18$ and $2w - 48 = -18$.\nStep 2: Solve each. Adding $48$ gives $2w = 66$ and $2w = 30$, so $w = 33$ and $w = 15$.\nStep 3: The question asks for the lesser flagged speed, which is $15$ knots. Check: $|2(15) - 48| = |30 - 48| = 18$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($33$): solves only the positive case and reports the greater of the two speeds, the opposite of what the question asks.\n* Choice C ($48$): reports the sum $15 + 33 = 48$, which is also the constant already sitting inside the absolute value.\n* Choice D ($66$): stops at $2w = 66$ and never divides by $2$, reporting twice the greater speed.\n\n**Test Day Takeaway:** Every absolute value equation splits into two linear equations. Solve both, then reread the question to see which of the two roots it actually wants."
+}

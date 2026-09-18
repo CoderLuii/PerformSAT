@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 2,
-  "passage": "Certain soil fungi in the genus Trichoderma grow alongside crop roots and attack the molds that cause seedlings to rot. Farmers can apply the fungi as a coating on seeds before planting, letting the helpful species establish itself in the root zone first. Because these fungi suppress the pathogens on their own, growers who use them can ______ their reliance on chemical fungicides without leaving the young plants defenseless.",
+  "passage": "Steller's sea cow grazed on kelp in the shallowest water along the shore, and its buoyant body could not fully submerge. Because the animals could neither dive out of reach nor swim quickly away, hunting parties found them easy to ______, and crews provisioning their ships in the Bering Sea took the slow-breeding animals faster than the small population could replace them.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
-    {
-      "id": "A",
-      "text": "magnify"
-    },
-    {
-      "id": "B",
-      "text": "curtail"
-    },
-    {
-      "id": "C",
-      "text": "justify"
-    },
-    {
-      "id": "D",
-      "text": "predict"
-    }
+    { "id": "A", "text": "overlook" },
+    { "id": "B", "text": "approach" },
+    { "id": "C", "text": "domesticate" },
+    { "id": "D", "text": "describe" }
   ],
   "correctAnswer": "B",
-  "explanation": "The passage explains that Trichoderma fungi fight off the molds that would otherwise harm the crop, which means growers need less chemical protection. The blank calls for a verb meaning to cut back, and \"curtail,\" choice B, captures that reduction. \"Magnify\" reverses the relationship, while \"justify\" and \"predict\" say nothing about lessening the use of fungicides.",
-  "_meta": {
-    "anchor": "Trichoderma biocontrol fungi in agriculture"
-  }
+  "explanation": "**Choice B is correct.** The \"Because\" clause supplies the cause — the animals could not dive or flee — and the blank must name the effect that follows for hunters: the sea cows were easy to \"approach.\"\n\n**The Full Solution:**\n- The logic is causal: an animal that cannot escape is an animal a hunting party can get close to.\n- The rest of the sentence confirms the hunting context — crews \"took\" the animals for provisions — so the blank describes the step that made the killing easy.\n\n**Why the other choices are wrong:**\n- A: \"Overlook\" means to fail to notice, which would make the animals harder to hunt, not easier — the causal chain collapses.\n- C: Nothing in the passage involves taming; the crews wanted provisions, not livestock.\n- D: Ease of description has no connection to the inability to dive or flee, and the sentence's consequence is depletion, not documentation."
 }

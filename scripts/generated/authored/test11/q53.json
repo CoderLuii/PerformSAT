@@ -1,44 +1,49 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "In Data Feminism (2020), D'Ignazio and Klein, scholars of data science and digital humanities, survey a body of recent work on data analysis and visualization."
-    },
-    {
-      "id": "B",
-      "text": "D'Ignazio and Klein and conventional accounts of data work agree that objectivity and the suppression of the analyst's own perspective are what guarantee rigor in data analysis."
-    },
-    {
-      "id": "C",
-      "text": "D'Ignazio and Klein propose that disclosing the perspective behind data collection and analysis strengthens analytical rigor rather than weakening it, as is sometimes assumed."
-    },
-    {
-      "id": "D",
-      "text": "Whereas conventional accounts of data work prize the suppression of the analyst's perspective, D'Ignazio and Klein argue that default choices carry the designers' hidden assumptions, so disclosing perspective strengthens rather than weakens rigor."
-    }
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Campbell, a homesteader in South Dakota, eventually became the era's best-known and most widely read promoter of dry farming."
+  },
+  {
+   "id": "B",
+   "text": "Agronomists at government experiment stations ran multiyear trials of dry-farming methods at sites across the Great Plains."
+  },
+  {
+   "id": "C",
+   "text": "Campbell's manuals taught that deep plowing and a packed subsurface, maintained with special tools, would store rainfall in the soil."
+  },
+  {
+   "id": "D",
+   "text": "Campbell claimed his methods could store rainfall indefinitely and make crops reliable in nearly any dry region, but the experiment stations reported that no tillage method stored more than a fraction of a season's rain."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** A point of disagreement requires both parties on the page, saying incompatible things — and D delivers the collision: Campbell's indefinite-storage promise set directly against the stations' fraction-of-a-season finding.\n\n**The Full Solution:**\n- The goal names two sides: Campbell and the experiment stations.\n- The notes give each side a claim about the same question — how much rainfall tillage can store — and the claims cannot both be true.\n- D pairs those claims in one sentence with an adversative \"but,\" which is precisely how a disagreement is emphasized.\n\n**Why the other choices are wrong:**\n- A: It introduces Campbell's fame and says nothing of what anyone disputed.\n- B: It describes the stations' method — trials — without their findings or Campbell's opposing claim.\n- C: It presents Campbell's teaching alone; with no answering position, no disagreement appears.",
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Hardy Webster Campbell was a South Dakota homesteader who became the era's best-known promoter of dry farming.",
+   "His manuals taught that deep plowing and a packed subsurface, maintained with special tools, would store rainfall in the soil indefinitely.",
+   "He claimed his methods could make crops reliable in nearly any dry region.",
+   "Agronomists at government experiment stations ran multiyear trials of dry-farming methods across the Great Plains.",
+   "The stations reported that no tillage method stored more than a fraction of a season's rainfall and that Campbell's system failed in the driest years."
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The goal is to highlight a disagreement, and Choice D states both sides of it: conventional accounts prize the suppression of perspective, while D'Ignazio and Klein hold that default choices carry hidden assumptions and that disclosing perspective strengthens rigor. Choice A merely introduces the authors and the book; Choice B says the two sides agree, which inverts the disagreement; and Choice C gives only D'Ignazio and Klein's side without naming the conventional view it opposes.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Catherine D'Ignazio and Lauren Klein study data science and digital humanities.",
-      "In Data Feminism (2020), they survey recent work on data analysis and visualization.",
-      "Conventional accounts of data work prize objectivity and the suppression of the analyst's own perspective.",
-      "D'Ignazio and Klein argue that treating default choices as having no perspective hides the assumptions built into them by the people who designed the systems.",
-      "They propose that disclosing the perspective behind data collection and analysis strengthens rather than weakens analytical rigor."
-    ],
-    "goal": "The student wants to highlight a point of disagreement between D'Ignazio and Klein and conventional accounts of data work."
-  },
-  "_meta": {
-    "anchor": "Catherine D'Ignazio and Lauren Klein, Data Feminism (2020)"
-  },
-  "id": 1153,
-  "module": 2
+  "goal": "The student wants to emphasize a point of disagreement between Campbell and the experiment stations."
+ },
+ "_meta": {
+  "anchor": "dry farming techniques — Hardy Webster Campbell's promises vs. experiment-station trials",
+  "distractors": {
+   "A": "fame without dispute",
+   "B": "method without findings",
+   "C": "one side only"
+  }
+ },
+ "id": 1153,
+ "module": 2
 }

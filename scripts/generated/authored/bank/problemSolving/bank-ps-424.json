@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-424",
+  "question": "On a scale drawing of a pedestrian bridge, a length of $3$ centimeters represents an actual length of $8$ meters. What actual length, in meters, is represented by a length of $12$ centimeters on the drawing?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$4.5$"
+    },
+    {
+      "id": "C",
+      "text": "$32$"
+    },
+    {
+      "id": "D",
+      "text": "$96$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "sets up the proportion with the corresponding quantities crossed, solving $\\frac{12}{8}=\\frac{3}{x}$.",
+    "B": "multiplies by $\\frac{3}{8}$ instead of $\\frac{8}{3}$, inverting the scale.",
+    "D": "multiplies $12\\times 8$, as if $1$ centimeter represented $8$ meters."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Proportion Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** $12$ centimeters is $4$ times $3$ centimeters, so the actual length is $4\\times 8=32$ meters.\n\n**The Full Solution:**\nStep 1: Write the proportion with matching units in matching positions: $\\frac{3\\text{ cm}}{8\\text{ m}}=\\frac{12\\text{ cm}}{x\\text{ m}}$.\nStep 2: Cross multiply: $3x=8(12)=96$.\nStep 3: $x=\\frac{96}{3}=32$ meters. Check: $\\frac{12}{32}=\\frac{3}{8}$, the same ratio. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): crosses the quantities, solving $\\frac{12}{8}=\\frac{3}{x}$.\n* Choice B ($4.5$): multiplies $12$ by $\\frac{3}{8}$, using the scale upside down and shrinking instead of enlarging.\n* Choice D ($96$): multiplies $12\\times 8$, treating $8$ meters as the length represented by $1$ centimeter.\n\n**Test Day Takeaway:** Set the proportion up with like units stacked on like units. A drawing length longer than the given one must produce an actual length longer than the given one."
+}

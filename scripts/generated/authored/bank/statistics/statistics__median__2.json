@@ -1,0 +1,59 @@
+{
+  "id": 2,
+  "question": "The table gives the height, in centimeters, of each of $8$ saplings in a nursery plot. What is the median height, in centimeters, of the saplings?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Sapling",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "rows": [
+        [
+          "Height (cm)",
+          "34",
+          "41",
+          "28",
+          "37",
+          "45",
+          "30",
+          "39",
+          "44"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$37$"
+    },
+    {
+      "id": "B",
+      "text": "$37.25$"
+    },
+    {
+      "id": "C",
+      "text": "$38$"
+    },
+    {
+      "id": "D",
+      "text": "$41$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports only the lower of the two middle values instead of averaging them.",
+    "B": "computes the mean of the eight heights, $\\frac{298}{8}$, rather than the median.",
+    "D": "averages the fourth and fifth entries as the table lists them, $\\frac{37 + 45}{2}$, without ordering first."
+  },
+  "correctAnswer": "C",
+  "hint": "With an even number of values, two of them sit in the middle after ordering.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** Ordered, the middle two heights are $37$ and $39$, so the median is $\\frac{37 + 39}{2} = 38$.\n\n**The Full Solution:**\nStep 1: Order the heights: $28,\\ 30,\\ 34,\\ 37,\\ 39,\\ 41,\\ 44,\\ 45$.\nStep 2: With an even count of $8$ values, the median is the average of the fourth and fifth ordered values, $37$ and $39$.\nStep 3: Median $= \\frac{37 + 39}{2} = 38$ centimeters. Check: exactly four heights lie below $38$ and four lie above it. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($37$): reports only the lower of the two middle values instead of averaging them.\n* Choice B ($37.25$): computes the mean of the eight heights, $\\frac{298}{8}$, rather than the median.\n* Choice D ($41$): averages the fourth and fifth entries as the table lists them, $\\frac{37 + 45}{2}$, without ordering first.\n\n**Test Day Takeaway:** For an even count the median is the average of the two middle ordered values, so it need not be one of the listed values."
+}

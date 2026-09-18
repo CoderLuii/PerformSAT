@@ -1,0 +1,29 @@
+{
+  "id": 20,
+  "question": "A copy shop's charge for $x$ copies can be written as $\\frac{a}{3}(6x - 9) + 5$ dollars and also as $4x + b$ dollars, where $a$ and $b$ are constants and $x$ is the number of copies. The two forms give the same charge for every value of $x$. What is the value of $a + b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-4$"
+    },
+    {
+      "id": "B",
+      "text": "$-2$"
+    },
+    {
+      "id": "C",
+      "text": "$1$"
+    },
+    {
+      "id": "D",
+      "text": "$13$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "drops the +5 when matching constants, taking b = -3a = -6 so that a + b = -4",
+    "B": "fails to multiply the -9 by a/3, taking the constant term as -9 + 5 = -4 so that a + b = -2",
+    "D": "mishandles the sign of (a/3)(-9), taking b = 3a + 5 = 11 so that a + b = 13"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Expanding gives $2ax-3a+5$; matching $2a=4$ gives $a=2$, so $b=-3(2)+5=-1$ and $a+b=1$.\n\n**The Full Solution:**\nStep 1: Distribute: $\\dfrac{a}{3}(6x-9)+5=\\dfrac{6a}{3}x-\\dfrac{9a}{3}+5=2ax-3a+5$.\nStep 2: Two expressions equal for every $x$ must have identical coefficients. Matching the $x$-terms: $2a=4$, so $a=2$.\nStep 3: Matching the constant terms: $b=-3a+5=-3(2)+5=-1$, so $a+b=2+(-1)=1$. Check: with $a=2$ the first form is $\\frac{2}{3}(6x-9)+5=4x-6+5=4x-1$, which matches $4x+b$ when $b=-1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-4$): forgets the $+5$ sitting outside the parentheses, taking $b=-3a=-6$ and $2+(-6)=-4$.\n* Choice B ($-2$): distributes $\\frac{a}{3}$ to the $6x$ but not to the $-9$, so the constant becomes $-9+5=-4$ and $2+(-4)=-2$.\n* Choice D ($13$): drops the negative on $\\frac{a}{3}(-9)$, taking $b=3a+5=11$ and $2+11=13$.\n\n**Test Day Takeaway:** “Same value for every $x$” means expand fully, then set $x$-coefficients equal and constants equal separately — the constant match is where the distributed sign gets lost."
+}

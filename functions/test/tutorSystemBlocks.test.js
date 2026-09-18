@@ -134,7 +134,8 @@ test("toAnthropicSystem maps text blocks and places cache_control", () => {
     {text: "volatile"},
   ]);
   assert.deepStrictEqual(out, [
-    {type: "text", text: "persona", cache_control: {type: "ephemeral"}},
+    {type: "text", text: "persona",
+      cache_control: {type: "ephemeral", ttl: "1h"}},
     {type: "text", text: "volatile"},
   ]);
 });
@@ -152,7 +153,8 @@ test("end-to-end: validate then map produces sanitized Anthropic system", () => 
   ]);
   const mapped = toAnthropicSystem(validated);
   assert.deepStrictEqual(mapped, [
-    {type: "text", text: "stable", cache_control: {type: "ephemeral"}},
+    {type: "text", text: "stable",
+      cache_control: {type: "ephemeral", ttl: "1h"}},
     {type: "text", text: "changes"},
   ]);
 });
@@ -161,14 +163,16 @@ test("end-to-end: validate then map produces sanitized Anthropic system", () => 
 
 test("appends the operating constraint as the LAST block", () => {
   const out = withOperatingConstraint([
-    {type: "text", text: "persona", cache_control: {type: "ephemeral"}},
+    {type: "text", text: "persona",
+      cache_control: {type: "ephemeral", ttl: "1h"}},
     {type: "text", text: "volatile framing"},
   ]);
   assert.strictEqual(out.length, 3);
   assert.strictEqual(out[out.length - 1].text, TUTOR_OPERATING_CONSTRAINT);
   // Client-cached persona prefix is untouched (cache prefix unchanged).
   assert.deepStrictEqual(out[0], {
-    type: "text", text: "persona", cache_control: {type: "ephemeral"},
+    type: "text", text: "persona",
+    cache_control: {type: "ephemeral", ttl: "1h"},
   });
   // The constraint itself is uncached (tiny, static suffix).
   assert.strictEqual(out[2].cache_control, undefined);
@@ -178,7 +182,7 @@ test("legacy string system keeps ephemeral caching, then the constraint", () => 
   const out = withOperatingConstraint("legacy persona string");
   assert.deepStrictEqual(out, [
     {type: "text", text: "legacy persona string",
-      cache_control: {type: "ephemeral"}},
+      cache_control: {type: "ephemeral", ttl: "1h"}},
     {type: "text", text: TUTOR_OPERATING_CONSTRAINT},
   ]);
 });

@@ -1,0 +1,66 @@
+{
+ "id": "bank-ps-107",
+ "question": "The table summarizes the results of a study of $450$ grapevines by treatment group and by mildew status at the end of the season. Based on the table, which of the following statements is true?",
+ "diagram": {
+  "type": "twoWayTable",
+  "params": {
+   "headers": [
+    "",
+    "Infected",
+    "Not infected",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Control",
+     "72",
+     "78",
+     "150"
+    ],
+    [
+     "Treatment A",
+     "45",
+     "105",
+     "150"
+    ],
+    [
+     "Treatment B",
+     "27",
+     "123",
+     "150"
+    ],
+    [
+     "Total",
+     "144",
+     "306",
+     "450"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The probability that a vine is infected, given that it received treatment A, is greater than the probability that a vine is infected, given that it received treatment B."
+  },
+  {
+   "id": "B",
+   "text": "The probability that a vine received treatment A, given that it is infected, is less than the probability that it received treatment B, given that it is infected."
+  },
+  {
+   "id": "C",
+   "text": "The probability that a vine is not infected, given that it was in the control group, is greater than $0.60$."
+  },
+  {
+   "id": "D",
+   "text": "The probability that a vine is infected, given that it was in the control group, is less than the probability that a vine is infected, given that it received treatment A."
+  }
+ ],
+ "distractorNotes": {
+  "B": "reverses the condition: 45/144 is in fact greater than 27/144",
+  "C": "uses the overall not-infected rate 306/450 = 0.68 instead of the control row's 78/150 = 0.52",
+  "D": "assumes the control group has the lowest infection rate, but 72/150 = 0.48 exceeds 45/150 = 0.30"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice A is correct.**\n\n**The Fast Way (~45s):** Each treatment row totals $150$, so compare the infected counts directly: $\\dfrac{45}{150} = 0.30$ for treatment A exceeds $\\dfrac{27}{150} = 0.18$ for treatment B.\n\n**The Full Solution:**\nStep 1: Conditioning on a treatment group means dividing that row's infected count by that row's total.\nStep 2: For treatment A the probability is $\\dfrac{45}{150} = 0.30$; for treatment B it is $\\dfrac{27}{150} = 0.18$.\nStep 3: Since $0.30>0.18$, the statement in choice A is true.\nCheck: both treatment rows have the same total, $150$, so the larger infected count gives the larger probability. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: This conditions on \"infected\" instead of on the treatment. Both probabilities share the denominator $144$, and $\\dfrac{45}{144} > \\dfrac{27}{144}$, so the inequality runs the other way.\n* Choice C: The control row gives $\\dfrac{78}{150} = 0.52$, not more than $0.60$; the value $\\dfrac{306}{450} = 0.68$ comes from the whole study, not from the control group.\n* Choice D: The control group has the highest infection rate, $\\dfrac{72}{150} = 0.48$, which is greater than treatment A's $0.30$, not less.\n\n**Test Day Takeaway:** \"Given that it received treatment\" divides by a row total; \"given that it is infected\" divides by a column total — swapping them reverses the comparison."
+}

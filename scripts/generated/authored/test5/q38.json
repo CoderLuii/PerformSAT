@@ -1,34 +1,34 @@
 {
-  "id": 538,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "Tone languages, in which pitch distinguishes word meanings, are sometimes assumed to be an exotic and stable feature that a language either has from the start or never develops at all. Historical linguists have complicated that picture. Studying languages of Southeast Asia, they have reconstructed cases in which tones arose gradually: when certain consonants at the edges of syllables were lost, the small pitch differences those consonants had incidentally produced were left behind as the only thing distinguishing one word from another, and speakers came to treat pitch itself as meaningful. On this account, tone is not a fixed inheritance but something a language can acquire over time as a byproduct of other sound changes—a process linguists call tonogenesis.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "In any tone language, the particular pitch on which a given syllable is spoken can by itself serve to distinguish one word from an otherwise identical one."
-    },
-    {
-      "id": "B",
-      "text": "Several languages of Southeast Asia have, over their histories, lost many of the consonants that once stood at the edges of their syllables."
-    },
-    {
-      "id": "C",
-      "text": "A language either possesses tone from the very moment of its origin or else never develops the feature over its entire history."
-    },
-    {
-      "id": "D",
-      "text": "Historical study shows that tone can develop gradually in a language as a byproduct of other sound changes, rather than being a fixed inheritance."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage sets up a common assumption—that a language either has tone or never gets it—and then overturns it by reconstructing how tones can arise gradually from the loss of consonants, a process called tonogenesis. The main idea is that tone can develop over time rather than being fixed from the start. Choice A gives a background definition of tone. Choice B reports one mechanism in the story as if it were the point. Choice C states the very assumption the passage is correcting.",
-  "_meta": {
-    "anchor": "Tonogenesis; tone can arise from lost consonants rather than being a fixed inheritance"
+ "id": 538,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "Predicting the tide at a given port means summing dozens of overlapping astronomical cycles, each contributing its own rhythm to the water's rise and fall — a calculation so laborious that doing it by hand for a single year of tides could consume weeks. In the 1870s a British physicist designed a machine that performed the summation bodily: each of its pulleys oscillated with the amplitude and period of one tidal constituent, and a single wire threading them all added the motions together, driving a pen that drew a year's tide curve in a matter of hours. Refined successors of the device computed the official tide tables of several nations well into the era of electronic computing.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Tide tables became unnecessary once the machine could draw a year's tide curve in hours."
+  },
+  {
+   "id": "B",
+   "text": "The machine proved too delicate and too laborious to maintain for routine use, and the government agencies that had adopted it soon set it aside."
+  },
+  {
+   "id": "C",
+   "text": "The machine's designer was the first scientist to recognize that the tides follow overlapping astronomical cycles."
+  },
+  {
+   "id": "D",
+   "text": "A mechanical device that physically summed tidal cycles turned a weeks-long calculation into a matter of hours and served official tide prediction for decades."
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The text's through-line is the machine's achievement: it embodied the laborious summation in pulleys and wire, collapsed weeks of hand calculation into hours, and its successors produced national tide tables into the electronic era.\n\n**The Full Solution:**\n- The first sentence sets up the problem: summing dozens of cycles by hand could take weeks per year of tides.\n- The second describes the solution and its mechanism: one pulley per constituent, one wire summing them, a year's curve drawn in hours.\n- The third establishes lasting significance: refined versions computed official tables for nations across decades. Choice D contains all three movements — problem, mechanical solution, longevity.\n\n**Why the other choices are wrong:**\n- A: It inverts the machine's purpose — the device existed to produce tide tables, not to replace them.\n- B: It contradicts the final sentence, which reports decades of official service.\n- C: The text credits the designer with the machine, not with discovering the cycles, which the opening treats as established knowledge.",
+ "_meta": {
+  "anchor": "Victorian tide-predicting machines — mechanical summation of tidal constituents"
+ }
 }

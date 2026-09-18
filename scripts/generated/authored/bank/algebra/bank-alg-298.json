@@ -1,0 +1,52 @@
+{
+ "id": "bank-alg-298",
+ "question": "The graphs of $y = 2x - 3$ and $y = -x + 9$ in the $xy$-plane are shown. What is the $x$-coordinate of the point where the two graphs intersect?",
+ "diagram": {
+  "type": "twoLineGraph",
+  "params": {
+   "intersection": {
+    "x": 4,
+    "y": 5
+   },
+   "slope1": 2,
+   "slope2": -1,
+   "xRange": [
+    -2,
+    10
+   ],
+   "yRange": [
+    -4,
+    10
+   ],
+   "showIntersection": false,
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$2$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "sign error: 3x = -12",
+  "B": "subtracts the constants with the wrong sign (3x = 6)",
+  "D": "reports the y-coordinate"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Linear Equation with Variables on Both Sides**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** At the intersection the $y$-values agree: $2x - 3 = -x + 9$, so $3x = 12$ and $x = 4$.\n\n**The Full Solution:**\nStep 1: Set the two expressions for $y$ equal: $2x - 3 = -x + 9$.\nStep 2: Add $x$ to both sides and add $3$: $3x = 12$, so $x = 4$.\nStep 3: Check: $2(4) - 3 = 5$ and $-4 + 9 = 5$, so the lines meet at $(4, 5)$, consistent with the graph. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-4$): collects the constants as $-9 - 3 = -12$ on the wrong side.\n* Choice B ($2$): computes $9 - 3 = 6$ and divides by $3$, mishandling the sign of $-3$.\n* Choice D ($5$): the $y$-coordinate of the intersection, not the $x$-coordinate.\n\n**Test Day Takeaway:** An intersection of two graphs is a linear equation with variables on both sides: set the right-hand sides equal and solve."
+}

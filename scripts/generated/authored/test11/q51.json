@@ -1,34 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "However,"
-    },
-    {
-      "id": "B",
-      "text": "As a result,"
-    },
-    {
-      "id": "C",
-      "text": "For example,"
-    },
-    {
-      "id": "D",
-      "text": "Instead,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The second sentence describes design changes—cleaner letters, wider spacing, standardized punctuation—and the third reports their consequence: a page from 1550 is easier to read than one from 1470. \"As a result\" marks that cause-and-effect link. \"However\" would signal a contrast, \"Instead\" a replacement, and \"For example\" an illustration, none of which captures the way the later page's readability follows directly from the changes described.",
-  "passage": "When printers first set books in movable type, they imitated the dense, abbreviation-filled handwriting of scribes, packing as many characters onto a line as possible. Over the following century, type designers cut cleaner letterforms, widened the spacing between words, and standardized punctuation. ______ a printed page from 1550 is markedly easier for a modern reader to scan than one from 1470, even though both use the same alphabet.",
-  "_meta": {
-    "anchor": "typography history: legibility gains from sixteenth-century type reform (generic)"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Instead,"
   },
-  "id": 1151,
-  "module": 2
+  {
+   "id": "B",
+   "text": "In turn,"
+  },
+  {
+   "id": "C",
+   "text": "Nevertheless,"
+  },
+  {
+   "id": "D",
+   "text": "For instance,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage builds a causal chain: slender iron columns made plate-glass fronts possible; glass fronts made display windows into showpieces; and the blank introduces the chain's next link — sidewalks becoming evening promenades. \"In turn\" marks exactly that next-consequence step.\n\n**The Full Solution:**\n- Link 1: cast iron frees the ground floor for \"broad sheets of plate glass.\"\n- Link 2: display windows become \"rooms in their own right,\" with their own professional trade.\n- Link 3: crowds promenade past the lit windows at night — a development caused by link 2, just as link 2 was caused by link 1. \"In turn\" is the connective built for chained consequences.\n\n**Why the other choices are wrong:**\n- A: \"Instead\" substitutes one outcome for a rejected alternative, but no alternative has been rejected.\n- C: \"Nevertheless\" concedes an obstacle before pressing on; nothing in the sequence resists the promenades.\n- D: \"For instance\" would make the promenades an example of the window-trimming trade, rather than a further effect of the lit windows.",
+ "passage": "Cast-iron construction let a storefront's weight rest on a few slender columns instead of a continuous masonry wall, so ground floors could open into broad sheets of plate glass. Display windows became rooms in their own right, dressed by a new trade of professional window trimmers. ______ the sidewalks in front of the great cast-iron blocks turned into evening promenades, where crowds came to see goods lit up behind glass long after the shops had closed.",
+ "_meta": {
+  "anchor": "cast-iron storefront architecture — chained consequences: columns, plate glass, window displays, promenades",
+  "transitionBucket": "transitions-cause-effect",
+  "distractors": {
+   "A": "substitution without a rejected alternative",
+   "C": "concession without an obstacle",
+   "D": "example relation misreads the chain"
+  }
+ },
+ "id": 1151,
+ "module": 2
 }

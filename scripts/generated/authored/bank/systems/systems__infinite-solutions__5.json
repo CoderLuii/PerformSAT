@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "Each of the four choices gives a system of two linear equations in $x$ and $y$, where each equation is written in the form $ax + by = c$. Which of these systems has infinitely many solutions?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2x - 5y = 9$ and $4x - 10y = 20$"
+    },
+    {
+      "id": "B",
+      "text": "$3x + 7y = 12$ and $-9x - 21y = -36$"
+    },
+    {
+      "id": "C",
+      "text": "$x + 4y = 6$ and $2x + 8y = 6$"
+    },
+    {
+      "id": "D",
+      "text": "$5x - 2y = 8$ and $5x + 2y = 8$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "doubling the first equation gives $4x - 10y = 18$, not $20$, so those lines are parallel and distinct and the system has no solution.",
+    "C": "doubling the first equation gives $2x + 8y = 12$, not $6$, so again the lines are parallel and distinct.",
+    "D": "the sign of the $y$-coefficient changes, so the slopes differ and the lines meet at exactly one point."
+  },
+  "correctAnswer": "B",
+  "hint": "Test whether one equation in each pair is a single constant multiple of the other, constant term included.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~55s):** Multiplying $3x + 7y = 12$ by $-3$ gives $-9x - 21y = -36$, so the two equations describe the same line.\n\n**The Full Solution:**\nStep 1: A system has infinitely many solutions exactly when one equation is a nonzero multiple of the other, coefficients and constant alike.\nStep 2: In choice B the $x$-coefficients give the factor $\\frac{-9}{3} = -3$, and the $y$-coefficients agree since $-3(7) = -21$.\nStep 3: The constant also scales: $-3(12) = -36$, so the second equation is exactly $-3$ times the first and the system has infinitely many solutions. Check: dividing the second equation by $-3$ reproduces the first. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: doubling the first equation gives $4x - 10y = 18$, not $20$, so those lines are parallel and distinct and the system has no solution.\n* Choice C: doubling the first equation gives $2x + 8y = 12$, not $6$, so again the lines are parallel and distinct.\n* Choice D: the sign of the $y$-coefficient changes, so the slopes differ and the lines meet at exactly one point.\n\n**Test Day Takeaway:** Check the constant last. A pair whose coefficients scale but whose constant does not is the classic no-solution trap hiding among infinitely-many choices."
+}

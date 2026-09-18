@@ -5,30 +5,30 @@
   "band": 2,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
+  "module": 1,
+  "passage": "Sled dogs made long-distance polar travel possible in the era before machines. Teams hauled heavily loaded sledges across ice that no vehicle of the time could ______ their thick double coats let them sleep in the open at temperatures that confined their drivers to shelter.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "compounds, recent"
+      "text": "cross, their"
     },
     {
       "id": "B",
-      "text": "compounds. Recent"
+      "text": "cross. Their"
     },
     {
       "id": "C",
-      "text": "compounds recent"
+      "text": "cross their"
     },
     {
       "id": "D",
-      "text": "compounds and, recent"
+      "text": "cross and, their"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. \"Archaeologists are still working out who lived in its sprawling apartment compounds\" and \"recent studies of the chemistry of skeletal remains suggest the city drew migrants from regions hundreds of kilometers away\" are each complete sentences, so they need a full stop between them; choice B uses a period and capitalizes \"Recent.\" A comma alone (A) creates a comma splice, no punctuation (C) creates a run-on, and \"and,\" with the comma misplaced (D) breaks the conjunction off from the clause it should introduce.",
-  "passage": "The ancient city of Teotihuacan, in central Mexico, was among the largest urban centers in the world during the first centuries of the common era. Archaeologists are still working out who lived in its sprawling apartment ______ recent studies of the chemistry of skeletal remains suggest that the city drew migrants from regions hundreds of kilometers away.",
+  "explanation": "**Choice B is correct.** \"Teams hauled ... could cross\" and \"their thick double coats let them sleep ...\" are both independent clauses, and a period is a standard way to separate them.\n\n**The Full Solution:**\n- Clause one: \"Teams hauled heavily loaded sledges across ice that no vehicle of the time could cross.\"\n- Clause two: \"Their thick double coats let them sleep in the open ...\" — a complete sentence with its own subject and verb.\n- Two independent clauses need a period, a semicolon, or a comma plus a coordinating conjunction. Only choice B provides one of these.\n\n**Why the other choices are wrong:**\n- A: A comma alone between two independent clauses creates a comma splice.\n- C: No punctuation at all fuses the two clauses into a run-on.\n- D: \"And\" could join the clauses, but only with a comma before it; a comma after it is not a conventional joining.",
   "_meta": {
-    "anchor": "Teotihuacan migration; period between independent clauses"
-  },
-  "module": 1
+    "anchor": "sled dogs in polar travel; period between independent clauses"
+  }
 }

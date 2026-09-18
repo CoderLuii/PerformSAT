@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-170",
+ "question": "A puppet shop's build time for a marionette is modeled by $h = 7 + 4j$, where $h$ is hours and $j$ is the number of jointed limbs. How many jointed limbs correspond to a build time of $39$ hours?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~15s):** Remove the $7$-hour setup, then divide by the $4$ hours per limb: $\\frac{39 - 7}{4} = \\frac{32}{4} = 8$.\n\n**The Full Solution:**\nStep 1: Set the model equal to the given build time: $7 + 4j = 39$.\nStep 2: Subtract the constant setup time from both sides: $4j = 32$.\nStep 3: Divide both sides by the per-limb rate: $j = 8$. Check: $7 + 4(8) = 7 + 32 = 39$ hours. $\\checkmark$\n\n**Common Mistakes:** Dividing $39$ by $4$ first and reporting about $9.75$ limbs, which skips the setup time; reporting $32$, the value of $4j$, instead of $j$; subtracting the rate rather than the setup and computing $\\frac{39 - 4}{7} = 5$.\n\n**Test Day Takeaway:** Undo a two-step model in the reverse of the order it was built: strip the constant term first, and only then divide by the coefficient."
+}

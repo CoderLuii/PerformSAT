@@ -1,31 +1,31 @@
 {
-  "id": 1216,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 1,
-  "passage": "Each species of fig tree is pollinated by its own species of tiny wasp, which can complete its life cycle only inside that fig's enclosed flowers; the wasp pollinates the fig as it lays its eggs, and neither partner reproduces without the other. Because adult wasps live only a day or two, a wasp emerging from a ripe fig must find another tree of the same species already in flower, and fig trees in a given forest tend to flower at staggered times rather than all at once. Ecologists who model this system note that a fig population too sparse or too synchronized in its flowering would leave emerging wasps with nowhere to go. Their analysis implies that the long-term survival of a fig species in a forest ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "depends only on the total number of fig trees present, regardless of when those particular trees happen to come into flower."
-    },
-    {
-      "id": "B",
-      "text": "is unaffected by the short lifespan of the pollinating wasps, since the trees can be pollinated by the wind whenever no wasp arrives."
-    },
-    {
-      "id": "C",
-      "text": "would be substantially improved if all the fig trees in the forest happened to come into flower at exactly the same time rather than at staggered intervals."
-    },
-    {
-      "id": "D",
-      "text": "requires both a sufficient density of trees and a spread of flowering times that lets short-lived wasps always find a receptive tree."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The model says a population that is too sparse or too synchronized strands the short-lived wasps, so survival needs enough trees and a staggering of bloom times. D names both conditions. A drops the timing, which the passage shows is essential. B contradicts the premise that the fig depends entirely on its wasp, not on wind. C gets the timing backward: simultaneous flowering would leave wasps emerging from late figs with no receptive tree to reach."
+ "id": 1216,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 1,
+ "passage": "A cast net catches fish only during the brief moment of its fall. The net must open into a full circle at the top of its flight, covering the widest possible stretch of water, and its weighted edge must then sink quickly enough to close around the fish before they dart out from under the descending mesh. Net makers weigh these demands against each other: heavier rim weights speed the sink but make the net harder to spread fully, while a lighter rim opens beautifully yet settles too slowly to trap anything. Fishers who study the craft observe that a net failing either test — spread or speed — comes up empty just the same. Their observations suggest that an effective cast net ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "should carry the heaviest rim weights its thrower can manage, since the speed of the sink matters more than the width of the spread."
+  },
+  {
+   "id": "B",
+   "text": "will catch fish reliably so long as it opens into a full circle, whatever the rate at which its weighted edge settles through the water."
+  },
+  {
+   "id": "C",
+   "text": "performs best in deep water, where fish have extra room to dart out from beneath the mesh as it makes its long descent."
+  },
+  {
+   "id": "D",
+   "text": "must satisfy two demands at once, opening wide enough to cover the fish and sinking fast enough to close around them before they escape."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The passage names two requirements — full spread and fast sink — and then states that failing EITHER one leaves the net empty. The only conclusion that fits is that an effective net must meet both at once.\n\n**The Full Solution:**\n- Requirement one: the net \"must open into a full circle\" to cover the widest water.\n- Requirement two: the weighted edge \"must then sink quickly enough\" to close before the fish escape.\n- The design tension shows the two trade off against each other — weight helps one and hurts the other.\n- The clincher: a net \"failing either test — spread or speed — comes up empty just the same.\" A conclusion mentioning only one requirement is ruled out; D keeps both.\n\n**Why the other choices are wrong:**\n- A: Maximizing rim weight sacrifices the spread, which the passage says is just as fatal as a slow sink.\n- B: It drops the sink-speed requirement entirely, though the passage says a slow-settling net traps nothing.\n- C: It reverses the logic — room for fish to dart out from under the mesh is the problem the fast sink exists to prevent, not an advantage."
 }

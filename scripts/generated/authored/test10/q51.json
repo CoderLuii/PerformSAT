@@ -6,16 +6,16 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 2,
- "passage": "The designer Patricia Moore argued that products meant \"for the average user\" often exclude the very people who could benefit from them most, and that designing for the edges of the population tends to improve a product for everyone. ______ curb cuts added to sidewalks for wheelchair users also ease the way for travelers with rolling luggage, parents pushing strollers, and workers moving carts, so that a feature introduced for a few turns out to serve nearly all.",
+ "passage": "Nineteenth-century meteor observing was a scattered pursuit until its coordinators began asking volunteers to work to common standards. The English observer William Denning, who charted thousands of meteor paths from his own garden, pressed his correspondents to record their sightings in ways that could be compared. ______ he asked each observer to note a meteor's starting and ending points against named stars, so that paths plotted in different towns could be laid over one another on a single chart.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "However,"
+   "text": "Nevertheless,"
   },
   {
    "id": "B",
-   "text": "By contrast,"
+   "text": "Meanwhile,"
   },
   {
    "id": "C",
@@ -23,9 +23,9 @@
   },
   {
    "id": "D",
-   "text": "Instead,"
+   "text": "Therefore,"
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The first sentence states a general claim—that designing for the edges of the population tends to improve a product for everyone—and the sentence with the blank gives a concrete case: curb cuts added for wheelchair users that also help travelers with luggage, parents with strollers, and workers with carts. \"For instance\" introduces that example. \"However\" and \"By contrast\" would signal opposition, and \"Instead\" a substitution, none of which fits an illustrating example."
+ "explanation": "**Choice C is correct.** The second sentence makes a general claim, Denning pressed correspondents to record sightings comparably, and the third sentence supplies a specific illustration of that practice: noting start and end points against named stars. \"For instance\" is the transition that introduces an example.\n\n**The Full Solution:**\n- General statement: recordings should be made \"in ways that could be compared.\"\n- Particular case: fixing each path's endpoints against named stars so charts from different towns align.\n- The particular instantiates the general, which is exactly the example relationship.\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" concedes something working against the previous sentence, but the example works entirely in its support.\n- B: \"Meanwhile\" sets two events side by side in time, yet the sentences are related by illustration, not simultaneity.\n- D: \"Therefore\" would present the star-referencing request as a conclusion derived from the previous sentence, but it is a concrete example of the standardizing already described."
 }

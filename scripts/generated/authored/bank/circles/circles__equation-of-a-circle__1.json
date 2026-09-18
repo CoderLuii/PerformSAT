@@ -1,0 +1,29 @@
+{
+ "question": "A harbor beacon at $(-6, 8)$ can be seen from every point within $10$ kilometers. Which equation describes the outer edge of the region where the beacon is visible?",
+ "hint": "Write the center first, then decide what number belongs on the right side.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x - 6)^2 + (y + 8)^2 = 100$"
+  },
+  {
+   "id": "B",
+   "text": "$(x + 6)^2 + (y - 8)^2 = 10$"
+  },
+  {
+   "id": "C",
+   "text": "$(x + 6)^2 + (y - 8)^2 = 100$"
+  },
+  {
+   "id": "D",
+   "text": "$(x + 6)^2 + (y + 8)^2 = 100$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "copies the center's coordinates with their own signs",
+  "B": "puts the radius 10 on the right instead of 100",
+  "D": "keeps the +8 sign for the y-coordinate of the center"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** Center $(-6, 8)$ and radius $10$ give $(x + 6)^2 + (y - 8)^2 = 100$.\n\n**The Full Solution:**\nStep 1: The outer edge is the set of points exactly $10$ kilometers from $(-6, 8)$, which is a circle.\nStep 2: Standard form is $(x - h)^2 + (y - k)^2 = r^2$ with $h = -6$ and $k = 8$, so the binomials are $x + 6$ and $y - 8$.\nStep 3: Square the radius: $r^2 = 100$, giving $(x + 6)^2 + (y - 8)^2 = 100$. Check: the point $(4, 8)$ is $10$ units away and satisfies $100 + 0 = 100$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: copies the coordinates $-6$ and $8$ directly into the binomials, describing a circle centered at $(6, -8)$.\n* Choice B: writes the radius $10$ on the right side instead of $r^2 = 100$.\n* Choice D: keeps the sign of the $y$-coordinate, placing the center at $(-6, -8)$.\n\n**Test Day Takeaway:** Each binomial holds the opposite of a center coordinate, and the right side is always the square of the radius."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A steel gusset plate for a footbridge has the shape of right triangle $ABC$, where angle $B$ is the right angle, the perimeter is $120$ cm, side $AB$ measures $30$ cm, and hypotenuse $AC$ measures $50$ cm. Which expression is equal to $\\tan A$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{30}{50}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{30}{40}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{40}{50}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{40}{30}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives cos A, adjacent over hypotenuse, which equals 0.6",
+  "B": "inverts the tangent ratio to adjacent over opposite, which equals 0.75",
+  "C": "gives sin A, opposite over hypotenuse, which equals 0.8"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice D is correct.** The perimeter supplies the missing leg $BC = 40$ cm, and $\\tan A$ is the leg opposite $A$ over the leg adjacent to $A$.\n\n**The Fast Way (~25s):** $BC = 120 - 30 - 50 = 40$. From vertex $A$, the opposite leg is $BC = 40$ and the adjacent leg is $AB = 30$, so $\\tan A = \\dfrac{40}{30}$.\n\n**The Full Solution:**\nStep 1: The perimeter is the sum of all three sides, so $AB + BC + AC = 120$, giving $30 + BC + 50 = 120$ and $BC = 40$ cm.\nStep 2: Angle $B$ is the right angle, so from vertex $A$ the side $BC$ is opposite and the side $AB$ is adjacent; $AC$ is the hypotenuse.\nStep 3: $\\tan A = \\dfrac{\\text{opposite}}{\\text{adjacent}} = \\dfrac{BC}{AB} = \\dfrac{40}{30}$. Check: $30^2 + 40^2 = 900 + 1600 = 2500 = 50^2$, so the three sides really do form a right triangle ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\dfrac{30}{50}$): that is $\\cos A$, adjacent over hypotenuse, and equals $0.6$ rather than the tangent.\n* Choice B ($\\dfrac{30}{40}$): flips the tangent upside down to adjacent over opposite, giving $0.75$; that ratio is $\\tan C$, not $\\tan A$.\n* Choice C ($\\dfrac{40}{50}$): that is $\\sin A$, opposite over hypotenuse, and equals $0.8$.\n\n**Test Day Takeaway:** When a right-triangle question hands you a perimeter, the perimeter is there to produce the third side — find it first, then label opposite, adjacent, and hypotenuse from the named angle."
+}

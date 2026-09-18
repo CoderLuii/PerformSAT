@@ -24,6 +24,17 @@
 
 .dashboard-header-row {
   margin-bottom: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.dashboard-header-main { min-width: 0; flex: 1 1 420px; }
+/* Countdown card + week sparks, stacked on the right of the header. */
+.dashboard-header-aside { display: flex; flex-direction: column; align-items: stretch; gap: 12px; flex: 0 1 auto; min-width: 0; max-width: 100%; }
+@media (max-width: 900px) {
+  .dashboard-header-aside { flex-basis: 100%; }
 }
 
 /* ── Greeting row with profile pic (user call 2026-06-06: small avatar
@@ -564,6 +575,10 @@
 }
 
 @media (max-width: 640px) {
+  /* The nowrap greeting's intrinsic width propagated up through two
+     min-width:auto flex wrappers and forced the whole page wider than a
+     phone viewport (horizontal scroll). Let it wrap on phones. */
+  .dashboard-greeting-row .dashboard-greeting { white-space: normal; overflow: visible; text-overflow: clip; }
   .dashboard-tile-pair {
     grid-template-columns: 1fr;
   }
@@ -1087,6 +1102,15 @@
 }
 .fr-cta:hover { background: var(--fr-orange-600); }
 .fr-cta:active { transform: translateY(1px); }
+
+/* Secondary hero action: resume the not-yet-finished inner onboarding. */
+.fr-cta--ghost {
+  background: transparent;
+  color: var(--fr-orange-600, #C2410C);
+  border: 1.5px solid currentColor;
+  box-shadow: none;
+}
+.fr-cta--ghost:hover { background: rgba(234, 88, 12, 0.08); }
 .fr-warmup {
   background: none;
   border: none;

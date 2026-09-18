@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-textual",
   "module": 1,
-  "passage": "Many students prepare for exams by rereading their notes and textbooks, on the assumption that repeated exposure is what fixes material in memory. A team of cognitive psychologists questioned that assumption. They proposed that the act of retrieving information from memory—deliberately recalling it without the text in front of you—does more to produce durable, long-term learning than additional rereading does, even though rereading tends to feel more productive in the moment. To test the idea, the researchers had students study short passages and then, after a delay of one week, measured how much each group could recall.",
+  "passage": "Many households intend to save money and simply fail to follow through. Working with a bank, a team of economists enrolled clients who had recently opened savings accounts tied to a self-chosen goal — a roof repair, a school fee — and sent a randomly selected group of them monthly text-message reminders. The researchers hypothesize that reminders raise saving not by teaching clients anything new but by bringing the neglected goal to mind at moments when a deposit is possible.",
   "question": "Which finding from the study, if true, would most directly support the researchers' hypothesis?",
   "choices": [
     {
       "id": "A",
-      "text": "After one week, students who had practiced recalling the passages from memory remembered substantially more than students who had spent an equal amount of time rereading them."
+      "text": "Reminder messages that named the client's specific savings goal increased deposits significantly more than otherwise identical messages that omitted the goal."
     },
     {
       "id": "B",
-      "text": "Students who repeatedly reread the passages reported feeling more confident about their learning than students who spent the same time testing themselves."
+      "text": "Clients who received reminder messages reported somewhat higher satisfaction with the bank's services than clients who received no messages."
     },
     {
       "id": "C",
-      "text": "Students who reread the passages and students who tested themselves recalled the material equally well when tested immediately, before the one-week delay."
+      "text": "Clients who opened their accounts with larger initial balances went on to save substantially more in the year that followed than other clients did, whether or not they received reminders."
     },
     {
       "id": "D",
-      "text": "Students who tested themselves spent less total time studying than students who reread but reported enjoying the task less."
+      "text": "Reminder messages increased deposits only among the clients who had also attended a workshop explaining how interest accumulates on savings."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The hypothesis is that retrieving information produces more durable, long-term learning than rereading does. A finding that, a week later, the retrieval group remembered substantially more than the rereading group directly supports that claim about durable learning. Choice B speaks to how the rereading group felt, which matches the passage's aside about rereading feeling productive but says nothing about which method produced better retention. Choice C reports no difference on an immediate test, which does not bear on the durability claim and if anything works against it. Choice D concerns study time and enjoyment, not how much was retained, so it cannot support a hypothesis about learning."
+  "explanation": "**Choice A is correct.** If naming the goal is what gives a reminder its power, the mechanism must run through bringing the goal to mind — precisely the researchers' hypothesis, and precisely what a goal-named versus goal-omitted comparison isolates.\n\n**The Full Solution:**\n- The hypothesis has a specific shape: reminders work through attention to the goal, not through new information.\n- Choice A holds everything constant except whether the message mentions the goal. If the goal-naming version outperforms, the effect is traced to the goal coming to mind — direct support for the proposed mechanism.\n\n**Why the other choices are wrong:**\n- B: Satisfaction with the bank measures how clients feel about the service, not whether or why they saved more; it leaves the mechanism untouched.\n- C: A correlation between initial balances and later saving holds \"whether or not they received reminders,\" so it says nothing about what reminders do at all.\n- D: This finding would support the rival mechanism the researchers reject — that reminders work only in combination with new knowledge about saving — thereby undercutting the hypothesis rather than supporting it."
 }

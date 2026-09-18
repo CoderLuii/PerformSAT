@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "inferences",
+  "module": 2,
+  "passage": "A true fresco is painted on plaster while the plaster is still damp, so that the pigment bonds into the wall as it dries. Each morning, therefore, a plasterer laid down only as much fresh plaster as could be painted before it set — a day's patch, called a giornata. Because a patch could not be reworked once dry, the joints where one day's plaster meets the next were simply left where the work ended, and although the painter smoothed them, they remain faintly detectable on the finished wall. Since each giornata represents at most a single day's painting, a historian who maps the joints across an entire fresco can ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "each of those years followed a volcanic eruption large enough to cool the whole planet at the same time."
+      "text": "estimate the minimum number of working days the painting of the fresco required."
     },
     {
       "id": "B",
-      "text": "the trees on the different continents all happened to be the same age when those narrow rings formed."
+      "text": "identify which passages of the fresco were painted by assistants rather than by the master."
     },
     {
       "id": "C",
-      "text": "narrow rings are, in general, a poor guide to the temperature of the year in which they formed."
+      "text": "recover the full-scale preparatory drawings from which the composition was transferred."
     },
     {
       "id": "D",
-      "text": "the forests on each separate continent were experiencing their own entirely unrelated spells of cold, dry weather."
+      "text": "establish the exact hour of the day at which each patch of fresh plaster was laid."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. Narrow rings that appear in the same year on continents with otherwise unrelated climates cannot be the work of ordinary regional weather, so the most reasonable explanation is a planet-wide cooling — a large volcanic eruption that cooled the whole world at once. Choice B says nothing about why the cold year is global; choice C contradicts the passage's use of rings as temperature records; and choice D returns to the unrelated regional weather the passage rules out.",
-  "passage": "When a large volcano erupts, it can throw enough ash and gas into the upper atmosphere to cool the entire planet for a year or two. Trees record such cold years in their growth rings, which are unusually narrow when the growing season is short and cold. Researchers comparing ring records from forests on different continents have found certain narrow rings that appear in the same year everywhere they look, even in regions thousands of miles apart with otherwise unrelated climates. Because no ordinary regional weather could produce a cold year on every continent at once, the most reasonable explanation for these globally synchronized narrow rings is that ______",
+  "explanation": "**Choice A is correct.** If every patch is at most one day's work, then counting the patches gives a floor on the days worked — no more, and no less, than the premises allow.\n\n**The Full Solution:**\n- Premise one: a giornata is the plaster laid for a single day's painting.\n- Premise two: the joints between giornate survive and can be mapped.\n- Mapping the joints therefore counts the patches, and the count bounds the working days from below — an estimate of the minimum, exactly choice A.\n\n**Why the other choices are wrong:**\n- B: Nothing in the text connects joints to who painted a passage; hands are never discussed.\n- C: Preparatory drawings are never mentioned, and joints record scheduling, not design.\n- D: The joints reveal that a day ended, not the clock time at which its plaster went down.",
   "_meta": {
-    "anchor": "dendrochronology — globally synchronous narrow rings and volcanic cooling"
-  },
-  "module": 2
+    "anchor": "fresco giornate — day patches as a record of working days"
+  }
 }

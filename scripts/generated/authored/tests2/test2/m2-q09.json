@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A service road at a solar farm follows the line $3x + 2y = 19$ in the $xy$-plane. A cable trench meets that road at a right angle and contains the point $(12, 5)$. At what $y$-value does the trench cross the $y$-axis?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-13$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$23$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the negative of the road's slope, 3/2, instead of the negative reciprocal, giving 5 - (3/2)(12) = -13",
+  "C": "uses the reciprocal -2/3 without flipping the sign, giving 5 - (-2/3)(12) = 13",
+  "D": "uses the road's own slope -3/2, drawing a parallel line instead of a perpendicular one, giving 5 + 18 = 23"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The road has slope $-\\frac{3}{2}$, so the trench has slope $\\frac{2}{3}$. Its $y$-intercept is $5 - \\frac{2}{3}(12) = 5 - 8 = -3$.\n\n**The Full Solution:**\nStep 1: Put the road in slope-intercept form: $3x + 2y = 19$ gives $y = -\\frac{3}{2}x + \\frac{19}{2}$, so the road's slope is $-\\frac{3}{2}$.\nStep 2: Perpendicular slopes are negative reciprocals, so the trench has slope $\\frac{2}{3}$ — flip the fraction and change the sign.\nStep 3: Use the point $(12, 5)$ in $y = \\frac{2}{3}x + b$: $5 = \\frac{2}{3}(12) + b = 8 + b$, so $b = -3$. Check: $\\left(-\\frac{3}{2}\\right)\\left(\\frac{2}{3}\\right) = -1$, the test for perpendicular slopes ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-13$): changes the sign of the road's slope but never flips the fraction, using $\\frac{3}{2}$ and getting $5 - \\frac{3}{2}(12) = -13$. A negative reciprocal requires both moves.\n* Choice C ($13$): flips the fraction but keeps the negative sign, using $-\\frac{2}{3}$ and getting $5 + 8 = 13$.\n* Choice D ($23$): reuses the road's slope $-\\frac{3}{2}$, which produces a line parallel to the road rather than perpendicular to it, giving $5 + 18 = 23$.\n\n**Test Day Takeaway:** Read the slope out of standard form as $-\\frac{A}{B}$, then flip and negate it in one deliberate step; substituting the given point last keeps the sign work isolated."
+}

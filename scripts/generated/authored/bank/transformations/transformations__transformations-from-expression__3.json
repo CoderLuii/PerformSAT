@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "A pipeline's line pressure, in bars, at pumping station $x$ is $p(x)$, and a parallel pipeline's pressure is $y = p(x - b)$ for a constant $b$. The parallel line reads $30$ bars at station $11$, and the first pipeline reads $30$ bars only at station $4$. What is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-7$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves 4 - 11 instead of 11 - 4",
+  "B": "reports the station where the first pipeline reads 30 bars",
+  "D": "adds the two station numbers, 11 + 4"
+ },
+ "correctAnswer": "C",
+ "hint": "The parallel line's reading at station $11$ is one the first line took somewhere else.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** The parallel line at station $11$ repeats $p(11 - b)$, and that must be $p(4)$, so $b = 7$.\n\n**The Full Solution:**\nStep 1: The parallel line's reading at station $11$ is $p(11 - b)$, and it equals $30$ bars.\nStep 2: The first pipeline reads $30$ bars only at station $4$, so $11 - b = 4$.\nStep 3: Solving gives $b = 7$. Check: $p(11 - 7) = p(4) = 30$ bars ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7$): computing $4 - 11$; the expression to set equal to $4$ is $11 - b$.\n* Choice B ($4$): reporting the station where the first pipeline reads $30$ bars rather than the offset between the lines.\n* Choice D ($15$): adding the two station numbers instead of subtracting them.\n\n**Test Day Takeaway:** Set the expression inside the function equal to the input whose output you already know."
+}

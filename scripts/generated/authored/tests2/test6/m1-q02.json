@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "A weaving mill blends cotton and linen fibers in a ratio of $5$ to $3$ by mass. Which expression gives the mass, in kilograms, of cotton fiber in a batch whose total mass is $m$ kilograms?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3}{8}m$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{5}m$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{5}{8}m$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{5}{3}m$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the linen share 3/8 instead of the cotton share",
+  "B": "uses the part-to-part ratio 3:5 as a fraction of the total",
+  "D": "uses the part-to-part ratio 5:3 directly as a fraction of the total, which exceeds the whole batch"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice C is correct.** A ratio of $5$ to $3$ splits the batch into $5 + 3 = 8$ equal parts, and cotton is $5$ of those $8$ parts.\n\n**The Fast Way (~15s):** Add the ratio terms to get the total number of parts, $8$, then take the cotton share: $\\frac{5}{8}m$.\n\n**The Full Solution:**\nStep 1: Let each part have mass $p$ kilograms. Then the cotton mass is $5p$, the linen mass is $3p$, and the batch mass is $5p + 3p = 8p = m$.\nStep 2: Solving $8p = m$ gives $p = \\frac{m}{8}$, so the cotton mass is $5p = \\frac{5}{8}m$.\nStep 3: Check the split: cotton $\\frac{5}{8}m$ plus linen $\\frac{3}{8}m$ equals $m$, and $\\frac{5}{8}m \\div \\frac{3}{8}m = \\frac{5}{3}$, the required ratio ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3}{8}m$): this is the linen share. It uses the correct denominator but the other part's numerator.\n* Choice B ($\\frac{3}{5}m$): this treats the part-to-part ratio $3:5$ as a part-to-whole fraction; $5$ is not the number of parts in the batch.\n* Choice D ($\\frac{5}{3}m$): this uses $5:3$ itself as a fraction of the total, which would make the cotton mass larger than the entire batch.\n\n**Test Day Takeaway:** A ratio of parts becomes a fraction of the whole only after you add the terms — the denominator is the sum, never the other part."
+}

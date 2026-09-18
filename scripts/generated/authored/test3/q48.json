@@ -5,30 +5,31 @@
  "band": 4,
  "domain": "standard-english-conventions",
  "skill": "boundaries",
+ "type": "multiple-choice",
+ "passage": "For a display at the 1900 world's fair in Paris, W. E. B. Du Bois and his students prepared dozens of hand-drawn charts documenting the economic progress of Black Americans in the decades since ______ in bold geometric forms and vivid color, the charts anticipated the data graphics of a century later.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "Association. An"
+   "text": "emancipation, rendered"
   },
   {
    "id": "B",
-   "text": "Association; an"
+   "text": "emancipation rendered"
   },
   {
    "id": "C",
-   "text": "Association an"
+   "text": "emancipation and rendered"
   },
   {
    "id": "D",
-   "text": "Association, an"
+   "text": "emancipation. Rendered"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D, \"Association, an\". The blank falls between an independent clause — \"At the turn of the twentieth century, Callie House helped lead the National Ex-Slave Mutual Relief, Bounty and Pension Association\" — and a nonrestrictive appositive that renames the organization: \"an organization that enrolled tens of thousands of formerly enslaved people in a campaign for federal pensions.\" Standard English sets off such an appositive with a comma, which D supplies. A period (A) makes the appositive a sentence fragment, since \"An organization that enrolled … opposition\" has no main verb. A semicolon (B) must join two independent clauses, but the appositive is not independent. No punctuation (C) fuses the appositive to the head noun in a run-on.",
+ "explanation": "**Choice D is correct.** Two full statements meet at the blank: the first ends at \"emancipation,\" and the second — \"Rendered in bold geometric forms and vivid color, the charts anticipated...\" — is an independent clause opening with a participial modifier. A period is the boundary that separates them cleanly.\n\n**The Full Solution:**\n- Read past the blank: \"in bold geometric forms and vivid color, the charts anticipated the data graphics of a century later\" has its own subject and verb, so a new sentence must begin with the participle that modifies \"the charts.\"\n- The period after \"emancipation\" closes the first sentence; capitalized \"Rendered\" launches the second, whose opening modifier attaches correctly to \"the charts.\"\n\n**Why the other choices are wrong:**\n- A: The comma yields a comma splice — two independent clauses separated only by a comma, with the participial phrase caught in between.\n- B: With no punctuation, the sentences fuse, and \"since emancipation rendered\" briefly misreads as emancipation doing the rendering.\n- C: \"And rendered\" pretends to coordinate, but there is no parallel element for \"rendered\" to join — the charts, not Du Bois's act of preparing, are what the participle describes — so the clauses remain tangled.",
  "_meta": {
-  "anchor": "Callie House — National Ex-Slave Mutual Relief, Bounty and Pension Association; nonrestrictive appositive comma"
- },
- "passage": "At the turn of the twentieth century, Callie House helped lead the National Ex-Slave Mutual Relief, Bounty and Pension ______ organization that enrolled tens of thousands of formerly enslaved people in a campaign for federal pensions despite sustained government opposition.",
- "type": "multiple-choice"
+  "anchor": "W. E. B. Du Bois — 1900 Paris data portraits; sentence boundary before a participial opener",
+  "rule": "period between independent clauses where the second opens with a participial modifier"
+ }
 }

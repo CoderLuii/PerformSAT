@@ -1,0 +1,39 @@
+{
+ "question": "A drafting program plots the graph shown by sliding the graph of $y=|x|$ along the $x$-axis, leaving the shape of the graph unchanged. Which equation defines the plotted function $f$?",
+ "diagram": {
+  "type": "absoluteValue",
+  "params": {
+   "vertex": [
+    3,
+    0
+   ],
+   "slope": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$f(x)=|x|-3$"
+  },
+  {
+   "id": "B",
+   "text": "$f(x)=|x|+3$"
+  },
+  {
+   "id": "C",
+   "text": "$f(x)=|x-3|$"
+  },
+  {
+   "id": "D",
+   "text": "$f(x)=|x+3|$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "moves the graph 3 units down instead of 3 units right, putting the corner at (0, -3)",
+  "B": "moves the graph 3 units up, putting the corner at (0, 3)",
+  "D": "adds inside the bars, which slides the graph 3 units left to (-3, 0)"
+ },
+ "explanation": "**SAT Pattern: Horizontal Shift**\n\n**Choice C is correct.** The corner of the plotted graph sits at $(3,0)$, and replacing $x$ with $x-3$ moves the corner of $y=|x|$ from $(0,0)$ to $(3,0)$.\n\n**The Fast Way (~25s):** The graph moved right $3$ units and not up or down, so the change belongs inside the bars with the opposite sign: $f(x)=|x-3|$.\n\n**The Full Solution:**\n\nStep 1: Locate the corner of the plotted graph. It is at $(3,0)$, so the corner of $y=|x|$ has moved $3$ units in the positive $x$-direction and $0$ units vertically.\n\nStep 2: A horizontal shift is applied to the input. Replacing $x$ with $x-h$ moves the graph $h$ units right, so $h=3$ gives $f(x)=|x-3|$.\n\nStep 3: Confirm with a point. $f(3)=|3-3|=0$ and $f(5)=|5-3|=2$, and the plotted graph passes through $(3,0)$ and $(5,2)$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($f(x)=|x|-3$): subtracts outside the bars, which lowers the corner to $(0,-3)$ rather than moving it right.\n* Choice B ($f(x)=|x|+3$): raises the corner to $(0,3)$, a vertical shift.\n* Choice D ($f(x)=|x+3|$): adds inside the bars, which slides the corner to $(-3,0)$, the wrong direction.\n\n**Test Day Takeaway:** Changes inside the function move the graph horizontally and in the direction opposite the sign; changes outside move it vertically.",
+ "id": "bank-alg-081"
+}

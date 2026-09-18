@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
+ "type": "multiple-choice",
+ "passage": "In the late 1980s, oceanographer John Martin proposed that vast stretches of the ocean remain poor in phytoplankton not for lack of light or major nutrients but for lack of iron, a scarce trace element. Field experiments seeded patches of open water with dissolved iron, and the patches bloomed within days, turning visibly green with growth. __Yet the blooms proved short-lived, and only a small fraction of the carbon they absorbed sank into the deep ocean rather than returning quickly to the atmosphere.__ Accordingly, most researchers who accept Martin's account of what limits phytoplankton growth nonetheless doubt that fertilizing the ocean with iron could meaningfully slow climate change.",
  "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
  "choices": [
   {
    "id": "A",
-   "text": "It provides the dramatic experimental evidence the researcher gathered that finally persuaded the proposal's critics."
+   "text": "It presents evidence that Martin's hypothesis about what limits phytoplankton growth was mistaken"
   },
   {
    "id": "B",
-   "text": "It concedes that the bacterial explanation turned out, in the end, to be only partly correct."
+   "text": "It explains why the seeded patches of ocean water bloomed within days of receiving dissolved iron"
   },
   {
    "id": "C",
-   "text": "It explains the laboratory technique the researchers used to identify the bacterium under a microscope."
+   "text": "It concedes a weakness in the field experiments' design before the text goes on to defend large-scale ocean fertilization"
   },
   {
    "id": "D",
-   "text": "It accounts for the resistance the proposal met by showing what was at stake."
+   "text": "It reports the limitation of the experimental results that grounds the doubt expressed in the sentence that follows"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D. The underlined sentence explains why the bacterial theory of ulcers met such sharp resistance: accepting it implied that a condition long managed with antacids could be cured outright with antibiotics, a reversal that would overturn an established treatment industry. The sentence thus accounts for the opposition by naming the stakes. The dramatic evidence — the researcher swallowing a culture and curing himself — comes in the following sentence, so A misplaces it. B has the sentence conceding the theory was only partly right, but the passage treats the bacterial cause as confirmed. C describes a laboratory technique the passage never details.",
+ "explanation": "**Choice D is correct.** The underlined sentence delivers the qualification — blooms die fast, little carbon actually sinks — and the final sentence's \"Accordingly\" builds directly on it: this limitation is why researchers doubt iron fertilization as a climate tool.\n\n**The Full Solution:**\n- The text separates two claims: Martin's hypothesis about iron (confirmed by the blooms) and the further idea that iron fertilization could slow climate change.\n- The underlined sentence supplies the evidence that splits them: the experiments vindicated the hypothesis while showing the carbon payoff to be small. The last sentence then draws exactly that distinction.\n\n**Why the other choices are wrong:**\n- A: The blooms confirmed the hypothesis; the underlined sentence limits the *application*, not the account of what limits growth.\n- B: The blooming is reported in the previous sentence, and the underlined sentence explains nothing about why it happened.\n- C: The text ends in doubt about fertilization, not a defense of it — the concession runs in the opposite direction.",
  "_meta": {
-  "anchor": "Helicobacter pylori and peptic ulcers (Marshall and Warren, early 1980s); function of underlined sentence"
- },
- "passage": "For most of the twentieth century, physicians blamed stomach ulcers on stress and excess acid and treated them by neutralizing acid. In the early 1980s two Australian researchers proposed instead that a bacterium, Helicobacter pylori, caused most ulcers. *Their claim met sharp resistance, partly because it implied that a condition managed for decades with antacids might be cured outright by a short course of antibiotics — a reversal that would overturn an entire treatment industry.* To answer the doubters, one of the researchers swallowed a culture of the bacterium, developed the predicted inflammation, and cured himself with antibiotics.",
- "type": "multiple-choice"
+  "anchor": "John Martin — iron hypothesis confirmed, iron fertilization doubted; pivot sentence"
+ }
 }

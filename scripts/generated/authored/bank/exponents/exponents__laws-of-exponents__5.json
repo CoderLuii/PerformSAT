@@ -1,0 +1,29 @@
+{
+ "question": "The gain of a star tracker's amplifier is $\\dfrac{\\sqrt{x^{9}}}{x^{-3/2}}$, where the aperture setting $x$ is a positive number of millimeters. Which expression is equivalent to that gain?",
+ "hint": "Both parts of the quotient can be written as powers of $x$.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x^{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$x^{6}$"
+  },
+  {
+   "id": "C",
+   "text": "$x^{15/2}$"
+  },
+  {
+   "id": "D",
+   "text": "$x^{21/2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts 3/2 instead of adding it",
+  "C": "reads the denominator's exponent as -3 rather than -3/2",
+  "D": "drops the square root and uses x^9 in the numerator"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~35s):** $\\sqrt{x^{9}} = x^{9/2}$, and dividing by $x^{-3/2}$ adds $\\dfrac32$, giving $x^{6}$.\n\n**The Full Solution:**\nStep 1: Rewrite the root as a fractional exponent: $\\sqrt{x^{9}} = x^{9/2}$.\nStep 2: Dividing by a power subtracts its exponent: $x^{9/2 - (-3/2)}$.\nStep 3: Simplify: $\\dfrac92 + \\dfrac32 = 6$, so the gain is $x^{6}$. Check at $x = 4$: $\\sqrt{4^{9}} = 2^{9} = 512$ and $4^{-3/2} = \\dfrac18$, so the quotient is $4096 = 4^{6}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($x^{3}$): subtracts $\\dfrac32$ instead of adding it, ignoring the minus sign already in the denominator.\n* Choice C ($x^{15/2}$): reads the denominator's exponent as $-3$, giving $\\dfrac92 + 3$.\n* Choice D ($x^{21/2}$): leaves the numerator as $x^{9}$, forgetting the square root, and adds $\\dfrac32$.\n\n**Test Day Takeaway:** Turn every root into a fractional exponent first; then one subtraction finishes the problem."
+}

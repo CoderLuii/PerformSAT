@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-214",
+  "question": "In a regional survey, $62\\%$ of the households have broadband service. Among the households with broadband service, $55\\%$ also subscribe to a streaming service. What percent of all households surveyed have broadband service and subscribe to a streaming service?",
+  "correctAnswer": "34.1",
+  "explanation": "**SAT Pattern: Joint Probability via Multiplication**\n\n**The correct answer is $34.1$.**\n\n**The Fast Way (~25s):** $0.62 \\times 0.55 = 0.341$, or $34.1\\%$.\n\n**The Full Solution:**\nStep 1: The $55\\%$ is measured among broadband households, so the joint share is the product of the two rates.\nStep 2: Multiply: $0.62 \\times 0.55 = 0.341$.\nStep 3: Convert to a percent: $34.1\\%$. Check with $1{,}000$ households: $620$ have broadband and $55\\%$ of $620$ is $341$, which is $34.1\\%$ of $1{,}000$. $\\checkmark$\n\n**Common Mistakes:** Adding for $117$, which exceeds $100\\%$; subtracting for $7$; or dividing, $\\frac{55}{62} \\approx 88.7$, which answers a question no one asked.\n\n**Test Day Takeaway:** Joint percent equals the overall rate times the rate measured inside that group — multiply, then sanity-check against the smaller of the two."
+}

@@ -1,0 +1,53 @@
+{
+ "id": 16,
+ "question": "A signal profiler stores the function $f$ as the four input-output pairs listed in the table and then shifts it, producing the function $h$ with $h(x)=f(x-c)$ for a constant $c$. Given that $h(9)=12$, what is the value of $c$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "1",
+    "12"
+   ],
+   [
+    "4",
+    "3"
+   ],
+   [
+    "7",
+    "9"
+   ],
+   [
+    "10",
+    "5"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "shifts the wrong way, solving 9 + c = 1",
+  "B": "sets the input 9 - c equal to the OUTPUT 12 rather than to the input 1",
+  "C": "matches the output 9 in the table instead of the output 12, solving 9 - c = 7"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** $h(9)=f(9-c)$, and the only input with output $12$ is $x=1$, so $9-c=1$ and $c=8$.\n\n**The Full Solution:**\nStep 1: The rule $h(x)=f(x-c)$ says: to evaluate $h$ at $9$, evaluate $f$ at $9-c$. So $h(9)=f(9-c)=12$.\nStep 2: Scan the $f(x)$ column for the output $12$. It appears once, in the row $x=1$, so the input to $f$ must be $1$: $9-c=1$.\nStep 3: Solve: $c=9-1=8$. Check: with $c=8$, $h(9)=f(9-8)=f(1)=12$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$): solves $9+c=1$, shifting the graph the wrong direction. In $f(x-c)$ the input is REDUCED by $c$.\n* Choice B ($-3$): sets $9-c=12$, matching the number $12$ to an input when $12$ is an output.\n* Choice C ($2$): uses the row $x=7$ because $9$ appears in the $f(x)$ column there, solving $9-c=7$. The $9$ in $h(9)$ is an input, not an output.\n\n**Test Day Takeaway:** Translate $h(9)=f(9-c)$ before you look at anything else, then hunt the TABLE for the row whose OUTPUT matches. Keeping inputs and outputs in separate columns of your scratch work kills both traps here."
+}

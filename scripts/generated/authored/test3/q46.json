@@ -5,30 +5,31 @@
  "band": 3,
  "domain": "standard-english-conventions",
  "skill": "boundaries",
+ "type": "multiple-choice",
+ "passage": "The Okavango River never reaches the sea; its waters spill instead into a vast inland delta on the edge of the Kalahari Desert. Although the delta floods during the region's dry ______ the timing is no accident: the water takes months to travel from summer rains in the Angolan highlands, arriving just as local rain has ceased.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "Berlin; Vienna; and Rome; the pact"
+   "text": "season."
   },
   {
    "id": "B",
-   "text": "Berlin, Vienna, and Rome; the pact"
+   "text": "season,"
   },
   {
    "id": "C",
-   "text": "Berlin, Vienna, and Rome, the pact"
+   "text": "season;"
   },
   {
    "id": "D",
-   "text": "Berlin, Vienna, and Rome the pact"
+   "text": "season"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"Berlin, Vienna, and Rome; the pact\". The blank stands at the boundary between two independent clauses. The first — \"In 1882 a defensive treaty quietly bound together three European capitals — Berlin, Vienna, and Rome\" — can stand alone, and so can the second, \"the pact committed each signatory to come to the others' aid if one of them were attacked.\" Two independent clauses need a period, a semicolon, or a comma plus a coordinating conjunction; only the semicolon in B fits. A comma alone (C) makes a comma splice, and no punctuation (D) makes a run-on. Option A wrongly upgrades the simple three-item list to semicolons, even though those items contain no internal commas that would require them.",
+ "explanation": "**Choice B is correct.** \"Although the delta floods during the region's dry season\" is an introductory subordinate clause, and the conventions call for a comma between such a clause and the main clause it introduces (\"the timing is no accident...\").\n\n**The Full Solution:**\n- \"Although\" makes its clause dependent — it cannot stand alone — so the boundary after it must be a comma, not sentence-ending punctuation.\n- The main clause follows immediately, and the comma marks where the introduction ends and the sentence's core begins.\n\n**Why the other choices are wrong:**\n- A: A period strands the \"Although\" clause as a sentence fragment.\n- C: A semicolon joins independent clauses; the clause before the blank is subordinate, so the semicolon creates the same fragment problem in different dress.\n- D: Omitting the comma runs the subordinate clause straight into the main clause; after an introductory dependent clause of this length, the comma is required.",
  "_meta": {
-  "anchor": "The Triple Alliance (1882): Germany, Austria-Hungary, Italy — Berlin, Vienna, Rome; independent-clause boundary after a three-item list"
- },
- "passage": "Historians of European diplomacy often trace the tangle of pre-1914 alliances back to a single agreement reached in the 1880s. In 1882 a defensive treaty quietly bound together three European capitals — ______ committed each signatory to come to the others' aid if one of them were attacked.",
- "type": "multiple-choice"
+  "anchor": "Okavango Delta dry-season flood pulse — comma after introductory subordinate clause",
+  "rule": "comma after an introductory subordinate clause"
+ }
 }

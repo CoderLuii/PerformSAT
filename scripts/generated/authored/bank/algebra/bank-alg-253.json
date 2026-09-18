@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-253",
+ "question": "A mixture of walnuts and pecans has a total mass of $900$ grams. The mass of the walnuts in the mixture is $60$ grams more than twice the mass of the pecans. What is the mass, in grams, of the pecans in the mixture?",
+ "correctAnswer": "280",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**The correct answer is $280$.**\n\n**The Fast Way (~15s):** Take away the extra $60$ g: $840$ g splits into $3$ equal parts (two for walnuts, one for pecans), so the pecans are $280$ g.\n\n**The Full Solution:**\nStep 1: Let $w$ be the mass of walnuts and $p$ the mass of pecans, in grams. Then $w + p = 900$ and $w = 2p + 60$.\nStep 2: Substitute: $(2p + 60) + p = 900$, so $3p + 60 = 900$ and $p = 280$.\nStep 3: Then $w = 2(280) + 60 = 620$. Check: $620 + 280 = 900$. $\\checkmark$\n\n**Common Mistakes:** Translating \"60 more than twice\" as $2(p + 60)$, which gives $3p + 120 = 900$ and $p = 260$; or reporting the walnut mass, $620$.\n\n**Test Day Takeaway:** \"$a$ more than $b$ times\" is $b \\cdot (\\text{quantity}) + a$; build the expression in that order before substituting."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-066",
+ "question": "A recharge study reports the same aquifer balance twice. The first report reads $\\frac{1}{2}x + 3y = 9$ and the second reads $2x + cy = 36$, where $c$ is a constant, and the two reports agree for every pair $(x, y)$. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$36$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the y-coefficient of the first report unchanged",
+  "B": "scales by 2 instead of by the factor 4 that the x-terms require",
+  "D": "reports the second report's constant term"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Find c for Infinite Solutions**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The $x$-terms scale by $2 \\div \\frac{1}{2} = 4$, so every term does: $c = 4(3) = 12$.\n\n**The Full Solution:**\nStep 1: Two equations agree for every pair $(x, y)$ only when one is a constant multiple of the other.\nStep 2: Compare the $x$-terms: $\\frac{2}{1/2} = 4$, so the second report is $4$ times the first.\nStep 3: Every term must scale by $4$, so $c = 4(3) = 12$. Check: $4\\left(\\frac{1}{2}x + 3y\\right) = 2x + 12y$ and $4(9) = 36$, which matches the second report exactly ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reports the $y$-coefficient of the first report without scaling it.\n* Choice B ($6$): scales by $2$ rather than by the factor $4$ that the $x$-terms require.\n* Choice D ($36$): reports the constant term of the second report instead of the coefficient.\n\n**Test Day Takeaway:** Find the scale factor from a pair of terms you can compute, then confirm it on the constants before applying it to the unknown."
+}

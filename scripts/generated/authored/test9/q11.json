@@ -6,29 +6,14 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 1,
-  "passage": "During the Second World War, radar operators were puzzled by faint, drifting echoes that appeared on their screens at dusk and faded by morning; with no better explanation, they called the blips \"angels.\" After the war, ornithologists recognized the echoes as flocks of birds, most of them migrating under cover of darkness. Trained on the night sky, radar could count the passing birds, measure the altitude and direction of their flight, and record the very hours they took wing—movements that observers watching only by day had never been able to see. The instrument built to track aircraft thus opened the first clear view of the scale and timing of nocturnal migration.",
+  "passage": "Histories of the Pacific Coast salmon-canning industry long dwelt on fleets and machinery, treating the workforce as interchangeable hands. The canneries' own records tell another story. Labor contractors assembled experienced crews — largely Chinese, and later Japanese and Filipino, immigrants — whose members held distinct skilled positions, from butchers who could clean a fish in seconds to solderers whose seams determined whether a can spoiled. The quality of a season's pack varied with the crew, and cannery owners competed to engage the most practiced ones. The industry's output, in short, rested on expertise its own chroniclers rarely acknowledged.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "During the Second World War, radar operators were repeatedly puzzled by faint, drifting echoes that appeared on their screens at dusk and vanished by morning, blips they nicknamed \"angels.\""
-    },
-    {
-      "id": "B",
-      "text": "Radar trained on the night sky could measure the altitude and direction at which migrating birds flew."
-    },
-    {
-      "id": "C",
-      "text": "Most of the birds whose flights produced the radar echoes traveled at night rather than during the day."
-    },
-    {
-      "id": "D",
-      "text": "Radar, first built to track aircraft, revealed that mysterious nighttime echoes were migrating birds and gave scientists their first clear view of nocturnal migration's scale and timing."
-    }
+    { "id": "A", "text": "Salmon canneries on the Pacific Coast succeeded largely because new machinery eliminated the industry's need for experienced and specialized workers at every station." },
+    { "id": "B", "text": "Labor contractors weakened the canning industry by forcing owners to compete for a limited number of crews." },
+    { "id": "C", "text": "The salmon-canning industry's records were kept too carelessly to reveal much about how its workforce was organized." },
+    { "id": "D", "text": "Cannery records show that the salmon-packing workforce, far from being interchangeable, was organized around specialized skills on which the industry's output depended." }
   ],
   "correctAnswer": "D",
-  "explanation": "The passage traces how a wartime mystery became a scientific tool: radar operators saw odd echoes they called \"angels,\" which proved to be flocks of birds migrating at night, and the instrument went on to reveal the scale and timing of that nocturnal travel for the first time. Choice D captures that arc. The other choices are true but partial—the operators' early puzzlement (A), one of radar's measurements (B), and the fact that the birds flew at night (C)—rather than the main idea.",
-  "_meta": {
-    "anchor": "radar ornithology and nocturnal bird migration"
-  }
+  "explanation": "**Choice D is correct.** The text corrects an old picture: histories treated cannery workers as \"interchangeable hands,\" but the records reveal skilled, differentiated crews whose expertise determined the pack. Choice D states that corrected view.\n\n**The Full Solution:**\n- The first sentence gives the received account; the second announces the correction (\"tell another story\").\n- The evidence follows: distinct skilled positions, pack quality varying with the crew, owners competing for the best ones.\n- The final sentence draws the conclusion D paraphrases — output rested on unacknowledged expertise.\n\n**Why the other choices are wrong:**\n- A: It repeats the machinery-centered account the text is written to correct, and the passage says skill, not automation, drove output.\n- B: Owners' competition for crews is presented as proof of the crews' value, not as a weakness of the industry.\n- C: The records are the text's best evidence — they are revealing, not careless."
 }

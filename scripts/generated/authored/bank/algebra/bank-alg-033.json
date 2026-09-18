@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-033",
+ "question": "Account $A$ holds $y = 45x + 380$ dollars after $x$ weeks. Account $B$ gains dollars at the same weekly rate and held \\$125 at week zero. Which equation gives the dollars in account $B$ after $x$ weeks?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = 45x + 125$"
+  },
+  {
+   "id": "B",
+   "text": "$y = 45x + 505$"
+  },
+  {
+   "id": "C",
+   "text": "$y = 125x + 45$"
+  },
+  {
+   "id": "D",
+   "text": "$y = 380x + 125$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "adds the two starting balances, $380 + 125$, instead of replacing one with the other",
+  "C": "swaps the weekly rate and the starting balance",
+  "D": "treats account $A$'s starting balance as the weekly rate"
+ },
+ "explanation": "**SAT Pattern: Parallel with Specified Intercept**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Equal weekly rates keep the slope $45$; the new starting balance replaces $380$ with $125$.\n\n**The Full Solution:**\nStep 1: Account $A$ gains $45$ dollars per week, so account $B$ gains $45$ dollars per week as well.\nStep 2: Account $B$ held $125$ dollars at week zero, so its starting value is $125$.\nStep 3: Therefore account $B$ is $y = 45x + 125$. Check: at $x = 0$ the equation gives $125$ dollars.\n\n**Why the wrong answers are tempting:**\n* Choice B ($y = 45x + 505$): adds the two starting balances, $380 + 125$, instead of replacing one with the other\n* Choice C ($y = 125x + 45$): swaps the weekly rate and the starting balance\n* Choice D ($y = 380x + 125$): treats account $A$'s starting balance as the weekly rate\n\n**Test Day Takeaway:** Same rate means the same coefficient of $x$; only the constant term changes."
+}

@@ -1,0 +1,6 @@
+{
+  "question": "As the integer $c$ increases, the equation $4x^{2}+20x+c=0$ stops having two different real solutions. What is the greatest integer $c$ for which it still has two different real solutions?",
+  "correctAnswer": "24",
+  "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**The correct answer is $24$.**\n\n**The Fast Way (~25s):** $400-16c>0$ gives $c<25$, so the largest integer is $24$.\n\n**The Full Solution:**\nStep 1: With $a=4$ and $b=20$, the discriminant is $400-4(4)(c)=400-16c$.\nStep 2: Two different real solutions require $400-16c>0$, so $16c<400$ and $c<25$.\nStep 3: The largest integer less than $25$ is $24$. Check: $c=24$ gives $400-384=16>0$, while $c=25$ gives $0$ ✓\n\n**Common Mistakes:**\n* $25$: the boundary value, which makes the discriminant $0$ and gives exactly one solution.\n* $100$: used $c<\\dfrac{b^{2}}{4}=100$, omitting the leading coefficient $4$.\n* $5$: used $c<\\dfrac{b}{4}$ instead of the discriminant condition.\n\n**Test Day Takeaway:** The leading coefficient multiplies $c$ by $4a$, not by $4$; dropping it inflates the bound fourfold.",
+  "id": "bank-am-163"
+}

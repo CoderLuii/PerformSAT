@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-094",
+  "question": "Based on a random sample of the apartments in a building, the interval of plausible values for the mean daily electricity use of all the apartments in the building is from $84.2$ to $91.8$ kilowatt-hours. What is the margin of error for this estimate, in kilowatt-hours?",
+  "correctAnswer": "3.8",
+  "explanation": "**SAT Pattern: Margin of Error**\n\n**The correct answer is $3.8$.**\n\n**The Fast Way (~15s):** The interval is $91.8 - 84.2 = 7.6$ wide, and the margin of error is half of that: $3.8$.\n\n**The Full Solution:**\nStep 1: The interval of plausible values is centered on the estimate and extends one margin of error in each direction.\nStep 2: Its width is therefore twice the margin of error: $91.8 - 84.2 = 7.6$ kilowatt-hours.\nStep 3: The margin of error is $\\dfrac{7.6}{2} = 3.8$ kilowatt-hours.\nCheck: the estimate is the midpoint $88$, and $88 \\pm 3.8$ gives $84.2$ and $91.8$. $\\checkmark$\n\n**Common Mistakes:** Reporting the full width $7.6$; reporting the midpoint $88$, which is the estimate rather than the margin of error; reporting the upper endpoint $91.8$.\n\n**Test Day Takeaway:** Given the endpoints, the estimate is the midpoint and the margin of error is half the width."
+}

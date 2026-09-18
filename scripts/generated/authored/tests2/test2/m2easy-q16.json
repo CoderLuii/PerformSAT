@@ -1,0 +1,30 @@
+{
+ "id": 16,
+ "question": "A track's weekly stream count, in thousands, grows by a constant factor from one week to the next. The table gives the count for weeks 0 through 3 after release. What count, in thousands, does the model give for week 4?",
+ "questionTable": {
+  "headers": [
+   "Week",
+   "Streams (thousands)"
+  ],
+  "rows": [
+   [
+    "$0$",
+    "$16$"
+   ],
+   [
+    "$1$",
+    "$24$"
+   ],
+   [
+    "$2$",
+    "$36$"
+   ],
+   [
+    "$3$",
+    "$54$"
+   ]
+  ]
+ },
+ "correctAnswer": "81",
+ "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**The correct answer is $81$.**\n\n**The Fast Way (~25s):** Each week multiplies by $1.5$, so week 4 is $54(1.5) = 81$.\n\n**The Full Solution:**\nStep 1: Find the constant factor from consecutive entries: $\\frac{24}{16} = 1.5$.\nStep 2: Confirm the factor holds across the table: $\\frac{36}{24} = 1.5$ and $\\frac{54}{36} = 1.5$, so the model is $S(t) = 16(1.5)^t$.\nStep 3: Week 4 gives $S(4) = 54(1.5) = 81$ thousand streams. Check: $16(1.5)^4 = 16(5.0625) = 81$. $\\checkmark$\n\n**Common Mistakes:**\n* Gridding $72$ by adding the last difference, $54 + 18$, which treats constant growth as linear.\n* Gridding $62$ by adding the first difference, $54 + 8$, the same linear error with the earliest gap.\n* Gridding $121.5$ by multiplying by the factor twice, $54(1.5)^2$, which lands on week 5 instead of week 4.\n\n**Test Day Takeaway:** Divide consecutive values to test for a constant factor. A constant ratio means multiply forward; a constant difference would mean add."
+}

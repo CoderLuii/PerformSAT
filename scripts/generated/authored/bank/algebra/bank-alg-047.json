@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-047",
+  "question": "A café buys $x$ kilograms of Colombian coffee beans at $\\$18$ per kilogram and $y$ kilograms of Brazilian coffee beans at $\\$12$ per kilogram. The café buys $40$ kilograms of beans in total and spends $\\$630$. Which system of equations represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$x + y = 40$ and $12x + 18y = 630$"
+    },
+    {
+      "id": "B",
+      "text": "$x + y = 630$ and $18x + 12y = 40$"
+    },
+    {
+      "id": "C",
+      "text": "$x + y = 40$ and $\\frac{x}{18} + \\frac{y}{12} = 630$"
+    },
+    {
+      "id": "D",
+      "text": "$x + y = 40$ and $18x + 12y = 630$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "swaps the two prices",
+    "B": "swaps the mass total and the dollar total",
+    "C": "divides by the prices instead of multiplying"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Two-Variable Word Problem (Weight + Cost)**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Mass: $x + y = 40$. Cost: $18x + 12y = 630$.\n\n**The Full Solution:**\nStep 1: The total mass is the sum of the two masses: $x + y = 40$.\nStep 2: Cost is price per kilogram times kilograms for each type, added: $18x + 12y = 630$.\nStep 3: Check by solving: $18x + 12(40 - x) = 630 \\Rightarrow 6x + 480 = 630 \\Rightarrow x = 25$, $y = 15$; $25 + 15 = 40$ and $450 + 180 = 630$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($x + y = 40$ and $12x + 18y = 630$): pairs each price with the wrong bean.\n* Choice B ($x + y = 630$ and $18x + 12y = 40$): swaps the kilogram total with the dollar total.\n* Choice C ($x + y = 40$ and $\\frac{x}{18} + \\frac{y}{12} = 630$): divides mass by price; dollars are price TIMES mass.\n\n**Test Day Takeaway:** Units guide the setup: kilograms add to kilograms, and (dollars per kilogram) times kilograms adds to dollars."
+}

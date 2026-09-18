@@ -1,0 +1,33 @@
+{
+  "id": "bank-ps-204",
+  "question": "The table gives the number of musicians in each section of a community orchestra. If one of these musicians is selected at random, what is the probability of selecting a musician who is not in the strings section? Express your answer as a decimal.",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Section",
+        "Musicians"
+      ],
+      "rows": [
+        [
+          "Strings",
+          "33"
+        ],
+        [
+          "Woodwinds",
+          "15"
+        ],
+        [
+          "Brass",
+          "9"
+        ],
+        [
+          "Percussion",
+          "3"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "0.45",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**The correct answer is $0.45$.**\n\n**The Fast Way (~25s):** The orchestra has $60$ musicians and $33$ are in strings, so $\\frac{60 - 33}{60} = \\frac{27}{60} = 0.45$.\n\n**The Full Solution:**\nStep 1: Add the sections to get the total: $33 + 15 + 9 + 3 = 60$ musicians.\nStep 2: Count the musicians who are not in strings: $15 + 9 + 3 = 27$.\nStep 3: Divide: $\\frac{27}{60} = 0.45$. Check: $0.45 + \\frac{33}{60} = 0.45 + 0.55 = 1$. $\\checkmark$\n\n**Common Mistakes:** Reporting $\\frac{33}{60} = 0.55$, the probability of selecting a strings musician; dividing the non-strings count by the strings count, $\\frac{27}{33} \\approx 0.82$; or leaving percussion out of the total, giving $\\frac{24}{57} \\approx 0.42$.\n\n**Test Day Takeaway:** For a \"not\" question, either count the remaining categories or subtract from $1$ — the two routes must agree, which is a free check."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-262",
+  "question": "A bin contains $6$ orange tokens and $4$ purple tokens. Two tokens will be selected at random from the bin, one after the other, without replacement. What is the probability that both tokens selected are orange?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{4}{15}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{1}{3}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{9}{25}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3}{5}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "probability of orange then purple (6/10 times 4/9)",
+    "C": "with replacement: (6/10)(6/10), never reducing the counts",
+    "D": "stops after the first draw (6/10)"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** First orange: $\\frac{6}{10}$. Second orange, with one orange gone: $\\frac{5}{9}$. Multiply: $\\frac{6}{10} \\times \\frac{5}{9} = \\frac{30}{90} = \\frac{1}{3}$.\n\n**The Full Solution:**\nStep 1: There are $6 + 4 = 10$ tokens, so the probability the first token is orange is $\\frac{6}{10}$.\nStep 2: After removing one orange token, $5$ orange tokens remain among $9$ tokens, so the probability the second is orange is $\\frac{5}{9}$.\nStep 3: Multiply the probabilities of the two draws: $\\frac{6}{10} \\times \\frac{5}{9} = \\frac{30}{90} = \\frac{1}{3}$. Check: the number of orange pairs is $\\frac{6 \\times 5}{2} = 15$ out of $\\frac{10 \\times 9}{2} = 45$ pairs, and $\\frac{15}{45} = \\frac{1}{3}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{4}{15}$): $\\frac{6}{10} \\times \\frac{4}{9} = \\frac{24}{90}$ is the probability of orange followed by purple.\n* Choice C ($\\frac{9}{25}$): $\\frac{6}{10} \\times \\frac{6}{10}$ treats the second draw as if the first token were put back.\n* Choice D ($\\frac{3}{5}$): $\\frac{6}{10}$ is the probability of the first draw alone; the second draw was never included.\n\n**Test Day Takeaway:** Without replacement, both the numerator and the denominator drop by $1$ for the second draw when the first draw succeeded."
+}

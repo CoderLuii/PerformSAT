@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A hospital pharmacy divides a $92$-milligram supply of a medication into $4$ doses of equal mass. What is the mass, in milligrams, of each dose?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$23$"
+  },
+  {
+   "id": "B",
+   "text": "$46$"
+  },
+  {
+   "id": "C",
+   "text": "$88$"
+  },
+  {
+   "id": "D",
+   "text": "$368$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides by 2 instead of by 4, giving 92/2 = 46",
+  "C": "subtracts 4 from 92 instead of dividing, giving 88",
+  "D": "multiplies by 4 instead of dividing, giving 368"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice A is correct.** If $d$ is the mass of one dose, then $4d = 92$, so $d = 23$ milligrams.\n\n**The Fast Way (~10s):** Equal doses means divide: $92 \\div 4 = 23$.\n\n**The Full Solution:**\nStep 1: Let $d$ be the mass, in milligrams, of each dose. Four equal doses account for the whole supply, so $4d = 92$.\nStep 2: Divide each side by $4$: $d = \\frac{92}{4} = 23$.\nStep 3: Check by rebuilding the supply: $4(23) = 92$ milligrams ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($46$): this divides by $2$ rather than by $4$, the answer for two doses, not four.\n* Choice C ($88$): this subtracts $4$ from $92$. The phrase \"divides into $4$ doses\" signals division, not subtraction.\n* Choice D ($368$): this multiplies $92$ by $4$. Multiplying makes each dose larger than the whole supply, which cannot happen.\n\n**Test Day Takeaway:** Before computing, ask whether the answer must be smaller or larger than the given total — splitting a supply always makes each piece smaller."
+}

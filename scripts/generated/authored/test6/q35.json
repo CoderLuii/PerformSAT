@@ -9,36 +9,36 @@
   "passages": [
     {
       "label": "Text 1",
-      "text": "For most of the twentieth century, archaeologists agreed that the first people to reach the Americas were the makers of the Clovis culture, who spread across North America around thirteen thousand years ago. Their presence is marked by a distinctive fluted stone spear point, found at sites from the Plains to the East Coast. Claims of older, \"pre-Clovis\" settlement surfaced from time to time, but on close inspection the supposed tools or dates tended not to hold up. On this view, the Clovis horizon is not merely the earliest well-documented culture; it marks the moment of human arrival itself."
+      "text": "Human footprints preserved in an ancient lakebed at White Sands, New Mexico, have been dated by a team led by the geologist Matthew Bennett to between 21,000 and 23,000 years ago — several millennia before the ice-free corridor from Asia is generally thought to have opened. The dates come from radiocarbon analysis of ditchgrass seeds embedded in the same sediment layers as the prints. If they hold, people were living deep in the interior of North America at the height of the last glaciation, and the standard account of the continent's peopling must be rewritten."
     },
     {
       "label": "Text 2",
-      "text": "The Clovis-first model has come under sustained pressure. At Monte Verde, in southern Chile, excavators have recovered wooden tools, hearths, and plant remains from layers securely dated to roughly a thousand years before the Clovis horizon. Other sites in both Americas have yielded comparable early dates. The difficulty for the older model is partly geographic: a settlement in southern Chile that predates Clovis cannot be reached from a North American point of first arrival in the time the model allows. The spread of such sites suggests that people were already widely established before Clovis points appeared."
+      "text": "Some researchers urge caution about the White Sands dates. Ditchgrass is an aquatic plant, and aquatic plants take up carbon from lake water, which can hold dissolved carbon far older than the moment of growth — a reservoir effect that can make radiocarbon ages run thousands of years too old. Until the seed dates are confirmed by materials immune to that effect, such as terrestrial plant remains or optically dated quartz grains from the same layers, they argue, so consequential a revision should not be treated as settled."
     }
   ],
   "question": "Based on the texts, how would the author of Text 2 most likely respond to the argument presented in Text 1?",
   "choices": [
     {
       "id": "A",
-      "text": "It would concede that no site predating Clovis has ever been securely dated and recommend setting the whole question aside until a clearly older site is finally found and confirmed."
+      "text": "The prints were probably left by animals rather than by humans."
     },
     {
       "id": "B",
-      "text": "Sites such as Monte Verde contain securely dated artifacts centuries older than the Clovis horizon, so that horizon cannot mark the first human arrival."
+      "text": "The dates rest on material subject to a known source of error, so the sweeping conclusion drawn from them is premature."
     },
     {
       "id": "C",
-      "text": "Clovis points do mark the earliest human presence, and their rapid spread across North America shows how quickly the first arrivals moved."
+      "text": "Radiocarbon analysis is too unreliable a method to establish the age of any archaeological site."
     },
     {
       "id": "D",
-      "text": "The disagreement matters only for North America, since the peopling of South America followed an entirely separate route."
+      "text": "People could not have reached the interior of North America before the ice-free corridor opened, so the prints must be far younger than the team reported."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. Text 1 holds that the Clovis horizon marks the moment humans first reached the Americas, since older claims have not held up; Text 2 points to securely dated pre-Clovis material at Monte Verde and elsewhere and concludes that the Clovis horizon cannot be the arrival point. Choice B states that response. Choice A has Text 2 deny that any pre-Clovis site is securely dated, which is the opposite of its central evidence. Choice C endorses the Clovis-first view Text 2 rejects, and choice D limits the dispute to North America, whereas Text 2's strongest evidence is precisely a South American site.",
+  "explanation": "**Choice B is correct.** Text 2's objection is precisely calibrated: the seeds are aquatic, aquatic material is vulnerable to the reservoir effect, and until immune materials confirm the ages, \"so consequential a revision should not be treated as settled\" — that is, the conclusion is premature, not necessarily wrong.\n\n**The Full Solution:**\n- Text 1's chain: seed dates → people in the interior 21,000-23,000 years ago → rewrite the peopling of the Americas.\n- Text 2 attacks the first link's material, naming a specific error mode (old dissolved carbon inflating ages) and prescribing confirmation by unaffected materials.\n- That is a methodological challenge to the evidence's sufficiency — exactly the stance B describes.\n\n**Why the other choices are wrong:**\n- A: Text 2 never doubts that the prints are human; its target is the dating, not the identification.\n- C: It overshoots — Text 2 faults one vulnerable material, while itself endorsing radiocarbon on terrestrial remains as a check.\n- D: It converts Text 2's caution into dogma; the author asks for confirmation before accepting the dates, not a declaration that they must be wrong.",
   "_meta": {
-    "source_pair": "americas-peopling (Clovis-first vs pre-Clovis)",
-    "crossTextRelationship": "challenge-to-premise"
+    "source_pair": "White Sands footprint dating (seed radiocarbon vs reservoir-effect caution)",
+    "crossTextRelationship": "methodological-challenge"
   }
 }

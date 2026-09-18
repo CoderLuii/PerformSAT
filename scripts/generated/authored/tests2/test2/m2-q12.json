@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "The linear model that best fits a collection of paired measurements passes through $(4, 23)$ and $(16, 59)$. The measurement $(10, k)$ sits as far above that model as the measurement $(22, 68)$ sits below it. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$32$"
+  },
+  {
+   "id": "B",
+   "text": "$41$"
+  },
+  {
+   "id": "C",
+   "text": "$50$"
+  },
+  {
+   "id": "D",
+   "text": "$68$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the 9-unit gap from the prediction at x = 10, placing the measurement below the model instead of above it: 41 - 9 = 32",
+  "B": "reports the model's predicted value at x = 10, 41, never applying the 9-unit gap",
+  "D": "reads 'as far above ... as ... below' as meaning the two measurements share a value, copying 68"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The model is $\\hat{y} = 3x + 11$, so $(22, 68)$ sits $77 - 68 = 9$ below it. At $x = 10$ the model gives $41$, so the measurement $9$ above it has $k = 50$.\n\n**The Full Solution:**\nStep 1: Build the model. Its slope is $\\frac{59 - 23}{16 - 4} = 3$, and $23 = 3(4) + b$ gives $b = 11$, so $\\hat{y} = 3x + 11$.\nStep 2: Measure the known gap. At $x = 22$ the model predicts $3(22) + 11 = 77$, and the measurement's value is $68$, so that measurement sits $77 - 68 = 9$ below the model.\nStep 3: Apply the same gap in the other direction. At $x = 10$ the model predicts $3(10) + 11 = 41$, and $(10, k)$ sits $9$ above it, so $k = 41 + 9 = 50$. Check: $50 - 41 = 9$ and $77 - 68 = 9$, equal gaps on opposite sides of the model ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($32$): computes $41 - 9$, placing $(10, k)$ below the model. The question puts $(10, k)$ above the model and $(22, 68)$ below it, so the two gaps carry opposite signs.\n* Choice B ($41$): reports the model's prediction at $x = 10$ and stops. That is where the measurement would sit if its gap were zero.\n* Choice D ($68$): copies the other measurement's value, reading \"as far above the model as the other sits below it\" as \"equal to it.\" The two measurements match in distance from the model, not in value.\n\n**Test Day Takeaway:** A measurement's gap from a model is the predicted value minus the observed value, so compute the gap you are given first, then add or subtract it in the direction the question names."
+}

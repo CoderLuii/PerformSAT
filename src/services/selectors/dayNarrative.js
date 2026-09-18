@@ -69,9 +69,13 @@ export function buildDayNarrative({ activities = [], weaknesses = [], daysUntilT
   // Test day — the checkpoint short-circuits everything else.
   const test = acts.find((a) => a.type === 'test');
   if (test) {
-    const base = /Practice Test 2/i.test(test.title || '')
-      ? `${lead} is your Practice Test 2 — the checkpoint that unlocks a deeper, more personal plan. Take it timed and uninterrupted.`
-      : `${lead} is a full practice test. Take it under real timed conditions so the result reflects where you actually stand.`;
+    // The starter plan's check-in is the adaptive diagnostic, not a
+    // full-length test — say so, or the coach line contradicts the card.
+    const base = test.activityType === 'miniDiagnostic'
+      ? `${lead} is your diagnostic — about half the length of a full SAT, adapting as you answer. Take it timed, and your plan rebuilds itself the moment you finish.`
+      : /Practice Test 2/i.test(test.title || '')
+        ? `${lead} is your Practice Test 2 — the checkpoint that unlocks a deeper, more personal plan. Take it timed and uninterrupted.`
+        : `${lead} is a full practice test. Take it under real timed conditions so the result reflects where you actually stand.`;
     return dc ? `${base} ${dc}` : base;
   }
 

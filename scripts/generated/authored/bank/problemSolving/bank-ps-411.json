@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-411",
+  "question": "A machine's daily output decreased by $15\\%$ during the first year and then decreased by $12\\%$ of the reduced amount during the second year. What was the total percent decrease in the machine's daily output over the two years?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$25.2\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$27\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$74.8\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the two percents, $15 - 12$",
+    "C": "adds the two percents, treating both as percents of the original output",
+    "D": "reports the percent of the original output that remains rather than the percent decrease"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The output is multiplied by $0.85$ and then by $0.88$: $0.85(0.88) = 0.748$, so the decrease is $1 - 0.748 = 0.252$, or $25.2\\%$.\n\n**The Full Solution:**\nStep 1: A $15\\%$ decrease multiplies the output by $0.85$; a further $12\\%$ decrease multiplies the new amount by $0.88$.\nStep 2: Over two years the output is multiplied by $0.85(0.88) = 0.748$, so $74.8\\%$ of the original output remains.\nStep 3: The total decrease is $100\\% - 74.8\\% = 25.2\\%$. Check with an output of $1{,}000$: after year one it is $850$, after year two it is $748$, a drop of $252$, which is $25.2\\%$ of $1{,}000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3\\%$): subtracts the two percents, $15 - 12$\n* Choice C ($27\\%$): adds the two percents, treating both as percents of the original output\n* Choice D ($74.8\\%$): reports the percent of the original output that remains rather than the percent decrease\n\n**Test Day Takeaway:** Successive percent changes multiply their factors; they never add, because the second percent is taken on a smaller base."
+}

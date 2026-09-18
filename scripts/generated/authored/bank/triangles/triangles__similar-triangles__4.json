@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "Triangle $ABC$ is similar to triangle $DEF$, and each side length of triangle $DEF$ is $\\frac{2}{3}$ times the corresponding side length of triangle $ABC$. If the area of triangle $ABC$ is $90$ square units, what is the area, in square units, of triangle $DEF$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40$"
+  },
+  {
+   "id": "B",
+   "text": "$60$"
+  },
+  {
+   "id": "C",
+   "text": "$135$"
+  },
+  {
+   "id": "D",
+   "text": "$202.5$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "multiplies by $\\frac{2}{3}$ once instead of squaring the scale factor",
+  "C": "inverts the ratio and uses $\\frac{3}{2}$ once",
+  "D": "inverts the ratio and squares it, using $\\frac{9}{4}$"
+ },
+ "correctAnswer": "A",
+ "hint": "The factor that applies to area is not the same as the one that applies to length.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** Area scales by $\\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}$, so the area is $90 \\cdot \\frac{4}{9} = 40$.\n\n**The Full Solution:**\nStep 1: Corresponding lengths scale by $\\frac{2}{3}$, so areas scale by $\\left(\\frac{2}{3}\\right)^2$.\nStep 2: $\\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}$.\nStep 3: The area of triangle $DEF$ is $90 \\cdot \\frac{4}{9} = 40$ square units.\n\nVerification: $\\frac{40}{90} = \\frac{4}{9} = \\left(\\frac{2}{3}\\right)^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($60$): multiplies by $\\frac{2}{3}$ once instead of squaring the scale factor.\n* Choice C ($135$): inverts the ratio and uses $\\frac{3}{2}$ once.\n* Choice D ($202.5$): inverts the ratio and squares it, using $\\frac{9}{4}$.\n\n**Test Day Takeaway:** Shrink every length by a factor and the area shrinks by that factor squared."
+}

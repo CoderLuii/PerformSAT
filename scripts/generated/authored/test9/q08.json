@@ -9,35 +9,23 @@
   "passages": [
     {
       "label": "Text 1",
-      "text": "Melvil Dewey's decimal scheme, introduced in 1876, assigns every book a number drawn from a fixed map of knowledge: broad classes divide into divisions, divisions into sections, each branch settled in advance. A cataloger's task is to find the single place a work belongs and file it there. Dewey held that a stable, enumerated hierarchy was exactly what a growing library needed, because staff and readers could learn one predictable order and trust that any subject already had its assigned slot waiting for it."
+      "text": "Excavating at Chavín de Huántar, a 3,000-year-old temple complex in the Peruvian Andes, the archaeologist John Rick has documented narrow stone galleries that channel and distort sound. Conch-shell trumpets recovered at the site produce roaring tones that, when played in the galleries, seem to issue from the walls themselves. Rick interprets these effects as instruments of authority: by staging overwhelming sensory experiences that only they could control, the temple's priests demonstrated seemingly supernatural power to visiting pilgrims."
     },
     {
       "label": "Text 2",
-      "text": "The librarian S. R. Ranganathan accepted that libraries need a systematic order but doubted that any fixed list of subjects could keep pace with knowledge. New and hybrid topics, he observed, rarely fall into a slot someone reserved decades earlier. His colon classification therefore built call numbers from separate facets—the discipline, the thing studied, its properties, place, and time—combined as needed. A subject no one had anticipated could still be expressed by assembling facets, without waiting for the master list to be revised."
+      "text": "Acoustics researcher Miriam Kolar has measured how Chavín de Huántar's galleries transmit and transform the sound of conch-shell trumpets, confirming that the disorienting effects reported by visitors can be reproduced and quantified today. Kolar notes, however, that demonstrating an effect is not the same as demonstrating a plan. Any building alters sound whether or not its makers intend it to, so tying the galleries' acoustics to deliberate design requires independent evidence about how the builders used and modified these spaces over time."
     }
   ],
-  "question": "Based on the texts, how would Ranganathan (Text 2) most likely respond to the view of classification described in Text 1?",
+  "question": "Based on the texts, how would Kolar (Text 2) most likely respond to the interpretation presented in Text 1?",
   "choices": [
-    {
-      "id": "A",
-      "text": "He would question the assumption that knowledge forms a fixed map with a slot for every subject, since new or hybrid topics can instead be expressed by combining facets."
-    },
-    {
-      "id": "B",
-      "text": "He would accept that books are best shelved in the order a library acquires them, abandoning any predetermined scheme."
-    },
-    {
-      "id": "C",
-      "text": "He would maintain that Dewey's fixed order is preferable because a single predictable sequence is easier for readers to memorize."
-    },
-    {
-      "id": "D",
-      "text": "He would conclude that because no fixed list can foresee every future subject, libraries ought to abandon systematic call numbers entirely and simply shelve each work in the order it happens to arrive."
-    }
+    { "id": "A", "text": "She would caution that the acoustic effects, though real and measurable, do not by themselves show that the galleries were built to produce them." },
+    { "id": "B", "text": "She would deny that the galleries at Chavín de Huántar meaningfully alter the sound of trumpets played inside them." },
+    { "id": "C", "text": "She would argue that the conch-shell trumpets were most likely played in the open plaza rather than within the temple's galleries." },
+    { "id": "D", "text": "She would agree that the priests deliberately engineered the galleries' acoustics but would question whether pilgrims actually found the resulting effects disorienting." }
   ],
   "correctAnswer": "A",
-  "explanation": "Text 1 rests on Dewey's premise that knowledge can be laid out as a fixed map with a reserved place for every subject. Ranganathan accepts the need for order but doubts that premise, since new and hybrid topics rarely fit a slot fixed in advance, and his facets can be combined to express them. Choice A states exactly that challenge to the premise. Choice B has him abandon order, C has him side with Dewey, and D pushes him to an extreme his own faceted system contradicts.",
+  "explanation": "**Choice A is correct.** Kolar confirms the effects but qualifies the inference drawn from them: \"demonstrating an effect is not the same as demonstrating a plan.\" Rick's interpretation treats the acoustics as engineered for authority; Kolar would answer that intent needs independent evidence.\n\n**The Full Solution:**\n- Text 1's claim has two layers: the galleries produce striking effects, and the builders designed them to do so.\n- Text 2 accepts the first layer outright — the effects \"can be reproduced and quantified today.\"\n- Her reservation targets the second layer only: buildings alter sound regardless of intent, so design must be established separately. That is precisely the caution choice A states.\n\n**Why the other choices are wrong:**\n- B: It reverses her position — she confirms, and has measured, the galleries' effects on sound.\n- C: Neither text raises the question of where the trumpets were played; Kolar's measurements concern the galleries themselves.\n- D: It grants the very point she declines to grant — deliberate engineering — and invents a doubt about pilgrims' reactions she never expresses.",
   "_meta": {
-    "anchor": "Dewey enumerative vs Ranganathan faceted classification"
+    "anchor": "John Rick (Stanford, Chavín excavations) and Miriam Kolar (archaeoacoustics at Chavín) — both real, registered in researchers.json"
   }
 }

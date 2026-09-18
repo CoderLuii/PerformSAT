@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
-  "passage": "When the Indian librarian S. R. Ranganathan introduced his colon classification in 1933, most library systems gave each book a single fixed number drawn from a predetermined list of subjects, so a work that touched on two fields had to be filed under just one of them. Ranganathan proposed a different principle. Rather than slot each work into one prearranged category, his system built a call number out of separate facets, such as subject, place, and time, that could be combined as a particular book required. The arrangement let a catalog represent works that fit no single heading, which the older fixed schemes could not easily do.",
+  "passage": "In the schools of the Greek and Roman world, students preparing for public life worked through the progymnasmata, a fixed sequence of composition exercises that began with retelling a fable and ended with arguing for or against a proposed law. Each exercise added one new demand: after fables came narratives, then anecdotes to expand upon, then maxims to defend, then speeches praising a figure or comparing two. A student never faced an open-ended assignment cold; every task rehearsed skills the previous ones had built. The sequence embodied its designers' conviction that eloquence was not a gift but a craft, assembled step by deliberate step.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "Ranganathan worked as a librarian in India for years before he published his classification system in 1933."
+      "text": "Students in Greek and Roman schools were required to memorize fables before studying law."
     },
     {
       "id": "B",
-      "text": "Ranganathan's system built each call number from combinable facets, letting it represent works that fixed single-category schemes could not easily place."
+      "text": "The progymnasmata taught rhetoric through a graded sequence whose every exercise built on the skills earlier ones developed."
     },
     {
       "id": "C",
-      "text": "Before 1933, most library systems gave every book a single fixed number drawn from a predetermined list of subjects."
+      "text": "Ancient teachers believed that only students with natural talent could benefit from studying the progymnasmata."
     },
     {
       "id": "D",
-      "text": "Ranganathan's system proved hard to adopt because it required librarians to master an unfamiliar set of facets."
+      "text": "The most difficult exercise in the progymnasmata required students to argue in favor of or against a law that had been proposed."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage contrasts the older fixed-category systems with Ranganathan's faceted approach and stresses what the new approach made possible: representing books that fit no single heading. Choice B captures that central contribution. Choice A reports only a biographical detail, and choice C states only the background problem the system was meant to solve. Choice D raises a difficulty of adoption that the passage never mentions, so it cannot be the main idea."
+  "explanation": "**Choice B is correct.** The text's point is the design of the sequence: each exercise \"added one new demand\" and \"every task rehearsed skills the previous ones had built\" — cumulative, graded training in rhetoric.\n\n**The Full Solution:**\n- The opening defines the progymnasmata as \"a fixed sequence\" running from fable to legal argument.\n- The middle sentences explain the principle of the sequence — one new demand at a time, nothing faced cold.\n- The closing sentence gives the conviction behind it: eloquence as a craft \"assembled step by deliberate step.\" Choice B gathers all of this; the others each seize a fragment.\n\n**Why the other choices are wrong:**\n- A: Fables were retold, not memorized, and the law exercise was rhetorical practice, not legal study.\n- C: The text says the opposite — the sequence treated eloquence as a craft anyone could assemble, \"not a gift.\"\n- D: The final exercise is a detail marking the sequence's endpoint, not the idea the text is organized to convey."
 }

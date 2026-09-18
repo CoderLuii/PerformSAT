@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "For $x > 0$, the product $\\sqrt[3]{x^7} \\cdot \\sqrt{x^5} \\cdot x^{-2}$ is rewritten as a single sixth root $\\sqrt[6]{x^n}$ with $n$ a positive integer. What must the value of $n$ be?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$17$"
+  },
+  {
+   "id": "B",
+   "text": "$23$"
+  },
+  {
+   "id": "C",
+   "text": "$29$"
+  },
+  {
+   "id": "D",
+   "text": "$41$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "multiplies the fractional exponents, 7/3 times 5/2 = 35/6, then subtracts 2 to get 23/6",
+  "C": "adds 7/3 and 5/2 correctly but drops the x^-2 factor, leaving 29/6",
+  "D": "treats x^-2 as x^2 and adds it, giving 29/6 + 2 = 41/6"
+ },
+ "explanation": "**SAT Pattern: Exponent Rules with Radicals**\n\n**Choice A is correct.** The three exponents are $\\frac{7}{3}$, $\\frac{5}{2}$, and $-2$. Their sum is $\\frac{14}{6} + \\frac{15}{6} - \\frac{12}{6} = \\frac{17}{6}$, and $x^{17/6} = \\sqrt[6]{x^{17}}$, so $n = 17$.\n\n**The Fast Way (~30s):** Put everything over $6$: $\\frac{14 + 15 - 12}{6} = \\frac{17}{6}$, so $n = 17$.\n\n**The Full Solution:**\nStep 1: Rewrite each radical as a power: $\\sqrt[3]{x^7} = x^{7/3}$ and $\\sqrt{x^5} = x^{5/2}$.\nStep 2: Multiplying powers of the same base adds exponents: $\\frac{7}{3} + \\frac{5}{2} - 2 = \\frac{14}{6} + \\frac{15}{6} - \\frac{12}{6} = \\frac{17}{6}$.\nStep 3: Check with the true exponent: $x^{17/6} = \\sqrt[6]{x^{17}}$, and cubing the whole product would give $x^{17/2}$, matching $\\left(x^{7/3}\\right)^3 \\left(x^{5/2}\\right)^3 \\left(x^{-2}\\right)^3 = x^{7} x^{15/2} x^{-6}$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($23$): multiplies $\\frac{7}{3}$ by $\\frac{5}{2}$ instead of adding them, then subtracts $2$ to reach $\\frac{23}{6}$. Exponents multiply only when a power is raised to a power.\n* Choice C ($29$): adds the two radical exponents correctly but never applies the $x^{-2}$ factor, stopping at $\\frac{29}{6}$.\n* Choice D ($41$): reads $x^{-2}$ as $x^{2}$ and adds $2$, producing $\\frac{29}{6} + \\frac{12}{6} = \\frac{41}{6}$.\n\n**Test Day Takeaway:** Convert every radical to a fractional exponent first, put all the exponents over one common denominator, then add. The denominator you choose is the index of the single radical the answer wants."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "bank-ps-434",
+  "question": "A costume shop's model predicts $f = 3.5g + 12$ yards of fabric for a garment of size $g$, and the table gives the fabric actually used for four garments. For how many of these garments does the fabric used exceed the predicted amount by more than $4$ yards?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Garment",
+        "Size (g)",
+        "Fabric used (yards)"
+      ],
+      "rows": [
+        [
+          "W",
+          "4",
+          "31"
+        ],
+        [
+          "X",
+          "6",
+          "40"
+        ],
+        [
+          "Y",
+          "8",
+          "46"
+        ],
+        [
+          "Z",
+          "10",
+          "50"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$2$"
+    },
+    {
+      "id": "C",
+      "text": "$3$"
+    },
+    {
+      "id": "D",
+      "text": "$4$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "counts only the single largest excess, garment X at 7 yards",
+    "B": "counts only the excesses above 5 yards, garments X and Y, using the wrong threshold",
+    "D": "counts every garment whose use exceeds the prediction at all, including garment Z at 3 yards"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Residual**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Predictions are $26$, $33$, $40$, $47$; the excesses are $5$, $7$, $6$, $3$, and three of them clear $4$ yards.\n\n**The Full Solution:**\nStep 1: Predict for each size. $f = 3.5(4) + 12 = 26$, $f = 3.5(6) + 12 = 33$, $f = 3.5(8) + 12 = 40$, $f = 3.5(10) + 12 = 47$ yards.\nStep 2: Subtract predicted from used. Garment W: $31 - 26 = 5$. Garment X: $40 - 33 = 7$. Garment Y: $46 - 40 = 6$. Garment Z: $50 - 47 = 3$.\nStep 3: Apply the threshold. The excesses greater than $4$ are $5$, $7$, and $6$ — three garments. Garment Z falls short at $3$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): counts only garment X, the single largest excess, instead of every garment that clears $4$ yards.\n* Choice B ($2$): uses a threshold of more than $5$ yards, which keeps only garments X and Y.\n* Choice D ($4$): counts every garment whose use exceeds its prediction, including garment Z, whose excess is only $3$ yards.\n\n**Test Day Takeaway:** A \"how many exceed by more than $k$\" item needs all four residuals computed, then one comparison each — do not stop at the largest."
+}

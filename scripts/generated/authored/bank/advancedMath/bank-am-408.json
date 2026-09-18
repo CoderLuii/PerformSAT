@@ -1,0 +1,53 @@
+{
+  "question": "An amplifier increases a signal's intensity by the same factor at every stage. The table gives the measured intensity $I$, in microwatts, after $n$ stages. Which equation gives the intensity after $n$ stages of amplification?",
+  "questionTable": {
+    "headers": [
+      "Stages, $n$",
+      "Intensity, $I$ (microwatts)"
+    ],
+    "rows": [
+      [
+        "$0$",
+        "$7$"
+      ],
+      [
+        "$2$",
+        "$21$"
+      ],
+      [
+        "$4$",
+        "$63$"
+      ],
+      [
+        "$6$",
+        "$189$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$I=7(3)^{n}$"
+    },
+    {
+      "id": "B",
+      "text": "$I=7(3)^{n/2}$"
+    },
+    {
+      "id": "C",
+      "text": "$I=7(3)^{2n}$"
+    },
+    {
+      "id": "D",
+      "text": "$I=21(3)^{n/2}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "treated 3 as the per-stage factor although the table steps by 2 stages",
+    "C": "multiplied n by 2 instead of dividing by 2",
+    "D": "used the second table entry 21 as the intensity at n = 0"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Build Exponential Growth Model**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The intensity triples every $2$ stages and starts at $7$, so the exponent must be $n/2$: $I=7(3)^{n/2}$.\n\n**The Full Solution:**\nStep 1: The table entries are $2$ stages apart, and $21/7=3$, $63/21=3$, $189/63=3$, so the factor is $3$ per $2$ stages.\nStep 2: An exponential model has the form $I=I_{0}(\\text{factor})^{n/\\text{gap}}$, with $I_{0}=7$ at $n=0$ and gap $2$.\nStep 3: So $I=7(3)^{n/2}$. Check at $n=6$: $7(3)^{3}=7\\cdot 27=189$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($I=7(3)^{n}$): treats $3$ as the per-stage factor, giving $7(3)^{6}=5{,}103$ at $n=6$.\n* Choice C ($I=7(3)^{2n}$): multiplies $n$ by the gap instead of dividing, giving $7(3)^{12}$ at $n=6$.\n* Choice D ($I=21(3)^{n/2}$): uses the second table entry $21$ as the intensity at $n=0$.\n\n**Test Day Takeaway:** When the table steps by more than one unit, divide the exponent by that step before trusting the growth factor.",
+  "id": "bank-am-408"
+}

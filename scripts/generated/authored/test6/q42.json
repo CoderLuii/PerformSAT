@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "inferences",
-  "passage": "In one experiment, two groups of volunteers, matched in advance for age, fitness, and prior performance, complete the same demanding physical task. The only difference between the groups is a single sentence in the instructions: one group is told the task tends to reveal a person's natural physical limits, the other that it tends to improve with effort. The first group, on average, gives up sooner than the second. Because the task, the participants, and the conditions are identical except for that one sentence, the gap in persistence is most reasonably attributed to ______",
+  "passage": "In a public-goods experiment, players receive tokens and choose how many to contribute to a common pool, which is multiplied and shared equally among the group; a free rider keeps his own tokens while still collecting his share of the pool. Over repeated rounds, contributions typically start moderate and collapse toward zero. The economists Ernst Fehr and Simon Gächter added one feature: after each round, any player could pay a fee to reduce a specific other player's earnings. Punishing was costly to the punisher and brought no material return, yet players used it freely against low contributors — and under its threat, contributions climbed round after round instead of collapsing. The finding suggests that ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "an underlying difference in physical ability between the two groups, since matching cannot control for every relevant trait."
+      "text": "players in the punishment condition misunderstood how the common pool's multiplier worked."
     },
     {
       "id": "B",
-      "text": "a flaw in the task itself, which must be too difficult to measure persistence reliably."
+      "text": "cooperation in groups collapses whenever a punishment option is available to players."
     },
     {
       "id": "C",
-      "text": "the wording of the instructions rather than to any prior difference between the groups, since that wording is the only thing distinguishing them."
+      "text": "many people will pay a personal cost to sanction free riding, and the prospect of such sanctions can sustain cooperation."
     },
     {
       "id": "D",
-      "text": "chance variation that would disappear if the experiment were run just one more time."
+      "text": "free riding disappears only when punishing it yields a material profit for the punisher."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The two groups were matched and faced identical conditions except for one sentence of instructions, so the only thing that could explain their different persistence is that sentence. Choice C draws exactly that conclusion. Choice A blames an ability difference, but matching was designed to rule that out, and nothing suggests it failed. Choice B faults the task, yet both groups did the same task, so it cannot account for a difference between them. Choice D attributes the gap to chance, which the controlled setup gives no reason to assume."
+  "explanation": "**Choice C is correct.** The two observations force the two-part conclusion: players punished free riders despite bearing a cost with no return (people will pay to sanction), and under the threat of sanction, contributions climbed instead of collapsing (sanctions sustain cooperation).\n\n**The Full Solution:**\n- Premise one: punishment cost the punisher and paid nothing back, \"yet players used it freely against low contributors.\"\n- Premise two: with punishment available, the usual collapse reversed into round-after-round growth.\n- C is the conjunction of exactly these two results, generalized no further than the evidence allows.\n\n**Why the other choices are wrong:**\n- A: Nothing suggests confusion — the baseline collapse shows players understood free riding paid, which is the puzzle punishment solved.\n- B: It inverts the result; the punishment condition is where cooperation grew.\n- D: The experiment shows the opposite — punishment carried no material profit, and free riding was suppressed anyway."
 }

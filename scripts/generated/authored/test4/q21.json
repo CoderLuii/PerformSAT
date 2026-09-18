@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
+  "module": 1,
+  "passage": "The pigment ultramarine — ground from lapis lazuli that reached European scriptoria along trade routes beginning in the mountain mines of ______ was so costly that illuminators reserved it for a manuscript's most honored pages: full-page miniatures and the robes of central figures.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "Territory:"
+      "text": "Afghanistan:"
     },
     {
       "id": "B",
-      "text": "Territory —"
+      "text": "Afghanistan —"
     },
     {
       "id": "C",
-      "text": "Territory,"
+      "text": "Afghanistan,"
     },
     {
       "id": "D",
-      "text": "Territory"
+      "text": "Afghanistan"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The clause \"in which U.S. Cavalry forces attacked a peaceful Cheyenne and Arapaho encampment in the Colorado Territory\" is a parenthetical opened by an em-dash earlier in the sentence, so it must be closed by a matching em-dash, as in B. A comma (C) or a colon (A) does not pair with the opening dash, and leaving the mark out entirely (D) lets the parenthetical run into the main clause with no boundary.",
-  "passage": "Historian Ari Kelman has examined how the 1864 Sand Creek Massacre — in which U.S. Cavalry forces attacked a peaceful Cheyenne and Arapaho encampment in the Colorado ______ entered American public memory, tracing the long struggle over how the site would be described and who would be permitted to commemorate it.",
+  "explanation": "**Choice B is correct.** The interrupting phrase that begins with the dash after \"ultramarine\" must be closed by a matching dash before the sentence resumes at \"was so costly.\"\n\n**The Full Solution:**\n- The frame sentence is \"The pigment ultramarine ... was so costly that ...\"\n- \"— ground from lapis lazuli ... Afghanistan\" is an interruption opened with an em dash.\n- Paired punctuation must match: an interruption opened with a dash is closed with a dash.\n\n**Why the other choices are wrong:**\n- A: A colon cannot close an interruption that a dash opened, and nothing after the blank is being introduced as a list or explanation.\n- C: A comma mismatches the opening dash, leaving the pair unbalanced.\n- D: With no punctuation, the interruption never closes, and the frame sentence's subject and verb collide with the modifier.",
   "_meta": {
-    "anchor": "Ari Kelman — A Misplaced Massacre (entity_keep); paired em-dashes"
-  },
-  "module": 1
+    "anchor": "ultramarine in manuscript illumination; paired em-dashes"
+  }
 }

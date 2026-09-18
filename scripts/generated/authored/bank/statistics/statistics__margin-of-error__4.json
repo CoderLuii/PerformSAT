@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "In a poll of a random sample of likely voters, candidate Okafor was preferred by $51\\%$ of those sampled and candidate Villar by $49\\%$, each estimate reported with a margin of error of $3$ percentage points. Which conclusion about the preferences of all likely voters is most appropriate?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Okafor is preferred by more than half of all likely voters."
+    },
+    {
+      "id": "B",
+      "text": "Villar is preferred by fewer than $46\\%$ of all likely voters."
+    },
+    {
+      "id": "C",
+      "text": "It is plausible that Villar is preferred by more likely voters than Okafor."
+    },
+    {
+      "id": "D",
+      "text": "Exactly $51\\%$ of all likely voters prefer Okafor."
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats the $51\\%$ estimate as decisive, but values as low as $48\\%$ are plausible for Okafor.",
+    "B": "$46\\%$ is the lower end of Villar’s interval, so values below it are exactly the ones the poll does not support.",
+    "D": "reports the sample percentage as the population percentage, which the margin of error rules out as a conclusion."
+  },
+  "correctAnswer": "C",
+  "hint": "Write out both intervals of plausible values and see whether they overlap.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~40s):** Plausible values run from $48\\%$ to $54\\%$ for Okafor and from $46\\%$ to $52\\%$ for Villar. The intervals overlap, so either candidate could be ahead.\n\n**The Full Solution:**\nStep 1: Okafor’s interval of plausible values is $51\\% \\pm 3\\%$, from $48\\%$ to $54\\%$.\nStep 2: Villar’s interval is $49\\% \\pm 3\\%$, from $46\\%$ to $52\\%$.\nStep 3: The intervals overlap between $48\\%$ and $52\\%$, so a support level for Villar above Okafor’s is plausible. Check: for example, $50\\%$ for Villar and $49\\%$ for Okafor lie inside both intervals. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: treats the $51\\%$ estimate as decisive, but values as low as $48\\%$ are plausible for Okafor.\n* Choice B: $46\\%$ is the lower end of Villar’s interval, so values below it are exactly the ones the poll does not support.\n* Choice D: reports the sample percentage as the population percentage, which the margin of error rules out as a conclusion.\n\n**Test Day Takeaway:** When two estimates come with margins of error, compare the intervals, not the two headline numbers. Overlapping intervals mean no lead can be claimed."
+}

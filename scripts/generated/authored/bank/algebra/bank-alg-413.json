@@ -1,0 +1,29 @@
+{
+ "question": "A solver routine receives the system $4x+y=23$ and $y=x-2$, then replaces $y$ in the first equation using the second so that only the variable $x$ remains. Which equation does the routine obtain?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4(x-2)=23$"
+  },
+  {
+   "id": "B",
+   "text": "$4x-x+2=23$"
+  },
+  {
+   "id": "C",
+   "text": "$4x+x-2=23$"
+  },
+  {
+   "id": "D",
+   "text": "$4x+x+2=23$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "multiplies 4 by x - 2 and loses the separate 4x term",
+  "B": "subtracts the substituted expression instead of adding it",
+  "D": "adds 2 instead of subtracting it, dropping the minus sign inside x - 2"
+ },
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**Choice C is correct.** Replacing $y$ with $x-2$ in $4x+y=23$ gives $4x+(x-2)=23$, which is $4x+x-2=23$.\n\n**The Fast Way (~20s):** Substitution swaps $y$ for $x-2$ and leaves $4x$ alone: $4x+x-2=23$.\n\n**The Full Solution:**\n\nStep 1: The second equation gives $y$ by itself, so $y$ can be replaced wherever it appears.\n\nStep 2: In $4x+y=23$, only the single $y$ is replaced: $4x+(x-2)=23$. Removing the parentheses after a plus sign changes nothing, giving $4x+x-2=23$.\n\nStep 3: Simplifying confirms one variable remains: $5x-2=23$, so $x=5$ and $y=3$. Check: $4(5)+3=23$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: multiplies $4$ by $x-2$, replacing the $x$ in $4x$ as well as the $y$.\n* Choice B: subtracts the substituted expression although the original equation adds it.\n* Choice D: adds $2$ rather than subtracting it, losing the minus inside $x-2$.\n\n**Test Day Takeaway:** Substitute only for the variable being replaced, and keep the substituted expression in parentheses until you are sure of the signs.",
+ "id": "bank-alg-413"
+}

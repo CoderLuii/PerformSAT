@@ -1,0 +1,41 @@
+{
+ "id": "bank-geo-353",
+ "question": "Two perpendicular guide rails run from the center of a circular sample turntable to its rim, and the quarter region between them has area $20.25\\pi$ square centimeters. What is the straight-line distance, in centimeters, between the rails' outer ends?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 90,
+   "angleLabel": "90°",
+   "showAngleLabel": true,
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$9\\sqrt{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$18\\sqrt{2}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the radius and stops before crossing the right triangle at the center",
+  "C": "reports the diameter, twice the radius, instead of the chord",
+  "D": "doubles the chord by using 18 as the radius"
+ },
+ "explanation": "**SAT Pattern: Right Triangle at Center — Chord Length**\n\n**Choice B is correct.** A quarter of the disk has area $\\frac{\\pi r^2}{4} = 20.25\\pi$, so $r = 9$, and the chord joining the two rail ends is $9\\sqrt{2}$ centimeters.\n\n**The Fast Way (~40s):** $r^2 = 81$ gives $r = 9$; the two radii and the chord form a $45$-$45$-$90$ triangle, so the chord is $9\\sqrt{2}$.\n\n**The Full Solution:**\n\nStep 1: The rails are perpendicular, so the region between them is a quarter of the disk: $\\frac{1}{4}\\pi r^2 = 20.25\\pi$.\n\nStep 2: Divide by $\\pi$ and multiply by $4$: $r^2 = 81$, so $r = 9$ centimeters.\n\nStep 3: The two radii and the segment joining their outer ends form an isosceles right triangle with legs $9$, so the segment is $9\\sqrt{2}$ centimeters. Check: $9^2 + 9^2 = 162 = (9\\sqrt{2})^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($9$): reports the radius rather than the distance across the opening.\n* Choice C ($18$): reports the diameter, which is the distance between opposite rim points, not perpendicular ones.\n* Choice D ($18\\sqrt{2}$): uses $18$ as the radius, doubling the chord.\n\n**Test Day Takeaway:** Two radii and a chord always form an isosceles triangle; when the central angle is $90^\\circ$ that triangle is $45$-$45$-$90$ and the chord is $r\\sqrt{2}$."
+}

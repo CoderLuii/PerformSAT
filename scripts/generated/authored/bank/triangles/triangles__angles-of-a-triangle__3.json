@@ -1,0 +1,41 @@
+{
+ "id": 3,
+ "question": "A container-yard gantry rests on the triangular support shown, whose three interior angle measures, in degrees, are $(x + 12)$, $(2x)$, and $(x - 8)$. Which of the following is the largest of the three measures?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "(x + 12)°",
+    "(2x)°",
+    "(x - 8)°"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$36$"
+  },
+  {
+   "id": "B",
+   "text": "$44$"
+  },
+  {
+   "id": "C",
+   "text": "$56$"
+  },
+  {
+   "id": "D",
+   "text": "$88$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the smallest angle, (x - 8)",
+  "B": "reports the value of x rather than an angle measure",
+  "C": "reports the angle (x + 12) instead of the largest"
+ },
+ "correctAnswer": "D",
+ "hint": "Which expression is largest is not settled until $x$ has a value.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~30s):** $(x + 12) + 2x + (x - 8) = 180$ gives $x = 44$, so the angles are $56$, $88$, and $36$ degrees.\n\n**The Full Solution:**\nStep 1: Set the sum of the three measures equal to $180$: $(x + 12) + 2x + (x - 8) = 180$, which simplifies to $4x + 4 = 180$.\nStep 2: Solving gives $4x = 176$, so $x = 44$.\nStep 3: The three angles are $44 + 12 = 56$, $2(44) = 88$, and $44 - 8 = 36$ degrees, so the largest is $88$. Check: $56 + 88 + 36 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($36$): reporting the smallest angle, $(x - 8)$, instead of the largest.\n* Choice B ($44$): reporting the value of $x$; $x$ is not itself an angle measure here.\n* Choice C ($56$): reporting $(x + 12)$, which is larger than $(x - 8)$ but smaller than $2x$.\n\n**Test Day Takeaway:** Solve for the variable, then evaluate every expression before deciding which one the question wants."
+}

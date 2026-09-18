@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "The price of a discontinued espresso grinder falls by $12\\%$ each year, and the price was $\\$1{,}450$ when the markdown schedule began. A retailer models the price after $m$ months as $V(m) = 1{,}450b^{m}$, where $b$ is a constant. Which expression is equal to $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(0.12)^{\\frac{1}{12}}$"
+  },
+  {
+   "id": "B",
+   "text": "$(0.88)^{12}$"
+  },
+  {
+   "id": "C",
+   "text": "$(0.88)^{\\frac{1}{12}}$"
+  },
+  {
+   "id": "D",
+   "text": "$(1.12)^{\\frac{1}{12}}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the percent removed, 0.12, as the yearly factor instead of the retained fraction 0.88",
+  "B": "raises the yearly factor to the 12th power, which is the factor for 12 years, not one month",
+  "D": "treats a 12% decrease as a 12% increase, using 1.12 in place of 0.88"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** One year is $12$ months and multiplies the price by $0.88$, so $b^{12} = 0.88$ and $b = (0.88)^{\\frac{1}{12}}$.\n\n**The Full Solution:**\nStep 1: A $12\\%$ decrease leaves $100\\% - 12\\% = 88\\%$ of the price, so each year multiplies the price by $0.88$.\nStep 2: In the model, $m$ counts MONTHS, so one year corresponds to $m = 12$ and the yearly factor is $b^{12}$. Setting the two descriptions of one year equal gives $b^{12} = 0.88$.\nStep 3: Take the twelfth root of both sides: $b = (0.88)^{\\frac{1}{12}}$. Check the size: $b \\approx 0.9894$, a small monthly drop, and $(0.9894)^{12} \\approx 0.88$ as required.\n\n**Why the wrong answers are tempting:**\n* Choice A ($(0.12)^{\\frac{1}{12}}$): uses the percent that is REMOVED as the multiplier. A factor of $0.12$ per year would erase $88\\%$ of the price each year, not $12\\%$.\n* Choice B ($(0.88)^{12}$): raises the yearly factor to the twelfth power. That value, about $0.22$, is the factor after twelve YEARS; a single month must shrink the price far less than a single year does.\n* Choice D ($(1.12)^{\\frac{1}{12}}$): reads falls by $12\\%$ as growth and uses $1.12$. Any base greater than $1$ makes the modeled price rise over time, contradicting a markdown.\n\n**Test Day Takeaway:** Convert the stated rate into a multiplier ($1 - r$ for a decrease), then match the time unit of the exponent. When the model counts months and the rate is annual, the base is the twelfth root of the annual factor."
+}

@@ -1,0 +1,6 @@
+{
+ "question": "The groove boundary of a lacquer master disc is modeled in the $xy$-plane by $(x - 7)^2 + (y + a)^2 = 169$, where $a$ is a constant and units are centimeters. The lowest point of the boundary is at $y = -21$. What is the value of $a$?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~25s):** The center sits at $(7, -a)$ with radius $13$, and the lowest point is $13$ below the center: $-a - 13 = -21$, so $a = 8$.\n\n**The Full Solution:**\nStep 1: Match $(x - 7)^2 + (y + a)^2 = 169$ to standard form. The center is $(7, -a)$ and $r = \\sqrt{169} = 13$ centimeters.\nStep 2: The lowest point of a circle lies directly below the center, at $y = -a - 13$. Setting this equal to $-21$ gives $-a - 13 = -21$.\nStep 3: Solve: $-a = -8$, so $a = 8$. Check: with $a = 8$ the center is $(7, -8)$ and the lowest point is $-8 - 13 = -21$ ✓\n\n**Common Mistakes:**\n* $34$ — adds the radius instead of subtracting, solving $-a + 13 = -21$.\n* $-8$ — reads the center's $y$-coordinate as $a$ rather than $-a$.\n* $21$ — ignores the radius and sets $-a = -21$, which locates the center rather than the lowest point.\n\n**Test Day Takeaway:** In $(y + a)^2$ the center's $y$-coordinate is $-a$; extreme points sit exactly one radius above or below that value.",
+ "id": "bank-geo-104"
+}

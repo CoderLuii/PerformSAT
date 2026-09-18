@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A quality inspector examines a rack of $30$ shirts, $6$ of which have a stitching flaw. One shirt with a flaw is removed from the rack. Which expression gives the probability that a shirt then chosen at random from the rack has a flaw?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{5}{30}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{5}{29}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{6}{30}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{6}{29}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reduces the flawed count to 5 but leaves the total at 30, forgetting the removed shirt leaves the rack",
+  "C": "ignores the removal entirely and uses the original 6 out of 30",
+  "D": "reduces the total to 29 but leaves the flawed count at 6, forgetting the shirt removed was itself flawed"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**Choice B is correct.** Removing one flawed shirt lowers both counts: $5$ flawed shirts remain among $29$ shirts, so the probability is $\\frac{5}{29}$.\n\n**The Fast Way (~15s):** Subtract $1$ from the flawed count and $1$ from the total, since the removed shirt was flawed: $\\frac{6-1}{30-1} = \\frac{5}{29}$.\n\n**The Full Solution:**\nStep 1: At the start the rack holds $30$ shirts, of which $6$ have a flaw.\nStep 2: One flawed shirt is removed. The rack now holds $30 - 1 = 29$ shirts, of which $6 - 1 = 5$ have a flaw.\nStep 3: Probability is favorable outcomes over total outcomes, so the answer is $\\frac{5}{29}$. Check the complement: $\\frac{24}{29}$ shirts are flawless, and $\\frac{5}{29} + \\frac{24}{29} = 1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{5}{30}$): the numerator is updated but the denominator is not; the shirt removed is no longer available to be chosen.\n* Choice C ($\\frac{6}{30}$): this is the probability before the removal, which is what \"with replacement\" would give.\n* Choice D ($\\frac{6}{29}$): the denominator is updated but the numerator is not; the shirt removed was one of the flawed ones, so the flawed count also drops.\n\n**Test Day Takeaway:** Without replacement, update every count the removed item belonged to — the total always, and the favorable count whenever the removed item was favorable."
+}

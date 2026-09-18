@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "A reservoir with a rectangular base measuring $12$ feet by $8$ feet holds $2{,}400$ cubic feet of water. By how many feet does the water level rise when an additional $960$ cubic feet of water is added?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10$"
+  },
+  {
+   "id": "B",
+   "text": "$25$"
+  },
+  {
+   "id": "C",
+   "text": "$35$"
+  },
+  {
+   "id": "D",
+   "text": "$80$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "gives the original depth of the water rather than the rise",
+  "C": "gives the new depth rather than the increase",
+  "D": "divides the added volume by the length only"
+ },
+ "correctAnswer": "A",
+ "hint": "The base does not change, so only the depth responds to the extra water.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~35s):** The base area is $96$ square feet, so the rise is $\\frac{960}{96} = 10$ feet.\n\n**The Full Solution:**\nStep 1: The water forms a rectangular prism whose base area is $12 \\cdot 8 = 96$ square feet.\nStep 2: The added volume equals the base area times the rise: $960 = 96r$.\nStep 3: So $r = \\frac{960}{96} = 10$ feet.\n\nVerification: The depth goes from $\\frac{2400}{96} = 25$ feet to $\\frac{3360}{96} = 35$ feet, a rise of $10$ feet. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($25$): gives the original depth of the water rather than the rise.\n* Choice C ($35$): gives the new depth rather than the increase.\n* Choice D ($80$): divides the added volume by the length only.\n\n**Test Day Takeaway:** When the base is fixed, a change in volume is just a change in height: divide the added volume by the base area."
+}

@@ -1,0 +1,56 @@
+{
+ "id": "bank-ps-396",
+ "question": "The table gives the number of goals a striker scored in each of four matches, where $g$ represents the number scored in match 4. The mean number of goals over the four matches is $3.5$. What is the value of $g$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Match",
+    "Goals"
+   ],
+   "rows": [
+    [
+     "1",
+     "3"
+    ],
+    [
+     "2",
+     "5"
+    ],
+    [
+     "3",
+     "4"
+    ],
+    [
+     "4",
+     "g"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$3.5$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "repeats the given mean of $3.5$ goals as the missing entry",
+  "C": "averages only the three known matches, $\\frac{12}{3} = 4$",
+  "D": "reports the required four-match total, $3.5(4) = 14$, without subtracting the known goals"
+ },
+ "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice A is correct.** The four matches must total $3.5(4) = 14$ goals, and the three shown total $12$, so $g = 2$.\n\n**The Fast Way (~25s):** $3.5(4) = 14$ and $3 + 5 + 4 = 12$, so $g = 14 - 12 = 2$.\n\n**The Full Solution:**\n\nStep 1: Turn the mean into a total. Four matches with a mean of $3.5$ goals give a total of $3.5(4) = 14$ goals.\n\nStep 2: Add the goals from the three matches with numeric entries: $3 + 5 + 4 = 12$ goals.\n\nStep 3: Subtract: $g = 14 - 12 = 2$ goals. Check: $\\frac{3 + 5 + 4 + 2}{4} = \\frac{14}{4} = 3.5$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($3.5$): copies the mean into the missing cell. The mean is a property of the set, not the value of any one match.\n* Choice C ($4$): averages the three known matches, which ignores that the mean given covers all four.\n* Choice D ($14$): reports the required total for the four matches instead of the one missing entry.\n\n**Test Day Takeaway:** A mean and a count give you a total; the entry you want is that total minus everything the table already shows."
+}

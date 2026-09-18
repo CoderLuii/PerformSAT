@@ -1,31 +1,31 @@
 {
-  "id": 1202,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "Among the Asante of present-day Ghana, master weavers produce kente by joining many narrow strips of patterned cloth into a single large textile. Historians of West African dress emphasize that the choice of colors and motifs is not merely decorative: particular patterns ____ specific proverbs, clan affiliations, and historical events, so that a finished cloth can be read by those who know the visual vocabulary much as a written document can be read.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "display"
-    },
-    {
-      "id": "B",
-      "text": "mimic"
-    },
-    {
-      "id": "C",
-      "text": "encode"
-    },
-    {
-      "id": "D",
-      "text": "conceal"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage says the cloth \"can be read by those who know the visual vocabulary,\" so the patterns must store meaning that a knowing viewer can decode; \"encode\" names precisely that storing of information in a form to be read out later. \"Display\" is tempting because cloth does show its patterns openly, but one displays a pattern, not a proverb, and the point is that the meanings are carried in a code rather than shown plainly. \"Conceal\" runs the wrong way, since the text stresses that the meanings can be read, not hidden. \"Mimic\" would mean the patterns imitate proverbs, which makes little sense."
+ "id": 1202,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "Two lighthouses standing on the same stretch of coast can look nearly identical from the deck of a ship, and by day their lamps are of little help. Maritime authorities therefore paint each tower with its own bold pattern of stripes, bands, or checks, called a daymark. Because no two towers within sight of each other share a pattern, a sailor who consults a chart can ____ any lighthouse at a glance and fix the ship's position from it.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "admire"
+  },
+  {
+   "id": "B",
+   "text": "approach"
+  },
+  {
+   "id": "C",
+   "text": "identify"
+  },
+  {
+   "id": "D",
+   "text": "restore"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The whole point of the daymark system is telling towers apart: no two neighboring towers share a pattern, so a sailor with a chart can recognize which lighthouse is which. \"Identify\" means exactly that.\n\n**The Full Solution:**\n- The problem the passage sets up is confusion — two lighthouses \"can look nearly identical\" from a ship.\n- The solution is a unique painted pattern per tower, and the payoff is that a sailor \"can ____ any lighthouse at a glance and fix the ship's position from it.\"\n- Fixing a position from a lighthouse only works if the sailor knows which lighthouse it is, so the blank must mean recognizing or naming it: \"identify.\"\n\n**Why the other choices are wrong:**\n- A: \"Admire\" is about appreciating the tower's looks, which does nothing to fix a position.\n- B: \"Approach\" means to move toward the lighthouse, but the sailor is reading it from a distance, not sailing at it.\n- D: \"Restore\" means to repair the tower, an activity that has nothing to do with the patterns or the chart."
 }

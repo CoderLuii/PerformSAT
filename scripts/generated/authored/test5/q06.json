@@ -1,35 +1,35 @@
 {
-  "id": 506,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "The following text is from Herman Melville's 1851 novel Moby-Dick. The narrator, Ishmael, opens his account.\n\nCall me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To present the narrator's practice of going to sea as a personal remedy he turns to when he is restless and out of sorts on shore."
-    },
-    {
-      "id": "B",
-      "text": "To describe in detail the financial hardships that had left the narrator with very little money in his purse before the voyage began."
-    },
-    {
-      "id": "C",
-      "text": "To compare the narrator's life aboard a ship at sea with the daily routines of the people who choose to remain on shore."
-    },
-    {
-      "id": "D",
-      "text": "To explain the particular navigational techniques the narrator depends on while sailing across the watery part of the world."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The narrator says that when he has little money and nothing to interest him on land, he goes to sea, and he names the reason directly: it is his way \"of driving off the spleen and regulating the circulation\"—that is, of relieving his low spirits and restlessness. The passage's purpose is to present sailing as that personal remedy. Choice B treats a passing detail (his empty purse) as the whole point. Choice C invents a comparison with people who stay ashore that the passage does not develop. Choice D supplies a topic—navigation—that the passage never takes up.",
-  "_meta": {
-    "quoteVerify": true,
-    "source": "Herman Melville, Moby-Dick (1851), Chapter 1 ('Loomings'), opening lines"
+ "id": 506,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "The following text is from Jack London's 1903 novel The Call of the Wild. Buck, a dog, lives comfortably on a California estate.\n\nBuck did not read the newspapers, or he would have known that trouble was brewing, not alone for himself, but for every tide-water dog, strong of muscle and with warm, long hair, from Puget Sound to San Diego. Because men, groping in the Arctic darkness, had found a yellow metal, and because steamship and transportation companies were booming the find, thousands of men were rushing into the Northland. These men wanted dogs, and the dogs they wanted were heavy dogs, with strong muscles by which to toil, and furry coats to protect them from the frost.",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To present the distant events that, unknown to Buck, are about to endanger dogs like him"
+  },
+  {
+   "id": "B",
+   "text": "To explain how the newspapers of the period reported the discovery of gold in the Arctic to readers across the country"
+  },
+  {
+   "id": "C",
+   "text": "To describe the comfortable daily routine that Buck enjoys on the California estate"
+  },
+  {
+   "id": "D",
+   "text": "To argue that the men rushing into the Northland were unprepared for Arctic conditions"
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The text explains the far-off gold rush and its consequence, a sudden demand for strong, furry dogs, while stressing that Buck knows nothing of the \"trouble brewing\" for dogs like him.\n\n**The Full Solution:**\n- The opening sentence frames everything through Buck's ignorance: he \"did not read the newspapers,\" so he does not know that trouble is coming for \"every tide-water dog\" with strength and a warm coat.\n- The rest of the text explains the source of that trouble: gold found in the Arctic, companies promoting the find, thousands of men heading north.\n- The final sentence closes the loop by connecting the rush to dogs: the men \"wanted dogs\" exactly like Buck, heavy and furry. The purpose is to establish the offstage threat gathering around an unsuspecting Buck.\n\n**Why the other choices are wrong:**\n- B: Newspapers appear only as something Buck does not read; their coverage is never described.\n- C: Buck's daily routine is not depicted; the text looks north, not at the estate.\n- D: The text says nothing about the men's preparedness, only that they were rushing north and wanted dogs.",
+ "_meta": {
+  "quoteVerify": true,
+  "source": "Jack London, The Call of the Wild (1903), Chapter 1 ('Into the Primitive'), opening lines"
+ }
 }

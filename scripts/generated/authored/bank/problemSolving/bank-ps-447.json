@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-447",
+  "question": "A table's list price is reduced by $15\\%$, and an $8\\%$ sales tax is then applied to the reduced price. The total amount paid is $\\$183.60$. How much less than the list price, in dollars, is the total amount paid?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$13.60$"
+    },
+    {
+      "id": "B",
+      "text": "$16.40$"
+    },
+    {
+      "id": "C",
+      "text": "$30$"
+    },
+    {
+      "id": "D",
+      "text": "$200$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the sales tax, the difference between the total and the reduced price.",
+    "C": "reports the discount alone and ignores the tax added back.",
+    "D": "reports the list price rather than the difference asked for."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse Percent Multi-Step**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The combined factor is $0.85\\times 1.08=0.918$, so the list price is $\\frac{183.60}{0.918}=200$, and $200-183.60=16.40$ dollars.\n\n**The Full Solution:**\nStep 1: Let $L$ be the list price. The discount leaves $0.85L$, and the tax multiplies that by $1.08$, giving $0.918L=183.60$.\nStep 2: $L=\\frac{183.60}{0.918}=200$ dollars.\nStep 3: The question asks how much less the total is than the list price: $200-183.60=16.40$ dollars. Check: $0.85(200)=170$, and $1.08(170)=183.60$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($13.60$): computes $183.60-170$, the tax paid, not the gap from the list price.\n* Choice C ($30$): computes $0.15(200)$, the discount by itself, ignoring that the tax gives $\\$13.60$ of it back.\n* Choice D ($200$): reports the list price, stopping before the subtraction.\n\n**Test Day Takeaway:** Combine the factors to recover the starting amount, then reread the question. A discount followed by tax leaves a net gap smaller than the discount itself."
+}

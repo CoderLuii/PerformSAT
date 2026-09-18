@@ -1,0 +1,50 @@
+{
+  "id": "bank-am-024",
+  "question": "The parabola shown in the $xy$-plane is the graph of the function $f$. Its vertex is $(2, -9)$, and it passes through the point $(5, 0)$. Which equation defines $f$?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        2,
+        -9
+      ],
+      "a": 1,
+      "showPoints": [
+        [
+          5,
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(x) = (x - 2)^2 - 9$"
+    },
+    {
+      "id": "B",
+      "text": "$f(x) = (x + 2)^2 - 9$"
+    },
+    {
+      "id": "C",
+      "text": "$f(x) = (x - 2)^2 + 9$"
+    },
+    {
+      "id": "D",
+      "text": "$f(x) = 3(x - 2)^2 - 9$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "flips the sign of $h$, moving the vertex to $x = -2$",
+    "C": "flips the sign of $k$, moving the vertex above the $x$-axis",
+    "D": "divides $9$ by $5 - 2 = 3$ instead of by $(5 - 2)^2 = 9$"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Construct Vertex Form from Conditions**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Vertex $(2, -9)$ gives $f(x) = a(x - 2)^2 - 9$. Substituting $(5, 0)$: $0 = 9a - 9$, so $a = 1$.\n\n**The Full Solution:**\nStep 1: Vertex form is $f(x) = a(x - h)^2 + k$ with vertex $(h, k)$. The graphed vertex is $(2, -9)$, so $f(x) = a(x - 2)^2 - 9$.\nStep 2: Use the second marked point to pin down $a$: $0 = a(5 - 2)^2 - 9 = 9a - 9$, so $a = 1$.\nStep 3: Therefore $f(x) = (x - 2)^2 - 9$. Check the other marked point: $f(-1) = (-3)^2 - 9 = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: $(x + 2)^2$ places the vertex at $x = -2$, but the graph turns at $x = 2$.\n* Choice C: $+9$ raises the vertex to $(2, 9)$, a graph that never reaches the $x$-axis.\n* Choice D: solves $9 = a(5 - 2)$ instead of $9 = a(5 - 2)^2$, forgetting to square the horizontal difference.\n\n**Test Day Takeaway:** Read $h$ and $k$ from the vertex first, then force the curve through one more point — and remember to square the horizontal difference before dividing."
+}

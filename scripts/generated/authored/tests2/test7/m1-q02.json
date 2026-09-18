@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "At a county clinic, the number of vaccine doses remaining after $d$ days of a vaccination drive is given by $n = 384 - 12d$. For what value of $d$ is $n = 156$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$13$"
+  },
+  {
+   "id": "B",
+   "text": "$19$"
+  },
+  {
+   "id": "C",
+   "text": "$32$"
+  },
+  {
+   "id": "D",
+   "text": "$45$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 156 by 12, using the doses left rather than the doses used",
+  "C": "divides 384 by 12, finding the day the supply runs out instead of the day 156 remain",
+  "D": "adds 384 and 156 before dividing by 12 instead of subtracting"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The drive has used $384 - 156 = 228$ doses, and it uses $12$ per day, so $d = 228 \\div 12 = 19$.\n\n**The Full Solution:**\nStep 1: Substitute $156$ for $n$: $384 - 12d = 156$.\nStep 2: Subtract $384$ from both sides: $-12d = -228$.\nStep 3: Divide both sides by $-12$: $d = 19$. Check: $384 - 12(19) = 384 - 228 = 156$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($13$): this is $156 \\div 12$, which treats the doses still on the shelf as the doses already given. Only the $228$ used doses are divided by the daily rate.\n* Choice C ($32$): this is $384 \\div 12$, the day the supply reaches $0$, not the day $156$ doses remain.\n* Choice D ($45$): this is $(384 + 156) \\div 12$; the constant moves across the equals sign by subtraction, not addition.\n\n**Test Day Takeaway:** In a \"starting amount minus rate times time\" model, isolate the variable term first. The number you divide by the rate is the amount used, not the amount left."
+}

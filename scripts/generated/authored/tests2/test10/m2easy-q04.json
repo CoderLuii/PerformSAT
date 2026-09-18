@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A land-use plan pairs the acreage constraints $12x + 8y = 60$ and $9x + 6y = 54$, where $x$ and $y$ are the acres given to two permitted uses. How many ordered pairs $(x, y)$ satisfy both constraints at once?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Zero"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "distractorNotes": {
+  "B": "assumes two different linear equations always cross at one point",
+  "C": "counts one solution per equation rather than solving the system",
+  "D": "notices the left sides are proportional but never compares the constants"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice A is correct.** Reduced, the constraints read $3x + 2y = 15$ and $3x + 2y = 18$, and no pair makes $3x + 2y$ equal two different numbers.\n\n**The Fast Way (~20s):** Divide the first constraint by $4$ and the second by $3$. Identical left sides with different right sides means the lines are parallel and never meet.\n\n**The Full Solution:**\nStep 1: Divide every term of $12x + 8y = 60$ by $4$: $3x + 2y = 15$.\nStep 2: Divide every term of $9x + 6y = 54$ by $3$: $3x + 2y = 18$.\nStep 3: The same expression $3x + 2y$ cannot equal $15$ and $18$ at the same time, so no ordered pair satisfies both. Check with a pair that satisfies the first, $(1, 6)$: it gives $3(1) + 2(6) = 15$ for the first constraint but only $15$, not $18$, for the second. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (Exactly one): true for most systems, but only when the two lines have different slopes. Here both reduce to slope $-\\frac{3}{2}$, so they never cross.\n* Choice C (Exactly two): counts the two equations rather than the solutions. Two straight lines can meet at most once, so two intersection points is impossible.\n* Choice D (Infinitely many): the right answer if the constants had matched after reducing. They do not: $15 \\ne 18$, so the lines are parallel and distinct, not the same line.\n\n**Test Day Takeaway:** Reduce both equations until the variable sides look alike. Same variable side and same constant means infinitely many; same variable side and different constant means none."
+}

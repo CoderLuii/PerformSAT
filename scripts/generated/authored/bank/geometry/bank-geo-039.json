@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-039",
+ "question": "The four edges of a wall-mount network enclosure's rectangular door total $206$ centimeters, and its longer edge is $55$ centimeters. How long, in centimeters, is the door's diagonal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$48$"
+  },
+  {
+   "id": "C",
+   "text": "$73$"
+  },
+  {
+   "id": "D",
+   "text": "$103$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "subtracts the two side lengths, 55 - 48, instead of combining their squares",
+  "B": "reports the shorter edge and stops before the diagonal",
+  "D": "adds the two side lengths, 55 + 48, instead of using the Pythagorean theorem"
+ },
+ "explanation": "**SAT Pattern: Rectangle Diagonal**\n\n**Choice C is correct.** The shorter edge is $\\frac{206 - 2(55)}{2} = 48$, so the diagonal is $\\sqrt{55^2 + 48^2} = \\sqrt{5329} = 73$ centimeters.\n\n**The Fast Way (~35s):** Half the perimeter is $103$, so the shorter edge is $103 - 55 = 48$; then $48$-$55$-$73$ gives the diagonal.\n\n**The Full Solution:**\n\nStep 1: A rectangle's perimeter is $2(\\ell + w)$, so $\\ell + w = \\frac{206}{2} = 103$ centimeters.\n\nStep 2: With $\\ell = 55$, the shorter edge is $w = 103 - 55 = 48$ centimeters.\n\nStep 3: The diagonal splits the rectangle into right triangles, so it measures $\\sqrt{55^2 + 48^2} = \\sqrt{3025 + 2304} = \\sqrt{5329} = 73$ centimeters. Check: $73^2 = 5329$, and $2(55 + 48) = 206$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($7$): subtracts the side lengths rather than combining their squares.\n* Choice B ($48$): finds the missing edge and stops there.\n* Choice D ($103$): adds the two edges, which is half the perimeter, not the diagonal.\n\n**Test Day Takeaway:** Halve the perimeter first — $\\ell + w$ is one subtraction away from the missing side, and only then does the Pythagorean step apply."
+}

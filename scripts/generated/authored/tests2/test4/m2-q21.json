@@ -1,0 +1,41 @@
+{
+ "id": 21,
+ "question": "In the figure, two spotlight beams cross above the stage. Three of the four angles at the crossing are marked. What is the value of $y$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "(6x - 43)°",
+    "(4x + 3)°",
+    "y°",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$22$"
+  },
+  {
+   "id": "B",
+   "text": "$89$"
+  },
+  {
+   "id": "C",
+   "text": "$91$"
+  },
+  {
+   "id": "D",
+   "text": "$95$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports x = 22, the value found in the middle of the problem, instead of an angle measure",
+  "C": "reports 91, the measure of the (4x + 3) angle, which is adjacent to the y angle rather than vertical to it",
+  "D": "sets the two marked expressions equal as if they were vertical angles, getting x = 23 and 95"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The two labeled angles form a straight line: $(6x - 43) + (4x + 3) = 180$ gives $x = 22$. The $y$ angle is vertical to the $(6x - 43)$ angle, so $y = 6(22) - 43 = 89$.\n\n**The Full Solution:**\nStep 1: The $(6x - 43)^\\circ$ and $(4x + 3)^\\circ$ angles sit side by side along one of the beams, so they are a linear pair and sum to $180^\\circ$.\nStep 2: $10x - 40 = 180$, so $10x = 220$ and $x = 22$.\nStep 3: The $y^\\circ$ angle is directly across the crossing from the $(6x - 43)^\\circ$ angle, so the two are vertical angles and equal: $y = 6(22) - 43 = 89$. Check: the four angles are $89, 91, 89, 91$, which total $360$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($22$): this is $x$, not an angle measure. Solving for $x$ is the middle of the work; the expression still has to be evaluated.\n* Choice C ($91$): this is $(4x + 3)^\\circ$, the angle adjacent to $y$. Adjacent angles at a crossing are supplementary, not equal.\n* Choice D ($95$): this sets $6x - 43 = 4x + 3$, treating the two labeled angles as a vertical pair. They share a ray, so they are supplementary instead.\n\n**Test Day Takeaway:** At a crossing there are only two angle measures, and every angle is either equal to a given one or its supplement. Decide which of the two an angle is before doing any arithmetic."
+}

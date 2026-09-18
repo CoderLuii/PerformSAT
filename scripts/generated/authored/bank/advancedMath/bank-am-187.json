@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-187",
+  "question": "The biomass of an algae culture, in milligrams, is modeled by $M(d) = 6 \\cdot 2^{d/3}$, where $d$ is the number of days since the culture was started. Over how many days does the biomass increase from $24$ milligrams to $384$ milligrams?",
+  "correctAnswer": "12",
+  "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~35s):** $384 \\div 24 = 16 = 2^4$, so four doublings are needed, and each doubling takes $3$ days: $4(3) = 12$ days.\n\n**The Full Solution:**\nStep 1: Solve $6 \\cdot 2^{d/3} = 24$. Dividing by $6$ gives $2^{d/3} = 4 = 2^2$, so $\\dfrac{d}{3} = 2$ and $d = 6$.\nStep 2: Solve $6 \\cdot 2^{d/3} = 384$. Dividing by $6$ gives $2^{d/3} = 64 = 2^6$, so $\\dfrac{d}{3} = 6$ and $d = 18$.\nStep 3: The elapsed time is $18 - 6 = 12$ days. Check: $24 \\to 48 \\to 96 \\to 192 \\to 384$ is four doublings at $3$ days each. $\\checkmark$\n\n**Common Mistakes:** Answering $18$, the day the biomass REACHES $384$ mg, instead of the time since it was $24$ mg. Answering $4$, the number of doublings, without multiplying by the $3$-day doubling period.\n\n**Test Day Takeaway:** When an exponent is $\\frac{d}{k}$, the quantity multiplies by the base once every $k$ units — count the multiplications first, then scale by $k$."
+}

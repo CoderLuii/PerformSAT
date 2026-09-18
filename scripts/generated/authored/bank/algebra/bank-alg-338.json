@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-338",
+  "question": "A film archive stores reels, cassettes, and discs. The number of cassettes is one-fourth the number $r$ of reels, and the number of discs is $60$ more than the number of cassettes. If the archive stores $900$ items of these three types, how many discs does it store?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$60$"
+    },
+    {
+      "id": "B",
+      "text": "$140$"
+    },
+    {
+      "id": "C",
+      "text": "$200$"
+    },
+    {
+      "id": "D",
+      "text": "$560$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "reported the \"60 more\" difference as the disc count",
+    "B": "reported the cassette count r/4",
+    "D": "reported r, the number of reels"
+  },
+  "explanation": "**SAT Pattern: Word-Problem to Multi-Step Linear**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $r + \\dfrac{r}{4} + \\left(\\dfrac{r}{4} + 60\\right) = 1.5r + 60 = 900$, so $r = 560$. Discs $= \\dfrac{560}{4} + 60 = 200$.\n\n**The Full Solution:**\nStep 1: In terms of $r$: reels $= r$, cassettes $= \\dfrac{r}{4}$, discs $= \\dfrac{r}{4} + 60$.\nStep 2: Total: $r + \\dfrac{r}{4} + \\dfrac{r}{4} + 60 = \\dfrac{3r}{2} + 60 = 900$, so $\\dfrac{3r}{2} = 840$ and $r = 560$.\nStep 3: Discs $= \\dfrac{560}{4} + 60 = 140 + 60 = 200$.\nCheck: $560 + 140 + 200 = 900$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($60$): reports the \"$60$ more\" as if it were the whole disc count.\n* Choice B ($140$): reports the cassette count and forgets to add the $60$.\n* Choice D ($560$): stops at $r$, the number of reels.\n\n**Test Day Takeaway:** When one quantity is defined relative to ANOTHER derived quantity (discs relative to cassettes, not reels), build the chain step by step before totaling."
+}

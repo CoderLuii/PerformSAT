@@ -9,37 +9,21 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "Tom Dillehay is an American archaeologist at Vanderbilt University who specializes in early peopling of the Americas.",
-      "Dillehay led excavations beginning in 1977 at Monte Verde, a wetland site in southern Chile.",
-      "Most archaeologists in the 1970s held that the Clovis culture (~13,000 years ago) marked the earliest human presence in the Americas.",
-      "At Monte Verde, Dillehay's team recovered hearths, wood and bone tools, and preserved plant remains in waterlogged peat layers.",
-      "Radiocarbon dates from those layers placed the Monte Verde occupation at roughly 14,500 years ago, more than a thousand years before Clovis.",
-      "After a 1997 site visit by a panel of skeptical specialists confirmed the dates, Monte Verde became widely accepted as evidence that humans were in the Americas before the Clovis horizon."
+      "Sea silk is a rare textile fiber spun from the byssus, the tuft of filaments a Mediterranean pen shell uses to anchor itself to the seabed.",
+      "Divers gathered the shells by hand from shallow coastal waters.",
+      "Each shell yielded only about a gram of usable fiber after cleaning and combing.",
+      "Finished sea-silk cloth has a natural golden sheen that was highly prized.",
+      "A single pair of knitted sea-silk gloves could require months of gathering and spinning."
     ],
-    "goal": "The student wants to emphasize the historical significance of the Monte Verde excavations for the peopling-of-the-Americas debate."
+    "goal": "The student wants to emphasize how much labor and raw material a single sea-silk object represented."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Tom Dillehay, a Vanderbilt archaeologist, has led excavations at Monte Verde, a wetland site in southern Chile, since 1977."
-    },
-    {
-      "id": "B",
-      "text": "At Monte Verde, Dillehay's team recovered hearths, wood and bone tools, and preserved plant remains from waterlogged peat layers."
-    },
-    {
-      "id": "C",
-      "text": "Although most archaeologists long held that the Clovis culture marked the earliest people in the Americas, Dillehay dated an occupation at Monte Verde, Chile, to about 14,500 years ago, well before the Clovis period."
-    },
-    {
-      "id": "D",
-      "text": "Because Monte Verde lies far from the better-known North American Clovis sites, its findings have remained peripheral to debates about the first Americans."
-    }
+    { "id": "A", "text": "Sea silk is a rare textile fiber spun from the byssus, the tuft of strong, silky filaments that a Mediterranean pen shell produces to anchor itself to the seabed." },
+    { "id": "B", "text": "Finished sea-silk cloth has a natural golden sheen that made the fabric highly prized." },
+    { "id": "C", "text": "Because every hand-gathered shell yielded only about a gram of usable fiber, a single pair of sea-silk gloves could represent months of gathering and spinning." },
+    { "id": "D", "text": "Divers gathered pen shells by hand from shallow coastal waters around the Mediterranean." }
   ],
   "correctAnswer": "C",
-  "explanation": "The goal is to emphasize why Monte Verde mattered for the debate over when humans first reached the Americas. Choice C does this by setting the prevailing Clovis-first view against Dillehay's roughly 14,500-year-old date, making the significance explicit. Choices A and B report the site or its artifacts without the stakes, and D wrongly claims the find stayed peripheral.",
-  "_meta": {
-    "anchor": "Tom Dillehay, Monte Verde"
-  }
+  "explanation": "**Choice C is correct.** The goal is to convey cost in labor and material, and C compresses the two decisive quantities into one causal sentence: a gram per hand-gathered shell, and months of work behind a single pair of gloves.\n\n**The Full Solution:**\n- Emphasizing labor and material means pairing the input side (one gram per shell, gathered by hand) with the output side (months for one small object).\n- C's \"Because... could represent\" makes the scarcity the explicit cause of the labor, which is precisely the emphasis sought.\n\n**Why the other choices are wrong:**\n- A: It defines the fiber's source but conveys nothing about quantity or effort.\n- B: The golden sheen speaks to the cloth's appeal, not to the work behind it.\n- D: The gathering method alone, without the yield or the time, does not establish scale — a reader cannot tell whether diving produced pounds of fiber or grams."
 }

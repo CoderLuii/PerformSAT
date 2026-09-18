@@ -1,0 +1,60 @@
+{
+ "id": 7,
+ "question": "The table summarizes the excursions booked by the $240$ travelers on a tour operator's spring itinerary. One of these travelers will be selected at random. Which expression gives the probability of selecting a traveler who booked a guided hike?",
+ "diagram": {
+  "type": "twoWayTable",
+  "params": {
+   "headers": [
+    "",
+    "Kayak trip",
+    "No kayak trip",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Guided hike",
+     "54",
+     "42",
+     "96"
+    ],
+    [
+     "No guided hike",
+     "30",
+     "114",
+     "144"
+    ],
+    [
+     "Total",
+     "84",
+     "156",
+     "240"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{42}{240}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{54}{240}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{96}{240}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{96}{144}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses only the guided-hike-and-no-kayak cell, 42, and leaves out the 54 travelers who booked both",
+  "B": "uses the joint cell 54, which is the probability of booking a guided hike AND a kayak trip",
+  "D": "divides the guided-hike row total 96 by the no-guided-hike row total 144 instead of by the grand total 240"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice C is correct.** A marginal probability uses a row or column total over the grand total, so the probability is $\\frac{96}{240}$.\n\n**The Fast Way (~20s):** The guided-hike row totals $96$, and every traveler in the table is one of $240$, so the probability is $\\frac{96}{240}$.\n\n**The Full Solution:**\nStep 1: The travelers who booked a guided hike occupy one full row: $54$ also booked a kayak trip and $42$ did not, for $54 + 42 = 96$ travelers.\nStep 2: The selection is made from all travelers on the itinerary, so the total number of possible outcomes is $240$.\nStep 3: The probability is $\\frac{96}{240}$. Check with the complement: $144$ travelers booked no guided hike, and $\\frac{96}{240} + \\frac{144}{240} = 1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{42}{240}$): $42$ counts only the hikers who skipped the kayak trip; the $54$ who booked both are still guided hikers.\n* Choice B ($\\frac{54}{240}$): $54$ is the overlap cell, so this is the probability of booking both excursions, not of booking a guided hike.\n* Choice D ($\\frac{96}{144}$): the denominator $144$ is the other row's total. A marginal probability is always divided by the grand total $240$.\n\n**Test Day Takeaway:** In a two-way table, a marginal probability reads one margin over the corner total; the moment a cell value appears in the numerator, you have switched to a joint probability."
+}

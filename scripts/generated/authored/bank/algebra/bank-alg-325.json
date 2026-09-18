@@ -1,0 +1,29 @@
+{
+  "question": "The function $d$ gives the distance, in meters, remaining in a $240$-meter track-cycling sprint $t$ seconds after the start, where $d(t) = 240 - 16t$. For what value of $t$ is the remaining distance one-third of the distance remaining at the start?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5$"
+    },
+    {
+      "id": "B",
+      "text": "$10$"
+    },
+    {
+      "id": "C",
+      "text": "$15$"
+    },
+    {
+      "id": "D",
+      "text": "$80$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "solves $240 - 16t = 160$, using two-thirds of the start instead of one-third",
+    "C": "reports the time at which no distance remains",
+    "D": "reports the target distance $80$ rather than the time"
+  },
+  "explanation": "**SAT Pattern: Solve for Input from Output**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** One-third of $d(0) = 240$ is $80$, and $240 - 16t = 80$ gives $t = 10$.\n\n**The Full Solution:**\n\nStep 1: At the start, $d(0) = 240 - 16(0) = 240$ meters.\n\nStep 2: One-third of that is $80$, so solve $240 - 16t = 80$.\n\nStep 3: Then $16t = 160$ and $t = 10$ seconds. Check: $d(10) = 240 - 160 = 80$, which is $\\frac{240}{3}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5$): sets the remaining distance to $160$, which is two-thirds of the start, not one-third.\n\n* Choice C ($15$): solves $240 - 16t = 0$, the moment the sprint ends.\n\n* Choice D ($80$): reports the remaining distance instead of the time that produces it.\n\n**Test Day Takeaway:** Translate the phrase into a number first, then set the function equal to it; the answer must be in the units of the input.",
+  "id": "bank-alg-325"
+}

@@ -1,0 +1,36 @@
+{
+  "id": 9017,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "The Mexican tetra is a small freshwater fish found in rivers in northeastern Mexico.",
+      "Populations of the tetra that live in caves have no working eyes and almost no body pigment; river populations of the same species have both.",
+      "The olm is a salamander that lives only in the flooded limestone caves of southeastern Europe.",
+      "The olm has undeveloped eyes covered over by skin and pale, nearly colorless skin.",
+      "Fish and salamanders are not close relatives, and their cave-dwelling forms entered caves separately.",
+      "Each animal finds prey without sight, relying on smell and on sensitivity to movement in the water."
+    ],
+    "goal": "The student wants to emphasize a similarity between the cave tetra and the olm."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The olm lives only in the flooded limestone caves of southeastern Europe, where it finds prey without using sight."
+    },
+    {
+      "id": "B",
+      "text": "Though they are not close relatives, the cave tetra and the olm have both lost working eyes and body pigment."
+    },
+    {
+      "id": "C",
+      "text": "Unlike the olm, the Mexican tetra also has river populations whose members have working eyes and normal pigment."
+    },
+    {
+      "id": "D",
+      "text": "The Mexican tetra is a small freshwater fish found in rivers in northeastern Mexico, and the olm is a European cave salamander."
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** The goal is to emphasize a similarity, and this sentence names both animals and the trait they share: each has lost working eyes and body pigment despite belonging to a distant branch of the vertebrate family tree.\n\n**The Full Solution:**\n- Read the goal first. A similarity sentence has to mention both subjects and one property that holds for each of them.\n- Choice B does both. \"The cave tetra and the olm\" supplies the pair, and \"have both lost working eyes and body pigment\" supplies the shared property, drawn from the second and fourth notes.\n- Eliminate any choice that fits only one animal, and eliminate any choice built around a contrast. Both patterns are common traps on this question type.\n\n**Why the other choices are wrong:**\n- A: This reports only the olm. A fact about one subject cannot show what the two subjects have in common.\n- C: This sets the tetra against the olm, emphasizing a difference between them when the goal asks for a similarity.\n- D: This names both animals but pairs them with the details that separate them, a fish in Mexican rivers and a salamander in European caves, so no shared property is stated."
+}

@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "In the $xy$-plane, the graph of $y=x^{2}$ is translated so that its lowest point is $(5,-3)$. Which equation could define the translated graph?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y=(x-3)^{2}-5$"
+    },
+    {
+      "id": "B",
+      "text": "$y=(x-5)^{2}-3$"
+    },
+    {
+      "id": "C",
+      "text": "$y=(x-5)^{2}+3$"
+    },
+    {
+      "id": "D",
+      "text": "$y=(x+5)^{2}-3$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "swaps the coordinates of the vertex",
+    "C": "reverses the sign of the vertical coordinate",
+    "D": "copies the sign of h into the parentheses"
+  },
+  "correctAnswer": "B",
+  "hint": "In vertex form, the number paired with $x$ inside the parentheses appears with the opposite sign of the horizontal position.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** Vertex form is $y=(x-h)^{2}+k$ with vertex $(h,k)$, so $(5,-3)$ gives $y=(x-5)^{2}-3$.\n\n**The Full Solution:**\nStep 1: Translating $y=x^{2}$ without changing its shape produces an equation of the form $y=(x-h)^{2}+k$, whose lowest point is $(h,k)$.\nStep 2: Matching $(h,k)$ to the required lowest point gives $h=5$ and $k=-3$.\nStep 3: Substituting yields $y=(x-5)^{2}-3$. Check: at $x=5$, $y=0-3=-3$, and every other $x$ makes $(x-5)^{2}>0$, so $(5,-3)$ is indeed the lowest point. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y=(x-3)^{2}-5$): uses $3$ as the horizontal position and $-5$ as the height, swapping the two coordinates of the vertex.\n* Choice C ($y=(x-5)^{2}+3$): gets the horizontal move right but places the vertex $3$ units above the axis instead of below it.\n* Choice D ($y=(x+5)^{2}-3$): reads the $5$ directly into the parentheses; a vertex at $x=5$ requires the factor $x-5$.\n\n**Test Day Takeaway:** Read a translated parabola straight off vertex form: $(x-h)$ inside means the vertex is at $x=h$, and $+k$ outside means it is at height $k$."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "A circular tabletop has a circumference of $50\\pi$ centimeters. What is the length, in centimeters, of a diameter of the tabletop?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$25$"
+  },
+  {
+   "id": "B",
+   "text": "$50$"
+  },
+  {
+   "id": "C",
+   "text": "$100$"
+  },
+  {
+   "id": "D",
+   "text": "$625\\pi$"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "Match the quantity you were given to the formula that already contains it.",
+ "distractorNotes": {
+  "A": "reports the radius",
+  "C": "doubles the diameter",
+  "D": "computes the area"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** $C = \\pi d$, so $d = \\frac{50\\pi}{\\pi} = 50$ centimeters.\n\n**The Full Solution:**\nStep 1: Circumference in terms of the diameter is $C = \\pi d$.\nStep 2: Substitute $C = 50\\pi$: $50\\pi = \\pi d$.\nStep 3: Divide both sides by $\\pi$: $d = 50$ centimeters. Check: with $r = 25$, $2\\pi(25) = 50\\pi$, the given circumference.\n\n**Why the wrong answers are tempting:**\n* Choice A ($25$): divides by $2\\pi$ and reports the radius, not the diameter the question asked for.\n* Choice C ($100$): doubles the diameter, treating $C = \\pi d$ as if it were $C = 2\\pi d$.\n* Choice D ($625\\pi$): computes the area $\\pi(25)^2$, an area where a length was requested.\n\n**Test Day Takeaway:** Writing $C = \\pi d$ instead of $C = 2\\pi r$ removes a conversion step whenever the diameter is what you want."
+}

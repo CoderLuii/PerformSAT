@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-023",
+  "question": "The function $g$ is defined by $g(x) = -4(x + 7)^2 + 11$. In the $xy$-plane, what is the vertex of the graph of $y = g(x)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-7, 11)$"
+    },
+    {
+      "id": "B",
+      "text": "$(-7, -11)$"
+    },
+    {
+      "id": "C",
+      "text": "$(7, 11)$"
+    },
+    {
+      "id": "D",
+      "text": "$(11, -7)$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "flips the sign of $k$",
+    "C": "reads $x + 7$ as $h = 7$ instead of $h = -7$",
+    "D": "reverses the two coordinates"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Read Vertex Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Vertex form $a(x - h)^2 + k$ has vertex $(h, k)$. Here $x + 7 = x - (-7)$, so the vertex is $(-7, 11)$.\n\n**The Full Solution:**\nStep 1: Match $g(x) = -4(x + 7)^2 + 11$ to $a(x - h)^2 + k$. Rewrite $x + 7$ as $x - (-7)$, so $h = -7$ and $k = 11$.\nStep 2: The vertex is $(h, k) = (-7, 11)$.\nStep 3: Check: $g(-7) = -4(0)^2 + 11 = 11$, and since $a = -4 < 0$ every other input gives a smaller output, for example $g(-6) = -4 + 11 = 7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($(-7, -11)$): negates $k$; the $+11$ is added, not subtracted.\n* Choice C ($(7, 11)$): reads the $7$ straight out of $(x + 7)$ without flipping its sign.\n* Choice D ($(11, -7)$): swaps the coordinates, reporting the output first.\n\n**Test Day Takeaway:** In $a(x - h)^2 + k$ the $h$ flips sign and the $k$ does not — $(x + 7)$ means the vertex sits at $x = -7$."
+}

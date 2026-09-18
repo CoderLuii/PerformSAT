@@ -1,0 +1,59 @@
+{
+ "id": 11,
+ "question": "The figure shows a triangular steel bracket $ABC$ whose corner at $C$ is a right angle. The three edges of the bracket have a combined length of $36$ centimeters, and the length of edge $\\overline{BC}$ is marked in the figure. What is the value of $\\sin A$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     12,
+     0
+    ],
+    [
+     12,
+     9
+    ]
+   ],
+   "labels": [
+    "A",
+    "C",
+    "B"
+   ],
+   "sideLabels": [
+    "",
+    "9 cm",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{1}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3}{4}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{4}{5}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "divides BC by 27, the combined length of the other two sides, instead of by the hypotenuse 15",
+  "C": "computes tan A = 9/12 (opposite over adjacent) instead of sin A",
+  "D": "computes cos A = 12/15 (adjacent over hypotenuse) instead of sin A"
+ },
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The other two sides total $36 - 9 = 27$, and the only right triangle with a leg of $9$ and the remaining two sides summing to $27$ is the $9$-$12$-$15$ triangle, so $\\sin A = \\frac{9}{15} = \\frac{3}{5}$.\n\n**The Full Solution:**\nStep 1: Let $b = AC$ and $c = AB$. The perimeter gives $9 + b + c = 36$, so $b + c = 27$.\nStep 2: The Pythagorean theorem gives $c^{2} - b^{2} = 9^{2} = 81$. Factoring, $(c - b)(c + b) = 81$, and since $c + b = 27$, it follows that $c - b = 3$.\nStep 3: Solving $c + b = 27$ and $c - b = 3$ gives $c = 15$ and $b = 12$, so $\\sin A = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{9}{15} = \\frac{3}{5}$. Check: $9 + 12 + 15 = 36$ and $9^{2} + 12^{2} = 225 = 15^{2}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{3}$): divides the leg $9$ by $27$, the combined length of the two unknown sides, rather than by the hypotenuse $15$.\n* Choice C ($\\frac{3}{4}$): computes $\\tan A = \\frac{9}{12}$, opposite over adjacent, instead of opposite over hypotenuse.\n* Choice D ($\\frac{4}{5}$): computes $\\cos A = \\frac{12}{15}$, adjacent over hypotenuse, which is the ratio for the other acute angle's sine.\n\n**Test Day Takeaway:** When a perimeter is given with one leg, use $(c - b)(c + b) = a^{2}$ to split the remaining length into the two sides; then label opposite, adjacent, and hypotenuse relative to the named angle before writing the ratio."
+}

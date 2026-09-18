@@ -1,0 +1,41 @@
+{
+ "id": "bank-geo-263",
+ "question": "Inside a junction box two fiber-optic runs cross at a splice. The figure marks two of the four angles formed, in degrees, and $x$ appears in one of those two expressions. What is the value of $x$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "(x + 26)°",
+    "",
+    "94°",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$60$"
+  },
+  {
+   "id": "B",
+   "text": "$68$"
+  },
+  {
+   "id": "C",
+   "text": "$94$"
+  },
+  {
+   "id": "D",
+   "text": "$120$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats the two marked angles as a linear pair, using 180 - 94 = 86 and then 86 - 26 = 60",
+  "C": "reports the angle measure 94 rather than the value of x",
+  "D": "adds 26 to 94 instead of subtracting it"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The two marked angles are vertical angles, so $x + 26 = 94$ and $x = 68$.\n\n**The Full Solution:**\nStep 1: The two marked angles sit across the crossing point from each other, so they are vertical angles and have equal measures.\nStep 2: That gives the equation $x + 26 = 94$.\nStep 3: Subtracting $26$ from both sides gives $x = 68$.\n\nCheck: $68 + 26 = 94$, matching the marked angle. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($60$): treats the pair as supplementary, using $180 - 94 = 86$ and then $86 - 26$.\n* Choice C ($94$): reports the angle's measure rather than the value of $x$.\n* Choice D ($120$): adds $26$ to $94$ instead of subtracting it.\n\n**Test Day Takeaway:** Vertical angles are equal; set the two expressions equal before solving for the variable."
+}

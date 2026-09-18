@@ -1,0 +1,56 @@
+{
+  "id": "bank-ps-052",
+  "question": "The table shows the rated airflow, in cubic meters per hour, of the four ventilation fans installed in a highway tunnel. If fans $2$ and $3$ run at their rated airflow at the same time, how many cubic meters of air do the two fans together move per minute?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Fan",
+        "Rated airflow (cubic meters per hour)"
+      ],
+      "rows": [
+        [
+          "1",
+          "10,800"
+        ],
+        [
+          "2",
+          "13,500"
+        ],
+        [
+          "3",
+          "9,000"
+        ],
+        [
+          "4",
+          "16,200"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$150$"
+    },
+    {
+      "id": "B",
+      "text": "$225$"
+    },
+    {
+      "id": "C",
+      "text": "$375$"
+    },
+    {
+      "id": "D",
+      "text": "$22{,}500$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "converts fan 3 alone: 9,000 / 60 = 150, leaving fan 2 out",
+    "B": "converts fan 2 alone: 13,500 / 60 = 225, leaving fan 3 out",
+    "D": "adds the two hourly rates, 13,500 + 9,000 = 22,500, and never divides by 60 minutes"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Rate Per Minute from Per Hour**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Add the two hourly rates, $13{,}500 + 9{,}000 = 22{,}500$ cubic meters per hour, then divide by $60$: $375$ cubic meters per minute.\n\n**The Full Solution:**\nStep 1: Read the table. Fan $2$ is rated at $13{,}500$ cubic meters per hour and fan $3$ at $9{,}000$ cubic meters per hour.\nStep 2: Combine, then convert. Together they move $22{,}500$ cubic meters per hour, and $1$ hour is $60$ minutes, so the per-minute rate is $\\frac{22{,}500}{60} = 375$.\nStep 3: Check by converting first. Fan $2$ moves $225$ cubic meters per minute and fan $3$ moves $150$; $225 + 150 = 375$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($150$): converts only fan $3$: $\\frac{9{,}000}{60} = 150$. Fan $2$ never enters the sum.\n* Choice B ($225$): converts only fan $2$: $\\frac{13{,}500}{60} = 225$. Fan $3$ never enters the sum.\n* Choice D ($22{,}500$): is the combined rate per HOUR. It skips the division by $60$ minutes.\n\n**Test Day Takeaway:** Convert the units at the very end or at the very start — but do it once. Adding two hourly rates and forgetting the $60$ is the standard slip."
+}

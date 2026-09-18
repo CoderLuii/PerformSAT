@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "information-and-ideas",
  "skill": "inferences",
+ "type": "multiple-choice",
+ "passage": "The osage orange tree produces heavy, softball-sized fruits that pile up beneath the parent tree and rot; almost nothing in North America today eats them, so the seeds are rarely carried anywhere. Yet a large fruit is, in evolutionary terms, an expensive advertisement — a plant's investment in attracting animals that will swallow its seeds and deposit them far away. Ecologists note that until roughly 13,000 years ago, North America supported mammoths, giant ground sloths, and other enormous herbivores capable of gulping such fruits whole. The tree's oversized crop, they suggest, ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "underestimate the importance of forests in regions where intensifying droughts are reducing the land sink's capacity."
+   "text": "shows that the tree once relied on rivers and seasonal floods rather than on animals to carry its seeds to new ground."
   },
   {
    "id": "B",
-   "text": "misrepresent the future path of atmospheric CO2, because they freeze in place the very feedbacks that drive it."
+   "text": "is best understood as an adaptation to seed dispersers that no longer exist — a strategy aimed at animals that vanished from the continent thousands of years ago."
   },
   {
    "id": "C",
-   "text": "overstate soil nitrogen as the dominant control on how the land sink responds to higher CO2 concentrations."
+   "text": "indicates that the fruit evolved primarily to poison the herbivores that attempted to eat it."
   },
   {
    "id": "D",
-   "text": "track the projections of more detailed models closely, since the land sink's response to warming is essentially linear."
+   "text": "demonstrates that producing large fruit offers a tree no evolutionary advantage of any kind."
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B. The passage establishes that the land sink's strength depends on water, soil nitrogen, and temperature, and that those very conditions shift with the warming the models project. A scenario that assumes a constant land-uptake fraction therefore holds fixed the feedbacks that actually change, and so will misrepresent the future path of atmospheric CO2 — exactly what B says. A points to a regional consequence the passage already states rather than to what a constant-fraction scenario gets wrong. C elevates nitrogen above the other two named controls without warrant. D claims the response is essentially linear, contradicting the passage's account of a condition-dependent, biome-varying response.",
+ "explanation": "**Choice B is correct.** The puzzle (expensive fruit, no takers) plus the historical fact (giant fruit-swallowing herbivores until 13,000 years ago) resolves into B: the fruit is a courtship of partners that are now extinct.\n\n**The Full Solution:**\n- The passage sets up a mismatch: fruits are costly advertisements to dispersers, yet nothing today disperses these seeds.\n- The ecologists' contribution is the missing audience — mammoths and ground sloths that could gulp the fruits whole.\n- The only conclusion that uses both pieces is that the tree's strategy targets its former, vanished dispersers.\n\n**Why the other choices are wrong:**\n- A: Rivers and floods never appear in the passage, and the fruit-as-advertisement framing points specifically to animal dispersers.\n- C: Poison reverses the logic — the fruit is described as an attraction, an investment in being eaten.\n- D: The passage says large fruit is currently useless to this tree, not that it never conferred an advantage; the ecologists' point is that it once did.",
  "_meta": {
-  "anchor": "Inez Fung — atmospheric scientist; carbon-cycle feedbacks; constant-fraction scenarios and the land sink"
- },
- "passage": "Atmospheric scientist Inez Fung has emphasized that the land biosphere does not merely respond to rising carbon dioxide; it also feeds back on it. Plants take up more carbon when CO2 is higher, but the size of that uptake depends on water availability, soil nitrogen, and temperature, and varies widely from one biome to another. Forests in some regions keep absorbing carbon for decades; forests where droughts are intensifying lose that capacity earlier and may even release carbon during heat waves. Because the strength of the land sink depends on conditions that themselves shift with warming, scenarios that assume a constant land-uptake fraction will likely ______",
- "type": "multiple-choice"
+  "anchor": "Osage orange as anachronistic fruit — dispersal adaptation to extinct Pleistocene megafauna (unnamed ecologists)"
+ }
 }

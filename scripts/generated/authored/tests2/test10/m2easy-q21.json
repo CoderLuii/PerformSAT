@@ -1,0 +1,53 @@
+{
+ "id": 21,
+ "question": "A studio plug-in converts an input level $x$ into the output level $f(x)$ listed in the table, and $f$ is linear. A second pass sends that output back through the same plug-in. What output does an input of $3$ produce after two passes?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$5$"
+   ],
+   [
+    "$3$",
+    "$11$"
+   ],
+   [
+    "$5$",
+    "$17$"
+   ],
+   [
+    "$7$",
+    "$23$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$11$"
+  },
+  {
+   "id": "C",
+   "text": "$33$"
+  },
+  {
+   "id": "D",
+   "text": "$35$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "runs the table backward, finding the input whose output is 11",
+  "B": "reports the result of one pass and stops",
+  "C": "uses the rule f(x) = 3x and drops the constant 2"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice D is correct.** The table gives $f(x) = 3x + 2$; one pass sends $3$ to $11$, and a second pass sends $11$ to $35$.\n\n**The Fast Way (~30s):** Outputs rise $6$ for every $2$ of input, so $f(x) = 3x + 2$. Then $f(3) = 11$ and $f(11) = 35$.\n\n**The Full Solution:**\nStep 1: Find the rule. From $x = 1$ to $x = 3$ the output climbs $11 - 5 = 6$ over a run of $2$, so the slope is $3$; since $f(1) = 5$, the constant is $5 - 3 = 2$, giving $f(x) = 3x + 2$.\nStep 2: The first pass reads straight off the table: $f(3) = 11$.\nStep 3: The second pass feeds $11$ back in, and $11$ is outside the table, so use the rule: $f(11) = 3(11) + 2 = 35$. Check the rule against a row it was not built from: $f(7) = 3(7) + 2 = 23$, which matches the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): searches the table for the input that produces $11$ and reports it. That runs the plug-in backward instead of forward.\n* Choice B ($11$): stops after one pass. The output of the first pass is the input of the second.\n* Choice C ($33$): uses $f(x) = 3x$, which fits the spacing of the outputs but not their values; it misses the constant $2$ and fails every row of the table.\n\n**Test Day Takeaway:** For a repeated application, work from the inside out, and extend a table to a rule as soon as the needed input falls outside the listed values."
+}

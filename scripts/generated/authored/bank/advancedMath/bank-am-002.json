@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-002",
+  "question": "A concert hall models its ticket revenue as $R(p) = p(900 - 15p)$ dollars, where $p$ is the ticket price in dollars. The table gives $R(p)$ for three ticket prices. Which of the following best describes $R$ as a function of $p$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Ticket price p (dollars)",
+        "Revenue R(p) (dollars)"
+      ],
+      "rows": [
+        [
+          "10",
+          "7,500"
+        ],
+        [
+          "20",
+          "12,000"
+        ],
+        [
+          "30",
+          "13,500"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Linear, because $R(p)$ increases as $p$ increases."
+    },
+    {
+      "id": "B",
+      "text": "Linear, because the factor $900 - 15p$ is linear in $p$."
+    },
+    {
+      "id": "C",
+      "text": "Quadratic, because expanding gives $R(p) = -15p^2 + 900p$."
+    },
+    {
+      "id": "D",
+      "text": "Exponential, because $R(p)$ grows by a constant factor."
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats \"increasing\" as proof of linearity; the differences 4,500 and 1,500 are not constant",
+    "B": "classifies one factor instead of the product",
+    "D": "claims a constant ratio; the ratios are 1.6 then 1.125"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Classify Model by Expanding**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Distribute: $p(900 - 15p) = 900p - 15p^2$. A $p^2$ term with a nonzero coefficient makes $R$ quadratic.\n\n**The Full Solution:**\nStep 1: Expand the product. $R(p) = p(900) - p(15p) = 900p - 15p^2$, or $R(p) = -15p^2 + 900p$.\nStep 2: The highest power of $p$ is $2$ and its coefficient $-15$ is not zero, so $R$ is a quadratic function of $p$.\nStep 3: Check against the table. From $p = 10$ to $p = 20$ revenue rises by $12{,}000 - 7{,}500 = 4{,}500$; from $p = 20$ to $p = 30$ it rises by only $13{,}500 - 12{,}000 = 1{,}500$. Unequal increases over equal steps rule out a linear model, and the ratios $\\frac{12{,}000}{7{,}500} = 1.6$ and $\\frac{13{,}500}{12{,}000} = 1.125$ rule out an exponential one. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: \"increasing\" is not the same as \"linear\" — the table's increases are $4{,}500$ then $1{,}500$, not equal.\n* Choice B: $900 - 15p$ is linear by itself, but multiplying it by $p$ raises the degree to $2$.\n* Choice D: an exponential model needs a constant ratio between outputs at equally spaced inputs; here the ratios are $1.6$ and $1.125$.\n\n**Test Day Takeaway:** Classify a model only after expanding it. A product of two linear factors is quadratic, no matter how linear each factor looks."
+}

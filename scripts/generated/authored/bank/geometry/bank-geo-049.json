@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-049",
+ "question": "Two similar right circular cones have base radii in the ratio $3$ to $5$. The volume of the smaller cone is $54$ cubic centimeters. What is the volume, in cubic centimeters, of the larger cone?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$90$"
+  },
+  {
+   "id": "B",
+   "text": "$150$"
+  },
+  {
+   "id": "C",
+   "text": "$250$"
+  },
+  {
+   "id": "D",
+   "text": "$270$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales by the linear ratio",
+  "B": "scales by the square of the ratio",
+  "D": "multiplies by 5 and ignores the 3"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Volume Scaling by Cube of Linear Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Volumes scale by the cube of the linear ratio: $54 \\cdot \\left(\\frac{5}{3}\\right)^3 = 54 \\cdot \\frac{125}{27} = 250$ cubic centimeters.\n\n**The Full Solution:**\nStep 1: The cones are similar, so every corresponding length is in the ratio $\\frac{5}{3}$ from smaller to larger.\nStep 2: Volume is a three-dimensional measure, so the volume ratio is $\\left(\\frac{5}{3}\\right)^3 = \\frac{125}{27}$.\nStep 3: $54 \\cdot \\frac{125}{27} = 2 \\cdot 125 = 250$ cubic centimeters.\n\nVerification: $\\frac{250}{54} = \\frac{125}{27}$, which is exactly $\\left(\\frac{5}{3}\\right)^3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($90$): scales by $\\frac{5}{3}$ once, the factor for a single length.\n* Choice B ($150$): scales by $\\frac{25}{9}$, the factor that governs surface areas.\n* Choice D ($270$): multiplies by $5$ and never divides by $3$, misreading the ratio as a whole-number factor.\n\n**Test Day Takeaway:** A ratio of any corresponding lengths, radii, heights, or slant heights, is the same $k$. Cube it for volume and square it for surface area."
+}

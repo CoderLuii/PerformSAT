@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-037",
+ "question": "In a logistics model the number of possible pallet arrangements is $(2p^{3})^{4}$, where $p$ is a positive integer. Which expression is equivalent to $(2p^{3})^{4}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8p^{12}$"
+  },
+  {
+   "id": "B",
+   "text": "$16p^{7}$"
+  },
+  {
+   "id": "C",
+   "text": "$16p^{12}$"
+  },
+  {
+   "id": "D",
+   "text": "$16p^{81}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies the base 2 by the exponent 4 instead of raising it, giving 8 instead of 16",
+  "B": "adds the exponents 3 and 4 instead of multiplying them, giving p to the 7th",
+  "D": "raises the exponent 3 to the fourth power instead of multiplying it by 4, giving p to the 81st"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Power of a Product**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Raise each factor: $2^{4}=16$ and $(p^{3})^{4}=p^{12}$, so the expression is $16p^{12}$.\n\n**The Full Solution:**\n\nStep 1: A power of a product distributes over the factors: $(2p^{3})^{4}=2^{4}\\cdot(p^{3})^{4}$.\n\nStep 2: Evaluate the numerical factor: $2^{4}=16$.\n\nStep 3: For a power of a power, multiply the exponents: $(p^{3})^{4}=p^{3\\cdot4}=p^{12}$, giving $16p^{12}$. Check with $p=1$: $(2\\cdot1)^{4}=16$ and $16\\cdot1^{12}=16$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($8p^{12}$): multiplies the base $2$ by the exponent $4$ instead of raising it, producing $8$.\n* Choice B ($16p^{7}$): adds the exponents $3$ and $4$ instead of multiplying them.\n* Choice D ($16p^{81}$): raises $3$ to the fourth power rather than multiplying $3$ by $4$.\n\n**Test Day Takeaway:** Every factor inside the parentheses takes the outside exponent, and stacked exponents multiply."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A vial-filling line rejects vials at a rate modeled by $r(h) = 3h^2 - 18h + 31$, in vials per hour, where $h$ is the number of hours after startup. For how many values of $h$ is the reject rate exactly $2$ vials per hour?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "No values of $h$"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one value of $h$"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two values of $h$"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many values of $h$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "aims at the model's lowest rate, 4 vials per hour, instead of 2; r(h) = 4 is the equation with exactly one solution",
+  "C": "assumes a quadratic model must meet every horizontal line twice",
+  "D": "reads a negative discriminant as meaning every h works rather than none"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Setting $r(h) = 2$ gives $3h^2 - 18h + 29 = 0$, whose discriminant is $(-18)^2 - 4(3)(29) = 324 - 348 = -24$. A negative discriminant means no real $h$ works.\n\n**The Full Solution:**\nStep 1: Translate the question into an equation: $3h^2 - 18h + 31 = 2$, which rearranges to $3h^2 - 18h + 29 = 0$.\nStep 2: Compute the discriminant of that equation: $b^2 - 4ac = (-18)^2 - 4(3)(29) = 324 - 348 = -24$. Because it is negative, the equation has no real solutions.\nStep 3: Check against the model itself. The lowest rate occurs at $h = -\\frac{-18}{2(3)} = 3$, where $r(3) = 27 - 54 + 31 = 4$. The line never drops below $4$ vials per hour, so a rate of $2$ is never reached. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (exactly one value of $h$): $r(h) = 4$ — the model's minimum — is the equation with a single solution, $h = 3$. The question asks about $2$, not $4$.\n* Choice C (exactly two values of $h$): true only when the horizontal line sits above the minimum. Here it sits below the whole curve, so it meets the curve nowhere.\n* Choice D (infinitely many values of $h$): \"no real solutions\" is the opposite of \"all real solutions.\" A quadratic equals a given constant for at most two values of the variable.\n\n**Test Day Takeaway:** Move everything to one side first, then read the discriminant: negative means none, zero means one, positive means two. A quick check of the vertex value confirms the verdict."
+}

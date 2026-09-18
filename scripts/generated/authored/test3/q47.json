@@ -5,30 +5,31 @@
  "band": 3,
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
+ "type": "multiple-choice",
+ "passage": "The archive's collection of interviews, which preserves the voices of shipyard workers, cannery hands, and railroad porters recorded across three decades, ______ researchers a firsthand account of industrial labor that official records rarely capture.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "have argued"
+   "text": "offer"
   },
   {
    "id": "B",
-   "text": "argues"
+   "text": "offers"
   },
   {
    "id": "C",
-   "text": "are arguing"
+   "text": "are offering"
   },
   {
    "id": "D",
-   "text": "argue"
+   "text": "have offered"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"argues.\" The subject of the verb is the singular noun phrase \"A recent history of xenophobia in the United States.\" The relative clause that follows — \"which traces the subject from the colonial period to the present\" — comes between the subject and the verb and contains time phrases that can pull a reader toward a plural verb, but it does not change the subject's number. A singular subject takes a singular verb, and the simple present \"argues\" is the standard tense for describing what a book contends. \"Argue\" and \"are arguing\" treat the subject as plural, and \"have argued\" combines the wrong number with a present-perfect shift the sentence does not require.",
+ "explanation": "**Choice B is correct.** The subject is the singular \"collection,\" so the verb must be the singular \"offers.\" The plural nouns stacked between subject and verb belong to modifying phrases, not to the subject.\n\n**The Full Solution:**\n- Strip the modifiers: \"The archive's collection... offers researchers a firsthand account.\"\n- \"Of interviews\" and the whole \"which preserves...\" clause describe the collection; none of their plural nouns (interviews, workers, hands, porters) governs the verb.\n- Note the text's own clue: the relative clause verb \"preserves\" already agrees with the singular \"collection.\"\n\n**Why the other choices are wrong:**\n- A: \"Offer\" agrees with the nearby plurals rather than with the head noun \"collection.\"\n- C: \"Are offering\" is plural and needlessly progressive for a standing property of the archive.\n- D: \"Have belonged\"-style perfect plural — \"have offered\" — both misses agreement and pushes into completed past what the sentence presents as the collection's ongoing value.",
  "_meta": {
-  "anchor": "History of U.S. xenophobia (unnamed book); subject-verb agreement across a relative clause"
- },
- "passage": "A recent history of xenophobia in the United States, which traces the subject from the colonial period to the present, ______ that successive nativist movements have followed a recurring rhetorical pattern even when their target groups and political contexts differ.",
- "type": "multiple-choice"
+  "anchor": "Oral-history archive collection — singular head noun across stacked plural modifiers",
+  "rule": "subject-verb agreement across intervening prepositional and relative modifiers"
+ }
 }

@@ -1,0 +1,62 @@
+{
+ "id": "bank-alg-503",
+ "question": "The graph shown gives the linear function $f$. For which constant $k$ does the function $f(x) + k$ have $-4$ as its only zero?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 1.5,
+   "yIntercept": -3,
+   "xRange": [
+    -6,
+    6
+   ],
+   "yRange": [
+    -12,
+    6
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 3,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     -3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "label": "y = f(x)"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-9$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports f(-4) = -9 instead of the constant that cancels it",
+  "B": "uses the y-intercept -3 of f as the shift",
+  "C": "evaluates f(4) = 3 instead of f(-4)"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertical Shift of a Line — $x$-intercept**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The shifted graph is zero at $x = -4$, so $k = -f(-4) = 9$.\n\n**The Full Solution:**\nStep 1: From the graph, $f$ passes through $(0, -3)$ and $(2, 0)$, so its slope is $\\dfrac{0 - (-3)}{2 - 0} = 1.5$ and $f(x) = 1.5x - 3$.\nStep 2: Evaluate at the new zero: $f(-4) = 1.5(-4) - 3 = -9$.\nStep 3: The shifted function is $f(x) + k$, and it is zero at $x = -4$, so $-9 + k = 0$ and $k = 9$. Check: $1.5(-4) - 3 + 9 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-9$): reports $f(-4) = -9$ itself rather than the constant that cancels it.\n* Choice B ($-3$): treats the $y$-intercept $-3$ of $f$ as the required shift.\n* Choice C ($3$): evaluates $f(4) = 3$ instead of $f(-4)$, using the wrong sign for the new zero.\n\n**Test Day Takeaway:** A vertical shift moves a zero to wherever the original function equals the opposite of the shift."
+}

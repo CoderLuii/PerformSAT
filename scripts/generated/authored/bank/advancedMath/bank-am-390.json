@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-390",
+ "question": "A library's course-reserve holds above its term average are modeled by $f(x)=-2(x-c)^2+d$, where $c$ and $d$ are constants. If $f(1)=f(9)$ and the greatest value of $f$ is $32$, what is the value of $f(3)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$24$"
+  },
+  {
+   "id": "B",
+   "text": "$28$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$32$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "forgets to square, computing -2(2) + 32",
+  "C": "subtracts the coefficient 2 from 32",
+  "D": "reports the greatest value instead of f(3)"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** $f(1)=f(9)$ puts $c=5$, and the greatest value $32$ makes $d=32$; then $f(3)=-2(4)+32=24$.\n\n**The Full Solution:**\nStep 1: Equal outputs at $1$ and $9$ mean the axis of symmetry is $x=\\frac{1+9}{2}=5$, so $c=5$.\nStep 2: The leading coefficient $-2$ is negative, so the graph opens downward and $d$ is the greatest value: $d=32$.\nStep 3: Evaluate: $f(3)=-2(3-5)^2+32=-2(4)+32=24$. Check: $f(7)=-2(4)+32=24$ as well, and $7$ mirrors $3$ about $x=5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($28$): forgets to square, computing $-2(2)+32$.\n* Choice C ($30$): subtracts the coefficient $2$ from $32$ rather than $2(3-5)^2$.\n* Choice D ($32$): reports the greatest value, which occurs at $x=5$, not at $x=3$.\n\n**Test Day Takeaway:** Two equal outputs give the axis, and a negative leading coefficient makes the vertex output the maximum — that is both constants."
+}

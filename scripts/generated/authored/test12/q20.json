@@ -1,31 +1,31 @@
 {
-  "id": 1220,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "The economist William Vickrey spent much of his career arguing that prices could be used to manage demand for crowded public services. In a 1963 article on urban transportation, he ____ that charging drivers more to use roads at the busiest times would spread traffic across the day, a proposal that city officials largely ignored before congestion pricing was adopted in several cities decades later.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "proposes"
-    },
-    {
-      "id": "B",
-      "text": "has proposed"
-    },
-    {
-      "id": "C",
-      "text": "had proposed"
-    },
-    {
-      "id": "D",
-      "text": "proposed"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The action is fixed to a completed moment in the past—\"In a 1963 article\"—so the simple past \"proposed\" is correct. The present-tense \"proposes\" clashes with that date. \"Has proposed\" describes an action continuing into or relevant to the present, which the dated, finished article does not call for. \"Had proposed\" would signal an event before some other past event, but no such earlier reference point is set up here."
+ "id": 1220,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "Cast-net fishing along the southern coast was long a craft passed down without written record, each fisher adjusting mesh size and rim weight by feel. In 1902, a state fisheries bureau ____ a survey of the nets then in use, measuring and cataloging the designs that individual fishers had settled on after years of trial.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "conducts"
+  },
+  {
+   "id": "B",
+   "text": "has conducted"
+  },
+  {
+   "id": "C",
+   "text": "had conducted"
+  },
+  {
+   "id": "D",
+   "text": "conducted"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The action happened at one dated moment in the past — \"In 1902\" — so the simple past tense \"conducted\" is required.\n\n**The Full Solution:**\n- The rule: a verb's tense must match the time frame the sentence establishes.\n- The phrase \"In 1902\" pins the survey to a single, finished point in the past, and a completed, dated event takes the simple past.\n- \"In 1902, a state fisheries bureau conducted a survey\" states the finished event plainly.\n\n**Why the other choices are wrong:**\n- A: \"Conducts\" is present tense, which contradicts the 1902 date.\n- B: \"Has conducted\" is the present perfect, used for actions with continuing present relevance and incompatible with a specific past date like \"In 1902.\"\n- C: \"Had conducted\" is the past perfect, which requires a second, later past event for the survey to have happened before — and the sentence supplies none."
 }

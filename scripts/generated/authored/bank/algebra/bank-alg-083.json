@@ -1,0 +1,50 @@
+{
+ "id": "bank-alg-083",
+ "question": "The parabola shown models a hopper's cross section by $y = f(x)$. Which ordered pair is the vertex of the graph of $y = f(x - 2) + 6$?",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    4,
+    -3
+   ],
+   "a": 1,
+   "showPoints": [
+    [
+     2,
+     1
+    ],
+    [
+     6,
+     1
+    ]
+   ],
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(2, -9)$"
+  },
+  {
+   "id": "B",
+   "text": "$(2, 3)$"
+  },
+  {
+   "id": "C",
+   "text": "$(6, -9)$"
+  },
+  {
+   "id": "D",
+   "text": "$(6, 3)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "shifts left 2 and down 6, reversing both signs",
+  "B": "reads f(x-2) as a shift 2 units left",
+  "C": "subtracts 6 from the vertex height instead of adding it"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertex from Transformations**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The vertex reads $(4, -3)$; $f(x - 2) + 6$ moves it $2$ right and $6$ up to $(6, 3)$.\n\n**The Full Solution:**\nStep 1: From the graph, the lowest point of $y = f(x)$ is $(4, -3)$.\nStep 2: Replacing $x$ with $x - 2$ shifts every point $2$ units right, sending the vertex to $x = 6$.\nStep 3: Adding $6$ raises every point $6$ units, so the vertex height becomes $-3 + 6 = 3$, giving $(6, 3)$. Check: the shifted curve is $y = (x - 6)^2 + 3$, whose lowest point is $(6, 3)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(2, -9)$): reverses both signs, moving the vertex left $2$ and down $6$.\n* Choice B ($(2, 3)$): reads $f(x - 2)$ as a shift to the left, giving $x = 2$.\n* Choice C ($(6, -9)$): shifts right correctly but subtracts $6$ from the height instead of adding it.\n\n**Test Day Takeaway:** Inside the function the shift is opposite in sign; outside it is exactly as written."
+}

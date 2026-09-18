@@ -1,31 +1,31 @@
 {
-  "id": 1229,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "Tracing how a family of related languages spread across a continent is rarely a matter of drawing a single migration route. Trade contacts between distant groups, the borrowing of words and grammar from neighbors, and the slow drift of regional dialects all ____ the picture, leaving linguists to weigh several overlapping explanations for why related languages turn up where they do.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "confirm"
-    },
-    {
-      "id": "B",
-      "text": "complicate"
-    },
-    {
-      "id": "C",
-      "text": "simplify"
-    },
-    {
-      "id": "D",
-      "text": "complete"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The sentence lists several forces—borrowing, dialect drift, trade contacts—that pull in different directions and leave linguists weighing overlapping explanations, so those forces \"complicate\" the picture. \"Simplify\" points the opposite way, as if the forces made the account cleaner, when they do the reverse. \"Complete\" is tempting because \"complete the picture\" is a familiar phrase, but these forces leave the picture unresolved rather than finished. \"Confirm\" would mean the forces verify a single established picture, but the passage describes competing explanations, not one being borne out."
+ "id": 1229,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "The account books of the last coasting schooners record a trade squeezed from every side. Rising insurance rates on aging wooden hulls, railroad spurs pushing into the quarry towns, and steam vessels that kept their schedules in any weather all ____ the schooners' hold on the bulk trades, until owners could turn a profit only by buying worn vessels cheaply and sailing them, uninsured, to the end of their working lives.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "confirmed"
+  },
+  {
+   "id": "B",
+   "text": "eroded"
+  },
+  {
+   "id": "C",
+   "text": "restored"
+  },
+  {
+   "id": "D",
+   "text": "described"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Three pressures — insurance costs, railroads, steamers — act together on \"the schooners' hold on the bulk trades,\" and the result is a trade reduced to sailing worn-out, uninsured vessels. The pressures wore that hold away: they \"eroded\" it.\n\n**The Full Solution:**\n- The opening announces the direction: a trade \"squeezed from every side.\"\n- The sentence then lists three squeezing forces, each removing some of the schooners' business — costs rising, cargoes leaving by rail, customers won by reliable steam.\n- The endpoint (\"until owners could turn a profit only by...\") shows a grip weakened by degrees rather than broken at a stroke, which is exactly what \"eroded\" conveys: gradual wearing away.\n\n**Why the other choices are wrong:**\n- A: \"Confirmed\" would mean the forces strengthened or proved the schooners' hold, the reverse of a squeeze.\n- C: \"Restored\" points the wrong direction entirely — the hold was being lost, not recovered.\n- D: \"Described\" makes no sense as an action of insurance rates and rail lines upon a trade; the account books describe, the forces act."
 }

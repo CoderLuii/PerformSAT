@@ -1,0 +1,67 @@
+{
+ "id": 10,
+ "question": "Each dot in the plot stands for one of the $11$ guests who checked into a coastal hostel on one day, placed at the number of nights that guest booked. Which statement about these data is true?",
+ "diagram": {
+  "type": "dotPlot",
+  "params": {
+   "data": [
+    {
+     "value": 2,
+     "count": 2
+    },
+    {
+     "value": 3,
+     "count": 3
+    },
+    {
+     "value": 4,
+     "count": 1
+    },
+    {
+     "value": 5,
+     "count": 2
+    },
+    {
+     "value": 7,
+     "count": 1
+    },
+    {
+     "value": 9,
+     "count": 1
+    },
+    {
+     "value": 12,
+     "count": 1
+    }
+   ],
+   "xMin": 1,
+   "xMax": 13,
+   "xLabel": "Nights booked"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mode is $4$ and the median is $3$."
+  },
+  {
+   "id": "B",
+   "text": "The mode is $3$ and the median is $5$."
+  },
+  {
+   "id": "C",
+   "text": "The mode is $3$ and the median is $4$."
+  },
+  {
+   "id": "D",
+   "text": "The mode is $5$ and the median is $4$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the two measures: 3 is the most frequent value and 4 is the middle value, not the reverse",
+  "B": "reports the mean, 5, in place of the median",
+  "D": "counts the two dots at 5 as the tallest stack, overlooking the three dots at 3"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Mode of a Data Set**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The tallest stack sits at $3$, so the mode is $3$. With $11$ values, the median is the $6$th from the left, which is $4$.\n\n**The Full Solution:**\nStep 1: Read the counts off the plot: $2$ appears twice, $3$ appears three times, $4$ once, $5$ twice, and $7$, $9$, and $12$ once each. That is $2 + 3 + 1 + 2 + 1 + 1 + 1 = 11$ guests, as stated.\nStep 2: The mode is the value that occurs most often. No value occurs more than three times, and only $3$ occurs three times, so the mode is $3$.\nStep 3: The median of $11$ ordered values is the $6$th. Counting from the left, positions $1$-$2$ are $2$, positions $3$-$5$ are $3$, and position $6$ is $4$, so the median is $4$. Check by counting from the right: positions $11$ down to $7$ are $12, 9, 7, 5, 5$, and position $6$ is again $4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (mode $4$, median $3$): the two statistics are switched. Only one dot sits at $4$, so $4$ cannot be the most frequent value.\n* Choice B (mode $3$, median $5$): $5$ is the *mean* here ($\\frac{55}{11} = 5$), pulled up by the guest who booked $12$ nights. The median ignores how far the outliers reach.\n* Choice D (mode $5$, median $4$): the median is right, but $5$ carries only two dots against three at $3$.\n\n**Test Day Takeaway:** On a dot plot the mode is the tallest stack and the median is found by counting dots, not by scanning the axis. With an odd count $n$, the median sits at position $\\frac{n+1}{2}$."
+}

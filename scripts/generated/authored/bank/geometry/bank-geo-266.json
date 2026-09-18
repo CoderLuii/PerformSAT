@@ -1,0 +1,41 @@
+{
+ "id": "bank-geo-266",
+ "question": "Two steel reinforcing bars cross inside a precast mold. The degree measures of two of the resulting angles appear in the figure, and each of those measures is written in terms of the constant $m$. Which equation can be used to find the value of $m$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "(m + 24)°",
+    "",
+    "(2m - 16)°",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$m + 24 = 2m - 16$"
+  },
+  {
+   "id": "B",
+   "text": "$(m + 24) + (2m - 16) = 90$"
+  },
+  {
+   "id": "C",
+   "text": "$(m + 24) + (2m - 16) = 180$"
+  },
+  {
+   "id": "D",
+   "text": "$2(m + 24) = 2m - 16$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "treats vertical angles as complementary",
+  "C": "treats vertical angles as supplementary, which is true only for adjacent angles",
+  "D": "doubles one expression instead of setting the two equal"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The two marked angles lie across the crossing point from each other, so they are vertical angles and their measures are equal.\n\n**The Full Solution:**\nStep 1: The angle marked $(m + 24)^\\circ$ and the angle marked $(2m - 16)^\\circ$ are on opposite sides of the point where the bars cross.\nStep 2: Angles in that position are vertical angles, and vertical angles are congruent.\nStep 3: Setting the measures equal gives $m + 24 = 2m - 16$.\n\nCheck: That equation gives $m = 40$, so each marked angle measures $64$ degrees, a legitimate pair of vertical angles. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: treats the two angles as complementary; a sum of $90$ degrees would force $m = \\frac{82}{3}$ and two unequal vertical angles.\n* Choice C: treats them as supplementary, which is the rule for adjacent angles, not opposite ones.\n* Choice D: doubles one expression rather than setting the two equal, which no angle relationship supports.\n\n**Test Day Takeaway:** Decide adjacent or opposite first; opposite means set equal, adjacent means sum to $180^\\circ$."
+}

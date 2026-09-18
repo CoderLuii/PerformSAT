@@ -1,0 +1,46 @@
+{
+ "id": "bank-geo-047",
+ "question": "A loading ramp makes an angle $\\theta$ with the level ground, where $\\sin(\\theta) = \\dfrac{3}{5}$. The ramp covers a horizontal distance of $36$ feet. What is the vertical rise, in feet, of the ramp?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "θ",
+    "",
+    ""
+   ],
+   "sideLabels": [
+    "36",
+    "",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$21.6$"
+  },
+  {
+   "id": "B",
+   "text": "$27$"
+  },
+  {
+   "id": "C",
+   "text": "$28.8$"
+  },
+  {
+   "id": "D",
+   "text": "$45$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies the horizontal distance by sine",
+  "C": "multiplies the horizontal distance by cosine",
+  "D": "computes the ramp length instead of the rise"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Recover Tangent from Sine (3-4-5 Triple)**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $\\sin(\\theta) = \\frac{3}{5}$ is the $3$-$4$-$5$ triangle, so $\\tan(\\theta) = \\frac{3}{4}$ and the rise is $36 \\cdot \\frac{3}{4} = 27$ feet.\n\n**The Full Solution:**\nStep 1: $\\sin(\\theta) = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{3}{5}$. The missing leg satisfies $a^2 + 3^2 = 5^2$, so $a = 4$: the $3$-$4$-$5$ triangle.\nStep 2: The horizontal distance is the adjacent leg, so the ratio that connects it to the rise is $\\tan(\\theta) = \\frac{3}{4}$.\nStep 3: rise $= 36 \\cdot \\tan(\\theta) = 36 \\cdot \\frac{3}{4} = 27$ feet.\n\nVerification: with legs $36$ and $27$, the ramp itself is $\\sqrt{36^2 + 27^2} = \\sqrt{1296 + 729} = \\sqrt{2025} = 45$, and $\\frac{27}{45} = \\frac{3}{5} = \\sin(\\theta)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($21.6$): multiplies the horizontal distance by $\\sin(\\theta) = \\frac{3}{5}$; sine pairs the rise with the ramp length, not with the horizontal run.\n* Choice C ($28.8$): multiplies by $\\cos(\\theta) = \\frac{4}{5}$, which relates the run to the ramp length.\n* Choice D ($45$): gives the length of the ramp itself, $36 \\cdot \\frac{5}{4}$, rather than its vertical rise.\n\n**Test Day Takeaway:** When a problem gives one ratio and asks about the other two sides, rebuild the whole triangle from the triple first. Horizontal run plus vertical rise always means tangent."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-255",
+ "question": "An apiary counted its active honeybee hives three times in one year. The June count was $25\\%$ greater than the April count, and the August count was $12\\%$ less than the June count. The August count is what percent of the April count?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$88\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$110\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$113\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$137\\%$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "applies only the August decrease, reporting $88\\%$ and ignoring the June increase",
+  "C": "combines the two changes by subtracting the percents, $100 + 25 - 12 = 113$",
+  "D": "combines the two changes by adding the percents, $100 + 25 + 12 = 137$"
+ },
+ "explanation": "**SAT Pattern: Percent Greater Than / Less Than**\n\n**Choice B is correct.** The two changes compose as factors: $1.25(0.88) = 1.10$, so the August count is $110\\%$ of the April count.\n\n**The Fast Way (~45s):** Multiply the factors, not the percents: $1.25(0.88) = 1.10$, which is $110\\%$.\n\n**The Full Solution:**\n\nStep 1: Write June in terms of April. A count $25\\%$ greater than the April count $A$ is $1.25A$ hives.\n\nStep 2: Write August in terms of June. A count $12\\%$ less than $1.25A$ is $0.88(1.25A) = 1.10A$ hives.\n\nStep 3: Compare August with April: $\\frac{1.10A}{A} = 1.10$, or $110\\%$. Check: with $A = 200$, June is $250$ and August is $250 - 30 = 220$ hives, and $\\frac{220}{200} = 110\\%$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($88\\%$): applies the August decrease to the April count. The $12\\%$ is measured against June, not April.\n* Choice C ($113\\%$): treats the percents as adding and subtracting on a common base of $100$. Successive changes multiply.\n* Choice D ($137\\%$): adds both percents, which would require both changes to be increases on the same base.\n\n**Test Day Takeaway:** Successive percent changes multiply -- turn each phrase into a factor and multiply the factors before you convert back to a percent."
+}

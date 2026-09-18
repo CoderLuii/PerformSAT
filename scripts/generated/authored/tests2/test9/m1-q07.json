@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A calibration step multiplies every reading from a thickness gauge by one positive constant. Before calibration the readings have a mean of $8.4$ and a standard deviation of $1.2$; after calibration the standard deviation is $4.2$. What is the mean of the calibrated readings?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2.4$"
+  },
+  {
+   "id": "B",
+   "text": "$11.4$"
+  },
+  {
+   "id": "C",
+   "text": "$25.2$"
+  },
+  {
+   "id": "D",
+   "text": "$29.4$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the scale factor and multiplies the mean by 1.2/4.2 instead of 4.2/1.2",
+  "B": "adds the change of 3 in the standard deviation to the mean instead of scaling",
+  "C": "uses the difference 4.2 - 1.2 = 3 as the constant instead of the ratio 3.5"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Scaling a Data Set by a Constant**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Multiplying every value by $c$ multiplies both the mean and the standard deviation by $c$, so $c=\\frac{4.2}{1.2}=3.5$ and the new mean is $3.5(8.4)=29.4$.\n\n**The Full Solution:**\nStep 1: Let $c$ be the calibration constant. Scaling every reading by $c$ scales the standard deviation by $c$ as well, since every deviation from the mean is stretched by the same factor.\nStep 2: The standard deviation ran from $1.2$ to $4.2$, so $1.2c=4.2$, which gives $c=3.5$.\nStep 3: The mean scales by the same $c$: $8.4(3.5)=29.4$. Check the ratio both ways: $\\frac{29.4}{8.4}=3.5$ and $\\frac{4.2}{1.2}=3.5$, the same constant ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.4$): uses $\\frac{1.2}{4.2}$ as the constant, $8.4\\left(\\frac{1.2}{4.2}\\right)=2.4$ — the scale factor is upside down, and a spread that grew cannot shrink the mean.\n* Choice B ($11.4$): adds the change in spread, $8.4+(4.2-1.2)=11.4$, treating a multiplication as a shift.\n* Choice C ($25.2$): uses the difference $4.2-1.2=3$ as the multiplier, $8.4(3)=25.2$, instead of the ratio $3.5$.\n\n**Test Day Takeaway:** Multiplying a data set by $c$ multiplies mean, median, and standard deviation by $c$; ADDING a constant moves the mean but leaves the standard deviation alone. Recover $c$ from whichever statistic the problem gives you, then apply it once."
+}

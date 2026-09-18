@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 1,
- "passage": "Astrophysicist Sara Seager of the Massachusetts Institute of Technology helped build the theoretical framework that astronomers now use to study the atmospheres of planets orbiting distant stars. When such a planet briefly passes in front of its host star, a portion of the starlight filters through the planet's thin envelope of gases. The narrow absorption features carved into that filtered light ______ which molecules are present, allowing researchers to test for chemical signatures of life on worlds far beyond our solar system.",
+ "passage": "Historians of the medieval Norse settlements in Greenland have long depended on a patchy written record: sagas composed centuries after the events they describe and a handful of administrative documents. Tree-ring analysis of driftwood and imported timbers recovered from settlement sites now offers an independent line of evidence. When the felling dates derived from the rings ______ the chronology implied by the texts, scholars can treat that chronology with far greater confidence.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "forecast"
+   "text": "corroborate"
   },
   {
    "id": "B",
-   "text": "announce"
+   "text": "embellish"
   },
   {
    "id": "C",
-   "text": "mask"
+   "text": "anticipate"
   },
   {
    "id": "D",
-   "text": "disclose"
+   "text": "supersede"
   }
  ],
- "correctAnswer": "D",
- "explanation": "The correct answer is D, \"disclose.\" The passage describes a transit in which starlight filters through a planet's atmosphere and emerges carrying narrow absorption features whose pattern lets researchers determine which molecules are present. The verb in the blank must therefore mean to make a chemical identity known to an observer through that spectral evidence. \"Disclose\" matches: the absorption features quietly make known what is in the atmosphere, in the same scientific register Seager uses when she describes how transit spectra allow atmospheric constituents to be identified."
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The payoff — \"far greater confidence\" in the textual chronology — follows only if the ring dates confirm what the texts imply, which is what \"corroborate\" means.\n\n**The Full Solution:**\n- The passage frames tree-ring dating as an \"independent line of evidence\" set against an unreliable written record.\n- The result of the blank is that scholars gain \"far greater confidence\" in the chronology; independent evidence produces that confidence by confirming — corroborating — the texts.\n\n**Why the other choices are wrong:**\n- B: \"Embellish\" adds decorative detail, not confirmation.\n- C: \"Anticipate\" gets the time relationship backward — the rings date the events; they don't foresee the texts.\n- D: \"Supersede\" would replace the textual chronology, which would undermine confidence in it rather than strengthen it."
 }

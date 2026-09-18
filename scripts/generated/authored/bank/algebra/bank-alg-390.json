@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-390",
+  "question": "A landscaping crew has at most $30$ hours available to plant trees and shrubs. Planting a tree takes $2.5$ hours, and planting a shrub takes $0.5$ hour. A client requires that the number of shrubs planted be at least twice the number of trees planted. If $t$ is the number of trees and $s$ is the number of shrubs, which of the following systems of inequalities represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5t + s \\leq 60$ and $2s \\geq t$"
+    },
+    {
+      "id": "B",
+      "text": "$5t + s \\leq 60$ and $s \\geq 2t$"
+    },
+    {
+      "id": "C",
+      "text": "$5t + s \\geq 60$ and $s \\geq 2t$"
+    },
+    {
+      "id": "D",
+      "text": "$t + 5s \\leq 60$ and $s \\geq 2t$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "puts the factor of 2 on the wrong variable in the ratio condition",
+    "C": "reverses the time constraint",
+    "D": "swaps the time coefficients of trees and shrubs"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: System of Linear Inequalities**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Time: $2.5t + 0.5s \\leq 30$; doubling gives $5t + s \\leq 60$. \"Shrubs at least twice the trees\": $s \\geq 2t$.\n\n**The Full Solution:**\nStep 1: Build the time constraint. Trees use $2.5t$ hours and shrubs use $0.5s$ hours, and the total cannot exceed $30$: $2.5t + 0.5s \\leq 30$. Multiplying every term by $2$ (a positive number, so the direction is unchanged) gives the equivalent form $5t + s \\leq 60$, which is how the choices are written.\nStep 2: Build the ratio constraint. \"The number of shrubs is at least twice the number of trees\" compares $s$ to $2t$: $s \\geq 2t$. The factor of $2$ multiplies the trees because trees are the smaller quantity being doubled.\nStep 3: The system is $5t + s \\leq 60$ and $s \\geq 2t$. Check with $t = 4$, $s = 10$: time $2.5(4) + 0.5(10) = 10 + 5 = 15 \\leq 30$ hours, or in the scaled form $5(4) + 10 = 30 \\leq 60$; and $10 \\geq 2(4) = 8$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5t + s \\leq 60$ and $2s \\geq t$): doubles the shrubs instead of the trees, which allows, for example, $s = 3$ with $t = 5$, far fewer shrubs than trees.\n* Choice C ($5t + s \\geq 60$ and $s \\geq 2t$): requires the crew to use at least $30$ hours rather than at most $30$.\n* Choice D ($t + 5s \\leq 60$ and $s \\geq 2t$): assigns $2.5$ hours to each shrub and $0.5$ hour to each tree, the reverse of the given times.\n\n**Test Day Takeaway:** For \"A is at least twice B,\" write $A \\geq 2B$ and test it with easy numbers; for a time budget, check whether the choices have been scaled by a constant before you match coefficients."
+}

@@ -1,0 +1,29 @@
+{
+ "question": "A triathlon club scores athletes with $4x + 3y = 29$ and $2x + 5y = 25$, where $x$ is the number of top-ten swim splits and $y$ is the number of top-ten run splits an athlete posted over a season. What is the value of $10x + 11y$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$54$"
+  },
+  {
+   "id": "B",
+   "text": "$79$"
+  },
+  {
+   "id": "C",
+   "text": "$83$"
+  },
+  {
+   "id": "D",
+   "text": "$108$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "adds the two scores once each, which gives $6x + 8y$, not $10x + 11y$",
+  "B": "uses the multipliers in the wrong order, giving $8x + 13y$",
+  "D": "doubles both scores, giving $12x + 16y$"
+ },
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** $10x + 11y$ equals twice the first score plus the second, so it is $2(29) + 25 = 83$.\n\n**The Full Solution:**\n\nStep 1: Look for multipliers $p$ and $q$ with $p(4x + 3y) + q(2x + 5y) = 10x + 11y$, so $4p + 2q = 10$ and $3p + 5q = 11$.\n\nStep 2: From the first, $q = 5 - 2p$; substituting gives $3p + 25 - 10p = 11$, so $p = 2$ and $q = 1$.\n\nStep 3: Therefore $10x + 11y = 2(29) + 25 = 83$. Check with $x = 5$ and $y = 3$: $10(5) + 11(3) = 83$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($54$): adds the scores once each, which builds $6x + 8y$ instead.\n\n* Choice B ($79$): swaps the multipliers, building $8x + 13y$.\n\n* Choice D ($108$): doubles both scores, building $12x + 16y$.\n\n**Test Day Takeaway:** When the target is not a simple sum or difference, solve the small system for the two multipliers first; the arithmetic afterward is one line.",
+ "id": "bank-alg-465"
+}

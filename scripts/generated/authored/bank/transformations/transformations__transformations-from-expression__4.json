@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "The function $f$ is defined by $f(x)=x^{3}+2x$, and the function $u$ is defined by $u(x)=f(-x)$. Which of the following expressions is equivalent to $u(x)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-x^{3}-2x$"
+    },
+    {
+      "id": "B",
+      "text": "$-x^{3}+2x$"
+    },
+    {
+      "id": "C",
+      "text": "$x^{3}-2x$"
+    },
+    {
+      "id": "D",
+      "text": "$x^{3}+2x$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "misses the sign on the linear term",
+    "C": "misses the sign on the cubic term",
+    "D": "treats the function as unchanged"
+  },
+  "correctAnswer": "A",
+  "hint": "Replace every $x$ with $-x$ and simplify each power separately.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** $(-x)^{3}=-x^{3}$ and $2(-x)=-2x$, so $u(x)=-x^{3}-2x$.\n\n**The Full Solution:**\nStep 1: Substituting gives $f(-x)=(-x)^{3}+2(-x)$.\nStep 2: An odd power keeps the negative sign: $(-x)^{3}=-x^{3}$. The linear term becomes $-2x$.\nStep 3: So $u(x)=-x^{3}-2x$. Check at $x=1$: $u(1)=f(-1)=-1-2=-3$, and $-1^{3}-2(1)=-3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-x^{3}+2x$): negates the cubic term but forgets that $2(-x)=-2x$.\n* Choice C ($x^{3}-2x$): negates the linear term only; $(-x)^{3}$ is negative too.\n* Choice D ($x^{3}+2x$): assumes the substitution changes nothing, which is true only for even-power terms.\n\n**Test Day Takeaway:** Under $x\\to -x$, odd-power terms flip sign and even-power terms do not."
+}

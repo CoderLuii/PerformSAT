@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-171",
+  "question": "A data set has a mean of $20$. When the value $56$ is added to the data set, the mean of the new data set is $23$. How many values were in the original data set?",
+  "correctAnswer": "11",
+  "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**The correct answer is $11$.**\n\n**The Fast Way (~15s):** With $n$ original values, $20n + 56 = 23(n + 1)$, so $20n + 56 = 23n + 23$, $33 = 3n$, and $n = 11$.\n\n**The Full Solution:**\nStep 1: Let $n$ be the original count; the original sum is $20n$.\nStep 2: After adding $56$, there are $n + 1$ values with sum $20n + 56$ and mean $23$: $\\frac{20n + 56}{n + 1} = 23$, so $20n + 56 = 23n + 23$.\nStep 3: $56 - 23 = 3n$, so $3n = 33$ and $n = 11$. Check: $11 \\times 20 = 220$; $220 + 56 = 276$; $\\frac{276}{12} = 23$. $\\checkmark$\n\n**Common Mistakes:** Computing $\\frac{56 - 20}{3} = 12$, which is the new count $n + 1$, not the original count; forgetting to add $1$ to the count and solving $20n + 56 = 23n$, which gives $n \\approx 18.67$; dividing $56$ by $23$.\n\n**Test Day Takeaway:** When the count is unknown, write both sums in terms of $n$ and remember that adding a value raises the count by $1$."
+}

@@ -1,0 +1,29 @@
+{
+ "question": "On a triangular traffic island, the curb of one adjoining street runs straight past a corner of the island and forms an exterior angle at that corner. The island's other two corners have interior angles of $x^{\\circ}$ and $y^{\\circ}$, and that exterior angle measures $z^{\\circ}$. Which equation must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$z = x + y$"
+  },
+  {
+   "id": "B",
+   "text": "$z = 180 - x - y$"
+  },
+  {
+   "id": "C",
+   "text": "$z = x + y - 180$"
+  },
+  {
+   "id": "D",
+   "text": "$z = 180 - x + y$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "gives the interior angle at that corner rather than the exterior angle",
+  "C": "subtracts 180 after adding the two remote interior angles",
+  "D": "subtracts one remote interior angle and adds the other"
+ },
+ "explanation": "**SAT Pattern: Exterior Angle Theorem**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** An exterior angle of a triangle equals the sum of the two remote interior angles, so $z = x + y$.\n\n**The Full Solution:**\nStep 1: Let the interior angle at the corner in question be $w^{\\circ}$. The three interior angles satisfy $w + x + y = 180$.\nStep 2: The exterior angle is the supplement of that interior angle: $z = 180 - w$.\nStep 3: Substituting $w = 180 - x - y$ gives $z = 180 - (180 - x - y) = x + y$. Check: with $x = 50$ and $y = 60$ the interior angle is $70^{\\circ}$ and the exterior angle is $110^{\\circ} = 50 + 60$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: computes $180 - x - y$, which is the INTERIOR angle at that corner, not the exterior one.\n* Choice C: adds the two remote angles and then subtracts $180$, which would make $z$ negative for a valid triangle.\n* Choice D: mixes the supplement with only one remote interior angle.\n\n**Test Day Takeaway:** An exterior angle equals the two non-adjacent interior angles added together — no $180$ is left over once the substitution is done.",
+ "id": "bank-geo-211"
+}

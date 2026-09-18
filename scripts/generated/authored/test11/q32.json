@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To argue that Baroque music should never be performed on modern instruments under any circumstances whatsoever."
-    },
-    {
-      "id": "B",
-      "text": "To trace in detail the individual careers of the various musicians who are credited with founding the historically informed performance movement during the 1970s."
-    },
-    {
-      "id": "C",
-      "text": "To explain how the historically informed performance movement departed from twentieth-century convention and what it aimed to recover by doing so."
-    },
-    {
-      "id": "D",
-      "text": "To describe the construction of the period instruments that Baroque performers had used before the twentieth century began."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage describes the standard twentieth-century way of playing Baroque music, the historically informed movement's break from it, and the movement's goal of recovering interpretive options that had been lost. Explaining that departure and its aim is the passage's purpose. Choice A overstates the point into a blanket ban the passage never issues; Choice B promises careers the passage does not trace; and Choice D narrows the focus to instrument construction, only one detail among several.",
-  "passage": "For most of the twentieth century, orchestras performed Baroque music on modern instruments, at modern pitch, and with the large string sections of a Romantic symphony. Beginning in the 1970s, a movement known as historically informed performance challenged that habit. Its musicians played on instruments built to period specifications or on careful reproductions, tuned to the lower pitches documented in old treatises, and in ensembles sized to match the forces a composer would actually have had on hand. The aim was not to claim that older sounds were objectively better but to recover interpretive options the standardized modern approach had quietly foreclosed, letting listeners hear how the music might have struck audiences of its own time.",
-  "_meta": {
-    "anchor": "Baroque performance practice: historically informed performance movement"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To argue that the chasqui system moved messages more efficiently than any postal service that came after it"
   },
-  "id": 1132,
-  "module": 2
+  {
+   "id": "B",
+   "text": "To describe the training that prepared young runners for service in the chasqui system"
+  },
+  {
+   "id": "C",
+   "text": "To explain how a communication system achieved its speed by dividing one long journey among many runners"
+  },
+  {
+   "id": "D",
+   "text": "To recount how a Spanish chronicler came to witness the chasqui relays at first hand"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The text poses the problem (news had to outrun any single messenger), presents the design (stations a few miles apart, fresh runners), and closes with the principle: \"By breaking one immense journey into many short sprints, the system turned ordinary human endurance into a speed no individual could match.\"\n\n**The Full Solution:**\n- Purpose questions ask what the whole text is doing; here every sentence serves the how-it-worked explanation.\n- The need, the mechanism, and the closing principle form one explanatory arc — the division of a long journey into short relays as the source of speed.\n- Choice C states that arc; the chronicler's testimony is one piece of evidence within it.\n\n**Why the other choices are wrong:**\n- A: No later postal service is mentioned, so no such comparison can be the purpose.\n- B: Training is never discussed; the runners appear already stationed and ready.\n- D: Cieza de León's marveling report is supporting material, not the story the text is telling.",
+ "passage": "The Inca empire stretched along the spine of the Andes, and its rulers needed news to travel faster than any single messenger could carry it. The solution was the chasqui system: relay stations placed a few miles apart along the royal roads, each housing runners ready to sprint to the next post at any hour. The chronicler Pedro Cieza de León, writing in the 1550s, marveled that orders from the capital reached provinces hundreds of leagues away in a matter of days. By breaking one immense journey into many short sprints, the system turned ordinary human endurance into a speed no individual could match.",
+ "_meta": {
+  "anchor": "chasqui relay runners — relay division as the source of speed (Cieza de León testimony)",
+  "distractors": {
+   "A": "comparison never made",
+   "B": "topic never discussed",
+   "D": "evidence mistaken for purpose"
+  }
+ },
+ "id": 1132,
+ "module": 2
 }

@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
+  "module": 2,
+  "passage": "When governments organized radio licensing in the early 1920s, commercial and military services claimed the long wavelengths, which were universally thought best for covering distance. Amateur operators were shunted onto wavelengths shorter than 200 meters, a band regarded as nearly worthless. Transmitting from attics and garden sheds, the amateurs then discovered what the experts had missed: short waves, rebounding between the upper atmosphere and the ground, could leap oceans on a few watts of power. Within a few years, transatlantic amateur contacts had become routine, and the services that had dismissed the short waves were scrambling to reclaim them.",
   "question": "Which choice best states the main purpose of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "To argue that synthetic pesticides should never be used in agriculture under any circumstances and that Carson's book made exactly this case."
+      "text": "To explain the physical mechanism that allows short radio waves to travel far beyond the horizon."
     },
     {
       "id": "B",
-      "text": "To recount the chemical industry's counter-campaign against Silent Spring and to weigh which of its objections to Carson's evidence held up."
+      "text": "To argue that the governments organizing radio licensing in the 1920s should have reserved the long wavelengths for amateur operators rather than for commercial and military services."
     },
     {
       "id": "C",
-      "text": "To detail the chemical structure of DDT and to compare the rates at which it accumulates in different species of birds and predators."
+      "text": "To describe the homemade equipment that amateur radio operators of the 1920s assembled in their attics and garden sheds."
     },
     {
       "id": "D",
-      "text": "To explain how Carson's book turned existing scientific findings into a public argument about pesticides and to describe how that argument was received and acted on."
+      "text": "To recount how operators confined to wavelengths considered worthless discovered those wavelengths' extraordinary reach, upending expert opinion."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage explains how Carson turned a decade of scientific work into a public argument about pesticides and then describes how that argument was received and acted on. Choice A overstates her claim into a categorical ban she explicitly did not make; choice B narrows the passage to the industry's counter-campaign; and choice C treats DDT's chemistry, which the passage never details, as the subject.",
-  "passage": "When marine biologist Rachel Carson published *Silent Spring* in 1962, the book drew on a decade of scientific literature about synthetic pesticides — most prominently DDT — and translated that literature into a sustained argument for a general audience. Carson's claim was not that pesticides should never be used but that they had been deployed so widely, and with so little study of their effects on non-target species, that they were disrupting food webs in measurable ways: birds whose insect prey had been poisoned, predators carrying accumulated chemical loads up the food chain, and reproductive failures concentrated in species at the top. The book provoked an immediate counter-campaign from the chemical industry, but the studies it cited were already converging in the same direction, and the policies it called for — stricter pre-market testing, regional bans on persistent compounds, monitoring of non-target effects — were being implemented in some form within a decade.",
+  "explanation": "**Choice D is correct.** The text is a narrative of reversal: amateurs pushed onto a dismissed band, the discovery that the band could span oceans, and the experts scrambling back. Choice D names that arc.\n\n**The Full Solution:**\n- Setup: the valued long wavelengths go to established services; amateurs get the \"nearly worthless\" short waves.\n- Turn: the amateurs find that short waves leap oceans on little power.\n- Consequence: expert opinion is overturned and the services want the band back. The purpose is to recount that story.\n\n**Why the other choices are wrong:**\n- A: The rebounding mechanism gets one clause; it serves the story rather than being the point.\n- B: The text passes no judgment on how licensing should have been arranged.\n- C: Attics and sheds set a scene; no equipment is described.",
   "_meta": {
-    "anchor": "Rachel Carson — Silent Spring (entity_keep)"
-  },
-  "module": 2
+    "anchor": "amateur radio and the discovery of shortwave propagation"
+  }
 }

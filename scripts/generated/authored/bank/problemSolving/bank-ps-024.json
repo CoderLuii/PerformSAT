@@ -1,0 +1,40 @@
+{
+  "id": "bank-ps-024",
+  "question": "The dot plot shows the daily rainfall, in millimeters, recorded at a weather station on each of $7$ days. What is the mean daily rainfall, in millimeters, for these $7$ days? Round your answer to the nearest tenth.",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 12,
+          "count": 1
+        },
+        {
+          "value": 13,
+          "count": 2
+        },
+        {
+          "value": 15,
+          "count": 1
+        },
+        {
+          "value": 16,
+          "count": 1
+        },
+        {
+          "value": 18,
+          "count": 1
+        },
+        {
+          "value": 20,
+          "count": 1
+        }
+      ],
+      "xMin": 10,
+      "xMax": 22,
+      "xLabel": "Rainfall (mm)"
+    }
+  },
+  "correctAnswer": "15.3",
+  "explanation": "**SAT Pattern: Mean with Rounding**\n\n**The correct answer is $15.3$.**\n\n**The Fast Way (~20s):** Values: $12, 13, 13, 15, 16, 18, 20$. Sum $= 107$, and $\\frac{107}{7} = 15.28\\ldots \\approx 15.3$.\n\n**The Full Solution:**\nStep 1: Read one value per dot: $12, 13, 13, 15, 16, 18, 20$ (the $13$ appears twice).\nStep 2: Sum $= 12 + 26 + 15 + 16 + 18 + 20 = 107$.\nStep 3: Mean $= \\frac{107}{7} = 15.2857\\ldots$, which rounds to $15.3$. Check: $7 \\times 15.3 = 107.1$, within rounding of $107$. $\\checkmark$\n\n**Common Mistakes:** Entering $15$ (the median, the middle dot); entering $13$ (the mode); entering $17.8$ (dividing by $6$, the number of distinct values, instead of $7$ dots); entering $15.28$ or $15.29$ (not rounding to the tenth as instructed).\n\n**Test Day Takeaway:** Sum every dot, divide by the number of dots, and round only at the end to the precision the question names."
+}

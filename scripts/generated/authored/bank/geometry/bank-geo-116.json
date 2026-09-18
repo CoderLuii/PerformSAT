@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-116",
+ "question": "A rectangular shipping label has an area of $91$ square centimeters and a width of $7$ centimeters. What is the length, in centimeters, of the label?",
+ "correctAnswer": "13",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**The correct answer is $13$.**\n\n**The Fast Way (~10s):** $\\ell = \\frac{A}{w} = \\frac{91}{7} = 13$ centimeters.\n\n**The Full Solution:**\nStep 1: Start from $A = \\ell w$ with $A = 91$ and $w = 7$.\nStep 2: Divide both sides by the width: $\\ell = \\frac{91}{7}$.\nStep 3: $\\ell = 13$ centimeters.\n\nCheck: $13 \\cdot 7 = 91$ square centimeters.\n\n**Common Mistakes:**\n* Answering $84$ by subtracting the width from the area, which mixes square units with linear units.\n* Answering $637$ by multiplying $91$ by $7$ instead of dividing.\n* Answering $38.5$ by treating $91$ as a perimeter, using $\\frac{91}{2} - 7$.\n\n**Test Day Takeaway:** An area divided by one side always returns the other side, and the units confirm it: square centimeters over centimeters is centimeters."
+}

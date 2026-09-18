@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "Of the $900$ measurements logged by a torque sensor, the probability that a randomly selected measurement is within tolerance is $0.86$, and the probability that a randomly selected measurement is both within tolerance and from the night shift is $0.22$. Which statement must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Exactly $126$ of the measurements were within tolerance and from the night shift."
+  },
+  {
+   "id": "B",
+   "text": "Exactly $198$ of the measurements were within tolerance and from the night shift."
+  },
+  {
+   "id": "C",
+   "text": "Exactly $576$ of the measurements were from the night shift."
+  },
+  {
+   "id": "D",
+   "text": "Exactly $774$ of the measurements were within tolerance and from the night shift."
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 1 - 0.86 = 0.14, the probability of being out of tolerance, in place of the 0.22 joint probability",
+  "C": "subtracts 0.22 from 0.86 and reads the result as the night-shift share; that 0.64 counts the in-tolerance measurements NOT from the night shift",
+  "D": "applies the 0.86 within-tolerance probability to the joint event"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** A probability times the group size is a count: $0.22 \\times 900 = 198$ measurements are both within tolerance and from the night shift.\n\n**The Full Solution:**\nStep 1: Identify what each probability counts. The $0.86$ describes one event, within tolerance; the $0.22$ describes the overlap of two events, within tolerance AND night shift.\nStep 2: Convert the overlap probability to a count: $0.22(900) = 198$.\nStep 3: Test the other statements. The night-shift total is unknown, because nothing is given about night-shift measurements that fall outside tolerance, so only the overlap count is forced. Check: $0.86(900) = 774$ measurements are within tolerance, and $198$ of those $774$ are from the night shift, which is consistent ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($126$): uses $1 - 0.86 = 0.14$; that fraction counts measurements OUT of tolerance, not the overlap.\n* Choice C ($576$): comes from $(0.86 - 0.22)(900)$, which counts measurements within tolerance that are NOT from the night shift; the night-shift total cannot be determined from what is given.\n* Choice D ($774$): applies the within-tolerance probability to the two-event overlap, counting every in-tolerance measurement as a night-shift measurement.\n\n**Test Day Takeaway:** On a must-be-true probability question, name the event each number belongs to before multiplying by the total — a joint probability never describes either event on its own."
+}

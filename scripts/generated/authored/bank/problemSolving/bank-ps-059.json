@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-059",
+  "question": "A road crew paves at a constant rate of $320$ meters per hour. How many meters does the crew pave in $6$ hours $15$ minutes?",
+  "correctAnswer": "2000",
+  "explanation": "**SAT Pattern: Rate × Time = Total (Mixed Units)**\n\n**The correct answer is $2000$.**\n\n**The Fast Way (~15s):** $15$ minutes is $\\frac{15}{60} = 0.25$ hour, so the time is $6.25$ hours and the distance is $320 \\times 6.25 = 2{,}000$ meters.\n\n**The Full Solution:**\nStep 1: Convert the time to hours, the unit in the rate: $6$ hours $15$ minutes $= 6 + \\frac{15}{60} = 6.25$ hours.\nStep 2: Distance $=$ rate $\\times$ time $= 320 \\times 6.25 = 2{,}000$ meters.\nStep 3: Check in pieces: $6$ hours gives $1{,}920$ meters, and $15$ minutes (a quarter hour) gives $80$ meters; $1{,}920 + 80 = 2{,}000$. $\\checkmark$\n\n**Common Mistakes:** Entering $1{,}968$ (writing $6$ hours $15$ minutes as $6.15$ hours; $15$ minutes is $0.25$ hour, not $0.15$); entering $1{,}935$ (adding $15$ meters for the $15$ minutes); entering $196{,}800$ (multiplying by $615$).\n\n**Test Day Takeaway:** Minutes become a fraction of an hour by dividing by $60$; \"$6$ hours $15$ minutes\" is $6.25$, never $6.15$."
+}

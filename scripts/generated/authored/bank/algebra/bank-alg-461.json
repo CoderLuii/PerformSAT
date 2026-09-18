@@ -1,0 +1,29 @@
+{
+ "question": "Two analysts rate a basketball game with $5x + 3y$ and $3x + 5y$, where $x$ is the number of offensive rebounds and $y$ is the number of defensive rebounds. The two ratings are $71$ and $65$. What is the value of $x + y$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$17$"
+  },
+  {
+   "id": "D",
+   "text": "$136$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "subtracts the ratings and reports $x - y$",
+  "B": "solves for $x$ alone and reports the offensive rebounds",
+  "D": "reports $71 + 65$ without dividing by $8$"
+ },
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Adding the ratings gives $8x + 8y = 136$, so $x + y = 17$.\n\n**The Full Solution:**\n\nStep 1: Add the two ratings: $(5x + 3y) + (3x + 5y) = 71 + 65$.\n\nStep 2: Combine like terms: $8x + 8y = 136$.\n\nStep 3: Divide by $8$: $x + y = 17$. Check with $x = 10$ and $y = 7$: $5(10) + 3(7) = 71$ and $3(10) + 5(7) = 65$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3$): subtracts the ratings, which gives $x - y = 3$ rather than the sum.\n\n* Choice B ($10$): solves the system fully and reports only $x$.\n\n* Choice D ($136$): stops at the combined total without dividing by the shared coefficient $8$.\n\n**Test Day Takeaway:** When the coefficients are mirrored, adding gives a multiple of $x + y$; divide by that multiple before answering.",
+ "id": "bank-alg-461"
+}

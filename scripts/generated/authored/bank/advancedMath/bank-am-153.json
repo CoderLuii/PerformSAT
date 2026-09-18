@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-153",
+  "question": "A ceramics kiln's cooling model gives the rate $g(x)=4-x^{3}$, in degrees Celsius per minute, at a damper offset of $x$ units from the neutral position. At one setting the rate is $68$ degrees Celsius per minute. What is that offset?",
+  "correctAnswer": "-4",
+  "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**The correct answer is $-4$.**\n\n**The Fast Way (~25s):** $4-x^{3}=68$ gives $x^{3}=-64$, so $x=-4$.\n\n**The Full Solution:**\nStep 1: Set the model equal to the given rate: $4-x^{3}=68$.\nStep 2: Subtract 4 from both sides: $-x^{3}=64$, so $x^{3}=-64$.\nStep 3: A cube root keeps the sign of its input, so $x=-4$. Check: $4-(-4)^{3}=4+64=68$ ✓\n\n**Common Mistakes:** Taking the cube root of $64$ and reporting $4$ ignores the sign; $4-4^{3}=-60$, not 68. Adding 4 instead of subtracting gives $x^{3}=-72$ and a non-integer setting. Reading $4-x^{3}$ as $(4-x)^{3}$ gives $(4-x)^{3}=68$, which has no integer solution.\n\n**Test Day Takeaway:** Unlike a square, a cube preserves sign — a negative output of $x^{3}$ means a negative input."
+}

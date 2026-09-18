@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-115",
+  "question": "The function $f$ gives a magnetometer's drift, in millivolts, at a coil current of $x$ milliamps, and $f(x)=0$ for exactly one current, $x=6$. A technician sets the current to $2c+8$ milliamps and records zero drift. What is the value of $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-2$"
+    },
+    {
+      "id": "B",
+      "text": "$-1$"
+    },
+    {
+      "id": "C",
+      "text": "$7$"
+    },
+    {
+      "id": "D",
+      "text": "$20$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "subtracts 8 but never divides by 2: 6 - 8 = -2",
+    "C": "adds 8 instead of subtracting before halving: (6 + 8)/2 = 7",
+    "D": "substitutes 6 into 2c + 8 instead of setting it equal to 6: 2(6) + 8 = 20"
+  },
+  "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The drift is zero only at a current of 6, so $2c+8=6$ and $c=-1$.\n\n**The Full Solution:**\nStep 1: The technician's reading is zero exactly when the current sent into $f$ equals the one current that makes $f$ zero.\nStep 2: Set $2c+8=6$, so $2c=-2$.\nStep 3: Divide by 2: $c=-1$. Check: $2(-1)+8=6$ milliamps, and $f(6)=0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): subtracts 8 from 6 but forgets to divide by the coefficient 2.\n* Choice C ($7$): adds 8 rather than subtracting it before halving.\n* Choice D ($20$): substitutes 6 into the expression $2c+8$ instead of setting that expression equal to 6.\n\n**Test Day Takeaway:** Inside a composition, set the whole inner expression equal to the known input and solve, coefficient included."
+}

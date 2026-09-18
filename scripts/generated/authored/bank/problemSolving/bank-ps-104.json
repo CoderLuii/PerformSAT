@@ -1,0 +1,41 @@
+{
+  "id": "bank-ps-104",
+  "question": "The table summarizes the $180$ cheeses entered in a competition by milk type and by award received. One of the cheeses that received an award will be selected at random. What is the probability of selecting a cheese made from goat's milk?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Gold",
+        "Silver",
+        "No award",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Cow",
+          "24",
+          "36",
+          "60",
+          "120"
+        ],
+        [
+          "Goat",
+          "15",
+          "15",
+          "30",
+          "60"
+        ],
+        [
+          "Total",
+          "39",
+          "51",
+          "90",
+          "180"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "1/3",
+  "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**The correct answer is $\\frac{1}{3}$.**\n\n**The Fast Way (~20s):** Awards total $39 + 51 = 90$ cheeses, of which $15 + 15 = 30$ are goat's milk: $\\dfrac{30}{90} = \\dfrac{1}{3}$.\n\n**The Full Solution:**\nStep 1: \"Received an award\" means gold or silver, so the denominator is $39 + 51 = 90$ cheeses.\nStep 2: The goat's-milk cheeses among those are $15$ gold and $15$ silver, or $30$ cheeses.\nStep 3: The probability is $\\dfrac{30}{90} = \\dfrac{1}{3}$.\nCheck: the awarded cow's-milk cheeses number $24 + 36 = 60$, and $30 + 60 = 90$. $\\checkmark$\n\n**Common Mistakes:** Dividing by all $180$ cheeses, which gives $\\dfrac{30}{180} = \\dfrac{1}{6}$; dividing by the $60$ goat's-milk cheeses, which gives $\\dfrac{30}{60} = \\dfrac{1}{2}$ and answers \"given goat's milk, what is the probability of an award?\"; using only the gold column, which gives $\\dfrac{15}{39}$.\n\n**Test Day Takeaway:** When the given group spans two columns, add those columns for the denominator before reading the numerator."
+}

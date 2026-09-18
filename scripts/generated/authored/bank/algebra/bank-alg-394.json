@@ -1,0 +1,49 @@
+{
+ "question": "A concrete estimator computes $5(2x+3)-4$ cubic yards for a footing of depth $x$ feet, and three of its outputs appear in the table. For what constant $d$ does $5(2x+3)-4=10x+d$ hold at every depth?",
+ "questionTable": {
+  "headers": [
+   "Depth $x$ (feet)",
+   "Estimate (cubic yards)"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$21$"
+   ],
+   [
+    "$3$",
+    "$41$"
+   ],
+   [
+    "$6$",
+    "$71$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$11$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$19$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "copies the 3 from inside the parentheses without multiplying it by 5",
+  "C": "computes 5(3) = 15 but forgets to subtract the 4",
+  "D": "adds the 4 instead of subtracting it, giving 15 + 4 = 19"
+ },
+ "explanation": "**SAT Pattern: Identifying Identity / Contradiction Equations**\n\n**Choice B is correct.** Expanding gives $5(2x+3)-4=10x+15-4=10x+11$, so $d=11$.\n\n**The Fast Way (~30s):** Distribute and combine the constants: $15-4=11$.\n\n**The Full Solution:**\n\nStep 1: Distribute the $5$: $5(2x+3)=10x+15$.\n\nStep 2: Subtract the $4$: $10x+15-4=10x+11$.\n\nStep 3: For $10x+11=10x+d$ to hold at every depth, the constants must match, so $d=11$. Check against the table: at $x=1$, $10(1)+11=21$; at $x=3$, $41$; at $x=6$, $71$ — all three rows agree.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3$): copies the $3$ from inside the parentheses without multiplying it by $5$.\n* Choice C ($15$): stops after distributing and never subtracts the $4$.\n* Choice D ($19$): adds the $4$ instead of subtracting it, giving $15+4$.\n\n**Test Day Takeaway:** An equation that must hold for every input forces the constant terms to match once both sides are fully simplified.",
+ "id": "bank-alg-394"
+}

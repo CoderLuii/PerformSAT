@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A quality check on a batch of $750$ network cables found that $6\\%$ of the cables failed a continuity test and $4\\%$ failed a shielding test, and no cable failed both tests. How many of the cables passed both tests?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$45$"
+  },
+  {
+   "id": "B",
+   "text": "$75$"
+  },
+  {
+   "id": "C",
+   "text": "$675$"
+  },
+  {
+   "id": "D",
+   "text": "$705$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the 45 cables that failed the continuity test rather than the cables that passed both",
+  "B": "reports the total number of failures, 10% of 750, instead of the number of passing cables",
+  "D": "subtracts only the continuity failures, computing 750 - 45 and ignoring the shielding failures"
+ },
+ "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Failures account for $6\\% + 4\\% = 10\\%$ of the batch, so $90\\%$ passed both: $0.90(750) = 675$.\n\n**The Full Solution:**\nStep 1: Because no cable failed both tests, the failing cables are two separate groups and their percents add: $6\\% + 4\\% = 10\\%$ of the batch failed at least one test.\nStep 2: A cable passes both tests exactly when it fails neither, so the passing cables are the complement: $100\\% - 10\\% = 90\\%$ of the batch.\nStep 3: Apply that percent to the batch size: $0.90(750) = 675$ cables. Check: $0.06(750) = 45$ and $0.04(750) = 30$, and $675 + 45 + 30 = 750$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($45$): this is $6\\%$ of $750$, the continuity failures. It answers how many failed one test, not how many passed both.\n* Choice B ($75$): this is $10\\%$ of $750$, the total number of failures. The question asks for the cables left over after those are removed.\n* Choice D ($705$): subtracts only the $45$ continuity failures. The $30$ shielding failures also did not pass both tests.\n\n**Test Day Takeaway:** \"Passed both\" is the complement of \"failed at least one,\" so add the disjoint failure percents first and subtract from $100\\%$ before touching the total."
+}

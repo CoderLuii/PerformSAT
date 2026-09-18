@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-012",
+  "question": "A city counted an average of $3{,}000$ weekday trips on a protected bike lane this year, which is $25\\%$ more weekday trips than the average it counted on that lane last year. What was the average number of weekday trips counted on the lane last year?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2{,}250$"
+    },
+    {
+      "id": "B",
+      "text": "$2{,}400$"
+    },
+    {
+      "id": "C",
+      "text": "$3{,}750$"
+    },
+    {
+      "id": "D",
+      "text": "$12{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes 25 percent off this year instead of reversing the increase: 3,000 x 0.75 = 2,250",
+    "C": "increases this year by another 25 percent: 3,000 x 1.25 = 3,750, moving the wrong direction",
+    "D": "divides by 0.25 instead of 1.25: 3,000 / 0.25 = 12,000"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse Percent Change**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** This year is $125\\%$ of last year, so last year had $\\frac{3{,}000}{1.25} = 2{,}400$ trips.\n\n**The Full Solution:**\nStep 1: Write the relationship. If last year averaged $L$ trips, then $25\\%$ more is $1.25L$, and $1.25L = 3{,}000$.\nStep 2: Solve for $L$. $L = \\frac{3{,}000}{1.25} = 2{,}400$ trips.\nStep 3: Check forward. $25\\%$ of $2{,}400$ is $600$, and $2{,}400 + 600 = 3{,}000$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2{,}250$): computes $3{,}000 \\times 0.75 = 2{,}250$, taking $25\\%$ off this year instead of undoing the growth.\n* Choice C ($3{,}750$): computes $3{,}000 \\times 1.25 = 3{,}750$, growing the count again rather than reversing it.\n* Choice D ($12{,}000$): divides by $0.25$ instead of $1.25$, treating $3{,}000$ as the increase rather than the new total.\n\n**Test Day Takeaway:** When the NEW value is given after a $p\\%$ increase, divide by $1 + p$. Multiplying the new value by $1 - p$ does not undo the change."
+}

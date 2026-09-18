@@ -1,0 +1,51 @@
+{
+  "id": "bank-am-008",
+  "question": "The function $C$ defined by $C(x) = 0.5(x - 6)^2 + 4$ gives the production cost, in dollars per unit, when $x$ thousand units are made. The graph of $y = C(x)$ is shown. Which of the following must be true?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": 6,
+        "k": 4
+      },
+      "a": 0.5,
+      "xRange": [
+        0,
+        12
+      ],
+      "yRange": [
+        0,
+        24
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 4,
+      "gridInterval": 2,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The least cost per unit is $\\$6$, and it occurs when $x = 4$."
+    },
+    {
+      "id": "B",
+      "text": "The cost per unit is the same when $x = 2$ as it is when $x = 10$."
+    },
+    {
+      "id": "C",
+      "text": "The cost per unit is $\\$4$ when $x = 0$."
+    },
+    {
+      "id": "D",
+      "text": "The cost per unit decreases as $x$ increases, for every $x > 0$."
+    }
+  ],
+  "distractorNotes": {
+    "A": "swaps the two vertex coordinates",
+    "C": "reads the vertex output as the value at $x = 0$",
+    "D": "assumes the curve keeps falling past the vertex"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Vertex Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The vertex is at $x = 6$, and $2$ and $10$ are each $4$ units from $6$. Equal distances from the axis of symmetry give equal outputs.\n\n**The Full Solution:**\nStep 1: In $C(x) = 0.5(x - 6)^2 + 4$ the vertex is $(6, 4)$, so the axis of symmetry is the vertical line $x = 6$ and the least cost per unit is $\\$4$ at $x = 6$.\nStep 2: A parabola takes the same value at inputs that are the same distance from its axis of symmetry. Since $6 - 2 = 4$ and $10 - 6 = 4$, the inputs $x = 2$ and $x = 10$ are a matched pair.\nStep 3: Confirm by computing: $C(2) = 0.5(-4)^2 + 4 = 8 + 4 = 12$ and $C(10) = 0.5(4)^2 + 4 = 8 + 4 = 12$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: it reverses the vertex — the minimum VALUE is $4$ dollars and it happens AT $x = 6$, not the other way around.\n* Choice C: $4$ is the minimum, not $C(0)$; in fact $C(0) = 0.5(36) + 4 = 22$ dollars per unit.\n* Choice D: the cost falls only until $x = 6$; past the vertex it rises again, as $C(10) = 12 > C(6) = 4$ shows.\n\n**Test Day Takeaway:** Vertex form hands you the axis of symmetry for free. Two inputs equally far from it always produce the same output — that is the fastest \"must be true\" to verify."
+}

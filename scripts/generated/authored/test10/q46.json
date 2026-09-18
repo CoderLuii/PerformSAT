@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 2,
- "passage": "Although the chemist Alice Ball had been hired at the College of Hawaii mainly to ______ soon devoted herself to the problem of turning chaulmoogra oil, a traditional but barely usable leprosy remedy, into a form the body could absorb.",
+ "passage": "Dictionary editors once waited for volunteer readers to mail in slips of paper showing words in use, and an expression could circulate for a generation before enough evidence accumulated. Now that editors can search enormous electronic collections of newspapers, transcripts, and ______ they are able to watch a new word's rise in something close to real time and decide much sooner whether it has earned an entry.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "teach she"
+   "text": "fiction"
   },
   {
    "id": "B",
-   "text": "teach, she"
+   "text": "fiction,"
   },
   {
    "id": "C",
-   "text": "teach; she"
+   "text": "fiction;"
   },
   {
    "id": "D",
-   "text": "teach, and she"
+   "text": "fiction:"
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The sentence opens with the subordinate clause \"Although the chemist Alice Ball had been hired ... mainly to teach,\" which must be followed by a comma before the main clause begins with \"she soon devoted herself.\" Choice A omits the needed comma and runs the two parts together. Choice C uses a semicolon, which is wrong because the first part is a dependent clause, not an independent one. Choice D adds \"and\" after \"Although,\" producing a faulty mix of subordination and coordination."
+ "explanation": "**Choice B is correct.** The sentence opens with the long dependent clause \"Now that editors can search enormous electronic collections of newspapers, transcripts, and fiction,\" and an introductory dependent clause is joined to its main clause with a comma.\n\n**The Full Solution:**\n- \"Now that... fiction\" cannot stand alone; it is a subordinate clause setting up the main clause \"they are able to watch a new word's rise...\"\n- The conventional boundary between an introductory subordinate clause and the main clause is a comma, placed after \"fiction,\" the last item in the clause's internal list.\n\n**Why the other choices are wrong:**\n- A: Omitting the comma runs the subordinate clause straight into the main clause with no boundary at all.\n- C: A semicolon must have an independent clause on each side, but everything before the blank is a fragment on its own.\n- D: A colon likewise requires a complete clause before it, which the \"Now that...\" clause is not.",
+ "_meta": {
+  "rule": "comma after introductory dependent clause",
+  "distractors": {
+   "A": "missing boundary",
+   "C": "semicolon after dependent clause fragment",
+   "D": "colon after dependent clause fragment"
+  }
+ }
 }

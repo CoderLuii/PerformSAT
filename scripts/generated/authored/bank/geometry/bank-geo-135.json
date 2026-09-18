@@ -1,0 +1,29 @@
+{
+ "question": "A bike-share dock at $(-3, 5)$ in the $xy$-plane serves every rack within $13$ units of the dock. Which statement about the rack at $(2, -7)$ is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The rack is on the boundary of the service area, since its distance from the dock is exactly $13$ units."
+  },
+  {
+   "id": "B",
+   "text": "The rack is inside the service area, since its horizontal distance from the dock is only $5$ units."
+  },
+  {
+   "id": "C",
+   "text": "The rack is outside the service area, since the coordinate differences sum to $17$ units."
+  },
+  {
+   "id": "D",
+   "text": "The rack is outside the service area, since its distance from the dock is $169$ units."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "uses only the horizontal difference of 5 units",
+  "C": "adds the coordinate differences, 5 + 12 = 17, instead of using the distance formula",
+  "D": "stops at the squared distance 169 and compares it with 13"
+ },
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The differences are $5$ and $12$, so the distance is $\\sqrt{25 + 144} = 13$ — exactly the service radius.\n\n**The Full Solution:**\nStep 1: The service area is the disk of radius $13$ centered at the dock $(-3, 5)$.\nStep 2: The rack's coordinate differences are $2 - (-3) = 5$ and $-7 - 5 = -12$.\nStep 3: The distance is $\\sqrt{5^2 + 12^2} = \\sqrt{169} = 13$ units, equal to the radius, so the rack sits on the boundary. Check: $(2, -7)$ satisfies $(x + 3)^2 + (y - 5)^2 = 169$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: uses only the horizontal gap of $5$ units and ignores the $12$-unit vertical gap.\n* Choice C: adds the two gaps, $5 + 12 = 17$, which is always at least the true distance.\n* Choice D: reports the squared distance, $169$, and compares that number with the radius $13$.\n\n**Test Day Takeaway:** Inside, outside, or on the boundary is decided by comparing the actual distance with the radius — take the square root before comparing.",
+ "id": "bank-geo-135"
+}

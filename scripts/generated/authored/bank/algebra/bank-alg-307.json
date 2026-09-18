@@ -1,0 +1,6 @@
+{
+ "question": "A flash routine erases $5(2x-a)$ sectors during a run of $x$ passes, where $a$ is a constant built into the routine, and a run of $7$ passes erases exactly $40$ sectors. What is the value of $a$?",
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Linear Equation with Distribution**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~30s):** $5(14-a)=40$ gives $14-a=8$, so $a=6$.\n\n**The Full Solution:**\n\nStep 1: Substitute $x=7$ into the expression and set it equal to the erased count: $5(2\\cdot 7-a)=40$, or $5(14-a)=40$.\n\nStep 2: Divide both sides by $5$: $14-a=8$.\n\nStep 3: Subtract $14$ from both sides and multiply by $-1$: $a=6$. Check: $5(14-6)=5(8)=40$ sectors, as stated.\n\n**Common Mistakes:** Adding instead of subtracting after the division, as in $a=14+8$, gives $22$ and makes the expression negative. Forgetting to double the $7$ turns the equation into $5(7-a)=40$, which gives $a=-1$.\n\n**Test Day Takeaway:** Substitute the given input first, simplify inside the parentheses, then divide by the outside factor before isolating the constant.",
+ "id": "bank-alg-307"
+}

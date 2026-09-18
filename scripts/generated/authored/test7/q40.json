@@ -1,65 +1,67 @@
 {
-  "id": 740,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 2,
-  "passage": "Atlantic cod once supported one of the most productive fisheries in the Northwest Atlantic, but stock assessments compiled at decade intervals from 1960 through 2010 show that biomass on Georges Bank fell sharply across this period. Although the long-term trajectory was unmistakably downward, researchers studying the assessments have argued that the magnitude of the loss between successive decades did not remain constant: the largest setback came at the very start of the series, after which the per-decade reductions, while still negative, were comparatively modest. The data support the researchers' claim that the rate at which biomass declined slowed after the 1960s because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Estimated Atlantic cod spawning biomass on Georges Bank at decade intervals (thousands of metric tons, kt)",
-    "headers": [
-      "Year",
-      "Biomass (kt)"
-    ],
-    "rows": [
-      [
-        "1960",
-        "180"
-      ],
-      [
-        "1970",
-        "70"
-      ],
-      [
-        "1980",
-        "55"
-      ],
-      [
-        "1990",
-        "40"
-      ],
-      [
-        "2000",
-        "26"
-      ],
-      [
-        "2010",
-        "12"
-      ]
-    ]
-  },
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "biomass fell from 180 kt in 1960 to 12 kt in 2010, a cumulative reduction of more than 90 percent over the period studied."
-    },
-    {
-      "id": "B",
-      "text": "the 1960-to-1970 interval saw biomass drop by 110 kt, the largest absolute decline of any decade in the series."
-    },
-    {
-      "id": "C",
-      "text": "biomass fell by 110 kt between 1960 and 1970, whereas each subsequent decadal interval through 2010 registered a decline of no more than 15 kt."
-    },
-    {
-      "id": "D",
-      "text": "the per-decade losses grew from 15 kt between 1970 and 1980 to a peak of 110 kt between 1960 and 1970, indicating an intensifying decline."
-    }
+ "id": 740,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 2,
+ "passage": "After grey squirrels from North America were introduced to Britain, native red squirrels began disappearing from woodlands the two species shared. Ecologists who monitored one such woodland for two decades hypothesize that the grey squirrel's spread drives the red squirrel's decline, predicting that the two species' counts should move in opposite directions: the more greys a survey records, the fewer reds it should find. A student reviewing the data argues that the 2015 survey most clearly bears out this prediction because ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Squirrel counts from annual surveys of a monitored British woodland, selected years",
+  "headers": [
+   "Year",
+   "Red squirrels",
+   "Grey squirrels"
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The claim is specifically that the rate of decline slowed after the 1960s, which requires comparing the size of the 1960-to-1970 drop against every later decadal drop. Choice C makes exactly that comparison: a 110 kt loss between 1960 and 1970, followed by decadal declines of no more than 15 kt thereafter — one large drop, then uniformly smaller ones. Choice B names the largest single drop without the comparison the claim needs, and Choice A reports the total decline across the whole period rather than the per-decade rate. Choice D inverts the chronology, treating the 110 kt drop as the end of an intensifying trend when it is in fact the first and largest decline in the series."
+  "rows": [
+   [
+    "1995",
+    "142",
+    "6"
+   ],
+   [
+    "2000",
+    "118",
+    "31"
+   ],
+   [
+    "2005",
+    "84",
+    "77"
+   ],
+   [
+    "2010",
+    "51",
+    "130"
+   ],
+   [
+    "2015",
+    "9",
+    "208"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "in 1995 the survey recorded 142 red squirrels alongside only 6 greys, the widest gap between the two species in any year shown."
+  },
+  {
+   "id": "B",
+   "text": "grey squirrel counts rose in every survey year shown, climbing from 6 in 1995 to 208 in 2015."
+  },
+  {
+   "id": "C",
+   "text": "the 2015 survey paired the lowest red squirrel count in the table, 9, with the highest grey squirrel count, 208."
+  },
+  {
+   "id": "D",
+   "text": "between 2005 and 2010 the red squirrel count fell from 84 to 51 while the grey count rose from 77 to 130."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The student's claim names 2015 specifically, so the evidence must come from that row and show the predicted opposite pairing — and C does: the table's fewest reds (9) beside its most greys (208).\n\n**The Full Solution:**\n- The prediction is inverse movement: more greys should co-occur with fewer reds.\n- The claim narrows the evidence to one survey, 2015, so the completing choice must use that year's data.\n- C reads the 2015 row as the prediction's strongest instance — the series' extreme low for reds paired with its extreme high for greys.\n\n**Why the other choices are wrong:**\n- A: 1995's wide gap runs in the opposite configuration (many reds, few greys) and, more to the point, is not the 2015 survey the claim cites.\n- B: A one-species trend shows greys increasing but never pairs those counts with red declines.\n- D: It documents the inverse pattern in the wrong interval — 2005 to 2010 — leaving the claim about 2015 unsupported."
 }

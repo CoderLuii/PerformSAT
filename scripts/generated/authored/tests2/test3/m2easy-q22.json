@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "At a plant, $60\\%$ of the units are produced on line 1 and the rest on line 2. Of the line 1 units, $8\\%$ fail inspection, and of the line 2 units, $3\\%$ fail inspection. A unit that failed inspection is selected at random. What is the probability that it came from line 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.048$"
+  },
+  {
+   "id": "B",
+   "text": "$0.06$"
+  },
+  {
+   "id": "C",
+   "text": "$0.6$"
+  },
+  {
+   "id": "D",
+   "text": "$0.8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports 0.60 x 0.08 = 0.048, the share of ALL units that are line 1 failures",
+  "B": "reports the overall failure rate, 0.048 + 0.012 = 0.06",
+  "C": "reports line 1's share of production, ignoring the two different failure rates"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** Take $1{,}000$ units: $600$ from line 1 produce $48$ failures and $400$ from line 2 produce $12$, for $60$ failures in all. Then $\\frac{48}{60} = 0.8$.\n\n**The Full Solution:**\nStep 1: Count the failures from each line. Using a convenient total of $1{,}000$ units, line 1 makes $0.60(1{,}000) = 600$ units of which $0.08(600) = 48$ fail, and line 2 makes $400$ units of which $0.03(400) = 12$ fail.\nStep 2: Build the group the condition names. The unit selected is known to have failed, so the pool is not all $1{,}000$ units but the $48 + 12 = 60$ failed ones.\nStep 3: Divide the favorable count by that conditional pool. $\\frac{48}{60} = 0.8$. Check: $0.8$ of the failures come from line 1 and $\\frac{12}{60} = 0.2$ from line 2, and those shares total $1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.048$): computes $0.60 \\times 0.08$, the share of all units that are line 1 failures. That is the numerator of the calculation, divided by the wrong total.\n* Choice B ($0.06$): adds $0.048$ and $0.012$ to get the plant's overall failure rate. That is the denominator, not the answer.\n* Choice C ($0.6$): reports line 1's share of production. Failures are not split in the same ratio as production, because line 1 fails at the higher rate.\n\n**Test Day Takeaway:** A condition shrinks the denominator. Once you are told the unit failed, divide by the number of failures rather than by the whole population, and picking a round total such as $1{,}000$ turns the percents into counts you can add."
+}

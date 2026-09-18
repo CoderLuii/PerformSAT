@@ -1,0 +1,40 @@
+{
+  "id": "bank-geo-234",
+  "question": "An optical prism is ground so that its end face is the triangle shown, with all three angles marked and each edge measuring $12$ millimeters. What is the area, in square millimeters, of that end face?",
+  "diagram": {
+    "type": "triangleWithAngles",
+    "params": {
+      "angleLabels": [
+        "60°",
+        "60°",
+        "60°"
+      ],
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6\\sqrt{3}$"
+    },
+    {
+      "id": "B",
+      "text": "$36\\sqrt{3}$"
+    },
+    {
+      "id": "C",
+      "text": "$72\\sqrt{3}$"
+    },
+    {
+      "id": "D",
+      "text": "$144\\sqrt{3}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the triangle's height, 6*sqrt(3), instead of its area",
+    "C": "multiplies base by height without halving: 12*6sqrt(3) = 72sqrt(3)",
+    "D": "uses s^2*sqrt(3) instead of (sqrt(3)/4)s^2, four times too large"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Triangle Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** All three angles are $60^\\circ$, so the end face is equilateral with side $12$, and its area is $\\frac{\\sqrt{3}}{4}(12)^2 = 36\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: Each marked angle is $60^\\circ$, so the triangle is equilateral and every side is $12$ millimeters.\nStep 2: The altitude to any side splits the triangle into two $30$-$60$-$90$ triangles with hypotenuse $12$ and short leg $6$, so the height is $6\\sqrt{3}$ millimeters.\nStep 3: The area is $\\frac{1}{2}(12)(6\\sqrt{3}) = 36\\sqrt{3}$ square millimeters.\n\nCheck: $36\\sqrt{3} \\approx 62.4$, less than the $72$ square millimeters of a right triangle with legs $12$ and $12$, as it must be. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6\\sqrt{3}$): stops at the height of the triangle and reports it as the area.\n* Choice C ($72\\sqrt{3}$): multiplies the base $12$ by the height $6\\sqrt{3}$ but never halves the product.\n* Choice D ($144\\sqrt{3}$): uses $s^2\\sqrt{3}$ in place of $\\frac{\\sqrt{3}}{4}s^2$, which is four times too large.\n\n**Test Day Takeaway:** Three $60^\\circ$ angles mean equilateral; drop one altitude and the $30$-$60$-$90$ ratios hand you the height."
+}

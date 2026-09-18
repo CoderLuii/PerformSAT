@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-187",
+  "question": "A shipment contains $1{,}200$ light bulbs. Of these bulbs, $45\\%$ are LED bulbs, and $20\\%$ of the bulbs that are not LED bulbs are halogen bulbs. How many of the bulbs in the shipment are halogen bulbs?",
+  "correctAnswer": "132",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**The correct answer is $132$.**\n\n**The Fast Way (~20s):** Non-LED bulbs are $55\\%$ of $1200$, which is $660$. Halogen bulbs are $20\\%$ of those: $0.20 \\times 660 = 132$.\n\n**The Full Solution:**\nStep 1: LED bulbs: $0.45 \\times 1200 = 540$, so the bulbs that are not LED number $1200 - 540 = 660$.\nStep 2: The $20\\%$ applies to that $660$, not to the full shipment: $0.20 \\times 660 = 132$.\nStep 3: Check with a single factor: $0.55 \\times 0.20 = 0.11$, and $0.11 \\times 1200 = 132$. $\\checkmark$\n\n**Common Mistakes:** Taking $20\\%$ of all $1200$ bulbs, which gives $240$; applying $20\\%$ to the LED group, $0.20 \\times 540 = 108$; or stopping at $660$, the count of non-LED bulbs.\n\n**Test Day Takeaway:** A percent always acts on a stated base. \"Of the bulbs that are not LED\" changes the base to the complement group — find that group first, then take the percent."
+}

@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 1,
- "passage": "In 1978, while working at the Laetoli site in northern Tanzania, paleoanthropologist Mary Leakey uncovered a trail of fossilized footprints that offered uncommonly direct evidence of upright walking in early hominins. The prints had been preserved in fine volcanic ash that hardened soon after a nearby eruption roughly 3.6 million years ago. In her 1979 report on the site, Leakey described the prints as showing a clearly modern stride, with weight transferring from heel to toe along an arched foot, rather than the shuffling gait that some researchers had attributed to hominins of that period. Because the footprints recorded behavior rather than anatomy, they provided a kind of evidence that fossilized bones alone could not supply, demonstrating that habitual bipedal locomotion was already established in hominins more than three million years ago.",
+ "passage": "Coyotes were once animals of open prairie, active mostly at dawn and dusk. Yet coyotes now live in nearly every large city in the United States, and researchers who fit urban coyotes with tracking collars have documented a striking shift: city coyotes do most of their moving and hunting late at night, when streets are quiet, and spend the busy daylight hours resting in patches of cover such as cemeteries, rail corridors, and golf courses. The animals have not simply moved into cities; they have reorganized their daily routines around human activity.",
  "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "The Laetoli footprints were preserved in a layer of fine volcanic ash that hardened soon after a nearby eruption roughly 3.6 million years ago."
+   "text": "Coyotes are found in more United States cities today than at any point in the past."
   },
   {
    "id": "B",
-   "text": "Leakey argued that fossilized footprints generally provide less reliable evidence of early hominin behavior than fossilized bones do."
+   "text": "Urban coyotes have adapted to city life by shifting their activity to times and places where they are least likely to encounter people."
   },
   {
    "id": "C",
-   "text": "Leakey's 1979 report concluded that the Laetoli footprints recorded a shuffling gait rather than a clearly modern walking stride."
+   "text": "Researchers use tracking collars to study how far urban coyotes travel each night."
   },
   {
    "id": "D",
-   "text": "Leakey's 1978 discovery of fossilized footprints at Laetoli supplied uncommonly direct evidence that habitual bipedal locomotion was already established in early hominins more than three million years ago."
+   "text": "Coyotes strongly prefer sheltered urban habitats such as cemeteries, rail corridors, and golf courses to the open prairie landscapes where the species formerly lived."
   }
  ],
- "correctAnswer": "D",
- "explanation": "The correct answer is D. The passage opens with a topic sentence stating the central claim: Leakey's footprint discovery at Laetoli offered uncommonly direct evidence of upright walking in early hominins. The remaining sentences support this claim by describing how the prints were preserved (volcanic ash, ~3.6 million years ago), what they showed (a modern heel-to-toe stride), and why this kind of evidence mattered (recorded behavior, not just anatomy). Choice D captures this argument at the right level of generalization, naming both the discovery and the broader conclusion it supported."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The text's point is that urban coyotes have reorganized their daily routines around human activity, and every detail illustrates that adaptation.\n\n**The Full Solution:**\n- The final sentence states the idea outright: coyotes \"have reorganized their daily routines around human activity.\"\n- The earlier details — nighttime movement when streets are quiet, daytime rest in out-of-the-way cover — all serve that claim, so choice B captures the whole rather than a part.\n\n**Why the other choices are wrong:**\n- A: A background fact from one sentence, not the idea the details serve.\n- C: It mistakes the research method for the finding.\n- D: It misreads the resting-site examples as a preference claim; the text presents those places as refuges within cities, not habitats coyotes favor over prairie."
 }

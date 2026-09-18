@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-239",
+  "question": "A researcher selected $80$ households at random from all households in a county that compost food waste and randomly assigned each household to a weekly or a biweekly collection schedule. The two-way table gives the number of these households by collection schedule and by the mass of food waste the household composted in one week. Which of the following is the largest population to which the results of this study can be generalized?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Less than 5 kg",
+        "5 kg or more",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Weekly collection",
+          "12",
+          "30",
+          "42"
+        ],
+        [
+          "Biweekly collection",
+          "26",
+          "12",
+          "38"
+        ],
+        [
+          "Total",
+          "38",
+          "42",
+          "80"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "All households in the county that compost food waste"
+    },
+    {
+      "id": "B",
+      "text": "All households in the county"
+    },
+    {
+      "id": "C",
+      "text": "The $80$ households in the study"
+    },
+    {
+      "id": "D",
+      "text": "All households in the state that compost food waste"
+    }
+  ],
+  "distractorNotes": {
+    "B": "widens the population beyond composting households, which were the sampling frame",
+    "C": "narrows the population to the sample itself, ignoring the random selection",
+    "D": "extends beyond the county the sample was drawn from"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Observational vs Experimental Study**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The sample was drawn at random from county households that compost, so that group is the largest population the results describe.\n\n**The Full Solution:**\nStep 1: Identify the sampling frame: all households in the county that compost food waste.\nStep 2: Because the $80$ households were selected at random from that frame, results generalize to it — and no further.\nStep 3: The random assignment to collection schedules supports a causal comparison, but it does not widen the population. Check: $42 + 38 = 80$ households are represented in the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: households that do not compost were never eligible for selection, so they are outside the frame.\n* Choice C: restricting the conclusion to the sample discards the benefit of random selection.\n* Choice D: the sample came from one county, so the state as a whole was never represented.\n\n**Test Day Takeaway:** Random selection sets the population; random assignment sets whether causation is available. Read the sampling frame word for word."
+}

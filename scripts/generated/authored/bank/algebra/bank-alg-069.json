@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-069",
+ "question": "The function $c$ gives the remaining capacity, in cubic meters, of a stormwater basin $t$ hours after a storm begins, and $c(t) = 4{,}200 - 350t$. For what value of $t$ does $c(t) = 0$?",
+ "correctAnswer": "12",
+ "explanation": "**SAT Pattern: Find x-intercept (Zero of Function)**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~15s):** Set $4{,}200 - 350t = 0$, so $350t = 4{,}200$ and $t = 12$.\n\n**The Full Solution:**\nStep 1: The basin is full when the remaining capacity reaches $0$, so set $4{,}200 - 350t = 0$.\nStep 2: Add $350t$ to both sides: $350t = 4{,}200$.\nStep 3: Divide: $t = \\frac{4{,}200}{350} = 12$ hours. Check: $4{,}200 - 350(12) = 4{,}200 - 4{,}200 = 0$ ✓\n\n**Common Mistakes:** Answering $-12$ solves $350t = -4{,}200$ by moving the constant the wrong way; answering $4{,}200$ stops before dividing; answering $350$ reports the rate rather than the time.\n\n**Test Day Takeaway:** A function's zero is where its output is $0$ — set the rule equal to zero and solve, whatever the context calls the variable."
+}

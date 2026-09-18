@@ -1,0 +1,48 @@
+{
+  "id": "bank-ps-298",
+  "question": "The table gives the volume, in liters, and the percent of juice by volume of the fruit drink in each of two containers. How many liters of juice are in container $1$?",
+  "questionTable": {
+    "headers": [
+      "Container",
+      "Volume (liters)",
+      "Percent juice by volume"
+    ],
+    "rows": [
+      [
+        "1",
+        "15",
+        "20%"
+      ],
+      [
+        "2",
+        "9",
+        "35%"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.3$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$3.15$"
+    },
+    {
+      "id": "D",
+      "text": "$12$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses $0.02$ for $20\\%$",
+    "C": "uses the numbers in container $2$'s row",
+    "D": "gives the volume that is not juice"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Mixture Problems**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** $20\\%$ of $15$ liters is $0.20 \\times 15 = 3$ liters.\n\n**The Full Solution:**\nStep 1: Read container $1$'s row: the volume is $15$ liters and the drink is $20\\%$ juice by volume.\nStep 2: The volume of juice is that percent of the total volume: $0.20 \\times 15 = 3$ liters.\nStep 3: Check: $3$ liters of juice out of $15$ liters is $\\frac{3}{15} = 0.20$, or $20\\%$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.3$): $0.02 \\times 15$, using $0.02$ for $20\\%$; the decimal form of $20\\%$ is $0.20$.\n* Choice C ($3.15$): $0.35 \\times 9$, which is the juice in container $2$.\n* Choice D ($12$): $15 - 3$, the volume of everything in container $1$ that is not juice.\n\n**Test Day Takeaway:** A percent of a mixture always multiplies that mixture's own total. Pick the row first, then multiply."
+}

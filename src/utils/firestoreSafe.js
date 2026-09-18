@@ -52,7 +52,21 @@ export const sanitizeForFirestore = (value) => {
         : sanitizeForFirestore(el)
     );
   }
+  // Set / Map — Firestore hard-rejects both ("Unsupported field value: a
+  // custom Set object"), and the old object-walk collapsed them to {} (silent
+  // data loss). Convert to their JSON-natural shapes instead. This bit a real
+  // student: a live Set inside the diagnostic report failed every first-
+  // attempt score save (2026-08-13).
+  if (value instanceof Set) return sanitizeForFirestore([...value]);
+  if (value instanceof Map) return sanitizeForFirestore(Object.fromEntries(value));
+  // Date is natively supported by Firestore (stored as a Timestamp); walking
+  // it as a plain object would corrupt it to {}. Same for Firestore sentinel/
+  // Timestamp instances (serverTimestamp(), Timestamp) — any non-plain object
+  // that isn't a Set/Map passes through untouched.
+  if (value instanceof Date) return value;
   if (typeof value === 'object') {
+    const proto = Object.getPrototypeOf(value);
+    if (proto !== Object.prototype && proto !== null) return value;
     const out = {};
     for (const [k, v] of Object.entries(value)) {
       if (v === undefined) continue; // Firestore rejects undefined; omit the field.
@@ -101,10 +115,10 @@ export const restoreFromFirestore = (value) => {
  *
  * @param {*} value
  * @param {string} [path='$']
- * @returns {{ nestedArrays: string[], undefinedValues: string[], nonFinite: string[] }}
+ * @returns {{ nestedArrays: string[], undefinedValues: string[], nonFinite: string[], customObjects: string[] }}
  */
 export const findFirestoreHostileValues = (value, path = '$') => {
-  const found = { nestedArrays: [], undefinedValues: [], nonFinite: [] };
+  const found = { nestedArrays: [], undefinedValues: [], nonFinite: [], customObjects: [] };
   const walk = (v, p) => {
     if (v === undefined) { found.undefinedValues.push(p); return; }
     if (v === null) return;
@@ -117,6 +131,15 @@ export const findFirestoreHostileValues = (value, path = '$') => {
       return;
     }
     if (typeof v === 'object') {
+      // Set / Map / class instances are hard-rejected by the SDK ("Unsupported
+      // field value: a custom Set object"). Date and Firestore's own Timestamp/
+      // FieldValue sentinels are natively supported — don't flag those.
+      if (v instanceof Date) return;
+      const proto = Object.getPrototypeOf(v);
+      if (proto !== Object.prototype && proto !== null) {
+        found.customObjects.push(`${p} = ${v.constructor?.name || 'unknown'}`);
+        return;
+      }
       for (const [k, val] of Object.entries(v)) walk(val, `${p}.${k}`);
     }
   };

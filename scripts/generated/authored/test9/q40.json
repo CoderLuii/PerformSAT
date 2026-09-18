@@ -6,60 +6,25 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
   "module": 2,
-  "passage": "The retreat of summer sea ice in the Arctic Ocean is sometimes told through individual record-low years — 2007 and 2012 are often cited — but the long-running monthly extent record kept by the National Snow and Ice Data Center suggests a more sustained pattern. Comparing decadal averages of the September minimum, glaciologists argue that the late-summer ice cover has not merely dipped in unusual years; rather, the typical ice extent has fallen in every successive decade on record because _______",
+  "passage": "Engineers assessing passive cooling monitored four traditional courtyard houses in Yazd, Iran, on summer afternoons, recording mean indoor temperatures with each house's windcatcher shaft open and, on comparable days, with the shaft sealed. Outdoor air on the study days averaged 39°C. The engineers conclude that the towers meaningfully cooled every house monitored because ______",
   "questionTable": {
     "type": "table",
-    "caption": "September Arctic sea ice extent (million km²) by decade (NSIDC, Sea Ice Index)",
-    "headers": [
-      "Decade",
-      "Mean September extent",
-      "Lowest year in decade"
-    ],
+    "caption": "Mean afternoon indoor temperature in four courtyard houses, Yazd",
+    "headers": ["House", "Shaft open (°C)", "Shaft sealed (°C)"],
     "rows": [
-      [
-        "1980s",
-        "7.2",
-        "6.9 (1985)"
-      ],
-      [
-        "1990s",
-        "6.6",
-        "6.1 (1995)"
-      ],
-      [
-        "2000s",
-        "5.8",
-        "4.3 (2007)"
-      ],
-      [
-        "2010s",
-        "4.6",
-        "3.6 (2012)"
-      ]
+      ["House 1", "31", "36"],
+      ["House 2", "30", "34"],
+      ["House 3", "32", "38"],
+      ["House 4", "29", "33"]
     ]
   },
   "question": "Which choice most effectively uses data from the table to complete the statement?",
   "choices": [
-    {
-      "id": "A",
-      "text": "the lowest year in each decade fell from 6.9 million square kilometers in the 1980s to 3.6 million square kilometers in the 2010s, suggesting that single-year minimums have stayed roughly constant."
-    },
-    {
-      "id": "B",
-      "text": "the mean September extent fell from 7.2 million square kilometers in the 1980s to 6.6 in the 1990s to 5.8 in the 2000s to 4.6 in the 2010s, a step downward in every decade the record covers."
-    },
-    {
-      "id": "C",
-      "text": "the mean September extent dropped from 5.8 million square kilometers in the 2000s to 4.6 million square kilometers in the 2010s, a clear decline between the two most recent decades."
-    },
-    {
-      "id": "D",
-      "text": "the lowest single year in the record was 2012, when the September minimum fell to 3.6 million square kilometers."
-    }
+    { "id": "A", "text": "House 3 recorded the warmest sealed-shaft temperature of the study, at 38°C." },
+    { "id": "B", "text": "every house was at least 4°C cooler with its shaft open than with the shaft sealed, with differences ranging from 4°C to 6°C." },
+    { "id": "C", "text": "indoor temperatures with the windcatcher shafts open stayed well below the 39°C outdoor average in all four of the monitored courtyard houses." },
+    { "id": "D", "text": "House 4 was the coolest of the four houses whether its shaft was open or sealed." }
   ],
   "correctAnswer": "B",
-  "explanation": "The claim is that the typical September extent has fallen in every successive decade. The data that show this are the decadal means—7.2, 6.6, 5.8, then 4.6 million square kilometers—dropping each decade, which is choice B. Choice A misreads the single-year lows as roughly constant, C reports only the last two decades, and D cites one record year rather than the decade-by-decade trend.",
-  "_meta": {
-    "anchor": "NSIDC, September Arctic sea ice extent by decade"
-  }
+  "explanation": "**Choice B is correct.** The conclusion is about the towers' effect in every monitored house, so the evidence must compare open against sealed for all four rows — and B does, reporting a 4-6°C advantage in each.\n\n**The Full Solution:**\n- The tower's contribution is isolated by the open-versus-sealed comparison, since the two conditions differ only in the shaft.\n- B covers all four houses, matching the claim's \"every house\" scope, and quantifies the range of the effect.\n\n**Why the other choices are wrong:**\n- A: A single sealed-shaft reading involves no comparison and no cooling effect.\n- C: Comparing open-shaft readings to the outdoor average ignores the sealed condition — sealed houses were also below 39°C, so the comparison cannot isolate what the tower added.\n- D: Ranking the houses against one another says nothing about what opening a shaft did within any house."
 }

@@ -1,31 +1,31 @@
 {
-  "id": 1249,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 2,
-  "passage": "Trained as a geologist at a time when women were often barred from the research vessels that gathered ocean-floor soundings, ____ from data collected by her male colleagues at sea, revealing a continuous rift valley running down the middle of the Atlantic.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the hand-drawn maps of the ocean floor produced by Marie Tharp were assembled"
-    },
-    {
-      "id": "B",
-      "text": "Marie Tharp assembled her hand-drawn maps of the ocean floor"
-    },
-    {
-      "id": "C",
-      "text": "Marie Tharp's hand-drawn maps of the ocean floor were assembled"
-    },
-    {
-      "id": "D",
-      "text": "the ocean floor was mapped by Marie Tharp in hand-drawn form"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The opening modifier, \"Trained as a geologist ... barred from the research vessels,\" describes a person, so the subject that follows must be the person it describes—Marie Tharp. Only B makes \"Marie Tharp\" that subject. A and C put \"maps\" in the subject position, so the sentence absurdly says the maps were trained as a geologist. D makes \"the ocean floor\" the subject, with the same dangling-modifier problem."
+ "id": 1249,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 2,
+ "passage": "Trained in the new methods of iron framing rather than in masonry, ____ whose glass roof spanned every stall without a single interior column, flooding the aisles with the daylight that older markets had always lacked.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the city's market hall was designed by a young engineer"
+  },
+  {
+   "id": "B",
+   "text": "a young engineer designed for the city a market hall"
+  },
+  {
+   "id": "C",
+   "text": "the city's market hall was a young engineer's design"
+  },
+  {
+   "id": "D",
+   "text": "the market hall the city commissioned came from a young engineer"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The opening modifier — \"Trained in the new methods of iron framing rather than in masonry\" — describes a person, so the person must come immediately after the comma. Only B places \"a young engineer\" there.\n\n**The Full Solution:**\n- The rule: an introductory descriptive phrase attaches to whatever noun directly follows it; if that noun is not the thing described, the modifier dangles.\n- Ask who was trained in iron framing: the engineer, not the building. So \"a young engineer\" must stand right after the comma.\n- B reads: \"Trained in the new methods..., a young engineer designed for the city a market hall whose glass roof...\" — the modifier lands on its person, and \"whose\" attaches naturally to the hall.\n\n**Why the other choices are wrong:**\n- A: It puts \"the city's market hall\" after the comma, absurdly making the building the thing trained in iron framing.\n- C: Same dangling attachment — the hall, not the engineer, ends up \"trained,\" and the possessive \"engineer's\" cannot rescue it.\n- D: It leads with \"the market hall,\" so the modifier again describes the building rather than the engineer it belongs to."
 }

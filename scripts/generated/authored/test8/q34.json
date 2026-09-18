@@ -1,31 +1,31 @@
 {
-  "id": 834,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "By the 1860s, sailors and fishermen along the British coast were still being caught by sudden gales they had no way to anticipate. As head of a new government weather department, Robert FitzRoy gathered daily reports of barometric pressure and wind, telegraphed to London from stations around the coast. __Using these reports, he issued storm warnings to ports by telegraph, and the number of vessels lost in unexpected gales began to fall.__ FitzRoy could not always say in advance which of his warnings would prove accurate, and many critics, scornful of predictions they considered little better than guesswork, pressed to have the service shut down.",
-  "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It lays out the competing explanations of coastal storms that scientists of the era debated, explanations the rest of the passage then weighs one against another."
-    },
-    {
-      "id": "B",
-      "text": "It reports the warning system that FitzRoy introduced and the decline in shipping losses that followed, an outcome his critics nonetheless resisted."
-    },
-    {
-      "id": "C",
-      "text": "It explains the physical process by which a falling barometer comes to signal the approach of a storm along the coast."
-    },
-    {
-      "id": "D",
-      "text": "It describes the network of coastal stations that telegraphed daily pressure and wind readings to FitzRoy's weather department in London."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The underlined sentence states what FitzRoy did—issuing storm warnings to ports by telegraph—and the fall in shipping losses that followed; the sentence after it notes that critics resisted this very result. A is wrong because the passage does not lay out and compare rival explanations of storms; C overstates the sentence, which reports the outcome without explaining the physics behind it; and D points to the network of reporting stations described earlier in the passage rather than the work the underlined sentence does."
+ "id": 834,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "When the railways began carrying freight in the 1830s and 1840s, observers on both sides assumed the verdict was in: the canals, plodding at a horse's pace, would be empty within a generation. The boats' answer was not speed but thrift. __Boating families gave up lodgings ashore and moved into the cabins, working their craft as household crews, and their boats went on carrying coal, grain, and clay for decades after the railways came.__ A mode of transport that could not compete on time competed instead on cost, surviving longest in the heavy, patient cargoes where a day's delay mattered least.",
+ "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It explains how the railway companies set their freight rates deliberately low on the routes where canal boats still carried traffic the railways considered worth capturing."
+  },
+  {
+   "id": "B",
+   "text": "It reports how boat operators adapted to railway competition and the persistence of canal freight that followed, countering the expectation the passage has set up."
+  },
+  {
+   "id": "C",
+   "text": "It describes the engineering improvements that made the canals faster to travel."
+  },
+  {
+   "id": "D",
+   "text": "It concedes that the boat operators eventually abandoned the trade the railways had captured."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The underlined sentence reports how boat operators answered the railway threat — moving their families aboard and cutting shore costs — and the persistence of canal freight that resulted, which the passage frames against predictions of quick extinction.\n\n**The Full Solution:**\n- The text first sets up the expectation: observers assumed the railways would sweep canal carrying away within a generation.\n- The underlined sentence then supplies the adaptation (families living aboard, boats worked as household crews) and the outcome (coal and grain still moving by water decades later).\n- Its function is to present that adaptive response and its unexpected persistence — choice B.\n\n**Why the other choices are wrong:**\n- A: The sentence describes the boat operators' response, not the railways' pricing.\n- C: Nothing in the sentence concerns the construction or engineering of the canals.\n- D: The sentence shows canal carrying persisting, not the operators conceding defeat."
 }

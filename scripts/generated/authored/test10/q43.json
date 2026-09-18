@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "inferences",
  "module": 2,
- "passage": "Living things constantly take in carbon from the atmosphere, including a small, steady proportion of the radioactive isotope carbon-14. When an organism dies, it stops taking in carbon, and the carbon-14 it already contains decays at a known rate. By measuring how much carbon-14 remains in a sample of bone, charcoal, or wood, a researcher can estimate how long ago the organism died. But carbon-14 decays quickly enough that, after about fifty thousand years, only a negligible amount is left to measure. A researcher hoping to date a fossil far older than that ______",
+ "passage": "The woodland historian Oliver Rackham observed that the oldest living things in many English woods are not the tall standard trees but the broad, squat stools of long-coppiced ash and lime. The pattern has a mechanism. A tree left to grow tall carries an ever-heavier crown that wind can bring down, and its aging trunk becomes a column of slowly spreading decay. A coppiced tree is cut to the ground every decade or two: each felling removes the aging trunk before decay can claim it, and the stool answers with a flush of vigorous young shoots. If this mechanism is general, it implies that ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "can still rely on its remaining carbon-14, since the isotope decays at a constant and therefore measurable rate."
+   "text": "standard timber trees would survive just as long as coppice stools do if foresters thinned their heavy crowns at regular intervals."
   },
   {
    "id": "B",
-   "text": "will find that the sample contains more carbon-14 than a younger one, because older material has had longer to accumulate it."
+   "text": "the age of a coppice stool can be determined by counting the annual rings of its largest shoot."
   },
   {
    "id": "C",
-   "text": "must turn to a different dating method, since too little carbon-14 remains in such old material to be measured reliably."
+   "text": "repeated harvesting of a coppiced tree, far from exhausting it, is what allows it to outlive trees left uncut."
   },
   {
    "id": "D",
-   "text": "can determine its age precisely as long as the original organism took in carbon from the atmosphere while alive."
+   "text": "woods that were never coppiced are unlikely to contain any trees of unusual age."
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The passage explains that carbon-14 decays quickly enough that after about fifty thousand years only a negligible amount remains. For a fossil far older than that, there is too little carbon-14 left to measure, so the researcher must use another method—exactly Choice C's conclusion. Choice A ignores that limit, assuming a measurable amount remains. Choice B reverses the chemistry: an organism stops taking in carbon at death and the isotope decays, so older material has less, not more. Choice D assumes precise dating is still possible, which the depletion of carbon-14 rules out for very old samples."
+ "explanation": "**Choice C is correct.** The mechanism removes the two causes of death the passage names, toppling crowns and decaying trunks, every time the tree is cut, so the cutting itself is what confers the extraordinary lifespan. C draws precisely that conclusion.\n\n**The Full Solution:**\n- Premise: tall trees die by heavy crown and aging trunk.\n- Premise: felling on rotation removes the trunk \"before decay can claim it\" and provokes vigorous regrowth.\n- Generalized, harvesting is not a drain the stool endures but the intervention that resets its risks, letting it outlive uncut trees, as Rackham's oldest-stools observation already suggests.\n\n**Why the other choices are wrong:**\n- A: The mechanism turns on removing the aging trunk entirely, so mere crown-thinning is not shown to deliver the same result.\n- B: Ring-counting a young shoot would date the shoot, not the ancient stool, and the passage says nothing about measuring age.\n- D: The passage allows uncoppiced woods their old standard trees; the claim is that stools grow older still, not that old trees exist nowhere else."
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-454",
+  "question": "A hot-air balloon's altitude is a linear function of the time since launch. The balloon's altitude was $950$ feet $3$ minutes after launch and $1{,}250$ feet $8$ minutes after launch. Which of the following is the best interpretation of the slope of the graph of this function?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The balloon's altitude at launch was $770$ feet."
+    },
+    {
+      "id": "B",
+      "text": "The balloon's altitude increased by $100$ feet each minute."
+    },
+    {
+      "id": "C",
+      "text": "The balloon's altitude increased by $37.5$ feet each minute."
+    },
+    {
+      "id": "D",
+      "text": "The balloon's altitude increased by $60$ feet each minute."
+    }
+  ],
+  "distractorNotes": {
+    "A": "describes the altitude at t = 0, the intercept, rather than the slope.",
+    "B": "divides the 300-foot change by 3 (the first time value) instead of by the 5-minute gap.",
+    "C": "divides the 300-foot change by 8 (the second time value) instead of by the 5-minute gap."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Slope $= \\frac{1{,}250 - 950}{8 - 3} = \\frac{300}{5} = 60$ feet per minute.\n\n**The Full Solution:**\nStep 1: The two data points are $(3, 950)$ and $(8, 1{,}250)$ in (minutes, feet).\nStep 2: Slope $= \\frac{\\Delta \\text{altitude}}{\\Delta \\text{time}} = \\frac{1{,}250 - 950}{8 - 3} = \\frac{300}{5} = 60$, in feet per minute.\nStep 3: Check: starting at $950$ feet and rising $60$ feet per minute for $5$ minutes gives $950 + 300 = 1{,}250$ feet. $\\checkmark$ (The intercept would be $950 - 60 \\cdot 3 = 770$, but that is not the slope.)\n\n**Why the wrong answers are tempting:**\n* Choice A (The balloon's altitude at launch was $770$ feet.): describes the altitude at $t = 0$, the intercept, rather than the slope.\n* Choice B (The balloon's altitude increased by $100$ feet each minute.): divides the $300$-foot change by $3$ (the first time value) instead of by the $5$-minute gap.\n* Choice C (The balloon's altitude increased by $37.5$ feet each minute.): divides the $300$-foot change by $8$ (the second time value) instead of by the $5$-minute gap.\n\n**Test Day Takeaway:** Slope is change in output over change in input between the two given points; the denominator is the difference of the times, not either time alone."
+}

@@ -1,0 +1,51 @@
+{
+  "id": "bank-am-310",
+  "question": "A cable is suspended between two towers. Its height above the roadway, in meters, at a horizontal distance of $x$ meters from the left tower is modeled by $y = \\dfrac{1}{2}x^2 - 4x + 12$ for $0 \\le x \\le 8$. The graph of this model is shown. For which values of $x$ is the cable less than $6$ meters above the roadway?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": 4,
+        "k": 4
+      },
+      "a": 0.5,
+      "xRange": [
+        0,
+        8
+      ],
+      "yRange": [
+        0,
+        14
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 2,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0 \\le x < 2$"
+    },
+    {
+      "id": "B",
+      "text": "$2 < x < 6$"
+    },
+    {
+      "id": "C",
+      "text": "$2 < x \\le 8$"
+    },
+    {
+      "id": "D",
+      "text": "$x < 2$ or $x > 6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the stretch before the first crossing",
+    "C": "uses the domain endpoint as the second crossing",
+    "D": "solves the reversed inequality"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** $\\dfrac{1}{2}x^2 - 4x + 12 < 6$ doubles to $x^2 - 8x + 12 < 0$, which factors as $(x - 2)(x - 6) < 0$, so $2 < x < 6$.\n\n**The Full Solution:**\nStep 1: The condition is $\\dfrac{1}{2}x^2 - 4x + 12 < 6$. Multiplying by $2$ gives $x^2 - 8x + 24 < 12$, or $x^2 - 8x + 12 < 0$.\nStep 2: $x^2 - 8x + 12 = (x - 2)(x - 6)$, and an upward parabola is below the axis strictly between its zeros, so $2 < x < 6$.\nStep 3: Both critical values lie inside the stated domain $0 \\le x \\le 8$, so no trimming is needed. Check: at $x = 4$ the height is $8 - 16 + 12 = 4$, which is less than $6$; at $x = 2$ it is $2 - 8 + 12 = 6$ exactly. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0 \\le x < 2$): takes the stretch before the first crossing, where the cable is still higher than $6$ meters.\n* Choice C ($2 < x \\le 8$): replaces the second crossing with the right end of the domain.\n* Choice D ($x < 2$ or $x > 6$): solves $y > 6$, the outside interval, instead of $y < 6$.\n\n**Test Day Takeaway:** An upward parabola sits below a horizontal level between its two crossings and above it outside them."
+}

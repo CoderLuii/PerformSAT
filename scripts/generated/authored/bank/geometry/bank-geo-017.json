@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-017",
+ "question": "At a rail yard, a straight track touches a circular turntable at exactly one point $T$, and $O$ is the center of the turntable. Which of the following must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\overline{OT}$ is perpendicular to the track."
+  },
+  {
+   "id": "B",
+   "text": "$\\overline{OT}$ is parallel to the track."
+  },
+  {
+   "id": "C",
+   "text": "The track passes through $O$."
+  },
+  {
+   "id": "D",
+   "text": "$\\overline{OT}$ is longer than the turntable's diameter."
+  }
+ ],
+ "distractorNotes": {
+  "B": "a radius parallel to the tangent would never reach the point of contact",
+  "C": "a line through the center is a secant and crosses the circle at two points, not one",
+  "D": "a radius is exactly half the diameter, so it is always shorter"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Tangent-Radius Perpendicularity**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** A line touching a circle at exactly one point is tangent, and a radius drawn to the point of tangency is perpendicular to that tangent.\n\n**The Full Solution:**\n\nStep 1 — Touching a circle at exactly one point is the definition of a tangent line, so the track is tangent to the turntable at $T$.\n\nStep 2 — $\\overline{OT}$ joins the center to the point of tangency, so it is a radius.\n\nStep 3 — The tangent-radius theorem states that the radius to the point of tangency meets the tangent at a right angle, so $\\overline{OT}$ is perpendicular to the track. Check: any other line from $O$ to the track would be longer than $OT$, which is exactly what perpendicularity guarantees.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: a radius parallel to the track could never meet it at $T$.\n* Choice C: a line through the center is a secant and crosses the circle twice.\n* Choice D: a radius is half a diameter, so it is always the shorter of the two.\n\n**Test Day Takeaway:** \"Touches at exactly one point\" is the signal to draw the radius to that point and mark a right angle."
+}

@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-326",
+ "question": "A load-cell shim is machined in the right-triangular shape shown, with the hypotenuse and one leg labeled in millimeters and the right angle at the vertex between the two legs. What is the area, in square millimeters, of one shim?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     7
+    ]
+   ],
+   "sideLabels": [
+    "",
+    "7",
+    "25"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$63$"
+  },
+  {
+   "id": "B",
+   "text": "$84$"
+  },
+  {
+   "id": "C",
+   "text": "$87.5$"
+  },
+  {
+   "id": "D",
+   "text": "$168$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts 25-7 = 18 for the missing leg instead of using the Pythagorean theorem, giving (1/2)(18)(7) = 63",
+  "C": "uses the hypotenuse 25 as the second leg: (1/2)(7)(25) = 87.5",
+  "D": "multiplies the legs 7 and 24 without halving"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Triangle Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The missing leg completes the $7$-$24$-$25$ triple, so the area is $\\frac{1}{2}(7)(24) = 84$.\n\n**The Full Solution:**\nStep 1: The right angle sits between the two legs, one of which measures $7$ millimeters; the side labeled $25$ is the hypotenuse.\nStep 2: By the Pythagorean theorem the other leg is $\\sqrt{25^2 - 7^2} = \\sqrt{625 - 49} = \\sqrt{576} = 24$ millimeters.\nStep 3: The legs are perpendicular, so the area is $\\frac{1}{2}(7)(24) = 84$ square millimeters.\n\nCheck: $7$-$24$-$25$ is a Pythagorean triple, and $7^2 + 24^2 = 49 + 576 = 625 = 25^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($63$): subtracts $25 - 7 = 18$ for the missing leg, then computes $\\frac{1}{2}(18)(7) = 63$; side lengths do not subtract that way.\n* Choice C ($87.5$): uses the hypotenuse $25$ as if it were the second leg, giving $\\frac{1}{2}(7)(25)$.\n* Choice D ($168$): finds both legs correctly but multiplies them without the factor $\\frac{1}{2}$.\n\n**Test Day Takeaway:** Only the two legs form the base-height pair; the hypotenuse never plays that role."
+}

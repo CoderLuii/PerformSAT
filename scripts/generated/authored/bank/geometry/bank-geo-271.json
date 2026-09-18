@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-271",
+ "question": "A circular reservoir cover has a radius of $r$ meters. Which expression gives the area, in square meters, of a cover made for a reservoir whose radius is $3$ meters greater?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\pi r^{2}+3$"
+  },
+  {
+   "id": "B",
+   "text": "$\\pi r^{2}+9\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$(\\pi r+3)^{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\pi(r+3)^{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 3 to the area instead of to the radius",
+  "B": "adds the area of a separate circle of radius 3 rather than enlarging the radius",
+  "C": "adds 3 to pi r and then squares the whole expression"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Area of a Circle**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The new radius is $r+3$, and $A=\\pi r^{2}$ becomes $\\pi(r+3)^{2}$.\n\n**The Full Solution:**\n\nStep 1: Update the radius. A reservoir whose radius is $3$ meters greater needs a cover of radius $r+3$ meters.\n\nStep 2: Apply the area formula to the new radius. $A=\\pi(\\text{radius})^{2}=\\pi(r+3)^{2}$.\n\nStep 3: Confirm the structure. The $3$ belongs inside the square, because it changes the radius before squaring.\n\nCheck: with $r=5$, the new cover has radius $8$ and area $64\\pi$, and $\\pi(5+3)^{2}=64\\pi$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\pi r^{2}+3$): adds $3$ to the area instead of to the radius.\n* Choice B ($\\pi r^{2}+9\\pi$): adds the area of a separate radius-$3$ circle, which is not how enlarging a radius works.\n* Choice C ($(\\pi r+3)^{2}$): adds $3$ to $\\pi r$ and then squares, putting $\\pi$ inside the square.\n\n**Test Day Takeaway:** A change to the radius happens before the squaring — keep it inside the parentheses."
+}

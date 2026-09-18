@@ -1,0 +1,94 @@
+{
+  "id": "bank-ps-087",
+  "question": "The scatterplot shows the monthly water use $y$, in cubic meters, of each of $11$ households and the number of residents $x$ in that household, along with the line of best fit $\\hat{y} = 12x + 6$. For how many of the $11$ data points is the actual monthly water use less than the water use predicted by the line of best fit?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          14
+        ],
+        [
+          1,
+          22
+        ],
+        [
+          2,
+          30
+        ],
+        [
+          2,
+          34
+        ],
+        [
+          3,
+          38
+        ],
+        [
+          3,
+          46
+        ],
+        [
+          4,
+          50
+        ],
+        [
+          4,
+          58
+        ],
+        [
+          5,
+          62
+        ],
+        [
+          5,
+          70
+        ],
+        [
+          6,
+          80
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 7,
+      "yMin": 0,
+      "yMax": 90,
+      "xGridStep": 1,
+      "yGridStep": 10,
+      "xLabelStep": 1,
+      "yLabelStep": 20,
+      "xLabel": "Residents",
+      "yLabel": "Water use (cubic meters)",
+      "bestFitLine": {
+        "slope": 12,
+        "intercept": 6
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$7$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "counts the point that lies exactly on the line as below it",
+    "C": "counts the points above the line instead",
+    "D": "counts the points above the line plus the point on it"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Residual**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** \"Actual less than predicted\" means a negative residual, so count only the points strictly below the dashed line: there are $4$.\n\n**The Full Solution:**\nStep 1: For each point, compare $y$ with $\\hat{y} = 12x + 6$. The point is counted only when $y < \\hat{y}$.\nStep 2: The points below the line are $(1, 14)$ with $\\hat{y} = 18$, $(3, 38)$ with $\\hat{y} = 42$, $(4, 50)$ with $\\hat{y} = 54$, and $(5, 62)$ with $\\hat{y} = 66$.\nStep 3: That is $4$ points. The point $(2, 30)$ has $\\hat{y} = 30$, so it lies on the line and its residual is $0$, not negative.\nCheck: $4$ below $+$ $1$ on the line $+$ $6$ above $= 11$ points. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($5$): This counts $(2, 30)$, which sits exactly on the line, as a point below it; a residual of $0$ is not negative.\n* Choice C ($6$): This counts the points above the line, where the model underestimates instead of overestimating.\n* Choice D ($7$): This counts the $6$ points above the line together with the point on it.\n\n**Test Day Takeaway:** Below the line means the model overestimates and the residual is negative; a point on the line has a residual of exactly $0$."
+}

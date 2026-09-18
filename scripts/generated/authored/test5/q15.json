@@ -1,34 +1,34 @@
 {
-  "id": 515,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 1,
-  "passage": "Experiments on memory consistently find that spacing study sessions apart in time produces better long-term retention than packing the same amount of study into one block—an effect known as the spacing effect. Researchers attribute it to the extra effort of retrieving partly forgotten material when a session resumes after a delay. Because that effortful retrieval is what the massed schedule omits, it follows that a student who crowds an entire term's material into a single night before an exam, with no spaced review along the way, ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "is likely to retain less of the material over the long term than a student who spread the same total study time across the term."
-    },
-    {
-      "id": "B",
-      "text": "will end up retaining the material over the long term better than a student who chose instead to spread the same total study time evenly across the whole term."
-    },
-    {
-      "id": "C",
-      "text": "must have spent more total hours studying than a student who relied on spaced review throughout the term."
-    },
-    {
-      "id": "D",
-      "text": "will be unable to recall any of the material at all when the exam is given the following morning."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The premises are that spaced study produces better long-term retention and that the benefit comes from the effortful retrieval a massed schedule leaves out. A student who crams in one night, with no spacing, omits exactly that retrieval, so the licensed conclusion is reduced long-term retention relative to a spaced schedule of the same total time. Choice B reverses the effect. Choice C makes an unsupported claim about total hours. Choice D overstates the result, predicting total failure to recall, which the passage gives no basis for.",
-  "_meta": {
-    "anchor": "Spacing effect in memory; massed vs. spaced study and long-term retention"
+ "id": 515,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 1,
+ "passage": "For centuries, printers' type was cast from an alloy of lead, tin, and antimony. Lead alone contracts as it cools, pulling away from the fine corners of the mold so that letters cast in it emerge slightly rounded and blunted. Antimony behaves unusually among metals: it expands slightly as it solidifies. Blended into the alloy, it drives the cooling metal into every recess of the matrix at the very moment the letter takes its final shape. The alloy's behavior helps explain why ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "type cast from the blended alloy could reproduce fine details of a letter's design that pure lead would have lost."
+  },
+  {
+   "id": "B",
+   "text": "the blended alloy melted at temperatures too high for printers' equipment to reach reliably."
+  },
+  {
+   "id": "C",
+   "text": "typefounders eventually stopped using lead in any form when casting type."
+  },
+  {
+   "id": "D",
+   "text": "letters cast from the blended alloy wore down more quickly under the repeated pressure of the press than letters cast from pure lead would have."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The passage contrasts lead's contraction, which blunts fine corners, with antimony's expansion, which fills every recess of the mold — so the blend should capture detail that pure lead loses.\n\n**The Full Solution:**\n- Premise one: pure lead pulls away from the mold's fine corners, producing rounded, blunted letters.\n- Premise two: antimony expands on solidifying, pressing the metal \"into every recess of the matrix\" as the letter forms.\n- The blank must state what this behavior explains. If the failure mode of lead is lost corners and the alloy's virtue is filled recesses, the direct consequence is faithful fine detail — exactly choice A.\n\n**Why the other choices are wrong:**\n- B: Melting temperature is never discussed; the premises concern behavior during cooling, not the heat needed for melting.\n- C: The text says the alloy contained lead for centuries, so abandoning lead contradicts rather than follows from it.\n- D: Wear on the press is a new variable; nothing in the passage compares the alloy's durability with pure lead's.",
+ "_meta": {
+  "anchor": "type metal — antimony's expansion on solidifying and crisp letterforms"
+ }
 }

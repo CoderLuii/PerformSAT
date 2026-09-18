@@ -1,0 +1,29 @@
+{
+ "id": 21,
+ "question": "The table gives the coverage rate, in square feet per gallon, of three concrete sealants. A crew will apply two coats of sealant Y to a surface with an area of $1{,}530$ square feet. Sealant Y is sold only in quart containers, and $1$ gallon equals $4$ quarts. What is the least number of containers the crew needs?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Sealant",
+    "Coverage rate (square feet per gallon)"
+   ],
+   "rows": [
+    [
+     "X",
+     "425"
+    ],
+    [
+     "Y",
+     "340"
+    ],
+    [
+     "Z",
+     "510"
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "36",
+ "explanation": "**SAT Pattern: Proportion Solving**\n\n**The correct answer is $36$.**\n\n**The Fast Way (~45s):** Two coats cover $2(1{,}530) = 3{,}060$ square feet of surface. At $340$ square feet per gallon that is $9$ gallons, and $9(4) = 36$ quarts.\n\n**The Full Solution:**\nStep 1: Find the total area to be coated. Each coat covers the full $1{,}530$ square feet, so two coats require sealant for $2 \\times 1{,}530 = 3{,}060$ square feet.\nStep 2: Convert area to gallons using sealant Y's rate from the table. Setting up the proportion $\\frac{340 \\text{ square feet}}{1 \\text{ gallon}} = \\frac{3{,}060 \\text{ square feet}}{g \\text{ gallons}}$ gives $340g = 3{,}060$, so $g = 9$ gallons.\nStep 3: Convert gallons to containers. Since $1$ gallon is $4$ quarts, $9$ gallons is $9 \\times 4 = 36$ quart containers. Check: $36$ quarts is $9$ gallons, which covers $9 \\times 340 = 3{,}060$ square feet, exactly two coats ✓\n\n**Common Mistakes:**\n* $9$: stops at gallons. The sealant is sold in quarts, so the count of containers is four times the number of gallons.\n* $18$: applies a single coat, computing $\\frac{1{,}530}{340} = 4.5$ gallons and converting to $18$ quarts.\n* $24$: reads the rate from sealant Z's row, $510$ square feet per gallon, giving $6$ gallons and $24$ quarts.\n\n**Test Day Takeaway:** Track the units at every step of a rate chain: area to gallons through the coverage rate, gallons to containers through the conversion. Multiply for repeated coats before dividing, and reread which row of the table the problem names."
+}

@@ -1,0 +1,6 @@
+{
+ "question": "A spectrophotometer reports the absorbance $A(c)=0.042c+0.11$ for a sample whose solute concentration is $c$ micromoles per liter. At what concentration, in micromoles per liter, does the instrument report an absorbance of exactly $0.53$?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~30s):** Running a linear function backward undoes its two operations in reverse order: strip the constant, then divide by the coefficient. $(0.53-0.11)\\div 0.042=10$.\n\n**The Full Solution:**\n\nStep 1: The reported absorbance is the output, so set $A(c)=0.53$, which gives $0.042c+0.11=0.53$.\n\nStep 2: Subtract $0.11$ from both sides to isolate the variable term: $0.042c=0.42$.\n\nStep 3: Divide both sides by $0.042$, giving $c=10$. Check: $0.042(10)+0.11=0.42+0.11=0.53$, the given absorbance.\n\n**Common Mistakes:** Dividing $0.53$ by $0.042$ without first removing the $0.11$ offset gives about $12.62$. Stopping after Step 2 reports $0.42$, which is the value of $0.042c$, not of $c$.\n\n**Test Day Takeaway:** When the output of a linear function is given and the input is wanted, undo the operations in reverse order: constant first, coefficient second.",
+ "id": "bank-alg-136"
+}

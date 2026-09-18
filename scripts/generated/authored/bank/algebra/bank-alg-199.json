@@ -1,0 +1,29 @@
+{
+ "question": "A truss analysis pairs the equation $y=-2x+c$ with the equation $4x-y=10$, where $c$ is a constant, and both equations are satisfied at a single point whose two coordinates have a sum of $10$. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "computes y - 2x instead of y + 2x when solving for c",
+  "B": "reports the x-coordinate of the point instead of the constant",
+  "C": "reports the y-coordinate of the point instead of the constant"
+ },
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**Choice D is correct.** The conditions $x+y=10$ and $4x-y=10$ give the point $(4,6)$, and $6=-2(4)+c$ makes $c=14$.\n\n**The Fast Way (~50s):** Adding $x+y=10$ and $4x-y=10$ gives $5x=20$, so $x=4$ and $y=6$; then $c=y+2x=6+8=14$.\n\n**The Full Solution:**\n\nStep 1: The coordinates sum to $10$, so $y=10-x$. Substitute that into $4x-y=10$: $4x-(10-x)=10$.\n\nStep 2: Simplify: $4x-10+x=10$, so $5x=20$ and $x=4$, which gives $y=10-4=6$.\n\nStep 3: Substitute $(4,6)$ into $y=-2x+c$: $6=-8+c$, so $c=14$. Check: $y=-2(4)+14=6$ and $4(4)-6=10$, and $4+6=10$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-2$): computes $y-2x=6-8$ instead of $y+2x$ when isolating $c$.\n* Choice B ($4$): reports the $x$-coordinate of the point.\n* Choice C ($6$): reports the $y$-coordinate of the point.\n\n**Test Day Takeaway:** An extra condition on the solution is itself an equation; pair it with the equation that has no unknown constant to locate the point first.",
+ "id": "bank-alg-199"
+}

@@ -1,0 +1,51 @@
+{
+ "id": "bank-alg-056",
+ "question": "The table gives the number of short cores and long cores in each of two shipments, along with the total mass of each shipment. Every short core has the same mass, and every long core has the same mass. What is the mass, in kilograms, of one long core?",
+ "questionTable": {
+  "headers": [
+   "Shipment",
+   "Short cores",
+   "Long cores",
+   "Total mass (kg)"
+  ],
+  "rows": [
+   [
+    "1",
+    "4",
+    "2",
+    "44"
+   ],
+   [
+    "2",
+    "4",
+    "6",
+    "92"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the mass of one short core",
+  "B": "divides the 48-kilogram gap by the 6 long cores in shipment 2 rather than by the 4 extra ones",
+  "D": "reports the difference between the two shipment totals without dividing"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Elimination by Subtraction**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Both shipments hold $4$ short cores, so the $48$-kilogram gap comes from $4$ extra long cores: $48 \\div 4 = 12$.\n\n**The Full Solution:**\nStep 1: Let $s$ be the mass of a short core and $L$ the mass of a long core: $4s + 2L = 44$ and $4s + 6L = 92$.\nStep 2: The $4s$ terms match, so subtracting the first equation from the second gives $4L = 48$.\nStep 3: Then $L = 12$ kilograms. Check: $4s + 24 = 44$ gives $s = 5$, and $4(5) + 6(12) = 20 + 72 = 92$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): reports the mass of one short core.\n* Choice B ($8$): divides the $48$-kilogram gap by the $6$ long cores in shipment $2$ instead of by the $4$ extra ones.\n* Choice D ($48$): reports the difference between the two shipment totals without dividing.\n\n**Test Day Takeaway:** When one column of a table repeats, subtract those two rows — the repeated quantity disappears without any scaling."
+}

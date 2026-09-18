@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-171",
+ "question": "A staffing model gives a unit's weekly hours as $H = 30 + rn$, where $n$ is the number of extra nurses and $r$ is a constant. Adding $6$ extra nurses brings the weekly total to $132$ hours. What is the value of $r$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$17$"
+  },
+  {
+   "id": "B",
+   "text": "$22$"
+  },
+  {
+   "id": "C",
+   "text": "$27$"
+  },
+  {
+   "id": "D",
+   "text": "$102$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides 132 by 6 without first removing the 30-hour base",
+  "C": "adds the base instead of subtracting it, computing (132 + 30) / 6 = 27",
+  "D": "stops at 6r = 102 without dividing by the 6 nurses"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Strip the $30$-hour base and divide by the $6$ nurses: $\\frac{132 - 30}{6} = \\frac{102}{6} = 17$.\n\n**The Full Solution:**\nStep 1: Substitute the known values into the model: $30 + r(6) = 132$, or $30 + 6r = 132$.\nStep 2: Subtract the constant base from both sides: $6r = 102$.\nStep 3: Divide by $6$: $r = 17$. Check: $30 + 17(6) = 30 + 102 = 132$ hours. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($22$): divides $132$ by $6$ without first removing the $30$-hour base.\n* Choice C ($27$): moves the base to the other side with the wrong sign, computing $\\frac{132 + 30}{6} = 27$.\n* Choice D ($102$): stops at $6r = 102$, which is the hours the six extra nurses add, not the hours per nurse.\n\n**Test Day Takeaway:** A constant term must come off BEFORE any division; dividing the whole total first buries the base in every share."
+}

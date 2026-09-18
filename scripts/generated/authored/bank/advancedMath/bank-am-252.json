@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-252",
+ "question": "The function $f$ gives the number of vehicles queued at a toll plaza $t$ minutes after 6:00 a.m., and a second plaza's queue is $q(t)=f(t-25)$. Given that $f(40)=180$, for what value of $t$ does $q(t)=180$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$65$"
+  },
+  {
+   "id": "D",
+   "text": "$205$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "subtracts 25 from 40 instead of adding, shifting the model earlier",
+  "B": "ignores the shift and reports the input used for f",
+  "D": "adds 25 to the output 180 instead of to the input 40"
+ },
+ "explanation": "**SAT Pattern: Horizontal Shift**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** $q(t)=f(t-25)$ equals 180 when $t-25=40$, so $t=65$.\n\n**The Full Solution:**\nStep 1: The second plaza's queue at time $t$ equals the first plaza's queue 25 minutes earlier.\nStep 2: The first plaza has 180 vehicles at $t=40$, so set $t-25=40$.\nStep 3: Solving gives $t=65$ minutes after 6:00 a.m. Check: $q(65)=f(40)=180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): subtracts 25 from 40, moving the queue 25 minutes early.\n* Choice B ($40$): uses the input for $f$ without applying the delay.\n* Choice D ($205$): adds 25 to the number of vehicles instead of to the time.\n\n**Test Day Takeaway:** A delayed model reaches the same output later — set the inner expression equal to the known input."
+}

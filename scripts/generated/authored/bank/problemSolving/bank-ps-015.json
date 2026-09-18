@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-015",
+  "question": "An orchard has $460$ trees, and $35\\%$ of the trees are apple trees. How many of the trees in the orchard are not apple trees?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$65$"
+    },
+    {
+      "id": "B",
+      "text": "$161$"
+    },
+    {
+      "id": "C",
+      "text": "$299$"
+    },
+    {
+      "id": "D",
+      "text": "$425$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the complement percent itself instead of applying it to the $460$ trees.",
+    "B": "finds the number of apple trees, the group the question excludes.",
+    "D": "subtracts $35$ trees instead of $35\\%$ of the trees."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Complement Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** The trees that are not apple trees make up $100\\% - 35\\% = 65\\%$, and $0.65 \\times 460 = 299$.\n\n**The Full Solution:**\nStep 1: If $35\\%$ of the trees are apple trees, the remaining $100\\% - 35\\% = 65\\%$ are not.\nStep 2: $0.65 \\times 460 = 299$.\nStep 3: Check: the apple trees number $0.35 \\times 460 = 161$, and $161 + 299 = 460$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($65$): reports the complement percent itself instead of applying it to the $460$ trees.\n* Choice B ($161$): finds the number of apple trees, the group the question excludes.\n* Choice D ($425$): subtracts $35$ trees instead of $35\\%$ of the trees.\n\n**Test Day Takeaway:** \"Not\" flips to the complement: use $100\\% - p\\%$ before multiplying, or subtract the part from the whole."
+}

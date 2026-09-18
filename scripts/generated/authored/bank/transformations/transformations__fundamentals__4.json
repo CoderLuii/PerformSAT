@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "A creamery logs the acidity, in degrees, of vat one as $v(t)$ at hour $t$ and of vat two, filled later, as $w(t) = v(t - 5) - 7$. Vat one reads $26$ degrees only at hour $12$, and $w(a) = 19$. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$17$"
+  },
+  {
+   "id": "D",
+   "text": "$26$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "shifts the wrong way, computing 12 - 5 = 7",
+  "B": "reports vat one's hour rather than vat two's",
+  "D": "reports vat one's acidity reading instead of an hour"
+ },
+ "correctAnswer": "C",
+ "hint": "The only acidity reading you are handed belongs to vat one.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** $w(a) = 19$ forces $v(a - 5) = 26$, and $v$ reads $26$ at hour $12$, so $a - 5 = 12$ and $a = 17$.\n\n**The Full Solution:**\nStep 1: Undo the outside operation: $w(a) = v(a - 5) - 7 = 19$, so $v(a - 5) = 26$.\nStep 2: Vat one reads $26$ degrees only at hour $12$, so $a - 5 = 12$.\nStep 3: Therefore $a = 17$. Check: $w(17) = v(17 - 5) - 7 = v(12) - 7 = 26 - 7 = 19$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): computing $12 - 5$; the shift must be undone in the other direction, since the input to $v$ is $a - 5$.\n* Choice B ($12$): reporting the hour at which vat one reads $26$ degrees rather than the hour asked about for vat two.\n* Choice D ($26$): reporting an acidity reading where the question asks for an hour.\n\n**Test Day Takeaway:** Strip the outside operation first, then match the inside expression to the input you were given."
+}

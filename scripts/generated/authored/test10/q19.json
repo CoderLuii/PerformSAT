@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 1,
- "passage": "A modern volcano observatory watches a restless peak through several instruments at once. Three are central to forecasting an eruption: the seismometer, which records the small earthquakes set off as magma forces its way ______ the tiltmeter, which detects the faint swelling of the ground as a magma chamber fills; and the gas spectrometer, which measures the sulfur dioxide released as magma nears the surface.",
+ "passage": "Before diving suits reached the Aegean, sponge divers worked unassisted, riding a flat marble stone down through the water. Angling the stone let a diver steer the descent and reach the beds in seconds rather than ______ second saved on the way down could be spent gathering sponges on the bottom.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "upward,"
+   "text": "minutes, every"
   },
   {
    "id": "B",
-   "text": "upward;"
+   "text": "minutes; every"
   },
   {
    "id": "C",
-   "text": "upward"
+   "text": "minutes every"
   },
   {
    "id": "D",
-   "text": "upward, and"
+   "text": "minutes and, every"
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The sentence lists three instruments, and each item already contains internal commas (\"the seismometer, which records ...\"). When the items in a series are themselves long and comma-containing, they are separated by semicolons so the boundaries between items stay clear; the semicolon after \"upward\" provides the first such break. Choice A uses a comma, which blurs into the internal commas. Choice C supplies no punctuation, fusing the first two items. Choice D inserts \"and\" mid-series, where it does not belong."
+ "explanation": "**Choice B is correct.** Two independent clauses meet at the blank, and a semicolon joins them correctly: \"...reach the beds in seconds rather than minutes; every second saved on the way down could be spent gathering sponges on the bottom.\"\n\n**The Full Solution:**\n- Clause one is complete: \"Angling the stone let a diver steer the descent and reach the beds in seconds rather than minutes.\"\n- Clause two is also complete: \"Every second saved on the way down could be spent gathering sponges on the bottom.\"\n- Because the second clause explains the payoff of the first, a semicolon, which links two closely related independent clauses, is the conventional boundary.\n\n**Why the other choices are wrong:**\n- A: A comma alone between two independent clauses creates a comma splice.\n- C: No punctuation at all fuses the clauses into a run-on.\n- D: The comma is on the wrong side of \"and\"; a coordinating conjunction takes a comma before it, not after it.",
+ "_meta": {
+  "rule": "semicolon between independent clauses",
+  "distractors": {
+   "A": "comma splice",
+   "C": "fused sentence",
+   "D": "misplaced comma after conjunction"
+  }
+ }
 }

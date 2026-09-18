@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "A dryer removes water at a steady rate, so the moisture content of a rice batch, in grams per kilogram, after $n$ hours is modeled by $M(n) = 96 - 3n$. For what value of $n$ does $M(n)$ equal $42$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$14$"
+  },
+  {
+   "id": "B",
+   "text": "$18$"
+  },
+  {
+   "id": "C",
+   "text": "$46$"
+  },
+  {
+   "id": "D",
+   "text": "$54$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the output 42 by 3 and ignores the starting 96",
+  "C": "adds 96 and 42 before dividing by 3 instead of subtracting",
+  "D": "stops at 3n = 54 without dividing by 3"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Solve $f(a) = c$**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $96 - 3n = 42$ gives $3n = 54$, so $n = 18$.\n\n**The Full Solution:**\nStep 1: Set the rule equal to the given output: $96 - 3n = 42$.\nStep 2: Move the variable term: add $3n$ to both sides and subtract $42$, giving $54 = 3n$.\nStep 3: Divide by $3$: $n = 18$ hours. Check by evaluating the model: $M(18) = 96 - 3(18) = 96 - 54 = 42$ grams per kilogram. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($14$): divides the target output by $3$, computing $\\frac{42}{3}$, and never subtracts from the starting moisture of $96$.\n* Choice C ($46$): adds instead of subtracts, computing $\\frac{96 + 42}{3}$. The $96$ is the starting value the drying removes from, not something added to the output.\n* Choice D ($54$): stops at $3n = 54$ and reports $54$, which is the drop in moisture content, not the number of hours.\n\n**Test Day Takeaway:** Solving $f(n) = c$ means substituting for the OUTPUT and solving for the input. Finish the division, then re-evaluate the model to confirm the output lands on $c$."
+}

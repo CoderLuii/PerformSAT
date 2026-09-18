@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-205",
+ "question": "In a solar field survey, corner stakes for a triangular plot sit at $(-3,2)$, $(5,2)$, and $(1,y)$, with $y>2$ and every unit equal to one meter. Which expression represents how many square meters the plot covers?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4y-8$"
+  },
+  {
+   "id": "B",
+   "text": "$4y$"
+  },
+  {
+   "id": "C",
+   "text": "$8y-16$"
+  },
+  {
+   "id": "D",
+   "text": "$8y$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses y itself as the height instead of the distance y - 2",
+  "C": "omits the factor one half, giving the rectangle's area 8(y - 2)",
+  "D": "omits the one half and uses y as the height, making both errors"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The horizontal base runs from $-3$ to $5$, a length of $8$; the height is $y-2$, so the area is $\\frac{1}{2}(8)(y-2)=4y-8$.\n\n**The Full Solution:**\n\nStep 1: Find the base. $(-3,2)$ and $(5,2)$ share the height $y=2$, so the base has length $5-(-3)=8$ meters.\n\nStep 2: Find the height. The third corner sits at height $y$, and the base line is at height $2$, so the perpendicular height is $y-2$ meters.\n\nStep 3: Apply the formula. Area $=\\frac{1}{2}(8)(y-2)=4(y-2)=4y-8$ square meters.\n\nCheck: with $y=7$ the height is $5$ and the area is $\\frac{1}{2}(8)(5)=20$, and $4(7)-8=20$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($4y$): uses $y$ itself as the height instead of the distance $y-2$ above the base.\n* Choice C ($8y-16$): omits the factor $\\frac{1}{2}$ and reports the surrounding rectangle's area.\n* Choice D ($8y$): drops the $\\frac{1}{2}$ and uses $y$ as the height, combining both errors.\n\n**Test Day Takeaway:** A height is a distance between two $y$-values, not a single coordinate — subtract the base's height first."
+}

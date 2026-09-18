@@ -1,0 +1,66 @@
+{
+ "id": "bank-am-178",
+ "question": "A quality lab applies two correction routines, $u$ and $w$, to the inputs $1$ through $5$, and the table lists the output each routine returns for each input. For how many of these five inputs $n$ is $u(w(n))$ equal to $w(u(n))$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "n",
+    "u(n)",
+    "w(n)"
+   ],
+   "rows": [
+    [
+     "1",
+     "4",
+     "4"
+    ],
+    [
+     "2",
+     "2",
+     "3"
+    ],
+    [
+     "3",
+     "1",
+     "3"
+    ],
+    [
+     "4",
+     "4",
+     "2"
+    ],
+    [
+     "5",
+     "3",
+     "5"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$3$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "counts the inputs where u(w(n)) returns to n itself (none), a different condition",
+  "B": "counts the inputs where u(n) and w(n) are equal (only n = 1)",
+  "D": "compares u(w(n)) with u(n) instead of with w(u(n)), which matches for three inputs"
+ },
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Build both columns from the table: $u(w(n))$ gives $4, 1, 1, 2, 3$ and $w(u(n))$ gives $2, 3, 4, 2, 3$. They agree at $n=4$ and $n=5$ only.\n\n**The Full Solution:**\nStep 1: For each input, read $w(n)$ first, then feed it to $u$: $u(w(1))=u(4)=4$, $u(w(2))=u(3)=1$, $u(w(3))=u(3)=1$, $u(w(4))=u(2)=2$, $u(w(5))=u(5)=3$.\nStep 2: Reverse the order: $w(u(1))=w(4)=2$, $w(u(2))=w(2)=3$, $w(u(3))=w(1)=4$, $w(u(4))=w(4)=2$, $w(u(5))=w(3)=3$.\nStep 3: Compare the two lists entry by entry: they match only at $n=4$ ($2=2$) and $n=5$ ($3=3$), so the count is $2$. Check: at $n=1$ the values are $4$ and $2$, so composition order does matter here ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$): counts the inputs with $u(w(n))=n$; no input satisfies that, but it is not the condition asked for.\n* Choice B ($1$): counts the inputs where $u(n)$ and $w(n)$ themselves are equal, which happens only at $n=1$.\n* Choice D ($3$): compares $u(w(n))$ with $u(n)$ instead of with $w(u(n))$; those agree at $n=1$, $3$, and $5$.\n\n**Test Day Takeaway:** Composition is not commutative — build both columns from the table before comparing."
+}

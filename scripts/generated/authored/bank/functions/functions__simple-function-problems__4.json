@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "A print shop bills $c(n)=0.35n+k$ dollars for a batch of $n$ price labels, where the constant $k$ covers plate setup. Batches of $120$ labels are billed at $\\$61$. How many dollars does a batch of $500$ labels cost?",
+ "hint": "Use the one known batch to pin down $k$ before you evaluate anything else.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$156$"
+  },
+  {
+   "id": "B",
+   "text": "$175$"
+  },
+  {
+   "id": "C",
+   "text": "$194$"
+  },
+  {
+   "id": "D",
+   "text": "$236$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "sign slip: k = 42 - 61 = -19, giving 175 - 19 = 156",
+  "B": "drops the setup fee and reports only 0.35(500) = 175",
+  "D": "treats the given 61 as the setup fee, giving 175 + 61 = 236"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** $k=61-0.35(120)=19$, so $c(500)=0.35(500)+19=194$.\n\n**The Full Solution:**\n\nStep 1: Substitute the known batch. $c(120)=0.35(120)+k=42+k$, and this equals $61$.\n\nStep 2: Solve for the setup fee. $42+k=61$ gives $k=19$ dollars.\n\nStep 3: Evaluate at $n=500$. $c(500)=0.35(500)+19=175+19=194$ dollars.\n\nCheck: $c(120)=42+19=61$, matching the given billing.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($156$): subtracts in the wrong direction, taking $k=42-61=-19$ and reporting $175-19=156$.\n* Choice B ($175$): computes only the per-label part, $0.35(500)=175$, and drops the setup fee.\n* Choice D ($236$): treats the given $\\$61$ itself as the setup fee, giving $175+61=236$.\n\n**Test Day Takeaway:** When a model carries an unknown constant, one supplied input-output pair is exactly what determines it."
+}

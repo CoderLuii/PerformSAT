@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-420",
+ "question": "A climbing gym set $r$ routes this season, of which $q$ carry an advanced rating. Which of the following expressions gives the percent of this season's routes that carry an advanced rating?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{r}{q}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{q}{r}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{100r}{q}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{100q}{r}$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "inverts the ratio and omits the factor of $100$, comparing all routes with the advanced ones",
+  "B": "gives the correct fraction but leaves it as a decimal rather than converting to a percent",
+  "C": "inverts the ratio before multiplying by $100$, reporting the total as a percent of the advanced routes"
+ },
+ "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice D is correct.** The advanced share is $\\frac{q}{r}$, and multiplying by $100$ expresses it as a percent: $\\frac{100q}{r}$.\n\n**The Fast Way (~20s):** Part over whole is $\\frac{q}{r}$; a percent needs a factor of $100$, giving $\\frac{100q}{r}$.\n\n**The Full Solution:**\n\nStep 1: Identify the part and the whole. The part is the $q$ advanced routes; the whole is all $r$ routes set this season.\n\nStep 2: Write the fraction of the whole: $\\frac{q}{r}$.\n\nStep 3: Convert to a percent by multiplying by $100$: $\\frac{100q}{r}$. Check: with $r = 200$ and $q = 30$, the expression gives $\\frac{3{,}000}{200} = 15$, and $30$ routes out of $200$ is indeed $15\\%$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{r}{q}$): puts the part in the denominator and drops the factor of $100$ as well.\n* Choice B ($\\frac{q}{r}$): is the right ratio but is a decimal fraction, not a percent; with $q = 30$ and $r = 200$ it returns $0.15$, not $15$.\n* Choice C ($\\frac{100r}{q}$): reports the total as a percent of the advanced routes, reversing part and whole.\n\n**Test Day Takeaway:** Percent of a whole is part over whole times $100$ -- name which quantity is the whole before you write the fraction."
+}

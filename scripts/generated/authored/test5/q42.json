@@ -1,34 +1,34 @@
 {
-  "id": 542,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 2,
-  "passage": "A glacier gains mass each year from snowfall in its upper reaches and loses mass through melting and calving at its lower end. Glaciologists summarize a glacier's health with its annual mass balance—the net difference between what it gains and what it loses over a year. When the multiyear average of this balance is negative, the glacier is losing more than it gains and must, over time, retreat. A researcher notes that one studied glacier has shown a small but consistently negative average mass balance for several decades, even though its lower end has so far held roughly the same position. From this it follows that the glacier's apparent stability ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "is unlikely to last, since a persistently negative mass balance implies continued net loss that the position of its lower end must eventually reflect."
-    },
-    {
-      "id": "B",
-      "text": "shows that the glacier's annual mass balance has in fact been positive over the period the researcher studied."
-    },
-    {
-      "id": "C",
-      "text": "proves that mass balance is, in general, a poor indicator of whether a glacier is gaining or losing ice."
-    },
-    {
-      "id": "D",
-      "text": "must mean that the glacier has somehow been gaining mass in its upper reaches faster than it loses mass through melting and calving at its lower end."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The premises are that a sustained negative mass balance means continued net loss and eventual retreat, and that this glacier has had a negative average balance for decades despite a stationary terminus. The licensed conclusion is that the stability cannot last: continued loss must eventually show up in the terminus position. Choice B contradicts the stated negative balance. Choice C overgeneralizes into a claim that mass balance is a poor indicator, which the passage does not support. Choice D describes a positive balance, again contradicting the premise.",
-  "_meta": {
-    "anchor": "Glacier mass balance; sustained negative balance implies eventual retreat"
+ "id": 542,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 2,
+ "passage": "In the nineteenth century, most large American cities built combined sewers, single networks of pipes carrying stormwater and household waste together. Treatment plants added in the twentieth century were sized for dry-weather flow, so during heavy rain the combined volume overwhelms plant capacity and the overflow discharges, untreated, into rivers and harbors. Fully separating the two systems would mean excavating nearly every street a city has, a disruption measured in decades and enormous sums. City engineers who want cleaner harbors within years rather than generations have therefore tended to ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "favor measures that keep stormwater out of the sewers or hold it back during storms rather than wait on full separation."
+  },
+  {
+   "id": "B",
+   "text": "conclude that treatment plants should continue to be sized for dry-weather flow alone."
+  },
+  {
+   "id": "C",
+   "text": "argue that combined sewers should have been outlawed before any city built them."
+  },
+  {
+   "id": "D",
+   "text": "expect the untreated discharges into rivers and harbors to cease entirely once every household in the city has been connected to a treatment plant."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The overflow problem is driven by storm surges of water entering pipes sized for dry weather, and full separation is ruled out on cost and time — so engineers seeking results \"within years\" must reach for faster measures that reduce or delay storm flow.\n\n**The Full Solution:**\n- Premise one: overflows happen when heavy rain pushes combined flow past plant capacity.\n- Premise two: the definitive fix, separating the systems, takes decades and enormous sums.\n- The blank describes what engineers with a shorter horizon \"therefore\" do. The logic points to interventions that attack the same cause — storm water in the pipes — without the generational rebuild: keeping it out or holding it back, exactly choice A.\n\n**Why the other choices are wrong:**\n- B: Retaining dry-weather sizing preserves the bottleneck that causes the overflows; it solves nothing.\n- C: A retrospective wish about the nineteenth century offers no course of action for cleaner harbors now.\n- D: Household connections are not the issue — the text locates the failure in storm volume exceeding capacity, which more connections would only worsen.",
+ "_meta": {
+  "anchor": "combined sewer overflows — near-term stormwater measures vs. generational separation"
+ }
 }

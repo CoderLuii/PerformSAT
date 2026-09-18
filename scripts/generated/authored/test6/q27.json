@@ -9,33 +9,33 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "In 1967, the astronomer Jocelyn Bell Burnell, then a graduate student at Cambridge, was using a new radio telescope to study distant quasars.",
-      "She noticed a faint, regularly repeating pulse in the data, arriving every 1.3 seconds with remarkable precision.",
-      "The regularity was at first so exact that some wondered whether the signal could be artificial.",
-      "Further observation showed the pulses came from a rapidly spinning, extremely dense collapsed star, later called a pulsar.",
-      "Pulsars were the first observational evidence of neutron stars, whose existence had until then only been predicted in theory."
+      "Until the 1970s, biologists customarily sorted all living things into two fundamental groups: bacteria and everything else.",
+      "The microbiologist Carl Woese compared ribosomal RNA sequences to trace evolutionary relationships among microbes.",
+      "In 1977, Woese and George Fox reported that the microbes now called archaea, though they look like bacteria, are genetically as distant from bacteria as humans are.",
+      "Woese proposed dividing life into three domains: Bacteria, Archaea, and Eukarya.",
+      "Textbooks and classification systems worldwide eventually adopted the three-domain scheme."
     ],
-    "goal": "The student wants to emphasize the significance of Bell Burnell's 1967 discovery for astronomy."
+    "goal": "The student wants to emphasize the significance of Woese's finding for the classification of life."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "In 1967, Jocelyn Bell Burnell, then a graduate student at Cambridge, was using a new radio telescope to study distant quasars."
+      "text": "Working with George Fox, Carl Woese compared ribosomal RNA sequences from many microbes in order to trace the evolutionary relationships among the organisms that carried them in their cells."
     },
     {
       "id": "B",
-      "text": "By tracing a precisely repeating radio pulse to a spinning collapsed star, Bell Burnell's 1967 work gave astronomers their first observational evidence of neutron stars, which had until then existed only in theory."
+      "text": "By revealing that archaea are as genetically distant from bacteria as humans are, Woese's work replaced the two-group view of life with the three-domain classification used worldwide."
     },
     {
       "id": "C",
-      "text": "Bell Burnell noticed a faint pulse in her data that arrived every 1.3 seconds, a regularity so exact that some at first wondered whether the signal was artificial rather than natural."
+      "text": "Archaea resemble bacteria even though the two groups are genetically quite different from each other."
     },
     {
       "id": "D",
-      "text": "The pulses that Bell Burnell detected in 1967 came from a rapidly spinning, extremely dense collapsed star that was later named a pulsar."
+      "text": "Until the 1970s, biologists customarily sorted all living things into just two fundamental groups."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to convey why the discovery mattered, and choice B does so by linking the repeating pulse to the first observational evidence of neutron stars, objects that had previously been only theoretical. Choice A reports only the circumstances of the work, with no statement of significance. Choice C dwells on the puzzle of whether the signal was artificial, a detail rather than the payoff. Choice D identifies the source of the pulses but stops short of explaining why confirming a neutron star was important."
+  "explanation": "**Choice B is correct.** Significance for classification means showing what the finding changed, and B does precisely that: it names the finding (archaea's genetic distance) and its classificatory consequence (two groups replaced by the three domains adopted worldwide).\n\n**The Full Solution:**\n- The goal has two parts: Woese's finding, and its significance for how life is classified.\n- B carries both — the discovery in its opening clause, the overthrow of the old scheme and worldwide adoption of the new one in its main clause — synthesizing the third, fourth, and fifth notes.\n\n**Why the other choices are wrong:**\n- A: It describes the method in detail but stops before any finding or consequence, so no significance is conveyed.\n- C: It states the finding stripped of any connection to classification — the significance the goal demands is missing.\n- D: It gives only the before picture; without the finding or the new scheme, nothing about Woese's impact is emphasized."
 }

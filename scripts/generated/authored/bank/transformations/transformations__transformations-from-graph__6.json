@@ -1,0 +1,41 @@
+{
+  "id": 6,
+  "question": "The graph shown in the $xy$-plane is the image of the graph of $y=x^{2}$ after a single translation. Which translation was applied?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        -4,
+        0
+      ],
+      "a": 1,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$ units down"
+    },
+    {
+      "id": "B",
+      "text": "$4$ units left"
+    },
+    {
+      "id": "C",
+      "text": "$4$ units right"
+    },
+    {
+      "id": "D",
+      "text": "$4$ units up"
+    }
+  ],
+  "distractorNotes": {
+    "A": "attaches the -4 to the height instead of to the input",
+    "C": "moves the vertex in the wrong direction",
+    "D": "reads the size of the move but assigns it to the height, ignoring the sign"
+  },
+  "correctAnswer": "B",
+  "hint": "Compare the lowest point of the curve drawn with the lowest point of $y=x^{2}$.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** The low point has moved from $(0,0)$ to $(-4,0)$ — same height, $4$ units in the negative direction.\n\n**The Full Solution:**\nStep 1: The graph of $y=x^{2}$ has its lowest point at the origin.\nStep 2: The curve drawn has the same shape with its lowest point at $(-4,0)$.\nStep 3: Only the first coordinate changed, and it decreased by $4$, so the translation is $4$ units left. Check: $y=(x+4)^{2}$ has its minimum where $x+4=0$, at $x=-4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$ units down): the lowest point is still on the $x$-axis, so no vertical movement occurred.\n* Choice C ($4$ units right): a right translation would put the low point at $(4,0)$, on the other side of the $y$-axis.\n* Choice D ($4$ units up): an upward translation would lift the low point off the $x$-axis to $(0,4)$.\n\n**Test Day Takeaway:** Identify a translation by tracking one recognizable point — for a parabola, the vertex is the easiest one."
+}

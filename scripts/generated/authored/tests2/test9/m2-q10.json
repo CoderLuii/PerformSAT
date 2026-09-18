@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "In a bird-banding sample of $n$ birds, each bird is an adult, a juvenile, or a nestling. The ratio of the number of adults to the number of juveniles is $3$ to $2$, and the ratio of the number of juveniles to the number of nestlings is $8$ to $5$. Which expression represents how many more adults than nestlings the sample contains?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{n}{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{7n}{25}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{7n}{17}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{12n}{25}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "uses the unscaled parts 3, 2, and 5 out of a total of 10, giving a difference of 2n/10 = n/5",
+  "C": "divides the 7-part difference by 12 + 5 = 17, the two named groups, instead of the 25-part total",
+  "D": "reports the number of adults, 12n/25, rather than the difference"
+ },
+ "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice B is correct.** Rescaling so juveniles match in both ratios gives adults : juveniles : nestlings $= 12 : 8 : 5$, a total of $25$ parts. Adults exceed nestlings by $12 - 5 = 7$ parts, or $\\frac{7n}{25}$.\n\n**The Fast Way (~35s):** Scale $3 : 2$ up to $12 : 8$ so the juveniles agree, giving $12 : 8 : 5$ and a difference of $\\frac{7}{25}$ of the sample.\n\n**The Full Solution:**\nStep 1: The juvenile count appears as $2$ in one ratio and $8$ in the other, so multiply the first ratio by $4$: adults : juveniles $= 12 : 8$.\nStep 2: Combine: adults : juveniles : nestlings $= 12 : 8 : 5$, so the sample has $12 + 8 + 5 = 25$ equal parts and each part is $\\frac{n}{25}$.\nStep 3: Check with the true expression: with $n = 25$ the sample holds $12$ adults, $8$ juveniles, and $5$ nestlings; the ratios are $12 : 8 = 3 : 2$ and $8 : 5$, and $12 - 5 = 7 = \\frac{7(25)}{25}$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{n}{5}$): combines $3$, $2$, and $5$ without rescaling, treating the total as $10$ parts and the difference as $2$ parts.\n* Choice C ($\\frac{7n}{17}$): finds the $7$-part difference correctly but divides by $12 + 5 = 17$, the two groups named in the question, rather than by the $25$-part whole.\n* Choice D ($\\frac{12n}{25}$): stops at the number of adults instead of subtracting the nestlings.\n\n**Test Day Takeaway:** Two ratios link only through the quantity they share. Scale one ratio until that shared quantity matches, then every part refers to the same unit and the total is the sum of all three."
+}

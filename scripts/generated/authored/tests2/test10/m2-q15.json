@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "An adviser converts a student's raw score $t$ into a placement index $I$ using $I = \\frac{4t + 9}{5}$. Which expression is equal to $8t + 18$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2I$"
+  },
+  {
+   "id": "B",
+   "text": "$5I + 9$"
+  },
+  {
+   "id": "C",
+   "text": "$10I - 18$"
+  },
+  {
+   "id": "D",
+   "text": "$10I$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "substitutes I for 4t + 9 and forgets that I is that quantity divided by 5, giving 2I",
+  "B": "gets 5I = 4t + 9 but then adds 9 to reach 8t + 18 instead of doubling, giving 5I + 9",
+  "C": "solves t = (5I - 9)/4 and substitutes but drops the +18 at the end, giving 10I - 18"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** $8t + 18 = 2(4t + 9)$, and $4t + 9 = 5I$, so the expression is $2(5I) = 10I$.\n\n**The Full Solution:**\nStep 1: Notice that the target expression is a multiple of the numerator in the definition: $8t + 18 = 2(4t + 9)$.\nStep 2: Clear the denominator in the definition. Multiplying $I = \\frac{4t + 9}{5}$ by $5$ gives $4t + 9 = 5I$.\nStep 3: Substitute: $8t + 18 = 2(4t + 9) = 2(5I) = 10I$. Check with a value: if $t = 4$, then $I = \\frac{16 + 9}{5} = 5$, and $8(4) + 18 = 50 = 10(5)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2I$): replaces $4t + 9$ with $I$ rather than with $5I$, throwing away the division by $5$. At $t = 4$ this gives $10$, not $50$.\n* Choice B ($5I + 9$): reaches $4t + 9 = 5I$ and then adds another $9$, as if $8t + 18$ came from adding to $4t + 9$ instead of doubling it. At $t = 4$ this gives $34$.\n* Choice C ($10I - 18$): solves for $t = \\frac{5I - 9}{4}$, computes $8t = 10I - 18$, and then forgets the $+18$ still waiting in the expression. At $t = 4$ this gives $32$.\n\n**Test Day Takeaway:** Before solving for the variable, ask whether the target expression is just a multiple of the one you already have — spotting $8t + 18 = 2(4t + 9)$ turns three lines of algebra into one."
+}

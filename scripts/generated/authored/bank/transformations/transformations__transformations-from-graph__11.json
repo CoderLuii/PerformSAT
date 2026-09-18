@@ -1,0 +1,30 @@
+{
+ "id": 11,
+ "question": "A monorail platform's arrival deviation, in minutes, is $A(x)$ for a train scheduled at minute $x$, and the deviation is zero only at $x = -6$ and $x = 8$. A second platform's deviation is $y = A(2x + 4)$. At which values of $x$ is the second platform's deviation zero?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "At $x = -10$ and $x = 4$."
+  },
+  {
+   "id": "B",
+   "text": "At $x = -5$ and $x = 2$."
+  },
+  {
+   "id": "C",
+   "text": "At $x = -3$ and $x = 4$."
+  },
+  {
+   "id": "D",
+   "text": "At $x = -1$ and $x = 6$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the 4 but never divides by 2",
+  "C": "divides by 2 but leaves the +4 out",
+  "D": "reads the inside expression as 2x - 4"
+ },
+ "correctAnswer": "B",
+ "hint": "Two operations sit inside the function, and both have to be undone.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~40s):** $A(2x + 4) = 0$ needs $2x + 4$ to equal $-6$ or $8$, giving $x = -5$ and $x = 2$.\n\n**The Full Solution:**\nStep 1: The second platform's deviation is zero exactly when the inside expression lands on an input where $A$ is zero, so $2x + 4 = -6$ or $2x + 4 = 8$.\nStep 2: From $2x + 4 = -6$: $2x = -10$, so $x = -5$. From $2x + 4 = 8$: $2x = 4$, so $x = 2$.\nStep 3: The zeros are at $x = -5$ and $x = 2$. Check: $2(-5) + 4 = -6$ and $2(2) + 4 = 8$, both inputs where $A$ is zero ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-10$ and $4$): subtracting the $4$ but never dividing by $2$.\n* Choice C ($-3$ and $4$): dividing by $2$ and leaving the $+4$ out of the equation.\n* Choice D ($-1$ and $6$): reading the inside expression as $2x - 4$ and adding the $4$ instead of subtracting it.\n\n**Test Day Takeaway:** Set the whole inside expression equal to each known input, then solve; undo the addition before the multiplication."
+}

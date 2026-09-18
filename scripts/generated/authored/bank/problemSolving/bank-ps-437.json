@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-437",
+  "question": "A total charge of $\\$280$ includes a $12\\%$ service fee applied to the base charge. What was the base charge, in dollars, before the service fee was added?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$33.60$"
+    },
+    {
+      "id": "B",
+      "text": "$246.40$"
+    },
+    {
+      "id": "C",
+      "text": "$250$"
+    },
+    {
+      "id": "D",
+      "text": "$313.60$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "computes $12\\%$ of the total, which is the fee on the wrong base.",
+    "B": "subtracts $12\\%$ of the total instead of dividing by $1.12$.",
+    "D": "adds another $12\\%$ to the total."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Reverse Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The total is $112\\%$ of the base charge, so the base charge is $\\frac{280}{1.12}=250$ dollars.\n\n**The Full Solution:**\nStep 1: Let $b$ be the base charge. Adding a $12\\%$ fee gives $b+0.12b=1.12b$.\nStep 2: Set that equal to the total: $1.12b=280$.\nStep 3: $b=\\frac{280}{1.12}=250$ dollars. Check: $12\\%$ of $250$ is $30$, and $250+30=280$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($33.60$): computes $0.12\\times 280$, the fee measured against the total rather than the base.\n* Choice B ($246.40$): computes $0.88\\times 280$, subtracting $12\\%$ of the larger number.\n* Choice D ($313.60$): computes $1.12\\times 280$, adding the fee a second time instead of removing it.\n\n**Test Day Takeaway:** The fee is a percent of the base, not of the total, so $12\\%$ of $280$ is never the right piece. Divide by $1.12$."
+}

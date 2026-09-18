@@ -1,0 +1,90 @@
+{
+  "id": "bank-ps-341",
+  "question": "The scatterplot shows the mass $y$, in metric tons, of de-icing salt remaining in a depot on day $x$ of a winter season, for $10$ days, along with the line of best fit $\\hat{y} = -2.4x + 96$. According to the line of best fit, on which day is the predicted mass of salt remaining equal to $0$ metric tons?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          2,
+          93
+        ],
+        [
+          5,
+          82
+        ],
+        [
+          8,
+          74
+        ],
+        [
+          11,
+          67
+        ],
+        [
+          14,
+          64
+        ],
+        [
+          17,
+          53
+        ],
+        [
+          20,
+          46
+        ],
+        [
+          23,
+          43
+        ],
+        [
+          26,
+          35
+        ],
+        [
+          29,
+          25
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 32,
+      "yMin": 0,
+      "yMax": 100,
+      "xGridStep": 2,
+      "yGridStep": 10,
+      "xLabelStep": 8,
+      "yLabelStep": 20,
+      "xLabel": "Day of season",
+      "yLabel": "Salt remaining (metric tons)",
+      "bestFitLine": {
+        "slope": -2.4,
+        "intercept": 96
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$40$"
+    },
+    {
+      "id": "B",
+      "text": "$48$"
+    },
+    {
+      "id": "C",
+      "text": "$96$"
+    },
+    {
+      "id": "D",
+      "text": "$230.4$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides $96$ by $2$ rather than by the slope's magnitude $2.4$.",
+    "C": "reads the $y$-intercept $96$ as a day number instead of a mass.",
+    "D": "multiplies by the slope, $96 \\times 2.4$, instead of dividing by it."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Interpret Slope of Best Fit**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Set $\\hat{y} = 0$: $0 = -2.4x + 96$, so $2.4x = 96$ and $x = 40$.\n\n**The Full Solution:**\nStep 1: \"Predicted mass equal to $0$\" means substituting $\\hat{y} = 0$ into the line of best fit.\nStep 2: $0 = -2.4x + 96$ gives $2.4x = 96$.\nStep 3: $x = \\frac{96}{2.4} = 40$, so the model predicts the depot is empty on day $40$. Check: the depot starts at $96$ tons and loses $2.4$ tons per day, and $2.4(40) = 96$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($48$): divides $96$ by $2$ rather than by the slope's magnitude $2.4$.\n* Choice C ($96$): reads the $y$-intercept $96$ as a day number instead of a mass.\n* Choice D ($230.4$): multiplies by the slope, $96 \\times 2.4$, instead of dividing by it.\n\n**Test Day Takeaway:** \"When does the model reach $0$\" is an $x$-intercept question: set $\\hat{y} = 0$ and divide the starting value by the per-unit rate."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-407",
+ "question": "A camera shutter admits light according to $g(x)=-2x^{2}+kx+11$, where $x$ is the blade offset in millimeters and $k$ is a positive constant, and the largest output this model produces is $19$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "takes the negative square root of 64 and ignores that k is positive",
+  "B": "uses k^2/2 instead of k^2/8 for the rise above 11, giving k^2 = 16",
+  "D": "assumes the maximum occurs at x = 1 and solves -2 + k + 11 = 19"
+ },
+ "explanation": "**SAT Pattern: Horizontal Tangent to a Parabola (Max/Min)**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The maximum of $-2x^{2}+kx+11$ is $11+\\frac{k^{2}}{8}$; setting that equal to 19 gives $k^{2}=64$ and $k=8$.\n\n**The Full Solution:**\nStep 1: The graph opens downward, so its greatest value occurs at $x=-\\frac{k}{2(-2)}=\\frac{k}{4}$.\nStep 2: Substituting gives $-2\\left(\\frac{k}{4}\\right)^{2}+k\\left(\\frac{k}{4}\\right)+11=-\\frac{k^{2}}{8}+\\frac{k^{2}}{4}+11=\\frac{k^{2}}{8}+11$.\nStep 3: Setting $\\frac{k^{2}}{8}+11=19$ gives $k^{2}=64$, and $k$ is positive, so $k=8$. Check: with $k=8$ the vertex is at $x=2$, where $-2(4)+16+11=19$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$): solves $k^{2}=64$ but keeps the negative root, which the condition on $k$ rules out.\n* Choice B ($4$): uses $\\frac{k^{2}}{2}$ for the rise above 11, giving $k^{2}=16$.\n* Choice D ($10$): assumes the peak sits at $x=1$ and solves $-2+k+11=19$.\n\n**Test Day Takeaway:** For $y=ax^{2}+bx+c$ the extreme value is the output at $x=-\\frac{b}{2a}$ — build that expression in terms of the constant before solving."
+}

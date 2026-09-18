@@ -1,0 +1,61 @@
+{
+ "id": "bank-am-174",
+ "question": "In the table below, the functions $p$ and $q$ are each defined at the four inputs $0$, $1$, $2$, and $3$, and no other values of either function are known. Using only the tabulated values, compute $q(p(3)) + p(q(2))$.",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "x",
+    "p(x)",
+    "q(x)"
+   ],
+   "rows": [
+    [
+     "0",
+     "3",
+     "6"
+    ],
+    [
+     "1",
+     "0",
+     "2"
+    ],
+    [
+     "2",
+     "5",
+     "0"
+    ],
+    [
+     "3",
+     "1",
+     "5"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports only the first term, $q(p(3)) = 2$",
+  "B": "reports only the second term, $p(q(2)) = 3$",
+  "D": "computes $q(3) + p(2) = 5 + 5$, applying each outer function to the original input"
+ },
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** $p(3) = 1$ so $q(1) = 2$; $q(2) = 0$ so $p(0) = 3$; the sum is $2 + 3 = 5$.\n\n**The Full Solution:**\nStep 1: For the first term, read $p(3) = 1$ from the row $x = 3$, then read $q(1) = 2$ from the row $x = 1$.\nStep 2: For the second term, read $q(2) = 0$ from the row $x = 2$, then read $p(0) = 3$ from the row $x = 0$.\nStep 3: Add the two results: $2 + 3 = 5$. Check: each term used two different rows, and neither used the row of the original input twice ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): the first composite alone, with the second term dropped.\n* Choice B ($3$): the second composite alone.\n* Choice D ($10$): skips the inner functions and adds $q(3)$ and $p(2)$ directly.\n\n**Test Day Takeaway:** In a sum of composites, finish one composite completely before starting the other — mixing the two is what produces the too-large answer."
+}

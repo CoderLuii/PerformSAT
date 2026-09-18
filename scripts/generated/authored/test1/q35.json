@@ -9,32 +9,32 @@
  "passages": [
   {
    "label": "Text 1",
-   "text": "The marine biologist Baruch Rinkevich has championed an active approach to saving degraded coral reefs. Rather than wait for damaged reefs to recover on their own—a process that may take decades, if it happens at all—he proposes \"gardening\" them: fragments of healthy coral are grown in sheltered underwater nurseries and then transplanted onto depleted reef sites. In trials across several regions, nursery-raised fragments have survived transplantation and begun to grow, and Rinkevich argues that scaling such methods up could rebuild reef structure faster than natural recovery allows. Restoration, on his account, is a practical tool that coastal communities can use now, without waiting for distant shifts in global policy to take hold."
+   "text": "Thin sections cut from the limb bones of many non-avian dinosaurs show lines of arrested growth — concentric rings, like a tree's, that record annual pauses in bone deposition. Because today's reptiles lay down such rings when cool seasons slow their metabolism, while mammals and birds typically grow bone continuously, some paleontologists have read these rings as evidence that dinosaurs' body temperatures, and hence their metabolic rates, tracked the seasons the way a crocodile's do — that dinosaurs were, in this respect, fundamentally reptilian."
   },
   {
    "label": "Text 2",
-   "text": "The reef scientist Terry Hughes does not deny that coral gardening can restore small patches of reef, and he agrees that local nurseries have produced healthy transplants. His objection concerns scale. The world's reefs span tens of thousands of square kilometers, while even ambitious restoration projects work over a few hectares; the recent mass-bleaching events driven by ocean warming have killed corals across hundreds of kilometers in a single season. Transplanting fragments onto a reef that will bleach again the next warm summer, Hughes argues, treats the symptom rather than the cause. Worse, he warns, promoting restoration as a solution may ease the political pressure to cut the emissions that are warming the oceans in the first place."
+   "text": "Growth rings register interruptions in growth, not their cause: bears, deer, and other unambiguously warm-blooded animals arrest bone growth during hibernation or seasonal food shortage, and rings have been documented in mammals living at high latitudes. Seeking a proxy tied to temperature itself, a team led by geochemist Robert Eagle examined the clustering of heavy isotopes in fossil eggshell minerals, which varies with the temperature of the body in which the shell formed. The team's analyses of eggshells from multiple dinosaur lineages yielded body temperatures markedly warmer than the animals' surroundings."
   }
  ],
- "question": "Based on the texts, how would Hughes (Text 2) most likely respond to the claim presented in Text 1?",
+ "question": "Based on the texts, how would the author of Text 2 most likely respond to the conclusion presented in Text 1?",
  "choices": [
   {
    "id": "A",
-   "text": "He would deny that nursery-raised coral fragments are able to survive transplantation onto degraded reef sites, rejecting the empirical basis of Rinkevich's gardening trials outright."
+   "text": "It concedes that growth rings provide the most reliable available record of dinosaur metabolism, even though eggshell isotopes suggest a different conclusion."
   },
   {
    "id": "B",
-   "text": "He would recommend abandoning restoration projects altogether and leaving every damaged reef to recover entirely on its own, however many decades that unaided process might take."
+   "text": "It objects that growth rings cannot bear the interpretive weight placed on them, since warm-blooded animals also produce such rings, and it cites independent evidence that dinosaur body temperatures were elevated."
   },
   {
    "id": "C",
-   "text": "He would grant that gardening can restore small patches yet argue it cannot match warming-driven loss and may even weaken pressure to curb emissions."
+   "text": "Lines of arrested growth, it argues, are artifacts of fossilization rather than records of any interruption in the animals' growth."
   },
   {
    "id": "D",
-   "text": "He would propose concentrating restoration on precisely those reefs judged most likely to bleach again within the next several warm summers, where transplants are most at risk."
+   "text": "While agreeing that dinosaurs' metabolic rates tracked the seasons in the way Text 1 describes, it attributes that seasonal pattern to recurring, region-wide shortages of food rather than to changes in the animals' body temperature."
   }
  ],
- "correctAnswer": "C",
- "explanation": "The correct answer is C. Hughes accepts the part of Rinkevich's case that is empirical—gardening can restore small patches, and the nurseries work—so his reply is not a denial that transplants survive. His quarrel is with scale and with consequences: restoration operates over hectares while bleaching kills corals across hundreds of kilometers, so transplanting onto a reef that will bleach again treats the symptom, and promoting restoration as the answer may relieve pressure to cut emissions. C captures that concede-then-challenge stance. A denies a point Hughes grants; B pushes him to an abandon-everything position he never takes; and D recommends a targeting strategy that, on his own logic, would still lose to repeat bleaching."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Text 2 attacks Text 1's inferential step — rings register growth interruptions, not their cause — and then supplies independent isotope evidence pointing to warm bodies.\n\n**The Full Solution:**\n- Text 1 infers reptile-like metabolism from growth rings, because rings appear in seasonal, cool-metabolism reptiles.\n- Text 2 rejects exactly that step: rings \"register interruptions in growth, not their cause,\" and demonstrably warm-blooded animals such as hibernating bears produce them too — so rings cannot discriminate between the hypotheses.\n- Text 2 then adds evidence on the question rings cannot settle: eggshell isotope clustering, a proxy for the body temperature that formed the shell, indicates temperatures \"markedly warmer than the animals' surroundings.\"\n\n**Why the other choices are wrong:**\n- A: Text 2 treats rings as uninformative about metabolism, not as the most reliable record.\n- C: It overstates the objection — Text 2 accepts that rings record real growth interruptions, disputing only what causes them.\n- D: It attributes an agreement Text 2 rejects: the isotope data point away from seasonal, environment-tracking body temperatures."
 }

@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "A roof truss has the shape of triangle $ABC$. A horizontal tie $DE$ runs parallel to the base $BC$, with $D$ on side $AB$ and $E$ on side $AC$, and it divides side $AB$ so that $AD = 12$ feet and $DB = 8$ feet. If side $BC$ has length $m$ feet, what is the length of the tie, in feet?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{2m}{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3m}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3m}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{5m}{3}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "uses DB/AB = 8/20 = 2/5, scaling by the lower piece of AB instead of the piece from the apex",
+  "C": "uses AD/DB = 12/8 = 3/2, comparing the two pieces of AB rather than a piece to the whole side",
+  "D": "inverts the scale factor, using AB/AD = 20/12 = 5/3 and making the tie longer than the base"
+ },
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** $\\overline{DE} \\parallel \\overline{BC}$ makes triangle $ADE$ similar to triangle $ABC$, and $AB = 12 + 8 = 20$, so every side of $ADE$ is $\\frac{12}{20} = \\frac{3}{5}$ of the matching side of $ABC$. Therefore $DE = \\frac{3m}{5}$.\n\n**The Full Solution:**\nStep 1: Because $\\overline{DE}$ is parallel to $\\overline{BC}$, angle $ADE$ and angle $ABC$ are corresponding angles and are congruent, and the two triangles share angle $A$. By angle-angle similarity, triangle $ADE$ is similar to triangle $ABC$, with $D$ corresponding to $B$ and $E$ to $C$.\nStep 2: In similar triangles the ratio of any pair of corresponding sides is the same. The side $AD$ corresponds to the whole side $AB$, and $AB = AD + DB = 12 + 8 = 20$ feet, so the ratio of similarity is $\\frac{AD}{AB} = \\frac{12}{20} = \\frac{3}{5}$.\nStep 3: The tie $DE$ corresponds to the base $BC$, so $\\frac{DE}{BC} = \\frac{3}{5}$ and $DE = \\frac{3}{5}m = \\frac{3m}{5}$. Check with $m = 20$: the tie would be $12$ feet, shorter than the base, as a tie above the base must be ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{2m}{5}$): uses $\\frac{DB}{AB} = \\frac{8}{20}$. The triangle cut off at the apex is scaled by the piece next to the apex, $AD$, not by the piece next to the base.\n* Choice C ($\\frac{3m}{2}$): uses $\\frac{AD}{DB} = \\frac{12}{8}$, a ratio of the two pieces of $AB$. Similarity compares a side of the small triangle to the whole matching side of the large one.\n* Choice D ($\\frac{5m}{3}$): flips the ratio to $\\frac{AB}{AD} = \\frac{20}{12}$, which would make the tie longer than the base it sits above.\n\n**Test Day Takeaway:** With a parallel cut, write the ratio as small-triangle side over the whole corresponding side — and sanity-check that a segment nearer the apex comes out shorter than the base."
+}

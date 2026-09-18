@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "inferences",
  "module": 2,
- "passage": "Standard histories of modern art have long credited the painters Wassily Kandinsky and Piet Mondrian, both active in the early 1910s, with the first wholly abstract paintings in Europe. Yet the Swedish painter Hilma af Klint, who showed her work mainly within a small spiritual circle in Stockholm rather than in the avant-garde galleries of Paris or Munich, produced large abstract canvases as early as 1906. When a major retrospective brought her work to wide attention, scholars confirmed that the early dates were supported by inscriptions and notebooks made at the same time as the paintings. It follows that the standard chronology of European abstraction ______",
+ "passage": "When key-driven calculating machines entered American offices around 1900, observers predicted the end of clerical arithmetic as an occupation. What followed was different. The machines made each calculation cheaper, and firms responded by demanding far more calculation: insurance companies and railroads ordered full audits where spot checks had once sufficed, and monthly account statements where annual ones had been the rule. Employment in calculating departments grew for decades after the machines arrived. The episode suggests that ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "should be revised to acknowledge that abstract painting in Europe began earlier than the usual 1910s account allows, even though the artist responsible worked outside the avant-garde galleries."
+   "text": "when a technology lowers the cost of a task, demand for that task can expand enough to increase employment in it rather than reduce it."
   },
   {
    "id": "B",
-   "text": "should treat any work made outside the major avant-garde galleries as the true origin of every early-twentieth-century movement."
+   "text": "predictions about new machines are unreliable because observers rarely understand how the machines actually work."
   },
   {
    "id": "C",
-   "text": "should reject inscriptions and contemporaneous notebooks as evidence for dating any abstract painting."
+   "text": "firms adopted calculating machines more slowly than the machines' capabilities would have justified."
   },
   {
    "id": "D",
-   "text": "remains accurate as currently written, since af Klint exhibited her work only within a small spiritual circle in Stockholm rather than in any of the recognized avant-garde galleries of the period."
+   "text": "clerical arithmetic remained attractive as an occupation only for workers who learned to service the machines they operated."
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The passage establishes that af Klint produced large abstract canvases as early as 1906—well before the 1910s works usually credited as the first—and that the early dates are documented by contemporaneous inscriptions and notebooks. It follows that the standard chronology should be moved earlier, even though af Klint worked outside the famous galleries, which is what Choice A concludes. Choice B overgeneralizes into a rule about all movements. Choice C rejects the very evidence the passage relies on. Choice D leaves the chronology unchanged, contradicting the documented earlier dates."
+ "explanation": "**Choice A is correct.** The passage is built as a general lesson drawn from one case: cheaper calculation led firms to demand much more of it, and employment rose instead of vanishing. A states that mechanism at the level of generality \"the episode suggests\" calls for.\n\n**The Full Solution:**\n- The causal chain in the text: machines cut the cost per calculation; firms then bought far more calculation (full audits, monthly statements); calculating employment grew for decades.\n- A generalizes exactly this chain, lower task cost, expanded task demand, higher employment, and contradicts nothing in the passage.\n\n**Why the other choices are wrong:**\n- B: The failed prediction is the passage's starting point, but the text explains what happened through demand, not through observers' ignorance of the machines' workings.\n- C: Nothing describes the pace of adoption; the machines \"entered American offices\" and the story proceeds from there.\n- D: Machine servicing is never mentioned, and employment grew across calculating departments, not merely for a technical few."
 }

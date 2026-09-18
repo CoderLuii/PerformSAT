@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "A mobile vaccination unit models the doses remaining in its cooler as $d = -kt + 480$, where $t$ is the number of hours since the clinic opened. If $300$ doses remain after $6$ hours, what is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$30$"
+  },
+  {
+   "id": "B",
+   "text": "$50$"
+  },
+  {
+   "id": "C",
+   "text": "$80$"
+  },
+  {
+   "id": "D",
+   "text": "$180$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the doses still remaining by the time, 300 / 6 = 50",
+  "C": "divides the starting number of doses by the time, 480 / 6 = 80",
+  "D": "reports the total decrease, 480 - 300 = 180, without dividing by 6 hours"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Slope-Intercept Form**\n\n**Choice A is correct.** In $d = -kt + 480$ the number $480$ is the starting count and $k$ is the number of doses used each hour, so $k$ comes from the decrease divided by the elapsed time.\n\n**The Fast Way (~20s):** The cooler lost $480 - 300 = 180$ doses in $6$ hours, so $k = 180 \\div 6 = 30$.\n\n**The Full Solution:**\nStep 1: Substitute the reading $t = 6$, $d = 300$ into the model: $300 = -k(6) + 480$.\nStep 2: Subtract $480$ from both sides: $-180 = -6k$.\nStep 3: Divide by $-6$: $k = 30$. Check: $-30(6) + 480 = -180 + 480 = 300$, the stated reading ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($50$): divides the doses still in the cooler by the time, $300 \\div 6 = 50$. The rate describes what left the cooler, not what stayed.\n* Choice C ($80$): divides the starting count by the time, $480 \\div 6 = 80$, which would be the rate only if the cooler emptied completely in $6$ hours.\n* Choice D ($180$): reports the total decrease over the $6$ hours instead of the hourly rate.\n\n**Test Day Takeaway:** In $y = mx + b$ the constant $b$ is the starting value and $m$ is the per-unit change; solve for $m$ from the change in the output, never from a single raw output value."
+}

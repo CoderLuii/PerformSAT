@@ -1,35 +1,35 @@
 {
-  "id": 733,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "The following text is from Emily Dickinson's poem \"Because I could not stop for Death,\" written around 1863.\n\nBecause I could not stop for Death –\nHe kindly stopped for me –\nThe Carriage held but just Ourselves –\nAnd Immortality.\n\nWe slowly drove – He knew no haste\nAnd I had put away\nMy labor and my leisure too,\nFor His Civility –\n\nWe passed the School, where Children strove\nAt Recess – in the Ring –\nWe passed the Fields of Gazing Grain –\nWe passed the Setting Sun –",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To portray death as an unhurried, courteous escort and dying as a calm passage past the ordinary scenes of life."
-    },
-    {
-      "id": "B",
-      "text": "To warn readers, by means of an extended example, that death always arrives entirely without warning and can never be postponed for very long."
-    },
-    {
-      "id": "C",
-      "text": "To describe in detail the speaker’s busy daily routine in the period before an unexpected and unwelcome interruption."
-    },
-    {
-      "id": "D",
-      "text": "To express the speaker’s deep fear of dying and her corresponding wish to remain among the living a while longer."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The poem personifies Death as a polite driver who \"kindly stopped\" and \"knew no haste,\" and the speaker rides past schoolchildren, fields, and the setting sun, so its purpose is to present death as a calm, courteous journey past the scenes of life. Choice B turns the poem into a warning it does not deliver, Choice C dwells on a daily routine the poem only mentions in passing (\"my labor and my leisure\"), and Choice D attributes a fear and a wish to live that the poem's serene tone contradicts.",
-  "_meta": {
-    "quoteVerify": true,
-    "source": "Emily Dickinson, \"Because I could not stop for Death\" (c. 1863), stanzas 1–3"
+ "id": 733,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "The following text is from Claude McKay's poem \"The Tropics in New York,\" published in his 1922 collection Harlem Shadows.\n\nBananas ripe and green, and ginger-root,\nCocoa in pods and alligator pears,\nAnd tangerines and mangoes and grape fruit,\nFit for the highest prize at parish fairs,\n\nSet in the window, bringing memories\nOf fruit-trees laden by low-singing rills,\nAnd dewy dawns, and mystical blue skies\nIn benediction over nun-like hills.\n\nMy eyes grew dim, and I could no more gaze;\nA wave of longing through my body swept,\nAnd, hungry for the old, familiar ways,\nI turned aside and wept.",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To convey how the sight of tropical fruit in a city window stirs the speaker's memories of home and an overwhelming sense of longing."
+  },
+  {
+   "id": "B",
+   "text": "To catalog the tropical fruits that could be purchased in New York markets in the early twentieth century."
+  },
+  {
+   "id": "C",
+   "text": "To argue that fruit grown in the tropics is superior to any fruit available in northern cities."
+  },
+  {
+   "id": "D",
+   "text": "To describe the deep contentment that the speaker feels upon unexpectedly discovering the familiar foods of home displayed in a shop window far away in a northern city."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The poem moves from the fruit in the window, to the memories it brings — laden fruit trees, dewy dawns, hills — to the speaker's overpowering response: \"a wave of longing,\" hunger \"for the old, familiar ways,\" and tears.\n\n**The Full Solution:**\n- Stanza one shows the trigger: tropical fruit \"set in the window.\"\n- Stanza two makes the mechanism explicit — the display is \"bringing memories\" of the landscape of home.\n- Stanza three delivers the emotional point the poem exists for: the speaker's eyes grow dim, longing sweeps through, and the speaker turns aside and weeps.\n\n**Why the other choices are wrong:**\n- B: The fruit list is the poem's occasion, not its purpose — the final stanza's grief has nothing to do with cataloging produce.\n- C: The fruits are \"fit for the highest prize,\" but no comparison with northern fruit is drawn or argued.\n- D: It reverses the poem's emotion — the sight brings longing sharp enough for tears, not contentment.",
+ "_meta": {
+  "quoteVerify": true,
+  "source": "Claude McKay, \"The Tropics in New York,\" Harlem Shadows (1922)"
+ }
 }

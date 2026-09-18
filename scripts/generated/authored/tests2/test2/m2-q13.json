@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "A pricing tool computes a per-unit discount of $\\frac{p^2 - 64}{p - 8}$ dollars for a supplier's list price of $p$ dollars. For how many list prices does the tool compute a discount of $\\$16$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Zero"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "distractorNotes": {
+  "B": "simplifies to p + 8 = 16 and accepts p = 8 without checking that p = 8 makes the denominator zero",
+  "C": "clears the denominator to p^2 - 16p + 64 = 0 and assumes a quadratic must have two solutions, missing the repeated root at the excluded value",
+  "D": "reads the numerator's factorization as an identity and concludes the tool returns 16 for every list price"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Rational Equation with No Solution**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** For $p \\ne 8$ the expression simplifies to $p + 8$, so a discount of $16$ requires $p + 8 = 16$, or $p = 8$ — the one price the expression forbids. No list price works.\n\n**The Full Solution:**\nStep 1: Note the restriction first: the denominator $p - 8$ cannot be zero, so $p = 8$ is not allowed.\nStep 2: Factor the numerator as a difference of squares: $p^2 - 64 = (p - 8)(p + 8)$. Cancelling $p - 8$ is legal for every allowed $p$, so $\\frac{p^2 - 64}{p - 8} = 16$ reduces to $p + 8 = 16$, giving $p = 8$.\nStep 3: The only candidate is excluded by Step 1, so no list price produces a $\\$16$ discount. Check by clearing the denominator directly: $p^2 - 64 = 16p - 128$ gives $p^2 - 16p + 64 = (p - 8)^2 = 0$, whose only root is the excluded $p = 8$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (Exactly one): cancels correctly, solves $p + 8 = 16$, and reports $p = 8$. A value that makes an original denominator zero is never a solution, no matter how clean the algebra looks.\n* Choice C (Exactly two): assumes the quadratic $p^2 - 16p + 64 = 0$ must have two roots. It is a perfect square with a single repeated root, and that root is excluded.\n* Choice D (Infinitely many): treats $\\frac{p^2 - 64}{p - 8} = p + 8$ as though it made the whole equation an identity. That identity only rewrites the left side; the right side is still the fixed number $16$.\n\n**Test Day Takeaway:** Write the excluded values before solving a rational equation; when the only candidate solution is an excluded value, the answer is no solution."
+}

@@ -5,40 +5,40 @@
   "band": 3,
   "domain": "expression-of-ideas",
   "skill": "rhetorical-synthesis",
+  "module": 1,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "Alice Ball (1892-1916) was an American chemist at the College of Hawaii.",
+      "In her era, the standard treatment for Hansen's disease (leprosy) was oil from the chaulmoogra tree.",
+      "The oil was too thick to inject, and swallowing it caused nausea so severe that many patients could not continue treatment.",
+      "In 1915 Ball developed a method for converting the oil's active compounds into a water-soluble, injectable form.",
+      "Injections prepared by her method remained the leading treatment for the disease until the 1940s."
+    ],
+    "goal": "The student wants to introduce Ball's main scientific contribution to an audience unfamiliar with her work."
+  },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Eugenie Clark founded a marine research laboratory on the Gulf coast of Florida that remains active today."
+      "text": "Alice Ball was an American chemist who worked at the College of Hawaii in the early twentieth century."
     },
     {
       "id": "B",
-      "text": "Sharks, animals that much of the public once imagined as little more than mindless killers, are now known to be capable of learning a range of simple tasks."
+      "text": "Before Ball's method existed, chaulmoogra oil was too thick to inject and so nauseating that many patients could not keep taking it."
     },
     {
       "id": "C",
-      "text": "Eugenie Clark was a marine biologist who spent much of her long career studying the behavior of sharks."
+      "text": "In 1915, a method was developed for converting the active compounds of chaulmoogra oil into a water-soluble, injectable form, and the resulting injections remained the leading treatment for Hansen's disease until the 1940s."
     },
     {
       "id": "D",
-      "text": "Eugenie Clark, a marine biologist who made hundreds of dives to observe sharks in their habitat, was among the first to show that the animals can learn simple tasks, helping overturn their image as mindless killers."
+      "text": "The American chemist Alice Ball developed a method that converted chaulmoogra oil, then the standard treatment for Hansen's disease, into an injectable form that remained the leading therapy for decades."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The goal is to introduce Clark's work to readers who do not know it, and choice D names the researcher, what she studied, how she worked, and a finding that conveys why the work mattered. Choice A gives only a single biographical fact; choice B states a conclusion about sharks without mentioning Clark at all; and choice C identifies her field but stops short of saying what she found.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Eugenie Clark was a marine biologist who studied the behavior of sharks.",
-      "Clark was among the first scientists to show that sharks can learn simple tasks rather than acting purely on instinct.",
-      "She made hundreds of dives, often studying sharks directly in their habitat.",
-      "Her popular writing helped change a public image of sharks as mindless killers.",
-      "Clark founded a marine laboratory in Florida that is still active today."
-    ],
-    "goal": "The student wants to introduce Clark's work to readers unfamiliar with it."
-  },
+  "explanation": "**Choice D is correct.** The goal demands two things at once — identify Ball for unfamiliar readers and state her main contribution — and D alone does both.\n\n**The Full Solution:**\n- Identification: \"The American chemist Alice Ball\" tells a newcomer who she was.\n- Contribution: converting the era's standard treatment into an injectable form, with its significance (\"the leading therapy for decades\").\n- One sentence, both requirements met.\n\n**Why the other choices are wrong:**\n- A: It identifies Ball but never says what she contributed.\n- B: It describes the problem her method solved without saying that she solved it or how.\n- C: It reports the achievement but strips out Ball herself, failing to introduce her to readers who do not know her.",
   "_meta": {
-    "anchor": "Eugenie Clark — shark behavior"
-  },
-  "module": 1
+    "anchor": "Alice Ball — injectable chaulmoogra treatment; introduce-contribution goal"
+  }
 }

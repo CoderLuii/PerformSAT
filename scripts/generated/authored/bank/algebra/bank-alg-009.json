@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-009",
+  "question": "The function $r$ is defined by $r(t) = 2{,}400 - 85t$, where $r(t)$ is the estimated volume of fuel, in liters, remaining in a generator's tank $t$ hours after the generator is started. Which of the following is the best interpretation of $85$ in this context?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The tank contains $85$ liters of fuel when the generator is started."
+    },
+    {
+      "id": "B",
+      "text": "The generator can run for $85$ hours before the tank is empty."
+    },
+    {
+      "id": "C",
+      "text": "After $85$ hours, $2{,}400$ liters of fuel remain in the tank."
+    },
+    {
+      "id": "D",
+      "text": "The generator uses $85$ liters of fuel each hour."
+    }
+  ],
+  "distractorNotes": {
+    "A": "confuses the slope with the initial value 2,400",
+    "B": "treats the slope as the time until the output is zero",
+    "C": "swaps the roles of input and output"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** In $r(t) = 2{,}400 - 85t$, the coefficient of $t$ is the rate of change: each hour, $85$ liters are subtracted from the remaining volume.\n\n**The Full Solution:**\nStep 1: The function has the linear form $r(t) = b + mt$ with $b = 2{,}400$ and $m = -85$. The constant term is the value at $t = 0$, the starting volume.\nStep 2: The slope $m = -85$ is the change in $r(t)$ for each one-unit increase in $t$: the remaining fuel decreases by $85$ liters per hour, meaning the generator uses $85$ liters each hour.\nStep 3: Check: $r(1) = 2{,}400 - 85 = 2{,}315$ and $r(2) = 2{,}230$, a drop of $85$ liters for each additional hour. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: describes the $y$-intercept, but the starting volume is $2{,}400$ liters, not $85$.\n* Choice B: the running time until the tank is empty is the $t$-intercept, $\\frac{2{,}400}{85} \\approx 28$ hours, not $85$.\n* Choice C: substituting $t = 85$ gives $r(85) = 2{,}400 - 85(85)$, which is negative, so this statement is false and confuses the input with the output.\n\n**Test Day Takeaway:** In $y = b + mx$, the number multiplying the variable is always the change in the output per one unit of the input, with its sign telling the direction."
+}

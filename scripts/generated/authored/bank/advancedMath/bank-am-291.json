@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-291",
+  "question": "The function $f$ is defined by $f(x) = x^2 + 10x + 18$. Which of the following equivalent forms of $f(x)$ displays the minimum value of $f$ as a constant?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(x + 5)^2 - 7$"
+    },
+    {
+      "id": "B",
+      "text": "$(x + 5)^2 + 7$"
+    },
+    {
+      "id": "C",
+      "text": "$(x + 5)^2 + 18$"
+    },
+    {
+      "id": "D",
+      "text": "$(x + 10)^2 - 82$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "adds the leftover $7$ instead of subtracting it",
+    "C": "keeps the original constant and never subtracts the $25$",
+    "D": "uses $b$ instead of $\\dfrac{b}{2}$ inside the square"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Completing the Square**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Half of $10$ is $5$, and $(x + 5)^2 = x^2 + 10x + 25$, which is $7$ too big — so $f(x) = (x + 5)^2 - 7$.\n\n**The Full Solution:**\nStep 1: To complete the square on $x^2 + 10x$, take half the coefficient of $x$: $\\dfrac{10}{2} = 5$, and note $(x + 5)^2 = x^2 + 10x + 25$.\nStep 2: Rewrite: $f(x) = (x^2 + 10x + 25) - 25 + 18 = (x + 5)^2 - 7$.\nStep 3: Since $(x + 5)^2 \\ge 0$, the smallest value of $f$ is $-7$, displayed as the constant. Check: $f(-5) = 25 - 50 + 18 = -7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($(x + 5)^2 + 7$): expanding gives $x^2 + 10x + 32$; the $25$ must be SUBTRACTED after it is added.\n* Choice C ($(x + 5)^2 + 18$): the original constant was carried along untouched, giving $x^2 + 10x + 43$.\n* Choice D ($(x + 10)^2 - 82$): this squares $b$ itself instead of $\\dfrac{b}{2}$, giving $x^2 + 20x + 18$.\n\n**Test Day Takeaway:** Halve the $x$-coefficient, square it, add and subtract it. Expanding your answer takes five seconds and catches every version of this slip."
+}

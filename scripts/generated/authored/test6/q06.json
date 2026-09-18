@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
-  "passage": "A true fresco is painted onto plaster while the plaster is still damp, so that the pigments bind chemically as the wall dries; once the plaster has set, no further change can be made unless the artist switches to paint laid over the dry surface. A conservator examining a damaged wall can therefore tell the original fresco from later retouching by studying whether the pigment sits within the plaster or merely on top of it. The distinction matters in practice, because the two layers age differently and call for different treatments.",
+  "passage": "Reefs built by glass sponges — animals whose lattice skeletons are spun from silica — were known from fossil beds across a belt of Jurassic seafloor, and paleontologists long assumed that the reef-building forms had died out ages ago. In 1987, surveyors mapping the seafloor off British Columbia found towering mounds of living glass sponges, some twenty meters high and thousands of years old. Research teams have since documented how the reefs grow, with each generation of sponges settling on the silica scaffolds of its predecessors, and have begun assessing how vulnerable the structures are to trawling and to changes in ocean chemistry.",
   "question": "Which choice best states the main purpose of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "To explain a physical difference between fresco and later retouching that bears on how a damaged wall is conserved."
+      "text": "To describe how a type of reef believed extinct was found thriving and how researchers have studied it since"
     },
     {
       "id": "B",
-      "text": "To argue that frescoes are more durable than any painting made on a dry plaster surface and so need less conservation."
+      "text": "To explain the chemical process by which glass sponges extract silica from seawater"
     },
     {
       "id": "C",
-      "text": "To describe the full range of pigments available to painters who worked in fresco."
+      "text": "To argue that trawling poses the greatest threat to the seafloor off British Columbia"
     },
     {
       "id": "D",
-      "text": "To trace the history of fresco painting from its origins to the present day."
+      "text": "To compare the reef-building habits of living glass sponges with the habits of the Jurassic species that preceded them"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage explains how pigment binds into damp plaster, then uses that fact to show how a conservator can distinguish original fresco from later retouching, closing with why the distinction matters for treatment. That arc is explanatory and practical, which choice A captures. The text never claims frescoes outlast other paintings, never surveys the available pigments, and offers no history of the technique, so the other choices describe purposes the passage does not pursue."
+  "explanation": "**Choice A is correct.** The text moves from the assumption that glass sponge reefs were extinct, to the 1987 discovery of living ones, to the research that followed — a discovery-and-aftermath account, which is exactly what choice A states.\n\n**The Full Solution:**\n- Sentence one sets up the old belief: reef-building glass sponges were known only as fossils.\n- Sentence two overturns it with the discovery of living, twenty-meter reefs.\n- Sentence three surveys the ensuing research on how the reefs grow and what threatens them, completing the arc choice A describes.\n\n**Why the other choices are wrong:**\n- B: The extraction of silica from seawater is never explained; silica appears only in describing the skeletons.\n- C: Trawling is mentioned once as a threat under assessment, not ranked as the greatest, and no argument is mounted.\n- D: The Jurassic forms appear only to establish the extinction assumption; no comparison of habits is drawn."
 }

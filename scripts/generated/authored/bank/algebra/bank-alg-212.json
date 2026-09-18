@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-212",
+ "question": "A car-loan balance, in thousands of dollars, after $x$ months of payments is given by $g(x) = -\\frac{3}{4}x + 17$. After how many months does the balance reach $5$ thousand dollars?",
+ "correctAnswer": "16",
+ "explanation": "**SAT Pattern: Reading Slope-Intercept Form**\n\n**The correct answer is $16$.**\n\n**The Fast Way (~25s):** Solving $-\\frac{3}{4}x + 17 = 5$ gives $\\frac{3}{4}x = 12$, so $x = 16$.\n\n**The Full Solution:**\nStep 1: Set the balance equal to $5$: $-\\frac{3}{4}x + 17 = 5$.\nStep 2: Subtracting $17$ from both sides gives $-\\frac{3}{4}x = -12$.\nStep 3: Multiplying both sides by $-\\frac{4}{3}$ gives $x = 16$ months. Check: $-\\frac{3}{4}(16) + 17 = -12 + 17 = 5$.\n\n**Common Mistakes:**\n* Using $+\\frac{3}{4}$ gives $x = -16$, a negative number of months.\n* Adding $17$ instead of subtracting gives $\\frac{3}{4}x = 22$ and $x \\approx 29.3$.\n* Reporting $5$ repeats the balance instead of the number of months.\n\n**Test Day Takeaway:** When a linear model is set equal to an output, the unknown is the input; isolate it rather than reading a coefficient."
+}

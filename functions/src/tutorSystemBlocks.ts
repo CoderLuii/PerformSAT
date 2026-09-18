@@ -27,12 +27,22 @@ export interface SystemBlockInput {
 export interface AnthropicSystemBlock {
   type: "text";
   text: string;
-  cache_control?: {type: "ephemeral"};
+  cache_control?: {type: "ephemeral"; ttl: "1h"};
 }
 
 /** Protocol limits — kept as named constants so the tests can pin them. */
 export const MAX_SYSTEM_BLOCKS = 4;
 export const MAX_CACHED_BLOCKS = 2;
+
+/**
+ * Cache TTL for the tutor's cacheable prefix blocks. The ~10k-token stable
+ * persona prefix rides on EVERY message, and students routinely pause longer
+ * than the default 5-minute cache while working a problem — so most messages
+ * re-paid the full prefix write (1.25x input price). At 1h the write costs 2x
+ * but every reuse in the hour reads at 0.1x: break-even vs 5m is 2 messages
+ * per hour per session, below any real chat cadence.
+ */
+export const TUTOR_CACHE_TTL = "1h" as const;
 
 /**
  * Validate + sanitize a client-supplied `systemBlocks` value. Accepts an array
@@ -113,7 +123,11 @@ export function withOperatingConstraint(
 ): AnthropicSystemBlock[] {
   const blocks: AnthropicSystemBlock[] = typeof system === "string" ?
     (system ?
-      [{type: "text", text: system, cache_control: {type: "ephemeral"}}] :
+      [{
+        type: "text",
+        text: system,
+        cache_control: {type: "ephemeral", ttl: TUTOR_CACHE_TTL},
+      }] :
       []) :
     [...system];
   blocks.push({type: "text", text: TUTOR_OPERATING_CONSTRAINT});
@@ -133,7 +147,9 @@ export function toAnthropicSystem(
 ): AnthropicSystemBlock[] {
   return blocks.map((block) => {
     const out: AnthropicSystemBlock = {type: "text", text: block.text};
-    if (block.cache === true) out.cache_control = {type: "ephemeral"};
+    if (block.cache === true) {
+      out.cache_control = {type: "ephemeral", ttl: TUTOR_CACHE_TTL};
+    }
     return out;
   });
 }

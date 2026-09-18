@@ -9,34 +9,33 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "Zora Neale Hurston (1891-1960) trained as an anthropologist at Barnard College and worked as a field researcher for the historian Carter G. Woodson.",
-      "Hurston conducted ethnographic fieldwork on African American expressive culture in the rural U.S. South and the Caribbean.",
-      "In *Mules and Men* (1935), Hurston compiled folktales, songs, and accounts of conjure practices that she had collected during this fieldwork.",
-      "Hurston argued that these materials are coherent intellectual traditions rather than scattered survivals of an earlier folk culture.",
-      "*Mules and Men* preserves the speech, settings, and exchanges among tellers in which each item was performed.",
-      "Hurston held that the meaning of these materials is best preserved when reported with the conditions and rhetoric of their telling."
+      "Between 1405 and 1433, the Ming dynasty admiral Zheng He led seven state-sponsored voyages from China across the Indian Ocean.",
+      "The fleets visited ports in Southeast Asia, India, Arabia, and East Africa.",
+      "The largest expeditions included more than 200 vessels and over 27,000 crew members.",
+      "Zheng He's biggest \"treasure ships\" were several times the size of the ships Columbus would sail six decades later.",
+      "After 1433, the Ming court ended the expeditions and redirected resources to defending its northern land frontier."
     ],
-    "goal": "The student wants to describe one specific feature of Hurston's method in *Mules and Men*."
+    "goal": "The student wants to emphasize the scale of Zheng He's expeditions by contrasting them with later European voyages."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Hurston argued that folktales, songs, and conjure accounts are best understood when recorded together with the settings and speech in which they were performed."
+      "text": "The scale of Zheng He's fleets — more than 200 vessels and over 27,000 crew at their height — dwarfed later European efforts: his biggest treasure ships were several times the size of the ships Columbus would sail six decades later."
     },
     {
       "id": "B",
-      "text": "Zora Neale Hurston trained as an anthropologist at Barnard College and worked as a field researcher for the historian Carter G. Woodson."
+      "text": "Between 1405 and 1433, Zheng He led seven state-sponsored voyages that visited ports in Southeast Asia, India, Arabia, and East Africa."
     },
     {
       "id": "C",
-      "text": "In Mules and Men (1935), Hurston compiled folktales, songs, and accounts of conjure practices collected during fieldwork in the rural U.S. South and the Caribbean."
+      "text": "After 1433, the Ming court ended Zheng He's expeditions and redirected its resources toward defending the northern land frontier, closing out nearly three decades of state-sponsored voyaging across the whole breadth of the Indian Ocean."
     },
     {
       "id": "D",
-      "text": "Hurston maintained that the meaning of folk material is destroyed whenever a collector strips away the performance and reports only the bare text, treating such material as scattered survivals rather than as a coherent tradition."
+      "text": "Zheng He's treasure ships, though impressively large for their era, completed their final voyage six decades before Columbus first set sail."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The goal is to convey Hurston's central methodological claim—how folk material should be recorded—and A states it cleanly: such material is best understood when reported with the settings and speech of its performance. Choice B offers biography and omits the claim. Choice C describes what Mules and Men contains but not the principle behind it. Choice D moves past Hurston's stated view into a stronger, more sweeping assertion (that meaning is \"destroyed\") and folds in a separate point, so it overstates rather than accurately presents the claim."
+  "explanation": "**Choice A is correct.** The goal demands two things at once — convey scale and draw the European contrast — and A does both: the fleet figures establish the scale, and the Columbus comparison supplies the contrast.\n\n**The Full Solution:**\n- Scale: A cites the notes' most forceful numbers, more than 200 vessels and over 27,000 crew.\n- Contrast: A sets Zheng He's treasure ships directly against Columbus's ships — \"several times the size,\" six decades earlier — which is precisely the later-European-voyages comparison the goal requires.\n\n**Why the other choices are wrong:**\n- B: It gives dates and destinations but no measure of scale and no European comparison — both halves of the goal go unmet.\n- C: It emphasizes the expeditions' ending and the court's priorities; the goal is about how big the voyages were, not how they concluded.\n- D: It reduces the comparison to timing alone — which voyage came first — and its concessive \"though impressively large\" mutes the very scale the student wants to stress."
 }

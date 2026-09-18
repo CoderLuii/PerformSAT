@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 1,
-  "passage": "Anthropologist Ruth Benedict, who taught at Columbia University, advanced an influential argument in her 1934 book Patterns of Culture. Surveying the immense range of behaviors observed across human societies — from competitive feasting to communal childrearing — Benedict contended that no culture adopts every available practice. Instead, each one ______ a coherent configuration of customs, values, and emotional styles, and an individual's personality becomes intelligible only when set against that patterned whole.",
+  "passage": "Small raindrops are nearly perfect spheres: surface tension pulls the water into the shape with the least possible surface area. As drops grow larger, however, the pressure of the air they fall through begins to ______ that tidy geometry — the bottom of each drop flattens while the top stays rounded, producing a shape closer to a hamburger bun than to the teardrop of popular illustration.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "selects"
+      "text": "distort"
     },
     {
       "id": "B",
-      "text": "borrows"
+      "text": "restore"
     },
     {
       "id": "C",
-      "text": "rejects"
+      "text": "imitate"
     },
     {
       "id": "D",
-      "text": "compiles"
+      "text": "measure"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"selects.\" The sentence immediately before the blank tells the reader exactly what the verb has to mean: \"no culture adopts every available practice.\" The contrastive \"Instead\" then sets up the missing verb, which has to describe what each culture does with the \"immense range of behaviors observed across human societies.\" If a culture cannot take all of them, what it does is pick some out of that range — and the result it ends up with is \"a coherent configuration\" of customs, values, and styles. \"Selects\" captures precisely that act of choosing certain practices from a larger pool of human possibilities, which is exactly Benedict's claim in Patterns of Culture: each culture is the patterned outcome of a process of choosing from the universal range of human behavior.\n\nChoice D is incorrect. \"compiles\" collocates naturally with \"range of behaviors\" (one might compile a range, a list, an inventory), so the word feels topical inside an anthropology passage. But to compile is to gather material together into one collection, not to choose some items out of a larger set. The sentence rules that reading out: it says no culture adopts every available practice, so the verb has to mean choosing among, not assembling all. \"Compiles\" picks up the surface vocabulary of cataloguing behaviors while missing the precise meaning the contrast demands. Choice B is incorrect. \"borrows\" is in the general neighborhood of taking up a practice, but its scope is wrong. To borrow implies acquiring something from an external source — another culture, a neighbor, a foreign tradition — and giving the implication that the practice originated elsewhere. Benedict's argument is not about cultural lending between societies; it is about each culture's internal choice from the same universal range of human possibilities. The verb has the right general direction (taking up something) but the wrong source and the wrong specificity for what the passage is describing. Choice C is incorrect. \"rejects\" reverses the action the sentence requires. The blank has to name what each culture does in producing \"a coherent configuration of customs, values, and emotional styles\" — the practices that end up inside the culture, not the ones excluded from it. To say each culture rejects a coherent configuration would mean it casts that configuration off, the opposite of forming it. The word fits the broader theme of choosing among practices but points the verb in the wrong direction along that axis."
+  "explanation": "**Choice A is correct.** The text describes air pressure pushing a sphere out of shape — flattened bottom, rounded top — and \"distort\" means precisely to twist something out of its proper form.\n\n**The Full Solution:**\n- The first sentence establishes the starting shape: a near-perfect sphere, the \"tidy geometry\" the blank refers back to.\n- The clause after the dash spells out what air pressure does to that shape: it flattens the bottom while leaving the top rounded, changing the sphere into something bun-shaped.\n- A verb meaning to deform or push out of shape is required, and \"distort\" supplies exactly that meaning.\n\n**Why the other choices are wrong:**\n- B: \"restore\" reverses the direction of change — air pressure is destroying the spherical shape, not bringing it back.\n- C: \"imitate\" would mean the air pressure copies the geometry, but the text describes the shape being altered, not reproduced.\n- D: \"measure\" belongs to the vocabulary of observation; the sentence describes a physical force acting on the drop, not anyone quantifying it."
 }

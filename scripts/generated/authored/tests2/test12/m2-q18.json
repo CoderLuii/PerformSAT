@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "A technician counts $180$ cells in a laboratory culture at hour $0$ and $1{,}440$ cells at hour $9$ of the same experiment. If the cell count is modeled by an exponential function of the number of hours since hour $0$, how many cells are present at hour $6$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$360$"
+  },
+  {
+   "id": "B",
+   "text": "$720$"
+  },
+  {
+   "id": "C",
+   "text": "$810$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}020$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "applies the 3-hour doubling factor only once instead of twice",
+  "C": "averages the two counts, (180 + 1,440)/2, as if the count rose by equal amounts and hour 6 were the halfway point",
+  "D": "interpolates linearly: 180 + (2/3)(1,440 - 180)"
+ },
+ "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice B is correct.** The count multiplies by $\\frac{1440}{180} = 8$ over $9$ hours, so it doubles every $3$ hours; at hour $6$ it has doubled twice, giving $180(4) = 720$ cells.\n\n**The Fast Way (~40s):** $8 = 2^3$, so the culture doubles every $3$ hours. Hour $6$ is two doublings after hour $0$: $180 \\to 360 \\to 720$.\n\n**The Full Solution:**\nStep 1: Find the total growth factor: $\\frac{1{,}440}{180} = 8$ over the $9$-hour span.\nStep 2: Split that span into three equal $3$-hour blocks. If the per-block factor is $b$, then $b^3 = 8$, so $b = 2$.\nStep 3: Hour $6$ is two blocks after hour $0$: $180 \\cdot 2^2 = 180(4) = 720$ cells. Check the model forward: $720 \\cdot 2 = 1{,}440$ at hour $9$, which matches the technician's second count. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($360$): doubles once and stops, as if hour $6$ were one block after hour $0$ rather than two.\n* Choice C ($810$): the plain average of the two counts. Averaging the endpoints ignores the compounding and also ignores that hour $6$ is two-thirds of the way through the span, not halfway.\n* Choice D ($1{,}020$): interpolates in a straight line, adding two-thirds of the total increase; that treats the growth as linear, which the constant multiplier rules out.\n\n**Test Day Takeaway:** Turn the total factor into a per-period factor with a root, not a division. Here $8$ over three blocks means $\\sqrt[3]{8} = 2$ per block."
+}

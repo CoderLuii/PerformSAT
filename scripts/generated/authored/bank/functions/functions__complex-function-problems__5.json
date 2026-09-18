@@ -1,0 +1,29 @@
+{
+ "question": "A bacterial colony's population, in thousands of cells, is $f(x)$ after $x$ hours in an incubator, where $f(x + 1) = 2f(x)$ for every $x$ and $f(3) = 5$. Which expression is equal to $f(6)$?",
+ "hint": "Count how many single steps separate $x = 3$ from $x = 6$.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5(2)^{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$5(2)^{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$5(3)^{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$5(2)^{6}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "counts two steps from x = 3 to x = 6 instead of three",
+  "C": "uses the step count as the base and the base as the exponent",
+  "D": "uses the input 6 as the number of doublings"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** Going from $x = 3$ to $x = 6$ takes three doublings, so $f(6) = 5(2)^{3}$.\n\n**The Full Solution:**\nStep 1: The rule doubles the value each time the input rises by $1$.\nStep 2: From $3$ to $6$ the input rises by $1$ three times, so the value doubles three times.\nStep 3: Therefore $f(6) = 5 \\cdot 2 \\cdot 2 \\cdot 2 = 5(2)^{3}$. Check step by step: $f(4) = 10$, $f(5) = 20$, $f(6) = 40$, and $5(2)^3 = 40$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5(2)^{2}$): counts only two doublings, which lands on $f(5) = 20$.\n* Choice C ($5(3)^{2}$): swaps the roles of the doubling factor and the step count.\n* Choice D ($5(2)^{6}$): uses the input $6$ as the number of doublings, ignoring that the count starts at $x = 3$.\n\n**Test Day Takeaway:** A recursive rule multiplies once per step, so count the steps between inputs, not the inputs themselves."
+}

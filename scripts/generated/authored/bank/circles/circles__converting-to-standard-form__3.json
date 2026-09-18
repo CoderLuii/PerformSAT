@@ -1,0 +1,45 @@
+{
+ "question": "The table gives equations for two circular grazing plots in the $xy$-plane. How far apart are the centers of plot $P$ and plot $Q$?",
+ "questionTable": {
+  "headers": [
+   "Plot",
+   "Equation"
+  ],
+  "rows": [
+   [
+    "$P$",
+    "$x^2 + y^2 - 12x + 4y + 15 = 0$"
+   ],
+   [
+    "$Q$",
+    "$x^2 + y^2 + 4x - 8y + 11 = 0$"
+   ]
+  ]
+ },
+ "hint": "Only the centers matter here, not the sizes of the plots.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports only the vertical separation, 6",
+  "B": "reports only the horizontal separation, 8",
+  "D": "adds 8 + 6 instead of using the Pythagorean theorem"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~35s):** The centers are $(6, -2)$ and $(-2, 4)$, and the $8$-$6$-$10$ right triangle gives a distance of $10$.\n\n**The Full Solution:**\nStep 1: For plot $P$, half of $-12$ is $-6$ and half of $4$ is $2$, so its center is $(6, -2)$.\nStep 2: For plot $Q$, half of $4$ is $2$ and half of $-8$ is $-4$, so its center is $(-2, 4)$.\nStep 3: The separations are $6 - (-2) = 8$ and $-2 - 4 = -6$, so the distance is $\\sqrt{8^2 + 6^2} = \\sqrt{100} = 10$. Check: $64 + 36 = 100$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): reports only the vertical separation of the centers.\n* Choice B ($8$): reports only the horizontal separation.\n* Choice D ($14$): adds the two separations, $8 + 6$, instead of combining them with the Pythagorean theorem.\n\n**Test Day Takeaway:** The center of $x^2 + y^2 + Dx + Ey + F = 0$ is $\\left(-\\dfrac{D}{2}, -\\dfrac{E}{2}\\right)$ — no completing the square is needed just to locate it."
+}

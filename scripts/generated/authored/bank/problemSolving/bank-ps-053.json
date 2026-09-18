@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-053",
+  "question": "A printing press uses ink at a constant rate of $0.35$ ounces per minute. If $1$ ounce is approximately equal to $29.6$ milliliters, approximately how many liters of ink does the press use during an $8$-hour shift?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.62$"
+    },
+    {
+      "id": "B",
+      "text": "$4.97$"
+    },
+    {
+      "id": "C",
+      "text": "$49.7$"
+    },
+    {
+      "id": "D",
+      "text": "$4{,}973$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "computes the amount for $1$ hour ($0.35 \\times 60 \\times 29.6 \\div 1{,}000$) and forgets the $8$ hours.",
+    "C": "divides the milliliters by $100$ instead of $1{,}000$ when converting to liters.",
+    "D": "stops at milliliters and never converts to liters."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Chained Rate Conversion**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The shift uses $0.35 \\times 60 \\times 8 = 168$ ounces, which is $168 \\times 29.6 = 4{,}972.8$ milliliters. Dividing by $1{,}000$ gives about $4.97$ liters.\n\n**The Full Solution:**\nStep 1: Convert the time: $8$ hours $\\times 60 = 480$ minutes. Ounces used: $0.35 \\times 480 = 168$ ounces.\nStep 2: Convert to milliliters: $168 \\times 29.6 = 4{,}972.8$ milliliters.\nStep 3: Convert to liters: $\\frac{4{,}972.8}{1{,}000} = 4.9728 \\approx 4.97$ liters. Check the chain as one product: $0.35 \\times 480 \\times \\frac{29.6}{1{,}000} \\approx 4.97$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.62$): computes the amount for $1$ hour ($0.35 \\times 60 \\times 29.6 \\div 1{,}000$) and forgets the $8$ hours.\n* Choice C ($49.7$): divides the milliliters by $100$ instead of $1{,}000$ when converting to liters.\n* Choice D ($4{,}973$): stops at milliliters and never converts to liters.\n\n**Test Day Takeaway:** Chain the factors so every unit cancels except the one requested: minutes $\\to$ hours, ounces $\\to$ milliliters $\\to$ liters. Write the units and cross them off."
+}

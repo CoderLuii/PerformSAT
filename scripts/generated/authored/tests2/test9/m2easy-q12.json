@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A cylindrical laboratory incubator drum has radius $r$ centimeters and height $30$ centimeters. A second drum of the same height has a radius $50\\%$ greater. Which expression gives how many more cubic centimeters the second drum holds?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7.5\\pi r^2$"
+  },
+  {
+   "id": "B",
+   "text": "$15\\pi r^2$"
+  },
+  {
+   "id": "C",
+   "text": "$30\\pi r^2$"
+  },
+  {
+   "id": "D",
+   "text": "$37.5\\pi r^2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "squares only the increase: 30(0.5)^2 = 7.5",
+  "B": "scales the volume by 1.5 instead of 1.5^2: 45 - 30 = 15",
+  "C": "gives the original drum's volume, 30 pi r^2, instead of the increase"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice D is correct.** Volume is $\\pi r^2 h$, so multiplying the radius by $1.5$ multiplies the volume by $1.5^2 = 2.25$, and the question asks for the difference between the two volumes.\n\n**The Fast Way (~30s):** $1.5^2 = 2.25$, so the second drum holds $2.25$ times as much; the extra is $1.25 \\times 30\\pi r^2 = 37.5\\pi r^2$.\n\n**The Full Solution:**\nStep 1: The first drum's volume is $V_1 = \\pi r^2 (30) = 30\\pi r^2$.\nStep 2: The second drum has radius $1.5r$ and the same height, so $V_2 = \\pi (1.5r)^2 (30) = \\pi (2.25 r^2)(30) = 67.5\\pi r^2$.\nStep 3: The increase is $V_2 - V_1 = 67.5\\pi r^2 - 30\\pi r^2 = 37.5\\pi r^2$. Check with $r = 2$: $V_1 = 120\\pi$ and $V_2 = \\pi(3)^2(30) = 270\\pi$, a difference of $150\\pi$, and $37.5\\pi(2)^2 = 150\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7.5\\pi r^2$): squares the $50\\%$ by itself, $30(0.5)^2 = 7.5$, instead of squaring the whole factor $1.5$.\n* Choice B ($15\\pi r^2$): scales the volume by $1.5$ rather than by $1.5^2$, giving $45\\pi r^2 - 30\\pi r^2 = 15\\pi r^2$. The radius is squared in the volume formula, so a $50\\%$ radius increase is more than a $50\\%$ volume increase.\n* Choice C ($30\\pi r^2$): reports the original drum's volume instead of the extra capacity the redesign adds.\n\n**Test Day Takeaway:** Scaling a radius by $c$ scales a cylinder's volume by $c^2$, not by $c$ — and when a question asks \"how much more,\" the final step is always a subtraction."
+}

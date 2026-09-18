@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
- "question": "According to the text, what difference between the two wards did Semmelweis identify?",
+ "type": "multiple-choice",
+ "passage": "When the Framingham Heart Study began in 1948, heart disease was the leading cause of death in the United States, yet physicians could say little about why some people developed it and others did not. The study's designers enrolled more than five thousand residents of one Massachusetts town and examined them every two years, recording blood pressure, cholesterol, smoking habits, and weight — and then waited to see who fell ill. Over the following decades, the accumulating records let researchers identify what they called risk factors: measurable traits that predict a person's chances of developing disease, a concept that now organizes preventive medicine well beyond cardiology.",
+ "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "The doctors' ward admitted noticeably more patients each week than the midwives' ward did."
+   "text": "The Framingham study succeeded because the residents of a single Massachusetts town happened to be unusually representative of the American population as a whole."
   },
   {
    "id": "B",
-   "text": "The doctors often came to deliveries directly from dissecting cadavers, whereas the midwives did not."
+   "text": "By tracking thousands of participants over decades, the Framingham study established the concept of risk factors on which preventive medicine still relies."
   },
   {
    "id": "C",
-   "text": "The midwives had been trained in the new germ theory of disease, but the doctors had not."
+   "text": "Physicians in 1948 already suspected that blood pressure, cholesterol, smoking, and weight caused heart disease and designed the Framingham study primarily to confirm those suspicions."
   },
   {
    "id": "D",
-   "text": "The chlorine solution used in the doctors' ward was more concentrated than the midwives' solution."
+   "text": "The Framingham study demonstrated that heart disease could be cured if its warning signs were detected early enough in a patient's life."
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B. The passage says Semmelweis compared the two wards and found \"one striking difference\": the doctors often arrived at deliveries straight from dissecting cadavers, while the midwives did not. B states that difference directly. C contradicts the passage, which notes that the germ theory of disease \"lay decades in the future,\" so no one had been trained in it. D misreads the chlorine detail — Semmelweis ordered the doctors to wash in chlorine as a remedy; the midwives are not said to have used any such solution. A introduces a difference in patient volume that the passage never mentions.",
+ "explanation": "**Choice B is correct.** The text moves from ignorance (no one knew why some people developed heart disease) through method (thousands of residents, examined for decades) to legacy (the risk-factor concept that now organizes preventive medicine) — the exact arc B compresses.\n\n**The Full Solution:**\n- The first sentence establishes the problem the study confronted; the second describes its long-haul design.\n- The final sentence names the study's lasting contribution and generalizes it beyond cardiology, which is what makes B's \"still relies\" the right emphasis for the main idea.\n\n**Why the other choices are wrong:**\n- A: The text never claims the town was representative, let alone credits the study's success to that.\n- C: It reverses the setup — the text says physicians \"could say little\" about causes in 1948; the measured traits emerged as predictors from the data, not as prior suspicions being confirmed.\n- D: The study produced prediction, not cure; \"risk factors\" forecast disease, and the text says nothing about curing it.",
  "_meta": {
-  "anchor": "Ignaz Semmelweis — childbed fever; Vienna wards; chlorine handwashing (1840s)"
- },
- "passage": "In the 1840s, the physician Ignaz Semmelweis noticed that women who gave birth in a Vienna hospital ward staffed by doctors died of childbed fever far more often than those in a ward staffed by midwives. Comparing the wards, he found one striking difference: the doctors often came to deliveries directly from dissecting cadavers, while the midwives did not. Semmelweis ordered the doctors to wash their hands in a chlorine solution before examinations, and the death rate in their ward fell sharply. He could not explain why the chlorine worked — the germ theory of disease lay decades in the future — but the numbers were unambiguous.",
- "type": "multiple-choice"
+  "anchor": "Framingham Heart Study — origin of the risk-factor concept"
+ }
 }

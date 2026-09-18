@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-067",
+ "question": "On a subdivision plat, one parcel boundary is written twice, first as $4x - 10y = 26$ and then as $6x - 15y = k$, and the two written forms graph as a single line in the $xy$-plane. What is the value of the constant $k$?",
+ "correctAnswer": "39",
+ "explanation": "**SAT Pattern: Find Constant for Identical Equations**\n\n**The correct answer is $39$.**\n\n**The Fast Way (~25s):** The second form is $\\frac{3}{2}$ times the first, so $k = \\frac{3}{2}(26) = 39$.\n\n**The Full Solution:**\nStep 1: Two equations graph as the same line only when one is a nonzero multiple of the other.\nStep 2: Compare the $x$-terms: $\\frac{6}{4} = \\frac{3}{2}$, and the $y$-terms agree with that factor since $\\frac{-15}{-10} = \\frac{3}{2}$.\nStep 3: So the constants must share the factor too: $k = \\frac{3}{2}(26) = 39$. Check: $\\frac{3}{2}(4x - 10y = 26)$ gives $6x - 15y = 39$ ✓\n\n**Common Mistakes:** Answering $26$ copies the first constant without scaling; answering $52$ doubles instead of using $\\frac{3}{2}$; answering $17\\frac{1}{3}$ applies the factor upside down, computing $\\frac{2}{3}(26)$.\n\n**Test Day Takeaway:** Confirm the scale factor on two coefficient pairs before using it on the constant — one pair alone can match by accident."
+}

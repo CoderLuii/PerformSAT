@@ -1,0 +1,6 @@
+{
+  "id": "bank-geo-156",
+  "question": "An autoclave door carries a square inspection window framed by a rubber gasket that runs $72$ centimeters around the window's edge. What is the area, in square centimeters, of the window?",
+  "correctAnswer": "324",
+  "explanation": "**SAT Pattern: Square Perimeter**\n\n**The correct answer is $324$.**\n\n**The Fast Way (~15s):** $\\frac{72}{4}=18$ centimeters per side, so the area is $18^2=324$ square centimeters.\n\n**The Full Solution:**\n\nStep 1 — The gasket traces the perimeter, so $4s=72$ where $s$ is the side length.\n\nStep 2 — Solve: $s=\\frac{72}{4}=18$ centimeters.\n\nStep 3 — Square it: $A=s^2=18^2=324$ square centimeters. Check: an $18$-centimeter square has perimeter $4(18)=72$, matching the gasket.\n\n**Common Mistakes:** Answering $18$ stops at the side length. Answering $5{,}184$ squares the perimeter instead of the side, $72^2$. Halving the perimeter instead of quartering it gives a side of $36$ and an area of $36^2=1{,}296$.\n\n**Test Day Takeaway:** Perimeter divides by $4$ to give a side; only a side gets squared for area."
+}

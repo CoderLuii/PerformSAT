@@ -1,0 +1,52 @@
+{
+ "question": "A lab plots the mass, in grams, of crystals recovered from two batches against elapsed minutes, and both plots are straight lines. Which ordered pair gives the time and the mass at which the two batches have recovered equal amounts?",
+ "diagram": {
+  "type": "twoLineGraph",
+  "params": {
+   "intersection": {
+    "x": 4,
+    "y": 10
+   },
+   "slope1": 0.5,
+   "slope2": 1.5,
+   "xRange": [
+    -2,
+    10
+   ],
+   "yRange": [
+    -2,
+    16
+   ],
+   "showIntersection": false,
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(2,7)$"
+  },
+  {
+   "id": "B",
+   "text": "$(4,10)$"
+  },
+  {
+   "id": "C",
+   "text": "$(8,12)$"
+  },
+  {
+   "id": "D",
+   "text": "$(10,4)$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "names a point on the steeper line only, not a point both lines share",
+  "C": "names a point on the shallower line only, not a point both lines share",
+  "D": "reverses the coordinates of the crossing point"
+ },
+ "explanation": "**SAT Pattern: Intersection as Solution**\n\n**Choice B is correct.** The two lines cross at $(4,10)$, the only time at which both batches have recovered the same mass.\n\n**The Fast Way (~20s):** Equal masses means the same point on both graphs, which is the crossing point $(4,10)$.\n\n**The Full Solution:**\n\nStep 1: A point on a line gives a time and the mass recovered by that batch at that time. A time when the masses are equal must therefore lie on both lines.\n\nStep 2: The graphs cross once, at $4$ minutes and $10$ grams.\n\nStep 3: Check both readings at $x=4$: the shallower line rises $1$ gram every $2$ minutes from $(0,8)$, reaching $10$ grams; the steeper line rises $3$ grams every $2$ minutes from $(0,4)$, also reaching $10$ grams.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($(2,7)$): lies on the steeper line only; at $2$ minutes the other batch has $9$ grams.\n* Choice C ($(8,12)$): lies on the shallower line only; at $8$ minutes the other batch has $16$ grams.\n* Choice D ($(10,4)$): swaps the coordinates of the crossing point, reporting the mass as the time.\n\n**Test Day Takeaway:** A solution shared by two graphed relationships is the point that lies on both graphs, read as (input, output) in that order.",
+ "id": "bank-alg-060"
+}

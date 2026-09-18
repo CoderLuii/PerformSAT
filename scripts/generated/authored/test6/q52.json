@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "expression-of-ideas",
   "skill": "transitions",
-  "passage": "Some quilts made by Black women in the nineteenth-century American South carried information as well as warmth. The best-documented case is the work of Harriet Powers, whose surviving \"story quilts\" stitch together panels depicting biblical scenes and recorded local events. ______ one of her quilts sets the 1833 Leonid meteor storm beside scenes of drought and frost, preserving a community's memory of remarkable nights and seasons.",
+  "passage": "The stones of many medieval cathedrals carry small chiseled symbols, each the personal sign of the mason who dressed the block; because masons were often paid by the piece, the marks let a works office credit each man's output at the week's end. ______ potters in Roman Gaul pressed name-stamps into the wet clay of their mass-produced bowls before firing, and the survival of those stamps by the tens of thousands has let archaeologists reconstruct individual workshops' output and trade routes.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "For example,"
+      "text": "Similarly,"
     },
     {
       "id": "B",
-      "text": "However,"
+      "text": "By contrast,"
     },
     {
       "id": "C",
-      "text": "Instead,"
+      "text": "In turn,"
     },
     {
       "id": "D",
-      "text": "Therefore,"
+      "text": "Granted,"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"For example.\" The sentence after the blank gives a specific instance, a particular Powers quilt depicting the 1833 meteor storm, of the general claim that her story quilts recorded events. \"For example\" introduces that instance. \"However\" and \"Instead\" would signal contrast or replacement, but the quilt illustrates rather than opposes the prior statement, and \"Therefore\" would make the example a consequence of the general claim instead of an illustration of it."
+  "explanation": "**Choice A is correct.** The two sentences describe parallel practices — artisans in different trades and eras marking their work so that output could be tracked to the individual — and \"Similarly,\" announces exactly that parallel.\n\n**The Full Solution:**\n- Before the blank: masons' marks tying each dressed stone to its maker for piecework accounting.\n- After the blank: potters' stamps tying each bowl to its maker, now legible to archaeologists.\n- Same underlying practice, second instance — the relation is likeness, and the transition must say so.\n\n**Why the other choices are wrong:**\n- B: \"By contrast\" promises a difference, but the potters' stamps repeat the masons' logic rather than depart from it.\n- C: \"In turn\" implies a sequence or reciprocal step — the potters did not act in response to the masons, and the Roman practice in fact came first.\n- D: \"Granted\" concedes a point against the preceding claim, but the second sentence supports rather than qualifies the first."
 }

@@ -1,0 +1,73 @@
+{
+  "id": 7,
+  "question": "The scatterplot shows the age, in years, and the resale value, in thousands of dollars, of each of eight delivery vans. Which equation is the most appropriate linear model for these data?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          21
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 9,
+      "yMin": 0,
+      "yMax": 24,
+      "xGridStep": 1,
+      "yGridStep": 2,
+      "yLabelStep": 4,
+      "xLabel": "Age (years)",
+      "yLabel": "Resale value (thousands of dollars)"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = -22x + 1.5$"
+    },
+    {
+      "id": "B",
+      "text": "$y = -1.5x - 22$"
+    },
+    {
+      "id": "C",
+      "text": "$y = -1.5x + 22$"
+    },
+    {
+      "id": "D",
+      "text": "$y = 1.5x + 10$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "Estimate the drop per year from the two ends of the trend, then ask what value the trend points to for a brand-new van.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** Value falls about $1.5$ thousand dollars per year and the trend reaches about $22$ at age $0$: $y = -1.5x + 22$ — choice C.\n\n**The Full Solution:**\nStep 1: Resale value falls as age rises, so the rate of change is negative.\nStep 2: Estimate it from the ends, $(1, 21)$ and $(8, 10)$: $\\frac{10-21}{8-1} = \\frac{-11}{7} \\approx -1.6$, close to $-1.5$.\nStep 3: At $x = 1$ the value is about $21$, so at $x = 0$ it would be about $21 + 1.5 = 22.5$, near $22$.\nStep 4: The model $y = -1.5x + 22$ predicts $10$ thousand dollars at age $8$, matching the plotted point. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -22x + 1.5$): swaps the rate of change and the starting value, so the model would lose $22$ thousand dollars of value each year.\n* Choice B ($y = -1.5x - 22$): has the right rate of change but a negative starting value; at age $1$ it predicts $-23.5$ thousand dollars.\n* Choice D ($y = 1.5x + 10$): uses a positive rate of change, which would mean older vans resell for more.\n\n**Test Day Takeaway:** Read the intercept as the value the model assigns at input $0$ — here, a brand-new van — and reject any model whose prediction there is impossible."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-242",
+ "question": "The function $f$ is defined by $f(x)=x^2-6x+2$, and a cataloguer models map-collection entries above an annual target by $g(x)=f(x)+k$ for a constant $k$. Given that the smallest value of $g$ is $5$, what is the value of $k$?",
+ "correctAnswer": "12",
+ "explanation": "**SAT Pattern: Vertical Shift**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~30s):** The least value of $f$ is $f(3)=-7$; a vertical shift moves it to $-7+k=5$, so $k=12$.\n\n**The Full Solution:**\nStep 1: The vertex of $f$ is at $x=-\\frac{-6}{2}=3$, and $f(3)=9-18+2=-7$, so the least value of $f$ is $-7$.\nStep 2: Adding $k$ raises every output by $k$, so the least value of $g$ is $-7+k$.\nStep 3: Set $-7+k=5$, giving $k=12$. Check: $g(x)=x^2-6x+14$ has $g(3)=9-18+14=5$ ✓\n\n**Common Mistakes:**\n* $3$: treats the constant term $2$ as the least value of $f$, giving $k=3$.\n* $-12$: reverses the subtraction, solving $-7-k=5$.\n* $2$: reports $f$'s constant term instead of the shift.\n\n**Test Day Takeaway:** Find the original extreme value first — a vertical shift moves it by exactly the added constant."
+}

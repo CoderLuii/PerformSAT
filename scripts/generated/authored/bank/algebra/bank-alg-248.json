@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-248",
+ "question": "A shipment contains a total of $48$ boxes, each of which is either small or large. The shipment contains $12$ more small boxes than large boxes. How many large boxes are in the shipment?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$18$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$30$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "repeats the given difference",
+  "C": "halves 48 and ignores the difference",
+  "D": "number of small boxes (wrong quantity reported)"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Remove the $12$ extra small boxes: $48 - 12 = 36$ boxes are split evenly, so there are $18$ large boxes.\n\n**The Full Solution:**\nStep 1: Let $L$ be the number of large boxes and $S$ the number of small boxes. Then $S + L = 48$ and $S = L + 12$.\nStep 2: Substitute: $(L + 12) + L = 48$, so $2L + 12 = 48$ and $L = 18$.\nStep 3: Then $S = 30$. Check: $30 + 18 = 48$ and $30 - 18 = 12$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): repeats the difference from the stem as if it were a count.\n* Choice C ($24$): splits $48$ in half and ignores the \"12 more\" condition.\n* Choice D ($30$): the number of small boxes; the question asks for large boxes.\n\n**Test Day Takeaway:** Translate \"12 more than\" into $S = L + 12$, substitute into the total, and reread the question before choosing which quantity to report."
+}

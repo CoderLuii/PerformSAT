@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-247",
+ "question": "A transit agency models weekday ridership with $f$, where $f(t)$ is the number of riders $t$ hours after midnight, and defines a second model by $g(t)=f(t-8)$. Which statement best compares $g$ with $f$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$g$ reaches each ridership level 8 hours later than $f$ does."
+  },
+  {
+   "id": "B",
+   "text": "$g$ reaches each ridership level 8 hours earlier than $f$ does."
+  },
+  {
+   "id": "C",
+   "text": "$g$ predicts 8 more riders than $f$ at every hour."
+  },
+  {
+   "id": "D",
+   "text": "$g$ predicts 8 fewer riders than $f$ at every hour."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reads the subtraction inside the function as a shift to the left, that is, earlier",
+  "C": "treats the 8 as added to the ridership rather than to the time",
+  "D": "treats the 8 as subtracted from the ridership rather than from the time"
+ },
+ "explanation": "**SAT Pattern: Horizontal Shift**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Subtracting inside the function moves the graph right, so every feature of $f$ appears in $g$ eight hours later.\n\n**The Full Solution:**\nStep 1: The rule $g(t)=f(t-8)$ evaluates $f$ at a time eight hours earlier than the time fed to $g$.\nStep 2: So the ridership $f$ shows at time $t$ is the ridership $g$ shows at time $t+8$.\nStep 3: Every ridership level therefore occurs eight hours later under $g$. Check: if $f$ peaks at 8 a.m., then $g(16)=f(8)$, a 4 p.m. peak ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: reads $t-8$ as a shift to the left, which would come from $f(t+8)$.\n* Choice C: attaches the 8 to the output, a vertical shift up.\n* Choice D: attaches the 8 to the output, a vertical shift down.\n\n**Test Day Takeaway:** A subtraction inside the parentheses delays the graph; the sign you see is the opposite of the direction you might expect."
+}

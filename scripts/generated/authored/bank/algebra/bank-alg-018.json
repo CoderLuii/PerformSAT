@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-018",
+  "question": "A coworking space charges a one-time deposit of $d$ dollars plus $\\$180$ per month. A second coworking space charges $\\$225$ per month with no deposit. The total cost of using the first space for $12$ months is the same as the total cost of using the second space for $10$ months. What is the value of $d$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$90$"
+    },
+    {
+      "id": "B",
+      "text": "$450$"
+    },
+    {
+      "id": "C",
+      "text": "$540$"
+    },
+    {
+      "id": "D",
+      "text": "$900$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses 10 months for both spaces: 225(10) - 180(10)",
+    "C": "uses 12 months for both spaces: 225(12) - 180(12)",
+    "D": "swaps the two durations: d + 180(10) = 225(12)"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Break-Even Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The second space costs $225(10) = 2{,}250$ for $10$ months, and the first costs $d + 180(12) = d + 2{,}160$ for $12$ months. Setting the totals equal gives $d = 2{,}250 - 2{,}160 = 90$.\n\n**The Full Solution:**\nStep 1: Build each total with its own number of months. First space for $12$ months: $d + 180(12) = d + 2{,}160$. Second space for $10$ months: $225(10) = 2{,}250$.\nStep 2: The two totals are equal: $d + 2{,}160 = 2{,}250$. Subtract $2{,}160$ from both sides: $d = 90$.\nStep 3: Check: $90 + 180(12) = 90 + 2{,}160 = 2{,}250$, and $225(10) = 2{,}250$, so the two totals match. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($450$): uses $10$ months for both spaces, computing $225(10) - 180(10)$, and ignores that the first space is used for $12$ months.\n* Choice C ($540$): uses $12$ months for both spaces, computing $225(12) - 180(12)$.\n* Choice D ($900$): swaps the two durations, solving $d + 180(10) = 225(12)$ instead.\n\n**Test Day Takeaway:** A break-even with an unknown fixed charge is solved by equating the two totals, but each total must be built with ITS OWN duration; the deposit is whatever remains after the monthly charges are subtracted."
+}

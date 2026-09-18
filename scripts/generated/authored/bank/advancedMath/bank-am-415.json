@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-415",
+ "question": "The function $q$ defined by $q(t)=t^2-11t+24$ models a reference desk's questions per hour above its overnight rate, where $t$ is the number of hours after opening. The function $w$ is defined by $w(t)=q(2t-5)$. What is the sum of the solutions to $w(t)=0$?",
+ "correctAnswer": "10.5",
+ "explanation": "**SAT Pattern: Sum of Roots via Input Shift**\n\n**The correct answer is $10.5$.**\n\n**The Fast Way (~30s):** The zeros of $q$ are $3$ and $8$, so $2t-5=3$ or $2t-5=8$; solving gives $t=4$ and $t=6.5$, whose sum is $10.5$.\n\n**The Full Solution:**\nStep 1: Factor $q(t)=t^2-11t+24=(t-3)(t-8)$, so $q$ is zero at $3$ and $8$.\nStep 2: $w(t)=0$ means $q(2t-5)=0$, so the inner expression must equal $3$ or $8$: $2t-5=3$ gives $t=4$, and $2t-5=8$ gives $t=6.5$.\nStep 3: Add: $4+6.5=10.5$. Check: $w(4)=q(3)=0$ and $w(6.5)=q(8)=0$ ✓\n\n**Common Mistakes:**\n* $11$: reports the sum of the zeros of $q$ and never undoes the inner map $2t-5$.\n* $5.5$: divides the sum $11$ by $2$ but never adds back the $5$ from $2t-5$.\n* $21$: adds $5$ to each zero of $q$ but forgets to divide each result by $2$.\n\n**Test Day Takeaway:** When the input is replaced by a linear expression, solve that expression equal to each original zero — the zeros move, and so does their sum."
+}

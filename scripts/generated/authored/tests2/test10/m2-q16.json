@@ -1,0 +1,53 @@
+{
+ "id": 16,
+ "question": "The table gives four values of the quadratic function $p$, which has a leading coefficient of $2$ and models a distributor's weekly margin, in hundreds of dollars, on $x$ pallets of bottled olive oil. If $x - 2$ is a factor of $p(x)$, which of the following is also a factor of $p(x)$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$p(x)$"
+  ],
+  "rows": [
+   [
+    "$0$",
+    "$24$"
+   ],
+   [
+    "$1$",
+    "$10$"
+   ],
+   [
+    "$2$",
+    "$0$"
+   ],
+   [
+    "$4$",
+    "$-8$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x - 24$"
+  },
+  {
+   "id": "B",
+   "text": "$x - 12$"
+  },
+  {
+   "id": "C",
+   "text": "$x - 6$"
+  },
+  {
+   "id": "D",
+   "text": "$x + 6$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads the table value p(0) = 24 as a zero of p and writes x - 24",
+  "B": "solves (0 - 2)(0 - r) = 24 without the leading coefficient 2, getting r = 12",
+  "D": "finds r = 6 but writes the factor with the wrong sign, x + 6"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Polynomial Factoring with Given Factor**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Write $p(x) = 2(x - 2)(x - r)$. The table gives $p(0) = 24$, so $2(-2)(-r) = 4r = 24$ and $r = 6$; the other factor is $x - 6$.\n\n**The Full Solution:**\nStep 1: A quadratic with leading coefficient $2$ and a factor of $x - 2$ can be written $p(x) = 2(x - 2)(x - r)$, where $r$ is the second zero.\nStep 2: Use a value from the table that is easy to substitute. At $x = 0$ the table gives $p(0) = 24$, so $2(0 - 2)(0 - r) = 24$, which is $2(-2)(-r) = 4r = 24$, so $r = 6$.\nStep 3: The second factor is $x - 6$. Check the rest of the table with $p(x) = 2(x - 2)(x - 6) = 2x^2 - 16x + 24$: $p(1) = 2 - 16 + 24 = 10$, $p(2) = 8 - 32 + 24 = 0$, and $p(4) = 32 - 64 + 24 = -8$, all matching ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($x - 24$): treats the output $24$ as an input where $p$ is zero. The table shows $p(0) = 24$, which says the graph passes through $(0, 24)$, not that $24$ is a zero.\n* Choice B ($x - 12$): leaves out the leading coefficient, solving $(0 - 2)(0 - r) = 24$ to get $r = 12$. Substituting $x = 0$ into $2(x - 2)(x - 12)$ gives $48$, not $24$.\n* Choice D ($x + 6$): gets the right zero but flips the sign. A zero at $x = 6$ corresponds to the factor $x - 6$; $x + 6$ would put a zero at $x = -6$, where $2(-6-2)(-6-6) = 192 \\neq 0$ compared with the table.\n\n**Test Day Takeaway:** Build the factored form with the leading coefficient in front, then plug in the single easiest table value — $x = 0$ usually turns the whole equation into one multiplication."
+}

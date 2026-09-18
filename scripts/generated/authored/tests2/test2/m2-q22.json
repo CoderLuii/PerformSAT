@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "The annual output of a solar array, in megawatt-hours, is predicted by $E(m) = 540(1.25)^{\\frac{m}{4}}$, where $m$ is the number of months since the array was expanded and $540$ is the output at the time of the expansion. Which statement about the predicted output is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The output increases by $25\\%$ every $4$ months."
+  },
+  {
+   "id": "B",
+   "text": "The output increases by $25\\%$ each month."
+  },
+  {
+   "id": "C",
+   "text": "The output increases by $25\\%$ each year."
+  },
+  {
+   "id": "D",
+   "text": "The output increases by $125\\%$ every $4$ months."
+  }
+ ],
+ "distractorNotes": {
+  "B": "ignores the division by 4 in the exponent and attaches the 25 percent increase to a single month",
+  "C": "reads the 4 in the exponent as a number of years rather than the number of months in one growth period",
+  "D": "reads the factor 1.25 itself as the percent increase instead of subtracting 1 to get 25 percent"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The exponent $\\frac{m}{4}$ increases by $1$ each time $m$ increases by $4$, and each such step multiplies the output by $1.25$ — a $25\\%$ increase every $4$ months.\n\n**The Full Solution:**\nStep 1: In $a(b)^{x}$ the output is multiplied by $b$ each time $x$ increases by $1$. Here the exponent is $\\frac{m}{4}$, not $m$.\nStep 2: The exponent rises by $1$ when $m$ rises by $4$, so one full growth period is $4$ months long.\nStep 3: Over that period the output is multiplied by $1.25$, which is an increase of $1.25 - 1 = 0.25$, or $25\\%$. Check: $E(0) = 540$ and $E(4) = 540(1.25) = 675$, and $\\frac{675 - 540}{540} = 0.25$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: attaches the $25\\%$ to one month. The monthly factor is $1.25^{1/4} \\approx 1.057$, about a $5.7\\%$ monthly increase, so $E(1) \\approx 571$, not $675$.\n* Choice C: reads the $4$ as years. The problem states $m$ counts months, so the $4$ in the denominator counts months as well.\n* Choice D: reports the growth factor $1.25$ as a percent increase. A factor of $1.25$ means the new value is $125\\%$ of the old one, which is a $25\\%$ increase, not a $125\\%$ increase.\n\n**Test Day Takeaway:** A divisor inside the exponent stretches the growth period — read $b^{m/k}$ as \"multiplied by $b$ every $k$ units\" — and always subtract $1$ from the factor before calling it a percent increase."
+}

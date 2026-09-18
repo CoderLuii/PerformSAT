@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-236",
+ "question": "At setting $r$, an infusion pump delivers $k(2r + 9)$ milliliters, and the same pump delivers $14r + c$ milliliters at every setting $r$, where $k$ and $c$ are constants. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$18$"
+  },
+  {
+   "id": "C",
+   "text": "$63$"
+  },
+  {
+   "id": "D",
+   "text": "$126$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "copies the 9 from inside the parentheses without multiplying by k",
+  "B": "multiplies the two numbers inside the parentheses (2 times 9)",
+  "D": "multiplies 9 by 14, the already-distributed coefficient, instead of by k"
+ },
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $2k = 14$ gives $k = 7$, so $c = 9k = 63$.\n\n**The Full Solution:**\n\nStep 1: Distribute: $k(2r + 9) = 2kr + 9k$.\n\nStep 2: This equals $14r + c$ for every value of $r$, so the coefficients of $r$ match: $2k = 14$, giving $k = 7$.\n\nStep 3: The constants match as well: $c = 9k = 9(7) = 63$. Check with $r = 1$: $7(2 + 9) = 77$ and $14(1) + 63 = 77$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($9$): copies the $9$ from inside the parentheses, skipping the multiplication by $k$.\n* Choice B ($18$): multiplies the two numbers inside the parentheses, $2 \\times 9$, which never appears in the expansion.\n* Choice D ($126$): multiplies $9$ by $14$ instead of by $k = 7$; the $14$ already contains the factor $k$.\n\n**Test Day Takeaway:** With two unknown constants, solve for the multiplier from the variable terms first, then use it on the constant term."
+}

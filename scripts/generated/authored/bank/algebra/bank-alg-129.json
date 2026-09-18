@@ -1,0 +1,51 @@
+{
+ "id": "bank-alg-129",
+ "question": "The table shows, for each of the two equations in a linear system, the number multiplying $x$, the number multiplying $y$, and the number on the right-hand side. The constants $a$ and $b$ make the two graphs the same line. What is the value of $b - a$?",
+ "questionTable": {
+  "headers": [
+   "Equation",
+   "Multiplies $x$",
+   "Multiplies $y$",
+   "Right-hand side"
+  ],
+  "rows": [
+   [
+    "First",
+    "$a$",
+    "$-6$",
+    "$14$"
+   ],
+   [
+    "Second",
+    "$15$",
+    "$b$",
+    "$42$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-47$"
+  },
+  {
+   "id": "B",
+   "text": "$-23$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$23$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the factor 3 backwards, taking a = 15*3 = 45 and b = -6/3 = -2, so b - a = -47",
+  "C": "finds a = 5 but drops the minus sign on b, giving 18 - 5 = 13",
+  "D": "subtracts in the wrong order, reporting a - b = 5 - (-18) = 23"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The right-hand sides give the factor $\\frac{42}{14} = 3$, so $15 = 3a$ makes $a = 5$ and $b = 3(-6) = -18$; then $b - a = -18 - 5 = -23$.\n\n**The Full Solution:**\nStep 1: The two graphs are the same line only when the second equation is a fixed multiple of the first. The right-hand sides are the only column with both numbers known, so the factor is $\\frac{42}{14} = 3$: second $= 3 \\times$ first.\nStep 2: Apply the factor to the $x$-column: $15 = 3a$, so $a = 5$.\nStep 3: Apply it to the $y$-column: $b = 3(-6) = -18$. Therefore $b - a = -18 - 5 = -23$. Check: the first equation is $5x - 6y = 14$, and tripling it gives $15x - 18y = 42$, matching the second row. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-47$): applies the factor of $3$ in the reverse direction, taking $a = 15 \\cdot 3 = 45$ and $b = -6 \\div 3 = -2$, so $b - a = -47$.\n* Choice C ($13$): gets $a = 5$ correctly but drops the minus sign on the $y$-column, computing $18 - 5 = 13$.\n* Choice D ($23$): subtracts in the wrong order, reporting $a - b = 5 - (-18) = 23$.\n\n**Test Day Takeaway:** Read the scale factor from the one column where BOTH entries are numbers, then multiply the other columns by that factor in the same direction, keeping negative signs attached."
+}

@@ -1,0 +1,39 @@
+{
+  "id": 7,
+  "question": "The graph of $y=f(x)$ is shown in the $xy$-plane, and its $x$-intercepts are $(-4,0)$ and $(2,0)$. The function $g$ is defined by $g(x)=f(x-5)$. What is the distance between the two $x$-intercepts of the graph of $y=g(x)$?",
+  "diagram": {
+    "type": "quadraticIntercepts",
+    "params": {
+      "intercepts": [
+        -4,
+        2
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$11$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the shift from the distance",
+    "B": "reports the shift itself",
+    "D": "adds the shift to the distance"
+  },
+  "correctAnswer": "C",
+  "hint": "Locate both new intercepts before measuring, and notice what a translation does to distances.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~40s):** Both intercepts move right $5$, to $x=1$ and $x=7$, so the distance is still $7-1=6$.\n\n**The Full Solution:**\nStep 1: $f(-4)=0$ and $f(2)=0$, so $g(x)=f(x-5)$ is zero when $x-5=-4$ or $x-5=2$.\nStep 2: Solving gives $x=1$ and $x=7$: the intercepts are $(1,0)$ and $(7,0)$.\nStep 3: The distance between them is $7-1=6$, the same as the original distance $2-(-4)=6$, because a translation moves both points equally. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): subtracts the shift from the distance: $6-5=1$.\n* Choice B ($5$): reports the size of the shift rather than the separation of the intercepts.\n* Choice D ($11$): adds the shift to the distance: $6+5=11$.\n\n**Test Day Takeaway:** A horizontal translation relocates every point by the same amount, so distances between features are unchanged."
+}

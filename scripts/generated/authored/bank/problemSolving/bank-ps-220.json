@@ -1,0 +1,33 @@
+{
+  "id": "bank-ps-220",
+  "question": "The table gives the number of trees of each species in a nursery. Of all the trees in the nursery, $56\\%$ are sold before the end of the season. How many of the trees are not sold before the end of the season?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Species",
+        "Trees"
+      ],
+      "rows": [
+        [
+          "Maple",
+          "480"
+        ],
+        [
+          "Birch",
+          "350"
+        ],
+        [
+          "Spruce",
+          "370"
+        ],
+        [
+          "Dogwood",
+          "250"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "638",
+  "explanation": "**SAT Pattern: Percent Complement**\n\n**The correct answer is $638$.**\n\n**The Fast Way (~35s):** The nursery holds $1{,}450$ trees, and $100\\% - 56\\% = 44\\%$ go unsold: $0.44 \\times 1{,}450 = 638$.\n\n**The Full Solution:**\nStep 1: Add the species counts: $480 + 350 + 370 + 250 = 1{,}450$ trees.\nStep 2: The unsold trees are the complement of the $56\\%$ sold: $100 - 56 = 44$, so $44\\%$ are unsold.\nStep 3: Take $44\\%$ of the total: $0.44 \\times 1{,}450 = 638$. Check: $0.56 \\times 1{,}450 = 812$, and $812 + 638 = 1{,}450$. $\\checkmark$\n\n**Common Mistakes:** Reporting $812$, the trees that were sold; subtracting $56$ trees instead of $56\\%$, which gives $1{,}394$; or taking $44\\%$ of a total that omits one species.\n\n**Test Day Takeaway:** Complement first, then multiply once. Computing the sold trees and subtracting works too, but it is an extra step and an extra chance to slip."
+}

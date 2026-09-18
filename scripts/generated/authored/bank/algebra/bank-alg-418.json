@@ -1,0 +1,47 @@
+{
+ "question": "A roof-framing plan uses two linear constraints. The graph of the first constraint is shown in the $xy$-plane, and the second constraint is the equation $3x+2y=18$. Which ordered pair $(x,y)$ satisfies both of the plan's constraints?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 0.5,
+   "yIntercept": 1,
+   "xRange": [
+    -6,
+    10
+   ],
+   "yRange": [
+    -4,
+    8
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(2,2)$"
+  },
+  {
+   "id": "B",
+   "text": "$(3,4)$"
+  },
+  {
+   "id": "C",
+   "text": "$(4,3)$"
+  },
+  {
+   "id": "D",
+   "text": "$(6,0)$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "lies on the graphed line but gives 3(2) + 2(2) = 10, not 18",
+  "B": "swaps the coordinates of the solution",
+  "D": "satisfies 3x + 2y = 18 but lies below the graphed line, which passes through (6, 4)"
+ },
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**Choice C is correct.** The graphed line is $y=\\frac{1}{2}x+1$, and substituting it into $3x+2y=18$ gives $4x+2=18$, so $x=4$ and $y=3$.\n\n**The Fast Way (~50s):** Read $y=\\frac{1}{2}x+1$ from the graph; then $3x+2\\left(\\frac{1}{2}x+1\\right)=4x+2=18$, so $x=4$ and $y=3$.\n\n**The Full Solution:**\n\nStep 1: Read the graphed line. It crosses the vertical axis at $(0,1)$ and passes through $(2,2)$, so its slope is $\\frac{1}{2}$ and its equation is $y=\\frac{1}{2}x+1$.\n\nStep 2: Substitute that expression for $y$ into the second constraint: $3x+2\\left(\\frac{1}{2}x+1\\right)=18$, which simplifies to $3x+x+2=18$, or $4x=16$.\n\nStep 3: So $x=4$ and $y=\\frac{1}{2}(4)+1=3$. Check: $3(4)+2(3)=12+6=18$, and $(4,3)$ lies on the graphed line.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($(2,2)$): lies on the graphed line, but $3(2)+2(2)=10$, not $18$.\n* Choice B ($(3,4)$): reverses the coordinates of the solution and satisfies neither constraint.\n* Choice D ($(6,0)$): satisfies $3x+2y=18$, but the graphed line passes through $(6,4)$.\n\n**Test Day Takeaway:** When one equation of a system is a graph, read its slope and intercept first, then substitute it into the equation given in words.",
+ "id": "bank-alg-418"
+}

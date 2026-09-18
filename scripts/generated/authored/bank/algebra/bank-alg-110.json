@@ -1,0 +1,27 @@
+{
+ "question": "A flow controller's output, in liters per minute, is a linear function $f$ of the dial setting $x$, and the table lists three settings with their outputs. What is the value of $f(12)$?",
+ "diagram": {
+  "type": "table",
+  "params": {
+   "xHeader": "x",
+   "yHeader": "f(x)",
+   "rows": [
+    [
+     2,
+     11
+    ],
+    [
+     5,
+     20
+    ],
+    [
+     9,
+     32
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "41",
+ "explanation": "**SAT Pattern: Line from Two Points**\n\n**The correct answer is $41$.**\n\n**The Fast Way (~35s):** From $(2,11)$ to $(5,20)$ the output rises $9$ over $3$ settings, so the rate is $3$; from setting $9$ to setting $12$ is $3$ more settings, giving $32+3(3)=41$.\n\n**The Full Solution:**\n\nStep 1: Use two rows as points: $(2,11)$ and $(5,20)$. The rate of change is $\\frac{20-11}{5-2}=\\frac{9}{3}=3$ liters per minute per setting.\n\nStep 2: Find the constant: $f(x)=3x+b$ with $f(2)=11$ gives $6+b=11$, so $b=5$ and $f(x)=3x+5$.\n\nStep 3: Evaluate at $x=12$: $f(12)=3(12)+5=41$. Check: $f(9)=27+5=32$, matching the third row.\n\n**Common Mistakes:** Using $32-11=21$ as the rate ignores that the settings differ by $7$, not $1$. Adding a single step of $3$ to $f(9)$ gives $35$, which is $f(10)$, because $12$ is three settings past $9$, not one.\n\n**Test Day Takeaway:** Get the rate from any two rows, then use one row to pin the constant before evaluating anywhere else.",
+ "id": "bank-alg-110"
+}

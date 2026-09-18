@@ -1,0 +1,48 @@
+{
+  "id": "bank-am-055",
+  "question": "The value of a rare coin, in dollars, $t$ years after it was appraised is modeled by $V(t) = a \\cdot b^{t}$, where $a$ and $b$ are constants. The table gives the coin's value at two times. What is the value of $b$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Time t (years)",
+        "Value (dollars)"
+      ],
+      "rows": [
+        [
+          "0",
+          "400"
+        ],
+        [
+          "2",
+          "576"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.72$"
+    },
+    {
+      "id": "B",
+      "text": "$1.2$"
+    },
+    {
+      "id": "C",
+      "text": "$1.44$"
+    },
+    {
+      "id": "D",
+      "text": "$4$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the two-year ratio by $2$ instead of taking its square root",
+    "C": "reports the two-year growth factor as the annual factor",
+    "D": "subtracts the square roots instead of dividing them"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Find Base from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $\\dfrac{V(2)}{V(0)} = \\dfrac{576}{400} = 1.44 = b^{2}$, so $b = \\sqrt{1.44} = 1.2$.\n\n**The Full Solution:**\nStep 1: At $t = 0$, $V(0) = a \\cdot b^{0} = a$, and the table gives $V(0) = 400$, so $a = 400$.\nStep 2: At $t = 2$, $400b^{2} = 576$, so $b^{2} = \\dfrac{576}{400} = 1.44$.\nStep 3: Since a growth factor is positive, $b = \\sqrt{1.44} = 1.2$. Check: $400(1.2)^{2} = 400(1.44) = 576$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.72$): divides $1.44$ by $2$; two years of growth compound, so the ratio is a square, not a doubling.\n* Choice C ($1.44$): this is the factor over TWO years, not one.\n* Choice D ($4$): computes $\\sqrt{576} - \\sqrt{400} = 24 - 20$ instead of $\\dfrac{\\sqrt{576}}{\\sqrt{400}}$.\n\n**Test Day Takeaway:** Two points that are $n$ periods apart give $b^{n}$, so take the $n$th root — dividing by $n$ is the linear reflex and is always wrong here."
+}

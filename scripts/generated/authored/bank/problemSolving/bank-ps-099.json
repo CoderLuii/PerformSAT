@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-099",
+  "question": "Two random samples were surveyed about weekly bicycle commuting. For city A, the estimate is that $46\\%$ of all residents commute by bicycle at least once a week, with an associated margin of error of $3.5\\%$. For city B, the estimate is $51\\%$, with an associated margin of error of $3.5\\%$. Which of the following is best supported by these estimates and margins of error?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The percent of residents who commute by bicycle at least once a week is greater in city B than in city A."
+    },
+    {
+      "id": "B",
+      "text": "It is plausible that the percent of residents who commute by bicycle at least once a week is the same in city A as in city B."
+    },
+    {
+      "id": "C",
+      "text": "The percent of residents who commute by bicycle at least once a week is exactly $5$ percentage points greater in city B than in city A."
+    },
+    {
+      "id": "D",
+      "text": "The estimate for city B is more precise than the estimate for city A."
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats the higher estimate as settling the comparison even though the intervals overlap",
+    "C": "treats the difference of the two estimates as an exact population difference",
+    "D": "reads a larger estimate as a more precise one, though both margins of error are 3.5%"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** City A's interval is $42.5\\%$ to $49.5\\%$ and city B's is $47.5\\%$ to $54.5\\%$; they overlap between $47.5\\%$ and $49.5\\%$, so equal percents are plausible.\n\n**The Full Solution:**\nStep 1: Build each interval of plausible values: $46\\% \\pm 3.5\\%$ gives $42.5\\%$ to $49.5\\%$; $51\\% \\pm 3.5\\%$ gives $47.5\\%$ to $54.5\\%$.\nStep 2: The intervals share the values from $47.5\\%$ to $49.5\\%$, so a single percent could be plausible for both cities.\nStep 3: With overlapping intervals, the data do not establish that the two cities differ, only that a common value remains plausible.\nCheck: $48\\%$ lies in both intervals. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: City B's estimate is higher, but the overlap means the true percents could be equal or even reversed.\n* Choice C: $51\\% - 46\\% = 5$ percentage points is a difference between two estimates, not an exact population difference.\n* Choice D: Both estimates carry the same margin of error, $3.5\\%$, so neither is more precise; the size of an estimate says nothing about its precision.\n\n**Test Day Takeaway:** Compare two estimates by their intervals: overlapping intervals cannot establish a difference."
+}

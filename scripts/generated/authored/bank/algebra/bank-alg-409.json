@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-409",
+ "question": "A noise gate opens at exactly those threshold settings $x$ that satisfy the equation $|x + 7| = k - 3$, where $k$ is a constant. For which value of $k$ does the gate open at exactly one threshold setting?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-7$"
+  },
+  {
+   "id": "B",
+   "text": "$0$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves x + 7 = 0 and reports the setting instead of k",
+  "B": "sets the constant k to zero rather than the whole right-hand side",
+  "D": "solves x + 7 = 0 and drops the sign of the result"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** An absolute value equation has one solution only when the right side is $0$, so $k - 3 = 0$ and $k = 3$.\n\n**The Full Solution:**\nStep 1: The equation $|x + 7| = k - 3$ has two solutions when $k - 3 > 0$ and none when $k - 3 < 0$.\nStep 2: It has exactly one solution only when the right-hand side is $0$, since $|x + 7| = 0$ forces $x + 7 = 0$.\nStep 3: Setting $k - 3 = 0$ gives $k = 3$. Check: with $k = 3$ the equation is $|x + 7| = 0$, whose only solution is $x = -7$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7$): solves $x + 7 = 0$ and reports the setting $x$ rather than the constant $k$.\n* Choice B ($0$): sets $k$ itself to zero instead of the whole right-hand side $k - 3$.\n* Choice D ($7$): solves $x + 7 = 0$ and then drops the negative sign on the result.\n\n**Test Day Takeaway:** Count solutions by the sign of the isolated right-hand side: positive gives two, zero gives one, negative gives none."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "Constants $a$ and $b$ are chosen so that the expression $a(4x - 9) + 5x$ and the expression $17x - b$ produce identical values at every real number $x$. What is the value of $a + b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$27$"
+  },
+  {
+   "id": "D",
+   "text": "$30$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "finds a = 3 and reports it as the answer instead of continuing to b",
+  "B": "matches constants as -9 = -b, getting b = 9, and adds it to a = 3",
+  "C": "finds b = 27 and reports it alone instead of the sum a + b"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** Expanding gives $(4a + 5)x - 9a$. Matching $x$-coefficients: $4a + 5 = 17$, so $a = 3$. Matching constants: $-9a = -b$, so $b = 27$ and $a + b = 30$.\n\n**The Full Solution:**\nStep 1: Expand the first expression: $a(4x - 9) + 5x = 4ax - 9a + 5x = (4a + 5)x - 9a$. Two expressions that agree at every real number $x$ must have the same coefficient of $x$ and the same constant term.\nStep 2: Match the coefficients of $x$: $4a + 5 = 17$, so $4a = 12$ and $a = 3$.\nStep 3: Match the constant terms: $-9a = -b$. With $a = 3$, this gives $-27 = -b$, so $b = 27$, and $a + b = 3 + 27 = 30$. Check with $x = 1$: the first expression is $3(4 - 9) + 5 = -15 + 5 = -10$, and the second is $17 - 27 = -10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): the value of $a$ alone. It is the first quantity the matching produces, but the question asks for the sum of both constants.\n* Choice B ($12$): matching the constants as if the $a$ were not attached, reading $-9 = -b$ and taking $b = 9$. The $-9$ inside the parentheses is multiplied by $a$, so the constant term is $-9a = -27$.\n* Choice C ($27$): the value of $b$ alone. Like Choice A, it stops one step short of the sum.\n\n**Test Day Takeaway:** \"Equal for every $x$\" means matching coefficients term by term. Expand first so that every constant carries the factor it is multiplied by, and reread what the question asks you to combine."
+}

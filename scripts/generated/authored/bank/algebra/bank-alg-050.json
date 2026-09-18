@@ -1,0 +1,6 @@
+{
+  "question": "A restoration plan satisfies $x = 4y - 3$ together with $2x + 5y = c$, where $x$ counts willow stakes planted per plot, $y$ counts alder stakes planted per plot, and $c$ is a constant. In the plan, $y$ equals $3$. What is the value of $c$?",
+  "correctAnswer": "33",
+  "explanation": "**SAT Pattern: Substitution (x in terms of y)**\n\n**The correct answer is $33$.**\n\n**The Fast Way (~30s):** Substituting gives $2(4y - 3) + 5y = 13y - 6 = c$; at $y = 3$ that is $33$.\n\n**The Full Solution:**\n\nStep 1: Replace $x$ in the second equation with $4y - 3$: $2(4y - 3) + 5y = c$.\n\nStep 2: Distribute and combine: $8y - 6 + 5y = 13y - 6 = c$.\n\nStep 3: With $y = 3$, $c = 13(3) - 6 = 33$. Check: $x = 4(3) - 3 = 9$, and $2(9) + 5(3) = 33$.\n\n**Common Mistakes:** Forgetting to distribute the $2$ and computing $4(3) - 3 + 15 = 24$; using $x = 3$ instead of $y = 3$ and reporting $c = 2(3) + 5(3) = 21$; reporting the value of $x$, which is $9$.\n\n**Test Day Takeaway:** Substitute the expression for $x$ into the whole equation, distribute, and only then plug in the known coordinate.",
+  "id": "bank-alg-050"
+}

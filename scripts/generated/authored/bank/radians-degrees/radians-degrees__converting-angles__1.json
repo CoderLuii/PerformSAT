@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "A canal lock's mitre gate swings through an angle of $135$ degrees as it opens, and the lock's control system logs every gate position in radians. What measure, in radians, does the control system log for this swing?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{3\\pi}{8}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{3\\pi}{4}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{4\\pi}{3}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3\\pi}{2}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by 360 instead of 180: 135 pi / 360 = 3 pi / 8",
+    "C": "inverts the fraction, computing 180 pi / 135 = 4 pi / 3",
+    "D": "divides by 90 instead of 180: 135 pi / 90 = 3 pi / 2"
+  },
+  "correctAnswer": "B",
+  "hint": "A straight angle is 180 degrees and also pi radians.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** Multiply by $\\frac{\\pi}{180}$: $135 \\cdot \\frac{\\pi}{180} = \\frac{3\\pi}{4}$.\n\n**The Full Solution:**\nStep 1: Set the conversion factor. Since $180$ degrees $= \\pi$ radians, multiply a degree measure by $\\frac{\\pi}{180}$.\nStep 2: Multiply and reduce. $135 \\cdot \\frac{\\pi}{180} = \\frac{135\\pi}{180}$, and dividing top and bottom by $45$ gives $\\frac{3\\pi}{4}$.\nStep 3: Check the size. $\\frac{3\\pi}{4}$ is three quarters of $\\pi$, and $135$ degrees is three quarters of $180$ degrees. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3\\pi}{8}$): divides by $360$, the measure of a full turn, instead of by $180$.\n* Choice C ($\\frac{4\\pi}{3}$): flips the conversion factor to $\\frac{180}{\\pi}$, which converts the wrong way.\n* Choice D ($\\frac{3\\pi}{2}$): divides by $90$; that would make a right angle equal to $\\pi$ radians.\n\n**Test Day Takeaway:** Degrees to radians multiplies by $\\frac{\\pi}{180}$; radians to degrees multiplies by $\\frac{180}{\\pi}$. Check the size of the answer against a half turn."
+}

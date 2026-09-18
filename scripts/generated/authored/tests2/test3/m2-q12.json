@@ -1,0 +1,60 @@
+{
+ "id": 12,
+ "question": "A clinical study assigned $240$ participants to one of two doses of a medication and recorded whether each participant's symptoms improved. Of the participants who received Dose B, what fraction had symptoms that improved?",
+ "diagram": {
+  "type": "twoWayTable",
+  "params": {
+   "headers": [
+    "",
+    "Improved",
+    "Did not improve",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Dose A",
+     "84",
+     "36",
+     "120"
+    ],
+    [
+     "Dose B",
+     "66",
+     "54",
+     "120"
+    ],
+    [
+     "Total",
+     "150",
+     "90",
+     "240"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{11}{40}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{11}{25}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{9}{20}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{11}{20}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by all 240 participants instead of the 120 who received Dose B: 66/240",
+  "B": "divides by the 150 participants who improved, reversing the condition: 66/150",
+  "C": "uses the 54 Dose B participants whose symptoms did not improve: 54/120"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The condition is Dose B, so the denominator is that row's total, $120$: $\\frac{66}{120} = \\frac{11}{20}$.\n\n**The Full Solution:**\nStep 1: Identify the group the question restricts you to. Of the participants who received Dose B names the Dose B row, whose total is $120$ participants.\nStep 2: Inside that row, count the participants the question asks about — those who improved: $66$.\nStep 3: The fraction is $\\frac{66}{120} = \\frac{11}{20}$. Check: the other $54$ Dose B participants give $\\frac{54}{120} = \\frac{9}{20}$, and $\\frac{11}{20} + \\frac{9}{20} = 1$, as the two outcomes must. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{11}{40}$): divides by the study total of $240$, which answers what fraction of ALL participants received Dose B and improved.\n* Choice B ($\\frac{11}{25}$): divides by the $150$ participants who improved. That reverses the condition and answers what fraction of those who improved had Dose B.\n* Choice C ($\\frac{9}{20}$): stays in the right row but counts the $54$ participants whose symptoms did not improve.\n\n**Test Day Takeaway:** In a two-way table the words after of set the denominator. Circle that row or column total before you look for the numerator, and the reversed-condition trap disappears."
+}

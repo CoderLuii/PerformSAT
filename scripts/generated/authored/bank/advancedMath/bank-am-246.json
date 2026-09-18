@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-246",
+  "question": "The minimum value of the function $p$ is $-4$, and $p(5) = 12$. The function $q$ is defined by $q(x) = p(x) + n$, where $n$ is a constant, and the minimum value of $q$ is $9$. What is the value of $q(5)$?",
+  "correctAnswer": "25",
+  "explanation": "**SAT Pattern: Vertical Shift**\n\n**The correct answer is $25$.**\n\n**The Fast Way (~30s):** The minimum climbed from $-4$ to $9$, so $n = 13$; every output rises by $13$, and $q(5) = 12 + 13 = 25$.\n\n**The Full Solution:**\nStep 1: Adding the constant $n$ to every output raises the minimum value by exactly $n$, so the minimum of $q$ is $-4 + n$.\nStep 2: Setting $-4 + n = 9$ gives $n = 13$.\nStep 3: Then $q(5) = p(5) + 13 = 12 + 13 = 25$. Check: with $n = 13$ the lowest output of $q$ is $-4 + 13 = 9$, matching the given minimum. $\\checkmark$\n\n**Common Mistakes:**\n* Answering $21$ uses $n = 9$, treating the new minimum as the size of the shift instead of solving $-4 + n = 9$.\n* Answering $13$ stops at the shift $n$ and never evaluates $q$ at $x = 5$.\n* Answering $17$ comes from $n = 9 - 4 = 5$: the shift is $9 - (-4) = 13$, and subtracting a negative ADDS.\n\n**Test Day Takeaway:** A vertical shift changes every output by the same constant, so one known pair of minima pins the shift — then apply that same shift to any other point."
+}

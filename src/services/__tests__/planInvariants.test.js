@@ -64,7 +64,9 @@ describe.each(SCENARIOS)('plan invariants — %s', (_label, diag, profile, prevP
 
   it('week count stays within product bounds', () => {
     expect(plan.weeks.length).toBeGreaterThanOrEqual(1);
-    expect(plan.weeks.length).toBeLessThanOrEqual(5);
+    // Runway-sized arc (Living Study Plan P4): full plans follow the real
+    // runway up to a 12-week cap; first plans stay <=2 below.
+    expect(plan.weeks.length).toBeLessThanOrEqual(12);
     const isFirst = !longitudinal || (longitudinal.scoreTrajectory || []).length <= 1;
     if (isFirst) expect(plan.weeks.length).toBeLessThanOrEqual(2);
   });

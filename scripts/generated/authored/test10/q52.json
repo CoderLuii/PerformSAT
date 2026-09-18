@@ -6,16 +6,16 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 2,
- "passage": "When Richard Wagner opened his opera house at Bayreuth in 1876, he broke with a long theatrical custom by keeping the auditorium dark during the performance and hiding the orchestra in a sunken pit beneath the stage. Audiences accustomed to socializing in a half-lit hall could no longer see one another, and the players' lamps no longer competed with the painted scene. ______ nothing distracted the eye from the illuminated stage, and the spectacle Wagner had designed could hold an audience's attention as a single, unbroken world.",
+ "passage": "Ordinary soda-lime glass expands markedly as it warms, so a vessel heated unevenly, hot at the base while still cool at the rim, can tear itself apart from within. Borosilicate glass, developed in the late nineteenth century, expands only about a third as much for each degree of warming. ______ vessels blown from it shrug off abrupt changes in temperature, and borosilicate soon became the standard glass of the laboratory bench.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "Nevertheless,"
+   "text": "For example,"
   },
   {
    "id": "B",
-   "text": "For example,"
+   "text": "Instead,"
   },
   {
    "id": "C",
@@ -23,9 +23,9 @@
   },
   {
    "id": "D",
-   "text": "Meanwhile,"
+   "text": "Eventually,"
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The passage describes Wagner's changes—darkening the hall and sinking the orchestra out of sight—and then states the effect: nothing distracted the eye from the lit stage, so the staged world could hold the audience's attention unbroken. \"As a result\" marks that cause-and-effect link. \"Nevertheless\" would signal a contrast, \"For example\" an illustration of a prior claim, and \"Meanwhile\" a simultaneous event, none of which expresses the consequence the sentence reports."
+ "explanation": "**Choice C is correct.** The final sentence states the consequence of the property just described: because borosilicate expands far less per degree, vessels made from it tolerate abrupt temperature changes. \"As a result\" marks that cause-effect step.\n\n**The Full Solution:**\n- The causal setup spans two sentences: high expansion makes ordinary glass tear itself apart; borosilicate expands only a third as much.\n- The blank introduces what follows from the low expansion, resistance to thermal shock and adoption in laboratories, so a consequence transition is required.\n\n**Why the other choices are wrong:**\n- A: \"For example\" would make the vessels' durability an illustration of the expansion figure rather than its effect.\n- B: \"Instead\" substitutes one course for a rejected alternative, but nothing in the previous sentence is being rejected.\n- D: \"Eventually\" is purely temporal; it drops the causal link between low expansion and shock resistance that the paragraph is built to deliver."
 }

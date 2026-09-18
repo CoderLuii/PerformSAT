@@ -1,0 +1,56 @@
+{
+  "id": "bank-alg-444",
+  "question": "For three values of $x$, the table shows the corresponding values of the linear functions $f$ and $g$. In the $xy$-plane, how many points lie on both the graph of $y = f(x)$ and the graph of $y = g(x)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)",
+        "g(x)"
+      ],
+      "rows": [
+        [
+          "-1",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "4",
+          "4"
+        ],
+        [
+          "1",
+          "7",
+          "7"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Zero"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two"
+    },
+    {
+      "id": "D",
+      "text": "Infinitely many"
+    }
+  ],
+  "distractorNotes": {
+    "A": "assumes two differently named functions must be different, parallel lines; the identical columns show otherwise.",
+    "B": "assumes the lines cross once, but lines that agree at two or more points are the same line.",
+    "C": "two straight lines cannot meet at exactly two points."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Same Line Infinitely Many Solutions**\n\n**Choice D is correct.**\n\n**The Fast Way (~8s):** The two linear functions agree at three different inputs, so their graphs are the same line, and every point on it is shared.\n\n**The Full Solution:**\nStep 1: From the table, $f$ has slope $\\frac{4 - 1}{0 - (-1)} = 3$ and $f(0) = 4$, so $f(x) = 3x + 4$.\nStep 2: Likewise $g$ has slope $\\frac{4 - 1}{0 - (-1)} = 3$ and $g(0) = 4$, so $g(x) = 3x + 4$. Same slope and same intercept: the graphs coincide.\nStep 3: Check: two distinct lines can share at most one point, but these share $(-1, 1)$, $(0, 4)$, and $(1, 7)$, so they must be the same line. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (Zero): assumes two differently named functions must be different, parallel lines; the identical columns show otherwise.\n* Choice B (Exactly one): assumes the lines cross once, but lines that agree at two or more points are the same line.\n* Choice C (Exactly two): two straight lines cannot meet at exactly two points.\n\n**Test Day Takeaway:** Two lines that share two points are the same line; a table with matching columns is the \"infinitely many solutions\" case in disguise."
+}

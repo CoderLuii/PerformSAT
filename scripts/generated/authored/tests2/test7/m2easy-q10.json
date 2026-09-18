@@ -1,0 +1,29 @@
+{
+  "id": 10,
+  "question": "A stationery wholesaler charges $C = 4.5n + k$ dollars for an order of $n$ notebooks, where $k$ is a fixed handling fee. An order of $60$ notebooks costs $\\$312$. What is the cost, in dollars, of an order of $100$ notebooks?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$450$"
+    },
+    {
+      "id": "B",
+      "text": "$492$"
+    },
+    {
+      "id": "C",
+      "text": "$520$"
+    },
+    {
+      "id": "D",
+      "text": "$534$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "computes 4.5(100) and omits the \\$42 handling fee entirely",
+    "C": "scales the \\$312 total proportionally, 312(100/60) = 520, treating the cost as directly proportional to n",
+    "D": "adds the \\$42 handling fee twice: 450 + 2(42) = 534"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Linear Cost Setup**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $312-4.5(60)=42$ is the handling fee, so $100$ notebooks cost $4.5(100)+42=\\$492$.\n\n**The Full Solution:**\nStep 1: Substitute the known order into $C=4.5n+k$: $312=4.5(60)+k$, so $312=270+k$.\nStep 2: Solve for the fee: $k=312-270=42$ dollars. The fee is charged once per order, not once per notebook.\nStep 3: Now evaluate at $n=100$: $C=4.5(100)+42=450+42=492$ dollars. Check: the extra $40$ notebooks add $4.5(40)=\\$180$, and $312+180=492$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($450$): computes $4.5(100)$ and forgets the $\\$42$ handling fee.\n* Choice C ($520$): scales the $\\$312$ by $\\frac{100}{60}$. That would be right only if the cost were directly proportional to $n$, but the fixed fee breaks proportionality.\n* Choice D ($534$): adds the $\\$42$ fee a second time on top of the fee already inside the $\\$312$ order.\n\n**Test Day Takeaway:** A fixed fee makes cost linear but NOT proportional — solve for the fee first, then rebuild the total; never scale one total to another."
+}

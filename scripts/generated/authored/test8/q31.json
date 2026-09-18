@@ -1,31 +1,31 @@
 {
-  "id": 831,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "Underwater archaeologists excavating a shipwreck confront a problem that dry-land sites rarely pose. Wooden timbers that have lain stable on the seabed for centuries, their cells swollen with water, can ____ within hours of being raised into the air, splitting and shrinking as they dry. Conservators therefore keep many finds submerged until they can be treated with chemicals that replace the water without collapsing the wood.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "stabilize"
-    },
-    {
-      "id": "B",
-      "text": "float"
-    },
-    {
-      "id": "C",
-      "text": "deteriorate"
-    },
-    {
-      "id": "D",
-      "text": "harden"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The sentence describes timbers splitting and shrinking once they dry, a rapid decline, so the blank needs a verb for breaking down or falling apart. \"Deteriorate\" fits. \"Stabilize\" and \"harden\" suggest the wood becomes sound, the opposite of splitting and shrinking; \"float\" describes a movement in water and has nothing to do with the drying damage the passage warns about."
+ "id": 831,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "The shorthand systems that conquered the nineteenth-century courtroom were above all ____: a reporter's pen traced not letters but simple strokes standing for whole sounds, and a single curve, thickened or lightly flicked, might set down a syllable or an entire common word. What ordinary spelling spread across a dozen characters, a trained hand could catch in one.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "decorative"
+  },
+  {
+   "id": "B",
+   "text": "unreliable"
+  },
+  {
+   "id": "C",
+   "text": "economical"
+  },
+  {
+   "id": "D",
+   "text": "spontaneous"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The clause after the colon restates the blank: a system in which one penned curve carries a syllable or a whole common word is one that wastes no motion — an \"economical\" script.\n\n**The Full Solution:**\n- The sentence's structure is definitional: the blank names a quality, and the colon introduces its explanation.\n- The explanation is all about compression — strokes stand for whole sounds, single curves for entire words.\n- The word that sums up getting maximum meaning from minimum writing is \"economical.\"\n\n**Why the other choices are wrong:**\n- A: \"Decorative\" describes ornament, but the strokes' design serves speed, not appearance.\n- B: \"Unreliable\" contradicts the passage, which presents the systems as working tools of court reporting.\n- D: \"Spontaneous\" misses the point that these systems were deliberately designed, their shortcuts planned in advance."
 }

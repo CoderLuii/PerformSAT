@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "A theater has $340$ seats, and $45\\%$ of these seats are in the balcony. How many of the seats in this theater are in the balcony?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$153$"
+    },
+    {
+      "id": "B",
+      "text": "$187$"
+    },
+    {
+      "id": "C",
+      "text": "$295$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}530$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the complement",
+    "C": "subtracts 45 as a count",
+    "D": "multiplies by 4.5"
+  },
+  "correctAnswer": "A",
+  "hint": "Turn the percent into a decimal, then multiply it by the total number of seats.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** $0.45 \\times 340 = 153$.\n\n**The Full Solution:**\nStep 1: Finding a percent OF a quantity means multiplying, so write $45\\%$ as the decimal $0.45$.\nStep 2: Multiply: $0.45 \\times 340 = 153$.\nStep 3: So $153$ seats are in the balcony. Check the size: $45\\%$ is a little under half, and $153$ is a little under half of $340$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($187$): computes $340 - 153$, the number of seats that are NOT in the balcony.\n* Choice C ($295$): subtracts $45$ from $340$, treating the percent as a count of seats.\n* Choice D ($1{,}530$): multiplies by $4.5$ instead of $0.45$, misplacing the decimal point.\n\n**Test Day Takeaway:** A percent of a total is always smaller than the total when the percent is under $100$ — a quick size check catches decimal-point slips."
+}

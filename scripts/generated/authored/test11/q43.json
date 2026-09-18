@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "can readily be understood by any sufficiently trained whistler, regardless of which particular spoken language that whistler happens to know beforehand."
-    },
-    {
-      "id": "B",
-      "text": "conveys a meaning that is entirely independent of the spoken language of the community that happens to produce it."
-    },
-    {
-      "id": "C",
-      "text": "carries information that a listener recovers by mapping it onto the spoken language he or she already knows, rather than through the whistling alone."
-    },
-    {
-      "id": "D",
-      "text": "can encode the words of a tonal spoken language but is fundamentally incapable of encoding the words of any non-tonal language whatsoever, in any community."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage says whistled speech encodes a community's spoken language and is understood only by those who already speak it, so a listener must map the whistles onto the spoken language to recover the message. Choice C states that. Choice A contradicts the point that comprehension requires knowing the local language; Choice B denies the dependence on spoken language the passage stresses; and Choice D is too absolute, since the passage says non-tonal whistlers simply encode word features another way, not that they cannot encode them at all.",
-  "passage": "Whistled languages, found in a handful of communities around the world, let people converse across long distances by whistling. In a community whose spoken language is tonal, whistlers reproduce the pitch contours that distinguish words; in a community whose spoken language relies instead on vowels and consonants, whistlers must encode those features in some other way, since a whistle carries little besides pitch. Researchers note that whistled speech is generally understood only by people who already speak the local spoken language. It follows that a whistled message ______",
-  "_meta": {
-    "anchor": "linguistics of tone languages: whistled speech parasitic on the spoken language"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the astronomers who copied the tables out rarely understood the planetary models behind them."
   },
-  "id": 1143,
-  "module": 2
+  {
+   "id": "B",
+   "text": "criticism of the tables' underlying models was largely confined to astronomers working outside the universities."
+  },
+  {
+   "id": "C",
+   "text": "an astronomer could adopt the tables as a working tool without endorsing the models behind them."
+  },
+  {
+   "id": "D",
+   "text": "the tables spread chiefly because university statutes required students to copy them by hand."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** Each strand of manuscript evidence severs use from belief: canons teach only how to compute, critical treatises travel bound to the very tables they attack, and statutes demand mastery \"whatever doctrine\" a student held. Together they license exactly one conclusion — the tables could be adopted as a tool without endorsing their models.\n\n**The Full Solution:**\n- The passage opens with the inference under review: spread of the tables was read as acceptance of the models.\n- Evidence 1 (how-to canons without justification) shows use did not require persuasion; evidence 2 (critics who still bound in the tables) shows even disbelievers used them; evidence 3 (statutes aimed at calendars and horoscopes) shows institutions demanded competence, not doctrine.\n- The modest common conclusion is the tool-belief separation, and choice C claims no more than that.\n\n**Why the other choices are wrong:**\n- A: It overshoots — critics who wrote treatises against the models understood them well; the evidence shows independence of use from belief, not ignorance.\n- B: The critical treatises appear in university manuscript collections; nothing places criticism outside the universities.\n- D: The statutes explain why students needed the tables, not that copying requirements drove their spread — a mechanism the passage never asserts.",
+ "passage": "Historians of astronomy long treated the spread of the Alfonsine Tables through fourteenth-century Europe as evidence that astronomers everywhere had accepted the planetary models behind them. The manuscripts tell a more tangled story. Many copies transmit the numbers alongside canons that explain only how to use the tables, never why their models should be believed; others bind the tables together with treatises openly critical of those very models. And university statutes list the tables among the tools students must master for the practical work of calendars and horoscopes, whatever doctrine those students held about the heavens. Taken together, the evidence suggests that ______",
+ "_meta": {
+  "anchor": "medieval astronomical tables — manuscript evidence separating computational use from doctrinal acceptance",
+  "distractors": {
+   "A": "overshoot — independence misread as ignorance",
+   "B": "location claim without support",
+   "D": "invented causal mechanism"
+  }
+ },
+ "id": 1143,
+ "module": 2
 }

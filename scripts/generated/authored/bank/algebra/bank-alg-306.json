@@ -1,0 +1,29 @@
+{
+ "question": "In a scoring model for a decathlon event, $4(3x - c) + 2x = 46$, where $c$ is a constant and $x$ is a measured distance in meters. The solution to this equation is $x = 5$. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-6$"
+  },
+  {
+   "id": "B",
+   "text": "$3.5$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "solves $4c = -24$ instead of $-4c = -24$",
+  "B": "drops the $+2x$ term, solving $60 - 4c = 46$",
+  "D": "fails to distribute the $4$ to $c$, solving $70 - c = 46$"
+ },
+ "explanation": "**SAT Pattern: Solve for a Parameter Given a Solution**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Substituting $x = 5$ gives $4(15 - c) + 10 = 46$, so $70 - 4c = 46$ and $c = 6$.\n\n**The Full Solution:**\n\nStep 1: Substitute $x = 5$: $4(3 \\cdot 5 - c) + 2 \\cdot 5 = 46$, that is, $4(15 - c) + 10 = 46$.\n\nStep 2: Distribute and combine: $60 - 4c + 10 = 46$, so $70 - 4c = 46$.\n\nStep 3: Then $-4c = -24$ and $c = 6$. Check: $4(15 - 6) + 10 = 36 + 10 = 46$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-6$): loses a sign and solves $4c = -24$.\n\n* Choice B ($3.5$): drops the $+2x$ term, so the equation becomes $60 - 4c = 46$.\n\n* Choice D ($24$): distributes the $4$ to $3x$ but not to $c$, giving $70 - c = 46$.\n\n**Test Day Takeaway:** Substitute the known solution first, then distribute across the entire parenthesis before isolating the constant.",
+ "id": "bank-alg-306"
+}

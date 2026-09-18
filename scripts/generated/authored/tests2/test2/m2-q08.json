@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "For a constant $k$, the product of $\\sqrt[3]{8^{2x}}$ and $4^{x-3}$ equals $2^{kx-6}$ at every value of $x$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the two powers instead of multiplying them, getting 2x - (2x - 6) = 6, an exponent with no x-term, so k = 0",
+  "B": "rewrites 4 as 2 to the first power, getting 2x + (x - 3) = 3x - 3 and reading k = 3",
+  "D": "drops the cube root, getting 6x + (2x - 6) = 8x - 6 and reading k = 8"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** $\\sqrt[3]{8^{2x}} = \\sqrt[3]{2^{6x}} = 2^{2x}$ and $4^{x-3} = 2^{2x-6}$, so the product is $2^{4x-6}$ and $k = 4$.\n\n**The Full Solution:**\nStep 1: Put the first factor in base $2$: $8^{2x} = (2^3)^{2x} = 2^{6x}$, and a cube root divides the exponent by $3$, so $\\sqrt[3]{2^{6x}} = 2^{2x}$.\nStep 2: Put the second factor in base $2$: $4^{x-3} = (2^2)^{x-3} = 2^{2x-6}$.\nStep 3: Multiplying powers of the same base adds exponents: $2^{2x} \\cdot 2^{2x-6} = 2^{4x-6}$. Matching this with $2^{kx-6}$ gives $k = 4$. Check at $x = 3$: $\\sqrt[3]{8^6} \\cdot 4^0 = 8^2 = 64 = 2^6$, and $4(3) - 6 = 6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$): subtracts the second exponent instead of adding it, giving $2x - (2x - 6) = 6$. The two factors are multiplied, so their exponents add.\n* Choice B ($3$): treats $4$ as $2^1$, giving $2x + (x - 3) = 3x - 3$. Since $4 = 2^2$, the exponent $x - 3$ doubles to $2x - 6$ — which is exactly the constant $-6$ the target form shows.\n* Choice D ($8$): converts $8$ to $2^3$ but never applies the cube root, leaving $6x + (2x - 6) = 8x - 6$. A cube root is the exponent $\\frac{1}{3}$, so it divides $6x$ by $3$.\n\n**Test Day Takeaway:** Convert radicals to fractional exponents and every base to a single common base before combining; when the target form already shows the constant term, use it to confirm the conversion was done right."
+}

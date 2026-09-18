@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-388",
+  "question": "A streaming service had $6{,}000$ active accounts at the end of year $0$, and the number of active accounts grows by $15\\%$ each year. The table gives the number of active accounts at the end of years $0$, $1$, and $2$. Which of the following functions models the number of active accounts at the end of year $t$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Year, t",
+        "Active accounts"
+      ],
+      "rows": [
+        [
+          "0",
+          "6,000"
+        ],
+        [
+          "1",
+          "6,900"
+        ],
+        [
+          "2",
+          "7,935"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$A(t) = 6{,}000(0.15)^t$"
+    },
+    {
+      "id": "B",
+      "text": "$A(t) = 6{,}000(1.15)^t$"
+    },
+    {
+      "id": "C",
+      "text": "$A(t) = 6{,}000(15)^t$"
+    },
+    {
+      "id": "D",
+      "text": "$A(t) = 6{,}000 + 900t$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the growth rate itself as the base",
+    "C": "drops the percent sign, using 15 as the base",
+    "D": "models the change as a constant yearly amount"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Exponential Parameters**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Growth of $15\\%$ per year means multiply by $1.15$ each year: $A(t) = 6{,}000(1.15)^t$.\n\n**The Full Solution:**\nStep 1: A constant percent change each year is exponential, of the form $A(t) = a(b)^t$ with $a$ the starting amount, so $a = 6{,}000$.\nStep 2: Growing by $15\\%$ leaves $100\\% + 15\\% = 115\\%$ of the previous year, so $b = 1.15$.\nStep 3: $A(t) = 6{,}000(1.15)^t$. Check against the table: $A(1) = 6{,}900$ and $A(2) = 7{,}935$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: uses the rate $0.15$ as the base, which would shrink the count to $15\\%$ of its size each year.\n* Choice C: drops the percent sign entirely, multiplying by $15$ each year.\n* Choice D: adds the first year's increase of $900$ forever; the table shows the second increase is $1{,}035$, not $900$.\n\n**Test Day Takeaway:** A percent GROWTH rate becomes the base $1 + r$; only the amount above $1$ is the percent itself."
+}

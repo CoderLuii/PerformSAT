@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A beet-loading conveyor rises from the field to a trailer at an angle of $30^\\circ$ with the level ground, and its horizontal run measures $4\\sqrt{3}$ meters. What is the length, in meters, of the conveyor?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$4\\sqrt{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$8\\sqrt{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the vertical rise instead of the conveyor's length",
+  "B": "repeats the given horizontal run",
+  "D": "doubles the run instead of the rise"
+ },
+ "correctAnswer": "C",
+ "hint": "The run is not the side opposite the $30^\\circ$ angle.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~35s):** The run is the longer leg, $4\\sqrt{3}$, so the shorter leg is $4$ and the conveyor, the hypotenuse, is $8$ meters.\n\n**The Full Solution:**\nStep 1: The conveyor, its horizontal run, and its vertical rise form a $30$-$60$-$90$ triangle, and the run lies opposite the $60^\\circ$ angle, so it is the longer leg.\nStep 2: The longer leg is $\\sqrt{3}$ times the shorter leg, so the rise is $\\frac{4\\sqrt{3}}{\\sqrt{3}} = 4$ meters.\nStep 3: The hypotenuse is twice the shorter leg, so the conveyor is $8$ meters long. Check: $4^2 + (4\\sqrt{3})^2 = 16 + 48 = 64 = 8^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reporting the vertical rise, the shorter leg, instead of the conveyor itself.\n* Choice B ($4\\sqrt{3}$): repeating the horizontal run that the question already gave.\n* Choice D ($8\\sqrt{3}$): doubling the run; the hypotenuse is twice the SHORTER leg, not twice the longer one.\n\n**Test Day Takeaway:** In a $30$-$60$-$90$ triangle, find the shorter leg first — every other length is measured from it."
+}

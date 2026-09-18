@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-315",
+  "question": "The equation $\\sqrt{2x - 6} = 4$ has exactly one solution, and that solution is a positive integer. What is the value of $x$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5$"
+    },
+    {
+      "id": "B",
+      "text": "$7$"
+    },
+    {
+      "id": "C",
+      "text": "$11$"
+    },
+    {
+      "id": "D",
+      "text": "$26$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "never squares",
+    "B": "doubles 4 instead of squaring it",
+    "D": "squares term by term inside the radical"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Square both sides: $2x - 6 = 16$, so $2x = 22$ and $x = 11$.\n\n**The Full Solution:**\nStep 1: The radical already stands alone, so squaring both sides is legal: $\\left(\\sqrt{2x - 6}\\right)^2 = 4^2$ gives $2x - 6 = 16$.\nStep 2: Adding $6$ to each side gives $2x = 22$.\nStep 3: Dividing by $2$ gives $x = 11$. Check: $\\sqrt{2(11) - 6} = \\sqrt{16} = 4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): never squares, solving $2x - 6 = 4$.\n* Choice B ($7$): doubles the $4$ instead of squaring it, solving $2x - 6 = 8$.\n* Choice D ($26$): squares the radicand term by term, solving $2x - 36 = 16$.\n\n**Test Day Takeaway:** Squaring undoes a square root only when the radical stands alone, and it applies to the whole side at once — never term by term."
+}

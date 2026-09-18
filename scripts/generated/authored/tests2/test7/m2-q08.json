@@ -1,0 +1,6 @@
+{
+ "id": 8,
+ "question": "In a food-science model, the crushing strength $s$, in newtons, of a dried apple slice at a given moisture level satisfies the equation $\\sqrt{5s - 11} = 8$. What is the value of $s$?",
+ "correctAnswer": "15",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**The correct answer is 15.**\n\n**The Fast Way (~20s):** Square both sides: $5s-11=64$, so $5s=75$ and $s=15$.\n\n**The Full Solution:**\nStep 1: Undo the radical. Squaring both sides of $\\sqrt{5s-11}=8$ gives $5s-11=64$.\nStep 2: Isolate the variable term. Adding $11$ to both sides gives $5s=75$.\nStep 3: Solve and verify. Dividing by $5$ gives $s=15$. Check: $\\sqrt{5(15)-11}=\\sqrt{75-11}=\\sqrt{64}=8$ ✓\n\n**Common Mistakes:**\n* $75$: squares correctly and adds $11$ to reach $5s=75$, then stops without dividing by $5$.\n* $3.8$: never squares, treating the equation as $5s-11=8$ and solving $5s=19$.\n* $10.6$: squares to $64$ but subtracts $11$ instead of adding it, solving $5s=53$.\n\n**Test Day Takeaway:** Square first, then solve the linear equation that remains — and always substitute your answer back into the original radical, since squaring can introduce solutions that do not work.\n"
+}

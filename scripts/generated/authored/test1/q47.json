@@ -6,26 +6,26 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 2,
- "passage": "In The Spirit Catches You and You Fall Down (1997), Yale-based writer Anne Fadiman traces the case of Lia Lee, a Hmong child in Merced, California, whose epilepsy was treated under two incompatible models of illness. Fadiman builds her cross-cultural account by interviewing Lee's family, reviewing the medical records kept by her American physicians, and ______ how Hmong and biomedical frameworks interpret seizures.",
+ "passage": "Developed by choreographer Rudolf Laban in the 1920s, Labanotation records human movement on a vertical staff read from bottom to top. Each of the system's symbols specifies the direction, level, and timing of a single action, allowing a trained reader to reconstruct an entire dance from ______ score alone — much as a musician revives a symphony from printed notation.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "the comparison of"
+   "text": "its"
   },
   {
    "id": "B",
-   "text": "comparing"
+   "text": "it's"
   },
   {
    "id": "C",
-   "text": "to compare"
+   "text": "their"
   },
   {
    "id": "D",
-   "text": "compares"
+   "text": "they're"
   }
  ],
- "correctAnswer": "B",
- "explanation": "The blank is the third item in a coordinated list governed by the preposition 'by': 'by interviewing Lee's family, reviewing the medical records ..., and ______.' Standard English requires the items in a coordinated list to share the same grammatical form, and the first two items are gerunds ('interviewing,' 'reviewing'). The third item must therefore also be a gerund. 'Comparing' supplies that gerund, producing a parallel three-part list and yielding 'by interviewing ..., reviewing ..., and comparing ...,' which is grammatically correct."
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The blank needs a possessive determiner with the singular antecedent \"an entire dance\" — \"its.\"\n\n**The Full Solution:**\n- The score belongs to the dance being reconstructed, so the blank must be possessive and singular.\n- \"Its\" is the possessive form of \"it\" and matches the antecedent exactly.\n\n**Why the other choices are wrong:**\n- B: \"It's\" contracts \"it is\"/\"it has,\" producing nonsense (\"from it is score alone\") — in this pair the apostrophe marks contraction, not possession.\n- C: \"Their\" is possessive but plural, and no plural antecedent is available — \"symbols\" cannot own the score of \"an entire dance.\"\n- D: \"They're\" compounds both errors: a contraction rather than a possessive, and plural rather than singular."
 }

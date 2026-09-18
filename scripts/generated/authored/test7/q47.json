@@ -1,31 +1,31 @@
 {
-  "id": 747,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 2,
-  "passage": "Some literary historians argue that the classic European novels of the eighteenth and nineteenth centuries cannot be read apart from the history of empire. Such novels take the wealth of overseas colonies so much for granted, these scholars point out, that ______ plots often hinge on colonial money—an inheritance from a sugar plantation, a fortune made in shipping—without ever asking where that money came from.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "his"
-    },
-    {
-      "id": "B",
-      "text": "their"
-    },
-    {
-      "id": "C",
-      "text": "his or her"
-    },
-    {
-      "id": "D",
-      "text": "its"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The possessive pronoun refers to \"novels,\" a plural noun, so the plural possessive \"their\" is correct. Choice D's \"its\" is singular and cannot match the plural antecedent. Choices A and C (\"his\" and \"his or her\") refer to people rather than to the novels and likewise fail to agree with the plural subject."
+ "id": 747,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 2,
+ "passage": "High-speed video of starling flocks has shown that ______ sudden collective turns are not commanded by any leader. Each bird tracks only six or seven nearby neighbors, and a turn begun by a handful of birds at the flock's edge sweeps through thousands of others in under a second.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "his"
+  },
+  {
+   "id": "B",
+   "text": "their"
+  },
+  {
+   "id": "C",
+   "text": "his or her"
+  },
+  {
+   "id": "D",
+   "text": "its"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The pronoun points back to \"starling flocks,\" a plural noun, so the plural pronoun \"their\" is required: the flocks' sudden collective turns.\n\n**The Full Solution:**\n- Trace the antecedent: the turns belong to the flocks in \"video of starling flocks.\"\n- \"Flocks\" is plural, so the pronoun standing in for it must be plural as well.\n- \"Their sudden collective turns\" makes the agreement correct in number.\n\n**Why the other choices are wrong:**\n- A: \"His\" is singular and refers to a male person, not to flocks of birds.\n- C: \"His or her\" likewise refers to individual people and is singular.\n- D: \"Its\" is the right kind of pronoun for a nonhuman antecedent but the wrong number — the antecedent \"flocks\" is plural."
 }

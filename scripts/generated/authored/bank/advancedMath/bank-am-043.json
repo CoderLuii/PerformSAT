@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-043",
+ "question": "A gain factor in a filter design is the product $\\left(2a^{-3}b^{2}\\right)\\left(\\frac{b^{3}}{8a^{2}}\\right)$, where $a$ and $b$ are positive constants. Which expression is equivalent to this gain factor?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{4b^{5}}{a^{5}}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{b^{5}}{4a^{5}}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{b^{5}}{4a}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{a^{5}}{4b^{5}}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "inverts the numerical factor, using 8/2 instead of 2/8",
+  "C": "combines the a exponents as -3 + 2 = -1 instead of -3 - 2 = -5",
+  "D": "swaps which variable lands in the denominator"
+ },
+ "explanation": "**SAT Pattern: Negative Exponent Simplification**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $\\frac{2}{8}=\\frac{1}{4}$, the $a$ exponents give $-3-2=-5$, and the $b$ exponents give $2+3=5$, so the product is $\\frac{b^{5}}{4a^{5}}$.\n\n**The Full Solution:**\nStep 1: Multiply the numerical factors: $2\\cdot\\frac{1}{8}=\\frac{1}{4}$.\nStep 2: The factor $\\frac{1}{a^{2}}$ is $a^{-2}$, so $a^{-3}\\cdot a^{-2}=a^{-5}$.\nStep 3: For $b$, $b^{2}\\cdot b^{3}=b^{5}$, giving $\\frac{1}{4}a^{-5}b^{5}=\\frac{b^{5}}{4a^{5}}$. Check: at $a=b=2$ the original is $\\left(2\\cdot\\frac{1}{8}\\cdot 4\\right)\\left(\\frac{8}{32}\\right)=1\\cdot\\frac{1}{4}=\\frac{1}{4}$, and $\\frac{32}{4(32)}=\\frac{1}{4}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{4b^{5}}{a^{5}}$): flips the numerical factor to 4.\n* Choice C ($\\frac{b^{5}}{4a}$): adds $-3$ and $+2$, treating the denominator's $a^{2}$ as a positive exponent to combine.\n* Choice D ($\\frac{a^{5}}{4b^{5}}$): puts $a$ on top and $b$ underneath, reversing both exponents.\n\n**Test Day Takeaway:** Rewrite every denominator factor as a negative exponent first; then all the exponent work is addition."
+}

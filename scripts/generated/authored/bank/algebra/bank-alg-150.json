@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-150",
+  "question": "A ceramics studio models the kilograms of glaze in two mixing vats by $g = 90 - 4d$ and $g = 6d + 20$, where $d$ is the number of days since mixing began. Which statement best interprets the solution of this system?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "After $7$ days, each vat holds $62$ kilograms of glaze."
+    },
+    {
+      "id": "B",
+      "text": "After $11$ days, each vat holds $86$ kilograms of glaze."
+    },
+    {
+      "id": "C",
+      "text": "After $7$ days, the two vats together hold $62$ kilograms of glaze."
+    },
+    {
+      "id": "D",
+      "text": "After $62$ days, each vat holds $7$ kilograms of glaze."
+    }
+  ],
+  "distractorNotes": {
+    "B": "adds the constants instead of subtracting them, solving 10d = 110 to get d = 11 and g = 86",
+    "C": "reads the shared value 62 as a combined total rather than the amount in each vat",
+    "D": "swaps the coordinates, reporting the glaze amount as the number of days"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Setting $90 - 4d = 6d + 20$ gives $10d = 70$, so $d = 7$ and $g = 62$: on day $7$ both vats hold $62$ kilograms.\n\n**The Full Solution:**\nStep 1: Both equations are solved for $g$, so the solution is the value of $d$ that makes the two expressions equal: $90 - 4d = 6d + 20$.\nStep 2: Add $4d$ to both sides and subtract $20$: $70 = 10d$, so $d = 7$.\nStep 3: Evaluate either expression at $d = 7$: $g = 90 - 4(7) = 62$, and $g = 6(7) + 20 = 62$ as well. The solution $(7, 62)$ means each vat holds $62$ kilograms on day $7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: collects the constants with the wrong sign, solving $10d = 90 + 20 = 110$ to get $d = 11$ and $g = 86$.\n* Choice C: treats the common value $62$ as the two vats' combined glaze rather than the amount each vat holds when the models agree.\n* Choice D: swaps the coordinates of the solution, reporting the glaze amount as a number of days.\n\n**Test Day Takeaway:** The solution of a system of two models is the moment the models AGREE — the shared output value belongs to each model, not to their sum."
+}

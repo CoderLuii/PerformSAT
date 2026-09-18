@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "A pump-curve worksheet defines $f(x) = \\dfrac{x^2 - 9}{x - 3}$ for every input $x$ other than $3$. For what constant $k$ does the equation $f(x) = k$ have no solution?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses x = -3, the other zero of the numerator, and reports f(-3) = 0, an output the function does reach",
+  "B": "reports the excluded input x = 3 instead of the output that cannot occur",
+  "D": "copies the constant 9 from the numerator x^2 - 9"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Rational Equation with No Solution**\n\n**Choice C is correct.** The numerator factors, so $f(x) = x + 3$ for every allowed input; the one output the function can never produce is the value $x + 3$ would take at the forbidden input $x = 3$.\n\n**The Fast Way (~25s):** $\\dfrac{x^2 - 9}{x - 3} = \\dfrac{(x - 3)(x + 3)}{x - 3} = x + 3$ when $x \\neq 3$. The missing output is $3 + 3 = 6$.\n\n**The Full Solution:**\nStep 1: Factor the numerator as a difference of squares: $x^2 - 9 = (x - 3)(x + 3)$.\nStep 2: Cancel the common factor, which is legal for every $x \\neq 3$: $f(x) = x + 3$.\nStep 3: Setting $x + 3 = k$ gives $x = k - 3$, which is an allowed input unless $k - 3 = 3$, that is, unless $k = 6$. Check: $f(x) = 6$ would force $x = 3$, the one input the worksheet excludes, so no input produces $6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$): comes from the other zero of the numerator, $x = -3$. But $x = -3$ is an allowed input and $f(-3) = -3 + 3 = 0$, so $0$ is an output the function actually reaches.\n* Choice B ($3$): reports the excluded input rather than the unreachable output. The question asks for a value of $k$, which lives on the output side.\n* Choice D ($9$): copies the constant from $x^2 - 9$; substituting $k = 9$ gives $x = 6$, a perfectly legal input.\n\n**Test Day Takeaway:** When a rational expression cancels to a line, the graph is that line with one point punched out — the missing output is the height of the hole, not the $x$-value where it sits."
+}

@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 1,
- "passage": "The paleobotanist's search for early plant fossils reaches deliberately beyond the famous quarries that most collections rely ______ the eroding river cliffs of the Welsh borderland, the road cuts exposed during highway construction, and the spoil heaps left behind by abandoned coal mines.",
+ "passage": "To build the Oxford English Dictionary, the editor James Murray relied on an army of volunteer readers, each instructed to copy onto a paper slip any sentence that showed a word in use. Millions of slips accumulated in Murray's iron workroom, and every one of them was filed according to a single organizing ______ the word it was meant to illustrate.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "on, including"
+   "text": "principle, including"
   },
   {
    "id": "B",
-   "text": "on,"
+   "text": "principle,"
   },
   {
    "id": "C",
-   "text": "on:"
+   "text": "principle:"
   },
   {
    "id": "D",
-   "text": "on"
+   "text": "principle"
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The first part of the sentence is a complete independent clause (\"The paleobotanist's search ... reaches deliberately beyond the famous quarries that most collections rely on\"), and what follows is a list that specifies where the search reaches instead. A colon properly introduces that explanatory list after a complete clause. Choice A adds \"including\" after a comma, creating a redundant and awkward join; Choice B uses a comma alone, too weak to introduce the list; and Choice D supplies no punctuation, running the clause directly into the list."
+ "explanation": "**Choice C is correct.** An independent clause ends at \"principle,\" and what follows names that principle, so a colon, which introduces an explanation or specification after a complete clause, is the conventional mark: \"...filed according to a single organizing principle: the word it was meant to illustrate.\"\n\n**The Full Solution:**\n- Everything before the blank stands alone as a sentence, satisfying the colon's requirement of a preceding independent clause.\n- \"The word it was meant to illustrate\" is an appositive that specifies \"a single organizing principle,\" the classic job of a colon.\n\n**Why the other choices are wrong:**\n- A: \"Including\" introduces examples drawn from a set, but the phrase names the one principle itself, not an example of it.\n- B: A comma leaves the relationship between clause and appositive unmarked and reads as a stray pause after a complete statement.\n- D: With no punctuation, \"principle the word\" runs two noun phrases together ungrammatically.",
+ "_meta": {
+  "rule": "colon introducing a specifying appositive after an independent clause",
+  "distractors": {
+   "A": "wrong connector (example-marker for an identity)",
+   "B": "comma cannot introduce the appositive here",
+   "D": "missing boundary"
+  }
+ }
 }

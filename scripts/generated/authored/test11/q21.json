@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": ", the diffraction pattern records the intensity of each scattered beam, but not its phase, and both are needed to reconstruct the structure,"
-    },
-    {
-      "id": "B",
-      "text": "—the diffraction pattern records the intensity of each scattered beam, but not its phase, and both are needed to reconstruct the structure—"
-    },
-    {
-      "id": "C",
-      "text": " the diffraction pattern records the intensity of each scattered beam, but not its phase, and both are needed to reconstruct the structure"
-    },
-    {
-      "id": "D",
-      "text": "—the diffraction pattern records the intensity of each scattered beam, but not its phase, and both are needed to reconstruct the structure,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The blank holds a long parenthetical that explains the phase problem, and that insertion already contains several commas of its own. To bracket an inserted phrase that has internal commas, Standard English uses a matched pair of stronger marks—here, paired em-dashes—so the reader can see where the insertion opens and closes. Paired commas (the first option) would blur into the commas inside the insertion. Mixing a dash with a closing comma (the last option) fails to pair the marks. And omitting punctuation entirely runs the main sentence straight into the insertion.",
-  "passage": "In the early decades of X-ray crystallography, researchers were repeatedly held up by what they called the \"phase problem\" ______ before they could turn a photograph of scattered spots into a three-dimensional map of the atoms packed inside a single crystal.",
-  "_meta": {
-    "anchor": "crystallography: the phase problem",
-    "rule": "paired em-dashes around a parenthetical containing internal commas"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": ", wave troughs reflect radar more strongly than crests do, which skews each reading slightly low, "
   },
-  "id": 1121,
-  "module": 1
+  {
+   "id": "B",
+   "text": "—wave troughs reflect radar more strongly than crests do, which skews each reading slightly low—"
+  },
+  {
+   "id": "C",
+   "text": " wave troughs reflect radar more strongly than crests do, which skews each reading slightly low "
+  },
+  {
+   "id": "D",
+   "text": "—wave troughs reflect radar more strongly than crests do, which skews each reading slightly low,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The explanation of sea state bias is a full clause interrupting the main sentence, and a matched pair of dashes is the conventional way to set off such an interruption.\n\n**The Full Solution:**\n- Remove the insertion and the frame reads cleanly: \"researchers must first correct for what oceanographers call sea state bias ... before the measurements can be compared.\"\n- The inserted material contains its own subject and verb plus a trailing \"which\" clause — an interruption this heavy needs strong, matching fences.\n- Choice B opens with a dash and closes with a dash: the pair must match.\n\n**Why the other choices are wrong:**\n- A: Commas around an insertion that itself contains internal commas and a full clause leave the boundaries ambiguous — the reader cannot tell which commas fence the interruption.\n- C: With no punctuation at all, the inserted clause collides with the frame sentence in an unreadable run-on.\n- D: It opens with a dash but closes with a comma; mismatched fences around a single interruption violate the pairing convention.",
+ "passage": "Researchers converting a satellite's radar echoes into sea-surface heights must first correct for what oceanographers call sea state bias ______ before the measurements from one pass can be compared with those from the next.",
+ "_meta": {
+  "rule": "paired em-dashes around an interrupting clause",
+  "anchor": "satellite altimetry of oceans — sea state bias correction",
+  "distractors": {
+   "A": "comma fences ambiguous around comma-bearing insertion",
+   "C": "no fences, run-on",
+   "D": "mismatched dash-comma pair"
+  }
+ },
+ "id": 1121,
+ "module": 1
 }

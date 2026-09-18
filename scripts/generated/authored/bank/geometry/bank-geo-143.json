@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-143",
+ "question": "A concrete footing is poured as a rectangular prism measuring $1.5$ meters by $0.8$ meters by $0.4$ meters, and the concrete costs \\$250 per cubic meter. What is the cost of the concrete used for one footing?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "\\$60"
+  },
+  {
+   "id": "B",
+   "text": "\\$120"
+  },
+  {
+   "id": "C",
+   "text": "\\$150"
+  },
+  {
+   "id": "D",
+   "text": "\\$675"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves the volume to 0.24 cubic meter, as if the footing were a wedge, giving 60 dollars",
+  "C": "drops the 0.8 factor and prices 1.5 * 0.4 = 0.6 cubic meter",
+  "D": "adds the three dimensions to get 2.7 and prices that as a volume"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Volume of a Rectangular Prism**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The footing holds $1.5(0.8)(0.4) = 0.48$ cubic meter, and $0.48 \\times 250 = 120$.\n\n**The Full Solution:**\nStep 1: The volume of a rectangular prism is the product of its three dimensions: $1.5 \\times 0.8 \\times 0.4$.\nStep 2: $1.5 \\times 0.8 = 1.2$, and $1.2 \\times 0.4 = 0.48$ cubic meter.\nStep 3: At \\$250 per cubic meter the cost is $0.48 \\times 250 = 120$ dollars.\n\nCheck: A full cubic meter would cost \\$250, and $0.48$ is just under half of that. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (\\$60): halves the volume to $0.24$ cubic meter, a step that belongs to a wedge, not a rectangular prism.\n* Choice C (\\$150): drops the $0.8$ factor and prices $1.5 \\times 0.4 = 0.6$ cubic meter.\n* Choice D (\\$675): adds the three dimensions to get $2.7$ and treats that sum as a volume.\n\n**Test Day Takeaway:** Compute the volume completely before applying a unit rate; a dropped factor changes the price, not the units."
+}

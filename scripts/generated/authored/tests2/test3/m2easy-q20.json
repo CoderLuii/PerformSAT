@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "An engineer writes $5(2x - 3) + k = a(x + 4) - 1$ and finds that substituting any number for $x$ produces a true statement, where $a$ and $k$ are constants. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$24$"
+  },
+  {
+   "id": "B",
+   "text": "$39$"
+  },
+  {
+   "id": "C",
+   "text": "$54$"
+  },
+  {
+   "id": "D",
+   "text": "$55$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes 39 - 15 instead of 39 + 15, moving the -15 the wrong way",
+  "B": "stops at the right side's constant 4a - 1 = 39 without undoing the -15 on the left",
+  "D": "drops the -1 on the right, solving -15 + k = 40"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Expand both sides to $10x - 15 + k = ax + 4a - 1$. Matching x-terms gives $a = 10$, and matching constants gives $-15 + k = 39$, so $k = 54$.\n\n**The Full Solution:**\nStep 1: Expand each side. The left becomes $10x - 15 + k$ and the right becomes $ax + 4a - 1$.\nStep 2: Match the x-coefficients. An equation true for every $x$ requires identical coefficients, so $10 = a$.\nStep 3: Match the constant terms using that value. With $a = 10$ the right side's constant is $4(10) - 1 = 39$, so $-15 + k = 39$ and $k = 54$. Check: the left side becomes $10x - 15 + 54 = 10x + 39$, and the right side becomes $10x + 40 - 1 = 10x + 39$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($24$): computes $39 - 15$. The $-15$ is already on the left with $k$, so removing it means adding $15$ to $39$.\n* Choice B ($39$): reports the right side's constant, $4a - 1$. That is what $-15 + k$ equals, not what $k$ equals.\n* Choice D ($55$): forgets the $-1$ and matches $-15 + k$ to $4a = 40$.\n\n**Test Day Takeaway:** \"True for every value of $x$\" means the two sides are the same expression. Expand, match x-coefficients to pin the first constant, then substitute it before matching the constant terms."
+}

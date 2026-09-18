@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-085",
+ "question": "Whenever a swimmer's speed $v$, in meters per second, is positive, a coaching drag table lists the quantity $\\sqrt{v^{5}}$ under the single heading $v^{n}$, where $n$ is the same constant in every row. What number is $n$?",
+ "correctAnswer": "2.5",
+ "explanation": "**SAT Pattern: Exponent Rules with Radicals**\n\n**The correct answer is $2.5$.**\n\n**The Fast Way (~10s):** A square root halves the exponent, so $\\sqrt{v^{5}} = v^{5/2} = v^{2.5}$.\n\n**The Full Solution:**\nStep 1: Rewrite the radical with a fractional exponent: $\\sqrt{v^{5}} = \\left(v^{5}\\right)^{1/2}$.\nStep 2: A power raised to a power multiplies exponents: $5 \\cdot \\frac{1}{2} = \\frac{5}{2}$.\nStep 3: So $v^{n} = v^{5/2}$ and $n = 2.5$. Check: at $v = 4$, $\\sqrt{4^{5}} = \\sqrt{1024} = 32 = 4^{2.5}$ ✓\n\n**Common Mistakes:**\n* $10$ — multiplying the exponent by $2$ instead of dividing by it.\n* $2$ — keeping only the whole-number part of $\\frac{5}{2}$ and discarding the leftover half power.\n\n**Test Day Takeaway:** An odd exponent under a square root always leaves a half in the answer; a fractional exponent is a legal final form."
+}

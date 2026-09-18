@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 2,
-  "passage": "For years, atmospheric chemists puzzled over the rapid springtime collapse of ozone above Antarctica, since the gas-phase reactions known to laboratory science were far too slow to account for losses of that magnitude. In 1986, the atmospheric chemist Susan Solomon, then a researcher at the U.S. National Oceanic and Atmospheric Administration, proposed that the icy surfaces of polar stratospheric clouds ______ heterogeneous reactions that gas chemistry alone cannot sustain, converting inert chlorine reservoirs into the reactive forms that destroy ozone over the southern pole.",
+  "passage": "The Nebra sky disk, a bronze plate inlaid with gold symbols and buried around 1600 BCE in central Europe, is no casual picture of the heavens. Its cluster of seven dots, its crescent, and its full circle are placed with evident care, and two gold arcs along the rim span exactly the angle between the sun's summer and winter rising points at the site where the disk was found. Many researchers therefore read the object as a device that ______ astronomical knowledge — a worked summary of observations its makers needed for tracking the seasons.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "accelerate"
+      "text": "acquires"
     },
     {
       "id": "B",
-      "text": "suppress"
+      "text": "embellishes"
     },
     {
       "id": "C",
-      "text": "enable"
+      "text": "encodes"
     },
     {
       "id": "D",
-      "text": "conclude"
+      "text": "disputes"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"enable.\" The first sentence sets up the puzzle Solomon's hypothesis must solve: the gas-phase reactions known to laboratory science were \"far too slow to account for\" the rapid springtime ozone loss observed over Antarctica. The sentence containing the blank then says explicitly that the heterogeneous reactions in question are ones \"that gas chemistry alone cannot sustain.\" The blank therefore needs a verb meaning to make those reactions possible — to provide the conditions under which a reaction that does not effectively proceed in the gas phase can occur. \"Enable\" fits exactly: in Solomon's mechanism, the icy surfaces of polar stratospheric clouds make the heterogeneous chemistry possible, converting inert chlorine reservoirs into the reactive forms that destroy ozone. The verb also matches the register of the surrounding atmospheric-chemistry vocabulary without overstating the role of the cloud surfaces.\n\nChoice A is incorrect. \"accelerate\" lives in the same general family as \"enable\" (both describe a surface or catalyst aiding a reaction), and it collocates naturally with \"reactions\" in chemistry writing. But \"accelerate\" implies speeding up a process that is already proceeding. The passage rules that reading out: it says the gas-phase reactions are \"far too slow to account for\" the observed ozone loss and that the reactions in the blank are ones gas chemistry \"alone cannot sustain.\" The cloud surfaces are not making a slow reaction faster; they are making possible a chemistry that does not effectively occur without them. The verb has the right general direction but overshoots the specificity the passage establishes. Choice D is incorrect. \"conclude\" collocates with \"reactions\" in laboratory English (a reaction concludes when its reactants are consumed) and so feels topical inside a chemistry passage. But to conclude a reaction is to bring it to completion, not to make it possible in the first place. Solomon's claim is about how the heterogeneous chemistry begins on the cloud surfaces, releasing reactive chlorine; the passage says nothing about the cloud surfaces finishing reactions, only that they sustain reactions that gas chemistry cannot. The word picks up the chemistry-passage register while missing the precise function the cloud surfaces are said to perform. Choice B is incorrect. \"suppress\" reverses the role the passage assigns to the polar stratospheric clouds. Solomon's mechanism credits the cloud surfaces with releasing reactive chlorine that destroys ozone; the entire point of the hypothesis is that the clouds make the destructive chemistry go forward, not that they hold it back. To say the icy surfaces \"suppress\" the heterogeneous reactions would mean they prevent the very chemistry the passage attributes to them, contradicting both the springtime ozone loss the first sentence describes and the conversion of \"inert chlorine reservoirs into the reactive forms that destroy ozone\" the second sentence names."
+  "explanation": "**Choice C is correct.** The disk's markings capture real observations in symbolic form — dots, arcs, and circles standing for celestial facts — and \"encodes\" means exactly that: to represent information in a system of symbols.\n\n**The Full Solution:**\n- The passage's evidence is representational: the arcs \"span exactly the angle\" between solstice sunrise points, so the design stores a measured fact about the sky.\n- The appositive after the dash defines the blank — \"a worked summary of observations\" — that is, knowledge fixed into the object's design.\n- \"Encodes\" is the verb for storing knowledge in symbolic form, matching both the evidence and the appositive.\n\n**Why the other choices are wrong:**\n- A: \"acquires\" would have the object gathering knowledge itself; the makers observed the sky, and the disk merely holds what they learned.\n- B: \"embellishes\" treats the gold symbols as decoration, but the passage insists the opposite — this is \"no casual picture,\" and the placements are exact.\n- D: \"disputes\" would make the disk argue against astronomical knowledge, a reading nothing in the passage supports."
 }

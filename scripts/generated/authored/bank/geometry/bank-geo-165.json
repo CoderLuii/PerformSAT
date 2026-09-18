@@ -1,0 +1,50 @@
+{
+  "id": "bank-geo-165",
+  "question": "In the figure, lines $\\ell$ and $m$ are parallel and are cut by transversal $t$. What is the value of $x$?",
+  "diagram": {
+    "type": "parallelLines",
+    "params": {
+      "angles": {
+        "top": [
+          "54°",
+          ""
+        ],
+        "bottom": [
+          "",
+          "x°"
+        ]
+      },
+      "lineLabels": [
+        "ℓ",
+        "m",
+        "t"
+      ],
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36°$"
+    },
+    {
+      "id": "B",
+      "text": "$54°$"
+    },
+    {
+      "id": "C",
+      "text": "$126°$"
+    },
+    {
+      "id": "D",
+      "text": "$144°$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the complement of the marked angle",
+    "B": "treats the two marked angles as a congruent pair",
+    "D": "adds 90 to the marked angle"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Angles with Parallel Lines and Transversals**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The $54°$ angle corresponds to the angle on the far side of the $x°$ angle at line $m$, and those two form a linear pair, so $x = 180 - 54 = 126$.\n\n**The Full Solution:**\nStep 1: At line $m$, the angle that corresponds to the $54°$ angle sits in the matching position, on the same side of the transversal, so it also measures $54°$.\nStep 2: That $54°$ angle and the angle marked $x°$ lie on opposite sides of the transversal along line $m$, so they form a linear pair and their measures sum to $180$.\nStep 3: $x = 180 - 54 = 126$. Check: $126 + 54 = 180$, and the obtuse marked angle is on the opposite side of the transversal from the acute $54°$ angle, as the figure shows. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($36°$): takes the complement, $90 - 54$, a relationship that does not apply to a linear pair.\n* Choice B ($54°$): assumes the two marked angles are a congruent pair, but they sit on opposite sides of the transversal at different lines.\n* Choice D ($144°$): adds $90$ to $54$, as if the transversal met the parallel lines at a right angle.\n\n**Test Day Takeaway:** Slide the known angle down to the second parallel line first (corresponding angles are equal), and only then use the linear pair at that intersection."
+}

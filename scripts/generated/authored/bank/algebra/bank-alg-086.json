@@ -1,0 +1,58 @@
+{
+  "id": "bank-alg-086",
+  "question": "The graph of line $k$ is shown in the $xy$-plane. Line $k$ passes through the origin and the point $(4, 6)$. Which of the following is an equation of line $k$?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 1.5,
+      "yIntercept": 0,
+      "xRange": [
+        -6,
+        8
+      ],
+      "yRange": [
+        -6,
+        10
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "label": "k"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = \\dfrac{3}{2}x$"
+    },
+    {
+      "id": "B",
+      "text": "$y = \\dfrac{2}{3}x$"
+    },
+    {
+      "id": "C",
+      "text": "$y = \\dfrac{3}{2}x + 4$"
+    },
+    {
+      "id": "D",
+      "text": "$y = 6x$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "inverts the slope (run over rise)",
+    "C": "adds the x-coordinate 4 as a y-intercept",
+    "D": "uses the y-coordinate 6 as the slope"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Line Through Origin**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Through the origin, the $y$-intercept is $0$ and the slope is $\\frac{6 - 0}{4 - 0} = \\frac{3}{2}$, so $y = \\frac{3}{2}x$.\n\n**The Full Solution:**\nStep 1: A line through the origin has $y$-intercept $0$, so its equation has the form $y = mx$.\nStep 2: Slope from the two points: $m = \\frac{6 - 0}{4 - 0} = \\frac{6}{4} = \\frac{3}{2}$.\nStep 3: The equation is $y = \\frac{3}{2}x$. Check: at $x = 4$, $y = \\frac{3}{2}(4) = 6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($y = \\frac{2}{3}x$): inverts the slope, using run over rise; at $x = 4$ it gives $y = \\frac{8}{3}$, not $6$.\n* Choice C ($y = \\frac{3}{2}x + 4$): tacks on the $x$-coordinate $4$ as a $y$-intercept, but the line passes through the origin, so the intercept is $0$.\n* Choice D ($y = 6x$): uses the $y$-coordinate $6$ as the slope instead of dividing rise by run.\n\n**Test Day Takeaway:** Through the origin means $y = mx$ with no constant; compute $m$ as rise over run from the origin to the given point and verify by substitution."
+}

@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "For a function $m$, the graph of $y=-m(x)$ in the $xy$-plane can be obtained by reflecting the graph of $y=m(x)$ across which of the following lines?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The line $y=-x$"
+    },
+    {
+      "id": "B",
+      "text": "The line $y=x$"
+    },
+    {
+      "id": "C",
+      "text": "The $x$-axis"
+    },
+    {
+      "id": "D",
+      "text": "The $y$-axis"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reflects through the origin instead of the x-axis",
+    "B": "confuses a sign change with taking the inverse",
+    "D": "confuses -m(x) with m(-x)"
+  },
+  "correctAnswer": "C",
+  "hint": "Track what the negative sign does to a single point $(a,b)$ on the graph of $m$.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** Negating the output sends $(a,b)$ to $(a,-b)$ — the $x$-coordinate is fixed and the height flips, which is a mirror in the $x$-axis.\n\n**The Full Solution:**\nStep 1: The negative sign is applied after $m$ evaluates, so it multiplies every output by $-1$.\nStep 2: A point $(a,b)$ on $y=m(x)$ therefore corresponds to $(a,-b)$ on $y=-m(x)$: same horizontal position, opposite height.\nStep 3: Points above the $x$-axis land the same distance below it, and points on the axis stay put — the definition of a reflection across the $x$-axis. Check: if $m(4)=7$, then $-m(4)=-7$, and $(4,7)$ and $(4,-7)$ are mirror images in the $x$-axis. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (the line $y=-x$): reflecting across $y=-x$ sends $(a,b)$ to $(-b,-a)$, which mixes the coordinates; only the output changed here.\n* Choice B (the line $y=x$): reflecting across $y=x$ swaps the coordinates and produces the inverse relation, not a sign change.\n* Choice D (the $y$-axis): that reflection is $m(-x)$, with the negative sign attached to the input rather than to the output.\n\n**Test Day Takeaway:** A negative outside the function flips $y$ (reflection in the $x$-axis); a negative inside flips $x$ (reflection in the $y$-axis)."
+}

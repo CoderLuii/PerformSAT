@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "A cube has a volume of $64$ cubic feet. A second cube has an edge length that is $3$ times the edge length of the first cube. What is the volume, in cubic feet, of the second cube?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$192$"
+  },
+  {
+   "id": "C",
+   "text": "$576$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}728$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the edge length of the second cube rather than its volume",
+  "B": "multiplies the volume by $3$ instead of by $3^3$",
+  "C": "multiplies the volume by $3^2$"
+ },
+ "correctAnswer": "D",
+ "hint": "Find the first edge length before scaling anything.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~35s):** The first edge is $4$ feet, the second is $12$ feet, and $12^3 = 1{,}728$.\n\n**The Full Solution:**\nStep 1: $s^3 = 64$ gives $s = 4$ feet for the first cube.\nStep 2: The second cube has edge $3(4) = 12$ feet.\nStep 3: $12^3 = 1{,}728$ cubic feet.\n\nVerification: $64 \\cdot 3^3 = 64(27) = 1{,}728$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): gives the edge length of the second cube rather than its volume.\n* Choice B ($192$): multiplies the volume by $3$ instead of by $3^3$.\n* Choice C ($576$): multiplies the volume by $3^2$.\n\n**Test Day Takeaway:** Tripling an edge multiplies volume by $27$, because the factor applies once for each of the three dimensions."
+}

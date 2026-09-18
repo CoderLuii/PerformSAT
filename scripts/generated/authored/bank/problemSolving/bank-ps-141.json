@@ -1,0 +1,37 @@
+{
+  "id": "bank-ps-141",
+  "question": "The table shows the germination results for $240$ seeds of two varieties. If one of the seeds that did not germinate is selected at random, what is the probability that it is an heirloom seed?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Germinated",
+        "Did not germinate",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Heirloom",
+          "84",
+          "36",
+          "120"
+        ],
+        [
+          "Hybrid",
+          "96",
+          "24",
+          "120"
+        ],
+        [
+          "Total",
+          "180",
+          "60",
+          "240"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "3/5",
+  "explanation": "**SAT Pattern: Two-Way Table Conditional Probability**\n\n**The correct answer is $\\frac{3}{5}$.**\n\n**The Fast Way (~10s):** Of the $60$ seeds that did not germinate, $36$ are heirloom: $\\frac{36}{60} = \\frac{3}{5}$.\n\n**The Full Solution:**\nStep 1: The condition \"did not germinate\" restricts the sample space to that column, whose total is $60$.\nStep 2: The heirloom entry in that column is $36$.\nStep 3: Probability $= \\frac{36}{60} = \\frac{3}{5}$, which can also be entered as $0.6$. Check: $\\frac{3}{5}$ of $60$ is $36$. $\\checkmark$\n\n**Common Mistakes:** Dividing by the heirloom total, $\\frac{36}{120} = \\frac{3}{10}$, which is the probability that an heirloom seed failed to germinate (the condition reversed); dividing by all $240$ seeds to get $\\frac{3}{20}$; taking the hybrid entry, $\\frac{24}{60} = \\frac{2}{5}$, the complement.\n\n**Test Day Takeaway:** Find the row or column named after the \"given\" condition; its total is the denominator, and the cell inside it is the numerator."
+}

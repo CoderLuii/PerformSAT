@@ -1,0 +1,49 @@
+{
+ "id": 6,
+ "question": "For a clinical study, blood-glucose deviation from a target level, in milligrams per deciliter, is modeled by a quadratic function $f$ of the time $t$, in hours, after a meal. The table gives three of the modeled deviations. The deviation is zero at two times. How many hours apart are those two times?",
+ "questionTable": {
+  "headers": [
+   "Time $t$ (hours)",
+   "Deviation $f(t)$ (mg/dL)"
+  ],
+  "rows": [
+   [
+    "$0$",
+    "$12$"
+   ],
+   [
+    "$2$",
+    "$-8$"
+   ],
+   [
+    "$4$",
+    "$-12$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2.5$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves the gap, giving the distance 2.5 from the axis of symmetry to one zero rather than between the two zeros",
+  "C": "adds the two times, 1 + 6 = 7, instead of subtracting them",
+  "D": "computes the square root of the discriminant, 10, and forgets to divide by the leading coefficient 2"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The table forces $f(t) = 2t^2 - 14t + 12 = 2(t - 1)(t - 6)$. The deviation is zero at $t = 1$ and $t = 6$, which are $5$ hours apart.\n\n**The Full Solution:**\nStep 1: Write $f(t) = At^2 + Bt + C$. From $f(0) = 12$, $C = 12$. From $f(2) = -8$: $4A + 2B + 12 = -8$, so $2A + B = -10$. From $f(4) = -12$: $16A + 4B + 12 = -12$, so $4A + B = -6$.\nStep 2: Subtract the two relations: $(4A + B) - (2A + B) = -6 - (-10)$ gives $2A = 4$, so $A = 2$ and then $B = -14$. The model is $f(t) = 2t^2 - 14t + 12$.\nStep 3: Solve $2t^2 - 14t + 12 = 0$. Dividing by $2$ gives $t^2 - 7t + 6 = 0$, so $(t - 1)(t - 6) = 0$ and $t = 1$ or $t = 6$; the gap is $6 - 1 = 5$ hours. Check the true solution $t = 6$ in the original model: $2(36) - 14(6) + 12 = 72 - 84 + 12 = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.5$): the axis of symmetry sits at $t = 3.5$, which is $2.5$ from each zero. That is half the gap, not the gap.\n* Choice C ($7$): $1 + 6 = 7$ is the *sum* of the two times (and equals $-\\frac{B}{A}$ after dividing). \"How far apart\" asks for the difference.\n* Choice D ($10$): $\\sqrt{B^2 - 4AC} = \\sqrt{196 - 96} = 10$ is the numerator of the gap formula; the gap is $\\frac{10}{A} = \\frac{10}{2} = 5$.\n\n**Test Day Takeaway:** Three points pin down a quadratic — build the coefficients with a small system, then read the zeros from the factored form. The gap between the zeros is $\\frac{\\sqrt{b^2 - 4ac}}{|a|}$, never the bare square root."
+}

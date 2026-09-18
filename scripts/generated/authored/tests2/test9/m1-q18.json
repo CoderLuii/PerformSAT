@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "An engineer must report the constants $h$ and $k$ for which the load expression $4x^2-40x+118$ equals $4(x-h)^2+k$ at every value of $x$. What is the value of $h+k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$23$"
+  },
+  {
+   "id": "D",
+   "text": "$98$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds the leading coefficient 4 to h = 5 instead of adding h and k",
+  "B": "takes h = -5, reading the sign of the -40x term straight into h",
+  "D": "subtracts 25 rather than 4(25) = 100, so k comes out as 93"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Quadratic — Completing the Square**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Factor the $4$ out of the first two terms: $4(x^2-10x)+118=4(x-5)^2-100+118=4(x-5)^2+18$, so $h+k=5+18=23$.\n\n**The Full Solution:**\nStep 1: Factor $4$ from the $x$-terms only: $4x^2-40x+118=4(x^2-10x)+118$.\nStep 2: Complete the square inside the parentheses. Half of $-10$ is $-5$, and $(-5)^2=25$, so $x^2-10x=(x-5)^2-25$. Substituting gives $4\\left[(x-5)^2-25\\right]+118=4(x-5)^2-100+118$.\nStep 3: Combine the constants: $4(x-5)^2+18$, so $h=5$, $k=18$, and $h+k=23$. Check by expanding: $4(x-5)^2+18=4x^2-40x+100+18=4x^2-40x+118$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): adds the leading coefficient to $h$, $4+5$, instead of adding $h$ and $k$.\n* Choice B ($13$): sets $h=-5$ from the $-40x$ term, then reports $-5+18=13$. In $(x-h)^2$ the constant inside is $-h$, so $x-5$ means $h=+5$.\n* Choice D ($98$): subtracts only $25$ rather than $4(25)=100$, giving $k=93$ and $5+93=98$. The $25$ sits inside the parentheses, so it is multiplied by the $4$ outside.\n\n**Test Day Takeaway:** Factor the leading coefficient out FIRST, complete the square inside, and remember that whatever you subtract inside the parentheses gets multiplied by that coefficient on the way out. Expanding your answer takes ten seconds and catches all three traps."
+}

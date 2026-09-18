@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-486",
+  "question": "A muralist paints $s$ small panels and $\\ell$ large panels, $18$ panels in all. Each small panel covers $12$ square feet and each large panel covers $30$ square feet, for $360$ square feet in all. How many large panels are painted?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$"
+    },
+    {
+      "id": "B",
+      "text": "$10$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$20$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the 10 small panels instead of the large ones",
+    "C": "divides 360 by 30, treating every panel as a large one",
+    "D": "divides 360 by the 18 panels, using an average area of 20 square feet"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** If all $18$ panels were small they would cover $216$ square feet; each swap to a large panel adds $18$ square feet, and $\\frac{360 - 216}{18} = 8$.\n\n**The Full Solution:**\nStep 1: Write both equations. The panel count gives $s + \\ell = 18$, and the coverage gives $12s + 30\\ell = 360$.\nStep 2: Substitute $s = 18 - \\ell$ into the coverage equation: $12(18 - \\ell) + 30\\ell = 360$, which becomes $216 - 12\\ell + 30\\ell = 360$, or $216 + 18\\ell = 360$.\nStep 3: Solve: $18\\ell = 144$, so $\\ell = 8$, and $s = 18 - 8 = 10$. Check: $12(10) + 30(8) = 120 + 240 = 360$, and $10 + 8 = 18$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($10$): solves the system correctly but reports the small-panel count.\n* Choice C ($12$): divides $360$ by $30$, as if every panel painted were a large one.\n* Choice D ($20$): divides $360$ by the $18$ panels to get an average of $20$ square feet and reports that as a count.\n\n**Test Day Takeaway:** A \"how many of each\" setup needs BOTH a count equation and a value equation; substitute one into the other, then answer for the item the question names."
+}

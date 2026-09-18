@@ -9,32 +9,32 @@
  "passages": [
   {
    "label": "Text 1",
-   "text": "In the 1850s, surveyors mapping northern India found that a plumb line hung near the Himalayas was pulled toward the mountains far less than the visible bulk of the range should have caused. The mathematician John Henry Pratt offered an explanation: the crust beneath a mountain range, he proposed, is made of lighter rock than the crust beneath the plains. On his account, every column of crust reaches down to the same depth, but the rock under tall ranges is less dense and so stands higher. Because the towering Himalayas would then hold less mass than their height implies, they would tug the plumb line only weakly."
+   "text": "When an extraordinary storm of shooting stars filled North American skies in November 1833, many observers reached for the era's standard account of meteors. Shooting stars were widely held to be an atmospheric phenomenon, kin to lightning: vapors risen from the earth that ignited in the upper air. On this view the night's display, however astonishing in scale, was weather, generated within the atmosphere itself."
   },
   {
    "label": "Text 2",
-   "text": "The astronomer George Biddell Airy accepted the survey result that had puzzled his contemporaries but not Pratt's account of it. Crustal rock, Airy argued, is of roughly uniform density; what differs from place to place is its thickness. A mountain range, like an iceberg floating in water, must be supported by a deep \"root\" of crust reaching far down into the denser material below. The mass of that hidden, low-density root, displacing denser rock at depth, would offset the mass of the peaks and weaken the plumb line's pull. Gravity and seismic surveys later confirmed that deep roots do underlie the world's major ranges."
+   "text": "The astronomer Denison Olmsted gathered eyewitness reports of the 1833 display from across the country and noticed that the meteors' paths, traced backward, converged on a single point among the stars of the constellation Leo, and that this point held its place relative to the stars as the sky turned through the night. A source that stays fixed among the stars, he reasoned, cannot be riding along with the earth's atmosphere; the shower's origin had to lie beyond the earth entirely."
   }
  ],
- "question": "Based on the texts, how would Airy (Text 2) most likely respond to the explanation presented in Text 1?",
+ "question": "Based on the texts, how would Olmsted (Text 2) most likely respond to the explanation presented in Text 1?",
  "choices": [
   {
    "id": "A",
-   "text": "He would dismiss the survey result, insisting that a plumb line near a mountain range is always deflected in direct proportion to the visible mass of the peaks above it."
+   "text": "The meteors of November 1833 were altogether exceptional, and conclusions drawn from that single display should not be extended to ordinary shooting stars."
   },
   {
    "id": "B",
-   "text": "He would accept that the range deflects the plumb line too weakly for its size but attribute the shortfall to a deep, low-density root beneath the mountains rather than to lighter rock within them."
+   "text": "The display's fixed point of origin among the stars is incompatible with any account that generates meteors inside the atmosphere."
   },
   {
    "id": "C",
-   "text": "He would endorse Pratt's explanation without reservation, agreeing that differences in the density of crustal rock, not its thickness, reconcile the mountains' height with the small deflection that the surveyors measured."
+   "text": "Eyewitness reports collected from untrained observers are too inconsistent to settle the question of where meteors originate."
   },
   {
    "id": "D",
-   "text": "He would contend that the plumb-line measurements collected in India are far too imprecise to favor any model of the crust, and that the question must wait for instruments able to weigh the mountains directly."
+   "text": "Meteors may resemble lightning in appearance, but the two phenomena occur at very different heights above the ground."
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The two texts share an observation—that the Himalayas deflect a plumb line far less than their visible bulk should—but explain it differently. Pratt (Text 1) traces the weak deflection to lighter rock within the crust beneath the mountains; Airy (Text 2) keeps the same observation while rejecting that mechanism, arguing instead that a deep, low-density root beneath the range offsets the mass of the peaks. Choice B captures that move: accept the anomaly, but relocate its cause from density to a hidden root. Choice A has Airy denying the measurement itself, when he treats the anomaly as genuine. Choice C has him agreeing with Pratt's density explanation, the very account he sets aside. Choice D dismisses the data as unusable, whereas Airy builds his own explanation directly on it."
+ "explanation": "**Choice B is correct.** Olmsted's argument is built precisely to rule out atmospheric accounts: anything generated within the atmosphere would share the atmosphere's motion, yet the shower's radiant point stayed fixed among the stars, so the source \"had to lie beyond the earth entirely.\"\n\n**The Full Solution:**\n- Text 1's explanation locates the meteors' origin inside the atmosphere, as ignited vapors, a kind of weather.\n- Text 2's key observation is the radiant's fixity relative to the stars through the night, from which Olmsted infers an origin beyond the earth.\n- Confronted with Text 1, he would deploy exactly that observation as a refutation, which is what B states.\n\n**Why the other choices are wrong:**\n- A: Olmsted treats the 1833 display as evidence about meteors' nature, not as an exception to be quarantined.\n- C: Far from distrusting the eyewitness reports, Olmsted's reasoning depends on the collected reports he gathered.\n- D: Neither text measures heights, and Olmsted's argument turns on the radiant's fixity, not on where in the sky meteors burn."
 }

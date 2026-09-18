@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 2,
- "passage": "The chemist Stephanie Kwolek, working at a DuPont laboratory in 1965, noticed that a batch of polymer solution she had prepared was unusually cloudy and thin. The fiber spun from that solution — which colleagues initially doubted was worth ______ proved to be stiffer and stronger for its weight than steel, and it became the basis of the material later marketed as Kevlar.",
+ "passage": "Crews in the American whale fishery were paid by an arrangement found almost nowhere else at sea. A whaleman shipped not for monthly wages but for a lay — a fixed share of the voyage's ______ and the share was set by rank before the ship left port, from perhaps a thirtieth for an experienced mate to a two-hundredth for a green hand. A short, oily voyage could pay a crew handsomely; a long, empty one could leave them in debt to the ship.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "testing"
+   "text": "proceeds"
   },
   {
    "id": "B",
-   "text": "testing,"
+   "text": "proceeds,"
   },
   {
    "id": "C",
-   "text": "testing;"
+   "text": "proceeds;"
   },
   {
    "id": "D",
-   "text": "testing —"
+   "text": "proceeds —"
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The phrase \"which colleagues initially doubted was worth testing\" is a nonessential interruption, and because it already opens with a dash after \"solution,\" it has to close with a matching dash before \"proved.\" A comma (B) or a semicolon (C) cannot pair with that opening dash, and omitting punctuation altogether (A) would jam the interrupter into the main clause \"The fiber spun from that solution ... proved to be stiffer and stronger for its weight than steel.\""
+ "explanation": "**Choice D is correct.** The definition of \"a lay\" is set off by a dash before it, and an interruption opened with a dash must be closed with a matching dash: \"...not for monthly wages but for a lay — a fixed share of the voyage's proceeds — and the share was set by rank...\"\n\n**The Full Solution:**\n- The phrase \"a fixed share of the voyage's proceeds\" is an appositive explaining \"a lay,\" and the text opens it with a dash.\n- Paired punctuation must match: what a dash opens, a dash closes, letting the main clause resume at \"and the share was set by rank.\"\n\n**Why the other choices are wrong:**\n- A: With nothing at the blank, the appositive never closes, and the dash construction is left dangling into the rest of the sentence.\n- B: A comma cannot close an interruption that a dash opened; the pair must match.\n- C: A semicolon requires an independent clause on each side, but the appositive before the blank is not a clause at all.",
+ "_meta": {
+  "rule": "matching dash closes a dash-opened appositive",
+  "distractors": {
+   "A": "unclosed interruption",
+   "B": "mismatched pair (dash opened, comma closed)",
+   "C": "semicolon after a non-clause"
+  }
+ }
 }

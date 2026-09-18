@@ -1,0 +1,52 @@
+{
+ "id": 16,
+ "question": "The graph of $N(w) = -w^2 + 14w + 15$ models the number of tadpoles, in hundreds, in a vernal pool $w$ weeks after the pool fills. For which values of $w$ does the model give at least $5{,}500$ tadpoles?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 7,
+    "k": 64
+   },
+   "a": -1,
+   "xRange": [
+    0,
+    15
+   ],
+   "yRange": [
+    0,
+    70
+   ],
+   "xTickInterval": 5,
+   "yTickInterval": 20,
+   "gridInterval": 5,
+   "showVertex": false,
+   "label": "N(w)"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-1 \\le w \\le 15$"
+  },
+  {
+   "id": "B",
+   "text": "$4 \\le w \\le 7$"
+  },
+  {
+   "id": "C",
+   "text": "$4 \\le w \\le 10$"
+  },
+  {
+   "id": "D",
+   "text": "$10 \\le w \\le 15$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "solves N(w) >= 0 instead of N(w) >= 55, returning the zeros -1 and 15",
+  "B": "stops at the vertex w = 7 rather than continuing to the second solution w = 10",
+  "D": "takes the stretch from the larger solution to the larger zero, where the model is below 5,500"
+ },
+ "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice C is correct.** Since $N$ counts hundreds, $5{,}500$ tadpoles means $N(w) \\ge 55$. Solving $-w^2 + 14w + 15 \\ge 55$ gives $w^2 - 14w + 40 \\le 0$, or $(w - 4)(w - 10) \\le 0$, so $4 \\le w \\le 10$.\n\n**The Fast Way (~35s):** $N(w) \\ge 55$ factors to $(w - 4)(w - 10) \\le 0$, and a downward parabola sits above a level between its two crossings.\n\n**The Full Solution:**\nStep 1: Convert the count: $5{,}500$ tadpoles is $55$ hundreds, so the condition is $-w^2 + 14w + 15 \\ge 55$.\nStep 2: Rearrange to $0 \\ge w^2 - 14w + 40$ and factor: $(w - 4)(w - 10) \\le 0$, which holds between the roots.\nStep 3: Check with the true endpoints: $N(4) = -16 + 56 + 15 = 55$ and $N(10) = -100 + 140 + 15 = 55$, while $N(3) = 48$ falls short and $N(7) = 64$ clears the bar.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-1 \\le w \\le 15$): solves $N(w) \\ge 0$ and reports the interval between the zeros of the model, ignoring the $55$ threshold. It even includes a negative week.\n* Choice B ($4 \\le w \\le 7$): finds the first crossing and then stops at $w = 7$, the vertex, treating the peak as the end of the interval instead of the middle of it.\n* Choice D ($10 \\le w \\le 15$): keeps the stretch beyond the second crossing, where the model has already fallen below $55$.\n\n**Test Day Takeaway:** Match units before solving, then remember that a downward parabola clears a horizontal level between its two crossings, so the answer is a single closed interval, not the outside of one."
+}

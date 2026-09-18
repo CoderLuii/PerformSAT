@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "In the $xy$-plane, line $\\ell$ passes through the points $(-2, -9)$ and $(4, 3)$, and line $m$ is the graph of $3x + y = 25$. The two lines intersect at the point $(a, b)$. What is the value of $a + b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$7$"
+    },
+    {
+      "id": "C",
+      "text": "$13$"
+    },
+    {
+      "id": "D",
+      "text": "$42$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports $a$ alone instead of the requested sum.",
+    "B": "reports $b$ alone instead of the requested sum.",
+    "D": "multiplies the two coordinates instead of adding them."
+  },
+  "correctAnswer": "C",
+  "hint": "You need an equation for line $\\ell$ before the two lines can be compared.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~55s):** Line $\\ell$ has slope $2$ and equation $y = 2x - 5$. Solving with $3x + y = 25$ gives $(6, 7)$, so $a + b = 13$.\n\n**The Full Solution:**\nStep 1: The slope of line $\\ell$ is $\\frac{3 - (-9)}{4 - (-2)} = \\frac{12}{6} = 2$, and using the point $(4, 3)$ gives $y = 2x - 5$.\nStep 2: Substitute into $3x + y = 25$: $3x + (2x - 5) = 25$, so $5x = 30$ and $x = 6$.\nStep 3: Then $y = 2(6) - 5 = 7$, so $a = 6$, $b = 7$, and $a + b = 13$. Check: $3(6) + 7 = 25$, and $(-2, -9)$ satisfies $y = 2x - 5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): reports $a$ alone instead of the requested sum.\n* Choice B ($7$): reports $b$ alone instead of the requested sum.\n* Choice D ($42$): multiplies the two coordinates instead of adding them.\n\n**Test Day Takeaway:** When a line is described by two points rather than an equation, build its equation first. Only then can it be paired with the other equation as a system."
+}

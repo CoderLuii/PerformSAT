@@ -1,0 +1,58 @@
+{
+ "id": "bank-alg-433",
+ "question": "The graph shows line $u$. A conveyor deck follows line $z$, which has the same slope as line $u$ and contains $(-2, 5)$. Line $z$ meets the $y$-axis at $(0, b)$. What is the value of $b$?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 0.5,
+   "yIntercept": -3,
+   "xRange": [
+    -6,
+    6
+   ],
+   "yRange": [
+    -6,
+    6
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     -3
+    ],
+    [
+     4,
+     -1
+    ]
+   ],
+   "label": "u"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports line $u$'s own $y$-intercept instead of line $z$'s",
+  "B": "uses the negative reciprocal $-2$, giving $5 = -2(-2) + b$ and $b = 1$",
+  "C": "computes $b$ as $y + mx = 5 + \\frac{1}{2}(-2) = 4$"
+ },
+ "explanation": "**SAT Pattern: Parallel Line through a Point**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Line $u$ has slope $\\frac{1}{2}$, and $5 = \\frac{1}{2}(-2) + b$ gives $b = 6$.\n\n**The Full Solution:**\nStep 1: Line $u$ passes through $(0, -3)$ and $(4, -1)$, so its slope is $\\frac{-1 - (-3)}{4 - 0} = \\frac{1}{2}$.\nStep 2: Line $z$ has the same slope, so $y = \\frac{1}{2}x + b$; substituting $(-2, 5)$ gives $5 = -1 + b$.\nStep 3: Therefore $b = 6$. Check: $\\frac{1}{2}(-2) + 6 = 5$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-3$): reports line $u$'s own $y$-intercept instead of line $z$'s\n* Choice B ($1$): uses the negative reciprocal $-2$, giving $5 = -2(-2) + b$ and $b = 1$\n* Choice C ($4$): computes $b$ as $y + mx = 5 + \\frac{1}{2}(-2) = 4$\n\n**Test Day Takeaway:** Read the slope off two lattice points on the graph, then let the given point fix the new intercept."
+}

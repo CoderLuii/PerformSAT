@@ -1,0 +1,59 @@
+{
+ "id": 11,
+ "question": "The triangular support shown holds a photovoltaic module. Its right angle is at $Q$, its perimeter measures $80$ centimeters, and $\\tan P = \\frac{8}{15}$. How long, in centimeters, is $\\overline{QR}$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     15,
+     8
+    ]
+   ],
+   "labels": [
+    "P",
+    "Q",
+    "R"
+   ],
+   "sideLabels": [
+    "",
+    "",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$16$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$34$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads 8 straight off the ratio, using the 8-15-17 triangle without scaling it to a perimeter of 80",
+  "C": "reports PQ, the leg adjacent to angle P, which is 30 centimeters",
+  "D": "reports PR, the hypotenuse, which is 34 centimeters"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $\\tan P = \\frac{8}{15}$ makes the sides $8k$, $15k$, $17k$, so the perimeter is $40k = 80$ and $k = 2$. Then $QR = 8(2) = 16$ centimeters.\n\n**The Full Solution:**\nStep 1: With the right angle at $Q$, the tangent of $P$ is the leg opposite $P$ over the leg adjacent to $P$, so $\\frac{QR}{PQ} = \\frac{8}{15}$. Write $QR = 8k$ and $PQ = 15k$.\nStep 2: The hypotenuse follows from the Pythagorean theorem: $PR = \\sqrt{(8k)^2 + (15k)^2} = \\sqrt{289k^2} = 17k$, the familiar $8$-$15$-$17$ triple.\nStep 3: The perimeter gives $8k + 15k + 17k = 40k = 80$, so $k = 2$ and $QR = 16$ centimeters. Check: $16 + 30 + 34 = 80$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): treats the tangent ratio as the actual side lengths. The ratio only fixes the shape; the perimeter fixes the size, and here every side doubles.\n* Choice C ($30$): the length of $\\overline{PQ}$, the leg adjacent to $P$. Tangent puts the opposite leg on top, so $\\overline{QR}$ is the $8k$ side.\n* Choice D ($34$): the hypotenuse $\\overline{PR}$. It is the longest side and never sits opposite an acute angle.\n\n**Test Day Takeaway:** Turn a trig ratio into side expressions with a single scale factor $k$, then let the perimeter solve for $k$; the triangle's shape and its size are two separate pieces of information."
+}

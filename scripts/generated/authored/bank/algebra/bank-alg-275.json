@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-275",
+ "question": "A parcel sorter moves $T(s) = -5(s - 9)^2 + 500$ parcels per minute when its belt runs at $s$ meters per second. When this model is written in the form $as^2 + bs + c$, what is the value of $b + c$?",
+ "correctAnswer": "185",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**The correct answer is $185$.**\n\n**The Fast Way (~30s):** Expanding gives $-5s^2 + 90s + 95$, so $b + c = 90 + 95 = 185$.\n\n**The Full Solution:**\nStep 1: Expand the square: $(s - 9)^2 = s^2 - 18s + 81$.\nStep 2: Multiply by $-5$: $-5s^2 + 90s - 405$.\nStep 3: Add $500$ to get $-5s^2 + 90s + 95$, so $b = 90$, $c = 95$, and $b + c = 185$. Check at $s = 9$: $-5(81) + 90(9) + 95 = 500$ ✓\n\n**Common Mistakes:**\n* Using $c = 500$, the peak value, and reporting $90 + 500 = 590$.\n* Forgetting to add $500$ and reporting $90 + (-405) = -315$.\n* Reporting $95$, the constant term alone, instead of the requested sum.\n\n**Test Day Takeaway:** Expand completely before reading off coefficients — the outside constant changes $c$ but never touches $b$."
+}

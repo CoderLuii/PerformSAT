@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-188",
+  "question": "A ferry can carry a maximum of $240$ passengers. On a certain crossing, the number of passengers was $65\\%$ of the maximum. How many passengers were on the ferry during that crossing?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$156$"
+    },
+    {
+      "id": "B",
+      "text": "$175$"
+    },
+    {
+      "id": "C",
+      "text": "$240$"
+    },
+    {
+      "id": "D",
+      "text": "$305$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracts 65 from 240",
+    "C": "reports the maximum capacity",
+    "D": "adds 65 to 240"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** $65\\%$ of $240$ is $0.65 \\times 240 = 156$.\n\n**The Full Solution:**\nStep 1: The number of passengers is $65\\%$ of the maximum, $240$.\nStep 2: Convert and multiply: $0.65 \\times 240 = 156$.\nStep 3: Check: $50\\%$ of $240$ is $120$ and $15\\%$ of $240$ is $36$; $120 + 36 = 156$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($175$): subtracts $65$ from $240$, treating the percent as a number of passengers.\n* Choice C ($240$): reports the maximum capacity instead of $65\\%$ of it.\n* Choice D ($305$): adds $65$ to $240$, again treating the percent as a count.\n\n**Test Day Takeaway:** A percent is never added to or subtracted from a quantity directly — convert it to a decimal and multiply by the base."
+}

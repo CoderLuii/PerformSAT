@@ -1,0 +1,41 @@
+{
+ "id": 5,
+ "question": "A telescope pier is braced by the triangle shown, whose interior angle measures are given in degrees. No interior angle of the brace is supposed to reach $100$ degrees. By how many degrees does the largest angle overshoot that limit?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "(x + 9)°",
+    "(4x)°",
+    "(x + 3)°"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$28$"
+  },
+  {
+   "id": "C",
+   "text": "$37$"
+  },
+  {
+   "id": "D",
+   "text": "$112$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports the value of x rather than the overshoot",
+  "C": "reports the angle (x + 9) instead of the largest angle",
+  "D": "reports the largest angle without subtracting the 100-degree limit"
+ },
+ "correctAnswer": "A",
+ "hint": "The question asks for a difference, not for an angle.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~45s):** $6x + 12 = 180$ gives $x = 28$, so the largest angle is $4(28) = 112$ degrees, which is $12$ past the limit.\n\n**The Full Solution:**\nStep 1: Add the three measures: $(x + 9) + 4x + (x + 3) = 180$, which simplifies to $6x + 12 = 180$.\nStep 2: Solving gives $6x = 168$, so $x = 28$, and the angles are $37$, $112$, and $31$ degrees.\nStep 3: The largest is $112$ degrees, which exceeds $100$ by $112 - 100 = 12$ degrees. Check: $37 + 112 + 31 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($28$): reporting the value of $x$; the question asks how far the largest angle passes the limit.\n* Choice C ($37$): reporting $(x + 9)$, which is not the largest of the three measures.\n* Choice D ($112$): reporting the largest angle itself without subtracting the $100$-degree limit.\n\n**Test Day Takeaway:** Evaluate every expression before choosing one, then answer the exact question — here, a difference, not an angle."
+}

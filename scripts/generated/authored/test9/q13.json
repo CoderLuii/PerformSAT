@@ -6,60 +6,25 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
   "module": 1,
-  "passage": "Engineers compare household light sources using two figures that matter to buyers: luminous efficacy, the amount of visible light produced for each watt of electricity, and rated lifetime, the number of hours a lamp is expected to last. Among the common types, the authors note that one technology stands apart, leading on both measures at once, with the result that _______",
+  "passage": "Vicuña fiber sells for many times the price of alpaca fiber, though both animals are shorn for fine textiles. Textile economists attribute the premium to two factors working together — the vicuña fiber's extreme fineness and its scarcity — rather than to either factor alone. Data on fleece-bearing animals support the economists' account because ______",
   "questionTable": {
     "type": "table",
-    "caption": "Typical luminous efficacy and rated lifetime of common household lamp types",
-    "headers": [
-      "Lamp type",
-      "Luminous efficacy (lumens per watt)",
-      "Rated lifetime (hours)"
-    ],
+    "caption": "Fiber characteristics of four fleece-bearing animals",
+    "headers": ["Animal", "Mean fiber diameter (microns)", "Fleece yield per shearing (kg)", "Typical shearing interval (years)"],
     "rows": [
-      [
-        "Incandescent",
-        "15",
-        "1,000"
-      ],
-      [
-        "Halogen",
-        "20",
-        "2,000"
-      ],
-      [
-        "Compact fluorescent (CFL)",
-        "60",
-        "10,000"
-      ],
-      [
-        "LED",
-        "100",
-        "25,000"
-      ]
+      ["Vicuña", "12.5", "0.2", "2"],
+      ["Cashmere goat", "17.0", "0.4", "1"],
+      ["Merino sheep", "19.5", "4.3", "1"],
+      ["Alpaca (huacaya)", "26.0", "2.7", "1"]
     ]
   },
   "question": "Which choice most effectively uses data from the table to complete the statement?",
   "choices": [
-    {
-      "id": "A",
-      "text": "compact fluorescent lamps reach about 60 lumens per watt, the second-highest efficacy among the four lamp types in the table."
-    },
-    {
-      "id": "B",
-      "text": "halogen lamps last roughly 2,000 hours, the longest rated lifetime of any lamp type the table lists."
-    },
-    {
-      "id": "C",
-      "text": "LEDs reach about 100 lumens per watt and last roughly 25,000 hours, surpassing every other lamp type in the table on both efficacy and lifetime."
-    },
-    {
-      "id": "D",
-      "text": "incandescent bulbs reach about 15 lumens per watt, lower than the roughly 20 lumens per watt that halogen lamps achieve."
-    }
+    { "id": "A", "text": "the alpaca's mean fiber diameter, at 26.0 microns, is the largest of the four animals listed." },
+    { "id": "B", "text": "the merino sheep yields more fleece per shearing than the other three animals combined." },
+    { "id": "C", "text": "the vicuña has both the finest fiber listed, at 12.5 microns, and the smallest, least frequent yield — 0.2 kilograms every two years, against the alpaca's 2.7 kilograms every year." },
+    { "id": "D", "text": "the cashmere goat's fiber is finer than the alpaca's even though both animals are shorn every year." }
   ],
   "correctAnswer": "C",
-  "explanation": "The statement asks for the technology that leads on both efficacy and lifetime. The table shows LEDs at about 100 lumens per watt and 25,000 hours—the highest figure in each column—so choice C is the one that singles out that standout. Choice A names only the second-best efficacy, B misreads the lifetime column (2,000 hours is among the shortest, not the longest), and D draws a true but minor comparison between the two weakest types without identifying the leader.",
-  "_meta": {
-    "anchor": "household lamp types: luminous efficacy and rated lifetime"
-  }
+  "explanation": "**Choice C is correct.** The economists' account rests on two factors together — fineness and scarcity — so the completing evidence must document both, and only C does: the finest fiber in the table and by far the smallest, least frequent yield.\n\n**The Full Solution:**\n- Fineness: the vicuña's 12.5 microns is the lowest diameter listed.\n- Scarcity: 0.2 kilograms per shearing, and only every two years — roughly a twenty-fifth of the alpaca's annual output.\n- C cites both columns in one comparison, matching the claim's two-factor structure.\n\n**Why the other choices are wrong:**\n- A: A fact about the alpaca's coarseness alone touches one factor for the wrong animal and says nothing about scarcity.\n- B: The merino's large yield is true in the table but irrelevant to why vicuña fiber commands a premium.\n- D: A comparison between cashmere and alpaca never engages the vicuña, the animal the claim is about."
 }

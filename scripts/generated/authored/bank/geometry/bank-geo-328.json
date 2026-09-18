@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-328",
+ "question": "A triangular damping vane has an area of $84$ square centimeters. In a revised design the base is increased by $25$ percent and the height is decreased by $25$ percent. Which of the following statements about the area of the revised vane is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It is $6.25\\%$ less than $84$ square centimeters."
+  },
+  {
+   "id": "B",
+   "text": "It is $6.25\\%$ greater than $84$ square centimeters."
+  },
+  {
+   "id": "C",
+   "text": "It is equal to $84$ square centimeters."
+  },
+  {
+   "id": "D",
+   "text": "It is $25\\%$ less than $84$ square centimeters."
+  }
+ ],
+ "distractorNotes": {
+  "B": "gets the size of the change right but reverses its direction",
+  "C": "assumes the equal percent increase and decrease cancel",
+  "D": "applies only the 25 percent decrease and ignores the increase"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Triangle Area**\n\n**Choice A is correct.**\n\n**The Fast Way (~45s):** The area is multiplied by $(1.25)(0.75) = 0.9375$, a decrease of $6.25\\%$.\n\n**The Full Solution:**\nStep 1: Write the original area as $84 = \\frac{1}{2}bh$.\nStep 2: The revised vane has base $1.25b$ and height $0.75h$, so its area is $\\frac{1}{2}(1.25b)(0.75h) = 0.9375 \\cdot \\frac{1}{2}bh$.\nStep 3: The factor $0.9375$ means the revised area is $93.75\\%$ of the original, a decrease of $6.25\\%$.\n\nCheck: $0.9375(84) = 78.75$, and $\\frac{84 - 78.75}{84} = 0.0625$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($6.25\\%$ greater): finds the right size of the change but flips its direction; the factor $0.9375$ is below $1$.\n* Choice C (equal areas): assumes a $25\\%$ rise and a $25\\%$ drop cancel, but $1.25 \\times 0.75 = 0.9375$, not $1$.\n* Choice D ($25\\%$ less): applies only the decrease and ignores the base increase, giving $63$ square centimeters.\n\n**Test Day Takeaway:** Percent changes compose by multiplying factors, not by adding or subtracting percents."
+}

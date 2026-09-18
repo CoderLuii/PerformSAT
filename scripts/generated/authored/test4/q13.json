@@ -5,30 +5,56 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
+  "module": 1,
+  "passage": "An analyst studying one professional basketball league argues that its offenses were remade during the 2010s. In the analyst's account, teams did not merely shoot more three-pointers as the decade went on; the shift toward the three-point line was accompanied by a league-wide rise in scoring efficiency. The analyst supports the claim with league averages from three seasons.",
+  "questionTable": {
+    "type": "table",
+    "caption": "League-wide averages in one professional basketball league, selected seasons",
+    "headers": [
+      "Season",
+      "Three-point attempts per game",
+      "Points per 100 possessions"
+    ],
+    "rows": [
+      [
+        "2011-12",
+        "18.4",
+        "104.6"
+      ],
+      [
+        "2015-16",
+        "24.1",
+        "106.4"
+      ],
+      [
+        "2019-20",
+        "34.1",
+        "110.6"
+      ]
+    ]
+  },
   "question": "Which choice most effectively uses data from the table to support the claim?",
   "choices": [
     {
       "id": "A",
-      "text": "Instagram use rose from 13% in 2012 to 28% in 2016, an increase of 15 percentage points."
+      "text": "Teams attempted 34.1 three-pointers per game in the 2019-20 season, nearly double the 18.4 per game they had attempted in 2011-12."
     },
     {
       "id": "B",
-      "text": "Facebook use among U.S. adults rose from 68% in 2016 to 69% in 2021, while Instagram use rose from 28% to 40% over the same period."
+      "text": "Three-point attempts rose from 18.4 per game in 2011-12 to 24.1 in 2015-16 and 34.1 in 2019-20, while points per 100 possessions climbed from 104.6 to 106.4 to 110.6 over the same seasons."
     },
     {
       "id": "C",
-      "text": "YouTube was used by 73% of U.S. adults in 2016 and by 81% in 2021, the highest share of any platform shown in either year."
+      "text": "Points per 100 possessions rose from 104.6 in 2011-12 to 106.4 in 2015-16 and 110.6 in 2019-20."
     },
     {
       "id": "D",
-      "text": "Facebook was used by 54% of U.S. adults in 2012, the same year that Instagram was used by 13%."
+      "text": "In the 2015-16 season, teams attempted 24.1 three-pointers per game and scored 106.4 points per 100 possessions, both higher than in 2011-12."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The claim concerns the 2016–2021 window specifically: Facebook plateaus while Instagram keeps climbing. Choice B pairs the four values that show both halves — Facebook 68% to 69% (flat) and Instagram 28% to 40% (rising). Choice A uses an earlier Instagram window and never mentions Facebook; choice C cites YouTube, which the claim is not about; and choice D pairs 2012 values that say nothing about the later plateau.",
-  "passage": "The Pew Research Center has tracked the percentage of U.S. adults who use major social media platforms across several survey waves. A media-studies researcher writing about the spread of these platforms in the 2010s makes the following claim: while several platforms continued to add adult users between 2016 and 2021, Facebook reached the limits of its expansion among U.S. adults and effectively plateaued during this period, even as Instagram continued to climb. To support this claim with data from the table below, the writer wants to identify the values that show the contrast.\n\nPercentage of U.S. adults who use selected social media platforms (Pew Research Center)\n| Platform   | 2012 | 2016 | 2021 |\n|------------|------|------|------|\n| Facebook   | 54%  | 68%  | 69%  |\n| Instagram  | 13%  | 28%  | 40%  |\n| LinkedIn   | 20%  | 25%  | 28%  |\n| Twitter    | 16%  | 21%  | 23%  |\n| YouTube    | —    | 73%  | 81%  |",
+  "explanation": "**Choice B is correct.** The claim has two coupled parts — attempts shifted toward the three-point line, and efficiency rose alongside — and B is the only choice that traces both series across all three seasons.\n\n**The Full Solution:**\n- Part one of the claim: more three-pointers over the decade. B shows 18.4 to 24.1 to 34.1.\n- Part two: scoring efficiency rose as the shift happened. B shows 104.6 to 106.4 to 110.6 over the same seasons.\n- Presenting the two rises together is what makes the data support an \"accompanied by\" claim.\n\n**Why the other choices are wrong:**\n- A: It documents only the rise in attempts and says nothing about efficiency.\n- C: It documents only the rise in efficiency and says nothing about attempts.\n- D: A single season's pair of values, even with a comparison to 2011-12, cannot show two sustained trends moving together.",
   "_meta": {
-    "anchor": "Pew Research Center — U.S. adult social media use; dataset qd-soc"
-  },
-  "module": 1
+    "anchor": "basketball analytics — three-point shift with rising efficiency; original league-average table"
+  }
 }

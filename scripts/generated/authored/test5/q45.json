@@ -1,34 +1,34 @@
 {
-  "id": 545,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 2,
-  "passage": "Working at Columbia University's Lamont Geological Observatory in the early 1950s, Marie Tharp ______ the bathymetric profiles she had drafted from sounding data and noticed a continuous V-shaped depression running down the center of the Mid-Atlantic Ridge—a feature whose interpretation as a tectonic rift would, within a decade, become a key piece of evidence for the theory of seafloor spreading.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "are comparing"
-    },
-    {
-      "id": "B",
-      "text": "compared"
-    },
-    {
-      "id": "C",
-      "text": "compares"
-    },
-    {
-      "id": "D",
-      "text": "have compared"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"compared.\" The action is anchored in the early 1950s and sits among other past-tense verbs (\"had drafted,\" \"noticed\"), so the simple past \"compared\" is required for this completed historical event. \"Compares\" is present tense and clashes with the 1950s setting. \"Are comparing\" is present progressive and also disagrees in number with the singular subject \"Marie Tharp.\" \"Have compared\" is present perfect, which would extend the action toward the present rather than placing it in the closed past.",
-  "_meta": {
-    "anchor": "Marie Tharp — Mid-Atlantic Ridge rift valley; simple-past historical narration"
+ "id": 545,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 2,
+ "passage": "Working the crumbling cliffs near Lyme Regis in the 1820s, Mary Anning ______ some of the first complete skeletons of ichthyosaurs and plesiosaurs — marine reptiles then unknown to science — and sold them to collectors and museums that rarely credited her by name.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "are extracting"
+  },
+  {
+   "id": "B",
+   "text": "extracted"
+  },
+  {
+   "id": "C",
+   "text": "extracts"
+  },
+  {
+   "id": "D",
+   "text": "have extracted"
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The sentence recounts events fixed \"in the 1820s,\" and its second verb, \"sold,\" is simple past, so the blank takes the matching simple past \"extracted.\"\n\n**The Full Solution:**\n- The time frame is historical and explicit: the 1820s.\n- The subject, Mary Anning, is singular, and the blank's verb is coordinated with \"sold\" later in the sentence.\n- Tense consistency across the coordinated verbs and agreement with the singular subject both point to \"extracted.\"\n\n**Why the other choices are wrong:**\n- A: \"Are extracting\" is present progressive and plural, failing the time frame and the singular subject at once.\n- C: \"Extracts\" is present tense, clashing with \"in the 1820s\" and with the past-tense \"sold.\"\n- D: \"Have extracted\" is plural in form for this subject and, as a present perfect, ties the action to the present rather than to the completed historical period.",
+ "_meta": {
+  "anchor": "Mary Anning at Lyme Regis; simple-past historical narration"
+ }
 }

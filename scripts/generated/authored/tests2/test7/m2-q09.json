@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "One pair of numbers obeys both rules of a depot loading plan, $5x - 2y = 22$ and $3x + 4y = 34$, where $x$ is a count of pallets and $y$ is a count of crates. Substituting that pair into $kx - 3y$ produces $30$. What is the value of the constant $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 3y instead of subtracting it, solving 6k + 12 = 30 to get k = 3",
+  "B": "drops the -3y term entirely, solving 6k = 30 to get k = 5",
+  "D": "swaps the coordinates, substituting x = 4 and y = 6 to solve 4k - 18 = 30"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Solving the system gives $(6, 4)$; substituting into $kx-3y=30$ gives $6k-12=30$, so $k=7$.\n\n**The Full Solution:**\nStep 1: Solve the system. Multiply $5x-2y=22$ by $2$ to get $10x-4y=44$, then add $3x+4y=34$: $13x=78$, so $x=6$.\nStep 2: Find the other coordinate. Substituting $x=6$ into $3x+4y=34$ gives $18+4y=34$, so $4y=16$ and $y=4$. The ordered pair is $(6,4)$.\nStep 3: Impose the third equation. $k(6)-3(4)=30$ becomes $6k-12=30$, so $6k=42$ and $k=7$. Check: $7(6)-3(4)=42-12=30$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): mishandles the sign of the $-3y$ term, solving $6k+12=30$ to get $k=3$.\n* Choice B ($5$): substitutes only the $x$-value, solving $6k=30$ and ignoring the $-3(4)$ contribution.\n* Choice D ($12$): reverses the ordered pair, using $x=4$ and $y=6$ to solve $4k-18=30$.\n\n**Test Day Takeaway:** When a third equation must share a system's solution, there is no shortcut around solving the system first. Write the ordered pair down in order before substituting — reversed coordinates are the most expensive error here.\n"
+}

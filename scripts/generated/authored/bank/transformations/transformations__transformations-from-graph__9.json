@@ -1,0 +1,30 @@
+{
+  "id": 9,
+  "question": "In the $xy$-plane, the graph of $y=f(x)$ is reflected across the $y$-axis, and the resulting graph is then translated right $3$ units. Which equation defines the final graph?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y=-f(x-3)$"
+    },
+    {
+      "id": "B",
+      "text": "$y=f(-x)+3$"
+    },
+    {
+      "id": "C",
+      "text": "$y=f(-x-3)$"
+    },
+    {
+      "id": "D",
+      "text": "$y=f(3-x)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reflects across the wrong axis",
+    "B": "translates up instead of right",
+    "C": "translates the reflected graph left"
+  },
+  "correctAnswer": "D",
+  "hint": "Perform the reflection first, then substitute $x-3$ everywhere the input appears in that result.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~30s):** The reflection gives $f(-x)$; translating right $3$ replaces $x$ with $x-3$, producing $f(-(x-3))=f(3-x)$.\n\n**The Full Solution:**\nStep 1: Reflecting across the $y$-axis negates the input, so the intermediate equation is $y=f(-x)$.\nStep 2: A translation right $3$ units replaces every $x$ in that equation with $x-3$: $y=f(-(x-3))$.\nStep 3: Simplifying the input gives $y=f(3-x)$. Check: if $f(0)=1$, then the original point $(0,1)$ is unmoved by the reflection and lands at $(3,1)$; the formula gives $f(3-3)=f(0)=1$ at $x=3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y=-f(x-3)$): negates the output, which reflects across the $x$-axis instead of the $y$-axis.\n* Choice B ($y=f(-x)+3$): adds $3$ outside, translating the reflected graph up rather than right.\n* Choice C ($y=f(-x-3)$): equals $f(-(x+3))$, which translates the reflected graph $3$ units left.\n\n**Test Day Takeaway:** After a reflection, substitute the horizontal shift into the whole input expression — do not just append it."
+}

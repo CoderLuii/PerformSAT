@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-449",
+  "question": "The function $d(t) = 12t + 30$ gives the depth $d$, in centimeters, of water in a tank $t$ minutes after a pump is turned on. Which of the following is the best interpretation of the number $12$ in this context?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The depth of the water, in centimeters, when the pump is turned on"
+    },
+    {
+      "id": "B",
+      "text": "The depth of the water, in centimeters, one minute after the pump is turned on"
+    },
+    {
+      "id": "C",
+      "text": "The number of minutes it takes the depth of the water to reach $30$ centimeters"
+    },
+    {
+      "id": "D",
+      "text": "The increase in the depth of the water, in centimeters, each minute"
+    }
+  ],
+  "distractorNotes": {
+    "A": "describes the constant term 30, the depth at t = 0.",
+    "B": "the depth after one minute is d(1) = 42, not 12.",
+    "C": "the depth is already 30 centimeters at t = 0; 12 is a rate in centimeters per minute, not a time."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~8s):** In $d = 12t + 30$, the coefficient of $t$ is the rate: the depth grows $12$ centimeters per minute.\n\n**The Full Solution:**\nStep 1: The function is linear in $t$, so $12$ is the slope and $30$ is the value at $t = 0$.\nStep 2: The slope is the change in $d$ per unit change in $t$: each additional minute adds $12$ centimeters of depth.\nStep 3: Check: $d(0) = 30$ and $d(1) = 42$; the difference $42 - 30 = 12$ is the per-minute increase. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (The depth of the water, in centimeters, when the pump is turned on): describes the constant term $30$, the depth at $t = 0$.\n* Choice B (The depth of the water, in centimeters, one minute after the pump is turned on): the depth after one minute is $d(1) = 42$, not $12$.\n* Choice C (The number of minutes it takes the depth of the water to reach $30$ centimeters): the depth is already $30$ centimeters at $t = 0$; $12$ is a rate in centimeters per minute, not a time.\n\n**Test Day Takeaway:** In $y = mx + b$, the coefficient of the input variable is always \"change in output per one unit of input\"; the constant is the starting value."
+}

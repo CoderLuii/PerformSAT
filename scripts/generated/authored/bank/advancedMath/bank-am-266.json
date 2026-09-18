@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-266",
+  "question": "A campus tutoring center models appointments above its daily minimum by $f(x)=2x^2-5x+1$, and the function $g$ is defined by $g(x)=kf(x)$ for a constant $k$. If $g(3)=24$, what is the value of $k$?",
+  "correctAnswer": "6",
+  "explanation": "**SAT Pattern: Vertical Stretch**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~25s):** $f(3)=18-15+1=4$, so $g(3)=4k=24$ and $k=6$.\n\n**The Full Solution:**\nStep 1: Evaluate the inner function: $f(3)=2(9)-5(3)+1=18-15+1=4$.\nStep 2: The rule gives $g(3)=k\\cdot f(3)=4k$, and that equals $24$.\nStep 3: Divide: $k=6$. Check: $g(x)=6(2x^2-5x+1)$ gives $g(3)=6(4)=24$ ✓\n\n**Common Mistakes:**\n* $4$: reports $f(3)$ instead of the stretch factor.\n* $20$: computes $24-4$, treating the stretch as an addition.\n* $8$: drops the constant $+1$, reading $f(3)$ as $18-15=3$, and then computes $\\frac{24}{3}=8$.\n\n**Test Day Takeaway:** Evaluate the inner function before solving for the multiplier — the factor is the ratio of the two outputs."
+}

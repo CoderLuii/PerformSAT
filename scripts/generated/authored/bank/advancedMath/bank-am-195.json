@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-195",
+ "question": "A library sets its overdue-notice fee schedule with the equation $4x^2-28x+c=0$, in which $c$ is a constant. The two solutions of this equation differ by $5$. What is the value of $c$?",
+ "correctAnswer": "24",
+ "explanation": "**SAT Pattern: Sum/Product of Roots — Vieta's**\n\n**The correct answer is $24$.**\n\n**The Fast Way (~35s):** The solutions add to $-\\frac{-28}{4}=7$ and differ by $5$, so they are $6$ and $1$; their product $6$ equals $\\frac{c}{4}$, giving $c=24$.\n\n**The Full Solution:**\nStep 1: Vieta's gives the sum $-\\frac{-28}{4}=7$, so the two solutions satisfy $x_1+x_2=7$ and $x_1-x_2=5$.\nStep 2: Adding the two equations gives $2x_1=12$, so $x_1=6$ and $x_2=1$.\nStep 3: The product is $\\frac{c}{4}$, so $6\\cdot1=\\frac{c}{4}$ and $c=24$. Check: $4x^2-28x+24=4(x-1)(x-6)$, and $6-1=5$ ✓\n\n**Common Mistakes:**\n* $6$: reports the product $\\frac{c}{4}=6$ instead of solving for $c$.\n* $96$: uses $x_1=7+5=12$ and $x_2=7-5=2$ without halving, giving a product of $24$ and $c=96$.\n* $-24$: attaches a negative sign that the product formula $\\frac{c}{a}$ does not carry.\n\n**Test Day Takeaway:** A sum-and-difference pair is a two-line system: add to get one solution, subtract to get the other, then use the product for the missing coefficient."
+}

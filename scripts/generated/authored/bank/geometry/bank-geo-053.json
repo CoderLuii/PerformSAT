@@ -1,0 +1,29 @@
+{
+  "question": "A civic monument rests on a square stone block $9$ meters on a side and $4$ meters tall, and a stone pyramid on the same square base caps it. Each triangular face of the pyramid has a slant height of $7.5$ meters. How many cubic meters of stone does the monument contain?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$162$"
+    },
+    {
+      "id": "B",
+      "text": "$270$"
+    },
+    {
+      "id": "C",
+      "text": "$486$"
+    },
+    {
+      "id": "D",
+      "text": "$810$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "reports only the pyramid's volume, 162",
+    "B": "applies the one-third factor to the whole solid, computing (324 + 486)/3",
+    "D": "omits the one-third in the pyramid's volume, adding 324 + 486"
+  },
+  "explanation": "**SAT Pattern: Composite Solid Volume**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The slant height $7.5$ over the half-edge $4.5$ gives a pyramid height of $6$, so the stone is $81(4) + \\frac{1}{3}(81)(6) = 486$ cubic meters.\n\n**The Full Solution:**\nStep 1: The block is a rectangular prism with base area $9 \\times 9 = 81$ square meters and height $4$ meters, so its volume is $81(4) = 324$ cubic meters.\nStep 2: A face's slant height runs from the apex to the midpoint of a base edge, a point $4.5$ meters from the center of the base, so the pyramid's height is $\\sqrt{7.5^2 - 4.5^2} = \\sqrt{56.25 - 20.25} = \\sqrt{36} = 6$ meters.\nStep 3: The cap then holds $\\frac{1}{3}(81)(6) = 162$ cubic meters, and the monument contains $324 + 162 = 486$ cubic meters. Check: the pyramid must be smaller than a prism of the same base and height, and $162 < 81(6) = 486$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($162$): stops after the pyramid and forgets the block underneath.\n* Choice B ($270$): applies $\\frac{1}{3}$ to the entire monument instead of only to the pyramid.\n* Choice D ($810$): leaves the $\\frac{1}{3}$ off the pyramid, treating the cap as a second prism.\n\n**Test Day Takeaway:** A slant height is a hypotenuse, never the height — convert it first, and give the $\\frac{1}{3}$ only to the pyramid piece.",
+  "id": "bank-geo-053"
+}

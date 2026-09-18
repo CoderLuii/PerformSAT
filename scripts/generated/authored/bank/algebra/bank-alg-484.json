@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-484",
+ "question": "A cold-chain audit counts $v$ vials stored in refrigerators and $w$ vials stored in freezers. The freezer count is $30$ fewer than $4$ times the refrigerator count, and moving $60$ vials from the freezers to the refrigerators would leave the two storage counts equal. How many vials are in the freezers?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$50$"
+  },
+  {
+   "id": "B",
+   "text": "$90$"
+  },
+  {
+   "id": "C",
+   "text": "$110$"
+  },
+  {
+   "id": "D",
+   "text": "$170$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the refrigerator count of 50 vials instead of the freezer count",
+  "B": "sets the gap at 60 rather than 120, solving 4v - 30 = v + 60 to get v = 30 and w = 90",
+  "C": "reports 110, the freezer count after the 60 vials have been moved"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: System of Equations (Substitution)**\n\n**Choice D is correct.**\n\n**The Fast Way (~60s):** Moving $60$ vials changes the gap by $120$, so $w = v + 120$; with $w = 4v - 30$ that gives $3v = 150$, $v = 50$, and $w = 170$.\n\n**The Full Solution:**\nStep 1: Translate the first sentence: $w = 4v - 30$.\nStep 2: Translate the transfer. After moving $60$ vials the refrigerators hold $v + 60$ and the freezers hold $w - 60$, and these are equal: $v + 60 = w - 60$, so $w = v + 120$. The transfer shifts the counts in opposite directions, so the original gap is $120$, not $60$.\nStep 3: Set the two expressions for $w$ equal: $4v - 30 = v + 120$, so $3v = 150$ and $v = 50$; then $w = 4(50) - 30 = 170$. Check: $170 - 60 = 110$ and $50 + 60 = 110$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($50$): reports the refrigerator count instead of the freezer count.\n* Choice B ($90$): treats the original gap as $60$, solving $4v - 30 = v + 60$ for $v = 30$ and $w = 90$, which ignores that moving vials also raises the other pile.\n* Choice C ($110$): reports the freezer count AFTER the transfer rather than before it.\n\n**Test Day Takeaway:** Moving an amount between two groups changes their difference by twice that amount — write both post-transfer expressions before setting them equal."
+}

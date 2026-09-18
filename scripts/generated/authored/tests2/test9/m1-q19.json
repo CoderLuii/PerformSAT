@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "A triangular sheet-metal blank has angles measuring $30^\\circ$, $60^\\circ$, and $90^\\circ$, and its edge opposite the $60^\\circ$ angle is $12\\sqrt{3}$ centimeters long. In square centimeters, the blank's area equals which expression?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$54\\sqrt{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$72\\sqrt{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$144\\sqrt{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$216\\sqrt{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats the given 12 root 3 as the hypotenuse, making the legs 6 root 3 and 18",
+  "C": "multiplies the two legs but omits the factor of one half",
+  "D": "treats the given 12 root 3 as the side opposite the 30 degree angle, making the other leg 36"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** In a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle the side opposite $60^\\circ$ is $\\sqrt{3}$ times the side opposite $30^\\circ$, so that shorter leg is $12$ and the area is $\\frac{1}{2}(12)\\left(12\\sqrt{3}\\right)=72\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: The angles $30^\\circ$, $60^\\circ$, $90^\\circ$ put the sides in the ratio $1:\\sqrt{3}:2$, opposite those angles in that order. The given edge faces the $60^\\circ$ angle, so it is the $\\sqrt{3}$ part — the LONGER LEG, not the hypotenuse.\nStep 2: Set $s\\sqrt{3}=12\\sqrt{3}$, so $s=12$: the leg opposite $30^\\circ$ is $12$ centimeters and the hypotenuse is $24$ centimeters. Both legs meet at the right angle, so they are the base and the height.\nStep 3: Area $=\\frac{1}{2}(12)\\left(12\\sqrt{3}\\right)=72\\sqrt{3}$ square centimeters. Check with the Pythagorean theorem: $12^2+\\left(12\\sqrt{3}\\right)^2=144+432=576=24^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($54\\sqrt{3}$): reads $12\\sqrt{3}$ as the hypotenuse, so the legs become $6\\sqrt{3}$ and $18$ and the area becomes $\\frac{1}{2}\\left(6\\sqrt{3}\\right)(18)=54\\sqrt{3}$. The hypotenuse faces the $90^\\circ$ angle, not the $60^\\circ$ one.\n* Choice C ($144\\sqrt{3}$): multiplies the two legs, $(12)\\left(12\\sqrt{3}\\right)=144\\sqrt{3}$, but that product is the area of the RECTANGLE the legs span, twice the triangle.\n* Choice D ($216\\sqrt{3}$): reads $12\\sqrt{3}$ as the side opposite the $30^\\circ$ angle, making the other leg $12\\sqrt{3}\\cdot\\sqrt{3}=36$ and the area $\\frac{1}{2}\\left(12\\sqrt{3}\\right)(36)=216\\sqrt{3}$.\n\n**Test Day Takeaway:** In a special right triangle, first decide WHICH side you were handed: match the given side to the angle it faces before you scale $1:\\sqrt{3}:2$. Then the area is half the product of the two LEGS, never the hypotenuse."
+}

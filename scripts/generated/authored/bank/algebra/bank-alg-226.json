@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-226",
+ "question": "In a plating bath, the coating on panel $A$ reaches $y = 5x + 40$ micrometers after $x$ minutes. Panel $B$ gains thickness at the same rate and measured $75$ micrometers at $3$ minutes. How many micrometers thick was panel $B$'s coating at time zero?",
+ "correctAnswer": "60",
+ "explanation": "**SAT Pattern: Parallel Line Through a Point**\n\n**The correct answer is $60$.**\n\n**The Fast Way (~20s):** Panel $B$ also gains $5$ micrometers per minute, so its starting thickness is $75 - 5(3) = 60$.\n\n**The Full Solution:**\nStep 1: Equal rates mean panel $B$'s thickness is $y = 5x + b$ for some starting thickness $b$.\nStep 2: At $x = 3$ the thickness is $75$, so $75 = 5(3) + b$.\nStep 3: Then $b = 75 - 15 = 60$ micrometers. Check: $5(3) + 60 = 75$.\n\n**Common Mistakes:**\n* Adding instead of subtracting gives $75 + 15 = 90$, which is the thickness at $6$ minutes, not at time zero.\n* Reporting $40$ copies panel $A$'s starting thickness, which the problem never claims panel $B$ shares.\n* Reporting $75$ gives the thickness at $3$ minutes rather than at $x = 0$.\n\n**Test Day Takeaway:** Two quantities changing at the same rate share a slope but almost never share a starting value."
+}

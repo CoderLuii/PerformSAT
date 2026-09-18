@@ -1,0 +1,64 @@
+{
+  "id": "bank-geo-222",
+  "question": "A dressmaking pattern book shows two similar triangular yoke pieces, drawn with lengths in centimeters, in which $FGH$ corresponds to $RST$. What is the length, in centimeters, of the side of piece $RST$ that corresponds to the shortest side of piece $FGH$?",
+  "diagram": {
+    "type": "similarTriangles",
+    "params": {
+      "triangle1": {
+        "vertices": [
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            12,
+            0
+          ]
+        ],
+        "labels": [
+          "F",
+          "G",
+          "H"
+        ],
+        "sideLabels": [
+          "9",
+          "12",
+          "15"
+        ]
+      },
+      "triangle2": {
+        "vertices": [
+          [
+            0,
+            15
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            20,
+            0
+          ]
+        ],
+        "labels": [
+          "R",
+          "S",
+          "T"
+        ],
+        "sideLabels": [
+          "",
+          "20",
+          ""
+        ]
+      },
+      "figureNote": true
+    }
+  },
+  "correctAnswer": "15",
+  "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**The correct answer is $15$.**\n\n**The Fast Way (~30s):** $\\overline{ST}$ matches $\\overline{GH}=12$, so the scale factor is $\\frac{20}{12}=\\frac{5}{3}$; the shortest side of $FGH$ is $\\overline{FG}=9$, so its partner is $9\\left(\\frac{5}{3}\\right)=15$.\n\n**The Full Solution:**\n\nStep 1 — Match the sides. The order $FGH \\to RST$ pairs $\\overline{GH}$ with $\\overline{ST}$ and $\\overline{FG}$ with $\\overline{RS}$.\n\nStep 2 — Find the scale factor from the known pair: $\\frac{ST}{GH}=\\frac{20}{12}=\\frac{5}{3}$.\n\nStep 3 — The shortest side of $FGH$ is $\\overline{FG}=9$ centimeters, so $RS=9\\left(\\frac{5}{3}\\right)=15$ centimeters. Check: the third side becomes $15\\left(\\frac{5}{3}\\right)=25$, and $15$-$20$-$25$ is a scaled copy of $9$-$12$-$15$.\n\n**Common Mistakes:** Answering $9$ copies the shortest side unchanged, treating similar pieces as congruent. Using $\\frac{20}{9}$ as the scale factor pairs $\\overline{ST}$ with the wrong side and gives $20$. Dividing instead of multiplying gives $9\\div\\frac{5}{3}=5.4$.\n\n**Test Day Takeaway:** Identify which side of the second figure is labeled, match it by vertex order, and only then decide which side you are scaling."
+}

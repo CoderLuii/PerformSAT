@@ -5,71 +5,64 @@
  "band": 4,
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
+ "type": "multiple-choice",
+ "passage": "Poliomyelitis epidemics recurred in the United States through the first half of the twentieth century, peaking in the early 1950s. A student writing about the first widely used polio vaccine, introduced in 1955, claims that although reported cases did not vanish overnight, the decline that followed the vaccine's introduction was far too steep to be dismissed as the disease's ordinary year-to-year fluctuation, noting that ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Reported cases of poliomyelitis in the United States, selected years",
+  "headers": [
+   "Year",
+   "Reported cases"
+  ],
+  "rows": [
+   [
+    "1950",
+    "33,300"
+   ],
+   [
+    "1952",
+    "57,879"
+   ],
+   [
+    "1954",
+    "38,476"
+   ],
+   [
+    "1956",
+    "15,140"
+   ],
+   [
+    "1958",
+    "5,787"
+   ],
+   [
+    "1960",
+    "3,190"
+   ]
+  ]
+ },
  "question": "Which choice most effectively uses data from the table to complete the statement?",
  "choices": [
   {
    "id": "A",
-   "text": "the largest single-interval decline was the 38-deaths-per-1,000 drop between 1920 and 1940, exceeding the 21-deaths drop between 1940 and 1960 and the 15-deaths drop between 1900 and 1920."
+   "text": "cases fell by roughly 85 percent between 1954 and 1958, a four-year collapse with no parallel between any two of the prevaccine years shown."
   },
   {
    "id": "B",
-   "text": "the average decline across the five intervals was about 19 deaths per 1,000, and the individual interval values clustered closely around that average."
+   "text": "cases declined from 57,879 in 1952 to 38,476 in 1954, showing that the epidemic had already begun to recede before the vaccine was introduced."
   },
   {
    "id": "C",
-   "text": "the rate in 2000 (7 deaths per 1,000) was the lowest shown, so the most recent twenty-year period delivered the largest decrease of the century."
+   "text": "fewer than 3,200 cases were reported in 1960, the lowest total for any year shown in the table."
   },
   {
    "id": "D",
-   "text": "the rate in 1900 (100 deaths per 1,000) was the highest shown, so the largest reduction in infant mortality occurred at the very start of the century."
+   "text": "reported cases rose from 33,300 in 1950 to 57,879 in 1952 before falling in each subsequent year shown."
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A. The historian's claim is that the period of fastest absolute decline is not the one popular histories emphasize, and that the evidence lies in the change between adjacent measurement points, not in the level at any single point. Supporting that means comparing the decade-on-decade decreases and naming the largest, which A does: the 38-per-1,000 drop from 1920 to 1940 exceeds every other interval. D cites the highest absolute level as if a high level implied the largest reduction there, but the 1900-1920 drop was only 15. C points to the lowest endpoint rate, which concerns the level in 2000, not the size of the most recent decline (the smallest in the table). B describes an average and wrongly claims tight clustering, when the interval values (15, 38, 21, 13, 6) vary widely.",
+ "explanation": "**Choice A is correct.** The claim is comparative: the postvaccine decline was too steep to be ordinary fluctuation. A supplies both halves of the comparison — an 85 percent collapse across 1954-1958 and the observation that no two prevaccine years show anything like it.\n\n**The Full Solution:**\n- From 38,476 (1954) to 5,787 (1958) is a drop of about 85 percent.\n- The prevaccine rows swing up and down — 33,300 to 57,879 to 38,476 — but never fall anywhere near that far. Citing the absence of a prevaccine parallel is what turns the number into evidence against the fluctuation explanation.\n\n**Why the other choices are wrong:**\n- B: It cites the one prevaccine dip — exactly the fluctuation the student wants to distinguish the later decline from — and so undercuts the claim rather than supporting it.\n- C: The 1960 endpoint shows cases ended low but makes no comparison to prevaccine variation, which the claim requires.\n- D: It narrates the whole trajectory without quantifying the postvaccine decline's steepness or contrasting it with the earlier swings.",
  "_meta": {
-  "anchor": "U.S. twentieth-century infant mortality rate at twenty-year intervals; largest between-interval decline"
- },
- "passage": "U.S. infant mortality fell sharply across the twentieth century, but not evenly across decades. A historian of public health argues that the period of fastest decline, in absolute terms, is not the one popular histories tend to cite, and contends that the data support this most directly when readers focus on the change between adjacent measurement points rather than on the rate at any single point because _______",
- "questionTable": {
-  "type": "table",
-  "caption": "U.S. infant mortality rate (deaths per 1,000 live births) at twenty-year intervals, 1900-2000",
-  "headers": [
-   "Year",
-   "Infant mortality rate",
-   "Decrease from prior interval"
-  ],
-  "rows": [
-   [
-    "1900",
-    "100",
-    "—"
-   ],
-   [
-    "1920",
-    "85",
-    "15"
-   ],
-   [
-    "1940",
-    "47",
-    "38"
-   ],
-   [
-    "1960",
-    "26",
-    "21"
-   ],
-   [
-    "1980",
-    "13",
-    "13"
-   ],
-   [
-    "2000",
-    "7",
-    "6"
-   ]
-  ]
- },
- "type": "multiple-choice"
+  "anchor": "U.S. reported polio cases before and after the 1955 vaccine — decline vs. ordinary fluctuation"
+ }
 }

@@ -6,34 +6,35 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
   "module": 2,
-  "passage": "The U.S. infant mortality rate fell throughout the twentieth century, but the pace of that decline was uneven when measured in proportional rather than absolute terms. Reviewing figures compiled by the Centers for Disease Control and Prevention, public-health historians have argued that the proportional rate at which infant mortality declined in the United States was actually faster in the third quarter of the century than at its outset — that is, the percentage decrease between 1950 and 1975 was greater than the percentage decrease between 1900 and 1925. The data support this characterization because _______",
+  "passage": "Economists ran a randomized experiment with small-business owners in four cities, offering a randomly selected treatment group an intensive business-training course while a control group received nothing. Because profits in such markets rise and fall with local conditions, the researchers caution that the treatment group's gains cannot be read on their own: any citywide trend would lift treated and untreated businesses alike. A student concludes that the training itself raised profits in every city studied because ______",
   "questionTable": {
     "type": "table",
-    "caption": "U.S. infant mortality rate at 25-year intervals, 1900-2000 (Centers for Disease Control and Prevention, MMWR)",
+    "caption": "Average change in monthly profit one year after training, by city and group (percent)",
     "headers": [
-      "Year",
-      "Infant deaths per 1,000 live births"
+      "City",
+      "Treatment group",
+      "Control group"
     ],
     "rows": [
       [
-        "1900",
-        "100"
+        "Northport",
+        "+14",
+        "+5"
       ],
       [
-        "1925",
-        "72"
+        "Eastvale",
+        "+9",
+        "+2"
       ],
       [
-        "1950",
-        "29"
+        "Riverton",
+        "+11",
+        "+6"
       ],
       [
-        "1975",
-        "16"
-      ],
-      [
-        "2000",
-        "7"
+        "Southbay",
+        "+6",
+        "-1"
       ]
     ]
   },
@@ -41,21 +42,21 @@
   "choices": [
     {
       "id": "A",
-      "text": "between 1900 and 1925 the rate fell from 100 to 72 deaths per 1,000, a reduction of about 45 percent, whereas between 1950 and 1975 it fell from 29 to 16, a reduction of about 28 percent."
+      "text": "treatment-group profits rose in all four cities, by as much as 14 percent in Northport."
     },
     {
       "id": "B",
-      "text": "between 1900 and 1925 the rate dropped from 100 to 72 deaths per 1,000, a reduction of about 28 percent, whereas between 1950 and 1975 it dropped from 29 to 16, a reduction of about 45 percent."
+      "text": "in each of the four cities, the treatment group's profit change exceeded the control group's, by margins ranging from 5 to 9 percentage points."
     },
     {
       "id": "C",
-      "text": "by 2000 the rate had fallen to 7 deaths per 1,000, less than a tenth of the 1900 figure of 100, indicating that infant mortality fell substantially across the century as a whole."
+      "text": "control-group profits rose in three of the four cities over the year, confirming that local business conditions were generally improving during the study period."
     },
     {
       "id": "D",
-      "text": "between 1925 and 1950 the rate fell from 72 to 29 deaths per 1,000, a drop of 43 — the largest absolute reduction of any 25-year interval in the table."
+      "text": "Northport's treatment group gained 14 percent, the largest profit change recorded for any group in any city in the table."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The historians' claim is narrow and specifically proportional: the *percentage* decrease in infant mortality was greater between 1950 and 1975 than between 1900 and 1925. Establishing that claim requires reporting both 25-year intervals named in the claim and converting each absolute drop into a percentage of its starting value, then showing that the second percentage exceeds the first. Choice B does exactly this: 100 to 72 is a drop of 28 on a base of 100, or about 28 percent; 29 to 16 is a drop of 13 on a base of 29, or about 45 percent; and 45 percent is the larger figure. Both intervals come from the table, both percentages are computed from values in the table, and the direction of the comparison matches the claim.\n\nChoice D is incorrect. It cites the LARGEST ABSOLUTE drop in the table — 43 deaths per 1,000 between 1925 and 1950 — which is the figure a reader scanning for the biggest number will naturally land on. But the claim is not about which interval saw the biggest absolute change; it is about which of two specific intervals (1900-1925 versus 1950-1975) had the larger PROPORTIONAL change. The 1925-1950 interval is not even one of the two intervals being compared, so its size in absolute terms cannot support a claim about proportional rates in two different intervals. Choice C is incorrect. The cumulative reduction from 1900 to 2000 — 100 down to 7, less than a tenth — is true and dramatic, but it concerns the century-long total decline, not the relative speed of decline within particular 25-year windows. The claim depends on a comparison BETWEEN two intervals; an aggregate over the whole period cannot show that one interval's percentage decline exceeded another's. Choice A is incorrect. It cites the right two intervals and reports the right pair of percentages (about 28 percent and about 45 percent), but it assigns them to the wrong intervals: it claims 1900-1925 was the 45 percent drop and 1950-1975 was the 28 percent drop. The arithmetic is reversed — 28/100 is 28 percent, not 45 percent, and 13/29 is about 45 percent, not 28 percent — and the resulting comparison runs in the opposite direction to the claim, which would imply the proportional rate of decline SLOWED rather than accelerated."
+  "explanation": "**Choice B is correct.** The researchers' own caution dictates the evidence: raw treatment gains are contaminated by citywide trends, so the training's effect shows up only in the treatment-minus-control gap — and B reports that gap as positive in every city.\n\n**The Full Solution:**\n- The passage rules out reading the treatment column alone: \"any citywide trend would lift treated and untreated businesses alike.\"\n- The control group measures the trend; the training's contribution in each city is the difference between columns: Northport 14 − 5 = 9, Eastvale 9 − 2 = 7, Riverton 11 − 6 = 5, Southbay 6 − (−1) = 7 percentage points.\n- Every difference is positive, and the margins run from 5 to 9 points — exactly what choice B states, supporting the claim for \"every city studied.\"\n\n**Why the other choices are wrong:**\n- A: It reads the treatment column on its own — the precise inference the researchers' caution forbids, since rising local conditions could explain those gains.\n- C: It documents the confound rather than the effect: improving conditions explain why controls rose, but say nothing about what the training added.\n- D: A single city's single-group maximum ignores both the control comparison and the every-city scope of the student's conclusion."
 }

@@ -1,0 +1,41 @@
+{
+ "id": 5,
+ "question": "In the figure, points $A$ and $B$ divide the circle into a minor arc of length $6\\pi$ and a major arc of length $18\\pi$. What is the radius of the circle?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 90,
+   "showAngleLabel": false,
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "correctAnswer": "C",
+ "hint": "Together, the two arcs account for one full trip around the circle.",
+ "distractorNotes": {
+  "A": "treats the minor arc as the whole circumference",
+  "B": "treats the major arc as the whole circumference",
+  "D": "divides by pi instead of 2 pi"
+ },
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** The two arcs make up the whole circumference: $6\\pi + 18\\pi = 24\\pi = 2\\pi r$, so $r = 12$.\n\n**The Full Solution:**\nStep 1: Two points split a circle into two arcs whose lengths add to the circumference: $C = 6\\pi + 18\\pi = 24\\pi$.\nStep 2: Set $2\\pi r = 24\\pi$.\nStep 3: Divide by $2\\pi$: $r = 12$. Check: the minor arc is $\\frac{6\\pi}{24\\pi} = \\frac{1}{4}$ of the circle, a $90^{\\circ}$ central angle, which is consistent with a major arc three times as long.\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): treats the minor arc alone as the circumference, solving $2\\pi r = 6\\pi$.\n* Choice B ($9$): treats the major arc alone as the circumference, solving $2\\pi r = 18\\pi$.\n* Choice D ($24$): divides the circumference by $\\pi$ rather than by $2\\pi$, reporting the diameter's value as a radius.\n\n**Test Day Takeaway:** Minor arc plus major arc is always the full circumference. Adding them first turns a two-arc problem into a one-step equation."
+}

@@ -10,7 +10,9 @@
  *     access, card on file, not yet charged. Stripe owns the trial clock
  *     (subscription.trial_end); the app never stamps it.
  *   - At trial end Stripe auto-charges and the subscription flips to "active"
- *     ($50/mo or $250/yr) — UNLESS the student canceled during the trial, in
+ *     (the amount lives on the Stripe Price objects named by STRIPE_PRICE_* in
+ *     functions/.env — displayed prices live in src/services/pricing.js; keep
+ *     the two in sync) — UNLESS the student canceled during the trial, in
  *     which case it flips to "canceled" at trial_end with no charge.
  *   - Access rule: "trialing" OR "active" grants full access. "past_due"
  *     keeps access (dunning grace). "canceled" keeps access only until any
@@ -185,6 +187,49 @@ export function trialDaysForCheckout(
 }
 
 /**
+ * Stripe subscription statuses that are still LIVE — i.e. the subscription can
+ * still bill (or start billing) and therefore must be canceled when the owning
+ * account is deleted. "canceled" and "incomplete_expired" are already terminal;
+ * canceling them again is a no-op Stripe rejects.
+ *
+ * Deliberately includes "incomplete" (a first payment still awaiting
+ * confirmation can still succeed) and "paused" (resumable), so no path leaves
+ * a chargeable subscription behind a deleted account.
+ */
+export const CANCELABLE_STATUSES: ReadonlySet<string> = new Set([
+  "trialing",
+  "active",
+  "past_due",
+  "unpaid",
+  "incomplete",
+  "paused",
+]);
+
+/**
+ * Has this Stripe customer ever consumed a free trial? Reads the customer's
+ * FULL subscription history (any status) and returns true when any of them
+ * started a trial — Stripe keeps trial_start/trial_end on the subscription
+ * forever, including after it converts or is canceled.
+ *
+ * This is the durable, delete-proof half of "exactly ONE trial per customer".
+ * The app-side `trialUsed` marker lives on entitlements/{uid}, which
+ * deleteAccount erases; without this check a student could delete their
+ * account, sign up again with the same email, and mint a fresh 3-day trial on
+ * every loop. Stripe retains the customer (financial records), so its
+ * subscription history outlives the app account and closes that hole.
+ *
+ * @param {Array} subs the customer's subscriptions (status=all)
+ * @return {boolean} true when any subscription carried a trial
+ */
+export function subscriptionsShowTrialUsed(
+  subs: ReadonlyArray<{trial_start?: number | null; trial_end?: number | null}>,
+): boolean {
+  if (!Array.isArray(subs)) return false;
+  return subs.some((s) =>
+    typeof s?.trial_start === "number" || typeof s?.trial_end === "number");
+}
+
+/**
  * Webhook ordering guard: Stripe does not guarantee event delivery order, so
  * an older subscription.updated must never overwrite a newer one.
  *
@@ -234,8 +279,9 @@ export interface EntitlementAccessInput {
  *   active    -> access (covers cancel-at-period-end until Stripe flips it)
  *   past_due  -> access only through currentPeriodEnd + PAST_DUE_GRACE_MS
  *               (bounded dunning grace; a permanently failing card must not
- *               keep premium forever). Falls back to a bare grace window when
- *               no period end is recorded, so it never grants unconditionally.
+ *               keep premium forever). DENIES when no period end is recorded
+ *               rather than granting a bare grace window — Stripe always
+ *               writes the period end, so a missing one is corruption.
  *   canceled  -> access only until any still-future currentPeriodEnd
  *   anything else (incl. "none"/undefined) -> NO access
  * @param {EntitlementAccessInput|null} doc plain-ms entitlement view

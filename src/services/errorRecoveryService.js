@@ -8,7 +8,7 @@
  * infrastructure so the user gets one-tap access from the diagnostic report.
  */
 
-import { ERROR_TYPES, ERROR_TYPE_LABELS, ERROR_TYPE_ICONS, ERROR_TYPE_COLORS } from './diagnosticEngine';
+import { ERROR_TYPES, ERROR_TYPE_ICONS, ERROR_TYPE_COLORS } from './diagnosticEngine';
 
 /**
  * Per-error-type drill blueprints.

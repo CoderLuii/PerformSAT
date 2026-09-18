@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "In triangle $ABC$, point $D$ lies on $\\overline{AB}$ and point $E$ lies on $\\overline{AC}$ so that $\\overline{DE}$ is parallel to $\\overline{BC}$. If $AD = 6$, $DB = 4$, and $BC = 20$, what is the length of $\\overline{DE}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$14$"
+  },
+  {
+   "id": "D",
+   "text": "$30$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses $\\frac{DB}{AB} = \\frac{4}{10}$ instead of $\\frac{AD}{AB}$",
+  "C": "subtracts $AD$ from $BC$ rather than scaling",
+  "D": "uses $\\frac{AD}{DB} = \\frac{6}{4}$, comparing the two pieces of $\\overline{AB}$ instead of a piece to the whole"
+ },
+ "correctAnswer": "B",
+ "hint": "The whole side $\\overline{AB}$, not the piece $\\overline{DB}$, is what $\\overline{AD}$ should be compared with.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~50s):** $AB = 6 + 4 = 10$, so $DE = 20 \\cdot \\frac{6}{10} = 12$.\n\n**The Full Solution:**\nStep 1: Because $\\overline{DE}$ is parallel to $\\overline{BC}$, triangles $ADE$ and $ABC$ have congruent corresponding angles and are similar.\nStep 2: The scale factor compares a side of $ADE$ to the whole corresponding side: $\\frac{AD}{AB} = \\frac{6}{6 + 4} = \\frac{3}{5}$.\nStep 3: So $DE = \\frac{3}{5}(20) = 12$.\n\nVerification: $\\frac{12}{20} = \\frac{3}{5} = \\frac{6}{10}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): uses $\\frac{DB}{AB} = \\frac{4}{10}$ instead of $\\frac{AD}{AB}$.\n* Choice C ($14$): subtracts $AD$ from $BC$ rather than scaling.\n* Choice D ($30$): uses $\\frac{AD}{DB} = \\frac{6}{4}$, comparing the two pieces of $\\overline{AB}$ instead of a piece to the whole.\n\n**Test Day Takeaway:** When a parallel segment cuts a triangle, compare a piece to the whole side, never a piece to the other piece."
+}

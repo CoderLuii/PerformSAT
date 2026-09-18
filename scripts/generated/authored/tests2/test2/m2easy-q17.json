@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "Seismic stations $A$ and $B$ sit at $(-6, 3)$ and $(2a, a + 4)$ on a map grid marked in kilometers, where $a$ is a constant. A recording buoy is placed at the midpoint of the segment joining the two stations, and its $x$-coordinate is 5. What is the $y$-coordinate of the buoy?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5.5$"
+  },
+  {
+   "id": "B",
+   "text": "$6.25$"
+  },
+  {
+   "id": "C",
+   "text": "$7.5$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "averages the constant a = 8 with the y-coordinate 3, giving 5.5, instead of averaging the two y-coordinates",
+  "B": "drops the division by 2 in the x-equation, solving -6 + 2a = 5 to get a = 5.5, so station B has y-coordinate 9.5 and the midpoint y becomes 6.25",
+  "D": "reports station B's y-coordinate, 12, instead of the midpoint's"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** $\\frac{-6 + 2a}{2} = 5$ gives $a = 8$, so $B = (16, 12)$ and the midpoint's $y$ is $\\frac{3 + 12}{2} = 7.5$.\n\n**The Full Solution:**\nStep 1: The midpoint's $x$-coordinate is the average of the two $x$-coordinates: $\\frac{-6 + 2a}{2} = 5$.\nStep 2: Multiply both sides by $2$: $-6 + 2a = 10$, so $2a = 16$ and $a = 8$. Station $B$ is therefore at $(2(8), 8 + 4) = (16, 12)$.\nStep 3: The midpoint's $y$-coordinate is $\\frac{3 + 12}{2} = \\frac{15}{2} = 7.5$. Check: the midpoint is $(5, 7.5)$, and $\\frac{-6 + 16}{2} = 5$ confirms the $x$-coordinate. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5.5$): averages $a = 8$ with $3$. The constant $a$ is not a coordinate; station $B$'s $y$-coordinate is $a + 4 = 12$.\n* Choice B ($6.25$): solves $-6 + 2a = 5$, skipping the multiplication by $2$, which gives $a = 5.5$ and a midpoint $y$ of $\\frac{3 + 9.5}{2}$.\n* Choice D ($12$): station $B$'s own $y$-coordinate. The question asks for the buoy at the midpoint, not the endpoint.\n\n**Test Day Takeaway:** With a parameter in one endpoint, use the coordinate you are given to solve for it first, then rebuild the full point before averaging the other coordinate."
+}

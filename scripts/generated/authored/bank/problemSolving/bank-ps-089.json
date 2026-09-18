@@ -1,0 +1,61 @@
+{
+  "id": "bank-ps-089",
+  "question": "The scatterplot shows the number of chirps $y$ per minute produced by a cricket at a temperature of $x$ degrees Celsius, along with the line of best fit $\\hat{y} = 2.5x + 9$. The highlighted data point has $x = 14$ and a residual of $-4$. What is the $y$-value of the highlighted data point?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          8,
+          31
+        ],
+        [
+          10,
+          32
+        ],
+        [
+          12,
+          41
+        ],
+        [
+          16,
+          47
+        ],
+        [
+          18,
+          56
+        ],
+        [
+          20,
+          57
+        ],
+        [
+          24,
+          71
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 30,
+      "yMin": 0,
+      "yMax": 90,
+      "xGridStep": 2,
+      "yGridStep": 10,
+      "xLabelStep": 10,
+      "yLabelStep": 20,
+      "xLabel": "Temperature (degrees Celsius)",
+      "yLabel": "Chirps per minute",
+      "bestFitLine": {
+        "slope": 2.5,
+        "intercept": 9
+      },
+      "highlightPoint": [
+        14,
+        40
+      ],
+      "highlightLabel": "residual = -4",
+      "showResidual": true
+    }
+  },
+  "correctAnswer": "40",
+  "explanation": "**SAT Pattern: Residual**\n\n**The correct answer is $40$.**\n\n**The Fast Way (~15s):** The line predicts $\\hat{y} = 2.5(14) + 9 = 44$, and a residual of $-4$ puts the point $4$ below that: $44 - 4 = 40$.\n\n**The Full Solution:**\nStep 1: Residual $= y - \\hat{y}$, so $y = \\hat{y} + \\text{residual}$.\nStep 2: At $x = 14$: $\\hat{y} = 2.5(14) + 9 = 35 + 9 = 44$ chirps per minute.\nStep 3: $y = 44 + (-4) = 40$ chirps per minute.\nCheck: $40 - 44 = -4$, the given residual. $\\checkmark$\n\n**Common Mistakes:** Adding the residual with the wrong sign, giving $44 + 4 = 48$; reporting the predicted value $44$; substituting the residual for $y$ and solving $2.5x + 9 = -4$, which gives $x = -5.2$.\n\n**Test Day Takeaway:** Rearrange the definition once: actual $=$ predicted $+$ residual, and keep the residual's sign."
+}

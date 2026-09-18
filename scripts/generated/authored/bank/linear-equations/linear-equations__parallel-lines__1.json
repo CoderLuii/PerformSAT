@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "question": "$f(x) = 6x - 11$\n\nThe function $f$ is defined by the given equation. In the $xy$-plane, the graph of $y = f(x)$ is a line, and line $p$ is parallel to that line. What is the slope of line $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-11$"
+    },
+    {
+      "id": "B",
+      "text": "$-6$"
+    },
+    {
+      "id": "C",
+      "text": "$-\\frac{1}{6}$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "correctAnswer": "D",
+  "hint": "The equation is already solved for the output, so no rearranging is needed before you read the rate of change.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~10s):** The graph of $y = 6x - 11$ has slope $6$, and parallel lines have equal slopes — choice D.\n\n**The Full Solution:**\nStep 1: The equation $y = 6x - 11$ is in slope-intercept form, so the graph of $y = f(x)$ has slope $6$ and $y$-intercept $-11$.\nStep 2: Two distinct lines in the $xy$-plane are parallel exactly when their slopes are equal.\nStep 3: Therefore line $p$ has slope $6$. Check: any other slope would eventually meet the graph of $f$, so the lines could not be parallel. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-11$): reports $-11$, the $y$-intercept of the graph of $f$, rather than its slope.\n* Choice B ($-6$): negates the slope; parallel lines have equal slopes, not opposite ones.\n* Choice C ($-\\frac{1}{6}$): gives the negative reciprocal, which is the slope of a line perpendicular to the graph of $f$.\n\n**Test Day Takeaway:** Parallel means equal slopes — nothing is flipped and nothing changes sign. Confirm which number in $y = mx + b$ is the slope before you answer."
+}

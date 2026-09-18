@@ -5,30 +5,31 @@
  "band": 3,
  "domain": "standard-english-conventions",
  "skill": "boundaries",
+ "type": "multiple-choice",
+ "passage": "The botanist Ynés Mexía did not begin collecting plants until she was ______ over the following thirteen years, she gathered some 145,000 specimens across Mexico and South America, including hundreds of species then unknown to science.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "cloth"
+   "text": "fifty-five,"
   },
   {
    "id": "B",
-   "text": "cloth,"
+   "text": "fifty-five, and"
   },
   {
    "id": "C",
-   "text": "cloth;"
+   "text": "fifty-five"
   },
   {
    "id": "D",
-   "text": "cloth:"
+   "text": "fifty-five and"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"cloth,\". The sentence opens with a dependent introductory clause — \"When researchers examine a length of Asante kente cloth from Ghana\" — that cannot stand on its own, followed by the main clause, \"they can often identify the weaving workshop, the era, and even the proverb a pattern was meant to convey.\" Standard English sets off an introductory dependent clause from the main clause with a comma, which B supplies. No punctuation (A) runs the two together. A semicolon (C) must join two independent clauses, but the introductory clause is not independent. A colon (D) would wrongly announce a list or explanation rather than mark the end of an introductory clause.",
+ "explanation": "**Choice B is correct.** The blank joins two independent clauses — \"The botanist Ynés Mexía did not begin collecting plants until she was fifty-five\" and \"over the following thirteen years, she gathered some 145,000 specimens...\" — and a comma plus the coordinating conjunction \"and\" is a standard way to join them.\n\n**The Full Solution:**\n- Confirm both halves stand alone: each has its own subject and verb and expresses a complete thought.\n- Independent clauses may be joined by a period, a semicolon, or a comma with a coordinating conjunction; B is the only option supplying one of these.\n\n**Why the other choices are wrong:**\n- A: A comma alone between independent clauses is a comma splice.\n- C: No punctuation at all fuses the clauses into a run-on.\n- D: \"And\" without the comma leaves two full independent clauses spliced together by a bare conjunction, which the conventions require a comma to accompany here.",
  "_meta": {
-  "anchor": "Asante kente cloth, Ghana [theme: West African textile history]; introductory-clause comma"
- },
- "passage": "Among the Asante of Ghana, woven cloth has long carried meaning as well as color, and skilled readers treat its patterns almost as text. When researchers examine a length of Asante kente cloth ______ they can often identify the weaving workshop, the era, and even the proverb that a particular pattern was meant to convey.",
- "type": "multiple-choice"
+  "anchor": "Ynés Mexía — late-starting botanical collector; comma + conjunction boundary",
+  "rule": "comma + coordinating conjunction between independent clauses"
+ }
 }

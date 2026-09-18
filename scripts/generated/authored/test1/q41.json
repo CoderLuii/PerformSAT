@@ -6,35 +6,40 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
  "module": 2,
- "passage": "Each September, Arctic sea ice contracts to its annual minimum before refreezing through the winter. Drawing on satellite records compiled by the National Snow and Ice Data Center, climatologists have argued that the most extreme low-ice years in the Arctic record have grown anomalous faster than typical years have, meaning that decadal extremes are pulling away from decadal averages rather than declining in step with them because _______",
+ "passage": "Ecologists monitoring former grazing land in Europe have debated what drives biodiversity gains after farming stops. Some attribute the gains simply to the removal of livestock; others argue that reintroducing large grazers such as bison or feral horses at low density is what matters, because their patchy, selective grazing creates a mosaic of habitats that uniform abandonment does not. Researchers tracking plant species richness at four reserves contend that low-density grazer reintroduction, not the end of farming alone, drives the largest gains. The claim is supported by the data because ______",
  "questionTable": {
   "type": "table",
-  "caption": "Mean September Arctic sea ice extent and lowest single-year extent, by decade, 1980-2020 (National Snow and Ice Data Center)",
+  "caption": "Plant species per survey plot at four former grazing reserves, ten years after farming ceased",
   "headers": [
-   "Decade",
-   "Mean September extent (million km²)",
-   "Lowest year in decade (million km²)"
+   "Reserve",
+   "Species per plot, year 0",
+   "Species per plot, year 10",
+   "Management after farming ceased"
   ],
   "rows": [
    [
-    "1980s",
-    "7.2",
-    "6.9 (1985)"
+    "Reserve 1",
+    "24",
+    "58",
+    "Bison reintroduced"
    ],
    [
-    "1990s",
-    "6.6",
-    "6.1 (1995)"
+    "Reserve 2",
+    "27",
+    "61",
+    "Feral horses reintroduced"
    ],
    [
-    "2000s",
-    "5.8",
-    "4.3 (2007)"
+    "Reserve 3",
+    "25",
+    "38",
+    "No grazers (abandonment)"
    ],
    [
-    "2010s",
-    "4.6",
-    "3.6 (2012)"
+    "Reserve 4",
+    "23",
+    "36",
+    "No grazers (abandonment)"
    ]
   ]
  },
@@ -42,21 +47,21 @@
  "choices": [
   {
    "id": "A",
-   "text": "the decadal mean September extent declined in every decade shown, moving from 7.2 million km² in the 1980s to 6.6 in the 1990s, 5.8 in the 2000s, and 4.6 in the 2010s."
+   "text": "species richness at Reserve 1 more than doubled over the decade, rising from 24 species per plot in year 0 to 58 species per plot in year 10."
   },
   {
    "id": "B",
-   "text": "between the 1980s and the 2010s the decadal lows fell from 6.9 to 3.6 million km², a drop of 3.3 million km², while the decadal means fell from 7.2 to 4.6 million km², a drop of only 2.6 million km²."
+   "text": "all four reserves supported more plant species per plot in year 10 than in year 0, regardless of how they were managed after farming ceased."
   },
   {
    "id": "C",
-   "text": "the lowest single year on record, 3.6 million km² in 2012, represented roughly half the 1980s decadal mean of 7.2 million km², a reduction of about 50 percent across the period."
+   "text": "although richness rose at every reserve after farming ceased, the two grazer reserves gained roughly 34 species per plot, more than twice the roughly 13 gained at the abandoned reserves with similar baselines."
   },
   {
    "id": "D",
-   "text": "the decadal means dropped by 2.6 million km² between the 1980s and the 2010s, while the decadal lows fell by only 3.3 million km² over the same span, a smaller change in the extreme years."
+   "text": "the two reserves with reintroduced grazers began the decade with 24 and 27 species per plot, values close to the 25 and 23 species per plot recorded in year 0 at the two reserves that were subsequently left to abandonment."
   }
  ],
- "correctAnswer": "B",
- "explanation": "The claim is comparative and very specific: decadal extremes (the lowest single year in each decade) have pulled AWAY from decadal averages — that is, the lows have fallen FASTER than the means. To support that claim, the choice has to put the two columns of the table side by side and show that the change in the 'lowest year' column exceeds the change in the 'mean' column. Choice B does exactly this: the lows dropped 3.3 million km² (6.9 → 3.6) and the means dropped 2.6 million km² (7.2 → 4.6), and 3.3 > 2.6, so the extremes did fall faster. Both numbers are read straight from the table; both halves of the comparison are present; and the direction of the comparison matches the claim."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The claim is that grazers add gains beyond abandonment alone, and C isolates exactly that difference: roughly 34 species per plot with grazers versus roughly 13 without, from similar starting values.\n\n**The Full Solution:**\n- The claim has two parts the evidence must separate: ending farming helps (undisputed), and grazer reintroduction adds gains beyond abandonment alone.\n- Choice C concedes that richness rose everywhere, then quantifies the management difference — and because the plots started from similar values, the gap cannot be explained by baseline differences.\n\n**Why the other choices are wrong:**\n- A: A single reserve's improvement with no comparison across managements cannot distinguish the grazers' contribution from abandonment's.\n- B: It establishes only the undisputed part, and its \"regardless of how they were managed\" framing actively cuts against the claim.\n- D: It verifies comparable baselines — a precondition — but stops before the comparison; similar starting points alone say nothing about what drove the gains."
 }

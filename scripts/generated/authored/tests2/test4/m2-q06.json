@@ -1,0 +1,96 @@
+{
+ "id": 6,
+ "question": "A city recorded the number of water-main breaks per $100$ miles of pipe for each of $10$ years, and the graph shows those readings with the model $\\hat{y} = 46 - 1.8x$, where $x$ is years since the last network survey. At the marked point, the recorded number of breaks exceeds the number the model predicts by how much?",
+ "diagram": {
+  "type": "scatterplot",
+  "params": {
+   "points": [
+    [
+     1,
+     46
+    ],
+    [
+     3,
+     40
+    ],
+    [
+     5,
+     37
+    ],
+    [
+     7,
+     31
+    ],
+    [
+     9,
+     30
+    ],
+    [
+     11,
+     24
+    ],
+    [
+     13,
+     22
+    ],
+    [
+     15,
+     26
+    ],
+    [
+     17,
+     14
+    ],
+    [
+     19,
+     11
+    ]
+   ],
+   "xMin": 0,
+   "xMax": 20,
+   "yMin": 0,
+   "yMax": 50,
+   "xGridStep": 2,
+   "yGridStep": 5,
+   "xLabelStep": 4,
+   "yLabelStep": 10,
+   "xLabel": "Years since survey",
+   "yLabel": "Breaks per 100 miles",
+   "bestFitLine": {
+    "slope": -1.8,
+    "intercept": 46
+   },
+   "highlightPoint": [
+    15,
+    26
+   ],
+   "highlightLabel": "(15, 26)",
+   "showResidual": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-7$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$19$"
+  },
+  {
+   "id": "D",
+   "text": "$26$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts in the wrong order, computing predicted minus recorded, 19 - 26 = -7",
+  "C": "reports 19, the value the model predicts at x = 15, instead of the gap",
+  "D": "reports 26, the recorded value at x = 15, instead of the gap"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Residual**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The model predicts $46 - 1.8(15) = 19$; the marked point sits at $26$. The gap is $26 - 19 = 7$.\n\n**The Full Solution:**\nStep 1: Read the marked point from the graph: at $x = 15$ years, the recorded rate is $26$ breaks per $100$ miles.\nStep 2: Evaluate the model at the same $x$: $\\hat{y} = 46 - 1.8(15) = 46 - 27 = 19$.\nStep 3: \"Exceeds by\" means recorded minus predicted: $26 - 19 = 7$. Check: adding $7$ to the predicted $19$ returns the recorded $26$, and the marked point lies above the model line, so the gap must be positive. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7$): this subtracts in the wrong order, $19 - 26$. A point above the line has a positive gap; a negative answer contradicts the picture.\n* Choice C ($19$): this is the value the model predicts. It is one of the two numbers you need, not the difference between them.\n* Choice D ($26$): this is the recorded value read straight off the graph, with the model never evaluated.\n\n**Test Day Takeaway:** Observed minus predicted, always in that order. Then sanity-check the sign against the picture: above the line is positive, below is negative."
+}

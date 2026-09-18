@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "refining"
-    },
-    {
-      "id": "B",
-      "text": "to refine"
-    },
-    {
-      "id": "C",
-      "text": "refined"
-    },
-    {
-      "id": "D",
-      "text": "the refinement of"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The blank is the third item in a list governed by \"drew on three kinds of work,\" and the first two items are -ing phrases: \"observing the heavens\" and \"checking those observations.\" Parallel structure requires the third item to take the same form, so \"refining the trigonometric methods\" is correct. \"To refine\" is an infinitive that breaks the pattern; \"refined\" is a finite verb that cannot be coordinated with the two -ing phrases; and \"the refinement of\" switches to a noun phrase, again breaking the parallelism.",
-  "passage": "To compile a major astronomical handbook, a medieval astronomer typically drew on three kinds of work: observing the heavens with large instruments, checking those observations against earlier Greek and Indian tables, and ______ the trigonometric methods needed to convert raw sightings into predicted positions.",
-  "_meta": {
-    "anchor": "medieval Islamic astronomy: compiling a zij (generic)",
-    "rule": "parallel structure across a coordinated list"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "maintaining"
   },
-  "id": 1145,
-  "module": 2
+  {
+   "id": "B",
+   "text": "to maintain"
+  },
+  {
+   "id": "C",
+   "text": "maintained"
+  },
+  {
+   "id": "D",
+   "text": "the maintenance of"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The blank is the third item in a list whose first two items are gerund phrases — \"stocking the roadside stations...\" and \"staffing them with runners...\" — so the third must be a gerund as well: \"maintaining.\"\n\n**The Full Solution:**\n- Items in a coordinated series must share grammatical form (parallel structure).\n- The established pattern is gerund + object: \"stocking ... , staffing ... , and ______ the roads and rope bridges.\"\n- \"Maintaining\" continues the gerund-gerund-gerund series exactly.\n\n**Why the other choices are wrong:**\n- B: \"To maintain\" switches the series to an infinitive midstream, breaking parallelism.\n- C: \"Maintained\" is a past-tense or participial form that cannot follow \"and\" as the third item of a gerund list.\n- D: \"The maintenance of\" swaps in a noun phrase, again mismatching the two gerunds that set the pattern.",
+ "passage": "To keep the relay network running, Inca administrators drew on several kinds of labor: stocking the roadside stations with food and fuel, staffing them with runners drawn from nearby villages, and ______ the roads and rope bridges on which the whole system depended.",
+ "_meta": {
+  "rule": "parallel structure in a gerund series",
+  "anchor": "chasqui relay runners — station provisioning and road upkeep",
+  "distractors": {
+   "B": "infinitive breaks the series",
+   "C": "past form cannot serve as list item",
+   "D": "noun phrase breaks the series"
+  }
+ },
+ "id": 1145,
+ "module": 2
 }

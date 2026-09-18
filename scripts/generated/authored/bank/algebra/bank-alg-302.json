@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-302",
+ "question": "For every value of $x$ other than $4$ and $-2$, the sum $\\frac{r}{x - 4} + \\frac{3}{x + 2}$ is equal to $\\frac{5x - 8}{(x - 4)(x + 2)}$, where $r$ is a constant. What is the value of $r$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-10$"
+  },
+  {
+   "id": "B",
+   "text": "$2$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "solves $2r - 12 = -8$ as $2r = -20$, moving the $-12$ with the wrong sign",
+  "C": "copies the coefficient of $x$ in the numerator without subtracting the $3$ contributed by the second fraction",
+  "D": "solves $r + 3 = 5$ as $r = 5 + 3$"
+ },
+ "explanation": "**SAT Pattern: Polynomial Identity with Rational Expressions**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Clearing denominators gives $(r + 3)x + (2r - 12) = 5x - 8$, so $r = 2$.\n\n**The Full Solution:**\nStep 1: Multiply both sides by $(x - 4)(x + 2)$: $r(x + 2) + 3(x - 4) = 5x - 8$.\nStep 2: Expanding the left side gives $rx + 2r + 3x - 12 = (r + 3)x + (2r - 12)$.\nStep 3: Matching coefficients of $x$ gives $r + 3 = 5$, so $r = 2$; the constants agree because $2(2) - 12 = -8$. Check: $\\frac{2}{x - 4} + \\frac{3}{x + 2} = \\frac{2(x + 2) + 3(x - 4)}{(x - 4)(x + 2)} = \\frac{5x - 8}{(x - 4)(x + 2)}$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-10$): solves $2r - 12 = -8$ as $2r = -20$, moving the $-12$ with the wrong sign\n* Choice C ($5$): copies the coefficient of $x$ in the numerator without subtracting the $3$ contributed by the second fraction\n* Choice D ($8$): solves $r + 3 = 5$ as $r = 5 + 3$\n\n**Test Day Takeaway:** Clear the denominators once, then match the coefficient of $x$ and the constant separately; both must agree."
+}

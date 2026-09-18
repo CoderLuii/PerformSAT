@@ -1,0 +1,25 @@
+{
+  "id": "bank-ps-199",
+  "question": "The table gives the capacity, in milliampere-hours, of a laptop battery when it was new and after one year of use. Over that year, the capacity of the battery decreased by $p\\%$. What is the value of $p$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Time",
+        "Capacity (mAh)"
+      ],
+      "rows": [
+        [
+          "New",
+          "4,800"
+        ],
+        [
+          "After 1 year",
+          "4,080"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "15",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**The correct answer is $15$.**\n\n**The Fast Way (~10s):** The loss is $4800 - 4080 = 720$ mAh, out of $4800$: $\\frac{720}{4800} = 0.15$, so $p = 15$.\n\n**The Full Solution:**\nStep 1: Original capacity $4800$ mAh; new capacity $4080$ mAh; decrease $= 4800 - 4080 = 720$ mAh.\nStep 2: Percent decrease $= \\frac{720}{4800} \\times 100 = 15$.\nStep 3: Check: $15\\%$ of $4800$ is $720$, and $4800 - 720 = 4080$. $\\checkmark$\n\n**Common Mistakes:** Reporting $720$, the raw loss, instead of the percent; dividing by the new capacity, $\\frac{720}{4080} \\approx 17.65$; or reporting $\\frac{4080}{4800} = 85$, the percent of capacity that remains.\n\n**Test Day Takeaway:** Simplify the ratio before converting: $\\frac{720}{4800} = \\frac{72}{480} = \\frac{3}{20} = 15\\%$. Reducing first avoids decimal slips."
+}

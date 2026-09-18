@@ -1,0 +1,29 @@
+{
+ "question": "A soil-moisture decay model multiplies its baseline reading by $\\left(\\dfrac{2}{5}\\right)^{-3}$ to estimate the moisture a test plot held three days earlier. What value does that multiplier have?",
+ "hint": "Decide what a negative exponent does to a fraction — and what it leaves alone.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\dfrac{125}{8}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\dfrac{8}{125}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{8}{125}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{125}{8}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "flips the fraction and then also negates the result",
+  "B": "reads the negative exponent as making the value negative",
+  "C": "cubes the fraction without flipping it"
+ },
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~15s):** The negative exponent flips the fraction: $\\left(\\dfrac{5}{2}\\right)^{3} = \\dfrac{125}{8}$.\n\n**The Full Solution:**\nStep 1: A negative exponent means the reciprocal: $\\left(\\dfrac{2}{5}\\right)^{-3} = \\left(\\dfrac{5}{2}\\right)^{3}$.\nStep 2: Cube the numerator and the denominator: $\\dfrac{5^3}{2^3}$.\nStep 3: Evaluate: $\\dfrac{125}{8}$. Check: $\\dfrac{125}{8} \\cdot \\left(\\dfrac{2}{5}\\right)^{3} = \\dfrac{125}{8} \\cdot \\dfrac{8}{125} = 1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\dfrac{125}{8}$): flips the fraction correctly but then also makes it negative.\n* Choice B ($-\\dfrac{8}{125}$): treats the exponent's sign as the value's sign and skips the reciprocal.\n* Choice C ($\\dfrac{8}{125}$): cubes $\\dfrac25$ directly, ignoring the negative exponent.\n\n**Test Day Takeaway:** A negative exponent moves a factor across the fraction bar; the sign of the value never changes."
+}

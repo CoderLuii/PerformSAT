@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "The cross-section of a parabolic antenna dish is modeled by $y = c(x - 3)^2 - 45$, where $x$ and $y$ are measured in centimeters and $c$ is a positive constant. When this equation is written as $y = cx^2 + mx + n$, the coefficient $m$ equals $-42$. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-36$"
+  },
+  {
+   "id": "B",
+   "text": "$18$"
+  },
+  {
+   "id": "C",
+   "text": "$63$"
+  },
+  {
+   "id": "D",
+   "text": "$81$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "substitutes c = 1 instead of solving -6c = -42, giving 9(1) - 45 = -36",
+  "C": "finds c = 7 correctly but reports 9c = 63 and drops the constant -45",
+  "D": "expands (x - 3)^2 as x^2 - 3x + 9, so m = -3c gives c = 14 and 9(14) - 45 = 81"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Expanding gives the middle term $-6cx$, so $-6c=-42$ and $c=7$; the constant term is $9c-45=63-45=18$.\n\n**The Full Solution:**\nStep 1: Expand the given form. $c(x-3)^2-45 = c(x^2-6x+9)-45 = cx^2-6cx+(9c-45)$.\nStep 2: Match the middle coefficient. Comparing with $cx^2+mx+n$ gives $m=-6c$. Since $m=-42$, $-6c=-42$, so $c=7$.\nStep 3: Read off the constant. $n = 9c-45 = 9(7)-45 = 63-45 = 18$. Check: $7(x-3)^2-45 = 7x^2-42x+18$, whose middle coefficient is indeed $-42$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-36$): assumes $c=1$ without using $m=-42$ at all, giving $9(1)-45=-36$.\n* Choice C ($63$): finds $c=7$ but reports only the $9c$ piece, $63$, forgetting that the $-45$ is still part of the constant term.\n* Choice D ($81$): expands $(x-3)^2$ as $x^2-3x+9$, so the middle coefficient becomes $-3c$; then $-3c=-42$ gives $c=14$ and $9(14)-45=81$.\n\n**Test Day Takeaway:** Expanding $a(x-h)^2+k$ always produces $ax^2-2ahx+(ah^2+k)$. The constant term carries BOTH $ah^2$ and $k$ — losing $k$ is the single most common slip in this conversion.\n"
+}

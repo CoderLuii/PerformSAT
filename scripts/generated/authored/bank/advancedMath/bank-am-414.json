@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-414",
+ "question": "A snowmelt-runoff model has the form $f(x) = 5b^{\\,x-2}$, where $x$ is the number of days since the thaw began and $b$ is a positive constant. Measurements at the valley gauge give $f(5) = 320$ cubic meters per second. What is the value of $b$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Exponential Shifted Form — Recover Base**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~30s):** $f(5) = 5b^{3} = 320$, so $b^{3} = 64$ and $b = 4$.\n\n**The Full Solution:**\nStep 1: Substitute $x = 5$: the exponent is $5 - 2 = 3$, so $f(5) = 5b^{3}$.\nStep 2: Set that equal to $320$ and divide by $5$: $b^{3} = 64$.\nStep 3: Taking the cube root gives $b = 4$. Check: $f(5) = 5(4)^{3} = 5(64) = 320$ ✓\n\n**Common Mistakes:**\n* $64$ — stopping at $b^{3} = 64$ and reporting the cube rather than the base.\n* $8$ — taking a square root of $64$ instead of a cube root, ignoring the exponent $5 - 2 = 3$.\n\n**Test Day Takeaway:** Evaluate the shifted exponent FIRST; the shift is what decides whether you undo a square, a cube, or something else."
+}

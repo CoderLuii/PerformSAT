@@ -5,30 +5,31 @@
  "band": 2,
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
+ "type": "multiple-choice",
+ "passage": "The California condor, one of the largest flying birds in North America, nearly vanished in the 1980s, when the wild population fell to just twenty-two individuals. Today, thanks to captive breeding and careful monitoring, hundreds of condors ______ over the canyons of California, Arizona, and Baja California.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "were"
+   "text": "soars"
   },
   {
    "id": "B",
-   "text": "are"
+   "text": "has soared"
   },
   {
    "id": "C",
-   "text": "is"
+   "text": "soar"
   },
   {
    "id": "D",
-   "text": "have been"
+   "text": "is soaring"
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C, \"is.\" The subject of the verb is the singular noun \"compound\" — \"The compound they ultimately isolated, artemisinin\" — and the appositive \"artemisinin\" names the compound without changing its number. A singular subject takes a singular verb, and the present tense matches the surrounding claim that artemisinin \"is now a component\" of current therapies. \"Are\" and \"have been\" treat the subject as plural, and \"were\" adds a past-tense error on top of the number error, shifting the sentence away from the present status the rest of the clause describes.",
+ "explanation": "**Choice C is correct.** The subject of the verb is the plural \"hundreds of condors,\" so the verb must take the plural form \"soar.\"\n\n**The Full Solution:**\n- Strip the sentence to its core: \"hundreds of condors ______ over the canyons.\"\n- \"Hundreds\" is the head of the subject and it is plural; plural subjects take verbs without the singular -s.\n- The sentence describes a present, ongoing situation, and the simple present plural \"soar\" fits it.\n\n**Why the other choices are wrong:**\n- A: \"Soars\" is singular and clashes with the plural subject \"hundreds.\"\n- B: \"Has soared\" is singular as well as an unneeded shift into the perfect; the sentence reports a current state, not a completed one.\n- D: \"Is soaring\" is singular; the plural would be \"are soaring,\" which is not offered.",
  "_meta": {
-  "anchor": "Tu Youyou — pharmacologist; artemisinin; subject-verb agreement across an appositive"
- },
- "passage": "Working with traditional Chinese medical texts during a national antimalarial program in the late 1960s, the pharmacologist Tu Youyou and her team identified the sweet wormwood plant as a source of an antimalarial compound. The compound they ultimately isolated, artemisinin, ______ now a component of the standard combination therapies used against drug-resistant malaria.",
- "type": "multiple-choice"
+  "anchor": "California condor recovery — plural subject-verb agreement",
+  "rule": "subject-verb agreement with plural quantity subject"
+ }
 }

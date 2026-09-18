@@ -1,31 +1,31 @@
 {
-  "id": 748,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "Some linguists hold that recursion—the embedding of phrases within phrases—is a universal feature of every human language. One language documented in the Amazon, however, appears to lack it ______ its grammar, the researchers who studied it argue, is shaped less by innate rules than by a cultural emphasis on immediate experience.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "entirely, instead;"
-    },
-    {
-      "id": "B",
-      "text": "entirely; instead,"
-    },
-    {
-      "id": "C",
-      "text": "entirely, instead,"
-    },
-    {
-      "id": "D",
-      "text": "entirely instead,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. Two independent clauses appear here, and the second opens with the conjunctive adverb \"instead,\" so a semicolon belongs before \"instead\" and a comma after it. Choice A reverses the punctuation, placing the semicolon after \"instead.\" Choice C uses commas around \"instead,\" producing a comma splice between the two independent clauses, and Choice D omits the needed break before \"instead\" altogether."
+ "id": 748,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "The flowing, watered pattern of historical Damascus steel blades resisted modern replication for decades, and metallurgists eventually concluded that copying the smiths' hammer work and quenching would never reproduce it ______ the pattern, recent analyses indicate, depends on trace elements peculiar to the original ores, which draw carbide particles into visible bands as the steel is worked.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "fully, instead;"
+  },
+  {
+   "id": "B",
+   "text": "fully; instead,"
+  },
+  {
+   "id": "C",
+   "text": "fully, instead,"
+  },
+  {
+   "id": "D",
+   "text": "fully instead,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Two independent clauses meet at the blank, and the second opens with the conjunctive adverb \"instead\"; the required pattern is a semicolon before the adverb and a comma after it — \"fully; instead,\".\n\n**The Full Solution:**\n- Verify the clauses: \"...metallurgists eventually concluded that copying the smiths' hammer work and quenching would never reproduce it fully\" is complete, and \"the pattern...depends on trace elements...\" is complete as well.\n- A conjunctive adverb like \"instead,\" \"however,\" or \"therefore\" cannot join clauses by itself; the join needs a semicolon.\n- B places the semicolon at the clause boundary and the comma after \"instead,\" the conventional frame for a clause-opening adverb.\n\n**Why the other choices are wrong:**\n- A: It reverses the marks, attaching \"instead\" to the first clause and leaving a bare semicolon to open the second.\n- C: Commas on both sides of \"instead\" leave the two independent clauses spliced by a comma.\n- D: With no mark before \"instead,\" the two sentences fuse into a run-on."
 }

@@ -1,0 +1,51 @@
+{
+  "id": "bank-ps-377",
+  "question": "The table summarizes the number of soil samples in each of two groups and the mean mass of the samples in each group. What is the mean mass, in grams, of all $20$ samples?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Group",
+        "Number of samples",
+        "Mean mass (g)"
+      ],
+      "rows": [
+        [
+          "A",
+          "12",
+          "6.5"
+        ],
+        [
+          "B",
+          "8",
+          "9.0"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7.5$"
+    },
+    {
+      "id": "B",
+      "text": "$7.75$"
+    },
+    {
+      "id": "C",
+      "text": "$9$"
+    },
+    {
+      "id": "D",
+      "text": "$15.5$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "averages the two group means, $\\frac{6.5 + 9}{2}$, ignoring that the groups have different sizes",
+    "C": "reports the larger group mean",
+    "D": "adds the two group means"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Mean from List**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Total mass $= 12(6.5) + 8(9) = 78 + 72 = 150$ grams over $20$ samples, so the mean is $\\frac{150}{20} = 7.5$.\n\n**The Full Solution:**\nStep 1: Recover each group's total from mean $\\times$ count: group A contributes $12(6.5) = 78$ grams and group B contributes $8(9) = 72$ grams.\nStep 2: The combined total is $78 + 72 = 150$ grams for $12 + 8 = 20$ samples.\nStep 3: The combined mean is $\\frac{150}{20} = 7.5$ grams. Check: the larger group has the smaller mean, so the combined mean must sit below the midpoint $7.75$, and $7.5$ does. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($7.75$): averages the two group means, $\\frac{6.5 + 9}{2}$, ignoring that the groups have different sizes\n* Choice C ($9$): reports the larger group mean\n* Choice D ($15.5$): adds the two group means\n\n**Test Day Takeaway:** Combining two groups means combining totals, not means. The unweighted average of two means is right only when the groups are the same size."
+}

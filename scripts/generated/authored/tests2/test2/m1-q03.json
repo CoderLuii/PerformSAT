@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A dehydrator removes water from a tray of sliced apples, and the equation $M = 320 - 7.5t$ relates the mass of water $M$, in grams, to the drying time $t$, in minutes. Which statement is the best interpretation of $7.5$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mass of water in the tray decreases by $7.5$ grams each minute."
+  },
+  {
+   "id": "B",
+   "text": "The mass of water in the tray increases by $7.5$ grams each minute."
+  },
+  {
+   "id": "C",
+   "text": "The tray holds $7.5$ grams of water when drying begins."
+  },
+  {
+   "id": "D",
+   "text": "The tray loses $1$ gram of water every $7.5$ minutes."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "drops the minus sign in front of 7.5 and reads a decrease as an increase",
+  "C": "interprets 7.5 as the initial mass, which is the constant term 320, not the coefficient of t",
+  "D": "inverts the rate, reading 7.5 as minutes per gram instead of grams per minute"
+ },
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The coefficient of $t$ is $-7.5$, so $M$ falls by $7.5$ grams for each additional minute of drying.\n\n**The Full Solution:**\nStep 1: Write the equation in slope-intercept form: $M = -7.5t + 320$. The slope is $-7.5$ and the $M$-intercept is $320$.\nStep 2: Slope is the change in the output for a one-unit change in the input, so each additional minute changes $M$ by $-7.5$ grams, a loss of $7.5$ grams per minute.\nStep 3: Test it: at $t = 0$, $M = 320$ grams; at $t = 1$, $M = 320 - 7.5 = 312.5$ grams. The drop is $7.5$ grams in one minute ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (an increase of $7.5$ grams per minute): keeps the magnitude but drops the minus sign in $-7.5t$. Substituting $t = 1$ gives $312.5$ grams, less than the starting $320$ grams, so the mass is falling.\n* Choice C (a starting mass of $7.5$ grams): assigns $7.5$ the role of the starting amount. The mass at $t = 0$ is the constant term, $320$ grams, not $7.5$ grams.\n* Choice D ($1$ gram every $7.5$ minutes): flips the units. Losing $1$ gram every $7.5$ minutes is a rate of about $0.13$ gram per minute, not $7.5$ grams per minute.\n\n**Test Day Takeaway:** Read the slope with its units attached, output units per input unit, and let the sign tell you the direction; the constant term, never the slope, is the starting value."
+}

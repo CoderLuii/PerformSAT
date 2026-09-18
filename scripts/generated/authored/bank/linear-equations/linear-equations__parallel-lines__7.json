@@ -1,0 +1,30 @@
+{
+ "id": 7,
+ "question": "In a blending model for a glaze recipe, the equation $4x + 6y = 15$ constrains the masses, in kilograms, of two ingredients. Which of the following, used as a second constraint, would give a system with no solution?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2x + 3y = 7.5$"
+  },
+  {
+   "id": "B",
+   "text": "$2x + 3y = 11$"
+  },
+  {
+   "id": "C",
+   "text": "$6x + 4y = 15$"
+  },
+  {
+   "id": "D",
+   "text": "$4x - 6y = 15$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "is the first equation divided by 2, so the two constraints describe the same line and share infinitely many solutions",
+  "C": "swaps the coefficients, giving slope -3/2 instead of -2/3, so the lines cross once",
+  "D": "flips the sign of the y-term, giving slope 2/3, so the lines cross once"
+ },
+ "correctAnswer": "B",
+ "hint": "Scaling the first equation changes both sides; check whether the constant keeps up.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~45s):** Halving the first constraint gives $2x + 3y = 7.5$; a same left side with a different constant, $11$, is parallel and unreachable.\n\n**The Full Solution:**\nStep 1: A system of two linear equations has no solution exactly when the lines are parallel and distinct, that is when one equation's variable terms are a multiple of the other's but its constant is not.\nStep 2: Dividing $4x + 6y = 15$ by $2$ gives $2x + 3y = 7.5$, so any constraint with left side $2x + 3y$ is parallel to it.\nStep 3: Choice B has left side $2x + 3y$ with constant $11 \\ne 7.5$, so the two lines are parallel and distinct and no pair of masses satisfies both.\n\nCheck: Both lines have slope $-\\frac{2}{3}$ but $y$-intercepts $2.5$ and $\\frac{11}{3} \\approx 3.67$, so they never meet. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2x + 3y = 7.5$): is exactly half of the first constraint, so the two describe the same line and share infinitely many solutions.\n* Choice C ($6x + 4y = 15$): swaps the coefficients, giving slope $-\\frac{3}{2}$, so the lines cross at one point.\n* Choice D ($4x - 6y = 15$): flips the sign of the $y$-term, giving slope $\\frac{2}{3}$, so the lines cross at one point.\n\n**Test Day Takeaway:** No solution needs matching variable terms and a mismatched constant; matching both gives infinitely many instead."
+}

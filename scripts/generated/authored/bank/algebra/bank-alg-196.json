@@ -1,0 +1,6 @@
+{
+ "question": "A storage cabinet holds $x$ four-terabyte drives and $y$ eight-terabyte drives, $86$ drives in all, and the number of eight-terabyte drives is $14$ more than the number of four-terabyte drives. How many four-terabyte drives are in the cabinet?",
+ "correctAnswer": "36",
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**The correct answer is $36$.**\n\n**The Fast Way (~30s):** Replacing $y$ with $x+14$ gives $2x+14=86$, so $2x=72$ and $x=36$.\n\n**The Full Solution:**\n\nStep 1: Substitute $y=x+14$ into $x+y=86$: $x+(x+14)=86$.\n\nStep 2: Combine like terms: $2x+14=86$, so $2x=72$.\n\nStep 3: Divide by $2$: $x=36$ four-terabyte drives. Check: $y=36+14=50$, and $36+50=86$.\n\n**Common Mistakes:** Reporting $50$ gives the number of eight-terabyte drives, the other variable. Dividing $86$ by $2$ without first removing the $14$ gives $43$, which would require the two counts to be equal.\n\n**Test Day Takeaway:** Subtract the constant introduced by the substitution before dividing, and check which of the two counts the question asks for.",
+ "id": "bank-alg-196"
+}

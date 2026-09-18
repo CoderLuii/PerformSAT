@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-195",
+  "question": "The area of field B is $60\\%$ greater than the area of field A, and the area of field B is $2{,}400$ square meters greater than the area of field A. What is the area, in square meters, of field B?",
+  "correctAnswer": "6400",
+  "explanation": "**SAT Pattern: Percent Relationship + Absolute Difference (System)**\n\n**The correct answer is $6400$.**\n\n**The Fast Way (~15s):** The $60\\%$ excess equals $2400$ square meters, so $0.60A = 2400$ and $A = 4000$. Then $B = 4000 + 2400 = 6400$.\n\n**The Full Solution:**\nStep 1: Let $A$ be the area of field A. \"$60\\%$ greater\" gives $B = 1.60A$, and the difference gives $B - A = 2400$.\nStep 2: Substitute: $1.60A - A = 0.60A = 2400$, so $A = \\frac{2400}{0.60} = 4000$.\nStep 3: Then $B = 1.60 \\times 4000 = 6400$. Check: $6400 - 4000 = 2400$. $\\checkmark$\n\n**Common Mistakes:** Reporting $4000$, the area of field A, when the question asks for field B; dividing the difference by $1.60$ to get $1500$; or multiplying the difference by $1.60$ to get $3840$.\n\n**Test Day Takeaway:** When a percent relationship and an absolute difference are both given, the difference equals the percent excess of the smaller quantity: $p\\% \\times \\text{smaller} = \\text{difference}$."
+}

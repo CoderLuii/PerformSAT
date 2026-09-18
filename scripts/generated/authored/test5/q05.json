@@ -1,34 +1,34 @@
 {
-  "id": 505,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "For a long time, engineers explained the endurance of ancient Roman concrete structures, such as the harbor walls still standing after two thousand years, by pointing to the volcanic ash the Romans mixed into their mortar. __A team of materials scientists has recently proposed a different mechanism: the small white lumps of lime long dismissed as signs of careless mixing are in fact reservoirs that let the concrete repair itself, dissolving when cracks admit water and recrystallizing to seal the gap.__ In laboratory tests, samples made by the Romans' apparent hot-mixing method developed cracks that closed within weeks, while samples made without the lime lumps did not.",
-  "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It compares the durability of ancient Roman harbor walls with that of modern concrete structures built using comparable volcanic materials."
-    },
-    {
-      "id": "B",
-      "text": "It introduces an alternative explanation for Roman concrete's durability, crediting a feature that earlier accounts had treated as a defect."
-    },
-    {
-      "id": "C",
-      "text": "It reports, in technical detail, the results of the controlled laboratory tests that the materials scientists ran in order to measure how quickly the cracks in their samples closed up."
-    },
-    {
-      "id": "D",
-      "text": "It restates the long-standing volcanic-ash explanation for Roman durability that the remainder of the passage then goes on to defend."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The first sentence gives the long-standing explanation for Roman concrete's endurance—the volcanic ash in the mortar. The underlined sentence then offers a competing account, crediting the lime lumps that earlier observers had written off as careless mixing with letting the concrete heal its own cracks. That is its job in the passage: to put forward a new explanation built on a feature once treated as a flaw. Choice A describes a comparison the sentence does not make, since modern concrete is not its subject. Choice C describes the third sentence, which reports the lab tests, not the underlined sentence. Choice D reverses the sentence's role, since it advances a new explanation rather than restating the older one.",
-  "_meta": {
-    "anchor": "Roman concrete — self-healing lime clasts vs. the volcanic-ash explanation"
+ "id": 505,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "A large fossil rarely leaves the ground intact by luck alone. Field crews first expose the top of a specimen, then trench around it until the bones stand on a pedestal of rock. __Before the pedestal is undercut and the block turned over, the crew wraps everything in layers of burlap soaked in wet plaster, which harden into a rigid jacket.__ Sealed inside, the brittle bones and their surrounding rock can survive the jolt of separation and the rough journey out of the field; months later, laboratory preparators saw the jacket open and finish, under magnification, the excavation the field crew began.",
+ "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It explains why some large fossils cannot be excavated and must be studied where they lie."
+  },
+  {
+   "id": "B",
+   "text": "It describes the protective step that makes possible the removal and transport discussed in the following sentence."
+  },
+  {
+   "id": "C",
+   "text": "It identifies a drawback of a field technique that the rest of the text otherwise presents favorably."
+  },
+  {
+   "id": "D",
+   "text": "It summarizes the laboratory procedures that begin once a specimen has arrived from the field."
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The underlined sentence describes the plaster jacketing step, and the next sentence shows what that step enables: bones \"sealed inside\" survive separation and transport.\n\n**The Full Solution:**\n- The text is a process account: expose the specimen, trench around it, jacket it, remove it, finish it in the laboratory.\n- The underlined sentence sits at the pivotal moment, describing how the block is wrapped in plaster-soaked burlap before being undercut.\n- The following sentence depends on it directly: only because the bones are \"sealed inside\" the hardened jacket can they survive the removal and the journey. The sentence therefore supplies the protective step that makes the rest of the process possible.\n\n**Why the other choices are wrong:**\n- A: The text never suggests any fossil is left in place; the whole passage is about getting specimens out safely.\n- C: No drawback is mentioned in the underlined sentence or anywhere else.\n- D: Laboratory work appears only in the final sentence, after the jacket arrives; the underlined sentence is about the field, not the lab.",
+ "_meta": {
+  "anchor": "paleontological field jackets — plaster and burlap protecting specimens for transport"
+ }
 }

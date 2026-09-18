@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A stage-rigging worksheet evaluates the expression $5(x - 2c) + 3(x + 4c)$ and displays the result in the form $8x + m$ for every value of $x$, where $c$ and $m$ are constants. What is the value of $m$ in terms of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-22c$"
+  },
+  {
+   "id": "B",
+   "text": "$-6c$"
+  },
+  {
+   "id": "C",
+   "text": "$-2c$"
+  },
+  {
+   "id": "D",
+   "text": "$2c$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "treats both constant terms as negative: -10c - 12c",
+  "B": "distributes the 3 only to x, leaving +4c instead of +12c: -10c + 4c",
+  "C": "combines the constants in the wrong order: 10c - 12c"
+ },
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice D is correct.** Distributing gives $5x - 10c + 3x + 12c = 8x + 2c$, so $m = 2c$.\n\n**The Fast Way (~20s):** The $x$-terms already match ($5x + 3x = 8x$), so only the constants matter: $-10c + 12c = 2c$.\n\n**The Full Solution:**\nStep 1: Distribute both factors: $5(x - 2c) = 5x - 10c$ and $3(x + 4c) = 3x + 12c$.\nStep 2: Group like terms: $(5x + 3x) + (-10c + 12c) = 8x + 2c$.\nStep 3: The worksheet shows $8x + m$ for every $x$, so the constant terms must match: $m = 2c$. Check with $c = 3$ and $x = 1$: the expression is $5(1 - 6) + 3(1 + 12) = -25 + 39 = 14$, and $8(1) + 2(3) = 14$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-22c$): keeps a minus sign on both constants, $-10c - 12c$, as if distributing $3$ across $+4c$ produced a negative term.\n* Choice B ($-6c$): distributes the $3$ to $x$ but not to $4c$, so the second constant enters as $4c$ instead of $12c$ and the sum becomes $-10c + 4c$.\n* Choice C ($-2c$): gets both constants right but subtracts them backwards, $10c - 12c$, flipping the sign of the answer.\n\n**Test Day Takeaway:** When an expression must equal a given form for EVERY value of $x$, match coefficients piece by piece — the constants alone decide the constant."
+}

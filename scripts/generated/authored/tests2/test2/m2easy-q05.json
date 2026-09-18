@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "A concert hall's reflector panel follows the curve $h(x) = -3(x - 4)^2 + 61$, where $h$ is the height in feet above the stage at a horizontal distance of $x$ feet from the stage's left edge. Which expression is equivalent to $-3(x - 4)^2 + 61$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3x^2 + 24x + 13$"
+  },
+  {
+   "id": "B",
+   "text": "$-3x^2 + 24x + 77$"
+  },
+  {
+   "id": "C",
+   "text": "$-3x^2 - 24x + 13$"
+  },
+  {
+   "id": "D",
+   "text": "$-3x^2 + 13$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "expands the square correctly but never multiplies the 16 by -3, adding 16 + 61 = 77 instead of -48 + 61 = 13",
+  "C": "loses a sign on the middle term, using -3 times -8x = -24x instead of +24x",
+  "D": "squares term by term, treating (x - 4)^2 as x^2 + 16, which drops the middle term entirely"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** $(x-4)^2 = x^2 - 8x + 16$; multiplying by $-3$ gives $-3x^2 + 24x - 48$, and $-48 + 61 = 13$.\n\n**The Full Solution:**\nStep 1: Expand the square: $(x - 4)^2 = x^2 - 8x + 16$.\nStep 2: Distribute the $-3$ across all three terms: $-3x^2 + 24x - 48$.\nStep 3: Add the outside constant: $-48 + 61 = 13$, so the expression is $-3x^2 + 24x + 13$. Check: at $x = 4$ the original gives $61$, and $-3(16) + 24(4) + 13 = -48 + 96 + 13 = 61$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-3x^2 + 24x + 77$): forgets to multiply the $16$ by $-3$, so the constant comes out as $16 + 61 = 77$ instead of $-48 + 61 = 13$.\n* Choice C ($-3x^2 - 24x + 13$): mishandles the sign on the middle term; $-3$ times $-8x$ is $+24x$, not $-24x$.\n* Choice D ($-3x^2 + 13$): squares term by term as if $(x - 4)^2 = x^2 + 16$, which erases the $-8x$ cross term.\n\n**Test Day Takeaway:** Expand the binomial square fully before distributing, and let the outside multiplier reach all three terms, the constant included."
+}

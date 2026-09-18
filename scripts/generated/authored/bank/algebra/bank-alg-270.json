@@ -1,0 +1,57 @@
+{
+ "question": "A swimmer's weekly workload budget assigns $2$ units to each tempo set $x$ and $5$ units to each endurance set $y$; the line shown gives every combination totaling $40$ units. The equation $8x + by = c$ has this same graph, where $b$ and $c$ are constants. What is the value of $b + c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$45$"
+  },
+  {
+   "id": "B",
+   "text": "$60$"
+  },
+  {
+   "id": "C",
+   "text": "$165$"
+  },
+  {
+   "id": "D",
+   "text": "$180$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "uses the graph's own equation $2x + 5y = 40$ without scaling to match $8x$, giving $5 + 40$",
+  "B": "scales the $y$-coefficient to $20$ but keeps the constant $40$",
+  "C": "scales the constant to $160$ but keeps the $y$-coefficient $5$"
+ },
+ "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** The line has intercepts $(20, 0)$ and $(0, 8)$, so its equation is $2x + 5y = 40$. Multiplying by $4$ gives $8x + 20y = 160$, so $b + c = 180$.\n\n**The Full Solution:**\n\nStep 1: Read the intercepts from the graph: the line meets the $x$-axis at $20$ and the $y$-axis at $8$. With $2$ units per tempo set and $5$ per endurance set, the budget is $2x + 5y = 40$.\n\nStep 2: To make the $x$-coefficient $8$, multiply the whole equation by $\\frac{8}{2} = 4$: $8x + 20y = 160$.\n\nStep 3: So $b = 20$ and $c = 160$, and $b + c = 180$. Check $(20, 0)$ in the scaled equation: $8(20) + 20(0) = 160$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($45$): adds $b = 5$ and $c = 40$ straight from $2x + 5y = 40$, never scaling to match $8x$.\n\n* Choice B ($60$): scales the $y$-coefficient to $20$ but leaves the constant at $40$.\n\n* Choice C ($165$): scales the constant to $160$ but leaves the $y$-coefficient at $5$.\n\n**Test Day Takeaway:** When a second equation must have the same graph, multiply every term by the same factor; a term left unscaled is the most common trap.",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -0.4,
+   "yIntercept": 8,
+   "xRange": [
+    0,
+    22
+   ],
+   "yRange": [
+    0,
+    10
+   ],
+   "xTickInterval": 4,
+   "yTickInterval": 2,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     0,
+     8
+    ],
+    [
+     20,
+     0
+    ]
+   ]
+  }
+ },
+ "id": "bank-alg-270"
+}

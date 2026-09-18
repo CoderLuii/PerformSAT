@@ -1,35 +1,41 @@
 {
-  "id": 1205,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "The following text is from Walt Whitman's poem \"Song of Myself,\" first published in Leaves of Grass (1855).\n\nA child said What is the grass? fetching it to me with full hands;\nHow could I answer the child? I do not know what it is any more than he.\n\nI guess it must be the flag of my disposition, out of hopeful green stuff woven.\n\nOr I guess it is the handkerchief of the Lord,\nA scented gift and remembrancer designedly dropt,\nBearing the owner's name someway in the corners, that we may see\nand remark, and say Whose?\n\nOr I guess the grass is itself a child, the produced babe of the vegetation.\n\nOr I guess it is a uniform hieroglyphic,\nAnd it means, Sprouting alike in broad zones and narrow zones,\nGrowing among black folks as among white,\nKanuck, Tuckahoe, Congressman, Cuff, I give them the same, I receive them\nthe same.",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The speaker reports a child's question, then offers a series of tentative interpretations of the grass before resting on a more inclusive reading."
-    },
-    {
-      "id": "B",
-      "text": "The speaker poses a question about the natural world, then sets aside several proposed answers in favor of a single technical definition."
-    },
-    {
-      "id": "C",
-      "text": "The speaker addresses a child directly, then describes a private memory the gift of grass has triggered and the social occasion surrounding it."
-    },
-    {
-      "id": "D",
-      "text": "The speaker recalls a single answer he once gave a child, then explains how he has come to doubt that answer in light of later experience."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The poem opens with the child's question, \"What is the grass?\", and the speaker then offers one guess after another—the grass as a flag, as the Lord's handkerchief, as a child, as a hieroglyphic—each marked by \"Or I guess,\" before the final image of grass growing the same among all peoples lands on a broad, inclusive meaning. B is wrong because the speaker never settles on a \"single technical definition\"; his closing reading is expansive, not precise. C misreads the poem as recounting a private memory and a social scene, neither of which appears. D claims the speaker is doubting one earlier answer, but the structure is a fresh series of guesses, not a reconsideration of a past one.",
-  "_meta": {
-    "quoteVerify": true,
-    "source": "Walt Whitman, \"Song of Myself,\" section 6 (Leaves of Grass, 1855)"
+ "id": 1205,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "The following text is from Alfred, Lord Tennyson's poem \"The Kraken,\" first published in Poems, Chiefly Lyrical (1830).\n\nBelow the thunders of the upper deep;\nFar, far beneath in the abysmal sea,\nHis antient, dreamless, uninvaded sleep\nThe Kraken sleepeth: faintest sunlights flee\nAbout his shadowy sides: above him swell\nHuge sponges of millennial growth and height;\nAnd far away into the sickly light,\nFrom many a wondrous grot and secret cell\nUnnumber'd and enormous polypi\nWinnow with giant arms the slumbering green.\nThere hath he lain for ages and will lie\nBattening upon huge seaworms in his sleep,\nUntil the latter fire shall heat the deep;\nThen once by man and angels to be seen,\nIn roaring he shall rise and on the surface die.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The speaker describes a creature's undisturbed sleep far beneath the sea, then foretells the single violent event that will end both the sleep and the creature itself."
+  },
+  {
+   "id": "B",
+   "text": "The speaker recounts a long search for a legendary sea creature, then admits that the search has ended without the creature ever having been seen."
+  },
+  {
+   "id": "C",
+   "text": "The speaker asks whether a fabled creature could truly survive in the deep sea, then weighs the evidence on either side without settling the question."
+  },
+  {
+   "id": "D",
+   "text": "The speaker pictures a creature rising briefly from the depths to the surface of the sea, then follows it back down to the seafloor where its long, undisturbed rest quietly resumes."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Most of the poem dwells on the Kraken's ancient, unbroken sleep in the deep; the closing lines then leap forward to the one event that will end it — \"In roaring he shall rise and on the surface die.\"\n\n**The Full Solution:**\n- The opening lines fix the setting and the state: \"Far, far beneath in the abysmal sea,\" the Kraken's \"antient, dreamless, uninvaded sleep.\"\n- The middle lines fill in the sleeping world around him — millennial sponges, giant polypi winnowing the slumbering green — all continuing the stillness.\n- The turn comes with \"Until the latter fire shall heat the deep\": the poem ends by foretelling the creature's rise and immediate death at the surface, the single event that closes both the sleep and the life.\n\n**Why the other choices are wrong:**\n- B: It invents a search and a searcher; no one in the poem is looking for the Kraken, and its future rising is when it will be seen.\n- C: It imposes a question-and-evidence debate on a poem that asserts its scene without ever doubting it.\n- D: It reverses the poem's motion — the rise to the surface comes at the end, and nothing follows it but death, not a resumed rest.",
+ "_meta": {
+  "anchor": "Alfred, Lord Tennyson, \"The Kraken\" (1830) — genuine public-domain text, complete poem verbatim",
+  "quoteVerify": true,
+  "source": "Alfred, Lord Tennyson, \"The Kraken,\" Poems, Chiefly Lyrical (1830); text verified verbatim against Project Gutenberg ebook 8601 (The Early Poems of Alfred, Lord Tennyson), including the 1830 printing's spellings \"antient\" and \"Unnumber'd\"",
+  "distractors": {
+   "B": "invents a search narrative the poem lacks",
+   "C": "imposes a debate structure on an assertive poem",
+   "D": "reverses the poem's movement from sleep to fatal rising"
+  }
+ }
 }

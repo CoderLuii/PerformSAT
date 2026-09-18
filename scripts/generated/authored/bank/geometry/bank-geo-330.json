@@ -1,0 +1,46 @@
+{
+ "id": "bank-geo-330",
+ "question": "In triangle $ABC$, the angle at $C$ measures $90^\\circ$, the perimeter of the triangle is $30$, and $AB=13$. Given that $BC<AC$, what is the value of $\\tan A$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "A",
+    "C",
+    "B"
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "13"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{5}{13}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{5}{12}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{12}{13}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{12}{5}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the hypotenuse in the denominator",
+  "C": "gives cosine instead of tangent",
+  "D": "swaps opposite and adjacent"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Trig Ratio from Perimeter**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The legs sum to $30-13=17$ with squares summing to $169$, so they are $5$ and $12$. With $BC<AC$, $BC=5$ and $AC=12$, giving $\\tan A=\\frac{5}{12}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $C$, so $\\overline{AB}=13$ is the hypotenuse and $\\overline{BC}$ and $\\overline{AC}$ are the legs.\nStep 2: The legs sum to $30-13=17$ and satisfy $BC^2+AC^2=169$. The pair is $5$ and $12$, since $5+12=17$ and $25+144=169$. The condition $BC<AC$ makes $BC=5$ and $AC=12$.\nStep 3: For angle $A$, the opposite leg is $\\overline{BC}=5$ and the adjacent leg is $\\overline{AC}=12$, so $\\tan A=\\frac{5}{12}$.\n\nCheck: $5+12+13=30$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{5}{13}$): divided by the hypotenuse, which produces $\\sin A$, not $\\tan A$.\n* Choice C ($\\frac{12}{13}$): used adjacent over hypotenuse, which is $\\cos A$.\n* Choice D ($\\frac{12}{5}$): swapped opposite and adjacent, giving the tangent of the other acute angle.\n\n**Test Day Takeaway:** Tangent uses only the two legs. Once the legs are known, the inequality in the problem tells you which leg faces the named angle."
+}

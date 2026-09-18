@@ -1,34 +1,34 @@
 {
-  "id": 529,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "The gradations of color in a Japanese woodblock print—a sky that deepens from pale horizon to dark zenith—were not painted but printed, using a technique called bokashi in which the printer wiped a single block with a gradient of ink before each impression. Because the gradient had to be re-created by hand for every sheet, producing a long edition demanded considerable ______ from the printer, who had to reproduce the same wipe of ink dozens of times without letting the transition between colors grow harsh or uneven.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "expense"
-    },
-    {
-      "id": "B",
-      "text": "novelty"
-    },
-    {
-      "id": "C",
-      "text": "luck"
-    },
-    {
-      "id": "D",
-      "text": "consistency"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"consistency.\" The clause after the blank explains what the printer's task required: reproducing the same wipe of ink dozens of times without letting the gradient grow uneven. Doing the same thing the same way repeatedly is consistency. \"Novelty\" points the wrong way, since the demand is for sameness, not invention. \"Expense\" names a cost rather than the skill the sentence describes, and \"luck\" mismatches a task that depends on deliberate control rather than chance.",
-  "_meta": {
-    "anchor": "Bokashi gradation printing; reproducing the same ink wipe demands consistency"
+ "id": 529,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "Printing type much taller than a few centimeters was rarely cast in metal: poster-sized letters in lead would have been costly and, above all, ponderous. When pantograph-guided routers made it possible to carve display letters from close-grained maple in any size, poster printers embraced wood type chiefly for its ______: a compositor could lift a letter the height of a hand with two fingers, and a locked-up poster form would not sag under its own weight.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "rarity"
+  },
+  {
+   "id": "B",
+   "text": "durability"
+  },
+  {
+   "id": "C",
+   "text": "delicacy"
+  },
+  {
+   "id": "D",
+   "text": "lightness"
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The passage opposes wood to \"ponderous\" lead, and both illustrations after the colon — a huge letter lifted with two fingers, a form that does not sag under its own weight — are virtues of low weight.\n\n**The Full Solution:**\n- The problem with metal display type is stated plainly: poster-sized lead letters would be costly and ponderous, that is, heavy.\n- The blank names the property for which printers \"chiefly\" embraced wood, and the colon supplies the evidence: effortless lifting and a form that will not sag from its own mass.\n- The property those examples demonstrate is lightness.\n\n**Why the other choices are wrong:**\n- A: \"Rarity\" is contradicted by the point of the routers, which made wood letters producible \"in any size\"; scarcity is nowhere valued.\n- B: \"Durability\" concerns resistance to wear, which neither illustration addresses; sagging under weight is a mass problem, not a wear problem.\n- C: \"Delicacy\" suggests fine fragility, nearly the opposite of what a printer wants in working type, and it does not follow from the examples.",
+ "_meta": {
+  "anchor": "wood type for posters — lightness versus ponderous lead display letters"
+ }
 }

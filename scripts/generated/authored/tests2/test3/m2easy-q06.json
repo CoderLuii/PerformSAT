@@ -1,0 +1,33 @@
+{
+ "id": 6,
+ "question": "The table gives the target diameter $d$ and the tolerance $t$, both in millimeters, for three machined shafts. A measured diameter $m$ is at the tolerance limit when $|m - d| = t$. What is the greatest measured diameter, in millimeters, at the tolerance limit for shaft R?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Shaft",
+    "Target diameter d (mm)",
+    "Tolerance t (mm)"
+   ],
+   "rows": [
+    [
+     "P",
+     "18.00",
+     "0.25"
+    ],
+    [
+     "Q",
+     "24.60",
+     "0.40"
+    ],
+    [
+     "R",
+     "31.50",
+     "0.75"
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "32.25",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**The correct answer is $32.25$.**\n\n**The Fast Way (~20s):** An absolute value equation has two solutions, one on each side of the target. The greater one is $31.50 + 0.75 = 32.25$ millimeters.\n\n**The Full Solution:**\nStep 1: Pull shaft R's numbers from the table. Its target diameter is $d = 31.50$ millimeters and its tolerance is $t = 0.75$ millimeter, so the equation is $|m - 31.50| = 0.75$.\nStep 2: Split the absolute value into its two cases. Either $m - 31.50 = 0.75$ or $m - 31.50 = -0.75$.\nStep 3: Solve both and take the greater. The two limits are $m = 32.25$ and $m = 30.75$, so the greatest is $32.25$. Check: $|32.25 - 31.50| = 0.75$ ✓\n\n**Common Mistakes:**\n* $30.75$: solves only the negative case and reports the lower limit. The question asks for the greatest of the two solutions.\n* $31.50$: reports the target diameter itself, which satisfies $|m - d| = 0$, not $|m - d| = 0.75$.\n* $33.00$: adds the tolerance to both sides of the target, using $2t = 1.50$ instead of $t = 0.75$.\n\n**Test Day Takeaway:** $|A| = b$ with $b > 0$ always splits into $A = b$ and $A = -b$. Write both cases down before deciding which one the question wants, and read the row of the table the question actually names."
+}

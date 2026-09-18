@@ -1,0 +1,63 @@
+{
+  "id": "bank-ps-036",
+  "question": "The dot plot shows the number of eggs collected from a henhouse on each of $15$ mornings. What is the mode of the data?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 2,
+          "count": 1
+        },
+        {
+          "value": 3,
+          "count": 2
+        },
+        {
+          "value": 4,
+          "count": 3
+        },
+        {
+          "value": 5,
+          "count": 3
+        },
+        {
+          "value": 6,
+          "count": 5
+        },
+        {
+          "value": 7,
+          "count": 1
+        }
+      ],
+      "xMin": 1,
+      "xMax": 8,
+      "xLabel": "Eggs collected"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$4.8$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the smallest value (the shortest stack), not the most frequent one.",
+    "B": "computes the mean, $\\frac{72}{15}$, rather than the mode.",
+    "C": "reports the height of the tallest stack ($5$ dots) instead of the value beneath it, or reports the median."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Mode Identification**\n\n**Choice D is correct.**\n\n**The Fast Way (~5s):** The mode is the value with the tallest stack of dots. The stack above $6$ has $5$ dots, more than any other, so the mode is $6$.\n\n**The Full Solution:**\nStep 1: The mode is the value that occurs most often. On a dot plot, that is the tallest column.\nStep 2: Column heights: $2$ has $1$ dot, $3$ has $2$, $4$ has $3$, $5$ has $3$, $6$ has $5$, $7$ has $1$.\nStep 3: The tallest column is above $6$, so the mode is $6$. Check: the heights add to $1 + 2 + 3 + 3 + 5 + 1 = 15$, matching the $15$ mornings. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): reports the smallest value (the shortest stack), not the most frequent one.\n* Choice B ($4.8$): computes the mean, $\\frac{72}{15}$, rather than the mode.\n* Choice C ($5$): reports the height of the tallest stack ($5$ dots) instead of the value beneath it, or reports the median.\n\n**Test Day Takeaway:** Mode is read off the axis under the tallest stack; the stack's height is a count, never the answer."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "bank-alg-040",
+  "question": "A coastal survey reports two shoreline positions, given by the linear functions $f$ and $g$, in meters, at each of three times $x$, as listed in the table. For how many values of $x$ does $f(x) = g(x)$?",
+  "questionTable": {
+    "headers": [
+      "$x$",
+      "$f(x)$",
+      "$g(x)$"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$7$",
+        "$2$"
+      ],
+      [
+        "$3$",
+        "$13$",
+        "$8$"
+      ],
+      [
+        "$5$",
+        "$19$",
+        "$14$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "None"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two"
+    },
+    {
+      "id": "D",
+      "text": "Infinitely many"
+    }
+  ],
+  "distractorNotes": {
+    "B": "assumes any two distinct lines must cross somewhere",
+    "C": "treats two linear functions as able to agree at two separate inputs",
+    "D": "reads the equal rates of change as meaning the two models are identical"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Classify System (Parallel Lines)**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Both functions rise $3$ meters per unit of $x$ but sit $5$ meters apart, so their graphs are parallel and never meet.\n\n**The Full Solution:**\nStep 1: Find each rate of change from the table: $f$ goes from $7$ to $13$ as $x$ goes from $1$ to $3$, a rate of $\\frac{6}{2} = 3$; $g$ goes from $2$ to $8$ over the same span, also $3$.\nStep 2: The two linear functions therefore have equal slopes, but at $x = 1$ they differ by $7 - 2 = 5$ meters.\nStep 3: Equal slopes with different values means parallel graphs, so $f(x) = g(x)$ has no solution. Check: $f(x) = 3x + 4$ and $g(x) = 3x - 1$, and $3x + 4 = 3x - 1$ reduces to $4 = -1$, which is never true ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (Exactly one): assumes any two distinct lines must cross somewhere, which fails for parallel lines.\n* Choice C (Exactly two): treats two linear functions as able to agree at two separate inputs.\n* Choice D (Infinitely many): reads the matching rates of change as meaning the two models are the same, but their values differ by $5$ at every $x$.\n\n**Test Day Takeaway:** Equal slopes plus one differing value is the signature of no solution; equal slopes plus one matching value is the signature of infinitely many."
+}

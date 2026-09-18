@@ -1,0 +1,29 @@
+{
+  "id": 14,
+  "question": "A radio-collared wolf's home range is bounded on a map by $x^2 + y^2 - 12x + 8y = c$, with distances in kilometers, and walking that boundary once covers $20\\pi$ kilometers. What is the value of the constant $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-108$"
+    },
+    {
+      "id": "B",
+      "text": "$-42$"
+    },
+    {
+      "id": "C",
+      "text": "$48$"
+    },
+    {
+      "id": "D",
+      "text": "$152$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "completes the square without halving the linear coefficients, subtracting 144 and 64 to get 100 - 208 = -108",
+    "B": "uses the radius 10 in place of the radius squared, computing 10 - 52 = -42",
+    "D": "adds the completing-the-square constants instead of subtracting them: 100 + 52 = 152"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice C is correct.** A boundary of length $20\\pi$ gives radius $10$, and completing the square turns the equation into $(x - 6)^2 + (y + 4)^2 = c + 52$, so $c + 52 = 100$ and $c = 48$.\n\n**The Fast Way (~35s):** Radius $10$ means the right side of the standard form is $100$; completing the square adds $36 + 16 = 52$ to it, so $c = 100 - 52 = 48$.\n\n**The Full Solution:**\nStep 1: The boundary is a circle, so its length is $2\\pi r$. From $2\\pi r = 20\\pi$, the radius is $r = 10$ kilometers.\nStep 2: Complete the square in each variable. Half of $-12$ is $-6$ and $(-6)^2 = 36$; half of $8$ is $4$ and $4^2 = 16$. So $x^2 - 12x + y^2 + 8y = c$ becomes $(x - 6)^2 + (y + 4)^2 = c + 36 + 16 = c + 52$.\nStep 3: Standard form requires the right side to equal $r^2 = 100$, so $c + 52 = 100$ and $c = 48$. Check: $(x - 6)^2 + (y + 4)^2 = 100$ expands to $x^2 + y^2 - 12x + 8y + 52 = 100$, that is, $x^2 + y^2 - 12x + 8y = 48$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-108$): squares the full linear coefficients instead of half of them, adding $144$ and $64$ and landing on $100 - 208 = -108$.\n* Choice B ($-42$): puts the radius $10$ on the right side instead of $r^2 = 100$, giving $10 - 52 = -42$. Standard form always carries the square of the radius.\n* Choice D ($152$): moves the $52$ to the wrong side, computing $100 + 52$. The constants were created on the left, so they must be subtracted from $100$.\n\n**Test Day Takeaway:** Convert the given circumference or area to $r^2$ first, then complete the square and match the right sides; the only sign trap is which way the added constants travel."
+}

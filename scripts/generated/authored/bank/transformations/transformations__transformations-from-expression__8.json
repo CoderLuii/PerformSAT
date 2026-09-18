@@ -1,0 +1,30 @@
+{
+ "id": 8,
+ "question": "A ripening room's ethylene concentration, in parts per million, is $f(t)$ at minute $t$ of a treatment run, and a backup analyzer reports $g(t) = f(t + 7) - 4$. The graph of $y = g(t)$ has a $y$-intercept of $11$. What is the value of $f(7)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$11$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the horizontal shift 7 rather than a concentration",
+  "B": "reports g's intercept, forgetting the -4",
+  "D": "adds the horizontal shift 7 to 11 instead of adding 4"
+ },
+ "correctAnswer": "C",
+ "hint": "The graph's intercept is a value of $g$, not of $f$.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** A $y$-intercept of $11$ means $g(0) = f(7) - 4 = 11$, so $f(7) = 15$ parts per million.\n\n**The Full Solution:**\nStep 1: A $y$-intercept occurs at $t = 0$, so $g(0) = 11$.\nStep 2: Substituting into the rule gives $g(0) = f(0 + 7) - 4 = f(7) - 4$, so $f(7) - 4 = 11$.\nStep 3: Add $4$: $f(7) = 15$ parts per million. Check: $g(0) = 15 - 4 = 11$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): reporting the horizontal shift instead of a concentration.\n* Choice B ($11$): reporting the backup analyzer's intercept and leaving the $-4$ unaccounted for.\n* Choice D ($18$): adding the horizontal shift $7$ to $11$; the number that must be added back is the $4$.\n\n**Test Day Takeaway:** Evaluate the transformed rule at the input the question describes, then undo the outside operation."
+}

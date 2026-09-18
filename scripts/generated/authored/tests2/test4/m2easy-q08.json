@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "A telescope data archive labels each spectrograph frame with the value $\\frac{9^{a} \\cdot 9^{5}}{9^{2}}$, where $a$ is a positive integer. For one frame the label equals $9^{14}$. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$11$"
+  },
+  {
+   "id": "D",
+   "text": "$21$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the denominator exponent again, computing 14 - 5 - 2 instead of 14 - 5 + 2",
+  "B": "ignores the denominator entirely and computes 14 - 5",
+  "D": "adds all three exponents, 14 + 5 + 2, instead of solving the exponent equation"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The label simplifies to $9^{a + 5 - 2} = 9^{a + 3}$, so $a + 3 = 14$ and $a = 11$.\n\n**The Full Solution:**\nStep 1: Multiplying powers of the same base adds exponents: $9^{a} \\cdot 9^{5} = 9^{a + 5}$.\nStep 2: Dividing powers of the same base subtracts exponents: $\\frac{9^{a + 5}}{9^{2}} = 9^{a + 3}$.\nStep 3: Equal powers of the same base force equal exponents, so $a + 3 = 14$ and $a = 11$. Check: $\\frac{9^{11} \\cdot 9^{5}}{9^{2}} = 9^{16 - 2} = 9^{14}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): this subtracts the $2$ a second time, computing $14 - 5 - 2$. Substituting back gives $9^{7 + 3} = 9^{10}$, not $9^{14}$.\n* Choice B ($9$): this drops the denominator and solves $a + 5 = 14$. Substituting back gives $9^{12}$.\n* Choice D ($21$): this adds every exponent in sight, $14 + 5 + 2$. Substituting back gives $9^{24}$, far too large.\n\n**Test Day Takeaway:** Collapse the whole expression to a single power of the base first; only then set the exponents equal — combining the exponents in the wrong order is where the sign errors live."
+}

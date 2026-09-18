@@ -1,0 +1,23 @@
+{
+ "id": 16,
+ "question": "Right triangles $ABC$ and $ADE$ in the figure share the vertex $A$, with right angles at $C$ and at $E$. Point $B$ lies on segment $AD$ and point $C$ lies on segment $AE$. If triangle $ABC$ covers $48$ square units, how many square units does quadrilateral $BCED$ cover?",
+ "diagram": {
+  "type": "nestedRightTriangles",
+  "params": {
+   "labels": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D",
+    "E": "E"
+   },
+   "sideLabels": {
+    "AC": "6",
+    "CE": "9"
+   },
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "252",
+ "explanation": "**SAT Pattern: Similar Triangles and Area Ratio**\n\n**The correct answer is $252$.**\n\n**The Fast Way (~45s):** $AE = 6 + 9 = 15$, so the similarity ratio is $\\frac{15}{6} = \\frac{5}{2}$ and triangle $ADE$ has area $48 \\cdot \\frac{25}{4} = 300$. The quadrilateral is $300 - 48 = 252$.\n\n**The Full Solution:**\nStep 1: Triangles $ABC$ and $ADE$ share $\\angle A$ and each has a right angle ($\\angle ACB$ and $\\angle AED$), so they are similar. The corresponding sides along the shared ray are $AC = 6$ and $AE = 6 + 9 = 15$.\nStep 2: Areas of similar figures scale as the square of the linear ratio: $\\left(\\frac{15}{6}\\right)^2 = \\frac{25}{4}$. So triangle $ADE$ has area $48 \\cdot \\frac{25}{4} = 300$ square units.\nStep 3: Quadrilateral $BCED$ is what is left when the small triangle is removed from the large one: $300 - 48 = 252$ square units. Check: the removed piece is $\\frac{48}{300} = \\frac{4}{25}$ of the whole, exactly the square of $\\frac{2}{5}$ ✓\n\n**Common Mistakes:** Entering $300$ (the area of triangle $ADE$, forgetting to remove the small triangle that the quadrilateral excludes); entering $120$ (scaling the area by the linear ratio $\\frac{5}{2}$ instead of its square, $48 \\cdot \\frac{5}{2} = 120$); entering $72$ (making that same linear-ratio error and then subtracting, $120 - 48 = 72$).\n\n**Test Day Takeaway:** Areas of similar figures scale by the square of the side ratio; for the region between two nested similar figures, compute both areas first and subtract only at the end."
+}

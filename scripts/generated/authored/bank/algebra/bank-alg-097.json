@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-097",
+  "question": "A print shop charges $\\$0.75$ per page plus a binding fee of $\\$6$ per booklet. Printing and binding one booklet with $n$ pages cost $\\$21$. What is the cost, in dollars, of printing and binding one booklet with $n + 12$ pages?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\$30$"
+    },
+    {
+      "id": "B",
+      "text": "$\\$33$"
+    },
+    {
+      "id": "C",
+      "text": "$\\$36$"
+    },
+    {
+      "id": "D",
+      "text": "$\\$93$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "adds the 12 pages as dollars",
+    "C": "adds a second binding fee",
+    "D": "uses the binding fee as the per-page price"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Twelve more pages add $12 \\cdot \\$0.75 = \\$9$. One booklet still means one binding fee, so the cost is $\\$21 + \\$9 = \\$30$.\n\n**The Full Solution:**\nStep 1: The cost equation is $0.75n + 6 = 21$, so $0.75n = 15$ and $n = 20$ pages.\nStep 2: For $n + 12 = 32$ pages: $0.75(32) + 6 = 24 + 6 = 30$.\nStep 3: Shortcut check: $12$ extra pages cost $12 \\cdot 0.75 = 9$, and $21 + 9 = 30$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\$33$): adds the $12$ pages as $12$ dollars instead of $12 \\cdot \\$0.75$.\n* Choice C ($\\$36$): adds a second binding fee on top of the page cost, though it is still one booklet.\n* Choice D ($\\$93$): uses the $\\$6$ binding fee as the per-page price, $21 + 12 \\cdot 6$.\n\n**Test Day Takeaway:** Identify which quantity is scaling (pages) and which is fixed (binding); the extra cost is the extra count times the per-unit rate only."
+}

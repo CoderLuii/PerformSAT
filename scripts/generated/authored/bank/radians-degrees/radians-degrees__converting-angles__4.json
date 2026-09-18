@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "A turnstile at a transit station advances $\\frac{2\\pi}{9}$ radians each time a rider passes through it. A counter records that $n$ riders passed through and that the turnstile rotated a total of $320$ degrees. What is the value of $n$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$8$"
+    },
+    {
+      "id": "C",
+      "text": "$16$"
+    },
+    {
+      "id": "D",
+      "text": "$40$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "converts one advance to 80 degrees by using 360 in place of pi, then divides 320 by 80",
+    "C": "converts one advance to 20 degrees by using 90 in place of pi, then divides 320 by 20",
+    "D": "reports the degree measure of a single advance, 40, instead of the number of riders"
+  },
+  "correctAnswer": "B",
+  "hint": "Find what one rider is worth in degrees before dividing.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** One advance is $\\frac{2\\pi}{9} \\cdot \\frac{180}{\\pi} = 40$ degrees, and $\\frac{320}{40} = 8$ riders.\n\n**The Full Solution:**\nStep 1: Convert one advance to degrees. $\\frac{2\\pi}{9} \\cdot \\frac{180}{\\pi} = \\frac{2 \\cdot 180}{9} = 40$ degrees.\nStep 2: Divide the total by the per-rider amount. $n = \\frac{320}{40} = 8$ riders.\nStep 3: Check. Eight advances of $40$ degrees total $320$ degrees, which is $8 \\cdot \\frac{2\\pi}{9} = \\frac{16\\pi}{9}$ radians. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): converts one advance to $80$ degrees by putting $360$ where $\\pi$ belongs, then divides $320$ by $80$.\n* Choice C ($16$): converts one advance to $20$ degrees by putting $90$ where $\\pi$ belongs.\n* Choice D ($40$): is the degree measure of ONE advance, not the number of riders.\n\n**Test Day Takeaway:** Put both quantities in the same unit before dividing, then check the units of what the question actually asks for."
+}

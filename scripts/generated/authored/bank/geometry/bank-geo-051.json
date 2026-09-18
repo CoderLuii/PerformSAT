@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-051",
+  "question": "A regular hexagonal glovebox port cover measures $24$ centimeters from one corner to the opposite corner. What is the cover's area, in square centimeters?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36\\sqrt{3}$"
+    },
+    {
+      "id": "B",
+      "text": "$108\\sqrt{3}$"
+    },
+    {
+      "id": "C",
+      "text": "$216\\sqrt{3}$"
+    },
+    {
+      "id": "D",
+      "text": "$432\\sqrt{3}$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "gives the area of a single equilateral triangle of side 12 and stops",
+    "B": "counts only three of the six equilateral triangles",
+    "D": "uses one half s squared times root 3 for each triangle, doubling every triangle's area"
+  },
+  "explanation": "**SAT Pattern: Regular Hexagon Area via Equilateral Triangles**\n\n**Choice C is correct.** The long diagonal is twice a side, so $s = 12$, and the area is $6 \\cdot \\frac{\\sqrt{3}}{4}(12)^2 = 216\\sqrt{3}$ square centimeters.\n\n**The Fast Way (~40s):** $s = \\frac{24}{2} = 12$; each of the six equilateral triangles has area $\\frac{\\sqrt{3}}{4}(144) = 36\\sqrt{3}$, so the total is $216\\sqrt{3}$.\n\n**The Full Solution:**\n\nStep 1: A regular hexagon's longest diagonal passes through the center and equals two side lengths, so $2s = 24$ and $s = 12$ centimeters.\n\nStep 2: Segments from the center to the six vertices cut the hexagon into six equilateral triangles of side $12$; each has area $\\frac{\\sqrt{3}}{4}s^2 = \\frac{\\sqrt{3}}{4}(144) = 36\\sqrt{3}$.\n\nStep 3: Six of them give $6(36\\sqrt{3}) = 216\\sqrt{3}$ square centimeters. Check with the direct formula: $\\frac{3\\sqrt{3}}{2}s^2 = \\frac{3\\sqrt{3}}{2}(144) = 216\\sqrt{3} \\approx 374.1$ square centimeters.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($36\\sqrt{3}$): the area of one equilateral triangle, not the whole cover.\n* Choice B ($108\\sqrt{3}$): counts three triangles, covering only half the hexagon.\n* Choice D ($432\\sqrt{3}$): uses $\\frac{\\sqrt{3}}{2}s^2$ per triangle, doubling each piece.\n\n**Test Day Takeaway:** In a regular hexagon the center-to-vertex distance equals the side, so the long diagonal is $2s$ — that single fact unlocks the six-triangle decomposition."
+}

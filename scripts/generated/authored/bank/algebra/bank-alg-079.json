@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-079",
+  "question": "A sonar unit converts each raw echo reading with the function $g$, defined by $g(x) = 4x + 1$, and then applies the function $f$, defined by $f(x) = x^2 - 3$, to that converted value. Which of the following expressions gives the unit's output for a raw echo reading of $x$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4x^2 - 11$"
+    },
+    {
+      "id": "B",
+      "text": "$16x^2 + 1$"
+    },
+    {
+      "id": "C",
+      "text": "$16x^2 + 8x - 2$"
+    },
+    {
+      "id": "D",
+      "text": "$16x^2 + 8x + 4$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies f first and then g, computing g(f(x))",
+    "B": "squares 4x and 1 separately and omits the middle term",
+    "D": "adds 3 instead of subtracting it"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Function Composition (Expression)**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The unit's output is $f(g(x)) = (4x + 1)^2 - 3 = 16x^2 + 8x + 1 - 3 = 16x^2 + 8x - 2$.\n\n**The Full Solution:**\nStep 1: The reading goes through $g$ first, so the converted value is $4x + 1$; that value is then the input to $f$.\nStep 2: So the output is $f(4x + 1) = (4x + 1)^2 - 3$.\nStep 3: Expand: $(4x + 1)^2 = 16x^2 + 8x + 1$, so the output is $16x^2 + 8x + 1 - 3 = 16x^2 + 8x - 2$. Check: an input of $1$ gives $g(1) = 5$ and $f(5) = 22$, while $16 + 8 - 2 = 22$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4x^2 - 11$): applies $f$ first and then $g$, computing $4(x^2 - 3) + 1$.\n* Choice B ($16x^2 + 1$): squares $4x$ and $1$ separately and omits the middle term $8x$.\n* Choice D ($16x^2 + 8x + 4$): expands the square correctly but adds $3$ instead of subtracting it.\n\n**Test Day Takeaway:** Substitute the whole inner expression into the outer rule and expand the square in full — the middle term is where compositions are lost."
+}

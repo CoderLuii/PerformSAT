@@ -1,0 +1,29 @@
+{
+ "question": "A datacenter bills $\\$0.11$ per kilowatt-hour for the first $500$ kilowatt-hours of a month and $\\$r$ for each additional kilowatt-hour. Which function gives the charge, in dollars, for a month in which $k$ kilowatt-hours are used, where $k>500$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$C(k)=r(k-500)$"
+  },
+  {
+   "id": "B",
+   "text": "$C(k)=rk+55$"
+  },
+  {
+   "id": "C",
+   "text": "$C(k)=0.11k+r(k-500)$"
+  },
+  {
+   "id": "D",
+   "text": "$C(k)=rk+55-500r$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "omits the 55-dollar charge for the first 500 kilowatt-hours",
+  "B": "applies the rate r to all k kilowatt-hours and still adds the full 55 dollars, double-charging the first 500",
+  "C": "charges 0.11 dollar on every kilowatt-hour instead of only on the first 500"
+ },
+ "explanation": "**SAT Pattern: Linear Cost Model**\n\n**Choice D is correct.** The first $500$ kilowatt-hours cost $0.11(500)=\\$55$, and the remaining $k-500$ cost $r$ each, so $C(k)=55+r(k-500)=rk+55-500r$.\n\n**The Fast Way (~45s):** Fixed first tier $\\$55$, then $r$ per kilowatt-hour beyond $500$: $55+r(k-500)$, which expands to $rk+55-500r$.\n\n**The Full Solution:**\n\nStep 1: The first tier is a fixed amount because $k>500$: $0.11(500)=55$ dollars.\n\nStep 2: The kilowatt-hours billed at rate $r$ are the ones past the first $500$, namely $k-500$, contributing $r(k-500)$ dollars.\n\nStep 3: Add the two tiers: $C(k)=55+r(k-500)$. Expanding gives $C(k)=rk+55-500r$. Check: at $k=500$ this returns $500r+55-500r=55$, the first-tier charge exactly.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: bills only the overage and drops the $\\$55$ every month already includes.\n* Choice B: charges $r$ on all $k$ kilowatt-hours and still adds $\\$55$, billing the first $500$ twice.\n* Choice C: applies $\\$0.11$ to every kilowatt-hour rather than only to the first $500$.\n\n**Test Day Takeaway:** In a two-tier model the second rate applies only to the excess, so subtract the tier boundary from the input before multiplying.",
+ "id": "bank-alg-344"
+}

@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "A booster pumping station holds a discharge pressure of $p$ bars, and its daily operating cost, in dollars, is $C(p) = 3(p - 8)^2 + 55$. An engineer needs this cost written as a polynomial in standard form. Which polynomial is equal to $C(p)$ for every value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3p^2 - 48p + 55$"
+    },
+    {
+      "id": "B",
+      "text": "$3p^2 - 48p + 119$"
+    },
+    {
+      "id": "C",
+      "text": "$3p^2 - 48p + 247$"
+    },
+    {
+      "id": "D",
+      "text": "$3p^2 + 48p + 247$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "drops the 3(64) = 192 term entirely, keeping only the 55",
+    "B": "adds 64 to 55 without tripling it: 55 + 64 = 119, so the 3 never reaches the constant",
+    "D": "expands (p - 8)^2 as p^2 + 16p + 64, losing the minus sign on the middle term"
+  },
+  "correctAnswer": "C",
+  "hint": "Square the binomial completely before you distribute the 3.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** $(p - 8)^2 = p^2 - 16p + 64$, so $3(p^2 - 16p + 64) + 55 = 3p^2 - 48p + 192 + 55$.\n\n**The Full Solution:**\nStep 1: Square the binomial. $(p - 8)^2 = p^2 - 16p + 64$.\nStep 2: Distribute the $3$. $3(p^2 - 16p + 64) = 3p^2 - 48p + 192$.\nStep 3: Combine the constants and check. $192 + 55 = 247$, so $C(p) = 3p^2 - 48p + 247$. At $p = 8$ the original gives $55$, and $3(64) - 48(8) + 247 = 192 - 384 + 247 = 55$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3p^2 - 48p + 55$): never multiplies the $64$ by $3$, so the $192$ is missing from the constant term.\n* Choice B ($3p^2 - 48p + 119$): adds $64$ to $55$ without tripling it, giving $119$ instead of $247$.\n* Choice D ($3p^2 + 48p + 247$): expands $(p - 8)^2$ with a plus sign on the middle term. Squaring $p - 8$ gives $-16p$.\n\n**Test Day Takeaway:** Expand the square first, then distribute, then combine. The constant outside the square never reaches the middle term."
+}

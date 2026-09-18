@@ -6,30 +6,19 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 1,
-  "passage": "The following text is adapted from Marianne Moore's 1919 poem \"Poetry.\"\n\nI, too, dislike it: there are things that are important beyond all this fiddle. / Reading it, however, with a perfect contempt for it, one discovers in it after all, a place for the genuine. / Hands that can grasp, eyes that can dilate, hair that can rise if it must, these things are important not because a high-sounding interpretation can be put upon them but because they are useful.",
+  "passage": "The following text is from Christina Rossetti's 1861 poem \"Up-Hill.\"\n\nDoes the road wind up-hill all the way? / Yes, to the very end. / Will the day's journey take the whole long day? / From morn to night, my friend. // But is there for the night a resting-place? / A roof for when the slow dark hours begin. / May not the darkness hide it from my face? / You cannot miss that inn.",
   "question": "Which choice best describes the overall structure of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "The speaker enumerates the kinds of poetry she most admires and then names a single critic whose taste she shares."
-    },
-    {
-      "id": "B",
-      "text": "The speaker praises poetry's high-sounding interpretations and then defends them against the objections of more practical readers."
-    },
-    {
-      "id": "C",
-      "text": "The speaker concedes a dislike for poetry and then identifies the conditions under which she nonetheless finds it worth reading."
-    },
-    {
-      "id": "D",
-      "text": "The speaker offers a series of natural images and then concludes that they are unsuitable as material for serious verse."
-    }
+    { "id": "A", "text": "One speaker describes a difficult journey in vivid detail, and a second speaker then argues that the journey is not worth undertaking." },
+    { "id": "B", "text": "The text alternates between an account of a road by daylight and an account of the same road after nightfall." },
+    { "id": "C", "text": "A series of questions about a journey, each posed by one speaker, is answered in turn by a second speaker." },
+    { "id": "D", "text": "A traveler recalls the stages of a finished journey and reflects on the lessons each stage offered." }
   ],
   "correctAnswer": "C",
-  "explanation": "The poem opens by conceding dislike—\"I, too, dislike it\"—and then turns on \"however,\" finding that even read with contempt, poetry offers \"a place for the genuine.\" The structure is a concession followed by the conditions under which the speaker still values poetry, which choice C describes. The others misread the turn: she neither lists favorite poems (A), defends \"high-sounding interpretation\" (B), nor rejects her images as unfit for verse (D).",
+  "explanation": "**Choice C is correct.** Every line of the poem is either a question or its answer: one voice asks about the road, the day's length, a resting place, and finding it; a second voice answers each in turn.\n\n**The Full Solution:**\n- The alternation is strict — question, answer, question, answer — through both stanzas.\n- The answering voice is distinct from the asking voice (\"my friend,\" \"You cannot miss that inn\"), confirming a two-speaker exchange.\n- Choice C names exactly that structure: questions posed by one speaker, answered in turn by a second.\n\n**Why the other choices are wrong:**\n- A: No one argues against the journey — the answering voice reassures the questioner rather than discouraging the trip.\n- B: The day-night contrast belongs to the journey being asked about, not to the text's organization, which is dialogue rather than alternating description.\n- D: The journey has not happened yet — the questions look ahead to it — and no lessons are drawn from completed stages.",
   "_meta": {
+    "anchor": "Christina Rossetti — \"Up-Hill\" (1861); genuine public-domain excerpt, stanzas 1-2 verbatim",
     "quoteVerify": true,
-    "source": "Marianne Moore, \"Poetry\" (1919), opening lines"
+    "source": "Christina Rossetti, \"Up-Hill,\" first published in Macmillan's Magazine (1861), collected in Goblin Market and Other Poems (1862)"
   }
 }

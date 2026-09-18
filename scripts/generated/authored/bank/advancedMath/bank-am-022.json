@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-022",
+  "question": "In the $xy$-plane, the vertex of the graph of $y = 2x^2 + bx + 50$ lies on the $x$-axis, where $b$ is a constant. Which of the following could be the value of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0$"
+    },
+    {
+      "id": "B",
+      "text": "$10$"
+    },
+    {
+      "id": "C",
+      "text": "$20$"
+    },
+    {
+      "id": "D",
+      "text": "$400$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "sets the vertex's $x$-coordinate to zero instead of its $y$-coordinate",
+    "B": "uses $b^2 = ac$, dropping the factor of $4$",
+    "D": "finds $4ac = 400$ but never takes the square root"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertex Constraint via Discriminant**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** A vertex on the $x$-axis means one repeated root, so $b^2 - 4ac = 0$: $b^2 = 4(2)(50) = 400$ and $b = 20$ (or $-20$).\n\n**The Full Solution:**\nStep 1: The vertex lies on the $x$-axis exactly when the parabola touches the axis at a single point, so $2x^2 + bx + 50 = 0$ has exactly one real solution.\nStep 2: One real solution means the discriminant is zero: $b^2 - 4(2)(50) = 0$, so $b^2 = 400$.\nStep 3: Then $b = 20$ or $b = -20$; of these, $20$ appears among the choices. Check: $2x^2 + 20x + 50 = 2(x + 5)^2$, whose only zero is $x = -5$, and the vertex $(-5, 0)$ is on the $x$-axis. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$): $b = 0$ puts the vertex ON the $y$-axis at $(0, 50)$, which is nowhere near the $x$-axis.\n* Choice B ($10$): comes from $b^2 = ac = 2(50) = 100$, which drops the $4$ in $b^2 = 4ac$.\n* Choice D ($400$): this is $4ac$ itself; the square root step is missing.\n\n**Test Day Takeaway:** \"Vertex on the $x$-axis\", \"exactly one solution\", and \"perfect square trinomial\" are three names for $b^2 - 4ac = 0$."
+}

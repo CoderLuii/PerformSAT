@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "An engineer logs the duration, in seconds, of each of the eight tracks on an album as 205, 142, 236, 191, 310, 168, 219, and 177. What is the median of these durations?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$191$"
+  },
+  {
+   "id": "B",
+   "text": "$198$"
+  },
+  {
+   "id": "C",
+   "text": "$206$"
+  },
+  {
+   "id": "D",
+   "text": "$250.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes the lower of the two middle values, 191, instead of averaging the two middle values",
+  "C": "computes the mean, 1648 divided by 8, instead of the median",
+  "D": "averages the two middle entries of the unsorted list, 191 and 310, without ordering the values first"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Median Calculation**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Sorted, the eight values put $191$ and $205$ in the middle, and their average is $198$.\n\n**The Full Solution:**\nStep 1: Order the durations: $142, 168, 177, 191, 205, 219, 236, 310$.\nStep 2: With an even count of $8$, the median is the average of the 4th and 5th values, which are $191$ and $205$.\nStep 3: $\\frac{191 + 205}{2} = \\frac{396}{2} = 198$. Check: four values ($142, 168, 177, 191$) fall below $198$ and four ($205, 219, 236, 310$) fall above it. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($191$): stops at the 4th sorted value. With an even count there is no single middle entry, so the two middle values must be averaged.\n* Choice C ($206$): the mean, $\\frac{1648}{8}$. The large outlier $310$ pulls the mean above the median.\n* Choice D ($250.5$): averages the 4th and 5th entries of the list as printed, $191$ and $310$, skipping the sort.\n\n**Test Day Takeaway:** Sort first, always. Then count: an even number of values means average the two in the middle."
+}

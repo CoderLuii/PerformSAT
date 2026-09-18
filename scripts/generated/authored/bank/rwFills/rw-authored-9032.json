@@ -1,0 +1,25 @@
+{
+  "id": 9032,
+  "passage": "Productivity in manufacturing rises decade after decade: the same worker, better equipped, turns out more bolts than before. Some services resist that arithmetic. A string quartet still requires four players and the same half hour it required two centuries ago. Wages in the concert hall nonetheless track wages in the factory, because employers in every sector are bidding for the same workers. ______, the price of an hour of live music climbs steadily even though the hour is no more efficient than before.",
+  "question": "Which choice completes the text with the most logical transition?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "For example,"
+    },
+    {
+      "id": "B",
+      "text": "Meanwhile,"
+    },
+    {
+      "id": "C",
+      "text": "By contrast,"
+    },
+    {
+      "id": "D",
+      "text": "As a result,"
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** The final sentence states the consequence of the wage pressure described just before it, and As a result marks that consequence.\n\n**The Full Solution:**\n- Identify what the sentence before the blank establishes: musicians’ wages rise with factory wages because employers compete for the same workers.\n- The sentence after the blank reports what follows from that — the price of an hour of music rises without any gain in efficiency. That is an effect, so the blank takes a cause-and-effect transition.\n- Confirm the direction. The rising price is produced by the rising wages, not merely observed alongside them, so a simple time or contrast marker will not do.\n\n**Why the other choices are wrong:**\n- A: For example would make the price of music an instance of the wage claim, but it is a consequence of it.\n- B: Meanwhile places two developments side by side in time and hides the causal link the passage has just built.\n- C: By contrast requires opposition, and the final sentence agrees with what precedes it."
+}

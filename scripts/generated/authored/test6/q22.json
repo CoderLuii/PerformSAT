@@ -6,7 +6,7 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
-  "passage": "One of the earliest computer models of the global atmosphere, written in the 1960s on machines now considered impossibly slow, simulated winds and heat exchange across the planet and required ______ output to be copied onto magnetic tape before any of it could be analyzed.",
+  "passage": "A medieval tidal mill ground grain on a schedule set by the sea: the incoming tide filled a pond behind the mill, and at low water the trapped pond drained out past the wheel. Because the mill could run only while ______ pond still held water, millers worked shifting hours that tracked the tides rather than the sun.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "id": "B",
-      "text": "they're"
+      "text": "it's"
     },
     {
       "id": "C",
@@ -23,9 +23,9 @@
     },
     {
       "id": "D",
-      "text": "it's"
+      "text": "they're"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"its.\" The blank needs a singular possessive modifying \"output\" and referring back to \"One . . . model,\" and \"its\" is the singular possessive pronoun. Choice C, \"their,\" is plural and does not agree with the singular model. Choices B (\"they're\") and D (\"it's\") are contractions of \"they are\" and \"it is,\" not possessives, so neither can show ownership of the output."
+  "explanation": "**Choice A is correct.** The blank needs a possessive pronoun referring to the singular \"the mill,\" and the possessive form of \"it\" is \"its\" — no apostrophe.\n\n**The Full Solution:**\n- Identify the antecedent: the pond belongs to \"the mill,\" a singular noun.\n- Identify the role: the word modifies \"pond,\" so it must be a possessive determiner.\n- Singular possessive of \"it\" is \"its.\"\n\n**Why the other choices are wrong:**\n- B: \"It's\" is the contraction of \"it is,\" producing \"while it is pond still held water.\"\n- C: \"Their\" is possessive but plural, and its antecedent \"the mill\" is singular.\n- D: \"They're\" is the contraction of \"they are\" — both plural and non-possessive."
 }

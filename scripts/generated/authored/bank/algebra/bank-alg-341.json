@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-341",
+  "question": "The table shows the hourly wage Priya earns for each of two shifts at her job. Last month she worked a total of $34$ hours on these two shifts and earned $\\$526$. How many hours did she work on the weekday shift?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Shift",
+        "Hourly wage (dollars)"
+      ],
+      "rows": [
+        [
+          "Weekday",
+          "13"
+        ],
+        [
+          "Weekend",
+          "19"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$14$"
+    },
+    {
+      "id": "B",
+      "text": "$17$"
+    },
+    {
+      "id": "C",
+      "text": "$20$"
+    },
+    {
+      "id": "D",
+      "text": "$40$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "reported the weekend hours instead of the weekday hours",
+    "B": "assumed the 34 hours were split evenly",
+    "D": "divided 526 by 13, ignoring the weekend shift entirely"
+  },
+  "explanation": "**SAT Pattern: Word-Problem to Multi-Step Linear**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** If all $34$ hours were weekend hours she would earn $19(34) = 646$. Each hour moved to the weekday shift lowers that by $6$; the actual shortfall is $646 - 526 = 120$, so $120 \\div 6 = 20$ weekday hours.\n\n**The Full Solution:**\nStep 1: Let $d$ be the weekday hours; then the weekend hours are $34 - d$.\nStep 2: Earnings: $13d + 19(34 - d) = 526$. Distribute: $13d + 646 - 19d = 526$, so $-6d = -120$.\nStep 3: Divide by $-6$: $d = 20$.\nCheck: $13(20) + 19(14) = 260 + 266 = 526$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($14$): solves correctly but reports $34 - d$, the WEEKEND hours.\n* Choice B ($17$): splits the $34$ hours in half; that would earn $13(17) + 19(17) = 544$, not $526$.\n* Choice D ($40$): divides $526$ by $13$ as if every hour paid the weekday wage, and even exceeds the $34$ hours worked.\n\n**Test Day Takeaway:** With two rates and a fixed total count, write the second quantity as (total minus the first) so there is only one unknown."
+}

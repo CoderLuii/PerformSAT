@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "A random sample of $240$ bottles was taken from a filling line. Using the sample, the mean volume of a bottle from the line was estimated to be $502$ milliliters, with an associated margin of error of $3$ milliliters. Which conclusion about the mean volume of all bottles from this line is most appropriate?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It is plausible that the mean volume is between $499$ and $505$ milliliters."
+    },
+    {
+      "id": "B",
+      "text": "It is plausible that the mean volume is less than $499$ milliliters."
+    },
+    {
+      "id": "C",
+      "text": "It is plausible that the mean volume is greater than $505$ milliliters."
+    },
+    {
+      "id": "D",
+      "text": "The mean volume is exactly $502$ milliliters."
+    }
+  ],
+  "distractorNotes": {
+    "B": "names values below the interval, which the sample gives no support for.",
+    "C": "names values above the interval, which the sample also gives no support for.",
+    "D": "treats the sample estimate as exact, but a margin of error exists precisely because the population value is not pinned down."
+  },
+  "correctAnswer": "A",
+  "hint": "The margin of error marks off an interval on both sides of the estimate.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** Plausible values run from $502 - 3$ to $502 + 3$, that is, from $499$ to $505$ milliliters.\n\n**The Full Solution:**\nStep 1: An estimate reported with a margin of error describes an interval of plausible values for the population quantity.\nStep 2: Subtract and add the margin of error: $502 - 3 = 499$ and $502 + 3 = 505$.\nStep 3: So it is plausible that the mean volume of all bottles from the line is between $499$ and $505$ milliliters. Check: the interval is centered at the estimate and is $2(3) = 6$ milliliters wide. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: names values below the interval, which the sample gives no support for.\n* Choice C: names values above the interval, which the sample also gives no support for.\n* Choice D: treats the sample estimate as exact, but a margin of error exists precisely because the population value is not pinned down.\n\n**Test Day Takeaway:** Estimate plus or minus margin of error gives the whole interval of plausible values. Report the interval, not a single number and not a one-sided claim."
+}

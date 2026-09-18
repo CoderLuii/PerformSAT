@@ -1,0 +1,6 @@
+{
+  "id": "bank-geo-180",
+  "question": "A circular hedge maze at a garden attraction is modeled by $x^2+y^2=r^2$ in the $xy$-plane, with units in meters, and a straight hedge row is tangent to the maze at the point $(6,8)$. What is the value of $r$?",
+  "correctAnswer": "10",
+  "explanation": "**SAT Pattern: Tangent Line to Circle (Discriminant = 0)**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~25s):** The point of tangency lies on the circle, so $6^2+8^2=r^2$, giving $r^2=100$ and $r=10$ meters.\n\n**The Full Solution:**\n\nStep 1 — A tangent line meets the circle at exactly one point, and that point is on the circle, so $(6,8)$ satisfies $x^2+y^2=r^2$.\n\nStep 2 — Substitute: $6^2+8^2=36+64=100=r^2$.\n\nStep 3 — Take the positive root: $r=10$ meters, since a radius is a length. Check: $(6,8)$ is exactly $10$ units from the origin, so the circle of radius $10$ passes through it.\n\n**Common Mistakes:** Answering $100$ reports $r^2$ rather than $r$. Adding the coordinates gives $14$, treating the distance as $6+8$. Answering $14.14$ uses $10\\sqrt{2}$, the diagonal of a $10$-by-$10$ square instead of the distance to $(6,8)$.\n\n**Test Day Takeaway:** The point of tangency is still a point on the circle — plug it in before doing anything harder."
+}

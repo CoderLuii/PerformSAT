@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
+ "type": "multiple-choice",
+ "passage": "Periodical cicadas spend thirteen or seventeen years underground and then emerge by the billions within a few weeks. Why surface all at once? A single cicada is nearly defenseless — slow, conspicuous, and edible — and a lone insect appearing in an ordinary summer would almost certainly be eaten. When an entire brood emerges together, however, predators eat their fill long before they make a dent in the swarm, and the vast majority of cicadas survive to reproduce. The staggering density that makes an emergence so overwhelming is, in other words, the species' principal defense.",
  "question": "Which choice best describes the overall structure of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "It presents a long-accepted explanation, defends it successfully against every challenge raised, and concludes that the original account was entirely correct."
+   "text": "It presents a widely accepted explanation of an insect behavior, then describes an observation that has led researchers to doubt that explanation and to begin searching for a new one"
   },
   {
    "id": "B",
-   "text": "It describes two competing research teams and explains why neither was able to resolve the disagreement between them."
+   "text": "It compares the life cycles of two closely related insect species and argues that one species is better adapted to escaping predators than the other"
   },
   {
    "id": "C",
-   "text": "It introduces a standard explanation, presents evidence that complicates it, and offers a revised account that absorbs the original."
+   "text": "It describes a striking natural phenomenon, poses a question about it, and then explains the advantage that the phenomenon provides"
   },
   {
    "id": "D",
-   "text": "It traces the discovery of a new frog species and the controversy over how it should be classified."
+   "text": "It recounts the history of scientific research on an insect species, ending with the questions about the species that remain unanswered"
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C. The passage opens with the textbook account — bright color is a warning of toxicity — then reports evidence that complicates it, since toxicity and brightness do not always rise together. It closes with a revised account in which color also attracts mates, a picture the final sentence says \"did not overturn\" the warning-signal account but \"embedded\" it within something more complicated. A misstates the ending: the original account is revised, not simply confirmed. B invents two rival teams; only one team appears. D describes a species-discovery dispute that the passage never raises.",
+ "explanation": "**Choice C is correct.** The text moves through exactly the three steps C names: a phenomenon (mass emergence after years underground), an explicit question (\"Why surface all at once?\"), and an answer (predators are swamped, so most cicadas survive).\n\n**The Full Solution:**\n- Sentence one states the phenomenon; sentence two asks the question outright.\n- The remainder answers it by contrasting a lone cicada's fate with a brood's, closing with the point that density itself is the defense.\n- Structure questions reward the choice that matches this sequence move for move.\n\n**Why the other choices are wrong:**\n- A: Nothing in the text is doubted or overturned; the explanation given is presented as the answer, not as a discarded view.\n- B: Only one kind of insect is discussed; no second species is compared.\n- D: The text is organized around a question and its answer, not a chronological history of research, and it ends with a conclusion rather than open questions.",
  "_meta": {
-  "anchor": "Poison dart frog coloration (unnamed research team); aposematism plus sexual selection"
- },
- "passage": "For decades, textbooks explained the bright coloration of poison dart frogs as a simple warning: vivid skin tells predators the frog is toxic. A research team in Central America suspected the story was incomplete. Measuring toxicity and brightness across many populations, they found that the two traits did not always rise together — some dull frogs were highly toxic, and some vivid ones nearly harmless. The team proposed that coloration also helps attract mates, so a frog's appearance reflects a balance between two pressures rather than toxicity alone. The finding did not overturn the warning-signal account; it embedded that account within a more complicated picture.",
- "type": "multiple-choice"
+  "anchor": "Periodical cicada mass emergence as predator satiation (unnamed researchers)"
+ }
 }

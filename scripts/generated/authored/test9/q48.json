@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 2,
-  "passage": "The British Museum's great Round Reading Room, opened in 1857 beneath a vast iron dome, was the work of Antonio Panizzi ______ a librarian who believed that a national collection should be open to any serious reader rather than to a privileged few.",
+  "passage": "Because the pen shells that yield the raw filaments were gathered one by one by free divers, and because each shell furnished only a wisp of usable ______ a single finished glove of sea silk could represent weeks of gathering, cleaning, and spinning.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Panizzi,"
-    },
-    {
-      "id": "B",
-      "text": "Panizzi;"
-    },
-    {
-      "id": "C",
-      "text": "Panizzi:"
-    },
-    {
-      "id": "D",
-      "text": "Panizzi"
-    }
+    { "id": "A", "text": "fiber," },
+    { "id": "B", "text": "fiber" },
+    { "id": "C", "text": "fiber;" },
+    { "id": "D", "text": "fiber:" }
   ],
   "correctAnswer": "A",
-  "explanation": "The phrase \"a librarian who believed...\" renames Antonio Panizzi and is nonessential, so a comma sets it off—choice A. A semicolon (B) or colon (C) would treat the appositive as an independent clause or a formal introduction, and no punctuation (D) runs it straight into the name.",
-  "_meta": {
-    "anchor": "Antonio Panizzi, British Museum reading room"
-  }
+  "explanation": "**Choice A is correct.** The sentence opens with a pair of dependent \"Because\" clauses, and the boundary between an introductory dependent structure and the main clause is a comma.\n\n**The Full Solution:**\n- Everything before the blank hangs on \"Because... and because...\" — neither clause can stand alone.\n- The main clause follows: \"a single finished glove of sea silk could represent weeks of gathering, cleaning, and spinning.\"\n- A comma is the conventional mark that closes the introductory subordination and opens the main assertion.\n\n**Why the other choices are wrong:**\n- B: Without the comma, the long double introduction collides with the main clause, leaving the sentence's turning point unmarked.\n- C: A semicolon requires an independent clause on each side; the \"Because\" clauses are not independent.\n- D: A colon must follow a complete introducing statement, and the subordinate clauses do not form one."
 }

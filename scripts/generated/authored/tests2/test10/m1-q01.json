@@ -1,0 +1,58 @@
+{
+ "id": 1,
+ "question": "A survey drone's outbound leg is graphed as line $t$ in the xy-plane, where coordinates are given in kilometers. At the point $(4, 9)$ the drone turns and flies a second leg perpendicular to line $t$. Which equation defines the second leg?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2,
+   "yIntercept": 1,
+   "xRange": [
+    -5,
+    5
+   ],
+   "yRange": [
+    -9,
+    11
+   ],
+   "xTickInterval": 1,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     9
+    ]
+   ],
+   "label": "t"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -2x + 17$"
+  },
+  {
+   "id": "B",
+   "text": "$y = -\\frac{1}{2}x + 11$"
+  },
+  {
+   "id": "C",
+   "text": "$y = \\frac{1}{2}x + 7$"
+  },
+  {
+   "id": "D",
+   "text": "$y = 2x + 1$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "negates the slope of line t but does not take the reciprocal, giving slope -2",
+  "C": "takes the reciprocal of 2 but keeps the sign positive, giving slope 1/2",
+  "D": "reuses line t's own slope of 2, so the leg is parallel rather than perpendicular"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice B is correct.** Line $t$ rises $2$ units for every $1$ unit to the right, so its slope is $2$. A perpendicular line has the negative reciprocal slope, $-\\frac{1}{2}$, and it must pass through $(4, 9)$.\n\n**The Fast Way (~20s):** Flip and negate the slope of $t$ to get $-\\frac{1}{2}$, then test the choices at $x = 4$: only $-\\frac{1}{2}(4) + 11 = 9$ works.\n\n**The Full Solution:**\nStep 1: Read two lattice points on line $t$ from the graph, $(0, 1)$ and $(4, 9)$. The slope is $\\frac{9 - 1}{4 - 0} = 2$.\nStep 2: Perpendicular slopes multiply to $-1$, so the second leg has slope $-\\frac{1}{2}$. Write $y = -\\frac{1}{2}x + b$.\nStep 3: Substitute the turning point $(4, 9)$: $9 = -\\frac{1}{2}(4) + b = -2 + b$, so $b = 11$ and the equation is $y = -\\frac{1}{2}x + 11$. Check: at $x = 4$, $-\\frac{1}{2}(4) + 11 = 9$, and $\\left(-\\frac{1}{2}\\right)(2) = -1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -2x + 17$): negates the slope but forgets the reciprocal, so the slope is $-2$; $(-2)(2) = -4$, not $-1$.\n* Choice C ($y = \\frac{1}{2}x + 7$): takes the reciprocal but keeps it positive, so the slope is $\\frac{1}{2}$; $\\left(\\frac{1}{2}\\right)(2) = 1$, not $-1$.\n* Choice D ($y = 2x + 1$): this is line $t$ itself — the same slope $2$ makes the leg parallel, not perpendicular.\n\n**Test Day Takeaway:** Perpendicular means flip AND negate. Do both moves, then force the point into $y = mx + b$ to find the intercept."
+}

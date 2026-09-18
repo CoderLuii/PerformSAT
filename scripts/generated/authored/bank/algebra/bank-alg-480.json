@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-480",
+  "question": "A community health team makes $r$ routine visits and $f$ follow-up visits in a month, where $r = 4f$ and $r + f = 85$. How many routine visits are made?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$17$"
+    },
+    {
+      "id": "B",
+      "text": "$34$"
+    },
+    {
+      "id": "C",
+      "text": "$68$"
+    },
+    {
+      "id": "D",
+      "text": "$85$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the 17 follow-up visits instead of the routine visits",
+    "B": "doubles the follow-ups instead of quadrupling them, 2(17) = 34",
+    "D": "reports the 85 total visits rather than the routine share"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: System of Equations (Substitution)**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Replacing $r$ with $4f$ gives $5f = 85$, so $f = 17$ and $r = 4(17) = 68$.\n\n**The Full Solution:**\nStep 1: The first equation isolates $r$, so substitute $4f$ for $r$ in the total: $4f + f = 85$.\nStep 2: Combine like terms and divide: $5f = 85$, so $f = 17$.\nStep 3: Return to $r = 4f$ for the requested count: $r = 4(17) = 68$. Check: $68 + 17 = 85$ and $68 = 4(17)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($17$): reports the follow-up count found in the middle of the work rather than the routine count.\n* Choice B ($34$): multiplies the follow-ups by $2$ instead of by the stated factor of $4$.\n* Choice D ($85$): reports the month's total visits instead of the routine share.\n\n**Test Day Takeaway:** Substituting the multiple lands you on the base quantity, not the one the question named — take the extra multiplication step before answering."
+}

@@ -1,0 +1,45 @@
+{
+ "id": 1,
+ "question": "A bathymetric chart records two straight survey tracks that cross at a single point, as shown. Every label gives an angle measure in degrees, and $x$ and $y$ are constants. What is the value of $y$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "(7x + 5)°",
+    "y°",
+    "(3x + 25)°",
+    ""
+   ],
+   "lineLabels": [
+    "m",
+    "n"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$70$"
+  },
+  {
+   "id": "D",
+   "text": "$140$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at x = 5 and reports the solution of the equation instead of the angle measure y",
+  "B": "reports 40, the measure of the two labeled vertical angles, instead of the supplementary angle y",
+  "C": "sets the two labeled angles supplementary (7x + 5 + 3x + 25 = 180), gets x = 15 and 110 degrees, then takes 180 - 110 = 70"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The two labeled angles sit opposite each other, so $7x+5=3x+25$ gives $x=5$ and a $40^\\circ$ angle. The angle labeled $y^\\circ$ is its supplement: $180-40=140$.\n\n**The Full Solution:**\nStep 1: When two straight lines cross, the angles opposite each other are vertical angles and have equal measure. The angles measuring $(7x+5)^\\circ$ and $(3x+25)^\\circ$ are opposite, so $7x+5=3x+25$.\nStep 2: Subtracting $3x$ and $5$ from both sides gives $4x=20$, so $x=5$. Each of those two angles therefore measures $7(5)+5=40$ degrees.\nStep 3: The angle labeled $y^\\circ$ and the $40^\\circ$ angle together form a straight line along one of the two tracks, so they are supplementary: $y=180-40=140$. Check: the four angles are $40$, $140$, $40$, and $140$, and $40+140+40+140=360$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): stops at $x=5$. The equation was only the setup — $x$ is a parameter inside the angle expression, not an angle measure.\n* Choice B ($40$): finds the measure of the two labeled vertical angles correctly but reports it instead of $y$, which is the other pair.\n* Choice C ($70$): treats the labeled angles as supplementary rather than vertical, solving $7x+5+3x+25=180$ for $x=15$, then $180-110=70$.\n\n**Test Day Takeaway:** At a crossing of two straight lines there are only two distinct angle measures, and they add to $180$. Solve for $x$, build the angle the expression describes, then check which of the two measures the question actually names."
+}

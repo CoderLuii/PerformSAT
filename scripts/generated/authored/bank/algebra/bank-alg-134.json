@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-134",
+  "question": "A frontage formula computes the allowed lot depth $f(x)$, in meters, from a frontage width of $x$ meters, where $f(x) = \\frac{5x + 7}{3}$. The formula returns a depth of $19$ meters for a frontage width of $a$ meters. What is the value of $a$?",
+  "correctAnswer": "10",
+  "explanation": "**SAT Pattern: Function Evaluation**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~20s):** Set $\\frac{5a + 7}{3} = 19$; multiplying by $3$ gives $5a + 7 = 57$, so $a = 10$.\n\n**The Full Solution:**\nStep 1: The formula returns $19$ at the input $a$, so $\\frac{5a + 7}{3} = 19$.\nStep 2: Multiply both sides by $3$: $5a + 7 = 57$.\nStep 3: Subtract and divide: $5a = 50$, so $a = 10$. Check: $\\frac{5(10) + 7}{3} = \\frac{57}{3} = 19$ ✓\n\n**Common Mistakes:** Answering $2.4$ subtracts $7$ before multiplying by $3$; answering $57$ stops at $5a + 7 = 57$; answering $11.4$ divides $57$ by $5$ without first subtracting the $7$.\n\n**Test Day Takeaway:** Clear the denominator before undoing anything else — dividing the output by $3$ instead of multiplying reverses the rule."
+}

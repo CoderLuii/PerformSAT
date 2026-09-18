@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-238",
+  "question": "A desalination plant's brine concentration is modeled by $y=x^2-6x+11$ and its permitted ceiling by the line $y=kx+2$, where $k$ is a constant. The line is tangent to the curve for exactly two values of $k$. What is the sum of those two values?",
+  "correctAnswer": "-12",
+  "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**The correct answer is $-12$.**\n\n**The Fast Way (~40s):** Equating gives $x^2-(6+k)x+9=0$, so $(6+k)^2=36$ and $k=0$ or $k=-12$; the sum is $-12$.\n\n**The Full Solution:**\nStep 1: Set $x^2-6x+11=kx+2$, which rearranges to $x^2-(6+k)x+9=0$.\nStep 2: Tangency means $(6+k)^2-4(1)(9)=0$, so $(6+k)^2=36$ and $6+k=\\pm6$.\nStep 3: That gives $k=0$ and $k=-12$, whose sum is $-12$. Check: $k=0$ makes $x^2-6x+9=(x-3)^2=0$, and $k=-12$ makes $x^2+6x+9=(x+3)^2=0$ — both single solutions ✓\n\n**Common Mistakes:**\n* $0$: finds $k=0$ first and reports it, missing the second value.\n* $12$: solves $6+k=\\pm6$ but reads the roots as $0$ and $12$.\n* $-6$: sets $(6+k)^2=0$ rather than $(6+k)^2=36$.\n\n**Test Day Takeaway:** \"Exactly two values of the constant\" is the signal that the discriminant equation is itself a square — expect a $\\pm$ and answer for both."
+}

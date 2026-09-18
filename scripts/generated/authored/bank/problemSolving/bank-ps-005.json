@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-005",
+  "question": "A total of $1{,}250$ tickets were sold for a festival. Of these tickets, $28\\%$ were student tickets. How many student tickets were sold?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$35$"
+    },
+    {
+      "id": "B",
+      "text": "$350$"
+    },
+    {
+      "id": "C",
+      "text": "$900$"
+    },
+    {
+      "id": "D",
+      "text": "$3{,}500$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses $0.028$ instead of $0.28$, moving the decimal point one place too far.",
+    "C": "finds the number of tickets that were not student tickets ($72\\%$ of $1{,}250$).",
+    "D": "multiplies by $2.8$ instead of $0.28$, which gives more tickets than were sold."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent of Total**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** $28\\%$ of $1{,}250$ is $0.28 \\times 1{,}250 = 350$.\n\n**The Full Solution:**\nStep 1: \"$28\\%$ of\" a quantity means multiply the quantity by $\\frac{28}{100} = 0.28$.\nStep 2: $0.28 \\times 1{,}250 = 350$.\nStep 3: Check: $10\\%$ of $1{,}250$ is $125$, so $28\\%$ should be a bit under $3 \\times 125 = 375$. $350$ fits. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($35$): uses $0.028$ instead of $0.28$, moving the decimal point one place too far.\n* Choice C ($900$): finds the number of tickets that were not student tickets ($72\\%$ of $1{,}250$).\n* Choice D ($3{,}500$): multiplies by $2.8$ instead of $0.28$, which gives more tickets than were sold.\n\n**Test Day Takeaway:** \"$p\\%$ of $N$\" is $\\frac{p}{100} \\times N$. A quick $10\\%$ benchmark catches any misplaced decimal point."
+}

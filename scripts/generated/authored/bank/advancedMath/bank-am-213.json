@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-213",
+ "question": "A monitoring log models the mass of a decaying tracer by $h(t)=a(0.5)^{t}$, in grams, where $t$ is the number of hours after monitoring began and $a$ is a constant. The log records $h(3)=289$ grams. Which statement best interprets $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The tracer's mass when monitoring began was 2,312 grams."
+  },
+  {
+   "id": "B",
+   "text": "The tracer's mass when monitoring began was about 36 grams."
+  },
+  {
+   "id": "C",
+   "text": "The tracer's mass 3 hours after monitoring began was 2,312 grams."
+  },
+  {
+   "id": "D",
+   "text": "The tracer lost 2,312 grams during the first 3 hours."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "multiplies by 0.5 cubed instead of dividing: 289(0.125) = 36.125",
+  "C": "attaches the starting value to t = 3 rather than t = 0",
+  "D": "reads the starting mass as the amount lost; the loss is 2,312 - 289 = 2,023 grams"
+ },
+ "explanation": "**SAT Pattern: Interpret Initial Value in Context**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** $a(0.5)^{3}=289$ gives $\\frac{a}{8}=289$, so $a=2{,}312$, the mass at $t=0$.\n\n**The Full Solution:**\nStep 1: The constant $a$ is the output at $t=0$, since $(0.5)^{0}=1$.\nStep 2: Substituting $t=3$ gives $a(0.5)^{3}=a\\left(\\frac{1}{8}\\right)=289$.\nStep 3: Multiplying by 8 gives $a=2{,}312$ grams, the mass when monitoring began. Check: $2{,}312\\left(\\frac{1}{8}\\right)=289$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (about 36 grams): multiplies 289 by $\\frac{1}{8}$ instead of dividing, running the model forward.\n* Choice C: keeps the right number but attaches it to $t=3$, where the mass is 289 grams.\n* Choice D: reports the starting mass as a loss; the loss over three hours is 2,023 grams.\n\n**Test Day Takeaway:** To recover a starting value from a later reading, divide by the growth factor raised to the elapsed time."
+}

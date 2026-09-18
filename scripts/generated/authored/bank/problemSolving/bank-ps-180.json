@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-180",
+  "question": "A shipment of $250$ ceramic tiles includes glazed tiles and unglazed tiles. If $36\\%$ of the tiles are glazed, how many of the tiles in the shipment are glazed?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36$"
+    },
+    {
+      "id": "B",
+      "text": "$90$"
+    },
+    {
+      "id": "C",
+      "text": "$160$"
+    },
+    {
+      "id": "D",
+      "text": "$214$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the percent itself, treated as a count",
+    "C": "the unglazed tiles, 64% of 250",
+    "D": "250 - 36, subtracting the percent as if it were a count"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** $36\\%$ of $250$ is $0.36 \\times 250 = 90$.\n\n**The Full Solution:**\nStep 1: Convert the percent to a decimal: $36\\% = 0.36$.\nStep 2: Multiply by the whole: $0.36 \\times 250 = 90$ glazed tiles.\nStep 3: Check: $10\\%$ of $250$ is $25$, so $36\\%$ is $3.6 \\times 25 = 90$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($36$): Reads the percent as a number of tiles; $36\\%$ of $250$ is not $36$ because the whole is not $100$.\n* Choice C ($160$): The number of unglazed tiles, $64\\%$ of $250$.\n* Choice D ($214$): Subtracts the percent from the total, $250 - 36$, mixing a percent with a count.\n\n**Test Day Takeaway:** Percent of a whole is (percent as a decimal) $\\times$ (whole); the percent is never a count on its own unless the whole is $100$."
+}

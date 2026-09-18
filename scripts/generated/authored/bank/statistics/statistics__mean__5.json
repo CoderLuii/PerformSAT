@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "A shipment of $60$ crystal samples is divided into two batches. The $36$ samples in batch 1 have a mean mass of $20$ grams, and all $60$ samples in the shipment have a mean mass of $24$ grams. What is the mean mass, in grams, of the $24$ samples in batch 2?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12$"
+    },
+    {
+      "id": "B",
+      "text": "$20$"
+    },
+    {
+      "id": "C",
+      "text": "$28$"
+    },
+    {
+      "id": "D",
+      "text": "$30$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides batch 2 total mass by all $60$ samples, $\\frac{720}{60}$, instead of by the $24$ samples in that batch.",
+    "B": "reports the mean of batch 1, which the question already gives.",
+    "C": "averages the two batch means as if the batches were the same size, solving $\\frac{20 + m}{2} = 24$."
+  },
+  "correctAnswer": "D",
+  "hint": "Work with total mass rather than with the two averages directly.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~50s):** Total mass is $60(24) = 1440$ grams and batch 1 supplies $36(20) = 720$ grams, so batch 2 supplies $720$ grams across $24$ samples: $\\frac{720}{24} = 30$.\n\n**The Full Solution:**\nStep 1: The whole shipment has total mass $60(24) = 1440$ grams.\nStep 2: Batch 1 has total mass $36(20) = 720$ grams, so batch 2 has total mass $1440 - 720 = 720$ grams.\nStep 3: Batch 2 contains $60 - 36 = 24$ samples, so its mean mass is $\\frac{720}{24} = 30$ grams. Check: $\\frac{36(20) + 24(30)}{60} = \\frac{1440}{60} = 24$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): divides batch 2 total mass by all $60$ samples, $\\frac{720}{60}$, instead of by the $24$ samples in that batch.\n* Choice B ($20$): reports the mean of batch 1, which the question already gives.\n* Choice C ($28$): averages the two batch means as if the batches were the same size, solving $\\frac{20 + m}{2} = 24$.\n\n**Test Day Takeaway:** A combined mean is a total-over-total, never the average of two averages, unless the groups happen to be equal in size."
+}

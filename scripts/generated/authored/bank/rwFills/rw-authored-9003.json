@@ -1,0 +1,38 @@
+{
+  "id": 9003,
+  "passage": "In Frances Ellen Watkins Harper's 1892 novel Iola Leroy, Iola has come North after the Civil War and is living with her uncle Robert. He tells her plainly that she is welcome in his house and has no need to go out to work; she answers that she intends to apply for a place as a saleswoman anyway. A reader might argue that Iola treats earning wages as something she would rather do, not as something her situation forces on her.",
+  "question": "Which quotation from Iola Leroy most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "\"I have a theory that every woman ought to know how to earn her own living.\""
+    },
+    {
+      "id": "B",
+      "text": "\"I am going to join the great rank of bread-winners. Mr. Waterman has advertised for a number of saleswomen\""
+    },
+    {
+      "id": "C",
+      "text": "\"Well, I think I could fill the place. At least I should like to try.\""
+    },
+    {
+      "id": "D",
+      "text": "\"Oh, I certainly do. But still I would rather earn my own living.\""
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** Iola first grants her uncle's point, that she is welcome and provided for, and then sets her own preference against it: \"But still I would rather earn my own living.\"\n\n**The Full Solution:**\n- The claim turns on a contrast, so look for a quotation that acknowledges she has no need to work and states a preference anyway.\n- Choice D does exactly that in two short sentences. \"Oh, I certainly do\" concedes the comfort of her uncle's house; \"I would rather\" is the language of choice, not of necessity.\n- Eliminate quotations that announce the plan or defend her fitness for the job. Both are true of Iola, but neither weighs working against the option of not working.\n\n**Why the other choices are wrong:**\n- A: This states a general principle about what every woman ought to know, so it speaks to women at large rather than to Iola's own choice in her uncle's house.\n- B: This announces the plan and the specific advertisement she means to answer, which is a practical step rather than a preference measured against necessity.\n- C: This claims she could fill the position and would like to try, which is about her fitness for the work, not about choosing work she does not need.",
+  "source": {
+    "title": "Iola Leroy",
+    "author": "Frances Ellen Watkins Harper",
+    "year": 1892,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/12352"
+  },
+  "people": [
+    {
+      "name": "Frances Ellen Watkins Harper",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/12352"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-037",
+ "question": "A circular reflecting pool has center $O$ and radius $r$ meters, and a straight boardwalk from a viewing post $P$ touches the pool at exactly one point $T$, with $OP=3r$ meters. The length of $\\overline{PT}$ is $kr$ meters. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2\\sqrt{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$\\sqrt{10}$"
+  },
+  {
+   "id": "D",
+   "text": "$4$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports OP = 3r instead of the tangent length PT",
+  "C": "adds the squares instead of subtracting: sqrt(9 + 1) = sqrt(10)",
+  "D": "adds the radius to OP, treating the distances as collinear lengths"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Tangent from External Point**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** A tangent meets the radius at a right angle, so $PT=\\sqrt{(3r)^2-r^2}=\\sqrt{8r^2}=2\\sqrt{2}\\,r$ and $k=2\\sqrt{2}$.\n\n**The Full Solution:**\n\nStep 1 — Because the boardwalk meets the pool at exactly one point, $\\overline{PT}$ is tangent to the circle, so $\\overline{OT}\\perp\\overline{PT}$ and triangle $OTP$ has a right angle at $T$.\n\nStep 2 — Apply the Pythagorean theorem with hypotenuse $OP=3r$ and leg $OT=r$: $PT^2=(3r)^2-r^2=9r^2-r^2=8r^2$.\n\nStep 3 — Take the positive root: $PT=\\sqrt{8r^2}=2\\sqrt{2}\\,r$, so $k=2\\sqrt{2}$. Check: $2\\sqrt{2}\\approx 2.83$, less than $3$, as a leg must be shorter than the hypotenuse.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($3$): this reports $OP$ itself, the distance to the center rather than to the point of tangency.\n* Choice C ($\\sqrt{10}$): this adds the squares, $9r^2+r^2$, treating $OP$ as a leg instead of the hypotenuse.\n* Choice D ($4$): this adds the radius to $OP$ as though the three points were collinear.\n\n**Test Day Takeaway:** The radius to the point of tangency is perpendicular to the tangent line, and the distance to the center is always the hypotenuse."
+}

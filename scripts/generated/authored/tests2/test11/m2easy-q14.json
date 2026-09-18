@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "During a calibration run at the meter's outlet, a flow meter's reading $q$, in liters per second, satisfies $7q + 23 = 100$. What is the value of the expression $7q - 9$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$68$"
+  },
+  {
+   "id": "B",
+   "text": "$77$"
+  },
+  {
+   "id": "C",
+   "text": "$86$"
+  },
+  {
+   "id": "D",
+   "text": "$91$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "stops at 7q = 77 and never subtracts the 9",
+  "C": "adds 9 to 77 instead of subtracting it",
+  "D": "subtracts 9 from the total 100 instead of from 7q"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The expression asked for is $32$ less than the given left side, so subtract $32$ from $100$: $7q - 9 = 68$.\n\n**The Full Solution:**\nStep 1: Isolate the shared piece rather than the variable: $7q + 23 = 100$ gives $7q = 77$.\nStep 2: Build the requested expression from it: $7q - 9 = 77 - 9$.\nStep 3: Evaluate: $7q - 9 = 68$. Check by solving outright: $q = 11$, so $7(11) - 9 = 77 - 9 = 68$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($77$): the value of $7q$ itself; the question shifts that value down by $9$.\n* Choice C ($86$): adds the $9$ instead of subtracting it, moving in the wrong direction.\n* Choice D ($91$): subtracts $9$ from $100$, but the $100$ still contains the $+23$ that has to come off first.\n\n**Test Day Takeaway:** When the question asks for an expression rather than the variable, isolate that whole expression — solving for $q$ is legal but slower."
+}

@@ -1,0 +1,73 @@
+{
+  "id": 3,
+  "question": "The dot plots show the distributions of two data sets, each containing $11$ values. The two data sets have the same mean. Which statement comparing the standard deviations of the two data sets is true?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "sets": [
+        {
+          "name": "Data set A",
+          "data": [
+            20,
+            21,
+            22,
+            22,
+            23,
+            23,
+            23,
+            24,
+            24,
+            25,
+            26
+          ]
+        },
+        {
+          "name": "Data set B",
+          "data": [
+            20,
+            20,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            26,
+            26
+          ]
+        }
+      ],
+      "xMin": 19,
+      "xMax": 27,
+      "height": 260,
+      "xLabel": "Value"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The standard deviation of data set A is greater than the standard deviation of data set B."
+    },
+    {
+      "id": "B",
+      "text": "The standard deviation of data set B is greater than the standard deviation of data set A."
+    },
+    {
+      "id": "C",
+      "text": "The two standard deviations are equal because the two means are equal."
+    },
+    {
+      "id": "D",
+      "text": "There is not enough information to compare the two standard deviations."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses the comparison; data set A is the more tightly clustered of the two.",
+    "C": "treats equal means as forcing equal spread, but two data sets can share a mean and differ widely in spread.",
+    "D": "the plots show every value in both data sets, which is all that is needed to compare spread."
+  },
+  "correctAnswer": "B",
+  "hint": "Compare how tightly the dots cluster around the shared center, not where that center is.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~35s):** Data set A piles up near $23$, while data set B pushes its dots out to $20$ and $26$, so data set B has the greater spread.\n\n**The Full Solution:**\nStep 1: Both data sets have $11$ values and the same mean, $23$, so the comparison depends only on spread.\nStep 2: In data set A, seven of the eleven dots sit at $22$, $23$, or $24$, within one unit of the mean.\nStep 3: In data set B, six of the eleven dots sit at $20$ or $26$, three units from the mean, so its values are typically farther from the mean and its standard deviation is greater. Check: the two plots share an axis, so the wider footprint of B is a fair comparison. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reverses the comparison; data set A is the more tightly clustered of the two.\n* Choice C: treats equal means as forcing equal spread, but two data sets can share a mean and differ widely in spread.\n* Choice D: the plots show every value in both data sets, which is all that is needed to compare spread.\n\n**Test Day Takeaway:** When two distributions share a center, standard deviation is decided by clustering. Read the dot plots for how far the dots sit from the center, not for where the center is."
+}

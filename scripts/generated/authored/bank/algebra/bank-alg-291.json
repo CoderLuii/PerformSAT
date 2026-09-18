@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-291",
+ "question": "A vibration monitor triggers at every value of $x$ satisfying $|4x - 26| = m$, where $m$ is a positive constant. The monitor triggers at $x = 3$ and at one other value $x = t$. What is the value of $t$?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~25s):** $x = 3$ gives $m = |12 - 26| = 14$; the other branch $4x - 26 = 14$ gives $x = 10$.\n\n**The Full Solution:**\nStep 1: Substitute the trigger that is given: $|4(3) - 26| = |-14| = 14$, so $m = 14$.\nStep 2: The equation $|4x - 26| = 14$ splits into $4x - 26 = 14$ and $4x - 26 = -14$.\nStep 3: The first gives $4x = 40$, so $x = 10$; the second returns the known value $x = 3$. Check: $|4(10) - 26| = |14| = 14 = m$ ✓\n\n**Common Mistakes:** Answering $14$ reports $m$ rather than a trigger value; answering $6.5$ solves $4x - 26 = 0$; answering $-10$ negates the correct value instead of using the second branch.\n\n**Test Day Takeaway:** One known solution fixes the constant on the right; the other solution always comes from the opposite branch."
+}

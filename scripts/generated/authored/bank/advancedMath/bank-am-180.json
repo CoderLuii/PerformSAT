@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-180",
+  "question": "A culture of protozoa triples in number every $4$ hours, and the table lists the number of protozoa at three times after the culture was started. How many protozoa are in the culture $16$ hours after it was started?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Hours after start",
+        "Number of protozoa"
+      ],
+      "rows": [
+        [
+          "0",
+          "20"
+        ],
+        [
+          "4",
+          "60"
+        ],
+        [
+          "8",
+          "180"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$80$"
+    },
+    {
+      "id": "B",
+      "text": "$540$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}620$"
+    },
+    {
+      "id": "D",
+      "text": "$4{,}860$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies the starting count by the number of periods, $20 \\times 4$, instead of applying the growth factor",
+    "B": "uses three tripling periods instead of four, which lands at $12$ hours",
+    "D": "uses five tripling periods, which lands at $20$ hours"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** In $16$ hours there are $16 \\div 4 = 4$ tripling periods, so the count is $20 \\times 3^4 = 1{,}620$.\n\n**The Full Solution:**\nStep 1: The table shows $20$ protozoa at the start, $60$ after $4$ hours, and $180$ after $8$ hours, confirming a growth factor of $3$ per $4$-hour period.\nStep 2: The number after $t$ hours is $20 \\cdot 3^{t/4}$. At $t = 16$ that exponent is $\\dfrac{16}{4} = 4$.\nStep 3: So the count is $20 \\cdot 3^4 = 20 \\cdot 81 = 1{,}620$. Check by extending the table: $180$ at $8$ hours, $540$ at $12$ hours, $1{,}620$ at $16$ hours. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($80$): multiplying $20$ by the number of periods treats the growth as linear.\n* Choice B ($540$): three triplings reach only $12$ hours.\n* Choice D ($4{,}860$): five triplings overshoot to $20$ hours.\n\n**Test Day Takeaway:** Count how many whole growth periods fit in the elapsed time, then raise the growth factor to that count; never multiply by the count itself."
+}

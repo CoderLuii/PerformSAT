@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "Sound editors on a film leave $f(x)$ unmixed tracks after $x$ hours of work, and $f$ is linear. Two readings from their log are $f(3)=47$ and $f(11)=15$. Which of the following defines $f$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$f(x)=-32x+143$"
+  },
+  {
+   "id": "B",
+   "text": "$f(x)=-4x+59$"
+  },
+  {
+   "id": "C",
+   "text": "$f(x)=-4x+47$"
+  },
+  {
+   "id": "D",
+   "text": "$f(x)=4x+35$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the change in output, -32, as the slope without dividing by the change in input, 8",
+  "C": "finds the slope correctly but uses the output 47 as the y-intercept instead of solving for it",
+  "D": "drops the negative on the slope, computing (47 - 15)/(11 - 3) = 4 instead of (15 - 47)/(11 - 3) = -4"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Line from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The count drops $32$ tracks over $8$ hours, so the slope is $-4$. Backing up from $(3,47)$ three hours to $x=0$ adds $12$, giving an intercept of $59$.\n\n**The Full Solution:**\nStep 1: The two log readings are the points $(3,47)$ and $(11,15)$. The slope of a linear function through two points is the change in output over the change in input: $m=\\dfrac{15-47}{11-3}=\\dfrac{-32}{8}=-4$.\nStep 2: Write $f(x)=-4x+b$ and substitute one of the points to find $b$. Using $(3,47)$: $47=-4(3)+b$, so $47=-12+b$ and $b=59$.\nStep 3: The equation is $f(x)=-4x+59$. Check the other point: $f(11)=-4(11)+59=-44+59=15$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($f(x)=-32x+143$): uses the raw drop of $32$ tracks as the slope, skipping the division by the $8$-hour span. It predicts $f(11)=-209$ tracks.\n* Choice C ($f(x)=-4x+47$): gets the slope right but treats the output $47$ as the $y$-intercept. That value belongs to $x=3$, not $x=0$; this equation gives $f(3)=35$.\n* Choice D ($f(x)=4x+35$): subtracts the outputs in the wrong order, producing a positive slope. It has the count of unmixed tracks growing as the editors work.\n\n**Test Day Takeaway:** Slope is the change in output divided by the change in input — always divide, and keep the subtraction order the same top and bottom. Then substitute a given point to get the intercept, and verify with the point you did not use."
+}

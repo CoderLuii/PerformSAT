@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "The listed nightly rate for a lakeside cabin was raised by $20\\%$ for the peak season and then cut by $15\\%$ of the raised rate for a midweek promotion. If the promotional rate is $p$ dollars, which expression gives the listed rate, in dollars, before the raise?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{p}{0.85}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{p}{1.02}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{p}{1.05}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{p}{1.35}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reverses only the 15 percent cut and never undoes the 20 percent raise",
+  "C": "nets the two changes into a single 5 percent increase by subtracting 15 from 20",
+  "D": "adds the multipliers 1.20 and 0.15 instead of multiplying 1.20 by 0.85"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Successive percent changes multiply: $1.20 \\times 0.85 = 1.02$. So $p = 1.02$ times the listed rate, and the listed rate is $\\dfrac{p}{1.02}$.\n\n**The Full Solution:**\nStep 1: Call the listed rate $L$. Raising it by $20\\%$ multiplies it by $1 + 0.20 = 1.20$, giving a peak rate of $1.20L$.\nStep 2: The promotion cuts $15\\%$ **of the raised rate**, which multiplies by $1 - 0.15 = 0.85$. The promotional rate is therefore $0.85(1.20L) = 1.02L$, and this equals $p$.\nStep 3: Solve for $L$: $L = \\dfrac{p}{1.02}$. Check with a concrete listed rate of $\\$100$: the peak rate is $\\$120$, the cut is $0.15(120) = \\$18$, and the promotional rate is $\\$102$; then $\\frac{102}{1.02} = 100$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{p}{0.85}$): this undoes the promotion only. Applied to $p = 102$ it returns $120$, the peak rate, not the original listed rate.\n* Choice C ($\\frac{p}{1.05}$): subtracting the percents treats a $15\\%$ cut on $\\$120$ as if it were a $15\\%$ cut on $\\$100$. The cut is larger than that, so the net rise is $2\\%$, not $5\\%$.\n* Choice D ($\\frac{p}{1.35}$): adding $1.20$ and $0.15$ mixes a multiplier with a rate. Chained percent changes are multiplied, never added.\n\n**Test Day Takeaway:** Turn each percent change into a multiplier ($+20\\% \\to 1.20$, $-15\\% \\to 0.85$), multiply them in order, then divide the final amount by the product to walk backwards to the original."
+}

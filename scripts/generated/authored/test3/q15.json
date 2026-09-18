@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "information-and-ideas",
  "skill": "inferences",
+ "type": "multiple-choice",
+ "passage": "When a word passes from one language into another, it must survive in the sound system of its new home. Japanese syllables, for example, rarely end in consonants, so English words borrowed into Japanese acquire extra vowels: baseball becomes besuboru. Speakers are not mispronouncing the foreign word so much as rebuilding it from the inventory of sounds and syllable shapes their own language provides. Linguists therefore expect that when the same English word is borrowed by several languages with different sound systems, ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "tend to underestimate the cumulative health burden the framework predicts at the population level."
+   "text": "each language will reshape the word differently, in ways that reflect its own inventory of sounds and syllable patterns."
   },
   {
    "id": "B",
-   "text": "be unable to detect any health disparity at all in the population they study."
+   "text": "the borrowed word will eventually come to be pronounced the same way in all of the borrowing languages."
   },
   {
    "id": "C",
-   "text": "find that the single level they focus on accounts for nearly all of the observed disparity in their data."
+   "text": "speakers of the borrowing languages will avoid using the word in favor of native vocabulary with a similar meaning that is easier to pronounce."
   },
   {
    "id": "D",
-   "text": "show that institutionalized racism is the single most important driver of measurable health outcomes."
+   "text": "the word's original pronunciation will be preserved most faithfully by languages whose speakers rarely encounter spoken English."
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A. The passage gives two premises: the framework distinguishes three levels at which racism acts on health, each leaving distinct traces, and all three act on the same population at the same time. If the levels are simultaneous and additive, a study sensitive to only one of them captures that level's contribution but misses the other two, so it will tend to underestimate the cumulative burden the framework predicts. A states that measured conclusion. C reverses it, since one instrument cannot capture nearly the whole effect when three levels contribute. B overstates the case: such a study would still detect the disparity from the level it measures, so the issue is magnitude, not invisibility. D singles out one level as dominant, which the passage explicitly declines to do.",
+ "explanation": "**Choice A is correct.** The passage's principle — borrowed words are rebuilt from the borrowing language's own sounds and syllable shapes — applied to several languages with different sound systems yields several different rebuildings.\n\n**The Full Solution:**\n- The Japanese example shows the mechanism: the borrowing language's constraints (no final consonants) dictate the reshaping (extra vowels).\n- If the constraints differ from language to language, the reshapings must differ too; A simply generalizes the mechanism the passage established.\n\n**Why the other choices are wrong:**\n- B: Convergence on one pronunciation is the opposite of what the mechanism predicts, since each language rebuilds the word under different constraints.\n- C: The passage is about how languages adapt borrowed words, not about avoiding them; nothing suggests borrowing fails.\n- D: The passage ties faithfulness to sound-system compatibility, not to how often speakers hear English — and less exposure would give speakers no extra means of preserving the original.",
  "_meta": {
-  "anchor": "Camara Phyllis Jones — social epidemiologist; three-level framework of racism and health"
- },
- "passage": "Social epidemiologist Camara Phyllis Jones argues that population-health research improves when its frameworks are made measurable. She distinguishes three levels at which racism can act on health: institutionalized (unevenly distributed rules and resources), personally mediated (differential treatment in everyday encounters), and internalized (the absorption of negative beliefs about one's own group). Each level, she notes, leaves distinct traces in survey and administrative data, so each can be tracked by indicators specific to it. Because all three levels act on the same population at the same time, her framework implies that researchers who collect data sensitive to only one of the three will ______",
- "type": "multiple-choice"
+  "anchor": "Loanword adaptation to native sound systems — besuboru example (unnamed linguists)"
+ }
 }

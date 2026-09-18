@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "A titration controller reports a target reading $k$ for each delivered volume $v$, in milliliters, and over the controller's working range the two satisfy the equation $7v - 4 = k$. In terms of $k$, which expression is equal to $21v + 5$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$k + 17$"
+  },
+  {
+   "id": "B",
+   "text": "$3k + 9$"
+  },
+  {
+   "id": "C",
+   "text": "$3k + 12$"
+  },
+  {
+   "id": "D",
+   "text": "$3k + 17$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 12 and 5 correctly but never triples k, treating 21v as k + 12",
+  "B": "triples k but not the 4, writing 21v as 3k + 4 before adding 5",
+  "C": "stops at 21v = 3k + 12 and forgets to add the 5"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** $7v = k + 4$, so $21v = 3k + 12$ and $21v + 5 = 3k + 17$.\n\n**The Full Solution:**\nStep 1: Solve the given equation for the whole quantity $7v$ rather than for $v$: adding $4$ to both sides gives $7v = k + 4$.\nStep 2: The target expression contains $21v = 3(7v)$, so multiply both sides by $3$: $21v = 3(k + 4) = 3k + 12$.\nStep 3: Add $5$: $21v + 5 = 3k + 17$; check with $v = 2$, where $k = 7(2) - 4 = 10$: $21(2) + 5 = 47$ and $3(10) + 17 = 47$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($k + 17$): adds $12$ and $5$ but leaves $k$ untripled; at $v = 2$, $k = 10$, this gives $27$ instead of $47$.\n* Choice B ($3k + 9$): distributes the $3$ to $k$ only, writing $21v = 3k + 4$, then adds $5$; at $v = 2$ it gives $39$.\n* Choice C ($3k + 12$): scales correctly to $21v$ but never adds the $+5$ the expression carries; at $v = 2$ it gives $42$.\n\n**Test Day Takeaway:** Do not solve for the variable — solve for the block the question needs, then scale and shift the whole equation in one move."
+}

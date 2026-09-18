@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-259",
+  "question": "On a typical day, $2{,}400$ passengers ride a certain ferry route. Of these passengers, $55\\%$ are commuters, and $30\\%$ of the commuters hold monthly passes. How many of the day's passengers are commuters who do not hold monthly passes?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$396$"
+    },
+    {
+      "id": "B",
+      "text": "$924$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}320$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}680$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports commuters WITH monthly passes (30% of 1,320)",
+    "C": "reports all commuters, never applying the pass condition",
+    "D": "applies the 70% to all passengers instead of to commuters"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compound Percent Of**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Commuters: $0.55 \\times 2{,}400 = 1{,}320$. Without passes: $70\\%$ of those, $0.70 \\times 1{,}320 = 924$.\n\n**The Full Solution:**\nStep 1: Commuters are $55\\%$ of $2{,}400$: $0.55 \\times 2{,}400 = 1{,}320$.\nStep 2: If $30\\%$ of commuters hold passes, then $100\\% - 30\\% = 70\\%$ do not.\nStep 3: Commuters without passes: $0.70 \\times 1{,}320 = 924$. Check: with passes, $0.30 \\times 1{,}320 = 396$, and $396 + 924 = 1{,}320$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($396$): $0.30 \\times 1{,}320$ counts the commuters who DO hold passes.\n* Choice C ($1{,}320$): the total number of commuters; the pass condition was not applied.\n* Choice D ($1{,}680$): $0.70 \\times 2{,}400$ applies the $70\\%$ to all passengers, but the $30\\%$ was a percent of commuters.\n\n**Test Day Takeaway:** Each \"of\" sets a new base. Find the group, then take the percent (or its complement) of that group only."
+}

@@ -1,0 +1,57 @@
+{
+ "question": "The line shown in the $xy$-plane models the number of pine seedlings per plot, $y$, counted $x$ weeks after a controlled burn. What is the slope of the line?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reads the $y$-intercept of the line as its slope",
+  "C": "uses the run $6 - 2 = 4$ by itself as the slope",
+  "D": "uses the rise $20 - 8 = 12$ without dividing by the run"
+ },
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The line passes through $(2, 8)$ and $(6, 20)$, so the slope is $\\frac{20 - 8}{6 - 2} = 3$.\n\n**The Full Solution:**\n\nStep 1: Read two grid points off the line: $(2, 8)$ and $(6, 20)$.\n\nStep 2: Slope is rise over run: $\\frac{20 - 8}{6 - 2} = \\frac{12}{4}$.\n\nStep 3: That is $3$ seedlings per week. Check the $y$-intercept: $8 - 3(2) = 2$, and the graph does cross the $y$-axis at $2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2$): reports the $y$-intercept, the value where the line meets the vertical axis.\n\n* Choice C ($4$): reports the run $6 - 2$ instead of the ratio.\n\n* Choice D ($12$): reports the rise $20 - 8$ without dividing by the run.\n\n**Test Day Takeaway:** Pick two points that sit exactly on grid intersections, then divide the vertical change by the horizontal change.",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 3,
+   "yIntercept": 2,
+   "xRange": [
+    0,
+    8
+   ],
+   "yRange": [
+    0,
+    24
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     2,
+     8
+    ],
+    [
+     6,
+     20
+    ]
+   ]
+  }
+ },
+ "id": "bank-alg-002"
+}

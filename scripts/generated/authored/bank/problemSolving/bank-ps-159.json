@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-159",
+  "question": "A pump moves $84$ liters of water in $6$ minutes at a constant rate. At this rate, how many liters of water does the pump move in $11$ minutes?",
+  "correctAnswer": "154",
+  "explanation": "**SAT Pattern: Proportion / Ratio**\n\n**The correct answer is $154$.**\n\n**The Fast Way (~10s):** $\\frac{84}{6} = 14$ liters per minute, so $11$ minutes moves $14 \\times 11 = 154$ liters.\n\n**The Full Solution:**\nStep 1: Compute the unit rate: $84 \\div 6 = 14$ liters per minute.\nStep 2: Multiply by the new time: $14 \\times 11 = 154$ liters.\nStep 3: Check by proportion: $\\frac{84}{6} = \\frac{154}{11}$ because $84 \\times 11 = 924$ and $6 \\times 154 = 924$. $\\checkmark$\n\n**Common Mistakes:** Adding the extra $5$ minutes to the liters, $84 + 5 = 89$; inverting the proportion, $84 \\times \\frac{6}{11} \\approx 45.8$; multiplying $84 \\times 11 = 924$ and forgetting to divide by $6$.\n\n**Test Day Takeaway:** Constant rate means liters and minutes scale together; get the per-minute rate first and the rest is one multiplication."
+}

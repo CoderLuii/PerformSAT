@@ -1,0 +1,25 @@
+{
+  "id": "bank-am-050",
+  "question": "The table gives the mass, in grams, of a sample of a radioactive isotope at two times after the sample was first measured. The mass of the sample decreases exponentially. What is the mass of the sample, in grams, $72$ hours after it was first measured?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Time (hours)",
+        "Mass (grams)"
+      ],
+      "rows": [
+        [
+          "0",
+          "1,920"
+        ],
+        [
+          "12",
+          "960"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "30",
+  "explanation": "**SAT Pattern: Half-Life Evaluation**\n\n**The correct answer is $30$.**\n\n**The Fast Way (~35s):** The mass halves in $12$ hours, and $72$ hours is $6$ half-lives: $\\dfrac{1{,}920}{2^{6}} = \\dfrac{1{,}920}{64} = 30$ grams.\n\n**The Full Solution:**\nStep 1: From the table, the mass falls from $1{,}920$ grams to $960$ grams in $12$ hours, and $\\dfrac{960}{1{,}920} = \\dfrac{1}{2}$, so the half-life is $12$ hours.\nStep 2: The model is $A(t) = 1{,}920\\left(\\dfrac{1}{2}\\right)^{t/12}$, where $t$ is in hours.\nStep 3: At $t = 72$, the exponent is $\\dfrac{72}{12} = 6$, so $A(72) = 1{,}920\\left(\\dfrac{1}{2}\\right)^{6} = \\dfrac{1{,}920}{64} = 30$ grams. Check by halving six times: $1{,}920 \\to 960 \\to 480 \\to 240 \\to 120 \\to 60 \\to 30$. $\\checkmark$\n\n**Common Mistakes:** Dividing by $6$ instead of halving six times, which gives $320$ grams. Counting only five half-lives and answering $60$ grams.\n\n**Test Day Takeaway:** Convert the elapsed time into a COUNT of half-lives first, then halve that many times — the count is the exponent, not the divisor."
+}

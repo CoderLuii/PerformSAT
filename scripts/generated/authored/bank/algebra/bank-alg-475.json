@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-475",
+ "question": "A theater pays \\$213 to rent $4$ ellipsoidal fixtures and $3$ wash fixtures for a week, and \\$275 to rent $4$ ellipsoidal and $5$ wash fixtures for a week. Each fixture of a type rents for the same weekly price. What is the combined weekly price, in dollars, of one fixture of each type?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$30$"
+  },
+  {
+   "id": "B",
+   "text": "$31$"
+  },
+  {
+   "id": "C",
+   "text": "$61$"
+  },
+  {
+   "id": "D",
+   "text": "$62$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports only the ellipsoidal price of 30 dollars",
+  "B": "reports only the wash price of 31 dollars",
+  "D": "reports 2w = 62, the price of the two extra wash fixtures"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System of Equations (Elimination)**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The two orders differ only by $2$ wash fixtures and \\$62, so $w = 31$; then $4e = 213 - 93 = 120$ gives $e = 30$, and $e + w = 61$.\n\n**The Full Solution:**\nStep 1: Let $e$ be the weekly price of one ellipsoidal fixture and $w$ that of one wash fixture. The two orders give $4e + 3w = 213$ and $4e + 5w = 275$.\nStep 2: The $e$-terms are identical, so subtract: $2w = 62$, and $w = 31$.\nStep 3: Substitute back: $4e + 3(31) = 213$, so $4e = 120$ and $e = 30$. The requested total is $e + w = 30 + 31 = 61$. Check: $4(30) + 5(31) = 120 + 155 = 275$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($30$): stops at the ellipsoidal price and never adds the wash price.\n* Choice B ($31$): stops at the wash price for the same reason.\n* Choice D ($62$): reports $2w = 62$, the cost of the two extra wash fixtures, instead of one fixture of each type.\n\n**Test Day Takeaway:** Eliminate, back-substitute, and then build the exact combination the question names — one of each is a sum, not either single price."
+}

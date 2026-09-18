@@ -1,31 +1,31 @@
 {
-  "id": 1231,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "Film archivists face a problem rooted in chemistry. The nitrate film stock used through the 1940s is not inert; left in warm storage, it slowly decomposes, and the process is ____: as the base breaks down it releases gases that hasten the decay of nearby reels, so a single deteriorating canister can speed the loss of an entire shelf. Archives therefore keep surviving nitrate in cold vaults and copy the most fragile titles onto stable modern stock before the originals are beyond rescue.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "reversible"
-    },
-    {
-      "id": "B",
-      "text": "gradual"
-    },
-    {
-      "id": "C",
-      "text": "self-accelerating"
-    },
-    {
-      "id": "D",
-      "text": "deliberate"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The colon spells out the meaning: the decay \"releases gases that hasten the decay of nearby reels,\" so the process feeds on itself; \"self-accelerating\" names that compounding quality. \"Gradual\" is tempting because the text says the stock decomposes \"slowly,\" but the point of the blank is that the decay speeds up and spreads, not that it is slow. \"Reversible\" contradicts the passage, in which decayed film is lost. \"Deliberate\" wrongly implies intention in a chemical process."
+ "id": 1231,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "Coastal engineers reviewing the record of marsh drainage describe a practice that worked against its own purpose. To dry the surface of the marsh for haying, crews cut grids of narrow ditches; over the decades the program proved ____: as the peat drained, it compacted and sank, the lowered surface pooled and flooded more than before, and each new round of subsidence was answered with another round of ditching.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "irreversible"
+  },
+  {
+   "id": "B",
+   "text": "uncontrollable"
+  },
+  {
+   "id": "C",
+   "text": "self-defeating"
+  },
+  {
+   "id": "D",
+   "text": "methodical"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The opening sentence gives the thesis — a practice \"that worked against its own purpose\" — and the colon shows the loop: ditching sank the peat, the sunken surface flooded MORE, and the response was more ditching. A program that worsens the very condition it exists to cure is \"self-defeating.\"\n\n**The Full Solution:**\n- The purpose of the ditches was to dry the marsh surface.\n- The colon traces the actual chain: drained peat compacts and sinks, the lower surface pools and floods more than before, and more ditching follows.\n- So the program produced wetter ground, the opposite of its aim, and then demanded its own repetition — the definition of a self-defeating effort, and an echo of the first sentence's \"worked against its own purpose.\"\n\n**Why the other choices are wrong:**\n- A: \"Irreversible\" is tempting, since sunken peat is hard to restore, but the colon describes the program undermining its aim, not the permanence of the damage.\n- B: \"Uncontrollable\" would mean no one could stop the ditching, yet the crews chose each new round; the problem was the choice defeating itself, not a loss of control.\n- D: \"Methodical\" praises the grid-cutting's orderliness and ignores the failure the sentence is built to describe."
 }

@@ -1,31 +1,31 @@
 {
-  "id": 823,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "During the total solar eclipse of 1919, an expedition led by the astronomer Arthur Eddington photographed stars whose light passed close to the darkened Sun and measured how far that light was bent by the Sun's gravity. The deflection matched the prediction of Einstein's general theory of relativity rather than the smaller value expected from Newton's physics. ______ a theory that had been almost entirely mathematical gained its first strong observational support, and Einstein's name became known well beyond physics.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "For example,"
-    },
-    {
-      "id": "B",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "C",
-      "text": "As a result,"
-    },
-    {
-      "id": "D",
-      "text": "Meanwhile,"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The eclipse measurement is the cause and the theory's new standing is the effect, so the transition must mark a result; \"As a result\" does that. \"For example\" would signal an illustration of a prior point, but the final sentence reports a consequence, not an instance; \"Nevertheless\" signals contrast, though nothing here is being opposed; and \"Meanwhile\" marks simultaneous events rather than the cause-and-effect link the passage draws."
+ "id": 823,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "The pound lock enclosed boats in a chamber between two sets of gates, so that the water level around a vessel could be raised or lowered gradually, with the boat floating calmly the whole time. ______ a laden barge could descend a steep hillside in a series of measured steps, without ever riding the violent flush of water that older river weirs released.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "For example,"
+  },
+  {
+   "id": "B",
+   "text": "Nevertheless,"
+  },
+  {
+   "id": "C",
+   "text": "As a result,"
+  },
+  {
+   "id": "D",
+   "text": "Meanwhile,"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The second sentence states the consequence of the mechanism the first describes — controlled, gradual water levels made steep descents safe — so a cause-and-effect transition is required.\n\n**The Full Solution:**\n- Sentence one explains the pound lock's design: a chamber between two gates in which the water level rises or falls gradually.\n- Sentence two reports what that design achieved: a laden barge could descend a steep hillside safely in stages.\n- The outcome follows from the mechanism, and \"As a result,\" marks exactly that relation.\n\n**Why the other choices are wrong:**\n- A: \"For example,\" would make the descent an illustration of the design rather than its consequence.\n- B: \"Nevertheless,\" signals that the second sentence resists the first, but the sentences run in the same direction.\n- D: \"Meanwhile,\" implies two unrelated events happening at once, misstating the causal link."
 }

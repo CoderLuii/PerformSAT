@@ -5,6 +5,7 @@
  */
 import {
   deriveEntitlementAccess,
+  hasSubscriptionEvidence,
   toMillisFlexible,
 } from '../entitlementAccess';
 
@@ -161,5 +162,31 @@ describe('deriveEntitlementAccess', () => {
     );
     expect(v.hasAccess).toBe(true);
     expect(v.trialDaysLeft).toBe(1);
+  });
+});
+
+describe('hasSubscriptionEvidence', () => {
+  // Regression: abandoned first checkout escaped the card-up-front hard gate.
+  // createCheckoutSession persists stripeCustomerId BEFORE Checkout opens, so
+  // a pre-created customer alone must never count as billing history — the
+  // account would skip the start-trial wall and see "Your access has ended".
+  // Found by /qa on 2026-08-04.
+  it('a pre-created Checkout customer alone is NOT billing history', () => {
+    expect(hasSubscriptionEvidence({ status: 'none', stripeCustomerId: 'cus_x' })).toBe(false);
+    // The createCheckoutSession/ensureEntitlement race can leave a doc with
+    // ONLY {stripeCustomerId, updatedAt} — still not billing history.
+    expect(hasSubscriptionEvidence({ stripeCustomerId: 'cus_x' })).toBe(false);
+    expect(hasSubscriptionEvidence(null)).toBe(false);
+    expect(hasSubscriptionEvidence({})).toBe(false);
+    expect(hasSubscriptionEvidence({ status: 'comped' })).toBe(false);
+  });
+
+  it('a real subscription — live or lapsed — IS billing history', () => {
+    expect(hasSubscriptionEvidence({ status: 'trialing' })).toBe(true);
+    expect(hasSubscriptionEvidence({ status: 'active' })).toBe(true);
+    expect(hasSubscriptionEvidence({ status: 'past_due' })).toBe(true);
+    expect(hasSubscriptionEvidence({ status: 'canceled' })).toBe(true);
+    expect(hasSubscriptionEvidence({ status: 'none', subscriptionId: 'sub_x' })).toBe(true);
+    expect(hasSubscriptionEvidence({ status: 'none', trialUsed: true })).toBe(true);
   });
 });

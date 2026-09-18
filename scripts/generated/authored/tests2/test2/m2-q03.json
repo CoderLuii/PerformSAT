@@ -1,0 +1,68 @@
+{
+ "id": 3,
+ "question": "A total of $250$ items are classified in the table by group and by type. If one of the items is chosen at random, what is the probability that its type is II, given that its group is not A?",
+ "questionTable": {
+  "headers": [
+   "Group",
+   "Type I",
+   "Type II",
+   "Type III",
+   "Total"
+  ],
+  "rows": [
+   [
+    "A",
+    "$18$",
+    "$24$",
+    "$33$",
+    "$75$"
+   ],
+   [
+    "B",
+    "$25$",
+    "$40$",
+    "$43$",
+    "$108$"
+   ],
+   [
+    "C",
+    "$15$",
+    "$30$",
+    "$22$",
+    "$67$"
+   ],
+   [
+    "Total",
+    "$58$",
+    "$94$",
+    "$98$",
+    "$250$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{8}{35}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{7}{25}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{47}{125}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{2}{5}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "counts only group B in the numerator, using 40/175 = 8/35 and leaving out group C's 30 type-II items",
+  "B": "uses the correct numerator 70 but divides by the grand total 250 instead of the 175 items outside group A, giving 7/25",
+  "C": "ignores the condition entirely and computes 94/250 = 47/125, the probability of type II among all 250 items"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The condition restricts the pool to groups B and C, which hold $108 + 67 = 175$ items, and $40 + 30 = 70$ of those are type II. So the probability is $\\frac{70}{175} = \\frac{2}{5}$.\n\n**The Full Solution:**\nStep 1: The phrase \"given that its group is not A\" replaces the sample space: only groups B and C count, so the denominator is $108 + 67 = 175$, not $250$.\nStep 2: Inside that restricted pool, count the type-II items: $40$ from group B and $30$ from group C, for $70$ items.\nStep 3: Divide: $\\frac{70}{175} = \\frac{2}{5}$. Check: the type-II items outside group A are $94 - 24 = 70$, matching Step 2 ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{8}{35}$): uses the right denominator, $175$, but counts only group B's $40$ type-II items. \"Not group A\" covers both remaining groups, so group C's $30$ belong in the numerator too.\n* Choice B ($\\frac{7}{25}$): counts the numerator correctly as $70$ but divides by the grand total $250$. A conditional probability shrinks the denominator to the items that satisfy the condition.\n* Choice C ($\\frac{47}{125}$): computes $\\frac{94}{250}$, the unconditional probability of type II. This answer ignores the condition on both the top and the bottom of the fraction.\n\n**Test Day Takeaway:** In a conditional probability, write the denominator first — it is the total of the row, column, or union named after \"given that\" — and only then count the part of that pool the question asks about."
+}

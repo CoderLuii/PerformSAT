@@ -1,0 +1,94 @@
+{
+  "id": "bank-ps-136",
+  "question": "The scatterplot shows the temperature $y$, in degrees Celsius, of a water sample $x$ minutes after it was removed from a heater, with the line of best fit $\\hat{y} = -2.4x + 85$. Which of the following is the best interpretation of the $y$-intercept of the line of best fit?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          0,
+          86
+        ],
+        [
+          3,
+          80
+        ],
+        [
+          6,
+          68
+        ],
+        [
+          9,
+          66
+        ],
+        [
+          12,
+          54
+        ],
+        [
+          15,
+          50
+        ],
+        [
+          18,
+          44
+        ],
+        [
+          21,
+          32
+        ],
+        [
+          24,
+          30
+        ],
+        [
+          27,
+          22
+        ],
+        [
+          30,
+          12
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 30,
+      "yMin": 0,
+      "yMax": 100,
+      "xGridStep": 3,
+      "yGridStep": 10,
+      "xLabelStep": 6,
+      "yLabelStep": 20,
+      "xLabel": "Minutes after removal",
+      "yLabel": "Temperature (°C)",
+      "bestFitLine": {
+        "slope": -2.4,
+        "intercept": 85
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The temperature of the sample is predicted to decrease by $85$ degrees Celsius each minute."
+    },
+    {
+      "id": "B",
+      "text": "The sample is predicted to reach $0$ degrees Celsius $85$ minutes after removal."
+    },
+    {
+      "id": "C",
+      "text": "The predicted temperature of the sample at the moment it was removed from the heater is $85$ degrees Celsius."
+    },
+    {
+      "id": "D",
+      "text": "The predicted temperature of the sample $1$ minute after removal is $85$ degrees Celsius."
+    }
+  ],
+  "distractorNotes": {
+    "A": "confuses the intercept with the slope; the rate is 2.4 degrees per minute",
+    "B": "treats 85 as a time; setting y = 0 gives x about 35.4 minutes",
+    "D": "reads the intercept as the value at x = 1; at x = 1 the prediction is 82.6"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** The $y$-intercept is the predicted $y$ when $x = 0$, and $x = 0$ is the moment of removal: the predicted temperature then is $85$ degrees Celsius.\n\n**The Full Solution:**\nStep 1: In $\\hat{y} = -2.4x + 85$, the constant $85$ is the value of $\\hat{y}$ at $x = 0$.\nStep 2: In this context $x = 0$ means zero minutes after removal, that is, the instant the sample left the heater.\nStep 3: Check: substituting $x = 0$ gives $\\hat{y} = 85$, and the plotted point $(0, 86)$ agrees closely. $\\checkmark$ The rate of cooling, $2.4$ degrees per minute, is the slope, a separate quantity.\n\n**Why the wrong answers are tempting:**\n* Choice A: Describes a slope, and the slope here is $-2.4$, not $-85$.\n* Choice B: Treats $85$ as a time. Setting $\\hat{y} = 0$ gives $x = \\frac{85}{2.4} \\approx 35.4$ minutes, and in any case the intercept is a temperature, not a time.\n* Choice D: Reads the intercept as the value at $x = 1$; at $x = 1$ the prediction is $-2.4 + 85 = 82.6$.\n\n**Test Day Takeaway:** The $y$-intercept is the prediction at $x = 0$; translate \"$x = 0$\" into the starting moment of the context."
+}

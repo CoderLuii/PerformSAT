@@ -1,0 +1,29 @@
+{
+  "question": "A load expression $2x^{2}+20x+37$ is rewritten as $2(x+5)^{2}+n$, where $n$ is a constant, so that the expression's least value is displayed as a constant. What is the value of $n$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-13$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$37$"
+    },
+    {
+      "id": "D",
+      "text": "$87$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracted 25 instead of 2 times 25, ignoring the leading coefficient",
+    "C": "copied the original constant term 37 without adjusting it",
+    "D": "added 50 instead of subtracting it"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Complete the Square with Leading Coefficient**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $2(x+5)^{2}=2x^{2}+20x+50$, which is $50$, not $37$, so $n=37-50=-13$.\n\n**The Full Solution:**\nStep 1: Expand the target form: $2(x+5)^{2}+n=2x^{2}+20x+50+n$.\nStep 2: Match constant terms with $2x^{2}+20x+37$: $50+n=37$.\nStep 3: Solve: $n=-13$. Check at $x=0$: $2(25)-13=37$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($12$): subtracts $25$ instead of $2\\cdot 25=50$, ignoring the leading coefficient.\n* Choice C ($37$): copies the original constant term without adjusting it.\n* Choice D ($87$): adds $50$ instead of subtracting it.\n\n**Test Day Takeaway:** With a leading coefficient, the completed square carries that factor too — expand the target form and match constants.",
+  "id": "bank-am-033"
+}

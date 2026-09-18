@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-316",
+ "question": "The length of a rectangular garden plot is $5$ feet more than its width, and the plot has an area of $84$ square feet. What is the perimeter, in feet, of the plot?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$19$"
+  },
+  {
+   "id": "B",
+   "text": "$38$"
+  },
+  {
+   "id": "C",
+   "text": "$58$"
+  },
+  {
+   "id": "D",
+   "text": "$76$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds length and width without doubling",
+  "C": "uses the magnitude of the rejected root",
+  "D": "applies the factor of 2 twice"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Two numbers $5$ apart with product $84$ are $7$ and $12$, so the perimeter is $2(7+12)=38$ feet.\n\n**The Full Solution:**\nStep 1: Let $w$ be the width. Then the length is $w+5$ and $w(w+5)=84$.\nStep 2: $w^2+5w-84=0$ factors as $(w+12)(w-7)=0$, so $w=-12$ or $w=7$. A width must be positive, so $w=7$ and the length is $12$.\nStep 3: The perimeter is $2(7+12)=2(19)=38$ feet.\n\nCheck: $(7)(12)=84$ square feet, and $12$ is indeed $5$ more than $7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($19$): added the length and width and stopped, skipping the factor of $2$ in the perimeter.\n* Choice C ($58$): used $12$ as the width by taking the magnitude of the rejected root $-12$, which makes the length $17$ and the perimeter $2(12+17)$.\n* Choice D ($76$): doubled $2(\\ell+w)$ a second time, applying the factor of $2$ twice.\n\n**Test Day Takeaway:** A quadratic from an area setup usually has one negative root that the geometry rejects. Discard it, then reread the question to see which quantity is wanted."
+}

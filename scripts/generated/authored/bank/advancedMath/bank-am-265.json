@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-265",
+  "question": "The function $f$ is defined by $f(x) = \\sqrt{x} + 2$. The graph of which function is the graph of $y = f(x)$ stretched vertically by a factor of $4$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = 4\\sqrt{x} + 2$"
+    },
+    {
+      "id": "B",
+      "text": "$y = 4\\sqrt{x} + 8$"
+    },
+    {
+      "id": "C",
+      "text": "$y = \\sqrt{4x} + 2$"
+    },
+    {
+      "id": "D",
+      "text": "$y = \\sqrt{x} + 8$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies only the radical term and leaves the constant alone",
+    "C": "multiplies the input, which compresses the graph horizontally",
+    "D": "multiplies only the constant term"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Vertical Stretch**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Multiply the WHOLE output by $4$: $4(\\sqrt{x} + 2) = 4\\sqrt{x} + 8$.\n\n**The Full Solution:**\nStep 1: A vertical stretch by a factor of $4$ replaces $y = f(x)$ with $y = 4f(x)$.\nStep 2: Distribute: $4f(x) = 4(\\sqrt{x} + 2) = 4\\sqrt{x} + 8$.\nStep 3: Check one point. $f(9) = 3 + 2 = 5$, so the stretched graph should contain $(9, 20)$, and $4\\sqrt{9} + 8 = 12 + 8 = 20$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = 4\\sqrt{x} + 2$): the $4$ was applied to only one term; at $x = 9$ this gives $14$, not $20$.\n* Choice C ($y = \\sqrt{4x} + 2$): the $4$ went inside the radical, which is a horizontal change; at $x = 9$ this gives $8$.\n* Choice D ($y = \\sqrt{x} + 8$): only the constant was multiplied; at $x = 9$ this gives $11$.\n\n**Test Day Takeaway:** A vertical stretch multiplies the entire function rule — distribute the factor over every term before comparing choices."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "The cost per pallet, in dollars, of producing $x$ pallets of paving stones in one day is modeled by $C(x) = 2x^2 - 28x + 117$. Which equivalent form of $C(x)$ displays the number of pallets that minimizes the cost per pallet as a constant or coefficient?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2(x - 14)^2 + 19$"
+  },
+  {
+   "id": "B",
+   "text": "$2(x + 7)^2 + 19$"
+  },
+  {
+   "id": "C",
+   "text": "$2(x - 7)^2 + 19$"
+  },
+  {
+   "id": "D",
+   "text": "$(2x - 14)^2 + 19$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses half of 28 as the shift instead of half of 14, giving (x - 14)^2",
+  "B": "reverses the sign inside the square, expanding to 2x^2 + 28x + 117",
+  "D": "keeps the leading 2 inside the square, expanding to 4x^2 - 56x + 215"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Quadratic — Completing the Square**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Factor the $2$ out of the variable terms: $2(x^2 - 14x) + 117 = 2(x - 7)^2 - 98 + 117 = 2(x - 7)^2 + 19$, so the cost per pallet is least at $x = 7$ pallets.\n\n**The Full Solution:**\nStep 1: Group the variable terms and factor out the leading coefficient: $C(x) = 2(x^2 - 14x) + 117$.\nStep 2: Complete the square inside the parentheses. Half of $-14$ is $-7$, and $(x - 7)^2 = x^2 - 14x + 49$, so $x^2 - 14x = (x - 7)^2 - 49$. Then $C(x) = 2[(x - 7)^2 - 49] + 117 = 2(x - 7)^2 - 98 + 117$.\nStep 3: Simplify: $C(x) = 2(x - 7)^2 + 19$. Because $2(x - 7)^2$ is never negative and equals $0$ only at $x = 7$, the smallest cost per pallet is $\\$19$ at $7$ pallets, and that $7$ appears as a constant in the form. Check by expanding: $2(x^2 - 14x + 49) + 19 = 2x^2 - 28x + 98 + 19 = 2x^2 - 28x + 117$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2(x - 14)^2 + 19$): this uses the whole coefficient $-28$ divided by $2$ as the shift instead of halving $-14$. Expanding gives $2x^2 - 56x + 411$, which is not the cost model.\n* Choice B ($2(x + 7)^2 + 19$): the sign inside is reversed. Expanding gives $2x^2 + 28x + 117$, a model whose cost rises for every positive $x$.\n* Choice D ($(2x - 14)^2 + 19$): the leading $2$ was squared along with the binomial. Expanding gives $4x^2 - 56x + 215$, so at $x = 0$ it predicts $\\$215$ instead of the model's $\\$117$.\n\n**Test Day Takeaway:** Factor the leading coefficient out of the variable terms first, then complete the square — and expand the finished form once to confirm it is the same function."
+}

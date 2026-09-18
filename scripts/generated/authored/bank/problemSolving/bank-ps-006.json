@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-006",
+  "question": "A sewing machine has a list price of $\\$640$. During a sale, the price is reduced by $15\\%$ of the list price. By how many dollars is the price reduced?",
+  "correctAnswer": "96",
+  "explanation": "**SAT Pattern: Discount Amount**\n\n**The correct answer is $96$.**\n\n**The Fast Way (~10s):** The reduction is $15\\%$ of $640$: $0.15 \\times 640 = 96$ dollars.\n\n**The Full Solution:**\nStep 1: The question asks for the amount of the reduction, not the sale price, so compute $15\\%$ of the list price.\nStep 2: $0.15 \\times 640 = 96$.\nStep 3: Check with a benchmark: $10\\%$ of $640$ is $64$ and $5\\%$ is $32$, and $64 + 32 = 96$. $\\checkmark$\n\n**Common Mistakes:** Entering $544$ (the sale price $640 - 96$, when the question asks for the reduction); entering $9.6$ (using $0.015$ instead of $0.15$); entering $625$ (subtracting $15$ dollars instead of $15$ percent).\n\n**Test Day Takeaway:** Read what the question asks for: the discount amount is $\\frac{p}{100} \\times \\text{price}$; the sale price is what remains after subtracting it."
+}

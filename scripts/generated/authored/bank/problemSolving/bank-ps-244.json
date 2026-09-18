@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-244",
+  "question": "A veterinarian selected $150$ dogs at random from the patient records of her clinic and found that $24\\%$ of the selected dogs were overweight. Which of the following is the largest population to which this result can be generalized?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "All dogs treated at the clinic"
+    },
+    {
+      "id": "B",
+      "text": "All pets treated at the clinic"
+    },
+    {
+      "id": "C",
+      "text": "All dogs in the city where the clinic is located"
+    },
+    {
+      "id": "D",
+      "text": "The $150$ dogs whose records were selected"
+    }
+  ],
+  "distractorNotes": {
+    "B": "widens the population to a different species group (all pets) that was never sampled",
+    "C": "widens to dogs in the city that are not clinic patients and could not have been selected",
+    "D": "stops at the sample rather than the population it was drawn from"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The $150$ dogs were selected at random from the clinic's dog patients, so the $24\\%$ estimate describes all dogs treated at the clinic.\n\n**The Full Solution:**\nStep 1: The sampling frame is the set of dogs in the clinic's patient records.\nStep 2: Random selection from that set means the sample proportion, $24\\%$, estimates the proportion of overweight dogs among all dogs treated at the clinic.\nStep 3: No larger group is supported. Check: a dog that has never visited the clinic, or a cat treated there, had no chance of being selected. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: cats and other pets were never in the records that were sampled, so the estimate does not extend to them.\n* Choice C: most dogs in the city are not patients of this clinic and could not have been selected.\n* Choice D: the $150$ dogs are the sample; random selection is what allows the result to describe the clinic's dog population.\n\n**Test Day Takeaway:** Generalize to the population that was sampled at random, no wider and no narrower."
+}

@@ -1,0 +1,56 @@
+{
+  "id": "bank-am-020",
+  "question": "The height, in feet, of a model rocket $t$ seconds after launch is $h(t) = -16t^2 + 96t + 5$. The table gives the rocket's height at four times. At what time, in seconds, does the rocket reach its greatest height?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Time t (seconds)",
+        "Height h(t) (feet)"
+      ],
+      "rows": [
+        [
+          "1",
+          "85"
+        ],
+        [
+          "2",
+          "133"
+        ],
+        [
+          "4",
+          "133"
+        ],
+        [
+          "5",
+          "85"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "picks the earlier of the two tied rows instead of the midpoint",
+    "C": "picks the later of the two tied rows instead of the midpoint",
+    "D": "computes $-\\frac{b}{a} = \\frac{96}{16}$, dropping the $2$"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Vertex Time for Projectile Motion**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $t = -\\dfrac{b}{2a} = -\\dfrac{96}{2(-16)} = 3$ seconds — also the midpoint of the tied heights at $t = 2$ and $t = 4$.\n\n**The Full Solution:**\nStep 1: The model is quadratic with $a = -16 < 0$, so the graph is a downward parabola and the greatest height occurs at the vertex.\nStep 2: The vertex time is $t = -\\dfrac{b}{2a} = -\\dfrac{96}{-32} = 3$ seconds.\nStep 3: The table confirms it: $h(2) = h(4) = 133$ feet, and equal heights sit at equal distances from the axis of symmetry, so the axis is at $t = \\dfrac{2 + 4}{2} = 3$. Check: $h(3) = -144 + 288 + 5 = 149 > 133$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): the greatest height IN THE TABLE is tied at $t = 2$ and $t = 4$; picking the first of them misses the true peak between them.\n* Choice C ($4$): same trap from the other end of the tie.\n* Choice D ($6$): uses $\\dfrac{96}{16}$, forgetting the $2$ in $-\\dfrac{b}{2a}$ — that is when the rocket returns near its launch height, not its peak.\n\n**Test Day Takeaway:** Two equal outputs bracket the vertex; the vertex time is their average, which must agree with $-\\dfrac{b}{2a}$."
+}

@@ -1,0 +1,37 @@
+{
+ "id": "bank-geo-348",
+ "question": "In right triangle $LMN$, the right angle is at $N$, $LM=40$, and $MN=24$. What is the value of $\\tan L$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     32,
+     0
+    ],
+    [
+     32,
+     24
+    ]
+   ],
+   "labels": [
+    "L",
+    "N",
+    "M"
+   ],
+   "sideLabels": [
+    "",
+    "24",
+    "40"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "3/4",
+ "explanation": "**SAT Pattern: Direct Trig Ratio**\n\n**The correct answer is $\\frac{3}{4}$.**\n\n**The Fast Way (~30s):** $\\overline{LM}=40$ is the hypotenuse, so $LN=\\sqrt{40^2-24^2}=32$. For angle $L$, opposite is $24$ and adjacent is $32$, giving $\\tan L=\\frac{24}{32}=\\frac{3}{4}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $N$, so $\\overline{LM}$ is the hypotenuse and $\\overline{MN}$ and $\\overline{LN}$ are the legs.\nStep 2: Tangent needs both legs, and only one is given, so find the other: $LN^2=40^2-24^2=1{,}600-576=1{,}024$, so $LN=32$.\nStep 3: Angle $L$ touches $\\overline{LN}$ and $\\overline{LM}$, so the leg opposite $L$ is $\\overline{MN}=24$ and the leg adjacent to $L$ is $\\overline{LN}=32$. Then $\\tan L=\\frac{24}{32}=\\frac{3}{4}$.\n\nCheck: $24$, $32$, $40$ is the $3$, $4$, $5$ triple scaled by $8$. $\\checkmark$\n\n**Common Mistakes:** Reporting $\\frac{3}{5}$ by dividing the opposite leg by the hypotenuse, $\\frac{24}{40}$, which is $\\sin L$ rather than $\\tan L$; reporting $\\frac{4}{3}$ by inverting the ratio, $\\frac{32}{24}$, which is the tangent of angle $M$; reporting $\\frac{4}{5}$ by using $\\frac{32}{40}$, which is $\\cos L$.\n\n**Test Day Takeaway:** Tangent needs the two legs, so when a hypotenuse is given instead, spend one Pythagorean step to recover the missing leg before writing the ratio."
+}

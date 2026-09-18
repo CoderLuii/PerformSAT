@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 1,
- "passage": "Archaeologist Linda Manzanilla, of the Universidad Nacional Autónoma de México, has spent decades reconstructing daily life in Teotihuacan, the largest pre-Columbian city in the Americas. Rather than focus on the city's monumental pyramids, she has concentrated on its dense residential neighborhoods, where ordinary residents lived in stone-walled apartment compounds. By comparing the chemical signatures preserved in teeth and bones with the regional geology of central Mexico, Manzanilla and her collaborators have shown that the people buried within a single compound often grew up in different parts of Mesoamerica before settling at Teotihuacan.",
- "question": "According to the text, what did the isotopic comparison conducted by Manzanilla and her collaborators reveal?",
+ "passage": "On La Gomera in the Canary Islands, shepherds have long communicated across deep ravines using Silbo Gomero, a whistled form of Spanish in which changes in pitch and melody stand in for the vowels and consonants of spoken words. Cognitive scientists wondered whether the brain treats such whistling as language or merely as sound. Brain-imaging studies offered an answer: when experienced whistlers listened to Silbo Gomero, regions of the brain associated with processing spoken language became active, but when Spanish speakers unfamiliar with the whistled form heard the same recordings, those language regions stayed comparatively quiet.",
+ "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "That Teotihuacan's apartment compounds were built closer to the city's pyramids than earlier archaeologists had assumed."
+   "text": "Brain-imaging research indicates that experienced users of a whistled language process it with the same brain regions used for spoken language."
   },
   {
    "id": "B",
-   "text": "That the people buried in Teotihuacan's compounds had eaten a diet markedly different from that of other Mesoamerican cities."
+   "text": "Silbo Gomero is the only whistled language whose structure is based on an existing spoken language."
   },
   {
    "id": "C",
-   "text": "That people buried within a single Teotihuacan compound had often grown up in different parts of Mesoamerica."
+   "text": "Shepherds on La Gomera developed Silbo Gomero because ordinary spoken Spanish cannot be heard clearly across the island's deep ravines and steep volcanic valleys."
   },
   {
    "id": "D",
-   "text": "That Teotihuacan's total population was larger than the populations of other pre-Columbian cities in the Americas."
+   "text": "People who do not know Silbo Gomero are unable to distinguish its whistles from ordinary environmental sounds."
   }
  ],
- "correctAnswer": "C",
- "explanation": "The correct answer is C. The passage states directly that, by matching the chemical signatures in teeth and bones to the geology of central Mexico, Manzanilla and her collaborators showed that people buried in one compound had often grown up in different regions of Mesoamerica. C restates that finding. A concerns where compounds were built, which the comparison does not address; B introduces a dietary contrast the passage never makes; and D shifts to total population size, a claim the isotopic work was not used to support."
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The imaging contrast answers the text's central question: experienced whistlers' brains treat Silbo Gomero as language.\n\n**The Full Solution:**\n- The text sets up a question — does the brain treat whistling as language or as mere sound?\n- The imaging contrast answers it: language-processing regions activate in experienced whistlers but stay comparatively quiet in unfamiliar listeners. Choice A states that finding.\n\n**Why the other choices are wrong:**\n- B: It makes a uniqueness claim the text never offers.\n- C: It turns background about ravines into a causal origin story the text does not tell; the ravines explain the whistling's usefulness, not the study's conclusion.\n- D: It exaggerates the comparison — reduced activation in language regions is not an inability to distinguish whistles from other sounds."
 }

@@ -1,0 +1,48 @@
+{
+  "id": "bank-ps-386",
+  "question": "The table gives the results of a stress test performed on $45$ machine parts. If one of these parts is selected at random, what is the probability that the selected part did not pass the test?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Result",
+        "Number of parts"
+      ],
+      "rows": [
+        [
+          "Passed",
+          "18"
+        ],
+        [
+          "Did not pass",
+          "27"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{5}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{2}{5}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{3}{5}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{2}{3}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the two counts, $27 - 18 = 9$, and divides by $45$",
+    "B": "gives the probability that the part did pass the test",
+    "D": "divides the passing count by the failing count, $\\frac{18}{27}$, instead of dividing by the total"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** $27$ of the $45$ parts did not pass, so the probability is $\\frac{27}{45} = \\frac{3}{5}$.\n\n**The Full Solution:**\nStep 1: Read the failing count from the table: $27$ parts did not pass, out of $45$ parts tested.\nStep 2: The probability is $\\frac{27}{45}$.\nStep 3: Divide numerator and denominator by $9$: $\\frac{27}{45} = \\frac{3}{5}$. Check: the passing probability is $\\frac{18}{45} = \\frac{2}{5}$, and $\\frac{2}{5} + \\frac{3}{5} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{5}$): subtracts the two counts, $27 - 18 = 9$, and divides by $45$\n* Choice B ($\\frac{2}{5}$): gives the probability that the part did pass the test\n* Choice D ($\\frac{2}{3}$): divides the passing count by the failing count, $\\frac{18}{27}$, instead of dividing by the total\n\n**Test Day Takeaway:** When a question asks for the complementary category, you can read that category's count straight from the table instead of subtracting."
+}

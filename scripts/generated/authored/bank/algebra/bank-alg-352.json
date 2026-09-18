@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-352",
+  "question": "The table shows the cost of each of two types of thermometers a clinic is ordering. The clinic has a budget of $\\$1{,}440$ and must order at least $150$ thermometers to qualify for a supplier discount. What is the greatest number of infrared thermometers the clinic can order?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Thermometer type",
+        "Cost each (dollars)"
+      ],
+      "rows": [
+        [
+          "Basic",
+          "6"
+        ],
+        [
+          "Infrared",
+          "22"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$33$"
+    },
+    {
+      "id": "B",
+      "text": "$34$"
+    },
+    {
+      "id": "C",
+      "text": "$65$"
+    },
+    {
+      "id": "D",
+      "text": "$90$"
+    }
+  ],
+  "correctAnswer": "A",
+  "distractorNotes": {
+    "B": "rounded 33.75 up, which exceeds the budget",
+    "C": "ignored the 150-unit minimum: 1440/22",
+    "D": "divided the whole budget by the price difference without paying for the 150 basic units"
+  },
+  "explanation": "**SAT Pattern: Inequality Word Problem (Floor)**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** Order exactly $150$. All basic costs $900$, leaving $540$. Each infrared upgrade costs $22 - 6 = 16$ more, so $540 \\div 16 = 33.75$, and the floor is $33$.\n\n**The Full Solution:**\nStep 1: Let $i$ be the number of infrared and $b$ the number of basic thermometers: $6b + 22i \\leq 1{,}440$ and $b + i \\geq 150$.\nStep 2: Set $b = 150 - i$ (extra basic units only spend budget): $6(150 - i) + 22i \\leq 1{,}440$, so $900 + 16i \\leq 1{,}440$ and $16i \\leq 540$.\nStep 3: $i \\leq 33.75$, so the greatest whole number is $33$.\nCheck: $117$ basic and $33$ infrared cost $702 + 726 = 1{,}428 \\leq 1{,}440$; $34$ infrared would cost $696 + 748 = 1{,}444$, over budget. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($34$): rounds $33.75$ up; the check above shows $34$ breaks the budget by $\\$4$.\n* Choice C ($65$): computes $1{,}440 \\div 22$, forgetting the $150$-unit minimum forces many basic units to be bought too.\n* Choice D ($90$): divides the entire budget by the $16$-dollar difference without first paying $900$ for the $150$ basic units.\n\n**Test Day Takeaway:** The leftover after buying the minimum at the cheap price is what funds upgrades; always round the upgrade count down and verify the total."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-160",
+  "question": "In the equation $x^2 + bx + 4 = 0$, $b$ is a constant and the equation has no real solutions. Which of the following describes all possible values of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-4 < b < 4$"
+    },
+    {
+      "id": "B",
+      "text": "$-2 < b < 2$"
+    },
+    {
+      "id": "C",
+      "text": "$b > 4$"
+    },
+    {
+      "id": "D",
+      "text": "$b < -4$ or $b > 4$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses $\\sqrt{c} = 2$ as the bound instead of $2\\sqrt{c} = 4$",
+    "C": "keeps only the positive half of the interval and reverses its direction",
+    "D": "solves $b^2 > 16$, the condition for two distinct real solutions"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** No real solutions means $b^2 < 4(1)(4) = 16$, which is $-4 < b < 4$.\n\n**The Full Solution:**\nStep 1: The discriminant is $b^2 - 4(1)(4) = b^2 - 16$.\nStep 2: No real solutions means $b^2 - 16 < 0$, so $b^2 < 16$.\nStep 3: Taking square roots of $b^2 < 16$ gives $|b| < 4$, which is the interval $-4 < b < 4$. Check: $b = 3$ gives $9 - 16 = -7 < 0$, and $b = -5$ gives $25 - 16 = 9 > 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: the bound $2$ comes from $\\sqrt{4}$; the discriminant needs $\\sqrt{4ac} = \\sqrt{16} = 4$.\n* Choice C: this keeps only values above $4$, which actually give two real solutions.\n* Choice D: this is the solution set of $b^2 > 16$, the two-solution case, not the no-solution case.\n\n**Test Day Takeaway:** $b^2 < k$ becomes a single interval around zero; $b^2 > k$ becomes two rays. Match the shape to the condition asked."
+}

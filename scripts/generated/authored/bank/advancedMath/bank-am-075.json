@@ -1,0 +1,29 @@
+{
+  "question": "In a lens calculation, $x$ and $k$ are positive constants and the quantity $\\dfrac{\\frac{1}{x}-\\frac{1}{k}}{\\frac{1}{x}+\\frac{1}{k}}$ appears in a correction term. Which of the following is equivalent to that quantity?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\dfrac{k+x}{k-x}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\dfrac{x-k}{x+k}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\dfrac{x+k}{x-k}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\dfrac{k-x}{k+x}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverted the simplified result, swapping numerator and denominator",
+    "B": "subtracted in the wrong order after clearing the small fractions, writing x - k over kx",
+    "C": "treated 1/x - 1/k as 1/(x-k) and 1/x + 1/k as 1/(x+k)"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Complex Fraction Simplification**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Multiply the numerator and the denominator by $kx$: the quantity becomes $\\dfrac{k-x}{k+x}$.\n\n**The Full Solution:**\nStep 1: The least common denominator of the four small fractions is $kx$.\nStep 2: Multiply top and bottom by $kx$: the top becomes $kx\\left(\\dfrac{1}{x}-\\dfrac{1}{k}\\right)=k-x$, and the bottom becomes $kx\\left(\\dfrac{1}{x}+\\dfrac{1}{k}\\right)=k+x$.\nStep 3: So the quantity equals $\\dfrac{k-x}{k+x}$. Check at $x=1$, $k=3$: $\\dfrac{1-\\frac{1}{3}}{1+\\frac{1}{3}}=\\dfrac{2/3}{4/3}=\\dfrac{1}{2}=\\dfrac{3-1}{3+1}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\dfrac{k+x}{k-x}$): inverts the simplified result.\n* Choice B ($\\dfrac{x-k}{x+k}$): subtracts in the wrong order after clearing the small fractions.\n* Choice C ($\\dfrac{x+k}{x-k}$): treats $\\dfrac{1}{x}-\\dfrac{1}{k}$ as $\\dfrac{1}{x-k}$ and $\\dfrac{1}{x}+\\dfrac{1}{k}$ as $\\dfrac{1}{x+k}$.\n\n**Test Day Takeaway:** Clear a complex fraction by multiplying top and bottom by the common denominator — never by combining the reciprocals term by term.",
+  "id": "bank-am-075"
+}

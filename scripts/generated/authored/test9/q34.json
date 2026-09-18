@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 2,
-  "passage": "For centuries, sailors could fix their latitude from the height of the sun and stars but had no dependable way to find their longitude, and ships often ran aground far from where their captains believed they were. The favored solution was astronomical: by measuring the moon's position against the fixed stars, a navigator might in principle read longitude from the sky. John Harrison, a self-taught clockmaker, pursued a different route. Reasoning that longitude was really a matter of time—each hour of difference from a home port marking fifteen degrees—he set out to build a timekeeper that could stay accurate through a ship's pitching, swings in temperature, and damp salt air. His fourth design, a large watch finished in 1759, lost only seconds on a long ocean voyage, showing that a portable clock, not the heavens, offered the surer answer.",
+  "passage": "For most of the nineteenth century, federal engineers held that confining the Mississippi between continuous levees would force the river to scour its own bed deeper, so that levees alone could contain any flood. The great flood of 1927 — when the river broke through in more than a hundred places and drove hundreds of thousands of people from their homes — ended the doctrine. Within a year, Congress had authorized a plan built on the opposite premise: the river would sometimes exceed any channel human beings could build for it, and engineered floodways would give the excess water somewhere safe to go.",
   "question": "Which choice best describes the overall structure of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "It explains how mechanical clocks were manufactured and then ranks several types of timekeeper by the accuracy each could reach on dry land."
-    },
-    {
-      "id": "B",
-      "text": "It argues that the astronomical method was, in the end, the most dependable way to determine longitude at sea."
-    },
-    {
-      "id": "C",
-      "text": "It contrasts Harrison's view of the longitude problem with the rival interpretation his own crew preferred."
-    },
-    {
-      "id": "D",
-      "text": "It lays out a longstanding problem, describes the solution most navigators favored, and then presents a different approach that proved more reliable."
-    }
+    { "id": "A", "text": "It describes a natural disaster and then evaluates several competing proposals for preventing its recurrence." },
+    { "id": "B", "text": "It presents two schools of engineering thought and argues that the older of the two has been unfairly dismissed." },
+    { "id": "C", "text": "It explains how a river's behavior changed gradually over the nineteenth century and how engineers adjusted their methods, step by step, in response to each change." },
+    { "id": "D", "text": "It states an engineering doctrine and its rationale, recounts the disaster that discredited the doctrine, and describes the opposing approach adopted in its place." }
   ],
   "correctAnswer": "D",
-  "explanation": "The passage opens with a problem that troubled sailors for centuries—no reliable way to find longitude—then describes the astronomical method most navigators favored, and finally turns to John Harrison's time-based approach and the sea trial that proved it more dependable. Choice D captures that problem-to-solution movement. Choice A recasts the text as an account of manufacturing and ranking, B endorses the astronomical method the passage treats as the lesser option, and C invents a dispute between Harrison and his crew that the text never mentions.",
-  "_meta": {
-    "anchor": "John Harrison and the longitude problem"
-  }
+  "explanation": "**Choice D is correct.** The three sentences perform exactly the three moves D names: the levees-only doctrine with its scouring rationale; the 1927 flood that \"ended the doctrine\"; and the replacement plan \"built on the opposite premise.\"\n\n**The Full Solution:**\n- Sentence one is doctrine plus rationale — confinement would deepen the bed, so levees alone would suffice.\n- Sentence two is the discrediting event, with its scale spelled out in the dash-set interruption.\n- Sentence three is the reversal: floodways that concede what the old doctrine denied.\n\n**Why the other choices are wrong:**\n- A: Only one plan follows the flood; no competing proposals are weighed against each other.\n- B: The text records the older doctrine's failure without defending it — no argument for rehabilitation appears.\n- C: The change described is abrupt, not gradual — a single flood reverses policy \"within a year\" — and it is the doctrine, not the river's behavior, that changes."
 }

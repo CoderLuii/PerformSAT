@@ -31,7 +31,7 @@ function sameSkills(a, b) {
 }
 
 /** Mirror PracticeTest's effectiveModules: swap in each section's easy variant on its easy route. */
-function reconstructServedModules(bundle, routeTaken, rwRoute) {
+export function reconstructServedModules(bundle, routeTaken, rwRoute) {
   if (!bundle || !Array.isArray(bundle.modules)) return null;
   let replaced = bundle.modules;
   if (routeTaken === 'easy' && bundle.module2Easy) {

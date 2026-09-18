@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-304",
+  "question": "The table gives the value of the polynomial function $p$ at three values of $x$. The function $q$ is defined by $q(x) = p(x) - 2x + 1$. What is the remainder when $q(x)$ is divided by $x - 3$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "p(x)"
+      ],
+      "rows": [
+        [
+          "-1",
+          "8"
+        ],
+        [
+          "1",
+          "-4"
+        ],
+        [
+          "3",
+          "5"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-5$"
+    },
+    {
+      "id": "B",
+      "text": "$0$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$11$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "evaluates q at x = 1",
+    "C": "assumes the subtraction leaves the remainder unchanged",
+    "D": "evaluates q at x = -1"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Polynomial Remainder Theorem**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The remainder is $q(3) = p(3) - 2(3) + 1$. The table gives $p(3) = 5$, so $q(3) = 5 - 6 + 1 = 0$.\n\n**The Full Solution:**\nStep 1: By the remainder theorem, dividing $q(x)$ by $x - 3$ leaves the remainder $q(3)$.\nStep 2: $q(3) = p(3) - 2(3) + 1 = p(3) - 5$.\nStep 3: The table's third row gives $p(3) = 5$, so $q(3) = 5 - 5 = 0$. Check: a remainder of $0$ means $x - 3$ divides $q(x)$ exactly, which is consistent with $q(3) = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-5$): evaluates $q$ at $x = 1$ instead of $x = 3$: $-4 - 2 + 1 = -5$.\n* Choice C ($5$): reports $p(3)$, assuming that subtracting $2x - 1$ leaves the remainder unchanged.\n* Choice D ($11$): evaluates $q$ at $x = -1$, using the sign of the divisor's constant: $8 + 2 + 1 = 11$.\n\n**Test Day Takeaway:** Dividing by $x - 3$ always asks for the value at $x = 3$ — pick the row the divisor names, then apply the rest of the definition."
+}

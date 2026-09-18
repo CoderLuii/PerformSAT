@@ -1,0 +1,36 @@
+{
+ "id": 11,
+ "question": "The figure shows a guy wire from a ground anchor at $A$ to the point $C$ on a utility pole that stands perpendicular to the ground at $B$. The wire is $58$ feet long, and $\\tan A = \\frac{20}{21}$. How many feet above the ground is point $C$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     42,
+     0
+    ],
+    [
+     42,
+     40
+    ]
+   ],
+   "labels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "58 ft"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "correctAnswer": "40",
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**The correct answer is $40$.**\n\n**The Fast Way (~30s):** $\\tan A = \\frac{20}{21}$ makes this a $20$-$21$-$29$ triangle; the wire, $58$, is $2 \\times 29$, so the height is $2 \\times 20 = 40$.\n\n**The Full Solution:**\nStep 1: In right triangle $ABC$ with the right angle at $B$, $\\tan A = \\frac{BC}{AB} = \\frac{20}{21}$, so the legs are in the ratio $20 : 21$. Write $BC = 20k$ and $AB = 21k$.\nStep 2: Apply the Pythagorean theorem: $(20k)^2 + (21k)^2 = 58^2$, so $400k^2 + 441k^2 = 3{,}364$ and $841k^2 = 3{,}364$. Then $k^2 = 4$ and $k = 2$.\nStep 3: Point $C$ sits $BC = 20(2) = 40$ feet above the ground. Check: $AB = 21(2) = 42$, and $40^2 + 42^2 = 1{,}600 + 1{,}764 = 3{,}364 = 58^2$.\n\n**Common Mistakes:**\n* $42$: computes $21k = 42$, the ground distance $\\overline{AB}$ from the anchor to the base of the pole. That is the side ADJACENT to angle $A$; the tangent's numerator names the opposite side, which is the vertical one.\n* $20$: reads the tangent's numerator as a length and never scales. The ratio $\\frac{20}{21}$ fixes only the shape of the triangle; the $58$-foot wire fixes its size, and here it doubles every side.\n* About $55.2$: computes $58 \\cdot \\frac{20}{21} \\approx 55.2$ by applying the tangent ratio to the hypotenuse. Tangent relates the two LEGS; a hypotenuse calls for sine or cosine, or for the Pythagorean theorem.\n\n**Test Day Takeaway:** A tangent value plus one length is a scaled Pythagorean triple. Name the legs $20k$ and $21k$, solve for $k$ once, and every side falls out."
+}

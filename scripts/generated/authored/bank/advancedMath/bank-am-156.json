@@ -1,0 +1,29 @@
+{
+  "question": "An engineer needs the equation $x^{2}+14x+k=0$ to have two different real solutions, where $k$ is an integer chosen as large as possible. Which value of $k$ should the engineer choose?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7$"
+    },
+    {
+      "id": "B",
+      "text": "$48$"
+    },
+    {
+      "id": "C",
+      "text": "$49$"
+    },
+    {
+      "id": "D",
+      "text": "$98$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "used k < b/2 = 7 instead of the discriminant condition",
+    "C": "the boundary value, which makes the discriminant 0 and gives exactly one solution",
+    "D": "used k < b squared over 2 = 98"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $196-4k>0$ gives $k<49$, so the largest integer is $48$.\n\n**The Full Solution:**\nStep 1: The discriminant is $14^{2}-4(1)(k)=196-4k$.\nStep 2: Two different real solutions require $196-4k>0$, so $4k<196$ and $k<49$.\nStep 3: The largest integer less than $49$ is $48$. Check: $k=48$ gives a discriminant of $196-192=4>0$, while $k=49$ gives $0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): uses $k<\\dfrac{b}{2}$ instead of the discriminant condition.\n* Choice C ($49$): the boundary value, which gives exactly one solution.\n* Choice D ($98$): uses $k<\\dfrac{b^{2}}{2}$.\n\n**Test Day Takeaway:** Solve the inequality first, then step one integer inside the boundary — the boundary itself always fails a strict inequality.",
+  "id": "bank-am-156"
+}

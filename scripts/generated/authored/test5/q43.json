@@ -1,34 +1,34 @@
 {
-  "id": 543,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 2,
-  "passage": "Keyboard instruments in the early Baroque period were often tuned in a system called meantone temperament, which makes the most common keys sound especially pure but leaves a few remote keys badly out of tune—so harsh that musicians nicknamed one interval the \"wolf.\" A composer writing for such an instrument therefore had a strong practical reason to keep to the keys the tuning favored. From this it follows that a Baroque keyboard piece that freely modulates into many remote keys ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "was most likely intended for an instrument tuned in some system other than strict meantone temperament."
-    },
-    {
-      "id": "B",
-      "text": "could have been performed in tune on any meantone-tuned keyboard instrument."
-    },
-    {
-      "id": "C",
-      "text": "must have been composed before meantone temperament came into common use."
-    },
-    {
-      "id": "D",
-      "text": "would have sounded especially pure precisely in those remote keys when played on a meantone-tuned instrument."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The premises are that meantone tuning makes remote keys harsh and that composers writing for meantone instruments had reason to avoid those keys. A piece that ranges freely into many remote keys would sound badly out of tune on a meantone instrument, so it was most likely written for a different tuning. Choice B contradicts the premise that remote keys sound harsh in meantone. Choice C makes an unsupported claim about the date. Choice D reverses the premise by claiming the remote keys would sound especially pure.",
-  "_meta": {
-    "anchor": "Meantone temperament; remote keys sound harsh, implying a different tuning"
+ "id": 543,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 2,
+ "passage": "Very young infants can distinguish consonant contrasts used in languages they have never heard: six-month-olds raised in English-speaking homes reliably discriminate pairs of Hindi consonants that their own parents hear as a single sound. By around twelve months, however, that ability recedes for contrasts absent from the language around them, even as their discrimination of native contrasts grows sharper. This developmental trajectory indicates that ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "infants start out with perceptual sensitivities broader than any single language requires, which experience then narrows and sharpens rather than creates."
+  },
+  {
+   "id": "B",
+   "text": "adults could recover the ability to hear nonnative contrasts with only minimal practice."
+  },
+  {
+   "id": "C",
+   "text": "twelve-month-olds perceive fewer distinctions among speech sounds of every kind than newborns do."
+  },
+  {
+   "id": "D",
+   "text": "the parents' inability to hear the Hindi contrasts was inherited by their infants at birth."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The infants' early success with foreign contrasts shows the sensitivity was present before relevant experience, and its later selective loss — paired with sharpening for native sounds — shows experience trimming and tuning an already-broad capacity.\n\n**The Full Solution:**\n- Premise one: at six months, infants discriminate contrasts their language never provided, so the ability cannot have been built by exposure.\n- Premise two: by twelve months the ability fades precisely for contrasts the ambient language lacks, while native discrimination improves.\n- The pattern — broad at the start, then pruned where unused and sharpened where used — is exactly what choice A concludes: experience narrows and refines initial sensitivities rather than creating them.\n\n**Why the other choices are wrong:**\n- B: The text says nothing about adults' capacity to relearn; the trajectory described ends at twelve months.\n- C: It overgeneralizes the loss — discrimination of native contrasts grows sharper, so not every distinction fades.\n- D: It is refuted by the data: the infants of those very parents heard the Hindi contrasts at six months, so the inability was not present at birth.",
+ "_meta": {
+  "anchor": "perceptual narrowing — nonnative contrast discrimination fading by twelve months"
+ }
 }

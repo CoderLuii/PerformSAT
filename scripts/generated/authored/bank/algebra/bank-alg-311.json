@@ -1,0 +1,6 @@
+{
+ "question": "A firmware build stores a constant $n$ that is chosen so that solving the equation $4(3x-n)=5x+12$ for $x$ returns the value of $n$ itself rather than any other number. What is the value of $n$ that the build must store?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Linear Equation with Distribution**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~45s):** Substituting $x=n$ gives $4(3n-n)=8n=5n+12$, so $3n=12$ and $n=4$.\n\n**The Full Solution:**\n\nStep 1: The solution is $x=n$, so replace every $x$ by $n$: $4(3n-n)=5n+12$.\n\nStep 2: Simplify inside the parentheses first: $3n-n=2n$, so the left side is $4(2n)=8n$.\n\nStep 3: Solve $8n=5n+12$: subtracting $5n$ gives $3n=12$, so $n=4$. Check: with $n=4$ the equation is $4(3x-4)=5x+12$, which gives $12x-16=5x+12$, $7x=28$, and $x=4=n$.\n\n**Common Mistakes:** Distributing before substituting and then losing the $-4n$ term gives $12n=5n+12$ and $n\\approx 1.7$. Solving $8n=5n+12$ as $8n-5n=12-0$ but then dividing by $8$ instead of $3$ gives $1.5$.\n\n**Test Day Takeaway:** When a problem says the solution equals a constant, substitute that constant for the variable everywhere and the equation collapses to one unknown.",
+ "id": "bank-alg-311"
+}

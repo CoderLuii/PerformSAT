@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "A pharmacy's filling machine flags a vial when $|2x + a| = 14$, where $x$ is the vial's fill volume in milliliters and $a$ is a constant. The machine flags vials with fill volumes of $4$ milliliters and $18$ milliliters. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-22$"
+  },
+  {
+   "id": "B",
+   "text": "$-8$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$22$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses the midpoint 11 of the two flagged volumes in 2x + a = 14, giving a = -8",
+  "C": "solves only the positive branch at x = 4, giving 8 + a = 14 and a = 6, which fails at x = 18",
+  "D": "uses the sum of the two flagged volumes, 4 + 18, without the negative sign"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** The two flagged volumes sit on opposite branches, so $2(4) + a = -14$ and $2(18) + a = 14$. Either one gives $a = -22$.\n\n**The Full Solution:**\nStep 1: An absolute-value equation $|2x + a| = 14$ has two solutions because the inside expression can equal $14$ or $-14$. The two flagged volumes are those two solutions, so one uses each branch.\nStep 2: The smaller volume goes with the negative branch: $2(4) + a = -14$, so $8 + a = -14$ and $a = -22$.\nStep 3: The larger volume must satisfy the other branch with the same constant: $2(18) - 22 = 36 - 22 = 14$. ✓ Check both at once: $|2(4) - 22| = |-14| = 14$ and $|2(18) - 22| = |14| = 14$, so both listed volumes are flagged and no others are.\n\n**Why the wrong answers are tempting:**\n* Choice B ($-8$): averages the two flagged volumes to $11$ and substitutes that into $2x + a = 14$. The midpoint is where the inside expression is $0$, not where it equals $14$ — with $a = -8$ the machine would flag $11$ and $-3$ milliliters.\n* Choice C ($6$): solves only the positive branch at $x = 4$. It makes that vial flag, but then $|2(18) + 6| = 42$, so the $18$-milliliter vial would not be flagged.\n* Choice D ($22$): gets the size right from $4 + 18$ but keeps it positive. With $a = 22$ the flagged volumes are $-4$ and $-18$ milliliters, which are not possible fill volumes.\n\n**Test Day Takeaway:** Two given solutions of one absolute-value equation always split across the two branches. Write one equation from each branch, solve, and then substitute back into BOTH — a constant that satisfies only one branch is a trap."
+}

@@ -40,6 +40,9 @@ const BANK_FILES = [
 // Cue patterns. Order matters — most specific first so we tag the right type.
 // `type` is the renderer that SHOULD be used.
 const CUES = [
+  // 2026-08-13: two phrasings that slipped past the original cue list
+  { re: /\bgraph\b[^.\n]{0,40}\bis shown\b/i, label: 'graph …is shown' },
+  { re: /\ba graph shows\b/i, label: 'a graph shows' },
   { type: 'boxPlot',     re: /\bbox[\s-]?plots?\b/i },
   { type: 'scatterplot', re: /\bscatter[\s-]?plots?\b/i },
   { type: 'scatterplot', re: /\bline of best fit\b/i },

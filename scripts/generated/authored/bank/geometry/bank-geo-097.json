@@ -1,0 +1,45 @@
+{
+ "id": "bank-geo-097",
+ "question": "A footbridge bracket plate has the shape drawn in the figure, with each corner's measure in degrees. Which of the following correctly orders the lengths of the plate's three sides?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "(x+10)°",
+    "(2x)°",
+    "(3x-40)°"
+   ],
+   "vertexLabels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$BC < AB < CA$"
+  },
+  {
+   "id": "B",
+   "text": "$AB < BC < CA$"
+  },
+  {
+   "id": "C",
+   "text": "$BC < CA < AB$"
+  },
+  {
+   "id": "D",
+   "text": "$CA < AB < BC$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "swaps the two shortest sides, pairing angle B with side AB",
+  "C": "swaps the two longest sides, pairing angle C with side CA",
+  "D": "reverses the whole order, matching the largest angle to the shortest side"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**Choice A is correct.**\n\n**The Fast Way (~50s):** $(x+10)+2x+(3x-40)=6x-30=180$ gives $x=35$, so the angles are $A=45^\\circ$, $B=70^\\circ$, $C=65^\\circ$; the sides opposite them rank $BC<AB<CA$.\n\n**The Full Solution:**\n\nStep 1 — Find $x$: $(x+10)+2x+(3x-40)=6x-30=180$, so $6x=210$ and $x=35$.\n\nStep 2 — Evaluate the angles: $\\angle A=35+10=45^\\circ$, $\\angle B=2(35)=70^\\circ$, and $\\angle C=3(35)-40=65^\\circ$. Check: $45+70+65=180$.\n\nStep 3 — In any triangle the longest side lies opposite the largest angle. Side $\\overline{BC}$ is opposite $\\angle A$, side $\\overline{CA}$ is opposite $\\angle B$, and side $\\overline{AB}$ is opposite $\\angle C$. Ordering the angles $45<65<70$ gives $BC<AB<CA$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($AB<BC<CA$): this pairs $\\angle B$ with side $\\overline{AB}$ instead of the side across from it.\n* Choice C ($BC<CA<AB$): this swaps the two longest sides, matching $\\angle C$ with $\\overline{CA}$.\n* Choice D ($CA<AB<BC$): this reverses the rule, putting the shortest side opposite the largest angle.\n\n**Test Day Takeaway:** Each side is named by the two letters that are not its opposite angle — write those pairings down before ranking anything."
+}

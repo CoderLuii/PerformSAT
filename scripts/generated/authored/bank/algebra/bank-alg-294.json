@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-294",
+ "question": "A mastering limiter clips at every input level $x$ that satisfies the equation $|ax + b| = 20$, where $a$ and $b$ are constants and $a > 0$. Clipping occurs at an input level of $-7$ and at an input level of $3$. What is the value of $ab$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$32$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports a rather than the product ab",
+  "B": "reports b rather than the product ab",
+  "C": "reports a + b instead of the product ab"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** With $a > 0$, the smaller level hits $-20$ and the larger hits $20$: $-7a + b = -20$ and $3a + b = 20$ give $a = 4$, $b = 8$, so $ab = 32$.\n\n**The Full Solution:**\nStep 1: Because $a > 0$, the expression $ax + b$ increases with $x$, so at $x = -7$ it equals $-20$ and at $x = 3$ it equals $20$.\nStep 2: Subtract the equations $-7a + b = -20$ and $3a + b = 20$: subtracting the first from the second gives $10a = 40$, so $a = 4$.\nStep 3: Then $3(4) + b = 20$ gives $b = 8$, so $ab = 4 \\times 8 = 32$. Check: $|4(-7) + 8| = |-20| = 20$ and $|4(3) + 8| = |20| = 20$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reports $a$ instead of the product $ab$.\n* Choice B ($8$): reports $b$ instead of the product $ab$.\n* Choice C ($12$): reports $a + b = 12$ instead of the product.\n\n**Test Day Takeaway:** Two given solutions of $|ax + b| = d$ give two linear equations — one branch each — and the sign of $a$ tells you which solution goes with which branch."
+}

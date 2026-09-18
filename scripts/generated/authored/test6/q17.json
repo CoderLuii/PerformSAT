@@ -6,26 +6,26 @@
   "band": 2,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
-  "passage": "The practice of cleaning surgical instruments and wounds with carbolic acid, introduced in operating rooms in the 1860s, did not remain a disputed novelty for ______ surgeons who adopted it watched their patients' infection rates fall sharply, and within a generation antiseptic routines had become a standard part of surgery across Europe.",
+  "passage": "The reflective road studs that outline traffic lanes after dark were devised in the 1930s to solve a stubborn problem: painted stripes all but vanish in rain and darkness. Each stud's glass lenses bounce headlight beams back toward the ______ each one also sits in a flexible rubber housing that dips below the road surface under a passing tire, wiping the lenses clean.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "long"
+      "text": "driver"
     },
     {
       "id": "B",
-      "text": "long, but"
+      "text": "driver, but"
     },
     {
       "id": "C",
-      "text": "long,"
+      "text": "driver,"
     },
     {
       "id": "D",
-      "text": "long;"
+      "text": "driver;"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"long;\". Both halves of the sentence are complete independent clauses: \"The practice . . . did not remain a disputed novelty for long\" and \"surgeons who adopted it watched their patients' infection rates fall sharply . . . .\" A semicolon correctly joins two such clauses. Choice C, a comma alone, creates a comma splice, and choice A, with no punctuation, fuses the two clauses into a run-on. Choice B adds the coordinating conjunction \"but,\" which signals a contrast; here the second clause explains why the practice did not stay disputed rather than opposing the first, so \"but\" misrepresents the logic."
+  "explanation": "**Choice D is correct.** Two independent clauses meet at the blank — \"Each stud's glass lenses bounce headlight beams back toward the driver\" and \"each one also sits in a flexible rubber housing...\" — and a semicolon is the conventional boundary between them.\n\n**The Full Solution:**\n- Test each side of the blank: both could stand alone as complete sentences.\n- Joining two independent clauses requires a semicolon, a period, or a comma plus a fitting coordinating conjunction; of the options, only the semicolon does the job cleanly.\n\n**Why the other choices are wrong:**\n- A: With no punctuation at all, the two complete clauses fuse into a run-on.\n- B: \"But\" is grammatical machinery with the wrong logic — the second clause adds a second feature (\"also\"), it doesn't contrast with the first.\n- C: A comma alone between two independent clauses is a comma splice."
 }

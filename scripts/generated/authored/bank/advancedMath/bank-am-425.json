@@ -1,0 +1,51 @@
+{
+ "id": "bank-am-425",
+ "question": "The graph shows $y=g(x)$, where the quadratic function $g$ models a docking radar's range error, in centimeters, at approach angle $x$ degrees. Which of the following must be true?\n\nI. $x+5$ is a factor of $g(x)$.\nII. $g(x)$ decreases as $x$ increases for $x<-2$.\nIII. The maximum value of $g$ is $-9$.",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": -2,
+    "k": -9
+   },
+   "a": 1,
+   "xRange": [
+    -6,
+    2
+   ],
+   "yRange": [
+    -10,
+    8
+   ],
+   "xTickInterval": 1,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showVertex": false
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "I only"
+  },
+  {
+   "id": "B",
+   "text": "I and II only"
+  },
+  {
+   "id": "C",
+   "text": "II and III only"
+  },
+  {
+   "id": "D",
+   "text": "I, II, and III"
+  }
+ ],
+ "distractorNotes": {
+  "A": "accepts the factor from the intercept at x = -5 but reads the branch left of the vertex as rising, rejecting II",
+  "C": "accepts III by reading the lowest point -9 as a maximum, and drops I after missing the intercept at x = -5",
+  "D": "accepts all three, including the false claim that the upward-opening parabola has a maximum of -9"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Quadratic Must-Be-True Statements**\n\n**Choice B is correct.**\n\n**The Fast Way (~50s):** The curve crosses the $x$-axis at $-5$ and $1$ and turns upward at $(-2,-9)$, so I and II hold while III names a minimum as a maximum.\n\n**The Full Solution:**\n\nStep 1: Statement I. The graph meets the $x$-axis at $x=-5$, so $g(-5)=0$ and $x-(-5)=x+5$ is a factor. I is true.\n\nStep 2: Statement II. The turning point sits at $x=-2$ and the parabola opens upward, so on the whole interval $x<-2$ the curve falls as $x$ increases. II is true.\n\nStep 3: Statement III. An upward-opening parabola has no maximum; $-9$ is the smallest value of $g$, not the largest. III is false, so exactly I and II must be true. Check: reading $x=-6$ and $x=2$ off the graph gives $g=7$ at both, values larger than $-9$, so $-9$ cannot be a maximum.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: keeps I but rejects II by reading the left branch as rising instead of falling.\n* Choice C: keeps the false statement III by calling the lowest point a maximum, and overlooks the intercept at $x=-5$ that makes I true.\n* Choice D: accepts every statement, including the claim that an upward-opening parabola has a maximum.\n\n**Test Day Takeaway:** On a must-be-true graph item, test each statement against a specific feature \u2014 an intercept, the turning point, the direction of opening \u2014 rather than against the picture as a whole."
+}

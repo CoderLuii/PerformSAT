@@ -6,29 +6,14 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 1,
-  "passage": "For decades, scholars knew the Moche of northern Peru chiefly through their ceramics and through tombs that looters had emptied, scattering artifacts without any record of how they had been arranged. ______ in 1987 the archaeologist Walter Alva excavated an intact royal tomb at Sipan, recovering gold and turquoise regalia in their original positions and letting researchers reconstruct Moche burial practice for the first time.",
+  "passage": "The ogham script, carved as short strokes along the edges of standing stones in early medieval Ireland, was once assumed to be a secret writing system legible only to a small learned elite. ______ the inscriptions themselves record little more than personal names and lines of descent — the sort of information a memorial or a boundary marker would be expected to announce to any passerby.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Likewise,"
-    },
-    {
-      "id": "B",
-      "text": "However,"
-    },
-    {
-      "id": "C",
-      "text": "Therefore,"
-    },
-    {
-      "id": "D",
-      "text": "For example,"
-    }
+    { "id": "A", "text": "For example," },
+    { "id": "B", "text": "However," },
+    { "id": "C", "text": "Meanwhile," },
+    { "id": "D", "text": "Similarly," }
   ],
   "correctAnswer": "B",
-  "explanation": "Before the blank, the Moche were known only through scattered, looted finds; after it, an intact tomb let researchers reconstruct burial practice. That reversal calls for a contrast transition, so \"However,\" choice B, is correct. \"Likewise\" and \"For example\" would signal similarity or illustration, and \"Therefore\" would claim the breakthrough followed logically from the earlier ignorance.",
-  "_meta": {
-    "anchor": "Walter Alva, Sipan royal tomb"
-  }
+  "explanation": "**Choice B is correct.** The second sentence pushes against the first: a script assumed to be secret turns out to record ordinary, public information. That reversal calls for the contrast transition \"However.\"\n\n**The Full Solution:**\n- Sentence one reports an old assumption — ogham as an elite code.\n- Sentence two presents evidence that undercuts it: the inscriptions carry names and lineages meant \"to announce to any passerby.\"\n- A claim followed by evidence against it is joined by a contrast word.\n\n**Why the other choices are wrong:**\n- A: \"For example\" would make the plain inscriptions an illustration of secrecy, when they are evidence against it.\n- C: \"Meanwhile\" signals simultaneous events, but no second timeline exists here.\n- D: \"Similarly\" promises agreement between the sentences, and the second exists to disagree with the first."
 }

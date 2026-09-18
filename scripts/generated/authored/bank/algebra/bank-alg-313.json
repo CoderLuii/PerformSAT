@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-313",
+ "question": "A block face is divided into three curb runs whose lengths, in meters, are $7x + 12$, $5x - 3$, and $2x + 6$. Their total is $14x + b$ meters, where $b$ is a constant. What is the value of $b$?",
+ "correctAnswer": "15",
+ "explanation": "**SAT Pattern: Combining Like Terms**\n\n**The correct answer is $15$.**\n\n**The Fast Way (~15s):** Only the constants matter for $b$: $12 - 3 + 6 = 15$.\n\n**The Full Solution:**\nStep 1: Add the three lengths: $(7x + 12) + (5x - 3) + (2x + 6)$.\nStep 2: Group like terms: the $x$-terms give $7x + 5x + 2x = 14x$, matching the stated $14x$.\nStep 3: The constants give $12 - 3 + 6 = 15$, so $b = 15$. Check: at $x = 1$ the runs measure $19$, $2$, and $8$ meters, totaling $29$, and $14(1) + 15 = 29$ ✓\n\n**Common Mistakes:** Answering $21$ adds $12 + 3 + 6$, treating the $-3$ as positive; answering $9$ computes $12 - 3$ and forgets the third run; answering $14$ reports the coefficient of $x$ instead of the constant.\n\n**Test Day Takeaway:** Combine like terms in two separate columns — variable terms and constants — so a subtraction sign in one column never leaks into the other."
+}

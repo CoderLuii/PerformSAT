@@ -6,29 +6,14 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 2,
-  "passage": "Born into slavery in Georgia around 1837, Harriet Powers made pictorial quilts that survive as some of the most celebrated examples of nineteenth-century American textile art. Two of her quilts are extant; on each, appliqued figures arranged in a grid of panels depict biblical episodes alongside recorded local events, such as a meteor shower and a dark day caused by distant forest fires. Powers narrated the meaning of each panel to the women who acquired the quilts, and those notes were written down, so the works survive with their maker's own account of what the figures represent. Scholars now read the quilts as deliberate visual storytelling that fused scripture, memory, and astronomical event into a single sewn record.",
+  "passage": "The windcatchers of Yazd do more than move air. In the courtyard houses of the city's historic quarter, each tall tower works as one part of an integrated cooling system: air drawn down the shaft passes over a pool or through a cellar, shedding heat by evaporation before it reaches the living quarters, while warmed air escapes through the courtyard, pulling a steady current through the house. Rooms at a tower's base stay usable through the hottest afternoons, and households traditionally reorganized daily life around those rooms each summer.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Powers, born into slavery in Georgia around 1837, learned her applique technique as a young woman and worked entirely within her region's folk-craft tradition."
-    },
-    {
-      "id": "B",
-      "text": "Powers made pictorial quilts whose appliqued panels combine biblical episodes with recorded local events and which survive with her own narrated account of their meaning."
-    },
-    {
-      "id": "C",
-      "text": "Two of Harriet Powers's pictorial quilts are still in existence in museum collections today."
-    },
-    {
-      "id": "D",
-      "text": "Powers's quilts depict a meteor shower and a dark day caused by distant forest fires."
-    }
+    { "id": "A", "text": "Windcatchers cool the houses of Yazd primarily by chilling the water that is stored in the pools and cellars that sit beneath the bases of the towers." },
+    { "id": "B", "text": "In Yazd's traditional houses, windcatchers operate as one element of a larger cooling system, and the comfort that system created shaped how the houses were used." },
+    { "id": "C", "text": "The tallest windcatchers in Yazd's historic quarter belonged to the households wealthy enough to build them." },
+    { "id": "D", "text": "Mechanical air-conditioning has now made the windcatchers of Yazd's historic quarter obsolete as cooling devices." }
   ],
   "correctAnswer": "B",
-  "explanation": "The passage's central point is that Powers's surviving quilts combine biblical scenes with recorded local events and come down to us with her own explanations of the panels. Choice B states that idea. Choice A adds unsupported claims about how she learned her craft, while C and D isolate single details—how many quilts survive, which events appear—without capturing the main point.",
-  "_meta": {
-    "anchor": "Harriet Powers, story quilts"
-  }
+  "explanation": "**Choice B is correct.** The text's two halves are the system and its consequences: the tower works with pools, cellars, and courtyard as \"an integrated cooling system,\" and the resulting cool rooms reorganized summer life. B joins both halves.\n\n**The Full Solution:**\n- The opening sentence announces the thesis — the towers \"do more than move air.\"\n- The middle sentence details the integration: shaft, evaporation, courtyard current.\n- The final sentence gives the human consequence, which B folds in: households arranged their days around the cooled rooms.\n\n**Why the other choices are wrong:**\n- A: It inverts the mechanism — the water cools the air by evaporation; the text never says the system exists to chill the water.\n- C: Tower height and household wealth are never discussed.\n- D: Modern air-conditioning appears nowhere in the text."
 }

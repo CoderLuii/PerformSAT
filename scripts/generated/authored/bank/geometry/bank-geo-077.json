@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-077",
+ "question": "How many feet of lumber does one shed-roof rafter require if it must span a $40$-foot horizontal run and a $9$-foot rise?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ],
+    [
+     40,
+     9
+    ]
+   ],
+   "sideLabels": [
+    "40 ft",
+    "9 ft",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$31$"
+  },
+  {
+   "id": "B",
+   "text": "$41$"
+  },
+  {
+   "id": "C",
+   "text": "$49$"
+  },
+  {
+   "id": "D",
+   "text": "$180$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "subtracts the two given lengths, 40 - 9, instead of combining their squares",
+  "C": "adds the run and the rise, 40 + 9, giving the two-leg path rather than the rafter",
+  "D": "computes the area, one half times 9 times 40, instead of a length"
+ },
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**Choice B is correct.** The rafter is the hypotenuse: $\\sqrt{9^2 + 40^2} = \\sqrt{1681} = 41$ feet.\n\n**The Fast Way (~20s):** $9$-$40$-$41$ is a Pythagorean triple, so the rafter is $41$ feet.\n\n**The Full Solution:**\n\nStep 1: The run and the rise meet at a right angle, so they are the legs of a right triangle whose hypotenuse is the rafter.\n\nStep 2: $9^2 + 40^2 = 81 + 1600 = 1681$.\n\nStep 3: The rafter measures $\\sqrt{1681} = 41$ feet. Check: $41 > 40$, as a hypotenuse must exceed each leg, and $41 < 49$, the two-leg path.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($31$): subtracts the lengths instead of combining their squares.\n* Choice C ($49$): adds the run and the rise, which is the path along both legs.\n* Choice D ($180$): computes the area $\\frac{1}{2}(9)(40)$ rather than a length.\n\n**Test Day Takeaway:** A hypotenuse always lands strictly between the longer leg and the sum of the legs — use that band to eliminate two choices before computing."
+}

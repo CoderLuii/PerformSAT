@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-309",
+ "question": "A rectangular access hatch is cut in half by the diagonal shown, forming a right triangle with a $37$-inch hypotenuse and a $12$-inch short leg. What is the area, in square inches, of the hatch?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     35,
+     0
+    ],
+    [
+     35,
+     12
+    ]
+   ],
+   "sideLabels": [
+    "",
+    "12 in",
+    "37 in"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$210$"
+  },
+  {
+   "id": "B",
+   "text": "$222$"
+  },
+  {
+   "id": "C",
+   "text": "$420$"
+  },
+  {
+   "id": "D",
+   "text": "$444$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the area of the half-hatch triangle, one half times 12 times 35",
+  "B": "uses the 37-inch diagonal as a side of the triangle: one half times 12 times 37",
+  "D": "multiplies 12 by the 37-inch diagonal instead of by the 35-inch side"
+ },
+ "explanation": "**SAT Pattern: Pythagorean Triple Recognition**\n\n**Choice C is correct.** The other leg is $\\sqrt{37^2 - 12^2} = 35$, so the hatch measures $12 \\times 35 = 420$ square inches.\n\n**The Fast Way (~30s):** $12$-$35$-$37$ is a triple, so the rectangle is $12$ by $35$ and its area is $420$.\n\n**The Full Solution:**\n\nStep 1: The diagonal of the rectangle is the hypotenuse of the right triangle, so the missing side satisfies $b^2 = 1369 - 144 = 1225$.\n\nStep 2: Therefore $b = 35$ inches, and the hatch is a $12$-by-$35$ rectangle.\n\nStep 3: Area $= 12 \\times 35 = 420$ square inches. Check: $12^2 + 35^2 = 144 + 1225 = 1369 = 37^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($210$): gives the area of the triangular half, $\\frac{1}{2}(12)(35)$, instead of the whole hatch.\n* Choice B ($222$): uses the diagonal as a side of the right triangle: $\\frac{1}{2}(12)(37)$.\n* Choice D ($444$): multiplies $12$ by the diagonal $37$ rather than by the side $35$.\n\n**Test Day Takeaway:** A rectangle's diagonal is the hypotenuse of two congruent right triangles — find the missing SIDE first, then answer for the shape the question names."
+}

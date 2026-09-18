@@ -1,41 +1,42 @@
 {
-  "id": 753,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 2,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Hilma af Klint (1862–1944) was a Swedish painter who trained at the Royal Academy of Fine Arts in Stockholm.",
-      "Standard histories of European abstract art credit Wassily Kandinsky and Piet Mondrian, working in the 1910s, as its earliest practitioners.",
-      "Af Klint produced large, fully abstract paintings as early as 1906, several years before those artists.",
-      "She kept most of these works private and asked that they not be exhibited until decades after her death.",
-      "A major 2013 exhibition and catalogue presented her as a pioneer of abstraction, prompting historians to reconsider the standard timeline."
-    ],
-    "goal": "The student wants to emphasize how renewed attention to af Klint has revised the accepted chronology of European abstraction."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Hilma af Klint (1862–1944) trained at the Royal Academy of Fine Arts in Stockholm before she eventually turned her attention to abstract painting."
-    },
-    {
-      "id": "B",
-      "text": "Af Klint deliberately kept most of her many abstract works entirely private and asked that they not be publicly exhibited until several full decades had passed after her own death."
-    },
-    {
-      "id": "C",
-      "text": "Standard histories of European abstract art still credit Kandinsky and Mondrian, both working in the 1910s, as the movement’s very earliest practitioners."
-    },
-    {
-      "id": "D",
-      "text": "Because af Klint produced fully abstract paintings as early as 1906, renewed attention to her work has pushed the accepted starting point of European abstraction back by several years, ahead of Kandinsky and Mondrian."
-    }
+ "id": 753,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 2,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Maria Sibylla Merian (1647-1717) was a German-born naturalist and artist.",
+   "In her lifetime, many European scholars still believed that insects arose spontaneously from mud or rotting matter.",
+   "Merian raised insects from the egg through every stage of life, painting caterpillars, cocoons, and adults together with the plants each species fed on.",
+   "In 1699 she traveled to Suriname and later published a pioneering illustrated study of its insects based on direct observation.",
+   "For two centuries after her death she was remembered mostly as a flower painter, and some of her observations were dismissed as fanciful.",
+   "Historians of science who have re-examined her books now identify her as a founder of the study of insect life cycles."
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The goal is to show how attention to af Klint revised the accepted chronology, and D links her 1906 abstractions to the result — the accepted starting point of European abstraction moves back several years, ahead of Kandinsky and Mondrian. Choice A gives only biographical background, and Choice B describes her decision to keep the works private without addressing the timeline. Choice C restates the standard chronology but omits the revision the goal calls for."
+  "goal": "The student wants to emphasize how renewed attention to Merian's work has changed her reputation."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Maria Sibylla Merian, a German-born naturalist and artist who lived from 1647 to 1717, patiently raised insects from the egg through every successive stage of their lives, painting them alongside the plants each species fed on."
+  },
+  {
+   "id": "B",
+   "text": "In Merian's lifetime, many European scholars still believed that insects arose spontaneously from mud or from rotting matter."
+  },
+  {
+   "id": "C",
+   "text": "In 1699 Merian traveled to Suriname, where she gathered the direct observations behind her pioneering illustrated study of the region's insects."
+  },
+  {
+   "id": "D",
+   "text": "Long remembered mostly as a flower painter, Merian is now identified by historians who have re-examined her books as a founder of the study of insect life cycles."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The goal is the change in Merian's reputation, and D is built on that change: the old standing (\"long remembered mostly as a flower painter\") set against the new one (\"now identified...as a founder of the study of insect life cycles\"), with the historians' re-examination as the cause.\n\n**The Full Solution:**\n- The goal requires a before, an after, and the renewed attention that connects them.\n- D supplies all three: the flower-painter reputation, the historians' re-examination of her books, and the founder status that resulted.\n- Its \"Long remembered...is now identified\" frame is the reputational turn itself.\n\n**Why the other choices are wrong:**\n- A: It details her methods and artistry but never mentions how she was regarded, then or now.\n- B: It describes her contemporaries' beliefs about insects, not anyone's view of Merian.\n- C: It reports the Suriname journey without touching either her long neglect or her modern reassessment."
 }

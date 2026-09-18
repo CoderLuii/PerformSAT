@@ -1,0 +1,6 @@
+{
+ "question": "A hydrophone at $(a, 6)$ in the $xy$-plane is equidistant from seabed markers at $(1, 2)$ and $(9, 14)$, both of which lie on the hydrophone's detection circle. What is the value of $a$?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~45s):** Equal radii give $(a - 1)^2 + 16 = (a - 9)^2 + 64$; expanding and cancelling $a^2$ leaves $16a = 128$, so $a = 8$.\n\n**The Full Solution:**\nStep 1: Both markers lie on the circle, so each is one radius from the center: $(a - 1)^2 + (6 - 2)^2 = (a - 9)^2 + (6 - 14)^2$.\nStep 2: Substitute the squares: $(a - 1)^2 + 16 = (a - 9)^2 + 64$, which expands to $a^2 - 2a + 17 = a^2 - 18a + 145$.\nStep 3: Cancel $a^2$ and solve: $16a = 128$, so $a = 8$. Check: from $(8, 6)$ the distance to $(1, 2)$ is $\\sqrt{49 + 16} = \\sqrt{65}$ and to $(9, 14)$ is $\\sqrt{1 + 64} = \\sqrt{65}$ ✓\n\n**Common Mistakes:**\n* $5$ — averages the markers' $x$-coordinates, which locates the midpoint rather than the center.\n* $4$ — drops the $(6 - 14)^2 = 64$ term and solves $16a = 64$.\n* $-8$ — moves the terms across with the wrong sign, solving $16a = -128$.\n\n**Test Day Takeaway:** Two points on one circle are equidistant from the center — set the two squared distances equal and the $a^2$ terms cancel.",
+ "id": "bank-geo-138"
+}

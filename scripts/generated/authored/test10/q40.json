@@ -6,40 +6,30 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
  "module": 2,
- "passage": "Climate scientists who synthesized observational records for the IPCC's Sixth Assessment Report (2021) tabulated annual precipitation changes between 1981 and 2020 across five latitudinal bands, expressed as percent change relative to a 1961-1990 baseline. A graduate student summarizing the table for a class presentation argued that, while it would be inaccurate to say that every band became wetter over the period, it is fair to say that the great majority of bands showed an increase in mean precipitation because _______",
+ "passage": "The finest teas are made from just the bud and first two leaves of each new shoot, a plucking standard that machines struggle to honor. An agronomist comparing harvest methods on a single estate recorded both how much leaf each method gathered and how much of it met the standard. The agronomist concludes that mechanical harvesting achieves its speed at the cost of selectivity because ______",
  "questionTable": {
   "type": "table",
-  "caption": "Observed annual precipitation change (% relative to 1961-1990) by latitudinal band, 1981-2020 (IPCC AR6 WG1, Chapter 8)",
+  "caption": "Harvest methods compared on one tea estate",
   "headers": [
-   "Latitudinal band",
-   "Change (%)",
-   "Confidence"
+   "Method",
+   "Leaf gathered per worker-hour (kg)",
+   "Shoots meeting two-leaves-and-a-bud standard (%)"
   ],
   "rows": [
    [
-    "60-90°N (high northern)",
-    "+8.2",
-    "high"
+    "Hand plucking",
+    "2",
+    "88"
    ],
    [
-    "30-60°N (mid northern)",
-    "+1.7",
-    "medium"
+    "Shear harvesting",
+    "9",
+    "61"
    ],
    [
-    "0-30°N (tropical northern)",
-    "-0.4",
-    "low"
-   ],
-   [
-    "0-30°S (tropical southern)",
-    "+1.1",
-    "medium"
-   ],
-   [
-    "30-60°S (mid southern)",
-    "+2.6",
-    "medium"
+    "Machine harvesting",
+    "26",
+    "34"
    ]
   ]
  },
@@ -47,21 +37,21 @@
  "choices": [
   {
    "id": "A",
-   "text": "the tropical northern band recorded a -0.4% change between 1981 and 2020, with that decrease assigned 'low' confidence by the synthesis team."
+   "text": "hand plucking gathered only 2 kilograms of leaf per worker-hour, the lowest rate among the three methods recorded."
   },
   {
    "id": "B",
-   "text": "four of the five latitudinal bands shown — high northern (+8.2%), mid northern (+1.7%), tropical southern (+1.1%), and mid southern (+2.6%) — recorded positive precipitation changes, while only the tropical northern band registered a small decrease (-0.4%)."
+   "text": "machine harvesting gathered thirteen times as much leaf per worker-hour as hand plucking but cut the share meeting the standard from 88 to 34 percent."
   },
   {
    "id": "C",
-   "text": "the high northern band recorded a +8.2% change between 1981 and 2020, the largest increase of any latitudinal band shown in the table."
+   "text": "shear harvesting, the intermediate method recorded, gathered 9 kilograms of leaf per worker-hour, of which 61 percent met the two-leaves-and-a-bud standard."
   },
   {
    "id": "D",
-   "text": "every latitudinal band shown in the table recorded a positive precipitation change, ranging from +1.1% in the tropical southern band to +8.2% in the high northern band."
+   "text": "the two-leaves-and-a-bud standard restricts fine teas to the youngest growth on each new shoot."
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The student's claim is carefully scoped: not every band became wetter, but the great majority did. Supporting it requires showing both that most bands increased and that not all did. Choice B enumerates the four bands with positive changes and pairs them with the single negative band, displaying exactly that majority-with-one-exception pattern. Choice A foregrounds only the lone decreasing band, which would point toward a mixed picture rather than a majority increase. Choice C cites only the largest single value, a magnitude claim rather than a count of bands. Choice D overstates the pattern by saying every band rose, which the tropical northern band's -0.4% contradicts."
+ "explanation": "**Choice B is correct.** The conclusion is a trade-off, speed bought with selectivity, so the completing evidence must cite both columns at the two extremes, which B does: thirteenfold speed (26 versus 2 kilograms) against a collapse in standard-meeting shoots (88 to 34 percent).\n\n**The Full Solution:**\n- \"Speed at the cost of selectivity\" requires two linked comparisons: machine harvesting faster than hand plucking, and machine harvesting less selective.\n- From the table: 26 versus 2 kilograms per worker-hour, and 34 versus 88 percent meeting the standard. B pairs exactly these figures.\n\n**Why the other choices are wrong:**\n- A: It reads the speed column alone, and from the wrong direction, saying nothing about what speed cost.\n- C: The middle method's figures, cited without any comparison, establish neither the speed gain nor the selectivity loss.\n- D: It paraphrases the plucking standard from the passage and uses no data from the table at all."
 }

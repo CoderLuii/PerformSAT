@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-391",
+  "question": "Of the $850$ attendees at a conference, $60\\%$ registered before the deadline. Of the attendees who registered before the deadline, $x\\%$ attended the opening session. If $306$ attendees who registered before the deadline attended the opening session, what is the value of $x$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36$"
+    },
+    {
+      "id": "B",
+      "text": "$40$"
+    },
+    {
+      "id": "C",
+      "text": "$60$"
+    },
+    {
+      "id": "D",
+      "text": "$90$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides $306$ by all $850$ attendees instead of by the $510$ early registrants",
+    "B": "reports $100 - 60$, the percent who registered after the deadline",
+    "D": "divides $306$ by $340$, the number who did not register early"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Early registrants: $0.60(850) = 510$. Then $\\frac{306}{510} = 0.6$, so $x = 60$.\n\n**The Full Solution:**\nStep 1: The early registrants number $0.60(850) = 510$.\nStep 2: The $306$ attendees described are a part of that subgroup, so $\\frac{x}{100} = \\frac{306}{510}$.\nStep 3: $\\frac{306}{510} = 0.6$, so $x = 60$. Check: $0.60(510) = 306$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($36$): divides $306$ by all $850$ attendees instead of by the $510$ early registrants\n* Choice B ($40$): reports $100 - 60$, the percent who registered after the deadline\n* Choice D ($90$): divides $306$ by $340$, the number who did not register early\n\n**Test Day Takeaway:** When a count is described as a percent \"of those who...\", the denominator is that subgroup, not the whole population."
+}

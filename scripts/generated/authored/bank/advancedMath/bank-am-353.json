@@ -1,0 +1,29 @@
+{
+  "question": "As the positive integer $b$ increases from $1$, the equation $x^{2}+bx+45=0$ first gains two different real solutions at one value of $b$. What is that value?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7$"
+    },
+    {
+      "id": "B",
+      "text": "$13$"
+    },
+    {
+      "id": "C",
+      "text": "$14$"
+    },
+    {
+      "id": "D",
+      "text": "$90$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "used b > square root of 45, omitting the factor 4 in 4ac",
+    "B": "rounded the square root of 180, about 13.42, down instead of up",
+    "D": "used b > 2c = 90"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $b^{2}>180$ and $13^{2}=169$ is too small, so the smallest integer is $14$.\n\n**The Full Solution:**\nStep 1: The discriminant is $b^{2}-4(1)(45)=b^{2}-180$.\nStep 2: Two different real solutions require $b^{2}>180$, so $b>\\sqrt{180}\\approx 13.42$.\nStep 3: The smallest positive integer greater than $13.42$ is $14$. Check: $b=14$ gives $196-180=16>0$, while $b=13$ gives $169-180=-11<0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): uses $b>\\sqrt{45}$, omitting the factor $4$ in $4ac$.\n* Choice B ($13$): rounds $\\sqrt{180}\\approx 13.42$ down instead of up.\n* Choice D ($90$): uses $b>2c$.\n\n**Test Day Takeaway:** When the bound is an irrational square root, test the two neighboring integers rather than rounding by habit.",
+  "id": "bank-am-353"
+}

@@ -1,0 +1,6 @@
+{
+ "question": "A calibration routine outputs $m(2v+5)-3v$ and a reference channel outputs $(m+2)v+25$, where $m$ is a constant and $v$ is the input voltage. If the two outputs agree for every value of $v$, what is the value of $m$?",
+ "correctAnswer": "5",
+ "explanation": "**SAT Pattern: Identifying Identity / Contradiction Equations**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~45s):** Written in the form $(\\ )v+(\\ )$, the outputs are $(2m-3)v+5m$ and $(m+2)v+25$. Matching the $v$ coefficients gives $2m-3=m+2$, so $m=5$.\n\n**The Full Solution:**\n\nStep 1: Expand the first output: $m(2v+5)-3v=2mv+5m-3v=(2m-3)v+5m$.\n\nStep 2: Two expressions agree for every $v$ only when their $v$ coefficients match and their constants match. Setting $2m-3=m+2$ gives $m=5$.\n\nStep 3: Confirm with the constants: $5m=25$ also gives $m=5$, so both conditions hold. Check: at $m=5$ the outputs are $7v+25$ and $7v+25$, identical for every $v$.\n\n**Common Mistakes:** Distributing $m$ to only the $2v$ term produces $(2m-3)v+5$, whose constant condition $5=25$ is false and suggests no such $m$ exists. Solving $2m-3=m+2$ as $2m-m=2-3$ gives $m=-1$, which fails the constant check.\n\n**Test Day Takeaway:** For two expressions to agree at every input, both the variable coefficients and the constants must match — check both before answering.",
+ "id": "bank-alg-287"
+}

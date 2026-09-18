@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-062",
+  "question": "The mean mass of $6$ pumpkins is $8.5$ kilograms. The pumpkin with the greatest mass, $12$ kilograms, is removed from the group. What is the mean mass, in kilograms, of the remaining $5$ pumpkins?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6.5$"
+    },
+    {
+      "id": "B",
+      "text": "$7.8$"
+    },
+    {
+      "id": "C",
+      "text": "$8.5$"
+    },
+    {
+      "id": "D",
+      "text": "$10.2$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts 12 but divides by the original count of 6 (39/6)",
+    "C": "assumes the mean is unchanged after removal",
+    "D": "divides the original total by 5 without removing the 12 (51/5)"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Mean After Removal**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Total mass $= 6(8.5) = 51$ kilograms. Remove $12$: $51 - 12 = 39$, and $\\frac{39}{5} = 7.8$.\n\n**The Full Solution:**\nStep 1: A mean times a count gives a total: the $6$ pumpkins have a combined mass of $6 \\times 8.5 = 51$ kilograms.\nStep 2: Removing the $12$-kilogram pumpkin leaves a combined mass of $51 - 12 = 39$ kilograms shared by $5$ pumpkins.\nStep 3: New mean $= \\frac{39}{5} = 7.8$ kilograms. Check: $5(7.8) + 12 = 39 + 12 = 51 = 6(8.5)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6.5$): subtracts the $12$ kilograms but still divides by the original $6$ pumpkins, $\\frac{39}{6} = 6.5$.\n* Choice C ($8.5$): assumes the mean is unchanged; removing a value above the mean must pull the mean down.\n* Choice D ($10.2$): divides the ORIGINAL total by the new count, $\\frac{51}{5} = 10.2$, forgetting to remove the $12$ kilograms.\n\n**Test Day Takeaway:** Work through the total: mean $\\times$ count, adjust the total, then divide by the NEW count."
+}

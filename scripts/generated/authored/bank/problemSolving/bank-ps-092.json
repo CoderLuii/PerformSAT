@@ -1,0 +1,6 @@
+{
+ "id": "bank-ps-092",
+ "question": "A random sample of $250$ trees in a state forest was selected. Based on the sample, it is estimated that $0.38$ of all the trees in the forest are oaks, with an associated margin of error of $0.05$. What is the greatest value in the interval of plausible values for the proportion of all the trees in the forest that are oaks?",
+ "correctAnswer": "0.43",
+ "explanation": "**SAT Pattern: Margin of Error**\n\n**The correct answer is $0.43$.**\n\n**The Fast Way (~10s):** The greatest plausible value is the estimate plus the margin of error: $0.38+0.05=0.43$.\n\n**The Full Solution:**\nStep 1: An estimate with a margin of error gives an interval of plausible values, estimate $\\pm$ margin of error.\nStep 2: The interval runs from $0.38-0.05=0.33$ to $0.38+0.05=0.43$.\nStep 3: The question asks for the greatest plausible value, which is $0.43$.\nCheck: the interval is $0.10$ wide, twice the margin of error. $\\checkmark$\n\n**Common Mistakes:** Reporting $0.33$, the least plausible value; reporting the estimate $0.38$ and ignoring the margin of error; adding the full width of the interval, $2(0.05)$, which gives $0.48$.\n\n**Test Day Takeaway:** Margin of error is added and subtracted once each; the interval's width is twice the margin of error."
+}

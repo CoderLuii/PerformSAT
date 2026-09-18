@@ -105,8 +105,31 @@ describe('R&W Module 2 Easy variants', () => {
     describe(t.id, () => {
       const qs = t.rwModule2Easy?.questions || [];
 
-      it('follows the official module blueprint order', () => {
-        expect(qs.map(q => q.skill)).toEqual(BLUEPRINT_SKILLS);
+      // 2026-09-07: the exact 27-slot order is no longer pinned — every module
+      // used to share one seating chart, so students learned it. Items are now
+      // re-dealt inside their official skill BLOCKS per test
+      // (scripts/varyRWSeating.mjs). What stays invariant: the per-skill
+      // counts and the official block flow (vocab first, notes last).
+      it('keeps the official blueprint counts and block flow', () => {
+        const counts = {};
+        qs.forEach(q => { counts[q.skill] = (counts[q.skill] || 0) + 1; });
+        const want = {};
+        BLUEPRINT_SKILLS.forEach(s => { want[s] = (want[s] || 0) + 1; });
+        expect(counts).toEqual(want);
+        const BLOCK = {
+          'words-in-context': 0,
+          'text-structure-and-purpose': 1, 'cross-text-connections': 1,
+          'central-ideas-and-details': 2, 'command-of-evidence-textual': 2, 'command-of-evidence-quantitative': 2, 'inferences': 2,
+          boundaries: 3, 'form-structure-and-sense': 3,
+          transitions: 4,
+          'rhetorical-synthesis': 5,
+        };
+        const blocks = qs.map(q => BLOCK[q.skill]);
+        blocks.forEach((b, i) => { if (i > 0) expect(b).toBeGreaterThanOrEqual(blocks[i - 1]); });
+        expect(qs.slice(0, 4).every(q => q.skill === 'words-in-context')).toBe(true);
+        expect(qs[8].skill).toBe('central-ideas-and-details');
+        expect(qs[15].skill).toBe('inferences');
+        expect(qs.slice(25).every(q => q.skill === 'rhetorical-synthesis')).toBe(true);
       });
 
       it('has the easy difficulty mix (8E/16M/3H)', () => {
@@ -126,11 +149,12 @@ describe('R&W Module 2 Easy variants', () => {
       });
 
       it('special stimulus shapes are present', () => {
-        expect(Array.isArray(qs[7]?.passages)).toBe(true);   // cross-text
-        expect(qs[12]?.questionTable).toBeTruthy();           // COE-quantitative
-        expect(qs[13]?.questionTable).toBeTruthy();
-        expect(qs[25]?.studentNotes?.bullets?.length).toBeGreaterThanOrEqual(5);
-        expect(qs[26]?.studentNotes?.goal).toBeTruthy();      // rhetorical synthesis
+        const bySkill = (s) => qs.filter(q => q.skill === s);
+        expect(bySkill('cross-text-connections').every(q => Array.isArray(q.passages))).toBe(true);
+        expect(bySkill('command-of-evidence-quantitative').every(q => q.questionTable)).toBe(true);
+        const rs = bySkill('rhetorical-synthesis');
+        expect(rs.every(q => (q.studentNotes?.bullets?.length || 0) >= 5)).toBe(true);
+        expect(rs.every(q => q.studentNotes?.goal)).toBe(true);
       });
     });
   });

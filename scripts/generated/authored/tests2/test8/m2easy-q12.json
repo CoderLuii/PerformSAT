@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A sterilizer divides a bacterial count by $25$ every hour, so the fraction surviving after $x$ hours is $\\left(\\dfrac{1}{25}\\right)^{x}$. A technician rewrites that fraction as $5^{kx}$, an equation that holds for every value of $x$. What is the value of the constant $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\dfrac{1}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{1}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$2$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "keeps the negative from the reciprocal but inverts the exponent, using 25 = 5^(1/2) instead of 5^2",
+  "C": "inverts the exponent and drops the negative, reading the reciprocal as a fractional exponent",
+  "D": "rewrites 25 as 5 squared but ignores the reciprocal, leaving the exponent positive"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** $\\frac{1}{25} = 5^{-2}$, so $\\left(\\frac{1}{25}\\right)^{x} = 5^{-2x}$ and $k = -2$.\n\n**The Full Solution:**\nStep 1: Write both sides with the same base. Since $25 = 5^2$, the reciprocal is $\\frac{1}{25} = 5^{-2}$.\nStep 2: Raise that to the $x$: $\\left(5^{-2}\\right)^{x} = 5^{-2x}$, using the rule that a power of a power multiplies the exponents.\nStep 3: The equation $5^{-2x} = 5^{kx}$ holds for every $x$ only if the exponents match, so $kx = -2x$ and $k = -2$. Check at $x = 3$: $\\left(\\frac{1}{25}\\right)^{3} = \\frac{1}{15{,}625}$ and $5^{-6} = \\frac{1}{15{,}625}$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-\\frac{1}{2}$): keeps the negative sign that the reciprocal creates but inverts the exponent, as if $25 = 5^{1/2}$. In fact $5^{1/2} = \\sqrt{5}$, not $25$.\n* Choice C ($\\frac{1}{2}$): makes the same exponent slip and also drops the negative, so the surviving fraction would GROW with time.\n* Choice D ($2$): rewrites $25$ as $5^2$ correctly but forgets the reciprocal. That would say the count multiplies by $25$ each hour instead of dividing by it.\n\n**Test Day Takeaway:** A reciprocal is a negative exponent. Rewrite the base first ($\\frac{1}{25} = 5^{-2}$), then multiply exponents — and sanity check the sign against whether the quantity should grow or shrink."
+}

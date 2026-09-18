@@ -1,0 +1,53 @@
+{
+  "id": "bank-ps-258",
+  "question": "A museum's collection contains $1{,}500$ artifacts. The table gives the percent of the collection in each category. If $12\\%$ of the pottery artifacts are currently on display, how many pottery artifacts are currently not on display?",
+  "questionTable": {
+    "headers": [
+      "Category",
+      "Percent of collection"
+    ],
+    "rows": [
+      [
+        "Pottery",
+        "30%"
+      ],
+      [
+        "Tools",
+        "25%"
+      ],
+      [
+        "Textiles",
+        "20%"
+      ],
+      [
+        "Coins",
+        "25%"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$54$"
+    },
+    {
+      "id": "B",
+      "text": "$396$"
+    },
+    {
+      "id": "C",
+      "text": "$450$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}320$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the pottery artifacts that ARE on display (12% of 450)",
+    "C": "reports all pottery artifacts, never applying the display condition",
+    "D": "applies the 88% not-on-display rate to the whole collection instead of to pottery"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compound Percent Of**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Pottery is $30\\%$ of $1{,}500$, or $450$ artifacts. If $12\\%$ are on display, $88\\%$ are not: $0.88 \\times 450 = 396$.\n\n**The Full Solution:**\nStep 1: From the table, pottery is $30\\%$ of the collection: $0.30 \\times 1{,}500 = 450$ pottery artifacts.\nStep 2: The $12\\%$ applies to pottery only. On display: $0.12 \\times 450 = 54$.\nStep 3: Not on display: $450 - 54 = 396$. Check: $0.88 \\times 450 = 396$, and $54 + 396 = 450$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($54$): this is the number of pottery artifacts on display; the question asks for those not on display.\n* Choice C ($450$): the total number of pottery artifacts, which ignores the display condition entirely.\n* Choice D ($1{,}320$): $0.88 \\times 1{,}500$ applies the complement to the entire collection, but the $12\\%$ was stated for pottery alone.\n\n**Test Day Takeaway:** Read a table percent as a percent of the stated whole, then apply any later percent to that smaller group; \"not\" means use the complement of the last percent."
+}

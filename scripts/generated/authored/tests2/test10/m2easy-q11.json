@@ -1,0 +1,25 @@
+{
+ "id": 11,
+ "question": "The coordinate plane shows the moorings of two ocean buoys, where each unit represents one kilometer. A cable runs straight from one mooring to the other. How many kilometers long is the cable?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     2,
+     2
+    ],
+    [
+     10,
+     8
+    ]
+   ],
+   "xMin": 0,
+   "xMax": 12,
+   "yMin": 0,
+   "yMax": 12
+  }
+ },
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Distance Formula**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~15s):** The moorings are $8$ units apart horizontally and $6$ vertically, and $6$-$8$-$10$ is a right-triangle triple, so the cable is $10$ kilometers.\n\n**The Full Solution:**\nStep 1: Read the plotted points: $(2, 2)$ and $(10, 8)$.\nStep 2: The distance formula gives $d = \\sqrt{(10 - 2)^2 + (8 - 2)^2} = \\sqrt{8^2 + 6^2}$.\nStep 3: $\\sqrt{64 + 36} = \\sqrt{100} = 10$ kilometers. Check on the grid: going $8$ units right and $6$ units up from $(2, 2)$ lands exactly on $(10, 8)$, and those legs make a $6$-$8$-$10$ right triangle. $\\checkmark$\n\n**Common Mistakes:** Entering $8$ (using only the horizontal separation); entering $6$ (using only the vertical separation); entering $14$ (adding the two separations instead of using the Pythagorean relationship); entering $100$ (stopping at the sum of the squares and forgetting the square root).\n\n**Test Day Takeaway:** Two plotted points make the legs of a right triangle. Count the horizontal and vertical gaps, then take the square root of the sum of their squares — and watch for the familiar $3$-$4$-$5$ family."
+}

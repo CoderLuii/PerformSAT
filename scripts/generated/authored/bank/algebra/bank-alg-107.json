@@ -1,0 +1,6 @@
+{
+ "question": "The total rise of a stairwell, in inches, is $63$ after $9$ treads and $105$ after $15$ treads, and the rise increases linearly with the number of treads. What is the rise, in inches, per tread?",
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Line from Two Points**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~20s):** The rise per tread is the slope through $(9,63)$ and $(15,105)$: $\\frac{105-63}{15-9}=\\frac{42}{6}=7$ inches.\n\n**The Full Solution:**\n\nStep 1: Write the two measurements as points, with treads as the input: $(9,63)$ and $(15,105)$.\n\nStep 2: The rise per tread is the change in total rise divided by the change in tread count: $\\frac{105-63}{15-9}$.\n\nStep 3: That is $\\frac{42}{6}=7$ inches per tread. Check: $9$ treads at $7$ inches gives $63$ inches, and $15$ treads gives $105$ inches, both matching.\n\n**Common Mistakes:** Reporting $42$ gives the change in total rise over six treads, not the rise of a single tread. Dividing $42$ by $15$ instead of by the gap $15-9$ gives about $2.8$ inches, far below a usable riser height.\n\n**Test Day Takeaway:** A per-unit rate from two measurements is always the difference in outputs divided by the difference in inputs, never by one input alone.",
+ "id": "bank-alg-107"
+}

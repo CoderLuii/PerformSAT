@@ -1,0 +1,69 @@
+{
+  "id": "bank-ps-084",
+  "question": "For each of $9$ summer days, the scatterplot pairs a county's average daily temperature, in degrees Fahrenheit, with the number of heat-related emergency calls the county recorded that day. The line of best fit is $y = 1.5x - 96$. What is the residual, in calls, for the day whose average temperature was $92$ degrees Fahrenheit?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          76,
+          20
+        ],
+        [
+          78,
+          19
+        ],
+        [
+          82,
+          29
+        ],
+        [
+          84,
+          28
+        ],
+        [
+          86,
+          35
+        ],
+        [
+          88,
+          35
+        ],
+        [
+          90,
+          41
+        ],
+        [
+          92,
+          47
+        ],
+        [
+          94,
+          44
+        ]
+      ],
+      "xMin": 76,
+      "xMax": 96,
+      "yMin": 0,
+      "yMax": 60,
+      "xGridStep": 2,
+      "xLabelStep": 4,
+      "yGridStep": 5,
+      "yLabelStep": 10,
+      "xLabel": "Average daily temperature (degrees F)",
+      "yLabel": "Heat-related emergency calls",
+      "bestFitLine": {
+        "slope": 1.5,
+        "intercept": -96
+      },
+      "highlightPoint": [
+        92,
+        47
+      ],
+      "highlightLabel": "(92, 47)",
+      "showResidual": true
+    }
+  },
+  "correctAnswer": "5",
+  "explanation": "**SAT Pattern: Residual**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~15s):** The line predicts $1.5(92) - 96 = 42$ calls, the plotted point is at $47$, and $47 - 42 = 5$.\n\n**The Full Solution:**\nStep 1: Predict. Substitute $x = 92$ into $y = 1.5x - 96$: $1.5(92) = 138$, and $138 - 96 = 42$ calls.\nStep 2: Read the actual value. The plotted point for $92$ degrees sits at $47$ calls.\nStep 3: Subtract in the right order. Residual $=$ actual $-$ predicted $= 47 - 42 = 5$. The point sits above the line, so a positive residual is what we expect. ✓\n\n**Common Mistakes:**\n* Subtracting the other way gives $42 - 47 = -5$; a residual is always actual minus predicted.\n* Reading the line instead of the point gives $42$, the prediction rather than the residual.\n* Multiplying before subtracting incorrectly — $1.5(92 - 96) = -6$ — comes from putting the $-96$ inside the parentheses.\n\n**Test Day Takeaway:** Residual $=$ actual $-$ predicted. Compute the prediction from the equation, read the actual value off the plot, then subtract in that order."
+}

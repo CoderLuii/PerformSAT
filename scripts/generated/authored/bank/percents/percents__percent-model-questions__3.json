@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "A field technician receives a bonus equal to $4\\%$ of the value of the equipment she installs. In one quarter her bonus was $\\$1{,}380$. What was the value, in dollars, of the equipment she installed that quarter?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$55.20$"
+    },
+    {
+      "id": "B",
+      "text": "$3{,}450$"
+    },
+    {
+      "id": "C",
+      "text": "$5{,}520$"
+    },
+    {
+      "id": "D",
+      "text": "$34{,}500$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies instead of dividing",
+    "B": "divides by 0.4",
+    "C": "multiplies by 4"
+  },
+  "correctAnswer": "D",
+  "hint": "The bonus is a small part of a large whole, so the answer must be much larger than the bonus.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~25s):** $1{,}380 \\div 0.04 = 34{,}500$.\n\n**The Full Solution:**\nStep 1: Let $v$ be the value of the equipment installed. The bonus statement gives $0.04v = 1{,}380$.\nStep 2: Divide both sides by $0.04$: $v = \\frac{1{,}380}{0.04} = 34{,}500$.\nStep 3: The equipment was worth $\\$34{,}500$. Check: $4\\%$ of $34{,}500$ is $0.04 \\times 34{,}500 = 1{,}380$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($55.20$): multiplies the bonus by $0.04$ instead of dividing by it.\n* Choice B ($3{,}450$): divides by $0.4$ rather than $0.04$, misplacing the decimal point.\n* Choice C ($5{,}520$): multiplies the bonus by $4$, treating the percent as a whole-number factor.\n\n**Test Day Takeaway:** A part that is only a few percent of the whole means the whole is many times larger — check the order of magnitude before choosing."
+}

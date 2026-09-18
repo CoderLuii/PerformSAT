@@ -1,0 +1,29 @@
+{
+  "id": 17,
+  "question": "A family phone plan's monthly rate was reduced by $12\\%$, and a fixed $\\$9.50$ device-support fee was then added to the reduced rate, giving a monthly charge of $\\$255.90$ for the first full month at the new rate. Which expression gives the plan's monthly rate, in dollars, before the reduction?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\dfrac{255.90 - 9.50}{1.12}$"
+    },
+    {
+      "id": "B",
+      "text": "$1.12(255.90 - 9.50)$"
+    },
+    {
+      "id": "C",
+      "text": "$\\dfrac{255.90 - 9.50}{0.88}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\dfrac{255.90 + 9.50}{0.88}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by 1.12, as if the reduced rate were 12 percent above the original rather than 12 percent below it",
+    "B": "undoes a 12 percent decrease by applying a 12 percent increase, which lands 1.44 percent short",
+    "D": "adds the 9.50 fee back instead of removing it before undoing the reduction"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Strip the fee first, leaving $255.90 - 9.50$, which is $88\\%$ of the original rate, so divide by $0.88$.\n\n**The Full Solution:**\nStep 1: Undo the last step first. The fee was added at the end, so the reduced rate is $255.90 - 9.50 = 246.40$ dollars.\nStep 2: A $12\\%$ reduction leaves $100\\% - 12\\% = 88\\%$ of the original, so if $r$ is the original rate, $0.88r = 246.40$.\nStep 3: Solve: $r = \\frac{246.40}{0.88} = \\frac{255.90 - 9.50}{0.88} = 280$. Check forward: $0.88(280) = 246.40$, and $246.40 + 9.50 = 255.90$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($220$): divides by $1.12$, the multiplier for a $12\\%$ increase; here the rate went down, so the multiplier is $0.88$.\n* Choice B ($275.97$): multiplies by $1.12$ to reverse a $12\\%$ cut, but percent changes are not undone by the same percent — $0.88 \\times 1.12 = 0.9856$, not $1$.\n* Choice D ($301.59$): adds the $\\$9.50$ fee instead of subtracting it, so the percent step is applied to a charge that is $\\$19$ too large.\n\n**Test Day Takeaway:** Undo the steps in reverse order, and reverse a percent change by DIVIDING by its multiplier — never by applying the same percent the other way."
+}

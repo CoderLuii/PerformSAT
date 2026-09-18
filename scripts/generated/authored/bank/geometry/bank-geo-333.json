@@ -1,0 +1,60 @@
+{
+  "id": "bank-geo-333",
+  "question": "A sheet-metal bracket is cut to the right-triangular outline shown, where each leg is labeled in terms of $x$ centimeters, the hypotenuse carries no label, and the outline's three edges total $30$ centimeters. The right angle lies at vertex $B$. What is the value of $\\tan A$?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          5
+        ]
+      ],
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "sideLabels": [
+        "x + 7",
+        "x",
+        ""
+      ],
+      "rightAngleVertex": 1,
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{5}{13}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{5}{12}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{12}{13}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{12}{5}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports sin A = 5/13, opposite over hypotenuse",
+    "C": "reports cos A = 12/13, adjacent over hypotenuse",
+    "D": "inverts the tangent, dividing the adjacent leg by the opposite leg"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Trig Ratio from Perimeter**\n\n**Choice B is correct.**\n\n**The Fast Way (~60s):** The legs $x$ and $x + 7$ with perimeter $30$ force the $5$-$12$-$13$ triple, so $\\tan A = \\frac{5}{12}$.\n\n**The Full Solution:**\nStep 1: The legs are $x$ and $x + 7$, so the hypotenuse is $30 - x - (x + 7) = 23 - 2x$.\nStep 2: The Pythagorean theorem gives $x^2 + (x+7)^2 = (23-2x)^2$, that is $2x^2 + 14x + 49 = 4x^2 - 92x + 529$, so $2x^2 - 106x + 480 = 0$ and $x^2 - 53x + 240 = 0$. Factoring gives $(x-5)(x-48) = 0$, and $x = 48$ is impossible in a perimeter of $30$, so $x = 5$.\nStep 3: The legs are $5$ and $12$ and the hypotenuse is $13$. Angle $A$ faces $\\overline{BC} = x = 5$ and sits beside $\\overline{AB} = x + 7 = 12$, so $\\tan A = \\frac{5}{12}$.\n\nCheck: $5 + 12 + 13 = 30$ and $5^2 + 12^2 = 169 = 13^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{5}{13}$): divides the opposite leg by the hypotenuse, which is $\\sin A$.\n* Choice C ($\\frac{12}{13}$): divides the adjacent leg by the hypotenuse, which is $\\cos A$.\n* Choice D ($\\frac{12}{5}$): inverts the tangent by putting the adjacent leg on top.\n\n**Test Day Takeaway:** When both legs carry the same variable, write the hypotenuse from the perimeter and let the Pythagorean theorem finish the job."
+}

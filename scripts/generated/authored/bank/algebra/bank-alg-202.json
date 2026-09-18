@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-202",
+  "question": "A technician models the temperature $T$, in degrees Celsius, of a kiln $m$ minutes after it is switched on using the equation $T = 9.5m + 20$. According to the model, by how many degrees Celsius does the temperature of the kiln increase each minute?",
+  "correctAnswer": "9.5",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**The correct answer is $9.5$.**\n\n**The Fast Way (~10s):** In $T = 9.5m + 20$, the coefficient of $m$ is the change in $T$ per one minute: $9.5$ degrees Celsius per minute.\n\n**The Full Solution:**\nStep 1: The equation is in slope-intercept form, $T = (\\text{slope}) \\cdot m + (\\text{intercept})$.\nStep 2: The slope, $9.5$, is the change in temperature for each additional minute; the intercept, $20$, is the temperature at $m = 0$.\nStep 3: Check with two consecutive minutes: at $m = 1$, $T = 29.5$; at $m = 2$, $T = 39$. The difference is $9.5$. $\\checkmark$\n\n**Common Mistakes:** Entering $20$ (the starting temperature, not the rate); entering $29.5$ (the temperature after one minute, which includes the intercept); rounding $9.5$ to $10$.\n\n**Test Day Takeaway:** \"By how much per unit\" is always the slope. The intercept is where the model starts, not how fast it moves."
+}

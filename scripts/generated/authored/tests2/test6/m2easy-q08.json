@@ -1,0 +1,29 @@
+{
+  "id": 8,
+  "question": "During a punt the height of the ball, in feet, is $h = -16t^2 + 64t$ at $t$ seconds after the kick. A tower camera captures the ball only while it is at least $48$ feet high. During which interval is the ball captured?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0 \\le t \\le 1$"
+    },
+    {
+      "id": "B",
+      "text": "$1 \\le t \\le 3$"
+    },
+    {
+      "id": "C",
+      "text": "$1 \\le t \\le 4$"
+    },
+    {
+      "id": "D",
+      "text": "$3 \\le t \\le 4$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops at the first crossing t = 1 and uses the climb up to it",
+    "C": "keeps the first crossing but ends at the landing time t = 4 instead of the second crossing",
+    "D": "uses the descent from the second crossing t = 3 to the landing time t = 4"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Set $-16t^2 + 64t = 48$; dividing by $-16$ gives $t^2 - 4t + 3 = 0$, so $t = 1$ and $t = 3$. Between those two times the parabola is above $48$.\n\n**The Full Solution:**\nStep 1: Write the condition: $-16t^2 + 64t \\ge 48$.\nStep 2: Move everything to one side and divide by $-16$, which reverses the inequality: $t^2 - 4t + 3 \\le 0$. Factoring gives $(t - 1)(t - 3) \\le 0$.\nStep 3: A product of two factors is negative or zero exactly between the roots, so $1 \\le t \\le 3$. Check the midpoint $t = 2$: $-16(4) + 64(2) = 64$ feet, which is at least $48$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0 \\le t \\le 1$): uses the climb up to the first crossing. At $t = 0.5$ the height is $-16(0.25) + 32 = 28$ feet, below $48$.\n* Choice C ($1 \\le t \\le 4$): starts correctly but runs to the landing time $t = 4$ instead of the second crossing. At $t = 3.5$ the height is $-196 + 224 = 28$ feet.\n* Choice D ($3 \\le t \\le 4$): takes the descent after the ball has already dropped back through $48$ feet.\n\n**Test Day Takeaway:** Solve the equality first to find the two crossing times, then decide inside or outside by testing one convenient value — a downward parabola is above its level between the roots."
+}

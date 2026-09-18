@@ -1,44 +1,44 @@
 {
-  "id": 526,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 1,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Ulugh Beg (1394–1449) was a Timurid prince and astronomer who ruled from the city of Samarkand.",
-      "In the 1420s he built a large observatory at Samarkand, equipped with a giant arc for measuring the positions of the stars.",
-      "His team of astronomers compiled the Zij-i Sultani, a catalogue of more than a thousand stars.",
-      "The catalogue's star positions were among the most accurate produced anywhere before the invention of the telescope.",
-      "The observatory was destroyed after Ulugh Beg's death in 1449."
-    ],
-    "goal": "The student wants to introduce Ulugh Beg to an audience unfamiliar with his work."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The star positions in the Zij-i Sultani were among the most accurate produced anywhere before the telescope was invented."
-    },
-    {
-      "id": "B",
-      "text": "Ulugh Beg's observatory at Samarkand, equipped with a giant measuring arc, was destroyed after his death in 1449."
-    },
-    {
-      "id": "C",
-      "text": "The Zij-i Sultani, compiled by a team of astronomers, was a catalogue of more than a thousand stars."
-    },
-    {
-      "id": "D",
-      "text": "Ulugh Beg (1394–1449), a Timurid prince who ruled from Samarkand, built a large observatory there in the 1420s whose astronomers compiled the Zij-i Sultani, a star catalogue remarkably accurate for its time."
-    }
+ "id": 526,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 1,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "El Anatsui (born 1944) is a Ghanaian sculptor who has spent most of his career in Nsukka, Nigeria.",
+   "Since the late 1990s he has assembled monumental wall-hung works from thousands of aluminum bottle caps flattened and stitched together with copper wire.",
+   "The finished metal sheets drape and fold like cloth, and he invites curators to hang each one differently every time it is shown.",
+   "He has cited the patterns of traditional Ghanaian textiles as an influence on the works.",
+   "His metal hangings have been exhibited by major museums on several continents."
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The goal is to introduce Ulugh Beg to readers who do not know him, so the sentence should name him, place him in time and place, and say what he is known for. Choice D does all of this: it gives his dates, identifies him as a Timurid prince in Samarkand, names the observatory, and notes the catalogue and its accuracy. Choices A and C report individual facts about the catalogue without ever introducing the man. Choice B names him but leads with the observatory's destruction, an odd emphasis for a first introduction and one that omits what made his work notable.",
-  "_meta": {
-    "anchor": "Ulugh Beg — Timurid astronomer; Samarkand observatory; Zij-i Sultani star catalogue"
+  "goal": "The student wants to introduce El Anatsui's sculpture to an audience unfamiliar with his work."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "El Anatsui invites the curators of his exhibitions to hang each of his works differently every time it is shown, and he has cited the patterns of traditional Ghanaian textiles as an influence on the finished works."
+  },
+  {
+   "id": "B",
+   "text": "Born in Ghana in 1944, El Anatsui has spent most of his career working in Nsukka, Nigeria."
+  },
+  {
+   "id": "C",
+   "text": "Metal hangings stitched together from bottle caps have been exhibited by major museums on several continents."
+  },
+  {
+   "id": "D",
+   "text": "The Ghanaian sculptor El Anatsui builds monumental wall-hung works from thousands of flattened aluminum bottle caps stitched together with wire, creating metal sheets that drape and fold like cloth."
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** Introducing the sculpture to unfamiliar readers requires saying who Anatsui is and what his work is, and D alone delivers both: his identity as a Ghanaian sculptor and the defining character of the bottle-cap hangings.\n\n**The Full Solution:**\n- The goal has two demands: identify the artist for an audience that does not know him, and characterize his sculpture.\n- Choice D names him, gives his nationality and medium, and describes the works' signature qualities — monumental scale, bottle-cap material, and cloth-like drape — in a single introductory sentence.\n\n**Why the other choices are wrong:**\n- A: It leads with a curatorial detail that means little to readers who have not yet learned what the works are.\n- B: It supplies biography without a word about the sculpture the goal asks to introduce.\n- C: It describes the works but never names or identifies the artist, so it fails as an introduction to \"his\" work.",
+ "_meta": {
+  "anchor": "El Anatsui — bottle-cap metal hangings that drape like cloth"
+ }
 }

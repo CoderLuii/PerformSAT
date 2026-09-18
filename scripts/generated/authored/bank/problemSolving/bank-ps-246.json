@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-246",
+  "question": "A transportation agency selected $500$ households at random from the households in a county. Based on the sample, the agency estimated that $46\\%$ of the households in the county own at least one bicycle, with an associated margin of error of $4\\%$. Which of the following is the most appropriate conclusion?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Exactly $46\\%$ of the households in the county own at least one bicycle."
+    },
+    {
+      "id": "B",
+      "text": "It is plausible that between $42\\%$ and $50\\%$ of the households in the state own at least one bicycle."
+    },
+    {
+      "id": "C",
+      "text": "Between $42\\%$ and $50\\%$ of the $500$ households in the sample own at least one bicycle."
+    },
+    {
+      "id": "D",
+      "text": "It is plausible that between $42\\%$ and $50\\%$ of the households in the county own at least one bicycle."
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats the estimate as the exact population value, ignoring the margin of error",
+    "B": "applies the interval to the state, a population that was not sampled",
+    "C": "applies the interval to the sample, whose proportion is known to be exactly 46%"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The estimate is $46\\%$ with a margin of error of $4\\%$, so plausible values for the county proportion run from $46 - 4 = 42\\%$ to $46 + 4 = 50\\%$. The sample came from the county, so the conclusion is about the county.\n\n**The Full Solution:**\nStep 1: Form the interval of plausible values: $46\\% \\pm 4\\%$, which is $42\\%$ to $50\\%$.\nStep 2: Decide whom the interval describes. The households were selected at random from the county, so the interval describes the proportion of all households in the county.\nStep 3: The interval is a statement of plausibility, not certainty, and it is about the population, not the sample. Check: the sample's own proportion is known exactly ($46\\%$); only the county's proportion is uncertain. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the margin of error exists because $46\\%$ is an estimate; the county's true proportion is unlikely to be exactly $46\\%$.\n* Choice B: households outside the county were not sampled, so the interval cannot be extended to the state.\n* Choice C: the sample proportion is not uncertain; the interval expresses uncertainty about the county, not about the $500$ sampled households.\n\n**Test Day Takeaway:** Estimate $\\pm$ margin of error gives a range of plausible values for the population that was randomly sampled."
+}

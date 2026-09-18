@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "A circle has a diameter of $34$ millimeters. What is the length, in millimeters, of a radius of this circle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8.5$"
+  },
+  {
+   "id": "B",
+   "text": "$17$"
+  },
+  {
+   "id": "C",
+   "text": "$34$"
+  },
+  {
+   "id": "D",
+   "text": "$68$"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "The two lengths differ by a single factor of $2$ — decide which one of the pair is longer.",
+ "distractorNotes": {
+  "A": "halves the diameter twice",
+  "C": "reports the diameter unchanged",
+  "D": "doubles instead of halving"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~10s):** A radius is half a diameter, so $r = \\frac{34}{2} = 17$ millimeters.\n\n**The Full Solution:**\nStep 1: For every circle, $d = 2r$, so $r = \\frac{d}{2}$.\nStep 2: Substitute $d = 34$: $r = \\frac{34}{2} = 17$ millimeters.\nStep 3: Check by reversing the step: two radii of $17$ millimeters laid end to end span $34$ millimeters, the given diameter.\n\n**Why the wrong answers are tempting:**\n* Choice A ($8.5$): halves the diameter a second time, reporting $\\frac{34}{4}$.\n* Choice C ($34$): reports the diameter without converting it.\n* Choice D ($68$): doubles the diameter, applying $d = 2r$ in the wrong direction.\n\n**Test Day Takeaway:** Radius and diameter are one factor of $2$ apart. Name which one the question handed you before you multiply or divide."
+}

@@ -1,0 +1,57 @@
+{
+ "question": "The line shown in the $xy$-plane models the depth of frost in the ground, in centimeters, $x$ days after the first thaw. According to the model, what is the change in frost depth, in centimeters, for each additional day?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2$"
+  },
+  {
+   "id": "B",
+   "text": "$-0.5$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "inverts rise and run, computing $\\frac{2 - 10}{26 - 10}$",
+  "C": "drops the negative sign even though the depth is falling",
+  "D": "uses the run $10 - 2 = 8$ by itself as the rate"
+ },
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The line passes through $(2, 26)$ and $(10, 10)$, so the change per day is $\\frac{10 - 26}{10 - 2} = -2$.\n\n**The Full Solution:**\n\nStep 1: Read two grid points off the line: $(2, 26)$ and $(10, 10)$.\n\nStep 2: Compute rise over run: $\\frac{10 - 26}{10 - 2} = \\frac{-16}{8}$.\n\nStep 3: That is $-2$ centimeters per day, and the line does fall from left to right. Check: at $x = 6$ the line sits at $18$, halfway between $26$ and $10$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($-0.5$): divides the run by the rise instead of the rise by the run.\n\n* Choice C ($2$): gives the right size but the wrong sign for a quantity that is decreasing.\n\n* Choice D ($8$): reports the horizontal change alone.\n\n**Test Day Takeaway:** Check the sign against the picture before you finish: a falling line must give a negative change per unit.",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -2,
+   "yIntercept": 30,
+   "xRange": [
+    0,
+    12
+   ],
+   "yRange": [
+    0,
+    32
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     2,
+     26
+    ],
+    [
+     10,
+     10
+    ]
+   ]
+  }
+ },
+ "id": "bank-alg-162"
+}

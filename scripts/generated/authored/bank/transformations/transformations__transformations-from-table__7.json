@@ -1,0 +1,61 @@
+{
+  "id": 7,
+  "question": "The function $f$ is defined only at the five inputs listed in the table. If $k(x)=f(x+2)$, what is the value of $k(0)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)"
+      ],
+      "rows": [
+        [
+          "-4",
+          "9"
+        ],
+        [
+          "-2",
+          "5"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "4",
+          "-7"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-7$"
+    },
+    {
+      "id": "B",
+      "text": "$-3$"
+    },
+    {
+      "id": "C",
+      "text": "$1$"
+    },
+    {
+      "id": "D",
+      "text": "$5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies the shift twice",
+    "C": "omits the shift",
+    "D": "shifts the input in the wrong direction"
+  },
+  "correctAnswer": "B",
+  "hint": "Simplify $x+2$ at the given input, then find that number in the left column.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** $k(0)=f(0+2)=f(2)=-3$.\n\n**The Full Solution:**\nStep 1: The rule for $k$ adds $2$ to the input before $f$ is applied, so $k(0)=f(2)$.\nStep 2: The row with $x=2$ in the table gives $f(2)=-3$.\nStep 3: Therefore $k(0)=-3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7$): uses the row $x=4$, adding the shift twice.\n* Choice C ($1$): uses the row $x=0$ and never applies the shift.\n* Choice D ($5$): uses the row $x=-2$, subtracting $2$ from the input instead of adding it.\n\n**Test Day Takeaway:** With $f(x+c)$, compute the new input first; the table lookup happens after the arithmetic, not before."
+}

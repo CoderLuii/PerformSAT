@@ -1,31 +1,31 @@
 {
-  "id": 1203,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "Economists once assumed that workers offered a retirement savings plan would weigh the long-run benefits and enroll whenever doing so served their interests. Findings from large employer studies run ____ that assumption: when enrollment is automatic and employees must act to opt out, participation rises sharply and stays high, even though the financial incentives are identical to those of an opt-in plan. The default option itself, not a fresh cost-benefit calculation, seems to shape how many people end up saving.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "in line with"
-    },
-    {
-      "id": "B",
-      "text": "prior to"
-    },
-    {
-      "id": "C",
-      "text": "regardless of"
-    },
-    {
-      "id": "D",
-      "text": "counter to"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The findings contradict the economists' assumption that people enroll by rational calculation, so the studies run \"counter to\" it. \"In line with\" states the opposite relationship, agreement rather than conflict. \"Prior to\" is a time relation, but nothing here says the findings came before the assumption. \"Regardless of\" would suggest the findings are simply unrelated to the assumption, whereas the passage frames them as direct evidence against it."
+ "id": 1203,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "A hot-air balloon carries no rudder, propeller, or sail, and a first-time spectator at a balloon competition might assume that the pilots are simply carried wherever the breeze happens to take them. The tactics of championship flying run ____ that assumption: because winds at different altitudes often move in different directions, a skilled pilot climbs and descends among the layers, choosing a height precisely because the current there bends toward the target.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "parallel to"
+  },
+  {
+   "id": "B",
+   "text": "ahead of"
+  },
+  {
+   "id": "C",
+   "text": "independent of"
+  },
+  {
+   "id": "D",
+   "text": "contrary to"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The spectator's assumption is that pilots drift helplessly; the colon then shows pilots steering deliberately by choosing wind layers. The tactics contradict the assumption, so they run \"contrary to\" it.\n\n**The Full Solution:**\n- The assumption: with no rudder, propeller, or sail, pilots \"are simply carried wherever the breeze happens to take them.\"\n- The reality after the colon: pilots climb and descend among wind layers, picking an altitude \"precisely because the current there bends toward the target\" — that is deliberate steering.\n- Helpless drifting and deliberate steering clash, so the blank needs a word of opposition: \"contrary to.\"\n\n**Why the other choices are wrong:**\n- A: \"Parallel to\" would mean the tactics match the assumption, the opposite of the clash the colon reveals.\n- B: \"Ahead of\" is about time or position, but nothing here is a matter of sequence.\n- C: \"Independent of\" would mean the tactics are simply unrelated to the assumption, but the passage presents them as direct evidence against it."
 }

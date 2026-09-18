@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-043",
+  "question": "$ax + 4y = 7$\n$6x - 8y = c$\n\nIn the given system of equations, $a$ and $c$ are constants. For which of the following values of $a$ and $c$ does the system have no solution?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$a = -3$ and $c \\neq -14$"
+    },
+    {
+      "id": "B",
+      "text": "$a = -3$ and $c = -14$"
+    },
+    {
+      "id": "C",
+      "text": "$a = 3$ and $c \\neq 14$"
+    },
+    {
+      "id": "D",
+      "text": "$a = -12$ and $c \\neq -14$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "this makes the equations the same line: infinitely many solutions, not none",
+    "C": "drops the sign of the ratio -2",
+    "D": "multiplies 6 by the ratio instead of dividing"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Parameter for No Solution**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** No solution means parallel, distinct lines: the second equation's coefficients must be a common multiple of the first's, but its constant must not be. From $4 \\to -8$ the multiplier is $-2$, so $a(-2) = 6$ gives $a = -3$, and the constant must satisfy $c \\neq 7(-2) = -14$.\n\n**The Full Solution:**\nStep 1: Two lines are parallel when their slopes are equal. Slope of the first: $-\\frac{a}{4}$; slope of the second: $-\\frac{6}{-8} = \\frac{3}{4}$. Setting $-\\frac{a}{4} = \\frac{3}{4}$ gives $a = -3$.\nStep 2: With $a = -3$ the first equation is $-3x + 4y = 7$, and multiplying it by $-2$ gives $6x - 8y = -14$. If $c = -14$ the two equations are the same line (infinitely many solutions), so no solution requires $c \\neq -14$.\nStep 3: Check: with $a = -3$ and, say, $c = 0$, the lines $-3x + 4y = 7$ and $6x - 8y = 0$ both have slope $\\frac{3}{4}$ but different intercepts ($\\frac{7}{4}$ and $0$), so they never meet. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($a = -3$ and $c = -14$): makes the second equation exactly $-2$ times the first, which is the SAME line and gives infinitely many solutions.\n* Choice C ($a = 3$ and $c \\neq 14$): uses the multiplier $2$ instead of $-2$, ignoring that $4y$ becomes $-8y$.\n* Choice D ($a = -12$ and $c \\neq -14$): computes $a = 6 \\cdot (-2)$, multiplying by the ratio when the first coefficient must be divided.\n\n**Test Day Takeaway:** \"No solution\" has two conditions: proportional coefficients (equal slopes) AND a constant that breaks the proportion; check both, because the same-proportion constant flips the answer to infinitely many."
+}

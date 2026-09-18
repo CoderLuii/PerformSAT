@@ -1,0 +1,49 @@
+{
+  "id": 11,
+  "question": "The table shows the energy produced by a rooftop solar array during each of three months. Given that $1$ kilowatt-hour is equal to $3.6$ megajoules, how many megajoules of energy did the array produce during these three months?",
+  "questionTable": {
+    "headers": [
+      "Month",
+      "Energy produced (kilowatt-hours)"
+    ],
+    "rows": [
+      [
+        "June",
+        "$545$"
+      ],
+      [
+        "July",
+        "$610$"
+      ],
+      [
+        "August",
+        "$645$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$500$"
+    },
+    {
+      "id": "B",
+      "text": "$2{,}322$"
+    },
+    {
+      "id": "C",
+      "text": "$5{,}400$"
+    },
+    {
+      "id": "D",
+      "text": "$6{,}480$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the 1,800 kilowatt-hour total by 3.6 instead of multiplying: 1,800/3.6 = 500",
+    "B": "converts only August's 645 kilowatt-hours: 645(3.6) = 2,322",
+    "C": "multiplies the total by 3 instead of 3.6: 1,800(3) = 5,400"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The three months total $1{,}800$ kilowatt-hours, and $1{,}800(3.6)=6{,}480$ megajoules.\n\n**The Full Solution:**\nStep 1: Add the three monthly amounts: $545+610+645=1{,}800$ kilowatt-hours.\nStep 2: Set up the conversion so kilowatt-hours cancel: $1{,}800\\ \\text{kWh}\\times\\dfrac{3.6\\ \\text{MJ}}{1\\ \\text{kWh}}$.\nStep 3: That gives $1{,}800(3.6)=6{,}480$ megajoules. Check: a megajoule is smaller than a kilowatt-hour, so the number of megajoules must be larger than $1{,}800$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($500$): divides by $3.6$ instead of multiplying, flipping the conversion factor upside down.\n* Choice B ($2{,}322$): converts only August's $645$ kilowatt-hours and skips the sum.\n* Choice C ($5{,}400$): multiplies by $3$ rather than $3.6$, dropping the tenths digit of the conversion factor.\n\n**Test Day Takeaway:** Write the conversion as a fraction with the unit you are leaving on the bottom — if the units cancel, the multiplication is pointed the right way."
+}

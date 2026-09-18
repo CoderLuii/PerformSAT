@@ -1,0 +1,47 @@
+{
+ "id": 4,
+ "question": "In right triangle $XYZ$, angle $Y$ is a right angle, the hypotenuse $\\overline{XZ}$ has length $26$, and leg $\\overline{XY}$ has length $24$. What is the length of $\\overline{YZ}$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "X",
+    "Y",
+    "Z"
+   ],
+   "sideLabels": [
+    "24",
+    "",
+    "26"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$25$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the two given lengths instead of their squares",
+  "C": "averages the hypotenuse and the given leg",
+  "D": "adds the two given lengths"
+ },
+ "correctAnswer": "B",
+ "hint": "The hypotenuse is the one given, so the missing side comes out of a subtraction.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** $YZ = \\sqrt{26^2 - 24^2} = \\sqrt{100} = 10$.\n\n**The Full Solution:**\nStep 1: Angle $Y$ is the right angle, so $\\overline{XZ}$ is the hypotenuse and $\\overline{XY}$ and $\\overline{YZ}$ are the legs.\nStep 2: $24^2 + YZ^2 = 26^2$, so $YZ^2 = 676 - 576 = 100$.\nStep 3: $YZ = \\sqrt{100} = 10$.\n\nVerification: $24^2 + 10^2 = 576 + 100 = 676 = 26^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): subtracts the two given lengths instead of their squares.\n* Choice C ($25$): averages the hypotenuse and the given leg.\n* Choice D ($50$): adds the two given lengths.\n\n**Test Day Takeaway:** Solving for a leg subtracts squares, not lengths: square first, subtract, then take the root."
+}

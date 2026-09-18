@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-343",
+  "question": "A tractor purchased for $\\$36{,}000$ loses $15\\%$ of its value each year. The table gives the tractor's value at purchase and at the end of each of the first two years. Which function $V$ gives the tractor's value, in dollars, $t$ years after it was purchased?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Years after purchase",
+        "Value (dollars)"
+      ],
+      "rows": [
+        [
+          "0",
+          "36,000"
+        ],
+        [
+          "1",
+          "30,600"
+        ],
+        [
+          "2",
+          "26,010"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$V(t) = 36{,}000(0.85)^t$"
+    },
+    {
+      "id": "B",
+      "text": "$V(t) = 36{,}000(0.15)^t$"
+    },
+    {
+      "id": "C",
+      "text": "$V(t) = 36{,}000(1.15)^t$"
+    },
+    {
+      "id": "D",
+      "text": "$V(t) = 36{,}000 - 5{,}400t$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses the percent lost as the factor",
+    "C": "adds the rate instead of subtracting",
+    "D": "subtracts a constant each year"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Build Exponential Model**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Losing $15\\%$ leaves $85\\%$, so the factor is $0.85$ and $V(t) = 36{,}000(0.85)^t$.\n\n**The Full Solution:**\nStep 1: The model is $V(t) = V_0(b)^t$ with $V_0 = 36{,}000$, the purchase price.\nStep 2: A $15\\%$ loss leaves $100\\% - 15\\% = 85\\%$ of the previous value, so $b = 0.85$.\nStep 3: $V(t) = 36{,}000(0.85)^t$. Check: $36{,}000(0.85) = 30{,}600$ and $30{,}600(0.85) = 26{,}010$, matching the last two table rows. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($V(t) = 36{,}000(0.15)^t$): uses the percent lost as the factor, which would leave only $\\$5{,}400$ after one year.\n* Choice C ($V(t) = 36{,}000(1.15)^t$): adds the rate instead of subtracting it, modeling growth rather than depreciation.\n* Choice D ($V(t) = 36{,}000 - 5{,}400t$): subtracts a fixed $\\$5{,}400$ each year, which would give $\\$25{,}200$ at $t = 2$ instead of $\\$26{,}010$.\n\n**Test Day Takeaway:** A percent DECREASE gives the factor $1 - r$; the table's second row is the fastest way to confirm you chose it correctly."
+}

@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 2,
- "passage": "Pure silicon is a poor conductor of electricity, but its behavior changes dramatically when manufacturers add tiny, controlled amounts of other elements. Introducing a trace of phosphorus or boron—a process called doping—does not damage the crystal so much as ______ it, supplying either extra electrons or vacancies that let current flow in predictable ways. By adjusting which element is added and where, engineers turn a single wafer into the working regions of a transistor.",
+ "passage": "Oil rendered from whale blubber served well enough in household lamps, though it burned with some smoke and a persistent odor. Candles pressed from spermaceti, the waxy substance found in the head of the sperm whale, were another article altogether: they gave a bright, steady, odorless flame, and buyers who could afford them came to regard ordinary tallow candles as a ______ to be tolerated only until something better could be had.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "tailor"
+   "text": "makeshift"
   },
   {
    "id": "B",
-   "text": "abandon"
+   "text": "luxury"
   },
   {
    "id": "C",
-   "text": "flood"
+   "text": "commonplace"
   },
   {
    "id": "D",
-   "text": "imitate"
+   "text": "standard"
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The passage says doping does not damage the silicon crystal so much as adjust its electrical behavior in a controlled, deliberate way—supplying extra electrons or vacancies so current flows predictably. \"Tailor\" captures that purposeful fine-tuning. \"Abandon\" makes no sense with \"the crystal\"; \"flood\" implies an uncontrolled excess that contradicts the \"tiny, controlled amounts\" of the passage; and \"imitate\" wrongly suggests copying rather than modifying the material."
+ "explanation": "**Choice A is correct.** The sentence's own gloss defines the blank: something \"to be tolerated only until something better could be had\" is a stopgap, and \"makeshift\" names exactly that.\n\n**The Full Solution:**\n- The passage builds a contrast: spermaceti candles are \"another article altogether,\" bright, steady, odorless, while tallow candles occupy the inferior position.\n- From the vantage of buyers who had seen the superior product, the ordinary candle becomes a temporary substitute, a makeshift, kept only for want of the better thing.\n\n**Why the other choices are wrong:**\n- B: \"Luxury\" inverts the hierarchy; the passage makes spermaceti the premium article and tallow the lesser one.\n- C: \"Commonplace\" captures how ordinary tallow candles were, but not the defining clause's grudging, temporary tolerance of them while awaiting something better.\n- D: \"Standard\" clashes with the defining clause: a standard is what one settles on, not what one tolerates while awaiting something better."
 }

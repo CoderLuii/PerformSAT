@@ -1652,6 +1652,29 @@ function runLint({ mode, testNumbers, checks }) {
     }
   }
 
+  // ---- Underline-markup contract (2026-09-01) -----------------------------
+  // A question that says "underlined" must have a passage carrying paired
+  // __...__ markup (parsePassageMarkup's underline token). Caught in the wild:
+  // wave-1 items italicized the target sentence with *...* (renders as <em>,
+  // not <u>) and one item carried no markup at all — students saw "the
+  // underlined sentence" with nothing underlined.
+  if (enabled('underline-markup')) {
+    for (const b of bankItems) {
+      if (!targetTests.includes(b.testN) || !b.item) continue;
+      const q = b.item.question || '';
+      if (!/underlined/i.test(q)) continue;
+      const p = b.item.passage || '';
+      if (!/__[^_]{10,}__/.test(p)) {
+        violations.push({
+          testN: b.testN,
+          file: `practiceTest${b.testN}RW.js`,
+          line: b.line,
+          message: `underline-markup: question references "underlined" but the passage has no paired __...__ markup (id ${b.item.id})`,
+        });
+      }
+    }
+  }
+
   // ---- Per-test lints -----------------------------------------------------
   if (enabled('within-test-cloning')) {
     for (const testN of targetTests) {

@@ -1,0 +1,30 @@
+{
+ "id": 16,
+ "question": "A cutting-fluid reservoir holds $40$ liters at the start of a shift and loses $2.5$ liters for each hour of machining. Which function gives the volume $V(h)$, in liters, remaining after $h$ hours?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$V(h) = 2.5h - 40$"
+  },
+  {
+   "id": "B",
+   "text": "$V(h) = 2.5h + 40$"
+  },
+  {
+   "id": "C",
+   "text": "$V(h) = 40 - 2.5h$"
+  },
+  {
+   "id": "D",
+   "text": "$V(h) = 40h - 2.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the roles, using 2.5 as the starting amount and 40 as the hourly change",
+  "B": "adds the hourly loss instead of subtracting it",
+  "D": "uses the starting volume 40 as the hourly rate"
+ },
+ "correctAnswer": "C",
+ "hint": "One of the two numbers is the amount present when $h = 0$.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** Start at $40$ liters and remove $2.5$ liters each hour: $V(h) = 40 - 2.5h$.\n\n**The Full Solution:**\nStep 1: At $h = 0$ the reservoir holds $40$ liters, so the constant term is $40$.\nStep 2: The fluid decreases at a steady $2.5$ liters per hour, so the rate of change is $-2.5$ liters per hour.\nStep 3: A linear model is (constant term) plus (rate)(input): $V(h) = 40 - 2.5h$.\n\nCheck: After $4$ hours the model gives $40 - 10 = 30$ liters, a loss of $10$ liters over $4$ hours. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.5h - 40$): swaps the two numbers, and it reports a negative volume for every hour before hour $16$.\n* Choice B ($2.5h + 40$): adds the hourly amount, so the reservoir would gain fluid while machining.\n* Choice D ($40h - 2.5$): uses the starting volume as the hourly rate, predicting $37.5$ liters after one hour and $797.5$ liters after twenty.\n\n**Test Day Takeaway:** The number attached to the variable is a rate; the number standing alone is the value at input zero."
+}

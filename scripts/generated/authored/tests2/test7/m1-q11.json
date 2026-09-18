@@ -1,0 +1,90 @@
+{
+ "id": 11,
+ "question": "The scatterplot shows the number of mosquitoes caught per trap-night at 10 monitoring sites, plotted against each site's average weekly temperature, together with the line of best fit. According to that line, what number of mosquitoes per trap-night is predicted at a site whose average weekly temperature is 30 degrees Celsius?",
+ "diagram": {
+  "type": "scatterplot",
+  "params": {
+   "points": [
+    [
+     17,
+     6
+    ],
+    [
+     18,
+     20
+    ],
+    [
+     20,
+     19
+    ],
+    [
+     22,
+     38
+    ],
+    [
+     23,
+     40
+    ],
+    [
+     25,
+     39
+    ],
+    [
+     26,
+     53
+    ],
+    [
+     28,
+     60
+    ],
+    [
+     30,
+     56
+    ],
+    [
+     31,
+     68
+    ]
+   ],
+   "xMin": 16,
+   "xMax": 32,
+   "yMin": 0,
+   "yMax": 80,
+   "xGridStep": 2,
+   "yGridStep": 8,
+   "xLabelStep": 4,
+   "yLabelStep": 16,
+   "xLabel": "Average weekly temperature (°C)",
+   "yLabel": "Mosquitoes per trap-night",
+   "bestFitLine": {
+    "slope": 4,
+    "intercept": -56
+   }
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$32$"
+  },
+  {
+   "id": "B",
+   "text": "$48$"
+  },
+  {
+   "id": "C",
+   "text": "$56$"
+  },
+  {
+   "id": "D",
+   "text": "$64$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "misreads the vertical scale as 4 per gridline instead of 8, halving the reading",
+  "B": "reads the line at 26 degrees, counting the labeled ticks (every 4 degrees) as if they were gridlines (every 2 degrees)",
+  "C": "reads the plotted data point at 30 degrees instead of the line of best fit"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Follow the vertical gridline at $30$ degrees up to the line of best fit; it meets the line at the gridline for $64$ mosquitoes per trap-night.\n\n**The Full Solution:**\nStep 1: Read two easy points on the line of best fit, where it crosses gridline intersections: $(20, 24)$ and $(30, 64)$.\nStep 2: The slope is $\\frac{64 - 24}{30 - 20} = 4$ mosquitoes per trap-night for each degree, so the line is $y = 4x - 56$.\nStep 3: At $x = 30$, $y = 4(30) - 56 = 64$. Check against the neighboring gridline: at $x = 28$ the line gives $56$, and it rises $8$ over the next two degrees ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($32$): this halves the reading by treating each horizontal gridline as $4$ instead of $8$. Read the labeled values before counting gridlines.\n* Choice B ($48$): this is the height of the line at $26$ degrees, which happens when the labeled ticks (every $4$ degrees) are counted as if each gridline were a label.\n* Choice C ($56$): this is the plotted data point at $30$ degrees. A prediction question asks for the height of the line, not of the observation; the difference between them is the residual.\n\n**Test Day Takeaway:** \"According to the line of best fit\" means read the line, never the dot. Confirm the axis scales first, then travel up from the given input to the line."
+}

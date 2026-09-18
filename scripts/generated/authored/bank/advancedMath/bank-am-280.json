@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-280",
+ "question": "An apiary scale's calibration note claims that $\\dfrac{x^{2}-16}{x-4}$ and $x+4$ give the same value for every input $x$. For which values of $x$ is that claim correct?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "All real numbers"
+  },
+  {
+   "id": "B",
+   "text": "All real numbers except $x=4$"
+  },
+  {
+   "id": "C",
+   "text": "All real numbers except $x=-4$"
+  },
+  {
+   "id": "D",
+   "text": "Only $x=4$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "cancels the common factor without excluding x = 4, where the original denominator is 0",
+  "C": "excludes -4, the zero of the factor x + 4, instead of the zero of the denominator",
+  "D": "treats the excluded input 4 as the only place the two expressions agree"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rational Equation with Extraneous Solution**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** $\\frac{x^{2}-16}{x-4}=\\frac{(x-4)(x+4)}{x-4}=x+4$ for every $x$ except $x=4$, where the left side is undefined.\n\n**The Full Solution:**\n\nStep 1: Factor the numerator as a difference of squares: $x^{2}-16=(x-4)(x+4)$.\n\nStep 2: Cancel the common factor $x-4$, which is legitimate only when $x-4\\neq0$.\n\nStep 3: So the two expressions agree for every real $x$ except $x=4$, where the first expression has no value at all. Check: at $x=5$ both give $9$; at $x=4$ the first is $\\frac{0}{0}$, which is undefined, while the second is $8$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: cancels the factor without noticing that $x=4$ makes the original denominator $0$.\n* Choice C: excludes $-4$, the zero of the other factor, rather than the zero of the denominator.\n* Choice D: reverses the exclusion and keeps only the one input that must be removed.\n\n**Test Day Takeaway:** Cancelling a factor changes the domain; the excluded input comes from the original denominator, not from the simplified form."
+}

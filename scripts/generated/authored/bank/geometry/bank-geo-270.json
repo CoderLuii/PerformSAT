@@ -1,0 +1,41 @@
+{
+ "id": "bank-geo-270",
+ "question": "A machine layout shows two belt drives crossing. One of the marked angles is labeled $3x$ degrees, and the angle beside it carries the measure shown. What is the value of $x$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "3x°",
+    "132°",
+    "",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$16$"
+  },
+  {
+   "id": "B",
+   "text": "$44$"
+  },
+  {
+   "id": "C",
+   "text": "$48$"
+  },
+  {
+   "id": "D",
+   "text": "$60$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "treats the two marked angles as vertical angles, solving 3x = 132",
+  "C": "reports the angle measure 3x = 48 rather than the value of x",
+  "D": "divides 180 by 3 and ignores the 132 degree angle"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The two marked angles are adjacent on a straight belt, so $3x + 132 = 180$ and $x = 16$.\n\n**The Full Solution:**\nStep 1: The angle marked $3x$ degrees and the $132$-degree angle sit side by side along one belt, so they form a linear pair.\nStep 2: Their measures sum to $180$: $3x + 132 = 180$, so $3x = 48$.\nStep 3: Dividing by $3$ gives $x = 16$.\n\nCheck: $3(16) + 132 = 48 + 132 = 180$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($44$): treats the pair as vertical angles and solves $3x = 132$.\n* Choice C ($48$): finds the angle measure $3x$ but never divides by $3$ to reach $x$.\n* Choice D ($60$): divides $180$ by $3$ and ignores the $132$-degree angle entirely.\n\n**Test Day Takeaway:** Angles that share a ray and lie on one line are supplementary; only angles across the vertex are equal."
+}

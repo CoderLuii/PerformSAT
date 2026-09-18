@@ -1,0 +1,56 @@
+{
+  "id": "bank-am-045",
+  "question": "A biologist records the cell count of two cultures, $P$ and $Q$, every $3$ hours. The table gives the counts. Each culture grows exponentially. Which of the following statements comparing the cultures is true?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Time (hours)",
+        "Culture P",
+        "Culture Q"
+      ],
+      "rows": [
+        [
+          "0",
+          "250",
+          "640"
+        ],
+        [
+          "3",
+          "500",
+          "960"
+        ],
+        [
+          "6",
+          "1,000",
+          "1,440"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Culture $P$ has the larger count at hour $0$, and $P$ grows by the larger constant factor."
+    },
+    {
+      "id": "B",
+      "text": "Culture $Q$ has the larger count at hour $0$, and $P$ grows by the larger constant factor."
+    },
+    {
+      "id": "C",
+      "text": "Culture $Q$ has the larger count at hour $0$, and $Q$ grows by the larger constant factor."
+    },
+    {
+      "id": "D",
+      "text": "Both cultures grow by the same constant factor every $3$ hours."
+    }
+  ],
+  "distractorNotes": {
+    "A": "misreads the hour-$0$ row",
+    "C": "compares the size of the first increase ($320$ vs $250$) instead of the ratio",
+    "D": "assumes both columns double"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compare Exponential Growth Models**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** At hour $0$, $640 > 250$, so $Q$ starts larger. The ratios are $\\dfrac{500}{250} = 2$ for $P$ and $\\dfrac{960}{640} = 1.5$ for $Q$, so $P$ grows faster.\n\n**The Full Solution:**\nStep 1: Read the hour-$0$ row: $P$ has $250$ cells and $Q$ has $640$, so $Q$ starts with more cells.\nStep 2: For an exponential model, divide consecutive counts. Culture $P$: $\\dfrac{500}{250} = 2$ and $\\dfrac{1000}{500} = 2$. Culture $Q$: $\\dfrac{960}{640} = 1.5$ and $\\dfrac{1440}{960} = 1.5$.\nStep 3: $P$ multiplies by $2$ every $3$ hours while $Q$ multiplies by $1.5$, so $P$ has the larger growth factor even though it starts smaller. Check: continuing the pattern, $P$ reaches $4{,}000$ at hour $12$ while $Q$ reaches only $3{,}240$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reverses the hour-$0$ comparison; $250 < 640$.\n* Choice C: compares the raw increases over the first interval, $320$ for $Q$ against $250$ for $P$; exponential growth is compared by RATIOS, not differences.\n* Choice D: the factors are $2$ and $1.5$, not equal.\n\n**Test Day Takeaway:** Compare exponential models by dividing consecutive outputs, and keep the starting value and the growth factor as two separate comparisons."
+}

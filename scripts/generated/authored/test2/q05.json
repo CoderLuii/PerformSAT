@@ -6,30 +6,31 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 1,
-  "passage": "The following text is from Charlotte Perkins Gilman's 1892 short story \"The Yellow Wall-Paper.\" The narrator and her husband, John, have rented an old country house for the summer.\n\nIt is very seldom that mere ordinary people like John and myself secure ancestral halls for the summer. A colonial mansion, a hereditary estate, I would say a haunted house, and reach the height of romantic felicity—but that would be asking too much of fate! Still I will proudly declare that there is something queer about it. Else, why should it be let so cheaply? And why have stood so long untenanted? John laughs at me, of course, but one expects that in marriage.",
+  "passage": "The following text is from Kate Chopin's 1899 novel The Awakening.\n\nA green and yellow parrot, which hung in a cage outside the door, kept repeating over and over: \"Allez vous-en! Allez vous-en! Sapristi! That's all right!\" He could speak a little Spanish, and also a language which nobody understood, unless it was the mocking-bird that hung on the other side of the door, whistling his fluty notes out upon the breeze with maddening persistence. Mr. Pontellier, unable to read his newspaper with any degree of comfort, arose with an expression and an exclamation of disgust. He walked down the gallery and across the narrow \"bridges\" which connected the Lebrun cottages one with the other. He had been seated before the door of the main house. The parrot and the mocking-bird were the property of Madame Lebrun, and they had the right to make all the noise they wished.",
   "question": "Which choice best describes the overall structure of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "The narrator traces the history of an old colonial mansion and then explains how her family came to inherit it from distant relations."
+      "text": "The narrator recounts the history of a cluster of summer cottages and then describes the daily routine of the woman who owns them."
     },
     {
       "id": "B",
-      "text": "The narrator describes a disagreement with her husband over whether the house they have rented for the summer is a suitable place to live."
+      "text": "The narrator presents a quarrel between two characters over who is responsible for a disturbance and then traces how the disagreement between them is finally resolved."
     },
     {
       "id": "C",
-      "text": "The narrator lists the practical advantages of renting an inexpensive house and then admits that she would have preferred to remain at home."
+      "text": "The narrator introduces a character's peaceful morning, describes an interruption to it, and reveals that the interruption had been deliberately arranged."
     },
     {
       "id": "D",
-      "text": "The narrator presents her family's summer rental as surprising, suggests the house may hold some mystery, and notes her husband's amusement at such ideas."
+      "text": "The narrator describes a noisy scene, follows one character's irritated retreat from it, and closes by wryly noting the birds' standing to make that noise."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The narrator opens by remarking how unusual it is for \"mere ordinary people\" like her family to secure an ancestral hall for the summer, then plays with the idea that the house might be something more romantic—even haunted—and insists that \"there is something queer about it,\" pointing to its low rent and long vacancy. She closes by reporting that John laughs at her, the response she has come to expect. Choice A fails because the family rents the house rather than inheriting it, and no history of the property is given. Choice B describes a disagreement that never occurs; John's laughter dismisses the narrator's musings, but the couple does not argue about whether to stay. Choice C is wrong on both points: the cheap rent is raised as a reason for suspicion, not listed as an advantage, and the narrator never says she would rather have stayed home.",
+  "explanation": "**Choice D is correct.** The text moves from the birds' racket, to Mr. Pontellier's exasperated departure, to the dry closing observation that the birds — as Madame Lebrun's property — \"had the right\" to their noise.\n\n**The Full Solution:**\n- The opening paragraphs establish the disturbance: the parrot's repeated cries and the mocking-bird's \"maddening persistence.\"\n- The middle follows the human response — Mr. Pontellier, unable to read in comfort, rises \"with an expression and an exclamation of disgust\" and walks away across the bridges.\n- The final sentence steps back with gentle irony: the birds belong to Madame Lebrun and so are entitled to make \"all the noise they wished.\" That three-part movement is exactly what choice D describes.\n\n**Why the other choices are wrong:**\n- A: No history of the cottages is given, and Madame Lebrun's routine never appears — she is mentioned only as the birds' owner.\n- B: No quarrel occurs; Mr. Pontellier leaves without confronting anyone, and nothing is resolved.\n- C: The morning is never peaceful — the noise is under way from the first sentence — and no one is said to have arranged it."
+  ,
   "_meta": {
     "quoteVerify": true,
-    "source": "Charlotte Perkins Gilman, \"The Yellow Wall-Paper\" (1892), opening lines"
+    "source": "Kate Chopin, The Awakening (1899), Chapter I, opening lines; text verbatim per the Project Gutenberg edition, typography normalized"
   }
 }

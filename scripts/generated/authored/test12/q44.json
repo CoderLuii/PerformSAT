@@ -1,31 +1,31 @@
 {
-  "id": 1244,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "In reconstructing daily life in a Roman provincial town, the historian drew on three very different kinds of evidence ____ to argue that the settlement's prosperity rested less on any single industry than on its position at the meeting point of several trade routes.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": ", wax tablets, painted inscriptions, and discarded household pottery,"
-    },
-    {
-      "id": "B",
-      "text": "wax tablets, painted inscriptions, and discarded household pottery"
-    },
-    {
-      "id": "C",
-      "text": "—wax tablets, painted inscriptions, and discarded household pottery,"
-    },
-    {
-      "id": "D",
-      "text": "—wax tablets, painted inscriptions, and discarded household pottery—"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The list of three kinds of evidence is a parenthetical that interrupts the main clause, and because the list contains its own internal commas, it must be set off by a matching pair of dashes—one before \"wax\" and one after \"pottery.\" Option A uses commas, which blur into the list's internal commas and leave the interruption unbounded. B omits the punctuation altogether, fusing the appositive into the sentence. C mismatches a dash with a closing comma, so the parenthetical is not properly paired."
+ "id": 1244,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "Before opening a lake to ricing crews each season, tribal natural-resource officers judge the stand's readiness by three signs ____ and postpone the harvest if any of the three falls short.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": ", the density of the standing plants, the ripeness of the seed heads, and the firmness of the grain,"
+  },
+  {
+   "id": "B",
+   "text": "the density of the standing plants, the ripeness of the seed heads, and the firmness of the grain"
+  },
+  {
+   "id": "C",
+   "text": "—the density of the standing plants, the ripeness of the seed heads, and the firmness of the grain,"
+  },
+  {
+   "id": "D",
+   "text": "—the density of the standing plants, the ripeness of the seed heads, and the firmness of the grain—"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The list of three signs is an interrupting aside dropped into the middle of the sentence, and because the list carries its own commas, it must be fenced off by a matched pair of dashes — one before \"the density\" and one after \"the grain.\"\n\n**The Full Solution:**\n- Lift the aside out and the sentence still stands: \"officers judge the stand's readiness by three signs... and postpone the harvest if any of the three falls short.\" So the list is a parenthetical insertion.\n- The rule: a mid-sentence aside takes the same mark at both ends, and when the aside contains commas of its own, dashes keep its boundaries visible.\n- Only D supplies the matched pair of dashes around the comma-filled list.\n\n**Why the other choices are wrong:**\n- A: Its fencing commas drown among the list's internal commas, leaving the aside's edges unreadable.\n- B: With no punctuation at all, the list crashes into \"three signs\" on one side and \"and postpone\" on the other.\n- C: It opens with a dash but closes with a comma — mismatched fences around a single aside."
 }

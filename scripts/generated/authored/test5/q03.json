@@ -1,34 +1,34 @@
 {
-  "id": 503,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "The chemist Dorothy Hodgkin used X-ray crystallography to work out the three-dimensional structures of biologically important molecules, including penicillin and vitamin B12. In the years before computers, the method was extraordinarily ______: it required measuring the positions of thousands of diffraction spots by hand and reconstructing the molecule's shape through long chains of calculation that could take years to complete.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "approximate"
-    },
-    {
-      "id": "B",
-      "text": "automated"
-    },
-    {
-      "id": "C",
-      "text": "speculative"
-    },
-    {
-      "id": "D",
-      "text": "laborious"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"laborious.\" The colon introduces an explanation of what the blank means: measuring thousands of diffraction spots by hand and working through long chains of calculation over years. That describes painstaking, effort-intensive work, and \"laborious\" names it precisely. \"Approximate\" misreads the method, which yielded exact structures rather than rough ones; \"automated\" is the opposite of work done by hand; and \"speculative\" suggests guesswork, whereas the passage stresses careful empirical measurement.",
-  "_meta": {
-    "anchor": "Dorothy Hodgkin — chemist; X-ray crystallography of penicillin and vitamin B12"
+ "id": 503,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "Seventeenth-century Dutch banquet still lifes can look like records of interrupted meals: goblets lie tipped on their sides, a lemon's peel spirals off the table's edge, a pie stands half cut. The disorder, though, was entirely ______. Painters positioned each rumpled cloth and toppled cup so that the eye travels an intended path across the table, and preparatory studies show compositions being adjusted long before paint touched the panel.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "concealed"
+  },
+  {
+   "id": "B",
+   "text": "accidental"
+  },
+  {
+   "id": "C",
+   "text": "conventional"
+  },
+  {
+   "id": "D",
+   "text": "contrived"
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The text argues that the apparent mess was deliberately engineered, and \"contrived\" means artfully arranged or planned.\n\n**The Full Solution:**\n- The first sentence establishes the appearance: scenes that look like interrupted meals.\n- The word \"though\" signals a turn: the disorder is not what it seems.\n- The evidence that follows — objects positioned to steer the eye, compositions adjusted in preparatory studies — shows calculation, so the blank must mean deliberately constructed. \"Contrived\" fits exactly.\n\n**Why the other choices are wrong:**\n- A: \"Concealed\" fails because the disorder is on full display; what is hidden is the planning behind it, not the disorder itself.\n- B: \"Accidental\" states the opposite of the point the evidence supports.\n- C: \"Conventional\" addresses whether the disorder followed custom, but the sentences after the blank are about planning, not convention.",
+ "_meta": {
+  "anchor": "Dutch banquet still lifes — staged disorder guiding the viewer's eye"
+ }
 }

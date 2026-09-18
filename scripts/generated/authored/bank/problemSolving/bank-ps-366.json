@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-366",
+  "question": "A train covers the first $120$ kilometers of a $300$-kilometer route at an average speed of $80$ kilometers per hour. What constant speed, in kilometers per hour, must the train average over the remaining $180$ kilometers so that its average speed for the entire route is $75$ kilometers per hour?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$70$"
+    },
+    {
+      "id": "B",
+      "text": "$72$"
+    },
+    {
+      "id": "C",
+      "text": "$75$"
+    },
+    {
+      "id": "D",
+      "text": "$90$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "solves $\\frac{80 + v}{2} = 75$, averaging the two speeds instead of working with times",
+    "C": "assumes the second leg must be covered at the target average speed",
+    "D": "rounds the first leg's time to $2$ hours, leaving $2$ hours for the second leg: $\\frac{180}{2} = 90$"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Average Rate**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** The whole route must take $\\frac{300}{75} = 4$ hours. The first leg takes $\\frac{120}{80} = 1.5$ hours, leaving $2.5$ hours for $180$ kilometers: $\\frac{180}{2.5} = 72$.\n\n**The Full Solution:**\nStep 1: An average speed of $75$ kilometers per hour over $300$ kilometers means the total time must be $\\frac{300}{75} = 4$ hours.\nStep 2: The first leg uses $\\frac{120}{80} = 1.5$ hours, so the second leg must take $4 - 1.5 = 2.5$ hours.\nStep 3: The required speed is $\\frac{180}{2.5} = 72$ kilometers per hour. Check: $1.5 + 2.5 = 4$ hours for $300$ kilometers, and $\\frac{300}{4} = 75$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($70$): solves $\\frac{80 + v}{2} = 75$, averaging the two speeds instead of working with times\n* Choice C ($75$): assumes the second leg must be covered at the target average speed\n* Choice D ($90$): rounds the first leg's time to $2$ hours, leaving $2$ hours for the second leg: $\\frac{180}{2} = 90$\n\n**Test Day Takeaway:** Target-average problems are time problems: convert the target average into a total time, subtract the time already used, then divide the remaining distance by the remaining time."
+}

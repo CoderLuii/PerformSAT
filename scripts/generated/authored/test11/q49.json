@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the structure of DNA was revealed by Rosalind Franklin, who"
-    },
-    {
-      "id": "B",
-      "text": "Rosalind Franklin"
-    },
-    {
-      "id": "C",
-      "text": "it was Rosalind Franklin who"
-    },
-    {
-      "id": "D",
-      "text": "Rosalind Franklin's images"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The opening phrase \"Trained first as a physical chemist ...\" must modify the subject of the main clause, and only a person can have been trained as a chemist. \"Rosalind Franklin\" supplies that subject directly: she was trained, and she used X-ray diffraction. The other options make the subject \"the structure of DNA,\" the dummy \"it,\" or \"Rosalind Franklin's images,\" none of which can be the thing that was \"trained ... as a physical chemist,\" so each leaves the opening modifier dangling.",
-  "passage": "Trained first as a physical chemist before turning her attention to biological problems, ______ used X-ray diffraction to capture the remarkably sharp images of DNA fibers that later proved central to working out the three-dimensional structure of the molecule itself.",
-  "_meta": {
-    "anchor": "Rosalind Franklin: X-ray diffraction images of DNA",
-    "rule": "introductory participial phrase must attach to the subject of the main clause"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the antifreeze gene's origin was traced by Christina Cheng, who"
   },
-  "id": 1149,
-  "module": 2
+  {
+   "id": "B",
+   "text": "Christina Cheng"
+  },
+  {
+   "id": "C",
+   "text": "it was Christina Cheng who"
+  },
+  {
+   "id": "D",
+   "text": "Christina Cheng's analysis"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The opening modifier — \"Trained in Arthur DeVries's laboratory before leading investigations of her own\" — describes a person, so the person must stand immediately after the comma as the sentence's subject: \"Christina Cheng traced...\"\n\n**The Full Solution:**\n- An introductory participial phrase attaches to the subject that follows it; whoever was \"trained\" must be the first noun after the comma.\n- Only Cheng herself can have been trained in a laboratory. With choice B, the modifier lands on her, and \"traced\" gets its proper subject.\n\n**Why the other choices are wrong:**\n- A: It makes \"the antifreeze gene's origin\" the subject — an origin was never trained in anyone's laboratory. The modifier dangles.\n- C: The cleft \"it was ... who\" puts the empty pronoun \"it\" in the modifier's landing spot; \"it\" was not trained in a laboratory.\n- D: \"Christina Cheng's analysis\" makes the analysis the subject, but an analysis cannot be trained — the modifier dangles again.",
+ "passage": "Trained in Arthur DeVries's Antarctic-fish laboratory before leading investigations of her own, ______ traced the notothenioids' antifreeze gene to an unlikely source: a stretch of DNA derived from a digestive-enzyme gene, recruited over millions of years into an entirely new role.",
+ "_meta": {
+  "rule": "introductory participial modifier must attach to the human subject",
+  "anchor": "Antarctic fish antifreeze proteins — Christina Cheng, antifreeze-gene evolution from a trypsinogen-like gene",
+  "distractors": {
+   "A": "dangling modifier onto 'origin'",
+   "C": "cleft strands the modifier on 'it'",
+   "D": "dangling modifier onto 'research'"
+  }
+ },
+ "id": 1149,
+ "module": 2
 }

@@ -1,0 +1,52 @@
+{
+ "id": "bank-am-196",
+ "question": "The table gives three values of the exponential function $R$, where $R(t)$ is the water stored in a reservoir, in millions of liters, $t$ years after 2018. Which statement best describes how $R$ behaves?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Years after 2018",
+    "Storage (millions of liters)"
+   ],
+   "rows": [
+    [
+     "0",
+     "8"
+    ],
+    [
+     "1",
+     "10"
+    ],
+    [
+     "2",
+     "12.5"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "Storage increases by $2$ million liters each year."
+  },
+  {
+   "id": "B",
+   "text": "Storage increases by $25\\%$ each year."
+  },
+  {
+   "id": "C",
+   "text": "Storage increases by $125\\%$ each year."
+  },
+  {
+   "id": "D",
+   "text": "Storage increases by $20\\%$ each year."
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reads the first gap, $10 - 8 = 2$, as a constant yearly increase, but the next gap is $2.5$",
+  "C": "reports the multiplier $1.25$ as a percent increase instead of the extra $0.25$",
+  "D": "divides the increase by the LATER value, $\\frac{2}{10}$, instead of by the earlier one"
+ },
+ "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $\\frac{10}{8} = \\frac{12.5}{10} = 1.25$, a constant multiplier, so storage rises $25\\%$ each year.\n\n**The Full Solution:**\nStep 1: For an exponential function, consecutive values have a constant ratio, so divide: $10 \\div 8 = 1.25$.\nStep 2: The next ratio confirms it: $12.5 \\div 10 = 1.25$.\nStep 3: A multiplier of $1.25$ is an increase of $0.25$, or $25\\%$, per year. Check: $8(1.25)^{2} = 12.5$, matching the table ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$ million liters each year): the gaps are $2$ and then $2.5$, so no constant amount is added.\n* Choice C ($125\\%$): confuses the whole multiplier with the part that is added; a $125\\%$ increase would more than double the storage.\n* Choice D ($20\\%$): divides the $2$ million increase by $10$ rather than by the starting value $8$.\n\n**Test Day Takeaway:** Percent change always divides by the EARLIER value, and the multiplier is $1$ plus that percent."
+}

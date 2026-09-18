@@ -1,0 +1,25 @@
+{
+  "id": 9010,
+  "passage": "An ice sheet does not sit still. It creeps outward from the interior toward the coast, carrying along whatever has landed on its surface. Where a buried mountain range blocks that flow, the ice is forced upward, and dry winds sweeping the exposed surface strip snow away faster than new snow falls, laying bare old, deep ice as a field of blue. Meteorites that fell anywhere on the ice upstream over hundreds of thousands of years travel with the ice to such a barrier and are stranded at the surface as the ice around them wastes away. A survey team mapping a newly identified blue-ice field just upstream of a mountain barrier should therefore expect that the field ______",
+  "question": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "holds meteorites that fell within the past few decades and no older ones."
+    },
+    {
+      "id": "B",
+      "text": "has been swept clean of meteorites by the winds that remove the snow."
+    },
+    {
+      "id": "C",
+      "text": "holds far more meteorites per square kilometer than the surrounding snowfields."
+    },
+    {
+      "id": "D",
+      "text": "holds meteorites of kinds never recovered anywhere else on Earth."
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** The text describes a mechanism that gathers meteorites from a huge upstream area and leaves them on one small patch of exposed ice, so that patch should be unusually rich in meteorites compared with ordinary snow-covered ice.\n\n**The Full Solution:**\n- State the mechanism in your own words first: flowing ice collects meteorites over a vast area, a barrier stops the flow, and wind removes the ice at the surface while the rock stays behind.\n- That is a concentrating process, so the expectation is about density, meteorites per unit area, not about their age or their type. Choice C states exactly that.\n- Check the comparison the completion invites. The natural contrast is with nearby ice where snow accumulates instead of being stripped, and that is the comparison Choice C makes.\n\n**Why the other choices are wrong:**\n- A: The text says the opposite. The ice carries meteorites that fell across hundreds of thousands of years, so the field should hold old falls as well as recent ones.\n- B: The wind removes snow and ice, not the meteorites; that is precisely why the meteorites are left sitting on the surface.\n- D: Nothing in the text bears on what kinds of meteorites arrive. The process sorts by location, not by composition."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-363",
+  "question": "A survey drone flew along a shoreline at $30$ meters per minute for $12$ minutes and then at $45$ meters per minute for $8$ minutes. What was the drone's average speed, in meters per minute, for the entire flight?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36$"
+    },
+    {
+      "id": "B",
+      "text": "$37.5$"
+    },
+    {
+      "id": "C",
+      "text": "$60$"
+    },
+    {
+      "id": "D",
+      "text": "$75$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "averages the two speeds, $\\frac{30 + 45}{2}$, without weighting them by the time spent at each speed",
+    "C": "divides the total distance by $12$ minutes, the first interval only",
+    "D": "adds the two speeds, $30 + 45$"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Average Rate**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Distances: $30(12) = 360$ and $45(8) = 360$ meters, a total of $720$ meters in $20$ minutes, so $\\frac{720}{20} = 36$.\n\n**The Full Solution:**\nStep 1: Convert each rate and time into a distance: $30(12) = 360$ meters and $45(8) = 360$ meters.\nStep 2: Total distance $= 360 + 360 = 720$ meters; total time $= 12 + 8 = 20$ minutes.\nStep 3: Average speed $= \\frac{720}{20} = 36$ meters per minute. Check: the drone spent more of the flight at $30$ meters per minute, so the average must fall below the midpoint $37.5$, and $36$ does. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($37.5$): averages the two speeds, $\\frac{30 + 45}{2}$, without weighting them by the time spent at each speed\n* Choice C ($60$): divides the total distance by $12$ minutes, the first interval only\n* Choice D ($75$): adds the two speeds, $30 + 45$\n\n**Test Day Takeaway:** Rate $\\times$ time gives distance. Turn every leg into a distance first, then divide the total distance by the total time."
+}

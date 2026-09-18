@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-183",
+  "question": "A collector bought a coin for $\\$3{,}000$. The value of the coin increases by $10\\%$ each year after the purchase. What is the value of the coin, in dollars, $2$ years after the purchase?",
+  "correctAnswer": "3630",
+  "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**The correct answer is $3630$.**\n\n**The Fast Way (~20s):** Two $10\\%$ increases multiply by $(1.1)^2 = 1.21$, and $3{,}000(1.21) = 3{,}630$.\n\n**The Full Solution:**\nStep 1: A $10\\%$ increase multiplies the value by $1.1$, so $V(t) = 3{,}000(1.1)^t$ dollars after $t$ years.\nStep 2: Substituting $t = 2$ gives $V(2) = 3{,}000(1.1)^2 = 3{,}000(1.21)$.\nStep 3: $3{,}000(1.21) = 3{,}630$. Check one year at a time: $3{,}000 \\to 3{,}300 \\to 3{,}630$. $\\checkmark$\n\n**Common Mistakes:** Adding $10\\%$ of the ORIGINAL price twice gives $3{,}000 + 300 + 300 = 3{,}600$; it misses the $\\$30$ earned on the first year's $\\$300$ increase. Applying the increase only once gives $3{,}300$.\n\n**Test Day Takeaway:** Percent growth compounds — the second year's increase is computed on the NEW value, so multiply by $1.1$ twice rather than adding the same dollar amount twice."
+}

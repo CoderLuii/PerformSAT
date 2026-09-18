@@ -1,0 +1,46 @@
+{
+ "id": 5,
+ "question": "In the figure, $\\overline{PQ}$ is a diameter of a circle with center $W$, and point $R$ lies on the circle. If $PQ = 10$ and $PR = 6$, what is the length of $\\overline{QR}$?",
+ "diagram": {
+  "type": "circleWithInscribedTriangle",
+  "params": {
+   "labels": {
+    "A": "P",
+    "B": "Q",
+    "C": "R",
+    "O": "W"
+   },
+   "angleAtAValue": 53,
+   "showDiameter": true,
+   "showCenter": true,
+   "showRightAngleAtC": false,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "correctAnswer": "C",
+ "hint": "Ask what the diameter $\\overline{PQ}$ forces the angle at $R$ to be.",
+ "distractorNotes": {
+  "A": "subtracts the two given lengths",
+  "B": "assumes the triangle is isosceles",
+  "D": "reports the diameter"
+ },
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** An angle inscribed in a semicircle is a right angle, so triangle $PRQ$ is right with hypotenuse $10$; $QR = \\sqrt{10^2 - 6^2} = 8$.\n\n**The Full Solution:**\nStep 1: $R$ lies on the circle and $\\overline{PQ}$ is a diameter, so $\\angle PRQ$ is inscribed in a semicircle and measures $90^{\\circ}$.\nStep 2: In right triangle $PRQ$, the diameter is the hypotenuse: $PR^2 + QR^2 = PQ^2$, so $36 + QR^2 = 100$.\nStep 3: $QR^2 = 64$, so $QR = 8$. Check: $6$-$8$-$10$ is the $3$-$4$-$5$ triple scaled by $2$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): subtracts the given lengths, $10 - 6$, as if $P$, $R$, and $Q$ were collinear.\n* Choice B ($6$): copies $PR$, assuming the triangle is isosceles when nothing in the figure forces that.\n* Choice D ($10$): reports the diameter, the length already given.\n\n**Test Day Takeaway:** A diameter plus a third point on the circle is a right triangle every time, with the diameter as the hypotenuse."
+}

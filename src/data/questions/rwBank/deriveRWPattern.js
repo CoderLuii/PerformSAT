@@ -40,6 +40,10 @@ const TRANSITION_BUCKETS = {
     'on the other hand', 'in contrast', 'by contrast', 'even so', 'despite this',
     'however', 'nevertheless', 'nonetheless', 'conversely', 'instead', 'rather',
     'regardless', 'still', 'yet',
+    // 2026-08-13 predictability fixes: concession/juxtaposition keys promoted
+    // from permanent-decoy status ('granted' at PT10 M2E, 'by comparison' at
+    // PT12) — bucketed here so they keep Tier-1 drill routing.
+    'granted', 'by comparison',
   ],
   'transitions-example-emphasis': [
     'for example', 'for instance', 'in particular', 'in other words', 'in fact',
@@ -48,11 +52,17 @@ const TRANSITION_BUCKETS = {
   'transitions-cause-effect': [
     'as a result', 'for this reason', 'because of this', 'therefore', 'thus',
     'consequently', 'hence', 'accordingly', 'so',
+    // 2026-08-13: 'in turn' keys entered the corpus with the predictability
+    // fixes (chained-consequence passages); bucket them here so those items
+    // keep Tier-1 drill routing instead of falling to Tier-3.
+    'in turn',
   ],
   'transitions-sequence-time': [
     'more recently', 'since then', 'in time', 'before long', 'meanwhile',
     'subsequently', 'afterward', 'eventually', 'ultimately', 'throughout',
     'finally', 'later', 'then', 'today', 'first', 'second', 'next',
+    // 2026-08-13: 'thereafter' key promoted from permanent-decoy status (PT5).
+    'thereafter',
   ],
 };
 

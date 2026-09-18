@@ -1,34 +1,34 @@
 {
-  "id": 552,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "In the sixteenth century, raw silk reached the Ottoman market town of Bursa almost entirely by caravan from Iran, and the city's weavers and the imperial treasury both depended on a steady flow. When long wars with the empire's eastern neighbors repeatedly closed the caravan roads, that flow became unpredictable. ______ Bursa's authorities sought new sources, encouraging the cultivation of silk closer to home so that the city's looms would not stand idle whenever the eastern routes were cut.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "B",
-      "text": "For example,"
-    },
-    {
-      "id": "C",
-      "text": "As a result,"
-    },
-    {
-      "id": "D",
-      "text": "Meanwhile,"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"As a result,\". The sentence before the blank says the supply of silk became unpredictable when the caravan roads closed; the sentence after reports that Bursa's authorities responded by seeking new sources closer to home. The second is a consequence of the first, which \"As a result,\" marks. \"Nevertheless,\" would signal contrast, \"For example,\" would introduce an instance, and \"Meanwhile,\" would mark simultaneous unrelated events—none of which captures the cause-and-effect relation.",
-  "_meta": {
-    "anchor": "Ottoman Bursa silk trade; disrupted caravans prompt new local sources; causal transition"
+ "id": 552,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "When the Croton Aqueduct began delivering water to New York City in 1842, it replaced wells and rain cisterns with a supply that seemed limitless, and the city billed most households a flat annual rate however much they drew. Consumption ballooned to several times that of comparable European cities, and inspectors found taps left running for days and fixtures leaking unrepaired, since no one paid a cent more for the waste. ______ the city eventually turned to water meters, charging by the gallon so that a household's bill at last reflected its actual use.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Nevertheless,"
+  },
+  {
+   "id": "B",
+   "text": "In addition,"
+  },
+  {
+   "id": "C",
+   "text": "As a result,"
+  },
+  {
+   "id": "D",
+   "text": "Meanwhile,"
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The metering policy is presented as the city's response to the runaway waste that flat-rate billing produced, so the sentence needs a cause-and-effect transition.\n\n**The Full Solution:**\n- The first two sentences build the cause: a seemingly limitless supply, a flat rate that made waste free, ballooning consumption, running taps, unrepaired leaks.\n- The final sentence delivers the consequence: the city adopted meters so bills would track use — a remedy aimed squarely at the incentive problem just described.\n- \"As a result\" states that causal link directly.\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" would cast metering as happening despite the waste, when the waste is precisely why metering came.\n- B: \"In addition\" would stack metering alongside the waste as one more parallel fact, missing the cause-effect relation.\n- D: \"Meanwhile\" would place the metering in a separate simultaneous thread, but the sentence says \"eventually\" — it follows from, and after, the problem.",
+ "_meta": {
+  "anchor": "Croton Aqueduct flat-rate waste and the turn to water meters; causal transition"
+ }
 }

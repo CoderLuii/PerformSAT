@@ -1,0 +1,44 @@
+{
+  "id": "bank-ps-307",
+  "question": "The box plot summarizes the one-way commute distances, in kilometers, of the $35$ employees at a firm. What is the median commute distance, in kilometers?",
+  "diagram": {
+    "type": "boxPlot",
+    "params": {
+      "min": 3,
+      "q1": 9,
+      "median": 14,
+      "q3": 22,
+      "max": 31,
+      "xLabel": "Commute distance (km)",
+      "xMin": 0,
+      "xMax": 35,
+      "xGridStep": 1,
+      "xLabelStep": 5
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$9$"
+    },
+    {
+      "id": "B",
+      "text": "$14$"
+    },
+    {
+      "id": "C",
+      "text": "$17$"
+    },
+    {
+      "id": "D",
+      "text": "$22$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the left edge of the box, the first quartile.",
+    "C": "averages the two whisker ends, $\\frac{3 + 31}{2}$, which is the midrange, not the median.",
+    "D": "reads the right edge of the box, the third quartile."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Box Plot Interpretation**\n\n**Choice B is correct.**\n\n**The Fast Way (~5s):** The median is the line drawn inside the box, at $14$ kilometers.\n\n**The Full Solution:**\nStep 1: A box plot marks five values: the minimum and maximum at the whisker ends, the quartiles at the box edges, and the median as the segment inside the box.\nStep 2: The box runs from $9$ to $22$, and the interior segment sits at $14$.\nStep 3: So the median commute distance is $14$ kilometers. Check: the median must fall between $Q_1 = 9$ and $Q_3 = 22$, and $14$ does. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): reads the left edge of the box, the first quartile.\n* Choice C ($17$): averages the two whisker ends, $\\frac{3 + 31}{2}$, which is the midrange, not the median.\n* Choice D ($22$): reads the right edge of the box, the third quartile.\n\n**Test Day Takeaway:** The median is the interior line, never the box edge and never the midpoint of the whiskers. A box plot shows no mean at all."
+}

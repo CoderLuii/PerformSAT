@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "In a chemistry lab, $6\\%$ of a sample's mass is sodium. Which of the following decimals is equivalent to $6\\%$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.006$"
+    },
+    {
+      "id": "B",
+      "text": "$0.06$"
+    },
+    {
+      "id": "C",
+      "text": "$0.6$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by 1,000",
+    "C": "moves the decimal one place",
+    "D": "drops the percent without dividing"
+  },
+  "correctAnswer": "B",
+  "hint": "A percent counts hundredths, so the decimal point moves two places to the left.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~10s):** $6\\% = \\frac{6}{100} = 0.06$.\n\n**The Full Solution:**\nStep 1: The word percent means per hundred, so $6\\%$ is the fraction $\\frac{6}{100}$.\nStep 2: Dividing $6$ by $100$ moves the decimal point two places to the left: $6. \\to 0.06$.\nStep 3: So $6\\% = 0.06$. Check by reversing: $0.06 \\times 100 = 6$, which is the original percent. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.006$): divides by $1{,}000$, moving the decimal point three places.\n* Choice C ($0.6$): moves the decimal point only one place, which is $60\\%$.\n* Choice D ($6$): drops the percent sign without dividing at all.\n\n**Test Day Takeaway:** Converting a percent to a decimal is a single division by $100$; converting back is a single multiplication by $100$."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-281",
+ "question": "A tram catenary's tension index is modeled by $f(x)=\\dfrac{12}{x-2}$, where $x>2$ is the span in hundreds of meters. For what span is the tension index $\\dfrac{3}{2}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 12 by the numerator 3 only, getting x - 2 = 4 and x = 6",
+  "B": "stops at x - 2 = 8 and reports 8 instead of x",
+  "D": "multiplies 12 by 3/2 instead of dividing, reporting 18"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Rational Equation with Extraneous Solution**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $\\frac{12}{x-2}=\\frac{3}{2}$ gives $x-2=12\\div\\frac{3}{2}=8$, so $x=10$.\n\n**The Full Solution:**\n\nStep 1: Set the model equal to the target: $\\frac{12}{x-2}=\\frac{3}{2}$.\n\nStep 2: Cross multiply: $2\\cdot12=3(x-2)$, so $24=3x-6$.\n\nStep 3: Solve: $3x=30$ and $x=10$, which satisfies $x>2$. Check: $\\frac{12}{10-2}=\\frac{12}{8}=\\frac{3}{2}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($6$): divides $12$ by the numerator $3$ alone, getting $x-2=4$.\n* Choice B ($8$): stops at $x-2=8$ and reports that value as the span.\n* Choice D ($18$): multiplies $12$ by $\\frac{3}{2}$ instead of dividing by it.\n\n**Test Day Takeaway:** Cross multiplying turns a rational equation into a linear one in a single step — then finish solving for $x$, not for the denominator."
+}

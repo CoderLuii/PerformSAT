@@ -1,0 +1,52 @@
+{
+  "id": "bank-ps-231",
+  "question": "The table gives the area, in hectares, occupied by overwintering monarch colonies at three groves during one season. The next season, grove A measured $120\\%$ of the area shown and grove B measured $50\\%$ of the area shown, while the three groves combined measured $80\\%$ of the combined area shown. What was grove C's area, in hectares, the next season?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Grove",
+        "Area (hectares)"
+      ],
+      "rows": [
+        [
+          "A",
+          "2.5"
+        ],
+        [
+          "B",
+          "6.0"
+        ],
+        [
+          "C",
+          "1.5"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1.2$"
+    },
+    {
+      "id": "B",
+      "text": "$1.8$"
+    },
+    {
+      "id": "C",
+      "text": "$2.0$"
+    },
+    {
+      "id": "D",
+      "text": "$4.0$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "applies the combined $80\\%$ factor to grove C on its own, $0.80(1.5) = 1.2$",
+    "B": "applies grove A's $120\\%$ factor to grove C, $1.20(1.5) = 1.8$",
+    "D": "uses the original combined area of $10$ hectares instead of $80\\%$ of it, $10 - 3.0 - 3.0 = 4.0$"
+  },
+  "explanation": "**SAT Pattern: Chained Percent Relationship**\n\n**Choice C is correct.** The three groves together covered $0.80(10) = 8$ hectares, and grove C held what groves A and B did not: $8 - 3.0 - 3.0 = 2.0$ hectares.\n\n**The Fast Way (~60s):** New total $= 0.80(10) = 8$; new A $= 1.20(2.5) = 3.0$; new B $= 0.50(6.0) = 3.0$; so new C $= 8 - 3.0 - 3.0 = 2.0$ hectares.\n\n**The Full Solution:**\n\nStep 1: Find the combined area shown and the combined area the next season. The table gives $2.5 + 6.0 + 1.5 = 10$ hectares, so the next season the three groves covered $0.80(10) = 8$ hectares.\n\nStep 2: Find the next season's areas for the two groves whose factors are given. Grove A covered $1.20(2.5) = 3.0$ hectares and grove B covered $0.50(6.0) = 3.0$ hectares.\n\nStep 3: Subtract to isolate grove C: $8 - 3.0 - 3.0 = 2.0$ hectares. Check: $3.0 + 3.0 + 2.0 = 8$, which is $80\\%$ of $10$ hectares.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($1.2$): applies the combined factor to grove C alone, $0.80(1.5) = 1.2$. The $80\\%$ describes the three groves together, not each one.\n* Choice B ($1.8$): applies grove A's factor to grove C, $1.20(1.5) = 1.8$.\n* Choice D ($4.0$): forgets that the combined area shrank and subtracts from the original $10$ hectares: $10 - 3.0 - 3.0 = 4.0$.\n\n**Test Day Takeaway:** A percent attached to a total constrains the parts only through their sum -- convert the total first, then let subtraction find the part nobody told you about."
+}

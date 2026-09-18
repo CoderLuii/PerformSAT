@@ -1,0 +1,30 @@
+{
+  "id": 7,
+  "question": "The graph of $y=f(x)$ in the $xy$-plane passes through the point $(0,7)$. Which point must lie on the graph of $y=f(x-5)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-5,7)$"
+    },
+    {
+      "id": "B",
+      "text": "$(0,2)$"
+    },
+    {
+      "id": "C",
+      "text": "$(0,12)$"
+    },
+    {
+      "id": "D",
+      "text": "$(5,7)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "shifts left instead of right",
+    "B": "applies the shift to the output",
+    "C": "applies the shift to the output with the wrong sign"
+  },
+  "correctAnswer": "D",
+  "hint": "Find the value of $x$ that makes $x-5$ equal to the input you already know.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~15s):** Setting $x-5=0$ gives $x=5$, and the output there is $f(0)=7$, so $(5,7)$ is on the new graph.\n\n**The Full Solution:**\nStep 1: The given point says $f(0)=7$.\nStep 2: For $y=f(x-5)$ to use that known output, the inside expression must equal $0$: $x-5=0$, so $x=5$.\nStep 3: At $x=5$ the value is $f(5-5)=f(0)=7$, giving the point $(5,7)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-5,7)$): moves left; inside the function, subtracting $5$ shifts the graph right.\n* Choice B ($(0,2)$): subtracts $5$ from the output, which would require $f(x)-5$.\n* Choice C ($(0,12)$): adds $5$ to the output, again treating an inside change as a vertical one.\n\n**Test Day Takeaway:** For $f(x-c)$, add $c$ to the $x$-coordinate of every known point and leave the height alone."
+}

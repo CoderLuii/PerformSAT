@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A crucible residue is heated in a furnace, and the equation $m = 62 - 1.4t$ gives its mass $m$, in grams, after $t$ minutes of heating, for $0 \\le t \\le 40$. What does the number $1.4$ tell a chemist about the residue?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The residue has a mass of $1.4$ grams when heating begins."
+  },
+  {
+   "id": "B",
+   "text": "The mass of the residue increases by $1.4$ grams each minute of heating."
+  },
+  {
+   "id": "C",
+   "text": "The residue loses a total of $1.4$ grams over the whole heating."
+  },
+  {
+   "id": "D",
+   "text": "The mass of the residue decreases by $1.4$ grams each minute of heating."
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reads 1.4 as a starting value, which is the role of the constant 62, not of the coefficient of t",
+  "B": "keeps the size of the rate but drops the minus sign in front of 1.4, reversing the direction of change",
+  "C": "treats the per-minute rate as a single total change over the entire heating"
+ },
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** In $m = 62 - 1.4t$ the coefficient of $t$ is $-1.4$, so each additional minute changes the mass by $-1.4$ grams — a loss of $1.4$ grams per minute.\n\n**The Full Solution:**\nStep 1: The model is linear in $t$, written as $m = b + at$ with $b = 62$ grams and $a = -1.4$ grams per minute. The constant $b$ is the mass at $t = 0$; the coefficient $a$ is the rate of change.\nStep 2: A rate of change is a per-unit quantity: $-1.4$ means the mass changes by $-1.4$ grams for each one-minute increase in $t$.\nStep 3: Because the change is negative, the residue loses $1.4$ grams per minute. Check: $m(0) = 62$ and $m(1) = 62 - 1.4 = 60.6$, a drop of exactly $1.4$ grams in one minute ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: the mass at the start is $m(0) = 62$ grams, the constant term. The number $1.4$ is attached to $t$, so it describes change, not a starting amount.\n* Choice B: the size $1.4$ is right, but the model subtracts $1.4t$. A minus sign in front of the rate means the quantity is falling, not rising.\n* Choice C: a slope is a change per minute, not a change over the whole heating. After $10$ minutes the residue has lost $14$ grams, not $1.4$.\n\n**Test Day Takeaway:** The coefficient of the variable is always a rate — read its sign for direction and attach the phrase \"per unit of the variable\" to its size."
+}

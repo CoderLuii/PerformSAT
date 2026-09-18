@@ -1,0 +1,54 @@
+{
+ "id": "bank-am-255",
+ "question": "The table gives four values of the function $f$, which records a baggage carousel's belt offset in millimeters. A second function $g$ assigns to each input the opposite of the value that $f$ assigns to it. What is $g(0)$?",
+ "diagram": {
+  "type": "table",
+  "params": {
+   "xHeader": "x",
+   "yHeader": "f(x)",
+   "rows": [
+    [
+     "-2",
+     "7"
+    ],
+    [
+     "0",
+     "3"
+    ],
+    [
+     "1",
+     "-1"
+    ],
+    [
+     "4",
+     "5"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-7$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "negates f(-2) = 7 instead of f(0) = 3, giving -7",
+  "C": "reports f(0) = 3 without applying the sign change",
+  "D": "reads the wrong row and reports f(-2) = 7"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Reflection of Graph**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $g$ negates every output of $f$, and the table gives $f(0)=3$, so $g(0)=-3$.\n\n**The Full Solution:**\n\nStep 1: The description says $g(x)=-f(x)$: the input stays the same and only the sign of the output changes.\n\nStep 2: Read the row with $x=0$: the table gives $f(0)=3$.\n\nStep 3: Apply the sign change: $g(0)=-3$. Check: reflecting a point $(0,3)$ across the horizontal axis lands on $(0,-3)$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-7$): negates $f(-2)=7$ instead of $f(0)$.\n* Choice C ($3$): reports the table value without the sign change.\n* Choice D ($7$): reads the wrong row entirely.\n\n**Test Day Takeaway:** Negating the output moves a point vertically only; the input you look up never changes."
+}

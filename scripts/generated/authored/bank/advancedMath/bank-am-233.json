@@ -1,0 +1,39 @@
+{
+  "id": "bank-am-233",
+  "question": "The V-shaped graph of $y = f(x)$ in the $xy$-plane is shown. The function $g$ is defined so that the graph of $y = g(x)$ is the graph of $y = f(x)$ shifted $4$ units left and $1$ unit up. Which of the following defines $g$?",
+  "diagram": {
+    "type": "absoluteValue",
+    "params": {
+      "vertex": [
+        2,
+        -3
+      ],
+      "slope": 1
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$g(x) = |x - 6| - 2$"
+    },
+    {
+      "id": "B",
+      "text": "$g(x) = |x + 2| - 4$"
+    },
+    {
+      "id": "C",
+      "text": "$g(x) = |x + 2| - 2$"
+    },
+    {
+      "id": "D",
+      "text": "$g(x) = |x + 4| - 2$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "shifts $4$ units right instead of left",
+    "B": "shifts $1$ unit down instead of up",
+    "D": "puts the shift $4$ inside the bars instead of combining it with the original $-2$"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Function from Shifted Graph**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The graph gives $f(x) = |x - 2| - 3$; moving left $4$ and up $1$ sends the vertex $(2, -3)$ to $(-2, -2)$, so $g(x) = |x + 2| - 2$.\n\n**The Full Solution:**\nStep 1: The graph is a V with vertex $(2, -3)$ and sides of slope $1$ and $-1$, so $f(x) = |x - 2| - 3$.\nStep 2: Shifting left $4$ units replaces $x$ with $x + 4$: $f(x + 4) = |x + 4 - 2| - 3 = |x + 2| - 3$.\nStep 3: Shifting up $1$ unit adds $1$: $g(x) = |x + 2| - 3 + 1 = |x + 2| - 2$. Check the vertex: $g(-2) = 0 - 2 = -2$, and $(-2, -2)$ is $(2, -3)$ moved left $4$ and up $1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($|x - 6| - 2$): vertex $(6, -2)$ — the horizontal shift went right.\n* Choice B ($|x + 2| - 4$): vertex $(-2, -4)$ — the vertical shift went down.\n* Choice D ($|x + 4| - 2$): vertex $(-4, -2)$ — it writes the shift $4$ inside the bars instead of applying it to the vertex's $x$-coordinate of $2$.\n\n**Test Day Takeaway:** Write the parent equation from the vertex first, then substitute — combining $x + 4$ with the existing $-2$ is what turns $|x - 2|$ into $|x + 2|$."
+}

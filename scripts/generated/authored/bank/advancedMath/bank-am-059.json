@@ -1,0 +1,29 @@
+{
+  "question": "A design constant $k$ satisfies the following condition: when the product $(x^{2}+kx-4)(2x-5)$ is expanded, the sum of its coefficients of even powers of $x$ minus the sum of its coefficients of odd powers of $x$ equals $63$. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-18$"
+    },
+    {
+      "id": "B",
+      "text": "$-12$"
+    },
+    {
+      "id": "C",
+      "text": "$-6$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "used f(1), the plain sum of all coefficients, solving -3k+9=63",
+    "B": "reversed the two sums, solving -(7k+21)=63",
+    "C": "substituted x=-1 but wrote k(-1) as +k, solving -7k+21=63"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Alternating-Sign Coefficient Sum via $f(-1)$**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The even-power coefficients minus the odd-power coefficients is exactly $f(-1)$. Substituting $x=-1$ gives $(1-k-4)(-2-5)=7k+21$, so $7k+21=63$ and $k=6$.\n\n**The Full Solution:**\nStep 1: Expand the product: $(x^{2}+kx-4)(2x-5)=2x^{3}+(2k-5)x^{2}+(-5k-8)x+20$.\nStep 2: The even-power coefficients are $2k-5$ and $20$; the odd-power coefficients are $2$ and $-5k-8$. Their difference is $(2k-5+20)-(2-5k-8)=7k+21$.\nStep 3: Solve $7k+21=63$, so $7k=42$ and $k=6$. Check: with $k=6$ the expansion is $2x^{3}+7x^{2}-38x+20$, and $(7+20)-(2-38)=27+36=63$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-18$): used $f(1)$, the plain sum of all coefficients, solving $-3k+9=63$.\n* Choice B ($-12$): reversed the two sums, solving $-(7k+21)=63$.\n* Choice C ($-6$): substituted $x=-1$ but wrote $k(-1)$ as $+k$, solving $-7k+21=63$.\n\n**Test Day Takeaway:** An alternating sum of coefficients is the polynomial evaluated at $x=-1$; substitute rather than expand.",
+  "id": "bank-am-059"
+}

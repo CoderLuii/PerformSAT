@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-149",
+  "question": "The mass of salt dissolved in solution X is $45\\%$ of the combined mass of salt dissolved in solutions Y and Z. Solution Y contains $130$ grams of salt and solution Z contains $70$ grams of salt. How many grams of salt are dissolved in solution X?",
+  "correctAnswer": "90",
+  "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**The correct answer is $90$.**\n\n**The Fast Way (~10s):** $130 + 70 = 200$ grams combined; $45\\%$ of $200$ is $0.45 \\times 200 = 90$ grams.\n\n**The Full Solution:**\nStep 1: The percent applies to the combined mass, so add: $130 + 70 = 200$.\nStep 2: Write $45\\%$ as $0.45$.\nStep 3: Multiply: $0.45 \\times 200 = 90$ grams. Check: half of $200$ is $100$, and $45\\%$ is slightly less than half, so $90$ is reasonable. $\\checkmark$\n\n**Common Mistakes:** Taking $45\\%$ of only $130$ ($58.5$) or only $70$ ($31.5$); subtracting to get $200 - 90 = 110$; adding to get $200 + 90 = 290$ as if X were $45\\%$ more than Y and Z together.\n\n**Test Day Takeaway:** Identify exactly what the percent is \"of\"; here it is the sum, so combine before multiplying."
+}

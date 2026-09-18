@@ -1,0 +1,22 @@
+{
+ "id": "bank-geo-059",
+ "question": "The steel truss shown for a wind-turbine service platform has a right angle at $M$, and brace $\\overline{MP}$ meets hypotenuse $\\overline{LN}$ at a right angle. With lengths in feet, what is the perimeter of triangle $LMN$?",
+ "diagram": {
+  "type": "rightTriangleWithAltitude",
+  "params": {
+   "vertexLabels": [
+    "L",
+    "M",
+    "N",
+    "P"
+   ],
+   "sideLengths": {
+    "PM": "12",
+    "PN": "16"
+   },
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "60",
+ "explanation": "**SAT Pattern: Altitude to Hypotenuse**\n\n**The correct answer is $60$.**\n\n**The Fast Way (~60s):** $LP=\\frac{12^{2}}{16}=9$, so $LN=25$, and the legs are $15$ and $20$, giving $15+20+25=60$ feet.\n\n**The Full Solution:**\n\nStep 1: Use the altitude relation. The altitude to the hypotenuse satisfies $MP^{2}=LP\\cdot PN$, so $144=LP\\cdot16$ and $LP=9$ feet.\n\nStep 2: Build the hypotenuse. $LN=LP+PN=9+16=25$ feet.\n\nStep 3: Use the leg relations. $LM^{2}=LP\\cdot LN=9\\cdot25=225$ gives $LM=15$, and $MN^{2}=PN\\cdot LN=16\\cdot25=400$ gives $MN=20$. The perimeter is $15+20+25=60$ feet.\n\nCheck: $15^{2}+20^{2}=225+400=625=25^{2}$, so triangle $LMN$ is right-angled at $M$ as stated.\n\n**Common Mistakes:**\n\n* $25$: reports the hypotenuse $LN$ alone instead of the sum of all three sides.\n* $47$: adds the altitude $MP=12$ in place of the hypotenuse, giving $15+20+12$.\n* $72$: adds all four marked segments, $15+20+25+12$, counting the interior altitude as a side.\n\n**Test Day Takeaway:** The altitude to a hypotenuse creates three similar triangles; each leg is the geometric mean of the whole hypotenuse and the segment beneath it."
+}

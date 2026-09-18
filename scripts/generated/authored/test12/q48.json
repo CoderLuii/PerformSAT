@@ -1,31 +1,31 @@
 {
-  "id": 1248,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "For generations, the European folktales collected in the nineteenth century were treated as products of a purely oral peasant tradition, untouched by the printed page ____ recent study of the collectors' notebooks has shown that many of their \"folk\" informants were literate townspeople retelling stories they had first encountered in printed collections.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "page however"
-    },
-    {
-      "id": "B",
-      "text": "page; however,"
-    },
-    {
-      "id": "C",
-      "text": "page, however;"
-    },
-    {
-      "id": "D",
-      "text": "page, however,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. Two independent clauses meet at the blank, and the conjunctive adverb \"however\" cannot join them with only a comma. A semicolon must come before \"however\" to separate the clauses, with a comma after it: \"page; however,\". \"Page however\" omits the needed punctuation. \"Page, however;\" reverses the marks, putting the weaker comma between the clauses and the semicolon inside the second clause. \"Page, however,\" sets \"however\" off as an interrupter but still leaves the two clauses joined by only a comma, a comma splice."
+ "id": 1248,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "The last working coasting schooners were long dismissed as quaint survivals, kept afloat by sentiment rather than ____ recent studies of harbor ledgers have shown that on many short routes the vessels remained the cheapest carriers of stone and cordwood well into the twentieth century.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "profit however"
+  },
+  {
+   "id": "B",
+   "text": "profit; however,"
+  },
+  {
+   "id": "C",
+   "text": "profit, however;"
+  },
+  {
+   "id": "D",
+   "text": "profit, however,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Two independent clauses meet at the blank, and the conjunctive adverb \"however\" cannot join them with commas alone: it takes a semicolon before it and a comma after it — \"profit; however,\".\n\n**The Full Solution:**\n- Check each side: \"The last working coasting schooners were long dismissed as quaint survivals, kept afloat by sentiment rather than profit\" is a complete sentence, and so is \"recent studies of harbor ledgers have shown that... the vessels remained the cheapest carriers...\"\n- The rule: when \"however\" links two independent clauses, the clause boundary needs a semicolon (or a period), with a comma setting off \"however\" from the clause it introduces.\n- That yields \"profit; however, recent studies...\"\n\n**Why the other choices are wrong:**\n- A: \"Profit however\" supplies no punctuation at all, fusing the clauses and leaving \"however\" floating between them.\n- C: \"Profit, however;\" reverses the marks, putting the weak comma at the clause boundary and stranding the semicolon after \"however.\"\n- D: \"Profit, however,\" treats \"however\" as a mere aside while still splicing the two independent clauses with a comma."
 }

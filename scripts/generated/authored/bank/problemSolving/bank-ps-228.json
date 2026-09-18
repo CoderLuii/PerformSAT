@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-228",
+  "question": "The mass of sample $P$ is $60\\%$ of the mass of sample $Q$, and the mass of sample $Q$ is $30\\%$ less than the mass of sample $R$. The mass of sample $P$ is what percent of the mass of sample $R$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$18\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$30\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$42\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$90\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies by 0.30 instead of by 0.70",
+    "B": "subtracts 30 from 60",
+    "D": "adds the two percents"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Chained Percent Relationship**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** \"$30\\%$ less\" means $Q = 0.70R$, so $P = 0.60(0.70R) = 0.42R$, or $42\\%$.\n\n**The Full Solution:**\nStep 1: Translate the second relationship: a mass $30\\%$ less than $R$ is $100\\% - 30\\% = 70\\%$ of $R$, so $Q = 0.70R$.\nStep 2: Translate the first: $P = 0.60Q$.\nStep 3: Substitute: $P = 0.60(0.70R) = 0.42R$, so $P$ is $42\\%$ of $R$. Check with $R = 200$: $Q = 140$ and $P = 84$, and $\\frac{84}{200} = 42\\%$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($18\\%$): multiplies by $0.30$, the amount removed, instead of by $0.70$, the amount that remains.\n* Choice B ($30\\%$): subtracts the two percents rather than chaining them.\n* Choice D ($90\\%$): adds the percents, which would make $P$ larger than $Q$.\n\n**Test Day Takeaway:** \"$k\\%$ less than\" converts to a multiplier of $1 - \\frac{k}{100}$ before anything else happens."
+}

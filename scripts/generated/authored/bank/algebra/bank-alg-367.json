@@ -1,0 +1,53 @@
+{
+ "id": "bank-alg-367",
+ "question": "The shaded region shows every ordered pair that satisfies a paving crew's system of inequalities, where $x$ is the tons of base course placed and $y$ the tons of surface course placed. Which ordered pair lies in that region?",
+ "diagram": {
+  "type": "twoLineGraph",
+  "params": {
+   "intersection": {
+    "x": 3,
+    "y": 3
+   },
+   "slope1": 2,
+   "slope2": -1,
+   "xRange": [
+    -1,
+    7
+   ],
+   "yRange": [
+    -6,
+    12
+   ],
+   "shadeRegion": "below-both",
+   "showIntersection": false,
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(0, 0)$"
+  },
+  {
+   "id": "B",
+   "text": "$(4, 1)$"
+  },
+  {
+   "id": "C",
+   "text": "$(2, 3)$"
+  },
+  {
+   "id": "D",
+   "text": "$(6, 4)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "sits below the falling boundary but above the rising one, since 2(0) - 3 = -3 is less than 0",
+  "C": "sits above the rising boundary, since 2(2) - 3 = 1 is less than 3",
+  "D": "sits above the falling boundary, since -6 + 6 = 0 is less than 4"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: System of Linear Inequalities**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The shaded region lies below both boundaries, $y = 2x - 3$ and $y = -x + 6$; at $(4, 1)$, $1 \\leq 2(4) - 3 = 5$ and $1 \\leq -4 + 6 = 2$, so it qualifies.\n\n**The Full Solution:**\nStep 1: Read the boundaries from the figure. One rises $2$ units per unit right and crosses the $y$-axis at $-3$, giving $y = 2x - 3$; the other falls $1$ unit per unit right and crosses at $6$, giving $y = -x + 6$. The two meet at $(3, 3)$.\nStep 2: The shading lies below both lines, so the system is $y \\leq 2x - 3$ and $y \\leq -x + 6$. A point qualifies only when BOTH inequalities hold.\nStep 3: Test $(4, 1)$. The first boundary gives $2(4) - 3 = 5$, and $1 \\leq 5$; the second gives $-4 + 6 = 2$, and $1 \\leq 2$. Both hold, so $(4, 1)$ lies in the shaded region. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(0, 0)$): clears the falling boundary but sits above the rising one, since $2(0) - 3 = -3$ and $0 > -3$.\n* Choice C ($(2, 3)$): sits above the rising boundary, since $2(2) - 3 = 1$ and $3 > 1$.\n* Choice D ($(6, 4)$): clears the rising boundary but sits above the falling one, since $-6 + 6 = 0$ and $4 > 0$.\n\n**Test Day Takeaway:** A solution of a system of inequalities must satisfy EVERY inequality — test a candidate against both boundaries before accepting it."
+}

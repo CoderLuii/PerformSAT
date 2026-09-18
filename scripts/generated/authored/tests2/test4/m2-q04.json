@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "An arch is graphed as $y = 2x^2 - 8x + k$, and a tie rod bolted across it is graphed as $y = 4x - 13$. The rod is tangent to the arch. What is $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-31$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$23$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses b^2 + 4ac = 0 instead of b^2 - 4ac = 0, giving 144 + 8(k + 13) = 0 and k = -31",
+  "C": "never moves the -13 across, setting the discriminant of 2x^2 - 12x + k to zero and getting k = 18",
+  "D": "drops the leading 2 from the discriminant, using 144 - 4(k + 13) = 0 and getting k = 23"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** Setting the two expressions equal gives $2x^2 - 12x + (k + 13) = 0$. Tangency means one repeated root, so $144 - 8(k + 13) = 0$ and $k = 5$.\n\n**The Full Solution:**\nStep 1: A tangent line meets the curve exactly once, so $2x^2 - 8x + k = 4x - 13$ has exactly one solution.\nStep 2: Collect every term on one side: $2x^2 - 12x + (k + 13) = 0$. Here $a = 2$, $b = -12$, and the constant is $k + 13$.\nStep 3: One repeated root means the discriminant is $0$: $(-12)^2 - 4(2)(k + 13) = 0$, so $144 - 8k - 104 = 0$ and $k = 5$. Check: with $k = 5$ the equation is $2x^2 - 12x + 18 = 2(x - 3)^2 = 0$, a single root at $x = 3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-31$): this comes from $144 + 8(k + 13) = 0$, a sign slip in the discriminant. The formula subtracts $4ac$; it never adds it.\n* Choice C ($18$): this sets the discriminant of $2x^2 - 12x + k$ to zero, forgetting to bring the $-13$ across with the rest of the line.\n* Choice D ($23$): this uses $144 - 4(k + 13) = 0$, dropping the leading coefficient $2$ from $4ac$. The $a$ in the discriminant is the coefficient after the equation is collected on one side.\n\n**Test Day Takeaway:** \"Tangent\" is a discriminant instruction. Move everything to one side, then set $b^2 - 4ac = 0$ using the collected coefficients."
+}

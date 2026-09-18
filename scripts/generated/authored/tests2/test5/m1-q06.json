@@ -1,0 +1,63 @@
+{
+ "id": 6,
+ "question": "A spreadsheet stores two functions, $f$ and $g$, whose outputs at five inputs appear in the table. Applying $g$ to the input $2$ and then applying $f$ to that output produces what value?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$",
+   "$g(x)$"
+  ],
+  "rows": [
+   [
+    "1",
+    "8",
+    "2"
+   ],
+   [
+    "2",
+    "5",
+    "4"
+   ],
+   [
+    "3",
+    "9",
+    "5"
+   ],
+   [
+    "4",
+    "3",
+    "1"
+   ],
+   [
+    "5",
+    "6",
+    "6"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "stops after evaluating the inner function, reporting g(2) = 4",
+  "C": "evaluates the outer function at 2 instead of at g(2), reporting f(2) = 5",
+  "D": "applies the functions in the reverse order, computing g(f(2)) = g(5) = 6"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Read $g(2) = 4$ from the table, then read $f(4) = 3$.\n\n**The Full Solution:**\nStep 1: The inner function is applied first. In the row $x = 2$, the $g(x)$ column gives $g(2) = 4$.\nStep 2: That output, $4$, becomes the input of $f$. In the row $x = 4$, the $f(x)$ column gives $f(4) = 3$.\nStep 3: So the composed value is $f(g(2)) = f(4) = 3$. Check the order: the input $2$ is fed to $g$, not to $f$, and the table row that matters for the second step is $x = 4$, not $x = 2$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($4$): stops one step early and reports $g(2) = 4$. That is the input to $f$, not the final output.\n* Choice C ($5$): reads $f(2) = 5$ from the $x = 2$ row. This evaluates the outer function at the ORIGINAL input rather than at the inner function's output.\n* Choice D ($6$): computes $g(f(2))$ instead: $f(2) = 5$, then $g(5) = 6$. Composition is not commutative — the function written on the inside is always the one that acts first.\n\n**Test Day Takeaway:** In $f(g(x))$, work from the inside out and change rows between steps. The most common table error is staying in the same row for both lookups."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-024",
+ "question": "A tower crane's ground exclusion zone is modeled in the $xy$-plane, in meters, by $(x - 7)^2 + (y + 4)^2 = 9k$, and the zone has a radius of $12$ meters. What is the value of $k$?",
+ "correctAnswer": "16",
+ "explanation": "**SAT Pattern: Read Radius from Circle Equation**\n\n**The correct answer is $16$.**\n\n**The Fast Way (~25s):** The right side equals $r^2$, so $9k = 12^2 = 144$ and $k = 16$.\n\n**The Full Solution:**\n\nStep 1: In the standard form $(x - h)^2 + (y - v)^2 = r^2$, the number on the right is the SQUARE of the radius.\n\nStep 2: The radius is $12$ meters, so $9k = 12^2 = 144$.\n\nStep 3: Divide: $k = \\frac{144}{9} = 16$. Check: with $k = 16$ the equation reads $(x-7)^2 + (y+4)^2 = 144$, whose radius is $\\sqrt{144} = 12$.\n\n**Common Mistakes:**\n\n* $144$ — stopping at $r^2$ and never dividing by the coefficient $9$.\n* $1.33$ — dividing the radius itself by $9$ instead of the squared radius.\n* $4$ — treating $9k$ as $(3\\sqrt{k})^2$, solving $3\\sqrt{k} = 12$, and reporting $\\sqrt{k}$ instead of $k$.\n\n**Test Day Takeaway:** The right-hand side of a circle equation is $r^2$, not $r$ — square the radius before you solve for anything multiplying it."
+}

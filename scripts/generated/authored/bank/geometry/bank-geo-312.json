@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-312",
+ "question": "A precast stair landing is $4$ feet longer than it is wide and rests on $96$ square feet of ground. How wide, in feet, is the landing?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$22$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reports the length, w + 4 = 12, instead of the width",
+  "C": "treats 96 as the perimeter, solving 4w + 8 = 96",
+  "D": "divides the area by the 4-foot difference: 96 divided by 4"
+ },
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice A is correct.** With width $w$, $w(w + 4) = 96$ gives $(w + 12)(w - 8) = 0$, so $w = 8$ feet.\n\n**The Fast Way (~25s):** Two factors of $96$ that differ by $4$ are $8$ and $12$, so the width is $8$.\n\n**The Full Solution:**\n\nStep 1: Let $w$ be the width in feet; the length is $w + 4$.\n\nStep 2: Area gives $w(w + 4) = 96$, so $w^2 + 4w - 96 = 0$ and $(w + 12)(w - 8) = 0$.\n\nStep 3: A width must be positive, so $w = 8$ feet. Check: $8 \\times 12 = 96$ square feet, and $12 - 8 = 4$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($12$): solves correctly but reports the length instead of the width.\n* Choice C ($22$): treats $96$ as the perimeter, solving $2(w + w + 4) = 96$.\n* Choice D ($24$): divides the area by the $4$-foot difference, an operation with no meaning here.\n\n**Test Day Takeaway:** After factoring, reread which dimension the question wants — the two roots and the two dimensions are different lists."
+}

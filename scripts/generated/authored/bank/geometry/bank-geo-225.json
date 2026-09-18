@@ -1,0 +1,77 @@
+{
+ "id": "bank-geo-225",
+ "question": "A hotel's wayfinding kit contains two similar triangular floor decals, shown with lengths in centimeters, and the side marked $15$ on the smaller decal corresponds to the side marked $20$ on the larger decal. What is the length, in centimeters, of the longest side of the smaller decal?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "vertices": [
+     [
+      -1,
+      19.97
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      24,
+      0
+     ]
+    ],
+    "sideLabels": [
+     "20",
+     "24",
+     "32"
+    ]
+   },
+   "triangle2": {
+    "vertices": [
+     [
+      -0.75,
+      14.98
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      18,
+      0
+     ]
+    ],
+    "sideLabels": [
+     "15",
+     "",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11.25$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the factor 0.75 to the already-scaled side: 15 x 0.75 = 11.25",
+  "B": "reports the labeled side 15 itself rather than the longest side",
+  "C": "scales the middle side 24 instead of the longest side 32: 24 x 0.75 = 18"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** The scale factor is $\\frac{15}{20}=0.75$, and the longest side of the larger decal is $32$, so the smaller decal's longest side is $32(0.75)=24$ centimeters.\n\n**The Full Solution:**\n\nStep 1 — Find the factor from the stated pair: $\\frac{15}{20}=\\frac{3}{4}=0.75$, so the smaller decal is a $0.75$ copy of the larger.\n\nStep 2 — Identify the target. Among $20$, $24$, and $32$, the longest side of the larger decal is $32$ centimeters.\n\nStep 3 — Scale it: $32(0.75)=24$ centimeters. Check: the smaller decal's three sides are $15$, $18$, and $24$, whose ratios to $20$, $24$, and $32$ are all $0.75$, and $15+18>24$, so the triangle is valid.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($11.25$): this multiplies the already-scaled $15$ by $0.75$ a second time.\n* Choice B ($15$): this reports the side the question used to build the factor, not the longest side.\n* Choice C ($18$): this scales the middle side $24$ instead of the longest side $32$.\n\n**Test Day Takeaway:** The number $24$ can belong to both figures — track which triangle a length lives in before you answer."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-375",
+ "question": "An archivist models a film vault's relative humidity by $H(d)=38-1.5d$, in percent, where $d$ is the number of days after a dehumidifier was switched on. What is the value of $H(-8)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$26$"
+  },
+  {
+   "id": "C",
+   "text": "$38$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports only -1.5(-8) = 12 and drops the constant 38",
+  "B": "substitutes d = 8 instead of d = -8: 38 - 12 = 26",
+  "C": "evaluates at d = 0, the day the dehumidifier was switched on"
+ },
+ "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** $-1.5(-8)=12$, and $38+12=50$ percent.\n\n**The Full Solution:**\nStep 1: Substitute $-8$ for $d$: $H(-8)=38-1.5(-8)$.\nStep 2: Subtracting a negative adds: $-1.5(-8)=12$.\nStep 3: $38+12=50$ percent. Check: eight days before the dehumidifier ran, the vault was more humid than the 38 percent at start-up ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): reports only the product $-1.5(-8)$ without the constant.\n* Choice B ($26$): substitutes $d=8$, eight days after start-up rather than before.\n* Choice C ($38$): evaluates at $d=0$, the start-up reading.\n\n**Test Day Takeaway:** Running a decreasing model backwards raises its value — the double negative is the whole question."
+}

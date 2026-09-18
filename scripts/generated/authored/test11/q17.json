@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": ", and"
-    },
-    {
-      "id": "B",
-      "text": "; and,"
-    },
-    {
-      "id": "C",
-      "text": "and"
-    },
-    {
-      "id": "D",
-      "text": ","
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The blank falls between two complete sentences: \"In 1817 the German inventor Karl von Drais unveiled a two-wheeled running machine that a rider straddled and pushed along with the feet\" and \"the machine had no pedals of any kind, leaving a rider to scramble against the ground so vigorously that a long trip left the legs aching.\" Standard English joins two independent clauses with a comma plus a coordinating conjunction, which is exactly what \", and\" supplies. \"And\" alone, with no comma, fuses the clauses into a run-on. A comma by itself produces a comma splice. And \"; and,\" stacks a semicolon, a conjunction, and a stray comma at a single junction, none of which belong together.",
-  "passage": "In 1817 the German inventor Karl von Drais unveiled a two-wheeled running machine that a rider straddled and pushed along with the feet ______ the machine had no pedals of any kind, leaving a rider to scramble against the ground so vigorously that a long trip left the legs aching.",
-  "_meta": {
-    "anchor": "Karl von Drais: 1817 running machine (Laufmaschine), the pedal-less ancestor of the bicycle",
-    "rule": "comma + coordinating conjunction joining two independent clauses"
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": ", and"
   },
-  "id": 1117,
-  "module": 1
+  {
+   "id": "B",
+   "text": "; and,"
+  },
+  {
+   "id": "C",
+   "text": "and"
+  },
+  {
+   "id": "D",
+   "text": ","
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Two independent clauses meet at the blank — \"some farmers adopted a technique called dry farming\" and \"they left half their land unplanted each season...\" — and a comma plus a coordinating conjunction is the conventional way to join them.\n\n**The Full Solution:**\n- Each side of the blank could stand alone as a sentence: both have a subject (\"farmers\" / \"they\") and a full verb (\"adopted\" / \"left\").\n- Joining two independent clauses requires either a semicolon or a comma with a coordinating conjunction such as \"and.\" Choice A supplies the comma-plus-conjunction pattern.\n\n**Why the other choices are wrong:**\n- B: A semicolon may join the clauses on its own, but pairing it with \"and,\" — conjunction plus stray comma — doubles up the boundary machinery unconventionally.\n- C: \"And\" without the comma fuses two full clauses with no boundary mark at all.\n- D: A comma alone between independent clauses is a comma splice.",
+ "passage": "In regions once considered too dry for ordinary agriculture, some early twentieth-century farmers adopted a technique called dry farming ______ they left half their land unplanted each season so that two years of scarce rainfall could accumulate in the soil to support a single crop.",
+ "_meta": {
+  "rule": "comma + coordinating conjunction between independent clauses",
+  "anchor": "dry farming — alternate-year planting to accumulate rainfall",
+  "distractors": {
+   "B": "semicolon + conjunction + comma pileup",
+   "C": "fused clauses, missing comma",
+   "D": "comma splice"
+  }
+ },
+ "id": 1117,
+ "module": 1
 }

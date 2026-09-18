@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "inferences",
  "module": 1,
- "passage": "Tree rings record more than a tree's age. In temperate climates, a tree typically adds one ring per year, and the width of each ring reflects that year's growing conditions: wide rings in warm, wet years, narrow rings in cold or dry ones. By matching ring patterns across many overlapping samples, researchers can build chronologies reaching back thousands of years and use them to reconstruct past climate. The method has a built-in limit, however. Because a ring's width responds to whatever most constrains growth in a given place, a chronology drawn from a single site can show ______",
+ "passage": "Sailing ships crossing the Arabian Sea timed their voyages to the monsoon: the winds blow steadily from the southwest all summer and reverse direction in winter, so a merchant could plan an outbound run and a return with unusual confidence. But the same regularity that made schedules dependable also made them rigid. A ship that missed the summer sailing could not simply depart a few weeks late; it waited in port, sometimes for months, until the winds turned again. For the merchants who financed these voyages, the monsoon system is therefore best understood as ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "the exact calendar year in which each individual ring was formed, even for trees growing in tropical regions where the seasons are only weakly marked."
+   "text": "an obstacle to trade that improvements in ship design eventually allowed merchants to disregard entirely."
   },
   {
    "id": "B",
-   "text": "that tree rings are a less reliable record of a tree's age than of the conditions under which it grew."
+   "text": "an arrangement that rewarded the merchants of some ports while excluding those of others from the trade."
   },
   {
    "id": "C",
-   "text": "climate conditions for an entire hemisphere with the same accuracy as a network of many distant sites."
+   "text": "a system so unreliable that prudent financiers preferred overland routes for their most valuable cargoes."
   },
   {
    "id": "D",
-   "text": "a misleadingly local picture of past climate, since the factor that limits growth at one site may not be the factor that mattered elsewhere."
+   "text": "a source of predictability that came at the price of flexibility, since the winds that guaranteed a passage also dictated when a passage could be attempted."
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The passage explains that a ring's width responds to whatever most constrains growth at a particular place, and it flags this as a built-in limit. It follows that a chronology drawn from a single site reflects that site's limiting factor and may not represent climate elsewhere—so it can give a misleadingly local picture, which is what Choice D states. Choice A ignores the limitation and overreaches to tropical trees, which the passage does not address. Choice B introduces a comparison of age-keeping versus condition-recording that the passage does not make. Choice C claims single-site accuracy equal to a wide network, the opposite of the limitation just described."
+ "explanation": "**Choice D is correct.** The passage develops exactly two facts about the monsoon, that it made voyages plannable and that it made timing inflexible, and D is the only conclusion that holds both at once.\n\n**The Full Solution:**\n- The first sentence establishes the benefit: steady, reversing winds let merchants plan \"with unusual confidence.\"\n- The pivot, \"the same regularity that made schedules dependable also made them rigid,\" plus the example of the months-long wait, establishes the cost.\n- A conclusion introduced by \"therefore\" must synthesize both: predictability purchased with flexibility, as D states.\n\n**Why the other choices are wrong:**\n- A: The passage treats the monsoon as the basis of planning, not an obstacle, and says nothing about ship design overcoming it.\n- B: No port is said to be favored or excluded; the trade-off described applies to every merchant using the winds.\n- C: It contradicts the text directly: the winds are described as regular and dependable, and overland routes are never mentioned."
 }

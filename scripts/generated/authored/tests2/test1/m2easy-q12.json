@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "An agronomist predicts grain yield from rainfall using $\\hat{y} = 2.4x + 18$, in which $\\hat{y}$ is the predicted yield when the rainfall measure is $x$. For one field the rainfall measure was $25$ and the yield actually recorded was $71$. What is the value of $y - \\hat{y}$ for this field?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-7$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$11$"
+  },
+  {
+   "id": "D",
+   "text": "$78$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts in the reverse order, computing predicted minus observed",
+  "C": "leaves out the constant 18 when predicting, using 2.4(25) = 60",
+  "D": "reports the predicted value itself instead of the difference"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Residual**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The model predicts $2.4(25) + 18 = 78$. The recorded yield is $71$, so $y - \\hat{y} = 71 - 78 = -7$.\n\n**The Full Solution:**\nStep 1: Evaluate the model at the given rainfall measure: $\\hat{y} = 2.4(25) + 18$.\nStep 2: Compute it: $2.4 \\times 25 = 60$ and $60 + 18 = 78$, so the model predicts a yield of $78$.\nStep 3: Subtract in the order the question names: $y - \\hat{y} = 71 - 78 = -7$. The negative sign says the field produced less than the model predicted. Check: $78 + (-7) = 71$, the recorded yield ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($7$): the same size difference with the subtraction reversed, $78 - 71$. The expression asks for observed minus predicted, and the sign is what tells you the model overpredicted.\n* Choice C ($11$): using $2.4(25) = 60$ as the prediction and computing $71 - 60$. The constant $18$ is part of the model and must be added before comparing.\n* Choice D ($78$): the predicted value on its own. It is an intermediate result; the question asks for the gap between the recorded value and it.\n\n**Test Day Takeaway:** Evaluate the model at the given input, then subtract in exactly the order written. A negative difference means the actual value fell below the prediction."
+}

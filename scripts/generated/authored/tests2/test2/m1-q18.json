@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "Let $q(n) = n^2 - 6n + 1$ for every number $n$, and let $r$ be the function defined by $r(n) = q(n + 4)$. In the coordinate plane, the graph of $r$ is a parabola whose lowest point is $(a, b)$. What is the value of $a + b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-9$"
+  },
+  {
+   "id": "B",
+   "text": "$-5$"
+  },
+  {
+   "id": "C",
+   "text": "$-1$"
+  },
+  {
+   "id": "D",
+   "text": "$21$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "never applies the shift and uses q's own vertex (3,-8), giving 3+(-8)=-5",
+  "C": "shifts the vertex 4 units right instead of left, to (7,-8), giving 7+(-8)=-1",
+  "D": "locates q's vertex at n=-3 by using b/(2a) with the wrong sign, then shifts to (-7,28), giving 21"
+ },
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** $q$ has its vertex at $n = 3$ with $q(3) = -8$. Replacing $n$ with $n + 4$ slides the graph $4$ units left, so $r$ bottoms out at $(-1, -8)$ and $a + b = -9$.\n\n**The Full Solution:**\nStep 1: Find the vertex of $q$: $n = \\frac{-(-6)}{2(1)} = 3$, and $q(3) = 9 - 18 + 1 = -8$. So $q$ has its least value at $(3, -8)$.\nStep 2: $r(n) = q(n + 4)$ means $r$ delivers at input $n$ whatever $q$ delivers at input $n + 4$, so every point of $q$'s graph moves $4$ units to the left. The lowest point moves from $(3, -8)$ to $(3 - 4, -8) = (-1, -8)$.\nStep 3: Therefore $a = -1$, $b = -8$, and $a + b = -9$. Check directly: $r(-1) = q(3) = -8$, while $r(0) = q(4) = 16 - 24 + 1 = -7$, which is higher ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-5$): uses $q$'s vertex $(3, -8)$ and never applies the transformation, giving $3 + (-8) = -5$.\n* Choice C ($-1$): moves the vertex to $(7, -8)$ because the $+4$ inside looks like a rightward shift. Inside the parentheses the shift runs opposite to the sign, so $+4$ moves the graph left.\n* Choice D ($21$): places $q$'s vertex at $n = -3$ by using $\\frac{b}{2a}$ without the leading minus sign, then shifts to $(-7, 28)$ and adds to get $21$.\n\n**Test Day Takeaway:** A change inside the function's parentheses moves the graph horizontally opposite to the sign; find the original vertex first, then slide it."
+}

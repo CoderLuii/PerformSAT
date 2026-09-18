@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "A spectrograph's two triangular light baffles are similar, with edge $AB$ of the smaller baffle corresponding to edge $DE$ of the larger one. If $AB = 14$ centimeters, $DE = 21$ centimeters, and $EF = 18$ centimeters, what is the length, in centimeters, of $BC$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$21$"
+  },
+  {
+   "id": "D",
+   "text": "$27$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the 7-centimeter difference between the corresponding edges",
+  "C": "copies the given edge DE",
+  "D": "multiplies by 3/2 instead of dividing, scaling the wrong direction"
+ },
+ "correctAnswer": "B",
+ "hint": "$BC$ belongs to the smaller baffle, so it has to come out smaller than $EF$.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** The smaller baffle is $\\frac{14}{21} = \\frac{2}{3}$ of the larger, so $BC = \\frac{2}{3}(18) = 12$ centimeters.\n\n**The Full Solution:**\nStep 1: Corresponding edges give the scale factor from larger to smaller: $\\frac{AB}{DE} = \\frac{14}{21} = \\frac{2}{3}$.\nStep 2: Since $BC$ corresponds to $EF$, $\\frac{BC}{EF} = \\frac{2}{3}$.\nStep 3: So $BC = \\frac{2}{3}(18) = 12$ centimeters. Check: $\\frac{12}{18} = \\frac{2}{3} = \\frac{14}{21}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): subtracting the $7$-centimeter difference between the corresponding edges; similar figures scale by a ratio, not a difference.\n* Choice C ($21$): copying the given edge $DE$ instead of computing the matching edge of the smaller baffle.\n* Choice D ($27$): multiplying by $\\frac{3}{2}$ instead of $\\frac{2}{3}$, which enlarges rather than reduces.\n\n**Test Day Takeaway:** Write the scale factor in the direction the question needs before you multiply."
+}

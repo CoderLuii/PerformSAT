@@ -1,0 +1,49 @@
+{
+ "question": "A load test records $4(3x-7)$ watts of overhead for a switch with $x$ active ports, and three of its readings are listed. The constant $b$ is chosen so that no value of $x$ satisfies $4(3x-7)=12x+b$. Which of the following CANNOT be the value of $b$?",
+ "questionTable": {
+  "headers": [
+   "Active ports $x$",
+   "Recorded power (watts)"
+  ],
+  "rows": [
+   [
+    "$3$",
+    "$8$"
+   ],
+   [
+    "$5$",
+    "$32$"
+   ],
+   [
+    "$8$",
+    "$68$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-28$"
+  },
+  {
+   "id": "B",
+   "text": "$-7$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "uses the -7 inside the parentheses without multiplying it by 4",
+  "C": "uses the recorded power at x = 3 as the constant",
+  "D": "uses the coefficient of x on the right side as the constant"
+ },
+ "explanation": "**SAT Pattern: Identifying Identity / Contradiction Equations**\n\n**Choice A is correct.** Distributing gives $12x-28$, so $b=-28$ makes both sides identical and the equation true for every $x$ — the one value $b$ cannot take if there is to be no solution.\n\n**The Fast Way (~40s):** $4(3x-7)=12x-28$. Every $b$ except $-28$ leaves a false numeric statement, so $-28$ is the impossible choice.\n\n**The Full Solution:**\n\nStep 1: Distribute the left side: $4(3x-7)=12x-28$. The table agrees, since $12(3)-28=8$, $12(5)-28=32$, and $12(8)-28=68$.\n\nStep 2: The equation becomes $12x-28=12x+b$. Subtracting $12x$ from both sides removes the variable entirely and leaves $-28=b$.\n\nStep 3: If $b=-28$, that statement is true and every $x$ is a solution; if $b\\ne -28$, it is false and there is no solution. Check: with $b=12$, the equation reads $-28=12$, which is false, so no value of $x$ works, as required.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($-7$): takes the $-7$ from inside the parentheses without multiplying it by $4$.\n* Choice C ($8$): copies the recorded power at $x=3$ instead of the constant term of the simplified expression.\n* Choice D ($12$): copies the coefficient of $x$ rather than the constant.\n\n**Test Day Takeaway:** When the variable terms cancel, the equation has no solution for every constant except the one that makes the leftover statement true.",
+ "id": "bank-alg-286"
+}

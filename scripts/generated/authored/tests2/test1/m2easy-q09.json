@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A lookout station models the distance $d$, in kilometers, to the visible horizon from a platform $h$ meters above sea level by $d = 3\\sqrt{h - 2}$. At what platform height, in meters, is the horizon distance $12$ kilometers?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$16$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$146$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by 3 but never squares, solving h - 2 = 4",
+  "B": "reports the value of h - 2 instead of adding 2 to reach h",
+  "D": "squares both sides with the 3 still in front, as if the square of 3 sqrt(h - 2) were h - 2, and solves h - 2 = 144"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Divide by $3$: $\\sqrt{h - 2} = 4$. Square: $h - 2 = 16$, so $h = 18$ meters.\n\n**The Full Solution:**\nStep 1: Set the model equal to the given distance: $3\\sqrt{h - 2} = 12$. Get the radical alone by dividing both sides by $3$: $\\sqrt{h - 2} = 4$.\nStep 2: Square both sides. Squaring undoes the square root, so $h - 2 = 16$.\nStep 3: Add $2$ to both sides: $h = 18$ meters. Check in the model: $3\\sqrt{18 - 2} = 3\\sqrt{16} = 3(4) = 12$ kilometers ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): dividing by $3$ and then reading $\\sqrt{h - 2} = 4$ as $h - 2 = 4$. A square root is undone by squaring, not by dropping it; a platform $6$ meters up gives $3\\sqrt{4} = 6$ kilometers.\n* Choice B ($16$): the value of $h - 2$, not of $h$. The last step, adding $2$, is still owed.\n* Choice D ($146$): squaring both sides with the $3$ still in front, as though $\\left(3\\sqrt{h - 2}\\right)^2$ were $h - 2$. It is $9(h - 2)$, so $9(h - 2) = 144$ gives $h - 2 = 16$ and $h = 18$ after all.\n\n**Test Day Takeaway:** Divide out any coefficient so the radical stands alone, square once, and finish the linear step — then substitute back, because squaring can create values the original equation rejects."
+}

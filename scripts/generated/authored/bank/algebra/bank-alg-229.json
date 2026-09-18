@@ -1,0 +1,58 @@
+{
+ "id": "bank-alg-229",
+ "question": "In the graph, line $g$ models the edge of a runway. A second line, parallel to line $g$, models the centerline and contains the point $(-1, -4)$. At what $x$-value does the centerline cross the $x$-axis?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2,
+   "yIntercept": -3,
+   "xRange": [
+    -5,
+    5
+   ],
+   "yRange": [
+    -8,
+    6
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     -3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "label": "g"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-9$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$1$"
+  },
+  {
+   "id": "D",
+   "text": "$3$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "uses the negative reciprocal $-\\frac{1}{2}$, giving $y = -\\frac{1}{2}x - \\frac{9}{2}$ and $x = -9$",
+  "B": "reports the centerline's $y$-intercept instead of its $x$-intercept",
+  "D": "computes $b$ as $y + mx = -4 + 2(-1) = -6$, giving $0 = 2x - 6$ and $x = 3$"
+ },
+ "explanation": "**SAT Pattern: Parallel Line Through a Point**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Line $g$ has slope $2$, so the centerline is $y = 2x - 2$, which meets the $x$-axis at $x = 1$.\n\n**The Full Solution:**\nStep 1: Line $g$ passes through $(0, -3)$ and $(2, 1)$, so its slope is $\\frac{1 - (-3)}{2 - 0} = 2$.\nStep 2: The centerline has slope $2$ and contains $(-1, -4)$, so $-4 = 2(-1) + b$ and $b = -2$.\nStep 3: Setting $y = 0$ in $y = 2x - 2$ gives $x = 1$. Check: $2(1) - 2 = 0$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-9$): uses the negative reciprocal $-\\frac{1}{2}$, giving $y = -\\frac{1}{2}x - \\frac{9}{2}$ and $x = -9$\n* Choice B ($-2$): reports the centerline's $y$-intercept instead of its $x$-intercept\n* Choice D ($3$): computes $b$ as $y + mx = -4 + 2(-1) = -6$, giving $0 = 2x - 6$ and $x = 3$\n\n**Test Day Takeaway:** An $x$-intercept question needs two steps: build the line first, then set $y = 0$."
+}

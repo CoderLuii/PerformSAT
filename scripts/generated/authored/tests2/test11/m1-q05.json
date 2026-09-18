@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "question": "On an elevation drawing, a diagonal brace lies along the line $5x - 2y = 18$. A second brace is parallel to the first and contains the point $(4, 5)$. At what $y$-coordinate does the second brace cross the $y$-axis?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-9$"
+    },
+    {
+      "id": "B",
+      "text": "$-5$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$10$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "keeps the first brace's constant 18 and reports that line's y-intercept",
+    "C": "divides 10 by -2 but keeps the result positive",
+    "D": "reports the constant term of the new equation instead of the y-coordinate"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Parallel Lines and Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Parallel lines in standard form differ only in the constant, so the second brace is $5x - 2y = c$ with $5(4) - 2(5) = 10$. Setting $x = 0$ gives $-2y = 10$, so $y = -5$.\n\n**The Full Solution:**\nStep 1: Two lines are parallel exactly when they have the same slope, and in standard form that happens when the $x$- and $y$-coefficients are the same. The second brace therefore has an equation of the form $5x - 2y = c$.\nStep 2: The point $(4, 5)$ lies on it, so $5(4) - 2(5) = 20 - 10 = 10$, which means $c = 10$ and the equation is $5x - 2y = 10$.\nStep 3: The line crosses the $y$-axis where $x = 0$: $-2y = 10$, so $y = -5$. Check: $(0, -5)$ satisfies $5(0) - 2(-5) = 10$, and both braces have slope $\\frac{5}{2}$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-9$): this uses the original constant, solving $-2y = 18$. That is the $y$-intercept of the first brace, not the parallel one through $(4, 5)$.\n* Choice C ($5$): this divides $10$ by $-2$ but drops the negative sign; substituting $(0, 5)$ gives $-10$, not $10$.\n* Choice D ($10$): this reports the constant $c$ from $5x - 2y = 10$ instead of solving for $y$ when $x = 0$.\n\n**Test Day Takeaway:** For a parallel line in standard form, keep both coefficients and recompute only the constant from the given point."
+}

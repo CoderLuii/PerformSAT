@@ -1,0 +1,29 @@
+{
+  "id": 22,
+  "question": "A monitored glacier covered $48.0$ square kilometers in 2000. Its area decreased by $25\\%$ over the next decade and by a further $20\\%$ over the decade after that. By what percent did the glacier's area decrease from 2000 to 2020?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$40\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$45\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$60\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$66.7\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "adds the two percents, 25 + 20, as if both applied to the original area",
+    "C": "reports the percent of the original area that remains, not the percent lost",
+    "D": "divides the 19.2 square kilometers lost by the 2020 area instead of the 2000 area"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** Multiply the two survival factors: $0.75 \\times 0.80 = 0.60$, so $60\\%$ of the area remains and $40\\%$ is gone.\n\n**The Full Solution:**\nStep 1: A $25\\%$ decrease multiplies by $0.75$: the $2010$ area is $48.0 \\times 0.75 = 36.0$ square kilometers.\nStep 2: A further $20\\%$ decrease multiplies by $0.80$: the $2020$ area is $36.0 \\times 0.80 = 28.8$ square kilometers.\nStep 3: Compare the loss to the original: $48.0 - 28.8 = 19.2$ lost, and $\\frac{19.2}{48.0} = 0.40$, a $40\\%$ decrease. Check with the factors alone: $0.75 \\times 0.80 = 0.60$ remaining ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($45\\%$): adds $25\\%$ and $20\\%$. The second decrease applies to $36.0$ square kilometers, not to the original $48.0$, so its actual loss is $7.2$ rather than $9.6$.\n* Choice C ($60\\%$): reports the fraction of the area that survives, $\\frac{28.8}{48.0}$, instead of the fraction lost.\n* Choice D ($66.7\\%$): divides the $19.2$ square kilometers lost by the $2020$ area, $\\frac{19.2}{28.8}$, using the ending value as the base instead of the starting value.\n\n**Test Day Takeaway:** Chain percent changes by multiplying decimal factors, never by adding percents, and always divide the change by the ORIGINAL amount when the question says decrease."
+}

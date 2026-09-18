@@ -1,0 +1,59 @@
+{
+ "id": 6,
+ "question": "The figure shows a right-triangular lot whose two labeled sides are in meters. A fence of length $90$ meters encloses the lot. What is the value of $\\cos X$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ],
+    [
+     0,
+     9
+    ]
+   ],
+   "labels": [
+    "",
+    "X",
+    ""
+   ],
+   "sideLabels": [
+    "40",
+    "",
+    "9"
+   ],
+   "rightAngleVertex": 0
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{9}{41}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{9}{40}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{40}{41}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{40}{9}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the side opposite X over the hypotenuse, which is sin X",
+  "B": "divides the two legs, which is tan X",
+  "D": "inverts tan X, putting the adjacent leg over the opposite leg"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice C is correct.** The fence gives the missing side: $90 - 40 - 9 = 41$ meters is the hypotenuse, and $\\cos X = \\frac{40}{41}$.\n\n**The Fast Way (~20s):** Subtract the two labeled sides from the perimeter to get the hypotenuse $41$, then take adjacent over hypotenuse for the angle $X$.\n\n**The Full Solution:**\nStep 1: The perimeter is the sum of all three sides, so the unlabeled side measures $90 - (40 + 9) = 41$ meters. It is opposite the right angle, so it is the hypotenuse.\nStep 2: Angle $X$ sits between the side of length $40$ and the hypotenuse, so $40$ is the adjacent leg and $9$ is the opposite leg.\nStep 3: Cosine is adjacent over hypotenuse: $\\cos X = \\frac{40}{41}$. Check with the Pythagorean theorem: $40^2 + 9^2 = 1600 + 81 = 1681 = 41^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{9}{41}$): uses the leg opposite $X$ over the hypotenuse. That ratio is $\\sin X$, about $0.22$, not the cosine.\n* Choice B ($\\frac{9}{40}$): divides one leg by the other and never uses the hypotenuse. That ratio is $\\tan X$.\n* Choice D ($\\frac{40}{9}$): flips $\\tan X$, putting the adjacent leg over the opposite leg. Any cosine must be less than $1$, and this value is greater than $4$.\n\n**Test Day Takeaway:** When a right-triangle figure gives a perimeter, the perimeter is usually the fastest route to the missing side. Label the sides as opposite, adjacent, and hypotenuse relative to the named angle before choosing the ratio."
+}

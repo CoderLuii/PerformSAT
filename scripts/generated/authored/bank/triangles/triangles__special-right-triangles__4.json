@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "In right triangle $ABC$, the measure of angle $A$ is $30°$, the measure of angle $B$ is $60°$, and $AB = 22$. What is the length of $\\overline{AC}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11$"
+  },
+  {
+   "id": "B",
+   "text": "$11\\sqrt{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$11\\sqrt{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$22\\sqrt{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives $BC$, the side opposite the $30°$ angle",
+  "B": "uses the $45°$-$45°$-$90°$ ratio",
+  "D": "multiplies the hypotenuse by $\\sqrt{3}$ without halving it first"
+ },
+ "correctAnswer": "C",
+ "hint": "Work through the shortest side before reaching for $\\sqrt{3}$.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** $\\overline{AB}$ is the hypotenuse, so $BC = 11$ and $AC = 11\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: Angle $C$ measures $180 - 30 - 60 = 90°$, so $\\overline{AB}$ is the hypotenuse.\nStep 2: The side opposite the $30°$ angle is $\\overline{BC}$, half the hypotenuse: $BC = 11$.\nStep 3: The side opposite the $60°$ angle is $\\overline{AC}$, which is $\\sqrt{3}$ times the shorter leg: $AC = 11\\sqrt{3}$.\n\nVerification: $11^2 + (11\\sqrt{3})^2 = 121 + 363 = 484 = 22^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): gives $BC$, the side opposite the $30°$ angle.\n* Choice B ($11\\sqrt{2}$): uses the $45°$-$45°$-$90°$ ratio.\n* Choice D ($22\\sqrt{3}$): multiplies the hypotenuse by $\\sqrt{3}$ without halving it first.\n\n**Test Day Takeaway:** Build a $30°$-$60°$-$90°$ triangle from its shortest side: halve the hypotenuse, then multiply by $\\sqrt{3}$."
+}

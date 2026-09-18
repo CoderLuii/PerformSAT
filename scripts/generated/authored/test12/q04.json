@@ -1,31 +1,31 @@
 {
-  "id": 1204,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "During an explosive volcanic eruption, the towering column of ash can crackle with lightning. Scientists studying these flashes have shown that the bolts do not descend from ordinary storm clouds passing overhead but ____ within the ash column itself, where countless particles collide, trade electric charge, and build the imbalance that a sudden discharge releases.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "originate"
-    },
-    {
-      "id": "B",
-      "text": "gather"
-    },
-    {
-      "id": "C",
-      "text": "travel"
-    },
-    {
-      "id": "D",
-      "text": "spread"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The sentence draws a contrast: the lightning does not come down from storm clouds overhead but comes into being inside the ash column, where colliding particles build up an electric charge. \"Originate\" names exactly that beginning of the bolts within the plume. \"Gather\" suggests bolts accumulating rather than forming, which the sentence does not claim. \"Travel\" and \"spread\" both describe the movement of lightning that already exists, missing the point that the discharge starts in the column itself."
+ "id": 1204,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "A cast net is thrown by hand, and a good throw looks effortless. Observations of practiced net fishers show that the net's wide, circular spread does not come from the strength of the arm alone but ____ from the whole body, as a coiled rotation of the hips and shoulders releases the weighted mesh in one smooth, spinning arc.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "derives"
+  },
+  {
+   "id": "B",
+   "text": "recovers"
+  },
+  {
+   "id": "C",
+   "text": "departs"
+  },
+  {
+   "id": "D",
+   "text": "benefits"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The sentence contrasts two possible sources of the throw's power: not \"from the strength of the arm alone but ____ from the whole body.\" The blank must name where the spread truly comes from, and \"derives\" means to come from a source.\n\n**The Full Solution:**\n- The word \"but\" sets up a contrast between two origins for the net's spread — arm strength versus the whole body.\n- The clause after the blank explains the true origin: \"a coiled rotation of the hips and shoulders releases the weighted mesh.\"\n- So the blank needs a verb meaning to originate or come from, which is \"derives.\"\n\n**Why the other choices are wrong:**\n- B: \"Recovers\" means to get something back, but nothing here was lost.\n- C: \"Departs\" means to leave, which reverses the idea of the spread coming from the body.\n- D: \"Benefits\" would make the body merely a help to the throw, but the sentence names the body as the source of the spread, not an aid to it."
 }

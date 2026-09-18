@@ -1,0 +1,29 @@
+{
+  "id": 22,
+  "question": "At a school, $55\\%$ of all students take Spanish and $20\\%$ of all students take both chemistry and Spanish. Among the students who take chemistry, $40\\%$ take Spanish. If $k$ percent of the students take chemistry, what is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$"
+    },
+    {
+      "id": "B",
+      "text": "$20$"
+    },
+    {
+      "id": "C",
+      "text": "$40$"
+    },
+    {
+      "id": "D",
+      "text": "$50$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies 0.40 by 20 instead of dividing 20 by 0.40",
+    "B": "reports the 20 percent who take both courses as the chemistry percentage",
+    "C": "reports the conditional percentage 40 itself as the chemistry percentage"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The $20\\%$ who take both are $40\\%$ of the chemistry students, so chemistry students are $20\\div0.40=50$ percent of the school.\n\n**The Full Solution:**\nStep 1: Suppose the school has $100$ students. Then $20$ of them take both chemistry and Spanish, and $k$ of them take chemistry.\nStep 2: “Among the students who take chemistry, $40\\%$ take Spanish” makes the chemistry group the denominator: $\\dfrac{20}{k}=0.40$.\nStep 3: Solving, $k=\\dfrac{20}{0.40}=50$. Check: $40\\%$ of $50$ chemistry students is $20$ students, which matches the $20\\%$ of the school who take both ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): multiplies $0.40(20)=8$ instead of dividing. Multiplying would find the both-group from the chemistry group, which is the direction already given.\n* Choice B ($20$): reports the percent who take both courses; that group is only part of the chemistry group, so it must be smaller than $k$.\n* Choice C ($40$): reports the conditional percentage itself, confusing a percent OF the chemistry students with a percent of the whole school.\n\n**Test Day Takeaway:** A conditional percent is measured against the condition group, so the overlap divided by the conditional rate recovers that group's size — divide, do not multiply."
+}

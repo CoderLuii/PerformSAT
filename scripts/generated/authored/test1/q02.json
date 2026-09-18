@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 1,
- "passage": "Marine biologist Asha de Vos has documented an unusual blue whale population off the coast of Sri Lanka. Unlike most blue whales, which travel thousands of miles each year between feeding and breeding grounds, this group ______ in the warm waters of the northern Indian Ocean year-round. De Vos's tracking studies show that the whales feed, breed, and raise their young in the same region, making them especially vulnerable to ship strikes from heavy commercial traffic in the area.",
+ "passage": "In parts of northern Mozambique, people who gather wild honey work alongside a bird known as the greater honeyguide. The bird flies ahead, calling and pausing, until it has led a honey-hunter to a bees' nest; the honey-hunter then opens the nest with tools and smoke, taking the honey and leaving the wax the bird eats. Ornithologist Claire Spottiswoode has shown that the birds respond to the hunters' distinctive calls, evidence that the two species genuinely ______ rather than merely tolerating each other.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "departs"
+   "text": "quarrel"
   },
   {
    "id": "B",
-   "text": "lingers"
+   "text": "retreat"
   },
   {
    "id": "C",
-   "text": "remains"
+   "text": "interfere"
   },
   {
    "id": "D",
-   "text": "surfaces"
+   "text": "collaborate"
   }
  ],
- "correctAnswer": "C",
- "explanation": "The correct answer is C, \"remains.\" The sentence sets up an explicit contrast: most blue whales \"travel thousands of miles each year between feeding and breeding grounds,\" but \"this group ______ ... year-round.\" The follow-up sentence confirms it — the whales \"feed, breed, and raise their young in the same region.\" The blank needs a verb meaning \"stays in one place,\" and \"remains\" fits the contrast with \"travel\" cleanly while matching the year-round, single-region scope the passage describes."
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The contrast with \"rather than merely tolerating each other\" demands active partnership, and \"collaborate\" names that relationship precisely.\n\n**The Full Solution:**\n- The passage describes a two-way exchange: the bird leads the way to the nest, the honey-hunter opens it, and each partner takes a different reward.\n- The sentence's contrast frame (\"rather than merely tolerating\") requires a word stronger than passive coexistence — a word for working together, which is exactly \"collaborate.\"\n\n**Why the other choices are wrong:**\n- A: \"Quarrel\" describes conflict the passage never mentions.\n- B: \"Retreat\" contradicts the birds' behavior of flying ahead and waiting to be followed.\n- C: \"Interfere\" also imports conflict; the exchange described benefits both partners."
 }

@@ -1,31 +1,31 @@
 {
-  "id": 816,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 1,
-  "passage": "In the early 1970s the biochemist Paul Berg developed methods for splicing DNA from different organisms into a single molecule, a foundational step toward genetic engineering. Recognizing that no one yet understood the risks of releasing such recombinant organisms, Berg helped organize the 1975 Asilomar conference, which called for a temporary, voluntary halt to the most uncertain experiments until safety guidelines could be drawn up. He did not abandon the research; once containment standards were agreed, work resumed, and Berg continued to advance the field. His conduct therefore suggests that a scientist who has opened a powerful new line of research may ____",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "conclude that the new techniques are too hazardous to be pursued under any circumstances."
-    },
-    {
-      "id": "B",
-      "text": "leave all questions about the safety of the research to government regulators rather than fellow scientists."
-    },
-    {
-      "id": "C",
-      "text": "come to regard the very techniques as a mistake once their risks have been publicly debated."
-    },
-    {
-      "id": "D",
-      "text": "call for restraint on the most uncertain uses of the work while continuing to push the research forward in others."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. Berg sought a pause on the riskiest experiments yet kept advancing the field once safeguards were set, so his example points to a scientist who urges restraint on the most uncertain applications while continuing the broader research. D captures that balance. A and C have him renouncing the work, which he plainly did not; B hands the judgment entirely to regulators, whereas Berg's example shows scientists themselves initiating the restraint."
+ "id": 816,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 1,
+ "passage": "Catalogs of medieval earthquakes are compiled from written sources, and the sources were not spread evenly across the land: monasteries, town chanceries, and notaries clustered in some regions and were nearly absent from others. Mapped directly, the catalogs show earthquakes thick where writing was thick, while mountainous districts that certainly shook across the centuries contribute barely a line. Researchers who study these catalogs have therefore concluded that they should ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "read the catalogs as a reliable census of where medieval earthquakes actually struck."
+  },
+  {
+   "id": "B",
+   "text": "set the documentary record entirely aside and rely on modern instrumental measurements instead."
+  },
+  {
+   "id": "C",
+   "text": "assume that chroniclers exaggerated or invented many of the earthquakes they described."
+  },
+  {
+   "id": "D",
+   "text": "correct for the uneven distribution of record keeping before treating any region's apparent calm as real, while still drawing on what the documents preserve."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The premises establish that the record's gaps mirror where writers were, not necessarily where earthquakes were — so the reasonable course is to correct for that unevenness while continuing to use the record, exactly the measured conclusion D draws.\n\n**The Full Solution:**\n- The catalogs cluster where monasteries and notaries clustered; centuries of shaking in thinly documented uplands left barely a line.\n- An apparent quiet zone may therefore be a documentary shadow rather than a seismic fact.\n- The completion must neither trust the raw record nor discard it: researchers should weight it by where records were kept — choice D.\n\n**Why the other choices are wrong:**\n- A: Treating the record as a direct census is precisely the error the passage warns against.\n- B: Abandoning documents for instruments is impossible for pre-instrumental centuries, the record's whole value.\n- C: The passage gives no reason to think chroniclers invented earthquakes; the problem is silence, not fabrication."
 }

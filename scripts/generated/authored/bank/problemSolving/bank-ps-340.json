@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-340",
+ "question": "A random sample of $900$ registered voters in a state was surveyed. Based on the sample, the proportion of all registered voters in the state who support a ballot measure is estimated to be $0.52$, with an associated $95\\%$ confidence interval from $0.49$ to $0.55$. Which of the following statements is best supported by this confidence interval?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Exactly $52\\%$ of all registered voters in the state support the ballot measure."
+  },
+  {
+   "id": "B",
+   "text": "It is plausible that more than $55\\%$ of all registered voters in the state support the ballot measure."
+  },
+  {
+   "id": "C",
+   "text": "It is plausible that fewer than half of all registered voters in the state support the ballot measure."
+  },
+  {
+   "id": "D",
+   "text": "More than half of all registered voters in the state support the ballot measure, because the estimate $0.52$ is greater than $0.50$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the sample estimate as an exact population value, which the width of the interval explicitly denies.",
+  "B": "treats the interval as open at the top, but $0.55$ is the largest plausible proportion, so nothing above $55\\%$ is supported.",
+  "D": "reads only the center of the interval; because $0.50$ lies inside $[0.49,\\ 0.55]$, a minority is still plausible."
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Confidence Interval Interpretation**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The interval runs from $0.49$ to $0.55$, and $0.49<0.50$. Values below one half are inside the interval, so a minority of support is plausible.\n\n**The Full Solution:**\nStep 1: A confidence interval gives the range of plausible values for the population proportion: values inside it are plausible, and values outside it are not supported.\nStep 2: The interval $[0.49,\\ 0.55]$ contains $0.50$, so proportions on both sides of one half are plausible.\nStep 3: In particular $0.49$ is plausible, which means fewer than half of all registered voters supporting the measure cannot be ruled out. Check: an interval that supported a majority claim would have to lie entirely above $0.50$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reports the sample estimate as an exact population value, which the width of the interval explicitly denies.\n* Choice B: treats the interval as open at the top, but $0.55$ is the largest plausible proportion, so nothing above $55\\%$ is supported.\n* Choice D: reads only the center of the interval; because $0.50$ lies inside $[0.49,\\ 0.55]$, a minority is still plausible.\n\n**Test Day Takeaway:** Check whether the decisive value — here $0.50$ — falls inside the interval. If it does, no claim about which side of it the population lies on is supported."
+}

@@ -1,0 +1,26 @@
+{
+ "id": 21,
+ "question": "Three values of a quadratic function $f$ appear in the table. There is exactly one constant $k$ for which the equation $f(x)=k$ has only one solution for $x$. What is that constant?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "0",
+    "25"
+   ],
+   [
+    "1",
+    "15"
+   ],
+   [
+    "5",
+    "15"
+   ]
+  ]
+ },
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**The correct answer is 7.**\n\n**The Fast Way (~45s):** $f(1)=f(5)$ puts the vertex at $x=3$, and fitting $f(x)=2x^2-12x+25$ gives $f(3)=7$: only the line $y=7$ touches the parabola once.\n\n**The Full Solution:**\nStep 1: Write $f(x)=ax^2+bx+c$. From $f(0)=25$, $c=25$. From $f(1)=15$: $a+b+25=15$, so $a+b=-10$. From $f(5)=15$: $25a+5b+25=15$, so $5a+b=-2$.\nStep 2: Subtracting gives $4a=8$, so $a=2$ and $b=-12$: $f(x)=2x^2-12x+25$.\nStep 3: $f(x)=k$ becomes $2x^2-12x+(25-k)=0$, which has exactly one solution when its discriminant is $0$: $(-12)^2-4(2)(25-k)=0$, so $144-200+8k=0$ and $k=7$. Check: $2x^2-12x+18=2(x-3)^2$, a perfect square with the single solution $x=3$ ✓\n\n**Common Mistakes:**\n* $15$: reads the repeated table value $15$ as the smallest output. Equal outputs at $x=1$ and $x=5$ mean those points are the same height on OPPOSITE sides of the vertex, so the vertex is lower.\n* $25$: takes $f(0)=25$, the value at the left end of the table, as the extreme value.\n* $3$: reports the $x$-coordinate of the vertex instead of the output $k$ that the horizontal line must have.\n\n**Test Day Takeaway:** One solution means discriminant zero. Two equal outputs hand you the axis of symmetry for free — average their inputs — and the vertex value is exactly the $k$ that a horizontal line can touch only once."
+}

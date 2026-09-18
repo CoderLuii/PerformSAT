@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-453",
+  "question": "A research grant is divided among three teams in the ratio $4 : 7 : 9$. The team with the smallest share receives $\\$26{,}800$ less than the team with the largest share. What is the total amount, in dollars, of the grant?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$48{,}240$"
+    },
+    {
+      "id": "B",
+      "text": "$107{,}200$"
+    },
+    {
+      "id": "C",
+      "text": "$134{,}000$"
+    },
+    {
+      "id": "D",
+      "text": "$536{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the largest team's share rather than the whole grant.",
+    "C": "divides the difference by $4$ instead of by the $5$-part gap.",
+    "D": "treats the $\\$26{,}800$ difference as the value of a single part."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sum-of-Parts Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The gap between the largest and smallest shares is $9-4=5$ parts, so one part is $\\frac{26{,}800}{5}=5{,}360$, and the grant is $20(5{,}360)=107{,}200$ dollars.\n\n**The Full Solution:**\nStep 1: Write the shares as $4k$, $7k$, and $9k$ dollars.\nStep 2: The stated difference is between the largest and smallest: $9k-4k=5k=26{,}800$, so $k=5{,}360$.\nStep 3: The grant is $4k+7k+9k=20k=20(5{,}360)=107{,}200$ dollars. Check: the shares are $21{,}440$, $37{,}520$, and $48{,}240$, whose sum is $107{,}200$ and whose extremes differ by $26{,}800$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($48{,}240$): computes $9k$, the largest team's share, instead of the total.\n* Choice C ($134{,}000$): divides $26{,}800$ by $4$, using the smallest ratio number rather than the $5$-part difference.\n* Choice D ($536{,}000$): multiplies $26{,}800$ by $20$, treating the difference as one part.\n\n**Test Day Takeaway:** When a ratio problem gives a difference instead of a total, convert it to parts first. The difference of two shares is the difference of their ratio numbers times one part."
+}

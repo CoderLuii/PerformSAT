@@ -1,0 +1,54 @@
+{
+ "id": "bank-am-305",
+ "question": "The table gives four values of the polynomial function $f$, which models the thrust imbalance, in newtons, of a satellite thruster at calibration index $x$. Which of the following must be true?",
+ "diagram": {
+  "type": "table",
+  "params": {
+   "xHeader": "x",
+   "yHeader": "f(x)",
+   "rows": [
+    [
+     "-6",
+     "30"
+    ],
+    [
+     "-1",
+     "8"
+    ],
+    [
+     "0",
+     "-6"
+    ],
+    [
+     "3",
+     "0"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x+1$ is a factor of $f(x)$."
+  },
+  {
+   "id": "B",
+   "text": "$x-3$ is a factor of $f(x)$."
+  },
+  {
+   "id": "C",
+   "text": "$x+6$ is a factor of $f(x)$."
+  },
+  {
+   "id": "D",
+   "text": "$x$ is a factor of $f(x)$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "a factor x + 1 requires f(-1) = 0, but the table gives f(-1) = 8",
+  "C": "reads the value f(0) = -6 as the constant in a factor; x + 6 would require f(-6) = 0, and the table gives f(-6) = 30",
+  "D": "treats the input 0 in the table as a zero of f, but the table gives f(0) = -6"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Polynomial Remainder Theorem**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** A linear expression $x-a$ divides $f(x)$ exactly when $f(a)=0$, and the only listed value of $f$ that is $0$ is $f(3)=0$.\n\n**The Full Solution:**\n\nStep 1: Dividing $f(x)$ by $x-a$ leaves the remainder $f(a)$, so $x-a$ is a factor precisely when $f(a)=0$.\n\nStep 2: Match each candidate to the input that makes it zero: $x+1$ needs $f(-1)$, $x-3$ needs $f(3)$, $x+6$ needs $f(-6)$, and $x$ needs $f(0)$.\n\nStep 3: Read the table: $f(-1)=8$, $f(3)=0$, $f(-6)=30$, $f(0)=-6$. Only $f(3)$ is zero, so $x-3$ is a factor. Check: writing $f(x)=(x-3)q(x)$ gives $f(3)=0\\cdot q(3)=0$, consistent with the table.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: a factor $x+1$ would force $f(-1)=0$, but the table gives $f(-1)=8$.\n* Choice C: borrows the $6$ from $f(0)=-6$; a factor $x+6$ would force $f(-6)=0$, but the table gives $f(-6)=30$.\n* Choice D: treats the listed input $0$ as a zero of $f$, but the table gives $f(0)=-6$.\n\n**Test Day Takeaway:** Convert every factor claim into the single function value it predicts, then look that value up."
+}

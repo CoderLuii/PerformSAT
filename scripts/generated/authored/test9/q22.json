@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 1,
-  "passage": "Among the Bamana of Mali, bogolanfini, or mud cloth, is dyed in a labor-intensive sequence of fermented-mud applications. The intricate white symbols that cover each finished panel ______ meanings a knowledgeable viewer can read, from proverbs to markers of the wearer's status.",
+  "passage": "Neither of the two brass nocturnals recovered from the shipwreck ______ its sighting arm, but the toothed hour rings on both instruments remain crisp enough to read.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "carries"
-    },
-    {
-      "id": "B",
-      "text": "is carrying"
-    },
-    {
-      "id": "C",
-      "text": "carry"
-    },
-    {
-      "id": "D",
-      "text": "has carried"
-    }
+    { "id": "A", "text": "retain" },
+    { "id": "B", "text": "are retaining" },
+    { "id": "C", "text": "retains" },
+    { "id": "D", "text": "have retained" }
   ],
   "correctAnswer": "C",
-  "explanation": "The subject is \"symbols,\" which is plural, so the verb must be \"carry\"—choice C. The singular \"panel\" just before the blank belongs to the modifying phrase, not the subject. \"Carries\" and \"has carried\" are singular, and \"is carrying\" is singular as well as wrong in aspect for a general truth.",
-  "_meta": {
-    "anchor": "bogolanfini mud cloth, Bamana"
-  }
+  "explanation": "**Choice C is correct.** The subject is the singular pronoun \"Neither,\" which takes a singular verb: \"retains.\"\n\n**The Full Solution:**\n- \"Of the two brass nocturnals recovered from the shipwreck\" is a prepositional phrase; the plural \"nocturnals\" inside it is not the subject.\n- \"Neither\" is grammatically singular — it means \"not one of the two\" — so the verb must be singular, as the singular pronoun \"its\" later in the clause confirms.\n\n**Why the other choices are wrong:**\n- A: A plural verb drawn to the nearby \"nocturnals\" rather than to the singular subject \"Neither.\"\n- B: Plural again, and the progressive misdescribes a settled state as an ongoing action.\n- D: \"Have retained\" is plural; the singular subject would require \"has retained.\""
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-453",
+  "question": "The temperature $T$, in degrees Celsius, of a liquid $m$ minutes after it is removed from a heat source is modeled by $T(m) = 92 - 1.5m$. Which of the following is the best interpretation of $1.5$ in this model?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The temperature of the liquid, in degrees Celsius, when it is removed from the heat source"
+    },
+    {
+      "id": "B",
+      "text": "The temperature of the liquid, in degrees Celsius, one minute after it is removed from the heat source"
+    },
+    {
+      "id": "C",
+      "text": "The decrease in the temperature of the liquid, in degrees Celsius, each minute"
+    },
+    {
+      "id": "D",
+      "text": "The number of minutes it takes the liquid to cool by $1$ degree Celsius"
+    }
+  ],
+  "distractorNotes": {
+    "A": "describes the constant 92, the temperature at m = 0.",
+    "B": "the temperature after one minute is T(1) = 90.5, not 1.5.",
+    "D": "inverts the rate; cooling by 1 degree takes \\frac{1}{1.5} of a minute, not 1.5 minutes."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**Choice C is correct.**\n\n**The Fast Way (~8s):** The coefficient of $m$ is $-1.5$: the temperature drops $1.5$ degrees Celsius per minute.\n\n**The Full Solution:**\nStep 1: The model is linear with slope $-1.5$ and constant $92$. The constant is the temperature at $m = 0$.\nStep 2: The slope is the change in temperature per one-minute increase in $m$; the negative sign means a decrease of $1.5$ degrees each minute.\nStep 3: Check: $T(0) = 92$ and $T(1) = 90.5$; the difference is $1.5$ degrees. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (The temperature of the liquid, in degrees Celsius, when it is removed from the heat source): describes the constant $92$, the temperature at $m = 0$.\n* Choice B (The temperature of the liquid, in degrees Celsius, one minute after it is removed from the heat source): the temperature after one minute is $T(1) = 90.5$, not $1.5$.\n* Choice D (The number of minutes it takes the liquid to cool by $1$ degree Celsius): inverts the rate; cooling by $1$ degree takes $\\frac{1}{1.5}$ of a minute, not $1.5$ minutes.\n\n**Test Day Takeaway:** A subtracted coefficient is a negative slope: read it as \"decreases by (that much) per unit of input.\""
+}

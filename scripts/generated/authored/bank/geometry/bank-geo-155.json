@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-155",
+ "question": "A textile finisher lines the floor of a square pressing tray with adhesive tape along all four edges, and the tray floor covers $196$ square inches. What is the total length, in inches, of tape needed?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$14$"
+  },
+  {
+   "id": "B",
+   "text": "$28$"
+  },
+  {
+   "id": "C",
+   "text": "$49$"
+  },
+  {
+   "id": "D",
+   "text": "$56$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at the side length 14 and never multiplies by 4",
+  "B": "doubles the side instead of quadrupling it: 2 x 14 = 28",
+  "C": "divides the area by 4 without taking a square root: 196/4 = 49"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Square Perimeter**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** $\\sqrt{196}=14$, so each edge is $14$ inches and the four edges total $4(14)=56$ inches.\n\n**The Full Solution:**\n\nStep 1 — A square of side $s$ has area $s^2$, so $s^2=196$.\n\nStep 2 — Solve: $s=\\sqrt{196}=14$ inches, taking the positive root because $s$ is a length.\n\nStep 3 — The tape runs along all four edges, a total of $4s=4(14)=56$ inches. Check: a $14$-by-$14$ square does have area $196$ and perimeter $56$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($14$): this is one edge, not the whole border.\n* Choice B ($28$): this covers two edges, doubling instead of quadrupling.\n* Choice C ($49$): this divides the area by $4$ without ever taking a square root.\n\n**Test Day Takeaway:** Move from area to side with a square root first; only then multiply by $4$ for the border."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-044",
+ "question": "While setting up a spectrometer, a technician finds that the calibration constant $n$ satisfies $8^{\\,n}=\\left(\\frac{1}{4}\\right)^{\\,n-10}$, and the two sides are equal for exactly one value of $n$. What is that value?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Negative Exponent Equation**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~35s):** Write both sides base 2: $2^{3n}=2^{-2(n-10)}$, so $3n=-2n+20$ and $n=4$.\n\n**The Full Solution:**\nStep 1: $8=2^{3}$ and $\\frac{1}{4}=2^{-2}$, so the equation becomes $2^{3n}=2^{-2(n-10)}$.\nStep 2: Equal powers of the same base force equal exponents: $3n=-2n+20$.\nStep 3: Adding $2n$ gives $5n=20$, so $n=4$. Check: $8^{4}=4{,}096$ and $\\left(\\frac{1}{4}\\right)^{-6}=4^{6}=4{,}096$ ✓\n\n**Common Mistakes:** Reading $\\frac{1}{4}$ as $2^{2}$ drops the reciprocal and gives $3n=2n-20$, so $n=-20$. Writing $8$ as $2^{4}$ gives $4n=-2n+20$ and the non-integer $\\frac{10}{3}$. Distributing $-2$ over $n-10$ as $-2n-20$ gives $5n=-20$ and $n=-4$.\n\n**Test Day Takeaway:** A reciprocal base is a negative exponent — convert both sides to one base before matching exponents."
+}

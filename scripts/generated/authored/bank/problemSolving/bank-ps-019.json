@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-019",
+  "question": "The water level in a reservoir rose by $20\\%$ during the spring and then fell by $20\\%$ during the summer. If the water level was $45$ feet at the start of the spring, what was the water level, in feet, at the end of the summer?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36$"
+    },
+    {
+      "id": "B",
+      "text": "$43.2$"
+    },
+    {
+      "id": "C",
+      "text": "$45$"
+    },
+    {
+      "id": "D",
+      "text": "$54$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies the $20\\%$ fall to the original $45$ feet instead of to the $54$-foot spring level.",
+    "C": "assumes a $20\\%$ rise and a $20\\%$ fall cancel; they do not, because the fall is taken from a larger base.",
+    "D": "stops after the spring rise and ignores the summer fall."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Successive Percent Round Trip**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $45 \\times 1.20 = 54$ after the rise, and $54 \\times 0.80 = 43.2$ after the fall.\n\n**The Full Solution:**\nStep 1: A $20\\%$ rise multiplies by $1.20$: $45 \\times 1.20 = 54$ feet at the end of spring.\nStep 2: A $20\\%$ fall multiplies the NEW level by $0.80$: $54 \\times 0.80 = 43.2$ feet.\nStep 3: Check with the combined factor: $1.20 \\times 0.80 = 0.96$, and $45 \\times 0.96 = 43.2$. The net change is a $4\\%$ decrease. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($36$): applies the $20\\%$ fall to the original $45$ feet instead of to the $54$-foot spring level.\n* Choice C ($45$): assumes a $20\\%$ rise and a $20\\%$ fall cancel; they do not, because the fall is taken from a larger base.\n* Choice D ($54$): stops after the spring rise and ignores the summer fall.\n\n**Test Day Takeaway:** Up $p\\%$ then down $p\\%$ never returns to the start: the combined factor is $(1 + r)(1 - r) = 1 - r^2$, always slightly less than $1$."
+}

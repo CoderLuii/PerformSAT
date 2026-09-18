@@ -9,34 +9,33 @@
  "studentNotes": {
   "intro": "While researching a topic, a student has taken the following notes:",
   "bullets": [
-   "Linda Deegan is an American ecologist whose research focuses on coastal salt marshes in New England.",
-   "Salt marshes filter pollutants, store carbon, and buffer coastlines from storm surges.",
-   "From 2004 to 2014, Deegan ran a long-term experiment at the Plum Island Estuary in Massachusetts.",
-   "Her team added small amounts of nitrogen, simulating runoff from coastal fertilizer use, to selected tidal creeks.",
-   "Marsh-edge plants in the enriched creeks grew taller but invested less in deep root systems.",
-   "Bank stability declined within several years, and the creeks Deegan's team had enriched showed accelerated edge collapse compared with unenriched control creeks."
+   "Spices reaching medieval Europe from the Indian Ocean passed through a chain of intermediate ports rather than traveling in a single ship.",
+   "Some ports functioned as entrepôts: places where goods were unloaded, stored, and resold rather than consumed.",
+   "At an entrepôt, cargoes changed hands between ships suited to different seas, such as ocean-going vessels and Mediterranean galleys.",
+   "Merchants at an entrepôt could buy in bulk when fleets arrived and sell gradually as demand justified.",
+   "Because fleets sailed only when the seasonal winds allowed, storage at entrepôts smoothed the trade's rhythm between arrivals."
   ],
-  "goal": "The student wants to emphasize the principal causal finding of Deegan's Plum Island experiment for an audience already familiar with salt-marsh ecology."
+  "goal": "The student wants to emphasize the significance of entrepôts to the spice trade."
  },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Deegan's decade-long experiment at Plum Island found that nitrogen additions simulating coastal fertilizer runoff caused marsh-edge plants to grow taller but invest less in deep roots, destabilizing creek banks and accelerating edge collapse relative to unenriched controls."
+   "text": "By storing cargoes between fleets and passing them from ships suited to one sea to ships suited to another, entrepôts turned a wind-bound, seasonal trade into a continuous one."
   },
   {
    "id": "B",
-   "text": "In the enriched creeks at Plum Island, marsh-edge plants grew taller, a striking morphological response Deegan attributed to the additional nitrogen her team supplied."
+   "text": "Spices bound for medieval Europe passed through a chain of intermediate ports rather than traveling the whole way in a single ship."
   },
   {
    "id": "C",
-   "text": "From 2004 to 2014, Deegan ran a long-term tidal-creek enrichment experiment at the Plum Island Estuary in Massachusetts, simulating runoff from coastal fertilizer use."
+   "text": "Merchants at an entrepôt could buy spices in bulk whenever trading fleets arrived at the port."
   },
   {
    "id": "D",
-   "text": "Salt marshes filter pollutants, store carbon, and buffer coastlines from storm surges, ecological services that have made New England's marshes a long-standing focus of Deegan's research."
+   "text": "Ocean-going vessels and Mediterranean galleys were suited to different seas, so cargoes bound for Europe changed hands between the two kinds of ship at some point on the route."
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The goal is to emphasize the principal causal finding for readers who already know salt-marsh ecology, so the best choice traces the whole causal chain. Choice A names the manipulated variable (nitrogen additions simulating runoff), the biological response (taller plants, fewer deep roots), and the downstream result (bank destabilization and accelerated edge collapse versus controls). Choice B stops at one intermediate response, plant height, and misses the collapse that is the headline. Choice C reports only the design and timeframe, which a familiar audience already assumes. Choice D frames why marshes matter in general rather than what this experiment found."
+ "explanation": "**Choice A is correct.** Significance means saying what entrepôts accomplished for the trade, and A does: by bridging wind-bound fleet arrivals with storage and connecting ships suited to different seas, they made a seasonal trade flow continuously.\n\n**The Full Solution:**\n- The notes supply two functions, storage that smooths the rhythm between fleets, and transshipment between vessel types, and A combines both.\n- A then names the payoff, converting a seasonal trade into a continuous one, which is precisely the emphasis on significance the goal demands.\n\n**Why the other choices are wrong:**\n- B: It describes the route's structure without attributing any effect to entrepôts.\n- C: It reports one merchant practice and stops before saying why it mattered.\n- D: It explains why cargoes changed ships but never connects that fact to what entrepôts made possible for the trade as a whole."
 }

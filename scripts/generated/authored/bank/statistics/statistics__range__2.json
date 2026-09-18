@@ -1,0 +1,45 @@
+{
+  "id": 2,
+  "question": "The box plot summarizes the mass, in grams, of each of $45$ river stones collected from a streambed. What is the interquartile range, in grams, of the masses?",
+  "diagram": {
+    "type": "boxPlot",
+    "params": {
+      "min": 22,
+      "q1": 31,
+      "median": 38,
+      "q3": 47,
+      "max": 58,
+      "xLabel": "Mass (g)",
+      "xMin": 20,
+      "xMax": 60,
+      "xGridStep": 5,
+      "xLabelStep": 10
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$16$"
+    },
+    {
+      "id": "D",
+      "text": "$36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the first quartile from the median, $38 - 31$, covering only the left half of the box.",
+    "B": "subtracts the median from the third quartile, $47 - 38$, covering only the right half of the box.",
+    "D": "subtracts the whisker ends, $58 - 22$, which is the range rather than the interquartile range."
+  },
+  "correctAnswer": "C",
+  "hint": "The interquartile range is the width of the box itself.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** The box runs from $31$ to $47$ grams, so the interquartile range is $47 - 31 = 16$.\n\n**The Full Solution:**\nStep 1: A box plot marks five values: the minimum and maximum at the whisker ends, the quartiles at the box edges, and the median inside the box.\nStep 2: The interquartile range is the third quartile minus the first quartile, so it uses only the two box edges, $47$ and $31$.\nStep 3: Interquartile range $= 47 - 31 = 16$ grams. Check: the middle half of the $45$ masses lies inside a $16$-gram-wide box. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): subtracts the first quartile from the median, $38 - 31$, covering only the left half of the box.\n* Choice B ($9$): subtracts the median from the third quartile, $47 - 38$, covering only the right half of the box.\n* Choice D ($36$): subtracts the whisker ends, $58 - 22$, which is the range rather than the interquartile range.\n\n**Test Day Takeaway:** Box edges give the interquartile range; whisker ends give the range. Decide which two marks the question wants before subtracting."
+}

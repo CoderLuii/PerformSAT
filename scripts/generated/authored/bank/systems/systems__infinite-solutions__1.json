@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "In the $xy$-plane, the equation $y = 3x - 5$ is graphed as one line and the equation $9x - 3y = 15$ is graphed as another. Which statement about the two graphs is true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "They are parallel and distinct."
+    },
+    {
+      "id": "B",
+      "text": "They intersect at exactly one point."
+    },
+    {
+      "id": "C",
+      "text": "They intersect at exactly two points."
+    },
+    {
+      "id": "D",
+      "text": "They are the same line."
+    }
+  ],
+  "distractorNotes": {
+    "A": "notices the equal slopes but stops there; the $y$-intercepts also match, so the lines coincide instead of running parallel.",
+    "B": "assumes two equations always describe two crossing lines, which fails when the equations are multiples of each other.",
+    "C": "two lines can share at most one point unless they coincide entirely, so exactly two shared points is impossible."
+  },
+  "correctAnswer": "D",
+  "hint": "Rewrite the second equation in slope-intercept form and compare it with the first.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~20s):** Dividing $9x - 3y = 15$ by $3$ gives $3x - y = 5$, or $y = 3x - 5$, which is the first equation.\n\n**The Full Solution:**\nStep 1: Solve $9x - 3y = 15$ for $y$: $-3y = -9x + 15$, so $y = 3x - 5$.\nStep 2: That is exactly the first equation, so the two equations are equivalent.\nStep 3: Equivalent equations have identical graphs, so the two lines coincide and every point on one lies on the other. Check: the second equation is $3$ times the equation $3x - y = 5$, so no new information is added. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: notices the equal slopes but stops there; the $y$-intercepts also match, so the lines coincide instead of running parallel.\n* Choice B: assumes two equations always describe two crossing lines, which fails when the equations are multiples of each other.\n* Choice C: two lines can share at most one point unless they coincide entirely, so exactly two shared points is impossible.\n\n**Test Day Takeaway:** Before counting intersections, reduce each equation to slope-intercept form. Matching slope and intercept means one line, not two."
+}

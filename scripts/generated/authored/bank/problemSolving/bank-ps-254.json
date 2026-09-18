@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-254",
+ "question": "Measurements at a survey stake show a glacier's terminus retreated $126$ meters last year, a retreat $10\\%$ less than the one measured the year before. How many meters did the terminus retreat the year before?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$113.4$"
+  },
+  {
+   "id": "B",
+   "text": "$138.6$"
+  },
+  {
+   "id": "C",
+   "text": "$140$"
+  },
+  {
+   "id": "D",
+   "text": "$151.2$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "applies the $10\\%$ decrease again, $126(0.90) = 113.4$, instead of undoing it",
+  "B": "adds $10\\%$ to $126$ rather than dividing by $0.90$, giving $138.6$",
+  "D": "doubles the percent and adds it, computing $126(1.20) = 151.2$"
+ },
+ "explanation": "**SAT Pattern: Percent Greater Than / Less Than**\n\n**Choice C is correct.** Last year's retreat is $90\\%$ of the previous year's, so the earlier retreat is $\\frac{126}{0.90} = 140$ meters.\n\n**The Fast Way (~30s):** $126$ is $90\\%$ of the answer, so divide: $\\frac{126}{0.9} = 140$ meters.\n\n**The Full Solution:**\n\nStep 1: Name the earlier retreat $r$. The comparison is made against $r$, so $r$ is the base.\n\nStep 2: Translate \"$10\\%$ less than $r$\": $r - 0.10r = 0.90r$, and that equals $126$ meters.\n\nStep 3: Solve: $0.90r = 126$, so $r = 140$ meters. Check: $10\\%$ of $140$ is $14$, and $140 - 14 = 126$ meters.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($113.4$): takes another $10\\%$ off $126$, moving in the wrong direction.\n* Choice B ($138.6$): adds $10\\%$ to $126$. Undoing a $10\\%$ decrease requires dividing by $0.90$, and $\\frac{1}{0.90} \\approx 1.111$, not $1.10$.\n* Choice D ($151.2$): applies a $20\\%$ increase, doubling the percent in the stem.\n\n**Test Day Takeaway:** Going backwards through a percent change is division, not the opposite percent -- $0.90$ and $1.10$ are not inverses."
+}

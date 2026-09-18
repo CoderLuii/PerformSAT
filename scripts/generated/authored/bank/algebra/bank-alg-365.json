@@ -1,0 +1,53 @@
+{
+  "id": "bank-alg-365",
+  "question": "The shaded region shown represents all solutions to the system of inequalities $y \\leq x + 3$ and $y \\leq -2x + 6$ in the $xy$-plane. Which of the following ordered pairs $(x, y)$ is a solution to the system?",
+  "diagram": {
+    "type": "twoLineGraph",
+    "params": {
+      "intersection": {
+        "x": 1,
+        "y": 4
+      },
+      "slope1": 1,
+      "slope2": -2,
+      "shadeRegion": "below-both",
+      "showIntersection": false,
+      "xRange": [
+        -6,
+        6
+      ],
+      "yRange": [
+        -4,
+        8
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-2, 4)$"
+    },
+    {
+      "id": "B",
+      "text": "$(2, 0)$"
+    },
+    {
+      "id": "C",
+      "text": "$(0, 5)$"
+    },
+    {
+      "id": "D",
+      "text": "$(3, 2)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "satisfies the second inequality but lies above the line y = x + 3",
+    "C": "satisfies the second inequality but lies above the line y = x + 3",
+    "D": "satisfies the first inequality but lies above the line y = -2x + 6"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: System of Linear Inequalities**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Test each pair in both inequalities. For $(2, 0)$: $0 \\leq 2 + 3$ and $0 \\leq -4 + 6$ are both true, so $(2, 0)$ is in the shaded region.\n\n**The Full Solution:**\nStep 1: A point is a solution to the system only if it satisfies both inequalities, which is the same as lying in the shaded region below both lines.\nStep 2: Check $(2, 0)$ in $y \\leq x + 3$: $0 \\leq 5$ is true. Check it in $y \\leq -2x + 6$: $0 \\leq 2$ is true. Both hold.\nStep 3: Confirm the others fail. $(-2, 4)$: $4 \\leq 1$ is false. $(0, 5)$: $5 \\leq 3$ is false. $(3, 2)$: $2 \\leq 6$ is true, but $2 \\leq 0$ is false. Only $(2, 0)$ satisfies both. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-2, 4)$): satisfies $y \\leq -2x + 6$ since $4 \\leq 10$, but it sits above the line $y = x + 3$, where $y$ would have to be at most $1$.\n* Choice C ($(0, 5)$): satisfies $y \\leq -2x + 6$ since $5 \\leq 6$, but it is above $y = x + 3$, whose value at $x = 0$ is $3$.\n* Choice D ($(3, 2)$): satisfies $y \\leq x + 3$ since $2 \\leq 6$, but it is above $y = -2x + 6$, whose value at $x = 3$ is $0$.\n\n**Test Day Takeaway:** A solution to a system of inequalities must pass every inequality; a point that passes one but fails the other is outside the shaded region."
+}

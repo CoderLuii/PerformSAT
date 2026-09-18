@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A weather radar's coverage region is bounded in the $xy$-plane by $x^2 + y^2 - 10x + 24y + 120 = 0$, one unit representing one kilometer. The antenna occupies the center of that region. Which of the following pairs the antenna's coordinates with the coverage radius, in kilometers?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Center $(5, -12)$, radius $7$"
+  },
+  {
+   "id": "B",
+   "text": "Center $(5, -12)$, radius $17$"
+  },
+  {
+   "id": "C",
+   "text": "Center $(5, -12)$, radius $49$"
+  },
+  {
+   "id": "D",
+   "text": "Center $(-5, 12)$, radius $7$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "adds the constant 120 instead of subtracting it, getting 25 + 144 + 120 = 289 and radius 17",
+  "C": "reports r squared, 49, as the radius",
+  "D": "reads the center straight off the signs printed in the equation, giving (-5, 12)"
+ },
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice A is correct.** Completing the square turns the equation into $(x - 5)^2 + (y + 12)^2 = 49$, so the center is $(5, -12)$ and the radius is $7$.\n\n**The Fast Way (~25s):** Halve and negate the linear coefficients for the center, $(5, -12)$, then $r^2 = 5^2 + 12^2 - 120 = 49$, so $r = 7$.\n\n**The Full Solution:**\nStep 1: Group and complete the square: $x^2 - 10x$ needs $25$, and $y^2 + 24y$ needs $144$.\nStep 2: $(x - 5)^2 - 25 + (y + 12)^2 - 144 + 120 = 0$, so $(x - 5)^2 + (y + 12)^2 = 49$.\nStep 3: Check with the true center and radius: expanding $(x - 5)^2 + (y + 12)^2 = 49$ gives $x^2 - 10x + 25 + y^2 + 24y + 144 - 49 = 0$, and $25 + 144 - 49 = 120$, matching the original constant.\n\n**Why the wrong answers are tempting:**\n* Choice B (radius $17$): moves the $+120$ to the right side without changing its sign, computing $25 + 144 + 120 = 289$ and $r = 17$.\n* Choice C (radius $49$): completes the square correctly but reports $r^2 = 49$ as the radius instead of taking the square root.\n* Choice D (center $(-5, 12)$): reads the center off the signs that appear in the general form rather than from the $(x - h)$ and $(y - k)$ factors, flipping both coordinates.\n\n**Test Day Takeaway:** In standard form the center is $(h, k)$ from $(x - h)^2 + (y - k)^2 = r^2$, so a $+24y$ term means $k = -12$, and the number on the right is $r^2$, never $r$."
+}

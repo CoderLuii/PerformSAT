@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-221",
+ "question": "In the figure, triangle $ABC$ is similar to triangle $DEF$, with $A$, $B$, and $C$ corresponding to $D$, $E$, and $F$, respectively. The ratio of the perimeter of triangle $ABC$ to the perimeter of triangle $DEF$ is $2:5$. If $BC = 6$, what is the length of $EF$?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "labels": [
+     "A",
+     "B",
+     "C"
+    ],
+    "sideLabels": [
+     "",
+     "BC = 6",
+     ""
+    ]
+   },
+   "triangle2": {
+    "labels": [
+     "D",
+     "E",
+     "F"
+    ],
+    "sideLabels": [
+     "",
+     "EF = ?",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2.4$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$30$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the ratio",
+  "B": "adds the difference of the ratio terms",
+  "D": "multiplies by 5 instead of by 5/2"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The perimeter ratio equals the side ratio, so $EF = 6 \\cdot \\frac{5}{2} = 15$.\n\n**The Full Solution:**\nStep 1: In similar triangles, the ratio of perimeters equals the ratio of any pair of corresponding sides. Here that common ratio is $\\frac{2}{5}$.\nStep 2: $\\overline{BC}$ corresponds to $\\overline{EF}$, so $\\frac{BC}{EF} = \\frac{2}{5}$, that is $\\frac{6}{EF} = \\frac{2}{5}$.\nStep 3: Cross-multiply: $2 \\cdot EF = 30$, so $EF = 15$.\n\nVerification: $\\frac{6}{15} = \\frac{2}{5}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.4$): applies the ratio backwards, $6 \\cdot \\frac{2}{5}$, shrinking a side of the larger triangle.\n* Choice B ($9$): adds the difference of the ratio terms, $6 + (5 - 2)$, treating the ratio as an additive gap.\n* Choice D ($30$): multiplies by $5$ instead of by $\\frac{5}{2}$.\n\n**Test Day Takeaway:** Perimeter ratio, side ratio, and altitude ratio are all the same number in similar figures. Only areas change the exponent."
+}

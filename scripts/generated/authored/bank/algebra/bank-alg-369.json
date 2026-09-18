@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-369",
+  "question": "A garden plot has $120$ square feet of planting space. Each tomato plant requires $4$ square feet, and each pepper plant requires $2$ square feet. A gardener will plant $t$ tomato plants and $p$ pepper plants and wants at least $40$ plants in total. Which of the following systems of inequalities represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4t + 2p \\geq 120$ and $t + p \\leq 40$"
+    },
+    {
+      "id": "B",
+      "text": "$2t + 4p \\leq 120$ and $t + p \\geq 40$"
+    },
+    {
+      "id": "C",
+      "text": "$4t + 2p \\leq 120$ and $t + p \\leq 40$"
+    },
+    {
+      "id": "D",
+      "text": "$4t + 2p \\leq 120$ and $t + p \\geq 40$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses both inequality directions",
+    "B": "swaps the space requirements of the two plant types",
+    "C": "translates \"at least 40 plants\" as an upper bound"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: System of Linear Inequalities**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Space used is $4t + 2p$, which cannot exceed $120$: $4t + 2p \\leq 120$. \"At least $40$ plants\" is $t + p \\geq 40$.\n\n**The Full Solution:**\nStep 1: Build the space constraint. Tomato plants use $4$ square feet each, so $t$ of them use $4t$; pepper plants use $2p$. The total planted space cannot exceed what is available: $4t + 2p \\leq 120$.\nStep 2: Build the count constraint. The total number of plants is $t + p$, and \"at least $40$\" means greater than or equal to $40$: $t + p \\geq 40$.\nStep 3: The system is $4t + 2p \\leq 120$ and $t + p \\geq 40$. Check with a plausible plan, $t = 10$ and $p = 35$: space $40 + 70 = 110 \\leq 120$ and count $45 \\geq 40$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4t + 2p \\geq 120$ and $t + p \\leq 40$): flips both directions, requiring the garden to be overfilled and capping the plant count.\n* Choice B ($2t + 4p \\leq 120$ and $t + p \\geq 40$): attaches $2$ square feet to tomatoes and $4$ to peppers, the reverse of the given requirements.\n* Choice C ($4t + 2p \\leq 120$ and $t + p \\leq 40$): reads \"at least $40$\" as \"at most $40$.\"\n\n**Test Day Takeaway:** Match each phrase to a sign: \"available\" or \"cannot exceed\" means $\\leq$, \"at least\" means $\\geq$, and each coefficient must sit with the variable it describes."
+}

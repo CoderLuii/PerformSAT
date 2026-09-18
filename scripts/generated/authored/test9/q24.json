@@ -6,29 +6,14 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 1,
-  "passage": "Through the 1960s, each library typed its own catalog cards, repeating description work that thousands of other libraries were doing for the very same books. At the Library of Congress, the programmer Henriette Avram designed MARC, a standard format that let one machine-readable catalog record be shared among institutions. ______ a library could simply download a record another library had already created instead of recataloging the book from scratch.",
+  "passage": "Frederick II insisted that claims about birds be tested against direct observation, and his falconry treatise corrected several assertions that ancient authorities had repeated for a thousand years. His demanding empirical method found few imitators among medieval writers. ______ the treatise itself remained a touchstone, copied, translated, and annotated by generations of European falconers.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "B",
-      "text": "For example,"
-    },
-    {
-      "id": "C",
-      "text": "In contrast,"
-    },
-    {
-      "id": "D",
-      "text": "As a result,"
-    }
+    { "id": "A", "text": "In addition," },
+    { "id": "B", "text": "Therefore," },
+    { "id": "C", "text": "For instance," },
+    { "id": "D", "text": "Nevertheless," }
   ],
   "correctAnswer": "D",
-  "explanation": "MARC let one catalog record be shared, and the sentence after the blank states the payoff: a library could download an existing record instead of starting over. That is a result, so \"As a result,\" choice D, fits. \"Nevertheless\" and \"In contrast\" signal opposition, and \"For example\" would wrongly cast the payoff as an instance of something already stated.",
-  "_meta": {
-    "anchor": "Henriette Avram, MARC"
-  }
+  "explanation": "**Choice D is correct.** The final sentence runs against the expectation set by the one before it: the method attracted few imitators, yet the book itself stayed influential for generations. \"Nevertheless\" marks exactly that concession-and-reversal.\n\n**The Full Solution:**\n- Sentence three sets up a limitation — the empirical method was not widely adopted.\n- Sentence four reports a fact that survives despite that limitation: the treatise remained a touchstone.\n- \"Few imitators\" followed by \"remained a touchstone\" is a contrast between neglect of the method and endurance of the work.\n\n**Why the other choices are wrong:**\n- A: \"In addition\" treats the treatise's endurance as more of the same, ignoring the tension with \"few imitators.\"\n- B: \"Therefore\" claims the endurance followed from the lack of imitators, reversing the logic.\n- C: \"For instance\" would make the last sentence an example of the method finding few imitators, which it is not."
 }

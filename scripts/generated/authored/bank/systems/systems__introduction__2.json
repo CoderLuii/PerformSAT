@@ -1,0 +1,50 @@
+{
+  "id": 2,
+  "question": "The graph of a system of two linear equations is shown in the $xy$-plane. Which ordered pair is the solution to this system?",
+  "diagram": {
+    "type": "twoLineGraph",
+    "params": {
+      "intersection": {
+        "x": 2,
+        "y": -1
+      },
+      "slope1": 1,
+      "slope2": -2,
+      "xRange": [
+        -6,
+        6
+      ],
+      "yRange": [
+        -6,
+        6
+      ],
+      "showIntersection": false
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-3, 3)$"
+    },
+    {
+      "id": "B",
+      "text": "$(-1, 2)$"
+    },
+    {
+      "id": "C",
+      "text": "$(2, -1)$"
+    },
+    {
+      "id": "D",
+      "text": "$(2, 1)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "pairs the two $y$-intercepts, $-3$ and $3$, as if they formed a solution.",
+    "B": "reverses the coordinates of the intersection point.",
+    "D": "reads the $x$-coordinate correctly but drops the negative sign on the $y$-coordinate."
+  },
+  "correctAnswer": "C",
+  "hint": "The solution is the one point that lies on both lines at once.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** The two lines cross at $(2, -1)$, which is the only point on both graphs.\n\n**The Full Solution:**\nStep 1: An ordered pair solves a system of two linear equations exactly when it lies on both graphs.\nStep 2: The only point shared by the two lines is their point of intersection.\nStep 3: Reading across and up from that point gives $x = 2$ and $y = -1$, so the solution is $(2, -1)$. Check: the lines shown are $y = x - 3$ and $y = -2x + 3$, and $2 - 3 = -1$ while $-2(2) + 3 = -1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-3, 3)$): pairs the two $y$-intercepts, $-3$ and $3$, as if they formed a solution.\n* Choice B ($(-1, 2)$): reverses the coordinates of the intersection point.\n* Choice D ($(2, 1)$): reads the $x$-coordinate correctly but drops the negative sign on the $y$-coordinate.\n\n**Test Day Takeaway:** On a graphed system, the solution is the intersection point, read as $(x, y)$ in that order. Intercepts are not solutions."
+}

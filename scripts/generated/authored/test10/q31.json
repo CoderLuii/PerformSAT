@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 2,
- "passage": "Reefs damaged by bleaching are sometimes replanted with fragments of coral grown in underwater nurseries. Early projects simply transplanted whatever colonies grew fastest, but managers came to see that this approach could ______ the very vulnerability they hoped to reduce: if the transplanted fragments all descended from a few heat-sensitive parents, an unusually warm summer might kill the entire restored patch at once.",
+ "passage": "The natural sponge trade had weathered overharvesting and the loss of whole fleets, but two blows in close succession proved harder to absorb. A blight that swept the Caribbean and Mediterranean beds in the late 1930s destroyed much of the supply, and the inexpensive cellulose sponges introduced in the following decade captured much of the demand. With substitutes on every shelf by the time the beds recovered, that recovery ______ little of the trade it would once have restored.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "measure"
+   "text": "foretold"
   },
   {
    "id": "B",
-   "text": "entrench"
+   "text": "revived"
   },
   {
    "id": "C",
-   "text": "advertise"
+   "text": "displaced"
   },
   {
    "id": "D",
-   "text": "postpone"
+   "text": "endangered"
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The passage warns that transplanting only the fastest-growing fragments could deepen the same fragility managers hoped to reduce, because fragments descended from a few heat-sensitive parents might all die in one warm summer. \"Entrench\" conveys that hardening or deepening of an existing vulnerability. \"Measure\" describes assessing rather than worsening it; \"advertise\" makes no sense here; and \"postpone\" would mean delaying the vulnerability, not reinforcing it as the passage says."
+ "explanation": "**Choice B is correct.** The sentence contrasts what the beds' recovery accomplished with what it \"would once have restored\"; the verb that pairs with \"restored\" and fits reviving a trade is \"revived.\"\n\n**The Full Solution:**\n- The causal setup: the blight removed supply, and cellulose substitutes then absorbed demand, so healthy beds no longer translated into customers.\n- The final sentence measures the recovery's effect on the trade. Since demand had moved on, the recovery brought back, revived, little of the old trade, though in earlier times it would have restored it.\n\n**Why the other choices are wrong:**\n- A: \"Foretold\" makes the recovery a predictor of the trade rather than a potential cause of its return, which breaks the sentence's contrast with \"restored.\"\n- C: \"Displaced\" would mean the recovery pushed the trade aside, but the substitutes, not the recovering beds, did the displacing.\n- D: \"Endangered\" reverses the recovery's role; healthy beds threatened nothing about the trade, they simply could no longer rescue it."
 }

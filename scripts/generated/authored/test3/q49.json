@@ -5,30 +5,31 @@
  "band": 4,
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
+ "type": "multiple-choice",
+ "passage": "Working for a federal agency that documented the Depression's toll on farm families, ______ made photographs that gave economic catastrophe a human face and helped build public support for relief programs.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "it was Lise Meitner's experimental notes that went on"
+   "text": "Dorothea Lange's camera"
   },
   {
    "id": "B",
-   "text": "Lise Meitner went on"
+   "text": "the photographer Dorothea Lange"
   },
   {
    "id": "C",
-   "text": "Lise Meitner's experimental notes went on"
+   "text": "Dorothea Lange's photographs"
   },
   {
    "id": "D",
-   "text": "the experimental notes belonging to Lise Meitner went on"
+   "text": "it was Dorothea Lange who"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"Lise Meitner went on.\" The introductory phrase \"Trained as a physicist in Berlin and forced to leave Germany in 1938\" must modify the subject of the main clause, and only a person can be trained as a physicist and forced to leave Germany. \"Lise Meitner went on to use her experimental notes … to recognize … that the barium Hahn had detected … was a sign of nuclear fission\" places that person in the subject position, so the modifier attaches correctly. The other options make \"experimental notes\" the subject — directly in C and D, and through a cleft construction in A — leaving the introductory phrase dangling, since notes cannot be trained or forced to flee.",
+ "explanation": "**Choice B is correct.** The opening modifier \"Working for a federal agency...\" must attach to whoever was doing the working, so the subject that follows the comma has to be the person herself: \"the photographer Dorothea Lange.\"\n\n**The Full Solution:**\n- Participial openers grab the nearest following subject. The sentence is only conventional if that subject names the worker.\n- B places Lange immediately after the modifier, and the rest of the sentence proceeds naturally: she \"made photographs that gave economic catastrophe a human face.\"\n\n**Why the other choices are wrong:**\n- A: It hands the modifier to her camera — the camera was not working for a federal agency — a classic dangling modifier.\n- C: It makes the photographs the workers, and doubly fails by having photographs make photographs.\n- D: The cleft \"it was... who\" puts the empty pronoun \"it\" in the modifier's grasp; \"it\" was not working for the agency, so the modifier still dangles.",
  "_meta": {
-  "anchor": "Lise Meitner — physicist; fled Nazi Germany 1938; nuclear fission (Dec. 1938); dangling modifier"
- },
- "passage": "Trained as a physicist in Berlin and forced to leave Germany in 1938, ______ to use her experimental notes — sent to Sweden ahead of her — to recognize, in correspondence with Otto Hahn that December, that the barium Hahn had detected after bombarding uranium with neutrons was a sign of nuclear fission.",
- "type": "multiple-choice"
+  "anchor": "Dorothea Lange — Depression-era documentary photography; dangling modifier repair",
+  "rule": "introductory participial phrase must modify the main-clause subject"
+ }
 }

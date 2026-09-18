@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "The charge stored in a home battery, in kilowatt-hours, is modeled by $q(t)=at^{2}+bt+9$, where $t$ is the number of hours after midnight and $a$ and $b$ are constants. The battery holds $21$ kilowatt-hours at $t=2$ and $25$ kilowatt-hours at $t=4$. What is the value of $q(6)$?",
+ "hint": "Two supplied readings give two equations in $a$ and $b$.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$21$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$29$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "drops the constant term 9, reporting -36 + 48 = 12",
+  "C": "evaluates at t = 5 instead of t = 6, giving 24",
+  "D": "continues the arithmetic pattern 21, 25, 29 instead of using the model"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~55s):** The two readings give $2a+b=6$ and $4a+b=4$, so $a=-1$ and $b=8$; then $q(6)=-36+48+9=21$.\n\n**The Full Solution:**\n\nStep 1: Substitute $t=2$. $4a+2b+9=21$, so $4a+2b=12$ and $2a+b=6$.\n\nStep 2: Substitute $t=4$. $16a+4b+9=25$, so $16a+4b=16$ and $4a+b=4$.\n\nStep 3: Subtract the first result from the second. $2a=-2$, so $a=-1$ and $b=6-2(-1)=8$. Then $q(6)=-1(36)+8(6)+9=-36+48+9=21$.\n\nCheck: $q(2)=-4+16+9=21$ and $q(4)=-16+32+9=25$, both as given.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($12$): finds $a=-1$ and $b=8$ but drops the constant term, reporting $-36+48=12$.\n* Choice C ($24$): evaluates the model at $t=5$ rather than $t=6$, giving $-25+40+9=24$.\n* Choice D ($29$): reads $21$ and $25$ as an arithmetic pattern and extends it to $29$, ignoring the quadratic model.\n\n**Test Day Takeaway:** Two input-output pairs pin down the two unknown coefficients; solve the system before evaluating anywhere else."
+}

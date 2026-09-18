@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-130",
+  "question": "A masters swim squad recorded the $400$-meter freestyle times, in seconds, of the $16$ members entered in a meet. When one more member's time is added to the set, the mean of all the times is exactly $2$ seconds greater than before. Which of the following must be true of the added time?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It is $2$ seconds greater than the original mean."
+    },
+    {
+      "id": "B",
+      "text": "It is $17$ seconds greater than the original mean."
+    },
+    {
+      "id": "C",
+      "text": "It is $32$ seconds greater than the original mean."
+    },
+    {
+      "id": "D",
+      "text": "It is $34$ seconds greater than the original mean."
+    }
+  ],
+  "correctAnswer": "D",
+  "distractorNotes": {
+    "A": "reports the shift in the mean itself rather than how far the new value must sit above it",
+    "B": "reads the new count of $17$ as a number of seconds instead of multiplying it by the $2$-second shift",
+    "C": "uses the original count, computing $16(2) = 32$ instead of $17(2) = 34$"
+  },
+  "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice D is correct.** Writing the original mean as $M$, the new total is $17(M + 2) = 17M + 34$, so the added time is $17M + 34 - 16M = M + 34$ seconds.\n\n**The Fast Way (~55s):** Every one of the $17$ times must gain $2$ seconds' worth of total, so the newcomer supplies $17(2) = 34$ seconds above the old mean.\n\n**The Full Solution:**\n\nStep 1: Write the original total. Sixteen times with mean $M$ sum to $16M$ seconds.\n\nStep 2: Write the new total. Seventeen times with mean $M + 2$ sum to $17(M + 2) = 17M + 34$ seconds.\n\nStep 3: Subtract to isolate the added time: $(17M + 34) - 16M = M + 34$ seconds, so the added time is $34$ seconds greater than the original mean. Check: with $M = 300$, the original total is $4{,}800$; adding $334$ gives $5{,}134$ over $17$ times, and $\\frac{5{,}134}{17} = 302 = M + 2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: reports the $2$-second shift itself. A single value must carry the shift for all $17$ times, not just for itself.\n* Choice B: reads the new count of $17$ as a number of seconds rather than multiplying it by the $2$-second shift.\n* Choice C: multiplies the shift by the original count, $16(2) = 32$, but the new mean is spread over $17$ values.\n\n**Test Day Takeaway:** When one new value moves a mean, it must supply the shift for every value in the NEW set -- multiply the shift by the new count, not the old."
+}

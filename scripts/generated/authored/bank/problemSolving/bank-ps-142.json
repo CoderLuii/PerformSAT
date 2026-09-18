@@ -1,0 +1,71 @@
+{
+  "id": "bank-ps-142",
+  "question": "The table shows the distribution of $320$ library loans by format and by the age group of the borrower. If a loan that is not a print loan is selected at random, what is the probability that the borrower is in the $18$ to $64$ age group?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Print",
+        "Audio",
+        "E-book",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Under 18",
+          "40",
+          "14",
+          "26",
+          "80"
+        ],
+        [
+          "18 to 64",
+          "50",
+          "36",
+          "84",
+          "170"
+        ],
+        [
+          "65 and over",
+          "30",
+          "12",
+          "28",
+          "70"
+        ],
+        [
+          "Total",
+          "120",
+          "62",
+          "138",
+          "320"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{3}{8}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{21}{50}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{3}{5}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{12}{17}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "120/320, divides by the grand total instead of the 200 non-print loans",
+    "B": "84/200, counts only e-book loans and forgets the audio loans",
+    "D": "120/170, conditions on the age group instead (P(not print | 18 to 64))"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Two-Way Table Conditional Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Non-print loans are audio plus e-book: $62 + 138 = 200$. Of these, the $18$ to $64$ row has $36 + 84 = 120$, so the probability is $\\frac{120}{200} = \\frac{3}{5}$.\n\n**The Full Solution:**\nStep 1: The condition \"not a print loan\" combines the Audio and E-book columns. Their totals are $62$ and $138$, so the denominator is $200$ (equivalently, $320 - 120 = 200$).\nStep 2: In the $18$ to $64$ row, the non-print entries are $36$ (audio) and $84$ (e-book): $36 + 84 = 120$.\nStep 3: Probability $= \\frac{120}{200} = \\frac{3}{5}$. Check: $\\frac{3}{5}$ of $200$ is $120$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3}{8}$): This is $\\frac{120}{320}$, dividing by every loan instead of only the non-print loans.\n* Choice B ($\\frac{21}{50}$): This is $\\frac{84}{200}$, counting only the e-book loans and forgetting that audio loans are also non-print.\n* Choice D ($\\frac{12}{17}$): This is $\\frac{120}{170}$, conditioning on the age group; it answers \"given $18$ to $64$, what is the probability the loan is not print?\"\n\n**Test Day Takeaway:** A \"not X\" condition means adding the other columns (or subtracting X from the total) before you form the fraction."
+}

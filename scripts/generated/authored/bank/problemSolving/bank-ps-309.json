@@ -1,0 +1,21 @@
+{
+  "id": "bank-ps-309",
+  "question": "The box plot summarizes the wingspans, in centimeters, of the $46$ gulls banded at a coastal station. By how many centimeters does the range of the wingspans exceed the interquartile range of the wingspans?",
+  "diagram": {
+    "type": "boxPlot",
+    "params": {
+      "min": 96,
+      "q1": 118,
+      "median": 129,
+      "q3": 143,
+      "max": 168,
+      "xLabel": "Wingspan (cm)",
+      "xMin": 90,
+      "xMax": 175,
+      "xGridStep": 5,
+      "xLabelStep": 10
+    }
+  },
+  "correctAnswer": "47",
+  "explanation": "**SAT Pattern: Box Plot Interpretation**\n\n**The correct answer is $47$.**\n\n**The Fast Way (~15s):** Range $= 168 - 96 = 72$ and $\\text{IQR} = 143 - 118 = 25$, so the difference is $72 - 25 = 47$.\n\n**The Full Solution:**\nStep 1: The range uses the whisker ends: $168 - 96 = 72$ centimeters.\nStep 2: The interquartile range uses the box edges: $143 - 118 = 25$ centimeters.\nStep 3: The range exceeds the interquartile range by $72 - 25 = 47$ centimeters. Check: that difference is just the two whiskers combined, $(168 - 143) + (118 - 96) = 25 + 22 = 47$. $\\checkmark$\n\n**Common Mistakes:** Reporting $72$ or $25$ answers only half the question. Subtracting in the wrong order gives $-47$. Using the median as an endpoint gives $168 - 129 = 39$, which is a whisker plus half the box rather than either named measure.\n\n**Test Day Takeaway:** Range minus IQR is the total length of the two whiskers. Computing both measures separately, then subtracting, keeps the two spreads from blurring together."
+}

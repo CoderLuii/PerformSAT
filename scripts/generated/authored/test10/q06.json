@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
  "module": 1,
- "passage": "Before 1970, the long, patterned sounds that hydrophones picked up near humpback whales were generally dismissed as incidental noise. Analyzing recordings made off Bermuda, the biologist Roger Payne showed that these sounds were not random at all: each was a structured sequence of themes and phrases, repeated in a fixed order and revised over a season by all the males in a population together. Payne's analysis, later released as a widely heard recording, established that humpback song is an organized acoustic display rather than a byproduct of ordinary behavior, and it reframed the questions marine biologists asked about how the animals communicate.",
+ "passage": "Commercial sponges regenerate: a sponge cut cleanly above its base regrows from the tissue left behind, while one torn free by a hook rarely leaves anything capable of regrowth. Divers in the Aegean understood this long before biologists described it, harvesting by knife and leaving each sponge's base attached to the rock. The practice was not sentimentality. It kept the same beds productive season after season, and fleets returned to grounds their grandfathers had worked.",
  "question": "Which choice best states the main purpose of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "To trace the development of the underwater recording technology that made the study of whale sounds possible."
+   "text": "To argue that practicing harvesters deserve more credit than biologists for early discoveries about sponge regeneration."
   },
   {
    "id": "B",
-   "text": "To describe how Payne's analysis of humpback recordings overturned the view that the animals' sounds were random noise and changed how biologists studied them."
+   "text": "To explain how a traditional harvesting method sustained the resource on which the harvesters depended."
   },
   {
    "id": "C",
-   "text": "To explain why the males in a given humpback whale population revise their shared song over the course of a single breeding season, year after year."
+   "text": "To describe the process by which a damaged sponge regrows from remaining tissue."
   },
   {
    "id": "D",
-   "text": "To argue that the patterned songs of humpback whales are more complex than the vocalizations of any other marine animal."
+   "text": "To contrast the tools used by sponge harvesters in different regions of the Mediterranean."
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The passage sets up an earlier assumption—that the long sounds near humpbacks were incidental noise—and then reports how Payne's analysis showed the sounds were ordered sequences of repeated themes, reframing the questions biologists asked. That arc from dismissed-as-noise to organized-display is the main purpose. Choice A treats the recording technology as the focus, but the passage mentions it only in passing. Choice C picks up a single detail (seasonal revision) and mistakes it for the whole point. Choice D makes a cross-species ranking the passage never asserts."
+ "explanation": "**Choice B is correct.** Every element of the text serves one explanatory arc: cutting rather than tearing lets sponges regrow, so the divers' knife-harvesting kept their beds productive across generations.\n\n**The Full Solution:**\n- The first sentence supplies the biological mechanism (regrowth from an intact base); the second connects it to the divers' actual method; the last two spell out the payoff, beds that stayed productive.\n- That is a purpose of explanation: showing how a traditional method sustained the resource it exploited.\n\n**Why the other choices are wrong:**\n- A: The text notes the divers' knowledge preceded the biologists' but never argues about who deserves credit.\n- C: The regrowth process occupies one sentence and is never described in detail; it serves the larger point about the harvesting method.\n- D: Only one tool and one region are discussed; no contrast between regions appears."
 }

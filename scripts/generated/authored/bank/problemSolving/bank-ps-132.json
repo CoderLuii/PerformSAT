@@ -1,0 +1,63 @@
+{
+  "id": "bank-ps-132",
+  "question": "For each of $9$ rural districts, the scatterplot pairs the number of primary-care clinics in the district with the median distance, in kilometers, residents travel for care. The line of best fit is $y = 96 - 8x$. What median distance, in kilometers, does the line of best fit predict for a district with $7$ clinics?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          92
+        ],
+        [
+          2,
+          76
+        ],
+        [
+          3,
+          74
+        ],
+        [
+          4,
+          60
+        ],
+        [
+          5,
+          58
+        ],
+        [
+          6,
+          44
+        ],
+        [
+          7,
+          42
+        ],
+        [
+          8,
+          34
+        ],
+        [
+          9,
+          22
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 10,
+      "yMin": 0,
+      "yMax": 100,
+      "xGridStep": 1,
+      "xLabelStep": 2,
+      "yGridStep": 10,
+      "yLabelStep": 20,
+      "xLabel": "Primary-care clinics in district",
+      "yLabel": "Median distance traveled (km)",
+      "bestFitLine": {
+        "slope": -8,
+        "intercept": 96
+      }
+    }
+  },
+  "correctAnswer": "40",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**The correct answer is $40$.**\n\n**The Fast Way (~15s):** Substitute $x = 7$ into $y = 96 - 8x$: $96 - 56 = 40$ kilometers.\n\n**The Full Solution:**\nStep 1: Use the line, not the dot. The question asks what the line of best fit predicts, so the model equation is the tool.\nStep 2: Substitute. $y = 96 - 8(7) = 96 - 56 = 40$ kilometers.\nStep 3: Check against the plot. The plotted district with $7$ clinics sits at $42$ kilometers, just above the line at $40$ — exactly the small gap a good model leaves. ✓\n\n**Common Mistakes:**\n* Reading the plotted point gives $42$, the observed distance rather than the predicted one.\n* Computing $96 + 8(7) = 152$ drops the minus sign that makes distance fall as clinics increase.\n* Multiplying $96$ by $7$ and subtracting $8$ misreads the roles of the slope and the intercept.\n\n**Test Day Takeaway:** When a question says \"according to the line of best fit,\" substitute into the equation. The plotted point answers a different question."
+}

@@ -1,0 +1,29 @@
+{
+  "question": "A scale factor used in a casting model is $(5x^{b})^{2}$, which is equivalent to $25x^{18}$ for every $x>0$. What is the value of the constant $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$9$"
+    },
+    {
+      "id": "B",
+      "text": "$16$"
+    },
+    {
+      "id": "C",
+      "text": "$20$"
+    },
+    {
+      "id": "D",
+      "text": "$36$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracted 2 from 18 instead of dividing by 2",
+    "C": "added 2 to 18 instead of dividing by 2",
+    "D": "multiplied 18 by 2 instead of dividing by 2"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Squaring multiplies the exponent by $2$, so $2b=18$ and $b=9$.\n\n**The Full Solution:**\nStep 1: Expand the left side: $(5x^{b})^{2}=5^{2}x^{2b}=25x^{2b}$.\nStep 2: The two expressions are equivalent for every $x>0$, so their exponents match: $2b=18$.\nStep 3: Divide: $b=9$. Check: $(5x^{9})^{2}=25x^{18}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($16$): subtracts $2$ from $18$ instead of dividing.\n* Choice C ($20$): adds $2$ to $18$ instead of dividing.\n* Choice D ($36$): multiplies $18$ by $2$ instead of dividing.\n\n**Test Day Takeaway:** A power raised to a power multiplies exponents, so working backwards divides.",
+  "id": "bank-am-121"
+}

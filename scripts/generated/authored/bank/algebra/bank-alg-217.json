@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-217",
+ "question": "A drawing places a hinge line along the graph of $y = \\frac{4}{9}x + 3$. Which of the following equations defines a line that meets the hinge line at a right angle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -\\frac{9}{4}x + 3$"
+  },
+  {
+   "id": "B",
+   "text": "$y = -\\frac{4}{9}x + 3$"
+  },
+  {
+   "id": "C",
+   "text": "$y = \\frac{9}{4}x + 3$"
+  },
+  {
+   "id": "D",
+   "text": "$y = \\frac{4}{9}x - 3$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "negates the slope without inverting it, so the product is $-\\frac{16}{81}$, not $-1$",
+  "C": "inverts the slope without negating it, so the product is $1$",
+  "D": "repeats the hinge line's slope, giving a parallel line"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The hinge line has slope $\\frac{4}{9}$, so a perpendicular line has slope $-\\frac{9}{4}$.\n\n**The Full Solution:**\nStep 1: The hinge line is written in slope-intercept form, so its slope is $\\frac{4}{9}$.\nStep 2: Two lines meet at a right angle when the product of their slopes is $-1$.\nStep 3: Since $\\frac{4}{9}\\left(-\\frac{9}{4}\\right) = -1$, the perpendicular line has slope $-\\frac{9}{4}$, as in $y = -\\frac{9}{4}x + 3$. Check: flipping $\\frac{4}{9}$ gives $\\frac{9}{4}$, and the negative sign completes the pair.\n\n**Why the wrong answers are tempting:**\n* Choice B ($y = -\\frac{4}{9}x + 3$): negates the slope without inverting it, so the product is $-\\frac{16}{81}$, not $-1$\n* Choice C ($y = \\frac{9}{4}x + 3$): inverts the slope without negating it, so the product is $1$\n* Choice D ($y = \\frac{4}{9}x - 3$): repeats the hinge line's slope, giving a parallel line\n\n**Test Day Takeaway:** Perpendicular slopes need both moves: flip the fraction and change the sign."
+}

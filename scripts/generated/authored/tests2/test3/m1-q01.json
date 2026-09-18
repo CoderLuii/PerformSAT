@@ -1,0 +1,45 @@
+{
+ "id": 1,
+ "question": "The table shows the two charges a cloud archive service bills a research group each month. Which equation gives the total monthly cost $C$, in dollars, when the group stores $g$ gigabytes?",
+ "questionTable": {
+  "headers": [
+   "Charge",
+   "Amount (dollars)"
+  ],
+  "rows": [
+   [
+    "Monthly account fee",
+    "24"
+   ],
+   [
+    "Cost per gigabyte stored",
+    "0.15"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$C = 0.15(g + 24)$"
+  },
+  {
+   "id": "B",
+   "text": "$C = 24g + 0.15$"
+  },
+  {
+   "id": "C",
+   "text": "$C = 0.15g + 24$"
+  },
+  {
+   "id": "D",
+   "text": "$C = 24.15g$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "applies the per-gigabyte rate to the account fee as well, charging 0.15 times 24 instead of adding the fee once",
+  "B": "swaps the two roles, charging 24 dollars per gigabyte and adding a flat 0.15",
+  "D": "adds the fee to the rate first (24 + 0.15 = 24.15) and multiplies the sum by g, so the fee is charged once per gigabyte"
+ },
+ "explanation": "**SAT Pattern: Linear Cost Setup**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The $24$ fee is billed once no matter how much is stored, so it is the constant term; the $0.15$ is billed per gigabyte, so it multiplies $g$. That gives $C = 0.15g + 24$.\n\n**The Full Solution:**\nStep 1: Separate the charge that does not depend on $g$. The monthly account fee is $\\$24$ whether the group stores $1$ gigabyte or $1{,}000$, so it enters the equation as a constant.\nStep 2: Write the charge that does depend on $g$. Storage costs $\\$0.15$ for each gigabyte, so $g$ gigabytes cost $0.15g$ dollars.\nStep 3: Add the two pieces: $C = 0.15g + 24$. Check with $g = 100$: the model gives $0.15(100) + 24 = 15 + 24 = 39$ dollars, which is $\\$15$ of storage plus the $\\$24$ fee ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($C = 0.15(g + 24)$): multiplies the account fee by the per-gigabyte rate. At $g = 100$ this bills $0.15(124) = 18.60$ dollars, which never collects the $\\$24$ fee at all.\n* Choice B ($C = 24g + 0.15$): swaps the two numbers, billing $\\$24$ for every gigabyte and adding a single $\\$0.15$. At $g = 100$ that is $\\$2{,}400.15$.\n* Choice D ($C = 24.15g$): adds $24$ and $0.15$ before multiplying, which charges the account fee once for every gigabyte stored rather than once for the month.\n\n**Test Day Takeaway:** In a two-charge table, ask of each row \"does this repeat with the variable?\" A one-time charge is the constant term; a per-unit charge is the coefficient."
+}

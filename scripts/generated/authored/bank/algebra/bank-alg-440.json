@@ -1,0 +1,52 @@
+{
+ "id": "bank-alg-440",
+ "question": "A supplier's charge for $x$ crates is linear in $x$ and is recorded in the table. A second supplier charges $mx + 240$ dollars for $x$ crates and never matches the first supplier's charge. What is the value of $m$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Crates ordered",
+    "Charge (dollars)"
+   ],
+   "rows": [
+    [
+     "4",
+     "260"
+    ],
+    [
+     "8",
+     "380"
+    ],
+    [
+     "12",
+     "500"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$30$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$120$"
+  },
+  {
+   "id": "D",
+   "text": "$140$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "divides the $120$-dollar change by the three table rows instead of by the $4$-crate change",
+  "C": "uses the change in charge itself as the rate, skipping the division by $4$",
+  "D": "reports the first supplier's charge for zero crates rather than the per-crate rate"
+ },
+ "explanation": "**SAT Pattern: Parallel Lines No Solution**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The table rises $120$ dollars per $4$ crates, so the first charge is $30x + 140$ and $m = 30$.\n\n**The Full Solution:**\nStep 1: From $4$ crates to $8$ crates the charge rises from $260$ to $380$ dollars, a change of $120$ dollars over $4$ crates, so the rate is $\\frac{120}{4} = 30$ dollars per crate.\nStep 2: Then $260 = 30(4) + b$ gives $b = 140$, so the first supplier charges $30x + 140$ dollars.\nStep 3: Charges that are never equal require the same rate, so $m = 30$; the fixed parts $240$ and $140$ differ, so the charges never match. Check: $30(12) + 140 = 500$, matching the table.\n\n**Why the wrong answers are tempting:**\n* Choice B ($40$): divides the $120$-dollar change by the three table rows instead of by the $4$-crate change\n* Choice C ($120$): uses the change in charge itself as the rate, skipping the division by $4$\n* Choice D ($140$): reports the first supplier's charge for zero crates rather than the per-crate rate\n\n**Test Day Takeaway:** A rate from a table is a change in output divided by the matching change in input, never a raw difference."
+}

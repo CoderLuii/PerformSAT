@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-206",
+  "question": "A worker unloads boxes from a pallet at a steady rate. The table gives the number of boxes remaining on the pallet after $0$, $2$, and $4$ hours of work. Which type of function best models the number of boxes remaining as a function of the number of hours worked?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Hours worked",
+        "Boxes remaining"
+      ],
+      "rows": [
+        [
+          "0",
+          "480"
+        ],
+        [
+          "2",
+          "432"
+        ],
+        [
+          "4",
+          "384"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Decreasing exponential"
+    },
+    {
+      "id": "B",
+      "text": "Decreasing linear"
+    },
+    {
+      "id": "C",
+      "text": "Increasing exponential"
+    },
+    {
+      "id": "D",
+      "text": "Increasing linear"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the successive DIFFERENCES are constant, not the ratios",
+    "C": "the count is falling, and the ratios are not constant",
+    "D": "the count is falling"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Classify Physical Motion Model**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The count drops by the same $48$ boxes every $2$ hours, a constant rate — decreasing linear.\n\n**The Full Solution:**\nStep 1: From the table, $480 \\to 432 \\to 384$: each $2$-hour step subtracts $48$ boxes.\nStep 2: Constant differences over equal steps define a linear function, with slope $\\dfrac{-48}{2} = -24$ boxes per hour.\nStep 3: The slope is negative, so the model is decreasing linear: $b(h) = 480 - 24h$. Check: $b(4) = 480 - 96 = 384$, matching the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (decreasing exponential): the ratios $\\frac{432}{480} = 0.9$ and $\\frac{384}{432} \\approx 0.889$ are NOT equal, so no constant factor exists.\n* Choice C (increasing exponential): the number of boxes is falling.\n* Choice D (increasing linear): the slope is negative, since boxes are being removed.\n\n**Test Day Takeaway:** Test a table both ways — equal differences mean linear, equal ratios mean exponential."
+}

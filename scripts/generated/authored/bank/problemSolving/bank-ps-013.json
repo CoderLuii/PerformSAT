@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-013",
+  "question": "The number of members of a hiking club increased by $45\\%$ from 2019 to 2022 and then increased by $25\\%$ from 2022 to 2024. The club had $2{,}610$ members in 2024. How many members did the club have in 2019?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1{,}440$"
+    },
+    {
+      "id": "B",
+      "text": "$1{,}535$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}800$"
+    },
+    {
+      "id": "D",
+      "text": "$2{,}088$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "adds the percents and divides once by $1.70$, which gives about $1{,}535$; successive increases multiply, so the true factor is $1.45 \\times 1.25 = 1.8125$.",
+    "C": "undoes only the $45\\%$ increase, $\\frac{2{,}610}{1.45}$, and ignores the $25\\%$ increase.",
+    "D": "undoes only the $25\\%$ increase and reports the 2022 membership."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Reverse Growth**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Undo the growth in reverse order by dividing: $\\frac{2{,}610}{1.25} = 2{,}088$ members in 2022, and $\\frac{2{,}088}{1.45} = 1{,}440$ members in 2019.\n\n**The Full Solution:**\nStep 1: Let $m$ be the 2019 membership. Two increases multiply: $m \\times 1.45 \\times 1.25 = 2{,}610$.\nStep 2: Divide out each growth factor: $\\frac{2{,}610}{1.25} = 2{,}088$ (the 2022 count), then $\\frac{2{,}088}{1.45} = 1{,}440$.\nStep 3: Check forward: $1{,}440 \\times 1.45 = 2{,}088$, and $2{,}088 \\times 1.25 = 2{,}610$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($1{,}535$): adds the percents and divides once by $1.70$, which gives about $1{,}535$; successive increases multiply, so the true factor is $1.45 \\times 1.25 = 1.8125$.\n* Choice C ($1{,}800$): undoes only the $45\\%$ increase, $\\frac{2{,}610}{1.45}$, and ignores the $25\\%$ increase.\n* Choice D ($2{,}088$): undoes only the $25\\%$ increase and reports the 2022 membership.\n\n**Test Day Takeaway:** Each percent increase is a multiplication by $(1 + \\text{rate})$; to go backward, divide by every factor, one at a time."
+}

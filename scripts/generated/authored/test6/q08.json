@@ -9,36 +9,36 @@
   "passages": [
     {
       "label": "Text 1",
-      "text": "For decades after the Second World War, most American cities replaced their electric streetcars with diesel buses, and one explanation traces that change to corporate strategy. A holding company called National City Lines, backed by General Motors and several tire and oil firms, bought up dozens of local transit systems between the late 1930s and the 1950s. Once in control, the company tore out the rails and overhead wires and put buses on the routes. On this account, the streetcar did not lose a fair competition; it was dismantled by the very firms that stood to profit from the vehicles, fuel, and tires that buses required."
+      "text": "The multi-ton stone figures of Rapa Nui, the moai, were carved at a single quarry and moved as far as eighteen kilometers to platforms along the coast. Drawing on the island's oral traditions and on trials with replicas, the archaeologist Jo Anne Van Tilburg has argued that work crews lashed each statue horizontally to a wooden sledge and hauled it over log rollers or rails — a method her team demonstrated by moving a replica statue this way with a modest crew of volunteers."
     },
     {
       "label": "Text 2",
-      "text": "The conversion to buses is not in dispute, but its cause is. By the time National City Lines made most of its purchases, American streetcar companies were already in serious trouble. Ridership had been sliding since the 1920s as private automobiles spread; fares were often frozen by old franchise agreements even as costs rose, and the aging tracks were expensive to maintain. Buses were cheaper to operate and could be rerouted at will. Many systems with no connection to National City Lines abandoned their rails in the same years. The corporate purchases, on this view, sped along a collapse that economic pressures had already made likely."
+      "text": "Archaeologists Terry Hunt and Carl Lipo note that moai abandoned along the island's ancient roads lean forward, with bases carved wider at the front — features that would be liabilities for a statue dragged on its back but assets for one moved upright. In their experiments, crews pulling three ropes rocked a five-ton upright replica from side to side and \"walked\" it forward hundreds of meters in under an hour. The statues' own design, they conclude, records the transport method."
     }
   ],
-  "question": "Based on the texts, how would the author of Text 2 most likely respond to the argument presented in Text 1?",
+  "question": "Based on the texts, how would Hunt and Lipo (Text 2) most likely respond to the argument presented in Text 1?",
   "choices": [
     {
       "id": "A",
-      "text": "It would deny that the National City Lines purchases ever occurred, since no single firm controlled a meaningful share of the nation's streetcar mileage in any region the corporate account points to."
+      "text": "They would deny that experiments with replicas can reveal how the actual statues were moved."
     },
     {
       "id": "B",
-      "text": "Although the bus conversions did occur, streetcar ridership had been falling for economic reasons before them, so the corporate campaign sped along a decline already under way rather than causing it."
+      "text": "They would counter that the statues' own design features point to upright transport rather than hauling on a sledge."
     },
     {
       "id": "C",
-      "text": "Corporate strategy did destroy the streetcars, and the same firms later worked to weaken intercity passenger rail as well."
+      "text": "They would accept that sledges were used but insist that moving each statue demanded far larger crews than Text 1 suggests."
     },
     {
       "id": "D",
-      "text": "The argument may hold for the largest cities but not for the many smaller systems that abandoned their rails on their own."
+      "text": "They would object that oral traditions cannot establish the route that any particular statue traveled."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. Text 1 argues that the streetcars were deliberately dismantled by the companies that profited from buses; Text 2 does not dispute that the conversions happened but contends that ridership was already sliding for economic reasons, so the purchases hastened a collapse rather than caused it. That is exactly the response in choice B. Choice A has Text 2 deny the purchases, which it explicitly accepts. Choice C has Text 2 endorse Text 1's causal claim, the reverse of its position. Choice D narrows the dispute to city size, a distinction Text 2 never draws; its quarrel is about cause, not scale.",
+  "explanation": "**Choice B is correct.** Hunt and Lipo's case rests on the statues themselves — the forward lean and front-heavy bases that suit upright \"walking\" but would hinder a statue dragged on its back — so they would answer Text 1's sledge argument by pointing to those design features.\n\n**The Full Solution:**\n- Text 1's method is horizontal: statue lashed to a sledge, hauled over rollers.\n- Text 2 argues the physical evidence cuts the other way: the road moai's lean and base shape are \"liabilities for a statue dragged on its back but assets for one moved upright,\" and their walking experiment showed the upright method works.\n- Their concluding claim — the design \"records the transport method\" — is exactly the rejoinder choice B attributes to them.\n\n**Why the other choices are wrong:**\n- A: Hunt and Lipo ran replica experiments themselves, so they could hardly dismiss the approach.\n- C: They do not accept sledges at all; their objection is to the method, not the crew size.\n- D: Text 2 never questions oral traditions or concerns itself with routes — its evidence is the statues' anatomy.",
   "_meta": {
-    "source_pair": "transit-streetcar (corporate-conspiracy vs economic-decline)",
-    "crossTextRelationship": "alternative-causal-account"
+    "source_pair": "moai transport (horizontal sledge-hauling vs upright walking)",
+    "crossTextRelationship": "alternative-explanation"
   }
 }

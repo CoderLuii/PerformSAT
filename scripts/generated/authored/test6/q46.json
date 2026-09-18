@@ -6,7 +6,7 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
-  "passage": "More than a century later, physicists still cite the famous 1887 experiment ______ failed to detect any motion of the Earth through a supposed light-bearing medium, a surprising null result that would later help open the way to Einstein's theory of relativity.",
+  "passage": "Readers of embossed books still rely on the 1824 code ______ first mapped the alphabet onto cells of six raised dots and, more shrewdly, sized every cell to sit beneath a single fingertip — a proportion Louis Braille settled on as a teenager and one that lets a practiced hand glide along a line without pausing to trace each letter.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
@@ -27,5 +27,5 @@
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"that.\" The clause \"that failed to detect any motion of the Earth\" is essential: it identifies which 1887 experiment is meant, so it attaches to \"experiment\" with no separating comma. Choice C places a comma before the essential clause, wrongly treating it as nonessential. Choice B puts a comma after \"that,\" interrupting the clause it introduces, and choice D adds commas on both sides, compounding both errors."
+  "explanation": "**Choice A is correct.** The clause \"that first mapped the alphabet...\" is restrictive — it identifies which 1824 code is meant — and a restrictive \"that\" clause attaches to its noun with no comma on either side.\n\n**The Full Solution:**\n- Ask whether the clause can be dropped: \"the 1824 code\" alone would leave the code unidentified, so the clause is essential, i.e., restrictive.\n- Restrictive clauses introduced by \"that\" are never set off by commas.\n\n**Why the other choices are wrong:**\n- B: A comma after \"that\" severs the relative pronoun from its own clause.\n- C: A comma before \"that\" treats the essential clause as an aside, and Standard English does not pair \"that\" with nonrestrictive commas.\n- D: Commas on both sides compound the two errors at once."
 }

@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A stage set's plywood brace is cut as a right triangle with hypotenuse $3k$ and with one leg $k\\sqrt{5}$, for a positive constant $k$. In terms of $k$, how much surface does one face of that brace cover?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{k^2\\sqrt{5}}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$k^2\\sqrt{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3k^2\\sqrt{5}}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$2k^2\\sqrt{5}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes the missing leg as k rather than 2k",
+  "C": "uses the hypotenuse 3k as the second leg instead of the missing leg 2k",
+  "D": "multiplies the two legs but forgets the one-half in the area formula"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The missing leg is $\\sqrt{9k^2 - 5k^2} = 2k$, so the area is $\\frac{1}{2}(2k)(k\\sqrt{5}) = k^2\\sqrt{5}$.\n\n**The Full Solution:**\nStep 1: The Pythagorean theorem gives $(k\\sqrt{5})^2 + (\\text{leg})^2 = (3k)^2$, so $5k^2 + (\\text{leg})^2 = 9k^2$.\nStep 2: Then $(\\text{leg})^2 = 4k^2$, and since $k > 0$ the missing leg is $2k$.\nStep 3: The two legs are perpendicular, so the area is $\\frac{1}{2}(2k)(k\\sqrt{5}) = k^2\\sqrt{5}$. Check with $k = 2$: the sides are $2\\sqrt{5}$, $4$, and $6$, and $\\frac{1}{2}(4)(2\\sqrt{5}) = 4\\sqrt{5} = 2^2\\sqrt{5}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{k^2\\sqrt{5}}{2}$): this uses $k$ as the missing leg. Squaring gives $4k^2$, whose square root is $2k$, not $k$.\n* Choice C ($\\frac{3k^2\\sqrt{5}}{2}$): this multiplies the given leg by the hypotenuse $3k$. Area uses the two perpendicular sides, and the hypotenuse is never one of them.\n* Choice D ($2k^2\\sqrt{5}$): this is the product of the legs with no $\\frac{1}{2}$. That product is the area of the rectangle the triangle fills half of.\n\n**Test Day Takeaway:** Square a radical leg before using the Pythagorean theorem — $(k\\sqrt{5})^2 = 5k^2$ — and confirm which two sides meet at the right angle before multiplying."
+}

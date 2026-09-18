@@ -1,0 +1,6 @@
+{
+ "question": "On a site plan, a drainage swale meets the grade line through $(-4,7)$ and $(2,-5)$ at a right angle and passes through the point $(6,1)$, with all coordinates measured in meters. What is the swale's $y$-coordinate at the location where $x=16$?",
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Line from Two Points**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~50s):** The grade line has slope $-2$, so the swale has slope $\\frac{1}{2}$; from $(6,1)$, moving $10$ right raises $y$ by $5$, giving $y=6$.\n\n**The Full Solution:**\n\nStep 1: Find the grade line's slope: $\\frac{-5-7}{2-(-4)}=\\frac{-12}{6}=-2$.\n\nStep 2: Perpendicular slopes are negative reciprocals, so the swale has slope $-\\frac{1}{-2}=\\frac{1}{2}$. Through $(6,1)$: $y-1=\\frac{1}{2}(x-6)$, or $y=\\frac{1}{2}x-2$.\n\nStep 3: At $x=16$, $y=\\frac{1}{2}(16)-2=8-2=6$. Check: $(6,1)$ satisfies $y=\\frac{1}{2}x-2$ since $3-2=1$.\n\n**Common Mistakes:** Reusing the grade line's slope $-2$ gives $y=-2(16)+13=-19$, the answer to a parallel-line question. Taking the reciprocal without the sign change gives slope $-\\frac{1}{2}$ and $y=-8+4=-4$.\n\n**Test Day Takeaway:** Perpendicular means flip the fraction and change the sign; check the new line against its given point before evaluating.",
+ "id": "bank-alg-113"
+}

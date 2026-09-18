@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-211",
+  "question": "In a distribution center, $75\\%$ of the packages are shipped by ground, and $16\\%$ of the packages shipped by ground are marked fragile. If one package is selected at random, what is the probability that it is shipped by ground and marked fragile?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.012$"
+    },
+    {
+      "id": "B",
+      "text": "$0.12$"
+    },
+    {
+      "id": "C",
+      "text": "$0.16$"
+    },
+    {
+      "id": "D",
+      "text": "$0.91$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "converts 16% to 0.016 and multiplies",
+    "C": "reports the conditional rate within the ground packages",
+    "D": "adds 0.75 and 0.16"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $0.75 \\times 0.16 = 0.12$.\n\n**The Full Solution:**\nStep 1: The $16\\%$ is a rate within the ground shipments, so the joint probability is the product of the two rates.\nStep 2: Convert and multiply: $0.75 \\times 0.16 = 0.12$.\nStep 3: Check with $400$ packages: $300$ ship by ground, and $16\\%$ of $300$ is $48$, so $\\frac{48}{400} = 0.12$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.012$): writes $16\\%$ as $0.016$; a percent is divided by $100$, so $16\\% = 0.16$.\n* Choice C ($0.16$): reports the rate among ground packages as though it applied to every package.\n* Choice D ($0.91$): adds the two rates, which double counts and produces a probability larger than the ground share itself.\n\n**Test Day Takeaway:** A joint probability is never larger than either of the probabilities that produced it — a quick sanity filter on the choices."
+}

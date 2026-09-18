@@ -1,0 +1,47 @@
+{
+  "id": 2,
+  "question": "The curve shown in the $xy$-plane is the graph of $y=f(x)$, where $f(x)=\\dfrac{a}{x+b}$ for constants $a$ and $b$. The function $h$ is defined by $h(x)=f(x-2)$. What is an equation of the vertical asymptote of the graph of $y=h(x)$?",
+  "diagram": {
+    "type": "rationalFunction",
+    "params": {
+      "a": 10,
+      "b": -4,
+      "showPoints": [
+        [
+          6,
+          5
+        ],
+        [
+          9,
+          2
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$x=-6$"
+    },
+    {
+      "id": "B",
+      "text": "$x=2$"
+    },
+    {
+      "id": "C",
+      "text": "$x=4$"
+    },
+    {
+      "id": "D",
+      "text": "$x=6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "negates the shifted constant a second time",
+    "B": "shifts the asymptote in the wrong direction",
+    "C": "never applies the shift"
+  },
+  "correctAnswer": "D",
+  "hint": "The dashed line locates the input that $f$ cannot accept; ask which input $h$ cannot accept.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~40s):** $f$ blows up at $x=4$, and $h(x)=f(x-2)$ blows up where $x-2=4$, that is, at $x=6$.\n\n**The Full Solution:**\nStep 1: The graph shows a vertical asymptote at $x=4$, so the denominator $x+b$ is zero there, meaning $b=-4$ and $f(x)=\\dfrac{a}{x-4}$.\nStep 2: Then $h(x)=f(x-2)=\\dfrac{a}{(x-2)-4}=\\dfrac{a}{x-6}$.\nStep 3: The denominator is zero when $x=6$, so the asymptote of $h$ is $x=6$ — the original asymptote moved right $2$ units. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($x=-6$): applies the sign-reversal rule a second time, reading $\\dfrac{a}{x-6}$ as having asymptote $x=-6$.\n* Choice B ($x=2$): moves the asymptote left; $f(x-2)$ shifts the graph, asymptote included, to the right.\n* Choice C ($x=4$): reports the asymptote of $f$ and never applies the shift.\n\n**Test Day Takeaway:** An asymptote is part of the graph: shift it exactly as you shift every point."
+}

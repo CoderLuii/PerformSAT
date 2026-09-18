@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-220",
+  "question": "The amount of material collected each year by a town's recycling program increases by $25\\%$ each year. The program collected $900$ tons this year. How many tons did it collect last year?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$675$"
+    },
+    {
+      "id": "B",
+      "text": "$720$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}125$"
+    },
+    {
+      "id": "D",
+      "text": "$3{,}600$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts 25% of this year's total",
+    "C": "increases this year's total by 25%",
+    "D": "divides by the rate $0.25$ instead of by $1.25$"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse Exponential Back in Time**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Last year's total times $1.25$ is $900$, so last year's total is $900 \\div 1.25 = 720$ tons.\n\n**The Full Solution:**\nStep 1: A $25\\%$ increase multiplies by $1.25$, so if $L$ is last year's total, $1.25L = 900$.\nStep 2: Dividing both sides by $1.25$ gives $L = \\dfrac{900}{1.25} = 720$.\nStep 3: Check forward: $720 + 0.25(720) = 720 + 180 = 900$ tons. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($675$): computes $900 - 0.25(900)$; the $25\\%$ increase was applied to LAST year's total, not this year's.\n* Choice C ($1{,}125$): increases $900$ by $25\\%$, which projects forward to next year.\n* Choice D ($3{,}600$): divides by $0.25$; the multiplier for growth is $1 + 0.25$.\n\n**Test Day Takeaway:** Undo a percent increase by DIVIDING by $1 + r$ — subtracting the same percent from the new value always overshoots."
+}

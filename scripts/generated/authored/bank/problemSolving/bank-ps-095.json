@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-095",
+  "question": "A polling organization surveyed a random sample of $300$ residents of a city and reported a margin of error of $\\pm 6$ percentage points. For this method, the margin of error is inversely proportional to the square root of the sample size. To report a margin of error of $\\pm 3$ percentage points at the same confidence level, how many residents must the organization survey?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$150$"
+    },
+    {
+      "id": "B",
+      "text": "$600$"
+    },
+    {
+      "id": "C",
+      "text": "$900$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}200$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "halves the sample size, treating the margin of error as proportional to n",
+    "B": "doubles the sample size, ignoring the square root",
+    "C": "multiplies by 3, the difference 6 - 3 in percentage points"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Halving the margin of error requires multiplying the sample size by $2^2 = 4$: $4(300) = 1{,}200$.\n\n**The Full Solution:**\nStep 1: The margin of error satisfies $M = \\dfrac{k}{\\sqrt{n}}$ for some constant $k$, so $\\sqrt{n} = \\dfrac{k}{M}$ and $n = \\dfrac{k^2}{M^2}$.\nStep 2: The margin of error must fall by a factor of $\\dfrac{6}{3} = 2$, so $n$ must grow by a factor of $2^2 = 4$.\nStep 3: $n = 4(300) = 1{,}200$ residents.\nCheck: $\\sqrt{1{,}200} = 2\\sqrt{300}$, so the margin of error is halved. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($150$): This halves the sample size, as if a smaller sample gave a smaller margin of error; the relationship runs the other way.\n* Choice B ($600$): This doubles the sample size, matching the factor $2$ in the margin of error but ignoring the square root.\n* Choice C ($900$): This multiplies by $3$, the difference $6 - 3$ in percentage points, treating a difference as a scale factor.\n\n**Test Day Takeaway:** Margin of error scales with $\\dfrac{1}{\\sqrt{n}}$: to divide it by $k$, multiply the sample size by $k^2$."
+}

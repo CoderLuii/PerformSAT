@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-386",
+  "question": "The amount of a radioactive substance remaining in a sealed container, in milligrams, is modeled by $A(t) = 168\\left(\\dfrac{1}{2}\\right)^{t/24}$, where $t$ is the number of days since the container was sealed. What is the half-life, in days, of the substance?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12$"
+    },
+    {
+      "id": "B",
+      "text": "$24$"
+    },
+    {
+      "id": "C",
+      "text": "$48$"
+    },
+    {
+      "id": "D",
+      "text": "$84$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "halves the divisor in the exponent",
+    "C": "doubles the divisor in the exponent",
+    "D": "halves the initial amount and reports milligrams as days"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Exponential Parameters**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The exponent $\\frac{t}{24}$ equals $1$ when $t = 24$, and one factor of $\\frac{1}{2}$ is one half-life.\n\n**The Full Solution:**\nStep 1: The half-life is the time it takes for the amount to be multiplied by $\\frac{1}{2}$ exactly once.\nStep 2: That happens when the exponent $\\frac{t}{24}$ equals $1$.\nStep 3: $\\frac{t}{24} = 1$ gives $t = 24$ days. Check: $A(24) = 168\\left(\\frac{1}{2}\\right)^1 = 84$, which is half of $168$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): halves the divisor, as if the exponent had to reach $2$ for one halving.\n* Choice C ($48$): doubles the divisor, confusing the half-life with the time for two halvings.\n* Choice D ($84$): reports the amount remaining after one half-life, in milligrams, instead of the time in days.\n\n**Test Day Takeaway:** Solve \"exponent $= 1$\" to read a half-life or doubling time straight out of the model."
+}

@@ -6,12 +6,12 @@
   "band": 4,
   "domain": "expression-of-ideas",
   "skill": "transitions",
-  "passage": "When researchers first proposed registering their hypotheses and analysis plans before collecting any data, the practice was rare; most studies were analyzed after the fact, with the choices made along the way left largely invisible. ______ preregistration is a routine requirement at many journals, and registered reports have become an established format in several fields.",
+  "passage": "When electrophoretic ink was first demonstrated in the 1990s, the sheets that displayed it were laboratory curiosities: slow to refresh, capable of showing only rough patterns, and produced a few at a time by hand. ______ the descendants of those sheets are commonplace — the screens of electronic book readers, the shelf labels in supermarkets, the transit signs that hold their text through a power failure, all legible in full sun and sipping current only when the display changes.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "However,"
+      "text": "Nevertheless,"
     },
     {
       "id": "B",
@@ -19,13 +19,13 @@
     },
     {
       "id": "C",
-      "text": "In addition,"
+      "text": "In contrast,"
     },
     {
       "id": "D",
-      "text": "Therefore,"
+      "text": "Accordingly,"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"Today.\" The passage contrasts an earlier time, when preregistration was rare, with the present, in which it is routine, so a transition marking that shift to the present is needed. \"Today\" does this. \"However\" would signal a logical contrast rather than a movement in time, \"In addition\" would treat the second sentence as one more point alongside the first, and \"Therefore\" would present current practice as a logical consequence of the earlier rarity, which it is not."
+  "explanation": "**Choice B is correct.** The passage moves along a timeline — the 1990s laboratory stage, then the present ubiquity — and \"Today,\" is the transition that carries the reader to the later point in time.\n\n**The Full Solution:**\n- Before the blank: the technology's early state, explicitly dated to the 1990s.\n- After the blank: its current state, described in present-tense abundance.\n- Then-versus-now sequencing wants a time transition, and \"Today\" supplies the \"now.\"\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" concedes an obstacle and pushes past it, but the first sentence poses no obstacle to the second — early crudeness is simply the earlier chapter of the same development.\n- C: \"In contrast\" frames the two states as opposed alternatives, when they are stages of one technology's maturation; the difference is temporal, not adversative.\n- D: \"Accordingly\" would make today's ubiquity a logical consequence of the sheets having been crude and handmade, which reverses sense."
 }

@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-241",
+ "question": "For what value of the constant $k$ do a budgeting app's two spending equations, $4x + 3y = 96$ and $8x + ky = 150$, have no ordered pair $(x, y)$ in common?",
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~20s):** The $x$-coefficient doubles from $4$ to $8$, so the $y$-coefficient must double as well: $k = 6$.\n\n**The Full Solution:**\nStep 1: No common ordered pair means the two equations describe parallel, distinct lines, so their coefficients are proportional.\nStep 2: Since $8 = 2(4)$, the same factor must apply to the $y$-coefficient: $k = 2(3) = 6$.\nStep 3: With $k = 6$ the constants disagree, because $2(96) = 192 \\neq 150$, so the equations really have no common solution. Check: $\\frac{8}{4} = \\frac{6}{3} = 2$ while $\\frac{150}{96} \\neq 2$.\n\n**Common Mistakes:**\n* Copying $3$ leaves the $y$-coefficient unscaled while the $x$-coefficient was doubled.\n* Dividing rather than multiplying gives $\\frac{3}{2} = 1.5$.\n* Scaling by $\\frac{150}{96}$ pulls the constants into the slope condition, where they do not belong.\n\n**Test Day Takeaway:** Match the coefficient ratios first; the constants only decide between no solution and infinitely many."
+}

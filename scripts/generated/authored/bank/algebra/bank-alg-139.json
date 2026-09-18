@@ -1,0 +1,57 @@
+{
+  "id": "bank-alg-139",
+  "question": "The graph shows the linear relationship between the number of minutes $x$ since a bathtub began draining and the depth $y$, in inches, of the water in the tub. Which of the following is the best interpretation of the slope of the graph?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -2,
+      "yIntercept": 12,
+      "xRange": [
+        0,
+        7
+      ],
+      "yRange": [
+        0,
+        14
+      ],
+      "xTickInterval": 1,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          0,
+          12
+        ],
+        [
+          6,
+          0
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The depth of the water decreases by $12$ inches each minute."
+    },
+    {
+      "id": "B",
+      "text": "The depth of the water decreases by $2$ inches each minute."
+    },
+    {
+      "id": "C",
+      "text": "The depth of the water was $2$ inches when the tub began draining."
+    },
+    {
+      "id": "D",
+      "text": "The tub is empty $6$ minutes after it began draining."
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the y-intercept (12) as the rate",
+    "C": "reads the slope as the starting value",
+    "D": "describes the x-intercept, not the slope"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice B is correct.**\n\n**The Fast Way (~8s):** The line drops from $(0, 12)$ to $(6, 0)$: a fall of $12$ inches over $6$ minutes, so the slope is $-2$ inches per minute. Slope is the change in $y$ for each $1$-unit change in $x$.\n\n**The Full Solution:**\nStep 1: Slope $= \\frac{\\text{change in } y}{\\text{change in } x} = \\frac{0 - 12}{6 - 0} = -2$.\nStep 2: The units of the slope are the units of $y$ per unit of $x$: inches per minute. The negative sign means the depth is decreasing.\nStep 3: So each minute, the depth of the water decreases by $2$ inches. Check on the graph: moving right $1$ unit moves down $2$ units. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: uses $12$, the starting depth (the $y$-intercept), as if it were the rate.\n* Choice C: describes the slope's number $2$ as a starting depth; the starting depth is $12$.\n* Choice D: correctly reads the $x$-intercept, but that describes when the tub is empty, not the slope.\n\n**Test Day Takeaway:** Slope is always \"change in $y$ per one unit of $x$.\" Name the units of each axis, then say the sentence: \"$y$ changes by [slope] for each one [x-unit].\""
+}

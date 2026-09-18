@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-251",
+ "question": "Every input that makes the function $f$ zero is equal to 12, and the function $h$ is defined by $h(x)=f(x+5)$. Which statement about the zeros of $h$ must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The only zero of $h$ is $7$."
+  },
+  {
+   "id": "B",
+   "text": "The only zero of $h$ is $17$."
+  },
+  {
+   "id": "C",
+   "text": "The only zero of $h$ is $12$."
+  },
+  {
+   "id": "D",
+   "text": "The only zero of $h$ is $-5$."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "shifts the zero right by 5 instead of left",
+  "C": "leaves the zero unchanged, treating x + 5 as a vertical shift",
+  "D": "reports the opposite of the shift amount instead of solving x + 5 = 12"
+ },
+ "explanation": "**SAT Pattern: Horizontal Shift**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $h(x)=0$ requires $x+5=12$, so $x=7$.\n\n**The Full Solution:**\nStep 1: The function $f$ is zero only when its input is 12.\nStep 2: $h(x)=f(x+5)$ is zero exactly when the inner input $x+5$ equals 12.\nStep 3: Solving $x+5=12$ gives $x=7$, and no other input works. Check: $h(7)=f(12)=0$, while $h(12)=f(17)\\ne 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($17$): adds 5 to the zero instead of subtracting, shifting the graph the wrong way.\n* Choice C ($12$): keeps the zero unchanged, as if the 5 acted on the output.\n* Choice D ($-5$): reports the shift amount's opposite rather than solving for the input.\n\n**Test Day Takeaway:** Adding inside the function moves every zero left by that amount."
+}

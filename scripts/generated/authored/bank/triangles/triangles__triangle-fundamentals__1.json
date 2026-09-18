@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "In triangle $JKL$, the measures of angles $J$, $K$, and $L$ are $x°$, $y°$, and $z°$, respectively. What is the value of $x + y + z$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$90$"
+  },
+  {
+   "id": "B",
+   "text": "$180$"
+  },
+  {
+   "id": "C",
+   "text": "$270$"
+  },
+  {
+   "id": "D",
+   "text": "$360$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "the measure of a single right angle, not the total of all three angles",
+  "C": "adds an extra $90$ to the correct total, as if a right angle were counted separately",
+  "D": "the interior-angle sum of a quadrilateral, not of a triangle"
+ },
+ "correctAnswer": "B",
+ "hint": "Draw any triangle you like and add its three angle measures — the total never changes.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~10s):** The interior angles of any triangle add to $180°$, so $x + y + z = 180$.\n\n**The Full Solution:**\nStep 1: The Triangle Angle Sum Theorem states that the three interior angles of every triangle have measures totaling $180°$.\nStep 2: Here those measures are $x°$, $y°$, and $z°$, so $x° + y° + z° = 180°$.\nStep 3: Reading off the numerical values gives $x + y + z = 180$.\n\nVerification: An equilateral triangle has angles $60°$, $60°$, and $60°$, and $60 + 60 + 60 = 180$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($90$): the measure of a single right angle, not the total of all three angles.\n* Choice C ($270$): adds an extra $90$ to the correct total, as if a right angle were counted separately.\n* Choice D ($360$): the interior-angle sum of a quadrilateral, not of a triangle.\n\n**Test Day Takeaway:** Every triangle carries exactly $180°$ of interior angle and every quadrilateral carries $360°$. Fixing those two numbers turns most angle questions into one subtraction."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 852,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "The earliest known mechanical clocks, built in medieval European monasteries, had no faces or hands; they simply rang a bell to call the monks to prayer at set hours. Their usefulness depended on dividing the day into equal, countable units. ______ they reshaped daily life well beyond the cloister, accustoming townspeople to ordering their work and meals by the striking of a public bell rather than by the sun.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Instead,"
-    },
-    {
-      "id": "B",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "C",
-      "text": "In time,"
-    },
-    {
-      "id": "D",
-      "text": "For example,"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage moves from the clocks' first, narrow use inside monasteries to their later, broader effect on town life, a development over time that \"In time\" marks. \"Instead\" would set the second sentence against the first as an alternative, but it extends rather than replaces it; \"Nevertheless\" signals a contrast the passage does not draw; and \"For example\" would make the spread to townspeople an instance of the monastic use, when it is a later and wider consequence."
+ "id": 852,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "In the first decades of the twentieth century the player piano was not a curiosity but the center of the parlor: by the mid-1920s, more than half the pianos built in America left the factory with player mechanisms inside, and publishers issued popular songs on perforated rolls as routinely as on sheet music. ______ the radio and the electrically recorded disc offered music that asked still less of its listeners, and the pumping parlor piano gave way to the loudspeaker.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Instead,"
+  },
+  {
+   "id": "B",
+   "text": "For example,"
+  },
+  {
+   "id": "C",
+   "text": "Eventually,"
+  },
+  {
+   "id": "D",
+   "text": "In other words,"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage moves from the player piano's peak to its later displacement by radio and electrical recording — a development unfolding over subsequent years — and \"Eventually,\" marks that passage of time.\n\n**The Full Solution:**\n- The first sentences establish the height of the boom: by the mid-1920s, more than half the pianos built in America left the factory with player mechanisms inside.\n- The final sentence reports what came afterward: radio and electrical recording offered music with less effort and expense, and the player piano faded.\n- The relation is temporal succession — a later stage following an earlier one — so a time transition fits.\n\n**Why the other choices are wrong:**\n- A: \"Instead,\" would require the fading to replace some expected alternative just mentioned, but no alternative has been set up.\n- B: \"For example,\" would make the piano's decline an illustration of its boom, which is incoherent.\n- D: \"In other words,\" promises a restatement of the boom, not the reversal that actually follows."
 }

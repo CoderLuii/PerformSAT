@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-289",
+ "question": "An audio meter registers a fault when the recorded level $L$, in decibels, satisfies $|L - 68| = 9$. What is the greater of the two levels at which a fault is registered?",
+ "correctAnswer": "77",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**The correct answer is $77$.**\n\n**The Fast Way (~15s):** A fault sits $9$ decibels from $68$, so the two levels are $59$ and $77$; the greater is $77$.\n\n**The Full Solution:**\nStep 1: Split the absolute value equation into $L - 68 = 9$ and $L - 68 = -9$.\nStep 2: Solving gives $L = 77$ and $L = 59$.\nStep 3: The greater of the two levels is $77$ decibels. Check: $|77 - 68| = 9$ ✓\n\n**Common Mistakes:** Answering $59$ reports the lesser level; answering $9$ reports the distance from $68$ rather than a level; answering $68$ reports the center instead of a fault level.\n\n**Test Day Takeaway:** Solve both branches even when only one is wanted — you cannot tell which branch is larger until you have both."
+}

@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 1,
-  "passage": "Art historian Maura Reilly, an independent curator known for her feminist exhibition practice, argues in her 2018 book Curatorial Activism: Towards an Ethics of Curating that the holdings of major museum collections and the rosters of international ______ which feminist critics first scrutinized in the 1970s, remain demographically lopsided decades later.",
+  "passage": "The Nuremberg Chronicle, an illustrated history of the world printed in 1493, was among the most ambitious publishing projects of its century. Because its more than 1,800 illustrations were printed from just 645 ______ readers encounter the same woodcut portrait standing in for different kings and the same city view labeled as different cities.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "biennials,"
+      "text": "woodblocks,"
     },
     {
       "id": "B",
-      "text": "biennials;"
+      "text": "woodblocks;"
     },
     {
       "id": "C",
-      "text": "biennials"
+      "text": "woodblocks."
     },
     {
       "id": "D",
-      "text": "biennials:"
+      "text": "woodblocks"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"biennials,\". The blank sits at the front edge of a nonrestrictive relative clause — \"which feminist critics first scrutinized in the 1970s\" — that adds information about \"the holdings of major museum collections and the rosters of international biennials\" without restricting which biennials are meant. Standard English sets a nonrestrictive clause off from the noun it modifies with paired commas: one before the relative pronoun \"which\" and one after the clause closes. The closing comma is already in place after \"1970s,\" so the slot before \"which\" must hold the matching opening comma. Choice A supplies that comma, completing the paired-comma offset and letting the main clause resume cleanly with \"remain demographically lopsided decades later.\"\n\nChoice B is incorrect. (\"biennials;\"): — a semicolon is the conventional boundary mark between two independent clauses, and the underlined slot superficially looks like a clause boundary because a long modifying phrase follows. But a semicolon legally requires a complete independent clause on each side; \"which feminist critics first scrutinized in the 1970s, remain demographically lopsided decades later\" is not an independent clause — it begins with the relative pronoun \"which\" and contains no independent subject of its own — so a semicolon cannot stand here. Choice D is incorrect. (\"biennials:\"): — a different SEC error. A colon introduces an elaboration, list, or definition that follows a complete grammatical thought; it is not the mark used to set off a nonrestrictive relative clause. Like the semicolon, a colon also requires the material that precedes it to be an independent clause, and the relative \"which …\" that follows is a modifier of \"biennials,\" not an amplification of a complete idea. Choice C is incorrect. (\"biennials\"): inverse — the opposite of the correct treatment. Supplying no punctuation at all collapses the nonrestrictive clause into a restrictive one, so the sentence reads as if only those biennials \"which feminist critics first scrutinized in the 1970s\" remain lopsided — implying, falsely, that other biennials do not. Because the clause is meant to add background information rather than narrow the noun, Standard English requires the opening comma that choice A provides."
+  "explanation": "**Choice A is correct.** The blank ends an introductory dependent clause (\"Because its more than 1,800 illustrations were printed from just 645 woodblocks\"), and Standard English sets off such a clause from the main clause with a comma.\n\n**The Full Solution:**\n- The word \"Because\" makes the opening clause subordinate: it cannot stand alone as a sentence.\n- The main clause follows the blank: \"readers encounter the same woodcut portrait standing in for different kings...\"\n- A dependent clause that opens a sentence is joined to its main clause with a comma — \"Because..., readers encounter...\" — which is exactly what choice A provides.\n\n**Why the other choices are wrong:**\n- B: A semicolon must have an independent clause on both sides; the \"Because\" clause before the blank is dependent, so the semicolon strands it as a fragment.\n- C: A period does the same thing more visibly — it cuts the \"Because\" clause off as a freestanding sentence fragment.\n- D: Omitting punctuation runs the dependent clause straight into the main clause; after the long introductory clause, Standard English requires the comma boundary."
 }

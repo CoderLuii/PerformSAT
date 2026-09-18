@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-089",
+ "question": "At every positive value of $x$, the two quantities $\\sqrt{c\\,x^{6}}$ and $9x^{3}$ record the same discus range in meters, and the constant $c$ is positive and does not change between throws. What is the value of $c$?",
+ "correctAnswer": "81",
+ "explanation": "**SAT Pattern: Exponent Rules with Radicals**\n\n**The correct answer is $81$.**\n\n**The Fast Way (~20s):** $\\sqrt{c\\,x^{6}} = \\sqrt{c} \\cdot x^{3}$, so $\\sqrt{c} = 9$ and $c = 81$.\n\n**The Full Solution:**\nStep 1: A square root distributes over a product: $\\sqrt{c\\,x^{6}} = \\sqrt{c} \\cdot \\sqrt{x^{6}}$.\nStep 2: Since $x$ is positive, $\\sqrt{x^{6}} = x^{3}$, so the left side is $\\sqrt{c}\\,x^{3}$.\nStep 3: Matching coefficients of $x^{3}$ gives $\\sqrt{c} = 9$, so $c = 81$. Check: $\\sqrt{81x^{6}} = 9x^{3}$ ✓\n\n**Common Mistakes:**\n* $9$ — reporting $\\sqrt{c}$ instead of $c$, stopping one step early.\n* $3$ — taking a square root of $9$ as well, as though the radical applied twice.\n\n**Test Day Takeaway:** Split the radical over the product, match the variable parts, and remember the coefficient you find is the ROOT of the constant, not the constant."
+}

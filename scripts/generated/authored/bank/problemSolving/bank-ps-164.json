@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-164",
+  "question": "The table gives the mass, in grams, of each of five mineral samples. The mean mass of the five samples is $16$ grams. What is the value of $n$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Sample",
+        "Mass (grams)"
+      ],
+      "rows": [
+        [
+          "A",
+          "12"
+        ],
+        [
+          "B",
+          "15"
+        ],
+        [
+          "C",
+          "21"
+        ],
+        [
+          "D",
+          "9"
+        ],
+        [
+          "E",
+          "n"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7$"
+    },
+    {
+      "id": "B",
+      "text": "$14.25$"
+    },
+    {
+      "id": "C",
+      "text": "$16$"
+    },
+    {
+      "id": "D",
+      "text": "$23$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses 4 x 16 = 64 for the total (counting four samples), then 64 - 57 = 7",
+    "B": "the mean of the four known masses, 57/4",
+    "C": "repeats the given mean"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Five samples with mean $16$ have total mass $5(16) = 80$. The four known masses sum to $12 + 15 + 21 + 9 = 57$, so $n = 80 - 57 = 23$.\n\n**The Full Solution:**\nStep 1: Mean $= \\frac{\\text{sum}}{\\text{count}}$, so the sum is mean $\\times$ count: $16 \\times 5 = 80$ grams.\nStep 2: Add the known masses from the table: $12 + 15 + 21 + 9 = 57$ grams.\nStep 3: $n = 80 - 57 = 23$. Check: $\\frac{12 + 15 + 21 + 9 + 23}{5} = \\frac{80}{5} = 16$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): Uses $4 \\times 16 = 64$ as the total, counting only four samples, and then $64 - 57 = 7$.\n* Choice B ($14.25$): The mean of the four known masses, $\\frac{57}{4}$; the fifth value must pull the mean up to $16$, so it is larger than that.\n* Choice C ($16$): Repeats the mean; the missing value equals the mean only when the other values already average $16$, and $\\frac{57}{4} \\neq 16$.\n\n**Test Day Takeaway:** Missing-value problems are sum problems: total $=$ mean $\\times$ count, then subtract what you know."
+}

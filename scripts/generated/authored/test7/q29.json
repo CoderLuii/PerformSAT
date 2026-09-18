@@ -1,31 +1,31 @@
 {
-  "id": 729,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "Judging the health of the oceans from the surface alone can ______ the true scale of biodiversity loss, because the steepest declines—on coral reefs, on seamount communities, and across the abyssal seafloor—occur at depths that satellites and trawl nets cannot meaningfully sample. Only sustained observation from submersibles brings these losses fully into view.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "distort"
-    },
-    {
-      "id": "B",
-      "text": "mitigate"
-    },
-    {
-      "id": "C",
-      "text": "mask"
-    },
-    {
-      "id": "D",
-      "text": "expose"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage explains that the worst declines happen at depths a surface view cannot reach, so judging from the surface \"masks\" — hides — the true scale of loss. \"Distort\" suggests misshaping rather than concealing, and the text is about losses going unseen, not misrepresented. \"Mitigate\" means to lessen, which a vantage point cannot do to the loss itself, and \"expose\" is the opposite of what a surface-only view accomplishes."
+ "id": 729,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "Giant kelp anchors to rocky seafloor and grows toward the light in dense stands whose canopies float at the surface. As waves pass through a kelp forest, much of their energy is spent dragging against the flexible fronds. Because the water that finally reaches land has been calmed in this way, shorelines sheltered by healthy kelp forests ______ measurably less erosion than nearby unsheltered stretches of coast.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "predict"
+  },
+  {
+   "id": "B",
+   "text": "conceal"
+  },
+  {
+   "id": "C",
+   "text": "undergo"
+  },
+  {
+   "id": "D",
+   "text": "require"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The cause-and-effect chain — wave energy spent on the fronds, calmer water reaching land — leads to shorelines experiencing less erosion, and \"undergo\" means to experience or be subjected to.\n\n**The Full Solution:**\n- \"Because\" marks the logic: calmed water is the cause, and the blank must state its effect on the shoreline.\n- The effect is that less erosion happens to sheltered shorelines than to unsheltered ones.\n- \"Undergo\" is the verb for what a thing is subjected to, fitting a shoreline that erosion acts upon.\n\n**Why the other choices are wrong:**\n- A: \"Predict\" would make shorelines forecasters of their own erosion, which makes no sense.\n- B: \"Conceal\" would mean the erosion occurs but is hidden, while the passage says calmer water genuinely reduces it.\n- D: \"Require\" would make erosion something the shorelines need — the reverse of the benefit being described."
 }

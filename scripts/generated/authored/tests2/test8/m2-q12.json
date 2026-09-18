@@ -1,0 +1,29 @@
+{
+  "id": 12,
+  "question": "A storage plan charges a fixed monthly fee plus $d$ dollars for each terabyte used beyond the first $8$ terabytes. A month in which $20$ terabytes were used cost \\$186, and a month in which $32$ terabytes were used cost \\$258. What is the fixed monthly fee, in dollars?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$66$"
+    },
+    {
+      "id": "C",
+      "text": "$114$"
+    },
+    {
+      "id": "D",
+      "text": "$138$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports d, the per-terabyte rate, instead of the fixed monthly fee",
+    "B": "subtracts 6 times 20 rather than 6 times 12, ignoring the 8-terabyte allowance",
+    "D": "subtracts 6 times 8, charging only for the allowance terabytes"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Linear Cost Setup**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The billed terabytes rise from $12$ to $24$ while the cost rises by \\$72, so $d = 6$; then the fee is $186 - 12(6) = 114$ dollars.\n\n**The Full Solution:**\nStep 1: Only usage past the first $8$ terabytes is billed by the terabyte, so the two months bill $20 - 8 = 12$ and $32 - 8 = 24$ terabytes. With fee $F$: $F + 12d = 186$ and $F + 24d = 258$.\nStep 2: Subtract the first equation from the second: $12d = 72$, so $d = 6$ dollars per terabyte.\nStep 3: Substitute back: $F + 12(6) = 186$, so $F = 186 - 72 = 114$ dollars. Check the second month: $114 + 24(6) = 114 + 144 = 258$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): this is $d$, the rate per billed terabyte, not the fee charged before any usage.\n* Choice B ($66$): computes $186 - 6(20)$, billing all $20$ terabytes and ignoring the $8$ that are included.\n* Choice D ($138$): computes $186 - 6(8)$, billing only the allowance and leaving the $12$ chargeable terabytes in the fee.\n\n**Test Day Takeaway:** When a plan includes a free allowance, subtract it from every usage figure before you build the equations — the rate is found from the billed amounts, not the raw ones."
+}

@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 2,
- "passage": "A rocket bound for orbit cannot carry all of its fuel in one tank, because the dead weight of a single enormous casing would cripple its climb. Instead the vehicle is assembled in stages stacked one atop another. As the fuel in the lowest stage burns away, that spent section drops free, and the next stage, its own engines fueled and primed, is ______ to ignite and drive the now lighter craft higher.",
+ "passage": "Roman engineering treatises describe an ideal road in cross-section, its layered courses of stone laid in a fixed sequence, and older histories assumed the legions built to this template wherever they marched. Excavation tells a different story. Crews raised roadbeds from whatever lay near at hand, spreading gravel over log corduroy in wetlands and cutting straight into rock on hillsides; it is now clear that builders ______ their methods to local ground rather than imposing a uniform design upon it.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "reluctant"
+   "text": "surrendered"
   },
   {
    "id": "B",
-   "text": "forbidden"
+   "text": "confined"
   },
   {
    "id": "C",
-   "text": "exhausted"
+   "text": "elevated"
   },
   {
    "id": "D",
-   "text": "ready"
+   "text": "fitted"
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The passage describes a rocket built in stages used in turn, so that as the fuel in the lowest stage burns away and that section drops free, the next stage stands available to ignite and carry the climb forward. \"Ready\" conveys that the next stage is fueled and on hand to take over. \"Reluctant\" and \"forbidden\" make no sense applied to a rocket stage, and \"exhausted\" would describe the stage as spent, the opposite of being primed to fire."
+ "explanation": "**Choice D is correct.** The blank must restate what the excavation evidence just showed, gravel over logs in wetlands, cuts into hillside rock, and \"fitted their methods to local ground\" names that practice of matching technique to terrain.\n\n**The Full Solution:**\n- The passage's contrast runs from template to terrain: the treatises' fixed sequence versus what crews actually did with \"whatever lay near at hand.\"\n- The closing frame \"______ their methods to local ground rather than imposing a uniform design upon it\" demands a verb of adjustment-to-circumstance, and \"fitted... to\" is the idiom that supplies it.\n\n**Why the other choices are wrong:**\n- A: \"Surrendered their methods to local ground\" would mean giving methods up, but the crews kept building, adapting rather than abandoning.\n- B: \"Confined their methods to local ground\" would mean restricting where methods were used, not adjusting what the methods were.\n- C: \"Elevated\" imports a judgment of raising in status that makes no sense with \"to local ground.\""
 }

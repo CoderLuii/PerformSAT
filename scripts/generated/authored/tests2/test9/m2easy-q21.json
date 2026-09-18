@@ -1,0 +1,48 @@
+{
+ "id": 21,
+ "question": "Line $\\ell$ in the figure is the centerline of a proposed levee. A second engineer writes that same centerline as $12x + 8y = c$. What must $c$ equal for the two descriptions to agree?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -1.5,
+   "yIntercept": 6,
+   "xRange": [
+    -2,
+    6
+   ],
+   "yRange": [
+    -4,
+    10
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "label": "ℓ"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$16$"
+  },
+  {
+   "id": "C",
+   "text": "$48$"
+  },
+  {
+   "id": "D",
+   "text": "$72$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "copies the constant 12 from 3x + 2y = 12 without scaling it",
+  "B": "adds the scale factor 4 to 12 instead of multiplying: 12 + 4 = 16",
+  "D": "compares the second equation's x-coefficient 12 with l's y-coefficient 2 to get a factor of 6, then computes 6 x 12 = 72"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice C is correct.** Two equations describe the same line only when one is a constant multiple of the other — the condition that makes their system have infinitely many solutions.\n\n**The Fast Way (~35s):** The graph gives $3x + 2y = 12$. Multiplying every term by $4$ gives $12x + 8y = 48$, so $c = 48$.\n\n**The Full Solution:**\nStep 1: Read line $\\ell$ off the figure: it crosses the $y$-axis at $(0, 6)$ and the $x$-axis at $(4, 0)$, so its slope is $\\dfrac{0 - 6}{4 - 0} = -\\dfrac{3}{2}$ and $y = -\\dfrac{3}{2}x + 6$, which rearranges to $3x + 2y = 12$.\nStep 2: For $12x + 8y = c$ to be the same line, every coefficient must be scaled by one common factor. Here $12 \\div 3 = 4$ and $8 \\div 2 = 4$, so the factor is $4$.\nStep 3: The constant must be scaled by that same factor: $c = 4 \\times 12 = 48$. Check: $(4, 0)$ gives $12(4) + 8(0) = 48$, and $(0, 6)$ gives $12(0) + 8(6) = 48$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): copies the constant from $3x + 2y = 12$ and leaves it unscaled, even though both coefficients were multiplied by $4$. Testing $(0, 6)$ in $12x + 8y = 12$ gives $48 \\neq 12$.\n* Choice B ($16$): adds the scale factor to the constant, $12 + 4 = 16$, instead of multiplying. Scaling an equation multiplies every term, including the constant.\n* Choice D ($72$): builds the factor by comparing $12$ with $\\ell$'s $y$-coefficient $2$, getting $6$, and then computes $6 \\times 12 = 72$. Coefficients must be compared term by term: $x$ with $x$, $y$ with $y$.\n\n**Test Day Takeaway:** Same line, infinitely many solutions, and \"one equation is a multiple of the other\" all mean the same thing — find the factor from a matching pair of coefficients, then apply it to the constant and verify with a point."
+}

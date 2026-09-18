@@ -1,31 +1,31 @@
 {
-  "id": 703,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "The contractile vacuole of a single-celled organism such as Paramecium works like a tiny pump, expelling the excess water that constantly seeps into the cell. Early researchers debated whether its structure could be worked out from microscope images alone. Careful drawings made from living specimens showed that the system's branching canals and central reservoir are distinct enough that an observer can ______ their arrangement directly, without relying on indirect chemical tests.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "obscure"
-    },
-    {
-      "id": "B",
-      "text": "infer"
-    },
-    {
-      "id": "C",
-      "text": "scrutinize"
-    },
-    {
-      "id": "D",
-      "text": "discern"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage stresses that the structure can be made out \"directly,\" without indirect tests, so the observer can \"discern\" — perceive or make out — the arrangement. \"Infer\" implies indirect reasoning, exactly what the sentence rules out. \"Obscure\" is the opposite of perceiving, and \"scrutinize\" means to examine something closely once it is already visible, not to perceive its arrangement in the first place."
+ "id": 703,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "In the Japanese repair practice of kintsugi, a broken ceramic bowl is mended with lacquer that is then dusted with powdered gold, so that bright seams trace every line of breakage. Rather than ______ the damage, the repair announces it: the cracks become part of the vessel's recorded history, and a mended bowl may be prized above one that has never broken.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "evaluating"
+  },
+  {
+   "id": "B",
+   "text": "causing"
+  },
+  {
+   "id": "C",
+   "text": "repeating"
+  },
+  {
+   "id": "D",
+   "text": "disguising"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The frame \"Rather than ______ the damage, the repair announces it\" demands the opposite of announcing — hiding. Gold seams that \"trace every line of breakage\" conceal nothing, so the repair avoids \"disguising\" the damage.\n\n**The Full Solution:**\n- \"Rather than\" signals a contrast: the blank must be the opposite of what the repair actually does.\n- What it actually does is announce the damage — bright gold seams run along every crack.\n- The opposite of announcing damage is hiding it, and \"disguising\" means making something unrecognizable or hidden.\n\n**Why the other choices are wrong:**\n- A: \"Evaluating\" means judging the damage's extent, which is not the opposite of announcing it.\n- B: \"Causing\" fails the timeline — the bowl is already broken before the repair begins.\n- C: \"Repeating\" would mean breaking the bowl again, which nothing in the passage suggests."
 }

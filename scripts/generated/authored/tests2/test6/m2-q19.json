@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "Blending two alloys to hit a target mass and a target cost gives the equations $3x + ay = 12$ and $6x + 10y = 7$, where $x$ and $y$ are the kilograms of each alloy used and $a$ is a constant. For what value of $a$ can no blend satisfy both requirements?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3.5$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales by the constant terms instead of the x-coefficients, computing 7(3/6) = 3.5",
+  "C": "makes the y-coefficients match outright, a = 10, which only doubles one equation's x-term",
+  "D": "inverts the ratio, computing 10(6/3) = 20"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**Choice B is correct.**\n\n**The Fast Way (~50s):** No solution means the two equations describe parallel lines, so the coefficients must be proportional while the constants are not: $\\frac{3}{6} = \\frac{a}{10}$ gives $a = 5$.\n\n**The Full Solution:**\nStep 1: A system of two linear equations has no solution exactly when the lines have equal slopes but different intercepts, which happens when $\\frac{3}{6} = \\frac{a}{10} \\neq \\frac{12}{7}$.\nStep 2: Solve the coefficient proportion: $6a = 30$, so $a = 5$.\nStep 3: Confirm the constants break the pattern: $\\frac{12}{7} \\neq \\frac{1}{2}$, so the lines are parallel and distinct rather than identical. Check the slopes with $a = 5$: $3x + 5y = 12$ has slope $-\\frac{3}{5}$, and $6x + 10y = 7$ has slope $-\\frac{6}{10} = -\\frac{3}{5}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3.5$): builds the proportion from the constants $12$ and $7$; with $a = 3.5$ the slopes are $-\\frac{6}{7}$ and $-\\frac{3}{5}$, so the blends do meet at one point.\n* Choice C ($10$): matches the two $y$-coefficients without matching the $x$-coefficients; $3x + 10y = 12$ has slope $-0.3$, not $-0.6$.\n* Choice D ($20$): flips the ratio to $\\frac{6}{3}$; with $a = 20$ the first slope is $-0.15$, so a unique blend still exists.\n\n**Test Day Takeaway:** No solution means proportional coefficients with a non-proportional constant — set up the coefficient ratio first, then verify the constants do not follow it."
+}

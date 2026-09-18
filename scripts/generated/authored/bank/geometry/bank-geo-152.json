@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-152",
+ "question": "Each round tabletop in a university study commons covers $169\\pi$ square inches of surface. What is the diameter, in inches, of one tabletop?",
+ "correctAnswer": "26",
+ "explanation": "**SAT Pattern: Area of a Circle**\n\n**The correct answer is $26$.**\n\n**The Fast Way (~25s):** $\\pi r^{2}=169\\pi$ gives $r=13$, so the diameter is $26$ inches.\n\n**The Full Solution:**\n\nStep 1: Set up the area equation. $\\pi r^{2}=169\\pi$.\n\nStep 2: Solve for the radius. Dividing by $\\pi$ gives $r^{2}=169$, so $r=13$ inches.\n\nStep 3: Double it. The diameter is $2r=26$ inches.\n\nCheck: $\\pi(13)^{2}=169\\pi$, matching the stated surface.\n\n**Common Mistakes:**\n\n* $13$: stops at the radius instead of doubling it for the diameter.\n* $169$: reports the area's coefficient without taking a square root.\n* $6.5$: halves the radius rather than doubling it.\n\n**Test Day Takeaway:** Take the square root to reach the radius, then read the question again — diameter means one more doubling."
+}

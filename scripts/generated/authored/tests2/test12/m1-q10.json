@@ -1,0 +1,29 @@
+{
+  "id": 10,
+  "question": "Any ordered pair that satisfies $4x + 3y = 9$ also satisfies $ax + 6y = 18$, in which $a$ is a constant. What number must $a$ be?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$8$"
+    },
+    {
+      "id": "D",
+      "text": "$12$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the scale factor 2 that links the two equations rather than the coefficient 4 x 2 = 8",
+    "B": "copies the x-coefficient 4 from the first equation without scaling it",
+    "D": "scales the wrong coefficient, doubling the 6 that multiplies y to get 12"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice C is correct.** Every solution of one equation solving the other means the two equations describe the same line, and $18 \\div 9 = 2$, so multiplying $4x + 3y = 9$ by $2$ gives $8x + 6y = 18$ and $a = 8$.\n\n**The Fast Way (~25s):** The constants go $9 \\to 18$, a factor of $2$, and $6 \\div 3 = 2$ agrees, so $a = 4 \\times 2 = 8$.\n\n**The Full Solution:**\nStep 1: If every pair satisfying the first equation also satisfies the second, the two equations have identical graphs, so one is a constant multiple of the other.\nStep 2: Find the multiplier from a pair of matching terms. The $y$-terms give $6 \\div 3 = 2$, and the constants agree: $18 \\div 9 = 2$.\nStep 3: Apply the same multiplier to the $x$-term: $a = 2 \\times 4 = 8$. Check: $2(4x + 3y) = 8x + 6y$ and $2(9) = 18$, so the second equation is exactly twice the first. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): stops at the multiplier itself. The multiplier tells you how to scale the coefficient, but $a$ is the scaled coefficient.\n* Choice B ($4$): copies $4$ straight from the first equation. That would make the second line $4x + 6y = 18$, which has a different slope.\n* Choice D ($12$): applies the multiplier to the wrong coefficient, doubling $6$ instead of $4$.\n\n**Test Day Takeaway:** Identical lines mean every coefficient and the constant share one multiplier; find it from the pair of terms you already know, then apply it to the unknown."
+}

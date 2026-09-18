@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-473",
+  "question": "A utility spent $47$ hours on $3$ cast-iron main repairs and $1$ ductile main repair, then $80$ hours on $3$ cast-iron and $4$ ductile repairs. If each repair of a type takes the same time, how many hours does one cast-iron repair take?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$11$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$23$"
+    },
+    {
+      "id": "D",
+      "text": "$36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the ductile repair time 11 instead of the cast-iron time",
+    "C": "adds the two repair times, 12 + 11 = 23",
+    "D": "stops at 3c = 36, the time for all three cast-iron repairs"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: System of Equations (Elimination)**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Both jobs include $3$ cast-iron repairs, so the extra $33$ hours cover $3$ extra ductile repairs: $d = 11$, and $3c = 47 - 11 = 36$, so $c = 12$.\n\n**The Full Solution:**\nStep 1: Let $c$ be the hours for one cast-iron repair and $d$ the hours for one ductile repair. The two jobs give $3c + d = 47$ and $3c + 4d = 80$.\nStep 2: The $c$-terms are identical, so subtract the first equation from the second: $3d = 33$, and $d = 11$.\nStep 3: Substitute back: $3c + 11 = 47$, so $3c = 36$ and $c = 12$. Check the second job: $3(12) + 4(11) = 36 + 44 = 80$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): solves the system correctly but reports the ductile repair time instead of the cast-iron time.\n* Choice C ($23$): adds the two repair times, $12 + 11 = 23$, as if the question asked for one of each.\n* Choice D ($36$): stops at $3c = 36$, the combined time for all three cast-iron repairs.\n\n**Test Day Takeaway:** When both equations share an identical term, subtract them immediately — the difference in totals belongs entirely to the quantity that changed."
+}

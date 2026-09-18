@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "are drawing"
-    },
-    {
-      "id": "B",
-      "text": "have drawn"
-    },
-    {
-      "id": "C",
-      "text": "draws"
-    },
-    {
-      "id": "D",
-      "text": "draw"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The subject of the verb is the singular noun \"account,\" not any of the plural nouns—\"routes,\" \"markets,\" \"tables,\" \"families\"—that sit between the subject and the blank. A singular subject takes a singular verb, so \"the ... account ... draws on customs ledgers\" is correct. \"Draw\" and \"are drawing\" are plural and agree with the nearer plural nouns rather than with the true subject, and \"have drawn\" likewise uses the plural \"have\" where the singular \"account\" requires \"draws.\"",
-  "passage": "The historian's detailed account of the caravan routes that once linked the Ottoman silk markets to the Iranian interior, with all of its tables of prices and its lists of merchant families, ______ on customs ledgers that happened to survive in provincial archives.",
-  "_meta": {
-    "anchor": "Ottoman silk-route history (generic)",
-    "rule": "subject-verb agreement across an intervening modifier"
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "reveal"
   },
-  "id": 1118,
-  "module": 1
+  {
+   "id": "B",
+   "text": "are revealing"
+  },
+  {
+   "id": "C",
+   "text": "reveals"
+  },
+  {
+   "id": "D",
+   "text": "have revealed"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The subject of the sentence is the singular noun \"catalog,\" so the verb must be the singular \"reveals.\"\n\n**The Full Solution:**\n- Strip the modifiers to find the core sentence: \"An iron founder's illustrated catalog ... reveals how thoroughly the components had been standardized.\"\n- The phrase \"with its numbered columns, window caps, and cornices\" sits between subject and verb, but a prepositional phrase never changes the subject's number.\n- Singular subject, singular verb: \"reveals.\"\n\n**Why the other choices are wrong:**\n- A: \"Reveal\" is plural, agreeing with the nearby \"columns, window caps, and cornices\" instead of the true subject, \"catalog.\"\n- B: \"Are revealing\" is likewise plural — the same attraction error in progressive form.\n- D: \"Have revealed\" is plural as well; the auxiliary \"have\" cannot pair with the singular \"catalog.\"",
+ "passage": "An iron founder's illustrated catalog of storefront parts, with its numbered columns, window caps, and cornices, ______ how thoroughly the components of a commercial facade had been standardized by the 1870s.",
+ "_meta": {
+  "rule": "subject-verb agreement across intervening prepositional phrase",
+  "anchor": "cast-iron storefront architecture — foundry parts catalogs",
+  "distractors": {
+   "A": "plural verb attracted to nearby plural nouns",
+   "B": "plural progressive, same attraction error",
+   "D": "plural auxiliary"
+  }
+ },
+ "id": 1118,
+ "module": 1
 }

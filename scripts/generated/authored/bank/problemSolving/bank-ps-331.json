@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-331",
+  "question": "After each week of a training block, a coach predicts a rower's $2{,}000$-meter ergometer time $T$, in seconds, from the number of completed weeks $w$ using $T = 438 - 2.5w$. Which statement best describes the meaning of $438$ in this model?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The predicted decrease in ergometer time, in seconds, for each completed week of the block."
+    },
+    {
+      "id": "B",
+      "text": "The number of completed weeks predicted to reduce the ergometer time to $0$ seconds."
+    },
+    {
+      "id": "C",
+      "text": "The predicted ergometer time, in seconds, before any weeks of the block are completed."
+    },
+    {
+      "id": "D",
+      "text": "The total decrease in ergometer time, in seconds, predicted across the whole training block."
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "describes the coefficient $2.5$, the weekly rate of change, not the constant term",
+    "B": "reads the constant as a number of weeks rather than as a time in seconds",
+    "D": "describes a total change, which depends on the block's length and on $2.5$, not on the constant"
+  },
+  "explanation": "**SAT Pattern: Interpret Intercept of Best Fit**\n\n**Choice C is correct.** Setting $w = 0$ gives $T = 438$, the time the model predicts before any training weeks are completed.\n\n**The Fast Way (~25s):** The constant term is the output at an input of $0$: $T = 438 - 2.5(0) = 438$ seconds.\n\n**The Full Solution:**\n\nStep 1: Identify the roles in $T = 438 - 2.5w$. The input $w$ counts completed weeks, the output $T$ is a time in seconds, $-2.5$ is the rate of change per week, and $438$ is the constant term.\n\nStep 2: Evaluate at $w = 0$: $T = 438 - 2.5(0) = 438$ seconds, the predicted time at the start of the block.\n\nStep 3: Confirm the units. The constant carries the units of $T$, so it is a time in seconds and cannot describe a count of weeks. Check: at $w = 4$, $T = 438 - 10 = 428$ seconds, so the constant is a starting value, not a change.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: describes $2.5$, the weekly decrease in seconds, which is the coefficient of $w$ rather than the constant term.\n* Choice B: reads $438$ as a number of weeks. The constant carries the units of the output, seconds.\n* Choice D: a total decrease over the block would be $2.5$ times the number of weeks, which depends on the block length.\n\n**Test Day Takeaway:** Check the units of the constant term first -- it always shares the output's units, which rules out every interpretation phrased in the input's units."
+}

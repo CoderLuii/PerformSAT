@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
-  "passage": "Economists who study household saving have long puzzled over why workers who say they want to save more for retirement often fail to enroll in the plans available to them. According to one influential account, the obstacle is not weak motivation but ______: small frictions, such as the paperwork required to sign up, are enough to keep many people from ever acting on intentions they sincerely hold.",
+  "passage": "The clay soldiers of the Terracotta Army were once brightly painted, their colors bound to the figures by a thin layer of lacquer. That lacquer, kept damp for two thousand years in the burial pits, shrinks and curls within minutes of meeting dry air, carrying the paint away with it. Conservators therefore treat newly excavated fragments on the spot, applying moisture-retaining agents designed to ______ the fragile painted surface until it can be permanently secured in a laboratory.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "ambition"
+      "text": "recreate"
     },
     {
       "id": "B",
-      "text": "inertia"
+      "text": "stabilize"
     },
     {
       "id": "C",
-      "text": "nostalgia"
+      "text": "conceal"
     },
     {
       "id": "D",
-      "text": "urgency"
+      "text": "examine"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"inertia.\" The passage contrasts the workers' genuine desire to save with their failure to act, and it attributes that failure to small frictions like paperwork. \"Inertia\" — a tendency to stay at rest unless pushed — captures precisely that gap between intention and action. \"Ambition\" and \"urgency\" both point toward eagerness to act, the reverse of what the sentence describes, and \"nostalgia,\" a longing for the past, has nothing to do with the difficulty of getting started."
+  "explanation": "**Choice B is correct.** The agents hold the surface in its current condition — keeping the lacquer from shrinking and curling — until permanent treatment is possible, which is precisely what \"stabilize\" means.\n\n**The Full Solution:**\n- The problem is rapid change: exposed lacquer \"shrinks and curls within minutes,\" taking the paint with it.\n- The treatment is applied \"on the spot\" and holds things together only \"until\" lab work can secure the paint permanently — a stopgap that arrests deterioration, i.e., stabilizes the surface.\n\n**Why the other choices are wrong:**\n- A: \"Recreate\" would mean making the painted surface anew; the goal is to keep the original from being lost.\n- C: \"Conceal\" describes hiding the surface, not protecting it from drying out.\n- D: \"Examine\" names study, but moisture-retaining agents are applied to preserve, not to inspect."
 }

@@ -1,0 +1,27 @@
+{
+  "id": "bank-geo-168",
+  "question": "In the figure, transversal $n$ intersects parallel lines $j$ and $k$. What is the measure, in degrees, of the angle marked $(6y - 15)°$?",
+  "diagram": {
+    "type": "parallelLines",
+    "params": {
+      "angles": {
+        "top": [
+          "(6y - 15)°",
+          ""
+        ],
+        "bottom": [
+          "(4y + 9)°",
+          ""
+        ]
+      },
+      "lineLabels": [
+        "j",
+        "k",
+        "n"
+      ],
+      "figureNote": true
+    }
+  },
+  "correctAnswer": "57",
+  "explanation": "**SAT Pattern: Angles with Parallel Lines and Transversals**\n\n**The correct answer is $57$.**\n\n**The Fast Way (~25s):** The marked angles correspond, so $6y - 15 = 4y + 9$ gives $y = 12$ and $6(12) - 15 = 57$.\n\n**The Full Solution:**\nStep 1: The two marked angles occupy matching positions at the two parallel lines, so they are corresponding angles and are congruent: $6y - 15 = 4y + 9$.\nStep 2: Subtract $4y$ and add $15$: $2y = 24$, so $y = 12$.\nStep 3: The requested measure is $6(12) - 15 = 57$ degrees. Check: $4(12) + 9 = 57$ as well, so the two corresponding angles agree. $\\checkmark$\n\n**Common Mistakes:**\n* Gridding $y = 12$ instead of the angle measure the question asks for.\n* Setting the sum equal to $180$: $10y - 6 = 180$ gives $y = 18.6$, a non-integer that signals the wrong angle relationship.\n* Reporting the supplement, $180 - 57 = 123$, which is the adjacent angle rather than the marked one.\n\n**Test Day Takeaway:** Corresponding angles are equal, so set the expressions equal - then finish the job by substituting back for the measure."
+}

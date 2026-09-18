@@ -1,0 +1,30 @@
+{
+  "id": 6,
+  "question": "The function $r$ is defined by $r(x)=4x-9$. In the $xy$-plane, the graph of $y=r(x)+5$ is a translation of the graph of $y=r(x)$. Which translation is it?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5$ units down"
+    },
+    {
+      "id": "B",
+      "text": "$5$ units left"
+    },
+    {
+      "id": "C",
+      "text": "$5$ units right"
+    },
+    {
+      "id": "D",
+      "text": "$5$ units up"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses the sign of an outside constant",
+    "B": "treats the outside +5 as an inside change",
+    "C": "treats the outside +5 as a horizontal shift"
+  },
+  "correctAnswer": "D",
+  "hint": "Compare the two outputs at the same input and see which one is larger.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~15s):** Adding $5$ after $r$ evaluates raises every output by $5$, a translation up $5$ units.\n\n**The Full Solution:**\nStep 1: $r(x)+5=(4x-9)+5=4x-4$, a line with the same slope $4$ but a $y$-intercept $5$ units higher.\nStep 2: Equal slopes mean the lines are parallel, so the change must be a pure vertical translation.\nStep 3: Check at $x=0$: $r(0)=-9$ and $r(0)+5=-4$, and $-4$ is $5$ units above $-9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$ units down): reverses the sign; the output grows by $5$, so the graph rises.\n* Choice B ($5$ units left): a left shift comes from $r(x+5)$, where the $5$ is attached to the input.\n* Choice C ($5$ units right): a right shift comes from $r(x-5)$; no change was made inside the function.\n\n**Test Day Takeaway:** For a line, adding a constant outside changes only the $y$-intercept — same slope, whole graph lifted."
+}

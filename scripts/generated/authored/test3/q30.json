@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "craft-and-structure",
  "skill": "words-in-context",
+ "type": "multiple-choice",
+ "passage": "The psychologist Adriaan de Groot found that chess masters could reproduce a briefly glimpsed board position almost perfectly, while novices could not — yet when the pieces were scattered at random, the masters' advantage nearly vanished. Their extraordinary recall, de Groot concluded, was not a general gift of memory but a ______ one: it operated only on positions that made chess sense, where familiar configurations could be grasped as wholes.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "in spite of"
+   "text": "cultivated"
   },
   {
    "id": "B",
-   "text": "on behalf of"
+   "text": "fleeting"
   },
   {
    "id": "C",
-   "text": "in light of"
+   "text": "deliberate"
   },
   {
    "id": "D",
-   "text": "against"
+   "text": "circumscribed"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D, \"against.\" The sentence describes a method: Gordon-Reed reads white-authored records that were never meant to capture enslaved people's perspectives, drawing inferences from the gaps, omissions, and inconsistencies in them. To read a document \"against the grain\" is to read it in tension with its evident purpose — working through what it leaves out rather than taking it at face value — exactly the practice the clause that follows names. \"In spite of the grain\" treats the records' bias as an obstacle to ignore rather than a pattern to interpret, and it is not idiomatic here. \"In light of the grain\" would mean reading guided by that bias, the reverse of reading in tension with it. \"On behalf of the grain\" carries a register of advocacy that the methodological claim does not support.",
+ "explanation": "**Choice D is correct.** The colon defines the blank: the masters' recall \"operated only on positions that made chess sense.\" A capacity confined to a limited domain is a circumscribed one — the precise contrast with \"a general gift of memory.\"\n\n**The Full Solution:**\n- The sentence is built on a not-X-but-Y frame: not general, but ______. The blank must be an antonym-in-context of \"general.\"\n- The random-board result supplies the evidence — outside meaningful chess positions, the advantage nearly vanished — so the ability's boundary, not its strength, is the point.\n\n**Why the other choices are wrong:**\n- A: \"Cultivated\" is the tempting half-truth — the skill was surely trained — but training is not the contrast being drawn with \"general,\" and the colon explains a limit of scope, not an origin.\n- B: \"Fleeting\" describes duration; the masters' recall was reliable within its domain, not short-lived.\n- C: \"Deliberate\" describes intention, but grasping configurations \"as wholes\" suggests rapid recognition rather than effortful intent — and intention is not what the colon goes on to explain.",
  "_meta": {
-  "anchor": "Annette Gordon-Reed — historian; The Hemingses of Monticello (2008); reading against archival silences"
- },
- "passage": "In The Hemingses of Monticello (2008), the historian Annette Gordon-Reed reconstructs four generations of an enslaved family whose lives are documented largely through records — wills, ledgers, letters — kept by the white family that owned them. Recognizing that those records were never designed to capture the perspectives of the people they catalog, Gordon-Reed reads the surviving documents ______ the grain: she attends to what is omitted, to what is named only in passing, and to the gaps between an enslaver's stated and actual practice, treating these patterns as themselves a kind of evidence.",
- "type": "multiple-choice"
+  "anchor": "Adriaan de Groot — chess masters' recall as domain-limited (random-board control)"
+ }
 }

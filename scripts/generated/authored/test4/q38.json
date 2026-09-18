@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
+  "module": 2,
+  "passage": "Smallpox inoculation reached England not through its medical colleges but through an ambassador's household. In Constantinople in 1717, Lady Mary Wortley Montagu, who had survived smallpox herself, watched Ottoman practitioners protect children by engrafting: introducing a trace of matter from a mild case into a scratch on the arm, producing a brief illness that left lasting protection. She had the procedure performed on her own son, and after returning to London she promoted it among physicians and at court, arranging for her young daughter to be inoculated before witnesses during the epidemic of 1721. The practice took hold in England decades before vaccination was introduced.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "Before the 1880s, a traveler crossing the United States passed through dozens of towns that each set their clocks slightly differently according to the local position of the sun."
+      "text": "Ottoman practitioners kept the technique of engrafting secret from European visitors until the eighteenth century."
     },
     {
       "id": "B",
-      "text": "Local time in a given town was set by the position of the sun directly overhead at that particular location."
+      "text": "Montagu's advocacy of inoculation was resisted by English physicians because she lacked formal medical training."
     },
     {
       "id": "C",
-      "text": "A small difference in time between two railroad stations could lead to a missed connection or even a collision between trains."
+      "text": "Inoculation as practiced in Constantinople produced a brief illness followed by lasting protection, whereas the vaccination introduced decades later carried no risk of any illness at all."
     },
     {
       "id": "D",
-      "text": "The standard time zones the United States still uses arose when railroads, needing to coordinate schedules across long distances, replaced the old patchwork of local times in 1883."
+      "text": "Montagu encountered inoculation in Constantinople and, by personal example and public advocacy, helped establish the practice in England long before vaccination existed."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage explains that the United States adopted standard time zones in 1883 because railroads needed to coordinate schedules across the old patchwork of local times. Choice A, choice B, and choice C each restate a single supporting detail — the variety of local times, how local time was set, and the danger of mismatched schedules — rather than the main point about why the zones were created.",
-  "passage": "Before the 1880s, towns in the United States kept their own local time, setting their clocks by the position of the sun overhead. A town a few miles to the east would be a minute or two ahead of its neighbor, and a traveler crossing the country passed through dozens of slightly different times. This caused little trouble until railroads began running on tight schedules across long distances, where a difference of minutes between stations could mean a missed connection or a collision. To coordinate their timetables, the railroad companies agreed in 1883 to divide the country into a handful of standard time zones — the system, later written into law, that the country still uses.",
+  "explanation": "**Choice D is correct.** The text's through-line is transmission: Montagu sees engrafting in Constantinople, applies it in her own family, promotes it in London, and the practice takes hold in England decades before vaccination. D traces exactly that arc.\n\n**The Full Solution:**\n- The opening sentence frames the point: inoculation reached England through an ambassador's household, not the medical colleges.\n- The middle supplies the means: her son's inoculation, then her daughter's before witnesses — personal example turned public advocacy.\n- The final sentence gives the outcome D restates: the practice established well before vaccination.\n\n**Why the other choices are wrong:**\n- A: The practitioners let Montagu watch; no secrecy is described.\n- B: The text never says physicians resisted her or mentions her training.\n- C: It elevates a detail into a comparison the text never makes — nothing is said about vaccination's risks.",
   "_meta": {
-    "anchor": "history of standard time zones"
-  },
-  "module": 2
+    "anchor": "Lady Mary Wortley Montagu — inoculation's route from Constantinople to England"
+  }
 }

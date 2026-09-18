@@ -1,0 +1,40 @@
+{
+  "id": "bank-ps-039",
+  "question": "The dot plot shows the masses, in kilograms, of $9$ packages. What is the range, in kilograms, of the masses of the packages?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 2,
+          "count": 1
+        },
+        {
+          "value": 3,
+          "count": 2
+        },
+        {
+          "value": 5,
+          "count": 1
+        },
+        {
+          "value": 6,
+          "count": 3
+        },
+        {
+          "value": 8,
+          "count": 1
+        },
+        {
+          "value": 11,
+          "count": 1
+        }
+      ],
+      "xMin": 1,
+      "xMax": 12,
+      "xLabel": "Mass (kg)"
+    }
+  },
+  "correctAnswer": "9",
+  "explanation": "**SAT Pattern: Range from Set**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~5s):** Range $=$ largest $-$ smallest $= 11 - 2 = 9$.\n\n**The Full Solution:**\nStep 1: The range of a data set is the difference between its maximum and minimum values.\nStep 2: On the dot plot, the leftmost dot is at $2$ and the rightmost dot is at $11$.\nStep 3: Range $= 11 - 2 = 9$ kilograms. Check: every dot lies between $2$ and $11$, a span of $9$. $\\checkmark$\n\n**Common Mistakes:** Entering $11$ (the maximum alone, without subtracting the minimum); entering $6$ (the mode or median); entering $5.6$ (the mean, $\\frac{50}{9}$).\n\n**Test Day Takeaway:** Range uses only the two extreme dots: rightmost minus leftmost. Stack heights and middle values are irrelevant."
+}

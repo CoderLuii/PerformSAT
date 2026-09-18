@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-145",
+ "question": "The function $f$ defined by $f(x)=x^{2}-4x-21$ gives the net lift, in newtons, of a cargo drone rotor at throttle index $x$, for $x\\ge 7$. At what throttle index is the net lift $39$ newtons?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Quadratic via Factoring**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~35s):** Setting $x^{2}-4x-21=39$ gives $x^{2}-4x-60=0$, which factors as $(x-10)(x+6)$; only $x=10$ lies in the stated domain.\n\n**The Full Solution:**\n\nStep 1: Set the model equal to the given lift: $x^{2}-4x-21=39$.\n\nStep 2: Move everything to one side: $x^{2}-4x-60=0$. Two numbers with product $-60$ and sum $-4$ are $-10$ and $6$, so the equation is $(x-10)(x+6)=0$.\n\nStep 3: The solutions are $x=10$ and $x=-6$; the domain is $x\\ge7$, so the throttle index is $10$. Check: $10^{2}-4(10)-21=100-40-21=39$.\n\n**Common Mistakes:**\n\n* Setting the expression to $0$ instead of $39$ gives $x=7$, the index where the lift vanishes.\n* Reporting $-6$, the solution the stated domain $x\\ge7$ rules out.\n\n**Test Day Takeaway:** Move the given output across the equals sign before factoring, then check each solution against the stated domain."
+}

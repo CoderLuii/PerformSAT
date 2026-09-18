@@ -1,67 +1,61 @@
 {
-  "id": 714,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 1,
-  "passage": "Geologists rank explosive eruptions on the Volcanic Explosivity Index (VEI), a scale on which each whole-number step reflects a roughly tenfold increase in the volume of rock, ash, and gas an eruption ejects. Reviewing volume estimates compiled for several twentieth-century eruptions, a student claims that the figures bear out this tenfold rule even within the modern record because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Assigned VEI and estimated erupted volume for selected twentieth-century eruptions",
-    "headers": [
-      "Eruption (year)",
-      "VEI",
-      "Estimated erupted volume (km³)"
-    ],
-    "rows": [
-      [
-        "Mount Pelée (1902)",
-        "4",
-        "0.3"
-      ],
-      [
-        "Mount St. Helens (1980)",
-        "5",
-        "1.1"
-      ],
-      [
-        "El Chichón (1982)",
-        "5",
-        "1.5"
-      ],
-      [
-        "Pinatubo (1991)",
-        "6",
-        "10"
-      ],
-      [
-        "Novarupta (1912)",
-        "6",
-        "13"
-      ]
-    ]
-  },
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the VEI-6 eruptions ejected an estimated 10 and 13 km³, roughly ten times the 1.1 and 1.5 km³ estimated for the VEI-5 eruptions."
-    },
-    {
-      "id": "B",
-      "text": "Novarupta in 1912 ejected an estimated 13 km³, the largest volume listed and more than forty times the volume estimated for Mount Pelée."
-    },
-    {
-      "id": "C",
-      "text": "the two VEI-5 eruptions differed somewhat from each other in volume, releasing an estimated 1.1 and 1.5 km³ in 1980 and 1982 respectively."
-    },
-    {
-      "id": "D",
-      "text": "Mount Pelée, rated VEI-4, ejected only an estimated 0.3 km³, the smallest erupted volume of any eruption included in the table."
-    }
+ "id": 714,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 1,
+ "passage": "Removing salt from seawater always takes energy, but how much has fallen dramatically since the first large plants were built. Reviewing the typical energy budgets of seawater desalination plants by decade of construction, an engineer argues that the steepest gains came earliest and that each later generation of plants improved on its predecessor by a progressively smaller margin because ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Typical energy required by large seawater desalination plants, by decade of construction (kilowatt-hours per cubic meter of fresh water)",
+  "headers": [
+   "Decade",
+   "Energy (kWh per cubic meter)"
   ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The student's claim is about the tenfold rule — that each step up the VEI scale corresponds to a roughly tenfold jump in erupted volume. Choice A makes the comparison the rule requires: the two VEI-6 eruptions ejected an estimated 10 and 13 km³, about ten times the 1.1 and 1.5 km³ estimated for the two VEI-5 eruptions. Choice B reports a single extreme value but spans two VEI steps at once, so it does not isolate the per-step jump the rule describes. Choice C compares two eruptions assigned the same VEI, where no step occurs, and Choice D cites one VEI-4 figure on its own, with nothing to compare it against."
+  "rows": [
+   [
+    "1970s",
+    "18"
+   ],
+   [
+    "1980s",
+    "8"
+   ],
+   [
+    "1990s",
+    "6"
+   ],
+   [
+    "2000s",
+    "4"
+   ],
+   [
+    "2010s",
+    "3"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "plants of the 1980s used 10 fewer kilowatt-hours per cubic meter than plants of the 1970s, while no later generation improved on the one before it by more than 2."
+  },
+  {
+   "id": "B",
+   "text": "energy use fell from 18 kilowatt-hours per cubic meter in the 1970s to just 3 in the 2010s, a cumulative decline of more than 80 percent across the whole period shown."
+  },
+  {
+   "id": "C",
+   "text": "plants built in the 2000s required 4 kilowatt-hours per cubic meter, two fewer than plants built in the 1990s."
+  },
+  {
+   "id": "D",
+   "text": "the generation-to-generation improvements grew steadily larger over time, from 1 kilowatt-hour per cubic meter after the 2010s back to 10 after the 1970s."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The engineer's claim is about the size of each successive step, so the evidence must compare consecutive decades — and A does: one 10-unit leap at the start, then steps of 2, 2, and 1.\n\n**The Full Solution:**\n- The claim has two parts: the steepest gain came first, and each later generation improved by a smaller margin.\n- A establishes the first part with the 1970s-to-1980s drop of 10, and the second by capping every later step at 2 or less.\n- Reading the table's consecutive differences — 10, 2, 2, 1 — confirms the progressively shrinking pattern A describes.\n\n**Why the other choices are wrong:**\n- B: The cumulative 80 percent decline shows that energy use fell overall but says nothing about how the fall was distributed among generations.\n- C: A single mid-series comparison cannot show that early gains dwarfed later ones.\n- D: It reverses the series — the 10-unit change belongs to the earliest step, not to a late-blooming acceleration."
 }

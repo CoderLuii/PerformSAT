@@ -1,40 +1,40 @@
 {
-  "id": 1235,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "module": 2,
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "How did the first large monuments on the Peruvian coast get built, in a desert where farming looks barely possible? The archaeologist Michael Moseley proposed an answer that surprised many of his colleagues. The cold, nutrient-rich current offshore, he noted, supports enormous schools of small fish such as anchovies, which coastal people could harvest in great quantity with nets and simple boats. This marine abundance, on Moseley's account, supplied enough reliable food to support dense, settled populations and to free the labor needed to raise the region's early ceremonial centers—well before intensive irrigation agriculture had developed. The foundations of Andean civilization, he argued, were laid not by farmers but by fishing communities exploiting one of the richest marine ecosystems on earth."
-    },
-    {
-      "label": "Text 2",
-      "text": "The archaeologist David Wilson, surveying settlement remains in a coastal valley, accepted that fishing was important to early coastal life but rejected the claim that the sea alone could have powered the rise of monumental society. Marine protein, he argued, is not the whole of a diet: people also need the carbohydrates and calories that, in this setting, only cultivated plants could supply in quantity. The largest early centers, on his reading of the evidence, sit not on the shore but inland, beside the river valleys where irrigation could water fields of maize, squash, and beans. The labor that built the monuments, in Wilson's account, was fed by farmers, and the maritime resources Moseley emphasized were a valuable supplement rather than the engine of the whole development."
-    }
-  ],
-  "question": "Based on the texts, how would Wilson (Text 2) most likely respond to the argument presented in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "He would agree with Moseley that fishing communities built the earliest monuments on the coast, adding only that they later supplemented their catch with cultivated plants once farming became available to them."
-    },
-    {
-      "id": "B",
-      "text": "He would dismiss Moseley's emphasis on marine resources entirely, contending that the offshore current played no meaningful part in feeding the early coastal populations."
-    },
-    {
-      "id": "C",
-      "text": "He would accept Moseley's account without qualification, since the largest early centers stand on the shore exactly where the maritime hypothesis predicts they should."
-    },
-    {
-      "id": "D",
-      "text": "He would grant that marine resources mattered but deny that they could have powered the rise of monumental society, since the necessary calories came from irrigation farming inland."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. Wilson concedes that fishing was important yet insists the sea alone could not supply the calories a monument-building society needed; those came from inland irrigation agriculture, which he says is where the largest centers actually sit. D states that concession-and-rejection. A has Wilson endorsing Moseley's central claim, which he rejects. B overstates his position—he calls marine resources a valuable supplement, not meaningless. C contradicts Wilson's own evidence, since he locates the major centers inland, not on the shore."
+ "id": 1235,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "module": 2,
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "Pianists who perform music of the 1780s today usually play instruments those composers never heard: the modern concert grand, with its iron frame and thick, powerful sound. Some performers argue that this music belongs on the fortepiano, the light wooden instrument of the composers' own day. Its quick, shallow action and fast-fading notes were the conditions under which the music was composed; rapid passagework that blurs on a modern grand stays articulate, and inner voices the big instrument buries remain audible. If we want to hear these works as their composers conceived them, the argument runs, we should hear them on the instrument the composers wrote at."
+  },
+  {
+   "label": "Text 2",
+   "text": "The fortepiano undeniably clarifies certain textures, and performers have learned much from it. But the composers' instrument was a constraint as well as a choice: the same musicians eagerly acquired louder, larger pianos as fast as builders could supply them, which suggests the old instruments marked a stage in the piano's development rather than an ideal the composers wished to preserve. What the music requires is not a particular machine but transparency and balance, and a pianist who has absorbed the fortepiano's lessons can realize those qualities on a modern grand through touch, pacing, and restraint."
+  }
+ ],
+ "question": "Based on the texts, how would the author of Text 2 most likely respond to the argument presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The author would agree that this repertoire should be performed only on instruments of the composers' own period, adding that most of today's pianists would first need years of retraining before they could play such instruments well."
+  },
+  {
+   "id": "B",
+   "text": "The author would dismiss the fortepiano as a primitive stage in the piano's development, of interest to collectors and historians but with nothing to teach performers."
+  },
+  {
+   "id": "C",
+   "text": "The author would accept the argument without reservation, since concert audiences have repeatedly shown that they prefer the fortepiano's sound in this repertoire."
+  },
+  {
+   "id": "D",
+   "text": "The author would grant that the fortepiano reveals textures a modern grand can obscure but deny that this settles the choice of instrument, since a player who understands those textures can achieve them by other means."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** Text 2 concedes the fortepiano's revelations — it \"undeniably clarifies certain textures\" — but rejects the conclusion that the music therefore belongs on it, arguing that transparency and balance can be achieved \"on a modern grand through touch, pacing, and restraint.\" D preserves both the concession and the refusal.\n\n**The Full Solution:**\n- Text 1's argument moves from evidence (clearer passagework, audible inner voices on the fortepiano) to a prescription (perform these works on the composers' instrument).\n- Text 2 accepts the evidence but attacks the inference twice: historically, the composers treated their instruments as a stage to be outgrown, eagerly adopting bigger pianos; practically, what the music needs is qualities, not a machine, and those qualities transfer.\n- So the response grants what the fortepiano shows while denying that it dictates the instrument — exactly choice D.\n\n**Why the other choices are wrong:**\n- A: It signs the author onto the period-instrument prescription that Text 2 exists to resist.\n- B: It overshoots the author's respect for the fortepiano, from which performers \"have learned much.\"\n- C: It invents audience preferences neither text mentions and concedes the whole argument besides."
 }

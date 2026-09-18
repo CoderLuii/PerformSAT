@@ -1,0 +1,45 @@
+{
+  "id": "bank-alg-488",
+  "question": "A shipment consists of $60$ crates, each of which is either small or large. The table gives the mass, in kilograms, of each type of crate. If the total mass of the shipment is $1{,}375$ kilograms, how many large crates are in the shipment?",
+  "questionTable": {
+    "headers": [
+      "Crate type",
+      "Mass (kilograms)"
+    ],
+    "rows": [
+      [
+        "Small",
+        "15"
+      ],
+      [
+        "Large",
+        "40"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$19$"
+    },
+    {
+      "id": "B",
+      "text": "$22$"
+    },
+    {
+      "id": "C",
+      "text": "$25$"
+    },
+    {
+      "id": "D",
+      "text": "$41$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the difference between the number of small and large crates",
+    "C": "divides the total mass by 15 + 40 = 55, the mass of one crate of each type",
+    "D": "reports the number of small crates (also results from swapping the two masses)"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Sixty small crates would have mass $15(60) = 900$ kilograms. The shipment is $1{,}375 - 900 = 475$ kilograms heavier, and each large crate adds $40 - 15 = 25$ kilograms over a small one, so there are $\\dfrac{475}{25} = 19$ large crates.\n\n**The Full Solution:**\nStep 1: Let $s$ be the number of small crates and $L$ the number of large crates. The count equation is $s + L = 60$, and from the table the mass equation is $15s + 40L = 1{,}375$.\nStep 2: Substitute $s = 60 - L$: $15(60 - L) + 40L = 1{,}375$, so $900 + 25L = 1{,}375$, giving $25L = 475$ and $L = 19$.\nStep 3: Then $s = 60 - 19 = 41$. Check: $15(41) + 40(19) = 615 + 760 = 1{,}375$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($22$): is $41 - 19$, the difference between the two counts.\n* Choice C ($25$): divides $1{,}375$ by $55$, the combined mass of one small and one large crate, which would only be right if the two counts were equal.\n* Choice D ($41$): is the number of small crates; it also results from assigning $40$ kilograms to the small crates and $15$ to the large ones.\n\n**Test Day Takeaway:** Pair the count equation with the total-quantity equation, solve for the variable the question asks about, and use the other variable only for the check."
+}

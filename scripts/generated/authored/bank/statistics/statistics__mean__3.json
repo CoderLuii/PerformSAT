@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "An acoustician measures the reverberation time at six positions in a concert hall and records, in seconds, $1.2$, $1.5$, $1.1$, $1.8$, $1.4$, and $k$. These six recorded times have a mean of $1.45$ seconds. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1.4$"
+    },
+    {
+      "id": "B",
+      "text": "$1.45$"
+    },
+    {
+      "id": "C",
+      "text": "$1.7$"
+    },
+    {
+      "id": "D",
+      "text": "$8.7$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the median of the five listed times, 1.4, instead of solving for the sixth",
+    "B": "assumes the missing value equals the mean, 1.45",
+    "D": "reports the required total of all six times, 8.7, rather than the missing value"
+  },
+  "correctAnswer": "C",
+  "hint": "Six values with a known mean have a known total.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** Six times averaging $1.45$ total $8.7$ seconds; the five listed total $7.0$, so $k = 1.7$.\n\n**The Full Solution:**\nStep 1: Convert the mean to a total. Six values with mean $1.45$ sum to $6 \\times 1.45 = 8.7$ seconds.\nStep 2: Add the five known times. $1.2 + 1.5 + 1.1 + 1.8 + 1.4 = 7.0$ seconds.\nStep 3: Subtract and check. $k = 8.7 - 7.0 = 1.7$ seconds. Recomputing: $\\frac{7.0 + 1.7}{6} = \\frac{8.7}{6} = 1.45$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.4$): is the median of the five listed times, not the value that fixes the mean.\n* Choice B ($1.45$): assumes the missing time equals the mean. That is only true when the five known values already average $1.45$, and they average $1.4$.\n* Choice D ($8.7$): is the required total of all six times, one subtraction short of the answer.\n\n**Test Day Takeaway:** Turn a mean into a total the moment a value is missing: total $=$ mean $\\times$ count, then subtract what you know."
+}

@@ -1,0 +1,49 @@
+{
+  "question": "City engineers model the rim of a stormwater basin in the $xy$-plane by $x^2 + y^2 + Dx + Ey + F = 0$, where the table gives the constants and coordinates are in meters. What are the coordinates $(x, y)$ of the basin's center?",
+  "questionTable": {
+    "headers": [
+      "Constant",
+      "Value"
+    ],
+    "rows": [
+      [
+        "$D$",
+        "$-18$"
+      ],
+      [
+        "$E$",
+        "$24$"
+      ],
+      [
+        "$F$",
+        "$56$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-9, 12)$"
+    },
+    {
+      "id": "B",
+      "text": "$(9, 12)$"
+    },
+    {
+      "id": "C",
+      "text": "$(18, -24)$"
+    },
+    {
+      "id": "D",
+      "text": "$(9, -12)$"
+    }
+  ],
+  "correctAnswer": "D",
+  "distractorNotes": {
+    "A": "halves D and E but does not negate them, giving (-9, 12)",
+    "B": "negates D but not E, giving (9, 12)",
+    "C": "negates D and E but forgets to halve them, giving (18, -24)"
+  },
+  "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** For $x^2 + y^2 + Dx + Ey + F = 0$ the center is $\\left(-\\frac{D}{2}, -\\frac{E}{2}\\right)$, so the center is $\\left(-\\frac{-18}{2}, -\\frac{24}{2}\\right) = (9, -12)$.\n\n**The Full Solution:**\nStep 1: Substitute the table values: $x^2 + y^2 - 18x + 24y + 56 = 0$.\nStep 2: Complete the square in each variable. $x^2 - 18x = (x - 9)^2 - 81$ and $y^2 + 24y = (y + 12)^2 - 144$, so the equation becomes $(x - 9)^2 + (y + 12)^2 = 81 + 144 - 56 = 169$.\nStep 3: Standard form $(x - h)^2 + (y - k)^2 = r^2$ gives center $(9, -12)$ and radius $13$; the rim point $(22, -12)$ sits $13$ meters from that center, and substituting it into the original equation gives $484 + 144 - 396 - 288 + 56 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-9, 12)$): halves $D$ and $E$ but skips the sign change, reporting $\\left(\\frac{D}{2}, \\frac{E}{2}\\right)$.\n* Choice B ($(9, 12)$): negates $D$ but leaves $E$ positive, so the $y$-coordinate keeps the wrong sign.\n* Choice C ($(18, -24)$): negates both coefficients but forgets the factor of $\\frac{1}{2}$, giving $(-D, -E)$.\n\n**Test Day Takeaway:** In general form the center is half the linear coefficients with both signs flipped — halve first, then negate, and check by substituting the point back in.",
+  "id": "bank-geo-283"
+}

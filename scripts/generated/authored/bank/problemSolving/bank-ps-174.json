@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-174",
+  "question": "A jar contains $30$ tokens numbered $1$ through $30$. If one token is drawn at random, what is the probability that the number on the token is a multiple of $4$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{7}{30}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{1}{4}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{4}{15}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{23}{30}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "assumes exactly one-fourth of the tokens are multiples of 4; 30/4 = 7.5 is not a count",
+    "C": "8/30, counting eight multiples (including 0 or 32)",
+    "D": "23/30, the complement"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Multiples of $4$ from $1$ to $30$: $4, 8, 12, 16, 20, 24, 28$, seven of them. Probability $= \\frac{7}{30}$.\n\n**The Full Solution:**\nStep 1: The largest multiple of $4$ that is at most $30$ is $28 = 4 \\times 7$, so there are $7$ multiples of $4$.\nStep 2: Total equally likely outcomes: $30$.\nStep 3: Probability $= \\frac{7}{30}$, already in lowest terms. Check: listing $4, 8, 12, 16, 20, 24, 28$ confirms seven values. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{1}{4}$): Assumes exactly one-fourth of the tokens qualify, but $\\frac{30}{4} = 7.5$ is not a whole number of tokens; the count must be found by listing or by $\\lfloor 30/4 \\rfloor = 7$.\n* Choice C ($\\frac{4}{15}$): $\\frac{8}{30}$, counting eight multiples, which requires including $0$ or $32$, neither of which is in the jar.\n* Choice D ($\\frac{23}{30}$): The probability of *not* drawing a multiple of $4$.\n\n**Test Day Takeaway:** Count favorable outcomes exactly (divide and round down, or list them); \"one in every four\" is only approximate when the total is not a multiple of $4$."
+}

@@ -1,0 +1,24 @@
+{
+ "id": "bank-geo-117",
+ "question": "A rectangular photograph has a perimeter of $54$ inches and a length of $17$ inches. What is the area, in square inches, of the photograph?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$170$"
+  },
+  {
+   "id": "B",
+   "text": "$340$"
+  },
+  {
+   "id": "C",
+   "text": "$459$"
+  },
+  {
+   "id": "D",
+   "text": "$629$"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Half the perimeter is $27$, so the width is $27 - 17 = 10$ and the area is $17 \\cdot 10 = 170$ square inches.\n\n**The Full Solution:**\nStep 1: The perimeter of a rectangle is $P = 2(\\ell + w)$, so $54 = 2(17 + w)$.\nStep 2: Divide by $2$: $27 = 17 + w$, so $w = 10$ inches.\nStep 3: The area is $A = \\ell w = 17 \\cdot 10 = 170$ square inches.\n\nCheck: $2(17 + 10) = 54$ inches, matching the given perimeter.\n\n**Why the wrong answers are tempting:**\n* Choice B ($340$): uses $w = 54 - 2(17) = 20$, forgetting to divide the leftover perimeter by $2$.\n* Choice C ($459$): uses half the perimeter, $27$, as the width instead of subtracting the length from it.\n* Choice D ($629$): uses $54 - 17 = 37$ as the width, subtracting the length from the whole perimeter.\n\n**Test Day Takeaway:** Halve the perimeter first — that single number is $\\ell + w$, and the missing side is one subtraction away."
+}

@@ -1,34 +1,34 @@
 {
-  "id": 521,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "By the end of the eighteenth century, Italian printing was admired across Europe for the clarity and balance of its pages. The typefaces the printer Giambattista Bodoni cut at the court of Parma ______ came to define the look of elegant book printing for a generation and influenced type designers long afterward.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "in the 1790s the most admired of which paired hairline strokes with strong vertical stems"
-    },
-    {
-      "id": "B",
-      "text": "in the 1790s, the most admired of which paired hairline strokes with strong vertical stems"
-    },
-    {
-      "id": "C",
-      "text": "in the 1790s; the most admired of which paired hairline strokes with strong vertical stems;"
-    },
-    {
-      "id": "D",
-      "text": "in the 1790s, the most admired of which paired hairline strokes with strong vertical stems,"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The main clause of the sentence is \"The typefaces the printer Giambattista Bodoni cut at the court of Parma in the 1790s came to define the look of elegant book printing,\" and \"the most admired of which paired hairline strokes with strong vertical stems\" is a nonessential modifier interrupting that clause between its subject and its verb. The modifier must be set off by a comma on each side, as in choice D, so that the verb \"came\" rejoins the subject \"typefaces.\" Choice A runs the modifier into the sentence with no punctuation at all. Choice B opens the modifier with a comma but never closes it, stranding the main clause without its verb. Choice C wraps the modifier in semicolons, which join independent clauses and cannot set off a modifier of this kind.",
-  "_meta": {
-    "anchor": "Giambattista Bodoni — printer; paired-comma nonessential modifier"
+ "id": 521,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "In the town of Akwete, in southeastern Nigeria, Igbo women have long woven a broad, densely patterned cloth on upright looms. The cloths Akwete weavers produced ______ established a repertoire of named motifs that weavers today still reproduce and reinterpret.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "in the early twentieth century the most elaborate of which combined imported rayon with local cotton"
+  },
+  {
+   "id": "B",
+   "text": "in the early twentieth century, the most elaborate of which combined imported rayon with local cotton"
+  },
+  {
+   "id": "C",
+   "text": "in the early twentieth century; the most elaborate of which combined imported rayon with local cotton;"
+  },
+  {
+   "id": "D",
+   "text": "in the early twentieth century, the most elaborate of which combined imported rayon with local cotton,"
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The clause \"the most elaborate of which combined imported rayon with local cotton\" is a nonessential supplement interrupting the main clause, so it must be enclosed by commas on both sides.\n\n**The Full Solution:**\n- The main clause runs: \"The cloths Akwete weavers produced in the early twentieth century... established a repertoire of named motifs...\"\n- \"The most elaborate of which combined imported rayon with local cotton\" adds nonessential information about those cloths; the sentence is complete without it.\n- A supplement inserted mid-sentence takes paired punctuation: a comma before it and a comma after it, as in choice D.\n\n**Why the other choices are wrong:**\n- A: With no punctuation at all, the supplement collides with the main clause, leaving \"cotton established a repertoire\" reading as if the cotton did the establishing.\n- B: An opening comma without a closing one leaves the interruption unclosed, splicing the supplement into the main verb \"established.\"\n- C: Semicolons cannot set off a dependent \"of which\" clause; each semicolon here would need an independent clause on both sides.",
+ "_meta": {
+  "anchor": "Akwete cloth motifs; paired commas around a nonessential 'of which' supplement"
+ }
 }

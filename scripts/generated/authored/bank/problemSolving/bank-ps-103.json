@@ -1,0 +1,64 @@
+{
+  "id": "bank-ps-103",
+  "question": "The table summarizes the $240$ animals admitted to a wildlife rehabilitation center in one year by age group and by outcome. One of the juvenile animals will be selected at random. What is the probability of selecting an animal that was not released?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Released",
+        "Transferred",
+        "Died",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Juvenile",
+          "84",
+          "21",
+          "35",
+          "140"
+        ],
+        [
+          "Adult",
+          "60",
+          "15",
+          "25",
+          "100"
+        ],
+        [
+          "Total",
+          "144",
+          "36",
+          "60",
+          "240"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{7}{30}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{2}{5}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{7}{12}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3}{5}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "56/240, divides by all animals admitted",
+    "C": "56/96, conditions on the animals that were not released",
+    "D": "84/140, the released share of the juveniles"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Among the $140$ juveniles, $21 + 35 = 56$ were not released: $\\dfrac{56}{140} = \\dfrac{2}{5}$.\n\n**The Full Solution:**\nStep 1: The animal is chosen from the juveniles, so the denominator is $140$.\nStep 2: \"Not released\" covers two outcomes in that row: transferred, $21$, and died, $35$, for a total of $56$.\nStep 3: The probability is $\\dfrac{56}{140} = \\dfrac{2}{5}$.\nCheck: the released juveniles number $84$, and $\\dfrac{84}{140} = \\dfrac{3}{5}$, the complement of $\\dfrac{2}{5}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{7}{30}$): This is $\\dfrac{56}{240}$, dividing by every animal admitted instead of by the juveniles.\n* Choice C ($\\frac{7}{12}$): This is $\\dfrac{56}{96}$, conditioning on the animals that were not released rather than on the juveniles.\n* Choice D ($\\frac{3}{5}$): This is $\\dfrac{84}{140}$, the probability that a juvenile was released — the complement of what was asked.\n\n**Test Day Takeaway:** A \"not\" in the question adds cells across the given row; it never changes the denominator."
+}

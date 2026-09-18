@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-225",
+  "question": "The number of active listings on an online marketplace has increased by $50\\%$ every $2$ years, and there are $6{,}750$ active listings today. How many active listings were there $6$ years ago?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2{,}000$"
+    },
+    {
+      "id": "B",
+      "text": "$3{,}000$"
+    },
+    {
+      "id": "C",
+      "text": "$3{,}375$"
+    },
+    {
+      "id": "D",
+      "text": "$4{,}500$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "undoes only two of the three growth periods",
+    "C": "subtracts 50% of today's count",
+    "D": "undoes only one growth period"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Reverse Exponential Back in Time**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Six years hold three $2$-year periods, so divide by $1.5$ three times: $6{,}750 \\div 3.375 = 2{,}000$.\n\n**The Full Solution:**\nStep 1: A $50\\%$ increase multiplies by $1.5$, and $6 \\div 2 = 3$ periods have passed.\nStep 2: If $L$ is the count $6$ years ago, then $L(1.5)^3 = 6{,}750$, and $(1.5)^3 = 3.375$.\nStep 3: $L = \\dfrac{6{,}750}{3.375} = 2{,}000$ listings. Check forward: $2{,}000 \\to 3{,}000 \\to 4{,}500 \\to 6{,}750$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($3{,}000$): divides by $1.5$ twice, reaching only $4$ years ago.\n* Choice C ($3{,}375$): halves today's count, treating \"increased by $50\\%$\" as \"doubled.\"\n* Choice D ($4{,}500$): divides by $1.5$ once, reaching $2$ years ago.\n\n**Test Day Takeaway:** When the growth period is not one year, convert the elapsed time into periods FIRST — here $6$ years is three periods, so the multiplier is $(1.5)^3$."
+}

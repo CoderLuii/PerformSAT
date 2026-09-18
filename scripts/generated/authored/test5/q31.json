@@ -1,34 +1,34 @@
 {
-  "id": 531,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "When Aldus Manutius issued his small, portable editions of the classics in Venice around 1500, he commissioned a new slanted typeface—the ancestor of what is now called italic—modeled on the cursive handwriting of humanist scribes. Its compact letters let more text fit on each line, which helped ______ the cost of the books: a reader could now own a pocket-sized edition of a Latin poet for a fraction of what a large folio had cost.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "lower"
-    },
-    {
-      "id": "B",
-      "text": "justify"
-    },
-    {
-      "id": "C",
-      "text": "publicize"
-    },
-    {
-      "id": "D",
-      "text": "double"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"lower.\" The colon shows the result the blank names: a pocket edition could be owned \"for a fraction of what a large folio had cost,\" so the compact letters helped bring the price down. \"Lower\" fits that fall in cost. \"Justify\" is tempting because in typography it names aligning text to the margins, and it can also mean to warrant a cost—but the sentence is about the price dropping, not about defending it. \"Publicize\" concerns advertising rather than cost, and \"double\" reverses the direction the sentence makes clear.",
-  "_meta": {
-    "anchor": "Aldus Manutius — italic type and affordable octavo editions; 'justify' as a typographic trap"
+ "id": 531,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "In a trompe l'oeil painting, exactness serves deception. The letter-rack pictures popular in the seventeenth century show envelopes, quills, and combs tucked behind leather straps, all at life size, with shadows matched to the room's actual light — every device calibrated to ______ the viewer, if only for an instant, into reaching toward objects that are not there.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "beguile"
+  },
+  {
+   "id": "B",
+   "text": "instruct"
+  },
+  {
+   "id": "C",
+   "text": "alarm"
+  },
+  {
+   "id": "D",
+   "text": "flatter"
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The passage is about pictures engineered to fool the eye, and \"beguile\" means to charm or lead someone astray by deception — exactly the effect of luring a viewer into reaching for painted objects.\n\n**The Full Solution:**\n- The opening sentence announces the theme: \"exactness serves deception.\"\n- The details that follow — life-size objects, shadows matched to the room's real light — are tricks of illusion.\n- The blank must name what those tricks do to the viewer: draw the viewer, however briefly, into a false belief acted on by reaching out. \"Beguile... into reaching\" captures both the deception and the enticement.\n\n**Why the other choices are wrong:**\n- B: \"Instruct\" would make the paintings lessons; nothing in the text assigns them a teaching purpose.\n- C: \"Alarm\" implies frightening the viewer, but the pictured envelopes and combs are ordinary, not menacing.\n- D: \"Flatter\" means to please with compliments, which has nothing to do with inducing a false perception.",
+ "_meta": {
+  "anchor": "trompe l'oeil letter-rack paintings — precision calibrated to deceive the viewer"
+ }
 }

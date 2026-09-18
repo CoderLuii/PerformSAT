@@ -1,0 +1,29 @@
+{
+  "id": 19,
+  "question": "A load-balancing model assigns the primary server the weight $\\dfrac{kx - 8}{2x + 5}$, where $x$ is the model's tuning parameter, $k$ is an integer constant, and $x$ is any real number other than $-\\dfrac{5}{2}$. For which value of $k$ is this weight never equal to $3$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-6$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$15$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "sets k + 6 = 0 instead of k - 6 = 0, flipping the sign when the 6x moves across",
+    "B": "uses the 3 on the right as the needed coefficient, ignoring the 2 in the denominator",
+    "D": "multiplies 3 by the denominator's constant 5 instead of by its coefficient 2"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Rational Equation with No Solution**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Clearing the denominator turns the equation into $kx - 8 = 6x + 15$, so $(k - 6)x = 23$; that is unsolvable only when $k - 6 = 0$, giving $k = 6$.\n\n**The Full Solution:**\nStep 1: Set the weight equal to $3$ and multiply both sides by $2x + 5$, which is allowed because $x \\ne -\\frac{5}{2}$: $kx - 8 = 3(2x + 5) = 6x + 15$.\nStep 2: Collect the variable terms on one side: $kx - 6x = 23$, or $(k - 6)x = 23$.\nStep 3: If $k - 6 \\ne 0$ there is a solution, $x = \\frac{23}{k - 6}$. The only way no $x$ works is $k - 6 = 0$, so $k = 6$, which leaves $0 = 23$. Check: with $k = 6$ the weight is $\\frac{6x - 8}{2x + 5}$, and at $x = 100$ it is about $2.88$, at $x = 1000$ about $2.99$ — always short of $3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6$): comes from writing $k + 6 = 0$, losing the sign change when $6x$ crosses the equal sign.\n* Choice B ($3$): copies the $3$ from the right-hand side as the coefficient to match, forgetting the $2$ in $2x + 5$ doubles it.\n* Choice D ($15$): multiplies $3$ by the constant $5$ instead of by the coefficient $2$, matching constant terms rather than $x$-terms.\n\n**Test Day Takeaway:** Clear the denominator, gather the $x$-terms, and remember that a rational equation runs out of solutions exactly when the variable cancels and leaves a false statement."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-361",
+  "question": "The expression $8x^2 + 12x - 14x - 21$ can be written as the product of two binomials. Which of the following is that product?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(2x - 3)(4x + 7)$"
+    },
+    {
+      "id": "B",
+      "text": "$(2x + 3)(4x - 7)$"
+    },
+    {
+      "id": "C",
+      "text": "$(4x + 3)(2x - 7)$"
+    },
+    {
+      "id": "D",
+      "text": "$(2x + 7)(4x - 3)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "flips the sign inside each factor",
+    "C": "pairs 4x with 3 and 2x with 7",
+    "D": "swaps the constants 3 and 7"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Factor by Grouping**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Group in pairs: $4x(2x + 3) - 7(2x + 3) = (2x + 3)(4x - 7)$.\n\n**The Full Solution:**\nStep 1: Split the four terms into two pairs: $(8x^2 + 12x) + (-14x - 21)$.\nStep 2: Factor each pair. The first pair gives $4x(2x + 3)$; the second gives $-7(2x + 3)$. Both pairs now share the binomial $2x + 3$.\nStep 3: Factor out that shared binomial: $(2x + 3)(4x - 7)$. Check by expanding: $8x^2 - 14x + 12x - 21$, which matches the original. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(2x - 3)(4x + 7)$): flips the sign inside each factor and expands to $8x^2 + 2x - 21$.\n* Choice C ($(4x + 3)(2x - 7)$): pairs the $4x$ with the $3$ instead of with the $-7$, giving $8x^2 - 22x - 21$.\n* Choice D ($(2x + 7)(4x - 3)$): swaps the constants $3$ and $7$, giving $8x^2 + 22x - 21$.\n\n**Test Day Takeaway:** After factoring each pair, the two leftover binomials must be IDENTICAL; if they are not, regroup or change the sign you pull out."
+}

@@ -1,0 +1,52 @@
+{
+  "id": 6,
+  "question": "The table shows the percent decrease from the previous year in a city's average daily water loss from its distribution mains. The average daily water loss in $2020$ was greater than $0$. What was the percent decrease in the average daily water loss from $2020$ to $2023$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Year",
+        "Percent decrease from previous year"
+      ],
+      "rows": [
+        [
+          "2021",
+          "10%"
+        ],
+        [
+          "2022",
+          "25%"
+        ],
+        [
+          "2023",
+          "20%"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$45\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$46\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$54\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$55\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the three yearly decreases to 55 and then reports what is left, 100 - 55 = 45",
+    "C": "computes the surviving fraction 0.90(0.75)(0.80) = 0.54 and reports 54 percent as the decrease instead of what remains",
+    "D": "adds the three yearly percent decreases: 10 + 25 + 20 = 55"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Multiply the surviving fractions: $0.90 \\times 0.75 \\times 0.80 = 0.54$. If $54\\%$ remains, the decrease is $100\\% - 54\\% = 46\\%$.\n\n**The Full Solution:**\nStep 1: Let $L$ be the average daily water loss in $2020$. A $10\\%$ decrease leaves $90\\%$, so the $2021$ loss is $0.90L$.\nStep 2: A further $25\\%$ decrease leaves $75\\%$ of that, so the $2022$ loss is $0.75(0.90L) = 0.675L$. A further $20\\%$ decrease leaves $80\\%$ of that, so the $2023$ loss is $0.80(0.675L) = 0.54L$.\nStep 3: The loss fell from $L$ to $0.54L$, a drop of $0.46L$. As a percent of the $2020$ value that is $\\frac{0.46L}{L} = 46\\%$. Check with $L = 1{,}200$: the values are $1{,}080$, $810$, and $648$, and $\\frac{1{,}200 - 648}{1{,}200} = 0.46$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($45\\%$): adds the three decreases to get $55\\%$ and then reports the leftover $100 - 55 = 45$. Two errors that partly cancel still land on a listed choice.\n* Choice C ($54\\%$): this is the fraction of the $2020$ loss that survives, not the fraction lost. The multiplication is right; the last subtraction never happens.\n* Choice D ($55\\%$): adds $10 + 25 + 20$. Percent changes only add when they are taken on the same base, and each of these is taken on a smaller base than the one before.\n\n**Test Day Takeaway:** Chained percent changes multiply, never add. Track what survives — $0.90$, $0.75$, $0.80$ — then subtract the product from $1$ at the very end."
+}

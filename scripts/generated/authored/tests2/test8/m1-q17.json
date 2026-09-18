@@ -1,0 +1,29 @@
+{
+  "id": 17,
+  "question": "A monitoring buoy records $250$ micrograms per liter of a dissolved tracer at release and $205$ micrograms per liter $4$ hours later, and the concentration continues to fall by the same percent every $4$ hours. Which function models the concentration $C(t)$, in micrograms per liter, $t$ hours after release?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$C(t) = 250(0.18)^{\\frac{t}{4}}$"
+    },
+    {
+      "id": "B",
+      "text": "$C(t) = 250(0.82)^{4t}$"
+    },
+    {
+      "id": "C",
+      "text": "$C(t) = 250(0.82)^{\\frac{t}{4}}$"
+    },
+    {
+      "id": "D",
+      "text": "$C(t) = 250(1.18)^{\\frac{t}{4}}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the fraction lost, (250 - 205)/250 = 0.18, as the multiplier instead of the fraction remaining, 0.82",
+    "B": "multiplies the time by 4 instead of dividing, running four decay periods per hour",
+    "D": "finds the 18% drop and then applies it as an 18% increase, using base 1.18"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** One $4$-hour period takes $250$ down to $205$, and $\\frac{205}{250} = 0.82$, so $C(t) = 250(0.82)^{\\frac{t}{4}}$.\n\n**The Full Solution:**\nStep 1: Set the initial amount. At release, $t = 0$, the concentration is $250$ micrograms per liter, so $250$ is the coefficient in front.\nStep 2: Find the multiplier for one period. Dividing the later reading by the earlier one gives $\\frac{205}{250} = 0.82$, so each $4$-hour period keeps $82\\%$ of what was there — a loss of $18\\%$.\nStep 3: Count the periods. One period lasts $4$ hours, so $t$ hours contain $\\frac{t}{4}$ periods, giving $C(t) = 250(0.82)^{\\frac{t}{4}}$. Check: $C(4) = 250(0.82)^1 = 205$, the recorded reading, and $C(8) = 250(0.82)^2 = 168.1$, another $18\\%$ below it. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($250(0.18)^{\\frac{t}{4}}$): uses the fraction LOST, $\\frac{250 - 205}{250} = 0.18$, as the multiplier. After one period that leaves $250(0.18) = 45$ micrograms per liter, not the recorded $205$.\n* Choice B ($250(0.82)^{4t}$): multiplies the time by $4$ instead of dividing. At $t = 4$ it applies the decay $16$ times, leaving about $10.4$ micrograms per liter.\n* Choice D ($250(1.18)^{\\frac{t}{4}}$): finds the $18\\%$ drop and then applies it as a rise. A base above $1$ makes the concentration grow, reporting $295$ at $t = 4$ instead of $205$.\n\n**Test Day Takeaway:** Divide the later reading by the earlier one to get the multiplier for ONE period — the base is that quotient, never the part that disappeared. If the period is $n$ time units, the exponent is $\\frac{t}{n}$."
+}

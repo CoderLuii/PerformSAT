@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "The masses $x$ and $y$, in grams, of two alloy samples satisfy both $7x + 4y = 94$ and $4x + 7y = 82$. What is the combined mass, in grams, of the two samples?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves the system and reports y alone",
+  "B": "adds the equations but divides 176 by 22 instead of 11",
+  "C": "solves the system and reports x alone"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Add the two equations: $11x + 11y = 176$. Dividing by $11$ gives $x + y = 16$ grams, with no need to find $x$ and $y$ separately.\n\n**The Full Solution:**\nStep 1: Notice what the question asks for. It wants $x + y$, a combination, so look for a way to produce $x + y$ directly instead of solving for each mass.\nStep 2: Add the equations. $(7x + 4y) + (4x + 7y) = 94 + 82$ gives $11x + 11y = 176$, because the coefficients of $x$ and of $y$ each total $11$.\nStep 3: Factor and divide. $11(x + y) = 176$, so $x + y = \\frac{176}{11} = 16$ grams. Check: solving fully gives $x = 10$ and $y = 6$, and $7(10) + 4(6) = 94$ with $10 + 6 = 16$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): finishes the full solve and reports $y$, the mass of one sample rather than the combined mass.\n* Choice B ($8$): adds the equations correctly but divides $176$ by $22$, the total of all four coefficients, instead of by the shared factor $11$.\n* Choice C ($10$): reports $x$, the other single sample's mass.\n\n**Test Day Takeaway:** When a system asks for a sum or difference rather than for $x$ and $y$, add or subtract the equations first. If the resulting coefficients match, one division finishes the problem."
+}

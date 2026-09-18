@@ -1,31 +1,31 @@
 {
-  "id": 730,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "The endosymbiotic theory holds that the mitochondria and chloroplasts inside complex cells began as free-living bacteria that were engulfed by an ancestral host cell. When the idea was revived in the 1960s, many biologists found it hard to accept, because it implied that the entire lineage of complex life was ______ a series of ancient mergers between unrelated microbes rather than on gradual change within a single line of descent.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "at variance with"
-    },
-    {
-      "id": "B",
-      "text": "predicated on"
-    },
-    {
-      "id": "C",
-      "text": "borne out by"
-    },
-    {
-      "id": "D",
-      "text": "commensurate with"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The theory implies that complex life is founded on ancient mergers, and \"predicated on\" means based on or resting upon, which fits. \"At variance with\" means in conflict with, the reverse of the intended sense. \"Borne out by\" means confirmed by evidence, which does not describe the logical foundation the sentence needs, and \"commensurate with\" means proportionate to, which is not the relationship between a lineage and its origin."
+ "id": 730,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "When chemists first synthesized musk compounds in the late nineteenth century, perfume houses hesitated to adopt them, since the trade had long equated quality with rare and costly natural extracts. The equation did not survive testing. In blind evaluations, trained perfumers repeatedly judged compositions built on the synthetic musks to be ______ those built around the natural material — and the new compounds soon anchored several of the era's celebrated perfumes.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "derivative of"
+  },
+  {
+   "id": "B",
+   "text": "indistinguishable from"
+  },
+  {
+   "id": "C",
+   "text": "incompatible with"
+  },
+  {
+   "id": "D",
+   "text": "subordinate to"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The old assumption tied quality to natural extracts, but \"the equation did not survive testing\": in blind evaluations even trained noses could not tell the difference, so the synthetic-based compositions were judged \"indistinguishable from\" the natural ones.\n\n**The Full Solution:**\n- The pivot sentence announces that the quality-equals-natural assumption failed under testing, so the blank must report a result that defeats it.\n- A blind evaluation is precisely a test of telling things apart; the assumption fails if the evaluators cannot.\n- The sequel confirms the reading: compounds that passed as equals went on to anchor celebrated perfumes.\n\n**Why the other choices are wrong:**\n- A: \"Derivative of\" would call the synthetic compositions imitative and lesser, preserving the very hierarchy the tests dissolved.\n- C: \"Incompatible with\" describes things that cannot coexist or combine, not a comparison of quality between two compositions.\n- D: \"Subordinate to\" would rank the synthetics below the natural material, contradicting the failed equation and the compounds' later success."
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-389",
+  "question": "At a clinic, $25\\%$ of the visits during one week were follow-up visits, and $60\\%$ of those follow-up visits were booked online. What percent of all the visits that week were follow-up visits booked online?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$35\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$60\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the percent of visits that were follow-up visits",
+    "C": "subtracts the two given percents, $60 - 25$",
+    "D": "reports the percent of follow-up visits booked online, which is a percent of the subgroup rather than of all visits"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Multiply the two rates: $0.25(0.60) = 0.15$, which is $15\\%$.\n\n**The Full Solution:**\nStep 1: Let the total number of visits be $100$ for convenience. Then $25$ of them were follow-up visits.\nStep 2: $60\\%$ of those $25$ visits were booked online: $0.60(25) = 15$ visits.\nStep 3: Those $15$ visits are $15\\%$ of the $100$ total visits. Check: multiplying the rates directly gives $0.25 \\times 0.60 = 0.15 = 15\\%$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($25\\%$): reports the percent of visits that were follow-up visits\n* Choice C ($35\\%$): subtracts the two given percents, $60 - 25$\n* Choice D ($60\\%$): reports the percent of follow-up visits booked online, which is a percent of the subgroup rather than of all visits\n\n**Test Day Takeaway:** To convert \"a percent of a percent\" into a percent of the whole, multiply the two decimals; adding or subtracting them describes nothing."
+}

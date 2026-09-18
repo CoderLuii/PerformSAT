@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import { getAllPracticeTests } from '../data/practiceTests';
-import { ArrowLeftIcon, ArrowRightIcon, ChevronDownIcon, TimerIcon, CircleDotIcon } from '../design/icons';
+import { ArrowLeftIcon, ArrowRightIcon, ChevronDownIcon, TimerIcon, CircleDotIcon, TargetIcon } from '../design/icons';
 import { Modal } from './ui/Modal';
 import { showToast } from './ui/Toaster';
+import { useFeatureFlag } from '../hooks/useFeatureFlag';
+import { hasRealTestScore } from '../services/selectors/diagnosticVariant';
 import './PracticeTestList.css';
 
 // SAT section scores top out at 800; used for the section progress bars.
@@ -59,12 +61,31 @@ const PracticeTestList = ({
   inProgressTests,
   onResumeTest,
   onViewResults,
+  // Opens a completed test's AI diagnosis (the screen shown right after a test).
+  onViewDiagnosis: onViewTestDiagnosis,
   onResetTest,
   onDeleteAttempt,
   billingLocked = false,
   onSubscribe,
+  // Completed diagnostic record (progress.miniDiagnostic). When present the
+  // list leads with a Diagnostic card above #1 that re-opens the diagnosis.
+  miniDiagnostic = null,
+  onViewDiagnosis,
+  // Sitting-snapshot load state ('idle'|'loading'|'ready'|'missing'|'error')
+  // gating the card's "Review answers"; the handler opens the review runner.
+  diagnosticReviewStatus = 'idle',
+  onReviewDiagnosticQuestions,
+  // Launches the diagnostic (the home "Take your diagnostic" path). While the
+  // student is unmeasured — no diagnostic record, no scoreable full test —
+  // the list leads with a "Diagnostic · Not taken yet" card so the diagnostic
+  // is findable from the Tests page too, not only from Home.
+  onStartDiagnostic,
 }) => {
   const tests = getAllPracticeTests();
+  const ffDiagnosticV2 = useFeatureFlag('diagnosticV2');
+  const diagnosticOwed = !miniDiagnostic
+    && typeof onStartDiagnostic === 'function'
+    && !hasRealTestScore(practiceTestResults);
   // One open launch dropdown at a time, keyed by `${testId}:launch`.
   const [openDropdown, setOpenDropdown] = useState(null);
   const [expandedTestId, setExpandedTestId] = useState(null);
@@ -199,6 +220,21 @@ const PracticeTestList = ({
       )}
 
       <div className="pt-list">
+        {diagnosticOwed && (
+          <DiagnosticPendingCard
+            inProgress={!!inProgressTests?.['mini-diagnostic']}
+            fullLength={ffDiagnosticV2}
+            onStart={onStartDiagnostic}
+          />
+        )}
+        {miniDiagnostic && typeof onViewDiagnosis === 'function' && (
+          <DiagnosticCard
+            record={miniDiagnostic}
+            onView={onViewDiagnosis}
+            reviewStatus={diagnosticReviewStatus}
+            onReview={onReviewDiagnosticQuestions}
+          />
+        )}
         {tests.map((test, idx) => (
           <TestCard
             key={test.id}
@@ -217,6 +253,7 @@ const PracticeTestList = ({
             onSelectTestWithMode={onSelectTestWithMode}
             onResumeTest={onResumeTest}
             onViewResults={onViewResults}
+            onViewDiagnosis={onViewTestDiagnosis}
             onRequestReset={onResetTest ? () => setResetTarget({ test, testNum: idx + 1, inProgress: !!inProgressTests?.[test.id] }) : undefined}
             onRequestDeleteAttempt={onDeleteAttempt ? (attempt) => setDeleteAttemptTarget({ test, testNum: idx + 1, attempt }) : undefined}
             billingLocked={billingLocked}
@@ -336,6 +373,86 @@ const LaunchMenu = ({ totalTime, onPick, up }) => (
   </div>
 );
 
+/**
+ * The diagnostic the student still owes, listed above Digital SAT #1 until a
+ * sitting completes (then DiagnosticCard takes the slot). One action: take
+ * it — or resume it when a sitting is saved mid-way.
+ */
+const DiagnosticPendingCard = ({ inProgress = false, fullLength = true, onStart }) => {
+  const meta = fullLength
+    ? 'Adaptive · 40 questions · about half a full test · builds your study plan'
+    : 'Adaptive · 24 questions · about 15 minutes · builds your study plan';
+  return (
+    <div className="pt-card is-diagnostic">
+      <div className="pt-card-row">
+        <span className="pt-badge is-diagnostic" aria-hidden="true">
+          <TargetIcon size={20} color="currentColor" />
+        </span>
+        <div className="pt-card-main">
+          <div className="pt-card-titlerow">
+            <span className="pt-card-title">Diagnostic</span>
+            <span className={`pt-pill ${inProgress ? 'is-progress' : 'is-notstarted'}`}>{inProgress ? 'In progress' : 'Not taken yet'}</span>
+          </div>
+          <div className="pt-card-meta">{meta}</div>
+        </div>
+        <div className="pt-diag-actions">
+          <button type="button" className="pt-btn is-primary" onClick={onStart}>
+            {inProgress ? 'Resume diagnostic' : 'Take diagnostic'} <ArrowRightIcon size={16} color="currentColor" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/**
+ * The student's diagnostic sitting, listed above Digital SAT #1. It is a
+ * different kind of test (adaptive, ~40 questions, no scaled score), so it
+ * never shows a TOTAL. Actions: review the exact questions (once the sitting
+ * snapshot has loaded — legacy records without one get no review button)
+ * and re-open the full diagnosis.
+ */
+const DiagnosticCard = ({ record, onView, reviewStatus = 'idle', onReview }) => {
+  const dateStr = fmtShortDate(record?.completedAt);
+  const total = typeof record?.totalCount === 'number' && record.totalCount > 0 ? record.totalCount : null;
+  const isCheckin = record?.diagnosticVariant === 'checkin';
+  const meta = [isCheckin ? 'Check-in' : 'Adaptive', total ? `${total} questions` : null, dateStr ? `Completed ${dateStr}` : null]
+    .filter(Boolean)
+    .join(' · ');
+  return (
+    <div className="pt-card is-diagnostic">
+      <div className="pt-card-row">
+        <span className="pt-badge is-diagnostic" aria-hidden="true">
+          <TargetIcon size={20} color="currentColor" />
+        </span>
+        <div className="pt-card-main">
+          <div className="pt-card-titlerow">
+            <span className="pt-card-title">Diagnostic</span>
+            <span className="pt-pill is-completed">Completed</span>
+          </div>
+          <div className="pt-card-meta">{meta}</div>
+        </div>
+        <div className="pt-diag-actions">
+          {typeof onReview === 'function' && (reviewStatus === 'ready' || reviewStatus === 'loading') && (
+            <button
+              type="button"
+              className="pt-btn is-outline"
+              onClick={onReview}
+              disabled={reviewStatus !== 'ready'}
+              title="Go through every question from your diagnostic with the answers and explanations"
+            >
+              Review answers
+            </button>
+          )}
+          <button type="button" className="pt-btn is-primary" onClick={onView}>
+            View diagnosis <ArrowRightIcon size={16} color="currentColor" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const SectionScoreRow = ({ kind, title, q, time, score }) => {
   const pct = typeof score === 'number' ? Math.max(3, Math.min(100, Math.round((score / SECTION_MAX) * 100))) : 0;
   return (
@@ -369,6 +486,7 @@ const TestCard = ({
   onSelectTestWithMode,
   onResumeTest,
   onViewResults,
+  onViewDiagnosis,
   onRequestReset,
   onRequestDeleteAttempt,
   billingLocked = false,
@@ -553,8 +671,18 @@ const TestCard = ({
                 {launchOpen && <LaunchMenu totalTime={totalTime} onPick={launch} up />}
               </div>
               {onViewResults && attempts > 0 && (
-                <button type="button" className="pt-btn is-primary is-sm" onClick={() => onViewResults(test)}>
-                  Review answers <ArrowRightIcon size={16} color="currentColor" />
+                <button
+                  type="button"
+                  className="pt-btn is-outline is-sm"
+                  onClick={() => onViewResults(test)}
+                  title="Go through every question with the answers and explanations"
+                >
+                  Review answers
+                </button>
+              )}
+              {onViewDiagnosis && attempts > 0 && (
+                <button type="button" className="pt-btn is-primary is-sm" onClick={() => onViewDiagnosis(test)}>
+                  View diagnosis <ArrowRightIcon size={16} color="currentColor" />
                 </button>
               )}
             </div>

@@ -1,0 +1,51 @@
+{
+ "id": 2,
+ "question": "The table gives the number of cells in a laboratory culture at three times, where $t$ is the number of hours since the culture was prepared. The number of cells triples every hour. How many cells are in the culture when $t = 5$?",
+ "diagram": {
+  "type": "table",
+  "params": {
+   "xHeader": "t (hours)",
+   "yHeader": "Number of cells",
+   "rows": [
+    [
+     "0",
+     "40"
+    ],
+    [
+     "1",
+     "120"
+    ],
+    [
+     "2",
+     "360"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$600$"
+  },
+  {
+   "id": "B",
+   "text": "$3{,}240$"
+  },
+  {
+   "id": "C",
+   "text": "$9{,}720$"
+  },
+  {
+   "id": "D",
+   "text": "$29{,}160$"
+  }
+ ],
+ "correctAnswer": "C",
+ "hint": "Count how many triplings separate $t = 0$ from $t = 5$.",
+ "distractorNotes": {
+  "A": "treats the growth as linear",
+  "B": "uses four triplings",
+  "D": "uses six triplings"
+ },
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** Five triplings from $40$ give $40 \\cdot 3^5 = 40(243) = 9{,}720$ cells.\n\n**The Full Solution:**\nStep 1: The table starts at $40$ cells when $t = 0$, and each hour multiplies the count by $3$.\nStep 2: After $t$ hours the count is $40(3)^t$; the table confirms this, since $40(3)^2 = 360$.\nStep 3: At $t = 5$: $40(3)^5 = 40(243) = 9{,}720$ cells. Check: continuing the table gives $1{,}080$, then $3{,}240$, then $9{,}720$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($600$): multiplies $40$ by $3$ and then by the $5$ hours, treating tripling as a constant hourly increase.\n* Choice B ($3{,}240$): uses four triplings, $40(3)^4$, stopping one hour early.\n* Choice D ($29{,}160$): uses six triplings, $40(3)^6$, counting one hour too many.\n\n**Test Day Takeaway:** In exponential growth the exponent counts the periods, not the total. Anchor at $t = 0$ and count the steps."
+}

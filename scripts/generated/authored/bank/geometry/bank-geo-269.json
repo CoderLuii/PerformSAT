@@ -1,0 +1,41 @@
+{
+ "id": "bank-geo-269",
+ "question": "A control monument sits where two survey traverse lines meet. Three of the angles there carry the degree expressions marked, each involving the positive constants $x$ and $y$, and the fourth angle is left unmarked. What is the value of $x$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "(2x + y)°",
+    "5y°",
+    "(3x - 10)°",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$30$"
+  },
+  {
+   "id": "C",
+   "text": "$50$"
+  },
+  {
+   "id": "D",
+   "text": "$80$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports y = 20 rather than x",
+  "C": "reports the sum x + y = 50",
+  "D": "reports the angle measure 3(30) - 10 = 80 instead of x"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice B is correct.**\n\n**The Fast Way (~70s):** Vertical angles give $2x + y = 3x - 10$, and the linear pair gives $5y + (3x - 10) = 180$; solving together yields $x = 30$.\n\n**The Full Solution:**\nStep 1: The angles marked $(2x+y)^\\circ$ and $(3x-10)^\\circ$ are opposite each other, so $2x + y = 3x - 10$, which rearranges to $x = y + 10$.\nStep 2: The angles marked $5y^\\circ$ and $(3x-10)^\\circ$ are adjacent along one traverse line, so $5y + 3x - 10 = 180$.\nStep 3: Substituting $x = y + 10$ gives $5y + 3(y + 10) - 10 = 180$, so $8y + 20 = 180$, $y = 20$, and $x = 30$.\n\nCheck: The three angles measure $2(30)+20 = 80$, $5(20) = 100$, and $3(30)-10 = 80$ degrees; the opposite pair matches and $80 + 100 = 180$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): solves the system correctly but reports $y$ instead of $x$.\n* Choice C ($50$): reports the sum $x + y$ rather than $x$ alone.\n* Choice D ($80$): reports the angle measure $3x - 10$ instead of the value of $x$.\n\n**Test Day Takeaway:** Two intersecting lines give one equality and one supplement; that is exactly enough for two unknowns."
+}

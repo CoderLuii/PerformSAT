@@ -1,0 +1,41 @@
+{
+ "id": "bank-geo-243",
+ "question": "The face of a medication timer is the circle shown with center $C$, and sector $MCN$ marks the hours remaining before the next dose. What is the area, in square centimeters, of sector $MCN$?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 120,
+   "angleLabel": "120°",
+   "radius": "6 cm",
+   "showRadiusLabel": true,
+   "labelCenter": "C",
+   "labelPoint1": "M",
+   "labelPoint2": "N"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$12\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$36\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$48\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes the arc length (120/360)(2 pi)(6) = 4 pi instead of the area",
+  "C": "gives the area of the whole circle, ignoring the 120-degree restriction",
+  "D": "uses the diameter 12 in place of the radius: (1/3) pi (12)^2 = 48 pi"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sector Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The sector is $\\frac{120}{360}=\\frac{1}{3}$ of the circle, and the whole circle has area $\\pi(6)^2=36\\pi$, so the sector has area $\\frac{1}{3}(36\\pi)=12\\pi$.\n\n**The Full Solution:**\n\nStep 1 — Read the figure. The radius is $6$ centimeters and the central angle of sector $MCN$ is $120^\\circ$.\n\nStep 2 — Find the whole circle's area: $A=\\pi r^2=\\pi(6)^2=36\\pi$ square centimeters.\n\nStep 3 — Take the sector's share: $\\frac{120}{360}(36\\pi)=12\\pi$ square centimeters. Check: three such sectors would tile the full circle, and $3(12\\pi)=36\\pi$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($4\\pi$): this is the arc length $\\frac{120}{360}(2\\pi)(6)=4\\pi$ centimeters, a length rather than an area.\n* Choice C ($36\\pi$): this is the area of the entire circle, ignoring the $120^\\circ$ restriction.\n* Choice D ($48\\pi$): this squares the diameter $12$ instead of the radius, giving $\\frac{1}{3}\\pi(12)^2=48\\pi$.\n\n**Test Day Takeaway:** A sector's area is the circle's area times the angle's share of $360^\\circ$ — square the radius, never the diameter."
+}

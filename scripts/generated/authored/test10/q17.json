@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 1,
- "passage": "Before she became known for her children's books, Beatrix Potter spent years studying fungi and produced hundreds of meticulous watercolor drawings of mushrooms and their spores. These were not casual ______ recorded microscopic details of germination that few naturalists of the 1890s had documented.",
+ "passage": "In 1874 the Illinois farmer Joseph Glidden patented a fence wire with sharp barbs held in place by a second strand twisted around the first. Its success was immediate. By 1876 his factory was turning out nearly three million pounds of wire a ______ from the treeless plains, where timber for fence rails was scarce, showed no sign of slackening.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "sketches and, they"
+   "text": "year and, demand"
   },
   {
    "id": "B",
-   "text": "sketches, they"
+   "text": "year, demand"
   },
   {
    "id": "C",
-   "text": "sketches. They"
+   "text": "year. Demand"
   },
   {
    "id": "D",
-   "text": "sketches them"
+   "text": "year demand"
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. \"These were not casual sketches\" and \"They recorded microscopic details of germination that few naturalists of the 1890s had documented\" are each complete sentences, so they must be separated by end punctuation; a period followed by the capitalized \"They\" does this cleanly. Choice B joins two independent clauses with only a comma, producing a comma splice. Choice A places \"and\" before the comma, which is ungrammatical. Choice D fuses the two clauses with no boundary at all."
+ "explanation": "**Choice C is correct.** Two independent clauses meet at the blank, and a period is a conventional way to separate them: \"By 1876 his factory was turning out nearly three million pounds of wire a year. Demand from the treeless plains... showed no sign of slackening.\"\n\n**The Full Solution:**\n- Clause one is complete: \"By 1876 his factory was turning out nearly three million pounds of wire a year.\"\n- Clause two is also complete: \"Demand from the treeless plains, where timber for fence rails was scarce, showed no sign of slackening.\"\n- Two independent clauses need a full boundary, a period, a semicolon, or a comma plus a coordinating conjunction. Only the period is on offer.\n\n**Why the other choices are wrong:**\n- A: It garbles the coordination: \"and\" would need a comma before it, not after it.\n- B: A comma alone between two independent clauses is a comma splice.\n- D: With no punctuation at all, the two clauses fuse into a run-on.",
+ "_meta": {
+  "rule": "period between independent clauses",
+  "distractors": {
+   "A": "misplaced comma after coordinating conjunction",
+   "B": "comma splice",
+   "D": "fused sentence"
+  }
+ }
 }

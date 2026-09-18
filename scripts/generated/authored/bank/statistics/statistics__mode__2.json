@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "The number of pages in each of $6$ booklets is $18$, $24$, $31$, $37$, $42$, and $55$. Which statement about the mode of these page counts is true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mode is $18$."
+    },
+    {
+      "id": "B",
+      "text": "The mode is $34.5$."
+    },
+    {
+      "id": "C",
+      "text": "The mode is $55$."
+    },
+    {
+      "id": "D",
+      "text": "There is no mode."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the least value, which is the minimum rather than the mode.",
+    "B": "reports $\\frac{207}{6}$, the mean of the six page counts.",
+    "C": "reports the greatest value, which is the maximum rather than the mode."
+  },
+  "correctAnswer": "D",
+  "hint": "A mode has to be a value that appears more often than the others.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~15s):** Every page count appears exactly once, so no value occurs most often and the data set has no mode.\n\n**The Full Solution:**\nStep 1: The mode of a data set is the value that occurs most frequently.\nStep 2: Each of $18$, $24$, $31$, $37$, $42$, and $55$ occurs exactly one time.\nStep 3: Since no value occurs more often than any other, the data set has no mode. Check: a mode would require at least one repeated value, and there are none. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reports the least value, which is the minimum rather than the mode.\n* Choice B: reports $\\frac{207}{6}$, the mean of the six page counts.\n* Choice C: reports the greatest value, which is the maximum rather than the mode.\n\n**Test Day Takeaway:** Mode is about repetition. If every value appears once, the correct answer is that there is no mode, not the smallest or largest value."
+}

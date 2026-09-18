@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-234",
+ "question": "A weaving shed's daily output, in meters of canvas, is $n(9w + 4)$, where $w$ is the number of looms running. If $63w + 28$ gives the same output for every value of $w$, what is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$32$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "copies the constant 4 from inside the parentheses",
+  "C": "subtracts 4 from 28 instead of dividing",
+  "D": "adds 4 to 28 instead of dividing"
+ },
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Distributing gives $9nw + 4n$, so $9n = 63$ and $n = 7$.\n\n**The Full Solution:**\n\nStep 1: Distribute: $n(9w + 4) = 9nw + 4n$.\n\nStep 2: This equals $63w + 28$ for every value of $w$, so the coefficients of $w$ match: $9n = 63$, giving $n = 7$.\n\nStep 3: The constants must match too: $4n = 4(7) = 28$, which agrees with the given constant. Check with $w = 2$: $7(18 + 4) = 154$ and $63(2) + 28 = 154$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($4$): copies the $4$ from inside the parentheses instead of solving $9n = 63$.\n* Choice C ($24$): computes $28 - 4$, subtracting when the relationship $4n = 28$ calls for division.\n* Choice D ($32$): computes $28 + 4$, adding when the relationship $4n = 28$ calls for division.\n\n**Test Day Takeaway:** Reading a factored form backward from its expanded form is one division, and the second pair of terms is a free check on the answer."
+}

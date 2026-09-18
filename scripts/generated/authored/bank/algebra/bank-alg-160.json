@@ -1,0 +1,58 @@
+{
+  "id": "bank-alg-160",
+  "question": "The graph of line $r$ is shown in the $xy$-plane. Which of the following equations, together with the equation of line $r$, forms a system of equations with no solution?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 2,
+      "yIntercept": -1,
+      "xRange": [
+        -4,
+        4
+      ],
+      "yRange": [
+        -6,
+        8
+      ],
+      "xTickInterval": 1,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          0,
+          -1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "label": "r"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = -2x - 1$"
+    },
+    {
+      "id": "B",
+      "text": "$y = 2x - 1$"
+    },
+    {
+      "id": "C",
+      "text": "$y = 2x + 4$"
+    },
+    {
+      "id": "D",
+      "text": "$y = \\frac{1}{2}x - 1$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "negates the slope; the lines intersect",
+    "B": "is line r itself, giving infinitely many solutions",
+    "D": "uses the reciprocal slope; the lines intersect"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice C is correct.**\n\n**The Fast Way (~12s):** From $(0, -1)$ and $(2, 3)$, line $r$ has slope $2$ and $y$-intercept $-1$: $y = 2x - 1$. No solution needs the same slope with a different intercept, which is $y = 2x + 4$.\n\n**The Full Solution:**\nStep 1: Find the equation of line $r$: slope $= \\frac{3 - (-1)}{2 - 0} = 2$, intercept $-1$, so $y = 2x - 1$.\nStep 2: A system of two lines has no solution only if the lines are parallel and distinct: equal slopes, different $y$-intercepts.\nStep 3: Only $y = 2x + 4$ has slope $2$ with an intercept other than $-1$. Check: $2x - 1 = 2x + 4$ reduces to $-1 = 4$, impossible. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -2x - 1$): shares the intercept but negates the slope, so the lines cross at $(0, -1)$.\n* Choice B ($y = 2x - 1$): is line $r$ itself; that system has infinitely many solutions, not none.\n* Choice D ($y = \\frac{1}{2}x - 1$): uses the reciprocal slope, so the lines are not parallel and intersect.\n\n**Test Day Takeaway:** Write the graphed line's equation first. Then the trap is the identical line: same slope and same intercept means infinitely many solutions, which is the opposite of no solution."
+}

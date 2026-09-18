@@ -1,0 +1,94 @@
+{
+  "id": "bank-ps-135",
+  "question": "The scatterplot pairs the total rainfall, in millimeters, with the peak inflow, in liters per second, recorded at a storm drain during each of $11$ storms, and the line of best fit is $y = 2.4x + 15$. According to that line, by how many liters per second does the predicted peak inflow rise when a storm's rainfall total rises from $20$ millimeters to $35$ millimeters?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          5,
+          30
+        ],
+        [
+          10,
+          36
+        ],
+        [
+          15,
+          55
+        ],
+        [
+          20,
+          60
+        ],
+        [
+          25,
+          72
+        ],
+        [
+          30,
+          90
+        ],
+        [
+          35,
+          96
+        ],
+        [
+          40,
+          115
+        ],
+        [
+          45,
+          120
+        ],
+        [
+          50,
+          132
+        ],
+        [
+          55,
+          150
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 60,
+      "yMin": 0,
+      "yMax": 160,
+      "xGridStep": 5,
+      "xLabelStep": 10,
+      "yGridStep": 20,
+      "yLabelStep": 40,
+      "xLabel": "Total rainfall (mm)",
+      "yLabel": "Peak inflow (liters per second)",
+      "bestFitLine": {
+        "slope": 2.4,
+        "intercept": 15
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$36$"
+    },
+    {
+      "id": "C",
+      "text": "$63$"
+    },
+    {
+      "id": "D",
+      "text": "$99$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the intercept 15, which also equals the 15-millimeter change in rainfall",
+    "C": "reports the predicted inflow at 20 millimeters, 2.4(20) + 15 = 63, instead of the change",
+    "D": "reports the predicted inflow at 35 millimeters, 2.4(35) + 15 = 99, instead of the change"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** A rise of $15$ millimeters multiplies by the slope: $2.4 \\times 15 = 36$ liters per second.\n\n**The Full Solution:**\nStep 1: Predict at both totals. At $x = 20$: $y = 2.4(20) + 15 = 63$. At $x = 35$: $y = 2.4(35) + 15 = 99$.\nStep 2: Subtract. The predicted inflow rises by $99 - 63 = 36$ liters per second.\nStep 3: Check with the slope. The slope $2.4$ is the rise per millimeter, and $2.4 \\times (35 - 20) = 2.4 \\times 15 = 36$. The intercept cancels, as it must in a difference. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): is the intercept of the line and also the change in rainfall — but not the change in predicted inflow.\n* Choice C ($63$): is the predicted inflow at $20$ millimeters, one endpoint rather than the difference.\n* Choice D ($99$): is the predicted inflow at $35$ millimeters, the other endpoint.\n\n**Test Day Takeaway:** A change in the predicted value is slope times the change in the input; the intercept never appears in a difference."
+}

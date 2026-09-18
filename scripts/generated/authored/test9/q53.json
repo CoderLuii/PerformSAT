@@ -9,37 +9,21 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "Frances Densmore (1867-1957) was an American ethnomusicologist affiliated with the Bureau of American Ethnology.",
-      "Between 1907 and the 1950s, she made wax-cylinder field recordings of songs in over thirty Native American communities.",
-      "Densmore typically transcribed each recorded song into Western staff notation alongside the singer's own commentary on its function.",
-      "Her contemporaries in comparative musicology often abstracted songs from their ceremonial settings to compare them as melodic specimens.",
-      "Densmore's monographs — including *Chippewa Music* (1910-1913) and *Teton Sioux Music* (1918) — paired each transcription with notes on when, by whom, and for what purpose the song was performed.",
-      "Recent scholars credit Densmore with treating song meaning as inseparable from ceremonial context decades before that approach became standard."
+      "The camera obscura, known since antiquity, projects a real image of a scene into a darkened chamber or box.",
+      "An artist working inside a camera obscura can trace the projected image directly.",
+      "The camera lucida, patented in 1806, is a small prism mounted on a stem and is used in ordinary daylight.",
+      "An artist looking through the prism sees the scene apparently superimposed on the drawing paper, but no image is actually cast on the paper.",
+      "The camera lucida was compact enough to carry in a coat pocket for fieldwork."
     ],
-    "goal": "The student wants to emphasize a methodological difference between Densmore's work and that of her comparative-musicology contemporaries."
+    "goal": "The student wants to emphasize a difference between the camera lucida and the camera obscura."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Whereas her contemporaries often stripped songs from their ceremonial settings to compare them as melodies, Densmore paired each transcription with notes on when, by whom, and why the song was performed."
-    },
-    {
-      "id": "B",
-      "text": "Recent scholars credit Densmore with treating song meaning as inseparable from ceremonial context, an approach that became standard only decades later."
-    },
-    {
-      "id": "C",
-      "text": "Frances Densmore recorded songs in over thirty Native American communities between 1907 and the 1950s for the Bureau of American Ethnology."
-    },
-    {
-      "id": "D",
-      "text": "Like her contemporaries, Densmore transcribed Native American songs into Western staff notation to make them available for cross-cultural melodic comparison."
-    }
+    { "id": "A", "text": "Whereas the camera obscura casts a real, traceable image inside a darkened space, the camera lucida projects nothing — the artist merely sees scene and paper superimposed in the eye." },
+    { "id": "B", "text": "The camera lucida, patented in 1806, is a small prism mounted on a stem and used in ordinary daylight." },
+    { "id": "C", "text": "Both the camera obscura and the camera lucida helped artists set down the proportions of a scene accurately." },
+    { "id": "D", "text": "The camera obscura, an instrument known since antiquity, projects a real image of a scene into a darkened chamber or box, where an artist can trace the projected image directly." }
   ],
   "correctAnswer": "A",
-  "explanation": "The goal is to highlight how Densmore's method differed from her contemporaries'. Choice A draws the contrast directly: where others stripped songs from their settings to compare melodies, she recorded when, by whom, and why each song was performed. Choices B and C state her reputation or biography without the comparison, and D wrongly aligns her with the very contemporaries she differed from.",
-  "_meta": {
-    "anchor": "Frances Densmore, ethnomusicology"
-  }
+  "explanation": "**Choice A is correct.** Emphasizing a difference requires putting both devices in one frame and stating what divides them. A does exactly that with the sharpest divide the notes contain: a real projected image versus no projection at all.\n\n**The Full Solution:**\n- The goal names two devices, so the sentence must mention both — and in contrastive relation, which A's \"Whereas\" supplies.\n- A draws its two halves straight from the notes: the obscura's traceable projection in a dark chamber; the lucida's superimposition \"in the eye\" with \"no image... cast on the paper.\"\n\n**Why the other choices are wrong:**\n- B: It describes the camera lucida alone; with one device on stage, no difference can be emphasized.\n- C: It emphasizes a similarity — the precise opposite of the stated goal.\n- D: Like B, it presents a single device; the camera lucida never appears for the comparison."
 }

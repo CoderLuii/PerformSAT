@@ -1,6 +1,7 @@
 // Animation keyframes and helpers
 // Since we use inline styles, animations are defined as CSS keyframe strings
 // injected once into the document head
+import { useState as _useState, useEffect as _useEffect, useRef as _useRef } from 'react';
 
 const keyframes = `
 @keyframes skeletonPulse {
@@ -149,7 +150,6 @@ export const animations = {
 
 // useCountUp hook — animates a number from 0 to target
 // Usage: const displayValue = useCountUp(targetValue, duration, delay)
-import { useState as _useState, useEffect as _useEffect, useRef as _useRef } from 'react';
 
 export function useCountUp(target, duration = 800, delay = 0) {
   const [value, setValue] = _useState(0);

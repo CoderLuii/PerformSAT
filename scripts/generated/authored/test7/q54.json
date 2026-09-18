@@ -1,41 +1,41 @@
 {
-  "id": 754,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 2,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "On November 29, 1864, U.S. troops attacked a Cheyenne and Arapaho encampment in southeastern Colorado in what became known as the Sand Creek Massacre.",
-      "Efforts to commemorate the killings at a national historic site stretched across more than a century.",
-      "Federal agencies, the U.S. military, and Cheyenne and Arapaho descendant communities held incompatible understandings of what had happened and what the site should mean.",
-      "Because these parties could not agree on the events’ boundaries, causes, or significance, the official commemoration stalled for decades.",
-      "Historians studying the case conclude that what a nation remembers is determined not by the facts of an event alone but by a contested negotiation among the parties with a stake in it."
-    ],
-    "goal": "The student wants to emphasize the central insight historians draw from the Sand Creek commemoration."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "On November 29, 1864, U.S. troops attacked a Cheyenne and Arapaho encampment in southeastern Colorado, an event that later became known as the Sand Creek Massacre."
-    },
-    {
-      "id": "B",
-      "text": "Establishing a national historic site at Sand Creek ended up taking well over a century, in part because the various parties involved disagreed quite sharply about the meaning of the events."
-    },
-    {
-      "id": "C",
-      "text": "Historians studying Sand Creek conclude that national memory is shaped not by an event’s facts alone but by a contested negotiation among the parties with a stake in it, whose disagreement stalled the commemoration for decades."
-    },
-    {
-      "id": "D",
-      "text": "Federal agencies, the U.S. military, and the descendant communities each held flatly incompatible understandings of what had actually happened at Sand Creek in 1864."
-    }
+ "id": 754,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 2,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "In 1086, England's Norman king ordered a survey of landholding across the kingdom; the record it produced became known as the Domesday Book.",
+   "Royal commissioners recorded each estate's plow teams, mills, livestock, tenants, and taxable value.",
+   "The survey said little about whatever it was not designed to tax: churches, towns, and entire northern regions are thinly covered or absent.",
+   "For centuries, readers nevertheless treated the book as a comprehensive portrait of eleventh-century England.",
+   "Historians studying the survey now conclude that any such record reflects the questions its makers asked rather than a neutral picture of the society it describes."
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The goal is the central insight, and C states it directly — national memory is settled by a contested negotiation among interested parties, not by facts alone — while tying it to the stalled commemoration. Choice A recounts only the 1864 event, and Choice D reports the parties' disagreement without the broader conclusion. Choice B notes the century-long delay but stops short of the general insight about how national memory is made."
+  "goal": "The student wants to emphasize the central insight historians draw from the Domesday survey."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "In 1086, England's Norman king ordered a survey of landholding across the whole kingdom, and the record that the survey produced became known as the Domesday Book."
+  },
+  {
+   "id": "B",
+   "text": "Royal commissioners compiling the Domesday Book recorded each estate's plow teams, mills, livestock, tenants, and taxable value for the crown."
+  },
+  {
+   "id": "C",
+   "text": "Historians conclude from the Domesday survey — long read as a portrait of England yet shaped by what the crown meant to tax — that records reflect their makers' questions, not a neutral picture of society."
+  },
+  {
+   "id": "D",
+   "text": "For centuries, readers treated the Domesday Book as a comprehensive and dependable portrait of eleventh-century England and its people, despite the survey's thin or entirely absent coverage of churches, of towns, and of entire northern regions."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The goal is the historians' central insight, and C states it — records reflect their makers' questions, not a neutral picture of society — while anchoring it in the case that yields it: a survey long read as a portrait but shaped by what the crown meant to tax.\n\n**The Full Solution:**\n- The insight lives in the final note: what a record shows is governed by the questions its makers asked.\n- C leads with the historians' conclusion and folds in the supporting facts — the book's tax-driven design and its long misreading as a comprehensive portrait.\n- Joining the general claim to the specific case is what makes the insight emphatic rather than merely implied.\n\n**Why the other choices are wrong:**\n- A: It recounts the survey's commissioning and naming, never arriving at any conclusion about records.\n- B: It lists what the commissioners recorded — raw material for the insight, but not the insight.\n- D: It documents the long misreading and the gaps, stopping one step short of the general lesson historians draw from them."
 }

@@ -407,10 +407,12 @@ export const getRelevantStrategies = (errorPatterns, weakSkillIds) => {
   return result;
 };
 
-export default {
+const satStrategies = {
   trapGuides,
   misconceptionGuides,
   desmosTechniques,
   DESMOS_SKILL_MAP,
   getRelevantStrategies,
 };
+
+export default satStrategies;

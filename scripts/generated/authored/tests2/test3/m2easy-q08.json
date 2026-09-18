@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "Let $c$ be a constant such that $\\frac{4x^2 - 81}{2x + 9}$ and $2x + c$ have the same value for every $x$ in the domain of the first expression. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-81$"
+  },
+  {
+   "id": "B",
+   "text": "$-18$"
+  },
+  {
+   "id": "C",
+   "text": "$-9$"
+  },
+  {
+   "id": "D",
+   "text": "$-4.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "carries the numerator's constant -81 straight down without factoring",
+  "B": "doubles -9, applying the factor of 2 from 2x to the constant as well",
+  "D": "divides -9 by 2, as if the whole numerator had been split by 2x"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The numerator is a difference of squares: $4x^2 - 81 = (2x + 9)(2x - 9)$. Cancelling $2x + 9$ leaves $2x - 9$, so $c = -9$.\n\n**The Full Solution:**\nStep 1: Recognize the numerator's form. Both terms are perfect squares, since $4x^2 = (2x)^2$ and $81 = 9^2$, so $4x^2 - 81 = (2x + 9)(2x - 9)$.\nStep 2: Cancel the common factor. $\\frac{(2x + 9)(2x - 9)}{2x + 9} = 2x - 9$ for every $x$ in the domain, that is, every $x$ except $-\\frac{9}{2}$.\nStep 3: Match the result to $2x + c$. Writing $2x - 9$ as $2x + (-9)$ gives $c = -9$. Check with $x = 2$: $\\frac{16 - 81}{4 + 9} = \\frac{-65}{13} = -5$, and $2(2) - 9 = -5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-81$): copies the constant out of the numerator without factoring at all. The $-81$ belongs to a squared term and does not survive the cancellation intact.\n* Choice B ($-18$): doubles the $-9$, applying the $2$ from $2x$ to the constant term as well. Only the x-term carries that coefficient.\n* Choice D ($-4.5$): divides $-9$ by $2$, treating the division as if each term of the numerator were divided by $2x$.\n\n**Test Day Takeaway:** A quadratic numerator over a linear denominator is a factoring problem, and $a^2 - b^2 = (a + b)(a - b)$ is the pattern the SAT reuses most. Factor, cancel, and then read the constant off the quotient rather than off the original numerator."
+}

@@ -5,39 +5,39 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "cross-text-connections",
-  "question": "Based on the texts, how would the author of Text 2 most likely respond to the argument presented in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "He would grant that the Mercator projection exaggerates area more severely than most maps, adding only that a few regions near the equator happen to escape its worst distortions."
-    },
-    {
-      "id": "B",
-      "text": "Peters's projection, he would respond, at last removes the distortions of earlier maps, showing every continent at its true size and its true shape without the compromises other projections demand."
-    },
-    {
-      "id": "C",
-      "text": "The distortion Peters condemns in the Mercator map, Robinson would argue, is the unavoidable price any flat map pays for flattening a sphere, and Peters's own map merely shifts it onto the continents' shapes."
-    },
-    {
-      "id": "D",
-      "text": "He would accept Peters's premise that a world map must above all preserve the true relative areas of regions, and conclude that the familiar shapes of the continents should therefore be discarded as hopelessly misleading."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. Both writers agree that any map of the round Earth involves a trade-off, but they draw opposite lessons from it. Peters (Text 1) treats the Mercator map's exaggeration of area as a correctable bias and offers his equal-area map as the honest alternative. Robinson (Text 2) replies that distortion is unavoidable on every flat map: Peters's projection buys true areas only by badly distorting the shapes of the continents, so it trades one error for another rather than eliminating distortion. Choice A concedes Peters's premise that Mercator alone distorts area; choice B states the very claim Robinson rejects, that Peters's map removes distortion; and choice D accepts Peters's priority of area above all and runs it to a conclusion Robinson would not draw.",
+  "module": 1,
   "passages": [
     {
       "label": "Text 1",
-      "text": "In the 1970s the historian Arno Peters attacked the familiar world map based on Gerardus Mercator's sixteenth-century projection. Because Mercator's map preserves compass bearings, it stretches regions near the poles: Greenland looms as large as Africa, though Africa is in truth some fourteen times larger. This systematic enlargement of the temperate north, Peters charged, flatters wealthy nations and shrinks the tropical countries near the equator. He offered instead an equal-area projection, on which each country covers space in true proportion to its size, and urged schools and agencies to adopt it as the only honest map of the world."
+      "text": "In an influential 1985 study, psychologist Thomas Gilovich and his colleagues analyzed shooting records from professional basketball. Players, coaches, and fans overwhelmingly believed that a player who has just made several shots in a row is more likely to make the next one. The records showed otherwise: a player's chance of hitting the next shot was no higher after a string of makes than after a string of misses. The researchers concluded that the \"hot hand\" is a cognitive illusion — an instance of the human tendency to see meaningful streaks in chance sequences."
     },
     {
       "label": "Text 2",
-      "text": "The cartographer Arthur Robinson accepted that Mercator's map distorts area badly and that it had been overused in classrooms. But he rejected Peters's claim to have produced an honest map. Every attempt to lay the curved surface of the globe flat, Robinson pointed out, must distort something — area, shape, distance, or direction — and no projection can preserve them all at once. Peters's map keeps areas true only by squeezing the continents into long, narrow forms that misrepresent their shapes, so that Africa and South America sag downward like wet laundry. Trading one distortion for another, Robinson argued, is not the same as removing distortion."
+      "text": "Economists Joshua Miller and Adam Sanjurjo have identified a subtle bias in how early studies measured streak shooting. Selecting from a finite record only the shots that immediately follow several makes skews the expected success rate on those shots downward: even a shooter with no streakiness at all would score below his overall average on that selected subset. Judged against the corrected benchmark, the very records once used to dismiss the hot hand show a modest but consistent streak effect."
     }
   ],
+  "question": "Based on the texts, how would Miller and Sanjurjo (Text 2) most likely respond to the conclusion presented in Text 1?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Fans and players were wrong to perceive streaks in shooting records, but the tendency to see patterns in chance sequences is too deeply rooted to correct."
+    },
+    {
+      "id": "B",
+      "text": "The 1985 study relied on records too incomplete to reveal how often professional players actually attempted shots immediately after a string of makes."
+    },
+    {
+      "id": "C",
+      "text": "The records Gilovich and his colleagues analyzed do not establish that the hot hand is an illusion, because the method used to evaluate those records was itself biased against finding a streak effect."
+    },
+    {
+      "id": "D",
+      "text": "The hot hand is indeed a cognitive illusion, and the statistical bias they identified makes the illusion even more persuasive than Gilovich and his colleagues claimed."
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** Miller and Sanjurjo's objection is methodological: the selection procedure itself pushes measured success rates down, so records analyzed that way cannot show that streak shooting is illusory — and, corrected, the same records show a modest effect.\n\n**The Full Solution:**\n- Text 1's conclusion rests on a comparison: success after makes looked no better than after misses.\n- Text 2 shows the comparison's benchmark was wrong — a streak-free shooter would score below average on the selected shots — so \"no better\" actually conceals a positive effect.\n- Choice C states exactly that response: the data do not establish the illusion, because the method was biased against finding the effect.\n\n**Why the other choices are wrong:**\n- A: It sides with Text 1's conclusion, which Text 2's correction overturns.\n- B: Text 2 faults the analysis of the records, not the records' completeness.\n- D: It reverses Text 2's position — Miller and Sanjurjo find evidence for the hot hand, not a stronger case against it.",
   "_meta": {
-    "anchor": "cross-text — Arno Peters (equal-area projection) vs. Arthur Robinson (all flat maps distort); history of cartography"
-  },
-  "module": 1
+    "anchor": "cross-text — Gilovich et al. (hot hand as illusion) vs. Miller and Sanjurjo (selection-bias correction); sports analytics"
+  }
 }

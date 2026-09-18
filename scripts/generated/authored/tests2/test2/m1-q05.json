@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "Translating the graph of $6x - 5y = 40$ downward by $7$ units in the xy-plane produces the graph of a second equation written in the same form. Which equation is it?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6x - 5y = 5$"
+  },
+  {
+   "id": "B",
+   "text": "$6x - 5y = 33$"
+  },
+  {
+   "id": "C",
+   "text": "$6x - 5y = 47$"
+  },
+  {
+   "id": "D",
+   "text": "$6x - 5y = 75$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "translates upward instead of downward, replacing y with y-7 and getting 6x-5y=5",
+  "B": "subtracts 7 from the constant on the right side, giving 40-7=33",
+  "C": "adds 7 to the constant on the right side, giving 40+7=47"
+ },
+ "explanation": "**SAT Pattern: Parallel Lines and Standard Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** A vertical shift keeps the slope, so the left side stays $6x - 5y$. The point $(0, -8)$ on the original line moves to $(0, -15)$, and $6(0) - 5(-15) = 75$.\n\n**The Full Solution:**\nStep 1: Translating a graph down $7$ units sends each point $(x, y)$ to $(x, y - 7)$, so the image is the set of points satisfying $6x - 5(y + 7) = 40$.\nStep 2: Expand and simplify: $6x - 5y - 35 = 40$, so $6x - 5y = 75$. The coefficients of $x$ and $y$ are unchanged, which is exactly what makes the image parallel to the original.\nStep 3: Check with a point. On the original line, $x = 0$ gives $-5y = 40$, so $y = -8$; shifting down $7$ gives $(0, -15)$, and $6(0) - 5(-15) = 75$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6x - 5y = 5$): substitutes $y - 7$ for $y$, which shifts the line up rather than down, and produces $6x - 5y = 5$. Shifting down requires $y + 7$.\n* Choice B ($6x - 5y = 33$): treats the shift as a change to the constant on the right, computing $40 - 7 = 33$. The $-5$ multiplying $y$ scales the shift, so the constant cannot move by only $7$.\n* Choice C ($6x - 5y = 47$): makes the same mistake with the other sign, computing $40 + 7 = 47$ instead of $40 + 5(7) = 75$.\n\n**Test Day Takeaway:** To translate a line written in standard form, substitute for the variable rather than nudging the constant: down $k$ units means replacing $y$ with $y + k$, then simplify."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 843,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 2,
-  "passage": "In the rocky tide pools he studied, the ecologist Robert Paine noticed that a single predator, a starfish, fed on the mussels that would otherwise crowd out other species. When Paine removed the starfish from one stretch of shore, the mussels spread unchecked, and within a few seasons the variety of species there collapsed: barnacles, limpets, and algae that had coexisted gave way to a near-monoculture of mussels. Paine concluded that some species exert an influence on their community out of all proportion to their numbers, holding in balance a web of relationships among many other species. His finding implies that removing such a species from an ecosystem would likely ____",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "leave the rest of the community unchanged, since each species in a tide pool occupies its own independent niche."
-    },
-    {
-      "id": "B",
-      "text": "affect only the species that the removed predator had fed on directly, with no further consequences."
-    },
-    {
-      "id": "C",
-      "text": "set off changes that ripple through many other species the predator did not feed on directly."
-    },
-    {
-      "id": "D",
-      "text": "be welcomed by the remaining species, which had been suppressed by the predator’s presence."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. Paine found that removing the starfish let mussels overrun the shore and collapsed the variety of many species, showing that the predator held a whole web of relationships in balance. It follows that taking out such a species would send effects rippling well beyond the prey it ate directly. A denies any wider effect, contradicting the collapse Paine observed; B limits the effect to the direct prey, but the variety of barnacles, limpets, and algae also changed; and D imagines the outcome as beneficial, when the removal reduced the community's diversity."
+ "id": 843,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 2,
+ "passage": "In the irrigation communities of the medieval Mediterranean, a canal's water moved by rotation: each farm's turn began when the turn above it ended, in a fixed order running down the channel. The schedule had no slack — a farm's hours were defined by their place in the sequence, not by the clock. Observers of such systems have pointed out that this structure gave a violation unusual reach: water taken out of turn upstream did not merely shortchange the next holding. Researchers studying these rotations reasoned that a single farmer's decision to draw water out of turn would likely ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "harm only the farm whose turn immediately followed the violator's."
+  },
+  {
+   "id": "B",
+   "text": "even out by the end of each day as downstream farmers adjusted their own turns."
+  },
+  {
+   "id": "C",
+   "text": "spread through the entire schedule, disturbing the timing of turns on farms far below the violator's."
+  },
+  {
+   "id": "D",
+   "text": "lead the community to abandon the rotation altogether and to divide the canal's water into fixed shares that individual farms could hold permanently."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** Because every farm's turn is fixed relative to the turns before it, one upstream theft of time shifts the whole remaining schedule — so the effects would spread far beyond the next farm in line, as C concludes.\n\n**The Full Solution:**\n- The rotation's structure: each farm's water begins when the previous farm's turn ends, in a fixed order down the canal.\n- The passage notes that a turn taken out of order does not merely shortchange one neighbor; it displaces the timing of every turn that follows.\n- The logical completion generalizes that structure: a single upstream violation propagates through the entire system — choice C.\n\n**Why the other choices are wrong:**\n- A: Confining the harm to the offender's immediate neighbor ignores the chained timing the passage describes.\n- B: The passage gives no reason to expect the disruption to cancel out by day's end; delays accumulate instead.\n- D: The conclusion that the rotation would be abandoned outruns the premises, which concern the spread of disruption, not the system's collapse."
 }

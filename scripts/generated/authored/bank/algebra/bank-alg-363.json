@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-363",
+ "question": "A permit office issues $x$ additional wristbands each morning for a canyon overlook, where $x$ is an integer that must satisfy $7 - 2x \\ge 4x - 29$. The office then posts the value of $2x + 5$. What is the greatest value it can post?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$17$"
+  },
+  {
+   "id": "D",
+   "text": "$77$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the greatest value of x instead of the value of 2x + 5",
+  "B": "computes 2x at x = 6 but omits the +5",
+  "D": "reads 36 >= 6x as x <= 36 and evaluates 2x + 5 there"
+ },
+ "explanation": "**SAT Pattern: One-Variable Linear Inequality**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** $36 \\ge 6x$ gives $x \\le 6$, so the greatest integer is $x = 6$ and $2(6) + 5 = 17$.\n\n**The Full Solution:**\n\nStep 1: Add $2x$ to both sides and add $29$: $7 + 29 \\ge 4x + 2x$, which is $36 \\ge 6x$.\n\nStep 2: Divide by the positive number $6$: $6 \\ge x$, so $x \\le 6$ and the greatest integer value is $x = 6$.\n\nStep 3: The question asks for $2x + 5$, which increases as $x$ increases, so its greatest value is $2(6) + 5 = 17$. Check at $x = 6$: $7 - 12 = -5$ and $4(6) - 29 = -5$, so the inequality holds with equality.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($6$): reports the greatest value of $x$ rather than the expression the question asks about.\n* Choice B ($12$): evaluates $2x$ at $x = 6$ but omits the $+5$.\n* Choice D ($77$): reads $36 \\ge 6x$ as $x \\le 36$ and evaluates $2(36) + 5$.\n\n**Test Day Takeaway:** Solve for the variable, then reread the question: the bound you found is rarely the quantity being asked for."
+}

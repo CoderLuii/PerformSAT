@@ -6,46 +6,35 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
  "module": 1,
- "passage": "The Pew Research Center has tracked U.S. adults' use of major social media platforms through periodic national surveys, releasing comparable estimates in 2012, 2016, and 2021. Although journalists often summarize the period as one of unbroken growth across the industry, an analyst examining Pew's figures argues that this characterization obscures Facebook's trajectory in particular: while Facebook's share of adult users climbed sharply between the first two surveys, the platform's audience share showed almost no change between the 2016 and 2021 surveys because _______",
+ "passage": "Raw wool is sold largely by fineness: the thinner the average fiber, the softer the yarn it can become. Before auction, lots are graded by mean fiber diameter, measured in microns. An agricultural economist reviewing one season's auction results argues that buyers were paying specifically for fineness rather than for any other property of the lots because ______",
  "questionTable": {
   "type": "table",
-  "caption": "Percentage of U.S. adults who use selected social media platforms (Pew Research Center, Social Media Use in 2021)",
+  "caption": "Mean fiber diameter and average auction price for wool lots sold in one season, by grade",
   "headers": [
-   "Platform",
-   "2012",
-   "2016",
-   "2021"
+   "Grade",
+   "Mean fiber diameter (microns)",
+   "Average price (dollars per kilogram)"
   ],
   "rows": [
    [
-    "Facebook",
-    "54%",
-    "68%",
-    "69%"
+    "Superfine",
+    "17",
+    "14.10"
    ],
    [
-    "Instagram",
-    "13%",
-    "28%",
-    "40%"
+    "Fine",
+    "19",
+    "10.60"
    ],
    [
-    "LinkedIn",
-    "20%",
-    "25%",
-    "28%"
+    "Medium",
+    "22",
+    "7.90"
    ],
    [
-    "Twitter",
-    "16%",
-    "21%",
-    "23%"
-   ],
-   [
-    "YouTube",
-    "—",
-    "73%",
-    "81%"
+    "Strong",
+    "28",
+    "6.20"
    ]
   ]
  },
@@ -53,21 +42,21 @@
  "choices": [
   {
    "id": "A",
-   "text": "Facebook's share rose from 54% in 2012 to 68% in 2016, a 14-percentage-point increase that was the largest gain reported for any platform across that interval."
+   "text": "the Superfine grade, the finest wool sold, earned 14.10 dollars per kilogram, the highest average price of any of the four grades sold during the season."
   },
   {
    "id": "B",
-   "text": "Instagram's share more than tripled across the period shown, climbing from 13% in 2012 to 40% in 2021, a far larger increase than any other platform recorded."
+   "text": "Strong wool, with a mean fiber diameter of 28 microns, was the coarsest of the four grades sold during the season."
   },
   {
    "id": "C",
-   "text": "Facebook's share fell from 68% in 2016 to 69% in 2021, indicating that the platform's audience contracted over the most recent five-year window."
+   "text": "the price difference between adjacent grades was largest between the Medium and Fine grades."
   },
   {
    "id": "D",
-   "text": "Facebook's share rose by 14 percentage points between 2012 and 2016, from 54% to 68%, but moved by only 1 percentage point between 2016 and 2021, from 68% to 69%."
+   "text": "average price rose with every step toward finer fiber, from 6.20 dollars per kilogram for the coarsest grade to 14.10 for the finest."
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The analyst's claim has two parts that must be supported together: Facebook's share climbed sharply between the first two surveys and then barely changed between the second and third. Choice D cites both legs in the same row—the 14-point rise from 54% to 68%, then the 1-point move from 68% to 69%—so the figures carry the rate-of-change contrast the passage is making. Choice A reports only the early rise and never addresses the 2016–2021 plateau the claim turns on. Choice B is accurate about Instagram but speaks to a different row, not Facebook's trajectory. Choice C misreads the direction of the recent change: 68% to 69% is a slight increase, not a contraction."
+ "explanation": "**Choice D is correct.** A claim that buyers paid for fineness needs the whole pattern, and D provides it: across all four grades, price climbs step by step as fiber diameter falls, from 6.20 to 14.10 dollars per kilogram.\n\n**The Full Solution:**\n- The economist's conclusion is a relationship, finer fiber commands higher price, so the supporting data must span the grades, not describe one of them.\n- Reading the table from Strong (28 microns, 6.20 dollars) up to Superfine (17 microns, 14.10 dollars), price increases at every step, which is exactly the monotonic pattern D reports.\n\n**Why the other choices are wrong:**\n- A: One grade's top price cannot establish a relationship across grades; it is consistent with prices that jump around below it.\n- B: It identifies the coarsest grade without mentioning price at all, so it cannot connect fineness to what buyers paid.\n- C: It misreads the table: the largest adjacent gap, 3.50 dollars, lies between Fine and Superfine, not between Medium and Fine."
 }

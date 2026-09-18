@@ -1,0 +1,28 @@
+{
+ "id": 21,
+ "question": "A cable profile is modeled by $y = x^2 - 6x + 14$, whose graph is shown, where $x$ and $y$ are measured in meters. A straight support modeled by $y = mx - 2$, where $m$ is positive, is tangent to the cable profile. What is the value of $m$?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 3,
+    "k": 5
+   },
+   "a": 1,
+   "xRange": [
+    -1,
+    7
+   ],
+   "yRange": [
+    0,
+    16
+   ],
+   "xTickInterval": 1,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showVertex": false
+  }
+ },
+ "correctAnswer": "2",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**The correct answer is $2$.** Setting the two models equal gives $x^2 - (6 + m)x + 16 = 0$, and tangency forces the discriminant to zero: $(6 + m)^2 = 64$, so $m = 2$ or $m = -14$, and only $m = 2$ is positive.\n\n**The Fast Way (~50s):** One shared point means one repeated root, so $(6 + m)^2 - 4(16) = 0$. Then $6 + m = \\pm 8$, and the positive choice is $m = 2$.\n\n**The Full Solution:**\nStep 1: Set the curve equal to the line: $x^2 - 6x + 14 = mx - 2$, so $x^2 - (6 + m)x + 16 = 0$.\nStep 2: A tangent line meets the curve exactly once, so this quadratic has one repeated solution and its discriminant is $0$: $(6 + m)^2 - 4(1)(16) = 0$, giving $(6 + m)^2 = 64$.\nStep 3: Then $6 + m = 8$ or $6 + m = -8$, so $m = 2$ or $m = -14$; the problem restricts $m$ to positive values, so $m = 2$. Check: with $m = 2$, $x^2 - 8x + 16 = (x - 4)^2 = 0$ has the single root $x = 4$, where the curve is at $16 - 24 + 14 = 6$ and the line is at $2(4) - 2 = 6$. ✓\n\n**Common Mistakes:**\n* $-14$: the other root of $(6 + m)^2 = 64$. It describes a real tangent line, but the problem says $m$ is positive.\n* $8$: comes from dropping the $-6x$ term when combining, which leaves $x^2 - mx + 16 = 0$ and $m^2 = 64$. The curve's own linear term has to be folded into the coefficient.\n* $\\frac{7}{3}$: assumes the support touches at the vertex $(3, 5)$ and solves $3m - 2 = 5$. A tangent line meets a parabola at one point, but not necessarily at the vertex.\n\n**Test Day Takeaway:** Tangent means one solution, and one solution means discriminant zero. Combine into $ax^2 + bx + c = 0$ first, then set $b^2 - 4ac = 0$."
+}

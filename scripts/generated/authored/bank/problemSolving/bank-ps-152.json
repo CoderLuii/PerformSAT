@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-152",
+  "question": "The regular price of a monitor is $\\$240$. The monitor is marked down by $15\\%$, and then a $7\\%$ sales tax is applied to the marked-down price. What is the final cost of the monitor, in dollars?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$204$"
+    },
+    {
+      "id": "B",
+      "text": "$218.28$"
+    },
+    {
+      "id": "C",
+      "text": "$220.80$"
+    },
+    {
+      "id": "D",
+      "text": "$256.80$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops after the markdown (240 x 0.85) and never applies the tax",
+    "C": "nets the percents to -8% and computes 240 x 0.92",
+    "D": "applies the 7% tax to the regular price (240 x 1.07) and skips the markdown"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Chain the multipliers: $240 \\times 0.85 \\times 1.07 = 218.28$.\n\n**The Full Solution:**\nStep 1: A $15\\%$ markdown leaves $85\\%$ of the price: $240 \\times 0.85 = 204$ dollars.\nStep 2: A $7\\%$ tax on the marked-down price adds $204 \\times 0.07 = 14.28$ dollars, giving $204 + 14.28 = 218.28$, or equivalently $204 \\times 1.07$.\nStep 3: Check: the combined multiplier is $0.85 \\times 1.07 = 0.9095$, and $240 \\times 0.9095 = 218.28$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($204$): The marked-down price before tax; the tax step was skipped.\n* Choice C ($220.80$): Subtracts the percents, $-15\\% + 7\\% = -8\\%$, and computes $240 \\times 0.92$; successive percents multiply, they do not add.\n* Choice D ($256.80$): Applies the tax to the regular price, $240 \\times 1.07$, and never applies the markdown.\n\n**Test Day Takeaway:** Each percent change is its own multiplier ($1 - 0.15$, then $1 + 0.07$); multiply them in order, never add the percents."
+}

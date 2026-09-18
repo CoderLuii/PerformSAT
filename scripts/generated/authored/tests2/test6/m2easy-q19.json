@@ -1,0 +1,29 @@
+{
+  "id": 19,
+  "question": "A polar station recorded the sea-ice edge at $1{,}482$ meters from a fixed marker in year $3$ and at $1{,}218$ meters in year $9$, and the retreat is modeled as linear in the year number. In which year does the model place the ice edge $998$ meters from the marker?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5$"
+    },
+    {
+      "id": "B",
+      "text": "$11$"
+    },
+    {
+      "id": "C",
+      "text": "$14$"
+    },
+    {
+      "id": "D",
+      "text": "$20$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "measures the drop from the year-9 reading, (1218 - 998)/44 = 5, and reports the elapsed years as the year",
+    "B": "measures the drop from the year-3 reading, (1482 - 998)/44 = 11, and forgets to add the starting year 3",
+    "D": "measures the drop from the year-3 reading but adds the 11 elapsed years to year 9 instead of year 3"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Line from Two Points**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The ice edge moves $\\frac{1218 - 1482}{9 - 3} = -44$ meters per year. From year $3$ it must fall another $1482 - 998 = 484$ meters, which takes $484 \\div 44 = 11$ years, landing in year $3 + 11 = 14$.\n\n**The Full Solution:**\nStep 1: Find the slope from the two recorded points $(3, 1482)$ and $(9, 1218)$: $m = \\frac{1218 - 1482}{9 - 3} = \\frac{-264}{6} = -44$ meters per year.\nStep 2: Write the model using the year-$3$ point: $d = 1482 - 44(y - 3)$, which expands to $d = 1614 - 44y$.\nStep 3: Set $d = 998$ and solve: $1614 - 44y = 998$, so $44y = 616$ and $y = 14$. Check with the other data point: $1614 - 44(9) = 1614 - 396 = 1218$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): computes $\\frac{1218 - 998}{44} = 5$ from the year-$9$ reading and reports that elapsed count as the year; the actual year would be $9 + 5 = 14$.\n* Choice B ($11$): computes $\\frac{1482 - 998}{44} = 11$ from the year-$3$ reading, which is the number of years that pass, not the year number — the starting year $3$ still has to be added.\n* Choice D ($20$): finds the same $11$ elapsed years from the year-$3$ reading but adds them to year $9$, double-counting the six years already used to find the slope.\n\n**Test Day Takeaway:** Two points give you a rate, not a model. Anchor the rate at one of the given points and keep track of whether the question wants elapsed time or the labeled input value."
+}

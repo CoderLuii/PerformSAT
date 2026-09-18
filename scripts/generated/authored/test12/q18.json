@@ -1,31 +1,31 @@
 {
-  "id": 1218,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "Botanists studying desert plants have long been interested in how mesquite trees endure long droughts. The deep taproots that a mature mesquite sends far below the surface ____ groundwater that shallow-rooted neighbors cannot reach, allowing the tree to keep its leaves through dry months when most surrounding plants have gone dormant.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "draws"
-    },
-    {
-      "id": "B",
-      "text": "draw"
-    },
-    {
-      "id": "C",
-      "text": "is drawing"
-    },
-    {
-      "id": "D",
-      "text": "has drawn"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The subject of the verb is the plural noun \"taproots,\" so the verb must be the plural \"draw.\" The singular \"mesquite\" sits closer to the blank inside the relative clause and tempts a singular verb, but it is not the subject. \"Draws\" and \"is drawing\" are both singular and so disagree with \"taproots,\" and \"has drawn\" is likewise singular as well as shifting the action into the past, which the surrounding present-tense description does not support."
+ "id": 1218,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "A gondola's hull is not symmetric: the left side swells out farther than the right, so that the boat leans slightly toward the gondolier's rowing side. The curved oak ribs that a boatbuilder shapes for the port side ____ a different template from the starboard set, and the difference, invisible to most passengers, is what lets a single stern oar drive the boat in a straight line.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "follows"
+  },
+  {
+   "id": "B",
+   "text": "follow"
+  },
+  {
+   "id": "C",
+   "text": "is following"
+  },
+  {
+   "id": "D",
+   "text": "has followed"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The subject of the verb is \"ribs,\" which is plural, so the verb must be the plural form \"follow.\"\n\n**The Full Solution:**\n- The rule: a verb agrees with its actual subject, not with whatever noun happens to sit closest to the blank.\n- Ask what follows the template: \"The curved oak ribs... follow a different template.\" The subject is the plural \"ribs.\"\n- The singular noun \"boatbuilder\" sits just before the blank inside the descriptive clause \"that a boatbuilder shapes for the port side,\" but the boatbuilder is not doing the following — that clause only describes the ribs.\n- The surrounding sentence is in the present tense (\"is what lets\"), so the plural present \"follow\" fits.\n\n**Why the other choices are wrong:**\n- A: \"Follows\" is singular and clashes with the plural subject \"ribs.\"\n- C: \"Is following\" is singular as well, and its in-progress sense misdescribes a permanent fact of the design.\n- D: \"Has followed\" is singular too, and it shifts a standing practice into a completed past the sentence does not describe."
 }

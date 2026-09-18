@@ -1,0 +1,6 @@
+{
+  "question": "For the equation $2x^{2}+bx+5=0$, the value of the discriminant $b^{2}-4ac$ is $9$, and the constant $b$ is positive. What is the value of $b$?",
+  "correctAnswer": "7",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~15s):** $b^{2}-40=9$, so $b^{2}=49$ and $b=7$.\n\n**The Full Solution:**\nStep 1: With $a=2$ and $c=5$, the discriminant is $b^{2}-4(2)(5)=b^{2}-40$.\nStep 2: Set it equal to $9$: $b^{2}-40=9$, so $b^{2}=49$.\nStep 3: Since $b$ is positive, $b=7$. Check: $2x^{2}+7x+5=0$ has discriminant $49-40=9$ ✓\n\n**Common Mistakes:**\n* $49$: reported $b^{2}$ instead of $b$.\n* $-7$: took the negative square root although $b$ is given as positive.\n* $5.39$: used $4c=20$ for $4ac$, omitting the leading coefficient, and solved $b^{2}=29$.\n\n**Test Day Takeaway:** Running the discriminant backwards is one equation in $b^{2}$ — the sign condition then picks the root.",
+  "id": "bank-am-137"
+}

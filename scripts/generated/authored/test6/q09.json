@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
-  "passage": "Celadon ceramics produced in Korea during the Goryeo dynasty (918-1392) were admired even by Chinese connoisseurs of the era, one of whom ranked the wares' jade-green glaze first under heaven. Because celadon technology itself first reached Korea from Song China, later collectors and historians often treated Goryeo celadon as a refined provincial offshoot of Chinese ceramics. Scholars of Korean art have pushed back on that framing. Goryeo potters, they note, developed a technique with no counterpart in Chinese workshops: sanggam, in which designs incised into the clay are filled with white and black slip before glazing. To treat the wares as derivative, these scholars argue, is to make the borrowed glaze the whole story and to obscure the innovations that distinguished the tradition.",
+  "passage": "The pierced stone screens known as jaali are among the most recognizable elements of Mughal architecture, their marble and sandstone lattices carved into stars, hexagons, and winding vines. Admired today chiefly as ornament, the screens were working parts of the buildings that held them. A jaali admits daylight while blocking direct sun; its perforations speed up the breeze that passes through, cooling the rooms beyond; and its lattice lets those inside observe a courtyard or street without being seen. The screens' geometry served the practical demands of climate and custom as much as it served the eye.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "Goryeo celadon was admired by Chinese connoisseurs of its own era, one of whom ranked the wares' jade-green glaze first under heaven."
+      "text": "Mughal builders valued marble and sandstone above all other materials for carving screens."
     },
     {
       "id": "B",
-      "text": "Later collectors and historians correctly recognized Goryeo celadon as a refined provincial offshoot of the ceramic traditions of Song China."
+      "text": "The geometric patterns used in jaali were chosen mainly to display the skill of individual carvers."
     },
     {
       "id": "C",
-      "text": "Scholars argue that treating Goryeo celadon as derivative of Chinese ceramics overlooks distinctly Korean innovations such as the inlaid decoration known as sanggam."
+      "text": "Though now admired mainly as decoration, jaali performed practical functions in the buildings that held them."
     },
     {
       "id": "D",
-      "text": "Goryeo potters developed the sanggam inlay technique because they wanted their celadon to be easily distinguishable from the Chinese wares that had inspired it."
+      "text": "Jaali screens cooled Mughal interiors more effectively than any other architectural feature could."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage builds to the scholars' objection: classifying Goryeo celadon as a provincial offshoot of Chinese ceramics lets the borrowed glaze stand for the whole tradition and hides the innovations, sanggam inlay above all, that Korean potters developed on their own. Choice C states that argument. Choice A repeats only the opening detail about the wares' early admirers. Choice B affirms the very framing the scholars reject. Choice D isolates a single detail, the sanggam technique, and supplies a motive for its invention that the passage never offers, missing the larger point about how the tradition should be understood."
+  "explanation": "**Choice C is correct.** The text's organizing claim is that the screens, \"admired today chiefly as ornament,\" were in fact \"working parts\" of their buildings — and every detail that follows lists a practical function.\n\n**The Full Solution:**\n- The second sentence states the idea outright: the screens were functional, not merely decorative.\n- The middle sentences itemize the functions — filtered light, accelerated cooling breezes, one-way sight lines — and the final sentence sums up: geometry serving \"climate and custom as much as... the eye.\"\n- Choice C captures that whole arc: modern perception (decoration) corrected by historical function.\n\n**Why the other choices are wrong:**\n- A: Materials are mentioned once in passing; no preference among materials is claimed.\n- B: Carvers' skill is never discussed, and the text credits the patterns to practical demands, not display.\n- D: The text says the perforations cool rooms, but it never ranks jaali against other cooling features."
 }

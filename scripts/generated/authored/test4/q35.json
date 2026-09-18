@@ -5,39 +5,39 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "cross-text-connections",
-  "question": "Based on the texts, how would the authors of Text 2 most likely respond to the argument presented in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "They would deny that cheese rinds host any genuine microbial community at all, arguing that whatever bacteria and fungi appear on them must come entirely from added starter cultures or from ordinary contamination."
-    },
-    {
-      "id": "B",
-      "text": "The terroir account, they would say, is essentially correct, and the influence of microbes unique to each place on a cheese's flavor is almost certainly even greater and more finely organized than the original claim suggests."
-    },
-    {
-      "id": "C",
-      "text": "They would agree that native microbes deliberately tune each cheese's flavor but object that maintaining such place-bound communities would be far too costly for most dairies to sustain."
-    },
-    {
-      "id": "D",
-      "text": "Cheese rinds do host rich communities of bacteria and fungi, they would grant, but the strongest terroir claim — that a cheese's flavor depends on microbes unique to one place — reaches beyond what experiments show."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. Dutton and her colleagues do not deny that cheese rinds carry rich communities of bacteria and fungi; they have studied those communities closely. What they dispute is the strongest version of the terroir claim, that a cheese's flavor depends on a mixture of microbes unique to one place. Because they can rebuild the same communities in the laboratory from a known set of species, far from any traditional cave, they conclude that flavor cannot rest on an irreproducible, place-bound mixture. Choice A denies the microbial communities they actually accept; choice B has them endorsing the terroir account in full; and choice C attributes to them a cost objection the texts never raise.",
+  "module": 2,
   "passages": [
     {
       "label": "Text 1",
-      "text": "Traditional cheesemakers have long believed that a great cheese tastes of the place it comes from. On this view, the flavor of a classic raw-milk cheese is the work of a \"microbial terroir\" — a community of wild bacteria and fungi native to a particular farm, pasture, or aging cave. These local microbes settle on the curd and rind during the months a cheese matures, and the precise mixture, the argument runs, cannot be found anywhere else. Move the same recipe and the same animals to another region, advocates say, and the cheese will never taste quite the same, because the microbes that shaped it cannot be carried along."
+      "text": "Studying transparent starfish larvae in the 1880s, the zoologist Élie Metchnikoff watched wandering cells converge on a splinter he had inserted and engulf foreign material around it. From such observations he built a general theory of immunity: the body's defense is waged by devouring cells, which he named phagocytes, that seek out, swallow, and digest invading microbes. Wherever protection against disease appears, Metchnikoff argued, these cells are its principal agents."
     },
     {
       "label": "Text 2",
-      "text": "The microbiologist Rachel Dutton and her colleagues do not doubt that cheese rinds host complex communities of bacteria and fungi; they have catalogued these communities in detail. But in their experiments the same communities reassemble in a predictable order when a defined set of species is grown on fresh curd in the laboratory, far from any traditional cave. If a rind's microbes can be reconstructed from a known list of species in a different place, they argue, then flavor cannot depend on an irreproducible mixture unique to one farm. The terroir picture, however appealing, claims more than the evidence has shown."
+      "text": "In 1890, Emil von Behring and Shibasaburō Kitasato reported that animals exposed to weakened diphtheria or tetanus toxins became resistant to the diseases — and, more striking, that the resistance could be transferred. Serum drawn from an immunized animal, a fluid containing no living cells at all, protected the animals that received it. The blood's cell-free portion, the two argued, must itself carry substances that disarm a toxin, a protection no devouring cell need provide."
     }
   ],
+  "question": "Based on the texts, how would Behring and Kitasato (Text 2) most likely respond to the argument presented in Text 1?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Metchnikoff misinterpreted his observations, since the wandering cells he watched were clearing debris rather than defending the larva against infection."
+    },
+    {
+      "id": "B",
+      "text": "Immunity to diphtheria and tetanus may well depend on substances carried in serum, but immunity to most other diseases must still arise from the action of devouring cells."
+    },
+    {
+      "id": "C",
+      "text": "The starfish experiments should be repeated in animals that can be immunized, so that the contribution of the wandering cells can be measured directly."
+    },
+    {
+      "id": "D",
+      "text": "Phagocytes may well consume invading microbes, but immunity that transfers in cell-free serum shows that the body's defense cannot rest on devouring cells alone."
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** Behring and Kitasato's finding targets the reach of Metchnikoff's claim, not his observations: protection that travels in a fluid \"containing no living cells at all\" cannot be the work of devouring cells, so phagocytes cannot be the whole of immunity.\n\n**The Full Solution:**\n- Text 1's argument: wherever protection appears, phagocytes are its principal agents.\n- Text 2's evidence: immunity transferred by cell-free serum — \"a protection no devouring cell need provide.\"\n- The measured response grants what phagocytes may do while denying that defense rests on them alone — exactly choice D.\n\n**Why the other choices are wrong:**\n- A: Nothing in Text 2 questions what Metchnikoff saw; the challenge is to his generalization.\n- B: It reverses the pair's position — they generalize from serum protection rather than confining it to two diseases.\n- C: Text 2 proposes no repetition of the starfish work; its argument stands on the transfer experiments.",
   "_meta": {
-    "anchor": "cross-text — microbial-terroir hypothesis vs. Rachel Dutton et al. (reproducible cheese-rind communities); cheese/fermentation microbiology"
-  },
-  "module": 2
+    "anchor": "cross-text — Metchnikoff (phagocytes) versus Behring and Kitasato (cell-free serum antitoxin); immunology history"
+  }
 }

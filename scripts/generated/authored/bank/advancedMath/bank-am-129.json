@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-129",
+ "question": "A campsite's weekly rentals of camping lanterns above its off-season rate are modeled by $y=x^2-6x+k$, where $k$ is a constant. The line $y=-2x+3$ meets this graph at exactly one point. What is the value of $k$?",
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~25s):** Equating gives $x^2-4x+(k-3)=0$, and one shared point forces $16-4(k-3)=0$, so $k=7$.\n\n**The Full Solution:**\nStep 1: Set $x^2-6x+k=-2x+3$, which rearranges to $x^2-4x+(k-3)=0$.\nStep 2: One shared point means the discriminant is $0$: $(-4)^2-4(1)(k-3)=0$, or $16-4(k-3)=0$.\nStep 3: So $k-3=4$ and $k=7$. Check: with $k=7$, $x^2-4x+4=(x-2)^2=0$ has the single solution $x=2$, and both graphs pass through $(2,-1)$ ✓\n\n**Common Mistakes:**\n* $3$: sets $k-3=0$ instead of $k-3=4$.\n* $4$: stops at $k-3=4$ and reports that value as $k$.\n* $-1$: solves $k-3=-4$, using the wrong sign when dividing by $-4$.\n\n**Test Day Takeaway:** Move the line to the other side before touching the discriminant — the constant term becomes a difference, not the original constant."
+}

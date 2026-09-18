@@ -1,0 +1,49 @@
+{
+  "id": "bank-am-231",
+  "question": "The figure shows the graph of $y=f(x)$, and a firmware update raises every output by 5, producing the function $g$ with $g(x)=f(x)+5$. Which equation defines $g$?",
+  "diagram": {
+    "type": "absoluteValue",
+    "params": {
+      "vertex": [
+        2,
+        -3
+      ],
+      "slope": 1,
+      "showPoints": [
+        [
+          -1,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$g(x)=|x+2|+2$"
+    },
+    {
+      "id": "B",
+      "text": "$g(x)=|x-2|+2$"
+    },
+    {
+      "id": "C",
+      "text": "$g(x)=|x-2|-8$"
+    },
+    {
+      "id": "D",
+      "text": "$g(x)=|x+3|-3$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "flips the sign inside the absolute value, moving the vertex to x = -2",
+    "C": "subtracts 5 from f instead of adding it, giving a vertex at (2, -8)",
+    "D": "applies the 5 to the input instead of the output: f(x + 5) = |x + 3| - 3"
+  },
+  "explanation": "**SAT Pattern: Function from Shifted Graph**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The drawn graph is $f(x)=|x-2|-3$, so adding 5 raises the vertex to $(2,2)$: $g(x)=|x-2|+2$.\n\n**The Full Solution:**\nStep 1: The graph has a V with its corner at $(2,-3)$ and arms of slope $\\pm 1$, so $f(x)=|x-2|-3$.\nStep 2: Adding 5 to every output raises the whole graph 5 units: $g(x)=|x-2|-3+5$.\nStep 3: Simplifying gives $g(x)=|x-2|+2$. Check: $f(5)=0$ from the graph, and $g(5)=3=0+5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($g(x)=|x+2|+2$): reads the corner at $x=-2$, reversing the sign inside the bars.\n* Choice C ($g(x)=|x-2|-8$): subtracts 5 instead of adding it.\n* Choice D ($g(x)=|x+3|-3$): adds the 5 inside the function, computing $f(x+5)$ instead of $f(x)+5$.\n\n**Test Day Takeaway:** Adding a constant to a function moves the whole graph up; the horizontal position of the corner does not change."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-293",
+  "question": "A thermocline record accepts a temperature offset $x$, in degrees Celsius, exactly when the offset satisfies $|x - a| = 11$, where $a$ is a positive constant. The two accepted offsets are $-3$ and $b$. What is the value of $a + b$?",
+  "correctAnswer": "27",
+  "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**The correct answer is $27$.**\n\n**The Fast Way (~30s):** Since $a$ is positive, $-3$ must be the lower offset $a - 11$, so $a = 8$; the other offset is $8 + 11 = 19$, and $8 + 19 = 27$.\n\n**The Full Solution:**\nStep 1: The two accepted offsets sit $11$ below and $11$ above $a$, so the smaller one is $a - 11$.\nStep 2: If $-3$ were the larger offset, then $a + 11 = -3$ and $a = -14$, which is not positive; so $-3$ is the smaller offset, $a - 11 = -3$, and $a = 8$.\nStep 3: The other offset is $b = a + 11 = 19$, so $a + b = 8 + 19 = 27$. Check: $|-3 - 8| = 11$ and $|19 - 8| = 11$ ✓\n\n**Common Mistakes:** Answering $8$ stops at $a$; answering $19$ stops at $b$; answering $5$ adds $a$ to the given offset $-3$ instead of to $b$.\n\n**Test Day Takeaway:** The two solutions of $|x - a| = d$ straddle $a$, so $a$ is their midpoint and the two are $2d$ apart."
+}

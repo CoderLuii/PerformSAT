@@ -1,0 +1,56 @@
+{
+ "id": 16,
+ "question": "The bar graph gives a rower's fatigue index on four days of a seven-day training block. The index on day $x$ is modeled by $y = 6x^2 - 48x + 102$. What is the minimum index value this model predicts during the block?",
+ "diagram": {
+  "type": "barChart",
+  "params": {
+   "data": [
+    {
+     "label": "Day 1",
+     "value": 60
+    },
+    {
+     "label": "Day 2",
+     "value": 30
+    },
+    {
+     "label": "Day 6",
+     "value": 30
+    },
+    {
+     "label": "Day 7",
+     "value": 60
+    }
+   ],
+   "xAxisLabel": "Training day",
+   "yAxisLabel": "Fatigue index",
+   "yMax": 70,
+   "yStep": 10
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$102$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the day the minimum occurs, x = 4, instead of the index value there",
+  "C": "reads the shortest bar in the graph, 30, instead of the model's minimum",
+  "D": "reads the constant term 102 of the standard form as the minimum"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Quadratic — Completing the Square**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $6x^2 - 48x + 102 = 6(x - 4)^2 + 6$, so the least value the model takes is $6$.\n\n**The Full Solution:**\nStep 1: Factor $6$ out of the variable terms: $6(x^2 - 8x) + 102$.\nStep 2: Complete the square inside: $x^2 - 8x = (x - 4)^2 - 16$, so the model is $6[(x - 4)^2 - 16] + 102 = 6(x - 4)^2 - 96 + 102$.\nStep 3: That simplifies to $6(x - 4)^2 + 6$. Since $6(x - 4)^2$ is never negative, the smallest value of $y$ is $6$, reached on day $4$.\nCheck: substituting $x = 4$ into the original gives $6(16) - 48(4) + 102 = 96 - 192 + 102 = 6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): this is the day on which the minimum occurs, the $x$-coordinate of the vertex, not the index value.\n* Choice C ($30$): the lowest bar shown, but days $3$ through $5$ are not charted, and the model dips well below $30$ there.\n* Choice D ($102$): the constant term is the value at day $0$, before the block began, not the minimum.\n\n**Test Day Takeaway:** Factor the leading coefficient out of the $x$ terms only — the number left outside the square is the minimum, and the number inside is where it happens."
+}

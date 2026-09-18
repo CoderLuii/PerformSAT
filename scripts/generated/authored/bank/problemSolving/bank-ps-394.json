@@ -1,0 +1,56 @@
+{
+ "id": "bank-ps-394",
+ "question": "A coastal fog network has five gauges. The table gives last month's measurable-fog hours for four of them. If the network averaged $148$ hours per gauge last month, how many hours did the fifth gauge record?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Gauge",
+    "Fog hours"
+   ],
+   "rows": [
+    [
+     "Harbor Point",
+     "132"
+    ],
+    [
+     "Cape Light",
+     "156"
+    ],
+    [
+     "Dune Ridge",
+     "141"
+    ],
+    [
+     "Bay Mouth",
+     "160"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$30.2$"
+  },
+  {
+   "id": "B",
+   "text": "$147.25$"
+  },
+  {
+   "id": "C",
+   "text": "$148$"
+  },
+  {
+   "id": "D",
+   "text": "$151$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "divides the shortfall $740 - 589 = 151$ by all five gauges, giving $30.2$",
+  "B": "averages only the four gauges shown, $\\frac{589}{4} = 147.25$",
+  "C": "repeats the given network average of $148$ hours"
+ },
+ "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice D is correct.** Five gauges averaging $148$ hours total $740$ hours; the four shown total $589$, so the fifth recorded $151$ hours.\n\n**The Fast Way (~35s):** $5(148) = 740$ and $132 + 156 + 141 + 160 = 589$, so the missing gauge recorded $740 - 589 = 151$ hours.\n\n**The Full Solution:**\n\nStep 1: Convert the network average into a total. With five gauges averaging $148$ hours, the total is $5(148) = 740$ hours.\n\nStep 2: Add the four tabled values: $132 + 156 + 141 + 160 = 589$ hours.\n\nStep 3: Subtract: $740 - 589 = 151$ hours at the fifth gauge. Check: $\\frac{589 + 151}{5} = \\frac{740}{5} = 148$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($30.2$): divides the missing total by all five gauges. The shortfall belongs to one gauge, not to the network.\n* Choice B ($147.25$): averages the four gauges in the table, answering a question about four gauges instead of five.\n* Choice C ($148$): repeats the network average. A single gauge equals the mean only by coincidence.\n\n**Test Day Takeaway:** Multiply the mean by the full count first -- the required total is the only number that lets a subtraction find the missing entry."
+}

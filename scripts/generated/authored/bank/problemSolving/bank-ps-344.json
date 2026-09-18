@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-344",
+  "question": "The number of rooms occupied at an inn on each of $9$ nights was $23$, $31$, $27$, $31$, $25$, $31$, $29$, $24$, and $28$. What is the mode of these numbers?",
+  "correctAnswer": "31",
+  "explanation": "**SAT Pattern: Mode from List**\n\n**The correct answer is $31$.**\n\n**The Fast Way (~10s):** Only $31$ appears more than once — three times — so it is the mode.\n\n**The Full Solution:**\nStep 1: The mode is the value that occurs most often in the list.\nStep 2: Tally the values: $31$ appears three times, and $23$, $24$, $25$, $27$, $28$, and $29$ each appear once.\nStep 3: The most frequent value is $31$ rooms. Check: the three $31$s account for three of the nine nights, more than any other value. $\\checkmark$\n\n**Common Mistakes:** Reporting $3$, the number of times the mode occurs, rather than the value itself. Sorting the list and reporting the middle value gives the median, $28$. Averaging the nine values gives about $27.67$, the mean.\n\n**Test Day Takeaway:** Mode, median, and mean answer three different questions. \"Occurs most often\" is a count of repeats, and the answer is always one of the listed values."
+}

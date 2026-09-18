@@ -1,0 +1,49 @@
+{
+  "question": "A student loan of $\\$12{,}000$ accrues $4\\%$ annual interest, compounded semiannually. The table gives the amount owed, in dollars, after each of the first three six-month periods. Which equation gives the amount owed, $B$ dollars, $t$ years after the loan was issued?",
+  "questionTable": {
+    "headers": [
+      "Six-month periods",
+      "Amount owed (dollars)"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$12{,}240.00$"
+      ],
+      [
+        "$2$",
+        "$12{,}484.80$"
+      ],
+      [
+        "$3$",
+        "$12{,}734.50$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$B=12000(1.02)^{t}$"
+    },
+    {
+      "id": "B",
+      "text": "$B=12000(1.02)^{2t}$"
+    },
+    {
+      "id": "C",
+      "text": "$B=12000(1.04)^{t/2}$"
+    },
+    {
+      "id": "D",
+      "text": "$B=12000(1.04)^{2t}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applied the semiannual factor once per year instead of twice",
+    "C": "divided the exponent by 2 instead of multiplying, and used the annual factor",
+    "D": "used the annual factor 1.04 for each six-month period"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Semiannual compounding uses half the rate, $2\\%$, twice a year, so $B=12000(1.02)^{2t}$.\n\n**The Full Solution:**\nStep 1: The periodic rate is $\\dfrac{0.04}{2}=0.02$, so each six-month period multiplies the balance by $1.02$, matching the table: $12000\\cdot 1.02=12{,}240$.\nStep 2: In $t$ years there are $2t$ six-month periods.\nStep 3: So $B=12000(1.02)^{2t}$. Check at $t=1.5$, three periods: $12000(1.02)^{3}=12{,}734.50$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($B=12000(1.02)^{t}$): applies the semiannual factor once per year.\n* Choice C ($B=12000(1.04)^{t/2}$): divides the exponent by $2$ instead of multiplying and keeps the annual rate.\n* Choice D ($B=12000(1.04)^{2t}$): uses the full annual rate for each six-month period.\n\n**Test Day Takeaway:** Divide the rate by the number of periods per year and multiply the exponent by that same number.",
+  "id": "bank-am-273"
+}

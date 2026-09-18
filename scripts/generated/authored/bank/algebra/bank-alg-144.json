@@ -1,0 +1,57 @@
+{
+  "id": "bank-alg-144",
+  "question": "The graph shows the estimated population $y$, in thousands, of a town $x$ years after 2010, based on a linear model. Which of the following is the best interpretation of the slope of the graph?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 2,
+      "yIntercept": 24,
+      "xRange": [
+        0,
+        10
+      ],
+      "yRange": [
+        0,
+        50
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 10,
+      "gridInterval": 2,
+      "showPoints": [
+        [
+          0,
+          24
+        ],
+        [
+          5,
+          34
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The population of the town increases by $2$ people each year."
+    },
+    {
+      "id": "B",
+      "text": "The population of the town increases by $2{,}000$ people each year."
+    },
+    {
+      "id": "C",
+      "text": "The population of the town was $2{,}000$ in 2010."
+    },
+    {
+      "id": "D",
+      "text": "The population of the town increases by $24{,}000$ people each year."
+    }
+  ],
+  "distractorNotes": {
+    "A": "ignores that y is in thousands",
+    "C": "assigns the slope to the intercept role (2010 population is 24,000)",
+    "D": "uses the y-intercept as the yearly rate"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** From $(0, 24)$ to $(5, 34)$ the line rises $10$ over $5$ years: slope $2$. But $y$ is in thousands, so the population grows by $2 \\times 1{,}000 = 2{,}000$ people per year.\n\n**The Full Solution:**\nStep 1: Slope $= \\frac{34 - 24}{5 - 0} = 2$, in units of \"thousands of people per year.\"\nStep 2: Convert the units: $2$ thousand people per year is $2{,}000$ people per year.\nStep 3: Check: over $10$ years the model predicts $24 + 2(10) = 44$ thousand, an increase of $20{,}000$ people, which is $2{,}000$ per year. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reads the slope as $2$ people, ignoring that the vertical axis is measured in thousands.\n* Choice C: uses the slope's number as a starting population; the 2010 population is the intercept, $24{,}000$.\n* Choice D: uses the intercept, $24$ thousand, as though it were the yearly change.\n\n**Test Day Takeaway:** Read the axis label before interpreting a slope. \"In thousands\" multiplies every $y$-value, including the slope, by $1{,}000$."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-494",
+  "question": "A hydrant flushing run takes $6$ minutes for each hydrant plus $31$ minutes to set up the diffuser. If one run lasts $181$ minutes in all, how many hydrants are flushed?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$25$"
+    },
+    {
+      "id": "C",
+      "text": "$30$"
+    },
+    {
+      "id": "D",
+      "text": "$150$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the 6-minute per-hydrant rate instead of the number of hydrants",
+    "C": "divides 181 by 6 and rounds down to 30, ignoring the 31 minutes of setup",
+    "D": "reports the 150 minutes spent flushing rather than the number of hydrants"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Take out the setup and divide by the per-hydrant time: $\\frac{181 - 31}{6} = \\frac{150}{6} = 25$.\n\n**The Full Solution:**\nStep 1: Model the run: $31 + 6h = 181$, where $h$ is the number of hydrants flushed.\nStep 2: Subtract the one-time setup: $6h = 150$.\nStep 3: Divide by the per-hydrant time: $h = 25$. Check: $31 + 6(25) = 31 + 150 = 181$ minutes. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): reports the minutes per hydrant rather than the number of hydrants.\n* Choice C ($30$): divides $181$ by $6$ and rounds down, which charges the setup minutes to the hydrants.\n* Choice D ($150$): reports the minutes spent flushing instead of how many hydrants those minutes covered.\n\n**Test Day Takeaway:** Setup time belongs to the run as a whole, not to any single unit — remove it before dividing, or every per-unit answer comes out too large."
+}

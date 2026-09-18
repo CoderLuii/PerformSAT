@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-070",
+  "question": "A bicycle repair shop's monthly profit, in dollars, is modeled by the function $P(r) = 42r - 3150$, where $r$ is the number of repairs completed that month. What is the minimum number of repairs the shop must complete in a month for its monthly profit to be at least $\\$0$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$42$"
+    },
+    {
+      "id": "B",
+      "text": "$75$"
+    },
+    {
+      "id": "C",
+      "text": "$76$"
+    },
+    {
+      "id": "D",
+      "text": "$3108$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the per-repair rate",
+    "C": "assumes profit must be strictly positive",
+    "D": "subtracts 42 from 3150 instead of dividing"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Break-Even from Profit Function**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Profit is at least $0$ when $42r - 3150 \\ge 0$, so $r \\ge \\frac{3150}{42} = 75$. The minimum is $75$ repairs.\n\n**The Full Solution:**\nStep 1: \"At least $\\$0$\" translates to $P(r) \\ge 0$: $42r - 3150 \\ge 0$.\nStep 2: Add $3150$ and divide by $42$: $r \\ge 75$.\nStep 3: Since $75$ is a whole number of repairs, it is the minimum. Check: $P(75) = 42(75) - 3150 = 0$ and $P(74) = -42 < 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($42$): reports the per-repair rate instead of solving for $r$.\n* Choice C ($76$): assumes the profit must be strictly positive, but $P(75) = 0$ already satisfies \"at least $\\$0$.\"\n* Choice D ($3108$): subtracts $42$ from $3150$ instead of dividing.\n\n**Test Day Takeaway:** Break-even is where profit equals zero; solve $P(r) = 0$ and then read the inequality's direction to decide whether that boundary value itself counts."
+}

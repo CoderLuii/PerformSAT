@@ -1,3 +1,4 @@
+/* eslint-disable no-eval -- offline content validator run with node; evaluates generated snippets, never user input */
 /**
  * SAT Patterns Quality Check
  *

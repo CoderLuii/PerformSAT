@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "A vertical post $4$ feet tall stands beneath a straight roof rafter that rises from the wall plate. The rafter reaches a height of $10$ feet at a horizontal distance of $35$ feet from the wall plate. How far, in feet, from the wall plate does the post meet the rafter?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$14$"
+  },
+  {
+   "id": "C",
+   "text": "$21$"
+  },
+  {
+   "id": "D",
+   "text": "$87.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "copies the post height as the horizontal distance",
+  "C": "measures 35 - 14 = 21 back from the far end of the rafter instead of from the wall plate",
+  "D": "inverts the proportion, computing 35 times 10/4"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The post is $\\frac{4}{10}$ of the rafter's full rise, so it stands $\\frac{4}{10}(35) = 14$ feet from the wall plate.\n\n**The Full Solution:**\nStep 1: The rafter, the ground, and any vertical post form two right triangles that share the angle at the wall plate, so the triangles are similar.\nStep 2: Corresponding sides are proportional: $\\frac{\\text{post height}}{\\text{full rise}} = \\frac{\\text{distance to post}}{\\text{full run}}$, that is $\\frac{4}{10} = \\frac{d}{35}$.\nStep 3: Cross multiplying gives $10d = 140$, so $d = 14$ feet; check the rafter's slope: $\\frac{10}{35} = \\frac{2}{7}$, and $\\frac{2}{7}(14) = 4$ feet of height at $d = 14$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reuses the post's height as its distance, which would only be right if the rafter rose at exactly $45^\\circ$.\n* Choice C ($21$): computes $35 - 14 = 21$, measuring back from the tall end of the rafter rather than from the wall plate the question names.\n* Choice D ($87.5$): sets up the proportion upside down as $\\frac{10}{4} = \\frac{d}{35}$, placing the post more than twice as far out as the rafter's whole $35$-foot run.\n\n**Test Day Takeaway:** Write the proportion with matching parts on matching sides — heights over heights, distances over distances — before you cross multiply."
+}

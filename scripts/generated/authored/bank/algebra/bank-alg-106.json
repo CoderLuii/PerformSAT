@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-106",
+ "question": "A ferry operator prices crossings with the relationship $\\frac{c(f - 3)}{2} + 4f = 5c + 13$, where $f$ counts the crossings completed in one day and $c$ is a constant fare adjustment, in dollars. The relationship holds when $f = 7$. What is the value of $c$?",
+ "correctAnswer": "5",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~40s):** At $f = 7$ the left side is $2c + 28$, so $2c + 28 = 5c + 13$ and $c = 5$.\n\n**The Full Solution:**\n\nStep 1: Substitute $f = 7$: $\\frac{c(7 - 3)}{2} + 4(7) = 5c + 13$.\n\nStep 2: Simplify the left side: $\\frac{4c}{2} + 28 = 2c + 28$, so the equation is $2c + 28 = 5c + 13$.\n\nStep 3: Subtract $2c$ from both sides and subtract $13$: $15 = 3c$, so $c = 5$. Check: $\\frac{5(4)}{2} + 28 = 10 + 28 = 38$ and $5(5) + 13 = 38$.\n\n**Common Mistakes:**\n\n* $15$ — stopping at $3c = 15$ and reporting the product instead of $c$.\n* $\\frac{41}{3}$ — adding the constants as $28 + 13$ instead of subtracting, giving $3c = 41$.\n* $9$ — reading the numerator $c(7 - 3)$ as $7c - 3$, distributing the $c$ to the first term only.\n\n**Test Day Takeaway:** Substitute the given value into the parentheses before touching the fraction; the numerator often collapses to a clean multiple of the unknown."
+}

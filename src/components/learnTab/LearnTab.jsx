@@ -85,6 +85,7 @@ const LearnTab = ({ chaptersRead = {}, onOpenChapter }) => {
 
       return { ...section, units: numberedUnits, total, completed };
     }).filter((s) => s.total > 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- isRead is a per-render arrow whose only input is chaptersRead, already a dependency; adding it would recompute every render
   }, [chaptersRead]);
 
   return (

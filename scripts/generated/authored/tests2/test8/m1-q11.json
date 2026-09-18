@@ -1,0 +1,57 @@
+{
+  "id": 11,
+  "question": "The table summarizes the numbers of tracks on the 26 albums in a studio archive. Four more albums, each with 11 tracks, are added to the archive. What is the mode of the numbers of tracks for the 30 albums?",
+  "questionTable": {
+    "headers": [
+      "Number of tracks",
+      "Number of albums"
+    ],
+    "rows": [
+      [
+        "8",
+        "3"
+      ],
+      [
+        "9",
+        "8"
+      ],
+      [
+        "10",
+        "5"
+      ],
+      [
+        "11",
+        "6"
+      ],
+      [
+        "12",
+        "4"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$9$"
+    },
+    {
+      "id": "B",
+      "text": "$10$"
+    },
+    {
+      "id": "C",
+      "text": "$11$"
+    },
+    {
+      "id": "D",
+      "text": "$12$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "gives the mode of the original 26 albums, ignoring the four albums added",
+    "B": "reports the median of the 30 albums instead of the mode",
+    "D": "reports the greatest number of tracks listed rather than the most frequent"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Mode of a Data Set**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Adding four albums to the $11$-track row raises its count from $6$ to $10$, which beats the $8$ albums with $9$ tracks, so the mode is $11$.\n\n**The Full Solution:**\nStep 1: Read the frequencies from the table: $8$ tracks appears $3$ times, $9$ appears $8$ times, $10$ appears $5$ times, $11$ appears $6$ times, and $12$ appears $4$ times, totaling $26$ albums.\nStep 2: Update the row that changes. Four albums with $11$ tracks each raise that frequency from $6$ to $6 + 4 = 10$; every other row is unchanged.\nStep 3: The new frequencies are $3$, $8$, $5$, $10$, $4$, and the largest is $10$, which belongs to $11$ tracks. Check: the frequencies now sum to $3 + 8 + 5 + 10 + 4 = 30$ albums, matching the count in the question, and no other value occurs $10$ or more times. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): the mode before the change. With $8$ albums, $9$ tracks led the original list, but $11$ tracks now occurs $10$ times.\n* Choice B ($10$): the median. The $15$th and $16$th values in the ordered list of $30$ are both $10$, so $10$ is the middle, not the most frequent.\n* Choice D ($12$): the largest value in the left column. Mode asks which value occurs most often, not which value is greatest.\n\n**Test Day Takeaway:** In a frequency table the mode lives in the second column — find the largest frequency, then read the value beside it. Update the frequency before you compare."
+}

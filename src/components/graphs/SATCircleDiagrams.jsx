@@ -85,22 +85,22 @@ export const CircleWithSector = ({
       height={height}
       style={SAT_FIGURE_STYLE}
     >
-      {/* Full circle (faded background) */}
+      {/* Official Bluebook ink (2026-08-13 restyle): black line art only —
+          no fills, no color. Emphasis comes from the radii + angle arc. */}
       <circle
         cx={centerX}
         cy={centerY}
         r={radius}
-        fill="#f9fafb"
-        stroke="#d1d5db"
+        fill="none"
+        stroke="#000"
         strokeWidth={1.5}
       />
 
-      {/* Sector fill (blue like lesson) */}
+      {/* Sector boundary (radii drawn below); no fill */}
       <path
         d={sectorPath}
-        fill="#dbeafe"
-        stroke="#2563eb"
-        strokeWidth={2}
+        fill="none"
+        stroke="none"
       />
 
       {/* Radii */}
@@ -109,37 +109,33 @@ export const CircleWithSector = ({
         y1={centerY}
         x2={x1}
         y2={y1}
-        stroke="#1e40af"
-        strokeWidth={2}
+        stroke="#000"
+        strokeWidth={1.5}
       />
       <line
         x1={centerX}
         y1={centerY}
         x2={x2}
         y2={y2}
-        stroke="#1e40af"
-        strokeWidth={2}
+        stroke="#000"
+        strokeWidth={1.5}
       />
 
-      {/* Angle arc (purple like lesson) */}
+      {/* Angle arc near the center */}
       <path
         d={angleArcPath}
         fill="none"
-        stroke="#7c3aed"
-        strokeWidth={2.5}
+        stroke="#000"
+        strokeWidth={1.2}
       />
 
       {/* Center point */}
       <circle
         cx={centerX}
         cy={centerY}
-        r={4}
-        fill="#1e40af"
+        r={2.5}
+        fill="#000"
       />
-
-      {/* Endpoint dots */}
-      <circle cx={x1} cy={y1} r={3} fill="#1e40af" />
-      <circle cx={x2} cy={y2} r={3} fill="#1e40af" />
 
       {/* Center label */}
       <text
@@ -147,9 +143,8 @@ export const CircleWithSector = ({
         y={centerY + 5}
         fontFamily={SAT_FIGURE_FONT}
         fontStyle={isVariableLabel(labelCenter) ? 'italic' : 'normal'}
-        fontSize={14}
-        fontWeight="600"
-        fill="#374151"
+        fontSize={15}
+        fill="#000"
         {...LABEL_HALO}
       >
         {labelCenter}
@@ -161,9 +156,8 @@ export const CircleWithSector = ({
         y={point1LabelY + 5}
         fontFamily={SAT_FIGURE_FONT}
         fontStyle={isVariableLabel(labelPoint1) ? 'italic' : 'normal'}
-        fontSize={14}
-        fontWeight="600"
-        fill="#374151"
+        fontSize={15}
+        fill="#000"
         textAnchor="middle"
         {...LABEL_HALO}
       >
@@ -176,9 +170,8 @@ export const CircleWithSector = ({
         y={point2LabelY + 5}
         fontFamily={SAT_FIGURE_FONT}
         fontStyle={isVariableLabel(labelPoint2) ? 'italic' : 'normal'}
-        fontSize={14}
-        fontWeight="600"
-        fill="#374151"
+        fontSize={15}
+        fill="#000"
         textAnchor="middle"
         {...LABEL_HALO}
       >
@@ -188,7 +181,7 @@ export const CircleWithSector = ({
       {/* Angle label */}
       {showAngleLabel && (() => {
         const labelText = angleLabel || `${centralAngle}°`;
-        const labelFill = "#7c3aed";
+        const labelFill = "#000";
         const labelFont = SAT_FIGURE_FONT;
 
         // Render fractions as stacked numerator/denominator
@@ -202,7 +195,6 @@ export const CircleWithSector = ({
                 y={angleLabelY - 5}
                 fontFamily={labelFont}
                 fontSize={13}
-                fontWeight="600"
                 fontStyle={isVariableLabel(numerator) ? 'italic' : 'normal'}
                 fill={labelFill}
                 textAnchor="middle"
@@ -223,7 +215,6 @@ export const CircleWithSector = ({
                 y={angleLabelY + 14}
                 fontFamily={labelFont}
                 fontSize={13}
-                fontWeight="600"
                 fontStyle={isVariableLabel(denominator) ? 'italic' : 'normal'}
                 fill={labelFill}
                 textAnchor="middle"
@@ -241,7 +232,6 @@ export const CircleWithSector = ({
             y={angleLabelY + 5}
             fontFamily={labelFont}
             fontSize={15}
-            fontWeight="600"
             fontStyle={isVariableLabel(labelText) ? 'italic' : 'normal'}
             fill={labelFill}
             textAnchor="middle"
@@ -260,8 +250,7 @@ export const CircleWithSector = ({
           fontFamily={SAT_FIGURE_FONT}
           fontStyle={isVariableLabel(String(displayRadius)) ? 'italic' : 'normal'}
           fontSize={13}
-          fontWeight="600"
-          fill="#1e40af"
+          fill="#000"
           textAnchor="middle"
           dominantBaseline="central"
           {...LABEL_HALO}
@@ -781,4 +770,6 @@ export const CircleWithInscribedTriangle = ({
   );
 };
 
-export default { CircleWithSector, CircleWithSquare, CircleInscribed, CircleWithInscribedTriangle };
+const SATCircleDiagramsBundle = { CircleWithSector, CircleWithSquare, CircleInscribed, CircleWithInscribedTriangle };
+
+export default SATCircleDiagramsBundle;

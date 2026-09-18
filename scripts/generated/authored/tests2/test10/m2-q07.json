@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A pottery studio breaks even on ceramic planters at exactly two order sizes, and those two order sizes differ by $10$. Daily profit, in dollars, from $x$ planters is $-x^2 + 26x - k$, where $k$ is a positive constant. What is $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$144$"
+  },
+  {
+   "id": "B",
+   "text": "$169$"
+  },
+  {
+   "id": "C",
+   "text": "$260$"
+  },
+  {
+   "id": "D",
+   "text": "$676$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses 13^2 = 169 as the product of the roots and never subtracts 5^2",
+  "C": "multiplies the sum-related value 26 by the gap 10, giving 260",
+  "D": "squares 26, giving 676"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The break-even values are symmetric about $x = \\frac{26}{2} = 13$ and are $10$ apart, so they are $8$ and $18$; their product is $k = 144$.\n\n**The Full Solution:**\nStep 1: Break-even means profit $0$, so the two order sizes are the solutions of $-x^2 + 26x - k = 0$, or equivalently $x^2 - 26x + k = 0$. The two solutions sum to $26$ and multiply to $k$.\nStep 2: Two numbers that sum to $26$ are symmetric about $13$, so write them as $13 - d$ and $13 + d$. They differ by $2d = 10$, so $d = 5$ and the order sizes are $8$ and $18$.\nStep 3: The product of the solutions is $k = 8 \\times 18 = 144$. Check: $-x^2 + 26x - 144 = -(x - 8)(x - 18)$, which is $0$ at $x = 8$ and $x = 18$, and $18 - 8 = 10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($169$): uses $13^2 = 169$, the product you would get if the two order sizes were both $13$. That happens only when the gap is $0$; here you must subtract $5^2$, since $(13 - 5)(13 + 5) = 169 - 25 = 144$.\n* Choice C ($260$): multiplies $26$ by the gap $10$. The gap controls how far the roots sit from $13$, not a factor of $k$.\n* Choice D ($676$): squares $26$. That is the square of the sum of the roots, not their product.\n\n**Test Day Takeaway:** Two roots a fixed distance apart are $\\frac{-b}{2a} \\pm \\frac{d}{2}$; multiply them with the difference-of-squares shortcut instead of running the quadratic formula."
+}

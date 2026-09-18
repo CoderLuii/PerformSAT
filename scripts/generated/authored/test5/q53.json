@@ -1,44 +1,44 @@
 {
-  "id": 553,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 2,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Eadweard Muybridge (1830–1904) was a photographer who studied motion using rows of cameras triggered in rapid sequence.",
-      "His 1878 horse-gait study used a row of cameras to show that a galloping horse briefly has all four hooves off the ground.",
-      "His 1880s project Animal Locomotion applied the same multi-camera method to people walking, running, and climbing.",
-      "In both projects the photographs were taken at fixed intervals so that a single continuous motion could be broken into separate stages.",
-      "Both projects treated sequential photographs as evidence about movement that the unaided eye could not resolve."
-    ],
-    "goal": "The student wants to emphasize a methodological similarity between the 1878 horse-gait study and the 1880s Animal Locomotion project."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Muybridge's 1878 horse-gait study used a row of cameras to show that a galloping horse briefly has all four hooves off the ground at once."
-    },
-    {
-      "id": "B",
-      "text": "Eadweard Muybridge (1830–1904) was a photographer who studied motion by using rows of cameras triggered in rapid sequence."
-    },
-    {
-      "id": "C",
-      "text": "The 1880s project Animal Locomotion applied a multi-camera photographic method to people as they walked, ran, and climbed."
-    },
-    {
-      "id": "D",
-      "text": "Both the 1878 horse-gait study and the 1880s Animal Locomotion project broke a single continuous motion into stages with cameras fired at fixed intervals, treating the resulting sequence as evidence the unaided eye could not resolve."
-    }
+ "id": 553,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 2,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "In the late nineteenth and early twentieth centuries, mountain survey parties photographed glaciers in the Alps and in Alaska from stations they marked and documented.",
+   "The surveyors recorded each station's location and each camera's orientation so that the views could be duplicated later.",
+   "Beginning in the 1990s, research teams returned to many of the documented stations to photograph the same glaciers again.",
+   "The modern teams match the original camera positions and framing, and where possible the season of the original exposure.",
+   "Paired photographs taken decades apart reveal changes in ice extent that no measurements from the earlier period captured."
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The goal is to emphasize what the two projects had in common as a method, so the sentence must name both and identify the shared technique. Choice D does this: both projects broke continuous motion into stages with cameras fired at fixed intervals and treated the sequence as evidence the eye could not resolve. Choices A and C each describe only one project, so neither states a similarity. Choice B introduces Muybridge biographically without comparing the two projects at all.",
-  "_meta": {
-    "anchor": "Eadweard Muybridge — sequential photography; shared method across two motion studies"
+  "goal": "The student wants to emphasize a similarity between the historical surveys and the modern rephotography projects."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Mountain survey parties of the late nineteenth and early twentieth centuries photographed glaciers in both the Alps and Alaska from fixed stations that they carefully marked and thoroughly documented for the record."
+  },
+  {
+   "id": "B",
+   "text": "Beginning in the 1990s, research teams returned to documented survey stations to photograph the same glaciers again."
+  },
+  {
+   "id": "C",
+   "text": "Paired photographs taken decades apart reveal changes in ice extent that no measurements from the earlier period captured."
+  },
+  {
+   "id": "D",
+   "text": "Like the historical surveyors, who marked their stations and recorded each camera's orientation, the modern teams match those documented positions and framings, making images taken decades apart comparable."
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The goal asks for a similarity, and D holds the two efforts up together on the shared trait: both work from precisely documented camera stations, the surveyors recording them and the modern teams matching them.\n\n**The Full Solution:**\n- Emphasizing a similarity requires naming both parties and the practice they share in a single comparative statement.\n- Choice D does so with an explicit \"Like\" frame: historical parties marked stations and recorded orientations; modern teams match those stations and framing.\n- It also states why the shared discipline matters — images taken decades apart become comparable — drawing on the notes' final point without abandoning the comparison.\n\n**Why the other choices are wrong:**\n- A: It reports the historical half only; no similarity can emerge from one side.\n- B: It reports the modern half only, leaving the parallel implicit at best.\n- C: It states the payoff of the paired photographs but compares nothing about how the two efforts worked.",
+ "_meta": {
+  "anchor": "glacier repeat photography — documented camera stations shared across a century"
+ }
 }

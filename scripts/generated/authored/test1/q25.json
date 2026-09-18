@@ -6,26 +6,26 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 1,
- "passage": "For years, the standard way to increase a lithium-ion battery's capacity was to pack more active material into each electrode. Doing so, engineers found, also made the electrodes thicker, which slowed the movement of ions and limited how fast the battery could be charged. ______ recent designs cut microscopic channels through the electrode, keeping the added capacity while giving ions a quicker path through the material.",
+ "passage": "In many northern hardwood forests, there were no earthworms at all until anglers and gardeners introduced European species. The invaders consume the thick layer of decaying leaves that normally blankets the forest floor. ______ woodland wildflowers and tree seedlings that germinate in that spongy litter are losing the seedbed they require, and their numbers are falling in heavily invaded stands.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "However,"
+   "text": "Nevertheless,"
   },
   {
    "id": "B",
-   "text": "Likewise,"
+   "text": "Similarly,"
   },
   {
    "id": "C",
-   "text": "For instance,"
+   "text": "In the meantime,"
   },
   {
    "id": "D",
-   "text": "Therefore,"
+   "text": "As a result,"
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A. The sentence before the blank states a drawback—thicker electrodes slow the ions and limit charging speed—and the sentence after it describes designs that get around that drawback while keeping the benefit. That is a contrast, which \"However,\" marks. \"Likewise\" would signal a similarity rather than a reversal; \"For instance\" would introduce an example of the problem, not a solution to it; and \"Therefore\" would make the new designs a consequence of the slowdown rather than a response that overcomes it."
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The second sentence is the consequence of the first, and \"As a result,\" marks exactly that cause-effect relationship.\n\n**The Full Solution:**\n- The logical chain runs from cause to effect: earthworms consume the leaf litter, and the plants that germinate in that litter therefore lose their seedbed and decline.\n- A consequence transition is the only one that preserves the chain.\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" signals that the decline happens despite the litter loss, inverting the causal link.\n- B: \"Similarly\" treats the plants' decline as a parallel case rather than a downstream effect.\n- C: \"In the meantime\" reduces a cause-effect relationship to mere simultaneity."
 }

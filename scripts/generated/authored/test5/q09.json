@@ -1,34 +1,34 @@
 {
-  "id": 509,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "For decades, engineers who studied tidal power treated it mainly as a question of barrages—dams stretched across an estuary that generate electricity as the tide flows in and out through built-in turbines, as at the Rance estuary in France, where such a station has operated since 1966. More recent work has broadened that picture. Rather than damming whole estuaries, engineers now design tidal-stream turbines, machines resembling underwater windmills that are anchored in fast coastal currents to draw energy from moving water directly. Because these turbines can be installed one at a time and disturb the seabed and migrating fish far less than a barrage does, several engineers argue that tidal-stream designs, not barrages, represent the more practical future of tidal power.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Tidal power is best understood as the practice of building barrages across estuaries to capture electricity from the water that flows in and out with the rising and falling tide."
-    },
-    {
-      "id": "B",
-      "text": "More recent engineering work reframes tidal power, presenting free-standing tidal-stream turbines rather than estuary barrages as the more practical way to generate electricity from the tides."
-    },
-    {
-      "id": "C",
-      "text": "The tidal station at the Rance estuary was built mainly to test whether turbines could survive the fast coastal currents that newer tidal-stream designs depend on."
-    },
-    {
-      "id": "D",
-      "text": "Tidal-stream turbines are now known to produce far more electricity than any barrage ever could, and they have made estuary barrages effectively obsolete."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage opens with an older outlook—that tidal power means building barrages across estuaries, as at the Rance—and then revises it: engineers now favor tidal-stream turbines, which can be added one at a time and disturb the environment less. The main idea is this shift from barrages to free-standing turbines as the more practical approach. Choice A restates only the older view the passage is moving beyond. Choice C invents a specific motive for the Rance station that the passage never states. Choice D overstates the case, claiming barrages are obsolete and outproduced, a comparison the passage does not make.",
-  "_meta": {
-    "anchor": "Rance tidal barrage vs. tidal-stream turbines — engineering reappraisal of tidal power"
+ "id": 509,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "Early in the fourth century CE, a mailbag was abandoned in a ruined watchtower west of Dunhuang, in what is now northwestern China. The letters inside, written in Sogdian by merchants from Central Asia, were never delivered — which is why they survive. Known as the Ancient Letters, they record prices, debts, consignments of musk and cloth, and anxious family news from a trading community scattered across a dozen towns. Historians prize the letters less for the goods they mention than for the workings they expose: credit extended across months of caravan travel, agents maintained in distant markets, and news relayed along the same routes that carried the merchandise.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The Ancient Letters are valuable to historians chiefly because they record the prices that luxury goods such as musk commanded in the markets of the fourth century."
+  },
+  {
+   "id": "B",
+   "text": "A cache of undelivered letters is prized because it reveals how a far-flung trading network actually operated, not merely what it traded."
+  },
+  {
+   "id": "C",
+   "text": "The abandonment of the mailbag near Dunhuang shows that long-distance trade in Central Asia had collapsed by the fourth century."
+  },
+  {
+   "id": "D",
+   "text": "Merchants in the fourth century relied on letters mainly to stay in contact with family members left behind in distant towns."
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The final sentence delivers the text's verdict: historians value the letters \"less for the goods they mention than for the workings they expose\" — credit, agents, and information moving through a scattered network.\n\n**The Full Solution:**\n- The first half of the text explains what the letters are and why they survive: an undelivered fourth-century mailbag.\n- The middle sentence inventories their contents: prices, debts, consignments, family news.\n- The last sentence establishes the main idea by ranking those contents: the letters' real value lies in what they show about how the network functioned — credit across months of travel, agents in distant markets, news moving with the goods. Choice B captures that hierarchy.\n\n**Why the other choices are wrong:**\n- A: It elevates the very detail the text explicitly subordinates; prices matter \"less\" than the network's workings.\n- C: It draws a collapse from a single lost mailbag, a conclusion nothing in the text supports.\n- D: It promotes family news to the letters' main function, though the text treats it as one item among commercial records.",
+ "_meta": {
+  "anchor": "Sogdian Ancient Letters — undelivered mail revealing the workings of a trade network"
+ }
 }

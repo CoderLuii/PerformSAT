@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-191",
+  "question": "A chemist determines that $63$ grams of a certain compound is $28\\%$ of the total mass of a mixture. What is the total mass, in grams, of the mixture?",
+  "correctAnswer": "225",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**The correct answer is $225$.**\n\n**The Fast Way (~10s):** $0.28m = 63$, so $m = \\frac{63}{0.28} = 225$.\n\n**The Full Solution:**\nStep 1: Let $m$ be the total mass. \"$63$ grams is $28\\%$ of $m$\" gives $0.28m = 63$.\nStep 2: Divide: $m = \\frac{63}{0.28} = \\frac{6300}{28} = 225$.\nStep 3: Check: $28\\%$ of $225$ is $0.28 \\times 225 = 63$. $\\checkmark$\n\n**Common Mistakes:** Multiplying instead of dividing, $63 \\times 0.28 = 17.64$; dividing by $28$ rather than $0.28$, which gives $2.25$; or multiplying $63 \\times 28 = 1764$.\n\n**Test Day Takeaway:** \"Part is $p\\%$ of whole\" is one equation: $\\frac{p}{100} \\cdot \\text{whole} = \\text{part}$. Solve for whichever quantity is missing."
+}

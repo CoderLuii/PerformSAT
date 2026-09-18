@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "A theater's average cost per printed program is modeled by $C = \\frac{450 + 3n}{n}$ dollars, where $n$ is the number of programs printed. How many values of $n$ give an average cost of exactly 3 dollars per program?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Zero"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "distractorNotes": {
+  "B": "drops the 3n term and solves 450/n = 3, reporting n = 150",
+  "C": "multiplies the right side by n twice, turning the equation into 450 + 3n = 3n^2 and counting the two roots of that quadratic",
+  "D": "cancels the 3n against the 3 and concludes the equation is an identity satisfied by every n"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Rational Equation with No Solution**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Split the model: $C = \\frac{450}{n} + 3$. The fixed \\$450 always adds something positive, so $C$ is greater than $3$ for every $n$ and never equals $3$.\n\n**The Full Solution:**\nStep 1: Set the model equal to $3$: $\\frac{450 + 3n}{n} = 3$.\nStep 2: Multiply both sides by $n$ (allowed, since $n \\neq 0$ for a printing run): $450 + 3n = 3n$.\nStep 3: Subtract $3n$ from both sides: $450 = 0$, which is false, so no value of $n$ works. Check the structure: $\\frac{450 + 3n}{n} = \\frac{450}{n} + 3 > 3$ for every positive $n$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: dropping the $3n$ leaves $\\frac{450}{n} = 3$ and the tidy answer $n = 150$. At $n = 150$ the true average is $\\frac{450 + 450}{150} = 6$ dollars, not $3$.\n* Choice C: multiplying the right side by $n$ a second time produces $450 + 3n = 3n^2$, a quadratic with two roots — but that equation is not the one the model gives.\n* Choice D: cancelling the $3n$ with the $3$ would make both sides identical for every $n$. Terms may only be cancelled as whole factors, and $450 + 3n$ does not factor as $3n$ times anything.\n\n**Test Day Takeaway:** When every variable term cancels and a false numeric statement is left, the equation has no solution. Splitting a rational expression into a constant plus a fraction shows why in one line."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-011",
+ "question": "Net biomass in a survey plot, in kilograms, is modeled by $6x^2 + 11x - 35$, where $x$ is the plot's width in meters and that width is greater than $2$ meters, so the biomass is positive. Factoring the model gives which of the following products?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(2x - 5)(3x + 7)$"
+  },
+  {
+   "id": "B",
+   "text": "$(3x + 5)(2x - 7)$"
+  },
+  {
+   "id": "C",
+   "text": "$(3x - 5)(2x + 7)$"
+  },
+  {
+   "id": "D",
+   "text": "$(6x - 5)(x + 7)$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "swaps which binomial carries the $3$, expanding to $6x^2 - x - 35$",
+  "B": "attaches the signs to the wrong constants, expanding to $6x^2 - 11x - 35$",
+  "D": "puts all of the $6$ in one factor, expanding to $6x^2 + 37x - 35$"
+ },
+ "explanation": "**SAT Pattern: Factor with Leading Coefficient ≠ 1**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Split $11x$ using $21x$ and $-10x$, since $21 \\cdot (-10) = -210 = 6 \\cdot (-35)$: $(3x - 5)(2x + 7)$.\n\n**The Full Solution:**\nStep 1: Multiply the outer coefficients: $6 \\cdot (-35) = -210$, and look for two numbers with product $-210$ and sum $11$. Those are $21$ and $-10$.\nStep 2: Rewrite the middle term: $6x^2 + 21x - 10x - 35$, then group: $3x(2x + 7) - 5(2x + 7)$.\nStep 3: The shared binomial gives $(3x - 5)(2x + 7)$. Check: expanding gives $6x^2 + 21x - 10x - 35 = 6x^2 + 11x - 35$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(2x - 5)(3x + 7)$): the $-5$ and $+7$ are paired with the wrong coefficients, giving a middle term of $-x$.\n* Choice B ($(3x + 5)(2x - 7)$): the signs are swapped, so the middle term becomes $-11x$.\n* Choice D ($(6x - 5)(x + 7)$): a valid pair of factors of $6$ and $-35$, but the cross products give $37x$.\n\n**Test Day Takeaway:** With a leading coefficient above $1$, split the middle term using $a \\cdot c$ before grouping — guessing at binomials is where the sign errors live."
+}

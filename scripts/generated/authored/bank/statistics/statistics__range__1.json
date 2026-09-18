@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "The daily high temperature, in degrees Fahrenheit, in a city on each of $6$ days was $71$, $64$, $78$, $69$, $83$, and $66$. What is the range of these temperatures, in degrees Fahrenheit?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12$"
+    },
+    {
+      "id": "B",
+      "text": "$14$"
+    },
+    {
+      "id": "C",
+      "text": "$19$"
+    },
+    {
+      "id": "D",
+      "text": "$70$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the quartiles, $78 - 66$, giving the interquartile range instead of the range.",
+    "B": "uses $78$, the second-greatest temperature, in place of the greatest.",
+    "D": "reports the median, $\\frac{69 + 71}{2}$, which measures center rather than spread."
+  },
+  "correctAnswer": "C",
+  "hint": "Only the two extreme temperatures matter here.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** The greatest temperature is $83$ and the least is $64$, so the range is $83 - 64 = 19$.\n\n**The Full Solution:**\nStep 1: The range of a data set is the greatest value minus the least value.\nStep 2: Scanning the six temperatures, the greatest is $83$ and the least is $64$.\nStep 3: Range $= 83 - 64 = 19$ degrees Fahrenheit. Check: every temperature listed lies within a $19$-degree band starting at $64$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): subtracts the quartiles, $78 - 66$, giving the interquartile range instead of the range.\n* Choice B ($14$): uses $78$, the second-greatest temperature, in place of the greatest.\n* Choice D ($70$): reports the median, $\\frac{69 + 71}{2}$, which measures center rather than spread.\n\n**Test Day Takeaway:** Range uses the two extremes only. Locate the maximum and minimum before subtracting; the middle values never enter the calculation."
+}

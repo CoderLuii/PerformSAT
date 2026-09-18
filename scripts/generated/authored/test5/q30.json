@@ -1,34 +1,34 @@
 {
-  "id": 530,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "In a tone language such as Cantonese, the pitch on which a syllable is spoken can change its meaning entirely, so that the same string of consonants and vowels may name several unrelated things depending on whether the pitch rises, falls, or stays level. For learners whose first language uses pitch only for emphasis or emotion, this feature is easy to ______: they hear the pitch differences but treat them as expressive coloring rather than as part of the word itself.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "exaggerate"
-    },
-    {
-      "id": "B",
-      "text": "appreciate"
-    },
-    {
-      "id": "C",
-      "text": "overlook"
-    },
-    {
-      "id": "D",
-      "text": "imitate"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"overlook.\" The colon spells out the learners' mistake: they hear the pitch differences but treat them as expressive coloring rather than as meaningful parts of the word, which is precisely what it means to overlook the tonal function. \"Exaggerate\" and \"appreciate\" both imply the learners give the pitch more weight, not less, which contradicts the explanation. \"Imitate\" concerns copying the sounds, not failing to register their grammatical role.",
-  "_meta": {
-    "anchor": "Tone languages; learners overlook pitch as meaning-bearing"
+ "id": 530,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "At the bottom of an ocean trench, seawater presses on every surface with a force of more than a thousand atmospheres. Instruments sent to such depths ride inside housings of thick titanium or glass shaped as spheres or cylinders, forms chosen because they ______ the crushing load evenly across their entire surfaces rather than concentrating it at corners, edges, or seams.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "resist"
+  },
+  {
+   "id": "B",
+   "text": "reduce"
+  },
+  {
+   "id": "C",
+   "text": "distribute"
+  },
+  {
+   "id": "D",
+   "text": "measure"
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The sentence contrasts spreading the load \"evenly across their entire surfaces\" with \"concentrating it\" at weak points, and \"distribute\" is the verb that means to spread across.\n\n**The Full Solution:**\n- The blank's meaning is pinned by its own sentence: whatever the shapes do to the load happens \"evenly across their entire surfaces.\"\n- The explicit alternative — concentrating the load at corners, edges, or seams — is the opposite of spreading it.\n- \"Distribute\" is precisely the term for spreading a force over an area instead of letting it gather at points.\n\n**Why the other choices are wrong:**\n- A: \"Resist\" says the housings withstand pressure but cannot take the modifier \"evenly across their surfaces... rather than concentrating it\"; the sentence describes how the load is arranged, not merely opposed.\n- B: \"Reduce\" is false to the physics and the text; the pressure is undiminished — it is spread, not lessened.\n- D: \"Measure\" belongs to the instruments inside, not to what the housing's shape does with the load.",
+ "_meta": {
+  "anchor": "deep-sea pressure housings — spheres and cylinders spreading load evenly"
+ }
 }

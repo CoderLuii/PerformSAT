@@ -1,0 +1,45 @@
+{
+ "question": "A surveyor records the center of a roundabout and one point on its curb, as listed in the table, where coordinates are in meters. Which equation models the curb in the $xy$-plane?",
+ "questionTable": {
+  "headers": [
+   "Location",
+   "Coordinates"
+  ],
+  "rows": [
+   [
+    "Center of roundabout",
+    "$(6, -2)$"
+   ],
+   [
+    "Point on curb",
+    "$(6, 7)$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x - 6)^2 + (y + 2)^2 = 9$"
+  },
+  {
+   "id": "B",
+   "text": "$(x + 6)^2 + (y + 2)^2 = 81$"
+  },
+  {
+   "id": "C",
+   "text": "$(x - 6)^2 + (y + 2)^2 = 81$"
+  },
+  {
+   "id": "D",
+   "text": "$(x - 6)^2 + (y - 2)^2 = 81$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "puts the radius 9 on the right side instead of r squared = 81",
+  "B": "flips the sign of the center's x-coordinate, writing (x + 6) squared",
+  "D": "flips the sign of the center's y-coordinate, writing (y - 2) squared"
+ },
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The two points share $x = 6$, so $r = 7 - (-2) = 9$; with center $(6, -2)$ the curb is $(x - 6)^2 + (y + 2)^2 = 81$.\n\n**The Full Solution:**\nStep 1: The radius is the distance from the center to any curb point: $\\sqrt{(6 - 6)^2 + (7 - (-2))^2} = \\sqrt{81} = 9$ meters.\nStep 2: Standard form is $(x - h)^2 + (y - k)^2 = r^2$ with $(h, k) = (6, -2)$, so the parentheses read $(x - 6)^2$ and $(y + 2)^2$.\nStep 3: The right side is $r^2 = 9^2 = 81$, giving $(x - 6)^2 + (y + 2)^2 = 81$. Check: substituting $(6, 7)$ gives $0 + 81 = 81$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: places $r = 9$ on the right side; standard form needs $r^2 = 81$.\n* Choice B: writes $(x + 6)^2$, which would put the center at $x = -6$.\n* Choice D: writes $(y - 2)^2$, which would put the center at $y = 2$ instead of $y = -2$.\n\n**Test Day Takeaway:** Subtract the center's coordinates inside the parentheses — a negative coordinate becomes a plus sign — and square the radius on the right.",
+ "id": "bank-geo-101"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-392",
+  "question": "A polling firm contacted $1{,}500$ households, and $72\\%$ of them responded. Of the households that responded, $25\\%$ completed the full questionnaire. How many households completed the full questionnaire?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$270$"
+    },
+    {
+      "id": "B",
+      "text": "$375$"
+    },
+    {
+      "id": "C",
+      "text": "$810$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}080$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "applies $25\\%$ to all $1{,}500$ households",
+    "C": "counts the responding households that did not complete the full questionnaire, $75\\%$ of $1{,}080$",
+    "D": "reports the number of households that responded"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $0.72(1500) = 1080$ responded, and $0.25(1080) = 270$ completed the questionnaire.\n\n**The Full Solution:**\nStep 1: The responding households number $0.72(1500) = 1080$.\nStep 2: One quarter of those responded fully: $0.25(1080) = 270$.\nStep 3: So $270$ households completed the full questionnaire. Check: $0.72(0.25) = 0.18$, and $0.18(1500) = 270$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($375$): applies $25\\%$ to all $1{,}500$ households\n* Choice C ($810$): counts the responding households that did not complete the full questionnaire, $75\\%$ of $1{,}080$\n* Choice D ($1{,}080$): reports the number of households that responded\n\n**Test Day Takeaway:** Chain percents multiply: the fraction of the whole is the product of the two rates, never their sum."
+}

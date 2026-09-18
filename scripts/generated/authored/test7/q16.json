@@ -1,31 +1,31 @@
 {
-  "id": 716,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 1,
-  "passage": "The tissues of living plants record their surroundings in chemical form. The relative amounts of stable isotopes that a plant takes up into its wood, leaves, and seeds shift with local conditions such as temperature, humidity, and the makeup of the surrounding air. When plant material is fossilized rather than allowed to rot, much of that original isotopic signal can stay chemically locked inside the preserved tissue for millions of years. Taken together, these facts imply that even when a fossil plant's outward shape has been altered by mineralization, its tissue may still ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "serve as a chemical archive from which features of the plant’s ancient environment can be reconstructed."
-    },
-    {
-      "id": "B",
-      "text": "be expected to yield a complete reconstruction of every climatic variable that prevailed during the plant’s entire lifetime."
-    },
-    {
-      "id": "C",
-      "text": "make traditional studies of fossil-plant shape largely unnecessary for reconstructing past climates going forward."
-    },
-    {
-      "id": "D",
-      "text": "have lost nearly all of the isotopic information that the living plant once contained."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. If the isotopic signal records local conditions and survives fossilization, then the preserved tissue can act as a chemical archive of the plant's ancient environment. Choice B overreaches by promising a \"complete\" reconstruction of \"every\" variable, which the passage does not warrant. Choice C makes an unsupported claim that the method would replace the study of fossil shape, and Choice D contradicts the passage's statement that much of the signal stays locked inside the tissue."
+ "id": 716,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 1,
+ "passage": "For more than a century, several large military training grounds in Europe have been closed to farming, construction, and most visitors. Ecological surveys of these areas keep finding what the surrounding countryside has lost: rare grassland butterflies persist in the ranges' rough grass, ground-nesting birds breed undisturbed, and wildflowers grow in densities unseen on neighboring farmland for decades. The closures were imposed for safety, not for conservation, yet taken together the surveys imply that the training grounds may ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "function, in effect, as accidental nature reserves, sheltering species that farming and development have displaced from the surrounding countryside."
+  },
+  {
+   "id": "B",
+   "text": "support rare butterflies and ground-nesting birds in greater numbers than deliberately managed nature reserves do."
+  },
+  {
+   "id": "C",
+   "text": "owe their ecological value entirely to the exclusion of visitors rather than to the exclusion of farming."
+  },
+  {
+   "id": "D",
+   "text": "retain their ecological value entirely undiminished even if the land were reopened to intensive farming as soon as military training moved elsewhere."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The surveys document species thriving inside the closed grounds that the surrounding countryside \"has lost,\" and the closing sentence stresses the closures were accidental to conservation — so the modest conclusion is that the grounds function, in effect, as accidental reserves.\n\n**The Full Solution:**\n- The evidence: butterflies, ground-nesting birds, and wildflowers persist inside areas closed to farming, construction, and visitors.\n- The comparison built into the surveys — these species are exactly what neighboring farmland lost — makes the grounds refuges for the displaced species.\n- A carries the passage's own irony (\"imposed for safety, not for conservation\") in the phrase \"in effect, as accidental nature reserves,\" and its hedged wording matches the passage's \"may.\"\n\n**Why the other choices are wrong:**\n- B: No count compares the grounds with managed nature reserves — the comparison in the passage is with farmland.\n- C: \"Entirely\" and the visitors-only attribution contradict the passage, which lists farming and construction among the exclusions doing the work.\n- D: It contradicts the mechanism — the species persist because farming is excluded, so reopening the land to intensive farming could hardly leave the value undiminished."
 }

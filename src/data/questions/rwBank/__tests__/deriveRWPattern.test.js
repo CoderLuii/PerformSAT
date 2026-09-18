@@ -13,17 +13,20 @@ describe('deriveRWPattern (routing signal — grammar/punctuation/structure only
     // FSS counts re-frozen 2026-06-17: grammar sub-types are decided by the
     // authoritative `rwGrammarType.js` map (per-item, by what varies across the
     // answer choices) instead of the explanation-prose heuristic.
-    'boundaries-semicolon': 27,
-    'boundaries-comma': 22,
-    'boundaries-dash': 10,
-    'boundaries-colon': 10,
-    'transitions-contrast': 24,
+    'boundaries-semicolon': 26,
+    'boundaries-comma': 25,
+    'boundaries-dash': 8,
+    'boundaries-colon': 9,
+    // transitions re-frozen 2026-09-01: recreated test 4 q51 converted from an
+    // addition winner (Tier-3) to "Eventually," (sequence-time), restoring the
+    // sequence-time bucket to the Tier-1 threshold of 8.
+    'transitions-contrast': 26,
     'transitions-example-emphasis': 12,
-    'transitions-cause-effect': 18,
-    'transitions-sequence-time': 9,
-    'tsp-main-purpose': 23,
+    'transitions-cause-effect': 20,
+    'transitions-sequence-time': 8,
+    'tsp-main-purpose': 25,
     'tsp-overall-structure': 32,
-    'tsp-function-of-underlined': 16,
+    'tsp-function-of-underlined': 15,
     'fss-subject-verb-agreement': 26,
     'fss-verb-tense': 17,
     'fss-modifier-placement': 11,
@@ -38,15 +41,17 @@ describe('deriveRWPattern (routing signal — grammar/punctuation/structure only
     if (p) counts[p] = (counts[p] || 0) + 1;
   }
 
-  it('produces the frozen pattern distribution over the live 648-item bank', () => {
+  it('produces the frozen pattern distribution over the live bank (648 test items + authored fills)', () => {
     expect(counts).toEqual(EXPECTED_COUNTS);
   });
 
-  it('tags exactly 273 grammar/structure items', () => {
-    // 203 non-FSS (boundaries 69 + transitions 63 + tsp 71) + 70 FSS (72 items,
-    // 2 route Tier-3) = 273. All reading skills return null here.
+  it('tags exactly 276 grammar/structure items', () => {
+    // 206 non-FSS (boundaries 68 + transitions 66 incl. 2 authored craft-pilot
+    // fills — one test-5 item re-keyed to "Likewise," routes Tier-3 — + tsp 72
+    // incl. 1 authored literary fill) + 70 FSS (72 items, 2 route Tier-3)
+    // = 276. All reading skills return null here.
     const tagged = Object.values(counts).reduce((a, b) => a + b, 0);
-    expect(tagged).toBe(273);
+    expect(tagged).toBe(276);
   });
 
   it('returns null for every reading-comprehension item (routing stays deferred)', () => {
@@ -122,22 +127,22 @@ describe('deriveRWPattern (routing signal — grammar/punctuation/structure only
 describe('deriveRWQuestionType (browse type — grammar patterns PLUS reading sub-types)', () => {
   // Full question-type distribution surfaced in the Practice Bank. This is
   // deriveRWPattern's grammar tags (minus the tag-only coe-textual-illustrate-
-  // claim, which reading-typing supersedes) PLUS all 390 reading items tagged
-  // via rwReadingType.js (360 from tests + 30 authored drill-only fills). Counts
+  // claim, which reading-typing supersedes) PLUS all 398 reading items tagged
+  // via rwReadingType.js (360 from tests + 38 authored drill-only fills). Counts
   // shift when items are authored — re-run buildMap.mjs + appendAuthored.mjs.
   const EXPECTED_QT_COUNTS = {
     // grammar / punctuation / structure (same as deriveRWPattern)
-    'boundaries-semicolon': 27,
-    'boundaries-comma': 22,
-    'boundaries-dash': 10,
-    'boundaries-colon': 10,
-    'transitions-contrast': 24,
+    'boundaries-semicolon': 26,
+    'boundaries-comma': 25,
+    'boundaries-dash': 8,
+    'boundaries-colon': 9,
+    'transitions-contrast': 26,
     'transitions-example-emphasis': 12,
-    'transitions-cause-effect': 18,
-    'transitions-sequence-time': 9,
-    'tsp-main-purpose': 23,
+    'transitions-cause-effect': 20,
+    'transitions-sequence-time': 8,
+    'tsp-main-purpose': 25,
     'tsp-overall-structure': 32,
-    'tsp-function-of-underlined': 16,
+    'tsp-function-of-underlined': 15,
     'fss-subject-verb-agreement': 26,
     'fss-verb-tense': 17,
     'fss-modifier-placement': 11,
@@ -145,27 +150,27 @@ describe('deriveRWQuestionType (browse type — grammar patterns PLUS reading su
     'fss-pronoun': 3,
     'fss-possessive': 5,
     // reading-comprehension question types (rwReadingType.js)
-    'cid-main-idea': 48,
+    'cid-main-idea': 49,
     'cid-supporting-detail': 24,
     'wic-restatement': 38,
-    'wic-contrast': 35,
+    'wic-contrast': 38,
     'wic-cause-effect': 21,
     'wic-example-or-illustration': 7,
     'inf-cause-effect': 20,
-    'inf-generalization-conclusion': 18,
+    'inf-generalization-conclusion': 19,
     'inf-contrast-qualification': 5,
     'inf-comparison': 4,
     'inf-prediction-expectation': 9,
     'coe-quant-complete-statement': 33,
     'coe-quant-support-claim': 15,
     'coe-text-support-finding': 23,
-    'coe-text-illustrate-quote': 9,
+    'coe-text-illustrate-quote': 11,
     'ctc-qualify-complicate': 11,
     'ctc-disagree-challenge': 7,
     'ctc-alternative-explanation': 6,
     'rs-emphasize-significance': 21,
     'rs-emphasize-difference': 10,
-    'rs-explain-finding': 7,
+    'rs-explain-finding': 8,
     'rs-introduce-unfamiliar': 6,
     'rs-present-claim': 6,
     'rs-emphasize-similarity': 7,
@@ -181,9 +186,9 @@ describe('deriveRWQuestionType (browse type — grammar patterns PLUS reading su
     expect(counts).toEqual(EXPECTED_QT_COUNTS);
   });
 
-  it('tags 663 items (273 grammar/structure + 390 reading incl. 30 authored fills)', () => {
+  it('tags 674 items (276 grammar/structure + 398 reading — 41 authored fills total)', () => {
     const tagged = Object.values(counts).reduce((a, b) => a + b, 0);
-    expect(tagged).toBe(663);
+    expect(tagged).toBe(674);
   });
 
   it('falls back to deriveRWPattern for grammar/structure skills', () => {

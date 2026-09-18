@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-032",
+ "question": "Two roads on a surveyor's map are drawn as the graphs of $9x - 4y = 26$ and $kx + 6y = 5$, where $k$ is a constant. The roads run across the whole map without ever meeting. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{27}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{8}{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{8}{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{27}{2}$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "uses $\\frac{4}{9}$, the reciprocal of the first road's slope, giving $-\\frac{k}{6} = \\frac{4}{9}$ and $k = -\\frac{8}{3}$",
+  "C": "uses the negative reciprocal $-\\frac{4}{9}$, which is the perpendicular slope, giving $k = \\frac{8}{3}$",
+  "D": "sets $-\\frac{k}{6} = -\\frac{9}{4}$, negating the first road's slope, giving $k = \\frac{27}{2}$"
+ },
+ "explanation": "**SAT Pattern: Parallel from Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Solving each equation for $y$ gives slopes $\\frac{9}{4}$ and $-\\frac{k}{6}$; setting them equal gives $k = -\\frac{27}{2}$.\n\n**The Full Solution:**\nStep 1: Rewrite $9x - 4y = 26$ as $y = \\frac{9}{4}x - \\frac{13}{2}$, so the first road has slope $\\frac{9}{4}$.\nStep 2: Rewrite $kx + 6y = 5$ as $y = -\\frac{k}{6}x + \\frac{5}{6}$, so the second road has slope $-\\frac{k}{6}$.\nStep 3: Roads that never meet have equal slopes, so $-\\frac{k}{6} = \\frac{9}{4}$ and $k = -\\frac{27}{2}$; the $y$-intercepts $\\frac{5}{6}$ and $-\\frac{13}{2}$ differ, so the roads really are distinct. Check: $-\\frac{1}{6}\\left(-\\frac{27}{2}\\right) = \\frac{27}{12} = \\frac{9}{4}$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($-\\frac{8}{3}$): uses $\\frac{4}{9}$, the reciprocal of the first road's slope, giving $-\\frac{k}{6} = \\frac{4}{9}$ and $k = -\\frac{8}{3}$\n* Choice C ($\\frac{8}{3}$): uses the negative reciprocal $-\\frac{4}{9}$, which is the perpendicular slope, giving $k = \\frac{8}{3}$\n* Choice D ($\\frac{27}{2}$): sets $-\\frac{k}{6} = -\\frac{9}{4}$, negating the first road's slope, giving $k = \\frac{27}{2}$\n\n**Test Day Takeaway:** Convert both standard-form equations to $y = mx + b$ first; the coefficient of $y$ carries a sign that is easy to lose."
+}

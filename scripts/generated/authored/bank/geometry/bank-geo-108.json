@@ -1,0 +1,36 @@
+{
+ "id": "bank-geo-108",
+ "question": "A quilter's set square appears in the figure as right triangle $TUV$; the two legs are labeled in inches and the sloped edge is not. What is the value of $\\sin(\\angle T)$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     20,
+     0
+    ],
+    [
+     20,
+     15
+    ]
+   ],
+   "labels": [
+    "T",
+    "U",
+    "V"
+   ],
+   "sideLabels": [
+    "20",
+    "15",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "correctAnswer": "0.6",
+ "explanation": "**SAT Pattern: SOH-CAH-TOA in a 3-4-5 Triangle**\n\n**The correct answer is $0.6$.**\n\n**The Fast Way (~20s):** Legs $15$ and $20$ are a $3$-$4$-$5$ triangle scaled by $5$, so the hypotenuse is $25$ and $\\sin(\\angle T)=\\frac{15}{25}=0.6$.\n\n**The Full Solution:**\n\nStep 1 — Find the hypotenuse. With the right angle at $U$, $TV=\\sqrt{20^2+15^2}=\\sqrt{400+225}=\\sqrt{625}=25$ inches.\n\nStep 2 — Identify the opposite leg. Across the triangle from $\\angle T$ lies $\\overline{UV}=15$ inches.\n\nStep 3 — Apply SOH: $\\sin(\\angle T)=\\frac{15}{25}=\\frac{3}{5}=0.6$. Check: $\\cos(\\angle T)=\\frac{20}{25}=0.8$, and $0.6^2+0.8^2=1$.\n\n**Common Mistakes:** Answering $0.8$ uses the adjacent leg and gives the cosine. Answering $0.75$ divides leg by leg and gives the tangent. Treating the labeled $20$ as the hypotenuse gives $\\frac{15}{20}=0.75$ as well, which is why finding the hypotenuse first matters.\n\n**Test Day Takeaway:** When two legs are given, compute the hypotenuse before choosing a ratio — a $15$-$20$-$25$ triangle is just $3$-$4$-$5$ in disguise."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-275",
+ "question": "A town's planning office surveyed $150$ households selected at random from the households in the town. Based on the survey, the proportion of the town's households that compost food waste is estimated to be $0.36$, with an associated margin of error of $0.05$. Which of the following is the interval of plausible values for the proportion of all households in the town that compost food waste?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.26$ to $0.46$"
+  },
+  {
+   "id": "B",
+   "text": "$0.31$ to $0.36$"
+  },
+  {
+   "id": "C",
+   "text": "$0.31$ to $0.41$"
+  },
+  {
+   "id": "D",
+   "text": "$0.36$ to $0.41$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "doubles the margin of error before building the interval",
+  "B": "uses the estimate itself as the upper endpoint",
+  "D": "uses the estimate itself as the lower endpoint"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Confidence Interval Interpretation**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** $0.36-0.05=0.31$ and $0.36+0.05=0.41$.\n\n**The Full Solution:**\nStep 1: The sample proportion is $0.36$ and the margin of error is $0.05$.\nStep 2: The plausible values are the estimate plus or minus the margin of error: from $0.36-0.05=0.31$ to $0.36+0.05=0.41$.\nStep 3: Check: the midpoint of $0.31$ and $0.41$ is $0.36$, and the half-width is $0.05$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.26$ to $0.46$): built from $0.36 \\pm 0.10$, doubling the margin of error.\n* Choice B ($0.31$ to $0.36$): the estimate is used as the top of the interval instead of its center.\n* Choice D ($0.36$ to $0.41$): the estimate is used as the bottom of the interval instead of its center.\n\n**Test Day Takeaway:** The estimate is always the midpoint of the interval. If a choice puts the estimate at an endpoint, it is wrong on sight."
+}

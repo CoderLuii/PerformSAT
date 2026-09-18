@@ -1,0 +1,25 @@
+{
+  "id": 9011,
+  "passage": "When rising seas cut a coastal hilltop off from the mainland, the new island is left holding more species than an island of its size can support for long. Populations once part of a much larger mainland population no longer receive new arrivals, and one by one the smallest of them wink out, a slow loss ecologists call relaxation. The rate of that loss depends on area: the smaller the island, the fewer individuals each species can maintain, and the sooner chance alone erases one. Two islands off the same coast were cut off at the same time, one of them roughly ten times the area of the other. Ecologists comparing their bird faunas today should expect that ______",
+  "question": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "neither island has lost any of the bird species it held at separation."
+    },
+    {
+      "id": "B",
+      "text": "the smaller island now holds more bird species than it held at separation."
+    },
+    {
+      "id": "C",
+      "text": "the larger island has lost a greater share of its original bird species."
+    },
+    {
+      "id": "D",
+      "text": "the smaller island has lost a greater share of its original bird species."
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** The text ties the rate of species loss to island area: smaller islands hold smaller populations, and smaller populations are erased sooner. Given equal time since separation, the smaller island should have lost the larger share.\n\n**The Full Solution:**\n- Separate the rule from the case. The rule is that relaxation runs faster on smaller islands; the case is two islands of very different size cut off at the same moment.\n- Because the elapsed time is the same for both, area is the only variable left, and the rule sends the loss in one direction: more of it on the smaller island.\n- Reject completions that contradict relaxation itself. The text is explicit that species are lost after separation, so any option in which nothing is lost or the count rises is out.\n\n**Why the other choices are wrong:**\n- A: Relaxation is described as an ongoing loss that follows separation, so expecting no losses at all contradicts the rule the text sets up.\n- B: An increase would require new arrivals, and the text says the isolated populations no longer receive them.\n- C: This runs the rule backward. Larger area means larger populations and slower loss, so the greater share of losses belongs to the smaller island."
+}

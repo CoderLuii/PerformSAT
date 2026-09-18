@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
+  "module": 1,
+  "passage": "At the universities of thirteenth-century Europe, demand for accurate copies of required texts outran what any bookshop could produce by copying volumes one at a time. Stationers answered with the pecia system. A shop kept an approved exemplar of each text, divided into numbered sections — peciae — that students and professional scribes rented individually for a fixed fee. Dozens of copyists could then be at work on different sections of the same book at once. And because every rented section was copied directly from a single vetted exemplar, mistakes did not compound from copy to copy, as they inevitably did when each new manuscript served as the model for the next.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "By analyzing the statistical patterning of dates on Maya monuments, Proskouriakoff established that the inscriptions recorded the biographies of specific rulers rather than only ritual or calendrical material."
+      "text": "By renting out sections of one vetted master copy to many copyists at once, the pecia system produced needed texts quickly while keeping errors from compounding across copies."
     },
     {
       "id": "B",
-      "text": "Earlier scholars of Maya inscriptions had already concluded that the monuments at Piedras Negras recorded the battles, marriages, and deaths of individual named rulers."
+      "text": "Thirteenth-century stationers earned most of their income by renting out sections of manuscripts rather than by selling completed books."
     },
     {
       "id": "C",
-      "text": "Proskouriakoff trained as an architect and came to the study of Maya inscriptions through her work as an artist at the Peabody Museum before her 1960 paper."
+      "text": "University students of the thirteenth century were required to copy their own textbooks from exemplars that stationers kept on approved lists."
     },
     {
       "id": "D",
-      "text": "Proskouriakoff showed that the dates carved on Maya stelae were spaced at irregular intervals and therefore could not have referred to any consistent calendar at all."
+      "text": "The pecia system slowed the spread of errors by requiring that every new manuscript be checked against the copy from which it had been made."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage contrasts earlier scholars, who read Maya dates as ritual markers, with Proskouriakoff, who analyzed the same dates statistically and argued that they record the biographies of named rulers. Choice B assigns the earlier scholars a conclusion that was actually hers; choice C keeps only the biographical detail about her training; and choice D reverses her finding, since she stressed the regular spacing of the dates rather than its absence.",
-  "passage": "Tatiana Proskouriakoff, an architect by training who came to the study of Maya inscriptions through her work as an artist at the Peabody Museum, transformed the field with a 1960 paper on the monuments of Piedras Negras, Guatemala. Earlier scholars had treated the dates carved on Maya stelae mainly as ritual or calendrical markers, assuming the inscriptions did not record the deeds of named individuals. Proskouriakoff approached the same dates statistically. She showed that across many monuments the dates clustered into series whose intervals matched the human lifespan and whose endpoints lined up with plausible birth and accession events, with later dates marking battles, marriages, and deaths. The patterning, she argued, was too regular to be coincidence: the inscriptions were narrating the careers of specific rulers.",
+  "explanation": "**Choice A is correct.** The text presents the pecia system as solving two problems at once — speed and accuracy — and choice A captures both halves.\n\n**The Full Solution:**\n- The problem: demand outran one-at-a-time copying.\n- The speed half: renting numbered sections let dozens of copyists work on one book simultaneously.\n- The accuracy half: every section came straight from a single vetted exemplar, so errors did not compound from copy to copy. Choice A is the only option that joins the two.\n\n**Why the other choices are wrong:**\n- B: The stationers' sources of income are never discussed.\n- C: The text says students could rent sections, not that they were required to copy their own textbooks.\n- D: The system prevented compounding by copying from the exemplar directly; the text describes no checking of finished manuscripts.",
   "_meta": {
-    "anchor": "Tatiana Proskouriakoff — Maya epigraphy (entity_keep)"
-  },
-  "module": 1
+    "anchor": "pecia system — university book production before print"
+  }
 }

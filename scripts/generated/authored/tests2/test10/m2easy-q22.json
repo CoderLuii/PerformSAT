@@ -1,0 +1,6 @@
+{
+ "id": 22,
+ "question": "A seismograph's factory setup requires $\\frac{3(2x - k)}{4} + 5 = 14$, where $k$ is a constant fixed at the plant. Technicians find that $x = 10$ satisfies the requirement. What is the value of $k$?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~25s):** Subtracting $5$ leaves $\\frac{3(20 - k)}{4} = 9$, so $20 - k = 12$ and $k = 8$.\n\n**The Full Solution:**\nStep 1: Put $x = 10$ into the requirement: $\\frac{3(20 - k)}{4} + 5 = 14$.\nStep 2: Subtract $5$ from both sides, then multiply both sides by $4$: $3(20 - k) = 36$.\nStep 3: Divide by $3$ to get $20 - k = 12$, so $k = 8$. Check with $k = 8$ and $x = 10$: $\\frac{3(20 - 8)}{4} + 5 = \\frac{36}{4} + 5 = 9 + 5 = 14$. $\\checkmark$\n\n**Common Mistakes:** Entering $17$ (multiplying out $3(20 - k) = 9$ without first multiplying the $9$ by $4$); entering $24$ (distributing the $3$ to the $2x$ only, which turns the numerator into $6x - k$); entering $-8$ (reading the numerator as $3(2x + k)$ and flipping the sign of the constant).\n\n**Test Day Takeaway:** Substitute the known solution first, then undo the operations in reverse order — the added constant, then the denominator, then the factor outside the parentheses."
+}

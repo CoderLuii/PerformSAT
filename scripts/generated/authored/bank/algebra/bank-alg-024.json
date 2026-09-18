@@ -1,0 +1,6 @@
+{
+ "question": "The temperature of a cooling bath, in degrees Celsius, is given by $g(t)=-5t+12$, where $t$ is the number of minutes since dry ice was added. What is the temperature of the bath $4$ minutes after the dry ice was added?",
+ "correctAnswer": "-8",
+ "explanation": "**SAT Pattern: Function Evaluation with Negatives**\n\n**The correct answer is $-8$.**\n\n**The Fast Way (~20s):** $g(4)=-5(4)+12=-20+12=-8$ degrees Celsius.\n\n**The Full Solution:**\n\nStep 1: The elapsed time is the input, so evaluate $g$ at $t=4$: $g(4)=-5(4)+12$.\n\nStep 2: Multiply, keeping the negative coefficient attached: $-5(4)=-20$.\n\nStep 3: Add the constant: $-20+12=-8$ degrees Celsius. Check: the bath starts at $g(0)=12$ degrees and falls $5$ degrees each minute, so after $4$ minutes it has fallen $20$ degrees, from $12$ to $-8$.\n\n**Common Mistakes:** Dropping the negative sign gives $20+12=32$ degrees, a warming bath. Subtracting the constant instead of adding it gives $-20-12=-32$ degrees.\n\n**Test Day Takeaway:** A negative coefficient stays negative through the multiplication; only then is the constant added.",
+ "id": "bank-alg-024"
+}

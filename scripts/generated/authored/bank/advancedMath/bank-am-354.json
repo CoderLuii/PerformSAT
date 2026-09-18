@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-354",
+ "question": "A climate model gives $s^2 - 22s + c = 0$, where $c$ is a constant and each solution $s$ is a year, counted from 2000, in which predicted sea-ice extent equals its long-term average. What is the greatest integer $c$ for which two such years exist?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$120$"
+  },
+  {
+   "id": "B",
+   "text": "$121$"
+  },
+  {
+   "id": "C",
+   "text": "$241$"
+  },
+  {
+   "id": "D",
+   "text": "$483$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "allows the discriminant to equal zero, which gives one repeated year rather than two",
+  "C": "replaces $4ac$ with $2ac$, giving $484 - 2c > 0$ and $c < 242$",
+  "D": "drops the factor of $4$ altogether, giving $484 - c > 0$ and $c < 484$"
+ },
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Two distinct real solutions require $b^2 - 4ac > 0$, so $484 - 4c > 0$ and $c < 121$. The greatest integer strictly below $121$ is $120$.\n\n**The Full Solution:**\nStep 1: In $s^2 - 22s + c = 0$ the coefficients are $a = 1$ and $b = -22$, and the constant term is $c$.\nStep 2: Two distinct years means two distinct real solutions, which happens exactly when the discriminant is positive: $(-22)^2 - 4(1)(c) > 0$, or $484 - 4c > 0$.\nStep 3: Solving gives $4c < 484$, so $c < 121$, and the greatest integer satisfying that is $120$. Check: at $c = 120$ the discriminant is $484 - 480 = 4 > 0$, and the years are $s = 10$ and $s = 12$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($121$): treats the condition as $b^2 - 4ac \\ge 0$; at $c = 121$ the discriminant is $0$, so the model gives one year, not two.\n* Choice C ($241$): uses $2ac$ in place of $4ac$, so the bound becomes $c < 242$.\n* Choice D ($483$): forgets the factor of $4$ entirely and solves $484 - c > 0$.\n\n**Test Day Takeaway:** \"Two distinct solutions\" is a strict inequality, so an integer bound always lands one unit inside the boundary value."
+}

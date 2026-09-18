@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 1,
- "passage": "When the first working transistor was demonstrated at Bell Laboratories in 1947, it was a fragile laboratory curiosity. Yet the device did something the vacuum tubes of the day could not do efficiently: it switched and amplified electrical signals using a small sliver of doped semiconductor rather than a heated, power-hungry, easily broken glass tube. Over the following decade, engineers learned to make transistors smaller, cheaper, and more reliable, and to pack many of them onto a single chip of silicon. The historian of technology who traces this arc argues that the transistor's lasting significance lies not in any one application but in a shift of medium—from the vacuum tube to the solid-state device—that made compact, durable, mass-produced electronics possible for the first time.",
+ "passage": "European night trains, in retreat for decades, are being reintroduced on routes between major cities, and operators report that berths regularly sell out weeks in advance. The obstacle to expansion is no longer demand but supply: sleeping cars ordered today take years to deliver because so few have been built recently, and a train crossing several countries overnight must secure a track slot from each national infrastructure manager along the way, timed so that the whole journey fits between one evening and the next morning. Reviving a network, it turns out, is slower than reviving an appetite for one.",
  "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "The first transistor demonstrated at Bell Laboratories in 1947 was too fragile to be used in any setting outside of the controlled environment of the research laboratory itself."
+   "text": "Night trains declined for decades because operators could not fill their berths on international routes."
   },
   {
    "id": "B",
-   "text": "The transistor's lasting importance lies in replacing the vacuum tube with a compact solid-state device, a shift of medium that made cheap, durable, mass-produced electronics possible."
+   "text": "Passenger demand for night trains has returned, but scarce sleeping cars and cross-border scheduling limit how quickly service can grow."
   },
   {
    "id": "C",
-   "text": "Engineers in the decade after 1947 succeeded in packing many transistors onto a single chip of silicon."
+   "text": "Sleeping cars take years to manufacture because their interiors are more complicated than those of ordinary passenger coaches."
   },
   {
    "id": "D",
-   "text": "Vacuum tubes were inefficient because they relied on heated glass components that consumed large amounts of power."
+   "text": "National infrastructure managers ought to give up some control over nightly track slots so that trains crossing several countries can run on workable schedules."
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The passage builds toward the historian's claim that the transistor matters not for any single use but for a change of medium—from the power-hungry, fragile vacuum tube to the small solid-state device—that made compact, cheap, durable, mass-produced electronics possible. Choice B captures that thesis. Choice A reports only the opening detail about the first transistor's fragility. Choice C and Choice D each restate a supporting fact (later miniaturization; the tube's inefficiency) without reaching the main point the passage is organized around."
+ "explanation": "**Choice B is correct.** The text's pivot sentence says it outright: \"The obstacle to expansion is no longer demand but supply,\" and the two supply problems it details, slow-to-deliver sleeping cars and multi-country slot coordination, are the two constraints choice B names.\n\n**The Full Solution:**\n- Sentence one establishes returned demand: berths sell out weeks ahead.\n- Sentence two identifies the actual bottlenecks: rolling stock takes years, and cross-border journeys need synchronized track slots from every country crossed.\n- The closing line, reviving a network is slower than reviving an appetite for one, restates B's contrast between demand and capacity.\n\n**Why the other choices are wrong:**\n- A: The text never gives a reason for the historical decline, and current berths sell out, the opposite of unfilled.\n- C: The text says few sleeping cars have been built recently; it never attributes the delay to interior complexity.\n- D: The text describes the coordination problem without recommending that anyone surrender control; a policy prescription is added, not stated."
 }

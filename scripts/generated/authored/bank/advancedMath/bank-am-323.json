@@ -1,0 +1,52 @@
+{
+ "id": "bank-am-323",
+ "question": "The table gives three values of the exponential function $C$, where $C(t)$ is the number of algal colonies in a tide pool $t$ weeks after monitoring began. For what value of $t$ does the model give $4^{6}$ colonies?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Week t",
+    "Colonies C(t)"
+   ],
+   "rows": [
+    [
+     "0",
+     "4"
+    ],
+    [
+     "1",
+     "16"
+    ],
+    [
+     "2",
+     "64"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "halves the target exponent, as if the count doubled rather than quadrupled each week",
+  "B": "shifts by $2$ instead of $1$, using $C(t) = 4^{t+2}$",
+  "D": "reads the exponent $6$ as $t$, ignoring the count of $4$ already present at $t = 0$"
+ },
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The table's counts are $4^{1}$, $4^{2}$, $4^{3}$, so $C(t) = 4^{t+1}$; setting $t + 1 = 6$ gives $t = 5$.\n\n**The Full Solution:**\nStep 1: Rewrite each table entry as a power of $4$: $4 = 4^{1}$, $16 = 4^{2}$, and $64 = 4^{3}$.\nStep 2: The exponent is one more than $t$ in every row, so $C(t) = 4^{t+1}$.\nStep 3: With equal bases, $4^{t+1} = 4^{6}$ forces $t + 1 = 6$, so $t = 5$. Check: $C(5) = 4^{6} = 4096$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): halves $6$, which would be right only if each week multiplied the count by $2$.\n* Choice B ($4$): uses the rule $C(t) = 4^{t+2}$, off by one row.\n* Choice D ($6$): treats the exponent on the right as $t$ itself, forgetting that week $0$ already holds $4^{1}$ colonies.\n\n**Test Day Takeaway:** Write every table value as a power of the same base first; the rule then reads straight off the exponents."
+}

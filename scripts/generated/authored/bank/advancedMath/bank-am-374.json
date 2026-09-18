@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-374",
+ "question": "A highway model predicts an average speed of $s(x)=52-0.8x$ miles per hour when the flow is $x$ vehicles per lane per minute above 20. Which statement best interprets $s(-10)=60$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "At a flow 10 vehicles per lane per minute below 20, the predicted average speed is 60 miles per hour."
+  },
+  {
+   "id": "B",
+   "text": "At a flow 10 vehicles per lane per minute above 20, the predicted average speed is 60 miles per hour."
+  },
+  {
+   "id": "C",
+   "text": "At a flow of 20 vehicles per lane per minute, the predicted average speed is 10 miles per hour below 60."
+  },
+  {
+   "id": "D",
+   "text": "Each vehicle per lane per minute below 20 raises the predicted average speed by 10 miles per hour."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reads the negative input as a flow above 20, reversing the direction",
+  "C": "treats the input -10 as a change in speed rather than a change in flow",
+  "D": "reads the input -10 as a rate of change; the rate is the coefficient 0.8"
+ },
+ "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The input counts vehicles above 20, so $x=-10$ is a flow 10 below 20, and the output 60 is a predicted speed.\n\n**The Full Solution:**\nStep 1: The variable $x$ measures how far the flow is above 20 vehicles per lane per minute, so $x=-10$ means 10 below 20.\nStep 2: The output of $s$ is an average speed in miles per hour, not a change in speed.\nStep 3: So $s(-10)=60$ says that at a flow 10 below 20 the model predicts 60 miles per hour. Check: $52-0.8(-10)=52+8=60$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: reads $-10$ as 10 above 20, which the model would send to $52-8=44$ miles per hour.\n* Choice C: converts the input into a speed difference; the actual gap from the flow of 20 is 8 miles per hour.\n* Choice D: reads the input as the rate of change; the rate is 0.8 mile per hour per vehicle.\n\n**Test Day Takeaway:** When an input is measured from a baseline, a negative value sits below that baseline — say so before checking the output."
+}

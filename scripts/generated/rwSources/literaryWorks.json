@@ -358,8 +358,8 @@
     "genre": "fiction",
     "publicDomain": true,
     "publicDomainYear": 1923,
-    "gutenbergId": "11953",
-    "sourceUrl": "https://www.gutenberg.org/ebooks/11953",
+    "gutenbergId": "12352",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/12352",
     "themes": [
       "race",
       "Reconstruction",
@@ -787,8 +787,8 @@
     "genre": "fiction",
     "publicDomain": true,
     "publicDomainYear": 1923,
-    "gutenbergId": "30975",
-    "sourceUrl": "https://www.gutenberg.org/ebooks/30975",
+    "gutenbergId": "62940",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/62940",
     "themes": [
       "Chinese American life",
       "marriage",
@@ -943,8 +943,8 @@
     "genre": "poetry",
     "publicDomain": true,
     "publicDomainYear": 1923,
-    "gutenbergId": "11422",
-    "sourceUrl": "https://www.gutenberg.org/ebooks/11422",
+    "gutenbergId": "18338",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/18338",
     "themes": [
       "dialect",
       "double consciousness",
@@ -1567,8 +1567,8 @@
     "genre": "essay",
     "publicDomain": true,
     "publicDomainYear": 1923,
-    "gutenbergId": "8128",
-    "sourceUrl": "https://www.gutenberg.org/ebooks/8128",
+    "gutenbergId": "8130",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/8130",
     "themes": [
       "cross-cultural observation",
       "place",
@@ -1827,8 +1827,8 @@
     "genre": "memoir",
     "publicDomain": true,
     "publicDomainYear": 1923,
-    "gutenbergId": "754",
-    "sourceUrl": "https://www.gutenberg.org/ebooks/754",
+    "gutenbergId": "20885",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/20885",
     "themes": [
       "immigration",
       "education",
@@ -2464,5 +2464,568 @@
     ],
     "excerptPointers": [],
     "addedBy": "rw-authenticity-dedupe-2026-06-11"
+  },
+  {
+    "id": "lit-069",
+    "author": "Claude McKay",
+    "title": "The Tropics in New York",
+    "year": 1920,
+    "genre": "poetry",
+    "publicDomain": true,
+    "publicDomainYear": 1978,
+    "sourceUrl": "https://en.wikisource.org/wiki/Harlem_Shadows/The_Tropics_in_New_York",
+    "collection": "Harlem Shadows (1922)",
+    "themes": [
+      "exile",
+      "memory",
+      "longing",
+      "the tropics"
+    ],
+    "excerptPointers": [
+      {
+        "section": "full poem (three quatrains)",
+        "approxWordCount": 85,
+        "summary": "Tropical fruit in a New York shop window stirs the speaker's memories of home and ends in a wave of longing and tears.",
+        "suitableForSkills": [
+          "text-structure-and-purpose",
+          "central-ideas-and-details"
+        ],
+        "difficulty": "medium"
+      }
+    ]
+  },
+  {
+    "id": "lit-t8-001",
+    "author": "William Wordsworth",
+    "title": "I Wandered Lonely as a Cloud",
+    "year": 1807,
+    "genre": "poetry",
+    "publicDomain": true,
+    "publicDomainYear": 1923,
+    "gutenbergId": "32459",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/32459",
+    "themes": [
+      "nature",
+      "solitude",
+      "memory",
+      "joy"
+    ],
+    "excerptPointers": [
+      {
+        "section": "Stanzas 1-2",
+        "approxWordCount": 95,
+        "summary": "The speaker, wandering alone, comes suddenly upon a vast crowd of daffodils beside a lake.",
+        "suitableForSkills": [
+          "text-structure-and-purpose"
+        ],
+        "difficulty": "medium"
+      }
+    ],
+    "_meta": {
+      "quoteVerify": "Quoted verbatim from the 1815 revised text as printed in standard Wordsworth editions (Poems, in Two Volumes, 1807; rev. 1815): 'I wandered lonely as a cloud / That floats on high o'er vales and hills, / When all at once I saw a crowd, / A host, of golden daffodils; / Beside the lake, beneath the trees, / Fluttering and dancing in the breeze.' Stanza 2 as in the 1815 text ('Continuous as the stars that shine...'). Public domain; used in test8 q05."
+    }
+  },
+  {
+    "id": "lit-t8-002",
+    "author": "William Butler Yeats",
+    "title": "The Lake Isle of Innisfree",
+    "year": 1890,
+    "genre": "poetry",
+    "publicDomain": true,
+    "publicDomainYear": 1923,
+    "gutenbergId": "49608",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/49608",
+    "themes": [
+      "longing",
+      "retreat",
+      "nature",
+      "the city"
+    ],
+    "excerptPointers": [
+      {
+        "section": "Full poem (three quatrains)",
+        "approxWordCount": 110,
+        "summary": "The speaker resolves to leave for the island of Innisfree, imagines the solitary life there, and reveals that its sounds reach him on the city pavements.",
+        "suitableForSkills": [
+          "text-structure-and-purpose",
+          "inferences"
+        ],
+        "difficulty": "hard"
+      }
+    ],
+    "_meta": {
+      "quoteVerify": "Quoted verbatim from the standard text (first collected in The Countess Kathleen and Various Legends and Lyrics, 1892; written 1888, first published in the National Observer, 1890): 'I will arise and go now, and go to Innisfree...' through '...I hear it in the deep heart's core.' Public domain; used in test8 q32."
+    }
+  },
+  {
+    "id": "lit-070",
+    "author": "William Hazlitt",
+    "title": "On Going a Journey",
+    "year": 1821,
+    "genre": "essay",
+    "publicDomain": true,
+    "sourceUrl": "https://en.wikisource.org/wiki/Table-Talk_(Hazlitt)/Essay_XIX._On_Going_a_Journey",
+    "collection": "Table-Talk: Essays on Men and Manners (1821)",
+    "themes": [
+      "solitude",
+      "travel",
+      "liberty",
+      "nature"
+    ],
+    "excerptPointers": [
+      {
+        "section": "opening paragraphs",
+        "approxWordCount": 80,
+        "summary": "The pleasure of journeying alone: society indoors, nature as company out of doors, liberty as the soul of a journey."
+      }
+    ]
+  },
+  {
+    "id": "lit-071",
+    "author": "Walt Whitman",
+    "title": "I Hear America Singing",
+    "year": 1860,
+    "genre": "poetry",
+    "publicDomain": true,
+    "sourceUrl": "https://en.wikisource.org/wiki/Leaves_of_Grass_(1860)/Chants_Democratic/20",
+    "collection": "Leaves of Grass (1860 edition)",
+    "themes": [
+      "labor",
+      "song",
+      "catalog",
+      "America"
+    ],
+    "excerptPointers": [
+      {
+        "section": "opening lines",
+        "approxWordCount": 95,
+        "summary": "A general declaration ('I hear America singing') elaborated through a catalog of workers, each singing at a characteristic task."
+      }
+    ]
+  },
+  {
+    "id": "lit-072",
+    "author": "Frederick II",
+    "title": "De arte venandi cum avibus",
+    "year": 1245,
+    "genre": "treatise",
+    "publicDomain": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/De_arte_venandi_cum_avibus",
+    "collection": "medieval manuscript tradition; standard English translation: The Art of Falconry (Wood & Fyfe, 1943)",
+    "themes": [
+      "falconry",
+      "empiricism",
+      "ornithology"
+    ],
+    "excerptPointers": [
+      {
+        "section": "referenced as a topical work, not excerpted",
+        "approxWordCount": 0,
+        "summary": "Frederick II's falconry treatise (c. 1245), notable for testing received claims (barnacle-goose legend, vulture senses) against observation."
+      }
+    ]
+  },
+  {
+    "id": "lit-073",
+    "author": "Henry Wadsworth Longfellow",
+    "title": "The Tide Rises, the Tide Falls",
+    "year": 1879,
+    "genre": "poetry",
+    "publicDomain": true,
+    "sourceUrl": "https://en.wikisource.org/wiki/The_Tide_Rises,_the_Tide_Falls",
+    "collection": "Ultima Thule (1880)",
+    "themes": [
+      "the sea",
+      "transience",
+      "mortality",
+      "nature's indifference"
+    ],
+    "excerptPointers": [
+      {
+        "section": "complete poem (15 lines)",
+        "approxWordCount": 100,
+        "summary": "Three refrain-linked stanzas move from twilight to night to morning; the traveler vanishes while the tide's rhythm persists.",
+        "suitableForSkills": [
+          "text-structure-and-purpose"
+        ]
+      }
+    ],
+    "notes": "Public-domain; verified against Wikisource text of Ultima Thule.",
+    "reviewer": "hareshbhatia",
+    "verifiedAt": "2026-09-01"
+  },
+  {
+    "id": "lit-074",
+    "author": "Sara Teasdale",
+    "title": "There Will Come Soft Rains",
+    "year": 1918,
+    "genre": "poetry",
+    "publicDomain": true,
+    "sourceUrl": "https://en.wikisource.org/wiki/Flame_and_Shadow/There_Will_Come_Soft_Rains",
+    "collection": "Flame and Shadow (1920); first published in Harper's Monthly Magazine, July 1918",
+    "themes": [
+      "nature's indifference",
+      "war",
+      "spring",
+      "human absence"
+    ],
+    "excerptPointers": [
+      {
+        "section": "complete poem (12 lines)",
+        "approxWordCount": 90,
+        "summary": "A catalog of spring images turns to the assertion that nature would neither notice nor mourn humanity's disappearance.",
+        "suitableForSkills": [
+          "text-structure-and-purpose"
+        ]
+      }
+    ],
+    "notes": "Public-domain (pre-1930 publication); verified against Wikisource text of Flame and Shadow.",
+    "reviewer": "hareshbhatia",
+    "verifiedAt": "2026-09-01"
+  },
+  {
+    "id": "lit-075",
+    "author": "Amy Lowell",
+    "title": "A London Thoroughfare. 2 A.M.",
+    "year": 1914,
+    "genre": "poetry",
+    "publicDomain": true,
+    "publicDomainYear": 1923,
+    "gutenbergId": "1020",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/1020",
+    "themes": [
+      "city at night",
+      "alienation",
+      "the moon"
+    ],
+    "excerptPointers": [
+      {
+        "section": "complete poem",
+        "approxWordCount": 105,
+        "summary": "From her window the speaker watches the lamplit street, contrasts the moon with the city glare, and sides with the moon in an alien city.",
+        "suitableForSkills": [
+          "text-structure-and-purpose",
+          "words-in-context"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lit-076",
+    "author": "Katherine Mansfield",
+    "title": "The Garden Party",
+    "year": 1922,
+    "genre": "short story",
+    "publicDomain": true,
+    "publicDomainYear": 2018,
+    "gutenbergId": "1429",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/1429",
+    "themes": [
+      "class",
+      "family",
+      "celebration"
+    ],
+    "excerptPointers": [
+      {
+        "section": "opening paragraph",
+        "approxWordCount": 120,
+        "summary": "An ideal summer morning before a garden party: perfect weather, dawn-mown lawns, roses in abundance.",
+        "suitableForSkills": [
+          "words-in-context",
+          "text-structure-and-purpose"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lit-077",
+    "author": "Paul Laurence Dunbar",
+    "title": "Sympathy",
+    "year": 1899,
+    "genre": "poetry",
+    "publicDomain": true,
+    "publicDomainYear": 1899,
+    "gutenbergId": null,
+    "sourceUrl": "https://en.wikisource.org/wiki/The_Complete_Poems_of_Paul_Laurence_Dunbar/Sympathy",
+    "collection": "Lyrics of the Hearthside (1899); text as printed in The Complete Poems of Paul Laurence Dunbar (1913)",
+    "themes": [
+      "confinement",
+      "longing",
+      "empathy",
+      "the caged bird"
+    ],
+    "excerptPointers": [
+      {
+        "section": "complete poem (3 stanzas)",
+        "approxWordCount": 160,
+        "summary": "The speaker knows what the caged bird feels amid spring, why it beats its wing on the bars, and why its song is a prayer rather than a carol of joy.",
+        "suitableForSkills": [
+          "command-of-evidence-textual",
+          "text-structure-and-purpose"
+        ],
+        "difficulty": "medium"
+      }
+    ],
+    "addedBy": "test12-recreation-2026-09-01"
+  },
+  {
+    "id": "lit-078",
+    "author": "Emily Brontë",
+    "title": "Spellbound",
+    "year": 1837,
+    "genre": "poetry",
+    "publicDomain": true,
+    "publicDomainYear": 1850,
+    "gutenbergId": null,
+    "sourceUrl": "https://poets.org/poem/spellbound",
+    "collection": "Written November 1837; published posthumously (also known by its first line, 'The night is darkening round me')",
+    "themes": [
+      "storm",
+      "compulsion",
+      "will",
+      "night"
+    ],
+    "excerptPointers": [
+      {
+        "section": "complete poem (12 lines)",
+        "approxWordCount": 75,
+        "summary": "A storm intensifies stanza by stanza while the speaker repeats that she cannot go; the final line turns compulsion into choice: 'I will not, cannot go.'",
+        "suitableForSkills": [
+          "text-structure-and-purpose"
+        ],
+        "difficulty": "medium"
+      }
+    ],
+    "addedBy": "test12-recreation-2026-09-01"
+  },
+  {
+    "id": "lw-a-001",
+    "author": "Elizabeth Gaskell",
+    "title": "Cranford",
+    "year": 1853,
+    "genre": "fiction",
+    "publicDomain": true,
+    "publicDomainYear": 1929,
+    "gutenbergId": "394",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/394",
+    "themes": [
+      "small-town society",
+      "genteel poverty",
+      "custom",
+      "women’s community"
+    ],
+    "excerptPointers": [
+      {
+        "section": "Chapter I, Our Society (the rules for visiting)",
+        "approxWordCount": 240,
+        "summary": "The narrator sets out the visiting rules of a small English town governed by its older women and reports the effects of obeying them.",
+        "suitableForSkills": [
+          "command-of-evidence-textual",
+          "central-ideas-and-details",
+          "text-structure-and-purpose"
+        ],
+        "difficulty": "medium"
+      }
+    ],
+    "notes": "Verified full text at Project Gutenberg (ebook 394). Gaskell died 1865; first published 1853 — US public domain.",
+    "reviewer": "seva-rw-fill-recreation",
+    "verifiedAt": "2026-09-05"
+  },
+  {
+    "id": "lw-a-002",
+    "author": "Mark Twain",
+    "title": "Life on the Mississippi",
+    "year": 1883,
+    "genre": "memoir",
+    "publicDomain": true,
+    "publicDomainYear": 1929,
+    "gutenbergId": "245",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/245",
+    "themes": [
+      "river piloting",
+      "apprenticeship",
+      "expertise",
+      "perception"
+    ],
+    "excerptPointers": [
+      {
+        "section": "Chapter 9, reading the face of the water",
+        "approxWordCount": 260,
+        "summary": "The narrator describes learning to read the river as a text and weighs the skill he gained against the beauty he stopped seeing.",
+        "suitableForSkills": [
+          "command-of-evidence-textual",
+          "central-ideas-and-details",
+          "inferences"
+        ],
+        "difficulty": "medium"
+      }
+    ],
+    "notes": "Verified full text at Project Gutenberg (ebook 245). First published 1883 — US public domain.",
+    "reviewer": "seva-rw-fill-recreation",
+    "verifiedAt": "2026-09-05"
+  },
+  {
+    "id": "lw-a-003",
+    "author": "Alice Dunbar-Nelson",
+    "title": "M’sieu Fortier’s Violin",
+    "year": 1899,
+    "genre": "short story",
+    "publicDomain": true,
+    "publicDomainYear": 1929,
+    "gutenbergId": "688",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/688",
+    "themes": [
+      "New Orleans",
+      "music",
+      "aging",
+      "vocation"
+    ],
+    "excerptPointers": [
+      {
+        "section": "Opening: the last man out of the French Opera",
+        "approxWordCount": 250,
+        "summary": "An elderly first violinist leaves the opera house and the narrator sketches the quiet routine of his life and what his work asks of him.",
+        "suitableForSkills": [
+          "command-of-evidence-textual",
+          "central-ideas-and-details",
+          "text-structure-and-purpose"
+        ],
+        "difficulty": "medium"
+      }
+    ],
+    "notes": "Story in The Goodness of St. Rocque, and Other Stories (1899); verified full text at Project Gutenberg (ebook 688). Author died 1935; work published 1899 — US public domain.",
+    "reviewer": "seva-rw-fill-recreation",
+    "verifiedAt": "2026-09-05"
+  },
+  {
+    "id": "lw-a-004",
+    "author": "John Keats",
+    "title": "To Autumn",
+    "year": 1820,
+    "genre": "poetry",
+    "publicDomain": true,
+    "publicDomainYear": 1929,
+    "gutenbergId": "23684",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/23684",
+    "themes": [
+      "seasons",
+      "harvest",
+      "personification",
+      "ripeness"
+    ],
+    "excerptPointers": [
+      {
+        "section": "Stanzas 1-3 (complete ode)",
+        "approxWordCount": 260,
+        "summary": "A three-stanza ode addressing autumn directly, picturing the season first as ripening force, then as a figure resting amid the harvest, then as its own music.",
+        "suitableForSkills": [
+          "command-of-evidence-textual",
+          "text-structure-and-purpose",
+          "inferences"
+        ],
+        "difficulty": "medium"
+      }
+    ],
+    "notes": "Text from Keats: Poems Published in 1820, Project Gutenberg ebook 23684. Published 1820 — US public domain.",
+    "reviewer": "seva-rw-fill-recreation",
+    "verifiedAt": "2026-09-05"
+  },
+  {
+    "id": "lw-a-005",
+    "author": "Robert Browning",
+    "title": "My Last Duchess",
+    "year": 1842,
+    "genre": "poetry",
+    "publicDomain": true,
+    "publicDomainYear": 1929,
+    "gutenbergId": "16376",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/16376",
+    "themes": [
+      "dramatic monologue",
+      "art collecting",
+      "control",
+      "self-revelation"
+    ],
+    "excerptPointers": [
+      {
+        "section": "Complete monologue (Ferrara)",
+        "approxWordCount": 300,
+        "summary": "A duke shows an envoy the portrait of his late wife and, while describing the painting, betrays his resentment of her evenhanded gratitude.",
+        "suitableForSkills": [
+          "command-of-evidence-textual",
+          "inferences",
+          "text-structure-and-purpose"
+        ],
+        "difficulty": "hard"
+      }
+    ],
+    "notes": "Text from Browning’s Shorter Poems, Project Gutenberg ebook 16376. First published in Dramatic Lyrics, 1842 — US public domain.",
+    "reviewer": "seva-rw-fill-recreation",
+    "verifiedAt": "2026-09-05"
+  },
+  {
+    "id": "lw-a-006",
+    "author": "Paul Laurence Dunbar",
+    "title": "The Poet and His Song",
+    "year": 1896,
+    "genre": "poetry",
+    "publicDomain": true,
+    "publicDomainYear": 1929,
+    "gutenbergId": "18338",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/18338",
+    "themes": [
+      "labor",
+      "song",
+      "endurance",
+      "obscurity"
+    ],
+    "excerptPointers": [
+      {
+        "section": "Complete lyric (four stanzas)",
+        "approxWordCount": 200,
+        "summary": "Four stanzas in which the speaker names the hardships of his farming life and answers each of them with the refrain that he sings and all is well.",
+        "suitableForSkills": [
+          "command-of-evidence-textual",
+          "central-ideas-and-details",
+          "text-structure-and-purpose"
+        ],
+        "difficulty": "medium"
+      }
+    ],
+    "notes": "Poem first collected in Lyrics of Lowly Life (1896); text verified in The Complete Poems of Paul Laurence Dunbar, Project Gutenberg ebook 18338 — US public domain. CB official item e662866f quotes the first stanza verbatim — do not quote this poem in authored items.",
+    "reviewer": "seva-rw-fill-recreation",
+    "verifiedAt": "2026-09-05"
+  },
+  {
+    "id": "lw-a-007",
+    "author": "Mary E. Wilkins Freeman",
+    "title": "A New England Nun",
+    "year": 1891,
+    "genre": "short story",
+    "publicDomain": true,
+    "publicDomainYear": 1929,
+    "sourceUrl": "https://en.wikisource.org/wiki/A_New_England_Nun_and_Other_Stories/A_New_England_Nun",
+    "themes": [
+      "solitude",
+      "domestic order",
+      "habit",
+      "choice"
+    ],
+    "excerptPointers": [
+      {
+        "section": "Opening: Louisa Ellis at her supper",
+        "approxWordCount": 250,
+        "summary": "A woman who has lived alone for years puts away her sewing, picks currants, and lays a careful table for one; the narrator dwells on the exactness of every habit.",
+        "suitableForSkills": [
+          "command-of-evidence-textual",
+          "central-ideas-and-details",
+          "inferences"
+        ],
+        "difficulty": "medium"
+      }
+    ],
+    "notes": "Collected in A New England Nun and Other Stories (1891); full text transcribed at Wikisource. Freeman died 1930; the story was published 1891 — US public domain.",
+    "reviewer": "seva-rw-fill-recreation",
+    "verifiedAt": "2026-09-05"
   }
 ]

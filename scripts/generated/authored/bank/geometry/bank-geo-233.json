@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-233",
+ "question": "The area of a triangle is $54$ square inches, and the height drawn to one of its sides is $12$ inches. What is the length, in inches, of that side?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4.5$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$42$"
+  },
+  {
+   "id": "D",
+   "text": "$108$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the area by the height without doubling",
+  "C": "subtracts the height from the area",
+  "D": "doubles the area but never divides"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Triangle Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** From $\\frac{1}{2}bh = 54$ with $h = 12$: $b = \\frac{2(54)}{12} = \\frac{108}{12} = 9$ inches.\n\n**The Full Solution:**\nStep 1: Start from the area formula $A = \\frac{1}{2}bh$ and substitute what is known: $54 = \\frac{1}{2}b(12) = 6b$.\nStep 2: Solve for $b$: $b = \\frac{54}{6} = 9$.\nStep 3: The side that the height is drawn to measures $9$ inches.\n\nVerification: $\\frac{1}{2}(9)(12) = 54$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4.5$): divides $54$ by $12$ without first doubling the area, effectively solving $bh = 54$.\n* Choice C ($42$): subtracts $54 - 12$, treating the relationship as additive.\n* Choice D ($108$): doubles the area to $108$ but never divides by the height.\n\n**Test Day Takeaway:** Clear the fraction first: $bh = 2A$. Working with $108 = 12b$ is cleaner than juggling a $\\frac{1}{2}$ mid-solve."
+}

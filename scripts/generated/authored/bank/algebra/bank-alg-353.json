@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-353",
+  "question": "A science department is ordering safety goggles of the two types shown in the table. The department has $\\$975$ to spend and must order at least $130$ pairs to receive free shipping. What is the greatest number of anti-fog pairs the department can order?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Goggle type",
+        "Cost per pair (dollars)"
+      ],
+      "rows": [
+        [
+          "Basic",
+          "5.00"
+        ],
+        [
+          "Anti-fog",
+          "12.50"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$26$"
+    },
+    {
+      "id": "B",
+      "text": "$43$"
+    },
+    {
+      "id": "C",
+      "text": "$44$"
+    },
+    {
+      "id": "D",
+      "text": "$78$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "divided the leftover 325 by the full anti-fog price 12.50 instead of the 7.50 difference",
+    "C": "rounded 43.33 up, exceeding the budget",
+    "D": "ignored the 130-pair minimum: 975/12.50"
+  },
+  "explanation": "**SAT Pattern: Inequality Word Problem (Floor)**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Order exactly $130$ pairs. All basic costs $650$, leaving $325$. Each anti-fog upgrade costs $12.50 - 5.00 = 7.50$ more, so $325 \\div 7.50 = 43.33$, and the floor is $43$.\n\n**The Full Solution:**\nStep 1: Let $a$ be the number of anti-fog pairs and $b$ the number of basic pairs: $5b + 12.5a \\leq 975$ and $a + b \\geq 130$.\nStep 2: Set $b = 130 - a$: $5(130 - a) + 12.5a \\leq 975$, so $650 + 7.5a \\leq 975$ and $7.5a \\leq 325$.\nStep 3: $a \\leq 43.33$, so the greatest whole number is $43$.\nCheck: $87$ basic and $43$ anti-fog cost $435 + 537.50 = 972.50 \\leq 975$; $44$ anti-fog would cost $430 + 550 = 980$, over budget. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($26$): divides the leftover $325$ by the full price $12.50$; but each upgrade only costs the DIFFERENCE, since a basic pair is being replaced.\n* Choice C ($44$): rounds $43.33$ up; the check shows $44$ costs $\\$980$.\n* Choice D ($78$): divides $975$ by $12.50$ and ignores the $130$-pair minimum.\n\n**Test Day Takeaway:** An upgrade replaces a cheaper item, so it costs only the price gap; dividing the leftover by the full price undercounts."
+}

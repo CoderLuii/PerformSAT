@@ -1,0 +1,60 @@
+{
+ "id": "bank-geo-010",
+ "question": "A tile showroom displays a square sample cut along its diagonal, forming the right triangle shown with lengths in centimeters. What is the length of each leg of the sample?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     11.314,
+     0
+    ],
+    [
+     11.314,
+     11.314
+    ]
+   ],
+   "rightAngleVertex": 1,
+   "labels": [
+    "45°",
+    "",
+    ""
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "16"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4\\sqrt{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$8\\sqrt{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves the hypotenuse and then divides by root 2, giving 4 root 2",
+  "B": "halves the hypotenuse as if the triangle were 30-60-90",
+  "D": "restates the given hypotenuse, 16"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: 45-45-90 Triangle**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** In a $45$-$45$-$90$ triangle the hypotenuse is a leg times $\\sqrt{2}$, so each leg is $\\frac{16}{\\sqrt{2}}=8\\sqrt{2}$ cm.\n\n**The Full Solution:**\n\nStep 1: Name the ratio. The sides of a $45$-$45$-$90$ triangle are $x$, $x$, and $x\\sqrt{2}$.\n\nStep 2: Set the hypotenuse equal to the given value. $x\\sqrt{2}=16$, so $x=\\frac{16}{\\sqrt{2}}$.\n\nStep 3: Rationalize. $x=\\frac{16\\sqrt{2}}{2}=8\\sqrt{2}$ cm, about $11.3$ cm.\n\nCheck: $(8\\sqrt{2})^{2}+(8\\sqrt{2})^{2}=128+128=256=16^{2}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($4\\sqrt{2}$): halves the hypotenuse first and then divides by $\\sqrt{2}$, applying two reductions.\n* Choice B ($8$): halves the hypotenuse, which is the $30$-$60$-$90$ relationship, not this one.\n* Choice D ($16$): restates the hypotenuse shown in the figure rather than a leg.\n\n**Test Day Takeaway:** Going from hypotenuse to leg in a $45$-$45$-$90$ triangle means dividing by $\\sqrt{2}$, never by $2$."
+}

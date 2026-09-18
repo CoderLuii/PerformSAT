@@ -1,34 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Therefore,"
-    },
-    {
-      "id": "B",
-      "text": "Moreover,"
-    },
-    {
-      "id": "C",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "D",
-      "text": "Likewise,"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The first sentence reports widespread skepticism that a new sign language could develop real grammar so fast; the second reports that, in spite of that skepticism, the evidence for exactly such grammar accumulated. \"Nevertheless\" is the connector for a development that holds despite an established expectation. \"Therefore\" would make the evidence a consequence of the skepticism, while \"Moreover\" and \"Likewise\" would treat the second sentence as adding to or agreeing with the first, when it instead works against it.",
-  "passage": "When researchers first proposed that a sign language emerging spontaneously among deaf children at a Nicaraguan school had developed its own grammar, many linguists were skeptical, reasoning that a language could not arise so quickly without a model to learn from. ______ as successive groups of younger children entered the school, observers documented that each cohort added grammatical regularities the previous one had lacked, until the system showed the kind of structure linguists had assumed required generations of established use.",
-  "_meta": {
-    "anchor": "sign-language linguistics: emergence of a new sign language (generic)"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "As a result,"
   },
-  "id": 1124,
-  "module": 1
+  {
+   "id": "B",
+   "text": "Moreover,"
+  },
+  {
+   "id": "C",
+   "text": "Nevertheless,"
+  },
+  {
+   "id": "D",
+   "text": "Subsequently,"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The skeptics' objection stands in the first sentence; the second sentence reports that the registers delivered valuable findings anyway. Proceeding in the face of a stated objection calls for a concessive contrast — \"Nevertheless.\"\n\n**The Full Solution:**\n- Sentence 1 raises a doubt: the registers cover only a narrow, prosperous slice of the population.\n- Sentence 2 does not answer the doubt point by point; it reports that, doubt notwithstanding, linked registers revealed patterns \"no other source preserved.\"\n- \"Nevertheless\" concedes the objection while asserting the outcome that defied it — exactly the relation between the two sentences.\n\n**Why the other choices are wrong:**\n- A: \"As a result\" would make the discoveries a consequence of the skeptics' objection, inverting the logic.\n- B: \"Moreover\" stacks a second point on top of a first, but the second sentence opposes the first rather than extending it.\n- D: \"Subsequently\" marks bare temporal sequence, missing the tension between doubt and result that the sentences turn on.",
+ "passage": "When historians first proposed tracing medieval migration through guild apprenticeship registers, skeptics objected that the registers recorded only a narrow, prosperous slice of the population and so could say little about broader movement. ______ as registers from more cities were transcribed and linked, patterns emerged that no other source preserved: boys traveling hundreds of miles to enter a trade, and recruitment ranges that widened or shrank with plague and famine.",
+ "_meta": {
+  "anchor": "medieval guild apprenticeships — registers as migration evidence despite selectivity objection",
+  "transitionBucket": "transitions-contrast",
+  "distractors": {
+   "A": "inverted causation",
+   "B": "addition where concession is needed",
+   "D": "bare sequence misses the tension"
+  }
+ },
+ "id": 1124,
+ "module": 1
 }

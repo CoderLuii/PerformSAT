@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-249",
+ "question": "A cyclist's average cadence on the flat section of a ride is $25\\%$ greater than the $68$ revolutions per minute recorded on the climb of that same ride. What is the cyclist's average cadence, in revolutions per minute, on the flat section?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$17$"
+  },
+  {
+   "id": "B",
+   "text": "$51$"
+  },
+  {
+   "id": "C",
+   "text": "$85$"
+  },
+  {
+   "id": "D",
+   "text": "$93$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the increase alone, $0.25(68) = 17$, instead of the flat-section cadence",
+  "B": "takes $25\\%$ off instead of adding it, $0.75(68) = 51$",
+  "D": "adds $25$ revolutions per minute instead of $25\\%$ of $68$"
+ },
+ "explanation": "**SAT Pattern: Percent Greater Than / Less Than**\n\n**Choice C is correct.** A cadence $25\\%$ greater than $68$ is $1.25(68) = 85$ revolutions per minute.\n\n**The Fast Way (~20s):** $25\\%$ of $68$ is $17$, and $68 + 17 = 85$ revolutions per minute.\n\n**The Full Solution:**\n\nStep 1: Identify the base. The comparison is made against the climbing cadence of $68$ revolutions per minute.\n\nStep 2: Translate \"$25\\%$ greater than\" into a factor: $100\\% + 25\\% = 125\\%$, or $1.25$.\n\nStep 3: Multiply: $1.25(68) = 85$ revolutions per minute. Check: $\\frac{85 - 68}{68} = \\frac{17}{68} = 0.25$, a $25\\%$ increase.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($17$): is $25\\%$ of $68$, the size of the increase rather than the resulting flat-section cadence.\n* Choice B ($51$): multiplies by $0.75$, which is $25\\%$ less than the climbing cadence, not $25\\%$ greater.\n* Choice D ($93$): adds $25$ revolutions per minute. The $25$ is a percent, so it must be applied to the base.\n\n**Test Day Takeaway:** \"$p\\%$ greater than\" is one multiplication by $1 + \\frac{p}{100}$ -- turning the phrase into a factor removes the choice between adding and multiplying."
+}

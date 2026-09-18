@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-018",
+  "question": "A research grant of $\\$18{,}000$ was awarded to a laboratory. The laboratory spent $35\\%$ of the grant on equipment, then $20\\%$ of the remaining amount on training, and then $25\\%$ of what still remained on travel. How many dollars of the grant remained after these three expenses?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3{,}600$"
+    },
+    {
+      "id": "B",
+      "text": "$7{,}020$"
+    },
+    {
+      "id": "C",
+      "text": "$9{,}360$"
+    },
+    {
+      "id": "D",
+      "text": "$11{,}700$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the percents ($35 + 20 + 25 = 80\\%$) and takes them all from the original grant, leaving $20\\%$ of $18{,}000$; the later percents apply to smaller remainders.",
+    "C": "stops after the second expense and omits the travel spending.",
+    "D": "stops after the first expense and omits both later expenses."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sequential Spending Percent**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Keep the fraction that remains at each stage: $18{,}000 \\times 0.65 \\times 0.80 \\times 0.75 = 7{,}020$.\n\n**The Full Solution:**\nStep 1: After equipment, $100\\% - 35\\% = 65\\%$ remains: $0.65 \\times 18{,}000 = 11{,}700$.\nStep 2: Training takes $20\\%$ of that remainder, leaving $80\\%$: $0.80 \\times 11{,}700 = 9{,}360$. Travel takes $25\\%$ of the new remainder, leaving $75\\%$: $0.75 \\times 9{,}360 = 7{,}020$.\nStep 3: Check by adding the expenses: $6{,}300 + 2{,}340 + 2{,}340 = 10{,}980$, and $18{,}000 - 10{,}980 = 7{,}020$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3{,}600$): adds the percents ($35 + 20 + 25 = 80\\%$) and takes them all from the original grant, leaving $20\\%$ of $18{,}000$; the later percents apply to smaller remainders.\n* Choice C ($9{,}360$): stops after the second expense and omits the travel spending.\n* Choice D ($11{,}700$): stops after the first expense and omits both later expenses.\n\n**Test Day Takeaway:** \"Of the remaining amount\" means each percent uses a new, smaller base. Multiply the remaining fractions; never add the percents."
+}

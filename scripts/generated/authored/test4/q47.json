@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
+  "module": 2,
+  "passage": "After winning Florence's 1401 competition for a set of bronze doors, the young goldsmith Lorenzo Ghiberti ______ a workshop that became the city's training ground in bronze casting; the two pairs of doors he produced there occupied him, by his own account, for nearly half a century.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "guides"
+      "text": "runs"
     },
     {
       "id": "B",
-      "text": "is guiding"
+      "text": "is running"
     },
     {
       "id": "C",
-      "text": "has guided"
+      "text": "has run"
     },
     {
       "id": "D",
-      "text": "guided"
+      "text": "ran"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The opening clause fixes the action in the past — the 1870s — so the main verb must be the simple past \"guided.\" The present \"guides\" (A) and present progressive \"is guiding\" (B) clash with that past frame, and the present perfect \"has guided\" (C) is not used with a specific past time already named in the sentence.",
-  "passage": "When the engineer Emily Roebling took over the day-to-day supervision of the Brooklyn Bridge in the 1870s, after her husband fell ill, she ______ the project through more than a decade of construction, relaying instructions to the work crews and mastering the engineering details herself.",
+  "explanation": "**Choice D is correct.** The sentence narrates completed events in the past — a competition won in 1401, doors produced over the following decades — so the simple past \"ran\" is required.\n\n**The Full Solution:**\n- The time frame is fixed by \"After winning Florence's 1401 competition\" and by the half-century of work that followed.\n- The surrounding verbs are past: \"became,\" \"produced,\" \"occupied.\"\n- A completed action in a finished past period takes the simple past: \"Ghiberti ran a workshop.\"\n\n**Why the other choices are wrong:**\n- A: The present \"runs\" clashes with the fifteenth-century time frame and the past verbs around it.\n- B: \"Is running\" describes an action in progress now, centuries too late.\n- C: \"Has run\" links a past action to the present moment, but Ghiberti's workshop belongs entirely to the past.",
   "_meta": {
-    "anchor": "Emily Roebling — Brooklyn Bridge construction; simple past"
-  },
-  "module": 2
+    "anchor": "Lorenzo Ghiberti — Baptistery doors workshop; simple past"
+  }
 }

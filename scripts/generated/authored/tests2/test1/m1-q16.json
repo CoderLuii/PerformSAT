@@ -1,0 +1,52 @@
+{
+ "id": 16,
+ "question": "A surveyor marks three stakes on a site plan and records their positions on a coordinate grid as $(-3, 1)$, $(5, -3)$, and $(4, 6)$, with distances measured in meters. The three stakes are shown, and they bound a triangular plot. What is the area, in square meters, of the plot?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -3,
+     1
+    ],
+    [
+     5,
+     -3
+    ],
+    [
+     4,
+     6
+    ]
+   ],
+   "xMin": -5,
+   "xMax": 7,
+   "yMin": -5,
+   "yMax": 8
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$17$"
+  },
+  {
+   "id": "B",
+   "text": "$34$"
+  },
+  {
+   "id": "C",
+   "text": "$68$"
+  },
+  {
+   "id": "D",
+   "text": "$72$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "divides by 2 a second time, halving the correct area of 34",
+  "C": "omits the factor of 1/2, reporting the 68 produced before the final halving",
+  "D": "gives the area of the smallest grid rectangle containing the three stakes, 8 by 9 = 72"
+ },
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** Enclose the stakes in the rectangle from $x = -3$ to $x = 5$ and $y = -3$ to $y = 6$, area $8(9) = 72$, then remove the three corner right triangles of areas $17.5$, $4.5$, and $16$: $72 - 38 = 34$ square meters.\n\n**The Full Solution:**\nStep 1: Draw the smallest rectangle with horizontal and vertical sides that contains all three stakes. Its corners are at $x = -3$ and $x = 5$ and at $y = -3$ and $y = 6$, so its area is $8 \\times 9 = 72$ square meters.\nStep 2: The rectangle minus the triangle leaves three right triangles at the corners. Their legs are $7$ and $5$, giving $17.5$; $1$ and $9$, giving $4.5$; and $8$ and $4$, giving $16$. Together they cover $17.5 + 4.5 + 16 = 38$ square meters.\nStep 3: Subtract: $72 - 38 = 34$ square meters. Check with the coordinate formula $\\frac{1}{2}\\left|x_{1}(y_{2} - y_{3}) + x_{2}(y_{3} - y_{1}) + x_{3}(y_{1} - y_{2})\\right| = \\frac{1}{2}|27 + 25 + 16| = 34$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($17$): halves the area twice, dividing $34$ by $2$ once more than the formula calls for.\n* Choice C ($68$): stops at the absolute value $|27 + 25 + 16| = 68$ and never applies the factor $\\frac{1}{2}$.\n* Choice D ($72$): gives the area of the enclosing rectangle rather than the triangle inside it.\n\n**Test Day Takeaway:** When no side of a coordinate triangle is horizontal or vertical, box it in and subtract the corner right triangles; the boxed rectangle is always an upper bound, so an answer equal to it is wrong by construction."
+}

@@ -1,0 +1,23 @@
+{
+ "id": "bank-am-092",
+ "question": "An engineer models a fuel cell stack's heat loss with the quadratic function $f$ whose graph is shown, and the point $(3,10)$ lies on that graph. If $f(x)=a(x+1)^2+2$ for a constant $a$, what is the value of $a$?",
+ "correctAnswer": "0.5",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**The correct answer is $0.5$.**\n\n**The Fast Way (~20s):** Substituting $(3,10)$ gives $10=a(4)^2+2$, so $16a=8$ and $a=0.5$.\n\n**The Full Solution:**\nStep 1: Put $x=3$ and $f(x)=10$ into $f(x)=a(x+1)^2+2$: $10=a(3+1)^2+2$.\nStep 2: Simplify the square and subtract: $16a=8$.\nStep 3: Divide: $a=0.5$. Check: $f(3)=0.5(16)+2=10$, and the vertex $(-1,2)$ matches the graph ✓\n\n**Common Mistakes:**\n* $2$: divides the wrong way, computing $\\frac{16}{8}$.\n* $8$: reports $10-2=8$ and never divides by $16$.\n* $0.625$: divides $10$ by $16$ without first subtracting the $2$.\n\n**Test Day Takeaway:** With the vertex already in the formula, one extra point is one equation in one unknown — subtract the vertex output before dividing.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    -1,
+    2
+   ],
+   "a": 0.5,
+   "showVertex": true,
+   "showPoints": [
+    [
+     3,
+     10
+    ]
+   ]
+  }
+ }
+}

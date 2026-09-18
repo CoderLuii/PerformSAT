@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A traffic island is shaped as a triangle whose interior angles, in degrees, are $2k + 10$, $3k - 5$, and $k + 7$ for some constant $k$. How many degrees are in the island's largest interior angle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$79$"
+  },
+  {
+   "id": "B",
+   "text": "$85$"
+  },
+  {
+   "id": "C",
+   "text": "$91$"
+  },
+  {
+   "id": "D",
+   "text": "$169$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "drops the constant terms and solves 6k = 180, getting k = 30 before substituting",
+  "C": "adds the constant 12 to 180 instead of subtracting it, getting k = 32",
+  "D": "uses 360 degrees for the angle sum of a triangle, getting k = 58"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The three measures add to $6k + 12 = 180$, so $k = 28$. The largest coefficient belongs to $3k - 5$, which is $3(28) - 5 = 79$.\n\n**The Full Solution:**\nStep 1: The angles of a triangle sum to $180$ degrees: $(2k + 10) + (3k - 5) + (k + 7) = 180$.\nStep 2: Combine like terms: $6k + 12 = 180$, so $6k = 168$ and $k = 28$.\nStep 3: Substitute: the angles are $2(28) + 10 = 66$, $3(28) - 5 = 79$, and $28 + 7 = 35$ degrees, so the largest is $79$. Check: $66 + 79 + 35 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($85$): this comes from $6k = 180$, ignoring the $+10$, $-5$, and $+7$. Those constants combine to $+12$ and must be subtracted before dividing.\n* Choice C ($91$): this comes from $6k = 192$, moving the $12$ across the equals sign by addition instead of subtraction, which gives $k = 32$.\n* Choice D ($169$): this uses $360$ degrees, the sum for a quadrilateral. A triangle's three angles always total $180$ degrees.\n\n**Test Day Takeaway:** Combine every algebraic angle into one equation set equal to $180$, solve for the letter, and then substitute back — the question rarely wants the letter itself."
+}

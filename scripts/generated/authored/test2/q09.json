@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 1,
-  "passage": "In her 2005 book My Face Is Black Is True, historian Mary Frances Berry argues that the late-nineteenth-century pension movement led by Callie House was one of the earliest mass campaigns for reparations in the United States. Drawing on archival records, Berry traces how House and her allies built the National Ex-Slave Mutual Relief, Bounty, and Pension Association into a network that organized hundreds of thousands of formerly enslaved people across the South. The association petitioned Congress for federal pensions to ex-slaves, modeled partly on those granted to Union veterans. As the movement grew, Berry shows, officials at the U.S. Post Office Department prosecuted House for mail fraud, a charge that effectively suppressed the campaign. Berry presents the House pension drive as a forerunner of modern reparations politics.",
+  "passage": "Sashiko, a form of stitching that developed in rural Japan during the Edo period, began as a matter of thrift. Cloth was scarce and precious, so farming and fishing families reinforced worn garments with rows of small running stitches, often layering old fabric to make it warmer and more durable. Over generations, the practical stitches took on decorative patterns — waves, arrows, interlocking circles — typically worked in white thread on deep blue cloth. Today sashiko is practiced around the world as an art form in its own right, but its geometric beauty remains rooted in the everyday needs it once served.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "Berry draws on archival evidence to argue that Callie House's late-nineteenth-century pension movement was one of the earliest mass campaigns for reparations in the United States."
+      "text": "A stitching technique that originated as a practical way to extend the life of scarce cloth gradually developed into a decorative art."
     },
     {
       "id": "B",
-      "text": "Berry contends that the federal mail-fraud prosecution of Callie House was legally justified given the evidence available to officials at the time."
+      "text": "Sashiko patterns such as waves and arrows were originally reserved for garments worn on ceremonial occasions in rural Japan."
     },
     {
       "id": "C",
-      "text": "Berry argues that the National Ex-Slave Mutual Relief association drew most of its support from Union veterans rather than from formerly enslaved people."
+      "text": "Because cloth is no longer scarce, practitioners of sashiko today value the technique mainly as a way of preserving historical garments rather than as a living art."
     },
     {
       "id": "D",
-      "text": "Berry shows that Callie House's pension campaign succeeded in securing federal pensions for formerly enslaved people across the South."
+      "text": "Sashiko is more difficult to master than other forms of decorative stitching because its patterns must follow strict geometric rules."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage presents Berry's central argument: drawing on archival records, she casts Callie House's pension movement as one of the earliest mass campaigns for reparations in the United States. Choice B misreads the passage, which presents the mail-fraud prosecution as a means of suppressing the campaign, not as a justified action. Choice C contradicts the text, which says the association organized hundreds of thousands of formerly enslaved people; the Union-veteran pensions were only a model for what it sought. Choice D reverses the outcome: the passage states the prosecution effectively ended the drive, so it did not succeed in winning pensions."
+  "explanation": "**Choice A is correct.** The text's arc runs from necessity to art: stitches that began as reinforcement for scarce cloth acquired decorative patterns and are now practiced as an art form — exactly the trajectory choice A summarizes.\n\n**The Full Solution:**\n- The opening sentences establish the origin: cloth was \"scarce and precious,\" so families stitched to reinforce and extend garments.\n- The middle sentence marks the transformation: \"over generations, the practical stitches took on decorative patterns.\"\n- The final sentence completes the arc — sashiko is now \"an art form in its own right\" — while tying its beauty back to its practical roots. Choice A captures that whole movement.\n\n**Why the other choices are wrong:**\n- B: The text says the opposite of ceremonial exclusivity — the stitching served everyday garments of farming and fishing families.\n- C: The text calls sashiko an art form practiced \"around the world\" today; nothing limits it to preserving historical garments.\n- D: No comparison with other stitching techniques appears anywhere in the text, and nothing is said about difficulty."
 }

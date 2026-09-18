@@ -1,31 +1,31 @@
 {
-  "id": 842,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 2,
-  "passage": "When archaeologists excavate a site, they record not only the objects they find but the exact layer and position in which each one lay. A pot is informative; a pot resting on a particular floor, beside a hearth, beneath a layer of ash, is far more so, because its surroundings fix it in time and link it to the activities around it. Objects that reach a museum stripped of this information—dug up by looters and sold without record—can still be admired, but much of what they could have told us is gone. This contrast suggests that, for archaeologists, the value of an excavated object depends heavily on ____",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the recorded context in which it was found, not on the object considered by itself."
-    },
-    {
-      "id": "B",
-      "text": "whether the object is visually striking enough to merit display in a museum."
-    },
-    {
-      "id": "C",
-      "text": "how many similar objects have already been recovered from other sites."
-    },
-    {
-      "id": "D",
-      "text": "the speed with which it can be removed from the ground and conserved."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage contrasts an object whose layer and surroundings were recorded with one stripped of that information, and it says the second has lost much of what it could tell us, which points to context as the source of an object's value. A states that. B fastens on visual appeal, which the passage treats as separate from informational value; C introduces a count of similar finds the text never raises; and D emphasizes speed of removal, the opposite of the careful recording the passage praises."
+ "id": 842,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 2,
+ "passage": "A flooded taro terrace is engineered around moving water: the flow enters at the top of the hillside, threads down from terrace to terrace, and rejoins the stream below, so that the water standing over the plants is continually replaced and stays cool. Where the circulation fails and water merely pools, it warms in the sun, and rot spreads quickly through the submerged corms no matter how generously the terrace is supplied. Growers have long observed that terraces fed by quite modest flows stay healthy for season after season, provided the water never stops moving. These observations suggest that ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "a terrace's health depends on the steady movement and coolness of its water rather than simply on how much water it receives."
+  },
+  {
+   "id": "B",
+   "text": "chains with fewer terraces are less vulnerable to rot than chains with many terraces."
+  },
+  {
+   "id": "C",
+   "text": "terraces fed directly by rainfall yield larger harvests than terraces fed by diverted streams."
+  },
+  {
+   "id": "D",
+   "text": "only terraces supplied with large and steadily increasing volumes of water from their feeder streams can remain productive over many consecutive growing seasons."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The contrast the passage builds — abundant but slack water breeds rot, while modest, steadily moving cool water keeps terraces healthy — supports the generalization that flow and temperature, not sheer volume, sustain a terrace.\n\n**The Full Solution:**\n- The design premise: water enters at the top, threads from terrace to terrace, and returns to the stream, staying cool and in motion.\n- The failure case: where water merely pools, it warms and rot spreads through the corms, however much water is present.\n- The success case: terraces fed by modest flows thrive when the water keeps moving.\n- Together these force choice A: what matters is the condition of the water, not its quantity.\n\n**Why the other choices are wrong:**\n- B: The passage ties rot to warm, standing water, not to the number of terraces in a chain.\n- C: The passage never compares stream-fed terraces with rain-fed ones.\n- D: The conclusion contradicts the passage's report that modest flows can sustain healthy terraces."
 }

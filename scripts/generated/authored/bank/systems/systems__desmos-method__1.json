@@ -1,0 +1,50 @@
+{
+  "id": 1,
+  "question": "Two lines are graphed in the $xy$-plane, as shown. The lines are the graphs of the two equations in a system of linear equations. What is the $x$-coordinate of the solution to that system?",
+  "diagram": {
+    "type": "twoLineGraph",
+    "params": {
+      "intersection": {
+        "x": -3,
+        "y": 1
+      },
+      "slope1": 2,
+      "slope2": -1,
+      "xRange": [
+        -6,
+        6
+      ],
+      "yRange": [
+        -6,
+        8
+      ],
+      "showIntersection": false
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-3$"
+    },
+    {
+      "id": "B",
+      "text": "$-2$"
+    },
+    {
+      "id": "C",
+      "text": "$1$"
+    },
+    {
+      "id": "D",
+      "text": "$7$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads the $x$-intercept of the line with negative slope instead of the intersection point.",
+    "C": "reports the $y$-coordinate of the intersection point.",
+    "D": "reads the $y$-intercept of the steeper line."
+  },
+  "correctAnswer": "A",
+  "hint": "Find the point where the two lines cross, then read only the horizontal coordinate.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** The lines cross at $(-3, 1)$, so the $x$-coordinate of the solution is $-3$.\n\n**The Full Solution:**\nStep 1: A point is a solution to the system exactly when it lies on both lines, which happens only at the intersection.\nStep 2: The lines cross three units left of the vertical axis and one unit above the horizontal axis, at $(-3, 1)$.\nStep 3: The $x$-coordinate of that point is $-3$. Check: the lines shown are $y = 2x + 7$ and $y = -x - 2$, and $2(-3) + 7 = 1$ while $-(-3) - 2 = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-2$): reads the $x$-intercept of the line with negative slope instead of the intersection point.\n* Choice C ($1$): reports the $y$-coordinate of the intersection point.\n* Choice D ($7$): reads the $y$-intercept of the steeper line.\n\n**Test Day Takeaway:** Locate the crossing point first, then read the coordinate the question names. Intercepts belong to one line only, so they are never solutions to the system."
+}

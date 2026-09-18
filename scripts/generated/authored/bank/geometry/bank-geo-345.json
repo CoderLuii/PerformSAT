@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-345",
+ "question": "The trim around a triangular bulletin board in a school hallway totals $24+24\\sqrt{2}$ inches, and the board's two congruent sides meet at a right angle. How many inches long is each congruent side?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$12\\sqrt{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$24\\sqrt{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves the rational part 24 of the perimeter",
+  "C": "takes the rational part 24, which is the hypotenuse, as a leg",
+  "D": "takes the whole irrational part 24 root 2 as one leg"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: 45-45-90 Triangle — Perimeter to Leg**\n\n**Choice B is correct.**\n\n**The Fast Way (~50s):** With leg $L$ the perimeter is $2L+L\\sqrt{2}$; matching $2L=24\\sqrt{2}$ gives $L=12\\sqrt{2}$, and then $L\\sqrt{2}=24$ matches the rational part.\n\n**The Full Solution:**\n\nStep 1: Write the perimeter. Two congruent legs $L$ and hypotenuse $L\\sqrt{2}$ give $P=2L+L\\sqrt{2}$.\n\nStep 2: Set up the equation. $L(2+\\sqrt{2})=24+24\\sqrt{2}$, so $L=\\frac{24+24\\sqrt{2}}{2+\\sqrt{2}}$.\n\nStep 3: Rationalize. Multiplying numerator and denominator by $2-\\sqrt{2}$ gives $L=\\frac{(24+24\\sqrt{2})(2-\\sqrt{2})}{2}=\\frac{24\\sqrt{2}}{2}=12\\sqrt{2}$ inches.\n\nCheck: $2(12\\sqrt{2})+12\\sqrt{2}\\cdot\\sqrt{2}=24\\sqrt{2}+24$, exactly the given trim length.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($12$): halves the rational part $24$ of the perimeter and calls that a leg.\n* Choice C ($24$): reads the rational part $24$ as a leg, but $24$ is the hypotenuse of this triangle.\n* Choice D ($24\\sqrt{2}$): hands the entire irrational part of the perimeter to a single side instead of splitting it between the two legs.\n\n**Test Day Takeaway:** In a $45$-$45$-$90$ perimeter, the two legs carry the $\\sqrt{2}$ term and the hypotenuse carries the rational term — match the parts instead of guessing."
+}

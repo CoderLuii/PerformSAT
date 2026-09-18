@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-121",
+  "question": "A jeweler's alloy contains gold, silver, and copper by mass in the ratio $15 : 3 : 2$, respectively. A bar of this alloy has a mass of $360$ grams. How many grams of silver does the bar contain?",
+  "correctAnswer": "54",
+  "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**The correct answer is $54$.**\n\n**The Fast Way (~15s):** The ratio has $15 + 3 + 2 = 20$ parts, so one part is $360 \\div 20 = 18$ grams. Silver is $3$ parts: $3(18) = 54$ grams.\n\n**The Full Solution:**\nStep 1: Add the ratio numbers to get the total number of parts: $15 + 3 + 2 = 20$.\nStep 2: The whole bar, $360$ grams, is spread over $20$ parts, so one part is $\\frac{360}{20} = 18$ grams.\nStep 3: Silver accounts for $3$ parts: $3 \\times 18 = 54$ grams. Check: gold is $15 \\times 18 = 270$ grams and copper is $2 \\times 18 = 36$ grams, and $270 + 54 + 36 = 360$. $\\checkmark$\n\n**Common Mistakes:** Dividing $360$ by the silver number $3$ to get $120$; reporting one part, $18$, instead of three parts; adding only $15 + 3 = 18$ parts (dropping copper), which gives $20$ grams per part and $60$ grams of silver.\n\n**Test Day Takeaway:** Total $\\div$ (sum of the ratio parts) gives the size of one part; then multiply by the number of parts the question actually asks about."
+}

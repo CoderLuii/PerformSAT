@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-272",
+ "question": "The daily handling cost, in thousands of dollars, at a freight terminal is modeled by $C(x) = 4(x - 6)^2 + 15$, where $x$ is the number of loading bays in service. Which expression is equivalent to $C(x)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4x^2 - 48x + 51$"
+  },
+  {
+   "id": "B",
+   "text": "$4x^2 - 48x + 159$"
+  },
+  {
+   "id": "C",
+   "text": "$4x^2 - 12x + 159$"
+  },
+  {
+   "id": "D",
+   "text": "$4x^2 + 48x + 159$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 36 + 15 before multiplying by 4, giving the constant 51",
+  "C": "forgets to multiply the middle term by 4, leaving -12x while the constant is handled correctly",
+  "D": "squares (x - 6) as x^2 + 12x + 36, flipping the sign of the middle term"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Square the binomial, multiply every term by $4$, then add $15$: $4x^2 - 48x + 144 + 15$.\n\n**The Full Solution:**\nStep 1: Expand the square: $(x - 6)^2 = x^2 - 12x + 36$.\nStep 2: Distribute the $4$ across all three terms: $4x^2 - 48x + 144$.\nStep 3: Add the outside constant: $4x^2 - 48x + 159$. Check at $x = 6$: the model gives $15$, and $4(36) - 48(6) + 159 = 144 - 288 + 159 = 15$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4x^2 - 48x + 51$): adds $36 + 15$ first and multiplies only the $x$-terms by $4$, producing the constant $51$ instead of $159$.\n* Choice C ($4x^2 - 12x + 159$): multiplies the $x^2$ term and the constant by $4$ but forgets the middle term, leaving $-12x$.\n* Choice D ($4x^2 + 48x + 159$): expands $(x - 6)^2$ as $x^2 + 12x + 36$, flipping the sign of the middle term.\n\n**Test Day Takeaway:** The $4$ in front of a squared binomial multiplies all three terms of the expansion, and the outside constant is added only at the end."
+}

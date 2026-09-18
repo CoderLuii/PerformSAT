@@ -28,16 +28,10 @@ import CommandPalette from './components/ui/CommandPalette';
 import { ChartBarIcon, PlayIcon, ClipboardIcon, TargetIcon, CalendarIcon, BrainIcon, BookOpenIcon } from './design/icons';
 import { buildRounds, classifyRoundBoundary, findRoundIndexForQuestion } from './services/buildRounds';
 import { restoreAnswerStateForQuestion, buildResumableDrill } from './services/practiceNavigation';
-// diagnosticReportLoader (loadDiagnosticReportData / pickMostRecentTest) is
-// loaded as a lazy chunk via loadReportLoader() below — a static import here
-// welded diagnosticEngine (~190KB) into the main bundle. All call sites are async.
-import {
-  getLatestAttempt,
-  itemKey,
-  findErrorClassForItem,
-  extractItemsFromAttempt,
-} from './services/selectors/completedTests';
+import { pickMostRecentTest } from './services/selectors/recentTest';
 import { sectionModuleLabel } from './services/selectors/moduleLabel';
+import { chooseDiagnosticVariant, DIAGNOSTIC_LAUNCH_FIRST, DIAGNOSTIC_LAUNCH_PLAN_CHECKIN } from './services/selectors/diagnosticVariant';
+import { getTrustedBandMidpoint } from './services/selectors/estimatedBaseline';
 // Corpus access (Stage 2b of the bundle-split plan): the question banks,
 // practice-test bundles, and the two corpus-coupled services load as their
 // own chunks via these memoized dynamic-import loaders. Handlers `await`
@@ -58,15 +52,33 @@ import {
 } from './services/reviewQueueResolve';
 import { selectPacingQuestions } from './services/pacingService';
 import { trackPacingDrillDone, trackReengagementOpened, trackEvent } from './services/analyticsService';
+import { phScreenView } from './services/posthogClient';
 import { consumeTutorExchange, makeQuestionKey } from './services/tutorExchangeTracker';
 import { buildDailySession } from './services/dailyReviewEngine';
 import { getReadyAiDiagnostic, loadAttemptSnapshot } from './services/practiceTestService';
 import { reprioritizePlan } from './services/adaptivePlanService';
 import { findMatchingPlanActivity } from './services/selectors/planActivityMatch';
 import { buildTestFlagEntries } from './services/selectors/flaggedQuestions';
-import { DEFAULT_GOAL_SCORE } from './services/selectors/goalProgress';
 import { logInfo, logWarn } from './utils/log';
 import { CB_MATH_SKILLS, CB_RW_SKILLS } from './data/questions/cbSkillTaxonomy';
+// Direct (non-lazy) import: the drill calculator must open instantly when the
+// student clicks "Calculator" in a practice shell. Lazy-loading it would suspend
+// the whole practice view (it renders inside the shared Suspense boundary) and
+// blank the screen on first open. The heavy Desmos library still loads lazily at
+// runtime via a script tag inside the component.
+import DesmosCalculator from './components/DesmosCalculator';
+// Pin the shared answer-choice + passage stylesheet order in the MAIN chunk.
+// ReviewItemCard used to establish this order as an eager import; now that it's
+// lazy (to keep MathText -> katex out of main), these two stylesheets would
+// otherwise be pulled into a shared async chunk where mini-css-extract can't
+// reconcile the order — MiniDiagnosticShell imports them passage-before-choices
+// while every other consumer imports choices-before-passage, which fails the
+// CI "Conflicting order" check. Loading them here (choices first, the majority
+// order) keeps them in main and resolves the conflict globally. CSS only —
+// zero JS weight, no katex. These three MUST stay last in the import block —
+// import execution order is what pins the stylesheet cascade.
+import './components/shared/AnswerChoiceList.css';
+import './components/rw/HighlightablePassage.css';
 
 // ── Code-split view components (Stage 1 of the bundle-split plan) ──────────
 // Each heavy view loads as its own webpack chunk on first render. The single
@@ -84,6 +96,10 @@ const TestResults = React.lazy(() => import('./components/TestResults'));
 // On-ramp check-in: lazy chunk carries the sampler + diagnosis pipeline
 // (banks, studyPlanGenerator) — never import it statically (bundle guard).
 const MiniDiagnosticShell = React.lazy(() => import('./components/MiniDiagnostic/MiniDiagnosticShell'));
+// Re-opened diagnosis (dashboard "View your diagnosis"): same results screen
+// the diagnostic ends on, rebuilt from the persisted record. Lazy for the same
+// reason as the shell — it imports diagnosticEngine (bundle guard).
+const MiniDiagnosticResults = React.lazy(() => import('./components/MiniDiagnostic/MiniDiagnosticResults'));
 // Post-signup inner onboarding: lazy chunk shown once, before the home screen.
 const InnerOnboarding = React.lazy(() => import('./components/onboarding/InnerOnboarding'));
 const Profile = React.lazy(() => import('./components/Profile'));
@@ -92,35 +108,12 @@ const AdaptivePracticeShell = React.lazy(() => import('./components/AdaptivePrac
 const AssignedPracticeShell = React.lazy(() => import('./components/AssignedPracticeShell'));
 const PacingDrill = React.lazy(() => import('./components/PacingDrill'));
 const PracticeBank = React.lazy(() => import('./components/PracticeBank'));
-const DiagnosticReport = React.lazy(() => import('./components/DiagnosticReport'));
 const LearnWorkspace = React.lazy(() => import('./components/learn/LearnWorkspace'));
 const LessonBrowser = React.lazy(() => import('./components/LessonBrowser'));
 const LearnTab = React.lazy(() => import('./components/learnTab/LearnTab'));
 const ChapterReader = React.lazy(() => import('./components/learnTab/ChapterReader'));
-const ReviewItemCard = React.lazy(() => import('./components/PastTestReview/ReviewItemCard'));
-const PastTestReviewIndex = React.lazy(() => import('./components/PastTestReview/PastTestReviewIndex'));
-const TestReviewDetail = React.lazy(() => import('./components/PastTestReview/TestReviewDetail'));
 const PaywallScreen = React.lazy(() => import('./components/billing/PaywallScreen'));
 const TrialBanner = React.lazy(() => import('./components/billing/TrialBanner'));
-
-// Direct (non-lazy) import: the drill calculator must open instantly when the
-// student clicks "Calculator" in a practice shell. Lazy-loading it would suspend
-// the whole practice view (it renders inside the shared Suspense boundary) and
-// blank the screen on first open. The heavy Desmos library still loads lazily at
-// runtime via a script tag inside the component.
-import DesmosCalculator from './components/DesmosCalculator';
-
-// Pin the shared answer-choice + passage stylesheet order in the MAIN chunk.
-// ReviewItemCard used to establish this order as an eager import; now that it's
-// lazy (to keep MathText -> katex out of main), these two stylesheets would
-// otherwise be pulled into a shared async chunk where mini-css-extract can't
-// reconcile the order — MiniDiagnosticShell imports them passage-before-choices
-// while every other consumer imports choices-before-passage, which fails the
-// CI "Conflicting order" check. Loading them here (choices first, the majority
-// order) keeps them in main and resolves the conflict globally. CSS only —
-// zero JS weight, no katex.
-import './components/shared/AnswerChoiceList.css';
-import './components/rw/HighlightablePassage.css';
 
 // Text-free skeleton shown while a lazy view chunk loads. Composed from the
 // shared Skeleton primitives. Renders INSIDE #main-content, so the takingTest
@@ -169,19 +162,6 @@ const loadDiagnosticEngine = () => {
   }
   return diagnosticEngineChunkPromise;
 };
-// diagnosticReportLoader statically imports diagnosticEngine, so a static
-// import of it here (App is the main chunk) kept the whole ~190KB diagnostic
-// stack welded into main even after runDiagnostic went dynamic above. All of
-// its call sites are async, so load it as a chunk too.
-let reportLoaderChunkPromise = null;
-const loadReportLoader = () => {
-  if (!reportLoaderChunkPromise) {
-    reportLoaderChunkPromise = import(/* webpackChunkName: "diagnostic-report-loader" */ './services/diagnosticReportLoader')
-      .catch((err) => { reportLoaderChunkPromise = null; throw err; });
-  }
-  return reportLoaderChunkPromise;
-};
-
 // Shown when a corpus/chunk loader rejects at a launcher await (offline or a
 // stale chunk after deploy). The loaders above evict their poisoned cache on
 // rejection, so the same click works on retry once the network recovers.
@@ -192,21 +172,6 @@ const CORPUS_LOAD_ERROR = 'Could not load practice content. Check your connectio
 // webhook can't grant access indefinitely — after this we fall back to the
 // normal paywall gate. ~3 min comfortably covers Stripe's webhook latency.
 const CHECKOUT_GRACE_MS = 3 * 60 * 1000;
-
-// ── Past-Test-Review telemetry (Phase 7 of PAST_TEST_REVIEW_PLAN.md) ──
-// Events are scoped under [performsat:pastTestReview] so they're filterable
-// in DevTools and pre-shaped for a future analytics integration. Suppressed
-// in prod unless localStorage['performsat:logVerbose']='1'.
-//
-// Success thresholds (committed in plan doc, CEO R2-F3):
-//   - Adoption:  ≥30% of students-with-tests open the surface within 2 weeks
-//   - Engagement: median session reviews ≥5 items
-//   - Retry conv: ≥40% of TestReviewDetail visitors click Retry
-//   - Sunset gate: <15% adoption by week 4 → re-evaluate
-const PTR_LOG_SCOPE = 'pastTestReview';
-const logPtrEvent = (event, data = {}) => {
-  logInfo(PTR_LOG_SCOPE, event, data);
-};
 
 // Premium Design System - Clean, Modern, Professional
 const design = {
@@ -336,7 +301,7 @@ const PerformSAT = () => {
   const [lessonsLoadError, setLessonsLoadError] = useState(false);
   // Bumped by the Learn-view retry button to re-run the lesson-load effect.
   const [lessonsRetryToken, setLessonsRetryToken] = useState(0);
-  const [view, setView] = useState('dashboard'); // 'dashboard' | 'practice' | 'practiceTests' | 'takingTest' | 'profile' | 'studyPlan' | 'tutor' | 'viewingResults' | 'diagnosticReport' | 'reviewingPastResults' | 'pastTestReviewIndex' | 'pastTestReviewDetail' | 'pastTestReviewItem' | 'pacingDrill'
+  const [view, setView] = useState('dashboard'); // 'dashboard' | 'practice' | 'practiceTests' | 'takingTest' | 'profile' | 'studyPlan' | 'tutor' | 'diagnosticReport' | 'diagnosticResults' | 'reviewingPastResults' | 'pacingDrill'
   // On-ramp (signup mini-diagnostic) state. `onRampActive` is tri-state:
   // null = eligibility not yet decided, true = flow mounted instead of the
   // app shell, false = dismissed for this session. The activation effect
@@ -347,6 +312,14 @@ const PerformSAT = () => {
   // the on-ramp goes straight to the 24Q check-in.
   const ffOnRamp = useFeatureFlag('onRamp');
   const [onRampActive, setOnRampActive] = useState(null);
+  // Diagnostic v2 (REACT_APP_FF_DIAGNOSTIC_V2 / ff:diagnosticV2): the
+  // diagnostic runs as a synthetic adaptive test inside the real PracticeTest
+  // runner (timed Bluebook modules, calculator, highlighting, fill-ins)
+  // instead of the custom MiniDiagnosticShell. Flag OFF = old shell path,
+  // which is the rollback. diagnosticTest: null = not built yet, 'error' =
+  // build failed (renderOnRamp shows retry), object = ready to mount.
+  const ffDiagnosticV2 = useFeatureFlag('diagnosticV2');
+  const [diagnosticTest, setDiagnosticTest] = useState(null);
   // Inner onboarding (post-signup, pre-home) state — same tri-state contract as
   // onRampActive. A fresh account runs this ONCE, then lands on the first-run
   // home where the diagnostic CTA is waiting; the diagnostic no longer
@@ -370,6 +343,43 @@ const PerformSAT = () => {
   // section's first module on fresh start (instead of always starting at M1).
   const [initialTestSection, setInitialTestSection] = useState(null);
   const [viewingResultsData, setViewingResultsData] = useState(null); // { test, answers, diagnosticData, diagnosticReport }
+  // Profile deep-link: 'goals' lands on the SAT Goals card (target / test
+  // date) — set by the score surfaces' nuance actions, cleared on leaving.
+  const [profileFocus, setProfileFocus] = useState(null);
+  // The diagnostic sitting snapshot behind "View your diagnosis": loaded on
+  // demand when that view opens, keyed by the record's attemptId so a
+  // re-open doesn't refetch. status: idle | loading | ready | missing | error.
+  const [diagnosticSitting, setDiagnosticSitting] = useState({ status: 'idle', data: null, attemptId: null });
+  // Where the re-opened diagnosis returns to: Home's "View your diagnosis"
+  // link or the Diagnostic card at the top of the Practice Tests list.
+  const [diagnosisReturnTo, setDiagnosisReturnTo] = useState('dashboard');
+  const openDiagnosis = (returnTo) => { setDiagnosisReturnTo(returnTo); setView('diagnosticResults'); };
+  // Question-by-question review of the diagnostic sitting in the same runner
+  // past practice tests use. Needs the loaded snapshot; no-op until 'ready'.
+  const openDiagnosticReview = (moduleIndex, returnTo) => {
+    const data = diagnosticSitting.status === 'ready' ? diagnosticSitting.data : null;
+    if (!data) return;
+    setViewingResultsData({
+      test: data.test,
+      answers: data.answers,
+      reviewModule: Number.isFinite(moduleIndex) ? moduleIndex : 0,
+      attemptId: data.attemptId,
+      snapshotMissing: false,
+      answersMissing: !!data.answersMissing,
+      returnTo,
+    });
+    setView('reviewingPastResults');
+  };
+  // The diagnosis REPORT needs the full snapshot (answers + timing); a
+  // questions-only legacy rebuild keeps that screen on its by-domain fallback.
+  const fullDiagnosticSitting = diagnosticSitting.status === 'ready' && diagnosticSitting.data && !diagnosticSitting.data.answersMissing
+    ? diagnosticSitting.data
+    : null;
+  const openProfileGoals = () => { setProfileFocus('goals'); setView('profile'); };
+  useEffect(() => {
+    // Sidebar / palette routes into Profile must not inherit a stale deep-link.
+    if (view !== 'profile' && profileFocus !== null) setProfileFocus(null);
+  }, [view, profileFocus]);
 
   // Practice state.
   //
@@ -401,32 +411,6 @@ const PerformSAT = () => {
     practiceMode: 'standard' // pre-launch default; every live launcher sets 'assigned' | 'adaptive'
   });
 
-  // Past-Test-Review state (Phase 6 of PAST_TEST_REVIEW_PLAN.md).
-  // The "review bundle" is the result of loadDiagnosticReportData for the
-  // selected test — async-fetched once when a test is selected and reused
-  // by both TestReviewDetail and ReviewItemCard so the snapshot fetch
-  // happens only once per session.
-  const [selectedReviewTestId, setSelectedReviewTestId] = useState(null);
-  const [selectedReviewItem, setSelectedReviewItem] = useState(null);
-  const [reviewBundle, setReviewBundle] = useState(null);
-  const [reviewBundleLoading, setReviewBundleLoading] = useState(false);
-  const [reviewBundleError, setReviewBundleError] = useState(null);
-  // Tracks where the user opened past-test-review FROM, so the back path
-  // can return them to the same surface (Dashboard tab vs immersive Study
-  // Plan view). Without this, entering from the Dashboard tab and clicking
-  // back drops them on the standalone Study Plan view, losing tab context.
-  const [pastTestReviewEntryView, setPastTestReviewEntryView] = useState('studyPlan');
-  // True when the per-test review was opened by deep-linking from the plan's
-  // Review Queue (vs browsing the index). Controls the detail view's back
-  // target: deep-linked → back to the plan; browsed → back to the index.
-  const [reviewEnteredViaDeepLink, setReviewEnteredViaDeepLink] = useState(false);
-  // Monotonic request ID for handleSelectReviewTest — guards against
-  // the user clicking a second test card before the first fetch resolves.
-  // Without this, fetchB-resolves-first followed by fetchA-resolves-second
-  // would clobber B's bundle with A's data and the UI would show A while
-  // the user expected B.
-  const reviewBundleRequestRef = useRef(0);
-
   // Calculator state for practice
   const [showCalculator, setShowCalculator] = useState(false);
 
@@ -443,8 +427,8 @@ const PerformSAT = () => {
     return () => window.removeEventListener('keydown', handleEsc);
   }, [showCalculator]);
 
-  const { user, loading, logout, updateTestDate, updateTargetScore, updateCurrentScore, updateTargetSchools, updateProfilePhoto, updateFirstName, markOnboardingComplete, markOnboardingSkipped, completeInnerOnboarding } = useAuth();
-  const { loading: progressLoading, hydrated: progressHydrated, completedLessons, practiceProgress, drillDays, reviewQueue, reviewStreak, skillProgress, answeredQuestionIds, practiceTestResults, inProgressTests, studyPlan, studyPlanMeta, studyPlanArtifact, predictionLog, interventionLog, studentFingerprint, miniDiagnostic, bankPractice, activeDrill, flaggedQuestions, recordDrillSkillAttempts, recordPracticedDay, recordBankPractice, saveActiveDrill, clearActiveDrill, toggleFlagQuestion, unflagQuestion, flagQuestionsBatch, getDueCount, getReviewStatistics, getSkillDiagnosticSummary, getSkillBreakdown, recordPracticeTestAttempt, getTestBestScore, getTestAttempts, saveTestProgress, clearTestProgress, resetPracticeTest, removeTestAttempt, getTestProgress, hasTestProgress, saveMiniDiagnostic, saveStudyPlan, saveEditedStudyPlan, markStudyActivityComplete, unmarkStudyActivityComplete, markLessonComplete, isLessonCompleted, getModuleProgress, chaptersRead, markChapterComplete, unmarkChapterComplete, isChapterComplete, lastSaveStatus, retryLastSave } = useProgress(user?.uid);
+  const { user, loading, logout, updateTestDate, updateTestDates, recordScoreReport, updateTargetScore, updateCurrentScore, updateTargetSchools, updateProfilePhoto, updateFirstName, markOnboardingComplete, markOnboardingSkipped, completeInnerOnboarding } = useAuth();
+  const { loading: progressLoading, hydrated: progressHydrated, completedLessons, practiceProgress, drillDays, reviewQueue, reviewStreak, skillProgress, answeredQuestionIds, practiceTestResults, inProgressTests, studyPlan, studyPlanMeta, studyPlanArtifact, predictionLog, interventionLog, studentFingerprint, miniDiagnostic, bankPractice, activeDrill, flaggedQuestions, recordDrillSkillAttempts, recordPracticedDay, recordBankPractice, saveActiveDrill, clearActiveDrill, toggleFlagQuestion, unflagQuestion, flagQuestionsBatch, getDueCount, getSkillDiagnosticSummary, getSkillBreakdown, recordPracticeTestAttempt, getTestBestScore, getTestAttempts, saveTestProgress, clearTestProgress, resetPracticeTest, removeTestAttempt, getTestProgress, hasTestProgress, saveMiniDiagnostic, saveStudyPlan, saveEditedStudyPlan, markStudyActivityComplete, unmarkStudyActivityComplete, markLessonComplete, isLessonCompleted, getModuleProgress, chaptersRead, markChapterComplete, unmarkChapterComplete, isChapterComplete, lastSaveStatus, retryLastSave } = useProgress(user?.uid);
 
   // Mount the analytics session lifecycle (session_start / session_end +
   // beforeunload flush). Previously orphaned — the hook existed but was never
@@ -546,6 +530,15 @@ const PerformSAT = () => {
       setView('paywall');
     }
   }, [entitlement.flagEnabled, entitlement.loading, entitlement.hasAccess, entitlement.hasBillingAccount, entitlement.hasEntitlementDoc, user, view]);
+
+  // Mirror in-app screen changes to PostHog as synthetic pageviews (the URL
+  // stays /course while `view` swaps, so history-based capture can't see
+  // them). Keyed on uid, not the user object, so profile-field updates that
+  // produce a new user identity don't re-fire the current screen.
+  const analyticsUid = user?.uid;
+  useEffect(() => {
+    if (analyticsUid) phScreenView(view);
+  }, [analyticsUid, view]);
 
   // ── Live plan reprioritization (adaptivity audit item 3) ─────────────────
   // reprioritizePlan used to run ONLY in the post-test save path, so its
@@ -665,7 +658,7 @@ const PerformSAT = () => {
       setShowCalculator(false);
       setView('practice');
     }
-  }, []);
+  }, [ensurePracticeAccess]);
 
   // ── Re-engagement nudge deep-link (?next=review|tasks) ──────────────────
   // A push nudge's click action lands the student on /course?next=review. Read
@@ -776,6 +769,7 @@ const PerformSAT = () => {
     pendingBankDrillRef.current = session;
     const timer = setTimeout(() => { saveActiveDrill(session); pendingBankDrillRef.current = null; }, 600);
     return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- deliberately keyed on the four practiceState fields that must trigger a save; whole-object `practiceState` would re-fire (and re-debounce) on every unrelated field change, and saveActiveDrill/clearActiveDrill/activeSection are fresh per render and are read live inside
   }, [user?.uid, view, practiceState.currentQuestionIndex, practiceState.answers, practiceState.currentRoundIndex, practiceState.isComplete]);
 
   // Flush a pending bank-drill save when the student LEAVES the practice view by
@@ -791,6 +785,7 @@ const PerformSAT = () => {
       saveActiveDrill(pendingBankDrillRef.current);
       pendingBankDrillRef.current = null;
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- saveActiveDrill is a fresh closure every render (no useCallback), so depending on it would run this leave-flush on every render instead of only on a practice -> elsewhere transition
   }, [view]);
 
   // Best-effort flush when the tab is hidden / closed (covers a hard refresh
@@ -811,6 +806,7 @@ const PerformSAT = () => {
     // correct-userId saveActiveDrill once auth resolves (an empty dep array would
     // freeze the pre-auth, userId-null closure and never flush). The handler
     // reads pendingBankDrillRef.current live, so nothing goes stale between.
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- see the note above: depending on the per-render saveActiveDrill closure would re-subscribe the visibilitychange listener on every render
   }, [user?.uid]);
 
   // On-ramp eligibility — decided once per session after progress hydrates.
@@ -826,11 +822,23 @@ const PerformSAT = () => {
     // user first resolves, loading still reads false from the boot no-user
     // state, and deciding there would miss an in-flight check-in resume.
     if (!ffOnRamp || !user || !progressHydrated) return;
-    const hasResume = !!(inProgressTests && inProgressTests['mini-diagnostic']);
+    const savedSitting = inProgressTests && inProgressTests['mini-diagnostic'];
+    // With Diagnostic v2 on, only a v2 record (manifest present) is resumable
+    // — a stale v1-shell record would be discarded by the build effect and
+    // replaced with a brand-new 40Q sitting, i.e. an unprompted auto-LAUNCH,
+    // which this effect must never do.
+    const hasResume = !!savedSitting && (!ffDiagnosticV2 || !!savedSitting.diagnosticManifest);
     // Resume an in-flight check-in even past a skip stamp; never auto-launch
-    // a fresh one.
-    setOnRampActive(hasResume === true);
-  }, [onRampActive, ffOnRamp, user, progressHydrated, inProgressTests]);
+    // a fresh one. A student who deliberately exited mid-sitting gets a 24h
+    // snooze (set by the exit handler) instead of a full-screen seize at
+    // every login — the dashboard resume card stays as the way back in.
+    let snoozed = false;
+    try {
+      const ts = Number(localStorage.getItem(`seva:onrampSnooze:${user.uid}`) || 0);
+      snoozed = ts > 0 && (Date.now() - ts) < 24 * 60 * 60 * 1000;
+    } catch { /* storage unavailable — default to resuming */ }
+    setOnRampActive(hasResume === true && !snoozed);
+  }, [onRampActive, ffOnRamp, ffDiagnosticV2, user, progressHydrated, inProgressTests]);
 
   // Inner-onboarding eligibility — decided once per session after hydration.
   // Eligible: flagged on, a fresh account with nothing behind it yet (no inner
@@ -840,10 +848,22 @@ const PerformSAT = () => {
   useEffect(() => {
     if (innerOnboardingActive !== null) return; // decided already this session
     if (!ffInnerOnboarding || !user || !progressHydrated) { return; }
+    // Trial-first ordering (billing live): the card-up-front wall is the step
+    // right after signup, and inner onboarding runs INSIDE the active trial.
+    // While the account has no access yet (doc still seeding, promo still
+    // redeeming, or the wall is owed), defer the decision — deciding true here
+    // would paint onboarding first and then yank the student to the wall
+    // mid-flow. hasAccess flips (trial/comped/grandfathered) → decide then.
+    if (entitlement.flagEnabled && !entitlement.hasAccess) { return; }
     // Dev-only QA escape: ?forceInnerOnboarding=1 re-runs the flow for any
     // account (completion still stamps, so it won't loop on real accounts).
     const forced = process.env.NODE_ENV === 'development' &&
       new URLSearchParams(window.location.search).has('forceInnerOnboarding');
+    // "Do this later" drops a local marker: from then on the flow never
+    // auto-seizes the screen (refresh included) — the "Finish onboarding"
+    // hero button is the way back in.
+    let dismissed = false;
+    try { dismissed = !!localStorage.getItem(`seva:innerOnboarding:dismissed:${user.uid}`); } catch { /* storage unavailable */ }
     const hasTests = Object.keys(practiceTestResults || {}).length > 0;
     const hasResume = !!(inProgressTests && inProgressTests['mini-diagnostic']);
     const eligible =
@@ -851,8 +871,8 @@ const PerformSAT = () => {
       !user.onboardingCompletedAt &&
       !user.onboardingSkippedAt &&
       !hasTests && !studyPlan && !hasResume;
-    setInnerOnboardingActive(forced || eligible === true);
-  }, [innerOnboardingActive, ffInnerOnboarding, user, progressHydrated, practiceTestResults, inProgressTests, studyPlan]);
+    setInnerOnboardingActive(forced || (eligible && !dismissed) === true);
+  }, [innerOnboardingActive, ffInnerOnboarding, user, progressHydrated, practiceTestResults, inProgressTests, studyPlan, entitlement.flagEnabled, entitlement.hasAccess]);
 
   const handleOnRampSkip = () => {
     setOnRampActive(false);
@@ -863,10 +883,62 @@ const PerformSAT = () => {
   // the check-in runner (goal/context now arrive with signup via the funnel;
   // students without a goal get DEFAULT_GOAL_SCORE pacing and can edit it
   // in Profile).
-  const handleResumeOnRamp = () => {
+  // Launch source decides the sitting (see selectors/diagnosticVariant): the
+  // onboarding / home "Take your diagnostic" CTA is the starting point → full
+  // 40Q even over a stale record; only the plan's scheduled check-in card
+  // serves the short focus-weighted variant. Read by the build effect below.
+  const diagLaunchSourceRef = useRef(null);
+  const launchDiagnostic = (source) => {
     if (!ensurePracticeAccess()) return;
+    diagLaunchSourceRef.current = source;
+    // A deliberate launch clears the exit snooze — the student asked for it.
+    try { localStorage.removeItem(`seva:onrampSnooze:${user?.uid}`); } catch { /* storage unavailable */ }
     setOnRampActive(true);
   };
+  const handleResumeOnRamp = () => launchDiagnostic(DIAGNOSTIC_LAUNCH_FIRST);
+  const handleStartPlanCheckIn = () => launchDiagnostic(DIAGNOSTIC_LAUNCH_PLAN_CHECKIN);
+
+  // Sitting snapshot fetch for the re-opened diagnosis (needs user + the
+  // miniDiagnostic record, both declared above). Also prefetched on the
+  // Practice Tests list, whose Diagnostic card offers "Review answers" — one
+  // doc read, and the attemptId key means the later diagnosis open is free.
+  // Keyed by attemptId through a ref so the effect never re-arms on its own
+  // status change (a cleanup on that re-run used to drop the in-flight result
+  // and strand "Loading…").
+  const sittingLoadedFor = useRef(null);
+  useEffect(() => {
+    if ((view !== 'diagnosticResults' && view !== 'practiceTests') || !user?.uid) return;
+    const attemptId = miniDiagnostic?.attemptId || null;
+    if (!attemptId) {
+      if (sittingLoadedFor.current !== '__none__') {
+        sittingLoadedFor.current = '__none__';
+        setDiagnosticSitting({ status: 'missing', data: null, attemptId: null });
+      }
+      return;
+    }
+    if (sittingLoadedFor.current === attemptId) return; // loaded / in flight
+    sittingLoadedFor.current = attemptId;
+    setDiagnosticSitting({ status: 'loading', data: null, attemptId });
+    // Records with no snapshot (pre-2026-08-24, or a failed snapshot write)
+    // still rebuild their exact QUESTIONS from the record's item ids — the
+    // loader marks those `answersMissing`, which the diagnosis screen treats
+    // as 'missing' while the review runner still opens on them.
+    const record = miniDiagnostic;
+    import(/* webpackChunkName: "diagnostic-sitting-loader" */ './services/diagnosticSittingLoader')
+      .then(({ loadDiagnosticSitting }) => loadDiagnosticSitting({
+        userId: user.uid, attemptId, record, snapshotSaved: record?.sittingSaved,
+      }))
+      .then((data) => {
+        // A late result is still the right result — state is keyed by attemptId.
+        setDiagnosticSitting({ status: data ? 'ready' : 'missing', data, attemptId });
+      })
+      .catch((err) => {
+        // eslint-disable-next-line no-console
+        console.warn('[App] diagnostic sitting load failed:', err && err.message);
+        sittingLoadedFor.current = null; // let the next open retry
+        setDiagnosticSitting({ status: 'error', data: null, attemptId });
+      });
+  }, [view, user?.uid, miniDiagnostic]);
 
   const handleOnRampFinished = async ({ plan, diagReport, miniDiagnosticRecord }) => {
     // Order matters for resilience: plan mirror first (the artifact is already
@@ -890,22 +962,186 @@ const PerformSAT = () => {
     }
   };
 
-  const renderOnRamp = () => (
-    <React.Suspense fallback={<div style={{ minHeight: '100vh', background: '#ffffff' }} />}>
-      <MiniDiagnosticShell
-        user={user}
-        savedProgress={getTestProgress('mini-diagnostic')}
-        onSaveProgress={saveTestProgress}
-        onClearProgress={clearTestProgress}
-        answeredQuestionIds={answeredQuestionIds}
-        completedLessons={completedLessons}
-        practiceProgress={practiceProgress}
-        onFinished={handleOnRampFinished}
-        onViewPlan={() => { setOnRampActive(false); setView('studyPlan'); }}
-        onSkip={handleOnRampSkip}
-      />
-    </React.Suspense>
-  );
+  // Diagnostic v2 build/rebuild — runs only while the on-ramp is mounted with
+  // the flag on. Resume rebuilds the EXACT sitting from the persisted manifest
+  // (never re-sampled — saved modIdx-qIdx answers must stay aligned); bank
+  // drift (a manifest id gone from the banks) discards the sitting and builds
+  // fresh. First-ever diagnostic gets the full 40Q adaptive variant; once a
+  // plan or a prior diagnostic exists, check-ins get the ~25-min focused
+  // variant weighted toward the plan's current focus skills.
+  // Inputs the async build reads at RUN time, held in a ref so their
+  // per-render identities (plain closures from useProgress, snapshot-churned
+  // objects) never re-trigger the effect — a restarted build re-rolls the
+  // attemptId and re-samples the sitting mid-load.
+  const diagBuildInputsRef = useRef(null);
+  diagBuildInputsRef.current = { getTestProgress, clearTestProgress, answeredQuestionIds, studyPlan, miniDiagnostic, practiceTestResults };
+  useEffect(() => {
+    if (onRampActive !== true || !ffDiagnosticV2 || !user?.uid) return undefined;
+    if (diagnosticTest) return undefined; // built already (or 'error' — retry is explicit)
+    let cancelled = false;
+    (async () => {
+      try {
+        const { buildDiagnosticTest, rebuildDiagnosticTest } =
+          await import('./services/miniDiagnostic/buildDiagnosticTest');
+        const inputs = diagBuildInputsRef.current;
+        const saved = inputs.getTestProgress('mini-diagnostic');
+        if (saved?.diagnosticManifest) {
+          // A rebuild that THROWS (corrupt manifest, bank chunk error mid-
+          // lookup) is bank drift too — fall through to a fresh sitting
+          // instead of the error screen with the record stuck forever.
+          let rebuilt = null;
+          try { rebuilt = await rebuildDiagnosticTest(saved.diagnosticManifest); } catch { rebuilt = null; }
+          if (rebuilt) {
+            if (!cancelled) setDiagnosticTest(rebuilt);
+            return;
+          }
+          if (!cancelled) inputs.clearTestProgress('mini-diagnostic');
+        } else if (saved) {
+          // A LEGACY v1-shell record (no manifest): its '0-*'/'1-*' answers
+          // would pre-fill a freshly sampled v2 test with phantom answers on
+          // questions the student never saw — corrupting routing, the band,
+          // and the plan. Clear it and start a fresh sitting.
+          if (!cancelled) inputs.clearTestProgress('mini-diagnostic');
+        }
+        if (cancelled) return;
+        // Full vs check-in: the launch source decides (selectors/
+        // diagnosticVariant). Onboarding / home CTA → always the full 40Q
+        // starting point, even when a stale record exists (a check-in's band
+        // never anchors the score, so serving it there carried a stale band
+        // forward as the "starting score"). The plan's check-in card → the
+        // short variant, but only for a measured student (diagnostic record
+        // or scoreable real-test attempt — a funnel starter plan is a
+        // scaffold, not evidence).
+        const variant = chooseDiagnosticVariant({
+          launchSource: diagLaunchSourceRef.current,
+          miniDiagnostic: inputs.miniDiagnostic,
+          practiceTestResults: inputs.practiceTestResults,
+        });
+        const focusSkills = (inputs.studyPlan?.weaknesses || [])
+          .map((w) => w.skillId)
+          .filter(Boolean)
+          .slice(0, 6);
+        const attemptId = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+        const { test } = await buildDiagnosticTest({
+          userId: user.uid,
+          attemptId,
+          excludeIds: inputs.answeredQuestionIds || [],
+          variant,
+          focusSkills,
+        });
+        if (!cancelled) setDiagnosticTest(test);
+      } catch (e) {
+        console.error('[diagnosticV2] build failed:', e);
+        if (!cancelled) setDiagnosticTest('error');
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [onRampActive, ffDiagnosticV2, user?.uid, diagnosticTest]);
+
+  // Leaving the on-ramp drops the built test so the next entry (a later
+  // check-in) samples a fresh sitting instead of remounting a finished one.
+  useEffect(() => {
+    if (onRampActive === false && diagnosticTest) setDiagnosticTest(null);
+    if (onRampActive === false) diagLaunchSourceRef.current = null;
+  }, [onRampActive, diagnosticTest]);
+
+  const renderOnRamp = () => {
+    if (ffDiagnosticV2) {
+      if (diagnosticTest === 'error') {
+        return (
+          <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#ffffff', padding: '24px' }}>
+            <div style={{ textAlign: 'center', maxWidth: '420px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', margin: '0 0 8px' }}>
+                Couldn't load your diagnostic
+              </h2>
+              <p style={{ color: 'var(--color-slate-600)', fontSize: '15px', margin: '0 0 20px' }}>
+                Check your connection and try again.
+              </p>
+              <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+                <button
+                  type="button"
+                  onClick={() => setDiagnosticTest(null)}
+                  style={{ padding: '12px 24px', borderRadius: '10px', border: 'none', background: '#ea580c', color: '#ffffff', fontWeight: 600, fontSize: '15px', cursor: 'pointer' }}
+                >
+                  Try again
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    // Same contract as the runner's exit: a persistent build
+                    // failure must not re-seize the app at every login.
+                    try { localStorage.setItem(`seva:onrampSnooze:${user?.uid}`, String(Date.now())); } catch { /* storage unavailable */ }
+                    setOnRampActive(false);
+                  }}
+                  style={{ padding: '12px 24px', borderRadius: '10px', border: '1px solid var(--color-slate-300)', background: '#ffffff', color: 'var(--color-slate-700)', fontWeight: 600, fontSize: '15px', cursor: 'pointer' }}
+                >
+                  Back to home
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      }
+      if (!diagnosticTest) {
+        return <div style={{ minHeight: '100vh', background: '#ffffff' }} />;
+      }
+      return (
+        // Mimic the takingTest scroll-lock (#main-content style) — the
+        // runner's two-pane session shell manages its own scroll inside a
+        // locked 100vh parent; renderOnRamp mounts OUTSIDE #main-content.
+        <div style={{ height: '100vh', overflow: 'hidden' }}>
+          <React.Suspense fallback={<div style={{ minHeight: '100vh', background: '#ffffff' }} />}>
+            <PracticeTest
+              test={diagnosticTest}
+              user={user}
+              isTimed={true}
+              savedProgress={(() => {
+                // Belt for the v1→v2 boundary: never feed the runner a saved
+                // record that lacks the v2 manifest (its answer keys belong
+                // to a different question set).
+                const sp = getTestProgress('mini-diagnostic');
+                return sp?.diagnosticManifest ? sp : null;
+              })()}
+              onSaveProgress={(progressData) => { if (user) saveTestProgress('mini-diagnostic', progressData); }}
+              onClearProgress={() => clearTestProgress('mini-diagnostic')}
+              onDiagnosticFinished={handleOnRampFinished}
+              // Last trustworthy composite midpoint (the prior representative
+              // band). A check-in's own band over-samples focus skills and
+              // reads low — the finish pipeline anchors the regenerated plan's
+              // arc on this instead of the fresh deflated center.
+              diagnosticScoreAnchor={getTrustedBandMidpoint(miniDiagnostic)}
+              onGoToStudyPlan={() => { setOnRampActive(false); setView('studyPlan'); }}
+              onBack={() => {
+                // Deliberate exit: don't re-seize the app at every login for
+                // 24h (the dashboard resume card remains the way back in).
+                try { localStorage.setItem(`seva:onrampSnooze:${user?.uid}`, String(Date.now())); } catch { /* storage unavailable */ }
+                setOnRampActive(false);
+              }}
+              answeredQuestionIds={answeredQuestionIds}
+              completedLessons={completedLessons}
+              practiceProgress={practiceProgress}
+            />
+          </React.Suspense>
+        </div>
+      );
+    }
+    return (
+      <React.Suspense fallback={<div style={{ minHeight: '100vh', background: '#ffffff' }} />}>
+        <MiniDiagnosticShell
+          user={user}
+          savedProgress={getTestProgress('mini-diagnostic')}
+          onSaveProgress={saveTestProgress}
+          onClearProgress={clearTestProgress}
+          answeredQuestionIds={answeredQuestionIds}
+          completedLessons={completedLessons}
+          practiceProgress={practiceProgress}
+          onFinished={handleOnRampFinished}
+          onViewPlan={() => { setOnRampActive(false); setView('studyPlan'); }}
+          onSkip={handleOnRampSkip}
+        />
+      </React.Suspense>
+    );
+  };
 
   // Inner onboarding finished: persist the collected profile (one merged write)
   // then unmount → the app shell renders the first-run home. We land the student
@@ -913,6 +1149,15 @@ const PerformSAT = () => {
   // (a failed stamp just re-offers the flow next session, per the on-ramp's
   // resilience model). The diagnostic is launched later, from the home CTA.
   const handleInnerOnboardingFinished = async (payload) => {
+    // Post-auth funnel analytics: the pre-signup events ride phCapture with
+    // an anonymous id; this one has a uid, closing the loop for the
+    // personal-onboarding conversion read (copyVariant tags the cohort).
+    trackEvent(user?.uid, 'onboarding', 'inner_onboarding_completed', {
+      copyVariant: 'personal-v1',
+      pickedAreas: (payload?.weakMathAreas?.length || 0) + (payload?.weakRWAreas?.length || 0),
+      hasTestDate: !!payload?.testDate,
+      studyDaysPerWeek: payload?.studyDaysPerWeek || null,
+    });
     // completeInnerOnboarding does a Firestore setDoc, which HANGS (never
     // settles) on network loss under the SDK's memory persistence. A bare
     // await here would strand the student behind InnerOnboarding's disabled
@@ -920,24 +1165,89 @@ const PerformSAT = () => {
     // useProgress.withTimeout) so we always land them home; persistence stays
     // best-effort — a failed stamp just re-offers the flow next session.
     let timer;
+    let profileSaved = true;
     try {
       await Promise.race([
         completeInnerOnboarding(payload),
         new Promise((_, reject) => { timer = setTimeout(() => reject(new Error('onboarding-save-timeout')), 8000); }),
       ]);
     } catch (e) {
+      profileSaved = false;
       console.error('[innerOnboarding] profile save failed or timed out:', e);
       showToast({ type: 'info', message: 'We could not save your answers, but you can keep going.' });
     } finally {
       clearTimeout(timer);
     }
+    // Starter plan: the answers they just gave become their first study plan
+    // (check-in as task 1). Guarded so a re-run of the flow (dev force param,
+    // re-offered session) can never clobber a real, evidence-based plan.
+    // ONLY when the profile stamp landed: a starter plan without the stamp
+    // would make innerOnboardingPending false forever (its !studyPlan check),
+    // silently orphaning the lost answers with no way to redo the flow. When
+    // the stamp failed, saving nothing keeps the documented resilience model —
+    // the flow simply re-offers next session.
+    const hasTests = Object.keys(practiceTestResults || {}).length > 0;
+    if (profileSaved && !studyPlan && !hasTests) {
+      try {
+        const { buildStarterPlan } = await import('./services/starterPlanService');
+        const starter = buildStarterPlan({
+          targetScore: payload?.targetScore,
+          currentScore: payload?.currentScore,
+          testDate: payload?.testDate || user?.testDate,
+          worryArea: payload?.worryArea,
+          confidentArea: payload?.confidentArea,
+          weakMathAreas: payload?.weakMathAreas,
+          weakRWAreas: payload?.weakRWAreas,
+          studyDaysPerWeek: payload?.studyDaysPerWeek,
+          // Pre-signup funnel answers (study window + session length) ride the
+          // user doc, not the inner-onboarding payload.
+          studyWindow: user?.onboardingProfile?.answers?.studyWindow,
+          sessionLength: user?.onboardingProfile?.answers?.sessionLength,
+        });
+        if (starter) {
+          let planTimer;
+          await Promise.race([
+            saveStudyPlan(starter),
+            new Promise((_, reject) => { planTimer = setTimeout(() => reject(new Error('starter-plan-save-timeout')), 8000); }),
+          ]).finally(() => clearTimeout(planTimer));
+        }
+      } catch (e) {
+        console.error('[innerOnboarding] starter plan failed (non-blocking):', e);
+      }
+    }
+    // A completed account never needs the "Do this later" marker again.
+    try { if (user?.uid) localStorage.removeItem(innerOnboardingDismissKey(user.uid)); } catch { /* ignore */ }
     setInnerOnboardingActive(false);
     setView('dashboard');
   };
 
+  // Leaving mid-flow saves NO answers — but it does drop a local dismissal
+  // marker so a page refresh doesn't seize the screen with the flow again.
+  // The "Finish onboarding" hero button is the re-entry from then on.
+  const innerOnboardingDismissKey = (uid) => `seva:innerOnboarding:dismissed:${uid}`;
+  const handleInnerOnboardingExit = () => {
+    try { if (user?.uid) localStorage.setItem(innerOnboardingDismissKey(user.uid), new Date().toISOString()); } catch { /* storage unavailable */ }
+    setInnerOnboardingActive(false);
+    setView('dashboard');
+  };
+
+  // True while the setup flow is still owed (same predicate the auto-launch
+  // uses). Surfaces the "Finish onboarding" hero button after a "Do this
+  // later" dismissal, so the flow is one click away instead of next-login.
+  const innerOnboardingPending = Boolean(
+    ffInnerOnboarding && user && progressHydrated &&
+    !user.innerOnboardingCompletedAt &&
+    !user.onboardingCompletedAt &&
+    !user.onboardingSkippedAt &&
+    Object.keys(practiceTestResults || {}).length === 0 &&
+    !studyPlan &&
+    !(inProgressTests && inProgressTests['mini-diagnostic'])
+  );
+  const handleResumeInnerOnboarding = () => setInnerOnboardingActive(true);
+
   const renderInnerOnboarding = () => (
     <React.Suspense fallback={<div style={{ minHeight: '100vh', background: '#F6F4EF' }} />}>
-      <InnerOnboarding user={user} onComplete={handleInnerOnboardingFinished} />
+      <InnerOnboarding user={user} onComplete={handleInnerOnboardingFinished} onExit={handleInnerOnboardingExit} />
     </React.Suspense>
   );
 
@@ -970,7 +1280,7 @@ const PerformSAT = () => {
   };
 
   // Prescriptive practice - auto-selects difficulty based on performance
-  const startPrescriptivePractice = async (moduleId, sectionName) => {
+  const startPrescriptivePractice = async (moduleId, sectionName, opts = {}) => {
     if (!ensurePracticeAccess()) return;
     let getRandomQuestions;
     try {
@@ -1028,7 +1338,9 @@ const PerformSAT = () => {
         label: `${sectionName} Practice`,
         source: 'module-section',
         recommendedDifficulty: difficulty,
-        weakness: null,
+        // Legacy module/section plan cards pass the matching weakness so the
+        // feedback panel's diagnostic sentence renders (it was always null).
+        weakness: opts.weakness || null,
       },
     });
     setActiveModule(null);
@@ -1089,6 +1401,7 @@ const PerformSAT = () => {
     setView('practiceBank');
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- intentionally a plain per-render function; wrapping it in useCallback would freeze the large set of state values it closes over and change launch behavior
   const startAssignedPractice = async (questionIds, meta = {}) => {
     if (!ensurePracticeAccess()) return;
     let resolveAssignedQuestions;
@@ -1331,115 +1644,195 @@ const PerformSAT = () => {
   };
 
   /**
-   * startRetryDrillFromTest — opens a retry drill of items from a past
-   * practice test (Phase 5 of PAST_TEST_REVIEW_PLAN.md).
-   *
-   * Bypasses resolveAssignedQuestions because snapshot questions live OUTSIDE
-   * the production drill bank — they are CB items the student already saw on
-   * the original test, fetched from the per-attempt snapshot subcollection.
-   *
-   * Sets `reviewMode: true` so the shell renders a "review session" banner.
-   * Already-safe constraints (no extra guards needed):
-   *   • legacy free-practice recording was removed with the standard/
-   *     prescriptive UI, so review-mode attempts can't pollute skill
-   *     mastery counters.
-   *   • buildGroundTruthDiagnosis lives in services/groundTruth.js and is
-   *     only invoked from PracticeTest.jsx (not App.jsx), so a review-mode
-   *     drill completion can't inflate Predicted vs Actual.
-   *
-   * @param {object} opts
-   * @param {string} opts.testId
-   * @param {string} opts.testTitle
-   * @param {Array<object>} opts.snapshotQuestions  drill-shape questions from
-   *                        the per-attempt snapshot, already filtered by the
-   *                        caller (typically to wrong items).
-   * @param {number} [opts.originalWrongCount]  total items the student got wrong
-   *                        on the source attempt — separate from
-   *                        snapshotQuestions.length so retry_completed
-   *                        telemetry can compute true retry-conversion.
+   * loadPastAttemptData — everything the diagnosis screen and the answer
+   * review need for a test's NEWEST attempt: the exact questions the student
+   * saw (per-attempt snapshot, live test as fallback), their answers, the
+   * stored score, the diagnostic report (regenerated for legacy attempts)
+   * and the saved AI narrative. Null when there is no attempt or a corpus
+   * chunk failed to load (already toasted).
    */
-  const startRetryDrillFromTest = ({ testId, testTitle, snapshotQuestions, originalWrongCount }) => {
-    if (!Array.isArray(snapshotQuestions) || snapshotQuestions.length === 0) return;
-    if (!ensurePracticeAccess()) return;
+  const loadPastAttemptData = async (test) => {
+    // Pick the NEWEST attempt order-independently by completedAt. The
+    // attempts array orientation is not stable: trimAttempts stores it
+    // newest-first after Firestore hydration, but the in-session
+    // optimistic write appends newest-last — so attempts[length-1]
+    // returned the OLDEST attempt on hydrated/retaken tests, making
+    // Review Answers show the first attempt's score/answers/diagnosis.
+    const testResults = practiceTestResults?.[test.id];
+    const lastAttempt = (testResults?.attempts || []).reduce((best, a) => {
+      if (!a) return best;
+      if (!best) return a;
+      return (Date.parse(a.completedAt) || 0) >= (Date.parse(best.completedAt) || 0) ? a : best;
+    }, null);
+    if (!lastAttempt) return null;
 
-    // Raw test ids restart at 1 inside every module (two id-7s in one math
-    // retry is the norm), and the whole session keys answers/eliminations/
-    // rounds by question id — so remint each snapshot question with a unique
-    // position-derived id. Idempotent: the completion screen's "Retry" relaunch
-    // passes already-reminted questions back in.
-    const uniqueQuestions = snapshotQuestions.map((q, i) => {
-      if (typeof q?.id === 'string' && q.id.startsWith('retry::')) return q;
-      return { ...q, id: `retry::${testId}::${q?.moduleIndex ?? 'm'}-${q?.questionIndex ?? i}` };
-    });
+    // Try to load the per-attempt snapshot. When present, Review Answers
+    // renders the *original* question objects the student saw; otherwise
+    // we fall back to the live test file and surface a stale-content
+    // notice (legacy attempts predate the snapshot subcollection).
+    let snapshotDoc = null;
+    if (user?.uid && lastAttempt.attemptId) {
+      try {
+        snapshotDoc = await loadAttemptSnapshot(user.uid, lastAttempt.attemptId);
+      } catch (err) {
+        console.warn('[ViewResults] Snapshot load failed:', err.message);
+      }
+    }
 
-    const rounds = buildRounds(uniqueQuestions.map(q => q.id), 8);
-    const roundsWithStart = rounds.map((r, i) =>
-      i === 0 ? { ...r, startedAt: new Date().toISOString() } : r,
-    );
+    // Build a `reviewTest` shaped like the live `test` but populated
+    // from the snapshot when available. Falls back to the live test.
+    let reviewTest = test;
+    let reconstructedAnswers = {};
+    const snapshotMissing = !snapshotDoc;
 
-    setTrySimilarExhausted(new Set());
-    setPracticeState({
-      currentQuestionIndex: 0,
-      selectedAnswer: null,
-      showFeedback: false,
-      showHint: false,
-      showRoundComplete: false,
-      answers: {},
-      isComplete: false,
-      shuffledQuestions: uniqueQuestions,
-      rounds: roundsWithStart,
-      currentRoundIndex: 0,
-      practiceMode: 'assigned',
-      reviewMode: true,
-      assignmentMeta: {
-        label: `Reviewing ${testTitle}`,
-        source: 'past-test-review',
-        sourceTestId: testId,
-        sourceTestTitle: testTitle,
-        sourceWrongCount: typeof originalWrongCount === 'number'
-          ? originalWrongCount
-          : snapshotQuestions.length,
-      },
-    });
-    setActiveModule(null);
-    setActiveSection('__pastTestReview__');
-    setShowCalculator(false);
-    setView('practice');
+    if (snapshotDoc?.questionsSnapshot?.length) {
+      // Group snapshot rows back into modules so the review UI sees the
+      // same shape it gets from a live test object.
+      const moduleMap = new Map();
+      snapshotDoc.questionsSnapshot.forEach(snap => {
+        const modIdx = snap.moduleIndex ?? 0;
+        if (!moduleMap.has(modIdx)) {
+          const liveMod = test.modules?.[modIdx];
+          // Keep the section axis ('reading-writing' | 'math') — without
+          // it scoreTest collapses every module into one 'default'(=math)
+          // bucket and the whole 98-item test scores as a single Math
+          // section (~210). Mirrors diagnosticReportLoader.js.
+          const section = snap.section ?? liveMod?.section ?? null;
+          moduleMap.set(modIdx, {
+            title: liveMod?.title || sectionModuleLabel(section, modIdx),
+            section,
+            questions: [],
+          });
+        }
+        // Backfill stimulus fields (passage/diagram/table/formula)
+        // from the live test at the same position — older snapshots
+        // never persisted them, which left R&W review passage-less
+        // and math review figure-less. Easy-route attempts saw an
+        // easy variant in that section's M2 slot (math M2 = final
+        // module; R&W M2 = second reading-writing module), so merge
+        // from the module the student actually took.
+        const mathRoute = lastAttempt.diagnosticData?.mathRoute;
+        const rwRoute = lastAttempt.diagnosticData?.rwRoute;
+        const rwSlots = (test.modules || [])
+          .map((m, i) => (m.section === 'reading-writing' ? i : -1))
+          .filter(i => i >= 0);
+        let liveMod = test.modules?.[modIdx];
+        if (mathRoute === 'easy'
+            && test.module2Easy
+            && modIdx === (test.modules?.length ?? 0) - 1) {
+          liveMod = test.module2Easy;
+        } else if (rwRoute === 'easy'
+            && test.rwModule2Easy
+            && modIdx === rwSlots[1]) {
+          liveMod = test.rwModule2Easy;
+        }
+        const liveQ = liveMod?.questions?.[
+          snap.questionIndex ?? moduleMap.get(modIdx).questions.length
+        ];
+        moduleMap.get(modIdx).questions.push({
+          id: snap.id,
+          type: snap.type,
+          question: snap.stem,
+          stem: snap.stem,
+          choices: snap.choices,
+          correctAnswer: snap.correctAnswer,
+          explanation: snap.explanation,
+          difficulty: snap.difficulty,
+          band: snap.band,
+          skills: snap.skills || [],
+          passage: snap.passage ?? liveQ?.passage,
+          passages: snap.passages ?? liveQ?.passages,
+          studentNotes: snap.studentNotes ?? liveQ?.studentNotes,
+          questionContinued: snap.questionContinued ?? liveQ?.questionContinued,
+          diagram: snap.diagram ?? liveQ?.diagram,
+          questionTable: snap.questionTable ?? liveQ?.questionTable,
+          questionFormula: snap.questionFormula ?? liveQ?.questionFormula,
+        });
+      });
+      reviewTest = {
+        ...test,
+        modules: Array.from(moduleMap.keys())
+          .sort((a, b) => a - b)
+          .map(k => moduleMap.get(k)),
+      };
+      // Snapshot-derived attempts persist exact answers, so use those.
+      reconstructedAnswers = { ...(snapshotDoc.answers || {}) };
+    } else {
+      // Legacy fallback: rebuild a synthetic answer map from
+      // diagnosticData.questionDetails so the review UI can color-code
+      // correct/incorrect even without the saved per-attempt snapshot.
+      const qDetails = lastAttempt.diagnosticData?.questionDetails || {};
+      Object.entries(qDetails).forEach(([key, detail]) => {
+        const [modIdx, qIdx] = key.split('-').map(Number);
+        const question = test.modules[modIdx]?.questions[qIdx];
+        if (!question) return;
+        if (detail.isCorrect) {
+          reconstructedAnswers[key] = question.correctAnswer;
+        } else {
+          reconstructedAnswers[key] = '__wrong__';
+        }
+      });
+    }
+
+    // Load saved diagnostic report — only regenerate if not saved
+    // (legacy attempts). diagnosticEngine is a ~190KB lazy chunk
+    // (loadDiagnosticEngine), awaited only on this legacy path.
+    let diagReport = lastAttempt.diagnosticReport;
+    if (!diagReport) {
+      let runDiagnostic;
+      try {
+        ({ runDiagnostic } = await loadDiagnosticEngine());
+      } catch (err) {
+        console.warn('[ViewResults] diagnostic engine load failed:', err && err.message);
+        showToast({ type: 'error', message: CORPUS_LOAD_ERROR });
+        return null;
+      }
+      diagReport = runDiagnostic(
+        reviewTest, reconstructedAnswers, lastAttempt.diagnosticData,
+        skillProgress || {},
+        { targetScore: user?.targetScore, currentScore: user?.currentScore, testDate: user?.testDate },
+        practiceTestResults || {}
+      );
+    }
+
+    // Load saved AI diagnostic narrative from Firestore
+    let aiState = { status: 'idle', narrative: null, error: null };
+    if (user?.uid) {
+      try {
+        const savedAi = await getReadyAiDiagnostic(user.uid, test.id, lastAttempt.timestamp);
+        if (savedAi?.narrative) {
+          aiState = { status: 'ready', narrative: savedAi.narrative, error: null };
+        }
+      } catch (err) {
+        console.warn('[ViewResults] AI narrative load failed:', err.message);
+      }
+    }
+
+    return {
+      test: reviewTest,
+      liveTest: test,
+      answers: reconstructedAnswers,
+      // Authoritative score persisted at completion — the results
+      // screen displays this rather than re-scoring the reconstructed
+      // review test (which can diverge, e.g. a section-stripped or
+      // content-swapped snapshot scoring as a single ~210 Math bucket).
+      storedResult: (typeof lastAttempt.scaledScore === 'number') ? {
+        scaledScore: lastAttempt.scaledScore,
+        sectionScores: lastAttempt.sectionScores,
+        isMultiSection: lastAttempt.isMultiSection,
+      } : null,
+      diagnosticData: lastAttempt.diagnosticData,
+      diagnosticReport: diagReport,
+      aiDiagnosticState: aiState,
+      attemptId: lastAttempt.attemptId || null,
+      snapshotMissing,
+    };
   };
 
-  // ── Past-Test-Review handlers (Phase 6 of PAST_TEST_REVIEW_PLAN.md) ──
-
-  /**
-   * handleOpenPastTestReview — entry point from the Study Plan dashboard.
-   * Resets selection state and routes to the index view. Captures the
-   * current view so the back-handler can return the user to the surface
-   * they opened from (dashboard tab vs standalone study plan).
-   */
-  const handleOpenPastTestReview = () => {
-    setPastTestReviewEntryView(view === 'dashboard' ? 'dashboard' : 'studyPlan');
-    setReviewEnteredViaDeepLink(false);
-    setSelectedReviewTestId(null);
-    setSelectedReviewItem(null);
-    setReviewBundle(null);
-    setReviewBundleError(null);
-    setView('pastTestReviewIndex');
-    logPtrEvent('opened', { studentId: user?.uid || null });
-  };
-
-  /**
-   * handleSelectReviewTest — user clicked a test card in the index. Kicks
-   * off the async snapshot fetch via loadDiagnosticReportData and routes
-   * to the detail view. The detail view renders its own loading + error
-   * states (already handled by TestReviewDetail).
-   */
-  const handleSelectReviewTest = async (testId, maybeOpts) => {
-    // Callers historically passed (testId, latestAttemptId) — a string or
-    // null in the options slot. Destructuring null throws, which turned a
-    // legacy no-attemptId test card into a silent dead click. Only honor a
-    // real options object.
-    const { landOn = 'detail' } = (maybeOpts && typeof maybeOpts === 'object' && !Array.isArray(maybeOpts))
-      ? maybeOpts
-      : {};
+  // Study Plan / Review Queue deep link ("review your misses from Test N"):
+  // the same read-only Bluebook review of that test's newest attempt.
+  const handleReviewTestWrong = async (testId) => {
+    if (!testId) return;
     let getAllPracticeTests;
     try {
       ({ getAllPracticeTests } = await loadPracticeTests());
@@ -1447,92 +1840,27 @@ const PerformSAT = () => {
       showToast({ type: 'error', message: CORPUS_LOAD_ERROR });
       return;
     }
-    const test = getAllPracticeTests().find(t => t.id === testId);
-    const lastAttempt = getLatestAttempt(practiceTestResults, testId);
-    if (!test || !lastAttempt) {
-      // The queue can outlive its source test (deleted/archived from the
-      // catalog, or an attempt that was reset). Log it so deep-link failures
-      // are debuggable, then surface a toast.
-      logWarn('pastTestReview', 'test_or_attempt_missing', {
-        testId, hasTest: !!test, hasAttempt: !!lastAttempt,
-      });
-      showToast({
-        type: 'error',
-        message: 'Could not load this test for review. Please try again.',
-      });
+    const test = getAllPracticeTests().find((t) => t.id === testId);
+    if (!test) {
+      showToast({ type: 'error', message: 'Could not load that test.' });
       return;
     }
-    const requestId = ++reviewBundleRequestRef.current;
-    setSelectedReviewTestId(testId);
-    setSelectedReviewItem(null);
-    setReviewBundle(null);
-    setReviewBundleError(null);
-    setReviewBundleLoading(true);
-    setView('pastTestReviewDetail');
-    try {
-      const { loadDiagnosticReportData } = await loadReportLoader();
-      const data = await loadDiagnosticReportData({
-        userId: user?.uid,
-        test,
-        lastAttempt,
-        practiceTestResults,
-        skillProgress,
-        user,
-      });
-      // Guard: if a newer fetch superseded this one (user clicked another
-      // test card mid-flight), drop this result.
-      if (requestId !== reviewBundleRequestRef.current) return;
-      setReviewBundle({
-        test: data.test,                    // snapshot-reconstructed
-        liveTest: data.liveTest,            // for retry-drill field merging
-        answers: data.answers || {},
-        diagnosticReport: data.diagnosticReport,
-        attempt: lastAttempt,
-        attemptId: data.attemptId,
-        testTitle: test.title || testId,
-        snapshotMissing: !!data.snapshotMissing,
-      });
-      logPtrEvent('test_selected', {
-        studentId: user?.uid || null,
-        testId,
-        attemptId: data.attemptId,
-        completedAt: lastAttempt.completedAt || null,
-        snapshotMissing: !!data.snapshotMissing,
-      });
-      // Deep-link from the plan's Review Queue: step straight into the first
-      // wrong question. The detail view's loading spinner shows during the
-      // fetch above, then flips to the single-question stepper here, whose
-      // prev/next walk the wrong-only slice (see the pastTestReviewItem route).
-      if (landOn === 'firstWrong') {
-        const firstWrong = extractItemsFromAttempt(lastAttempt).find(it => !it.isCorrect);
-        if (firstWrong) {
-          setSelectedReviewItem(firstWrong);
-          setView('pastTestReviewItem');
-          logPtrEvent('item_reviewed', {
-            studentId: user?.uid || null,
-            testId,
-            itemKey: firstWrong.key,
-            isCorrect: false,
-            source: 'review-queue-deeplink',
-          });
-        } else {
-          // Defensive: a test in the review queue should have wrong items, but
-          // stale/corrupted data could land here. Stay on the detail view
-          // (already set above) and tell the student why.
-          showToast({ type: 'info', message: 'No wrong answers to review on this test.' });
-        }
-      }
-    } catch (err) {
-      if (requestId !== reviewBundleRequestRef.current) return;
-      logWarn('pastTestReview', 'select_failed', { message: err?.message || String(err) });
-      setReviewBundleError(err?.message || 'load failed');
-    } finally {
-      // Only the latest request controls the loading flag — earlier
-      // resolutions must not flip it off while a newer fetch is pending.
-      if (requestId === reviewBundleRequestRef.current) {
-        setReviewBundleLoading(false);
-      }
+    openPastAttempt(test, 'review', view === 'dashboard' ? 'dashboard' : 'studyPlan');
+  };
+
+  // Tests list / Home → a past attempt's AI diagnosis ('diagnosis') or its
+  // read-only Bluebook review ('review'). `returnTo` is where Back lands.
+  const openPastAttempt = async (test, screen, returnTo = 'practiceTests') => {
+    const data = await loadPastAttemptData(test);
+    if (!data) return;
+    setSelectedPracticeTest(test);
+    if (screen === 'review') {
+      setViewingResultsData({ ...data, reviewModule: 0, returnTo });
+      setView('reviewingPastResults');
+      return;
     }
+    setViewingResultsData({ ...data, returnTo });
+    setView('diagnosticReport');
   };
 
   /**
@@ -1579,174 +1907,6 @@ const PerformSAT = () => {
         section,
         missedPatterns: weakSkills[0].missedPatterns,
       },
-    });
-  };
-
-  /**
-   * handleReviewTestWrong — deep-link from the plan's Review Queue into the
-   * specific wrong questions on a test. Reuses handleSelectReviewTest (same
-   * snapshot fetch) but lands on the single-question stepper at the first
-   * miss. Sets the back-target so the detail view returns to the plan.
-   *
-   * @param {string} testId
-   */
-  const handleReviewTestWrong = (testId) => {
-    if (!testId) return;
-    setPastTestReviewEntryView(view === 'dashboard' ? 'dashboard' : 'studyPlan');
-    setReviewEnteredViaDeepLink(true);
-    handleSelectReviewTest(testId, { landOn: 'firstWrong' });
-  };
-
-  /**
-   * handleSelectReviewItem — user clicked a per-item row in TestReviewDetail.
-   */
-  const handleSelectReviewItem = (item) => {
-    setSelectedReviewItem(item);
-    setView('pastTestReviewItem');
-    // Compute the per-item error class with the same logic the detail
-    // chips use, so the telemetry matches what the user saw. Only attach
-    // for incorrect items — the 6-class taxonomy is meaningless for items
-    // the student got right (a correct item whose skill is in weakSkills
-    // would otherwise log as e.g. 'conceptual_gap', distorting analytics).
-    const errorClass = (reviewBundle && !item.isCorrect)
-      ? findErrorClassForItem(item, reviewBundle.attempt, reviewBundle.diagnosticReport)
-      : null;
-    logPtrEvent('item_reviewed', {
-      studentId: user?.uid || null,
-      testId: selectedReviewTestId,
-      itemKey: item.key,
-      isCorrect: !!item.isCorrect,
-      errorClass,
-    });
-  };
-
-  /**
-   * handleRetryWrongFromReview — user clicked "Retry the N wrong" CTA in
-   * TestReviewDetail. Maps the telemetry-shape wrong items back to the
-   * snapshot question objects (via reviewBundle.test.modules) so they can
-   * be fed into startRetryDrillFromTest.
-   */
-  const handleRetryWrongFromReview = (wrongItems) => {
-    if (!reviewBundle || !Array.isArray(wrongItems)) return;
-    if (reviewBundle.snapshotMissing) {
-      showToast({
-        type: 'warn',
-        message: 'Original question text isn\'t archived for this attempt — retry isn\'t available.',
-      });
-      return;
-    }
-
-    // Snapshot questions are the canonical "what the student saw", but the
-    // loader strips passage/diagram/questionTable/questionFormula at write
-    // time (PracticeTest.jsx writes only the fields needed for the diagnostic
-    // engine). Re-attach those fields from the live test so R&W passages
-    // and math figures render in the retry drill.
-    const enrichFromLive = (snapshotQ, modIdx, qIdx) => {
-      if (!snapshotQ) return null;
-      // Easy-route attempts saw an easy variant's questions in that section's
-      // M2 slot (math M2 = final module; R&W M2 = second reading-writing
-      // module) — enriching from the standard module there would attach a
-      // foreign diagram/table/passage under an Easy stem.
-      const mathRoute = reviewBundle.attempt?.diagnosticData?.mathRoute;
-      const rwRoute = reviewBundle.attempt?.diagnosticData?.rwRoute;
-      const liveModules = reviewBundle.liveTest?.modules;
-      const rwSlots = (liveModules || [])
-        .map((m, i) => (m.section === 'reading-writing' ? i : -1))
-        .filter(i => i >= 0);
-      let liveMod = liveModules?.[modIdx];
-      if (mathRoute === 'easy'
-          && reviewBundle.liveTest?.module2Easy
-          && modIdx === (liveModules?.length ?? 0) - 1) {
-        liveMod = reviewBundle.liveTest.module2Easy;
-      } else if (rwRoute === 'easy'
-          && reviewBundle.liveTest?.rwModule2Easy
-          && modIdx === rwSlots[1]) {
-        liveMod = reviewBundle.liveTest.rwModule2Easy;
-      }
-      const liveQ = liveMod?.questions?.[qIdx];
-      // The snapshot reshape in loadDiagnosticReportData strips position
-      // metadata. Re-attach moduleIndex/questionIndex so the retry-drill
-      // header can show "M1·Q3 (originally missed)" instead of the
-      // generic round-position label. Tag the drill-contract `section`
-      // ('rw'|'math') from the owning module — without it the calculator
-      // gates and the tutor's R&W mode treat every test-sourced item as math.
-      const modSection = reviewBundle.test?.modules?.[modIdx]?.section
-        ?? liveModules?.[modIdx]?.section ?? null;
-      const withPosition = {
-        ...snapshotQ,
-        moduleIndex: modIdx,
-        questionIndex: qIdx,
-        section: modSection === 'reading-writing' ? 'rw' : 'math',
-      };
-      if (!liveQ) return withPosition;
-      return {
-        ...withPosition,
-        passage: snapshotQ.passage ?? liveQ.passage,
-        passages: snapshotQ.passages ?? liveQ.passages,
-        studentNotes: snapshotQ.studentNotes ?? liveQ.studentNotes,
-        questionContinued: snapshotQ.questionContinued ?? liveQ.questionContinued,
-        diagram: snapshotQ.diagram ?? liveQ.diagram,
-        questionTable: snapshotQ.questionTable ?? liveQ.questionTable,
-        questionFormula: snapshotQ.questionFormula ?? liveQ.questionFormula,
-        hint: snapshotQ.hint ?? liveQ.hint,
-      };
-    };
-
-    const mapped = wrongItems
-      .map(it => {
-        const snap = reviewBundle.test?.modules?.[it.moduleIndex]?.questions?.[it.questionIndex];
-        return enrichFromLive(snap, it.moduleIndex, it.questionIndex);
-      })
-      .filter(Boolean);
-
-    // AssignedPracticeShell renders multiple-choice only — it has no
-    // student-produced-response (fill-in) input, so a missed fill-in would be an
-    // unanswerable dead-end in the retry drill. Drop fill-ins (every other drill
-    // launcher applies the same MCQ filter).
-    const snapshotQuestions = mapped.filter(q => Array.isArray(q.choices) && q.choices.length >= 2);
-    const droppedFillIns = mapped.length - snapshotQuestions.length;
-
-    if (snapshotQuestions.length === 0) {
-      showToast({
-        type: 'info',
-        message: droppedFillIns > 0
-          ? "Those wrong items are fill-in questions, which aren't available in retry drills yet."
-          : 'No items available to retry.',
-      });
-      return;
-    }
-
-    // Surface partial-mapping when some wrong items were dropped — either they
-    // couldn't be located in the snapshot (rare; test edited after the attempt)
-    // or they were fill-ins. Telemetry helps us spot it; the toast keeps the
-    // user oriented.
-    if (snapshotQuestions.length < wrongItems.length) {
-      logPtrEvent('retry_dropped', {
-        studentId: user?.uid || null,
-        testId: selectedReviewTestId,
-        expected: wrongItems.length,
-        mapped: snapshotQuestions.length,
-        droppedFillIns,
-      });
-      showToast({
-        type: 'info',
-        message: droppedFillIns > 0
-          ? `Drilling ${snapshotQuestions.length} of ${wrongItems.length} wrong items — fill-in questions aren't available in retry drills yet.`
-          : `Drilling ${snapshotQuestions.length} of ${wrongItems.length} wrong items — some couldn't be loaded.`,
-      });
-    }
-
-    startRetryDrillFromTest({
-      testId: selectedReviewTestId,
-      testTitle: reviewBundle.testTitle,
-      snapshotQuestions,
-      originalWrongCount: wrongItems.length,
-    });
-    logPtrEvent('retry_started', {
-      studentId: user?.uid || null,
-      testId: selectedReviewTestId,
-      wrongCount: snapshotQuestions.length,
-      originalWrongCount: wrongItems.length,
     });
   };
 
@@ -2109,22 +2269,6 @@ const PerformSAT = () => {
         };
       });
     } else {
-      const correctCount = Object.values(practiceState.answers).filter(a => a.correct).length;
-      // Past-Test-Review retry-drill completion telemetry (Phase 7).
-      // `retryQuestionCount` is the number of items in this retry session
-      // (may include Try-Similar additions); `originalWrongCount` is the
-      // wrong-on-the-original-test denominator the CEO R2-F3 retry-conversion
-      // metric needs. Splitting them prevents the two from being conflated.
-      if (practiceState.reviewMode) {
-        const meta = practiceState.assignmentMeta || {};
-        logPtrEvent('retry_completed', {
-          studentId: user?.uid || null,
-          testId: meta.sourceTestId || null,
-          retryQuestionCount: questions.length,
-          originalWrongCount: meta.sourceWrongCount ?? questions.length,
-          newCorrectCount: correctCount,
-        });
-      }
       setPracticeState(prev => ({ ...prev, isComplete: true }));
       fireDrillSessionComplete(questions);
     }
@@ -2292,7 +2436,6 @@ const PerformSAT = () => {
     }
   }, [startAssignedPractice]);
 
-
   // Legal pages are real URLs that must render for logged-out AND logged-in
   // users without waiting on Firebase auth init. They are full-page navs
   // (plain <a> links), so pathname is immutable for this component's lifetime.
@@ -2345,7 +2488,14 @@ const PerformSAT = () => {
       <Routes>
         {/* Landing Page */}
         <Route path="/" element={
-          !user ? (
+          // Auth-restore gate: while Firebase is still resolving the session,
+          // render the same blank shell the lazy chunks use instead of the
+          // landing page. Without this, a signed-in student refreshing on "/"
+          // could mount the landing page (and its signup funnel) during the
+          // restore window — the funnel-while-logged-in hole filed 2026-08-13.
+          loading ? (
+            <div style={{ minHeight: '100vh', background: '#ffffff' }} />
+          ) : !user ? (
             <LandingPage />
           ) : (
             <Navigate to="/course" replace />
@@ -2441,19 +2591,19 @@ const PerformSAT = () => {
         }}
         user={user}
         onLogout={logout}
-        hideNav={view === 'takingTest' || view === 'reviewingPastResults' || view === 'practice' || view === 'learn'}
+        hideNav={view === 'takingTest' || view === 'pacingDrill' || view === 'reviewingPastResults' || view === 'practice' || view === 'learn'}
       >
       {/* Main Content — key={view} re-mounts the region on navigation so it fades
           in (fadeInUp keyframe in design/animations.js; reduced-motion handled
           globally). takingTest is excluded so the test-runner scroll-lock and the
           internal test->results flip (view stays 'takingTest') never animate. */}
       <div id="main-content" key={view} style={{
-        maxWidth: view === 'takingTest' || view === 'reviewingPastResults' || view === 'practice' || view === 'dashboard' || view === 'learn' || view === 'learnTab' || view === 'learnChapter' || view === 'modules' || view === 'practiceBank' || view === 'paywall' ? '100%' : view === 'studyPlan' ? '1220px' : view === 'practiceTests' ? '1040px' : '800px',
+        maxWidth: view === 'takingTest' || view === 'pacingDrill' || view === 'reviewingPastResults' || view === 'practice' || view === 'dashboard' || view === 'learn' || view === 'learnTab' || view === 'learnChapter' || view === 'modules' || view === 'practiceBank' || view === 'paywall' || view === 'diagnosticResults' ? '100%' : view === 'studyPlan' ? '1220px' : view === 'practiceTests' ? '1040px' : '800px',
         margin: '0 auto',
         // Study Plan + Practice Tests paint their own warm canvas + framing, so
         // they want a tighter outer gutter than the default 32px content padding.
-        padding: (view === 'dashboard' || view === 'reviewingPastResults' || view === 'practice' || view === 'takingTest' || view === 'learn' || view === 'learnTab' || view === 'learnChapter' || view === 'practiceBank' || view === 'paywall') ? '0' : (view === 'studyPlan' || view === 'practiceTests') ? '20px 20px 80px' : '32px 32px 100px',
-        ...(view === 'takingTest' ? { overflow: 'hidden', height: '100vh' } : { animation: 'fadeInUp 300ms cubic-bezier(0.25, 0.1, 0.25, 1)' })
+        padding: (view === 'dashboard' || view === 'reviewingPastResults' || view === 'practice' || view === 'takingTest' || view === 'pacingDrill' || view === 'learn' || view === 'learnTab' || view === 'learnChapter' || view === 'practiceBank' || view === 'paywall' || view === 'diagnosticResults') ? '0' : (view === 'studyPlan' || view === 'practiceTests') ? '20px 20px 80px' : '32px 32px 100px',
+        ...((view === 'takingTest' || view === 'pacingDrill') ? { overflow: 'hidden', height: '100vh' } : { animation: 'fadeInUp 300ms cubic-bezier(0.25, 0.1, 0.25, 1)' })
       }}>
       {/* ONE Suspense boundary for the whole view-switch region: every lazy
           view below suspends into the same skeleton fallback. It sits INSIDE
@@ -2465,6 +2615,7 @@ const PerformSAT = () => {
           <PaywallScreen
             entitlement={entitlement}
             onBack={() => setView('dashboard')}
+            onLogout={logout}
           />
         )}
         {view === 'tutor' && !billingLocked && (
@@ -2493,6 +2644,7 @@ const PerformSAT = () => {
         {/* Profile View */}
         {view === 'profile' && (
           <Profile
+            initialFocus={profileFocus}
             user={user}
             onLogout={logout}
             onUpdateTargetScore={updateTargetScore}
@@ -2519,6 +2671,7 @@ const PerformSAT = () => {
           <PaywallScreen
             entitlement={entitlement}
             onBack={() => setView('dashboard')}
+            onLogout={logout}
           />
         )}
 
@@ -2533,6 +2686,7 @@ const PerformSAT = () => {
             onResumeDrill={resumeActiveDrill}
             onDiscardDrill={clearActiveDrill}
             focusRequest={practiceFocus}
+            progressHydrated={progressHydrated}
           />
         )}
 
@@ -2694,6 +2848,7 @@ const PerformSAT = () => {
               Object.keys(practiceTestResults || {}).length === 0
             }
             onStartCheckIn={handleResumeOnRamp}
+            miniDiagnostic={miniDiagnostic}
             onUpdateTestDate={updateTestDate}
             onUpdateTargetScore={updateTargetScore}
             onUpdateCurrentScore={updateCurrentScore}
@@ -2708,16 +2863,20 @@ const PerformSAT = () => {
                 });
                 return;
               }
-              startPrescriptivePractice(moduleId, sectionName);
+              startPrescriptivePractice(moduleId, sectionName, { weakness: opts?.weakness || null });
             }}
             onStartReview={startDailyReview}
             onStartPracticeTest={() => setView('practiceTests')}
             onStartDiagnostic={handleResumeOnRamp}
+            onStartPlanCheckIn={handleStartPlanCheckIn}
+            innerOnboardingPending={innerOnboardingPending}
+            onResumeInnerOnboarding={handleResumeInnerOnboarding}
             onStartPacing={startPacingDrill}
             onReviewTestWrong={handleReviewTestWrong}
             activeTab={dashboardTab}
             onTabChange={setDashboardTab}
-            onOpenProfile={() => setView('profile')}
+            onOpenProfile={() => { setProfileFocus(null); setView('profile'); }}
+            onEditGoals={openProfileGoals}
             onRetrySimilar={handleTrySimilarFromReview}
             onBrowseLessons={() => {
               // "Or warm up first" link on the day-0 banner → the Videos/
@@ -2729,61 +2888,32 @@ const PerformSAT = () => {
             onOpenPractice={() => setView('practiceBank')}
             onOpenTutor={() => setView('tutor')}
             onViewFullDiagnosis={async () => {
-              // Closes CEO C1: surface DiagnosticReport from the dashboard.
-              let pickMostRecentTest, loadDiagnosticReportData, getAllPracticeTests;
-              try {
-                ({ pickMostRecentTest, loadDiagnosticReportData } = await loadReportLoader());
-              } catch (err) {
-                showToast({ type: 'error', message: CORPUS_LOAD_ERROR });
-                return;
-              }
+              // Home → the AI diagnosis of the most recent practice test.
               const { testId, lastAttempt } = pickMostRecentTest(practiceTestResults);
               if (!testId || !lastAttempt) {
-                showToast({
-                  type: 'info',
-                  message: 'Take a practice test to see your diagnostic report.',
-                });
+                showToast({ type: 'info', message: 'Take a practice test to see your diagnosis.' });
                 return;
               }
+              let getAllPracticeTests;
               try {
                 ({ getAllPracticeTests } = await loadPracticeTests());
               } catch (err) {
                 showToast({ type: 'error', message: CORPUS_LOAD_ERROR });
                 return;
               }
-              const test = getAllPracticeTests().find(t => t.id === testId);
+              const test = getAllPracticeTests().find((t) => t.id === testId);
               if (!test) {
-                showToast({
-                  type: 'error',
-                  message: 'Could not load the test for your most recent attempt.',
-                });
+                showToast({ type: 'error', message: 'Could not load the test for your most recent attempt.' });
                 return;
               }
-              try {
-                const data = await loadDiagnosticReportData({
-                  userId: user?.uid,
-                  test,
-                  lastAttempt,
-                  practiceTestResults,
-                  skillProgress,
-                  user,
-                });
-                setViewingResultsData(data);
-                setSelectedPracticeTest(test);
-                setView('diagnosticReport');
-              } catch (err) {
-                // eslint-disable-next-line no-console
-                console.warn('[App] onViewFullDiagnosis load failed:', err && err.message);
-                showToast({
-                  type: 'error',
-                  message: 'Could not load your diagnostic report. Please try again.',
-                });
-              }
+              openPastAttempt(test, 'diagnosis', 'dashboard');
             }}
+            onViewDiagnosis={miniDiagnostic ? () => openDiagnosis('dashboard') : undefined}
+            onRecordScoreReport={recordScoreReport}
+            onUpdateTestDates={updateTestDates}
             onCompleteActivity={markStudyActivityComplete}
             onUncompleteActivity={unmarkStudyActivityComplete}
             onEditPlan={saveEditedStudyPlan}
-            onReviewPastTests={handleOpenPastTestReview}
           />
           </>
         )}
@@ -2830,201 +2960,25 @@ const PerformSAT = () => {
             getTestBestScore={getTestBestScore}
             getTestAttempts={getTestAttempts}
             inProgressTests={inProgressTests}
-            onViewResults={async (test) => {
-              // Pick the NEWEST attempt order-independently by completedAt. The
-              // attempts array orientation is not stable: trimAttempts stores it
-              // newest-first after Firestore hydration, but the in-session
-              // optimistic write appends newest-last — so attempts[length-1]
-              // returned the OLDEST attempt on hydrated/retaken tests, making
-              // Review Answers show the first attempt's score/answers/diagnosis.
-              const testResults = practiceTestResults?.[test.id];
-              const lastAttempt = (testResults?.attempts || []).reduce((best, a) => {
-                if (!a) return best;
-                if (!best) return a;
-                return (Date.parse(a.completedAt) || 0) >= (Date.parse(best.completedAt) || 0) ? a : best;
-              }, null);
-              if (!lastAttempt) return;
-
-              // Try to load the per-attempt snapshot. When present, Review Answers
-              // renders the *original* question objects the student saw; otherwise
-              // we fall back to the live test file and surface a stale-content
-              // notice (legacy attempts predate the snapshot subcollection).
-              let snapshotDoc = null;
-              if (user?.uid && lastAttempt.attemptId) {
-                try {
-                  snapshotDoc = await loadAttemptSnapshot(user.uid, lastAttempt.attemptId);
-                } catch (err) {
-                  console.warn('[ViewResults] Snapshot load failed:', err.message);
-                }
-              }
-
-              // Build a `reviewTest` shaped like the live `test` but populated
-              // from the snapshot when available. Falls back to the live test.
-              let reviewTest = test;
-              let reconstructedAnswers = {};
-              const snapshotMissing = !snapshotDoc;
-
-              if (snapshotDoc?.questionsSnapshot?.length) {
-                // Group snapshot rows back into modules so the review UI sees the
-                // same shape it gets from a live test object.
-                const moduleMap = new Map();
-                snapshotDoc.questionsSnapshot.forEach(snap => {
-                  const modIdx = snap.moduleIndex ?? 0;
-                  if (!moduleMap.has(modIdx)) {
-                    const liveMod = test.modules?.[modIdx];
-                    // Keep the section axis ('reading-writing' | 'math') — without
-                    // it scoreTest collapses every module into one 'default'(=math)
-                    // bucket and the whole 98-item test scores as a single Math
-                    // section (~210). Mirrors diagnosticReportLoader.js.
-                    const section = snap.section ?? liveMod?.section ?? null;
-                    moduleMap.set(modIdx, {
-                      title: liveMod?.title || sectionModuleLabel(section, modIdx),
-                      section,
-                      questions: [],
-                    });
-                  }
-                  // Backfill stimulus fields (passage/diagram/table/formula)
-                  // from the live test at the same position — older snapshots
-                  // never persisted them, which left R&W review passage-less
-                  // and math review figure-less. Easy-route attempts saw an
-                  // easy variant in that section's M2 slot (math M2 = final
-                  // module; R&W M2 = second reading-writing module), so merge
-                  // from the module the student actually took.
-                  const mathRoute = lastAttempt.diagnosticData?.mathRoute;
-                  const rwRoute = lastAttempt.diagnosticData?.rwRoute;
-                  const rwSlots = (test.modules || [])
-                    .map((m, i) => (m.section === 'reading-writing' ? i : -1))
-                    .filter(i => i >= 0);
-                  let liveMod = test.modules?.[modIdx];
-                  if (mathRoute === 'easy'
-                      && test.module2Easy
-                      && modIdx === (test.modules?.length ?? 0) - 1) {
-                    liveMod = test.module2Easy;
-                  } else if (rwRoute === 'easy'
-                      && test.rwModule2Easy
-                      && modIdx === rwSlots[1]) {
-                    liveMod = test.rwModule2Easy;
-                  }
-                  const liveQ = liveMod?.questions?.[
-                    snap.questionIndex ?? moduleMap.get(modIdx).questions.length
-                  ];
-                  moduleMap.get(modIdx).questions.push({
-                    id: snap.id,
-                    type: snap.type,
-                    question: snap.stem,
-                    stem: snap.stem,
-                    choices: snap.choices,
-                    correctAnswer: snap.correctAnswer,
-                    explanation: snap.explanation,
-                    difficulty: snap.difficulty,
-                    band: snap.band,
-                    skills: snap.skills || [],
-                    passage: snap.passage ?? liveQ?.passage,
-                    passages: snap.passages ?? liveQ?.passages,
-                    studentNotes: snap.studentNotes ?? liveQ?.studentNotes,
-                    questionContinued: snap.questionContinued ?? liveQ?.questionContinued,
-                    diagram: snap.diagram ?? liveQ?.diagram,
-                    questionTable: snap.questionTable ?? liveQ?.questionTable,
-                    questionFormula: snap.questionFormula ?? liveQ?.questionFormula,
-                  });
-                });
-                reviewTest = {
-                  ...test,
-                  modules: Array.from(moduleMap.keys())
-                    .sort((a, b) => a - b)
-                    .map(k => moduleMap.get(k)),
-                };
-                // Snapshot-derived attempts persist exact answers, so use those.
-                reconstructedAnswers = { ...(snapshotDoc.answers || {}) };
-              } else {
-                // Legacy fallback: rebuild a synthetic answer map from
-                // diagnosticData.questionDetails so the review UI can color-code
-                // correct/incorrect even without the saved per-attempt snapshot.
-                const qDetails = lastAttempt.diagnosticData?.questionDetails || {};
-                Object.entries(qDetails).forEach(([key, detail]) => {
-                  const [modIdx, qIdx] = key.split('-').map(Number);
-                  const question = test.modules[modIdx]?.questions[qIdx];
-                  if (!question) return;
-                  if (detail.isCorrect) {
-                    reconstructedAnswers[key] = question.correctAnswer;
-                  } else {
-                    reconstructedAnswers[key] = '__wrong__';
-                  }
-                });
-              }
-
-              // Load saved diagnostic report — only regenerate if not saved
-              // (legacy attempts). diagnosticEngine is a ~190KB lazy chunk
-              // (loadDiagnosticEngine), awaited only on this legacy path.
-              let diagReport = lastAttempt.diagnosticReport;
-              if (!diagReport) {
-                let runDiagnostic;
-                try {
-                  ({ runDiagnostic } = await loadDiagnosticEngine());
-                } catch (err) {
-                  console.warn('[ViewResults] diagnostic engine load failed:', err && err.message);
-                  showToast({ type: 'error', message: CORPUS_LOAD_ERROR });
-                  return;
-                }
-                diagReport = runDiagnostic(
-                  reviewTest, reconstructedAnswers, lastAttempt.diagnosticData,
-                  skillProgress || {},
-                  { targetScore: user?.targetScore, currentScore: user?.currentScore, testDate: user?.testDate },
-                  practiceTestResults || {}
-                );
-              }
-
-              // Load saved AI diagnostic narrative from Firestore
-              let aiState = { status: 'idle', narrative: null, error: null };
-              if (user?.uid) {
-                try {
-                  const savedAi = await getReadyAiDiagnostic(user.uid, test.id, lastAttempt.timestamp);
-                  if (savedAi?.narrative) {
-                    aiState = { status: 'ready', narrative: savedAi.narrative, error: null };
-                  }
-                } catch (err) {
-                  console.warn('[ViewResults] AI narrative load failed:', err.message);
-                }
-              }
-
-              setViewingResultsData({
-                test: reviewTest,
-                liveTest: test,
-                answers: reconstructedAnswers,
-                // Authoritative score persisted at completion — the results
-                // screen displays this rather than re-scoring the reconstructed
-                // review test (which can diverge, e.g. a section-stripped or
-                // content-swapped snapshot scoring as a single ~210 Math bucket).
-                storedResult: (typeof lastAttempt.scaledScore === 'number') ? {
-                  scaledScore: lastAttempt.scaledScore,
-                  sectionScores: lastAttempt.sectionScores,
-                  isMultiSection: lastAttempt.isMultiSection,
-                } : null,
-                diagnosticData: lastAttempt.diagnosticData,
-                diagnosticReport: diagReport,
-                aiDiagnosticState: aiState,
-                attemptId: lastAttempt.attemptId || null,
-                snapshotMissing,
-              });
-              setSelectedPracticeTest(test);
-              setView('viewingResults');
-            }}
+            miniDiagnostic={miniDiagnostic}
+            diagnosticReviewStatus={diagnosticSitting.status}
+            onReviewDiagnosticQuestions={() => openDiagnosticReview(0, 'practiceTests')}
+            onStartDiagnostic={handleResumeOnRamp}
+            onViewDiagnosis={(test) => openPastAttempt(test, 'diagnosis')}
+            onViewResults={(test) => openPastAttempt(test, 'review')}
             onResetTest={(test) => resetPracticeTest(test.id)}
             onDeleteAttempt={(testId, attemptId) => removeTestAttempt(testId, attemptId)}
           />
         )}
 
-        {/* Viewing Past Results — same screen as post-test completion */}
-        {view === 'viewingResults' && viewingResultsData && (
-          <ErrorBoundary message="Unable to load test results. Please go back and try again.">
-          <div style={{
-            minHeight: '100vh',
-            background: '#F5F5F7',
-            backgroundImage: 'radial-gradient(circle at 50% 0%, rgba(255,255,255,0.8) 0%, rgba(245,245,247,0) 100%)',
-            padding: '32px',
-          }}>
+        {/* A past practice test's AI diagnosis — the same screen the runner
+            shows right after a test. Reached from the Tests list card and
+            from Home's "View full diagnosis"; Back returns to `returnTo`. */}
+        {view === 'diagnosticReport' && viewingResultsData && (
+          <ErrorBoundary message="Unable to load your diagnosis. Please go back and try again.">
             <div style={{ maxWidth: '800px', margin: '0 auto' }}>
               <TestResults
+                screen="diagnosis"
                 test={viewingResultsData.test}
                 answers={viewingResultsData.answers}
                 storedResult={viewingResultsData.storedResult}
@@ -3032,96 +2986,51 @@ const PerformSAT = () => {
                 diagnosticReport={viewingResultsData.diagnosticReport}
                 practiceTestResults={practiceTestResults}
                 aiDiagnosticState={viewingResultsData.aiDiagnosticState}
+                user={user}
+                backLabel={viewingResultsData.returnTo === 'dashboard' ? 'Back to Home' : 'Back to Tests'}
                 onBack={() => {
-                  setView('practiceTests');
+                  const to = viewingResultsData.returnTo || 'practiceTests';
                   setViewingResultsData(null);
-                }}
-                onRetake={() => {
-                  if (!ensurePracticeAccess()) return;
-                  // Retake must launch the pristine catalog test — the snapshot
-                  // reconstruction (viewingResultsData.test) has no passages,
-                  // diagrams, or per-module time limits, and may hold the Easy
-                  // M2 variant in the standard slot.
-                  const freshTest = viewingResultsData.liveTest || viewingResultsData.test;
-                  setViewingResultsData(null);
-                  setSelectedPracticeTest(freshTest);
-                  setIsTestTimed(true);
-                  setInitialTestSection(null);
-                  setView('takingTest');
+                  setView(to);
                 }}
                 onReview={() => {
-                  setViewingResultsData(prev => ({ ...prev, reviewModule: 0 }));
-                  setView('reviewingPastResults');
-                }}
-                onReviewModule={(moduleIndex) => {
-                  setViewingResultsData(prev => ({ ...prev, reviewModule: moduleIndex }));
+                  setViewingResultsData((prev) => ({ ...prev, reviewModule: 0, returnTo: 'diagnosticReport' }));
                   setView('reviewingPastResults');
                 }}
                 onDrillWeakness={handleDrillFromResults}
                 onGoToStudyPlan={() => { setViewingResultsData(null); setView('studyPlan'); }}
-                savedStudyPlan={studyPlan}
-                user={user}
               />
             </div>
-          </div>
           </ErrorBoundary>
         )}
 
-        {/* Full Diagnostic Report — surfaces the deeper analysis that
-            TestResults summarizes. Mounted from StudentDashboard's
-            onViewFullDiagnosis (closes CEO C1 of the /autoplan review). */}
-        {view === 'diagnosticReport' && viewingResultsData && (
-          <ErrorBoundary message="Unable to load your diagnostic report. Please go back and try again.">
-            <div style={{
-              minHeight: '100vh',
-              background: '#F5F5F7',
-              padding: '32px',
-            }}>
-              <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-                <DiagnosticReport
-                  test={viewingResultsData.test}
-                  answers={viewingResultsData.answers}
-                  diagnosticData={viewingResultsData.diagnosticData}
-                  skillProgress={skillProgress}
-                  user={user}
-                  practiceTestResults={practiceTestResults}
-                  completedLessons={completedLessons}
-                  practiceProgress={practiceProgress}
-                  savedStudyPlan={studyPlan}
-                  answeredQuestionIds={answeredQuestionIds}
-                  onStartPractice={(moduleId, sectionName, opts) => {
-                    setViewingResultsData(null);
-                    // Drill-shaped next actions (format v2) arrive as resolved
-                    // question ids — same contract as the results-path mount.
-                    if (opts?.questionIds?.length) {
-                      startAssignedPractice(opts.questionIds, { label: opts.label, weakness: opts.weakness });
-                      return;
-                    }
-                    // Must go through startPrescriptivePractice — it populates
-                    // practiceState.shuffledQuestions (the practice view no
-                    // longer has a synchronous corpus fallback) and sets the
-                    // module/section/view itself once questions are in hand.
-                    startPrescriptivePractice(moduleId, sectionName);
-                  }}
-                  onStartPracticeTest={() => {
-                    setViewingResultsData(null);
-                    setView('practiceTests');
-                  }}
-                  onSaveStudyPlan={handleSaveStudyPlan}
-                  onGoToStudyPlan={() => {
-                    setViewingResultsData(null);
-                    setView('studyPlan');
-                  }}
-                  onBack={() => {
-                    // This mount is only reachable from the dashboard's
-                    // "View full diagnosis" — back returns there, not to the
-                    // study plan it never came from.
-                    setViewingResultsData(null);
-                    setView('dashboard');
-                  }}
-                  backLabel="Back to Home"
-                />
-              </div>
+        {/* Re-opened diagnostic diagnosis — the "Your starting point" screen
+            the diagnostic ended on, rebuilt from progress.miniDiagnostic (its
+            lean `diagnosis` copy; legacy records fall back to the plan mirror).
+            Mounted from the dashboard's "View your diagnosis" link on the
+            Estimated Starting Score card. */}
+        {view === 'diagnosticResults' && miniDiagnostic && (
+          <ErrorBoundary message="Unable to load your diagnosis. Please go back and try again.">
+            <div style={{ minHeight: '100vh', background: 'var(--color-slate-100)', display: 'flex', justifyContent: 'center', padding: '0 16px' }}>
+              <MiniDiagnosticResults
+                record={miniDiagnostic}
+                plan={studyPlan}
+                user={user}
+                onViewPlan={() => setView('studyPlan')}
+                onBack={() => setView(diagnosisReturnTo)}
+                backLabel={diagnosisReturnTo === 'practiceTests' ? 'Back to Practice Tests' : 'Back to Home'}
+                onEditGoals={openProfileGoals}
+                onUpdateTestDate={updateTestDate}
+                onUpdateTestDates={updateTestDates}
+                onStartPracticeTest={() => setView('practiceTests')}
+                sitting={fullDiagnosticSitting}
+                sittingStatus={diagnosticSitting.status === 'ready' && !fullDiagnosticSitting ? 'missing' : diagnosticSitting.status}
+                onReviewQuestions={fullDiagnosticSitting
+                  // Same review runner as past practice tests, on the rebuilt
+                  // sitting; back returns here, not to the results tab.
+                  ? (moduleIndex) => openDiagnosticReview(moduleIndex, 'diagnosticResults')
+                  : null}
+              />
             </div>
           </ErrorBoundary>
         )}
@@ -3141,11 +3050,13 @@ const PerformSAT = () => {
             practiceProgress={practiceProgress}
             answeredQuestionIds={answeredQuestionIds}
             reviewSnapshotMissing={viewingResultsData.snapshotMissing}
+            reviewAnswersMissing={!!viewingResultsData.answersMissing}
+            reviewBackLabel={({ practiceTests: 'Tests', diagnosticResults: 'Diagnosis', diagnosticReport: 'Diagnosis', dashboard: 'Home', studyPlan: 'Study Plan' })[viewingResultsData.returnTo] || 'Results'}
             reviewAttemptId={viewingResultsData.attemptId}
             tutorLocked={billingLocked}
             onSubscribe={() => setView('paywall')}
             onBack={() => {
-              setView('viewingResults');
+              setView(viewingResultsData.returnTo || 'practiceTests');
             }}
           />
           </ErrorBoundary>
@@ -3181,7 +3092,7 @@ const PerformSAT = () => {
               // startPrescriptivePractice (async) sets module/section/view
               // itself once questions load — no bare setView('practice')
               // here, or the view would flash empty before state populates.
-              startPrescriptivePractice(moduleId, sectionName);
+              startPrescriptivePractice(moduleId, sectionName, { weakness: opts?.weakness || null });
               setSelectedPracticeTest(null);
             }}
             onBack={() => {
@@ -3261,6 +3172,8 @@ const PerformSAT = () => {
         {view === 'studyPlan' && (
           <StudyPlanDashboard
             variant="immersive"
+            onStartDiagnostic={handleStartPlanCheckIn}
+            miniDiagnostic={miniDiagnostic}
             studyPlan={studyPlan}
             practiceTestResults={practiceTestResults}
             practiceProgress={practiceProgress}
@@ -3285,137 +3198,22 @@ const PerformSAT = () => {
               }
               // startPrescriptivePractice (async) sets module/section/view
               // itself once questions load.
-              startPrescriptivePractice(moduleId, sectionName);
+              startPrescriptivePractice(moduleId, sectionName, { weakness: opts?.weakness || null });
             }}
             onStartPracticeTest={() => setView('practiceTests')}
-            onStartDiagnostic={handleResumeOnRamp}
             onCompleteActivity={markStudyActivityComplete}
             onUncompleteActivity={unmarkStudyActivityComplete}
             onEditPlan={saveEditedStudyPlan}
-            onReviewPastTests={handleOpenPastTestReview}
             onStartReview={startDailyReview}
             onStartPacing={startPacingDrill}
             onReviewTestWrong={handleReviewTestWrong}
           />
         )}
 
-        {/* ── Past-Test-Review surfaces (Phases 2-6 of PAST_TEST_REVIEW_PLAN.md) ── */}
-        {view === 'pastTestReviewIndex' && (
-          <ErrorBoundary message="Couldn't load your test review. Please go back and try again.">
-            <div style={{ minHeight: '100vh', background: '#F5F5F7', padding: '32px' }}>
-              <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-                <PastTestReviewIndex
-                  practiceTestResults={practiceTestResults}
-                  onSelectTest={handleSelectReviewTest}
-                  onTakeTest={() => setView('practiceTests')}
-                  onBack={() => setView(pastTestReviewEntryView)}
-                />
-              </div>
-            </div>
-          </ErrorBoundary>
-        )}
-
-        {view === 'pastTestReviewDetail' && (
-          <ErrorBoundary message="Couldn't load this test's review. Please go back and try again.">
-            <div style={{ minHeight: '100vh', background: '#F5F5F7', padding: '32px' }}>
-              <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-                <TestReviewDetail
-                  testTitle={reviewBundle?.testTitle || selectedReviewTestId || 'Test review'}
-                  attempt={reviewBundle?.attempt}
-                  diagnosticReport={reviewBundle?.diagnosticReport}
-                  loading={reviewBundleLoading}
-                  error={reviewBundleError}
-                  snapshotMissing={!!reviewBundle?.snapshotMissing}
-                  onSelectItem={handleSelectReviewItem}
-                  onRetryWrong={handleRetryWrongFromReview}
-                  onBack={() => {
-                    // Deep-linked from the plan → back returns to the plan;
-                    // browsed from the index → back returns to the index.
-                    if (reviewEnteredViaDeepLink) {
-                      setReviewEnteredViaDeepLink(false);
-                      setView(pastTestReviewEntryView);
-                    } else {
-                      setView('pastTestReviewIndex');
-                    }
-                  }}
-                />
-              </div>
-            </div>
-          </ErrorBoundary>
-        )}
-
-        {view === 'pastTestReviewItem' && reviewBundle && selectedReviewItem && (() => {
-          const { moduleIndex, questionIndex } = selectedReviewItem;
-          const snapshotItem =
-            reviewBundle.test?.modules?.[moduleIndex]?.questions?.[questionIndex] || null;
-          const rawAnswer =
-            reviewBundle.answers?.[itemKey(moduleIndex, questionIndex)] ?? null;
-          // Legacy attempts (no per-attempt snapshot) feed the sentinel
-          // string '__wrong__' here from diagnosticReportLoader's fallback.
-          // Don't render that as the user's literal answer.
-          const studentAnswer = rawAnswer === '__wrong__' ? null : rawAnswer;
-          // Map this item's primary skill to its 6-class error type so the
-          // chip matches what TestReviewDetail showed. Only surface for
-          // wrong items — the chip is meaningless for correct ones.
-          const errorClass = !selectedReviewItem.isCorrect
-            ? findErrorClassForItem(
-                selectedReviewItem,
-                reviewBundle.attempt,
-                reviewBundle.diagnosticReport,
-              )
-            : null;
-
-          // Prev/Next walk the slice the user was viewing in TestReviewDetail.
-          // The detail view defaults to the wrong-only filter, but the All
-          // filter can open a CORRECT item — which isn't in the wrong-only
-          // slice, so scoping Prev/Next to wrong items gave currentIdx -1 and
-          // no navigation at all. Pick the slice by where the item actually
-          // lives: if it's a wrong item keep the wrong-only walk (the common
-          // path); otherwise walk the full item list so a correct item still
-          // has Prev/Next. Items arrive sorted by (moduleIndex, questionIndex).
-          // (For exact filter parity, TestReviewDetail could pass its `filter`
-          // as a 2nd arg to onSelectItem — one line there — but this App-side
-          // slice already fixes the dead-end for every filter.)
-          const allItems = reviewBundle.attempt
-            ? extractItemsFromAttempt(reviewBundle.attempt)
-            : [];
-          const wrongItems = allItems.filter(it => !it.isCorrect);
-          const wrongIdx = wrongItems.findIndex(it => it.key === selectedReviewItem.key);
-          const navItems = wrongIdx >= 0 ? wrongItems : allItems;
-          const currentIdx = navItems.findIndex(it => it.key === selectedReviewItem.key);
-          const prev = currentIdx > 0 ? navItems[currentIdx - 1] : null;
-          const next = currentIdx >= 0 && currentIdx < navItems.length - 1
-            ? navItems[currentIdx + 1]
-            : null;
-          return (
-            <ErrorBoundary message="Couldn't render this question. Please go back and try again.">
-              <div style={{ minHeight: '100vh', background: '#F5F5F7', padding: '32px' }}>
-                <div style={{ maxWidth: '780px', margin: '0 auto' }}>
-                  <ReviewItemCard
-                    snapshotItem={snapshotItem}
-                    studentAnswer={studentAnswer}
-                    isCorrect={selectedReviewItem.isCorrect}
-                    errorClass={errorClass}
-                    timeSpent={selectedReviewItem.timeSpent}
-                    testTitle={reviewBundle.testTitle}
-                    snapshotMissing={!!reviewBundle.snapshotMissing}
-                    onPrev={prev ? () => setSelectedReviewItem(prev) : undefined}
-                    onNext={next ? () => setSelectedReviewItem(next) : undefined}
-                    onBack={() => setView('pastTestReviewDetail')}
-                    onTrySimilar={() => handleTrySimilarFromReview(snapshotItem)}
-                  />
-                </div>
-              </div>
-            </ErrorBoundary>
-          );
-        })()}
-
-
         {/* Practice View */}
         {view === 'practice' && activeSection && (() => {
           const isAssigned = practiceState.practiceMode === 'assigned';
           const isAdaptive = practiceState.practiceMode === 'adaptive';
-          const isStudyPlanMode = isAssigned || isAdaptive;
           // Every path into view==='practice' populates shuffledQuestions
           // via an async start* handler (Stage 2b: the render path can no
           // longer reach the topic-question corpus synchronously). The empty
@@ -3537,15 +3335,6 @@ const PerformSAT = () => {
                       label: practiceState.adaptiveDomainLabel,
                       ephemeral: true,
                       source,
-                    });
-                  } else if (practiceState.reviewMode) {
-                    // Review-mode retries can't use startAssignedPractice
-                    // because snapshot question IDs aren't in the drill bank.
-                    // Re-launch with the snapshot questions in hand.
-                    startRetryDrillFromTest({
-                      testId: practiceState.assignmentMeta?.sourceTestId,
-                      testTitle: practiceState.assignmentMeta?.sourceTestTitle,
-                      snapshotQuestions: practiceState.shuffledQuestions,
                     });
                   } else {
                     startAssignedPractice(

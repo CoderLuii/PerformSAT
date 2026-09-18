@@ -1,0 +1,40 @@
+{
+ "id": "bank-geo-096",
+ "question": "A quilter drafts the triangular block shown, whose three angle measures in degrees form an arithmetic sequence with a positive common difference $d$. What is the measure, in degrees, of the block's middle angle?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "x°",
+    "(x+d)°",
+    "(x+2d)°"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$45$"
+  },
+  {
+   "id": "B",
+   "text": "$60$"
+  },
+  {
+   "id": "C",
+   "text": "$90$"
+  },
+  {
+   "id": "D",
+   "text": "$120$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 180 by 4 rather than by the three angles present",
+  "C": "assumes the middle angle of such a block must be a right angle",
+  "D": "divides 360 by 3, using the sum of a quadrilateral's angles"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The three measures sum to $3x+3d=180$, so $x+d=60$, and $x+d$ is the middle angle.\n\n**The Full Solution:**\n\nStep 1 — Write the sum: $x+(x+d)+(x+2d)=3x+3d=180$.\n\nStep 2 — Divide by $3$: $x+d=60$.\n\nStep 3 — Because the three terms increase by $d$ each time, the middle term is $x+d$, so the middle angle measures $60$ degrees regardless of $d$. Check with $d=10$: the angles are $50$, $60$, and $70$, summing to $180$; with $d=25$ they are $15$, $60$, and $105$, also summing to $180$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($45$): this divides $180$ by $4$, counting a fourth angle that does not exist.\n* Choice C ($90$): this assumes the middle angle must be a right angle, which the arithmetic sequence never requires.\n* Choice D ($120$): this divides $360$, the angle sum of a quadrilateral, by $3$.\n\n**Test Day Takeaway:** In any three-term arithmetic sequence the middle term equals the average — here the average of the three angles is always $60$ degrees."
+}

@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "craft-and-structure",
  "skill": "words-in-context",
+ "type": "multiple-choice",
+ "passage": "The choreographer Pearl Primus, who trained as an anthropologist, traveled through West Africa in the late 1940s to study dances in the communities where they were made. She objected to staging African dances as exotic spectacle; her aim was to present them with the ______ they carried in their home settings — as expressions of worship, work, and communal memory.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "accelerate"
+   "text": "novelty"
   },
   {
    "id": "B",
-   "text": "determine"
+   "text": "caution"
   },
   {
    "id": "C",
-   "text": "modulate"
+   "text": "dignity"
   },
   {
    "id": "D",
-   "text": "interrupt"
+   "text": "simplicity"
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C, \"modulate.\" The sentence concerns how the chemical signals roots release affect the rate at which surrounding microbes decompose soil organic matter, and the next sentence stresses that the effect depends on the soil's nutrient status, the chemistry of the exudates, and which microbes are present — that is, it varies in size and direction. The blank needs a verb for adjusting or regulating the rate, and \"modulate\" captures exactly that graded action. \"Accelerate\" fixes a single direction, but the passage says the effect can go either way. \"Determine\" implies the exudates set the rate by themselves, which contradicts the list of other controls. \"Interrupt\" implies stopping the process rather than tuning it.",
+ "explanation": "**Choice C is correct.** The sentence opposes \"exotic spectacle\" to what the dances carried at home — status as worship, work, and communal memory. The word for that seriousness of standing is \"dignity.\"\n\n**The Full Solution:**\n- The semicolon sets up a correction: not spectacle, but something the dances possess in their home settings.\n- The dash then specifies that something: the dances' roles in worship, labor, and memory — weighty communal functions. \"Dignity\" names the respect such roles confer.\n\n**Why the other choices are wrong:**\n- A: \"Novelty\" sits on the wrong side of the contrast — newness for its own sake is exactly what exotic staging traded on.\n- B: \"Caution\" describes a manner of handling something, not a quality the dances themselves carried in their home settings.\n- D: \"Simplicity\" is unsupported — the text says nothing about the dances being simple, and reducing them to simplicity would slight the roles the dash enumerates.",
  "_meta": {
-  "anchor": "Rhizosphere priming (unnamed soil ecologists); root exudate effects on decomposition rate"
- },
- "passage": "Soil ecologists studying the rhizosphere — the thin layer of soil surrounding plant roots — have long known that microbial activity is unusually intense there. They have struggled, however, to predict how a given plant's root exudates will ______ the rate at which surrounding soil organic matter is decomposed by microbes. The answer, recent reviews suggest, depends on the soil's prior nutrient status, on the chemistry of the exudates themselves, and on which microbial groups happen to be locally abundant.",
- "type": "multiple-choice"
+  "anchor": "Pearl Primus — presenting West African dances with their home dignity, against exotic spectacle"
+ }
 }

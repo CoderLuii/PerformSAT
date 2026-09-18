@@ -1,0 +1,53 @@
+{
+ "id": 1,
+ "question": "A technician records three pairs of measurements in the table. Each recorded pair is a solution of both equations of a system of two linear equations in $x$ and $y$. How many solutions does the system have?",
+ "questionTable": {
+  "headers": [
+   "Trial",
+   "$x$ (mL)",
+   "$y$ (mL)"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$2$",
+    "$9$"
+   ],
+   [
+    "$2$",
+    "$4$",
+    "$5$"
+   ],
+   [
+    "$3$",
+    "$5$",
+    "$3$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "None"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly three"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats a system whose graphs coincide as inconsistent (no solution)",
+  "B": "assumes every system of two linear equations meets in exactly one point",
+  "C": "counts only the three recorded pairs as the solution set"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Two distinct points already determine one line, so two linear graphs that share three points are the same line. Every point of that line solves both equations, so the system has infinitely many solutions.\n\n**The Full Solution:**\nStep 1: Each equation of the system is linear, so each graph is a line, and the table says all three pairs $(2, 9)$, $(4, 5)$, and $(5, 3)$ lie on both lines.\nStep 2: Exactly one line passes through two distinct points. Both lines contain $(2, 9)$ and $(4, 5)$, so the two lines are the same line. The recorded pairs are consistent with that: the slope from $(2, 9)$ to $(4, 5)$ is $-2$, and the slope from $(4, 5)$ to $(5, 3)$ is also $-2$.\nStep 3: Two coincident lines share every one of their points, so the system has infinitely many solutions. Check with the shared line $y = -2x + 13$: at $x = 4$ it gives $y = 5$, which is the recorded pair in trial $2$, and every other $x$ produces another solution. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (None): a system of two linear equations has no solution only when the lines are parallel and distinct; here the lines cannot be distinct, because they share three points.\n* Choice B (Exactly one): this is the usual case, but two distinct lines can cross at most once, and these graphs agree at three different points.\n* Choice C (Exactly three): this counts only the pairs the technician happened to record; every point on the shared line is also a solution.\n\n**Test Day Takeaway:** When two linear equations are satisfied by more than one common point, the equations describe the same line — answer infinitely many, not the number of points listed."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "One number is $150$ percent of $m$ and, at the same time, $60$ percent of $n$, where $m$ and $n$ are positive numbers. The value of $m$ is what percent of the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$60\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$90\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$250\\%$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reads the second condition as saying m itself is 60 percent of n, reporting 60 without using the 150 percent relationship",
+  "C": "multiplies the two given factors, 1.5 and 0.6, to get 0.9 and reports 90 percent",
+  "D": "answers the reversed question, computing n as a percent of m: 1.5/0.6 = 2.5, or 250 percent"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Setting the two descriptions of the same number equal gives $1.5m = 0.6n$, so $m = 0.4n$, which is $40\\%$ of $n$.\n\n**The Full Solution:**\nStep 1: Call the number $N$. \"$150$ percent of $m$\" means $N = 1.5m$, and \"$60$ percent of $n$\" means $N = 0.6n$.\nStep 2: Because both expressions equal the same $N$, set them equal: $1.5m = 0.6n$.\nStep 3: Solve for $m$: $m = \\frac{0.6}{1.5}n = 0.4n$, so $m$ is $40\\%$ of $n$. Check with $n = 100$: then $N = 60$ and $m = \\frac{60}{1.5} = 40$, which is $40\\%$ of $100$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($60\\%$): assigns the $60$ percent directly to $m$. The $60$ percent describes the unnamed number $N$, not $m$, and $N$ is larger than $m$ because $N$ is $150\\%$ of $m$.\n* Choice C ($90\\%$): multiplies $1.5$ by $0.6$. The two percents describe the same number from two directions, so one must be divided by the other, not multiplied.\n* Choice D ($250\\%$): computes $\\frac{1.5}{0.6} = 2.5$, which tells what percent of $m$ the value $n$ is. The question asks the comparison in the other order.\n\n**Test Day Takeaway:** When two percent statements describe the same quantity, write both as equations for that quantity and set them equal; the ratio you form last must match the order the question names."
+}

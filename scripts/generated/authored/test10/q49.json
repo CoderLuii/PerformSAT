@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 2,
- "passage": "In 1911, the meteorologist and geophysicist Alfred Wegener noticed that the coastlines of South America and Africa seemed to fit together like pieces of a puzzle. Over the next several years he gathered fossil and rock evidence from both continents and ______ that they had once been joined in a single landmass, a proposal most geologists rejected for decades before plate tectonics vindicated it.",
+ "passage": "Along a finished road, Roman crews set milestones recording the distance to the nearest town and the emperor under whom the work was completed. By the time antiquarians began mapping the surviving stones systematically in the eighteenth century, farmers ______ many of them into gateposts and door lintels, and the survey of what remained became a race against further reuse.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "argues"
+   "text": "turn"
   },
   {
    "id": "B",
-   "text": "will argue"
+   "text": "have turned"
   },
   {
    "id": "C",
-   "text": "argued"
+   "text": "had turned"
   },
   {
    "id": "D",
-   "text": "has argued"
+   "text": "will have turned"
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The passage narrates a sequence of completed past events—Wegener \"noticed\" the fit of the coastlines and \"gathered\" evidence—so the verb in the blank should also be simple past: \"argued.\" Choice A uses the present \"argues,\" and Choice B the future \"will argue,\" both of which clash with the past-tense narration. Choice D's present perfect \"has argued\" implies a continuing relevance to the present that does not fit a sentence describing what Wegener did and how geologists of the time responded."
+ "explanation": "**Choice C is correct.** The sentence describes an action completed before another past event: the farmers' reuse of the stones preceded the antiquarians' eighteenth-century mapping. The past perfect \"had turned\" marks exactly that earlier-past relationship.\n\n**The Full Solution:**\n- The time anchor is \"By the time antiquarians began mapping,\" a past reference point.\n- What the farmers did was finished before that point, so the verb takes the past perfect: by then, they \"had turned\" many stones into gateposts and lintels.\n\n**Why the other choices are wrong:**\n- A: The simple present \"turn\" clashes with the past-time frame the sentence establishes.\n- B: The present perfect \"have turned\" connects a past action to the present moment, not to another moment in the past, which is what \"By the time... began\" requires.\n- D: The future perfect \"will have turned\" points forward from now, contradicting the eighteenth-century setting.",
+ "_meta": {
+  "rule": "past perfect for action completed before a past reference point",
+  "distractors": {
+   "A": "present tense in past frame",
+   "B": "present perfect vs. past reference point",
+   "D": "future perfect in past narrative"
+  }
+ }
 }

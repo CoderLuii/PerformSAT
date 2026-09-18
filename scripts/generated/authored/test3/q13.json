@@ -1,70 +1,70 @@
 {
-  "id": 313,
-  "module": 1,
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Boreal forests and grasslands, where grasslands had both a larger absolute loss (717 million versus 501 million) and a larger percentage decline (53% versus 33%)."
-    },
-    {
-      "id": "B",
-      "text": "Aridlands and coasts, where aridlands had both a larger percentage decline (29% versus 13%) and a larger absolute loss (35 million versus 5 million)."
-    },
-    {
-      "id": "C",
-      "text": "Grasslands and coasts, where grasslands had both the largest absolute loss (717 million) and the largest percentage decline (53%) of any biome surveyed."
-    },
-    {
-      "id": "D",
-      "text": "Aridlands and eastern forests, where eastern forests had the larger absolute loss (166 million versus 35 million) but aridlands had the larger percentage decline (29% versus 17%)."
-    }
+ "id": 313,
+ "module": 1,
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "type": "multiple-choice",
+ "passage": "Marine reserves prohibit fishing within their boundaries, and ecologists expect fish populations inside them to recover as the years pass. Surveying five reserves along the Pacific coast, a research team compared the biomass of rockfish inside each reserve with the biomass in similar fished waters nearby. Summarizing the results, the team writes that protection appears to make a substantial difference everywhere and that the effect appears to strengthen as reserves age, noting that ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Rockfish biomass inside five Pacific marine reserves relative to nearby fished areas",
+  "headers": [
+   "Reserve",
+   "Years since fishing ban",
+   "Biomass ratio (inside : outside)"
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The student's claim is about biomes whose absolute and percentage rankings disagree — one biome higher in total birds lost, the other higher in proportional decline. A supplies that contrast: eastern forests lost more birds outright (166 million to 35 million), while aridlands declined by a larger share (29% to 17%), so the two measures rank them in opposite orders. B, C, and D each name a pair in which one biome ranks higher on both measures at once, illustrating agreement between the rankings rather than the disagreement the claim requires.",
-  "_meta": {
-    "anchor": "North American breeding bird losses since 1970 (Rosenberg et al., 2019); absolute vs. proportional ranking"
+  "rows": [
+   [
+    "Point Azul",
+    "6",
+    "1.4"
+   ],
+   [
+    "Gray Harbor",
+    "9",
+    "1.7"
+   ],
+   [
+    "Cedar Cove",
+    "14",
+    "2.1"
+   ],
+   [
+    "Osprey Bank",
+    "21",
+    "2.6"
+   ],
+   [
+    "Halfmoon Shoal",
+    "26",
+    "3.2"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Halfmoon Shoal, protected for 26 years, has the highest biomass ratio of the five reserves, at 3.2."
   },
-  "passage": "In a 2019 paper, a research team estimated population changes for North American breeding birds from 1970 to 2017, reporting both the absolute number of birds lost and the percentage change from the 1970 baseline. A student summarizing the work notes that the biomes with the largest absolute losses are not always those with the largest proportional declines, and argues that this pattern is clearest when comparing two biomes whose absolute and percentage rankings disagree, namely _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Estimated population change in North American breeding birds since 1970, by biome",
-    "headers": [
-      "Biome",
-      "Loss (millions of birds)",
-      "Percent change"
-    ],
-    "rows": [
-      [
-        "Grasslands",
-        "717",
-        "-53%"
-      ],
-      [
-        "Forests (boreal)",
-        "501",
-        "-33%"
-      ],
-      [
-        "Forests (eastern)",
-        "166",
-        "-17%"
-      ],
-      [
-        "Aridlands",
-        "35",
-        "-29%"
-      ],
-      [
-        "Coasts",
-        "5",
-        "-13%"
-      ]
-    ]
+  {
+   "id": "B",
+   "text": "rockfish biomass at Point Azul is 1.4 times as high inside the reserve as in the nearby fished waters."
   },
-  "type": "multiple-choice"
+  {
+   "id": "C",
+   "text": "the two reserves protected for fewer than ten years have markedly lower biomass ratios than any of the three reserves whose fishing bans are more than a decade old."
+  },
+  {
+   "id": "D",
+   "text": "biomass ratios exceed 1.0 at every reserve and rise steadily with each reserve's age, from 1.4 after 6 years of protection to 3.2 after 26."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The statement makes two claims — protection matters everywhere, and the effect strengthens with age — and D is the only choice that documents both: every ratio tops 1.0, and the ratios climb in step with years of protection across the whole table.\n\n**The Full Solution:**\n- \"A substantial difference everywhere\" needs evidence from all five reserves: ratios above 1.0 at each one.\n- \"Strengthens as reserves age\" needs the trend: 1.4, 1.7, 2.1, 2.6, 3.2 as the ban lengthens from 6 to 26 years. D cites both patterns with the correct endpoints.\n\n**Why the other choices are wrong:**\n- A: One reserve, however impressive, cannot support a claim about all five or about a trend.\n- B: A single ratio from the youngest reserve establishes neither the everywhere claim nor the age trend.\n- C: It supports only the age-trend half of the statement and never shows that biomass is higher inside every reserve.",
+ "_meta": {
+  "anchor": "Rockfish biomass recovery inside Pacific marine reserves vs. reserve age (unnamed research team)"
+ }
 }

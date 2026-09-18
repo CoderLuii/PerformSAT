@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "A district media center models weekly audiobook holds by $h(w)=45+8w$ and staff shelving time in minutes by $m(h)=3h+20$, where $w$ is the number of weeks since a new catalog launched. What is the value of $m(h(4))$?",
+ "hint": "Work from the inside out: the output of $h$ is the input of $m$.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$32$"
+  },
+  {
+   "id": "B",
+   "text": "$77$"
+  },
+  {
+   "id": "C",
+   "text": "$251$"
+  },
+  {
+   "id": "D",
+   "text": "$301$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "evaluates the outer function at 4, giving m(4)=32",
+  "B": "stops at the inner value h(4)=77",
+  "D": "composes in the wrong order, h(m(4))=h(32)=301"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** $h(4)=45+32=77$, and $m(77)=3(77)+20=251$.\n\n**The Full Solution:**\n\nStep 1: Evaluate the inner function. $h(4)=45+8(4)=45+32=77$ holds.\n\nStep 2: Feed that output into $m$. $m(77)=3(77)+20=231+20=251$ minutes.\n\nStep 3: Confirm the order. $m(h(4))$ means \"apply $h$, then $m$,\" so $251$ is the shelving time.\n\nCheck: $251$ minutes for $77$ holds is $3$ minutes each plus a fixed $20$, which matches $m$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($32$): evaluates the outer function at $4$, giving $m(4)=3(4)+20=32$, and never uses $h$.\n* Choice B ($77$): stops at the inner value $h(4)=77$ instead of substituting it into $m$.\n* Choice D ($301$): composes in the wrong order, computing $h(m(4))=h(32)=45+8(32)=301$.\n\n**Test Day Takeaway:** In $m(h(4))$, the inner function runs first; its output becomes the input of the outer function."
+}

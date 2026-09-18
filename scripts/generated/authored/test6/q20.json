@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
-  "passage": "By the time most scholars came to accept that the Inca had kept detailed administrative records, a small number of researchers ______ that the knotted-cord devices known as quipus could encode numbers, an argument those scholars had at first dismissed.",
+  "passage": "By the time the germ theory of disease finally explained why hygiene mattered in hospitals, the physician Ignaz Semmelweis ______ for handwashing for decades: back in the 1840s he showed that when doctors in his Vienna maternity clinic disinfected their hands, deaths from childbed fever fell from roughly one mother in ten to fewer than one in fifty.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "argued"
+      "text": "campaigns"
     },
     {
       "id": "B",
-      "text": "are arguing"
+      "text": "is campaigning"
     },
     {
       "id": "C",
-      "text": "had argued"
+      "text": "had campaigned"
     },
     {
       "id": "D",
-      "text": "have argued"
+      "text": "has campaigned"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"had argued.\" The sentence sets one past event, scholars coming to accept the Inca records, as a reference point, and the researchers' arguing happened before it. The past perfect \"had argued\" marks that earlier-than-past relationship. Choice A, the simple past \"argued,\" loses the sequence that \"by the time\" sets up. Choice B, \"are arguing,\" is present and clashes with the past frame, and choice D, \"have argued,\" is present perfect, which ties the action to the present rather than to the earlier past moment the sentence describes."
+  "explanation": "**Choice C is correct.** The sentence measures Semmelweis's campaigning against a later past reference point (\"By the time the germ theory... explained...\"), and action completed before a past moment takes the past perfect: \"had campaigned.\"\n\n**The Full Solution:**\n- \"By the time\" plus the past-tense \"explained\" fixes a reference point in the past.\n- The decades of campaigning happened before that point — the 1840s evidence confirms the earlier time frame — so the verb needs the past perfect.\n\n**Why the other choices are wrong:**\n- A: The simple present \"campaigns\" puts a nineteenth-century campaign in the present.\n- B: \"Is campaigning\" is likewise present tense, incompatible with the past reference point.\n- D: The present perfect \"has campaigned\" connects past action to the present moment, but the sentence needs action completed before another moment in the past."
 }

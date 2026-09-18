@@ -1,0 +1,51 @@
+{
+ "id": "bank-am-331",
+ "question": "The parabola shown models the cross section of a wind-scoured gully, where $y$ is floor elevation in centimeters relative to the surrounding flat and $x$ is horizontal distance in meters. Its lowest point is marked. How wide is the gully at the level of the flat?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 5,
+    "k": -9
+   },
+   "a": 1,
+   "xRange": [
+    0,
+    10
+   ],
+   "yRange": [
+    -12,
+    10
+   ],
+   "xTickInterval": 1,
+   "yTickInterval": 3,
+   "gridInterval": 1,
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "measures only from the axis of symmetry out to one wall, half of the full width",
+  "C": "reports the larger $x$-intercept, $x = 8$, instead of the distance between the two",
+  "D": "adds the two $x$-intercepts, $2 + 8$, instead of subtracting them"
+ },
+ "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The curve meets $y = 0$ at $x = 2$ and $x = 8$, so the gully is $8 - 2 = 6$ meters wide.\n\n**The Full Solution:**\nStep 1: The level of the surrounding flat is $y = 0$, so the gully's edges are the $x$-intercepts of the parabola.\nStep 2: The marked lowest point is $(5, -9)$, and the graph crosses the horizontal axis at $x = 2$ and at $x = 8$.\nStep 3: The width is the distance between those crossings: $8 - 2 = 6$ meters. Check: the two edges sit $3$ meters on either side of the axis of symmetry $x = 5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): the half-width, measured from the low point out to one wall only.\n* Choice C ($8$): the coordinate of the right-hand edge, not the separation between edges.\n* Choice D ($10$): adds the two intercepts instead of subtracting, which measures nothing on the figure.\n\n**Test Day Takeaway:** A distance between intercepts is always a subtraction, and the axis of symmetry sits exactly halfway between them."
+}

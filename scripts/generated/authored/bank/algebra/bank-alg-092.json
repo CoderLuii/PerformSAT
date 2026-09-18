@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-092",
+  "question": "A climbing gym charges $\\$4$ per visit plus a monthly membership fee of $\\$15$. Last month, a member who made $v$ visits was charged a total of $\\$47$. What would the member have been charged, in dollars, for $v - 3$ visits that month?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\$20$"
+    },
+    {
+      "id": "B",
+      "text": "$\\$32$"
+    },
+    {
+      "id": "C",
+      "text": "$\\$35$"
+    },
+    {
+      "id": "D",
+      "text": "$\\$44$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts both the 12 and the membership fee",
+    "B": "subtracts the membership fee instead of 3 visits",
+    "D": "subtracts the count 3 as dollars"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Three fewer visits remove $3 \\cdot \\$4 = \\$12$. The membership fee stays, so the charge is $\\$47 - \\$12 = \\$35$.\n\n**The Full Solution:**\nStep 1: The charge equation is $4v + 15 = 47$, so $4v = 32$ and $v = 8$ visits.\nStep 2: For $v - 3 = 5$ visits: $4(5) + 15 = 20 + 15 = 35$.\nStep 3: Shortcut check: removing $3$ visits removes $3 \\cdot 4 = 12$, and $47 - 12 = 35$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\$20$): subtracts the $\\$12$ for the visits and also drops the $\\$15$ membership fee, which is still owed.\n* Choice B ($\\$32$): subtracts the membership fee $\\$15$ instead of the cost of $3$ visits.\n* Choice D ($\\$44$): subtracts the count $3$ as dollars instead of $3 \\cdot \\$4 = \\$12$.\n\n**Test Day Takeaway:** A change in the count moves the total by (change) $\\times$ (rate) in the same direction; the fixed fee is unaffected whether the count goes up or down."
+}

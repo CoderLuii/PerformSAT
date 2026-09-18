@@ -1,31 +1,31 @@
 {
-  "id": 820,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "Working from the trilingual inscription on the Rosetta Stone, Jean-François Champollion showed in the 1820s that the oval cartouches in Egyptian inscriptions enclosed royal names. Later scholars built on his method to read texts that recorded the names, titles, and ______ of a long line of pharaohs.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "reigning"
-    },
-    {
-      "id": "B",
-      "text": "they reigned"
-    },
-    {
-      "id": "C",
-      "text": "reigns"
-    },
-    {
-      "id": "D",
-      "text": "to reign"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The blank is the third item in a series with \"the names, titles, and ___,\" so it must be a noun parallel to \"names\" and \"titles.\" \"Reigns\" is that noun. The participle \"reigning\" in A, the clause \"they reigned\" in B, and the infinitive \"to reign\" in D each break the parallel structure by introducing a different grammatical form into a list of nouns."
+ "id": 820,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "The prize rules obliged Appert to make his discovery public, so his 1810 book withheld nothing: it specified the vessels, the temperatures, and ______ that his process required, down to the hours each food should stand in the boiling bath.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "timing them"
+  },
+  {
+   "id": "B",
+   "text": "to time it"
+  },
+  {
+   "id": "C",
+   "text": "the timings"
+  },
+  {
+   "id": "D",
+   "text": "timed"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The blank is the third item in a coordinated series of nouns — \"the vessels, the temperatures, and the timings\" — so it must be a noun matching the first two.\n\n**The Full Solution:**\n- The series lists what Appert's book had to disclose: \"the vessels, the temperatures, and ______ that his process required.\"\n- The first two items are nouns, so the third must be the noun \"timings\" to keep the series parallel.\n- Read it back: \"the vessels, the temperatures, and the timings that his process required\" — three matching nouns.\n\n**Why the other choices are wrong:**\n- A: \"Timing them\" swaps in a verb phrase, breaking the noun-noun-noun pattern.\n- B: \"To time it\" is an infinitive phrase, not a noun parallel to \"vessels\" and \"temperatures.\"\n- D: \"Timed\" is a bare verb form and cannot serve as the third noun in the series."
 }

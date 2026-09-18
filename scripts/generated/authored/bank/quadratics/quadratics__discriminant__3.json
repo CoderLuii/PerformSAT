@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "The height, in feet, of the water in a plaza fountain jet is modeled by $h(x) = -0.5x^2 + 6x - 10$, where $x$ is the horizontal distance, in feet, from the plaza's pump housing and $2 \\le x \\le 10$. For how many distinct values of $x$ in this interval does $h(x) = 8$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Zero"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two"
+    },
+    {
+      "id": "D",
+      "text": "More than two"
+    }
+  ],
+  "distractorNotes": {
+    "A": "concludes the jet never reaches 8 feet, but the resulting discriminant is 0, not negative",
+    "C": "assumes any horizontal line meets a parabola twice, which fails at the turning point",
+    "D": "treats the model as though the jet oscillates, which a single parabola never does"
+  },
+  "correctAnswer": "B",
+  "hint": "Move the 8 across and look at what kind of quadratic is left.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** Setting $-0.5x^2 + 6x - 10 = 8$ gives $x^2 - 12x + 36 = 0$, whose discriminant is $0$: one solution, $x = 6$.\n\n**The Full Solution:**\nStep 1: Set the model equal to $8$. $-0.5x^2 + 6x - 10 = 8$, so $-0.5x^2 + 6x - 18 = 0$.\nStep 2: Clear the fraction and test the discriminant. Multiplying by $-2$ gives $x^2 - 12x + 36 = 0$, so $b^2 - 4ac = 144 - 144 = 0$ — exactly one real solution.\nStep 3: Find it and confirm it is in range. $x^2 - 12x + 36 = (x - 6)^2$, so $x = 6$, which lies between $2$ and $10$. Height there: $-0.5(36) + 36 - 10 = 8$ feet. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (Zero): would need a negative discriminant. Here it is exactly $0$, so the jet does touch $8$ feet — at its peak.\n* Choice C (Exactly two): is the usual case for a horizontal line through a parabola, but $8$ feet is the maximum height, met at a single point.\n* Choice D (More than two): cannot happen: a quadratic equation has at most two real solutions.\n\n**Test Day Takeaway:** A discriminant of $0$ is the signal that the horizontal line is tangent — it touches the parabola at its turning point and nowhere else."
+}

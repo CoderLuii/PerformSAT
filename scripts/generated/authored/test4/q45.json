@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
+  "module": 2,
+  "passage": "The mixture of winter rye, crimson clover, and hairy vetch that many growers sow after the autumn harvest ______ several jobs at once: the rye's dense roots hold the soil against winter rains, the clover and vetch draw nitrogen from the air, and the whole stand smothers early weeds.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "are"
+      "text": "perform"
     },
     {
       "id": "B",
-      "text": "have been"
+      "text": "are performing"
     },
     {
       "id": "C",
-      "text": "is"
+      "text": "performs"
     },
     {
       "id": "D",
-      "text": "were"
+      "text": "have performed"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The subject is the singular \"collection,\" and the plural nouns in the modifiers — \"tablets,\" \"libraries\" — do not change it, so the singular verb \"is\" agrees. \"Are\" (A) and \"were\" (D) are plural and disagree with \"collection,\" and \"have been\" (B) is likewise plural while also shifting the tense without reason.",
-  "passage": "The vast collection of clay tablets recovered from the ruined libraries of the ancient city of Nineveh ______ one of the richest written records of the ancient world, including myths, medical texts, and the administrative accounts of a sprawling empire.",
+  "explanation": "**Choice C is correct.** The subject is the singular noun \"mixture,\" so the verb must be the singular \"performs.\"\n\n**The Full Solution:**\n- Strip the modifiers: \"The mixture ... performs several jobs at once.\"\n- \"Of winter rye, crimson clover, and hairy vetch\" and the that-clause modify \"mixture\" without changing its number.\n- The plural nouns inside those modifiers (rye, clover, vetch, growers) are bait; the head noun is \"mixture,\" and it is singular.\n\n**Why the other choices are wrong:**\n- A: \"Perform\" is plural, agreeing with the nearby crop names instead of the subject.\n- B: \"Are performing\" is likewise plural and mismatches the singular head noun.\n- D: \"Have performed\" is plural, and its completed aspect also clashes with the ongoing jobs the colon then lists.",
   "_meta": {
-    "anchor": "Nineveh tablet collection; subject-verb agreement (singular collective)"
-  },
-  "module": 2
+    "anchor": "cover-crop mixture; subject-verb agreement (singular collective subject)"
+  }
 }

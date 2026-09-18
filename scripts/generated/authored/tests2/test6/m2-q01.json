@@ -1,0 +1,98 @@
+{
+ "id": 1,
+ "question": "Each point on the scatterplot gives the applied load, in kilonewtons, and the deflection, in millimeters, of one of 12 steel beams. Using the line of best fit $y = 0.5x + 1.5$, at what load, in kilonewtons, is the predicted deflection $9.5$ millimeters?",
+ "diagram": {
+  "type": "scatterplot",
+  "params": {
+   "points": [
+    [
+     2,
+     2.5
+    ],
+    [
+     4,
+     3.5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     8,
+     5
+    ],
+    [
+     10,
+     6.5
+    ],
+    [
+     12,
+     7
+    ],
+    [
+     14,
+     9
+    ],
+    [
+     16,
+     10
+    ],
+    [
+     18,
+     11
+    ],
+    [
+     20,
+     11
+    ],
+    [
+     22,
+     13
+    ],
+    [
+     23,
+     12.5
+    ]
+   ],
+   "xMin": 0,
+   "xMax": 24,
+   "yMin": 0,
+   "yMax": 14,
+   "xGridStep": 2,
+   "yGridStep": 2,
+   "xLabelStep": 4,
+   "yLabelStep": 4,
+   "xLabel": "Applied load (kN)",
+   "yLabel": "Deflection (mm)",
+   "bestFitLine": {
+    "slope": 0.5,
+    "intercept": 1.5
+   }
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$16$"
+  },
+  {
+   "id": "C",
+   "text": "$19$"
+  },
+  {
+   "id": "D",
+   "text": "$22$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the slope and the intercept: computes (9.5 - 0.5)/1.5 = 6",
+  "C": "ignores the intercept and divides 9.5 by the slope: 9.5/0.5 = 19",
+  "D": "adds the intercept instead of subtracting it: (9.5 + 1.5)/0.5 = 22"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** A predicted deflection is a $y$-value, so set $0.5x + 1.5 = 9.5$. Subtracting the intercept leaves $0.5x = 8$, so $x = 16$ kilonewtons.\n\n**The Full Solution:**\nStep 1: On this scatterplot the load is $x$ and the deflection is $y$, so \"predicted deflection $9.5$\" means $y = 9.5$ on the line of best fit, not at a plotted point.\nStep 2: Substitute into the line: $9.5 = 0.5x + 1.5$. Subtract $1.5$ from both sides to get $8 = 0.5x$.\nStep 3: Divide by $0.5$: $x = 16$. Check by predicting forward: $0.5(16) + 1.5 = 8 + 1.5 = 9.5$ millimeters ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): swaps the roles of the slope and the intercept, computing $(9.5 - 0.5)/1.5 = 6$.\n* Choice C ($19$): drops the intercept entirely and divides $9.5$ by $0.5$, which predicts $0.5(19) + 1.5 = 11$ millimeters, not $9.5$.\n* Choice D ($22$): adds $1.5$ instead of subtracting it, giving $(9.5 + 1.5)/0.5 = 22$.\n\n**Test Day Takeaway:** Working backward on a line of best fit is the same algebra as working forward — undo the intercept first, then divide by the slope."
+}

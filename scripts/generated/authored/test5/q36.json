@@ -1,34 +1,34 @@
 {
-  "id": 536,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "For years chemists had argued over the shape of the benzene molecule, with its ring of six carbon atoms, without being able to settle whether the ring was flat or puckered. In the late 1920s the crystallographer Kathleen Lonsdale obtained X-ray diffraction patterns from crystals of hexamethylbenzene and used them to determine the positions of the atoms directly. Her measurements showed that the carbon ring was flat and that all six carbon-carbon bonds were the same length—a result earlier chemical reasoning had suggested but had never been able to demonstrate. The finding put a long-standing structural debate on firm experimental ground and helped establish X-ray methods as a way of answering questions about molecules that chemistry alone could not resolve.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Chemists working in the 1920s disagreed sharply with one another over whether the six-carbon ring of the benzene molecule was actually flat or was instead somehow puckered."
-    },
-    {
-      "id": "B",
-      "text": "Lonsdale's X-ray analysis of hexamethylbenzene showed directly that the benzene ring is flat with equal bond lengths, settling a debate and demonstrating the power of X-ray methods."
-    },
-    {
-      "id": "C",
-      "text": "Crystals of hexamethylbenzene happen to be especially well suited to study by the X-ray diffraction techniques available in the late 1920s."
-    },
-    {
-      "id": "D",
-      "text": "X-ray diffraction has by now largely replaced ordinary chemical reasoning as the principal tool for investigating the structure of molecules."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage frames an unsettled question (flat or puckered benzene ring), reports Lonsdale's X-ray measurements showing the ring flat with equal bonds, and closes with the significance: it settled the debate and showed X-ray methods could answer questions chemistry alone could not. Choice A states only the opening disagreement. Choice C reports a detail about the crystals rather than the central finding. Choice D overstates the closing point into a sweeping claim about X-ray methods replacing chemical reasoning, which the passage does not make.",
-  "_meta": {
-    "anchor": "Kathleen Lonsdale — X-ray proof that the benzene ring is flat"
+ "id": 536,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "The Flemish painter Clara Peeters, one of the few women working professionally in still life in the early seventeenth century, planted herself inside her pictures. In the curved lids of pewter jugs and the bowls of gilt goblets she painted tiny reflected self-portraits — a woman at her easel, sometimes repeated several times across a single panel's gleaming surfaces. At a time when women were largely barred from artists' guilds and their works were routinely reattributed to men, such reflections amounted to a signature that could not be painted out without destroying the very passage of virtuoso illusion that gave the picture its value.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Peeters was finally admitted to one of the artists' guilds of her city only after the tiny self-portraits reflected in her painted vessels proved that the still lifes were her own work."
+  },
+  {
+   "id": "B",
+   "text": "Peeters embedded miniature self-portraits in the reflective objects of her still lifes, a device that asserted her authorship in an era when women's work was easily uncredited."
+  },
+  {
+   "id": "C",
+   "text": "Peeters painted the miniature reflections chiefly to demonstrate her technical mastery of rendering light on polished metal surfaces."
+  },
+  {
+   "id": "D",
+   "text": "Peeters's paintings were frequently reattributed to male painters because she declined to sign her panels."
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The text's arc runs from the device — tiny self-portraits mirrored in pewter and gilt — to its significance: an undeletable assertion of authorship by a woman whose credit was precarious.\n\n**The Full Solution:**\n- The first two sentences establish what Peeters did: she painted herself, at her easel, into the reflective surfaces of her still lifes.\n- The final sentence supplies the stakes and the interpretation: with guilds closed to women and reattribution routine, the reflections \"amounted to a signature that could not be painted out\" without ruining the picture's prized illusion.\n- Choice B joins the device to that function, which is the text's central claim.\n\n**Why the other choices are wrong:**\n- A: The text says women were largely barred from guilds; no admission, by Peeters or anyone, is reported.\n- C: It reduces the reflections to technique, dropping the authorship argument the final sentence builds.\n- D: It inverts the logic — the reflections functioned as her signature, and the text never says she declined to sign.",
+ "_meta": {
+  "anchor": "Clara Peeters — reflected self-portraits as indelible signatures in still life"
+ }
 }

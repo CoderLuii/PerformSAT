@@ -1,0 +1,29 @@
+{
+  "question": "For the linear function $f$, $f(x) = ax + b$, where $a$ and $b$ are constants and $a$ is positive. The value of $f(9)$ is three times the value of $f(1)$, and neither of those values is zero. Which equation relating $a$ and $b$ must be true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$b = -3a$"
+    },
+    {
+      "id": "B",
+      "text": "$b = 2a$"
+    },
+    {
+      "id": "C",
+      "text": "$b = 3a$"
+    },
+    {
+      "id": "D",
+      "text": "$b = 4a$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "subtracts in the wrong order, turning $6a = 2b$ into $-6a = 2b$",
+    "B": "drops the $+b$ on the left side, solving $9a = 3a + 3b$",
+    "D": "distributes the $3$ to $a$ only, solving $9a + b = a + 3b$"
+  },
+  "explanation": "**SAT Pattern: Solve for a Linear Parameter from a Conditional Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** $9a + b = 3(a + b)$ gives $9a + b = 3a + 3b$, so $6a = 2b$ and $b = 3a$.\n\n**The Full Solution:**\n\nStep 1: Write the two outputs: $f(9) = 9a + b$ and $f(1) = a + b$.\n\nStep 2: The condition says $9a + b = 3(a + b)$. Distribute the $3$ to both terms: $9a + b = 3a + 3b$.\n\nStep 3: Subtract $3a$ and $b$ from each side: $6a = 2b$, so $b = 3a$. Check with $a = 1$ and $b = 3$: $f(9) = 12$ and $3f(1) = 3(4) = 12$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($b = -3a$): reverses the subtraction, producing $-6a = 2b$.\n\n* Choice B ($b = 2a$): drops the $+b$ on the left, leaving $9a = 3a + 3b$.\n\n* Choice D ($b = 4a$): distributes the $3$ only to the $a$-term, leaving $9a + b = 3a + b$ mishandled as $9a + b = a + 3b$.\n\n**Test Day Takeaway:** Expand both sides fully before collecting terms; a condition like $f(9) = 3f(1)$ triples every part of $f(1)$, constant included.",
+  "id": "bank-alg-510"
+}

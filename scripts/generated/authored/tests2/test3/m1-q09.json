@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A technician writes the constraint on a storage plan twice, once as $10x + 4y = 26$ and once as $15x + cy = 39$. Every pair $(x, y)$ that satisfies one equation satisfies the other. What is the value of the constant $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.5$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the scale factor 15/10 = 1.5 itself instead of applying it to the coefficient 4",
+  "B": "assumes the two equations must have identical y-coefficients rather than proportional ones",
+  "D": "adds the difference 15 - 10 = 5 to 4 instead of multiplying 4 by the factor 1.5"
+ },
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The second equation must be the first multiplied by a constant. Since $15 \\div 10 = 1.5$ and $39 \\div 26 = 1.5$, the multiplier is $1.5$, so $c = 1.5(4) = 6$.\n\n**The Full Solution:**\nStep 1: Two linear equations are satisfied by exactly the same pairs $(x, y)$ only when one is a nonzero multiple of the other. So there is a constant $k$ with $15 = 10k$, $c = 4k$, and $39 = 26k$.\nStep 2: From $15 = 10k$, $k = 1.5$; the constant terms agree with this, since $26(1.5) = 39$.\nStep 3: Then $c = 4(1.5) = 6$. Check: multiplying $10x + 4y = 26$ by $1.5$ gives $15x + 6y = 39$, which is exactly the second equation ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.5$): this is the multiplier $k$, not the coefficient. The multiplier still has to be applied to the $4$.\n* Choice B ($4$): assumes both equations must show the same coefficient of $y$. They must be proportional, not identical — with $c = 4$ the second equation would be $15x + 4y = 39$, which the pair $(1, 6)$ satisfies while the first equation does not.\n* Choice D ($9$): adds $15 - 10 = 5$ to $4$. Equivalence comes from multiplying every term by the same factor, not from adding the same amount to every term.\n\n**Test Day Takeaway:** For \"same solutions\" systems, find the multiplier from a pair of coefficients you already know, then verify it on the constants before you use it on the unknown one."
+}

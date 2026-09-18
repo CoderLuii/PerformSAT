@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-188",
+ "question": "A branch library's audiobook checkouts return to their January level in the two months given by the solutions of $2x^2-26x+72=0$. What is the sum of those two solutions?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-13$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$26$"
+  },
+  {
+   "id": "D",
+   "text": "$36$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses b/a instead of -b/a, giving -13",
+  "C": "uses -b and never divides by a = 2, giving 26",
+  "D": "reports the product c/a = 36 instead of the sum"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sum/Product of Roots — Vieta's**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** For $ax^2+bx+c=0$ the solutions add to $-\\frac{b}{a}=-\\frac{-26}{2}=13$.\n\n**The Full Solution:**\nStep 1: Identify $a=2$, $b=-26$, $c=72$.\nStep 2: The sum of the solutions is $-\\frac{b}{a}=-\\frac{-26}{2}$.\nStep 3: Simplify to $13$. Check: the equation factors as $2(x-4)(x-9)=0$, and $4+9=13$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-13$): uses $\\frac{b}{a}$ instead of $-\\frac{b}{a}$, producing $-13$.\n* Choice C ($26$): uses $-b=26$ and forgets to divide by $a=2$.\n* Choice D ($36$): computes the product $\\frac{c}{a}=\\frac{72}{2}=36$ rather than the sum.\n\n**Test Day Takeaway:** Sum of solutions is $-\\frac{b}{a}$ and product is $\\frac{c}{a}$ — the leading coefficient divides both."
+}

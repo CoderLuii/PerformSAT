@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A packing charge, in dollars, for $x$ crates equals $4(3x - 5)$. Rewriting that charge without parentheses gives the form $ax + b$. Which of the following gives $a$ and $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$a = -20$ and $b = 12$"
+  },
+  {
+   "id": "B",
+   "text": "$a = 3$ and $b = -5$"
+  },
+  {
+   "id": "C",
+   "text": "$a = 12$ and $b = -5$"
+  },
+  {
+   "id": "D",
+   "text": "$a = 12$ and $b = -20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the coefficient and the constant, reporting a = -20 and b = 12",
+  "B": "copies 3 and -5 straight out of the parentheses without multiplying by 4",
+  "C": "multiplies 4 by 3x but leaves the -5 untouched, giving b = -5"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice D is correct.** The $4$ multiplies both terms inside the parentheses, so $4(3x - 5) = 12x - 20$. Matching this to $ax + b$ gives $a = 12$ and $b = -20$.\n\n**The Fast Way (~10s):** $4 \\cdot 3 = 12$ and $4 \\cdot (-5) = -20$, so $a = 12$ and $b = -20$.\n\n**The Full Solution:**\nStep 1: Distribute the $4$ across the first term: $4 \\cdot 3x = 12x$.\nStep 2: Distribute the $4$ across the second term: $4 \\cdot (-5) = -20$, so the charge is $12x - 20$ dollars.\nStep 3: Compare $12x - 20$ with $ax + b$ term by term: $a = 12$ and $b = -20$. Check with $x = 3$: $4(9 - 5) = 16$ and $12(3) - 20 = 16$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($a = -20$ and $b = 12$): distributes correctly but reports the numbers in the wrong roles — $-20$ is the constant, not the coefficient of $x$.\n* Choice B ($a = 3$ and $b = -5$): reads $3$ and $-5$ straight out of the parentheses and never multiplies by $4$.\n* Choice C ($a = 12$ and $b = -5$): multiplies the $3x$ by $4$ but leaves the $-5$ alone, so the constant is off by a factor of $4$.\n\n**Test Day Takeaway:** Distribution touches every term inside the parentheses. Multiply the constant too, then match term by term."
+}

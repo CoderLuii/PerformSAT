@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-102",
+ "question": "A circle in the $xy$-plane has the equation $(x + 3)^2 + (y - 10)^2 = 121$. What is the difference when the radius of the circle is subtracted from the $y$-coordinate of its center?",
+ "correctAnswer": "-1",
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**The correct answer is $-1$.**\n\n**The Fast Way (~30s):** The center is $(-3, 10)$ and the radius is $\\sqrt{121} = 11$, so the requested difference is $10 - 11 = -1$.\n\n**The Full Solution:**\nStep 1: Match the equation to $(x - h)^2 + (y - k)^2 = r^2$. From $(y - 10)^2$, the center's $y$-coordinate is $k = 10$.\nStep 2: The right side gives $r^2 = 121$, so $r = 11$.\nStep 3: Subtract the radius from $k$: $10 - 11 = -1$.\n\nCheck: the lowest point of this circle is at $y = 10 - 11 = -1$, which is exactly the value computed.\n\n**Common Mistakes:**\n* Using $r^2 = 121$ instead of $r = 11$, which gives $10 - 121 = -111$.\n* Subtracting in the other order and answering $1$.\n* Using the $x$-coordinate $-3$ of the center, which gives $-3 - 11 = -14$.\n\n**Test Day Takeaway:** Extract $h$, $k$, and $r$ separately before combining them, and take the square root of the right side exactly once."
+}

@@ -1,0 +1,29 @@
+{
+ "question": "A pollen station reports a raw index of $2p + 3$ and an adjusted index of $2(p + 5)$ for the same particle count $p$, in grains per cubic meter. The adjusted index is $24$. What is the raw index?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$17$"
+  },
+  {
+   "id": "C",
+   "text": "$22$"
+  },
+  {
+   "id": "D",
+   "text": "$27$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "solves $2p = 14$ for $p = 7$ and reports the particle count instead of the raw index",
+  "C": "distributes $2(p + 5)$ as $2p + 5$, giving $2p = 19$ and a raw index of $22$",
+  "D": "adds $3$ to the adjusted index of $24$"
+ },
+ "explanation": "**SAT Pattern: Shifted-Output Linear**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $2(p+5) = 24$ gives $2p = 14$, so the raw index is $14 + 3 = 17$.\n\n**The Full Solution:**\n\nStep 1: Distribute the adjusted index: $2(p + 5) = 2p + 10$.\n\nStep 2: Set it equal to $24$: $2p + 10 = 24$, so $2p = 14$.\n\nStep 3: The raw index is $2p + 3 = 14 + 3 = 17$. Check with $p = 7$: the adjusted index is $2(12) = 24$ and the raw index is $17$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($7$): reports the particle count $p$ rather than the raw index.\n\n* Choice C ($22$): distributes only to the first term, so $2p = 19$ and the raw index comes out $22$.\n\n* Choice D ($27$): adds $3$ to the adjusted index instead of rebuilding the raw one from $2p$.\n\n**Test Day Takeaway:** Distribute across the whole parenthesis, then solve for the shared block rather than for the variable.",
+ "id": "bank-alg-304"
+}

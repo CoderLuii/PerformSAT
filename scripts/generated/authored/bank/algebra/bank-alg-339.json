@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-339",
+  "question": "A stadium sells premium, standard, and discounted tickets. For one event, the number of standard tickets sold was $5$ times the number $p$ of premium tickets sold, and the number of discounted tickets sold was $40$ fewer than the number of standard tickets sold. If $1{,}500$ tickets were sold in total, how many discounted tickets were sold?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$140$"
+    },
+    {
+      "id": "B",
+      "text": "$660$"
+    },
+    {
+      "id": "C",
+      "text": "$700$"
+    },
+    {
+      "id": "D",
+      "text": "$740$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "reported p, the premium count",
+    "C": "reported the standard count 5p",
+    "D": "computed 5p + 40 instead of 5p - 40"
+  },
+  "explanation": "**SAT Pattern: Word-Problem to Multi-Step Linear**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Standard $= 5p$, discounted $= 5p - 40$. Total: $p + 5p + 5p - 40 = 11p - 40 = 1{,}500$, so $p = 140$ and discounted $= 700 - 40 = 660$.\n\n**The Full Solution:**\nStep 1: Translate carefully; \"discounted\" is defined relative to STANDARD, not to $p$: premium $= p$, standard $= 5p$, discounted $= 5p - 40$.\nStep 2: Total: $p + 5p + (5p - 40) = 11p - 40 = 1{,}500$, so $11p = 1{,}540$ and $p = 140$.\nStep 3: Discounted $= 5(140) - 40 = 660$.\nCheck: $140 + 700 + 660 = 1{,}500$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($140$): stops at $p$.\n* Choice C ($700$): reports the standard count $5p$ and skips the final subtraction.\n* Choice D ($740$): adds $40$ instead of subtracting it.\n\n**Test Day Takeaway:** Read WHICH quantity a comparison refers to; \"fewer than the number of standard tickets\" hangs off $5p$, not off $p$."
+}

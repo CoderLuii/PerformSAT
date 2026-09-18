@@ -1,0 +1,49 @@
+{
+ "id": "bank-alg-154",
+ "question": "The table gives the total cost $C$, in dollars, of a city-pass card valid for $d$ days. A second card is priced by $C = kd + 7$, and no number of days makes the two cards cost the same. What is the value of $k$?",
+ "questionTable": {
+  "headers": [
+   "Days, $d$",
+   "Total cost, $C$"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$9$"
+   ],
+   [
+    "$3$",
+    "$27$"
+   ],
+   [
+    "$5$",
+    "$45$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the change in d from one row to the next",
+  "B": "reports the constant 7 from the second card's price",
+  "D": "reports the change in C between rows without dividing by the change in d"
+ },
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The table's rate is $\\frac{27 - 9}{3 - 1} = 9$ dollars per day, and two prices never agree only when the rates match, so $k = 9$.\n\n**The Full Solution:**\n\nStep 1: Find the first card's rate from the table: $\\frac{27 - 9}{3 - 1} = \\frac{18}{2} = 9$ dollars per day, so $C = 9d$.\n\nStep 2: The two prices are equal for some $d$ unless the equations $C = 9d$ and $C = kd + 7$ describe parallel lines, which requires $k = 9$.\n\nStep 3: Verify that no value of $d$ works when $k = 9$: setting $9d = 9d + 7$ gives $0 = 7$, which is never true. So $k = 9$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2$): reports $3 - 1$, the change in $d$ between rows, rather than the rate.\n* Choice B ($7$): copies the constant from the second card's price.\n* Choice D ($18$): reports $27 - 9$, the change in cost between rows, without dividing by the $2$-day change.\n\n**Test Day Takeaway:** Two linear models never agree exactly when their rates match and their starting values do not."
+}

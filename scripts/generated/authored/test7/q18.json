@@ -1,31 +1,31 @@
 {
-  "id": 718,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "The earliest devices for removing cataracts with laser energy were patented in the 1980s. Their inventors' contributions to ophthalmic surgery ______ frequently highlighted in histories of medical technology, in part because the approach made the procedure faster and more precise than the manual methods it replaced.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "is"
-    },
-    {
-      "id": "B",
-      "text": "was"
-    },
-    {
-      "id": "C",
-      "text": "has been"
-    },
-    {
-      "id": "D",
-      "text": "are"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The subject of the verb is the plural noun \"contributions,\" which requires the plural verb \"are.\" Choices A, B, and C are all singular forms (\"is,\" \"was,\" \"has been\") that fail to agree with the plural subject; the intervening phrase \"to ophthalmic surgery\" does not change the number of the subject."
+ "id": 718,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "The capsaicinoids that give chile peppers their heat ______ concentrated not in the seeds, as cooks often assume, but in the pale ribs of tissue that anchor the seeds to the fruit's wall. Removing the ribs, rather than the seeds alone, is what genuinely tames a hot pepper.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "is"
+  },
+  {
+   "id": "B",
+   "text": "was"
+  },
+  {
+   "id": "C",
+   "text": "has been"
+  },
+  {
+   "id": "D",
+   "text": "are"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The verb's subject is the plural noun \"capsaicinoids,\" so subject-verb agreement requires the plural verb \"are.\"\n\n**The Full Solution:**\n- Find the subject: \"The capsaicinoids...are concentrated.\" The clause \"that give chile peppers their heat\" merely describes the capsaicinoids.\n- Strip the intervening clause and the frame is plain: \"The capsaicinoids ______ concentrated not in the seeds...but in the ribs.\"\n- A plural subject takes a plural verb, so \"are\" is the only form that agrees.\n\n**Why the other choices are wrong:**\n- A: \"Is\" is singular and cannot agree with the plural \"capsaicinoids.\"\n- B: \"Was\" is singular as well, and its past tense clashes with the passage's present-tense description.\n- C: \"Has been\" is also singular — the plural form of that construction would be \"have been.\""
 }

@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-169",
+  "question": "The mean of four measurements is $9.2$. Two of the measurements are $8.6$ and $10.4$, and the other two measurements are equal to each other. What is the value of each of the other two measurements?",
+  "correctAnswer": "8.9",
+  "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**The correct answer is $8.9$.**\n\n**The Fast Way (~15s):** Total $= 4(9.2) = 36.8$; the two known values sum to $19$; the two equal values share $36.8 - 19 = 17.8$, so each is $8.9$.\n\n**The Full Solution:**\nStep 1: Sum of all four measurements: $4 \\times 9.2 = 36.8$.\nStep 2: Let each unknown measurement be $m$. Then $8.6 + 10.4 + 2m = 36.8$, so $2m = 17.8$.\nStep 3: $m = 8.9$. Check: $\\frac{8.6 + 10.4 + 8.9 + 8.9}{4} = \\frac{36.8}{4} = 9.2$. $\\checkmark$\n\n**Common Mistakes:** Reporting $17.8$, the combined value of the two unknowns, instead of each one; using three measurements, $3(9.2) - 19 = 8.6$; subtracting only one of the known values from the total.\n\n**Test Day Takeaway:** Two equal unknowns contribute $2m$ to the sum; solve for the pair, then halve."
+}

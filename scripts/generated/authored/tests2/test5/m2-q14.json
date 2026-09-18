@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "In an audio equalizer model, the curve $y=2x^{2}+bx+5$ and the line $y=3x+1$ meet at exactly one point in the $xy$-plane, where $b$ is a constant and $x$ is a frequency offset in kilohertz. Which equation must $b$ satisfy?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(b-3)^{2}=32$"
+  },
+  {
+   "id": "B",
+   "text": "$(b-3)^{2}=16$"
+  },
+  {
+   "id": "C",
+   "text": "$(b-3)^{2}=-32$"
+  },
+  {
+   "id": "D",
+   "text": "$(b+3)^{2}=32$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses a = 1 instead of a = 2 in 4ac, computing 4(1)(4) = 16 rather than 4(2)(4) = 32",
+  "C": "sets the discriminant equal to 4ac minus (b - 3)^2, flipping the sign of the whole condition",
+  "D": "adds 3x to the left side instead of subtracting it, producing a linear coefficient of b + 3"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice A is correct.**\n\n**The Fast Way (~45s):** Setting the two expressions equal gives $2x^{2}+(b-3)x+4=0$. One intersection point means the discriminant is zero: $(b-3)^{2}-4(2)(4)=0$, so $(b-3)^{2}=32$.\n\n**The Full Solution:**\nStep 1: A point where the curve meets the line is a value of $x$ with $2x^{2}+bx+5=3x+1$. Collect everything on one side: $2x^{2}+bx-3x+5-1=0$, or $2x^{2}+(b-3)x+4=0$.\nStep 2: This quadratic has exactly one real solution precisely when its discriminant is zero. With $a=2$, the linear coefficient $b-3$, and $c=4$, the discriminant is $(b-3)^{2}-4(2)(4)=(b-3)^{2}-32$.\nStep 3: Set it equal to zero: $(b-3)^{2}=32$. Check one solution: $b=3+4\\sqrt{2}$ makes the quadratic $2x^{2}+4\\sqrt{2}\\,x+4=0$, whose discriminant is $32-32=0$, a single repeated root ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($(b-3)^{2}=16$): uses $a=1$ in $4ac$, computing $4(1)(4)=16$. The leading coefficient of the combined equation is $2$, not $1$.\n* Choice C ($(b-3)^{2}=-32$): moves the $4ac$ term the wrong way, which makes the equation impossible — a square is never negative.\n* Choice D ($(b+3)^{2}=32$): adds $3x$ instead of subtracting it when moving the line's terms across, so the linear coefficient comes out $b+3$.\n\n**Test Day Takeaway:** \"Meets at exactly one point\" is a discriminant-equals-zero instruction. Combine the two equations into one quadratic first, read $a$, $b$, and $c$ off that combined form, and set $b^{2}-4ac=0$."
+}

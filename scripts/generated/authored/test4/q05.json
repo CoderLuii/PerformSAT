@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
+  "module": 1,
+  "passage": "In 1856 the eighteen-year-old chemist William Perkin set out to synthesize quinine, then the only effective malaria treatment, from coal-tar compounds. The attempt failed. __One flask, instead of yielding the colorless drug, produced a deep purple residue that dyed silk a brilliant, wash-fast mauve.__ Perkin patented the substance, left his studies, and opened a factory; within two decades, chemists across Europe were coaxing a whole spectrum of synthetic colors from coal tar, and the firms they founded were branching into pharmaceuticals and photographic chemicals. A failed medicine had become the founding accident of industrial organic chemistry.",
   "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
   "choices": [
     {
       "id": "A",
-      "text": "It provides the molecular confirmation that turned an initially rejected proposal into accepted biology, bridging the theory's hostile early reception and its current textbook status."
+      "text": "It reports the unexpected result of the failed synthesis just described, the accidental discovery on which the industry discussed in the rest of the text was built."
     },
     {
       "id": "B",
-      "text": "It rejects the endosymbiotic theory by showing that mitochondria and chloroplasts share more features with free-living bacteria than with the cells that contain them."
+      "text": "It explains why Perkin's method could never have produced quinine from the starting materials he had chosen."
     },
     {
       "id": "C",
-      "text": "It defines the technical term endosymbiosis so that readers without a background in cell biology can follow the remainder of the passage."
+      "text": "It signals that Perkin's commercial ambitions ultimately mattered more to him than the scientific problem he had set out to solve."
     },
     {
       "id": "D",
-      "text": "It introduces a second phase of Margulis's career, her broader argument about cooperation, which the rest of the passage goes on to develop in detail."
+      "text": "It defines a technical term that readers must understand before the passage's account of the dye industry can proceed."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage moves from a theory colleagues first refused to publish, through its later confirmation, to its present standing as textbook biology, and the underlined sentence supplies the molecular evidence that links the hostile early reception to that current status. Choice B misreads the same evidence as a rejection of the theory; choice C treats the sentence as a definition it does not give; and choice D points to Margulis's broader argument about cooperation, which the passage mentions only at the end rather than developing from this sentence.",
-  "passage": "Evolutionary biologist Lynn Margulis spent the late 1960s working out a theory most of her colleagues at first refused to publish: that the energy-producing structures inside complex cells — mitochondria and chloroplasts — were the descendants of free-living bacteria that had been engulfed by ancestral host cells. The idea ran against a dominant picture of evolution as competition between separate lineages. __In the decades that followed, molecular evidence vindicated her account: mitochondria and chloroplasts proved to have their own DNA, their own ribosomes, and a closer genetic relationship to certain bacterial groups than to the cells they live inside.__ Endosymbiosis, once a fringe proposal, is now standard textbook biology, and Margulis's broader argument that cooperation and merger are major evolutionary forces has reshaped how researchers think about the origin of complex life.",
+  "explanation": "**Choice A is correct.** The underlined sentence is the hinge of the passage: the failed experiment's surprise product, from which everything after — patent, factory, industry — follows.\n\n**The Full Solution:**\n- Before the underline: Perkin attempts quinine and fails.\n- The underlined sentence reports what the failure actually produced — a brilliant, wash-fast purple dye.\n- After the underline: Perkin commercializes that dye, and the passage closes by calling it \"the founding accident\" of an industry. The sentence supplies the accident.\n\n**Why the other choices are wrong:**\n- B: The sentence describes what the flask produced, not why the synthesis was chemically doomed.\n- C: Nothing in the sentence weighs Perkin's ambitions against his scientific aims; his commercial turn comes later.\n- D: The sentence narrates an event; it defines no term.",
   "_meta": {
-    "anchor": "Lynn Margulis — endosymbiotic theory (entity_keep)"
-  },
-  "module": 1
+    "anchor": "William Perkin — mauveine, the accidental founding of synthetic dye chemistry"
+  }
 }

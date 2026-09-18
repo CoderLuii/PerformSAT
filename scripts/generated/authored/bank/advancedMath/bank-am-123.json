@@ -1,0 +1,29 @@
+{
+  "question": "A stress calculation contains the quantity $\\left(\\dfrac{m^{4}n^{-2}}{m^{-1}n^{3}}\\right)^{-2}$, where $m$ and $n$ are positive constants. Which of the following gives that quantity in the form $m^{p}n^{q}$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$m^{-6}n^{-2}$"
+    },
+    {
+      "id": "B",
+      "text": "$m^{3}n^{-7}$"
+    },
+    {
+      "id": "C",
+      "text": "$m^{10}n^{-10}$"
+    },
+    {
+      "id": "D",
+      "text": "$m^{-10}n^{10}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "added the denominator exponents instead of subtracting, reducing the inside to m^3 n",
+    "B": "added the outer exponent -2 to each exponent instead of multiplying",
+    "C": "applied the outer exponent as 2 rather than -2"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Inside, $m^{4-(-1)}n^{-2-3}=m^{5}n^{-5}$; raising to the $-2$ power gives $m^{-10}n^{10}$.\n\n**The Full Solution:**\nStep 1: Subtract exponents inside the parentheses: $m^{4-(-1)}=m^{5}$ and $n^{-2-3}=n^{-5}$.\nStep 2: The inside simplifies to $m^{5}n^{-5}$.\nStep 3: Multiply each exponent by $-2$: $m^{5(-2)}n^{-5(-2)}=m^{-10}n^{10}$. Check at $m=n=2$: the inside is $2^{5}\\cdot 2^{-5}=1$, and $1^{-2}=1=2^{-10}\\cdot 2^{10}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($m^{-6}n^{-2}$): adds the denominator's exponents instead of subtracting, reducing the inside to $m^{3}n$.\n* Choice B ($m^{3}n^{-7}$): adds the outer $-2$ to each exponent instead of multiplying.\n* Choice C ($m^{10}n^{-10}$): applies the outer exponent as $2$ rather than $-2$.\n\n**Test Day Takeaway:** Simplify inside the parentheses first, then multiply — never add — by the outer exponent.",
+  "id": "bank-am-123"
+}

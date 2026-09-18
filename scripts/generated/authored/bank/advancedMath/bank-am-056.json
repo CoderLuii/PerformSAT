@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-056",
+ "question": "A humidity index $r$ enters a forecaster's overnight temperature correction, in degrees Celsius, as $-4(2r - 7) + 3r$, a form the forecaster wants rewritten with a single $r$ term. Which of the following is equivalent to that correction?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-11r + 28$"
+  },
+  {
+   "id": "B",
+   "text": "$-5r - 28$"
+  },
+  {
+   "id": "C",
+   "text": "$-5r + 28$"
+  },
+  {
+   "id": "D",
+   "text": "$11r - 28$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "subtracts the $3r$ instead of adding it, giving $-8r - 3r = -11r$",
+  "B": "multiplies $-4$ by $-7$ but keeps the result negative, giving $-28$",
+  "D": "distributes $+4$ instead of $-4$, giving $8r - 28 + 3r$"
+ },
+ "explanation": "**SAT Pattern: Distribute a Negative**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Distributing gives $-8r + 28$, and adding the trailing $3r$ leaves $-5r + 28$.\n\n**The Full Solution:**\nStep 1: Multiply each term inside the parentheses by $-4$: $-4(2r) = -8r$ and $-4(-7) = +28$.\nStep 2: The expression becomes $-8r + 28 + 3r$.\nStep 3: Combine the like terms $-8r$ and $3r$ to get $-5r + 28$. Check: at $r = 1$ the original is $-4(-5) + 3 = 23$, and $-5(1) + 28 = 23$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-11r + 28$): treats the $+3r$ as a subtraction, combining $-8r$ and $-3r$.\n* Choice B ($-5r - 28$): forgets that a negative times a negative is positive, so $-4(-7)$ is recorded as $-28$.\n* Choice D ($11r - 28$): drops the minus sign from the $-4$ before distributing, flipping both signs.\n\n**Test Day Takeaway:** Attach the minus sign to the factor before distributing, then combine like terms — checking one value of the variable catches a stray sign instantly."
+}

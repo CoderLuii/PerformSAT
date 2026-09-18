@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-049",
+  "question": "A bag of birdseed has a mass of $3.75$ kilograms. If $1$ kilogram is approximately equal to $2.2$ pounds, approximately what is the mass of the bag of birdseed, in pounds?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1.70$"
+    },
+    {
+      "id": "B",
+      "text": "$5.95$"
+    },
+    {
+      "id": "C",
+      "text": "$8.25$"
+    },
+    {
+      "id": "D",
+      "text": "$82.5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by $2.2$ instead of multiplying, which would convert pounds to kilograms.",
+    "B": "adds $2.2$ to $3.75$ instead of multiplying.",
+    "D": "multiplies by $22$ instead of $2.2$, a misplaced decimal point."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Single Unit Conversion**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Each kilogram is $2.2$ pounds, so $3.75$ kilograms is $3.75 \\times 2.2 = 8.25$ pounds.\n\n**The Full Solution:**\nStep 1: Set up the conversion so that kilograms cancel: $3.75 \\text{ kg} \\times \\frac{2.2 \\text{ lb}}{1 \\text{ kg}}$.\nStep 2: $3.75 \\times 2.2 = 8.25$ pounds.\nStep 3: Check: a pound is smaller than a kilogram, so the number of pounds should be larger than $3.75$, and $8.25$ is a little more than double. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.70$): divides by $2.2$ instead of multiplying, which would convert pounds to kilograms.\n* Choice B ($5.95$): adds $2.2$ to $3.75$ instead of multiplying.\n* Choice D ($82.5$): multiplies by $22$ instead of $2.2$, a misplaced decimal point.\n\n**Test Day Takeaway:** Write the conversion factor as a fraction with the unit to cancel in the denominator; converting to a smaller unit must make the number bigger."
+}

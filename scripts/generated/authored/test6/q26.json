@@ -9,34 +9,34 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "Dendrochronology and radiocarbon dating are two methods archaeologists use to date organic remains.",
-      "Dendrochronology dates wood by matching the pattern of its annual growth rings to a regional master sequence of known years.",
-      "Because each ring corresponds to a single calendar year, dendrochronology can, when a match is found, assign a piece of wood a precise year.",
-      "Radiocarbon dating measures how much of a radioactive form of carbon remains in once-living material.",
-      "Because that carbon decays at a known rate, radiocarbon dating estimates how long ago the organism died but yields a range of years rather than a single year.",
-      "A 2019 study dated the timbers of a buried structure using both methods."
+      "In the early 1800s, most live plants shipped between continents died at sea from salt spray, temperature swings, and lack of fresh water.",
+      "In 1829, the London doctor Nathaniel Bagshaw Ward found that plants sealed inside a glass case could thrive for years on recycled moisture.",
+      "A sealed Wardian case let sunlight in but kept salt spray out, and water inside condensed and returned to the soil like rain.",
+      "In an 1833 trial, ferns and grasses sealed in Wardian cases reached Sydney alive after months at sea.",
+      "Plant shipments carried on open decks in the same era commonly lost most of their plants.",
+      "Nurseries and botanic gardens soon adopted the case for long-distance plant transport."
     ],
-    "goal": "The student wants to emphasize a difference between what dendrochronology and radiocarbon dating can reveal."
+    "goal": "The student wants to emphasize the difference between the outcomes of the two shipping methods."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Both dendrochronology and radiocarbon dating are methods archaeologists use to date organic remains, and a 2019 study applied both to the timbers of a buried structure to see how closely their results would agree."
+      "text": "Nathaniel Bagshaw Ward, a London doctor, discovered in 1829 that plants sealed inside a glass case could thrive for years on recycled moisture."
     },
     {
       "id": "B",
-      "text": "Dendrochronology dates wood by matching the pattern of its annual growth rings to a regional master sequence of years that has already been dated."
+      "text": "During the 1833 trial, ferns and grasses sealed in Wardian cases spent months at sea before reaching Sydney."
     },
     {
       "id": "C",
-      "text": "Archaeologists have two methods for dating organic remains: dendrochronology, which examines annual growth rings, and radiocarbon dating, which measures a radioactive form of carbon."
+      "text": "The Wardian case admitted sunlight while excluding salt spray, and moisture inside condensed and returned to the soil like rain."
     },
     {
       "id": "D",
-      "text": "Whereas dendrochronology can assign a piece of wood a single calendar year by matching its growth rings, radiocarbon dating measures decaying carbon and so yields only a range of years in which the organism died."
+      "text": "Whereas plants shipped on open decks commonly died at sea, ferns and grasses sealed in Wardian cases survived the months-long voyage to Sydney."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The goal is to emphasize a difference between what the two methods reveal, and choice D draws that contrast directly: dendrochronology can pin down a single calendar year, whereas radiocarbon dating yields only a range. Choice A stresses what the methods share and that both were used in one study, the opposite emphasis. Choice B describes only dendrochronology, so no difference emerges. Choice C names both methods but simply defines them side by side without contrasting what each can establish."
+  "explanation": "**Choice D is correct.** The goal is a difference in outcomes between the two shipping methods, and D sets the two outcomes side by side in one sentence — open-deck plants commonly died; case-sealed plants survived the voyage.\n\n**The Full Solution:**\n- The goal names two requirements: both methods must appear, and what must be contrasted is how each turned out.\n- D's \"Whereas... commonly died... survived\" is built on exactly that comparison, drawing one outcome from the open-deck note and the other from the Sydney trial note.\n\n**Why the other choices are wrong:**\n- A: It introduces Ward and his discovery but mentions only one method and no comparative outcome.\n- B: It reports the sealed cases' voyage alone — with nothing about open-deck shipments, no difference is drawn.\n- C: It explains how the case worked, a mechanism rather than a comparison of results."
 }

@@ -1,0 +1,71 @@
+{
+  "id": "bank-ps-146",
+  "question": "The table shows the nitrate level of each of $500$ water samples collected at three sites along a river. If a sample whose nitrate level is not low is selected at random, what is the probability that the sample was collected downstream?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Low",
+        "Moderate",
+        "High",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Upstream",
+          "110",
+          "50",
+          "20",
+          "180"
+        ],
+        [
+          "Midstream",
+          "70",
+          "60",
+          "40",
+          "170"
+        ],
+        [
+          "Downstream",
+          "30",
+          "50",
+          "70",
+          "150"
+        ],
+        [
+          "Total",
+          "210",
+          "160",
+          "130",
+          "500"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{6}{25}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{12}{29}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{7}{13}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{4}{5}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "120/500, divides by all samples",
+    "C": "70/130, uses only the High column and drops the Moderate samples",
+    "D": "120/150, conditions on downstream instead (P(not low | downstream))"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Two-Way Table Conditional Probability**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Not low means moderate or high: $160 + 130 = 290$ samples. Downstream contributes $50 + 70 = 120$ of them, so the probability is $\\frac{120}{290} = \\frac{12}{29}$.\n\n**The Full Solution:**\nStep 1: The condition \"not low\" combines the Moderate and High columns: $160 + 130 = 290$, or $500 - 210 = 290$. That is the denominator.\nStep 2: In the Downstream row, the moderate and high entries are $50$ and $70$: $50 + 70 = 120$.\nStep 3: Probability $= \\frac{120}{290} = \\frac{12}{29}$. Check: $12 \\times 10 = 120$ and $29 \\times 10 = 290$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{6}{25}$): This is $\\frac{120}{500}$, dividing by every sample instead of only the $290$ that are not low.\n* Choice C ($\\frac{7}{13}$): This is $\\frac{70}{130}$, using only the High column; \"not low\" also includes the moderate samples.\n* Choice D ($\\frac{4}{5}$): This is $\\frac{120}{150}$, conditioning on downstream; it answers \"given downstream, what is the probability the level is not low?\"\n\n**Test Day Takeaway:** For a \"not\" condition, build the denominator from every column that qualifies, then pull the same columns from the row the question asks about."
+}

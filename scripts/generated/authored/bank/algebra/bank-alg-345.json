@@ -1,0 +1,52 @@
+{
+ "question": "The table gives the total cost, in dollars, of an order of $n$ reagent kits placed with a single supplier. Which function models the total cost, in dollars, of an order of $n$ kits from that supplier?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Reagent kits",
+    "Total cost (dollars)"
+   ],
+   "rows": [
+    [
+     "4",
+     "118"
+    ],
+    [
+     "7",
+     "178"
+    ],
+    [
+     "11",
+     "258"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$C(n)=20n$"
+  },
+  {
+   "id": "B",
+   "text": "$C(n)=20n+38$"
+  },
+  {
+   "id": "C",
+   "text": "$C(n)=29.5n$"
+  },
+  {
+   "id": "D",
+   "text": "$C(n)=38n+20$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "uses the correct rate but drops the fixed 38 dollars, giving 80 instead of 118 at n = 4",
+  "C": "divides the first total by its count, assuming the cost is proportional to n",
+  "D": "swaps the rate and the fixed charge, giving 172 instead of 118 at n = 4"
+ },
+ "explanation": "**SAT Pattern: Linear Cost Model**\n\n**Choice B is correct.** The cost rises $\\$20$ per kit and every order carries a fixed $\\$38$, so $C(n)=20n+38$.\n\n**The Fast Way (~35s):** $\\frac{178-118}{7-4}=20$ per kit, and $118-20(4)=38$ fixed, giving $C(n)=20n+38$.\n\n**The Full Solution:**\n\nStep 1: Find the rate from two rows: $\\frac{178-118}{7-4}=\\frac{60}{3}=20$ dollars per kit.\n\nStep 2: Find the fixed part by substituting one row into $C(n)=20n+b$: $118=20(4)+b$, so $b=38$.\n\nStep 3: The model is $C(n)=20n+38$. Check the third row: $20(11)+38=220+38=258$, matching the table.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($C(n)=20n$): the rate is right, but at $n=4$ it gives $\\$80$ rather than the listed $\\$118$.\n* Choice C ($C(n)=29.5n$): divides $118$ by $4$ and assumes proportionality, which fails at $n=7$, where it gives $\\$206.50$.\n* Choice D ($C(n)=38n+20$): swaps the two constants and gives $\\$172$ at $n=4$.\n\n**Test Day Takeaway:** Test a candidate model against a row you did not use to build it; a proportional model must also reproduce the fixed part.",
+ "id": "bank-alg-345"
+}

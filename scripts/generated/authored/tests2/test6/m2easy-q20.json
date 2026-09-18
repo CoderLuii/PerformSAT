@@ -1,0 +1,29 @@
+{
+  "id": 20,
+  "question": "A swim squad logged $34$ sessions during one training block, totaling $71$ hours of pool time. Each interval session ran $150$ minutes and each recovery session ran $1.5$ hours. How many of those $71$ hours were spent in interval sessions?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$14$"
+    },
+    {
+      "id": "B",
+      "text": "$20$"
+    },
+    {
+      "id": "C",
+      "text": "$21$"
+    },
+    {
+      "id": "D",
+      "text": "$50$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "swaps the two session lengths, using 1.5 hours for interval and 2.5 hours for recovery, which returns 14",
+    "B": "reports the number of interval sessions instead of the hours they occupied",
+    "C": "reports the hours spent in recovery sessions, 1.5 times 14 = 21"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: System of Equations — Elimination**\n\n**Choice D is correct.**\n\n**The Fast Way (~50s):** $150$ minutes is $2.5$ hours. With $x + y = 34$ and $2.5x + 1.5y = 71$, subtracting $1.5$ times the first equation leaves $x = 71 - 51 = 20$ interval sessions, so $2.5(20) = 50$ hours.\n\n**The Full Solution:**\nStep 1: Convert to one unit. $150$ minutes $= \\frac{150}{60} = 2.5$ hours, so with $x$ interval sessions and $y$ recovery sessions the system is $x + y = 34$ and $2.5x + 1.5y = 71$.\nStep 2: Eliminate $y$. Multiply the first equation by $1.5$ to get $1.5x + 1.5y = 51$, then subtract it from the second: $(2.5 - 1.5)x = 71 - 51$, so $x = 20$ and $y = 14$.\nStep 3: The question asks for hours, not sessions: $2.5 \\times 20 = 50$ hours. Check the total: $50 + 1.5(14) = 50 + 21 = 71$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($14$): swaps the two lengths, solving $1.5x + 2.5y = 71$ instead, which returns $x = 14$. It is also the number of recovery sessions.\n* Choice B ($20$): solves the system correctly but stops at the number of interval sessions instead of converting to hours.\n* Choice C ($21$): computes hours for the wrong group, $1.5 \\times 14 = 21$ recovery hours.\n\n**Test Day Takeaway:** Convert every quantity to a single unit before writing the system, and reread the final sentence — a system that solves for counts often asks for a total in some other unit."
+}

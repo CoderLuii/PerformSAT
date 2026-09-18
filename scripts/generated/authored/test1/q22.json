@@ -6,26 +6,26 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 1,
- "passage": "Deep-sea ecologist Lisa Levin, of Scripps Institution of Oceanography, has spent decades documenting how seafloor animals tolerate the naturally low-oxygen waters known as oxygen minimum zones. Studying these hypoxic habitats along the Pacific margin for more than three decades, ______ that they preview how deep-sea communities may respond to climate change-driven deoxygenation in coming decades.",
+ "passage": "At the sound archive, preservationists spend their days cataloging brittle lacquer discs, transferring fragile wax-cylinder recordings to digital files, and ______ the temperature-controlled vaults where the originals are stored.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "the species compositions of these zones suggest"
+   "text": "monitoring"
   },
   {
    "id": "B",
-   "text": "Levin has argued"
+   "text": "to monitor"
   },
   {
    "id": "C",
-   "text": "her published research has argued"
+   "text": "they monitor"
   },
   {
    "id": "D",
-   "text": "it has been argued by Levin"
+   "text": "monitored"
   }
  ],
- "correctAnswer": "B",
- "explanation": "The opener 'Studying these hypoxic habitats along the Pacific margin for more than three decades' is a participial phrase, and Standard English requires it to modify the subject of the main clause that follows. Only a person can do the studying, so the subject of the main clause must name a person. (B) 'Levin has argued' supplies that subject and produces a grammatically correct sentence: Levin is the one who has been studying the habitats, and Levin is the one who argues. The other three choices all create dangling-modifier errors because their subjects cannot logically perform the action 'studying.'"
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The series \"cataloging... transferring...\" is built on gerunds, so the third item must be the gerund \"monitoring.\"\n\n**The Full Solution:**\n- The blank completes the third item in a parallel series whose first two items are gerunds.\n- Parallel structure requires the same grammatical form throughout the series.\n\n**Why the other choices are wrong:**\n- B: It switches to an infinitive, breaking the pattern the first two items establish.\n- C: It inserts a subject and finite verb, turning the list item into a clause that cannot sit in the series.\n- D: The past-tense form neither matches the gerunds nor forms any grammatical unit with \"spend their days.\""
 }

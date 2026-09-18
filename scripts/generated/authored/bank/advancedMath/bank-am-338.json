@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-338",
+  "question": "In the $xy$-plane, the graph of a quadratic function has its axis of symmetry at $x = -1$, and one of its $x$-intercepts is $(5, 0)$. What are the coordinates of the other $x$-intercept?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-7, 0)$"
+    },
+    {
+      "id": "B",
+      "text": "$(-6, 0)$"
+    },
+    {
+      "id": "C",
+      "text": "$(-5, 0)$"
+    },
+    {
+      "id": "D",
+      "text": "$(-1, 0)$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "computes -1 - 5 instead of reflecting",
+    "C": "reflects across the y-axis",
+    "D": "reports a point on the axis of symmetry"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The intercept $x = 5$ lies $6$ units right of the axis $x = -1$, so the other lies $6$ units left, at $x = -1 - 6 = -7$.\n\n**The Full Solution:**\nStep 1: A parabola is symmetric about its axis, so the axis is the midpoint of the two $x$-intercepts.\nStep 2: The known intercept is $5 - (-1) = 6$ units to the right of $x = -1$.\nStep 3: The other intercept is $6$ units to the left: $x = -7$, so the point is $(-7, 0)$. Check: the midpoint of $-7$ and $5$ is $\\dfrac{-7 + 5}{2} = -1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($(-6, 0)$): computes $-1 - 5 = -6$, subtracting the intercept's coordinate from the axis instead of reflecting across it.\n* Choice C ($(-5, 0)$): reflects across the $y$-axis rather than across the axis of symmetry.\n* Choice D ($(-1, 0)$): reports a point on the axis of symmetry, which is not an intercept here.\n\n**Test Day Takeaway:** Reflect across the axis by matching distances: axis minus (intercept minus axis)."
+}

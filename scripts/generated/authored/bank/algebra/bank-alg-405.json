@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-405",
+ "question": "A commuter card holds $B = 48 - 2.75r$ dollars after $r$ rides have been taken. How many dollars are on the card before any ride is taken?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2.75$"
+  },
+  {
+   "id": "B",
+   "text": "$45.25$"
+  },
+  {
+   "id": "C",
+   "text": "$48$"
+  },
+  {
+   "id": "D",
+   "text": "$132$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "names the cost of one ride, the rate of change rather than the starting balance",
+  "B": "gives the balance after one ride, $48 - 2.75$",
+  "D": "multiplies the starting balance by the per-ride cost, $48 \\times 2.75$"
+ },
+ "explanation": "**SAT Pattern: Reading Slope-Intercept Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Before any ride, $r = 0$, so $B = 48$ dollars.\n\n**The Full Solution:**\nStep 1: The model is $B = 48 - 2.75r$, where $r$ counts rides taken.\nStep 2: Before any ride is taken, $r = 0$.\nStep 3: Then $B = 48 - 2.75(0) = 48$ dollars. Check: after one ride the balance is $45.25$ dollars, which is $2.75$ less.\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.75$): names the cost of one ride, the rate of change rather than the starting balance\n* Choice B ($45.25$): gives the balance after one ride, $48 - 2.75$\n* Choice D ($132$): multiplies the starting balance by the per-ride cost, $48 \\times 2.75$\n\n**Test Day Takeaway:** A starting value is the output when the input is zero; substitute $0$ rather than guessing which number to report."
+}

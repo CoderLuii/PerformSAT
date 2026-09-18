@@ -6,26 +6,26 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 1,
-  "passage": "When inexpensive paperback books first appeared in the 1930s, many publishers expected them to eat into sales of more expensive hardcover editions and resisted the new format. ______ the low-priced paperbacks reached readers who had rarely bought books at all, expanding the total market rather than merely dividing the existing one. Sales of hardcovers and paperbacks alike climbed over the following decade.",
+  "passage": "Glass in the Roman world was too valuable to discard. Broken vessels were gathered and sold back to workshops, where they were melted down and blown into new forms; ancient writers even mention peddlers who traded sulfur matches for glass shards. Chemical analyses bear the practice out, finding that many Roman vessels contain glass mixed from several original sources. ______ the recycled fraction rises in samples from inland sites far from the coastal furnaces where raw glass was made, suggesting that communities remote from primary production leaned hardest on the secondhand supply.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "For example,"
+      "text": "By contrast,"
     },
     {
       "id": "B",
-      "text": "Therefore,"
+      "text": "In the meantime,"
     },
     {
       "id": "C",
-      "text": "Instead,"
+      "text": "Moreover,"
     },
     {
       "id": "D",
-      "text": "Moreover,"
+      "text": "Therefore,"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. Publishers expected paperbacks to cannibalize hardcover sales; what actually happened was the opposite—the cheap editions drew in new readers and grew the whole market. \"Instead,\" marks that substitution of the actual outcome for the expected one. \"For example,\" is wrong because the second sentence is not an instance of the feared cannibalization. \"Therefore,\" signals a result that follows from the publishers' expectation, but the outcome defied that expectation. \"Moreover,\" merely adds information, missing the contrast between what was feared and what occurred."
+  "explanation": "**Choice C is correct.** The final sentence adds a second, further finding from the chemical analyses — a geographic pattern on top of the mixing evidence — and \"Moreover\" is the transition that stacks additional support onto a point already made.\n\n**The Full Solution:**\n- The third sentence gives the first analytical finding: many vessels contain glass mixed from several sources, confirming recycling.\n- The blank sentence supplies a further finding in the same direction: recycling intensifies with distance from the raw-glass furnaces.\n- Adding a reinforcing piece of evidence to an established point is the job of \"Moreover.\"\n\n**Why the other choices are wrong:**\n- A: \"By contrast\" needs an opposition between the findings; the geographic pattern extends the recycling evidence rather than cutting against it.\n- B: \"In the meantime\" marks simultaneous but separate happenings; nothing in the passage involves events unfolding in parallel time.\n- D: \"Therefore\" would make the inland pattern a logical conclusion drawn from the mixing evidence, but it is an independent additional observation — the analyses found both facts; one does not follow from the other."
 }

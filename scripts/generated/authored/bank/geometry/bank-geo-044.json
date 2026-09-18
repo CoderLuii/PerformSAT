@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-044",
+ "question": "Two cable stays on a mast measure $26$ meters and $41$ meters, and together with a segment of the deck they form a triangle. Which of the following could be the length, in meters, of that deck segment?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$40$"
+  },
+  {
+   "id": "D",
+   "text": "$70$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "falls below the lower bound 41 - 26 = 15",
+  "B": "equals the difference 41 - 26 exactly, which gives a flat degenerate triangle",
+  "D": "exceeds the upper bound 41 + 26 = 67"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Triangle Inequality Range**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The third side must lie strictly between $41 - 26 = 15$ and $41 + 26 = 67$, and only $40$ does.\n\n**The Full Solution:**\nStep 1: Let $x$ be the deck segment. The triangle inequality requires $26 + x > 41$, so $x > 15$.\nStep 2: It also requires $26 + 41 > x$, so $x < 67$.\nStep 3: The deck segment must satisfy $15 < x < 67$, and among the choices only $40$ lies in that interval.\n\nCheck: With $x = 40$, the three sums $26 + 40 = 66 > 41$, $26 + 41 = 67 > 40$, and $40 + 41 = 81 > 26$ all hold. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): sits below the lower bound of $15$, so the two stays cannot reach across it.\n* Choice B ($15$): equals the difference $41 - 26$ exactly, which forces the three sides to lie flat.\n* Choice D ($70$): exceeds the upper bound of $67$, so the two stays are too short to close the frame.\n\n**Test Day Takeaway:** The third side of a triangle always lies strictly between the difference and the sum of the other two."
+}

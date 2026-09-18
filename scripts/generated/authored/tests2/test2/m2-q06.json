@@ -1,0 +1,58 @@
+{
+ "id": 6,
+ "question": "A utility's billing software converts a meter reading $x$ into kilowatt-hours using the function $g$, then converts kilowatt-hours into a dollar charge using the function $f$. The table gives values of $f$ and $g$. What is the charge, in dollars, for a meter reading of $6$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$",
+   "$g(x)$"
+  ],
+  "rows": [
+   [
+    "$2$",
+    "$15$",
+    "$8$"
+   ],
+   [
+    "$4$",
+    "$33$",
+    "$2$"
+   ],
+   [
+    "$6$",
+    "$21$",
+    "$4$"
+   ],
+   [
+    "$8$",
+    "$27$",
+    "$6$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$21$"
+  },
+  {
+   "id": "C",
+   "text": "$25$"
+  },
+  {
+   "id": "D",
+   "text": "$33$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at g(6) = 4, reporting kilowatt-hours instead of running that output through f",
+  "B": "applies f directly to the meter reading, reading f(6) = 21 and skipping the conversion g",
+  "C": "adds the two table entries in the row x = 6, computing 21 + 4 = 25 instead of composing the functions"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The charge is $f(g(6))$. From the table $g(6) = 4$, and $f(4) = 33$ dollars.\n\n**The Full Solution:**\nStep 1: The software runs $g$ first and then $f$, so the charge for a reading of $6$ is the composite $f(g(6))$ — the inner function is evaluated first.\nStep 2: Read the row $x = 6$ in the $g$ column: $g(6) = 4$ kilowatt-hours.\nStep 3: Now evaluate $f$ at that output, using the row $x = 4$: $f(4) = 33$ dollars. Check: the input $6$ never appears again after Step 2, and the value $4$ is looked up in the $f$ column, not the $g$ column ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): the value of $g(6)$. That is the kilowatt-hour reading, one conversion short of the dollar charge the question asks for.\n* Choice B ($21$): reads $f(6) = 21$, applying $f$ straight to the meter reading. The reading has to pass through $g$ first — $f$ only accepts kilowatt-hours.\n* Choice C ($25$): adds the two values in the row $x = 6$, $21 + 4 = 25$. Composition feeds one output into the other function; it never adds them.\n\n**Test Day Takeaway:** In a composite, the inner function's output becomes the outer function's input, so the second lookup uses a different row of the table than the first."
+}

@@ -1,0 +1,29 @@
+{
+  "id": 13,
+  "question": "A diffuser panel for a recording booth is cut as a right triangle whose acute angles measure $30^\\circ$ and $60^\\circ$. The face of the panel has an area of $200\\sqrt{3}$ square inches. What is the perimeter, in inches, of the panel?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20 + 20\\sqrt{3}$"
+    },
+    {
+      "id": "B",
+      "text": "$60 + 20\\sqrt{3}$"
+    },
+    {
+      "id": "C",
+      "text": "$80 + 20\\sqrt{3}$"
+    },
+    {
+      "id": "D",
+      "text": "$60 + 40\\sqrt{3}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds only the two legs, 20 and 20*sqrt(3), and omits the 40-inch hypotenuse",
+    "C": "uses 3 times the short leg (60) as the hypotenuse instead of 2 times the short leg (40)",
+    "D": "writes the longer leg as 40*sqrt(3), doubling the short leg before multiplying by sqrt(3)"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** In a $30$-$60$-$90$ triangle the legs are $a$ and $a\\sqrt{3}$, so $\\frac{a^2\\sqrt{3}}{2} = 200\\sqrt{3}$ gives $a = 20$, and the perimeter is $20 + 20\\sqrt{3} + 40 = 60 + 20\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: Name the sides. A right triangle with acute angles $30^\\circ$ and $60^\\circ$ has sides in the ratio $a : a\\sqrt{3} : 2a$, where $a$ is the leg opposite the $30^\\circ$ angle.\nStep 2: Use the area to find $a$. The two legs are perpendicular, so the area is $\\frac{1}{2} \\cdot a \\cdot a\\sqrt{3} = \\frac{a^2\\sqrt{3}}{2}$. Setting $\\frac{a^2\\sqrt{3}}{2} = 200\\sqrt{3}$ gives $a^2 = 400$, so $a = 20$ inches.\nStep 3: Add the three sides: $20 + 20\\sqrt{3} + 2(20) = 60 + 20\\sqrt{3}$ inches. Check: with $a = 20$ the area is $\\frac{1}{2}(20)(20\\sqrt{3}) = 200\\sqrt{3}$ square inches, matching the given, and $20^2 + (20\\sqrt{3})^2 = 400 + 1200 = 1600 = 40^2$ confirms the hypotenuse. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($20 + 20\\sqrt{3}$): stops after the two legs. Perimeter is the distance around all three sides, and the hypotenuse contributes another $40$ inches.\n* Choice C ($80 + 20\\sqrt{3}$): triples the short leg for the hypotenuse. In a $30$-$60$-$90$ triangle the hypotenuse is twice the short leg, $40$, not three times it.\n* Choice D ($60 + 40\\sqrt{3}$): builds the longer leg from the hypotenuse, writing $40\\sqrt{3}$. The $\\sqrt{3}$ multiplies the SHORT leg, giving $20\\sqrt{3}$.\n\n**Test Day Takeaway:** Write the $30$-$60$-$90$ ratio $a : a\\sqrt{3} : 2a$ before touching the numbers. The area uses the two legs only; the perimeter needs all three sides."
+}

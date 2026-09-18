@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-402",
+ "question": "In a terrain model, two horizontal offsets, in meters, have a sum of $6$ and a product of $-16$. Which equation has exactly those two offsets as its solutions?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x^2 + 6x - 16 = 0$"
+  },
+  {
+   "id": "B",
+   "text": "$x^2 - 6x - 16 = 0$"
+  },
+  {
+   "id": "C",
+   "text": "$x^2 + 6x + 16 = 0$"
+  },
+  {
+   "id": "D",
+   "text": "$x^2 - 6x + 16 = 0$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps the sum's sign instead of negating it in the x-coefficient",
+  "C": "negates neither the sum nor the product",
+  "D": "negates the sum correctly but also flips the sign of the product"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vieta Sum & Product of Roots**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** A monic quadratic with solution sum $S$ and product $P$ is $x^2 - Sx + P = 0$, so $x^2 - 6x - 16 = 0$.\n\n**The Full Solution:**\nStep 1: A quadratic with leading coefficient $1$ can be written $x^2 - Sx + P = 0$, where $S$ is the sum of the solutions and $P$ is their product.\nStep 2: Here $S = 6$ and $P = -16$, so the equation is $x^2 - 6x + (-16) = 0$, that is, $x^2 - 6x - 16 = 0$.\nStep 3: Check: $x^2 - 6x - 16 = (x - 8)(x + 2)$, so the offsets are $8$ and $-2$; they add to $6$ and multiply to $-16$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($x^2 + 6x - 16 = 0$): keeps the sum's sign in the $x$-coefficient; its solutions add to $-6$.\n* Choice C ($x^2 + 6x + 16 = 0$): negates neither the sum nor the product, and in fact has no real solutions.\n* Choice D ($x^2 - 6x + 16 = 0$): handles the sum correctly but flips the sign of the product, leaving no real solutions.\n\n**Test Day Takeaway:** Build a monic quadratic straight from its roots: subtract the sum, add the product."
+}

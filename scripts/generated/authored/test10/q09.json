@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 1,
- "passage": "For decades, soil scientists explained the long-term storage of carbon in soil by the chemistry of the carbon itself: certain plant compounds, it was thought, were simply too tough for microbes to break down and so accumulated over centuries. More recent work has shifted the explanation from the molecules to their surroundings. Much of the carbon that persists in soil, these studies find, is not intrinsically indigestible; rather, it survives because it binds to mineral surfaces or sits trapped inside soil clumps where microbes cannot reach it. On this view, whether soil carbon endures depends less on what the carbon is than on where it ends up and what protects it.",
+ "passage": "A coppiced woodland is cut on a rotation: each year a different block of hazel or ash is felled to ground level and left to regrow from the stump, so the wood always contains patches at every stage, from open sunlit clearing to closed young canopy. Many woodland flowers and butterflies depend on the sunlit stages, and their populations dwindled across Britain as coppicing was abandoned during the twentieth century. Conservation organizations have therefore revived the practice, cutting blocks not primarily for the poles the stumps yield but to restore the open phases that light-demanding species require.",
  "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "Soil scientists have determined that certain plant compounds are too chemically tough for soil microbes to break down."
+   "text": "Coppiced woodlands yield wood products that are considerably more valuable than the timber that conventional felling of the same trees would provide."
   },
   {
    "id": "B",
-   "text": "The carbon stored in soil accumulates mainly because soil microbes are generally unable to digest plant material of any kind, whatever its underlying chemistry happens to be."
+   "text": "Butterflies are more sensitive than woodland flowers to changes in the amount of light reaching the forest floor."
   },
   {
    "id": "C",
-   "text": "Recent work suggests that carbon persists in soil less because of its own chemistry than because minerals and soil structure shield it from microbes."
+   "text": "Because many woodland species depend on a coppice's sunlit stages, conservationists have revived a practice that had fallen out of use."
   },
   {
    "id": "D",
-   "text": "Most of the carbon in soil is stored inside soil clumps rather than bound to the surfaces of minerals."
+   "text": "Conservation organizations cannot manage woodlands effectively without selling the poles that coppicing produces."
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The passage contrasts an older explanation (carbon survives because it is chemically indigestible) with a newer one (carbon survives because it binds to mineral surfaces or sits where microbes cannot reach it) and sums up the shift as a move from what the carbon is to where it ends up. Choice C states that reframing. Choice A reports only the older view the passage is revising. Choice B overstates the point into a claim that microbes cannot digest plant material at all. Choice D fixes on one protective mechanism and treats it as the main claim, when the passage gives both minerals and structure as examples of a broader idea."
+ "explanation": "**Choice C is correct.** The text moves from what coppicing creates (a mosaic including sunlit stages), to what its abandonment cost (declines in the species that need those stages), to the response (conservationists reviving the practice). Choice C states that whole arc.\n\n**The Full Solution:**\n- Sentence one explains the rotation and its result: patches at every stage, including open clearings.\n- Sentences two and three link species declines to the practice's abandonment and report its revival for the species' sake.\n- The main idea must join the ecological dependence to the revival, which only choice C does.\n\n**Why the other choices are wrong:**\n- A: The text compares no product values; the final sentence actually subordinates the poles to the ecological goal.\n- B: The text groups flowers and butterflies together and never ranks their sensitivity.\n- D: The text says conservationists cut \"not primarily for the poles,\" which is nearly the reverse of depending on their sale."
 }

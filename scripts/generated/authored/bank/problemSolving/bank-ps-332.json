@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-332",
+  "question": "A linear model gives the concentration $y$, in milligrams per liter, of a medication in a patient's blood $x$ hours after a dose is taken: $\\hat{y} = -1.6x + 20$. Which of the following is the best interpretation of the value $20$ in this model?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The predicted concentration at the moment the dose is taken is $20$ milligrams per liter."
+    },
+    {
+      "id": "B",
+      "text": "The concentration decreases by $20$ milligrams per liter each hour."
+    },
+    {
+      "id": "C",
+      "text": "The predicted concentration reaches $0$ milligrams per liter $20$ hours after the dose."
+    },
+    {
+      "id": "D",
+      "text": "The greatest predicted concentration occurs $20$ hours after the dose."
+    }
+  ],
+  "distractorNotes": {
+    "B": "gives the intercept the slope's role; the hourly decrease is $1.6$ milligrams per liter.",
+    "C": "reads $20$ as a time; setting $\\hat{y} = 0$ actually gives $x = 12.5$ hours.",
+    "D": "reads $20$ as a time again, and the model's greatest predicted concentration occurs at $x = 0$."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Interpret Intercept of Best Fit**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Substituting $x = 0$ gives $\\hat{y} = 20$, the predicted concentration at the moment the dose is taken.\n\n**The Full Solution:**\nStep 1: The constant term $20$ is the value of $\\hat{y}$ when $x = 0$.\nStep 2: Here $x$ counts hours after the dose, so $x = 0$ is the moment of the dose.\nStep 3: The model therefore predicts a concentration of $20$ milligrams per liter at that moment, falling by $1.6$ milligrams per liter each hour after. Check: at $x = 5$ the model gives $-1.6(5) + 20 = 12$, below the starting value, as a decreasing model requires. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: gives the intercept the slope's role; the hourly decrease is $1.6$ milligrams per liter.\n* Choice C: reads $20$ as a time; setting $\\hat{y} = 0$ actually gives $x = 12.5$ hours.\n* Choice D: reads $20$ as a time again, and the model's greatest predicted concentration occurs at $x = 0$.\n\n**Test Day Takeaway:** A negative slope does not change how the intercept is read. It is still the predicted $y$ at $x = 0$, in the units of $y$."
+}

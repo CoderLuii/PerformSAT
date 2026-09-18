@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-364",
+  "question": "A courier drives from a depot to a delivery site at an average speed of $r$ miles per hour and returns along the same route at an average speed of $2r$ miles per hour. The average speed for the entire round trip is $48$ miles per hour. What is the value of $r$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$16$"
+    },
+    {
+      "id": "B",
+      "text": "$24$"
+    },
+    {
+      "id": "C",
+      "text": "$32$"
+    },
+    {
+      "id": "D",
+      "text": "$36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides $48$ by $3$, treating the average speed as the sum $r + 2r$",
+    "B": "sets $2r = 48$, using the faster leg's speed as the average speed",
+    "C": "averages the two speeds, solving $\\frac{r + 2r}{2} = 48$"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Average Rate**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** With one-way distance $d$, total time is $\\frac{d}{r} + \\frac{d}{2r} = \\frac{3d}{2r}$, so the average speed is $\\frac{2d}{3d/(2r)} = \\frac{4r}{3}$. Then $\\frac{4r}{3} = 48$ gives $r = 36$.\n\n**The Full Solution:**\nStep 1: Let $d$ be the one-way distance. The round trip covers $2d$ miles.\nStep 2: The outbound leg takes $\\frac{d}{r}$ hours and the return leg takes $\\frac{d}{2r}$ hours, so the total time is $\\frac{2d}{2r} + \\frac{d}{2r} = \\frac{3d}{2r}$ hours.\nStep 3: Average speed $= \\frac{2d}{\\frac{3d}{2r}} = \\frac{4r}{3}$, and $d$ cancels. Setting $\\frac{4r}{3} = 48$ gives $r = 36$. Check: at $36$ and $72$ miles per hour over $72$ miles each way, the times are $2$ and $1$ hours, so $\\frac{144}{3} = 48$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($16$): divides $48$ by $3$, treating the average speed as the sum $r + 2r$\n* Choice B ($24$): sets $2r = 48$, using the faster leg's speed as the average speed\n* Choice C ($32$): averages the two speeds, solving $\\frac{r + 2r}{2} = 48$\n\n**Test Day Takeaway:** For equal distances at two speeds, the average speed depends only on the speeds, never on the distance. Introduce $d$, write the two times, and watch it cancel."
+}

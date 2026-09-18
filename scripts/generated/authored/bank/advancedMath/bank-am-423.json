@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-423",
+ "question": "A javelin-flight study uses the expression $x^2 + bx - 24$, where $x$ is a release angle in degrees and the integer $b$ is chosen so that the expression is a product of two binomials with integer coefficients. What is the greatest possible value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$23$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "stops at the pair $6$ and $-4$, a legal factorization but far from the largest sum",
+  "B": "stops at the pair $8$ and $-3$, again legal but not maximal",
+  "C": "stops at the pair $12$ and $-2$, one step short of the extreme pair"
+ },
+ "explanation": "**SAT Pattern: Factor with Parameter — Integer Constraint**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** $b$ is the sum of a factor pair of $-24$, and the sum is largest when the pair is farthest apart: $24 + (-1) = 23$.\n\n**The Full Solution:**\nStep 1: If $x^2 + bx - 24 = (x + p)(x + q)$ with integers $p$ and $q$, then $pq = -24$ and $p + q = b$.\nStep 2: The integer pairs with product $-24$ are $(1, -24)$, $(2, -12)$, $(3, -8)$, $(4, -6)$ and their reverses, giving sums $-23$, $-10$, $-5$, $-2$, $2$, $5$, $10$, $23$.\nStep 3: The greatest of those sums is $23$. Check: $(x + 24)(x - 1) = x^2 + 23x - 24$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): comes from $(x + 6)(x - 4)$, a real factorization but a small sum.\n* Choice B ($5$): comes from $(x + 8)(x - 3)$.\n* Choice C ($10$): comes from $(x + 12)(x - 2)$, the second-largest sum.\n\n**Test Day Takeaway:** For a negative constant term, the widest factor pair — the one using $1$ — produces the extreme values of the middle coefficient."
+}

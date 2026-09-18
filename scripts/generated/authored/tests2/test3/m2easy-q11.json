@@ -1,0 +1,61 @@
+{
+ "id": 11,
+ "question": "The table gives this year's monthly budgeted amount for four household categories and the percent by which each amount increased from last year. What amount was budgeted for utilities last year?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Category",
+    "This year's amount (dollars)",
+    "Percent increase"
+   ],
+   "rows": [
+    [
+     "Housing",
+     "1,344",
+     "12%"
+    ],
+    [
+     "Utilities",
+     "261",
+     "16%"
+    ],
+    [
+     "Groceries",
+     "638",
+     "10%"
+    ],
+    [
+     "Transportation",
+     "405",
+     "8%"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\$219.24$"
+  },
+  {
+   "id": "B",
+   "text": "$\\$225.00$"
+  },
+  {
+   "id": "C",
+   "text": "$\\$245.00$"
+  },
+  {
+   "id": "D",
+   "text": "$\\$302.76$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes 16% off this year's amount: 261 x 0.84 = 219.24",
+  "C": "subtracts 16 dollars instead of 16 percent: 261 - 16 = 245",
+  "D": "increases this year's amount by 16% instead of undoing the increase: 261 x 1.16 = 302.76"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** This year is $116\\%$ of last year, so last year is $\\frac{261}{1.16} = 225$ dollars.\n\n**The Full Solution:**\nStep 1: Write the relationship in the direction the table gives it. Last year's utilities amount $u$ grew by $16\\%$, so this year's amount is $u + 0.16u = 1.16u$.\nStep 2: Substitute the table value for utilities. $1.16u = 261$.\nStep 3: Undo the increase by dividing, not subtracting. $u = \\frac{261}{1.16} = 225$ dollars. Check: $16\\%$ of $225$ is $36$, and $225 + 36 = 261$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\$219.24$): takes $16\\%$ off this year's amount, computing $261 \\times 0.84$. The percent was applied to last year's smaller amount, so removing it is a division.\n* Choice C ($\\$245.00$): subtracts $16$ dollars instead of $16$ percent, treating a rate as a fixed amount.\n* Choice D ($\\$302.76$): raises this year's amount by another $16\\%$, moving forward in time instead of backward.\n\n**Test Day Takeaway:** A percent increase always applies to the earlier amount. To go backward, divide by $1 + r$; taking the same percent off the new amount lands short every time."
+}

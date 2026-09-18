@@ -1,0 +1,57 @@
+{
+ "id": 6,
+ "question": "The four points shown are the only points on the graph of $y = f(x)$, where $f(x)$ is the magnetic deflection, in microteslas, recorded by a boom-mounted magnetometer at offset $x$ meters from the spacecraft body. Which point must lie on the graph of $y = -f(x + 3) + 1$?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -4,
+     3
+    ],
+    [
+     -1,
+     -2
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     5,
+     1
+    ]
+   ],
+   "xMin": -8,
+   "xMax": 8,
+   "yMin": -8,
+   "yMax": 8
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(-1, -6)$"
+  },
+  {
+   "id": "B",
+   "text": "$(5, -4)$"
+  },
+  {
+   "id": "C",
+   "text": "$(-1, 6)$"
+  },
+  {
+   "id": "D",
+   "text": "$(-1, -4)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "negates the +1 as well, computing -(f(2) + 1) = -6",
+  "B": "treats f(x + 3) as a shift to the right, sending the input 2 to 5",
+  "C": "skips the reflection and computes f(2) + 1 = 6"
+ },
+ "correctAnswer": "D",
+ "hint": "Ask which recorded reading each candidate point would have to come from.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~35s):** Take the point $(2, 5)$: the input satisfies $x + 3 = 2$ at $x = -1$, and the output becomes $-5 + 1 = -4$.\n\n**The Full Solution:**\nStep 1: The four recorded points are $(-4, 3)$, $(-1, -2)$, $(2, 5)$, and $(5, 1)$.\nStep 2: For $y = -f(x + 3) + 1$ to use the reading $f(2) = 5$, the input must satisfy $x + 3 = 2$, so $x = -1$.\nStep 3: The output is $-f(2) + 1 = -5 + 1 = -4$, so $(-1, -4)$ lies on the new graph. Check: substituting $x = -1$ gives $-f(-1 + 3) + 1 = -f(2) + 1 = -4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-1, -6)$): applying the negative to the $+1$ as well, computing $-(5 + 1) = -6$; only the function value is reflected.\n* Choice B ($(5, -4)$): reading $f(x + 3)$ as a shift to the right and sending the input $2$ to $5$; adding inside the function moves inputs the other way.\n* Choice C ($(-1, 6)$): dropping the reflection and computing $5 + 1 = 6$.\n\n**Test Day Takeaway:** Handle the inside first — solve for the $x$ that feeds the known reading — then apply the outside operations in order."
+}

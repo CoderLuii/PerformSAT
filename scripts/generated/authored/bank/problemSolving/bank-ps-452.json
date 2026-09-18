@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-452",
+  "question": "At a vaccination campaign, the ratio of first doses administered to booster doses administered is $5$ to $4$, and $n$ doses are administered in all. Which expression gives the number of booster doses administered at the campaign?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{4n}{9}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{4n}{5}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{5n}{9}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{9n}{4}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides by the first-dose parts, 5, instead of the total parts, 9",
+    "C": "gives the first-dose share, 5 parts out of 9, rather than the booster share",
+    "D": "inverts the fraction, giving more doses than were administered in all"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Sum-of-Parts Ratio**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Boosters are $4$ of the $5 + 4 = 9$ parts, so they number $\\frac{4}{9}$ of $n$, which is $\\frac{4n}{9}$.\n\n**The Full Solution:**\nStep 1: Add the parts. First doses are $5$ parts and boosters are $4$ parts, so the campaign has $9$ parts in all.\nStep 2: Write the booster share. Boosters make up $\\frac{4}{9}$ of every dose given, so with $n$ doses that is $\\frac{4n}{9}$.\nStep 3: Check with a number. If $n = 900$, then $\\frac{4(900)}{9} = 400$ boosters and $\\frac{5(900)}{9} = 500$ first doses; $400 + 500 = 900$ and $500 : 400 = 5 : 4$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{4n}{5}$): divides by $5$, the first-dose parts, instead of by the $9$ total parts.\n* Choice C ($\\frac{5n}{9}$): is the FIRST-dose share. The question asks for boosters.\n* Choice D ($\\frac{9n}{4}$): flips the fraction and would exceed $n$, more boosters than total doses.\n\n**Test Day Takeaway:** A part of a total is (that part) over (the SUM of the parts). If the expression can exceed the total, the fraction is upside down."
+}

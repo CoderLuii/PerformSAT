@@ -1,0 +1,33 @@
+{
+  "id": 6,
+  "question": "A coil of steel strip holds enough material for several stamped parts, and the table lists the length remaining, in meters, after four different numbers of parts. The remaining length is the linear function $f$ of the number of parts stamped, $x$. What is $f(16)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Parts stamped, x",
+        "Length remaining (meters)"
+      ],
+      "rows": [
+        [
+          "2",
+          "47"
+        ],
+        [
+          "5",
+          "38"
+        ],
+        [
+          "8",
+          "29"
+        ],
+        [
+          "11",
+          "20"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "5",
+  "explanation": "**SAT Pattern: Function Evaluation**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~25s):** Each row advances $3$ parts and drops $9$ meters, so each part uses $3$ meters; from $20$ meters at $11$ parts, five more parts remove $15$ meters, leaving $5$.\n\n**The Full Solution:**\nStep 1: Find the rate: between $x = 2$ and $x = 5$ the length falls from $47$ to $38$, a drop of $9$ meters over $3$ parts, so the slope is $-3$ meters per part.\nStep 2: Write the rule: $f(x) = -3x + b$, and $47 = -3(2) + b$ gives $b = 53$, so $f(x) = -3x + 53$.\nStep 3: Evaluate at $x = 16$: $f(16) = -3(16) + 53 = -48 + 53 = 5$. Check the rule against a listed row: $f(8) = -24 + 53 = 29$ ✓\n\n**Common Mistakes:**\n* $-79$: using the $9$-meter drop between rows as the drop per part, which gives $f(x) = -9x + 65$ and $f(16) = -79$; the rows step by $3$ parts, not $1$.\n* $11$: evaluating $f(14)$ — one more table row past $11$ — instead of $f(16)$.\n* $-1$: taking $47$ as the starting length at $x = 0$ and writing $f(x) = -3x + 47$; the $47$ belongs to $x = 2$.\n\n**Test Day Takeaway:** With a table, get the rate from the change in outputs divided by the change in inputs, then anchor the rule on one row before evaluating anywhere else."
+}

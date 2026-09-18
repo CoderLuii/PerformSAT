@@ -5,11 +5,13 @@
   "band": 3,
   "domain": "expression-of-ideas",
   "skill": "transitions",
+  "module": 2,
+  "passage": "In wireless telegraphy's first years, ships' operators used a jumble of company-specific distress calls, and a call sent in one firm's code might mean nothing to the nearest vessel. International agreement eventually fixed a single distress signal for use at sea worldwide. ______ an operator hearing it, whatever line he worked for, knew at once that a ship nearby was in danger and that its position would follow.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "Nevertheless,"
+      "text": "Meanwhile,"
     },
     {
       "id": "B",
@@ -17,7 +19,7 @@
     },
     {
       "id": "C",
-      "text": "For instance,"
+      "text": "In other words,"
     },
     {
       "id": "D",
@@ -25,10 +27,8 @@
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. Falling exposure times are the cause, and the final sentence states the result — that photographers could finally capture motion and fleeting expressions — so a result transition fits. \"Nevertheless\" (A) marks contrast; \"For instance\" (C) would introduce an example; and \"Likewise\" (D) marks similarity, none of which fits the cause-and-effect relation.",
-  "passage": "The first photographs taken in the 1830s required exposure times of several minutes, so early portrait sitters had to hold perfectly still, often with their heads braced by hidden clamps. As lenses and chemicals improved, exposure times fell to a fraction of a second. ______ photographers could finally capture a city street full of moving people, a child in motion, or a passing expression that lasted only an instant.",
+  "explanation": "**Choice B is correct.** The standardized signal is a cause; instant, universal recognition of a distress call is its effect. \"As a result\" marks the final sentence as the consequence of the agreement.\n\n**The Full Solution:**\n- The problem: incompatible company codes meant a distress call could go unrecognized.\n- The change: one signal fixed internationally for all ships.\n- The outcome: any operator, on any line, understood the call immediately — a state of affairs produced by the standardization.\n\n**Why the other choices are wrong:**\n- A: \"Meanwhile\" would place the operators' comprehension alongside the agreement as a separate, simultaneous development rather than its effect.\n- C: \"In other words\" introduces a restatement, but the final sentence adds a new consequence, not a paraphrase.\n- D: \"Likewise\" claims a parallel case, and there is no second case here.",
   "_meta": {
-    "anchor": "history of photography — shrinking exposure times (NEW); result transition"
-  },
-  "module": 2
+    "anchor": "standardization of the maritime distress signal; result transition"
+  }
 }

@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "A data set consists of the six values $9$, $13$, $18$, $27$, $31$, and $x$, where $x$ is an integer. The median of the data set is $21$. What is the value of $x$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$21$"
+    },
+    {
+      "id": "C",
+      "text": "$24$"
+    },
+    {
+      "id": "D",
+      "text": "$29$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "pairs $x$ with $27$ instead of $18$, solving $\\frac{x + 27}{2} = 21$; but $x = 15$ places $x$ below $18$, and the median of $9, 13, 15, 18, 27, 31$ is $16.5$.",
+    "B": "assumes the median must be one of the listed values, so $x$ is set equal to it.",
+    "D": "pairs $x$ with $13$, solving $\\frac{13 + x}{2} = 21$, which uses the wrong middle position."
+  },
+  "correctAnswer": "C",
+  "hint": "With six values the median averages the third and fourth, so first decide where $x$ can land in the ordered list.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~55s):** The median $21$ is greater than $18$ and less than $27$, so $x$ must sit between them and pair with $18$: $\\frac{18 + x}{2} = 21$ gives $x = 24$.\n\n**The Full Solution:**\nStep 1: Order the five known values: $9, 13, 18, 27, 31$. With $x$ included there are six values, so the median is the average of the third and fourth.\nStep 2: If $x \\le 18$, the third and fourth ordered values are $x$ (or $13$) and $18$, so the median is at most $18$; if $x \\ge 27$, they are $18$ and $27$, giving a median of $\\frac{18 + 27}{2} = 22.5$. Neither case gives $21$, so $18 < x < 27$ and the middle pair is $18$ and $x$.\nStep 3: Solve $\\frac{18 + x}{2} = 21$, so $18 + x = 42$ and $x = 24$. Check: the ordered set is $9, 13, 18, 24, 27, 31$, and $\\frac{18 + 24}{2} = 21$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): pairs $x$ with $27$ instead of $18$, solving $\\frac{x + 27}{2} = 21$; but $x = 15$ places $x$ below $18$, and the median of $9, 13, 15, 18, 27, 31$ is $16.5$.\n* Choice B ($21$): assumes the median must be one of the listed values, so $x$ is set equal to it.\n* Choice D ($29$): pairs $x$ with $13$, solving $\\frac{13 + x}{2} = 21$, which uses the wrong middle position.\n\n**Test Day Takeaway:** When a data set contains an unknown, decide where the unknown falls in the order before writing the median equation, then confirm the answer is consistent with that placement."
+}

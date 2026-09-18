@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A vessel is being unloaded, and $f(x) = 96 - 6x$ gives the number of shipping containers still aboard $x$ hours after unloading begins. If $f(a) = 30$, what is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-11$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$11$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "sign error while isolating: turns -6a = -66 into a = -11",
+  "B": "divides only the output by the rate, 30 / 6, ignoring the 96 containers on board at the start",
+  "D": "solves 96 - 6x = 0 instead of 30, finding the hour the vessel empties"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The vessel has gone from $96$ containers to $30$, a drop of $66$, and it loses $6$ containers per hour, so $a = \\frac{66}{6} = 11$ hours.\n\n**The Full Solution:**\nStep 1: Set the rule equal to the given output: $96 - 6a = 30$.\nStep 2: Subtract $96$ from both sides: $-6a = -66$.\nStep 3: Divide by $-6$: $a = 11$. Check by evaluating forward: $f(11) = 96 - 6(11) = 96 - 66 = 30$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-11$): this divides $-66$ by $6$ instead of by $-6$. A negative number of hours is impossible here, and $f(-11) = 96 + 66 = 162$.\n* Choice B ($5$): this uses $\\frac{30}{6}$, treating $30$ as the number unloaded rather than the number remaining. In fact $f(5) = 96 - 30 = 66$.\n* Choice D ($16$): this solves $96 - 6x = 0$, the hour the last container leaves, not the hour $30$ remain.\n\n**Test Day Takeaway:** When a function value is given and the input is not, substitute the value for the whole expression and solve; then evaluate forward once to confirm the input you found."
+}

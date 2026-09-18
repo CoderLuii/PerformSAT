@@ -1,0 +1,29 @@
+{
+ "question": "A crash cymbal measures $19$ centimeters from its center bell to its rim. What is the distance, in centimeters, around the rim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$19\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$38\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$361\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$722\\pi$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "uses pi times r, which is half the circumference",
+  "C": "uses the area formula pi r squared, giving 361 pi",
+  "D": "uses 2 pi r squared, mixing the circumference and area formulas"
+ },
+ "explanation": "**SAT Pattern: Circumference of a Circle**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** The distance from the center to the rim is the radius, so $C = 2\\pi(19) = 38\\pi$ centimeters.\n\n**The Full Solution:**\nStep 1: Center-to-rim is the radius: $r = 19$ centimeters.\nStep 2: The distance around a circle is $C = 2\\pi r$.\nStep 3: Substitute: $C = 2\\pi(19) = 38\\pi$ centimeters. Check: the diameter is $38$ centimeters, and $C = \\pi d = 38\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($19\\pi$): computes $\\pi r$, the length of half the rim.\n* Choice C ($361\\pi$): uses $\\pi r^2$, which measures the surface the cymbal covers, not its rim.\n* Choice D ($722\\pi$): doubles the area expression, combining both formulas incorrectly.\n\n**Test Day Takeaway:** Squaring the radius always signals area — a distance around uses $2\\pi r$ with the radius to the first power.",
+ "id": "bank-geo-236"
+}

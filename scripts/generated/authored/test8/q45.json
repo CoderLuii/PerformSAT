@@ -1,31 +1,31 @@
 {
-  "id": 845,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 2,
-  "passage": "Pressed into clay in cuneiform script and then baked hard by the fires that ultimately destroyed the Hittite capital of Hattusa, the thousands of treaties, royal letters, and administrative records discovered there ______ the intervening centuries intact, giving modern historians one of the richest written archives to come down from the Bronze Age.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "to survive"
-    },
-    {
-      "id": "B",
-      "text": "surviving"
-    },
-    {
-      "id": "C",
-      "text": "having survived"
-    },
-    {
-      "id": "D",
-      "text": "survived"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. After the opening participial phrase, the rest of the sentence is a single main clause whose subject is \"the thousands of treaties, royal letters, and administrative records discovered there,\" and that clause needs a finite main verb. Only the past-tense \"survived\" can fill that role. The infinitive \"to survive\" in A, the present participle \"surviving\" in B, and the perfect participle \"having survived\" in C are all nonfinite forms, so each one leaves the sentence with no main verb and turns it into a fragment."
+ "id": 845,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 2,
+ "passage": "Cut into the hillside in stepped platforms and fed by water led down from mountain streams, the taro terraces ______ generations of farmers from a single engineered slope, their pondfields yielding harvests year after year where unterraced ground would have shed both water and soil.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "to support"
+  },
+  {
+   "id": "B",
+   "text": "supporting"
+  },
+  {
+   "id": "C",
+   "text": "having supported"
+  },
+  {
+   "id": "D",
+   "text": "supported"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The sentence's subject, \"the terraces,\" still needs its main verb, and only \"supported\" is a finite verb that can carry the sentence.\n\n**The Full Solution:**\n- The long opening is all modifier: \"Cut into the hillside in stepped platforms and fed by water led down from mountain streams\" describes the terraces but contains no main verb.\n- The frame \"the terraces ______ generations of farmers\" therefore requires a finite verb at the blank.\n- \"Supported\" completes a grammatical sentence: the terraces supported generations of farmers from a single engineered slope.\n\n**Why the other choices are wrong:**\n- A: \"To support\" is an infinitive; the sentence would be left with no main verb at all.\n- B: \"Supporting\" is a participle and likewise cannot serve as the sentence's main verb.\n- C: \"Having supported\" is a perfect participle — still not finite, so the sentence would remain a fragment."
 }

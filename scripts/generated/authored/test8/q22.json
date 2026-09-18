@@ -1,31 +1,31 @@
 {
-  "id": 822,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "When the astronomer Williamina Fleming and the other women employed as \"computers\" at the Harvard College Observatory finished examining the observatory's glass photographic plates, ______ had classified the spectra of tens of thousands of stars, work that underlies the catalogues astronomers still consult.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "it"
-    },
-    {
-      "id": "B",
-      "text": "they"
-    },
-    {
-      "id": "C",
-      "text": "she"
-    },
-    {
-      "id": "D",
-      "text": "one"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The pronoun stands in for the compound, plural subject \"Williamina Fleming and the other women… at the Harvard College Observatory,\" so it must be the plural \"they.\" The singular \"it\" in A cannot refer to people; \"she\" in C names only one person, leaving the other computers out of the work the sentence credits; and the indefinite \"one\" in D does not refer back to the specific group already named."
+ "id": 822,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "By the time the biologists sorting a single lake's catch of char had finished comparing jaw shapes, body sizes, and stomach contents, ______ had documented four distinct forms of the same species living together in one body of water.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "it"
+  },
+  {
+   "id": "B",
+   "text": "they"
+  },
+  {
+   "id": "C",
+   "text": "she"
+  },
+  {
+   "id": "D",
+   "text": "one"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The pronoun refers to the plural \"biologists,\" so it must be the plural \"they.\"\n\n**The Full Solution:**\n- The opening clause names the antecedent: \"the biologists sorting a single lake's catch of char.\"\n- \"Biologists\" is plural, and the main clause reports what those same people had documented.\n- Only \"they\" agrees: \"they had documented four distinct forms of the same species.\"\n\n**Why the other choices are wrong:**\n- A: \"It\" is singular and impersonal; it cannot stand in for the plural \"biologists.\"\n- C: \"She\" is singular and pins the work on one unidentified woman when the antecedent names a team.\n- D: \"One\" is an indefinite singular pronoun and does not refer back to the biologists at all."
 }

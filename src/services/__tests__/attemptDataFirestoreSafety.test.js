@@ -77,8 +77,13 @@ function simulateCompletion(test) {
 /** Assert helper — fails with the offending paths so the culprit is obvious. */
 function expectTransactionSafe(label, value) {
   const hostile = findFirestoreHostileValues(value, label);
-  expect({ nestedArrays: hostile.nestedArrays, nonFinite: hostile.nonFinite })
-    .toEqual({ nestedArrays: [], nonFinite: [] });
+  // customObjects catches Set/Map/class instances — the 2026-08-13 outage was
+  // a live Set (skillMap.missedPatternsSet) leaking out of runDiagnostic and
+  // failing EVERY first-attempt score save with "Unsupported field value: a
+  // custom Set object". The earlier version of this suite only checked
+  // nestedArrays/nonFinite, which is exactly why it never caught that.
+  expect({ nestedArrays: hostile.nestedArrays, nonFinite: hostile.nonFinite, customObjects: hostile.customObjects })
+    .toEqual({ nestedArrays: [], nonFinite: [], customObjects: [] });
 }
 
 describe('score-transaction payload Firestore safety (every live test)', () => {

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-131",
+ "question": "A utility models a battery cell's charge curve by $y=x^2+5$ and its drain line by $y=kx-4$, where $k$ is a negative constant. The two graphs touch at exactly one point. What is the value of $k$?",
+ "correctAnswer": "-6",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**The correct answer is $-6$.**\n\n**The Fast Way (~30s):** Equating gives $x^2-kx+9=0$, so $k^2-36=0$ and $k=\\pm6$; $k$ is negative, so $k=-6$.\n\n**The Full Solution:**\nStep 1: Set $x^2+5=kx-4$, which rearranges to $x^2-kx+9=0$.\nStep 2: One shared point means $(-k)^2-4(1)(9)=0$, so $k^2=36$ and $k=6$ or $k=-6$.\nStep 3: The problem states $k$ is negative, so $k=-6$. Check: $x^2+6x+9=(x+3)^2=0$ has the single solution $x=-3$, where both graphs give $y=14$ ✓\n\n**Common Mistakes:**\n* $6$: solves $k^2=36$ correctly but ignores that $k$ must be negative.\n* $-2$: writes the constant term as $5-4=1$ instead of $5+4=9$, giving $k^2=4$.\n* $36$: reports $k^2$ rather than $k$.\n\n**Test Day Takeaway:** Squaring loses a sign — always re-read the restriction on the constant before choosing a root."
+}

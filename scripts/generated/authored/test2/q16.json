@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "inferences",
   "module": 1,
-  "passage": "Marine biologists studying cuttlefish have established two facts about the animals' camouflage. First, a cuttlefish's skin contains thousands of pigment-filled cells that tiny muscles can expand or contract within milliseconds, allowing the animal to alter its appearance almost instantly. Second, in laboratory trials cuttlefish reproduce the pattern of an artificial checkerboard placed beneath them—a background unlike anything the species encounters in the wild—adjusting their skin to match it within seconds. Taken together, these observations suggest that a cuttlefish's camouflage ______",
+  "passage": "Through the early nineteenth century, European orchestras drifted toward ever-higher tuning: raising the ensemble's pitch made string instruments sound more brilliant, and each famous orchestra's rise pressured its rivals to match it. Singers bore the cost. Vocal parts written decades earlier now sat uncomfortably high, straining voices that, unlike violins, could not simply be restrung. In 1859, a French government commission fixed an official standard pitch by law. Given the competitive pressures that produced the drift, it is unsurprising that ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "is generated in real time from what the animal currently perceives, not chosen from a fixed inherited repertoire."
+      "text": "the standard had to be imposed by an authority outside the orchestras rather than emerging from the ensembles' own rivalry, which rewarded each of them for tuning ever higher."
     },
     {
       "id": "B",
-      "text": "depends on the animal's having encountered a closely similar background somewhere in its natural habitat at some earlier point in its life."
+      "text": "singers eventually adapted to the higher pitch by commissioning composers to rewrite older vocal parts in lower keys."
     },
     {
       "id": "C",
-      "text": "changes color more slowly when the surrounding pattern is artificial than when it is natural."
+      "text": "string players welcomed the official standard because sustained high tuning had begun to damage their instruments."
     },
     {
       "id": "D",
-      "text": "relies on a small number of inherited patterns that the animal cycles through automatically."
+      "text": "orchestras outside France immediately adopted the commission's standard in order to preserve their competitive position."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage gives two facts: a cuttlefish can change its skin pattern almost instantly, and it will match even an artificial checkerboard it could never have seen in the wild. Together these point to a single conclusion—the camouflage must be assembled from what the animal perceives at the moment, since no stored set of patterns could already contain a novel laboratory background. Choice A states exactly that. Choice B is contradicted by the second fact: the checkerboard is \"unlike anything the species encounters in the wild,\" so prior exposure cannot explain the match. Choice C introduces a comparison of speeds that the passage never draws; the text reports only that the change is fast, not that artificial patterns are matched more slowly. Choice D is ruled out by the same checkerboard result, since a small fixed repertoire of inherited patterns could not include a background the animal has never encountered."
+  "explanation": "**Choice A is correct.** The passage describes a competition no orchestra could unilaterally exit — each was rewarded for tuning higher — so a fix could only come from outside the competition, which is just what the government commission was.\n\n**The Full Solution:**\n- The drift's engine was rivalry: brilliance rewarded higher tuning, and \"each famous orchestra's rise pressured its rivals to match it.\"\n- A system in which every participant gains by escalating cannot stop itself; any orchestra that lowered its pitch alone would sound duller than its rivals.\n- The sentence to be completed begins \"Given the competitive pressures that produced the drift\" — pointing the conclusion at the structure of the problem. Choice A supplies it: the standard had to come from an authority outside the contest.\n\n**Why the other choices are wrong:**\n- B: The passage says nothing about rewriting parts, and adaptation by singers would not follow from the competitive logic the final sentence invokes.\n- C: Damage to instruments appears nowhere in the passage — the stated costs fell on voices, not violins.\n- D: The premises concern why the law was needed, not how it was received; immediate international adoption is both unsupported and in tension with the rivalry the passage describes."
 }

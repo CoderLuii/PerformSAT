@@ -39,6 +39,7 @@ export const SUPPORTED_FIGURE_TYPES = new Set([
 // whatever section is open at that point.
 const PLACEHOLDER_PREFIX = '\u0001FIG';
 const PLACEHOLDER_SUFFIX = '\u0001';
+// eslint-disable-next-line no-control-regex -- U+0001 is the deliberate figure-placeholder sentinel documented above; it never appears in authored content
 export const FIGURE_PLACEHOLDER_RE = /^\u0001FIG(\d+)\u0001$/;
 
 const CLOSED_BLOCK_RE_G = /```[ \t]*seva-figure\b[^\n]*\n([\s\S]*?)```/g;

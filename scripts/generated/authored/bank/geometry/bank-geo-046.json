@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-046",
+ "question": "A furniture retailer's floor plan represents a circular display zone by $x^{2}+y^{2}-14x+8y+16=0$, with coordinates in feet. What is the area, in square feet, of the display zone?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$14\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$49\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$65\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$196\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the circumference 2 pi r = 14 pi instead of the area",
+  "C": "forgets to subtract the constant 16, using r squared = 49 + 16 = 65",
+  "D": "uses the diameter 14 as the radius, giving pi (14 squared) = 196 pi"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Circle Equation to Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~55s):** Completing the square gives $(x-7)^{2}+(y+4)^{2}=49$, so $r=7$ and the area is $49\\pi$.\n\n**The Full Solution:**\n\nStep 1: Group and complete the square. $x^{2}-14x$ needs $49$, and $y^{2}+8y$ needs $16$.\n\nStep 2: Balance the equation. $(x-7)^{2}+(y+4)^{2}=-16+49+16=49$.\n\nStep 3: Read the radius and compute. $r^{2}=49$, so $r=7$ feet and the area is $\\pi r^{2}=49\\pi$ square feet.\n\nCheck: expanding $(x-7)^{2}+(y+4)^{2}=49$ returns $x^{2}+y^{2}-14x+8y+16=0$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($14\\pi$): gives the circumference $2\\pi r$ rather than the area.\n* Choice C ($65\\pi$): forgets to move the constant $16$ across, using $r^{2}=49+16$.\n* Choice D ($196\\pi$): treats the diameter $14$ as the radius.\n\n**Test Day Takeaway:** Complete the square on both variables, then move every constant to the right — the leftover number is $r^{2}$, not the area."
+}

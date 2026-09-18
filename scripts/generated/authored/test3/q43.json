@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "information-and-ideas",
  "skill": "inferences",
+ "type": "multiple-choice",
+ "passage": "A dance leaves thinner records than almost any other art. For works created before video recording became routine, dance historians attempting to reconstruct a piece must braid together whatever survives: a few minutes of silent film, production photographs, reviews, annotated programs, and the bodily memory of dancers who performed the work decades earlier — witnesses whose recollections are vivid but not always mutually consistent. Even the most careful reconstruction, then, ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "will reach exactly the same judgment as a researcher who was raised inside that society, on the grounds that the underlying psychological tendency is identical in both."
+   "text": "should rely on the surviving silent film rather than on dancers' recollections, since film cannot misremember what it recorded."
   },
   {
    "id": "B",
-   "text": "must conclude that the foreign society's practices follow no organizing emphases and resist description altogether."
+   "text": "will become more accurate as the dancers who performed the original work compare their memories with one another."
   },
   {
    "id": "C",
-   "text": "can safely treat his own culture's categories as a sufficient guide to evaluating the foreign society's practices."
+   "text": "is possible only for works that were extensively photographed during their first productions."
   },
   {
    "id": "D",
-   "text": "risks mistaking a coherent local emphasis for a pathology, since the same tendency can be normal in one culture and deviant in another."
+   "text": "is less a recovery of the original work than an informed interpretation of it, shaped by the gaps and disagreements within the surviving evidence."
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D. The passage establishes that each culture draws on a narrow selection of human capacities, so the same psychological tendency may be normal in one culture and deviant in another, and that strange-looking practices usually follow from a few organizing emphases applied consistently. A researcher who judges a foreign society by his own culture's norms therefore risks reading a coherent local emphasis as a pathology — exactly what D says. A claims he would reach the same judgment as an insider, but the passage says classification differs across cultures even when the tendency is the same. B overstates the case, since the passage says such practices do follow organizing emphases. C endorses using one's own categories, the very move the passage warns against.",
+ "explanation": "**Choice D is correct.** The premises — records that are fragmentary, sources that conflict, memory that is vivid but inconsistent — cannot yield the original work itself; what they yield is a judgment call built from imperfect evidence. D draws exactly that conclusion, and no more.\n\n**The Full Solution:**\n- \"Even the most careful reconstruction, then\" signals a conclusion that must hold despite maximal care, so it must follow from the evidence's inherent limits, not from correctable sloppiness.\n- If the surviving materials are partial (a few minutes of film, photographs, programs) and the fullest sources disagree with one another, every reconstruction requires choosing among them — which is interpretation, not recovery.\n\n**Why the other choices are wrong:**\n- A: The film is described as covering only a few minutes; privileging it cannot reconstruct the rest of the work, and the passage ranks no source above the others.\n- B: Comparing inconsistent memories might help at the margins, but the conclusion must cover \"even the most careful reconstruction\" — the limit is in the evidence, not the diligence.\n- C: The passage treats photographs as one strand among several, never as a requirement for reconstruction to proceed.",
  "_meta": {
-  "anchor": "Cultural patterning and cross-cultural classification (unnamed anthropologists)"
- },
- "passage": "A central idea in cultural anthropology holds that each culture draws on only a narrow selection from the wide range of human capacities for emotion, social arrangement, and ritual. Two consequences follow. First, a disposition counted as normal in one culture may be treated as deviant in another, even when the underlying psychological tendency is the same. Second, practices that look strange to an outsider often follow from a few organizing emphases that members of the society apply consistently without stating them. Because the same tendency can be sorted into opposite categories under different cultural patterns, a researcher who judges a foreign society's practices by the norms of his own ______",
- "type": "multiple-choice"
+  "anchor": "Dance reconstruction from fragmentary records as interpretation (unnamed dance historians)"
+ }
 }

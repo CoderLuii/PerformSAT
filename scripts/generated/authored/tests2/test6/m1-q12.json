@@ -1,0 +1,30 @@
+{
+ "id": 12,
+ "question": "An antibiotic test culture contained $6{,}000$ cells when the test began, and the number of cells doubles every $40$ minutes. Which equation gives $N$, the number of cells present $t$ minutes after the test began?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$N = 2(6{,}000)^{t/40}$"
+  },
+  {
+   "id": "B",
+   "text": "$N = 6{,}000(2)^{40t}$"
+  },
+  {
+   "id": "C",
+   "text": "$N = 6{,}000(40)^{t/2}$"
+  },
+  {
+   "id": "D",
+   "text": "$N = 6{,}000(2)^{t/40}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the starting count and the growth factor, using 2 as the initial value and 6,000 as the base",
+  "B": "multiplies the time by 40 instead of dividing, so one minute already produces 40 doublings",
+  "C": "swaps the growth factor and the doubling time, using 40 as the base and 2 as the period"
+ },
+ "correctAnswer": "D",
+ "choiceOrderNote": "Choices are equations rather than numeric values, so they are ordered by which structural piece each one misplaces.",
+ "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**Choice D is correct.** An exponential model has the form (initial amount)(growth factor) raised to (elapsed time divided by the period), which here is $6{,}000(2)^{t/40}$.\n\n**The Fast Way (~20s):** Start at $6{,}000$, double each period, and count periods with $\\frac{t}{40}$: $N = 6{,}000(2)^{t/40}$.\n\n**The Full Solution:**\nStep 1: The count at the start is $6{,}000$, so that is the coefficient in front. Doubling means the growth factor is $2$.\nStep 2: The doubling happens once every $40$ minutes, so after $t$ minutes the number of doublings is $\\frac{t}{40}$, which is the exponent.\nStep 3: The model is $N = 6{,}000(2)^{t/40}$. Check at $t = 40$: $N = 6{,}000(2)^1 = 12{,}000$, exactly one doubling ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($N = 2(6{,}000)^{t/40}$): the starting count and the growth factor are interchanged; at $t = 0$ this gives $2$ cells rather than $6{,}000$.\n* Choice B ($N = 6{,}000(2)^{40t}$): multiplying by $40$ instead of dividing makes the culture double $40$ times per minute.\n* Choice C ($N = 6{,}000(40)^{t/2}$): the base and the period are interchanged; the population multiplies by $40$, not by $2$, each period.\n\n**Test Day Takeaway:** Read an exponential model as three separate slots — starting amount, growth factor, and time divided by the period — and check each slot against the sentence before choosing."
+}

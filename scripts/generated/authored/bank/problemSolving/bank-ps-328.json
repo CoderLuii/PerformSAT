@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-328",
+  "question": "A linear model relates the fuel use $y$, in liters per $100$ kilometers, of a delivery van to the mass $x$, in kilograms, of its cargo: $\\hat{y} = 0.004x + 9.5$. According to this model, an increase of $500$ kilograms in cargo mass is associated with which of the following changes in predicted fuel use?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "A decrease of $2$ liters per $100$ kilometers"
+    },
+    {
+      "id": "B",
+      "text": "An increase of $2$ liters per $100$ kilometers"
+    },
+    {
+      "id": "C",
+      "text": "An increase of $0.004$ liter per $100$ kilometers"
+    },
+    {
+      "id": "D",
+      "text": "An increase of $11.5$ liters per $100$ kilometers"
+    }
+  ],
+  "distractorNotes": {
+    "A": "computes the size of the change correctly but reverses its direction; the slope is positive, so fuel use rises.",
+    "C": "reports the slope, the change for $1$ additional kilogram rather than for $500$.",
+    "D": "evaluates $0.004(500) + 9.5 = 11.5$, a predicted fuel-use level rather than a change in fuel use."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Slope of Best Fit**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Change in $\\hat{y}$ is slope times change in $x$: $0.004(500) = 2$, and the positive slope makes it an increase.\n\n**The Full Solution:**\nStep 1: The slope $0.004$ is the predicted change in fuel use, in liters per $100$ kilometers, for each additional kilogram of cargo.\nStep 2: For a $500$-kilogram increase, the predicted change is $0.004 \\times 500 = 2$ liters per $100$ kilometers.\nStep 3: Because the slope is positive, heavier cargo predicts more fuel use, so this is an increase of $2$ liters per $100$ kilometers. Check: at $x = 0$ the model predicts $9.5$ and at $x = 500$ it predicts $11.5$, a difference of $2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: computes the size of the change correctly but reverses its direction; the slope is positive, so fuel use rises.\n* Choice C: reports the slope, the change for $1$ additional kilogram rather than for $500$.\n* Choice D: evaluates $0.004(500) + 9.5 = 11.5$, a predicted fuel-use level rather than a change in fuel use.\n\n**Test Day Takeaway:** Scale the slope to the interval the question names, then read the sign of the slope to state the direction. A predicted level and a predicted change are different answers."
+}

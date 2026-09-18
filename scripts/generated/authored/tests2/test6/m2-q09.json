@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A sensor calibration reduces to the equation $4^{3x} = 8^{x + 2}$. Which equation has the same solution as this equation?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6x = 3x + 6$"
+  },
+  {
+   "id": "B",
+   "text": "$6x = 3x + 2$"
+  },
+  {
+   "id": "C",
+   "text": "$3x = x + 2$"
+  },
+  {
+   "id": "D",
+   "text": "$12x = 3x + 6$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "rewrites both sides in base 2 but does not distribute the 3 over x + 2, writing 3x + 2",
+  "C": "matches the exponents without rewriting the bases, as though 4 and 8 were the same base",
+  "D": "rewrites 4^(3x) as 2^(12x), multiplying the exponent by the base 4 instead of by 2"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Write both sides in base $2$: $4^{3x} = 2^{6x}$ and $8^{x+2} = 2^{3x+6}$. Equal powers of $2$ force $6x = 3x + 6$.\n\n**The Full Solution:**\nStep 1: Both bases are powers of $2$: $4 = 2^2$ and $8 = 2^3$.\nStep 2: Apply the power-of-a-power rule: $\\left(2^2\\right)^{3x} = 2^{6x}$ and $\\left(2^3\\right)^{x+2} = 2^{3(x+2)} = 2^{3x+6}$.\nStep 3: With one common base, the exponents must be equal: $6x = 3x + 6$. Check by solving: $x = 2$, and $4^6 = 4096 = 8^4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($6x = 3x + 2$): forgets to distribute the $3$ across $x + 2$, so the exponent on the right is short by $4$.\n* Choice C ($3x = x + 2$): sets the exponents equal while the bases are still $4$ and $8$, which is only legal once the bases match.\n* Choice D ($12x = 3x + 6$): turns $4^{3x}$ into $2^{12x}$ by multiplying by the base $4$ rather than by the exponent $2$.\n\n**Test Day Takeaway:** Rewrite both sides as the same base first, then set the exponents equal — and distribute across every term in the exponent."
+}

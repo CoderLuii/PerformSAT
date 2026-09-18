@@ -1,31 +1,31 @@
 {
-  "id": 1222,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "Many small museums now try to let visitors do more than look. At one printing museum, for example, a restored nineteenth-century press and a wooden case of metal type ____ visitors the rare chance to set a line of words by hand, ink the type, and pull a finished sheet of their own to carry home.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "gives"
-    },
-    {
-      "id": "B",
-      "text": "is giving"
-    },
-    {
-      "id": "C",
-      "text": "give"
-    },
-    {
-      "id": "D",
-      "text": "has given"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The subject is compound—\"a restored press and a wooden case of metal type\"—and two subjects joined by \"and\" take the plural verb \"give.\" The singular noun nearest the blank, \"type,\" along with each part of the subject taken on its own, tempts a singular verb, but the full subject is plural. \"Gives\" and \"is giving\" are singular and so disagree with the compound subject, and \"has given\" is singular as well, besides shifting the action into a completed past that the present-tense description of what the museum offers does not fit."
+ "id": 1222,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "Museums devoted to Shaker craftsmanship let visitors handle the work as well as look at it. At one restored village, a joinery demonstration and a case of graduated oval boxes ____ visitors a feel for the sect's exacting standards, from the tight swallowtail joints of the boxes to the drawers that still slide shut on a cushion of air.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "gives"
+  },
+  {
+   "id": "B",
+   "text": "is giving"
+  },
+  {
+   "id": "C",
+   "text": "give"
+  },
+  {
+   "id": "D",
+   "text": "has given"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The subject is compound — \"a joinery demonstration and a case of graduated oval boxes\" — and two subjects joined by \"and\" take a plural verb: \"give.\"\n\n**The Full Solution:**\n- The rule: nouns joined by \"and\" form a plural subject and require a plural verb.\n- Ask what gives visitors the feel: the demonstration AND the case of boxes together, so the subject counts as plural.\n- A trap hides in the second subject: its head noun is the singular \"case\" (of boxes), which can tempt the ear toward a singular verb — but the verb agrees with the whole compound subject, not with its last piece.\n- The sentence describes what the museum offers in the present (\"let visitors handle\"), so the plural present \"give\" fits.\n\n**Why the other choices are wrong:**\n- A: \"Gives\" is singular and cannot agree with the two-part subject.\n- B: \"Is giving\" is singular as well, and its in-progress sense misfits a standing exhibit.\n- D: \"Has given\" is singular too, and it moves a present offering into a completed past."
 }

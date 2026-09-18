@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-303",
+ "question": "The tension, in newtons, in a conveyor belt at a point $x$ meters from its drive pulley is modeled by $T(x)=(x+3)(2x^{2}-x+4)-5x$. What is the remainder when $T(x)$ is divided by $x-2$?",
+ "correctAnswer": "40",
+ "explanation": "**SAT Pattern: Polynomial Remainder Theorem**\n\n**The correct answer is $40$.**\n\n**The Fast Way (~25s):** The remainder equals $T(2)=(5)(8-2+4)-10=50-10=40$; the factored form never has to be expanded.\n\n**The Full Solution:**\n\nStep 1: Division by $x-2$ leaves a constant remainder $r$ with $T(x)=(x-2)q(x)+r$, so $r=T(2)$.\n\nStep 2: Evaluate the first factor at $x=2$: $2+3=5$. Evaluate the second: $2(2)^{2}-2+4=8-2+4=10$.\n\nStep 3: Combine: $T(2)=5\\cdot10-5(2)=50-10=40$. Check: expanding gives $T(x)=2x^{3}+5x^{2}-4x+12$, and $2(8)+5(4)-4(2)+12=16+20-8+12=40$.\n\n**Common Mistakes:**\n\n* Substituting $x=-2$ gives $(1)(8+2+4)+10=24$, the remainder for the divisor $x+2$ instead.\n* Forgetting the trailing $-5x$ gives $5\\cdot10=50$.\n\n**Test Day Takeaway:** Evaluate the polynomial exactly as it is written; a factored form is faster to plug into than to expand."
+}

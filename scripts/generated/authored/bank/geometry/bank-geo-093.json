@@ -1,0 +1,17 @@
+{
+ "id": "bank-geo-093",
+ "question": "A tailor cuts the sleeve dart drawn in the figure, and the dart's three corners carry the degree measures shown. What is the value of $y$?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "(3y)°",
+    "(y+12)°",
+    "(2y-30)°"
+   ],
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "33",
+ "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**The correct answer is $33$.**\n\n**The Fast Way (~25s):** $3y+(y+12)+(2y-30)=6y-18=180$, so $y=33$.\n\n**The Full Solution:**\n\nStep 1 — The three corner measures add to $180$ degrees: $3y+(y+12)+(2y-30)=180$.\n\nStep 2 — Combine like terms: $6y-18=180$.\n\nStep 3 — Add $18$ and divide by $6$: $6y=198$, so $y=33$. Check: the angles measure $99$, $45$, and $36$ degrees, and $99+45+36=180$.\n\n**Common Mistakes:** Solving $6y=180$ ignores the constants and gives $30$. Solving $6y+18=180$ flips the sign and gives $27$. Answering $99$ reports the largest angle rather than $y$.\n\n**Test Day Takeaway:** Combine the variable terms and the constants separately, then perform one addition and one division."
+}

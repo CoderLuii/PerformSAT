@@ -1,0 +1,6 @@
+{
+ "question": "After $t$ seconds of a run, a scheduler has cleared a total of $6(t+2)$ jobs from one queue and $6t+9$ jobs from another queue. For how many values of $t$ are these two totals equal?",
+ "correctAnswer": "0",
+ "explanation": "**SAT Pattern: Identifying Identity / Contradiction Equations**\n\n**The correct answer is $0$.**\n\n**The Fast Way (~25s):** $6(t+2)=6t+12$, so the first total always exceeds the second by $3$; the equation $6t+12=6t+9$ has no solution.\n\n**The Full Solution:**\n\nStep 1: Set the two totals equal: $6(t+2)=6t+9$.\n\nStep 2: Distribute on the left: $6t+12=6t+9$.\n\nStep 3: Subtract $6t$ from both sides: $12=9$, which is false. No value of $t$ makes the totals equal, so the answer is $0$. Check: at $t=0$ the totals are $12$ and $9$; at $t=10$ they are $72$ and $69$; the gap stays $3$.\n\n**Common Mistakes:** Subtracting the constants and reporting $3$ answers a different question, since $3$ is the constant gap between the totals, not a value of $t$. Reporting $1$ assumes every equation in one variable has a solution.\n\n**Test Day Takeaway:** When the variable terms cancel and the leftover numeric statement is false, the equation has no solution.",
+ "id": "bank-alg-281"
+}

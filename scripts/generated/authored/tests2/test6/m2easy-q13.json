@@ -1,0 +1,29 @@
+{
+  "id": 13,
+  "question": "The function $C(w) = 3.5w - 14$ models the mass of honey, in kilograms, a hive holds above its winter reserve after $w$ weeks of a nectar flow. For what value of $w$ does the model give $56$ kilograms above the reserve?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12$"
+    },
+    {
+      "id": "B",
+      "text": "$16$"
+    },
+    {
+      "id": "C",
+      "text": "$20$"
+    },
+    {
+      "id": "D",
+      "text": "$182$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts 14 instead of adding it: (56 - 14)/3.5 = 12",
+    "B": "divides 56 by 3.5 and ignores the -14 entirely",
+    "D": "substitutes 56 for w instead of for C(w): 3.5(56) - 14 = 182"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Solve $f(a) = c$**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Set $3.5w - 14 = 56$. Adding $14$ gives $3.5w = 70$, so $w = 20$.\n\n**The Full Solution:**\nStep 1: The question gives the output, so substitute it for $C(w)$: $3.5w - 14 = 56$.\nStep 2: Undo the subtraction first. Adding $14$ to both sides gives $3.5w = 70$.\nStep 3: Divide by the coefficient: $w = \\frac{70}{3.5} = 20$ weeks. Check forward: $3.5(20) - 14 = 70 - 14 = 56$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): subtracts the $14$ instead of adding it, computing $\\frac{56 - 14}{3.5} = 12$. Substituting $12$ gives $3.5(12) - 14 = 28$, not $56$.\n* Choice B ($16$): divides $56$ by $3.5$ and never undoes the $-14$. Substituting $16$ gives $56 - 14 = 42$.\n* Choice D ($182$): substitutes $56$ for $w$ instead of for $C(w)$, evaluating the function rather than solving it.\n\n**Test Day Takeaway:** $f(a) = c$ means the output is known and the input is not. Put the number where the function value goes, then undo the operations in reverse order."
+}

@@ -1,0 +1,31 @@
+{
+ "id": "bank-am-108",
+ "question": "A ventilation survey lists four measured values of $f$ in the table, and each measured value is corrected by subtracting 6, giving the corrected function $g(x)=f(x)-6$. What is the corrected reading $g(2)$?",
+ "diagram": {
+  "type": "table",
+  "params": {
+   "xHeader": "x",
+   "yHeader": "f(x)",
+   "rows": [
+    [
+     "0",
+     "5"
+    ],
+    [
+     "2",
+     "1"
+    ],
+    [
+     "4",
+     "-3"
+    ],
+    [
+     "6",
+     "9"
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "-5",
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**The correct answer is $-5$.**\n\n**The Fast Way (~15s):** The table gives $f(2)=1$, so $g(2)=1-6=-5$.\n\n**The Full Solution:**\nStep 1: Subtracting 6 changes only the output, so read $f$ at the same input: the row $x=2$ gives $f(2)=1$.\nStep 2: Apply the correction: $g(2)=f(2)-6=1-6$.\nStep 3: $1-6=-5$. Check: every corrected reading sits 6 below its measured value, and $-5$ is 6 below 1 ✓\n\n**Common Mistakes:** Subtracting 6 from the input and reading $f(-4)$ leaves the table with no matching row. Reading the row $x=6$ instead of $x=2$ gives $9-6=3$. Adding 6 rather than subtracting gives 7.\n\n**Test Day Takeaway:** A constant subtracted outside the function changes outputs only — the input you look up never moves."
+}

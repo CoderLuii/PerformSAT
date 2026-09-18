@@ -1,0 +1,29 @@
+{
+ "question": "For which constant $k$ does a drone's path $(x - 5)^2 + (y - k)^2 = 16$ sit entirely above the $x$-axis except for one point of contact?",
+ "hint": "How far from the $x$-axis must the center sit for exactly one contact point?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "places the path below the axis, where its points have negative y",
+  "C": "uses the diameter 8 as the distance from the center to the axis",
+  "D": "uses r^2 = 16 as the radius"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** The radius is $4$, so a path above and tangent to the $x$-axis has its center $4$ units up: $k = 4$.\n\n**The Full Solution:**\nStep 1: From $r^2 = 16$, the radius is $4$.\nStep 2: Touching a line at exactly one point means the distance from the center $(5, k)$ to the $x$-axis equals the radius, so $|k| = 4$.\nStep 3: The path lies above the axis, so $k = 4$. Check: the lowest point of the path is $(5, 0)$, and every other point has $y > 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-4$): satisfies $|k| = 4$ but puts the path below the axis, contradicting the given condition.\n* Choice C ($8$): uses the diameter as the distance to the axis, which would leave a gap of $4$.\n* Choice D ($16$): uses $r^2$ as the radius.\n\n**Test Day Takeaway:** A circle is tangent to a line exactly when the distance from its center to that line equals its radius."
+}

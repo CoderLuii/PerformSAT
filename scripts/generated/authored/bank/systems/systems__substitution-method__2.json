@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "Over one season a field team counted $h$ hawks and $e$ eagles, where $h = 4e - 30$ and $h + e = 280$. What is the value of $e$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$50$"
+    },
+    {
+      "id": "B",
+      "text": "$56$"
+    },
+    {
+      "id": "C",
+      "text": "$62$"
+    },
+    {
+      "id": "D",
+      "text": "$218$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "flips the sign of the $30$, substituting $4e + 30$ and solving $5e + 30 = 280$.",
+    "B": "drops the $-30$ when substituting, solving $4e + e = 280$.",
+    "D": "solves the system correctly but reports $h$, the number of hawks."
+  },
+  "correctAnswer": "C",
+  "hint": "Replace $h$ in the total with the expression the first equation gives for it.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** Substituting $4e - 30$ for $h$ gives $(4e - 30) + e = 280$, so $5e = 310$ and $e = 62$.\n\n**The Full Solution:**\nStep 1: The first equation gives $h$ in terms of $e$, so replace $h$ in the second equation: $(4e - 30) + e = 280$.\nStep 2: Combine like terms: $5e - 30 = 280$, so $5e = 310$.\nStep 3: Divide by $5$ to get $e = 62$ eagles. Check: $h = 4(62) - 30 = 218$, and $218 + 62 = 280$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($50$): flips the sign of the $30$, substituting $4e + 30$ and solving $5e + 30 = 280$.\n* Choice B ($56$): drops the $-30$ when substituting, solving $4e + e = 280$.\n* Choice D ($218$): solves the system correctly but reports $h$, the number of hawks.\n\n**Test Day Takeaway:** Substitute the whole expression, sign and constant included, then reread which of the two quantities the question named."
+}

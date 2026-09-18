@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-418",
+ "question": "A vendor's price for climbing chalk blocks, in cents above its yearly average, is modeled by $f(x)=-3(x+5)^2+11$, where $x$ is the month index. Writing $f(x)=ax^2+bx+c$, what is the value of $b-c$?",
+ "correctAnswer": "34",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form — Recover Coefficients**\n\n**The correct answer is $34$.**\n\n**The Fast Way (~40s):** Expanding gives $-3x^2-30x-64$, so $b=-30$, $c=-64$, and $b-c=-30+64=34$.\n\n**The Full Solution:**\nStep 1: Expand the square: $(x+5)^2=x^2+10x+25$.\nStep 2: Multiply by $-3$ and add $11$: $-3x^2-30x-75+11=-3x^2-30x-64$.\nStep 3: So $b=-30$ and $c=-64$, and $b-c=-30-(-64)=34$. Check: $f(0)=-3(25)+11=-64$, which matches $c$ ✓\n\n**Common Mistakes:**\n* $45$: uses $c=-75$, forgetting to add the $+11$ before reading the constant term.\n* $-94$: computes $b+c$ instead of $b-c$.\n* $54$: forgets to distribute the $-3$ across the $10x$ term, using $b=-10$.\n\n**Test Day Takeaway:** Expand fully before reading coefficients, and mind that subtracting a negative constant adds."
+}

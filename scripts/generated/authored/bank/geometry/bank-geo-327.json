@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-327",
+ "question": "A triangular gasket covers $96$ square centimeters and stands $16$ centimeters high. A second gasket covers the same area, but its base is $k$ times as long as the first gasket's base. Which expression gives the height, in centimeters, of the second gasket?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$16-k$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{k}{16}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{16}{k}$"
+  },
+  {
+   "id": "D",
+   "text": "$16k$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the scale factor from the height instead of dividing by it",
+  "B": "inverts the relationship, dividing k by the height",
+  "D": "multiplies the height by k, which would multiply the area by k^2"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Triangle Area**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** With the area fixed, base and height are inversely related, so multiplying the base by $k$ divides the height by $k$: $\\frac{16}{k}$.\n\n**The Full Solution:**\nStep 1: From $96 = \\frac{1}{2}b(16)$ the first gasket's base is $b = 12$ centimeters.\nStep 2: The second gasket has base $12k$ and the same area, so $96 = \\frac{1}{2}(12k)H$, that is $96 = 6kH$.\nStep 3: Solving gives $H = \\frac{96}{6k} = \\frac{16}{k}$ centimeters.\n\nCheck: With $k = 2$ the base is $24$ and the height is $8$, and $\\frac{1}{2}(24)(8) = 96$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($16-k$): subtracts the scale factor from the height, mixing a multiplier with a length.\n* Choice B ($\\frac{k}{16}$): inverts the relationship; at $k = 2$ it gives a height of $0.125$ centimeter, far too small.\n* Choice D ($16k$): multiplies the height by $k$ as well, which would multiply the area by $k^2$ instead of keeping it fixed.\n\n**Test Day Takeaway:** When an area is held constant, base and height move in opposite directions by the same factor."
+}

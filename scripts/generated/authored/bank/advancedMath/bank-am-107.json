@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-107",
+ "question": "The average handling cost, in dollars per kilogram, at an air-freight hub is modeled by $\\dfrac{x^{3}-4x}{x^{2}+4x+4}$, where $x>2$ is the load in tonnes. Which of the following gives the same cost for every such load?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{x(x+2)}{x-2}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{x^{2}-4}{x+2}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{x(x-2)}{(x+2)^{2}}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{x(x-2)}{x+2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "cancels the factor x - 2 instead of one copy of x + 2",
+  "B": "drops the factor x pulled out of the numerator",
+  "C": "cancels nothing from the squared denominator and leaves (x + 2) squared"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** $\\frac{x(x-2)(x+2)}{(x+2)^{2}}$ cancels one $x+2$, leaving $\\frac{x(x-2)}{x+2}$.\n\n**The Full Solution:**\n\nStep 1: Factor the numerator: $x^{3}-4x=x(x^{2}-4)=x(x-2)(x+2)$.\n\nStep 2: Factor the denominator as a perfect square: $x^{2}+4x+4=(x+2)^{2}$.\n\nStep 3: One factor of $x+2$ cancels, leaving $\\frac{x(x-2)}{x+2}$. Check at $x=3$: $\\frac{27-12}{9+12+4}=\\frac{15}{25}=0.6$, and $\\frac{3(1)}{5}=0.6$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: cancels $x-2$, which the denominator does not contain.\n* Choice B: drops the factor $x$ taken out of the numerator.\n* Choice C: cancels nothing and keeps the full squared denominator.\n\n**Test Day Takeaway:** A squared factor in the denominator cancels only once — count the copies on each side before writing the answer."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-170",
+ "question": "A city models water main pressure above its overnight floor by $f(x)=ax^2+12x+7$, where $a$ is a negative constant and $x$ is the hour after midnight. The greatest value of $f$ is $25$. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$-0.5$"
+  },
+  {
+   "id": "D",
+   "text": "$2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 2a instead of 4a in c - b^2/(4a)",
+  "C": "inverts the final division, computing -18/36",
+  "D": "drops the negative sign required by a < 0"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The greatest value is $7-\\frac{12^2}{4a}=25$, so $-\\frac{36}{a}=18$ and $a=-2$.\n\n**The Full Solution:**\nStep 1: For $ax^2+bx+c$ with $a<0$, the greatest value is $c-\\frac{b^2}{4a}=7-\\frac{144}{4a}=7-\\frac{36}{a}$.\nStep 2: Set that equal to $25$: $-\\frac{36}{a}=18$.\nStep 3: So $a=-\\frac{36}{18}=-2$. Check: $f(x)=-2x^2+12x+7$ peaks at $x=3$, where $f(3)=-18+36+7=25$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-4$): uses $2a$ in place of $4a$ in $c-\\frac{b^2}{4a}$.\n* Choice C ($-0.5$): inverts the last division, computing $\\frac{-18}{36}$.\n* Choice D ($2$): finds the magnitude but drops the negative sign the condition $a<0$ requires.\n\n**Test Day Takeaway:** The extreme value of $ax^2+bx+c$ is $c-\\frac{b^2}{4a}$ — keep the $4$ and keep the sign of $a$."
+}

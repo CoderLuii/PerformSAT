@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A traffic engineer counted the vehicles making a left turn at an intersection during each of eight five-minute periods. Seven of the counts were $38$, $41$, $44$, $45$, $49$, $52$, and $55$, and the median of all eight counts was $46$. What was the eighth count?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$43$"
+  },
+  {
+   "id": "B",
+   "text": "$45$"
+  },
+  {
+   "id": "C",
+   "text": "$46$"
+  },
+  {
+   "id": "D",
+   "text": "$47$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "pairs the median with 49 instead of 45: 2(46) - 49 = 43",
+  "B": "reports the middle value of the seven listed counts, 45",
+  "C": "assumes the eighth count equals the median, 46"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Median Calculation**\n\n**Choice D is correct.** With eight values the median is the average of the 4th and 5th in order, and the missing count has to land in the 5th position for that average to be $46$.\n\n**The Fast Way (~35s):** The listed values put $45$ in the 4th slot, so the 5th value must satisfy $\\dfrac{45 + v}{2} = 46$, giving $v = 47$.\n\n**The Full Solution:**\nStep 1: The seven listed counts in order are $38$, $41$, $44$, $45$, $49$, $52$, $55$. Adding an eighth value makes the median the mean of the 4th and 5th ordered values.\nStep 2: Suppose the eighth count falls between $45$ and $49$. Then the ordered list is $38$, $41$, $44$, $45$, $v$, $49$, $52$, $55$, so the median is $\\dfrac{45 + v}{2}$.\nStep 3: Set $\\dfrac{45 + v}{2} = 46$, so $45 + v = 92$ and $v = 47$, which does lie between $45$ and $49$ as assumed. Check: the full ordered list is $38$, $41$, $44$, $45$, $47$, $49$, $52$, $55$, and $\\dfrac{45 + 47}{2} = 46$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($43$): pairs the median with $49$ instead of $45$, computing $2(46) - 49 = 43$. Inserting $43$ actually gives ordered 4th and 5th values of $44$ and $45$, a median of $44.5$.\n* Choice B ($45$): reports the middle of the seven listed counts. Inserting $45$ makes both middle values $45$, so the median would be $45$, not $46$.\n* Choice C ($46$): assumes the missing value equals the median. Inserting $46$ gives middle values $45$ and $46$, a median of $45.5$.\n\n**Test Day Takeaway:** With an even count the median is an average of two entries, so back-solving means asking which slot the unknown fills — then verify by rebuilding the ordered list."
+}

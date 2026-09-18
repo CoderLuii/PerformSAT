@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A scene shop cuts a triangular flat whose corners fall at $(0, 2)$, $(9, 2)$, and $(4, 8)$ on a layout grid marked in feet. How many square feet of plywood does the flat use?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$27$"
+  },
+  {
+   "id": "C",
+   "text": "$36$"
+  },
+  {
+   "id": "D",
+   "text": "$54$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds the base and the height, 9 + 6 = 15, instead of using the area formula",
+  "C": "uses 8 as the height, measured from the x-axis instead of from the line y = 2: (1/2)(9)(8) = 36",
+  "D": "multiplies base by height without halving: 9 x 6 = 54"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice B is correct.** Two corners share the height $y = 2$, so that side is a horizontal base of length $9$, and the height is the vertical distance from the third corner up to that base.\n\n**The Fast Way (~25s):** Base $= 9 - 0 = 9$, height $= 8 - 2 = 6$, so the area is $\\tfrac{1}{2}(9)(6) = 27$ square feet.\n\n**The Full Solution:**\nStep 1: The corners $(0, 2)$ and $(9, 2)$ lie on the same horizontal line, so the segment joining them is a base of length $9 - 0 = 9$ feet.\nStep 2: The height is the perpendicular distance from $(4, 8)$ to the line $y = 2$, which is $8 - 2 = 6$ feet.\nStep 3: Area $= \\tfrac{1}{2}(9)(6) = 27$ square feet. Check: the triangle fits inside the $9$-by-$6$ rectangle spanning $x$ from $0$ to $9$ and $y$ from $2$ to $8$, and it fills exactly half of that $54$-square-foot rectangle ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): adds the base and the height, $9 + 6 = 15$. That is a perimeter-style move, not an area.\n* Choice C ($36$): uses $8$ as the height, measuring from the $x$-axis instead of from the base line $y = 2$, giving $\\tfrac{1}{2}(9)(8) = 36$.\n* Choice D ($54$): multiplies base by height and forgets the factor of $\\tfrac{1}{2}$; $54$ is the area of the surrounding rectangle.\n\n**Test Day Takeaway:** Look for two vertices with a shared coordinate — that side is your base, and the height is the distance from the third vertex to that line, not to an axis."
+}

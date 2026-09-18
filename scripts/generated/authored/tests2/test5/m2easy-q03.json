@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A lab technician models the temperature deviation, in degrees Celsius, of a heated bath by $d(t) = 2(t - 4)^2 - 7$, where $t$ is the time in minutes since heating began. Which expression is equivalent to $d(t)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2t^2 - 16t + 25$"
+  },
+  {
+   "id": "B",
+   "text": "$2t^2 - 16t + 9$"
+  },
+  {
+   "id": "C",
+   "text": "$2t^2 - 8t + 25$"
+  },
+  {
+   "id": "D",
+   "text": "$2t^2 + 16t + 25$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "distributes the 2 across the t-terms but not across the 16, leaving 16 - 7 = 9",
+  "C": "doubles the squared term but copies the cross term -8t without doubling it",
+  "D": "expands (t - 4)^2 as t^2 + 8t + 16, flipping the sign of the middle term"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $(t-4)^2 = t^2 - 8t + 16$; doubling gives $2t^2 - 16t + 32$, and $32 - 7 = 25$.\n\n**The Full Solution:**\nStep 1: Square the binomial first: $(t - 4)^2 = t^2 - 8t + 16$.\nStep 2: Multiply every term by $2$: $2(t^2 - 8t + 16) = 2t^2 - 16t + 32$.\nStep 3: Subtract $7$: $2t^2 - 16t + 32 - 7 = 2t^2 - 16t + 25$; check at $t = 0$, where the original gives $2(16) - 7 = 25$ and the answer gives $25$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($2t^2 - 16t + 9$): distributes the $2$ to $t^2$ and to $-8t$ but not to the $16$, so the constant comes out $16 - 7 = 9$; at $t = 0$ that is $9$, not $25$.\n* Choice C ($2t^2 - 8t + 25$): doubles the squared term and the constant but carries the cross term $-8t$ over unchanged, when it must become $-16t$.\n* Choice D ($2t^2 + 16t + 25$): expands $(t - 4)^2$ as $t^2 + 8t + 16$; squaring a difference makes the middle term negative, so the sign is wrong.\n\n**Test Day Takeaway:** Convert vertex form in the fixed order — square the binomial, distribute the leading coefficient to all three terms, then combine the constants."
+}

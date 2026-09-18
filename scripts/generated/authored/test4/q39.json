@@ -5,30 +5,30 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-textual",
-  "question": "Which finding, if true, would most directly support the hypothesis described in the text?",
+  "module": 2,
+  "passage": "Winter wheat is sown in autumn, overwinters as a seedling, and flowers only after prolonged exposure to cold — a requirement called vernalization. Agronomists have hypothesized that the requirement is a safeguard keyed to local climate: by blocking flowering until a real winter has passed, it prevents a warm autumn spell from luring plants into blooming just before killing frosts arrive.",
+  "question": "Which finding, if true, would most directly support the agronomists' hypothesis?",
   "choices": [
     {
       "id": "A",
-      "text": "Songbirds kept in total darkness lose the ability to orient to the magnetic field, even though the field around them is left unchanged."
+      "text": "Varieties bred for centuries in regions with long, severe winters demand longer cold exposure before flowering than varieties from regions where winters are short and mild."
     },
     {
       "id": "B",
-      "text": "Songbirds continue to orient to the magnetic field perfectly well even after the light-sensitive protein in their retinas has been chemically disabled."
+      "text": "Spring wheat, which is sown after the last frost of the season, flowers without any period of cold exposure at all."
     },
     {
       "id": "C",
-      "text": "The strength of Earth's magnetic field varies measurably between the birds' breeding grounds and their distant wintering grounds."
+      "text": "Vernalized seedlings raised in heated greenhouses flower at the same rate whether their light comes from the sun or from lamps."
     },
     {
       "id": "D",
-      "text": "Songbirds migrate at night far more often than they migrate during the daylight hours."
+      "text": "Varieties bred in the regions with the longest, harshest winters flower after the briefest cold exposure, while varieties from the mildest regions turn out to demand the most prolonged exposure of all."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The hypothesis locates the magnetic sense in a light-dependent reaction in the eye, so it predicts that the sense should fail when light is removed even though the magnetic field is unchanged — exactly what choice A reports. Choice B describes the opposite result and would undercut the hypothesis; choice C concerns field strength rather than light; and choice D notes a habit of night migration without bearing on the role of light.",
-  "passage": "Migratory songbirds can sense the direction of Earth's magnetic field, but how they do so is debated. One leading hypothesis locates the sense in the birds' eyes: a light-sensitive protein in the retina is thought to undergo a chemical reaction whose outcome depends on the angle of the surrounding magnetic field, so that the bird in effect \"sees\" the field as a pattern over its visual world. If this hypothesis is correct, then a bird's magnetic sense should fail under conditions that disrupt the light reaching its eyes, even when the magnetic field itself is left undisturbed.",
+  "explanation": "**Choice A is correct.** If the cold requirement is a safeguard \"keyed to local climate,\" it should be calibrated to the winters a variety actually faces — longer and harsher winters demanding a longer proof of winter before flowering. Choice A reports exactly that calibration.\n\n**The Full Solution:**\n- The hypothesis predicts a match between requirement and risk: flowering should stay blocked for as long as killing frosts remain possible locally.\n- Where winters are long and severe, a brief chill is no proof that winter has passed; a long requirement is protective. Where winters are short and mild, a long requirement would only cost growing time.\n- A gradient in which each variety's requirement mirrors its home climate is the safeguard hypothesis observed in the field.\n\n**Why the other choices are wrong:**\n- B: Spring wheat never faces the autumn-sowing hazard, so its lack of a requirement neither confirms nor tests the safeguard account.\n- C: The light source is irrelevant to whether cold exposure is calibrated to frost risk.\n- D: This is the reverse gradient — it would count against the hypothesis, not for it.",
   "_meta": {
-    "anchor": "avian magnetoreception — light-dependent retinal mechanism; finding-if-true form"
-  },
-  "module": 2
+    "anchor": "vernalization as a climate-keyed safeguard; finding-if-true form"
+  }
 }

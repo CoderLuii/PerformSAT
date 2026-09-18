@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-144",
+  "question": "The table shows the $360$ passengers on a ferry crossing by ticket type and by whether the passenger brought a vehicle aboard. If a passenger who brought a vehicle is selected at random, what is the probability that the passenger holds a premium ticket?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Vehicle",
+        "No vehicle",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "96",
+          "144",
+          "240"
+        ],
+        [
+          "Premium",
+          "54",
+          "66",
+          "120"
+        ],
+        [
+          "Total",
+          "150",
+          "210",
+          "360"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{3}{20}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{9}{25}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{9}{20}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{16}{25}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "54/360, divides by all passengers",
+    "C": "54/120, conditions on premium instead of vehicle (P(vehicle | premium))",
+    "D": "96/150, the standard-ticket share of vehicle passengers, the complement"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Two-Way Table Conditional Probability**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** The Vehicle column has $150$ passengers, $54$ of whom hold premium tickets: $\\frac{54}{150} = \\frac{9}{25}$.\n\n**The Full Solution:**\nStep 1: \"A passenger who brought a vehicle\" restricts the sample space to the Vehicle column, total $150$.\nStep 2: The premium entry in that column is $54$.\nStep 3: Probability $= \\frac{54}{150}$; divide numerator and denominator by $6$ to get $\\frac{9}{25}$. Check: $\\frac{9}{25} = 0.36$, and $0.36 \\times 150 = 54$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3}{20}$): This is $\\frac{54}{360}$, dividing by all passengers rather than the $150$ with vehicles.\n* Choice C ($\\frac{9}{20}$): This is $\\frac{54}{120}$, conditioning on premium ticket holders; it answers the reversed question, \"given premium, what is the probability of a vehicle?\"\n* Choice D ($\\frac{16}{25}$): This is $\\frac{96}{150}$, the standard-ticket share of the vehicle passengers, the complement of the answer.\n\n**Test Day Takeaway:** \"Given\" names the column (or row) that becomes the whole; the two easiest traps are the reversed condition and the grand total."
+}

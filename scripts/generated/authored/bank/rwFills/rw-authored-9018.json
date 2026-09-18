@@ -1,0 +1,36 @@
+{
+  "id": 9018,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "Hawkmoths are large moths that feed after dark, hovering in front of a flower and drawing nectar through a long tongue.",
+      "Nectar-feeding bats also visit flowers after dark, pushing their heads into the blossom to lap up nectar.",
+      "Flowers visited mainly by hawkmoths are usually white or pale, open after dusk, and give off a strong scent at night.",
+      "Flowers visited mainly by nectar bats are also pale and night-opening, with a heavy odor and far more nectar per flower.",
+      "Bat flowers tend to be sturdy and wide, since a bat would damage a slender blossom; hawkmoth flowers are narrow and deep.",
+      "Neither kind of flower relies on the bright colors that draw daytime pollinators such as bees."
+    ],
+    "goal": "The student wants to emphasize a similarity between the flowers that hawkmoths visit and the flowers that nectar-feeding bats visit."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Flowers visited mainly by nectar-feeding bats are sturdy and wide, and they hold far more nectar per flower."
+    },
+    {
+      "id": "B",
+      "text": "Unlike hawkmoth flowers, which are narrow and deep, bat flowers must be wide enough to admit an animal."
+    },
+    {
+      "id": "C",
+      "text": "Hawkmoth flowers and bat flowers are alike in being pale, in opening after dusk, and in smelling strongly at night."
+    },
+    {
+      "id": "D",
+      "text": "A hawkmoth hovers in front of a blossom, while a bat pushes its head into the flower to reach the nectar."
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** The goal calls for a similarity between the two kinds of flower, and this sentence names both and lists the three features the notes give to each: pale color, opening after dusk, and strong night scent.\n\n**The Full Solution:**\n- Look for the properties the notes assign twice. The third and fourth notes describe hawkmoth flowers and bat flowers in nearly the same terms, and those repeated terms are the similarity.\n- Check that the sentence covers both subjects. \"Hawkmoth flowers and bat flowers\" does; a sentence about one alone cannot satisfy the goal.\n- Reject differences even when they are accurate. Width, nectar volume, and feeding posture are all in the notes, but none of them is something the two share.\n\n**Why the other choices are wrong:**\n- A: This describes bat flowers only, so it leaves the comparison the goal requires unmade.\n- B: The word \"unlike\" announces a contrast, which is the opposite of the goal.\n- D: This contrasts how the two animals feed rather than saying anything about what the flowers have in common."
+}

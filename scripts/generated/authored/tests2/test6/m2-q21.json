@@ -1,0 +1,52 @@
+{
+ "id": 21,
+ "question": "A cover plate is punched as a rectangle with three of its corners at the plotted points $(-2, 4)$, $(0, 0)$, and $(6, 3)$ on a nesting grid spaced one centimeter apart. How many square centimeters does the finished plate occupy?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -2,
+     4
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     6,
+     3
+    ]
+   ],
+   "xMin": -4,
+   "xMax": 8,
+   "yMin": -2,
+   "yMax": 10
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$30$"
+  },
+  {
+   "id": "C",
+   "text": "$45$"
+  },
+  {
+   "id": "D",
+   "text": "$56$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "finds the area of the triangle joining the three plotted corners, half of the rectangle: 15",
+  "C": "squares the longer side, treating the plate as a square of side sqrt(45): 45",
+  "D": "reads the bounding box that encloses all four corners, including the missing corner (4, 7): 8 units wide by 7 units tall gives 56"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~55s):** The corner at $(0, 0)$ is the right angle, and its two sides run to $(6, 3)$ and $(-2, 4)$, with lengths $\\sqrt{45} = 3\\sqrt{5}$ and $\\sqrt{20} = 2\\sqrt{5}$. The area is $3\\sqrt{5} \\cdot 2\\sqrt{5} = 30$.\n\n**The Full Solution:**\nStep 1: Identify which plotted corner joins the two sides. From $(0, 0)$ the steps to the other corners are $6$ right and $3$ up, and $2$ left and $4$ up. These are perpendicular, since $\\frac{3}{6} = \\frac{1}{2}$ and $\\frac{4}{-2} = -2$ are negative reciprocals.\nStep 2: Find the side lengths with the distance formula: $\\sqrt{6^2 + 3^2} = \\sqrt{45}$ and $\\sqrt{(-2)^2 + 4^2} = \\sqrt{20}$.\nStep 3: Multiply length by width: $\\sqrt{45} \\cdot \\sqrt{20} = \\sqrt{900} = 30$ square centimeters. Check the missing corner: adding both steps to $(0, 0)$ lands on $(4, 7)$, and the four corners do form a rectangle ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): stops at the triangle formed by the three plotted corners, which is exactly half the plate.\n* Choice C ($45$): uses $\\sqrt{45}$ for both sides, treating a tilted rectangle as a square.\n* Choice D ($56$): reads the plate off the axes, using the upright box that encloses all four corners — $8$ units wide by $7$ units tall, since the missing corner is $(4, 7)$; that box is not the plate.\n\n**Test Day Takeaway:** A tilted rectangle on a grid still has perpendicular sides — check the slopes at the shared corner, then multiply the two distances instead of reading widths off the axes."
+}

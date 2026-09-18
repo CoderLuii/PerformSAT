@@ -1,0 +1,6 @@
+{
+ "id": 12,
+ "question": "A grain silo holds $f(x) = 5x + k$ tonnes of wheat after $x$ days of harvest, where $k$ is a constant, and the silo held 41 tonnes after 6 days. After how many days does the model give 86 tonnes?",
+ "correctAnswer": "15",
+ "explanation": "**SAT Pattern: Solve $f(a) = c$**\n\n**The correct answer is $15$.** From $f(6) = 41$, $5(6) + k = 41$, so $k = 11$ and $f(x) = 5x + 11$. Setting $5x + 11 = 86$ gives $x = 15$ days.\n\n**The Fast Way (~25s):** $k = 41 - 30 = 11$; then $86 - 11 = 75$ and $\\frac{75}{5} = 15$.\n\n**The Full Solution:**\nStep 1: Substitute the known point into the rule: $f(6) = 5(6) + k = 30 + k$, and this equals $41$, so $k = 11$.\nStep 2: The completed model is $f(x) = 5x + 11$.\nStep 3: Solve $5x + 11 = 86$: subtract $11$ to get $5x = 75$, then divide by $5$ to get $x = 15$. Check: $f(15) = 5(15) + 11 = 86$ ✓\n\n**Common Mistakes:**\n* $11$: finds the constant $k$ and stops there instead of solving for the day.\n* $17.2$: ignores $k$ entirely and computes $\\frac{86}{5}$.\n* $19.4$: adds $k$ instead of subtracting it, computing $\\frac{86 + 11}{5}$.\n\n**Test Day Takeaway:** When a rule carries an unknown constant, one given point pins it down. Finish the model first, then answer the question that was actually asked."
+}

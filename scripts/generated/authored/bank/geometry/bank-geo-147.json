@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-147",
+ "question": "Story-time rugs for a children's library are circles $10$ feet across. In square feet, how much floor does one rug cover?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$10\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$25\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$100\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies pi by the radius instead of the radius squared",
+  "B": "gives the circumference pi d = 10 pi",
+  "D": "squares the diameter instead of the radius, giving 100 pi"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Area of a Circle**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The radius is $5$ feet, so the area is $\\pi(5)^{2}=25\\pi$ square feet.\n\n**The Full Solution:**\n\nStep 1: Convert across to radius. \"$10$ feet across\" is the diameter, so $r=\\frac{10}{2}=5$ feet.\n\nStep 2: Apply the area formula. $A=\\pi r^{2}$.\n\nStep 3: Substitute. $A=\\pi(5)^{2}=25\\pi$ square feet, about $78.5$ square feet.\n\nCheck: a $10$-by-$10$ square would cover $100$ square feet, and a circle inscribed in it covers about $78.5$ — consistent.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5\\pi$): multiplies $\\pi$ by the radius instead of by the radius squared.\n* Choice B ($10\\pi$): gives the circumference $\\pi d$, a length rather than an area.\n* Choice D ($100\\pi$): squares the diameter instead of the radius.\n\n**Test Day Takeaway:** Halve any \"across\" measurement before squaring — the area formula takes the radius, never the diameter."
+}

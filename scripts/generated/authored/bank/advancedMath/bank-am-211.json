@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-211",
+  "question": "A district models the number of unvaccinated children by $P(t)=18{,}000(0.94)^{t}$, where $t$ is the number of years after 2015. What does the coefficient $18{,}000$ represent in this model?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The number of unvaccinated children fell by 18,000 after 2015."
+    },
+    {
+      "id": "B",
+      "text": "The number of unvaccinated children falls by 18,000 each year."
+    },
+    {
+      "id": "C",
+      "text": "The number of unvaccinated children in 2016 was 18,000."
+    },
+    {
+      "id": "D",
+      "text": "The estimated number of unvaccinated children in 2015 was 18,000."
+    }
+  ],
+  "correctAnswer": "D",
+  "distractorNotes": {
+    "A": "treats the coefficient as a total decrease rather than a starting level",
+    "B": "treats the coefficient as a yearly decrease; the yearly change is 6% of the current level",
+    "C": "reads t = 1 as the starting year; the model gives 16,920 for 2016"
+  },
+  "explanation": "**SAT Pattern: Interpret Initial Value in Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** At $t=0$ the power equals 1, so $P(0)=18{,}000$, the estimate for 2015.\n\n**The Full Solution:**\nStep 1: The variable $t$ counts years after 2015, so 2015 corresponds to $t=0$.\nStep 2: $(0.94)^{0}=1$, so $P(0)=18{,}000(1)=18{,}000$.\nStep 3: The coefficient is therefore the estimated count in 2015. Check: $P(1)=16{,}920$, which is 6% below 18,000, as the base requires ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: reads the coefficient as a change; it is a level.\n* Choice B: reads it as a yearly drop; the model's drop is a percent of the current count, not a fixed 18,000.\n* Choice C: shifts the start by one year, reading $t=1$ as 2015; the model gives $16{,}920$ for 2016.\n\n**Test Day Takeaway:** Evaluate the model at the input that means 'the start' — the coefficient is what survives when the power equals 1."
+}

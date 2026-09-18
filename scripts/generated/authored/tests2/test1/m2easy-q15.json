@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "A space telescope carries two similar triangular sunshields whose areas are in the ratio $1$ to $9$. The edges of the smaller sunshield total $24$ meters in length. What is the total length, in meters, of the edges of the larger sunshield?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$72$"
+  },
+  {
+   "id": "C",
+   "text": "$216$"
+  },
+  {
+   "id": "D",
+   "text": "$648$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by the scale factor 3 instead of multiplying by it",
+  "C": "uses the area ratio 9 as the ratio of lengths, computing 24 times 9",
+  "D": "multiplies by 27, cubing the scale factor as though the ratio were a volume ratio"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Similar Triangles and Area Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Areas of similar figures scale by the square of the length ratio, so a $1$ to $9$ area ratio means a $1$ to $3$ length ratio. Perimeter: $24 \\times 3 = 72$ meters.\n\n**The Full Solution:**\nStep 1: Let $k$ be the ratio of a length on the larger sunshield to the corresponding length on the smaller one. For similar figures, the ratio of areas is $k^2$.\nStep 2: The areas are in the ratio $1$ to $9$, so $k^2 = 9$ and $k = 3$. Every length on the larger sunshield is $3$ times the corresponding length on the smaller one.\nStep 3: The sum of the edges is a length, so it also scales by $k$: $24 \\times 3 = 72$ meters. Check: tripling each edge triples the perimeter and multiplies the area by $3^2 = 9$, exactly the given ratio ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): dividing by $3$ instead of multiplying. The larger sunshield must have the longer edges, so the perimeter has to grow.\n* Choice C ($216$): applying the area ratio $9$ directly to a length, $24 \\times 9$. That would make the areas differ by a factor of $81$, not $9$.\n* Choice D ($648$): using $3^3 = 27$, the scale factor for volumes. Sunshields are flat regions, so lengths scale by $k$ and areas by $k^2$ only.\n\n**Test Day Takeaway:** For similar figures, lengths scale by $k$, areas by $k^2$, and volumes by $k^3$. Given an area ratio, take the square root before touching any length."
+}

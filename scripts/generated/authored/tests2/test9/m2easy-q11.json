@@ -1,0 +1,49 @@
+{
+ "id": 11,
+ "question": "A city water utility charges a fixed monthly service fee plus a constant rate per hundred cubic feet (CCF) of water used. The table gives the total monthly charge $C$, in dollars, for three amounts of water used $w$, in CCF. Which equation gives $C$ in terms of $w$?",
+ "questionTable": {
+  "headers": [
+   "Water used, $w$ (CCF)",
+   "Total charge, $C$ (dollars)"
+  ],
+  "rows": [
+   [
+    "$4$",
+    "$38$"
+   ],
+   [
+    "$9$",
+    "$63$"
+   ],
+   [
+    "$15$",
+    "$93$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$C = 5w + 18$"
+  },
+  {
+   "id": "B",
+   "text": "$C = 9.5w$"
+  },
+  {
+   "id": "C",
+   "text": "$C = 18w + 5$"
+  },
+  {
+   "id": "D",
+   "text": "$C = 25w + 18$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "treats the first row as a pure rate, 38 / 4 = 9.5, and drops the fixed fee",
+  "C": "swaps the rate and the fixed fee, using 18 per CCF and a 5 dollar fee",
+  "D": "uses the raw change in charge, 63 - 38 = 25, as the rate without dividing by the 5 CCF change"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Linear Cost Setup**\n\n**Choice A is correct.** A fixed fee plus a constant rate is a linear model $C = mw + b$, where $m$ is the rate per CCF and $b$ is the fee charged even at zero usage.\n\n**The Fast Way (~25s):** From the first two rows the charge rises $\\$25$ over $5$ CCF, so $m = 5$. Then $38 - 5(4) = 18$ is the fixed fee.\n\n**The Full Solution:**\nStep 1: Find the rate from any two rows: $m = \\dfrac{63 - 38}{9 - 4} = \\dfrac{25}{5} = 5$ dollars per CCF.\nStep 2: Substitute one row to find the fee: $38 = 5(4) + b$, so $b = 38 - 20 = 18$ dollars.\nStep 3: The model is $C = 5w + 18$. Check the third row: $5(15) + 18 = 75 + 18 = 93$, matching the table ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($C = 9.5w$): divides the first row's charge by its usage, $38 \\div 4 = 9.5$, as if the whole bill were usage. That model gives $9.5(9) = 85.5$ for $9$ CCF, not $\\$63$.\n* Choice C ($C = 18w + 5$): swaps the rate and the fee. It gives $18(4) + 5 = \\$77$ for $4$ CCF, far above the table's $\\$38$.\n* Choice D ($C = 25w + 18$): uses the raw rise of $\\$25$ as the rate without dividing by the $5$ CCF that produced it. It gives $25(4) + 18 = \\$118$ for $4$ CCF.\n\n**Test Day Takeaway:** In any fixed-fee-plus-rate table, the rate is a difference divided by a difference, and the fee is what is left after you subtract the rate's share — then confirm the model on a row you did not use."
+}

@@ -1,0 +1,61 @@
+{
+  "id": 4,
+  "question": "The table summarizes the $250$ students at a school by grade level and by whether the student takes a world language course. What percent of the grade 11 students take a world language course?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Takes a world language course",
+        "Does not take a world language course",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Grade 11",
+          "84",
+          "36",
+          "120"
+        ],
+        [
+          "Grade 12",
+          "56",
+          "74",
+          "130"
+        ],
+        [
+          "Total",
+          "140",
+          "110",
+          "250"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$30\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$33.6\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$60\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$70\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the students who do not take a course",
+    "B": "divides by the school total",
+    "C": "divides by the column total"
+  },
+  "correctAnswer": "D",
+  "hint": "The whole in this comparison is the number of grade 11 students, not the number of students at the school.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~25s):** $\\frac{84}{120} = 0.7$, so $70\\%$ of the grade 11 students take a world language course.\n\n**The Full Solution:**\nStep 1: The question restricts attention to grade 11, so the whole is that row's total, $120$ students.\nStep 2: The part is the grade 11 students who take a world language course, $84$.\nStep 3: Divide and convert: $\\frac{84}{120} = 0.7 = 70\\%$. Check: the other $36$ grade 11 students are $30\\%$, and $70 + 30 = 100$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($30\\%$): uses the $36$ grade 11 students who do NOT take a world language course.\n* Choice B ($33.6\\%$): divides $84$ by the school total of $250$ instead of by the grade 11 total.\n* Choice C ($60\\%$): divides $84$ by the column total of $140$, comparing grade 11 to all language students.\n\n**Test Day Takeaway:** In a two-way table, the phrase after of names the denominator — here it is the grade 11 row, so the row total is the whole."
+}

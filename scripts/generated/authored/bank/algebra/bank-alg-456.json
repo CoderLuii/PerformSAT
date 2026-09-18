@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-456",
+  "question": "In the $xy$-plane shown, points $P$ and $Q$ have coordinates $(-3, 7)$ and $(3, -2)$, respectively. What is the slope of line $PQ$?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -3,
+          7
+        ],
+        [
+          3,
+          -2
+        ]
+      ],
+      "xMin": -5,
+      "xMax": 5,
+      "yMin": -4,
+      "yMax": 9
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-\\frac{3}{2}$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{2}{3}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{2}{3}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3}{2}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "inverts the ratio, putting the run 6 over the rise -9.",
+    "C": "is the negative reciprocal, the slope of a line perpendicular to PQ.",
+    "D": "drops the negative sign even though the line falls from left to right."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice A is correct.**\n\n**The Fast Way (~8s):** Rise $= -2 - 7 = -9$, run $= 3 - (-3) = 6$; slope $= \\frac{-9}{6} = -\\frac{3}{2}$.\n\n**The Full Solution:**\nStep 1: Use $(x_1, y_1) = (-3, 7)$ and $(x_2, y_2) = (3, -2)$ in $\\frac{y_2 - y_1}{x_2 - x_1}$.\nStep 2: $\\frac{-2 - 7}{3 - (-3)} = \\frac{-9}{6} = -\\frac{3}{2}$.\nStep 3: Check: $Q$ is to the right of and below $P$, so the slope must be negative; from $P$, moving right $6$ and down $9$ lands on $Q$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-\\frac{2}{3}$): inverts the ratio, putting the run $6$ over the rise $-9$.\n* Choice C ($\\frac{2}{3}$): is the negative reciprocal, the slope of a line perpendicular to $PQ$.\n* Choice D ($\\frac{3}{2}$): drops the negative sign even though the line falls from left to right.\n\n**Test Day Takeaway:** Glance at the plot first: a line falling left to right has a negative slope, which eliminates half the choices before any arithmetic."
+}

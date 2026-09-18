@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-371",
+  "question": "An account is opened with $P$ dollars and earns simple interest at an annual rate of $r$, expressed as a decimal, and no deposits or withdrawals are made. Which expression represents the balance of the account, in dollars, after $t$ years?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$P + rt$"
+    },
+    {
+      "id": "B",
+      "text": "$Prt$"
+    },
+    {
+      "id": "C",
+      "text": "$P(1 + rt)$"
+    },
+    {
+      "id": "D",
+      "text": "$P(1 + r)^t$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the product $rt$ to the principal without scaling it by $P$, so the units are wrong",
+    "B": "gives the interest earned, not the balance, because the principal is never added back",
+    "D": "is the compound-interest balance; simple interest is never applied to interest already earned"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Simple Interest**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The balance is the principal plus the simple interest: $P + Prt$, and factoring $P$ gives $P(1 + rt)$.\n\n**The Full Solution:**\nStep 1: Simple interest earned over $t$ years is $I = Prt$.\nStep 2: The balance is the principal plus that interest: $A = P + Prt$.\nStep 3: Factor the common $P$: $A = P(1 + rt)$. Check with $P = 1000$, $r = 0.05$, $t = 2$: the interest is $\\$100$ and the balance is $\\$1{,}100$, and $1000(1 + 0.05 \\cdot 2) = 1{,}100$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($P + rt$): adds the product $rt$ to the principal without scaling it by $P$, so the units are wrong\n* Choice B ($Prt$): gives the interest earned, not the balance, because the principal is never added back\n* Choice D ($P(1 + r)^t$): is the compound-interest balance; simple interest is never applied to interest already earned\n\n**Test Day Takeaway:** Test a symbolic answer with easy numbers. Simple interest grows linearly in $t$; only compound interest puts $t$ in an exponent."
+}

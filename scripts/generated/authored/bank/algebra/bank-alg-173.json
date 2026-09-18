@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-173",
+ "question": "An instrument library charges an \\$18 annual membership plus \\$7 for each week an instrument is kept out. One member's yearly bill is \\$130. If that member keeps an instrument out for $4$ more weeks next year at the same rates, what will the yearly bill be, in dollars?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$130$"
+  },
+  {
+   "id": "B",
+   "text": "$134$"
+  },
+  {
+   "id": "C",
+   "text": "$140$"
+  },
+  {
+   "id": "D",
+   "text": "$158$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports this year's bill and never applies the 4 extra weeks",
+  "B": "adds 4 dollars to the bill instead of 4 weeks at 7 dollars each",
+  "C": "computes 7 times 20 weeks and omits the 18 dollar membership"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** This year's weeks come from $\\frac{130 - 18}{7} = 16$; next year is $20$ weeks, so the bill is $18 + 7(20) = 158$ dollars.\n\n**The Full Solution:**\nStep 1: Model this year's bill: $18 + 7w = 130$, where $w$ is the number of weeks the instrument is kept out.\nStep 2: Subtract the membership and divide by the weekly rate: $7w = 112$, so $w = 16$ weeks.\nStep 3: Next year the member keeps it $16 + 4 = 20$ weeks, so the bill is $18 + 7(20) = 18 + 140 = 158$ dollars. Check: the four extra weeks add $7(4) = 28$ dollars, and $130 + 28 = 158$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($130$): reports this year's bill without applying the four extra weeks at all.\n* Choice B ($134$): adds $4$ dollars rather than four weeks at $7$ dollars each.\n* Choice C ($140$): computes $7(20)$ for the weekly charges but drops the $18$-dollar membership.\n\n**Test Day Takeaway:** Solve for the hidden count first, adjust that count, and then rebuild the total with the fixed fee still attached."
+}

@@ -6,29 +6,18 @@
   "domain": "information-and-ideas",
   "skill": "inferences",
   "module": 1,
-  "passage": "When a congested highway is widened, planners often expect travel times to fall as the same number of cars spread across more lanes. Transportation researchers have repeatedly found, however, that within a few years traffic on the widened road returns to near its former congestion. Drivers who had shifted their trips to other routes, other times, or other modes move back onto the faster road, and some who had not been making the trip at all now do. Because the added capacity itself attracts these trips, researchers call the new traffic \"induced demand.\" Where induced demand is strong, it follows that ______",
+  "passage": "Steller's sea cow, a massive northern relative of the manatee, entered the scientific record in 1741, when the naturalist Georg Wilhelm Steller studied the animals in the shallows of the Commander Islands. By 1768 the species was gone. The sea cows were slow, buoyant, and unable to dive; the entire population was confined to a single small archipelago; and after the expedition's route became known, fur-trading crews began stopping at the islands regularly, killing the animals to provision their ships. Given how swiftly the end came, researchers infer that ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "congestion on a widened road depends only on the number of lanes and not on drivers' choices about when or how to travel."
-    },
-    {
-      "id": "B",
-      "text": "drivers who shift to other routes when a road is widened never return to it once their travel habits have changed."
-    },
-    {
-      "id": "C",
-      "text": "the only way to cut travel times on any road is to add as many lanes as the available land will permit."
-    },
-    {
-      "id": "D",
-      "text": "widening a congested road may not relieve congestion for long, because the added capacity itself draws extra trips that fill the new lanes."
-    }
+    { "id": "A", "text": "the sea cow population had already been shrinking for centuries before Steller first described the animals." },
+    { "id": "B", "text": "the fur-trading crews valued the sea cows chiefly for their hides rather than as a source of food." },
+    { "id": "C", "text": "the species would have disappeared just as quickly even if the expedition's route had never become known." },
+    { "id": "D", "text": "the species' extreme vulnerability and the steady hunting that followed the expedition together drove it to extinction within three decades." }
   ],
   "correctAnswer": "D",
-  "explanation": "Induced demand means the new capacity itself attracts trips that had been shifted elsewhere or not made at all. It follows that widening a congested road may not relieve congestion for long, because those added trips refill the new lanes—choice D. Choice A denies the role of drivers' choices the passage stresses, B overstates by saying drivers never return, and C draws a sweeping prescription the passage does not support.",
+  "explanation": "**Choice D is correct.** The passage assembles a cause on each side — defenseless, concentrated animals; regular provisioning stops that began once the route was known — and the twenty-seven-year collapse is the effect those causes jointly explain.\n\n**The Full Solution:**\n- Vulnerability alone had not eliminated the species before 1741; the animals were there for Steller to study.\n- What changed afterward was sustained hunting pressure, arriving precisely when the islands entered the traders' routes.\n- The inference that fits both premises is the conjunction D states: vulnerability plus new, steady hunting produced extinction within three decades.\n\n**Why the other choices are wrong:**\n- A: The passage dates the collapse to the years after 1741 and offers no evidence of an earlier decline.\n- B: The text says the crews killed the animals \"to provision their ships\" — for food, not hides.\n- C: It severs the causal link the passage builds — without the route's discovery, the hunting that followed it has no explanation."
+  ,
   "_meta": {
-    "anchor": "induced demand in road widening"
+    "anchor": "Georg Wilhelm Steller — naturalist on the 1741 Bering expedition; registered in researchers.json"
   }
 }

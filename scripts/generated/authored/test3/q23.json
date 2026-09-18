@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "expression-of-ideas",
  "skill": "transitions",
+ "type": "multiple-choice",
+ "passage": "The gopher tortoise digs burrows up to twelve meters long in the sandy soils of the southeastern United States, and the tortoise itself is only one of the burrows' beneficiaries. More than three hundred other species — burrowing owls, indigo snakes, rabbits, frogs, and countless insects — take refuge in the tunnels during wildfires and winter cold. ______ conservationists rank the tortoise among the region's most important animals: protecting it protects the many species that depend on its engineering.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "Meanwhile,"
-  },
-  {
-   "id": "B",
    "text": "However,"
   },
   {
+   "id": "B",
+   "text": "For example,"
+  },
+  {
    "id": "C",
-   "text": "As a result,"
+   "text": "For this reason,"
   },
   {
    "id": "D",
-   "text": "In addition,"
+   "text": "Meanwhile,"
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C, \"As a result,\". The first part of the passage explains Black's method: rather than screening compounds at random, he studied how specific receptors respond to the body's own signaling molecules so that he could design a drug to block one receptor precisely. The sentence after the blank reports what that method produced — propranolol and cimetidine — and frames them as the yield of the receptor-based approach. The relation is cause and effect, which \"As a result,\" marks. \"However,\" would signal a reversal the passage does not make; \"In addition,\" would treat the drugs as a further parallel fact rather than a consequence; and \"Meanwhile,\" would suggest simultaneous events rather than an outcome.",
+ "explanation": "**Choice C is correct.** The final sentence states a consequence of what came before: because hundreds of species shelter in the tortoise's burrows, conservationists rank the tortoise as critically important. \"For this reason\" is the transition that marks a conclusion drawn from the preceding facts.\n\n**The Full Solution:**\n- Map the logic: fact (many species depend on the burrows) leads to judgment (the tortoise is a conservation priority).\n- The colon in the final sentence even restates the causal link — protecting the tortoise protects its dependents — confirming that the blank must signal cause and effect.\n\n**Why the other choices are wrong:**\n- A: \"However\" requires a reversal, but the conservationists' ranking follows from the burrow facts rather than opposing them.\n- B: \"For example\" would make the ranking an illustration of the shelter-seeking species, which it is not — it is a response to them.\n- D: \"Meanwhile\" sets two developments side by side in time; the sentences here are linked by logic, not simultaneity.",
  "_meta": {
-  "anchor": "James Black — pharmacologist; receptor-based drug design; propranolol and cimetidine"
- },
- "passage": "Most mid-twentieth-century drug discovery relied on screening huge libraries of compounds against disease targets. The pharmacologist James Black took a different route, studying how specific receptors respond to the body's own signaling molecules so that he could design a drug to block one receptor precisely. ______ instead of stumbling onto useful drugs by chance, Black's receptor-based approach yielded propranolol for heart disease and, later, cimetidine for stomach ulcers.",
- "type": "multiple-choice"
+  "anchor": "Gopher tortoise burrows as keystone shelter — consequence transition"
+ }
 }

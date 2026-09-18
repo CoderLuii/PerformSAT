@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-210",
+  "question": "The graph of the linear function $g$ in the $xy$-plane has equation $y = \\dfrac{5}{2}x - 14$. What is the $y$-coordinate of the $y$-intercept of the graph?",
+  "correctAnswer": "-14",
+  "explanation": "**SAT Pattern: Reading Slope-Intercept Form**\n\n**The correct answer is $-14$.**\n\n**The Fast Way (~5s):** In $y = mx + b$, the $y$-intercept is $b$. Here $b = -14$.\n\n**The Full Solution:**\nStep 1: The equation is already in slope-intercept form $y = mx + b$, with $m = \\dfrac{5}{2}$ and $b = -14$.\nStep 2: The $y$-intercept is the point where $x = 0$: $y = \\dfrac{5}{2}(0) - 14 = -14$.\nStep 3: So the $y$-intercept is $(0, -14)$ and its $y$-coordinate is $-14$. $\\checkmark$\n\n**Common Mistakes:** Entering $14$ (dropping the negative sign); entering $\\dfrac{5}{2}$ or $2.5$ (the slope); entering $\\dfrac{28}{5}$ (the $x$-intercept, found by setting $y = 0$).\n\n**Test Day Takeaway:** In $y = mx + b$, the constant term is the $y$-intercept, sign included. Confirm by substituting $x = 0$."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-038",
+ "question": "A particle sensor's calibration constant $n$ satisfies the equation $(2^3)(2^n) = 2^{5n - 9}$, where each side of that equation counts the particles the sensor detects per liter of air during one sampling minute. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-1.5$"
+  },
+  {
+   "id": "B",
+   "text": "$1.5$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$4.5$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reads the right side as $2^{5n + 9}$, solving $3 + n = 5n + 9$",
+  "B": "divides the powers on the left instead of multiplying, solving $n - 3 = 5n - 9$",
+  "D": "multiplies the exponents on the left instead of adding them, solving $3n = 5n - 9$"
+ },
+ "explanation": "**SAT Pattern: Exponent Equation (Combine then Solve)**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The left side is $2^{3 + n}$, so $3 + n = 5n - 9$, giving $4n = 12$ and $n = 3$.\n\n**The Full Solution:**\nStep 1: Multiplying powers of the same base adds the exponents: $(2^3)(2^n) = 2^{3 + n}$.\nStep 2: With equal bases the exponents must match, so $3 + n = 5n - 9$.\nStep 3: Subtract $n$ and add $9$ to get $12 = 4n$, so $n = 3$. Check: the left side is $2^{6} = 64$ and the right side is $2^{15 - 9} = 2^6 = 64$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-1.5$): flips the sign of the $-9$, turning the equation into $3 + n = 5n + 9$.\n* Choice B ($1.5$): divides the two powers on the left instead of multiplying them, solving $n - 3 = 5n - 9$.\n* Choice D ($4.5$): multiplies the exponents on the left, producing $3n = 5n - 9$.\n\n**Test Day Takeaway:** Collapse each side to a single power of the shared base first; only then may you set the exponents equal."
+}

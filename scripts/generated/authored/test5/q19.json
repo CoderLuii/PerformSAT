@@ -1,34 +1,34 @@
 {
-  "id": 519,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "Three institutions have been central to the recent expansion of long-running monitoring programs for North American forests: the U.S. Forest Service's Forest Inventory and Analysis program, founded in 1928 to track timber resources but now adapted to ecological ______ Smithsonian Institution's ForestGEO network, which maintains dozens of large permanent plots across many countries; and the National Ecological Observatory Network, a continental-scale infrastructure operated for the National Science Foundation.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "questions, the"
-    },
-    {
-      "id": "B",
-      "text": "questions: the"
-    },
-    {
-      "id": "C",
-      "text": "questions; the"
-    },
-    {
-      "id": "D",
-      "text": "questions. The"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"questions; the\". The sentence lists three institutions, and because the items themselves already contain internal commas, Standard English separates the items with semicolons rather than commas so the boundaries stay clear. The semicolon already present before the third item (\"in many countries; and\") confirms that semicolons are the right level here. A comma (choice A) would blur the boundary between the first and second items. A colon (choice B) would treat the second item as an explanation of the first. A period (choice D) would split a single list across two sentences.",
-  "_meta": {
-    "anchor": "Forest Inventory and Analysis / ForestGEO / NEON — three forest-monitoring programs"
+ "id": 519,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "Three museums hold especially important collections of early scientific instruments: the Museo Galileo in Florence, which preserves telescopes and mathematical instruments from the seventeenth ______ History of Science Museum in Oxford, which owns one of the world's largest gatherings of astrolabes; and the Adler Planetarium in Chicago, whose holdings trace the instrument maker's craft across five centuries.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "century, the"
+  },
+  {
+   "id": "B",
+   "text": "century: the"
+  },
+  {
+   "id": "C",
+   "text": "century; the"
+  },
+  {
+   "id": "D",
+   "text": "century. The"
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The sentence is a list of three museums whose items contain internal commas, so the items must be separated by semicolons — and the third item already ends with one (\"astrolabes; and\").\n\n**The Full Solution:**\n- After the colon, the sentence enumerates three museums, each expanded by a comma-bearing \"which\" or \"whose\" clause.\n- When list items carry internal commas, the boundaries between items are marked with semicolons to keep the structure legible.\n- The boundary before the final item is already a semicolon (\"...astrolabes; and the Adler Planetarium...\"), so the parallel boundary at the blank must be a semicolon as well.\n\n**Why the other choices are wrong:**\n- A: A comma would disappear among the internal commas of the items, blurring where one museum ends and the next begins, and would break parallelism with the semicolon later in the list.\n- B: A colon cannot divide items inside a list that a colon has already introduced.\n- D: A period would strand \"History of Science Museum... astrolabes; and the Adler Planetarium...\" as a fragment with no main clause.",
+ "_meta": {
+  "anchor": "three early-scientific-instrument museums; semicolons in a complex list"
+ }
 }

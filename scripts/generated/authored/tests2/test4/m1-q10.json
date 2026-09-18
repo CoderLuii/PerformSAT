@@ -1,0 +1,6 @@
+{
+ "id": 10,
+ "question": "A nest-box survey counts $y$ occupied boxes, where $y$ satisfies $9y - 4y + c = 45$ for some constant $c$. The survey found $7$ occupied boxes. What is the value of $c$?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~15s):** $9y - 4y = 5y$, and $5(7) = 35$, so $c = 45 - 35 = 10$.\n\n**The Full Solution:**\nStep 1: Combine the like terms on the left: $9y - 4y = 5y$, so the equation is $5y + c = 45$.\nStep 2: The survey gives $y = 7$. Substituting, $5(7) + c = 45$, or $35 + c = 45$.\nStep 3: Subtract $35$ from both sides: $c = 10$.\nCheck: $9(7) - 4(7) + 10 = 63 - 28 + 10 = 45$. $\\checkmark$\n\n**Common Mistakes:** Adding the like terms as $13y$ gives $91 + c = 45$ and $c = -46$; substituting $y = 7$ into a single term and computing $45 - 7$ gives $38$; moving $35$ across without changing its sign gives $c = -10$.\n\n**Test Day Takeaway:** Combine like terms before substituting — one clean coefficient turns a two-step problem into a one-step problem."
+}

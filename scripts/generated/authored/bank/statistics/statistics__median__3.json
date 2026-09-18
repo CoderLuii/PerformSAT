@@ -1,0 +1,65 @@
+{
+  "id": 3,
+  "question": "A monitoring station recorded the wind speed, in kilometers per hour, on each of $27$ days. The table gives each recorded speed and the number of days on which it occurred. What is the median of the $27$ recorded speeds?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Wind speed (km/h)",
+        "Number of days"
+      ],
+      "rows": [
+        [
+          "11",
+          "8"
+        ],
+        [
+          "13",
+          "2"
+        ],
+        [
+          "16",
+          "5"
+        ],
+        [
+          "19",
+          "3"
+        ],
+        [
+          "22",
+          "6"
+        ],
+        [
+          "25",
+          "3"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$11$"
+    },
+    {
+      "id": "C",
+      "text": "$16$"
+    },
+    {
+      "id": "D",
+      "text": "$17.5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the median of the day counts in the second column, $\\frac{3 + 5}{2}$, instead of the median of the speeds.",
+    "B": "reports the speed recorded on the most days, which is the mode.",
+    "D": "medians the six distinct speeds listed, $\\frac{16 + 19}{2}$, treating each row as a single value instead of as many days."
+  },
+  "correctAnswer": "C",
+  "hint": "Count the days as you move down the table until you reach the fourteenth one.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~40s):** With $27$ days the median is the $14$th ordered speed. Running totals of $8, 10, 15$ show the $14$th day falls in the $16$ row.\n\n**The Full Solution:**\nStep 1: There are $27$ recorded speeds, an odd count, so the median is the $14$th value in order.\nStep 2: Accumulate the day counts from the least speed up: $8$ days at $11$, then $8 + 2 = 10$ days through $13$, then $10 + 5 = 15$ days through $16$.\nStep 3: Days $11$ through $15$ in order all recorded $16$ kilometers per hour, so the $14$th value is $16$. Check: only $10$ days recorded a speed below $16$, and the five days at $16$ fill positions $11$ through $15$, which includes the $14$th. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reports the median of the day counts in the second column, $\\frac{3 + 5}{2}$, instead of the median of the speeds.\n* Choice B ($11$): reports the speed recorded on the most days, which is the mode.\n* Choice D ($17.5$): medians the six distinct speeds listed, $\\frac{16 + 19}{2}$, treating each row as a single value instead of as many days.\n\n**Test Day Takeaway:** A frequency table lists each value once but represents it many times. Add the counts to locate the middle position before reading a median."
+}

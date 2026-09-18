@@ -1,0 +1,56 @@
+{
+ "id": "bank-alg-133",
+ "question": "A river sediment program models sediment load $f(x)$, in tonnes per day, as a linear function of the day number $x$; four recorded pairs appear in the table. What load does the model give for day $12$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Day, x",
+    "Sediment load (tonnes per day)"
+   ],
+   "rows": [
+    [
+     "0",
+     "9"
+    ],
+    [
+     "2",
+     "21"
+    ],
+    [
+     "4",
+     "33"
+    ],
+    [
+     "6",
+     "45"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$54$"
+  },
+  {
+   "id": "B",
+   "text": "$72$"
+  },
+  {
+   "id": "C",
+   "text": "$81$"
+  },
+  {
+   "id": "D",
+   "text": "$90$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 9 to the day-6 value, extending by one table row instead of six days",
+  "B": "multiplies the rate by 12 and drops the starting load of 9",
+  "D": "doubles the day-6 value, treating the model as proportional"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The load rises $12$ tonnes every $2$ days, a rate of $6$ per day from a start of $9$, so $f(12) = 9 + 6(12) = 81$.\n\n**The Full Solution:**\nStep 1: From the table, the load rises from $9$ to $21$ as the day number rises from $0$ to $2$, a rate of $\\frac{12}{2} = 6$ tonnes per day; the same rate holds for the later rows.\nStep 2: At day $0$ the load is $9$, so the model is $f(x) = 9 + 6x$.\nStep 3: Evaluate at day $12$: $f(12) = 9 + 72 = 81$ tonnes per day. Check: $f(6) = 9 + 36 = 45$, which matches the last table row ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($54$): adds $9$ to the day-$6$ value, extending by one table row instead of by six days.\n* Choice B ($72$): multiplies the rate by $12$ and drops the starting load of $9$.\n* Choice D ($90$): doubles the day-$6$ value, which would be right only if the load were proportional to the day number.\n\n**Test Day Takeaway:** Build the rule from the table — rate first, then the value at $x = 0$ — before evaluating at an input the table does not list."
+}

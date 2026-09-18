@@ -1,31 +1,31 @@
 {
-  "id": 1211,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "Most early library classification systems assigned each book a single fixed place on the shelf, sorting works into a tree of ever-narrower subjects. The Indian librarian S. R. Ranganathan argued in the 1930s that this approach broke down for works that belonged to several subjects at once. He proposed instead a faceted scheme, in which a book is described by combining separate aspects—its subject matter, the form it takes, the place and period it concerns—rather than by forcing it into one branch of a fixed hierarchy. The advantage, he held, was flexibility: new combinations could be expressed without rebuilding the whole system, and a work touching several fields could be represented as such. Faceted classification is now treated as a foundational idea in the organization of information, well beyond the shelving of physical books.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Most early library classification systems sorted every book into a single fixed place within an elaborate tree of progressively narrower and narrower subject categories."
-    },
-    {
-      "id": "B",
-      "text": "Ranganathan designed his faceted classification scheme specifically to handle books that concern particular places and historical periods."
-    },
-    {
-      "id": "C",
-      "text": "Ranganathan's faceted classification describes a work by combining separate aspects rather than fixing it in one hierarchy, an idea now foundational to organizing information."
-    },
-    {
-      "id": "D",
-      "text": "Faceted classification ultimately proved far less flexible in practice than the fixed subject hierarchies it had been designed to replace."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage builds toward the claim that Ranganathan's combine-the-aspects approach replaced rigid single-place hierarchies and has become foundational. C states that. A describes only the older system the passage moves away from. B fixes on one example of the aspects (place and period) as if it were the whole purpose. D reverses the passage, which credits faceting with greater flexibility, not less."
+ "id": 1211,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "Steamships are usually said to have driven sail from the seas by the end of the nineteenth century, but the coasting schooner tells a more stubborn story. Schooners rigged fore-and-aft could be worked by unusually small crews, entered shallow harbors closed to larger vessels, and burned no coal at all. On routes where speed mattered little — carrying lumber, granite, and oysters to towns along the shore — those economies kept schooners profitable for decades after steam had captured the passenger and express trades. Maritime historians who tally harbor records find schooners still delivering bulk cargo along the northern coast well into the twentieth century, long after the age of sail had supposedly closed.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "By the end of the nineteenth century, steamships had taken over from sailing vessels of every kind the carrying of both passengers and express freight."
+  },
+  {
+   "id": "B",
+   "text": "Schooners rigged fore-and-aft could be sailed by far smaller crews than the deepwater square-rigged ships of the same era required."
+  },
+  {
+   "id": "C",
+   "text": "Because they were cheap to operate and could reach harbors steamships could not, coasting schooners stayed profitable in bulk trades long after steam ruled other routes."
+  },
+  {
+   "id": "D",
+   "text": "Maritime historians have concluded that the cost of a vessel's crew mattered more to most nineteenth-century shippers than the speed of the vessel's passage."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage's point is the schooner's stubborn survival: cheap crews, no coal, and access to shallow harbors kept the vessels profitable in slow bulk trades for decades after steam had taken the glamorous routes.\n\n**The Full Solution:**\n- The opening announces a correction to the usual story that steam simply drove out sail.\n- The middle gives the schooner's specific economies — small crews, shallow draft, no fuel cost — and the niche where they counted: slow bulk cargo like lumber, granite, and oysters.\n- The close cites harbor records showing schooners at work \"well into the twentieth century.\" C gathers the cause (cheap operation, harbor access) and the effect (long profitability in bulk trades).\n\n**Why the other choices are wrong:**\n- A: It restates the conventional story the passage sets out to complicate, and it is the setup, not the idea.\n- B: It isolates one economy (small crews) and adds a comparison with square-riggers the text never makes in that form.\n- D: It inflates the passage into a general ranking of crew cost over speed that the historians are never said to draw."
 }

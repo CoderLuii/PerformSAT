@@ -25,6 +25,7 @@
 // promise — or null once evicted so the next call re-imports.
 const chunkCache = {
   mathBank: null,
+  mathTestBank: null,
   topicQuestions: null,
   rwBank: null,
   practiceTests: null,
@@ -64,6 +65,17 @@ const loadChunk = (key, importer) => {
  */
 export const loadMathBank = () =>
   loadChunk('mathBank', () => import(/* webpackChunkName: "bank-math" */ './questions/bank'));
+
+/**
+ * Load the math TEST bank (792 recreated items flattened from the 12 math
+ * practice-test bundles + M2Easy variants) as the "bank-math-test" chunk.
+ * The diagnostic samples from this pool; drills keep using loadMathBank.
+ *
+ * @returns {Promise<typeof import('./questions/mathTestBank')>} module
+ *   namespace (getQuestionById, getQuestionsByDomain, getAllQuestions, ...)
+ */
+export const loadMathTestBank = () =>
+  loadChunk('mathTestBank', () => import(/* webpackChunkName: "bank-math-test" */ './questions/mathTestBank'));
 
 /**
  * Load the legacy topic question files (free-practice sections keyed by
@@ -125,6 +137,7 @@ export const loadTrySimilar = () =>
  */
 export const preloadCorpus = () => Promise.all([
   loadMathBank(),
+  loadMathTestBank(),
   loadTopicQuestions(),
   loadRWBank(),
   loadPracticeTests(),

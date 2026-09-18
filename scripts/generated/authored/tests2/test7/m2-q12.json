@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "An observing run is scheduled with $x$ long exposures and $y$ short exposures, and the schedule must satisfy both $5x + 2y = 26$ and $2x + 5y = 23$. How many more long exposures than short exposures does the run include?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts the equations to reach 3x - 3y = 3 but reports 3 without dividing by 3",
+  "C": "solves the system fully and reports x = 4 instead of the difference",
+  "D": "adds the equations instead of subtracting, producing 7x + 7y = 49 and reporting x + y = 7"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Subtracting the second equation from the first gives $3x-3y=3$, so $x-y=1$.\n\n**The Full Solution:**\nStep 1: Line the equations up. $5x+2y=26$ and $2x+5y=23$ have coefficients that are mirror images, which is the signal to add or subtract rather than solve.\nStep 2: Subtract. $(5x+2y)-(2x+5y)=26-23$ gives $3x-3y=3$.\nStep 3: Divide by the common factor. $3(x-y)=3$, so $x-y=1$. Check: solving fully gives $x=4$ and $y=3$, and $4-3=1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($3$): reaches $3x-3y=3$ correctly and then reports the $3$ on the right side, forgetting to divide by the factor of $3$.\n* Choice C ($4$): solves the whole system and reports $x=4$ rather than the requested difference.\n* Choice D ($7$): adds the equations instead of subtracting, getting $7x+7y=49$ and $x+y=7$ — the right technique aimed at the wrong combination.\n\n**Test Day Takeaway:** When the coefficients of a system are swapped between the two equations, adding gives $x+y$ and subtracting gives $x-y$ in one line. Check which combination is asked for before you choose the operation.\n"
+}

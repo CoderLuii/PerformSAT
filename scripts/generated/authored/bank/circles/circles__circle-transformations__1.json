@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "In the $xy$-plane, the circle $x^2 + y^2 = 49$ is translated $5$ units to the left. Which equation defines the image of the circle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x + 5)^2 + y^2 = 49$"
+  },
+  {
+   "id": "B",
+   "text": "$(x - 5)^2 + y^2 = 49$"
+  },
+  {
+   "id": "C",
+   "text": "$x^2 + (y + 5)^2 = 49$"
+  },
+  {
+   "id": "D",
+   "text": "$(x + 5)^2 + y^2 = 54$"
+  }
+ ],
+ "correctAnswer": "A",
+ "hint": "Ask what happens to the center, and only to the center.",
+ "distractorNotes": {
+  "B": "shifts right",
+  "C": "shifts vertically",
+  "D": "changes the size too"
+ },
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** The center moves from $(0, 0)$ to $(-5, 0)$ and the radius is unchanged, so the equation is $(x + 5)^2 + y^2 = 49$.\n\n**The Full Solution:**\nStep 1: The original circle has center $(0, 0)$ and radius $7$.\nStep 2: Moving $5$ units left subtracts $5$ from the $x$-coordinate, so the new center is $(-5, 0)$.\nStep 3: With $h = -5$ and $k = 0$, the equation is $(x + 5)^2 + y^2 = 49$. Check: the leftmost point moves from $(-7, 0)$ to $(-12, 0)$, exactly $5$ units left.\n\n**Why the wrong answers are tempting:**\n* Choice B ($(x - 5)^2 + y^2 = 49$): $(x - 5)^2$ puts the center at $(5, 0)$, a shift to the right.\n* Choice C ($x^2 + (y + 5)^2 = 49$): moves the circle down instead of left, changing the wrong coordinate.\n* Choice D ($(x + 5)^2 + y^2 = 54$): adds the translation distance to $r^2$, resizing a circle that should only have moved.\n\n**Test Day Takeaway:** A translation touches $h$ and $k$ and never touches $r^2$. Inside the parentheses, the sign is the opposite of the direction of travel."
+}

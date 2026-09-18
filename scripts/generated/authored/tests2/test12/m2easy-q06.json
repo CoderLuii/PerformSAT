@@ -1,0 +1,25 @@
+{
+ "id": 6,
+ "question": "A line is drawn through the two plotted points and extended downward to the right until its height is $y = -22$. What is the $x$-coordinate of the line at that height?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -2,
+     6
+    ],
+    [
+     2,
+     -2
+    ]
+   ],
+   "xMin": -6,
+   "xMax": 6,
+   "yMin": -4,
+   "yMax": 8
+  }
+ },
+ "correctAnswer": "12",
+ "explanation": "**SAT Pattern: Line from Two Points**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~30s):** The plotted points $(-2, 6)$ and $(2, -2)$ give slope $-2$ and the line $y = -2x + 2$. Setting $-2x + 2 = -22$ gives $x = 12$.\n\n**The Full Solution:**\nStep 1: Read the plotted points from the grid: $(-2, 6)$ and $(2, -2)$. The slope is $\\frac{-2 - 6}{2 - (-2)} = \\frac{-8}{4} = -2$.\nStep 2: Find the $y$-intercept using $(2, -2)$: $-2 = -2(2) + b = -4 + b$, so $b = 2$ and the line is $y = -2x + 2$.\nStep 3: Set $y = -22$: $-2x + 2 = -22$, so $-2x = -24$ and $x = 12$. Check: $-2(12) + 2 = -24 + 2 = -22$. $\\checkmark$\n\n**Common Mistakes:** Entering $-12$ (dividing $-24$ by $2$ instead of by $-2$, so a negative divided by a negative is reported as negative); entering $11$ (taking $b = 0$, as if the line passed through the origin, and solving $-2x = -22$); entering $-24$ (stopping at $-2x = -24$ and reporting that value instead of dividing by the slope).\n\n**Test Day Takeaway:** Two plotted points give you slope and intercept in two moves; write the equation once, then plug in the target $y$ rather than counting squares off the edge of the grid."
+}

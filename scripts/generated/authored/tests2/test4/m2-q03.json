@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "The length $L$, in millimeters, that a steel bridge span expands is modeled by $L = 0.5T - 4$, where $T$ is the deck temperature in degrees Celsius. For what value of $T$ is $L$ equal to $21$ millimeters more than its value when $T = 18$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$26$"
+  },
+  {
+   "id": "B",
+   "text": "$39$"
+  },
+  {
+   "id": "C",
+   "text": "$50$"
+  },
+  {
+   "id": "D",
+   "text": "$60$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the target length 26 mm instead of the temperature that produces it",
+  "B": "adds 21 to the temperature 18 instead of to the length",
+  "C": "solves 0.5T - 4 = 21, treating 21 as the length itself rather than the increase"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** $L(18) = 5$, so the target is $L = 26$. Then $0.5T = 30$ and $T = 60$.\n\n**The Full Solution:**\nStep 1: Evaluate the model at the reference temperature: $L = 0.5(18) - 4 = 9 - 4 = 5$ millimeters.\nStep 2: \"$21$ millimeters more\" shifts the output, not the input: the target is $L = 5 + 21 = 26$.\nStep 3: Solve $0.5T - 4 = 26$: $0.5T = 30$, so $T = 60$. Check: $0.5(60) - 4 = 26$, and $26 - 5 = 21$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($26$): this is the target length in millimeters, not the temperature. The question asks for $T$, and $26$ is the value of $L$.\n* Choice B ($39$): this adds $21$ to $18$, shifting the input. The phrase \"more than its value\" describes the output $L$.\n* Choice C ($50$): this solves $0.5T - 4 = 21$, using $21$ as the length rather than the increase in length. The reference value of $5$ is dropped.\n\n**Test Day Takeaway:** \"More than its value at ...\" always shifts the output. Evaluate the model at the reference input first, then add the shift, then solve."
+}

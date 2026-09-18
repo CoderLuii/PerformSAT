@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "A coach recorded the number of laps swum by each of $9$ team members: $14$, $9$, $21$, $17$, $12$, $28$, $16$, $19$, $11$. What is the median number of laps?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$9$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$16$"
+    },
+    {
+      "id": "D",
+      "text": "$18.5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the least value rather than the middle one.",
+    "B": "takes the fifth entry in the list as written, without ordering the values first.",
+    "D": "averages the least and greatest values, $\\frac{9 + 28}{2}$, which is the midrange, not the median."
+  },
+  "correctAnswer": "C",
+  "hint": "Put the nine numbers in order before you look for a middle one.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** Ordered, the values are $9, 11, 12, 14, 16, 17, 19, 21, 28$. With $9$ values the median is the fifth, $16$.\n\n**The Full Solution:**\nStep 1: Order the values from least to greatest: $9,\\ 11,\\ 12,\\ 14,\\ 16,\\ 17,\\ 19,\\ 21,\\ 28$.\nStep 2: With an odd count of $9$ values, the median is the single middle value, the fifth in the ordered list.\nStep 3: The fifth ordered value is $16$. Check: four values ($9, 11, 12, 14$) fall below it and four ($17, 19, 21, 28$) fall above it. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): reports the least value rather than the middle one.\n* Choice B ($12$): takes the fifth entry in the list as written, without ordering the values first.\n* Choice D ($18.5$): averages the least and greatest values, $\\frac{9 + 28}{2}$, which is the midrange, not the median.\n\n**Test Day Takeaway:** Median means order first. For an odd count the median is a single value from the list; for an even count it is the average of the two middle values."
+}

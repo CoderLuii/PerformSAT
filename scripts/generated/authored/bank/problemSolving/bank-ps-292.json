@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-292",
+  "question": "A conveyor belt moves at a constant speed of $45$ centimeters per second. What is this speed, in meters per minute? ($1$ meter $= 100$ centimeters; $1$ minute $= 60$ seconds.)",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.75$"
+    },
+    {
+      "id": "B",
+      "text": "$2.7$"
+    },
+    {
+      "id": "C",
+      "text": "$27$"
+    },
+    {
+      "id": "D",
+      "text": "$2{,}700$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by $60$ instead of multiplying, converting minutes to seconds backwards",
+    "B": "uses $1$ meter $= 1{,}000$ centimeters",
+    "D": "converts seconds to minutes but never centimeters to meters"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** $45 \\times 60 = 2{,}700$ centimeters per minute, and $2{,}700 \\div 100 = 27$ meters per minute.\n\n**The Full Solution:**\nStep 1: Convert the time unit. In one minute the belt moves $45 \\times 60 = 2{,}700$ centimeters, so the speed is $2{,}700$ centimeters per minute.\nStep 2: Convert the length unit: $2{,}700 \\text{ centimeters} \\times \\frac{1 \\text{ meter}}{100 \\text{ centimeters}} = 27$ meters.\nStep 3: Check with one chain of factors: $\\frac{45 \\text{ cm}}{1 \\text{ s}} \\times \\frac{60 \\text{ s}}{1 \\text{ min}} \\times \\frac{1 \\text{ m}}{100 \\text{ cm}} = \\frac{45 \\times 60}{100} = 27$ meters per minute. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.75$): $\\frac{45}{60}$, dividing by $60$; a speed per minute must be larger than the same speed per second, not smaller.\n* Choice B ($2.7$): $\\frac{2700}{1000}$, using the gram-to-kilogram factor $1{,}000$ for centimeters to meters.\n* Choice D ($2{,}700$): the speed in centimeters per minute; the length unit was never converted.\n\n**Test Day Takeaway:** Two units to change means two factors. Write both, cancel, and only then multiply."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "A sloped pipe section rises $16$ centimeters over a horizontal run of $63$ centimeters between two supports on a rack. How many centimeters longer is the sloped pipe than the horizontal run beneath it?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$16$"
+  },
+  {
+   "id": "C",
+   "text": "$49$"
+  },
+  {
+   "id": "D",
+   "text": "$65$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports the rise, 16, instead of the extra length of the pipe",
+  "C": "subtracts the rise from the slant length: 65 - 16 = 49",
+  "D": "reports the sloped pipe's full length, 65, instead of how much longer it is"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The rise and run are the legs of a right triangle, so the pipe is $\\sqrt{16^2 + 63^2} = 65$ centimeters long, which is $65 - 63 = 2$ centimeters longer than the run.\n\n**The Full Solution:**\nStep 1: The vertical rise, the horizontal run, and the pipe form a right triangle with the pipe as the hypotenuse.\nStep 2: Apply the Pythagorean theorem: $16^2 + 63^2 = 256 + 3969 = 4225$, and $\\sqrt{4225} = 65$ centimeters.\nStep 3: The question asks for the difference, not the length: $65 - 63 = 2$ centimeters. Check: $63^2 + 16^2 = 3969 + 256 = 4225 = 65^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($16$): repeats the rise; the pipe gains only $2$ centimeters over the run because the rise is small compared with it.\n* Choice C ($49$): subtracts the rise from the hypotenuse instead of subtracting the run.\n* Choice D ($65$): stops at the hypotenuse and never takes the difference the question asks for.\n\n**Test Day Takeaway:** Finish the Pythagorean theorem, then reread the last line — \"how much longer\" is a subtraction after the length, not the length itself."
+}

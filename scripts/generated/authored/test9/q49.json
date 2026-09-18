@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 2,
-  "passage": "Desert varnish is the dark, glossy coating that slowly builds up on exposed rock across many arid landscapes. The thin layers deposited on each weathered boulder ______ rich in manganese and iron, metals that bacteria appear to help draw from windblown dust over thousands of years.",
+  "passage": "The surviving corpus of ogham inscriptions, distributed across several hundred stones that stand in fields, churchyards, and museum collections from southern Ireland to Wales, ______ almost entirely of personal names and statements of descent.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "is"
-    },
-    {
-      "id": "B",
-      "text": "was"
-    },
-    {
-      "id": "C",
-      "text": "are"
-    },
-    {
-      "id": "D",
-      "text": "has been"
-    }
+    { "id": "A", "text": "consist" },
+    { "id": "B", "text": "have consisted" },
+    { "id": "C", "text": "consists" },
+    { "id": "D", "text": "are consisting" }
   ],
   "correctAnswer": "C",
-  "explanation": "The subject of the verb is \"layers,\" which is plural, so the verb must be \"are\"—choice C. The singular noun \"boulder\" sits inside the modifying phrase \"deposited on each weathered boulder\" and is not the subject. \"Is,\" \"was,\" and \"has been\" are all singular and fail to agree with \"layers.\"",
-  "_meta": {
-    "anchor": "desert varnish geochemistry"
-  }
+  "explanation": "**Choice C is correct.** The subject is the singular \"corpus,\" so the verb must be the singular \"consists\" — no matter how much plural material intervenes.\n\n**The Full Solution:**\n- The long interrupting phrase — \"distributed across several hundred stones that stand in fields, churchyards, and museum collections from southern Ireland to Wales\" — modifies \"corpus\" and contributes nothing to agreement.\n- Strip it away and the frame is simple: \"The corpus... consists almost entirely of personal names.\"\n\n**Why the other choices are wrong:**\n- A: A plural verb pulled toward the nearby plurals (\"stones,\" \"collections\") rather than the true subject.\n- B: Plural again, and the perfect implies a state that has ended or changed, which nothing in the sentence supports.\n- D: Plural, and \"consist\" is a stative verb that resists the progressive — a corpus is not in the process of consisting."
 }

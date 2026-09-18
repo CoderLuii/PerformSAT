@@ -1,0 +1,6 @@
+{
+ "question": "A bracing schedule lists $9x-c$ diagonal braces on one elevation and $4x+3c$ diagonal braces on another, and the two lists agree when $x=8$. If $c$ is a positive constant, what is its value?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Linear Equation with Variables on Both Sides**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~35s):** At $x=8$ the lists read $72-c$ and $32+3c$; setting them equal gives $40=4c$, so $c=10$.\n\n**The Full Solution:**\n\nStep 1: Substitute $x=8$ into both expressions: $9(8)-c=72-c$ and $4(8)+3c=32+3c$.\n\nStep 2: Set them equal and gather the $c$ terms on one side: $72-c=32+3c$ becomes $72-32=3c+c$, so $40=4c$.\n\nStep 3: Divide by $4$: $c=10$. Check: $72-10=62$ and $32+3(10)=62$, so both elevations list $62$ braces.\n\n**Common Mistakes:** Moving $-c$ across the equals sign without changing its sign gives $40=2c$ and $c=20$. Dividing $40$ by $3$, the coefficient on the right alone, gives about $13.3$, not a whole number of braces.\n\n**Test Day Takeaway:** Substitute the given input first; the equation then has one unknown, and every term you move across the equals sign changes sign.",
+ "id": "bank-alg-301"
+}

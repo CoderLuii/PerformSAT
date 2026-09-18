@@ -1,0 +1,29 @@
+{
+ "question": "Volcanologists model the outer edge of an ash-fall ring by $(x - 16)^2 + (y + 12)^2 = 900$, where $x$ and $y$ are kilometers east and north of a vent at the origin. What is the shortest distance, in kilometers, from the vent to the outer edge?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10$"
+  },
+  {
+   "id": "B",
+   "text": "$20$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reports the distance from the vent to the ring's center, 20",
+  "C": "reports the ring's radius, 30",
+  "D": "adds the radius to the center distance, giving the greatest distance 50"
+ },
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The vent is $\\sqrt{16^2 + 12^2} = 20$ kilometers from the center and the radius is $30$, so the vent is inside and the nearest edge point is $30 - 20 = 10$ kilometers away.\n\n**The Full Solution:**\nStep 1: Standard form gives center $(16, -12)$ and $r = \\sqrt{900} = 30$ kilometers.\nStep 2: The vent at the origin is $\\sqrt{256 + 144} = \\sqrt{400} = 20$ kilometers from the center, and $20 < 30$, so the vent lies inside the ring.\nStep 3: From an interior point the nearest edge point is $r$ minus the center distance: $30 - 20 = 10$ kilometers. Check: heading away from the center from the origin reaches the edge at $10$ kilometers and heading toward it reaches the far edge at $50$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($20$): stops at the distance from the vent to the center of the ring.\n* Choice C ($30$): reports the radius, which measures from the center, not from the vent.\n* Choice D ($50$): adds instead of subtracting, giving the greatest distance rather than the shortest.\n\n**Test Day Takeaway:** Compare the center distance with the radius first: inside means nearest $= r - d$, farthest $= r + d$.",
+ "id": "bank-geo-291"
+}

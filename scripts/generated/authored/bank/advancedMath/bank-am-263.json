@@ -1,0 +1,56 @@
+{
+ "id": "bank-am-263",
+ "question": "A registrar recorded $f(x)$, the count of student ID card replacements above a daily norm, on four days. A new campus policy tripled each of these counts, so that $g(x)=3f(x)$. What is the value of $g(2)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-9$"
+  },
+  {
+   "id": "B",
+   "text": "$-6$"
+  },
+  {
+   "id": "C",
+   "text": "$-1$"
+  },
+  {
+   "id": "D",
+   "text": "$0$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts 3 instead of multiplying by 3",
+  "C": "divides by 3 instead of multiplying by 3",
+  "D": "reads the x = 3 row instead of the x = 2 row"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertical Stretch**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The table gives $f(2)=-3$, so $g(2)=3(-3)=-9$.\n\n**The Full Solution:**\nStep 1: Locate $x=2$ in the table: $f(2)=-3$.\nStep 2: Apply the rule $g(x)=3f(x)$ at $x=2$: $g(2)=3\\cdot f(2)$.\nStep 3: Compute: $3(-3)=-9$. Check: the four values of $g$ are $18$, $-9$, $0$, and $27$ — each exactly triple the matching value of $f$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-6$): subtracts $3$ from $-3$ instead of multiplying by $3$.\n* Choice C ($-1$): divides by $3$ instead of multiplying.\n* Choice D ($0$): reads the $x=3$ row instead of the $x=2$ row.\n\n**Test Day Takeaway:** Multiplying a function by a constant scales every output, sign included — a negative output gets more negative.",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Day (x)",
+    "f(x)"
+   ],
+   "rows": [
+    [
+     "1",
+     "6"
+    ],
+    [
+     "2",
+     "-3"
+    ],
+    [
+     "3",
+     "0"
+    ],
+    [
+     "4",
+     "9"
+    ]
+   ]
+  }
+ }
+}

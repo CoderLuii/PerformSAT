@@ -1,0 +1,29 @@
+{
+ "question": "In a study of stride mechanics, the constants $a$ and $b$ satisfy $2x - 3y = a$ and $4x + y = b$, where $x$ is a stride-length measure and $y$ is a ground-contact measure recorded for the same runner. Which expression is equal to $6x - 2y$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$a - b$"
+  },
+  {
+   "id": "B",
+   "text": "$2a + b$"
+  },
+  {
+   "id": "C",
+   "text": "$a + b$"
+  },
+  {
+   "id": "D",
+   "text": "$b - a$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "subtracts the equations, which produces $-2x - 4y$ rather than $6x - 2y$",
+  "B": "doubles the first equation before adding, producing $8x - 5y$",
+  "D": "subtracts in the other order, producing $2x + 4y$"
+ },
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Adding the two equations gives $(2x + 4x) + (-3y + y) = 6x - 2y$, so $6x - 2y = a + b$.\n\n**The Full Solution:**\n\nStep 1: Compare coefficients. The target $6x - 2y$ has $x$-coefficient $6 = 2 + 4$ and $y$-coefficient $-2 = -3 + 1$.\n\nStep 2: Both match a plain sum of the two equations, each used once.\n\nStep 3: Adding the right sides gives $a + b$, so $6x - 2y = a + b$. Check with $x = 1$ and $y = 1$: $a = -1$, $b = 5$, and $6 - 2 = 4 = -1 + 5$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($a - b$): equals $(2x - 3y) - (4x + y) = -2x - 4y$, not the requested combination.\n\n* Choice B ($2a + b$): equals $8x - 5y$, since doubling the first equation overshoots the $x$-coefficient.\n\n* Choice D ($b - a$): equals $2x + 4y$, the negative of choice A.\n\n**Test Day Takeaway:** Read the target's coefficients as an addition problem on the two equations' coefficients; the multipliers you need are visible before any arithmetic.",
+ "id": "bank-alg-262"
+}

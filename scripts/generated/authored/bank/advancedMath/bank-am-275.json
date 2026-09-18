@@ -1,0 +1,49 @@
+{
+  "question": "Interest on a $\\$2{,}400$ store-card balance is charged at $6\\%$ per year, compounded monthly. The first three monthly balances appear in the table. To the nearest dollar, what will the balance be one year after the charge?",
+  "questionTable": {
+    "headers": [
+      "Months",
+      "Balance (dollars)"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$2{,}412.00$"
+      ],
+      [
+        "$2$",
+        "$2{,}424.06$"
+      ],
+      [
+        "$3$",
+        "$2{,}436.18$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\$2{,}436$"
+    },
+    {
+      "id": "B",
+      "text": "$\\$2{,}544$"
+    },
+    {
+      "id": "C",
+      "text": "$\\$2{,}548$"
+    },
+    {
+      "id": "D",
+      "text": "$\\$4{,}829$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reported the last value in the table, the balance after 3 months",
+    "B": "applied the annual rate once, computing 2400 times 1.06",
+    "D": "used 6 percent as the monthly rate, computing 2400 times 1.06 to the twelfth power"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The monthly factor is $1.005$, so after $12$ months the balance is $2400(1.005)^{12}\\approx \\$2{,}548$.\n\n**The Full Solution:**\nStep 1: The monthly rate is $\\dfrac{0.06}{12}=0.005$, matching the table: $2400\\cdot 1.005=2{,}412.00$.\nStep 2: After $12$ months the balance is $2400(1.005)^{12}$.\nStep 3: Since $(1.005)^{12}=1.06168$, the balance is $\\$2{,}548.03$, or $\\$2{,}548$ to the nearest dollar. Check: this is slightly more than $6\\%$ of $\\$2{,}400$ added on, as compounding requires ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\$2{,}436$): reports the last value in the table, the balance after $3$ months.\n* Choice B ($\\$2{,}544$): applies the annual rate once, computing $2400(1.06)$.\n* Choice D ($\\$4{,}829$): uses $6\\%$ as the monthly rate, computing $2400(1.06)^{12}$.\n\n**Test Day Takeaway:** Monthly compounding divides the annual rate by $12$ and raises to the number of months — the two must change together.",
+  "id": "bank-am-275"
+}

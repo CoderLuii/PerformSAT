@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-334",
+ "question": "The splitter plate in a wind tunnel has the right-triangular face drawn here, with the right angle at $Q$ and the hypotenuse marked in centimeters. The three edges of the face total $56$ centimeters, and neither leg is labeled. What is the value of $\\cos R$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     7
+    ]
+   ],
+   "labels": [
+    "P",
+    "Q",
+    "R"
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "25"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{7}{25}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{7}{24}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{24}{25}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{25}{7}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports tan R = 7/24, opposite over adjacent for the wrong pairing",
+  "C": "reports sin R = 24/25, the leg opposite R over the hypotenuse",
+  "D": "inverts cos R, giving hypotenuse over adjacent"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Trig Ratio from Perimeter**\n\n**Choice A is correct.**\n\n**The Fast Way (~60s):** The legs sum to $31$ and their squares sum to $625$, so their product is $\\frac{31^2 - 625}{2} = 168$, giving legs $7$ and $24$ and $\\cos R = \\frac{7}{25}$.\n\n**The Full Solution:**\nStep 1: Call the legs $a$ and $b$. The perimeter gives $a + b = 56 - 25 = 31$, and the Pythagorean theorem gives $a^2 + b^2 = 25^2 = 625$.\nStep 2: Since $(a+b)^2 = a^2 + 2ab + b^2$, we get $961 = 625 + 2ab$, so $ab = 168$. The legs are the solutions of $t^2 - 31t + 168 = 0$, which factors as $(t-7)(t-24) = 0$, so the legs are $7$ and $24$ centimeters.\nStep 3: Angle $R$ sits between $\\overline{QR}$ and the hypotenuse $\\overline{RP} = 25$. The figure shows $\\overline{QR}$ as the shorter leg, $7$, so $\\cos R = \\frac{7}{25}$.\n\nCheck: $7 + 24 + 25 = 56$ and $7^2 + 24^2 = 49 + 576 = 625$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{7}{24}$): divides the two legs, which gives $\\tan R$ rather than a cosine.\n* Choice C ($\\frac{24}{25}$): uses the leg opposite $R$ over the hypotenuse, which is $\\sin R$.\n* Choice D ($\\frac{25}{7}$): inverts the ratio; a cosine can never exceed $1$.\n\n**Test Day Takeaway:** With a perimeter and a hypotenuse, $(a+b)^2 = a^2 + 2ab + b^2$ turns two facts into both legs."
+}

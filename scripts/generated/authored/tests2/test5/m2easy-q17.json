@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "A chemist starts with $m$ milliliters of stock solution, transfers $\\frac{2}{5}$ of it to flask A, then transfers $30$ milliliters of what remains to flask B, and finally discards half of what is still in the original container. Which expression gives the number of milliliters left in the original container?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3}{10}m - 15$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{10}m - 30$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{1}{5}m - 15$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{3}{5}m - 30$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "halves only the m term and carries the 30 through unhalved",
+  "C": "halves the 2/5 that went to flask A instead of the 3/5 that stayed behind",
+  "D": "stops after the transfer to flask B and never discards half"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Word-to-Expression Translation**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** After flask A, $\\frac{3}{5}m$ remains; after flask B, $\\frac{3}{5}m - 30$; halving that gives $\\frac{3}{10}m - 15$.\n\n**The Full Solution:**\nStep 1: Transferring $\\frac{2}{5}$ of the stock leaves $1 - \\frac{2}{5} = \\frac{3}{5}$ of it, so $\\frac{3}{5}m$ milliliters stay in the container.\nStep 2: Removing $30$ milliliters more leaves $\\frac{3}{5}m - 30$.\nStep 3: Discarding half leaves half of that: $\\frac{1}{2}\\left(\\frac{3}{5}m - 30\\right) = \\frac{3}{10}m - 15$; check with $m = 100$: $60$ remain, then $30$, then $15$, and $\\frac{3}{10}(100) - 15 = 15$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{3}{10}m - 30$): halves the fraction but forgets that the $30$ milliliters already removed is inside the parentheses too; at $m = 100$ it gives $0$ instead of $15$.\n* Choice C ($\\frac{1}{5}m - 15$): halves $\\frac{2}{5}m$, the amount that left for flask A, rather than the $\\frac{3}{5}m$ that stayed; at $m = 100$ it gives $5$.\n* Choice D ($\\frac{3}{5}m - 30$): tracks the first two transfers correctly and then stops, ignoring the final instruction to discard half; at $m = 100$ it gives $30$.\n\n**Test Day Takeaway:** Translate one clause at a time, keeping a running expression for what is left — and when a fraction acts on everything so far, put the whole expression in parentheses first."
+}

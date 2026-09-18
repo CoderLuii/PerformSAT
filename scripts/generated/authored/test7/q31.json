@@ -1,31 +1,31 @@
 {
-  "id": 731,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "In a lithium-ion battery, charging and discharging depend on lithium ions shuttling between two electrodes through a liquid called the electrolyte. If the electrolyte breaks down at high voltage, the ions can no longer travel freely, and the cell's capacity ______ with each charging cycle. Chemists therefore search for electrolyte formulas that stay stable across the full range of voltages a battery meets in use.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "stabilizes"
-    },
-    {
-      "id": "B",
-      "text": "fluctuates"
-    },
-    {
-      "id": "C",
-      "text": "recovers"
-    },
-    {
-      "id": "D",
-      "text": "diminishes"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. A broken-down electrolyte blocks the ions' movement, so the battery's capacity steadily \"diminishes\" — decreases — cycle after cycle. \"Stabilizes\" wrongly suggests the capacity holds steady, \"recovers\" implies improvement that the passage rules out, and \"fluctuates\" describes irregular up-and-down change rather than the consistent decline that follows electrolyte breakdown."
+ "id": 731,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "Cork is harvested by stripping the cork oak's thick outer bark in sheets, a layer the living tree regrows over the following decade. Because the harvest removes no living wood beneath the bark, a skilled crew ______ the tree itself, and a single oak may yield a dozen harvests across a productive life of nearly two centuries.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "prunes"
+  },
+  {
+   "id": "B",
+   "text": "examines"
+  },
+  {
+   "id": "C",
+   "text": "cultivates"
+  },
+  {
+   "id": "D",
+   "text": "spares"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** \"Because the harvest removes no living wood\" sets up the consequence: the crew leaves the tree unharmed — \"spares\" it — which is why one oak can be harvested a dozen times over two centuries.\n\n**The Full Solution:**\n- The causal clue: nothing living is removed, so the tree survives the harvest intact.\n- The follow-on clause depends on that survival — repeated harvests across a productive life of nearly two centuries.\n- \"Spares\" means to refrain from harming, exactly the relationship between crew and tree.\n\n**Why the other choices are wrong:**\n- B: \"Examines\" would have the crew inspecting the tree, but the sentence is about the harvest's effect on it, not an inspection.\n- A: \"Prunes\" means cutting living branches away — precisely the kind of removal the sentence rules out.\n- C: \"Cultivates\" means to tend and raise a plant over time, a broader activity than the harvesting the clause describes."
 }

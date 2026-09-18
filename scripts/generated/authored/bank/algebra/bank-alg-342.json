@@ -1,0 +1,52 @@
+{
+  "id": "bank-alg-342",
+  "question": "The table shows the total amount paid, in dollars, for renting a storage locker for $1$, $2$, and $3$ months. The total consists of a one-time deposit plus a constant monthly rate. Which function $f$ gives the total amount paid, in dollars, for $m$ months?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Months",
+        "Total paid (dollars)"
+      ],
+      "rows": [
+        [
+          "1",
+          "65"
+        ],
+        [
+          "2",
+          "100"
+        ],
+        [
+          "3",
+          "135"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(m) = 30m + 35$"
+    },
+    {
+      "id": "B",
+      "text": "$f(m) = 35m + 65$"
+    },
+    {
+      "id": "C",
+      "text": "$f(m) = 65m$"
+    },
+    {
+      "id": "D",
+      "text": "$f(m) = 35m + 30$"
+    }
+  ],
+  "correctAnswer": "D",
+  "distractorNotes": {
+    "A": "swapped the deposit and the monthly rate",
+    "B": "used the 1-month total as the deposit",
+    "C": "assumed the total is proportional to months"
+  },
+  "explanation": "**SAT Pattern: Linear Cost Model**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Each added month costs $35$ ($65 \\to 100 \\to 135$), so the deposit is $65 - 35 = 30$ and $f(m) = 35m + 30$.\n\n**The Full Solution:**\nStep 1: The monthly rate is the constant difference between consecutive rows: $100 - 65 = 35$ and $135 - 100 = 35$.\nStep 2: The deposit is the amount at $0$ months: $65 - 35 = 30$.\nStep 3: Rate times months plus deposit: $f(m) = 35m + 30$.\nCheck: $f(3) = 35(3) + 30 = 135$, matching the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($f(m) = 30m + 35$): swaps the two numbers, charging $\\$30$ per month with a $\\$35$ deposit; $f(2)$ would be $95$, not $100$.\n* Choice B ($f(m) = 35m + 65$): takes the $1$-month total as the deposit, double-counting the first month.\n* Choice C ($f(m) = 65m$): assumes proportionality; $f(2)$ would be $130$, not $100$.\n\n**Test Day Takeaway:** Test a candidate function against a table row other than the first; the wrong intercept shows up immediately."
+}

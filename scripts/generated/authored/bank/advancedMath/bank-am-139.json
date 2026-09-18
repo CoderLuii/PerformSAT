@@ -1,0 +1,6 @@
+{
+  "question": "An extruder controller is tuned by choosing the positive constant $k$ for which the equation $kx^{2}+20x+k=0$ has a repeated solution rather than two distinct solutions. What is the value of $k$?",
+  "correctAnswer": "10",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~20s):** A repeated solution means the discriminant is $0$; here $a=c=k$, so $400-4k^{2}=0$, $k^{2}=100$, and $k=10$.\n\n**The Full Solution:**\nStep 1: The coefficients are $a=k$, $b=20$, and $c=k$, so the discriminant is $20^{2}-4(k)(k)=400-4k^{2}$.\nStep 2: One repeated solution instead of two distinct ones means the discriminant equals $0$: $4k^{2}=400$, so $k^{2}=100$.\nStep 3: Since $k$ is positive, $k=10$. Check: $10x^{2}+20x+10=10(x+1)^{2}$, whose only solution is $x=-1$ ✓\n\n**Common Mistakes:**\n* $100$: solved $400=4k$, treating the two appearances of $k$ as one.\n* $-10$: took the negative square root although $k$ is given as positive.\n* $5$: divided $400$ by $4$ and then by $20$ instead of taking a square root.\n\n**Test Day Takeaway:** When the same parameter sits in two coefficients, $4ac$ becomes a square — expect a square root, not a linear solve.",
+  "id": "bank-am-139"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-423",
+  "question": "A reservoir has a capacity of $4{,}500$ acre-feet and currently holds $2{,}970$ acre-feet of water. The current volume of water is what percent of the capacity of the reservoir?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6.6\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$34\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$66\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$151.5\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies the quotient by $10$ instead of $100$.",
+    "B": "gives the percent of the capacity that is still empty.",
+    "D": "inverts the ratio, dividing the capacity by the current volume."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** $\\frac{2{,}970}{4{,}500}=0.66$, and $0.66\\times 100=66$, so the reservoir is at $66\\%$ of capacity.\n\n**The Full Solution:**\nStep 1: The current volume is the part and the capacity is the whole, so the percent is $\\frac{2{,}970}{4{,}500}\\times 100$.\nStep 2: $\\frac{2{,}970}{4{,}500}=\\frac{33}{50}=0.66$.\nStep 3: $0.66\\times 100=66$, so $66\\%$. Check: $0.66\\times 4{,}500=2{,}970$ acre-feet. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6.6\\%$): shifts the decimal point only one place, multiplying by $10$ rather than $100$.\n* Choice B ($34\\%$): uses the $1{,}530$ acre-feet of unused capacity, the percent still empty.\n* Choice D ($151.5\\%$): computes $\\frac{4{,}500}{2{,}970}$, dividing the whole by the part.\n\n**Test Day Takeaway:** Identify the whole from the phrase \"percent of.\" Whatever follows \"of\" is the denominator."
+}

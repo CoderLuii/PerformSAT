@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-238",
+  "question": "A district wants to determine whether a new after-school tutoring program causes an increase in reading scores. Which study design would best support a cause-and-effect conclusion?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Compare the end-of-year reading scores of students who chose to enroll in the program with the scores of students who did not enroll."
+    },
+    {
+      "id": "B",
+      "text": "Survey teachers in the district about whether they believe the program improves reading scores."
+    },
+    {
+      "id": "C",
+      "text": "Randomly assign student volunteers to either the tutoring program or no tutoring, then compare their end-of-year reading scores."
+    },
+    {
+      "id": "D",
+      "text": "Record the reading scores of the students in the program in September and again in June, then note whether the scores increased."
+    }
+  ],
+  "distractorNotes": {
+    "A": "lets students select their own group, so the groups may differ from the start",
+    "B": "collects opinions rather than outcome data",
+    "D": "has no comparison group, so ordinary growth over the year is not ruled out"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Observational vs Experimental Study**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Only random assignment to a treatment and a control group supports a cause-and-effect conclusion.\n\n**The Full Solution:**\nStep 1: A causal conclusion requires groups that are comparable before the treatment begins.\nStep 2: Random assignment produces comparable groups, so any later difference in scores is attributable to the tutoring.\nStep 3: A control group of students who receive no tutoring is also required, so that normal growth over the school year is accounted for. Choice C has both features. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: students who choose tutoring may already differ in motivation or prior achievement, so the comparison is confounded.\n* Choice B: teacher beliefs are opinions, not measurements of reading scores.\n* Choice D: with no untreated group, an increase could simply reflect a year of ordinary reading growth.\n\n**Test Day Takeaway:** For causation, look for two words in the design: randomly assigned, and a control group."
+}

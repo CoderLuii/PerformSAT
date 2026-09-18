@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-073",
+  "question": "The number of bird nests counted at a wetland preserve decreased from $450$ in one year to $360$ in the following year. The number of nests decreased by $p\\%$. What is the value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20$"
+    },
+    {
+      "id": "B",
+      "text": "$25$"
+    },
+    {
+      "id": "C",
+      "text": "$80$"
+    },
+    {
+      "id": "D",
+      "text": "$90$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides the drop by the new count (90/360)",
+    "C": "reports the remaining percent (360/450)",
+    "D": "reports the raw number of nests lost"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The drop is $450 - 360 = 90$ nests out of the original $450$: $\\frac{90}{450} = 0.20$, so $p = 20$.\n\n**The Full Solution:**\nStep 1: Percent decrease $= \\frac{\\text{original} - \\text{new}}{\\text{original}} \\times 100$, with the ORIGINAL count $450$ as the base.\nStep 2: The decrease is $450 - 360 = 90$, and $\\frac{90}{450} = \\frac{1}{5} = 0.20$.\nStep 3: So $p = 20$. Check: $20\\%$ of $450$ is $90$, and $450 - 90 = 360$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($25$): divides the $90$-nest drop by the NEW count, $\\frac{90}{360} = 0.25$.\n* Choice C ($80$): reports what remains, $\\frac{360}{450} = 80\\%$, rather than what was lost.\n* Choice D ($90$): reports the number of nests lost, not the percent.\n\n**Test Day Takeaway:** Percent change uses the starting value as the base every time, whether the quantity rose or fell."
+}

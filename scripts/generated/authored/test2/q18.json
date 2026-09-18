@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 1,
-  "passage": "In her 1997 book A Taste for Pop: Pop Art, Gender, and Consumer Culture, the University of California, Irvine, art historian Cécile Whiting reexamines a body of postwar American painting that had long been read as detached commentary on the marketplace. Whiting's analyses of mid-century consumer culture ______ that Pop Art's celebrated images of supermarket goods and cosmetics were entangled with public debates about feminine consumption.",
+  "passage": "Twice a day, at hundreds of stations around the world, meteorologists release balloons carrying instrument packages called radiosondes. As it rises through the atmosphere, each package ______ temperature, humidity, and pressure readings back to the station below, giving forecast models a three-dimensional snapshot of the air above.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "shows"
+      "text": "have radioed"
     },
     {
       "id": "B",
-      "text": "has shown"
+      "text": "radio"
     },
     {
       "id": "C",
-      "text": "showing"
+      "text": "are radioing"
     },
     {
       "id": "D",
-      "text": "show"
+      "text": "radios"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The subject of the verb is the plural noun 'analyses,' which requires the plural verb 'show.' The intervening prepositional phrase 'of mid-century consumer culture' contains the singular noun 'culture,' but a prepositional phrase placed between a subject and its verb does not change the number of the subject. A plural subject takes a plural verb regardless of intervening singular modifiers, so 'Whiting's analyses.. show' is the correct construction."
+  "explanation": "**Choice D is correct.** The subject of the blank is the singular \"each package,\" so the verb must take the singular form \"radios.\"\n\n**The Full Solution:**\n- Find the subject: the clause is \"each package ______ temperature, humidity, and pressure readings.\" The subject is \"each package.\"\n- \"Each\" is grammatically singular even when many packages exist in the world; a singular subject requires a singular present-tense verb.\n- \"Radios\" is the third-person singular form, agreeing with \"each package\" and matching the present-tense frame of the surrounding sentences (\"meteorologists release,\" \"As it rises\").\n\n**Why the other choices are wrong:**\n- A: \"have radioed\" is a plural verb form and shifts into the perfect tense, breaking both agreement with the singular \"each package\" and the passage's present-tense narration.\n- B: \"radio\" is the plural present form; it would suit \"the packages radio\" but not the singular \"each package.\"\n- C: \"are radioing\" is plural; the singular counterpart (\"is radioing\") is not offered, and the plural form cannot pair with \"each package.\""
 }

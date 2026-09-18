@@ -1,0 +1,49 @@
+{
+  "id": 1,
+  "question": "A theater sold $240$ tickets for a concert and collected $\\$4{,}500$ from these tickets. The table gives the price of each type of ticket. Which system of equations, where $x$ is the number of balcony tickets sold and $y$ is the number of floor tickets sold, represents this situation?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Ticket type",
+        "Price (dollars)"
+      ],
+      "rows": [
+        [
+          "Balcony",
+          "15"
+        ],
+        [
+          "Floor",
+          "24"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$x + y = 240$ and $15x + 24y = 4500$"
+    },
+    {
+      "id": "B",
+      "text": "$x + y = 4500$ and $15x + 24y = 240$"
+    },
+    {
+      "id": "C",
+      "text": "$x + y = 240$ and $24x + 15y = 4500$"
+    },
+    {
+      "id": "D",
+      "text": "$x + y = 240$ and $39(x + y) = 4500$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "assigns the dollar total to the count equation and the ticket total to the revenue equation, swapping the two constants.",
+    "C": "attaches each price to the wrong variable, charging $\\$24$ for balcony tickets and $\\$15$ for floor tickets.",
+    "D": "adds the two prices and applies the sum to every ticket, which would be correct only if each buyer bought one of each type."
+  },
+  "correctAnswer": "A",
+  "hint": "One equation should count tickets and the other should total dollars.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~25s):** Tickets give $x + y = 240$; dollars give $15x + 24y = 4500$, since each balcony ticket brings $\\$15$ and each floor ticket $\\$24$.\n\n**The Full Solution:**\nStep 1: The number of tickets sold is $x + y$, and that total is $240$, so $x + y = 240$.\nStep 2: Balcony tickets bring in $15x$ dollars and floor tickets bring in $24y$ dollars.\nStep 3: The revenue equation is therefore $15x + 24y = 4500$. Check: $x = 140$ and $y = 100$ satisfy both equations, since $140 + 100 = 240$ and $15(140) + 24(100) = 2100 + 2400 = 4500$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: assigns the dollar total to the count equation and the ticket total to the revenue equation, swapping the two constants.\n* Choice C: attaches each price to the wrong variable, charging $\\$24$ for balcony tickets and $\\$15$ for floor tickets.\n* Choice D: adds the two prices and applies the sum to every ticket, which would be correct only if each buyer bought one of each type.\n\n**Test Day Takeaway:** Build one equation per quantity being totaled: a count equation and a money equation. Keep each price attached to its own variable."
+}

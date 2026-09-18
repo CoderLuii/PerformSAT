@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-173",
+ "question": "A judging rule converts a raw score by applying $h(x) = x^2 - 1$ first and then applying $f(x) = 3x + 2$ to the result of that first step. When the raw score is $3$, what number does the rule report?",
+ "correctAnswer": "26",
+ "explanation": "**SAT Pattern: Function Composition**\n\n**The correct answer is $26$.**\n\n**The Fast Way (~15s):** $h(3) = 8$, and then $f(8) = 3(8) + 2 = 26$.\n\n**The Full Solution:**\nStep 1: Apply $h$ to the input: $h(3) = 3^2 - 1 = 8$.\nStep 2: Feed that output into $f$: $f(8) = 3(8) + 2$.\nStep 3: That equals $24 + 2 = 26$. Check: reversing the order would give $h(f(3)) = h(11) = 120$, a different number, so the order matters ✓\n\n**Common Mistakes:**\n* $11$ — computing $f(3)$ and stopping, which applies only the outer rule.\n* $120$ — applying the two rules in the reverse order, $h(f(3))$.\n\n**Test Day Takeaway:** The function named first in \"apply $h$ first\" is the INNER one; composition is not commutative, so the order is the whole question."
+}

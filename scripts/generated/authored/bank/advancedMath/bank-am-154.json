@@ -1,0 +1,60 @@
+{
+ "id": "bank-am-154",
+ "question": "During a load test, a crew recorded the five readings shown in the table, one at each marked position along a beam, and a quadratic function $f$ fits all five readings exactly. What is the value of $f(-6)$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Position x (m)",
+    "Reading f(x)"
+   ],
+   "rows": [
+    [
+     "-4",
+     "21"
+    ],
+    [
+     "-2",
+     "5"
+    ],
+    [
+     "0",
+     "-3"
+    ],
+    [
+     "2",
+     "-3"
+    ],
+    [
+     "4",
+     "5"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$21$"
+  },
+  {
+   "id": "B",
+   "text": "$37$"
+  },
+  {
+   "id": "C",
+   "text": "$45$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "sign slip on the linear term: computes 36 - 12 - 3 = 21 instead of 36 + 12 - 3",
+  "B": "extends the constant first difference 16 backwards from 21 instead of the growing differences",
+  "D": "drops the constant term -3, computing 36 + 12 = 48"
+ },
+ "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The equal readings at $x=0$ and $x=2$ put the vertex at $x=1$, and $f(x)=x^{2}-2x-3$ fits the table, so $f(-6)=36+12-3=45$.\n\n**The Full Solution:**\nStep 1: The readings at $x=0$ and $x=2$ are both $-3$, so the axis of symmetry is $x=1$ and $f(x)=a(x-1)^{2}+k$.\nStep 2: From $f(0)=-3$, $a+k=-3$; from $f(4)=5$, $9a+k=5$. Subtracting gives $8a=8$, so $a=1$ and $k=-4$, which means $f(x)=x^{2}-2x-3$.\nStep 3: Evaluate at the negative input: $f(-6)=36-2(-6)-3=36+12-3=45$. Check: $f(-4)=16+8-3=21$, matching the table ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($21$): computes $36-12-3$, dropping the sign change that $-2(-6)$ produces.\n* Choice B ($37$): continues the first difference of $16$ one more step, $21+16$, as if the readings were linear.\n* Choice D ($48$): stops at $36+12$ and never subtracts the constant 3.\n\n**Test Day Takeaway:** Two equal outputs locate the axis of symmetry; once the rule is known, a negative input is a straight substitution."
+}

@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
-  "passage": "Historians studying American housing have examined why neighborhoods that were predominantly Black received far less mortgage lending in the mid-twentieth century. A common explanation pointed to the prejudices of individual bankers. Drawing on government maps from the 1930s, one influential account argues that the pattern was more systematic than that: federal agencies graded neighborhoods for lending risk and shaded majority-Black areas in red, and that official grading, later called redlining, went on to shape private lending for decades, embedding the disparity in routine institutional practice rather than leaving it to individual bias.",
+  "passage": "Between the 1890s and the 1950s, several major cities moved mail through networks of underground pneumatic tubes, firing canisters between post offices on jets of compressed air at speeds no street traffic could match. New York's system alone once carried a substantial share of the city's first-class mail. Yet the networks were fantastically expensive to extend — every new destination meant digging — and each canister held only a few pounds. As trucks grew faster and cheaper and mail volumes swelled beyond what narrow tubes could pass, city after city let its system fall silent; the last major American network shut down in 1953.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "Government maps drawn in the 1930s graded American neighborhoods according to their perceived risk for mortgage lending, shading some areas in red on the basis of who lived in them."
+      "text": "New York's pneumatic tube network was the largest in the world and once carried a substantial share of the city's mail."
     },
     {
       "id": "B",
-      "text": "Individual bankers' prejudices fully account for why majority-Black neighborhoods received less mortgage lending in the mid-twentieth century."
+      "text": "Pneumatic tubes moved mail faster than any technology that has replaced them."
     },
     {
       "id": "C",
-      "text": "Historians disagree about whether federal housing agencies kept accurate records of their lending decisions."
+      "text": "Cities abandoned pneumatic mail because compressed air proved too costly to generate."
     },
     {
       "id": "D",
-      "text": "One account argues that federal risk-grading maps embedded lending disparities in routine institutional practice, making the pattern more systematic than individual bias alone."
+      "text": "Though fast, pneumatic mail networks were too costly and limited in capacity to survive competition from improving alternatives."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage sets the individual-prejudice explanation against a more systematic account in which federal risk-grading maps shaped lending for decades, and that systematic account is the point it develops. Choice D states it. Choice A reports a single supporting detail, the existence of the maps, without the argument built on it. Choice B restates the explanation the passage moves beyond, and choice C invents a dispute about record-keeping that the text never raises."
+  "explanation": "**Choice D is correct.** The text grants the tubes their speed, then explains their fatal weaknesses — expansion costs and tiny capacity — and their loss to cheaper, faster trucks: a rise-and-fall whose cause D states.\n\n**The Full Solution:**\n- The \"Yet\" sentence is the hinge: expense (\"every new destination meant digging\") and capacity (\"only a few pounds\") are the limits.\n- The final sentence supplies the competitive pressure (better trucks, swelling volumes) and the outcome (systems falling silent).\n- D binds speed, cost, capacity, and competition into the single idea the passage develops.\n\n**Why the other choices are wrong:**\n- A: The text notes New York's share but never calls its network the world's largest — and either way, one city's system is a detail, not the idea.\n- B: The text says street traffic of the era couldn't match the tubes; it makes no claim about later technologies.\n- C: The stated costs are digging new lines, not generating compressed air — C invents a cause the text doesn't give."
 }

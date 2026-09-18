@@ -1,0 +1,48 @@
+{
+ "id": "bank-alg-383",
+ "question": "On a sleep-lab sensor grid modeled by the $xy$-plane, the two points shown are the electrode positions $P$ and $Q$. The midpoint of $\\overline{PQ}$ lies on the line $y = kx$. What is the value of $k$?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -8,
+     -2
+    ],
+    [
+     4,
+     10
+    ]
+   ],
+   "xMin": -10,
+   "xMax": 6,
+   "yMin": -4,
+   "yMax": 12
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{1}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$1$"
+  },
+  {
+   "id": "D",
+   "text": "$2$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "computes x divided by y at the midpoint instead of y divided by x",
+  "C": "reports the slope of segment PQ instead of the ratio at the midpoint",
+  "D": "drops the negative sign when dividing 4 by -2"
+ },
+ "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The midpoint of $(-8, -2)$ and $(4, 10)$ is $(-2, 4)$, and $4 = k(-2)$ gives $k = -2$.\n\n**The Full Solution:**\n\nStep 1: Read the electrodes: $P$ is at $(-8, -2)$ and $Q$ is at $(4, 10)$.\n\nStep 2: The midpoint is $\\left(\\frac{-8 + 4}{2}, \\frac{-2 + 10}{2}\\right) = (-2, 4)$.\n\nStep 3: A point lies on $y = kx$ when its coordinates satisfy the equation, so $4 = k(-2)$ and $k = -2$. Check: $-2(-2) = 4$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($-\\frac{1}{2}$): divides the midpoint's $x$-coordinate by its $y$-coordinate, $\\frac{-2}{4}$, reversing the ratio.\n* Choice C ($1$): computes the slope of $\\overline{PQ}$, $\\frac{10 - (-2)}{4 - (-8)}$, which is the slope of the segment, not of the line through the origin and the midpoint.\n* Choice D ($2$): divides $4$ by $-2$ but drops the negative sign.\n\n**Test Day Takeaway:** A point on $y = kx$ forces $k = \\frac{y}{x}$ at that point; find the point first, then substitute."
+}

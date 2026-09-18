@@ -1,0 +1,56 @@
+{
+ "question": "The table gives the number of fasteners installed by two crews after $p$ wall sections, where the first crew installs $4(p+3)$ fasteners and the second installs $4p+15$. For how many values of $p$ do the two totals agree?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Wall sections",
+    "First crew",
+    "Second crew"
+   ],
+   "rows": [
+    [
+     "1",
+     "16",
+     "19"
+    ],
+    [
+     "4",
+     "28",
+     "31"
+    ],
+    [
+     "8",
+     "44",
+     "47"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "No values of $p$"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one value of $p$"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two values of $p$"
+  },
+  {
+   "id": "D",
+   "text": "Every value of $p$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "cancels the 4p terms and then solves the leftover 12 = 15 as if it were an equation in p",
+  "C": "expects two crossings, which two lines with equal slopes can never have",
+  "D": "reads 4(p+3) as 4p+15 and concludes the two expressions are identical"
+ },
+ "explanation": "**SAT Pattern: Identifying Identity / Contradiction Equations**\n\n**Choice A is correct.** Distributing gives $4p+12$, so the second crew is always $3$ fasteners ahead and the totals never agree.\n\n**The Fast Way (~25s):** $4(p+3)=4p+12$, and $4p+12=4p+15$ reduces to $12=15$, which is false.\n\n**The Full Solution:**\n\nStep 1: Distribute the first crew's expression: $4(p+3)=4p+12$.\n\nStep 2: Set the totals equal: $4p+12=4p+15$. Subtracting $4p$ from both sides removes the variable and leaves $12=15$.\n\nStep 3: That statement is false, so no value of $p$ makes the totals agree. Check the table: the gap is $19-16=3$, $31-28=3$, and $47-44=3$, constant at $3$ for every row.\n\n**Why the wrong answers are tempting:**\n\n* Choice B (Exactly one value of $p$): treats the leftover $12=15$ as an equation still to be solved for $p$.\n* Choice C (Exactly two values of $p$): expects the totals to cross twice, impossible for two expressions with the same coefficient of $p$.\n* Choice D (Every value of $p$): assumes distributing must make the two sides identical, ignoring that $12$ and $15$ differ.\n\n**Test Day Takeaway:** Equal variable coefficients with unequal constants means the two sides run parallel forever: no solution.",
+ "id": "bank-alg-393"
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-237",
+ "question": "A wind farm's cost curve is modeled by $y=ax^2+2x+3$ for a nonzero constant $a$, and its revenue line by $y=10x-1$. The line is tangent to the curve. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves 64 + 16a = 0 after mis-signing the constant term",
+  "C": "computes the constant term as 3 - 1 = 2, giving 64 - 8a = 0",
+  "D": "uses ac instead of 4ac, solving 64 = 4a"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** Equating gives $ax^2-8x+4=0$; tangency forces $64-16a=0$, so $a=4$.\n\n**The Full Solution:**\nStep 1: Set $ax^2+2x+3=10x-1$, which rearranges to $ax^2-8x+4=0$ since $3-(-1)=4$.\nStep 2: Tangency means the discriminant is $0$: $(-8)^2-4(a)(4)=0$, or $64-16a=0$.\nStep 3: Solve: $a=4$. Check: $4x^2-8x+4=4(x-1)^2=0$ has the single solution $x=1$, where both graphs give $y=9$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-4$): mis-signs the constant term and solves $64+16a=0$.\n* Choice C ($8$): computes the constant as $3-1=2$, producing $64-8a=0$.\n* Choice D ($16$): uses $ac$ in place of $4ac$, solving $64=4a$.\n\n**Test Day Takeaway:** Subtracting a line changes only the linear and constant terms — recheck the constant's sign before applying $b^2-4ac=0$."
+}

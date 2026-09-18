@@ -1,0 +1,29 @@
+{
+  "question": "At a triangular survey traverse, straight sight lines connect buoys $A$, $B$, and $C$, and the line from $B$ through $C$ continues past $C$ to form an exterior angle of $118^{\\circ}$ there. The interior angle at buoy $A$ measures $47^{\\circ}$. Which statement about the interior angle at buoy $B$ is true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It measures $62^{\\circ}$, since $180 - 118 = 62$."
+    },
+    {
+      "id": "B",
+      "text": "It measures $71^{\\circ}$, since $118 - 47 = 71$."
+    },
+    {
+      "id": "C",
+      "text": "It measures $133^{\\circ}$, since $180 - 47 = 133$."
+    },
+    {
+      "id": "D",
+      "text": "It measures $165^{\\circ}$, since $118 + 47 = 165$."
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "computes the interior angle at buoy C, the supplement of the exterior angle",
+    "C": "treats the angles at A and B as supplementary",
+    "D": "adds the exterior angle to the angle at A instead of subtracting"
+  },
+  "explanation": "**SAT Pattern: Exterior Angle Theorem**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The exterior angle at $C$ equals the sum of the remote interior angles at $A$ and $B$, so the angle at $B$ is $118 - 47 = 71$ degrees.\n\n**The Full Solution:**\nStep 1: The exterior angle at buoy $C$ is remote from the interior angles at $A$ and $B$, so $118 = 47 + m\\angle B$.\nStep 2: Solve: $m\\angle B = 118 - 47 = 71$ degrees.\nStep 3: Confirm with the angle sum: the interior angle at $C$ is $180 - 118 = 62$ degrees, and $47 + 71 + 62 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($62^{\\circ}$): finds the interior angle at buoy $C$ rather than at buoy $B$.\n* Choice C ($133^{\\circ}$): treats the angles at $A$ and $B$ as supplementary, which holds only for angles on a straight line.\n* Choice D ($165^{\\circ}$): adds the exterior angle to the remote angle instead of subtracting, giving a value larger than the whole triangle allows.\n\n**Test Day Takeaway:** The exterior angle equals the SUM of the two remote interior angles — subtract the known one to find the other, then confirm with the $180$-degree total.",
+  "id": "bank-geo-212"
+}

@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "An infusion bag holds $f(t) = 750 - 12.5t$ milliliters of fluid $t$ minutes after an infusion begins, and the bag is empty at $t = 60$. At minute $a$ the bag holds twice as much fluid as it does at minute $a + 20$. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$60$"
+  },
+  {
+   "id": "C",
+   "text": "$80$"
+  },
+  {
+   "id": "D",
+   "text": "$100$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "drops the 20-minute shift and solves f(a) = 2f(a), i.e. f(a) = 0, the minute the bag empties",
+  "C": "applies the factor 2 to the wrong side, solving 2f(a) = f(a + 20) and getting 80",
+  "D": "computes f(a + 20) as 1000 - 12.5a, adding the 250 mL change instead of subtracting it"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Solve $f(a) = c$**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Twenty minutes drains $12.5(20) = 250$ mL, so $f(a + 20) = f(a) - 250$. Then $f(a) = 2\\big(f(a) - 250\\big)$ gives $f(a) = 500$, and $750 - 12.5a = 500$ gives $a = 20$.\n\n**The Full Solution:**\nStep 1: Write both volumes in terms of $a$. $f(a) = 750 - 12.5a$, and $f(a + 20) = 750 - 12.5(a + 20) = 750 - 12.5a - 250 = 500 - 12.5a$.\nStep 2: Translate the condition. \"Twice as much at minute $a$ as at minute $a + 20$\" means $750 - 12.5a = 2(500 - 12.5a)$, so $750 - 12.5a = 1{,}000 - 25a$ and $12.5a = 250$, giving $a = 20$.\nStep 3: Check with the actual volumes: $f(20) = 750 - 250 = 500$ mL and $f(40) = 750 - 500 = 250$ mL, and $500 = 2(250)$. $\\checkmark$ Both minutes come before the bag empties at $t = 60$, so the answer is physically possible.\n\n**Why the wrong answers are tempting:**\n* Choice B ($60$): dropping the $+20$ turns the condition into $f(a) = 2f(a)$, which forces $f(a) = 0$ — the minute the bag runs dry, not the minute asked about.\n* Choice C ($80$): putting the $2$ on the wrong side gives $2(750 - 12.5a) = 500 - 12.5a$, so $1{,}000 = 12.5a$ and $a = 80$. That would also be after the bag is empty.\n* Choice D ($100$): treating the $20$-minute shift as $+250$ mL gives $750 - 12.5a = 2(1{,}000 - 12.5a)$, so $12.5a = 1{,}250$ and $a = 100$. A draining bag holds *less* later, not more.\n\n**Test Day Takeaway:** When a condition compares $f(a)$ with $f(a + h)$, substitute $a + h$ into the rule before writing the equation. For a linear rule the shift is a fixed amount — here $-250$ mL — and that single substitution removes every sign trap."
+}

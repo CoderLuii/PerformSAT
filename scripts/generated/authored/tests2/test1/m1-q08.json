@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "A utility company sets aside $8{,}000$ dollars in a fund that grows by one-fourth of $4\\%$ at the close of each quarter, with the growth applied to the fund's current amount. Which of the following expressions gives the amount in the fund, in dollars, $t$ years after the money was set aside?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8{,}000(1.01)^{t}$"
+  },
+  {
+   "id": "B",
+   "text": "$8{,}000(1.01)^{4t}$"
+  },
+  {
+   "id": "C",
+   "text": "$8{,}000(1.04)^{4t}$"
+  },
+  {
+   "id": "D",
+   "text": "$8{,}000(1.04)^{\\frac{t}{4}}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "divides the annual rate by 4 but leaves the exponent as t, counting only one growth period per year",
+  "C": "multiplies the exponent by 4 but never divides the 4% annual rate by 4, applying a full 4% four times a year",
+  "D": "divides the exponent by 4 instead of multiplying it, and leaves the annual rate undivided"
+ },
+ "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Each quarter the fund is multiplied by $1 + \\frac{0.04}{4} = 1.01$, and there are $4t$ quarters in $t$ years, so the amount is $8{,}000(1.01)^{4t}$.\n\n**The Full Solution:**\nStep 1: Find the growth per period. One-fourth of $4\\%$ is $1\\%$, so at the close of each quarter the fund is multiplied by $1.01$.\nStep 2: Count the periods. There are four quarters in a year, so in $t$ years the multiplier $1.01$ is applied $4t$ times.\nStep 3: Combine with the starting amount: the fund holds $8{,}000(1.01)^{4t}$ dollars. Check with $t = 1$: $8{,}000(1.01)^{4} \\approx 8{,}324.83$, a little more than the $8{,}320$ that a single yearly application of $4\\%$ would give, which is what growing four times a year should do ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8{,}000(1.01)^{t}$): uses the quarterly multiplier but only $t$ periods, so the fund grows once a year at the quarterly rate.\n* Choice C ($8{,}000(1.04)^{4t}$): counts $4t$ periods but applies the full annual $4\\%$ each time, which is four times too much growth.\n* Choice D ($8{,}000(1.04)^{\\frac{t}{4}}$): divides the exponent by $4$ rather than multiplying, which would model growth once every four years.\n\n**Test Day Takeaway:** When growth is applied $n$ times a year, divide the annual rate by $n$ and multiply the number of years by $n$; the two adjustments always move in opposite directions."
+}

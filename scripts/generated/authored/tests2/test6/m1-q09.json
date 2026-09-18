@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A knitting workshop's daily yarn cost, in dollars, is given by $4(3x + c)$, and the same cost is also given by $12x + 76$, where $x$ is the number of garments knitted and $c$ is a constant. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$19$"
+  },
+  {
+   "id": "C",
+   "text": "$76$"
+  },
+  {
+   "id": "D",
+   "text": "$304$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "matches the wrong pair of terms, dividing the coefficient 12 by 4 instead of the constant 76",
+  "C": "reads the constant 76 straight off the second expression without dividing by the factor 4",
+  "D": "multiplies 76 by 4 instead of dividing, reversing the distribution"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice B is correct.** Distributing gives $12x + 4c$, so matching constant terms yields $4c = 76$ and $c = 19$.\n\n**The Fast Way (~20s):** Expand: $4(3x + c) = 12x + 4c$. The $x$-terms already agree, so $4c = 76$ and $c = 19$.\n\n**The Full Solution:**\nStep 1: Because the two expressions give the same cost for every value of $x$, they are equivalent: $4(3x + c) = 12x + 76$.\nStep 2: Distribute on the left: $12x + 4c = 12x + 76$. Subtracting $12x$ from each side leaves $4c = 76$.\nStep 3: Divide by $4$: $c = 19$. Check by substituting: $4(3x + 19) = 12x + 76$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): this divides the coefficient $12$ by $4$, matching the $x$-terms instead of the constants. The $x$-terms match automatically here and carry no information about $c$.\n* Choice C ($76$): this copies the constant from the right side. Inside the parentheses, $c$ is multiplied by $4$ before it reaches the constant term.\n* Choice D ($304$): this multiplies by $4$ rather than dividing, undoing the distribution in the wrong direction.\n\n**Test Day Takeaway:** When two expressions are equal for every value of the variable, distribute first and then set matching coefficients equal — constants with constants, $x$-terms with $x$-terms."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-291",
+  "question": "A shipping label lists the mass of a parcel as $3{,}250$ grams. What is the mass of the parcel, in kilograms? ($1$ kilogram $= 1{,}000$ grams.)",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3.25$"
+    },
+    {
+      "id": "B",
+      "text": "$32.5$"
+    },
+    {
+      "id": "C",
+      "text": "$325$"
+    },
+    {
+      "id": "D",
+      "text": "$3{,}250{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides by $100$",
+    "C": "divides by $10$",
+    "D": "multiplies by $1{,}000$ instead of dividing"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice A is correct.**\n\n**The Fast Way (~5s):** Dividing by $1{,}000$ moves the decimal point three places to the left: $3{,}250 \\to 3.25$ kilograms.\n\n**The Full Solution:**\nStep 1: Multiply by the conversion factor written so that grams cancel: $3{,}250 \\text{ grams} \\times \\frac{1 \\text{ kilogram}}{1{,}000 \\text{ grams}}$.\nStep 2: The grams cancel and the arithmetic is $\\frac{3250}{1000} = 3.25$ kilograms.\nStep 3: Check by converting back: $3.25 \\times 1{,}000 = 3{,}250$ grams. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($32.5$): $\\frac{3250}{100}$, a two-place shift instead of three.\n* Choice C ($325$): $\\frac{3250}{10}$, a one-place shift.\n* Choice D ($3{,}250{,}000$): $3{,}250 \\times 1{,}000$; multiplying moves toward the smaller unit, but a kilogram is the larger unit.\n\n**Test Day Takeaway:** Going to a bigger unit gives a smaller number. Check the direction before touching the decimal point."
+}

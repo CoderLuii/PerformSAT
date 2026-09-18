@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A mirror-cell load model uses the expression $2x^2 + kx - 40$, which is the product of $x - 4$ and a second linear expression. What is the value of the constant $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2$"
+  },
+  {
+   "id": "B",
+   "text": "$2$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses x = -4 as the zero instead of x = 4, flipping the sign inside the factor",
+  "C": "drops the leading coefficient 2 and solves 16 + 4k - 40 = 0",
+  "D": "sets the expression equal to 40 instead of 0 when substituting the zero"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Polynomial Factoring with Given Factor**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** If $x - 4$ is a factor, then substituting $x = 4$ gives $0$: $32 + 4k - 40 = 0$, so $k = 2$.\n\n**The Full Solution:**\nStep 1: A factor of $x - 4$ means $x = 4$ makes the expression $0$.\nStep 2: Substitute: $2(4)^2 + k(4) - 40 = 32 + 4k - 40 = 4k - 8$, and setting that equal to $0$ gives $4k = 8$.\nStep 3: So $k = 2$. Check by factoring completely: $2x^2 + 2x - 40 = 2(x^2 + x - 20) = 2(x + 5)(x - 4)$, which does contain $x - 4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): this substitutes $x = -4$. The factor $x - 4$ is zero at $x = 4$; at $k = -2$ the expression factors as $2(x + 4)(x - 5)$, with no $x - 4$ factor.\n* Choice C ($6$): this ignores the leading $2$ and evaluates $16 + 4k - 40$. With $k = 6$, substituting $x = 4$ leaves $32 + 24 - 40 = 16$, not $0$.\n* Choice D ($12$): this sets the expression equal to $40$ rather than $0$. With $k = 12$, substituting $x = 4$ leaves $40$, so $x - 4$ is not a factor.\n\n**Test Day Takeaway:** A linear factor hands you a zero: set the factor equal to zero, substitute that input into the whole expression, and solve for the unknown coefficient."
+}

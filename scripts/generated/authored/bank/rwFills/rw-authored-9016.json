@@ -1,0 +1,25 @@
+{
+  "id": 9016,
+  "passage": "A brood parasite lays its eggs in other species' nests and leaves the rearing of its young to the hosts. Host species differ in what they do next: some inspect the clutch and push out any egg whose color or markings depart from their own, while others accept whatever they find. Only the first kind of host puts pressure on the parasite, since a mismatched egg is thrown out before it can hatch. Suppose one parasite species lays in the nests of two hosts in the same woodland, one that ejects mismatched eggs and one that never does. Ornithologists comparing the two sets of parasite eggs should expect that ______",
+  "question": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "the eggs laid in the ejecting host's nests match that host's eggs more closely."
+    },
+    {
+      "id": "B",
+      "text": "the eggs laid in the accepting host's nests match that host's eggs more closely."
+    },
+    {
+      "id": "C",
+      "text": "the eggs laid in the two hosts' nests match each host's eggs about equally well."
+    },
+    {
+      "id": "D",
+      "text": "the eggs laid in the ejecting host's nests are larger than those laid in the other nests."
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** Only eggs that resemble the host's own survive inspection in the ejecting host's nests, so the parasite eggs found there should be the closer match; no such filter operates in the accepting host's nests.\n\n**The Full Solution:**\n- Name the filter the text describes: mismatched eggs are removed by one host and tolerated by the other.\n- Ask what a filter leaves behind. In the ejecting host's nests, only well-matched parasite eggs remain to be compared, so the expected difference runs in that direction.\n- Confine the prediction to the trait the filter acts on. The hosts inspect color and markings, so that is the feature the completion should be about.\n\n**Why the other choices are wrong:**\n- B: This points the pressure at the wrong host. The accepting host removes nothing, so there is nothing to favor a close match in its nests.\n- C: Equal matching would mean the ejecting behavior had no consequence, which contradicts the text's account of what happens to a mismatched egg.\n- D: Size is not what the hosts are said to inspect; the text describes rejection based on color and markings."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-194",
+ "question": "In a digitization lab's cost model $x^2+bx+48=0$, $b$ is a negative constant and one solution is three times the other. What is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-16$"
+  },
+  {
+   "id": "B",
+   "text": "$-8$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "adds the solutions as 2r instead of 4r, giving -8",
+  "C": "makes the 2r slip and also drops the sign, giving 8",
+  "D": "takes r = -4 and ignores that b must be negative, giving 16"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Sum/Product of Roots — Vieta's**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Let the solutions be $r$ and $3r$: their product $3r^2=48$ gives $r=\\pm4$, and their sum $4r=-b$; $b<0$ forces $r=4$, so $b=-16$.\n\n**The Full Solution:**\nStep 1: Name the solutions $r$ and $3r$. Their product is $\\frac{c}{a}=48$, so $3r^2=48$ and $r^2=16$, giving $r=4$ or $r=-4$.\nStep 2: Their sum is $r+3r=4r$, and Vieta's says that sum equals $-\\frac{b}{1}=-b$.\nStep 3: $b<0$ means $-b>0$, so $4r>0$ and $r=4$; then $-b=16$ and $b=-16$. Check: $x^2-16x+48=(x-4)(x-12)$, and $12=3\\cdot4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-8$): adds the solutions as $r+r=2r$ instead of $r+3r=4r$.\n* Choice C ($8$): makes that same $2r$ slip and then drops the negative sign.\n* Choice D ($16$): takes $r=-4$ and ignores the requirement that $b$ be negative.\n\n**Test Day Takeaway:** When one solution is a multiple of the other, name them $r$ and $mr$ — the product pins $r$ and the sum pins the coefficient."
+}

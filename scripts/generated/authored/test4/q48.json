@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
+  "module": 2,
+  "passage": "At many nineteenth-century opera houses, the waves of applause that greeted a favored singer were rarely ______ instead, they were organized in advance by the chef de claque, who seated his hired clappers throughout the hall and cued their bravos on schedule.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "alone, however"
+      "text": "spontaneous, instead"
     },
     {
       "id": "B",
-      "text": "alone; however,"
+      "text": "spontaneous; instead,"
     },
     {
       "id": "C",
-      "text": "alone, however,"
+      "text": "spontaneous, instead,"
     },
     {
       "id": "D",
-      "text": "alone however"
+      "text": "spontaneous instead"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. \"The keeper did not keep the light burning alone\" and \"a crew of supply tenders, inspectors, and lamp makers kept the whole system running\" are independent clauses joined by the conjunctive adverb \"however,\" which Standard English punctuates with a semicolon before it and a comma after it, as in B. A comma before \"however\" (A, C) leaves a comma splice between the clauses, and omitting punctuation altogether (D) produces a run-on.",
-  "passage": "A single lighthouse keeper once had to trim the wicks, polish the lenses, and wind the clockwork that rotated the beam through the night. The keeper did not keep the light burning ______ a crew of supply tenders, inspectors, and lamp makers kept the whole system running.",
+  "explanation": "**Choice B is correct.** Two independent clauses meet at the blank, and the second begins with the conjunctive adverb \"instead\" — a joining that requires a semicolon before the adverb and a comma after it.\n\n**The Full Solution:**\n- Clause one: \"the waves of applause ... were rarely spontaneous.\"\n- Clause two: \"they were organized in advance by the chef de claque ...\"\n- A conjunctive adverb like \"instead\" cannot join clauses by itself; the pattern is \"; instead,\" — semicolon, adverb, comma.\n\n**Why the other choices are wrong:**\n- A: A comma before \"instead\" splices the clauses, and the missing comma after the adverb compounds the error.\n- C: Even with the comma after \"instead,\" the comma before it still splices two independent clauses.\n- D: No punctuation at all fuses the clauses into a run-on.",
   "_meta": {
-    "anchor": "lighthouse keeping; semicolon with conjunctive adverb"
-  },
-  "module": 2
+    "anchor": "the opera claque; semicolon with conjunctive adverb"
+  }
 }

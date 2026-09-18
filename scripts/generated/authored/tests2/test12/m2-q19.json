@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "A scenic shop mills a curved backdrop edge whose profile is given by $x^2 - 18x + 74$. The shop stores every profile in the form $(x - h)^2 + k$, where $h$ and $k$ are constants. Which expression does the shop store for this profile?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x - 9)^2 + 74$"
+  },
+  {
+   "id": "B",
+   "text": "$(x - 9)^2 + 7$"
+  },
+  {
+   "id": "C",
+   "text": "$(x + 9)^2 - 7$"
+  },
+  {
+   "id": "D",
+   "text": "$(x - 9)^2 - 7$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "keeps the original constant 74 and never compensates for the 81 the square introduces; it expands to x^2 - 18x + 155",
+  "B": "subtracts in the wrong order, 81 - 74 = 7 instead of 74 - 81 = -7; it expands to x^2 - 18x + 88",
+  "C": "uses +9 inside the square, which expands to x^2 + 18x + 74 and reverses the sign of the middle term"
+ },
+ "explanation": "**SAT Pattern: Quadratic — Completing the Square**\n\n**Choice D is correct.** Half of $-18$ is $-9$, and $(x - 9)^2 = x^2 - 18x + 81$, so $x^2 - 18x + 74 = (x - 9)^2 - 81 + 74 = (x - 9)^2 - 7$.\n\n**The Fast Way (~20s):** Halve the middle coefficient to get $-9$, then adjust the constant: $74 - 81 = -7$.\n\n**The Full Solution:**\nStep 1: Take half of the coefficient of $x$: $\\frac{-18}{2} = -9$, so the square is $(x - 9)^2$.\nStep 2: Expanding $(x - 9)^2$ gives $x^2 - 18x + 81$, which is $81 - 74 = 7$ too large in its constant term.\nStep 3: Subtract that surplus: $x^2 - 18x + 74 = (x - 9)^2 - 7$. Check by expanding back: $(x - 9)^2 - 7 = x^2 - 18x + 81 - 7 = x^2 - 18x + 74$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(x - 9)^2 + 74$): forms the square correctly but carries the original constant along unchanged, so it expands to $x^2 - 18x + 155$.\n* Choice B ($(x - 9)^2 + 7$): does the compensation backwards, computing $81 - 74$ instead of $74 - 81$, and expands to $x^2 - 18x + 88$.\n* Choice C ($(x + 9)^2 - 7$): has the right constant but the wrong sign inside the square; it expands to $x^2 + 18x + 74$, whose middle term points the wrong way.\n\n**Test Day Takeaway:** Completing the square always adds $\\left(\\frac{b}{2}\\right)^2$, so you must subtract it back. Expand your answer for two seconds — the middle term is the fastest check there is."
+}

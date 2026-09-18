@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-166",
+  "question": "A runner's mean time for $5$ races is $42.6$ minutes. What time, in minutes, would the runner need in a sixth race for the mean time of all $6$ races to be $42$ minutes?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$38.4$"
+    },
+    {
+      "id": "B",
+      "text": "$39$"
+    },
+    {
+      "id": "C",
+      "text": "$41.4$"
+    },
+    {
+      "id": "D",
+      "text": "$42$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "42 - 0.6 x 6, multiplying the per-race excess by 6 races instead of the 5 existing races",
+    "C": "42 - 0.6, subtracting the excess only once",
+    "D": "the target mean itself, which would leave the mean above 42"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Six races at a mean of $42$ total $252$ minutes; five races at $42.6$ total $213$; the sixth must be $252 - 213 = 39$ minutes.\n\n**The Full Solution:**\nStep 1: Current total: $5 \\times 42.6 = 213$ minutes.\nStep 2: Required total for a mean of $42$ over $6$ races: $6 \\times 42 = 252$ minutes.\nStep 3: Sixth race: $252 - 213 = 39$ minutes. Check: $\\frac{213 + 39}{6} = \\frac{252}{6} = 42$. $\\checkmark$ Alternatively, each of the $5$ races is $0.6$ above the target, an excess of $3$ minutes, so the sixth race must be $3$ below the target: $42 - 3 = 39$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($38.4$): Computes $42 - 0.6 \\times 6$, charging the excess to six races when only five races are above the target.\n* Choice C ($41.4$): Subtracts the $0.6$ excess only once instead of five times.\n* Choice D ($42$): Running exactly the target time leaves the total excess of $3$ minutes in place, so the mean would stay above $42$.\n\n**Test Day Takeaway:** Work with totals: (new mean)(new count) $-$ (old mean)(old count) is the value needed."
+}

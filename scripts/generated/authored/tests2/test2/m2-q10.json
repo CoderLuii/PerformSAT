@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "A technician models a converter's efficiency index by $E(x) = \\frac{4x^2 - 81}{2x^2 - 5x - 63}$, where $x$ is the input voltage in volts and $x > 7$. Which of the following expressions is equal to $E(x)$ at every voltage in that range?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{2x - 9}{x + 7}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{2x - 9}{x - 7}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{2x + 9}{x - 7}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{2x + 9}{x + 7}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "misfactors the denominator as (2x+9)(x+7), a sign slip in the linear factor, then cancels 2x+9 and is left with x+7 on the bottom",
+  "C": "cancels the wrong factor of the numerator, keeping 2x+9 rather than the factor 2x-9 that survives",
+  "D": "misfactors the denominator as (2x-9)(x+7) and cancels 2x-9, keeping 2x+9 over x+7"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The numerator is a difference of squares, $(2x - 9)(2x + 9)$, and the denominator factors as $(2x + 9)(x - 7)$. Cancelling $2x + 9$ leaves $\\frac{2x - 9}{x - 7}$.\n\n**The Full Solution:**\nStep 1: Factor the numerator: $4x^2 - 81 = (2x)^2 - 9^2 = (2x - 9)(2x + 9)$.\nStep 2: Factor the denominator. Two numbers multiplying to $2(-63) = -126$ and adding to $-5$ are $9$ and $-14$, so $2x^2 - 5x - 63 = 2x^2 + 9x - 14x - 63 = x(2x + 9) - 7(2x + 9) = (2x + 9)(x - 7)$.\nStep 3: The shared factor $2x + 9$ divides out, leaving $\\frac{2x - 9}{x - 7}$. Check at $x = 9$: $E(9) = \\frac{324 - 81}{162 - 45 - 63} = \\frac{243}{54} = 4.5$, and $\\frac{2(9) - 9}{9 - 7} = \\frac{9}{2} = 4.5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{2x - 9}{x + 7}$): factors the denominator as $(2x + 9)(x + 7)$, which expands to $2x^2 + 23x + 63$, not the given denominator. Cancelling the shared $2x + 9$ then leaves $x + 7$ on the bottom instead of $x - 7$.\n* Choice C ($\\frac{2x + 9}{x - 7}$): factors correctly but cancels $2x - 9$ instead of $2x + 9$. Only the factor that appears in both the numerator and the denominator can be divided out, and $2x - 9$ appears only on top.\n* Choice D ($\\frac{2x + 9}{x + 7}$): factors the denominator as $(2x - 9)(x + 7)$, which expands to $2x^2 + 5x - 63$, and cancels that factor instead. A quick check at $x = 9$ gives $\\frac{27}{16}$, far from the true value $4.5$.\n\n**Test Day Takeaway:** Factor top and bottom completely before cancelling, and confirm a candidate factorization by expanding it; a single sign slip changes which factor survives."
+}

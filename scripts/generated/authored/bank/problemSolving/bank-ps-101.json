@@ -1,0 +1,37 @@
+{
+  "id": "bank-ps-101",
+  "question": "The table summarizes the $250$ melons harvested from two fields by field and by ripeness. One of the melons harvested from field B will be selected at random. What is the probability of selecting a melon that is ripe?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Ripe",
+        "Not ripe",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Field A",
+          "96",
+          "64",
+          "160"
+        ],
+        [
+          "Field B",
+          "63",
+          "27",
+          "90"
+        ],
+        [
+          "Total",
+          "159",
+          "91",
+          "250"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "0.7",
+  "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**The correct answer is $0.7$.**\n\n**The Fast Way (~10s):** Field B holds $90$ melons, $63$ of them ripe: $\\dfrac{63}{90} = 0.7$.\n\n**The Full Solution:**\nStep 1: The selection is made from field B only, so the denominator is that row's total, $90$.\nStep 2: The ripe count in that row is $63$.\nStep 3: The probability is $\\dfrac{63}{90} = \\dfrac{7}{10} = 0.7$.\nCheck: $0.7 \\times 90 = 63$. $\\checkmark$\n\n**Common Mistakes:** Using the grand total and reporting $\\dfrac{63}{250} = 0.252$; using the ripe column total and reporting $\\dfrac{63}{159} \\approx 0.396$; reporting the complement $\\dfrac{27}{90} = 0.3$.\n\n**Test Day Takeaway:** Conditioning on a row means both numbers come from that row — never from the grand total."
+}

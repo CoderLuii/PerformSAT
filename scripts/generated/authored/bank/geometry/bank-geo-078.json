@@ -1,0 +1,31 @@
+{
+ "id": "bank-geo-078",
+ "question": "A plenum return duct crosses $60$ centimeters horizontally while dropping $11$ centimeters. What is the length, in centimeters, of the duct's straight run?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     11
+    ],
+    [
+     60,
+     11
+    ],
+    [
+     60,
+     0
+    ]
+   ],
+   "sideLabels": [
+    "60 cm",
+    "11 cm",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "correctAnswer": "61",
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**The correct answer is $61$.**\n\n**The Fast Way (~20s):** $11$-$60$-$61$ is a Pythagorean triple, so the straight run is $61$ centimeters.\n\n**The Full Solution:**\n\nStep 1: The horizontal crossing and the vertical drop meet at a right angle, so the duct's straight run is the hypotenuse.\n\nStep 2: $11^2 + 60^2 = 121 + 3600 = 3721$.\n\nStep 3: The run is $\\sqrt{3721} = 61$ centimeters. Check: $61^2 = 3721$, and $61$ lies between $60$ and $71$, as a hypotenuse must.\n\n**Common Mistakes:**\n\n* $71$ — adding the two legs, $60 + 11$, which measures the bent path rather than the straight one.\n* $49$ — subtracting the legs, $60 - 11$, instead of working with their squares.\n* $330$ — computing the area $\\frac{1}{2}(11)(60)$ rather than a length.\n\n**Test Day Takeaway:** A drop and a horizontal run form legs, never a hypotenuse — the direct distance is always the square-root combination."
+}

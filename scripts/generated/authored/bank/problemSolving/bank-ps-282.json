@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-282",
+  "question": "A polling organization surveyed $250$ members of a professional association, selected at random, and obtained an estimate with a margin of error of $\\pm 6$ percentage points. To obtain an estimate with a margin of error of $\\pm 3$ percentage points using the same methodology, approximately how many members should the organization survey?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$125$"
+    },
+    {
+      "id": "B",
+      "text": "$500$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}000$"
+    },
+    {
+      "id": "D",
+      "text": "$4{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the sample size by $2$ because the margin of error is divided by $2$",
+    "B": "doubles the sample size, treating the margin of error as proportional to $\\frac{1}{n}$",
+    "D": "applies the factor of $4$ twice, multiplying by $16$"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Sample Size for Margin Reduction**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Margin of error scales like $\\frac{1}{\\sqrt{n}}$, so halving it requires $2^2 = 4$ times the sample: $4 \\times 250 = 1{,}000$.\n\n**The Full Solution:**\nStep 1: For a fixed confidence level and methodology, the margin of error is proportional to $\\frac{1}{\\sqrt{n}}$, where $n$ is the sample size.\nStep 2: The margin of error must go from $6$ to $3$ percentage points, a factor of $\\frac{1}{2}$. Since the margin depends on $\\sqrt{n}$, $\\sqrt{n}$ must double, so $n$ must be multiplied by $2^2 = 4$.\nStep 3: $4 \\times 250 = 1{,}000$ members. Check: $\\sqrt{1000} \\approx 31.6$ and $\\sqrt{250} \\approx 15.8$, and $\\frac{31.6}{15.8} = 2$, so the margin of error is halved. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($125$): halving the sample size along with the margin of error. A smaller sample makes the margin of error larger, not smaller.\n* Choice B ($500$): doubling the sample, which would work only if the margin of error were proportional to $\\frac{1}{n}$. Doubling $n$ shrinks the margin by a factor of $\\sqrt{2} \\approx 1.41$, not $2$.\n* Choice D ($4{,}000$): $16 \\times 250$, applying the factor of $4$ a second time.\n\n**Test Day Takeaway:** Divide the margin of error by $k$ by multiplying the sample size by $k^2$."
+}

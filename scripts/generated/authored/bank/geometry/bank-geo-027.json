@@ -1,0 +1,29 @@
+{
+ "question": "Mapped in meters, a brine pool's edge satisfies $x^2 + y^2 + 10x - 24y + c = 0$ for some constant $c$. Which inequality describes every value of $c$ for which this equation has a circle as its graph?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$c < 119$"
+  },
+  {
+   "id": "B",
+   "text": "$c > -169$"
+  },
+  {
+   "id": "C",
+   "text": "$c > 169$"
+  },
+  {
+   "id": "D",
+   "text": "$c < 169$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "subtracts the completed-square constants, using 144 - 25 = 119",
+  "B": "moves c to the wrong side, requiring 25 + 144 + c > 0",
+  "C": "reverses the inequality after finding the boundary value 169"
+ },
+ "explanation": "**SAT Pattern: Complete the Square for Circle**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Completing the square gives $(x + 5)^2 + (y - 12)^2 = 169 - c$, and a circle needs $169 - c > 0$, so $c < 169$.\n\n**The Full Solution:**\nStep 1: Group the terms: $(x^2 + 10x) + (y^2 - 24y) = -c$.\nStep 2: Complete each square by adding $25$ and $144$ to both sides: $(x + 5)^2 + (y - 12)^2 = 169 - c$.\nStep 3: The right side plays the role of $r^2$, so the graph is a circle exactly when $169 - c > 0$, that is $c < 169$. Check: $c = 0$ gives radius $13$, while $c = 200$ would need $r^2 = -31$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($c < 119$): subtracts the two completing constants, $144 - 25$, instead of adding them.\n* Choice B ($c > -169$): moves $c$ across with the wrong sign, as if the equation ended in $-c$.\n* Choice C ($c > 169$): finds the right boundary but keeps the inequality pointing the wrong way, which forces a negative $r^2$.\n\n**Test Day Takeaway:** After completing the square the right side must be strictly positive to be a radius squared — that single condition sets the range of the constant.",
+ "id": "bank-geo-027"
+}

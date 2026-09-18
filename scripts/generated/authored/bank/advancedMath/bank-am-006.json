@@ -1,0 +1,51 @@
+{
+  "id": "bank-am-006",
+  "question": "A vehicle's fuel efficiency $E$, in miles per gallon, at a speed of $v$ miles per hour is modeled by $E(v) = -0.02v^2 + 2v + 6$. The graph of $E$ is shown. Does $E$ have a maximum value or a minimum value, and why?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": 50,
+        "k": 56
+      },
+      "a": -0.02,
+      "xRange": [
+        0,
+        80
+      ],
+      "yRange": [
+        0,
+        60
+      ],
+      "xTickInterval": 20,
+      "yTickInterval": 10,
+      "gridInterval": 10,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "A maximum, because the coefficient of $v^2$ is negative."
+    },
+    {
+      "id": "B",
+      "text": "A maximum, because the constant term $6$ is positive."
+    },
+    {
+      "id": "C",
+      "text": "A minimum, because the coefficient of $v$ is positive."
+    },
+    {
+      "id": "D",
+      "text": "A minimum, because the vertex lies to the right of the $E$-axis."
+    }
+  ],
+  "distractorNotes": {
+    "B": "credits the constant term for the shape of the graph",
+    "C": "reads the coefficient of $v$ and inverts the conclusion",
+    "D": "treats the vertex's position as evidence of a minimum"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Max vs Min Reasoning**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The coefficient of $v^2$ is $-0.02 < 0$, so the parabola opens downward and its vertex is the highest point — a maximum.\n\n**The Full Solution:**\nStep 1: In $E(v) = -0.02v^2 + 2v + 6$, the leading coefficient is $a = -0.02$.\nStep 2: When $a < 0$ a parabola opens downward, so the vertex is the highest point of the graph and the function has a maximum value (and no minimum).\nStep 3: Locate it: $v = -\\dfrac{2}{2(-0.02)} = 50$ miles per hour, and $E(50) = -0.02(2500) + 100 + 6 = 56$ miles per gallon. Check a nearby speed: $E(40) = -32 + 80 + 6 = 54 < 56$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: the verdict is right, but $6$ is only $E(0)$ — the constant term never decides which way a parabola opens.\n* Choice C: $b = 2$ is positive, yet $b$ only slides the vertex; the sign of $a$ is what matters.\n* Choice D: the vertex does sit to the right of the vertical axis, but a downward parabola with a right-of-center vertex still has a maximum.\n\n**Test Day Takeaway:** Downward-opening ($a < 0$) means maximum; upward-opening ($a > 0$) means minimum. The verdict and the reason must both come from $a$."
+}

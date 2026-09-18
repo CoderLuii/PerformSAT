@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-403",
+ "question": "A schematic draws a turbine blade guide along the graph of $y = 6x - 11$. A line perpendicular to the blade guide has slope $m$. What is the value of $m$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-6$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{1}{6}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{1}{6}$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "negates the blade guide's slope without inverting it",
+  "C": "inverts the slope without negating it",
+  "D": "repeats the blade guide's own slope"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The blade guide has slope $6$, so a perpendicular line has slope $-\\frac{1}{6}$.\n\n**The Full Solution:**\nStep 1: The blade guide is written as $y = 6x - 11$, so its slope is $6$.\nStep 2: A perpendicular line has the negative reciprocal slope.\nStep 3: The reciprocal of $6$ is $\\frac{1}{6}$, and negating gives $m = -\\frac{1}{6}$. Check: $6\\left(-\\frac{1}{6}\\right) = -1$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6$): negates the blade guide's slope without inverting it\n* Choice C ($\\frac{1}{6}$): inverts the slope without negating it\n* Choice D ($6$): repeats the blade guide's own slope\n\n**Test Day Takeaway:** An integer slope $n$ has perpendicular slope $-\\frac{1}{n}$; both the flip and the sign are required."
+}

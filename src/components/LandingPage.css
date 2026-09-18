@@ -44,7 +44,6 @@
 .landing-container * { box-sizing: border-box; }
 .landing-container a { text-decoration: none; color: inherit; cursor: pointer; }
 
-@keyframes lp-floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
 /* Scroll reveal — driven by an IntersectionObserver in LandingPage.jsx that
    adds `.in`. Stagger children of a `.lp-stag` element. */
@@ -54,10 +53,23 @@
 .lp-stag.in > * { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .lp-reveal, .lp-stag > * { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .lp-float { animation: none !important; }
 }
 
 .lp-wrap { max-width: 1200px; margin: 0 auto; padding-left: 32px; padding-right: 32px; }
+
+/* ── CREATOR-LINK RIBBON ───────────────────────────────────────────────── */
+/* Shown only when a /r/<slug> referral is stored; sits above the sticky nav
+   in normal flow, so it scrolls away and the nav takes over. */
+.lp-ref-banner {
+  background: rgba(90, 138, 22, .12);
+  color: var(--lp-lime-ink);
+  border-bottom: 1px solid rgba(90, 138, 22, .25);
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  padding: 9px 16px;
+}
 
 /* ── NAV ───────────────────────────────────────────────────────────────── */
 .lp-nav {
@@ -128,48 +140,24 @@
 .lp-hero-trust span { display: inline-flex; align-items: center; gap: 7px; }
 .lp-hero-note { font-size: 13.5px; color: var(--lp-text-3); font-weight: 600; margin-top: 18px; max-width: 470px; line-height: 1.5; }
 
-/* Hero demo card (navy panel + floating progress card + tutor pill) */
-.lp-hero-visual { position: relative; }
-.lp-demo-panel {
-  background: var(--lp-navy); border-radius: 30px; padding: 30px; position: relative; overflow: hidden; box-shadow: var(--lp-shadow-lg);
+/* Centered hero copy with the product frame beneath it */
+.lp-hero-inner.is-centered { display: block; max-width: 900px; text-align: center; padding: 72px 32px 44px; }
+.lp-hero-inner.is-centered .lp-hero-title { font-size: 52px; }
+.lp-hero-inner.is-centered .lp-hero-desc,
+.lp-hero-inner.is-centered .lp-hero-note { max-width: 560px; margin-left: auto; margin-right: auto; }
+.lp-hero-inner.is-centered .lp-hero-actions,
+.lp-hero-inner.is-centered .lp-hero-trust { justify-content: center; }
+.lp-hero-stage { position: relative; padding: 8px 32px 0; }
+.lp-hero-stage::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 42%; bottom: 0;
+  background: var(--lp-navy);
 }
-.lp-demo-blob-a { position: absolute; right: -80px; top: -80px; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle, rgba(234, 88, 12, .30), transparent 70%); }
-.lp-demo-blob-b { position: absolute; left: -70px; bottom: -90px; width: 240px; height: 240px; border-radius: 50%; background: radial-gradient(circle, rgba(124, 92, 229, .28), transparent 70%); }
-.lp-demo-head { display: flex; align-items: center; justify-content: space-between; position: relative; margin-bottom: 18px; }
-.lp-demo-eyebrow { font-weight: 700; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: rgba(255, 255, 255, .55); }
-.lp-demo-live { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #C0F054; }
-.lp-demo-live-dot { width: 7px; height: 7px; border-radius: 50%; background: #C0F054; }
-.lp-demo-card {
-  background: var(--lp-surface); border-radius: 22px; padding: 24px 26px; position: relative;
-  box-shadow: 0 22px 46px rgba(0, 0, 0, .34);
+.lp-hero-product {
+  position: relative; max-width: 1200px; margin: 0 auto; border-radius: 18px; overflow: hidden;
+  background: var(--lp-navy); border: 1px solid rgba(255, 255, 255, .14);
+  box-shadow: 0 34px 90px rgba(12, 16, 38, .38), 0 2px 0 rgba(255, 255, 255, .06) inset;
 }
-.lp-float { animation: lp-floaty 6s ease-in-out infinite; }
-.lp-demo-card-top { display: flex; align-items: center; justify-content: space-between; }
-.lp-demo-card-label { font-weight: 700; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--lp-text-3); }
-.lp-demo-delta { display: inline-flex; align-items: center; gap: 4px; background: rgba(90, 138, 22, .12); color: var(--lp-lime-deep); font-weight: 700; font-size: 12px; padding: 4px 10px; border-radius: 20px; }
-.lp-demo-scorerow { display: flex; align-items: flex-end; gap: 10px; margin: 8px 0 18px; }
-.lp-demo-score { font-family: var(--lp-display); font-weight: 700; font-size: 56px; line-height: .85; letter-spacing: -.03em; }
-.lp-demo-scoremax { font-size: 15px; color: var(--lp-text-3); font-weight: 600; margin-bottom: 7px; }
-.lp-demo-bar { position: relative; height: 9px; border-radius: 6px; background: var(--lp-surface-2); }
-.lp-demo-bar-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 78%; border-radius: 6px; background: linear-gradient(90deg, #EA580C, #F2865C); }
-.lp-demo-bar-goal { position: absolute; left: 92%; top: -4px; bottom: -4px; width: 2.5px; border-radius: 2px; background: var(--lp-lime-deep); }
-.lp-demo-barlabels { display: flex; justify-content: space-between; margin-top: 8px; font-size: 11.5px; font-weight: 600; color: var(--lp-text-3); }
-.lp-demo-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin-top: 18px; }
-.lp-demo-tile { border-radius: 14px; padding: 15px 16px; }
-.lp-demo-tile-orange { background: var(--lp-orange); color: #fff; }
-.lp-demo-tile-lime { background: var(--lp-lime); color: var(--lp-lime-ink); }
-.lp-demo-tile-num { font-family: var(--lp-display); font-weight: 700; font-size: 26px; line-height: 1; }
-.lp-demo-tile-label { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-top: 7px; }
-.lp-demo-tile-orange .lp-demo-tile-label { color: rgba(255, 255, 255, .9); }
-.lp-demo-tile-lime .lp-demo-tile-label { opacity: .72; }
-.lp-tutor-pill {
-  position: absolute; bottom: -20px; left: -24px;
-  background: var(--lp-surface); border: 1px solid var(--lp-line); border-radius: 16px; padding: 13px 17px;
-  box-shadow: var(--lp-shadow-lg); display: flex; align-items: center; gap: 11px;
-}
-.lp-tutor-icon { width: 34px; height: 34px; border-radius: 10px; background: var(--lp-purple-tint); display: grid; place-items: center; flex: none; }
-.lp-tutor-title { font-weight: 700; font-size: 13px; color: var(--lp-text); }
-.lp-tutor-sub { font-size: 11.5px; color: var(--lp-text-3); }
+.lp-hero-product img { display: block; width: 100%; height: auto; }
 
 /* ── STATS STRIP ───────────────────────────────────────────────────────── */
 .lp-stats { background: var(--lp-navy); }
@@ -387,9 +375,10 @@
 
 /* ── RESPONSIVE ────────────────────────────────────────────────────────── */
 @media (max-width: 960px) {
-  .lp-hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 56px 32px 64px; }
-  .lp-hero-visual { max-width: 460px; }
-  .lp-hero-title { font-size: 38px; }
+  .lp-hero-inner.is-centered { padding: 52px 24px 32px; }
+  .lp-hero-inner.is-centered .lp-hero-title, .lp-hero-title { font-size: 38px; }
+  .lp-hero-stage { padding: 4px 16px 0; }
+  .lp-hero-product { border-radius: 12px; }
   .lp-brand-grid { grid-template-columns: 1fr; gap: 36px; }
   .lp-brand-card { padding: 48px 36px; }
   .lp-brand-title { font-size: 44px; }
@@ -552,11 +541,6 @@
 .lp-plx { transform: translate3d(0, var(--lp-plx, 0px), 0); will-change: transform; }
 
 /* Pointer tilt on the hero product panel. */
-.lp-tilt {
-  transform: perspective(1100px) rotateX(var(--lp-tilt-x, 0deg)) rotateY(var(--lp-tilt-y, 0deg));
-  transition: transform .18s ease-out;
-  transform-style: preserve-3d;
-}
 
 /* Purple stat accent (stats strip). */
 .lp-stat-num.is-purple { color: var(--lp-purple); }
@@ -668,7 +652,6 @@
   .lp-progress { display: none; }
   .lp-enter { animation: none; opacity: 1; transform: none; }
   .lp-marquee-track { animation: none; }
-  .lp-tilt { transform: none !important; transition: none; }
   .lp-plx { transform: none !important; }
   .lp-traj-line { transition: none; stroke-dashoffset: 0 !important; }
   .lp-traj-pt, .lp-traj-area { opacity: 1 !important; transform: none !important; transition: none; }

@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-495",
+ "question": "A streetcar contact wire holds tension $T = 4{,}200 - 60x$ newtons, where $x$ is the number of degrees Celsius that the air is above $10$ degrees Celsius. At what air temperature does the tension reach $3{,}000$ newtons?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10^\\circ\\text{C}$"
+  },
+  {
+   "id": "B",
+   "text": "$20^\\circ\\text{C}$"
+  },
+  {
+   "id": "C",
+   "text": "$30^\\circ\\text{C}$"
+  },
+  {
+   "id": "D",
+   "text": "$120^\\circ\\text{C}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the 10 degree reference temperature written into the model",
+  "B": "reports x = 20, the degrees above the reference, not the air temperature",
+  "D": "adds the two tensions instead of subtracting, computing 7200 / 60 = 120"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** $\\frac{4{,}200 - 3{,}000}{60} = 20$ degrees above the reference, so the air temperature is $10 + 20 = 30$ degrees Celsius.\n\n**The Full Solution:**\nStep 1: Set the model equal to the target tension: $4{,}200 - 60x = 3{,}000$.\nStep 2: Move the constant across and solve for $x$: $-60x = -1{,}200$, so $60x = 1{,}200$ and $x = 20$.\nStep 3: Translate $x$ back into a temperature. Because $x$ counts degrees ABOVE $10$ degrees Celsius, the air temperature is $10 + 20 = 30$ degrees Celsius. Check: at $30$ degrees, $x = 20$ and $T = 4{,}200 - 60(20) = 3{,}000$ newtons. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($10^\\circ\\text{C}$): reports the reference temperature built into the model rather than the temperature asked for.\n* Choice B ($20^\\circ\\text{C}$): reports $x$, the number of degrees above the reference, and skips the final translation.\n* Choice D ($120^\\circ\\text{C}$): adds the two tensions instead of subtracting, computing $\\frac{4{,}200 + 3{,}000}{60} = 120$.\n\n**Test Day Takeaway:** When a variable is defined as an amount ABOVE a baseline, solving for that variable is not the last step — add the baseline back before answering."
+}

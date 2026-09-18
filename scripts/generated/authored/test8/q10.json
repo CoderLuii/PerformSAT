@@ -1,31 +1,31 @@
 {
-  "id": 810,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "From 1936 to 1966, the postal worker Victor Hugo Green published an annual guide, widely known as the Green Book, that listed hotels, restaurants, service stations, and private homes where Black motorists could expect to be served safely. Travel by car promised freedom from the segregated railway car, but a driver who did not know which towns to avoid could be turned away or worse. Green compiled the listings from readers' letters and his own network, updating them yearly. The guide, his introductions made clear, was a practical response to a hazard its users already understood, not a description of the country as he wished it to be.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Green gathered most of the guide’s listings from letters that readers across the country mailed to him each year."
-    },
-    {
-      "id": "B",
-      "text": "Green’s guide gave Black motorists practical information about where they could travel and be served safely during the era of segregation."
-    },
-    {
-      "id": "C",
-      "text": "Travel by automobile freed Black travelers from the discrimination they had faced in segregated railway cars."
-    },
-    {
-      "id": "D",
-      "text": "Green hoped that publishing the guide annually would eventually persuade businesses to end their discriminatory practices."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage's central point is that the guide served a practical purpose: telling Black drivers where they could travel and be served safely under segregation. A and C name true details—the reader letters, the comparison with rail travel—but each is a supporting point rather than the main idea. D attributes a reformist aim to Green that the passage explicitly sets aside when it calls the guide a practical response rather than a vision of the country as he wished it to be."
+ "id": 810,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "Nurseries can now supply oak and hazel seedlings whose roots already carry the truffle fungus, and a grower who plants them has, in one sense, started a truffle orchard. What follows is the harder part. The fungus fruits only when its partnership with the tree stays in balance, so growers prune to meter the light reaching the soil, water in high summer on a schedule tuned to the site, and keep the ground loose and alkaline for the fungus's fine threads. Even well-run orchards wait eight or ten years for a first harvest. Growers like to say they tend a partnership, not a crop.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The chief obstacle to truffle farming remains the difficulty of producing nursery seedlings whose roots reliably carry the truffle fungus from the greenhouse into the orchard soil."
+  },
+  {
+   "id": "B",
+   "text": "Establishing a truffle orchard is only a beginning, since harvests depend on sustained management of the partnership between tree, fungus, and soil."
+  },
+  {
+   "id": "C",
+   "text": "Truffles raised in orchards are generally judged inferior to those gathered from wild woodlands."
+  },
+  {
+   "id": "D",
+   "text": "Truffle harvests are so dependent on weather that growers can do little to influence them."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The text's sentences all serve one claim: planting inoculated seedlings begins a truffle orchard, but harvests depend on decades of managing the living partnership between tree, fungus, and soil.\n\n**The Full Solution:**\n- The text concedes what nurseries can now do — supply oak and hazel seedlings whose roots already carry the fungus.\n- It then lists what still determines success: pruning to meter light, timed summer watering, soil kept loose and alkaline.\n- The conclusion that growers \"tend a partnership, not a crop\" is the main idea, restated in choice B.\n\n**Why the other choices are wrong:**\n- A: The text says inoculated seedlings are widely available; producing them is not presented as the difficulty.\n- C: The text does not compare cultivated truffles' quality with wild ones'.\n- D: Weather is one factor mentioned, but the text never claims harvests are entirely a matter of chance."
 }

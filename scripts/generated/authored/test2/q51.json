@@ -6,26 +6,26 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 2,
-  "passage": "A spacecraft bound for the outer solar system cannot carry enough fuel to power itself the whole way. ______ mission planners route these probes past large planets along the way, letting each planet's gravity bend a probe's path and fling it onward at higher speed—a maneuver that costs the planet an immeasurably small amount of motion and the spacecraft no fuel at all.",
+  "passage": "Cesium atomic clocks, which define the world's official second, are commonly described as gaining or losing no more than a second over a hundred million years. It would be natural to conclude that timekeeping has reached the end of useful improvement. ______ a newer generation of optical clocks, ticking at the frequencies of visible light rather than of microwaves, has already surpassed cesium's precision a hundredfold — enough that raising one of these clocks a few centimeters measurably alters its rate, turning timekeeping into an instrument for mapping gravity itself.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "Likewise,"
+      "text": "Otherwise,"
     },
     {
       "id": "B",
-      "text": "Instead,"
+      "text": "In fact,"
     },
     {
       "id": "C",
-      "text": "Meanwhile,"
+      "text": "By comparison,"
     },
     {
       "id": "D",
-      "text": "For instance,"
+      "text": "Subsequently,"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The first sentence states a problem—the spacecraft cannot carry enough fuel—and the second gives the alternative planners adopt, using planets' gravity rather than fuel. \"Instead,\" marks that substitution of one approach for the unavailable one. \"Likewise,\" signals similarity, but the gravity maneuver is a different solution, not a parallel case. \"Meanwhile,\" marks simultaneous events, which misframes the logical relationship. \"For instance,\" introduces an example, yet the gravity-assist is the strategy adopted in response to the fuel problem, not an illustration of it."
+  "explanation": "**Choice B is correct.** The second sentence voices a natural but mistaken conclusion; the third corrects it with the stronger reality — optical clocks have already blown past cesium. \"In fact\" is the transition that sets the actual state of affairs against a stated assumption.\n\n**The Full Solution:**\n- The passage deliberately frames the middle sentence as an inference a reader might draw: \"It would be natural to conclude...\"\n- The final sentence shows that inference to be false, and false in an emphatic direction: not merely more improvement, but a hundredfold leap with startling consequences.\n- Correcting an assumption by asserting what is actually true is the defining use of \"In fact.\"\n\n**Why the other choices are wrong:**\n- A: \"Otherwise\" introduces the consequence of a condition going unmet; no condition precedes the blank, so the transition has nothing to operate on.\n- C: \"By comparison\" would set two items side by side for measurement, but the sentence's work is to overturn the previous sentence's conclusion, not to compare neutrally with it.\n- D: \"Subsequently\" merely orders events in time; it concedes the false conclusion instead of correcting it, and the optical-clock advance is presented as a refutation, not a next chapter."
 }

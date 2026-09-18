@@ -1,0 +1,59 @@
+{
+  "id": "bank-ps-066",
+  "question": "The dot plot shows the number of fish caught by each of $8$ anglers during a fishing tournament. Which of the following statements about the mean and the median of the data set is true?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 2,
+          "count": 1
+        },
+        {
+          "value": 3,
+          "count": 2
+        },
+        {
+          "value": 4,
+          "count": 3
+        },
+        {
+          "value": 5,
+          "count": 1
+        },
+        {
+          "value": 11,
+          "count": 1
+        }
+      ],
+      "xMin": 0,
+      "xMax": 12,
+      "xLabel": "Number of fish caught"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mean is less than the median."
+    },
+    {
+      "id": "B",
+      "text": "The mean is equal to the median."
+    },
+    {
+      "id": "C",
+      "text": "The mean and the median are both equal to $4$."
+    },
+    {
+      "id": "D",
+      "text": "The mean is greater than the median."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses the direction an outlier pulls the mean",
+    "B": "assumes a symmetric distribution around the tallest stack",
+    "C": "correct median, but takes it as the mean too (mean is 4.5)"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Mean-Median Comparison**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Seven of the values sit at $2$ through $5$ and one sits far out at $11$. That single high value pulls the mean up without moving the median, so mean $>$ median.\n\n**The Full Solution:**\nStep 1: Read the values from the dot plot: $2, 3, 3, 4, 4, 4, 5, 11$.\nStep 2: Median: with $8$ values, average the $4$th and $5$th, $\\frac{4 + 4}{2} = 4$.\nStep 3: Mean: $\\frac{2 + 3 + 3 + 4 + 4 + 4 + 5 + 11}{8} = \\frac{36}{8} = 4.5$. Since $4.5 > 4$, the mean is greater than the median. Check: replacing the $11$ with a $4$ would give a mean of $\\frac{29}{8} \\approx 3.6$, so the $11$ is exactly what lifts the mean above the median. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reverses the effect of the outlier; a value far ABOVE the rest pulls the mean up, not down.\n* Choice B: assumes the tallest stack is at the center of the data, so the two measures should coincide; the $11$ breaks that symmetry.\n* Choice C: gets the median right ($4$) but takes it as the mean too; the mean is $4.5$.\n\n**Test Day Takeaway:** An extreme value drags the mean toward it and leaves the median alone; a long tail to the right means mean $>$ median."
+}

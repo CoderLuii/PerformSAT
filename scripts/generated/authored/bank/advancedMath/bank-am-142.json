@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-142",
+ "question": "A tugboat's net thrust, in kilonewtons, is modeled by $x^{2}+bx-24$, where $b$ is a constant and $x$ is the propeller pitch setting. The net thrust is zero at $x=-8$ and at one positive integer setting. What is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "sets b equal to the sum of the zeros, -8 + 3 = -5, instead of its opposite",
+  "B": "reports the opposite of the second zero, -3",
+  "C": "reports the second zero, 3, instead of b"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Quadratic via Factoring**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The zeros multiply to $-24$, so the second zero is $-24\\div(-8)=3$; the factorization $(x+8)(x-3)=x^{2}+5x-24$ gives $b=5$.\n\n**The Full Solution:**\n\nStep 1: Because $x=-8$ makes the model zero, $x+8$ is a factor, so $x^{2}+bx-24=(x+8)(x-r)$ for the second zero $r$.\n\nStep 2: Matching constants gives $-8r=-24$, so $r=3$, the positive integer setting the stem promises.\n\nStep 3: Expand: $(x+8)(x-3)=x^{2}+5x-24$, so $b=5$. Check: substituting $x=-8$ into $x^{2}+5x-24$ gives $64-40-24=0$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-5$): reports the sum of the zeros, $-8+3=-5$, forgetting that $b$ is the opposite of that sum.\n* Choice B ($-3$): reports the opposite of the second zero.\n* Choice C ($3$): stops at the second zero and never returns to $b$.\n\n**Test Day Takeaway:** A known zero hands you a factor; match the constant term first, then read the middle coefficient off the expansion."
+}

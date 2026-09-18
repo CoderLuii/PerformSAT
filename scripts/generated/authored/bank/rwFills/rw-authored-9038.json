@@ -1,0 +1,32 @@
+{
+  "id": 9038,
+  "passage": "The following text is from John Stuart Mill’s 1873 memoir Autobiography. As a boy Mill composed histories of his own for amusement, alongside the lessons his father set him.\n\nMy father encouraged me in this useful amusement, though, as I think judiciously, he never asked to see what I wrote; so that I did not feel that in writing it I was accountable to any one, nor had the chilling sensation of being under a critical eye. But though these exercises in history were never a compulsory lesson, there was another kind of composition which was so, namely, writing verses, and it was one of the most disagreeable of my tasks.",
+  "question": "Which choice best states the main idea of the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Mill’s father supervised each of his son’s writing exercises, including the histories Mill composed for his own amusement."
+    },
+    {
+      "id": "B",
+      "text": "Mill found the verses he was required to write more valuable than the histories he wrote on his own."
+    },
+    {
+      "id": "C",
+      "text": "Mill valued his self-directed historical writing partly because it went unread, unlike the required exercises he disliked."
+    },
+    {
+      "id": "D",
+      "text": "Mill’s boyhood histories were more accomplished than his later account of them suggests."
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** The passage sets one kind of writing against another: histories written by choice and left unread, and verses written by command and disliked.\n\n**The Full Solution:**\n- Take the two sentences as a pair. The first explains what made the histories pleasant — the father never asked to see them, so there was no accountability and no critical eye.\n- The second sentence supplies the contrast: unlike the histories, verse writing was compulsory, and it was among the most disagreeable of the tasks. Choice C states both halves.\n- A main-idea answer must cover the whole text. Any option that describes only one sentence, or that reverses the contrast, is out.\n\n**Why the other choices are wrong:**\n- A: The reverse of what the text says. The father deliberately never asked to see the histories.\n- B: The text calls the required verses one of the most disagreeable tasks, so it does not rank them above the voluntary histories.\n- D: The passage never evaluates the quality of the histories, only the conditions under which they were written.",
+  "source": {
+    "title": "Autobiography",
+    "author": "John Stuart Mill",
+    "year": 1873,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/10378"
+  }
+}

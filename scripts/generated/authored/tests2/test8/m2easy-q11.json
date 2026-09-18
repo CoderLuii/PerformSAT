@@ -1,0 +1,60 @@
+{
+ "id": 11,
+ "question": "A gusset is cut from denim in the shape shown, with the two marked lengths in centimeters and $\\theta$ at the upper corner. What is the value of $\\tan \\theta$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     15,
+     8
+    ]
+   ],
+   "sideLabels": [
+    "",
+    "8",
+    "17"
+   ],
+   "labels": [
+    "",
+    "",
+    "θ"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{8}{17}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{8}{15}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{15}{17}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{15}{8}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the two marked lengths, 8 over 17, which is cosine of theta rather than tangent",
+  "B": "inverts the tangent ratio, putting the adjacent leg 8 over the opposite leg 15",
+  "C": "gives sine of theta, 15 over the hypotenuse 17, instead of 15 over the adjacent leg"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The missing leg is $\\sqrt{17^2 - 8^2} = 15$, and from $\\theta$ that leg is opposite while $8$ is adjacent, so $\\tan \\theta = \\frac{15}{8}$.\n\n**The Full Solution:**\nStep 1: The figure marks one leg as $8$ and the hypotenuse as $17$ (the side opposite the right angle). Tangent needs both legs, so find the missing one with the Pythagorean theorem: $8^2 + b^2 = 17^2$, so $b^2 = 289 - 64 = 225$ and $b = 15$.\nStep 2: Locate the legs relative to $\\theta$, the angle at the upper corner. The leg of length $15$ lies across the triangle from $\\theta$, so it is opposite; the leg of length $8$ runs from $\\theta$ to the right angle, so it is adjacent.\nStep 3: $\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{15}{8}$. Check: $8$-$15$-$17$ is a Pythagorean triple, and since the side opposite $\\theta$ is longer than the side adjacent to it, $\\tan \\theta$ must exceed $1$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{8}{17}$): divides the two numbers that are printed on the figure. That ratio is $\\cos \\theta$ — adjacent over hypotenuse — and the hypotenuse never appears in a tangent.\n* Choice B ($\\frac{8}{15}$): uses both legs but in the wrong order, giving adjacent over opposite. Its value is less than $1$, which cannot be right for an angle whose opposite leg is the longer one.\n* Choice C ($\\frac{15}{17}$): computes $\\sin \\theta$, pairing the opposite leg with the hypotenuse instead of with the adjacent leg.\n\n**Test Day Takeaway:** When a figure gives one leg and the hypotenuse but the question asks for tangent, the Pythagorean theorem is step one — then label opposite and adjacent from the marked angle before writing the ratio."
+}

@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 2,
-  "passage": "The nickelodeon, the storefront theater that spread through American cities after 1905, owed its very name to a simple formula ______ a nickel's admission to a continuous program of short films that ran from morning until late into the night.",
+  "passage": "By the 1980s, chemists studying peat-preserved remains had identified the agent behind a paradox that had long puzzled ______ the same waterlogged conditions that keep skin, hair, and fingernails intact for millennia slowly dissolve the skeleton itself.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "formula,"
-    },
-    {
-      "id": "B",
-      "text": "formula;"
-    },
-    {
-      "id": "C",
-      "text": "formula:"
-    },
-    {
-      "id": "D",
-      "text": "formula"
-    }
+    { "id": "A", "text": "excavators," },
+    { "id": "B", "text": "excavators" },
+    { "id": "C", "text": "excavators:" },
+    { "id": "D", "text": "excavators, but" }
   ],
   "correctAnswer": "C",
-  "explanation": "The clause announces \"a simple formula,\" and a colon properly introduces the noun phrase that states it—\"a nickel's admission to a continuous program...\" So choice C is correct. A comma (A) merely runs the phrase on, a semicolon (B) needs a full independent clause after it, and omitting punctuation (D) fuses the announcement to its content.",
-  "_meta": {
-    "anchor": "the nickelodeon"
-  }
+  "explanation": "**Choice C is correct.** The first clause is a complete statement that announces a paradox; the clause after the blank states what that paradox is. A colon after a complete statement is the mark that delivers on such an announcement.\n\n**The Full Solution:**\n- Left of the blank is independent: \"chemists... had identified the agent behind a paradox that had long puzzled excavators.\"\n- Right of the blank spells the paradox out — preservation and destruction from the same conditions.\n- Announcement followed by its content is the colon's defining use.\n\n**Why the other choices are wrong:**\n- A: A comma alone splices two independent clauses together.\n- B: With nothing at the boundary, the two sentences fuse into a run-on.\n- D: \"But\" is grammatical at the joint but wrecks the logic — the second clause is the paradox the first clause promised, not a turn against it."
 }

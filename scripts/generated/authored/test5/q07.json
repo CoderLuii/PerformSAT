@@ -1,34 +1,34 @@
 {
-  "id": 507,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "Producing a single ukiyo-e woodblock print in Edo-period Japan was rarely the work of one person. A publisher commissioned the design and financed the project; an artist supplied a master drawing; a carver pasted that drawing onto a block of cherry wood and cut away everything that was not to be inked; and a printer, working from a separate block for each color, pressed the sheet by hand against one block after another, aligning it each time against small marks cut into the wood. The names that survive on the prints are almost always the artist's and the publisher's. The carvers and printers, whose skill determined whether a delicate gradation of sky or water came out cleanly, are in most cases anonymous.",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It traces the steady rise in the market value of ukiyo-e woodblock prints from the Edo period through to the present day."
-    },
-    {
-      "id": "B",
-      "text": "It argues that a few celebrated print designers have unfairly overshadowed the rival designers who worked in the same period."
-    },
-    {
-      "id": "C",
-      "text": "It describes the division of labor behind a woodblock print and then observes that credit for the finished work was distributed unequally."
-    },
-    {
-      "id": "D",
-      "text": "It explains the chemical process by which the colored inks used in Japanese woodblock printing were manufactured and prepared."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The first half of the passage lays out the chain of specialists behind a single print—publisher, artist, carver, printer—and the second half observes that only the artist and publisher are usually named, while the carvers and printers, whose skill was decisive, remain anonymous. The structure is a description of shared labor followed by a point about unequal credit. Choice A introduces market value, which the passage never discusses. Choice B turns the passage into an argument about rival designers that it does not make. Choice D names a chemical process the passage does not describe.",
-  "_meta": {
-    "anchor": "Japanese ukiyo-e woodblock printing — division of labor and unequal credit"
+ "id": 507,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "Along the coast of what is now Ghana, Fante military companies known as asafo commissioned appliqué flags, cutting figures from imported cotton cloth and stitching them onto boldly colored grounds. Each flag staged a proverb — a crocodile unmoved by a taunting mudfish, a hand reaching for fruit beyond its grasp — that asserted the company's strength or needled a rival, and flags were danced at festivals before audiences who read the images as fluently as words. Historians now approach surviving flags as documents: because the companies memorialized their disputes, alliances, and boasts in cloth, the flags preserve a local history that written records of the period largely passed over.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It traces the gradual decline of a flagmaking tradition and identifies the forces responsible for that decline."
+  },
+  {
+   "id": "B",
+   "text": "It compares asafo flags with the written records of the period and concludes that the written records are the more dependable source."
+  },
+  {
+   "id": "C",
+   "text": "It describes how a kind of object was made and used, then explains why historians now treat those objects as historical sources."
+  },
+  {
+   "id": "D",
+   "text": "It presents competing interpretations of the images on the flags and argues that their original meanings can no longer be recovered."
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The text moves from production and use — cutting, stitching, staging proverbs, dancing the flags at festivals — to the historians' turn: the flags now serve as documents of local history.\n\n**The Full Solution:**\n- The first sentence describes how the flags were made: figures cut from imported cloth, stitched onto colored grounds.\n- The second describes how they were used: staging proverbs, asserting strength, performed before fluent audiences.\n- The final sentence pivots with \"Historians now approach surviving flags as documents\" and explains why: the flags record disputes, alliances, and boasts that written sources ignored. That two-part movement — object then source — is what choice C describes.\n\n**Why the other choices are wrong:**\n- A: No decline is traced; the text never says the tradition faded.\n- B: The comparison runs the other way — the flags preserve what written records \"largely passed over\" — and no verdict about dependability is issued.\n- D: The text says audiences read the images fluently and historians read them still; nothing suggests the meanings are lost, and no competing interpretations appear.",
+ "_meta": {
+  "anchor": "Fante asafo appliqué flags — proverbs in cloth as records of local history"
+ }
 }

@@ -1,0 +1,29 @@
+{
+  "id": 9,
+  "question": "Two mastering engineers estimate the time for a project of $p$ songs with the formulas $6(p - 1) + kp$ and $2p + 26$, both in hours, where $k$ is a constant. The two estimates agree when $p = 4$. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$13$"
+    },
+    {
+      "id": "D",
+      "text": "$16$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the 2p to the left side instead of subtracting it, giving 4(8 + k) = 32 and k = 0",
+    "C": "adds 18 to 34 instead of subtracting it, giving 4k = 52 and k = 13",
+    "D": "stops at 4k = 16 and reports 16 without dividing by 4"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Substituting $p = 4$ turns the equality into $18 + 4k = 34$, so $4k = 16$ and $k = 4$.\n\n**The Full Solution:**\nStep 1: The two formulas agree at $p = 4$, so write $6(4 - 1) + k(4) = 2(4) + 26$.\nStep 2: Simplify each side. The left side becomes $6(3) + 4k = 18 + 4k$ and the right side becomes $8 + 26 = 34$.\nStep 3: Subtract $18$ from both sides to get $4k = 16$, then divide by $4$ to get $k = 4$. Check: with $k = 4$ the left formula gives $6(3) + 4(4) = 18 + 16 = 34$ hours and the right gives $2(4) + 26 = 34$ hours. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$): collects the terms as $p(6 + k + 2) = 32$, adding the $2p$ instead of subtracting it. That gives $4(8 + k) = 32$, so $8 + k = 8$ and $k = 0$ — but $k = 0$ makes the left formula $18$, not $34$.\n* Choice C ($13$): moves the $18$ to the right side by adding, producing $4k = 34 + 18 = 52$ and $k = 13$. Constants cross the equals sign by subtraction.\n* Choice D ($16$): reaches $4k = 16$ and reports $16$, forgetting the last division.\n\n**Test Day Takeaway:** Plug the given value in first, then simplify each side completely before you move anything across the equals sign. The final division is the step most often skipped."
+}

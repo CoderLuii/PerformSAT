@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-442",
+  "question": "The price of a used camera lens is reduced by $30\\%$, and that reduced price is then reduced by $20\\%$. The final price is $\\$196$. What was the price of the lens, in dollars, before the two reductions?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$109.76$"
+    },
+    {
+      "id": "B",
+      "text": "$137.20$"
+    },
+    {
+      "id": "C",
+      "text": "$280$"
+    },
+    {
+      "id": "D",
+      "text": "$350$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies by the combined factor $0.56$ instead of dividing by it.",
+    "B": "multiplies the final price by $0.70$, reducing it a third time.",
+    "C": "undoes only the $30\\%$ reduction."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Reverse Percent Multi-Step**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The two reductions multiply to $0.70\\times 0.80=0.56$, so the original price is $\\frac{196}{0.56}=350$ dollars.\n\n**The Full Solution:**\nStep 1: Let $p$ be the original price. A $30\\%$ reduction leaves $0.70p$.\nStep 2: A further $20\\%$ reduction of that leaves $0.80(0.70p)=0.56p$, so $0.56p=196$.\nStep 3: $p=\\frac{196}{0.56}=350$ dollars. Check: $0.70(350)=245$, and $0.80(245)=196$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($109.76$): computes $0.56\\times 196$, multiplying by the combined factor instead of dividing.\n* Choice B ($137.20$): computes $0.70\\times 196$, applying a reduction to the already-final price.\n* Choice C ($280$): computes $\\frac{196}{0.70}$, undoing only the first reduction.\n\n**Test Day Takeaway:** Chained percent changes multiply. Combine the factors into one number, then divide the ending amount by it."
+}

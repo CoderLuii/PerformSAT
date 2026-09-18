@@ -1,0 +1,58 @@
+{
+  "id": "bank-alg-028",
+  "question": "The graph of line $p$ in the $xy$-plane is shown. Line $p$ passes through the points $(0, -3)$ and $(2, 1)$. Line $q$, not shown, is parallel to line $p$. What is the slope of line $q$?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 2,
+      "yIntercept": -3,
+      "xRange": [
+        -6,
+        6
+      ],
+      "yRange": [
+        -6,
+        6
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          0,
+          -3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "label": "p"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-2$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{1}{2}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{1}{2}$"
+    },
+    {
+      "id": "D",
+      "text": "$2$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "flips the sign of the slope",
+    "B": "gives the perpendicular slope (negative reciprocal)",
+    "C": "inverts the slope (run over rise)"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Parallel Slope Identification**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** From $(0, -3)$ to $(2, 1)$ the line rises $4$ over a run of $2$, so line $p$ has slope $2$. Parallel lines have equal slopes, so line $q$ also has slope $2$.\n\n**The Full Solution:**\nStep 1: Slope of $p$: $\\frac{1 - (-3)}{2 - 0} = \\frac{4}{2} = 2$.\nStep 2: Two distinct lines in the $xy$-plane are parallel exactly when their slopes are equal, so the slope of $q$ equals the slope of $p$.\nStep 3: The slope of $q$ is $2$. Check on the graph: moving right $1$ unit from the $y$-intercept $(0, -3)$ raises the line $2$ units to $(1, -1)$, consistent with slope $2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): reverses the sign of the slope, which would describe a line falling from left to right, unlike $p$.\n* Choice B ($-\\frac{1}{2}$): gives the negative reciprocal, the slope of a line PERPENDICULAR to $p$, not parallel.\n* Choice C ($\\frac{1}{2}$): inverts the ratio, using run over rise.\n\n**Test Day Takeaway:** Parallel means the same slope, full stop; only perpendicular involves flipping and negating."
+}

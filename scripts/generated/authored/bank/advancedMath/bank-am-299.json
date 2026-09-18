@@ -1,0 +1,58 @@
+{
+ "id": "bank-am-299",
+ "question": "The table gives values of a polynomial function $p$ that models a spectrograph's wavelength offset, in nanometers, at grating index $x$. For some polynomial $q$ and some constant $r$, $p(x)=(x-3)q(x)+r$ for every $x$. What is the value of $r$?",
+ "diagram": {
+  "type": "table",
+  "params": {
+   "xHeader": "x",
+   "yHeader": "p(x)",
+   "rows": [
+    [
+     "-1",
+     "12"
+    ],
+    [
+     "0",
+     "-4"
+    ],
+    [
+     "2",
+     "6"
+    ],
+    [
+     "3",
+     "9"
+    ],
+    [
+     "5",
+     "40"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$40$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "substitutes x = 0 instead of x = 3 and reports p(0) = -4",
+  "B": "substitutes x = 2, the row above the needed one, and reports p(2) = 6",
+  "D": "substitutes x = 5 and reports p(5) = 40"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Polynomial Remainder Theorem**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Substituting $x=3$ kills the $(x-3)q(x)$ term, so $r=p(3)=9$.\n\n**The Full Solution:**\n\nStep 1: The identity $p(x)=(x-3)q(x)+r$ holds for every $x$, so it holds at $x=3$.\n\nStep 2: At $x=3$ the first term is $(3-3)q(3)=0$, leaving $p(3)=r$.\n\nStep 3: The table gives $p(3)=9$, so $r=9$. Check: with $r=9$ the identity reads $p(3)=0+9=9$, which matches the table entry exactly.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-4$): substitutes $x=0$ instead of $x=3$ and reports $p(0)=-4$.\n* Choice B ($6$): reads the row above the needed one and reports $p(2)=6$.\n* Choice D ($40$): reads the last row and reports $p(5)=40$.\n\n**Test Day Takeaway:** A constant remainder on division by $x-a$ is just the function value at $x=a$; find the row where the divisor vanishes."
+}

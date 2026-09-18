@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-190",
+  "question": "The number of volunteers at a food bank this year is $135\\%$ of the number of volunteers last year. If there are $540$ volunteers this year, how many volunteers were there last year?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$351$"
+    },
+    {
+      "id": "B",
+      "text": "$400$"
+    },
+    {
+      "id": "C",
+      "text": "$505$"
+    },
+    {
+      "id": "D",
+      "text": "$729$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies 540 by 0.65 (subtracts 35% of this year's count)",
+    "C": "subtracts 35 from 540",
+    "D": "multiplies 540 by 1.35 instead of dividing"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Let $n$ be last year's number. Then $1.35n = 540$, so $n = \\frac{540}{1.35} = 400$.\n\n**The Full Solution:**\nStep 1: \"This year is $135\\%$ of last year\" means $\\text{this year} = 1.35 \\times \\text{last year}$.\nStep 2: Substitute $540$ and solve: $1.35n = 540$, so $n = \\frac{540}{1.35} = 400$.\nStep 3: Check: $135\\%$ of $400$ is $1.35 \\times 400 = 540$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($351$): subtracts $35\\%$ of $540$ from $540$, but the $35\\%$ is measured against last year's number, not this year's.\n* Choice C ($505$): subtracts $35$ from $540$, treating the percent as a count of volunteers.\n* Choice D ($729$): multiplies by $1.35$ instead of dividing, moving forward in time rather than back.\n\n**Test Day Takeaway:** When the known value is the result of a percent, divide by the decimal form to recover the original — never multiply, and never take the percent of the result."
+}

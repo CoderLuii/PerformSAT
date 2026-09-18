@@ -1,0 +1,37 @@
+{
+ "id": 21,
+ "question": "The bar chart shows the mass of apples harvested, in hundreds of kilograms, for each of five varieties. Of the Gala harvest, $15\\%$ is rejected for bruising. The rejected Gala is what percent of the total harvest of all five varieties?",
+ "diagram": {
+  "type": "barChart",
+  "params": {
+   "data": [
+    {
+     "label": "Gala",
+     "value": 240
+    },
+    {
+     "label": "Fuji",
+     "value": 200
+    },
+    {
+     "label": "Honeycrisp",
+     "value": 160
+    },
+    {
+     "label": "Braeburn",
+     "value": 120
+    },
+    {
+     "label": "Cortland",
+     "value": 80
+    }
+   ],
+   "xAxisLabel": "Variety",
+   "yAxisLabel": "Harvest (hundreds of kg)",
+   "yMax": 280,
+   "yStep": 40
+  }
+ },
+ "correctAnswer": "4.5",
+ "explanation": "**SAT Pattern: Percent of a Whole**\n\n**The correct answer is $4.5$.**\n\n**The Fast Way (~40s):** Gala is $\\frac{240}{800} = 30\\%$ of the harvest, and $15\\%$ of that is rejected: $0.15(30) = 4.5\\%$.\n\n**The Full Solution:**\nStep 1: Read the five bars and total them: $240 + 200 + 160 + 120 + 80 = 800$ hundreds of kilograms.\nStep 2: The rejected Gala is $15\\%$ of the $240$ Gala bar: $0.15(240) = 36$ hundreds of kilograms.\nStep 3: Express that as a percent of the whole harvest: $\\frac{36}{800} = 0.045 = 4.5\\%$. Check the two-step version: Gala is $30\\%$ of the total, and $15\\%$ of $30\\%$ is $4.5\\%$ ✓\n\n**Common Mistakes:**\n* $30$: reporting Gala's share of the total harvest and never applying the $15\\%$ rejection rate.\n* $15$: repeating the rejection rate. That percent is measured against the Gala harvest alone, not against all five varieties.\n* $25.5$: computing the accepted Gala as a percent of the total, $\\frac{204}{800}$, which answers the opposite question.\n\n**Test Day Takeaway:** A percent is meaningless without its whole — when a rate applies to one category and the question asks about the full data set, multiply the two shares rather than reporting either one."
+}

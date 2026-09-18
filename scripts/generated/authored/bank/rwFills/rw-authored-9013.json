@@ -1,0 +1,25 @@
+{
+  "id": 9013,
+  "passage": "Calcium carbonate dissolves more readily in cold, deep, high-pressure seawater than in warm shallows. Below a level called the carbonate compensation depth, which in most basins lies near four kilometers, the carbonate shells of plankton dissolve faster than they arrive, so the sediment gathering there is clay and the silica shells of other plankton, with almost no carbonate in it. Ocean crust also sinks as it ages: rock formed at a mid-ocean ridge stands high, then subsides steadily for tens of millions of years as it cools and drifts away from the ridge. A drill core taken through the entire sediment pile on old, deep seafloor should therefore show ______",
+  "question": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "carbonate-poor clay at the base of the pile and carbonate-rich ooze at the top."
+    },
+    {
+      "id": "B",
+      "text": "carbonate-rich ooze at the base of the pile and carbonate-poor clay at the top."
+    },
+    {
+      "id": "C",
+      "text": "about the same proportion of carbonate from the base of the pile to the top."
+    },
+    {
+      "id": "D",
+      "text": "no carbonate at any level, since the site now lies below that critical depth."
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** The oldest sediment settled while the crust still stood high above the compensation depth, where carbonate is preserved, and the youngest settled after the crust had sunk below it, where carbonate is not. A core reads that history from the bottom up.\n\n**The Full Solution:**\n- Put the two rules side by side: carbonate survives above the compensation depth and dissolves below it, and seafloor starts shallow at the ridge and deepens with age.\n- Order the layers in time. The bottom of a sediment pile is the oldest material, laid down when the site was shallow; the top is the youngest, laid down after subsidence carried the site into dissolving water.\n- Read the completion as a sequence, not a single value. The expectation is a change with depth in the core, from carbonate-rich below to carbonate-poor above.\n\n**Why the other choices are wrong:**\n- A: This inverts the sequence. It would require the site to have started deep and become shallow, the reverse of the subsidence the text describes.\n- C: A uniform proportion would mean the site never crossed the compensation depth, but the text says aging crust subsides steadily for tens of millions of years.\n- D: The site was not always deep. Carbonate laid down during its shallow youth is still there at the base of the pile."
+}

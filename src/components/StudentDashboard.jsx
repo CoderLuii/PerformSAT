@@ -1,38 +1,43 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { showToast } from './ui/Toaster';
 import { generateRecommendations } from '../services/recommendationService';
-import SkillDiagnosticSummary from './SkillDiagnosticSummary';
 import ScoreSlider from './ScoreSlider';
-import CollegePicker from './CollegePicker';
 import StudyPlanDashboard from './StudyPlanDashboard';
 import PredictedVsActualCard from './PredictedVsActualCard';
 import CalendarMonth from './CalendarMonth';
-import { getTodaySlice, countRemainingTodayTasks } from '../services/selectors/todaySlice';
-import { resolveActivityDrill } from '../services/activityDrillRouter';
-import { getSessionAdherence } from '../services/selectors/sessionAdherence';
+import { countRemainingTodayTasks, isStarterPlan } from '../services/selectors/todaySlice';
+import { buildLivingDaySlice } from '../services/livingPlan';
+import { resolveActivityDrill, pickModuleWeakness } from '../services/activityDrillRouter';
 import { summarizePredictions } from '../services/selectors/predictionSummary';
 import { getPracticedDayKeys } from '../services/selectors/practicedDays';
-import { formatDailyIntro } from '../services/selectors/dailyIntro';
 import { getMathWeaknesses, getRWWeaknesses } from '../services/selectors/weaknesses';
 import { isGoalAchieved, goalDelta } from '../services/selectors/goalProgress';
 import { isScoreableAttempt, getLatestTestStats } from '../services/selectors/latestTestStats';
-import { buildPerformanceTiles } from '../services/selectors/performanceTiles';
+import { getEstimatedBaseline } from '../services/selectors/estimatedBaseline';
+import { useFeatureFlag } from '../hooks/useFeatureFlag';
+import { buildPerformanceTiles, buildDiagnosticTiles } from '../services/selectors/performanceTiles';
+import { buildHomeTiles } from '../services/selectors/homeTiles';
+import { getScoreReportState, getLatestOfficialScore } from '../services/selectors/scoreReport';
+import { getUserTestDates, splitTestDates } from '../services/selectors/testDates';
+import TestDatePicker from './TestDatePicker';
+import ScoreReportCard from './ScoreReportCard';
+import TestDayCountdown from './TestDayCountdown';
+import WeekPracticeStrip from './WeekPracticeStrip';
+import { hasRealTestScore } from '../services/selectors/diagnosticVariant';
 import { snapToScale } from '../services/scoring/scaleTables';
 import { getDaysUntilTest } from '../services/selectors/daysUntilTest';
+import { buildDiagnosisNuances, pickHomeNuance } from '../services/selectors/diagnosisNuances';
 import { buildPacingTelemetry } from '../services/selectors/pacingTelemetry';
 import { buildPacingSession } from '../services/pacingService';
 import { getRecentMisses } from '../services/selectors/recentMisses';
 import { buildDailySession } from '../services/dailyReviewEngine';
 import { formatPatternLabel } from '../services/selectors/missedPatternLabel';
 import { loadPracticeTests, loadMathBank, loadRWBank } from '../data/corpusLoader';
-import { MathText } from './MathText';
 import { trackAddPhotoClicked } from '../services/analyticsService';
-import { PlayIcon, ChartBarIcon, TrendingUpIcon, ClipboardIcon, CameraIcon, MicroscopeIcon, TimerIcon, ArrowRightIcon, BrainIcon, TargetIcon, VideoCameraIcon, CheckCircleIcon, CrossIcon, LockIcon } from '../design/icons';
+import { ClipboardIcon, CameraIcon, MicroscopeIcon, TimerIcon, ArrowRightIcon, BrainIcon, TargetIcon, VideoCameraIcon, CheckCircleIcon, CrossIcon, LockIcon } from '../design/icons';
 import { parseLocalDate } from '../utils/localDate';
 import { injectAnimations, useCountUp } from '../design/animations';
-import { DataCard } from './ui/DataCard';
 import { DashboardSkeleton } from './ui/Skeleton';
-import { PrimaryButton, SecondaryButton } from './ui/Button';
 import Avatar, { AVATAR_SIZES } from './ui/Avatar';
 import './StudentDashboard.css';
 import './StudentDashboardV2.css';
@@ -40,25 +45,6 @@ import './StudentDashboardV2.css';
 // Official SAT test dates live in the canonical source: src/data/satTestDates.js
 // (import { SAT_TEST_DATES, getUpcomingSATDates, getSATNameFromDate } when the
 // dashboard needs an official-date picker; see the inner-onboarding chips).
-
-const MODULES = [
-  { id: 'linear-equations', title: 'Linear Equations', lessonCount: 24 },
-  { id: 'functions', title: 'Functions', lessonCount: 10 },
-  { id: 'systems', title: 'System of Equations', lessonCount: 14 },
-  { id: 'transformations', title: 'Transformations', lessonCount: 15 },
-  { id: 'exponents', title: 'Exponents & Exponential Functions', lessonCount: 12 },
-  { id: 'percents', title: 'Percents', lessonCount: 17 },
-  { id: 'equivalent-expressions', title: 'Equivalent Expressions', lessonCount: 3 },
-  { id: 'quadratics', title: 'Quadratic Functions & Equations', lessonCount: 18 },
-  { id: 'radians-degrees', title: 'Radians & Degrees', lessonCount: 4 },
-  { id: 'triangles', title: 'Triangles', lessonCount: 35 },
-  { id: 'circles', title: 'Circles', lessonCount: 22 },
-  { id: 'volume', title: 'Volume', lessonCount: 9 },
-  { id: 'statistics', title: 'Statistics', lessonCount: 12 },
-  { id: 'dimensional-analysis', title: 'Dimensional Analysis', lessonCount: 4 }
-];
-
-const TOTAL_LESSONS = 199;
 
 
 const StudentDashboard = ({
@@ -82,10 +68,25 @@ const StudentDashboard = ({
   onStartReview,
   onStartPracticeTest,
   onStartDiagnostic,
+  // Plan check-in activity launch (short focus-weighted sitting). Falls back
+  // to onStartDiagnostic for callers that don't pass it.
+  onStartPlanCheckIn,
+  innerOnboardingPending = false,
+  onResumeInnerOnboarding,
   onStartPacing,
   onOpenProfile,
   onRetrySimilar,
   onViewFullDiagnosis,
+  // Diagnostic-only state: re-open the diagnosis screen the student saw when
+  // the diagnostic finished (no practice test yet, so no DiagnosticReport).
+  onViewDiagnosis,
+  // Nuance actions on the score hero (raise a too-low target, fix a past test
+  // date): opens Profile at SAT Goals. Falls back to onOpenProfile.
+  onEditGoals,
+  // Score prompt after a test date passes (useAuth.recordScoreReport).
+  onRecordScoreReport,
+  // Full-list date writes (useAuth.updateTestDates) for the inline picker.
+  onUpdateTestDates,
   onBrowseLessons,
   onOpenPractice,
   onOpenTutor,
@@ -100,12 +101,12 @@ const StudentDashboard = ({
   onCompleteActivity,
   onUncompleteActivity,
   onEditPlan,
-  onReviewPastTests,
   onReviewTestWrong,
   activeTab: controlledActiveTab,
   onTabChange,
   showCheckInCard = false,
   onStartCheckIn,
+  miniDiagnostic = null,
 }) => {
   // Tab state is lifted to App when controlled (activeTab + onTabChange) so it
   // survives this component unmounting during a pacing drill / test review and
@@ -115,6 +116,10 @@ const StudentDashboard = ({
   const [internalActiveTab, setInternalActiveTab] = useState('dashboard');
   const activeTab = controlledActiveTab ?? internalActiveTab;
   const setActiveTab = onTabChange || setInternalActiveTab;
+  // Diagnostic v2 changes the first-run hero's promise copy (40Q adaptive in
+  // the real test runner vs the legacy 24Q shell). Same flag App gates the
+  // experience on, so copy and experience can never disagree.
+  const ffDiagnosticV2 = useFeatureFlag('diagnosticV2');
   // Practice-test resolver for the recent-misses card (Stage 2c of the
   // bundle-split plan). The test catalog is its own async chunk now, so we
   // hold the resolver FUNCTION in state once the chunk arrives — note the
@@ -129,26 +134,10 @@ const StudentDashboard = ({
     return () => { cancelled = true; };
   }, []);
   const [showDatePicker, setShowDatePicker] = useState(false);
-  const [showTargetPicker, setShowTargetPicker] = useState(false);
+  // The rail countdown's own copy of the date manager (the hero has another).
+  const [countdownManaging, setCountdownManaging] = useState(false);
   const [showCurrentScorePicker, setShowCurrentScorePicker] = useState(false);
-  const [selectedDate, setSelectedDate] = useState(user?.testDate || '');
-  const [tempTargetScore, setTempTargetScore] = useState(user?.targetScore || 600);
   const [tempCurrentScore, setTempCurrentScore] = useState(user?.currentScore || 500);
-
-  const totalCompleted = Object.values(completedLessons || {}).filter(l => l?.completed).length;
-  const completionPercent = Math.round((totalCompleted / TOTAL_LESSONS) * 100);
-
-  const getModuleCompleted = (moduleId) => {
-    return Object.keys(completedLessons || {}).filter(key =>
-      key.startsWith(`${moduleId}-`) && completedLessons[key]?.completed
-    ).length;
-  };
-
-  const moduleProgress = MODULES.map(m => ({
-    ...m,
-    completed: getModuleCompleted(m.id),
-    percent: Math.round((getModuleCompleted(m.id) / m.lessonCount) * 100)
-  }));
 
   const practiceEntries = Object.entries(practiceProgress || {}).filter(([_, p]) => p.bestScore !== undefined);
   // Performance data for the three colorful tiles, derived from the most
@@ -158,9 +147,6 @@ const StudentDashboard = ({
     () => buildPerformanceTiles(practiceTestResults),
     [practiceTestResults],
   );
-  const totalCorrect = performanceTiles.overall.correct;
-  const totalQuestions = performanceTiles.overall.total;
-  const practicePercent = performanceTiles.overall.percent;
 
   const { projectedScore, projectedRange, projectedTestsCount, scoreHistory, latestIsMultiSection } = useMemo(() => {
     if (!practiceTestResults || Object.keys(practiceTestResults).length === 0) {
@@ -228,16 +214,20 @@ const StudentDashboard = ({
     };
   }, [practiceTestResults]);
 
-  // Strongest / biggest-opportunity SECTION (Math vs R&W), derived from the
-  // combined per-section signal above. Replaces the old per-math-module pick,
-  // which could never surface R&W (it matched frozen practiceProgress against
-  // a hardcoded math-only module list).
-  const strongest = performanceTiles.strongest;
-  const opportunity = performanceTiles.opportunity;
-
   // Shared selector — one day-count for the SAT date everywhere (CalendarMonth,
   // study-plan hero, and this rail all consume the same signed integer).
   const daysUntilTest = getDaysUntilTest(user?.testDate);
+  // Every sitting the student holds; user.testDate is the primary (next one).
+  const userTestDates = useMemo(() => getUserTestDates(user), [user?.testDate, user?.testDates]); // eslint-disable-line react-hooks/exhaustive-deps
+  const otherTestDates = useMemo(() => {
+    const { upcoming } = splitTestDates(userTestDates);
+    return upcoming.filter((d) => d !== user?.testDate);
+  }, [userTestDates, user?.testDate]);
+  const applyTestDates = (dates) => {
+    if (typeof onUpdateTestDates === 'function') return onUpdateTestDates(dates);
+    if (typeof onUpdateTestDate === 'function') return onUpdateTestDate(dates[0] || null);
+    return undefined;
+  };
 
   const recommendations = useMemo(() => {
     return generateRecommendations({
@@ -254,17 +244,32 @@ const StudentDashboard = ({
   // no auto-refresh on midnight rollover (the user can refresh).
   const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const todayDayName = DAY_NAMES[new Date().getDay()];
-  const todaySlice = useMemo(() => getTodaySlice(studyPlan, todayDayName), [studyPlan, todayDayName]);
-  const sessionAdherence = useMemo(
-    () => getSessionAdherence({ practiceProgress, practiceTestResults, drillDays }),
-    [practiceProgress, practiceTestResults, drillDays],
+  // Living slice: today's list reshaped by the newest drill/review evidence
+  // (proven skills drop, weakest pending skill pulls forward). Falls back to
+  // the plain scheduled slice internally on any error.
+  const todaySlice = useMemo(
+    () => buildLivingDaySlice(studyPlan, { todayDayName, skillProgress, practiceTestResults, reviewQueue }),
+    [studyPlan, todayDayName, skillProgress, practiceTestResults, reviewQueue]
   );
   const hasStudyPlan = !!(studyPlan && Array.isArray(studyPlan.weeks) && studyPlan.weeks.length > 0);
-  // First-run (no-data) dashboard: no scored practice test AND no study plan.
-  // In this state the protected performance grid + projected chart are already
-  // gated off, so we replace the flat "everything is locked" dump with a single
-  // welcoming get-started layout (one CTA + goal/exam tiles + what-you'll-unlock).
-  const noData = !performanceTiles.hasData && !hasStudyPlan;
+  // First-run (no-data) dashboard: no scored practice test, no study plan AND
+  // no completed diagnostic. In this state the protected performance grid +
+  // projected chart are already gated off, so we replace the flat "everything
+  // is locked" dump with a single welcoming get-started layout (one CTA +
+  // goal/exam tiles + what-you'll-unlock). The diagnostic record is checked
+  // directly (same "completed" signal the Tests page uses) so a plan-hydration
+  // gap — e.g. right after resetting the only practice test — can never tell a
+  // measured student to "take your diagnostic" again.
+  const hasCompletedDiagnostic = !!miniDiagnostic;
+  // The onboarding STARTER plan is a scaffold, not a measurement: it exists
+  // only to hold the check-in until the diagnostic rebuilds it. It must not
+  // count as "data" here — when it did, the first-run home (the screen that
+  // carries the "Take your diagnostic" hero) never rendered for a freshly
+  // onboarded student, and the plan-present home only showed the diagnostic
+  // as "Today's focus" on the one weekday the generator pinned it to, so most
+  // new users never saw a diagnostic at all (founder, 2026-09-17).
+  const starterPlanOnly = hasStudyPlan && isStarterPlan(studyPlan);
+  const noData = !performanceTiles.hasData && (!hasStudyPlan || starterPlanOnly) && !hasCompletedDiagnostic;
   // Predicted vs Actual (Day 5 ADD B). summarizePredictions returns null when
   // no validated prediction exists yet, so the card hides itself pre-2nd-test.
   const predictionSummary = useMemo(
@@ -282,22 +287,37 @@ const StudentDashboard = ({
   // disagree with the widget when the latest attempt wasn't the best.
   const latestStats = useMemo(() => getLatestTestStats(practiceTestResults), [practiceTestResults]);
   const latestScore = latestStats ? latestStats.scaledScore : null;
+  // Diagnostic v2: the diagnostic's estimated band fills the Current Score
+  // hero ONLY until the first real test score exists (selector enforces the
+  // outranking rule). Read-time fallback — never written to the profile.
+  // Flag-gated: the estimated hero is part of Diagnostic v2's dark ship —
+  // legacy v1 records must not light it up on flag-OFF production (that
+  // would make the flag no longer a rollback).
+  const estimatedBaseline = useMemo(
+    () => (ffDiagnosticV2 ? getEstimatedBaseline(miniDiagnostic, practiceTestResults) : null),
+    [ffDiagnosticV2, miniDiagnostic, practiceTestResults],
+  );
+  // Diagnostic v2: between finishing the diagnostic and the first scoreable
+  // practice test, the protected snapshot tiles read from the diagnostic —
+  // same tiles, same look, source labelled "your diagnostic" — instead of
+  // sitting empty above the estimated hero. Full tests outrank (the same
+  // rule the estimated hero uses); check-in records never feed them.
+  const diagnosticTiles = useMemo(
+    () => (ffDiagnosticV2 && !performanceTiles.hasData && !hasRealTestScore(practiceTestResults)
+      ? buildDiagnosticTiles(miniDiagnostic)
+      : null),
+    [ffDiagnosticV2, performanceTiles.hasData, miniDiagnostic, practiceTestResults],
+  );
+  const tilesFromDiagnostic = !!diagnosticTiles?.hasData;
+  // The three snapshot tiles: overall accuracy / consistency / pacing.
+  const homeTiles = useMemo(
+    () => buildHomeTiles({ miniDiagnostic, practiceTestResults, practiceProgress, drillDays, reviewStreak, studyPlan }),
+    [miniDiagnostic, practiceTestResults, practiceProgress, drillDays, reviewStreak, studyPlan],
+  );
   // Delta vs the PREVIOUS attempt, from the SAME selector as the headline, so
   // the arrow can never contradict the number (e.g. an up-arrow on a lower
   // retake). getLatestTestStats returns null on a single attempt or a
   // section/composite scale mismatch, and the render already hides null deltas.
-  const scoreDelta = latestStats ? latestStats.scoreDelta : null;
-  const topWeakness = useMemo(() => {
-    if (!studyPlan) return null;
-    const math = getMathWeaknesses(studyPlan);
-    const rw = getRWWeaknesses(studyPlan);
-    const merged = [...math, ...rw].sort((a, b) => (a.accuracy ?? 100) - (b.accuracy ?? 100));
-    return merged[0] || null;
-  }, [studyPlan]);
-  const dailyIntro = useMemo(
-    () => formatDailyIntro({ todaySlice, latestScore, topWeakness, firstName: user?.firstName }),
-    [todaySlice, latestScore, topWeakness, user?.firstName],
-  );
   // "Questions you struggled with" (item 16) — wrong answers from the last
   // test, hardest first, each with a retry-similar path into the bank.
   // Empty until the practice-tests chunk delivers the resolver (effect
@@ -308,6 +328,49 @@ const StudentDashboard = ({
     () => (resolveTest ? getRecentMisses(practiceTestResults, { resolveTest }) : []),
     [practiceTestResults, resolveTest],
   );
+  // Diagnostic-state twin of the "Pick up where you struggled" rail card: no
+  // test misses exist yet, so the card lists the diagnostic's weakest skills
+  // (the starter plan's weaknesses, lowest accuracy first) with a one-tap
+  // drill — same card, same rows, a practice path instead of a retry.
+  const diagnosticWeakSpots = useMemo(() => {
+    if (!tilesFromDiagnostic || recentMisses.length > 0 || !studyPlan) return [];
+    // plan.weaknesses is the ground-truth drill shape (can be EMPTY on a
+    // strong diagnostic — nothing crossed the weakness bar); plan.skillGaps
+    // carries every scored skill the plan is built from, so it's the
+    // fallback. Normalize both to { skillId, skill, accuracy, section }.
+    const fromWeaknesses = [...getMathWeaknesses(studyPlan), ...getRWWeaknesses(studyPlan)]
+      .filter((w) => w && w.skillId)
+      .map((w) => ({ skillId: w.skillId, skill: w.skill, accuracy: w.accuracy, section: w.section }));
+    const fromGaps = (Array.isArray(studyPlan.skillGaps) ? studyPlan.skillGaps : [])
+      .filter((g) => g && g.skillId)
+      .map((g) => ({
+        skillId: g.skillId,
+        skill: g.skillName,
+        accuracy: Number.isFinite(g.contentAccuracy) ? g.contentAccuracy : g.testAccuracy,
+        section: g.section === 'rw' ? 'rw' : 'math',
+      }));
+    // Last resort: the plan's own "Push past shaky" reinforcement drills
+    // (planRole 'reinforce' — skills that passed the attempt bar but sit
+    // 50-74% on the diagnostic). No per-row number here: the activity
+    // carries its accuracy only in prose, and skillProgress is all-time
+    // (drills + old tests), so a number from it would contradict the plan.
+    const fromReinforce = [];
+    (studyPlan.weeks || []).forEach((w) => (w?.activities || []).forEach((a) => {
+      if (!a || a.planRole !== 'reinforce' || !a.skillId) return;
+      fromReinforce.push({ skillId: a.skillId, skill: a.skillName, accuracy: null, section: a.section === 'rw' ? 'rw' : 'math', metaLabel: 'Not yet reliable' });
+    }));
+    const source = fromWeaknesses.length > 0 ? fromWeaknesses : (fromGaps.length > 0 ? fromGaps : fromReinforce);
+    const merged = source.sort((a, b) => (a.accuracy ?? 100) - (b.accuracy ?? 100));
+    const seen = new Set();
+    const out = [];
+    for (const w of merged) {
+      if (seen.has(w.skillId)) continue;
+      seen.add(w.skillId);
+      out.push(w);
+      if (out.length === 3) break;
+    }
+    return out;
+  }, [tilesFromDiagnostic, recentMisses.length, studyPlan]);
   // Tab count badges (Day 1 Acely-polish):
   //   dashboardCount = activities scheduled today that aren't completed
   //   studyPlanCount = total incomplete activities across all weeks
@@ -322,13 +385,6 @@ const StudentDashboard = ({
       return sum + acts.filter(a => !a.completed).length;
     }, 0);
   }, [studyPlan]);
-
-  const handleSelectTargetSchools = (schools) => {
-    if (schools && schools.length > 0 && onUpdateTargetSchools) {
-      onUpdateTargetSchools(schools);
-    }
-    setShowTargetPicker(false);
-  };
 
   const handleSelectCurrentScore = (score) => {
     if (score && onUpdateCurrentScore) {
@@ -401,8 +457,11 @@ const StudentDashboard = ({
         return;
       }
       if (route?.kind === 'module') {
-        // Legacy prescriptive shell — reachable as a FALLBACK only.
-        onStartPractice(route.moduleId, route.sectionName);
+        // Legacy prescriptive shell — reachable as a FALLBACK only. Hand it the
+        // matching weakness (if any) so the drill's diagnostic sentence renders.
+        onStartPractice(route.moduleId, route.sectionName, {
+          weakness: pickModuleWeakness(activity, Array.isArray(studyPlan?.weaknesses) ? studyPlan.weaknesses : []),
+        });
         return;
       }
       // Unroutable activity (no drill pool, no module) — never leave a dead
@@ -422,22 +481,6 @@ const StudentDashboard = ({
     const session = buildPacingSession(buildPacingTelemetry(practiceTestResults));
     const launch = onStartPacing || onStartPracticeTest;
     if (typeof launch === 'function') launch(session.config);
-  };
-
-  const formatTestDate = (dateStr) => {
-    if (!dateStr) return '';
-    // parseLocalDate: date-only strings must parse as LOCAL midnight (UTC
-    // parse shows the previous day in negative-offset timezones).
-    const date = parseLocalDate(dateStr);
-    return date ? date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
-  };
-
-  const handleSelectDate = (dateValue) => {
-    if (dateValue && onUpdateTestDate) {
-      onUpdateTestDate(dateValue);
-      setSelectedDate(dateValue);
-    }
-    setShowDatePicker(false);
   };
 
   useEffect(() => { injectAnimations(); }, []);
@@ -497,6 +540,88 @@ const StudentDashboard = ({
     return <DashboardSkeleton />;
   }
 
+  const countdownBlock = (
+        <TestDayCountdown
+          className="is-header"
+          testDate={user?.testDate}
+          testDates={userTestDates}
+          managing={countdownManaging}
+          onManage={(typeof onUpdateTestDates === 'function' || typeof onUpdateTestDate === 'function') ? () => setCountdownManaging((v) => !v) : null}
+        >
+          <TestDatePicker
+            selected={userTestDates}
+            allowClear
+            onChange={(dates) => { applyTestDates(dates); }}
+            onDone={() => setCountdownManaging(false)}
+          />
+        </TestDayCountdown>
+  );
+  const renderHeader = (withAside) => (
+        <div className="dashboard-header-row">
+          <div className="dashboard-header-main">
+          <div className="dashboard-greeting-row">
+            <button
+              type="button"
+              className="dashboard-avatar-btn"
+              aria-label={user?.photoDataUrl ? 'Open your profile' : 'Add a profile photo'}
+              onClick={handleAvatarClick}
+            >
+              <Avatar user={user} size={AVATAR_SIZES.md} />
+              {!user?.photoDataUrl && (
+                <span className="dashboard-avatar-camera" aria-hidden="true">
+                  <CameraIcon size={11} />
+                </span>
+              )}
+            </button>
+            <h1 className="dashboard-greeting">
+              {getGreeting()}{user?.firstName ? `, ${user.firstName}` : ''}
+            </h1>
+          </div>
+          {/* D-IH-2: hide the subtitle when the Today's focus section already
+              anchors the user — it has its own copy. Brand-new users still see
+              the longer pitch. */}
+          {!(activeTab === 'dashboard' && hasStudyPlan) && (
+            <p className="dashboard-subtitle">
+              Study with your personalized AI learning plan and get instant hints, explanations, and more with our AI Tutor.
+            </p>
+          )}
+          <div className="dashboard-top-tabs">
+            <button
+              className={`dashboard-top-tab${activeTab === 'dashboard' ? ' active' : ''}`}
+              onClick={() => setActiveTab('dashboard')}
+            >
+              Dashboard
+              {dashboardCount > 0 && (
+                <span className="tab-count" aria-label={`${dashboardCount} tasks today`}>
+                  {dashboardCount}
+                </span>
+              )}
+            </button>
+            <button
+              className={`dashboard-top-tab${activeTab === 'studyPlan' ? ' active' : ''}`}
+              onClick={() => setActiveTab('studyPlan')}
+            >
+              Study Plan
+              {studyPlanCount > 0 && (
+                <span className="tab-count" aria-label={`${studyPlanCount} activities remaining`}>
+                  {studyPlanCount}
+                </span>
+              )}
+              {studyPlanArtifact?.delta?.skillChanges?.length > 0 && !dismissedDelta && (
+                <span className="tab-badge">Updated</span>
+              )}
+            </button>
+          </div>
+          </div>
+          {/* Test-day countdown beside the greeting — only when the page isn't
+              the v2 grid (Study Plan tab, first-run); on the v2 dashboard the
+              countdown + week sparks lead the right rail instead, so the rail
+              starts level with the greeting and the left column has no gap
+              (founder 2026-08-25). */}
+          {withAside && <div className="dashboard-header-aside">{countdownBlock}</div>}
+        </div>
+  );
+
   return (
     <div className="student-dashboard-container">
       {/* Greeting — original layout, plus the profile pic (user call
@@ -505,61 +630,7 @@ const StudentDashboard = ({
           opens Profile; camera badge signals add-a-photo when none set.
           firstName, not displayName — the user doc never carries
           displayName, so the old read rendered a nameless greeting. */}
-      <div className="dashboard-header-row">
-        <div className="dashboard-greeting-row">
-          <button
-            type="button"
-            className="dashboard-avatar-btn"
-            aria-label={user?.photoDataUrl ? 'Open your profile' : 'Add a profile photo'}
-            onClick={handleAvatarClick}
-          >
-            <Avatar user={user} size={AVATAR_SIZES.md} />
-            {!user?.photoDataUrl && (
-              <span className="dashboard-avatar-camera" aria-hidden="true">
-                <CameraIcon size={11} />
-              </span>
-            )}
-          </button>
-          <h1 className="dashboard-greeting">
-            {getGreeting()}{user?.firstName ? `, ${user.firstName}` : ''}
-          </h1>
-        </div>
-        {/* D-IH-2: hide the subtitle when the Today's focus section already
-            anchors the user — it has its own copy. Brand-new users still see
-            the longer pitch. */}
-        {!(activeTab === 'dashboard' && hasStudyPlan) && (
-          <p className="dashboard-subtitle">
-            Study with your personalized AI learning plan and get instant hints, explanations, and more with our AI Tutor.
-          </p>
-        )}
-        <div className="dashboard-top-tabs">
-          <button
-            className={`dashboard-top-tab${activeTab === 'dashboard' ? ' active' : ''}`}
-            onClick={() => setActiveTab('dashboard')}
-          >
-            Dashboard
-            {dashboardCount > 0 && (
-              <span className="tab-count" aria-label={`${dashboardCount} tasks today`}>
-                {dashboardCount}
-              </span>
-            )}
-          </button>
-          <button
-            className={`dashboard-top-tab${activeTab === 'studyPlan' ? ' active' : ''}`}
-            onClick={() => setActiveTab('studyPlan')}
-          >
-            Study Plan
-            {studyPlanCount > 0 && (
-              <span className="tab-count" aria-label={`${studyPlanCount} activities remaining`}>
-                {studyPlanCount}
-              </span>
-            )}
-            {studyPlanArtifact?.delta?.skillChanges?.length > 0 && !dismissedDelta && (
-              <span className="tab-badge">Updated</span>
-            )}
-          </button>
-        </div>
-      </div>
+      {(activeTab === 'studyPlan' || noData) && renderHeader(true)}
 
       {activeTab === 'studyPlan' ? (
         <div className="studyplan-tab-content">
@@ -582,10 +653,11 @@ const StudentDashboard = ({
               user={user}
               onStartPractice={onStartPractice}
               onStartPracticeTest={onStartPracticeTest}
+              onStartDiagnostic={onStartPlanCheckIn || onStartDiagnostic}
+              miniDiagnostic={miniDiagnostic}
               onCompleteActivity={onCompleteActivity}
               onUncompleteActivity={onUncompleteActivity}
               onEditPlan={onEditPlan}
-              onReviewPastTests={onReviewPastTests}
               onStartReview={onStartReview}
               onStartPacing={onStartPacing}
               onReviewTestWrong={onReviewTestWrong}
@@ -618,12 +690,19 @@ const StudentDashboard = ({
               <span className="fr-badge">First step</span>
               <h2 className="fr-hero-title">Let&rsquo;s find out exactly where you stand.</h2>
               <p className="fr-hero-desc">
-                Take a 15-minute adaptive diagnostic. SEVA pinpoints every weak skill, then builds your entire study plan around it.
+                {ffDiagnosticV2
+                  ? 'Take an adaptive diagnostic — the real test experience, about half the length of a full SAT. SEVA pinpoints every weak skill, then builds your entire study plan around it.'
+                  : 'Take a 15-minute adaptive diagnostic. SEVA pinpoints every weak skill, then builds your entire study plan around it.'}
               </p>
               <div className="fr-hero-actions">
                 <button type="button" className="fr-cta" onClick={onStartDiagnostic}>
                   Take your diagnostic <ArrowRightIcon size={17} color="currentColor" />
                 </button>
+                {innerOnboardingPending && onResumeInnerOnboarding ? (
+                  <button type="button" className="fr-cta fr-cta--ghost" onClick={onResumeInnerOnboarding}>
+                    Finish onboarding
+                  </button>
+                ) : null}
                 {recommendations[0] ? (
                   <button type="button" className="fr-warmup" onClick={() => handleWarmUpClick(recommendations[0])}>
                     or warm up first: {recommendations[0].title.toLowerCase()}
@@ -631,9 +710,19 @@ const StudentDashboard = ({
                 ) : null}
               </div>
               <div className="fr-hero-meta">
-                <span><TimerIcon size={14} color="currentColor" /> ~15 minutes</span>
-                <span><CheckCircleIcon size={14} color="currentColor" /> 24 adaptive questions</span>
-                <span><CrossIcon size={13} color="currentColor" /> not a full test</span>
+                {ffDiagnosticV2 ? (
+                  <>
+                    <span><TimerIcon size={14} color="currentColor" /> ~55 minutes</span>
+                    <span><CheckCircleIcon size={14} color="currentColor" /> 40 adaptive questions</span>
+                    <span><CrossIcon size={13} color="currentColor" /> half a full test</span>
+                  </>
+                ) : (
+                  <>
+                    <span><TimerIcon size={14} color="currentColor" /> ~15 minutes</span>
+                    <span><CheckCircleIcon size={14} color="currentColor" /> 24 adaptive questions</span>
+                    <span><CrossIcon size={13} color="currentColor" /> not a full test</span>
+                  </>
+                )}
               </div>
             </div>
             {(user?.targetScore || user?.testDate) && (
@@ -688,8 +777,12 @@ const StudentDashboard = ({
                 <span className="fr-step-num is-locked"><LockIcon size={11} color="currentColor" /> Step 2</span>
               </div>
               <div className="fr-step-title">A week-by-week plan</div>
-              <p className="fr-step-desc">Built from your diagnostic — what to drill first, scheduled day by day.</p>
-              <span className="fr-step-note">Unlocks with your diagnostic <ArrowRightIcon size={14} color="currentColor" /></span>
+              <p className="fr-step-desc">
+                {starterPlanOnly
+                  ? 'Your starter plan is built from your answers. The diagnostic rebuilds it from real evidence, day by day.'
+                  : 'Built from your diagnostic — what to drill first, scheduled day by day.'}
+              </p>
+              <span className="fr-step-note">{starterPlanOnly ? 'Rebuilt by your diagnostic' : 'Unlocks with your diagnostic'} <ArrowRightIcon size={14} color="currentColor" /></span>
             </div>
             <div className="fr-step is-locked">
               <div className="fr-step-top">
@@ -745,55 +838,53 @@ const StudentDashboard = ({
           />
         )}
 
-        <div className="hv2-grid">
+        <div className="hv2-grid is-page">
+          {renderHeader(false)}
           {/* ============ LEFT COLUMN ============ */}
           <div className="hv2-main">
 
-            {/* PERFORMANCE SNAPSHOT (protected tiles, restyled per mock) */}
-            {performanceTiles.hasData && (
+            {/* PERFORMANCE SNAPSHOT (protected tile design; data from
+                selectors/homeTiles — founder 2026-08-24: orange = overall
+                accuracy, green = practice consistency, purple = pacing) */}
+            {homeTiles.hasData && (
               <div>
                 <div className="hv2-section-head">
                   <h2 className="hv2-section-title">Performance snapshot</h2>
-                  <span className="hv2-section-meta">Latest practice test</span>
+                  <span className="hv2-section-meta">{homeTiles.sourceLabel}</span>
                 </div>
                 <div className="hv2-perf">
                   <div className="hv2-perf-accuracy">
-                    <div className="hv2-eyebrow">Practice Accuracy</div>
-                    <div className="hv2-big-pct">{practicePercent || 0}<span>%</span></div>
-                    <div className="hv2-perf-detail">{totalCorrect} of {totalQuestions} correct · latest practice test</div>
+                    <div className="hv2-eyebrow">Overall accuracy</div>
+                    <div className="hv2-big-pct">{homeTiles.accuracy.percent}<span>%</span></div>
+                    <div className="hv2-perf-detail">{homeTiles.accuracy.detail}</div>
                   </div>
                   <div className="hv2-perf-stack">
                     <div className="hv2-split hv2-split-strong">
-                      {strongest ? (
-                        <>
-                          <div className="hv2-split-num">{strongest.accuracy}%</div>
-                          <div className="hv2-split-body">
-                            <div className="hv2-split-eyebrow">Strongest Section</div>
-                            <div className="hv2-split-name">{strongest.label}</div>
-                            <div className="hv2-split-detail">{strongest.correct} of {strongest.total} correct</div>
-                          </div>
-                        </>
-                      ) : (
-                        <div className="hv2-split-empty">
-                          <div className="hv2-split-eyebrow">Strongest Section</div>
-                          <div className="hv2-empty-hint">Take a practice test to see your strongest section</div>
-                        </div>
-                      )}
+                      <div className="hv2-split-num">
+                        <span className="hv2-split-figure">{homeTiles.consistency.value}<span className="hv2-split-unit">{homeTiles.consistency.unit}</span></span>
+                      </div>
+                      <div className="hv2-split-body">
+                        <div className="hv2-split-eyebrow">Consistency</div>
+                        <div className="hv2-split-name">{homeTiles.consistency.name}</div>
+                        <div className="hv2-split-detail">{homeTiles.consistency.detail}</div>
+                      </div>
                     </div>
                     <div className="hv2-split hv2-split-opp">
-                      {opportunity && !opportunity.empty ? (
+                      {homeTiles.pacing ? (
                         <>
-                          <div className="hv2-split-num">{opportunity.accuracy}%</div>
+                          <div className="hv2-split-num">
+                            <span className="hv2-split-figure">{homeTiles.pacing.value}<span className="hv2-split-unit">{homeTiles.pacing.unit}</span></span>
+                          </div>
                           <div className="hv2-split-body">
-                            <div className="hv2-split-eyebrow">Biggest Opportunity</div>
-                            <div className="hv2-split-name">{opportunity.label}</div>
-                            <div className="hv2-split-detail">{opportunity.correct} of {opportunity.total} correct</div>
+                            <div className="hv2-split-eyebrow">Pacing</div>
+                            <div className="hv2-split-name">{homeTiles.pacing.name}</div>
+                            <div className="hv2-split-detail">{homeTiles.pacing.detail}</div>
                           </div>
                         </>
                       ) : (
                         <div className="hv2-split-empty">
-                          <div className="hv2-split-eyebrow">Biggest Opportunity</div>
-                          <div className="hv2-empty-hint">{opportunity?.empty ? `Take a test with ${opportunity.label} to compare your sections` : 'Take a practice test to compare your sections'}</div>
+                          <div className="hv2-split-eyebrow">Pacing</div>
+                          <div className="hv2-empty-hint">Take a timed practice test to measure your pacing</div>
                         </div>
                       )}
                     </div>
@@ -802,31 +893,60 @@ const StudentDashboard = ({
               </div>
             )}
 
-            {/* SCORE TRAJECTORY HERO */}
-            {latestScore !== null && (() => {
-              const goalArgs = { latestScore, targetScore: user?.targetScore, isMultiSection: latestIsMultiSection };
+            {/* SCORE TRAJECTORY HERO — falls back to the diagnostic's
+                estimated band until the first real test score exists
+                (Diagnostic v2; the selector enforces full-tests-outrank). */}
+            {(latestScore !== null || estimatedBaseline) && (() => {
+              const isEstimated = latestScore === null;
+              const heroScore = isEstimated ? estimatedBaseline.mid : latestScore;
+              const heroIsMultiSection = isEstimated ? true : latestIsMultiSection;
+              const goalArgs = { latestScore: heroScore, targetScore: user?.targetScore, isMultiSection: heroIsMultiSection };
               const goalAchieved = isGoalAchieved(goalArgs);
               const goalGap = goalDelta(goalArgs);
               const goalForBar = (user?.targetScore && user.targetScore > 800) ? user.targetScore : 1500;
               // Progress is measured against the 400-1600 composite band (the
               // bar's floor label is "400"), so anchor the fill at 400 — not 0.
               // A raw latestScore/goalForBar made a 400 composite read 27% full.
-              const pct = Math.max(0, Math.min(100, Math.round(((latestScore - 400) / (goalForBar - 400)) * 100)));
+              const pct = Math.max(0, Math.min(100, Math.round(((heroScore - 400) / (goalForBar - 400)) * 100)));
               const testDateIsPast = daysUntilTest !== null && daysUntilTest < 0;
+              // One nuance line, most urgent first: a goal the whole range
+              // already clears is a goal that can't steer a plan — say so and
+              // hand over the action, instead of "100% of the way there".
+              const officialScore = getLatestOfficialScore(user?.scoreReports);
+              const heroNuance = pickHomeNuance(buildDiagnosisNuances({
+                band: isEstimated ? { low: estimatedBaseline.low, high: estimatedBaseline.high } : null,
+                score: (!isEstimated && heroIsMultiSection) ? heroScore : null,
+                officialScore: officialScore?.composite ?? null,
+                targetScore: user?.targetScore ?? null,
+                testDate: user?.testDate ?? null,
+                scoreReports: user?.scoreReports ?? null,
+              }));
+              // Test-date actions open the inline picker right here; only the
+              // target still lives on Profile.
+              const openGoals = (kind) => {
+                if (kind === 'testDate' && (typeof onUpdateTestDates === 'function' || typeof onUpdateTestDate === 'function')) { setShowDatePicker(true); return; }
+                if (typeof onEditGoals === 'function') onEditGoals(kind);
+                else if (typeof onOpenProfile === 'function') onOpenProfile();
+              };
               return (
                 <div className="hv2-score-hero">
                   <div className="hv2-score-top">
                     <div>
-                      <div className="hv2-score-eyebrow">Current Score</div>
+                      <div className="hv2-score-eyebrow">{isEstimated ? 'Estimated Starting Score' : 'Current Score'}</div>
                       <div className="hv2-score-numrow">
-                        <span className="hv2-score-num">{latestScore}</span>
+                        <span className="hv2-score-num">{heroScore}</span>
                         {user?.targetScore != null && goalGap != null && (
                           <span className={`hv2-goal-pill${goalAchieved ? ' is-achieved' : ''}`}>
                             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
-                            {goalAchieved ? `${goalGap} above target` : `${goalGap} to goal`}
+                            {goalAchieved ? `${Math.abs(goalGap)} above target` : `${Math.abs(goalGap)} to goal`}
                           </span>
                         )}
                       </div>
+                      {isEstimated && (
+                        <div className="hv2-hero-foot-label" style={{ marginTop: '6px' }}>
+                          Estimated {estimatedBaseline.low}&ndash;{estimatedBaseline.high} from your diagnostic &middot; a full practice test sharpens it
+                        </div>
+                      )}
                     </div>
                     {(latestStats?.math?.scaled != null || latestStats?.rw?.scaled != null) && (
                       <div className="hv2-sub-tiles">
@@ -838,11 +958,22 @@ const StudentDashboard = ({
                         )}
                       </div>
                     )}
+                    {isEstimated && (estimatedBaseline.mathBand || estimatedBaseline.rwBand) && (
+                      <div className="hv2-sub-tiles">
+                        {estimatedBaseline.mathBand && (
+                          <div className="hv2-sub-tile"><div className="hv2-sub-tile-label">Math</div><div className="hv2-sub-tile-num">{estimatedBaseline.mathBand.low}&ndash;{estimatedBaseline.mathBand.high}</div></div>
+                        )}
+                        {estimatedBaseline.rwBand && (
+                          <div className="hv2-sub-tile"><div className="hv2-sub-tile-label">R&amp;W</div><div className="hv2-sub-tile-num">{estimatedBaseline.rwBand.low}&ndash;{estimatedBaseline.rwBand.high}</div></div>
+                        )}
+                      </div>
+                    )}
                   </div>
                   {/* Only meaningful for a 400-1600 composite: a single-section
                       200-800 latest against a composite goal is apples-to-oranges,
-                      so hide the bar entirely when the latest isn't multi-section. */}
-                  {user?.targetScore != null && latestIsMultiSection && (
+                      so hide the bar entirely when the latest isn't multi-section.
+                      The estimated baseline is always composite. */}
+                  {user?.targetScore != null && heroIsMultiSection && (
                     <div className="hv2-progress-wrap">
                       <div className="hv2-progress-bar">
                         <div className="hv2-progress-fill" style={{ width: `${pct}%` }} />
@@ -850,21 +981,55 @@ const StudentDashboard = ({
                       </div>
                       <div className="hv2-progress-labels">
                         <span className="lo">400</span>
-                        <span className="mid">You're {pct}% of the way there</span>
+                        <span className="mid">{goalAchieved ? "You're past your goal" : `You're ${pct}% of the way there`}</span>
                         <span className="hi">Goal {goalForBar}</span>
                       </div>
                     </div>
                   )}
-                  {(user?.testDate || user?.targetSchools?.[0]) && (
+                  {heroNuance && (
+                    <div className="hv2-hero-note" role="note">
+                      <span>{heroNuance.short}</span>
+                      {heroNuance.action && (
+                        <button type="button" className="hv2-hero-note-link" onClick={() => openGoals(heroNuance.action.kind)}>
+                          {heroNuance.action.label}
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </button>
+                      )}
+                    </div>
+                  )}
+                  {showDatePicker && (
+                    <TestDatePicker
+                      selected={userTestDates}
+                      allowClear
+                      onChange={(dates) => { applyTestDates(dates); }}
+                      onDone={() => setShowDatePicker(false)}
+                    />
+                  )}
+                  {(user?.testDate || user?.targetSchools?.[0] || officialScore) && (
                     <div className="hv2-hero-footer">
                       {user?.testDate && (
-                        <div className="hv2-hero-foot-item">
+                        <button
+                          type="button"
+                          className="hv2-hero-foot-item hv2-hero-foot-btn"
+                          onClick={() => openGoals('testDate')}
+                          title="Change your test date"
+                        >
                           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--hv2-text-3)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
                           <div>
-                            <div className="hv2-hero-foot-label">Exam</div>
+                            <div className="hv2-hero-foot-label">{otherTestDates.length > 0 ? `Exam · ${otherTestDates.length + 1} dates` : 'Exam'}</div>
                             <div className={`hv2-hero-foot-val${testDateIsPast ? ' is-warn' : ''}`}>
-                              {parseLocalDate(user.testDate)?.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}{!testDateIsPast && daysUntilTest != null ? ` · ${daysUntilTest} days` : ''}
+                              {parseLocalDate(user.testDate)?.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}{!testDateIsPast && daysUntilTest != null ? ` · ${daysUntilTest} days` : testDateIsPast ? ' · taken' : ''}
+                              {otherTestDates.length > 0 && <span style={{ color: 'var(--hv2-text-3)', fontWeight: 600 }}>{` · then ${otherTestDates.map((d) => parseLocalDate(d)?.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })).join(', ')}`}</span>}
                             </div>
+                          </div>
+                        </button>
+                      )}
+                      {officialScore && (
+                        <div className="hv2-hero-foot-item">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--hv2-text-3)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="m8.2 13.9-1.7 8.1 5.5-3 5.5 3-1.7-8.1"/></svg>
+                          <div>
+                            <div className="hv2-hero-foot-label">Official SAT · {parseLocalDate(officialScore.testDate)?.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</div>
+                            <div className="hv2-hero-foot-val">{officialScore.composite}{officialScore.rw != null && officialScore.math != null ? ` · ${officialScore.rw} R&W / ${officialScore.math} Math` : ''}</div>
                           </div>
                         </div>
                       )}
@@ -885,8 +1050,26 @@ const StudentDashboard = ({
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                     </button>
                   )}
+                  {/* Estimated (diagnostic-only) state: the diagnosis behind
+                      this band is the results screen from the diagnostic
+                      itself — same entry-point shape as the post-test link. */}
+                  {isEstimated && typeof onViewDiagnosis === 'function' && miniDiagnostic && (
+                    <button type="button" className="hv2-hero-link" onClick={onViewDiagnosis}>
+                      View your diagnosis
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </button>
+                  )}
                 </div>
               );
+            })()}
+
+            {/* SCORE PROMPT — the test date is behind them: wait for release
+                day, then ask (with "prefer not to say" / "didn't take it"). */}
+            {(() => {
+              if (typeof onRecordScoreReport !== 'function' || (typeof onUpdateTestDates !== 'function' && typeof onUpdateTestDate !== 'function')) return null;
+              const st = getScoreReportState({ testDate: user?.testDate, testDates: userTestDates, scoreReports: user?.scoreReports });
+              if (st.kind === 'none') return null;
+              return <ScoreReportCard state={st} testDates={userTestDates} onRecord={onRecordScoreReport} onUpdateTestDates={applyTestDates} />;
             })()}
 
             {/* PROJECTED SCORE — re-added per user (protected UI); v2-styled, gated on 2+ tests */}
@@ -943,43 +1126,84 @@ const StudentDashboard = ({
                     );
                   })()}
                 </div>
-                {studyPlan?.planSource === 'mini-diagnostic' && (
-                  <div className="starter-plan-banner" style={{ marginBottom: '14px' }}>
-                    <span className="starter-plan-banner-text">Starter plan, built from your 15-minute check-in. A full practice test sharpens it into a complete diagnosis.</span>
-                    <button type="button" className="starter-plan-banner-cta" onClick={onStartPracticeTest}>Take a full test</button>
-                  </div>
-                )}
+                {/* Home shows ONE thing here: the next session, with its Start
+                    button. The full day — every reinforcement/maintenance set,
+                    the because-lines, the review block — lives in the Study
+                    Plan tab. The home is for starting, not reading (founder,
+                    2026-08-22: "this information is for the study plan, not
+                    the home screen"). */}
                 <div className="hv2-card">
-                  {todaySlice.activities.map((a, i) => {
-                    const isStrategy = a?.activityType === 'strategyDrill';
-                    const isTest = a?.type === 'test' || a?.activityType === 'practiceTest';
-                    const isStartable = !!(a?.moduleId || a?.skillId || (isStrategy && typeof handleStartStrategyActivity === 'function') || (isTest && typeof onStartPracticeTest === 'function'));
+                  {(() => {
+                    const allDone = todaySlice.kind === 'all-done';
+                    const a = allDone ? null : todaySlice.activities[0];
+                    const arrow = <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
+                    if (allDone || !a) {
+                      return (
+                        <div className="hv2-focus-row">
+                          <div className="hv2-focus-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/></svg>
+                          </div>
+                          <div className="hv2-focus-text">
+                            <div className="hv2-focus-titlerow"><span className="hv2-focus-title">Today's sessions are done</span></div>
+                            <p className="hv2-focus-desc">Tomorrow's work is already queued in your plan.</p>
+                          </div>
+                          <button type="button" className="hv2-hero-link" style={{ marginTop: 0 }} onClick={() => setActiveTab('studyPlan')}>
+                            See your plan
+                            {arrow}
+                          </button>
+                        </div>
+                      );
+                    }
+                    // Same routing as the Study Plan timeline: 'strategyDrill' =
+                    // legacy plans; 'pacingDrill' = Plan v3 unified sessions
+                    // (both → the real pacing runner); testMissReview deep-links
+                    // the source test's misses; miniDiagnostic → the plan
+                    // check-in; test → the runner; anything with a skill/module
+                    // → the drill resolver.
+                    const isStrategy = a?.activityType === 'strategyDrill' || a?.activityType === 'pacingDrill';
+                    const isMissReview = a?.activityType === 'testMissReview';
+                    const isCheckIn = a?.activityType === 'miniDiagnostic';
+                    const startCheckIn = onStartPlanCheckIn || onStartDiagnostic;
+                    const isTest = !isCheckIn && (a?.type === 'test' || a?.activityType === 'practiceTest');
+                    const isStartable = !!(a?.moduleId || a?.skillId || (isStrategy && typeof handleStartStrategyActivity === 'function') || (isMissReview && a?.testId && typeof onReviewTestWrong === 'function') || (isTest && typeof onStartPracticeTest === 'function') || (isCheckIn && typeof startCheckIn === 'function'));
                     const minutes = typeof a?.duration === 'number' ? a.duration : null;
                     const onStart = () => {
                       if (!isStartable) return;
+                      if (isCheckIn) { startCheckIn(); return; }
+                      if (isMissReview) { onReviewTestWrong(a.testId); return; }
                       if (isTest) { onStartPracticeTest(); return; }
                       if (isStrategy) { handleStartStrategyActivity(a); return; }
                       handleStartTodaysActivity(a);
                     };
+                    const more = Math.max(0, todaySlice.activities.length - 1)
+                      + (todaySlice.reviewSession?.sessionSize > 0 ? 1 : 0);
                     return (
-                      <div className="hv2-focus-row" key={a?.id || i}>
-                        <div className="hv2-focus-icon">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><path d="M3 2v6h6"/><path d="M21 12A9 9 0 0 0 6 5.3L3 8"/><path d="M21 22v-6h-6"/><path d="M3 12a9 9 0 0 0 15 6.7l3-2.7"/></svg>
-                        </div>
-                        <div className="hv2-focus-text">
-                          <div className="hv2-focus-titlerow">
-                            <span className="hv2-focus-title">{a?.title || 'Practice session'}</span>
-                            {minutes !== null && <span className="hv2-chip">~{minutes} MIN</span>}
+                      <>
+                        <div className="hv2-focus-row">
+                          <div className="hv2-focus-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><path d="M3 2v6h6"/><path d="M21 12A9 9 0 0 0 6 5.3L3 8"/><path d="M21 22v-6h-6"/><path d="M3 12a9 9 0 0 0 15 6.7l3-2.7"/></svg>
                           </div>
-                          {(a?.subtitle || a?.skillName) && <p className="hv2-focus-desc">{a.subtitle || a.skillName}</p>}
+                          <div className="hv2-focus-text">
+                            <div className="hv2-focus-titlerow">
+                              <span className="hv2-focus-title">{a?.title || 'Practice session'}</span>
+                              {minutes !== null && <span className="hv2-chip">~{minutes} MIN</span>}
+                            </div>
+                            {(a?.subtitle || a?.skillName) && <p className="hv2-focus-desc">{a.subtitle || a.skillName}</p>}
+                          </div>
+                          <button type="button" className="hv2-btn-primary" onClick={onStart} disabled={!isStartable}>
+                            {isTest ? 'Start test' : 'Start now'}
+                            {arrow}
+                          </button>
                         </div>
-                        <button type="button" className="hv2-btn-primary" onClick={onStart} disabled={!isStartable}>
-                          {isTest ? 'Start test' : 'Start now'}
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                        </button>
-                      </div>
+                        {more > 0 && (
+                          <button type="button" className="hv2-hero-link hv2-focus-more" onClick={() => setActiveTab('studyPlan')}>
+                            {more} more {more === 1 ? 'session' : 'sessions'} today · see your plan
+                            {arrow}
+                          </button>
+                        )}
+                      </>
                     );
-                  })}
+                  })()}
                 </div>
               </div>
             ) : !hasStudyPlan ? (
@@ -989,8 +1213,8 @@ const StudentDashboard = ({
                   <div className="hv2-focus-row">
                     <div className="hv2-focus-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg></div>
                     <div className="hv2-focus-text">
-                      <div className="hv2-focus-titlerow"><span className="hv2-focus-title">{showCheckInCard ? 'Take your 15-minute check-in' : 'Take your first practice test'}</span></div>
-                      <p className="hv2-focus-desc">{showCheckInCard ? '24 quick questions build your starter plan — no prep needed.' : 'One test builds your personalized plan from every answer.'}</p>
+                      <div className="hv2-focus-titlerow"><span className="hv2-focus-title">{showCheckInCard ? (ffDiagnosticV2 ? 'Take your diagnostic' : 'Take your 15-minute check-in') : 'Take your first practice test'}</span></div>
+                      <p className="hv2-focus-desc">{showCheckInCard ? (ffDiagnosticV2 ? 'The real test experience, about half a full SAT — it builds your plan from every answer.' : '24 quick questions build your starter plan — no prep needed.') : 'One test builds your personalized plan from every answer.'}</p>
                     </div>
                     <button type="button" className="hv2-btn-primary" onClick={showCheckInCard ? onStartCheckIn : onStartPracticeTest}>
                       {showCheckInCard ? 'Start check-in' : 'Start test'}
@@ -1051,8 +1275,15 @@ const StudentDashboard = ({
 
           {/* ============ RIGHT RAIL ============ */}
           <div className="hv2-side">
+            {/* Countdown + this week's sparks lead the rail, level with the
+                greeting (founder 2026-08-25). */}
+            <div className="hv2-side-top">
+              {countdownBlock}
+              <WeekPracticeStrip variant="aside" practicedDays={practicedDayKeys} />
+            </div>
             {hasStudyPlan && (
-              <CalendarMonth practicedDays={practicedDayKeys} testDate={user?.testDate} />
+              <CalendarMonth practicedDays={practicedDayKeys} testDate={user?.testDate}
+                testDates={userTestDates} />
             )}
 
             {recentMisses.length > 0 && (
@@ -1079,6 +1310,37 @@ const StudentDashboard = ({
                           <div className="hv2-struggled-meta">{m.difficulty ? m.difficulty : 'Review'}</div>
                         </div>
                       </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {recentMisses.length === 0 && diagnosticWeakSpots.length > 0 && (
+              <div className="hv2-card">
+                <div className="hv2-side-card-title">Pick up where you struggled</div>
+                <p className="hv2-struggled-sub">Weak spots from your diagnostic.</p>
+                <div className="hv2-struggled-list">
+                  {diagnosticWeakSpots.map((w) => {
+                    const name = w.skill || formatPatternLabel(w.skillId);
+                    const meta = w.metaLabel
+                      || (Number.isFinite(w.accuracy)
+                        ? `${Math.round(w.accuracy)}% on your diagnostic`
+                        : (w.section === 'rw' ? 'Reading & Writing' : 'Math'));
+                    return (
+                      <button
+                        type="button"
+                        className="hv2-struggled-row hv2-hov-soft"
+                        key={w.skillId}
+                        onClick={() => handleStartTodaysActivity({ skillId: w.skillId, skillName: w.skill, section: w.section, title: `${name} Practice` })}
+                      >
+                        <span className="hv2-struggled-dot" style={{ background: 'var(--hv2-orange)' }} />
+                        <div className="hv2-struggled-main">
+                          <div className="hv2-struggled-name">{name}</div>
+                          <div className="hv2-struggled-meta">{meta}</div>
+                        </div>
+                        <span className="hv2-struggled-retry">Practice →</span>
+                      </button>
                     );
                   })}
                 </div>

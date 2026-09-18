@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-032",
+ "question": "A rotating security camera monitors a sector of a circle with a radius of $24$ meters and a central angle of $45°$. What is the area, in square meters, of the region the camera monitors?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$72\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$144\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$576\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes the arc length instead of the area",
+  "C": "divides the central angle by 180 instead of 360",
+  "D": "reports the area of the full circle"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sector Area from Central Angle**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The sector is $\\frac{45}{360} = \\frac{1}{8}$ of a circle of area $\\pi(24)^2 = 576\\pi$, so it covers $72\\pi$ square meters.\n\n**The Full Solution:**\nStep 1: A sector's area is the same fraction of the circle's area that its central angle is of $360°$.\nStep 2: The fraction is $\\frac{45}{360} = \\frac{1}{8}$, and the full circle has area $\\pi r^2 = \\pi(24)^2 = 576\\pi$ square meters.\nStep 3: The sector covers $\\frac{1}{8}(576\\pi) = 72\\pi$ square meters.\n\nVerification: eight such sectors would tile the circle: $8(72\\pi) = 576\\pi$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6\\pi$): takes $\\frac{1}{8}$ of the circumference $48\\pi$, giving the curved edge rather than the area.\n* Choice C ($144\\pi$): divides the angle by $180$ instead of $360$, doubling the fraction of the circle.\n* Choice D ($576\\pi$): reports the area of the whole circle and never applies the fraction.\n\n**Test Day Takeaway:** Sector area is $\\frac{\\theta}{360} \\cdot \\pi r^2$. Reducing $\\frac{\\theta}{360}$ to a simple fraction first keeps the arithmetic light."
+}

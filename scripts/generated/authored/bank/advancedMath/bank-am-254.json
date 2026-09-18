@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-254",
+  "question": "The zeros of the function $f$ are $x = -4$ and $x = 10$, and $f$ has no other zeros. The function $h$ is defined by $h(x) = f(x - 3)$. What is the sum of the zeros of $h$?",
+  "correctAnswer": "12",
+  "explanation": "**SAT Pattern: Horizontal Shift**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~25s):** Each zero moves $3$ units right: $-4 \\to -1$ and $10 \\to 13$, and $-1 + 13 = 12$.\n\n**The Full Solution:**\nStep 1: $h(x) = 0$ exactly when $f(x - 3) = 0$, which happens exactly when $x - 3$ is a zero of $f$.\nStep 2: Setting $x - 3 = -4$ gives $x = -1$; setting $x - 3 = 10$ gives $x = 13$. Since $f$ has no other zeros, these are the only zeros of $h$.\nStep 3: Their sum is $-1 + 13 = 12$. Check: the original zeros sum to $-4 + 10 = 6$, and shifting two zeros right by $3$ each adds $2(3) = 6$, giving $6 + 6 = 12$. $\\checkmark$\n\n**Common Mistakes:**\n* Answering $0$ shifts the zeros LEFT, to $-7$ and $7$, whose sum is $0$.\n* Answering $6$ leaves the zeros unmoved; a horizontal shift does move them.\n* Answering $13$ shifts only the larger zero and forgets the smaller one.\n\n**Test Day Takeaway:** Zeros are inputs, so a horizontal shift moves every one of them — set the inside expression equal to each old zero and solve."
+}

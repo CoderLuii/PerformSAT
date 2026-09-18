@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-189",
+ "question": "A dispensary's dilution rule uses the equation $\\frac{n}{k} = 24$, where $n$ is the total number of milligrams dispensed and $k$ is a constant. Substituting $n = 84$ makes the equation true. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3.5$"
+  },
+  {
+   "id": "B",
+   "text": "$24$"
+  },
+  {
+   "id": "C",
+   "text": "$60$"
+  },
+  {
+   "id": "D",
+   "text": "$2{,}016$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reports the right-hand side of the equation instead of solving for k",
+  "C": "subtracts 24 from 84 instead of dividing",
+  "D": "multiplies 84 by 24 instead of dividing"
+ },
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Substituting gives $\\frac{84}{k} = 24$, so $k = \\frac{84}{24} = 3.5$.\n\n**The Full Solution:**\n\nStep 1: Substitute $n = 84$ into the rule: $\\frac{84}{k} = 24$.\n\nStep 2: Multiply both sides by $k$: $84 = 24k$.\n\nStep 3: Divide both sides by $24$: $k = \\frac{84}{24} = 3.5$. Check: $\\frac{84}{3.5} = 24$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($24$): reports the right-hand side, as though the constant and the quotient were the same number.\n* Choice C ($60$): computes $84 - 24$, subtracting where division is required.\n* Choice D ($2{,}016$): computes $84 \\times 24$, multiplying instead of dividing.\n\n**Test Day Takeaway:** When the unknown sits in a denominator, multiply it up first; the equation then becomes a single division."
+}

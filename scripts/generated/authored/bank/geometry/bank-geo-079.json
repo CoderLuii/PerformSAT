@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-079",
+ "question": "The guard panel of a rotary evaporator is the right triangle shown, with legs of $10$ centimeters and $24$ centimeters. By how many centimeters does the longest edge exceed the longer leg?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     10
+    ]
+   ],
+   "sideLabels": [
+    "24 cm",
+    "10 cm",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$14$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$26$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "subtracts the two legs, 24 - 10, instead of comparing the hypotenuse with the longer leg",
+  "C": "subtracts the shorter leg from the hypotenuse, 26 - 10",
+  "D": "reports the hypotenuse itself and never forms the difference"
+ },
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**Choice A is correct.** The hypotenuse is $\\sqrt{10^2 + 24^2} = 26$, so it exceeds the $24$-centimeter leg by $2$ centimeters.\n\n**The Fast Way (~25s):** $10$-$24$-$26$ is $5$-$12$-$13$ doubled; $26 - 24 = 2$.\n\n**The Full Solution:**\n\nStep 1: The two given sides meet at the right angle, so they are the legs.\n\nStep 2: The hypotenuse is $\\sqrt{100 + 576} = \\sqrt{676} = 26$ centimeters.\n\nStep 3: The longer leg is $24$, so the difference is $26 - 24 = 2$ centimeters. Check: $10^2 + 24^2 = 676 = 26^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($14$): subtracts the two legs instead of comparing the hypotenuse with the longer leg.\n* Choice C ($16$): subtracts the shorter leg from the hypotenuse.\n* Choice D ($26$): reports the hypotenuse and never takes the difference.\n\n**Test Day Takeaway:** Compute the missing side first, then reread which two lengths the question wants compared — the subtraction is the easy part to misaim."
+}

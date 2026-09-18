@@ -1,0 +1,53 @@
+{
+  "id": 16,
+  "question": "For a peaking equalizer filter, the quadratic function $g$ gives the gain, in decibels, at a frequency of $x$ hundred hertz. The table gives the gain at four frequencies. What is the maximum gain, in decibels, of the filter?",
+  "questionTable": {
+    "headers": [
+      "$x$ (hundred hertz)",
+      "$g(x)$ (decibels)"
+    ],
+    "rows": [
+      [
+        "3",
+        "$-4$"
+      ],
+      [
+        "5",
+        "$8$"
+      ],
+      [
+        "9",
+        "$8$"
+      ],
+      [
+        "11",
+        "$-4$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$8$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$20$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the leading coefficient as +1 instead of -1, so g(5) = 8 gives k = 4",
+    "B": "reports the greatest gain listed in the table instead of the vertex value",
+    "D": "treats the gains as linear, continuing the +12 rise from x = 3 to x = 5 out to x = 7"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The equal gains at $x = 5$ and $x = 9$ put the axis of symmetry at $x = 7$; writing $g(x) = a(x - 7)^2 + k$ and using two table rows gives $a = -1$ and $k = 12$.\n\n**The Full Solution:**\nStep 1: Locate the axis of symmetry. A parabola takes the same value at points equally far from its vertex, and $g(5) = g(9) = 8$, so the axis is at $x = \\frac{5 + 9}{2} = 7$ and $g(x) = a(x - 7)^2 + k$.\nStep 2: Substitute two rows. From $x = 5$: $a(5 - 7)^2 + k = 8$, so $4a + k = 8$. From $x = 3$: $a(3 - 7)^2 + k = -4$, so $16a + k = -4$.\nStep 3: Subtract the first equation from the second: $12a = -12$, so $a = -1$ and $k = 8 - 4(-1) = 12$. Since $a < 0$ the parabola opens downward and $k$ is the maximum, so the maximum gain is $12$ decibels. Check: $g(11) = -(11 - 7)^2 + 12 = -16 + 12 = -4$, matching the last table row. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): uses $a = +1$, which gives $k = 8 - 4 = 4$. An upward-opening parabola has a minimum, not a maximum, and it would not produce the $-4$ readings at both ends.\n* Choice B ($8$): reports the largest gain in the table. The table never lists $x = 7$, so the peak itself is not shown.\n* Choice D ($20$): extends the $+12$ jump from $x = 3$ to $x = 5$ for two more units. Quadratic values do not rise at a constant rate; the increase shrinks as the curve nears its vertex.\n\n**Test Day Takeaway:** Two equal outputs hand you the axis of symmetry for free. Get $h$ from the midpoint, then solve for $a$ and $k$ with any other row — the maximum is $k$, never the biggest number printed in the table."
+}

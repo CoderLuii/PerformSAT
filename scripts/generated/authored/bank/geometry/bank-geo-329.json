@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-329",
+ "question": "The spacer shown is cut on a CNC router, and its three edges, in millimeters, total $36$. Angle $A$ is one of the two acute angles of the spacer. What is the value of $\\sin A$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     9,
+     0
+    ],
+    [
+     9,
+     12
+    ]
+   ],
+   "labels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "sideLabels": [
+    "9",
+    "",
+    "15"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3}{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{4}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{4}{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports cos A = 9/15 = 3/5, adjacent over hypotenuse",
+  "B": "reports 9/12 = 3/4, adjacent over opposite",
+  "D": "reports tan A = 12/9 = 4/3, opposite over adjacent"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Trig Ratio from Perimeter**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The unlabeled leg is $36 - 9 - 15 = 12$, and $\\sin A = \\frac{12}{15} = \\frac{4}{5}$.\n\n**The Full Solution:**\nStep 1: The three edges total $36$ millimeters, and two of them measure $9$ and $15$, so $\\overline{BC} = 36 - 9 - 15 = 12$ millimeters.\nStep 2: The right angle is at $B$, so $\\overline{CA} = 15$ is the hypotenuse and $\\overline{BC} = 12$ is the leg opposite angle $A$.\nStep 3: $\\sin A = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{12}{15} = \\frac{4}{5}$.\n\nCheck: $9^2 + 12^2 = 81 + 144 = 225 = 15^2$, so the sides are consistent. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3}{5}$): uses $\\frac{9}{15}$, which is $\\cos A$ rather than $\\sin A$.\n* Choice B ($\\frac{3}{4}$): uses $\\frac{9}{12}$, adjacent over opposite, and never involves the hypotenuse.\n* Choice D ($\\frac{4}{3}$): uses $\\frac{12}{9}$, which is $\\tan A$.\n\n**Test Day Takeaway:** A perimeter plus two sides hands you the third side in one subtraction; then label opposite, adjacent, and hypotenuse before choosing a ratio."
+}

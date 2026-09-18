@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
-  "passage": "As gene-editing tools have moved from the laboratory into agriculture and medicine, the hardest questions facing researchers are no longer technical. Whether a given edit can be made is, for many applications, no longer in doubt. What remains unsettled is how a scientific community spread across many countries, governed by different laws and different norms, can ______ a shared set of rules for using the technology responsibly.",
+  "passage": "In rice-fish farming, a practice with a long history in parts of southern China, carp are released into flooded paddies, where they eat insect larvae and weed shoots growing between the rice plants. Field comparisons show what the fish accomplish: paddies stocked with carp suffer notably less pest damage than fish-free paddies planted alongside them, allowing farmers to ______ their use of chemical pesticides without sacrificing yield.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "negotiate"
+      "text": "curtail"
     },
     {
       "id": "B",
-      "text": "ridicule"
+      "text": "disguise"
     },
     {
       "id": "C",
-      "text": "memorize"
+      "text": "justify"
     },
     {
       "id": "D",
-      "text": "inherit"
+      "text": "standardize"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"negotiate.\" The passage describes researchers in different countries, with different laws and norms, trying to arrive at common rules; that work of reaching agreement across differences is what \"negotiate\" names. \"Ridicule\" would have them mocking the rules rather than agreeing on them. \"Memorize\" treats rules that do not yet exist as something merely to be learned by heart, and \"inherit\" implies the rules are handed down ready-made, which contradicts the point that they still have to be worked out."
+  "explanation": "**Choice A is correct.** If the fish already suppress pests, farmers need less chemical control, so they can \"curtail\" — cut back — pesticide use while yields hold.\n\n**The Full Solution:**\n- The colon sets up the logic: carp-stocked paddies \"suffer notably less pest damage.\"\n- Less pest damage means less need for pesticides, so the blank must mean reduce; \"curtail\" says exactly that, and \"without sacrificing yield\" confirms the reduction reading.\n\n**Why the other choices are wrong:**\n- B: \"Disguise\" would mean hiding pesticide use, which nothing in the text supports.\n- C: \"Justify\" points the wrong way — the fish make pesticides less necessary, not more defensible.\n- D: \"Standardize\" concerns making practices uniform, a topic the comparison never raises."
 }

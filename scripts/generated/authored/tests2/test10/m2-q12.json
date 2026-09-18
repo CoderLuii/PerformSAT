@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "Minutes spent in a language lab last week were recorded for a random sample of $180$ enrolled students at a college. The sample mean was $47$ minutes and the margin of error was $6$ minutes. Which statement about the mean for all enrolled students is most plausible?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It is between $41$ and $47$ minutes."
+  },
+  {
+   "id": "B",
+   "text": "It is between $41$ and $53$ minutes."
+  },
+  {
+   "id": "C",
+   "text": "It is between $44$ and $50$ minutes."
+  },
+  {
+   "id": "D",
+   "text": "It is between $47$ and $53$ minutes."
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the margin of error but never adds it, giving 41 to 47",
+  "C": "uses half the margin of error, 3, giving 44 to 50",
+  "D": "adds the margin of error but never subtracts it, giving 47 to 53"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Plausible values run from $47 - 6$ to $47 + 6$, that is, $41$ to $53$ minutes.\n\n**The Full Solution:**\nStep 1: A margin of error surrounds the sample mean on both sides, so the plausible interval for the population mean is (sample mean) $-$ (margin) to (sample mean) $+$ (margin).\nStep 2: Here the sample mean is $47$ minutes and the margin is $6$ minutes, so the lower bound is $47 - 6 = 41$ and the upper bound is $47 + 6 = 53$.\nStep 3: The plausible interval is $41$ to $53$ minutes. Check: the interval is centred on $47$ and is $12$ minutes wide, which is twice the $6$-minute margin ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($41$ to $47$): subtracts the margin but stops the interval at the sample mean, using only half the range.\n* Choice C ($44$ to $50$): applies $3$ minutes on each side, as if the margin of error had to be split in half. The stated margin already applies to each side.\n* Choice D ($47$ to $53$): adds the margin but never subtracts it, again keeping only half the interval.\n\n**Test Day Takeaway:** A margin of error is a radius, not a diameter — subtract it once and add it once, and the interval always ends up centred on the sample statistic."
+}

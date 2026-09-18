@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-029",
+  "question": "In the equation $x^2 - 14x + c = 0$, $c$ is a constant. In the $xy$-plane, the graph of $y = x^2 - 14x + c$ intersects the $x$-axis at exactly one point. What is the value of $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7$"
+    },
+    {
+      "id": "B",
+      "text": "$14$"
+    },
+    {
+      "id": "C",
+      "text": "$49$"
+    },
+    {
+      "id": "D",
+      "text": "$196$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports $-\\frac{b}{2} = 7$, the $x$-coordinate of the single intersection point",
+    "B": "reports $|b|$ without using the discriminant",
+    "D": "sets $c = b^2$, dropping the factor of $4a$"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Parameter for Discriminant = 0**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** One intersection point means one repeated root, so $b^2 - 4ac = 0$: $196 - 4c = 0$ and $c = 49$.\n\n**The Full Solution:**\nStep 1: The graph meets the $x$-axis where $y = 0$, so the number of intersection points equals the number of real solutions of $x^2 - 14x + c = 0$. Here $a = 1$ and $b = -14$.\nStep 2: One intersection point means one repeated real solution, which happens exactly when the discriminant is zero: $(-14)^2 - 4(1)c = 0$, so $196 - 4c = 0$.\nStep 3: Solve: $4c = 196$, so $c = 49$. Check: $x^2 - 14x + 49 = (x - 7)^2$, whose only zero is $x = 7$, so the graph touches the axis at the single point $(7, 0)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): $7$ is where the graph touches the axis, not the constant term that puts it there.\n* Choice B ($14$): copies the size of $b$ instead of using the discriminant.\n* Choice D ($196$): stops at $b^2$ and never divides by $4a$.\n\n**Test Day Takeaway:** A graph that touches the $x$-axis once is a perfect square, so with $a = 1$ the constant must be $\\left(\\dfrac{b}{2}\\right)^2$ — exactly what $b^2 - 4ac = 0$ gives."
+}

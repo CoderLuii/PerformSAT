@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "question": "A circle has a radius of $r$, where $r > 0$. An arc of this circle has a length of $\\frac{7\\pi r}{10}$. What is the degree measure of the central angle that bounds this arc?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{7\\pi}{10}$"
+    },
+    {
+      "id": "B",
+      "text": "$63^{\\circ}$"
+    },
+    {
+      "id": "C",
+      "text": "$126^{\\circ}$"
+    },
+    {
+      "id": "D",
+      "text": "$252^{\\circ}$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "Solve $s = r\\theta$ for $\\theta$ before you convert anything — watch what happens to $r$.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** $\\theta=\\frac{s}{r}=\\frac{7\\pi}{10}$ radians once $r$ cancels; multiplying by $\\frac{180}{\\pi}$ gives $126$ degrees — choice C.\n\n**The Full Solution:**\nStep 1: Arc length satisfies $s = r\\theta$ with $\\theta$ in radians, so $\\theta = \\frac{s}{r} = \\frac{7\\pi r}{10r} = \\frac{7\\pi}{10}$. The radius cancels, so the angle does not depend on the size of the circle.\nStep 2: Convert that radian measure to degrees: $\\frac{7\\pi}{10}\\cdot\\frac{180}{\\pi}=\\frac{7(180)}{10}=126$ degrees.\nStep 3: Check by fractions of a turn: $126^{\\circ}$ is $\\frac{126}{360}=\\frac{7}{20}$ of the circle, and $\\frac{7}{20}$ of the circumference $2\\pi r$ is $\\frac{7\\pi r}{10}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{7\\pi}{10}$): is the correct radian measure, but the question asks for the degree measure — the conversion step is missing.\n* Choice B ($63^{\\circ}$): multiplies by $\\frac{90}{\\pi}$ instead of $\\frac{180}{\\pi}$, pairing $\\pi$ radians with a right angle: $\\frac{7(90)}{10}=63$.\n* Choice D ($252^{\\circ}$): multiplies by $\\frac{360}{\\pi}$, pairing $\\pi$ radians with a full rotation: $\\frac{7(360)}{10}=252$, which is twice too large.\n\n**Test Day Takeaway:** An arc length written as a multiple of $r$ pins the central angle by itself — divide out the radius, then convert. Read the last four words of the stem to see which unit the answer needs."
+}

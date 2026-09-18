@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "A pair of straight pipe runs at a water-treatment plant meet so that the four angles at their meeting point measure $a^{\\circ}$, $b^{\\circ}$, $a^{\\circ}$, and $b^{\\circ}$ in order around the point. If $b$ is $46$ more than $a$, what is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$46$"
+  },
+  {
+   "id": "B",
+   "text": "$67$"
+  },
+  {
+   "id": "C",
+   "text": "$113$"
+  },
+  {
+   "id": "D",
+   "text": "$134$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the given difference of 46 between the two angle measures as though it were the measure of b",
+  "B": "solves correctly but reports a = 67, the measure of the other pair of angles",
+  "D": "computes 180 - 46 = 134 and stops, never splitting the remaining 134 degrees between a and b"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Neighboring angles form a straight line, so $a + b = 180$. With $b = a + 46$, that gives $2a + 46 = 180$, so $a = 67$ and $b = 113$.\n\n**The Full Solution:**\nStep 1: Going around the point the measures alternate $a$, $b$, $a$, $b$, so the equal measures are opposite each other — they are the two pairs of vertical angles — and any two neighboring angles form a linear pair: $a + b = 180$.\nStep 2: Translate the second sentence: $b = a + 46$. Substituting gives $a + (a + 46) = 180$, so $2a = 134$ and $a = 67$.\nStep 3: Then $b = 67 + 46 = 113$. Check: the four measures $67$, $113$, $67$, $113$ sum to $360$ degrees, as the angles around a point must ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($46$): treats the difference between the two angle measures as one of the measures. The $46$ is a gap, not an angle.\n* Choice B ($67$): the value of $a$. Both variables come out of the same equation, so the last step is checking which one the question asked for.\n* Choice D ($134$): computes $180 - 46 = 134$ and stops. That is the amount left to split between $a$ and $b$ after the difference is set aside, not $b$ itself.\n\n**Test Day Takeaway:** Two lines crossing create two vertical pairs whose neighbors are supplementary; writing $a + b = 180$ turns any relationship between the pairs into a single one-variable equation."
+}

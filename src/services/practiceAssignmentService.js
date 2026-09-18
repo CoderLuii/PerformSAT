@@ -248,7 +248,7 @@ export function generatePracticeAssignments({
         const extras = bank.getQuestionsByDomain(domain, { excludeIds: [...usedIds] }).filter(isMCQGlobal);
         const shuffled = seededShuffle(extras, fillSeed);
         const batch = shuffled.slice(0, Math.max(3, MIN_TOTAL_QUESTIONS - pool.length));
-        batch.forEach(q => { pool.push(q); usedIds.add(q.id); });
+        for (const q of batch) { pool.push(q); usedIds.add(q.id); }
       }
     }
   }

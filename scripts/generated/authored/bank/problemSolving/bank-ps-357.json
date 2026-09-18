@@ -1,0 +1,52 @@
+{
+ "id": "bank-ps-357",
+ "question": "The table gives the average swimming speed, in kilometers per hour, of three satellite-tagged loggerhead turtles. Traveling at its average speed, how far does turtle B swim in $9$ hours?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Turtle",
+    "Average speed (km/h)"
+   ],
+   "rows": [
+    [
+     "A",
+     "2.4"
+    ],
+    [
+     "B",
+     "3.5"
+    ],
+    [
+     "C",
+     "1.8"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12.5$ km"
+  },
+  {
+   "id": "B",
+   "text": "$16.2$ km"
+  },
+  {
+   "id": "C",
+   "text": "$21.6$ km"
+  },
+  {
+   "id": "D",
+   "text": "$31.5$ km"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "adds the speed and the time, $3.5 + 9 = 12.5$, instead of multiplying",
+  "B": "uses turtle C's speed, $1.8(9) = 16.2$",
+  "C": "uses turtle A's speed, $2.4(9) = 21.6$"
+ },
+ "explanation": "**SAT Pattern: Distance = Rate × Time**\n\n**Choice D is correct.** Turtle B averages $3.5$ kilometers per hour, so in $9$ hours it covers $3.5(9) = 31.5$ kilometers.\n\n**The Fast Way (~20s):** Read $3.5$ from the row for turtle B and multiply by $9$: $31.5$ kilometers.\n\n**The Full Solution:**\n\nStep 1: Read the rate. The table gives turtle B an average speed of $3.5$ kilometers per hour.\n\nStep 2: Apply distance equals rate times time with $t = 9$ hours: $d = 3.5(9)$.\n\nStep 3: Multiply: $d = 31.5$ kilometers. Check: $31.5 \\div 9 = 3.5$, the tabled speed.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($12.5$ km): adds the rate and the time. Speeds and durations are different quantities and cannot be added.\n* Choice B ($16.2$ km): multiplies by turtle C's speed of $1.8$ kilometers per hour.\n* Choice C ($21.6$ km): multiplies by turtle A's speed of $2.4$ kilometers per hour.\n\n**Test Day Takeaway:** Point at the row the question names before you compute -- a table with three near-identical rates rewards the reader who checks the label."
+}

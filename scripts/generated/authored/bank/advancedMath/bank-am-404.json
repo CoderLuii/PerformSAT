@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-404",
+ "question": "In a crossover filter model, the two gain settings $m$ and $n$ are the two solutions of the equation $x^2 - kx + 18 = 0$, where $k$ is a constant and both settings are positive. Which of the following expressions is equivalent to $\\frac{1}{m} + \\frac{1}{n}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{18}{k}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{1}{k} + \\frac{1}{18}$"
+  },
+  {
+   "id": "C",
+   "text": "$-\\frac{k}{18}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{k}{18}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the ratio, dividing the product by the sum",
+  "B": "takes reciprocals of the sum and the product separately instead of combining the fractions",
+  "C": "reads the sum as -k, double-counting the minus already written in the equation"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vieta Sum & Product of Roots**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Combine the fractions: $\\frac{1}{m} + \\frac{1}{n} = \\frac{m + n}{mn}$, and $m + n = k$ while $mn = 18$.\n\n**The Full Solution:**\nStep 1: For $x^2 - kx + 18 = 0$, the sum of the solutions is $-\\frac{-k}{1} = k$ and the product is $\\frac{18}{1} = 18$.\nStep 2: Write the requested expression over a common denominator: $\\frac{1}{m} + \\frac{1}{n} = \\frac{n + m}{mn}$.\nStep 3: Substituting gives $\\frac{k}{18}$. Check: if $k = 9$, the equation $x^2 - 9x + 18 = 0$ has solutions $3$ and $6$, and $\\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2} = \\frac{9}{18}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{18}{k}$): inverts the ratio, dividing the product by the sum.\n* Choice B ($\\frac{1}{k} + \\frac{1}{18}$): takes the reciprocal of the sum and of the product separately instead of combining the two fractions.\n* Choice C ($-\\frac{k}{18}$): treats the sum as $-k$, double-counting the minus sign already written in the equation.\n\n**Test Day Takeaway:** Any symmetric combination of the roots — $\\frac{1}{m} + \\frac{1}{n}$, $m^2 + n^2$, $(m - n)^2$ — rewrites in terms of the sum and the product."
+}

@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "question": "A bottling machine fills $r$ bottles each minute, where $r$ is a positive constant. Which expression represents the number of bottles the machine fills in $h$ hours, if it operates at this constant rate for the entire time?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{rh}{60}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{60h}{r}$"
+    },
+    {
+      "id": "C",
+      "text": "$60rh$"
+    },
+    {
+      "id": "D",
+      "text": "$3{,}600rh$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "Check any candidate with easy numbers: one bottle per minute for one hour has an answer you already know.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** $h$ hours is $60h$ minutes, and each minute yields $r$ bottles: $60hr$ bottles — choice C.\n\n**The Full Solution:**\nStep 1: Convert the operating time to the unit the rate uses: $h\\text{ hours}\\times\\frac{60\\text{ minutes}}{1\\text{ hour}}=60h$ minutes.\nStep 2: Multiply the number of minutes by the number of bottles filled each minute: $(60h)(r)=60rh$ bottles.\nStep 3: Check the units: $\\frac{\\text{bottles}}{\\text{minute}}\\times\\text{minutes}$ leaves bottles, which is what the question asks for.\nStep 4: Check with numbers: at $r=1$ and $h=1$ the machine fills $1$ bottle per minute for $60$ minutes, so $60$ bottles, and $60(1)(1)=60$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{rh}{60}$): divides by $60$ instead of multiplying, which would be right only if the rate were per hour and the answer were wanted per minute.\n* Choice B ($\\frac{60h}{r}$): inverts the rate, treating $r$ as minutes per bottle rather than bottles per minute.\n* Choice D ($3{,}600rh$): uses $3{,}600$, the number of seconds in an hour, even though the rate is given per minute.\n\n**Test Day Takeaway:** With letters instead of numbers, substitute $r=1$ and $h=1$: the arithmetic becomes trivial and only one expression survives."
+}

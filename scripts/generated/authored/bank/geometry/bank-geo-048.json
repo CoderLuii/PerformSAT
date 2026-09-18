@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-048",
+ "question": "A fabric shop hangs the two similar triangular bunting flags drawn below, with corresponding edges marked in inches. The smaller flag covers $16$ square inches. How many square inches does the larger flag cover?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "labels": [
+     "P",
+     "Q",
+     "R"
+    ],
+    "sideLabels": [
+     "10",
+     "",
+     ""
+    ]
+   },
+   "triangle2": {
+    "labels": [
+     "S",
+     "T",
+     "U"
+    ],
+    "sideLabels": [
+     "25",
+     "",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40$"
+  },
+  {
+   "id": "B",
+   "text": "$100$"
+  },
+  {
+   "id": "C",
+   "text": "$250$"
+  },
+  {
+   "id": "D",
+   "text": "$400$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales the area by the side ratio 5/2 instead of its square",
+  "C": "cubes the side ratio, giving 16 times 125/8 = 250",
+  "D": "multiplies the small area by 25, the larger side length itself"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Area Scaling by Square of Linear Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** The side ratio is $\\frac{25}{10}=\\frac{5}{2}$, so areas scale by $\\left(\\frac{5}{2}\\right)^{2}=\\frac{25}{4}$, and $16\\cdot\\frac{25}{4}=100$.\n\n**The Full Solution:**\n\nStep 1: Find the linear ratio. Corresponding edges measure $10$ and $25$ inches, so the scale factor from small to large is $\\frac{25}{10}=\\frac{5}{2}$.\n\nStep 2: Square it for area. Similar figures have areas in the ratio of the square of the scale factor, $\\left(\\frac{5}{2}\\right)^{2}=\\frac{25}{4}$.\n\nStep 3: Scale the area. $16\\cdot\\frac{25}{4}=100$ square inches.\n\nCheck: $\\frac{100}{16}=6.25$, and $\\left(\\frac{5}{2}\\right)^{2}=6.25$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($40$): scales the area by the side ratio $\\frac{5}{2}$ instead of by its square.\n* Choice C ($250$): cubes the ratio, which is how volumes scale, not areas.\n* Choice D ($400$): multiplies the small area by $25$, the larger edge length itself.\n\n**Test Day Takeaway:** Lengths scale by $k$, areas by $k^{2}$, volumes by $k^{3}$ — pick the exponent from the units being asked for."
+}

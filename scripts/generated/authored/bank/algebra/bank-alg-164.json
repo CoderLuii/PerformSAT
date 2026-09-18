@@ -1,0 +1,29 @@
+{
+ "question": "Between hour $3$ and hour $11$ of a snowmelt surge, a stream's discharge rose steadily from $40$ cubic meters per second to $58$ cubic meters per second. Which expression gives the average rate of change of the discharge, in cubic meters per second per hour?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{11 - 3}{58 - 40}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{58 - 40}{11}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{58 - 40}{11 - 3}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{58 + 40}{11 - 3}$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "inverts the ratio, dividing the elapsed hours by the change in discharge, which gives $0.44$",
+  "B": "divides by the ending hour $11$ rather than the elapsed $8$ hours, which gives $1.64$",
+  "D": "adds the two discharges instead of subtracting them, which gives $12.25$"
+ },
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Average rate of change is the change in discharge over the change in time: $\\frac{58 - 40}{11 - 3}$.\n\n**The Full Solution:**\n\nStep 1: Write the two readings as ordered pairs $(3, 40)$ and $(11, 58)$, with the hour first.\n\nStep 2: The rate of change of a linear relationship is $\\frac{y_2 - y_1}{x_2 - x_1}$, so the numerator is $58 - 40$ and the denominator is $11 - 3$.\n\nStep 3: That expression equals $\\frac{18}{8} = 2.25$ cubic meters per second per hour. Check: eight hours at $2.25$ raises $40$ to $58$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($0.44$): puts the elapsed time on top, giving hours per unit of discharge.\n\n* Choice B ($1.64$): divides by $11$, the ending hour, instead of by the $8$ hours that actually elapsed.\n\n* Choice D ($12.25$): adds the two discharge values, which measures nothing about the change.\n\n**Test Day Takeaway:** Both parts of a rate are differences; if the denominator is a single reading rather than a gap, the expression is wrong.",
+ "id": "bank-alg-164"
+}

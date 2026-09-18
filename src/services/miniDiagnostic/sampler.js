@@ -15,7 +15,7 @@
  * excluded because the mini-diagnostic runner is MC-only.
  */
 
-import { loadMathBank, loadRWBank } from '../../data/corpusLoader';
+import { loadMathTestBank, loadRWBank } from '../../data/corpusLoader';
 import { isAnswerCorrect } from '../scoring/irtEngine';
 
 // Canonical domain orders — mirror DOMAIN_ORDER / RW_DOMAIN_ORDER in
@@ -225,11 +225,15 @@ function buildSectionPlan({ getQuestionsByDomain, domains, baseSeed, sectionKey,
  * @returns {Promise<{rw: {stage1: object[], stage2Pools: object}, math: {stage1: object[], stage2Pools: object}}>}
  */
 export async function buildMiniDiagnosticPlan({ userId, attemptId, excludeIds = [] }) {
-  const [mathBank, rwBank] = await Promise.all([loadMathBank(), loadRWBank()]);
+  // Same recreated pools as buildDiagnosticTest (this legacy path is the
+  // diagnosticV2 flag-off rollback): math test bank + rwBank minus the
+  // drill-only `rw-authored-*` fills.
+  const [mathBank, rwBank] = await Promise.all([loadMathTestBank(), loadRWBank()]);
   const baseSeed = hashString(`${userId}:${attemptId}`);
 
   const rw = buildSectionPlan({
-    getQuestionsByDomain: rwBank.getQuestionsByDomain,
+    getQuestionsByDomain: (domain) => (rwBank.getQuestionsByDomain(domain) || [])
+      .filter((q) => !String(q.id).startsWith('rw-authored-')),
     domains: RW_DOMAIN_ORDER,
     baseSeed,
     sectionKey: 'rw',

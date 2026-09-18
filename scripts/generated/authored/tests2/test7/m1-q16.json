@@ -1,0 +1,34 @@
+{
+ "id": 16,
+ "question": "A quality auditor will pull two different samples at random from the 40 logged in the table and run each of them a second time. What is the probability that both of the samples pulled tested positive on the first run?",
+ "questionTable": {
+  "headers": [
+   "",
+   "Positive",
+   "Negative",
+   "Total"
+  ],
+  "rows": [
+   [
+    "Clinic A",
+    "9",
+    "13",
+    "22"
+   ],
+   [
+    "Clinic B",
+    "7",
+    "11",
+    "18"
+   ],
+   [
+    "Total",
+    "16",
+    "24",
+    "40"
+   ]
+  ]
+ },
+ "correctAnswer": "2/13",
+ "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**The correct answer is $\\frac{2}{13}$.**\n\n**The Fast Way (~30s):** The table's positive total is $16$ of $40$. Multiply the two draws: $\\frac{16}{40} \\cdot \\frac{15}{39} = \\frac{2}{5} \\cdot \\frac{5}{13} = \\frac{2}{13}$.\n\n**The Full Solution:**\nStep 1: Add the positive column: $9 + 7 = 16$ positive samples out of $40$ total, so the first pull is positive with probability $\\frac{16}{40} = \\frac{2}{5}$.\nStep 2: That sample is not returned, so only $39$ samples remain and only $15$ of them are positive: the second pull is positive with probability $\\frac{15}{39} = \\frac{5}{13}$.\nStep 3: Multiply the two stages: $\\frac{2}{5} \\cdot \\frac{5}{13} = \\frac{10}{65} = \\frac{2}{13}$. Check as a decimal: $0.4 \\times 0.3846 \\approx 0.154$, and $\\frac{2}{13} \\approx 0.154$ ✓\n\n**Common Mistakes:**\n* $\\frac{4}{25}$: using $\\frac{16}{40} \\cdot \\frac{16}{40}$, which is the with-replacement answer. Pulling two different samples removes the first one from the pool.\n* $\\frac{3}{20}$: using $\\frac{16}{40} \\cdot \\frac{15}{40}$, reducing the positive count for the second draw but leaving the total at $40$. Both the numerator and the denominator drop by one.\n* $\\frac{2}{5}$: reporting only the first draw's probability and forgetting that the event requires two positives.\n\n**Test Day Takeaway:** \"Two different\" items means the second fraction has both parts reduced by one. Write the two fractions side by side before multiplying so neither denominator is left at the original total."
+}

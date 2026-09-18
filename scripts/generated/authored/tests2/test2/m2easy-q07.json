@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A transit agency counted 2,760 bicycles parked at station racks this year, which is 15% more than the count last year. Last year, 35% of the parked bicycles were at downtown stations. How many bicycles were parked at downtown stations last year?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$360$"
+  },
+  {
+   "id": "B",
+   "text": "$840$"
+  },
+  {
+   "id": "C",
+   "text": "$966$"
+  },
+  {
+   "id": "D",
+   "text": "$2{,}400$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes 15% of last year's total instead of 35%, computing 0.15 times 2400 = 360",
+  "C": "applies the 35% to this year's 2760 instead of last year's total, giving 966",
+  "D": "reverses the percent increase correctly to 2400 but stops there, never taking 35%"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $2760 \\div 1.15 = 2400$ bicycles last year, and $0.35(2400) = 840$.\n\n**The Full Solution:**\nStep 1: This year is $15\\%$ more than last year, so this year equals $1.15$ times last year. Let $L$ be last year's count: $1.15L = 2760$.\nStep 2: Divide to reverse the increase: $L = \\frac{2760}{1.15} = 2400$.\nStep 3: Take $35\\%$ of last year's total: $0.35(2400) = 840$. Check: $1.15(2400) = 2760$, matching the reported count. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($360$): uses the $15\\%$ from the first sentence instead of the $35\\%$ the question asks about, giving $0.15(2400)$.\n* Choice C ($966$): applies $35\\%$ to this year's $2{,}760$. The question asks about last year, so the percent belongs to $2{,}400$.\n* Choice D ($2{,}400$): correctly reverses the increase but answers the wrong question; this is the whole of last year's count, not the downtown share.\n\n**Test Day Takeaway:** Reverse a percent increase by dividing by $1 + r$, never by subtracting the percent. Then re-read which year the second percent applies to."
+}

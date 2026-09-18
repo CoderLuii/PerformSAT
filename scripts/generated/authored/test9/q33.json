@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 2,
-  "passage": "In the 1920s, while major studios were perfecting live-action film, the German artist Lotte Reiniger pursued a painstaking alternative. She cut intricate figures from black cardboard, jointed them with fine wire, and photographed them one frame at a time against backlit glass, nudging each limb between exposures. Her 1926 feature The Adventures of Prince Achmed assembled tens of thousands of such frames into a silhouette fairy tale running more than an hour, by many accounts the first feature-length animated film. Reiniger spent the rest of her long career refining this technique rather than trading it for newer methods, treating the cut-paper silhouette not as a passing novelty but as a mature medium in its own right.",
+  "passage": "The camera lucida, patented by the chemist William Hyde Wollaston in 1806, is often imagined as a machine that draws by itself. It is nothing of the kind. The device is a small prism on an adjustable stem: an artist looking down through it sees the scene ahead apparently superimposed on the drawing paper below and must still trace every line by hand. What the prism supplies is not skill but correspondence — proportion and placement arrive already true, while the drawing itself remains the work of the person holding the pencil.",
   "question": "Which choice best describes the overall structure of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "It explains the frame-by-frame method Reiniger developed and then characterizes her lasting commitment to it as a mature medium."
-    },
-    {
-      "id": "B",
-      "text": "It compares Reiniger's silhouette films with the live-action films of the major studios and judges hers the better."
-    },
-    {
-      "id": "C",
-      "text": "It argues that Reiniger gave up silhouette animation once newer techniques became available."
-    },
-    {
-      "id": "D",
-      "text": "It catalogs the materials Reiniger used and then questions whether her films count as animation at all."
-    }
+    { "id": "A", "text": "It introduces a device and a common misconception about it, rejects the misconception, and then clarifies what the device actually contributes." },
+    { "id": "B", "text": "It traces the development of a drawing device from its original patenting through the later refinements introduced by a series of other nineteenth-century inventors." },
+    { "id": "C", "text": "It praises a device's ingenuity and then concedes several respects in which rival instruments outperformed it." },
+    { "id": "D", "text": "It explains why a once-popular device was eventually abandoned by the artists who had relied on it." }
   ],
   "correctAnswer": "A",
-  "explanation": "The passage first explains Reiniger's frame-by-frame silhouette method and then stresses that she kept refining it for the rest of her career, treating it as a serious medium rather than a novelty. Choice A names that two-part structure. Choice B invents a comparative judgment against studio films, C says she abandoned the technique—directly contradicted by the text—and D adds a doubt about whether her work counts as animation that the passage never raises.",
-  "_meta": {
-    "anchor": "Lotte Reiniger, silhouette animation"
-  }
+  "explanation": "**Choice A is correct.** The text moves in three steps: the device plus the popular fantasy about it (\"a machine that draws by itself\"), the flat rejection (\"It is nothing of the kind\"), and the clarification of its real contribution — correspondence, not skill.\n\n**The Full Solution:**\n- Sentence one pairs the introduction with the misconception.\n- Sentence two rejects the misconception in five words.\n- Sentences three and four explain what the prism actually does and pointedly assign the drawing to the artist — the correction filled out.\n\n**Why the other choices are wrong:**\n- B: After the 1806 patent, no later development or other inventors appear.\n- C: The text corrects a misunderstanding rather than praising the device, and no rival instruments are mentioned.\n- D: Nothing describes abandonment; the text is about what the device does, not its fall from use."
 }

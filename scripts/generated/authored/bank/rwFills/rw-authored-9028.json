@@ -1,0 +1,25 @@
+{
+  "id": 9028,
+  "passage": "A Japanese woodblock print of the Edo period usually carries a single artist’s name, though the sheet itself was the product of a ______: a publisher put up the money and chose the subject, a designer supplied the drawing, a carver cut that drawing into cherry-wood blocks, and a printer inked the blocks and pulled the impressions. Any one of the four could ruin the work of the other three.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "commission"
+    },
+    {
+      "id": "B",
+      "text": "rivalry"
+    },
+    {
+      "id": "C",
+      "text": "compromise"
+    },
+    {
+      "id": "D",
+      "text": "collaboration"
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** The list names four specialists whose separate contributions produced one sheet, and collaboration is the word for work divided that way.\n\n**The Full Solution:**\n- The blank precedes a colon, so the list defines it: publisher, designer, carver, printer.\n- Each of the four does a different job on the same object, and the last sentence stresses that they depend on one another. Collaboration is the only choice that names joint production.\n- The opening clause sets up the point — one name on the print, four hands behind it — so the blank must contradict the impression of solitary authorship.\n\n**Why the other choices are wrong:**\n- A: A commission is an order placed for a work. It names how a project is paid for, not the division of labor the list describes.\n- B: Rivalry would mean the four worked against one another; the text says they depended on one another.\n- C: A compromise is a settlement between opposed positions. Nothing in the list is a dispute."
+}

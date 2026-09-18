@@ -1,0 +1,29 @@
+{
+ "question": "In a model of reservoir evaporation, the expression $5m - 8$ gives the number of millimeters of water lost during a dry spell of $m$ days, and for one spell its value is $27$. What is the value of $5m + 6$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$33$"
+  },
+  {
+   "id": "B",
+   "text": "$35$"
+  },
+  {
+   "id": "C",
+   "text": "$41$"
+  },
+  {
+   "id": "D",
+   "text": "$49$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "adds $6$ to the given value $27$ without first removing the $-8$",
+  "B": "reports the value of $5m$ and stops",
+  "D": "adds the constant $8$ to $27$ and then adds the shift $14$ as well"
+ },
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Going from $5m - 8$ to $5m + 6$ adds $14$, so the value rises from $27$ to $41$.\n\n**The Full Solution:**\n\nStep 1: The two expressions share the term $5m$, so find it: $5m - 8 = 27$ gives $5m = 35$.\n\nStep 2: Substitute: $5m + 6 = 35 + 6 = 41$.\n\nStep 3: Check with $m = 7$: $5(7) - 8 = 27$ and $5(7) + 6 = 41$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($33$): adds $6$ directly to $27$, forgetting that the $-8$ must be removed first.\n\n* Choice B ($35$): stops at the value of $5m$ without adding $6$.\n\n* Choice D ($49$): adds back the $8$ and then adds the full shift of $14$, applying the correction twice.\n\n**Test Day Takeaway:** When two expressions share the same variable term, solve for that term once and substitute; you never need the variable itself.",
+ "id": "bank-alg-093"
+}

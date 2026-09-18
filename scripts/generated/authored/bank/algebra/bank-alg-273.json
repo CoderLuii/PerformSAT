@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-273",
+ "question": "At a flour mill, the energy used per tonne of output, in kilowatt-hours, is given by $E(r) = 3(r - 4)^2 + 11$, where $r$ is the roller speed in revolutions per second. Written in the form $ar^2 + br + c$, what is the value of $c$?",
+ "correctAnswer": "59",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**The correct answer is $59$.**\n\n**The Fast Way (~15s):** The constant term is the value at $r = 0$: $3(-4)^2 + 11 = 48 + 11 = 59$.\n\n**The Full Solution:**\nStep 1: Expand the square: $(r - 4)^2 = r^2 - 8r + 16$.\nStep 2: Distribute the $3$: $3r^2 - 24r + 48$.\nStep 3: Add $11$ to the constant term: $3r^2 - 24r + 59$, so $c = 59$. Check: $E(0) = 3(16) + 11 = 59$, which is exactly the constant term ✓\n\n**Common Mistakes:**\n* Reporting $11$, the constant inside the vertex form, instead of the constant term of the expanded form.\n* Computing $16 + 11 = 27$, forgetting to multiply $16$ by $3$.\n* Computing $3(16) = 48$ and stopping before adding $11$.\n\n**Test Day Takeaway:** In $a(r - h)^2 + k$, the standard-form constant is $ah^2 + k$ — the value the model takes at $r = 0$."
+}

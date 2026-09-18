@@ -6,40 +6,40 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
   "module": 1,
-  "passage": "A continental-scale assessment of North American avifauna by Rosenberg and colleagues (2019) tracked population changes across major biomes from 1970 to 2017. The researchers documented net losses of breeding birds in every biome they surveyed, but they emphasize that absolute counts can mask how severely a habitat's bird community has been affected. To support that distinction, a student writing about the study wants to argue that the share of a biome's birds lost can diverge sharply from the raw number lost because _______",
+  "passage": "Lightweight pedestrian bridges can sway noticeably when crowds cross them, so engineers sometimes retrofit them with tuned mass dampers — heavy pendulums that swing out of phase with the deck and absorb its motion. A city engineering office retrofitted five pedestrian bridges and measured peak lateral sway during comparable crowd events before and after installation. The office concludes that the retrofits reduced sway at every bridge tested because ______",
   "questionTable": {
     "type": "table",
-    "caption": "Estimated change in breeding bird populations across five North American biomes, 1970-2017 (Rosenberg et al., 2019)",
+    "caption": "Peak lateral sway at five pedestrian bridges before and after tuned-mass-damper retrofit",
     "headers": [
-      "Biome",
-      "Loss (millions of birds)",
-      "Percent change"
+      "Bridge",
+      "Sway before (cm)",
+      "Sway after (cm)"
     ],
     "rows": [
       [
-        "Grasslands",
-        "717",
-        "-53%"
+        "Millrace",
+        "6.8",
+        "2.1"
       ],
       [
-        "Boreal forests",
-        "501",
-        "-33%"
+        "Cannery",
+        "5.4",
+        "2.6"
       ],
       [
-        "Eastern forests",
-        "166",
-        "-17%"
+        "Foundry",
+        "8.2",
+        "3.0"
       ],
       [
-        "Aridlands",
-        "35",
-        "-29%"
+        "Boathouse",
+        "4.9",
+        "2.2"
       ],
       [
-        "Coasts",
-        "5",
-        "-13%"
+        "Ropewalk",
+        "7.5",
+        "3.9"
       ]
     ]
   },
@@ -47,21 +47,21 @@
   "choices": [
     {
       "id": "A",
-      "text": "grasslands lost an estimated 717 million birds, more than any other biome listed in the table."
+      "text": "peak sway at Foundry fell from 8.2 centimeters before the retrofit to 3.0 centimeters after it, the largest reduction recorded at any of the bridges."
     },
     {
       "id": "B",
-      "text": "aridlands lost only 35 million birds, far fewer than the 166 million lost from eastern forests, yet aridlands declined by 29 percent while eastern forests declined by just 17 percent."
+      "text": "peak sway decreased at all five bridges after the retrofit, falling, for example, from 8.2 to 3.0 centimeters at Foundry and from 4.9 to 2.2 centimeters at Boathouse."
     },
     {
       "id": "C",
-      "text": "coasts had the smallest losses in the table on both measures, with a drop of only 5 million birds and a percent change of just -13 percent."
+      "text": "Ropewalk recorded the highest post-retrofit sway of the five bridges, at 3.9 centimeters."
     },
     {
       "id": "D",
-      "text": "eastern forests lost 166 million birds compared with 35 million in aridlands, indicating that the percent decline in eastern forests was steeper than the percent decline in aridlands."
+      "text": "the average peak sway across the five bridges was lower after the retrofits than before them."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The student's claim is specifically that the share of a biome's birds lost can diverge sharply from the raw number lost — that is, the two columns of the table can tell different stories. The supporting evidence therefore has to point to a row pairing where the absolute-loss ranking and the percent-change ranking come apart. Choice B does exactly that: aridlands rank low on absolute loss (35 million, far below eastern forests' 166 million) but high on proportional loss (-29 percent vs. -17 percent). One biome lost fewer birds in raw terms yet shed a larger fraction of its bird community — precisely the divergence the claim asserts.\n\nChoice A is incorrect. Grasslands' 717-million figure is the biggest number in the table, and the row is read accurately, but a single biome's headline loss does not show that share and raw count can diverge — it only shows that one biome lost the most birds. The claim is about the relationship between the two columns, not about which row tops one of them. Choice D is incorrect. It pairs the right two rows (eastern forests and aridlands), but it reads the percent-change column in the wrong direction: eastern forests declined by 17 percent and aridlands by 29 percent, so the proportional decline is steeper in aridlands, not in eastern forests. Flipping which biome has the larger percent loss erases exactly the divergence the claim depends on. Choice C is incorrect. It accurately reports the coasts row, but coasts have the smallest loss on both measures simultaneously, so the row demonstrates alignment between the two columns rather than divergence between them. Citing it would, if anything, undercut the claim that share and raw number can diverge sharply."
+  "explanation": "**Choice B is correct.** A conclusion about \"every bridge tested\" needs evidence spanning every row, and B alone supplies it: sway fell at all five bridges, with representative before-and-after figures.\n\n**The Full Solution:**\n- The office's claim is universal in scope — the retrofits \"reduced sway at every bridge tested.\"\n- Checking the table row by row confirms the pattern: 6.8 to 2.1, 5.4 to 2.6, 8.2 to 3.0, 4.9 to 2.2, and 7.5 to 3.9 centimeters. Every after-value is lower than its before-value.\n- Choice B asserts exactly that all-five pattern and anchors it with two correctly cited examples.\n\n**Why the other choices are wrong:**\n- A: It documents only Foundry — one bridge, however impressive its reduction, cannot establish a claim about all five.\n- C: It reports a ranking among post-retrofit values that says nothing about change; Ropewalk's 3.9 centimeters supports no before-versus-after comparison on its own.\n- D: An average can fall even if sway increased at one or two bridges, so aggregate improvement cannot establish the every-bridge claim the office actually makes."
 }

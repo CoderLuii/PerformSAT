@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 1,
-  "passage": "Anthropologist Elsie Clews Parsons, who trained at Columbia University and served as an early president of the American Folklore Society, conducted decades of fieldwork on Pueblo religious life in the American Southwest. In her 1939 study Pueblo Indian Religion, she argued that the integration of kinship ties, agricultural rhythms, and ceremonial duties ______ so complete that any reform imposed on one element rippled through the others.",
+  "passage": "Lined on every surface with deep foam wedges that swallow reflections, ______ In such a room, the ear begins to notice sounds it normally ignores: the rush of blood, the faint whine of the nervous system itself.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "were"
+      "text": "visitors to an anechoic chamber often describe the silence as disorienting."
     },
     {
       "id": "B",
-      "text": "was"
+      "text": "an anechoic chamber absorbs sound so completely that it is quieter than any natural environment."
     },
     {
       "id": "C",
-      "text": "had been"
+      "text": "the silence of an anechoic chamber is often described as disorienting."
     },
     {
       "id": "D",
-      "text": "is"
+      "text": "there is no echo at all inside an anechoic chamber."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The grammatical subject of the blank is the singular noun 'integration,' the head of the long subject phrase 'the integration of kinship ties, agricultural rhythms, and ceremonial duties.' Standard English requires the verb to agree in number with the head noun, not with the plural nouns inside the intervening 'of'-phrase. The surrounding narration ('argued,' 'rippled') is in the simple past, so the verb in the that-clause must also be simple past. Both constraints together select the singular simple past form 'was': 'the integration.. was so complete that any reform.. rippled through the others.'"
+  "explanation": "**Choice B is correct.** The opening modifier — \"Lined on every surface with deep foam wedges\" — must attach to the thing that is actually lined, and only choice B places that thing, \"an anechoic chamber,\" immediately after the comma.\n\n**The Full Solution:**\n- An introductory participial phrase modifies the subject of the clause that follows it; the reader attaches \"Lined on every surface...\" to whatever noun comes first.\n- Ask what is lined with foam wedges: the chamber. The clause after the comma must therefore begin with the chamber.\n- Choice B does exactly that — \"an anechoic chamber absorbs sound so completely...\" — and the sentence's logic snaps into place.\n\n**Why the other choices are wrong:**\n- A: It makes \"visitors\" the subject, absurdly implying that the visitors are lined with foam wedges.\n- C: It hangs the modifier on \"the silence,\" but silence has no surfaces to line; the modifier dangles.\n- D: The expletive \"there is\" gives the modifier no subject at all to attach to, leaving \"Lined on every surface\" dangling with nothing lined."
 }

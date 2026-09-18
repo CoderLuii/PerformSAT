@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "question": "A finishing line's daily log lists the number of fabric defects recorded on eight consecutive shifts as $38$, $41$, $43$, $44$, $46$, $47$, $49$, and $152$. For this list of eight counts, the mean is greater than the median. By how much is it greater?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$12.5$"
+    },
+    {
+      "id": "C",
+      "text": "$13.5$"
+    },
+    {
+      "id": "D",
+      "text": "$107$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "leaves 152 out of the mean, comparing 308/7 = 44 with the median 45",
+    "C": "uses the fourth value, 44, as the median instead of averaging the two middle values: 57.5 - 44 = 13.5",
+    "D": "compares the outlier with the median instead of the mean: 152 - 45 = 107"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The eight values total $460$, so the mean is $57.5$; the two middle values are $44$ and $46$, so the median is $45$. The gap is $57.5 - 45 = 12.5$.\n\n**The Full Solution:**\nStep 1: Add the counts: $38 + 41 + 43 + 44 + 46 + 47 + 49 + 152 = 460$. With $8$ values, the mean is $\\frac{460}{8} = 57.5$.\nStep 2: The list is already in increasing order and has an even number of values, so the median is the average of the fourth and fifth values: $\\frac{44 + 46}{2} = 45$.\nStep 3: The mean exceeds the median by $57.5 - 45 = 12.5$. Check: seven of the eight counts sit below $57.5$, which is exactly what a single large outlier does to a mean. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): computes the mean of only the seven ordinary counts, $\\frac{308}{7} = 44$, and compares it with $45$. The question asks about the mean of all eight values.\n* Choice C ($13.5$): treats the fourth value, $44$, as the median. With an even count you must average the two middle values.\n* Choice D ($107$): measures how far the outlier sits above the median, $152 - 45$, rather than comparing the two measures of center.\n\n**Test Day Takeaway:** One extreme value drags the mean toward it and leaves the median almost untouched. When a list has an obvious outlier, compute the median from position and the mean from the total — never estimate either."
+}

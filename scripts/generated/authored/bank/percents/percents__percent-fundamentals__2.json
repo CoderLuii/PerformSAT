@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A soil sample has a water content of $0.045$ by mass. What percent of the sample's mass is water?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.045\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$0.45\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$4.5\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$45\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "no multiplication by 100",
+    "B": "moves the decimal one place",
+    "D": "multiplies by 1,000"
+  },
+  "correctAnswer": "C",
+  "hint": "Multiply the decimal by $100$ and attach the percent sign.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~10s):** $0.045 \\times 100 = 4.5$, so the water content is $4.5\\%$.\n\n**The Full Solution:**\nStep 1: A decimal becomes a percent when it is multiplied by $100$.\nStep 2: $0.045 \\times 100 = 4.5$, which moves the decimal point two places to the right.\nStep 3: Attach the percent sign: $4.5\\%$. Check the size: $0.045$ is a bit less than $\\frac{1}{20} = 5\\%$, and $4.5\\%$ is a bit less than $5\\%$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.045\\%$): attaches a percent sign without multiplying, which is a hundred times too small.\n* Choice B ($0.45\\%$): moves the decimal point only one place.\n* Choice D ($45\\%$): moves the decimal point three places, multiplying by $1{,}000$.\n\n**Test Day Takeaway:** Percent and decimal differ by exactly two decimal places — check the size of the answer against a familiar benchmark such as $5\\%$."
+}

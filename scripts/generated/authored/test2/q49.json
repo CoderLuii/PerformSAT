@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 2,
-  "passage": "Daphne Brooks, who teaches music and African American studies at Yale University, has extended Hortense Spillers's framework for thinking about Black women's writing by recentering, in her own scholarship, the categories of performance and sound. Where Spillers's essay was fixed on the printed text, Brooks attends to voice, gesture, and the responses of audiences as primary evidence. ______ Brooks's sonic archive — which charts Black women's musical and theatrical labor from nineteenth-century stage performers to contemporary singers — recasts singing and staging as an ongoing record of resistance and self-fashioning.",
+  "passage": "The Scottish mathematician John Napier spent two decades computing the logarithm tables he published in 1614 — an invention that let astronomers replace hours of multiplication with simple addition. Contemporaries prized logarithms for three things above all: shortening calculations that had once consumed days, reducing the errors that crept into long chains of arithmetic, and ______ results that any colleague with the same tables could verify independently.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "To draw on Spillers's account of dispossession,"
+      "text": "the production of"
     },
     {
       "id": "B",
-      "text": "Grounded in Spillers's account of dispossession,"
+      "text": "producing"
     },
     {
       "id": "C",
-      "text": "Drawing on Spillers's account of dispossession,"
+      "text": "to produce"
     },
     {
       "id": "D",
-      "text": "Having drawn on Spillers's account of dispossession,"
+      "text": "they produced"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The blank is filled by a fronted modifier whose implicit subject must match the subject of the main clause that follows. The main-clause subject is the inanimate noun phrase 'Brooks's sonic archive.' Standard English requires that a fronted participial or infinitival modifier attach logically to that subject; otherwise, it dangles. Only choice B, the passive past-participle phrase 'Grounded in Spillers's account of dispossession,' attaches cleanly: an archive can be grounded in a prior account, so the modifier and the main-clause subject align. The result reads, 'Grounded in Spillers's account of dispossession, Brooks's sonic archive.. recasts singing and staging..'"
+  "explanation": "**Choice B is correct.** The blank is the third item in a list whose first two items are gerund phrases — \"shortening calculations...\" and \"reducing the errors...\" — so parallel structure requires a third gerund: \"producing.\"\n\n**The Full Solution:**\n- Identify the series introduced by the colon: item one, \"shortening calculations that had once consumed days\"; item two, \"reducing the errors that crept into long chains of arithmetic.\"\n- Items in a series must share grammatical form. Both established items are gerund phrases, so the third must be as well.\n- \"Producing results that any colleague... could verify\" matches the pattern exactly: gerund plus object plus modifying clause, mirroring its two predecessors.\n\n**Why the other choices are wrong:**\n- A: \"the production of\" swaps the gerund pattern for a noun-plus-preposition construction, breaking the -ing rhythm the first two items establish.\n- C: \"to produce\" is an infinitive; mixing an infinitive into a gerund series is precisely the faulty parallelism the convention forbids.\n- D: \"they produced\" introduces a subject and finite verb, turning the third list item into an independent clause that cannot sit in a series of phrases."
 }

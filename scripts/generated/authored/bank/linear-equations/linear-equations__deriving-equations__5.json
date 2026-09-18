@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "question": "A cable is wound onto a drum at a constant rate. After $4$ minutes of winding, $118$ meters of cable remain on the ground, and after $9$ minutes, $63$ meters remain. Which equation gives the number of meters $L$ of cable remaining on the ground after $t$ minutes of winding?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$L = 118 - 11t$"
+    },
+    {
+      "id": "B",
+      "text": "$L = 162 - 55t$"
+    },
+    {
+      "id": "C",
+      "text": "$L = 162 - 11t$"
+    },
+    {
+      "id": "D",
+      "text": "$L = 162 + 11t$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "Neither reading happens at $t = 0$, so the constant term has to be recovered rather than read off.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~35s):** $55$ meters disappear over $5$ minutes, so the rate is $-11$; backing up $4$ minutes from $118$ gives $118 + 44 = 162$ at $t = 0$ — choice C.\n\n**The Full Solution:**\nStep 1: Rate of change: $\\frac{63 - 118}{9 - 4} = \\frac{-55}{5} = -11$ meters per minute.\nStep 2: Find the amount at $t = 0$ by substituting the first reading: $118 = -11(4)+b$, so $b = 118 + 44 = 162$ meters.\nStep 3: The equation is $L = 162 - 11t$. Check the second reading: $162 - 11(9) = 162 - 99 = 63$ meters. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($L = 118 - 11t$): finds the rate correctly but uses the $4$-minute reading, $118$, as the amount at $t = 0$.\n* Choice B ($L = 162 - 55t$): uses the total drop between the two readings, $55$ meters, as the per-minute rate instead of dividing by the $5$ elapsed minutes.\n* Choice D ($L = 162 + 11t$): uses a positive rate, which would pile cable onto the ground while the drum winds it up.\n\n**Test Day Takeaway:** Two readings at nonzero times give the rate directly, but the constant term still has to be back-solved. Verify with the reading you did not use to find it."
+}

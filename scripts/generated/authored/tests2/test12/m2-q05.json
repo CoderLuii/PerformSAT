@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "Average daily traffic volume on a river crossing is modeled by $V = 34{,}600 - 1{,}200t$, where $t$ is the number of years after 2018. Which equation models the average daily traffic volume in terms of $w$, the number of years after 2023?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$V = 28{,}600 - 1{,}200w$"
+  },
+  {
+   "id": "B",
+   "text": "$V = 28{,}600 + 1{,}200w$"
+  },
+  {
+   "id": "C",
+   "text": "$V = 34{,}600 - 1{,}200w$"
+  },
+  {
+   "id": "D",
+   "text": "$V = 40{,}600 - 1{,}200w$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "re-anchors the starting value correctly but reverses the sign of the yearly change",
+  "C": "keeps the 2018 starting value of 34,600 and only renames the variable",
+  "D": "adds 5(1,200) to the starting value instead of subtracting it"
+ },
+ "explanation": "**SAT Pattern: Slope-Intercept Form**\n\n**Choice A is correct.** Because $2023$ is $5$ years after $2018$, $t = w + 5$, and substituting gives $V = 34{,}600 - 1{,}200(w + 5) = 28{,}600 - 1{,}200w$.\n\n**The Fast Way (~25s):** The rate never changes, so only the intercept moves: five years of decline is $5(1{,}200) = 6{,}000$, and $34{,}600 - 6{,}000 = 28{,}600$.\n\n**The Full Solution:**\nStep 1: Relate the two clocks. If $w$ counts years after $2023$ and $t$ counts years after $2018$, then $t = w + 5$.\nStep 2: Substitute: $V = 34{,}600 - 1{,}200(w + 5) = 34{,}600 - 1{,}200w - 6{,}000$.\nStep 3: Combine the constants: $V = 28{,}600 - 1{,}200w$. Check at $w = 0$ (the year $2023$): the new model gives $28{,}600$, and the original model at $t = 5$ gives $34{,}600 - 6{,}000 = 28{,}600$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($V = 28{,}600 + 1{,}200w$): re-anchors the intercept correctly but flips the sign of the slope, turning a declining crossing into a growing one.\n* Choice C ($V = 34{,}600 - 1{,}200w$): renames $t$ as $w$ without moving the starting point, so it reports the 2018 volume as the 2023 volume — an overstatement of $6{,}000$ vehicles.\n* Choice D ($V = 40{,}600 - 1{,}200w$): moves the intercept the wrong way, adding $6{,}000$ instead of subtracting it, as if traffic had been rising before 2023.\n\n**Test Day Takeaway:** Shifting the origin of a linear model changes the intercept only. Write the substitution $t = w + 5$ and let the algebra move the constant for you."
+}

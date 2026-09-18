@@ -1,0 +1,29 @@
+{
+  "id": 15,
+  "question": "The function $u$ gives the number of housing units approved in a district $t$ years after 2010, and $u(t) = mt + b$, where $m$ and $b$ are constants. From 2014 to 2020 the number approved decreased by 27 units, and 96 units were approved in 2018. What is the value of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$60$"
+    },
+    {
+      "id": "B",
+      "text": "$96$"
+    },
+    {
+      "id": "C",
+      "text": "$123$"
+    },
+    {
+      "id": "D",
+      "text": "$132$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the 36-unit change instead of adding it back, giving 96 - 36 = 60",
+    "B": "reports the 2018 count as b, but b is the value at t = 0, which is 2010",
+    "C": "walks the rate back over 6 years instead of the 8 years from 2010 to 2018, giving 96 + 27 = 123"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Slope-Intercept Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** The rate is $m = \\frac{-27}{6} = -4.5$ units per year, so walking back the $8$ years from 2018 to 2010 gives $b = 96 + 4.5(8) = 132$.\n\n**The Full Solution:**\nStep 1: Convert the years to $t$-values. 2014 is $t = 4$, 2018 is $t = 8$, and 2020 is $t = 10$.\nStep 2: Find $m$. Between $t = 4$ and $t = 10$ the output falls by $27$ over $6$ years, so $m = \\frac{-27}{10 - 4} = -4.5$.\nStep 3: Use the known point $u(8) = 96$: $-4.5(8) + b = 96$, so $-36 + b = 96$ and $b = 132$. Check: $u(4) = -4.5(4) + 132 = 114$ and $u(10) = -4.5(10) + 132 = 87$, and $114 - 87 = 27$, exactly the stated decrease. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($60$): computes $96 - 36$. Because the function is decreasing, earlier years have LARGER outputs, so the $36$ must be added back.\n* Choice B ($96$): treats the 2018 value as the constant $b$. In $u(t) = mt + b$, $b$ is the output at $t = 0$, which is the year 2010.\n* Choice C ($123$): applies the rate over $6$ years rather than $8$, adding $4.5(6) = 27$ instead of $4.5(8) = 36$.\n\n**Test Day Takeaway:** Translate the years to $t$ first, get $m$ from the change over the matching span, then substitute one known point. Going backward in $t$ on a decreasing line means going UP in value."
+}

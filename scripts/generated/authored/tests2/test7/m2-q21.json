@@ -1,0 +1,54 @@
+{
+ "id": 21,
+ "question": "A triangular bracket for a telescope mount is shown, with its two legs meeting at a right angle and every length given in centimeters. What is the perimeter of the bracket, in centimeters?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     15,
+     8
+    ]
+   ],
+   "sideLabels": [
+    "x + 7",
+    "x",
+    "17"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$32$"
+  },
+  {
+   "id": "B",
+   "text": "$34$"
+  },
+  {
+   "id": "C",
+   "text": "$40$"
+  },
+  {
+   "id": "D",
+   "text": "$54$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "finds x = 8 but adds x, 7, and 17 instead of x, x + 7, and 17",
+  "B": "assumes the two legs add to the hypotenuse, solving x + (x + 7) = 17 for x = 5 and adding 5 + 12 + 17",
+  "D": "uses the magnitude of the rejected root x = -15, adding 15 + 22 + 17"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** $x^2+(x+7)^2=17^2$ simplifies to $x^2+7x-120=0$, so $x=8$; the sides are $8$, $15$, and $17$, giving perimeter $40$.\n\n**The Full Solution:**\nStep 1: Apply the Pythagorean theorem to the labeled legs. $x^2+(x+7)^2=17^2$ becomes $x^2+x^2+14x+49=289$, or $2x^2+14x-240=0$.\nStep 2: Solve the quadratic. Dividing by $2$ gives $x^2+7x-120=0$, which factors as $(x+15)(x-8)=0$, so $x=-15$ or $x=8$. A length cannot be negative, so $x=8$.\nStep 3: Add the three sides. The legs are $8$ and $8+7=15$, and the hypotenuse is $17$, so the perimeter is $8+15+17=40$ centimeters. Check: $8^2+15^2=64+225=289=17^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($32$): solves for $x=8$ correctly but then adds $8+7+17$, treating the $7$ as a side rather than as part of the leg $x+7$.\n* Choice B ($34$): assumes the legs add to the hypotenuse, solving $x+(x+7)=17$ for $x=5$ and summing $5+12+17$; only the SQUARES of the legs add to the square of the hypotenuse.\n* Choice D ($54$): keeps the rejected root as a length, using $x=15$ and $x+7=22$ to get $15+22+17$.\n\n**Test Day Takeaway:** When a right triangle's legs are given as expressions in one variable, the Pythagorean theorem produces a quadratic — expect two roots and discard the negative one. Then re-read which quantity the question wants; the variable is rarely the answer.\n"
+}

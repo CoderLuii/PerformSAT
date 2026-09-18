@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A shipment contains $24$ crates of machined pins, each crate holding either $18$ pins or $30$ pins, and the shipment holds $552$ pins in all. How many of the crates hold $30$ pins?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$14$"
+  },
+  {
+   "id": "D",
+   "text": "$23$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the 120-pin excess by 30 instead of by the 12-pin difference between the two crate sizes",
+  "C": "answers the number of 18-pin crates instead of the number of 30-pin crates",
+  "D": "divides 552 pins by 24 crates and reports the 23-pin average as a count of crates"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** If all $24$ crates held $18$ pins the shipment would have $432$ pins; the extra $120$ pins come from swapping in $30$-pin crates, each swap adding $12$ pins, so $120 \\div 12 = 10$ crates.\n\n**The Full Solution:**\nStep 1: Let $x$ be the number of $18$-pin crates and $y$ the number of $30$-pin crates: $x + y = 24$ and $18x + 30y = 552$.\nStep 2: Substitute $x = 24 - y$ into the second equation: $18(24 - y) + 30y = 552$, or $432 + 12y = 552$.\nStep 3: Solve: $12y = 120$, so $y = 10$ and $x = 14$. Check: $14(18) + 10(30) = 252 + 300 = 552$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): divides the $120$-pin excess by $30$ rather than by $12$; the excess is created $12$ pins at a time, not $30$.\n* Choice C ($14$): the number of $18$-pin crates, the other variable in the system.\n* Choice D ($23$): $552 \\div 24 = 23$ is the average number of pins per crate, a pin count rather than a crate count.\n\n**Test Day Takeaway:** For a two-size counting problem, assume every item is the smaller size first; the leftover divided by the size difference is the count of larger items."
+}

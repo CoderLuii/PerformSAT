@@ -1,0 +1,6 @@
+{
+ "id": 22,
+ "question": "In a pump-curve calculation, the only real number satisfying $\\sqrt{cx - 3} + 3 = x$ is $12$, and $c$ is a positive constant. What is $c$?",
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~40s):** At $x = 12$ the radical must equal $12 - 3 = 9$, so $12c - 3 = 81$ and $c = 7$.\n\n**The Full Solution:**\nStep 1: Put $x = 12$ into both sides: $\\sqrt{12c - 3} + 3 = 12$.\nStep 2: Move the $3$ across before squaring, since squaring a sum term by term is not legal: $\\sqrt{12c - 3} = 9$, so $12c - 3 = 81$.\nStep 3: $12c = 84$, so $c = 7$. Check: with $c = 7$ the equation becomes $\\sqrt{7x - 3} = x - 3$, which squares to $x^2 - 13x + 12 = 0$, whose roots are $1$ and $12$. At $x = 1$ the left side is $\\sqrt{4} = 2$ while $x - 3 = -2$, so $1$ is extraneous and $12$ really is the only solution. $\\checkmark$\n\n**Common Mistakes:** Gridding $11.5$, from squaring both sides before isolating and writing $12c - 3 + 9 = 144$; gridding $9$, the value of the radical rather than the constant inside it; gridding $84$, which is $12c$, stopping one division short.\n\n**Test Day Takeaway:** A term added outside a radical must be moved before squaring, even when the solution is handed to you. Squaring a sum term by term is the mistake this pattern is built to catch."
+}

@@ -5,30 +5,31 @@
  "band": 3,
  "domain": "standard-english-conventions",
  "skill": "boundaries",
+ "type": "multiple-choice",
+ "passage": "The photographer Gordon Parks ______ once described his camera as a weapon against poverty and racism, and his images of everyday life in segregated Washington, D.C., made in 1942, gave that conviction lasting form.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "1940s"
+   "text": "— the first Black staff photographer at a major American picture magazine,"
   },
   {
    "id": "B",
-   "text": "1940s,"
+   "text": ", the first Black staff photographer at a major American picture magazine,"
   },
   {
    "id": "C",
-   "text": "1940s;"
+   "text": ", the first Black staff photographer at a major American picture magazine —"
   },
   {
    "id": "D",
-   "text": "1940s:"
+   "text": "the first Black staff photographer at a major American picture magazine"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"1940s,\". The phrase \"an operation that Helen Brooke Taussig helped develop in the 1940s\" is a nonrestrictive appositive that interrupts the main sentence between its subject, \"shunt,\" and its verb, \"remains.\" Such an interrupter is set off by a pair of commas; the first comma appears after \"shunt,\" so the blank needs the matching second comma to close it. Without that comma (A), the interrupter runs straight into the verb. A semicolon (C) would have to separate two independent clauses, but \"remains a standard treatment …\" has no subject of its own and is not independent. A colon (D) would wrongly announce the rest of the sentence as a list or explanation.",
+ "explanation": "**Choice B is correct.** The phrase \"the first Black staff photographer at a major American picture magazine\" is a nonrestrictive appositive describing Parks, and such an interrupter must be enclosed in a matched pair of punctuation marks — here, a comma on each side.\n\n**The Full Solution:**\n- Remove the phrase and the sentence still works: \"The photographer Gordon Parks once described his camera as a weapon...\" — proof the appositive is supplementary.\n- Supplementary elements are set off by paired commas or paired dashes; the pair must match. B opens and closes with commas.\n\n**Why the other choices are wrong:**\n- A: It opens with a dash but closes with a comma — a mismatched pair.\n- C: It opens with a comma but closes with a dash, the same mismatch in reverse.\n- D: With no punctuation at all, the appositive collides with the name and the verb — \"Parks the first Black staff photographer at a major American picture magazine once described\" — obscuring where the description ends and the sentence resumes.",
  "_meta": {
-  "anchor": "Helen Brooke Taussig — pediatric cardiologist; Blalock-Thomas-Taussig shunt; paired-comma interrupter"
- },
- "passage": "Pediatric cardiology owes one of its foundational operations to a mid-century collaboration at Johns Hopkins. The Blalock-Thomas-Taussig shunt, an operation that the cardiologist Helen Brooke Taussig helped develop in the 1940s ______ remains a standard treatment for infants born with a serious cyanotic heart defect.",
- "type": "multiple-choice"
+  "anchor": "Gordon Parks — paired commas around a nonrestrictive appositive",
+  "rule": "matched punctuation pair around a supplementary appositive"
+ }
 }

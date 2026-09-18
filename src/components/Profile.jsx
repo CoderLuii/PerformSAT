@@ -1,5 +1,5 @@
-import React, { useState, useRef } from 'react';
-import { colors, typography, spacing, radius, shadows, transitions } from '../design/tokens';
+import React, { useState, useRef, useEffect } from 'react';
+import { colors, typography, spacing } from '../design/tokens';
 import { cardStyles, inputStyles } from '../design/components';
 import { Button } from './ui/Button';
 import { Modal } from './ui/Modal';
@@ -142,8 +142,16 @@ const Profile = ({
   entitlement = null,
   onSubscribe = null,
   onManageBilling = null,
+  // 'goals' scrolls the SAT Goals card into view on mount — the landing for
+  // "Raise your target" / "Update your test date" from the score surfaces.
+  initialFocus = null,
 }) => {
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+  useEffect(() => {
+    if (initialFocus !== 'goals') return;
+    const el = document.getElementById('profile-sat-goals');
+    if (el && typeof el.scrollIntoView === 'function') el.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }, [initialFocus]);
   const [photoBusy, setPhotoBusy] = useState(false);
   const [photoError, setPhotoError] = useState('');
   const [showDeleteModal, setShowDeleteModal] = useState(false);
@@ -272,7 +280,8 @@ const Profile = ({
         }}>
           {user?.firstName || 'Student'}
         </h1>
-        <p style={{
+        {/* ph-no-capture: keep the email out of PostHog session replays */}
+        <p className="ph-no-capture" style={{
           fontSize: typography.sizes.sm,
           color: colors.text.tertiary,
         }}>
@@ -302,7 +311,7 @@ const Profile = ({
       </div>
 
       {/* SAT Goals */}
-      <div style={{ marginBottom: spacing.xl }}>
+      <div id="profile-sat-goals" style={{ marginBottom: spacing.xl, scrollMarginTop: '96px' }}>
         <h2 style={{
           fontSize: typography.sizes.sm,
           fontWeight: typography.weights.semibold,
@@ -339,6 +348,11 @@ const Profile = ({
             onSave={onUpdateTestDate}
             type="date"
           />
+          {Array.isArray(user?.testDates) && user.testDates.length > 1 && (
+            <div style={{ fontSize: typography.sizes.xs, color: colors.text.tertiary, marginTop: '-6px' }}>
+              All your dates: {user.testDates.map(formatDate).join(' · ')} — this field edits the next one; manage the full list from Home.
+            </div>
+          )}
           <div style={{ borderTop: `1px solid ${colors.surface.gray}` }} />
           <EditableField
             label="Target Schools"

@@ -1,0 +1,22 @@
+{
+ "id": 11,
+ "question": "A $40$-kilogram flour blend contains $x$ kilograms of oat flour and the rest barley flour, with the fiber contents given in the table. The total fiber in the blend, in grams, can be written as $ax + b$, where $a$ and $b$ are constants. What is the value of $a + b$?",
+ "questionTable": {
+  "headers": [
+   "Flour",
+   "Fiber per kilogram (grams)"
+  ],
+  "rows": [
+   [
+    "Oat",
+    "$96$"
+   ],
+   [
+    "Barley",
+    "$132$"
+   ]
+  ]
+ },
+ "correctAnswer": "5244",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**The correct answer is $5244$.**\n\n**The Fast Way (~35s):** Total fiber $= 96x + 132(40 - x) = 5280 - 36x$, so $a = -36$, $b = 5280$, and $a + b = 5244$.\n\n**The Full Solution:**\nStep 1: With $x$ kilograms of oat flour in a $40$-kilogram blend, the barley portion is $40 - x$ kilograms. Total fiber $= 96x + 132(40 - x)$ grams.\nStep 2: Distribute and collect like terms: $96x + 5280 - 132x = -36x + 5280$.\nStep 3: Match this to $ax + b$: the coefficient of $x$ is $a = -36$ and the constant term is $b = 5280$, so $a + b = -36 + 5280 = 5244$. Check at $x = 40$ (all oat flour): the expression gives $-36(40) + 5280 = -1440 + 5280 = 3840$, and $96(40) = 3840$ grams. $\\checkmark$\n\n**Common Mistakes:** Entering $5316$ (writing $a = 36$ from $132 - 96$ and losing the sign; oat flour has LESS fiber per kilogram, so total fiber falls as $x$ grows); entering $5280$ (reporting $b$ alone and forgetting to add $a$); entering $-36$ (reporting $a$ alone); entering $228$ (adding the two table values, $96 + 132$, instead of building the expression).\n\n**Test Day Takeaway:** Write the mixture expression, expand it completely, and read $a$ and $b$ off the collected form. The sign of $a$ comes from the subtraction, not from the larger table value."
+}

@@ -1,0 +1,49 @@
+{
+ "question": "A tracking dish's boundary in the $xy$-plane satisfies $x^2 + y^2 + Dx + Ey + F = 0$, with the three constants listed in the table. What is the radius of that boundary?",
+ "questionTable": {
+  "headers": [
+   "Constant",
+   "Value"
+  ],
+  "rows": [
+   [
+    "$D$",
+    "$-14$"
+   ],
+   [
+    "$E$",
+    "$8$"
+   ],
+   [
+    "$F$",
+    "$40$"
+   ]
+  ]
+ },
+ "hint": "The constants tell you the radius only after the $x$-terms and $y$-terms are grouped.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$25$"
+  },
+  {
+   "id": "C",
+   "text": "$40$"
+  },
+  {
+   "id": "D",
+   "text": "$65$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports 25, which is the square of the radius",
+  "C": "reports the constant F = 40",
+  "D": "computes 49 + 16 = 65 and never subtracts 40"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** Completing both squares gives $(x - 7)^2 + (y + 4)^2 = 49 + 16 - 40 = 25$, so the radius is $5$.\n\n**The Full Solution:**\nStep 1: Substitute the constants: $x^2 + y^2 - 14x + 8y + 40 = 0$, then group as $(x^2 - 14x) + (y^2 + 8y) = -40$.\nStep 2: Complete each square by adding $49$ and $16$ to both sides: $(x - 7)^2 + (y + 4)^2 = -40 + 49 + 16$.\nStep 3: The right side is $25$, so $r^2 = 25$ and $r = 5$. Check: the point $(12, -4)$ satisfies $25 + 0 = 25$ and sits $5$ units from $(7, -4)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($25$): reports $r^2$ rather than $r$.\n* Choice C ($40$): reports the constant $F$ straight from the table.\n* Choice D ($65$): adds $49 + 16$ and forgets to move the $40$ across.\n\n**Test Day Takeaway:** After completing both squares the right side is $r^2$, so one square root still remains."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-160",
+ "question": "A weaver stretches linen over a square frame; each side of the frame measures $3k$ centimeters for a positive constant $k$, and $84$ centimeters of binding tape wraps the frame exactly once. What is the area, in square centimeters, of the frame?",
+ "correctAnswer": "441",
+ "explanation": "**SAT Pattern: Square Perimeter**\n\n**The correct answer is $441$.**\n\n**The Fast Way (~30s):** The perimeter is $4(3k)=12k=84$, so $k=7$, each side is $21$ centimeters, and the area is $21^2=441$.\n\n**The Full Solution:**\n\nStep 1 — Write the perimeter in terms of $k$: four sides of $3k$ give $12k$ centimeters.\n\nStep 2 — The tape wraps the frame exactly once, so $12k=84$ and $k=7$. Each side is $3(7)=21$ centimeters.\n\nStep 3 — Square the side: $A=21^2=441$ square centimeters. Check: $4(21)=84$, matching the tape.\n\n**Common Mistakes:** Answering $7$ reports $k$ instead of the area. Answering $21$ reports the side length. Solving $3k=84$ gives $k=28$, a side of $84$, and an area of $7{,}056$.\n\n**Test Day Takeaway:** When a side is written as a multiple of a constant, build the perimeter symbolically first — the constant falls out in one division."
+}

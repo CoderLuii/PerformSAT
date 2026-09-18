@@ -1,0 +1,6 @@
+{
+ "id": "bank-ps-050",
+ "question": "A satellite-tagged gray wolf traveled $72$ kilometers across its territory in one night. Using the conversion $1$ mile $= 1.6$ kilometers, how many miles did the wolf travel that night?",
+ "correctAnswer": "45",
+ "explanation": "**SAT Pattern: km to Miles Conversion**\n\n**The correct answer is $45$.** Dividing by the number of kilometers in a mile gives $\\frac{72}{1.6} = 45$ miles.\n\n**The Fast Way (~20s):** $\\frac{72}{1.6} = \\frac{720}{16} = 45$ miles.\n\n**The Full Solution:**\n\nStep 1: Set up the conversion so kilometers cancel: $72 \\text{ km} \\cdot \\dfrac{1 \\text{ mi}}{1.6 \\text{ km}}$.\n\nStep 2: Divide: $\\frac{72}{1.6} = 45$ miles.\n\nStep 3: Check the direction. A mile is longer than a kilometer, so the number of miles must be smaller than $72$, and $45 < 72$. Check: $45(1.6) = 72$ kilometers.\n\n**Common Mistakes:**\n\n* Multiplying instead of dividing gives $72(1.6) = 115.2$, a number larger than the kilometer count, which cannot be right for the longer unit.\n* Dividing by $1.6$ after mistakenly converting to meters gives $45{,}000$, mixing two conversions.\n* Answering $73.6$ adds $1.6$ rather than using it as a rate.\n\n**Test Day Takeaway:** Before dividing, decide whether the answer should be larger or smaller than the given number -- the longer unit always carries the smaller count."
+}

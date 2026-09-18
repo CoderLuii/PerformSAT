@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "In a signal-processing model, the gain of a filter is $\\frac{4x^2 - 49}{2x^2 - x - 28}$ for every value of $x$ greater than $4$. Which expression gives the same gain?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{2x - 7}{x - 4}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{2x + 7}{x - 4}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{2x - 7}{x + 4}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{2x - 7}{2x - 8}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "cancels the factor 2x - 7 instead of the shared factor 2x + 7",
+  "C": "factors the denominator as (2x + 7)(x + 4), which expands to 2x^2 + 15x + 28",
+  "D": "factors the denominator as (2x + 7)(2x - 8), which is twice the given denominator"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The numerator is a difference of squares, $(2x - 7)(2x + 7)$, and the denominator factors as $(2x + 7)(x - 4)$. Dividing out $2x + 7$ leaves $\\frac{2x - 7}{x - 4}$.\n\n**The Full Solution:**\nStep 1: Factor the numerator: $4x^2 - 49 = (2x)^2 - 7^2 = (2x - 7)(2x + 7)$.\nStep 2: Factor the denominator: $2x^2 - x - 28 = (2x + 7)(x - 4)$, since $(2x + 7)(x - 4) = 2x^2 - 8x + 7x - 28 = 2x^2 - x - 28$.\nStep 3: The common factor $2x + 7$ is not zero for $x > 4$, so it divides out and the gain equals $\\frac{2x - 7}{x - 4}$. Check at $x = 5$: the original is $\\frac{100 - 49}{50 - 5 - 28} = \\frac{51}{17} = 3$, and the simplified form gives $\\frac{10 - 7}{5 - 4} = 3$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{2x + 7}{x - 4}$): this divides out the wrong factor. At $x = 5$ it gives $\\frac{17}{1} = 17$, not $3$.\n* Choice C ($\\frac{2x - 7}{x + 4}$): this comes from factoring the denominator as $(2x + 7)(x + 4)$, which expands to $2x^2 + 15x + 28$, not the given denominator. At $x = 5$ it gives $\\frac{3}{9} = \\frac{1}{3}$.\n* Choice D ($\\frac{2x - 7}{2x - 8}$): this uses $(2x + 7)(2x - 8)$, a product equal to $4x^2 - 2x - 56$ — twice the denominator — so the value at $x = 5$ is $\\frac{3}{2}$, half of the correct gain.\n\n**Test Day Takeaway:** Factor both parts completely before cancelling, and confirm a factorization by expanding it back; only whole factors, never single terms, may be divided out."
+}

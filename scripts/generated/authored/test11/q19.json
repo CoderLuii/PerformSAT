@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "habits;"
-    },
-    {
-      "id": "B",
-      "text": "habits,"
-    },
-    {
-      "id": "C",
-      "text": "habits"
-    },
-    {
-      "id": "D",
-      "text": "habits:"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. Everything before the blank—\"Researchers now focus instead on a cluster of everyday habits\"—is a complete sentence, and what follows is a list that spells out which habits are meant. A colon is the mark that introduces such a list after a complete statement, so \"habits:\" is correct. A semicolon would wrongly signal a second independent clause, but the list is not a sentence. A comma cannot cleanly introduce a three-item list whose items already contain commas, leaving the boundary blurred. And no punctuation at all runs the clause straight into the list.",
-  "passage": "For much of the twentieth century, insomnia was treated as a single disorder with a single cause. Researchers now focus instead on a cluster of everyday habits ______ irregular bedtimes, late-evening screen use, and daytime napping that erodes the natural pressure to sleep at night.",
-  "_meta": {
-    "anchor": "epidemiology of sleep: behavioral cluster in insomnia",
-    "rule": "colon introducing a list after an independent clause"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "tasks;"
   },
-  "id": 1119,
-  "module": 1
+  {
+   "id": "B",
+   "text": "tasks,"
+  },
+  {
+   "id": "C",
+   "text": "tasks"
+  },
+  {
+   "id": "D",
+   "text": "tasks:"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** An independent clause ends at \"tasks,\" and what follows is a list spelling those tasks out — the conventional mark to introduce it is a colon.\n\n**The Full Solution:**\n- Before the blank: \"Manuals for early telephone operators broke the job into a strict sequence of tasks\" — a complete clause.\n- After the blank: a series of gerund phrases (\"answering ... asking ... testing ... connecting\") that names the tasks just promised.\n- A colon after an independent clause is exactly the device for introducing such an elaborating list.\n\n**Why the other choices are wrong:**\n- A: A semicolon must join two independent clauses; the list of gerund phrases that follows cannot stand alone.\n- B: A comma leaves the boundary between the claim and its elaborating list unmarked in kind — it reads as a stray series comma rather than an introduction.\n- C: No punctuation at all runs the clause straight into the list, obscuring where the promise ends and the enumeration begins.",
+ "passage": "Manuals for early telephone operators broke the job into a strict sequence of ______ answering the calling lamp, asking for the number requested, testing whether the called line was busy, and connecting the cords in the proper order.",
+ "_meta": {
+  "rule": "colon introducing an elaborating list after an independent clause",
+  "anchor": "telephone switchboard operators — procedure manuals",
+  "distractors": {
+   "A": "semicolon before a non-clause",
+   "B": "comma too weak to introduce the list",
+   "C": "missing boundary"
+  }
+ },
+ "id": 1119,
+ "module": 1
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-430",
+  "question": "A linear model predicts the value of $y$ for a given value of $x$ using $\\hat{y}=6x+11$. For one data point, $x=4$ and the observed value is $y=41$. What is the value of $y-\\hat{y}$ for this data point?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-6$"
+    },
+    {
+      "id": "B",
+      "text": "$6$"
+    },
+    {
+      "id": "C",
+      "text": "$17$"
+    },
+    {
+      "id": "D",
+      "text": "$35$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts in the wrong order, computing $\\hat{y}-y$.",
+    "C": "drops the constant term, using $\\hat{y}=24$.",
+    "D": "reports the predicted value instead of the difference."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Residual**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** $\\hat{y}=6(4)+11=35$, so $y-\\hat{y}=41-35=6$.\n\n**The Full Solution:**\nStep 1: Substitute $x=4$ into the model: $\\hat{y}=6(4)+11$.\nStep 2: $\\hat{y}=24+11=35$.\nStep 3: The difference is observed minus predicted: $41-35=6$. Check: $35+6=41$, the observed value. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6$): computes $\\hat{y}-y=35-41$, reversing the order of subtraction.\n* Choice C ($17$): uses $\\hat{y}=24$, dropping the constant $11$ from the model.\n* Choice D ($35$): reports the predicted value $\\hat{y}$ rather than the difference asked for.\n\n**Test Day Takeaway:** The difference $y-\\hat{y}$ is always observed minus predicted. A positive value means the observation sits above the model."
+}

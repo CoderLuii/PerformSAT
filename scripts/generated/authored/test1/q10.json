@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 1,
- "passage": "In her 1925 doctoral thesis, Stellar Atmospheres, the astrophysicist Cecilia Payne-Gaposchkin, then completing her studies at the Harvard College Observatory, drew a startling conclusion from the spectra of stars. By applying recent advances in atomic physics to the dark absorption lines that crisscross stellar light, she argued that the striking differences astronomers had observed among stellar spectra arose chiefly from variations in temperature and the ionization of atoms in stellar atmospheres rather than from genuine differences in chemical makeup. From this analysis she further concluded that stars are composed overwhelmingly of hydrogen and helium, in proportions that bear little resemblance to the rocky composition of Earth. Senior astronomers initially received the second claim with skepticism, since the prevailing assumption held that stars and Earth shared broadly similar compositions.",
+ "passage": "The stone city of Great Zimbabwe, built between the eleventh and fifteenth centuries in southern Africa, was once portrayed by outsiders as an isolated curiosity. Archaeological work tells a different story. Excavations within the city's enclosures have recovered Chinese porcelain, glass beads manufactured in Persia, and coastal shells carried hundreds of miles inland, while gold and ivory from the Zimbabwe plateau moved outward through Indian Ocean ports such as Kilwa. Far from standing apart, Great Zimbabwe operated as an inland hub in a trading web that stretched across the Indian Ocean world.",
  "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "Payne-Gaposchkin's 1925 thesis concluded that stars and Earth share broadly similar compositions, in keeping with the prevailing assumption among astronomers of the period."
+   "text": "Archaeologists disagree about whether the artifacts excavated at Great Zimbabwe were acquired through trade or through conquest."
   },
   {
    "id": "B",
-   "text": "Payne-Gaposchkin's 1925 thesis argued from stellar spectra that temperature and ionization, not composition, explain the differences among spectra and that stars are mostly hydrogen and helium, overturning the assumption that stars resembled Earth."
+   "text": "Great Zimbabwe's builders imported most of the materials used to construct the city's stone enclosures."
   },
   {
    "id": "C",
-   "text": "Payne-Gaposchkin demonstrated that the striking differences astronomers had observed among stellar spectra arise chiefly from variations in temperature and in the ionization of atoms within the stars' outer atmospheres rather than from genuine compositional differences."
+   "text": "The gold and ivory trade was more important to Great Zimbabwe's economy than the import of foreign goods."
   },
   {
    "id": "D",
-   "text": "Senior astronomers initially expressed skepticism about Payne-Gaposchkin's claim that stars are composed overwhelmingly of hydrogen and helium."
+   "text": "Archaeological evidence shows that Great Zimbabwe, once seen as isolated, was an active participant in long-distance trade networks."
   }
  ],
- "correctAnswer": "B",
- "explanation": "The correct answer is B. The passage builds its central claim across multiple sentences. Sentence 1 introduces Payne-Gaposchkin's 1925 thesis at the Harvard College Observatory and signals that she drew a startling conclusion from stellar spectra. Sentence 2 states her first argument: that differences among stellar spectra arose chiefly from temperature and ionization rather than from differences in chemical makeup. Sentence 3 states her further conclusion that stars are composed overwhelmingly of hydrogen and helium, unlike Earth. Sentence 4 frames the historical significance by noting that this second claim ran against the prevailing assumption that stars and Earth had broadly similar compositions. Choice B synthesizes both arguments and the assumption they overturned, capturing the main idea at the right level of generalization."
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The text corrects an old portrayal: far from an \"isolated curiosity,\" Great Zimbabwe was \"an inland hub in a trading web.\"\n\n**The Full Solution:**\n- The text is organized as a correction: the old view is stated, then set against archaeological evidence — imported porcelain, Persian glass beads, and coastal shells flowing in; gold and ivory flowing out through Indian Ocean ports.\n- The closing sentence states the corrected view, and choice D matches that arc.\n\n**Why the other choices are wrong:**\n- A: It invents a scholarly dispute the text never mentions.\n- B: It confuses trade goods with building materials; the stone enclosures are where artifacts were found, not imports themselves.\n- C: It imposes a ranking of exports over imports that the text never draws."
 }

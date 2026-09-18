@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-218",
+ "question": "A grading plan for a site draws a swale of slope $-\\frac{5}{6}$ and a curb that meets the swale at a right angle. What is the slope of the curb?",
+ "correctAnswer": "6/5",
+ "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**The correct answer is $\\frac{6}{5}$.**\n\n**The Fast Way (~15s):** Flipping $-\\frac{5}{6}$ and changing its sign gives $\\frac{6}{5}$.\n\n**The Full Solution:**\nStep 1: The swale has slope $-\\frac{5}{6}$.\nStep 2: A line meeting it at a right angle has the negative reciprocal slope.\nStep 3: Flipping gives $-\\frac{6}{5}$, and negating gives $\\frac{6}{5}$. Check: $-\\frac{5}{6} \\cdot \\frac{6}{5} = -1$.\n\n**Common Mistakes:**\n* Reporting $-\\frac{6}{5}$ flips the fraction but leaves the sign negative.\n* Reporting $\\frac{5}{6}$ changes the sign but never inverts the fraction.\n* Reporting $-\\frac{5}{6}$ copies the swale's slope unchanged.\n\n**Test Day Takeaway:** Test any candidate by multiplying: a correct perpendicular slope makes the product exactly $-1$."
+}

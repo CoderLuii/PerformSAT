@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-118",
+ "question": "The length of a rectangle is $4$ times its width, and the area of the rectangle is $324$ square units. What is the width of the rectangle?",
+ "correctAnswer": "9",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~30s):** With width $w$ and length $4w$, the area is $4w^2 = 324$, so $w^2 = 81$ and $w = 9$.\n\n**The Full Solution:**\nStep 1: Let the width be $w$; then the length is $4w$.\nStep 2: The area is $A = (4w)(w) = 4w^2$, so $4w^2 = 324$.\nStep 3: $w^2 = 81$, and since a width is positive, $w = 9$.\n\nCheck: the length is $36$, and $36 \\cdot 9 = 324$ square units.\n\n**Common Mistakes:**\n* Answering $36$, the length, instead of the width.\n* Answering $81$ by stopping at $w^2$ without taking the square root.\n* Dividing $324$ by $4$ and then by $2$ to get $40.5$, treating $w^2$ as $2w$.\n\n**Test Day Takeaway:** Name the smaller quantity with the variable; the area then becomes a single-variable equation instead of a system."
+}

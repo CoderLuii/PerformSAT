@@ -1,0 +1,30 @@
+{
+ "id": 6,
+ "question": "A kelp farm's first raft yields $f(w)$ kilograms of blades in week $w$, and $f(6) = 240$. A neighboring raft is thinned so that it yields three quarters as much each week, or $g(w) = 0.75f(w)$. What is the value of $g(6)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$60$"
+  },
+  {
+   "id": "B",
+   "text": "$180$"
+  },
+  {
+   "id": "C",
+   "text": "$240$"
+  },
+  {
+   "id": "D",
+   "text": "$320$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes one quarter of the yield instead of three quarters",
+  "C": "reports the first raft's yield unchanged",
+  "D": "divides by 0.75 instead of multiplying"
+ },
+ "correctAnswer": "B",
+ "hint": "Thinning the raft cannot raise its yield.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~10s):** Three quarters of $240$ kilograms is $180$ kilograms.\n\n**The Full Solution:**\nStep 1: The rule multiplies the first raft's yield by $0.75$ in every week.\nStep 2: In week $6$ the first raft yields $f(6) = 240$ kilograms.\nStep 3: So $g(6) = 0.75(240) = 180$ kilograms. Check: $180$ is $\\frac{3}{4}$ of $240$, and $240 - 180 = 60$ is the quarter removed ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($60$): taking one quarter of the yield instead of three quarters.\n* Choice C ($240$): reporting the first raft's yield and ignoring the thinning.\n* Choice D ($320$): dividing by $0.75$ instead of multiplying, which makes the thinned raft yield more.\n\n**Test Day Takeaway:** A factor outside the function scales every output; multiply, and check the direction of the change."
+}

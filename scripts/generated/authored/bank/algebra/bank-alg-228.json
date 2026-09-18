@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-228",
+  "question": "Line $w$ is parallel to the line $6x + 3y = 15$ in the $xy$-plane and contains the point $(2, 5)$. Line $w$ intersects the $y$-axis at the point $(0, c)$. What is the value of $c$?",
+  "correctAnswer": "9",
+  "explanation": "**SAT Pattern: Parallel Line Through a Point**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~15s):** $6x + 3y = 15$ becomes $y = -2x + 5$, so the slope is $-2$. Through $(2, 5)$: $5 = -2(2) + c$, so $c = 9$.\n\n**The Full Solution:**\nStep 1: Solve the given equation for $y$: $3y = -6x + 15$, so $y = -2x + 5$. Its slope is $-2$.\nStep 2: Line $w$ is parallel, so it has slope $-2$: $y = -2x + c$, where $c$ is the $y$-intercept.\nStep 3: Substitute $(2, 5)$: $5 = -4 + c$, so $c = 9$. Check: $-2(2) + 9 = 5$. $\\checkmark$\n\n**Common Mistakes:** Entering $5$ (the intercept of the given line); entering $1$ (using slope $+2$: $5 = 4 + c$); using slope $-6$ from the unconverted equation and entering $17$.\n\n**Test Day Takeaway:** Convert standard form to $y = mx + b$ before borrowing the slope. The parallel line gets that slope and its own intercept from the given point."
+}

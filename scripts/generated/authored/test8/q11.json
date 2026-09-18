@@ -1,31 +1,31 @@
 {
-  "id": 811,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "In the early 1930s the naturalist William Beebe descended more than half a mile into the ocean off Bermuda in the bathysphere, a cramped steel ball lowered on a cable. Through its small quartz windows Beebe became one of the first people to watch deep-sea animals alive in their own surroundings rather than hauled up dead in a net. He could not collect what he saw, so he described the creatures aloud to an assistant on the surface, who took down his words by telephone. Some of the animals he reported were never matched to a specimen, and skeptics later questioned them; even so, his accounts drew wide public attention to a world few had imagined.",
-  "question": "According to the text, what was one limitation of Beebe’s method of studying deep-sea animals?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The bathysphere could not descend deep enough to reach the animals he most wanted to observe."
-    },
-    {
-      "id": "B",
-      "text": "He had to rely on memory because no assistant was available to record his observations."
-    },
-    {
-      "id": "C",
-      "text": "The quartz windows distorted the colors of the animals he watched outside the bathysphere."
-    },
-    {
-      "id": "D",
-      "text": "He could not capture the animals he observed, and some of his reported sightings were never matched to a specimen."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage states that Beebe could not collect what he saw and that some creatures he described were never matched to a specimen, which is the limitation the question asks about. A contradicts the text, which says he descended more than half a mile; B reverses a detail, since an assistant did record his words by telephone; and C invents a problem with the windows that the passage never mentions."
+ "id": 811,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "On stable rock surfaces in arid country, a dark coating called desert varnish builds up: a skin of clay particles bound with manganese and iron oxides, accumulating at a rate of only a few micrometers per thousand years. People across the world's deserts have turned this coating into a canvas, chipping designs through the dark varnish to expose the paler rock beneath. The contrast is what keeps the images legible: because the coating re-forms so slowly, the exposed pale surface darkens again only on a timescale of millennia, and figures pecked into stone thousands of years ago can still be read today.",
+ "question": "According to the text, why do petroglyphs cut into varnished rock remain visible for thousands of years?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The varnish coating is hard enough to shield the carved designs from weathering."
+  },
+  {
+   "id": "B",
+   "text": "The dry desert air prevents the exposed rock surfaces from eroding."
+  },
+  {
+   "id": "C",
+   "text": "The rock beneath the varnish is darker than the coating that covers it."
+  },
+  {
+   "id": "D",
+   "text": "The varnish that would cover the exposed rock again accumulates extremely slowly."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The text states that varnish accumulates at only a few micrometers per thousand years, so the pale rock exposed by carving \"darkens again only on a timescale of millennia\" — which is why the designs stay visible so long.\n\n**The Full Solution:**\n- The question asks for the text's stated reason that petroglyphs remain legible.\n- The text explains that carving breaks through the dark coating to lighter rock beneath.\n- It then ties visibility directly to the varnish's pace: because the coating re-forms at a few micrometers per thousand years, the contrast persists.\n\n**Why the other choices are wrong:**\n- A: Hardness is not offered as the reason; the text discusses the varnish's slow regrowth, not its durability under weathering.\n- B: The text never says desert air preserves the carvings.\n- C: The text describes the coating as darker than the rock beneath, not the reverse."
 }

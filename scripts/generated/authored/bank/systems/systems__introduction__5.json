@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "An air-cargo hub charges \\$0.42 per kilogram for standard freight and \\$0.75 per kilogram for refrigerated freight. On one shift the hub moved $8{,}400$ kilograms, and had it shifted $500$ kilograms from standard to refrigerated, the charges would have totaled \\$4{,}485. How many more kilograms of standard freight than refrigerated freight did the hub move?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2{,}400$"
+  },
+  {
+   "id": "B",
+   "text": "$2{,}600$"
+  },
+  {
+   "id": "C",
+   "text": "$3{,}600$"
+  },
+  {
+   "id": "D",
+   "text": "$6{,}000$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the refrigerated mass 2400 alone instead of the difference",
+  "B": "treats 4485 as the actual charge, giving 5500 - 2900 = 2600",
+  "D": "reports the standard mass 6000 alone instead of the difference"
+ },
+ "correctAnswer": "C",
+ "hint": "The stated total prices a shipment the hub did not actually move.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~45s):** The hypothetical shift adds $500(0.75 - 0.42) = 165$ dollars, so the real charge was $\\$4{,}320$; solving with the $8{,}400$-kilogram total gives $6{,}000$ and $2{,}400$.\n\n**The Full Solution:**\nStep 1: Moving $500$ kilograms from standard to refrigerated raises the charge by $500(0.75 - 0.42) = 165$ dollars, so the actual charge was $4485 - 165 = 4320$ dollars.\nStep 2: Let $s$ and $r$ be the standard and refrigerated masses: $s + r = 8400$ and $0.42s + 0.75r = 4320$. Substituting $s = 8400 - r$ gives $3528 + 0.33r = 4320$, so $r = 2400$.\nStep 3: Then $s = 8400 - 2400 = 6000$, and $s - r = 3600$. Check: $0.42(6000) + 0.75(2400) = 2520 + 1800 = 4320$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2{,}400$): reporting the refrigerated mass alone; the question asks for the excess of standard over refrigerated.\n* Choice B ($2{,}600$): using $\\$4{,}485$ as the actual charge, which yields $r = 2{,}900$ and $s = 5{,}500$ and a difference of $2{,}600$.\n* Choice D ($6{,}000$): reporting the standard mass alone rather than the difference.\n\n**Test Day Takeaway:** When a stem prices a hypothetical rearrangement, convert it back to the real total before writing the system."
+}

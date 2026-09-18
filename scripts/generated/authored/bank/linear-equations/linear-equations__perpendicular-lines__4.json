@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "On a plot plan marked in feet, a fence line joins the points $(-3, 8)$ and $(5, 2)$, and a gate post line meets that fence line at a right angle. What is the slope of the gate post line?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{4}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{3}{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3}{4}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{4}{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the fence line's slope but keeps the negative sign",
+  "B": "repeats the fence line's own slope instead of the perpendicular one",
+  "C": "negates the fence line's slope without inverting it"
+ },
+ "correctAnswer": "D",
+ "hint": "Find the fence line's slope from its two points first.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~35s):** The fence line's slope is $\\frac{2-8}{5-(-3)} = -\\frac{3}{4}$, so the gate post line has slope $\\frac{4}{3}$.\n\n**The Full Solution:**\nStep 1: The slope through $(-3,\\ 8)$ and $(5,\\ 2)$ is $\\frac{2 - 8}{5 - (-3)} = \\frac{-6}{8} = -\\frac{3}{4}$.\nStep 2: A perpendicular line has the negative reciprocal slope: invert $-\\frac{3}{4}$ to get $-\\frac{4}{3}$, then change the sign.\nStep 3: The gate post line has slope $\\frac{4}{3}$.\n\nCheck: $-\\frac{3}{4} \\times \\frac{4}{3} = -1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{4}{3}$): inverts the fence line's slope but leaves the sign negative, so the slopes multiply to $1$.\n* Choice B ($-\\frac{3}{4}$): repeats the fence line's own slope, which describes a parallel line.\n* Choice C ($\\frac{3}{4}$): only changes the sign, so the slopes multiply to $-\\frac{9}{16}$.\n\n**Test Day Takeaway:** Two points give a slope; perpendicularity then asks for both a flip and a sign change."
+}

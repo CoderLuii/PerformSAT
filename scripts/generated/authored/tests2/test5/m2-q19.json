@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "The volume, in cubic meters, of a sediment basin is modeled by $p(x)=3x^{3}+19x^{2}+22x-24$, where $x$ is a scaling length in meters. Given that $x+4$ is a factor of $p(x)$, which of the following is also a factor of $p(x)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x-2$"
+  },
+  {
+   "id": "B",
+   "text": "$3x+2$"
+  },
+  {
+   "id": "C",
+   "text": "$x-3$"
+  },
+  {
+   "id": "D",
+   "text": "$x-6$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "flips the sign of the quotient's root, reading the factor of 3x^2 + 7x - 6 as 3x + 2 (root -2/3) instead of 3x - 2 (root 2/3)",
+  "C": "flips the sign of the other quotient factor; the quotient contains x + 3, whose root is -3, not +3",
+  "D": "guesses a factor straight from the constant term by pairing -24 as (4)(-6), without performing the division"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Polynomial Factoring with Given Factor**\n\n**Choice A is correct.**\n\n**The Fast Way (~55s):** Dividing $p(x)$ by $x+4$ leaves $3x^{2}+7x-6$, which factors as $(3x-2)(x+3)$. So $3x-2$ is a factor.\n\n**The Full Solution:**\nStep 1: Since $x+4$ is a factor, divide it out. Using synthetic division with the root $-4$ on the coefficients $3$, $19$, $22$, $-24$: bring down $3$; $19+3(-4)=7$; $22+7(-4)=-6$; $-24+(-6)(-4)=0$. The remainder is $0$, confirming the given factor, and the quotient is $3x^{2}+7x-6$.\nStep 2: Factor the quadratic quotient. Look for two numbers whose product is $3(-6)=-18$ and whose sum is $7$: those are $9$ and $-2$. Splitting the middle term, $3x^{2}+9x-2x-6=3x(x+3)-2(x+3)=(3x-2)(x+3)$.\nStep 3: So $p(x)=(x+4)(3x-2)(x+3)$, and the factor offered among the choices is $3x-2$. Check by expanding: $(3x-2)(x+3)=3x^{2}+7x-6$, and $(x+4)(3x^{2}+7x-6)=3x^{3}+19x^{2}+22x-24$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($3x+2$): flips the sign inside the factor. Its root is $-\\dfrac{2}{3}$, and $p\\left(-\\dfrac{2}{3}\\right)=-\\dfrac{280}{9}\\neq 0$.\n* Choice C ($x-3$): flips the sign of the third factor. The quotient contains $x+3$, root $-3$, so $x-3$ is not a factor; $p(3)=294$.\n* Choice D ($x-6$): reads $-24$ as $(4)(-6)$ and guesses a matching factor. Constant-term pairs only suggest candidates; $p(6)=1{,}440$, so $x-6$ fails.\n\n**Test Day Takeaway:** A given factor is an invitation to divide. Synthetic division with that factor's root reduces the cubic to a quadratic in one pass, and factoring that quadratic hands you the remaining factors — the zero remainder is your check that the division was right."
+}

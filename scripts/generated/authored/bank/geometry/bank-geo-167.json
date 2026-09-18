@@ -1,0 +1,41 @@
+{
+  "id": "bank-geo-167",
+  "question": "A laser alignment beam crosses a granite straightedge. The two angles lying above that crossing point have the degree measures marked in the figure. What is the measure, in degrees, of the smaller of those two angles?",
+  "diagram": {
+    "type": "intersectingLines",
+    "params": {
+      "angles": [
+        "(3x + 12)°",
+        "(5x - 8)°",
+        "",
+        ""
+      ],
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$22$"
+    },
+    {
+      "id": "B",
+      "text": "$42$"
+    },
+    {
+      "id": "C",
+      "text": "$78$"
+    },
+    {
+      "id": "D",
+      "text": "$102$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops at x = 22 instead of substituting to get an angle measure",
+    "B": "treats the two marked angles as vertical angles, solving 5x - 8 = 3x + 12 to get x = 10 and an angle of 42",
+    "D": "reports the larger marked angle, 5(22) - 8 = 102"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertical and Linear-Pair Angles**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The two marked angles form a linear pair, so $(5x-8) + (3x+12) = 180$ gives $x = 22$, and the smaller angle is $3(22)+12 = 78$.\n\n**The Full Solution:**\nStep 1: The two marked angles sit side by side above the crossing point, so together they form a straight angle: $(5x - 8) + (3x + 12) = 180$.\nStep 2: Combining like terms gives $8x + 4 = 180$, so $8x = 176$ and $x = 22$.\nStep 3: The two measures are $5(22) - 8 = 102$ degrees and $3(22) + 12 = 78$ degrees, so the smaller one measures $78$ degrees.\n\nCheck: $102 + 78 = 180$, as a linear pair must. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($22$): reports $x$ itself instead of substituting it back into an angle expression.\n* Choice B ($42$): treats the two marked angles as vertical angles, solving $5x - 8 = 3x + 12$ for $x = 10$ and reporting $42$.\n* Choice D ($102$): finds $x$ correctly but reports the larger of the two angles.\n\n**Test Day Takeaway:** Adjacent angles on a line sum to $180^\\circ$; only angles across the vertex from each other are equal."
+}

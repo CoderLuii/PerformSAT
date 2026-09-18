@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-222",
+  "question": "Lines $u$ and $v$ are perpendicular in the $xy$-plane. Line $u$ has equation $y = -\\dfrac{4}{9}x + 2$, and line $v$ passes through the origin. For what value of $y$ does the point $(8, y)$ lie on line $v$?",
+  "correctAnswer": "18",
+  "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**The correct answer is $18$.**\n\n**The Fast Way (~15s):** The slope of $v$ is the negative reciprocal of $-\\dfrac{4}{9}$, which is $\\dfrac{9}{4}$. Through the origin, $v$ is $y = \\dfrac{9}{4}x$, so at $x = 8$, $y = 18$.\n\n**The Full Solution:**\nStep 1: The slope of $u$ is $-\\dfrac{4}{9}$, so the slope of $v$ is $\\dfrac{9}{4}$.\nStep 2: Line $v$ passes through $(0, 0)$, so its $y$-intercept is $0$ and its equation is $y = \\dfrac{9}{4}x$.\nStep 3: Substitute $x = 8$: $y = \\dfrac{9}{4}(8) = 18$. Check: the slope from $(0, 0)$ to $(8, 18)$ is $\\dfrac{18}{8} = \\dfrac{9}{4}$. $\\checkmark$\n\n**Common Mistakes:** Using slope $-\\dfrac{9}{4}$ and entering $-18$; using slope $\\dfrac{4}{9}$ and entering $\\dfrac{32}{9}$; adding the intercept $2$ of line $u$ to get $20$, though $v$ has its own intercept, $0$.\n\n**Test Day Takeaway:** The perpendicular slope comes from $u$; the intercept comes from the point $v$ passes through. Keep the two lines' intercepts separate."
+}

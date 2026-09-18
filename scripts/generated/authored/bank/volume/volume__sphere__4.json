@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "Sphere $B$ has a radius that is half the radius of sphere $A$. The volume of sphere $B$ is what fraction of the volume of sphere $A$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{1}{8}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{1}{6}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{1}{4}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{1}{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "multiplies the denominator by $3$ instead of raising $2$ to the third power",
+  "C": "squares the length factor, which is the rule for area",
+  "D": "uses the length factor once"
+ },
+ "correctAnswer": "A",
+ "hint": "The radius appears three times over in the volume formula.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** Volume scales by the cube of the radius factor: $\\left(\\frac{1}{2}\\right)^3 = \\frac{1}{8}$.\n\n**The Full Solution:**\nStep 1: Let sphere $A$ have radius $r$, so sphere $B$ has radius $\\frac{r}{2}$.\nStep 2: $V_B = \\frac{4}{3}\\pi\\left(\\frac{r}{2}\\right)^3 = \\frac{4}{3}\\pi \\cdot \\frac{r^3}{8}$.\nStep 3: That is $\\frac{1}{8}$ of $V_A = \\frac{4}{3}\\pi r^3$.\n\nVerification: With $r = 2$: $V_A = \\frac{32\\pi}{3}$ and $V_B = \\frac{4\\pi}{3}$, a ratio of $\\frac{1}{8}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{1}{6}$): multiplies the denominator by $3$ instead of raising $2$ to the third power.\n* Choice C ($\\frac{1}{4}$): squares the length factor, which is the rule for area.\n* Choice D ($\\frac{1}{2}$): uses the length factor once.\n\n**Test Day Takeaway:** Halving every length divides volume by $8$, not by $2$."
+}

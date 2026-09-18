@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "A calibration line is recorded by two instruments. The first records it as $\\frac{5}{3}x - \\frac{4}{3}y = \\frac{14}{3}$, and the second records it as $ax + 12y = b$, where $a$ and $b$ are constants. Infinitely many ordered pairs $(x, y)$ satisfy both records. What is the value of $a + b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-57$"
+  },
+  {
+   "id": "B",
+   "text": "$-27$"
+  },
+  {
+   "id": "C",
+   "text": "$27$"
+  },
+  {
+   "id": "D",
+   "text": "$57$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses +9 for a and -9 for b, applying two different multipliers: 15 + (-42)",
+  "C": "uses -9 for a and +9 for b, applying two different multipliers: -15 + 42",
+  "D": "multiplies by +9 throughout, missing the sign change needed to turn -4/3 into +12"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Infinitely many shared solutions means one equation is a multiple of the other. Turning $-\\frac{4}{3}$ into $12$ takes a multiplier of $-9$, so $a = -9 \\cdot \\frac{5}{3} = -15$ and $b = -9 \\cdot \\frac{14}{3} = -42$, giving $-57$.\n\n**The Full Solution:**\nStep 1: Translate the condition. Two linear equations share infinitely many solutions exactly when they describe the same line, which means every coefficient and the constant are scaled by the same nonzero multiplier.\nStep 2: Find that multiplier from the y-terms, the only pair fully known. The first equation's y-coefficient is $-\\frac{4}{3}$ and the second's is $12$, and $-\\frac{4}{3} \\cdot n = 12$ gives $n = -9$.\nStep 3: Apply $n = -9$ to the other two entries. $a = \\frac{5}{3}(-9) = -15$ and $b = \\frac{14}{3}(-9) = -42$, so $a + b = -57$. Check: multiplying the first record by $-9$ gives $-15x + 12y = -42$, exactly the second record ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-27$): scales $a$ by $+9$ and $b$ by $-9$, giving $15 + (-42)$. A single multiplier has to hit every term of the equation.\n* Choice C ($27$): makes the reverse mismatch, $-15 + 42$, scaling the constant with the wrong sign.\n* Choice D ($57$): uses $+9$ throughout, which would send $-\\frac{4}{3}$ to $-12$ rather than $+12$. The sign of the multiplier is set by the y-terms.\n\n**Test Day Takeaway:** For infinitely many solutions, find the one multiplier that maps a fully known pair of coefficients, then apply it to every remaining term including the constant. A sign slip in the multiplier flips both unknowns at once."
+}

@@ -6,7 +6,7 @@
   "band": 2,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
-  "passage": "Methods that translate astronomical data into sound, rather than into the usual charts and images, ______ increasingly cited in work on accessible science, partly because listeners can sometimes catch patterns in a signal that the eye slides past in a crowded visual display.",
+  "passage": "The fields of raised domes set into pavement at street crossings, first standardized in Japan in the 1960s, give pedestrians who are blind or have low vision a signal they can read underfoot or through a cane. Guidelines that specify the size and spacing of the domes, rather than leaving such choices to individual builders, ______ now written into accessibility codes in dozens of countries.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "id": "B",
-      "text": "has been"
+      "text": "is"
     },
     {
       "id": "C",
@@ -23,9 +23,9 @@
     },
     {
       "id": "D",
-      "text": "is"
+      "text": "has been"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"are.\" The subject of the verb is the plural noun \"Methods,\" so the verb must be plural: methods \"are\" increasingly cited. The intervening phrase \"that translate astronomical data into sound\" can make a singular verb sound tempting, but it does not change the number of the subject. Choices A (\"was\"), B (\"has been\"), and D (\"is\") are all singular and so fail to agree with \"Methods.\""
+  "explanation": "**Choice C is correct.** The subject of the verb is the plural noun \"Guidelines,\" so the verb must be the plural \"are.\"\n\n**The Full Solution:**\n- Strip the interrupters to find the core: \"Guidelines... ______ now written into accessibility codes.\"\n- The clause \"that specify the size and spacing of the domes\" and the phrase \"rather than leaving such choices to individual builders\" merely modify the subject; neither changes its number.\n- Plural subject, plural verb: \"Guidelines... are now written.\"\n\n**Why the other choices are wrong:**\n- A: \"Was\" is singular (and past tense besides, clashing with \"now\").\n- B: \"Is\" is singular, agreeing with nothing in the subject position.\n- D: \"Has been\" is likewise singular; the nearby singular nouns (\"spacing,\" \"size\") are inside a modifying clause, not the subject."
 }

@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-160",
+ "question": "A wildlife biologist surveying an elk herd found the ratio of cows to bulls to be $7 : 3$, with $84$ more cows than bulls in the herd. How many bulls does the herd contain?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$25.2$"
+  },
+  {
+   "id": "B",
+   "text": "$36$"
+  },
+  {
+   "id": "C",
+   "text": "$63$"
+  },
+  {
+   "id": "D",
+   "text": "$147$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "applies the whole-herd fraction to the difference, $\\frac{3}{10}(84) = 25.2$, which is not even a whole number of elk",
+  "B": "applies the ratio terms directly to the difference, $\\frac{3}{7}(84) = 36$",
+  "D": "reports the number of cows, $7(21) = 147$, instead of the number of bulls"
+ },
+ "explanation": "**SAT Pattern: Proportion / Ratio**\n\n**Choice C is correct.** The $7 : 3$ ratio makes the difference $7 - 3 = 4$ parts, so one part is $\\frac{84}{4} = 21$ elk and the bulls number $3(21) = 63$.\n\n**The Fast Way (~40s):** The excess of cows is $4$ parts, so a part is $21$ elk; bulls are $3$ parts, or $63$.\n\n**The Full Solution:**\n\nStep 1: Write the counts in parts. Let one part be $x$ elk, so there are $7x$ cows and $3x$ bulls.\n\nStep 2: Translate the difference: $7x - 3x = 84$, so $4x = 84$ and $x = 21$ elk per part.\n\nStep 3: Compute the bulls: $3x = 3(21) = 63$ elk. Check: cows number $7(21) = 147$, and $147 - 63 = 84$, with $\\frac{147}{63} = \\frac{7}{3}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($25.2$): treats $84$ as the herd total and takes $\\frac{3}{10}$ of it. The $84$ is a difference, not a total, and elk come in whole numbers.\n* Choice B ($36$): uses $\\frac{3}{7}$ of the difference, matching the bulls' term against the cows' term rather than against the $4$-part gap.\n* Choice D ($147$): solves correctly but reports the cows.\n\n**Test Day Takeaway:** When a ratio problem hands you a difference, the difference is worth the DIFFERENCE of the ratio terms -- divide by that before you scale up."
+}

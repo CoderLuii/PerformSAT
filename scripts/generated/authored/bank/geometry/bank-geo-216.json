@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-216",
+ "question": "A stair-stringer bracket has the shape of a triangle. At vertex $R$ the angle between one side and the extension of the other measures $(4k)^\\circ$, while the bracket's interior angles at the remaining two vertices measure $(k + 22)^\\circ$ and $38^\\circ$. For what value of $k$ is this bracket possible?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$20$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$42$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "drops the k inside (k + 22), solving 4k = 22 + 38 = 60",
+  "C": "treats (4k) degrees as the interior angle at R, solving 4k + (k + 22) + 38 = 180",
+  "D": "reports the remote angle k + 22 = 42 instead of k"
+ },
+ "explanation": "**SAT Pattern: Exterior Angle Theorem**\n\n**Choice B is correct.** Setting the exterior angle equal to the sum of the two nonadjacent interior angles gives $4k = (k + 22) + 38$, so $3k = 60$ and $k = 20$.\n\n**The Fast Way (~30s):** $4k = k + 60$, so $3k = 60$ and $k = 20$.\n\n**The Full Solution:**\n\nStep 1: The exterior angle at $R$ equals the sum of the two interior angles at the other vertices: $4k = (k + 22) + 38$.\n\nStep 2: Simplify the right side to $k + 60$, subtract $k$ from both sides to get $3k = 60$, and divide: $k = 20$.\n\nStep 3: Check. The exterior angle is $4(20) = 80^\\circ$ and the remote angles are $42^\\circ$ and $38^\\circ$, which sum to $80^\\circ$. The interior angle at $R$ is $180^\\circ - 80^\\circ = 100^\\circ$, and $42 + 38 + 100 = 180$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($15$): drops the $k$ inside $(k + 22)$ and solves $4k = 22 + 38 = 60$.\n* Choice C ($24$): treats $(4k)^\\circ$ as the interior angle at $R$ and solves $4k + (k + 22) + 38 = 180$.\n* Choice D ($42$): solves correctly for $k$ but reports the remote angle $k + 22$ instead.\n\n**Test Day Takeaway:** When the exterior angle itself carries the variable, the same rule still applies — set it equal to the two remote angles, not to $180^\\circ$ minus them."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-077",
+  "question": "During one August day, observers counted $14$, $9$, $21$, $12$, $17$, and $11$ pronghorn at six desert water holes. What is the mean number of pronghorn counted per water hole?",
+  "correctAnswer": "14",
+  "explanation": "**SAT Pattern: Mean from List**\n\n**The correct answer is $14$.** The six counts total $84$, and $\\frac{84}{6} = 14$ pronghorn per water hole.\n\n**The Fast Way (~25s):** $14 + 9 + 21 + 12 + 17 + 11 = 84$, and $84 \\div 6 = 14$.\n\n**The Full Solution:**\n\nStep 1: Add the counts: $14 + 9 + 21 + 12 + 17 + 11 = 84$ pronghorn in all.\n\nStep 2: Count the water holes. There are six values in the list.\n\nStep 3: Divide the total by the number of values: $\\frac{84}{6} = 14$ pronghorn per water hole. Check: six water holes averaging $14$ would account for $6(14) = 84$ pronghorn, matching the sum.\n\n**Common Mistakes:**\n\n* Dividing by $5$ instead of $6$ gives $16.8$; every value in the list counts, including any that repeat.\n* Reporting the median, $\\frac{12 + 14}{2} = 13$, answers a different measure of center.\n* Reporting the range, $21 - 9 = 12$, describes spread rather than center.\n\n**Test Day Takeaway:** Add first, count second, divide once -- the most common mean error is a miscount of how many values are in the list."
+}

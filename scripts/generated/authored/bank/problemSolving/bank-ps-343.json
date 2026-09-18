@@ -1,0 +1,63 @@
+{
+  "id": "bank-ps-343",
+  "question": "The dot plot shows the number of pieces of mail delivered to a post office box on each of $12$ days. What is the mode of the numbers of pieces of mail delivered?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 0,
+          "count": 1
+        },
+        {
+          "value": 1,
+          "count": 5
+        },
+        {
+          "value": 2,
+          "count": 2
+        },
+        {
+          "value": 3,
+          "count": 1
+        },
+        {
+          "value": 4,
+          "count": 2
+        },
+        {
+          "value": 7,
+          "count": 1
+        }
+      ],
+      "xMin": 0,
+      "xMax": 8,
+      "xLabel": "Pieces of mail delivered"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$1.5$"
+    },
+    {
+      "id": "C",
+      "text": "$2.25$"
+    },
+    {
+      "id": "D",
+      "text": "$5$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the median, the average of the $6$th and $7$th dots, $\\frac{1 + 2}{2}$.",
+    "C": "reports the mean, $\\frac{27}{12} = 2.25$.",
+    "D": "reports the height of the tallest stack, a frequency rather than the value that repeats."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Mode from List**\n\n**Choice A is correct.**\n\n**The Fast Way (~5s):** The tallest stack of dots sits above $1$, so the mode is $1$.\n\n**The Full Solution:**\nStep 1: On a dot plot each dot is one day, and the value on the axis is what was recorded that day.\nStep 2: The stacks have heights $1$, $5$, $2$, $1$, $2$, and $1$ above the values $0$, $1$, $2$, $3$, $4$, and $7$.\nStep 3: The greatest height, $5$, sits above the value $1$, so the mode is $1$ piece of mail. Check: no other value occurs more than twice. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($1.5$): reports the median, the average of the $6$th and $7$th dots, $\\frac{1 + 2}{2}$.\n* Choice C ($2.25$): reports the mean, $\\frac{27}{12} = 2.25$.\n* Choice D ($5$): reports the height of the tallest stack, a frequency rather than the value that repeats.\n\n**Test Day Takeaway:** The mode is read off the horizontal axis, not the vertical count. Find the tallest stack, then look down at the number under it."
+}

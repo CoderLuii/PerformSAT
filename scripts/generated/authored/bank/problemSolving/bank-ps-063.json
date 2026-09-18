@@ -1,0 +1,39 @@
+{
+  "id": "bank-ps-063",
+  "question": "The table gives the thickness, in millimeters, of each of $10$ glass samples produced by a machine. What is the median thickness, in millimeters, of the $10$ samples?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Sample",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "rows": [
+        [
+          "Thickness (mm)",
+          "3.4",
+          "2.9",
+          "3.8",
+          "3.1",
+          "3.6",
+          "2.7",
+          "3.3",
+          "3.9",
+          "3.0",
+          "3.5"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "3.35",
+  "explanation": "**SAT Pattern: Median of Even Decimal Set**\n\n**The correct answer is $3.35$.**\n\n**The Fast Way (~25s):** Sort the ten values; the median is the mean of the $5$th and $6$th: $\\frac{3.3 + 3.4}{2} = 3.35$.\n\n**The Full Solution:**\nStep 1: Order the thicknesses from least to greatest: $2.7,\\ 2.9,\\ 3.0,\\ 3.1,\\ 3.3,\\ 3.4,\\ 3.5,\\ 3.6,\\ 3.8,\\ 3.9$.\nStep 2: With an even count of $10$ values, the median is the average of the two middle values, the $5$th and $6$th: $3.3$ and $3.4$.\nStep 3: Median $= \\frac{3.3 + 3.4}{2} = \\frac{6.7}{2} = 3.35$. Check: exactly five values ($2.7$ through $3.3$) lie below $3.35$ and five ($3.4$ through $3.9$) lie above it. $\\checkmark$\n\n**Common Mistakes:** Reading the middle of the table in its original order, $\\frac{3.6 + 2.7}{2} = 3.15$, without sorting first; reporting only $3.3$ or $3.4$ instead of their average; or computing the mean, $\\frac{33.2}{10} = 3.32$, which the question does not ask for.\n\n**Test Day Takeaway:** Median means sort first. For an even count, average the two middle values, and note the answer may not be a value in the list."
+}

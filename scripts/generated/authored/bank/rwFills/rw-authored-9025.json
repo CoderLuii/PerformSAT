@@ -1,0 +1,42 @@
+{
+  "id": 9025,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "Wallace Chafe was a linguist at the University of California, Santa Barbara.",
+      "For his 1994 book Discourse, Consciousness, and Time he transcribed recordings of ordinary conversation and narration.",
+      "In the transcripts, speech arrives in short bursts of roughly five words, each with its own intonation contour.",
+      "Chafe called these bursts intonation units; they are often set off from one another by a brief pause.",
+      "Each unit tends to introduce only one new piece of information.",
+      "Studies of attention find that only a small amount of information is active in awareness at any moment."
+    ],
+    "goal": "The student wants to present Chafe’s central claim about the structure of spoken language."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Speech divides into short units because only a little information is active in awareness at once."
+    },
+    {
+      "id": "B",
+      "text": "Chafe transcribed recorded conversations and narratives for his 1994 book."
+    },
+    {
+      "id": "C",
+      "text": "The intonation units in Chafe’s transcripts are often set off from one another by a brief pause."
+    },
+    {
+      "id": "D",
+      "text": "Chafe spent much of his career as a linguist at the University of California, Santa Barbara."
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** The notes pair an observation about speech with a fact about attention, and Choice A joins them into the claim the notes are built to support.\n\n**The Full Solution:**\n- The goal asks for a claim about the structure of spoken language, so the answer has to explain the structure, not merely describe it.\n- The transcripts show speech arriving in short bursts that each carry one new piece of information; the last bullet supplies the reason — little information is active in awareness at a time. Choice A states that link.\n- A bullet about how the recordings were handled, or about one property of the units, is evidence and not the claim.\n\n**Why the other choices are wrong:**\n- B: The method behind the book rather than its argument.\n- C: One true feature of intonation units. It reports a pause, not a claim about why speech takes this shape.\n- D: Biography, which the goal does not ask for.",
+  "people": [
+    {
+      "name": "Wallace Chafe",
+      "sourceUrl": "https://www.linguistics.ucsb.edu/people/wallace-chafe"
+    }
+  ]
+}

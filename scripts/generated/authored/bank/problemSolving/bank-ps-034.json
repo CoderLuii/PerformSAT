@@ -1,0 +1,57 @@
+{
+ "id": "bank-ps-034",
+ "question": "A statistician recorded the number of service aces a volleyball player produced in each of $24$ matches last season; the table gives the frequency of each ace count. What is the median number of aces per match?",
+ "questionTable": {
+  "headers": [
+   "Aces in a match",
+   "Number of matches"
+  ],
+  "rows": [
+   [
+    "0",
+    "3"
+   ],
+   [
+    "1",
+    "4"
+   ],
+   [
+    "2",
+    "5"
+   ],
+   [
+    "3",
+    "8"
+   ],
+   [
+    "4",
+    "4"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$2.25$"
+  },
+  {
+   "id": "C",
+   "text": "$2.5$"
+  },
+  {
+   "id": "D",
+   "text": "$3$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "takes the middle row of the table, $2$, instead of the middle of the $24$ matches",
+  "B": "reports the mean number of aces, $\\frac{54}{24} = 2.25$",
+  "D": "reports the mode, the ace count with the greatest frequency"
+ },
+ "explanation": "**SAT Pattern: Median from Frequency Table**\n\n**Choice C is correct.** With $24$ matches, the median averages the $12$th and $13$th values in order, which are $2$ and $3$, giving $2.5$.\n\n**The Fast Way (~50s):** Running totals are $3$, $7$, $12$, $20$, $24$. The $12$th match has $2$ aces and the $13$th has $3$, so the median is $\\frac{2 + 3}{2} = 2.5$.\n\n**The Full Solution:**\n\nStep 1: Locate the middle. For $24$ ordered values, the median is the mean of the $12$th and $13$th values.\n\nStep 2: Build running totals from the frequency column: $3$ matches have $0$ aces (positions $1$ through $3$), $4$ have $1$ ace (positions $4$ through $7$), $5$ have $2$ aces (positions $8$ through $12$), and $8$ have $3$ aces (positions $13$ through $20$).\n\nStep 3: Read off the two middle positions. Position $12$ falls in the $2$-ace group and position $13$ falls in the $3$-ace group, so the median is $\\frac{2 + 3}{2} = 2.5$ aces. Check: $12$ matches recorded $2$ or fewer aces and $12$ recorded $3$ or more, so the median must lie between $2$ and $3$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2$): picks the middle row of the table. A frequency table lists categories, not the data values in order, so the middle row is not the middle match.\n* Choice B ($2.25$): computes the mean, $\\frac{0(3) + 1(4) + 2(5) + 3(8) + 4(4)}{24} = 2.25$, a different measure of center.\n* Choice D ($3$): reports the mode, the ace count that occurs most often.\n\n**Test Day Takeaway:** In a frequency table, run the counts until you pass the middle position -- the median lives at a position, never at a row."
+}

@@ -1,0 +1,29 @@
+{
+ "question": "A solar panel's uncovered area, in square centimeters, is $49t^2 - 25$, where $t$ is the number of minutes since a shade began retracting. Which expression is equivalent to that area?",
+ "hint": "Notice what kind of number both $49t^2$ and $25$ are.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(7t - 5)(7t + 5)$"
+  },
+  {
+   "id": "B",
+   "text": "$(7t - 5)^2$"
+  },
+  {
+   "id": "C",
+   "text": "$(7t + 5)^2$"
+  },
+  {
+   "id": "D",
+   "text": "$(49t - 25)(t + 1)$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "expands to 49t^2 - 70t + 25, which has an unwanted middle term",
+  "C": "expands to 49t^2 + 70t + 25",
+  "D": "splits the coefficients instead of the squares and expands to 49t^2 + 24t - 25"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** $49t^2 = (7t)^2$ and $25 = 5^2$, so the difference factors as $(7t - 5)(7t + 5)$.\n\n**The Full Solution:**\nStep 1: Recognize both terms as squares: $49t^2 = (7t)^2$ and $25 = 5^2$.\nStep 2: A difference of squares $a^2 - b^2$ factors as $(a - b)(a + b)$ with $a = 7t$ and $b = 5$.\nStep 3: The factored form is $(7t - 5)(7t + 5)$. Check by expanding: $49t^2 + 35t - 35t - 25 = 49t^2 - 25$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($(7t - 5)^2$): expands to $49t^2 - 70t + 25$, adding a middle term the original does not have.\n* Choice C ($(7t + 5)^2$): expands to $49t^2 + 70t + 25$, wrong in both the middle and constant terms.\n* Choice D: splits the coefficients rather than the squares and expands to $49t^2 + 24t - 25$.\n\n**Test Day Takeaway:** A binomial with a minus sign between two perfect squares always factors into conjugate pairs."
+}

@@ -6,7 +6,7 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 2,
- "passage": "In a now-classic series of experiments, Stanford social psychologist Claude M. Steele and his collaborator Joshua Aronson randomly assigned Black undergraduates to take the same difficult verbal test under two different framings: half were told that the test was a genuine measure of their intellectual ability, while the other half were told that it was a laboratory exercise unrelated to ability. ______ the students who had been led to view the test as diagnostic of their ability scored measurably lower than those given the nondiagnostic framing, an outcome Steele has named stereotype threat: the performance cost of being reminded that a negative stereotype could apply to oneself.",
+ "passage": "People infected with many pathogens shed viral genetic material into wastewater days before they feel ill enough to seek testing — and regardless of whether they are ever tested at all. ______ epidemiologists who sample sewage at treatment plants can register a coming surge of infections nearly a week before clinical case counts begin to climb, giving hospitals time to prepare.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
@@ -15,17 +15,17 @@
   },
   {
    "id": "B",
-   "text": "Likewise,"
+   "text": "As a result,"
   },
   {
    "id": "C",
-   "text": "Meanwhile,"
+   "text": "Nonetheless,"
   },
   {
    "id": "D",
-   "text": "Consequently,"
+   "text": "For instance,"
   }
  ],
- "correctAnswer": "D",
- "explanation": "Sentence 1 sets up an experimental manipulation: Steele and Aronson assigned Black undergraduates to take the same verbal test under two different framings — one group was told the test measured intellectual ability, the other was told it did not. Sentence 2 then reports what followed from that manipulation: the students given the diagnostic framing scored lower than the students given the nondiagnostic framing, and Steele names that performance cost stereotype threat. The relation between the two sentences is cause-and-effect: the framing manipulation produced the measured score gap. 'Consequently,' is the CB-lexicon transition for a result that follows directly from a stated setup, and is correct (D).\n\nThe cue that selects 'Consequently,' here is the experimental 'set up the conditions, then report the outcome' structure. Sentence 1 names the independent variable (diagnostic vs nondiagnostic framing); sentence 2 names the dependent variable (lower scores under the diagnostic framing) and explicitly attaches a causal label ('an outcome Steele has named stereotype threat: the performance cost of being reminded …'). That is the textbook signature of consequence rather than parallel, contrast, or temporal continuation."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The early-warning capability follows directly from early, test-independent shedding — a cause-and-effect relation that \"As a result\" expresses.\n\n**The Full Solution:**\n- First sentence: the mechanism — infected people shed viral material into wastewater days before seeking testing, and even when they never test.\n- Second sentence: what the mechanism makes possible — sewage sampling registers surges \"nearly a week before clinical case counts begin to climb.\"\n\n**Why the other choices are wrong:**\n- A: \"By contrast\" requires an opposition, but the second sentence realizes the promise of the first rather than diverging from it.\n- C: \"Nonetheless\" concedes an obstacle the passage never raises — nothing in the first sentence makes the second surprising.\n- D: \"For instance\" would make the surveillance capability an example of people shedding virus, but it is a consequence of that fact, not an instance of it."
 }

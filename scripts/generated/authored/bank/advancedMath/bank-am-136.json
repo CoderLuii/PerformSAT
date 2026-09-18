@@ -1,0 +1,29 @@
+{
+  "question": "A vibration study produces the equation $2x^{2}-12x+c=0$, and two different real values of $x$ satisfy it. Which of the following could be the value of the constant $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12$"
+    },
+    {
+      "id": "B",
+      "text": "$18$"
+    },
+    {
+      "id": "C",
+      "text": "$36$"
+    },
+    {
+      "id": "D",
+      "text": "$72$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "the boundary value, which makes the discriminant 0 and gives exactly one solution",
+    "C": "used c < b squared over 4 = 36, omitting the leading coefficient 2",
+    "D": "used c < b squared over 2 = 72"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Two distinct real solutions require $144-8c>0$, so $c<18$; only $12$ qualifies.\n\n**The Full Solution:**\nStep 1: With $a=2$, $b=-12$, and constant $c$, the discriminant is $144-8c$.\nStep 2: Two different real solutions require $144-8c>0$, so $8c<144$ and $c<18$.\nStep 3: Of the four values, only $12$ is less than $18$. Check: $2x^{2}-12x+12=0$ has discriminant $144-96=48>0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($18$): the boundary value, which makes the discriminant $0$ and gives exactly one solution.\n* Choice C ($36$): uses $c<\\dfrac{b^{2}}{4}$, omitting the leading coefficient.\n* Choice D ($72$): uses $c<\\dfrac{b^{2}}{2}$.\n\n**Test Day Takeaway:** Solve the discriminant inequality once, then test the choices — and remember the boundary value is excluded.",
+  "id": "bank-am-136"
+}

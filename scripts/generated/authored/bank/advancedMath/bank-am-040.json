@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-040",
+ "question": "A scaling ratio equals $\\frac{24m^{-4}n^{6}}{6m^{3}n^{-1}}$ for positive $m$ and $n$, and it can be written as $\\frac{an^{c}}{m^{d}}$, where $a$, $c$, and $d$ are positive constants. What is the value of $a+c+d$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "makes both exponent slips, taking d = 1 from -4 + 3 and c = 5 from 6 - 1: 4 + 5 + 1 = 10",
+  "B": "adds the m exponents instead of subtracting, giving d = 1: 4 + 7 + 1 = 12",
+  "C": "subtracts the n exponents as 6 - 1 = 5 instead of 6 - (-1): 4 + 5 + 7 = 16"
+ },
+ "explanation": "**SAT Pattern: Match Coefficients After Exponent Simplification**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** $\\frac{24}{6}=4$, the $m$ exponent is $-4-3=-7$, and the $n$ exponent is $6-(-1)=7$, so $a=4$, $c=7$, $d=7$ and the sum is 18.\n\n**The Full Solution:**\nStep 1: Divide the numerical parts: $\\frac{24}{6}=4$, so $a=4$.\nStep 2: Subtract exponents for each base: $m^{-4-3}=m^{-7}$ and $n^{6-(-1)}=n^{7}$.\nStep 3: Writing $4m^{-7}n^{7}$ as $\\frac{4n^{7}}{m^{7}}$ gives $c=7$ and $d=7$, so $a+c+d=18$. Check: at $m=n=2$ the original is $\\frac{24(2^{-4})(2^{6})}{6(2^{3})(2^{-1})}=\\frac{24(4)}{6(4)}=4$, and $\\frac{4(2^{7})}{2^{7}}=4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($10$): mishandles both bases, using $-4+3$ and $6-1$.\n* Choice B ($12$): adds the $m$ exponents instead of subtracting, giving $d=1$.\n* Choice C ($16$): treats the denominator's $n^{-1}$ as $n^{1}$, giving $c=5$.\n\n**Test Day Takeaway:** Subtracting a negative exponent adds — write the subtraction with parentheses before simplifying."
+}

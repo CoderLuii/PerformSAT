@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-336",
+  "question": "On one crossing, a ferry carried cars, bicycles, and vans. The number of bicycles was $5$ times the number $c$ of cars, and the number of vans was $8$ fewer than the number of cars. If the ferry carried $90$ of these vehicles in total, how many vans did it carry?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$14$"
+    },
+    {
+      "id": "C",
+      "text": "$22$"
+    },
+    {
+      "id": "D",
+      "text": "$70$"
+    }
+  ],
+  "correctAnswer": "A",
+  "distractorNotes": {
+    "B": "reported c, the number of cars",
+    "C": "computed c + 8 instead of c - 8",
+    "D": "reported 5c, the number of bicycles"
+  },
+  "explanation": "**SAT Pattern: Word-Problem to Multi-Step Linear**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $c + 5c + (c - 8) = 7c - 8 = 90$, so $c = 14$ and vans $= 14 - 8 = 6$.\n\n**The Full Solution:**\nStep 1: In terms of $c$: cars $= c$, bicycles $= 5c$, vans $= c - 8$.\nStep 2: Total: $c + 5c + c - 8 = 7c - 8 = 90$, so $7c = 98$ and $c = 14$.\nStep 3: Vans $= c - 8 = 6$.\nCheck: $14 + 70 + 6 = 90$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($14$): stops at $c$, the number of cars.\n* Choice C ($22$): reads \"$8$ fewer than the cars\" as $c + 8$.\n* Choice D ($70$): reports the bicycle count $5c$.\n\n**Test Day Takeaway:** Once the base variable is known, compute the requested quantity from its own expression; the largest or first number you find is rarely the answer."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-427",
+ "question": "Each day a resort shuttle makes $t$ trips and drives a total of $153$ kilometers, so that $9t = 153$. Which of the following is the best interpretation of $9$ in this equation?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The number of kilometers the shuttle drives on each trip"
+  },
+  {
+   "id": "B",
+   "text": "The number of trips the shuttle makes each day"
+  },
+  {
+   "id": "C",
+   "text": "The total number of kilometers the shuttle drives each day"
+  },
+  {
+   "id": "D",
+   "text": "The number of days the shuttle operates"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "mistakes the coefficient for the variable t, which counts the trips",
+  "C": "mistakes the coefficient for the total 153 on the right side",
+  "D": "names a quantity the equation does not contain"
+ },
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** In $9t = 153$, the $9$ multiplies the number of trips, so it must be kilometers per trip.\n\n**The Full Solution:**\n\nStep 1: The variable $t$ counts trips, and the right side, $153$, counts kilometers.\n\nStep 2: For $9t$ to be measured in kilometers, the factor $9$ must convert trips into kilometers, so its units are kilometers per trip.\n\nStep 3: Therefore $9$ is the number of kilometers driven on each trip. Check: $t = 17$ trips at $9$ kilometers each gives $153$ kilometers.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: the number of trips is $t$, the variable the $9$ multiplies, not the $9$ itself.\n* Choice C: the total distance is $153$, the number on the right side of the equation.\n* Choice D: the equation describes a single day, so no count of days appears in it.\n\n**Test Day Takeaway:** A coefficient carries the units of the total divided by the units of the variable; checking units settles interpretation questions."
+}

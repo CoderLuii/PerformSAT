@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "In the $xy$-plane, a circle with center at the origin and radius $4$ is dilated about the origin by a scale factor of $3$. Which equation defines the image?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x^2 + y^2 = \\frac{16}{9}$"
+  },
+  {
+   "id": "B",
+   "text": "$x^2 + y^2 = 12$"
+  },
+  {
+   "id": "C",
+   "text": "$x^2 + y^2 = 48$"
+  },
+  {
+   "id": "D",
+   "text": "$x^2 + y^2 = 144$"
+  }
+ ],
+ "correctAnswer": "D",
+ "hint": "A dilation scales the radius, but the equation stores the radius squared.",
+ "distractorNotes": {
+  "A": "substitutes 3x and 3y",
+  "B": "writes r where r squared belongs",
+  "C": "scales r squared only once"
+ },
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~25s):** The radius becomes $3(4) = 12$, so $r^2 = 144$ and the image is $x^2 + y^2 = 144$.\n\n**The Full Solution:**\nStep 1: A dilation centered at the origin with scale factor $3$ multiplies every distance from the origin by $3$, so the radius becomes $12$.\nStep 2: The center stays at the origin, so the equation is $x^2 + y^2 = r^2$ with $r = 12$.\nStep 3: $x^2 + y^2 = 144$. Check: the point $(4, 0)$ maps to $(12, 0)$, and $12^2 + 0 = 144$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($x^2 + y^2 = \\frac{16}{9}$): substitutes $3x$ and $3y$ into the original equation, which shrinks the circle by a factor of $3$ instead of enlarging it.\n* Choice B ($x^2 + y^2 = 12$): writes the new radius $12$ on the right side where $r^2$ belongs.\n* Choice C ($x^2 + y^2 = 48$): multiplies $r^2 = 16$ by the scale factor once, giving $48$, instead of by the scale factor squared.\n\n**Test Day Takeaway:** Scale the radius, then square it. Multiplying $r^2$ by $k$ instead of $k^2$ is the classic dilation slip."
+}

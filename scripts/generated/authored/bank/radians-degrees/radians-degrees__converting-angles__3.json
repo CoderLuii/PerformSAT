@@ -1,0 +1,36 @@
+{
+  "id": 3,
+  "question": "In the circle shown, central angle $AOB$ measures $135^{\\circ}$ and the radius of the circle is $8$ centimeters. What is the length, in centimeters, of arc $AB$?",
+  "diagram": {
+    "type": "circleWithSector",
+    "params": {
+      "centralAngle": 135,
+      "radius": 8,
+      "showRadiusLabel": true,
+      "labelCenter": "O",
+      "labelPoint1": "A",
+      "labelPoint2": "B"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{3\\pi}{4}$"
+    },
+    {
+      "id": "B",
+      "text": "$6\\pi$"
+    },
+    {
+      "id": "C",
+      "text": "$12\\pi$"
+    },
+    {
+      "id": "D",
+      "text": "$24\\pi$"
+    }
+  ],
+  "correctAnswer": "B",
+  "hint": "The arc-length relationship $s = r\\theta$ only works when $\\theta$ is measured in radians.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** $135^{\\circ}=\\frac{3\\pi}{4}$ radians, and $s = r\\theta = 8\\left(\\frac{3\\pi}{4}\\right)=6\\pi$ — choice B.\n\n**The Full Solution:**\nStep 1: Convert the central angle: $135\\cdot\\frac{\\pi}{180}=\\frac{3\\pi}{4}$ radians.\nStep 2: Apply the arc-length relationship with the radian measure: $s = r\\theta = 8\\left(\\frac{3\\pi}{4}\\right)=6\\pi$ centimeters.\nStep 3: Check with the fraction of the circle: the sector is $\\frac{135}{360}=\\frac{3}{8}$ of the circle, and $\\frac{3}{8}$ of the circumference $2\\pi(8)=16\\pi$ is $6\\pi$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3\\pi}{4}$): converts the angle correctly but stops there, reporting the radian measure instead of multiplying by the radius.\n* Choice C ($12\\pi$): uses the diameter, $16$, in place of the radius: $16\\left(\\frac{3\\pi}{4}\\right)=12\\pi$.\n* Choice D ($24\\pi$): computes the sector's area, $\\frac{1}{2}r^{2}\\theta=\\frac{1}{2}(64)\\left(\\frac{3\\pi}{4}\\right)=24\\pi$, rather than the arc's length.\n\n**Test Day Takeaway:** Arc length is $r\\theta$ and sector area is $\\frac{1}{2}r^{2}\\theta$ — both demand radians. Convert first, then decide which of the two the question asked for."
+}

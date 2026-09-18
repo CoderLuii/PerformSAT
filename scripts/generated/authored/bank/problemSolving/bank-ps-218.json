@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-218",
+  "question": "At a public library, $64\\%$ of the items checked out during one month were books. What percent of the items checked out that month were not books?",
+  "correctAnswer": "36",
+  "explanation": "**SAT Pattern: Percent Complement**\n\n**The correct answer is $36$.**\n\n**The Fast Way (~10s):** $100 - 64 = 36$.\n\n**The Full Solution:**\nStep 1: Each item checked out is either a book or not a book, so the two shares account for all $100\\%$.\nStep 2: Subtract: $100 - 64 = 36$.\nStep 3: Check: $64\\% + 36\\% = 100\\%$. $\\checkmark$\n\n**Common Mistakes:** Reporting $64$, the share that were books; subtracting from $90$ for $26$; or adding to get $164$, which is more than the whole collection of items checked out.\n\n**Test Day Takeaway:** \"Not\" questions are one subtraction from $100\\%$ — the fastest points on the section, so read the category carefully and move on."
+}

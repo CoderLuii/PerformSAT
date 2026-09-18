@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-161",
+  "question": "In a wetland sanctuary, the ratio of the number of herons to the number of egrets is $5 : 9$. If there are $63$ egrets in the sanctuary, how many herons are there?",
+  "correctAnswer": "35",
+  "explanation": "**SAT Pattern: Proportion / Ratio**\n\n**The correct answer is $35$.**\n\n**The Fast Way (~10s):** Egrets are $9$ parts and equal $63$, so one part is $7$; herons are $5$ parts, $5(7) = 35$.\n\n**The Full Solution:**\nStep 1: Write the proportion $\\frac{\\text{herons}}{\\text{egrets}} = \\frac{5}{9} = \\frac{h}{63}$.\nStep 2: Cross-multiply: $9h = 315$, so $h = 35$.\nStep 3: Check: $\\frac{35}{63}$ reduces (divide by $7$) to $\\frac{5}{9}$. $\\checkmark$\n\n**Common Mistakes:** Inverting the ratio, $63 \\times \\frac{9}{5} = 113.4$, which is not even a whole number of birds; reporting one part, $7$; dividing $63$ by $5$ to get $12.6$.\n\n**Test Day Takeaway:** Pair the known quantity with its own ratio number to find one part, then scale to the other quantity; a non-integer count of animals signals an inverted ratio."
+}

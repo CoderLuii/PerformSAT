@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "A tracking station's antenna sits at the point $(-4, 7)$ on a survey grid marked in kilometers and holds a data link with any rover within $9$ kilometers of the antenna. Which equation describes the boundary of the region the station can reach?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x + 4)^2 + (y - 7)^2 = 81$"
+  },
+  {
+   "id": "B",
+   "text": "$(x + 4)^2 + (y - 7)^2 = 9$"
+  },
+  {
+   "id": "C",
+   "text": "$(x - 4)^2 + (y - 7)^2 = 81$"
+  },
+  {
+   "id": "D",
+   "text": "$(x + 4)^2 + (y + 7)^2 = 81$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "puts the radius 9 on the right side instead of the radius squared, 81",
+  "C": "copies the center's x-coordinate -4 straight into the parentheses instead of subtracting it",
+  "D": "subtracts the y-coordinate with the wrong sign, placing the center at (-4, -7)"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Standard form is $(x - h)^2 + (y - k)^2 = r^2$ with center $(-4, 7)$ and $r = 9$, giving $(x + 4)^2 + (y - 7)^2 = 81$.\n\n**The Full Solution:**\nStep 1: The boundary is every point exactly $9$ kilometers from the antenna, which is a circle of radius $9$ centered at $(-4, 7)$.\nStep 2: Substitute into $(x - h)^2 + (y - k)^2 = r^2$: $h = -4$ becomes $x - (-4) = x + 4$, and $k = 7$ becomes $y - 7$.\nStep 3: Square the radius: $r^2 = 81$, so the equation is $(x + 4)^2 + (y - 7)^2 = 81$. Check a boundary point: $(5, 7)$ is $9$ kilometers east of the antenna, and $(9)^2 + 0 = 81$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($= 9$): the right side is $r^2$, not $r$. This equation describes a circle of radius $3$, which would cut the link range to a third.\n* Choice C ($(x - 4)^2$): this copies $-4$ without negating it, centering the circle at $(4, 7)$ — eight kilometers east of the actual antenna.\n* Choice D ($(y + 7)^2$): this negates the $y$-coordinate that was already positive, centering the circle at $(-4, -7)$.\n\n**Test Day Takeaway:** Standard form subtracts the center's coordinates, so a negative coordinate turns into a plus sign inside the parentheses, and the right side is always the radius squared."
+}

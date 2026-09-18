@@ -1,0 +1,57 @@
+{
+  "id": 2,
+  "question": "The table gives the number of nesting pairs of a shorebird species counted at a reserve in four different years. What was the percent decrease in the number of nesting pairs from 2018 to 2022?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Year",
+        "Number of nesting pairs"
+      ],
+      "rows": [
+        [
+          "2018",
+          "640"
+        ],
+        [
+          "2020",
+          "576"
+        ],
+        [
+          "2022",
+          "512"
+        ],
+        [
+          "2024",
+          "480"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$10\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$20\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$80\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the 2020 row",
+    "C": "divides by the later count",
+    "D": "reports the ratio, not the decrease"
+  },
+  "correctAnswer": "B",
+  "hint": "The base of a percent decrease is the earlier count in the comparison.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** The drop is $640 - 512 = 128$, and $\\frac{128}{640} = 20\\%$.\n\n**The Full Solution:**\nStep 1: Read the two counts named in the question: $640$ pairs in 2018 and $512$ pairs in 2022.\nStep 2: Find the decrease: $640 - 512 = 128$ pairs.\nStep 3: Divide by the 2018 count and convert: $\\frac{128}{640} = 0.2 = 20\\%$. Check: $80\\%$ of $640$ is $512$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($10\\%$): uses the 2020 count of $576$, reading the wrong row of the table.\n* Choice C ($25\\%$): divides the decrease by the 2022 count instead of the 2018 count.\n* Choice D ($80\\%$): reports the 2022 count as a percent of the 2018 count rather than the decrease.\n\n**Test Day Takeaway:** Two rows must be identified before any arithmetic — then divide the change by the earlier of the two."
+}

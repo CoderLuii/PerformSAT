@@ -1,0 +1,52 @@
+{
+  "id": "bank-ps-438",
+  "question": "The table gives the number of students enrolled at each of three campuses of a college this year. Enrollment at the Riverside campus this year is $16\\%$ greater than it was last year. How many students were enrolled at the Riverside campus last year?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Campus",
+        "Enrollment this year"
+      ],
+      "rows": [
+        [
+          "Riverside",
+          "2,900"
+        ],
+        [
+          "Lakeside",
+          "1,750"
+        ],
+        [
+          "Hillcrest",
+          "2,430"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2{,}436$"
+    },
+    {
+      "id": "B",
+      "text": "$2{,}500$"
+    },
+    {
+      "id": "C",
+      "text": "$3{,}364$"
+    },
+    {
+      "id": "D",
+      "text": "$18{,}125$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts $16\\%$ of this year's enrollment instead of dividing by $1.16$.",
+    "C": "increases this year's enrollment by $16\\%$ instead of undoing the increase.",
+    "D": "divides by $0.16$ rather than by $1.16$."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse Percent**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Riverside shows $2{,}900$ students this year, which is $116\\%$ of last year's count, so last year had $\\frac{2{,}900}{1.16}=2{,}500$ students.\n\n**The Full Solution:**\nStep 1: Read the Riverside row of the table: $2{,}900$ students this year. The other two campuses are not involved.\nStep 2: Let $L$ be last year's enrollment. A $16\\%$ increase gives $1.16L=2{,}900$.\nStep 3: $L=\\frac{2{,}900}{1.16}=2{,}500$. Check: $16\\%$ of $2{,}500$ is $400$, and $2{,}500+400=2{,}900$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2{,}436$): computes $0.84\\times 2{,}900$, taking $16\\%$ off the larger number.\n* Choice C ($3{,}364$): computes $1.16\\times 2{,}900$, growing this year's figure instead of reversing the growth.\n* Choice D ($18{,}125$): divides by $0.16$, the percent of change, rather than by the growth factor $1.16$.\n\n**Test Day Takeaway:** In a multi-row table, first isolate the one row the percent statement refers to, then divide by $1+r$ to walk the percent change backward."
+}

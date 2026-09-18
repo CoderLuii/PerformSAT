@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "A licensing exam has $150$ questions, and a candidate must answer at least $68\\%$ of them correctly to pass. A candidate has answered $86$ of the first $110$ questions correctly. At least how many of the remaining questions must this candidate answer correctly to pass?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$16$"
+    },
+    {
+      "id": "B",
+      "text": "$24$"
+    },
+    {
+      "id": "C",
+      "text": "$40$"
+    },
+    {
+      "id": "D",
+      "text": "$102$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "counts allowed remaining misses",
+    "C": "assumes all remaining must be correct",
+    "D": "reports the total needed"
+  },
+  "correctAnswer": "A",
+  "hint": "Find the total number of correct answers required before looking at what is already earned.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~35s):** Passing needs $0.68 \\times 150 = 102$ correct, and $102 - 86 = 16$ more.\n\n**The Full Solution:**\nStep 1: Compute the passing requirement: $68\\%$ of $150$ is $0.68 \\times 150 = 102$ correct answers.\nStep 2: The candidate already has $86$ correct, so the shortfall is $102 - 86 = 16$.\nStep 3: There are $150 - 110 = 40$ questions left, and $16$ of them must be correct. Check: $86 + 16 = 102$, and $\\frac{102}{150} = 0.68$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($24$): counts the remaining questions the candidate may answer INCORRECTLY, since $150 - 102 = 48$ misses are allowed and $110 - 86 = 24$ have already been used.\n* Choice C ($40$): assumes every one of the $40$ remaining questions must be answered correctly.\n* Choice D ($102$): reports the total number of correct answers needed rather than the additional number.\n\n**Test Day Takeaway:** Convert a passing percent into a raw count first; the question then becomes simple subtraction against what is already banked."
+}

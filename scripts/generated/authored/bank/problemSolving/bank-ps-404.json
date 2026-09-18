@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-404",
+  "question": "The table classifies $420$ households by whether the household separates glass for recycling and whether it composts food waste. If one of these households is selected at random, what is the probability that the selected household separates glass for recycling?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Composts",
+        "Does not compost",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Separates glass",
+          "168",
+          "105",
+          "273"
+        ],
+        [
+          "Does not separate glass",
+          "42",
+          "105",
+          "147"
+        ],
+        [
+          "Total",
+          "210",
+          "210",
+          "420"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{7}{20}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{2}{5}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{13}{20}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{4}{5}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "gives the probability that the household does not separate glass",
+    "B": "uses only the $168$ households that both separate glass and compost",
+    "D": "divides those $168$ households by the $210$ households that compost, a conditional probability"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The glass-separating row totals $273$ out of $420$ households, so the probability is $\\frac{273}{420} = \\frac{13}{20}$.\n\n**The Full Solution:**\nStep 1: Composting is not part of the question, so both cells of the glass-separating row are favorable.\nStep 2: That row totals $168 + 105 = 273$ households out of $420$.\nStep 3: The probability is $\\frac{273}{420} = \\frac{13}{20}$, dividing both parts by $21$. Check: $\\frac{147}{420} = \\frac{7}{20}$ of households do not separate glass, and $\\frac{13}{20} + \\frac{7}{20} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{7}{20}$): gives the probability that the household does not separate glass\n* Choice B ($\\frac{2}{5}$): uses only the $168$ households that both separate glass and compost\n* Choice D ($\\frac{4}{5}$): divides those $168$ households by the $210$ households that compost, a conditional probability\n\n**Test Day Takeaway:** Ignore the variable the question does not mention by collapsing across it — that is exactly what a row total does."
+}

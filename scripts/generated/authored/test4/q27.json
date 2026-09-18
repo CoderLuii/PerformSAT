@@ -5,40 +5,40 @@
   "band": 4,
   "domain": "expression-of-ideas",
   "skill": "rhetorical-synthesis",
+  "module": 1,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "Batting average and on-base percentage are statistics used to evaluate hitters in baseball.",
+      "Batting average is the share of a hitter's official at-bats that end in hits.",
+      "A walk does not count as an official at-bat, so walks have no effect on a hitter's batting average.",
+      "On-base percentage is the share of all plate appearances in which a hitter reaches base, whether by a hit, a walk, or being hit by a pitch.",
+      "Two hitters with equal batting averages can have very different on-base percentages if one draws many more walks."
+    ],
+    "goal": "The student wants to emphasize a difference between batting average and on-base percentage."
+  },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Jennifer Doudna, a molecular biologist at the University of California, Berkeley, has both published technical papers on CRISPR-Cas9 and written books about its implications, including A Crack in Creation (2017)."
+      "text": "Batting average and on-base percentage are both statistics that analysts use to evaluate the performance of hitters in baseball."
     },
     {
       "id": "B",
-      "text": "Whereas Doudna's 2012 paper with Emmanuelle Charpentier established Cas9 as a programmable gene-editing tool, her 2017 book A Crack in Creation argues, for general readers, that CRISPR offers transformative opportunities while raising serious ethical questions."
+      "text": "Unlike batting average, which ignores walks entirely, on-base percentage credits a hitter for every plate appearance that ends with the hitter reaching base, walks included."
     },
     {
       "id": "C",
-      "text": "In her 2017 book A Crack in Creation, Doudna argues that CRISPR genome editing offers transformative opportunities and raises serious ethical questions, especially in human germline applications."
+      "text": "Batting average is the share of a hitter's official at-bats that end in hits, and a walk does not count as an official at-bat."
     },
     {
       "id": "D",
-      "text": "Doudna's 2012 paper with Emmanuelle Charpentier and colleagues showed that the bacterial Cas9 enzyme could be guided by a single engineered RNA to cut specific DNA sequences, and her 2017 book A Crack in Creation makes the same argument for general readers."
+      "text": "Because two hitters with equal batting averages can sometimes differ widely in on-base percentage, teams should rely on neither statistic alone when evaluating the performance of hitters."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to emphasize a difference between the 2012 paper and the 2017 book, and choice B names both and contrasts them: the paper established a technical tool, while the book makes an argument for general readers about CRISPR's promise and its ethical questions. Choice A lists the two works as parallel kinds of output without contrasting them; choice C describes only the book; and choice D claims the two make the same argument, which works against the goal.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Jennifer Doudna is a molecular biologist at the University of California, Berkeley.",
-      "In 2012, with Emmanuelle Charpentier and colleagues, Doudna published a paper showing that the bacterial Cas9 enzyme could be guided by a single engineered RNA to cut specific DNA sequences.",
-      "This work made Cas9 a programmable, general-purpose gene-editing tool.",
-      "In 2017, Doudna published A Crack in Creation, a book for general readers about CRISPR genome editing.",
-      "A Crack in Creation argues that CRISPR offers transformative opportunities and raises serious ethical questions, especially in human germline applications."
-    ],
-    "goal": "The student wants to emphasize a difference between Doudna's 2012 paper and her 2017 book."
-  },
+  "explanation": "**Choice B is correct.** The goal is to emphasize a difference, and B places the two statistics on either side of an explicit contrast: walks ignored by one, counted by the other.\n\n**The Full Solution:**\n- The notes locate the difference in walks: excluded from batting average (bullet 3), included in on-base percentage (bullet 4).\n- B frames exactly that contrast with \"Unlike batting average ...\" and names both statistics' treatment of walks.\n- Contrastive framing is what an emphasize-a-difference goal requires.\n\n**Why the other choices are wrong:**\n- A: It emphasizes what the statistics share, not how they differ.\n- C: It defines batting average alone; with one statistic on stage there is no difference to see.\n- D: It draws a recommendation about using the statistics rather than emphasizing how they differ, a conclusion the notes do not support.",
   "_meta": {
-    "anchor": "Jennifer Doudna & Emmanuelle Charpentier — CRISPR-Cas9 and A Crack in Creation (entity_keep)"
-  },
-  "module": 1
+    "anchor": "baseball statistics — batting average versus on-base percentage; difference goal"
+  }
 }

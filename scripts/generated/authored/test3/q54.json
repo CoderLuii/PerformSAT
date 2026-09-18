@@ -5,41 +5,41 @@
  "band": 4,
  "domain": "expression-of-ideas",
  "skill": "rhetorical-synthesis",
+ "type": "multiple-choice",
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Wangari Maathai (1940-2011) was a Kenyan biologist and the first woman in East and Central Africa to earn a doctorate.",
+   "In 1977 she founded the Green Belt Movement, which paid rural Kenyan women small stipends to plant and tend trees.",
+   "The movement's nurseries raised seedlings to counter deforestation, which had stripped hillsides, dried up streams, and degraded farmland.",
+   "Women who participated earned income and gained standing in their communities while restoring the land they farmed.",
+   "The movement has planted tens of millions of trees across Kenya.",
+   "In 2004 Maathai received the Nobel Peace Prize, the first environmentalist so honored."
+  ],
+  "goal": "The student wants to emphasize how the Green Belt Movement joined environmental restoration to the economic empowerment of rural women."
+ },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Young published her single-author 1924 paper on the excretory apparatus in Paramecium while working with Ernest Just at Howard University and at Woods Hole."
+   "text": "Wangari Maathai, a Kenyan biologist and the first woman in East and Central Africa to earn a doctorate, received the Nobel Peace Prize in 2004 for her environmental work."
   },
   {
    "id": "B",
-   "text": "After Ernest Just left Howard, Young took on much of the department's teaching load, and her own research time was substantially reduced."
+   "text": "The Green Belt Movement's nurseries raised seedlings to counter deforestation, which had stripped Kenyan hillsides, dried up streams, and degraded farmland."
   },
   {
    "id": "C",
-   "text": "Roger Arliner Young, who lived from 1899 to 1964, studied the contractile vacuole system of Paramecium and the effects of radiation on marine egg cells."
+   "text": "Deforestation in Kenya was so severe by 1977 that Wangari Maathai founded an organization dedicated to planting tens of millions of trees."
   },
   {
    "id": "D",
-   "text": "Recent historians argue that the standard narrative of Young's career, fixed on her later setbacks, has obscured her early Paramecium and radiation work — the first single-author zoology papers by an African American woman — recoverable only by reading the archival record alongside the published one."
+   "text": "Through the Green Belt Movement, Wangari Maathai turned tree planting into paid work for rural Kenyan women, so that the campaign against deforestation simultaneously restored degraded land and brought the women who carried it out income and standing in their communities."
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D. The goal is to emphasize the corrective contribution of recent historians' work on Young. D states that contribution: the standard narrative, fixed on her later setbacks, has obscured the importance of her early Paramecium and radiation work as the first single-author zoology papers by an African American woman, and recovering it requires reading the archival record alongside the published literature. A and C report Young's publications and research topics but say nothing about what recent historians have done. B foregrounds exactly the later-setbacks material that the corrective work argues has been overemphasized, illustrating the framing being corrected rather than the correction.",
+ "explanation": "**Choice D is correct.** The goal names a junction — restoration joined to women's economic empowerment — and D is the only choice that makes the junction itself the sentence's point: paid tree-planting work restored land and delivered income and standing at once (\"simultaneously\").\n\n**The Full Solution:**\n- Both halves must appear and be linked: the environmental campaign (countering deforestation, restoring degraded land) and the empowerment (stipends, income, standing for rural women).\n- D fuses the notes' second, third, and fourth bullets into that single both-at-once claim, which is precisely the emphasis requested.\n\n**Why the other choices are wrong:**\n- A: It lists Maathai's credentials and prize but never mentions the movement's women or its restoration work.\n- B: It covers only the environmental half — seedlings against deforestation — with no women, wages, or standing.\n- C: It frames the movement purely as a tree-planting response to deforestation, again omitting the economic-empowerment half of the pairing.",
  "_meta": {
-  "anchor": "Roger Arliner Young — zoologist (Howard; Woods Hole); 1924 Paramecium paper; corrective historiography"
- },
- "studentNotes": {
-  "intro": "While researching a topic, a student has taken the following notes:",
-  "bullets": [
-   "Roger Arliner Young (1899-1964) was a zoologist who studied the contractile vacuole system of Paramecium and the effects of radiation on marine egg cells.",
-   "She published her single-author 1924 paper on the excretory apparatus in Paramecium while working with Ernest Just at Howard University and at the Marine Biological Laboratory at Woods Hole.",
-   "After Just left Howard, Young carried much of the department's teaching load and saw her own research time substantially reduced.",
-   "Recent historians of science argue that the standard narrative of Young's career — focused on her later setbacks — has obscured the importance of her early Paramecium and radiation work.",
-   "On this account, that work includes the first single-author research papers in zoology by an African American woman.",
-   "Recovering it requires reading the Howard and Woods Hole archival record alongside the published literature, since institutional pressures shaped what she could publish under her own name."
-  ],
-  "goal": "The student wants to emphasize the corrective contribution of recent historians' work on Young."
- },
- "type": "multiple-choice"
+  "anchor": "Wangari Maathai — Green Belt Movement pairing restoration with women's livelihoods"
+ }
 }

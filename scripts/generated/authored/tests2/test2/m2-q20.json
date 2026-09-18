@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A rainwater tank at a community center holds $1{,}450$ liters. Each day the center draws $38$ liters from the tank, and daily collection adds $12$ liters to it. What is the least number of whole days after which the tank holds fewer than $900$ liters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$22$"
+  },
+  {
+   "id": "B",
+   "text": "$35$"
+  },
+  {
+   "id": "C",
+   "text": "$39$"
+  },
+  {
+   "id": "D",
+   "text": "$56$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves 26d > 900, treating 900 as the volume that must be removed rather than the volume remaining, giving 34.6 and rounding up to 35",
+  "C": "divides the full 1450 by the 38-liter draw, ignoring the daily collection and the 900-liter level, giving 38.2 and rounding up to 39",
+  "D": "finds the day the tank would empty, 1450/26 = 55.8, rounding up to 56"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Smallest Integer in an Inequality**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The tank loses $38 - 12 = 26$ liters a day, so $1450 - 26d < 900$ gives $26d > 550$ and $d > 21.15$. The least whole number of days is $22$.\n\n**The Full Solution:**\nStep 1: Combine the two daily changes into one net rate: the tank falls by $38 - 12 = 26$ liters each day, so after $d$ days it holds $1450 - 26d$ liters.\nStep 2: Set up the inequality the question describes: $1450 - 26d < 900$, which rearranges to $550 < 26d$, so $d > \\frac{550}{26} \\approx 21.15$.\nStep 3: The least whole number greater than $21.15$ is $22$. Check: after $21$ days the tank holds $1450 - 546 = 904$ liters, still above $900$; after $22$ days it holds $1450 - 572 = 878$ liters ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($35$): solves $26d > 900$, as if $900$ liters had to be drained. The $900$ is the level that must remain, so the amount removed is $1450 - 900 = 550$ liters.\n* Choice C ($39$): divides $1450$ by $38$, using only the draw and ignoring both the $12$ liters added each day and the $900$-liter threshold.\n* Choice D ($56$): finds when the tank would run dry at $26$ liters a day. The question asks when the level first drops below $900$, not when it reaches $0$.\n\n**Test Day Takeaway:** Net out opposing daily rates into a single coefficient before writing the inequality, then remember that \"fewer than\" a remaining amount converts to an amount removed."
+}

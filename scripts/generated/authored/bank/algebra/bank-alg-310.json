@@ -1,0 +1,29 @@
+{
+ "question": "Before each run an operator sets the constant $p$, and the regulator then solves the equation $6(2y-p)=4(y-3)$ to find the setpoint $y$ it should use for that run. Which of the following expressions gives the value of $y$ in terms of $p$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3p-6}{4}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3p-6}{8}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3p+6}{4}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{6p-12}{4}$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "divides the numerator of (6p-12)/8 by 2 but leaves the denominator at 8",
+  "C": "moves the -12 across the equals sign without changing its sign",
+  "D": "divides by 4, the coefficient on the right, instead of by 8, the combined coefficient of y"
+ },
+ "explanation": "**SAT Pattern: Linear Equation with Distribution**\n\n**Choice A is correct.** Distributing both sides gives $12y-6p=4y-12$, so $8y=6p-12$ and $y=\\frac{3p-6}{4}$.\n\n**The Fast Way (~45s):** $12y-6p=4y-12\\Rightarrow 8y=6p-12\\Rightarrow y=\\frac{6p-12}{8}=\\frac{3p-6}{4}$.\n\n**The Full Solution:**\n\nStep 1: Distribute on each side: $6(2y-p)=12y-6p$ and $4(y-3)=4y-12$.\n\nStep 2: Collect the $y$ terms on the left and the rest on the right: $12y-4y=6p-12$, so $8y=6p-12$.\n\nStep 3: Divide both sides by $8$ and reduce by $2$: $y=\\frac{6p-12}{8}=\\frac{3p-6}{4}$. Check with $p=6$: the equation reads $6(2y-6)=4(y-3)$, whose solution is $y=3$, and $\\frac{3(6)-6}{4}=3$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: reduces $6p-12$ to $3p-6$ but forgets to halve the denominator as well.\n* Choice C: carries the $-12$ across the equals sign without changing its sign.\n* Choice D: divides by $4$ rather than by $8$, the coefficient left after collecting the $y$ terms.\n\n**Test Day Takeaway:** Distribute every factor first, gather the variable on one side, and reduce numerator and denominator by the same factor.",
+ "id": "bank-alg-310"
+}

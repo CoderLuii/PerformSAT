@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-061",
+  "question": "A nursery grew $180$ seedlings in its first growing season and $225$ seedlings in its second growing season. The number of seedlings grown in the second season is $p\\%$ greater than the number grown in the first season. What is the value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20$"
+    },
+    {
+      "id": "B",
+      "text": "$25$"
+    },
+    {
+      "id": "C",
+      "text": "$45$"
+    },
+    {
+      "id": "D",
+      "text": "$125$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the change by the new count (45/225) instead of the original",
+    "C": "reports the raw change in seedlings, not a percent",
+    "D": "reports the ratio 225/180 = 1.25 as a percent instead of the increase"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent Increase Basic**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** The increase is $225 - 180 = 45$ seedlings on a base of $180$, and $\\frac{45}{180} = 0.25$, so $p = 25$.\n\n**The Full Solution:**\nStep 1: Percent increase $= \\frac{\\text{new} - \\text{original}}{\\text{original}} \\times 100$. The original is the first-season count, $180$.\nStep 2: The change is $225 - 180 = 45$, so the percent increase is $\\frac{45}{180} \\times 100 = 25$.\nStep 3: Check: $25\\%$ of $180$ is $0.25(180) = 45$, and $180 + 45 = 225$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): divides the $45$-seedling change by the NEW count, $\\frac{45}{225} = 0.20$, instead of by the original count.\n* Choice C ($45$): reports the change in the number of seedlings itself rather than the change as a percent of the original.\n* Choice D ($125$): reports the ratio $\\frac{225}{180} = 1.25$ as a percent; that is what the second season is OF the first, not how much greater it is.\n\n**Test Day Takeaway:** \"Percent greater than\" always divides the change by the starting value, and the answer is the change only, not the whole ratio."
+}

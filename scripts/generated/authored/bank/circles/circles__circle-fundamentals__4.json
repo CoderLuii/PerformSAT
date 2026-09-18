@@ -1,0 +1,41 @@
+{
+ "question": "A pivot arm sweeps from $A$ to $B$ in the circle shown with center $O$, where angle $AOB$ measures $110^\\circ$. What is the measure, in degrees, of angle $OAB$?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 110,
+   "angleLabel": "110°",
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "showAngleLabel": true,
+   "figureNote": true
+  }
+ },
+ "hint": "What do the two segments drawn from $O$ have in common?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$35$"
+  },
+  {
+   "id": "B",
+   "text": "$55$"
+  },
+  {
+   "id": "C",
+   "text": "$70$"
+  },
+  {
+   "id": "D",
+   "text": "$110$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "halves the central angle, treating OAB as an inscribed angle",
+  "C": "computes 180 - 110 = 70 and never splits it between the two base angles",
+  "D": "repeats the central angle 110"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** Triangle $AOB$ is isosceles, so the two base angles share $180 - 110 = 70$ degrees, giving $35$ each.\n\n**The Full Solution:**\nStep 1: $OA$ and $OB$ are both radii, so triangle $AOB$ is isosceles with $OA = OB$.\nStep 2: Angles $OAB$ and $OBA$ are the base angles opposite those equal sides, so they are equal.\nStep 3: The angles of the triangle total $180$, so $2(\\text{angle } OAB) = 180 - 110 = 70$ and angle $OAB = 35$. Check: $35 + 35 + 110 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($55$): halves the central angle, which is the rule for an inscribed angle, not a base angle.\n* Choice C ($70$): stops at $180 - 110 = 70$, the total of the two base angles.\n* Choice D ($110$): repeats the central angle instead of finding a base angle.\n\n**Test Day Takeaway:** Any triangle with two radii as sides is isosceles, so its base angles are equal."
+}

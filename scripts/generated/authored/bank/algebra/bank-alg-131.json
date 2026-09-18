@@ -1,0 +1,58 @@
+{
+ "id": "bank-alg-131",
+ "question": "The graph shown gives the salinity $f(x)$ recorded by a probe, in practical salinity units, at a depth of $x$ meters below the surface of an estuary. What salinity does the probe record at a depth of $6$ meters?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 3,
+   "yIntercept": 2,
+   "xRange": [
+    0,
+    8
+   ],
+   "yRange": [
+    0,
+    28
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     8
+    ]
+   ],
+   "label": "f"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$14$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the surface reading f(0) instead of f(6)",
+  "B": "reports the input depth 6 rather than the salinity",
+  "C": "reads the value at a depth of 4 meters"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Follow $x = 6$ up to the line and across: the salinity is $20$.\n\n**The Full Solution:**\nStep 1: The graph passes through $(0, 2)$ and $(2, 8)$, so the salinity rises $6$ units over $2$ meters, a rate of $3$ per meter, and $f(x) = 3x + 2$.\nStep 2: Evaluate at the requested depth: $f(6) = 3(6) + 2$.\nStep 3: That gives $18 + 2 = 20$ practical salinity units. Check: reading the graph at $x = 6$ lands on $y = 20$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): reports the surface reading $f(0)$ instead of the value at $6$ meters.\n* Choice B ($6$): reports the input depth rather than the salinity the graph gives for it.\n* Choice C ($14$): reads the graph at a depth of $4$ meters instead of $6$.\n\n**Test Day Takeaway:** Evaluating from a graph means going up from the input on the horizontal axis and across to the vertical axis — never reporting the input back."
+}

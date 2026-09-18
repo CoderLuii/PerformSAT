@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-342",
+ "question": "A robotic pipetting arm turns through $\\frac{5\\pi}{12}$ radians and then through $\\frac{7\\pi}{18}$ radians in the same direction. Through how many more degrees must it turn to complete a half revolution?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$35$"
+  },
+  {
+   "id": "B",
+   "text": "$105$"
+  },
+  {
+   "id": "C",
+   "text": "$145$"
+  },
+  {
+   "id": "D",
+   "text": "$215$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "converts only the first turn and subtracts it: 180 - 75",
+  "C": "reports the total turn already made, 75 + 70, instead of what remains",
+  "D": "measures the remainder against a full revolution: 360 - 145"
+ },
+ "explanation": "**SAT Pattern: Radian Sum to Degrees**\n\n**Choice A is correct.** The two turns are $75^\\circ$ and $70^\\circ$, totaling $145^\\circ$, so $180 - 145 = 35$ degrees remain.\n\n**The Fast Way (~35s):** $\\frac{5\\pi}{12} \\to 75^\\circ$ and $\\frac{7\\pi}{18} \\to 70^\\circ$; a half revolution is $180^\\circ$, so $180 - 145 = 35$.\n\n**The Full Solution:**\n\nStep 1: Convert with $\\frac{180}{\\pi}$ degrees per radian: $\\frac{5\\pi}{12} \\cdot \\frac{180}{\\pi} = \\frac{900}{12} = 75^\\circ$.\n\nStep 2: Likewise $\\frac{7\\pi}{18} \\cdot \\frac{180}{\\pi} = \\frac{1260}{18} = 70^\\circ$, so the arm has turned $75 + 70 = 145^\\circ$.\n\nStep 3: A half revolution is $180^\\circ$, so the arm still needs $180 - 145 = 35$ degrees. Check: $145^\\circ + 35^\\circ = 180^\\circ$, and in radians $\\frac{5\\pi}{12} + \\frac{7\\pi}{18} = \\frac{15\\pi + 14\\pi}{36} = \\frac{29\\pi}{36}$, which is just under $\\pi$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($105$): converts only the first turn and subtracts, $180 - 75$.\n* Choice C ($145$): reports the total already turned rather than what is left.\n* Choice D ($215$): measures the remainder against a full revolution, $360 - 145$, not a half one.\n\n**Test Day Takeaway:** Convert every radian measure to degrees first, add, and then answer the comparison the question sets — \"how much more\" is a subtraction, not the sum."
+}

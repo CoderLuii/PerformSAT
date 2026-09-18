@@ -1,0 +1,60 @@
+{
+ "id": "bank-geo-337",
+ "question": "Triangle $RST$ has a right angle at $T$, with $RT=4$ and $ST=3$. What is the value of $\\tan R$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "labels": [
+    "R",
+    "T",
+    "S"
+   ],
+   "sideLabels": [
+    "4",
+    "3",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3}{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{4}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{4}{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives sine instead of tangent",
+  "C": "gives cosine instead of tangent",
+  "D": "swaps opposite and adjacent"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Trig Ratio with Known Triple**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** For angle $R$, the opposite leg is $\\overline{ST}=3$ and the adjacent leg is $\\overline{RT}=4$, so $\\tan R=\\frac{3}{4}$.\n\n**The Full Solution:**\nStep 1: The right angle sits at $T$, so $\\overline{RT}$ and $\\overline{ST}$ are the legs and $\\overline{RS}$ is the hypotenuse.\nStep 2: Angle $R$ touches $\\overline{RT}$ and $\\overline{RS}$, so the leg opposite it is $\\overline{ST}=3$ and the leg adjacent to it is $\\overline{RT}=4$.\nStep 3: Tangent is opposite over adjacent: $\\tan R=\\frac{3}{4}$.\n\nCheck: the hypotenuse is $\\sqrt{3^2+4^2}=5$, the familiar $3$, $4$, $5$ triple. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3}{5}$): divided the opposite leg by the hypotenuse, which is $\\sin R$.\n* Choice C ($\\frac{4}{5}$): divided the adjacent leg by the hypotenuse, which is $\\cos R$.\n* Choice D ($\\frac{4}{3}$): swapped opposite and adjacent, giving $\\tan S$ instead.\n\n**Test Day Takeaway:** Tangent needs no hypotenuse. When both legs are given and a tangent is asked for, there is nothing left to compute."
+}

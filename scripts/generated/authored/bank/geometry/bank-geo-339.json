@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-339",
+ "question": "The ground cross section of a rolled-steel chock appears here; both of its legs are labeled in centimeters, vertex $Y$ holds the right angle, and the hypotenuse carries no label. What is the value of $\\sin X$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     48,
+     0
+    ],
+    [
+     48,
+     55
+    ]
+   ],
+   "labels": [
+    "X",
+    "Y",
+    "Z"
+   ],
+   "sideLabels": [
+    "48",
+    "55",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{48}{73}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{55}{73}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{48}{55}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{73}{55}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports cos X = 48/73, adjacent over hypotenuse",
+  "C": "divides the adjacent leg by the opposite leg, the reciprocal of tan X",
+  "D": "inverts sin X, giving hypotenuse over opposite"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Trig Ratio with Known Triple**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The hypotenuse is $\\sqrt{48^2 + 55^2} = 73$, so $\\sin X = \\frac{55}{73}$.\n\n**The Full Solution:**\nStep 1: The legs $\\overline{XY} = 48$ and $\\overline{YZ} = 55$ meet at the right angle at $Y$.\nStep 2: The hypotenuse is $\\overline{ZX} = \\sqrt{48^2 + 55^2} = \\sqrt{2{,}304 + 3{,}025} = \\sqrt{5{,}329} = 73$ centimeters.\nStep 3: The leg opposite angle $X$ is $\\overline{YZ} = 55$, so $\\sin X = \\frac{55}{73}$.\n\nCheck: $\\frac{55}{73} \\approx 0.753$, and since angle $X$ faces the longer leg its sine should exceed $\\frac{\\sqrt{2}}{2} \\approx 0.707$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{48}{73}$): uses the adjacent leg over the hypotenuse, which is $\\cos X$.\n* Choice C ($\\frac{48}{55}$): divides the two legs, and in the wrong order at that.\n* Choice D ($\\frac{73}{55}$): inverts the ratio; a sine is never greater than $1$.\n\n**Test Day Takeaway:** When only the legs are given, build the hypotenuse first; sine and cosine both require it."
+}

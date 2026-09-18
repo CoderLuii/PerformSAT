@@ -1,0 +1,56 @@
+{
+ "id": "bank-am-223",
+ "question": "The table gives the concentration $C$, in micrograms per kilogram, of a fumigant residue on stored almonds $t$ days after the first measurement, and $C$ decays exponentially with $t$. According to this model, what was the concentration $3$ days before the first measurement?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Days t",
+    "Concentration C"
+   ],
+   "rows": [
+    [
+     "0",
+     "320"
+    ],
+    [
+     "3",
+     "160"
+    ],
+    [
+     "6",
+     "80"
+    ],
+    [
+     "9",
+     "40"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$160$"
+  },
+  {
+   "id": "B",
+   "text": "$480$"
+  },
+  {
+   "id": "C",
+   "text": "$640$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}280$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "steps forward in time instead of backward, reporting the concentration 3 days after the first measurement",
+  "B": "extrapolates linearly, adding the first difference 320 - 160 = 160 to 320",
+  "D": "steps back 6 days instead of 3, doubling twice to reach 1,280"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Reverse Exponential Back in Time**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The concentration halves every $3$ days, so going back $3$ days doubles it: $2\\times320=640$.\n\n**The Full Solution:**\n\nStep 1: Divide consecutive entries: $\\frac{160}{320}=\\frac{1}{2}$, $\\frac{80}{160}=\\frac{1}{2}$, and $\\frac{40}{80}=\\frac{1}{2}$, so each $3$-day step multiplies the concentration by $\\frac{1}{2}$.\n\nStep 2: Moving backwards in time reverses that step, multiplying by $2$.\n\nStep 3: Three days before the first measurement the concentration was $320\\times2=640$ micrograms per kilogram. Check: halving $640$ once gives $320$, the entry at $t=0$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($160$): moves forward $3$ days instead of backward.\n* Choice B ($480$): treats the decay as linear and adds the difference $160$ to $320$.\n* Choice D ($1{,}280$): goes back two steps, a total of $6$ days.\n\n**Test Day Takeaway:** Going backwards through exponential data means dividing by the growth factor — here, multiplying by $2$ — exactly once per period."
+}

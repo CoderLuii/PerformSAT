@@ -1,0 +1,48 @@
+{
+ "id": 6,
+ "question": "A planning board's site plan uses $x$ townhouse lots and $y$ apartment lots. The table gives the land area and the parking spaces required for each lot type. The plan uses $7.8$ acres of land in total and requires $360$ parking spaces in total. How many more townhouse lots than apartment lots does the plan use?",
+ "questionTable": {
+  "headers": [
+   "Lot type",
+   "Land area per lot (acres)",
+   "Parking spaces per lot"
+  ],
+  "rows": [
+   [
+    "Townhouse",
+    "$0.05$",
+    "$2$"
+   ],
+   [
+    "Apartment",
+    "$0.12$",
+    "$6$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$60$"
+  },
+  {
+   "id": "D",
+   "text": "$100$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves the system and reports y = 40, the number of apartment lots, instead of the difference",
+  "C": "solves the system and reports x = 60, the number of townhouse lots, instead of the difference",
+  "D": "adds the two counts, 60 + 40 = 100, instead of subtracting them"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice A is correct.**\n\n**The Fast Way (~50s):** The parking row divides by $2$ to $x+3y=180$, so $x=180-3y$. Substituting into $0.05x+0.12y=7.8$ gives $y=40$, then $x=60$, and $60-40=20$.\n\n**The Full Solution:**\nStep 1: Turn each total into an equation using the table's per-lot values. Land: $0.05x+0.12y=7.8$. Parking: $2x+6y=360$.\nStep 2: The parking equation has a common factor of $2$, so $x+3y=180$, which solves cleanly for $x=180-3y$. Substitute into the land equation: $0.05(180-3y)+0.12y=7.8$, or $9-0.15y+0.12y=7.8$, so $-0.03y=-1.2$ and $y=40$.\nStep 3: Back-substitute: $x=180-3(40)=60$. The question asks how many more townhouse lots than apartment lots, so the answer is $60-40=20$. Check: $0.05(60)+0.12(40)=3+4.8=7.8$ acres and $2(60)+6(40)=120+240=360$ spaces ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($40$): reports $y=40$, the number of apartment lots. That is a solved variable, not the comparison the question asks for.\n* Choice C ($60$): reports $x=60$, the number of townhouse lots — the value most students reach last and stop on.\n* Choice D ($100$): adds the two counts, $60+40$, reading \"how many more\" as a request for the combined total.\n\n**Test Day Takeaway:** When a table supplies per-unit rates and the stem supplies totals, each total becomes one equation. Clear the easier equation of its common factor before substituting, and reread the final sentence — systems questions usually ask for a combination of $x$ and $y$, not for either one alone."
+}

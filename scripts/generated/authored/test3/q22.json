@@ -5,30 +5,31 @@
  "band": 3,
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
+ "type": "multiple-choice",
+ "passage": "The network of burrows that a colony of alpine marmots digs and maintains over many generations ______ dozens of entrances, sleeping chambers lined with dried grass, and a deep hibernation den where the whole family passes the winter.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "are arguing"
+   "text": "include"
   },
   {
    "id": "B",
-   "text": "argue"
+   "text": "are including"
   },
   {
    "id": "C",
-   "text": "has argued"
+   "text": "includes"
   },
   {
    "id": "D",
-   "text": "have argued"
+   "text": "have included"
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C, \"has argued.\" The subject is the singular \"forest ecologist Suzanne Simard.\" The long opening modifier — \"Drawing on a decade of large-scale field experiments in Douglas-fir stands across British Columbia\" — contains plural nouns (experiments, stands) that can lure a reader toward a plural verb, but it does not change the number of the subject. A singular subject takes a singular verb, and the present-perfect \"has argued\" fits a body of work that began earlier and still informs her claims. \"Have argued\" agrees with the wrong number, \"argue\" is plural and flattens the accumulated work into a single moment, and \"are arguing\" adds a progressive sense the cumulative evidence does not support.",
+ "explanation": "**Choice C is correct.** The subject is the singular \"network,\" so the verb must be the singular \"includes\" — everything between subject and verb is a modifying clause that does not change the subject's number.\n\n**The Full Solution:**\n- Find the head noun: \"The network... includes dozens of entrances...\"\n- The intervening clause \"that a colony of alpine marmots digs and maintains over many generations\" dangles plural nouns (marmots, generations) next to the verb, but none of them is the subject.\n\n**Why the other choices are wrong:**\n- A: \"Include\" agrees with the nearby plurals rather than with the true subject \"network.\"\n- B: \"Are including\" is plural and casts a permanent feature of the burrow system as a temporary ongoing action.\n- D: \"Have included\" is plural, and its perfect tense implies the den's features belong to the past when the sentence describes what the network contains now.",
  "_meta": {
-  "anchor": "Suzanne Simard — forest ecologist; mycorrhizal networks; subject-verb agreement across a long modifier"
- },
- "passage": "Drawing on a decade of large-scale field experiments in Douglas-fir stands across British Columbia, forest ecologist Suzanne Simard ______ that mature trees and seedlings of different species are linked through shared fungal networks and that older \"hub\" trees tend to transfer carbon to younger neighbors, especially when those neighbors are stressed.",
- "type": "multiple-choice"
+  "anchor": "Alpine marmot burrow network — agreement across a long relative clause",
+  "rule": "subject-verb agreement across an intervening relative clause"
+ }
 }

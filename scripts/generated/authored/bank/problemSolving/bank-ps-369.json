@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-369",
+  "question": "A business takes out a $3$-year loan at a simple annual interest rate of $5\\%$ and makes no payments during the term of the loan. If the amount borrowed is $\\$6{,}000$, what is the total amount owed, in dollars, at the end of the loan?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$900$"
+    },
+    {
+      "id": "B",
+      "text": "$6{,}300$"
+    },
+    {
+      "id": "C",
+      "text": "$6{,}900$"
+    },
+    {
+      "id": "D",
+      "text": "$7{,}500$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports only the interest accrued, not the total owed",
+    "B": "adds only $1$ year of interest instead of $3$",
+    "D": "uses $5$ years of interest, confusing the rate with the number of years"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Simple Interest**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Interest is $6000(0.05)(3) = 900$, so the total owed is $6000 + 900 = 6900$.\n\n**The Full Solution:**\nStep 1: The amount owed is the principal plus the accrued simple interest: $A = P + Prt$.\nStep 2: The interest is $6000(0.05)(3) = 300(3) = 900$ dollars.\nStep 3: The total owed is $6000 + 900 = 6900$ dollars. Check: $\\$300$ of interest per year for $3$ years is $\\$900$, and $\\$6{,}000 + \\$900 = \\$6{,}900$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($900$): reports only the interest accrued, not the total owed\n* Choice B ($6{,}300$): adds only $1$ year of interest instead of $3$\n* Choice D ($7{,}500$): uses $5$ years of interest, confusing the rate with the number of years\n\n**Test Day Takeaway:** Read the last line of the question: interest earned and total balance differ by the principal. One asks for $Prt$, the other for $P + Prt$."
+}

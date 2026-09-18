@@ -1,0 +1,29 @@
+{
+ "question": "A sensor adds $4$ to its input and then triples that sum before subtracting $1$. Which expression gives the sensor's output for an input of $x$?",
+ "hint": "Follow the operations in the order the sensor performs them.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x + 3$"
+  },
+  {
+   "id": "B",
+   "text": "$3x + 9$"
+  },
+  {
+   "id": "C",
+   "text": "$3x + 11$"
+  },
+  {
+   "id": "D",
+   "text": "$3x + 12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "triples only the input, then adds 4 and subtracts 1",
+  "B": "subtracts the 1 before tripling, giving 3(x + 3)",
+  "D": "triples the sum but never subtracts the 1"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** The output is $3(x + 4) - 1 = 3x + 12 - 1 = 3x + 11$.\n\n**The Full Solution:**\nStep 1: Adding $4$ to the input gives $x + 4$.\nStep 2: Tripling that sum gives $3(x + 4) = 3x + 12$.\nStep 3: Subtracting $1$ leaves $3x + 11$. Check with an input of $2$: $2 + 4 = 6$, $3(6) = 18$, $18 - 1 = 17$, and $3(2) + 11 = 17$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3x + 3$): triples only the input and then adds $4$ and subtracts $1$, so the $4$ is never tripled.\n* Choice B ($3x + 9$): subtracts the $1$ before tripling, computing $3(x + 3)$.\n* Choice D ($3x + 12$): stops after tripling and never subtracts the $1$.\n\n**Test Day Takeaway:** In a chain of operations the later step applies to everything produced so far, so keep the parentheses until the end."
+}

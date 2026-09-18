@@ -1,0 +1,60 @@
+{
+ "id": 6,
+ "question": "The bar graph shows the number of hours of sunshine recorded at a climate station during each of five consecutive months. June and July together account for what percent of the total number of sunshine hours recorded during these five months?",
+ "diagram": {
+  "type": "barChart",
+  "params": {
+   "data": [
+    {
+     "label": "Mar",
+     "value": 150
+    },
+    {
+     "label": "Apr",
+     "value": 200
+    },
+    {
+     "label": "May",
+     "value": 300
+    },
+    {
+     "label": "Jun",
+     "value": 250
+    },
+    {
+     "label": "Jul",
+     "value": 350
+    }
+   ],
+   "xAxisLabel": "Month",
+   "yAxisLabel": "Hours of sunshine",
+   "yMax": 400,
+   "yStep": 50
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$28\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$48\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$52\\%$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "uses the June bar alone, 250/1250 = 20%",
+  "B": "uses the July bar alone, 350/1250 = 28%",
+  "D": "gives the percent contributed by the other three months, the complement of 48%"
+ },
+ "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The five bars total $1{,}250$ hours, and June plus July is $250 + 350 = 600$ hours, so the share is $\\frac{600}{1{,}250} = 48\\%$.\n\n**The Full Solution:**\nStep 1: Read the five bar heights against the gridlines: $150$, $200$, $300$, $250$, and $350$ hours.\nStep 2: Find the whole and the part. The five-month total is $150 + 200 + 300 + 250 + 350 = 1{,}250$ hours, and the part in question is $250 + 350 = 600$ hours.\nStep 3: Divide and convert: $\\frac{600}{1{,}250} = 0.48 = 48\\%$. Check: $48\\%$ of $1{,}250$ is $600$, which matches the two bars ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($20\\%$): uses the June bar alone, $\\frac{250}{1{,}250} = 20\\%$, and ignores July.\n* Choice B ($28\\%$): uses the July bar alone, $\\frac{350}{1{,}250} = 28\\%$, and ignores June.\n* Choice D ($52\\%$): gives the share of the remaining three months, $\\frac{650}{1{,}250} = 52\\%$, the complement of the requested percent.\n\n**Test Day Takeaway:** When a question asks about two categories combined, add the parts before dividing; the denominator is still every bar in the display."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-105",
+  "question": "A landscaping crew planted oak, maple, and birch trees in a park. The number of maple trees planted was $4$ times the number of oak trees, and the number of birch trees planted was $9$ fewer than twice the number of oak trees. The crew planted $103$ trees in total. How many maple trees did the crew plant?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$16$"
+    },
+    {
+      "id": "B",
+      "text": "$23$"
+    },
+    {
+      "id": "C",
+      "text": "$39$"
+    },
+    {
+      "id": "D",
+      "text": "$64$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the oak count",
+    "B": "reports the birch count",
+    "C": "adds oak and birch counts"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Let $k$ be the number of oak trees: maples $= 4k$, birches $= 2k - 9$. Then $k + 4k + (2k - 9) = 103 \\Rightarrow 7k = 112 \\Rightarrow k = 16$, so there are $4(16) = 64$ maples.\n\n**The Full Solution:**\nStep 1: Define the variable as the quantity everything else is compared to: $k$ oak trees. Then maple $= 4k$ and birch $= 2k - 9$.\nStep 2: Total: $k + 4k + 2k - 9 = 103$, so $7k - 9 = 103$ and $7k = 112$, giving $k = 16$.\nStep 3: The question asks for maples: $4k = 64$. Check: $16 + 64 + (32 - 9) = 16 + 64 + 23 = 103$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($16$): reports the number of oak trees, the variable solved for, instead of the maples.\n* Choice B ($23$): reports the number of birch trees.\n* Choice C ($39$): adds the oak and birch counts, the two quantities not asked for.\n\n**Test Day Takeaway:** Let the variable be the base quantity the others are described from, write each count in terms of it, solve, and then reread the question to report the quantity actually requested."
+}

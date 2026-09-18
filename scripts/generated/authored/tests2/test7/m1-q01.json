@@ -1,0 +1,48 @@
+{
+ "id": 1,
+ "question": "For one performance, a concert hall filled 240 seats across the two seat types priced in the table and took in \\$6,240 in ticket revenue. How many of those seats were in the orchestra section?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Seat type",
+    "Price per ticket (dollars)"
+   ],
+   "rows": [
+    [
+     "Balcony",
+     "18"
+    ],
+    [
+     "Orchestra",
+     "30"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$80$"
+  },
+  {
+   "id": "B",
+   "text": "$120$"
+  },
+  {
+   "id": "C",
+   "text": "$160$"
+  },
+  {
+   "id": "D",
+   "text": "$208$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves the system correctly but reports the balcony count instead of the orchestra count",
+  "B": "splits the 240 seats evenly between the two prices instead of using the revenue equation",
+  "D": "divides the full \\$6,240 by the \\$30 orchestra price, ignoring the balcony revenue"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** If all $240$ seats sold at the \\$18 balcony price the hall would take in \\$4,320, and every seat moved to the orchestra adds \\$12. Since $6240 - 4320 = 1920$ and $1920 \\div 12 = 160$, there were $160$ orchestra seats.\n\n**The Full Solution:**\nStep 1: Let $b$ be the number of balcony seats and $r$ the number of orchestra seats. The seat count gives $b + r = 240$, and the table's prices give $18b + 30r = 6240$.\nStep 2: Substitute $b = 240 - r$ into the revenue equation: $18(240 - r) + 30r = 6240$, so $4320 + 12r = 6240$ and $12r = 1920$.\nStep 3: Divide by $12$ to get $r = 160$, so $b = 80$. Check both equations: $80 + 160 = 240$ and $18(80) + 30(160) = 1440 + 4800 = 6240$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($80$): this is $b$, the balcony count. The system is set up correctly and then the wrong variable is reported — label each variable before you solve.\n* Choice B ($120$): this splits $240$ in half, which would only be right if the two prices were equal; it never uses the \\$6,240 total, so it ignores half the given information.\n* Choice D ($208$): this is $6240 \\div 30$, the seat count if every dollar came from orchestra tickets. The balcony seats also contributed revenue, so this overcounts.\n\n**Test Day Takeaway:** A two-price total is always two equations — one counting items, one counting dollars. Write both before touching the arithmetic, and circle which variable the question actually asks for."
+}

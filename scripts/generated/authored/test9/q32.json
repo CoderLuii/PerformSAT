@@ -6,30 +6,19 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 2,
-  "passage": "The following text is adapted from Henry Adams's 1907 memoir \"The Education of Henry Adams.\" Adams, writing of himself in the third person, describes the great dynamos he saw at the Paris Exposition of 1900.\n\nTo Adams the dynamo became a symbol of infinity. As he grew accustomed to the great gallery of machines, he began to feel the forty-foot dynamos as a moral force, much as the early Christians had felt the Cross. The planet itself seemed less impressive, in its old-fashioned, deliberate, annual or daily revolution, than this huge wheel, revolving within arm's-length at some vertiginous speed, and barely murmuring. Before the end, one began to pray to it; inherited instinct taught the natural expression of man before silent and infinite force.",
+  "passage": "The following text is from Walt Whitman's poem \"I Hear America Singing,\" first published in 1860.\n\nI hear America singing, the varied carols I hear, / Those of mechanics, each one singing his as it should be blithe and strong, / The carpenter singing his as he measures his plank or beam, / The mason singing his as he makes ready for work, or leaves off work, / The boatman singing what belongs to him in his boat, the deckhand singing on the steamboat deck, / The shoemaker singing as he sits on his bench, the hatter singing as he stands.",
   "question": "Which choice best describes the overall structure of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Adams compares his early enthusiasm for the dynamo with his later disillusionment and concludes that the machine is less impressive than it first seemed."
-    },
-    {
-      "id": "B",
-      "text": "Adams describes the dynamo in mechanical terms and gradually shifts register, until his response has become indistinguishable from religious devotion."
-    },
-    {
-      "id": "C",
-      "text": "Adams describes the dynamo's effect on the engineers nearby and contrasts their measured reaction with the more emotional response of casual visitors."
-    },
-    {
-      "id": "D",
-      "text": "Adams catalogs the engineering principles by which the dynamo achieves its silent speed and concludes by ranking it against the other engines on display."
-    }
+    { "id": "A", "text": "The speaker narrates a single worker's day from the start of a task to its completion." },
+    { "id": "B", "text": "The speaker opens with a sweeping declaration and then develops it through a catalog of individual workers, each singing at a characteristic task." },
+    { "id": "C", "text": "The speaker contrasts the songs of skilled tradespeople with the silence of those who perform no labor." },
+    { "id": "D", "text": "The speaker poses a series of questions about the nature and dignity of labor and then answers each one with a concrete example drawn from a different trade." }
   ],
   "correctAnswer": "B",
-  "explanation": "Adams begins with the dynamo as a machine—the \"forty-foot\" wheel, its \"vertiginous speed\" and faint murmur—and the description gradually takes on religious language until he is praying before it as a \"moral force.\" That drift from mechanical to devotional is the structure in choice B. The passage shows no later disillusionment (A), says nothing of nearby engineers (C), and does not catalog engineering principles or rank machines (D).",
+  "explanation": "**Choice B is correct.** The first line makes the sweeping claim — \"I hear America singing, the varied carols I hear\" — and every subsequent line particularizes it: carpenter, mason, boatman, deckhand, shoemaker, hatter, each attached to a task.\n\n**The Full Solution:**\n- The opening line is general: a nation heard as many songs.\n- The remaining lines are structurally parallel entries in a list, each naming one worker and the work during which he sings.\n- General declaration elaborated by an accumulating catalog is precisely the structure B describes.\n\n**Why the other choices are wrong:**\n- A: No single figure is followed; the poem moves across many workers, giving each a single line, not a day's arc.\n- C: No silent figures appear anywhere — everyone named is singing.\n- D: The poem opens with a declaration, not a question; nothing in the text is interrogative.",
   "_meta": {
+    "anchor": "Walt Whitman — \"I Hear America Singing\" (1860); genuine public-domain excerpt, opening lines verbatim",
     "quoteVerify": true,
-    "source": "Henry Adams, The Education of Henry Adams (1907), \"The Dynamo and the Virgin\""
+    "source": "Walt Whitman, \"I Hear America Singing,\" Leaves of Grass (1860 edition)"
   }
 }

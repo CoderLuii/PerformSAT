@@ -1,0 +1,53 @@
+{
+ "id": 21,
+ "question": "A chemist models the yield $y$, in grams, of a reaction run at temperature $T$, in degrees Celsius, by $y = -0.4T^2 + 32T - 340$, and the table lists four measured yields that are consistent with this model. According to the model, what is the greatest yield, in grams, the reaction can produce?",
+ "questionTable": {
+  "headers": [
+   "Temperature (degrees Celsius)",
+   "Yield (grams)"
+  ],
+  "rows": [
+   [
+    "20",
+    "140"
+   ],
+   [
+    "30",
+    "260"
+   ],
+   [
+    "50",
+    "260"
+   ],
+   [
+    "60",
+    "140"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40$"
+  },
+  {
+   "id": "B",
+   "text": "$260$"
+  },
+  {
+   "id": "C",
+   "text": "$300$"
+  },
+  {
+   "id": "D",
+   "text": "$340$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the temperature 40 at which the maximum occurs instead of the yield there",
+  "B": "reports the largest yield listed in the table, but the table skips the temperature where the yield peaks",
+  "D": "reads the constant term 340 as the peak yield, ignoring its minus sign and its role in the model"
+ },
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The table is symmetric about $T = 40$, which is the axis of symmetry. Substituting gives $y = -0.4(1600) + 32(40) - 340 = -640 + 1280 - 340 = 300$ grams.\n\n**The Full Solution:**\nStep 1: The coefficient of $T^2$ is $-0.4$, which is negative, so the graph of the model is a downward parabola and its vertex gives the greatest yield.\nStep 2: Complete the square to reach vertex form: $y = -0.4(T^2 - 80T) - 340 = -0.4\\left[(T - 40)^2 - 1600\\right] - 340 = -0.4(T - 40)^2 + 640 - 340$, so $y = -0.4(T - 40)^2 + 300$.\nStep 3: The squared term is never negative, so $y$ is largest when $T = 40$, where $y = 300$ grams. Check against the table: $30$ and $50$ are each $10$ degrees from $40$ and both give $260$ grams, which is $0.4(10)^2 = 40$ grams below the peak ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($40$): this is the temperature at which the peak occurs, in degrees Celsius. The question asks for the yield at that temperature.\n* Choice B ($260$): this is the largest yield in the table, but the table lists no measurement at $40$ degrees. A table can miss the vertex entirely.\n* Choice D ($340$): the model's constant term is $-340$, the yield at $T = 0$, not a maximum. Every yield in the table is already larger than that.\n\n**Test Day Takeaway:** For a downward parabola, the maximum is the vertex's output — find the axis of symmetry (from $-\\frac{b}{2a}$ or from a symmetric pair of table values), then substitute to get the value itself."
+}

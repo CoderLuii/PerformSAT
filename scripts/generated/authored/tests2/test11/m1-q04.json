@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "question": "A distillation runs two identical passes of $x$ minutes each after $4$ minutes of heating, so the run lasts $2x + 4$ minutes. The two pass times for which the run differs from $50$ minutes by exactly $6$ satisfy $|2x - 46| = 6$. What is the greater of these two pass times?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20$"
+    },
+    {
+      "id": "B",
+      "text": "$23$"
+    },
+    {
+      "id": "C",
+      "text": "$26$"
+    },
+    {
+      "id": "D",
+      "text": "$52$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the lesser solution, from the branch 2x - 46 = -6",
+    "B": "solves 2x - 46 = 0, the pass time whose run is exactly 50 minutes",
+    "D": "stops at 2x = 52 and reports the doubled value instead of x"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** An absolute value of $6$ means the inside equals $6$ or $-6$, so $2x = 52$ or $2x = 40$, giving $x = 26$ or $x = 20$. The greater pass time is $26$ minutes.\n\n**The Full Solution:**\nStep 1: The equation $|2x - 46| = 6$ splits into $2x - 46 = 6$ and $2x - 46 = -6$.\nStep 2: The first branch gives $2x = 52$, so $x = 26$. The second gives $2x = 40$, so $x = 20$.\nStep 3: The greater of the two pass times is $26$ minutes. Check: two $26$-minute passes after $4$ minutes of heating make a run of $2(26) + 4 = 56$ minutes, and $56$ differs from $50$ by exactly $6$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): this is the other solution, from the branch $2x - 46 = -6$. It is a valid pass time, but the question asks for the greater one.\n* Choice B ($23$): this comes from setting $2x - 46 = 0$, the pass time that makes the run exactly $50$ minutes, which ignores the required difference of $6$.\n* Choice D ($52$): this stops one step early at $2x = 52$ and reports the doubled quantity rather than the pass time $x$.\n\n**Test Day Takeaway:** Split an absolute-value equation into its two branches, solve both, and then reread which of the two solutions the question wants."
+}

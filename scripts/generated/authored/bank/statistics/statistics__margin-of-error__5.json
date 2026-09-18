@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "A random sample of residents of a town with $12{,}000$ residents was surveyed. Based on the survey, the percentage of all residents who hold a library card was estimated to be $68\\%$, with an associated margin of error of $2.5$ percentage points. Which conclusion about the number of residents of the town who hold a library card is most appropriate?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It is plausible that between $7{,}860$ and $8{,}460$ residents hold a library card."
+    },
+    {
+      "id": "B",
+      "text": "It is plausible that fewer than $7{,}860$ residents hold a library card."
+    },
+    {
+      "id": "C",
+      "text": "It is plausible that more than $8{,}460$ residents hold a library card."
+    },
+    {
+      "id": "D",
+      "text": "Exactly $8{,}160$ residents hold a library card."
+    }
+  ],
+  "distractorNotes": {
+    "B": "names counts below the interval, which correspond to percentages the survey does not support.",
+    "C": "names counts above the interval, which correspond to percentages above $70.5\\%$.",
+    "D": "converts the point estimate to a count but reports it as exact, ignoring the margin of error entirely."
+  },
+  "correctAnswer": "A",
+  "hint": "Turn the two ends of the percentage interval into counts before choosing.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~50s):** Plausible percentages run from $65.5\\%$ to $70.5\\%$; applied to $12{,}000$ residents that is $7{,}860$ to $8{,}460$.\n\n**The Full Solution:**\nStep 1: The interval of plausible percentages is $68\\% \\pm 2.5\\%$, from $65.5\\%$ to $70.5\\%$.\nStep 2: Convert each end to a number of residents: $0.655(12{,}000) = 7{,}860$ and $0.705(12{,}000) = 8{,}460$.\nStep 3: So it is plausible that between $7{,}860$ and $8{,}460$ residents hold a library card. Check: the estimate itself, $0.68(12{,}000) = 8{,}160$, sits at the center of that interval. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: names counts below the interval, which correspond to percentages the survey does not support.\n* Choice C: names counts above the interval, which correspond to percentages above $70.5\\%$.\n* Choice D: converts the point estimate to a count but reports it as exact, ignoring the margin of error entirely.\n\n**Test Day Takeaway:** Convert both endpoints of the percentage interval before answering a count question; converting only the estimate throws away the margin of error."
+}

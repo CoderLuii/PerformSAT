@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "Of the $4{,}200$ students who registered for a district robotics competition, $r$ percent did not submit a project by the deadline. Of the students who did submit a project by the deadline, $40\\%$ submitted it during the first week. Which expression represents the number of students who submitted a project by the deadline but not during the first week?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$16.8r$"
+  },
+  {
+   "id": "B",
+   "text": "$16.8(100 - r)$"
+  },
+  {
+   "id": "C",
+   "text": "$25.2r$"
+  },
+  {
+   "id": "D",
+   "text": "$25.2(100 - r)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "makes both slips at once: uses r as the percent who submitted and keeps the 40% first-week group, giving 4200(r/100)(0.40) = 16.8r",
+  "B": "keeps the correct 100 - r but counts the 40% who submitted during the first week instead of the 60% who did not, giving 16.8(100 - r)",
+  "C": "uses the correct 60% but treats r as the percent who did submit rather than the percent who did not, giving 25.2r"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** Two complements stack: $(100 - r)$ percent submitted, and $60\\%$ of those missed the first week, so the count is $4{,}200 \\cdot \\frac{100 - r}{100} \\cdot 0.60 = 25.2(100 - r)$.\n\n**The Full Solution:**\nStep 1: If $r$ percent did **not** submit, then $100 - r$ percent did. The number who submitted is $4{,}200 \\cdot \\frac{100 - r}{100} = 42(100 - r)$.\nStep 2: Among those submitters, $40\\%$ turned the project in during the first week, so $100\\% - 40\\% = 60\\%$ did not. Take $60\\%$ of the Step 1 count: $0.60 \\cdot 42(100 - r) = 25.2(100 - r)$.\nStep 3: The expression is $25.2(100 - r)$. Check with a concrete value: if $r = 30$, then $70\\%$ of $4{,}200$, or $2{,}940$, submitted, and $60\\%$ of $2{,}940$ is $1{,}764$; the expression gives $25.2(100 - 30) = 25.2(70) = 1{,}764$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($16.8r$): takes $r$ percent of $4{,}200$ and then $40\\%$ of that, $4{,}200 \\cdot \\frac{r}{100} \\cdot 0.40 = 16.8r$. Both percentages are the ones the question does **not** ask about.\n* Choice B ($16.8(100 - r)$): starts the second stage from the $40\\%$ who did submit during the first week, giving $42(100 - r)(0.40) = 16.8(100 - r)$, the complement of what is wanted.\n* Choice C ($25.2r$): reads $r$ as the percent who submitted, giving $4{,}200 \\cdot \\frac{r}{100} \\cdot 0.60 = 25.2r$. The stem says $r$ percent did **not** submit.\n\n**Test Day Takeaway:** When a percent problem chains two stages, write each stage as a decimal multiplier and check which side of each \"not\" you are on before you multiply."
+}

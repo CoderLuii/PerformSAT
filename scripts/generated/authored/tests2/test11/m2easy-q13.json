@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "The energy a furnace uses per firing cycle rose from $65$ kilowatt-hours to $91$ kilowatt-hours after a larger crucible was installed in it. Which statement correctly compares the energy used per cycle before and after the change?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$91$ is $26\\%$ greater than $65$."
+  },
+  {
+   "id": "B",
+   "text": "$91$ is $29\\%$ greater than $65$."
+  },
+  {
+   "id": "C",
+   "text": "$91$ is $40\\%$ greater than $65$."
+  },
+  {
+   "id": "D",
+   "text": "$91$ is $140\\%$ greater than $65$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the raw difference of 26 kilowatt-hours as if it were a percent",
+  "B": "divides the 26-unit increase by the new amount, 91, instead of by the original 65",
+  "D": "reports the ratio 91/65 = 140% without subtracting the original 100%"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Percent Increase**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The rise is $26$ kilowatt-hours on a base of $65$, and $\\frac{26}{65} = 0.4$, so the new figure is $40\\%$ greater.\n\n**The Full Solution:**\nStep 1: Find the increase: $91 - 65 = 26$ kilowatt-hours.\nStep 2: Divide by the original amount: $\\frac{26}{65} = 0.40$.\nStep 3: Convert to a percent: $0.40 = 40\\%$. Check: $65 + 0.40(65) = 65 + 26 = 91$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($26\\%$): uses the difference itself as a percent; $26\\%$ of $65$ is only about $16.9$ kilowatt-hours.\n* Choice B ($29\\%$): divides $26$ by the new value $91$; percent increase is always measured against the starting value.\n* Choice D ($140\\%$): $\\frac{91}{65} = 1.40$ says $91$ is $140\\%$ OF $65$, which is $40\\%$ GREATER than $65$.\n\n**Test Day Takeaway:** \"Percent of\" and \"percent greater than\" differ by exactly $100\\%$ — decide which phrase the question uses before you divide."
+}

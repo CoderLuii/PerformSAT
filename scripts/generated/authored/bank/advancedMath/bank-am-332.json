@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-332",
+ "question": "A wetland study models the gap $g(x) = x^2 - 10x + 21$, in centimeters, between the waterline and a mangrove seedling's root collar $x$ days after planting. How many days pass between the two times the gap is zero?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~15s):** $x^2 - 10x + 21 = (x - 3)(x - 7)$, so the gap is zero on day $3$ and day $7$ — $4$ days apart.\n\n**The Full Solution:**\nStep 1: The gap is zero when $g(x) = 0$, so solve $x^2 - 10x + 21 = 0$.\nStep 2: Two numbers with product $21$ and sum $-10$ are $-3$ and $-7$, so the equation factors as $(x - 3)(x - 7) = 0$.\nStep 3: The zeros are $x = 3$ and $x = 7$, and $7 - 3 = 4$ days separate them. Check: $g(3) = 9 - 30 + 21 = 0$ and $g(7) = 49 - 70 + 21 = 0$ ✓\n\n**Common Mistakes:**\n* $2$ — the distance from the axis of symmetry $x = 5$ out to one zero, which is only half the separation.\n* $7$ — the later day itself rather than the number of days between the two.\n* $10$ — the sum of the two zeros, which is the opposite of the linear coefficient, not a separation.\n\n**Test Day Takeaway:** Factor first, then subtract the zeros; the separation is the difference between them, never one of them."
+}

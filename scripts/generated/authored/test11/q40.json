@@ -1,71 +1,70 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the shift from -10.3 permil in the Middle Preclassic to -8.9 permil in the Late Preclassic is the largest single jump in the table, marking the decisive turn toward maize-centered diets."
-    },
-    {
-      "id": "B",
-      "text": "sample sizes increased from 9 individuals in the Late Archaic to 33 individuals in the Late Preclassic, providing the strongest single piece of evidence that maize consumption rose across the full sequence."
-    },
-    {
-      "id": "C",
-      "text": "the Late Preclassic mean of -8.9 permil is the highest (least negative) value in the table, consistent with maize having become a dietary staple by that period."
-    },
-    {
-      "id": "D",
-      "text": "the shift from -15.4 permil in the Late Archaic to -12.8 permil in the Early Preclassic is a 2.6-permil increase, larger than the 2.5-permil shift from the Early to the Middle Preclassic and the 1.4-permil shift from the Middle to the Late Preclassic."
-    }
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the Bell System operated 5,800 manual exchanges in 1925, more than six times the number of dial exchanges it operated that year."
+  },
+  {
+   "id": "B",
+   "text": "the number of dial exchanges grew in every ten-year interval shown in the table."
+  },
+  {
+   "id": "C",
+   "text": "by 1955 the Bell System still operated 2,100 manual exchanges, three decades after the figures in the table begin."
+  },
+  {
+   "id": "D",
+   "text": "dial exchanges did not outnumber manual ones until between 1935 and 1945, and thousands of manual exchanges remained in 1955."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** \"Gradual rather than abrupt\" is a claim about the whole timeline, and D reads the whole table: the crossover took until the 1935-1945 interval, and manual switching survived in the thousands a decade after that.\n\n**The Full Solution:**\n- The conclusion needs two supports: the changeover took a long time to tip, and the old system persisted alongside the new.\n- The table's crossover sits between 1935 (4,900 manual vs. 2,300 dial) and 1945 (3,900 vs. 4,100) — decades into the conversion; and 1955 still shows 2,100 manual exchanges.\n- D cites both facts, tracking the conclusion exactly.\n\n**Why the other choices are wrong:**\n- A: A snapshot of 1925 shows where the conversion began, not how gradually it proceeded.\n- B: Steady dial growth is compatible with an abrupt conversion; without the manual-side figures it cannot establish gradualness.\n- C: Manual persistence in 1955 is half the story — it omits how late the systems reached parity.",
+ "passage": "The switch from manual to dial telephone service did not happen at a stroke. Historians studying the Bell System's conversion emphasize that the two switching technologies ran side by side for decades: dial exchanges spread steadily, but subscriber numbers grew so quickly that manually operated exchanges remained part of daily service long after the first dial offices opened. The historians conclude that the conversion was gradual rather than abrupt because ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Bell System local exchanges by switching type, selected years",
+  "headers": [
+   "Year",
+   "Manual exchanges",
+   "Dial exchanges"
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The claim compares intervals: the biggest single step toward maize-centered diets came at the start of the transition rather than later, so the evidence must compare each period-to-period change in delta-13C. Choice D does this: the Late Archaic to Early Preclassic shift is +2.6 permil, larger than the +2.5 of the next interval and the +1.4 of the last. Choice A points to the highest (least negative) value at the end of the sequence, which shows maize was a staple by then but not where the largest jump fell. Choice B substitutes the rising sample-size column for the isotope column, and sample size does not track diet. Choice C calls the final 1.4-permil shift the largest jump when it is in fact the smallest of the three.",
-  "passage": "Stable carbon isotope ratios (delta-13C) in human bone collagen rise as a person's diet incorporates more maize, a tropical grass whose photosynthetic pathway leaves a distinctive carbon signature. Reporting on cemetery samples from four Maya periods, Kennett and colleagues (2020) argue that the biggest single step toward maize-centered diets in the Maya lowlands occurred at the very beginning of the recorded transition rather than later in the sequence, because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Mean delta-13C values from human bone collagen at Maya sites by period (Kennett et al., 2020, Science Advances)",
-    "headers": [
-      "Period",
-      "Approximate dates",
-      "Mean delta-13C (permil)",
-      "n (individuals)"
-    ],
-    "rows": [
-      [
-        "Late Archaic",
-        "3000-1000 BCE",
-        "-15.4",
-        "9"
-      ],
-      [
-        "Early Preclassic",
-        "1000-700 BCE",
-        "-12.8",
-        "12"
-      ],
-      [
-        "Middle Preclassic",
-        "700-400 BCE",
-        "-10.3",
-        "21"
-      ],
-      [
-        "Late Preclassic",
-        "400 BCE-250 CE",
-        "-8.9",
-        "33"
-      ]
-    ]
-  },
-  "_meta": {
-    "anchor": "Kennett et al. (2020): delta-13C and the rise of maize in the Maya lowlands",
-    "dataset": "qd-017"
-  },
-  "id": 1140,
-  "module": 2
+  "rows": [
+   [
+    "1925",
+    "5,800",
+    "900"
+   ],
+   [
+    "1935",
+    "4,900",
+    "2,300"
+   ],
+   [
+    "1945",
+    "3,900",
+    "4,100"
+   ],
+   [
+    "1955",
+    "2,100",
+    "6,600"
+   ]
+  ]
+ },
+ "_meta": {
+  "anchor": "telephone switchboard operators — manual-to-dial conversion timeline",
+  "distractors": {
+   "A": "single-year snapshot",
+   "B": "one-sided trend, gradualness unestablished",
+   "C": "persistence without the crossover"
+  }
+ },
+ "id": 1140,
+ "module": 2
 }

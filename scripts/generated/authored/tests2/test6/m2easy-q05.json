@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "question": "A regatta scorer uses the system $3x + 4y = 47$ and $5x - 2y = 9$, where $x$ and $y$ are the point values of a heat win and a lane bonus. Which system has the same solution as this one?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3x + 4y = 47$ and $10x - 4y = 9$"
+    },
+    {
+      "id": "B",
+      "text": "$3x + 4y = 47$ and $10x - 4y = 18$"
+    },
+    {
+      "id": "C",
+      "text": "$3x + 4y = 47$ and $10x - 2y = 18$"
+    },
+    {
+      "id": "D",
+      "text": "$6x + 4y = 94$ and $5x - 2y = 9$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "doubles the left side of the second equation but leaves its constant at 9",
+    "C": "doubles the x-term and the constant but leaves the y-term at -2y",
+    "D": "doubles the x-term and the constant of the first equation but leaves 4y unchanged"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Multiplying an entire equation by $2$ never moves its solutions. Doubling every term of $5x - 2y = 9$ gives $10x - 4y = 18$, paired with the untouched first equation.\n\n**The Full Solution:**\nStep 1: A system keeps its solution when one equation is replaced by a nonzero multiple of itself — every term, including the constant, must be scaled.\nStep 2: Scale the second equation by $2$: $2(5x) - 2(2y) = 2(9)$, which is $10x - 4y = 18$.\nStep 3: Verify with the actual solution. Solving the original system gives $x = 5$ and $y = 8$, since $3(5) + 4(8) = 47$ and $5(5) - 2(8) = 9$. Testing choice B: $10(5) - 4(8) = 50 - 32 = 18$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($10x - 4y = 9$): doubles only the left side and leaves the constant at $9$. At $(5, 8)$ the left side is $18$, not $9$, so the original solution no longer works.\n* Choice C ($10x - 2y = 18$): doubles the $x$-term and the constant but leaves $-2y$ alone. At $(5, 8)$ this gives $50 - 16 = 34$, not $18$.\n* Choice D ($6x + 4y = 94$): doubles the $x$-term and the constant of the first equation but leaves $4y$ unchanged. At $(5, 8)$ this gives $30 + 32 = 62$, not $94$.\n\n**Test Day Takeaway:** Equivalent means every single term scaled by the same factor. Partial scaling is the trap, and one substitution of the original solution exposes it instantly."
+}

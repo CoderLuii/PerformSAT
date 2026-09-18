@@ -1,0 +1,41 @@
+{
+  "id": 8,
+  "question": "The parabola shown in the $xy$-plane is the graph of $y=f(x)$. If $g(x)=f(x+6)+5$, what are the coordinates of the lowest point of the graph of $y=g(x)$?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        2,
+        -7
+      ],
+      "a": 1,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-4,-12)$"
+    },
+    {
+      "id": "B",
+      "text": "$(-4,-2)$"
+    },
+    {
+      "id": "C",
+      "text": "$(8,-2)$"
+    },
+    {
+      "id": "D",
+      "text": "$(8,-12)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the outside constant",
+    "C": "shifts right instead of left",
+    "D": "reverses both constants"
+  },
+  "correctAnswer": "B",
+  "hint": "Locate the vertex on the figure first; the two constants then act on separate coordinates.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** The vertex shown is $(2,-7)$; $x+6$ moves it $6$ left and $+5$ lifts it $5$, giving $(-4,-2)$.\n\n**The Full Solution:**\nStep 1: The parabola opens upward with its lowest point at $(2,-7)$, so $f(2)=-7$ is the minimum value of $f$.\nStep 2: Inside the function, $x+6$ shifts the graph $6$ units left: $2-6=-4$.\nStep 3: Outside, $+5$ raises every output: $-7+5=-2$. The lowest point of $g$ is $(-4,-2)$. Check: $g(-4)=f(-4+6)+5=f(2)+5=-7+5=-2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-4,-12)$): subtracts $5$ from the minimum instead of adding it.\n* Choice C ($(8,-2)$): shifts right; a $+6$ inside the function moves the graph left.\n* Choice D ($(8,-12)$): reverses the direction of both constants.\n\n**Test Day Takeaway:** Split the work: inside constants move $x$ against their sign, outside constants move $y$ with their sign."
+}

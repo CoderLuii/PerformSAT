@@ -1,0 +1,18 @@
+{
+ "id": "bank-geo-264",
+ "question": "The figure shows two intersecting lines. The angles marked $124°$ and $y°$ are adjacent, and together they form a straight line. What is the value of $y$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "",
+    "124°",
+    "y°",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "56",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**The correct answer is $56$.**\n\n**The Fast Way (~5s):** Adjacent angles on a line are supplementary: $y = 180 - 124 = 56$.\n\n**The Full Solution:**\nStep 1: The two marked angles share a ray and their outer rays form a straight line, so they are a linear pair.\nStep 2: A linear pair sums to $180^\\circ$: $124 + y = 180$.\nStep 3: $y = 56$. Check: the angle vertical to the $124^\\circ$ angle also measures $124^\\circ$, and the four angles total $124 + 56 + 124 + 56 = 360$.\n\n**Common Mistakes:** Reporting $124$ by treating the marked angles as a vertical pair rather than an adjacent pair; or reporting $236$ by subtracting from $360$ instead of $180$.\n\n**Test Day Takeaway:** At a crossing, only two numbers exist. Find the pair that lies on a straight line and subtract from $180^\\circ$."
+}

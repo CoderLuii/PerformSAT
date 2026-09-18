@@ -27,9 +27,9 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { useFeatureFlag } from './useFeatureFlag';
-import { deriveEntitlementAccess } from '../services/selectors/entitlementAccess';
+import { deriveEntitlementAccess, hasSubscriptionEvidence } from '../services/selectors/entitlementAccess';
 import { ensureEntitlement, redeemPromoCode } from '../services/billingService';
-import { readPendingPromoCode, clearPendingPromoCode } from '../services/pendingPromo';
+import { readPendingPromoCode, clearPendingPromoCode, markPendingPromoFailed } from '../services/pendingPromo';
 import { makeLogger } from '../utils/log';
 
 const log = makeLogger('billing');
@@ -112,12 +112,15 @@ export function useEntitlement(user) {
             // server writes the doc directly as "comped" (permanent free, no
             // card, no Stripe subscription), so the student bypasses the paywall
             // entirely — no "none" flash. On any failure (invalid/exhausted/
-            // transient) drop the code and fall back to the no-access seed; the
-            // student can still re-enter it on the paywall's promo field.
+            // transient) fall back to the no-access seed, and hand the code to
+            // the paywall (markPendingPromoFailed) so the wall can EXPLAIN and
+            // prefill it for retry — a silent drop left students who were told
+            // "full access free, no card required" staring at a paywall.
             redeemPromoCode(pendingPromo)
               .then(() => clearPendingPromoCode())
               .catch((err) => {
                 clearPendingPromoCode();
+                markPendingPromoFailed(pendingPromo);
                 log.error('onboarding promo redeem failed', err);
                 seedNoAccess();
               });
@@ -149,7 +152,9 @@ export function useEntitlement(user) {
       loading,
       flagEnabled: true,
       ...derived,
-      hasBillingAccount: !!docData?.stripeCustomerId,
+      // "Has billing" must mean a real (current or past) subscription, NOT
+      // just a pre-created Checkout customer — see hasSubscriptionEvidence.
+      hasBillingAccount: hasSubscriptionEvidence(docData),
       // Whether the server-write-only entitlement doc has actually been read
       // yet. The hard-gate must NOT wall on a not-yet-seeded (null) doc — a
       // grandfathered "comped" user would otherwise flash the paywall in the

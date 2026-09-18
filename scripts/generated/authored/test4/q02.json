@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
+  "module": 1,
+  "passage": "In many medieval workshops, the scribe who copied a book's main text worked only in dark ink, leaving gaps at chapter openings and skipping the headings entirely. Filling that blank space was a separate craft: a specialist called a rubricator was expected to ______ the missing initials and headings in red, completing pages the scribe had deliberately left unfinished.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "propose"
+      "text": "supply"
     },
     {
       "id": "B",
-      "text": "document"
+      "text": "revise"
     },
     {
       "id": "C",
-      "text": "dismiss"
+      "text": "translate"
     },
     {
       "id": "D",
-      "text": "inherit"
+      "text": "withhold"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The cells described divide so rarely that no familiar metabolism could keep them alive, so researchers have had to put forward — to \"propose\" — biochemical pathways unlike those at the surface. \"Document\" is tempting because scientists do record pathways, but the passage describes pathways that have to be hypothesized rather than directly observed; \"dismiss\" runs the wrong way, and \"inherit\" does not describe what a researcher does with a pathway.",
-  "passage": "In sediment far beneath the ocean floor, microbiologists have recovered cells that may divide only once in hundreds of years. Because no familiar metabolism could sustain life at such a pace, researchers studying these communities have had to ______ biochemical pathways markedly different from those of microbes at the surface, where energy is comparatively abundant.",
+  "explanation": "**Choice A is correct.** The rubricator's job was to furnish what the scribe deliberately left out, and \"supply\" means precisely to provide something missing.\n\n**The Full Solution:**\n- The scribe leaves gaps: no initials, no headings.\n- The rubricator \"completes pages the scribe had deliberately left unfinished,\" so the blank must mean adding the absent elements.\n- \"Supply the missing initials and headings\" captures that act of provision exactly.\n\n**Why the other choices are wrong:**\n- B: \"Revise\" means to alter something already written, but the initials and headings do not yet exist on the page.\n- C: \"Translate\" means to render text in another language, which nothing in the text suggests.\n- D: \"Withhold\" means to keep back, the opposite of completing the unfinished pages.",
   "_meta": {
-    "anchor": "deep-sea subsurface microbiology — ultra-low-energy metabolism"
-  },
-  "module": 1
+    "anchor": "medieval scriptorium division of labor — the rubricator"
+  }
 }

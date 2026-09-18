@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "An engineer models a server room's cooling load $L$, in kilowatts, as $L(n) = 145 + 0.8n$, where $n$ is the number of thousands of requests per second the room's servers process during a monitoring window. Which statement best describes the meaning of $0.8$ in this model?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The cooling load is $0.8$ kilowatt when the servers process no requests."
+  },
+  {
+   "id": "B",
+   "text": "The cooling load increases by $0.8$ kilowatt for each additional request per second."
+  },
+  {
+   "id": "C",
+   "text": "The servers process $0.8$ thousand additional requests per second for each additional kilowatt of cooling load."
+  },
+  {
+   "id": "D",
+   "text": "The cooling load increases by $0.8$ kilowatt for each additional thousand requests per second."
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads 0.8 as the starting value, which is the constant 145",
+  "B": "ignores that n counts thousands of requests, so the rate is 0.8 kW per thousand, not per request",
+  "C": "inverts the rate, describing requests per kilowatt instead of kilowatts per thousand requests"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The slope is kilowatts per unit of $n$, and one unit of $n$ is one thousand requests per second.\n\n**The Full Solution:**\nStep 1: In $L(n) = 145 + 0.8n$ the number $0.8$ multiplies $n$, so it is the slope: the change in $L$ per one-unit change in $n$.\nStep 2: The units follow the variables. $L$ is measured in kilowatts and $n$ in thousands of requests per second, so $0.8$ is $0.8$ kilowatt per thousand requests per second.\nStep 3: Test it: $L(10) = 145 + 8 = 153$ and $L(11) = 145 + 8.8 = 153.8$, a rise of $0.8$ kilowatt when $n$ goes up by $1$, that is, by one thousand requests per second ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: describes a starting value, but the load when $n = 0$ is $L(0) = 145$ kilowatts, not $0.8$.\n* Choice B: attaches the rate to a single request; since $n$ counts thousands, the per-request rate is $0.8 \\div 1000 = 0.0008$ kilowatt.\n* Choice C: reverses the ratio and would make the rate $\\frac{1}{0.8} = 1.25$ thousand requests per second per kilowatt.\n\n**Test Day Takeaway:** Read the slope's units straight off the variable definitions — output unit per input unit — and check whether the input is counted in singles, thousands, or some other block."
+}

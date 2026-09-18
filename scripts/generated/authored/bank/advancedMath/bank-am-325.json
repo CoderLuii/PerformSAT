@@ -1,0 +1,52 @@
+{
+ "id": "bank-am-325",
+ "question": "Lichen patches on a boulder are modeled by the exponential function $P$, three of whose values appear in the table, where $t$ counts days since the first census. At what value of $t$ does the model predict $81^{3}$ patches?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Day t",
+    "Patches P(t)"
+   ],
+   "rows": [
+    [
+     "0",
+     "3"
+    ],
+    [
+     "2",
+     "27"
+    ],
+    [
+     "4",
+     "243"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$11$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$13$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reads $81^{3}$ as $3^{4+3} = 3^{7}$, solving $t + 1 = 7$",
+  "C": "ignores the three patches already present at $t = 0$, setting $t$ equal to the exponent $12$",
+  "D": "adds $1$ instead of subtracting when isolating $t$ in $t + 1 = 12$"
+ },
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The table gives $P(t) = 3^{t+1}$, and $81^{3} = 3^{12}$, so $t + 1 = 12$ and $t = 11$.\n\n**The Full Solution:**\nStep 1: Each listed value is a power of $3$: $3 = 3^{1}$ at $t = 0$, $27 = 3^{3}$ at $t = 2$, and $243 = 3^{5}$ at $t = 4$.\nStep 2: The exponent runs one ahead of $t$, so $P(t) = 3^{t+1}$. Also $81 = 3^{4}$, so $81^{3} = 3^{12}$.\nStep 3: Equal bases force $t + 1 = 12$, so $t = 11$. Check: $P(11) = 3^{12} = 531{,}441$, which equals $81^{3}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): adds the exponents in $81^{3}$ instead of multiplying, turning $3^{12}$ into $3^{7}$.\n* Choice C ($12$): matches $t$ directly to the exponent, missing the shift the table shows at $t = 0$.\n* Choice D ($13$): solves $t + 1 = 12$ in the wrong direction.\n\n**Test Day Takeaway:** A power of a power multiplies exponents — convert both the model and the target to one base before comparing."
+}

@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 1,
- "passage": "The waves from a distant earthquake travel through the entire planet before reaching a seismograph, and their paths bend wherever the material they pass through changes. Studying anomalies in how these waves arrived, ______ that Earth's core is not a single molten mass but contains a solid inner sphere.",
+ "passage": "Molten glass does not snap from liquid to solid at a single temperature; it stiffens gradually as it cools, passing through a range in which it can be gathered, blown, and shaped. Timing is therefore everything in a glass shop. Removed from the furnace too soon, ______",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "it was concluded by Inge Lehmann"
+   "text": "the blower finds the gather too fluid to control."
   },
   {
    "id": "B",
-   "text": "there was a conclusion reached"
+   "text": "there is too much fluidity in the gather for controlled shaping."
   },
   {
    "id": "C",
-   "text": "the conclusion of Inge Lehmann was"
+   "text": "controlling the gather becomes all but impossible."
   },
   {
    "id": "D",
-   "text": "the seismologist Inge Lehmann concluded"
+   "text": "the gather is too fluid to hold a shape."
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The opening modifier \"Studying anomalies in how these waves arrived\" must attach to the person doing the studying, so the subject that follows the comma has to name that person. \"The seismologist Inge Lehmann concluded\" supplies a human subject who can perform the studying. Choices A, B, and C all begin with \"it,\" \"there,\" or \"the conclusion\" as the subject, none of which can logically have been studying the waves, so each leaves the modifier dangling."
+ "explanation": "**Choice D is correct.** The opening modifier \"Removed from the furnace too soon\" must describe the subject that immediately follows it, and only \"the gather\" is what gets removed from the furnace: \"Removed from the furnace too soon, the gather is too fluid to hold a shape.\"\n\n**The Full Solution:**\n- A participial phrase at the start of a sentence attaches to the subject of the main clause.\n- The thing removed from the furnace is the gather of glass, so \"the gather\" must stand in the subject position, as it does in D.\n\n**Why the other choices are wrong:**\n- A: It makes \"the blower\" the subject, so the modifier absurdly says the blower was removed from the furnace too soon.\n- B: The expletive \"there\" gives the modifier nothing sensible to attach to, leaving it dangling.\n- C: It makes the gerund phrase \"controlling the gather\" the subject, which was not removed from the furnace either.",
+ "_meta": {
+  "rule": "introductory participial modifier must attach to the logical subject",
+  "distractors": {
+   "A": "dangling modifier (wrong agent as subject)",
+   "B": "expletive subject leaves modifier dangling",
+   "C": "gerund subject leaves modifier dangling"
+  }
+ }
 }

@@ -1,0 +1,32 @@
+{
+ "id": 6,
+ "question": "In the right triangular bracket shown, angle $E$ is the right angle and $\\tan F = \\frac{12}{5}$. The bracket is cut from steel plate and covers $270$ square centimeters of it. How many centimeters of edging are needed to run along all three of its edges?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     12,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     5
+    ]
+   ],
+   "labels": [
+    "D",
+    "E",
+    "F"
+   ],
+   "rightAngleVertex": 1,
+   "showRightAngle": true
+  }
+ },
+ "correctAnswer": "90",
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**The correct answer is $90$.**\n\n**The Fast Way (~45s):** $\\tan F = \\frac{12}{5}$ makes the legs $12k$ and $5k$, so the area is $30k^2 = 270$ and $k = 3$. The sides are then $36$, $15$, and $39$, for $90$ centimeters of edging.\n\n**The Full Solution:**\nStep 1: With the right angle at $E$, $\\tan F = \\frac{DE}{EF} = \\frac{12}{5}$, so write $DE = 12k$ and $EF = 5k$ for some positive $k$.\nStep 2: The legs are the base and height: $\\frac{1}{2}(12k)(5k) = 30k^2 = 270$, so $k^2 = 9$ and $k = 3$. That gives $DE = 36$ and $EF = 15$.\nStep 3: The hypotenuse is $DF = \\sqrt{36^2 + 15^2} = \\sqrt{1296 + 225} = \\sqrt{1521} = 39$, so the perimeter is $36 + 15 + 39 = 90$. Check the area: $\\frac{1}{2}(36)(15) = 270$ ✓\n\n**Common Mistakes:**\n* $30$: treats $12$ and $5$ as the actual leg lengths and adds $5 + 12 + 13$, ignoring the given area.\n* $270$: solves $30k = 270$ instead of $30k^2 = 270$, getting $k = 9$ and sides $108$, $45$, $117$.\n* $102$: adds the legs to get the hypotenuse ($36 + 15 = 51$) instead of using the Pythagorean theorem.\n\n**Test Day Takeaway:** A tangent ratio fixes the shape, not the size — introduce a scale factor $k$, and remember that area carries $k^2$ while perimeter carries $k$."
+}

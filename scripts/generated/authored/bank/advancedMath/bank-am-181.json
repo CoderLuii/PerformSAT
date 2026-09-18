@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-181",
+  "question": "A digital archive currently holds $6$ terabytes of data, and the amount of data it holds triples each year. The function $A$ gives the amount of data, in terabytes, the archive holds $d$ years from now. What is the value of $A(3)$?",
+  "correctAnswer": "162",
+  "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**The correct answer is $162$.**\n\n**The Fast Way (~15s):** Tripling three times multiplies the starting amount by $3^3 = 27$, and $6 \\cdot 27 = 162$.\n\n**The Full Solution:**\nStep 1: \"Triples each year\" means the growth factor is $3$ per year, so $A(d) = 6 \\cdot 3^d$.\nStep 2: Substituting $d = 3$ gives $A(3) = 6 \\cdot 3^3 = 6 \\cdot 27$.\nStep 3: $6 \\cdot 27 = 162$ terabytes. Check year by year: $6 \\to 18 \\to 54 \\to 162$. $\\checkmark$\n\n**Common Mistakes:** Tripling only once and answering $18$, or stopping a year early at $54$. Adding $3$ terabytes each year gives $6 + 3(3) = 15$, which models constant growth instead of tripling.\n\n**Test Day Takeaway:** A phrase like \"triples each year\" names a growth FACTOR, so the number belongs in the base of an exponent, never as a term added each year."
+}

@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-224",
+  "question": "The number of registered users of a scheduling app is an exponential function of time. The table gives the number of registered users $t$ years from now for three values of $t$. How many registered users did the app have two years ago?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "t (years from now)",
+        "Registered users"
+      ],
+      "rows": [
+        [
+          "0",
+          "200"
+        ],
+        [
+          "1",
+          "400"
+        ],
+        [
+          "2",
+          "800"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$25$"
+    },
+    {
+      "id": "B",
+      "text": "$50$"
+    },
+    {
+      "id": "C",
+      "text": "$100$"
+    },
+    {
+      "id": "D",
+      "text": "$400$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "steps back three years instead of two",
+    "C": "steps back only one year",
+    "D": "moves one year forward instead of two years back"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse Exponential Back in Time**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The table doubles each year, so two years back halves twice: $200 \\to 100 \\to 50$.\n\n**The Full Solution:**\nStep 1: From the table, $\\dfrac{400}{200} = 2$ and $\\dfrac{800}{400} = 2$, so the number of users doubles each year and the model is $U(t) = 200(2)^t$.\nStep 2: Two years ago is $t = -2$, so $U(-2) = 200(2)^{-2} = \\dfrac{200}{4}$.\nStep 3: $U(-2) = 50$ users. Check forward: $50 \\to 100 \\to 200$, matching the $t = 0$ row. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($25$): divides by $2$ three times, reaching three years ago.\n* Choice C ($100$): divides by $2$ once, reaching one year ago.\n* Choice D ($400$): reads the $t = 1$ row, moving forward in time.\n\n**Test Day Takeaway:** A negative input is just the model run backward — divide by the growth factor once for each unit before $t = 0$."
+}

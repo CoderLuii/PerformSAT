@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "In a book collection, the number of hardcover books is $\\frac{3}{5}$ of the number of paperback books. The number of hardcover books is $p\\%$ of the total number of books in the collection. What is the value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$25$"
+    },
+    {
+      "id": "B",
+      "text": "$37.5$"
+    },
+    {
+      "id": "C",
+      "text": "$60$"
+    },
+    {
+      "id": "D",
+      "text": "$62.5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the difference share 2/8",
+    "C": "treats 3/5 as the share of the total",
+    "D": "reports the paperback share"
+  },
+  "correctAnswer": "B",
+  "hint": "Choose a convenient number of paperback books so the fraction comes out whole, then build the total.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** Take $5$ paperbacks and $3$ hardcovers; the total is $8$, and $\\frac{3}{8} = 37.5\\%$.\n\n**The Full Solution:**\nStep 1: Let the number of paperback books be $5k$ for some positive integer $k$. Then the number of hardcover books is $\\frac{3}{5}(5k) = 3k$.\nStep 2: The total number of books is $5k + 3k = 8k$, so the hardcover share of the total is $\\frac{3k}{8k} = \\frac{3}{8}$.\nStep 3: As a percent, $\\frac{3}{8} = 0.375 = 37.5\\%$, so $p = 37.5$. Check with $k = 10$: $50$ paperbacks and $30$ hardcovers out of $80$ books, and $\\frac{30}{80} = 37.5\\%$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($25$): reports $\\frac{2}{8}$, the share by which the paperbacks outnumber the hardcovers, instead of the hardcover share.\n* Choice C ($60$): treats $\\frac{3}{5}$ itself as the share of the TOTAL, but it is the share of the paperbacks only.\n* Choice D ($62.5$): reports the paperback share $\\frac{5}{8}$ of the total rather than the hardcover share.\n\n**Test Day Takeaway:** When one group is described as a fraction of ANOTHER group, the total is the sum of the parts — never the denominator of the given fraction."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-348",
+  "question": "A freight elevator can carry at most $1{,}800$ pounds. Each crate of tile weighs $45$ pounds, and each crate of fixtures weighs $28$ pounds. If exactly $20$ crates of fixtures are loaded, what is the greatest number of crates of tile that can also be loaded?",
+  "correctAnswer": "27",
+  "explanation": "**SAT Pattern: Inequality Word Problem (Floor)**\n\n**The correct answer is $27$.**\n\n**The Fast Way (~20s):** Fixtures use $20 \\times 28 = 560$ pounds, leaving $1{,}240$. Then $1{,}240 \\div 45 = 27.56$, so at most $27$ crates of tile.\n\n**The Full Solution:**\nStep 1: Let $t$ be the number of crates of tile. Total weight must satisfy $45t + 28(20) \\leq 1{,}800$.\nStep 2: Simplify: $45t + 560 \\leq 1{,}800$, so $45t \\leq 1{,}240$.\nStep 3: $t \\leq 27.56$; since $t$ is a whole number of crates, the greatest value is $27$.\nCheck: $45(27) + 560 = 1{,}215 + 560 = 1{,}775 \\leq 1{,}800$, while $28$ crates would give $1{,}820$, over the limit. $\\checkmark$\n\n**Common Mistakes:** Rounding $27.56$ up to $28$; dividing $1{,}800$ by $45$ without removing the fixtures' weight (giving $40$); or subtracting $28$ once instead of $20 \\times 28$.\n\n**Test Day Takeaway:** Subtract the fixed load first, divide by the per-unit weight, and round DOWN; a capacity is a ceiling you may not cross."
+}

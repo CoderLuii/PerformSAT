@@ -1,0 +1,90 @@
+{
+  "question": "For each of $10$ prairie sites, the scatterplot pairs the number of milkweed patches with the number of monarch butterflies counted there. A line modeling the data is given by $y = 4.5x + 12$. In this model, what does the number $4.5$ represent?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The estimated number of monarch butterflies increases by $4.5$ for each additional milkweed patch."
+    },
+    {
+      "id": "B",
+      "text": "The estimated number of monarch butterflies increases by $12$ for each additional milkweed patch."
+    },
+    {
+      "id": "C",
+      "text": "The estimated number of milkweed patches increases by $4.5$ for each additional monarch butterfly."
+    },
+    {
+      "id": "D",
+      "text": "The estimated number of monarch butterflies at a site with no milkweed patches is $4.5$."
+    }
+  ],
+  "correctAnswer": "A",
+  "distractorNotes": {
+    "B": "uses the constant $12$, the value at $x = 0$, as the rate of change",
+    "C": "reverses the roles of $x$ and $y$, describing patches per butterfly",
+    "D": "reads the slope $4.5$ as the starting value instead of the rate"
+  },
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** In $y = 4.5x + 12$, the coefficient $4.5$ is the change in $y$ per one-unit change in $x$: monarchs per additional milkweed patch.\n\n**The Full Solution:**\n\nStep 1: Identify the variables from the scatterplot: $x$ is the number of milkweed patches and $y$ is the number of monarch butterflies counted.\n\nStep 2: In slope-intercept form, the slope is the rate of change of $y$ with respect to $x$, so $4.5$ counts butterflies per patch.\n\nStep 3: Check the direction: at $x = 4$ the model gives $30$ and at $x = 5$ it gives $34.5$, an increase of $4.5$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: uses $12$, the model's value at $x = 0$, as if it were the rate.\n\n* Choice C: states the rate with the variables swapped, which would be patches per butterfly.\n\n* Choice D: treats the slope as the value of $y$ when $x = 0$, which is $12$, not $4.5$.\n\n**Test Day Takeaway:** The slope answers the question how much does $y$ change per one unit of $x$, and the units of the answer must be $y$-units per $x$-unit.",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          18
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          3,
+          27
+        ],
+        [
+          4,
+          28
+        ],
+        [
+          5,
+          36
+        ],
+        [
+          6,
+          37
+        ],
+        [
+          7,
+          45
+        ],
+        [
+          8,
+          46
+        ],
+        [
+          10,
+          58
+        ],
+        [
+          12,
+          66
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 12,
+      "yMin": 0,
+      "yMax": 70,
+      "xGridStep": 1,
+      "yGridStep": 5,
+      "xLabelStep": 2,
+      "yLabelStep": 10,
+      "xLabel": "Milkweed patches",
+      "yLabel": "Monarch butterflies counted",
+      "bestFitLine": {
+        "slope": 4.5,
+        "intercept": 12
+      }
+    }
+  },
+  "id": "bank-alg-203"
+}

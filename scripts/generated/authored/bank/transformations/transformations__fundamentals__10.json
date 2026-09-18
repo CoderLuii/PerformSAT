@@ -1,0 +1,30 @@
+{
+ "id": 10,
+ "question": "A ridge tram's height above its base station, in meters, is $E(d)$ after $d$ meters along the cable, and a second tram satisfies $F(d) = E(d - 40) + 12$ for every $d$. The greatest value of $E$ is $86$ meters, reached at $d = 300$. Which of the following must be true of $F$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Its greatest value is $86$ meters, reached at $d = 260$."
+  },
+  {
+   "id": "B",
+   "text": "Its greatest value is $86$ meters, reached at $d = 340$."
+  },
+  {
+   "id": "C",
+   "text": "Its greatest value is $98$ meters, reached at $d = 260$."
+  },
+  {
+   "id": "D",
+   "text": "Its greatest value is $98$ meters, reached at $d = 340$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "shifts the peak the wrong way and drops the +12 entirely",
+  "B": "locates the peak correctly but leaves out the 12-meter lift",
+  "C": "adds the 12 meters but shifts the peak the wrong way"
+ },
+ "correctAnswer": "D",
+ "hint": "The rule changes both where the greatest value occurs and how large it is.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~30s):** $F$ repeats $E$ forty meters later and twelve meters higher, so its peak is $86 + 12 = 98$ meters at $d = 300 + 40 = 340$.\n\n**The Full Solution:**\nStep 1: $F(d)$ uses the reading $E(d - 40)$, so $F$ takes its greatest value when $d - 40 = 300$, that is, at $d = 340$.\nStep 2: At that point $F(340) = E(300) + 12 = 86 + 12 = 98$ meters.\nStep 3: Because $E$ never exceeds $86$, $F$ never exceeds $98$, so $98$ meters at $d = 340$ is the maximum. Check: $F(340) = E(340 - 40) + 12 = E(300) + 12 = 98$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($86$ m at $d = 260$): subtracting $40$ from the peak location and ignoring the $+12$; both parts of the rule act.\n* Choice B ($86$ m at $d = 340$): locating the peak correctly but leaving the $12$-meter lift out of the height.\n* Choice C ($98$ m at $d = 260$): adding the $12$ meters but moving the peak backward; $d - 40 = 300$ gives $d = 340$.\n\n**Test Day Takeaway:** Set the inside expression equal to the input that produced the known extreme, then apply the outside shift to the value."
+}

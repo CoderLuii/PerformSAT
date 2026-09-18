@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-185",
+  "question": "A machine shop pays $\\$8{,}000$ this year for its equipment insurance. The premium is projected to rise by $5\\%$ each year. What will the premium be, in dollars, $3$ years from now?",
+  "correctAnswer": "9261",
+  "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**The correct answer is $9261$.**\n\n**The Fast Way (~25s):** Three $5\\%$ increases multiply by $(1.05)^3$, and $8{,}000(1.05)^3 = 9{,}261$.\n\n**The Full Solution:**\nStep 1: A $5\\%$ increase multiplies the premium by $1.05$, so $P(t) = 8{,}000(1.05)^t$ dollars $t$ years from now.\nStep 2: Substituting $t = 3$ gives $P(3) = 8{,}000(1.05)^3$.\nStep 3: Year by year: $8{,}000 \\to 8{,}400 \\to 8{,}820 \\to 9{,}261$. $\\checkmark$\n\n**Common Mistakes:** Adding $5\\%$ of the current $\\$8{,}000$ three times gives $8{,}000 + 3(400) = 9{,}200$, which ignores the compounding. Stopping after two increases gives $8{,}820$.\n\n**Test Day Takeaway:** Repeated percent change is repeated MULTIPLICATION; count the number of increases carefully and raise the multiplier to that power."
+}

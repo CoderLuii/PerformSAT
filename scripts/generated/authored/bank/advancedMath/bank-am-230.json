@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-230",
+ "question": "A storm-drain gate is recalibrated so that its flow model $g$ reaches every flow value exactly 3 hours later than the original model $f$ does. Which equation relates $g$ and $f$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$g(t)=f(t)+3$"
+  },
+  {
+   "id": "B",
+   "text": "$g(t)=f(t)-3$"
+  },
+  {
+   "id": "C",
+   "text": "$g(t)=f(t+3)$"
+  },
+  {
+   "id": "D",
+   "text": "$g(t)=f(t-3)$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "raises every flow value by 3 instead of delaying the model by 3 hours",
+  "B": "lowers every flow value by 3, a vertical change rather than a delay",
+  "C": "moves the model 3 hours earlier instead of 3 hours later"
+ },
+ "explanation": "**SAT Pattern: Function from Shifted Graph**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** A delay moves the graph right, and a right shift of 3 replaces $t$ with $t-3$.\n\n**The Full Solution:**\nStep 1: 'Three hours later' means the flow that $f$ reaches at time $t$ is the flow $g$ reaches at time $t+3$.\nStep 2: So $g(t+3)=f(t)$; replacing $t$ with $t-3$ gives $g(t)=f(t-3)$.\nStep 3: The relation is $g(t)=f(t-3)$. Check: if $f$ peaks at $t=2$, then $g(5)=f(2)$, so $g$ peaks three hours later ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($g(t)=f(t)+3$): adds 3 to the flow, a vertical shift, not a delay.\n* Choice B ($g(t)=f(t)-3$): lowers the flow by 3 instead of moving the model in time.\n* Choice C ($g(t)=f(t+3)$): shifts the graph left, making the model run three hours early.\n\n**Test Day Takeaway:** A later event shifts a graph right, and a right shift always subtracts inside the function."
+}

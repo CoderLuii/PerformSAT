@@ -1,0 +1,47 @@
+{
+  "id": 6,
+  "question": "A grassland survey draws two straight transects in the xy-plane, with distances in kilometers. Transect $\\ell$ is graphed. Transect $t$ heads in exactly the same direction and includes $(-2, 5)$. An equation for transect $t$ is which of the following?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 1.5,
+      "yIntercept": -3,
+      "xRange": [
+        -6,
+        6
+      ],
+      "yRange": [
+        -12,
+        6
+      ],
+      "gridInterval": 1,
+      "xTickInterval": 2,
+      "yTickInterval": 3
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2x - 3y = -19$"
+    },
+    {
+      "id": "B",
+      "text": "$3x - 2y = -16$"
+    },
+    {
+      "id": "C",
+      "text": "$3x + 2y = 4$"
+    },
+    {
+      "id": "D",
+      "text": "$3x - 2y = 6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the reciprocal of the slope, 2/3 instead of 3/2, though it does pass through (-2, 5)",
+    "C": "uses the opposite of the slope, -3/2 instead of 3/2, though it does pass through (-2, 5)",
+    "D": "gives transect l itself, which has the right direction but misses (-2, 5)"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Parallel Lines and Standard Form**\n\n**Choice B is correct.** Transect $\\ell$ passes through $(0, -3)$ and $(2, 0)$, so its slope is $\\frac{3}{2}$; the line through $(-2, 5)$ with slope $\\frac{3}{2}$ is $y = \\frac{3}{2}x + 8$, or $3x - 2y = -16$.\n\n**The Fast Way (~30s):** Same direction means same slope $\\frac{3}{2}$, so transect $t$ has the form $3x - 2y = k$; substituting $(-2, 5)$ gives $k = -6 - 10 = -16$.\n\n**The Full Solution:**\nStep 1: Read two lattice points off the graph, $(0, -3)$ and $(2, 0)$. The slope of $\\ell$ is $\\frac{0 - (-3)}{2 - 0} = \\frac{3}{2}$.\nStep 2: Transect $t$ runs in the same direction, so it also has slope $\\frac{3}{2}$. Through $(-2, 5)$: $y - 5 = \\frac{3}{2}(x + 2)$, which simplifies to $y = \\frac{3}{2}x + 8$.\nStep 3: Clear the fraction and collect: $2y = 3x + 16$, so $3x - 2y = -16$. Check: at $(-2, 5)$, $3(-2) - 2(5) = -6 - 10 = -16$, and the coefficients $3$ and $-2$ give slope $\\frac{3}{2}$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2x - 3y = -19$): passes through $(-2, 5)$ but has slope $\\frac{2}{3}$, the reciprocal of $\\frac{3}{2}$. Reading rise over run backwards produces exactly this line.\n* Choice C ($3x + 2y = 4$): also passes through $(-2, 5)$, but its slope is $-\\frac{3}{2}$; a sign slip turns a rising transect into a falling one.\n* Choice D ($3x - 2y = 6$): is transect $\\ell$ itself. It has the right direction but does not contain $(-2, 5)$, since $3(-2) - 2(5) = -16 \\neq 6$.\n\n**Test Day Takeaway:** For a line in the same direction, keep the $x$ and $y$ coefficients exactly as they are and recompute only the constant from the given point."
+}

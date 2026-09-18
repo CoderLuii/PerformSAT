@@ -1,0 +1,45 @@
+{
+ "id": "bank-geo-255",
+ "question": "In triangle $ABC$ shown, $\\angle C$ is a right angle and $AB = 12$. What is the area of triangle $ABC$?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "30°",
+    "60°",
+    "90°"
+   ],
+   "vertexLabels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9\\sqrt{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$18\\sqrt{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$36\\sqrt{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$72\\sqrt{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the one-half a second time",
+  "C": "omits the one-half",
+  "D": "uses the hypotenuse as the short leg"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: 30-60-90 Triangle**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The hypotenuse $12$ gives legs $6$ and $6\\sqrt{3}$, so the area is $\\frac{1}{2}(6)(6\\sqrt{3}) = 18\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: The angles are $30^\\circ$ at $A$, $60^\\circ$ at $B$, and $90^\\circ$ at $C$, so the sides are in the ratio $1 : \\sqrt{3} : 2$ and $AB = 12$ is the hypotenuse.\nStep 2: The scale factor is $\\frac{12}{2} = 6$, so $BC = 6$ (opposite $30^\\circ$) and $AC = 6\\sqrt{3}$ (opposite $60^\\circ$).\nStep 3: The legs meet at the right angle, so area $= \\frac{1}{2}(6)(6\\sqrt{3}) = 18\\sqrt{3}$. Check: $6^2 + (6\\sqrt{3})^2 = 36 + 108 = 144 = 12^2$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($9\\sqrt{3}$): applies the factor $\\frac{1}{2}$ a second time after the area is already computed.\n* Choice C ($36\\sqrt{3}$): multiplies the two legs but omits the $\\frac{1}{2}$.\n* Choice D ($72\\sqrt{3}$): treats $12$ as the short leg, giving legs $12$ and $12\\sqrt{3}$.\n\n**Test Day Takeaway:** In a right triangle the two legs are the base and height. Scale down from the hypotenuse before multiplying."
+}

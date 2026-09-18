@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-175",
+ "question": "A two-stage conversion first adds a constant $k$ to its input, using $g(x) = x + k$, and then applies $f(x) = 4x - 7$ to that result. The conversion turns an input of $3$ into an output of $21$. What is the value of $k$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Function Composition**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~25s):** $f(g(3)) = 4(3 + k) - 7 = 21$, so $4(3 + k) = 28$, $3 + k = 7$, and $k = 4$.\n\n**The Full Solution:**\nStep 1: The inner value is $g(3) = 3 + k$.\nStep 2: Applying $f$ gives $4(3 + k) - 7 = 21$, so $4(3 + k) = 28$.\nStep 3: Dividing by $4$ gives $3 + k = 7$, so $k = 4$. Check: $g(3) = 7$ and $f(7) = 28 - 7 = 21$ ✓\n\n**Common Mistakes:**\n* $18$ — setting $3 + k = 21$, which applies only $g$ and never undoes $f$.\n* $0.5$ — subtracting the $7$ instead of adding it, which gives $4(3 + k) = 14$.\n\n**Test Day Takeaway:** Undo the OUTER function first — add back its constant, then divide — before touching the inner expression."
+}

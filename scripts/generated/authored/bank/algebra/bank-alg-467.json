@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-467",
+  "question": "In the $xy$-plane, the graphs of $3x - 7y = 5$ and $9x - 21y = k$, where $k$ is a constant, are the same line. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{5}{3}$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$15$"
+    },
+    {
+      "id": "D",
+      "text": "$45$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides 5 by 3 instead of multiplying.",
+    "B": "keeps the constant 5 unchanged while the coefficients were tripled; that gives a parallel line.",
+    "D": "multiplies 5 by 9, the new x-coefficient, instead of by the scale factor 3."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice C is correct.**\n\n**The Fast Way (~5s):** The second equation's coefficients are $3$ times the first's, so $k = 3 \\cdot 5 = 15$.\n\n**The Full Solution:**\nStep 1: Compare coefficients: $9 = 3 \\cdot 3$ and $-21 = 3 \\cdot (-7)$, so the second equation is the first multiplied by $3$.\nStep 2: For the same line, the constant must be multiplied by the same factor: $k = 3 \\cdot 5 = 15$.\nStep 3: Check: dividing $9x - 21y = 15$ by $3$ returns $3x - 7y = 5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{5}{3}$): divides $5$ by $3$ instead of multiplying.\n* Choice B ($5$): keeps the constant $5$ unchanged while the coefficients were tripled; that gives a parallel line.\n* Choice D ($45$): multiplies $5$ by $9$, the new $x$-coefficient, instead of by the scale factor $3$.\n\n**Test Day Takeaway:** Find the factor that turns one equation's coefficients into the other's, then apply that same factor to the constant."
+}

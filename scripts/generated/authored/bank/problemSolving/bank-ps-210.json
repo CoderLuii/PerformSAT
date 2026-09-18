@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-210",
+  "question": "At a hospital, $45\\%$ of the nurses work the night shift, and $60\\%$ of the nurses who work the night shift are certified in critical care. What percent of all nurses at the hospital work the night shift and are certified in critical care?",
+  "correctAnswer": "27",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**The correct answer is $27$.**\n\n**The Fast Way (~15s):** $0.45 \\times 0.60 = 0.27$, or $27\\%$.\n\n**The Full Solution:**\nStep 1: The $60\\%$ describes only the night-shift nurses, so it is applied to the $45\\%$ rather than to all nurses.\nStep 2: Multiply: $0.45 \\times 0.60 = 0.27$.\nStep 3: Write as a percent: $27\\%$. Check with $200$ nurses: $90$ work nights, and $60\\%$ of $90$ is $54$, which is $\\frac{54}{200} = 27\\%$. $\\checkmark$\n\n**Common Mistakes:** Adding the rates for $105$, which is impossible for a percent of a group; subtracting for $15$; or reporting $60$, the rate inside the night-shift group rather than the share of all nurses.\n\n**Test Day Takeaway:** \"Of those\" resets the whole. Multiply the two rates to get back to the original population."
+}

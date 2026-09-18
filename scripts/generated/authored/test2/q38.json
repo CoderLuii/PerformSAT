@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 2,
-  "passage": "Rosalind Franklin is most often remembered today for the credit she was denied: her X-ray diffraction images of DNA, especially the famous \"Photograph 51,\" proved crucial to the double-helix model that others announced in 1953. That account, though true, tends to reduce her to a supporting role in someone else's discovery. Franklin's own research was meticulous and independent. Using X-ray crystallography, she distinguished two forms of the DNA fiber, determined that the molecule's phosphate groups lay on the outside, and calculated key measurements of its helical structure—conclusions she reached through her own analysis of the diffraction data. Read on its own terms, her work was not merely a clue handed to others but a rigorous structural investigation that independently established central features of DNA's form.",
+  "passage": "In the fourteenth century, the mathematician Madhava founded a school in Kerala, in southern India, whose members derived infinite-series expressions for the sine, cosine, and arctangent — results usually credited to European mathematicians who arrived at them roughly 250 years later. The Kerala derivations were rigorous by the standards of their own tradition and were preserved and refined through generations of careful commentaries. What the school lacked, it appears, was not insight but circulation: no persuasive evidence has surfaced that its manuscripts reached Europe, and historians accordingly treat the two discoveries as independent. The episode has become a touchstone in the history of science for a sobering distinction — priority in discovery guarantees neither influence nor remembrance.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "Franklin's own crystallographic analysis independently established central features of DNA's structure, a contribution too often reduced to a supporting role in someone else's discovery."
+      "text": "Kerala mathematicians derived major results centuries before Europeans did, but because the work never circulated beyond its own tradition, the case shows that being first secures neither influence nor recognition."
     },
     {
       "id": "B",
-      "text": "Franklin is best remembered today for the well-known story of the credit she was denied after her diffraction images contributed to a double-helix model that other scientists announced in 1953."
+      "text": "European mathematicians of the seventeenth century quietly relied on manuscripts from the Kerala school when they developed their own infinite-series methods."
     },
     {
       "id": "C",
-      "text": "Franklin's X-ray images mattered chiefly because other scientists were able to interpret them correctly in 1953."
+      "text": "Historians have concluded that the Kerala school's derivations of infinite series, though preserved in generations of commentaries, ultimately fell short of the standards of rigor that European mathematicians would later establish."
     },
     {
       "id": "D",
-      "text": "Franklin abandoned X-ray crystallography after concluding that it could not reveal the internal structure of DNA."
+      "text": "Madhava founded a school in southern India whose members wrote commentaries on the sine, cosine, and arctangent."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage acknowledges the familiar story of denied credit but argues that, read on its own terms, Franklin's crystallographic work independently established central features of DNA's structure. Choice B captures only the framing the passage sets out to correct, treating her as a supporting figure rather than an independent investigator. Choice C contradicts the passage, which stresses that Franklin reached her conclusions through her own analysis, not merely by supplying images for others to interpret. Choice D invents a claim the text never makes; nothing says she gave up crystallography or judged it unable to reveal DNA's structure."
+  "explanation": "**Choice A is correct.** The text's argument runs: the Kerala school got there first with full rigor, its work never reached Europe, and the episode therefore teaches that priority guarantees neither influence nor remembrance — the three moves choice A binds together.\n\n**The Full Solution:**\n- The achievement: infinite-series results for sine, cosine, and arctangent, some 250 years before the Europeans usually credited.\n- The limitation: \"not insight but circulation\" — no persuasive evidence the manuscripts reached Europe, so the discoveries count as independent.\n- The lesson, stated outright in the final sentence: \"priority in discovery guarantees neither influence nor remembrance.\" A main-idea answer must carry all three elements, and only choice A does.\n\n**Why the other choices are wrong:**\n- B: It asserts the very transmission the text rules out — historians treat the discoveries as independent precisely because no such reliance is evidenced.\n- C: It contradicts the text's judgment that the derivations were \"rigorous by the standards of their own tradition\" and smuggles in a European benchmark the passage never applies.\n- D: It shrinks the text to its opening facts, losing both the priority claim and the concluding lesson that gives the episode its significance."
 }

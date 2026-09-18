@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "Wildlife officers model a beaver colony's population by $P(t) = -3(t - 8)^2 + 240$, with $t$ measured in years after 2010. Which of the following is equivalent to $P(t)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3t^2 + 48t + 48$"
+  },
+  {
+   "id": "B",
+   "text": "$-3t^2 - 48t + 48$"
+  },
+  {
+   "id": "C",
+   "text": "$-3t^2 + 48t + 176$"
+  },
+  {
+   "id": "D",
+   "text": "$-3t^2 + 48t + 432$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "distributes -3 across -16t as -48t, flipping the sign of the middle term",
+  "C": "subtracts only 64 from 240 instead of 3(64) = 192, giving 176",
+  "D": "adds 192 to 240 instead of subtracting it, giving 432"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $(t - 8)^2 = t^2 - 16t + 64$, and $-3$ times that is $-3t^2 + 48t - 192$; adding $240$ leaves $+48$.\n\n**The Full Solution:**\nStep 1: Square the binomial: $(t - 8)^2 = t^2 - 16t + 64$.\nStep 2: Distribute the $-3$ to all three terms: $-3t^2 + 48t - 192$.\nStep 3: Add the constant $240$: $-3t^2 + 48t - 192 + 240 = -3t^2 + 48t + 48$.\nCheck: at $t = 8$ the original gives $240$, and $-3(64) + 48(8) + 48 = -192 + 384 + 48 = 240$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-3t^2 - 48t + 48$): keeps the middle term negative, forgetting that $-3$ times $-16t$ is $+48t$.\n* Choice C ($-3t^2 + 48t + 176$): distributes the $-3$ to the first two terms only, subtracting $64$ instead of $192$ from $240$.\n* Choice D ($-3t^2 + 48t + 432$): adds $192$ to $240$ instead of subtracting, mishandling the sign of the distributed constant.\n\n**Test Day Takeaway:** Expand the square before you distribute, and test one input value in both forms — a single substitution kills every sign error."
+}

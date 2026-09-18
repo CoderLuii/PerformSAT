@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-201",
+ "question": "Triangle $R$ and triangle $S$ are similar. The perimeter of triangle $R$ is $30$ centimeters and the perimeter of triangle $S$ is $75$ centimeters. If the area of triangle $R$ is $36$ square centimeters, what is the area, in square centimeters, of triangle $S$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$90$"
+  },
+  {
+   "id": "B",
+   "text": "$144$"
+  },
+  {
+   "id": "C",
+   "text": "$225$"
+  },
+  {
+   "id": "D",
+   "text": "$562.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales by the linear ratio instead of its square",
+  "B": "multiplies by 4 instead of by 25/4",
+  "D": "cubes the linear ratio"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Similar Figures Area Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The linear ratio is $\\frac{75}{30} = \\frac{5}{2}$, so the area ratio is $\\frac{25}{4}$ and the area of triangle $S$ is $36 \\cdot \\frac{25}{4} = 225$.\n\n**The Full Solution:**\nStep 1: Perimeters of similar triangles are in the same ratio as corresponding sides, so $k = \\frac{75}{30} = \\frac{5}{2}$.\nStep 2: Areas scale by $k^2 = \\left(\\frac{5}{2}\\right)^2 = \\frac{25}{4}$.\nStep 3: Area of $S$ $= 36 \\cdot \\frac{25}{4} = 9 \\cdot 25 = 225$ square centimeters.\n\nVerification: $\\frac{225}{36} = 6.25 = \\left(\\frac{5}{2}\\right)^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($90$): multiplies the area by the linear ratio $\\frac{5}{2}$, skipping the square.\n* Choice B ($144$): multiplies by $4$, the square of the smaller term of the ratio, instead of by $\\frac{25}{4}$.\n* Choice D ($562.5$): cubes the ratio, $36 \\cdot \\frac{125}{8}$, applying a volume rule to a plane figure.\n\n**Test Day Takeaway:** Convert any given linear ratio — sides, perimeters, heights — into $k$, then square it once for area. Ratios greater than $1$ must make the area grow."
+}

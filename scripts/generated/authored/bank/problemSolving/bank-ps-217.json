@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-217",
+  "question": "At a research station, $28\\%$ of the rock samples collected are classified as sedimentary. What percent of the rock samples collected are not classified as sedimentary?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.72\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$28\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$62\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$72\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts from 1 instead of 100 and reports the decimal as a percent",
+    "B": "repeats the given percent instead of taking its complement",
+    "C": "subtracts from 90 instead of from 100"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** $100\\% - 28\\% = 72\\%$.\n\n**The Full Solution:**\nStep 1: Every sample is either sedimentary or not, so the two percents must add to $100\\%$.\nStep 2: Subtract the given percent from the whole: $100 - 28 = 72$.\nStep 3: Check: $28\\% + 72\\% = 100\\%$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.72\\%$): computes $1 - 0.28 = 0.72$ and labels the decimal as a percent; $0.72$ as a share is $72\\%$.\n* Choice B ($28\\%$): reports the sedimentary share rather than the share that is not sedimentary.\n* Choice C ($62\\%$): subtracts from $90$; the whole group is $100\\%$, not $90\\%$.\n\n**Test Day Takeaway:** Two complementary categories always sum to $100\\%$ — subtract, then add the pair back to confirm."
+}

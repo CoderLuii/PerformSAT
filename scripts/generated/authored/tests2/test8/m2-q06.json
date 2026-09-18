@@ -1,0 +1,45 @@
+{
+  "id": 6,
+  "question": "Marked on the figure are the angle measures, in degrees, at the three corners of a steel gusset plate. Subtracting the narrowest corner measure from the widest one gives how many degrees?",
+  "diagram": {
+    "type": "triangleWithAngles",
+    "params": {
+      "angleLabels": [
+        "(2x + 9)°",
+        "(x + 5)°",
+        "(3x - 14)°"
+      ],
+      "vertexLabels": [
+        "J",
+        "K",
+        "L"
+      ],
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7$"
+    },
+    {
+      "id": "B",
+      "text": "$30$"
+    },
+    {
+      "id": "C",
+      "text": "$34$"
+    },
+    {
+      "id": "D",
+      "text": "$41$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the two largest angles, 76 - 69, instead of the widest minus the narrowest",
+    "B": "reports the value of x, 30, rather than a difference of angle measures",
+    "C": "subtracts 35 from 69, using the middle angle in place of the widest"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The three measures sum to $180$, so $6x = 180$ and $x = 30$; the corners then measure $69$, $76$, and $35$ degrees, and $76 - 35 = 41$.\n\n**The Full Solution:**\nStep 1: The interior angles of a triangle sum to $180$ degrees: $(2x + 9) + (3x - 14) + (x + 5) = 180$.\nStep 2: Combine like terms: $6x + 0 = 180$, so $x = 30$.\nStep 3: Substitute back: $2(30) + 9 = 69$, $3(30) - 14 = 76$, and $30 + 5 = 35$. The widest corner is $76$ and the narrowest is $35$, so the difference is $76 - 35 = 41$. Check: $69 + 76 + 35 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): differences the two largest measures, $76 - 69$, instead of the widest and the narrowest.\n* Choice B ($30$): stops at $x = 30$; the variable is only a step toward the angle measures, never an angle itself here.\n* Choice C ($34$): computes $69 - 35$, taking $(2x + 9)$ to be the widest corner without comparing it to $(3x - 14)$.\n\n**Test Day Takeaway:** Solve for the variable, then convert every expression to a number before you decide which angle is largest — the biggest coefficient is not always the biggest angle."
+}

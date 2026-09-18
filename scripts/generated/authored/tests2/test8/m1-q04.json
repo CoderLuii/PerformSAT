@@ -1,0 +1,57 @@
+{
+ "id": 4,
+ "question": "The linear model $\\hat{y} = 0.09x + 0.3$ predicts significant wave height $\\hat{y}$, in meters, from wind speed $x$, in knots. The table lists the recorded wave height at five wind speeds. Which statement compares the recorded height with the height the model predicts at $x = 30$?",
+ "questionTable": {
+  "headers": [
+   "Wind speed (knots)",
+   "Recorded wave height (m)"
+  ],
+  "rows": [
+   [
+    "10",
+    "1.3"
+   ],
+   [
+    "15",
+    "1.6"
+   ],
+   [
+    "20",
+    "2.3"
+   ],
+   [
+    "25",
+    "2.5"
+   ],
+   [
+    "30",
+    "2.6"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The model underestimates the recorded height by $0.1$ meter."
+  },
+  {
+   "id": "B",
+   "text": "The model underestimates the recorded height by $0.4$ meter."
+  },
+  {
+   "id": "C",
+   "text": "The model overestimates the recorded height by $0.1$ meter."
+  },
+  {
+   "id": "D",
+   "text": "The model overestimates the recorded height by $0.4$ meter."
+  }
+ ],
+ "distractorNotes": {
+  "A": "drops the 0.3 intercept (predicting 2.7) and also reverses the direction of the miss",
+  "B": "gets the size 0.4 right but reverses which value is larger",
+  "C": "drops the 0.3 intercept, predicting 2.7 instead of 3.0, for a gap of 0.1"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Residual**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** At $x = 30$ the model predicts $0.09(30) + 0.3 = 3.0$ meters, but only $2.6$ meters was recorded, so the prediction sits $0.4$ meter too high.\n\n**The Full Solution:**\nStep 1: Compute the predicted value at $x = 30$: $\\hat{y} = 0.09(30) + 0.3 = 2.7 + 0.3 = 3.0$ meters.\nStep 2: Read the recorded value from the table's last row: $2.6$ meters.\nStep 3: The residual is recorded minus predicted: $2.6 - 3.0 = -0.4$. A negative residual means the model predicted more than what happened, so the model overestimates by $0.4$ meter. Check: adding the residual back to the prediction restores the data, $3.0 + (-0.4) = 2.6$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (underestimates by $0.1$): drops the intercept, predicting $2.7$, and then reports the miss in the wrong direction.\n* Choice B (underestimates by $0.4$): finds the right gap of $0.4$ but flips the direction. A prediction of $3.0$ against a reading of $2.6$ is too high, not too low.\n* Choice C (overestimates by $0.1$): uses $0.09(30) = 2.7$ as the prediction, forgetting the $+0.3$ intercept, which shrinks the gap to $0.1$.\n\n**Test Day Takeaway:** Residual = actual $-$ predicted. Negative residual, model too high; positive residual, model too low. Compute the prediction from the full equation, intercept included."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-360",
+  "question": "A drone leaves a station and flies due east at a constant speed of $32$ kilometers per hour. A half hour later, a second drone leaves the same station and flies due west at a constant speed of $44$ kilometers per hour. How many kilometers apart are the two drones $2$ hours after the first drone left the station?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$64$"
+    },
+    {
+      "id": "C",
+      "text": "$130$"
+    },
+    {
+      "id": "D",
+      "text": "$152$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the two distances, $66 - 64$, as if the drones flew in the same direction.",
+    "B": "reports only the first drone's distance, $32 \\times 2$, leaving out the second drone entirely.",
+    "D": "gives the second drone the full $2$ hours, $32(2) + 44(2)$, ignoring its half-hour later start."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Distance = Rate × Time**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The first drone flies $32(2) = 64$ kilometers and the second flies $44(1.5) = 66$ kilometers in opposite directions, so they are $64 + 66 = 130$ kilometers apart.\n\n**The Full Solution:**\nStep 1: The first drone flies for the full $2$ hours: $32 \\times 2 = 64$ kilometers east of the station.\nStep 2: The second drone starts a half hour later, so it flies for $2 - 0.5 = 1.5$ hours: $44 \\times 1.5 = 66$ kilometers west of the station.\nStep 3: Opposite directions means the distances add: $64 + 66 = 130$ kilometers. Check: the station lies between them, $64$ kilometers from one and $66$ from the other. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): subtracts the two distances, $66 - 64$, as if the drones flew in the same direction.\n* Choice B ($64$): reports only the first drone's distance, $32 \\times 2$, leaving out the second drone entirely.\n* Choice D ($152$): gives the second drone the full $2$ hours, $32(2) + 44(2)$, ignoring its half-hour later start.\n\n**Test Day Takeaway:** Give each traveler its own time on the clock, then add distances for opposite directions and subtract for the same direction. A staggered start is the trap this question is built on."
+}

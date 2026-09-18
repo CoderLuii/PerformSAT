@@ -1,0 +1,48 @@
+{
+  "id": "bank-ps-106",
+  "question": "For the $400$ eggs in a hatchery study, the table summarizes the distribution by incubation batch and by hatch time. One of these eggs will be selected at random. What is the probability of selecting an egg that hatched in $22$ days or fewer, given that the egg was not in batch $2$?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Fewer than 20 days",
+        "20 to 22 days",
+        "More than 22 days",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Batch 1",
+          "40",
+          "60",
+          "20",
+          "120"
+        ],
+        [
+          "Batch 2",
+          "15",
+          "85",
+          "30",
+          "130"
+        ],
+        [
+          "Batch 3",
+          "25",
+          "95",
+          "30",
+          "150"
+        ],
+        [
+          "Total",
+          "80",
+          "240",
+          "80",
+          "400"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "22/27",
+  "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**The correct answer is $\\frac{22}{27}$.**\n\n**The Fast Way (~35s):** Outside batch $2$ there are $120 + 150 = 270$ eggs, and $(40 + 60) + (25 + 95) = 220$ of them hatched in $22$ days or fewer: $\\dfrac{220}{270} = \\dfrac{22}{27}$.\n\n**The Full Solution:**\nStep 1: \"Given that the egg was not in batch $2$\" restricts the sample space to batches $1$ and $3$: $120 + 150 = 270$ eggs.\nStep 2: \"$22$ days or fewer\" covers the first two columns. In batch $1$ that is $40 + 60 = 100$ eggs; in batch $3$ it is $25 + 95 = 120$ eggs, for $220$ in all.\nStep 3: The probability is $\\dfrac{220}{270} = \\dfrac{22}{27}$.\nCheck: the eggs outside batch $2$ that took more than $22$ days number $20 + 30 = 50$, and $220 + 50 = 270$. $\\checkmark$\n\n**Common Mistakes:** Dividing by all $400$ eggs, which gives $\\dfrac{220}{400} = \\dfrac{11}{20}$; including batch $2$ in the numerator as well, which gives $\\dfrac{320}{400} = \\dfrac{4}{5}$; using only the \"$20$ to $22$ days\" column and reporting $\\dfrac{155}{270}$.\n\n**Test Day Takeaway:** Two conditions, two edits: \"not batch $2$\" removes a row, \"$22$ days or fewer\" merges two columns — apply both before dividing."
+}

@@ -143,6 +143,10 @@ export function stemPreview(q) {
     .replace(/\uE000/g, '$')
     .replace(/\\[a-zA-Z]+/g, '')
     .replace(/[{}]/g, '')
+    // Markdown emphasis renders in the main pane but the sidebar is plain
+    // text \u2014 drop paired markers so titles don't show literal asterisks.
+    .replace(/\*\*([^*\n]+?)\*\*/g, '$1')
+    .replace(/\*([^*\n]+?)\*/g, '$1')
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, 80);
@@ -329,7 +333,8 @@ const AssignedPracticeShell = ({
       return next;
     });
   };
-  const hasPassageToHighlight = !!(currentQuestion?.passage || Array.isArray(currentQuestion?.passages));
+  const hasPassageToHighlight = !!(currentQuestion?.passage || Array.isArray(currentQuestion?.passages) ||
+    Array.isArray(currentQuestion?.studentNotes?.bullets));
 
   // Answer context for the AI tutor's trap-analysis branch (only meaningful
   // after the student has answered + revealed). Without these the "name the
@@ -373,14 +378,12 @@ const AssignedPracticeShell = ({
   // Day-2 Acely-polish: round-aware question header. The current round is
   // determined by the question id, not by currentRoundIndex (which may lag
   // briefly during state transitions).
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- the else branch is a fresh [] each render, so roundProgress below simply recomputes; memoizing it would change render identity
   const rounds = Array.isArray(practiceState.rounds) ? practiceState.rounds : [];
   const currentRoundIdx = currentQuestion
     ? findRoundIndexForQuestion(rounds, currentQuestion.id)
     : -1;
   const currentRound = currentRoundIdx >= 0 ? rounds[currentRoundIdx] : null;
-  const positionInRound = currentRound
-    ? currentRound.questionIds.indexOf(currentQuestion?.id) + 1
-    : 0;
   const roundProgress = useMemo(
     () => computeRoundProgress(rounds, practiceState.answers || {}),
     [rounds, practiceState.answers],
@@ -845,10 +848,10 @@ const AssignedPracticeShell = ({
 
             {/* R&W passage — Bluebook-style highlightable rendering, shared with
                 the timed test (PracticeTest) so students annotate the same way
-                in drills. Covers the single `passage` and paired `passages`
-                shapes; `studentNotes` (rhetorical-synthesis) is rendered below
-                as plain notes, matching the timed test which does not highlight
-                them. The toolbar only appears when there is a passage to mark. */}
+                in drills. Covers the single `passage`, paired `passages`, and
+                `studentNotes` (rhetorical-synthesis) shapes — notes bullets are
+                highlightable exactly like the timed test. The toolbar only
+                appears when there is something to mark. */}
             {hasPassageToHighlight && (
               <div className="aps-rw-toolbar">
                 <span className="aps-rw-toolbar-hint">
@@ -933,14 +936,34 @@ const AssignedPracticeShell = ({
                 color: 'var(--pr-text)',
                 margin: '18px 0 4px',
               }}>
+                {/* Notes are highlightable like passages (parity with the
+                    timed test). The goal stays below the bullets here: this
+                    single-column surface reads it straight into the question
+                    stem, matching Bluebook's linear order. */}
                 {currentQuestion.studentNotes.intro && (
-                  <div style={{ marginBottom: '8px' }}>{currentQuestion.studentNotes.intro}</div>
+                  <div style={{ marginBottom: '8px' }}>
+                    <HighlightablePassage
+                      text={currentQuestion.studentNotes.intro}
+                      className="aps-note-segment"
+                      highlights={highlightsByKey[buildHlKey('notesIntro')] || []}
+                      hidden={highlightsHidden}
+                      onAddHighlight={(r) => handleAddHighlight('notesIntro', r)}
+                      onRemoveHighlight={(r) => handleRemoveHighlight('notesIntro', r)}
+                    />
+                  </div>
                 )}
                 {Array.isArray(currentQuestion.studentNotes.bullets) && (
                   <ul style={{ paddingLeft: '1.25rem', margin: '8px 0' }}>
                     {currentQuestion.studentNotes.bullets.map((b, i) => (
                       <li key={i} style={{ marginBottom: '4px' }}>
-                        <MathText>{b}</MathText>
+                        <HighlightablePassage
+                          text={b}
+                          className="aps-note-segment"
+                          highlights={highlightsByKey[buildHlKey(`note${i}`)] || []}
+                          hidden={highlightsHidden}
+                          onAddHighlight={(r) => handleAddHighlight(`note${i}`, r)}
+                          onRemoveHighlight={(r) => handleRemoveHighlight(`note${i}`, r)}
+                        />
                       </li>
                     ))}
                   </ul>
@@ -963,13 +986,14 @@ const AssignedPracticeShell = ({
             {/* Question table */}
             {currentQuestion.questionTable && (
               <div style={{ margin: '20px 0', display: 'flex', justifyContent: 'center' }}>
-                <table style={{ borderCollapse: 'collapse', fontSize: '15px' }}>
+                <table style={{ borderCollapse: 'collapse', fontSize: '15px', fontFamily: 'Times New Roman, Georgia, serif', background: '#fff', color: '#111' }}>
                   <thead>
                     <tr>
                       {currentQuestion.questionTable.headers.map((header, i) => (
                         <th key={i} style={{
-                          border: '1px solid var(--pr-line-strong)', padding: '8px 16px',
-                          background: 'var(--pr-surface-2)', fontWeight: '600'
+                          border: '1.5px solid #111', padding: '7px 16px',
+                          background: '#fff', fontWeight: 'bold',
+                          fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px',
                         }}>
                           <MathText>{header}</MathText>
                         </th>
@@ -981,7 +1005,7 @@ const AssignedPracticeShell = ({
                       <tr key={i}>
                         {row.map((cell, j) => (
                           <td key={j} style={{
-                            border: '1px solid var(--pr-line-strong)', padding: '8px 16px', textAlign: 'center'
+                            border: '1px solid #111', padding: '6px 16px', textAlign: 'center', background: '#fff'
                           }}>
                             <MathText>{cell}</MathText>
                           </td>

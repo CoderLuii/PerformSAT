@@ -5,40 +5,40 @@
   "band": 4,
   "domain": "expression-of-ideas",
   "skill": "rhetorical-synthesis",
+  "module": 2,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "The first transatlantic telegraph cable was completed in 1858 between Ireland and Newfoundland.",
+      "Its signals were faint, and after operators drove the line with ever-higher voltages, the cable's insulation failed permanently within about a month.",
+      "A second cable, laid in 1866, used a much heavier copper core and thicker insulation.",
+      "For the 1866 cable, physicist William Thomson supplied a mirror galvanometer that could read minute currents, so high voltages were unnecessary.",
+      "The 1866 cable operated reliably for years and carried messages many times faster than the 1858 cable had."
+    ],
+    "goal": "The student wants to emphasize a difference between the 1858 cable and the 1866 cable."
+  },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Maria Sibylla Merian, a naturalist and illustrator of the late seventeenth and early eighteenth centuries, produced two major works, each combining patient scientific observation with the detailed engraving for which she became known."
+      "text": "The first transatlantic telegraph cable, which was completed in 1858, stretched beneath the ocean between the coasts of Ireland and Newfoundland."
     },
     {
       "id": "B",
-      "text": "Merian's 1679 study traced the life cycles of European caterpillars close to home, while her 1705 Suriname work grew out of two years of fieldwork in South America and showed tropical insects with the plants they fed on."
+      "text": "Whereas the 1858 cable failed within about a month as operators drove its faint signals with damaging voltages, the 1866 cable — heavier, better insulated, and read by Thomson's sensitive galvanometer — carried messages reliably for years."
     },
     {
       "id": "C",
-      "text": "In 1705, Merian published Metamorphosis insectorum Surinamensium, a work based on two years of fieldwork in the South American colony of Suriname."
+      "text": "In 1866, a cable with a much heavier copper core and thicker insulation was laid across the Atlantic, and William Thomson supplied a mirror galvanometer that could read minute currents."
     },
     {
       "id": "D",
-      "text": "Both of Merian's major works combined careful scientific observation with the detailed, artistic engravings for which she became widely known."
+      "text": "The 1858 and 1866 cables together showed that messages could cross the Atlantic in minutes rather than in the weeks a ship required."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to emphasize a difference between Merian's 1679 European study and her 1705 Suriname work, and choice B contrasts them: caterpillars studied close to home versus tropical insects documented after fieldwork in South America. Choice A and choice D dwell on what the two works share, and choice C describes only the later work.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Maria Sibylla Merian was a naturalist and illustrator active in the late seventeenth and early eighteenth centuries.",
-      "In 1679 she published a study of European caterpillars, documenting how each species transformed from larva to adult.",
-      "In 1705 she published Metamorphosis insectorum Surinamensium, based on two years of fieldwork in the South American colony of Suriname.",
-      "The Suriname work depicted tropical insects together with the specific plants they fed on, in large, vivid illustrations.",
-      "Both works combined careful scientific observation with detailed, artistic engravings."
-    ],
-    "goal": "The student wants to emphasize a difference between Merian's 1679 European study and her 1705 Suriname work."
-  },
+  "explanation": "**Choice B is correct.** An emphasize-a-difference goal wants the two cables set against each other, and B does it in one contrastive frame: quick failure under high voltages versus years of reliable service under a gentler design.\n\n**The Full Solution:**\n- The notes supply the contrast's two sides: the 1858 cable's month-long life and voltage-driven death (bullet 2); the 1866 cable's heavier build, sensitive receiver, and years of service (bullets 3-5).\n- B binds them with \"Whereas,\" naming both cables and the fate of each.\n- Explicit contrast of both terms is what the goal demands.\n\n**Why the other choices are wrong:**\n- A: It describes the 1858 cable alone; one cable cannot exhibit a difference.\n- C: It describes the 1866 cable alone, leaving the 1858 side of the contrast unstated.\n- D: It emphasizes what the cables jointly proved — a similarity, the opposite of the goal.",
   "_meta": {
-    "anchor": "Maria Sibylla Merian — European caterpillar study vs. Suriname insects"
-  },
-  "module": 2
+    "anchor": "1858 versus 1866 Atlantic telegraph cables; difference goal"
+  }
 }

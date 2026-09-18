@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-181",
+  "question": "A greenhouse contains $360$ seedlings, and $35\\%$ of the seedlings are tomato plants. How many of the seedlings are tomato plants?",
+  "correctAnswer": "126",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**The correct answer is $126$.**\n\n**The Fast Way (~10s):** $35\\%$ of $360$ is $0.35 \\times 360 = 126$.\n\n**The Full Solution:**\nStep 1: \"$35\\%$ of the seedlings\" means $\\frac{35}{100}$ times the total number of seedlings, $360$.\nStep 2: Convert the percent to a decimal and multiply: $0.35 \\times 360 = 126$.\nStep 3: Check: $10\\%$ of $360$ is $36$, so $35\\%$ is $3.5 \\times 36 = 126$. $\\checkmark$\n\n**Common Mistakes:** Dividing instead of multiplying, $360 \\div 35 \\approx 10.29$; misplacing the decimal and using $0.035 \\times 360 = 12.6$; or computing the complement, $0.65 \\times 360 = 234$, which counts the seedlings that are not tomato plants.\n\n**Test Day Takeaway:** \"$p\\%$ of a whole\" is always $\\frac{p}{100}$ times the whole — convert the percent to a decimal first, then multiply."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "bank-ps-463",
+  "question": "A public health department screened $600$ samples for a virus at three collection sites. The table summarizes the results by site and by whether the sample tested positive or negative. One of these $600$ samples will be selected at random. What is the probability of selecting a sample that tested positive, given that the sample was not collected at Site 3?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "Site",
+        "Positive",
+        "Negative",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Site 1",
+          "12",
+          "108",
+          "120"
+        ],
+        [
+          "Site 2",
+          "27",
+          "153",
+          "180"
+        ],
+        [
+          "Site 3",
+          "21",
+          "279",
+          "300"
+        ],
+        [
+          "Total",
+          "60",
+          "540",
+          "600"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{13}{200}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{1}{10}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{13}{100}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{13}{40}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the 39 positives from Sites 1 and 2 by the grand total 600 instead of the 300 samples not from Site 3",
+    "B": "reports the overall positive rate 60/600, ignoring the condition entirely",
+    "D": "divides 39 by Site 1s total of 120 instead of the combined 300 from Sites 1 and 2"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Two-Way Table Conditional Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Restrict to Sites $1$ and $2$: $120 + 180 = 300$ samples, of which $12 + 27 = 39$ are positive, so the probability is $\\frac{39}{300} = \\frac{13}{100}$.\n\n**The Full Solution:**\nStep 1: Build the restricted group. \"Not collected at Site 3\" keeps Sites $1$ and $2$: $120 + 180 = 300$ samples. That count is the new denominator.\nStep 2: Count the favorable outcomes inside it. Positives from Sites $1$ and $2$ are $12 + 27 = 39$.\nStep 3: Divide and simplify. $\\frac{39}{300} = \\frac{13}{100}$. Check: $13\\%$ of $300$ is $39$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{13}{200}$): divides $39$ by the grand total $600$. Conditioning replaces the denominator with the size of the given group.\n* Choice B ($\\frac{1}{10}$): is $\\frac{60}{600}$, the overall positive rate, which ignores the Site 3 condition.\n* Choice D ($\\frac{13}{40}$): is $\\frac{39}{120}$, using only Site 1 in the denominator instead of Sites 1 and 2 together.\n\n**Test Day Takeaway:** A conditional probability replaces the denominator with the size of the given group. Build that group first, then count inside it."
+}

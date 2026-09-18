@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
-  "question": "According to the text, what happens when the muscles surrounding a chromatophore contract?",
+  "module": 2,
+  "passage": "The court theater at Drottningholm, outside Stockholm, still possesses its eighteenth-century stage machinery in working order, and performances there still use it. Scene changes depend on a system of shafts, ropes, and rolling carriages installed beneath the stage. When stagehands turn the great capstan below the floor, every carriage moves at once: each painted flat in view slides away into concealment as a fresh one slides out to replace it, and the whole scene is transformed in a few seconds, in full sight of the audience. Eighteenth-century stagecraft treated such visible transformation not as a failure of illusion but as a spectacle in its own right.",
+  "question": "According to the text, what happens when stagehands turn the capstan beneath the theater's stage?",
   "choices": [
     {
       "id": "A",
-      "text": "The pigment sac shrinks to a dot, and its color all but disappears from view."
+      "text": "The stage floor rises slowly into full view so that the audience can watch the eighteenth-century machinery at work beneath it."
     },
     {
       "id": "B",
-      "text": "The animal becomes temporarily unable to detect the colors of its surroundings."
+      "text": "A curtain falls to conceal the stage while stagehands carry new scenery into position."
     },
     {
       "id": "C",
-      "text": "The pigment sac stretches into a flat disc, and its color becomes visible."
+      "text": "All of the painted flats in view are exchanged for fresh ones at once, transforming the scene within seconds."
     },
     {
       "id": "D",
-      "text": "The octopus sends a single rippling pattern slowly across the whole length of its body."
+      "text": "Each painted flat is replaced one at a time, in an order fixed by the machinery's design."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage states that when the muscles contract, the pigment sac stretches into a flat disc and its color becomes visible. Choice A describes what happens when the muscles relax instead; choice B refers to the animal's color blindness, not to muscle contraction; and choice D distorts the passage's point that the patterns move quickly across the body.",
-  "passage": "Octopuses change color using millions of tiny organs in their skin called chromatophores, each a sac of pigment surrounded by muscles. When the muscles contract, the sac stretches into a flat disc and its color becomes visible; when they relax, the sac shrinks to a dot and the color all but disappears. Because the animal can control these organs almost instantly and in small groups, it can send rippling patterns across its body in a fraction of a second. Octopuses are color-blind, however, so exactly how they match the colors of their surroundings remains unsettled.",
+  "explanation": "**Choice C is correct.** The text says that when the capstan turns, \"every carriage moves at once,\" each visible flat slides away as a fresh one replaces it, and \"the whole scene is transformed in a few seconds.\"\n\n**The Full Solution:**\n- The capstan drives all the carriages simultaneously.\n- Each flat in view is exchanged for a replacement.\n- The transformation takes seconds — exactly what choice C reports.\n\n**Why the other choices are wrong:**\n- A: The machinery stays beneath the stage; nothing in the text has the floor rise or the works become visible.\n- B: The text says the change happens \"in full sight of the audience,\" with no curtain and no carrying.\n- D: \"Every carriage moves at once\" rules out one-at-a-time replacement.",
   "_meta": {
-    "anchor": "octopus chromatophores; detail stem"
-  },
-  "module": 2
+    "anchor": "Drottningholm court theater — simultaneous scene change by capstan; detail stem"
+  }
 }

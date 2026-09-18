@@ -1,31 +1,31 @@
 {
-  "id": 1252,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "For years, the town's flood defenses had consisted of a concrete wall built tight against the river's edge. After a series of damaging floods overtopped it, engineers were asked to strengthen the town's protection. They might have responded in the obvious way, by raising the existing wall higher. The engineers did not take that approach. ______ they moved the embankments well back from the channel and restored a band of low-lying meadow beside the river, giving high water room to spread out and lose its force before it reached the houses.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Therefore,"
-    },
-    {
-      "id": "B",
-      "text": "Instead,"
-    },
-    {
-      "id": "C",
-      "text": "Likewise,"
-    },
-    {
-      "id": "D",
-      "text": "Meanwhile,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The previous sentence says what the engineers did not do (raise the existing wall), and this sentence gives the alternative they chose (setting the embankments back and restoring a floodplain), so \"Instead\" correctly marks that substitution. \"Therefore\" would present the action as a logical consequence rather than a chosen alternative. \"Likewise\" would signal that the two actions are similar, but raising a wall and setting the banks back are being contrasted. \"Meanwhile\" would mark two things happening at the same time, which is not the relationship here."
+ "id": 1252,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "Mariners' reports kept confusing two lighthouses that stood twelve miles apart on one low, featureless stretch of coast. The district board might have fixed the problem in the obvious way, by rebuilding one of the towers to a plainly different height. The board chose not to. ______ it had one tower painted in broad red and white bands and the other in a single dark spiral, giving each light a daytime identity at a fraction of what any rebuilding would have cost.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Therefore,"
+  },
+  {
+   "id": "B",
+   "text": "Instead,"
+  },
+  {
+   "id": "C",
+   "text": "Similarly,"
+  },
+  {
+   "id": "D",
+   "text": "Today,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage says what the board did not do — rebuild a tower — and the final sentence gives the substitute action it took: painting the towers with distinct patterns. One action replacing a rejected one calls for \"Instead.\"\n\n**The Full Solution:**\n- The obvious remedy is named: rebuild one tower to a different height.\n- It is explicitly declined: \"The board chose not to.\"\n- The last sentence supplies what the board did in its place — bands on one tower, a spiral on the other. A substitution after a refusal is exactly the relation \"Instead\" marks.\n\n**Why the other choices are wrong:**\n- A: \"Therefore\" would present the painting as a conclusion following logically from the refusal, but the refusal only clears the way; the painting is the alternative, not the consequence.\n- C: \"Similarly\" would liken the painting to the rebuilding, yet the two remedies are opposed, one chosen over the other.\n- D: \"Today\" shifts to the present, but the sentence continues the same past episode in the same past tense."
 }

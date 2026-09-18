@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
-  "passage": "Historians of South Asian landscape design have noted that the classic Mughal garden, or charbagh, was almost always organized around three recurring elements ______ that together turned a walled enclosure into a deliberate image of paradise on earth for the ruler and his court.",
+  "passage": "Across the dry Iranian plateau, communities short of surface water dug qanats, and each system depended on three coordinated elements ______ that together delivered groundwater to distant fields by gravity alone, with no pumps and no open channel exposed to the desert sun.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "—flowing water, geometric pathways, and shaded pavilions,"
+      "text": "—a mother well sunk to the water table, a gently sloped tunnel, and a line of vertical access shafts,"
     },
     {
       "id": "B",
-      "text": "—flowing water, geometric pathways, and shaded pavilions—"
+      "text": "—a mother well sunk to the water table, a gently sloped tunnel, and a line of vertical access shafts—"
     },
     {
       "id": "C",
-      "text": ", flowing water, geometric pathways, and shaded pavilions,"
+      "text": ", a mother well sunk to the water table, a gently sloped tunnel, and a line of vertical access shafts,"
     },
     {
       "id": "D",
-      "text": "flowing water, geometric pathways, and shaded pavilions"
+      "text": "a mother well sunk to the water table, a gently sloped tunnel, and a line of vertical access shafts"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The list \"flowing water, geometric pathways, and shaded pavilions\" is an interrupting element that names the three elements just mentioned, and because the list itself contains commas, a matched pair of em dashes sets it off most cleanly. Choice A opens with a dash but closes with a comma, so the marks do not match. Choice C uses commas on both sides, which makes the list-internal commas and the boundary commas indistinguishable. Choice D supplies no punctuation at all, running the appositive directly into the clause that follows."
+  "explanation": "**Choice B is correct.** The list of three elements is an interruption between \"three coordinated elements\" and the clause \"that together delivered...\" — and an interrupting list containing its own commas must be enclosed by a matched pair of dashes.\n\n**The Full Solution:**\n- The sentence's spine is \"each system depended on three coordinated elements... that together delivered groundwater.\"\n- The naming of the elements is parenthetical, and because it carries internal commas, commas cannot set it off legibly; dashes can — provided they come as a pair, one opening and one closing.\n\n**Why the other choices are wrong:**\n- A: It opens with a dash but closes with a comma, an unmatched pair.\n- C: Commas around a list already full of commas leave the boundaries of the interruption unreadable.\n- D: With no punctuation at all, the list collides with both the noun before it and the clause after it."
 }

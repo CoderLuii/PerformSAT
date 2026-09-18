@@ -1,0 +1,29 @@
+{
+ "question": "A survey of an oyster reef models the relationship between water depth $x$ and larval settlement $y$ with the equation $6x - 9y = 21$. A second model of the same relationship has the same graph in the $xy$-plane. Which equation could be the second model?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2x - 3y = 7$"
+  },
+  {
+   "id": "B",
+   "text": "$2x - 3y = 21$"
+  },
+  {
+   "id": "C",
+   "text": "$2x + 3y = 7$"
+  },
+  {
+   "id": "D",
+   "text": "$6x - 9y = 7$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "divides the coefficients by $3$ but leaves the constant at $21$",
+  "C": "divides correctly but flips the sign of the $y$-term",
+  "D": "divides the constant by $3$ but leaves the coefficients unchanged"
+ },
+ "explanation": "**SAT Pattern: Same Line Infinitely Many Solutions**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Divide $6x - 9y = 21$ by $3$: every term shrinks, giving $2x - 3y = 7$.\n\n**The Full Solution:**\n\nStep 1: Two equations have the same graph exactly when one is a nonzero multiple of the other, so look for a common factor.\n\nStep 2: Each of $6$, $-9$, and $21$ is divisible by $3$.\n\nStep 3: Dividing gives $2x - 3y = 7$. Check $(5, 1)$: it satisfies $6(5) - 9(1) = 21$ and $2(5) - 3(1) = 7$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($2x - 3y = 21$): divides the coefficients by $3$ but leaves the constant, so the line shifts away from the original.\n\n* Choice C ($2x + 3y = 7$): divides correctly but changes $-3y$ to $+3y$, reversing the slope.\n\n* Choice D ($6x - 9y = 7$): divides only the constant, again moving the line.\n\n**Test Day Takeaway:** Divide the whole equation by the common factor; a term left behind produces a parallel line, not the same one.",
+ "id": "bank-alg-446"
+}

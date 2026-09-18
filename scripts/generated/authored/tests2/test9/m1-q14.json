@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A workshop membership costs $\\$338$ for the month plus $\\$26$ for each hour of shop time used. A member was billed $\\$1{,}378$ for the month. How many hours of shop time did the member use?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$53$"
+  },
+  {
+   "id": "D",
+   "text": "$66$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the roles of the two given amounts, computing (1,378 - 26)/338",
+  "C": "ignores the 338-dollar monthly charge and divides 1,378 by 26",
+  "D": "adds the monthly charge instead of subtracting it, computing (1,378 + 338)/26"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Word-to-Expression Translation**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Strip the fixed charge first: $1{,}378-338=1{,}040$, and $\\frac{1{,}040}{26}=40$ hours.\n\n**The Full Solution:**\nStep 1: Let $h$ be the number of hours of shop time. The bill is a fixed charge plus a per-hour charge, so $338+26h=1{,}378$.\nStep 2: Subtract the fixed charge from both sides: $26h=1{,}378-338=1{,}040$.\nStep 3: Divide by the hourly rate: $h=\\frac{1{,}040}{26}=40$ hours. Check: $338+26(40)=338+1{,}040=1{,}378$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): treats $\\$26$ as the fixed charge and $\\$338$ as the hourly rate, computing $\\frac{1{,}378-26}{338}=4$.\n* Choice C ($53$): divides the whole bill by the hourly rate, $\\frac{1{,}378}{26}=53$, charging the member for the $\\$338$ at the hourly rate too.\n* Choice D ($66$): adds the monthly charge instead of removing it, $\\frac{1{,}378+338}{26}=66$.\n\n**Test Day Takeaway:** A one-time amount and a per-unit amount play different roles: subtract the one-time charge FIRST, then divide by the rate. Ask which number is attached to the word “each.”"
+}

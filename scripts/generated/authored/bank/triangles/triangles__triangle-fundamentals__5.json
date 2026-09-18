@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "In triangle $ABC$, $AB = AC$ and the measure of angle $A$ is $x°$. If triangle $ABC$ is an obtuse triangle, which of the following gives all possible values of $x$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0 < x < 60$"
+  },
+  {
+   "id": "B",
+   "text": "$0 < x < 90$"
+  },
+  {
+   "id": "C",
+   "text": "$60 < x < 90$"
+  },
+  {
+   "id": "D",
+   "text": "$90 < x < 180$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "describes the vertex angles for which angle $A$ is the smallest angle, not the obtuse cases",
+  "B": "the range that keeps angle $A$ acute, which leaves the triangle acute rather than obtuse",
+  "C": "makes angle $A$ the largest angle but still less than $90°$, so no angle is obtuse"
+ },
+ "correctAnswer": "D",
+ "hint": "Only one angle in a triangle can be larger than $90°$ — decide which one it has to be here.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~45s):** The two base angles are equal, so only the vertex angle can exceed $90°$: $90 < x < 180$.\n\n**The Full Solution:**\nStep 1: Since $AB = AC$, angles $B$ and $C$ are equal; call each $y°$, so $x + 2y = 180$.\nStep 2: If a base angle were obtuse then $y > 90$, so $2y > 180$, which is impossible. The obtuse angle must therefore be angle $A$.\nStep 3: Angle $A$ is obtuse exactly when $x > 90$, and $x < 180$ is needed to leave positive base angles, so $90 < x < 180$.\n\nVerification: $x = 100$ leaves base angles of $40°$ each and an obtuse triangle, while $x = 80$ leaves base angles of $50°$ and an acute triangle. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0 < x < 60$): describes the vertex angles for which angle $A$ is the smallest angle, not the obtuse cases.\n* Choice B ($0 < x < 90$): the range that keeps angle $A$ acute, which leaves the triangle acute rather than obtuse.\n* Choice C ($60 < x < 90$): makes angle $A$ the largest angle but still less than $90°$, so no angle is obtuse.\n\n**Test Day Takeaway:** A triangle has at most one non-acute angle. In an isosceles triangle that angle can only be the one between the two equal sides."
+}

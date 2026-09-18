@@ -1,3 +1,4 @@
+/* eslint-disable no-eval -- offline content validator run with node; evaluates generated snippets, never user input */
 /**
  * Schema validation for all content tabs (module-level and lesson-level).
  * Run with: node src/data/contentTabs/validateAll.js

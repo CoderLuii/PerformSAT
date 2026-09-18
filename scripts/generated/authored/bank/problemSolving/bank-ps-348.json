@@ -1,0 +1,32 @@
+{
+  "id": "bank-ps-348",
+  "question": "The dot plot shows the $15$ values in a data set. Three additional values, each equal to $13$, are added to the data set. What is the mode of the resulting data set of $18$ values?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 11,
+          "count": 2
+        },
+        {
+          "value": 12,
+          "count": 6
+        },
+        {
+          "value": 13,
+          "count": 4
+        },
+        {
+          "value": 14,
+          "count": 3
+        }
+      ],
+      "xMin": 10,
+      "xMax": 15,
+      "xLabel": "Value"
+    }
+  },
+  "correctAnswer": "13",
+  "explanation": "**SAT Pattern: Mode from List**\n\n**The correct answer is $13$.**\n\n**The Fast Way (~15s):** The value $13$ goes from $4$ occurrences to $7$, passing the $6$ occurrences of $12$, so the new mode is $13$.\n\n**The Full Solution:**\nStep 1: Read the stacks: $11$ occurs twice, $12$ occurs six times, $13$ occurs four times, and $14$ occurs three times, for $15$ values in all.\nStep 2: Adding three more $13$s raises the count for $13$ to $4 + 3 = 7$ and leaves every other count unchanged.\nStep 3: The counts are now $2$, $6$, $7$, and $3$, so the greatest is $7$ and the mode is $13$. Check: the data set now holds $18$ values, and $2 + 6 + 7 + 3 = 18$. $\\checkmark$\n\n**Common Mistakes:** Reporting $12$ gives the mode of the original data set, before the three values were added. Reporting $7$ gives the new frequency rather than the value. Reporting $14$ gives the greatest value in the data set, which is not the most frequent one.\n\n**Test Day Takeaway:** When values are added or removed, update the tally first and then re-read the largest count. The mode can move even though most of the data never changed."
+}

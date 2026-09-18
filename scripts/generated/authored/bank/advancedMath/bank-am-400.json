@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-400",
+ "question": "The energy stored in a compressed-air cavern, in megawatt-hours, is modeled by $E(t)=-4t^2+48t+20$, where $t$ is the number of hours after charging begins. For which interval of $t$ is the stored energy greater than its value at $t=2$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0<t<6$"
+  },
+  {
+   "id": "B",
+   "text": "$2<t<10$"
+  },
+  {
+   "id": "C",
+   "text": "$2<t<6$"
+  },
+  {
+   "id": "D",
+   "text": "$6<t<12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the interval from the start of charging to the peak at t = 6",
+  "C": "stops at the peak t = 6 instead of the second solution t = 10",
+  "D": "mirrors the peak to t = 12 instead of solving the inequality"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** $E(2)=100$, and $E(t)>100$ reduces to $t^2-12t+20<0$, that is $(t-2)(t-10)<0$, so $2<t<10$.\n\n**The Full Solution:**\nStep 1: Compute the reference value: $E(2)=-16+96+20=100$.\nStep 2: Solve $-4t^2+48t+20>100$. Subtracting $100$ and dividing by $-4$ (which reverses the inequality) gives $t^2-12t+20<0$.\nStep 3: Factor: $(t-2)(t-10)<0$, which holds exactly for $2<t<10$. Check: $E(6)=164>100$, while $E(1)=64$ and $E(11)=64$ are both below $100$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0<t<6$): uses the stretch from the start of charging to the peak at $t=6$ instead of solving the inequality.\n* Choice C ($2<t<6$): stops at the peak $t=6$ rather than at the second solution $t=10$.\n* Choice D ($6<t<12$): mirrors the peak to $t=12$ instead of using the two values where $E$ equals $100$.\n\n**Test Day Takeaway:** A \"greater than the value at\" question is a quadratic inequality: the two boundary times are symmetric about the vertex."
+}

@@ -9,34 +9,33 @@
  "studentNotes": {
   "intro": "While researching a topic, a student has taken the following notes:",
   "bullets": [
-   "Lichens have long been described as a partnership between a fungus and a photosynthetic partner, an alga or a cyanobacterium.",
-   "In this model, the fungus provides structure and protection while the photosynthetic partner provides food.",
-   "For more than a century, biologists treated this two-partner model as complete.",
-   "In 2016, biologist Toby Spribille and colleagues found that many lichens also contain a second, previously overlooked fungus: a basidiomycete yeast in the lichen's outer layer.",
-   "The yeast's presence helped explain why two lichens with seemingly identical algal and fungal partners could look and behave differently.",
-   "Spribille's finding prompted researchers to reexamine lichens long assumed to be fully understood."
+   "Artificial light at night obscures the stars and disrupts nocturnal wildlife, including migrating birds and sea turtle hatchlings.",
+   "DarkSky International certifies dark-sky preserves — parks and reserves that commit to strict outdoor-lighting standards and public astronomy programming.",
+   "Certification is voluntary: a park applies for recognition and demonstrates that its lighting meets the organization's standards.",
+   "Some municipalities instead adopt lighting ordinances — local laws regulating the brightness, shielding, and color of outdoor fixtures.",
+   "Ordinances are binding on residents and businesses within the municipality and are enforced like other local codes."
   ],
-  "goal": "The student wants to explain how Spribille's finding revised the traditional understanding of lichens."
+  "goal": "The student wants to emphasize a difference between dark-sky certification and municipal lighting ordinances."
  },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Toby Spribille is a biologist whose 2016 research, carried out with several colleagues, examined the composition of lichens."
+   "text": "Dark-sky certification and lighting ordinances both respond to the problems caused by artificial light at night, which obscures the stars and disrupts nocturnal wildlife."
   },
   {
    "id": "B",
-   "text": "Lichens have long been described as a partnership between a fungus, which provides structure, and a photosynthetic partner, which provides food."
+   "text": "Whereas dark-sky certification is a voluntary recognition that a park seeks out, a municipal lighting ordinance is a binding local law, enforced like any other code on the residents and businesses it covers."
   },
   {
    "id": "C",
-   "text": "Although biologists had treated lichens as a two-partner fungus-and-alga system for over a century, Spribille and colleagues found in 2016 that many also contain an overlooked yeast, helping explain why lichens with identical partners can still differ."
+   "text": "DarkSky International certifies parks and reserves that commit to strict outdoor-lighting standards and offer public astronomy programming."
   },
   {
    "id": "D",
-   "text": "Because the yeast Spribille identified sits in the lichen's outer layer, it had been overlooked by the biologists who first described the two-partner model."
+   "text": "Municipalities that adopt lighting ordinances regulate the brightness, shielding, and color of outdoor fixtures, and parks pursuing dark-sky certification must likewise demonstrate that their outdoor lighting meets DarkSky International's standards."
   }
  ],
- "correctAnswer": "C",
- "explanation": "The correct answer is C. The goal is to show how Spribille's finding revised the older understanding, and C names the long-held two-partner model, states the 2016 discovery of an overlooked yeast, and notes what that discovery explained—performing the revision the goal asks for. A introduces Spribille biographically without saying what changed; B states only the traditional model and stops before the revision; and D reports one detail about why the yeast was missed but never states how the finding revised the understanding of lichens."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The goal asks for a difference, and B is built on the notes' sharpest contrast: voluntary certification versus a binding ordinance, held against each other in a single \"Whereas...\" sentence.\n\n**The Full Solution:**\n- The notes' clearest distinction: certification is \"voluntary\" and sought by the park, while an ordinance is \"binding\" law \"enforced like other local codes.\"\n- Emphasizing a difference requires setting the two approaches against each other, which B's construction does directly.\n\n**Why the other choices are wrong:**\n- A: It does the opposite of the goal, foregrounding what the approaches share — a common motivation.\n- C: It describes certification alone; with only one approach on the page, no difference can be emphasized.\n- D: It mentions both approaches but its \"likewise\" welds them together on a similarity (both involve lighting standards), suppressing precisely the voluntary-versus-binding distinction the notes make available."
 }

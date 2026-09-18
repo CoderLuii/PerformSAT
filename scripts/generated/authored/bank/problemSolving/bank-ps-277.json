@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-277",
+  "question": "Based on a random sample of $250$ adult sockeye salmon from a river, the mean length of the adult sockeye salmon in that river was estimated with a $95\\%$ confidence interval of $58.4$ centimeters to $61.2$ centimeters. Which of the following statements is best supported by this interval?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mean length of the adult sockeye salmon in the river is exactly $59.8$ centimeters."
+    },
+    {
+      "id": "B",
+      "text": "It is plausible that the mean length of the adult sockeye salmon in the river is $60.5$ centimeters."
+    },
+    {
+      "id": "C",
+      "text": "Every adult sockeye salmon in the river has a length between $58.4$ centimeters and $61.2$ centimeters."
+    },
+    {
+      "id": "D",
+      "text": "It is not plausible that the mean length of the adult sockeye salmon in the river is $59.0$ centimeters."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the interval's midpoint as an exact population value",
+    "C": "applies an interval for the mean to individual fish",
+    "D": "rejects a value that lies inside the interval"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Confidence Interval Interpretation**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** A confidence interval lists the plausible values of the population mean. $60.5$ lies between $58.4$ and $61.2$, so it is plausible.\n\n**The Full Solution:**\nStep 1: The interval $58.4$ to $61.2$ centimeters is an interval of plausible values for the mean length of all adult sockeye salmon in the river.\nStep 2: Test each candidate value against the interval: $60.5$ is inside it, so choice B's claim is supported.\nStep 3: Check the remaining claims. $59.8$ is the midpoint, which is the estimate, not a value the data prove exact; $59.0$ is also inside the interval, so it cannot be called implausible; and the interval describes a mean, not the lengths of individual salmon. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: $\\frac{58.4 + 61.2}{2} = 59.8$ is the sample estimate at the center of the interval, but the interval exists because the population mean is uncertain.\n* Choice C: individual salmon vary far more than their mean does; the interval bounds the mean only.\n* Choice D: $59.0$ is inside the interval, so the data support it rather than rule it out.\n\n**Test Day Takeaway:** \"Plausible\" means inside the interval, and the interval is about a mean, never about every individual."
+}

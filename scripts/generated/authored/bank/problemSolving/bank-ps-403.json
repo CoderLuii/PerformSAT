@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-403",
+  "question": "The table shows the number of concert tickets sold for each of two sections on each of two nights. If one of the $300$ tickets sold is selected at random, what is the probability that the selected ticket was sold for Saturday?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Friday",
+        "Saturday",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Orchestra",
+          "84",
+          "96",
+          "180"
+        ],
+        [
+          "Balcony",
+          "56",
+          "64",
+          "120"
+        ],
+        [
+          "Total",
+          "140",
+          "160",
+          "300"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{8}{25}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{7}{15}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{8}{15}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3}{5}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses only the $96$ orchestra tickets sold for Saturday",
+    "B": "gives the probability that the ticket was sold for Friday",
+    "D": "divides the $96$ Saturday orchestra tickets by the $160$ Saturday tickets, a conditional probability"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The Saturday column totals $160$ out of $300$ tickets, so the probability is $\\frac{160}{300} = \\frac{8}{15}$.\n\n**The Full Solution:**\nStep 1: The question asks only about the night, so the favorable outcomes fill the entire Saturday column.\nStep 2: That column totals $96 + 64 = 160$ tickets out of $300$ sold.\nStep 3: The probability is $\\frac{160}{300} = \\frac{8}{15}$, dividing both parts by $20$. Check: Friday accounts for $\\frac{140}{300} = \\frac{7}{15}$, and $\\frac{7}{15} + \\frac{8}{15} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{8}{25}$): uses only the $96$ orchestra tickets sold for Saturday\n* Choice B ($\\frac{7}{15}$): gives the probability that the ticket was sold for Friday\n* Choice D ($\\frac{3}{5}$): divides the $96$ Saturday orchestra tickets by the $160$ Saturday tickets, a conditional probability\n\n**Test Day Takeaway:** Column totals answer questions about the column variable alone; a cell would answer a question naming both variables."
+}

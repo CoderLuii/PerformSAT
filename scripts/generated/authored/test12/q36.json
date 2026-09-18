@@ -1,31 +1,31 @@
 {
-  "id": 1236,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "Until the late 1970s, biologists assumed that essentially all life ultimately depended on sunlight: plants and algae capture solar energy, and everything else eats them or eats their eaters. The discovery of dense animal communities clustered around hydrothermal vents on the deep ocean floor, far below the reach of any light, forced a revision of that picture. Researchers found that the foundation of these communities is a population of bacteria that draw energy not from sunlight but from chemical compounds, especially hydrogen sulfide, venting from the seafloor—a process now called chemosynthesis. Tube worms, clams, and other vent animals either host these bacteria in their tissues or graze on them. The finding established that a complete ecosystem can be built on a chemical rather than a solar energy source.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Tube worms, giant clams, and the various other animals living around deep-sea hydrothermal vents either host chemosynthetic bacteria within their own tissues or graze directly on them."
-    },
-    {
-      "id": "B",
-      "text": "The discovery of vent communities powered by chemosynthetic bacteria showed that a complete ecosystem can rest on a chemical rather than a solar energy source."
-    },
-    {
-      "id": "C",
-      "text": "Before the late 1970s, biologists assumed that nearly all of the life on Earth ultimately depended on energy that had been captured from sunlight."
-    },
-    {
-      "id": "D",
-      "text": "Hydrothermal vents release hydrogen sulfide along with other chemical compounds from the seafloor into the surrounding cold deep-ocean water."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage builds to the claim that vent communities, fed by chemosynthetic bacteria, prove an entire ecosystem can run on chemical rather than solar energy, overturning the older assumption. B states that. A describes how the vent animals get their energy, a supporting detail. C gives the prior assumption the discovery revised, not the main point. D is a fact about the vents themselves but not the central idea the passage develops."
+ "id": 1236,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "Wild rice, called manoomin by the Ojibwe people who have gathered it for centuries, grows untended in shallow lakes and rivers, and no one plants it in fields. It would be wrong, though, to call the plant unmanaged. Ojibwe families historically returned to the same stands year after year, timed the harvest so that ripe seed showered back into the water as the canoes moved through, cleared competing vegetation from the beds, and established new stands by scattering seed in bays where none had grown. Ethnobotanists who study these practices describe manoomin as a tended landscape rather than a found one: a food never domesticated, in the sense of being genetically transformed, yet deliberately sustained and extended by the people who depended on it.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Ojibwe families historically cleared competing vegetation from wild rice beds and scattered seed in bays where the plant had not grown before."
+  },
+  {
+   "id": "B",
+   "text": "Although manoomin was never planted in fields or domesticated, Ojibwe harvesting practices deliberately sustained and extended the stands, making the plant far from unmanaged."
+  },
+  {
+   "id": "C",
+   "text": "Wild rice grows untended in the shallow lakes and rivers of the regions where the Ojibwe people have gathered it for centuries."
+  },
+  {
+   "id": "D",
+   "text": "Ethnobotanists have concluded that manoomin was in fact gradually domesticated over its centuries of harvesting, though the genetic changes involved long went unnoticed."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage's pivot is the second sentence — \"It would be wrong, though, to call the plant unmanaged\" — and everything after it supports that correction: the harvest reseeded the stands, beds were cleared, new bays were sown. B states the correction with its qualifier intact (no fields, no domestication, yet real management).\n\n**The Full Solution:**\n- The opening concedes the surface facts: manoomin grows untended and is not planted in fields.\n- The turn rejects the inference those facts invite — that the plant was unmanaged.\n- The evidence lists deliberate practices: returning to stands, timing the harvest so seed showered back, clearing competitors, seeding new bays.\n- The close names the resulting idea: a \"tended landscape,\" sustained and extended without domestication. B compresses exactly this.\n\n**Why the other choices are wrong:**\n- A: It lists two of the practices — supporting evidence, not the idea they support.\n- C: It restates only the opening concession, the very impression the passage goes on to correct.\n- D: It contradicts the text, which says manoomin was never domesticated \"in the sense of being genetically transformed.\""
 }

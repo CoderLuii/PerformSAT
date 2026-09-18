@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-345",
+  "question": "The table gives the area covered by algae in a lake at the start of each of three consecutive years. The area covered grows exponentially. Which function $A$ gives the area covered, in square meters, $t$ years after 2018?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Year",
+        "Area covered (square meters)"
+      ],
+      "rows": [
+        [
+          "2018",
+          "250"
+        ],
+        [
+          "2019",
+          "300"
+        ],
+        [
+          "2020",
+          "360"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$A(t) = 250 + 55t$"
+    },
+    {
+      "id": "B",
+      "text": "$A(t) = 250(1.44)^t$"
+    },
+    {
+      "id": "C",
+      "text": "$A(t) = 250(1.2)^t$"
+    },
+    {
+      "id": "D",
+      "text": "$A(t) = 250(1.2)^{2t}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "models a constant yearly increase",
+    "B": "uses the two-year factor as the yearly factor",
+    "D": "doubles the exponent"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Build Exponential Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Consecutive years give $\\dfrac{300}{250} = 1.2$ and $\\dfrac{360}{300} = 1.2$, so $A(t) = 250(1.2)^t$ with $t$ measured from 2018.\n\n**The Full Solution:**\nStep 1: Measure $t$ from 2018, so the initial area is $A(0) = 250$ square meters.\nStep 2: The ratio of each year's area to the previous year's is $1.2$ in both cases, so the yearly growth factor is $1.2$.\nStep 3: $A(t) = 250(1.2)^t$. Check: $A(2) = 250(1.44) = 360$, matching the 2020 row. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($A(t) = 250 + 55t$): uses the average yearly increase of $\\dfrac{360 - 250}{2} = 55$ square meters, treating the growth as linear.\n* Choice B ($A(t) = 250(1.44)^t$): uses the two-year factor $\\dfrac{360}{250} = 1.44$ as if it applied every year.\n* Choice D ($A(t) = 250(1.2)^{2t}$): doubles the exponent, applying two years of growth in each single year.\n\n**Test Day Takeaway:** Match the growth factor to the time step of the exponent — a factor measured over two years belongs with an exponent of $\\dfrac{t}{2}$, not $t$."
+}

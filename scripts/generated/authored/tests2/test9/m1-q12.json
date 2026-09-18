@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A bin holds 5 titanium washers and n steel washers. An inspector reaches in and pulls out two washers at the same time, and the probability that both are titanium is $\\frac{5}{33}$. What is the value of n?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$28$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "matches 132 = 12 x 11 to the wrong factor, setting n + 4 = 12 instead of n + 5 = 12",
+  "C": "reports the total number of washers, 12, rather than the number of steel washers",
+  "D": "treats 5/33 as a one-draw probability and solves 5/(5 + n) = 5/33"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** With $T=n+5$ washers, $\\frac{5}{T}\\cdot\\frac{4}{T-1}=\\frac{5}{33}$ forces $T(T-1)=132=12\\cdot 11$, so $T=12$ and $n=7$.\n\n**The Full Solution:**\nStep 1: Let $T=n+5$ be the total number of washers. Pulling two at once is the same as drawing two without replacement: the first is titanium with probability $\\frac{5}{T}$, and then only $4$ titanium washers remain among $T-1$.\nStep 2: So $\\frac{5}{T}\\cdot\\frac{4}{T-1}=\\frac{20}{T(T-1)}=\\frac{5}{33}$. Cross-multiplying gives $5T(T-1)=660$, so $T(T-1)=132$.\nStep 3: $132=12\\cdot 11$, so $T=12$ and $n=12-5=7$. Check: $\\frac{5}{12}\\cdot\\frac{4}{11}=\\frac{20}{132}=\\frac{5}{33}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($8$): finds $T(T-1)=132$ correctly but sets $n+4=12$, matching the total to the SECOND factor instead of the first.\n* Choice C ($12$): this is $T$, the total number of washers; the question asks only for the steel ones.\n* Choice D ($28$): treats $\\frac{5}{33}$ as the chance of one titanium washer, solving $\\frac{5}{5+n}=\\frac{5}{33}$ to get $n=28$.\n\n**Test Day Takeaway:** Without replacement, the second fraction loses one from BOTH the numerator and the denominator. Reduce the equation to $T(T-1)=\\text{integer}$ and factor it as two consecutive integers — then answer the quantity actually asked for."
+}

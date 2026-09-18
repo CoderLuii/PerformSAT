@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-046",
+  "question": "A random sample of $900$ adults in a county was surveyed, and $62\\%$ of those surveyed reported getting news primarily from online sources, with an associated margin of error of $3.2\\%$. Which of the following is the most appropriate conclusion based on this survey?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Exactly $62\\%$ of all adults in the county get news primarily from online sources."
+    },
+    {
+      "id": "B",
+      "text": "It is plausible that between $58.8\\%$ and $65.2\\%$ of the $900$ adults surveyed get news primarily from online sources."
+    },
+    {
+      "id": "C",
+      "text": "It is plausible that between $30\\%$ and $94\\%$ of all adults in the county get news primarily from online sources."
+    },
+    {
+      "id": "D",
+      "text": "It is plausible that between $58.8\\%$ and $65.2\\%$ of all adults in the county get news primarily from online sources."
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats a sample estimate as the exact population value; the margin of error exists because the estimate is uncertain.",
+    "B": "applies the interval to the sample itself, but the sample percent is exactly $62\\%$ and needs no interval.",
+    "C": "uses $32\\%$ as the margin of error, misplacing the decimal point in $3.2\\%$."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Confidence Interval from Margin of Error**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Estimate $\\pm$ margin of error gives the plausible range for the POPULATION: $62\\% - 3.2\\% = 58.8\\%$ to $62\\% + 3.2\\% = 65.2\\%$.\n\n**The Full Solution:**\nStep 1: The sample percent, $62\\%$, is an estimate of the percent of ALL adults in the county. The margin of error describes how far the true population percent plausibly lies from that estimate.\nStep 2: Plausible range $= 62\\% \\pm 3.2\\%$, that is, from $58.8\\%$ to $65.2\\%$.\nStep 3: The conclusion applies to the population (all adults in the county), not to the sample, whose percent is known exactly. Check: $65.2 - 58.8 = 6.4 = 2(3.2)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (exactly $62\\%$): treats a sample estimate as the exact population value; the margin of error exists because the estimate is uncertain.\n* Choice B (the $900$ surveyed): applies the interval to the sample itself, but the sample percent is exactly $62\\%$ and needs no interval.\n* Choice C ($30\\%$ to $94\\%$): uses $32\\%$ as the margin of error, misplacing the decimal point in $3.2\\%$.\n\n**Test Day Takeaway:** Estimate $\\pm$ margin of error is a statement about the population parameter, always phrased as \"plausible,\" never as \"exactly\" and never about the sample."
+}

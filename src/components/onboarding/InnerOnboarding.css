@@ -80,7 +80,21 @@
   transition: width 320ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.io-topbar-brand { margin-left: auto; display: flex; align-items: center; opacity: 0.92; }
+/* Leave mid-flow: dismisses for this session, saves nothing, re-offers later. */
+.io-leave {
+  margin-left: auto;
+  border: none;
+  background: none;
+  padding: 6px 10px;
+  font: 600 13px/1 var(--io-body-font);
+  color: var(--io-ink-faint);
+  border-radius: 9px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.io-leave:hover { color: var(--io-ink); background: rgba(20, 22, 28, 0.05); }
+
+.io-topbar-brand { display: flex; align-items: center; opacity: 0.92; }
 
 /* ── Step layout ──────────────────────────────────────────────────── */
 

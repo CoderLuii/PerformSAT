@@ -1,0 +1,32 @@
+{
+ "id": 21,
+ "question": "The figure shows the right triangle that one diagonal cuts off from a rectangular cargo-bay hatch on a delivery van. The perimeter of the hatch is 170 inches. How many square inches does the hatch cover?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     45,
+     0
+    ],
+    [
+     45,
+     30
+    ]
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "65 in"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "1500",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**The correct answer is $1500$.** Let the hatch measure $\\ell$ by $w$. The perimeter gives $\\ell + w = 85$, and the diagonal gives $\\ell^2 + w^2 = 65^2 = 4225$. Since $(\\ell + w)^2 = \\ell^2 + w^2 + 2\\ell w$, we get $7225 = 4225 + 2\\ell w$, so $\\ell w = 1500$ square inches.\n\n**The Fast Way (~45s):** $85^2 - 65^2 = 7225 - 4225 = 3000 = 2\\ell w$, so the area is $1500$.\n\n**The Full Solution:**\nStep 1: The perimeter is $2(\\ell + w) = 170$, so $\\ell + w = 85$ inches.\nStep 2: The diagonal is the hypotenuse of the right triangle shown, so $\\ell^2 + w^2 = 65^2 = 4225$.\nStep 3: Square the sum: $(\\ell + w)^2 = 85^2 = 7225$, and $7225 = \\ell^2 + w^2 + 2\\ell w = 4225 + 2\\ell w$. Then $2\\ell w = 3000$ and the area $\\ell w = 1500$ square inches. Check: the sides are $60$ and $25$, since $60 + 25 = 85$ and $60^2 + 25^2 = 3600 + 625 = 4225$; their product is $1500$ ✓\n\n**Common Mistakes:**\n* $3000$: stops at $2\\ell w$ without halving it.\n* $85$: reports the half-perimeter $\\ell + w$ rather than the product $\\ell w$.\n* $5525$: multiplies the half-perimeter by the diagonal, $85 \\times 65$, as though those were the side lengths.\n\n**Test Day Takeaway:** When a problem gives a sum and a sum of squares, expand $(\\ell + w)^2$ — the cross term $2\\ell w$ is the area, and you never need the individual sides."
+}

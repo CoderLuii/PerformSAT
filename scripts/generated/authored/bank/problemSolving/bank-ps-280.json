@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-280",
+  "question": "In a study, $480$ volunteers with chronic knee pain were randomly assigned either to a new physical therapy protocol or to the standard protocol. The mean reduction in pain score for the new protocol exceeded that for the standard protocol by $1.5$ points, and the $95\\%$ confidence interval for this difference was $0.4$ point to $2.6$ points. Which of the following interpretations is most defensible?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The new protocol reduces each volunteer's pain score by $1.5$ points more than the standard protocol does."
+    },
+    {
+      "id": "B",
+      "text": "Because the interval contains only positive values and the volunteers were assigned at random, the data support the conclusion that the new protocol produced a greater mean reduction for volunteers like those in the study."
+    },
+    {
+      "id": "C",
+      "text": "Because the volunteers were not selected at random from all adults with chronic knee pain, no cause-and-effect conclusion is possible for any group."
+    },
+    {
+      "id": "D",
+      "text": "The new protocol produces a mean reduction at least $2.6$ points greater than the standard protocol's for all adults with chronic knee pain."
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies a difference of means to every individual",
+    "C": "confuses random selection with random assignment",
+    "D": "treats the top endpoint as a guaranteed minimum and widens the population"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Confidence Interval Interpretation**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The whole interval $0.4$ to $2.6$ is positive, so a difference of zero is not plausible; random assignment makes that difference causal; and because the volunteers were not randomly selected, the conclusion stays with volunteers like these.\n\n**The Full Solution:**\nStep 1: Read the interval. Every plausible value of the difference in mean reduction is greater than $0$, so the data support the conclusion that the new protocol did more on average.\nStep 2: Read the design. Volunteers were assigned to protocols at random, which is what licenses a cause-and-effect statement about the protocols.\nStep 3: Check the scope. The volunteers were not selected at random from all adults with chronic knee pain, so the conclusion is limited to people like the study's volunteers, which is exactly what choice B claims. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: $1.5$ points is a difference of group means; individual volunteers vary around it, and many may show more or less.\n* Choice C: random selection controls generalization, not causation. Random assignment was used, so a causal conclusion about the study's participants is supported.\n* Choice D: $2.6$ is the top of the interval, the largest difference still plausible, not a floor, and \"all adults with chronic knee pain\" goes beyond the group studied.\n\n**Test Day Takeaway:** On a randomized study, answer in two parts: the interval decides *whether* there is an effect, the sampling decides *whom* it applies to."
+}

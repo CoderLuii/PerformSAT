@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-216",
+ "question": "A calibration worksheet uses two perpendicular lines. Line $u$ is the graph of $y = \\frac{1}{2}x + 3$, and the point $(6, 1)$ lies on line $v$. At the point where lines $u$ and $v$ meet, what is the value of $x + y$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4.5$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$17$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "uses slope $-\\frac{1}{2}$ for line $v$, negating without inverting, which puts the crossing at $(1, 3.5)$",
+  "B": "reports only the $y$-coordinate of the crossing point",
+  "D": "uses slope $2$ for line $v$, inverting without negating, which puts the crossing at $\\left(\\frac{28}{3}, \\frac{23}{3}\\right)$"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Line + Intersection**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Line $v$ is $y = -2x + 13$; solving with $y = \\frac{1}{2}x + 3$ gives $(4, 5)$, so $x + y = 9$.\n\n**The Full Solution:**\nStep 1: Line $u$ has slope $\\frac{1}{2}$, so line $v$ has slope $-2$; with $(6, 1)$, $1 = -12 + b$ gives $b = 13$ and $y = -2x + 13$.\nStep 2: Set the expressions equal: $\\frac{1}{2}x + 3 = -2x + 13$, so $x + 6 = -4x + 26$ and $5x = 20$, giving $x = 4$.\nStep 3: Then $y = \\frac{1}{2}(4) + 3 = 5$, so $x + y = 4 + 5 = 9$. Check: $-2(4) + 13 = 5$, so $(4, 5)$ lies on both lines.\n\n**Why the wrong answers are tempting:**\n* Choice A ($4.5$): uses slope $-\\frac{1}{2}$ for line $v$, negating without inverting, which puts the crossing at $(1, 3.5)$\n* Choice B ($5$): reports only the $y$-coordinate of the crossing point\n* Choice D ($17$): uses slope $2$ for line $v$, inverting without negating, which puts the crossing at $\\left(\\frac{28}{3}, \\frac{23}{3}\\right)$\n\n**Test Day Takeaway:** A perpendicular slope needs both moves, flip and negate; then read exactly the quantity the question names."
+}

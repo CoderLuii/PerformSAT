@@ -1,0 +1,6 @@
+{
+ "question": "Drillers cut a glacier ice core in the shape of a cylinder whose height is five times its radius. The core's volume measures $320\\pi$ cubic centimeters. How many centimeters long is the core's radius?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~30s):** With $h = 5r$ the volume is $\\pi r^2(5r) = 5\\pi r^3$, so $5r^3 = 320$, $r^3 = 64$, and $r = 4$.\n\n**The Full Solution:**\nStep 1: Write the height in terms of the radius: $h = 5r$ centimeters.\nStep 2: Substitute into $V = \\pi r^2 h$: $\\pi r^2 (5r) = 5\\pi r^3 = 320\\pi$.\nStep 3: Divide by $5\\pi$ to get $r^3 = 64$, so $r = 4$ centimeters. Check: $h = 20$ and $\\pi(16)(20) = 320\\pi$ ✓\n\n**Common Mistakes:**\n* $64$ — stops at $r^3$ without taking the cube root.\n* $8$ — treats the equation as $5r^2 = 320$, losing one factor of $r$ from $r^2 \\cdot r$.\n* $20$ — reports the height $5r$ instead of the radius.\n\n**Test Day Takeaway:** When the height is a multiple of the radius, $\\pi r^2 h$ collapses to a cube — solve for $r^3$, then take the cube root.",
+ "id": "bank-geo-045"
+}

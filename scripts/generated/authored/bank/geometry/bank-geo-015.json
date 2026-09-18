@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-015",
+  "question": "During a calibration run, a benchtop centrifuge holds a rotor whose sample tubes all start from marked positions on the rim. The operator spins the rotor and stops it at the first moment when every tube is back in the position from which it started. Which expression gives the measure, in radians, of the angle each tube has turned through?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{\\pi}{2}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\pi$"
+    },
+    {
+      "id": "C",
+      "text": "$2\\pi$"
+    },
+    {
+      "id": "D",
+      "text": "$4\\pi$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "gives a quarter revolution, the radian measure of 90 degrees",
+    "B": "gives a half revolution, the radian measure of 180 degrees",
+    "D": "gives two complete revolutions rather than one"
+  },
+  "explanation": "**SAT Pattern: Radian Measure of a Full Circle**\n\n**Choice C is correct.** One complete revolution is $2\\pi$ radians.\n\n**The Fast Way (~10s):** A full turn around a circle is $2\\pi$ radians.\n\n**The Full Solution:**\n\nStep 1: A tube returns to its starting position for the first time exactly when the rotor has made one complete revolution.\n\nStep 2: Radian measure is arc length divided by radius. Going once around a circle of radius $r$ traces an arc of length $2\\pi r$.\n\nStep 3: So the angle is $\\frac{2\\pi r}{r} = 2\\pi$ radians. Check: $2\\pi$ radians converts to $2\\pi \\cdot \\frac{180}{\\pi} = 360^\\circ$, one full turn.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{\\pi}{2}$): a quarter revolution, or $90^\\circ$.\n* Choice B ($\\pi$): a half revolution, or $180^\\circ$ — the value students reach for when they recall \"$\\pi$ is a circle.\"\n* Choice D ($4\\pi$): two complete revolutions, or $720^\\circ$.\n\n**Test Day Takeaway:** Anchor every radian question to $2\\pi = $ one full turn; halves, quarters, and thirds of a revolution all follow from it."
+}

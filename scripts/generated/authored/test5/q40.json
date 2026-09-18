@@ -1,34 +1,64 @@
 {
-  "id": 540,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 2,
-  "passage": "A planet's orbital period—the time it takes to complete one trip around the Sun—grows with its average distance from the Sun, but not in simple proportion. An astronomy student examining a table of orbital data for six planets argues that period increases faster than distance: a planet several times as far from the Sun as another takes disproportionately longer, not just proportionally longer, to complete an orbit. The student supports the claim with data from the table.\n\nAverage distance from the Sun (in astronomical units, AU) and orbital period for six planets\n| Planet  | Distance (AU) | Period (Earth years) |\n|---------|---------------|----------------------|\n| Mercury | 0.39          | 0.24                 |\n| Venus   | 0.72          | 0.62                 |\n| Earth   | 1.00          | 1.00                 |\n| Mars    | 1.52          | 1.88                 |\n| Jupiter | 5.20          | 11.9                 |\n| Saturn  | 9.58          | 29.4                 |",
-  "question": "Which choice most effectively uses data from the table to support the claim?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Saturn, about 9.6 times as far from the Sun as Earth, takes about 29 times as long to orbit, and Jupiter, at about 5.2 times Earth's distance, takes about 12 times as long."
-    },
-    {
-      "id": "B",
-      "text": "Mercury has both the smallest average distance shown, at 0.39 AU, and the shortest orbital period shown, at 0.24 Earth years, of the six planets listed in the table."
-    },
-    {
-      "id": "C",
-      "text": "Earth, by definition, lies at a distance of exactly 1.00 AU and completes one orbit in exactly 1.00 Earth years, providing the baseline for the table's other values."
-    },
-    {
-      "id": "D",
-      "text": "Jupiter's period of 11.9 years exceeds the combined orbital periods of Mercury, Venus, Earth, and Mars, which together total less than four Earth years."
-    }
+ "id": 540,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 2,
+ "passage": "The larger a telescope's main mirror or lens, the more light it gathers and the fainter the stars it can reveal. Astronomers gauge faintness in magnitudes, a scale on which larger numbers mean fainter objects. Reviewing records from an observatory's historical instrument collection, a student claims that each doubling of telescope aperture extended observations to substantially fainter stars.",
+ "questionTable": {
+  "type": "table",
+  "caption": "Aperture and faintest observable star for five telescopes in one collection",
+  "headers": [
+   "Telescope aperture (inches)",
+   "Faintest observable magnitude"
   ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The student's claim is about pace: period must grow faster than distance does. Choice A makes that comparison directly, twice—Saturn is roughly 9.6 times as far from the Sun as Earth yet takes about 29 times as long to orbit, and Jupiter is about 5.2 times as far yet takes about 12 times as long—so in both cases the period ratio outruns the distance ratio. Choice B shows only that the nearest planet also has the shortest period, which is consistent with period merely keeping pace with distance. Choice C restates the table's baseline without comparing anything. Choice D adds up four periods to make a point about Jupiter that says nothing about how period scales with distance.",
-  "_meta": {
-    "anchor": "planetary period-distance scaling (standard orbital data); generic student framing"
+  "rows": [
+   [
+    "3",
+    "11.5"
+   ],
+   [
+    "6",
+    "13.0"
+   ],
+   [
+    "12",
+    "14.5"
+   ],
+   [
+    "24",
+    "16.0"
+   ],
+   [
+    "48",
+    "17.5"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to support the claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Each doubling of aperture listed, from 3 inches up to 48, raised the faintest observable magnitude by 1.5, from 11.5 with the smallest telescope to 17.5 with the largest."
+  },
+  {
+   "id": "B",
+   "text": "The 48-inch telescope could observe the faintest stars of any instrument in the collection, reaching magnitude 17.5."
+  },
+  {
+   "id": "C",
+   "text": "The 3-inch telescope was limited to stars of magnitude 11.5 or brighter, a smaller reach than that of any other telescope listed."
+  },
+  {
+   "id": "D",
+   "text": "The collection's five telescopes span apertures from 3 inches to 48 inches, a sixteenfold range."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The claim concerns what each doubling of aperture accomplished, and A tracks exactly that: at every doubling in the table, the limiting magnitude climbs by 1.5 — a consistent, substantial gain in faintness reached.\n\n**The Full Solution:**\n- The claim is about a relationship — doubling aperture yields substantially fainter reachable stars — so the evidence must pair aperture steps with magnitude gains.\n- The table's apertures form a doubling sequence (3, 6, 12, 24, 48), and A reads off the magnitude gain at each step: +1.5 every time, from 11.5 to 17.5.\n- Since larger magnitudes mean fainter stars, that uniform climb is precisely the claimed pattern, demonstrated across the whole sequence.\n\n**Why the other choices are wrong:**\n- B: A single endpoint shows which telescope sees faintest but not what doubling contributes.\n- C: The smallest telescope's limit, alone, likewise establishes no per-doubling gain.\n- D: The sixteenfold aperture range mentions no magnitudes at all, so faintness never enters the evidence.",
+ "_meta": {
+  "anchor": "telescope aperture and limiting magnitude — doubling series in an instrument collection"
+ }
 }

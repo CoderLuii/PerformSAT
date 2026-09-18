@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
- "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+ "type": "multiple-choice",
+ "passage": "Lakes accumulate sediment year after year, and each layer traps pollen grains shed by the plants growing nearby at the time. Because pollen preserves well and differs in shape from species to species, researchers can extract a narrow core of mud from a lake bottom, identify the grains in each layer, and read the surrounding vegetation's history — which trees arrived, spread, or vanished — across thousands of years, reaching far beyond the oldest written records of any landscape.",
+ "question": "Which choice best states the main purpose of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "It marks where the researchers turn from ruling out one explanation to proposing the alternative."
+   "text": "To explain how pollen preserved in lake sediments lets researchers reconstruct past changes in vegetation"
   },
   {
    "id": "B",
-   "text": "It restates the puzzle from the opening sentence without moving the investigation forward in any way."
+   "text": "To argue that written records of vegetation change are less trustworthy than the physical evidence that researchers recover from lake beds"
   },
   {
    "id": "C",
-   "text": "It concedes that the team's entire initial approach to the camouflage problem had been mistaken."
+   "text": "To describe why the pollen grains of different plant species have evolved such distinctive shapes"
   },
   {
    "id": "D",
-   "text": "It reports the precise experimental result that finally confirmed how cuttlefish detect their surroundings."
+   "text": "To trace the history of a particular forest from its first appearance in a lake's pollen record to its disappearance centuries later"
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A. The opening sentences pose a puzzle — how an animal that cannot see color matches its background so precisely — and report that the team first ruled out detection through the eyes. The underlined sentence is the hinge: it turns from eliminating that possibility to proposing the alternative, that light-sensitive proteins in the skin let the animal register its surroundings, which the rest of the passage develops. It does more than restate the puzzle, so B understates it. It does not concede that the whole initial approach was mistaken, as C claims; ruling out one possibility is a normal investigative step. And it states a hypothesis to be tested, not a confirmed result, so D overreaches.",
+ "explanation": "**Choice A is correct.** Every element of the text serves one explanatory job: showing how layered lake sediment plus identifiable pollen becomes a readable record of vegetation history.\n\n**The Full Solution:**\n- The first sentence establishes the archive (annual sediment layers trapping pollen).\n- The second explains the method built on it — coring, identifying grains layer by layer — and states the payoff: reading which trees arrived, spread, or vanished over thousands of years.\n- Purpose questions ask what the whole text is doing, and the whole text is explaining this reconstruction technique.\n\n**Why the other choices are wrong:**\n- B: The text notes that the record reaches beyond written accounts but never questions those accounts' trustworthiness — no argument is being made.\n- C: Distinctive pollen shapes are mentioned as what makes identification possible, not explained as an evolutionary development.\n- D: No particular forest is traced; the text describes the method in general terms.",
  "_meta": {
-  "anchor": "Cuttlefish dermal light sensing (unnamed marine biologists); opsins in skin; camouflage without color vision"
- },
- "passage": "Cuttlefish change the color and texture of their skin almost instantly, despite being colorblind. A team of marine biologists set out to explain how an animal that cannot perceive color can match its background so precisely. They first ruled out the obvious possibility that the animals were registering color through their eyes alone. *They then turned to the skin itself, testing whether light-sensitive proteins distributed across the body might let the animal sense the brightness and pattern of its surroundings.* On this view, camouflage is a problem the animal solves partly outside the brain.",
- "type": "multiple-choice"
+  "anchor": "Palynology — lake-sediment pollen cores as archives of vegetation history (unnamed researchers)"
+ }
 }

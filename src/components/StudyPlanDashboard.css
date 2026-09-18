@@ -1321,31 +1321,6 @@ button.sp-task-summary.is-toggle:hover { color: var(--sp-text-2); }
 .sp-attention { display: flex; flex-direction: column; gap: 8px; margin-top: 24px; }
 
 /* Past-Test-Review CTA */
-.sp-past-test-review-cta { margin: 0; }
-.sp-past-test-review-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  padding: 13px 16px;
-  background: var(--sp-surface);
-  border: 1px solid var(--sp-line);
-  border-radius: 14px;
-  cursor: pointer;
-  text-align: left;
-  box-shadow: var(--sp-shadow);
-  transition: border-color 0.15s ease, background 0.15s ease;
-}
-.sp-past-test-review-btn:hover { border-color: var(--sp-purple); }
-.sp-past-test-review-icon {
-  width: 34px; height: 34px; border-radius: 9px;
-  background: var(--sp-purple-soft); color: var(--sp-purple);
-  display: grid; place-items: center; flex: none;
-}
-.sp-past-test-review-text { flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.sp-past-test-review-title { font-size: 14.5px; font-weight: 600; color: var(--sp-text); }
-.sp-past-test-review-sub { font-size: 12.5px; color: var(--sp-text-2); }
-.sp-past-test-review-chev { color: var(--sp-text-3); font-size: 20px; font-weight: 600; line-height: 1; }
 
 /* ── Quiet tune-up strips (review queue + pacing) ─────────────────────────
    One compact, muted row each. The review strip is collapsible; the pacing
@@ -1448,7 +1423,21 @@ button.sp-tuneup-bar:hover { background: var(--sp-inset); }
 .study-plan-dashboard .cm-cell-out { color: var(--sp-text-3); opacity: 0.45; }
 .study-plan-dashboard .cm-cell-practiced { background: var(--sp-cal-prac); color: var(--sp-cal-prac-ink); border-radius: 50%; }
 .study-plan-dashboard .cm-cell-today { background: var(--sp-orange); color: #fff; border-radius: 50%; box-shadow: none; }
-.study-plan-dashboard .cm-cell-test { box-shadow: inset 0 0 0 2px var(--sp-purple); border-radius: 50%; color: var(--sp-purple); }
+/* Test day: the gold star (CalendarMonth.css) is the marker — no ring, no
+ * fill, dark ink on gold. Today+test day keeps the star with a thin orange
+ * ring instead of the solid today disc, so the two never fight. */
+.study-plan-dashboard .cm-cell-test,
+.study-plan-dashboard .cm-cell-test.cm-cell-practiced,
+.study-plan-dashboard .cm-cell-test.cm-cell-today {
+  background: transparent;
+  box-shadow: none;
+  color: var(--color-slate-900, #15171C);
+  font-weight: 800;
+}
+.study-plan-dashboard .cm-cell-test.cm-cell-today { border-color: var(--sp-orange); }
+.study-plan-dashboard .cm-cell-test.is-past { color: var(--sp-text-3); font-weight: 700; }
+.study-plan-dashboard .cm-taken,
+.study-plan-dashboard .cm-legend-taken { color: var(--sp-done); }
 
 /* Colored summary tiles */
 .sp-tile {
@@ -1583,6 +1572,12 @@ button.sp-tuneup-bar:hover { background: var(--sp-inset); }
   min-width: 110px;
 }
 .sp-pacing-opts { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.sp-pacing-hint {
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: var(--sp-ink-soft, #6b6b6b);
+}
 .sp-pacing-opt {
   min-width: 38px;
   padding: 6px 10px;
@@ -1702,4 +1697,256 @@ button.sp-tuneup-bar:hover { background: var(--sp-inset); }
   .sp-module { padding: 18px; }
   .sp-tile-pair { grid-template-columns: 1fr; }
   .sp-titlebar { flex-wrap: wrap; gap: 12px; }
+}
+
+/* Provisional starter-plan banner (plan.planSource === 'onboarding-starter') */
+.sp-starter-note {
+  margin: 0 0 14px;
+  padding: 10px 14px;
+  border: 1px solid var(--color-slate-200, #E2E8F0);
+  border-radius: 10px;
+  background: var(--color-slate-50, #F8FAFC);
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--color-slate-600, #475569);
+}
+
+/* "Why this is on YOUR plan" evidence line (Phase 3, Living Study Plan) */
+.sp-task-because {
+  font-style: italic;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--sp-ink-soft, #6b6b6b);
+  margin: 2px 0 4px;
+}
+
+/* ═══ Plan v3 — mission-control arc header (sp-arc) ═══
+   The plan's "you are here → goal" strip: phase rail, milestone markers,
+   week progress, one personalized line. Same warm palette as the page. */
+.sp-arc {
+  background: var(--sp-surface);
+  border: 1px solid var(--sp-line);
+  border-radius: 18px;
+  box-shadow: var(--sp-shadow);
+  padding: 18px 20px 14px;
+  margin-bottom: 18px;
+}
+.sp-arc-top {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+}
+.sp-arc-node {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 74px;
+  border-radius: 14px;
+  padding: 8px 14px;
+}
+.sp-arc-node--start { background: var(--sp-tile-score); color: var(--sp-tile-score-ink); }
+.sp-arc-node--goal  { background: var(--sp-tile-goal);  color: var(--sp-tile-goal-ink); text-align: right; }
+.sp-arc-node-eyebrow {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.sp-arc-node-score {
+  font-family: var(--font-display, inherit);
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+.sp-arc-rail {
+  flex: 1;
+  display: flex;
+  gap: 6px;
+  align-items: stretch;
+}
+.sp-arc-phase {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: var(--sp-inset);
+  border: 1px solid var(--sp-line);
+  min-width: 0;
+}
+.sp-arc-phase.is-current {
+  background: var(--sp-orange-tint);
+  border-color: var(--sp-orange);
+}
+.sp-arc-phase-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--sp-text);
+  white-space: nowrap;
+}
+.sp-arc-phase.is-current .sp-arc-phase-label { color: var(--sp-orange-600); }
+.sp-arc-phase-weeks {
+  font-size: 11.5px;
+  color: var(--sp-text-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sp-arc-milestones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--sp-line);
+}
+.sp-arc-milestone {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--sp-text-2);
+}
+.sp-arc-milestone-glyph { color: var(--sp-purple); font-size: 10px; }
+.sp-arc-milestone.is-next { color: var(--sp-text); font-weight: 600; }
+.sp-arc-milestone.is-next .sp-arc-milestone-glyph { color: var(--sp-orange); }
+.sp-arc-milestone-next {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--sp-orange-600);
+  background: var(--sp-orange-tint);
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+.sp-arc-footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+}
+.sp-arc-line {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--sp-text-2);
+  margin: 0;
+  max-width: 62ch;
+}
+.sp-arc-week-progress {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--sp-text);
+  white-space: nowrap;
+}
+.sp-arc-insight {
+  margin: 8px 0 0;
+  font-size: 12.5px;
+  color: var(--sp-text-3);
+}
+@media (max-width: 720px) {
+  .sp-arc-top { flex-direction: column; }
+  .sp-arc-rail { flex-direction: column; }
+  .sp-arc-node--goal { text-align: left; }
+}
+
+/* Plan v3 — due-review session card + upcoming-week rows */
+.sp-due-review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--sp-purple-soft);
+  border: 1px solid var(--sp-purple-border);
+  border-radius: 14px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}
+.sp-due-review-text { min-width: 0; }
+.sp-due-review-title { font-size: 14.5px; font-weight: 700; color: var(--sp-text); }
+.sp-due-review-sub { font-size: 12.5px; color: var(--sp-text-2); margin-top: 1px; }
+.sp-due-review-btn {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 10px;
+  background: var(--sp-purple);
+  color: #fff;
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 9px 16px;
+  cursor: pointer;
+}
+.sp-upcoming-week {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--sp-surface);
+  border: 1px solid var(--sp-line);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+.sp-upcoming-week-title { font-size: 13.5px; font-weight: 600; color: var(--sp-text); }
+.sp-upcoming-week-meta { font-size: 12px; color: var(--sp-text-3); white-space: nowrap; }
+.sp-earlier-fold {
+  font-size: 12.5px;
+  color: var(--sp-text-3);
+  margin: 4px 0 10px;
+}
+
+/* ═══ Plan v3 — simple page (2026-08-22): Today's tasks / This week ═══
+   One date, one coach paragraph, one card per session: title · one line ·
+   one chip · one button. Acely-grammar; SEVA tokens. */
+.sp-tabs-row.is-simple { margin-bottom: 22px; }
+.sp-tabs-row.is-simple .sp-tabs { gap: 26px; background: none; padding: 0; border-bottom: 1px solid #E7E3D9; border-radius: 0; width: 100%; }
+.sp-tabs-row.is-simple .sp-tab { background: none; border: none; border-radius: 0; padding: 10px 2px 12px; color: #9A9EA6; font-weight: 700; font-size: 14.5px; box-shadow: none; }
+.sp-tabs-row.is-simple .sp-tab.is-active { color: #13161C; border-bottom: 2px solid #EA580C; margin-bottom: -1px; }
+.sp-tabs-row.is-simple .sp-tab-count { background: #F1EEE6; color: #5B6068; }
+.sp-s-panel { padding: 0; background: none; border: none; box-shadow: none; }
+.sp-s-daygroups .sp-s-day + .sp-s-day { margin-top: 18px; }
+.sp-s-day { background: #fff; border: 1px solid #E7E3D9; border-radius: 22px; padding: 26px 28px 8px; }
+.sp-s-dayhead { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+.sp-s-daytitle { font-family: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 20px; margin: 0; color: #13161C; letter-spacing: -.01em; }
+.sp-s-daycount { margin-left: auto; font-size: 12px; font-weight: 700; color: #9A9EA6; }
+.sp-s-coach { color: #5B6068; font-size: 14.5px; line-height: 1.55; margin: 0 0 18px; max-width: 68ch; }
+.sp-s-list { display: flex; flex-direction: column; }
+.sp-s-card { border-top: 1px solid #E7E3D9; padding: 20px 0; }
+.sp-s-card:first-child { border-top: none; padding-top: 6px; }
+.sp-s-card.is-done .sp-s-title { color: #9A9EA6; text-decoration: line-through; text-decoration-color: #C9C5BB; }
+.sp-s-card.is-skipped { opacity: .55; }
+.sp-s-head { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; }
+.sp-s-check { width: 20px; height: 20px; border-radius: 50%; border: 1.6px solid #C9C5BB; background: #fff; padding: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; flex: none; transition: border-color .15s, background .15s; }
+.sp-s-check:hover { border-color: #EA580C; }
+.sp-s-check.is-done { background: #EA580C; border-color: #EA580C; }
+.sp-s-check.is-static { cursor: default; border-style: dashed; }
+.sp-s-title { font-family: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 18px; margin: 0; color: #13161C; letter-spacing: -.01em; }
+.sp-s-sub { color: #5B6068; font-size: 14px; line-height: 1.5; margin: 0 0 14px 32px; max-width: 70ch; }
+.sp-s-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-left: 32px; }
+.sp-s-chips { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sp-s-chip { display: inline-flex; align-items: center; gap: 8px; background: #F1EEE6; border-radius: 8px; padding: 7px 12px; font-weight: 700; font-size: 12px; letter-spacing: .04em; color: #5B6068; text-transform: uppercase; border: none; font-family: inherit; }
+.sp-s-chip.is-toggle { cursor: pointer; }
+.sp-s-chip.is-toggle:hover { background: #EAE6DC; }
+.sp-s-chip.is-done { background: #E9F6D0; color: #2F5B0E; }
+.sp-s-chip.is-ghost { background: none; border: 1px dashed #C9C5BB; }
+.sp-s-btn { flex: none; display: inline-flex; align-items: center; gap: 8px; background: #EA580C; color: #fff; border: none; border-radius: 13px; padding: 12px 22px; font-family: inherit; font-weight: 700; font-size: 14.5px; cursor: pointer; box-shadow: 0 4px 12px rgba(234, 88, 12, .3); transition: transform .15s, box-shadow .15s; }
+.sp-s-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(234, 88, 12, .35); }
+.sp-s-btn.is-ghost { background: #fff; color: #13161C; border: 1px solid #E7E3D9; box-shadow: none; }
+.sp-s-btn.is-ghost:hover { background: #F6F4EF; transform: none; box-shadow: none; }
+.sp-s-rounds { margin: 14px 0 0 32px; border-top: 1px dashed #E7E3D9; padding-top: 6px; }
+.sp-s-round { display: flex; align-items: center; gap: 10px; padding: 9px 0; font-size: 13.5px; color: #5B6068; }
+.sp-s-round-label { flex: 1; min-width: 0; }
+.sp-s-round-prog { font-variant-numeric: tabular-nums; }
+.sp-s-round-prog.is-active { color: #EA580C; font-weight: 700; }
+.sp-s-card .sp-task-tips { margin: 12px 0 0 32px; }
+.sp-s-card .sp-edit-controls { flex: none; }
+@media (max-width: 720px) {
+  .sp-s-day { padding: 20px 18px 6px; border-radius: 18px; }
+  .sp-s-sub, .sp-s-row, .sp-s-rounds { margin-left: 0; }
+  .sp-s-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .sp-s-btn { width: 100%; justify-content: center; }
 }

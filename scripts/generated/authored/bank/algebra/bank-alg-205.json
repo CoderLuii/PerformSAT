@@ -1,0 +1,52 @@
+{
+  "id": "bank-alg-205",
+  "question": "The table shows the height $h$, in centimeters, of a bamboo shoot $d$ days after it was planted. The relationship between $d$ and $h$ is linear. Which of the following is the best interpretation of the slope of the graph of this relationship in the $dh$-plane?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "d (days)",
+        "h (cm)"
+      ],
+      "rows": [
+        [
+          "2",
+          "41"
+        ],
+        [
+          "5",
+          "62"
+        ],
+        [
+          "9",
+          "90"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The height of the shoot increases by $\\dfrac{1}{7}$ centimeter each day."
+    },
+    {
+      "id": "B",
+      "text": "The height of the shoot increases by $3$ centimeters each day."
+    },
+    {
+      "id": "C",
+      "text": "The height of the shoot increases by $7$ centimeters each day."
+    },
+    {
+      "id": "D",
+      "text": "The height of the shoot increases by $21$ centimeters each day."
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverts the slope (run over rise)",
+    "B": "reports the change in d alone",
+    "D": "reports the change in h alone, without dividing by the change in d"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Between the first two rows, $h$ rises $21$ over $3$ days: slope $= 7$ centimeters per day.\n\n**The Full Solution:**\nStep 1: Slope is $\\dfrac{\\text{change in } h}{\\text{change in } d}$. From $(2, 41)$ to $(5, 62)$: $\\dfrac{62 - 41}{5 - 2} = \\dfrac{21}{3} = 7$.\nStep 2: Because the relationship is linear, every pair of rows gives the same slope. Confirm with $(5, 62)$ and $(9, 90)$: $\\dfrac{90 - 62}{9 - 5} = \\dfrac{28}{4} = 7$. $\\checkmark$\nStep 3: The slope's units are centimeters per day, so the shoot grows $7$ centimeters each day.\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\dfrac{1}{7}$): divides run by rise, the reciprocal of the slope.\n* Choice B ($3$): reports the change in $d$ between the first two rows without dividing.\n* Choice D ($21$): reports the change in $h$ between the first two rows without dividing by the $3$ days.\n\n**Test Day Takeaway:** From a table, slope is rise over run using any two rows, and a linear relationship guarantees the same value from every pair. Attach the units to interpret it."
+}

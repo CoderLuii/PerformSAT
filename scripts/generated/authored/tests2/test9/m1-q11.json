@@ -1,0 +1,53 @@
+{
+ "id": 11,
+ "question": "The table gives the electricity cost for a household for four consecutive months. What was the percent decrease in this cost from March to June?",
+ "questionTable": {
+  "headers": [
+   "Month",
+   "Electricity cost (dollars)"
+  ],
+  "rows": [
+   [
+    "March",
+    "184"
+   ],
+   [
+    "April",
+    "161"
+   ],
+   [
+    "May",
+    "150"
+   ],
+   [
+    "June",
+    "138"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$14.3\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$25\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$33.3\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$75\\%$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "measures the decrease from April instead of March: 23/161",
+  "C": "divides the 46-dollar drop by the NEW cost 138 instead of the original 184",
+  "D": "reports the ratio 138/184 of the new cost to the old, not the percent decrease"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The cost dropped $184-138=46$ dollars from an original $184$, and $\\frac{46}{184}=\\frac{1}{4}$, so the decrease is $25\\%$.\n\n**The Full Solution:**\nStep 1: Read the two months the question names: March is $184$ dollars (the ORIGINAL) and June is $138$ dollars (the new amount).\nStep 2: Percent decrease is $\\frac{\\text{original}-\\text{new}}{\\text{original}}\\times 100\\%=\\frac{184-138}{184}\\times 100\\%$.\nStep 3: $\\frac{46}{184}=0.25$, so the cost fell $25\\%$. Check: $184(1-0.25)=184(0.75)=138$, the June cost ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($14.3\\%$): uses the April cost as the starting point, $\\frac{161-138}{161}\\approx 0.143$ — the wrong row.\n* Choice C ($33.3\\%$): divides the $46$-dollar drop by the NEW cost, $\\frac{46}{138}\\approx 0.333$. Percent change always divides by the ORIGINAL.\n* Choice D ($75\\%$): computes $\\frac{138}{184}=0.75$, the fraction of the cost that REMAINS, not the fraction lost.\n\n**Test Day Takeaway:** Percent decrease $=\\frac{\\text{drop}}{\\text{original}}$. If your answer is the leftover share instead of the change, subtract it from $100\\%$ — and always confirm which two rows the question names."
+}

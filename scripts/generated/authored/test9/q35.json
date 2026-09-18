@@ -9,35 +9,20 @@
   "passages": [
     {
       "label": "Text 1",
-      "text": "Many historic wrecks lie in deep water that public archaeology can rarely afford to reach. Commercial salvage offers a way forward: by selling some of the coins and artifacts they bring up, salvage companies fund the costly search-and-recovery work that would otherwise never happen. Objects that would slowly corrode on the bottom, unseen, are instead raised, conserved, and put before the public. On this view, recovering a wreck's contents—by whatever means pays for the effort—is plainly better than leaving them to dissolve in the dark."
+      "text": "Standard accounts date the Hanseatic League's decline to the sixteenth century and explain it geographically. As Atlantic routes eclipsed the Baltic trade and Dutch and English shippers learned to move bulk goods more cheaply, the League's grip on northern commerce simply ceased to matter. On this view the League was a casualty of forces far beyond its members' control, and its slow dissolution requires no further explanation."
     },
     {
       "label": "Text 2",
-      "text": "No one denies that salvage has lifted objects that might never otherwise have surfaced. Yet an artifact's value to scholarship lies largely in its context: where it lay, beside what other finds, and at what depth. Hauling cargo up for sale, without first mapping and recording each piece in place, strips that information away for good. A gold coin sold to a collector survives as an object, but the questions it could have answered—about the ship, its route, and the people aboard—are answered no longer."
+      "text": "Geography alone makes a poor executioner. The Hanseatic League had weathered earlier shifts in trade by adjusting its privileges and admitting new partners; what changed in the sixteenth century was political. As territorial princes consolidated power, member towns lost the independence that Hanseatic cooperation required — towns cannot coordinate their commercial policies when rulers now set those policies for them. Foreign competition mattered, but it pressed on an association already being hollowed out from within."
     }
   ],
-  "question": "Based on the texts, how would the author of Text 2 most likely respond to the argument for commercial salvage presented in Text 1?",
+  "question": "Based on the texts, how would the author of Text 2 most likely respond to the argument presented in Text 1?",
   "choices": [
-    {
-      "id": "A",
-      "text": "The author would deny that any object can be recovered from a deep-water wreck and dismiss Text 1's confidence in salvage as entirely unfounded."
-    },
-    {
-      "id": "B",
-      "text": "The author would agree that selling recovered artifacts is the surest way to study a wreck and that the practice costs scholarship nothing."
-    },
-    {
-      "id": "C",
-      "text": "The author would grant that salvage has recovered objects that might otherwise have been lost but warn that selling them without recording their context destroys much of the knowledge a wreck could yield."
-    },
-    {
-      "id": "D",
-      "text": "The author would insist that no wreck should ever be disturbed and that even careful scientific excavation harms a site more than leaving it wholly untouched."
-    }
+    { "id": "A", "text": "Dutch and English competition, though often cited by historians, never posed a genuine threat to the League's merchants." },
+    { "id": "B", "text": "The League's dissolution was indeed gradual, but the process began a full century earlier than the standard geographic accounts recognize." },
+    { "id": "C", "text": "An account limited to shifting trade routes omits the political changes that had already undermined the League's capacity to adapt." },
+    { "id": "D", "text": "The League's member towns deliberately dissolved the association once its trading privileges had lost their commercial value." }
   ],
   "correctAnswer": "C",
-  "explanation": "Text 1 defends commercial salvage as the only practical way to recover wrecks from deep water. The author of Text 2 concedes that salvage has indeed brought up objects that might otherwise have been lost, but warns that selling them without first recording their context erases the historical knowledge a wreck could provide. Choice C states that concession-plus-warning. Choice A denies that anything can be recovered at all, B has the author endorse the practice outright, and D pushes the objection too far, rejecting even careful scientific excavation, which Text 2 never opposes.",
-  "_meta": {
-    "anchor": "underwater archaeology: commercial salvage vs. archaeological context"
-  }
+  "explanation": "**Choice C is correct.** Text 2 does not dispute that trade shifted; it disputes the sufficiency of that explanation. The League had adapted to shifts before, so what needs explaining is the lost capacity to adapt — a political story about princes and town autonomy that Text 1's geographic account omits.\n\n**The Full Solution:**\n- Text 1's argument culminates in \"requires no further explanation\" — geography suffices.\n- Text 2's opening line rejects exactly that sufficiency (\"Geography alone makes a poor executioner\").\n- Its evidence: past resilience under earlier trade shifts, and the political consolidation that dissolved the coordination the League ran on. C reproduces this objection precisely — the geographic account is incomplete, not wrong.\n\n**Why the other choices are wrong:**\n- A: Text 2 concedes foreign competition was real pressure; it denies only that competition is the whole story.\n- B: Text 2 redates nothing — it relocates the cause, not the century.\n- D: No deliberate dissolution appears in either text; Text 2 describes erosion from within, not a decision by the towns."
 }

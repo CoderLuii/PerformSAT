@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-241",
+ "question": "Circle $A$ has a circumference of $26\\pi$ centimeters. The radius of circle $B$ is $5$ centimeters greater than the radius of circle $A$. What is the area, in square centimeters, of circle $B$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$36\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$169\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$324\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$961\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the circumference of circle B",
+  "B": "reports the area of circle A",
+  "D": "treats 26 as the radius of circle A"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Circumference of a Circle**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $C = 2\\pi r$, so $26\\pi = 2\\pi r$ gives $r_A = 13$. Then $r_B = 18$ and the area is $\\pi(18)^2 = 324\\pi$.\n\n**The Full Solution:**\nStep 1: Use the circumference formula to recover the radius of circle $A$: $2\\pi r_A = 26\\pi$, so $r_A = 13$ centimeters.\nStep 2: The radius of circle $B$ is $5$ centimeters larger: $r_B = 13 + 5 = 18$ centimeters.\nStep 3: Apply the area formula: $A = \\pi r_B^2 = \\pi(18)^2 = 324\\pi$. Check: circle $B$'s circumference would be $2\\pi(18) = 36\\pi$, which is larger than $26\\pi$, as expected.\n\n**Why the wrong answers are tempting:**\n* Choice A ($36\\pi$): this is the circumference of circle $B$, not its area.\n* Choice B ($169\\pi$): the area of circle $A$ — the $5$-centimeter increase was never applied.\n* Choice D ($961\\pi$): treats $26$ as the radius of circle $A$, giving $r_B = 31$ and $\\pi(31)^2 = 961\\pi$.\n\n**Test Day Takeaway:** When a circle is described by its circumference, divide by $2\\pi$ first. The coefficient of $\\pi$ in a circumference is the diameter, never the radius."
+}

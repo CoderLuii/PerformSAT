@@ -1,0 +1,6 @@
+{
+  "id": "bank-geo-136",
+  "question": "In the $xy$-plane, a circle has its center at $(-6, 2)$ and passes through the point $(0, 10)$. The equation of the circle can be written as $(x + 6)^2 + (y - 2)^2 = k$, where $k$ is a constant. What is the value of $k$?",
+  "correctAnswer": "100",
+  "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**The correct answer is $100$.**\n\n**The Fast Way (~15s):** $k = r^2$, and the gaps are $6$ and $8$, so $k = 36 + 64 = 100$.\n\n**The Full Solution:**\nStep 1: In the form $(x - h)^2 + (y - k)^2 = r^2$, the constant on the right is the square of the radius, so $k = r^2$ here.\nStep 2: The horizontal gap from $(-6, 2)$ to $(0, 10)$ is $0 - (-6) = 6$ and the vertical gap is $10 - 2 = 8$.\nStep 3: $k = 6^2 + 8^2 = 36 + 64 = 100$. Check: substituting $(0, 10)$ gives $(0 + 6)^2 + (10 - 2)^2 = 36 + 64 = 100$. $\\checkmark$\n\n**Common Mistakes:**\n* Gridding $10$, the radius, when the constant on the right side is $r^2$.\n* Using $0 - 6 = -6$ and $10 - 2 = 8$ but then adding rather than squaring, giving $2$.\n* Reading the center as $(6, 2)$ from $(x + 6)^2$; the sign inside the parentheses is opposite the coordinate.\n\n**Test Day Takeaway:** Substituting the given point directly into the equation is the fastest check - both sides must agree."
+}

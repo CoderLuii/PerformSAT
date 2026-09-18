@@ -1,5 +1,44 @@
 # TODOS
 
+## QA sweep — deferred low-severity findings (2026-08-04)
+
+From the /qa sweep of the onboarding/billing batch (9 med/high bugs fixed in
+`56e895f..b936244`; adversarial review by 3 agents + live browse walk). All
+verified-real but low severity; none block the billing flip.
+
+- **[LAUNCH/OPS] `BILLING_LAUNCH_EPOCH` still `2026-07-04` in `functions/.env`.**
+  Every account created since July 4 fails `isGrandfathered` and gets the
+  card-required wall at flag flip. The .env comment says to bump it right before
+  flipping `REACT_APP_FF_BILLING` — it has NOT been bumped. Do it at launch,
+  then redeploy functions.
+- **[P3/S] `?checkout=success` is spoofable** (App.jsx ~696-715): any walled,
+  signed-in user who appends it gets a 3-min client-side practice window.
+  Bounded + client-content-only. Fix: stamp sessionStorage in
+  `billingService.startCheckout` before the redirect and honor the URL param
+  only when the stamp exists.
+- **[P3/S] Price strings hardcoded in three components** (LandingPage,
+  OnboardingFunnel, PaywallScreen: $85/$29/$349/"save $671") with no shared
+  constant or pinning test; the $50→$85 repricing already proved drift. Charged
+  amounts live on Stripe Price ids in `functions/.env`.
+- **[P3/S] Late subscription webhook can clobber a promo comp**
+  (stripe.ts: redeem nulls the event watermark; a terminal sub event then
+  merge-sets `status: 'canceled'` over `comped`). Needs a pending/terminating
+  sub + redeem in between — rare.
+- **[P3/S] Activation webhook slower than the 3-min grace re-walls a just-paid
+  user** whose Subscribe click then 409s ("already subscribed") — confusing
+  terminal state, self-heals when the snapshot lands.
+- **[P3/S] InnerOnboarding multi-select screens' Continue lacks the
+  double-tap guard** (weak-areas screens, InnerOnboarding.jsx ~472/488): a
+  double-click can silently skip the next screen. The file's own
+  `pendingAdvance` pattern is the fix; steps 1-3 share the gap (pre-existing).
+- **[P3/S] `updateProfilePhoto` optimistic rollback** (useAuth.js ~319-345):
+  rapid double upload can roll back to a stale value; the 8s timeout resolves
+  (never rejects) so a late definitive failure never rolls back the UI.
+- **[P3/S] "Finish onboarding" resume bypasses the entitlement deferral** the
+  auto-launch has (benign — the wall catches the next gated action); the
+  per-uid dismissal marker is never cleaned when onboarding completes via the
+  test path (harmless orphan).
+
 ## Both-sections study plan — deferred goal-system work (2026-06-12)
 
 The plan now drills both sections (format v4, commits 4d12e36..c54fe33), but the GOAL
@@ -53,6 +92,22 @@ small, most are one-liners applying `isBlankAttempt` from `selectors/latestTestS
 - **[P3/S] Review-shell toolbar shows a "Calculator" badge on R&W items** (seen in dogfood
   on a cross-text item in the daily-review session; verify whether the badge is static
   shell chrome or per-item metadata).
+
+## Practice-tab navigator — deferred by /plan-design-review (2026-09-07)
+
+- **[P3/S] Practice Bank: builder-modal chip rows as radiogroups.** The custom-drill builder's
+  Difficulty / Questions rows are single-select but use `aria-pressed` buttons; the section toggle
+  and topic multi-select are fine as pressed buttons. Reuse `onChipKeyDown` from the pane filters.
+  Found by /design-review 2026-09-07 (subagent), modal internals were out of the navigator's scope.
+- **[P3/S] Practice Bank spacing to tokens.** PracticeBank.css uses ~24 raw px values and no
+  `--space-*` (nothing in `src/` does — see the 2026-06-08 "Spacing scale 0% adopted" note). Snap to
+  4/8/12/16/24/32 when the file is next touched; not a mass refactor.
+- **[P2/M] Brand-level contrast pass for filled orange buttons.** White text on `#EA580C` is 3.6:1
+  (below the 4.5:1 floor at 13-14px bold) on every filled CTA app-wide. The Practice-tab rebuild darkened
+  only orange TEXT (`--pb-orange-text: #C2410C`) and kept filled buttons at the brand orange for
+  consistency. Fix options: darken the filled-button orange to `#C2410C` (5.2:1) via the shared token, or
+  raise CTA text to 18.66px bold. Why: readability on phones outdoors; a11y audit item. Cons: touches every
+  page; needs a visual pass on the home tiles (protected UI) and landing. Depends on: nothing.
 
 ## Landing-page design review — deferred findings (2026-06-08)
 
@@ -220,8 +275,13 @@ Chip-shown ≡ Tier-1 fired ≡ exact pattern match was viable. This effectively
 - [ ] POLISH: OnboardingFunnel.css + InnerOnboarding.css share ~500 duplicated lines (var block, topbar, options, CTA, slider) with unexplained twin drift — extract a shared sheet or accept and document the fork. Drift already re-aligned once (FINDING-010); it will regrow.
 - [ ] POLISH: ad-hoc border-radius ramp across both onboarding CSS files (9/10/12/13/14/16/18/24) — collapse to 3 scoped steps (e.g. 8 controls / 12 inputs / 16 cards).
 - [ ] POLISH: breakpoint drift — funnel collapses at 720px, inner at 560px; two halves of one journey should break at the same width.
-- [ ] POLISH: InnerOnboarding score screen title asks yes/no ("Have you taken the SAT…?") while controls collect a number; body copy mitigates. Consider "What did you score, if you've tested?"
+- [x] POLISH (DONE 2026-08-14, personal-onboarding batch): InnerOnboarding score screen title asked yes/no while collecting a number — the per-baseline variants ("What did the real SAT give you?" etc.) fix it for funnel-profiled accounts; legacy accounts keep the old title by design (fallback).
+
+## From /autoplan personal-onboarding review 2026-08-14 (deferred)
+- [ ] **[P2] Show-don't-tell funnel moment.** One real hand-authored bank question + its per-choice explanation inside the funnel (likely replacing or augmenting the neverStuck interstitial's mockup). **Why:** answers "I could just use ChatGPT" with proof instead of copy; the bank + explanations are the moat and the funnel only tells about them. **Cons:** adds a screen/interaction to a deliberately tight flow (violates the current no-new-screens premise); needs its own design pass. **Context:** proposed by the CEO-phase outside voice; deferred because the personal-onboarding batch holds flow length constant. Start at FUNNEL_INTERSTITIALS.neverStuck. Effort M (CC ~1-2h). Depends on: personal-onboarding batch shipped + funnel instrumentation live (measure before/after).
+- [ ] **[P2] Server-side trial funnel events.** `trial_started` / `trial_converted` / `trial_canceled` emitted from the Stripe webhook (functions/src/stripe.ts) into PostHog. **Why:** client events stop at signup; the money question (trial→paid) is invisible without these. **Cons:** functions deploy required; PostHog server key handling. **Context:** client-side funnel events ship in the personal-onboarding batch with copyVariant tagging; this completes the funnel. Effort S-M (CC ~30min + deploy). Depends on: next functions deploy window.
+- [ ] **[P3] Personalization spine consumers.** First-run home hero line + coach tone reading `onboardingProfile.answers` (blocker → first-run copy, feeling → tutor register: the "stored-but-unused" levers noted since 2026-07-02). **Why:** extends the onboarding thread into day-1 product; the 12-month-ideal direction from the CEO review. **Context:** consume via the same pure-fn pattern as funnelConfig; do NOT persist derived copy. Effort M. Depends on: personal-onboarding batch (establishes the fn vocabulary).
 
 ## From getReferral hotfix 2026-08-03 (lint re-enable, deferred)
-- [ ] HIGH-VALUE CLEANUP: react-hooks/rules-of-hooks violations (conditional useMemo, mostly after early returns) in App.jsx, StudyPlanDashboard.jsx, SATLinearGraph.jsx, SATTwoLineGraph.jsx — currently demoted to "warn" in package.json eslintConfig. These are latent "Rendered fewer hooks than expected" crashes if the early-return condition ever flips mid-mount. Fix by moving the early return below the hooks. Re-promote the rule to error when clean.
-- [ ] POLISH: import/first violations in src/design/animations.js, src/services/diagnosticEngine.js (mid-file imports; hoisted anyway, style only).
+- [x] HIGH-VALUE CLEANUP (DONE same day, 18f0d40..ec8f97e): react-hooks/rules-of-hooks violations in StudyPlanDashboard.jsx (gate-wrapper split), SATLinearGraph.jsx, SATTwoLineGraph.jsx (guarded memos); rule promoted back to error. Original note: conditional useMemo in App.jsx, StudyPlanDashboard.jsx, SATLinearGraph.jsx, SATTwoLineGraph.jsx — currently demoted to "warn" in package.json eslintConfig. These are latent "Rendered fewer hooks than expected" crashes if the early-return condition ever flips mid-mount. Fix by moving the early return below the hooks. Re-promote the rule to error when clean.
+- [x] POLISH (DONE same day, ec8f97e): import/first violations in src/design/animations.js, src/services/diagnosticEngine.js — imports hoisted to top; rule promoted to error with a test-file override.

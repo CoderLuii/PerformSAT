@@ -1,0 +1,53 @@
+{
+ "id": "bank-am-269",
+ "question": "The table gives the reading $f(x)$, in microstrain, recorded by a strain gauge at each of four settings $x$. A rescaled reading is given by $g(x) = k \\cdot f(x)$, where $k$ is a constant, and the rescaled reading at the setting $x = -2$ is $45$. What is the value of $g(4)$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "$-2$",
+    "$-9$"
+   ],
+   [
+    "$0$",
+    "$3$"
+   ],
+   [
+    "$2$",
+    "$7$"
+   ],
+   [
+    "$4$",
+    "$6$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-30$"
+  },
+  {
+   "id": "B",
+   "text": "$-6$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$30$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses k = -1, treating the rescaling as only a sign flip",
+  "C": "reports f(4) = 6 without applying k",
+  "D": "gets k = 5 by ignoring the negative sign of f(-2) = -9"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertical Stretch**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** From the table $f(-2) = -9$, so $-9k = 45$ and $k = -5$; then $g(4) = -5(6) = -30$.\n\n**The Full Solution:**\nStep 1: The table gives $f(-2) = -9$, and the rescaling gives $g(-2) = k \\cdot f(-2) = -9k$.\nStep 2: Since $g(-2) = 45$, solve $-9k = 45$ to get $k = -5$; the stretch factor is negative, so $g$ also reflects across the $x$-axis.\nStep 3: The table gives $f(4) = 6$, so $g(4) = -5(6) = -30$. Check: $g(0) = -5(3) = -15$, and $\\frac{-15}{3} = -5$, the same factor ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-6$): uses $k = -1$, treating the rescaling as only a reflection and never solving for the factor.\n* Choice C ($6$): reports $f(4)$ straight from the table without applying $k$.\n* Choice D ($30$): solves $9k = 45$ instead, ignoring the negative sign of $f(-2) = -9$.\n\n**Test Day Takeaway:** Solve for the stretch factor at the one input you are given, then apply that same factor at the input you are asked about."
+}

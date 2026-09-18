@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-015",
+ "question": "The number of interlibrary loan requests a branch receives above its baseline is modeled by $r(t)=(t-3)(t-11)$, where $t$ is the number of weeks after a new catalog launched. What is the sum of the values of $t$ for which $r(t)=0$?",
+ "correctAnswer": "14",
+ "explanation": "**SAT Pattern: Sum of Roots from Factors**\n\n**The correct answer is $14$.**\n\n**The Fast Way (~10s):** A product is $0$ only when a factor is $0$, so the zeros are $t=3$ and $t=11$; their sum is $14$.\n\n**The Full Solution:**\nStep 1: Set each factor equal to $0$: $t-3=0$ and $t-11=0$.\nStep 2: Solve to get $t=3$ and $t=11$.\nStep 3: Add them: $3+11=14$. Check: $r(3)=(0)(-8)=0$ and $r(11)=(8)(0)=0$, so both are zeros ✓\n\n**Common Mistakes:**\n* $33$: multiplies the two zeros instead of adding them.\n* $11$: reports only the larger zero rather than the sum.\n* $-14$: reads the factors $(t-3)$ and $(t-11)$ as giving zeros $-3$ and $-11$.\n\n**Test Day Takeaway:** In factored form the zeros are the numbers that make each factor vanish — read them off with the opposite sign of the constant inside."
+}

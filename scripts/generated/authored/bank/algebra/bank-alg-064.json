@@ -1,0 +1,47 @@
+{
+ "question": "A network engineer records how transferred data $y$, in gigabytes, depends on elapsed time $x$, in minutes, using the equation graphed in the $xy$-plane. A colleague records the identical relationship with a different equation. Which could the colleague's equation be?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2,
+   "yIntercept": 4,
+   "xRange": [
+    -2,
+    10
+   ],
+   "yRange": [
+    -4,
+    24
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y=2x-4$"
+  },
+  {
+   "id": "B",
+   "text": "$y=4x+8$"
+  },
+  {
+   "id": "C",
+   "text": "$2y=4x+4$"
+  },
+  {
+   "id": "D",
+   "text": "$3y=6x+12$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reads the y-intercept as -4 instead of 4, reflecting the constant across the x-axis",
+  "B": "doubles the right side only, which doubles both the slope and the intercept",
+  "C": "scales the y-term and the x-term by 2 but leaves the constant 4 unchanged, giving a parallel line"
+ },
+ "explanation": "**SAT Pattern: Identify Identical-Lines System**\n\n**Choice D is correct.** The graphed line is $y=2x+4$, and multiplying every term of that equation by $3$ gives $3y=6x+12$, which has exactly the same solutions.\n\n**The Fast Way (~30s):** The line rises $2$ for every $1$ across and crosses the vertical axis at $4$, so it is $y=2x+4$. Only $3y=6x+12$ is a whole-equation multiple of it.\n\n**The Full Solution:**\n\nStep 1: Read the line. It passes through $(0,4)$ and $(2,8)$, so the slope is $\\frac{8-4}{2-0}=2$ and the equation is $y=2x+4$.\n\nStep 2: Two equations have the same solutions exactly when one is a nonzero multiple of the other, term for term.\n\nStep 3: Multiply $y=2x+4$ by $3$: $3y=6x+12$. Check: dividing $3y=6x+12$ by $3$ returns $y=2x+4$, so the two equations describe the same line.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($y=2x-4$): keeps the slope but flips the sign of the intercept, giving a parallel line through $(0,-4)$.\n* Choice B ($y=4x+8$): doubles the right side only, which changes the slope to $4$ and describes a steeper line.\n* Choice C ($2y=4x+4$): scales the $y$-term and the $x$-term but not the constant, giving $y=2x+2$, a parallel line.\n\n**Test Day Takeaway:** Two linear equations have identical solutions only when every term of one is the same multiple of the matching term of the other.",
+ "id": "bank-alg-064"
+}

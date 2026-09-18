@@ -1,0 +1,40 @@
+{
+ "id": 16,
+ "question": "The dot plot shows the number of costumes built by each of $11$ wardrobe shops for a festival. The mean of all $11$ values is how much greater than the mean of the $10$ values other than $34$?",
+ "diagram": {
+  "type": "dotPlot",
+  "params": {
+   "data": [
+    {
+     "value": 6,
+     "count": 1
+    },
+    {
+     "value": 9,
+     "count": 2
+    },
+    {
+     "value": 12,
+     "count": 4
+    },
+    {
+     "value": 15,
+     "count": 2
+    },
+    {
+     "value": 18,
+     "count": 1
+    },
+    {
+     "value": 34,
+     "count": 1
+    }
+   ],
+   "xMin": 0,
+   "xMax": 36,
+   "xLabel": "Costumes built"
+  }
+ },
+ "correctAnswer": "2",
+ "explanation": "**SAT Pattern: Outlier Effect**\n\n**The correct answer is $2$.**\n\n**The Fast Way (~40s):** The ten ordinary values total $120$, so their mean is $12$. Adding the $34$ makes the total $154$ over $11$ shops, a mean of $14$. The difference is $2$.\n\n**The Full Solution:**\nStep 1: Read the dots other than the outlier: $6, 9, 9, 12, 12, 12, 12, 15, 15, 18$. Their sum is $120$, so their mean is $\\frac{120}{10} = 12$.\nStep 2: Include the outlier: the sum becomes $120 + 34 = 154$ over $11$ values, so that mean is $\\frac{154}{11} = 14$.\nStep 3: $14 - 12 = 2$. Check: the outlier sits $34 - 12 = 22$ above the smaller mean, and spreading that excess over $11$ values raises the mean by $\\frac{22}{11} = 2$. $\\checkmark$\n\n**Common Mistakes:** Gridding $14$ or $12$, one of the two means rather than the gap between them; gridding $22$, the outlier's distance above the smaller mean, without dividing it among the $11$ values; gridding $15.4$, from dividing the full sum $154$ by $10$ instead of $11$.\n\n**Test Day Takeaway:** One extreme value moves the mean by its distance from the old mean divided by the new count. That shortcut also checks the long calculation in a single line."
+}

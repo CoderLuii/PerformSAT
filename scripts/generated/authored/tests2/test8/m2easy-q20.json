@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A transit kiosk sells single-ride tickets and day passes. Three single-ride tickets and five day passes cost $44$ dollars, five single-ride tickets and three day passes cost $c$ dollars, and one ticket plus one pass costs $10$ dollars. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$36$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$44$"
+  },
+  {
+   "id": "D",
+   "text": "$80$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "assumes both items cost 5 dollars each, computing 5(5) + 3(5) = 40",
+  "C": "assumes the mirrored purchase must cost the same as the first, 44 dollars",
+  "D": "uses 8(x + y) = 80 as c and forgets to subtract the 44 from the first purchase"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** Adding the two purchases gives $8x + 8y = 44 + c$. Since $x + y = 10$, the left side is $80$, so $c = 80 - 44 = 36$.\n\n**The Full Solution:**\nStep 1: Let $x$ be the price of a single-ride ticket and $y$ the price of a day pass. The three facts are $3x + 5y = 44$, $5x + 3y = c$, and $x + y = 10$.\nStep 2: Add the first two equations. The $x$-terms give $3x + 5x = 8x$ and the $y$-terms give $5y + 3y = 8y$, so $8x + 8y = 44 + c$, which is $8(x + y) = 44 + c$.\nStep 3: Substitute $x + y = 10$: $80 = 44 + c$, so $c = 36$. Check by finding the prices: subtracting the equations gives $2y - 2x = 44 - 36 = 8$, so $y - x = 4$; with $x + y = 10$ that means $x = 3$ and $y = 7$, and indeed $3(3) + 5(7) = 44$ and $5(3) + 3(7) = 36$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($40$): reads $x + y = 10$ as $x = y = 5$. The prices sum to $10$ but are not equal — they are $3$ and $7$ — and $5(5) + 3(5) = 40$.\n* Choice C ($44$): assumes swapping the counts cannot change the total. It changes the total whenever the two prices differ, and here the cheaper item is bought more often, so $c < 44$.\n* Choice D ($80$): computes $8(x + y) = 80$ but reports it as $c$ instead of subtracting the $44$ that the first purchase already accounts for.\n\n**Test Day Takeaway:** When a system's coefficients are mirrored, add the equations. The sum collapses to a multiple of $x + y$, and a given combination finishes the problem without ever solving for $x$ and $y$ separately."
+}

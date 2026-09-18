@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
+  "module": 1,
+  "passage": "From its stations along the northern plains of India, the Great Trigonometrical Survey sighted and computed the heights of some of the world's highest ______ Kangchenjunga, for a time believed the tallest of all; Dhaulagiri, whose height had been argued over for decades; and the distant summit the survey's computers listed simply as Peak XV.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "Africa, including"
+      "text": "peaks, including"
     },
     {
       "id": "B",
-      "text": "Africa. Including"
+      "text": "peaks. Including"
     },
     {
       "id": "C",
-      "text": "Africa; including"
+      "text": "peaks; including"
     },
     {
       "id": "D",
-      "text": "Africa: including"
+      "text": "peaks: including"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The list introduced by \"including\" already uses semicolons to separate its three items, each of which carries its own internal comma, so the boundary before \"including\" must be a comma, as in choice A. A period (B) leaves \"Including …\" as a fragment; a semicolon (C) collides with the semicolons inside the list; and a colon paired with \"including\" (D) is not a construction Standard English licenses.",
-  "passage": "Archaeologist Akinwumi Ogundiran has documented urbanization and craft production at sites across the Yoruba region of West ______ Ile-Ife, the political and ritual center of the medieval Yoruba states; Ijebu-Ode, an important coastal trading polity; and Old Oyo, the capital of the Oyo Empire.",
+  "explanation": "**Choice A is correct.** \"Including Kangchenjunga ... Dhaulagiri ... and ... Peak XV\" is a modifying phrase attached to \"peaks,\" and a comma is the conventional way to attach it.\n\n**The Full Solution:**\n- The main clause ends at \"some of the world's highest peaks.\"\n- What follows is not a new clause but an including-phrase that lists examples of those peaks (the items separated by semicolons because they carry internal commas).\n- A phrase of this kind is joined to its noun with a comma: \"peaks, including ...\"\n\n**Why the other choices are wrong:**\n- B: A period strands the including-phrase as a fragment with no subject or verb.\n- C: A semicolon must join two independent clauses; \"including ...\" is not a clause.\n- D: A colon could introduce the list directly (\"peaks: Kangchenjunga ...\"), but placing one before \"including\" makes the word redundant and is not conventional.",
   "_meta": {
-    "anchor": "Akinwumi Ogundiran — medieval West African urbanism (entity_keep); comma before an including-phrase"
-  },
-  "module": 1
+    "anchor": "Great Trigonometrical Survey of India; comma before an including-phrase"
+  }
 }

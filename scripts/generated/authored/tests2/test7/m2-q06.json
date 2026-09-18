@@ -1,0 +1,51 @@
+{
+ "id": 6,
+ "question": "In the xy-plane shown, the parabola crosses the x-axis at two lattice points. Which equation could define the parabola?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 4,
+    "k": 12
+   },
+   "a": -3,
+   "xRange": [
+    0,
+    8
+   ],
+   "yRange": [
+    -16,
+    16
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showVertex": false
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -(x - 4)^2 + 12$"
+  },
+  {
+   "id": "B",
+   "text": "$y = -3(x + 4)^2 + 12$"
+  },
+  {
+   "id": "C",
+   "text": "$y = -3(x - 4)^2 + 12$"
+  },
+  {
+   "id": "D",
+   "text": "$y = -3(x - 4)^2 - 12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads the vertex correctly but assumes a = -1, so the curve would meet the x-axis near x = 0.5 and x = 7.5, not at 2 and 6",
+  "B": "flips the sign inside the parentheses, placing the vertex at (-4, 12) instead of (4, 12)",
+  "D": "flips the sign of k, placing the vertex at (4, -12), which would open downward with no x-intercepts"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The peak sits at $(4,12)$, so the form is $y=a(x-4)^2+12$; the graph passes through $(6,0)$, giving $0=4a+12$ and $a=-3$.\n\n**The Full Solution:**\nStep 1: Read the vertex from the graph. The highest point is at $x=4$, $y=12$, so the equation has the form $y=a(x-4)^2+12$.\nStep 2: Read a second point. The curve crosses the $x$-axis at $x=2$ and $x=6$, so $(6,0)$ is on the graph.\nStep 3: Solve for $a$. Substituting gives $0=a(6-4)^2+12=4a+12$, so $a=-3$ and $y=-3(x-4)^2+12$. Check: at $x=2$, $-3(4)+12=0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($y=-(x-4)^2+12$): keeps the correct vertex but takes $a=-1$ without using a second point; that curve would cross the axis at $x=4\\pm2\\sqrt{3}\\approx0.5$ and $7.5$, not at the lattice points shown.\n* Choice B ($y=-3(x+4)^2+12$): reads the vertex $x$-coordinate as $-4$; $(x+4)^2$ shifts the peak to the left of the origin, off the visible grid.\n* Choice D ($y=-3(x-4)^2-12$): reads the vertex $y$-coordinate as $-12$; that parabola peaks below the $x$-axis and never crosses it.\n\n**Test Day Takeaway:** A vertex-form question always needs two readings from the graph: the vertex fixes $h$ and $k$, and one more point fixes $a$. Skipping the second reading is what makes $a=\\pm1$ so tempting.\n"
+}

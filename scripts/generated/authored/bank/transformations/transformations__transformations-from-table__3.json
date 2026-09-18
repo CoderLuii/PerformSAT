@@ -1,0 +1,57 @@
+{
+  "id": 3,
+  "question": "For the function $f$, the table shows the value of $f(x)$ at four values of $x$. The function $g$ is defined by $g(x)=-f(x)$. What is the value of $g(3)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)"
+      ],
+      "rows": [
+        [
+          "0",
+          "5"
+        ],
+        [
+          "3",
+          "8"
+        ],
+        [
+          "6",
+          "-2"
+        ],
+        [
+          "9",
+          "11"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-8$"
+    },
+    {
+      "id": "B",
+      "text": "$-5$"
+    },
+    {
+      "id": "C",
+      "text": "$2$"
+    },
+    {
+      "id": "D",
+      "text": "$8$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads the wrong row",
+    "C": "negates the value at x = 6",
+    "D": "omits the negative sign"
+  },
+  "correctAnswer": "A",
+  "hint": "Read the row for the input you need, then decide what the negative sign changes.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** The table gives $f(3)=8$, and $g(3)=-f(3)=-8$.\n\n**The Full Solution:**\nStep 1: Locate $x=3$ in the table; the corresponding output is $f(3)=8$.\nStep 2: The definition $g(x)=-f(x)$ multiplies that output by $-1$.\nStep 3: So $g(3)=-8$. Check: the graph of $g$ is the graph of $f$ reflected across the $x$-axis, so a height of $8$ becomes a height of $-8$ at the same input. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-5$): negates the output in the row $x=0$ instead of the row $x=3$.\n* Choice C ($2$): negates the output in the row $x=6$: $-(-2)=2$.\n* Choice D ($8$): reports $f(3)$ itself and never applies the negative sign.\n\n**Test Day Takeaway:** A negative outside the function changes the sign of the output and nothing else."
+}

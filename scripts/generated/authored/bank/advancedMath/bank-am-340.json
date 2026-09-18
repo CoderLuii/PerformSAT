@@ -1,0 +1,29 @@
+{
+  "question": "A counter's reading after $n$ cycles is $\\dfrac{9^{n+3}}{3^{2n}}$, and this reading equals $3^{k}$ for every positive integer $n$. What is the value of the constant $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-6$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$12$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracted in the wrong order, computing 2n - (2n + 6)",
+    "B": "rewrote 9^(n+3) as 3^(2n+3), doubling only the n",
+    "D": "cancelled to 9^3 correctly but doubled the exponent twice when converting to base 3, going 3 to 6 to 12"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** $9^{n+3}=3^{2n+6}$, so the quotient is $3^{(2n+6)-2n}=3^{6}$ and $k=6$.\n\n**The Full Solution:**\nStep 1: Write $9$ as $3^{2}$: $9^{n+3}=(3^{2})^{n+3}=3^{2n+6}$.\nStep 2: Divide by $3^{2n}$: $3^{(2n+6)-2n}=3^{6}$.\nStep 3: The $n$ terms cancel for every $n$, so $k=6$. Check at $n=1$: $\\dfrac{9^{4}}{3^{2}}=\\dfrac{6561}{9}=729=3^{6}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6$): subtracts in the wrong order, computing $2n-(2n+6)$.\n* Choice B ($3$): rewrites $9^{n+3}$ as $3^{2n+3}$, doubling only the $n$.\n* Choice D ($12$): cancels to $9^{3}$ but doubles the exponent twice when converting to base $3$, going $3\\to 6\\to 12$.\n\n**Test Day Takeaway:** When a quotient must be constant for every $n$, the variable parts of the exponents have to cancel — that is your check.",
+  "id": "bank-am-340"
+}

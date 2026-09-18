@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "Meteorologists need a radar's coverage disk, given by $x^2 + y^2 - 12x + 10y + c = 0$ with kilometers on both axes, to enclose an area of $64\\pi$ square kilometers. What value must the constant $c$ have?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$53$"
+  },
+  {
+   "id": "D",
+   "text": "$125$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves 61 - c = 64 correctly but reports the opposite sign, 3 instead of -3",
+  "C": "takes the radius 8 from the area and sets 61 - c = 8 instead of 61 - c = 64",
+  "D": "moves c to the wrong side, computing 61 + 64 = 125"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Area $64\\pi$ means $r^2 = 64$, and completing both squares gives $61 - c = 64$, so $c = -3$.\n\n**The Full Solution:**\nStep 1: The area of a circle is $\\pi r^2$, so $\\pi r^2 = 64\\pi$ and $r^2 = 64$.\nStep 2: Group and complete the square in each variable: $x^2 - 12x$ needs $36$ and $y^2 + 10y$ needs $25$, giving $(x - 6)^2 + (y + 5)^2 = 36 + 25 - c = 61 - c$.\nStep 3: Set the right side equal to $r^2$: $61 - c = 64$, so $c = -3$.\nCheck: with $c = -3$ the equation is $(x - 6)^2 + (y + 5)^2 = 64$, a circle of radius $8$ and area $64\\pi$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($3$): the arithmetic $61 - c = 64$ is right, but the sign is dropped when solving; $c = 3$ would leave $r^2 = 58$.\n* Choice C ($53$): finds the radius $8$ and sets $61 - c = 8$, matching the radius instead of its square.\n* Choice D ($125$): adds $64$ to $61$, as though $c$ moved to the right side without a sign change.\n\n**Test Day Takeaway:** In general form, the completed-square constant equals $r^2$ — convert an area or a circumference to $r^2$ before you compare."
+}

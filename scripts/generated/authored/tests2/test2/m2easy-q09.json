@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "The floor of a pedestrian underpass has elevation $y = 0.5x^2 - 7x + 20$, in feet relative to the street, at a horizontal distance of $x$ feet from one entrance. What is the distance between the two values of $x$ at which the floor is at street level?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the smaller x-intercept, 4, instead of the distance between the two intercepts",
+  "C": "reports the larger x-intercept, 10, instead of the distance between the two intercepts",
+  "D": "adds the two intercepts, 4 + 10, instead of subtracting them"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Street level means $y = 0$; doubling gives $x^2 - 14x + 40 = 0$, so $x = 4$ or $x = 10$, a gap of $6$.\n\n**The Full Solution:**\nStep 1: Street level is $y = 0$, so solve $0.5x^2 - 7x + 20 = 0$. Multiply through by $2$ to clear the decimal: $x^2 - 14x + 40 = 0$.\nStep 2: Factor: $(x - 4)(x - 10) = 0$, so the floor meets street level at $x = 4$ and $x = 10$.\nStep 3: The distance between those inputs is $10 - 4 = 6$ feet. Check: $0.5(16) - 7(4) + 20 = 8 - 28 + 20 = 0$ and $0.5(100) - 7(10) + 20 = 50 - 70 + 20 = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): the smaller $x$-intercept. It answers where the floor first reaches street level, not how far apart the two crossings are.\n* Choice C ($10$): the larger $x$-intercept, the same misread from the other end.\n* Choice D ($14$): adds the roots instead of subtracting. Note that $14$ is also the sum of the roots, which equals $-\\frac{b}{a}$ after clearing the decimal, a tempting but wrong quantity.\n\n**Test Day Takeaway:** Distance between intercepts is always the larger root minus the smaller one. Solve for both, then subtract; do not stop at one root."
+}

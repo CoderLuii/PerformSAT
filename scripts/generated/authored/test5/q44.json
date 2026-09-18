@@ -1,34 +1,34 @@
 {
-  "id": 544,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "By the time the marine biologist Sylvia Earle made her 1979 record-setting solo dive off the Hawaiian island of Oahu, walking along the seafloor at a depth of 381 meters in a hard-shelled atmospheric ______ Earle had already logged thousands of hours below the surface in a career two decades long, and the dive was less a single achievement than the culmination of a sustained working life under water.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "diving suit;"
-    },
-    {
-      "id": "B",
-      "text": "diving suit, and"
-    },
-    {
-      "id": "C",
-      "text": "diving suit,"
-    },
-    {
-      "id": "D",
-      "text": "diving suit"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"diving suit,\". The first part of the sentence is a long introductory subordinate clause beginning with \"By the time,\" and Standard English sets such a clause off from the main clause that follows with a comma. The main clause begins with \"Earle had already logged….\" A semicolon (choice A) would wrongly treat the introductory clause as if it could stand alone. Adding \"and\" (choice B) tries to coordinate the subordinate clause with the main clause as equals, which its \"By the time\" opening forbids. No punctuation (choice D) runs the introductory clause straight into the main clause.",
-  "_meta": {
-    "anchor": "Sylvia Earle — 1979 atmospheric-diving-suit dive; introductory-clause comma"
+ "id": 544,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "When the first purpose-built public aquariums opened their doors in the middle of the nineteenth ______ the art of keeping marine animals alive indoors was barely a decade old, and keepers experimented constantly with aeration, water changes, and recipes for artificial seawater.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "century;"
+  },
+  {
+   "id": "B",
+   "text": "century, and"
+  },
+  {
+   "id": "C",
+   "text": "century,"
+  },
+  {
+   "id": "D",
+   "text": "century"
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** \"When the first purpose-built public aquariums opened their doors in the middle of the nineteenth century\" is an introductory dependent clause, and such a clause is set off from the main clause by a comma.\n\n**The Full Solution:**\n- The sentence opens with a subordinate clause headed by \"When,\" which cannot stand alone.\n- The main clause follows: \"the art of keeping marine animals alive indoors was barely a decade old...\"\n- Standard English separates a fronted dependent clause from the main clause with a comma, giving \"...nineteenth century, the art...\"\n\n**Why the other choices are wrong:**\n- A: A semicolon requires an independent clause on each side, but the \"When\" clause is dependent.\n- B: Adding \"and\" treats the dependent clause as a coordinate independent clause, leaving the sentence without a grammatical main-clause structure for the opening to modify.\n- D: Omitting the comma runs the introductory clause straight into the main clause, obscuring where the frame ends and the assertion begins.",
+ "_meta": {
+  "anchor": "first public aquariums; comma after an introductory dependent clause"
+ }
 }

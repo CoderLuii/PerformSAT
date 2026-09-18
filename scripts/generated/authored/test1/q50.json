@@ -6,26 +6,26 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 2,
- "passage": "In Black Feminist Thought (1990), University of Maryland sociologist Patricia Hill Collins argued that Black women in the United States, by virtue of occupying a distinctive social location at the intersection of race, gender, and class, have produced a coherent intellectual tradition that cannot be derived from any single one of those categories considered on its own. ______ the simultaneous experience of being Black, female, and (for most) working class is not merely the backdrop against which Black women's ideas have been written but is itself the standpoint that gives those ideas their characteristic shape and shared core.",
+ "passage": "Neural machine translation systems, trained on hundreds of millions of paired sentences, now render routine prose between major languages with striking fluency, and evaluators sometimes rate their output as indistinguishable from professional work. ______ idiomatic expressions continue to expose the systems' limits: because a phrase like \"spill the beans\" means something unrelated to beans, and because such phrases are rare and unevenly represented in training data, systems still occasionally translate them word by word into fluent nonsense.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "Consequently,"
+   "text": "Nevertheless,"
   },
   {
    "id": "B",
-   "text": "In other words,"
+   "text": "Accordingly,"
   },
   {
    "id": "C",
-   "text": "For example,"
+   "text": "Likewise,"
   },
   {
    "id": "D",
-   "text": "In addition,"
+   "text": "In other words,"
   }
  ],
- "correctAnswer": "B",
- "explanation": "The first sentence states Collins's central claim in fairly abstract terms: Black women's distinctive social location at the intersection of race, gender, and class has produced a coherent intellectual tradition that cannot be derived from any of those categories taken alone. The second sentence then renames the same idea in different vocabulary — recasting 'distinctive social location' as 'the simultaneous experience of being Black, female, and (for most) working class,' and recasting 'a coherent intellectual tradition' as 'the standpoint that gives those ideas their characteristic shape and shared core.' The relation between the two sentences is reformulation: sentence 2 restates sentence 1's argument so the reader sees the same claim from a different angle. 'In other words,' is the CB-lexicon transition for that restatement move and is correct (B).\n\nThe cue that selects 'In other words,' here is the parallel between 'is not merely … but is itself' in sentence 2 and the structure of sentence 1's claim about intersectional location producing a tradition: sentence 2 introduces no new entities, only a rephrasing of the relationship sentence 1 already named. That is the textbook signature of restatement rather than illustration, consequence, or addition."
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The second sentence undercuts the record of success the first sentence builds, and \"Nevertheless\" concedes the success while introducing the persistent failure.\n\n**The Full Solution:**\n- First sentence: striking fluency, ratings comparable to professional translation.\n- Second sentence: idioms \"continue to expose the systems' limits,\" down to word-by-word renderings of \"fluent nonsense.\"\n- A sentence that qualifies preceding praise needs a concessive contrast transition.\n\n**Why the other choices are wrong:**\n- B: \"Accordingly\" would present the idiom failures as a consequence of the fluency, inverting the logic.\n- C: \"Likewise\" would promise a second, parallel success, but the sentence delivers a shortcoming.\n- D: \"In other words\" would offer the idiom problem as a restatement of the fluency claim, though the sentences make opposing points."
 }

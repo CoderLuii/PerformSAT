@@ -1,0 +1,52 @@
+{
+  "id": "bank-ps-263",
+  "question": "The table shows the number of seed packets of each type in a box. Two packets will be selected at random from the box, one after the other, without replacement. What is the probability that the first packet selected is tomato and the second packet selected is pepper?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Type of seed",
+        "Number of packets"
+      ],
+      "rows": [
+        [
+          "Tomato",
+          "8"
+        ],
+        [
+          "Pepper",
+          "5"
+        ],
+        [
+          "Squash",
+          "3"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{5}{32}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{1}{6}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{1}{3}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{13}{16}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "with replacement: 8/16 times 5/16, never reducing the total",
+    "C": "uses only the second draw, 5/15",
+    "D": "adds 8/16 + 5/16 instead of multiplying"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Total packets: $8 + 5 + 3 = 16$. Tomato first: $\\frac{8}{16}$; pepper second from the remaining $15$: $\\frac{5}{15}$. Product: $\\frac{8}{16} \\times \\frac{5}{15} = \\frac{1}{2} \\times \\frac{1}{3} = \\frac{1}{6}$.\n\n**The Full Solution:**\nStep 1: Add the table's counts: $8 + 5 + 3 = 16$ packets. The probability the first packet is tomato is $\\frac{8}{16} = \\frac{1}{2}$.\nStep 2: One packet is gone, leaving $15$; all $5$ pepper packets remain, so the probability the second is pepper is $\\frac{5}{15} = \\frac{1}{3}$.\nStep 3: Multiply: $\\frac{1}{2} \\times \\frac{1}{3} = \\frac{1}{6}$. Check: $\\frac{8 \\times 5}{16 \\times 15} = \\frac{40}{240} = \\frac{1}{6}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{5}{32}$): $\\frac{8}{16} \\times \\frac{5}{16} = \\frac{40}{256}$ keeps the denominator at $16$, as if the first packet were replaced.\n* Choice C ($\\frac{1}{3}$): $\\frac{5}{15}$ is the second draw's probability alone; the first draw was dropped.\n* Choice D ($\\frac{13}{16}$): $\\frac{8}{16} + \\frac{5}{16}$ adds the probabilities, which would answer \"tomato OR pepper on a single draw.\"\n\n**Test Day Takeaway:** When the first draw is a different type from the second, only the denominator shrinks for the second draw; the numerator stays at the full count of the second type."
+}

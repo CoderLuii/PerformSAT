@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-282",
+ "question": "A canning retort's pressure condition reduces to $\\dfrac{x^{2}}{x-2}=\\dfrac{4}{x-2}$. One value of $x$ satisfies the equation left after the denominators are cleared but not the original condition. What is that value?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2$"
+  },
+  {
+   "id": "B",
+   "text": "$0$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$4$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports -2, the value that does satisfy the original condition, instead of the one that fails",
+  "B": "reads the numerator x squared equal to 0 as the excluded input",
+  "D": "reports 4, the value of x squared, instead of a value of x"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Rational Equation with Extraneous Solution**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Clearing the denominator leaves $x^{2}=4$, so $x=2$ or $x=-2$; the value $x=2$ makes $x-2$ equal $0$, so it fails in the original.\n\n**The Full Solution:**\n\nStep 1: Multiplying both sides by $x-2$ gives $x^{2}=4$, whose solutions are $x=2$ and $x=-2$.\n\nStep 2: The original condition has $x-2$ in both denominators, so $x=2$ is outside its domain.\n\nStep 3: Therefore $x=2$ satisfies the cleared equation but not the original one, while $x=-2$ satisfies both. Check: at $x=-2$, $\\frac{4}{-4}=-1$ and $\\frac{4}{-4}=-1$; at $x=2$ both sides are undefined.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-2$): names the value that does satisfy the original condition.\n* Choice B ($0$): reads the numerator $x^{2}=0$ as the excluded input.\n* Choice D ($4$): reports $x^{2}$ rather than $x$.\n\n**Test Day Takeaway:** Clearing denominators can manufacture a solution; compare every root against the inputs the original equation forbids."
+}

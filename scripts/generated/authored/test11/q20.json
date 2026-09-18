@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "printer's"
-    },
-    {
-      "id": "B",
-      "text": "printers"
-    },
-    {
-      "id": "C",
-      "text": "printers'"
-    },
-    {
-      "id": "D",
-      "text": "printers's"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The choices belong to the printers, who are plural, so the possessive of the plural noun \"printers\" is formed by adding an apostrophe after the existing -s: \"the printers' choices.\" \"Printer's\" is the singular possessive, but the sentence is about more than one printer; \"printers\" with no apostrophe is merely the plural and marks no possession; and \"printers's\" adds an extra -s that the plural possessive does not take.",
-  "passage": "In a traditional ukiyo-e printing workshop, the block carver worked faithfully from the artist's original drawing, and yet it was the printers ______ choices about ink density, color saturation, and registration that gave each individual impression much of its final character on the finished sheet.",
-  "_meta": {
-    "anchor": "ukiyo-e printmaking workshop (generic)",
-    "rule": "plural possessive of a noun already ending in -s"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "weaver's"
   },
-  "id": 1120,
-  "module": 1
+  {
+   "id": "B",
+   "text": "weavers"
+  },
+  {
+   "id": "C",
+   "text": "weavers'"
+  },
+  {
+   "id": "D",
+   "text": "weavers's"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The decisions belong to the weavers, plural — the sentence has already put \"generations of weavers\" at the loom — so the plural possessive \"weavers'\" is required.\n\n**The Full Solution:**\n- The possessor is plural: the town's weavers collectively, across generations.\n- A regular plural noun ending in -s forms its possessive with an apostrophe alone: weavers → weavers'.\n- \"The weavers' decisions about splitting, moisture, and tension\" correctly marks plural possession.\n\n**Why the other choices are wrong:**\n- A: \"Weaver's\" is the singular possessive, but the sentence attributes the decisions to weavers generally, not to one weaver.\n- B: \"Weavers\" is a bare plural with no possessive marking, yet the noun must possess \"decisions.\"\n- D: \"Weavers's\" is a malformed possessive — a plural already ending in -s never adds another 's.",
+ "passage": "Generations of weavers in Montecristi have produced hats of a fineness no factory has matched, and it was the ______ decisions about splitting, moisture, and tension, made hour by hour at the crown, that determined how fine each hat could become.",
+ "_meta": {
+  "rule": "plural possessive of a regular -s plural",
+  "anchor": "panama-hat weaving — Montecristi weavers' judgment",
+  "distractors": {
+   "A": "singular possessive",
+   "B": "no possessive marking",
+   "D": "double-s malformed possessive"
+  }
+ },
+ "id": 1120,
+ "module": 1
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-308",
+  "question": "A rectangular solar panel is $3$ feet longer than it is wide. If the width of the panel is $w$ feet, for which values of $w$ is the area of the panel less than $54$ square feet?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-9 < w < 6$"
+    },
+    {
+      "id": "B",
+      "text": "$0 < w < 9$"
+    },
+    {
+      "id": "C",
+      "text": "$w > 6$"
+    },
+    {
+      "id": "D",
+      "text": "$0 < w < 6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "keeps widths that cannot exist",
+    "B": "uses 9 as the upper bound",
+    "C": "reverses the inequality"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** $w(w + 3) < 54$ becomes $(w + 9)(w - 6) < 0$, so $-9 < w < 6$. A width must be positive, leaving $0 < w < 6$.\n\n**The Full Solution:**\nStep 1: The length is $w + 3$, so the area is $w(w + 3)$ and the condition is $w(w + 3) < 54$.\nStep 2: Expanding and collecting gives $w^2 + 3w - 54 < 0$, which factors as $(w + 9)(w - 6) < 0$. The product is negative between the critical values, so $-9 < w < 6$.\nStep 3: A physical width satisfies $w > 0$, so the answer is $0 < w < 6$. Check: $w = 5$ gives an area of $5(8) = 40 < 54$, and $w = 6$ gives exactly $54$, which is not less. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-9 < w < 6$): solves the inequality correctly but keeps negative widths the context forbids.\n* Choice B ($0 < w < 9$): uses $9$, the size of the negative critical value, as the upper bound.\n* Choice C ($w > 6$): reverses the inequality and describes the widths for which the area exceeds $54$.\n\n**Test Day Takeaway:** Solve the quadratic inequality first, then intersect the solution set with the values the context allows."
+}

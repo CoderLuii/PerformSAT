@@ -1,0 +1,55 @@
+{
+ "id": 16,
+ "question": "Two identical right triangular canvas panels reinforce a boat-shed awning, and one panel is drawn in the figure with two side lengths in inches. What is the combined area, in square inches, of both panels?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     13.856,
+     0
+    ],
+    [
+     13.856,
+     8
+    ]
+   ],
+   "sideLabels": [
+    "",
+    "8",
+    "16"
+   ],
+   "rightAngleVertex": 1,
+   "showRightAngle": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8\\sqrt{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$32\\sqrt{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$64\\sqrt{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$128\\sqrt{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the missing leg length 8 times sqrt(3) as if it were an area",
+  "B": "gives the area of a single panel, 32 times sqrt(3), instead of both panels",
+  "D": "omits the factor 1/2 in the triangle area formula for both panels: 2 times 8 times 8 sqrt(3) = 128 sqrt(3)"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**Choice C is correct.** The missing leg is $8\\sqrt{3}$, so one panel has area $32\\sqrt{3}$ and two panels have area $64\\sqrt{3}$ square inches.\n\n**The Fast Way (~35s):** A leg of $8$ with hypotenuse $16$ is half the hypotenuse, so the other leg is $8\\sqrt{3}$. One panel is $\\frac{1}{2}(8)(8\\sqrt{3}) = 32\\sqrt{3}$; doubling gives $64\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: The panel is a right triangle with hypotenuse $16$ and one leg $8$. By the Pythagorean theorem the other leg is $\\sqrt{16^2 - 8^2} = \\sqrt{256 - 64} = \\sqrt{192}$.\nStep 2: Simplify the radical: $\\sqrt{192} = \\sqrt{64 \\cdot 3} = 8\\sqrt{3}$ inches. The two legs are therefore $8$ and $8\\sqrt{3}$.\nStep 3: One panel has area $\\frac{1}{2}(8)(8\\sqrt{3}) = 32\\sqrt{3}$, so two identical panels have area $64\\sqrt{3}$ square inches. Check numerically: $8\\sqrt{3} \\approx 13.86$, and $\\frac{1}{2}(8)(13.86)(2) \\approx 110.9 \\approx 64\\sqrt{3}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8\\sqrt{3}$): this is the missing leg, a length, not an area. It is the answer to the setup step, not to the question.\n* Choice B ($32\\sqrt{3}$): this is one panel's area. The awning uses two identical panels, so the total is twice this.\n* Choice D ($128\\sqrt{3}$): this multiplies the legs for both panels but never applies the factor $\\frac{1}{2}$, giving the area of two rectangles instead of two triangles.\n\n**Test Day Takeaway:** With a right triangle, find the missing side and simplify the radical before touching the area formula — and reread whether the question wants one figure or several."
+}

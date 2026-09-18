@@ -1,0 +1,56 @@
+{
+  "question": "A triangular zoning parcel has the side lengths, in meters, shown in the figure. Which statement about the parcel's largest angle is true?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          21,
+          0
+        ],
+        [
+          13.167,
+          9.091
+        ]
+      ],
+      "sideLabels": [
+        "21",
+        "12",
+        "16"
+      ],
+      "showRightAngle": false,
+      "rightAngleVertex": 1,
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12^2 + 16^2 > 21^2$, so the largest angle is acute."
+    },
+    {
+      "id": "B",
+      "text": "$12^2 + 16^2 = 21^2$, so the largest angle is a right angle."
+    },
+    {
+      "id": "C",
+      "text": "$12^2 + 16^2 < 21^2$, so the largest angle is obtuse."
+    },
+    {
+      "id": "D",
+      "text": "$12^2 + 21^2 > 16^2$, so the largest angle is acute."
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "computes 144 + 256 = 400 but compares it as larger than 441",
+    "B": "assumes the parcel must be a right triangle",
+    "D": "tests the shortest and longest sides against the middle side, comparing 12 squared + 21 squared with 16 squared"
+  },
+  "explanation": "**SAT Pattern: Classify Triangle by Pythagorean Test**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Compare the squares of the two shorter sides with the square of the longest: $144 + 256 = 400 < 441$, so the largest angle is obtuse.\n\n**The Full Solution:**\nStep 1: The largest angle lies opposite the longest side, $21$ meters.\nStep 2: The Pythagorean test compares $a^2 + b^2$ with $c^2$ for the two shorter sides $a, b$ and the longest side $c$: $12^2 + 16^2 = 144 + 256 = 400$ and $21^2 = 441$.\nStep 3: Since $400 < 441$, the angle opposite the $21$-meter side is obtuse. Check: $12 + 16 = 28 > 21$, so these three lengths do form a triangle ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: gets $400$ and $441$ but reverses the comparison, which would make the angle acute.\n* Choice B: assumes a right triangle; that would require $400 = 441$.\n* Choice D: squares $12$ and $21$, the shortest and the longest side, against the middle one — the test must put the two SHORTEST sides against the longest.\n\n**Test Day Takeaway:** $a^2 + b^2$ versus $c^2$ classifies the angle opposite $c$: greater means acute, equal means right, less means obtuse.",
+  "id": "bank-geo-041"
+}

@@ -1,0 +1,47 @@
+{
+ "id": 1,
+ "question": "A $45°$-$45°$-$90°$ triangle has legs of length $11$ centimeters. What is the length, in centimeters, of its hypotenuse?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "45°",
+    "",
+    "45°"
+   ],
+   "sideLabels": [
+    "11",
+    "11",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\sqrt{22}$"
+  },
+  {
+   "id": "B",
+   "text": "$11\\sqrt{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$11\\sqrt{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$22$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds the legs and then takes a square root, instead of adding their squares",
+  "C": "uses $\\sqrt{3}$, which belongs to the $30°$-$60°$-$90°$ ratios",
+  "D": "doubles a leg, which is the $30°$-$60°$-$90°$ hypotenuse rule"
+ },
+ "correctAnswer": "B",
+ "hint": "The two legs are equal, so the Pythagorean theorem gives twice one square.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** In a $45°$-$45°$-$90°$ triangle the hypotenuse is $\\sqrt{2}$ times a leg, so it is $11\\sqrt{2}$.\n\n**The Full Solution:**\nStep 1: The two legs are equal, so the sides are in the ratio $1 : 1 : \\sqrt{2}$.\nStep 2: With each leg $11$, the hypotenuse is $11\\sqrt{2}$ centimeters.\nStep 3: Check with the Pythagorean theorem: $11^2 + 11^2 = 242$ and $(11\\sqrt{2})^2 = 121(2) = 242$.\n\nVerification: $11\\sqrt{2} \\approx 15.6$, longer than either leg and shorter than their sum of $22$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\sqrt{22}$): adds the legs and then takes a square root, instead of adding their squares.\n* Choice C ($11\\sqrt{3}$): uses $\\sqrt{3}$, which belongs to the $30°$-$60°$-$90°$ ratios.\n* Choice D ($22$): doubles a leg, which is the $30°$-$60°$-$90°$ hypotenuse rule.\n\n**Test Day Takeaway:** Leg to hypotenuse in a $45°$-$45°$-$90°$ triangle multiplies by $\\sqrt{2}$; going the other way divides."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "bank-alg-005",
+  "question": "The table gives the water level, in centimeters, at a river gauge at two times on the same day. Over this interval the water level changed at a constant rate. What was the rate of change, in centimeters per hour, of the water level?",
+  "questionTable": {
+    "headers": [
+      "Time",
+      "Water level (cm)"
+    ],
+    "rows": [
+      [
+        "6:50 A.M.",
+        "184"
+      ],
+      [
+        "9:20 A.M.",
+        "154"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-30$"
+    },
+    {
+      "id": "B",
+      "text": "$-15$"
+    },
+    {
+      "id": "C",
+      "text": "$-12$"
+    },
+    {
+      "id": "D",
+      "text": "$-10$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the change in level, never divided by the elapsed time",
+    "B": "uses 2 hours for the interval, ignoring the extra 30 minutes",
+    "D": "uses 3 hours (subtracts the hour digits 9 - 6)"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Average Rate Over Time**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The level dropped $30$ centimeters between 6:50 A.M. and 9:20 A.M., which is $2$ hours $30$ minutes, or $2.5$ hours. The rate is $\\frac{-30}{2.5} = -12$ centimeters per hour.\n\n**The Full Solution:**\nStep 1: Change in level $= 154 - 184 = -30$ centimeters.\nStep 2: Elapsed time: from 6:50 A.M. to 8:50 A.M. is $2$ hours, and from 8:50 A.M. to 9:20 A.M. is $30$ more minutes, so the interval is $2.5$ hours. The rate is asked per hour, so the time must be expressed in hours.\nStep 3: Rate $= \\frac{-30}{2.5} = -12$ centimeters per hour. Check: $2.5$ hours at $-12$ centimeters per hour is $-30$ centimeters, and $184 - 30 = 154$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-30$): reports the total change in level and never divides by the elapsed time.\n* Choice B ($-15$): counts the interval as $2$ hours, dropping the final $30$ minutes, and computes $\\frac{-30}{2}$.\n* Choice D ($-10$): subtracts the hour digits, $9 - 6 = 3$ hours, ignoring the minutes entirely, and computes $\\frac{-30}{3}$.\n\n**Test Day Takeaway:** Convert clock times to a decimal number of hours before dividing; a rate \"per hour\" computed with a sloppy time interval is the most common trap in these items."
+}

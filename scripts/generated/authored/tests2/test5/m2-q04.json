@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A geologist measures the thickness, in centimeters, of the seven ash layers in a drill core as $14$, $9$, $22$, $9$, $31$, $18$, and $k$. Which expression gives the mean thickness, in centimeters, of the seven layers?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{k+94}{7}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{k+103}{6}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{103}{7}+k$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{k+103}{7}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "counts the repeated 9 only once, summing the six known values as 94 instead of 103",
+  "B": "divides by 6, the number of known thicknesses, instead of by 7, the number of layers",
+  "C": "averages only the six known thicknesses and then adds k on afterward"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Mean from List**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The six known thicknesses total $103$, and there are $7$ layers in all, so the mean is $\\dfrac{k+103}{7}$.\n\n**The Full Solution:**\nStep 1: The mean of a data set is the sum of its values divided by how many values there are. Here the data set has $7$ values, one of which is the unknown $k$.\nStep 2: Add the six known thicknesses: $14+9+22+9+31+18$. Grouping, $14+22=36$, $9+9=18$, and $31+18=49$, so the sum is $36+18+49=103$. Including the last layer, the total is $k+103$.\nStep 3: Divide the total by $7$: the mean is $\\dfrac{k+103}{7}$. Check with a value: if $k=15$, the seven thicknesses total $118$ and the mean is $\\dfrac{118}{7}$, which is exactly what $\\dfrac{15+103}{7}$ gives ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{k+94}{7}$): counts the repeated $9$ only once, so the known sum comes out $94$ instead of $103$. A repeated value contributes every time it appears.\n* Choice B ($\\frac{k+103}{6}$): divides by the six thicknesses that were written as numbers, forgetting that $k$ is a seventh measurement.\n* Choice C ($\\frac{103}{7}+k$): averages the six known layers and then tacks $k$ on. That adds $k$ whole centimeters to the mean instead of $\\frac{k}{7}$.\n\n**Test Day Takeaway:** Build the mean as one fraction — every value in the numerator, the full count in the denominator — before simplifying anything. Unknown entries are counted like any other value."
+}

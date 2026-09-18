@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-277",
+  "question": "A trust account earns $9\\%$ interest, compounded annually, and no deposits or withdrawals are made. Which of the following is closest to the number of years required for the value of the account to triple?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$"
+    },
+    {
+      "id": "B",
+      "text": "$13$"
+    },
+    {
+      "id": "C",
+      "text": "$22$"
+    },
+    {
+      "id": "D",
+      "text": "$33$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "finds the time to double rather than to triple",
+    "C": "computes $\\dfrac{200}{9}$, treating the growth as simple interest",
+    "D": "computes $\\dfrac{300}{9}$, dividing the target percent by the rate"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** Solve $(1.09)^t = 3$. Since $(1.09)^{12} \\approx 2.81$ and $(1.09)^{13} \\approx 3.07$, the value first reaches triple near $t = 13$.\n\n**The Full Solution:**\nStep 1: Let $P$ be the starting value. After $t$ years the account holds $P(1.09)^t$, and tripling means $P(1.09)^t = 3P$, so $(1.09)^t = 3$.\nStep 2: Test values: $(1.09)^{10} \\approx 2.37$, $(1.09)^{12} \\approx 2.81$, $(1.09)^{13} \\approx 3.07$.\nStep 3: The multiplier passes $3$ between $t = 12$ and $t = 13$, and $3.07$ is closer to $3$ than $2.81$ is, so $13$ years is closest. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): $(1.09)^8 \\approx 1.99$ — that is the doubling time, not the tripling time.\n* Choice C ($22$): this divides $200$ by $9$, which would be right only for simple interest on the original $200\\%$ gain.\n* Choice D ($33$): this divides $300$ by $9$, mistaking the target multiple for a percent to be divided by the rate.\n\n**Test Day Takeaway:** \"Doubles/triples\" means the MULTIPLIER hits $2$ or $3$; set $(1 + r)^t$ equal to that number and test exponents rather than dividing percents."
+}

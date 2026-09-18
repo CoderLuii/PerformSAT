@@ -1,0 +1,29 @@
+{
+ "question": "A cylindrical concrete bollard is $10$ centimeters across at its base and rises $90$ centimeters above the sidewalk. How many cubic centimeters of concrete does it contain?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$450\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$900\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$2250\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$9000\\pi$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "multiplies the radius by the height without squaring, 5 times 90",
+  "B": "uses the curved surface formula 2 pi r h, 2 times 5 times 90",
+  "D": "uses the 10-centimeter width as the radius, 100 times 90"
+ },
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The radius is $5$ centimeters, so $V = \\pi(5)^2(90) = 2250\\pi$ cubic centimeters.\n\n**The Full Solution:**\nStep 1: \"Across\" gives the diameter, so the radius is $\\frac{10}{2} = 5$ centimeters and the height is $90$ centimeters.\nStep 2: Apply $V = \\pi r^2 h$: $V = \\pi(25)(90)$.\nStep 3: Multiply: $V = 2250\\pi$ cubic centimeters. Check: the base area is $25\\pi$ square centimeters, and stacking it $90$ centimeters high gives $2250\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($450\\pi$): multiplies $r$ by $h$ and forgets to square the radius.\n* Choice B ($900\\pi$): computes $2\\pi r h$, the curved surface area, instead of the volume.\n* Choice D ($9000\\pi$): treats the $10$-centimeter width as the radius, quadrupling the base area.\n\n**Test Day Takeaway:** Convert \"across\" to a radius first; $\\pi r^2 h$ punishes a diameter substitution by a factor of $4$.",
+ "id": "bank-geo-294"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-451",
+  "question": "During a morning count at a river crossing, the ratio of northbound vehicles to southbound vehicles was $3$ to $7$, and $84$ more southbound vehicles than northbound vehicles were counted. How many vehicles were counted in all during that morning?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$63$"
+    },
+    {
+      "id": "B",
+      "text": "$84$"
+    },
+    {
+      "id": "C",
+      "text": "$147$"
+    },
+    {
+      "id": "D",
+      "text": "$210$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the northbound count alone, 3 parts x 21 = 63",
+    "B": "reports the given difference of 84 vehicles as though it were the total",
+    "C": "reports the southbound count alone, 7 parts x 21 = 147"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Sum-of-Parts Ratio**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The gap is $7 - 3 = 4$ parts, so one part is $\\frac{84}{4} = 21$ and the total is $10$ parts, or $210$ vehicles.\n\n**The Full Solution:**\nStep 1: Turn the ratio into parts. Northbound is $3$ parts, southbound is $7$ parts, so southbound exceeds northbound by $7 - 3 = 4$ parts.\nStep 2: Size one part. Those $4$ parts equal $84$ vehicles, so one part is $\\frac{84}{4} = 21$ vehicles.\nStep 3: Total the parts and check. All $3 + 7 = 10$ parts give $10 \\times 21 = 210$ vehicles. Northbound is $63$, southbound is $147$, and $147 - 63 = 84$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($63$): is the northbound count, $3$ parts, not the total.\n* Choice B ($84$): is the given difference itself, restated as if it were the count of all vehicles.\n* Choice C ($147$): is the southbound count, $7$ parts, not the total.\n\n**Test Day Takeaway:** When a ratio comes with a DIFFERENCE, divide by the difference of the ratio numbers to size one part, then multiply by whichever total the question wants."
+}

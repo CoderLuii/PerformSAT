@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "Fifteen daily temperature readings from a fermentation vat have a mean of $4.5$ degrees Celsius. Every reading is converted to degrees Fahrenheit with $F = 1.8C + 32$. What is the mean, in degrees Fahrenheit, of the converted readings?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8.1$"
+  },
+  {
+   "id": "B",
+   "text": "$36.5$"
+  },
+  {
+   "id": "C",
+   "text": "$40.1$"
+  },
+  {
+   "id": "D",
+   "text": "$65.7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies the mean by 1.8 but never adds the 32",
+  "B": "adds 32 to the mean without multiplying by 1.8",
+  "D": "adds 32 to the mean first and then multiplies the sum by 1.8"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Scaling a Data Set by a Constant**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** A mean transforms exactly the way each value does, so the new mean is $1.8(4.5) + 32 = 40.1$.\n\n**The Full Solution:**\nStep 1: Multiplying every value by $1.8$ multiplies the mean by $1.8$: the mean becomes $1.8(4.5) = 8.1$.\nStep 2: Adding $32$ to every value adds $32$ to the mean: $8.1 + 32 = 40.1$ degrees Fahrenheit.\nStep 3: Confirm with the totals. The $15$ Celsius readings sum to $15(4.5) = 67.5$, so the Fahrenheit readings sum to $1.8(67.5) + 15(32) = 121.5 + 480 = 601.5$, and $\\frac{601.5}{15} = 40.1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8.1$): applies only the multiplication, $1.8(4.5)$, and never adds the $32$-degree shift.\n* Choice B ($36.5$): applies only the shift, $4.5 + 32$, and never scales by $1.8$.\n* Choice D ($65.7$): adds first and multiplies second, computing $1.8(4.5 + 32)$. The conversion multiplies before it adds.\n\n**Test Day Takeaway:** Under $y = mx + k$ applied to every value, the mean follows the same rule: multiply the old mean by $m$, then add $k$, in that order."
+}

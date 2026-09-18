@@ -9,34 +9,33 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "Kerry James Marshall is an American painter and a professor emeritus of art at the University of Illinois at Chicago.",
-      "History painting is a Western tradition in which artists depict scenes drawn from history, mythology, or scripture using the established techniques of academic figure painting.",
-      "The canon of history painting has almost entirely excluded Black figures from its subjects.",
-      "In *Kerry James Marshall: Mastry* (2016), Marshall argues that the tradition must be claimed and rebuilt around Black figures rendered with deliberate technical mastery.",
-      "On Marshall's view, the absence in the canon must be corrected at the level of craft as well as at the level of iconography.",
-      "Marshall holds that adding Black subjects to history painting without that technical mastery would address the canon's iconography but leave its craft untouched."
+      "Emmy Noether (1882-1935) was a German mathematician.",
+      "In 1915, physicists were troubled because Einstein's new general theory of relativity seemed to conflict with the conservation of energy.",
+      "In 1918, Noether proved a theorem showing that every continuous symmetry in the laws of physics corresponds to a conserved quantity.",
+      "For example, because the laws of physics are the same at all times, energy must be conserved.",
+      "Physicists today still use Noether's theorem to identify conserved quantities whenever they propose new theories."
     ],
-    "goal": "The student wants to present Marshall's central claim about the Western tradition of history painting."
+    "goal": "The student wants to emphasize the lasting usefulness of Noether's theorem to physicists."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Kerry James Marshall is an American painter and a professor emeritus of art at the University of Illinois at Chicago."
+      "text": "In 1918, Emmy Noether proved a theorem showing that every continuous symmetry in the laws of physics corresponds to a conserved quantity — for example, energy is conserved because the laws of physics are the same at all times."
     },
     {
       "id": "B",
-      "text": "Marshall argues that the Western tradition of history painting must be rebuilt around Black figures rendered with the technical mastery the tradition has always demanded."
+      "text": "More than a century after Emmy Noether proved it, physicists still turn to her 1918 theorem to identify conserved quantities whenever they propose new theories."
     },
     {
       "id": "C",
-      "text": "In history painting, artists depict scenes drawn from history, mythology, or scripture using the established techniques of academic figure painting."
+      "text": "Emmy Noether, a German mathematician who lived from 1882 to 1935, proved an important theorem in the year 1918."
     },
     {
       "id": "D",
-      "text": "Marshall holds that adding Black subjects to history painting without that technical mastery would correct the tradition's iconography while leaving its craft untouched, a partial fix he considers insufficient on its own."
+      "text": "In 1915, physicists were troubled because Einstein's new general theory of relativity seemed to conflict with the conservation of energy."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to present Marshall's central claim about the tradition of history painting, and B states it directly: the tradition must be rebuilt around Black figures rendered with the same technical mastery the tradition demands. Choice A gives biographical facts about Marshall and never states his claim. Choice C defines history painting but says nothing about what Marshall argues. Choice D reports a real but secondary point from the notes—about a half-measure he rejects—rather than the central claim the goal calls for."
+  "explanation": "**Choice B is correct.** The goal is lasting usefulness, and B is built around exactly that: \"more than a century after\" she proved it, physicists \"still turn to\" the theorem for a working purpose.\n\n**The Full Solution:**\n- The goal has two parts to convey: the theorem endures, and physicists find it useful.\n- Choice B delivers both — the time span establishes endurance, and \"to identify conserved quantities whenever they propose new theories\" establishes ongoing, practical use.\n\n**Why the other choices are wrong:**\n- A: It states the theorem's content and an example accurately but stops in 1918 — nothing conveys that physicists still rely on it.\n- C: It reduces Noether to biography and calls the theorem \"important\" without evidence of use, present or past.\n- D: It describes the 1915 problem that preceded the theorem and never mentions the theorem's later usefulness at all."
 }

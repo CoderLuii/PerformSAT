@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-358",
+  "question": "A conveyor belt moves a package a distance of $840$ meters at a constant speed of $1.4$ meters per second. How many minutes does the package take to travel this distance?",
+  "correctAnswer": "10",
+  "explanation": "**SAT Pattern: Distance = Rate × Time**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~20s):** $\\frac{840}{1.4} = 600$ seconds, and $\\frac{600}{60} = 10$ minutes.\n\n**The Full Solution:**\nStep 1: Time is distance divided by rate, so the travel time is $\\frac{840 \\text{ meters}}{1.4 \\text{ meters per second}}$.\nStep 2: $\\frac{840}{1.4} = 600$ seconds.\nStep 3: Convert to minutes: $\\frac{600}{60} = 10$ minutes. Check: in $10$ minutes the belt runs $600$ seconds at $1.4$ meters per second, covering $840$ meters. $\\checkmark$\n\n**Common Mistakes:** Reporting $600$ answers in seconds when the question asks for minutes. Multiplying gives $840 \\times 1.4 = 1{,}176$, which has units of meter-seconds per meter and no meaning here. Dividing in the wrong order gives $\\frac{1.4}{840} \\approx 0.00167$.\n\n**Test Day Takeaway:** Compute the time in the units the rate provides, then convert to the unit the question names. The final unit check catches the most expensive slip on rate problems."
+}

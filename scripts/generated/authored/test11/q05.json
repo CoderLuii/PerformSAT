@@ -1,36 +1,41 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The speaker describes a frightening creature in vivid detail, then gradually grows calmer as the description reveals the animal to be gentler than it first appeared."
-    },
-    {
-      "id": "B",
-      "text": "The speaker opens by asking who could have made a fearsome creature, sustains that wonder through a chain of unanswered questions about its maker, then returns to the opening lines with a single word changed."
-    },
-    {
-      "id": "C",
-      "text": "The speaker states a confident claim about the creature's origin at the outset, then spends the rest of the poem assembling evidence that steadily proves the claim correct."
-    },
-    {
-      "id": "D",
-      "text": "The speaker recounts a sequence of events from the creature's life in chronological order, then concludes by predicting what will become of it in the years ahead."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The poem opens by asking what \"immortal hand or eye\" could have framed the tiger's \"fearful symmetry,\" and the middle stanzas pile up further questions about the maker—\"What the hammer? what the chain? / In what furnace was thy brain?\"—none of which is ever answered. The final stanza repeats the opening almost word for word, changing only \"Could\" to \"Dare,\" so the structure runs from an opening question through sustained questioning back to the opening lines with one altered word. Choice A is wrong because the speaker never grows calmer and the tiger is never revealed as gentle; the awe only deepens. Choice C reverses the poem, which asks questions rather than proving a confident claim, and Choice D invents a chronological life story and a prediction the poem does not contain.",
-  "passage": "The following text is from William Blake's poem \"The Tyger\" (1794).\n\nTyger, tyger, burning bright\nIn the forests of the night,\nWhat immortal hand or eye\nCould frame thy fearful symmetry?\n\nIn what distant deeps or skies\nBurnt the fire of thine eyes?\nOn what wings dare he aspire?\nWhat the hand dare seize the fire?\n\nAnd what shoulder and what art\nCould twist the sinews of thy heart?\nAnd, when thy heart began to beat,\nWhat dread hand and what dread feet?\n\nWhat the hammer? what the chain?\nIn what furnace was thy brain?\nWhat the anvil? what dread grasp\nDare its deadly terrors clasp?\n\nWhen the stars threw down their spears,\nAnd watered heaven with their tears,\nDid he smile his work to see?\nDid he who made the lamb make thee?\n\nTyger, tyger, burning bright\nIn the forests of the night,\nWhat immortal hand or eye\nDare frame thy fearful symmetry?",
-  "_meta": {
-    "anchor": "William Blake, 'The Tyger' (1794)",
-    "quoteVerify": true,
-    "source": "William Blake, 'The Tyger' (1794), Songs of Experience — Project Gutenberg ebook 574 (Poems of William Blake), https://www.gutenberg.org/cache/epub/574/pg574.txt — complete poem"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The speaker recounts a late-night walk through the city's streets and then regrets having abandoned the quiet countryside for an unfamiliar and glittering capital."
   },
-  "id": 1105,
-  "module": 1
+  {
+   "id": "B",
+   "text": "The speaker describes the street below her window, sets the moon against the city's glare, and closes by siding with the moon."
+  },
+  {
+   "id": "C",
+   "text": "The speaker compares the appearance of the street at night with the appearance of the same street by day."
+  },
+  {
+   "id": "D",
+   "text": "The speaker celebrates the brilliance of the lamplit city and then wonders whether the moon will ever be bright enough to outshine it."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The poem moves in three steps: the watered, lamp-lit street below (\"Like a slow-moving river\"), then the moon opposite the window, outshone by the city's white lamps, and finally the speaker's declaration — \"She is thin and lustreless, / But I love her. / I know the moon, / And this is an alien city.\"\n\n**The Full Solution:**\n- Stanza 1 is street-level observation: lamps, cabs, tramps, a \"squalid and sinister\" city.\n- Stanza 2 raises the eyes to the moon and stages the contest — \"She cannot light the city; / It is too bright.\"\n- Stanza 3 resolves it in the moon's favor on grounds of familiarity, not brightness. Description, contrast, allegiance: that is choice B's sequence.\n\n**Why the other choices are wrong:**\n- A: The speaker never walks — she watches from a window — and no countryside appears anywhere in the poem.\n- C: The poem contains no daytime scene to compare against; everything happens at 2 a.m.\n- D: It reverses the speaker's attitude — the city is \"squalid and sinister,\" not celebrated, and the moon is loved despite being outshone.",
+ "passage": "The following text is from Amy Lowell's 1914 poem \"A London Thoroughfare. 2 A.M.\"\n\nThey have watered the street,\nIt shines in the glare of lamps,\nCold, white lamps,\nAnd lies\nLike a slow-moving river,\nBarred with silver and black.\nCabs go down it,\nOne,\nAnd then another.\nBetween them I hear the shuffling of feet.\nTramps doze on the window-ledges,\nNight-walkers pass along the sidewalks.\nThe city is squalid and sinister,\nWith the silver-barred street in the midst,\nSlow-moving,\nA river leading nowhere.\n\nOpposite my window,\nThe moon cuts,\nClear and round,\nThrough the plum-coloured night.\nShe cannot light the city;\nIt is too bright.\nIt has white lamps,\nAnd glitters coldly.\n\nI stand in the window and watch the moon.\nShe is thin and lustreless,\nBut I love her.\nI know the moon,\nAnd this is an alien city.",
+ "_meta": {
+  "anchor": "Amy Lowell, \"A London Thoroughfare. 2 A.M.\" (1914) — genuine public-domain text, complete poem verbatim",
+  "quoteVerify": true,
+  "source": "Amy Lowell, \"A London Thoroughfare. 2 A.M.,\" Sword Blades and Poppy Seed (1914) — Project Gutenberg ebook 1020, text verified verbatim",
+  "distractors": {
+   "A": "imports a walk and a countryside the poem lacks",
+   "C": "imports a daytime scene",
+   "D": "reverses the speaker's attitude"
+  }
+ },
+ "id": 1105,
+ "module": 1
 }

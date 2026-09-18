@@ -1,0 +1,42 @@
+{
+  "id": 9023,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "Ruth Schwartz Cowan is a historian of technology at the University of Pennsylvania.",
+      "Her 1983 book More Work for Mother studies washing machines, gas ranges, vacuum cleaners, and indoor plumbing.",
+      "She drew on time-use studies that compared diaries kept by American homemakers in the 1920s with diaries kept in the 1960s.",
+      "The hours a full-time homemaker spent on housework did not fall between those decades.",
+      "The new machines raised expectations for cleanliness and absorbed tasks that laundresses, delivery drivers, and other household members had once performed.",
+      "Cowan calls the pattern the industrialization of the home."
+    ],
+    "goal": "The student wants to present Cowan’s central claim about household technology."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Cowan drew on time-use studies comparing diaries kept by American homemakers in the 1920s with diaries kept in the 1960s."
+    },
+    {
+      "id": "B",
+      "text": "Mechanizing the American home changed what housework consisted of without reducing the hours a homemaker spent on it."
+    },
+    {
+      "id": "C",
+      "text": "The washing machine absorbed work that households had previously sent out to commercial laundresses."
+    },
+    {
+      "id": "D",
+      "text": "Cowan, a historian of technology, published More Work for Mother in 1983."
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** The notes build toward a single generalization — that mechanizing the household changed the character of housework without shortening it — and Choice B states it.\n\n**The Full Solution:**\n- The goal asks for a central claim, so underline the bullets that generalize rather than the ones that name a source, a book, or a single machine.\n- Two bullets carry the generalization together: the hours spent on housework did not fall between the 1920s and the 1960s, and the new machines raised expectations while absorbing work other people used to do. Choice B fuses both halves into one sentence.\n- Anything that reports how the evidence was gathered, where the scholar works, or what one appliance did is support for the claim, not the claim itself.\n\n**Why the other choices are wrong:**\n- A: This is the evidence Cowan worked from — the diary studies — rather than the conclusion she drew from it.\n- C: True of one appliance, but a single example cannot stand in for a claim about household technology as a whole.\n- D: Bibliographic detail. It identifies the book without saying what the book argues.",
+  "people": [
+    {
+      "name": "Ruth Schwartz Cowan",
+      "sourceUrl": "https://hss.sas.upenn.edu/people/ruth-schwartz-cowan"
+    }
+  ]
+}

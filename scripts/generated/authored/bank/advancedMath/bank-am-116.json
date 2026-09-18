@@ -1,0 +1,6 @@
+{
+  "question": "During calibration, a pressure sensor's reading is multiplied by $2^{9}$ and then divided by $2^{5}$. The final reading is $2^{n}$ times the original reading. What is the value of $n$?",
+  "correctAnswer": "4",
+  "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~10s):** Same base, so subtract the exponents: $9-5=4$.\n\n**The Full Solution:**\nStep 1: The two operations multiply the reading by $\\dfrac{2^{9}}{2^{5}}$.\nStep 2: For a common base, $\\dfrac{2^{9}}{2^{5}}=2^{9-5}=2^{4}$.\nStep 3: Therefore $n=4$. Check: $2^{9}=512$ and $2^{5}=32$, and $512/32=16=2^{4}$ ✓\n\n**Common Mistakes:**\n* $45$: multiplied the exponents instead of subtracting them.\n* $14$: added the exponents because two operations were performed.\n* $16$: reported the value $2^{4}$ rather than the exponent $n$.\n\n**Test Day Takeaway:** Dividing powers of the same base subtracts exponents; the answer they want is usually the exponent, not the power.",
+  "id": "bank-am-116"
+}

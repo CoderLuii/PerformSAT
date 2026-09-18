@@ -1,31 +1,31 @@
 {
-  "id": 724,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "In 1986, a chemist proposed that the rapid springtime loss of ozone over Antarctica was driven by reactions taking place on the surfaces of high-altitude polar clouds, which would convert stable chlorine compounds into forms that destroy ozone. ______ field campaigns flown over Antarctica a few years later detected exactly the elevated levels of reactive chlorine her mechanism predicted, in precisely the regions and seasons where those clouds form.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "B",
-      "text": "Otherwise,"
-    },
-    {
-      "id": "C",
-      "text": "In fact,"
-    },
-    {
-      "id": "D",
-      "text": "Meanwhile,"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The second sentence reports field data that strikingly confirm the prediction made in the first, and \"In fact\" introduces a statement that strengthens and bears out what came before. \"Nevertheless\" would signal a contrast that does not exist, since the data support rather than challenge the mechanism. \"Otherwise\" introduces an alternative condition, and \"Meanwhile\" marks mere simultaneity, neither of which captures the confirming force of the evidence."
+ "id": 724,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "When Dmitri Mendeleev published his periodic table in 1871, he left deliberate gaps for elements no one had yet found and predicted the properties of the missing substances — including, for one gap below aluminum, a soft metal with a specific density and a low melting point. ______ when that element, now called gallium, was isolated four years later, its measured density and melting point matched Mendeleev's predictions almost exactly.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Nevertheless,"
+  },
+  {
+   "id": "B",
+   "text": "By contrast,"
+  },
+  {
+   "id": "C",
+   "text": "Indeed,"
+  },
+  {
+   "id": "D",
+   "text": "Otherwise,"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The second sentence delivers a striking confirmation of the first — the predicted properties \"matched...almost exactly\" — and \"Indeed\" is the transition that introduces a statement reinforcing what came before.\n\n**The Full Solution:**\n- The first sentence sets up a bold claim: Mendeleev predicted the properties of an element nobody had found.\n- The second sentence verifies it — gallium's measured density and melting point matched the predictions.\n- Verification strengthens rather than opposes the setup, so the emphasizing \"Indeed\" fits the join.\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" signals a result in spite of what preceded, but the discovery fulfilled the prediction rather than defying it.\n- B: \"By contrast\" would set the two sentences against each other, and there is no opposition between a prediction and its confirmation.\n- D: \"Otherwise\" introduces what would happen if the preceding statement were untrue — a hypothetical the passage never entertains."
 }

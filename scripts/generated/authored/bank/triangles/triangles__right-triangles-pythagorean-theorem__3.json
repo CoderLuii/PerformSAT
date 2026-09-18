@@ -1,0 +1,55 @@
+{
+ "id": 3,
+ "question": "The triangular platform brace of a launch tower is shown, with two of its side lengths in meters. Steel bar for the brace costs \\$14 per meter. What is the total cost, in dollars, of the bar needed for all three sides?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     10
+    ]
+   ],
+   "sideLabels": [
+    "",
+    "10",
+    "26"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$476$"
+  },
+  {
+   "id": "B",
+   "text": "$504$"
+  },
+  {
+   "id": "C",
+   "text": "$840$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}680$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 10 + 24 = 34 meters and leaves out the hypotenuse",
+  "B": "uses only the two given sides, 10 + 26 = 36 meters",
+  "D": "doubles the perimeter before multiplying"
+ },
+ "correctAnswer": "C",
+ "hint": "The figure prints only two of the three lengths the price applies to.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~40s):** The missing leg is $24$ meters, so the perimeter is $60$ meters and the bar costs $60(14) = 840$ dollars.\n\n**The Full Solution:**\nStep 1: The $26$-meter side is the hypotenuse, so the missing leg satisfies $10^2 + b^2 = 26^2$, giving $b^2 = 676 - 100 = 576$ and $b = 24$ meters.\nStep 2: The perimeter is $10 + 24 + 26 = 60$ meters.\nStep 3: At $14$ dollars per meter the cost is $60(14) = 840$ dollars. Check: $10^2 + 24^2 = 100 + 576 = 676 = 26^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($476$): using $10 + 24 = 34$ meters and leaving the hypotenuse out of the perimeter.\n* Choice B ($504$): using only the two side lengths printed in the figure, $10 + 26 = 36$ meters.\n* Choice D ($1{,}680$): doubling the perimeter to $120$ meters before multiplying by the price.\n\n**Test Day Takeaway:** Recover the missing side first, then add all three lengths before applying any rate."
+}

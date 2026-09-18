@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-111",
+ "question": "A pharmacy technician cuts a triangular splash guard in the shape of right triangle $RST$ with the right angle at $S$. The horizontal edge $\\overline{RS}$ measures $24$ centimeters, the vertical edge $\\overline{ST}$ measures $18$ centimeters, and the guard's sloped edge runs from $R$ to $T$. Which expression is equal to $\\cos(\\angle R)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\sin(\\angle R)$"
+  },
+  {
+   "id": "B",
+   "text": "$\\sin(\\angle T)$"
+  },
+  {
+   "id": "C",
+   "text": "$\\tan(\\angle R)$"
+  },
+  {
+   "id": "D",
+   "text": "$\\tan(\\angle T)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "sin(R) = 18/30 = 3/5, not 4/5; sine and cosine of the same angle are not equal here",
+  "C": "tan(R) = 18/24 = 3/4, which drops the hypotenuse from the ratio",
+  "D": "tan(T) = 24/18 = 4/3, a value greater than 1 and therefore never a cosine"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: SOH-CAH-TOA in a 3-4-5 Triangle**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $\\angle R$ and $\\angle T$ are complementary, and the cosine of an angle equals the sine of its complement, so $\\cos(\\angle R)=\\sin(\\angle T)$.\n\n**The Full Solution:**\n\nStep 1 — Find the hypotenuse: $RT=\\sqrt{24^2+18^2}=\\sqrt{576+324}=\\sqrt{900}=30$ centimeters, a $3$-$4$-$5$ triangle scaled by $6$.\n\nStep 2 — Evaluate the target: $\\cos(\\angle R)=\\frac{RS}{RT}=\\frac{24}{30}=\\frac{4}{5}$.\n\nStep 3 — Test the choices: $\\sin(\\angle T)=\\frac{RS}{RT}=\\frac{24}{30}=\\frac{4}{5}$, the same value. Check: $\\angle R+\\angle T=90^\\circ$, so the complement relationship holds for every right triangle, not just this one.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\sin(\\angle R)$): this equals $\\frac{18}{30}=\\frac{3}{5}$, the ratio built from the opposite leg.\n* Choice C ($\\tan(\\angle R)$): this equals $\\frac{18}{24}=\\frac{3}{4}$ and leaves the hypotenuse out of the ratio.\n* Choice D ($\\tan(\\angle T)$): this equals $\\frac{24}{18}=\\frac{4}{3}$, larger than $1$ and so never equal to a cosine.\n\n**Test Day Takeaway:** In a right triangle the two acute angles are complements, so $\\cos$ of one always equals $\\sin$ of the other."
+}

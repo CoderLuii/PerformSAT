@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-017",
+  "question": "The expression $10x^2 + 11x - 6$ can be written as the product of two binomials, one of which is $(5x - 2)$. What is the other binomial factor, and what is the sum of the solutions to $10x^2 + 11x - 6 = 0$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(2x + 3)$ and $-\\dfrac{11}{10}$"
+    },
+    {
+      "id": "B",
+      "text": "$(2x - 3)$ and $-\\dfrac{11}{10}$"
+    },
+    {
+      "id": "C",
+      "text": "$(2x + 3)$ and $\\dfrac{11}{10}$"
+    },
+    {
+      "id": "D",
+      "text": "$(2x + 3)$ and $-\\dfrac{3}{5}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "flips the sign inside the second factor, which changes the constant term to $+6$",
+    "C": "drops the negative sign in $-\\frac{b}{a}$",
+    "D": "reports $\\frac{c}{a}$, the product of the roots, instead of the sum"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Factor Division + Vieta's**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The leading terms force $5x \\cdot 2x = 10x^2$ and the constants force $(-2)(3) = -6$, so the other factor is $(2x + 3)$. The sum of the roots is $-\\dfrac{b}{a} = -\\dfrac{11}{10}$.\n\n**The Full Solution:**\nStep 1: Write $10x^2 + 11x - 6 = (5x - 2)(px + q)$. Matching the $x^2$ terms gives $5p = 10$, so $p = 2$; matching the constants gives $-2q = -6$, so $q = 3$.\nStep 2: Check the middle term: $(5x - 2)(2x + 3) = 10x^2 + 15x - 4x - 6 = 10x^2 + 11x - 6$. $\\checkmark$\nStep 3: The roots are $x = \\dfrac{2}{5}$ and $x = -\\dfrac{3}{2}$, and their sum is $\\dfrac{4}{10} - \\dfrac{15}{10} = -\\dfrac{11}{10}$, which matches $-\\dfrac{b}{a} = -\\dfrac{11}{10}$.\n\n**Why the wrong answers are tempting:**\n* Choice B: with $(2x - 3)$ the constant term would be $(-2)(-3) = +6$, not $-6$.\n* Choice C: the factor is right, but the sum of the roots is $-\\dfrac{b}{a}$, and $b = 11$ is positive, so the sum is negative.\n* Choice D ($-\\dfrac{3}{5}$): this is $\\dfrac{c}{a} = \\dfrac{-6}{10}$, the product of the roots, not the sum.\n\n**Test Day Takeaway:** Recover a missing factor by matching the leading and constant terms, then verify with the middle term. For the sum of the roots, $-\\dfrac{b}{a}$ beats solving."
+}

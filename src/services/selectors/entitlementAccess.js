@@ -48,6 +48,30 @@ export function toMillisFlexible(v) {
 }
 
 /**
+ * Whether this entitlement doc proves the account went through a real
+ * Stripe subscription at some point (current or lapsed) — as opposed to
+ * merely having a pre-created Checkout customer. createCheckoutSession
+ * persists stripeCustomerId BEFORE the student ever sees the card form,
+ * so `stripeCustomerId` alone must never count as billing history: an
+ * abandoned first checkout would escape the card-up-front hard gate and
+ * get lapsed/"re-subscribe" framing on the paywall.
+ *
+ * Evidence accepted: webhook-written subscriptionId, the durable trialUsed
+ * marker, or a subscription-lifecycle status.
+ *
+ * @param {object|null} doc entitlements/{uid} data (or null)
+ * @returns {boolean}
+ */
+export function hasSubscriptionEvidence(doc) {
+  if (!doc || typeof doc !== 'object') return false;
+  return !!(
+    doc.subscriptionId ||
+    doc.trialUsed ||
+    ['trialing', 'active', 'past_due', 'canceled'].includes(doc.status)
+  );
+}
+
+/**
  * Derive the access view the UI renders from an entitlement doc.
  *
  * Phases: 'trial' (clock running), 'premium' (paying), 'grace' (past_due),

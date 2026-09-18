@@ -5,41 +5,41 @@
  "band": 4,
  "domain": "expression-of-ideas",
  "skill": "rhetorical-synthesis",
+ "type": "multiple-choice",
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Camera traps are motion-triggered cameras that photograph animals without a human observer present.",
+   "Traditional wildlife surveys require field teams to walk transect lines, which is costly and disturbs the animals being counted.",
+   "A camera trap operates continuously for months on one set of batteries, through darkness and weather that would halt a field team.",
+   "Networks of hundreds of camera traps now generate millions of images revealing where rare species live and when they are active.",
+   "Shy species such as snow leopards, seldom seen in person even by researchers, appear regularly in camera-trap images.",
+   "Standard survey methods remain necessary for data that images cannot supply, such as an animal's age, weight, or health."
+  ],
+  "goal": "The student wants to emphasize the advantage of camera traps over traditional survey methods for studying elusive animals."
+ },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Environmental DNA consists of genetic material — skin cells, scales, and waste — that living things shed into the water, soil, and air around them."
+   "text": "Camera traps, which are triggered by motion, photograph passing animals without requiring a human observer to be present at the site."
   },
   {
    "id": "B",
-   "text": "Because eDNA can reveal that a species is present but not how many individuals there are or whether they are healthy, some researchers treat it as a complement to direct observation rather than a replacement for it."
+   "text": "Standard survey methods can supply data that camera-trap images cannot, such as an animal's age, weight, or health."
   },
   {
    "id": "C",
-   "text": "Traditional wildlife surveys depend on trapping, netting, or visually spotting animals, methods that can easily miss species that are rare, elusive, or active only at night."
+   "text": "Networks of hundreds of camera traps generate millions of images revealing where rare species live and when they are most active."
   },
   {
    "id": "D",
-   "text": "Rather than trapping or spotting animals directly, researchers filter a water sample and sequence the DNA it contains, detecting which species have recently passed through without observing a single one."
+   "text": "Unlike traditional surveys, whose costly field teams disturb the very animals they count, motion-triggered camera traps operate unattended for months and regularly record shy species, such as snow leopards, that researchers almost never see in person."
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D. The goal is to emphasize the methodological innovation of eDNA sampling. D names the method directly — filtering a water sample and sequencing the DNA it contains to detect which species have recently been present — and frames it as a departure from trapping or spotting animals. A defines what eDNA is but describes no method or innovation. B reports a limitation of the technique, the opposite of emphasizing its innovation. C describes the traditional surveys that eDNA improves on without saying what eDNA does differently.",
+ "explanation": "**Choice D is correct.** The goal demands a comparison — camera traps versus traditional methods — aimed specifically at elusive animals, and D is the only choice that draws it: traditional teams disturb their subjects, while unattended cameras run for months and routinely capture species like snow leopards that observers never encounter.\n\n**The Full Solution:**\n- \"Advantage over\" requires both sides of the comparison to appear; D opens with the traditional method's weaknesses and pivots to the camera trap's strengths.\n- \"Elusive animals\" requires the snow-leopard note, the notes' one direct illustration of shy species on camera.\n\n**Why the other choices are wrong:**\n- A: It defines camera traps accurately but mentions neither traditional surveys nor elusive species, so no advantage is asserted.\n- B: It argues the reverse of the goal, emphasizing what traditional methods do better.\n- C: It conveys scale — many cameras, many images — but never compares that capability with traditional surveys or connects it to hard-to-see animals.",
  "_meta": {
-  "anchor": "Environmental DNA (eDNA) sampling for species detection; methodological innovation (no named researcher)"
- },
- "studentNotes": {
-  "intro": "While researching a topic, a student has taken the following notes:",
-  "bullets": [
-   "Environmental DNA (eDNA) is genetic material — skin cells, scales, waste — that organisms shed into water, soil, and air.",
-   "Traditional wildlife surveys rely on trapping, netting, or visually spotting animals, which can miss species that are rare or elusive.",
-   "By filtering a water sample and sequencing the DNA it contains, researchers can detect which species have recently been present without observing them.",
-   "In one study, a single round of river sampling identified dozens of fish species through eDNA alone.",
-   "Because even a few individuals leave detectable traces, eDNA can flag invasive or endangered species earlier than traditional surveys.",
-   "Critics note that eDNA reveals presence but not abundance or health, so it complements rather than replaces direct observation."
-  ],
-  "goal": "The student wants to emphasize the methodological innovation of environmental DNA (eDNA) sampling."
- },
- "type": "multiple-choice"
+  "anchor": "Camera-trap networks vs. transect surveys for elusive species (snow leopards)"
+ }
 }

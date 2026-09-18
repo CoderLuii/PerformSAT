@@ -9,7 +9,6 @@ import SATReferenceSheet from './SATReferenceSheet';
 import DesmosCalculator from './DesmosCalculator';
 import AnswerChoiceList from './shared/AnswerChoiceList';
 import HighlightablePassage, { mergeHighlights } from './rw/HighlightablePassage';
-import { sectionModuleShort } from '../services/selectors/moduleLabel';
 import { recordSkillAttemptsBatch } from '../services/skillService';
 import { showToast } from './ui/Toaster';
 import { buildTestReviewEntry } from '../services/reviewQueueResolve';
@@ -27,16 +26,20 @@ import {
 import { generateAndPersistHybridPlan, fetchCurrentStudyPlan, persistDeterministicArtifact } from '../services/hybridStudyPlanService';
 import { buildLongitudinalEvidence, computePlanDelta, reconcileDrillEvidenceWithTest } from '../services/studyPlanMerger';
 import { generateStudyPlan as generateDeterministicPlan } from '../services/studyPlanGenerator';
+import { buildPlanProfile } from '../services/studySchedule';
+import { STARTER_PLAN_SOURCE } from '../services/starterPlanService';
 import { runDiagnostic, getQuestionSkills } from '../services/diagnosticEngine';
+import { finishMiniDiagnostic } from '../services/miniDiagnostic/finishMiniDiagnostic';
+import MiniDiagnosticResults from './MiniDiagnostic/MiniDiagnosticResults';
 import { buildGroundTruthDiagnosis, enrichPlanWithGroundTruth } from '../services/groundTruth';
 import { scoreTest, isAnswerCorrect } from '../services/scoring';
 import { computeRemaining, deriveDeadline, shiftDeadlineForPause } from '../services/timerClock';
-import { colors, typography, spacing, radius, shadows, transitions } from '../design/tokens';
+import { colors, radius } from '../design/tokens';
 import { cardStyles } from '../design/components';
 import { Modal } from './ui/Modal';
 import { Button } from './ui/Button';
 import './PracticeTest.css';
-import { CheckIcon, CrossIcon, LightBulbIcon, MicroscopeIcon, WarningIcon, DocumentIcon } from '../design/icons';
+import { WarningIcon, DocumentIcon } from '../design/icons';
 
 // buildGroundTruthDiagnosis + enrichPlanWithGroundTruth moved verbatim to
 // src/services/groundTruth.js (imported above) so the mini-diagnostic
@@ -289,203 +292,6 @@ const QuestionGrid = memo(({ questions, currentIndex, answers, markedForReview, 
   );
 });
 
-// OLD MathText component - NOW USING KaTeX-based version from ./MathText.jsx
-// Keeping for reference only
-const OldMathText_DISABLED = ({ text, style = {} }) => {
-  if (!text) return null;
-
-  const baseStyle = {
-    fontFamily: 'Times New Roman, Georgia, serif',
-    ...style
-  };
-
-  // Parse and render math expressions
-  const renderMath = (str) => {
-    if (typeof str !== 'string') return str;
-
-    const elements = [];
-    let remaining = str;
-    let key = 0;
-
-    while (remaining.length > 0) {
-      // Match fraction pattern: numerator/denominator or (expr)/(expr)
-      const fractionMatch = remaining.match(/^\(([^)]+)\)\/\(([^)]+)\)/);
-      if (fractionMatch) {
-        elements.push(
-          <span key={key++} style={{
-            display: 'inline-flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            verticalAlign: 'middle',
-            margin: '0 2px'
-          }}>
-            <span style={{ borderBottom: '1px solid currentColor', padding: '0 4px', lineHeight: '1.2' }}>
-              {renderMath(fractionMatch[1])}
-            </span>
-            <span style={{ padding: '0 4px', lineHeight: '1.2' }}>
-              {renderMath(fractionMatch[2])}
-            </span>
-          </span>
-        );
-        remaining = remaining.slice(fractionMatch[0].length);
-        continue;
-      }
-
-      // Match square root pattern: √(content) or √content
-      const sqrtMatch = remaining.match(/^√\(([^)]+)\)/) || remaining.match(/^√(\d+)/);
-      if (sqrtMatch) {
-        elements.push(
-          <span key={key++} style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            verticalAlign: 'middle'
-          }}>
-            <span style={{ fontSize: '1.2em', marginRight: '1px' }}>√</span>
-            <span style={{
-              borderTop: '1px solid currentColor',
-              paddingTop: '2px',
-              paddingLeft: '2px',
-              paddingRight: '2px'
-            }}>
-              {renderMath(sqrtMatch[1])}
-            </span>
-          </span>
-        );
-        remaining = remaining.slice(sqrtMatch[0].length);
-        continue;
-      }
-
-      // Match exponent patterns: x^2, x^(expr), base^exp
-      const expMatch = remaining.match(/^(\w+|\))\^(\d+)/) || remaining.match(/^(\w+|\))\^\(([^)]+)\)/);
-      if (expMatch) {
-        // Don't add the base if we just added it (e.g., for cases like "x^2")
-        const base = expMatch[1];
-        const exp = expMatch[2];
-
-        // Check if base was already added as last element
-        if (elements.length > 0 && typeof elements[elements.length - 1] === 'string' &&
-            elements[elements.length - 1].endsWith(base)) {
-          // Remove the base from the last string element
-          elements[elements.length - 1] = elements[elements.length - 1].slice(0, -base.length);
-        } else if (base !== ')') {
-          elements.push(<span key={key++}>{base}</span>);
-        }
-
-        elements.push(
-          <sup key={key++} style={{ fontSize: '0.75em', verticalAlign: 'super' }}>
-            {renderMath(exp)}
-          </sup>
-        );
-        remaining = remaining.slice(expMatch[0].length);
-        continue;
-      }
-
-      // Match Unicode superscript numbers and convert them
-      const superMatch = remaining.match(/^([⁰¹²³⁴⁵⁶⁷⁸⁹]+)/);
-      if (superMatch) {
-        const superMap = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
-        const converted = superMatch[1].split('').map(c => superMap[c] || c).join('');
-        elements.push(
-          <sup key={key++} style={{ fontSize: '0.75em', verticalAlign: 'super' }}>
-            {converted}
-          </sup>
-        );
-        remaining = remaining.slice(superMatch[0].length);
-        continue;
-      }
-
-      // Match subscript pattern: x_n or x_(expr)
-      const subMatch = remaining.match(/^(\w)_(\w)/) || remaining.match(/^(\w)_\(([^)]+)\)/);
-      if (subMatch) {
-        elements.push(
-          <span key={key++}>
-            {subMatch[1]}
-            <sub style={{ fontSize: '0.75em', verticalAlign: 'sub' }}>
-              {renderMath(subMatch[2])}
-            </sub>
-          </span>
-        );
-        remaining = remaining.slice(subMatch[0].length);
-        continue;
-      }
-
-      // Match pi symbol
-      if (remaining.startsWith('π') || remaining.toLowerCase().startsWith('pi')) {
-        const len = remaining.startsWith('π') ? 1 : 2;
-        elements.push(<span key={key++} style={{ fontStyle: 'normal' }}>π</span>);
-        remaining = remaining.slice(len);
-        continue;
-      }
-
-      // Match degree symbol
-      if (remaining.startsWith('°')) {
-        elements.push(<span key={key++}>°</span>);
-        remaining = remaining.slice(1);
-        continue;
-      }
-
-      // Match ± symbol
-      if (remaining.startsWith('+-') || remaining.startsWith('±')) {
-        const len = remaining.startsWith('±') ? 1 : 2;
-        elements.push(<span key={key++}>±</span>);
-        remaining = remaining.slice(len);
-        continue;
-      }
-
-      // Match infinity
-      if (remaining.startsWith('∞') || remaining.toLowerCase().startsWith('infinity')) {
-        const len = remaining.startsWith('∞') ? 1 : 8;
-        elements.push(<span key={key++}>∞</span>);
-        remaining = remaining.slice(len);
-        continue;
-      }
-
-      // Match ≤, ≥, ≠
-      if (remaining.startsWith('<=')) {
-        elements.push(<span key={key++}>≤</span>);
-        remaining = remaining.slice(2);
-        continue;
-      }
-      if (remaining.startsWith('>=')) {
-        elements.push(<span key={key++}>≥</span>);
-        remaining = remaining.slice(2);
-        continue;
-      }
-      if (remaining.startsWith('!=')) {
-        elements.push(<span key={key++}>≠</span>);
-        remaining = remaining.slice(2);
-        continue;
-      }
-
-      // Default: add character as-is
-      elements.push(remaining[0]);
-      remaining = remaining.slice(1);
-    }
-
-    // Combine adjacent strings
-    const combined = [];
-    let currentString = '';
-    for (const el of elements) {
-      if (typeof el === 'string') {
-        currentString += el;
-      } else {
-        if (currentString) {
-          combined.push(currentString);
-          currentString = '';
-        }
-        combined.push(el);
-      }
-    }
-    if (currentString) {
-      combined.push(currentString);
-    }
-
-    return combined.length === 1 ? combined[0] : combined;
-  };
-
-  return <span style={baseStyle}>{renderMath(text)}</span>;
-};
-
 // Fraction component for standalone fractions
 const Fraction = ({ numerator, denominator, style = {} }) => (
   <span style={{
@@ -562,56 +368,6 @@ const renderFormula = (formula) => {
   return null;
 };
 
-// Render choice text (handles fractions and math)
-const renderChoice = (choice) => {
-  if (choice.fraction) {
-    return (
-      <Fraction
-        numerator={choice.fraction.numerator}
-        denominator={choice.fraction.denominator}
-        style={{ fontSize: '14px' }}
-      />
-    );
-  }
-  if (choice.table) {
-    return (
-      <table style={{ borderCollapse: 'collapse', fontSize: '14px' }}>
-        <thead>
-          <tr>
-            {choice.table.headers.map((h, i) => (
-              <th key={i} style={{
-                border: `1px solid ${colors.surface.grayMedium}`,
-                padding: '4px 12px',
-                background: colors.surface.offWhite,
-                fontWeight: '600',
-                fontStyle: 'italic'
-              }}>{h}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {choice.table.rows.map((row, i) => (
-            <tr key={i}>
-              {row.map((cell, j) => (
-                <td key={j} style={{
-                  border: `1px solid ${colors.surface.grayMedium}`,
-                  padding: '4px 12px',
-                  textAlign: 'center'
-                }}>{cell}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    );
-  }
-  // Handle structured content (arrays or objects) with QuestionRenderer
-  if (Array.isArray(choice.text) || (choice.text && typeof choice.text === 'object')) {
-    return <QuestionRenderer content={choice.text} />;
-  }
-  // Handle string content with MathText
-  return <MathText text={choice.text} />;
-};
 
 // Restrict a grid-in (fill-in) entry to the Bluebook SPR rules as the student
 // types or pastes: digits, at most one decimal point, at most one fraction
@@ -639,9 +395,20 @@ const sanitizeGridIn = (raw) => {
   return s.slice(0, s[0] === '-' ? 6 : 5);
 };
 
-const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplete, onSaveProgress, onClearProgress, onSaveStudyPlan, onGoToStudyPlan, savedProgress, isTimed = true, skillProgress = null, user = null, practiceTestResults = null, completedLessons = {}, practiceProgress = {}, onStartPractice, answeredQuestionIds = [], initialReviewModule = null, reviewSnapshotMissing = false, reviewAttemptId = null, initialSection = null, resultSaveStatus = null, onRetrySave = null, tutorLocked = false, onSubscribe = null }) => {
+// Degraded-review notices: a practice-test snapshot that is gone (questions
+// may have changed) vs. a diagnostic rebuilt from its item ids (exact
+// questions, but the answer choices were never saved).
+const SNAPSHOT_MISSING_NOTICE = 'Questions have been updated since this attempt. Original problems are not available for review \u2014 what you see may differ from what you answered.';
+const ANSWERS_MISSING_NOTICE = 'These are the exact questions from your diagnostic, with the correct answers and explanations. Your own answer choices weren\u2019t saved for this sitting, so every question shows as unanswered.';
+
+const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplete, onSaveProgress, onClearProgress, onSaveStudyPlan, onGoToStudyPlan, savedProgress, isTimed = true, skillProgress = null, user = null, practiceTestResults = null, completedLessons = {}, practiceProgress = {}, onStartPractice, answeredQuestionIds = [], initialReviewModule = null, reviewSnapshotMissing = false, reviewAnswersMissing = false, reviewBackLabel = 'Results', reviewAttemptId = null, initialSection = null, resultSaveStatus = null, onRetrySave = null, tutorLocked = false, onSubscribe = null, onDiagnosticFinished = null, diagnosticScoreAnchor = null }) => {
+  // Review = the live test screen itself, read-only: every choice marked, an
+  // explanation card under the answers, the tutor on demand. Entered either
+  // by mounting with `initialReviewModule` (a past attempt) or from the
+  // post-test results screen (state flips on, results return on exit).
+  const [bluebookReview, setBluebookReview] = useState(initialReviewModule !== null);
   const [currentModule, setCurrentModule] = useState(
-    pickInitialModuleIndex(test, savedProgress, initialSection)
+    initialReviewModule !== null ? initialReviewModule : pickInitialModuleIndex(test, savedProgress, initialSection)
   );
   const [currentQuestion, setCurrentQuestion] = useState(savedProgress?.currentQuestion || 0);
   const [answers, setAnswers] = useState(savedProgress?.answers || {});
@@ -671,15 +438,21 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
   // next module) rather than re-entering an already-submitted module with the
   // frozen clock and editable answers.
   const [moduleCompleted, setModuleCompleted] = useState(savedProgress?.moduleCompleted || false);
-  const [testCompleted, setTestCompleted] = useState(initialReviewModule !== null);
+  const [testCompleted, setTestCompleted] = useState(false);
   const [fillInValue, setFillInValue] = useState('');
   const [showCalculator, setShowCalculator] = useState(false);
   const [showReference, setShowReference] = useState(false);
-  const [reviewMode, setReviewMode] = useState(initialReviewModule !== null);
-  const [reviewModule, setReviewModule] = useState(initialReviewModule !== null ? initialReviewModule : 0);
-  const [reviewQuestion, setReviewQuestion] = useState(0);
-  const [reviewTab, setReviewTab] = useState('question');
-  const [reviewRightPane, setReviewRightPane] = useState('both');
+  // Post-test results: the score overview, or the AI diagnosis screen.
+  const [postTestScreen, setPostTestScreen] = useState('summary');
+  // True while a review was entered from the post-test results (exit returns
+  // there instead of leaving the runner).
+  const postTestReviewRef = useRef(false);
+  // Open by default: the explanation is the point of the review; hiding it
+  // is the secondary action and the choice persists across questions.
+  const [reviewExplanationOpen, setReviewExplanationOpen] = useState(true);
+  // Bluebook review: the AI tutor lives in an on-demand slide-over, for when
+  // the explanation isn't enough. Closed by default so the screen stays a test.
+  const [reviewTutorOpen, setReviewTutorOpen] = useState(false);
 
   // Stale-content notice: shown only when the per-attempt snapshot is missing
   // (legacy attempts predate the snapshot subcollection). Dismissible per attempt
@@ -690,13 +463,34 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     try { return window.localStorage.getItem(snapshotNoticeKey) === '1'; }
     catch (_) { return false; }
   });
-  const showSnapshotNotice = reviewSnapshotMissing && !snapshotNoticeDismissed;
+  // Two degraded-review flavors share the notice: the practice-test snapshot
+  // is gone (questions may have changed) vs. a diagnostic rebuilt from its
+  // item ids (exact questions, but the answer choices were never saved).
+  const showSnapshotNotice = (reviewSnapshotMissing || reviewAnswersMissing) && !snapshotNoticeDismissed;
   const dismissSnapshotNotice = () => {
     setSnapshotNoticeDismissed(true);
     if (snapshotNoticeKey && typeof window !== 'undefined') {
       try { window.localStorage.setItem(snapshotNoticeKey, '1'); } catch (_) { /* ignore */ }
     }
   };
+  // Post-test "Review answers": the same read-only Bluebook screen a past
+  // attempt reviews in, on the live state; Exit/Done return to the results.
+  const openPostTestReview = (moduleIndex = 0) => {
+    postTestReviewRef.current = true;
+    setShowQuestionGridPopover(false);
+    setCurrentModule(Number.isFinite(moduleIndex) ? moduleIndex : 0);
+    setCurrentQuestion(0);
+    setBluebookReview(true);
+  };
+  const exitReview = () => {
+    if (postTestReviewRef.current) {
+      postTestReviewRef.current = false;
+      setBluebookReview(false);
+      return;
+    }
+    onBack?.();
+  };
+  const reviewExitLabel = postTestReviewRef.current ? 'Results' : reviewBackLabel;
   const [resultSaved, setResultSaved] = useState(false);
   const [savedStudyPlan, setSavedStudyPlan] = useState(null);
   const [isPaused, setIsPaused] = useState(false);
@@ -721,11 +515,6 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
   const [rwM2VariantManuallySet, setRwM2VariantManuallySet] = useState(
     savedProgress?.rwM2VariantManuallySet ?? false,
   );
-  // When the user requests an M2 variant swap while they already have
-  // answers in M2, defer the swap to a confirmation modal. Null when no
-  // swap is pending; `{ section, newVariant, answerCount }` when one is
-  // queued (section: 'math' | 'rw').
-  const [pendingM2Switch, setPendingM2Switch] = useState(null);
 
   // Responsive: track window width for mobile layout
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1024);
@@ -848,6 +637,21 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     if (!test.rwModule2Easy || !rwM1Score) return null;
     return rwM1Score.pct < M2_ROUTING_THRESHOLD ? 'easy' : 'hard';
   }, [test.rwModule2Easy, rwM1Score]);
+
+  // Module 2 is chosen ONCE, on the module-complete screen that follows a
+  // section's Module 1 (2026-09-07). When that screen shows and the student
+  // has not picked yet, pre-select the recommendation so the chooser, the
+  // Continue label, and handleNextModule's fallback all agree. The choice
+  // locks when the module begins: there is no in-module switch any more.
+  useEffect(() => {
+    if (!moduleCompleted || testCompleted || test?.isDiagnostic) return;
+    if (currentModule === mathM1Index && recommendedM2Variant && !m2VariantManuallySet && module2Variant !== recommendedM2Variant) {
+      setModule2Variant(recommendedM2Variant);
+    }
+    if (currentModule === rwM1Index && recommendedRwM2Variant && !rwM2VariantManuallySet && rwModule2Variant !== recommendedRwM2Variant) {
+      setRwModule2Variant(recommendedRwM2Variant);
+    }
+  }, [moduleCompleted, testCompleted, test, currentModule, mathM1Index, rwM1Index, recommendedM2Variant, recommendedRwM2Variant, m2VariantManuallySet, rwM2VariantManuallySet, module2Variant, rwModule2Variant]);
 
   // Effective modules: swap in each section's Module 2 Easy variant when that
   // section's routing decision is 'easy'. Falls back to standard test.modules
@@ -1002,7 +806,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
   const onSaveProgressRef = useRef(onSaveProgress);
   useEffect(() => { onSaveProgressRef.current = onSaveProgress; });
   useEffect(() => {
-    if (testCompleted || reviewMode || !onSaveProgressRef.current) return;
+    if (testCompleted || bluebookReview || !onSaveProgressRef.current) return;
     if (Object.keys(answers).length === 0) return;
 
     const buildProgressData = () => {
@@ -1031,6 +835,13 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
         rwModule2Variant,
         rwM2VariantManuallySet,
         moduleCompleted,
+        // Diagnostic v2: the manifest (item ids per module slot) rides the
+        // in-progress record so a resume REBUILDS the identical synthetic
+        // test instead of re-sampling — saved modIdx-qIdx answers stay
+        // aligned to the questions they were given for.
+        ...(test?.isDiagnostic && test.diagnosticManifest
+          ? { isDiagnostic: true, diagnosticManifest: test.diagnosticManifest }
+          : {}),
       };
     };
     // Freshest builder for the visibility flush below — timeRemaining reads
@@ -1046,21 +857,23 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     // NOTE: onSaveProgress is deliberately absent from the deps — see the ref
     // note above. Adding it back re-opens the write loop (measured: a single
     // answer click then produced ~3 writes per 8 idle seconds, forever).
-  }, [answers, currentModule, currentQuestion, markedForReview, eliminatedChoices, highlightsByKey, testCompleted, reviewMode, isTimed, module2Variant, m2VariantManuallySet, rwModule2Variant, rwM2VariantManuallySet, moduleCompleted]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- test?.isDiagnostic / test.diagnosticManifest are fixed for the life of a sitting and are read live inside the builder; adding the manifest object would re-open the write loop described above
+  }, [answers, currentModule, currentQuestion, markedForReview, eliminatedChoices, highlightsByKey, testCompleted, bluebookReview, isTimed, module2Variant, m2VariantManuallySet, rwModule2Variant, rwM2VariantManuallySet, moduleCompleted]);
 
   useEffect(() => {
-    if (testCompleted || reviewMode) return;
-    const onBeforeUnload = (e) => { e.preventDefault(); e.returnValue = ''; };
+    if (testCompleted || bluebookReview) return;
+    const onBeforeUnload = (e) => {
+      if (bluebookReview) return; e.preventDefault(); e.returnValue = ''; };
     window.addEventListener('beforeunload', onBeforeUnload);
     return () => window.removeEventListener('beforeunload', onBeforeUnload);
-  }, [testCompleted, reviewMode]);
+  }, [bluebookReview, testCompleted]);
 
   // Flush progress the moment the tab hides (refresh/close/app-switch).
   // The debounced save above only fires on interaction, so without this a
   // refresh restored the clock to its value at the LAST answer — an
   // unbounded time refund on a timed module.
   useEffect(() => {
-    if (testCompleted || reviewMode) return;
+    if (testCompleted || bluebookReview) return;
     const flushOnHide = () => {
       if (document.visibilityState !== 'hidden') return;
       if (!buildProgressRef.current || !onSaveProgressRef.current) return;
@@ -1071,7 +884,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     return () => document.removeEventListener('visibilitychange', flushOnHide);
     // NOTE: onSaveProgress is read through the ref (not a dep) so App
     // re-renders don't churn this listener.
-  }, [testCompleted, reviewMode]);
+  }, [testCompleted, bluebookReview]);
 
   // Flush any pending auto-save when test completes
   useEffect(() => {
@@ -1082,16 +895,92 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
 
   const planGenerationAttempted = useRef(false);
 
+  // ── Diagnostic v2 finish (test.isDiagnostic) ──────────────────────────────
+  // The diagnostic runs the on-ramp pipeline (finishMiniDiagnostic: real
+  // diagnosis → starter/check-in plan → artifact persist → skillProgress
+  // seed) instead of the practice-test save path. Nothing here may touch
+  // practiceTestResults or the review queue — a diagnostic must never enter
+  // score history. Phase: null | 'finishing' | 'results' | 'error'.
+  const [diagnosticFinish, setDiagnosticFinish] = useState({ phase: null, result: null });
+  const diagnosticFinishingRef = useRef(false);
+  const runDiagnosticFinish = useCallback(async () => {
+    if (diagnosticFinishingRef.current) return;
+    diagnosticFinishingRef.current = true;
+    setDiagnosticFinish({ phase: 'finishing', result: null });
+    try {
+      // Navigation classification — same rules as the practice-test path.
+      const navHistory = navigationHistory.current;
+      let navigationPattern = 'linear';
+      if (navHistory.length > 0) {
+        let backwardCount = 0;
+        let skipCount = 0;
+        for (const nav of navHistory) {
+          const [, fromQ] = nav.from.split('-').map(Number);
+          const [, toQ] = nav.to.split('-').map(Number);
+          if (toQ < fromQ) backwardCount++;
+          if (Math.abs(toQ - fromQ) > 1) skipCount++;
+        }
+        if (skipCount > navHistory.length * 0.3) navigationPattern = 'jumping';
+        else if (backwardCount > 2 || skipCount > 2) navigationPattern = 'strategic-skip';
+      }
+      const result = await finishMiniDiagnostic({
+        user,
+        effectiveTest: { ...test, modules: effectiveModules },
+        answers,
+        telemetry: questionTelemetry.current,
+        eliminatedChoices,
+        attemptId: attemptIdRef.current || generateAttemptId(),
+        // Route provenance only where routing actually HAPPENED — the
+        // check-in variant ships no Module-2 variants, so recording 'hard'
+        // there would assert a routing decision that never occurred.
+        routes: {
+          math: test.module2Easy ? (module2Variant === 'easy' ? 'easy' : 'hard') : null,
+          rw: test.rwModule2Easy ? (rwModule2Variant === 'easy' ? 'easy' : 'hard') : null,
+        },
+        navigation: {
+          navigationPattern,
+          totalNavigationEvents: navHistory.length,
+          // Pacing evidence — the timed diagnostic's whole pitch is authentic
+          // pace; without this the diagnosis runs blind on the time dimension.
+          moduleTimeRemaining: { ...moduleTimeRemaining.current },
+        },
+        answeredQuestionIds,
+        completedLessons,
+        practiceProgress,
+        scoreAnchor: diagnosticScoreAnchor,
+      });
+      if (onDiagnosticFinished) {
+        try { await onDiagnosticFinished({ ...result, attemptId: attemptIdRef.current }); } catch (e) {
+          // App-level persistence (record/stamp) failing must not hide the
+          // student's diagnosis — same resilience order as the on-ramp sink.
+          console.error('[PracticeTest] onDiagnosticFinished handler error (continuing to results):', e);
+        }
+      }
+      // Success: the resumable in-progress record is now stale — clear it so
+      // the Tests/on-ramp surfaces stop offering a resume of a finished run.
+      if (onClearProgress) onClearProgress();
+      setDiagnosticFinish({ phase: 'results', result });
+    } catch (err) {
+      console.error('[PracticeTest] Diagnostic finish pipeline failed:', err);
+      // Keep the in-progress record — "Try again" re-runs the finish, and a
+      // reload resumes the completed sitting instead of losing 40 answers.
+      setDiagnosticFinish({ phase: 'error', result: null });
+    } finally {
+      diagnosticFinishingRef.current = false;
+    }
+  }, [user, test, effectiveModules, answers, eliminatedChoices, module2Variant, rwModule2Variant, answeredQuestionIds, completedLessons, practiceProgress, onDiagnosticFinished, onClearProgress, diagnosticScoreAnchor]);
+
   // Save test results when test completes
   const completionInFlight = useRef(false);
   useEffect(() => {
-    if (!testCompleted || !onSaveResult || resultSaved || completionInFlight.current) return;
+    // Diagnostic mode has no onSaveResult (nothing to save to score history) —
+    // it routes to the finish pipeline instead.
+    if (!testCompleted || resultSaved || completionInFlight.current) return;
+    if (!test?.isDiagnostic && !onSaveResult) return;
     completionInFlight.current = true;
 
     // Yield to browser so the completion UI paints before heavy scoring computation
     const completionTimer = setTimeout(() => {
-      console.log('[PracticeTest] Attempting to save results...');
-
       // Record time spent on the last question before test completion
       const now = Date.now();
       const lastElapsed = (now - questionStartTime.current) / 1000;
@@ -1101,6 +990,18 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
           questionTelemetry.current[lastKey].timeSpent += lastElapsed;
         }
       }
+
+      // Diagnostic v2: the entire practice-test completion path below
+      // (snapshot, score row, session-complete seam, review feed, flag
+      // fanout, skill batch, plan generation) is replaced by the finish
+      // pipeline. Mint the attempt id here so retries reuse it.
+      if (test?.isDiagnostic) {
+        if (!attemptIdRef.current) attemptIdRef.current = generateAttemptId();
+        setResultSaved(true); // arm the same completion latch the save path uses
+        runDiagnosticFinish();
+        return;
+      }
+      console.log('[PracticeTest] Attempting to save results...');
 
       // Build per-question diagnostic details
       const questionDetails = {};
@@ -1243,7 +1144,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
       // re-gated by the orchestrator.
       const MAX_REVIEW_FEED = 20;
       const reviewFeed = [];
-      if (!reviewMode && test?.id) {
+      if (test?.id) {
         const missed = [];
         effectiveModules.forEach((mod, modIdx) => {
           mod.questions.forEach((q, qIdx) => {
@@ -1277,22 +1178,20 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
       // App-level onSaveResult handler so they appear in the Review Queue's
       // Flagged group. No correctness signal — flagging stays user-driven.
       const markedForReviewRefs = [];
-      if (!reviewMode) {
-        effectiveModules.forEach((mod, modIdx) => {
-          mod.questions.forEach((q, qIdx) => {
-            const key = `${modIdx}-${qIdx}`;
-            if (!questionDetails[key]?.markedForReview) return;
-            markedForReviewRefs.push({
-              questionId: q.id,
-              section: mod.section ?? null,
-              moduleIndex: modIdx,
-              questionIndex: qIdx,
-              skills: getQuestionSkills(q),
-              snippet: q.stem ?? q.question ?? null,
-            });
+      effectiveModules.forEach((mod, modIdx) => {
+        mod.questions.forEach((q, qIdx) => {
+          const key = `${modIdx}-${qIdx}`;
+          if (!questionDetails[key]?.markedForReview) return;
+          markedForReviewRefs.push({
+            questionId: q.id,
+            section: mod.section ?? null,
+            moduleIndex: modIdx,
+            questionIndex: qIdx,
+            skills: getQuestionSkills(q),
+            snippet: q.stem ?? q.question ?? null,
           });
         });
-      }
+      });
 
       const resultsToSave = {
         attemptId: newAttemptId,
@@ -1338,7 +1237,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
             isMultiSection: scored.isMultiSection,
             timedMode: isTimed,
             diagnosticReport: diagnosticReportRef.current || null,
-            reviewMode,
+            reviewMode: false,
             completedAt: attemptTimestampRef.current,
             reviewFeed,
           });
@@ -1415,7 +1314,15 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
             // Phase 2 re-fetch AFTER Phase 1 persisted made the generator
             // read its own seconds-old artifact as "the previous plan" and
             // step intensity down against its trivially-0% completion.
-            const previousPlan = await fetchCurrentStudyPlan(user.uid).catch(() => null);
+            const fetchedPlan = await fetchCurrentStudyPlan(user.uid).catch(() => null);
+            // An onboarding starter plan is a scaffold, not adherence
+            // evidence: it starts at 0% completion (stepping the FIRST real
+            // plan's intensity down a band) and its self-reported "suspected"
+            // skills would pollute the What-Changed delta against a real
+            // diagnosis. Treat it as no previous plan — same as the check-in
+            // path (finishMiniDiagnostic passes previousPlan: null). It sets
+            // no edited userPrefs, so nothing sticky is lost.
+            const previousPlan = fetchedPlan?.basedOnTest === STARTER_PLAN_SOURCE ? null : fetchedPlan;
 
             // Drill evidence the just-finished test contradicted must not be
             // credited (transfer failure) — reconcile before generating.
@@ -1425,7 +1332,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
             );
             const detPlan = generateDeterministicPlan(
               diagReport,
-              { targetScore: user.targetScore, testDate: user.testDate },
+              buildPlanProfile(user),
               completedLessons,
               practiceProgress,
               previousPlan,
@@ -1470,7 +1377,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
               const phase2 = await generateAndPersistHybridPlan({
                 userId: user.uid,
                 diagnostic: diagReport,
-                userProfile: { targetScore: user.targetScore, testDate: user.testDate },
+                userProfile: buildPlanProfile(user),
                 completedLessons,
                 practiceProgress,
                 practiceTestResults: practiceTestResults || {},
@@ -1521,7 +1428,8 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
       clearTimeout(completionTimer);
       completionInFlight.current = false;
     };
-  }, [testCompleted, onSaveResult, onSessionComplete, onClearProgress, resultSaved, test, answers, isTimed, user, completedLessons, practiceProgress, practiceTestResults, onSaveStudyPlan]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- this fires once per completed test and is guarded by completionInFlight/resultSaved; the listed extras are per-render derivations read live at submit time, and depending on them would re-enter scoring and study-plan generation
+  }, [testCompleted, onSaveResult, onSessionComplete, onClearProgress, resultSaved, test, answers, isTimed, user, completedLessons, practiceProgress, practiceTestResults, onSaveStudyPlan, runDiagnosticFinish]);
 
   // Post-test: generate AI diagnostic narrative automatically
   const diagnosticNarrativeAttempted = useRef(false);
@@ -1608,6 +1516,9 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
   }, [user, test, practiceTestResults, skillProgress]);
 
   useEffect(() => {
+    // Diagnostics never generate the AI results narrative — their end screen
+    // is the diagnosis handoff, not the TestResults insights tab.
+    if (test?.isDiagnostic) return;
     if (!resultSaved || diagnosticNarrativeAttempted.current || !user?.uid) return;
     diagnosticNarrativeAttempted.current = true;
 
@@ -1901,7 +1812,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
       }
       setTestCompleted(true);
     }
-  }, [test.modules.length, test.module2Easy, test.rwModule2Easy, test.modules, mathM1Index, rwM1Index, module2Variant, m2VariantManuallySet, rwModule2Variant, rwM2VariantManuallySet, answers, onClearProgress, onBack]);
+  }, [test.module2Easy, test.rwModule2Easy, test.modules, mathM1Index, rwM1Index, module2Variant, m2VariantManuallySet, rwModule2Variant, rwM2VariantManuallySet, answers, onClearProgress, onBack]);
 
   useEffect(() => { moduleCompletedRef.current = moduleCompleted; }, [moduleCompleted]);
 
@@ -1932,13 +1843,20 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     const cur = effectiveModules[currentModule];
     const nxt = effectiveModules[currentModule + 1];
     const isLast = currentModule === effectiveModules.length - 1;
-    const isSectionBreak = !isLast && isTimed
+    const isSectionBreak = !isLast && isTimed && !test?.isDiagnostic
       && cur?.section === 'reading-writing'
       && ((nxt?.section || 'math') !== 'reading-writing');
     if (isSectionBreak) return undefined;
+    // A Module 2 choice is pending on this screen — the student picks, then
+    // continues; auto-advancing would decide for them.
+    const hasM2Choice = !test?.isDiagnostic && (
+      (currentModule === mathM1Index && !!test?.module2Easy)
+      || (currentModule === rwM1Index && !!test?.rwModule2Easy)
+    );
+    if (hasM2Choice) return undefined;
     const t = setTimeout(() => handleNextModule(), 5000);
     return () => clearTimeout(t);
-  }, [moduleCompleted, testCompleted, timeExpired, currentModule, effectiveModules, isTimed, handleNextModule]);
+  }, [moduleCompleted, testCompleted, timeExpired, currentModule, effectiveModules, isTimed, handleNextModule, test, mathM1Index, rwM1Index]);
 
   // Bluebook: at 5:00 remaining a hidden timer force-reveals and the student
   // gets a one-time warning. Timer remounts per module, so this fires once
@@ -1955,68 +1873,6 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     });
   };
 
-  // Switch the active Module 2 variant from the inline switcher rendered
-  // above the M2 question grid. The variant determines which question set
-  // `effectiveModules` swaps in, so switching mid-module makes the existing
-  // M2 answers point at a different question (the same `${modIdx}-${qIdx}`
-  // key now refers to a Hard-variant question instead of Easy, or vice
-  // versa). Clearing the M2 keys is the safe move; we confirm first when
-  // any are present so the student doesn't lose work by accident.
-  const applyM2VariantSwitch = useCallback((section, newVariant) => {
-    const slotIndex = section === 'rw' ? rwM2Index : mathM2Index;
-    if (section === 'rw') {
-      setRwModule2Variant(newVariant);
-      setRwM2VariantManuallySet(true);
-    } else {
-      setModule2Variant(newVariant);
-      setM2VariantManuallySet(true);
-    }
-    if (slotIndex !== undefined) {
-      const prefix = `${slotIndex}-`;
-      setAnswers(prev => {
-        const out = { ...prev };
-        Object.keys(out).forEach(k => { if (k.startsWith(prefix)) delete out[k]; });
-        return out;
-      });
-      setEliminatedChoices(prev => {
-        const out = { ...prev };
-        Object.keys(out).forEach(k => { if (k.startsWith(prefix)) delete out[k]; });
-        return out;
-      });
-      // Drop the abandoned variant's telemetry too — the `${slotIndex}-*`
-      // keys now point at the OTHER variant's questions, so leaving them would
-      // attribute the discarded variant's dwell time / marks / flags to the
-      // freshly-served questions.
-      Object.keys(questionTelemetry.current).forEach(k => {
-        if (k.startsWith(prefix)) delete questionTelemetry.current[k];
-      });
-      setMarkedForReview([]);  // M2-only list at this point in the section
-    }
-    setCurrentQuestion(0);
-  }, [mathM2Index, rwM2Index]);
-
-  const handleRequestM2Switch = useCallback((section, newVariant) => {
-    const easyModule = section === 'rw' ? test.rwModule2Easy : test.module2Easy;
-    const slotIndex = section === 'rw' ? rwM2Index : mathM2Index;
-    const activeVariant = section === 'rw' ? rwModule2Variant : module2Variant;
-    if (!easyModule || slotIndex === undefined) return;
-    if (newVariant === activeVariant) return;
-    const prefix = `${slotIndex}-`;
-    const answerCount = Object.keys(answers).filter(k => k.startsWith(prefix)).length;
-    if (answerCount === 0) {
-      applyM2VariantSwitch(section, newVariant);
-    } else {
-      setPendingM2Switch({ section, newVariant, answerCount });
-    }
-  }, [test.module2Easy, test.rwModule2Easy, mathM2Index, rwM2Index, module2Variant, rwModule2Variant, answers, applyM2VariantSwitch]);
-
-  const handleConfirmM2Switch = useCallback(() => {
-    if (!pendingM2Switch) return;
-    applyM2VariantSwitch(pendingM2Switch.section || 'math', pendingM2Switch.newVariant);
-    setPendingM2Switch(null);
-  }, [pendingM2Switch, applyM2VariantSwitch]);
-
-  const handleCancelM2Switch = useCallback(() => setPendingM2Switch(null), []);
 
   const isDevMode = typeof window !== 'undefined' && window.location.hostname === 'localhost';
 
@@ -2084,6 +1940,31 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
       return;
     }
 
+    // Diagnostic floor: a diagnosis (and the study plan minted from it) needs
+    // real evidence. Ending below half the sitting SAVES progress and exits —
+    // it must not run the finish pipeline, which would persist a near-empty
+    // plan, write the miniDiagnostic record (permanently demoting future
+    // sittings to the short check-in), and stamp onboarding complete.
+    if (test?.isDiagnostic) {
+      const totalQ = effectiveModules.reduce((s2, m) => s2 + (m.questions?.length || 0), 0);
+      // A just-typed SPR value commits via setState and isn't in answersRef
+      // yet (same hazard the zero-answer guard compensates for) — count it,
+      // or a student at exactly the floor gets bounced and their final
+      // answer read as missing.
+      const effectiveAnswered = answeredCount + (fillInHasValueRef.current ? 1 : 0);
+      if (effectiveAnswered < Math.ceil(totalQ * 0.5)) {
+        // Flush after the fill-in commit renders so the snapshot carries it.
+        setTimeout(() => {
+          if (buildProgressRef.current && onSaveProgressRef.current) {
+            onSaveProgressRef.current(buildProgressRef.current());
+          }
+        }, 60);
+        showToast({ type: 'info', message: `Progress saved (${effectiveAnswered} of ${totalQ} answered). Finish the diagnostic to build your plan.` });
+        setTimeout(() => onBack?.(), 80);
+        return;
+      }
+    }
+
     const mod = currentModuleRef.current;
     const q = currentQuestionRef.current;
     const now = Date.now();
@@ -2097,7 +1978,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     questionStartTime.current = now;
     moduleTimeRemaining.current[mod] = timerSecondsRef.current;
     setTestCompleted(true);
-  }, [onBack, onClearProgress]);
+  }, [onBack, onClearProgress, test, effectiveModules]);
 
   const handleConfirmLeave = useCallback(() => {
     setConfirmAction(null);
@@ -2121,26 +2002,6 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     setIsPaused(false);
   };
 
-  // Calculate total score
-  const calculateTotalScore = () => {
-    let total = 0;
-    effectiveModules.forEach((mod, modIdx) => {
-      mod.questions.forEach((q, qIdx) => {
-        if (isAnswerCorrect(q, answers[`${modIdx}-${qIdx}`])) total++;
-      });
-    });
-    return total;
-  };
-
-  // Get score level description
-  const getScoreLevel = (scaledScore) => {
-    if (scaledScore >= 750) return { level: 'Excellent', color: colors.semantic.success };
-    if (scaledScore >= 650) return { level: 'Good', color: colors.semantic.success };
-    if (scaledScore >= 550) return { level: 'Average', color: colors.semantic.warning };
-    if (scaledScore >= 450) return { level: 'Below Average', color: colors.accent.orange };
-    return { level: 'Needs Improvement', color: colors.semantic.error };
-  };
-
   // Module completion screen
   if (moduleCompleted && !testCompleted) {
     const isLastModule = currentModule === effectiveModules.length - 1;
@@ -2151,21 +2012,48 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     const nextModuleTitle = nextModuleMeta?.title;
 
     // Bluebook: a 10-minute break sits between the R&W and Math sections.
-    // Timed tests only — untimed mode has no clocks to break from.
-    const isSectionBreak = !isLastModule && isTimed
+    // Timed tests only — untimed mode has no clocks to break from. The
+    // diagnostic skips it too: a half-length sitting doesn't earn a 10-minute
+    // hole, and the module-complete card already gives a breather.
+    const isSectionBreak = !isLastModule && isTimed && !test?.isDiagnostic
       && module?.section === 'reading-writing'
       && ((nextModuleMeta?.section || 'math') !== 'reading-writing');
     if (isSectionBreak) {
       return <BreakScreen nextModuleTitle={nextModuleTitle} onResume={handleNextModule} />;
     }
 
+    // Module 2 chooser: shown once, here, when the module just finished is a
+    // section's Module 1 and the test ships an Easy variant for that section.
+    // The recommendation follows the official routing rule; the other module
+    // is one click away for practice. Never on the diagnostic (its route is
+    // the measurement).
+    const chooserSection = (!test?.isDiagnostic && !isLastModule)
+      ? (currentModule === mathM1Index && test.module2Easy && recommendedM2Variant ? 'math'
+        : currentModule === rwM1Index && test.rwModule2Easy && recommendedRwM2Variant ? 'rw'
+          : null)
+      : null;
+    const chooser = chooserSection ? {
+      section: chooserSection,
+      sectionLabel: chooserSection === 'rw' ? 'Reading and Writing' : 'Math',
+      recommended: chooserSection === 'rw' ? recommendedRwM2Variant : recommendedM2Variant,
+      selected: chooserSection === 'rw' ? rwModule2Variant : module2Variant,
+      score: chooserSection === 'rw' ? rwM1Score : m1Score,
+      choose: (variant) => {
+        if (chooserSection === 'rw') { setRwModule2Variant(variant); setRwM2VariantManuallySet(true); }
+        else { setModule2Variant(variant); setM2VariantManuallySet(true); }
+      },
+    } : null;
+    const chooserCta = chooser
+      ? `Continue to ${chooser.sectionLabel} Module 2 (${chooser.selected === 'easy' ? 'Easy' : 'Hard'})`
+      : null;
+
     return (
       <div className="test-module-complete">
-        <div className="test-module-complete-card">
+        <div className={`test-module-complete-card${chooser ? ' has-choice' : ''}`}>
           <div className="test-module-complete-eyebrow">{timeExpired ? "Time's up" : 'Module complete'}</div>
           <h2 className="test-module-complete-title">{module.title}</h2>
 
-          {!isLastModule && (
+          {!isLastModule && !chooser && (
             <p className="test-module-complete-note">
               {timeExpired
                 ? `Moving to ${nextModuleTitle} automatically — just like test day, unused time doesn't carry over.`
@@ -2180,8 +2068,42 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
             </p>
           )}
 
+          {chooser && (
+            <div className="test-module-complete-choice">
+              <div className="test-module-complete-choice-title">Choose your Module 2</div>
+              <p className="test-module-complete-choice-intro">
+                {chooser.score
+                  ? `You answered ${chooser.score.correct} of ${chooser.score.total} in Module 1, so the test routes you to Module 2 (${chooser.recommended === 'easy' ? 'Easy' : 'Hard'}) — the same rule the digital SAT uses.`
+                  : 'The test routes you off your Module 1 score, the same rule the digital SAT uses.'}
+                {' '}Practicing the other one is fine. Pick before you start: the choice locks once the module begins, and your score uses the module you take.
+              </p>
+              <div className="test-module-complete-choice-options" role="group" aria-label="Module 2 difficulty">
+                {[
+                  { variant: 'easy', label: 'Module 2 (Easy)', sub: 'Eases up after Module 1. Section scores top out near 600.' },
+                  { variant: 'hard', label: 'Module 2 (Hard)', sub: 'Full College Board Module 2 Hard calibration.' },
+                ].map(({ variant, label, sub }) => {
+                  const selected = chooser.selected === variant;
+                  const recommended = chooser.recommended === variant;
+                  return (
+                    <button
+                      key={variant}
+                      type="button"
+                      className="test-module-complete-choice-option"
+                      aria-pressed={selected}
+                      onClick={() => chooser.choose(variant)}
+                    >
+                      <span className="test-module-complete-choice-label">{label}</span>
+                      {recommended && <span className="test-module-complete-choice-tag">Recommended</span>}
+                      <span className="test-module-complete-choice-sub">{sub}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           <button className="test-module-complete-cta" onClick={handleNextModule} type="button">
-            {isLastModule ? 'See Final Results' : `Continue to ${nextModuleTitle}`}
+            {isLastModule ? 'See Final Results' : (chooserCta || `Continue to ${nextModuleTitle}`)}
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </button>
         </div>
@@ -2191,698 +2113,51 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
 
   // Review mode screen - shows all questions with explanations
   // IMPORTANT: This must come BEFORE testCompleted check so review mode can render
-  if (reviewMode) {
-    const reviewMod = effectiveModules[reviewModule];
-    const reviewQuestions = reviewMod?.questions || [];
-    const reviewQ = reviewQuestions[reviewQuestion];
-    const reviewKey = `${reviewModule}-${reviewQuestion}`;
-    const userAnswer = answers[reviewKey];
 
-    // Check if answer is correct
-    const isCorrect = reviewQ ? isAnswerCorrect(reviewQ, userAnswer) : false;
-
-    // Build flat list of all questions for navigation
-    const allQuestions = [];
-    effectiveModules.forEach((mod, modIdx) => {
-      mod.questions.forEach((q, qIdx) => {
-        const key = `${modIdx}-${qIdx}`;
-        const ans = answers[key];
-        allQuestions.push({ modIdx, qIdx, correct: isAnswerCorrect(q, ans), answered: ans !== undefined });
-      });
-    });
-
-    const currentFlatIndex = allQuestions.findIndex(
-      q => q.modIdx === reviewModule && q.qIdx === reviewQuestion
-    );
-
-    const handleReviewNav = (direction) => {
-      const newIndex = currentFlatIndex + direction;
-      if (newIndex >= 0 && newIndex < allQuestions.length) {
-        const target = allQuestions[newIndex];
-        setReviewModule(target.modIdx);
-        setReviewQuestion(target.qIdx);
-      }
-    };
-
-    const handleReviewJump = (modIdx, qIdx) => {
-      setReviewModule(modIdx);
-      setReviewQuestion(qIdx);
-    };
-
-    const userAnswerDisplay = userAnswer !== undefined
-      ? (reviewQ?.type === 'fill-in' ? userAnswer : reviewQ?.choices?.find(c => c.id === userAnswer)?.text || userAnswer)
-      : 'Not answered';
-    const correctAnswerDisplay = reviewQ?.type === 'fill-in'
-      ? reviewQ.correctAnswer
-      : reviewQ?.choices?.find(c => c.id === reviewQ.correctAnswer)?.text;
-    const difficultyColor = reviewQ?.difficulty === 'hard' ? colors.semantic.error : reviewQ?.difficulty === 'medium' ? colors.semantic.warning : colors.semantic.success;
-    const difficultyBg = reviewQ?.difficulty === 'hard' ? colors.semantic.errorLight : reviewQ?.difficulty === 'medium' ? colors.semantic.warningBg : colors.semantic.successLight;
-
-    return (
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', background: 'var(--color-slate-100)', overflow: 'hidden' }}>
-
-        {/* Stale-content notice (legacy attempts only, dismissible per-attempt) */}
-        {showSnapshotNotice && (
-          <div
-            role="status"
-            style={{
-              flexShrink: 0,
-              background: '#FEF3C7',
-              borderBottom: '1px solid #F59E0B',
-              color: '#78350F',
-              padding: isMobile ? '10px 14px' : '12px 24px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              gap: '12px',
-              fontSize: isMobile ? '12px' : '13px',
-              fontWeight: 500,
-            }}
-          >
-            <span>
-              Questions have been updated since this attempt. Original problems are not available for review — what you see may differ from what you answered.
-            </span>
-            <button
-              onClick={dismissSnapshotNotice}
-              aria-label="Dismiss notice"
-              style={{
-                flexShrink: 0,
-                background: 'transparent',
-                border: '1px solid #B45309',
-                color: '#78350F',
-                borderRadius: '8px',
-                padding: '4px 10px',
-                fontSize: '12px',
-                fontWeight: 600,
-                cursor: 'pointer',
-              }}
-            >
-              Dismiss
-            </button>
-          </div>
-        )}
-
-        {/* ── TOP BAR: Back + Progress + Nav ─────────────────────── */}
-        <div style={{
-          flexShrink: 0,
-          background: 'rgba(255, 255, 255, 0.85)',
-          backdropFilter: 'saturate(180%) blur(20px)',
-          WebkitBackdropFilter: 'saturate(180%) blur(20px)',
-          borderBottom: `1px solid rgba(0, 0, 0, 0.05)`,
-          padding: isMobile ? '8px 16px' : '10px 28px',
-          display: 'flex', alignItems: 'center', gap: isMobile ? '8px' : '16px',
-          overflowX: 'auto',
-          WebkitOverflowScrolling: 'touch',
-          zIndex: 10,
-        }}>
-          <button
-            onClick={() => initialReviewModule !== null ? onBack?.() : setReviewMode(false)}
-            style={{
-              padding: isMobile ? '6px 10px' : '8px 16px', background: 'rgba(0,0,0,0.04)', border: `none`,
-              borderRadius: '12px', fontSize: isMobile ? '12px' : '13px', fontWeight: typography.weights.semibold,
-              color: colors.text.primary, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px',
-              transition: `all ${transitions.fast}`, flexShrink: 0,
-            }}
-            onMouseOver={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.08)'}
-            onMouseOut={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.04)'}
-          >
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 3L5 7l4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            {!isMobile && "Results"}
-          </button>
-
-          <div style={{ width: '1px', height: '20px', background: 'rgba(0,0,0,0.1)', flexShrink: 0 }} />
-
-          {/* Module tabs */}
-          <div style={{ display: 'flex', gap: '4px', flexShrink: 0 }}>
-            {effectiveModules.map((mod, modIdx) => {
-              const modQuestions = mod.questions.map((q, qIdx) => {
-                const key = `${modIdx}-${qIdx}`;
-                const ans = answers[key];
-                return { correct: isAnswerCorrect(q, ans), answered: ans !== undefined };
-              });
-              const correctCount = modQuestions.filter(q => q.answered && q.correct).length;
-              const isActiveModule = modIdx === reviewModule;
-              return (
-                <button
-                  key={modIdx}
-                  onClick={() => { setReviewModule(modIdx); setReviewQuestion(0); }}
-                  style={{
-                    padding: isMobile ? '4px 10px' : '6px 14px', borderRadius: '12px', border: 'none',
-                    background: isActiveModule ? colors.text.primary : 'transparent',
-                    color: isActiveModule ? colors.text.inverse : colors.text.secondary,
-                    fontSize: isMobile ? '12px' : '13px', fontWeight: typography.weights.semibold,
-                    cursor: 'pointer', whiteSpace: 'nowrap', transition: `all ${transitions.fast}`
-                  }}
-                >
-                  {sectionModuleShort(mod.section, modIdx)} <span style={{ opacity: 0.7, marginLeft: '2px', fontWeight: 'normal' }}>({correctCount}/{mod.questions.length})</span>
-                </button>
-              );
-            })}
-          </div>
-
-          <div style={{ width: '1px', height: '20px', background: 'rgba(0,0,0,0.1)', flexShrink: 0 }} />
-
-          {/* Question pills */}
-          <div style={{ display: 'flex', gap: '6px', flex: 1, overflowX: 'auto', paddingRight: '10px', alignItems: 'center' }}>
-            {(() => {
-              const currentMod = effectiveModules[reviewModule];
-              return currentMod.questions.map((q, qIdx) => {
-                const key = `${reviewModule}-${qIdx}`;
-                const ans = answers[key];
-                const correct = isAnswerCorrect(q, ans);
-                const answered = ans !== undefined;
-                const isActive = qIdx === reviewQuestion;
-                
-                let bgColor = !answered ? 'rgba(0,0,0,0.06)' : correct ? colors.semantic.success : colors.semantic.error;
-                let textColor = !answered ? colors.text.secondary : colors.text.inverse;
-                
-                return (
-                  <button
-                    key={qIdx}
-                    onClick={() => handleReviewJump(reviewModule, qIdx)}
-                    style={{
-                      width: isMobile ? '28px' : '32px', height: isMobile ? '28px' : '32px', borderRadius: '10px',
-                      border: isActive ? `2px solid ${colors.text.primary}` : '2px solid transparent',
-                      background: bgColor, color: textColor,
-                      fontSize: isMobile ? '11px' : '12px', fontWeight: typography.weights.bold,
-                      cursor: 'pointer', transition: `all ${transitions.fast}`,
-                      transform: isActive ? 'scale(1.08)' : 'scale(1)',
-                      flexShrink: 0,
-                      boxShadow: isActive ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
-                    }}
-                  >
-                    {qIdx + 1}
-                  </button>
-                );
-              });
-            })()}
-          </div>
-
-          {/* Legend */}
-          {!isMobile && (
-            <div style={{ display: 'flex', gap: '12px', fontSize: '12px', flexShrink: 0, fontWeight: '500' }}>
-              {[
-                { color: colors.semantic.success, label: 'Correct' },
-                { color: colors.semantic.error, label: 'Wrong' },
-                { color: 'rgba(0,0,0,0.15)', label: 'Skipped' },
-              ].map(({ color, label }) => (
-                <span key={label} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: color }} />
-                  <span style={{ color: colors.text.secondary }}>{label}</span>
-                </span>
-              ))}
-            </div>
-          )}
+  if (testCompleted && !bluebookReview && test?.isDiagnostic) {
+    if (diagnosticFinish.phase === 'results' && diagnosticFinish.result) {
+      return (
+        <div style={{ height: '100vh', overflowY: 'auto', boxSizing: 'border-box', background: 'var(--color-slate-100)', display: 'flex', justifyContent: 'center', padding: '0 16px' }}>
+          <MiniDiagnosticResults
+            result={diagnosticFinish.result}
+            user={user}
+            onViewPlan={onGoToStudyPlan}
+          />
         </div>
-
-        {/* ── WORKSPACE ──────────────────────────────────── */}
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: isMobile ? 0 : '16px', gap: isMobile ? 0 : '16px' }}>
-
-          {/* DESKTOP RIGHT PANE TOGGLE (Apple Segmented Control Style) */}
-          {!isMobile && (
-            <div style={{ display: 'flex', justifyContent: 'center', flexShrink: 0 }}>
-              <div style={{
-                display: 'flex', background: 'rgba(118, 118, 128, 0.12)', borderRadius: '10px', padding: '3px',
-              }}>
-                {['explanation', 'both', 'ai'].map(pane => (
-                  <button
-                    key={pane}
-                    onClick={() => setReviewRightPane(pane)}
-                    style={{
-                      padding: '6px 20px', 
-                      background: reviewRightPane === pane ? colors.surface.white : 'transparent',
-                      border: 'none', 
-                      borderRadius: '7px',
-                      color: reviewRightPane === pane ? colors.text.primary : colors.text.secondary,
-                      fontSize: '13px', fontWeight: typography.weights.semibold, textTransform: 'capitalize',
-                      boxShadow: reviewRightPane === pane ? '0 3px 8px rgba(0,0,0,0.12), 0 3px 1px rgba(0,0,0,0.04)' : 'none',
-                      cursor: 'pointer', transition: `all ${transitions.fast}`,
-                    }}
-                  >
-                    {pane === 'ai' ? 'AI Tutor' : pane}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          <div style={{
-            flex: 1, display: 'flex', overflow: 'hidden',
-            flexDirection: isMobile ? 'column' : 'row', gap: isMobile ? 0 : '16px'
-          }}>
-            {/* LEFT / QUESTION PANE */}
-            {(!isMobile || reviewTab === 'question') && (
-              <div style={{
-                flex: isMobile ? 1 : '1 1 0%',
-                maxWidth: isMobile ? 'none' : '540px',
-                // No 340px floor below 1024px (iPad portrait) — let the question
-                // pane shrink instead of overflowing the screen.
-                minWidth: isMobile || windowWidth < 1024 ? 'none' : '340px',
-                borderRadius: isMobile ? 0 : '20px',
-                boxShadow: isMobile ? 'none' : '0 4px 20px rgba(0,0,0,0.03)',
-                border: isMobile ? 'none' : `1px solid rgba(0,0,0,0.06)`,
-                overflowY: 'auto',
-                background: colors.surface.white,
-                padding: isMobile ? '16px' : '32px',
-                display: 'flex', flexDirection: 'column'
-              }}>
-                {/* ── CONTEXT ZONE: Status + Question ──────────────────── */}
-                <div style={{
-                  display: 'flex', gap: '12px', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap'
-                }}>
-                  {/* Correctness badge */}
-                  <div style={{
-                    display: 'flex', alignItems: 'center', gap: '8px',
-                    padding: '6px 12px', borderRadius: radius.full,
-                    background: !userAnswer ? colors.surface.gray : isCorrect ? colors.semantic.successLight : colors.semantic.errorLight,
-                    border: `1px solid ${!userAnswer ? colors.surface.grayDark : isCorrect ? colors.semantic.success : colors.semantic.error}`,
-                  }}>
-                    <div style={{
-                      width: '18px', height: '18px', borderRadius: '50%',
-                      background: !userAnswer ? colors.text.muted : isCorrect ? colors.semantic.success : colors.semantic.error,
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      color: colors.text.inverse, fontSize: '10px',
-                    }}>
-                      {!userAnswer ? '?' : isCorrect ? <CheckIcon size={10} color={colors.text.inverse} /> : <CrossIcon size={10} color={colors.text.inverse} />}
-                    </div>
-                    <span style={{
-                      fontSize: '12px', fontWeight: typography.weights.semibold,
-                      color: !userAnswer ? colors.text.secondary : isCorrect ? colors.semantic.success : colors.semantic.error,
-                    }}>
-                      {!userAnswer ? 'Skipped' : isCorrect ? 'Correct' : 'Incorrect'}
-                    </span>
-                  </div>
-
-                  {/* Question number */}
-                  <span style={{
-                    fontSize: '12px', fontWeight: typography.weights.semibold,
-                    color: colors.text.muted,
-                  }}>
-                    Q{currentFlatIndex + 1} of {allQuestions.length}
-                  </span>
-
-                  {/* Difficulty chip */}
-                  {reviewQ?.difficulty && (
-                    <span style={{
-                      fontSize: '10px', fontWeight: typography.weights.bold,
-                      padding: '2px 8px', borderRadius: radius.full,
-                      background: difficultyBg, color: difficultyColor,
-                      letterSpacing: '0.02em',
-                    }}>
-                      {reviewQ.difficulty.charAt(0).toUpperCase() + reviewQ.difficulty.slice(1)}
-                    </span>
-                  )}
-
-                </div>
-
-                {/* Answer summary */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', fontSize: '13px', marginBottom: '20px', padding: '12px', background: colors.surface.offWhite, borderRadius: radius.md, border: `1px solid ${colors.surface.grayDark}` }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span style={{ color: colors.text.muted }}>Your Answer:</span>
-                    <span style={{ fontWeight: typography.weights.semibold, color: isCorrect ? colors.semantic.success : colors.semantic.error, textAlign: 'right' }}>{userAnswerDisplay}</span>
-                  </div>
-                  {!isCorrect && userAnswer !== undefined && (
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ color: colors.text.muted }}>Correct Answer:</span>
-                      <span style={{ fontWeight: typography.weights.semibold, color: colors.semantic.success, textAlign: 'right' }}>{correctAnswerDisplay}</span>
-                    </div>
-                  )}
-                </div>
-
-                {/* Passage(s) — for R&W questions, with italic/underline/blank markup */}
-                {reviewQ?.passage && (
-                  <HighlightablePassage
-                    text={reviewQ.passage}
-                    highlights={[]}
-                    hidden={false}
-                    onAddHighlight={() => {}}
-                    onRemoveHighlight={() => {}}
-                  />
-                )}
-                {reviewQ?.passages && Array.isArray(reviewQ.passages) && (
-                  <div className="rw-passage-stack">
-                    {reviewQ.passages.map((p, i) => (
-                      <div key={i}>
-                        <div className="rw-passage-label">{p.label || `Text ${i + 1}`}</div>
-                        <HighlightablePassage
-                          text={p.text}
-                          highlights={[]}
-                          hidden={false}
-                          onAddHighlight={() => {}}
-                          onRemoveHighlight={() => {}}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {reviewQ?.studentNotes && (
-                  <div className="rw-passage">
-                    {reviewQ.studentNotes.intro && (
-                      <div style={{ marginBottom: '0.5rem' }}>{reviewQ.studentNotes.intro}</div>
-                    )}
-                    <ul style={{ paddingLeft: '1.25rem', margin: '0.5rem 0' }}>
-                      {reviewQ.studentNotes.bullets.map((b, i) => (
-                        <li key={i} style={{ marginBottom: '0.25rem' }}>
-                          <MathText text={b} />
-                        </li>
-                      ))}
-                    </ul>
-                    {reviewQ.studentNotes.goal && (
-                      <div style={{ marginTop: '0.5rem' }}>
-                        <MathText text={reviewQ.studentNotes.goal} />
-                      </div>
-                    )}
-                  </div>
-                )}
-
-                {/* Question Text */}
-                <div style={{
-                  marginBottom: '16px', fontSize: '15px', lineHeight: '1.7',
-                  color: colors.text.primary, fontFamily: SAT_TYPOGRAPHY.questionFont,
-                }}>
-                  {Array.isArray(reviewQ?.question) || (reviewQ?.question && typeof reviewQ.question === 'object')
-                    ? <QuestionRenderer content={reviewQ.question} />
-                    : <MathText text={reviewQ?.question || ''} />
-                  }
-                </div>
-
-                {/* Formula if present */}
-                {reviewQ?.questionFormula && renderFormula(reviewQ.questionFormula)}
-
-                {/* Diagram */}
-                {reviewQ?.diagram && (
-                  <div style={{
-                    marginBottom: '16px', padding: '12px',
-                    background: colors.surface.offWhite, borderRadius: radius.md,
-                    border: `1px solid ${colors.surface.grayDark}`, display: 'flex', justifyContent: 'center',
-                  }}>
-                    <QuestionDiagram type={reviewQ.diagram.type} params={reviewQ.diagram.params} />
-                  </div>
-                )}
-
-                {/* Table */}
-                {reviewQ?.questionTable && (
-                  <div style={{ marginBottom: '16px', display: 'flex', justifyContent: 'center' }}>
-                    <table style={{ borderCollapse: 'collapse', fontSize: '14px' }}>
-                      <thead>
-                        <tr>
-                          {reviewQ.questionTable.headers.map((header, i) => (
-                            <th key={i} style={{
-                              border: `1px solid ${colors.surface.grayMedium}`,
-                              padding: '6px 14px', background: colors.surface.gray, fontWeight: typography.weights.semibold,
-                            }}>
-                              <MathText text={header} />
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {reviewQ.questionTable.rows.map((row, i) => (
-                          <tr key={i}>
-                            {row.map((cell, j) => (
-                              <td key={j} style={{
-                                border: `1px solid ${colors.surface.grayMedium}`,
-                                padding: '6px 14px', textAlign: 'center',
-                              }}>
-                                <MathText text={cell} />
-                              </td>
-                            ))}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                )}
-
-                {/* Answer choices */}
-                {reviewQ?.type === 'multiple-choice' && reviewQ?.choices && (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
-                    {reviewQ.choices.map((choice) => {
-                      const isUserChoice = userAnswer === choice.id;
-                      const isCorrectChoice = reviewQ.correctAnswer === choice.id;
-                      let bgColor = colors.surface.offWhite;
-                      let borderColor = colors.surface.grayDark;
-                      if (isCorrectChoice) { bgColor = colors.semantic.successLight; borderColor = colors.semantic.success; }
-                      else if (isUserChoice && !isCorrect) { bgColor = colors.semantic.errorLight; borderColor = colors.semantic.error; }
-
-                      return (
-                        <div key={choice.id} style={{
-                          padding: '10px 14px', borderRadius: radius.md,
-                          border: `1.5px solid ${borderColor}`, background: bgColor,
-                          display: 'flex', alignItems: 'center', gap: '12px',
-                        }}>
-                          <div style={{
-                            width: '24px', height: '24px', borderRadius: '4px',
-                            background: isCorrectChoice ? colors.semantic.success : isUserChoice ? colors.semantic.error : colors.surface.grayMedium,
-                            color: colors.text.inverse, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            fontWeight: typography.weights.semibold, fontSize: '12px', flexShrink: 0,
-                          }}>
-                            {choice.id}
-                          </div>
-                          <div style={{ flex: 1, fontSize: '14px', color: colors.text.primary }}>
-                            {renderChoice(choice)}
-                          </div>
-                          {isCorrectChoice && (
-                            <CheckIcon size={14} color={colors.semantic.success} />
-                          )}
-                          {isUserChoice && !isCorrect && (
-                            <CrossIcon size={14} color={colors.semantic.error} />
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-
-                {/* Fill-in display */}
-                {reviewQ?.type === 'fill-in' && (
-                  <div style={{
-                    padding: '16px', background: colors.semantic.successLight,
-                    borderRadius: '16px', border: `1px solid rgba(0,0,0,0.05)`,
-                    textAlign: 'center', flex: 1, boxShadow: '0 4px 12px rgba(0,0,0,0.02)'
-                  }}>
-                    <p style={{ fontSize: '11px', fontWeight: typography.weights.bold, color: colors.semantic.success, textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>
-                      Correct Answer
-                    </p>
-                    <p style={{ fontSize: '28px', fontWeight: typography.weights.bold, color: colors.semantic.success, letterSpacing: '-0.02em' }}>
-                      {reviewQ.correctAnswer}
-                    </p>
-                    {!isCorrect && userAnswer !== undefined && (
-                      <p style={{ fontSize: '14px', color: colors.semantic.error, marginTop: '8px', fontWeight: '500' }}>
-                        Your answer: <strong>{userAnswer}</strong>
-                      </p>
-                    )}
-                  </div>
-                )}
-                
-                {/* Empty block to pad bottom for the floating navigation */}
-                <div style={{ height: '80px', flexShrink: 0 }}></div>
-
-              </div>
-            )}
-
-            {/* RIGHT / EXPLANATION + AI TUTOR PANE */}
-            {(!isMobile || reviewTab !== 'question') && (
-              <div style={{
-                flex: '1.2 1 0%', minWidth: 0, display: 'flex', flexDirection: reviewRightPane === 'both' && windowWidth >= 1024 ? 'row' : 'column',
-                overflow: 'hidden', background: 'transparent', gap: isMobile ? 0 : '16px'
-              }}>
-                {/* Explanation */}
-                {(!isMobile && (reviewRightPane === 'explanation' || reviewRightPane === 'both')) || (isMobile && reviewTab === 'explanation') ? (
-                  <div style={{
-                    flex: reviewRightPane === 'both' ? 1.2 : 1, overflowY: 'auto', 
-                    padding: isMobile ? '16px' : '32px',
-                    background: colors.surface.white,
-                    borderRadius: isMobile ? 0 : '20px',
-                    boxShadow: isMobile ? 'none' : '0 4px 20px rgba(0,0,0,0.03)',
-                    border: isMobile ? 'none' : `1px solid rgba(0,0,0,0.06)`,
-                  }}>
-                    <div style={{
-                      display: 'flex', alignItems: 'center', gap: '12px',
-                      marginBottom: '24px', paddingBottom: '16px',
-                      borderBottom: `1px solid rgba(0,0,0,0.06)`,
-                    }}>
-                      <div style={{
-                        width: '36px', height: '36px', borderRadius: '12px',
-                        background: colors.semantic.info, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
-                      }}>
-                        <LightBulbIcon size={20} color={colors.text.inverse} />
-                      </div>
-                      <h3 style={{
-                        fontSize: typography.sizes.lg, fontWeight: typography.weights.bold,
-                        color: colors.text.primary, margin: 0, letterSpacing: '-0.01em'
-                      }}>
-                        Solution Explanation
-                      </h3>
-                    </div>
-                    {reviewQ?.explanation ? (
-                      <SolutionExplanation explanation={reviewQ.explanation} isCorrect={isCorrect} />
-                    ) : (
-                      <p style={{ color: colors.text.muted, fontStyle: 'italic', fontSize: typography.sizes.sm }}>
-                        No explanation available for this question.
-                      </p>
-                    )}
-                  </div>
-                ) : null}
-
-                {/* AI Tutor Chat. Review stays read-only post-trial, but the
-                    tutor burns tokens — locked accounts get a subscribe note
-                    instead (the server enforces the same rule with a 402). */}
-                {((!isMobile && (reviewRightPane === 'ai' || reviewRightPane === 'both')) || (isMobile && reviewTab === 'ai')) && tutorLocked ? (
-                  <div style={{
-                    flex: 1, display: 'flex', flexDirection: 'column',
-                    alignItems: 'center', justifyContent: 'center', gap: '12px',
-                    background: '#ffffff',
-                    borderRadius: isMobile ? 0 : '20px',
-                    border: isMobile ? 'none' : '1px solid rgba(0,0,0,0.06)',
-                    padding: '32px 24px', textAlign: 'center',
-                  }}>
-                    <p style={{ margin: 0, fontWeight: 700, color: colors.text.primary }}>
-                      The AI tutor is a Premium feature
-                    </p>
-                    <p style={{ margin: 0, fontSize: typography.sizes.sm, color: colors.text.muted, maxWidth: '320px' }}>
-                      Subscribe to ask the tutor about any question in this review.
-                    </p>
-                    {onSubscribe && (
-                      <button
-                        type="button"
-                        onClick={onSubscribe}
-                        style={{
-                          border: 'none', borderRadius: '10px', padding: '10px 18px',
-                          background: '#ea580c', color: '#ffffff', fontWeight: 700,
-                          fontSize: typography.sizes.sm, cursor: 'pointer',
-                        }}
-                      >
-                        See plans
-                      </button>
-                    )}
-                  </div>
-                ) : null}
-                {(!isMobile && (reviewRightPane === 'ai' || reviewRightPane === 'both')) || (isMobile && reviewTab === 'ai') ? (!tutorLocked && (
-                  <div style={{
-                    flex: 1, display: 'flex', flexDirection: 'column',
-                    background: 'transparent',
-                    borderRadius: isMobile ? 0 : '20px',
-                    boxShadow: isMobile ? 'none' : '0 4px 20px rgba(0,0,0,0.03)',
-                    border: isMobile ? 'none' : `1px solid rgba(0,0,0,0.06)`,
-                    overflow: 'hidden'
-                  }}>
-                    <AiTutorChat
-                        key={`review-tutor-${reviewModule}-${reviewQuestion}`}
-                        isOpen={true}
-                        onClose={() => {}}
-                        moduleId={test.id}
-                        lessonId={`review-${reviewModule}-${reviewQuestion}`}
-                        lessonTitle={`${test.title} - Question ${currentFlatIndex + 1}`}
-                        isVideoLesson={false}
-                        isPracticeQuestion={true}
-                        skillProgress={skillProgress}
-                        testDate={user?.testDate}
-                        user={user}
-                        practiceTestResults={practiceTestResults}
-                        practiceContext={{
-                          question: reviewQ?.question || '',
-                          choices: reviewQ?.choices || [],
-                          hint: reviewQ?.hint || '',
-                          answerRevealed: true,
-                          correctAnswer: reviewQ?.type === 'fill-in'
-                            ? reviewQ?.correctAnswer
-                            : reviewQ?.choices?.find(c => c.id === reviewQ?.correctAnswer)?.text || reviewQ?.correctAnswer,
-                          explanation: reviewQ?.explanation || '',
-                          // Revive trap-analysis coaching: what the student picked + whether right.
-                          isCorrect,
-                          selectedAnswer: userAnswer !== undefined
-                            ? (reviewQ?.type === 'fill-in' ? userAnswer : `${userAnswer}) ${userAnswerDisplay}`)
-                            : undefined,
-                          userAnswer,
-                          skills: reviewQ?.skills || (reviewQ?.skill ? [reviewQ.skill] : []),
-                          // R&W stimulus + classification (undefined for math items → tutor stays math)
-                          section: reviewQ?.section || 'math',
-                          domain: reviewQ?.domain,
-                          passage: reviewQ?.passage,
-                          passages: reviewQ?.passages,
-                          studentNotes: reviewQ?.studentNotes,
-                          questionTable: reviewQ?.questionTable
-                        }}
-                        embedded={true}
-                        headerCompact={true}
-                        standalone={false}
-                      />
-                  </div>
-                )) : null}
-              </div>
-            )}
+      );
+    }
+    if (diagnosticFinish.phase === 'error') {
+      return (
+        <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-slate-100)', padding: '24px' }}>
+          <div style={{ ...cardStyles.elevated, maxWidth: '440px', padding: '32px', textAlign: 'center' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', margin: '0 0 8px' }}>
+              We couldn't build your plan
+            </h2>
+            <p style={{ color: colors.text.secondary, fontSize: '15px', margin: '0 0 20px' }}>
+              Your answers are saved on this device. Check your connection and try again.
+            </p>
+            <Button onClick={runDiagnosticFinish}>Try again</Button>
           </div>
-
-          {/* ── FLOATING NAVIGATION PILL ────────────────────────────────── */}
-          <div style={{
-            position: 'absolute',
-            bottom: isMobile ? '24px' : '32px',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '16px',
-            background: 'rgba(255, 255, 255, 0.85)',
-            backdropFilter: 'saturate(180%) blur(24px)',
-            WebkitBackdropFilter: 'saturate(180%) blur(24px)',
-            padding: '8px 12px',
-            borderRadius: '100px', 
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.04)',
-            border: `1px solid rgba(255, 255, 255, 0.5)`,
-            zIndex: 100,
-          }}>
-            <button
-              onClick={() => handleReviewNav(-1)}
-              disabled={currentFlatIndex === 0}
-              style={{
-                padding: '10px',
-                background: currentFlatIndex === 0 ? 'transparent' : colors.surface.white,
-                color: currentFlatIndex === 0 ? 'rgba(0,0,0,0.2)' : colors.text.primary,
-                border: 'none',
-                borderRadius: '50%', 
-                width: '40px', height: '40px',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                cursor: currentFlatIndex === 0 ? 'not-allowed' : 'pointer',
-                transition: `all ${transitions.fast}`,
-                boxShadow: currentFlatIndex === 0 ? 'none' : '0 2px 8px rgba(0,0,0,0.06)',
-              }}
-            >
-              <svg width="18" height="18" viewBox="0 0 14 14" fill="none"><path d="M9 3L5 7l4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </button>
-            <div style={{ textAlign: 'center', minWidth: '60px' }}>
-              <span style={{ color: colors.text.primary, fontSize: '14px', fontWeight: typography.weights.bold }}>
-                {currentFlatIndex + 1}
-              </span>
-              <span style={{ color: colors.text.secondary, fontSize: '13px', fontWeight: '500' }}>
-                <span style={{ opacity: 0.5, margin: '0 4px' }}>/</span>{allQuestions.length}
-              </span>
-            </div>
-            <button
-              onClick={() => handleReviewNav(1)}
-              disabled={currentFlatIndex === allQuestions.length - 1}
-              style={{
-                padding: '10px',
-                background: currentFlatIndex === allQuestions.length - 1 ? 'transparent' : colors.text.primary,
-                color: currentFlatIndex === allQuestions.length - 1 ? 'rgba(0,0,0,0.2)' : colors.text.inverse,
-                border: 'none', 
-                borderRadius: '50%',
-                width: '40px', height: '40px',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                cursor: currentFlatIndex === allQuestions.length - 1 ? 'not-allowed' : 'pointer',
-                transition: `all ${transitions.fast}`,
-                boxShadow: currentFlatIndex === allQuestions.length - 1 ? 'none' : '0 4px 12px rgba(0,0,0,0.15)',
-              }}
-            >
-              <svg width="18" height="18" viewBox="0 0 14 14" fill="none"><path d="M5 3l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </button>
-          </div>
-
+        </div>
+      );
+    }
+    // 'finishing' (and the pre-effect frame): building diagnosis + plan —
+    // same composition as the old shell's finishing screen.
+    return (
+      <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-slate-100)' }}>
+        <div style={{ textAlign: 'center', padding: '24px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '24px', fontWeight: 700, color: colors.text.primary, margin: '0 0 8px' }}>
+            Building your study plan
+          </h2>
+          <p style={{ fontFamily: 'var(--font-ui)', color: colors.text.secondary, fontSize: '15px', margin: 0 }}>
+            Scoring your answers and mapping your focus areas...
+          </p>
         </div>
       </div>
     );
   }
   // Test completion screen - TestResults with direct navigation to Study Plan tab
-  if (testCompleted) {
+  if (testCompleted && !bluebookReview) {
     return (
       // App.jsx's #main-content locks to `height: 100vh; overflow: hidden`
       // while view === 'takingTest' (required so the active-test
@@ -2923,7 +2198,7 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
             aiDiagnosticState={aiDiagnosticState}
             onRetryAiDiagnostic={retryAiDiagnostic}
             onGoToStudyPlan={onGoToStudyPlan}
-            onBack={onBack}
+            onBack={postTestScreen === 'diagnosis' ? () => setPostTestScreen('summary') : onBack}
             user={user}
             saveStatus={resultSaveStatus}
             onRetrySave={onRetrySave}
@@ -2969,16 +2244,10 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
               setEliminatorMode(false);
               setDirectionsOpen(true); // fresh attempt starts at the section directions
             }}
-            onReview={() => {
-              setReviewMode(true);
-              setReviewModule(0);
-              setReviewQuestion(0);
-            }}
-            onReviewModule={(moduleIndex) => {
-              setReviewMode(true);
-              setReviewModule(moduleIndex);
-              setReviewQuestion(0);
-            }}
+            screen={postTestScreen}
+            backLabel={postTestScreen === 'diagnosis' ? 'Back to results' : 'Back to Tests'}
+            onViewDiagnosis={() => setPostTestScreen('diagnosis')}
+            onReview={() => openPostTestReview(0)}
             savedStudyPlan={savedStudyPlan}
           />
         </div>
@@ -2986,7 +2255,66 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
     );
   }
 
+  // Bluebook review navigation crosses module boundaries: Next on a module's
+  // last question opens the next module, Back on its first returns to the
+  // previous module's last question, and Next past the final module leaves.
+  const goToReviewPosition = (modIdx, qIdx) => {
+    setShowQuestionGridPopover(false);
+    setCurrentModule(modIdx);
+    setCurrentQuestion(qIdx);
+  };
+  const isLastReviewQuestion = currentModule === effectiveModules.length - 1 && currentQuestion === questions.length - 1;
+  const handleReviewNext = () => {
+    if (currentQuestion < questions.length - 1) { setCurrentQuestion(currentQuestion + 1); return; }
+    if (currentModule < effectiveModules.length - 1) { goToReviewPosition(currentModule + 1, 0); return; }
+    exitReview();
+  };
+  const handleReviewPrev = () => {
+    if (currentQuestion > 0) { setCurrentQuestion(currentQuestion - 1); return; }
+    if (currentModule > 0) {
+      const prevLen = effectiveModules[currentModule - 1]?.questions?.length || 1;
+      goToReviewPosition(currentModule - 1, prevLen - 1);
+    }
+  };
+  const reviewNextHandler = bluebookReview ? handleReviewNext : (currentQuestion === questions.length - 1 ? handleGoToReview : handleNext);
+  const reviewPrevHandler = bluebookReview ? handleReviewPrev : handlePrev;
+  const reviewPrevDisabled = bluebookReview ? (currentModule === 0 && currentQuestion === 0) : currentQuestion === 0;
+  const reviewNextLabel = bluebookReview && isLastReviewQuestion ? 'Done' : 'Next';
+  // Section-relative short label for the review module tabs (R&W M1 …).
+  const shortModuleLabel = (mod, idx) => {
+    const sameSection = effectiveModules.filter((m) => m.section === mod.section).length;
+    const n = effectiveModules.slice(0, idx).filter((m) => m.section === mod.section).length + 1;
+    const base = mod.section === 'math' ? 'Math' : 'R&W';
+    return sameSection > 1 ? `${base} M${n}` : base;
+  };
+
   const currentAnswer = answers[`${currentModule}-${currentQuestion}`];
+  const reviewAnswered = currentAnswer !== undefined && currentAnswer !== null && currentAnswer !== '';
+  const reviewIsCorrect = bluebookReview && question ? isAnswerCorrect(question, currentAnswer) : false;
+  // Module tabs for the Bluebook review: in the header on desktop, on their
+  // own scrollable strip under it on phones (the header row can't wrap).
+  const reviewModuleTabs = bluebookReview ? (
+    <div className="review-module-tabs" role="tablist" aria-label="Modules">
+      {effectiveModules.map((mod, modIdx) => {
+        const total = mod.questions.length;
+        const correct = mod.questions.filter((q, qIdx) => isAnswerCorrect(q, answers[`${modIdx}-${qIdx}`])).length;
+        const active = modIdx === currentModule;
+        return (
+          <button
+            key={modIdx}
+            type="button"
+            role="tab"
+            aria-selected={active}
+            className={`review-module-tab${active ? ' is-active' : ''}`}
+            onClick={() => goToReviewPosition(modIdx, 0)}
+          >
+            {shortModuleLabel(mod, modIdx)}{' '}
+            <span className="review-module-score">{correct}/{total}</span>
+          </button>
+        );
+      })}
+    </div>
+  ) : null;
   const isMarked = markedForReview.includes(currentQuestion);
 
   // Derived chrome for the SEVA Test redesign (presentational only).
@@ -2997,7 +2325,67 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
 
   // Shared answer block (choices or fill-in) — the timed test uses the
   // Bluebook always-visible cross-out (crossOut="bluebook"); the drill does not.
-  const answerBlock = question?.type === 'fill-in' ? (
+  const answerBlock = bluebookReview ? (
+    <>
+      {question?.type === 'fill-in' ? (
+        <div className="review-fillin">
+          <div className="review-fillin-row">
+            <span>Your answer</span>
+            <strong className={reviewAnswered ? (reviewIsCorrect ? 'is-correct' : 'is-wrong') : ''}>
+              {reviewAnswered ? String(currentAnswer) : 'Not answered'}
+            </strong>
+          </div>
+          <div className="review-fillin-row">
+            <span>Correct answer</span>
+            <strong className="is-correct">{String(question?.correctAnswer ?? '')}</strong>
+          </div>
+        </div>
+      ) : (
+        <AnswerChoiceList
+          choices={question?.choices || []}
+          selectedId={currentAnswer}
+          eliminatedIds={[]}
+          showResult
+          correctId={question?.correctAnswer ?? null}
+          onSelect={() => {}}
+          onToggleEliminate={() => {}}
+          crossOut="bluebook"
+          crossOutControls={false}
+        />
+      )}
+      <div className="review-verdict">
+        <span className={`review-verdict-pill ${reviewAnswered ? (reviewIsCorrect ? 'is-correct' : 'is-wrong') : 'is-skipped'}`}>
+          {reviewAnswered ? (reviewIsCorrect ? 'Correct' : 'Incorrect') : 'Not answered'}
+        </span>
+        <div className="review-verdict-actions">
+          <button
+            type="button"
+            className="rw-mark-toggle review-explain-toggle"
+            onClick={() => setReviewExplanationOpen((v) => !v)}
+            aria-expanded={reviewExplanationOpen}
+          >
+            {reviewExplanationOpen ? 'Hide explanation' : 'Show explanation'}
+          </button>
+          <button
+            type="button"
+            className="rw-mark-toggle review-tutor-toggle"
+            onClick={() => setReviewTutorOpen(true)}
+            aria-expanded={reviewTutorOpen}
+            title="Ask the AI tutor about this question"
+          >
+            Ask the tutor
+          </button>
+        </div>
+      </div>
+      {reviewExplanationOpen && (
+        <div className="review-explanation">
+          {question?.explanation
+            ? <SolutionExplanation explanation={question.explanation} isCorrect={reviewIsCorrect} />
+            : <p className="review-explanation-empty">No explanation available for this question.</p>}
+        </div>
+      )}
+    </>
+  ) : question?.type === 'fill-in' ? (
     <div style={{ marginTop: '8px' }}>
       <input
         type="text"
@@ -3041,13 +2429,19 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
   );
 
   return (
-    <div className="test-session-shell" data-section={isReadingWriting ? 'reading-writing' : 'math'}>
+    <div className={`test-session-shell${bluebookReview ? ' is-review' : ''}`} data-section={isReadingWriting ? 'reading-writing' : 'math'}>
+      {bluebookReview && showSnapshotNotice && (
+        <div role="status" className="review-notice">
+          <span>{reviewAnswersMissing ? ANSWERS_MISSING_NOTICE : SNAPSHOT_MISSING_NOTICE}</span>
+          <button type="button" className="review-notice-dismiss" onClick={dismissSnapshotNotice} aria-label="Dismiss notice">Dismiss</button>
+        </div>
+      )}
       {/* Header */}
       <div className="test-session-header">
         <div className="header-left">
-          <button onClick={handleRequestLeave} className="test-exit-btn" type="button">
+          <button onClick={bluebookReview ? exitReview : handleRequestLeave} className="test-exit-btn" type="button">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-            Exit
+            {bluebookReview ? reviewExitLabel : 'Exit'}
           </button>
           {!isMobile && (
             <>
@@ -3056,20 +2450,26 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
               <span className="test-name-tag">{test.title}</span>
             </>
           )}
-          <button className="test-top-btn" onClick={() => setDirectionsOpen(true)} type="button">
-            Directions
-          </button>
+          {!bluebookReview && (
+            <button className="test-top-btn" onClick={() => setDirectionsOpen(true)} type="button">
+              Directions
+            </button>
+          )}
         </div>
 
         <div className="header-center">
-          <div className="header-title">{module.title}</div>
-          <div className="header-subtitle">Question {currentQuestion + 1} of {questions.length}</div>
+          {bluebookReview && !isMobile ? reviewModuleTabs : (
+            <>
+              <div className="header-title">{module.title}</div>
+              <div className="header-subtitle">Question {currentQuestion + 1} of {questions.length}</div>
+            </>
+          )}
         </div>
 
         <div className="header-right">
           {/* Bluebook ABC answer-eliminator toggle — cross-out controls stay
               hidden until the tool is on; existing strikethroughs always show. */}
-          {question?.type !== 'fill-in' && (
+          {!bluebookReview && question?.type !== 'fill-in' && (
             <button
               className="test-top-btn"
               onClick={() => setEliminatorMode(v => !v)}
@@ -3117,14 +2517,14 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
               Reference
             </button>
           )}
-          <button onClick={handlePauseToggle} className="test-top-btn" type="button">
+          {!bluebookReview && (<button onClick={handlePauseToggle} className="test-top-btn" type="button">
             {isPaused ? (
               <><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg>Resume</>
             ) : (
               <><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>Pause</>
             )}
-          </button>
-          {isTimed ? (
+          </button>)}
+          {bluebookReview ? null : isTimed ? (
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <button
                 onClick={() => setShowTimer(!showTimer)}
@@ -3151,12 +2551,12 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
               {isMobile ? 'Untimed' : 'Untimed Mode'}
             </span>
           )}
-          {!isMobile && (
+          {!isMobile && !bluebookReview && (
             <button onClick={handleRequestEndTest} className="test-end-btn" type="button">
               End Test
             </button>
           )}
-          {isDevMode && (
+          {isDevMode && !bluebookReview && (
             <button
               onClick={handleDevAutoSubmit}
               className="btn-launch"
@@ -3170,80 +2570,6 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
           <div className="test-session-progress-fill" style={{ width: `${moduleProgressPct}%` }} />
         </div>
       </div>
-
-      {/* Module 2 variant switcher — surfaces on a section's Module 2 when the
-          test ships an Easy variant for that section (math and R&W each route
-          independently, like the official adaptive SAT). Active variant tile
-          is highlighted; the other is clickable. Click triggers
-          handleRequestM2Switch, which confirms first if there are answers to
-          discard. */}
-      {((currentModule === mathM2Index && !!test.module2Easy) || (currentModule === rwM2Index && !!test.rwModule2Easy)) && !testCompleted && !moduleCompleted && !onReviewPage && (
-        <div style={{
-          maxWidth: '1100px',
-          margin: '12px auto 0',
-          padding: '0 16px',
-          display: 'flex',
-          gap: '10px',
-          alignItems: 'stretch',
-        }}>
-          {[
-            {
-              variant: 'easy',
-              label: 'Module 2 (Easy)',
-              blurb: 'Eases up after Module 1. Confidence-builders, fewer traps.',
-            },
-            {
-              variant: 'hard',
-              label: 'Module 2 (Hard)',
-              blurb: 'Full College Board Module 2 Hard calibration.',
-            },
-          ].map(({ variant, label, blurb }) => {
-            const switcherSection = currentModule === rwM2Index ? 'rw' : 'math';
-            const active = (switcherSection === 'rw' ? rwModule2Variant : module2Variant) === variant;
-            const isRecommended = (switcherSection === 'rw' ? recommendedRwM2Variant : recommendedM2Variant) === variant;
-            return (
-              <button
-                key={variant}
-                type="button"
-                onClick={active ? undefined : () => handleRequestM2Switch(switcherSection, variant)}
-                aria-pressed={active}
-                disabled={active}
-                style={{
-                  flex: 1,
-                  padding: '10px 14px',
-                  textAlign: 'left',
-                  background: active ? 'rgba(234, 88, 12, 0.06)' : 'var(--color-white)',
-                  border: `2px solid ${active ? colors.focus : 'var(--color-slate-200)'}`,
-                  borderRadius: radius.md,
-                  cursor: active ? 'default' : 'pointer',
-                  transition: 'border-color 0.15s, background 0.15s',
-                  position: 'relative',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
-                  <span style={{ fontWeight: 600, fontSize: '14px', color: colors.text.primary }}>
-                    {label}
-                  </span>
-                  <span style={{
-                    fontSize: '11px',
-                    fontWeight: 600,
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.04em',
-                    color: active ? colors.focus : 'var(--color-slate-500)',
-                  }}>
-                    {active
-                      ? (isRecommended ? 'Active · Recommended' : 'Active')
-                      : `Switch to ${variant === 'easy' ? 'Easy' : 'Hard'} →`}
-                  </span>
-                </div>
-                <div style={{ fontSize: '12px', color: colors.text.secondary, marginTop: '2px', lineHeight: 1.4 }}>
-                  {blurb}
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      )}
 
       {/* Desktop Nav Strip — chip grid + answered ring (both Math and R&W). */}
       {!isMobile && !onReviewPage && (
@@ -3277,6 +2603,9 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
         </div>
       )}
 
+      {bluebookReview && isMobile && (
+        <div className="review-tabs-strip">{reviewModuleTabs}</div>
+      )}
       <div className="test-session-body">
         {/* Floating tools live OUTSIDE the workspace so entering the review
             page doesn't unmount them — unmounting the calculator destroys the
@@ -3400,21 +2729,35 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
                 )}
                 {question?.studentNotes && (
                   <div className="rw-passage">
+                    {/* Bluebook: the notes are highlightable like any passage;
+                        the GOAL line is NOT part of the notes — it leads the
+                        question stem in the right pane. */}
                     {question.studentNotes.intro && (
-                      <div style={{ marginBottom: '0.5rem' }}>{question.studentNotes.intro}</div>
+                      <div style={{ marginBottom: '0.5rem' }}>
+                        <HighlightablePassage
+                          text={question.studentNotes.intro}
+                          className="rw-note-segment"
+                          highlights={highlightsByKey[buildHighlightKey('notesIntro')] || []}
+                          hidden={highlightsHidden}
+                          onAddHighlight={(r) => handleAddHighlight('notesIntro', r)}
+                          onRemoveHighlight={(r) => handleRemoveHighlight('notesIntro', r)}
+                        />
+                      </div>
                     )}
                     <ul style={{ paddingLeft: '1.25rem', margin: '0.5rem 0' }}>
                       {question.studentNotes.bullets.map((b, i) => (
                         <li key={i} style={{ marginBottom: '0.25rem' }}>
-                          <MathText text={b} />
+                          <HighlightablePassage
+                            text={b}
+                            className="rw-note-segment"
+                            highlights={highlightsByKey[buildHighlightKey(`note${i}`)] || []}
+                            hidden={highlightsHidden}
+                            onAddHighlight={(r) => handleAddHighlight(`note${i}`, r)}
+                            onRemoveHighlight={(r) => handleRemoveHighlight(`note${i}`, r)}
+                          />
                         </li>
                       ))}
                     </ul>
-                    {question.studentNotes.goal && (
-                      <div style={{ marginTop: '0.5rem' }}>
-                        <MathText text={question.studentNotes.goal} />
-                      </div>
-                    )}
                   </div>
                 )}
                 {question?.diagram && (
@@ -3479,10 +2822,12 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
                 <tr>
                   {question.questionTable.headers.map((header, i) => (
                     <th key={i} style={{
-                      border: '1px solid var(--pt-line-strong)',
-                      padding: '8px 16px',
-                      background: 'var(--pt-surface-2)',
-                      fontWeight: '600'
+                      border: '1.5px solid #111',
+                      padding: '7px 16px',
+                      background: '#fff',
+                      fontWeight: 'bold',
+                      fontFamily: 'system-ui, -apple-system, sans-serif',
+                      fontSize: '14px',
                     }}>
                       <MathText text={header} />
                     </th>
@@ -3494,8 +2839,9 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
                   <tr key={i}>
                     {row.map((cell, j) => (
                       <td key={j} style={{
-                        border: '1px solid var(--pt-line-strong)',
-                        padding: '8px 16px',
+                        border: '1px solid #111',
+                        padding: '6px 16px',
+                        background: '#fff',
                         textAlign: 'center'
                       }}>
                         <MathText text={cell} />
@@ -3621,10 +2967,23 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
             <div className="rw-question-scroll">
               <div className="rw-stem-block">
                 <p className="rw-stem-text">
-                  {Array.isArray(question?.question) || (question?.question && typeof question.question === 'object')
-                    ? <QuestionRenderer content={question.question} />
-                    : <MathText text={question?.question} />
-                  }
+                  {(() => {
+                    // Bluebook: a notes question's GOAL sentence ("The student
+                    // wants to…") belongs to the QUESTION pane, leading the
+                    // stem as one paragraph — not to the notes in the left pane.
+                    const goal = question?.studentNotes?.goal || null;
+                    const stem = question?.question;
+                    const stemIsRich = Array.isArray(stem) || (stem && typeof stem === 'object');
+                    if (stemIsRich) {
+                      return (
+                        <>
+                          {goal && <><MathText text={goal} />{' '}</>}
+                          <QuestionRenderer content={stem} />
+                        </>
+                      );
+                    }
+                    return <MathText text={goal ? `${goal} ${stem || ''}`.trim() : stem} />;
+                  })()}
                 </p>
                 {question?.questionContinued && (
                   <p className="rw-stem-text">
@@ -3642,17 +3001,17 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
           <>
             {/* Math top controls */}
             <div className="test-controls-top">
-              <button onClick={handlePrev} disabled={currentQuestion === 0} className="bottom-nav-btn" type="button">
+              <button onClick={reviewPrevHandler} disabled={reviewPrevDisabled} className="bottom-nav-btn" type="button">
                 Previous
               </button>
               {/* Bluebook: the last question's Next goes to Check Your Work,
                   never straight out of the module. */}
               <button
                 className="bottom-nav-btn is-primary"
-                onClick={currentQuestion === questions.length - 1 ? handleGoToReview : handleNext}
+                onClick={reviewNextHandler}
                 type="button"
               >
-                Next Question
+                {bluebookReview ? reviewNextLabel : 'Next Question'}
               </button>
             </div>
 
@@ -3677,15 +3036,15 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
           and never be able to advance to the next module. */}
       {isReadingWriting && isMobile && (
         <div className="test-controls-top" style={{ marginTop: '1.5rem' }}>
-          <button onClick={handlePrev} disabled={currentQuestion === 0} className="bottom-nav-btn" type="button">
+          <button onClick={reviewPrevHandler} disabled={reviewPrevDisabled} className="bottom-nav-btn" type="button">
             Back
           </button>
           <button
             className="bottom-nav-btn is-primary"
-            onClick={currentQuestion === questions.length - 1 ? handleGoToReview : handleNext}
+            onClick={reviewNextHandler}
             type="button"
           >
-            Next
+            {reviewNextLabel}
           </button>
         </div>
       )}
@@ -3750,14 +3109,16 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
                   <div className="nav-legend-item"><div className="nav-legend-icon"></div><span>Unanswered</span></div>
                 </div>
                 {/* Bluebook: the navigator links to the Check Your Work page */}
-                <button
-                  className="bottom-nav-btn"
-                  style={{ width: '100%', marginTop: '0.75rem' }}
-                  onClick={() => { setShowQuestionGridPopover(false); handleGoToReview(); }}
-                  type="button"
-                >
-                  Go to Review Page
-                </button>
+                {!bluebookReview && (
+                  <button
+                    className="bottom-nav-btn"
+                    style={{ width: '100%', marginTop: '0.75rem' }}
+                    onClick={() => { setShowQuestionGridPopover(false); handleGoToReview(); }}
+                    type="button"
+                  >
+                    Go to Review Page
+                  </button>
+                )}
               </div>
             )}
             <button
@@ -3774,18 +3135,82 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
           <div className="bottom-bar-right">
             <button
               className="bottom-nav-btn"
-              onClick={handlePrev}
-              disabled={currentQuestion === 0}
+              onClick={reviewPrevHandler}
+              disabled={reviewPrevDisabled}
             >
               Back
             </button>
             <button
               className="bottom-nav-btn is-primary"
-              onClick={currentQuestion === questions.length - 1 ? handleGoToReview : handleNext}
+              onClick={reviewNextHandler}
             >
-              Next
+              {reviewNextLabel}
             </button>
           </div>
+        </div>
+      )}
+
+      {/* Bluebook review: AI tutor slide-over for the current question */}
+      {bluebookReview && reviewTutorOpen && (
+        <div className="review-tutor-panel" role="dialog" aria-label="AI tutor">
+          {/* The chat draws its own compact header + close; only the locked
+              note needs a close control of its own. */}
+          {tutorLocked ? (
+            <div className="review-tutor-locked">
+              <button type="button" className="review-tutor-close" onClick={() => setReviewTutorOpen(false)} aria-label="Close chat">
+                Close
+              </button>
+              <p className="review-tutor-locked-title">The AI tutor is a Premium feature</p>
+              <p className="review-tutor-locked-text">Subscribe to ask the tutor about any question in this review.</p>
+              {onSubscribe && (
+                <button type="button" className="bottom-nav-btn is-primary" onClick={onSubscribe}>See plans</button>
+              )}
+            </div>
+          ) : (
+            <div className="review-tutor-body">
+              <AiTutorChat
+                key={`bb-review-tutor-${currentModule}-${currentQuestion}`}
+                isOpen={true}
+                onClose={() => setReviewTutorOpen(false)}
+                moduleId={test.id}
+                lessonId={`review-${currentModule}-${currentQuestion}`}
+                lessonTitle={`${test.title} - Question ${effectiveModules.slice(0, currentModule).reduce((n, m) => n + (m.questions?.length || 0), 0) + currentQuestion + 1}`}
+                isVideoLesson={false}
+                isPracticeQuestion={true}
+                skillProgress={skillProgress}
+                testDate={user?.testDate}
+                user={user}
+                practiceTestResults={practiceTestResults}
+                practiceContext={{
+                  question: question?.question || '',
+                  choices: question?.choices || [],
+                  hint: question?.hint || '',
+                  answerRevealed: true,
+                  correctAnswer: question?.type === 'fill-in'
+                    ? question?.correctAnswer
+                    : question?.choices?.find((c) => c.id === question?.correctAnswer)?.text || question?.correctAnswer,
+                  explanation: question?.explanation || '',
+                  isCorrect: reviewIsCorrect,
+                  selectedAnswer: reviewAnswered
+                    ? (question?.type === 'fill-in'
+                      ? currentAnswer
+                      : `${currentAnswer}) ${question?.choices?.find((c) => c.id === currentAnswer)?.text || ''}`)
+                    : undefined,
+                  userAnswer: reviewAnswered ? currentAnswer : undefined,
+                  skills: question?.skills || (question?.skill ? [question.skill] : []),
+                  section: question?.section || (isReadingWriting ? 'reading-writing' : 'math'),
+                  domain: question?.domain,
+                  passage: question?.passage,
+                  passages: question?.passages,
+                  studentNotes: question?.studentNotes,
+                  questionTable: question?.questionTable,
+                }}
+                embedded={true}
+                headerCompact={true}
+                standalone={false}
+              />
+            </div>
+          )}
         </div>
       )}
 
@@ -3859,46 +3284,6 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
         )}
       </Modal>
 
-      {/* Module 2 variant switch confirmation — surfaces only when the user
-          has already answered something in M2 and clicks the other variant
-          tile above the Q grid. Confirming discards those answers and resets
-          M2 to question 1 (because the same key on the other variant points
-          at a different question). */}
-      <Modal
-        isOpen={!!pendingM2Switch}
-        onClose={handleCancelM2Switch}
-        title={pendingM2Switch
-          ? `Switch to Module 2 (${pendingM2Switch.newVariant === 'hard' ? 'Hard' : 'Easy'})?`
-          : ''}
-        footer={
-          <div style={{ display: 'flex', width: '100%', gap: '0.75rem' }}>
-            <Button onClick={handleCancelM2Switch} variant="secondary" style={{ flex: 1 }}>
-              Keep current
-            </Button>
-            <Button onClick={handleConfirmM2Switch} variant="destructive" style={{ flex: 1 }}>
-              Switch and restart
-            </Button>
-          </div>
-        }
-      >
-        <div style={{
-          width: '48px', height: '48px', borderRadius: '50%',
-          background: 'var(--color-warning-100)', color: 'var(--color-warning-600)',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          margin: '0 auto 1.25rem',
-        }}><WarningIcon size={24} /></div>
-        <p className="modal-text" style={{ textAlign: 'center' }}>
-          {pendingM2Switch && (
-            <>
-              Switching restarts Module 2 from question 1. Your{' '}
-              {pendingM2Switch.answerCount}{' '}
-              current {pendingM2Switch.answerCount === 1 ? 'answer' : 'answers'} on
-              {' '}Module 2 will be cleared.
-            </>
-          )}
-        </p>
-      </Modal>
-
       {/* Confirmation Modal */}
       <Modal
         isOpen={!!confirmAction}
@@ -3933,9 +3318,13 @@ const PracticeTest = ({ test, onBack, onComplete, onSaveResult, onSessionComplet
           }}><DocumentIcon size={24} /></div>
         )}
         <p className="modal-text" style={{ textAlign: 'center' }}>
-          {confirmAction === 'endTest' 
-            ? "Unanswered questions will be marked wrong. Your score will be calculated from what you've completed so far."
-            : "Your progress will be saved. You can resume this test later from the test list."
+          {test?.isDiagnostic
+            ? (confirmAction === 'endTest'
+              ? 'Your diagnosis and study plan are built from what you answer — ending early with under half answered saves your progress instead of building a thin plan.'
+              : 'Your progress is saved. Pick the diagnostic back up from Home whenever you are ready.')
+            : (confirmAction === 'endTest'
+              ? "Unanswered questions will be marked wrong. Your score will be calculated from what you've completed so far."
+              : 'Your progress will be saved. You can resume this test later from the test list.')
           }
         </p>
       </Modal>

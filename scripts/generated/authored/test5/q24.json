@@ -1,34 +1,34 @@
 {
-  "id": 524,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "Type designers often say that a text face succeeds when readers do not notice it at all—when the letters carry the words without calling attention to themselves. ______ a typeface meant for long passages of print usually has modest, even proportions and restrained contrast between its thick and thin strokes, features that let the eye move along a line without being snagged by any single letter.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "For example,"
-    },
-    {
-      "id": "B",
-      "text": "Instead,"
-    },
-    {
-      "id": "C",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "D",
-      "text": "However,"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"For example,\". The first sentence states a general principle—a good text face goes unnoticed—and the second gives a concrete instance of how that principle shows up in design: even proportions and restrained stroke contrast. \"For example,\" is the connector for moving from a general claim to an illustration of it. \"Instead,\" and \"However,\" both signal contrast, but the second sentence supports rather than opposes the first. \"Nevertheless,\" signals a concession, which the relation does not call for.",
-  "_meta": {
-    "anchor": "Typography; a text face that goes unnoticed; general-to-instance transition"
+ "id": 524,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "Young children's grammatical mistakes are often evidence of learning rather than of its absence, since many errors come from applying a general rule to a word that happens to be an exception. ______ a three-year-old who says \"goed\" instead of \"went\" has correctly extracted the regular past-tense pattern of English and has simply extended it to a verb that refuses the rule.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "For example,"
+  },
+  {
+   "id": "B",
+   "text": "However,"
+  },
+  {
+   "id": "C",
+   "text": "In other words,"
+  },
+  {
+   "id": "D",
+   "text": "Meanwhile,"
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The first sentence makes a general claim about children's errors, and the second offers a specific illustration — the child who says \"goed\" — so an exemplifying transition is required.\n\n**The Full Solution:**\n- The opening sentence generalizes: many errors reflect a rule applied to an exceptional word.\n- The second sentence supplies one concrete case fitting that description exactly: \"goed\" applies the regular past-tense rule to the irregular verb \"go.\"\n- The relationship of general claim to particular instance is signaled by \"For example.\"\n\n**Why the other choices are wrong:**\n- B: \"However\" signals opposition, but the \"goed\" case supports the claim instead of countering it.\n- C: \"In other words\" introduces a restatement of the same content, whereas this sentence narrows from a generalization to one specific child's error.\n- D: \"Meanwhile\" sets two events side by side in time, a relation that plays no part here.",
+ "_meta": {
+  "anchor": "overregularization errors ('goed'); general-claim-to-example transition"
+ }
 }

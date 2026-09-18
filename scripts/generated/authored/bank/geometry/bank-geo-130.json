@@ -1,0 +1,6 @@
+{
+  "id": "bank-geo-130",
+  "question": "The two legs of a right triangle have lengths in the ratio $5$ to $12$, and the area of the triangle is $750$ square inches. What is the length, in inches, of the hypotenuse?",
+  "correctAnswer": "65",
+  "explanation": "**SAT Pattern: Pythagorean Theorem (3-4-5 Family)**\n\n**The correct answer is $65$.**\n\n**The Fast Way (~30s):** With legs $5k$ and $12k$, the area is $30k^2 = 750$, so $k = 5$ and the hypotenuse is $13(5) = 65$.\n\n**The Full Solution:**\nStep 1: Write the legs as $5k$ and $12k$. The area of a right triangle is half the product of its legs: $\\frac{1}{2}(5k)(12k) = 30k^2$.\nStep 2: $30k^2 = 750$ gives $k^2 = 25$ and $k = 5$, so the legs are $25$ and $60$.\nStep 3: Legs in the ratio $5 : 12$ give a hypotenuse of $13k = 65$. Check: $25^2 + 60^2 = 625 + 3{,}600 = 4{,}225 = 65^2$. $\\checkmark$\n\n**Common Mistakes:**\n* Forgetting the factor $\\frac{1}{2}$: $60k^2 = 750$ gives $k \\approx 3.54$, a non-integer that signals the halving was skipped.\n* Adding the legs, $25 + 60 = 85$, instead of using the Pythagorean theorem.\n* Gridding a leg ($60$) or the scale factor ($5$) instead of the hypotenuse.\n\n**Test Day Takeaway:** Ratio plus area is a two-step: build the sides as multiples of $k$, use the area to pin $k$, then apply the triple."
+}

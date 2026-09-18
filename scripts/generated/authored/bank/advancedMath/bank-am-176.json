@@ -1,0 +1,50 @@
+{
+ "id": "bank-am-176",
+ "question": "In the figure, the parabola $y = f(x)$ carries marks at its vertex and at both of its $x$-intercepts, and no other point on the graph is labeled. Taking $g(x) = 2x - 6$ for every real $x$, what is the value of $f(g(5))$?",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    1,
+    -4
+   ],
+   "a": 1,
+   "showPoints": [
+    [
+     -1,
+     0
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$5$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports the minimum value of $f$, read off the marked vertex, instead of $f(4)$",
+  "B": "reports the $x$-coordinate of the vertex rather than a value of $f$",
+  "C": "stops at the inner value $g(5) = 4$ without applying $f$"
+ },
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** $g(5) = 4$, and the graph gives $f(x) = (x - 1)^2 - 4$, so $f(4) = 9 - 4 = 5$.\n\n**The Full Solution:**\nStep 1: Evaluate the inner function: $g(5) = 2(5) - 6 = 4$.\nStep 2: The marked vertex is $(1, -4)$ and the marked intercepts are $(-1, 0)$ and $(3, 0)$, which fit $f(x) = (x - 1)^2 - 4$.\nStep 3: Then $f(4) = (4 - 1)^2 - 4 = 9 - 4 = 5$. Check: the intercepts confirm the rule, since $f(3) = 4 - 4 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-4$): the lowest value the graph reaches, which is $f(1)$, not $f(4)$.\n* Choice B ($1$): the input at which the minimum occurs, a coordinate of the wrong axis.\n* Choice C ($4$): the output of $g$, the halfway result.\n\n**Test Day Takeaway:** Read a parabola's rule from its marked vertex and one other marked point, then substitute the inner function's output — not the original input."
+}

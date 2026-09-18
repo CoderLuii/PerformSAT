@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 1,
- "passage": "When the architect Michael Ventris announced in 1952 that the Bronze Age script known as Linear B recorded an early form of Greek, he overturned decades of assumptions about the language of the tablets. By the time his analysis was published, several rival proposals about the script's language ______ already, but none had accounted for the patterns of word endings that Ventris's grid made visible.",
+ "passage": "For most of the twentieth century, United States federal courts had no uniform standard for interpreters; judges simply appointed bilingual bystanders as the need arose. That changed in 1978, when Congress ______ the Court Interpreters Act, requiring certified interpreters in federal proceedings conducted in languages other than English. The first certification examination, offered two years later, proved so demanding that fewer than one candidate in twenty passed it.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "circulated"
+   "text": "passes"
   },
   {
    "id": "B",
-   "text": "had circulated"
+   "text": "passed"
   },
   {
    "id": "C",
-   "text": "are circulating"
+   "text": "will pass"
   },
   {
    "id": "D",
-   "text": "have circulated"
+   "text": "had been passing"
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The sentence describes one past event (the publication of Ventris's analysis) and an earlier past situation (rival proposals already in circulation before that publication). The past perfect \"had circulated\" correctly places the rival proposals before the later past moment marked by \"By the time his analysis was published.\" Choice A uses the simple past, which fails to mark the earlier action as prior. Choices C and D shift into present and present-perfect forms that clash with the clearly past time frame."
+ "explanation": "**Choice B is correct.** The sentence reports a completed event at a stated past moment, \"in 1978,\" so the verb belongs in the simple past: Congress passed the Court Interpreters Act.\n\n**The Full Solution:**\n- The surrounding narrative is anchored in the past: courts \"had\" no standard, judges \"appointed\" bystanders, the examination later \"proved\" demanding.\n- \"That changed in 1978, when...\" fixes a single, finished past action, and the simple past \"passed\" is the conventional form for it.\n\n**Why the other choices are wrong:**\n- A: The present tense \"passes\" conflicts with the past time marker \"in 1978\" and with the passage's past-tense narration.\n- C: The future \"will pass\" is impossible for an event the text dates to 1978 and treats as already done.\n- D: The past perfect progressive \"had been passing\" describes an ongoing action before another past moment, but enacting a single statute is a one-time completed act.",
+ "_meta": {
+  "rule": "simple past for a dated, completed past action",
+  "distractors": {
+   "A": "present tense vs. past marker",
+   "C": "future tense vs. past event",
+   "D": "past perfect progressive for a one-time act"
+  }
+ }
 }

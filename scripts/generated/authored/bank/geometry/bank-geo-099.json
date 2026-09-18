@@ -1,0 +1,53 @@
+{
+ "question": "The table gives equations modeling the edge of the head of four timpani in the $xy$-plane, where $x$ and $y$ are in centimeters. What is the radius, in centimeters, of the head of drum $T_2$?",
+ "questionTable": {
+  "headers": [
+   "Drum",
+   "Equation of the head's edge"
+  ],
+  "rows": [
+   [
+    "$T_1$",
+    "$(x - 4)^2 + (y + 7)^2 = 81$"
+   ],
+   [
+    "$T_2$",
+    "$(x + 5)^2 + (y - 2)^2 = 64$"
+   ],
+   [
+    "$T_3$",
+    "$(x - 1)^2 + (y + 3)^2 = 100$"
+   ],
+   [
+    "$T_4$",
+    "$(x + 6)^2 + (y + 1)^2 = 49$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$64$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reads the 5 inside (x + 5) squared as the radius",
+  "C": "reports the diameter, 2 times 8",
+  "D": "reports r squared, 64, without taking the square root"
+ },
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** In $(x - h)^2 + (y - k)^2 = r^2$ the right side is $r^2$, so drum $T_2$ has $r = \\sqrt{64} = 8$ centimeters.\n\n**The Full Solution:**\nStep 1: Read the row for $T_2$: $(x + 5)^2 + (y - 2)^2 = 64$.\nStep 2: Match it to $(x - h)^2 + (y - k)^2 = r^2$, so $h = -5$, $k = 2$, and $r^2 = 64$.\nStep 3: Take the positive square root: $r = 8$ centimeters. Check: the point $(3, 2)$ satisfies $(3 + 5)^2 + 0 = 64$, and it is $8$ centimeters from the center $(-5, 2)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): grabs the $5$ inside the parentheses, which locates the center, not the rim.\n* Choice C ($16$): reports the diameter, $2r$, instead of the radius.\n* Choice D ($64$): reports $r^2$ directly off the right side of the equation.\n\n**Test Day Takeaway:** Numbers inside the parentheses set the center; the number alone on the right is $r^2$.",
+ "id": "bank-geo-099"
+}

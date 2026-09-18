@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-372",
+  "question": "A savings certificate earns simple interest at an annual rate of $4\\%$. The certificate is opened with a deposit of $\\$2{,}500$, and after $t$ years the balance is $\\$2{,}800$. What is the value of $t$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.12$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$28$"
+    },
+    {
+      "id": "D",
+      "text": "$75$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the interest by the principal, $\\frac{300}{2500}$, which gives $rt$, not $t$",
+    "C": "divides the whole balance, rather than the interest, by the $\\$100$ earned each year",
+    "D": "divides the interest by $4$, the percent, instead of by the $\\$100$ of interest earned each year"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Simple Interest**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The interest is $2800 - 2500 = 300$ dollars, and the account earns $2500(0.04) = 100$ dollars per year, so $t = \\frac{300}{100} = 3$.\n\n**The Full Solution:**\nStep 1: Separate the interest from the balance: $I = 2800 - 2500 = 300$ dollars.\nStep 2: One year of simple interest is $2500(0.04) = 100$ dollars, and that amount repeats every year.\nStep 3: $t = \\frac{300}{100} = 3$ years. Check: $2500 + 100(3) = 2{,}800$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.12$): divides the interest by the principal, $\\frac{300}{2500}$, which gives $rt$, not $t$\n* Choice C ($28$): divides the whole balance, rather than the interest, by the $\\$100$ earned each year\n* Choice D ($75$): divides the interest by $4$, the percent, instead of by the $\\$100$ of interest earned each year\n\n**Test Day Takeaway:** Subtract the principal before you divide. Only the interest tells you how many years have passed."
+}

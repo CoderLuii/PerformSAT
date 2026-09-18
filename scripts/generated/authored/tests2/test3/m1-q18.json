@@ -1,0 +1,41 @@
+{
+ "id": 18,
+ "question": "The figure shows two diagonal braces of a scaffold panel crossing at one point, with three of the four angles formed there marked in degrees. The constants $x$ and $y$ appear in those markings. What is the value of $y$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "(7x + 12)°",
+    "(5x + 24)°",
+    "y°",
+    ""
+   ],
+   "lineLabels": []
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$54$"
+  },
+  {
+   "id": "C",
+   "text": "$84$"
+  },
+  {
+   "id": "D",
+   "text": "$96$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports x = 12 instead of the angle measure y",
+  "B": "sets the two labeled expressions equal, treating adjacent angles as vertical angles, and gets 54",
+  "C": "reports the measure of the (5x + 24) degree angle, which is adjacent to y rather than equal to it"
+ },
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The two labeled expressions sit side by side along one straight brace, so $(7x + 12) + (5x + 24) = 180$, giving $x = 12$. Then $y$ is vertical to the $(7x + 12)^\\circ$ angle, so $y = 7(12) + 12 = 96$.\n\n**The Full Solution:**\nStep 1: The $(7x + 12)^\\circ$ and $(5x + 24)^\\circ$ angles are adjacent angles along one of the braces, so together they form a straight angle: $(7x + 12) + (5x + 24) = 180$.\nStep 2: Combine and solve: $12x + 36 = 180$, so $12x = 144$ and $x = 12$. The two angles then measure $7(12) + 12 = 96$ degrees and $5(12) + 24 = 84$ degrees, and $96 + 84 = 180$ ✓\nStep 3: The angle marked $y^\\circ$ is across the crossing point from the $(7x + 12)^\\circ$ angle, so the two are vertical angles and have equal measures: $y = 96$. Check: the four angles are $96$, $84$, $96$, and $84$, and they total $360$ degrees ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): this is $x$, the value found in the middle of the work. The question asks for the angle measure $y$, which still requires substituting.\n* Choice B ($54$): setting $7x + 12 = 5x + 24$ treats the two labeled angles as vertical angles. They share a side, so they are supplementary instead, and this shortcut gives $x = 6$ and $54$ degrees.\n* Choice C ($84$): this is the measure of the $(5x + 24)^\\circ$ angle. That angle is adjacent to $y^\\circ$, so the two add to $180$ rather than being equal.\n\n**Test Day Takeaway:** At a crossing, first decide whether the two labeled angles share a side or sit across from each other — that choice decides between summing to $180$ and setting equal."
+}

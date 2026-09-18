@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-192",
+  "question": "The mass of a scaled-up batch of dough is $16\\%$ greater than the mass of the original batch. If the original batch has a mass of $75$ grams, what is the mass, in grams, of the scaled-up batch?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12$"
+    },
+    {
+      "id": "B",
+      "text": "$87$"
+    },
+    {
+      "id": "C",
+      "text": "$91$"
+    },
+    {
+      "id": "D",
+      "text": "$120$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports only the 16% increase (0.16 × 75)",
+    "C": "adds 16 grams instead of 16%",
+    "D": "multiplies by 1.6 instead of 1.16"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** \"$16\\%$ greater\" means multiply by $1.16$: $1.16 \\times 75 = 87$.\n\n**The Full Solution:**\nStep 1: The increase is $16\\%$ of $75$: $0.16 \\times 75 = 12$ grams.\nStep 2: Add the increase to the original: $75 + 12 = 87$ grams.\nStep 3: Check with one factor: $75 \\times 1.16 = 87$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): reports only the increase, $0.16 \\times 75$, not the new mass.\n* Choice C ($91$): adds $16$ grams instead of $16\\%$ of $75$ grams.\n* Choice D ($120$): multiplies by $1.6$ instead of $1.16$, a $60\\%$ increase.\n\n**Test Day Takeaway:** \"$p\\%$ greater than\" a value is $\\left(1 + \\frac{p}{100}\\right)$ times that value — one multiplication, with the $1$ carrying the original amount."
+}

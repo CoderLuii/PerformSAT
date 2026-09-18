@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-113",
+  "question": "In a cycling club, $40\\%$ of the members did not renew their membership this year. If $900$ members did renew, how many members did the club have?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$540$"
+    },
+    {
+      "id": "B",
+      "text": "$1{,}260$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}500$"
+    },
+    {
+      "id": "D",
+      "text": "$2{,}250$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "900(0.6) = 540, multiplying by the renewal rate instead of dividing",
+    "B": "900(1.4) = 1,260, adding 40% to the renewals",
+    "D": "900/0.4 = 2,250, dividing by the rate of the members who did not renew"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The $900$ renewals are the other $60\\%$, so the club had $\\dfrac{900}{0.60} = 1{,}500$ members.\n\n**The Full Solution:**\nStep 1: If $40\\%$ did not renew, then $100\\% - 40\\% = 60\\%$ did renew.\nStep 2: Let $m$ be the number of members. Then $0.60m = 900$.\nStep 3: $m = \\dfrac{900}{0.60} = 1{,}500$ members.\nCheck: $40\\%$ of $1{,}500$ is $600$, and $1{,}500 - 600 = 900$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($540$): This computes $900(0.60)$, multiplying by the rate instead of dividing by it.\n* Choice B ($1{,}260$): This computes $900(1.40)$, as if the renewals were to be increased by $40\\%$.\n* Choice D ($2{,}250$): This divides by $0.40$, the rate for the members who did not renew, rather than by the rate that matches the $900$.\n\n**Test Day Takeaway:** Match the count you are given to the percent that describes it; here $900$ is $60\\%$, not $40\\%$."
+}

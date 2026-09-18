@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
+  "module": 1,
+  "passage": "Rather than judging a soccer team by its goals alone, analysts now rate the quality of every scoring chance it creates. By comparing each shot's distance, angle, and buildup with thousands of similar attempts from past matches, they can ______ how often a chance of that kind ends in a goal — and thus whether a team's results reflect its play or merely its luck.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "deliberate"
+      "text": "guarantee"
     },
     {
       "id": "B",
-      "text": "coincidental"
+      "text": "estimate"
     },
     {
       "id": "C",
-      "text": "audible"
+      "text": "dictate"
     },
     {
       "id": "D",
-      "text": "permanent"
+      "text": "recall"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. Because the whale populations never meet yet take up similar new phrases in the same seasons, the writer reasons that the parallel changes are unlikely to be \"coincidental\" — a matter of chance — and must instead be carried between groups. \"Deliberate\" is tempting but the passage attributes the parallels to transmission rather than to intent; \"audible\" and \"permanent\" describe the songs themselves, not the relationship between the two groups' changes.",
-  "passage": "The songs of humpback whales change gradually from year to year, and populations on opposite sides of an ocean basin sometimes take up strikingly similar new phrases within the same few seasons. Because these groups are separated by thousands of miles and never meet, biologists argue that the parallel changes are unlikely to be ______: some channel of cultural transmission, they reason, must be carrying the new material from one population to another.",
+  "explanation": "**Choice B is correct.** Comparing a shot with thousands of similar past attempts yields an approximate rate, and \"estimate\" is the word for a judgment of that kind.\n\n**The Full Solution:**\n- The analysts' method is statistical: match a chance against a large sample of similar chances.\n- What that produces is a likelihood — \"how often a chance of that kind ends in a goal\" — not a certainty.\n- \"Estimate\" expresses exactly this: a reasoned approximation drawn from data.\n\n**Why the other choices are wrong:**\n- A: \"Guarantee\" promises an outcome, but past frequencies cannot promise what any one shot will do.\n- C: \"Dictate\" means to command an outcome; analysts measure chances, they do not control them.\n- D: \"Recall\" means to remember, but the analysts are computing a new figure, not retrieving an old one.",
   "_meta": {
-    "anchor": "bioacoustics — cultural transmission of humpback whale song"
-  },
-  "module": 1
+    "anchor": "soccer analytics — rating scoring chances against historical attempts"
+  }
 }

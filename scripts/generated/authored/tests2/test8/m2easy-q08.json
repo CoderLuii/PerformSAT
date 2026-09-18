@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "Two dye batches are recorded as $4x + 6y = 14$ and $ax + 15y = 35$, where $x$ is grams of pigment, $y$ is grams of binder, and $a$ is a constant. Any mixture meeting the first record automatically meets the second. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.6$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$21$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 4 by the scale factor 2.5 instead of multiplying, giving 1.6",
+  "C": "adds the difference of the y-coefficients, 15 - 6 = 9, to 4 instead of scaling",
+  "D": "uses the difference of the constants, 35 - 14 = 21, as the coefficient"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The second record must be a multiple of the first. Since $\\frac{15}{6} = 2.5$, the whole equation is scaled by $2.5$, so $a = 4(2.5) = 10$.\n\n**The Full Solution:**\nStep 1: If every mixture satisfying the first equation also satisfies the second, the two equations describe the same line, so one is a constant multiple of the other.\nStep 2: Find the multiplier from a pair of terms that are both known. The $y$-terms give $\\frac{15}{6} = 2.5$, and the constants agree: $\\frac{35}{14} = 2.5$.\nStep 3: The same multiplier must apply to the $x$-terms, so $a = 4(2.5) = 10$. Check: multiplying $4x + 6y = 14$ by $2.5$ gives exactly $10x + 15y = 35$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.6$): divides by the multiplier instead of multiplying, computing $\\frac{4}{2.5}$. That would shrink the first equation, not stretch it into the second.\n* Choice C ($13$): adds the gap between the $y$-coefficients, $15 - 6 = 9$, to $4$. Same-line means every term is multiplied by one number, not increased by one number.\n* Choice D ($21$): uses $35 - 14$, the gap between the constants, as the coefficient — again treating a scaling as a difference.\n\n**Test Day Takeaway:** Infinitely many solutions means one equation is a scalar multiple of the other. Compute the multiplier from the two terms you fully know, verify it on the constants, then apply it to the unknown coefficient."
+}

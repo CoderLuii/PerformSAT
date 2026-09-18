@@ -33,7 +33,7 @@ const LearnWorkspace = ({
     prevLessonId.current = activeLessonId;
   }, [activeLessonId]);
 
-  const { currentIndex, prevLesson, nextLesson } = useMemo(() => {
+  const { prevLesson, nextLesson } = useMemo(() => {
     const idx = moduleLessons.findIndex(l => l.id === activeLessonId);
     return {
       currentIndex: idx,

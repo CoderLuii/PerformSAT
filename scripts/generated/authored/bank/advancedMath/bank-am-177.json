@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-177",
+  "question": "A treatment plant's dosing line adds chlorine according to $c(V)=0.4V+15$, where $c(V)$ is the mass, in milligrams, added to $V$ liters of water, and the volume treated after $t$ minutes is $V(t)=25t$. What is the value of $c(V(6))$?",
+  "correctAnswer": "75",
+  "explanation": "**SAT Pattern: Function Composition**\n\n**The correct answer is $75$.**\n\n**The Fast Way (~20s):** Work from the inside out: $V(6)=150$ liters, and $0.4(150)+15=75$ milligrams.\n\n**The Full Solution:**\nStep 1: The inner function gives the volume treated in six minutes: $V(6)=25(6)=150$ liters.\nStep 2: That volume is the input of $c$, so $c(150)=0.4(150)+15$.\nStep 3: $0.4(150)=60$, so $c(150)=60+15=75$ milligrams. Check: 60 milligrams for the volume plus the fixed 15 milligrams is 75 ✓\n\n**Common Mistakes:** Substituting $t=6$ directly into $c$ gives $0.4(6)+15=17.4$, the mass for 6 liters rather than for 6 minutes. Composing in the opposite order gives $V(c(6))=25(17.4)=435$. Dropping the constant term gives only $0.4(150)=60$.\n\n**Test Day Takeaway:** In a composition the inner function's output is the outer function's input, so evaluate the inside first and carry its units forward."
+}

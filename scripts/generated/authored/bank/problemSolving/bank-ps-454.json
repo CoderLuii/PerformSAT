@@ -1,0 +1,56 @@
+{
+ "id": "bank-ps-454",
+ "question": "The bar chart groups the finishing times, in seconds, of the $20$ skiers in heat 1 of a slalom race. The $20$ skiers in heat 2 had a mean finishing time of $53.0$ seconds. Based only on the chart, what is the smallest possible value of the difference between the heat 2 mean and the heat 1 mean?",
+ "diagram": {
+  "type": "barChart",
+  "params": {
+   "data": [
+    {
+     "label": "40-44",
+     "value": 3
+    },
+    {
+     "label": "45-49",
+     "value": 6
+    },
+    {
+     "label": "50-54",
+     "value": 8
+    },
+    {
+     "label": "55-59",
+     "value": 3
+    }
+   ],
+   "xAxisLabel": "Finishing time (seconds)",
+   "yAxisLabel": "Number of skiers",
+   "yMax": 10,
+   "yStep": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.25$"
+  },
+  {
+   "id": "B",
+   "text": "$3.25$"
+  },
+  {
+   "id": "C",
+   "text": "$4.00$"
+  },
+  {
+   "id": "D",
+   "text": "$5.25$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "uses interval midpoints for heat 1, giving a mean of $49.75$ and a difference of $3.25$",
+  "C": "reports the spread of possible heat 1 means, $51.75 - 47.75 = 4.00$, rather than a difference from heat 2",
+  "D": "uses the smallest possible heat 1 mean, $47.75$, which makes the difference as large as possible"
+ },
+ "explanation": "**SAT Pattern: Grouped Data — Smallest Possible Mean Difference**\n\n**Choice A is correct.** Heat 1's mean is largest when every skier finishes at the top of its interval, giving $51.75$ seconds, so the smallest possible difference is $53.00-51.75=1.25$ seconds.\n\n**The Fast Way (~70s):** To shrink the gap below $53.00$, push heat 1's mean as high as the chart allows: $\\frac{3(44) + 6(49) + 8(54) + 3(59)}{20} = 51.75$, and $53.00 - 51.75 = 1.25$.\n\n**The Full Solution:**\n\nStep 1: Read the chart. Heat 1 has $3$ skiers in $40$-$44$, $6$ in $45$-$49$, $8$ in $50$-$54$, and $3$ in $55$-$59$, a total of $20$ skiers.\n\nStep 2: Decide which extreme makes the difference small. The heat 2 mean of $53.00$ seconds exceeds every possible heat 1 mean, so the difference shrinks as heat 1's mean grows. Assign each skier the greatest time its interval allows: $\\frac{3(44) + 6(49) + 8(54) + 3(59)}{20} = \\frac{1{,}035}{20} = 51.75$ seconds.\n\nStep 3: Subtract: $53.00 - 51.75 = 1.25$ seconds. Check: the least possible heat 1 mean is $\\frac{3(40) + 6(45) + 8(50) + 3(55)}{20} = 47.75$ seconds, so every possible heat 1 mean lies between $47.75$ and $51.75$, and $53.00$ is above all of them.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($3.25$): uses midpoints, $\\frac{3(42) + 6(47) + 8(52) + 3(57)}{20} = 49.75$. Midpoints give a typical mean, not the extreme the question asks for.\n* Choice C ($4.00$): reports $51.75-47.75$, the width of the range of possible heat 1 means, rather than a comparison with heat 2.\n* Choice D ($5.25$): uses the smallest possible heat 1 mean, $47.75$, which produces the largest difference, not the smallest.\n\n**Test Day Takeaway:** With grouped data, a smallest-possible question is answered at an endpoint -- decide which end of each interval pushes the answer the direction you need before averaging."
+}

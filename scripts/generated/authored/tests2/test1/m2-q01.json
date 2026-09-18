@@ -1,0 +1,43 @@
+{
+  "id": 1,
+  "question": "In the figure shown, two straight lines cross at a single point. The measure of one of the four angles formed is $(5x - 12)$ degrees, the measure of the angle opposite it is $(3x + 28)$ degrees, and the measure of an angle adjacent to both of these is $y$ degrees. What is the value of $y$?",
+  "diagram": {
+    "type": "intersectingLines",
+    "params": {
+      "angles": [
+        "(5x - 12)°",
+        "y°",
+        "(3x + 28)°"
+      ],
+      "lineLabels": [
+        "l",
+        "m"
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20$"
+    },
+    {
+      "id": "B",
+      "text": "$88$"
+    },
+    {
+      "id": "C",
+      "text": "$92$"
+    },
+    {
+      "id": "D",
+      "text": "$152$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports x = 20 instead of the angle measure the question asks for",
+    "B": "gives the opposite angle itself, 5(20) - 12 = 88, rather than its supplement y",
+    "D": "solves 5x - 12 = 3x + 28 as 2x = 28 - 12 = 16, so x = 8, the angle is 28, and y = 152"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Opposite angles at a crossing are equal, so $5x - 12 = 3x + 28$ gives $x = 20$ and an angle of $88^\\circ$. The adjacent angle $y$ is its supplement: $180 - 88 = 92$.\n\n**The Full Solution:**\nStep 1: The angles measuring $(5x - 12)^\\circ$ and $(3x + 28)^\\circ$ lie on opposite sides of the crossing point, so they are vertical angles and therefore congruent: $5x - 12 = 3x + 28$.\nStep 2: Subtract $3x$ from both sides to get $2x - 12 = 28$, then add $12$ to get $2x = 40$, so $x = 20$. Substituting back, that angle measures $5(20) - 12 = 88$ degrees.\nStep 3: The angle measuring $y$ degrees shares a side with the $88^\\circ$ angle and the two together form a straight line, so $y + 88 = 180$ and $y = 92$. Check: the four angles are $88$, $92$, $88$, and $92$, and they total $360$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): this is $x$, the value of the variable, not an angle measure. Solving the equation is only the first of two steps.\n* Choice B ($88$): this is the measure of the two vertical angles themselves. The angle marked $y$ degrees is adjacent to them, so it is the supplement, not the equal partner.\n* Choice D ($152$): comes from moving the $-12$ the wrong way and solving $2x = 28 - 12 = 16$. That gives $x = 8$, an angle of $28^\\circ$, and $y = 180 - 28 = 152$.\n\n**Test Day Takeaway:** At a crossing of two lines, mark which pair is vertical (equal measures) and which pair is linear (measures summing to $180^\\circ$) before writing any equation. Most misses on this pattern land exactly one supplement away from the answer."
+}

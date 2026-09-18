@@ -1,0 +1,60 @@
+{
+ "id": 1,
+ "question": "Triangle $PQR$ is similar to triangle $STU$, where $P$, $Q$, and $R$ correspond to $S$, $T$, and $U$, respectively. If $PQ = 10$, $QR = 14$, and $ST = 25$, what is the length of $\\overline{TU}$?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "labels": [
+     "P",
+     "Q",
+     "R"
+    ],
+    "sideLabels": [
+     "10",
+     "14",
+     ""
+    ]
+   },
+   "triangle2": {
+    "labels": [
+     "S",
+     "T",
+     "U"
+    ],
+    "sideLabels": [
+     "25",
+     "",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5.6$"
+  },
+  {
+   "id": "B",
+   "text": "$29$"
+  },
+  {
+   "id": "C",
+   "text": "$35$"
+  },
+  {
+   "id": "D",
+   "text": "$350$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by the scale factor instead of multiplying by it",
+  "B": "adds the difference $25 - 10$ to $14$ rather than scaling",
+  "D": "multiplies $14$ by $25$ without dividing by $10$"
+ },
+ "correctAnswer": "C",
+ "hint": "Compare the two corresponding sides you know to get a single ratio.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** The scale factor is $\\frac{25}{10} = 2.5$, so $TU = 2.5(14) = 35$.\n\n**The Full Solution:**\nStep 1: Corresponding sides of similar triangles are proportional: $\\frac{ST}{PQ} = \\frac{TU}{QR}$.\nStep 2: Substitute the given lengths: $\\frac{25}{10} = \\frac{TU}{14}$.\nStep 3: Cross multiply: $10 \\cdot TU = 350$, so $TU = 35$.\n\nVerification: $\\frac{25}{10} = 2.5$ and $\\frac{35}{14} = 2.5$, the same factor. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5.6$): divides by the scale factor instead of multiplying by it.\n* Choice B ($29$): adds the difference $25 - 10$ to $14$ rather than scaling.\n* Choice D ($350$): multiplies $14$ by $25$ without dividing by $10$.\n\n**Test Day Takeaway:** Build the proportion with both numerators from the same triangle; one factor governs every pair of corresponding sides."
+}

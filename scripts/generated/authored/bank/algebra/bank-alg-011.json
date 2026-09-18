@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-011",
+  "question": "At 10:30 A.M., a snowbank was $96$ centimeters tall. The snowbank melted at a constant rate, and at 1:00 P.M. the same day it was $66$ centimeters tall. If the snowbank continues to melt at this rate, at what time will its height reach $0$ centimeters?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "4:00 P.M."
+    },
+    {
+      "id": "B",
+      "text": "5:24 P.M."
+    },
+    {
+      "id": "C",
+      "text": "6:30 P.M."
+    },
+    {
+      "id": "D",
+      "text": "9:00 P.M."
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the 5.5 remaining hours to 10:30 A.M. instead of to 1:00 P.M.",
+    "B": "uses 2 hours for the interval (rate 15 cm/h), then 66/15 = 4.4 h after 1:00 P.M.",
+    "D": "divides the original 96 cm by 12 and counts 8 hours from 1:00 P.M."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Linear Model to Find Zero Time**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The snowbank lost $30$ centimeters in $2.5$ hours, so it melts $12$ centimeters per hour. At 1:00 P.M. there are $66$ centimeters left, which lasts $\\frac{66}{12} = 5.5$ hours, reaching $0$ at 6:30 P.M.\n\n**The Full Solution:**\nStep 1: Find the rate. From 10:30 A.M. to 1:00 P.M. is $2.5$ hours, and the height dropped $96 - 66 = 30$ centimeters, so the rate is $\\frac{30}{2.5} = 12$ centimeters per hour.\nStep 2: Let $h$ be hours after 1:00 P.M. Then the height is $66 - 12h$. Set $66 - 12h = 0$: $h = \\frac{66}{12} = 5.5$ hours.\nStep 3: $5.5$ hours after 1:00 P.M. is 6:30 P.M. Check from the start instead: $96$ centimeters at $12$ per hour lasts $8$ hours, and $8$ hours after 10:30 A.M. is also 6:30 P.M. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (4:00 P.M.): finds the correct $5.5$ hours but counts them from 10:30 A.M., the time of the first measurement, instead of from 1:00 P.M.\n* Choice B (5:24 P.M.): treats the interval as $2$ hours, getting a rate of $15$ centimeters per hour, then $\\frac{66}{15} = 4.4$ hours, or $4$ hours $24$ minutes, after 1:00 P.M.\n* Choice D (9:00 P.M.): divides the original $96$ centimeters by $12$ to get $8$ hours but counts those $8$ hours from 1:00 P.M. rather than from 10:30 A.M.\n\n**Test Day Takeaway:** In a time-to-zero problem, anchor the remaining amount and the clock time to the same moment; mixing the starting height with the later time is the classic slip."
+}

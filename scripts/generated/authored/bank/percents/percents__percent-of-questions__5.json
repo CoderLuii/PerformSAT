@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "At a nursery, $20\\%$ of the seedlings are maple and the rest are oak. There are $600$ more oak seedlings than maple seedlings. How many seedlings are at the nursery?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$750$"
+    },
+    {
+      "id": "B",
+      "text": "$800$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}000$"
+    },
+    {
+      "id": "D",
+      "text": "$3{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the difference by 0.8",
+    "B": "reports the oak count",
+    "D": "divides the difference by 0.2"
+  },
+  "correctAnswer": "C",
+  "hint": "Write both counts as percents of the total; their difference is a percent of the total too.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~35s):** Oak exceeds maple by $80\\% - 20\\% = 60\\%$ of the total, so the total is $600 \\div 0.6 = 1{,}000$.\n\n**The Full Solution:**\nStep 1: Let $n$ be the total number of seedlings. Maple accounts for $0.2n$ and oak for the remaining $0.8n$.\nStep 2: The stated difference gives $0.8n - 0.2n = 600$, so $0.6n = 600$.\nStep 3: Divide: $n = 1{,}000$. Check: $200$ maple and $800$ oak seedlings differ by $600$, and $200$ is $20\\%$ of $1{,}000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($750$): divides the difference by $0.8$, treating $600$ as the number of oak seedlings.\n* Choice B ($800$): reports the number of oak seedlings rather than the total.\n* Choice D ($3{,}000$): divides the difference by $0.2$, treating $600$ as the number of maple seedlings.\n\n**Test Day Takeaway:** Translate every quantity into the same variable before using a comparison sentence; the difference of two percents of the same total is itself a percent of that total."
+}

@@ -48,6 +48,32 @@ export const SAT_TEST_DATES = [
 const MONTHS_SHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 /**
+ * Days from a Saturday SAT to its score release. College Board has released
+ * scores 13 days after every administration since the digital SAT launched
+ * (the second Friday after test day: Aug 23 2025 → Sep 5, Oct 4 → Oct 17,
+ * Mar 14 2026 → Mar 27, …). Used for every date on the list AND for custom
+ * (school-day) dates, always labelled "expected" in copy — College Board
+ * publishes the exact day only weeks ahead.
+ */
+export const SCORE_RELEASE_LAG_DAYS = 13;
+
+/**
+ * Expected score-release date for a test date.
+ *
+ * @param {string} testDate - 'YYYY-MM-DD'
+ * @returns {{date:string, expected:boolean}|null} null for a malformed date
+ */
+export function getScoreReleaseDate(testDate) {
+  const d = parseLocalDate(testDate);
+  if (!d) return null;
+  d.setDate(d.getDate() + SCORE_RELEASE_LAG_DAYS);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return { date: `${y}-${m}-${day}`, expected: true };
+}
+
+/**
  * Official SAT dates on or after `from` (today by default), soonest first.
  * Parses via parseLocalDate so the "is it still upcoming?" comparison happens
  * at local midnight (avoids the `new Date('YYYY-MM-DD')`-is-UTC off-by-one).

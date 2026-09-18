@@ -1,0 +1,29 @@
+{
+ "question": "A circular runway apron is centered at $(6, k)$, has radius $10$, and passes through the origin, where $k$ is a constant. What are all possible values of $k$?",
+ "hint": "How far is $(6, k)$ from the origin?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$ only"
+  },
+  {
+   "id": "B",
+   "text": "$4$ only"
+  },
+  {
+   "id": "C",
+   "text": "$8$ only"
+  },
+  {
+   "id": "D",
+   "text": "$-8$ and $8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps only the negative square root",
+  "B": "subtracts 6 from 10 instead of using the distance formula",
+  "C": "keeps only the positive square root"
+ },
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~40s):** The origin is on the apron, so $6^2 + k^2 = 10^2$, giving $k^2 = 64$ and $k = \\pm 8$.\n\n**The Full Solution:**\nStep 1: The apron is $(x - 6)^2 + (y - k)^2 = 100$.\nStep 2: Substituting $(0, 0)$ gives $36 + k^2 = 100$, so $k^2 = 64$.\nStep 3: Both square roots satisfy every condition, so $k = -8$ or $k = 8$. Check: centers $(6, 8)$ and $(6, -8)$ are each $\\sqrt{36 + 64} = 10$ units from the origin ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$ only): keeps just the negative root, though nothing rules out the positive one.\n* Choice B ($4$ only): subtracts $6$ from $10$ as if the distances added along a line.\n* Choice C ($8$ only): keeps just the positive root.\n\n**Test Day Takeaway:** When a squared unknown is left, report both roots unless the problem rules one out."
+}

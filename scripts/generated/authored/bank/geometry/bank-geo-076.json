@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-076",
+ "question": "A water utility's pressure zone is bounded by $x^{2}+y^{2}+12x-16y+75=0$, with coordinates in kilometers. What is the greatest distance, in kilometers, from the origin to a point on that boundary?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the radius, 5, instead of a distance from the origin",
+  "B": "reports the distance from the origin to the center, 10",
+  "D": "adds the diameter 10 to the center distance instead of the radius"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~65s):** The center is $(-6,8)$, which is $10$ from the origin, and the radius is $5$, so the farthest point is $10+5=15$ kilometers away.\n\n**The Full Solution:**\n\nStep 1: Complete the square. $(x+6)^{2}+(y-8)^{2}=36+64-75=25$, so the center is $(-6,8)$ and $r=5$ kilometers.\n\nStep 2: Measure the center from the origin. $\\sqrt{(-6)^{2}+8^{2}}=\\sqrt{100}=10$ kilometers.\n\nStep 3: Push out along that line. The farthest boundary point lies on the ray from the origin through the center, one radius beyond it: $10+5=15$ kilometers.\n\nCheck: the nearest boundary point is $10-5=5$ kilometers away, and the two distances average to $10$, the center's distance, as they must.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5$): reports the radius instead of a distance measured from the origin.\n* Choice B ($10$): reports the distance from the origin to the center, stopping before the boundary.\n* Choice D ($20$): adds the diameter $10$ rather than the radius $5$ to the center distance.\n\n**Test Day Takeaway:** For an external point, the farthest point of a circle is center-distance plus radius and the nearest is center-distance minus radius."
+}

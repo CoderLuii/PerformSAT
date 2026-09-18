@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-167",
+ "question": "A reservoir's level above its winter minimum, in centimeters, during week $x$ is modeled by $f(x)=-4x^2+kx+5$, where $k$ is a positive constant. If the greatest level this model gives is $41$ centimeters, what is the value of $k$?",
+ "correctAnswer": "24",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**The correct answer is $24$.**\n\n**The Fast Way (~35s):** The maximum of $-4x^2+kx+5$ is $5-\\frac{k^2}{4(-4)}=5+\\frac{k^2}{16}$; setting it to $41$ gives $k^2=576$ and $k=24$.\n\n**The Full Solution:**\nStep 1: The maximum occurs at $x=-\\frac{k}{2(-4)}=\\frac{k}{8}$.\nStep 2: Substitute: $f\\left(\\frac{k}{8}\\right)=-4\\cdot\\frac{k^2}{64}+\\frac{k^2}{8}+5=\\frac{k^2}{16}+5$. Setting that equal to $41$ gives $\\frac{k^2}{16}=36$, so $k^2=576$.\nStep 3: Since $k$ is positive, $k=24$. Check: $f(x)=-4x^2+24x+5$ peaks at $x=3$, where $f(3)=-36+72+5=41$ ✓\n\n**Common Mistakes:**\n* $-24$: takes the negative square root, ignoring that $k$ is positive.\n* $3$: reports the week at which the maximum occurs rather than $k$.\n* $36$: reports $\\frac{k^2}{16}=36$ without solving for $k$.\n\n**Test Day Takeaway:** When the unknown sits in the linear coefficient, express the maximum as $c-\\frac{b^2}{4a}$ and solve that equation."
+}

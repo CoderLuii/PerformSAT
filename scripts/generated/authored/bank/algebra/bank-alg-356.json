@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-356",
+  "question": "A summer camp has $\\$1{,}640$ to spend on life jackets and must buy at least $160$ of them to outfit every camper. Youth life jackets cost $\\$8.50$ each and adult life jackets cost $\\$16$ each. What is the greatest number of adult life jackets the camp can buy?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$17$"
+    },
+    {
+      "id": "B",
+      "text": "$37$"
+    },
+    {
+      "id": "C",
+      "text": "$38$"
+    },
+    {
+      "id": "D",
+      "text": "$102$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "divided the leftover 280 by the full adult price 16 instead of the 7.50 difference",
+    "C": "rounded 37.33 up, exceeding the budget",
+    "D": "ignored the 160-jacket minimum: 1640/16"
+  },
+  "explanation": "**SAT Pattern: Inequality Word Problem (Floor)**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Buy exactly $160$. All youth jackets cost $1{,}360$, leaving $280$. Each adult upgrade costs $16 - 8.50 = 7.50$ more, so $280 \\div 7.50 = 37.33$, and the floor is $37$.\n\n**The Full Solution:**\nStep 1: Let $a$ be the number of adult jackets and $y$ the number of youth jackets: $8.5y + 16a \\leq 1{,}640$ and $y + a \\geq 160$.\nStep 2: Set $y = 160 - a$: $8.5(160 - a) + 16a \\leq 1{,}640$, so $1{,}360 + 7.5a \\leq 1{,}640$ and $7.5a \\leq 280$.\nStep 3: $a \\leq 37.33$, so the greatest whole number is $37$.\nCheck: $123$ youth and $37$ adult jackets cost $1{,}045.50 + 592 = 1{,}637.50 \\leq 1{,}640$; $38$ adult would cost $1{,}037 + 608 = 1{,}645$, over budget. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($17$): divides the leftover $280$ by $16$, the full adult price, instead of by the $7.50$ upgrade cost.\n* Choice C ($38$): rounds $37.33$ up; the check shows it exceeds the budget by $\\$5$.\n* Choice D ($102$): computes $1{,}640 \\div 16$ and ignores the requirement to buy at least $160$ jackets.\n\n**Test Day Takeaway:** Meet the minimum count with the cheaper item first; only the money left over buys the more expensive item, and only at the price difference."
+}

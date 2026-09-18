@@ -1,0 +1,53 @@
+{
+ "id": 11,
+ "question": "A wheel of cheese is cooled, and its internal temperature is a linear function of the elapsed time. Four temperature readings, in degrees Celsius, and the elapsed times at which they were taken, in hours, appear in the table. What is the slope of the graph of this function?",
+ "questionTable": {
+  "headers": [
+   "Elapsed time (hours)",
+   "Internal temperature (degrees Celsius)"
+  ],
+  "rows": [
+   [
+    "2",
+    "51"
+   ],
+   [
+    "5",
+    "42"
+   ],
+   [
+    "9",
+    "30"
+   ],
+   [
+    "14",
+    "15"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{1}{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{1}{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$3$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "inverts the ratio, dividing the change in time by the change in temperature to get 3/(-9)=-1/3",
+  "C": "inverts the ratio and drops the sign, reporting 1/3",
+  "D": "subtracts the coordinates in opposite orders, computing (51-42)/(5-2)=3 instead of (42-51)/(5-2)"
+ },
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** From $(2, 51)$ to $(5, 42)$ the temperature falls $9$ degrees in $3$ hours, so the slope is $\\frac{-9}{3} = -3$.\n\n**The Full Solution:**\nStep 1: Read two pairs from the table as points, with time as the input: $(2, 51)$ and $(5, 42)$.\nStep 2: Apply the slope formula $\\frac{y_2 - y_1}{x_2 - x_1} = \\frac{42 - 51}{5 - 2} = \\frac{-9}{3} = -3$.\nStep 3: Confirm the function really is linear by testing another pair: from $(9, 30)$ to $(14, 15)$, $\\frac{15 - 30}{14 - 9} = \\frac{-15}{5} = -3$, the same slope ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-\\frac{1}{3}$): divides the change in time by the change in temperature, $\\frac{3}{-9}$, reversing the roles of the two axes.\n* Choice C ($\\frac{1}{3}$): makes that same inversion and then reports it as positive, losing the fact that the temperature is falling.\n* Choice D ($3$): subtracts in inconsistent order, computing $\\frac{51 - 42}{5 - 2} = 3$. Both differences must run in the same direction, or the sign flips.\n\n**Test Day Takeaway:** Subtract the two points in the same order top and bottom, and sanity-check the sign against the story: a quantity that is falling has a negative slope."
+}

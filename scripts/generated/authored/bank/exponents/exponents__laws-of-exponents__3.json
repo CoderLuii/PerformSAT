@@ -1,0 +1,29 @@
+{
+ "question": "A gearbox reduction is $\\dfrac{(2a^3)^4}{8a^7}$, where $a$ is the input shaft radius in centimeters and is therefore positive. Which expression is equivalent to that reduction?",
+ "hint": "The numerator's coefficient is not $2$.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$a^{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$2a^{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$16a^{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$2a^{12}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats 2^4 as 8, so the coefficients cancel to 1",
+  "C": "never divides the coefficient 16 by 8",
+  "D": "forgets to subtract the denominator's exponent 7"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** The numerator is $16a^{12}$, and dividing by $8a^7$ leaves $2a^5$.\n\n**The Full Solution:**\nStep 1: Raise the numerator: $(2a^3)^4 = 2^4 \\cdot a^{12} = 16a^{12}$.\nStep 2: Divide the coefficients: $\\dfrac{16}{8} = 2$.\nStep 3: Subtract the exponents: $a^{12 - 7} = a^5$, so the reduction is $2a^5$. Check at $a = 1$: $\\dfrac{16}{8} = 2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($a^5$): reads $2^4$ as $8$, so the coefficients appear to cancel.\n* Choice C ($16a^5$): handles the variable correctly but never divides $16$ by $8$.\n* Choice D ($2a^{12}$): divides the coefficients but forgets to subtract the exponent $7$.\n\n**Test Day Takeaway:** Expand any parenthesised power first; only then divide coefficients and subtract exponents."
+}

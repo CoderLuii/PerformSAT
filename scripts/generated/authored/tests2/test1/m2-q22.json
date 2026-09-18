@@ -1,0 +1,60 @@
+{
+  "id": 22,
+  "question": "For each of the $26$ games a soccer team played last season, the table records how many goals the team scored and how many games ended with that number of goals. What is the median number of goals per game for the season?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Goals scored",
+        "Number of games"
+      ],
+      "rows": [
+        [
+          "1",
+          "5"
+        ],
+        [
+          "2",
+          "8"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "4",
+          "6"
+        ],
+        [
+          "5",
+          "3"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$2.5$"
+    },
+    {
+      "id": "C",
+      "text": "$3$"
+    },
+    {
+      "id": "D",
+      "text": "$5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the mode, the goal total with the greatest number of games, instead of the median",
+    "C": "uses only the 14th value and skips averaging it with the 13th",
+    "D": "finds the median of the frequency column 3, 4, 5, 6, 8 instead of the median of the data"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Median Calculation**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** With $26$ games the median averages the $13$th and $14$th values. Running totals $5$, $13$, $17$ put the $13$th at $2$ goals and the $14$th at $3$ goals, so the median is $2.5$.\n\n**The Full Solution:**\nStep 1: The table describes $26$ values in order, since each row lists a goal total and how many games had it. For an even count of $26$, the median is the average of the $13$th and $14$th values.\nStep 2: Build running totals from the top: games with $1$ goal occupy positions $1$ through $5$; games with $2$ goals occupy positions $6$ through $13$; games with $3$ goals occupy positions $14$ through $17$.\nStep 3: The $13$th value is $2$ and the $14$th value is $3$, so the median is $\\frac{2 + 3}{2} = 2.5$. Check: the frequencies $5 + 8 + 4 + 6 + 3 = 26$, and $13$ values sit at or below $2$ goals while $13$ sit at or above $3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): this is the mode, the goal total that occurred in the most games. With $8$ games it dominates the table visually, but the median depends on position, not on frequency.\n* Choice C ($3$): takes the $14$th value alone. With an even number of data values the two middle values must be averaged, and here they differ.\n* Choice D ($5$): finds the median of the second column, $3$, $4$, $5$, $6$, $8$. The frequencies count the data; they are not the data.\n\n**Test Day Takeaway:** For a frequency table, write running totals down the rows and find which row contains the middle position. With an even total, locate both middle positions before averaging — they often land in different rows."
+}

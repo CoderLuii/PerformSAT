@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
+  "module": 2,
+  "passage": "A promising new crop variety cannot be released on the strength of one good season. Because yield is shaped by weather, soil, and disease pressures that differ from year to year and field to field, breeders must ______ a variety's performance in trials sown across many sites and seasons before offering its seed to farmers.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "concealed"
+      "text": "imagine"
     },
     {
       "id": "B",
-      "text": "replaced"
+      "text": "overstate"
     },
     {
       "id": "C",
-      "text": "imitated"
+      "text": "recall"
     },
     {
       "id": "D",
-      "text": "reflected"
+      "text": "confirm"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. Bath argued that the sharp variation in preventable blindness was a sign of how the health-care system worked rather than of individual choices, so the variation \"reflected\" that system. \"Concealed\" reverses the relationship; \"replaced\" and \"imitated\" do not describe how a pattern can point to an underlying cause.",
-  "passage": "Ophthalmologist Patricia Bath argued throughout her career that the sharp variation in rates of preventable blindness from one community to another ______ the workings of the health-care system — where clinics were located, who could reach them, who carried insurance — far more than it did the choices of individual patients.",
+  "explanation": "**Choice D is correct.** One good season is insufficient evidence, so what the multi-site, multi-season trials provide is verification — the breeders confirm the variety's performance.\n\n**The Full Solution:**\n- The problem: a single season's result may reflect weather, soil, or disease luck rather than the variety.\n- The remedy: trials \"across many sites and seasons\" — repeated testing under varied conditions.\n- Repeated testing to establish that a result holds is exactly what \"confirm\" means.\n\n**Why the other choices are wrong:**\n- A: \"Imagine\" involves no trials at all; the sentence describes empirical testing.\n- B: \"Overstate\" means to exaggerate — the opposite of the caution the sentence describes.\n- C: \"Recall\" means to remember past results, but the trials generate new evidence.",
   "_meta": {
-    "anchor": "Patricia Bath — community ophthalmology (entity_keep); distractors revised"
-  },
-  "module": 2
+    "anchor": "crop variety trials — multi-site confirmation before release"
+  }
 }

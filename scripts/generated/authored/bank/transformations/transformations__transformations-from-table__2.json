@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "A canning retort's core temperature, in degrees Celsius, at minute $m$ of a cook is $f(m)$, with $f(5) = 62$, $f(10) = 88$, and $f(15) = 104$. A second retort runs a cook modeled by $g(m) = f(m) + 6$. What is the value of $g(10)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$82$"
+  },
+  {
+   "id": "B",
+   "text": "$88$"
+  },
+  {
+   "id": "C",
+   "text": "$94$"
+  },
+  {
+   "id": "D",
+   "text": "$110$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts 6 instead of adding it",
+  "B": "reports f(10) unchanged",
+  "D": "adds 6 to f(15) instead of f(10)"
+ },
+ "correctAnswer": "C",
+ "hint": "Only one of the three readings given is the one this question needs.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~10s):** $g(10) = f(10) + 6 = 88 + 6 = 94$ degrees Celsius.\n\n**The Full Solution:**\nStep 1: The rule adds $6$ degrees to the first retort's temperature at the same minute.\nStep 2: At minute $10$ the first retort reads $f(10) = 88$ degrees.\nStep 3: So $g(10) = 88 + 6 = 94$ degrees Celsius. Check: $94 - 6 = 88 = f(10)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($82$): subtracting the $6$ instead of adding it.\n* Choice B ($88$): reporting the first retort's reading and leaving the $+6$ out.\n* Choice D ($110$): adding the $6$ to $f(15) = 104$, the reading at the wrong minute.\n\n**Test Day Takeaway:** A constant outside the function applies at the same input; read the matching row before you shift."
+}

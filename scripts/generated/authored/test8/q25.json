@@ -1,31 +1,31 @@
 {
-  "id": 825,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "A keyboard player reading a Baroque score faces an unusual task: the composer often wrote out only a bass line marked with small numbers, leaving the chords above it to be supplied by the performer. The numbers indicate which intervals to sound but not how to space or voice them. ______ the figures say nothing about ornamentation, the trills and passing tones that period treatises treat as essential to a convincing performance.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Moreover,"
-    },
-    {
-      "id": "B",
-      "text": "In conclusion,"
-    },
-    {
-      "id": "C",
-      "text": "By contrast,"
-    },
-    {
-      "id": "D",
-      "text": "Until then,"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The second sentence notes that the figures fix the intervals but not the spacing or voicing, and the last sentence adds a further thing they leave unspecified—ornamentation—so the transition has to signal addition; \"Moreover\" does that. \"In conclusion\" would mark a summing-up, but the sentence introduces a new gap rather than wrapping up the point; \"By contrast\" signals opposition, though the last sentence parallels the previous one rather than opposing it; and \"Until then\" marks a moment in time, but the passage describes no sequence of events."
+ "id": 825,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "Painters who loved verdigris for its brilliance also learned to fear its chemistry. The pigment is restless in oil: passages that went on a vivid blue-green can drift toward a dull brown as the copper compound reacts with the medium around it. ______ verdigris can attack its neighbors, and manuals of the period warn against letting it touch lead white or vermilion on the palette.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Moreover,"
+  },
+  {
+   "id": "B",
+   "text": "In contrast,"
+  },
+  {
+   "id": "C",
+   "text": "Therefore,"
+  },
+  {
+   "id": "D",
+   "text": "For instance,"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The passage is stacking up a second, additional drawback of verdigris on top of the first, and \"Moreover,\" signals exactly that piling-on of parallel points.\n\n**The Full Solution:**\n- The first drawback: verdigris is chemically restless and can darken toward brown as it reacts with the oil around it.\n- The blank introduces a second, distinct drawback: it can also attack neighboring pigments on the palette.\n- The two points run in the same direction — both are costs of using the pigment — so an additive transition fits.\n\n**Why the other choices are wrong:**\n- B: \"In contrast,\" would promise a point running against the first, but the second drawback reinforces it.\n- C: \"Therefore,\" would make the second drawback a consequence of the first, though the two are independent problems.\n- D: \"For instance,\" would offer the second point as an example of the first, but attacking other pigments is not a case of self-darkening."
 }

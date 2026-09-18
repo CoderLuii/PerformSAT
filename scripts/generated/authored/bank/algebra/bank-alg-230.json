@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-230",
+ "question": "For what value of the constant $c$ is a loading ramp that joins $(2, -5)$ to $(6, 1)$ on an elevation drawing parallel to the graph of $y = \\frac{c}{4}x + 9$?",
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Parallel Line Through a Point**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~20s):** The ramp's slope is $\\frac{1 - (-5)}{6 - 2} = \\frac{3}{2}$, and $\\frac{c}{4} = \\frac{3}{2}$ gives $c = 6$.\n\n**The Full Solution:**\nStep 1: The ramp joins $(2, -5)$ and $(6, 1)$, so its slope is $\\frac{1 - (-5)}{6 - 2} = \\frac{6}{4} = \\frac{3}{2}$.\nStep 2: Parallel graphs have equal slopes, and the model's slope is $\\frac{c}{4}$.\nStep 3: So $\\frac{c}{4} = \\frac{3}{2}$ and $c = 6$. Check: $\\frac{6}{4} = \\frac{3}{2}$.\n\n**Common Mistakes:**\n* Reporting $\\frac{3}{2}$ stops at the ramp's slope instead of solving $\\frac{c}{4} = \\frac{3}{2}$ for $c$.\n* Reversing rise and run gives $\\frac{6 - 2}{1 - (-5)} = \\frac{2}{3}$ and the wrong value $c = \\frac{8}{3}$.\n* Subtracting the coordinates in mixed order gives $\\frac{1 - (-5)}{2 - 6} = -\\frac{3}{2}$ and $c = -6$.\n\n**Test Day Takeaway:** When the slope is written as a fraction with a known denominator, solve for the numerator instead of reporting the slope."
+}

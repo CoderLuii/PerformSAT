@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-195",
+ "question": "Two regular hexagons are similar. The ratio of the side length of the smaller hexagon to the side length of the larger hexagon is $3:4$. What is the ratio of the area of the smaller hexagon to the area of the larger hexagon?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3:4$"
+  },
+  {
+   "id": "B",
+   "text": "$9:16$"
+  },
+  {
+   "id": "C",
+   "text": "$16:9$"
+  },
+  {
+   "id": "D",
+   "text": "$27:64$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the linear ratio unsquared",
+  "C": "squares but reverses the order",
+  "D": "cubes the ratio, which is the volume ratio"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Similar Figures Area Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Areas of similar figures scale by the square of the linear ratio: $\\left(\\frac{3}{4}\\right)^2 = \\frac{9}{16}$.\n\n**The Full Solution:**\nStep 1: A regular hexagon of side $s$ has area $\\frac{3\\sqrt{3}}{2}s^2$, so area is proportional to $s^2$.\nStep 2: If the sides are in the ratio $3:4$, write them as $3t$ and $4t$. The areas are proportional to $(3t)^2 = 9t^2$ and $(4t)^2 = 16t^2$.\nStep 3: The area ratio is $9t^2 : 16t^2 = 9:16$.\n\nVerification: sides $3$ and $4$ give areas $\\frac{3\\sqrt{3}}{2}(9)$ and $\\frac{3\\sqrt{3}}{2}(16)$, a ratio of $9:16$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3:4$): reports the side ratio itself; that is the ratio of lengths, not of areas.\n* Choice C ($16:9$): squares correctly but reverses the order, giving larger to smaller.\n* Choice D ($27:64$): cubes the ratio; $k^3$ is the volume ratio for similar solids, not the area ratio for plane figures.\n\n**Test Day Takeaway:** Lengths scale by $k$, areas by $k^2$, volumes by $k^3$. Read which quantity the question asks for before choosing the power."
+}

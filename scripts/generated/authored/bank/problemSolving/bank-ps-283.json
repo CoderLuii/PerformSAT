@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-283",
+  "question": "An estimate based on a random sample of $n$ employees at a company has a margin of error of $\\pm 6$ percentage points. If a second estimate for the same company uses a random sample of $9n$ employees and the same methodology, which of the following is the margin of error of the second estimate?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\pm \\frac{2}{3}$ percentage point"
+    },
+    {
+      "id": "B",
+      "text": "$\\pm 2$ percentage points"
+    },
+    {
+      "id": "C",
+      "text": "$\\pm 3$ percentage points"
+    },
+    {
+      "id": "D",
+      "text": "$\\pm 18$ percentage points"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by $9$ instead of by $\\sqrt{9}$",
+    "C": "halves the margin of error regardless of the factor $9$",
+    "D": "multiplies by $3$ instead of dividing"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sample Size for Margin Reduction**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Multiplying the sample size by $9$ divides the margin of error by $\\sqrt{9} = 3$: $\\frac{6}{3} = 2$.\n\n**The Full Solution:**\nStep 1: The margin of error is proportional to $\\frac{1}{\\sqrt{n}}$, so replacing $n$ by $9n$ replaces $\\sqrt{n}$ by $\\sqrt{9n} = 3\\sqrt{n}$.\nStep 2: The margin of error is therefore divided by $3$: $\\frac{6}{3} = 2$ percentage points.\nStep 3: Check with the reverse rule: to divide a margin of error by $3$, multiply the sample size by $3^2 = 9$, which is exactly the change described. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\pm \\frac{2}{3}$ percentage point): $\\frac{6}{9}$, dividing by the sample-size factor itself instead of by its square root.\n* Choice C ($\\pm 3$ percentage points): halving the margin of error, which corresponds to multiplying the sample size by $4$, not $9$.\n* Choice D ($\\pm 18$ percentage points): $6 \\times 3$; a larger sample makes an estimate more precise, so the margin of error must go down.\n\n**Test Day Takeaway:** The sample-size factor goes under a square root before it touches the margin of error."
+}

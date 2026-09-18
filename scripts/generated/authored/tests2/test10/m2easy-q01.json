@@ -1,0 +1,47 @@
+{
+ "id": 1,
+ "question": "A lake-core study charts sediment thickness $y$, in millimeters, against the number of years $x$ since coring began, and the graph of the model is shown. Which equation defines the model?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2,
+   "yIntercept": 4,
+   "xRange": [
+    0,
+    10
+   ],
+   "yRange": [
+    0,
+    28
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = 4x + 2$"
+  },
+  {
+   "id": "B",
+   "text": "$y = 2x + 4$"
+  },
+  {
+   "id": "C",
+   "text": "$y = 2x - 4$"
+  },
+  {
+   "id": "D",
+   "text": "$y = \\frac{1}{2}x + 4$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the slope and the y-intercept read from the graph",
+  "C": "keeps the slope but flips the sign of the y-intercept",
+  "D": "divides run by rise instead of rise by run"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Slope-Intercept Form**\n\n**Choice B is correct.** The line meets the vertical axis at $4$ millimeters and climbs $2$ millimeters per year, so the model is $y = 2x + 4$.\n\n**The Fast Way (~15s):** The line starts at $4$ on the $y$-axis, so $b = 4$; it reaches $24$ millimeters at $x = 10$, a climb of $20$ over $10$, so $m = 2$.\n\n**The Full Solution:**\nStep 1: In $y = mx + b$, the constant $b$ is the value of $y$ when $x = 0$. The graph passes through $(0, 4)$, so $b = 4$.\nStep 2: Slope is rise over run. Between $(0, 4)$ and $(10, 24)$ the rise is $24 - 4 = 20$ and the run is $10 - 0 = 10$, so $m = \\frac{20}{10} = 2$.\nStep 3: The model is $y = 2x + 4$. Check the midpoint of the window: at $x = 6$ the equation gives $2(6) + 4 = 16$, and the graph is at $16$ millimeters six years in. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = 4x + 2$): swaps the two numbers, using $4$ as the slope and $2$ as the intercept. That line would start at $2$ millimeters and reach $42$ millimeters after ten years, far above the graph.\n* Choice C ($y = 2x - 4$): reads the slope correctly but flips the sign of the intercept. That line would start at $-4$ millimeters, below the horizontal axis, which the graph never does.\n* Choice D ($y = \\frac{1}{2}x + 4$): divides the run by the rise, $\\frac{10}{20}$, instead of the rise by the run. That line climbs only $5$ millimeters in ten years.\n\n**Test Day Takeaway:** Read the intercept first, where the line crosses the $y$-axis, then read the slope from two gridline points. The axes here use different scales, so count units by the tick labels, not by squares."
+}

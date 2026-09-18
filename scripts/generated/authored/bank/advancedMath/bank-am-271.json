@@ -1,0 +1,53 @@
+{
+  "question": "The value of a certificate of deposit increases by the same percentage each year. The table gives the value, in dollars, at the time of purchase and at the end of each of the first three years. By what percentage does the value increase each year?",
+  "questionTable": {
+    "headers": [
+      "Years after purchase",
+      "Value (dollars)"
+    ],
+    "rows": [
+      [
+        "$0$",
+        "$8{,}000$"
+      ],
+      [
+        "$1$",
+        "$8{,}400$"
+      ],
+      [
+        "$2$",
+        "$8{,}820$"
+      ],
+      [
+        "$3$",
+        "$9{,}261$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4.8\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$5\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$10.3\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$15.8\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divided the first year increase of 400 by the end-of-year value 8,400 instead of by 8,000",
+    "C": "used the two-year increase of 820 over 8,000",
+    "D": "used the three-year increase of 1,261 over 8,000"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $8{,}400/8{,}000=1.05$, an increase of $5\\%$ per year.\n\n**The Full Solution:**\nStep 1: A constant percentage increase means a constant ratio between consecutive values.\nStep 2: Compute the ratios: $8400/8000=1.05$, $8820/8400=1.05$, and $9261/8820=1.05$.\nStep 3: A factor of $1.05$ is an increase of $5\\%$ each year. Check: $8000(1.05)^{3}=9{,}261$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4.8\\%$): divides the first year's increase of $\\$400$ by the end-of-year value $\\$8{,}400$.\n* Choice C ($10.3\\%$): uses the two-year increase, $\\$820$ over $\\$8{,}000$.\n* Choice D ($15.8\\%$): uses the three-year increase, $\\$1{,}261$ over $\\$8{,}000$.\n\n**Test Day Takeaway:** Percent change always divides by the earlier value — the ratio of consecutive rows is the growth factor.",
+  "id": "bank-am-271"
+}

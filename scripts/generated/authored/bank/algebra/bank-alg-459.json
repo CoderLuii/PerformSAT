@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-459",
+  "question": "The points $(-3, 5)$ and $(4, 5)$ are plotted in the $xy$-plane. Line $\\ell$ contains both points. What is the slope of line $\\ell$?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "xMin": -5,
+      "xMax": 6,
+      "yMin": -2,
+      "yMax": 8
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$7$"
+    },
+    {
+      "id": "D",
+      "text": "The slope of line $\\ell$ is undefined."
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the shared y-coordinate instead of the slope.",
+    "C": "reports the run 4 - (-3) = 7 instead of rise over run.",
+    "D": "confuses a horizontal line (slope 0) with a vertical line, whose slope is undefined because the run is 0."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice A is correct.**\n\n**The Fast Way (~5s):** Both points have $y = 5$, so the line is horizontal: rise $0$, slope $0$.\n\n**The Full Solution:**\nStep 1: Slope $= \\frac{5 - 5}{4 - (-3)} = \\frac{0}{7}$.\nStep 2: A fraction with numerator $0$ and nonzero denominator equals $0$, so the slope is $0$.\nStep 3: Check: the plotted points are at the same height, so the line through them is horizontal, and horizontal lines have slope $0$ (the equation is $y = 5$). $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($5$): reports the shared $y$-coordinate instead of the slope.\n* Choice C ($7$): reports the run $4 - (-3) = 7$ instead of rise over run.\n* Choice D (The slope of line $\\ell$ is undefined.): confuses a horizontal line (slope $0$) with a vertical line, whose slope is undefined because the run is $0$.\n\n**Test Day Takeaway:** Same $y$-values means horizontal and slope $0$; same $x$-values means vertical and undefined slope. Zero on top is fine; zero on the bottom is not."
+}

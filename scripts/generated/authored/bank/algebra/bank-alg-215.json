@@ -1,0 +1,58 @@
+{
+ "question": "The graph in the $xy$-plane shows line $t$. A mirror image of line $t$ in the $x$-axis is labeled line $u$, and line $v$ meets line $u$ at a right angle. What is the slope of line $v$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2.5$"
+  },
+  {
+   "id": "B",
+   "text": "$-0.4$"
+  },
+  {
+   "id": "C",
+   "text": "$0.4$"
+  },
+  {
+   "id": "D",
+   "text": "$2.5$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the slope of line $t$ itself, skipping both the reflection and the perpendicular step",
+  "C": "takes the negative reciprocal but drops the minus sign",
+  "D": "reports the slope of line $u$ without taking the perpendicular"
+ },
+ "explanation": "**SAT Pattern: Slope of a Reflected Line**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Line $t$ has slope $-2.5$; reflecting across the $x$-axis makes it $2.5$; the perpendicular slope is $-\\frac{1}{2.5} = -0.4$.\n\n**The Full Solution:**\n\nStep 1: Line $t$ passes through $(0, 5)$ and $(2, 0)$, so its slope is $\\frac{0 - 5}{2 - 0} = -\\frac{5}{2}$.\n\nStep 2: Reflecting across the $x$-axis replaces every $y$ with $-y$, which negates the slope, so line $u$ has slope $\\frac{5}{2}$.\n\nStep 3: Perpendicular slopes are negative reciprocals, so line $v$ has slope $-\\frac{2}{5} = -0.4$. Check: $\\frac{5}{2} \\cdot \\left(-\\frac{2}{5}\\right) = -1$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-2.5$): reports the slope read straight off the graph, as if neither transformation happened.\n\n* Choice C ($0.4$): takes the reciprocal of $\\frac{5}{2}$ but forgets that perpendicular means the negative reciprocal.\n\n* Choice D ($2.5$): stops after the reflection.\n\n**Test Day Takeaway:** Handle transformations one at a time, and confirm a perpendicular pair by checking that the two slopes multiply to $-1$.",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -2.5,
+   "yIntercept": 5,
+   "xRange": [
+    -4,
+    6
+   ],
+   "yRange": [
+    -6,
+    10
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "label": "t"
+  }
+ },
+ "id": "bank-alg-215"
+}

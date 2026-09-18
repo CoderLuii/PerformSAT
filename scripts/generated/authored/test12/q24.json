@@ -1,31 +1,31 @@
 {
-  "id": 1224,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "For most of the twentieth century, curators catalogued the small bronze figurines unearthed at a West African site as imported objects, on the assumption that the technical skill they displayed could only have come from outside the region. Closer study of the casting alloys and of the clay cores left inside the bronzes has since shown that they were made locally, using a sophisticated lost-wax technique developed on site. ______ the figurines are presented in galleries as evidence of a long-standing regional metalworking tradition rather than as foreign imports.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Moreover,"
-    },
-    {
-      "id": "B",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "C",
-      "text": "Previously,"
-    },
-    {
-      "id": "D",
-      "text": "Today,"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage moves from what curators once assumed to how the objects are presented now that the analysis has overturned that assumption, so the temporal marker \"Today\" fits the shift to present practice. \"Moreover\" would add a further point of the same kind, but the final sentence marks a change, not an addition. \"Nevertheless\" would signal that the new presentation persists despite the analysis, the opposite of the cause-and-effect here. \"Previously\" points backward, whereas this sentence describes the current situation."
+ "id": 1224,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "Venetian gondolas were built with symmetric hulls for most of their long history, and propelling one was a two-person job. During the nineteenth century, boatyards began sweeping the hull's centerline into a deliberate curve, a change that balanced the push of a single stern oar and let one gondolier manage the boat alone. ______ every working gondola is built asymmetric, and the one-rower design is so completely standard that passengers rarely suspect the hull beneath them is curved.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Moreover,"
+  },
+  {
+   "id": "B",
+   "text": "Nevertheless,"
+  },
+  {
+   "id": "C",
+   "text": "Previously,"
+  },
+  {
+   "id": "D",
+   "text": "Today,"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The passage moves through time — centuries of symmetric hulls, then a nineteenth-century change, then the present state of the craft — and the final sentence describes the current situation, so the present-time marker \"Today\" fits.\n\n**The Full Solution:**\n- Sentence one covers \"most of their long history\": symmetric hulls, two rowers.\n- Sentence two covers the nineteenth century: boatyards introduced the curved, asymmetric hull.\n- The last sentence reports the present outcome — every working gondola is asymmetric, and the design is standard. A sentence describing the now needs a present-time transition: \"Today.\"\n\n**Why the other choices are wrong:**\n- A: \"Moreover\" adds another point of the same kind, but this sentence advances the story to a new time, not a further fact about the nineteenth century.\n- B: \"Nevertheless\" would make the design's universality a surprise holding out against the change just described, when it is that change's direct legacy.\n- C: \"Previously\" points backward, but the sentence describes the state of gondola building now, not before."
 }

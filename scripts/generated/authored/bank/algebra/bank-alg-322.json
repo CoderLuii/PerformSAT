@@ -1,0 +1,52 @@
+{
+  "id": "bank-alg-322",
+  "question": "The table shows the value of $g(x)$ for three values of $x$, where $g$ is a linear function. For what value of $x$ is $g(x) = -7$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "g(x)"
+      ],
+      "rows": [
+        [
+          "-1",
+          "11"
+        ],
+        [
+          "2",
+          "5"
+        ],
+        [
+          "5",
+          "-1"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$7$"
+    },
+    {
+      "id": "C",
+      "text": "$8$"
+    },
+    {
+      "id": "D",
+      "text": "$23$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "dropped the sign of -7 and solved -2x + 9 = 7",
+    "B": "reported the magnitude of the given output as the input",
+    "D": "evaluated g(-7) = 23, using the output as an input"
+  },
+  "explanation": "**SAT Pattern: Solve for Input from Output**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Slope from the table: $\\dfrac{5 - 11}{2 - (-1)} = \\dfrac{-6}{3} = -2$, so $g(x) = -2x + 9$. Then $-2x + 9 = -7$ gives $-2x = -16$ and $x = 8$.\n\n**The Full Solution:**\nStep 1: Recover the rule. Between $(-1, 11)$ and $(2, 5)$ the slope is $\\dfrac{5 - 11}{2 - (-1)} = -2$. Using $(2, 5)$: $5 = -2(2) + b$, so $b = 9$ and $g(x) = -2x + 9$.\nStep 2: Confirm with the third row: $g(5) = -10 + 9 = -1$. $\\checkmark$\nStep 3: Set the output to $-7$: $-2x + 9 = -7$, so $-2x = -16$ and $x = 8$.\nCheck: $g(8) = -2(8) + 9 = -16 + 9 = -7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): solves $-2x + 9 = 7$, dropping the negative sign on the target output.\n* Choice B ($7$): reports the size of the given output as if it were the input.\n* Choice D ($23$): substitutes $x = -7$ and evaluates $g(-7) = 23$, reversing input and output.\n\n**Test Day Takeaway:** From a table of a linear function, get the slope from any two rows, the intercept from one row, then solve the rule for the input that produces the target output."
+}

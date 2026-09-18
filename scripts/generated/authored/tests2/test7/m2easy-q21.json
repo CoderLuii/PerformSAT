@@ -1,0 +1,35 @@
+{
+  "id": 21,
+  "question": "A feeder pump fills an irrigation reservoir at a constant rate. The graph shows the volume $V$, in cubic meters, of water in the reservoir $t$ hours after the pump was switched on. The reservoir holds $90$ cubic meters $d$ hours after the pump was switched on. What is the value of $d$?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 2,
+      "yIntercept": 8,
+      "xRange": [
+        0,
+        8
+      ],
+      "yRange": [
+        0,
+        24
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 4,
+      "gridInterval": 2,
+      "showPoints": [
+        [
+          2,
+          12
+        ],
+        [
+          6,
+          20
+        ]
+      ],
+      "label": "V"
+    }
+  },
+  "correctAnswer": "41",
+  "explanation": "**SAT Pattern: Line from Two Points**\n\n**The correct answer is $41$.**\n\n**The Fast Way (~40s):** From $(2,12)$ to $(6,20)$ the volume rises $8$ cubic meters over $4$ hours, so $V=2t+8$; then $90=2d+8$ gives $d=41$.\n\n**The Full Solution:**\nStep 1: Read the two marked points from the graph: $(2,12)$ and $(6,20)$. The rate is $\\dfrac{20-12}{6-2}=\\dfrac{8}{4}=2$ cubic meters per hour.\nStep 2: Find the starting volume. Using $(2,12)$: $12=2(2)+V_0$, so $V_0=12-4=8$ cubic meters were already in the reservoir when the pump started, and $V=2t+8$.\nStep 3: Set $V=90$: $90=2d+8$, so $2d=82$ and $d=41$ hours. Check: $2(41)+8=82+8=90$ ✓\n\n**Common Mistakes:**\n* $45$: divides $90$ by $2$ and ignores the $8$ cubic meters already in the reservoir at $t=0$.\n* $49$: adds the $8$ instead of subtracting it, computing $\\dfrac{98}{2}$.\n* $15$: uses $\\dfrac{12}{2}=6$ cubic meters per hour as the rate, which is the average from the origin rather than the slope of the line.\n\n**Test Day Takeaway:** A line through two graph points gives a rate AND a starting value — subtract the starting value before dividing by the rate, or every backward question comes out short."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 1201,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "In a medieval scriptorium, a single illuminated page often passed through several pairs of hands. One scribe copied out the text, another painted the decorated initials, and a specialist laid down the gold leaf. Because each stage depended on the one before it, a mistake made early could ____ the careful work of everyone who came after, forcing the whole page to be scraped clean and begun again.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "shape"
-    },
-    {
-      "id": "B",
-      "text": "undo"
-    },
-    {
-      "id": "C",
-      "text": "slow"
-    },
-    {
-      "id": "D",
-      "text": "complicate"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage describes a chain of steps in which each worker depends on the last, so an early mistake ruins everything that follows—the whole page must be scraped clean and started over. \"Undo\" captures that reversing or canceling of completed work. \"Shape\" suggests influencing later work rather than wrecking it. \"Slow\" and \"complicate\" both imply the work could still go forward with some delay or added difficulty, but the passage says the page had to be begun again, which calls for the stronger idea of work undone."
+ "id": 1201,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "Adobe buildings are made of earthen bricks dried in the sun, and their upkeep follows a yearly rhythm. Each spring, caretakers coat the walls with a fresh layer of mud plaster. The plaster is not decoration but protection: without it, a single season of hard rain can ____ the bricks beneath, carrying away as mud the very material from which the walls were made.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "discolor"
+  },
+  {
+   "id": "B",
+   "text": "dissolve"
+  },
+  {
+   "id": "C",
+   "text": "conceal"
+  },
+  {
+   "id": "D",
+   "text": "loosen"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The clue comes right after the blank: rain carries the bricks away \"as mud,\" turning solid earth back into wet earth. \"Dissolve\" names exactly that — the rain breaks the bricks down and washes them away.\n\n**The Full Solution:**\n- The passage explains that the mud plaster exists for protection, so the blank must name the harm rain does to unprotected bricks.\n- The phrase \"carrying away as mud the very material from which the walls were made\" says the bricks themselves are converted to mud and lost.\n- A word meaning to break down and wash away is needed, and that is \"dissolve.\"\n\n**Why the other choices are wrong:**\n- A: \"Discolor\" describes a change in appearance only, but the sentence describes material being carried away, not stained.\n- C: \"Conceal\" means to hide the bricks, which rain does not do.\n- D: \"Loosen\" understates the damage — the bricks are not merely shaken loose but turned to mud and lost."
 }

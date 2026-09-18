@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-210",
+  "question": "A charity's campaign opened with money already pledged and then raised money at a steady rate. The function $F$ defined by $F(d) = 250d + 3{,}000$ gives the total amount raised, in dollars, $d$ days after the campaign opened. Which statement is the best interpretation of the $y$-intercept of the graph of $y = F(d)$ in the $xy$-plane?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The campaign had raised $\\$250$ when it opened."
+    },
+    {
+      "id": "B",
+      "text": "The campaign raised $\\$3{,}000$ on each day it was open."
+    },
+    {
+      "id": "C",
+      "text": "The campaign had raised $\\$3{,}000$ when it opened."
+    },
+    {
+      "id": "D",
+      "text": "The campaign raised money for $3{,}000$ days."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the slope as the starting amount",
+    "B": "reads the intercept as a daily rate",
+    "D": "reads the intercept as a number of days"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Interpret Initial Value in Context**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The $y$-intercept is $F(0) = 3{,}000$, the amount already raised on day $0$.\n\n**The Full Solution:**\nStep 1: The $y$-intercept of $y = F(d)$ occurs at $d = 0$, the day the campaign opened.\nStep 2: $F(0) = 250(0) + 3{,}000 = 3{,}000$, so the graph passes through $(0, 3{,}000)$.\nStep 3: In context, $\\$3{,}000$ had already been raised when the campaign opened. Check the slope: $F(1) - F(0) = 250$, the amount raised per day. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\$250$ at opening): swaps the two constants; $250$ is the daily rate.\n* Choice B ($\\$3{,}000$ per day): assigns the intercept the slope's job; the campaign raised $\\$250$ per day.\n* Choice D ($3{,}000$ days): $3{,}000$ is measured in dollars on the vertical axis, not in days.\n\n**Test Day Takeaway:** Attach units before choosing: the intercept carries the OUTPUT units (dollars), and the slope carries output-per-input units (dollars per day)."
+}

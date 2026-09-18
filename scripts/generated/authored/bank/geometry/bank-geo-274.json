@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-274",
+ "question": "Square $A$ has a perimeter of $60$ centimeters. Square $B$ has an area equal to $\\frac{1}{4}$ of the area of square $A$. What is the perimeter, in centimeters, of square $B$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$30$"
+  },
+  {
+   "id": "C",
+   "text": "$56.25$"
+  },
+  {
+   "id": "D",
+   "text": "$120$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the area ratio to the perimeter",
+  "C": "reports the area of square B",
+  "D": "doubles instead of halving"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Square Perimeter**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Areas in the ratio $1 : 4$ mean sides in the ratio $1 : 2$, so square $B$'s perimeter is half of $60$, or $30$ centimeters.\n\n**The Full Solution:**\nStep 1: Square $A$ has side $\\frac{60}{4} = 15$ centimeters and area $15^2 = 225$ square centimeters.\nStep 2: Square $B$ has area $\\frac{225}{4} = 56.25$, so its side is $\\sqrt{56.25} = 7.5$ centimeters.\nStep 3: Its perimeter is $4(7.5) = 30$ centimeters. Check: halving every side halves the perimeter and quarters the area, exactly as described.\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): divides the perimeter by $4$, applying the area ratio directly to the perimeter.\n* Choice C ($56.25$): reports the area of square $B$ instead of its perimeter.\n* Choice D ($120$): doubles the perimeter instead of halving it.\n\n**Test Day Takeaway:** Lengths scale by $k$ and areas scale by $k^2$. A quarter of the area means half the side and half the perimeter."
+}

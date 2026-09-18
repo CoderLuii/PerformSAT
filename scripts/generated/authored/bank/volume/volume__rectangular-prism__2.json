@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "A storage bin in the shape of a right rectangular prism has a volume of $270$ cubic inches. Its base is a rectangle measuring $9$ inches by $5$ inches. What is the height, in inches, of the bin?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$30$"
+  },
+  {
+   "id": "C",
+   "text": "$54$"
+  },
+  {
+   "id": "D",
+   "text": "$256$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides by the length only, ignoring the width",
+  "C": "divides by the width only, ignoring the length",
+  "D": "subtracts the two base dimensions from the volume"
+ },
+ "correctAnswer": "A",
+ "hint": "Combine the two base measurements into a single number first.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** The base area is $45$, so $h = \\frac{270}{45} = 6$.\n\n**The Full Solution:**\nStep 1: $V = \\ell wh$, so $270 = 9 \\cdot 5 \\cdot h$.\nStep 2: The base area is $9 \\cdot 5 = 45$ square inches, giving $270 = 45h$.\nStep 3: Divide: $h = \\frac{270}{45} = 6$ inches.\n\nVerification: $9 \\cdot 5 \\cdot 6 = 270$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($30$): divides by the length only, ignoring the width.\n* Choice C ($54$): divides by the width only, ignoring the length.\n* Choice D ($256$): subtracts the two base dimensions from the volume.\n\n**Test Day Takeaway:** Collapse the two base dimensions into one base area before dividing."
+}

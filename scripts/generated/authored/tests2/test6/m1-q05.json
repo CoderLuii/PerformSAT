@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A harbor chart shows the morning ferry route along the line $3x + y = 7$. The afternoon route never meets the morning route and contains the point $(4, 5)$. Which equation could represent the afternoon route?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x + y = 7$"
+  },
+  {
+   "id": "B",
+   "text": "$3x + y = 17$"
+  },
+  {
+   "id": "C",
+   "text": "$3x + y = 19$"
+  },
+  {
+   "id": "D",
+   "text": "$3x - y = 7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "copies the given line, but a line identical to the morning route meets it everywhere rather than never",
+  "C": "swaps the coordinates of the point, computing 3(5) + 4 = 19 instead of 3(4) + 5",
+  "D": "changes the sign of the y-coefficient, which changes the slope and produces a line that does cross the morning route"
+ },
+ "correctAnswer": "B",
+ "choiceOrderNote": "Choices are equations, not numeric values; the three with the same left side are ordered by constant, followed by the sign variant.",
+ "explanation": "**SAT Pattern: Parallel Lines and Standard Form**\n\n**Choice B is correct.** Two distinct lines never meet exactly when they are parallel, so the afternoon route keeps the left side $3x + y$ and only its constant changes.\n\n**The Fast Way (~20s):** Substitute $(4, 5)$ into $3x + y$: $3(4) + 5 = 17$, so the equation is $3x + y = 17$.\n\n**The Full Solution:**\nStep 1: Rewrite the morning route as $y = -3x + 7$; its slope is $-3$. A line that never meets it must have slope $-3$ as well and a different y-intercept.\nStep 2: In standard form, every line of slope $-3$ can be written as $3x + y = c$. Substituting the point $(4, 5)$ gives $3(4) + 5 = c$, so $c = 17$.\nStep 3: Check that the two lines are distinct and parallel: $3x + y = 17$ has slope $-3$ and passes through $(4, 5)$, since $12 + 5 = 17$, while the morning route gives $12 + 5 \\neq 7$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3x + y = 7$): this is the morning route itself. Identical lines share every point, so they meet rather than never meeting.\n* Choice C ($3x + y = 19$): this comes from entering the point as $(5, 4)$; the x-coordinate is $4$, not $5$.\n* Choice D ($3x - y = 7$): flipping the sign on $y$ changes the slope from $-3$ to $3$, and lines with different slopes always intersect.\n\n**Test Day Takeaway:** In standard form, parallel means keep the whole left side and recompute only the constant by plugging in the given point."
+}

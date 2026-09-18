@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A sample of a radioactive material loses $12\\%$ of its mass every $6$ years. If the sample has a mass of $500$ grams today, which of the following expressions gives its mass, in grams, $t$ years from now?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$500(0.12)^{\\frac{t}{6}}$"
+  },
+  {
+   "id": "B",
+   "text": "$500(0.88)^{6t}$"
+  },
+  {
+   "id": "C",
+   "text": "$500(0.88)^{\\frac{t}{6}}$"
+  },
+  {
+   "id": "D",
+   "text": "$500(0.88)^t$"
+  }
+ ],
+ "correctAnswer": "C",
+ "hint": "The exponent has to count how many $6$-year periods have gone by.",
+ "distractorNotes": {
+  "A": "uses the percent lost as the factor",
+  "B": "multiplies the time by 6",
+  "D": "ignores the 6-year period"
+ },
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~45s):** Losing $12\\%$ leaves $88\\%$, and $t$ years contain $\\frac{t}{6}$ six-year periods, so the mass is $500(0.88)^{\\frac{t}{6}}$.\n\n**The Full Solution:**\nStep 1: After one $6$-year period, $100\\% - 12\\% = 88\\%$ of the mass remains, so the decay factor per period is $0.88$.\nStep 2: In $t$ years the number of complete $6$-year periods is $\\frac{t}{6}$, and that count is the exponent.\nStep 3: The mass is $500(0.88)^{\\frac{t}{6}}$ grams. Check at $t = 6$: the expression gives $500(0.88)^1 = 440$ grams, which is $12\\%$ less than $500$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($500(0.12)^{\\frac{t}{6}}$): uses the $12\\%$ lost as the decay factor, which would erase almost the entire sample in a single period.\n* Choice B ($500(0.88)^{6t}$): multiplies the time by $6$, packing six periods of decay into every year.\n* Choice D ($500(0.88)^t$): ignores the $6$-year period and applies the $12\\%$ loss once per year.\n\n**Test Day Takeaway:** In an exponential model the base is what remains after one period, and the exponent is time divided by the length of that period."
+}

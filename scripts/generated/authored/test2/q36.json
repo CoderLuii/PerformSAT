@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 2,
-  "passage": "Geobiologist and paleobotanist Hope Jahren, who studies the chemistry of plants at the University of Oslo, has spent much of her career analyzing the wood of long-dead trees. Living trees draw water and dissolved minerals from soil and air, and the resulting ratios of stable isotopes locked into each new layer of wood reflect local conditions of temperature and rainfall during the year that layer formed. Jahren has shown that those isotope ratios remain measurable in the wood of fossil trees that grew tens of millions of years ago, long after most other biological signals have been lost. Reading them, she argues, lets researchers reconstruct, year by year, the climates of forests that no longer exist anywhere on Earth, turning a piece of petrified wood into a detailed environmental record of a vanished landscape.",
+  "passage": "For 250 years beginning in 1565, Spanish galleons crossed the Pacific on a nearly annual schedule between Manila, in the Philippines, and Acapulco, on the coast of New Spain. Westbound ships carried silver mined in the Americas; eastbound ships returned loaded with silk and porcelain from China, where American silver became the lifeblood of commerce and taxation. The route did more than enrich Spain. Before it opened, the world's great trading zones — East Asia, the Indian Ocean, Europe, the Atlantic — touched only through long chains of intermediaries; the galleons joined the last two directly, closing the final gap in a network that, for the first time, bound every inhabited continent's economy to the others.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "Jahren's research uses fossil wood to map the global geographic distribution of ancient forests across the continents tens of millions of years ago."
+      "text": "Spanish galleons carried more silver across the Pacific during their 250 years of operation than all other trade routes of the period combined."
     },
     {
       "id": "B",
-      "text": "Jahren's research argues that stable isotope ratios preserved in fossil wood can be used to reconstruct, year by year, the local climates of ancient forests that no longer exist."
+      "text": "By connecting Asia and the Americas directly, the Manila galleon route completed the linking of the world's major trading zones into a single network."
     },
     {
       "id": "C",
-      "text": "Jahren's research suggests that the chemical signals once recorded in the wood of fossil trees have largely been erased over tens of millions of years and can no longer be read reliably."
+      "text": "Demand for silver in China forced Spain to expand its mining operations in the Americas throughout the seventeenth century."
     },
     {
       "id": "D",
-      "text": "Jahren's research describes how living trees draw water and dissolved minerals from soil and air as they form each new annual layer of wood."
+      "text": "The Manila galleon route endured for 250 years chiefly because Spanish shipbuilders steadily improved their vessels' ability to survive the long and dangerous Pacific crossing."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage builds its central claim across multiple sentences. Sentence 1 introduces Jahren and her career-long focus on the chemistry of long-dead trees. Sentence 2 explains the mechanism: stable isotope ratios locked into each new layer of living wood reflect that year's local temperature and rainfall. Sentence 3 establishes that those ratios remain measurable in fossil wood tens of millions of years old, long after most other biological signals have been lost. Sentence 4 then states the synthesis Jahren argues for: reading those ratios lets researchers reconstruct, year by year, the climates of forests that no longer exist anywhere on Earth. Choice B captures that synthesis at the right level of generalization, naming both the evidence (stable isotope ratios in fossil wood) and the central claim (year-by-year reconstruction of vanished local climates).\n\nChoice D is incorrect. The passage does describe how living trees take up water and dissolved minerals as they form new layers of wood, but that mechanism is presented as a supporting premise that explains why isotope ratios encode climate information. Treating the mechanism sentence as the main idea mistakes the explanatory setup for the larger argument the passage attributes to Jahren's research. Choice A is incorrect. The passage talks about reconstructing the climates of ancient forests, not about mapping their geographic distribution across the continents. Recasting Jahren's argument as a project of global biogeographic mapping shifts the scope away from the year-by-year climate reconstruction the passage actually summarizes. Choice C is incorrect. This reverses the passage's central claim. The text says Jahren has shown that isotope ratios remain measurable in fossil wood tens of millions of years old, long after most other biological signals have been lost; Choice C claims the opposite, that those chemical signals have largely been erased and can no longer be read reliably, flipping the direction of the main idea."
+  "explanation": "**Choice B is correct.** The text's climax is the final sentence: the galleons \"joined the last two directly, closing the final gap\" in a network binding every inhabited continent's economy — the world-linking role that choice B states.\n\n**The Full Solution:**\n- The opening sentences establish the route and its cargo: American silver west, Chinese silk and porcelain east.\n- The pivot sentence — \"The route did more than enrich Spain\" — signals that the main idea lies beyond the trade itself.\n- The closing sentence delivers it: trading zones once linked only through intermediaries were joined directly, completing a global network for the first time. Choice B compresses exactly that claim.\n\n**Why the other choices are wrong:**\n- A: The text never compares the galleons' silver tonnage with other routes; the superlative is invented.\n- C: Chinese demand for silver is mentioned, but nothing about Spain being forced to expand mining — that causal story appears nowhere.\n- D: Shipbuilding is never discussed; the text offers no explanation of the route's longevity, only of its significance."
 }

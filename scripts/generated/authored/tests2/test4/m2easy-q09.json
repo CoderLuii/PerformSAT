@@ -1,0 +1,75 @@
+{
+ "id": 9,
+ "question": "For $12$ plots, the scatterplot relates yield to soil moisture, and the line of best fit is $y = 2.5x + 9$, where $x$ is the soil moisture in percent and $y$ is the predicted yield in kilograms per plot. What soil moisture corresponds to a predicted yield of $41.5$ kilograms?",
+ "diagram": {
+  "type": "scatterplot",
+  "params": {
+   "points": [
+    [
+     1,
+     12.1
+    ],
+    [
+     2,
+     13.2
+    ],
+    [
+     3,
+     17.8
+    ],
+    [
+     4,
+     18.1
+    ],
+    [
+     5,
+     23.0
+    ],
+    [
+     6,
+     22.6
+    ],
+    [
+     7,
+     28.3
+    ],
+    [
+     8,
+     27.9
+    ],
+    [
+     9,
+     32.8
+    ],
+    [
+     10,
+     33.4
+    ],
+    [
+     11,
+     38.2
+    ],
+    [
+     12,
+     37.5
+    ]
+   ],
+   "xMin": 0,
+   "xMax": 15,
+   "yMin": 0,
+   "yMax": 50,
+   "xGridStep": 1,
+   "yGridStep": 5,
+   "xLabelStep": 3,
+   "yLabelStep": 10,
+   "xLabel": "Soil moisture (percent)",
+   "yLabel": "Yield (kg per plot)",
+   "bestFitLine": {
+    "slope": 2.5,
+    "intercept": 9
+   }
+  }
+ },
+ "correctAnswer": "13",
+ "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**The correct answer is $13$.**\n\n**The Fast Way (~20s):** Set $2.5x + 9 = 41.5$; the yield above the intercept is $32.5$, and $\\frac{32.5}{2.5} = 13$ percent.\n\n**The Full Solution:**\nStep 1: The line of best fit predicts $y$ from $x$, so substitute the predicted yield: $2.5x + 9 = 41.5$.\nStep 2: Subtract the intercept: $2.5x = 32.5$.\nStep 3: Divide by the slope: $x = \\frac{32.5}{2.5} = 13$ percent. Check forward: $2.5(13) + 9 = 32.5 + 9 = 41.5$ kilograms ✓\n\n**Common Mistakes:**\n* $16.6$: dividing $41.5$ by $2.5$ without first removing the intercept of $9$.\n* $81.25$: multiplying by the slope instead of dividing, $(41.5 - 9)(2.5)$, which reverses the last step.\n* $20.2$: adding the intercept instead of subtracting it, $\\frac{41.5 + 9}{2.5}$, a sign slip on the constant term.\n\n**Test Day Takeaway:** A line of best fit runs both directions: substitute $x$ to predict $y$, or substitute $y$ and solve back for $x$ — undoing the intercept before the slope."
+}

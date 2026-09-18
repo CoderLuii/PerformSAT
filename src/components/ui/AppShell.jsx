@@ -1,40 +1,24 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { colors, typography, spacing, radius, shadows, transitions, zIndex } from '../../design/tokens';
+import React, { useState, useEffect } from 'react';
+import { colors, typography, spacing, radius, transitions, zIndex } from '../../design/tokens';
 import { injectAnimations } from '../../design/animations';
 import { useViewport } from '../../hooks/useViewport';
 import Wordmark from './Wordmark';
 import Mark from './Mark';
 import Avatar from './Avatar';
 
-// Route ↔ view state mapping
-const VIEW_ROUTES = {
-  dashboard: '/app',
-  learnTab: '/app/learn',
-  learnChapter: '/app/learn/chapter',
-  modules: '/app/videos',
-  list: '/app/videos/module',
-  lesson: '/app/videos/lesson',
-  practice: '/app/practice',
-  practiceBank: '/app/practice-bank',
-  practiceTests: '/app/tests',
-  takingTest: '/app/tests/active',
-  diagnosticReport: '/app/diagnostic',
-  studyPlan: '/app/study-plan',
-};
-
-const ROUTE_VIEWS = Object.fromEntries(
-  Object.entries(VIEW_ROUTES).map(([k, v]) => [v, k])
-);
-
 // Navigation items.
+//
+// `mobileLabel` (optional) is the SHORT form shown only in the mobile bottom tab
+// bar, where seven items share a 390px phone. The full `label` stays the
+// accessible name (aria-label) and the desktop/tablet/header text, so the
+// accessible name still contains the visible one.
 const NAV_ITEMS = [
   { id: 'dashboard', label: 'Home', route: '/app', icon: HomeIcon },
   { id: 'learnTab', label: 'Learn', route: '/app/learn', icon: OpenBookIcon },
   { id: 'modules', label: 'Videos', route: '/app/videos', icon: BookIcon },
   { id: 'practiceTests', label: 'Tests', route: '/app/tests', icon: ClockIcon },
   { id: 'practiceBank', label: 'Practice', route: '/app/practice-bank', icon: TargetIcon },
-  { id: 'studyPlan', label: 'Study Plan', route: '/app/study-plan', icon: StudyPlanIcon },
+  { id: 'studyPlan', label: 'Study Plan', mobileLabel: 'Plan', route: '/app/study-plan', icon: StudyPlanIcon },
   { id: 'profile', label: 'Profile', route: '/app/profile', icon: PersonIcon },
 ];
 
@@ -266,7 +250,8 @@ const AppShell = ({ children, currentView, onNavigate, user, onLogout, hideNav =
                 }}>
                   {user.firstName || 'Student'}
                 </div>
-                <div style={{
+                {/* ph-no-capture: keep the email out of PostHog session replays */}
+                <div className="ph-no-capture" style={{
                   fontSize: typography.sizes.xs,
                   color: 'var(--color-slate-400)',
                   overflow: 'hidden',
@@ -437,8 +422,7 @@ const AppShell = ({ children, currentView, onNavigate, user, onLogout, hideNav =
       {/* Mobile Bottom Tab Bar */}
       {isMobile && (
         <nav
-          role="tablist"
-          aria-label="Main navigation"
+          aria-label="Mobile navigation"
           style={{
             position: 'fixed',
             bottom: 0,
@@ -449,11 +433,18 @@ const AppShell = ({ children, currentView, onNavigate, user, onLogout, hideNav =
             backdropFilter: 'blur(20px)',
             WebkitBackdropFilter: 'blur(20px)',
             borderTop: `1px solid ${colors.surface.grayDark}`,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-around',
+            // SEVEN items on a 390px phone. A flex row of min-width:56px
+            // buttons measures 392px and pushes Profile off-screen, which
+            // scrolls every page sideways. Equal fractional tracks that are
+            // allowed to shrink below their content (minmax(0, 1fr)) pin the
+            // bar to exactly the viewport width at any phone size.
+            display: 'grid',
+            gridTemplateColumns: 'repeat(7, minmax(0, 1fr))',
+            alignItems: 'stretch',
             zIndex: zIndex.sticky,
             paddingBottom: 'env(safe-area-inset-bottom, 0px)',
+            boxSizing: 'border-box',
+            overflow: 'hidden',
           }}
         >
           {NAV_ITEMS.map(item => {
@@ -463,8 +454,6 @@ const AppShell = ({ children, currentView, onNavigate, user, onLogout, hideNav =
             return (
               <button
                 key={item.id}
-                role="tab"
-                aria-selected={isActive}
                 aria-current={isActive ? 'page' : undefined}
                 aria-label={item.label}
                 onClick={() => handleNavClick(item)}
@@ -472,12 +461,19 @@ const AppShell = ({ children, currentView, onNavigate, user, onLogout, hideNav =
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
+                  justifyContent: 'center',
                   gap: '2px',
                   border: 'none',
                   background: 'none',
                   cursor: 'pointer',
-                  padding: '6px 12px',
-                  minWidth: '56px',
+                  padding: '6px 2px',
+                  // A grid item's automatic minimum is its content width, which
+                  // would re-widen the bar; 0 lets the track govern instead.
+                  minWidth: 0,
+                  width: '100%',
+                  minHeight: '44px',   // touch target
+                  boxSizing: 'border-box',
+                  overflow: 'hidden',
                   transition: `all ${transitions.fast}`,
                 }}
               >
@@ -487,8 +483,16 @@ const AppShell = ({ children, currentView, onNavigate, user, onLogout, hideNav =
                   fontWeight: isActive ? typography.weights.semibold : typography.weights.medium,
                   color: isActive ? domainColor : 'var(--color-slate-500)',
                   lineHeight: 1,
+                  // One line, always: a wrapped "Study Plan" made its button
+                  // 60px tall inside a 56px bar. Anything still too long
+                  // ellipsises rather than widening the track.
+                  maxWidth: '100%',
+                  minWidth: 0,
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
                 }}>
-                  {item.label}
+                  {item.mobileLabel || item.label}
                 </span>
               </button>
             );

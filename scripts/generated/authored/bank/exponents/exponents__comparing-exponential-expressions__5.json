@@ -1,0 +1,29 @@
+{
+ "question": "A photon counter shows $9^{9}$ counts at station $M$ and $3^{14}$ counts at station $N$. Station $M$'s count is how many times station $N$'s count?",
+ "hint": "Look for a base that both counts share.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{1}{81}$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$81$"
+  },
+  {
+   "id": "D",
+   "text": "$6561$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides station N's count by station M's, inverting the ratio",
+  "B": "reports the exponent difference 18 - 14 = 4 rather than 3 to that power",
+  "D": "computes 9^4 instead of 3^4"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~35s):** $9^{9} = 3^{18}$, so the ratio is $3^{18 - 14} = 3^{4} = 81$.\n\n**The Full Solution:**\nStep 1: Write station $M$'s count with base $3$: $9 = 3^2$, so $9^{9} = 3^{18}$.\nStep 2: Divide by station $N$'s count: $\\dfrac{3^{18}}{3^{14}} = 3^{18 - 14} = 3^{4}$.\nStep 3: Evaluate: $3^4 = 81$. Check: $81 \\cdot 3^{14} = 3^{18} = 9^{9}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\dfrac{1}{81}$): divides $N$ by $M$, answering the reverse comparison.\n* Choice B ($4$): reports the exponent difference instead of $3$ raised to it.\n* Choice D ($6561$): raises $9$ to the fourth power, using the original base instead of the shared base $3$.\n\n**Test Day Takeaway:** Convert to one base before dividing; the exponent difference is a power, not the answer itself."
+}

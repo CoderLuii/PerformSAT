@@ -1,0 +1,45 @@
+{
+ "id": 1,
+ "question": "A water utility's turbidity specification is $|t - c| = d$, where $c$ and $d$ are positive constants and $t$ is a reading in NTU. The two readings in the table are the only readings that satisfy the specification. What is the value of $cd$?",
+ "questionTable": {
+  "headers": [
+   "Reading",
+   "Turbidity (NTU)"
+  ],
+  "rows": [
+   [
+    "Lower",
+    "$1.4$"
+   ],
+   [
+    "Upper",
+    "$4.6$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.6$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$4.8$"
+  },
+  {
+   "id": "D",
+   "text": "$9.6$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports d alone, the half-spread, instead of the product cd",
+  "B": "reports c alone, the midpoint of the two readings, instead of the product cd",
+  "D": "uses the full spread 3.2 as d instead of half of it, giving 3 x 3.2 = 9.6"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The two solutions of $|t - c| = d$ sit $d$ above and $d$ below $c$, so $c$ is the midpoint $3$ and $d$ is the half-spread $1.6$. Then $cd = 4.8$.\n\n**The Full Solution:**\nStep 1: $|t - c| = d$ splits into $t = c + d$ and $t = c - d$. The table's two readings are those solutions, so $c + d = 4.6$ and $c - d = 1.4$.\nStep 2: Add the two equations: $2c = 6$, so $c = 3$. Subtract them: $2d = 3.2$, so $d = 1.6$.\nStep 3: $cd = 3 \\times 1.6 = 4.8$. Check: $|1.4 - 3| = 1.6$ and $|4.6 - 3| = 1.6$, so both readings satisfy the specification. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.6$): this is $d$ by itself. Finding the half-spread is the middle of the problem, not the answer the question asks for.\n* Choice B ($3$): this is $c$ by itself, the midpoint of the two readings, with the multiplication never carried out.\n* Choice D ($9.6$): this uses the full spread $4.6 - 1.4 = 3.2$ as $d$ instead of half of it, giving $3 \\times 3.2 = 9.6$. The distance from the center to each edge is half the total width.\n\n**Test Day Takeaway:** An absolute value equation always describes a center and a radius. Average the two solutions to get the center; halve their difference to get the radius."
+}

@@ -9,32 +9,32 @@
   "passages": [
     {
       "label": "Text 1",
-      "text": "The psychologist Elizabeth Loftus has spent her career documenting how readily human memory can be reshaped after the fact. In a long series of experiments, she has shown that exposing people to misleading information after an event—through a leading question, a doctored photograph, or another witness's account—can lead them to recall details that never occurred, and to report those false details with as much confidence and vividness as accurate ones. Memory, on this view, is not a recording that can be played back but a reconstruction assembled anew each time it is summoned, shaped by everything that has happened since. Even a sharp, detailed memory of a dramatic event, Loftus cautions, can therefore be substantially mistaken."
+      "text": "Between late 2019 and early 2020, the red supergiant star Betelgeuse dimmed to roughly a third of its usual brightness, prompting popular speculation that a supernova was imminent. Some astronomers proposed a calmer explanation rooted in the star's own churning. Red supergiants boil with convection cells of enormous size, and an unusually large upwelling followed by cooling could have left a vast, temporarily dark patch on the surface. On this view, the Great Dimming required nothing more than the star's ordinary turbulence operating at an extraordinary scale."
     },
     {
       "label": "Text 2",
-      "text": "Other memory researchers accept that suggestion can distort particular details yet argue that this lesson is easily overstated. Their studies of how people recall emotionally significant events—accidents, disasters, moments of public shock—find that while peripheral particulars drift over the years, the central gist of such events is recalled with considerable accuracy even after long delays. The distortions Loftus produces, on their reading, are real but tend to involve minor or deliberately implanted material under conditions designed to mislead. To treat them as evidence that vivid memory is generally untrustworthy, these researchers contend, confuses what can happen under laboratory pressure with what ordinarily does happen when people remember the events that mattered most to them."
+      "text": "Astronomer Miguel Montargès and colleagues imaged Betelgeuse before, during, and after the dimming. Their images show the star's southern region darkening dramatically, and their analysis favors a veil of dust: gas ejected from the star drifted outward, cooled, and condensed into grains that blocked part of the light. Crucially, the team proposes that a cool patch on the surface is what chilled the ejected gas enough for dust to condense — in their reconstruction, neither the dust nor the surface cooling alone reproduces what was observed."
     }
   ],
-  "question": "Based on the texts, how would the researchers described in Text 2 most likely respond to Loftus's position in Text 1?",
+  "question": "Based on the texts, how would Montargès and colleagues (Text 2) most likely respond to the explanation presented in Text 1?",
   "choices": [
     {
       "id": "A",
-      "text": "They would argue that the central content of significant events is immune to suggestion and is therefore always recalled with complete accuracy."
+      "text": "They would object that convection cells large enough to darken a red supergiant's surface cannot form in the first place."
     },
     {
       "id": "B",
-      "text": "They would conclude that because memory is reconstructed each time it is recalled, eyewitness accounts of dramatic events should be set aside in favor of physical evidence alone."
+      "text": "They would argue that because the dimming was concentrated in the star's southern region, a cooling patch produced by convection would have had to darken the entire surface of the star uniformly instead."
     },
     {
       "id": "C",
-      "text": "They would maintain that emotionally significant events are more easily distorted than ordinary ones, since strong feelings leave witnesses especially open to suggestion."
+      "text": "They would agree that the star's ordinary turbulence fully explains the dimming without any contribution from material ejected off the surface."
     },
     {
       "id": "D",
-      "text": "They would accept that suggestion can distort particular details while holding that the central gist of significant events is usually recalled accurately, unlike what Loftus concludes."
+      "text": "They would grant that a cool surface patch likely formed but deny that it acted alone, since in their analysis the patch mattered chiefly by chilling ejected gas until light-blocking dust condensed."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. Text 2's researchers grant that suggestion can distort particular details but hold that the central gist of significant events is recalled accurately, so they would resist Loftus's broader conclusion that vivid memory is generally untrustworthy—exactly the qualified response in D. Choice A overstates their view in the other direction: because they explicitly accept that suggestion distorts details, they would not claim that memory of significant events is wholly immune to suggestion or always perfectly accurate. Choice B states Loftus's reconstructive view and pushes it even further, the opposite of Text 2's argument. Choice C reverses their claim, which is that emotionally significant events are remembered comparatively well, not that they are especially easy to distort."
+  "explanation": "**Choice D is correct.** Text 2 builds the cool patch into its own account — but only as one ingredient: the patch chills the ejected gas so that dust can condense, and \"neither the dust nor the surface cooling alone reproduces what was observed.\" That is precisely a yes-but response to Text 1's cooling-only explanation.\n\n**The Full Solution:**\n- Text 1's proposal: a huge convective upwelling cooled, leaving a dark patch — turbulence alone suffices.\n- Text 2's reconstruction incorporates that patch (\"a cool patch on the surface is what chilled the ejected gas\") but assigns the light-blocking to dust condensed from ejected material.\n- The explicit disclaimer that neither mechanism alone reproduces the observations commits the team to rejecting Text 1's sufficiency claim while accepting its ingredient — the position choice D states.\n\n**Why the other choices are wrong:**\n- A: It has the team denying that large convection cells exist, contradicting the cool patch their own reconstruction requires.\n- B: It invents a physical necessity no text asserts — nothing says convective cooling must darken the whole surface uniformly — and the team's own patch is regional.\n- C: It converts their yes-but into full agreement, erasing the dust veil that their analysis says the observations demand."
 }

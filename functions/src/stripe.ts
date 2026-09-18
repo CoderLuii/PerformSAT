@@ -47,10 +47,12 @@ import {
   evaluatePromoRedemption,
   subscriptionPatchUsedTrial,
   trialDaysForCheckout,
+  subscriptionsShowTrialUsed,
+  CANCELABLE_STATUSES,
   EntitlementPatch,
 } from "./stripePolicy";
 
-const stripeSecretKey = defineSecret("STRIPE_SECRET_KEY");
+export const stripeSecretKey = defineSecret("STRIPE_SECRET_KEY");
 const stripeWebhookSecret = defineSecret("STRIPE_WEBHOOK_SECRET");
 const stripePriceMonthly = defineString("STRIPE_PRICE_MONTHLY", {default: ""});
 const stripePriceAnnual = defineString("STRIPE_PRICE_ANNUAL", {default: ""});
@@ -70,6 +72,8 @@ const billingLaunchEpoch = defineString("BILLING_LAUNCH_EPOCH", {default: ""});
 // gets the paid tutor for free). Kept as a distinct param — the launch epoch
 // governs grandfathering, NOT whether enforcement is live.
 const billingEnforced = defineString("BILLING_ENFORCED", {default: "false"});
+// PostHog project API key (public ingestion key). Empty = server analytics off.
+const posthogKey = defineString("POSTHOG_KEY", {default: ""});
 
 const getStripe = () => new Stripe(stripeSecretKey.value());
 
@@ -396,6 +400,86 @@ export const redeemPromoCode = onRequest(
   },
 );
 
+/**
+ * Find the Stripe customer that already represents this email address, if any.
+ *
+ * Used by createCheckoutSession before creating a customer, so a student who
+ * deleted their account and signed up again lands back on their original
+ * Stripe customer — which is what makes their trial history (and therefore the
+ * one-trial-per-customer rule) survive the deletion.
+ *
+ * Returns the OLDEST match: if duplicates already exist from before this
+ * lookup shipped, the oldest is the one carrying the original trial history,
+ * so it is the safe one to converge on. Never throws — a lookup failure just
+ * means "no match", and the caller creates a fresh customer.
+ * @param {string} email the authenticated account's email
+ * @return {Promise<Stripe.Customer|null>} the matching customer, or null
+ */
+async function findCustomerByEmail(
+  email: string,
+): Promise<Stripe.Customer | null> {
+  try {
+    const found = await getStripe().customers.list({email, limit: 100});
+    const live = found.data.filter((c) => !c.deleted);
+    if (!live.length) return null;
+    return live.reduce(
+      (oldest, c) => (c.created < oldest.created ? c : oldest));
+  } catch (err) {
+    logger.warn(`customer lookup by email failed for ${email}`, err);
+    return null;
+  }
+}
+
+/**
+ * Re-attach a Stripe subscription that is still live on a REUSED customer to
+ * the account asking for Checkout, instead of selling them a second one.
+ *
+ * Reached when a student deletes their account while a subscription is still
+ * running (possible for anyone who deleted before deleteAccount learned to
+ * cancel) and then signs up again with the same email: findCustomerByEmail
+ * hands back their original customer, whose subscription nobody canceled.
+ * Opening Checkout there would put a SECOND subscription on the same customer
+ * and bill them twice.
+ *
+ * Adoption is also the fair outcome — they are still paying, so they should
+ * have access. Stamps the entitlement doc from the live subscription and
+ * re-points subscription.metadata.uid at the new account so future webhooks
+ * resolve to it.
+ * @param {string} uid the account that just tried to check out
+ * @param {string} customerId the reused Stripe customer
+ * @param {string} monthlyPriceId configured STRIPE_PRICE_MONTHLY
+ * @param {string} annualPriceId configured STRIPE_PRICE_ANNUAL
+ * @return {Promise<boolean>} true when a live subscription was adopted
+ */
+async function adoptLiveSubscription(
+  uid: string,
+  customerId: string,
+  monthlyPriceId: string,
+  annualPriceId: string,
+): Promise<boolean> {
+  const subs = await getStripe().subscriptions.list({
+    customer: customerId,
+    status: "all",
+    limit: 100,
+  });
+  const live = subs.data.find((x) => CANCELABLE_STATUSES.has(x.status));
+  if (!live) return false;
+
+  await getStripe().subscriptions.update(live.id, {
+    metadata: {...(live.metadata || {}), uid},
+  });
+  const patch = subscriptionToEntitlementPatch(
+    live, monthlyPriceId, annualPriceId);
+  // "now" as the watermark: this is read straight from Stripe, so it is the
+  // freshest truth available and must not lose to a replayed older event.
+  await applyEntitlementPatch(
+    uid, patch, customerId, Math.floor(Date.now() / 1000), null, false);
+  logger.info(
+    `Adopted live subscription ${live.id} (${live.status}) onto ${uid}`,
+  );
+  return true;
+}
+
 export const createCheckoutSession = onRequest(
   {cors: ALLOWED_ORIGINS, secrets: [stripeSecretKey], invoker: "public"},
   async (request, response) => {
@@ -457,26 +541,125 @@ export const createCheckoutSession = onRequest(
       // this one. The entitlement doc is server-write-only, so this Admin write
       // is the only way the id gets there.
       let customerId: string | null = existing?.stripeCustomerId || null;
+      // Set when this checkout landed on a pre-existing Stripe customer found
+      // by email — that customer may still carry a live subscription.
+      let reusedCustomer: Stripe.Customer | null = null;
       if (!customerId) {
-        const customer = await getStripe().customers.create({
-          email: user.email || undefined,
-          metadata: {uid: user.uid},
+        // Before minting a customer, look for one Stripe already has for this
+        // email. Load-bearing for two reasons:
+        //   1. deleteAccount erases entitlements/{uid} (and its trialUsed
+        //      marker), so a student who deletes and re-registers arrives here
+        //      with a clean doc. Without this lookup they'd get a brand-new
+        //      customer and a brand-new free trial — on every loop, forever.
+        //   2. It stops a duplicate customer per re-signup, which fragments
+        //      the billing history for the same human.
+        // Stripe retains customers after account deletion (financial records),
+        // which is exactly what makes this reliable.
+        reusedCustomer = user.email ?
+          await findCustomerByEmail(user.email) :
+          null;
+        if (reusedCustomer) {
+          // Re-point the reused customer at the CURRENT uid so subscription
+          // webhooks that fall back to customer metadata resolve to the live
+          // account rather than the deleted one.
+          await getStripe().customers.update(reusedCustomer.id, {
+            metadata: {uid: user.uid},
+          });
+          logger.info(
+            `Reusing Stripe customer ${reusedCustomer.id} for ${user.uid}`,
+          );
+        }
+        customerId = reusedCustomer ?
+          reusedCustomer.id :
+          (await getStripe().customers.create({
+            email: user.email || undefined,
+            metadata: {uid: user.uid},
+          })).id;
+        // Transactional: this call races ensureEntitlement on first signup
+        // (the funnel fires both back-to-back). A bare merge-set landing first
+        // used to leave a doc with ONLY {stripeCustomerId, updatedAt} forever
+        // — ensureEntitlement then sees "exists" and never seeds status/uid.
+        // Seed the full no-access shape when the doc is missing; otherwise
+        // only stamp the customer id (never touch status — if ensure landed
+        // first and seeded comped/none, that state is owned elsewhere).
+        const stampRef = entitlementRef(user.uid);
+        await getFirestore().runTransaction(async (tx) => {
+          const snap = await tx.get(stampRef);
+          if (snap.exists) {
+            tx.update(stampRef, {
+              stripeCustomerId: customerId,
+              updatedAt: FieldValue.serverTimestamp(),
+            });
+          } else {
+            tx.set(stampRef, {
+              uid: user.uid,
+              status: "none",
+              trialEndsAt: null,
+              stripeCustomerId: customerId,
+              subscriptionId: null,
+              plan: null,
+              currentPeriodEnd: null,
+              cancelAtPeriodEnd: false,
+              lastEventCreated: null,
+              createdAt: FieldValue.serverTimestamp(),
+              updatedAt: FieldValue.serverTimestamp(),
+            });
+          }
         });
-        customerId = customer.id;
-        await entitlementRef(user.uid).set(
-          {
-            stripeCustomerId: customerId,
-            updatedAt: FieldValue.serverTimestamp(),
-          },
-          {merge: true},
-        );
       }
 
-      // Exactly ONE trial per customer: once the entitlement carries the
-      // durable trialUsed marker (stamped by the webhook the first time this
-      // customer trialed), a re-subscribe after a cancel gets NO fresh trial —
-      // billing starts immediately. Otherwise the standard 3-day trial.
-      const trialDays = trialDaysForCheckout(existing);
+      // A reused customer can still own a live subscription (a pre-fix
+      // deletion left it running). Adopt it onto this account rather than
+      // stacking a second subscription on the same customer — the entitlement
+      // doc flips to their real status and the client unlocks off the
+      // snapshot, no charge, no duplicate.
+      if (reusedCustomer) {
+        const adopted = await adoptLiveSubscription(
+          user.uid,
+          reusedCustomer.id,
+          stripePriceMonthly.value(),
+          stripePriceAnnual.value(),
+        );
+        if (adopted) {
+          response.status(409)
+            .json({error: "already_subscribed", adopted: true});
+          return;
+        }
+      }
+
+      // Exactly ONE trial per customer, enforced against TWO sources:
+      //   - the app-side trialUsed marker (stamped by the webhook the first
+      //     time this customer trialed), and
+      //   - Stripe's own subscription history for this customer.
+      // The second source is what survives account deletion: deleteAccount
+      // erases the entitlement doc, so the marker alone would hand a fresh
+      // trial to anyone who deletes and re-registers. Stripe keeps
+      // trial_start/trial_end on every past subscription, so one list call
+      // settles it. Only consulted when the local marker isn't already set.
+      let trialUsed = existing?.trialUsed === true;
+      if (!trialUsed && customerId) {
+        try {
+          const prior = await getStripe().subscriptions.list({
+            customer: customerId,
+            status: "all",
+            limit: 100,
+          });
+          trialUsed = subscriptionsShowTrialUsed(prior.data);
+          if (trialUsed) {
+            logger.info(
+              `Prior trial found in Stripe for ${user.uid} — no new trial`,
+            );
+          }
+        } catch (histErr) {
+          // Availability over strictness: a Stripe blip must not block a
+          // student from subscribing. Worst case they get one extra trial.
+          logger.warn(
+            `trial-history lookup failed for ${user.uid} — allowing trial`,
+            histErr,
+          );
+        }
+      }
+      const trialDays = trialDaysForCheckout({trialUsed});
       const subscriptionData: Stripe.Checkout.SessionCreateParams
         .SubscriptionData = {
           // uid on BOTH the session and the subscription: the webhook resolves
@@ -662,6 +845,136 @@ async function uidForSubscription(sub: {
   return q.empty ? null : q.docs[0].id;
 }
 
+
+/**
+ * Server-side product analytics. The client funnel events stop at the Stripe
+ * redirect, so the money events (trial started / converted / ended) are
+ * captured here — the webhook is the only place that observes them
+ * truthfully. Fire-and-forget: analytics must never fail a webhook (a non-2xx
+ * would make Stripe retry the whole event). distinct_id = uid, joining the
+ * client's phIdentify(uid) person graph. Inert when POSTHOG_KEY is unset.
+ * @param {string} eventName PostHog event name
+ * @param {string} uid Firebase uid (= PostHog distinct_id)
+ * @param {Object} properties event properties (no PII)
+ */
+function phServerCapture(
+  eventName: string,
+  uid: string,
+  properties: Record<string, unknown>,
+): void {
+  const key = posthogKey.value();
+  if (!key) return;
+  void fetch("https://us.i.posthog.com/batch/", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      api_key: key,
+      batch: [{
+        event: eventName,
+        distinct_id: uid,
+        properties: {...properties, source: "stripe-webhook"},
+        timestamp: new Date().toISOString(),
+      }],
+    }),
+  }).then((r) => {
+    if (!r.ok) {
+      logger.warn(`posthog capture ${eventName} rejected: ${r.status}`);
+    }
+  }).catch((err) => {
+    logger.warn(`posthog capture ${eventName} failed`, err);
+  });
+}
+
+/**
+ * Cancel every live Stripe subscription owned by this account — called by
+ * deleteAccount BEFORE any data is removed.
+ *
+ * Deleting the app account used to leave the Stripe subscription running: the
+ * customer kept getting billed with no account, and could not even reach the
+ * Customer Portal to stop it (createPortalSession reads
+ * entitlements/{uid}.stripeCustomerId, which deletion had just erased, and
+ * requires an Auth login that no longer exists). Money must never outlive the
+ * account that authorized it.
+ *
+ * Cancels IMMEDIATELY (not at period end) — the account is going away, so
+ * there is nothing left to keep access for. Canceling a trialing subscription
+ * never charges. The Stripe CUSTOMER object is deliberately retained
+ * (financial records, and it is what keeps a deleted-and-resurrected account
+ * from minting a fresh trial — see subscriptionsShowTrialUsed).
+ *
+ * Throws on Stripe failure so the caller aborts the deletion with nothing
+ * removed yet; a retry is strictly better than orphaning a billable
+ * subscription.
+ * @param {string} uid the account being deleted
+ * @param {string|undefined} email the account's email, used as a fallback way
+ *   to locate the Stripe customer when the entitlement doc never got the
+ *   customer id stamped (e.g. Checkout created the customer but the stamping
+ *   transaction failed). Without it that subscription would survive deletion.
+ * @return {Promise<string[]>} ids of the subscriptions that were canceled
+ */
+export async function cancelSubscriptionsForUid(
+  uid: string,
+  email?: string,
+): Promise<string[]> {
+  const snap = await entitlementRef(uid).get();
+  const data = snap.exists ? snap.data() : null;
+  let customerId: string | null = data?.stripeCustomerId || null;
+  const recordedSubId: string | null = data?.subscriptionId || null;
+  if (!customerId && email) {
+    const byEmail = await findCustomerByEmail(email);
+    if (byEmail) {
+      customerId = byEmail.id;
+      logger.info(
+        `[deleteAccount] resolved customer ${byEmail.id} for ${uid} by email`,
+      );
+    }
+  }
+
+  // Collect candidates from BOTH sources — the customer's subscription list
+  // (authoritative) and the id recorded on the doc (covers the case where the
+  // customer id was never stamped but a subscription id was) — carrying each
+  // one's STATUS along. Status is load-bearing: Stripe rejects cancel() on an
+  // already-canceled subscription, and an unguarded throw here would abort the
+  // whole deletion, permanently blocking anyone whose doc names an old
+  // canceled subscription from ever deleting their account.
+  const targets = new Map<string, string>(); // subscription id -> status
+  if (customerId) {
+    const subs = await getStripe().subscriptions.list({
+      customer: customerId,
+      status: "all",
+      limit: 100,
+    });
+    for (const s of subs.data) targets.set(s.id, s.status);
+  }
+  if (recordedSubId && !targets.has(recordedSubId)) {
+    try {
+      const s = await getStripe().subscriptions.retrieve(recordedSubId);
+      targets.set(s.id, s.status);
+    } catch (err) {
+      // A subscription id that no longer exists in Stripe is nothing to
+      // cancel; anything else is a real failure worth aborting on.
+      if ((err as {code?: string})?.code !== "resource_missing") throw err;
+    }
+  }
+
+  const canceled: string[] = [];
+  for (const [id, status] of targets) {
+    if (!CANCELABLE_STATUSES.has(status)) continue;
+    try {
+      await getStripe().subscriptions.cancel(id);
+      canceled.push(id);
+      logger.info(
+        `[deleteAccount] canceled subscription ${id} for ${uid} ` +
+        `(was ${status})`,
+      );
+    } catch (err) {
+      if ((err as {code?: string})?.code === "resource_missing") continue;
+      throw err;
+    }
+  }
+  return canceled;
+}
+
 export const stripeWebhook = onRequest(
   {secrets: [stripeSecretKey, stripeWebhookSecret], invoker: "public"},
   async (request, response) => {
@@ -709,6 +1022,11 @@ export const stripeWebhook = onRequest(
         const patch = subscriptionToEntitlementPatch(sub, monthly, annual);
         await applyEntitlementPatch(uid, patch, customerId, event.created, event.id, false);
         logger.info(`Entitlement activated for ${uid} (${patch.plan})`);
+        phServerCapture(
+          sub.status === "trialing" ? "trial_started" : "subscription_started",
+          uid,
+          {plan: patch.plan, copyVariant: "personal-v1"},
+        );
         break;
       }
       case "customer.subscription.created":
@@ -728,6 +1046,19 @@ export const stripeWebhook = onRequest(
           uid, patch, customerId, event.created, event.id,
           event.type === "customer.subscription.deleted",
         );
+        // trial_converted = the exact trialing -> active transition (Stripe
+        // sends the prior status in previous_attributes on updated events).
+        const prevStatus = (event.data.previous_attributes as
+          {status?: string} | undefined)?.status;
+        if (event.type === "customer.subscription.updated" &&
+            prevStatus === "trialing" && sub.status === "active") {
+          phServerCapture("trial_converted", uid, {plan: patch.plan});
+        }
+        if (event.type === "customer.subscription.deleted") {
+          phServerCapture("subscription_ended", uid, {
+            plan: patch.plan, lastStatus: sub.status,
+          });
+        }
         break;
       }
       default:

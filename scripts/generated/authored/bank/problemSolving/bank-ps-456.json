@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-456",
+  "question": "In a random sample of $640$ likely voters in a school board election, $377$ said they would vote for Alvarez and the other $263$ said they would vote for Whitfield. If $14{,}080$ people vote in the election and the sample is representative, by how many votes would Alvarez be expected to win?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$114$"
+    },
+    {
+      "id": "B",
+      "text": "$2{,}508$"
+    },
+    {
+      "id": "C",
+      "text": "$5{,}786$"
+    },
+    {
+      "id": "D",
+      "text": "$8{,}294$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the margin in the sample without scaling it to the electorate.",
+    "C": "scales Whitfield's count instead of the margin.",
+    "D": "scales Alvarez's count instead of the margin."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Poll Scaling — Margin of Victory**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The election is $\\frac{14{,}080}{640}=22$ times the sample, and Alvarez leads by $377-263=114$ in the sample, so the expected margin is $22(114)=2{,}508$ votes.\n\n**The Full Solution:**\nStep 1: Find the scaling factor from sample to electorate: $\\frac{14{,}080}{640}=22$.\nStep 2: Find Alvarez's margin in the sample: $377-263=114$ votes.\nStep 3: A representative sample scales proportionally, so the expected margin is $22(114)=2{,}508$ votes. Check: $22(377)=8{,}294$ and $22(263)=5{,}786$, and $8{,}294-5{,}786=2{,}508$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($114$): gives the sample margin with no scaling applied.\n* Choice C ($5{,}786$): scales Whitfield's $263$ supporters and reports that count.\n* Choice D ($8{,}294$): scales Alvarez's $377$ supporters and reports that count.\n\n**Test Day Takeaway:** Scaling the difference gives the same answer as scaling each count and subtracting, in one step instead of three."
+}

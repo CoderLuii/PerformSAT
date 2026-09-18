@@ -1,31 +1,31 @@
 {
-  "id": 809,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "In the 1790s, the German botanist Christian Konrad Sprengel studied why insects visit flowers and showed that many blossoms are shaped to steer a bee or moth toward their pollen and nectar. Examining several wild orchids, though, he found a contradiction: their long spurs looked as if they should hold nectar, yet none was inside. Sprengel concluded that these orchids draw insects by the mere appearance of a reward, prompting pollinators to carry pollen away without ever being fed. His description of such \"false nectar flowers\" is often cited as one of the earliest accounts of deception as a strategy for attracting pollinators.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Sprengel believed that insects, rather than wind or chance, were responsible for fertilizing every kind of flowering plant he examined."
-    },
-    {
-      "id": "B",
-      "text": "Most orchids that botanists have studied since Sprengel's time have turned out to produce no nectar of any kind."
-    },
-    {
-      "id": "C",
-      "text": "Sprengel found that certain orchids attract pollinating insects by appearing to offer a nectar reward they do not actually contain."
-    },
-    {
-      "id": "D",
-      "text": "By the time Sprengel published his observations, the orchids he had studied were already growing scarce across much of Europe."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage builds to a single point: Sprengel discovered that some orchids lure insects with spurs that look as though they hold nectar but do not, drawing pollinators that carry away pollen without any reward. A overstates his view into a blanket claim that insects fertilize every flowering plant, which the text does not assert; B makes a sweeping generalization about orchids studied after his time that the passage never offers; and D introduces the scarcity of the orchids, a topic the passage does not raise."
+ "id": 809,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "Surveying canal routes in the 1790s, William Smith spent his days inside freshly cut cross-sections of the English countryside, and he noticed that the rock layers exposed in one cutting reappeared in the next, always stacked in the same order. Color and texture, though, shifted from district to district; what stayed constant were the fossils. Each stratum, Smith realized, carried its own characteristic assemblage, so a layer could be recognized by its fossils wherever it surfaced. Following that principle across the country, he produced in 1815 the first geological map of England and Wales, its bands of hand-applied color tracing each formation for hundreds of miles.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Smith found that a rock layer's color and texture were the most dependable means of recognizing it in a new district."
+  },
+  {
+   "id": "B",
+   "text": "Smith's map of 1815 was principally intended as a practical guide for the engineers who planned England's canals."
+  },
+  {
+   "id": "C",
+   "text": "Smith's insight that strata could be identified by their characteristic fossils enabled him to trace rock layers across the country and map them."
+  },
+  {
+   "id": "D",
+   "text": "Smith's map found few buyers when it first appeared because the gentlemen of the scientific societies were unwilling to trust the work of a self-taught surveyor."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The text builds to a single idea: Smith's recognition that each stratum carries its own characteristic fossils let him identify and trace rock layers across the country, culminating in his 1815 map.\n\n**The Full Solution:**\n- The opening locates Smith in canal cuttings, observing the same layers repeating in the same order.\n- The pivot is his insight that a layer's fossils identify it even where its color and texture change from place to place.\n- The closing sentence presents the 1815 map as what that insight made possible — exactly the idea choice C states.\n\n**Why the other choices are wrong:**\n- A: The text says the layers' appearance varies from district to district; color and texture alone were not reliable guides.\n- B: The text presents surveying canals as Smith's occupation, not as the map's subject.\n- D: Nothing in the text concerns how quickly the map sold or who purchased it."
 }

@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "A rotating sprinkler waters a circular region with a radius of $7$ feet. What is the area, in square feet, of the region it waters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$14\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$49\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$343\\pi$"
+  }
+ ],
+ "correctAnswer": "C",
+ "hint": "Only one of the two circle formulas squares the radius.",
+ "distractorNotes": {
+  "A": "uses pi times r",
+  "B": "computes the circumference",
+  "D": "cubes the radius"
+ },
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~10s):** $A = \\pi r^2 = \\pi(7)^2 = 49\\pi$ square feet.\n\n**The Full Solution:**\nStep 1: The watered region is a full circle, so its area is $A = \\pi r^2$.\nStep 2: The radius is $7$ feet, so $A = \\pi(7)^2$.\nStep 3: $7^2 = 49$, giving $A = 49\\pi$ square feet. Check: doubling the radius to $14$ feet would give $196\\pi$, four times as much — the quadrupling that only an area does.\n\n**Why the wrong answers are tempting:**\n* Choice A ($7\\pi$): uses $\\pi r$ and never squares the radius.\n* Choice B ($14\\pi$): computes the circumference $2\\pi r$, a length rather than an area.\n* Choice D ($343\\pi$): cubes the radius, which is the shape of a volume formula.\n\n**Test Day Takeaway:** Area squares the radius; circumference doubles it. Let the units decide — square feet calls for the squared radius."
+}

@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 1,
-  "passage": "In her 2021 book All That She Carried: The Journey of Ashley's Sack, historian Tiya Miles reconstructs the story of a single embroidered cloth sack that passed through three generations of an enslaved Black family in the American South. Working from the brief lines stitched onto the sack and from scattered archival fragments, Miles traces how an enslaved mother filled it with a few belongings for her young daughter on the eve of their forced separation at a slave sale. By following the sack across decades, Miles argues that humble objects of this kind functioned as deliberate vehicles of remembrance, allowing Black women under slavery to preserve memory and family ties even as auctions and removals scattered them.",
+  "passage": "Meteorologists sometimes speak of a \"quiet revolution\" in their field. A modern five-day forecast is about as accurate as a three-day forecast was a few decades ago, and useful predictions now extend a week or more ahead. The gains came from no single breakthrough: they accumulated through steady improvements in satellite observations, faster supercomputers, and better mathematical representations of the atmosphere, with each advance making the others more valuable. Because the improvement arrived a little at a time, it drew none of the attention that a dramatic discovery commands — yet its cumulative effect on aviation, agriculture, and disaster preparedness has been enormous.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "Miles reconstructs the route by which a single embroidered sack passed through an auction house before being recovered by archivists."
+      "text": "Supercomputers have largely replaced human forecasters in the production of modern weather predictions, a change that many meteorologists consider long overdue."
     },
     {
       "id": "B",
-      "text": "Miles maintains that everyday objects such as Ashley's sack played little part in how enslaved Black women preserved family memory."
+      "text": "Weather forecasts more than five days ahead remain too unreliable to guide important decisions in aviation, agriculture, and disaster preparedness."
     },
     {
       "id": "C",
-      "text": "Miles uses Ashley's sack to argue that humble belongings kept by enslaved Black women served as deliberate vehicles for preserving memory and family ties across forced separations."
+      "text": "Weather forecasting has improved substantially in recent decades, but because the gains came gradually from many interacting advances, the achievement has attracted little notice."
     },
     {
       "id": "D",
-      "text": "Miles describes the few belongings an enslaved mother packed into a cloth sack for her daughter on the eve of their separation."
+      "text": "Meteorologists disagree about whether satellites or supercomputers contributed more to the recent improvement in forecast accuracy."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage builds to Miles's central claim: that humble objects like Ashley's sack worked as deliberate vehicles of remembrance, letting enslaved Black women preserve memory and family ties through the separations slavery imposed. Choice A fixes on a detail the passage never states in that form and misses the argument. Choice B directly contradicts the passage, which says such objects did this memory-keeping work. Choice D restates one episode—the mother packing the sack—rather than the larger point the passage uses that episode to make."
+  "explanation": "**Choice C is correct.** The text makes two coordinated points — forecasts have gotten much better, and the improvement's gradual, many-sourced character kept it out of the spotlight — and choice C states both.\n\n**The Full Solution:**\n- The improvement itself: a five-day forecast now matches the old three-day forecast, with useful predictions extending a week or more.\n- Its character: \"no single breakthrough,\" but accumulating gains from satellites, computing, and mathematics that reinforced one another.\n- Its reception: arriving \"a little at a time,\" the revolution stayed \"quiet\" despite enormous practical effect. That is the full idea choice C compresses.\n\n**Why the other choices are wrong:**\n- A: The text never says computers replaced forecasters — supercomputers appear as one of several contributing advances, and no meteorologist's opinion on staffing is reported.\n- B: The text asserts the opposite: useful predictions \"now extend a week or more ahead,\" and the cumulative effect on those very fields has been enormous.\n- D: No disagreement is mentioned; the text presents the advances as complementary, \"each advance making the others more valuable.\""
 }

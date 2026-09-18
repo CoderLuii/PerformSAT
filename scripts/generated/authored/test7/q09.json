@@ -1,31 +1,31 @@
 {
-  "id": 709,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "Archaeological work in the Yoruba region of West Africa has revealed a long tradition of urban life that took shape well before European traders reached the coast. Excavations have uncovered the remains of glass-bead workshops, ironworking sites, and large earthen walls that once enclosed planned communities, while oral histories and early written records describe organized markets and skilled craft guilds. Together, these sources point to dense settlements supported by specialized production and long-distance trade. The picture that emerges is of cities that grew on their own terms, according to local rhythms of commerce and craft, rather than in response to outside contact.",
-  "question": "According to the text, what does the archaeological evidence from the Yoruba region include?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The remains of glass-bead workshops, ironworking sites, and large earthen walls that once enclosed planned communities."
-    },
-    {
-      "id": "B",
-      "text": "Charters issued by European traders that were used to regulate the markets operating throughout the region."
-    },
-    {
-      "id": "C",
-      "text": "Imported tools, manufactured outside West Africa, that were recovered from the very earliest settlement sites."
-    },
-    {
-      "id": "D",
-      "text": "Maps that the region’s craft guilds are said to have drawn in order to record trade routes between the cities."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The text states directly that excavations uncovered glass-bead workshops, ironworking sites, and large earthen walls enclosing planned communities. Choice B refers to European charters the passage never mentions; the written records it cites are local. Choice C invents imported tools, but the passage emphasizes locally specialized production, and Choice D describes guild-drawn maps that appear nowhere in the text."
+ "id": 709,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "During the twelfth and thirteenth centuries, the counts of Champagne, in northeastern France, sponsored a cycle of six trade fairs that rotated among four towns, keeping a market open in the region for much of the year. Surviving regulations show that the counts provided visiting merchants with safe-conduct guarantees on the roads to the fairs and appointed wardens who enforced the contracts merchants made there. Flemish cloth, Mediterranean silk and spices, and silver from German mines all changed hands at the fairs, which for a time formed the principal meeting point of Europe's northern and southern trade.",
+ "question": "According to the text, what did the counts of Champagne provide for merchants traveling to the fairs?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Safe-conduct guarantees on the roads and wardens who enforced the contracts made at the fairs."
+  },
+  {
+   "id": "B",
+   "text": "Interest-free loans of German silver with which merchants visiting the fairs could stock their market stalls at low cost."
+  },
+  {
+   "id": "C",
+   "text": "Wagons that carried Flemish cloth and Mediterranean spices between the four fair towns."
+  },
+  {
+   "id": "D",
+   "text": "Exemptions from the regulations that governed trading in each of the four towns."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The text states it directly: the counts \"provided visiting merchants with safe-conduct guarantees on the roads to the fairs and appointed wardens who enforced the contracts merchants made there.\"\n\n**The Full Solution:**\n- The question asks for a stated detail, so the answer should match a sentence of the passage nearly word for word.\n- The second sentence names exactly two provisions: protection on the roads and contract-enforcing wardens.\n- Choice A restates both provisions and adds nothing beyond them.\n\n**Why the other choices are wrong:**\n- B: Silver appears in the passage only as a trade good from German mines, never as loans from the counts.\n- C: The goods are listed as things that changed hands at the fairs; no transport service is mentioned.\n- D: The counts issued regulations and enforced contracts — the text says nothing about exempting anyone from the rules."
 }

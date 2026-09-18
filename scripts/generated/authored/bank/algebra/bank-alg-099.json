@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-099",
+ "question": "A vaccine shipment holds $5(v + 3)$ doses, where $v$ is the number of full trays it contains. If the shipment holds a total of $65$ doses, what is the value of $v$?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~15s):** Divide by $5$ to get $v + 3 = 13$, so $v = 10$.\n\n**The Full Solution:**\n\nStep 1: Set the expression equal to the given total: $5(v + 3) = 65$.\n\nStep 2: Divide both sides by $5$: $v + 3 = 13$.\n\nStep 3: Subtract $3$ from both sides: $v = 10$. Check: $5(10 + 3) = 5(13) = 65$.\n\n**Common Mistakes:**\n\n* $13$ — dividing by $5$ and stopping, without subtracting the $3$.\n* $62$ — subtracting $3$ from $65$ before dividing by $5$, which undoes the operations in the wrong order.\n* $16$ — dividing by $5$ correctly but adding the $3$ instead of subtracting it.\n\n**Test Day Takeaway:** When a sum is wrapped in parentheses and multiplied, undoing the multiplication first is fewer steps than distributing."
+}

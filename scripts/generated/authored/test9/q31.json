@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 2,
-  "passage": "The Shalimar Bagh laid out for the Mughal court in Kashmir descends a hillside in a series of broad terraces, each lower than the one above. Water drawn from a mountain stream runs down the central axis, dropping over carved stone chutes between levels. The slope was not an obstacle the designers merely tolerated but a resource they ______: gravity alone carries the water through the entire garden, feeding its channels, fountains, and pools without a single pump.",
+  "passage": "When the Chinese sheng — a mouth organ of seventeen bamboo pipes bundled upright in a wind chest — first reached European courts in the eighteenth century, listeners who judged instruments by appearance expected the crowded pipes to sound ______; instead, the free reeds spoke together in a blend so even that observers compared the instrument to a small organ.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
-    {
-      "id": "A",
-      "text": "ignored"
-    },
-    {
-      "id": "B",
-      "text": "harnessed"
-    },
-    {
-      "id": "C",
-      "text": "concealed"
-    },
-    {
-      "id": "D",
-      "text": "feared"
-    }
+    { "id": "A", "text": "resonant" },
+    { "id": "B", "text": "cacophonous" },
+    { "id": "C", "text": "muted" },
+    { "id": "D", "text": "overwhelming" }
   ],
   "correctAnswer": "B",
-  "explanation": "The passage frames the slope not as a problem the designers put up with but as something they put to use, since gravity alone drives the water through the garden. The blank needs a verb meaning to make productive use of, and \"harnessed,\" choice B, fits. \"Ignored,\" \"concealed,\" and \"feared\" all clash with a design that depends on the slope to function.",
-  "_meta": {
-    "anchor": "Shalimar Bagh, Mughal garden hydraulics"
-  }
+  "explanation": "**Choice B is correct.** \"Instead\" reverses the expectation, and what actually happened was \"a blend so even\" it recalled an organ. The expectation must therefore have been the opposite of an even blend — a harsh jumble of sounds, which is what \"cacophonous\" means.\n\n**The Full Solution:**\n- The listeners reasoned from looks: seventeen pipes crowded together suggest seventeen competing voices.\n- \"Instead\" tells us the actual sound contradicted that expectation; the actual sound was smooth and unified.\n- The blank must name the contradicted expectation: discordant noise — \"cacophonous.\"\n\n**Why the other choices are wrong:**\n- A: \"Resonant\" is a virtue, not the opposite of an even, organ-like blend — no contradiction for \"instead\" to signal.\n- C: \"Muted\" concerns volume; the surprise in the text is about blend and evenness, not loudness or softness.\n- D: \"Overwhelming\" concerns force rather than order; the reversal in the text is from expected disorder to an even blend, not from loudness to restraint."
 }

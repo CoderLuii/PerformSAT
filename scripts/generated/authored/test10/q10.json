@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 1,
- "passage": "Volcanologists distinguish eruptions less by their size than by their style. In an effusive eruption, low-viscosity magma—typically basalt, poor in dissolved gas and silica—rises and spills out as flowing lava, building the broad, gently sloping shields of volcanoes like those in Hawaii. In an explosive eruption, by contrast, the magma is rich in silica and dissolved gas; as it nears the surface and pressure drops, the gas comes out of solution so violently that it shatters the magma into ash and pumice, blasting it upward in towering columns. The same volcano can shift between these styles as the composition of its magma changes over time.",
- "question": "According to the text, what distinguishes the magma involved in an explosive eruption from the magma involved in an effusive eruption?",
+ "passage": "A blown glass vessel left to cool in open air rarely survives long. Because glass conducts heat poorly, the outer surface hardens while the interior is still contracting, and the mismatch locks permanent stress into the walls; a light knock, or nothing at all, can release that stress as a crack. Glassblowers therefore finish every piece in an annealing oven, which holds the work just below the temperature at which it would begin to deform and then lowers the heat over several hours. The slow, even cooling lets the entire thickness of the glass contract together, leaving no stress behind.",
+ "question": "According to the text, why do glassblowers place finished pieces in an annealing oven?",
  "choices": [
   {
    "id": "A",
-   "text": "It holds more dissolved gas and silica, so that escaping gas shatters it into ash and pumice near the surface."
+   "text": "To cool the glass slowly and evenly enough that stress does not become locked into its walls."
   },
   {
    "id": "B",
-   "text": "It flows more readily across the surface, building the broad, gently sloping shields seen at volcanoes such as those in Hawaii."
+   "text": "To reheat the glass until it softens and deforms so that flaws in the walls can be worked out by hand."
   },
   {
    "id": "C",
-   "text": "It is poorer in silica and dissolved gas and rises slowly without fragmenting into ash."
+   "text": "To harden the outer surface of a vessel before its interior has finished contracting."
   },
   {
    "id": "D",
-   "text": "It changes composition only after an eruption has already begun, rather than over longer spans of time."
+   "text": "To test whether a vessel can withstand a light knock without developing a crack."
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The passage says that in an explosive eruption the magma is rich in silica and dissolved gas, and that as pressure drops near the surface the gas comes out of solution violently enough to shatter the magma into ash and pumice. Choice A reports exactly that contrast. Choices B and C describe the effusive case—free-flowing, gas-poor, shield-building magma—so they attribute the wrong properties to explosive eruptions. Choice D contradicts the passage, which says composition changes over time and can shift a volcano between styles, not only after an eruption starts."
+ "explanation": "**Choice A is correct.** The text states the oven's function directly: it lowers the heat over hours so that \"the entire thickness of the glass\" contracts together, \"leaving no stress behind.\"\n\n**The Full Solution:**\n- The problem is set up first: uneven cooling locks stress into the walls, and that stress later escapes as a crack.\n- The annealing oven is introduced with \"therefore\" as the remedy, and the final sentence names the mechanism, slow, even cooling that prevents stress.\n\n**Why the other choices are wrong:**\n- B: The oven holds the glass just below the deformation point; deforming the piece is exactly what it avoids.\n- C: Hardening the surface before the interior finishes contracting is the failure the oven exists to prevent, not its purpose.\n- D: The light knock illustrates how stressed glass fails; the oven prevents the stress rather than testing resistance to it."
 }

@@ -1,0 +1,38 @@
+{
+  "id": 9002,
+  "passage": "In Elizabeth Gaskell's 1853 novel Cranford, a visitor narrates the life of a small English town whose households are run almost entirely by unmarried women of modest means. Much of the first chapter is given over to the town's settled customs: what may be worn, when calls may be paid, how long a caller may stay. A reader might argue that the narrator states one of these rules and, in the same even tone, the peculiar effect that obeying it has on conversation.",
+  "question": "Which quotation from Cranford most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "\"Then there were rules and regulations for visiting and calls; and they were announced to any young people who might be staying in the town\""
+    },
+    {
+      "id": "B",
+      "text": "\"The Cranford ladies have only an occasional little quarrel, spirited out in a few peppery words and angry jerks of the head\""
+    },
+    {
+      "id": "C",
+      "text": "\"As everybody had this rule in their minds, whether they received or paid a call, of course no absorbing subject was ever spoken about.\""
+    },
+    {
+      "id": "D",
+      "text": "\"I can testify to a magnificent family red silk umbrella, under which a gentle little spinster, left alone of many brothers and sisters, used to patter to church on rainy days.\""
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** The sentence names the rule everyone keeps in mind during a call and then reports its consequence for talk itself: because the clock is always being watched, \"no absorbing subject was ever spoken about.\"\n\n**The Full Solution:**\n- The claim has two parts, so mark them: the quotation must refer to a Cranford rule and must state what follows from keeping it.\n- Choice C supplies both in one sentence. \"As everybody had this rule in their minds\" is the custom; \"of course no absorbing subject was ever spoken about\" is the effect, delivered as though it were the most ordinary thing in the world.\n- Eliminate quotations that give a custom with no consequence, or a consequence with no custom. Only one choice completes the circuit.\n\n**Why the other choices are wrong:**\n- A: This announces that rules for visiting exist, which is the first half of the claim only; the sentence never says what obeying them does to the visit.\n- B: This describes how Cranford quarrels are conducted, and no rule of visiting is in view.\n- D: This is a remembered detail about an umbrella and its owner, which illustrates the town's old-fashioned character rather than the workings of any rule.",
+  "source": {
+    "title": "Cranford",
+    "author": "Elizabeth Gaskell",
+    "year": 1853,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/394"
+  },
+  "people": [
+    {
+      "name": "Elizabeth Gaskell",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/394"
+    }
+  ]
+}

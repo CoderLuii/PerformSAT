@@ -1,0 +1,41 @@
+{
+  "id": 3,
+  "question": "The graph of $y=f(x)$ is shown in the $xy$-plane. The function $g$ is defined by $g(x)=f(x-2)-6$. The graph of $y=g(x)$ attains its maximum value at which point?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        -3,
+        5
+      ],
+      "a": -0.5,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-5,-1)$"
+    },
+    {
+      "id": "B",
+      "text": "$(-5,11)$"
+    },
+    {
+      "id": "C",
+      "text": "$(-1,-1)$"
+    },
+    {
+      "id": "D",
+      "text": "$(-1,11)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "shifts left instead of right",
+    "B": "reverses the direction of both shifts",
+    "D": "adds 6 instead of subtracting"
+  },
+  "correctAnswer": "C",
+  "hint": "Read the highest point of the graph shown, then move it once horizontally and once vertically.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** The peak of $f$ is at $(-3,5)$; moving right $2$ and down $6$ puts the peak of $g$ at $(-1,-1)$.\n\n**The Full Solution:**\nStep 1: From the graph, the greatest value of $f$ is $5$, attained at $x=-3$, so the high point is $(-3,5)$.\nStep 2: The inside change $x-2$ shifts the graph right $2$ units: $-3+2=-1$.\nStep 3: The outside $-6$ lowers every output: $5-6=-1$. The maximum of $g$ occurs at $(-1,-1)$. Check: $g(-1)=f(-1-2)-6=f(-3)-6=5-6=-1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-5,-1)$): shifts left instead of right; $f(x-2)$ moves the graph in the positive direction.\n* Choice B ($(-5,11)$): reverses both changes at once — left instead of right and up instead of down.\n* Choice D ($(-1,11)$): adds $6$ to the height instead of subtracting it.\n\n**Test Day Takeaway:** Extreme points travel with the graph: apply the horizontal rule to the $x$-coordinate and the vertical rule to the $y$-coordinate."
+}

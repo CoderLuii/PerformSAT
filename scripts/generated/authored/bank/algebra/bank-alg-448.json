@@ -1,0 +1,29 @@
+{
+ "question": "For one season, two staff members model the same linear relationship between games started $x$ and games entered as a substitute $y$, writing $3x + ky = 21$ and $kx + 12y = c$, where $k$ is a positive constant and $c$ is a constant. The two equations have exactly the same solutions. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$21$"
+  },
+  {
+   "id": "C",
+   "text": "$42$"
+  },
+  {
+   "id": "D",
+   "text": "$126$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the value of $k$ found from $k^2 = 36$ instead of the value of $c$",
+  "B": "copies the first model's constant, assuming the two equations are identical rather than proportional",
+  "D": "scales $21$ by $k = 6$ instead of by the scale factor $2$"
+ },
+ "explanation": "**SAT Pattern: Same Line Infinitely Many Solutions**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Matching coefficients gives $\\frac{3}{k} = \\frac{k}{12}$, so $k^2 = 36$ and $k = 6$. The scale factor is $\\frac{6}{3} = 2$, so $c = 21(2) = 42$.\n\n**The Full Solution:**\n\nStep 1: Identical solutions mean the second equation is a nonzero multiple $r$ of the first, so $kx + 12y = c$ equals $r$ times $3x + ky = 21$.\n\nStep 2: From the $x$-terms, $k = 3r$; from the $y$-terms, $12 = kr$. Substituting gives $12 = 3r^2$, so $r^2 = 4$. Since $k$ is positive, $r = 2$ and $k = 6$.\n\nStep 3: Then $c = 21(2) = 42$. Check: $6x + 12y = 42$ is exactly twice $3x + 6y = 21$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($6$): stops at $k = 6$, the constant solved for along the way, instead of $c$.\n\n* Choice B ($21$): assumes the two models are literally the same equation, so no scaling is applied to $21$.\n\n* Choice D ($126$): multiplies $21$ by $k = 6$ rather than by the scale factor $r = 2$.\n\n**Test Day Takeaway:** When the unknown constant sits in both equations, write the two coefficient ratios as one equation in the scale factor, then let the stated sign condition choose the root.",
+ "id": "bank-alg-448"
+}

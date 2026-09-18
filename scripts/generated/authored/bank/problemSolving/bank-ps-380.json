@@ -1,0 +1,82 @@
+{
+  "id": "bank-ps-380",
+  "question": "The scatterplot shows the mass, in grams, of each of $8$ seedlings against its age, in days, along with the line of best fit $\\hat{y} = 1.4x + 3$. According to the line of best fit, what is the predicted mass, in grams, of a seedling that is $20$ days old?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          5,
+          11
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          12,
+          20
+        ],
+        [
+          15,
+          23
+        ],
+        [
+          18,
+          29
+        ],
+        [
+          22,
+          32
+        ],
+        [
+          25,
+          39
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 28,
+      "yMin": 0,
+      "yMax": 44,
+      "xGridStep": 2,
+      "yGridStep": 4,
+      "xLabelStep": 4,
+      "yLabelStep": 8,
+      "xLabel": "Age (days)",
+      "yLabel": "Mass (g)",
+      "bestFitLine": {
+        "slope": 1.4,
+        "intercept": 3
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$23$"
+    },
+    {
+      "id": "B",
+      "text": "$28$"
+    },
+    {
+      "id": "C",
+      "text": "$31$"
+    },
+    {
+      "id": "D",
+      "text": "$43$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "evaluates $x + 3$, dropping the slope entirely",
+    "B": "evaluates $1.4x$ and forgets to add the intercept",
+    "D": "rounds the slope $1.4$ up to $2$ before substituting"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Substitute $x = 20$: $\\hat{y} = 1.4(20) + 3 = 28 + 3 = 31$.\n\n**The Full Solution:**\nStep 1: The line of best fit predicts $\\hat{y}$ from $x$, where $x$ is the age in days and $\\hat{y}$ is the predicted mass in grams.\nStep 2: Substitute $x = 20$: $\\hat{y} = 1.4(20) + 3$.\nStep 3: $1.4(20) = 28$, so $\\hat{y} = 28 + 3 = 31$ grams. Check: on the plot, the line at $x = 20$ sits between the points near $18$ and $22$ days, whose masses are $29$ and $32$ grams. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($23$): evaluates $x + 3$, dropping the slope entirely\n* Choice B ($28$): evaluates $1.4x$ and forgets to add the intercept\n* Choice D ($43$): rounds the slope $1.4$ up to $2$ before substituting\n\n**Test Day Takeaway:** A prediction from a line of best fit is a substitution: put the given $x$ into the equation and evaluate both terms."
+}

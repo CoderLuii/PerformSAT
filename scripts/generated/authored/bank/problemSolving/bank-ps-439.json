@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-439",
+  "question": "After a $45\\%$ increase, the monthly water use at a bottling facility is $319$ kiloliters. What was the monthly water use, in kiloliters, before the increase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$175.45$"
+    },
+    {
+      "id": "B",
+      "text": "$220$"
+    },
+    {
+      "id": "C",
+      "text": "$462.55$"
+    },
+    {
+      "id": "D",
+      "text": "$708.89$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts $45\\%$ of the new amount instead of dividing by $1.45$.",
+    "C": "increases the new amount by another $45\\%$.",
+    "D": "divides by $0.45$ instead of by $1.45$."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse Percent**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The new use is $145\\%$ of the old use, so the old use is $\\frac{319}{1.45}=220$ kiloliters.\n\n**The Full Solution:**\nStep 1: Let $w$ be the monthly water use before the increase.\nStep 2: A $45\\%$ increase multiplies by $1.45$, so $1.45w=319$.\nStep 3: $w=\\frac{319}{1.45}=220$ kiloliters. Check: $45\\%$ of $220$ is $99$, and $220+99=319$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($175.45$): computes $0.55\\times 319$, removing $45\\%$ of the new figure rather than of the old one.\n* Choice C ($462.55$): computes $1.45\\times 319$, applying the increase a second time.\n* Choice D ($708.89$): divides by the rate of change $0.45$ instead of the growth factor $1.45$.\n\n**Test Day Takeaway:** \"After a $p\\%$ increase\" means the given number is already the product. Divide by $1+\\frac{p}{100}$, never by $\\frac{p}{100}$."
+}

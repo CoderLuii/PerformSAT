@@ -57,10 +57,11 @@ if (SENTRY_DSN) {
 }
 
 // Product analytics: PostHog, lazy-loaded so its ~70KB gz never rides in the
-// entry chunk (see services/posthogClient.js for config + privacy posture).
-// Inert until REACT_APP_POSTHOG_KEY is set. The app is view-state driven (URL
-// stays /course), so per-view funnels come from analyticsService's mirrored
-// events rather than pageviews.
+// entry chunk (see services/posthogClient.js for config + privacy posture,
+// incl. session replay with masked inputs). Inert until REACT_APP_POSTHOG_KEY
+// is set. The app is view-state driven (URL stays /course), so per-screen
+// pageviews come from phScreenView in App.jsx (synthetic $pageview per view)
+// alongside analyticsService's mirrored product events.
 initPostHog();
 
 // Global KaTeX style fixes

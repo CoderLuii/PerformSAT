@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-418",
+  "question": "A quality inspector examined $84$ welds and found that $21$ of them required rework. What percent of the welds examined required rework?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$21\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$75\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides $84$ by $21$ and reports the ratio $4$ as a percent",
+    "B": "reports the number of welds requiring rework as a percent",
+    "D": "reports the percent of welds that did not require rework"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** $\\frac{21}{84} = \\frac{1}{4} = 25\\%$.\n\n**The Full Solution:**\nStep 1: \"What percent of\" means divide the part by the whole: $\\frac{21}{84}$.\nStep 2: Simplify: $\\frac{21}{84} = \\frac{1}{4}$.\nStep 3: $\\frac{1}{4} = 0.25 = 25\\%$. Check: $25\\%$ of $84$ is $21$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4\\%$): divides $84$ by $21$ and reports the ratio $4$ as a percent\n* Choice B ($21\\%$): reports the number of welds requiring rework as a percent\n* Choice D ($75\\%$): reports the percent of welds that did not require rework\n\n**Test Day Takeaway:** The number after \"of\" is the whole and belongs in the denominator; reversing the division gives a ratio, not a percent."
+}

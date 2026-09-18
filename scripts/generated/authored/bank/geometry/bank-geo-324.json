@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-324",
+ "question": "A solar reflector is fabricated as a triangle whose height, in meters, is $3$ less than its base $b$. Which of the following expressions represents the reflector's area, in square meters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{b(b+3)}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{b(b-3)}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$b(b-3)$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{b(3-b)}{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds 3 to the base instead of subtracting it",
+  "C": "omits the factor 1/2 from the triangle area formula",
+  "D": "reverses the subtraction, writing 3-b instead of b-3"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Triangle Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The height is $b - 3$, so the area is $\\frac{1}{2}b(b-3) = \\frac{b(b-3)}{2}$.\n\n**The Full Solution:**\nStep 1: The base is $b$ meters, and \"$3$ less than the base\" means the height is $b - 3$ meters.\nStep 2: A triangle's area is $\\frac{1}{2}bh$, so substituting gives $\\frac{1}{2}\\,b\\,(b-3)$.\nStep 3: Written as a single fraction, that is $\\frac{b(b-3)}{2}$.\n\nCheck: With $b = 11$ the height is $8$ and the area is $44$; the expression gives $\\frac{11(8)}{2} = 44$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{b(b+3)}{2}$): adds $3$ to the base instead of subtracting it, so it models a height of $b + 3$.\n* Choice C ($b(b-3)$): uses the right base and height but omits the factor $\\frac{1}{2}$, giving the rectangle's area.\n* Choice D ($\\frac{b(3-b)}{2}$): reverses the subtraction; for any base over $3$ meters this expression is negative.\n\n**Test Day Takeaway:** Translate \"$k$ less than $x$\" as $x - k$, in that order, before substituting into a formula."
+}

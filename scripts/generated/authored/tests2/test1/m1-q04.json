@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "Triangle $PQR$ has vertices $P(1, 2)$, $Q(1, 9)$, and $R(25, 2)$ in the $xy$-plane. Because $P$ and $Q$ have the same $x$-coordinate and $P$ and $R$ have the same $y$-coordinate, the angle at $P$ is a right angle. What is the length of $\\overline{QR}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$17$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$25$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "gives the vertical leg PQ, 9 - 2 = 7, instead of the segment joining Q and R",
+  "B": "subtracts the two leg lengths, 24 - 7 = 17, instead of using the Pythagorean relationship",
+  "C": "gives the horizontal leg PR, 25 - 1 = 24, instead of the segment joining Q and R"
+ },
+ "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The legs measure $9 - 2 = 7$ and $25 - 1 = 24$, a $7$-$24$-$25$ right triangle, so $QR = 25$.\n\n**The Full Solution:**\nStep 1: Find the vertical change from $Q(1, 9)$ to $R(25, 2)$: $9 - 2 = 7$.\nStep 2: Find the horizontal change: $25 - 1 = 24$.\nStep 3: Apply the distance formula: $\\sqrt{24^{2} + 7^{2}} = \\sqrt{576 + 49} = \\sqrt{625} = 25$. Check: $7^{2} + 24^{2} = 625 = 25^{2}$, so the three lengths do satisfy the Pythagorean theorem ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): reports the vertical leg $PQ$. That is one side of the right angle, not the side opposite it.\n* Choice B ($17$): subtracts the changes, $24 - 7 = 17$. A distance is never the difference of the horizontal and vertical changes.\n* Choice C ($24$): reports the horizontal leg $PR$, the longer leg, instead of the hypotenuse.\n\n**Test Day Takeaway:** The distance between two points is the hypotenuse of the right triangle built from the horizontal and vertical changes, so it must exceed both of them — an instant check against answering with a leg."
+}

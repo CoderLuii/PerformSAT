@@ -1,0 +1,37 @@
+{
+  "id": 16,
+  "question": "For each fabric grade, the loom tension model $T(x) = ax^{2} + bx + c$ uses the constants $a$, $b$, and $c$ given in the table, where $x$ is the loom speed in meters per minute. For Grade 2, the equation $T(x) = 0$ has two solutions. What is the sum of those two solutions?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Fabric grade",
+        "a",
+        "b",
+        "c"
+      ],
+      "rows": [
+        [
+          "Grade 1",
+          "2",
+          "-18",
+          "36"
+        ],
+        [
+          "Grade 2",
+          "3",
+          "-24",
+          "36"
+        ],
+        [
+          "Grade 3",
+          "5",
+          "-35",
+          "60"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "8",
+  "explanation": "**SAT Pattern: Quadratic — Vieta's Sum/Product**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~20s):** For $ax^{2} + bx + c = 0$ the solutions sum to $-\\frac{b}{a}$. Grade 2 gives $-\\frac{-24}{3} = 8$.\n\n**The Full Solution:**\nStep 1: Read the Grade 2 row: $a = 3$, $b = -24$, $c = 36$, so the equation is $3x^{2} - 24x + 36 = 0$.\nStep 2: Write the quadratic as $a(x - r_{1})(x - r_{2}) = 0$ and expand: the coefficient of $x$ is $-a(r_{1} + r_{2})$, so $r_{1} + r_{2} = -\\frac{b}{a} = -\\frac{-24}{3} = 8$.\nStep 3: Confirm by factoring: $3x^{2} - 24x + 36 = 3(x^{2} - 8x + 12) = 3(x - 2)(x - 6)$, whose solutions are $2$ and $6$. Their sum is $8$. ✓\n\n**Common Mistakes:**\n* $12$: computes $\\frac{c}{a} = \\frac{36}{3}$, which is the PRODUCT of the two solutions, not the sum.\n* $-8$: uses $\\frac{b}{a}$ and forgets the minus sign in $-\\frac{b}{a}$.\n* $9$: reads the Grade 1 row instead of Grade 2, giving $-\\frac{-18}{2}$.\n\n**Test Day Takeaway:** Sum of solutions is $-\\frac{b}{a}$ and product is $\\frac{c}{a}$ — no factoring, no quadratic formula. The two traps are dropping the leading minus sign and reaching for the wrong one of the pair."
+}

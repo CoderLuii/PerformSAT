@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "The circle $(x - 1)^2 + (y + 6)^2 = 16$ is translated in the $xy$-plane so that its center moves to $(4, -2)$. Which equation defines the translated circle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x - 4)^2 + (y + 2)^2 = 16$"
+  },
+  {
+   "id": "B",
+   "text": "$(x + 4)^2 + (y - 2)^2 = 16$"
+  },
+  {
+   "id": "C",
+   "text": "$(x - 4)^2 + (y + 2)^2 = 4$"
+  },
+  {
+   "id": "D",
+   "text": "$(x - 7)^2 + (y - 2)^2 = 16$"
+  }
+ ],
+ "correctAnswer": "A",
+ "hint": "Only one part of the equation is allowed to change here.",
+ "distractorNotes": {
+  "B": "flips the signs of the new center",
+  "C": "replaces r squared with r",
+  "D": "applies the shift twice"
+ },
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** The new center is $(4, -2)$ and the radius still satisfies $r^2 = 16$, so the equation is $(x - 4)^2 + (y + 2)^2 = 16$.\n\n**The Full Solution:**\nStep 1: A translation moves the center but preserves the radius, so $r^2 = 16$ carries over unchanged.\nStep 2: Substitute $h = 4$ and $k = -2$ into $(x - h)^2 + (y - k)^2 = r^2$.\nStep 3: The equation is $(x - 4)^2 + (y + 2)^2 = 16$. Check: the center moved from $(1, -6)$ to $(4, -2)$, a shift of $3$ right and $4$ up, which is a rigid motion.\n\n**Why the wrong answers are tempting:**\n* Choice B ($(x + 4)^2 + (y - 2)^2 = 16$): flips both signs, placing the center at $(-4, 2)$.\n* Choice C ($(x - 4)^2 + (y + 2)^2 = 4$): replaces $r^2 = 16$ with the radius $4$.\n* Choice D ($(x - 7)^2 + (y - 2)^2 = 16$): computes the shift $(3, 4)$ and applies it a second time, landing the center at $(7, 2)$.\n\n**Test Day Takeaway:** When the destination center is handed to you, write it straight into standard form. Recomputing the shift only creates a chance to apply it twice."
+}

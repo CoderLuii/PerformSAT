@@ -1,0 +1,60 @@
+{
+ "id": "bank-am-385",
+ "question": "The table gives an exhibit's attendance for five consecutive weeks, and the attendance grows by the same factor each week. Which statement best describes the weekly change in attendance?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Week w",
+    "Attendance"
+   ],
+   "rows": [
+    [
+     "0",
+     "625"
+    ],
+    [
+     "1",
+     "750"
+    ],
+    [
+     "2",
+     "900"
+    ],
+    [
+     "3",
+     "1,080"
+    ],
+    [
+     "4",
+     "1,296"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The attendance increases by 120% each week."
+  },
+  {
+   "id": "B",
+   "text": "The attendance increases by 20% each week."
+  },
+  {
+   "id": "C",
+   "text": "The attendance increases by 125 people each week."
+  },
+  {
+   "id": "D",
+   "text": "The attendance increases by 20 people each week."
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reads the growth factor 1.2 as a 120% increase",
+  "C": "uses the first week's difference of 125 as a constant increase",
+  "D": "reads the 20% growth as an increase of 20 people"
+ },
+ "explanation": "**SAT Pattern: Interpret Exponential Parameters**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Each attendance is 1.2 times the previous one, and a factor of 1.2 is a 20% increase.\n\n**The Full Solution:**\nStep 1: Divide consecutive entries: $\\frac{750}{625}=1.2$ and $\\frac{900}{750}=1.2$.\nStep 2: The same factor appears throughout, so the growth is exponential with base 1.2.\nStep 3: A base of 1.2 adds 20% of the previous week's attendance. Check: $\\frac{1{,}296}{1{,}080}=1.2$, so the last step follows the same rule ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: reports the factor 1.2 as the percent increase.\n* Choice C: uses the difference $750-625=125$ as if the growth were linear; the next difference is 150.\n* Choice D: turns the 20% into 20 people.\n\n**Test Day Takeaway:** Divide consecutive values to test for exponential growth; the base minus 1 is the percent change."
+}

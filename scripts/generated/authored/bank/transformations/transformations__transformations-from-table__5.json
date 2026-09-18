@@ -1,0 +1,58 @@
+{
+ "id": 5,
+ "question": "The table gives an orchard frost sensor's nightly temperature margin $f(x)$, in degrees Celsius, on night $x$. The block's risk index is $g(x) = -f(x) + 10$. What is the greatest value of $g(x)$ among the nights listed?",
+ "questionTable": {
+  "headers": [
+   "Night $x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$6$"
+   ],
+   [
+    "$2$",
+    "$-2$"
+   ],
+   [
+    "$3$",
+    "$4$"
+   ],
+   [
+    "$4$",
+    "$-7$"
+   ],
+   [
+    "$5$",
+    "$3$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$17$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the greatest margin 6, computing -6 + 10 = 4",
+  "B": "stops at the first negative margin -2, computing 12",
+  "C": "drops the negative sign, computing 6 + 10 = 16"
+ },
+ "correctAnswer": "D",
+ "hint": "The greatest index need not come from the greatest margin.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~30s):** The reflection makes the most negative margin the largest index: $-(-7) + 10 = 17$.\n\n**The Full Solution:**\nStep 1: Because of the minus sign, $g$ is largest where $f$ is smallest.\nStep 2: The smallest margin listed is $-7$ degrees, on night $4$.\nStep 3: So the greatest risk index is $g(4) = -(-7) + 10 = 7 + 10 = 17$. Check: the other nights give $4$, $12$, $6$, and $7$, all below $17$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): using the greatest margin, $6$, and computing $-6 + 10$; the reflection sends the largest margin to the smallest index.\n* Choice B ($12$): stopping at the first negative margin, $-2$, instead of the most negative one.\n* Choice C ($16$): dropping the minus sign and computing $6 + 10$.\n\n**Test Day Takeaway:** A negative coefficient reverses which input gives the extreme value — scan for the smallest, not the largest."
+}

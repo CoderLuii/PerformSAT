@@ -1,0 +1,52 @@
+{
+ "id": "bank-alg-331",
+ "question": "The table shows the fare, in dollars, for an airport shuttle ride of $2$, $5$, and $8$ miles. The fare consists of a fixed charge plus a constant charge per mile. Which equation gives the fare $F$, in dollars, for a ride of $n$ miles?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Miles",
+    "Fare (dollars)"
+   ],
+   "rows": [
+    [
+     "2",
+     "9.50"
+    ],
+    [
+     "5",
+     "17.00"
+    ],
+    [
+     "8",
+     "24.50"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$F = 2.50n + 4.50$"
+  },
+  {
+   "id": "B",
+   "text": "$F = 2.50n + 9.50$"
+  },
+  {
+   "id": "C",
+   "text": "$F = 4.50n + 2.50$"
+  },
+  {
+   "id": "D",
+   "text": "$F = 4.75n$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "used the 2-mile fare as the fixed charge",
+  "C": "swapped the fixed charge and the per-mile rate",
+  "D": "assumed the fare is proportional to miles (9.50/2)"
+ },
+ "explanation": "**SAT Pattern: Linear Cost Equation Setup**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Rate: $\\dfrac{17.00 - 9.50}{5 - 2} = \\dfrac{7.50}{3} = 2.50$ per mile. Fixed charge: $9.50 - 2(2.50) = 4.50$. So $F = 2.50n + 4.50$.\n\n**The Full Solution:**\nStep 1: The per-mile charge is the slope. From $2$ to $5$ miles the fare rises $7.50$, so the rate is $7.50 \\div 3 = 2.50$ dollars per mile. The $5 \\to 8$ rows agree: $24.50 - 17.00 = 7.50$.\nStep 2: The fixed charge is the fare at $0$ miles: $9.50-2(2.50)=4.50$.\nStep 3: Assemble the equation: $F = 2.50n + 4.50$.\nCheck: $n = 8$ gives $2.50(8) + 4.50 = 24.50$, matching the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($F = 2.50n + 9.50$): uses the $2$-mile fare as the fixed charge; the intercept is the fare at zero miles, not at the first row.\n* Choice C ($F = 4.50n + 2.50$): finds both numbers but swaps them, charging $\\$4.50$ per mile.\n* Choice D ($F = 4.75n$): divides $9.50$ by $2$ and assumes the fare is proportional; the table's rows are not multiples of one another.\n\n**Test Day Takeaway:** Build a linear cost equation from a table in two moves: slope from two rows, then intercept by backing the slope out of one row."
+}

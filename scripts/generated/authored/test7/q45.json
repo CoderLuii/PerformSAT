@@ -1,31 +1,31 @@
 {
-  "id": 745,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 2,
-  "passage": "Story quilts—narrative textiles that collapse the boundary between fine art and craft—can carry far more than decoration. One celebrated quilt from 1991 showed that a single stitched surface could layer autobiography, fantasy, ______ political testimony, holding several kinds of meaning within one composition.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "and"
-    },
-    {
-      "id": "B",
-      "text": "and how it offered"
-    },
-    {
-      "id": "C",
-      "text": "and offering"
-    },
-    {
-      "id": "D",
-      "text": "and to offer"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The sentence presents a three-item list of nouns — \"autobiography, fantasy, and political testimony\" — so the simple coordinating \"and\" preserves the parallel structure. Choices B, C, and D each attach an extra verb phrase (\"how it offered,\" \"offering,\" \"to offer\") that breaks the parallelism of the list and leaves \"political testimony\" no longer matching the two nouns before it."
+ "id": 745,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 2,
+ "passage": "Nineteenth-century American households that owned few other books often kept an almanac within reach. A single year's edition could mix astronomical tables, planting calendars, ______ home remedies, all packed into dense columns that a family might consult weekly until the next edition arrived.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "and"
+  },
+  {
+   "id": "B",
+   "text": "and it offered"
+  },
+  {
+   "id": "C",
+   "text": "and offering"
+  },
+  {
+   "id": "D",
+   "text": "and to offer"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The sentence lists three things the almanac could mix — astronomical tables, planting calendars, and home remedies — and parallel structure requires the third item to match the first two as a plain noun phrase, which a simple \"and\" provides.\n\n**The Full Solution:**\n- Identify the series: three objects of the verb \"mix,\" each a noun phrase.\n- The first two items are bare noun phrases, so the third must be one as well.\n- \"and home remedies\" completes the balanced list: tables, calendars, and remedies.\n\n**Why the other choices are wrong:**\n- B: \"And it offered\" bolts a new clause onto the list, so the third item no longer parallels the two noun phrases.\n- C: \"And offering\" turns the third item into a participial phrase, breaking the noun-noun-noun pattern.\n- D: \"And to offer\" introduces an infinitive where the series calls for a noun phrase."
 }

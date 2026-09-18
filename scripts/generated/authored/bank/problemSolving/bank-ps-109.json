@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-109",
+  "question": "In a shipment of flower bulbs, $234$ of the bulbs are tulip bulbs, which is $65\\%$ of the bulbs in the shipment. How many bulbs are in the shipment?",
+  "correctAnswer": "360",
+  "explanation": "**SAT Pattern: Reverse-Percent**\n\n**The correct answer is $360$.**\n\n**The Fast Way (~15s):** $\\dfrac{234}{0.65} = 360$.\n\n**The Full Solution:**\nStep 1: Let $b$ be the number of bulbs in the shipment; then $0.65b = 234$.\nStep 2: Divide both sides by $0.65$: $b = \\dfrac{234}{0.65}$.\nStep 3: $b = 360$ bulbs.\nCheck: $0.65 \\times 360 = 234$. $\\checkmark$\n\n**Common Mistakes:** Multiplying instead of dividing, $0.65(234) = 152.1$; increasing the part by $65\\%$, $1.65(234) = 386.1$; dividing by the other $35\\%$, which gives about $668.57$.\n\n**Test Day Takeaway:** Translate the sentence into one equation, part $=$ rate $\\times$ whole, and solve for the unknown factor."
+}

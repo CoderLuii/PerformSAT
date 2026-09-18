@@ -6,7 +6,7 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 1,
- "passage": "Traditional Pacific navigators crossed thousands of miles of open ocean without charts or instruments, holding a course by reading the rising and setting points of particular stars as they climbed the night sky. The stars were not their only guide. ______ a skilled navigator learned to feel the long ocean swells refracting around unseen islands and to read the flight paths of seabirds that roost on land at night, building a picture of position from many overlapping signs.",
+ "passage": "A hazel stool cut on a seven-year rotation yields a crop of straight poles sized for fence rails, bean sticks, and the woven panels called hurdles. ______ the brushwood left over from trimming was bundled into faggots and sold as fuel for bread ovens, so almost nothing cut in a working coppice went to waste.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
@@ -15,17 +15,17 @@
   },
   {
    "id": "B",
-   "text": "However,"
+   "text": "Nevertheless,"
   },
   {
    "id": "C",
-   "text": "For example,"
+   "text": "Therefore,"
   },
   {
    "id": "D",
-   "text": "As a result,"
+   "text": "For instance,"
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The passage first describes one navigational technique—holding a course by the rising and setting points of particular stars—and then says the stars were not the only guide before naming further techniques: reading ocean swells and the flight of seabirds. \"In addition\" signals that these are added guides alongside the stars. \"However\" would mark a contrast, but the sentence extends rather than opposes the prior point; \"For example\" would treat swells and birds as instances of star navigation, which they are not; and \"As a result\" would wrongly cast them as a consequence."
+ "explanation": "**Choice A is correct.** The second sentence stacks a further product, fuel faggots from the trimmings, on top of the poles named in the first, and the sentence's own conclusion, \"almost nothing... went to waste,\" confirms that the two sentences are items in an accumulating list. \"In addition\" marks that relationship.\n\n**The Full Solution:**\n- Sentence one: the rotation yields poles for rails, sticks, and hurdles.\n- Sentence two: beyond those, even the leftover brushwood found a market as oven fuel.\n- Adding a second use to a first calls for an additive transition.\n\n**Why the other choices are wrong:**\n- B: \"Nevertheless\" concedes an obstacle or contradiction, but the second sentence reinforces the first rather than pushing against it.\n- C: \"Therefore\" would present the faggot trade as a logical consequence of the pole crop, but the two are parallel uses, not cause and effect.\n- D: \"For instance\" would make the brushwood an example of the poles just listed, but it is a different product entirely."
 }

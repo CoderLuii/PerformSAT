@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-058",
+ "question": "A console's left and right channel settings, $x$ and $y$, satisfy both of the equations $7x - 3y = 23$ and $5x + 6y = 49$, and the constant $m$ denotes the value of $2x + y$ at those settings. What is the value of $m$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$14$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes x + y instead of 2x + y",
+  "B": "computes x + 2y, swapping which variable is doubled",
+  "D": "doubles both settings, computing 2x + 2y"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Elimination with Scaling**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Doubling the first equation gives $14x - 6y = 46$; adding the second gives $19x = 95$, so $x = 5$, $y = 4$, and $2x + y = 14$.\n\n**The Full Solution:**\nStep 1: Scale the first equation by $2$ so the $y$-terms become opposites: $14x - 6y = 46$, alongside $5x + 6y = 49$.\nStep 2: Add them: $19x = 95$, so $x = 5$.\nStep 3: Substitute back: $7(5) - 3y = 23$ gives $3y = 12$ and $y = 4$, so $m = 2(5) + 4 = 14$. Check: $5(5) + 6(4) = 25 + 24 = 49$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): computes $x + y$ instead of $2x + y$.\n* Choice B ($13$): computes $x + 2y$, doubling the wrong variable.\n* Choice D ($18$): doubles both settings, computing $2x + 2y$.\n\n**Test Day Takeaway:** Scale one equation until a pair of coefficients are opposites, then read the question again — it often asks for a combination, not a single variable."
+}

@@ -1,0 +1,60 @@
+{
+ "id": 8,
+ "question": "Netting from two ponds produced the $250$ fish summarized in the table. If a fish drawn at random from these $250$ has probability $0.28$ of being tagged, how many Pond B fish were tagged?",
+ "diagram": {
+  "type": "twoWayTable",
+  "params": {
+   "headers": [
+    "",
+    "Tagged",
+    "Not tagged",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Pond A",
+     "32",
+     "118",
+     "150"
+    ],
+    [
+     "Pond B",
+     "?",
+     "?",
+     "100"
+    ],
+    [
+     "Total",
+     "?",
+     "?",
+     "250"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$28$"
+  },
+  {
+   "id": "B",
+   "text": "$38$"
+  },
+  {
+   "id": "C",
+   "text": "$42$"
+  },
+  {
+   "id": "D",
+   "text": "$70$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies 0.28 to Pond B's 100 fish instead of the whole sample: 0.28(100) = 28",
+  "C": "applies 0.28 to Pond A's 150 fish: 0.28(150) = 42",
+  "D": "reports the tagged total for both ponds, 0.28(250) = 70, instead of the Pond B share"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $0.28(250) = 70$ tagged fish in all, and $70 - 32 = 38$ of them came from Pond B.\n\n**The Full Solution:**\nStep 1: A marginal probability uses the grand total as its denominator, so the number of tagged fish is $0.28 \\times 250 = 70$.\nStep 2: The table reports $32$ tagged fish from Pond A.\nStep 3: The Tagged column must total $70$, so Pond B contributed $70 - 32 = 38$ tagged fish.\nCheck: $\\dfrac{32 + 38}{250} = \\dfrac{70}{250} = 0.28$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($28$): multiplies $0.28$ by Pond B's $100$ fish; the stated probability describes the whole sample, not one pond.\n* Choice C ($42$): multiplies $0.28$ by Pond A's $150$ fish, which would be the tagged count for the wrong pond.\n* Choice D ($70$): this is the tagged total for both ponds combined, one subtraction short of the answer.\n\n**Test Day Takeaway:** A probability given \"for the sample\" is a column total over the grand total — recover the column total first, then split it."
+}

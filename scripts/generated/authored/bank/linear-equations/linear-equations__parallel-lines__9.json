@@ -1,0 +1,30 @@
+{
+ "id": 9,
+ "question": "A rental agreement's cost-balance model sets $5(2x - 3) + k = 4(kx + 1) - 7$, where $x$ counts months of occupancy and $k$ is a constant. For which value of $k$ is there no value of $x$ that satisfies this equation?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2.5$"
+  },
+  {
+   "id": "B",
+   "text": "$2$"
+  },
+  {
+   "id": "C",
+   "text": "$2.5$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "matches the coefficients but drops the sign, reporting -2.5 instead of 2.5",
+  "B": "divides the coefficient 10 by the 5 outside the left parentheses instead of by the 4 on the right",
+  "D": "reports the left side's coefficient of x, 10, without dividing by 4"
+ },
+ "correctAnswer": "C",
+ "hint": "No solution means the variable terms match while the constants do not.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~50s):** Expanding gives $10x + (k - 15) = 4kx - 3$; matching the $x$-terms forces $4k = 10$, so $k = 2.5$, and the constants then disagree.\n\n**The Full Solution:**\nStep 1: Expand both sides: the left becomes $10x - 15 + k$ and the right becomes $4kx + 4 - 7 = 4kx - 3$.\nStep 2: A linear equation has no solution when the $x$-terms are identical but the constant terms are not, so set $10 = 4k$, giving $k = 2.5$.\nStep 3: With $k = 2.5$ the constants are $-15 + 2.5 = -12.5$ on the left and $-3$ on the right. They differ, so no value of $x$ works.\n\nCheck: Substituting $k = 2.5$ gives $10x - 12.5 = 10x - 3$, which reduces to $-12.5 = -3$, a false statement. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2.5$): matches the coefficients but attaches the wrong sign; $4(-2.5) = -10$, not $10$.\n* Choice B ($2$): divides $10$ by the $5$ outside the left parentheses rather than by the $4$ on the right.\n* Choice D ($10$): reports the left side's coefficient of $x$ without dividing by $4$.\n\n**Test Day Takeaway:** Expand fully first; no solution needs equal $x$-coefficients and unequal constants, and both halves must be checked."
+}

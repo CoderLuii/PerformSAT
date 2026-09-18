@@ -1,0 +1,45 @@
+{
+  "id": "bank-alg-012",
+  "question": "The table gives the total number of downloads of an app on two days after its release. The total increased at a constant rate, and this rate is expected to continue. On which day will the total number of downloads first exceed $20{,}000$?",
+  "questionTable": {
+    "headers": [
+      "Day",
+      "Total downloads"
+    ],
+    "rows": [
+      [
+        "0",
+        "4,200"
+      ],
+      [
+        "12",
+        "12,600"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$22$"
+    },
+    {
+      "id": "B",
+      "text": "$23$"
+    },
+    {
+      "id": "C",
+      "text": "$24$"
+    },
+    {
+      "id": "D",
+      "text": "$29$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "rounds 22.57 down; on day 22 the total is 19,600, still under 20,000",
+    "C": "rounds up to 23 and then adds an extra day",
+    "D": "divides 20,000 by 700, ignoring the 4,200 downloads on day 0"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Linear Model Threshold**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The total grows $\\frac{12{,}600 - 4{,}200}{12} = 700$ per day. Solve $4{,}200 + 700d > 20{,}000$: $d > \\frac{15{,}800}{700} \\approx 22.6$, so the first whole day is day $23$.\n\n**The Full Solution:**\nStep 1: Rate $= \\frac{12{,}600 - 4{,}200}{12 - 0} = \\frac{8{,}400}{12} = 700$ downloads per day. Since day $0$ has $4{,}200$, the model is $D = 4{,}200 + 700d$.\nStep 2: The total exceeds $20{,}000$ when $4{,}200 + 700d > 20{,}000$, so $700d > 15{,}800$ and $d > 22.57\\ldots$.\nStep 3: Days are whole numbers, so the first day satisfying the inequality is day $23$. Check: on day $22$ the total is $4{,}200 + 700(22) = 19{,}600 < 20{,}000$; on day $23$ it is $20{,}300 > 20{,}000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($22$): rounds $22.57$ down, but on day $22$ the total is only $19{,}600$, which does not exceed $20{,}000$.\n* Choice C ($24$): rounds up correctly to $23$ and then adds one more day for \"exceeds,\" double-counting the strict inequality.\n* Choice D ($29$): computes $\\frac{20{,}000}{700} \\approx 28.6$ and rounds up, forgetting the $4{,}200$ downloads already counted on day $0$.\n\n**Test Day Takeaway:** For a \"first exceeds\" question, solve the inequality, round the boundary up to the next whole unit, and confirm by testing that unit and the one before it."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-320",
+ "question": "In an orchard sprayer's nozzle calibration, the difference $\\sqrt{x+c}-\\sqrt{x}$ equals $1$ at a line pressure of $x=16$ bars, where $c$ is a positive constant. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-11$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$25$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "never squares, solving 16 + c = 5, which gives -11",
+  "B": "squares term by term, using 16 + c = 1 + 16 = 17, which gives 1",
+  "D": "reports 25, the value of 16 + c, instead of c itself"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** At $x=16$ the equation becomes $\\sqrt{16+c}=1+\\sqrt{16}=5$, so $16+c=25$ and $c=9$.\n\n**The Full Solution:**\n\nStep 1: Substitute $x=16$: $\\sqrt{16+c}-\\sqrt{16}=1$, and $\\sqrt{16}=4$.\n\nStep 2: Isolate the remaining radical: $\\sqrt{16+c}=1+4=5$.\n\nStep 3: Square and solve: $16+c=25$, so $c=9$. Check: $\\sqrt{16+9}-\\sqrt{16}=5-4=1$, and $c=9$ is positive as required.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-11$): drops the squaring step and solves $16+c=5$.\n* Choice B ($1$): squares each term on its own, using $16+c=1^{2}+4^{2}=17$.\n* Choice D ($25$): reports the value of $16+c$ instead of the constant $c$.\n\n**Test Day Takeaway:** With two radicals, move one across first so the squaring step has a single radical to remove."
+}

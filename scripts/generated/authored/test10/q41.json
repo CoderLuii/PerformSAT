@@ -6,40 +6,30 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
  "module": 2,
- "passage": "After two decades of experimental warming at a long-term forest plot, DeAngelis and colleagues (2015) compared the relative abundance of major bacterial phyla in heated and unheated control soils. A microbial ecologist citing the study argues that, although several phyla shifted under warming, the bacterial community did not respond uniformly: most phyla either grew or held roughly steady in their share of the community, but one phylum — Acidobacteria — accounted for the largest decline in relative abundance and is therefore the strongest evidence that warming favors some lineages at others' expense because _______",
+ "passage": "Merchant ships trading between the Red Sea and the pepper ports of India's Malabar Coast sailed with the monsoon, which blows toward India in summer and back toward Africa and Arabia in winter. A maritime historian reconstructing the rhythm of these voyages from surviving accounts concludes that the winds, more than the ships, governed how long a trading venture lasted because ______",
  "questionTable": {
   "type": "table",
-  "caption": "Relative abundance (%) of major bacterial phyla in heated vs. control forest soils after 20 years (DeAngelis et al., 2015, Frontiers in Microbiology)",
+  "caption": "Reconstructed timings for a round-trip trading venture between the Red Sea and the Malabar Coast",
   "headers": [
-   "Phylum",
-   "Control (%)",
-   "Heated (%)"
+   "Stage of venture",
+   "Typical duration (weeks)"
   ],
   "rows": [
    [
-    "Proteobacteria",
-    "32.4",
-    "36.8"
+    "Outbound passage",
+    "6"
    ],
    [
-    "Acidobacteria",
-    "28.1",
-    "20.3"
+    "Trading and loading in port",
+    "8"
    ],
    [
-    "Actinobacteria",
-    "16.2",
-    "20.6"
+    "Waiting for the return sailing window",
+    "14"
    ],
    [
-    "Bacteroidetes",
-    "8.9",
-    "10.1"
-   ],
-   [
-    "Verrucomicrobia",
-    "5.7",
-    "4.2"
+    "Return passage",
+    "7"
    ]
   ]
  },
@@ -47,21 +37,21 @@
  "choices": [
   {
    "id": "A",
-   "text": "Acidobacteria rose from 20.3% of the control community to 28.1% under warming, suggesting that warming consistently favored this phylum over the 20-year experiment."
+   "text": "the outbound passage, at 6 weeks, was typically a week shorter than the return passage."
   },
   {
    "id": "B",
-   "text": "Acidobacteria fell from 28.1% of the control community to 20.3% under warming, a 7.8-percentage-point decrease that is larger in absolute magnitude than any other phylum's shift."
+   "text": "the 14-week wait for the return sailing window exceeded the outbound and return passages combined, which together took 13 weeks."
   },
   {
    "id": "C",
-   "text": "Verrucomicrobia fell from 5.7% in the control to 4.2% under warming, a 1.5-percentage-point decrease that establishes warming's negative effect on this phylum."
+   "text": "a complete venture typically lasted 35 weeks, of which 8 were spent trading and loading in port."
   },
   {
    "id": "D",
-   "text": "Proteobacteria rose from 32.4% in the control to 36.8% under warming, making it the most abundant phylum in both treatments and a clear example of warming favoring particular lineages."
+   "text": "merchants could shorten their stay in India by completing their trading before the winds reversed direction."
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The ecologist's claim names Acidobacteria as the phylum with the largest decline and treats that as the strongest evidence that warming favors some lineages over others. Choice B cites the exact change (28.1% to 20.3%, a 7.8-point drop) and anchors it as larger than any other phylum's shift, which is what \"largest decline\" requires. Choice A reverses the direction, claiming Acidobacteria rose. Choice C points to a real but much smaller decline (Verrucomicrobia's 1.5 points), not the largest. Choice D cites a phylum that rose, so it cannot support a claim whose key term is decline."
+ "explanation": "**Choice B is correct.** The claim sets wind against ship: waiting imposed by the monsoon mattered more than sailing performance. B makes the comparison numerically: the 14-week wait for the winds outlasted all the actual sailing, 6 plus 7 equals 13 weeks, put together.\n\n**The Full Solution:**\n- \"The winds, more than the ships, governed how long a venture lasted\" is supported by showing wind-imposed time exceeding ship-dependent time.\n- The wait for the sailing window is pure wind time; the two passages are the ship time. Fourteen weeks against thirteen is precisely the historian's point in figures.\n\n**Why the other choices are wrong:**\n- A: Comparing the two passages with each other never brings in the wait, so the winds' dominance goes unshown.\n- C: The 35-week total with the port-trading share highlights commerce, not wind; the decisive 14-week row is left unused.\n- D: It offers advice about scheduling rather than data, and the table records typical durations, not what earlier trading might have changed."
 }

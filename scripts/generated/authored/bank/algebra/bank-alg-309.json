@@ -1,0 +1,6 @@
+{
+ "question": "A masonry crew lays $6(c-4)+9$ blocks in a single shift when $c$ courses are planned for that shift, and on one recorded shift the crew laid exactly $57$ blocks. What is the value of $c$?",
+ "correctAnswer": "12",
+ "explanation": "**SAT Pattern: Linear Equation with Distribution**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~30s):** $6(c-4)=57-9=48$, so $c-4=8$ and $c=12$.\n\n**The Full Solution:**\n\nStep 1: Set the expression equal to the count: $6(c-4)+9=57$.\n\nStep 2: Subtract $9$ from both sides: $6(c-4)=48$, then divide by $6$: $c-4=8$.\n\nStep 3: Add $4$ to both sides: $c=12$. Check: $6(12-4)+9=6(8)+9=48+9=57$ blocks.\n\n**Common Mistakes:** Reporting $8$ stops at the value of $c-4$ instead of $c$. Distributing the $6$ to $c$ only, as in $6c-4+9=57$, gives $6c=52$ and a non-whole number of courses.\n\n**Test Day Takeaway:** Peel the outermost operations off first — undo the added constant, then the multiplier, then what is left inside the parentheses.",
+ "id": "bank-alg-309"
+}

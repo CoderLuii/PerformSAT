@@ -1,31 +1,31 @@
 {
-  "id": 737,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "In the early 1970s, a Chinese research program searching for a new malaria drug screened hundreds of plant extracts with disappointing results: promising compounds either lost their potency during processing or proved too weak in animal tests. A turning point came from an unexpected source. Reviewing centuries-old medical texts, one researcher noticed that an old recipe prepared the herb qinghao (sweet wormwood) by soaking it in cool water rather than boiling it. That hint led the team to try a low-temperature extraction, which preserved the herb's active ingredient where heat had been destroying it. The compound they isolated, later called artemisinin, proved highly effective against malaria and became the basis of frontline treatment.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The Chinese research program first screened many hundreds of different plant extracts before it eventually turned for guidance to a large body of historical medical texts."
-    },
-    {
-      "id": "B",
-      "text": "Several promising malaria compounds tended either to lose their potency during processing or to perform quite poorly in the team’s animal tests."
-    },
-    {
-      "id": "C",
-      "text": "A clue in an old medical text led researchers to a low-temperature extraction method that finally yielded an effective antimalarial after standard screens had failed."
-    },
-    {
-      "id": "D",
-      "text": "Centuries-old Chinese medical texts ultimately confirmed that boiling was in fact the most reliable way to extract the active ingredient from the qinghao herb."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage's arc is that standard screening failed until a clue in an old text pointed to a low-temperature extraction, which finally produced an effective antimalarial. Choice A reports one step (the early screening) as if it were the whole point. Choice B states a detail about why early compounds failed, and Choice D reverses the passage, which says the old recipe used cool water rather than boiling and that heat had been destroying the active ingredient."
+ "id": 737,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "In the wet uplands of Meghalaya, in northeastern India, Khasi villagers train the aerial roots of rubber fig trees across streams, threading young roots through hollowed canes until they take hold on the far bank. Over decades the roots thicken, fuse, and stiffen into a bridge that carries foot traffic through monsoon floods capable of sweeping away timber spans. Unlike built structures, a root bridge grows stronger with age — and because a crossing can take thirty years to become usable, the guiding of new roots is work that one generation begins largely for the benefit of the next.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Khasi villagers construct root bridges in a single season by weaving mature fig roots into load-bearing cables."
+  },
+  {
+   "id": "B",
+   "text": "Timber bridges generally outlast root bridges in Meghalaya but are considerably more expensive for villages to build."
+  },
+  {
+   "id": "C",
+   "text": "Khasi communities grow bridges from living fig roots — structures that strengthen with age and depend on work sustained across generations."
+  },
+  {
+   "id": "D",
+   "text": "The hollowed canes through which young fig roots are threaded remain part of a root bridge's structure permanently, bearing much of its weight."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage's three movements — how the bridges are grown, how they outperform timber in floods and strengthen with age, and how the work spans generations — are exactly the three elements C compresses.\n\n**The Full Solution:**\n- The technique: aerial roots trained across streams through hollowed canes until they root on the far bank.\n- The structures' character: living bridges that thicken, fuse, and grow stronger with age, unlike built spans.\n- The social dimension: a thirty-year path to usability makes the work an intergenerational undertaking — the point the passage closes on.\n\n**Why the other choices are wrong:**\n- A: It contradicts the timeline — a crossing takes decades, not a single season, and young roots are trained, not mature ones woven.\n- B: The passage says monsoon floods can sweep timber spans away, not that timber outlasts the root bridges.\n- D: The canes are a training aid in the passage; nothing says they permanently bear the bridge's weight."
 }

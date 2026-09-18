@@ -1,0 +1,29 @@
+{
+  "id": 19,
+  "question": "A public health model estimates the number of reported cases of a tick-borne illness in a county as $P(t) = 1{,}450(1.06)^t$, where $t$ is the number of years after $2016$. Which of the following best describes what the value $1.06$ indicates about the estimated number of reported cases?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The estimated number of reported cases increases by $1.06$ each year."
+    },
+    {
+      "id": "B",
+      "text": "The estimated number of reported cases increases by $6\\%$ each year."
+    },
+    {
+      "id": "C",
+      "text": "The estimated number of reported cases increases by $106\\%$ each year."
+    },
+    {
+      "id": "D",
+      "text": "The estimated number of reported cases in $2016$ is $1.06$ times $1{,}450$."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the growth factor as a fixed number of cases added each year, which would make the model linear",
+    "C": "converts the factor 1.06 into 106 percent growth instead of recognizing 1.06 as 100 percent plus 6 percent",
+    "D": "describes a value of the model at t = 1 and misstates the 2016 value, which is 1,450 because 1.06 to the zero power is 1"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** In $a \\cdot b^t$, the base $b$ is the yearly multiplier. Here $b = 1.06 = 1 + 0.06$, so the count grows by $6\\%$ per year.\n\n**The Full Solution:**\nStep 1: The model has the form $P(t) = a \\cdot b^t$ with $a = 1{,}450$ and $b = 1.06$. The value $a$ is the count when $t = 0$, and $b$ is the factor by which the count is multiplied for each increase of $1$ in $t$.\nStep 2: Increasing $t$ by $1$ multiplies $P$ by $1.06$. Writing $1.06$ as $1 + 0.06$ separates the part that is kept, $100\\%$, from the part that is added, $6\\%$.\nStep 3: So each year the estimated number of cases is $6\\%$ greater than the year before. Check: $P(0) = 1{,}450$ and $P(1) = 1{,}537$, and $\\frac{1{,}537 - 1{,}450}{1{,}450} = 0.06$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (increases by $1.06$ each year): reads $1.06$ as an amount added rather than a factor multiplied. A fixed yearly increase would make the model linear, of the form $1{,}450 + 1.06t$.\n* Choice C (increases by $106\\%$ each year): reports the whole factor as the growth. A $106\\%$ increase would more than double the count each year, which corresponds to a base of $2.06$.\n* Choice D ($2016$ value is $1.06$ times $1{,}450$): describes one multiplication rather than the yearly rate, and it misstates the $2016$ value: at $t = 0$ the model gives $1{,}450(1.06)^0 = 1{,}450$.\n\n**Test Day Takeaway:** Split the base into $1 + r$ for growth or $1 - r$ for decay. The percent in the answer is $r$, never the whole base, and the coefficient in front is the starting value."
+}

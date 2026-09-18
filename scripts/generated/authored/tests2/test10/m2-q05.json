@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "A stationery wholesaler writes every packing charge as $\\frac{c - 36x^2}{11 - 6x}$ dollars, with $x$ the order size in pallets and $c$ a fixed constant. Each of these charges reduces to the form $6x + 11$. What is $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11$"
+  },
+  {
+   "id": "B",
+   "text": "$121$"
+  },
+  {
+   "id": "C",
+   "text": "$396$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}296$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the constant 11 from the denominator instead of its square",
+  "C": "multiplies the coefficient 36 by 11 instead of squaring 11, giving 396",
+  "D": "squares the coefficient 36 instead of the constant 11, giving 1296"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** For the fraction to reduce to $6x + 11$, the numerator must be $(11 - 6x)(11 + 6x) = 121 - 36x^2$, so $c = 121$.\n\n**The Full Solution:**\nStep 1: If the quotient equals $6x + 11$, then multiplying back gives $c - 36x^2 = (11 - 6x)(6x + 11)$.\nStep 2: Expand the right side. Since $(11 - 6x)(11 + 6x)$ is a difference of squares, it equals $11^2 - (6x)^2 = 121 - 36x^2$.\nStep 3: Matching $c - 36x^2$ to $121 - 36x^2$ gives $c = 121$. Check at $x = 3$: the numerator is $121 - 36(9) = 121 - 324 = -203$, the denominator is $11 - 18 = -7$, and $\\frac{-203}{-7} = 29 = 6(3) + 11$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): copies the constant out of the denominator. The numerator needs $11^2$, not $11$.\n* Choice C ($396$): multiplies the two visible coefficients, $36 \\times 11 = 396$, instead of squaring the constant term.\n* Choice D ($1{,}296$): squares the wrong number, $36^2 = 1{,}296$. The $36$ is already $(6)^2$ from the $x^2$ term.\n\n**Test Day Takeaway:** When a rational expression cancels to a clean binomial, the numerator is the product of the denominator and that binomial — and a sum-times-difference pairing means a difference of squares."
+}

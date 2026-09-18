@@ -453,6 +453,11 @@ const PATTERN_ALIASES = Object.freeze({
   'scaling-a-data-set-by-a-constant':  'scaling-a-data-set',
   // Sector arc & central angle = arc length given central angle
   'sector-arc-central-angle':          'arc-length',
+  // System with no solution — CB symbolic-constant phrasing (solve for the
+  // constant from the no-solution condition). Same method as the covered
+  // no-solution pool: proportional x/y coefficients, constant breaking the
+  // proportion. (Craft pilot 2026-08-13.)
+  'system-with-no-solution':           'no-solution-condition',
 });
 
 export const extractSatPattern = (text) => {

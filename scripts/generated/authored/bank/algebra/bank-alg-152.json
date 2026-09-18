@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-152",
+ "question": "A dialysis center schedules morning slots $s$ and evening slots $t$ using $t = as - 10$ and $2s + 3t = 25$, where $a$ is a constant. The solution to this system has two equal coordinates. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-1$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves 5 = 5a - 10 as 5a = 5 - 10 = -5, moving the -10 with the wrong sign",
+  "C": "reports the shared coordinate 5 instead of the constant a",
+  "D": "stops at 5a = 15 and reports 15 without dividing by 5"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** Equal coordinates means $t = s$, so $2s + 3s = 25$ gives $s = t = 5$; then $5 = 5a - 10$ and $a = 3$.\n\n**The Full Solution:**\nStep 1: \"Two equal coordinates\" means $t = s$. Substitute $s$ for $t$ in the second equation: $2s + 3s = 25$.\nStep 2: Combine like terms and divide: $5s = 25$, so $s = 5$, and therefore $t = 5$ as well.\nStep 3: Substitute both values into the first equation: $5 = a(5) - 10$, so $5a = 15$ and $a = 3$. Check: $t = 3(5) - 10 = 5$, and $2(5) + 3(5) = 25$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-1$): moves the $-10$ across with the wrong sign, solving $5a = 5 - 10 = -5$.\n* Choice C ($5$): reports the shared coordinate $s = t = 5$ instead of the constant $a$.\n* Choice D ($15$): stops at $5a = 15$ and reports that product without dividing by $5$.\n\n**Test Day Takeaway:** A condition such as \"the coordinates are equal\" is itself an equation — substitute it into the equation with no unknown constant first, then finish with the equation that carries the constant."
+}

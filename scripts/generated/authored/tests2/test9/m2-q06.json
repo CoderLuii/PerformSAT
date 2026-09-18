@@ -1,0 +1,33 @@
+{
+ "id": 6,
+ "question": "The table gives the $2026$ count of each of three marsh bird species at a coastal wetland and the change in that species' count since $2021$. What was the $2021$ count of soras?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Species",
+    "2026 count",
+    "Change since 2021"
+   ],
+   "rows": [
+    [
+     "Marsh wren",
+     "900",
+     "25% increase"
+    ],
+    [
+     "Sora",
+     "432",
+     "28% decrease"
+    ],
+    [
+     "American bittern",
+     "286",
+     "45% decrease"
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "600",
+ "explanation": "**SAT Pattern: Reverse-Percent**\n\n**The correct answer is $600$.** A $28\\%$ decrease leaves $72\\%$ of the $2021$ count, so $0.72 \\cdot (\\text{2021 count}) = 432$ and the $2021$ count is $\\frac{432}{0.72} = 600$.\n\n**The Fast Way (~20s):** $432$ is $72\\%$ of the original, so divide: $432 \\div 0.72 = 600$.\n\n**The Full Solution:**\nStep 1: A $28\\%$ decrease multiplies the original by $1 - 0.28 = 0.72$.\nStep 2: Let $n$ be the $2021$ count. Then $0.72n = 432$, so $n = \\frac{432}{0.72} = 600$.\nStep 3: Check with the true value: $28\\%$ of $600$ is $168$, and $600 - 168 = 432$, the count listed for soras.\n\n**Common Mistakes:**\n* $311.04$: applies the $28\\%$ decrease to $432$ itself, computing $432 \\cdot 0.72$, which runs the change forward instead of backward.\n* $552.96$: increases $432$ by $28\\%$, computing $432 \\cdot 1.28$, which undoes a decrease by adding the same percent to the smaller number.\n* $1{,}542.86$: divides by $0.28$ rather than by the $0.72$ that remains after the decrease.\n\n**Test Day Takeaway:** To reverse a percent change, divide by the multiplier that produced it. A $28\\%$ decrease means dividing by $0.72$, never multiplying by $0.72$ or dividing by $0.28$."
+}

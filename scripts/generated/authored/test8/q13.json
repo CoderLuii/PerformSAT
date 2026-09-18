@@ -1,31 +1,62 @@
 {
-  "id": 813,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 1,
-  "passage": "In a 2019 article in Science, Kenneth Rosenberg and colleagues reported a net loss of nearly three billion breeding birds from North America between 1970 and 2017, with grassland species suffering the steepest losses of any biome. The researchers distinguished grassland-obligate species, whose breeding range is essentially confined to native grassland, from grassland-associated species, which breed in grasslands but also use other open habitats. They concluded that the obligate species fared considerably worse than the associated species, because _______\n\nEstimated change in North American breeding population, 1970-2017 (selected species)\n| Species | Habitat class | Change (%) |\n|---|---|---|\n| Eastern Meadowlark | Grassland-obligate | -72 |\n| Bobolink | Grassland-obligate | -65 |\n| Vesper Sparrow | Grassland-associated | -36 |\n| Field Sparrow | Grassland-associated | -30 |",
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Vesper Sparrow declined by 36 percent, the smaller of the two declines among grassland-associated species in the table."
-    },
-    {
-      "id": "B",
-      "text": "Eastern Meadowlark showed the largest decline in the table, at 72 percent, the steepest single drop among the four species."
-    },
-    {
-      "id": "C",
-      "text": "Eastern Meadowlark, a grassland-obligate species, declined by 72 percent, while Field Sparrow, a grassland-associated species, declined by only 30 percent."
-    },
-    {
-      "id": "D",
-      "text": "the two grassland-obligate species declined by 72 and 65 percent, while the two grassland-associated species declined by only 36 and 30 percent."
-    }
+ "id": 813,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 1,
+ "passage": "Arctic char occur both as anadromous populations, which migrate to the sea each summer to feed before returning to fresh water, and as landlocked populations confined year-round to lakes. Biologists measuring four char populations at comparable latitudes recorded the median length of mature adults in each. They concluded that the anadromous populations grow considerably larger than the landlocked ones, because _______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Median length of mature Arctic char in four populations",
+  "headers": [
+   "Population",
+   "Life history",
+   "Median adult length (cm)"
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The claim compares the two habitat classes as groups, so the completion must show that both obligate species declined more steeply than both associated species. D pairs the obligate declines (72 and 65 percent) against the associated declines (36 and 30 percent), supporting the conclusion directly. A and B each cite a single species and never compare the classes; C compares only one species from each class, a weaker basis for a claim about the groups as a whole."
+  "rows": [
+   [
+    "Population A",
+    "Anadromous (sea-run)",
+    "58"
+   ],
+   [
+    "Population B",
+    "Anadromous (sea-run)",
+    "52"
+   ],
+   [
+    "Population C",
+    "Landlocked",
+    "24"
+   ],
+   [
+    "Population D",
+    "Landlocked",
+    "19"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the char of Population A, which feed in the sea each summer, reached a median length of 58 cm."
+  },
+  {
+   "id": "B",
+   "text": "Population C's median length of 24 cm exceeded Population D's median of 19 cm, though both fed only in fresh water."
+  },
+  {
+   "id": "C",
+   "text": "Population A's median length of 58 cm was more than twice Population C's median length of 24 cm, even though the two populations live at comparable latitudes."
+  },
+  {
+   "id": "D",
+   "text": "the two sea-run populations reached median lengths of 58 and 52 cm, while the two landlocked populations reached only 24 and 19 cm."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** A claim comparing the two classes of population needs figures from both, and D alone pairs them: median lengths of 58 and 52 cm for the sea-run populations against 24 and 19 cm for the landlocked ones.\n\n**The Full Solution:**\n- The conclusion is class-wide: sea-run char grow considerably larger than landlocked char.\n- Supporting it requires the values for both anadromous populations and both landlocked populations.\n- Choice D supplies all four medians and displays the gap between the classes directly.\n\n**Why the other choices are wrong:**\n- A: It cites a single sea-run population, which cannot establish a comparison between classes.\n- B: It compares the two landlocked populations with each other and never mentions the sea-run fish.\n- C: It pairs the largest sea-run value with the larger landlocked value only, understating the class contrast and omitting half the table."
 }

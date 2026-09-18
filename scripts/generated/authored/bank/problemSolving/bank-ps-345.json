@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-345",
+  "question": "The table shows the number of games won by each member of a chess club during a tournament and the number of members who won that many games. What is the mode of the numbers of games won by the members?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Games won",
+        "Number of members"
+      ],
+      "rows": [
+        [
+          "0",
+          "2"
+        ],
+        [
+          "1",
+          "9"
+        ],
+        [
+          "2",
+          "4"
+        ],
+        [
+          "3",
+          "6"
+        ],
+        [
+          "4",
+          "5"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$2$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$9$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the median of the $26$ values, which falls at $2$ games, rather than the most frequent value.",
+    "C": "reports the largest entry in the \"Games won\" column instead of the value with the largest frequency.",
+    "D": "reports the largest frequency, the number of members, rather than the number of games those members won."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Mode from List**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The largest frequency in the right column is $9$; the value beside it in the left column is $1$ game won.\n\n**The Full Solution:**\nStep 1: In a frequency table the left column lists the values and the right column tells how many times each occurs.\nStep 2: The frequencies are $2$, $9$, $4$, $6$, and $5$, and the greatest of these is $9$.\nStep 3: The frequency $9$ belongs to the row \"$1$ game won,\" so the mode is $1$. Check: no other number of wins was reported by more than $6$ members. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($2$): reports the median of the $26$ values, which falls at $2$ games, rather than the most frequent value.\n* Choice C ($4$): reports the largest entry in the \"Games won\" column instead of the value with the largest frequency.\n* Choice D ($9$): reports the largest frequency, the number of members, rather than the number of games those members won.\n\n**Test Day Takeaway:** Find the biggest frequency, then read across to the value column. Reporting the frequency itself is the single most common slip on frequency-table mode questions."
+}

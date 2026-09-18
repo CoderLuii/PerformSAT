@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-143",
+ "question": "A maple evaporator's sap-level deviation, in centimeters, is modeled by $x^{2}-11x+c$, where $c$ is a constant and $x$ is the number of hours since firing. The deviation is zero at two hour values that are positive integers three hours apart. What is the value of $c$?",
+ "correctAnswer": "28",
+ "explanation": "**SAT Pattern: Quadratic via Factoring**\n\n**The correct answer is $28$.**\n\n**The Fast Way (~40s):** Two zeros three apart that sum to $11$ are $4$ and $7$, and $c$ is their product, $28$.\n\n**The Full Solution:**\n\nStep 1: Write the zeros as $r$ and $r+3$. For $x^{2}-11x+c$ the sum of the zeros is $11$, so $r+(r+3)=11$.\n\nStep 2: Solve: $2r+3=11$, so $r=4$ and the zeros are $4$ and $7$.\n\nStep 3: The constant term is the product of the zeros, so $c=4\\cdot7=28$. Check: $x^{2}-11x+28=(x-4)(x-7)$, and $4$ and $7$ are positive integers three hours apart.\n\n**Common Mistakes:**\n\n* Treating the given gap $3$ as one of the zeros and pairing it with $11-3=8$ gives $c=24$.\n* Reporting the sum of the zeros, $11$, instead of their product.\n\n**Test Day Takeaway:** For $x^{2}+bx+c$ the zeros sum to $-b$ and multiply to $c$; a stated gap between them turns that pair of facts into one linear equation."
+}

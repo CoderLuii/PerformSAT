@@ -1,0 +1,37 @@
+{
+ "id": 11,
+ "question": "The table gives the number of relays built on each of two assembly lines, classified by whether the relay passed a continuity check. Two of the rejected relays are chosen at random, one after the other, without replacement. What is the probability that both were built on Line 1?",
+ "diagram": {
+  "type": "twoWayTable",
+  "params": {
+   "headers": [
+    "",
+    "Passed",
+    "Rejected",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Line 1",
+     "18",
+     "6",
+     "24"
+    ],
+    [
+     "Line 2",
+     "10",
+     "6",
+     "16"
+    ],
+    [
+     "Total",
+     "28",
+     "12",
+     "40"
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "5/22",
+ "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**The correct answer is $\\frac{5}{22}$.**\n\n**The Fast Way (~30s):** Only the $12$ rejected relays are in play, $6$ of them from Line 1: $\\frac{6}{12} \\cdot \\frac{5}{11} = \\frac{5}{22}$.\n\n**The Full Solution:**\nStep 1: Restrict to the group the question names. The rejected column totals $12$ relays, of which $6$ came from Line 1.\nStep 2: First draw: $\\frac{6}{12} = \\frac{1}{2}$.\nStep 3: Second draw, with the first relay gone: $5$ Line 1 relays remain among $11$ rejected relays, so $\\frac{5}{11}$. Multiply: $\\frac{1}{2} \\cdot \\frac{5}{11} = \\frac{5}{22}$. Check: $\\frac{5}{22} \\approx 0.227$, a little below the $0.25$ you would get if the relay were replaced ✓\n\n**Common Mistakes:**\n* $\\frac{1}{4}$: multiplying $\\frac{6}{12} \\cdot \\frac{6}{12}$, which is the with-replacement probability; the first relay is not put back.\n* $\\frac{1}{52}$: using all $40$ relays as the pool, $\\frac{6}{40} \\cdot \\frac{5}{39}$, instead of only the $12$ rejected ones.\n* $\\frac{21}{22}$: adding $\\frac{6}{12} + \\frac{5}{11}$; \"both\" events call for multiplication, not addition.\n\n**Test Day Takeaway:** Read the conditioning phrase first — it fixes the pool — then drop the numerator and the denominator by one for the second draw."
+}

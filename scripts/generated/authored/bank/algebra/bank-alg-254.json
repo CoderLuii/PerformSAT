@@ -1,0 +1,48 @@
+{
+ "id": "bank-alg-254",
+ "question": "The table gives the printing rate, in pages per minute, of each of two printers. Printer A ran for $a$ minutes and printer B ran for $b$ minutes, for a combined total of $50$ minutes, and together they printed $1{,}832$ pages. How many more minutes did printer B run than printer A?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Printer",
+    "Rate (pages per minute)"
+   ],
+   "rows": [
+    [
+     "A",
+     "28"
+    ],
+    [
+     "B",
+     "44"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$23$"
+  },
+  {
+   "id": "C",
+   "text": "$27$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports a alone",
+  "C": "reports b alone",
+  "D": "adds the two times instead of subtracting"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Fifty minutes on printer A alone gives $1{,}400$ pages. Each minute moved to printer B adds $16$ pages, and $1{,}832 - 1{,}400 = 432 = 27 \\cdot 16$, so $b = 27$, $a = 23$, and $b - a = 4$.\n\n**The Full Solution:**\nStep 1: $a + b = 50$ and $28a + 44b = 1832$.\nStep 2: Substitute $a = 50 - b$: $28(50 - b) + 44b = 1832$, so $1400 + 16b = 1832$ and $b = 27$. Then $a = 23$.\nStep 3: The question asks for $b - a = 27 - 23 = 4$. Check: $28(23) + 44(27) = 644 + 1188 = 1832$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($23$): the value of $a$; the question asks for a difference, not a single time.\n* Choice C ($27$): the value of $b$, again not the difference.\n* Choice D ($50$): the sum of the two times, which was given in the stem.\n\n**Test Day Takeaway:** Solving the system is only step one; the last line of the stem tells you which combination of the variables to report."
+}

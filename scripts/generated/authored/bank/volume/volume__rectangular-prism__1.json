@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "The inside of a library's overnight drop box measures $24$ inches by $18$ inches by $30$ inches. How many cubic inches of space does the drop box enclose when its door is closed?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$72$"
+    },
+    {
+      "id": "B",
+      "text": "$432$"
+    },
+    {
+      "id": "C",
+      "text": "$3{,}384$"
+    },
+    {
+      "id": "D",
+      "text": "$12{,}960$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the three dimensions instead of multiplying them: 24 + 18 + 30 = 72",
+    "B": "multiplies only 24 by 18, leaving out the third dimension",
+    "C": "computes the surface area 2(24 times 18 + 24 times 30 + 18 times 30) = 3384 square inches"
+  },
+  "correctAnswer": "D",
+  "hint": "Three perpendicular measurements of a box multiply together, whatever order they are listed in.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~15s):** The interior is a rectangular solid, so multiply all three measurements: $24 \\cdot 18 \\cdot 30 = 12{,}960$ cubic inches.\n\n**The Full Solution:**\nStep 1: The volume of a rectangular solid is $V = \\ell w h$, the product of its three perpendicular measurements.\nStep 2: Substituting the given measurements, $V = (24)(18)(30)$.\nStep 3: $24 \\cdot 18 = 432$, and $432 \\cdot 30 = 12{,}960$ cubic inches. Check: $12{,}960 \\div 30 = 432$, the area of the $24$-by-$18$ face ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($72$): adds the three measurements, $24 + 18 + 30 = 72$, instead of multiplying them.\n* Choice B ($432$): multiplies only $24$ by $18$ and stops, leaving out the third measurement.\n* Choice C ($3{,}384$): computes the surface area $2(24 \\cdot 18 + 24 \\cdot 30 + 18 \\cdot 30) = 3{,}384$ square inches.\n\n**Test Day Takeaway:** \"Cubic\" units signal a product of three lengths; \"square\" units signal a product of two — let the unit in the question tell you how many factors to use."
+}

@@ -1,0 +1,57 @@
+{
+ "question": "A climber earns $3$ session points for each lead route $x$ completed and $2$ session points for each boulder problem $y$ completed; the line shown gives the combinations totaling $18$ session points. Which equation has the same graph in the $xy$-plane?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x - 2y = 18$"
+  },
+  {
+   "id": "B",
+   "text": "$6x + 4y = 18$"
+  },
+  {
+   "id": "C",
+   "text": "$9x + 2y = 54$"
+  },
+  {
+   "id": "D",
+   "text": "$6x + 4y = 36$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "flips the sign of the $y$-term, giving a line through $(0, -9)$ instead of $(0, 9)$",
+  "B": "doubles the coefficients but leaves the constant at $18$",
+  "C": "multiplies the $x$-coefficient and the constant by $3$ but leaves the $y$-coefficient at $2$"
+ },
+ "explanation": "**SAT Pattern: Same Line Infinitely Many Solutions**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The line is $3x + 2y = 18$. Doubling every term gives $6x + 4y = 36$.\n\n**The Full Solution:**\n\nStep 1: At $3$ points per lead route and $2$ per boulder problem, the $18$-point combinations satisfy $3x + 2y = 18$, matching the intercepts $(6, 0)$ and $(0, 9)$ on the graph.\n\nStep 2: Two equations have the same graph exactly when one is a nonzero multiple of the other.\n\nStep 3: Multiplying $3x + 2y = 18$ by $2$ gives $6x + 4y = 36$. Check $(6, 0)$: $6(6) + 4(0) = 36$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3x - 2y = 18$): flips the sign of the $y$-term, which moves the $y$-intercept to $(0, -9)$.\n\n* Choice B ($6x + 4y = 18$): doubles the two coefficients but forgets the constant, so the line falls to half its height.\n\n* Choice C ($9x + 2y = 54$): triples the $x$-term and the constant but leaves $2y$ alone.\n\n**Test Day Takeaway:** Same graph means every term scaled by the same factor, constant included.",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -1.5,
+   "yIntercept": 9,
+   "xRange": [
+    0,
+    8
+   ],
+   "yRange": [
+    0,
+    10
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     9
+    ],
+    [
+     6,
+     0
+    ]
+   ]
+  }
+ },
+ "id": "bank-alg-443"
+}

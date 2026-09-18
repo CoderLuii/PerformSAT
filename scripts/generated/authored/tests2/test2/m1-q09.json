@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "In a lot of seeds, $60\\%$ are variety R and the remaining seeds are variety S. Of the variety R seeds $85\\%$ germinate, and of the variety S seeds $60\\%$ germinate. A seed selected at random from this lot germinated. What is the probability that the seed is variety S?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$24\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$32\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$40\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$60\\%$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the joint percent 0.40(0.60)=24%, the share of the whole lot that is variety S and germinates, without dividing by the germinating share",
+  "C": "reports the prior 40%, the share of the lot that is variety S, ignoring the information that the seed germinated",
+  "D": "reverses the condition and reports 60%, the germination rate among variety S seeds"
+ },
+ "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** Out of $100$ seeds, $51$ are variety R that germinate and $24$ are variety S that germinate, so $\\frac{24}{75} = 0.32$.\n\n**The Full Solution:**\nStep 1: Take a lot of $100$ seeds. Variety R accounts for $60$ of them and variety S for the other $40$.\nStep 2: Count the germinating seeds in each group: $0.85(60) = 51$ from variety R and $0.60(40) = 24$ from variety S, for $51 + 24 = 75$ germinating seeds in all.\nStep 3: The condition restricts attention to those $75$ seeds, so the probability is $\\frac{24}{75} = 0.32$, or $32\\%$. Check: the variety R share of germinating seeds is $\\frac{51}{75} = 0.68$, and $0.32 + 0.68 = 1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($24\\%$): reports $0.40(0.60) = 24\\%$, the share of the entire lot that is both variety S and germinating. That is the joint probability; the condition shrinks the denominator from $100$ to $75$.\n* Choice C ($40\\%$): reports the share of the lot that is variety S before any germination is observed. Learning that the seed germinated is evidence that shifts this number, because variety R germinates more often.\n* Choice D ($60\\%$): reports the germination rate within variety S, which is the probability of germinating given variety S, the reverse of what is asked.\n\n**Test Day Takeaway:** A conditional probability divides by the size of the group named after the word \"given\" or by the outcome already known to have happened, not by the size of the whole population."
+}

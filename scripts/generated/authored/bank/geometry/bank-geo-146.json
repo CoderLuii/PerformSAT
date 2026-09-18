@@ -1,0 +1,6 @@
+{
+  "id": "bank-geo-146",
+  "question": "A cube has the same volume as a rectangular prism whose dimensions are $8$ centimeters, $12$ centimeters, and $18$ centimeters. What is the surface area, in square centimeters, of the cube?",
+  "correctAnswer": "864",
+  "explanation": "**SAT Pattern: Volume of a Rectangular Prism**\n\n**The correct answer is $864$.**\n\n**The Fast Way (~40s):** The prism's volume is $1{,}728$, so the cube's edge is $\\sqrt[3]{1{,}728} = 12$ and its surface area is $6(12^2) = 864$.\n\n**The Full Solution:**\nStep 1: The volume of the prism is $(8)(12)(18) = 1{,}728$ cubic centimeters, so the cube also has volume $1{,}728$.\nStep 2: For a cube, $s^3 = 1{,}728$, so $s = 12$ centimeters.\nStep 3: The surface area is $6s^2 = 6(144) = 864$ square centimeters. Check: $12^3 = 1{,}728$ matches the prism's volume. $\\checkmark$\n\n**Common Mistakes:**\n* Computing the prism's surface area, $2(96 + 144 + 216) = 912$; the two solids share a volume, not a surface area.\n* Gridding the edge length $12$ or the volume $1{,}728$ instead of the surface area.\n* Using $6s$ rather than $6s^2$, giving $72$.\n\n**Test Day Takeaway:** Equal-volume problems route through the shared volume: compute it once, solve for the new solid's dimension, then answer in the requested units."
+}

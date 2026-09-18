@@ -1,0 +1,49 @@
+{
+ "id": "bank-alg-420",
+ "question": "A sewing machine attaches snaps at a constant rate, and the table gives the number attached, $y$, after $x$ minutes. Which of the following equations, paired with the machine's model, gives a system with no solution?",
+ "questionTable": {
+  "headers": [
+   "$x$ (minutes)",
+   "$y$ (snaps)"
+  ],
+  "rows": [
+   [
+    "$0$",
+    "$5$"
+   ],
+   [
+    "$3$",
+    "$17$"
+   ],
+   [
+    "$6$",
+    "$29$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -4x + 5$"
+  },
+  {
+   "id": "B",
+   "text": "$y = 4x + 5$"
+  },
+  {
+   "id": "C",
+   "text": "$y = 4x + 9$"
+  },
+  {
+   "id": "D",
+   "text": "$y = 5x + 5$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "flips the sign of the rate, so the two lines have different slopes and cross once",
+  "B": "repeats the machine's own model, which every point satisfies, giving infinitely many solutions",
+  "D": "changes the rate instead of the starting value, so the two lines cross once"
+ },
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The table gives $y = 4x + 5$, and only $y = 4x + 9$ has that same rate with a different starting value.\n\n**The Full Solution:**\n\nStep 1: Read the rate from the table: $\\frac{17 - 5}{3 - 0} = 4$ snaps per minute, and $y = 5$ when $x = 0$, so the machine's model is $y = 4x + 5$.\n\nStep 2: A system of two linear equations has no solution exactly when the lines are parallel and distinct, which means equal slopes and different $y$-intercepts.\n\nStep 3: Among the choices, only $y = 4x + 9$ has slope $4$ and an intercept other than $5$. Check: $4x + 5 = 4x + 9$ gives $5 = 9$, which is never true.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($y = -4x + 5$): flips the sign of the rate, so the slopes differ and the lines cross at exactly one point.\n* Choice B ($y = 4x + 5$): repeats the machine's own model; every point on the line satisfies both equations, so the system has infinitely many solutions rather than none.\n* Choice D ($y = 5x + 5$): changes the rate instead of the starting value, so the lines cross once, at $(0, 5)$.\n\n**Test Day Takeaway:** No solution takes both halves of the test: the slopes have to match and the $y$-intercepts have to differ."
+}

@@ -1,0 +1,26 @@
+{
+ "id": 6,
+ "question": "The table gives the capacity, in terabytes, of each drive model a data center installs. One rack holds $12$ model A drives, $8$ model B drives, and $n$ model C drives, for a total capacity of $232$ terabytes. What is the value of $n$?",
+ "questionTable": {
+  "headers": [
+   "Drive model",
+   "Capacity (TB)"
+  ],
+  "rows": [
+   [
+    "A",
+    "$4$"
+   ],
+   [
+    "B",
+    "$10$"
+   ],
+   [
+    "C",
+    "$8$"
+   ]
+  ]
+ },
+ "correctAnswer": "13",
+ "explanation": "**SAT Pattern: Word-to-Expression Translation**\n\n**The correct answer is $13$.**\n\n**The Fast Way (~30s):** The model A and model B drives supply $12(4) + 8(10) = 128$ terabytes, leaving $232 - 128 = 104$ terabytes for the model C drives at $8$ terabytes each, so $n = 13$.\n\n**The Full Solution:**\nStep 1: Read each capacity from the table: model A is $4$ TB, model B is $10$ TB, and model C is $8$ TB. The $12$ model A drives hold $12(4) = 48$ TB and the $8$ model B drives hold $8(10) = 80$ TB.\nStep 2: Translate the total into an equation: $48 + 80 + 8n = 232$, so $8n = 232 - 128 = 104$.\nStep 3: Divide: $n = \\frac{104}{8} = 13$. Check: $48 + 80 + 8(13) = 48 + 80 + 104 = 232$ terabytes, matching the rack total. ✓\n\n**Common Mistakes:**\n* Pairing the model C count with model A's capacity gives $\\frac{104}{4} = 26$, a rack of $46$ drives that would hold far more than $232$ TB.\n* Pairing it with model B's capacity gives $\\frac{104}{10} = 10.4$, which is not a whole number of drives — a signal that the wrong row was used.\n* Forgetting the model B drives entirely gives $\\frac{232 - 48}{8} = 23$, which double-counts their $80$ TB as model C capacity.\n\n**Test Day Takeaway:** Convert each row of a table into a product of count and unit value first; the unknown count is then a one-step division."
+}

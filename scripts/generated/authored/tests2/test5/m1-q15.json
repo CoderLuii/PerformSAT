@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "During one week, a public library recorded the number of books borrowed on each of $180$ randomly chosen visits. The mean for those visits was $4.2$ books, and the estimate carries a margin of error of $0.35$ book. Which conclusion is best supported by these data?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It is plausible that the mean number of books borrowed per visit for all visits to this library is between $3.85$ and $4.55$."
+  },
+  {
+   "id": "B",
+   "text": "It is plausible that the mean number of books borrowed per visit for the $180$ visits in the sample is between $3.85$ and $4.55$."
+  },
+  {
+   "id": "C",
+   "text": "It is plausible that the mean number of books borrowed per visit for all visits to this library is between $4.2$ and $4.55$."
+  },
+  {
+   "id": "D",
+   "text": "It is plausible that the mean number of books borrowed per visit for all visits to this library is between $3.5$ and $4.9$."
+  }
+ ],
+ "distractorNotes": {
+  "B": "applies the interval to the 180 sampled visits, whose mean is already known exactly to be 4.2",
+  "C": "adds the margin of error on one side only, giving 4.2 to 4.55 instead of 3.85 to 4.55",
+  "D": "doubles the margin of error, giving 4.2 plus or minus 0.7, which is 3.5 to 4.9"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The interval is $4.2 \\pm 0.35$, or $3.85$ to $4.55$, and it estimates the mean for ALL visits, not for the sampled ones.\n\n**The Full Solution:**\nStep 1: A margin of error is applied on both sides of the sample estimate, so the plausible interval runs from $4.2 - 0.35$ to $4.2 + 0.35$.\nStep 2: Compute the endpoints: $4.2 - 0.35 = 3.85$ and $4.2 + 0.35 = 4.55$.\nStep 3: Identify what the interval describes. The $180$ visits were chosen at random in order to learn about every visit to the library, so the interval is a plausible range for the POPULATION mean. Check: the mean of the sampled visits is stated as exactly $4.2$, so no interval is needed for it.\n\n**Why the wrong answers are tempting:**\n* Choice B (the $180$ sampled visits, $3.85$ to $4.55$): the arithmetic is right but the group is wrong. The mean for those $180$ visits was measured, not estimated, so it is known to be $4.2$ with no uncertainty at all.\n* Choice C ($4.2$ to $4.55$): adds the margin on the high side only. A margin of error is always two-sided, so leaving off $4.2 - 0.35$ discards half of the plausible values.\n* Choice D ($3.5$ to $4.9$): uses $4.2 \\pm 0.7$, doubling the given margin. Nothing in the problem calls for doubling; the reported $0.35$ is already the full one-sided distance.\n\n**Test Day Takeaway:** Build the interval as estimate $\\pm$ margin, then ask which group it describes. The sample statistic is a measured fact; the interval is always a claim about the larger population the sample was drawn from."
+}

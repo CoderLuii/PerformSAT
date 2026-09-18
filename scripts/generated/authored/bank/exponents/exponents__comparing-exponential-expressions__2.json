@@ -1,0 +1,29 @@
+{
+ "question": "A star's brightness measures $2^{12}$ units at one wavelength and $8^{3}$ units at another. Which expression is equivalent to the quotient $\\dfrac{2^{12}}{8^{3}}$ of those two measurements?",
+ "hint": "The two bases are not the same yet.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2^{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$2^{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$2^{9}$"
+  },
+  {
+   "id": "D",
+   "text": "$2^{36}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "computes 12 - 8, using the base 8 as though it were an exponent",
+  "C": "reports the rewritten denominator 2^9",
+  "D": "multiplies 12 by 3 instead of subtracting the exponents"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** $8^3 = 2^9$, so the quotient is $2^{12 - 9} = 2^3$.\n\n**The Full Solution:**\nStep 1: Write the denominator with base $2$: $8 = 2^3$, so $8^3 = (2^3)^3 = 2^9$.\nStep 2: The quotient is now $\\dfrac{2^{12}}{2^{9}}$.\nStep 3: Subtract the exponents: $2^{12 - 9} = 2^3$. Check: $\\dfrac{4096}{512} = 8 = 2^3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($2^4$): subtracts $12 - 8$, treating the base $8$ as an exponent.\n* Choice C ($2^9$): reports the rewritten denominator instead of the quotient.\n* Choice D ($2^{36}$): multiplies $12$ by $3$, the rule for a power of a power, not for division.\n\n**Test Day Takeaway:** Matching bases comes before any exponent rule can be applied."
+}

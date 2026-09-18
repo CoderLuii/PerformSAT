@@ -1,0 +1,38 @@
+{
+  "id": 9006,
+  "passage": "John Keats's 1820 poem \"To Autumn\" speaks to the season directly, as though autumn were a person who might be found somewhere about the farm. The first stanza describes the ripening the season brings on; the second goes looking for autumn among the granaries, furrows, and cider presses of the harvest. A reader might argue that the poem addresses autumn as a worker and then catches that worker resting in the middle of the task.",
+  "question": "Which quotation from \"To Autumn\" most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "\"Season of mists and mellow fruitfulness, / Close bosom-friend of the maturing sun;\""
+    },
+    {
+      "id": "B",
+      "text": "\"And sometimes like a gleaner thou dost keep / Steady thy laden head across a brook;\""
+    },
+    {
+      "id": "C",
+      "text": "\"Or on a half-reap'd furrow sound asleep, / Drows'd with the fume of poppies, while thy hook / Spares the next swath and all its twined flowers:\""
+    },
+    {
+      "id": "D",
+      "text": "\"To swell the gourd, and plump the hazel shells / With a sweet kernel; to set budding more, / And still more, later flowers for the bees,\""
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** The lines address autumn as \"thy\" and place that figure asleep on a furrow that is only half reaped, with the reaping hook idle beside the standing flowers.\n\n**The Full Solution:**\n- Track both halves of the claim: the quotation must speak to autumn as a working figure and must show the work interrupted.\n- Choice C does both at once. \"Thy hook\" makes autumn the reaper; \"half-reap'd furrow sound asleep\" and \"Spares the next swath\" show the reaping stopped partway.\n- Eliminate lines in which autumn is addressed but never shown pausing, and lines that describe the season's labor without addressing anyone.\n\n**Why the other choices are wrong:**\n- A: These opening lines address autumn directly but present it as a season of mists and ripeness, with no task under way and so nothing to interrupt.\n- B: Here autumn is addressed and is at work, keeping its laden head steady across a brook, but the figure is moving steadily rather than resting.\n- D: These lines list what the season accomplishes, swelling gourds and setting late flowers, without speaking to autumn as a figure or picturing any pause.",
+  "source": {
+    "title": "To Autumn",
+    "author": "John Keats",
+    "year": 1820,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/23684"
+  },
+  "people": [
+    {
+      "name": "John Keats",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/23684"
+    }
+  ]
+}

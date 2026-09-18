@@ -1,0 +1,29 @@
+{
+ "question": "A linear model of a kayaker's stroke count is $g(x) = 5x + k$ for some constant $k$, and the model gives $g(3) = 26$. For what value of $x$ does the model give $g(x) = 51$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$10.2$"
+  },
+  {
+   "id": "D",
+   "text": "$11$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the input $3$ given in the condition rather than the new input",
+  "C": "solves $5x = 51$, ignoring the constant $k$",
+  "D": "reports the value of $k$ instead of the input"
+ },
+ "explanation": "**SAT Pattern: Solve for Input from Output**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $g(3) = 26$ gives $k = 11$, and $5x + 11 = 51$ gives $x = 8$.\n\n**The Full Solution:**\n\nStep 1: Substitute the known point: $5(3) + k = 26$, so $15 + k = 26$ and $k = 11$.\n\nStep 2: The model is $g(x) = 5x + 11$. Set it equal to $51$: $5x + 11 = 51$.\n\nStep 3: Then $5x = 40$ and $x = 8$. Check: $g(8) = 5(8) + 11 = 51$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3$): repeats the input from the given condition instead of solving the new equation.\n\n* Choice C ($10.2$): solves $5x = 51$, dropping the constant $k$ entirely.\n\n* Choice D ($11$): stops at $k$, the constant found in the first step.\n\n**Test Day Takeaway:** Pin down the unknown constant with the given point first; only then does the output equation have a single unknown.",
+ "id": "bank-alg-071"
+}

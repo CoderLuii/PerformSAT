@@ -1,0 +1,29 @@
+{
+ "question": "A glacier terminus at $(-2, 9)$ is ringed by ice-margin stakes that all lie on one circle, and a monitoring camera at $(10, 0)$ sits on that ring, with coordinates in kilometers. How wide, in kilometers, is the ring measured across its center?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$21$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$60$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the radius 15 instead of the width across the center",
+  "B": "adds the coordinate gaps, 12 + 9, instead of using the Pythagorean sum",
+  "D": "doubles the width a second time, reporting 4 times the radius"
+ },
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The radius is $\\sqrt{12^2 + 9^2} = 15$ kilometers, and the width across the center is $2(15) = 30$.\n\n**The Full Solution:**\nStep 1: The ring is centered at the terminus $(-2, 9)$ and passes through the camera $(10, 0)$, so its radius is the distance between them.\nStep 2: The gaps are $10 - (-2) = 12$ and $0 - 9 = -9$, so $r = \\sqrt{144 + 81} = \\sqrt{225} = 15$ kilometers.\nStep 3: A width measured straight across through the center is a diameter: $2r = 30$ kilometers. Check: a stake directly opposite the camera would sit $30$ kilometers from it ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): stops at the radius, which reaches only halfway across.\n* Choice B ($21$): adds the coordinate gaps $12 + 9$ instead of taking the Pythagorean sum.\n* Choice D ($60$): doubles the diameter, applying the factor of $2$ twice.\n\n**Test Day Takeaway:** A distance from the center to a point on a circle is the radius — double it only when the question asks for a width across the center.",
+ "id": "bank-geo-300"
+}

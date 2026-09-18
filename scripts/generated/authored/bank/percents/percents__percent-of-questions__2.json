@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "At a wildlife refuge, $65\\%$ of the tagged birds are songbirds. If $91$ of the tagged birds are songbirds, how many tagged birds are at the refuge?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$49$"
+    },
+    {
+      "id": "B",
+      "text": "$140$"
+    },
+    {
+      "id": "C",
+      "text": "$156$"
+    },
+    {
+      "id": "D",
+      "text": "$260$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the non-songbirds",
+    "C": "adds the percent as a count",
+    "D": "divides by the complement"
+  },
+  "correctAnswer": "B",
+  "hint": "The $91$ birds are a part, not the whole, so divide rather than multiply.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** $91 \\div 0.65 = 140$.\n\n**The Full Solution:**\nStep 1: Let $n$ be the number of tagged birds. The statement says $0.65n = 91$.\nStep 2: Divide both sides by $0.65$: $n = \\frac{91}{0.65} = 140$.\nStep 3: So there are $140$ tagged birds. Check: $0.65 \\times 140 = 91$, and the remaining $49$ birds are $35\\%$ of $140$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($49$): reports $140 - 91$, the number of tagged birds that are not songbirds.\n* Choice C ($156$): adds $65$ to $91$, treating the percent as a count of birds.\n* Choice D ($260$): divides by $0.35$, using the percent of birds that are NOT songbirds.\n\n**Test Day Takeaway:** When the part is given and the whole is missing, divide the part by the decimal form of its percent."
+}

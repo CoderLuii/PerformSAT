@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "A meet-scoring model sets a team's points per event $p$ by $4(p - a) + 7p = 3(p + 12)$, with $a$ constant, and the model returns $p = 5$. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-1$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "moves 4a across with the wrong sign, solving 55 + 4a = 51",
+  "C": "distributes the 4 only to p, solving 20 + 35 - a = 51",
+  "D": "distributes the 3 only to p, solving 55 - 4a = 15 + 12 = 27"
+ },
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice B is correct.** Substituting $p = 5$ gives $4(5 - a) + 35 = 51$, so $55 - 4a = 51$ and $a = 1$.\n\n**The Fast Way (~25s):** At $p = 5$ the left side is $20 - 4a + 35$ and the right side is $51$, so $4a = 4$ and $a = 1$.\n\n**The Full Solution:**\nStep 1: Substitute $p = 5$: $4(5 - a) + 7(5) = 3(5 + 12)$.\nStep 2: Expand both sides: $20 - 4a + 35 = 51$, which is $55 - 4a = 51$.\nStep 3: Check with the true value: $4a = 4$ gives $a = 1$, and then $4(5 - 1) + 35 = 16 + 35 = 51$, matching $3(17) = 51$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-1$): moves the $-4a$ term across the equal sign without changing its sign, solving $55 + 4a = 51$.\n* Choice C ($4$): distributes the $4$ to $p$ but not to $a$, turning the left side into $4p - a + 7p = 55 - a$ and solving $55 - a = 51$.\n* Choice D ($7$): distributes the $3$ to $p$ but not to $12$, so the right side becomes $15 + 12 = 27$ and the equation reads $55 - 4a = 27$.\n\n**Test Day Takeaway:** When a solution is handed to you, substitute it first. The equation collapses to one unknown, and the only remaining risk is distributing a factor across every term inside its parentheses."
+}

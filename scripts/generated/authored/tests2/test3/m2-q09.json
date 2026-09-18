@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "Two weaving schedules are described by $4x - ky = 18$ and $6x - 15y = 30$, where $x$ is the number of hours on loom A, $y$ is the number of hours on loom B, and $k$ is a constant. No pair $(x, y)$ satisfies both equations. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$22.5$"
+  },
+  {
+   "id": "D",
+   "text": "$25$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "copies the coefficient of y from the second equation without scaling it by 4/6",
+  "C": "inverts the scale factor, computing 15 x 6/4 = 22.5",
+  "D": "scales by the ratio of the constant terms, 15 x 30/18 = 25"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** No solution means the lines are parallel, so the $x$- and $y$-coefficients must scale together: $\\frac{4}{6} = \\frac{k}{15}$, giving $k = 10$.\n\n**The Full Solution:**\nStep 1: A system of two linear equations has no solution when the two lines are parallel and distinct — the coefficients of $x$ and of $y$ are in the same ratio, but the constants are not.\nStep 2: Match the coefficients: $\\frac{4}{6} = \\frac{k}{15}$. Cross-multiplying gives $6k = 60$, so $k = 10$.\nStep 3: Confirm the lines are distinct rather than identical. With $k = 10$ the first equation halves to $2x - 5y = 9$ and the second thirds to $2x - 5y = 10$. Same left side, different right side, so no pair $(x, y)$ works. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($15$): copies the $-15$ from the second equation, as if parallel lines needed identical coefficients rather than proportional ones.\n* Choice C ($22.5$): uses the scale factor upside down, $15 \\cdot \\frac{6}{4}$, instead of $15 \\cdot \\frac{4}{6}$.\n* Choice D ($25$): scales by the ratio of the constants, $15 \\cdot \\frac{30}{18}$. Matching the constants is what produces infinitely many solutions, which is the opposite of what the stem describes.\n\n**Test Day Takeaway:** Parallel means the coefficient ratios agree and the constant ratio does not. Set up the coefficient proportion first, then verify the constants break it — the value that makes the constants match too is always one of the choices."
+}

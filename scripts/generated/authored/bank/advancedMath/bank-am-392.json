@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-392",
+  "question": "The function $q$ is defined by $q(x) = a(x + 2)^2 + 9$, where $a$ is a constant. In the $xy$-plane, the graph of $y = q(x)$ has an $x$-intercept at $(1, 0)$. What is the value of $a$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-9$"
+    },
+    {
+      "id": "B",
+      "text": "$-3$"
+    },
+    {
+      "id": "C",
+      "text": "$-1$"
+    },
+    {
+      "id": "D",
+      "text": "$1$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses $(x - 2)^2$, placing the vertex at $x = 2$",
+    "B": "divides by $3$ instead of $3^2$",
+    "D": "drops the negative sign"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** $q(1) = 0$ gives $a(1 + 2)^2 + 9 = 0$, so $9a = -9$ and $a = -1$.\n\n**The Full Solution:**\nStep 1: An $x$-intercept at $(1, 0)$ means $q(1) = 0$, so $a(1 + 2)^2 + 9 = 0$.\nStep 2: $(1 + 2)^2 = 9$, so the equation becomes $9a + 9 = 0$ and $9a = -9$.\nStep 3: $a = -1$. Check: $q(x) = -(x + 2)^2 + 9$ gives $q(1) = -9 + 9 = 0$, and the highest point is $q(-2) = 9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-9$): uses $(1 - 2)^2 = 1$, as if the squared term were $(x - 2)^2$.\n* Choice B ($-3$): divides $-9$ by the horizontal distance $3$ instead of by $3^2 = 9$.\n* Choice D ($1$): finds the right size but keeps the sign positive, which would give $q(1) = 18$, not $0$.\n\n**Test Day Takeaway:** An $x$-intercept is just a second condition in disguise — set the output to $0$ and solve for the remaining constant."
+}

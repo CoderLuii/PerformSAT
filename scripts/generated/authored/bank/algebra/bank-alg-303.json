@@ -1,0 +1,6 @@
+{
+ "question": "A cutting list solves the equation $7x-2b=3x+b$ for $x$, where $b$ is a constant supplied by the estimator, and the value the list returns is exactly $2$ less than $b$ itself. What is the value of $b$?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Linear Equation with Variables on Both Sides**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~50s):** Solving gives $4x=3b$, so $x=\\frac{3b}{4}$; setting $\\frac{3b}{4}=b-2$ gives $3b=4b-8$ and $b=8$.\n\n**The Full Solution:**\n\nStep 1: Collect the variable on the left and the constants on the right: $7x-3x=b+2b$, so $4x=3b$ and $x=\\frac{3b}{4}$.\n\nStep 2: \"Exactly $2$ less than $b$\" means $x=b-2$. Set the two expressions for $x$ equal: $\\frac{3b}{4}=b-2$.\n\nStep 3: Multiply both sides by $4$: $3b=4b-8$, so $b=8$. Check: with $b=8$ the equation is $7x-16=3x+8$, giving $4x=24$ and $x=6$, which is indeed $2$ less than $8$.\n\n**Common Mistakes:** Reading \"$2$ less than $b$\" as $b+2$ gives $\\frac{3b}{4}=b+2$ and $b=-8$, a negative constant. Forgetting to divide by $4$ and setting $3b=b-2$ gives $b=-1$.\n\n**Test Day Takeaway:** Solve for the variable in terms of the constant first, then translate the wording into a second equation and set the two expressions equal.",
+ "id": "bank-alg-303"
+}

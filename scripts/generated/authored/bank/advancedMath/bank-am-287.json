@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-287",
+ "question": "When a fog collector is set to depth $x$ centimeters, it holds $10x^3 + 15x^2 + 8x + 12$ cubic centimeters of water. Which expression below is equivalent to that volume?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(5x^2 + 4)(2x + 3)$"
+  },
+  {
+   "id": "B",
+   "text": "$(5x^2 + 3)(2x + 4)$"
+  },
+  {
+   "id": "C",
+   "text": "$(5x^2 - 4)(2x + 3)$"
+  },
+  {
+   "id": "D",
+   "text": "$(5x^2 + 4)(2x - 3)$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "regroups as $3$ and $4$, which expands to $10x^3 + 20x^2 + 6x + 12$",
+  "C": "flips the sign of the $4$, which expands to $10x^3 + 15x^2 - 8x - 12$",
+  "D": "flips the sign of the $3$, which expands to $10x^3 - 15x^2 + 8x - 12$"
+ },
+ "explanation": "**SAT Pattern: Factor by Grouping**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Group in pairs: $5x^2(2x + 3) + 4(2x + 3) = (5x^2 + 4)(2x + 3)$.\n\n**The Full Solution:**\nStep 1: Split the four terms into two pairs: $(10x^3 + 15x^2) + (8x + 12)$.\nStep 2: Factor each pair: the first gives $5x^2(2x + 3)$ and the second gives $4(2x + 3)$.\nStep 3: Both pairs share $(2x + 3)$, so the volume is $(5x^2 + 4)(2x + 3)$. Check: expanding gives $10x^3 + 15x^2 + 8x + 12$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($(5x^2 + 3)(2x + 4)$): swaps which constant goes where; expanding gives a middle term of $20x^2$.\n* Choice C ($(5x^2 - 4)(2x + 3)$): a sign slip on the second pair, producing $-8x - 12$.\n* Choice D ($(5x^2 + 4)(2x - 3)$): a sign slip inside the shared binomial, producing $-15x^2$.\n\n**Test Day Takeaway:** After factoring each pair, the two leftover binomials must be IDENTICAL — if they are not, regroup or recheck a sign."
+}

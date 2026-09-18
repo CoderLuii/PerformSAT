@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-315",
+ "question": "An equipment pad's rectangular footprint measures $(2k - 3)$ meters by $(k + 1)$ meters, and its area is $9$ square meters greater than that of a square with side $k$ meters. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the rejected root k = -3 with its sign dropped",
+  "C": "reports a footprint dimension, 2k - 3 = 5, instead of k",
+  "D": "reads the constant term of k squared minus k minus 12 as a root"
+ },
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice B is correct.** $(2k - 3)(k + 1) = k^2 + 9$ reduces to $k^2 - k - 12 = 0$, so $k = 4$.\n\n**The Fast Way (~40s):** Expand to $2k^2 - k - 3 = k^2 + 9$, subtract $k^2$, and factor: $(k - 4)(k + 3) = 0$, so $k = 4$.\n\n**The Full Solution:**\n\nStep 1: The footprint's area is $(2k - 3)(k + 1) = 2k^2 - k - 3$, and the square's area is $k^2$.\n\nStep 2: \"Greater by $9$\" means $2k^2 - k - 3 = k^2 + 9$, so $k^2 - k - 12 = 0$.\n\nStep 3: Factor: $(k - 4)(k + 3) = 0$, and only $k = 4$ keeps both dimensions positive. Check: the pad is $5$ by $5$, area $25$; the square has area $16$; and $25 - 16 = 9$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3$): takes the rejected root $k = -3$ and drops the sign.\n* Choice C ($5$): reports the footprint dimension $2k - 3$ instead of $k$.\n* Choice D ($12$): reads the constant $-12$ in $k^2 - k - 12 = 0$ as a solution.\n\n**Test Day Takeaway:** \"Greater by\" sets up a subtraction between two areas; collect everything on one side before factoring, and discard roots that make a length negative."
+}

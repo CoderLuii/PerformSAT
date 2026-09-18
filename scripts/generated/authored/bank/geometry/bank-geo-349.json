@@ -1,0 +1,29 @@
+{
+ "question": "The edge of a tidal mudflat is modeled in the $xy$-plane by $(x + 9)^2 + (y - 4)^2 = 625$, where $x$ and $y$ are in meters, and a dredged channel follows the line $y = 28$. What is the greatest value of $x$ for a point lying on both the edge and the channel?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-16$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$25$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the smaller of the two solutions, -16, instead of the greater",
+  "C": "solves for x + 9 = 7 and reports 7 without subtracting 9",
+  "D": "reports the radius 25 of the mudflat edge"
+ },
+ "explanation": "**SAT Pattern: Circle in Standard Form — $x$-range**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** Substituting $y = 28$ gives $(x + 9)^2 = 625 - 576 = 49$, so $x + 9 = \\pm 7$ and the greater value is $x = -2$.\n\n**The Full Solution:**\nStep 1: The edge has center $(-9, 4)$ and radius $\\sqrt{625} = 25$ meters, so its points satisfy $-34 \\le x \\le 16$.\nStep 2: Set $y = 28$: $(x + 9)^2 + (28 - 4)^2 = 625$, so $(x + 9)^2 + 576 = 625$ and $(x + 9)^2 = 49$.\nStep 3: Then $x + 9 = 7$ or $x + 9 = -7$, giving $x = -2$ or $x = -16$; the greater is $-2$. Check: $(-2 + 9)^2 + 24^2 = 49 + 576 = 625$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-16$): takes the negative square root and reports the smaller crossing point.\n* Choice C ($7$): stops at $x + 9 = 7$ and never subtracts the $9$.\n* Choice D ($25$): reports the radius, which is the greatest possible value of $x$ only for a circle centered on the $y$-axis.\n\n**Test Day Takeaway:** Fixing $y$ turns a circle into a quadratic in $x$ with two roots — solve for the binomial, then undo the shift and pick the root the question asks for.",
+ "id": "bank-geo-349"
+}

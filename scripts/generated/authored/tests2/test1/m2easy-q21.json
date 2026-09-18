@@ -1,0 +1,60 @@
+{
+ "id": 21,
+ "question": "Each of the $300$ shipments a distributor sent last month is recorded in the table by shipping mode and by arrival status. One shipment is chosen at random from those that arrived late. What is the probability that the chosen shipment traveled by rail?",
+ "diagram": {
+  "type": "twoWayTable",
+  "params": {
+   "headers": [
+    "Shipping mode",
+    "On time",
+    "Late",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Rail",
+     "96",
+     "24",
+     "120"
+    ],
+    [
+     "Truck",
+     "132",
+     "48",
+     "180"
+    ],
+    [
+     "Total",
+     "228",
+     "72",
+     "300"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{2}{25}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{1}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{6}{25}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{1}{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 24 by the grand total 300, giving the probability of being both rail and late rather than a conditional probability",
+  "B": "divides 24 by the rail total 120, reversing the condition to give the probability of being late among rail shipments",
+  "C": "divides 72 by 300, giving the probability that a shipment was late, without restricting to rail"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The selection is made from late shipments only, so the denominator is $72$, not $300$. Of those, $24$ went by rail: $\\frac{24}{72} = \\frac{1}{3}$.\n\n**The Full Solution:**\nStep 1: Identify the group the shipment is drawn from. The shipment is chosen from those that arrived late, so only the Late column matters: $24$ rail and $48$ truck, a total of $72$ shipments.\nStep 2: Count the favorable outcomes within that group. The table shows $24$ late shipments traveled by rail.\nStep 3: Divide: $\\frac{24}{72} = \\frac{1}{3}$. Check that the parts of the restricted group add to $1$: rail gives $\\frac{24}{72} = \\frac{1}{3}$ and truck gives $\\frac{48}{72} = \\frac{2}{3}$, and $\\frac{1}{3} + \\frac{2}{3} = 1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{2}{25}$): dividing $24$ by the grand total $300$. That is the chance a randomly chosen shipment is both late and by rail, but the selection was already limited to late shipments.\n* Choice B ($\\frac{1}{5}$): dividing $24$ by the rail total $120$. That reverses the condition and answers \"given rail, what is the chance of being late.\"\n* Choice C ($\\frac{6}{25}$): dividing $72$ by $300$, the probability that a shipment was late at all, which ignores the rail question entirely.\n\n**Test Day Takeaway:** In a two-way table, the words after \"from those that\" or \"given that\" name the denominator. Circle that row or column total first, then count the favorable cell inside it."
+}

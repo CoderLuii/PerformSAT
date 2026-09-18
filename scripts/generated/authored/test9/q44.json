@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 2,
-  "passage": "The elaborate Baltimore album quilts produced around the 1840s were rarely the work of any single maker ______ groups of women each contributed a distinct appliqued block, and the completed quilt was then presented to a minister or departing neighbor as a commemorative gift.",
+  "passage": "Steller watched living sea cows almost daily during the months his shipwrecked crew spent on Bering ______ no trained naturalist ever saw the animals alive after 1768, so every later account of the species rests on his notes, a few skeletons, and fragments of hide.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "maker,"
-    },
-    {
-      "id": "B",
-      "text": "maker"
-    },
-    {
-      "id": "C",
-      "text": "maker;"
-    },
-    {
-      "id": "D",
-      "text": "maker:"
-    }
+    { "id": "A", "text": "Island," },
+    { "id": "B", "text": "Island" },
+    { "id": "C", "text": "Island;" },
+    { "id": "D", "text": "Island, however" }
   ],
   "correctAnswer": "C",
-  "explanation": "Two independent clauses meet at the blank: the quilts \"were rarely the work of any single maker\" and \"groups of women each contributed a distinct block.\" A semicolon joins such clauses, so choice C is correct. A comma alone (A) makes a splice, no punctuation (B) fuses them, and a colon (D) wrongly signals that the second clause defines or lists out the first.",
-  "_meta": {
-    "anchor": "Baltimore album quilts"
-  }
+  "explanation": "**Choice C is correct.** Two independent clauses meet at the blank — the months of observation, and the fact that no naturalist ever saw the animals again — and a semicolon is the conventional boundary between them.\n\n**The Full Solution:**\n- Left of the blank stands a complete sentence: \"Steller watched living sea cows almost daily during the months his shipwrecked crew spent on Bering Island.\"\n- Right of the blank stands another: \"no trained naturalist ever saw the animals alive after 1768...\"\n- With no conjunction supplied, only a semicolon can hold the two sentences together.\n\n**Why the other choices are wrong:**\n- A: A comma alone between independent clauses is a comma splice.\n- B: No punctuation at all fuses the two sentences into a run-on.\n- D: \"Island, however no trained naturalist...\" mispunctuates the conjunctive adverb — \"however\" would need a semicolon before it and a comma after it to do this job."
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-352",
+  "question": "A set of lengths measured in inches has a mean of $9.6$ inches and a range of $2.5$ inches. Each length is converted to centimeters by multiplying it by $2.54$. What is the range, in centimeters, of the converted lengths?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2.5$"
+    },
+    {
+      "id": "B",
+      "text": "$5.04$"
+    },
+    {
+      "id": "C",
+      "text": "$6.35$"
+    },
+    {
+      "id": "D",
+      "text": "$24.384$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "leaves the range unchanged, applying the rule for adding a constant rather than for multiplying.",
+    "B": "adds the conversion factor, $2.5 + 2.54$, instead of multiplying by it.",
+    "D": "converts the mean, $9.6 \\times 2.54$, rather than the range."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Scaling a Data Set**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** The range scales with the values: $2.5 \\times 2.54 = 6.35$ centimeters.\n\n**The Full Solution:**\nStep 1: The range is the maximum minus the minimum.\nStep 2: Multiplying every length by $2.54$ multiplies both the maximum and the minimum by $2.54$, so their difference is multiplied by $2.54$ as well.\nStep 3: The converted range is $2.54 \\times 2.5 = 6.35$ centimeters. Check: a spread of $2.5$ inches is the same physical spread as $6.35$ centimeters. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.5$): leaves the range unchanged, applying the rule for adding a constant rather than for multiplying.\n* Choice B ($5.04$): adds the conversion factor, $2.5 + 2.54$, instead of multiplying by it.\n* Choice D ($24.384$): converts the mean, $9.6 \\times 2.54$, rather than the range.\n\n**Test Day Takeaway:** A unit conversion is a multiplication, so it scales the range and the standard deviation by the same factor as the values. The mean given in the stem is a decoy."
+}

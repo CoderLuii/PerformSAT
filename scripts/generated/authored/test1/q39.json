@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-textual",
  "module": 2,
- "passage": "Solid-state batteries replace the liquid electrolyte of a conventional lithium-ion cell with a solid material through which lithium ions must travel. Engineers hoped that solids would suppress the growth of dendrites—thin metallic spikes that form inside liquid cells and can pierce the barrier between electrodes, causing a short circuit. A research team has proposed that one promising ceramic electrolyte resists dendrites not merely because it is solid but because it is mechanically stiff enough to physically block the spikes from advancing.",
+ "passage": "Some forest trees are linked underground by shared mycorrhizal fungi, whose filaments connect the roots of neighboring individuals. A team of forest ecologists has proposed that these fungal networks do more than trade nutrients for sugar with each tree separately: the team contends that carbon actually passes from well-lit \"donor\" trees through the fungal filaments into the tissues of deeply shaded seedlings nearby, subsidizing the seedlings' growth where photosynthesis alone would fall short.",
  "question": "Which finding, if true, would most directly support the team's proposal?",
  "choices": [
   {
    "id": "A",
-   "text": "Solid-state cells stored more energy for a given weight than conventional lithium-ion cells of the same size did."
+   "text": "Mycorrhizal fungi receive a substantial share of the sugars produced by the mature, well-lit trees with which they are associated."
   },
   {
    "id": "B",
-   "text": "Dendrites advanced freely through softer solid electrolytes but stalled against the stiffer ceramic, even though both materials were fully solid."
+   "text": "Shaded seedlings growing in forests with abundant mycorrhizal fungi tend to be larger, on average, than shaded seedlings growing in forests where such fungi are scarce, even when the two groups are matched for tree species, stand age, and the quality of the underlying soil."
   },
   {
    "id": "C",
-   "text": "The ceramic electrolyte conducted lithium ions more slowly at low temperatures than the liquid electrolyte did."
+   "text": "Carbon isotopes supplied to a sunlit tree later appear in the tissues of shaded seedlings connected to it by fungal filaments, but not in equally shaded seedlings whose fungal connections to that tree have been severed."
   },
   {
    "id": "D",
-   "text": "Cells built with the ceramic electrolyte took longer to manufacture than cells built with a liquid electrolyte."
+   "text": "Seedlings of some tree species can survive for several years in deep shade by drawing on carbohydrate reserves stored in their seeds and roots."
   }
  ],
- "correctAnswer": "B",
- "explanation": "The correct answer is B. The proposal is that stiffness, not mere solidity, is what stops the dendrites, so the supporting evidence has to separate those two properties—and B does, showing dendrites moving through a soft solid but halting at a stiff one. A concerns energy density, which is unrelated to dendrite blocking; C concerns ion conduction speed, again beside the point; and D concerns manufacturing time, which says nothing about why dendrites are stopped."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The proposal claims carbon moves tree-to-tree through fungal connections, and C supplies the isotope-tracing evidence that isolates exactly that route.\n\n**The Full Solution:**\n- The causal claim is specific: carbon moves from lit donor trees through fungal connections into shaded seedlings.\n- Choice C traces labeled carbon from a donor tree into connected shaded seedlings — and the severed-connection comparison isolates the fungal route, ruling out transfer through soil or air.\n\n**Why the other choices are wrong:**\n- A: It establishes only the ordinary exchange between each tree and its own fungi (\"trade nutrients for sugar with each tree separately\"), which the proposal explicitly goes beyond.\n- B: Larger seedlings in fungus-rich forests could reflect better nutrient uptake by each seedling's own fungal partners, with no tree-to-tree carbon movement at all.\n- D: Stored reserves describe an alternative way shaded seedlings persist — which if anything reduces the need for the proposed subsidy, and shows no carbon crossing between trees."
 }

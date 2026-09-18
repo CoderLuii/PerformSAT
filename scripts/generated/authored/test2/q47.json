@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 2,
-  "passage": "Toni Morrison, the novelist and Princeton scholar, transformed how critics read the American canon when she published her 1992 study Playing in the Dark: Whiteness and the Literary Imagination. Examining canonical works by Poe, Melville, and Cather, ______ that an Africanist presence — a shadowy figuration of Blackness — silently structures the central concerns of those novels.",
+  "passage": "The Falkirk Wheel, a rotating boat lift in central Scotland, replaced a flight of eleven canal locks that once took most of a day to traverse. Turning smoothly on a central axle, ______",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "Morrison argued"
+      "text": "the wheel exchanges two water-filled gondolas, carrying boats up or down 24 meters in a single slow rotation."
     },
     {
       "id": "B",
-      "text": "her central thesis was"
+      "text": "boats are carried up or down 24 meters by the wheel's two water-filled gondolas in a single slow rotation."
     },
     {
       "id": "C",
-      "text": "it was argued by Morrison"
+      "text": "a single slow rotation carries boats up or down 24 meters in the wheel's two water-filled gondolas."
     },
     {
       "id": "D",
-      "text": "an Africanist presence emerged"
+      "text": "there are two water-filled gondolas that carry boats up or down 24 meters in a single slow rotation."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The opener 'Examining canonical works by Poe, Melville, and Cather' is a participial phrase, and Standard English requires it to modify the subject of the main clause that follows. Only a person can do the examining of canonical works, so the subject of the main clause must name a person — and the passage establishes that the person doing this work is Morrison. (A) 'Morrison argued' supplies that human subject and produces a grammatically correct sentence: Morrison is the one who has been examining the canonical novels, and Morrison is the one who argues. The other three choices all create dangling-modifier errors because their subjects cannot logically perform the action 'examining.'"
+  "explanation": "**Choice A is correct.** The introductory modifier \"Turning smoothly on a central axle\" must attach to the thing doing the turning — the wheel — and only choice A places \"the wheel\" immediately after the comma.\n\n**The Full Solution:**\n- An opening participial phrase modifies the subject of the clause that follows; readers attach \"Turning smoothly on a central axle\" to the first noun they meet.\n- Ask what turns on the axle: the wheel itself.\n- Choice A begins its clause with \"the wheel,\" so the modifier lands on its true subject and the sentence reads logically.\n\n**Why the other choices are wrong:**\n- B: It makes \"boats\" the subject, implying the boats are turning on the central axle rather than riding in the gondolas.\n- C: It hands the modifier to \"a single slow rotation\" — but a rotation does not itself turn on an axle; the wheel does.\n- D: The expletive \"there are\" gives the modifier nothing to attach to, leaving \"Turning smoothly on a central axle\" dangling."
 }

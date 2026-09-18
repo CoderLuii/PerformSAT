@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-410",
+  "question": "A laboratory's reagent use in April was $15\\%$ less than its reagent use in March. If the laboratory used $3{,}060$ milliliters of reagent in April, how many milliliters of reagent did it use in March?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2{,}601$"
+    },
+    {
+      "id": "B",
+      "text": "$3{,}519$"
+    },
+    {
+      "id": "C",
+      "text": "$3{,}600$"
+    },
+    {
+      "id": "D",
+      "text": "$20{,}400$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies by $0.85$ instead of dividing, applying the decrease a second time",
+    "B": "multiplies by $1.15$, treating a $15\\%$ decrease as undone by a $15\\%$ increase",
+    "D": "divides by $0.15$, the percent of the decrease, instead of by $0.85$"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** April is $85\\%$ of March, so March $= \\frac{3060}{0.85} = 3{,}600$ milliliters.\n\n**The Full Solution:**\nStep 1: A $15\\%$ decrease leaves $100\\% - 15\\% = 85\\%$ of the March amount, so $0.85M = 3060$, where $M$ is the March use.\nStep 2: Solve by dividing: $M = \\frac{3060}{0.85}$.\nStep 3: $M = 3600$ milliliters. Check: $0.15(3600) = 540$, and $3600 - 540 = 3{,}060$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2{,}601$): multiplies by $0.85$ instead of dividing, applying the decrease a second time\n* Choice B ($3{,}519$): multiplies by $1.15$, treating a $15\\%$ decrease as undone by a $15\\%$ increase\n* Choice D ($20{,}400$): divides by $0.15$, the percent of the decrease, instead of by $0.85$\n\n**Test Day Takeaway:** When the percent describes the change from the unknown value, write the unknown as the multiplier's input and divide; multiplying moves you the wrong way."
+}

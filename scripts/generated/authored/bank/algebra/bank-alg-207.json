@@ -1,0 +1,94 @@
+{
+  "question": "The scatterplot shows the average April snowpack depth, in centimeters, at a mountain station for $11$ decades, where $x$ is the number of decades since $1900$. The line of best fit is given by $y = -2.4x + 78$. Which statement is the best interpretation of the slope of this line?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Each year, the estimated April snowpack depth decreases by $2.4$ centimeters."
+    },
+    {
+      "id": "B",
+      "text": "Each decade, the estimated April snowpack depth increases by $2.4$ centimeters."
+    },
+    {
+      "id": "C",
+      "text": "Each decade, the estimated April snowpack depth decreases by $24$ centimeters."
+    },
+    {
+      "id": "D",
+      "text": "Each decade, the estimated April snowpack depth decreases by $2.4$ centimeters."
+    }
+  ],
+  "correctAnswer": "D",
+  "distractorNotes": {
+    "A": "reads the rate as per year even though one unit of $x$ is a decade",
+    "B": "drops the negative sign, reversing the direction of the trend",
+    "C": "multiplies the slope by $10$ while still labeling the result per decade"
+  },
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** One unit of $x$ is one decade, so the slope $-2.4$ means the estimated depth falls $2.4$ centimeters per decade.\n\n**The Full Solution:**\n\nStep 1: Read the units from the stem: $x$ counts decades since $1900$ and $y$ is April snowpack depth in centimeters.\n\nStep 2: The slope of $y = -2.4x + 78$ is the change in $y$ per one-unit change in $x$, that is, per decade.\n\nStep 3: The sign is negative, so the depth decreases. Check: at $x = 2$ the model gives $73.2$ and at $x = 3$ it gives $70.8$, a drop of $2.4$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: attaches the rate to a year, but a one-unit step in $x$ spans ten years, so the yearly drop would be $0.24$ centimeter.\n\n* Choice B: keeps the size $2.4$ but reverses the direction, ignoring the negative slope.\n\n* Choice C: multiplies the slope by $10$, as if converting decades to years, but still reports the result as a per-decade change.\n\n**Test Day Takeaway:** Read what one unit of $x$ stands for before interpreting a slope; a rescaled input silently rescales the rate.",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          0,
+          80
+        ],
+        [
+          1,
+          74
+        ],
+        [
+          2,
+          74
+        ],
+        [
+          3,
+          71
+        ],
+        [
+          4,
+          69
+        ],
+        [
+          5,
+          65
+        ],
+        [
+          6,
+          64
+        ],
+        [
+          7,
+          62
+        ],
+        [
+          8,
+          58
+        ],
+        [
+          9,
+          57
+        ],
+        [
+          10,
+          55
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 11,
+      "yMin": 40,
+      "yMax": 85,
+      "xGridStep": 1,
+      "yGridStep": 5,
+      "xLabelStep": 2,
+      "yLabelStep": 10,
+      "xLabel": "Decades since 1900",
+      "yLabel": "April snowpack depth (cm)",
+      "bestFitLine": {
+        "slope": -2.4,
+        "intercept": 78
+      }
+    }
+  },
+  "id": "bank-alg-207"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-356",
+  "question": "A dance competition published $28$ adjusted scores, each obtained from a judge's raw score $v$ by computing $4v - 7$. The published scores have a mean of $61$ and a standard deviation of $12$. What is the standard deviation of the $28$ raw scores?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$4.75$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$19$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "undoes the -7 on the spread as well: (12 + 7) / 4 = 4.75",
+    "C": "leaves the published standard deviation unchanged, ignoring the multiplier 4",
+    "D": "adds 7 back to the standard deviation: 12 + 7 = 19, treating the shift as affecting spread"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Scaling a Data Set**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Only the factor $4$ changes the spread, so the raw standard deviation is $\\frac{12}{4} = 3$.\n\n**The Full Solution:**\nStep 1: Separate the two operations. Publishing computes $4v - 7$: the factor $4$ stretches the data, and subtracting $7$ slides it.\nStep 2: Apply the spread rule. Subtracting $7$ from every value leaves the standard deviation alone, so the published standard deviation is $4$ times the raw one: $4\\sigma = 12$.\nStep 3: Solve and check. $\\sigma = \\frac{12}{4} = 3$. Raw scores $3$ apart become published scores $12$ apart, matching the reported spread. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($4.75$): computes $\\frac{12 + 7}{4}$, undoing the $-7$ on the spread as well. Shifts do not touch spread.\n* Choice C ($12$): reports the published standard deviation unchanged, ignoring the factor $4$.\n* Choice D ($19$): adds the $7$ back to the spread: $12 + 7 = 19$. That reverses a shift that never affected the spread.\n\n**Test Day Takeaway:** When reversing $y = av + b$ for a SPREAD, divide by $|a|$ and ignore $b$ entirely. The mean is the only statistic the $b$ touches."
+}

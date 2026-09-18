@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-128",
+ "question": "A stream gauge recorded daily river discharge, in cubic meters per second, on $30$ consecutive days. Twenty-nine of the readings fell between $8$ and $22$, and one day of flash flooding recorded $310$. Which of the following correctly compares the mean and the median of the $30$ readings?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mean is greater than the median."
+  },
+  {
+   "id": "B",
+   "text": "The mean is less than the median."
+  },
+  {
+   "id": "C",
+   "text": "The mean is equal to the median."
+  },
+  {
+   "id": "D",
+   "text": "The comparison cannot be determined from the information given."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reverses the pull; a single unusually large reading raises the mean, it does not lower it",
+  "C": "assumes the two measures of center always agree, which holds only for a symmetric distribution",
+  "D": "treats the comparison as unknowable even though the flood reading is stated to lie far above all $29$ others"
+ },
+ "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice A is correct.** The flood reading of $310$ lies far above the other $29$ values, so it pulls the mean upward while leaving the middle of the ordered list among the $8$-to-$22$ readings.\n\n**The Fast Way (~35s):** One extreme value on the high side drags the mean toward it; the median only cares about position, so the mean ends up above the median.\n\n**The Full Solution:**\n\nStep 1: Locate the median. With $30$ ordered values, the median is the mean of the $15$th and $16$th, both of which sit among the $29$ readings between $8$ and $22$. The median therefore lies between $8$ and $22$.\n\nStep 2: Bound the mean from below. Even if the other $29$ readings were all $8$, the total would be at least $29(8) + 310 = 542$, giving a mean of at least $\\frac{542}{30} \\approx 18.1$; if they were all $22$, the mean would be $\\frac{29(22) + 310}{30} \\approx 31.6$.\n\nStep 3: Compare. The flood reading adds nearly $300$ to the total but shifts no value's position, so the mean is pulled above the range where the median sits. Check: replacing $310$ with a typical $15$ would lower the total by $295$ and the mean by nearly $10$, while the median would not move at all.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: describes what a single unusually small reading would do. This outlier is far above the rest, not below.\n* Choice C: would require a symmetric set. One extreme value on one side destroys that symmetry.\n* Choice D: the direction is determined: the stem says the flood value lies far above every other reading.\n\n**Test Day Takeaway:** The mean feels every value's size, the median only feels position -- so an outlier always moves the mean toward itself and leaves the median where it was."
+}

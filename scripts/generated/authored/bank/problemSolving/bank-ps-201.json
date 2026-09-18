@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-201",
+  "question": "A garden center has $50$ seed packets on display, and $18$ of these packets are labeled basil. One of the packets will be selected at random. What is the probability of selecting a packet labeled basil?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{9}{50}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{9}{25}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{9}{16}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{16}{25}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides 18 by 100 instead of by the 50 packets on display",
+    "C": "forms the odds 18 basil to 32 non-basil instead of a probability",
+    "D": "gives the probability of selecting a packet that is NOT labeled basil"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The probability is the number of basil packets over the total number of packets: $\\frac{18}{50} = \\frac{9}{25}$.\n\n**The Full Solution:**\nStep 1: A probability is $\\frac{\\text{number of favorable outcomes}}{\\text{total number of outcomes}}$. Here $18$ packets are labeled basil and $50$ packets are on display.\nStep 2: Write the ratio: $\\frac{18}{50}$.\nStep 3: Divide the numerator and denominator by $2$: $\\frac{9}{25}$. Check: $\\frac{9}{25} = 0.36$, and $0.36 \\times 50 = 18$ packets. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{9}{50}$): divides $18$ by $100$ rather than by the $50$ packets actually on display.\n* Choice C ($\\frac{9}{16}$): this is $\\frac{18}{32}$, the ratio of basil packets to non-basil packets — odds, not a probability.\n* Choice D ($\\frac{16}{25}$): this is $\\frac{32}{50}$, the probability of selecting a packet that is not labeled basil.\n\n**Test Day Takeaway:** The denominator of a marginal probability is always the whole group, never the leftover part of it."
+}

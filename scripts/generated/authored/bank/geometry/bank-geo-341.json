@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-341",
+ "question": "Two similar cylindrical carding drums stand in a finishing room, and the area of the larger drum's circular base is $\\frac{9}{4}$ times the area of the smaller drum's base. The larger drum's volume is $n$ times the smaller drum's volume. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.5$"
+  },
+  {
+   "id": "B",
+   "text": "$2.25$"
+  },
+  {
+   "id": "C",
+   "text": "$3.375$"
+  },
+  {
+   "id": "D",
+   "text": "$5.0625$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the linear ratio 3/2 instead of the volume ratio",
+  "B": "reports the base-area ratio 9/4 as though volume scaled like area",
+  "D": "squares the area ratio, 2.25^2 = 5.0625, instead of cubing the linear ratio"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Similar-Figures Area Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Base areas give a linear ratio of $\\sqrt{\\frac{9}{4}}=\\frac{3}{2}$, so volumes are in the ratio $\\left(\\frac{3}{2}\\right)^3=\\frac{27}{8}=3.375$.\n\n**The Full Solution:**\n\nStep 1 — Move from areas to lengths. Base area is $\\pi r^2$, so $\\frac{\\pi R^2}{\\pi r^2}=\\frac{9}{4}$ gives $\\frac{R}{r}=\\frac{3}{2}$.\n\nStep 2 — Because the drums are similar, every length, including the height, scales by $\\frac{3}{2}$.\n\nStep 3 — Volume is a product of three lengths, so it scales by $\\left(\\frac{3}{2}\\right)^3=\\frac{27}{8}=3.375$, and $n=3.375$. Check: with $r=2$, $h=2$ and $R=3$, $H=3$, the volumes are $8\\pi$ and $27\\pi$, whose ratio is $3.375$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($1.5$): this stops at the linear ratio $\\frac{3}{2}$ and never raises it to the third power.\n* Choice B ($2.25$): this reuses the base-area ratio, which scales two dimensions, not three.\n* Choice D ($5.0625$): this squares the area ratio, $2.25^2$, mixing a fourth power into a three-dimensional comparison.\n\n**Test Day Takeaway:** Convert any given ratio back to a length ratio first; from there areas take the square and volumes the cube."
+}

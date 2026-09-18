@@ -1,0 +1,29 @@
+{
+ "question": "A count of bats leaving a roost satisfies $9r - 5 = 22$, where $r$ is the number of minutes after sunset at which counting begins. If $9r + c = 40$ for some constant $c$, what is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$27$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the constant $5$ from the first equation",
+  "C": "computes $40 - 22$, subtracting the two right-hand sides",
+  "D": "reports the value of $9r$ instead of $c$"
+ },
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $9r = 27$, so $c = 40 - 27 = 13$.\n\n**The Full Solution:**\n\nStep 1: Solve the first equation for the shared term: $9r - 5 = 22$ gives $9r = 27$.\n\nStep 2: Substitute into the second equation: $27 + c = 40$.\n\nStep 3: So $c = 13$. Check with $r = 3$: $9(3) - 5 = 22$ and $9(3) + 13 = 40$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5$): copies the constant from the first equation instead of solving for the new one.\n\n* Choice C ($18$): subtracts the right-hand sides, $40 - 22$, which ignores the $-5$.\n\n* Choice D ($27$): reports $9r$, the shared term, rather than the constant added to it.\n\n**Test Day Takeaway:** Isolate the repeated variable term first; the second equation then becomes one subtraction.",
+ "id": "bank-alg-094"
+}

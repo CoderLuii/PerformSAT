@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-186",
+ "question": "A sedimentation tank's rim is modeled by $x^2+y^2=36$ with units in meters, and an overflow channel lies along the line $y=\\frac{3}{4}x+b$, meeting the rim at exactly one point. If $b>0$, what is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3.6$"
+  },
+  {
+   "id": "B",
+   "text": "$4.8$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$7.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies the radius by 3/5 instead of 5/4",
+  "B": "multiplies the radius by 4/5, the reciprocal of the correct factor 5/4",
+  "C": "reports the radius 6 as the intercept"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Tangent Line to Circle (Discriminant = 0)**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** Write the line as $3x-4y+4b=0$; the distance from the origin is $\\frac{|4b|}{5}$, and setting it equal to the radius $6$ gives $b=7.5$.\n\n**The Full Solution:**\n\nStep 1 — The rim has center $(0,0)$ and radius $\\sqrt{36}=6$ meters. Clearing fractions in $y=\\frac{3}{4}x+b$ gives $3x-4y+4b=0$.\n\nStep 2 — Meeting at exactly one point means the distance from the center to the line equals the radius: $\\frac{|3(0)-4(0)+4b|}{\\sqrt{3^2+(-4)^2}}=\\frac{4b}{5}=6$.\n\nStep 3 — Solve: $4b=30$, so $b=7.5$ meters since $b>0$. Check: substituting $y=\\frac{3}{4}x+7.5$ into $x^2+y^2=36$ gives $\\frac{25}{16}x^2+\\frac{45}{4}x+20.25=0$, whose discriminant is $\\left(\\frac{45}{4}\\right)^2-4\\left(\\frac{25}{16}\\right)(20.25)=0$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3.6$): this scales the radius by $\\frac{3}{5}$, reading the slope's numerator against the hypotenuse.\n* Choice B ($4.8$): this scales by $\\frac{4}{5}$, the reciprocal of the factor $\\frac{5}{4}$ the algebra produces.\n* Choice C ($6$): this reports the radius itself as the intercept.\n\n**Test Day Takeaway:** Clear the fraction from the slope first; the $3$-$4$-$5$ pattern in $\\sqrt{3^2+4^2}$ then makes the distance formula arithmetic trivial."
+}

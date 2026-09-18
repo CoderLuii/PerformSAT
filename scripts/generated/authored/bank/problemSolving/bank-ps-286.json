@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-286",
+  "question": "A city agency polled $320$ commuters chosen at random and reported a result with a margin of error of $\\pm 5.4$ percentage points. The agency will repeat the poll with $2{,}880$ commuters chosen by the same procedure. Approximately what margin of error should the agency expect for the repeated poll?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\pm 0.6$ percentage point"
+    },
+    {
+      "id": "B",
+      "text": "$\\pm 1.8$ percentage points"
+    },
+    {
+      "id": "C",
+      "text": "$\\pm 2.7$ percentage points"
+    },
+    {
+      "id": "D",
+      "text": "$\\pm 16.2$ percentage points"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by the sample-size ratio $9$ instead of by $\\sqrt{9} = 3$",
+    "C": "halves the margin of error because the sample grew, without using the ratio",
+    "D": "multiplies by $3$ instead of dividing"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sample Size for Margin Reduction**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $\\frac{2880}{320} = 9$, so the margin of error is divided by $\\sqrt{9} = 3$: $\\frac{5.4}{3} = 1.8$.\n\n**The Full Solution:**\nStep 1: With the procedure unchanged, the margin of error is proportional to $\\frac{1}{\\sqrt{n}}$.\nStep 2: The sample size grows by the factor $\\frac{2880}{320} = 9$, so $\\sqrt{n}$ grows by $\\sqrt{9} = 3$ and the margin of error shrinks by the same factor of $3$.\nStep 3: $\\frac{5.4}{3} = 1.8$ percentage points. Check the reverse: to cut a margin of error to one-third, the sample must be $3^2 = 9$ times as large, and $9 \\times 320 = 2{,}880$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\pm 0.6$ percentage point): $\\frac{5.4}{9}$, applying the sample-size ratio directly to the margin of error.\n* Choice C ($\\pm 2.7$ percentage points): $\\frac{5.4}{2}$, halving the margin because the sample is \"much bigger\" instead of computing the ratio.\n* Choice D ($\\pm 16.2$ percentage points): $5.4 \\times 3$; the factor of $3$ is right, but a bigger sample must lower the margin of error.\n\n**Test Day Takeaway:** Take the ratio of the sample sizes first, then square-root it; that number divides the old margin of error."
+}

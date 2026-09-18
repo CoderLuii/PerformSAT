@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-233",
+  "question": "A transit agency surveyed $600$ riders and found that riders who used its mobile ticketing app reported shorter average wait times than riders who bought paper tickets. Riders chose their own ticketing method. Which statement is best supported by these results?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Using the mobile app causes wait times to decrease for riders in this transit system."
+    },
+    {
+      "id": "B",
+      "text": "There is an association between using the mobile app and reporting a shorter wait time among the riders surveyed."
+    },
+    {
+      "id": "C",
+      "text": "Riders who bought paper tickets would have reported shorter wait times if they had used the mobile app."
+    },
+    {
+      "id": "D",
+      "text": "Using the mobile app has no effect on the wait times of riders in this transit system."
+    }
+  ],
+  "distractorNotes": {
+    "A": "draws a cause-and-effect conclusion from data with no random assignment",
+    "C": "asserts a counterfactual outcome for a group that was never treated",
+    "D": "claims no effect, which the data also cannot establish"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Observational vs Experimental Study**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Riders selected their own ticketing method, so this is an observational study: it supports an association, not causation.\n\n**The Full Solution:**\nStep 1: Identify the design. No rider was assigned to a ticketing method, so the two groups may differ in other ways, such as which stations or times they travel.\nStep 2: Without random assignment, a difference between the groups cannot be attributed to the app itself.\nStep 3: The defensible statement is limited to the observed relationship among the $600$ riders surveyed, which is what Choice B says. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: states cause and effect, which requires random assignment to the ticketing methods.\n* Choice C: predicts what would have happened to the paper-ticket group under a treatment they never received.\n* Choice D: claims the app has no effect; the study cannot rule an effect out any more than it can establish one.\n\n**Test Day Takeaway:** No random assignment means no causal claim — in either direction. Association is the strongest conclusion available."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "An inspection crew marks sensor P at $(-6, 3)$ and sensor Q at $(2, -9)$ on a coordinate grid of a truss bridge, where each unit represents 1 meter. Which expression gives the distance, in meters, between the two sensors?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\sqrt{(2 - 6)^2 + (-9 - 3)^2}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\sqrt{(2 - 6)^2 + (-9 + 3)^2}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\sqrt{(2 + 6)^2 + (-9 - 3)^2}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\sqrt{(2 + 6)^2 + (-9 + 3)^2}$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reverses the sign of P's x-coordinate, writing 2 - 6 instead of 2 - (-6), which gives sqrt(160)",
+  "B": "reverses the sign of both of P's coordinates: 2 - 6 and -9 + 3, which gives sqrt(52)",
+  "D": "reverses the sign of P's y-coordinate, writing -9 + 3 instead of -9 - 3, which gives a clean 10"
+ },
+ "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice C is correct.** The distance between $(x_1, y_1)$ and $(x_2, y_2)$ is $\\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$, and subtracting the negative coordinates of P turns both differences into sums of the correct magnitude: $\\sqrt{(2 + 6)^2 + (-9 - 3)^2}$.\n\n**The Fast Way (~20s):** $x$ runs from $-6$ to $2$, a change of $8$; $y$ runs from $3$ to $-9$, a change of $-12$. Only Choice C shows $2 + 6$ and $-9 - 3$.\n\n**The Full Solution:**\nStep 1: Label the points: $(x_1, y_1) = (-6, 3)$ and $(x_2, y_2) = (2, -9)$.\nStep 2: $x_2 - x_1 = 2 - (-6) = 2 + 6 = 8$, and $y_2 - y_1 = -9 - 3 = -12$.\nStep 3: The distance is $\\sqrt{8^2 + (-12)^2} = \\sqrt{208}$, which is what Choice C evaluates to. Check: the horizontal run of $8$ m and vertical drop of $12$ m give a hypotenuse a little over $14$ m, and $\\sqrt{208} \\approx 14.4$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\sqrt{160}$): writes $2 - 6$ for the horizontal difference, reversing the sign of P's $x$-coordinate; it shrinks the run from $8$ to $4$.\n* Choice B ($\\sqrt{52}$): reverses the sign of both of P's coordinates, shrinking the run to $4$ and the rise to $6$.\n* Choice D ($10$): writes $-9 + 3$ for the vertical difference, reversing the sign of P's $y$-coordinate; that turns a drop of $12$ into a drop of $6$ and produces a suspiciously clean $10$.\n\n**Test Day Takeaway:** Subtracting a negative coordinate ADDS. Write $x_2 - x_1$ with the parentheses in place before you simplify."
+}

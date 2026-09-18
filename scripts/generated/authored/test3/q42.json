@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "information-and-ideas",
  "skill": "inferences",
+ "type": "multiple-choice",
+ "passage": "Packrats collect twigs, seeds, and bones from within about fifty meters of their dens, and they urinate on the refuse piles they accumulate; in arid climates the urine crystallizes as it dries, entombing the debris in a hard, varnish-like mass. Some of these middens, tucked into desert caves and rock shelters, are more than 40,000 years old, and the plant fragments inside them can be identified to species and dated with precision. Because each midden holds only what once grew within a single packrat's small foraging radius, a sequence of middens of different ages from one canyon offers something no lake-sediment pollen core can: ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "abandon efforts at transmission once the youngest speakers begin to lose any fine-grained vocabulary."
+   "text": "a way of estimating how far individual packrats were forced to travel from their dens as desert food plants grew scarce during dry periods."
   },
   {
    "id": "B",
-   "text": "treat conversational fluency as a reliable proxy for the survival of the specialized vocabulary."
+   "text": "an archive of climate conditions integrated across an entire desert region rather than tied to any single location."
   },
   {
    "id": "C",
-   "text": "track whether the specific vocabulary that carries the unique knowledge is actually reaching younger speakers."
+   "text": "a record of precisely which plants grew at a single spot at known moments across tens of thousands of years."
   },
   {
    "id": "D",
-   "text": "shift their attention to the wider regional language as the main repository of local plant and animal terms."
+   "text": "evidence that desert plant communities have remained essentially unchanged for more than 40,000 years."
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C. The passage gives two premises: most of the unique knowledge in these languages sits in the fine-grained vocabulary layer, and the youngest speakers lose that layer first even while staying conversational. Together they imply that conversational fluency is not a reliable sign that the unique knowledge is being passed on, so a community must look directly at whether the fine-grained vocabulary itself is reaching younger speakers. C states that conclusion. A leaps to abandoning transmission, which the premises about a measurement gap do not justify. B asserts the opposite of the passage, which says fluency alone is not enough. D recommends the wider regional language, though the passage states that those languages do not record the specialized knowledge.",
+ "explanation": "**Choice C is correct.** Assemble the premises: fragments identifiable to species, datable with precision, and gathered only within fifty meters of a den. A dated series of such middens from one canyon therefore documents exactly what grew at that spot, time slice by time slice — the fine-grained local record C describes.\n\n**The Full Solution:**\n- The sentence's structure demands something a pollen core cannot supply. Pollen blows in from a whole region and blends sources; the midden's defining trait is the opposite — a tight, known collection radius.\n- Combine locality (fifty meters) with species-level identification and precise dates across a midden sequence, and the unique product is a site-specific vegetation history.\n\n**Why the other choices are wrong:**\n- A: The fifty-meter radius is a fixed premise of the argument, not a variable to be estimated — and travel distance is not something a pile of debris at the den records.\n- B: Regional integration is what pollen cores already provide; the passage is building toward what middens add, which is the reverse.\n- D: Nothing suggests stasis — dated middens of different ages are valuable precisely for revealing change.",
  "_meta": {
-  "anchor": "Endangered-language vocabulary loss (unnamed linguists); fine-grained taxonomic vocabulary"
- },
- "passage": "Linguists who study small languages spoken by only a few hundred or a few thousand people have found that such languages often encode detailed knowledge of local plants, animals, and weather that no wider regional language records. They have also found that these languages are lost unevenly: the youngest speakers tend to lose the most fine-grained vocabulary first — names of medicinal plants, distinctions among related species, terms for specific ice and wind conditions — even while they stay conversational in the language overall. Because that fine-grained layer is exactly where most of the unique knowledge sits, communities that want to preserve it cannot treat conversational fluency alone as a sign of success, but must also ______",
- "type": "multiple-choice"
+  "anchor": "Packrat middens as site-specific dated vegetation archives vs. pollen cores"
+ }
 }

@@ -1,31 +1,31 @@
 {
-  "id": 752,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "Most of the fungi in a forest live hidden in the soil, sending up mushrooms only briefly to release their spores. To survey them, ecologists once had to wait for those mushrooms to appear and then identify each one by eye. Newer methods extract fungal DNA directly from soil samples and match it against reference libraries. ______ a single handful of soil can now reveal dozens of species that would never have been spotted by waiting for mushrooms to emerge.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "B",
-      "text": "Otherwise,"
-    },
-    {
-      "id": "C",
-      "text": "For example,"
-    },
-    {
-      "id": "D",
-      "text": "As a result,"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The DNA-based method described in the previous sentence is what makes it possible for a handful of soil to reveal dozens of species, so the final sentence states a consequence and \"As a result\" fits. \"Nevertheless\" would mark a contrast the passage does not set up, \"Otherwise\" would introduce an alternative condition, and \"For example\" would signal an illustration rather than the outcome the new method produces."
+ "id": 752,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "The trailing edge of a humpback whale's tail flukes carries nicks, scars, and pigment patches distinctive enough to identify an individual whale for life. Image-matching software can now compare a new fluke photograph against catalogs holding hundreds of thousands of identified individuals in seconds. ______ nearly any clear photograph — including the thousands taken from whale-watching boats each season — can serve as a scientific sighting record, extending researchers' view of individual whales far beyond what survey cruises alone could provide.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Nevertheless,"
+  },
+  {
+   "id": "B",
+   "text": "Specifically,"
+  },
+  {
+   "id": "C",
+   "text": "Similarly,"
+  },
+  {
+   "id": "D",
+   "text": "Therefore,"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** Because flukes identify individuals for life and software can match any photograph against vast catalogs in seconds, it follows that nearly any clear photograph can serve as a sighting record — a conclusion drawn from the two facts before it, which \"Therefore\" signals.\n\n**The Full Solution:**\n- Premise one: fluke markings are unique and permanent identifiers.\n- Premise two: matching software makes any new photograph checkable against hundreds of thousands of known individuals.\n- The final sentence is what those premises jointly entail — tourist photographs become usable scientific records — so a conclusion-drawing transition fits.\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" would concede an obstacle, but nothing in the preceding sentences works against the conclusion.\n- B: \"Specifically\" would narrow the prior claim to a finer detail, whereas the final sentence broadens to a general consequence.\n- C: \"Similarly\" would introduce a parallel case, and the final sentence extends the same case rather than matching it with another."
 }

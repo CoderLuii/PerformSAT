@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-113",
+  "question": "A pharmacy label printer cuts right triangular tabs whose hypotenuse measures $5w$ millimeters and whose shorter leg measures $3w$ millimeters, where $w$ is a positive constant. Which expression gives the length, in millimeters, of the leg adjacent to the acute angle whose sine is $\\frac{3}{5}$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2w$"
+    },
+    {
+      "id": "B",
+      "text": "$3w$"
+    },
+    {
+      "id": "C",
+      "text": "$4w$"
+    },
+    {
+      "id": "D",
+      "text": "$5w$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the given lengths, 5w - 3w = 2w, instead of subtracting their squares",
+    "B": "misreads sine as adjacent over hypotenuse, so the given 3w leg is reported as the adjacent side",
+    "D": "names the hypotenuse 5w, which is adjacent to neither acute angle in the ratio sense"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: SOH-CAH-TOA in a 3-4-5 Triangle**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Sine $\\frac{3}{5}$ marks the angle opposite the $3w$ leg, so the leg adjacent to it is the other leg, $\\sqrt{(5w)^2-(3w)^2}=4w$.\n\n**The Full Solution:**\n\nStep 1 — Locate the angle. Sine is opposite over hypotenuse, and $\\frac{3w}{5w}=\\frac{3}{5}$, so the angle in question sits across from the $3w$ leg.\n\nStep 2 — Find the missing leg: $\\sqrt{(5w)^2-(3w)^2}=\\sqrt{25w^2-9w^2}=\\sqrt{16w^2}=4w$ millimeters, since $w>0$.\n\nStep 3 — The leg adjacent to that angle is the leg that is not opposite it and is not the hypotenuse, so it is $4w$ millimeters. Check: $\\cos$ of the angle is $\\frac{4w}{5w}=\\frac{4}{5}$, and $\\left(\\frac{3}{5}\\right)^2+\\left(\\frac{4}{5}\\right)^2=1$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2w$): this subtracts side lengths, $5w-3w$, rather than subtracting their squares.\n* Choice B ($3w$): this reads sine as adjacent over hypotenuse and hands back the given $3w$ leg, which is opposite the angle, not adjacent to it.\n* Choice D ($5w$): this names the hypotenuse; the adjacent side of an acute angle is always a leg.\n\n**Test Day Takeaway:** A given sine tells you which leg is opposite — identify that leg first, and the adjacent leg is whatever remains after the hypotenuse."
+}

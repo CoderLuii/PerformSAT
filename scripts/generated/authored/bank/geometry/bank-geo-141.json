@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-141",
+ "question": "The firing chamber of a ceramic kiln is a rectangular prism measuring $k$ meters by $k + 3$ meters by $8$ meters, and it encloses $320$ cubic meters. How many square meters of sheet steel line its six faces?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$144$"
+  },
+  {
+   "id": "B",
+   "text": "$208$"
+  },
+  {
+   "id": "C",
+   "text": "$288$"
+  },
+  {
+   "id": "D",
+   "text": "$320$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds the three distinct face areas 40 + 40 + 64 without doubling them",
+  "B": "doubles only two of the three distinct face areas, 2(40 + 64)",
+  "D": "reports the volume, 320, as though cubic and square units were interchangeable"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Volume → Missing Dimension → Surface Area**\n\n**Choice C is correct.**\n\n**The Fast Way (~60s):** From $8k(k+3) = 320$ we get $k = 5$, so the chamber is $5$ by $8$ by $8$ and its surface area is $2(40 + 40 + 64) = 288$.\n\n**The Full Solution:**\nStep 1: Volume is the product of the three dimensions: $k(k+3)(8) = 320$, so $k^2 + 3k = 40$ and $k^2 + 3k - 40 = 0$.\nStep 2: Factoring gives $(k+8)(k-5) = 0$, and a length must be positive, so $k = 5$ meters and the dimensions are $5$, $8$, and $8$ meters.\nStep 3: Surface area is $2(lw + lh + wh) = 2\\big(5 \\cdot 8 + 5 \\cdot 8 + 8 \\cdot 8\\big) = 2(40 + 40 + 64) = 288$ square meters.\n\nCheck: $5 \\times 8 \\times 8 = 320$ cubic meters, matching the given volume. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($144$): adds the three distinct face areas $40$, $40$, and $64$ but never doubles for the opposite faces.\n* Choice B ($208$): doubles only two of the three distinct face areas, computing $2(40 + 64)$.\n* Choice D ($320$): reports the volume, which is measured in cubic meters, not square meters.\n\n**Test Day Takeaway:** Solve for the missing dimension first; a prism has three distinct face areas and each one appears twice."
+}

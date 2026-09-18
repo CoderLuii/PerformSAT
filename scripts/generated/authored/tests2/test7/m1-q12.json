@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A transit survey covered 400 commuters. Exactly 160 of them ride the bus, and 44 of those bus riders also bike to work; of the 240 who never ride the bus, 56 bike to work. One surveyed commuter is chosen at random. What is the probability that this commuter bikes to work?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{11}{100}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{7}{50}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{1}{4}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{11}{40}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "counts only the 44 bus riders who bike, over the full 400 surveyed",
+  "B": "counts only the 56 non-bus commuters who bike, over the full 400 surveyed",
+  "D": "computes the conditional probability of biking given bus ridership, 44 over 160"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Bikers total $44 + 56 = 100$ out of $400$ commuters, so the probability is $\\frac{100}{400} = \\frac{1}{4}$.\n\n**The Full Solution:**\nStep 1: A marginal probability ignores the other category, so count every commuter who bikes, from both the bus group and the non-bus group: $44 + 56 = 100$.\nStep 2: The sample space is every surveyed commuter: $160 + 240 = 400$.\nStep 3: The probability is $\\frac{100}{400} = \\frac{1}{4}$. Check the complement: $300$ of the $400$ do not bike, and $\\frac{300}{400} = \\frac{3}{4}$, which adds to $1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{11}{100}$): this is $\\frac{44}{400}$, using only the bikers who also ride the bus. A marginal count includes both groups.\n* Choice B ($\\frac{7}{50}$): this is $\\frac{56}{400}$, the other half of the biker count, and misses the $44$ bus riders who bike.\n* Choice D ($\\frac{11}{40}$): this is $\\frac{44}{160}$, the probability of biking among bus riders only. That is a conditional probability, which shrinks the sample space to one row.\n\n**Test Day Takeaway:** Marginal means \"whole population\": the numerator adds every case in the category, and the denominator is the full survey total. If a denominator smaller than the total shows up, a conditional probability has been computed by mistake."
+}

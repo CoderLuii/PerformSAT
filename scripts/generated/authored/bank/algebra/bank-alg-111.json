@@ -1,0 +1,29 @@
+{
+ "question": "A document archive occupies $19$ gigabytes for $600$ scanned pages and $31$ gigabytes for $1{,}000$ scanned pages, and it grows linearly with the page count. How many gigabytes does it occupy for $1{,}500$ scanned pages?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$43$"
+  },
+  {
+   "id": "B",
+   "text": "$45$"
+  },
+  {
+   "id": "C",
+   "text": "$46$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "adds one more 12-gigabyte step past 1,000 pages, as if the jump to 1,500 were another 400 pages",
+  "B": "drops the 1-gigabyte fixed part and reports 0.03(1,500) = 45",
+  "D": "adds the two given sizes, 19 + 31, instead of extending the model"
+ },
+ "explanation": "**SAT Pattern: Line from Two Points**\n\n**Choice C is correct.** The archive grows $0.03$ gigabyte per page on top of a fixed $1$ gigabyte, so $1{,}500$ pages occupy $0.03(1{,}500)+1=46$ gigabytes.\n\n**The Fast Way (~40s):** $\\frac{31-19}{1{,}000-600}=0.03$ gigabyte per page, and $500$ more pages past $1{,}000$ add $15$: $31+15=46$.\n\n**The Full Solution:**\n\nStep 1: Write the measurements as points, pages first: $(600,19)$ and $(1{,}000,31)$.\n\nStep 2: The rate is $\\frac{31-19}{1{,}000-600}=\\frac{12}{400}=0.03$ gigabyte per page. The fixed part is $19-0.03(600)=19-18=1$ gigabyte.\n\nStep 3: At $1{,}500$ pages the size is $0.03(1{,}500)+1=45+1=46$ gigabytes. Check: $0.03(600)+1=19$, matching the first measurement.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($43$): repeats the $12$-gigabyte jump once more, but $1{,}500$ is $500$ pages past $1{,}000$, not $400$.\n* Choice B ($45$): applies the rate to all $1{,}500$ pages but leaves out the $1$-gigabyte fixed part.\n* Choice D ($50$): adds the two reported sizes instead of extending the linear model.\n\n**Test Day Takeaway:** Two data points give a rate and a fixed part; check the fixed part by testing the model against one of the original points.",
+ "id": "bank-alg-111"
+}

@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "question": "A battery cell is at a tolerance limit when its voltage $v$, in volts, differs from $3.70$ by exactly $0.15$. Which equation represents the two tolerance limits for $v$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$|v - 3.70| = 0.15$"
+    },
+    {
+      "id": "B",
+      "text": "$|v - 0.15| = 3.70$"
+    },
+    {
+      "id": "C",
+      "text": "$|v + 3.70| = 0.15$"
+    },
+    {
+      "id": "D",
+      "text": "$|v - 3.70| = 3.85$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "swaps the reference value and the tolerance, so it measures distance from 0.15 rather than from 3.70",
+    "C": "adds 3.70 instead of subtracting it, describing voltages 0.15 away from -3.70",
+    "D": "uses the sum 3.70 + 0.15 = 3.85 as the distance instead of the tolerance 0.15"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** “Differs from $3.70$ by exactly $0.15$” is the distance between $v$ and $3.70$, so $|v-3.70|=0.15$.\n\n**The Full Solution:**\nStep 1: The distance between $v$ and a reference value $r$ on a number line is written $|v-r|$. Here the reference value is $3.70$, so the distance is $|v-3.70|$.\nStep 2: That distance is stated to be exactly $0.15$, giving $|v-3.70|=0.15$.\nStep 3: Solving confirms the two limits: $v-3.70=0.15$ gives $v=3.85$, and $v-3.70=-0.15$ gives $v=3.55$. Check: both $3.85$ and $3.55$ sit $0.15$ from $3.70$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($|v - 0.15| = 3.70$): swaps the roles of the two numbers, so it measures distance from $0.15$ and its solutions are $3.85$ and $-3.55$.\n* Choice C ($|v + 3.70| = 0.15$): adds the reference value instead of subtracting it, which describes voltages near $-3.70$.\n* Choice D ($|v - 3.70| = 3.85$): uses $3.70+0.15=3.85$ as the distance, which produces limits of $7.55$ and $-0.15$.\n\n**Test Day Takeaway:** Inside the bars goes the variable minus the center; outside the bars goes the allowed distance. Center in, distance out."
+}

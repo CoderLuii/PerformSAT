@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-012",
+ "question": "A boarding ramp at an airport gate has the cross-section shown, a right triangle with lengths given in feet. What is the value of $\\sin(\\angle A)$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     15,
+     8
+    ]
+   ],
+   "labels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "sideLabels": [
+    "15",
+    "8",
+    "17"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{8}{17}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{8}{15}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{15}{17}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{17}{15}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "gives tan(A) = opposite/adjacent = 8/15",
+  "C": "gives cos(A) = adjacent/hypotenuse = 15/17",
+  "D": "inverts cos(A), dividing the hypotenuse by the adjacent leg"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: SOH-CAH-TOA**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Sine is opposite over hypotenuse; the leg opposite $\\angle A$ is $\\overline{BC}=8$ and the hypotenuse is $\\overline{CA}=17$, so $\\sin(\\angle A)=\\frac{8}{17}$.\n\n**The Full Solution:**\n\nStep 1 — Locate the right angle. The marker sits at $B$, so $\\overline{CA}$, the side across from it, is the hypotenuse: $17$ feet.\n\nStep 2 — Find the leg opposite $\\angle A$. Moving across the triangle from $A$ lands on $\\overline{BC}=8$ feet.\n\nStep 3 — Apply SOH: $\\sin(\\angle A)=\\frac{\\text{opposite}}{\\text{hypotenuse}}=\\frac{8}{17}$. Check: $8^2+15^2=64+225=289=17^2$, so the labels are consistent.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($\\frac{8}{15}$): this is $\\tan(\\angle A)$, opposite over adjacent.\n* Choice C ($\\frac{15}{17}$): this is $\\cos(\\angle A)$, using the adjacent leg instead of the opposite one.\n* Choice D ($\\frac{17}{15}$): this flips $\\cos(\\angle A)$, putting the hypotenuse on top.\n\n**Test Day Takeaway:** The hypotenuse is always across from the right angle — identify it first, then decide which leg is opposite the named angle."
+}

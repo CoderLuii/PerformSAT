@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-260",
+  "question": "A scholarship program received $8{,}500$ applications. Of the applicants, $24\\%$ were invited to interview, and $15\\%$ of the applicants who interviewed were awarded a scholarship. How many applicants were awarded a scholarship?",
+  "correctAnswer": "306",
+  "explanation": "**SAT Pattern: Compound Percent Of**\n\n**The correct answer is $306$.**\n\n**The Fast Way (~10s):** $8{,}500 \\times 0.24 \\times 0.15 = 306$.\n\n**The Full Solution:**\nStep 1: Applicants invited to interview: $0.24 \\times 8{,}500 = 2{,}040$.\nStep 2: The $15\\%$ applies to those $2{,}040$ interviewees: $0.15 \\times 2{,}040 = 306$.\nStep 3: Check by combining the percents: $0.24 \\times 0.15 = 0.036$, and $0.036 \\times 8{,}500 = 306$. $\\checkmark$\n\n**Common Mistakes:** Entering $2040$, which stops after the interview stage; entering $1275$, from $0.15 \\times 8{,}500$, which applies the $15\\%$ to all applicants instead of to interviewees; entering $3315$, from $0.39 \\times 8{,}500$, which adds the percents instead of multiplying them.\n\n**Test Day Takeaway:** Percents that describe a subgroup multiply; compute the subgroup first, then take the next percent of it."
+}

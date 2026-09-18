@@ -1,0 +1,30 @@
+{
+ "id": 16,
+ "question": "A single dose of a medication is given at hour $0$. The table shows the blood concentration measured at four later times, and the concentration keeps falling in the same pattern. What will the concentration be, in milligrams per liter, at hour $15$?",
+ "questionTable": {
+  "headers": [
+   "Hours after the dose",
+   "Concentration (mg/L)"
+  ],
+  "rows": [
+   [
+    "$3$",
+    "$120$"
+   ],
+   [
+    "$6$",
+    "$60$"
+   ],
+   [
+    "$9$",
+    "$30$"
+   ],
+   [
+    "$12$",
+    "$15$"
+   ]
+  ]
+ },
+ "correctAnswer": "7.5",
+ "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**The correct answer is $7.5$.** Each $3$-hour step multiplies the concentration by the same factor, $\\tfrac{1}{2}$, so hour $15$ is one more halving past hour $12$.\n\n**The Fast Way (~20s):** The readings halve every $3$ hours, so after hour $12$'s $15$ mg/L the next value is $15 \\div 2 = 7.5$ mg/L.\n\n**The Full Solution:**\nStep 1: Compare consecutive rows: $120 \\to 60 \\to 30 \\to 15$. Each ratio is $\\tfrac{1}{2}$, so the decay is exponential with a $3$-hour half-life.\nStep 2: Hour $15$ is one $3$-hour step past hour $12$.\nStep 3: Multiply the hour-$12$ value by $\\tfrac{1}{2}$: $15 \\times \\tfrac{1}{2} = 7.5$ mg/L. Check: modeling from the first row, $120 \\left(\\tfrac{1}{2}\\right)^{4} = 120 \\div 16 = 7.5$, since hour $15$ is four steps past hour $3$ ✓\n\n**Common Mistakes:**\n* $15$: reading the hour-$12$ entry straight off the table instead of extending it one more step to hour $15$.\n* $3.75$: taking two more steps and landing on hour $18$. From hour $12$, only one $3$-hour step is needed.\n* $0$: treating the decline as a constant drop of $15$ mg/L per $3$ hours, giving $15 - 15 = 0$. The drops shrink ($60$, then $30$, then $15$), which is the signature of a ratio, not a difference.\n\n**Test Day Takeaway:** Check consecutive ratios before consecutive differences — a constant ratio means exponential, and then you extend the table by multiplying, never by subtracting."
+}

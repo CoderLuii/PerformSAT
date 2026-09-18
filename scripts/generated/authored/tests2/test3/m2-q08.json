@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "A drug's blood concentration, in milligrams per liter, is modeled by $-2t^{2} + 16t$ for $0 \\le t \\le 8$, where $t$ is the number of hours since the dose was given. What is the greatest integer concentration level that the model reaches at two different times?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$31$"
+  },
+  {
+   "id": "C",
+   "text": "$32$"
+  },
+  {
+   "id": "D",
+   "text": "$63$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the hour at which the maximum occurs, t = 4, instead of a concentration level",
+  "C": "gives the maximum concentration 32, which the model reaches at exactly one time, not two",
+  "D": "drops the leading coefficient -2 from 4ac, solving 256 - 4k > 0 to get k < 64"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** Setting $-2t^{2} + 16t = k$ gives $2t^{2} - 16t + k = 0$, whose discriminant $256 - 8k$ must be positive, so $k < 32$ and the greatest integer is $31$.\n\n**The Full Solution:**\nStep 1: A level $k$ is reached at two different times exactly when $-2t^{2} + 16t = k$ has two distinct real solutions. Rewrite it in standard form: $2t^{2} - 16t + k = 0$.\nStep 2: Two distinct real solutions require a strictly positive discriminant: $b^{2} - 4ac = (-16)^{2} - 4(2)(k) = 256 - 8k > 0$, so $8k < 256$ and $k < 32$.\nStep 3: The greatest integer less than $32$ is $31$. Check: at $k = 31$ the discriminant is $256 - 248 = 8 > 0$, and the two solutions $t = \\frac{16 \\pm \\sqrt{8}}{4}$ are about $3.3$ and $4.7$ hours, both inside $0 \\le t \\le 8$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): this is the time at which the concentration peaks, not a concentration. The question asks for a level on the vertical axis.\n* Choice C ($32$): the peak concentration. At $k = 32$ the discriminant is $0$, so the model reaches that level at exactly one time — one time, not two.\n* Choice D ($63$): computes the discriminant as $256 - 4k$, forgetting the leading coefficient $2$ inside $4ac$, and lands on $k < 64$.\n\n**Test Day Takeaway:** Two solutions means discriminant $> 0$, not $\\ge 0$; the equality case is the single-touch value the SAT reserves for a distractor. Convert the strict inequality to a bound, then take the integer just inside it."
+}

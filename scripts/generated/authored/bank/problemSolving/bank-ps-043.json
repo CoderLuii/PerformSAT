@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-043",
+  "question": "A scale used to record the masses, in grams, of $40$ samples was later found to read $12$ grams too low for every sample. The recorded masses have a mean of $74$ grams and a standard deviation of $7.5$ grams. After $12$ grams is added to each recorded mass to correct it, what are the mean and the standard deviation of the corrected masses?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Mean $74$ grams; standard deviation $7.5$ grams"
+    },
+    {
+      "id": "B",
+      "text": "Mean $74$ grams; standard deviation $19.5$ grams"
+    },
+    {
+      "id": "C",
+      "text": "Mean $86$ grams; standard deviation $19.5$ grams"
+    },
+    {
+      "id": "D",
+      "text": "Mean $86$ grams; standard deviation $7.5$ grams"
+    }
+  ],
+  "distractorNotes": {
+    "A": "assumes the correction changes nothing; the center does shift by $12$ grams.",
+    "B": "applies the $12$-gram shift to the standard deviation instead of to the mean.",
+    "C": "shifts the mean correctly but also adds $12$ to the standard deviation, which measures spread and does not move."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: SD Under Translation**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Adding $12$ to every value slides the whole data set up by $12$: the mean becomes $74 + 12 = 86$, and the spread is unchanged, so the standard deviation stays $7.5$.\n\n**The Full Solution:**\nStep 1: If every value increases by the same constant $c$, the sum increases by $40c$ and the mean increases by exactly $c$: new mean $= 74 + 12 = 86$ grams.\nStep 2: Standard deviation depends only on each value's distance from the mean. Each value and the mean both rise by $12$, so every distance is unchanged, and the standard deviation stays $7.5$ grams.\nStep 3: Check with a mini example: $\\{1, 2, 3\\}$ has mean $2$ and distances $1, 0, 1$; adding $12$ gives $\\{13, 14, 15\\}$ with mean $14$ and the same distances $1, 0, 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (mean $74$; SD $7.5$): assumes the correction changes nothing; the center does shift by $12$ grams.\n* Choice B (mean $74$; SD $19.5$): applies the $12$-gram shift to the standard deviation instead of to the mean.\n* Choice C (mean $86$; SD $19.5$): shifts the mean correctly but also adds $12$ to the standard deviation, which measures spread and does not move.\n\n**Test Day Takeaway:** Adding a constant to every value shifts measures of center (mean, median) by that constant and leaves measures of spread (standard deviation, range) unchanged."
+}

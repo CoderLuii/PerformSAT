@@ -1,0 +1,29 @@
+{
+ "question": "For a raw count of $x$ packets received in one interval, a telemetry gateway reports the corrected count $f(x)=\\frac{x}{3}+k$, where the offset $k$ is a constant fixed when the gateway is installed. If $f(k)=8$, what is the value of $f(3k)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the constant k itself instead of evaluating f at 3k",
+  "C": "triples the output, treating f(3k) as 3f(k) = 3(8) = 24",
+  "D": "drops the +k when solving f(k) = 8, getting k = 24, then f(72) = 24 + 24 = 48"
+ },
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice B is correct.** Substituting $k$ for $x$ turns $f(k)=8$ into an equation in $k$ alone; solving it and then evaluating $f$ at $3k$ gives $12$.\n\n**The Fast Way (~35s):** $f(k)=\\frac{k}{3}+k=\\frac{4k}{3}=8$, so $k=6$, and $f(18)=6+6=12$.\n\n**The Full Solution:**\n\nStep 1: Substitute $k$ for $x$ in the definition: $f(k)=\\frac{k}{3}+k$. Combining like terms gives $\\frac{4k}{3}$.\n\nStep 2: Set $\\frac{4k}{3}=8$ and multiply both sides by $3$: $4k=24$, so $k=6$.\n\nStep 3: With $k=6$, the input $3k$ is $18$, so $f(18)=\\frac{18}{3}+6=6+6=12$. Check: $f(6)=2+6=8$, which matches the given $f(k)=8$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($6$): reports $k$ itself instead of evaluating $f$ at $3k$.\n* Choice C ($24$): triples the output rather than the input, computing $3f(k)=3(8)=24$.\n* Choice D ($48$): drops the $+k$ term, so $\\frac{k}{3}=8$ gives $k=24$ and $f(72)=24+24=48$.\n\n**Test Day Takeaway:** When a function is evaluated at its own constant, substitute the letter for the variable and collect like terms before solving.",
+ "id": "bank-alg-137"
+}

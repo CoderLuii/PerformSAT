@@ -6,30 +6,31 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 2,
-  "passage": "The following text is from Willa Cather's 1913 novel O Pioneers! The novel opens on a small town on the Nebraska prairie.\n\nOne January day, thirty years ago, the little town of Hanover, anchored on a windy Nebraska tableland, was trying not to be blown away. A mist of fine snowflakes was curling and eddying about the cluster of low drab buildings huddled on the gray prairie, under a gray sky. The dwelling-houses were set about haphazard on the tough prairie sod; some of them looked as if they had been moved in overnight, and others as if they were straying off by themselves, headed straight for the open plain. None of them had any appearance of permanence, and the howling wind blew under them as well as over them.",
+  "passage": "The following text is from Robert Louis Stevenson's 1886 novel Kidnapped. The narrator, a young man named David, is leaving the village where he grew up.\n\nI will begin the story of my adventures with a certain morning early in the month of June, the year of grace 1751, when I took the key for the last time out of the door of my father's house. The sun began to shine upon the summit of the hills as I went down the road; and by the time I had come as far as the manse, the blackbirds were whistling in the garden lilacs, and the mist that hung around the valley in the time of the dawn was beginning to arise and die away. Mr. Campbell, the minister of Essendean, was waiting for me by the garden gate, good man!",
   "question": "Which choice best states the main purpose of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "To explain why early settlers chose to build the town of Hanover on an exposed Nebraska tableland."
+      "text": "To contrast the tranquility of the countryside the narrator walks through with the dangerous events that he already knows are waiting for him at his journey's end"
     },
     {
       "id": "B",
-      "text": "To contrast the appearance of Hanover's small dwelling-houses with the grander public buildings that stood at the center of town."
+      "text": "To explain the narrator's reasons for leaving the village where he was raised"
     },
     {
       "id": "C",
-      "text": "To recount the measures Hanover's residents took to protect their houses from a winter storm."
+      "text": "To convey the narrator's lasting grief at giving up his father's house"
     },
     {
       "id": "D",
-      "text": "To convey the fragility and impermanence of a small prairie town by describing it in wind and winter weather."
+      "text": "To mark the narrator's departure from his childhood home as the beginning of the adventures he is about to relate"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. Every detail of the description works toward one impression: the town is barely holding its ground against the prairie. Hanover is \"trying not to be blown away,\" its buildings huddle under a gray sky, the houses look as if they had been \"moved in overnight\" or were \"straying off by themselves,\" and none has \"any appearance of permanence.\" The text's purpose is to convey that fragile, provisional quality. Choice A fails because the text never explains why the town was built where it is; the tableland is simply where Hanover sits. Choice B invents a contrast the text does not draw—no public buildings are described at all. Choice C turns the scene into a narrative of action, but the residents never appear; the passage describes how the town looks in the wind, not what anyone does about it.",
+  "explanation": "**Choice D is correct.** The narrator announces his design in the first clause — \"I will begin the story of my adventures with a certain morning\" — and the text then renders that morning of departure: the key turned for the last time, the walk down the road, the minister waiting at the gate.\n\n**The Full Solution:**\n- The opening sentence frames everything that follows as the starting point of a story of adventures.\n- The chosen starting point is the departure itself: taking the key \"for the last time\" out of his father's door.\n- The morning scenery and Mr. Campbell's presence at the gate elaborate that moment of setting out — the function of the whole text is to inaugurate the journey, as choice D states.\n\n**Why the other choices are wrong:**\n- A: The countryside is indeed tranquil, but the narrator voices no knowledge of dangers ahead; the contrast choice A describes exists outside this text.\n- B: No reasons for leaving are given anywhere in the passage — the departure is presented, not explained.\n- C: The narrator registers no grief; the tone of the morning is bright, with sun, blackbirds, and a warmly greeted \"good man\" at the gate."
+  ,
   "_meta": {
     "quoteVerify": true,
-    "source": "Willa Cather, O Pioneers! (1913), Part I, Chapter 1, opening lines"
+    "source": "Robert Louis Stevenson, Kidnapped (1886), Chapter I, opening lines; text verbatim per the Project Gutenberg edition, typography normalized"
   }
 }

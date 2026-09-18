@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-151",
+  "question": "A school's drama club has $63$ members, which is $30\\%$ of the combined membership of the school's band and choir. The band has $140$ members. How many members does the choir have?",
+  "correctAnswer": "70",
+  "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**The correct answer is $70$.**\n\n**The Fast Way (~15s):** The combined membership is $\\frac{63}{0.30} = 210$, so the choir has $210 - 140 = 70$ members.\n\n**The Full Solution:**\nStep 1: Let $c$ be the choir's membership. Then $0.30(140 + c) = 63$.\nStep 2: Divide by $0.30$: $140 + c = 210$.\nStep 3: Subtract $140$: $c = 70$. Check: $0.30(140 + 70) = 0.30(210) = 63$. $\\checkmark$\n\n**Common Mistakes:** Reporting the combined total $210$ without subtracting the band; taking $30\\%$ of $140$ to get $42$; subtracting the club instead of the band, $210 - 63 = 147$.\n\n**Test Day Takeaway:** Undo the percent first (divide by $\\frac{p}{100}$) to recover the whole, then remove the known piece."
+}

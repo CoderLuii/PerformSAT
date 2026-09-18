@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "A dairy scale's calibration frame carries $x$ steel blocks and $y$ ballast plates. Two loading rules give $6x + ky = 30$ and $9x + 12y = 45$, where $k$ is a constant and each total is a mass in kilograms. For what value of $k$ do the two rules impose exactly the same restriction?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "copies the first rule's x-coefficient, 6, instead of scaling 12",
+  "C": "copies the second rule's y-coefficient, 12, ignoring the 2/3 scaling",
+  "D": "inverts the ratio and computes 12 times 9/6 = 18"
+ },
+ "correctAnswer": "B",
+ "hint": "A restriction can be written more than one way and still allow exactly the same loads.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** Scaling $9x + 12y = 45$ by $\\frac{2}{3}$ turns $9x$ into $6x$ and $45$ into $30$, so $12y$ must become $8y$.\n\n**The Full Solution:**\nStep 1: Two rules restrict the same pairs only when every term of one is the same multiple of the matching term of the other. The $x$-terms give the factor $\\frac{6}{9} = \\frac{2}{3}$.\nStep 2: The constants agree with that factor: $\\frac{30}{45} = \\frac{2}{3}$.\nStep 3: So the $y$-terms must satisfy $\\frac{k}{12} = \\frac{2}{3}$, giving $k = 8$. Check: $\\frac{2}{3}$ of $9x + 12y = 45$ is $6x + 8y = 30$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): copying the first rule's $x$-coefficient instead of scaling the $12$.\n* Choice C ($12$): copying the second rule's $y$-coefficient and ignoring the $\\frac{2}{3}$ scaling.\n* Choice D ($18$): inverting the ratio and computing $12 \\cdot \\frac{9}{6} = 18$, which scales the wrong direction.\n\n**Test Day Takeaway:** One factor must carry every term — both coefficients and the constant — or the two equations are different lines."
+}

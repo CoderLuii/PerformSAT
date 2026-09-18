@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "An apiary's hive scale reports the day's nectar gain, in grams, as $R(t)$ at $t$ hours after sunrise. After a second super is added, the scale reports $R(t) + 180$ instead. If $R(4) = 520$, what does the scale report four hours after sunrise with the second super in place?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$340$"
+  },
+  {
+   "id": "B",
+   "text": "$520$"
+  },
+  {
+   "id": "C",
+   "text": "$700$"
+  },
+  {
+   "id": "D",
+   "text": "$880$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts 180 instead of adding it",
+  "B": "reports R(4) unchanged, ignoring the added super",
+  "D": "adds 180 twice"
+ },
+ "correctAnswer": "C",
+ "hint": "The added super changes the reading, not the hour it is taken.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~10s):** The rule adds $180$ grams to every reading, so the scale reports $520 + 180 = 700$ grams.\n\n**The Full Solution:**\nStep 1: The new reading at hour $t$ is $R(t) + 180$.\nStep 2: At $t = 4$ this is $R(4) + 180$.\nStep 3: Since $R(4) = 520$, the scale reports $520 + 180 = 700$ grams. Check: $700 - 180 = 520$, the original reading ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($340$): subtracting $180$ instead of adding it; a super adds mass to the hive.\n* Choice B ($520$): reporting the original reading and ignoring the added super.\n* Choice D ($880$): adding $180$ twice, once to $R(4)$ and once again to the result.\n\n**Test Day Takeaway:** A constant added outside the function changes every output by that constant and leaves the input alone."
+}

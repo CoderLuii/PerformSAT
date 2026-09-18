@@ -6,30 +6,30 @@
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
  "module": 2,
- "passage": "The following text is from Christina Rossetti's poem \"Up-Hill,\" first published in 1861.\n\nDoes the road wind up-hill all the way? / Yes, to the very end. / Will the day's journey take the whole long day? / From morn to night, my friend.\n\nBut is there for the night a resting-place? / A roof for when the slow dark hours begin. / May not the darkness hide it from my face? / You cannot miss that inn.\n\nShall I meet other wayfarers at night? / Those who have gone before. / Then must I knock, or call when just in sight? / They will not keep you standing at that door.\n\nShall I find comfort, travel-sore and weak? / Of labour you shall find the sum. / Will there be beds for me and all who seek? / Yea, beds for all who come.",
+ "passage": "The following text is from Sara Teasdale's poem \"There Will Come Soft Rains,\" first published in 1918.\n\nThere will come soft rains and the smell of the ground, / And swallows circling with their shimmering sound; / And frogs in the pools singing at night, / And wild plum-trees in tremulous white; / Robins will wear their feathery fire / Whistling their whims on a low fence-wire; / And not one will know of the war, not one / Will care at last when it is done. / Not one would mind, neither bird nor tree / If mankind perished utterly; / And Spring herself, when she woke at dawn, / Would scarcely know that we were gone.",
  "question": "Which choice best describes the overall structure of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "The speaker describes setting out on a steep road at dawn, then recounts the obstacles and discouragements endured before finally reaching a welcoming inn after nightfall."
+   "text": "The speaker describes the destruction caused by a war and then pleads with the natural world to restore what has been lost."
   },
   {
    "id": "B",
-   "text": "The speaker debates whether to undertake a difficult journey, weighing its dangers against its rewards, and ultimately decides to remain at home."
+   "text": "The speaker lists signs of each of the four seasons in turn and then asks which of them will outlast the others."
   },
   {
    "id": "C",
-   "text": "The speaker warns a fellow traveler that the road ahead is harder than it appears, then offers detailed directions for avoiding its worst stretches."
+   "text": "The speaker imagines a distant future in which people have at last learned to live in harmony with the natural world that they once thoughtlessly ignored."
   },
   {
    "id": "D",
-   "text": "The speaker asks a series of questions about an arduous journey and receives answers assuring that rest and welcome await all travelers at its end."
+   "text": "The speaker accumulates images of a springtime landscape and then reveals that the scene continues, indifferent, after humanity has disappeared."
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The poem unfolds as a dialogue: a traveler asks one question after another—whether the road winds \"up-hill all the way,\" whether there is \"for the night a resting-place,\" whether other wayfarers will be met, whether there will be beds—and a second voice answers each in turn with reassurance, ending \"Yea, beds for all who come.\" The structure is a sequence of anxious questions about a hard journey, each met by an answer promising shelter and welcome at its end. Choice A turns the poem into a narrated trip with obstacles overcome, but no journey is actually taken in the text; everything is asked and answered in advance. Choice B describes a deliberation that ends in staying home, yet the traveler never weighs rewards against dangers or decides anything. Choice C reverses the poem's roles—the speaker seeks reassurance rather than giving warnings—and no directions for the road are ever offered.",
+ "explanation": "**Choice D is correct.** The poem's first six lines pile up spring images, rains, swallows, frogs, plum blossom, robins, and its last six lines deliver the turn: none of these would notice the war, or notice \"if mankind perished utterly.\"\n\n**The Full Solution:**\n- Structure half one: an accumulating catalog, each item introduced with \"And,\" of a spring that \"will come.\"\n- Structure half two: the repeated \"not one\" pivots the catalog into a claim of indifference, culminating in Spring herself scarcely knowing \"that we were gone.\"\n- D tracks both movements: accumulation, then the reveal of a world going on without us.\n\n**Why the other choices are wrong:**\n- A: No destruction is described and nothing is asked of nature; the war exists only as the thing nature will not notice.\n- B: Every image belongs to spring; no cycle of four seasons appears, and no question is posed.\n- C: The poem's future contains no reconciled humanity; its point is that humanity may be absent altogether.",
  "_meta": {
   "quoteVerify": true,
-  "source": "Christina Rossetti, \"Up-Hill\" (1861), Goblin Market and Other Poems (1862)"
+  "source": "Sara Teasdale, \"There Will Come Soft Rains\" (1918), collected in Flame and Shadow (1920)"
  }
 }

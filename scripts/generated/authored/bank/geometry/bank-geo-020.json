@@ -1,0 +1,87 @@
+{
+ "id": "bank-geo-020",
+ "question": "A ferry terminal posts two similar triangular route markers, shown with lengths in centimeters and with $PQR$ corresponding to $STU$. What is the length, in centimeters, of side $\\overline{TU}$?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "vertices": [
+     [
+      0.75,
+      11.98
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      18,
+      0
+     ]
+    ],
+    "labels": [
+     "P",
+     "Q",
+     "R"
+    ],
+    "sideLabels": [
+     "12",
+     "18",
+     "21"
+    ]
+   },
+   "triangle2": {
+    "vertices": [
+     [
+      1.25,
+      19.96
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      30,
+      0
+     ]
+    ],
+    "labels": [
+     "S",
+     "T",
+     "U"
+    ],
+    "sideLabels": [
+     "20",
+     "",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10.8$"
+  },
+  {
+   "id": "B",
+   "text": "$26$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the scale factor: 18 x (12/20) = 10.8",
+  "B": "adds the difference 20 - 12 = 8 to 18 instead of scaling",
+  "D": "squares the scale factor as if scaling an area: 18 x (5/3)^2 = 50"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $\\overline{ST}$ matches $\\overline{PQ}$, so the scale factor is $\\frac{20}{12}=\\frac{5}{3}$, and $\\overline{TU}=18\\left(\\frac{5}{3}\\right)=30$ centimeters.\n\n**The Full Solution:**\n\nStep 1 — Match the sides. Vertex order $PQR \\to STU$ pairs $\\overline{PQ}$ with $\\overline{ST}$ and $\\overline{QR}$ with $\\overline{TU}$.\n\nStep 2 — Set the proportion: $\\frac{ST}{PQ}=\\frac{TU}{QR}$, so $\\frac{20}{12}=\\frac{TU}{18}$.\n\nStep 3 — Solve: $TU=18\\left(\\frac{20}{12}\\right)=18\\left(\\frac{5}{3}\\right)=30$ centimeters. Check: $\\frac{30}{18}=\\frac{5}{3}$ and $\\frac{20}{12}=\\frac{5}{3}$, so the two ratios agree.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($10.8$): this flips the scale factor, computing $18\\left(\\frac{12}{20}\\right)$ and shrinking the larger marker.\n* Choice B ($26$): this adds the difference $20-12=8$ to $18$; similar figures scale by multiplication, not by a constant addition.\n* Choice D ($50$): this squares the scale factor, $18\\left(\\frac{5}{3}\\right)^2$, which is how areas scale, not sides.\n\n**Test Day Takeaway:** Build the proportion from the vertex order, then check that both fractions reduce to the same scale factor."
+}

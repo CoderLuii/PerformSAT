@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "A recording studio's gain model contains the expression $\\frac{2^{3x} \\cdot 4^{x+1}}{8^{x-1}}$, where $x$ is a positive integer. Written as a single power of 2, which expression is equivalent to it?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2^{x+4}$"
+  },
+  {
+   "id": "B",
+   "text": "$2^{2x+3}$"
+  },
+  {
+   "id": "C",
+   "text": "$2^{2x+5}$"
+  },
+  {
+   "id": "D",
+   "text": "$2^{8x-1}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "rewrites 4^(x+1) as 2^(x+1), forgetting to double the exponent when changing base 4 to base 2",
+  "B": "rewrites 8^(x-1) as 2^(3x-1), failing to multiply the 3 through the -1",
+  "D": "adds the denominator's exponent instead of subtracting it"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Put everything over base $2$: the numerator is $2^{3x} \\cdot 2^{2x+2} = 2^{5x+2}$ and the denominator is $2^{3x-3}$. Subtracting exponents gives $2^{(5x+2)-(3x-3)} = 2^{2x+5}$.\n\n**The Full Solution:**\nStep 1: Rewrite each factor in base $2$: $4^{x+1} = (2^2)^{x+1} = 2^{2x+2}$ and $8^{x-1} = (2^3)^{x-1} = 2^{3x-3}$.\nStep 2: Multiply in the numerator by adding exponents: $2^{3x} \\cdot 2^{2x+2} = 2^{5x+2}$.\nStep 3: Divide by subtracting exponents: $2^{5x+2-3x+3} = 2^{2x+5}$. Check with $x = 1$: the original is $\\frac{8 \\cdot 16}{1} = 128$ and $2^{2(1)+5} = 2^7 = 128$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2^{x+4}$): this treats $4^{x+1}$ as $2^{x+1}$. Changing base $4$ to base $2$ doubles the exponent, so the term is $2^{2x+2}$.\n* Choice B ($2^{2x+3}$): this treats $8^{x-1}$ as $2^{3x-1}$. The $3$ multiplies the whole exponent, giving $3x - 3$, and the extra $-3$ becomes $+3$ when it is subtracted.\n* Choice D ($2^{8x-1}$): this adds the denominator's exponent $3x - 3$ instead of subtracting it. Division of like bases subtracts.\n\n**Test Day Takeaway:** Convert every base to the smallest common base first, then apply one rule at a time: multiply exponents for a power of a power, add to multiply, subtract to divide. Testing $x = 1$ catches a slipped sign in seconds."
+}

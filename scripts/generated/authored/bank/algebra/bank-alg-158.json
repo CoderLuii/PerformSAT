@@ -1,0 +1,49 @@
+{
+ "id": "bank-alg-158",
+ "question": "An embroidery shop records three points of line $h$ in the table below, where line $h$ models its stitching rate in the $xy$-plane. In the same plane, the graph of $kx - 3y = 8$ shares no point with line $h$. What is the value of the constant $k$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$y$"
+  ],
+  "rows": [
+   [
+    "$-2$",
+    "$-5$"
+   ],
+   [
+    "$1$",
+    "$4$"
+   ],
+   [
+    "$4$",
+    "$13$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-9$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "solves -k/3 = 3, mishandling the sign when isolating y",
+  "B": "reports the y-intercept of line h",
+  "C": "reports the slope of line h itself instead of k"
+ },
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The table gives slope $\\frac{4 - (-5)}{1 - (-2)} = 3$, and $kx - 3y = 8$ has slope $\\frac{k}{3}$, so $k = 9$.\n\n**The Full Solution:**\n\nStep 1: Use two rows of the table: $\\frac{4 - (-5)}{1 - (-2)} = \\frac{9}{3} = 3$, so line $h$ has slope $3$ and equation $y = 3x + 1$.\n\nStep 2: Solve $kx - 3y = 8$ for $y$: $-3y = -kx + 8$, so $y = \\frac{k}{3}x - \\frac{8}{3}$.\n\nStep 3: Two lines share no point exactly when they are parallel and distinct, so $\\frac{k}{3} = 3$ and $k = 9$. Check: $9x - 3y = 8$ against $h$ written as $9x - 3y = -3$; the constants differ, so the lines never meet.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-9$): solves $-\\frac{k}{3} = 3$, keeping the minus sign that was already used to divide.\n* Choice B ($1$): reports the $y$-intercept of line $h$ rather than the constant $k$.\n* Choice C ($3$): reports the slope of line $h$ itself, forgetting that $k$ is three times that slope.\n\n**Test Day Takeaway:** Convert the standard-form equation to $y = mx + b$ before matching slopes; the sign of the $y$-coefficient decides the sign of the answer."
+}

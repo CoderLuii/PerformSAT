@@ -6,35 +6,45 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
  "module": 2,
- "passage": "Since 1993, satellite altimeters operated through NASA's sea level monitoring program have measured the height of the global ocean to within a few millimeters, producing one of the longest continuous records of mean sea level available to climate scientists. Researchers analyzing the record at ten-year intervals have argued that the picture it gives is not simply one of ongoing rise but of a rise whose pace itself is changing: the rate at which the global ocean has been gaining height has accelerated over the satellite-altimetry era because _______",
+ "passage": "After 2020, public transit agencies in the United States rebuilt ridership at strikingly different rates. Transportation analysts examining the recovery argue that systems serving many riders without cars — so-called transit-dependent riders — regained ridership faster than systems whose passengers were mostly commuters with other options. Data from four rail systems are consistent with the analysts' argument because ______",
  "questionTable": {
   "type": "table",
-  "caption": "Global mean sea level relative to 1993, with the increase recorded over each successive decade (NASA satellite altimetry)",
+  "caption": "Average weekday rail ridership in 2019 and 2024 for four U.S. transit systems, with the share of each system's riders classified as transit-dependent",
   "headers": [
-   "Year",
-   "Sea level (mm above 1993)",
-   "Increase from prior decade (mm)"
+   "System",
+   "2019 riders (thousands)",
+   "2024 riders (thousands)",
+   "2024 as % of 2019",
+   "Transit-dependent share"
   ],
   "rows": [
    [
-    "1993",
-    "0",
-    "—"
+    "System A",
+    "412",
+    "379",
+    "92%",
+    "High"
    ],
    [
-    "2003",
-    "31",
-    "31"
+    "System B",
+    "268",
+    "241",
+    "90%",
+    "High"
    ],
    [
-    "2013",
-    "65",
-    "34"
+    "System C",
+    "731",
+    "468",
+    "64%",
+    "Low"
    ],
    [
-    "2023",
+    "System D",
+    "155",
     "105",
-    "40"
+    "68%",
+    "Low"
    ]
   ]
  },
@@ -42,21 +52,21 @@
  "choices": [
   {
    "id": "A",
-   "text": "the decade-to-decade increase grew from 31 mm in the interval ending 2003 to 34 mm in the interval ending 2013 and 40 mm in the interval ending 2023, with each successive decade adding more than the one before."
+   "text": "System C carried the most riders of the four systems in both 2019 and 2024, even though its recovery rate was among the lowest."
   },
   {
    "id": "B",
-   "text": "global mean sea level was 105 mm higher in 2023 than in 1993, a total rise of more than 100 mm across the satellite-altimetry record."
+   "text": "the two systems with high shares of transit-dependent riders had recovered 92% and 90% of their 2019 ridership by 2024, while the two systems with low shares had recovered only 64% and 68%."
   },
   {
    "id": "C",
-   "text": "the decade-to-decade increase held steady at roughly 30 mm across the record, indicating that the ocean has been rising at an essentially constant pace."
+   "text": "System A lost only 33,000 weekday riders between 2019 and 2024, a smaller absolute loss than System C's decline of 263,000 riders."
   },
   {
    "id": "D",
-   "text": "between 1993 and 2003, global mean sea level rose by 31 mm, a substantial increase over a single decade."
+   "text": "all four systems carried fewer weekday riders in 2024 than they had carried in 2019, with recovery rates that ranged from a low of 64% at System C to a high of 92% at System A."
   }
  ],
- "correctAnswer": "A",
- "explanation": "The claim is specifically about the rate of sea level rise accelerating — not merely that the ocean is rising and not how much it has risen overall. Supporting evidence has to track the size of the decadal increment from one decade to the next and show it growing. Choice A does exactly that: it lines up the three successive decadal increases (31 mm, then 34 mm, then 40 mm) and notes that each is larger than the one before. That ordered comparison across the rightmost column is what licenses the conclusion that the pace itself is increasing."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The argument is comparative — high transit-dependent systems recovered faster — and B pairs each system's recovery rate with its dependence share, splitting exactly along the predicted line.\n\n**The Full Solution:**\n- The analysts' claim links two variables: transit-dependent ridership share and recovery rate.\n- Choice B makes the required pairing: the two high-share systems at 92% and 90% against the two low-share systems at 64% and 68%.\n\n**Why the other choices are wrong:**\n- A: It cites true figures but compares system size, a variable the argument says nothing about.\n- C: The absolute-loss comparison is distorted by size — System C is far larger, so a bigger raw loss is uninformative; the argument concerns rates of recovery.\n- D: It summarizes the table accurately but omits the transit-dependent classification, so it shows recovery varied without connecting the variation to rider dependence."
 }

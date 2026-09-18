@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "The function $g$ is exponential, $g(2) = 45$, and the value of $g$ is multiplied by $3$ for every increase of $1$ in $x$. What is the $y$-intercept of the graph of $y = g(x)$ in the $xy$-plane?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(0, 5)$"
+  },
+  {
+   "id": "B",
+   "text": "$(0, 15)$"
+  },
+  {
+   "id": "C",
+   "text": "$(0, 42)$"
+  },
+  {
+   "id": "D",
+   "text": "$(0, 45)$"
+  }
+ ],
+ "correctAnswer": "A",
+ "hint": "Walk backwards from $x = 2$ to $x = 0$, one step at a time.",
+ "distractorNotes": {
+  "B": "divides by 3 only once",
+  "C": "subtracts 3 instead of dividing",
+  "D": "reports g of 2"
+ },
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** Going backwards divides by $3$ each step: $g(1) = 15$ and $g(0) = 5$, so the $y$-intercept is $(0, 5)$.\n\n**The Full Solution:**\nStep 1: The $y$-intercept is the point where $x = 0$, so the question asks for $g(0)$.\nStep 2: Each increase of $1$ in $x$ multiplies the value by $3$, so each decrease of $1$ divides it by $3$: $g(1) = \\frac{45}{3} = 15$.\nStep 3: One more step back gives $g(0) = \\frac{15}{3} = 5$, so the $y$-intercept is $(0, 5)$. Check: $g(x) = 5(3)^x$ gives $g(2) = 5(9) = 45$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($(0, 15)$): divides by $3$ once and reports $g(1)$ instead of $g(0)$.\n* Choice C ($(0, 42)$): subtracts $3$ from $45$, treating the growth as additive rather than multiplicative.\n* Choice D ($(0, 45)$): reports the given value $g(2)$ as if it were the intercept.\n\n**Test Day Takeaway:** The $y$-intercept of an exponential function is its value at $x = 0$. Step backwards by dividing by the growth factor once per unit."
+}

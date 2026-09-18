@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "A researcher recorded the primary paint color of each of $200$ cars parked in a lot. Which measure of center can be determined from the recorded colors?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mean only"
+    },
+    {
+      "id": "B",
+      "text": "The median only"
+    },
+    {
+      "id": "C",
+      "text": "The mode only"
+    },
+    {
+      "id": "D",
+      "text": "The mean, the median, and the mode"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the mean requires arithmetic on the values, which categorical labels do not support.",
+    "B": "the median requires an order on the values, and paint colors have no least-to-greatest order.",
+    "D": "assumes every measure of center applies to every data set, but only the mode applies to categorical data."
+  },
+  "correctAnswer": "C",
+  "hint": "Ask which of the three measures needs the data to be numbers you can order or add.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** Colors cannot be added or ordered, so only the most frequent color, the mode, can be found.\n\n**The Full Solution:**\nStep 1: The mean requires adding the values and dividing, which is impossible for color names.\nStep 2: The median requires arranging the values from least to greatest, and colors have no numerical order.\nStep 3: The mode requires only counting how often each value occurs, which works for colors, so the mode alone can be determined. Check: reporting that red occurs most often is meaningful, while an average color is not. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the mean requires arithmetic on the values, which categorical labels do not support.\n* Choice B: the median requires an order on the values, and paint colors have no least-to-greatest order.\n* Choice D: assumes every measure of center applies to every data set, but only the mode applies to categorical data.\n\n**Test Day Takeaway:** Categorical data supports only the mode. Mean and median require values you can add or order."
+}

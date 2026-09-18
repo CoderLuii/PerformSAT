@@ -1,0 +1,37 @@
+{
+ "id": 6,
+ "question": "A survey crew mapped a sea cliff as right triangle $ABC$, with the right angle at $B$, where $AB$ is the distance along the beach and $BC$ is the height of the cliff face. Lengths are in meters. What is the value of $\\cos A$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     45
+    ]
+   ],
+   "labels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "sideLabels": [
+    "24",
+    "45",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "8/17",
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**The correct answer is $\\frac{8}{17}$.**\n\n**The Fast Way (~30s):** The legs $24$ and $45$ give hypotenuse $51$, so $\\cos A = \\frac{24}{51} = \\frac{8}{17}$.\n\n**The Full Solution:**\nStep 1: The hypotenuse $AC$ is unknown, so use the Pythagorean theorem: $AC^2 = 24^2 + 45^2 = 576 + 2025 = 2601$, and $AC = 51$.\nStep 2: Cosine is adjacent over hypotenuse. The side adjacent to angle $A$ is $AB = 24$, and the hypotenuse is $AC = 51$.\nStep 3: $\\cos A = \\frac{24}{51} = \\frac{8}{17}$. Check: $\\sin A = \\frac{45}{51} = \\frac{15}{17}$, and $\\left(\\frac{8}{17}\\right)^2 + \\left(\\frac{15}{17}\\right)^2 = \\frac{64 + 225}{289} = 1$. $\\checkmark$\n\n**Common Mistakes:**\n* Gridding $\\frac{8}{15}$, which is $\\frac{24}{45}$, the leg adjacent to $A$ over the opposite leg instead of over the hypotenuse.\n* Gridding $\\frac{15}{17}$, which is $\\frac{45}{51}$, the sine of $A$ rather than the cosine.\n* Adding the legs for the hypotenuse, $24 + 45 = 69$, and gridding $\\frac{24}{69} = \\frac{8}{23}$.\n\n**Test Day Takeaway:** When a trig ratio needs the hypotenuse and the figure gives only the legs, run the Pythagorean theorem first, then name adjacent and opposite from the labeled angle."
+}

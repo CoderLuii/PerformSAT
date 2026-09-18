@@ -1,0 +1,40 @@
+{
+ "id": "bank-geo-094",
+ "question": "A vial label is cut in the triangular shape shown, with each angle measure in degrees. How many degrees are in the label's largest angle?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "(4t)°",
+    "(t+15)°",
+    "(2t+25)°"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$35$"
+  },
+  {
+   "id": "C",
+   "text": "$65$"
+  },
+  {
+   "id": "D",
+   "text": "$80$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports t itself instead of an angle measure",
+  "B": "gives t + 15 = 35, the smallest of the three angles",
+  "C": "gives 2t + 25 = 65, the middle angle"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** $4t+(t+15)+(2t+25)=7t+40=180$, so $t=20$ and the largest angle is $4t=80$ degrees.\n\n**The Full Solution:**\n\nStep 1 — Add the three marked measures and set the total to $180$: $4t+(t+15)+(2t+25)=180$.\n\nStep 2 — Combine like terms: $7t+40=180$, so $7t=140$ and $t=20$.\n\nStep 3 — Evaluate each angle: $4t=80$, $t+15=35$, and $2t+25=65$ degrees. The largest is $80$ degrees. Check: $80+35+65=180$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($20$): this reports $t$, which is not an angle measure here.\n* Choice B ($35$): this is $t+15$, the smallest angle.\n* Choice C ($65$): this is $2t+25$, the middle angle.\n\n**Test Day Takeaway:** Solving for the variable is only half the work — evaluate every expression and reread which angle the question wants."
+}

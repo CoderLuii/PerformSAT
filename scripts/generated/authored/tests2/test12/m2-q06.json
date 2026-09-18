@@ -1,0 +1,28 @@
+{
+ "id": 6,
+ "question": "The graph of the quadratic function $f$ is shown, where $f(x)$ is the elevation, in feet, of a drainage channel bed at a horizontal distance of $x$ feet from a survey stake. Written in the form $f(x) = ax^2 + bx + c$, what is the value of $b$?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 3,
+    "k": -2
+   },
+   "a": 0.5,
+   "xRange": [
+    0,
+    6
+   ],
+   "yRange": [
+    -3,
+    3
+   ],
+   "xTickInterval": 1,
+   "yTickInterval": 1,
+   "gridInterval": 1,
+   "showVertex": false
+  }
+ },
+ "correctAnswer": "-3",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**The correct answer is $-3$.** The graph has its lowest point at $(3, -2)$ and crosses the $x$-axis at $(1, 0)$ and $(5, 0)$, so $f(x) = \\frac{1}{2}(x - 3)^2 - 2 = \\frac{1}{2}x^2 - 3x + \\frac{5}{2}$.\n\n**The Fast Way (~35s):** In vertex form $a(x - h)^2 + k$, the expanded middle term is $-2ah$. Here $a = \\frac{1}{2}$ and $h = 3$, so $b = -2\\left(\\frac{1}{2}\\right)(3) = -3$.\n\n**The Full Solution:**\nStep 1: Read the vertex from the graph: the curve bottoms out at $(3, -2)$, so $f(x) = a(x - 3)^2 - 2$.\nStep 2: Find $a$ with a second point. The curve passes through $(1, 0)$, so $0 = a(1 - 3)^2 - 2 = 4a - 2$, giving $a = \\frac{1}{2}$.\nStep 3: Expand: $\\frac{1}{2}(x^2 - 6x + 9) - 2 = \\frac{1}{2}x^2 - 3x + \\frac{9}{2} - 2 = \\frac{1}{2}x^2 - 3x + \\frac{5}{2}$, so $b = -3$. Check the other intercept: $\\frac{1}{2}(25) - 3(5) + \\frac{5}{2} = 12.5 - 15 + 2.5 = 0$, matching $(5, 0)$ on the graph. ✓\n\n**Common Mistakes:**\n* $-6$: assumes $a = 1$ and expands $(x - 3)^2 - 2 = x^2 - 6x + 7$. The graph's second point rules that out — a channel $2$ feet deep and $4$ feet wide forces $a = \\frac{1}{2}$.\n* $3$: expands correctly but reports $+3$, losing the sign that a vertex to the RIGHT of the $y$-axis always produces.\n* $2.5$: reports $c$, the value of $f(0)$, instead of the coefficient $b$.\n\n**Test Day Takeaway:** Read the vertex first, then use one more point on the graph to pin $a$ — the coefficient $b$ is $-2ah$, so $a$ must be settled before $b$ can be."
+}

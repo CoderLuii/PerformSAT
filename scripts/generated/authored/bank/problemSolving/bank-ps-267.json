@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-267",
+  "question": "A case holds $10$ bottles of water: $7$ sparkling and $3$ still. Three bottles will be selected at random from the case without replacement. What is the probability that all three bottles selected are sparkling?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{120}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{7}{24}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{343}{1000}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{7}{10}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "probability that all three are STILL (3/10 times 2/9 times 1/8)",
+    "C": "with replacement: (7/10)^3",
+    "D": "stops after the first draw (7/10)"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $\\frac{7}{10} \\times \\frac{6}{9} \\times \\frac{5}{8} = \\frac{210}{720} = \\frac{7}{24}$.\n\n**The Full Solution:**\nStep 1: First bottle sparkling: $\\frac{7}{10}$.\nStep 2: Each later draw has one fewer sparkling bottle and one fewer bottle overall: second draw $\\frac{6}{9}$, third draw $\\frac{5}{8}$.\nStep 3: Multiply: $\\frac{7}{10} \\times \\frac{6}{9} \\times \\frac{5}{8} = \\frac{210}{720} = \\frac{7}{24}$. Check: $\\frac{7}{24} \\approx 0.29$, smaller than $\\frac{7}{10}$, as it must be since each extra requirement lowers the probability. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{120}$): $\\frac{3}{10} \\times \\frac{2}{9} \\times \\frac{1}{8} = \\frac{6}{720}$ is the probability that all three are still, the wrong type.\n* Choice C ($\\frac{343}{1000}$): $\\left(\\frac{7}{10}\\right)^3$ keeps every draw at $\\frac{7}{10}$, which requires replacing each bottle.\n* Choice D ($\\frac{7}{10}$): only the first draw was considered.\n\n**Test Day Takeaway:** For $k$ draws without replacement, write $k$ fractions whose numerators and denominators each step down by $1$, then multiply."
+}

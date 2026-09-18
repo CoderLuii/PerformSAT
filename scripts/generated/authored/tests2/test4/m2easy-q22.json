@@ -1,0 +1,54 @@
+{
+ "id": 22,
+ "question": "The table shows the number of clear and overcast nights recorded at an observatory in winter and in summer, where $n$ is the number of clear summer nights. The probability that a night chosen at random from the summer nights was clear is $0.75$. What is the probability that a night chosen at random from the clear nights was in summer?",
+ "diagram": {
+  "type": "twoWayTable",
+  "params": {
+   "headers": [
+    "",
+    "Clear",
+    "Overcast",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Winter",
+     "72",
+     "108",
+     "180"
+    ],
+    [
+     "Summer",
+     "n",
+     "60",
+     "n + 60"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{2}{7}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{7}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{5}{7}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{3}{4}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the winter share of the clear nights, 72/252, instead of the summer share",
+  "B": "divides the 180 clear summer nights by the grand total of 420 nights rather than by the 252 clear nights",
+  "D": "reuses the given 0.75, treating the probability of clear given summer as the probability of summer given clear"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** If $75\\%$ of summer nights are clear, the $60$ overcast nights are the other $25\\%$, so summer has $240$ nights and $n = 180$. Clear nights total $72 + 180 = 252$, and $\\frac{180}{252} = \\frac{5}{7}$.\n\n**The Full Solution:**\nStep 1: The given probability conditions on summer: $\\frac{n}{n + 60} = 0.75$.\nStep 2: Solve: $n = 0.75n + 45$, so $0.25n = 45$ and $n = 180$ clear summer nights, with $240$ summer nights in all.\nStep 3: Now condition on clear instead. Clear nights number $72 + 180 = 252$, of which $180$ are summer, so the probability is $\\frac{180}{252} = \\frac{5}{7}$. Check the first condition: $\\frac{180}{240} = 0.75$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{2}{7}$): this is $\\frac{72}{252}$, the probability that a clear night was in winter. It is the complement of the answer, not the answer.\n* Choice B ($\\frac{3}{7}$): this is $\\frac{180}{420}$, dividing by every night on record. Conditioning on clear means the denominator is the $252$ clear nights.\n* Choice D ($\\frac{3}{4}$): this recycles the given $0.75$. Conditional probability is not symmetric: $0.75$ of summer nights are clear, but only $\\frac{5}{7}$ of clear nights are in summer.\n\n**Test Day Takeaway:** The condition sets the denominator. Rebuild the missing cell from the first condition, then re-total along the other direction before dividing."
+}

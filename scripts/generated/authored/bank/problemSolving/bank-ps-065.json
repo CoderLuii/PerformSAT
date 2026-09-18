@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-065",
+  "question": "A storage tank held $8{,}000$ liters of fuel. During the first week, $15\\%$ of the fuel was used. During the second week, $10\\%$ of the fuel remaining after the first week was used. How many liters of fuel remained in the tank after the second week?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6{,}000$"
+    },
+    {
+      "id": "B",
+      "text": "$6{,}120$"
+    },
+    {
+      "id": "C",
+      "text": "$6{,}800$"
+    },
+    {
+      "id": "D",
+      "text": "$7{,}200$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the percents to 25% and removes it all from 8,000 at once",
+    "C": "stops after the first week",
+    "D": "applies only the 10% to the original 8,000"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sequential Percent Removal**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Keep $85\\%$, then keep $90\\%$ of that: $8{,}000(0.85)(0.90) = 6{,}120$ liters.\n\n**The Full Solution:**\nStep 1: After the first week, $100\\% - 15\\% = 85\\%$ of the fuel remains: $8{,}000 \\times 0.85 = 6{,}800$ liters.\nStep 2: The second week removes $10\\%$ of the REMAINING $6{,}800$ liters, so $90\\%$ of it stays: $6{,}800 \\times 0.90 = 6{,}120$ liters.\nStep 3: Check: week two used $6{,}800 - 6{,}120 = 680$ liters, which is $10\\%$ of $6{,}800$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6{,}000$): adds the percents to $25\\%$ and removes it all at once, $8{,}000(0.75)$; but the second $10\\%$ is taken from a smaller amount.\n* Choice C ($6{,}800$): stops after the first week.\n* Choice D ($7{,}200$): applies only the $10\\%$ to the original $8{,}000$ liters and skips the first week entirely.\n\n**Test Day Takeaway:** Successive percents multiply the remaining factors, $(1 - 0.15)(1 - 0.10)$; they never add."
+}

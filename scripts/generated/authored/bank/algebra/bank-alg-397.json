@@ -1,0 +1,29 @@
+{
+ "question": "A blending model compares two totals, $12x+40$ and $8x+96$, where $x$ is the number of runs completed, and sets the two totals equal to each other. Which equation is equivalent to that equality?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4x=56$"
+  },
+  {
+   "id": "B",
+   "text": "$4x=136$"
+  },
+  {
+   "id": "C",
+   "text": "$20x=56$"
+  },
+  {
+   "id": "D",
+   "text": "$20x=136$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "adds the constants, 40 + 96 = 136, instead of subtracting them",
+  "C": "adds the variable terms, 12x + 8x = 20x, instead of subtracting them",
+  "D": "adds both pairs of terms rather than subtracting either"
+ },
+ "explanation": "**SAT Pattern: Linear Equation with Variables on Both Sides**\n\n**Choice A is correct.** Subtracting $8x$ and $40$ from both sides of $12x+40=8x+96$ leaves $4x=56$.\n\n**The Fast Way (~20s):** $12x-8x=4x$ and $96-40=56$, so the equality becomes $4x=56$.\n\n**The Full Solution:**\n\nStep 1: Subtract $8x$ from both sides: $12x-8x+40=96$, or $4x+40=96$.\n\nStep 2: Subtract $40$ from both sides: $4x=56$.\n\nStep 3: Every step was a subtraction applied to both sides, so the new equation has the same solutions as the original. Check: $4x=56$ gives $x=14$, and $12(14)+40=208=8(14)+96$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($4x=136$): handles the variable terms correctly but adds the constants, $40+96$, rather than subtracting.\n* Choice C ($20x=56$): handles the constants correctly but adds the variable terms, $12x+8x$.\n* Choice D ($20x=136$): adds both pairs of terms instead of subtracting either.\n\n**Test Day Takeaway:** Whatever you remove from one side you remove from the other; moving a term across the equals sign always flips its sign.",
+ "id": "bank-alg-397"
+}

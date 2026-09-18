@@ -1,0 +1,6 @@
+{
+ "id": 8,
+ "question": "The function $g$, defined by $g(x) = \\dfrac{3x + 17}{4}$, converts a spectrometer's raw signal $x$ into a calibrated reading. For what raw signal is the calibrated reading equal to $14$?",
+ "correctAnswer": "13",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**The correct answer is $13$.**\n\n**The Fast Way (~20s):** Set $\\frac{3x + 17}{4} = 14$, so $3x + 17 = 56$, $3x = 39$, and $x = 13$.\n\n**The Full Solution:**\nStep 1: A calibrated reading of $14$ means $g(x) = 14$, so write $\\frac{3x + 17}{4} = 14$.\nStep 2: Clear the denominator by multiplying both sides by $4$: $3x + 17 = 56$. Subtract $17$ from both sides: $3x = 39$.\nStep 3: Divide by $3$: $x = 13$. Check: $g(13) = \\frac{3(13) + 17}{4} = \\frac{39 + 17}{4} = \\frac{56}{4} = 14$ ✓\n\n**Common Mistakes:** Entering $-1$ (solving $3x + 17 = 14$, forgetting to multiply both sides by the denominator $4$ first); entering $14.75$ (evaluating $g(14) = \\frac{59}{4}$ instead of solving $g(x) = 14$, which answers the reverse question); entering $-4.5$ (dividing $14$ by $4$ instead of multiplying, then solving $3x + 17 = 3.5$).\n\n**Test Day Takeaway:** When a function's output is given, work the operations backward in reverse order: undo the division first, then the addition, then the multiplication."
+}

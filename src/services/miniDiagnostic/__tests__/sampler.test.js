@@ -12,10 +12,10 @@ import {
   MATH_DOMAIN_ORDER,
   RW_DOMAIN_ORDER,
 } from '../sampler';
-import { loadMathBank, loadRWBank } from '../../../data/corpusLoader';
+import { loadMathTestBank, loadRWBank } from '../../../data/corpusLoader';
 
 jest.mock('../../../data/corpusLoader', () => ({
-  loadMathBank: jest.fn(),
+  loadMathTestBank: jest.fn(),
   loadRWBank: jest.fn(),
 }));
 
@@ -50,7 +50,7 @@ const mkBank = (items) => ({
 });
 
 const setBanks = ({ math = richMathItems(), rw = richRWItems() } = {}) => {
-  loadMathBank.mockResolvedValue(mkBank(math));
+  loadMathTestBank.mockResolvedValue(mkBank(math));
   loadRWBank.mockResolvedValue(mkBank(rw));
 };
 

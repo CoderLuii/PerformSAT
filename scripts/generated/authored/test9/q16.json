@@ -6,29 +6,14 @@
   "domain": "information-and-ideas",
   "skill": "inferences",
   "module": 1,
-  "passage": "In buon fresco, a painter works on fresh, wet lime plaster: as the plaster dries, a chemical reaction binds the pigment into the wall itself, so the color becomes part of the surface. Details added after the plaster has dried—a technique called a secco—sit on top as a thin film held by a weak binder. Conservators examining a centuries-old wall painting often find that broad areas of color remain vivid while certain fine details, such as highlights and decorative borders, have flaked away or faded. From the difference between the two techniques, it can be inferred that ______",
+  "passage": "A nocturnal is a small instrument, usually of brass or boxwood, that tells time at night from the rotation of the stars around the celestial pole. Surviving examples range from richly engraved presentation pieces to plain instruments worn smooth by years of handling, and household and shipboard inventories of the sixteenth and seventeenth centuries list nocturnals among the effects of pilots, surveyors, and estate stewards alike. The period's instruction manuals, meanwhile, explain the nocturnal's use in everyday vernacular languages rather than in scholarly Latin. Taken together, these details suggest that ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "the entire wall painting must have been executed a secco, since otherwise none of its color could have survived."
-    },
-    {
-      "id": "B",
-      "text": "the vivid surviving areas were most likely painted in buon fresco, while the lost details had probably been added a secco."
-    },
-    {
-      "id": "C",
-      "text": "details added a secco prove more durable than areas painted in buon fresco over the centuries, because the thin film they form protects the colored plaster beneath them."
-    },
-    {
-      "id": "D",
-      "text": "the chemical binding of pigment into wet plaster makes buon fresco the less permanent of the two techniques."
-    }
+    { "id": "A", "text": "most nocturnals were commissioned as ornamental gifts and were rarely used to tell time at all." },
+    { "id": "B", "text": "the nocturnal was a practical tool in reasonably wide working use, not merely a curiosity for wealthy collectors." },
+    { "id": "C", "text": "reading a nocturnal demanded formal astronomical training that few laypeople of the period possessed." },
+    { "id": "D", "text": "nocturnals had displaced sundials as the most common timekeeping instruments of the era." }
   ],
   "correctAnswer": "B",
-  "explanation": "Buon fresco binds pigment into the wall as the plaster cures, while a secco details sit on top in a weak film. Given that broad colors survive but fine highlights and borders have flaked, the supported inference is that the durable areas were buon fresco and the lost details a secco—choice B. Choice A ignores the surviving color, and C and D reverse the durability of the two techniques.",
-  "_meta": {
-    "anchor": "buon fresco vs a secco technique"
-  }
+  "explanation": "**Choice B is correct.** Each detail points the same way — toward ordinary, working use by a range of people — and B draws exactly that general conclusion, without going beyond it.\n\n**The Full Solution:**\n- Instruments \"worn smooth by years of handling\" were used, not displayed.\n- Inventories place them with pilots, surveyors, and stewards — working occupations, not just collectors.\n- Vernacular manuals imply an audience of ordinary readers rather than Latin-trained scholars.\n- The generalization these premises support is practical, fairly widespread use — precisely B.\n\n**Why the other choices are wrong:**\n- A: The worn, plain examples and the working owners contradict a picture of unused ornaments.\n- C: Vernacular instructions argue the opposite — the device was explained for readers without scholarly training.\n- D: The text never mentions sundials or compares the instruments' popularity; \"most common\" outruns the evidence entirely."
 }

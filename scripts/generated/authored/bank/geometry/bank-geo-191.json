@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-191",
+ "question": "A finishing rinse basin is a rectangular tank $8p$ centimeters long, $5p$ centimeters wide, and $q$ centimeters deep, and it is filled to within $2$ centimeters of its rim. Which expression represents the number of cubic centimeters of rinse water in the basin?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40p^2q-80p^2$"
+  },
+  {
+   "id": "B",
+   "text": "$40p^2q-2$"
+  },
+  {
+   "id": "C",
+   "text": "$40p^2q$"
+  },
+  {
+   "id": "D",
+   "text": "$13pq-26p$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts 2 from the finished volume instead of 2 centimeters from the depth",
+  "C": "fills the basin to the rim, ignoring the 2-centimeter gap",
+  "D": "adds the length and width, 8p + 5p, instead of multiplying them"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Symbolic Area or Volume**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The water is $q-2$ centimeters deep over a base of $8p(5p)=40p^2$, so the volume is $40p^2(q-2)=40p^2q-80p^2$.\n\n**The Full Solution:**\n\nStep 1 — Find the base area: $(8p)(5p)=40p^2$ square centimeters.\n\nStep 2 — Find the depth of the water. The basin is $q$ centimeters deep and the water stops $2$ centimeters short, so the water is $q-2$ centimeters deep.\n\nStep 3 — Multiply and distribute: $40p^2(q-2)=40p^2q-80p^2$ cubic centimeters. Check with $p=1$ and $q=5$: the base is $40$, the water is $3$ deep, giving $120$, and $40(5)-80=120$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($40p^2q-2$): this subtracts $2$ cubic centimeters rather than shortening the depth by $2$ centimeters.\n* Choice C ($40p^2q$): this fills the basin to the rim and ignores the gap.\n* Choice D ($13pq-26p$): this adds $8p$ and $5p$ instead of multiplying them.\n\n**Test Day Takeaway:** Adjust the dimension the sentence adjusts — a shorter depth changes a length before any multiplication happens."
+}

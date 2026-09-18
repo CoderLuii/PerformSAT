@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-477",
+ "question": "A cessation program tracks counselors $u$ and coaches $v$ with $3u + 4v = 26$ and $9u + kv = 68$. Exactly one pair meets both conditions, and in that pair $u = 2$. What is the value of the constant $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the given u = 2 instead of the constant k",
+  "B": "reports v = 5, the other coordinate of the solution",
+  "D": "stops at 5k = 50 without dividing by v = 5"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System of Equations (Elimination)**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** With $u = 2$, the first condition gives $4v = 20$, so $v = 5$; then $18 + 5k = 68$ makes $k = 10$.\n\n**The Full Solution:**\nStep 1: Use the condition with no unknown constant. Substituting $u = 2$ into $3u + 4v = 26$ gives $6 + 4v = 26$.\nStep 2: Solve for the second coordinate: $4v = 20$, so $v = 5$.\nStep 3: Substitute both coordinates into the second condition: $9(2) + k(5) = 68$, so $18 + 5k = 68$, $5k = 50$, and $k = 10$. Check: $9(2) + 10(5) = 18 + 50 = 68$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): reports the given value $u = 2$ rather than the constant the question asks for.\n* Choice B ($5$): reports $v = 5$, the coordinate found along the way.\n* Choice D ($50$): stops at $5k = 50$ and reports the product without dividing by $v = 5$.\n\n**Test Day Takeaway:** Pin both coordinates using the equation without the unknown constant, then let the remaining equation solve for the constant in a single step."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "bank-ps-086",
+  "question": "Each point in the scatterplot pairs the age, in years, of one of $10$ water mains in a distribution district with the number of leaks recorded on that main last year, and the line of best fit is drawn. For how many of the $10$ mains is the residual negative?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          10,
+          2
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          20,
+          5
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          30,
+          5
+        ],
+        [
+          35,
+          9
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          45,
+          13
+        ],
+        [
+          50,
+          8
+        ],
+        [
+          55,
+          13
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 60,
+      "yMin": 0,
+      "yMax": 16,
+      "xGridStep": 5,
+      "xLabelStep": 10,
+      "yGridStep": 2,
+      "yLabelStep": 4,
+      "xLabel": "Age of water main (years)",
+      "yLabel": "Leaks recorded last year",
+      "bestFitLine": {
+        "slope": 0.2,
+        "intercept": 1
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "misses the leftmost point at (10, 2), which lies 1 leak below the line",
+    "C": "counts the point at (20, 5) that lies ON the line, whose residual is 0, as negative",
+    "D": "counts the points at or above the line (5 above plus the 1 on it), which are the non-negative residuals"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Residual**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** A negative residual means the point sits BELOW the line; four plotted points do — at $x = 10$, $30$, $40$, and $50$.\n\n**The Full Solution:**\nStep 1: Know the sign rule. Residual $=$ actual $-$ predicted, so a residual is negative exactly when the point lies below the line of best fit.\nStep 2: Sweep the plot. Below the line: $(10, 2)$, $(30, 5)$, $(40, 8)$, and $(50, 8)$ — four points. On the line: $(20, 5)$. Above the line: the remaining five.\nStep 3: Check the totals. $4$ below $+ 1$ on $+ 5$ above $= 10$ points, which matches the $10$ mains. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): drops the leftmost point $(10, 2)$, which sits one leak below the line.\n* Choice C ($5$): counts $(20, 5)$, which lies ON the line. Its residual is $0$, not negative.\n* Choice D ($6$): counts the points at or above the line instead — those are the residuals that are not negative.\n\n**Test Day Takeaway:** Below the line means a negative residual; a point sitting exactly on the line has a residual of $0$ and belongs to neither side."
+}

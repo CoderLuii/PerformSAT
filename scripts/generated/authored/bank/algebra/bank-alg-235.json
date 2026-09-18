@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-235",
+ "question": "A rental fleet's monthly cost, in dollars, is $4(3v + 7) + 5v$, where $v$ is the number of vans in operation. This cost equals $av + 28$ dollars for every value of $v$. What is the value of $a$?",
+ "correctAnswer": "17",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**The correct answer is $17$.**\n\n**The Fast Way (~20s):** $4(3v + 7) = 12v + 28$, and $12v + 5v = 17v$, so $a = 17$.\n\n**The Full Solution:**\n\nStep 1: Distribute the $4$: $4(3v + 7) = 12v + 28$.\n\nStep 2: Add the remaining $5v$ and combine like terms: $12v + 28 + 5v = 17v + 28$.\n\nStep 3: Since $17v + 28 = av + 28$ for every value of $v$, the coefficients of $v$ must match, so $a = 17$. Check with $v = 4$: $4(12 + 7) + 20 = 96$ and $17(4) + 28 = 96$.\n\n**Common Mistakes:**\n\n* $12$ — distributing correctly but forgetting to add the $5v$ that sits outside the parentheses.\n* $9$ — adding $4$ and $5$ and treating $3v$ as a single $v$.\n* $28$ — reporting the constant term instead of the coefficient of $v$.\n\n**Test Day Takeaway:** Distribute, then combine every like term on that side before matching coefficients; a stray term outside the parentheses is the usual trap."
+}

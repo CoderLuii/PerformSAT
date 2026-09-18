@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-045",
+  "question": "The lengths of the adult beetles of a certain species are approximately normally distributed with a mean of $12.0$ millimeters and a standard deviation of $1.5$ millimeters. Approximately what percent of these beetles have lengths between $10.5$ millimeters and $15.0$ millimeters?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$47.5\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$68\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$81.5\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$95\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "counts only the portion above the mean (from $12.0$ to $15.0$) and omits the $34\\%$ below it.",
+    "B": "treats the interval as $\\pm 1$ standard deviation, although the upper endpoint is $2$ standard deviations above the mean.",
+    "D": "treats the interval as $\\pm 2$ standard deviations, although the lower endpoint is only $1$ standard deviation below the mean."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Empirical Rule Application**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** $10.5$ is $1$ standard deviation below the mean and $15.0$ is $2$ standard deviations above it. Add the two halves, $\\frac{68\\%}{2} = 34\\%$ below the mean and $\\frac{95\\%}{2} = 47.5\\%$ above it, for about $81.5\\%$.\n\n**The Full Solution:**\nStep 1: Express the endpoints in standard deviations: $\\frac{10.5 - 12.0}{1.5} = -1$ and $\\frac{15.0 - 12.0}{1.5} = +2$. The interval is not symmetric about the mean.\nStep 2: By the empirical rule, about $68\\%$ of values lie within $1$ standard deviation of the mean and about $95\\%$ lie within $2$. By symmetry, from the mean to $1$ standard deviation below holds $\\frac{68\\%}{2} = 34\\%$, and from the mean to $2$ standard deviations above holds $\\frac{95\\%}{2} = 47.5\\%$.\nStep 3: Add the two pieces: $34\\% + 47.5\\% = 81.5\\%$. Check: the answer must lie between $68\\%$ (a $\\pm 1$ interval) and $95\\%$ (a $\\pm 2$ interval). $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($47.5\\%$): counts only the portion above the mean (from $12.0$ to $15.0$) and omits the $34\\%$ below it.\n* Choice B ($68\\%$): treats the interval as $\\pm 1$ standard deviation, although the upper endpoint is $2$ standard deviations above the mean.\n* Choice D ($95\\%$): treats the interval as $\\pm 2$ standard deviations, although the lower endpoint is only $1$ standard deviation below the mean.\n\n**Test Day Takeaway:** Convert each endpoint to a number of standard deviations, then split the empirical-rule percents at the mean ($34\\%$, $13.5\\%$, $2.35\\%$ per band) and add the bands the interval covers."
+}

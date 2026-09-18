@@ -1,0 +1,63 @@
+{
+ "id": 6,
+ "question": "A two-stage converter accepts only the five inputs listed in the table, which also gives the output of each of its two conversion functions, $f$ and $g$, at those inputs. What is the value of $f(g(2))$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$",
+   "$g(x)$"
+  ],
+  "rows": [
+   [
+    "1",
+    "7",
+    "4"
+   ],
+   [
+    "2",
+    "3",
+    "5"
+   ],
+   [
+    "3",
+    "5",
+    "1"
+   ],
+   [
+    "4",
+    "2",
+    "3"
+   ],
+   [
+    "5",
+    "9",
+    "2"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "composes in the wrong order and computes g(f(2)) = g(3) = 1",
+  "B": "reads f(2) = 3 and stops, never applying g first",
+  "C": "stops at the inner value g(2) = 5 without applying f"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Inside first: $g(2)=5$, then $f(5)=9$.\n\n**The Full Solution:**\nStep 1: $f(g(2))$ means evaluate $g$ at $2$ first, then feed that OUTPUT into $f$ — the parentheses fix the order.\nStep 2: In the row $x=2$, the $g(x)$ column gives $g(2)=5$.\nStep 3: Now evaluate $f$ at $5$: in the row $x=5$, the $f(x)$ column gives $f(5)=9$, so $f(g(2))=9$. Check the order the other way: $g(f(2))=g(3)=1$, a different value, so the order genuinely matters ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): composes backwards, computing $g(f(2))=g(3)=1$.\n* Choice B ($3$): reads $f(2)=3$ from the table and stops, skipping stage $g$ entirely.\n* Choice C ($5$): stops at the inner value $g(2)=5$ without sending it through $f$.\n\n**Test Day Takeaway:** Work composition from the inside out and label the intermediate value before you look anything else up: $g(2)=5$ first, and $5$ becomes the new input."
+}

@@ -1,0 +1,56 @@
+{
+ "id": 6,
+ "question": "Water pressure in a straight main was measured at four distances from the pump station, as given in the table, and the readings are modeled by a linear function of distance. Which statement best interprets the slope of that model?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Distance from pump station (km)",
+    "Water pressure (psi)"
+   ],
+   "rows": [
+    [
+     "2",
+     "88"
+    ],
+    [
+     "4",
+     "76"
+    ],
+    [
+     "6",
+     "64"
+    ],
+    [
+     "8",
+     "52"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The water pressure increases by $6$ psi for each additional kilometer from the pump station."
+  },
+  {
+   "id": "B",
+   "text": "The water pressure decreases by $12$ psi for each additional kilometer from the pump station."
+  },
+  {
+   "id": "C",
+   "text": "The water pressure is $100$ psi at the pump station."
+  },
+  {
+   "id": "D",
+   "text": "The water pressure decreases by $6$ psi for each additional kilometer from the pump station."
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps the size of the slope but drops its negative sign, so the reading is backwards",
+  "B": "uses the 12 psi drop between consecutive rows without dividing by the 2 km step",
+  "C": "interprets the model's y-intercept, 100 psi at 0 km, rather than its slope"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Pressure falls $12$ psi every $2$ km, and $-12 \\div 2 = -6$: the model loses $6$ psi per kilometer.\n\n**The Full Solution:**\nStep 1: Take any two rows, say $(2, 88)$ and $(4, 76)$. The slope is $\\frac{76 - 88}{4 - 2} = \\frac{-12}{2} = -6$.\nStep 2: The units of the slope are the units of the second column over the units of the first, so $-6$ means psi per kilometer, and the negative sign means the pressure drops.\nStep 3: Confirm the rate holds across the table: $(6, 64)$ and $(8, 52)$ give $\\frac{52 - 64}{8 - 6} = -6$ as well ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: the size $6$ is right, but the pressure column is falling, so the slope is negative. Reading the magnitude and ignoring the sign reverses the physical claim.\n* Choice B: $12$ is the drop between consecutive rows, and those rows are $2$ km apart. A slope is a change divided by the change in the input, so $12$ must still be divided by $2$.\n* Choice C: this describes the intercept. It is a true consequence of the model — extending back to $0$ km gives $88 + 2(6) = 100$ psi — but the question asks what the slope means.\n\n**Test Day Takeaway:** A slope read from a table is (change in the output column) over (change in the input column). Check the step size in the input column before you quote a rate, and carry the sign into the sentence."
+}

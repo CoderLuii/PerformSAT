@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-005",
+  "question": "In the $xy$-plane, the graph of $y = -\\dfrac{1}{4}x^2 + 6x - 11$ is a parabola. Which of the following correctly describes the direction in which the parabola opens, and why?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Upward, because the coefficient of $x$ is positive."
+    },
+    {
+      "id": "B",
+      "text": "Upward, because the constant term is negative."
+    },
+    {
+      "id": "C",
+      "text": "Downward, because the coefficient of $x^2$ is negative."
+    },
+    {
+      "id": "D",
+      "text": "Downward, because the constant term is negative."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the coefficient of $x$ instead of the coefficient of $x^2$",
+    "B": "reads the constant term instead of the leading coefficient",
+    "D": "reaches the right direction from the wrong coefficient"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Parabola Direction**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Only the coefficient of $x^2$ controls direction. Here it is $-\\dfrac{1}{4} < 0$, so the parabola opens downward.\n\n**The Full Solution:**\nStep 1: Write the equation as $y = ax^2 + bx + c$ with $a = -\\dfrac{1}{4}$, $b = 6$, and $c = -11$.\nStep 2: A parabola opens upward when $a > 0$ and downward when $a < 0$. Neither $b$ nor $c$ affects the direction.\nStep 3: Since $a = -\\dfrac{1}{4} < 0$, the parabola opens downward. Check with two far-out inputs: $y(100) = -2500 + 600 - 11 < 0$ and $y(-100) = -2500 - 600 - 11 < 0$, so both arms fall. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: $b = 6$ is positive, but $b$ shifts the vertex sideways; it never flips the parabola.\n* Choice B: $c = -11$ is the $y$-intercept, not the leading coefficient.\n* Choice D: the direction is right but the reason is wrong — the constant term does not determine which way a parabola opens.\n\n**Test Day Takeaway:** Direction is decided by one number: the sign of the coefficient on $x^2$. Ignore everything else."
+}

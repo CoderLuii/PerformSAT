@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-327",
+  "question": "A bike-share program charges a one-time activation fee of $\\$12$ plus $\\$4$ for each ride. Which equation gives the total cost $C$, in dollars, of the activation fee and $r$ rides?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$C = 4r + 12$"
+    },
+    {
+      "id": "B",
+      "text": "$C = 12r + 4$"
+    },
+    {
+      "id": "C",
+      "text": "$C = 16r$"
+    },
+    {
+      "id": "D",
+      "text": "$C = 4(r + 12)$"
+    }
+  ],
+  "correctAnswer": "A",
+  "distractorNotes": {
+    "B": "swapped the fixed fee and the per-ride rate",
+    "C": "added the two dollar amounts and treated the sum as a per-ride rate",
+    "D": "multiplied the fixed fee by the per-ride rate"
+  },
+  "explanation": "**SAT Pattern: Linear Cost Equation Setup**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Cost = (rate per ride)(rides) + (one-time fee) $= 4r + 12$.\n\n**The Full Solution:**\nStep 1: The activation fee is paid once, regardless of $r$, so it is the constant term: $12$.\nStep 2: The $\\$4$ charge repeats once per ride, so it is multiplied by the number of rides: $4r$.\nStep 3: Add the two parts: $C = 4r + 12$.\nCheck: $3$ rides should cost $12 + 3(4) = 24$, and $4(3) + 12 = 24$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($C = 12r + 4$): swaps the roles, charging $\\$12$ per ride and a $\\$4$ one-time fee.\n* Choice C ($C = 16r$): adds $12 + 4$ and charges the sum on every ride, as if the activation fee were paid each time.\n* Choice D ($C = 4(r + 12)$): multiplies the activation fee by the per-ride rate; expanding gives $4r + 48$, a $\\$48$ fee that was never stated.\n\n**Test Day Takeaway:** In a cost model, the amount charged \"per\" something multiplies that something; the amount charged once is the constant."
+}

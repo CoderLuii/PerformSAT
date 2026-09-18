@@ -1,31 +1,31 @@
 {
-  "id": 850,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "Early in the primatologist Jane Goodall's career, her mentor, Louis Leakey, treated tool use as the trait that set humans apart from other animals. When Goodall observed wild chimpanzees in Tanzania stripping leaves from twigs to fish termites out of their mounds, that long-standing boundary blurred. ______ Goodall's later writing turned away from the search for a single dividing line and toward the many capacities humans share, in differing degrees, with other primates.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "For instance,"
-    },
-    {
-      "id": "B",
-      "text": "Accordingly,"
-    },
-    {
-      "id": "C",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "D",
-      "text": "Earlier,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The chimpanzees' tool use blurred the boundary Goodall had inherited from Leakey, and her later work shifted course as a consequence, so the transition must mark a result; \"Accordingly\" does that. \"For instance\" would introduce an example of the previous point rather than its effect; \"Nevertheless\" signals contrast, but the later writing follows from the observation rather than opposing it; and \"Earlier\" misorders the events, since the shift came after the discovery."
+ "id": 850,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "The physiologist Étienne-Jules Marey photographed flying birds at rates no eye could follow, and his plates overturned a comfortable simplification: a wing did not flap like a rigid oar but twisted along its length, meeting the air at angles that changed throughout the stroke. Among the closest readers of these images were the builders of experimental flying machines. ______ several of them gave up the flat, board-like test wings they had been building and adopted cambered, flexible surfaces closer to what the photographs showed.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "In fact,"
+  },
+  {
+   "id": "B",
+   "text": "Consequently,"
+  },
+  {
+   "id": "C",
+   "text": "Nevertheless,"
+  },
+  {
+   "id": "D",
+   "text": "Later,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The final sentence reports what the aeronautical pioneers did because of what the photographs revealed — they redesigned their test wings on the birds' example — so a cause-and-effect transition is required.\n\n**The Full Solution:**\n- The passage establishes the finding: Marey's plates showed a wing meeting the air as a twisting, flexing surface, not a rigid flapping plane.\n- It then notes who was studying those plates: builders of experimental flying machines.\n- The last sentence gives their response — abandoning rigid flat wings for cambered, flexible ones — a consequence of the finding, marked by \"Consequently.\"\n\n**Why the other choices are wrong:**\n- A: \"In fact,\" introduces an intensification or correction of the previous claim, not an outcome of it.\n- C: \"Nevertheless,\" would signal the builders acting against the photographs' lesson, when they acted on it.\n- D: \"Later,\" records mere sequence in time, discarding the causal link the passage constructs."
 }

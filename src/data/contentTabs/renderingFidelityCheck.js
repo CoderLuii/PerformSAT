@@ -1,3 +1,4 @@
+/* eslint-disable no-eval -- offline content validator run with node; evaluates generated snippets, never user input */
 /**
  * Rendering Fidelity Check
  *
@@ -84,7 +85,7 @@ function extractAndTestMath(text, label) {
     processed = processed.replace(m[0], '');
   }
 
-  const inlineMatches = [...processed.matchAll(/\$([^\$]+?)\$/g)];
+  const inlineMatches = [...processed.matchAll(/\$([^$]+?)\$/g)];
   for (const m of inlineMatches) {
     const err = testLatex(m[1], false);
     if (err) issues.push({ label, latex: m[1].slice(0, 60), error: err, mode: 'inline' });
@@ -230,10 +231,7 @@ function run() {
   console.log(`Tabs checked:         ${tabsChecked}`);
   console.log(`Text fields scanned:  ${mathExpressionsChecked}`);
 
-  let hasErrors = false;
-
   if (latexErrors.length > 0) {
-    hasErrors = true;
     console.log(`\nLATEX ERRORS (${latexErrors.length}):`);
     for (const e of latexErrors) {
       console.error(`  ✗ ${e.label} [${e.mode}]: ${e.error}`);
@@ -254,7 +252,6 @@ function run() {
   }
 
   if (unknownBlocks.length > 0) {
-    hasErrors = true;
     console.log(`\nUNKNOWN BLOCK TYPES (${unknownBlocks.length}):`);
     for (const b of unknownBlocks) {
       console.error(`  ✗ ${b.label}: "${b.type}" has no renderer`);

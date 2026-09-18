@@ -1,34 +1,34 @@
 {
-  "id": 510,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "In the sixteenth and seventeenth centuries, the Ottoman city of Bursa was a hinge in the long-distance silk trade. Raw silk carried by caravan from Iran was sold in Bursa's covered market, where it was weighed, taxed, and graded before being passed to local weavers or re-exported toward Italy. The historian Halil Inalcik showed, using the city's surviving court and customs registers, that the revenue the Ottoman treasury drew from taxing this silk at Bursa was large enough that disruptions to the Iranian caravan routes—whether from war or from a shift in the trade's direction—registered directly in the state's accounts.",
-  "question": "According to the text, what was one effect of disruptions to the Iranian caravan routes?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "They showed up directly in the revenue recorded in the Ottoman state's financial accounts."
-    },
-    {
-      "id": "B",
-      "text": "They led the weavers of Bursa to give up silk in favor of working with other textiles."
-    },
-    {
-      "id": "C",
-      "text": "They prompted the Ottoman treasury to stop collecting any tax on raw silk at Bursa."
-    },
-    {
-      "id": "D",
-      "text": "They permanently redirected the long-distance silk trade away from Italy and toward Iran."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage states that the treasury's revenue from taxing silk at Bursa was large enough that disruptions to the Iranian caravan routes \"registered directly in the state's accounts.\" That is the effect the text names. Choices B and C describe responses—weavers abandoning silk, the treasury ending the tax—that the passage never mentions. Choice D claims a permanent redirection of the trade toward Iran, which the text does not support; it speaks only of disruptions registering in the accounts.",
-  "_meta": {
-    "anchor": "Ottoman Bursa silk trade; Halil Inalcik on customs registers and treasury revenue"
+ "id": 510,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "In the 1890s, most working-class tenements in American cities had no bathing facilities at all, and reformers made the public bath a cause: cleanliness, they argued, was a public good the city owed residents whose homes could not provide it. The campaign had concrete results in New York. State legislation required large cities to maintain free public baths, and New York City went on to build a network of year-round municipal bathhouses, some handsome enough to be mistaken for small libraries, that recorded millions of visits annually in their busiest years.",
+ "question": "According to the text, what was one result of the reformers' campaign for public baths?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "State legislation required large cities to maintain free public baths."
+  },
+  {
+   "id": "B",
+   "text": "Landlords were compelled to install bathing facilities in existing tenements."
+  },
+  {
+   "id": "C",
+   "text": "Several public libraries were converted into municipal bathhouses."
+  },
+  {
+   "id": "D",
+   "text": "New York City began charging admission to its busiest bathhouses."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The text states directly that the campaign \"had concrete results in New York,\" and the first result named is that \"State legislation required large cities to maintain free public baths.\"\n\n**The Full Solution:**\n- The question asks for a result of the campaign, so the answer must come from the sentences following \"The campaign had concrete results.\"\n- Two results are given: the state legislation requiring free baths, and the city's network of year-round bathhouses.\n- Choice A restates the first of these almost verbatim.\n\n**Why the other choices are wrong:**\n- B: The text says tenements lacked baths, but no requirement on landlords is ever mentioned.\n- C: It garbles a comparison — some bathhouses looked like small libraries; none were converted from them.\n- D: It contradicts the text, which specifies that the legislation mandated free baths.",
+ "_meta": {
+  "anchor": "Progressive-era municipal bath movement — state mandate and New York's bathhouse network"
+ }
 }

@@ -6,26 +6,26 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 1,
- "passage": "Soil ecologist Wei Cheng uses isotope-labeling experiments to show that living plant roots can prompt microbes to break down organic matter that would otherwise stay intact. The sharp acceleration of carbon and nitrogen cycling that these root-driven effects produce ______ often absent from models built only on bare-soil measurements.",
+ "passage": "A seismologist at a coastal observatory ______ decades-old paper seismograms when she noticed a slow, repeating flutter in the traces — the signature, later analysis showed, of episodes in which two tectonic plates creep past each other for weeks without producing a felt earthquake.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "are"
+   "text": "reexamines"
   },
   {
    "id": "B",
-   "text": "have been"
+   "text": "has reexamined"
   },
   {
    "id": "C",
-   "text": "were"
+   "text": "will reexamine"
   },
   {
    "id": "D",
-   "text": "is"
+   "text": "was reexamining"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D. The subject of the verb is the singular noun \"acceleration,\" not the plural \"effects\" in the clause \"that these root-driven effects produce\" or the plural \"measurements\" later in the sentence. A singular subject takes the singular verb \"is.\" The other options—\"are,\" \"have been,\" and \"were\"—are all plural forms that agree with the nearby plural nouns rather than with the true head noun, the error the sentence is built to catch."
+ "explanation": "**Choice D is correct.** An interrupted past action takes the past progressive: \"was reexamining ... when she noticed.\"\n\n**The Full Solution:**\n- The sentence narrates an interruption: the noticing (\"when she noticed\") happened at a point during an ongoing activity.\n- English marks that ongoing past frame with the past progressive, so the blank must be \"was reexamining.\"\n\n**Why the other choices are wrong:**\n- A: Present tense clashes with the past-tense \"noticed.\"\n- B: The present perfect describes a completed action with present relevance — it cannot serve as the backdrop for a past interruption.\n- C: Future tense is incompatible with the past narrative altogether."
 }

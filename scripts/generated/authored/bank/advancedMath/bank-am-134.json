@@ -1,0 +1,29 @@
+{
+  "question": "An engineer keeps only the candidate equations that are satisfied by two different real numbers. Which of the following equations should the engineer keep?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$x^{2}+4x+4=0$"
+    },
+    {
+      "id": "B",
+      "text": "$x^{2}+2x+5=0$"
+    },
+    {
+      "id": "C",
+      "text": "$2x^{2}-7x+3=0$"
+    },
+    {
+      "id": "D",
+      "text": "$3x^{2}-6x+4=0$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "discriminant is 0, so this equation has exactly one real solution",
+    "B": "discriminant is -16, so this equation has no real solutions",
+    "D": "discriminant is -12, so this equation has no real solutions"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Only $2x^{2}-7x+3=0$ has a positive discriminant: $49-24=25$.\n\n**The Full Solution:**\nStep 1: Two different real solutions require $b^{2}-4ac>0$.\nStep 2: Compute each discriminant: $16-16=0$, $4-20=-16$, $49-24=25$, and $36-48=-12$.\nStep 3: Only $25$ is positive, so choice C is the equation to keep. Check: $2x^{2}-7x+3=(2x-1)(x-3)$, with solutions $\\dfrac{1}{2}$ and $3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($x^{2}+4x+4=0$): discriminant $0$, so exactly one real solution.\n* Choice B ($x^{2}+2x+5=0$): discriminant $-16$, so no real solutions.\n* Choice D ($3x^{2}-6x+4=0$): discriminant $-12$, so no real solutions.\n\n**Test Day Takeaway:** Screening several equations is fastest with the discriminant alone — never solve them.",
+  "id": "bank-am-134"
+}

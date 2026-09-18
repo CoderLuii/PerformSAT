@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "The replacement cost of a building's roofing system rises by $4.5\\%$ each year, and the cost is $\\$26{,}000$ this year. Which expression gives the replacement cost, in dollars, $t$ years from now?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$26{,}000(0.045)^t$"
+  },
+  {
+   "id": "B",
+   "text": "$26{,}000(1 + 0.045t)$"
+  },
+  {
+   "id": "C",
+   "text": "$26{,}000(1.45)^t$"
+  },
+  {
+   "id": "D",
+   "text": "$26{,}000(1.045)^t$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the growth rate alone as the base instead of 1 plus the rate",
+  "B": "models the increase as simple, adding 4.5% of the original cost each year",
+  "C": "misplaces the decimal, treating 4.5% as 0.45 and growing 45% per year"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Repeated percent growth multiplies by $1 + 0.045 = 1.045$ once per year, so the cost is $26{,}000(1.045)^t$.\n\n**The Full Solution:**\nStep 1: A $4.5\\%$ increase multiplies a cost by $1 + 0.045 = 1.045$.\nStep 2: The increase happens once per year and applies to the new cost each time, so after $t$ years the original cost has been multiplied by $1.045$ a total of $t$ times.\nStep 3: The cost is $26{,}000(1.045)^t$; check $t = 2$: $26{,}000(1.045)^2 = 28{,}392.65$, which is $27{,}170$ raised by another $4.5\\%$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($26{,}000(0.045)^t$): uses the rate itself as the multiplier, so after one year the cost would fall to $26{,}000(0.045) = 1{,}170$ dollars.\n* Choice B ($26{,}000(1 + 0.045t)$): adds a flat $4.5\\%$ of the original cost every year; at $t = 2$ it gives $28{,}340$ dollars instead of $28{,}392.65$, because it never charges growth on growth.\n* Choice C ($26{,}000(1.45)^t$): reads $4.5\\%$ as $0.45$, producing $45\\%$ growth and a first-year cost of $37{,}700$ dollars.\n\n**Test Day Takeaway:** Percent growth compounds through the base $(1 + r)$ raised to the number of periods; a rate multiplied by time is simple growth, a different model."
+}

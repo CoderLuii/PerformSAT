@@ -1,0 +1,60 @@
+{
+ "id": 11,
+ "question": "Line $\\ell$ shown gives every combination of $x$ acres of parkland and $y$ acres of housing that exactly fills a planning district. A second requirement is $6x+ky=72$, where $k$ is a constant. If no combination meets both the line $\\ell$ requirement and the second requirement, what is the value of $k$?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -0.75,
+   "yIntercept": 12,
+   "xRange": [
+    0,
+    16
+   ],
+   "yRange": [
+    0,
+    16
+   ],
+   "xTickInterval": 4,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     0,
+     12
+    ],
+    [
+     8,
+     6
+    ]
+   ],
+   "label": "ℓ",
+   "xLabel": "Parkland (acres)",
+   "yLabel": "Housing (acres)"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "makes the slopes opposites instead of equal, solving -6/k = 3/4 to get k = -8",
+  "B": "copies the y-coefficient 4 straight from 3x + 4y = 48, ignoring that the x-coefficient was doubled from 3 to 6",
+  "C": "scales by the ratio of the constant terms, 72/48 = 1.5, giving 1.5 times 4 = 6 instead of using the x-coefficient ratio 2"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** Line $\\ell$ is $3x+4y=48$. Doubling the $x$-coefficient from $3$ to $6$ forces the $y$-coefficient to double too, so $k=8$; the constants ($72$ versus $96$) then disagree, which is exactly what \"no combination\" requires.\n\n**The Full Solution:**\nStep 1: Read line $\\ell$ from the graph. It passes through $(0,12)$ and $(8,6)$, so its slope is $\\dfrac{6-12}{8-0}=-\\dfrac{3}{4}$ and its equation is $y=-\\dfrac{3}{4}x+12$, or $3x+4y=48$ in standard form.\nStep 2: Two linear requirements share no solution exactly when the lines are parallel and distinct — the coefficients of $x$ and $y$ are proportional but the constants break that proportion. Matching $6x+ky=72$ to $3x+4y=48$, the $x$-coefficients give the ratio $\\dfrac{6}{3}=2$, so $k=2(4)=8$.\nStep 3: Confirm the lines are distinct. Scaling $3x+4y=48$ by $2$ gives $6x+8y=96$, and $96\\neq 72$, so the two lines are parallel but not the same line. Check: $6x+8y=72$ simplifies to $3x+4y=36$, which is parallel to $3x+4y=48$ and never meets it ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$): sets the slopes as opposites rather than equal. With $k=-8$ the second line has slope $\\dfrac{3}{4}$, and two lines with different slopes always cross.\n* Choice B ($4$): copies the $4$ from $3x+4y=48$ without scaling. With $k=4$ the second requirement is $3x+2y=36$, slope $-\\dfrac{3}{2}$, which crosses $\\ell$.\n* Choice C ($6$): uses the constants' ratio $\\dfrac{72}{48}=1.5$ to scale the $y$-coefficient. With $k=6$ the second line is $x+y=12$, slope $-1$, which crosses $\\ell$.\n\n**Test Day Takeaway:** Parallel and distinct is the whole test for no solution. Match the $x$-coefficients to find the scale factor, apply it to the $y$-coefficient, then confirm the constants do not follow the same scale — if they do, the answer would be infinitely many solutions instead."
+}

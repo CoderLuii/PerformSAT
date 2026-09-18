@@ -1,34 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "For example,"
-    },
-    {
-      "id": "B",
-      "text": "However,"
-    },
-    {
-      "id": "C",
-      "text": "Therefore,"
-    },
-    {
-      "id": "D",
-      "text": "Meanwhile,"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The first sentence makes a general point—that performers must settle matters the composer left open—and the second gives a specific instance of such a matter, a tempo marking as vague as \"adagio.\" \"For example\" introduces that illustration. \"However\" would signal a contrast, \"Therefore\" a consequence, and \"Meanwhile\" a parallel event in another setting, none of which fits a sentence that simply exemplifies the general claim.",
-  "passage": "Performers in the early-music movement often have to make choices the composer left unspecified. ______ a Baroque score might mark a passage simply \"adagio,\" giving the tempo in only the vaguest terms, so the performer must decide how slow the music should actually go by weighing the character of the piece, the size of the hall, and the conventions of the period.",
-  "_meta": {
-    "anchor": "Baroque performance practice: unspecified tempo markings (generic)"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "For example,"
   },
-  "id": 1125,
-  "module": 1
+  {
+   "id": "B",
+   "text": "However,"
+  },
+  {
+   "id": "C",
+   "text": "In turn,"
+  },
+  {
+   "id": "D",
+   "text": "Nonetheless,"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The first sentence makes a general claim about maze designers' quiet steering; the second describes one specific maze — Hampton Court — doing exactly that. A general statement followed by a particular instance calls for \"For example.\"\n\n**The Full Solution:**\n- Sentence 1: designers \"built in features that quietly steer visitors without their noticing\" — a claim about the practice at large.\n- Sentence 2: a dated, named maze with one such feature, the long false corridor at the entrance.\n- The second sentence is evidence for the first, and \"For example\" announces that illustrative relation.\n\n**Why the other choices are wrong:**\n- B: \"However\" signals opposition, but the Hampton Court corridor confirms rather than resists the opening claim.\n- C: \"In turn\" marks the next link in a causal chain, and no chain of consequences connects the two sentences.\n- D: \"Nonetheless\" likewise signals opposition pressed past an obstacle, but the example supports the opening claim rather than resisting it.",
+ "passage": "Designers of historic hedge mazes often built in features that quietly steer visitors without their noticing. ______ the maze planted at Hampton Court around 1690 places its longest false corridor immediately inside the entrance, so that most visitors make their first wrong turn before the puzzle has properly begun.",
+ "_meta": {
+  "anchor": "hedge mazes — Hampton Court entrance corridor as designed misdirection",
+  "transitionBucket": "transitions-example-emphasis",
+  "distractors": {
+   "B": "opposition where illustration is needed",
+   "C": "causal chain absent",
+   "D": "opposition where illustration is needed"
+  }
+ },
+ "id": 1125,
+ "module": 1
 }

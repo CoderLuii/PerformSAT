@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-052",
+ "question": "A harbor tour operator paints a wedge-shaped landing zone on a pier as a sector of a circle centered at the mooring post. The curved edge of the zone measures $24$ meters, and the complete boundary of the zone measures $64$ meters. What is the area, in square meters, of the landing zone?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$96$"
+  },
+  {
+   "id": "B",
+   "text": "$240$"
+  },
+  {
+   "id": "C",
+   "text": "$480$"
+  },
+  {
+   "id": "D",
+   "text": "$640$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves the whole boundary before subtracting the arc, getting r = 8, then (1/2)(24)(8) = 96",
+  "C": "finds r = 20 but drops the factor 1/2 from A = (1/2)sr, giving 24 x 20 = 480",
+  "D": "uses the whole boundary 64 as the arc length: (1/2)(64)(20) = 640"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sector Area from Arc Length**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The boundary is two radii plus the arc, so $2r=64-24=40$ and $r=20$. Then $A=\\frac{1}{2}sr=\\frac{1}{2}(24)(20)=240$ square meters.\n\n**The Full Solution:**\n\nStep 1 — Separate the boundary. A sector's boundary is arc $+$ two radii, so $2r+24=64$, giving $2r=40$ and $r=20$ meters.\n\nStep 2 — Use the arc-length form of sector area. Because $s=r\\theta$ and $A=\\frac{1}{2}r^2\\theta$, substituting gives $A=\\frac{1}{2}sr$.\n\nStep 3 — Evaluate: $A=\\frac{1}{2}(24)(20)=240$ square meters. Check with the central angle: $\\theta=\\frac{s}{r}=\\frac{24}{20}=1.2$ radians, and $\\frac{1}{2}(20)^2(1.2)=240$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($96$): halving the whole boundary before removing the arc gives $r=32-24=8$ and $\\frac{1}{2}(24)(8)=96$.\n* Choice C ($480$): this finds $r=20$ but drops the factor $\\frac{1}{2}$, computing $24(20)=480$.\n* Choice D ($640$): this treats the entire $64$-meter boundary as the arc, giving $\\frac{1}{2}(64)(20)=640$.\n\n**Test Day Takeaway:** The perimeter of a sector is arc plus **two** radii — peel off the radii first, then use $A=\\frac{1}{2}sr$."
+}

@@ -1,0 +1,6 @@
+{
+  "question": "A tension expression $x^{2}+14x+22$ is rewritten as $(x+h)^{2}+k$ so that its minimum is displayed. What is the value of $h+k$?",
+  "correctAnswer": "-20",
+  "explanation": "**SAT Pattern: Completing the Square**\n\n**The correct answer is $-20$.**\n\n**The Fast Way (~20s):** Half of $14$ is $7$, so $h=7$ and $k=22-49=-27$, giving $h+k=-20$.\n\n**The Full Solution:**\nStep 1: Complete the square: $x^{2}+14x=(x+7)^{2}-49$.\nStep 2: So $x^{2}+14x+22=(x+7)^{2}-49+22=(x+7)^{2}-27$, giving $h=7$ and $k=-27$.\nStep 3: Then $h+k=7+(-27)=-20$. Check at $x=0$: $(0+7)^{2}-27=49-27=22$ ✓\n\n**Common Mistakes:**\n* $22$: used $k=22-7=15$, subtracting $h$ instead of $h^{2}$.\n* $34$: dropped the sign of $k$ and computed $7+27$.\n* $-27$: reported $k$ alone instead of $h+k$.\n\n**Test Day Takeaway:** Completing the square subtracts the square of half the linear coefficient — that square is what changes the constant.",
+  "id": "bank-am-293"
+}

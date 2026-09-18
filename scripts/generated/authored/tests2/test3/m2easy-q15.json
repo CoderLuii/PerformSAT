@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "A triangular gusset plate is positioned in the xy-plane with two corners on the x-axis at $(0, 0)$ and $(14, 0)$. Its third corner sits directly above $(6, 0)$, and the plate covers $63$ square units. How far above the x-axis is the third corner?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4.5$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$10.5$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 63 by the base 14 without doubling, dropping the factor of 1/2",
+  "C": "uses 6, the x-coordinate of the third corner, as the base: 63/6 = 10.5",
+  "D": "doubles the area but divides by 7, half of the base: 126/7 = 18"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The side on the x-axis is the base, $14$ units, and the height is the third corner's distance above the axis. From $\\frac{1}{2}(14)h = 63$, $h = 9$.\n\n**The Full Solution:**\nStep 1: Identify the base. The corners $(0, 0)$ and $(14, 0)$ both lie on the x-axis, so that side is horizontal with length $14 - 0 = 14$ units.\nStep 2: Identify the height. The height is measured perpendicular to the base, so it is the vertical distance from the third corner down to the x-axis, which is exactly the height being asked for.\nStep 3: Solve the area equation. $\\frac{1}{2}(14)h = 63$ gives $7h = 63$, so $h = 9$ units. Check: $\\frac{1}{2}(14)(9) = 63$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4.5$): computes $\\frac{63}{14}$ and forgets that the area formula already divides by $2$, so the height is twice that quotient.\n* Choice C ($10.5$): uses $6$ as the base because the third corner sits above $x = 6$. That $6$ locates the corner horizontally; it is not a side of the triangle.\n* Choice D ($18$): divides $126$ by $7$ instead of by $14$, halving the base a second time.\n\n**Test Day Takeaway:** When one side of a triangle lies along an axis, that side is the base and the opposite vertex's perpendicular coordinate is the height. The horizontal position of the third vertex never enters the area."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "In right triangle $ABC$, angle $C$ is a right angle. The legs have lengths $AC = x$ and $BC = x + 7$, and the hypotenuse has length $AB = 17$. What is the value of $x$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves $x + (x + 7) = 17$, adding the legs to reach the hypotenuse",
+  "C": "subtracts $7$ from the hypotenuse",
+  "D": "gives $BC = x + 7$ instead of $x$ itself"
+ },
+ "correctAnswer": "B",
+ "hint": "Write the theorem with the expressions in place, then expand before solving.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~60s):** $x^2 + (x + 7)^2 = 289$ reduces to $x^2 + 7x - 120 = 0$, so $x = 8$.\n\n**The Full Solution:**\nStep 1: The legs are $x$ and $x + 7$ and the hypotenuse is $17$, so $x^2 + (x + 7)^2 = 17^2$.\nStep 2: Expand: $x^2 + x^2 + 14x + 49 = 289$, so $2x^2 + 14x - 240 = 0$, or $x^2 + 7x - 120 = 0$.\nStep 3: Factor: $(x + 15)(x - 8) = 0$. A length must be positive, so $x = 8$.\n\nVerification: The legs are $8$ and $15$, and $8^2 + 15^2 = 64 + 225 = 289 = 17^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): solves $x + (x + 7) = 17$, adding the legs to reach the hypotenuse.\n* Choice C ($10$): subtracts $7$ from the hypotenuse.\n* Choice D ($15$): gives $BC = x + 7$ instead of $x$ itself.\n\n**Test Day Takeaway:** When the legs are expressions, square them into a quadratic and throw out the negative root."
+}

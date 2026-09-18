@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SEVA — test-center flyer</title>
+<style>
+__FONTS__
+
+/* ── Print geometry ────────────────────────────────────────────────────────
+   Exactly one US Letter page, zero printer margin, so the cream field bleeds
+   to the trim edge at a print shop. All content sits inside SAFE (0.58in), a
+   margin no consumer inkjet clips into. */
+@page { size: 8.5in 11in; margin: 0; }
+
+:root {
+  --bg:        #F6F4EF;   /* landing --lp-bg, the warm cream students land on */
+  --surface:   #FFFFFF;
+  --inset:     #FAF8F3;
+  --line:      #E7E3D9;
+  --line-2:    #D9D4C7;
+  --text:      #15171C;
+  --text-2:    #5B6068;
+  --text-3:    #9A9EA6;
+  --orange:    #EA580C;
+  --lime:      #C2E83A;
+  --lime-deep: #5A8A16;
+  --purple:    #7C5CC7;
+  --display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
+  --body:    'Hanken Grotesk', 'Inter', system-ui, sans-serif;
+  --logo:    'Baloo 2', system-ui, sans-serif;
+  --safe: 0.58in;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { width: 8.5in; height: 11in; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+  /* Force the cream + every color block to survive the print pipeline rather
+     than being helpfully dropped as a "background". */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: 8.5in; height: 11in;
+  padding: var(--safe);
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+}
+
+/* Tri-color rule — the brand's scroll-progress bar, laid flat across the head
+   of the page. Orange (action) → purple (focus) → lime (mastery). */
+.tricolor {
+  position: absolute; top: 0; left: 0; right: 0; height: 9px;
+  background: linear-gradient(90deg,
+    var(--orange) 0 38%, var(--purple) 38% 68%, var(--lime) 68% 100%);
+}
+
+/* ── Masthead ───────────────────────────────────────────────────────────── */
+.masthead {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-bottom: 13px; border-bottom: 1px solid var(--line-2);
+}
+.wordmark { display: inline-flex; align-items: center; gap: 3px; line-height: .9; }
+.wordmark span {
+  font-family: var(--logo); font-weight: 800; font-size: 29px; letter-spacing: -.02em;
+}
+/* The S carries all three bands at once. A ghost copy sizes the box; three
+   absolute copies sit exactly on top of it, each clipped to one band. */
+.wm-s { position: relative; display: inline-block; }
+.wm-s > i { font-style: normal; }
+.wm-s > i.ghost { visibility: hidden; }
+.wm-s > i.band  { position: absolute; inset: 0; }
+.wm-s > i.b1 { color: #D5572B; clip-path: inset(0 0 58% 0); }
+.wm-s > i.b2 { color: #9A72C8; clip-path: inset(42% 0 40% 0); }
+.wm-s > i.b3 { color: #7FA81F; clip-path: inset(60% 0 0 0); }
+.wm-e { color: #D5572B; }
+.wm-v { color: #9A72C8; }
+/* Print-darkened lime: the screen wordmark's #C6EE4E disappears on paper. */
+.wm-a { color: #7FA81F; }
+
+.masthead-tag {
+  font-family: var(--display); font-weight: 700;
+  font-size: 10.5px; letter-spacing: .15em; text-transform: uppercase;
+  color: var(--text-3);
+}
+
+/* ── Hero ───────────────────────────────────────────────────────────────── */
+.hero { padding-top: 18px; }
+.eyebrow {
+  font-family: var(--display); font-weight: 700;
+  font-size: 11px; letter-spacing: .15em; text-transform: uppercase;
+  color: var(--orange); display: flex; align-items: center; gap: 8px;
+}
+.eyebrow::before {
+  content: ''; width: 18px; height: 2px; background: var(--orange); flex: none;
+}
+h1 {
+  font-family: var(--display); font-weight: 800;
+  font-size: 43px; line-height: 1.03; letter-spacing: -.035em;
+  margin-top: 13px;
+}
+h1 .muted { color: var(--text-3); }
+h1 .hit    { color: var(--orange); }
+.dek {
+  font-size: 15px; line-height: 1.58; color: var(--text-2);
+  max-width: 6.15in; margin-top: 15px;
+}
+.dek strong { color: var(--text); font-weight: 700; }
+
+/* ── The four steps ───────────────────────────────────────────────────────
+   One column, numbered, read top to bottom. A checklist implies things you
+   tick off in any order; a numbered list implies sequence, which is what this
+   is. Nothing sits beside them — the whole point of the page is that a
+   16-year-old holding it in a parking lot can follow it in one pass. */
+.prep { margin-top: 17px; }
+.prep-h {
+  font-family: var(--display); font-weight: 800;
+  font-size: 27px; line-height: 1.06; letter-spacing: -.032em;
+}
+.prep-h .hit { color: var(--orange); }
+
+.steps { list-style: none; margin-top: 12px; }
+.step {
+  display: flex; gap: 18px; align-items: baseline;
+  padding: 10px 0; border-top: 1px solid var(--line-2);
+}
+.step:first-child { border-top: none; }
+.step-n {
+  flex: none; width: 30px;
+  font-family: var(--display); font-weight: 800; font-size: 27px;
+  line-height: 1; letter-spacing: -.03em; color: var(--orange);
+}
+.step-b {
+  display: block; font-family: var(--display); font-weight: 700;
+  font-size: 16.5px; line-height: 1.2; letter-spacing: -.02em; color: var(--text);
+}
+.step-v {
+  display: block; font-size: 13px; line-height: 1.48;
+  color: var(--text-2); margin-top: 3px;
+}
+
+/* The one line that turns the method into the pitch. Left rule instead of a
+   box — a box here would compete with the scan card below it. */
+.bridge {
+  /* margin-BOTTOM, not just top: .scan uses `margin-top: auto` to sit at the
+     foot of the page, and auto collapses to 0 once the page fills — without a
+     floor here the scan card butts straight into this line. */
+  margin-top: 16px; margin-bottom: 18px; padding: 2px 0 2px 15px;
+  border-left: 3px solid var(--purple);
+  font-size: 13.6px; line-height: 1.5; color: var(--text-2);
+}
+.bridge b { font-family: var(--display); font-weight: 700; color: var(--text); }
+
+/* ── Scan block ─────────────────────────────────────────────────────────── */
+.scan {
+  margin-top: auto; display: flex; align-items: center; gap: 22px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 16px; padding: 13px 20px;
+}
+.qr-frame {
+  flex: none; width: 1.6in; height: 1.6in; padding: 0.085in;
+  background: #fff; border: 1px solid var(--line); border-radius: 10px;
+}
+.qr-frame svg { display: block; width: 100%; height: 100%; }
+.scan-copy { min-width: 0; }
+.scan-kicker {
+  font-family: var(--display); font-weight: 700; font-size: 10.5px;
+  letter-spacing: .15em; text-transform: uppercase; color: var(--text-3);
+}
+.scan-title {
+  font-family: var(--display); font-weight: 800; font-size: 27px;
+  line-height: 1.08; letter-spacing: -.03em; margin-top: 6px;
+}
+.scan-title .hit { color: var(--orange); }
+.scan-sub { font-size: 13px; line-height: 1.48; color: var(--text-2); margin-top: 8px; }
+.scan-cta {
+  display: inline-flex; align-items: center; gap: 11px; margin-top: 12px;
+  background: var(--orange); color: #FFFFFF;
+  font-family: var(--display); font-weight: 800; font-size: 17.5px;
+  letter-spacing: -.01em; padding: 12px 22px; border-radius: 11px;
+}
+.scan-cta svg { width: 17px; height: 17px; flex: none; }
+.scan-terms {
+  display: block; margin-top: 9px; max-width: 4.1in;
+  font-size: 10.4px; line-height: 1.4; color: var(--text-3);
+}
+.scan-url {
+  display: block; margin-top: 10px;
+  font-family: var(--display); font-weight: 700; font-size: 13.5px;
+  letter-spacing: -.01em; color: var(--text-2);
+}
+
+/* ── Fine print ─────────────────────────────────────────────────────────── */
+.fineprint {
+  margin-top: 13px; padding-top: 11px; border-top: 1px solid var(--line-2);
+  display: flex; justify-content: space-between; gap: 18px;
+  font-size: 10.6px; line-height: 1.45; color: var(--text-3);
+}
+.fineprint b { color: var(--text-2); font-weight: 700; }
+
+/* Ink-saver variant: white field instead of the cream bleed. Everything else
+   is identical, so the two PDFs stay in visual sync. */
+/* Drop the cream field to white, and tint the cards instead — otherwise the
+   white-on-white panels survive only on their hairline border and the page
+   reads flat. Inverting the two keeps the same separation with far less ink. */
+body.ink-light { --bg: #FFFFFF; --surface: #F7F6F2; --inset: #FFFFFF; }
+</style>
+</head>
+<body class="__VARIANT__">
+<div class="page">
+  <div class="tricolor"></div>
+
+  <header class="masthead">
+    <span class="wordmark" aria-label="SEVA">
+      <span class="wm-s"><i class="ghost">S</i><i class="band b1">S</i><i class="band b2">S</i><i class="band b3">S</i></span><span class="wm-e">E</span><span class="wm-v">V</span><span class="wm-a">A</span>
+    </span>
+    <span class="masthead-tag">Digital SAT prep</span>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">You just walked out of the SAT</div>
+    <h1>
+      Everyone out here<br>
+      is <span class="muted">guessing.</span><br>
+      You <span class="hit">don&rsquo;t have to be.</span>
+    </h1>
+    <p class="dek">
+      Your score won&rsquo;t land for two weeks &mdash; and when it does, it is
+      <strong>a number, not a plan</strong>. SEVA turns the test you just took into one, tonight.
+    </p>
+  </section>
+
+  <section class="prep">
+    <h2 class="prep-h">How <span class="hit">SEVA</span> works</h2>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="step-n">1</span>
+        <span>
+          <b class="step-b">It names why you missed, question by question.</b>
+          <span class="step-v">Six kinds of mistake &mdash; a gap, a trap, a slip, the clock. You cannot fix &ldquo;I got it wrong.&rdquo;</span>
+        </span>
+      </li>
+      <li class="step">
+        <span class="step-n">2</span>
+        <span>
+          <b class="step-b">Your plan is built from that, not from a template.</b>
+          <span class="step-v">Week by week, biggest point-winners first. Prove a skill and it drops off; the next gap moves up.</span>
+        </span>
+      </li>
+      <li class="step">
+        <span class="step-n">3</span>
+        <span>
+          <b class="step-b">It drills those exact question types.</b>
+          <span class="step-v">2,200+ questions and 12 adaptive full-length tests, aimed at your gaps &mdash; not another worksheet.</span>
+        </span>
+      </li>
+      <li class="step">
+        <span class="step-n">4</span>
+        <span>
+          <b class="step-b">An AI tutor that already knows what you missed.</b>
+          <span class="step-v">Works the problem through with you at 11pm, without you having to explain yourself first.</span>
+        </span>
+      </li>
+    </ol>
+
+    <p class="bridge">
+      <b>More practice tests will not tell you why.</b> You can take five more and lose the
+      same points for the same reasons. Naming them is the part that moves your score.
+    </p>
+  </section>
+
+  <section class="scan">
+    <div class="qr-frame">__QR__</div>
+    <div class="scan-copy">
+      <div class="scan-kicker">Point your camera here</div>
+      <div class="scan-title">Find out <span class="hit">tonight.</span></div>
+      <p class="scan-sub">
+        One hour tonight. You finish knowing which skills cost you points today,
+        which mistakes were avoidable, and what to work on first.
+      </p>
+      <span class="scan-cta">Start free today
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+      <span class="scan-url">or go to <b style="color:var(--orange);font-weight:800;">sevaprep.com</b></span>
+      <!-- The card note rides with the offer, not in the footer. "Start free
+           today" without it is the promise that turns into a chargeback. -->
+      <span class="scan-terms">Free for 3 days. A card starts the trial; cancel before day 3.</span>
+    </div>
+  </section>
+
+  <footer class="fineprint">
+    <span>
+      <b>Best on a laptop.</b> Scan with your phone, then open SEVA on a full screen
+      &mdash; the same setup you take the real digital SAT on.
+    </span>
+    <span style="text-align:right; flex:none;">
+      SEVA &middot; sevaprep.com<br>Built for the Digital SAT
+    </span>
+  </footer>
+</div>
+</body>
+</html>

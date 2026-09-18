@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-009",
+  "question": "At a seabird colony, there were $320$ nesting pairs one year and $368$ nesting pairs the following year. By what percent did the number of nesting pairs increase from the first year to the second year?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$48\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$87\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$115\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the change in the number of pairs, $48$, as if it were a percent.",
+    "C": "computes $\\frac{320}{368} \\approx 0.87$, the original as a percent of the new value.",
+    "D": "computes $\\frac{368}{320} = 1.15$, the new value as a percent of the original, instead of the change."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent Change Basic**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The increase is $368 - 320 = 48$ pairs, and $\\frac{48}{320} = 0.15$, so $15\\%$.\n\n**The Full Solution:**\nStep 1: Percent increase $= \\frac{\\text{new} - \\text{original}}{\\text{original}} \\times 100\\%$.\nStep 2: The change is $368 - 320 = 48$, so the percent increase is $\\frac{48}{320} \\times 100\\% = 15\\%$.\nStep 3: Check: $15\\%$ of $320$ is $48$, and $320 + 48 = 368$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($48\\%$): reports the change in the number of pairs, $48$, as if it were a percent.\n* Choice C ($87\\%$): computes $\\frac{320}{368} \\approx 0.87$, the original as a percent of the new value.\n* Choice D ($115\\%$): computes $\\frac{368}{320} = 1.15$, the new value as a percent of the original, instead of the change.\n\n**Test Day Takeaway:** Percent change always divides the change by the original value. The ratio new/original gives the multiplier, not the percent change."
+}

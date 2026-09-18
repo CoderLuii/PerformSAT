@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-056",
+  "question": "A festival's paint crew primes a rectangular backdrop that measures $9$ feet by $16$ feet. The primer the crew uses is sold by the number of square yards it covers. How many square yards of backdrop surface must the primer cover?",
+  "correctAnswer": "16",
+  "explanation": "**SAT Pattern: Tile Area in Square Feet**\n\n**The correct answer is $16$.**\n\n**The Fast Way (~20s):** The backdrop is $9 \\times 16 = 144$ square feet, and $1$ square yard is $9$ square feet, so $\\frac{144}{9} = 16$ square yards.\n\n**The Full Solution:**\nStep 1: Find the area in square feet. $9 \\times 16 = 144$ square feet.\nStep 2: Convert the AREA unit. One yard is $3$ feet, so one square yard is $3 \\times 3 = 9$ square feet.\nStep 3: Divide and check. $\\frac{144}{9} = 16$ square yards. Converting the sides first agrees: $3$ yards by $\\frac{16}{3}$ yards is $16$ square yards. ✓\n\n**Common Mistakes:**\n* Dividing by $3$ gives $48$, which converts a length rather than an area.\n* Multiplying by $9$ gives $1{,}296$, which converts square yards to square feet — the wrong direction.\n* Answering $144$ reports the area in square feet, the unit the question asks you to leave.\n\n**Test Day Takeaway:** Length converts with $3$, area with $3^2 = 9$, volume with $3^3 = 27$. Square the conversion factor whenever the unit is squared."
+}

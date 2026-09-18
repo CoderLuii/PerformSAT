@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-349",
+  "question": "An air-quality analyst multiplies each of the $12$ recorded ozone concentrations in a data set by $3$ to report them on a different index. Which statement correctly describes the mean and the standard deviation of the reported values?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mean is unchanged and the standard deviation is $3$ times the original standard deviation."
+    },
+    {
+      "id": "B",
+      "text": "The mean is $3$ times the original mean and the standard deviation is $3$ times the original standard deviation."
+    },
+    {
+      "id": "C",
+      "text": "The mean is $3$ times the original mean and the standard deviation is unchanged."
+    },
+    {
+      "id": "D",
+      "text": "Both the mean and the standard deviation are unchanged."
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats multiplication like the addition of a constant for the mean, which would leave the center fixed",
+    "C": "assumes spread never responds to scaling, which is true for a shift but not for a multiplier",
+    "D": "assumes the report is only a relabeling, so neither the center nor the spread changes"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Scaling a Data Set**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Multiplying every value by $3$ multiplies both the center and the spread by $3$.\n\n**The Full Solution:**\nStep 1: Track the mean. If every concentration is tripled, the total is tripled, and the total divided by $12$ is tripled as well, so the mean is $3$ times the original.\nStep 2: Track the spread. Each deviation from the mean is also tripled, so the standard deviation is $3$ times the original.\nStep 3: Sanity-check with two values. Concentrations of $10$ and $20$ have mean $15$; tripled they are $30$ and $60$, with mean $45 = 3 \\times 15$ and a gap of $30$ instead of $10$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (mean unchanged): holds the center fixed, which happens when a constant is added and then removed, not when every value is multiplied.\n* Choice C (standard deviation unchanged): is what a SHIFT does. A multiplier stretches every distance from the mean.\n* Choice D (both unchanged): would require the values themselves to be unchanged.\n\n**Test Day Takeaway:** Multiplying every value by $c$ multiplies the mean by $c$ and the standard deviation by $|c|$; ADDING a constant moves the mean and leaves the spread alone."
+}

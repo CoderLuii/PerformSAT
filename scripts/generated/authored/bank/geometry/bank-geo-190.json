@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-190",
+ "question": "A banner shop cuts a triangular bunting flag whose area, in square centimeters, is $6x^2+15x$ and whose hanging edge measures $3x$ centimeters. Which expression gives the flag's height, in centimeters, measured perpendicular to that edge?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2x+5$"
+  },
+  {
+   "id": "B",
+   "text": "$4x+10$"
+  },
+  {
+   "id": "C",
+   "text": "$8x+20$"
+  },
+  {
+   "id": "D",
+   "text": "$12x+30$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the area by the base but never doubles, giving A/b instead of 2A/b",
+  "C": "doubles the correct height a second time",
+  "D": "doubles the area and divides by x alone, dropping the factor of 3 in the base"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Symbolic Area or Volume**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** From $A=\\frac{1}{2}bh$, $h=\\frac{2A}{b}=\\frac{2(6x^2+15x)}{3x}=\\frac{12x^2+30x}{3x}=4x+10$.\n\n**The Full Solution:**\n\nStep 1 — Start from the triangle area formula $A=\\frac{1}{2}bh$ and solve for the height: $h=\\frac{2A}{b}$.\n\nStep 2 — Substitute: $h=\\frac{2(6x^2+15x)}{3x}=\\frac{12x^2+30x}{3x}$.\n\nStep 3 — Divide term by term: $\\frac{12x^2}{3x}+\\frac{30x}{3x}=4x+10$ centimeters. Check with $x=1$: the area is $21$, the base is $3$, and $\\frac{1}{2}(3)(14)=21$ with $h=4(1)+10=14$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2x+5$): this computes $\\frac{A}{b}$ and never doubles, so it is exactly half the height.\n* Choice C ($8x+20$): this doubles the height a second time.\n* Choice D ($12x+30$): this divides $2A$ by $x$ instead of by $3x$.\n\n**Test Day Takeaway:** Solving $A=\\frac{1}{2}bh$ for a side always brings a factor of $2$ upstairs — write $h=\\frac{2A}{b}$ before substituting."
+}

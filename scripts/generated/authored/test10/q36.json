@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 2,
- "passage": "Charles Darwin is remembered for his work on evolution, but the last book he published, in 1881, was about earthworms. Over decades of patient observation in his own garden, Darwin measured how much soil worms brought to the surface as castings and calculated that, across a field, they could bury a layer of stones or ash under several inches of fresh soil within a few decades. Far from being lowly and insignificant, he argued, earthworms were among the most important agents shaping the fertile upper layer of the land, slowly turning and aerating the soil on which agriculture depends. What looked like the trivial activity of a humble animal was, in his account, a geological force operating everywhere underfoot.",
+ "passage": "By the early twentieth century, the builders who had supplied birch-bark canoes to the fur trade were nearly gone, and the craft's particulars, how a hull was shaped without molds, how ribs were bent to set its lines, how forms differed from one river system to the next, survived mostly in scattered memory. The artist and journalist Edwin Tappan Adney spent decades interviewing elderly builders, measuring surviving canoes, and constructing precise scale models of more than a hundred regional types. His notes and models, later assembled into a standard reference, preserved distinctions among building traditions that no museum's handful of full-sized canoes could document on its own.",
  "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "Darwin's 1881 book on earthworms was the last work he published before his death."
+   "text": "Birch-bark canoes were better suited to the fur trade's routes than the wooden boats that eventually replaced them."
   },
   {
    "id": "B",
-   "text": "Over many years, Darwin carefully measured the amount of soil that earthworms bring up to the surface as castings in the beds of his own garden."
+   "text": "Adney built scale models because full-sized birch-bark canoes had become too fragile to measure directly."
   },
   {
    "id": "C",
-   "text": "Darwin is far better known for his work on evolution than for his late study of earthworms."
+   "text": "The fur trade declined in part because the builders who supplied its canoes could no longer be found in sufficient numbers."
   },
   {
    "id": "D",
-   "text": "Darwin argued that earthworms, often dismissed as insignificant, are in fact a major force continually building and renewing the fertile upper layer of soil."
+   "text": "Adney's decades of records preserved regional canoe-building knowledge that was otherwise close to disappearing."
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The passage moves from Darwin's patient measurements toward his central claim: that earthworms, far from being trivial, are among the most important agents shaping and renewing the fertile topsoil—a geological force operating everywhere underfoot. Choice D states that argument. Choice A reports a biographical fact about the book's timing. Choice B describes the method (measuring castings) rather than the conclusion. Choice C notes his relative fame, which the passage mentions only to set up the surprise of the earthworm work."
+ "explanation": "**Choice D is correct.** The text's arc runs from knowledge at the point of vanishing, builders nearly gone, particulars surviving \"in scattered memory\", to Adney's decades of documentation, to the payoff: distinctions preserved that would otherwise have been lost. D states that arc.\n\n**The Full Solution:**\n- Sentence one establishes the stakes: the craft's specifics were about to disappear with the last builders.\n- Sentences two and three describe the rescue: interviews, measurements, over a hundred scale models, gathered into a standard reference that documents what surviving artifacts alone could not.\n\n**Why the other choices are wrong:**\n- A: The text never compares canoes with the boats that replaced them.\n- B: The text says the models documented regional distinctions; it never attributes them to the fragility of full-sized canoes.\n- C: The text describes the builders' disappearance as following the trade's era, not as a cause of the trade's decline."
 }

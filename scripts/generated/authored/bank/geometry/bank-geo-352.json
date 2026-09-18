@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-352",
+ "question": "A drone's circular no-fly zone above a resort is modeled in the $xy$-plane by $(x-3)^2+(y+2)^2=25$, with coordinates in kilometers. A straight service road follows the line $x=k$ and meets the zone at exactly one point. If $k>0$, what is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the other vertical tangent, x = 3 - 5 = -2, ignoring the condition k > 0",
+  "B": "reports the center's x-coordinate rather than a tangent line",
+  "C": "reports the radius 5 instead of the tangent line's x-value"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Tangent Line to a Circle**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The circle is centered at $(3,-2)$ with radius $5$, so the vertical tangents are $x=3\\pm 5$, and the positive one is $x=8$.\n\n**The Full Solution:**\n\nStep 1 — Read the circle: $(x-3)^2+(y+2)^2=25$ has center $(3,-2)$ and radius $\\sqrt{25}=5$.\n\nStep 2 — A vertical line $x=k$ touches the circle at exactly one point when its distance from the center equals the radius, so $|k-3|=5$.\n\nStep 3 — Solve: $k-3=5$ or $k-3=-5$, giving $k=8$ or $k=-2$. Since $k>0$, $k=8$. Check: substituting $x=8$ gives $25+(y+2)^2=25$, so $y=-2$ is the only solution — exactly one point.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-2$): this is the other vertical tangent and violates $k>0$.\n* Choice B ($3$): this is the center's $x$-coordinate, a line that cuts the circle in two points.\n* Choice C ($5$): this reports the radius rather than a location.\n\n**Test Day Takeaway:** A vertical tangent sits one radius left or right of the center — read the center and radius straight off the standard form."
+}

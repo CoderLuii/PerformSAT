@@ -1,31 +1,31 @@
 {
-  "id": 1210,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "The Global Positioning System works by precise timing: a receiver finds its location by comparing when signals leave several satellites and when they arrive. Because the satellites carry atomic clocks while users stand on the ground, the system's designers had to reckon with a prediction of Einstein's relativity. A clock in orbit, where gravity is weaker and the satellite moves quickly, does not tick at quite the same rate as a clock on the ground. The difference is tiny—microseconds a day—but in a system that turns timing into distance, an uncorrected error would pile up fast, throwing positions off by miles within hours. To keep the system accurate, engineers set the satellites' clock rates so that, once in orbit, they stay in step with clocks below.",
-  "question": "According to the text, why must the designers of the Global Positioning System adjust the rate of the satellites' onboard clocks?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Because the satellites' onboard atomic clocks gradually drift out of accuracy as their delicate electronic components slowly age over the many years of an orbital mission."
-    },
-    {
-      "id": "B",
-      "text": "Because the radio signals broadcast by the satellites travel too slowly to reach distant ground receivers on time."
-    },
-    {
-      "id": "C",
-      "text": "Because relativity makes the orbiting clocks tick at a different rate than clocks on the ground, and an uncorrected gap would spoil position fixes."
-    },
-    {
-      "id": "D",
-      "text": "Because the ground stations cannot keep time nearly as precisely as the atomic clocks the satellites carry aloft."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage explains that an orbiting clock, subject to weaker gravity and high speed, ticks at a slightly different rate than a clock on the ground, and that in a system which converts timing into distance even a microsecond-scale error would accumulate into position errors of miles. C names exactly that relativistic rate difference and the harm of leaving it uncorrected. A blames aging electronics, which the passage never mentions. B claims the signals travel too slowly, contradicting the text's account of precise timing. D says ground clocks are less precise than the satellites', which the passage does not claim and which is not the reason it gives for the adjustment."
+ "id": 1210,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "Along the Atlantic coast of North America, farmers once cut hay from the salt marshes every summer, prizing the salt-tolerant grasses as feed and bedding for livestock. Harvesting a marsh, however, meant working land the sea still claimed twice a day. Farmers mowed at low tide, and they did not leave the cut hay lying where it fell: they stacked it on staddles, clusters of wooden posts driven into the mud that held each haystack several feet above the surface. Perched there, the hay stayed dry while the tides washed beneath it, and it could wait for weeks until the ground froze hard enough for wagons or sleds to cross the soft marsh and carry it home.",
+ "question": "According to the text, why did farmers stack salt hay on staddles rather than leave it on the marsh?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Because hay left lying on the open marsh attracted wandering livestock that would have scattered and trampled the stacks."
+  },
+  {
+   "id": "B",
+   "text": "Because raised stacks could be loaded directly onto boats at high tide far more easily than hay lying loose on the ground."
+  },
+  {
+   "id": "C",
+   "text": "Because the raised platforms kept the hay dry and above the reach of the tides that regularly covered the marsh surface."
+  },
+  {
+   "id": "D",
+   "text": "Because the tall stacks could be seen from a distance and so marked the boundaries of each farmer's section of the marsh."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage states the reason directly: the marsh was land \"the sea still claimed twice a day,\" and on the staddles \"the hay stayed dry while the tides washed beneath it.\"\n\n**The Full Solution:**\n- The problem the passage sets up is tidal flooding — a marsh is covered by the sea twice daily.\n- The staddles answer that problem: posts held each haystack \"several feet above the surface,\" so the tides passed under the hay instead of soaking it.\n- The elevation also let the hay wait safely for weeks until frozen ground made hauling possible. Choice C restates exactly this.\n\n**Why the other choices are wrong:**\n- A: The passage never mentions livestock reaching the marsh — animals appear only as the eventual consumers of the hay.\n- B: It invents loading by boat; the text says the hay left the marsh by wagon or sled once the ground froze.\n- D: It invents a boundary-marking function that appears nowhere in the passage."
 }

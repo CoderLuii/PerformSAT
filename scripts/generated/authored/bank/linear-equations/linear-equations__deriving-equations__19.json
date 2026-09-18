@@ -1,0 +1,30 @@
+{
+ "id": 19,
+ "question": "A linear model $M(t) = at + b$ gives the mass, in grams, of nickel deposited on a part after $t$ seconds in an electroplating bath. The model gives $32$ grams at $5$ seconds and $72$ grams at $15$ seconds. For what value of $t$ does the model give $100$ grams?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$17$"
+  },
+  {
+   "id": "B",
+   "text": "$22$"
+  },
+  {
+   "id": "C",
+   "text": "$25$"
+  },
+  {
+   "id": "D",
+   "text": "$28$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes b = 32, the mass at 5 seconds, as the value at t = 0 and solves 4t + 32 = 100",
+  "C": "drops the constant term and solves 4t = 100",
+  "D": "adds the constant term instead of subtracting it, computing (100 + 12)/4"
+ },
+ "correctAnswer": "B",
+ "hint": "Two points determine both $a$ and $b$ before you solve for $t$.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~60s):** The rate is $\\frac{72-32}{15-5} = 4$ grams per second and $b = 32 - 4(5) = 12$, so $4t + 12 = 100$ gives $t = 22$.\n\n**The Full Solution:**\nStep 1: The two given points are $(5,\\ 32)$ and $(15,\\ 72)$, so $a = \\frac{72 - 32}{15 - 5} = \\frac{40}{10} = 4$ grams per second.\nStep 2: Substituting $(5,\\ 32)$ into $M(t) = 4t + b$ gives $32 = 20 + b$, so $b = 12$ grams.\nStep 3: Setting $4t + 12 = 100$ gives $4t = 88$, so $t = 22$ seconds.\n\nCheck: $M(22) = 4(22) + 12 = 88 + 12 = 100$ grams. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($17$): treats the $32$ grams at $5$ seconds as the value at $t = 0$ and solves $4t + 32 = 100$.\n* Choice C ($25$): drops the constant term entirely and solves $4t = 100$.\n* Choice D ($28$): adds the constant term instead of subtracting it, computing $\\frac{100 + 12}{4}$.\n\n**Test Day Takeaway:** Build the whole model before you invert it; a missing constant term shifts every answer."
+}

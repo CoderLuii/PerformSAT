@@ -1,0 +1,29 @@
+{
+ "question": "The stilling well of a tide gauge is a cylinder with an inside diameter of $24$ centimeters. When the water inside rises $15$ centimeters, by how many cubic centimeters does the volume of water increase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$180\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$720\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$2160\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$8640\\pi$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "multiplies the radius by the rise without squaring, 12 times 15",
+  "B": "applies the cone factor of one third, giving 144 times 15 divided by 3",
+  "D": "uses the 24-centimeter diameter as the radius, 576 times 15"
+ },
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The radius is $12$ centimeters, so a $15$-centimeter rise adds $\\pi(144)(15) = 2160\\pi$ cubic centimeters.\n\n**The Full Solution:**\nStep 1: The inside diameter is $24$ centimeters, so the radius is $r = 12$ centimeters.\nStep 2: The added water is a cylinder of the same radius whose height is the $15$-centimeter rise.\nStep 3: Its volume is $\\pi(12)^2(15) = \\pi(144)(15) = 2160\\pi$ cubic centimeters. Check: the cross-section is $144\\pi$ square centimeters, and $144\\pi \\times 15 = 2160\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($180\\pi$): multiplies the radius by the rise without squaring the radius.\n* Choice B ($720\\pi$): divides by $3$, applying the cone formula to a cylinder of water.\n* Choice D ($8640\\pi$): uses the diameter as the radius, quadrupling the cross-section.\n\n**Test Day Takeaway:** A rise in a cylinder adds a cylinder — same radius, height equal to the rise.",
+ "id": "bank-geo-295"
+}

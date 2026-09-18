@@ -1,0 +1,53 @@
+{
+  "id": "bank-ps-030",
+  "question": "The table shows the number of credits and the grade points for each of three courses a student completed. The student's grade point average for these courses is the mean of the grade points weighted by credits. If the student's grade point average for these courses is $3.32$, what is the value of $x$?",
+  "questionTable": {
+    "headers": [
+      "Course",
+      "Credits",
+      "Grade points"
+    ],
+    "rows": [
+      [
+        "Biology",
+        "4",
+        "3.5"
+      ],
+      [
+        "Chemistry",
+        "3",
+        "x"
+      ],
+      [
+        "Statistics",
+        "3",
+        "3.0"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2.55$"
+    },
+    {
+      "id": "B",
+      "text": "$3.32$"
+    },
+    {
+      "id": "C",
+      "text": "$3.4$"
+    },
+    {
+      "id": "D",
+      "text": "$3.46$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the missing $10.2$ weighted points by $4$ (Biology's credits) instead of by Chemistry's $3$ credits.",
+    "B": "assumes the unknown course simply equals the overall average; with unequal weights and unequal grades, it does not.",
+    "D": "ignores the credits and solves $\\frac{3.5 + x + 3.0}{3} = 3.32$, which treats all three courses as equally weighted."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Weighted Average by Credits**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Total credits $= 10$, so total weighted points $= 10 \\times 3.32 = 33.2$. Biology and Statistics contribute $4(3.5) + 3(3.0) = 23$, so $3x = 10.2$ and $x = 3.4$.\n\n**The Full Solution:**\nStep 1: A credit-weighted GPA is $\\frac{\\sum(\\text{credits} \\times \\text{grade points})}{\\sum \\text{credits}}$. Total credits $= 4 + 3 + 3 = 10$.\nStep 2: Set up the equation: $\\frac{4(3.5) + 3x + 3(3.0)}{10} = 3.32$, so $14 + 3x + 9 = 33.2$ and $3x = 10.2$.\nStep 3: $x = 3.4$. Check: $\\frac{14 + 10.2 + 9}{10} = \\frac{33.2}{10} = 3.32$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.55$): divides the missing $10.2$ weighted points by $4$ (Biology's credits) instead of by Chemistry's $3$ credits.\n* Choice B ($3.32$): assumes the unknown course simply equals the overall average; with unequal weights and unequal grades, it does not.\n* Choice D ($3.46$): ignores the credits and solves $\\frac{3.5 + x + 3.0}{3} = 3.32$, which treats all three courses as equally weighted.\n\n**Test Day Takeaway:** When the weighted mean is given and one value is missing, multiply the mean by the total weight to get the total, subtract the known contributions, and divide by the missing value's OWN weight."
+}

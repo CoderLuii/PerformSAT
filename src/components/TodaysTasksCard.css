@@ -310,3 +310,12 @@
     font-size: 19px;
   }
 }
+
+/* "Why this is on YOUR plan" evidence line (Phase 3, Living Study Plan) */
+.ttc-activity-because {
+  font-style: italic;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #6b6b6b;
+  margin-top: 2px;
+}

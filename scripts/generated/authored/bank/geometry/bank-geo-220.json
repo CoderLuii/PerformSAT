@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-220",
+ "question": "A cable-car station displays a triangular safety placard similar to the smaller card handed to riders. The card has a base of $8$ centimeters and a height of $5$ centimeters, and the placard has a base of $40$ centimeters. What is the height, in centimeters, of the placard?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$25$"
+  },
+  {
+   "id": "B",
+   "text": "$37$"
+  },
+  {
+   "id": "C",
+   "text": "$40$"
+  },
+  {
+   "id": "D",
+   "text": "$200$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "adds the base difference 40 - 8 = 32 to the height instead of scaling: 5 + 32 = 37",
+  "C": "builds the factor from a base over a height, 40/5 = 8, then multiplies: 5 x 8 = 40",
+  "D": "multiplies the height by the placard's base: 5 x 40 = 200"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The bases give a scale factor of $\\frac{40}{8}=5$, so the height is $5(5)=25$ centimeters.\n\n**The Full Solution:**\n\nStep 1 — Pair the matching parts. Base pairs with base and height pairs with height, so $\\frac{40}{8}=\\frac{h}{5}$.\n\nStep 2 — Find the scale factor: $\\frac{40}{8}=5$.\n\nStep 3 — Solve for the height: $h=5(5)=25$ centimeters. Check: $\\frac{25}{5}=5$, the same factor the bases show.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($37$): this adds the base difference $40-8=32$ to the height; similar figures scale by multiplication.\n* Choice C ($40$): this builds the factor from a base and a height, $\\frac{40}{5}=8$, mixing parts that do not correspond.\n* Choice D ($200$): this multiplies the height by the placard's base rather than by the scale factor.\n\n**Test Day Takeaway:** A scale factor must come from two corresponding parts — base with base, height with height."
+}

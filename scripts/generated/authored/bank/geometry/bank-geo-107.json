@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-107",
+ "question": "A syringe stand's brace is right triangle $XYZ$ shown, with the right angle at $Y$ and every length in centimeters. What is the value of $\\cos(\\angle X)$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     12,
+     0
+    ],
+    [
+     12,
+     9
+    ]
+   ],
+   "labels": [
+    "X",
+    "Y",
+    "Z"
+   ],
+   "sideLabels": [
+    "12",
+    "9",
+    "15"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3}{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{4}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{4}{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives sin(X) = 9/15 = 3/5, using the opposite leg",
+  "B": "gives tan(X) = 9/12 = 3/4",
+  "D": "inverts tan(X), dividing the adjacent leg by the opposite leg"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: SOH-CAH-TOA in a 3-4-5 Triangle**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The sides $9$, $12$, $15$ are a $3$-$4$-$5$ triangle tripled; cosine is adjacent over hypotenuse, so $\\cos(\\angle X)=\\frac{12}{15}=\\frac{4}{5}$.\n\n**The Full Solution:**\n\nStep 1 — The right angle sits at $Y$, so $\\overline{ZX}=15$ centimeters is the hypotenuse.\n\nStep 2 — The leg adjacent to $\\angle X$ is $\\overline{XY}=12$ centimeters, and the leg opposite is $\\overline{YZ}=9$ centimeters.\n\nStep 3 — Apply CAH: $\\cos(\\angle X)=\\frac{12}{15}=\\frac{4}{5}$. Check: $9^2+12^2=81+144=225=15^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{3}{5}$): this is $\\sin(\\angle X)=\\frac{9}{15}$, built from the opposite leg.\n* Choice B ($\\frac{3}{4}$): this is $\\tan(\\angle X)=\\frac{9}{12}$, leaving the hypotenuse out entirely.\n* Choice D ($\\frac{4}{3}$): this flips $\\tan(\\angle X)$, dividing $12$ by $9$.\n\n**Test Day Takeaway:** In any $3$-$4$-$5$ triangle the three ratios are $\\frac{3}{5}$, $\\frac{4}{5}$, and $\\frac{3}{4}$ — knowing which is which saves the whole computation."
+}

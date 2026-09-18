@@ -1,0 +1,57 @@
+{
+ "id": 11,
+ "question": "The graph shows the length $y$, in meters, of fabric remaining on a bolt after $x$ garment panels have been cut from it. A second bolt starts with $60$ meters and loses fabric at the same rate per panel. Which equation gives the length $y$ remaining on the second bolt after $x$ panels?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -4,
+   "yIntercept": 24,
+   "xRange": [
+    0,
+    6
+   ],
+   "yRange": [
+    0,
+    24
+   ],
+   "xTickInterval": 1,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     0,
+     24
+    ],
+    [
+     6,
+     0
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -6x + 60$"
+  },
+  {
+   "id": "B",
+   "text": "$y = -4x + 24$"
+  },
+  {
+   "id": "C",
+   "text": "$y = -4x + 60$"
+  },
+  {
+   "id": "D",
+   "text": "$y = 4x + 60$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the graph's x-intercept, 6 panels, as the rate instead of the 4 meters lost per panel",
+  "B": "keeps the graphed bolt's starting length of 24 meters instead of the second bolt's 60",
+  "D": "drops the negative sign, describing fabric that grows as panels are cut"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Slope-Intercept Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The graph falls from $24$ meters at $x = 0$ to $0$ at $x = 6$, a rate of $-4$ meters per panel; keep that slope and swap the intercept to $60$.\n\n**The Full Solution:**\nStep 1: Read the slope from the graph. The line passes through $(0, 24)$ and $(6, 0)$, so the slope is $\\frac{0 - 24}{6 - 0} = -4$ meters of fabric per panel cut.\nStep 2: In $y = mx + b$, the slope $m$ is the rate per panel and the intercept $b$ is the length the bolt starts with. The second bolt is cut at the same rate, so $m = -4$ again, but it starts with $60$ meters, so $b = 60$.\nStep 3: The equation is $y = -4x + 60$. Check: at $x = 0$ the bolt holds $60$ meters, and after $15$ panels $y = -4(15) + 60 = 0$, which is $2.5$ times the $6$ panels the shorter bolt supplied — exactly what $2.5$ times the length should give. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -6x + 60$): takes $6$, the number of panels the graphed bolt supplied, as the rate. That $6$ is an $x$-intercept, not a slope.\n* Choice B ($y = -4x + 24$): reads the correct slope but copies the graphed bolt's starting length of $24$ meters instead of the $60$ meters the question specifies.\n* Choice D ($y = 4x + 60$): drops the negative sign, giving a bolt that gains fabric as panels are cut.\n\n**Test Day Takeaway:** A rate read from a graph travels to a new scenario; the intercept usually does not. Change only the quantity the new sentence changes, and check the sign against whether the quantity is growing or shrinking."
+}

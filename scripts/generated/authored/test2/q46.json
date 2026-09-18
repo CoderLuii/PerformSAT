@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 2,
-  "passage": "A conservator preparing a centuries-old painting for exhibition has to draw on three very different bodies of knowledge: chemistry, which identifies the original pigments, binders, and ______ art history, which establishes how the finished surface would once have looked; and traditional craft, which guides repairs subtle enough to be reversed later without harm to the work.",
+  "passage": "The steelpan, the national instrument of Trinidad and Tobago, emerged in the late 1930s from discarded oil barrels. The instrument's playing ______ is hammered into a concave bowl and divided into dozens of note sections, each tuned to a precise pitch, and full ensembles perform everything from calypso to symphonic arrangements.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "varnishes,"
+      "text": "surface, cut from the end of a barrel"
     },
     {
       "id": "B",
-      "text": "varnishes;"
+      "text": "surface, cut from the end of a barrel,"
     },
     {
       "id": "C",
-      "text": "varnishes"
+      "text": "surface cut from the end of a barrel,"
     },
     {
       "id": "D",
-      "text": "varnishes:"
+      "text": "surface cut from the end of a barrel"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The sentence lists three bodies of knowledge, and because each item already contains internal commas, the major items must be separated by semicolons; the blank ends the first item (\"chemistry, which identifies the original pigments, binders, and varnishes\") and so needs a semicolon before \"art history.\" Choice A uses a comma, which blends into the internal commas and blurs where one major item stops and the next begins. Choice C supplies no mark, fusing the first item into the second. Choice D uses a colon, but a colon introduces an explanation or list and cannot serve as a separator between parallel items in mid-series."
+  "explanation": "**Choice B is correct.** \"Cut from the end of a barrel\" is a supplementary (nonessential) phrase interrupting the clause \"The instrument's playing surface... is hammered,\" and such a phrase must be enclosed by a pair of commas — one before and one after.\n\n**The Full Solution:**\n- Test whether the phrase is essential: \"The instrument's playing surface\" already identifies a unique thing, so \"cut from the end of a barrel\" adds information without narrowing the reference — it is nonessential.\n- Nonessential elements set inside a sentence take paired punctuation; removing the phrase along with its commas leaves a clean sentence: \"The instrument's playing surface is hammered into a concave bowl...\"\n- Only choice B supplies both the opening and the closing comma.\n\n**Why the other choices are wrong:**\n- A: It opens the pair but never closes it, letting the supplementary phrase crash into the verb \"is hammered.\"\n- C: It closes a pair that was never opened, stranding a lone comma after \"barrel\" as if the phrase were essential on one side and supplementary on the other.\n- D: With no commas, the phrase reads as essential — as though the sentence must distinguish this playing surface from others not cut from barrels, a contrast the passage does not intend."
 }

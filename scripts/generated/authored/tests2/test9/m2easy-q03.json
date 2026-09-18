@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "During a concert load-in, the number of speaker cases $c$ moved by one crew satisfies $5c + 8 = 68$. What is the value of $5c + 20$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$60$"
+  },
+  {
+   "id": "C",
+   "text": "$68$"
+  },
+  {
+   "id": "D",
+   "text": "$80$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves for c = 12 and reports the number of cases instead of 5c + 20",
+  "B": "stops at 5c = 60 and forgets to add 20",
+  "C": "copies the given 68, treating 5c + 20 as unchanged"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice D is correct.** The expression $5c + 20$ is exactly $12$ more than the expression $5c + 8$, whose value is given.\n\n**The Fast Way (~10s):** $20$ is $12$ more than $8$, so $5c + 20 = 68 + 12 = 80$.\n\n**The Full Solution:**\nStep 1: From $5c + 8 = 68$, subtract $8$ from both sides: $5c = 60$.\nStep 2: Substitute that block into the requested expression: $5c + 20 = 60 + 20$.\nStep 3: $5c + 20 = 80$. Check: $5c = 60$ gives $c = 12$, and $5(12) + 8 = 68$ matches the given equation, while $5(12) + 20 = 80$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): solves all the way down to $c = 12$ and reports the number of cases. The question asks for the value of an expression, not for $c$.\n* Choice B ($60$): stops at $5c = 60$ and never adds the $20$.\n* Choice C ($68$): copies the given value, as if changing $+8$ to $+20$ left the expression alone.\n\n**Test Day Takeaway:** When a question gives one expression's value and asks for a shifted version of it, compare the two expressions directly — solving for the variable is legal but slower."
+}

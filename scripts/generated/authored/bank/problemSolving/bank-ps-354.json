@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-354",
+  "question": "A lighting designer's log of $9$ cue durations has a mean of $42$ seconds and a median of $40$ seconds. Each duration is doubled and then increased by $3$ seconds to build a rehearsal schedule. What is the mean, in seconds, of the scheduled durations?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$45$"
+    },
+    {
+      "id": "B",
+      "text": "$83$"
+    },
+    {
+      "id": "C",
+      "text": "$87$"
+    },
+    {
+      "id": "D",
+      "text": "$90$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds 3 to the mean but never doubles it: 42 + 3 = 45",
+    "B": "transforms the median instead of the mean: 2(40) + 3 = 83",
+    "D": "adds the 3 before doubling: 2(42 + 3) = 90, applying the operations in the wrong order"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Scaling a Data Set**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Doubling doubles the mean and adding $3$ adds $3$: $2(42) + 3 = 87$ seconds.\n\n**The Full Solution:**\nStep 1: Handle the multiplier. Doubling every duration doubles the mean: $2 \\times 42 = 84$ seconds.\nStep 2: Handle the shift. Adding $3$ seconds to every duration adds $3$ to the mean: $84 + 3 = 87$ seconds.\nStep 3: Check with the totals. The $9$ durations total $9 \\times 42 = 378$ seconds; the scheduled durations total $2(378) + 9(3) = 783$, and $\\frac{783}{9} = 87$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($45$): adds $3$ but skips the doubling.\n* Choice B ($83$): uses the median, $40$, in place of the mean: $2(40) + 3 = 83$. The question asks for the mean.\n* Choice D ($90$): computes $2(42 + 3)$, adding the $3$ before doubling. The schedule doubles first, so the $3$ is added only once.\n\n**Test Day Takeaway:** Under $y = ax + b$ the mean transforms the same way a single value does: $a(\\text{mean}) + b$, in that order."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "On a coating line, one applicator uses $0.6$ gram of primer per part plus $45$ grams for setup, and a second applicator uses $0.85$ gram per part with no setup. The two applicators use the same total mass of primer for a run of $n$ parts. What is that total mass, in grams?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$90$"
+  },
+  {
+   "id": "B",
+   "text": "$108$"
+  },
+  {
+   "id": "C",
+   "text": "$153$"
+  },
+  {
+   "id": "D",
+   "text": "$180$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the 45-gram setup by 0.6 instead of by the 0.25-gram-per-part difference, getting 75 parts, then adds the setup",
+  "B": "multiplies the correct run of 180 parts by 0.6 but leaves out the 45-gram setup mass",
+  "D": "reports the number of parts in the run instead of the mass of primer"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The second applicator gains $0.25$ gram per part on the first, so it needs $45 \\div 0.25 = 180$ parts to make up the setup; $0.85(180) = 153$ grams.\n\n**The Full Solution:**\nStep 1: Write both totals for a run of $n$ parts: $0.6n + 45$ grams and $0.85n$ grams.\nStep 2: Set them equal and solve: $0.6n + 45 = 0.85n$, so $45 = 0.25n$ and $n = 180$ parts.\nStep 3: The question asks for the mass, not the run: $0.6(180) + 45 = 108 + 45 = 153$ grams. Check the other applicator: $0.85(180) = 153$ grams ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($90$): divides $45$ by $0.6$ to get $75$ parts; the setup is made up at the RATE DIFFERENCE of $0.25$ gram per part, not at one applicator's rate.\n* Choice B ($108$): computes $0.6(180)$ and forgets the $45$ grams of setup that are part of the first applicator's total.\n* Choice D ($180$): the number of parts in the run — the value of $n$, which is the step before the answer.\n\n**Test Day Takeaway:** After solving an equal-cost equation, reread the question: the variable you solved for is usually not the quantity being asked for."
+}

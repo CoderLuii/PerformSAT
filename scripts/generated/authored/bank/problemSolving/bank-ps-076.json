@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-076",
+  "question": "The mean mass of $9$ packages on a delivery truck is $22$ kilograms. What is the total mass, in kilograms, of the $9$ packages?",
+  "correctAnswer": "198",
+  "explanation": "**SAT Pattern: Mean from List**\n\n**The correct answer is $198$.**\n\n**The Fast Way (~5s):** Total $=$ mean $\\times$ count $= 22 \\times 9 = 198$ kilograms.\n\n**The Full Solution:**\nStep 1: The mean is defined as $\\frac{\\text{total}}{\\text{count}}$, so $\\frac{\\text{total}}{9} = 22$.\nStep 2: Multiply both sides by $9$: total $= 22 \\times 9 = 198$.\nStep 3: Check: $\\frac{198}{9} = 22$. $\\checkmark$\n\n**Common Mistakes:** Dividing instead of multiplying, $\\frac{22}{9} \\approx 2.4$; or adding, $22 + 9 = 31$, neither of which undoes the division in the definition of the mean.\n\n**Test Day Takeaway:** Mean $\\times$ count $=$ total is the single relationship behind every \"mean of a list\" question; rearrange it for whichever quantity is missing."
+}

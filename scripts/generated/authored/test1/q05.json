@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
  "module": 1,
- "passage": "Paleobotanist Else Marie Friis studies fossilized flowers preserved as tiny three-dimensional fragments of charcoal. For most of the twentieth century, researchers assumed that the earliest flowering plants must have been large and showy, like many familiar blossoms today. Examining hundreds of millimeter-scale fossils from Cretaceous rock, Friis and her colleagues found instead that the oldest flowers were minute, simple, and structurally modest. They argue that the conspicuous flowers people picture as typical evolved much later, and that the group's earliest success owed nothing to size or display.",
- "question": "Which choice best describes the overall structure of the text?",
+ "passage": "Johannes Vermeer's Girl with a Pearl Earring (c. 1665) has been studied by generations of art historians, but in 2018 a research team at the Mauritshuis museum examined the painting with instruments rather than eyes alone. Using macro X-ray fluorescence scanning and other noninvasive imaging techniques, the team mapped the painting layer by layer without touching its surface. The scans revealed details invisible in the finished work: delicate eyelashes around the girl's eye and a folded green curtain in what now appears to be an empty dark background.",
+ "question": "Which choice best states the main purpose of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "It presents a long-standing assumption about early flowers and then surveys several competing explanations for how that assumption first arose."
+   "text": "To argue that Girl with a Pearl Earring has been misinterpreted by generations of art historians"
   },
   {
    "id": "B",
-   "text": "It describes a fossil-collecting technique and then explains why other researchers have found that technique difficult to reproduce."
+   "text": "To describe how noninvasive imaging revealed previously unseen features of a well-known painting"
   },
   {
    "id": "C",
-   "text": "It introduces a widely held assumption about early flowering plants, presents fossil evidence that contradicts it, and states a conclusion drawn from that evidence."
+   "text": "To compare the reliability of X-ray fluorescence scanning with that of traditional visual analysis"
   },
   {
    "id": "D",
-   "text": "It traces the gradual acceptance of Friis's theory and then notes the objections that her critics have continued to raise."
+   "text": "To explain why museums have become reluctant to allow direct physical examination of fragile artworks"
   }
  ],
- "correctAnswer": "C",
- "explanation": "The correct answer is C. The passage opens with the assumption researchers long held—that the earliest flowers were large and showy. It then reports what Friis and her colleagues actually found in the Cretaceous fossils: the oldest flowers were minute and simple, the opposite of the expectation. It closes with the conclusion they draw, that showy flowers evolved later. Choice A misdescribes the second half, which contradicts the assumption rather than explaining its origin; B focuses on a technique and a reproducibility problem the passage never raises; and D invents a history of acceptance and critical objection that the text does not provide."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The text's purpose is to report what the new imaging made visible in a much-studied painting.\n\n**The Full Solution:**\n- The text moves through three stages: a setup (a much-studied painting examined in a new way), a method (noninvasive, layer-by-layer scanning), and a payoff (eyelashes and a hidden curtain that the finished surface conceals).\n- Every stage serves the same job — reporting what the scanning revealed — which is the purpose choice B states.\n\n**Why the other choices are wrong:**\n- A: It overreaches — the text adds details but never claims prior interpretations were wrong.\n- C: Visual analysis is background, not one side of a sustained comparison.\n- D: It invents a concern — fragility and museum policy are never discussed; \"noninvasive\" describes the method, not an institutional debate."
 }

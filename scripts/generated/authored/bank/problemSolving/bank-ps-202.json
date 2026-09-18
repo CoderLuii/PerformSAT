@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-202",
+  "question": "Of the $250$ vehicles parked in a downtown garage one morning, $95$ were electric. If one of these vehicles is selected at random, what is the probability of selecting an electric vehicle? Express your answer as a decimal.",
+  "correctAnswer": "0.38",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**The correct answer is $0.38$.**\n\n**The Fast Way (~15s):** $\\frac{95}{250} = 0.38$.\n\n**The Full Solution:**\nStep 1: The probability of selecting an electric vehicle is the number of electric vehicles divided by the total number of vehicles in the garage.\nStep 2: Substitute the given counts: $\\frac{95}{250}$.\nStep 3: Divide: $95 \\div 250 = 0.38$. Check: $0.38 \\times 250 = 95$. $\\checkmark$\n\n**Common Mistakes:** Dividing the total by the part, $250 \\div 95 \\approx 2.63$, which is greater than $1$ and so cannot be a probability; using the $155$ non-electric vehicles as the denominator, $95 \\div 155 \\approx 0.61$; or reporting the complement, $155 \\div 250 = 0.62$.\n\n**Test Day Takeaway:** A probability is always at most $1$ — a value above $1$ means the part and the whole were divided in the wrong order."
+}

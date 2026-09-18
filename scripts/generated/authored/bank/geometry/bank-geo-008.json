@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-008",
+  "question": "A tape-library robot arm pivots about a post at the center of a circular carousel of cartridge slots. Starting from the slot directly in front of the post, the arm swings counterclockwise through $\\frac{5\\pi}{6}$ radians and stops in front of a second slot on the same carousel. Which of the following statements about the size of that swing is true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The swing is less than $90^\\circ$."
+    },
+    {
+      "id": "B",
+      "text": "The swing is between $90^\\circ$ and $180^\\circ$."
+    },
+    {
+      "id": "C",
+      "text": "The swing is exactly $180^\\circ$."
+    },
+    {
+      "id": "D",
+      "text": "The swing is greater than $180^\\circ$."
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "converts with 90 degrees per pi radians, giving 75 degrees",
+    "C": "reads 5 pi over 6 as pi, the radian measure of a straight angle",
+    "D": "converts with 360 degrees per pi radians, giving 300 degrees"
+  },
+  "explanation": "**SAT Pattern: Radians to Degrees**\n\n**Choice B is correct.** $\\frac{5\\pi}{6} \\cdot \\frac{180}{\\pi} = 150^\\circ$, which lies between $90^\\circ$ and $180^\\circ$.\n\n**The Fast Way (~15s):** $\\frac{5}{6}$ of a straight angle is $\\frac{5}{6}(180) = 150^\\circ$.\n\n**The Full Solution:**\n\nStep 1: Radians convert to degrees by multiplying by $\\frac{180}{\\pi}$.\n\nStep 2: $\\frac{5\\pi}{6} \\cdot \\frac{180}{\\pi} = \\frac{900}{6} = 150^\\circ$.\n\nStep 3: Since $90 < 150 < 180$, the swing is more than a quarter revolution but less than a half revolution. Check: $150^\\circ \\cdot \\frac{\\pi}{180} = \\frac{5\\pi}{6}$, the original measure.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: uses $90^\\circ$ per $\\pi$ radians and lands on $75^\\circ$.\n* Choice C: reads $\\frac{5\\pi}{6}$ as $\\pi$, the measure of a straight angle.\n* Choice D: uses $360^\\circ$ per $\\pi$ radians and lands on $300^\\circ$.\n\n**Test Day Takeaway:** Any radian measure written as a fraction of $\\pi$ is that same fraction of $180^\\circ$ — no calculator needed to place it on the circle."
+}

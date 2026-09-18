@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-288",
+  "question": "An estimate based on a random sample of $n$ residents of a city has a margin of error of $m$ percentage points, where $m > 0$. A second estimate, based on a larger random sample of the city's residents and computed by the same method at the same confidence level, has a margin of error of $\\frac{m}{5}$ percentage points. In terms of $n$, how many residents were in the second sample?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{n}{25}$"
+    },
+    {
+      "id": "B",
+      "text": "$5n$"
+    },
+    {
+      "id": "C",
+      "text": "$10n$"
+    },
+    {
+      "id": "D",
+      "text": "$25n$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverts the relationship, shrinking the sample as the margin of error shrinks",
+    "B": "uses the factor $5$ without squaring it",
+    "C": "doubles the factor $5$ instead of squaring it"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Sample Size for Margin Reduction**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The margin of error is divided by $5$, and the margin of error varies as $\\frac{1}{\\sqrt{n}}$, so the sample size is multiplied by $5^2 = 25$.\n\n**The Full Solution:**\nStep 1: Write the relationship as $m = \\frac{k}{\\sqrt{n}}$ for some constant $k$ fixed by the method and the confidence level.\nStep 2: Let $N$ be the second sample size. Then $\\frac{m}{5} = \\frac{k}{\\sqrt{N}}$, and substituting $m = \\frac{k}{\\sqrt{n}}$ gives $\\frac{k}{5\\sqrt{n}} = \\frac{k}{\\sqrt{N}}$, so $\\sqrt{N} = 5\\sqrt{n}$.\nStep 3: Squaring both sides gives $N = 25n$. Check with numbers: if $n = 4$ and $k = 2$, then $m = 1$; with $N = 100$, the margin of error is $\\frac{2}{10} = 0.2 = \\frac{m}{5}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{n}{25}$): the factor $25$ is right, but dividing the sample size by it makes the margin of error $5$ times *larger*.\n* Choice B ($5n$): applies the margin-of-error factor straight to $n$; multiplying $n$ by $5$ divides the margin of error by only $\\sqrt{5} \\approx 2.24$.\n* Choice C ($10n$): doubles the factor instead of squaring it; $\\sqrt{10} \\approx 3.16$, not $5$.\n\n**Test Day Takeaway:** Set up $m = \\frac{k}{\\sqrt{n}}$ and solve. In symbols the square is impossible to forget, and the same setup answers every version of this question."
+}

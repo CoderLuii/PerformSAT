@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A graphing tool displays the line $2x + 3y = 6$ and the line $y = -\\frac{2}{3}x + 5$ in the same viewing window. How many points do these two lines have in common?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Zero"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two"
+    },
+    {
+      "id": "D",
+      "text": "Infinitely many"
+    }
+  ],
+  "distractorNotes": {
+    "B": "assumes any two distinct lines must cross, but lines with equal slopes never do.",
+    "C": "two distinct lines can share at most one point, so exactly two is impossible.",
+    "D": "this happens only when the two equations describe the same line, which would require equal $y$-intercepts as well as equal slopes."
+  },
+  "correctAnswer": "A",
+  "hint": "Rewrite the first equation in slope-intercept form before comparing the two lines.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~25s):** Both lines have slope $-\\frac{2}{3}$ but $y$-intercepts $2$ and $5$, so they are parallel and never meet.\n\n**The Full Solution:**\nStep 1: Solve $2x + 3y = 6$ for $y$: $3y = -2x + 6$, so $y = -\\frac{2}{3}x + 2$.\nStep 2: The second line is $y = -\\frac{2}{3}x + 5$. The slopes are equal, $-\\frac{2}{3}$, but the $y$-intercepts $2$ and $5$ are different.\nStep 3: Parallel and distinct lines never intersect, so the two lines share zero points. Check: setting the right sides equal gives $2 = 5$, which is never true. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: assumes any two distinct lines must cross, but lines with equal slopes never do.\n* Choice C: two distinct lines can share at most one point, so exactly two is impossible.\n* Choice D: this happens only when the two equations describe the same line, which would require equal $y$-intercepts as well as equal slopes.\n\n**Test Day Takeaway:** Convert to slope-intercept form before judging a graph. Equal slopes with different intercepts always means no points in common."
+}

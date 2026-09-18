@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-145",
+ "question": "A furnace maker retools a rectangular annealing chamber so that its length increases by $20\\%$ and its width decreases by $25\\%$ while its height is unchanged; the retooled chamber holds $1{,}350$ cubic centimeters. What was the volume, in cubic centimeters, of the original chamber?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1{,}125$"
+  },
+  {
+   "id": "B",
+   "text": "$1{,}350$"
+  },
+  {
+   "id": "C",
+   "text": "$1{,}500$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}800$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "divides by the 1.2 growth factor only and ignores the width shrink: 1350 / 1.2",
+  "B": "swaps which dimension grows and which shrinks, so the factor becomes 0.80 x 1.25 = 1.00 and nothing changes",
+  "D": "divides by the 0.75 shrink factor only and ignores the length growth: 1350 / 0.75"
+ },
+ "explanation": "**SAT Pattern: Inverse Multi-Percent Change (Volume)**\n\n**Choice C is correct.** The volume is multiplied by $1.20 \\times 0.75 = 0.90$, so the original volume is $\\frac{1350}{0.90} = 1500$ cubic centimeters.\n\n**The Fast Way (~30s):** One net factor: $1.2 \\times 0.75 = 0.9$. Undo it by dividing: $1350 \\div 0.9 = 1500$.\n\n**The Full Solution:**\n\nStep 1: Volume is length times width times height. Multiplying the length by $1.20$ and the width by $0.75$ multiplies the volume by $1.20 \\times 0.75 = 0.90$.\n\nStep 2: If $V$ is the original volume, then $0.90V = 1350$, so $V = \\frac{1350}{0.90} = 1500$.\n\nStep 3: Check. Raising $1500$ by $20\\%$ gives $1800$; cutting that by $25\\%$ gives $1800 \\times 0.75 = 1350$, the stated retooled volume.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($1{,}125$): divides by $1.2$ only, forgetting that the width also changed.\n* Choice B ($1{,}350$): swaps the two percents, using $0.80 \\times 1.25 = 1.00$, which leaves the volume unchanged.\n* Choice D ($1{,}800$): divides by $0.75$ only, forgetting the length increase.\n\n**Test Day Takeaway:** Successive percent changes multiply into ONE factor; to run the change backward, divide by that single factor rather than adding or subtracting percents."
+}

@@ -47,7 +47,8 @@ describe('activityBreakdown', () => {
   it('makes one row per missed pattern (cap 3), humanized', () => {
     const rows = activityBreakdown({ type: 'practice', section: 'math', skillId: 'lin', missedPatterns: ['slope-from-two-points', 'interpret-slope'] });
     expect(rows).toHaveLength(2);
-    expect(rows[0].label).toBe('Slope From Two Points');
+    // Conventional title case via the canonical formatter (small words stay lowercase).
+    expect(rows[0].label).toBe('Slope from Two Points');
     // Never drilled → all to-do.
     expect(rows.every((r) => r.status === 'todo')).toBe(true);
   });
@@ -55,13 +56,35 @@ describe('activityBreakdown', () => {
     const rows = activityBreakdown({ type: 'practice', skillId: 'lin', completed: true, missedPatterns: ['a-b', 'c-d'] });
     expect(rows.every((r) => r.complete)).toBe(true);
   });
-  it('projects drill evidence: earlier rows done, next active', () => {
+  it('projects drill evidence from HISTORY entries after the cutoff', () => {
+    const now = Date.now();
     const rows = activityBreakdown(
       { type: 'practice', skillId: 'lin', missedPatterns: ['a-a', 'b-b', 'c-c'] },
-      { lin: { attempts: 6, correct: 4, mastery: 66 } },
+      { lin: { attempts: 6, correct: 4, mastery: 66, history: [
+        { correct: true, timestamp: now - 1000 },
+        { correct: true, timestamp: now - 900 },
+        { correct: true, timestamp: now - 800 },
+        { correct: false, timestamp: now - 700 },
+      ] } },
     );
     expect(rows[0].status).toBe('done');
     expect(rows.some((r) => r.status === 'active')).toBe(true);
+  });
+
+  it('ignores measurement-seeded history at/before the plan cutoff (no phantom day-one progress)', () => {
+    const planBorn = Date.now();
+    const rows = activityBreakdown(
+      { type: 'practice', skillId: 'lin', missedPatterns: ['a-a', 'b-b'] },
+      // Diagnostic seeding lands AT plan-generation time — before the cutoff.
+      { lin: { attempts: 3, correct: 1, mastery: 33, history: [
+        { correct: true, timestamp: planBorn - 5000 },
+        { correct: false, timestamp: planBorn - 5000 },
+        { correct: false, timestamp: planBorn - 5000 },
+      ] } },
+      { sinceMs: planBorn },
+    );
+    expect(rows.every((r) => r.status === 'todo')).toBe(true);
+    expect(rows.every((r) => r.prog.startsWith('0/'))).toBe(true);
   });
   it('falls back to a single skill row when no patterns are tagged', () => {
     const rows = activityBreakdown({ type: 'practice', skillName: 'Central ideas' });

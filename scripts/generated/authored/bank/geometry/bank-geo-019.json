@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-019",
+ "question": "A scaffold brace $26$ feet long leans against a $30$-foot loading-dock wall with its foot $10$ feet from the wall. How many feet below the top of the wall does the brace meet the wall?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     10,
+     24
+    ]
+   ],
+   "sideLabels": [
+    "10 ft",
+    "",
+    "26 ft"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$20$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "subtracts the brace length from the wall height: 30 - 26",
+  "C": "subtracts the distance from the wall instead of the height reached: 30 - 10",
+  "D": "reports the height the brace reaches, 24, without comparing it to the 30-foot wall"
+ },
+ "explanation": "**SAT Pattern: Ladder Pythagorean**\n\n**Choice B is correct.** The brace reaches $\\sqrt{26^2 - 10^2} = 24$ feet up the wall, which is $30 - 24 = 6$ feet below the top.\n\n**The Fast Way (~30s):** $10$-$24$-$26$ is a $5$-$12$-$13$ triple doubled, so the brace reaches $24$ feet; $30 - 24 = 6$.\n\n**The Full Solution:**\n\nStep 1: The wall, the ground, and the brace form a right triangle with hypotenuse $26$ and one leg $10$.\n\nStep 2: The vertical leg is $\\sqrt{26^2 - 10^2} = \\sqrt{676 - 100} = \\sqrt{576} = 24$ feet.\n\nStep 3: The wall is $30$ feet tall, so the top of the brace sits $30 - 24 = 6$ feet below the top of the wall. Check: $10^2 + 24^2 = 100 + 576 = 676 = 26^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($4$): subtracts the brace's length from the wall height, $30 - 26$, treating the slanted brace as if it stood vertically.\n* Choice C ($20$): subtracts the $10$-foot ground distance from the wall height instead of the height actually reached.\n* Choice D ($24$): stops at the height the brace reaches and never compares it with the $30$-foot wall.\n\n**Test Day Takeaway:** Finish the sentence the question asked — a leaning-object problem usually needs one more subtraction after the Pythagorean step."
+}

@@ -6,26 +6,26 @@
   "band": 2,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
-  "passage": "Researchers studying the immune defenses of ordinary bacteria have described a system that lets a cell keep a record of past attacks. When a virus injects its DNA into the cell, the cell's CRISPR machinery can ______ a short fragment of that viral DNA into the cell's own genetic material, so that if the same virus returns later, the cell recognizes the threat and destroys it.",
+  "passage": "Wine grapes develop much of their flavor in the final weeks before harvest. Many growers therefore withhold irrigation late in the season: vines under mild water stress produce smaller berries with thicker skins, and because most of a grape's flavor compounds are made in the skin, the practice tends to ______ the concentration of those compounds in the finished wine.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "describe"
+      "text": "dilute"
     },
     {
       "id": "B",
-      "text": "imitate"
+      "text": "delay"
     },
     {
       "id": "C",
-      "text": "ignore"
+      "text": "conceal"
     },
     {
       "id": "D",
-      "text": "incorporate"
+      "text": "increase"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"incorporate.\" The sentence describes the cell taking a fragment of viral DNA and building it into its own genetic material as a lasting record. \"Incorporate\" means exactly that: to take something in and make it part of a larger whole. \"Ignore\" is the opposite of what the cell does, since the whole point is to keep the fragment rather than disregard it. \"Describe\" would treat the cell as if it were commenting on the DNA, which it cannot do, and \"imitate\" suggests copying the virus's behavior rather than filing away a piece of its DNA."
+  "explanation": "**Choice D is correct.** Smaller berries with thicker, flavor-rich skins mean more flavor compounds relative to juice, so the practice tends to \"increase\" their concentration.\n\n**The Full Solution:**\n- The colon introduces the reasoning: water stress yields smaller berries with thicker skins, and the skin is where most flavor compounds are made.\n- Less berry and proportionally more skin pushes the concentration of flavor compounds up, so the blank needs a word meaning raise — \"increase.\"\n\n**Why the other choices are wrong:**\n- A: \"Dilute\" is the opposite of what the evidence supports — smaller, skin-heavy berries concentrate flavor rather than watering it down.\n- B: \"Delay\" mistakes the effect for a timing change; the text says nothing about flavor developing later.\n- C: \"Conceal\" would mean hiding the compounds, which no part of the text suggests."
 }

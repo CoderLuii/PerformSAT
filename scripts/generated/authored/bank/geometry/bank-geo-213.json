@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-213",
+ "question": "On a roof truss, a gusset plate joins three members at joint $B$. The exterior angle formed where the bottom chord is extended past $B$ measures $133^\\circ$, and the two interior angles at the other joints measure $40^\\circ$ and $(4x + 9)^\\circ$. What is the value of $x$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$21$"
+  },
+  {
+   "id": "B",
+   "text": "$31$"
+  },
+  {
+   "id": "C",
+   "text": "$41$"
+  },
+  {
+   "id": "D",
+   "text": "$84$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "sets 4x + 9 = 133, using the whole exterior angle for one remote angle and ignoring the 40 degree angle",
+  "C": "adds the known remote angle instead of subtracting it: 4x + 9 = 173",
+  "D": "stops at 4x = 84 and reports 4x instead of x"
+ },
+ "explanation": "**SAT Pattern: Exterior Angle Theorem**\n\n**Choice A is correct.** The exterior angle equals the sum of the two remote interior angles, so $4x + 9 = 133 - 40 = 93$ and $x = 21$.\n\n**The Fast Way (~25s):** Strip the known remote angle off the exterior angle: $133 - 40 = 93$. Then $4x + 9 = 93$, so $x = 21$.\n\n**The Full Solution:**\n\nStep 1: At joint $B$, the exterior angle equals the sum of the two nonadjacent interior angles: $40 + (4x + 9) = 133$.\n\nStep 2: Combine like terms and solve: $4x + 49 = 133$, so $4x = 84$ and $x = 21$.\n\nStep 3: Check. With $x = 21$ the second remote angle is $4(21) + 9 = 93$, and $40^\\circ + 93^\\circ = 133^\\circ$. The interior angle at $B$ is $180^\\circ - 133^\\circ = 47^\\circ$, and $40 + 93 + 47 = 180$, so the triangle closes.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($31$): sets $4x + 9 = 133$, handing the whole exterior angle to one remote angle and ignoring the $40^\\circ$ angle.\n* Choice C ($41$): adds instead of subtracting, solving $4x + 9 = 133 + 40 = 173$.\n* Choice D ($84$): stops at $4x = 84$ and reports $4x$ rather than $x$.\n\n**Test Day Takeaway:** An exterior angle equals the SUM of the two nonadjacent interior angles, so subtract the known remote angle from it, never the supplement."
+}

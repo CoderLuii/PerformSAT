@@ -1,0 +1,29 @@
+{
+  "id": 15,
+  "question": "A student rewrites the left side of the equation $\\frac{x^2 - 9}{x - 3} = 6$ as a linear expression and then solves the resulting linear equation. Which of the following statements about the original equation is true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The equation has no solution."
+    },
+    {
+      "id": "B",
+      "text": "The equation has exactly one solution, $x = 3$."
+    },
+    {
+      "id": "C",
+      "text": "The equation has exactly one solution, $x = 9$."
+    },
+    {
+      "id": "D",
+      "text": "The equation has exactly two solutions, $x = 3$ and $x = -3$."
+    }
+  ],
+  "distractorNotes": {
+    "B": "solves x + 3 = 6 to get x = 3 and never checks that x = 3 makes the denominator zero",
+    "C": "adds 3 to 6 instead of subtracting, reporting x = 9",
+    "D": "sets the numerator x squared minus 9 equal to zero and reports both of its zeros"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Rational Equation with No Solution**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The left side simplifies to $x + 3$ for every $x$ except $3$, and $x + 3 = 6$ gives exactly $x = 3$ — the one value the original equation forbids.\n\n**The Full Solution:**\nStep 1: Factor the numerator: $x^2 - 9 = (x - 3)(x + 3)$. So $\\frac{x^2 - 9}{x - 3} = \\frac{(x - 3)(x + 3)}{x - 3} = x + 3$, valid for every $x$ except $x = 3$, where the denominator is $0$.\nStep 2: Solve the simplified equation: $x + 3 = 6$, so $x = 3$.\nStep 3: Test $x = 3$ in the original equation. The denominator becomes $3 - 3 = 0$, so the left side is undefined and $x = 3$ is extraneous. No other candidate exists, so the equation has no solution. Check: any $x \\neq 3$ gives a left side of $x + 3 \\neq 6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($x = 3$): this is exactly what the simplified linear equation produces. Cancelling the common factor is legal only where that factor is nonzero, so this candidate must be tested and rejected.\n* Choice C ($x = 9$): comes from solving $x + 3 = 6$ by adding $3$ to both sides instead of subtracting it.\n* Choice D ($x = 3$ and $x = -3$): sets the numerator equal to $0$ and lists its zeros. That answers \"when is the fraction zero,\" not \"when does the fraction equal $6$.\"\n\n**Test Day Takeaway:** After cancelling a factor from a rational equation, every candidate solution must be checked against the original denominator. When the only candidate is the excluded value, the honest answer is that the equation has no solution."
+}

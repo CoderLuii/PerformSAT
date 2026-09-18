@@ -1,41 +1,42 @@
 {
-  "id": 727,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 1,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "The Antikythera mechanism is a corroded bronze device recovered in 1901 from an ancient Greek shipwreck.",
-      "For decades its purpose was unclear, and many scholars assumed it was a navigational instrument or a clock.",
-      "In the 1970s, and again in the 2000s, researchers used X-ray and then CT imaging to see inside the fused fragments.",
-      "The scans revealed dozens of interlocking bronze gears and finely inscribed scales.",
-      "Researchers concluded that the device was an astronomical calculator that modeled the motions of the Sun, Moon, and planets and predicted eclipses."
-    ],
-    "goal": "The student wants to emphasize how imaging technology changed scholars’ understanding of the device."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The Antikythera mechanism, a heavily corroded bronze device, was recovered in 1901 from an ancient Greek shipwreck near the island of Antikythera."
-    },
-    {
-      "id": "B",
-      "text": "For decades after its discovery, the precise purpose of the Antikythera mechanism remained unclear, and many scholars assumed it had been a navigational instrument or a kind of clock."
-    },
-    {
-      "id": "C",
-      "text": "Using X-ray and later CT imaging to see inside the fused fragments, researchers revealed dozens of interlocking gears and concluded that the device was an astronomical calculator."
-    },
-    {
-      "id": "D",
-      "text": "The Antikythera mechanism contained dozens of interlocking bronze gears together with finely inscribed scales that marked out astronomical cycles."
-    }
+ "id": 727,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 1,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Ancient Egyptians produced animal mummies by the million as religious offerings, and museums around the world hold large collections of them.",
+   "Because unwrapping destroys a mummy, most bundles have remained sealed, their contents unknown.",
+   "For decades, scholars could only infer from a bundle's outer shape what animal it might contain.",
+   "Researchers have begun examining wrapped bundles with micro-CT scanning, which reconstructs the interior in three dimensions without opening the wrappings.",
+   "Scans show that some bundles hold complete animals, others partial remains, and some only mud, feathers, or scraps of bone.",
+   "Researchers now conclude that offerings were produced on a scale that outran the supply of animals."
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The goal emphasizes how imaging reshaped understanding, and C names the technology (X-ray and CT imaging) and the conclusion it made possible (the device was an astronomical calculator), tying method to result. Choice A gives only the recovery, and Choice B describes the earlier confusion without the breakthrough. Choice D reports what was found inside but omits the imaging that revealed it, so it does not foreground the technology's role."
+  "goal": "The student wants to emphasize how imaging technology changed researchers' understanding of the mummies."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Ancient Egyptians produced animal mummies by the million as religious offerings, and museums around the world still hold large collections of them."
+  },
+  {
+   "id": "B",
+   "text": "Because unwrapping destroys a mummy, scholars long had to infer from a sealed bundle's outer shape what animal it might contain."
+  },
+  {
+   "id": "C",
+   "text": "Micro-CT scans of sealed bundles — some of which proved to hold only mud, feathers, or scraps of bone — led researchers to conclude that offerings were produced on a scale that outran the supply of animals."
+  },
+  {
+   "id": "D",
+   "text": "Micro-CT scanning reconstructs the interior of a wrapped bundle in three dimensions, so researchers can examine a mummy without opening its wrappings."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The goal demands a link from the technology to a changed understanding, and C forges it: scans revealed bundles holding only mud or feathers, and that evidence drove a new conclusion about production outrunning the supply of animals.\n\n**The Full Solution:**\n- The goal's two required parts: name the imaging technology, and show the understanding it changed.\n- C names micro-CT scanning of sealed bundles and reports what the scans revealed inside.\n- It then completes the arc with the revised conclusion researchers drew — exactly the change in understanding the goal asks the sentence to emphasize.\n\n**Why the other choices are wrong:**\n- A: It gives background on the offerings and collections, with no imaging and no new understanding.\n- B: It describes the old predicament the technology solved but stops before the technology appears.\n- D: It explains how the scanning works without stating anything researchers came to understand differently."
 }

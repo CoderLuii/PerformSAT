@@ -1,0 +1,25 @@
+{
+  "id": "bank-alg-376",
+  "question": "The points $(-5, -2)$ and $(7, 3)$ shown in the $xy$-plane are the endpoints of a diameter of a circle. What is the radius of the circle?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -5,
+          -2
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "xMin": -8,
+      "xMax": 8,
+      "yMin": -4,
+      "yMax": 6
+    }
+  },
+  "correctAnswer": "6.5",
+  "explanation": "**SAT Pattern: Distance Formula**\n\n**The correct answer is $6.5$.**\n\n**The Fast Way (~20s):** The changes are $7 - (-5) = 12$ and $3 - (-2) = 5$, so the diameter is $\\sqrt{144 + 25} = 13$ and the radius is $\\dfrac{13}{2} = 6.5$.\n\n**The Full Solution:**\nStep 1: The diameter is the distance between its endpoints. Horizontal change: $7 - (-5) = 12$. Vertical change: $3 - (-2) = 5$.\nStep 2: Diameter $= \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13$.\nStep 3: The radius is half the diameter: $\\dfrac{13}{2} = 6.5$. Check: $2(6.5) = 13$ and $13^2 = 169$. $\\checkmark$\n\n**Common Mistakes:** Entering $13$, the diameter, when the question asks for the radius; computing the changes as $7 - 5 = 2$ and $3 - 2 = 1$ by dropping the negative signs; adding the changes to get $17$ instead of using the distance formula.\n\n**Test Day Takeaway:** Subtracting a negative coordinate adds; after the distance formula, reread the question to see whether it wants the full length or half of it."
+}

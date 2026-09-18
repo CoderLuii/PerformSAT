@@ -1,0 +1,24 @@
+{
+ "id": "bank-geo-089",
+ "question": "Right circular cylinders $A$ and $B$ have equal volumes. The radius of cylinder $A$ is $5$ inches and its height is $12$ inches. If the radius of cylinder $B$ is $10$ inches, what is its height, in inches?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Cylinder $A$ holds $\\pi(5)^2(12) = 300\\pi$ cubic inches, so cylinder $B$ must satisfy $\\pi(10)^2 h = 300\\pi$, giving $h = 3$ inches.\n\n**The Full Solution:**\nStep 1: The volume of cylinder $A$ is $V = \\pi r^2 h = \\pi(5)^2(12) = 300\\pi$ cubic inches.\nStep 2: Cylinder $B$ has the same volume, so $\\pi(10)^2 h = 300\\pi$, which reduces to $100h = 300$.\nStep 3: $h = \\frac{300}{100} = 3$ inches.\n\nCheck: $\\pi(10)^2(3) = 300\\pi$ cubic inches, the same volume as cylinder $A$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($6$): halves the height because the radius doubled, treating the volume as proportional to $r$ instead of to $r^2$.\n* Choice C ($24$): doubles the height along with the radius, scaling in the wrong direction.\n* Choice D ($48$): multiplies the height by $2^2 = 4$, applying the squared factor in the wrong direction.\n\n**Test Day Takeaway:** The radius enters a cylinder's volume squared, so doubling it forces the height down by a factor of $4$ — not $2$ — to keep the volume unchanged."
+}

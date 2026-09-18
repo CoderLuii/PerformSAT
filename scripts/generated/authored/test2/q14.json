@@ -6,42 +6,30 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
   "module": 1,
-  "passage": "Popular accounts of modern climate change tend to imply a smooth, century-long upward march in global temperature. Climatologists relying on the NASA GISS GISTEMP v4 record argue that the warming is in fact unmistakable but not strictly monotonic: across the early and middle decades of the twentieth century, the global temperature anomaly oscillated rather than climbing steadily, even as the post-1980 figures soared above the long-term baseline. A student examining their data argues that this nonmonotonic mid-century pattern is most clearly visible in the GISTEMP record because _______",
+  "passage": "Track-forecast error — the distance between a hurricane's predicted and actual positions — has fallen steadily for decades as observations and models have improved. A student examining average errors for Atlantic-basin forecasts claims that the improvement between 1990 and 2020 was proportionally greatest at the longest lead times, so that forecasters gained the most ground exactly where their forecasts had once been least reliable. The claim is supported by the data because ______",
   "questionTable": {
     "type": "table",
-    "caption": "Twenty-year mean global temperature anomalies relative to the 1951-1980 baseline, 1880-2019 (NASA GISS GISTEMP v4)",
+    "caption": "Average Atlantic-basin hurricane track-forecast error by lead time, 1990 and 2020",
     "headers": [
-      "Period",
-      "Anomaly (°C)"
+      "Lead time",
+      "Error, 1990 (km)",
+      "Error, 2020 (km)"
     ],
     "rows": [
       [
-        "1880-1899",
-        "-0.21"
+        "24 hours",
+        "185",
+        "75"
       ],
       [
-        "1900-1919",
-        "-0.24"
+        "48 hours",
+        "370",
+        "120"
       ],
       [
-        "1920-1939",
-        "-0.06"
-      ],
-      [
-        "1940-1959",
-        "0.02"
-      ],
-      [
-        "1960-1979",
-        "-0.01"
-      ],
-      [
-        "1980-1999",
-        "0.30"
-      ],
-      [
-        "2000-2019",
-        "0.78"
+        "72 hours",
+        "555",
+        "160"
       ]
     ]
   },
@@ -49,21 +37,21 @@
   "choices": [
     {
       "id": "A",
-      "text": "the 1980-1999 anomaly of 0.30 °C is well above the 1960-1979 anomaly of -0.01 °C, marking the moment when the record breaks decisively above the 1951-1980 baseline."
+      "text": "the 24-hour forecast error in 2020, at 75 kilometers, was the smallest error shown anywhere in the table."
     },
     {
       "id": "B",
-      "text": "the 2000-2019 anomaly of 0.78 °C is the highest figure in the table, far exceeding every earlier twenty-year mean and confirming the magnitude of recent warming."
+      "text": "the 72-hour error fell by 395 kilometers between 1990 and 2020, a larger absolute drop than at either shorter lead time."
     },
     {
       "id": "C",
-      "text": "the anomaly rises from -0.21 °C in 1880-1899 to 0.02 °C in 1940-1959, an unbroken mid-century climb that mirrors the textbook narrative of steady twentieth-century warming."
+      "text": "average error was smaller in 2020 than in 1990 at every lead time shown in the table."
     },
     {
       "id": "D",
-      "text": "the 1900-1919 anomaly of -0.24 °C is cooler than the 1880-1899 anomaly of -0.21 °C, and the 1960-1979 anomaly of -0.01 °C is cooler than the 1940-1959 anomaly of 0.02 °C, two intervals in which the record briefly reversed direction."
+      "text": "the 72-hour error fell by roughly 71 percent between 1990 and 2020, a proportionally larger decline than the roughly 68 percent at 48 hours or 59 percent at 24 hours."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The student's claim is narrow and structural: the GISTEMP record shows a NONMONOTONIC mid-century pattern — that is, the twenty-year means do not climb in a straight line through the early and middle decades of the twentieth century but instead reverse direction at least once before the post-1980 surge. To support that specific claim, the choice must point to intervals in which a later twenty-year mean is actually COOLER than the one immediately preceding it. Choice D does exactly this twice: 1900-1919 (-0.24 °C) is cooler than 1880-1899 (-0.21 °C), and 1960-1979 (-0.01 °C) is cooler than 1940-1959 (0.02 °C). Those two reversals are the only data in the table that demonstrate the non-monotonic shape the claim is about.\n\nChoice B is incorrect. The 0.78 °C figure for 2000-2019 is unambiguously the highest number in the table, and the choice reports it accurately, but the claim is not about the magnitude of recent warming; it is about the shape of the mid-century record. A single end-of-series peak cannot illustrate a reversal that occurs decades earlier. Choice A is incorrect. It cites a real and dramatic comparison (1960-1979 vs. 1980-1999), and the figures are correct, but the contrast it draws is between a mid-century interval and a post-1980 one — that is, it documents the post-1980 acceleration relative to the baseline rather than the mid-century non-monotonicity the claim specifies. Choice C is incorrect. It reads the early- and mid-century data in the wrong direction, asserting an 'unbroken mid-century climb' from 1880-1899 to 1940-1959. The table actually shows a dip in 1900-1919 (-0.24 °C is cooler than -0.21 °C), so the climb is not unbroken — and a continuous-rise framing is precisely the tidy narrative the passage is pushing back against."
+  "explanation": "**Choice D is correct.** The claim is about proportional improvement ranked by lead time, and D performs exactly that computation: the percentage decline grows as the lead time lengthens, peaking at 72 hours.\n\n**The Full Solution:**\n- Convert each row to a percentage decline: 24 hours, (185 − 75)/185 ≈ 59%; 48 hours, (370 − 120)/370 ≈ 68%; 72 hours, (555 − 160)/555 ≈ 71%.\n- The declines increase with lead time, so the improvement was proportionally greatest at 72 hours — the lead time where 1990 errors were largest and forecasts least reliable.\n- Choice D reports precisely this ordering, matching the claim's proportional framing.\n\n**Why the other choices are wrong:**\n- A: The 24-hour error is the smallest in any year simply because shorter forecasts are easier; that ranking exists in both columns and says nothing about how much any lead time improved.\n- B: It substitutes absolute change for proportional change — the very confusion the claim's wording (\"proportionally greatest\") rules out; a large starting error can shrink by many kilometers while improving less in percentage terms.\n- C: Universal improvement supports only the weaker point that forecasts got better everywhere; it cannot establish which lead time improved most."
 }

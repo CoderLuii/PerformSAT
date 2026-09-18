@@ -1,0 +1,6 @@
+{
+ "question": "In a reaction study one vessel holds $9y+6$ grams of product and a second vessel holds $5y+26$ grams of product after $y$ minutes of stirring. After how many minutes do the two vessels hold equal masses?",
+ "correctAnswer": "5",
+ "explanation": "**SAT Pattern: Linear Equation with Variables on Both Sides**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~25s):** $9y+6=5y+26$ gives $4y=20$, so $y=5$ minutes.\n\n**The Full Solution:**\n\nStep 1: Set the two masses equal: $9y+6=5y+26$.\n\nStep 2: Subtract $5y$ from both sides: $4y+6=26$. Subtract $6$: $4y=20$.\n\nStep 3: Divide by $4$: $y=5$ minutes. Check: $9(5)+6=51$ grams and $5(5)+26=51$ grams.\n\n**Common Mistakes:** Adding the variable terms instead of subtracting gives $14y=20$ and about $1.4$ minutes. Adding the constants, $\\frac{26+6}{4}$, gives $8$ minutes, at which point the masses are $78$ and $66$ grams.\n\n**Test Day Takeaway:** Move variables one way and constants the other; every move is a subtraction of the smaller term from both sides.",
+ "id": "bank-alg-297"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "bank-am-004",
+  "question": "The height above the nozzle, in feet, of a stream of water $x$ feet horizontally from a fountain nozzle is modeled by $h(x) = -0.5x^2 + 4x$. The graph of $y = h(x)$ is shown. Which statement about this model is true?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": 4,
+        "k": 8
+      },
+      "a": -0.5,
+      "xRange": [
+        0,
+        10
+      ],
+      "yRange": [
+        0,
+        10
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showVertex": false
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The model is linear, because the height changes at a constant rate."
+    },
+    {
+      "id": "B",
+      "text": "The model is exponential, because the height falls off after its peak."
+    },
+    {
+      "id": "C",
+      "text": "The model is quadratic, and the stream rises to a greatest height of $8$ feet."
+    },
+    {
+      "id": "D",
+      "text": "The model is quadratic, and the stream rises to a greatest height of $4$ feet."
+    }
+  ],
+  "distractorNotes": {
+    "A": "calls a curved graph linear",
+    "B": "labels any rise-then-fall shape exponential",
+    "D": "reports the vertex's $x$-coordinate as the maximum height"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Classify Physical Motion Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The $x^2$ term makes $h$ quadratic, and its vertex is at $x = -\\dfrac{4}{2(-0.5)} = 4$, where $h(4) = -8 + 16 = 8$ feet.\n\n**The Full Solution:**\nStep 1: $h(x) = -0.5x^2 + 4x$ has degree $2$, so the model is quadratic and its graph is a parabola. Because $-0.5 < 0$, the parabola opens downward and has a maximum.\nStep 2: The maximum occurs at the vertex, $x = -\\dfrac{b}{2a} = -\\dfrac{4}{2(-0.5)} = 4$ feet from the nozzle.\nStep 3: The greatest height is $h(4) = -0.5(16) + 4(4) = -8 + 16 = 8$ feet. Check with the symmetric points: $h(0) = 0$ and $h(8) = -32 + 32 = 0$, and $4$ is halfway between them. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the graph is curved, so the height does not change at a constant rate.\n* Choice B: exponential models never come back down to a previous value the way this stream does at $x = 0$ and $x = 8$.\n* Choice D ($4$ feet): $4$ is the horizontal distance at which the peak occurs, not the peak height.\n\n**Test Day Takeaway:** In a quadratic model the vertex has two numbers with two different jobs: the input tells you WHERE the extreme happens, the output tells you WHAT it is."
+}

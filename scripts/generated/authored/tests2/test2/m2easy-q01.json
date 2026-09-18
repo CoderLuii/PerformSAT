@@ -1,0 +1,58 @@
+{
+ "id": 1,
+ "question": "Sediment depth at two coring sites is modeled by a linear function of the number of years since monitoring began. The table gives the modeled depth, in millimeters, at each site for four selected years. How many solutions does the system consisting of the two models have?",
+ "questionTable": {
+  "headers": [
+   "Years since monitoring began",
+   "Site $P$ depth (mm)",
+   "Site $Q$ depth (mm)"
+  ],
+  "rows": [
+   [
+    "$0$",
+    "$5$",
+    "$12$"
+   ],
+   [
+    "$1$",
+    "$9$",
+    "$16$"
+   ],
+   [
+    "$2$",
+    "$13$",
+    "$20$"
+   ],
+   [
+    "$3$",
+    "$17$",
+    "$24$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "No solution"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one solution"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two solutions"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many solutions"
+  }
+ ],
+ "distractorNotes": {
+  "B": "assumes any two distinct lines must cross, ignoring that both models rise 4 mm per year",
+  "C": "treats a pair of linear models like a quadratic, which can meet twice",
+  "D": "sees the equal rate of 4 mm per year and concludes the two models are the same line, ignoring the different starting depths of 5 and 12"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Both columns climb by $4$ each year but start at $5$ and $12$, so the models are parallel lines and never meet.\n\n**The Full Solution:**\nStep 1: Read the rate for each site. Site $P$ goes $5, 9, 13, 17$, a gain of $4$ mm per year; site $Q$ goes $12, 16, 20, 24$, also a gain of $4$ mm per year.\nStep 2: Read the starting depths at $0$ years: site $P$ begins at $5$ mm and site $Q$ at $12$ mm. The models are $d = 4t + 5$ and $d = 4t + 12$.\nStep 3: Equal slopes with unequal intercepts means the lines are parallel and distinct, so the system has no solution. Check: setting $4t + 5 = 4t + 12$ gives $5 = 12$, which is never true. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (Exactly one solution): assumes two different lines always cross, but equal slopes rule that out.\n* Choice C (Exactly two solutions): a system of two lines can never have exactly two solutions; two intersections require a curve.\n* Choice D (Infinitely many solutions): the equal rate of $4$ mm per year is only half the test. The gap of $12 - 5 = 7$ mm never closes, so the lines are not identical.\n\n**Test Day Takeaway:** In a table, equal step sizes mean equal slopes. Then look at the starting values: same start means one line, different start means no solution."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 1250,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "When biologists first applied the theory of island biogeography to habitat fragments left behind by deforestation, they expected isolated forest patches to lose species gradually, settling toward a lower but stable number determined by patch size. A long-term study that tracked fragments in the Amazon for decades found something the simple model had not anticipated. ______ the smallest fragments kept losing species long after they were cut off, as edge effects—drier air, more wind, invading species along the exposed margins—reached deeper into the patch over time, so that the fragments never settled at the predicted equilibrium but continued to decline.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "However,"
-    },
-    {
-      "id": "B",
-      "text": "Likewise,"
-    },
-    {
-      "id": "C",
-      "text": "Therefore,"
-    },
-    {
-      "id": "D",
-      "text": "For example,"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The study found something the model \"had not anticipated,\" and the sentence then reports that the fragments behaved contrary to the prediction, so the contrastive \"However\" fits. \"Likewise\" would signal agreement with the prediction, the opposite of the surprise being described. \"Therefore\" would make the continued decline a consequence of the prediction rather than a departure from it. \"For example\" would present an instance of the model's expectation, but the sentence presents a result that contradicts it."
+ "id": 1250,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "Prairie restoration projects often begin with a symmetrical assumption: since decades of plowing destroyed the deep organic matter of grassland soils, replanting native grasses should rebuild that organic matter on roughly the same timescale. A long-term study that resampled restored prairies over several decades put the assumption to a direct test. ______ recovery lagged far behind the original loss: plots replanted for thirty years had regained only a small fraction of the organic matter their soils once held, and the study's models projected full recovery in centuries rather than decades.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Nevertheless,"
+  },
+  {
+   "id": "B",
+   "text": "Likewise,"
+  },
+  {
+   "id": "C",
+   "text": "Consequently,"
+  },
+  {
+   "id": "D",
+   "text": "For example,"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The assumption predicts recovery on the same timescale as the loss; the study's finding defies that prediction — thirty-year plots had regained only a small fraction. A finding that holds against an expectation takes the concessive \"Nevertheless.\"\n\n**The Full Solution:**\n- The setup states the expectation: rebuild should mirror destruction, decade for decade.\n- The middle sentence announces a direct test of that expectation, priming the reader for a verdict.\n- The verdict contradicts the expectation: recovery \"lagged far behind,\" with full recovery projected in centuries. A result that lands despite the stated assumption calls for \"Nevertheless.\"\n\n**Why the other choices are wrong:**\n- B: \"Likewise\" would present the finding as matching the assumption, when it overturns it.\n- C: \"Consequently\" would make the slow recovery a logical outcome of the assumption or the test, but the test merely revealed the lag; nothing in the setup caused it.\n- D: \"For example\" would offer the finding as an illustration of the assumption, the reverse of what the data do to it."
 }

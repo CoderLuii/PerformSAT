@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-022",
+  "question": "A retailer sets the regular price of an item $60\\%$ above the retailer's cost for the item. During a clearance sale, the regular price is reduced by $35\\%$. The clearance price is what percent greater than the retailer's cost?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$39\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$104\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracts the percents, $60\\% - 35\\%$; the $35\\%$ is taken from the larger regular price, so it removes more than $35$ points of markup.",
+    "C": "applies the $35\\%$ reduction only to the $60\\%$ markup ($0.65 \\times 60\\%$) instead of to the whole regular price.",
+    "D": "reports the multiplier $1.04$ as a percent instead of the change, which is $1.04 - 1 = 0.04$."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Net Effect of Successive Percent Changes**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Combined factor: $1.60 \\times 0.65 = 1.04$, so the clearance price is $4\\%$ above cost.\n\n**The Full Solution:**\nStep 1: Let the cost be $c$. The regular price is $1.60c$, and a $35\\%$ reduction leaves $65\\%$ of that: clearance price $= 0.65(1.60c) = 1.04c$.\nStep 2: A multiplier of $1.04$ means the clearance price is $4\\%$ greater than the cost.\nStep 3: Check with $c = 100$: regular price $160$, reduction $56$, clearance price $104$, which is $4\\%$ above $100$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($25\\%$): subtracts the percents, $60\\% - 35\\%$; the $35\\%$ is taken from the larger regular price, so it removes more than $35$ points of markup.\n* Choice C ($39\\%$): applies the $35\\%$ reduction only to the $60\\%$ markup ($0.65 \\times 60\\%$) instead of to the whole regular price.\n* Choice D ($104\\%$): reports the multiplier $1.04$ as a percent instead of the change, which is $1.04 - 1 = 0.04$.\n\n**Test Day Takeaway:** Multiply the factors, then subtract $1$: $(1.60)(0.65) - 1 = 0.04$. Percents applied to different bases never simply add or subtract."
+}

@@ -24,6 +24,14 @@ import {
   goalContextLine,
   normalizeFunnelGoal,
   buildFunnelProfile,
+  FUNNEL_ACKS,
+  funnelAckFor,
+  reassureBody,
+  rightMinutesCopy,
+  neverStuckCopy,
+  buildPathRecap,
+  signupBodyLine,
+  pathStepThreeSub,
 } from '../funnelConfig';
 
 // Emoji + dingbat/symbol blocks — UI copy must never contain emojis.
@@ -95,6 +103,15 @@ describe('funnel content invariants', () => {
       headings: ['confident', 'fine', 'stressed', 'heavy', undefined].map((f) =>
         reassureHeading(f, 'Maya')
       ),
+      FUNNEL_ACKS,
+      variants: FUNNEL_QUESTIONS.flatMap((q) => q.options.map((o) => JSON.stringify([
+        reassureBody({ baseline: o.value }),
+        rightMinutesCopy({ sessionLength: o.value }),
+        neverStuckCopy({ stuckHabit: o.value, testReaction: o.value }),
+        buildPathRecap({ [q.id]: o.value }),
+        signupBodyLine({ [q.id]: o.value }),
+        pathStepThreeSub({ blocker: o.value }),
+      ]))),
     });
     expect(allCopy).not.toMatch(EMOJI_RE);
     expect(allCopy).not.toMatch(/acely/i);
@@ -137,6 +154,143 @@ describe('buildInterludeLines', () => {
     expect(lines[0]).toBe('Reading your answers');
     expect(lines[2]).toBe('Calibrating your pacing');
     expect(lines[3]).toContain(String(DEFAULT_FUNNEL_GOAL));
+  });
+});
+
+describe('FUNNEL_ACKS + funnelAckFor (the tutor-thread contract)', () => {
+  const ACKED_QUESTIONS = ['timing', 'baseline', 'stuckHabit', 'studyWindow', 'blocker', 'motivation', 'commitment'];
+
+  test('every option value of every acked question has a voice-rule-compliant line', () => {
+    for (const qid of ACKED_QUESTIONS) {
+      const q = FUNNEL_QUESTIONS.find((x) => x.id === qid);
+      for (const opt of q.options) {
+        const line = FUNNEL_ACKS[qid][opt.value];
+        expect(typeof line).toBe('string');
+        expect(line.length).toBeGreaterThan(10);
+        expect(line.length).toBeLessThanOrEqual(90); // <=2 short sentences, 90 chars total
+        expect(line.split('. ').length).toBeLessThanOrEqual(2);
+        expect(line).not.toMatch(/—/); // no em-dashes in new copy
+        expect(line).not.toMatch(/you (said|mentioned)/i); // callback budget lives in the inner flow
+        expect(line).not.toContain('undefined');
+      }
+    }
+    // No stray ack sets for questions the display rule can never reach.
+    expect(Object.keys(FUNNEL_ACKS).sort()).toEqual([...ACKED_QUESTIONS].sort());
+  });
+
+  test('display rule: ack renders ONLY when the preceding step is a question (7 sites, incl. goal)', () => {
+    const answers = Object.fromEntries(
+      FUNNEL_QUESTIONS.map((q) => [q.id, q.options[0].value])
+    );
+    const ackedStepIds = FUNNEL_STEPS
+      .map((step, i) => ({ step, ack: funnelAckFor(i, answers) }))
+      .filter(({ ack }) => ack !== null)
+      .map(({ step }) => step.id);
+    // baseline/feeling follow questions; stuckHabit/blocker/motivation follow
+    // interstitials (no ack — the interstitial already reflected the answer);
+    // the goal screen follows the commitment question, the flow's loudest yes.
+    expect(ackedStepIds).toEqual([
+      'baseline', 'feeling', 'studyWindow', 'sessionLength', 'testReaction', 'commitment', 'goal',
+    ]);
+  });
+
+  test('missing or unknown answers render no ack (never "undefined")', () => {
+    const baselineIdx = FUNNEL_STEPS.findIndex((s) => s.id === 'baseline');
+    expect(funnelAckFor(baselineIdx, {})).toBeNull();
+    expect(funnelAckFor(baselineIdx, { timing: 'not-a-slug' })).toBeNull();
+    expect(funnelAckFor(0, { timing: 'lt2m' })).toBeNull(); // name step has no predecessor question
+  });
+});
+
+describe('adaptive interstitials', () => {
+  test('reassureBody: fresh gets the from-zero framing, studied keeps the plateau body', () => {
+    expect(reassureBody({ baseline: 'fresh' })).toContain('Starting from zero');
+    for (const b of ['sat', 'psat', 'practice', undefined]) {
+      expect(reassureBody({ baseline: b })).toBe(FUNNEL_INTERSTITIALS.reassure.body);
+    }
+  });
+
+  test('rightMinutesCopy: every sessionLength variant is authored; fallback = current copy', () => {
+    const values = FUNNEL_QUESTIONS.find((q) => q.id === 'sessionLength').options.map((o) => o.value);
+    for (const v of values) {
+      const { heading, body } = rightMinutesCopy({ sessionLength: v });
+      expect(heading.length).toBeGreaterThan(10);
+      expect(body).toContain('question types you actually miss');
+      expect(body).toContain('diagnostic');
+    }
+    const fallback = rightMinutesCopy({});
+    expect(fallback.heading).toBe(FUNNEL_INTERSTITIALS.rightMinutes.heading);
+    expect(fallback.body).toBe(FUNNEL_INTERSTITIALS.rightMinutes.body);
+  });
+
+  test('rightMinutesCopy 15m coheres with the commitment question (twenty minutes, not fifteen-is-enough)', () => {
+    expect(rightMinutesCopy({ sessionLength: '15m' }).body).toContain('Twenty focused minutes');
+  });
+
+  test('neverStuckCopy: deflated softens the heading; bodies advance to the mechanism without re-naming the habit', () => {
+    expect(neverStuckCopy({ testReaction: 'deflated' }).heading).toBe('A number without a plan just stings.');
+    expect(neverStuckCopy({}).heading).toBe(FUNNEL_INTERSTITIALS.neverStuck.heading);
+    const values = FUNNEL_QUESTIONS.find((q) => q.id === 'stuckHabit').options.map((o) => o.value);
+    for (const v of values) {
+      const { body } = neverStuckCopy({ stuckHabit: v });
+      expect(body).toMatch(/tutor/i); // advances to the product mechanism
+      expect(body).not.toMatch(/skip and hope|read the explanation/i); // never re-names the habit
+    }
+    expect(neverStuckCopy({}).body).toBe(FUNNEL_INTERSTITIALS.neverStuck.body);
+  });
+});
+
+describe('buildPathRecap', () => {
+  test('mirrors timing, sessions, and the blocker reframe; never a target row', () => {
+    const rows = buildPathRecap({ timing: 'lt2m', sessionLength: '15m', studyWindow: 'evening', blocker: 'plateau' });
+    expect(rows.map((r) => r.label)).toEqual(['Timing', 'Sessions', 'First job']);
+    expect(rows[1].value).toBe('About 15 focused minutes, evenings');
+    expect(rows[2].value).toBe('Break the plateau');
+    expect(JSON.stringify(rows)).not.toMatch(/target|goal/i); // the chip owns the number
+  });
+
+  test('each row omits independently; empty answers yield no rows', () => {
+    expect(buildPathRecap({}).length).toBe(0);
+    expect(buildPathRecap({ timing: 'gt6m' }).map((r) => r.label)).toEqual(['Timing']);
+    expect(buildPathRecap({ studyWindow: 'weekend' }).map((r) => r.label)).toEqual(['Sessions']);
+    expect(buildPathRecap({ blocker: 'lost' }).map((r) => r.label)).toEqual(['First job']);
+    expect(JSON.stringify(buildPathRecap({ sessionLength: 'varies' }))).not.toContain('undefined');
+  });
+});
+
+describe('signupBodyLine + pathStepThreeSub + goalContextLine seasoning', () => {
+  test('signup body is one consequence line with answers, null without', () => {
+    expect(signupBodyLine({ timing: 'lt2m' })).toContain('saved the moment');
+    expect(signupBodyLine({})).toBeNull();
+  });
+
+  test('path step 3 adapts only for the plateau blocker', () => {
+    expect(pathStepThreeSub({ blocker: 'plateau' })).toContain('stuck score');
+    expect(pathStepThreeSub({ blocker: 'busy' })).toBe('It rebuilds itself around what you miss, every session.');
+    expect(pathStepThreeSub({})).toBe('It rebuilds itself around what you miss, every session.');
+  });
+
+  test('goalContextLine seasons self/pressure and leaves other motivations on the tier line', () => {
+    expect(goalContextLine(1400, 'self')).toContain('chose for yourself');
+    expect(goalContextLine(1400, 'pressure')).toContain('quiets the noise');
+    expect(goalContextLine(1400, 'colleges')).toBe(goalContextLine(1400));
+    expect(goalContextLine(1400, undefined)).toBe(goalContextLine(1400));
+  });
+});
+
+describe('buildInterludeLines session sizing', () => {
+  test('adds a fifth sizing line when sessionLength is answered', () => {
+    const lines = buildInterludeLines({ timing: 'lt2m', sessionLength: '30m', studyWindow: 'evening' }, 1500, 'Maya');
+    expect(lines).toHaveLength(5);
+    expect(lines[3]).toBe('Sizing sessions to around half an hour, evenings');
+    expect(lines[4]).toContain('1500');
+  });
+
+  test('sizing line works without a study window and never prints undefined', () => {
+    const lines = buildInterludeLines({ sessionLength: '60m' }, 1500, '');
+    expect(lines).toHaveLength(5);
+    expect(lines[3]).toBe('Sizing sessions to an hour or more');
+    expect(JSON.stringify(lines)).not.toContain('undefined');
   });
 });
 

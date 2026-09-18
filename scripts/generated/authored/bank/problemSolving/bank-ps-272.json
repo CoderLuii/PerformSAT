@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-272",
+  "question": "A grocery chain selected $300$ shoppers at random from the shoppers who used the chain's mobile app during a certain week and asked each of them whether they would use a proposed self-checkout feature. Of the shoppers selected, $64\\%$ said they would. Which of the following is the largest population to which this result can be generalized?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "All shoppers who used the chain's mobile app during that week"
+    },
+    {
+      "id": "B",
+      "text": "All shoppers who visited the chain's stores during that week"
+    },
+    {
+      "id": "C",
+      "text": "The $300$ shoppers who were selected"
+    },
+    {
+      "id": "D",
+      "text": "All shoppers in the country who use a grocery store's mobile app"
+    }
+  ],
+  "distractorNotes": {
+    "B": "widens the population beyond the group the sample was drawn from",
+    "C": "restricts the conclusion to the sample, ignoring that the sample was random",
+    "D": "generalizes to shoppers at other chains, who were never in the sampling frame"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** A random sample supports conclusions about the group it was drawn from. The shoppers were drawn from app users that week, so that is the largest population.\n\n**The Full Solution:**\nStep 1: Identify the sampling frame: the shoppers who used the chain's mobile app during that week. The $300$ shoppers were selected at random from that group.\nStep 2: Random selection from a population means the sample is representative of that population, so the $64\\%$ estimate applies to all app users that week.\nStep 3: Check the wider groups: shoppers who visited a store without using the app had no chance of being selected, so nothing in the design supports a claim about them. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: store visitors who never opened the app could not be selected, and app users may differ from them exactly in willingness to use new technology.\n* Choice C: the estimate does apply to the $300$ shoppers, but random selection buys more than that, so this is not the largest population.\n* Choice D: the survey involved one chain's app users; other chains' shoppers were never in the frame.\n\n**Test Day Takeaway:** Find the phrase after \"selected at random from\" — that group, exactly, is the answer."
+}

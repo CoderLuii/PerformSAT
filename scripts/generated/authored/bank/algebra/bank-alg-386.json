@@ -1,0 +1,48 @@
+{
+ "id": "bank-alg-386",
+ "question": "A ridge map is drawn in the $xy$-plane with the base camp at the origin $O$, and the two points shown are the summit cairns $J$ and $K$. Point $M$ is the midpoint of $\\overline{JK}$. What are the coordinates of the midpoint of $\\overline{OM}$?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -2,
+     10
+    ],
+    [
+     10,
+     2
+    ]
+   ],
+   "xMin": -4,
+   "xMax": 12,
+   "yMin": -2,
+   "yMax": 12
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(-1, 5)$"
+  },
+  {
+   "id": "B",
+   "text": "$(2, 3)$"
+  },
+  {
+   "id": "C",
+   "text": "$(4, 6)$"
+  },
+  {
+   "id": "D",
+   "text": "$(5, 1)$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "uses J in place of M, giving the midpoint of O and J",
+  "C": "stops at M and never takes the second midpoint",
+  "D": "uses K in place of M, giving the midpoint of O and K"
+ },
+ "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $M$ is the midpoint of $(-2, 10)$ and $(10, 2)$, so $M = (4, 6)$; halving again gives $(2, 3)$.\n\n**The Full Solution:**\n\nStep 1: Read the cairns: $J$ is at $(-2, 10)$ and $K$ is at $(10, 2)$.\n\nStep 2: $M = \\left(\\frac{-2 + 10}{2}, \\frac{10 + 2}{2}\\right) = (4, 6)$.\n\nStep 3: The midpoint of $\\overline{OM}$ averages $(0, 0)$ with $(4, 6)$: $\\left(\\frac{0 + 4}{2}, \\frac{0 + 6}{2}\\right) = (2, 3)$. Check: $(2, 3)$ is half of $(4, 6)$, as it must be when one endpoint is the origin.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($(-1, 5)$): averages the origin with $J$ instead of with $M$.\n* Choice C ($(4, 6)$): reports $M$ itself and stops one midpoint short of what the question asks.\n* Choice D ($(5, 1)$): averages the origin with $K$ instead of with $M$.\n\n**Test Day Takeaway:** Nested midpoints are just the formula applied twice; naming the intermediate point keeps the second application honest."
+}

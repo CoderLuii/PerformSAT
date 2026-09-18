@@ -1,0 +1,46 @@
+{
+ "id": "bank-am-128",
+ "question": "A distributor's daily orders of wool sock bundles above its standing order follow the quadratic function $f$ graphed in the $xy$-plane. Which of the lines below meets the graph of $f$ at exactly one point?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y=-2x-2$"
+  },
+  {
+   "id": "B",
+   "text": "$y=2x+4$"
+  },
+  {
+   "id": "C",
+   "text": "$y=2x+6$"
+  },
+  {
+   "id": "D",
+   "text": "$y=4x+1$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "x^2+6x+7=0 has discriminant 8, so this line crosses the graph twice",
+  "C": "x^2+2x-1=0 has discriminant 8, so this line also crosses twice",
+  "D": "x^2+4=0 has discriminant -16, so this line misses the graph entirely"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The graph is $f(x)=(x+2)^2+1=x^2+4x+5$; only $y=2x+4$ gives $x^2+2x+1=0$, a perfect square with one root.\n\n**The Full Solution:**\nStep 1: Read the vertex $(-2,1)$ and the point $(0,5)$ from the figure, so $f(x)=(x+2)^2+1=x^2+4x+5$.\nStep 2: Setting $f(x)$ equal to a line $y=mx+b$ gives $x^2+(4-m)x+(5-b)=0$; exactly one shared point means $(4-m)^2-4(5-b)=0$.\nStep 3: For $y=2x+4$: $(4-2)^2-4(5-4)=4-4=0$, so this line is the tangent one. Check: $x^2+2x+1=(x+1)^2=0$ has the single solution $x=-1$, and $f(-1)=2=2(-1)+4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($y=-2x-2$): gives $x^2+6x+7=0$, whose discriminant is $8$, so this line crosses the graph twice.\n* Choice C ($y=2x+6$): gives $x^2+2x-1=0$, whose discriminant is also $8$ — two crossings, not one.\n* Choice D ($y=4x+1$): gives $x^2+4=0$, whose discriminant is $-16$, so this line misses the graph entirely.\n\n**Test Day Takeaway:** Test candidate lines by the sign of the discriminant: negative misses, zero touches once, positive crosses twice.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    -2,
+    1
+   ],
+   "a": 1,
+   "showVertex": true,
+   "showPoints": [
+    [
+     0,
+     5
+    ]
+   ]
+  }
+ }
+}

@@ -1,35 +1,31 @@
 {
-  "id": 705,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "The following text is from Apsley Cherry-Garrard's 1922 memoir The Worst Journey in the World, an account of a British expedition to Antarctica.\n\nPolar exploration is at once the cleanest and most isolated way of having a bad time which has been devised. It is the only form of adventure in which you put on your clothes at Michaelmas and keep them on until Christmas, and, save for a layer of the natural grease of the body, find them as clean as though they were new. It is more lonely than London, more secluded than any monastery, and the post comes but once a year.",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It recounts a single harrowing episode from the author's expedition and then reflects on the practical lessons that future explorers might draw from it."
-    },
-    {
-      "id": "B",
-      "text": "It lists the supplies an expedition must carry and then ranks them from the most essential to the least."
-    },
-    {
-      "id": "C",
-      "text": "It opens with a sweeping, wry generalization about an activity and then elaborates that claim through a series of pointed comparisons."
-    },
-    {
-      "id": "D",
-      "text": "It presents two competing views of polar travel and then argues that the rewards of exploration ultimately outweigh its hardships."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The text begins with a broad, dryly comic pronouncement — polar exploration is \"the cleanest and most isolated way of having a bad time which has been devised\" — and then builds out that claim with a string of comparisons: clothes worn from Michaelmas to Christmas somehow stay clean, the life is lonelier than London and more secluded than a monastery, and the post comes once a year. Choice A fails because no particular episode is narrated; Choice B fails because nothing is listed or ranked; and Choice D fails because the author never weighs rewards against hardships — the wry premise that the explorer is having \"a bad time\" is asserted from the first sentence, not argued against a rival view.",
-  "_meta": {
-    "quoteVerify": true,
-    "source": "Apsley Cherry-Garrard, The Worst Journey in the World (1922), opening of the Introduction"
+ "id": 705,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "A pipe organ is usually called a single instrument, but it behaves more like an ensemble under one player's hands. Each rank of pipes speaks with its own voice — flutes, reeds, strings — and the console's stops combine those voices in thousands of ways. The room joins in as well: in a stone church, a chord can linger for several seconds after the keys are released, so the building acts as a final stop the player cannot adjust. Organists therefore learn an instrument and its hall together, choosing tempos that leave the reverberation room to speak.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It traces the historical development of an instrument from its earliest surviving form to the versions being built today."
+  },
+  {
+   "id": "B",
+   "text": "It compares the methods of two rival builders and argues that one of them produces the more versatile instruments."
+  },
+  {
+   "id": "C",
+   "text": "It questions a familiar way of describing an instrument, details the features that complicate that description, and notes what those features mean for performers."
+  },
+  {
+   "id": "D",
+   "text": "It describes one memorable performance in a stone church and then explains why the hall's unusual acoustics made that particular performance nearly impossible to repeat."
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The text opens by pushing back on the label \"a single instrument,\" then details what complicates it — many voices under one player, plus a room that acts as an unadjustable stop — and closes with the consequence for organists, who must learn instrument and hall together.\n\n**The Full Solution:**\n- Beat one: a familiar description is challenged — an organ behaves \"more like an ensemble\" than a single instrument.\n- Beat two: the complicating features are laid out — ranks with distinct voices, stops that combine them, and a room whose reverberation the player cannot control.\n- Beat three: the payoff for performers — organists choose tempos that account for the hall, learning the two as one.\n\n**Why the other choices are wrong:**\n- A: No history is traced; the text never mentions early or modern versions of the organ.\n- B: No builders appear, rival or otherwise, and nothing is ranked for versatility.\n- D: No particular performance is described — the stone church appears only as a general example of how rooms shape sound."
 }

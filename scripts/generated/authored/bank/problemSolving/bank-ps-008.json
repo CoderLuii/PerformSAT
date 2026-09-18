@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-008",
+  "question": "A ceramics studio produced $640$ pieces last month. Of these pieces, $37.5\\%$ were glazed, and $40\\%$ of the glazed pieces were sold at a fair. How many of the glazed pieces were not sold at the fair?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$96$"
+    },
+    {
+      "id": "B",
+      "text": "$144$"
+    },
+    {
+      "id": "C",
+      "text": "$240$"
+    },
+    {
+      "id": "D",
+      "text": "$384$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the number of glazed pieces that were sold rather than the number that were not sold.",
+    "C": "stops at the number of glazed pieces and never applies the $40\\%$.",
+    "D": "applies the $60\\%$ unsold share to all $640$ pieces instead of to the $240$ glazed pieces."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Filter then Subtract**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Glazed pieces: $0.375 \\times 640 = 240$. The $60\\%$ not sold: $0.60 \\times 240 = 144$.\n\n**The Full Solution:**\nStep 1: Filter to the glazed pieces: $0.375 \\times 640 = 240$.\nStep 2: Of these, $40\\%$ were sold, so $0.40 \\times 240 = 96$ were sold and $240 - 96 = 144$ were not.\nStep 3: Check: the unsold share is $100\\% - 40\\% = 60\\%$, and $0.60 \\times 240 = 144$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($96$): reports the number of glazed pieces that were sold rather than the number that were not sold.\n* Choice C ($240$): stops at the number of glazed pieces and never applies the $40\\%$.\n* Choice D ($384$): applies the $60\\%$ unsold share to all $640$ pieces instead of to the $240$ glazed pieces.\n\n**Test Day Takeaway:** Filter first, then subtract (or use the complement percent) within the filtered group. Reread the last sentence to see which group and which share the question wants."
+}

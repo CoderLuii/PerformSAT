@@ -1,0 +1,46 @@
+{
+  "id": 4,
+  "question": "A water utility installs cube-shaped rainwater cisterns at two pumping stations. The table gives the interior edge length, in meters, of each cistern. If $1$ cubic meter of water is $1{,}000$ liters, what is the interior volume, in liters, of cistern B?",
+  "questionTable": {
+    "headers": [
+      "Cistern",
+      "Interior edge length (meters)"
+    ],
+    "rows": [
+      [
+        "A",
+        "$0.9$"
+      ],
+      [
+        "B",
+        "$1.5$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3.375$"
+    },
+    {
+      "id": "B",
+      "text": "$2{,}250$"
+    },
+    {
+      "id": "C",
+      "text": "$3{,}375$"
+    },
+    {
+      "id": "D",
+      "text": "$13{,}500$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "cubes the edge correctly but reports 3.375 cubic meters without converting to liters",
+    "B": "squares the edge instead of cubing it: 1.5 squared = 2.25, then times 1000 = 2250",
+    "D": "uses the surface area 6 times 1.5 squared = 13.5 in place of the volume, then times 1000 = 13500"
+  },
+  "correctAnswer": "C",
+  "hint": "Find the volume in cubic meters first; the conversion to liters is the last step, not the first.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** Cistern B holds $1.5^3 = 3.375$ cubic meters, and $3.375 \\cdot 1{,}000 = 3{,}375$ liters.\n\n**The Full Solution:**\nStep 1: The table gives cistern B an interior edge length of $1.5$ meters, so its interior is a cube with $s = 1.5$.\nStep 2: $V = s^3 = 1.5^3 = 1.5 \\cdot 1.5 \\cdot 1.5 = 3.375$ cubic meters.\nStep 3: Each cubic meter is $1{,}000$ liters, so $3.375 \\cdot 1{,}000 = 3{,}375$ liters. Check: cistern A, with edge $0.9$ meter, holds $0.9^3 = 0.729$ cubic meter, or $729$ liters — smaller, as its shorter edge requires ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3.375$): the volume in cubic meters, reported before the conversion the question asks for.\n* Choice B ($2{,}250$): squares the edge instead of cubing it, giving $1.5^2 = 2.25$ and then $2{,}250$.\n* Choice D ($13{,}500$): uses the surface area $6 \\cdot 1.5^2 = 13.5$ in place of the volume, then converts to $13{,}500$.\n\n**Test Day Takeaway:** Do the geometry in the given units, then convert once at the end — converting first invites you to apply the factor to the wrong power."
+}

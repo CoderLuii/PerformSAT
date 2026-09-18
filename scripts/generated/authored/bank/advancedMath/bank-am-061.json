@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-061",
+  "question": "The expression $7m + 4n - 3m + 9n$ is equivalent to $am + bn$, where $a$ and $b$ are constants. What is the value of $b$?",
+  "correctAnswer": "13",
+  "explanation": "**SAT Pattern: Coefficient After Combining**\n\n**The correct answer is $13$.**\n\n**The Fast Way (~10s):** Only the $n$-terms decide $b$: $4n + 9n = 13n$, so $b = 13$.\n\n**The Full Solution:**\nStep 1: Group the like terms: $(7m - 3m) + (4n + 9n)$.\nStep 2: Combine each group separately: $7m - 3m = 4m$, and $4n + 9n = 13n$, so the expression equals $4m + 13n$.\nStep 3: Matching $4m + 13n$ with $am + bn$ gives $a = 4$ and $b = 13$. Check with $m = 1$ and $n = 1$: the original is $7 + 4 - 3 + 9 = 17$, and $4(1) + 13(1) = 17$. $\\checkmark$\n\n**Common Mistakes:** Reporting $4$, the coefficient of $m$, when the question asks for the coefficient of $n$; adding every coefficient in sight, $7 + 4 - 3 + 9 = 17$; letting the minus sign in front of $3m$ leak into the $n$-terms and computing $9 - 4 = 5$.\n\n**Test Day Takeaway:** Combining like terms is two independent sums, one per variable. Decide which coefficient the question wants before you simplify."
+}

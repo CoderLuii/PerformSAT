@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "During a drought, the volume of water stored in a reservoir $m$ months after the drought began is modeled by $V(m) = 74{,}000(0.8)^{m/5}$, where $V(m)$ is measured in acre-feet. Which statement best describes how the stored volume changes?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Every $5$ months, the stored volume is $80\\%$ of what it was $5$ months earlier."
+  },
+  {
+   "id": "B",
+   "text": "Every $5$ months, the stored volume decreases by $80\\%$."
+  },
+  {
+   "id": "C",
+   "text": "Each month, the stored volume is $80\\%$ of what it was the previous month."
+  },
+  {
+   "id": "D",
+   "text": "Each month, the stored volume decreases by $5\\%$."
+  }
+ ],
+ "distractorNotes": {
+  "B": "reads the base 0.8 as the fraction lost rather than the fraction kept; an 80% decrease would leave 20% and require a base of 0.2",
+  "C": "ignores the division by 5 in the exponent and applies the factor 0.8 every single month",
+  "D": "swaps the roles of the base and the 5 in the exponent, reporting a 5% monthly decrease"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The exponent $\\frac{m}{5}$ increases by $1$ every $5$ months, and each time it does the volume is multiplied by the base $0.8$ — that is, it becomes $80\\%$ of what it was.\n\n**The Full Solution:**\nStep 1: In a model of the form $a \\cdot b^{m/n}$, the base $b$ is the factor applied once every $n$ units of $m$. Here $b = 0.8$ and $n = 5$, so the factor $0.8$ applies once every $5$ months.\nStep 2: Multiplying by $0.8$ means the new volume is $80\\%$ of the old volume, which is the same as a $20\\%$ decrease — not an $80\\%$ decrease.\nStep 3: So every $5$ months the reservoir holds $80\\%$ of what it held $5$ months earlier. Check: $V(0) = 74{,}000$ and $V(5) = 74{,}000(0.8)^{1} = 59{,}200$, and $\\frac{59{,}200}{74{,}000} = 0.8$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (decreases by $80\\%$ every $5$ months): mistakes the multiplier for the loss. A drop of $80\\%$ would leave only $20\\%$, which would need a base of $0.2$; here $V(5) = 59{,}200$, a loss of $20\\%$.\n* Choice C ($80\\%$ each month): drops the $\\div 5$ in the exponent. That model would give $V(5) = 74{,}000(0.8)^5 \\approx 24{,}248$, far below the actual $59{,}200$.\n* Choice D (decreases by $5\\%$ each month): pulls the $5$ out of the exponent and reads it as a percent. The $5$ is a length of time, not a rate.\n\n**Test Day Takeaway:** In $a \\cdot b^{m/n}$, the base tells you the fraction that **remains** and the denominator tells you how long it takes — \"is $80\\%$ of\" and \"decreases by $80\\%$\" are opposite readings of the same number."
+}

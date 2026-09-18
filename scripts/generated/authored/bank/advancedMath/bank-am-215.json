@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-215",
+ "question": "A signal-timing model gives throughput $T(x)=-3(x-24)^{2}+k$, in vehicles per hour, for a green interval of $x$ seconds, where $k$ is a constant, and the greatest throughput the model gives is $1{,}900$ vehicles per hour. What is the best interpretation of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$k$ is 24, the green interval, in seconds, that produces the greatest throughput."
+  },
+  {
+   "id": "B",
+   "text": "$k$ is 1,900, the green interval, in seconds, that produces the greatest throughput."
+  },
+  {
+   "id": "C",
+   "text": "$k$ is 1,900, the greatest throughput, in vehicles per hour, the model gives."
+  },
+  {
+   "id": "D",
+   "text": "$k$ is 24, the greatest throughput, in vehicles per hour, the model gives."
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the vertex's x-coordinate, 24, as the constant k",
+  "B": "pairs the right number with the wrong quantity, calling 1,900 a time",
+  "D": "pairs the wrong number with the right quantity, calling 24 a throughput"
+ },
+ "explanation": "**SAT Pattern: Interpret Vertex Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The squared term is never positive, so $T$ is largest when $x=24$, and there $T=k$; the greatest throughput is 1,900, so $k=1{,}900$.\n\n**The Full Solution:**\nStep 1: Because $-3(x-24)^{2}\\le 0$, the model's output never exceeds $k$.\nStep 2: The output equals $k$ exactly when $x=24$ seconds.\nStep 3: The greatest throughput is 1,900 vehicles per hour, so $k=1{,}900$ and it measures throughput. Check: $T(24)=0+1{,}900$, and $T(20)=-48+1{,}900=1{,}852$, which is smaller ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: names the green interval 24 as $k$; 24 sits inside the squared term.\n* Choice B: keeps 1,900 but calls it a time in seconds.\n* Choice D: keeps the throughput label but attaches the number 24.\n\n**Test Day Takeaway:** In $a(x-h)^{2}+k$ with $a<0$, $h$ is the input that maximizes and $k$ is the maximum output — check the units of each."
+}

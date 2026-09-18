@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-189",
+ "question": "For a summer reading program, the two week numbers with sign-ups equal to the yearly average are the solutions of $3x^2-21x+30=0$. What is the product of these two week numbers?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Sum/Product of Roots — Vieta's**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~10s):** The product of the solutions of $ax^2+bx+c=0$ is $\\frac{c}{a}=\\frac{30}{3}=10$.\n\n**The Full Solution:**\nStep 1: Read off $a=3$, $b=-21$, $c=30$.\nStep 2: The product of the solutions is $\\frac{c}{a}=\\frac{30}{3}$.\nStep 3: Simplify to $10$. Check: $3x^2-21x+30=3(x-2)(x-5)$, and $2\\cdot5=10$ ✓\n\n**Common Mistakes:**\n* $30$: uses $c$ alone and forgets to divide by $a=3$.\n* $7$: reports the sum $-\\frac{b}{a}=7$ instead of the product.\n* $-10$: attaches a negative sign that belongs only to the sum formula.\n\n**Test Day Takeaway:** Product is $\\frac{c}{a}$ with no sign change; only the sum carries the minus."
+}

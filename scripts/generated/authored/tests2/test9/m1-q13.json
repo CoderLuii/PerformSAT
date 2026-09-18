@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "A plating run has two costing formulas, $a(2x+5)-3(x-4)$ and $7x+b$, that give the same result for every value of $x$. Here $a$ and $b$ are constants. What is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$37$"
+  },
+  {
+   "id": "D",
+   "text": "$42$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops after finding a = 5 and reports a instead of b",
+  "B": "distributes -3(x - 4) as -3x - 12, so the constant becomes 25 - 12 = 13",
+  "D": "reports a + b = 5 + 37 instead of b alone"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Expanding gives $(2a-3)x+(5a+12)$, so $2a-3=7$ makes $a=5$, and then $b=5(5)+12=37$.\n\n**The Full Solution:**\nStep 1: Expand the left formula: $a(2x+5)-3(x-4)=2ax+5a-3x+12$, which groups as $(2a-3)x+(5a+12)$.\nStep 2: Two formulas that agree for EVERY $x$ must match term by term. The $x$-terms give $2a-3=7$, so $2a=10$ and $a=5$.\nStep 3: The constant terms give $b=5a+12=5(5)+12=37$. Check at $x=1$: the left side is $5(7)-3(-3)=35+9=44$, and the right side is $7+37=44$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): this is $a$, found on the way to $b$ — the question asks for the constant term.\n* Choice B ($13$): distributes $-3(x-4)$ as $-3x-12$, so the constant reads $25-12=13$. Subtracting a negative adds $+12$.\n* Choice D ($42$): adds $a$ and $b$ together, $5+37=42$, instead of reporting $b$.\n\n**Test Day Takeaway:** “True for every value of $x$” means the coefficients match one axis at a time: solve the $x$-coefficient equation first, substitute that value into the constant equation, then check which letter the question wants."
+}

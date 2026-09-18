@@ -5,19 +5,21 @@
   "band": 4,
   "domain": "expression-of-ideas",
   "skill": "transitions",
+  "module": 2,
+  "passage": "Connoisseurs long treated a Renaissance master's name on an altarpiece as an assurance that every figure came from his own brush. The surviving commissioning contracts read differently. ______ many stipulate only that the master design the composition and paint the principal heads, expressly leaving draperies, backgrounds, and minor figures to the assistants of his shop.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "Therefore,"
+      "text": "Similarly,"
     },
     {
       "id": "B",
-      "text": "Likewise,"
+      "text": "Meanwhile,"
     },
     {
       "id": "C",
-      "text": "Meanwhile,"
+      "text": "Consequently,"
     },
     {
       "id": "D",
@@ -25,10 +27,8 @@
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The second sentence says recent study tells a different story, and the third corrects the old picture of the dodo, so an intensifying-corrective transition fits. \"Therefore\" (A) marks a consequence; \"Likewise\" (B) marks similarity; and \"Meanwhile\" (C) marks a parallel event in time, none of which captures the correction the third sentence makes.",
-  "passage": "For decades, textbooks described the dodo as a clumsy, stupid bird that waddled to its own extinction. Recent study of the few surviving skeletons and of historical accounts tells a different story. ______ the dodo was well adapted to its island home, quick on its feet, and driven to extinction less by any failing of its own than by the rats, pigs, and hunger of arriving sailors.",
+  "explanation": "**Choice D is correct.** The passage announces that the contracts \"read differently\" from the connoisseurs' assumption, and the final sentence delivers the correcting detail. \"In fact\" is the transition that introduces the reality behind a mistaken belief.\n\n**The Full Solution:**\n- Sentence one: the belief — a master's name means every figure is his.\n- Sentence two: the pivot — the documents say otherwise.\n- Sentence three: the substance of the correction — contracts assign only the design and the principal heads to the master. \"In fact\" signals precisely this corrective specification.\n\n**Why the other choices are wrong:**\n- A: \"Similarly\" would liken the contracts' contents to the belief they overturn.\n- B: \"Meanwhile\" sets two developments side by side in time; there is only one thread here.\n- C: \"Consequently\" would make the contracts' stipulations a result of their reading differently, but the sentence is explaining what they say, not what followed from it.",
   "_meta": {
-    "anchor": "the dodo — reassessment of a maligned bird; corrective"
-  },
-  "module": 2
+    "anchor": "Renaissance workshop contracts — divided authorship; corrective transition"
+  }
 }

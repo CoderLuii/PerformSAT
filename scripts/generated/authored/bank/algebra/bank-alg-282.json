@@ -1,0 +1,53 @@
+{
+  "question": "Two gauges report the pressure in a reactor, in kilopascals, as $5(2s+3)$ and $8s+21$ at setpoint index $s$, and the table lists both readings at three setpoints. For how many setpoints do the two gauges report the same pressure?",
+  "questionTable": {
+    "headers": [
+      "Setpoint index $s$",
+      "First gauge (kPa)",
+      "Second gauge (kPa)"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$25$",
+        "$29$"
+      ],
+      [
+        "$2$",
+        "$35$",
+        "$37$"
+      ],
+      [
+        "$5$",
+        "$65$",
+        "$61$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "No setpoints"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one setpoint"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two setpoints"
+    },
+    {
+      "id": "D",
+      "text": "Every setpoint"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "reads the three sampled rows, none of which match, as proof that the readings never agree",
+    "C": "assumes two linear readings can cross twice, which only a nonlinear model allows",
+    "D": "treats the equation as an identity, which would require the left side to simplify to 8s+21 rather than 10s+15"
+  },
+  "explanation": "**SAT Pattern: Identifying Identity / Contradiction Equations**\n\n**Choice B is correct.** Distributing gives $10s+15=8s+21$, and the $s$ terms do not cancel, so the equation has exactly one solution.\n\n**The Fast Way (~35s):** $5(2s+3)=10s+15$. Since $10s$ and $8s$ are different, one subtraction leaves $2s=6$, so exactly one setpoint works.\n\n**The Full Solution:**\n\nStep 1: Set the readings equal: $5(2s+3)=8s+21$, and distribute on the left to get $10s+15=8s+21$.\n\nStep 2: Subtract $8s$ and $15$ from both sides: $2s=6$. Because the coefficient of $s$ is not zero, the equation has exactly one solution.\n\nStep 3: That solution is $s=3$. Check: $5(2\\cdot 3+3)=45$ and $8(3)+21=45$, so the gauges agree at $s=3$ and nowhere else.\n\n**Why the wrong answers are tempting:**\n\n* Choice A (No setpoints): treats the three sampled rows as the whole story; the table simply never samples $s=3$.\n* Choice C (Exactly two setpoints): expects two crossings, but two lines with different slopes meet exactly once.\n* Choice D (Every setpoint): treats the equation as an identity, which would require the left side to simplify to $8s+21$; distributing gives $10s+15$ instead.\n\n**Test Day Takeaway:** After distributing, compare the coefficients of the variable: different coefficients means exactly one solution, no matter what a sampled table shows.",
+  "id": "bank-alg-282"
+}

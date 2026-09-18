@@ -1,31 +1,31 @@
 {
-  "id": 1251,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "For years, researchers trying to reconstruct past ocean temperatures from the chemistry of fossil shells were limited by a stubborn ambiguity: the ratio they measured depended on both the temperature of the water and its isotopic composition, and the two effects could not be separated from a single measurement. A team developed a technique that reads a second, independent signal from the same shell—the way certain heavy isotopes bond together, which depends on temperature alone. Applying it to shells of known age let them pin down water temperature without having to assume the seawater's composition. ______ the team could extend reliable temperature reconstructions back across intervals where the older method had yielded only ranges too wide to be useful.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "B",
-      "text": "For instance,"
-    },
-    {
-      "id": "C",
-      "text": "As a result,"
-    },
-    {
-      "id": "D",
-      "text": "Meanwhile,"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The new technique removed the ambiguity that had limited the old method, and the final sentence reports the payoff that followed—reliable reconstructions across intervals that had previously yielded only vague ranges—so \"As a result\" marks the consequence. \"Nevertheless\" would signal an outcome counter to expectation, which does not fit a straightforward payoff. \"For instance\" would introduce an example rather than a result. \"Meanwhile\" would mark something happening at the same time elsewhere, not a consequence of the technique."
+ "id": 1251,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "Agricultural historians reckoning the economics of coastal farms describe the salt marsh as the cheapest hayfield a farmer could hold. The marsh asked for no clearing, no plowing, no seeding, and no manuring; its grasses resowed themselves with every tide-borne season, and a farmer's only real costs were the mowing and the hauling of the crop. ______ the upland meadows on the same farms returned hay only after years of clearing and regular dressings of manure, and their yields sagged whenever that labor was withheld.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "On the contrary,"
+  },
+  {
+   "id": "B",
+   "text": "As a result,"
+  },
+  {
+   "id": "C",
+   "text": "By comparison,"
+  },
+  {
+   "id": "D",
+   "text": "Meanwhile,"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage sets the upland meadows' costs beside the marsh's — two hayfields on the same farms, weighed against each other — and \"By comparison\" is the phrase that stages exactly that side-by-side measurement.\n\n**The Full Solution:**\n- The first two sentences itemize the marsh's economics: no clearing, plowing, seeding, or manuring; costs limited to mowing and hauling.\n- The final sentence itemizes the uplands' economics on the same axes: years of clearing, regular manuring, yields that sagged without labor.\n- Both accounts are true and set beside each other so the marsh's cheapness registers; a juxtaposition of two measured cases calls for \"By comparison.\"\n\n**Why the other choices are wrong:**\n- A: \"On the contrary\" rejects a preceding claim as false, but nothing here is denied — both descriptions stand.\n- B: \"As a result\" would make the uplands' costs a consequence of the marsh's cheapness, though neither causes the other.\n- D: \"Meanwhile\" marks separate events unfolding at the same time, not a weighed comparison between two standing conditions."
 }

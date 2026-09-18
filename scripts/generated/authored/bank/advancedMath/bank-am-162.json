@@ -1,0 +1,29 @@
+{
+  "question": "A tuning parameter $k$ must be an integer for which no real value of $x$ satisfies $x^{2}+kx+30=0$. How many values of $k$ meet this requirement?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$10$"
+    },
+    {
+      "id": "B",
+      "text": "$11$"
+    },
+    {
+      "id": "C",
+      "text": "$20$"
+    },
+    {
+      "id": "D",
+      "text": "$21$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "counted only the positive values of k",
+    "B": "counted k = 0 through k = 10 and ignored the negative values",
+    "C": "counted -10 through 10 but omitted k = 0"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** $k^{2}<120$ means $|k|\\le 10$, and the integers from $-10$ to $10$ number $21$.\n\n**The Full Solution:**\nStep 1: No real solutions requires $k^{2}-4(1)(30)<0$, so $k^{2}<120$.\nStep 2: Since $10^{2}=100<120$ and $11^{2}=121>120$, the integers satisfying this are $-10$ through $10$.\nStep 3: Count them: $10$ negative, $10$ positive, and $0$, for $21$ values. Check: $k=10$ gives $100-120=-20<0$, and $k=11$ gives $121-120=1>0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($10$): counts only the positive values of $k$.\n* Choice B ($11$): counts $k=0$ through $k=10$ and ignores the negatives.\n* Choice C ($20$): counts $-10$ through $10$ but omits $k=0$.\n\n**Test Day Takeaway:** Counting integers in a symmetric range means twice the positive count plus one for $0$.",
+  "id": "bank-am-162"
+}

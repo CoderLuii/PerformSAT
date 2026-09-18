@@ -1,0 +1,29 @@
+{
+ "question": "A plant models the output of two streams as $y=6x+1$ and $y=6x-4$, where $x$ is the hour of operation and $y$ is the number of liters produced. How many ordered pairs $(x,y)$ satisfy both equations?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "No ordered pairs"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one ordered pair"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two ordered pairs"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many ordered pairs"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "assumes every pair of linear equations meets at exactly one point",
+  "C": "expects two crossings, which two lines of equal slope can never have",
+  "D": "reads the matching 6x terms as making the two equations identical"
+ },
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**Choice A is correct.** Setting the two expressions for $y$ equal gives $6x+1=6x-4$, which reduces to $1=-4$, so no pair satisfies both.\n\n**The Fast Way (~20s):** Both equations give $y$ in terms of $6x$, so $6x+1=6x-4$ leaves $1=-4$, a false statement.\n\n**The Full Solution:**\n\nStep 1: Substitute the first expression for $y$ into the second: $6x+1=6x-4$.\n\nStep 2: Subtract $6x$ from both sides. The variable disappears, leaving $1=-4$.\n\nStep 3: That statement is false for every $x$, so there is no ordered pair satisfying both equations. Check: at any hour the first stream is exactly $5$ units above the second, since $(6x+1)-(6x-4)=5$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: applies the usual expectation of a single intersection, which fails when the two slopes are equal.\n* Choice C: two straight lines cannot cross twice.\n* Choice D: infinitely many solutions would require the constants to match as well, but $1\\ne -4$.\n\n**Test Day Takeaway:** Equal slopes with different constants mean parallel lines and no solution; equal slopes with equal constants mean one line and infinitely many.",
+ "id": "bank-alg-414"
+}

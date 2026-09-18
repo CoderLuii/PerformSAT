@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 1,
-  "passage": "Franz Boas drew one overriding lesson from the winter of 1883 he spent among the Inuit of Baffin Island ______ the need to understand each culture on its own terms rather than rank it on a single ladder of progress.",
+  "passage": "Inside a nineteenth-century salmon cannery, the contract system divided the season's work into a fixed sequence of ______ butchering, cleaning, filling, cooking, and labeling. Each crew was paid by the finished case, not by the hour, so speed at every station mattered.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Island,"
-    },
-    {
-      "id": "B",
-      "text": "Island;"
-    },
-    {
-      "id": "C",
-      "text": "Island"
-    },
-    {
-      "id": "D",
-      "text": "Island:"
-    }
+    { "id": "A", "text": "operations," },
+    { "id": "B", "text": "operations;" },
+    { "id": "C", "text": "operations" },
+    { "id": "D", "text": "operations:" }
   ],
   "correctAnswer": "D",
-  "explanation": "The first clause announces \"one overriding lesson,\" and what follows is that lesson stated as a noun phrase. A colon properly introduces such an announced explanation, so choice D is correct. A comma (A) or no punctuation (C) would run the announcement into its content, and a semicolon (B) requires a full independent clause after it, which \"the need to understand each culture...\" is not.",
-  "_meta": {
-    "anchor": "Franz Boas, Baffin Island"
-  }
+  "explanation": "**Choice D is correct.** A complete statement introduces a list of the operations, and the conventional mark before such a list is a colon.\n\n**The Full Solution:**\n- \"The contract system divided the season's work into a fixed sequence of operations\" is a full independent clause.\n- What follows — \"butchering, cleaning, filling, cooking, and labeling\" — itemizes the operations just announced.\n- A colon after a complete statement is the mark that formally introduces that itemization.\n\n**Why the other choices are wrong:**\n- A: A comma leaves the list dangling as if it were one more item in the sentence's own grammar, blurring where the announcement ends and the list begins.\n- B: A semicolon must join two independent clauses; the list of gerunds is not a clause.\n- C: With no mark at all, \"operations butchering\" collides — the list needs a boundary to introduce it."
 }

@@ -1,0 +1,29 @@
+{
+  "id": 7,
+  "question": "A hardware supplier raised the price of a bucket of primer from $\\$28.50$ to $\\$34.20$ and raised the price of a paint roller from $\\$6.00$ by the same percent. What is the new price of the roller?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\$4.80$"
+    },
+    {
+      "id": "B",
+      "text": "$\\$7.00$"
+    },
+    {
+      "id": "C",
+      "text": "$\\$7.20$"
+    },
+    {
+      "id": "D",
+      "text": "$\\$11.70$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies the 20% as a decrease: 6.00(0.80) = 4.80",
+    "B": "divides the \\$5.70 increase by the new price 34.20 instead of the original 28.50, getting 16.67% and 6.00(1.1667) = 7.00",
+    "D": "adds the \\$5.70 dollar increase to the roller price instead of the percent increase"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent Increase**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** $34.20\\div28.50=1.20$, a $20\\%$ increase, so the roller becomes $6.00(1.20)=\\$7.20$.\n\n**The Full Solution:**\nStep 1: The primer rose by $34.20-28.50=\\$5.70$. As a percent of the original price that is $\\dfrac{5.70}{28.50}=0.20$, or $20\\%$.\nStep 2: A $20\\%$ increase multiplies a price by $1.20$, so the new roller price is $6.00(1.20)$.\nStep 3: $6.00(1.20)=\\$7.20$. Check: $20\\%$ of $\\$6.00$ is $\\$1.20$, and $6.00+1.20=7.20$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\$4.80$): applies the $20\\%$ as a decrease, computing $6.00(0.80)=4.80$ instead of increasing.\n* Choice B ($\\$7.00$): divides the $\\$5.70$ increase by the new price $\\$34.20$ instead of the original $\\$28.50$, producing $16.\\overline{6}\\%$ and $6.00(1.16\\overline{6})=7.00$.\n* Choice D ($\\$11.70$): adds the $\\$5.70$ dollar increase to the roller price. Equal percent increases are not equal dollar increases.\n\n**Test Day Takeaway:** Percent change is always measured against the ORIGINAL amount; convert it to a multiplier once, then reuse that multiplier on the second quantity."
+}

@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "A community clinic models its weekly surplus of test kits by $s(w) = w^2 - 11w + 24$, where $w$ is the number of weeks after a shipment arrives. For which values of $w$ is the modeled surplus equal to $0$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$w = -8$ and $w = -3$"
+    },
+    {
+      "id": "B",
+      "text": "$w = -6$ and $w = -4$"
+    },
+    {
+      "id": "C",
+      "text": "$w = 3$ and $w = 8$"
+    },
+    {
+      "id": "D",
+      "text": "$w = 4$ and $w = 6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "factors as (w + 3)(w + 8), which would give a middle term of +11w rather than -11w",
+    "B": "picks factors of 24 that add to 10, not 11",
+    "D": "picks factors of 24 that add to 10 with the correct signs but the wrong pair"
+  },
+  "correctAnswer": "C",
+  "hint": "Factor the expression and read the values that make each factor zero.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** $w^2 - 11w + 24 = (w - 3)(w - 8)$, so the surplus is $0$ in week $3$ and week $8$.\n\n**The Full Solution:**\nStep 1: Factor. Two numbers multiply to $24$ and add to $-11$: they are $-3$ and $-8$, so $s(w) = (w - 3)(w - 8)$.\nStep 2: Set each factor to zero. $w - 3 = 0$ gives $w = 3$, and $w - 8 = 0$ gives $w = 8$.\nStep 3: Check one. $s(3) = 9 - 33 + 24 = 0$, and $s(8) = 64 - 88 + 24 = 0$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($w = -8$ and $w = -3$): comes from $(w + 3)(w + 8)$, which expands with a middle term of $+11w$, not $-11w$.\n* Choice B ($w = -6$ and $w = -4$): uses $6$ and $4$, which multiply to $24$ but add to $10$, and with the wrong signs besides.\n* Choice D ($w = 4$ and $w = 6$): uses $4$ and $6$: their product is $24$ but their sum is $10$, not $11$.\n\n**Test Day Takeaway:** Factor pairs must match BOTH the product and the sum. Check the sum before committing to a pair."
+}

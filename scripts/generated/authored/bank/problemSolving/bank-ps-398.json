@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-398",
+ "question": "One storm produced five peak gusts at a ridge-top tower. Two of the recorded speeds differ by $12$ kilometers per hour and are written $k$ and $k + 12$; the other three were $74$, $68$, and $81$ kilometers per hour. If the five gusts averaged $77$ kilometers per hour, what is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$69$"
+  },
+  {
+   "id": "B",
+   "text": "$75$"
+  },
+  {
+   "id": "C",
+   "text": "$77$"
+  },
+  {
+   "id": "D",
+   "text": "$81$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "removes the $12$ from both unknown gusts, solving $2k = 162 - 24$ to get $69$",
+  "C": "assumes an unknown entry equals the mean and reports $77$",
+  "D": "forgets the $+12$ term entirely, solving $2k = 162$ to get $81$"
+ },
+ "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice B is correct.** The five gusts total $5(77) = 385$; the three known gusts total $223$, so $k + (k + 12) = 162$ and $k = 75$.\n\n**The Fast Way (~50s):** $385 - 223 = 162$ for the two unknown gusts. Subtracting the $12$-unit gap leaves $150$, so $k = 75$.\n\n**The Full Solution:**\n\nStep 1: Turn the mean into a total: $5(77) = 385$ kilometers per hour summed across the five gusts.\n\nStep 2: Subtract the three known gusts. Their sum is $74 + 68 + 81 = 223$, so the two unknown gusts total $385 - 223 = 162$.\n\nStep 3: Solve $k + (k + 12) = 162$, so $2k = 150$ and $k = 75$. Check: the five gusts are $74$, $68$, $81$, $75$, and $87$, whose sum is $385$, and $\\frac{385}{5} = 77$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($69$): subtracts the $12$ twice, solving $2k = 162 - 24 = 138$. Only one of the two unknown gusts carries the $+12$.\n* Choice C ($77$): copies the mean into the unknown. Nothing forces a data value to equal the average.\n* Choice D ($81$): drops the $+12$ and solves $2k = 162$, which describes two equal gusts.\n\n**Test Day Takeaway:** Add the unknown expressions exactly as written before you divide -- a constant attached to only one of them changes the split, not the total."
+}

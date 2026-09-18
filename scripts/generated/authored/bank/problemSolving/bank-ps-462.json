@@ -1,0 +1,48 @@
+{
+  "id": "bank-ps-462",
+  "question": "The table gives the results of a survey of $450$ residents of a county, selected at random, about a proposed transit levy. If $12{,}600$ residents vote on the levy, how many more residents would be expected to vote in favor of the levy than to vote against it?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Response",
+        "Number of residents"
+      ],
+      "rows": [
+        [
+          "In favor",
+          "261"
+        ],
+        [
+          "Opposed",
+          "189"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$72$"
+    },
+    {
+      "id": "B",
+      "text": "$2{,}016$"
+    },
+    {
+      "id": "C",
+      "text": "$5{,}292$"
+    },
+    {
+      "id": "D",
+      "text": "$7{,}308$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the survey margin without scaling it to the full vote.",
+    "C": "scales the number opposed instead of the margin.",
+    "D": "scales the number in favor instead of the margin."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Poll Scaling — Margin of Victory (Variant)**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The full vote is $\\frac{12{,}600}{450}=28$ times the survey, and the survey margin is $261-189=72$, so the expected margin is $28(72)=2{,}016$.\n\n**The Full Solution:**\nStep 1: Find the scaling factor from the survey to the full vote: $\\frac{12{,}600}{450}=28$.\nStep 2: Read the margin from the table: $261-189=72$ residents.\nStep 3: Because the sample is random and representative, scale the margin by the same factor: $28(72)=2{,}016$. Check: $28(261)=7{,}308$ and $28(189)=5{,}292$, and $7{,}308-5{,}292=2{,}016$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($72$): reports the survey margin, forgetting that $12{,}600$ is far larger than $450$.\n* Choice C ($5{,}292$): scales the $189$ opposed and reports that projected count.\n* Choice D ($7{,}308$): scales the $261$ in favor and reports that projected count.\n\n**Test Day Takeaway:** Scale the difference, not the individual counts. The two approaches agree, but scaling the margin takes one multiplication."
+}

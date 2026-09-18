@@ -1,0 +1,6 @@
+{
+ "question": "A glacier's terminus was $1{,}420$ meters from a fixed marker in year $6$ of a study and $1{,}180$ meters from that same marker in year $14$. What was the average rate of change, in meters per year, of that distance?",
+ "correctAnswer": "-30",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**The correct answer is $-30$.**\n\n**The Fast Way (~25s):** The distance drops $240$ meters over $8$ years, so the rate is $\\frac{-240}{8} = -30$ meters per year.\n\n**The Full Solution:**\n\nStep 1: Write the two readings as ordered pairs $(6, 1{,}420)$ and $(14, 1{,}180)$, with the year first.\n\nStep 2: The average rate of change is $\\frac{1{,}180 - 1{,}420}{14 - 6} = \\frac{-240}{8}$.\n\nStep 3: That equals $-30$ meters per year. Check: eight years at $-30$ takes $1{,}420$ down to $1{,}180$.\n\n**Common Mistakes:** Reporting $30$ and losing the sign of a shrinking distance; dividing by $14$ instead of by the $8$ elapsed years and reporting about $-17$; reporting the total change $-240$ rather than a yearly rate.\n\n**Test Day Takeaway:** Subtract in the same order top and bottom, and keep the sign that describes the direction of the change.",
+ "id": "bank-alg-167"
+}

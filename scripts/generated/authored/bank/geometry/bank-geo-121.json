@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-121",
+  "question": "The length of a rectangle is increased by $30\\%$, and the width of the rectangle is decreased by $p\\%$. The area of the resulting rectangle is $4\\%$ greater than the area of the original rectangle. What is the value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$20$"
+    },
+    {
+      "id": "C",
+      "text": "$26$"
+    },
+    {
+      "id": "D",
+      "text": "$80$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the percent change in area as the percent change in width",
+    "C": "subtracts the percents, 30 - 4, instead of dividing the multipliers",
+    "D": "reports the surviving multiplier 0.80 as a percent decrease"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Area scales by the product of the two multipliers: $1.30 \\times m = 1.04$, so $m = 0.80$ and the width drops by $20\\%$.\n\n**The Full Solution:**\nStep 1: Let the original length be $L$ and the original width be $W$, so the original area is $LW$. The new length is $1.30L$ and the new width is $mW$, where $m$ is the width multiplier.\nStep 2: The new area is $(1.30L)(mW) = 1.30m \\cdot LW$, and this equals $1.04LW$, so $1.30m = 1.04$ and $m = \\frac{1.04}{1.30} = 0.80$.\nStep 3: A multiplier of $0.80$ is a decrease of $1 - 0.80 = 0.20$, or $20\\%$, so $p = 20$. Check: $1.30 \\times 0.80 = 1.04$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): copies the $4\\%$ change in area into the answer, but the area change is the result of the two side changes, not the width change itself.\n* Choice C ($26$): subtracts the percents, $30 - 4 = 26$, treating percent changes as additive when area multiplies them.\n* Choice D ($80$): reports the multiplier $0.80$ as if it were the percent decrease; $0.80$ means $80\\%$ of the original, a $20\\%$ decrease.\n\n**Test Day Takeaway:** Percent changes on a product multiply. Convert each change to a multiplier, set the product equal to the target multiplier, and solve."
+}

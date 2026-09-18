@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A fermentation tank holds a yeast population given by $N(t) = 4{,}200(1.35)^t$ after $t$ hours of incubation. What does the value $1.35$ tell you about how the population changes each hour?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The population increases by $1.35$ cells each hour."
+  },
+  {
+   "id": "B",
+   "text": "The population increases by $35$ cells each hour."
+  },
+  {
+   "id": "C",
+   "text": "The population increases by $135\\%$ each hour."
+  },
+  {
+   "id": "D",
+   "text": "The population increases by $35\\%$ each hour."
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads the growth factor as a fixed number of cells added each hour instead of a multiplier",
+  "B": "reads the decimal part 0.35 as a count of cells rather than a percent",
+  "C": "reports the whole multiplier as the percent increase instead of the part above 1"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** In $a(b)^t$ the base $b$ is the hourly multiplier, and $1.35 - 1 = 0.35$, so the population grows $35\\%$ each hour.\n\n**The Full Solution:**\nStep 1: The model has the form $N(t) = a(b)^t$ with $a = 4{,}200$ cells at $t = 0$ and $b = 1.35$.\nStep 2: Each increase of $1$ in $t$ multiplies $N$ by $1.35$, and a multiplier of $1 + r$ corresponds to a percent increase of $r = 0.35 = 35\\%$.\nStep 3: Check with the numbers: $N(0) = 4{,}200$ and $N(1) = 4{,}200(1.35) = 5{,}670$, an increase of $1{,}470$ cells, and $\\frac{1{,}470}{4{,}200} = 0.35$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (increase of $1.35$ cells): a growth factor multiplies, it does not add. Adding $1.35$ cells per hour would take $4{,}200$ to $4{,}201.35$, not to the $5{,}670$ the model gives.\n* Choice B (increase of $35$ cells): the same error shifted one decimal place. $4{,}200 + 35 = 4{,}235$, far below $N(1) = 5{,}670$.\n* Choice C ($135\\%$ increase): a $135\\%$ increase multiplies by $2.35$, giving $9{,}870$ cells after one hour. Only the part of the base above $1$ is the percent increase.\n\n**Test Day Takeaway:** In an exponential model the base is a multiplier: subtract $1$ and read the remainder as the percent change per unit of time."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "The retaining wall on a site plan runs at a right angle to a drain line graphed as $5x - 2y = 16$, with distances in meters. What slope does the retaining wall have?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{5}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{2}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{2}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{5}{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "negates the drain line's slope without inverting it",
+  "C": "inverts the drain line's slope without negating it",
+  "D": "repeats the drain line's own slope instead of the perpendicular one"
+ },
+ "correctAnswer": "B",
+ "hint": "Put the drain line in slope-intercept form before comparing slopes.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** The drain line has slope $\\frac{5}{2}$, so a perpendicular line has slope $-\\frac{2}{5}$.\n\n**The Full Solution:**\nStep 1: Solve $5x - 2y = 16$ for $y$: $-2y = -5x + 16$, so $y = \\frac{5}{2}x - 8$ and the drain line has slope $\\frac{5}{2}$.\nStep 2: Perpendicular slopes are negative reciprocals: invert $\\frac{5}{2}$ to get $\\frac{2}{5}$, then change the sign.\nStep 3: The retaining wall has slope $-\\frac{2}{5}$.\n\nCheck: $\\frac{5}{2} \\times \\left(-\\frac{2}{5}\\right) = -1$, which is the test for perpendicular slopes. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{5}{2}$): negates the drain line's slope but never inverts it, so the product is $-\\frac{25}{4}$, not $-1$.\n* Choice C ($\\frac{2}{5}$): inverts the slope but leaves it positive, giving a product of $1$.\n* Choice D ($\\frac{5}{2}$): repeats the drain line's own slope, which describes a parallel wall.\n\n**Test Day Takeaway:** Perpendicular means flip the fraction and flip the sign; doing only one of the two is the classic miss."
+}

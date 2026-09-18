@@ -1,0 +1,48 @@
+{
+ "id": 1,
+ "question": "The figure plots two valve stations on a natural gas transmission main, with each grid unit equal to one kilometer. A replacement pipe will run straight between them. How many kilometers long is that pipe?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -2,
+     -2
+    ],
+    [
+     4,
+     6
+    ]
+   ],
+   "xMin": -6,
+   "xMax": 6,
+   "yMin": -4,
+   "yMax": 8
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports only the horizontal gap, 4 - (-2) = 6",
+  "B": "reports only the vertical gap, 6 - (-2) = 8",
+  "D": "adds the two gaps, 6 + 8 = 14, instead of using the Pythagorean theorem"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice C is correct.** The plotted valve stations sit at $(-2, -2)$ and $(4, 6)$, so the straight pipe is the hypotenuse of a right triangle whose legs are the horizontal and vertical gaps.\n\n**The Fast Way (~15s):** Read the gaps off the grid: $6$ across and $8$ up. That is the $6$-$8$-$10$ triple, so the pipe is $10$ kilometers long.\n\n**The Full Solution:**\nStep 1: Read the two plotted points: $(-2, -2)$ and $(4, 6)$.\nStep 2: Apply the distance formula: $d = \\sqrt{(4 - (-2))^2 + (6 - (-2))^2} = \\sqrt{6^2 + 8^2}$.\nStep 3: $\\sqrt{36 + 64} = \\sqrt{100} = 10$. Check: $6^2 + 8^2 = 36 + 64 = 100$, and $10^2 = 100$, so a right triangle with legs $6$ and $8$ really does have hypotenuse $10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): reports only the horizontal gap, $4 - (-2) = 6$, and calls it the distance. That is one leg, not the hypotenuse.\n* Choice B ($8$): reports only the vertical gap, $6 - (-2) = 8$ — the other leg.\n* Choice D ($14$): adds the gaps, $6 + 8 = 14$. That is how far you would travel along the grid lines, not the straight-line distance.\n\n**Test Day Takeaway:** A straight-line distance between plotted points is always the hypotenuse of the horizontal and vertical gaps — square them and add, never add the lengths themselves."
+}

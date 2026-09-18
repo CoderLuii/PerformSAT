@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "inferences",
+  "module": 1,
+  "passage": "A medieval book was copied not into a bound volume but onto separate gatherings of folded leaves called quires, which were sewn together only after the writing was finished. At the foot of each quire's final page, the scribe added a catchword: the first word of the quire that was meant to follow. A binder assembling the finished book could thus put the gatherings in order by simple matching, joining each quire to the one whose opening word answered its catchword, with no need to follow the text itself. The custom suggests that ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "how the material is used — in particular, whether each charge is halted before the battery reaches a full charge."
+      "text": "the makers of such books did not assume that the person assembling them would be reading the text along the way."
     },
     {
       "id": "B",
-      "text": "the total number of times the battery is charged, regardless of how far each individual charge is carried."
+      "text": "binders often placed quires in the wrong order even when the catchwords were clearly written."
     },
     {
       "id": "C",
-      "text": "the chemical composition of the electrode, which determines the cracking independently of how the battery is charged."
+      "text": "catchwords were added only to books whose quires had been copied by several different scribes."
     },
     {
       "id": "D",
-      "text": "whether conventional electrodes happen to be available for direct comparison during the same series of laboratory tests."
+      "text": "binders were expected to trim every catchword away so that a finished book would show no visible trace of how it had been assembled."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The new material cracked very little only when each charge was stopped early, and it cracked at the usual rate when charged all the way — so its durability depends on how it is used, not on its composition alone. Choice B ignores the difference the experiment turned on; choice C asserts the very thing the results argue against; and choice D raises a comparison the passage does not make central.",
-  "passage": "Lithium-ion batteries lose capacity each time they are charged and discharged, in part because repeated cycling slowly cracks the particles that store lithium inside the electrodes. Engineers testing a new electrode material found that it could be charged and discharged thousands of times with very little cracking — but only when each charging cycle was stopped before the battery reached a full charge. When the same material was repeatedly charged all the way to capacity, its particles cracked at nearly the rate seen in conventional electrodes. These results suggest that, for this material, the durability advantage depends less on the material's composition alone than on ______",
+  "explanation": "**Choice A is correct.** A device that reduces ordering to word-matching is valuable precisely when the assembler cannot be relied on to follow the text — which is what the custom implies about the people doing the assembling.\n\n**The Full Solution:**\n- The catchword lets a binder order quires \"by simple matching,\" the text says, \"with no need to follow the text itself.\"\n- Building such a device into every quire is a precaution; precautions imply an expected need.\n- The expected need is an assembler who is not reading the text — exactly choice A, and nothing stronger.\n\n**Why the other choices are wrong:**\n- B: The text describes the system working, not failing; frequent misbinding is unsupported.\n- C: Nothing links catchwords to the number of scribes; the motive given concerns binding order.\n- D: Trimming is never mentioned, and a custom meant to guide assembly says nothing about hiding it afterward.",
   "_meta": {
-    "anchor": "battery chemistry — electrode cracking and charge depth"
-  },
-  "module": 1
+    "anchor": "medieval quires and catchwords — assembly by matching"
+  }
 }

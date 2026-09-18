@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-504",
+ "question": "For constants $a$ and $b$, every ordered pair that solves $ax + 12y = 30$ also solves $10x + by = 75$, and every ordered pair that solves the second equation also solves the first. What is the value of the product $ab$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$34$"
+  },
+  {
+   "id": "B",
+   "text": "$48$"
+  },
+  {
+   "id": "C",
+   "text": "$120$"
+  },
+  {
+   "id": "D",
+   "text": "$750$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "adds $a$ and $b$ instead of multiplying them",
+  "B": "finds $a = 4$ but leaves $b$ at $12$, forgetting to scale the $y$-coefficient",
+  "D": "multiplies $10$ by $\\frac{5}{2}$ to get $a = 25$ instead of dividing"
+ },
+ "explanation": "**SAT Pattern: Same Line — Infinitely Many Solutions (Parametric)**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The second equation is $\\frac{5}{2}$ times the first, so $a = 4$, $b = 30$, and $ab = 120$.\n\n**The Full Solution:**\nStep 1: Two equations with identical solution sets describe the same line, so one is a nonzero multiple of the other.\nStep 2: The constants give the factor: $\\frac{75}{30} = \\frac{5}{2}$.\nStep 3: Then $\\frac{5}{2}a = 10$ gives $a = 4$, and $\\frac{5}{2}(12) = b$ gives $b = 30$, so $ab = 120$. Check: $\\frac{5}{2}(4x + 12y) = 10x + 30y$ and $\\frac{5}{2}(30) = 75$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($34$): adds $a$ and $b$ instead of multiplying them\n* Choice B ($48$): finds $a = 4$ but leaves $b$ at $12$, forgetting to scale the $y$-coefficient\n* Choice D ($750$): multiplies $10$ by $\\frac{5}{2}$ to get $a = 25$ instead of dividing\n\n**Test Day Takeaway:** Get the scale factor from the constants, then apply it in the correct direction to each coefficient."
+}

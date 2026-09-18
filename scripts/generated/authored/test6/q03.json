@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
-  "passage": "Early visitors to Arctic Inuit communities often described hunting, storytelling, and the sharing of food as separate customs that could be examined one at a time. Anthropologists who have since lived in these communities argue that the practices are instead ______: a change in how a hunter's catch is divided immediately alters who is owed a story and how neighboring households are organized.",
+  "passage": "During hibernation, the body temperature of an Arctic ground squirrel can drop below the freezing point of water, a state that would fatally injure the tissues of most mammals. Yet when researchers examined the animals after months of such supercooling, they found the tissues remarkably ______: cell membranes, proteins, and even the brain's delicate neural connections had come through the winter essentially undamaged.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "interlocking"
+      "text": "intact"
     },
     {
       "id": "B",
-      "text": "disposable"
+      "text": "flexible"
     },
     {
       "id": "C",
-      "text": "redundant"
+      "text": "fragile"
     },
     {
       "id": "D",
-      "text": "contradictory"
+      "text": "inactive"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"interlocking.\" The example makes the point that altering one practice immediately changes the others, so the customs work as parts of a single connected whole. \"Interlocking\" names exactly that mutual dependence. \"Disposable\" would mean the customs could be discarded, and \"redundant\" would mean they merely repeat one another; neither fits a description of parts that depend on one another. \"Contradictory\" would imply the practices are at odds, but the passage describes them as linked, not conflicting."
+  "explanation": "**Choice A is correct.** The contrast set up by \"Yet\" demands a word opposing the expected fatal injury, and the colon spells it out: the tissues were \"essentially undamaged\" — that is, \"intact.\"\n\n**The Full Solution:**\n- The first sentence establishes an expectation: temperatures that low \"would fatally injure the tissues of most mammals.\"\n- \"Yet\" signals that the finding defied that expectation, and the elaboration after the colon — membranes, proteins, and neural connections \"essentially undamaged\" — restates the blank directly.\n\n**Why the other choices are wrong:**\n- B: \"Flexible\" describes pliability, a property the text never discusses.\n- C: \"Fragile\" reverses the finding, agreeing with the expectation the \"Yet\" is there to overturn.\n- D: \"Inactive\" describes the hibernating animal, not the condition of tissues that emerged undamaged."
 }

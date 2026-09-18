@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "The depth of the seafloor below the surface, in meters, along a survey line is modeled by $d(x) = a(x - 6)^2 + 11$, where $x$ is the distance in kilometers from shore and $a$ is a constant. The model gives a depth of 2 meters at $x = 0$. What is the depth, in meters, at $x = 2$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "evaluates with (x + 6)^2 = 64 instead of (x - 6)^2 = 16, giving -0.25 times 64 plus 11 = -5",
+  "C": "multiplies a by (x - 6) = -4 without squaring, giving -0.25 times -4 plus 11 = 12",
+  "D": "solves 36a = -9 as a = 0.25, dropping the negative sign, giving 0.25 times 16 plus 11 = 15"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $36a + 11 = 2$ gives $a = -0.25$, and $-0.25(2 - 6)^2 + 11 = -4 + 11 = 7$.\n\n**The Full Solution:**\nStep 1: Use the given point. At $x = 0$, $d(0) = a(0 - 6)^2 + 11 = 36a + 11$, and that equals $2$.\nStep 2: Solve $36a + 11 = 2$, so $36a = -9$ and $a = -\\frac{1}{4} = -0.25$. The model is $d(x) = -0.25(x - 6)^2 + 11$.\nStep 3: Evaluate at $x = 2$: $(2 - 6)^2 = 16$, so $d(2) = -0.25(16) + 11 = -4 + 11 = 7$ meters. Check: $d(0) = -0.25(36) + 11 = -9 + 11 = 2$, matching the given condition. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-5$): uses $(2 + 6)^2 = 64$ instead of $(2 - 6)^2 = 16$, flipping the sign inside the parentheses.\n* Choice C ($12$): multiplies $a$ by $-4$ without squaring, so the squared factor never gets applied.\n* Choice D ($15$): reads $36a = -9$ as $a = 0.25$, losing the negative sign that makes the basin deepen toward $x = 6$.\n\n**Test Day Takeaway:** Vertex form hands you the vertex; one extra point pins down $a$. Solve for $a$ first, then substitute, and keep the sign inside the parentheses intact."
+}

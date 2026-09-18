@@ -1,0 +1,53 @@
+{
+  "question": "A test rig's output at setting $x$ is $f(x)=3x^{2}-9x+5$, and the table gives the output at four settings. How many real settings $x$ produce an output of $0$?",
+  "questionTable": {
+    "headers": [
+      "Setting, $x$",
+      "Output, $f(x)$"
+    ],
+    "rows": [
+      [
+        "$0$",
+        "$5$"
+      ],
+      [
+        "$1$",
+        "$-1$"
+      ],
+      [
+        "$2$",
+        "$-1$"
+      ],
+      [
+        "$3$",
+        "$5$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Zero"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two"
+    },
+    {
+      "id": "D",
+      "text": "More than two"
+    }
+  ],
+  "distractorNotes": {
+    "A": "concluded that because no listed output is 0, no setting gives 0",
+    "B": "counted only the sign change between x = 0 and x = 1",
+    "D": "a quadratic model cannot have more than two real solutions"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The discriminant of $3x^{2}-9x+5$ is $(-9)^{2}-4(3)(5)=81-60=21$, which is positive, so the output is $0$ at two settings.\n\n**The Full Solution:**\nStep 1: An output of $0$ means $3x^{2}-9x+5=0$, so the count asked for is the number of real solutions of that equation.\nStep 2: With $a=3$, $b=-9$, and $c=5$, the discriminant is $(-9)^{2}-4(3)(5)=81-60=21$.\nStep 3: A positive discriminant gives two different real solutions, so exactly two settings produce an output of $0$. Check: the table agrees, falling from $5$ to $-1$ between $x=0$ and $x=1$ and rising from $-1$ back to $5$ between $x=2$ and $x=3$ — one crossing each ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (Zero): concludes that because no listed output is $0$, no setting gives $0$.\n* Choice B (Exactly one): counts only the sign change between $x=0$ and $x=1$.\n* Choice D (More than two): a quadratic model cannot have more than two real solutions.\n\n**Test Day Takeaway:** The discriminant counts the real solutions; a table's sign changes confirm the count but never replace it.",
+  "id": "bank-am-348"
+}

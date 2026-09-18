@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 1,
-  "passage": "Among Yoruba dyers in southwestern Nigeria, adire cloth is patterned by coating sections of plain cotton with cassava-starch paste, or by stitching them tightly, before the fabric is dipped in indigo. Wherever the paste or stitching ______ the dye, the protected cloth resists the blue and stays pale, so the finished panel carries crisp light figures against a deep indigo ground.",
+  "passage": "A peat bog is a difficult place for the microbes of decay. Sphagnum moss soaks up the nutrients that bacteria need and releases compounds that ______ bacterial growth, and the cold, oxygen-poor water does the rest: leather, wood, and even human skin can rest in a bog for centuries with surprisingly little change.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
-    {
-      "id": "A",
-      "text": "absorbs"
-    },
-    {
-      "id": "B",
-      "text": "blocks"
-    },
-    {
-      "id": "C",
-      "text": "reveals"
-    },
-    {
-      "id": "D",
-      "text": "dilutes"
-    }
+    { "id": "A", "text": "encourage" },
+    { "id": "B", "text": "suppress" },
+    { "id": "C", "text": "conceal" },
+    { "id": "D", "text": "imitate" }
   ],
   "correctAnswer": "B",
-  "explanation": "The sentence explains how adire patterns form: the paste or stitching keeps the dye off certain areas so they \"stay pale.\" The blank needs a verb meaning to keep the dye out, and \"blocks,\" choice B, does so. \"Absorbs\" and \"dilutes\" would have the covering take in or weaken the dye rather than keep it out, and \"reveals\" does not describe what the resist does to the dye.",
-  "_meta": {
-    "anchor": "adire indigo resist-dyeing, Yoruba"
-  }
+  "explanation": "**Choice B is correct.** The passage explains why decay stalls in a bog, so the moss's compounds must hold bacterial growth back — they \"suppress\" it.\n\n**The Full Solution:**\n- The opening states the effect to be explained: a bog is \"a difficult place for the microbes of decay.\"\n- Everything that follows is a cause of that difficulty — nutrients absorbed, cold oxygen-poor water — and the result is centuries of preservation.\n- The blank must continue the causal chain: compounds that hold bacteria down, which is what \"suppress\" means.\n\n**Why the other choices are wrong:**\n- A: \"Encourage\" reverses the logic — helped bacteria would mean faster decay, not preservation.\n- C: \"Conceal\" means to hide from view; bacteria are not being hidden, they are being stopped.\n- D: \"Imitate\" would have the compounds mimicking bacterial growth, an idea nothing in the passage supports."
 }

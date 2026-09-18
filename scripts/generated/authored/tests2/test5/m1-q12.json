@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "On a campus map in the $xy$-plane, one service road contains the points $(-4, 1)$ and $(4, 13)$. A second service road, parallel to the first, contains the point $(-2, 7)$. Which equation could describe the second road?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2x + 3y = 17$"
+  },
+  {
+   "id": "B",
+   "text": "$3x - 2y = -20$"
+  },
+  {
+   "id": "C",
+   "text": "$3x - 2y = 25$"
+  },
+  {
+   "id": "D",
+   "text": "$3x + 2y = 8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the perpendicular slope -2/3 instead of the parallel slope 3/2, through (-2, 7)",
+  "C": "uses the correct slope but substitutes the point coordinates in reverse order, as (7, -2)",
+  "D": "uses slope -3/2, a sign error on the parallel slope, through (-2, 7)"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Parallel Lines and Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The first road's slope is $\\frac{13 - 1}{4 - (-4)} = \\frac{3}{2}$, so the parallel line is $3x - 2y = c$; substituting $(-2, 7)$ gives $c = -20$.\n\n**The Full Solution:**\nStep 1: Find the slope of the first road: $m = \\frac{13 - 1}{4 - (-4)} = \\frac{12}{8} = \\frac{3}{2}$. A parallel road has the same slope.\nStep 2: A line of slope $\\frac{3}{2}$ written in standard form is $3x - 2y = c$, because solving that for $y$ gives $y = \\frac{3}{2}x - \\frac{c}{2}$.\nStep 3: Substitute the point $(-2, 7)$: $3(-2) - 2(7) = -6 - 14 = -20$, so the equation is $3x - 2y = -20$. Check by solving for $y$: $y = \\frac{3}{2}x + 10$, and $\\frac{3}{2}(-2) + 10 = 7$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($2x + 3y = 17$): has slope $-\\frac{2}{3}$, the negative reciprocal. It does pass through $(-2, 7)$, but a perpendicular road would cross the first one rather than run alongside it.\n* Choice C ($3x - 2y = 25$): uses the right slope but plugs the coordinates in backward, evaluating $3(7) - 2(-2) = 25$. Order matters: the first coordinate is always $x$.\n* Choice D ($3x + 2y = 8$): has slope $-\\frac{3}{2}$. Flipping the sign of the slope tilts the road the other way; parallel requires the slope to be copied exactly, sign included.\n\n**Test Day Takeaway:** For a parallel line in standard form, keep the $x$- and $y$-coefficients of the target slope and let the point determine the constant. Substituting the given point is faster than converting to slope-intercept form and back."
+}

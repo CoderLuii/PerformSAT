@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-317",
+  "question": "A tuner's combined drift, in cents, after $x$ minutes of playing is given by the expression $5(3x - 4) + 2(x + 9) - (7x - 1)$. When that expression is written in the form $mx + n$, where $m$ and $n$ are constants, what is the value of $m + n$?",
+  "correctAnswer": "9",
+  "explanation": "**SAT Pattern: Combining Like Terms**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~30s):** Expanding gives $10x - 1$, so $m = 10$, $n = -1$, and $m + n = 9$.\n\n**The Full Solution:**\nStep 1: Expand each group: $5(3x - 4) = 15x - 20$, $2(x + 9) = 2x + 18$, and $-(7x - 1) = -7x + 1$.\nStep 2: Collect the $x$-terms: $15x + 2x - 7x = 10x$, so $m = 10$.\nStep 3: Collect the constants: $-20 + 18 + 1 = -1$, so $n = -1$ and $m + n = 10 - 1 = 9$. Check: at $x = 2$ the original expression is $10 + 22 - 13 = 19$, and $10(2) - 1 = 19$ ✓\n\n**Common Mistakes:** Answering $7$ distributes the leading minus as $-7x - 1$, leaving $n = -3$; answering $11$ takes $m - n$ instead of $m + n$; answering $10$ reports $m$ alone.\n\n**Test Day Takeaway:** Distribute every multiplier — including an invisible $-1$ — before collecting like terms."
+}

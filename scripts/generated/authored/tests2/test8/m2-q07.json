@@ -1,0 +1,29 @@
+{
+  "id": 7,
+  "question": "Each hour, a $240$-microgram sample of a radioactive tracer loses $15\\%$ of the mass it still has. Which equation gives the mass $A$, in micrograms, that remains after $t$ hours?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$A = 240(0.15)^t$"
+    },
+    {
+      "id": "B",
+      "text": "$A = 240(0.85)^t$"
+    },
+    {
+      "id": "C",
+      "text": "$A = 240(1.15)^t$"
+    },
+    {
+      "id": "D",
+      "text": "$A = 240(1.85)^t$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the 15% lost as the hourly multiplier instead of the 85% retained",
+    "C": "models a 15% hourly gain rather than a 15% hourly loss",
+    "D": "adds 0.85 to 1 instead of subtracting 0.15 from 1"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Losing $15\\%$ each hour keeps $85\\%$ each hour, so the multiplier is $0.85$ and $A = 240(0.85)^t$.\n\n**The Full Solution:**\nStep 1: Exponential decay has the form $A = A_0 b^t$, where $A_0$ is the starting mass and $b$ is the fraction that survives one hour.\nStep 2: Here $A_0 = 240$ micrograms, and a $15\\%$ hourly loss leaves $100\\% - 15\\% = 85\\%$, so $b = 0.85$.\nStep 3: The model is $A = 240(0.85)^t$. Check one hour by hand: the sample loses $0.15(240) = 36$ micrograms and keeps $204$, and $240(0.85)^1 = 204$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($A = 240(0.15)^t$): uses the percent lost as the multiplier, so after one hour it predicts $36$ micrograms rather than $204$.\n* Choice C ($A = 240(1.15)^t$): a base above $1$ makes the sample grow, which contradicts a tracer that is decaying.\n* Choice D ($A = 240(1.85)^t$): starts from the correct $0.85$ but adds it to $1$, again producing growth instead of decay.\n\n**Test Day Takeaway:** For repeated percent loss the base is $1$ minus the rate; a base greater than $1$ can only describe growth."
+}

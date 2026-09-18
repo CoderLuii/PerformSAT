@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A scenic backdrop is a triangle, and a scaled copy of it is painted for a smaller stage. The area of the copy is $\\frac{4}{9}$ the area of the original, and the perimeter of the copy is $P$ meters. Which expression gives the perimeter, in meters, of the original backdrop?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{4}{9}P$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{2}{3}P$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3}{2}P$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{9}{4}P$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the area ratio 4/9 directly to the perimeter, skipping the square root",
+  "B": "takes the square root correctly but keeps the copy-to-original direction, shrinking the original instead of enlarging it",
+  "D": "inverts the area ratio to 9/4 but never takes the square root"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Similar Triangles and Area Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Areas scale by the square of the length ratio, so the copy's lengths are $\\sqrt{\\frac{4}{9}} = \\frac{2}{3}$ of the original's. Reversing that, the original's perimeter is $\\frac{3}{2}P$.\n\n**The Full Solution:**\nStep 1: For similar figures with length ratio $r$, the area ratio is $r^2$. Here $r^2 = \\frac{4}{9}$.\nStep 2: So $r = \\frac{2}{3}$: every length in the copy, including its perimeter, is $\\frac{2}{3}$ of the matching length in the original.\nStep 3: That means $P = \\frac{2}{3} \\times (\\text{original perimeter})$, so the original perimeter is $\\frac{3}{2}P$. Check: if the original perimeter were $30$, the copy's would be $20$, and $\\frac{3}{2}(20) = 30$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{4}{9}P$): this uses the area ratio as if it were a length ratio. Perimeter is a length, so it scales by $r$, not by $r^2$.\n* Choice B ($\\frac{2}{3}P$): this is the correct ratio pointed the wrong way. It shrinks $P$ again, when the original must be the larger of the two.\n* Choice D ($\\frac{9}{4}P$): this flips the ratio to original-over-copy but never takes the square root, so it scales the perimeter by an area factor.\n\n**Test Day Takeaway:** Length ratio $r$, area ratio $r^2$. Take the square root before touching any perimeter, and check at the end which figure the answer should make larger."
+}

@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "question": "A planning office has already reviewed 84 rezoning applications and reviews 12 additional applications each week. Which equation can be used to find the number of weeks $w$ needed for the total number reviewed to reach 300?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$84 + 12w = 300$"
+    },
+    {
+      "id": "B",
+      "text": "$84w + 12 = 300$"
+    },
+    {
+      "id": "C",
+      "text": "$12w - 84 = 300$"
+    },
+    {
+      "id": "D",
+      "text": "$84 - 12w = 300$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "swaps the roles of the starting count and the weekly rate, attaching w to 84",
+    "C": "subtracts the 84 already reviewed instead of adding them to the total",
+    "D": "treats the weekly reviews as a decrease from the starting count"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Word-to-Expression Translation**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The $84$ finished applications are a one-time starting amount and the $12$ per week is a rate, so the total after $w$ weeks is $84 + 12w$, which must equal $300$.\n\n**The Full Solution:**\nStep 1: Fix the starting value. Before any of the $w$ weeks pass, $84$ applications are already reviewed, so $84$ is a constant term, not a coefficient.\nStep 2: Build the changing part. The office adds $12$ applications per week for $w$ weeks, which contributes $12 \\cdot w = 12w$ applications.\nStep 3: Set the total equal to the target: $84 + 12w = 300$. Check: solving gives $12w = 216$, so $w = 18$, and $84 + 12(18) = 84 + 216 = 300$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($84w + 12 = 300$): attaches the variable to the wrong number. It says the office reviews $84$ applications per week and had $12$ finished, which reverses the setup.\n* Choice C ($12w - 84 = 300$): subtracts the completed work. Applications already reviewed count toward the goal, so they are added.\n* Choice D ($84 - 12w = 300$): treats reviewing as shrinking the total. Since $84 < 300$, this equation forces a negative $w$.\n\n**Test Day Takeaway:** In a linear translation, the one-time amount is the constant and the per-unit amount is the coefficient on the variable. Ask \"what happens when the variable is $0$?\" to see which number is which."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "bank-alg-374",
+  "question": "A buoy sits at the point shown in the $xy$-plane and a harbor entrance sits at the origin, where each unit represents one kilometer. How far, in kilometers, is the buoy from the harbor entrance?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -9,
+          12
+        ]
+      ],
+      "xMin": -12,
+      "xMax": 6,
+      "yMin": -4,
+      "yMax": 14
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$21$"
+    },
+    {
+      "id": "C",
+      "text": "$108$"
+    },
+    {
+      "id": "D",
+      "text": "$225$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "adds the two coordinate magnitudes instead of combining them as legs",
+    "C": "multiplies the two coordinate magnitudes",
+    "D": "stops at the sum of the squares without taking the square root"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The buoy is $9$ kilometers west and $12$ north of the origin, and $\\sqrt{9^2 + 12^2} = 15$.\n\n**The Full Solution:**\nStep 1: Read the buoy's position from the graph: $(-9, 12)$; the harbor entrance is at $(0, 0)$.\nStep 2: The horizontal separation is $|-9 - 0| = 9$ and the vertical separation is $|12 - 0| = 12$.\nStep 3: Apply the distance formula: $\\sqrt{9^2 + 12^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15$ kilometers. Check: $9$, $12$, $15$ is a $3$-$4$-$5$ triangle scaled by $3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($21$): adds the two coordinate magnitudes rather than treating them as legs of a right triangle.\n* Choice C ($108$): multiplies the two coordinate magnitudes.\n* Choice D ($225$): stops at $81 + 144$ and never takes the square root.\n\n**Test Day Takeaway:** Distance to the origin is just $\\sqrt{x^2 + y^2}$ — the signs of the coordinates disappear once they are squared."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 802,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "Around 1500, the Venetian printer Aldus Manutius set out to publish small, affordable editions of the classics and commissioned the punchcutter Francesco Griffo to design a slanted, narrow typeface—the first italic. Griffo's letters did not simply shrink the text; they ____ it, packing a dense column of type onto a page small enough to slip into a coat pocket.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "scattered"
-    },
-    {
-      "id": "B",
-      "text": "decorated"
-    },
-    {
-      "id": "C",
-      "text": "condensed"
-    },
-    {
-      "id": "D",
-      "text": "translated"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage explains that the new italic letters let a great deal of text fit onto a very small page, so the blank needs a word for compressing the same content into less space. \"Condensed\" captures that. \"Scattered\" would imply spreading the type out, the opposite of fitting more onto a small page; \"decorated\" points to ornament rather than to the space-saving the sentence describes; and \"translated\" concerns moving between languages, which is not at issue here."
+ "id": 802,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "A bell's note is cast into it: once the bronze has cooled, the founder can no longer add metal, only cut it away. Mounting the bell on a great lathe and shaving thin rings from its inner profile does not simply smooth the casting; each pass ____ the instrument, nudging its partial tones toward the musical intervals the founder intends.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "polishes"
+  },
+  {
+   "id": "B",
+   "text": "weakens"
+  },
+  {
+   "id": "C",
+   "text": "retunes"
+  },
+  {
+   "id": "D",
+   "text": "enlarges"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The sentence's contrast — the lathe work does not simply smooth the casting — demands a verb naming what the cutting actually accomplishes, and \"retunes\" captures how each pass shifts the bell's partial tones toward the intended intervals.\n\n**The Full Solution:**\n- The passage establishes that a bell's note is fixed by its shape once the bronze cools.\n- The clause \"does not simply smooth the casting\" signals that the blank must name a musical consequence beyond surface finishing.\n- Shaving metal from the inner profile nudges the partial tones — it \"retunes\" the instrument.\n\n**Why the other choices are wrong:**\n- A: \"Polishes\" repeats the surface-finishing idea the sentence has just set aside with \"not simply.\"\n- B: \"Weakens\" names a structural harm the passage never suggests; the founder is adjusting pitch, not damaging the bell.\n- D: \"Enlarges\" is backwards — cutting metal away cannot make the bell bigger."
 }

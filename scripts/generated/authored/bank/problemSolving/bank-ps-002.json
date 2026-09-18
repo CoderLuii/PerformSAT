@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-002",
+  "question": "A bottle of vinegar is labeled as $4.75\\%$ acetic acid by volume. Which of the following is $4.75\\%$ written as a decimal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.00475$"
+    },
+    {
+      "id": "B",
+      "text": "$0.0475$"
+    },
+    {
+      "id": "C",
+      "text": "$0.475$"
+    },
+    {
+      "id": "D",
+      "text": "$4.75$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "shifts the decimal point three places to the left, dividing by $1{,}000$ instead of $100$.",
+    "C": "shifts the decimal point only one place to the left (divides by $10$).",
+    "D": "drops the percent sign without dividing by $100$ at all."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent to Decimal**\n\n**Choice B is correct.**\n\n**The Fast Way (~5s):** Divide by $100$, which shifts the decimal point two places to the left: $4.75\\% = 0.0475$.\n\n**The Full Solution:**\nStep 1: The percent sign means \"per $100$,\" so $4.75\\% = \\frac{4.75}{100}$.\nStep 2: Dividing by $100$ moves the decimal point two places to the left: $4.75 \\to 0.0475$.\nStep 3: Check by multiplying back: $0.0475 \\times 100 = 4.75$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.00475$): shifts the decimal point three places to the left, dividing by $1{,}000$ instead of $100$.\n* Choice C ($0.475$): shifts the decimal point only one place to the left (divides by $10$).\n* Choice D ($4.75$): drops the percent sign without dividing by $100$ at all.\n\n**Test Day Takeaway:** Percent to decimal is a two-place shift to the left. A percent under $5\\%$ must become a decimal under $0.05$."
+}

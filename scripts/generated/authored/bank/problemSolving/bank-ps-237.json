@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-237",
+  "question": "The two-way table summarizes a survey of $250$ employees at two office sites, showing whether each employee commutes by transit. Employees were not assigned to a site. Which conclusion is best supported by these data?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Commutes by transit",
+        "Does not commute by transit",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Site A",
+          "78",
+          "62",
+          "140"
+        ],
+        [
+          "Site B",
+          "35",
+          "75",
+          "110"
+        ],
+        [
+          "Total",
+          "113",
+          "137",
+          "250"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Working at site A causes an employee to commute by transit."
+    },
+    {
+      "id": "B",
+      "text": "More than half of the employees surveyed commute by transit."
+    },
+    {
+      "id": "C",
+      "text": "Every employee at site A has access to transit service."
+    },
+    {
+      "id": "D",
+      "text": "Among the employees surveyed, a greater proportion at site A than at site B commute by transit."
+    }
+  ],
+  "distractorNotes": {
+    "A": "claims causation from data with no assignment to sites",
+    "B": "misreads the totals; 113 of 250 is less than half",
+    "C": "makes an absolute claim about individuals the survey did not measure"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Observational vs Experimental Study**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** Site A is $\\frac{78}{140} \\approx 56\\%$ transit and site B is $\\frac{35}{110} \\approx 32\\%$, and with no assignment to sites, comparing proportions is all the data support.\n\n**The Full Solution:**\nStep 1: Compute each site's transit proportion: $\\frac{78}{140} \\approx 0.56$ and $\\frac{35}{110} \\approx 0.32$.\nStep 2: Site A's proportion is larger, so a difference exists among the employees surveyed.\nStep 3: Employees were not assigned to sites, so the statement must stay descriptive rather than causal — which is what Choice D does. Check: $78 + 62 = 140$ and $35 + 75 = 110$, totaling $250$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: employees chose or were hired into their sites, so the difference could come from where they live rather than from the site itself.\n* Choice B: $113$ of $250$ employees commute by transit, which is about $45\\%$ — less than half.\n* Choice C: the survey recorded commuting behavior, not who has access to transit service.\n\n**Test Day Takeaway:** With a table and no random assignment, the safe conclusion compares proportions within the sample and stops there."
+}

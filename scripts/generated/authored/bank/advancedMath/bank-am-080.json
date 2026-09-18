@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-080",
+  "question": "The number of subscribers to a streaming service increases by $8\\%$ every $6$ months. The service had $45{,}000$ subscribers on January 1, 2022. Which expression gives the number of subscribers $y$ years after January 1, 2022?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$45{,}000(1.08)^{2y}$"
+    },
+    {
+      "id": "B",
+      "text": "$45{,}000(1.08)^{\\frac{y}{2}}$"
+    },
+    {
+      "id": "C",
+      "text": "$45{,}000(1.08)^{6y}$"
+    },
+    {
+      "id": "D",
+      "text": "$45{,}000(1.16)^{y}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides by $2$ instead of multiplying, giving one increase every two years",
+    "C": "uses the $6$ from \"6 months\" as the number of periods per year",
+    "D": "doubles the rate instead of doubling the number of periods"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** There are $2$ six-month periods per year, so the factor $1.08$ is applied $2y$ times: $45{,}000(1.08)^{2y}$.\n\n**The Full Solution:**\nStep 1: An $8\\%$ increase multiplies the count by $1 + 0.08 = 1.08$ once per six-month period.\nStep 2: In $y$ years there are $2y$ six-month periods, so the factor $1.08$ is applied $2y$ times.\nStep 3: The expression is $45{,}000(1.08)^{2y}$. Check at $y = 1$: $45{,}000(1.08)^2 = 52{,}488$, which is $45{,}000$ increased by $8\\%$ twice. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($45{,}000(1.08)^{\\frac{y}{2}}$): divides instead of multiplying, modeling one $8\\%$ increase every two years.\n* Choice C ($45{,}000(1.08)^{6y}$): reads \"$6$ months\" as six periods per year, applying the increase six times a year.\n* Choice D ($45{,}000(1.16)^y$): doubles the rate to $16\\%$ per year; compounding twice gives $16.64\\%$, not $16\\%$.\n\n**Test Day Takeaway:** When the period is shorter than the time unit, multiply the exponent by how many periods fit in one unit. Two half-years per year means an exponent of $2y$."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A benchmark reports that a routine performs $\\frac{4^{3n} \\cdot 8^{n + 2}}{16^{n}}$ elementary operations when it is run on an input of size $n$, where $n$ is a positive integer. Which of the following expressions is equivalent to the number of elementary operations the routine performs?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2^{2n + 6}$"
+  },
+  {
+   "id": "B",
+   "text": "$2^{5n + 2}$"
+  },
+  {
+   "id": "C",
+   "text": "$2^{5n + 6}$"
+  },
+  {
+   "id": "D",
+   "text": "$2^{13n + 6}$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "rewrites 4^(3n) as 2^(3n) instead of 2^(6n), forgetting that 4 = 2^2 doubles the exponent",
+  "B": "rewrites 8^(n+2) as 2^(3n+2), distributing the 3 to n only and not to the 2",
+  "D": "adds the denominator's exponent 4n instead of subtracting it"
+ },
+ "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Write everything in base $2$: $4^{3n} = 2^{6n}$, $8^{n+2} = 2^{3n+6}$, $16^{n} = 2^{4n}$. Then $6n + (3n + 6) - 4n = 5n + 6$, so the expression is $2^{5n + 6}$.\n\n**The Full Solution:**\nStep 1: Rewrite each base as a power of $2$ using $(b^{p})^{q} = b^{pq}$. Since $4 = 2^2$, $4^{3n} = 2^{6n}$. Since $8 = 2^3$, $8^{n+2} = 2^{3(n+2)} = 2^{3n+6}$. Since $16 = 2^4$, $16^{n} = 2^{4n}$.\nStep 2: Multiply in the numerator by adding exponents: $2^{6n} \\cdot 2^{3n+6} = 2^{9n+6}$.\nStep 3: Divide by subtracting exponents: $\\frac{2^{9n+6}}{2^{4n}} = 2^{5n+6}$. Check with $n = 1$: the original is $\\frac{4^{3} \\cdot 8^{3}}{16} = \\frac{64 \\cdot 512}{16} = 2048$, and $2^{5(1)+6} = 2^{11} = 2048$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2^{2n + 6}$): treats $4^{3n}$ as $2^{3n}$, keeping the exponent instead of doubling it. Because $4 = 2^2$, changing the base to $2$ multiplies the exponent by $2$.\n* Choice B ($2^{5n + 2}$): rewrites $8^{n+2}$ as $2^{3n+2}$, multiplying only the $n$ by $3$. The exponent $3$ distributes across the whole sum, giving $3n + 6$.\n* Choice D ($2^{13n + 6}$): adds $4n$ instead of subtracting it. Division of like bases subtracts exponents.\n\n**Test Day Takeaway:** Convert every base to the same prime first, then let the exponent rules do the work — and distribute an outer exponent across every term inside the parentheses."
+}

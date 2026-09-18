@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A delivery van is loaded with $p$ parcels and $c$ crates. Each parcel weighs $2$ kilograms and each crate weighs $9$ kilograms. Which expression represents the total weight, in kilograms, of the load?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11(p + c)$"
+  },
+  {
+   "id": "B",
+   "text": "$9p + 2c$"
+  },
+  {
+   "id": "C",
+   "text": "$2p + 9c$"
+  },
+  {
+   "id": "D",
+   "text": "$18pc$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "merges the two unit weights into a single rate of 11 kg and applies it to every item, which is only right if the two counts are equal",
+  "B": "attaches the crate weight to the parcel count and the parcel weight to the crate count",
+  "D": "multiplies the two weights and the two counts instead of adding the two separate products"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Word-to-Expression Translation**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Weight of the parcels is $2p$ and weight of the crates is $9c$; the load is the sum, $2p + 9c$.\n\n**The Full Solution:**\nStep 1: Each item type contributes (weight per item) times (number of items). Parcels contribute $2 \\times p = 2p$ kilograms.\nStep 2: Crates contribute $9 \\times c = 9c$ kilograms.\nStep 3: The total is the sum of the two contributions, $2p + 9c$. Test it with numbers: $4$ parcels and $3$ crates weigh $4(2) + 3(9) = 8 + 27 = 35$ kilograms, and $2(4) + 9(3) = 35$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($11(p + c)$): adds the two per-item weights first, giving a single $11$-kilogram rate. With $4$ parcels and $3$ crates it returns $11(7) = 77$, not $35$ — it charges every parcel the crate weight too.\n* Choice B ($9p + 2c$): the right structure with the rates swapped. With $4$ parcels and $3$ crates it gives $36 + 6 = 42$, not $35$.\n* Choice D ($18pc$): multiplies the weights and the counts. With $4$ parcels and $3$ crates it gives $18(12) = 216$, which is not a weight at all.\n\n**Test Day Takeaway:** Two different rates acting on two different counts always produce a sum of two products. Sanity-check the expression by substituting one small pair of numbers."
+}

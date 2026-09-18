@@ -1,34 +1,60 @@
 {
-  "id": 541,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 2,
-  "passage": "A student writing about regional climate trends is summarizing a table that reports observed change in annual precipitation—expressed as a percentage relative to a 1961–1990 baseline—for five bands of latitude over the period 1981–2020. The student argues that the table supports a careful generalization: most, but not all, of the latitude bands have grown wetter. The student supports the claim with data from the table.\n\nObserved change in annual precipitation (%) relative to a 1961–1990 baseline, by latitude band, 1981–2020\n| Latitude band               | Change (%) |\n|-----------------------------|------------|\n| 60–90 N (high northern) | +8.2       |\n| 30–60 N (mid northern)  | +1.7       |\n| 0–30 N (tropical north) | -0.4       |\n| 0–30 S (tropical south) | +1.1       |\n| 30–60 S (mid southern)  | +2.6       |",
-  "question": "Which choice most effectively uses data from the table to support the claim?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Across the five latitude bands shown, the average precipitation change is positive, which indicates a broad global increase in precipitation since the 1961–1990 baseline period."
-    },
-    {
-      "id": "B",
-      "text": "The high northern band recorded the largest precipitation increase of any band shown, at +8.2 percent relative to the 1961–1990 baseline used throughout the table."
-    },
-    {
-      "id": "C",
-      "text": "Both mid-latitude bands showed increases, with the mid southern band at +2.6 percent showing a somewhat larger increase than the mid northern band at +1.7 percent."
-    },
-    {
-      "id": "D",
-      "text": "Four of the five bands show increases, ranging from +1.1 percent to +8.2 percent, while the tropical north band fell by 0.4 percent, the single exception."
-    }
+ "id": 541,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 2,
+ "passage": "Children's early word learning does not proceed at a steady clip. Tracking the number of distinct words children produce, researchers following one longitudinal sample recorded medians at four ages between the first and second birthdays. A student examining the results claims that toddlers' productive vocabularies not only grow across the second year but accelerate, with each interval adding more new words than the interval before it.",
+ "questionTable": {
+  "type": "table",
+  "caption": "Median productive vocabulary of children in one longitudinal sample",
+  "headers": [
+   "Age (months)",
+   "Median words produced"
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The student's reading has two parts—most bands grew wetter, and at least one did not—so the supporting evidence must establish both. Choice D does: it counts the four bands with increases and names the tropical north band's 0.4 percent decline, the exception that makes \"most, but not all\" the accurate summary. Choice A's average conceals exactly the band the student's reading turns on. Choice B reports a single maximum, and choice C compares only the two mid-latitude bands; neither shows that the increases stop short of being universal.",
-  "_meta": {
-    "anchor": "precipitation change by latitude band; generic student framing (values constructed, direction per published assessments)"
+  "rows": [
+   [
+    "12",
+    "5"
+   ],
+   [
+    "16",
+    "40"
+   ],
+   [
+    "20",
+    "160"
+   ],
+   [
+    "24",
+    "320"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to support the claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "At every age listed, the sample's median child produced more words than at the age before."
+  },
+  {
+   "id": "B",
+   "text": "By the time the children reached 24 months, the sample's median child produced 320 distinct words, fully 64 times the median of only 5 words that had been recorded at the 12-month visit."
+  },
+  {
+   "id": "C",
+   "text": "Between 12 and 24 months, the sample's median productive vocabulary increased by a total of 315 words."
+  },
+  {
+   "id": "D",
+   "text": "The sample's median vocabulary grew by 35 words between 12 and 16 months, by 120 words between 16 and 20 months, and by 160 words between 20 and 24 months."
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** Acceleration is a claim about successive increments, and D lays the three increments side by side — 35, then 120, then 160 words — showing each interval adding more than the one before.\n\n**The Full Solution:**\n- The claim has two parts: vocabularies grow, and the growth itself speeds up interval by interval.\n- Only interval-over-interval comparisons can show speeding up; totals and endpoints cannot.\n- D computes each successive gain from the table and the sequence rises monotonically (35 < 120 < 160), which is the accelerating pattern the student asserts.\n\n**Why the other choices are wrong:**\n- A: Monotonic growth supports only the first half of the claim; steady growth would satisfy A's statement without any acceleration.\n- B: A 64-fold endpoint ratio compresses the whole period into one number and reveals nothing about how the gains were distributed across intervals.\n- C: The 315-word total likewise erases the interval structure on which the acceleration claim depends.",
+ "_meta": {
+  "anchor": "toddler vocabulary growth — accelerating gains across the second year"
+ }
 }

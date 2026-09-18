@@ -1,0 +1,45 @@
+{
+ "id": 11,
+ "question": "At a track meet an athlete earned points for each scoring finish according to the table. The athlete recorded $24$ scoring finishes worth a total of $100$ points. How many of those finishes were in track events?",
+ "questionTable": {
+  "headers": [
+   "Event type",
+   "Points per scoring finish"
+  ],
+  "rows": [
+   [
+    "Field",
+    "$3$"
+   ],
+   [
+    "Track",
+    "$5$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10$"
+  },
+  {
+   "id": "B",
+   "text": "$14$"
+  },
+  {
+   "id": "C",
+   "text": "$20$"
+  },
+  {
+   "id": "D",
+   "text": "$28$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves the system correctly but reports the 10 field-event finishes instead of the track finishes",
+  "C": "divides all 100 points by 5, ignoring the points earned in field events",
+  "D": "subtracts 3(24) = 72 from 100 and reports the remainder 28 without dividing by the 2-point difference"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** If all $24$ finishes were field events they would be worth $72$ points; each track finish adds $2$ more, and $\\dfrac{100 - 72}{2} = 14$.\n\n**The Full Solution:**\nStep 1: Let $f$ be the field-event finishes and $t$ the track-event finishes. Then $f + t = 24$ and $3f + 5t = 100$.\nStep 2: Substitute $f = 24 - t$ into the points equation: $3(24 - t) + 5t = 100$, or $72 + 2t = 100$.\nStep 3: Solve: $2t = 28$, so $t = 14$ track finishes (and $f = 10$).\nCheck: $3(10) + 5(14) = 30 + 70 = 100$ points from $10 + 14 = 24$ finishes. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($10$): the system is solved correctly, but $10$ is $f$, the field-event count; the question asks for track events.\n* Choice C ($20$): divides all $100$ points by $5$, as if every point came from a track finish, which contradicts the $24$-finish total.\n* Choice D ($28$): stops at $100 - 72 = 28$, the extra points, without dividing by the $2$-point gap between the two event types.\n\n**Test Day Takeaway:** Substitute the count equation into the value equation, then reread which variable the question actually wants."
+}

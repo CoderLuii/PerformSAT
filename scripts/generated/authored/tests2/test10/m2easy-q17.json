@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "A city street-improvement budget, in dollars, satisfies $4{,}000c + 2{,}500s = 960{,}000$, where $c$ is the number of crosswalks repainted and $s$ is the number of streetlights installed. Which statement is the best interpretation of the relationship between $c$ and $s$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "For each additional crosswalk repainted, the number of streetlights installed decreases by $0.625$."
+  },
+  {
+   "id": "B",
+   "text": "For each additional crosswalk repainted, the number of streetlights installed decreases by $1.6$."
+  },
+  {
+   "id": "C",
+   "text": "For each additional crosswalk repainted, the number of streetlights installed increases by $1.6$."
+  },
+  {
+   "id": "D",
+   "text": "For each additional streetlight installed, the number of crosswalks repainted decreases by $1.6$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the ratio, dividing 2500 by 4000 instead of 4000 by 2500",
+  "C": "keeps the size of the rate but drops the negative sign built into the budget",
+  "D": "swaps the two variables, applying the crosswalk rate to a streetlight"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice B is correct.** Solving for $s$ gives $s = 384 - 1.6c$, so each extra crosswalk costs the city $1.6$ streetlights.\n\n**The Fast Way (~25s):** A fixed budget makes the rate the ratio of the prices: $\\frac{4{,}000}{2{,}500} = 1.6$ streetlights given up per crosswalk added.\n\n**The Full Solution:**\nStep 1: Isolate the streetlight count: $2{,}500s = 960{,}000 - 4{,}000c$.\nStep 2: Divide by $2{,}500$: $s = 384 - 1.6c$. The coefficient of $c$ is $-1.6$.\nStep 3: A slope of $-1.6$ means $s$ falls by $1.6$ each time $c$ rises by $1$. Check two budget-filling pairs: $c = 0$ gives $s = 384$, and $c = 10$ gives $s = 384 - 16 = 368$, since $4{,}000(10) + 2{,}500(368) = 40{,}000 + 920{,}000 = 960{,}000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.625$): divides $2{,}500$ by $4{,}000$. That number is the rate in the other direction — how many crosswalks one streetlight costs.\n* Choice C (increases by $1.6$): reads the size of the rate but ignores the sign. The budget is fixed, so spending more on crosswalks must leave less for streetlights.\n* Choice D (per streetlight): applies the crosswalk rate to the wrong variable. Adding one streetlight frees only $\\$2{,}500$, which is $0.625$ of a crosswalk, not $1.6$.\n\n**Test Day Takeaway:** With an equation in standard form, solve for the variable the statement is about before reading a rate. The sign of the resulting coefficient carries the direction."
+}

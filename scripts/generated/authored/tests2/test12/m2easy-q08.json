@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "Two straight paths on a site map are perpendicular. One is the service road $x + 2y = 14$; the other is a loading ramp through $(6, -3)$. The ramp's line reaches the $y$-axis at $y = b$. What is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-15$"
+  },
+  {
+   "id": "B",
+   "text": "$0$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses the service road's own slope -1/2 instead of the perpendicular slope 2",
+  "C": "uses -2, the reciprocal of -1/2 with the negative sign left in place",
+  "D": "substitutes the coordinates in reverse, using x = -3 and y = 6"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The ramp has slope $2$, so $-3 = 2(6) + b$ gives $b = -15$.\n\n**The Full Solution:**\nStep 1: Solve the road's equation for $y$: $2y = -x + 14$, so $y = -\\frac{1}{2}x + 7$ and the road has slope $-\\frac{1}{2}$.\nStep 2: A perpendicular line has the negative reciprocal slope, so the ramp has slope $2$ and its equation is $y = 2x + b$.\nStep 3: Substitute the point $(6, -3)$: $-3 = 2(6) + b = 12 + b$, so $b = -15$. Check: the ramp is $y = 2x - 15$, and at $x = 6$ it gives $y = 12 - 15 = -3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($0$): substitutes with the road's own slope, $-3 = -\\frac{1}{2}(6) + b = -3 + b$. That builds a line parallel to the road, which never meets it at a right angle.\n* Choice C ($9$): uses slope $-2$, the reciprocal of $-\\frac{1}{2}$ with the sign left negative, giving $-3 = -12 + b$.\n* Choice D ($12$): plugs the point in backwards as $x = -3$, $y = 6$, computing $6 = 2(-3) + b$.\n\n**Test Day Takeaway:** Convert to slope-intercept form, flip and negate for the perpendicular slope, then substitute the point in the order $(x, y)$ — reversing it is the most common silent error."
+}

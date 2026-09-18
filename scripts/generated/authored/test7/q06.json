@@ -1,31 +1,31 @@
 {
-  "id": 706,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "Designing the scenery for a grand opera is rarely a matter of decoration alone. The scenographer must translate a director's dramatic concept into physical space, deciding how painted backdrops, lighting, and moving set pieces will guide the audience's eye across a stage that may be forty feet deep. These choices also shape practical matters: where singers can stand to be heard, how quickly a scene can change in darkness, and how a chorus of dozens can move without colliding. The designer's work sits at the meeting point of visual art, storytelling, and stagecraft.",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To trace the long historical development of scenery design across the major opera houses of nineteenth-century Europe and beyond."
-    },
-    {
-      "id": "B",
-      "text": "To argue that stage lighting is the single most important of all the scenographer’s many responsibilities."
-    },
-    {
-      "id": "C",
-      "text": "To describe one memorable opera production and the unusually elaborate set that its staging required."
-    },
-    {
-      "id": "D",
-      "text": "To explain that operatic scenography combines artistic, narrative, and practical demands rather than serving as mere decoration."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage argues that designing opera scenery is not just decorative but joins artistic, storytelling, and practical concerns, which is exactly what D states. Choice A points to a history the text never provides; Choice B singles out lighting, which the passage lists as only one factor among several; and Choice C describes a specific production, whereas the text speaks generally about the designer's role."
+ "id": 706,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "At a large zoo, a staff nutritionist plans meals for animals as different as flamingos, pythons, and orangutans. The work involves more than copying wild diets. Some foods an animal would eat in the wild are unavailable or unsafe in captivity, so substitutes must deliver the same nutrients in a form the species will accept. Portions shift, too, as animals age, recover from illness, or prepare to breed. Feeding a zoo well means weighing nutritional science against supply, safety, and the tastes of some famously picky eaters.",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To trace how the diets fed to animals in zoos have changed over the past century."
+  },
+  {
+   "id": "B",
+   "text": "To argue that orangutans are the most difficult animals in any zoo collection to feed properly."
+  },
+  {
+   "id": "C",
+   "text": "To describe, step by step, the process a zoo nutritionist follows when preparing a single day's meals for the flamingos, pythons, and orangutans in one large collection."
+  },
+  {
+   "id": "D",
+   "text": "To explain that planning zoo diets means balancing nutritional needs against practical constraints rather than simply reproducing what animals eat in the wild."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The passage's spine is the second sentence — the work \"involves more than copying wild diets\" — and everything after it lists the practical constraints the nutritionist must balance, exactly what D states.\n\n**The Full Solution:**\n- The text announces its point early: zoo feeding is not a matter of reproducing wild diets.\n- It then supports the point with constraints: wild foods can be unavailable or unsafe, substitutes must be accepted by each species, and portions change with age, illness, and breeding.\n- The closing sentence gathers the balance explicitly — nutritional science weighed against supply, safety, and animal preferences.\n\n**Why the other choices are wrong:**\n- A: The passage describes the job as it is now; no change over a century is traced.\n- B: Orangutans are one item in a list of examples, and no species is called the hardest to feed.\n- C: No day-by-day or step-by-step procedure is described — the passage speaks in general terms about the job's demands."
 }

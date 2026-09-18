@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-139",
+ "question": "How many cubic centimeters of space does a battery module occupy if it is a rectangular block $24$ centimeters long, $15$ centimeters wide, and $8$ centimeters deep?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$47$"
+  },
+  {
+   "id": "B",
+   "text": "$360$"
+  },
+  {
+   "id": "C",
+   "text": "$1{,}440$"
+  },
+  {
+   "id": "D",
+   "text": "$2{,}880$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds the three dimensions, 24 + 15 + 8, which gives a length rather than a volume",
+  "B": "multiplies only the length and the width, 24 * 15, giving one face's area",
+  "C": "halves the product, as if the block had a triangular cross section"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Volume of a Rectangular Prism**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Multiply all three dimensions: $24 \\times 15 \\times 8 = 2{,}880$.\n\n**The Full Solution:**\nStep 1: A rectangular block's volume is the product of its length, width, and depth: $V = lwd$.\nStep 2: Substituting gives $V = 24 \\times 15 \\times 8$.\nStep 3: $24 \\times 15 = 360$, and $360 \\times 8 = 2{,}880$ cubic centimeters.\n\nCheck: The block is eight layers, each a $24$ by $15$ sheet of $360$ cubic centimeters, and $8 \\times 360 = 2{,}880$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($47$): adds the three dimensions instead of multiplying, producing a length rather than a volume.\n* Choice B ($360$): multiplies only the length and the width, which is the area of one face.\n* Choice C ($1{,}440$): halves the product, a step that belongs to a prism with a triangular cross section.\n\n**Test Day Takeaway:** A rectangular prism's volume is the plain product of all three dimensions, with no factor attached."
+}

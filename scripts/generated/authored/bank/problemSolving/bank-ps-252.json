@@ -1,0 +1,6 @@
+{
+ "id": "bank-ps-252",
+ "question": "Across one season a hockey team took $612$ shots on goal and its opponents took $450$. The team's shot total is $k\\%$ greater than the opponents' total. What is the value of $k$?",
+ "correctAnswer": "36",
+ "explanation": "**SAT Pattern: Percent Greater Than / Less Than**\n\n**The correct answer is $36$.** The difference is $612 - 450 = 162$ shots, and $\\frac{162}{450} = 0.36$, so $k = 36$.\n\n**The Fast Way (~30s):** $\\frac{612}{450} = 1.36$, so the team's total is $136\\%$ of the opponents' and $k = 36$.\n\n**The Full Solution:**\n\nStep 1: Identify the base. The phrase \"greater than the opponents' total\" makes $450$ the base of the comparison.\n\nStep 2: Find the difference: $612 - 450 = 162$ shots.\n\nStep 3: Divide by the base and convert: $\\frac{162}{450} = 0.36$, so $k = 36$. Check: $450(1.36) = 612$ shots.\n\n**Common Mistakes:**\n\n* Dividing by the larger total gives $\\frac{162}{612} \\approx 26.5$, which answers how much less the opponents' total is than the team's.\n* Reporting $136$ gives the team's total as a percent of the opponents' rather than the percent by which it is greater.\n* Reporting $162$ gives the difference in shots, not a percent.\n\n**Test Day Takeaway:** The base of a percent comparison is whatever follows \"than\" -- put that number in the denominator before you divide."
+}

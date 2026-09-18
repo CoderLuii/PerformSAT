@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-082",
+ "question": "A reef-fish census falls by $27.1\\%$ every three years, and biologists want a version of the model that steps one year at a time. If the count is modeled by $N(t) = N_0 k^{t}$ with $t$ measured in years, what is the value of $k$?",
+ "correctAnswer": "0.9",
+ "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**The correct answer is $0.9$.**\n\n**The Fast Way (~35s):** Three years multiply the count by $1 - 0.271 = 0.729$, and $\\sqrt[3]{0.729} = 0.9$.\n\n**The Full Solution:**\nStep 1: A $27.1\\%$ decrease leaves $72.9\\%$, so three years multiply the count by $0.729$.\nStep 2: Three years of the annual model multiply by $k^{3}$, so $k^{3} = 0.729$.\nStep 3: Taking the cube root gives $k = 0.9$. Check: $0.9^{3} = 0.729$, a drop of $27.1\\%$ ✓\n\n**Common Mistakes:**\n* $0.729$ — using the three-year multiplier as the annual one, which would shrink the count far too fast.\n* $0.91$ — spreading the $27.1\\%$ evenly as about $9\\%$ per year, which treats compounding as if it were addition.\n\n**Test Day Takeaway:** A multiplier stated over $n$ periods is the $n$th POWER of the per-period multiplier — undo it with an $n$th root, not by dividing."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 736,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "Walls, roads, and foundations buried underground can be detected from space, long before any digging begins. Buried stone alters the soil directly above it—changing how water drains and how the plants rooted there grow—and these faint differences register in satellite images that record many narrow bands of reflected light, including bands beyond what the human eye can see. Where a buried wall lies, the vegetation above it may grow a little taller or a slightly different shade of green. By mapping such contrasts, archaeologists have located unexcavated structures at sites in Egypt and identified looters' pits in conflict zones, surveying vast landscapes without turning a single shovel of earth.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Satellite imagery can reveal buried structures by detecting subtle differences in the soil and vegetation above them, letting archaeologists map unexcavated features across large areas."
-    },
-    {
-      "id": "B",
-      "text": "Archaeologists have so far used multispectral satellite imagery mainly to identify the many pits left behind by looters at archaeological sites located within active conflict zones."
-    },
-    {
-      "id": "C",
-      "text": "Buried walls change the color of the vegetation directly above them far more reliably than they ever change the drainage of the surrounding soil."
-    },
-    {
-      "id": "D",
-      "text": "Satellite imagery becomes genuinely useful only after archaeologists have already excavated part of a site to confirm what lies beneath."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage's central point is that satellites detect buried structures indirectly, through subtle soil and vegetation differences, allowing archaeologists to survey large areas without digging. Choice B narrows the technique to one application (looters' pits) that the passage lists only as an example. Choice C invents a comparison between vegetation color and soil drainage that the text does not make, and Choice D reverses the passage, which highlights detection before any excavation."
+ "id": 736,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "Radar was developed during the Second World War to detect aircraft, and to its wartime operators rain was a nuisance: storms cluttered the screen with echoes that could hide the planes being tracked. After the war, surplus military radar sets passed to weather services, and the nuisance became the signal. Forecasters could for the first time watch precipitation form, strengthen, and move across hundreds of kilometers as it happened, rather than piecing storms together from scattered ground reports. Distinctive echo shapes soon acquired meanings of their own — a curling hook on the display became one of the first reliable clues that a thunderstorm might be producing a tornado.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Military radar repurposed after the Second World War transformed forecasting by letting meteorologists watch storms develop and move in real time."
+  },
+  {
+   "id": "B",
+   "text": "Weather radar's chief value to forecasters lay in confirming the storm reports that ground observers telephoned in from distant weather stations."
+  },
+  {
+   "id": "C",
+   "text": "Wartime radar operators devised most of the echo-reading techniques that weather services would later adopt for tracking severe thunderstorms."
+  },
+  {
+   "id": "D",
+   "text": "Rain so badly cluttered wartime radar screens that operators often failed to detect the approaching enemy aircraft that the equipment had been built to track."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The passage's hinge is \"the nuisance became the signal\": wartime aircraft-detection radar, passed to weather services, gave forecasters their first real-time, wide-area view of storms — which is A, with the tornado hook as a closing illustration.\n\n**The Full Solution:**\n- The opening supplies the origin: radar built for war, with rain as unwanted clutter.\n- The middle delivers the transformation — surplus sets reached weather services, and forecasters could watch precipitation form, strengthen, and move \"as it happened.\"\n- The closing detail (the hook echo as a tornado clue) extends the same point: the repurposed displays became forecasting tools in their own right.\n\n**Why the other choices are wrong:**\n- B: It inverts the passage — radar freed forecasters from piecing storms together out of ground reports, rather than serving to confirm them.\n- C: The text credits weather services, not wartime operators, with giving echoes meteorological meaning.\n- D: It stretches a scene-setting detail about clutter into the main idea and stops before the transformation the passage exists to describe."
 }

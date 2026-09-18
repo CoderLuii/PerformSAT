@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-154",
+ "question": "A sign maker cuts a circular aluminum blank of radius $r$ inches whose face covers as much area as two blanks of radii $20$ inches and $21$ inches combined. What is the value of $r$?",
+ "correctAnswer": "29",
+ "explanation": "**SAT Pattern: Area of a Circle**\n\n**The correct answer is $29$.**\n\n**The Fast Way (~45s):** $r^{2}=20^{2}+21^{2}=841$, so $r=29$ inches.\n\n**The Full Solution:**\n\nStep 1: Add the two areas. $\\pi(20)^{2}+\\pi(21)^{2}=400\\pi+441\\pi=841\\pi$ square inches.\n\nStep 2: Set the new blank equal to that total. $\\pi r^{2}=841\\pi$, so $r^{2}=841$.\n\nStep 3: Take the positive root. $r=29$ inches, since a radius must be positive.\n\nCheck: $\\pi(29)^{2}=841\\pi$, exactly the combined area.\n\n**Common Mistakes:**\n\n* $41$: adds the radii, $20+21$, as though areas scaled linearly with radius.\n* $841$: reports $r^{2}$ instead of $r$.\n* $20.5$: averages the two radii rather than combining areas.\n\n**Test Day Takeaway:** Areas add, radii do not — combine the squares first, then take one square root at the end."
+}

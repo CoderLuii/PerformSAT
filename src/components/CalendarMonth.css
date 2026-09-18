@@ -133,16 +133,65 @@
   border-color: var(--color-brand-primary);
 }
 
-/* The SAT date — solid brand fill so the target day reads from across the
- * room. Outranks practiced/today fills (a test day IS the headline). */
+/* The SAT date — a gold star behind the day number, so the target day reads
+ * from across the room and is unmistakably different from practiced/today
+ * rings (2026-08-24, replaced the solid orange disc). Outranks both fills. */
+.cm-cell {
+  position: relative;
+}
+.cm-cell-day {
+  position: relative;
+  z-index: 1;
+}
 .cm-cell-test,
 .cm-cell-test.cm-cell-practiced,
 .cm-cell-test.cm-cell-today {
-  background: var(--color-brand-primary);
-  color: var(--color-white);
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--color-slate-900);
+  font-weight: 800;
+}
+.cm-star {
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  width: 142%;
+  height: 142%;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 1.5px rgba(201, 138, 18, 0.45));
+}
+/* A sitting that's already behind them: no star — quiet ink plus a small
+ * green check badge at the corner of the number ("taken", green = done). */
+.cm-cell-test.is-past { color: var(--color-slate-500); font-weight: 700; }
+.cm-taken {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 11px;
+  height: 11px;
+  color: var(--color-brand-green-text, #5A8A16);
+  z-index: 2;
+  pointer-events: none;
+}
+/* Expected score-release day: a short lime bar under the number. */
+.cm-cell-release .cm-cell-day { color: var(--color-slate-900); font-weight: 800; }
+.cm-release-mark {
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  width: 14px;
+  height: 3px;
+  margin-left: -7px;
+  border-radius: 2px;
+  background: var(--color-brand-green-text, #5A8A16);
+}
+.cm-legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.cm-legend-item + .cm-legend-item { margin-left: 14px; }
+.cm-legend-release { width: 14px; height: 3px; border-radius: 2px; background: var(--color-brand-green-text, #5A8A16); flex-shrink: 0; }
+/* Today AND test day: keep the star, mark "today" with the brand ring. */
+.cm-cell-test.cm-cell-today {
   border-color: var(--color-brand-primary);
-  font-weight: 700;
-  box-shadow: 0 0 0 2px var(--color-white), 0 0 0 3.5px var(--color-brand-primary);
 }
 
 /* Legend (only rendered when the test date is in the visible month) */
@@ -164,9 +213,17 @@
   flex-shrink: 0;
 }
 
-.cm-legend-test {
-  background: var(--color-brand-primary);
-  box-shadow: 0 0 0 1.5px var(--color-white), 0 0 0 2.5px var(--color-brand-primary);
+.cm-legend-star {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 1px rgba(201, 138, 18, 0.4));
+}
+.cm-legend-taken {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  color: var(--color-brand-green-text, #5A8A16);
 }
 
 @media (max-width: 640px) {

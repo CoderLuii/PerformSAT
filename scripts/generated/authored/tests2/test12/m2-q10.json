@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "The velocity of water leaving a spillway is modeled by $v = 8\\sqrt{h + 5}$, where $v$ is the velocity in feet per second and $h$ is the head in feet. For what value of $h$ does this model predict a velocity of $56$ feet per second?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$44$"
+  },
+  {
+   "id": "D",
+   "text": "$49$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "divides 56 by 8 to get 7 and then subtracts 5 without ever squaring",
+  "B": "stops at the value of the radical, 56/8 = 7",
+  "D": "squares 7 correctly but forgets to subtract the 5 inside the radical"
+ },
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice C is correct.** Setting $8\\sqrt{h + 5} = 56$ gives $\\sqrt{h + 5} = 7$, so $h + 5 = 49$ and $h = 44$.\n\n**The Fast Way (~25s):** Divide by $8$, square, subtract $5$: $7 \\to 49 \\to 44$.\n\n**The Full Solution:**\nStep 1: Isolate the radical: $\\sqrt{h + 5} = \\frac{56}{8} = 7$.\nStep 2: Square both sides: $h + 5 = 49$.\nStep 3: Solve: $h = 49 - 5 = 44$ feet. Check in the original model: $8\\sqrt{44 + 5} = 8\\sqrt{49} = 8(7) = 56$ feet per second. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): divides by $8$ to get $7$, then subtracts $5$ immediately. Skipping the squaring step undoes only half of the radical.\n* Choice B ($7$): the value of $\\sqrt{h + 5}$, not of $h$ — the answer to the middle step rather than to the question.\n* Choice D ($49$): squares correctly but reports $h + 5$ as though the radical held $h$ alone.\n\n**Test Day Takeaway:** Isolate the radical before squaring, and remember that squaring returns the WHOLE expression under the root — anything added inside still has to be removed."
+}

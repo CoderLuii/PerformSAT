@@ -1,0 +1,40 @@
+{
+ "id": "bank-geo-092",
+ "question": "The window of a sleeper cabin is the triangle in the figure, where the degree measure at each corner is given. What is the value of $x$?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "x°",
+    "(x+20)°",
+    "(2x-40)°"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$35$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$45$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 120 for the angle sum, solving 4x - 20 = 120",
+  "B": "moves the -20 to the left as +20, solving 4x + 20 = 180",
+  "C": "drops the constants entirely, solving 4x = 180"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** $x+(x+20)+(2x-40)=4x-20=180$, so $x=50$.\n\n**The Full Solution:**\n\nStep 1 — Set the sum of the three marked measures equal to $180$: $x+(x+20)+(2x-40)=180$.\n\nStep 2 — Combine like terms: $4x-20=180$.\n\nStep 3 — Add $20$ and divide by $4$: $4x=200$, so $x=50$. Check: the three angles measure $50$, $70$, and $60$ degrees, and $50+70+60=180$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($35$): this uses $120$ as the angle sum instead of $180$.\n* Choice B ($40$): this solves $4x+20=180$, flipping the sign of the constant.\n* Choice C ($45$): this drops both constants and solves $4x=180$.\n\n**Test Day Takeaway:** Collect every constant on the left before moving anything — the $+20$ and $-40$ combine to a single $-20$."
+}

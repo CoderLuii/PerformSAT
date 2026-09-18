@@ -1,0 +1,30 @@
+{
+ "id": 9,
+ "question": "A parcel sorting line scans $n(t)$ cartons in the first $t$ minutes of a shift. After a second scanner is installed the count follows $u(t) = 2n(t - 10)$. If $u(35) = 176$, what is the value of $n(25)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$78$"
+  },
+  {
+   "id": "B",
+   "text": "$88$"
+  },
+  {
+   "id": "C",
+   "text": "$176$"
+  },
+  {
+   "id": "D",
+   "text": "$352$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves 176 correctly but then subtracts the 10-minute shift from the count",
+  "C": "reports u(35) itself, skipping the factor of 2",
+  "D": "doubles 176 instead of halving it"
+ },
+ "correctAnswer": "B",
+ "hint": "Work out which value of $n$ the expression $u(35)$ actually contains.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** $u(35) = 2n(25)$, so $n(25) = \\frac{176}{2} = 88$.\n\n**The Full Solution:**\nStep 1: Match the inputs: $u(35) = 2n(35 - 10) = 2n(25)$.\nStep 2: So $2n(25) = 176$.\nStep 3: Divide by $2$: $n(25) = 88$. Check: $2n(25) = 2(88) = 176 = u(35)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($78$): halving correctly and then subtracting the $10$-minute shift from the count; the shift moves inputs, not outputs.\n* Choice C ($176$): reporting $u(35)$ itself and ignoring the factor of $2$ in front of $n$.\n* Choice D ($352$): doubling $176$ instead of halving it, applying the rule forward when it needs to be undone.\n\n**Test Day Takeaway:** Substitute the input into the rule first; the resulting equation tells you which operation to undo."
+}

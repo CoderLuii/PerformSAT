@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-378",
+  "question": "In a poll of city residents, $38\\%$ preferred option A and $17\\%$ preferred option B. Every other respondent preferred option C. What percent of the respondents preferred option C?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$45\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$55\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$62\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$83\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports $38 + 17$, the combined percent for options A and B",
+    "C": "subtracts only the $38\\%$ from $100\\%$, ignoring option B",
+    "D": "subtracts only the $17\\%$ from $100\\%$, ignoring option A"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The three options account for all respondents, so option C is $100\\% - 38\\% - 17\\% = 45\\%$.\n\n**The Full Solution:**\nStep 1: Every respondent preferred exactly one of the three options, so the three percents total $100\\%$.\nStep 2: Options A and B together account for $38\\% + 17\\% = 55\\%$.\nStep 3: Option C accounts for $100\\% - 55\\% = 45\\%$. Check: $38 + 17 + 45 = 100$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($55\\%$): reports $38 + 17$, the combined percent for options A and B\n* Choice C ($62\\%$): subtracts only the $38\\%$ from $100\\%$, ignoring option B\n* Choice D ($83\\%$): subtracts only the $17\\%$ from $100\\%$, ignoring option A\n\n**Test Day Takeaway:** When categories are exhaustive and non-overlapping, their percents sum to $100\\%$; subtract the sum of the known parts, not just one of them."
+}

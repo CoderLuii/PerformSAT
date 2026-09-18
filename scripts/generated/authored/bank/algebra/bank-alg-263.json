@@ -1,0 +1,6 @@
+{
+  "question": "Two anemometer models report $8x + 5y = 74$ and $ax + by = 49$ from the same counts $x$ of gusts above $40$ knots and $y$ of gusts below $40$ knots, where $a$ and $b$ are constants. The first report minus the second report yields $5x + y = 25$. What is the value of $ab$?",
+  "correctAnswer": "12",
+  "explanation": "**SAT Pattern: Solve for a Combination**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~40s):** Matching coefficients in the subtraction gives $8 - a = 5$ and $5 - b = 1$, so $a = 3$, $b = 4$, and $ab = 12$.\n\n**The Full Solution:**\n\nStep 1: Write the subtraction term by term: $(8 - a)x + (5 - b)y = 74 - 49$.\n\nStep 2: The stem says the result is $5x + y = 25$, and $74 - 49 = 25$ confirms the constants.\n\nStep 3: So $8 - a = 5$ gives $a = 3$, and $5 - b = 1$ gives $b = 4$, hence $ab = 12$. Check with $x = 3$ and $y = 10$: $8(3) + 5(10) = 74$ and $3(3) + 4(10) = 49$.\n\n**Common Mistakes:** Solving $a - 8 = 5$ and reporting $ab = 52$; reading the $y$-coefficient of the difference as $0$ and reporting $ab = 15$; reporting $a + b = 7$ instead of the product.\n\n**Test Day Takeaway:** Subtracting equations subtracts each coefficient separately; set up one small equation per column and read the answer the question actually asks for.",
+  "id": "bank-alg-263"
+}

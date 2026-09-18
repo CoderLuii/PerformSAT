@@ -1,0 +1,49 @@
+{
+  "id": "bank-alg-021",
+  "question": "For the linear function $f$, the table shows $f(x)$ at three inputs. If $f(x) = ax + b$, where $a$ and $b$ are constants, what is the value of $b$?",
+  "questionTable": {
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "rows": [
+      [
+        "3",
+        "22"
+      ],
+      [
+        "7",
+        "42"
+      ],
+      [
+        "11",
+        "62"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-13$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$7$"
+    },
+    {
+      "id": "D",
+      "text": "$22$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "pairs the output 22 with the input 7 from a different row (22 - 35)",
+    "B": "reports the slope a instead of b",
+    "D": "treats f(3) as if it were f(0)"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Find Intercept from Slope and Point**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The outputs rise $20$ for every $4$ in $x$, so $a = 5$. Then $22 = 5(3) + b$ gives $b = 7$.\n\n**The Full Solution:**\nStep 1: Slope: $a = \\frac{42 - 22}{7 - 3} = \\frac{20}{4} = 5$.\nStep 2: Substitute one row into $f(x) = 5x + b$. Using $(3, 22)$: $22 = 15 + b$, so $b = 7$.\nStep 3: Check with another row: $f(11) = 5(11) + 7 = 62$, matching the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-13$): computes $22 - 5(7)$, mixing the output of one row with the input of another.\n* Choice B ($5$): reports the slope $a$; the question asks for the constant $b$.\n* Choice D ($22$): takes $f(3)$ as the intercept, but the intercept is $f(0)$, which the table does not list.\n\n**Test Day Takeaway:** After finding the slope, substitute a single complete row (its $x$ AND its $f(x)$) to solve for $b$; never mix coordinates across rows."
+}

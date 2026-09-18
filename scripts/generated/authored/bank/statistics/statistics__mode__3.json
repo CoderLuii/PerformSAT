@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "A data set contains $20$ values. The value $5$ occurs $6$ times, the value $8$ occurs $6$ times, and each of the remaining values occurs at most $3$ times. Which statement about the mode of the data set is true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The only mode is $5$."
+    },
+    {
+      "id": "B",
+      "text": "The only mode is $8$."
+    },
+    {
+      "id": "C",
+      "text": "The data set has two modes, $5$ and $8$."
+    },
+    {
+      "id": "D",
+      "text": "The data set has no mode."
+    }
+  ],
+  "distractorNotes": {
+    "A": "breaks the tie by choosing the smaller value, but the definition of mode does not favor smaller values.",
+    "B": "breaks the tie by choosing the larger value, which the definition of mode does not do either.",
+    "D": "treats a tie for the greatest frequency as no mode; a data set has no mode only when every value occurs the same number of times."
+  },
+  "correctAnswer": "C",
+  "hint": "Compare the highest frequency in the data set with how many values reach it.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** The greatest frequency is $6$, and two values reach it, so both $5$ and $8$ are modes.\n\n**The Full Solution:**\nStep 1: The mode is the value or values occurring most frequently.\nStep 2: The greatest frequency in this data set is $6$, since every other value occurs at most $3$ times.\nStep 3: Both $5$ and $8$ occur $6$ times, so the data set has two modes, $5$ and $8$. Check: no value occurs more than $6$ times, so neither can be excluded. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: breaks the tie by choosing the smaller value, but the definition of mode does not favor smaller values.\n* Choice B: breaks the tie by choosing the larger value, which the definition of mode does not do either.\n* Choice D: treats a tie for the greatest frequency as no mode; a data set has no mode only when every value occurs the same number of times.\n\n**Test Day Takeaway:** A tie for the highest frequency produces more than one mode. Only a data set with no repeats at all, or with every value equally frequent, has no mode."
+}

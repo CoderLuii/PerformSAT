@@ -126,6 +126,13 @@ const studyPlan = {
           subtitle: 'Algebra → Core',
           moduleId: 'linear-equations',
           sectionName: 'Deriving Equations',
+          // Format-v2 drill fields (what studyPlanGenerator emits today): the
+          // Study Plan routes these through the targeted-weakness drill, which
+          // carries the weakness into the shell (diagnostic sentence, chip).
+          skillId: 'slope-intercept-form',
+          skillName: 'Slope-intercept form',
+          section: 'math',
+          domain: 'algebra',
           duration: 20,
           completed: false,
           day: todayName,

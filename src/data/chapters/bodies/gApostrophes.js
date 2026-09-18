@@ -35,7 +35,7 @@ export const gApostrophesBlocks = [
     rows: [
       ['More than one (no ownership)', 'plain -s, no apostrophe', '*The **dogs** ran across the yard.*'],
       ['One thing owns something', "add **'s**", '*The **dog\'s** leash snapped.*'],
-      ['Many owners (already ends in s)', "add **s\'**", '*The **dogs\'** leashes were tangled.*'],
+      ['Many owners (already ends in s)', "add **s'**", '*The **dogs\'** leashes were tangled.*'],
       ['Irregular plural (no s)', "add **'s**", '*The **children\'s** coats are here.*'],
     ],
   },
@@ -71,10 +71,10 @@ export const gApostrophesBlocks = [
     type: 'table',
     headers: ['With apostrophe (= is/has)', 'No apostrophe (possessive)'],
     rows: [
-      ["**it\'s** = it is / it has", '**its** = belonging to it'],
-      ["**they\'re** = they are", '**their** = belonging to them'],
-      ["**who\'s** = who is / who has", '**whose** = belonging to whom'],
-      ["**you\'re** = you are", '**your** = belonging to you'],
+      ["**it's** = it is / it has", '**its** = belonging to it'],
+      ["**they're** = they are", '**their** = belonging to them'],
+      ["**who's** = who is / who has", '**whose** = belonging to whom'],
+      ["**you're** = you are", '**your** = belonging to you'],
     ],
   },
   {

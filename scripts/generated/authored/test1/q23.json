@@ -6,26 +6,26 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 1,
- "passage": "In the mid-1970s, when most numerical climate simulations at the National Center for Atmospheric Research treated the atmosphere and the ocean as separate, loosely connected systems, Warren Washington helped develop one of the first general circulation models that fully coupled the two — letting heat, moisture, and momentum move continuously across the sea surface as the simulation ran. ______ that coupled atmosphere–ocean architecture forms the backbone of the models climate scientists use to reproduce major features of present-day climate and to project how it will change under increased greenhouse gases.",
+ "passage": "Engineers routinely borrow designs that evolution has already tested. ______ when designers of Japan's Shinkansen trains needed to stop the thunderclap the trains produced on exiting tunnels, they reshaped the locomotive's nose after the beak of the kingfisher, a bird that plunges from air into water with barely a splash.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "In addition,"
+   "text": "However,"
   },
   {
    "id": "B",
-   "text": "Therefore,"
+   "text": "Meanwhile,"
   },
   {
    "id": "C",
-   "text": "Previously,"
+   "text": "For instance,"
   },
   {
    "id": "D",
-   "text": "Today,"
+   "text": "In contrast,"
   }
  ],
- "correctAnswer": "D",
- "explanation": "The first sentence is anchored in a specific past moment: 'In the mid-1970s,' Washington helped build one of the first general circulation models that coupled the atmosphere and the ocean, at a time when most simulations at NCAR still treated those systems as separate. The second sentence shifts to the present tense — 'forms the backbone' — to describe how that same coupled architecture now underwrites the models climate scientists rely on to reproduce present-day climate and project change under increased greenhouse gases. The relation between the two sentences is a then-versus-now contrast: a pioneering 1970s design has, in the intervening decades, become the standard. 'Today,' is the CB-lexicon transition for that historical-to-present move and is correct (D).\n\nThe single-word cue that selects 'Today,' here is 'mid-1970s' in sentence 1, paired with the present-tense 'forms' in sentence 2: together they signal a temporal shift from a specific past era to the current state of the field, which is exactly what 'Today,' marks."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** A general claim followed by a particular illustration calls for an exemplifying transition, and \"For instance,\" performs exactly that move.\n\n**The Full Solution:**\n- The first sentence states a general practice: engineers borrow evolution-tested designs.\n- The second supplies a specific case of that practice — the kingfisher-beak nose of the Shinkansen — so the second sentence is evidence for the first.\n\n**Why the other choices are wrong:**\n- A: \"However\" signals opposition, but the train example confirms rather than resists the opening claim.\n- B: \"Meanwhile\" signals simultaneous, unrelated action, misstating the link — the second sentence is evidence, not a parallel event.\n- D: \"In contrast\" also signals opposition, which the example does not provide."
 }

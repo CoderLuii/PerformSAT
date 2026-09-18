@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-102",
+ "question": "An airport's luggage model gives $a(w + 1) + 2w = 40$, where $w$ is the number of carts in service on a shift and $a$ is a constant. For what value of $a$ is $w = 6$ a solution?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~25s):** At $w = 6$, $7a + 12 = 40$, so $7a = 28$ and $a = 4$.\n\n**The Full Solution:**\n\nStep 1: Substitute $w = 6$: $a(6 + 1) + 2(6) = 40$.\n\nStep 2: Simplify: $7a + 12 = 40$, so $7a = 28$.\n\nStep 3: Divide by $7$: $a = 4$. Check: $4(6 + 1) + 2(6) = 28 + 12 = 40$.\n\n**Common Mistakes:**\n\n* $28$ — stopping at $7a = 28$ and reporting the product instead of $a$.\n* $40$ — reporting the right-hand side of the equation instead of the constant.\n* $\\frac{14}{3}$ — dividing $28$ by $6$, using $w$ rather than $w + 1$ as the multiplier of $a$.\n\n**Test Day Takeaway:** Substituting the given solution turns a two-unknown equation into a one-step solve for the constant."
+}

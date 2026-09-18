@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
-  "passage": "Kente cloth, woven on narrow looms by Asante and Ewe weavers in present-day Ghana, is assembled from strips a few inches wide that are sewn edge to edge into large patterned cloths. Among the Asante, the bright colors are not chosen for visual effect alone. Each established color carries a recognized meaning that a knowledgeable wearer is expected to read: gold for status and wealth, green for growth and renewal, and so on. A finished cloth can therefore work as a kind of statement, its combination of colors and patterns signaling the occasion it was made for and something of the standing of the person who wears it.",
-  "question": "According to the text, what is true of the colors used in traditional Asante kente cloth?",
+  "passage": "The cuttlefish is a master of disguise despite being colorblind. Its skin contains millions of pigment-filled sacs called chromatophores, each ringed by muscles that stretch the sac into a visible dot of color or let it shrink to near invisibility; beneath these lie reflective cells that return ambient light. To break up its outline on rough surfaces, the animal can also raise dozens of small bumps called papillae, changing the very texture of its skin from smooth to studded in under a second. Watching these systems work together, researchers can often tell what kind of background a cuttlefish is matching without seeing the background itself.",
+  "question": "According to the text, how does a cuttlefish change the texture of its skin?",
   "choices": [
     {
       "id": "A",
-      "text": "Each established color carries a recognized meaning that a knowledgeable viewer is expected to interpret."
+      "text": "It raises small bumps called papillae on the skin's surface."
     },
     {
       "id": "B",
-      "text": "They are chosen mainly for the contrast they create against the narrow woven strips."
+      "text": "It contracts the muscles that ring each of its chromatophores."
     },
     {
       "id": "C",
-      "text": "They indicate which of the narrow looms a particular weaver used to make the cloth."
+      "text": "It releases pigment from sacs distributed across its skin."
     },
     {
       "id": "D",
-      "text": "They have lost the meanings they once carried before cloth was woven in wide formats."
+      "text": "It angles its reflective cells to return more ambient light."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage states directly that among the Asante the colors are not chosen for visual effect alone and that each established color carries a recognized meaning a knowledgeable wearer is expected to read. Choice A restates that point. Choice B contradicts the text, which explicitly sets aside visual effect as the main reason. Choices C and D introduce ideas the passage never mentions: nothing links the colors to a particular loom, and nothing suggests the meanings have been lost."
+  "explanation": "**Choice A is correct.** The text ties texture change to one mechanism: the animal \"can also raise dozens of small bumps called papillae, changing the very texture of its skin from smooth to studded.\"\n\n**The Full Solution:**\n- The question asks specifically about texture, so the answer must come from the sentence about the skin's surface shape.\n- That sentence names the papillae as the feature raised to turn smooth skin studded — choice A restates it directly.\n\n**Why the other choices are wrong:**\n- B: The chromatophore muscles control color dots, not surface texture.\n- C: The pigment sacs are stretched or shrunk to show color; the text never says pigment is released, and color is not texture.\n- D: The reflective cells return ambient light; the text attributes no texture role to them and never mentions angling."
 }

@@ -1,0 +1,50 @@
+{
+ "id": "bank-am-267",
+ "question": "An acoustic panel's edge profile is modeled by the function $f$, whose graph is shown. The function $g$ satisfies $g(x) = 4f(x)$ for every $x$. Which ordered pair is the vertex of the graph of $y = g(x)$?",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    3,
+    -2
+   ],
+   "a": 1,
+   "showPoints": [
+    [
+     1,
+     2
+    ],
+    [
+     5,
+     2
+    ]
+   ],
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(3, -2)$"
+  },
+  {
+   "id": "B",
+   "text": "$(12, -2)$"
+  },
+  {
+   "id": "C",
+   "text": "$(3, -8)$"
+  },
+  {
+   "id": "D",
+   "text": "$(12, -8)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the vertex of f and never applies the factor 4",
+  "B": "multiplies the x-coordinate by 4 instead of the output",
+  "D": "multiplies both coordinates by 4"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertical Stretch**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Multiplying a function by $4$ scales every output and leaves every input alone, so the vertex $(3, -2)$ moves to $(3, -8)$.\n\n**The Full Solution:**\nStep 1: The graph shows that the vertex of $y = f(x)$ is $(3, -2)$, so $f(3) = -2$ and no other output of $f$ is smaller.\nStep 2: Because $g(x) = 4f(x)$, the input that produces the extreme output does not change: $g(3) = 4f(3) = 4(-2) = -8$.\nStep 3: For every other $x$, $f(x) > -2$, so $g(x) = 4f(x) > -8$, and the vertex of $y = g(x)$ is $(3, -8)$. Check: the graph passes through $(1, 2)$, and $g(1) = 4(2) = 8$, which is above $-8$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(3, -2)$): reports the vertex of $f$ itself and never applies the factor $4$.\n* Choice B ($(12, -2)$): multiplies the $x$-coordinate by $4$; that is what a horizontal change would do, not a vertical one.\n* Choice D ($(12, -8)$): multiplies both coordinates by $4$ instead of only the output.\n\n**Test Day Takeaway:** A vertical stretch scales outputs only — the $x$-coordinates of maxima, minima, and $x$-intercepts never move."
+}

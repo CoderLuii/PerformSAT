@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-240",
+  "question": "The system of equations $y = -5x + 8$ and $y = cx - 3$, where $c$ is a constant, has no solution. What is the value of $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-5$"
+    },
+    {
+      "id": "B",
+      "text": "$-3$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$8$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads the constant term of the second equation",
+    "C": "drops the sign on the slope",
+    "D": "reports the y-intercept of the first equation"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** No solution means parallel lines: equal slopes, different intercepts. The intercepts $8$ and $-3$ already differ, so set the slopes equal: $c = -5$.\n\n**The Full Solution:**\nStep 1: Two lines in slope-intercept form have no common point exactly when they are parallel and distinct.\nStep 2: Parallel requires equal slopes, so $c = -5$.\nStep 3: Distinct requires different $y$-intercepts: $8 \\neq -3$. $\\checkmark$ With $c = -5$, the equation $-5x + 8 = -5x - 3$ reduces to $8 = -3$, which is never true, confirming no solution.\n\n**Why the wrong answers are tempting:**\n* Choice B ($-3$): confuses the constant term of the second equation with the slope.\n* Choice C ($5$): drops the sign; lines with slopes $-5$ and $5$ cross exactly once.\n* Choice D ($8$): reports the $y$-intercept of the first equation.\n\n**Test Day Takeaway:** \"No solution\" for two lines means same slope, different intercept. Match the coefficient of $x$ and confirm the constants differ."
+}

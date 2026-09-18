@@ -6,35 +6,35 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 1,
- "passage": "When Maryam Mirzakhani received the Fields Medal in 2014, she became the first woman ever honored with mathematics' most prestigious prize. Mirzakhani, a professor at Stanford University, was recognized for her groundbreaking work on the dynamics and geometry of Riemann surfaces. Although her research drew on highly abstract ideas from hyperbolic ______ Mirzakhani had a gift for explaining the underlying questions in ways that nonspecialists could appreciate.",
+ "passage": "In 1967, while reviewing data from a radio telescope she had helped assemble at Cambridge, the astrophysicist Jocelyn Bell Burnell noticed a faint signal pulsing with remarkable regularity. Although the repeating pulse initially struck the team as too orderly to be ______ Bell Burnell's careful records showed it returning night after night from the same patch of sky, and the source was eventually identified as a rapidly spinning neutron star.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "geometry,"
+   "text": "natural,"
   },
   {
    "id": "B",
-   "text": "geometry"
+   "text": "natural"
   },
   {
    "id": "C",
-   "text": "geometry;"
+   "text": "natural;"
   },
   {
    "id": "D",
-   "text": "geometry:"
+   "text": "natural:"
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A, \"geometry,\". The blank sits at the boundary between an introductory dependent clause and the main clause that follows it: \"Although her research drew on highly abstract ideas from hyperbolic geometry\" cannot stand alone as a sentence — the subordinator \"Although\" makes it a fragment — and it is followed by the independent clause \"Mirzakhani had a gift for explaining the underlying questions in ways that nonspecialists could appreciate.\" Standard English requires a comma at this junction to separate the introductory subordinate clause from the main clause.",
+ "explanation": "**Choice A is correct.** An opening \"Although...\" clause is dependent — it must be joined to the main clause with a comma.\n\n**The Full Solution:**\n- The sentence opens with a dependent clause: \"Although the repeating pulse initially struck the team as too orderly to be natural.\"\n- A dependent clause cannot stand alone; the conventional boundary between it and the main clause (\"Bell Burnell's careful records showed...\") is a comma.\n\n**Why the other choices are wrong:**\n- B: It omits the required boundary, running the subordinate clause straight into the main clause.\n- C: A semicolon demands a complete, independent clause before it; the \"Although...\" clause is not one, so it would strand a fragment.\n- D: A colon likewise requires an independent clause before the mark — same fragment problem.",
  "_meta": {
   "rule": "comma after introductory dependent clause",
-  "anchor": "Maryam Mirzakhani — Fields Medal 2014, Stanford, Riemann surfaces, hyperbolic geometry",
+  "anchor": "Jocelyn Bell Burnell — pulsar discovery 1967, Cambridge radio telescope",
   "distractors": {
-   "A": "surface-match (semicolon as IC-IC marker)",
-   "B": "scope-shift (colon as IC+amplification marker)",
-   "D": "inverse (no punctuation)"
+   "B": "missing boundary (fused subordinate + main clause)",
+   "C": "semicolon requires independent clause before it",
+   "D": "colon requires independent clause before it"
   }
  }
 }

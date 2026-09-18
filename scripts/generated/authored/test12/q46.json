@@ -1,31 +1,31 @@
 {
-  "id": 1246,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "Earlier histories of a nineteenth-century mill town had been written almost entirely from the owners' business ____ a recently catalogued bundle of letters written by the women who worked the looms has let historians reconstruct the daily texture of factory life from the workers' own point of view, in their own words.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "records, but"
-    },
-    {
-      "id": "B",
-      "text": "records,"
-    },
-    {
-      "id": "C",
-      "text": "records but,"
-    },
-    {
-      "id": "D",
-      "text": "records"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. Two independent clauses meet at the blank, and joining them with a comma plus the coordinating conjunction \"but\" both links them and marks the contrast between the owners' records and the workers' letters. A comma alone (\"records,\") makes a comma splice. \"Records but,\" misplaces the comma after the conjunction, leaving the clauses improperly joined. With no punctuation at all (\"records\"), the two clauses run together."
+ "id": 1246,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "The earliest balloon competitions were tests of pure endurance, with trophies going to the crew that stayed aloft longest or drifted ____ the modern sport instead rewards precision, requiring pilots to steer by altitude choice alone toward targets only a few meters wide.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "farthest, but"
+  },
+  {
+   "id": "B",
+   "text": "farthest,"
+  },
+  {
+   "id": "C",
+   "text": "farthest but,"
+  },
+  {
+   "id": "D",
+   "text": "farthest"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Two independent clauses meet at the blank, and a comma plus the coordinating conjunction \"but\" joins them while marking their contrast.\n\n**The Full Solution:**\n- Check each side: \"The earliest balloon competitions were tests of pure endurance, with trophies going to the crew that stayed aloft longest or drifted farthest\" stands alone, and so does \"the modern sport instead rewards precision...\"\n- The rule: independent clauses may be joined by a comma plus a coordinating conjunction (and, but, or, so).\n- The relationship is a contrast — endurance then, precision now — so \"but\" is the right conjunction, placed after the comma: \"farthest, but.\"\n\n**Why the other choices are wrong:**\n- B: A comma alone between two independent clauses is a comma splice.\n- C: \"Farthest but,\" misplaces the comma after the conjunction instead of before it, leaving the clauses unjoined.\n- D: With no punctuation, the two complete sentences run together."
 }

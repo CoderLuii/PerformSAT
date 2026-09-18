@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-172",
+ "question": "A bridge-joint model is written as $7g - 4 = 2g + k$, where $g$ is the gap width in millimeters and $k$ is a constant. The width $g = 9$ makes the model true. What is the value of $k$?",
+ "correctAnswer": "41",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**The correct answer is $41$.**\n\n**The Fast Way (~25s):** At $g = 9$ the left side is $63 - 4 = 59$, so $18 + k = 59$ and $k = 41$.\n\n**The Full Solution:**\nStep 1: Substitute $g = 9$ into both sides of the model: $7(9) - 4 = 2(9) + k$.\nStep 2: Evaluate each side: the left side is $63 - 4 = 59$, and the right side is $18 + k$.\nStep 3: Solve $18 + k = 59$ by subtracting $18$: $k = 41$. Check: $7(9) - 4 = 59$ and $2(9) + 41 = 18 + 41 = 59$. $\\checkmark$\n\n**Common Mistakes:** Substituting on the right side only and setting $18 + k = 9$, which gives $-9$; reporting $59$, the common value of the two sides, instead of the constant; adding the two evaluated pieces to get $59 + 18 = 77$.\n\n**Test Day Takeaway:** When a value is said to satisfy an equation, put it into BOTH sides, evaluate each side to a single number, and let the constant fall out of the resulting one-step equation."
+}

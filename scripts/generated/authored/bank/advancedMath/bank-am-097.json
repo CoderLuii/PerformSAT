@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-097",
+ "question": "An art supplier's price per acrylic paint tube, in cents above its wholesale rate, is modeled by $f(x)=a(x-4)^2+k$, where $a$ and $k$ are constants. If $f(4)=-7$ and $f(1)=11$, what is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.5$"
+  },
+  {
+   "id": "B",
+   "text": "$2$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the division, computing 9 divided by 18",
+  "C": "divides 18 by 3 instead of by (1-4)^2 = 9",
+  "D": "reports the difference f(1) - f(4) = 18 without dividing"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** $f(4)=-7$ makes $k=-7$; then $f(1)=9a-7=11$ gives $9a=18$ and $a=2$.\n\n**The Full Solution:**\nStep 1: Substituting $x=4$ collapses the squared term: $f(4)=a(0)^2+k=k$, so $k=-7$.\nStep 2: Substituting $x=1$ gives $a(1-4)^2+(-7)=11$, that is $9a-7=11$.\nStep 3: So $9a=18$ and $a=2$. Check: $f(x)=2(x-4)^2-7$ gives $f(1)=2(9)-7=11$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.5$): inverts the last division, computing $\\frac{9}{18}$.\n* Choice C ($6$): divides $18$ by $|1-4|=3$ instead of by $(1-4)^2=9$.\n* Choice D ($18$): reports $f(1)-f(4)=18$ without dividing by $9$.\n\n**Test Day Takeaway:** Feeding the vertex's input into vertex form isolates the constant instantly — always use that condition first."
+}

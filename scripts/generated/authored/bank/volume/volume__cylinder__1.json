@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "A specialty grocer bottles cold-pressed olive oil in cylindrical tins whose circular base has a radius of $4$ centimeters. Oil stands $15$ centimeters deep in a full tin. Which of the following represents the number of cubic centimeters of oil a full tin holds?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\pi(4)(15)$"
+    },
+    {
+      "id": "B",
+      "text": "$\\pi(4)^2(15)$"
+    },
+    {
+      "id": "C",
+      "text": "$\\pi(4)(15)^2$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{1}{3}\\pi(4)^2(15)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "omits the square on the radius, using pi r h instead of pi r squared h",
+    "C": "squares the depth instead of the radius, as if 15 were the radius and 4 the height",
+    "D": "applies the cone formula, one third pi r squared h, to a shape with straight sides"
+  },
+  "correctAnswer": "B",
+  "hint": "Decide which of the two given lengths is the radius before you write the expression.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** The oil forms a cylinder of radius $4$ and height $15$, so its volume is $\\pi r^2 h = \\pi(4)^2(15)$.\n\n**The Full Solution:**\nStep 1: The circular base has radius $4$ centimeters, so its area is $\\pi r^2 = \\pi(4)^2$ square centimeters.\nStep 2: A cylinder's volume is the base area times the height, and the oil stands $15$ centimeters deep, so $V = \\pi(4)^2(15)$.\nStep 3: Numerically that is $\\pi(16)(15) = 240\\pi \\approx 754$ cubic centimeters. Check: only the radius carries the exponent, which is exactly what $\\pi r^2 h$ requires ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\pi(4)(15)$): drops the square on the radius, computing $\\pi r h$ instead of $\\pi r^2 h$.\n* Choice C ($\\pi(4)(15)^2$): squares the depth instead of the radius, as if $15$ were the radius and $4$ the height.\n* Choice D ($\\frac{1}{3}\\pi(4)^2(15)$): applies the cone formula $\\frac{1}{3}\\pi r^2 h$ to a container with straight sides.\n\n**Test Day Takeaway:** In $\\pi r^2 h$ only the radius is squared — match each given length to its role in the formula before writing the expression."
+}

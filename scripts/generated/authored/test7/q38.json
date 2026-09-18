@@ -1,31 +1,31 @@
 {
-  "id": 738,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "In late 1938, two German chemists reported a baffling result: bombarding uranium with neutrons produced barium, an element only about half as heavy as uranium. At the time, heavy nuclei were expected to absorb particles or shed small fragments, not to break roughly in half, so the finding seemed to defy known physics. The interpretation came from a physicist who had recently fled Germany for Sweden. Working through the problem with a younger colleague, she suggested that the uranium nucleus could behave like a liquid drop: the added neutron made it stretch and then split into two lighter nuclei, releasing a large amount of energy. The chemists' strange result, on this view, was the signature of a new kind of nuclear reaction, which the pair named fission.",
-  "question": "Based on the text, what did the physicist who interpreted the result propose about the uranium nucleus?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "That it simply absorbed the bombarding neutron without changing its total mass at all."
-    },
-    {
-      "id": "B",
-      "text": "That it could shed only small fragments, exactly as the known physics of the day predicted."
-    },
-    {
-      "id": "C",
-      "text": "That the nucleus was simply far too stable ever to be meaningfully altered by the impact of just a single neutron."
-    },
-    {
-      "id": "D",
-      "text": "That it could stretch like a liquid drop and then split into two lighter nuclei, releasing energy."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage states that the physicist pictured the uranium nucleus as a liquid drop that the added neutron made stretch and split into two lighter nuclei, releasing energy. Choice A describes simple absorption, which is what the result defied. Choice B repeats the old expectation (shedding only small fragments) that the new interpretation overturned, and Choice C describes a stability that her splitting model directly contradicts."
+ "id": 738,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "Why ice ages come and go was among the longest-standing puzzles in earth science: the rock record plainly showed ice sheets advancing and retreating, but no accepted cause explained their timing. Working through the 1920s and 1930s, the Serbian mathematician Milutin Milanković computed how three slow, overlapping astronomical cycles — in the shape of Earth's orbit, the tilt of its axis, and the direction the axis points — redistribute sunlight across latitudes and seasons. The critical quantity, he proposed, was summer sunlight at high northern latitudes: when the cycles align to weaken it, snow that fell in winter survives the melt season, and ice sheets begin to grow.",
+ "question": "Based on the text, what did Milanković propose about the growth of ice sheets?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "That ice sheets grow whenever winters across the whole planet become unusually cold and snowy."
+  },
+  {
+   "id": "B",
+   "text": "That the timing of ice ages would remain unexplained until the rock record of glacial advances was far more complete."
+  },
+  {
+   "id": "C",
+   "text": "That Earth's orbit and axis change too slowly for astronomical cycles to alter how sunlight falls across the planet's latitudes."
+  },
+  {
+   "id": "D",
+   "text": "That ice sheets begin to grow when astronomical cycles align to weaken summer sunlight at high northern latitudes, letting winter snow survive the melt season."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The proposal is stated in the final sentence: the critical quantity is \"summer sunlight at high northern latitudes,\" and when the cycles align to weaken it, winter snow survives the melt season and ice sheets begin to grow — which D restates faithfully.\n\n**The Full Solution:**\n- Locate the proposal: the sentence beginning \"The critical quantity, he proposed...\" carries Milanković's actual claim.\n- Its mechanism has three links: aligned cycles, weakened summer sunlight in the high north, and snow persisting through the melt season.\n- D preserves all three links without adding or reversing any.\n\n**Why the other choices are wrong:**\n- A: It substitutes planet-wide cold winters for the proposal's actual driver — weak northern summers that fail to melt the snow.\n- B: It mistakes the opening puzzle for the proposal; Milanković offered a cause, not a call for more data.\n- C: It reverses the text — his computations showed the slow cycles do redistribute sunlight, slowness notwithstanding."
 }

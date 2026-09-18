@@ -1,31 +1,31 @@
 {
-  "id": 830,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "A conservator cleaning an old oil painting works under a constant tension. A solvent strong enough to lift the yellowed varnish that has darkened over centuries can, if left a moment too long, also begin to ____ the original paint layer beneath it. For this reason the safest cleaning proceeds in tiny stages, each small patch tested and timed before the conservator moves on.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "reveal"
-    },
-    {
-      "id": "B",
-      "text": "brighten"
-    },
-    {
-      "id": "C",
-      "text": "preserve"
-    },
-    {
-      "id": "D",
-      "text": "endanger"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage frames a risk: the same solvent that removes varnish can harm the original paint, which is why cleaning is done so cautiously. \"Endanger\" names that threat. \"Reveal\" and \"brighten\" describe desirable results and miss the warning the sentence is building; \"preserve\" is the opposite of the danger, since the worry is precisely that the paint will not be preserved."
+ "id": 830,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "An acrobat leaving a teeterboard obeys a strict piece of physics: whatever turning motion the launch imparts is all the turning motion the somersault will ever have, for nothing pushed against in midair can add more. What the acrobat can do aloft is change shape. By pulling arms and knees into a tight tuck, a performer can ____ the spin the takeoff supplied, exchanging a slow, open turn for a rapid, compact one — and then open out again to slow the rotation for landing.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "initiate"
+  },
+  {
+   "id": "B",
+   "text": "suspend"
+  },
+  {
+   "id": "C",
+   "text": "measure"
+  },
+  {
+   "id": "D",
+   "text": "quicken"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The passage states that no new rotation can be created in the air; tucking only trades a slow, open turn for a faster, tighter one — that is, the acrobat can \"quicken\" the spin already under way.\n\n**The Full Solution:**\n- The physics is set out first: whatever turning motion the acrobat leaves the board with is all the turning motion there will be.\n- Drawing in arms and legs shrinks the body's spread, and the existing rotation speeds up in compensation.\n- The blank must name that speeding of an existing spin: \"quicken.\"\n\n**Why the other choices are wrong:**\n- A: \"Initiate\" is the trap the passage explicitly closes — a somersault cannot be started in midair.\n- B: \"Suspend\" would mean pausing the rotation, which tucking does not and cannot do.\n- C: \"Measure\" belongs to the observers; the acrobat is changing the spin, not quantifying it."
 }

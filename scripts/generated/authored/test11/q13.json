@@ -1,69 +1,65 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "between 1990 and 2010, biomass dropped from 40 thousand metric tons to 12 thousand metric tons, a decline larger in absolute terms than any earlier interval recorded by NOAA."
-    },
-    {
-      "id": "B",
-      "text": "biomass declined in every decade shown, falling from 180 thousand metric tons in 1960 to 12 thousand metric tons in 2010, a total reduction of more than 90 percent over the fifty-year period."
-    },
-    {
-      "id": "C",
-      "text": "by 2010, biomass had fallen to 12 thousand metric tons, the lowest figure in the table and the most informative single value for documenting the scale of the long-term loss."
-    },
-    {
-      "id": "D",
-      "text": "biomass fell from 180 thousand metric tons in 1960 to 70 thousand metric tons in 1970, a single-decade loss of 110 thousand metric tons that exceeds the combined losses of every later decade shown."
-    }
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the western tropical Pacific, at 4.6 millimeters per year, rose faster than any other region shown in the table."
+  },
+  {
+   "id": "B",
+   "text": "the eastern Pacific's average rate of 2.2 millimeters per year was the lowest recorded among the four regions."
+  },
+  {
+   "id": "C",
+   "text": "the North Atlantic and the southeast Indian Ocean differ in average rate by less than a millimeter per year."
+  },
+  {
+   "id": "D",
+   "text": "every region shows a positive average rate, but the rates range from 2.2 to 4.6 millimeters per year."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The conclusion has two halves — a shared upward direction and important regional differences — and D alone documents both: all four rates are positive, and they span more than a twofold range.\n\n**The Full Solution:**\n- The researchers' claim: the trend is \"upward across all of the regions studied,\" yet the rate differs \"substantially from one region to another.\"\n- Supporting that claim requires citing the whole table twice over — direction everywhere, plus spread. \"Every region shows a positive average rate\" covers the first half; \"from 2.2 to 4.6 millimeters per year\" quantifies the second.\n\n**Why the other choices are wrong:**\n- A: It isolates the fastest region, showing neither the shared direction nor the full spread.\n- B: It likewise cites a single region — the slowest — and cannot establish a claim about all four.\n- C: A near-tie between two regions actually understates the differences the conclusion asserts, and it ignores direction entirely.",
+ "passage": "Satellite altimeters have measured the height of the sea surface across nearly the entire global ocean since the early 1990s. Researchers analyzing three decades of these measurements emphasize that the ocean does not rise like water filling a bathtub: winds, currents, and uneven warming make the rate of sea-level rise differ substantially from one region to another, even though the trend is upward across all of the regions studied. The researchers conclude that the altimetry record shows both a shared direction and important regional differences because ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Average rate of sea-level rise measured by satellite altimetry in four ocean regions, 1993-2023",
+  "headers": [
+   "Region",
+   "Average rise (millimeters per year)"
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The claim is that the decline was concentrated in the earliest part of the record rather than spread evenly, so the evidence has to show that one early decade carried more of the loss than the later decades combined. Choice D does this: the 1960-to-1970 drop of 110 thousand metric tons (180 down to 70) is larger than the 1970-to-2010 losses added together (15 + 15 + 15 + 13 = 58). Choice B reports the full fifty-year decline of more than 90 percent, which shows the stock fell a great deal but says nothing about whether the loss was front-loaded. Choice A claims the 1990-to-2010 drop is the largest interval, but that 28-thousand-ton change is smaller than the 1960s drop, so it points the wrong way. Choice C fixes on the lowest single value, which marks the endpoint of the decline but cannot show how the loss was distributed across the decades.",
-  "passage": "The Atlantic cod stock on Georges Bank, in the Northwest Atlantic, has long served as a benchmark for the consequences of intensive fishing. Drawing on stock-assessment summaries published by the NOAA Northeast Fisheries Science Center, fisheries scientists have argued that, although the stock declined across every decade in the half-century after 1960, the loss was concentrated in the earliest part of the record rather than spread evenly across the period because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Estimated spawning stock biomass (in thousand metric tons) of Georges Bank Atlantic cod, selected years (NOAA Northeast Fisheries Science Center stock assessments)",
-    "headers": [
-      "Year",
-      "Biomass (thousand metric tons)"
-    ],
-    "rows": [
-      [
-        "1960",
-        "180"
-      ],
-      [
-        "1970",
-        "70"
-      ],
-      [
-        "1980",
-        "55"
-      ],
-      [
-        "1990",
-        "40"
-      ],
-      [
-        "2000",
-        "25"
-      ],
-      [
-        "2010",
-        "12"
-      ]
-    ]
-  },
-  "_meta": {
-    "anchor": "NOAA Georges Bank Atlantic cod spawning stock biomass 1960-2010",
-    "dataset": "qd-015"
-  },
-  "id": 1113,
-  "module": 1
+  "rows": [
+   [
+    "Western tropical Pacific",
+    "4.6"
+   ],
+   [
+    "Southeast Indian Ocean",
+    "3.9"
+   ],
+   [
+    "North Atlantic",
+    "3.1"
+   ],
+   [
+    "Eastern Pacific",
+    "2.2"
+   ]
+  ]
+ },
+ "_meta": {
+  "anchor": "satellite altimetry of oceans — regional sea-level-rise rates, shared direction with spread",
+  "distractors": {
+   "A": "single strongest region",
+   "B": "single weakest region",
+   "C": "understates differences, omits direction"
+  }
+ },
+ "id": 1113,
+ "module": 1
 }

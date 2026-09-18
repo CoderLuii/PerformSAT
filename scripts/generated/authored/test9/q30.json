@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 2,
-  "passage": "Among the Asante of Ghana, kente cloth is woven in narrow strips on a horizontal loom, each strip carrying bands of color and pattern that are later sewn edge to edge into one large cloth. Far from being ______, the combinations follow convention: particular patterns and color pairings are tied to proverbs, occasions, and rank, so a finished kente can be read as readily as it is worn.",
+  "passage": "Medieval and early modern writers described sea silk in extravagant terms: cloth spun from the beard of a shellfish, finer than anything woven on land, fit for kings. The objects that actually survive are considerably more ______ — a scattering of gloves, caps, and small knitted panels, treasured less for their size or splendor than for their soft golden shimmer.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
-    {
-      "id": "A",
-      "text": "decorative"
-    },
-    {
-      "id": "B",
-      "text": "durable"
-    },
-    {
-      "id": "C",
-      "text": "traditional"
-    },
-    {
-      "id": "D",
-      "text": "arbitrary"
-    }
+    { "id": "A", "text": "elaborate" },
+    { "id": "B", "text": "durable" },
+    { "id": "C", "text": "valuable" },
+    { "id": "D", "text": "modest" }
   ],
   "correctAnswer": "D",
-  "explanation": "\"Far from being ______\" is answered by \"the combinations follow convention,\" tied to proverbs, occasions, and rank. The blank must name what the patterns are not—random or unprincipled—so \"arbitrary,\" choice D, is correct. \"Decorative\" and \"durable\" do not contrast with rule-governed meaning, and \"traditional\" would agree with convention rather than oppose it.",
-  "_meta": {
-    "anchor": "kente cloth, Asante"
-  }
+  "explanation": "**Choice D is correct.** The sentence pivots from the writers' extravagant descriptions to what \"actually\" survives — small, everyday objects — so the blank must run opposite to \"extravagant\": the surviving pieces are \"modest.\"\n\n**The Full Solution:**\n- The first sentence inflates: cloth for kings, finer than anything on land.\n- The second deflates: gloves, caps, small panels, prized for shimmer rather than splendor.\n- \"Considerably more ______\" must carry the deflation, and \"modest\" — unassuming in scale and pretension — does.\n\n**Why the other choices are wrong:**\n- A: \"Elaborate\" would extend the extravagance, erasing the contrast the word \"actually\" sets up.\n- B: Survival might suggest durability, but the list that follows describes the objects' smallness and plainness, not their toughness.\n- C: \"Valuable\" clashes with the concession that the objects are treasured for shimmer rather than \"size or splendor\" — their worth is not what the blank measures against the legends."
 }

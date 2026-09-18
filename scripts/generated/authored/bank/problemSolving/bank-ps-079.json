@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-079",
+ "question": "Over a competition a long jumper's six measured jumps averaged $6.35$ meters. The first five measured $6.20$, $6.45$, $6.10$, $6.55$, and $6.30$ meters. What was the length, in meters, of the last jump?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6.30$"
+  },
+  {
+   "id": "B",
+   "text": "$6.32$"
+  },
+  {
+   "id": "C",
+   "text": "$6.35$"
+  },
+  {
+   "id": "D",
+   "text": "$6.50$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports the median of the five listed jumps, $6.30$, instead of the missing sixth",
+  "B": "averages only the five listed jumps, $\\frac{31.60}{5} = 6.32$",
+  "C": "repeats the six-jump average of $6.35$ as the value of the last jump"
+ },
+ "explanation": "**SAT Pattern: Mean from List**\n\n**Choice D is correct.** Six jumps averaging $6.35$ meters total $38.10$ meters, and the first five total $31.60$ meters, so the last jump was $6.50$ meters.\n\n**The Fast Way (~40s):** $6(6.35) = 38.10$ and $6.20+6.45+6.10+6.55+6.30=31.60$, so the last jump is $38.10-31.60=6.50$ meters.\n\n**The Full Solution:**\n\nStep 1: Convert the average into a total. Six jumps at a mean of $6.35$ meters give $6(6.35) = 38.10$ meters.\n\nStep 2: Add the five known jumps: $6.20+6.45+6.10+6.55+6.30=31.60$ meters.\n\nStep 3: Subtract: $38.10-31.60=6.50$ meters. Check: $\\frac{31.60 + 6.50}{6} = \\frac{38.10}{6} = 6.35$ meters.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($6.30$): is the median of the five listed jumps, a measure of center rather than the missing value.\n* Choice B ($6.32$): averages the five listed jumps. The stated mean covers all six.\n* Choice C ($6.35$): copies the overall mean. A single jump equals the mean only by coincidence.\n\n**Test Day Takeaway:** Multiply the mean by the full count first -- the missing entry is always the required total minus everything you can read."
+}

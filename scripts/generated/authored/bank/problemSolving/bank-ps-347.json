@@ -1,0 +1,63 @@
+{
+  "id": "bank-ps-347",
+  "question": "The dot plot shows the number of days each of $15$ hikers spent on a long-distance trail. Which of the following statements about these data is true?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 4,
+          "count": 1
+        },
+        {
+          "value": 5,
+          "count": 6
+        },
+        {
+          "value": 6,
+          "count": 2
+        },
+        {
+          "value": 7,
+          "count": 3
+        },
+        {
+          "value": 8,
+          "count": 2
+        },
+        {
+          "value": 12,
+          "count": 1
+        }
+      ],
+      "xMin": 3,
+      "xMax": 13,
+      "xLabel": "Days spent on the trail"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mode is $5$ and the median is $6$."
+    },
+    {
+      "id": "B",
+      "text": "The mode is $6$ and the median is $5$."
+    },
+    {
+      "id": "C",
+      "text": "The mode and the median are both $6$."
+    },
+    {
+      "id": "D",
+      "text": "The mode is $6$ and the median is $6.33$."
+    }
+  ],
+  "distractorNotes": {
+    "B": "swaps the two statistics, reporting the median as the mode and the mode as the median.",
+    "C": "reads the middle of the axis as the mode instead of counting the dots in each stack.",
+    "D": "reports the mean, $\\frac{95}{15} \\approx 6.33$, in place of the median, and still misidentifies the mode."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Mode from List**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The tallest stack is above $5$, so the mode is $5$. With $15$ dots, the median is the $8$th, which lands on $6$.\n\n**The Full Solution:**\nStep 1: The stacks have heights $1$, $6$, $2$, $3$, $2$, and $1$ above the values $4$, $5$, $6$, $7$, $8$, and $12$, so the mode is $5$.\nStep 2: With $15$ values, the median is the $8$th value when the data are in order.\nStep 3: The running counts are $1$ (through $4$), $7$ (through $5$), and $9$ (through $6$), so the $8$th value is $6$ and the median is $6$. Check: mode $5$, median $6$ — a right-tailed shape with one hiker at $12$ days. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: swaps the two statistics, reporting the median as the mode and the mode as the median.\n* Choice C: reads the middle of the axis as the mode instead of counting the dots in each stack.\n* Choice D: reports the mean, $\\frac{95}{15} \\approx 6.33$, in place of the median, and still misidentifies the mode.\n\n**Test Day Takeaway:** On a dot plot, the mode is the tallest stack and the median is found by counting dots from one end. They rarely coincide, so compute each one separately."
+}

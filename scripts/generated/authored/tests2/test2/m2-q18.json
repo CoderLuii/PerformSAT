@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "The function $f$ is defined by $f(x) = 3x + 6$. For a particular value $a$, increasing the input from $a$ to $a + 4$ makes the output $\\frac{7}{3}$ times as large as the output at $a$. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-9$"
+  },
+  {
+   "id": "B",
+   "text": "$-1$"
+  },
+  {
+   "id": "C",
+   "text": "$1$"
+  },
+  {
+   "id": "D",
+   "text": "$5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the ratio, solving 7(3a + 18) = 3(3a + 6) to get a = -9",
+  "B": "treats f(a + 4) as f(a) + 4, solving 3(3a + 10) = 7(3a + 6) to get a = -1",
+  "D": "solves correctly for a but reports the shifted input a + 4 = 5"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** $f(a + 4) = 3a + 18$ and $f(a) = 3a + 6$, so $3(3a + 18) = 7(3a + 6)$ gives $9a + 54 = 21a + 42$ and $a = 1$.\n\n**The Full Solution:**\nStep 1: Evaluate the shifted output by substituting $a + 4$ for $x$: $f(a + 4) = 3(a + 4) + 6 = 3a + 18$. The $3$ multiplies the whole input, so the shift of $4$ raises the output by $12$, not by $4$.\nStep 2: Translate the ratio $\\frac{f(a+4)}{f(a)} = \\frac{7}{3}$ into $3(3a + 18) = 7(3a + 6)$ by cross-multiplying.\nStep 3: Expand and solve: $9a + 54 = 21a + 42$, so $12 = 12a$ and $a = 1$. Check: $f(5) = 21$ and $f(1) = 9$, and $\\frac{21}{9} = \\frac{7}{3}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-9$): cross-multiplies in the wrong direction, pairing the $7$ with the smaller output. That gives $7(3a + 18) = 3(3a + 6)$ and $a = -9$, where $f(-9) = -21$ and $f(-5) = -9$ — a ratio of $\\frac{7}{3}$ only if the two outputs trade places.\n* Choice B ($-1$): computes $f(a + 4)$ as $f(a) + 4 = 3a + 10$, adding the shift to the output instead of to the input. Solving $3(3a + 10) = 7(3a + 6)$ gives $a = -1$.\n* Choice D ($5$): finds $a = 1$ correctly and then reports $a + 4$, the shifted input, rather than $a$ itself.\n\n**Test Day Takeaway:** Substitute a shifted input into the rule before doing anything else — for a linear function the output changes by the slope times the shift, never by the shift itself."
+}

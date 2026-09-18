@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "must have abandoned the handbook's tables altogether and relied instead on their own direct nightly observation of the positions of the stars and the planets."
-    },
-    {
-      "id": "B",
-      "text": "would have had to recalculate its tables for their own latitude before its predicted positions were reliable in the places where they actually worked."
-    },
-    {
-      "id": "C",
-      "text": "could use its figures without any change, since a planet's position at a given moment is the same for every observer anywhere on Earth."
-    },
-    {
-      "id": "D",
-      "text": "were unable to use the handbook for timekeeping of any kind, whatever adjustments to its tables they were willing to make."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage says a zij's tables were accurate only near the latitude they were computed for and had to be recomputed for use elsewhere. So astronomers who adopted a zij prepared for another city would have had to recalculate its tables for their own latitude first. Choice A is too extreme, since recomputing the tables, not abandoning them, is what the passage describes; Choice C contradicts the stated latitude-dependence; and Choice D wrongly claims the handbook was useless, when the passage says it works once adjusted.",
-  "passage": "Astronomers in the medieval Islamic world compiled detailed handbooks, called zijes, that tabulated the predicted positions of the Sun, Moon, and planets for use in timekeeping and calendar work. A striking feature of these handbooks is that their tables were calculated for a specific city's latitude and were accurate only for an observer near that location. A user in a distant region could not simply copy the figures; the tables had to be recomputed for the new latitude before they would give correct results. It follows that when a zij prepared for one city circulated widely, the astronomers who adopted it elsewhere ______",
-  "_meta": {
-    "anchor": "medieval Islamic astronomy: latitude-specific zij (astronomical handbook) tables"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "training runners to cover the full length of the empire's roads without resting."
   },
-  "id": 1116,
-  "module": 1
+  {
+   "id": "B",
+   "text": "ensuring that a spoken message passed between runners without being changed."
+  },
+  {
+   "id": "C",
+   "text": "building roads wide enough for several runners to travel side by side."
+  },
+  {
+   "id": "D",
+   "text": "recording messages in writing so that runners would not need to memorize them."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** A message that changes hands every few miles is copied many times over, and the passage shows the system guarding that weak point: at each handoff the arriving runner recites and the departing runner repeats back \"until both were satisfied.\"\n\n**The Full Solution:**\n- The relay's speed comes from frequent handoffs — that is the design's strength.\n- But \"most messages were spoken rather than written,\" so every handoff is a chance for the message to be garbled; many handoffs multiply that risk.\n- The recite-and-repeat ritual is an investment against exactly that risk, so the sentence's conclusion — what the system \"had to invest heavily in\" — is the fidelity of each transfer. That is choice B.\n\n**Why the other choices are wrong:**\n- A: It contradicts the design — each runner carried a message \"only to the next station,\" never the full length of the roads.\n- C: Road width is never mentioned, and runners traveled in sequence, not abreast.\n- D: It reverses a stated premise — messages were spoken, and the ritual exists because they were not written down.",
+ "passage": "The Inca state maintained a corps of relay runners, called chasquis, stationed in pairs of huts at short intervals along the empire's roads. A runner carried a message only to the next station, where a fresh runner took it onward at a sprint; colonial chroniclers reported that relays could cover in days distances that took a lone traveler weeks. Because most messages were spoken rather than written, each handoff required the arriving runner to recite the message and the departing runner to repeat it back until both were satisfied. A system built for such speed therefore had to invest heavily in ______",
+ "_meta": {
+  "anchor": "chasqui relay runners — oral handoff fidelity in the Inca relay system",
+  "distractors": {
+   "A": "contradicts the relay principle",
+   "C": "imports infrastructure detail never given",
+   "D": "reverses the spoken-message premise"
+  }
+ },
+ "id": 1116,
+ "module": 1
 }

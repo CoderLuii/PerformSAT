@@ -174,7 +174,7 @@ export const FUNNEL_INTERSTITIALS = {
     visual: 'diagnosis',
     heading: "Hours don't raise scores. The right minutes do.",
     body:
-      'Twenty minutes on the question types you actually miss beats two unfocused hours on everything else. Your 15-minute check-in pinpoints exactly where your points are hiding.',
+      'Twenty minutes on the question types you actually miss beats two unfocused hours on everything else. Your diagnostic pinpoints exactly where your points are hiding.',
     cta: 'Continue',
   },
   neverStuck: {
@@ -207,9 +207,212 @@ export function reassureHeading(feeling, name = '') {
 }
 
 /**
- * The plan-build interlude: four staged lines assembling the plan from the
- * student's own answers. Rendered on the funnel's single navy screen,
- * immediately before the path reveal.
+ * Acknowledgment lines — the tutor responding to the answer the student just
+ * gave, shown at the top of the NEXT screen. Keyed by the PREVIOUS question's
+ * id; funnelAckFor owns the display rule. Binding voice rules (pinned by
+ * tests): at most 2 short sentences and 90 chars total, no emojis, no
+ * em-dashes, an implication or honest observation (never praise-only), no
+ * "You said/You mentioned" callbacks, aim/target framing only (never a
+ * promise of reaching a score), and at least 3 distinct syntactic openings
+ * per set so the device never reads as a mold.
+ */
+export const FUNNEL_ACKS = {
+  timing: {
+    lt2m: 'Under two months. Short runway, so every session has to earn its keep.',
+    '2to6m': 'The sweet spot. Enough time to fix things properly, no cramming required.',
+    gt6m: 'That much runway changes the plan. Depth first, speed later.',
+    undecided: 'No date yet is fine. Your pace will tell us when you are ready.',
+  },
+  baseline: {
+    sat: 'A real SAT on record. That gives your plan honest numbers to start from.',
+    psat: 'The PSAT is a solid preview. It tells us roughly where the points are.',
+    practice: 'Practice tests on your own says a lot. Now they get a direction.',
+    fresh: 'Starting fresh cuts both ways. No baseline, but no bad habits either.',
+  },
+  stuckHabit: {
+    wrestle: 'Wrestling with it builds real understanding. The goal is making that quicker.',
+    explanation: 'Reading the explanation is a start. Catching why you fell for it is the fix.',
+    ask: 'Good instinct, asking. Here, the tutor is on every single question.',
+    skip: 'Skip and hope stops working eventually. Every question here has a way through.',
+  },
+  studyWindow: {
+    morning: 'Before school is prime time. Fresh head, no homework debt yet.',
+    evening: 'Evenings, after everything else. Sessions have to be tight to survive that.',
+    weekend: 'Weekends it is. Fewer, longer sittings can still move a score.',
+    flexible: 'Wherever it fits works, as long as it actually fits somewhere every week.',
+  },
+  blocker: {
+    procrastinate: 'Putting it off usually means the task feels too big. Small sessions fix that.',
+    lost: 'Not knowing where to start is the easiest problem here. Diagnosis is the whole point.',
+    busy: 'A full plate is real. The plan has to fit your life, not the other way around.',
+    plateau: 'A stuck score is the most fixable problem on this list. Effort is not your issue.',
+  },
+  motivation: {
+    colleges: 'Which schools are realistic changes with every point band. Worth twenty minutes a day.',
+    scholarships: 'Scholarship cutoffs are just numbers on a page. Aim above the one you need.',
+    self: 'Proving it to yourself is the most durable fuel there is. Use it.',
+    pressure: 'Less pressure comes from a plan you trust. That part we can build.',
+  },
+  commitment: {
+    allin: 'Twenty focused minutes a day. Now point them at a number.',
+    try: 'Doing your best is all this takes. Now give it a target.',
+  },
+};
+
+/**
+ * The ack display rule (pinned by tests): an ack renders only when the step
+ * IMMEDIATELY before this one in FUNNEL_STEPS is a question — so screens that
+ * follow an interstitial never double-acknowledge an answer the interstitial
+ * just reflected. This naturally yields exactly 7 ack sites: baseline,
+ * feeling, studyWindow, sessionLength, testReaction, commitment, and the
+ * goal screen (whose predecessor is the commitment question — the flow's
+ * loudest yes, reflected here and nowhere else).
+ *
+ * @param {number} stepIndex - index into FUNNEL_STEPS of the CURRENT screen
+ * @param {Object} answers - {questionId: optionValue}
+ * @returns {string|null} the ack line, or null (render nothing)
+ */
+export function funnelAckFor(stepIndex, answers = {}) {
+  const prev = FUNNEL_STEPS[stepIndex - 1];
+  if (!prev || prev.type !== 'question') return null;
+  return FUNNEL_ACKS[prev.id]?.[answers[prev.id]] || null;
+}
+
+/** Display labels reused by the build interlude and the path recap. */
+export const SESSION_LENGTH_LABELS = {
+  '15m': 'about 15 focused minutes',
+  '30m': 'around half an hour',
+  '60m': 'an hour or more',
+  varies: 'whatever the day gives',
+};
+export const STUDY_WINDOW_LABELS = {
+  morning: 'mornings',
+  evening: 'evenings',
+  weekend: 'weekends',
+  flexible: 'wherever it fits',
+};
+
+/**
+ * Reassure-interstitial body: the current plateau framing assumes prior
+ * study, which is wrong for a fresh starter — they get a from-zero framing
+ * instead. Falls back to the studied-before body when baseline is missing.
+ */
+export function reassureBody(answers = {}) {
+  if (answers.baseline === 'fresh') {
+    return 'Starting from zero is simpler than it looks. The diagnostic finds where your points are hiding, and your plan starts there instead of page one of a giant book.';
+  }
+  return FUNNEL_INTERSTITIALS.reassure.body;
+}
+
+/**
+ * rightMinutes interstitial, adapted to the student's own session length so
+ * the pitch quotes their reality back instead of a generic "twenty minutes".
+ * The 15m variant deliberately echoes the commitment question's
+ * twenty-minutes ask so the two screens agree.
+ * @returns {{heading:string, body:string}}
+ */
+export function rightMinutesCopy(answers = {}) {
+  const shared = 'Your diagnostic pinpoints exactly where your points are hiding.';
+  switch (answers.sessionLength) {
+    case '15m':
+      return {
+        heading: 'Fifteen minutes, well aimed, is real progress.',
+        body: `Twenty focused minutes on the question types you actually miss beats two unfocused hours on everything else. ${shared}`,
+      };
+    case '30m':
+      return {
+        heading: 'Half an hour, well aimed, is plenty.',
+        body: `Thirty minutes on the question types you actually miss beats two unfocused hours on everything. ${shared}`,
+      };
+    case '60m':
+      return {
+        heading: 'An hour is a weapon if it is pointed right.',
+        body: `Length is not the problem, direction is. An hour on the question types you actually miss compounds fast. ${shared}`,
+      };
+    case 'varies':
+      return {
+        heading: 'Uneven weeks are fine. Wasted minutes are not.',
+        body: `Whatever a day gives you should go to the question types you actually miss. ${shared}`,
+      };
+    default:
+      return {
+        heading: FUNNEL_INTERSTITIALS.rightMinutes.heading,
+        body: FUNNEL_INTERSTITIALS.rightMinutes.body,
+      };
+  }
+}
+
+/**
+ * neverStuck interstitial: the heading softens for a student who leaves
+ * practice tests deflated; the body ADVANCES from the stuck-habit answer to
+ * the product mechanism (per-choice explanations + the tutor) without
+ * re-naming the habit — the ack on the studyWindow screen already responded
+ * to it, and reflecting the same answer twice reads as a script.
+ * @returns {{heading:string, body:string}}
+ */
+export function neverStuckCopy(answers = {}) {
+  const heading = answers.testReaction === 'deflated'
+    ? 'A number without a plan just stings.'
+    : FUNNEL_INTERSTITIALS.neverStuck.heading;
+  const bodies = {
+    wrestle: 'Every SEVA question ends with the full why: why the right answer is right, why each wrong one is tempting. Your instinct to dig gets a floor to stand on, plus a tutor for the rest.',
+    explanation: 'Explanations here do not just re-solve the problem. They name the trap you fell for, choice by choice, and the tutor takes follow-ups as many times as it takes.',
+    ask: 'Every question ships with a tutor that never gets tired of follow-ups. Ask until it clicks, at 11pm, three times in a row.',
+    skip: 'Every SEVA question ends with a real way through: why the right answer is right, why each wrong one is tempting, and a tutor for whatever is still unclear.',
+  };
+  return { heading, body: bodies[answers.stuckHabit] || FUNNEL_INTERSTITIALS.neverStuck.body };
+}
+
+/**
+ * The path screen's "Built from your answers" recap — the last impression
+ * before the ask. Rows mirror the student's actual inputs; a row whose
+ * answer is missing is omitted. Deliberately NO target row: the goal chip
+ * already owns that number on this screen (it must appear exactly once).
+ * @returns {Array<{label:string, value:string}>}
+ */
+export function buildPathRecap(answers = {}) {
+  const rows = [];
+  const timingValue = {
+    lt2m: 'Test in the next 2 months',
+    '2to6m': 'Test 2 to 6 months out',
+    gt6m: '6+ months of runway',
+    undecided: 'Date still open',
+  }[answers.timing];
+  if (timingValue) rows.push({ label: 'Timing', value: timingValue });
+  const len = SESSION_LENGTH_LABELS[answers.sessionLength];
+  const win = STUDY_WINDOW_LABELS[answers.studyWindow];
+  if (len || win) {
+    const sessions = len && win ? `${cap(len)}, ${win}` : cap(len || win);
+    rows.push({ label: 'Sessions', value: sessions });
+  }
+  const firstJob = {
+    plateau: 'Break the plateau',
+    lost: 'Find your real starting point',
+    busy: 'Fit prep into a full schedule',
+    procrastinate: 'Make starting automatic',
+  }[answers.blocker];
+  if (firstJob) rows.push({ label: 'First job', value: firstJob });
+  return rows;
+}
+
+const cap = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : s);
+
+/**
+ * Signup-screen body: ONE consequence line, never a re-list — the build
+ * interlude narrated the process and the path screen just recapped the
+ * facts; a third recitation would turn listening into a script. Null when
+ * the student somehow has no answers (component falls back to current copy).
+ */
+export function signupBodyLine(answers = {}) {
+  if (!Object.keys(answers).length) return null;
+  return 'Everything you just told us is already shaped into your plan. It is saved the moment you are in.';
+}
+
+/**
+ * The plan-build interlude: staged lines assembling the plan from the
+ * student's own answers. Five lines when the student gave a session length,
+ * four otherwise — render and the advance timer must BOTH derive the count
+ * from this array (never hardcode it).
  */
 export function buildInterludeLines(answers = {}, goal = DEFAULT_FUNNEL_GOAL, name = '') {
   const n = (name || '').trim();
@@ -219,12 +422,18 @@ export function buildInterludeLines(answers = {}, goal = DEFAULT_FUNNEL_GOAL, na
     gt6m: 'a runway of 6+ months',
     undecided: 'a test date still to be picked',
   }[answers.timing];
-  return [
+  const len = SESSION_LENGTH_LABELS[answers.sessionLength];
+  const win = STUDY_WINDOW_LABELS[answers.studyWindow];
+  const lines = [
     n ? `Reading your answers, ${n}` : 'Reading your answers',
     'Locating where your points are hiding',
     timingPhrase ? `Calibrating pacing for ${timingPhrase}` : 'Calibrating your pacing',
-    `Setting the bar at ${goal}`,
   ];
+  if (len) {
+    lines.push(win ? `Sizing sessions to ${len}, ${win}` : `Sizing sessions to ${len}`);
+  }
+  lines.push(`Setting the bar at ${goal}`);
+  return lines;
 }
 
 /**
@@ -287,14 +496,33 @@ export function chapterFills(stepIndex) {
 
 /**
  * Context line under the goal slider — mirrors the tiers students actually
- * ask about without naming a school list as a promise.
+ * ask about without naming a school list as a promise. The optional
+ * motivation answer seasons the line for the two motivations the tier copy
+ * does not already serve (colleges/scholarships are inherently score-tier
+ * framed; self/pressure get one honest extra sentence).
  */
-export function goalContextLine(goal) {
-  if (goal >= 1500) return 'Competitive for the most selective schools in the country';
-  if (goal >= 1400) return 'Strong for highly competitive universities';
-  if (goal >= 1300) return 'Above the national average, solid for most flagships';
-  if (goal >= 1150) return 'A real, reachable improvement target';
-  return 'Every point from here is momentum';
+export function goalContextLine(goal, motivation) {
+  let line;
+  if (goal >= 1500) line = 'Competitive for the most selective schools in the country';
+  else if (goal >= 1400) line = 'Strong for highly competitive universities';
+  else if (goal >= 1300) line = 'Above the national average, solid for most flagships';
+  else if (goal >= 1150) line = 'A real, reachable improvement target';
+  else line = 'Every point from here is momentum';
+  if (motivation === 'self') return `${line}. A target you chose for yourself tends to stick.`;
+  if (motivation === 'pressure') return `${line}. A clear number quiets the noise around you.`;
+  return line;
+}
+
+/**
+ * Path-screen step 3 sub-line: the one blocker whose fix IS the product's
+ * core loop gets the connection drawn explicitly. Everyone else keeps the
+ * standard line.
+ */
+export function pathStepThreeSub(answers = {}) {
+  if (answers.blocker === 'plateau') {
+    return 'It rebuilds around what you miss. That is the fix for a stuck score.';
+  }
+  return 'It rebuilds itself around what you miss, every session.';
 }
 
 /** Snap to the SAT's 10-point grid and clamp to the composite range. */

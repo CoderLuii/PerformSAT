@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A telescope's observing night lasts $476$ minutes, of which $18$ minutes are reserved for calibration. Each imaging exposure occupies $9$ minutes and each spectroscopic exposure occupies $23$ minutes. Which equation relates the number of imaging exposures $x$ and the number of spectroscopic exposures $y$ that exactly fill the remaining time?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$23x + 9y = 458$"
+  },
+  {
+   "id": "B",
+   "text": "$32(x + y) = 458$"
+  },
+  {
+   "id": "C",
+   "text": "$9x + 23y = 476$"
+  },
+  {
+   "id": "D",
+   "text": "$9x + 23y = 458$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "attaches 23 minutes to the imaging count and 9 minutes to the spectroscopic count, swapping the two rates",
+  "B": "adds the two durations into a single 32-minute rate applied to every exposure, which is only right if the two counts are equal",
+  "C": "uses the full 476 minutes and never removes the 18 minutes of calibration"
+ },
+ "explanation": "**SAT Pattern: Word-to-Expression Translation**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Observing time is $476 - 18 = 458$ minutes, and $x$ imaging exposures plus $y$ spectroscopic exposures use $9x + 23y$ minutes, so $9x + 23y = 458$.\n\n**The Full Solution:**\nStep 1: Remove the time that is not available for exposures: $476 - 18 = 458$ minutes remain.\nStep 2: Translate each count into minutes. Each imaging exposure takes $9$ minutes, so $x$ of them take $9x$ minutes; each spectroscopic exposure takes $23$ minutes, so $y$ of them take $23y$ minutes.\nStep 3: \"Exactly fill the remaining time\" means the two amounts sum to $458$: $9x + 23y = 458$. Check with a pair that fills the night exactly: $x = 33$ and $y = 7$ give $297 + 161 = 458$ minutes ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($23x + 9y = 458$): pairs each variable with the other exposure's duration. The coefficient must be the minutes per exposure for the count it multiplies.\n* Choice B ($32(x + y) = 458$): merges the two rates into $9 + 23 = 32$ minutes and charges that to every exposure, which triples the cost of an imaging exposure.\n* Choice C ($9x + 23y = 476$): sets the exposures equal to the whole night, spending the $18$ calibration minutes twice.\n\n**Test Day Takeaway:** Translate one phrase at a time: adjust the total first for anything reserved, then attach each rate to the count it actually describes."
+}

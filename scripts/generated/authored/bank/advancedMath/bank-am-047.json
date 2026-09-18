@@ -1,0 +1,51 @@
+{
+  "id": "bank-am-047",
+  "question": "The table gives the purchase price and the annual percent decrease in value of two machines. The value of each machine decreases exponentially from its purchase price at the given annual rate. Which of the following statements comparing the two machines is true?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Machine",
+        "Purchase price (dollars)",
+        "Annual percent decrease"
+      ],
+      "rows": [
+        [
+          "R",
+          "36,000",
+          "20%"
+        ],
+        [
+          "S",
+          "24,000",
+          "10%"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Machine $R$ loses a greater percent of its value each year, and Machine $R$ is worth more than Machine $S$ at the end of year $3$."
+    },
+    {
+      "id": "B",
+      "text": "Machine $R$ loses a greater percent of its value each year, and Machine $R$ is worth more than Machine $S$ at the end of every year."
+    },
+    {
+      "id": "C",
+      "text": "Machine $S$ loses a greater dollar amount during the first year, because its value decreases more slowly."
+    },
+    {
+      "id": "D",
+      "text": "The two machines are worth the same amount at the end of year $2$."
+    }
+  ],
+  "distractorNotes": {
+    "B": "true through year 3 but false from year 4 on, when Machine $S$ is worth more",
+    "C": "confuses percent rate with dollar loss: $S$ loses $2{,}400$ and $R$ loses $7{,}200$ in year 1",
+    "D": "the year-2 values are $23{,}040$ and $19{,}440$, not equal"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Compare Depreciation Models**\n\n**Choice A is correct.**\n\n**The Fast Way (~45s):** The models are $36{,}000(0.80)^{t}$ and $24{,}000(0.90)^{t}$. At $t = 3$: $18{,}432$ versus $17{,}496$, so $R$ is still worth more — but only just.\n\n**The Full Solution:**\nStep 1: A $20\\%$ annual decrease multiplies the value by $0.80$ each year, and a $10\\%$ decrease multiplies it by $0.90$. So $V_R(t) = 36{,}000(0.80)^{t}$ and $V_S(t) = 24{,}000(0.90)^{t}$.\nStep 2: Machine $R$ loses the greater PERCENT each year, since $20\\% > 10\\%$.\nStep 3: Compare at $t = 3$: $V_R(3) = 36{,}000(0.512) = 18{,}432$ dollars and $V_S(3) = 24{,}000(0.729) = 17{,}496$ dollars, so $R$ is worth more. Check the next year: $V_R(4) = 14{,}745.60$ and $V_S(4) = 15{,}746.40$, so the ranking flips after year $3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: correct through year $3$, but at $t = 4$ Machine $S$ is worth $15{,}746.40$ against Machine $R$'s $14{,}745.60$ — \"every year\" is too strong.\n* Choice C: reverses the dollar comparison. In year $1$, $S$ loses $2{,}400$ dollars while $R$ loses $7{,}200$ dollars.\n* Choice D: at $t = 2$ the values are $23{,}040$ and $19{,}440$ dollars, which are not equal.\n\n**Test Day Takeaway:** A larger percent decrease does not mean a smaller value right away — the starting amount can keep the faster-depreciating item ahead for several years. Test the specific year the choice names."
+}

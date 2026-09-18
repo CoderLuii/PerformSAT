@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "The function $k$ is defined by $k(x) = 6x + 5$, where $x$ is a real number. Which of the following is equivalent to $k(x - 2)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6x - 12$"
+    },
+    {
+      "id": "B",
+      "text": "$6x - 7$"
+    },
+    {
+      "id": "C",
+      "text": "$6x + 3$"
+    },
+    {
+      "id": "D",
+      "text": "$6x + 17$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "drops the constant +5",
+    "C": "subtracts 2 from the constant instead of substituting",
+    "D": "flips the sign inside the input"
+  },
+  "correctAnswer": "B",
+  "hint": "Substitute the whole quantity $x - 2$ wherever $x$ appears, then distribute before combining constants.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** $k(x - 2) = 6(x - 2) + 5 = 6x - 12 + 5 = 6x - 7$.\n\n**The Full Solution:**\nStep 1: The input of $k$ is now the expression $x - 2$, so write $k(x - 2) = 6(x - 2) + 5$.\nStep 2: Distribute the $6$ across both terms: $6(x - 2) = 6x - 12$.\nStep 3: Combine the constants: $6x - 12 + 5 = 6x - 7$. Check at $x = 3$: $k(1) = 6(1) + 5 = 11$, and $6(3) - 7 = 11$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6x - 12$): distributes correctly but drops the $+5$ from the original rule.\n* Choice C ($6x + 3$): subtracts $2$ from the constant term instead of substituting, giving $5 - 2 = 3$.\n* Choice D ($6x + 17$): substitutes $x + 2$, flipping the sign inside the input, and gets $6x + 12 + 5$.\n\n**Test Day Takeaway:** When the input is an expression, put it in parentheses and distribute; only the variable is replaced, never the constant term."
+}

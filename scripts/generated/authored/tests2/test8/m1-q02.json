@@ -1,0 +1,29 @@
+{
+  "id": 2,
+  "question": "Of the 180 hand samples logged from one outcrop, 63 contain visible quartz. One of the logged samples is chosen at random. Which expression gives the probability that the chosen sample contains visible quartz?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{63}{180}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{63}{117}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{117}{180}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{180}{63}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses the 117 samples WITHOUT quartz as the denominator instead of all 180",
+    "C": "gives the probability that the sample does NOT contain quartz, 117/180",
+    "D": "inverts the ratio, putting the total over the favorable count"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Probability is favorable outcomes over total outcomes: $63$ quartz-bearing samples out of $180$ logged samples, or $\\frac{63}{180}$.\n\n**The Full Solution:**\nStep 1: Identify the total. Every one of the $180$ logged samples is equally likely to be chosen, so the denominator is $180$.\nStep 2: Identify the favorable outcomes. Exactly $63$ of those samples contain visible quartz, so the numerator is $63$.\nStep 3: The probability is $\\frac{63}{180}$. Check: the remaining $180 - 63 = 117$ samples have no visible quartz, and $\\frac{63}{180} + \\frac{117}{180} = \\frac{180}{180} = 1$, exactly as the two outcomes of a single draw must. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{63}{117}$): puts the quartz count over the non-quartz count. That is an odds ratio, not a probability, and $\\frac{63}{117} \\approx 0.54$ overstates the chance.\n* Choice C ($\\frac{117}{180}$): counts the samples that do not contain quartz, answering the opposite question.\n* Choice D ($\\frac{180}{63}$): puts the total on top. A probability can never exceed $1$, and $\\frac{180}{63} \\approx 2.86$.\n\n**Test Day Takeaway:** The denominator of a simple probability is the size of the whole group you are drawing from — not the leftover group."
+}

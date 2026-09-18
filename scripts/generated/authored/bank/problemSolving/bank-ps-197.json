@@ -1,0 +1,25 @@
+{
+  "id": "bank-ps-197",
+  "question": "The table gives the number of daily flights at a regional airport in two different years. From 2019 to 2023, the number of daily flights decreased by $p\\%$. What is the value of $p$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Year",
+        "Daily flights"
+      ],
+      "rows": [
+        [
+          "2019",
+          "150"
+        ],
+        [
+          "2023",
+          "126"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "16",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**The correct answer is $16$.**\n\n**The Fast Way (~10s):** The decrease is $150 - 126 = 24$ flights, out of $150$: $\\frac{24}{150} = 0.16$, so $p = 16$.\n\n**The Full Solution:**\nStep 1: The original value is the earlier year, $150$; the new value is $126$.\nStep 2: Percent decrease $= \\frac{150 - 126}{150} \\times 100 = \\frac{24}{150} \\times 100 = 16$.\nStep 3: Check: $16\\%$ of $150$ is $24$, and $150 - 24 = 126$. $\\checkmark$\n\n**Common Mistakes:** Reporting $24$, the drop in flights, instead of the percent; dividing by the new value, $\\frac{24}{126} \\approx 19.05$; or reporting $\\frac{126}{150} = 84$, the percent remaining.\n\n**Test Day Takeaway:** In a two-row table, the earlier row is the original. Percent change always divides by that original value."
+}

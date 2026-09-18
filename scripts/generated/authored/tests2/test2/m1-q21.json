@@ -1,0 +1,53 @@
+{
+ "id": 21,
+ "question": "A quadratic function $f$ produces the four outputs listed in the table for the four inputs beside them. Two different inputs produce an output of $-22$. What is the product of those two inputs?",
+ "questionTable": {
+  "headers": [
+   "x",
+   "f(x)"
+  ],
+  "rows": [
+   [
+    "1",
+    "-16"
+   ],
+   [
+    "3",
+    "-40"
+   ],
+   [
+    "5",
+    "-40"
+   ],
+   [
+    "7",
+    "-16"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{5}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$27$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "applies Vieta to f(x)=0 instead of f(x)=-22, reporting 5/3 as the product",
+  "B": "reports the sum of the two inputs, 24/3=8, instead of their product",
+  "D": "reads the product off 3x^2-24x+27=0 as the constant 27, forgetting to divide by the leading coefficient 3"
+ },
+ "explanation": "**SAT Pattern: Quadratic — Vieta's Sum/Product**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** The table's symmetry gives $f(x) = 3(x - 4)^2 - 43$, so $f(x) = -22$ becomes $3x^2 - 24x + 27 = 0$ and the product of the roots is $\\frac{27}{3} = 9$.\n\n**The Full Solution:**\nStep 1: The table pairs $f(3) = f(5) = -40$ and $f(1) = f(7) = -16$, so the axis of symmetry is $x = 4$ and $f(x) = a(x - 4)^2 + c$. From $f(3) = a + c = -40$ and $f(1) = 9a + c = -16$, subtracting gives $8a = 24$, so $a = 3$ and $c = -43$.\nStep 2: Expand: $f(x) = 3(x - 4)^2 - 43 = 3x^2 - 24x + 5$. Setting $f(x) = -22$ gives $3x^2 - 24x + 5 = -22$, or $3x^2 - 24x + 27 = 0$.\nStep 3: For $ax^2 + bx + c = 0$ the product of the roots is $\\frac{c}{a} = \\frac{27}{3} = 9$. Check: dividing through by $3$ gives $x^2 - 8x + 9 = 0$, whose discriminant $64 - 36 = 28$ is positive, so two distinct inputs really do exist and their product is $9$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{5}{3}$): applies the product rule to $f(x) = 0$, whose constant term is $5$. Moving the $-22$ across changes the constant to $27$, and only that equation describes the two inputs in question.\n* Choice B ($8$): reports the sum of the roots, $\\frac{-(-24)}{3} = 8$. Sum uses $-\\frac{b}{a}$; product uses $\\frac{c}{a}$.\n* Choice D ($27$): reads the constant term $27$ as the product directly, skipping the division by the leading coefficient $3$.\n\n**Test Day Takeaway:** Matching outputs in a table locate the axis of symmetry, which is enough to rebuild the quadratic; once the equation is written equal to zero, the sum of the roots is $-\\frac{b}{a}$ and the product is $\\frac{c}{a}$."
+}

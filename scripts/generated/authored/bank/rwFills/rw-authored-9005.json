@@ -1,0 +1,38 @@
+{
+  "id": 9005,
+  "passage": "In Alice Dunbar-Nelson's 1899 story \"M'sieu Fortier's Violin,\" an elderly musician has played first violin in the orchestra of the New Orleans opera house for longer than anyone can remember. Between seasons he goes back to his trade of cigar-making, and at home there is little to fill the hours but practice. A reader might argue that the narrator locates the worth of Fortier's work in what it asks of him rather than in what it brings him.",
+  "question": "Which quotation from \"M'sieu Fortier's Violin\" most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "\"He was home but little, for on nearly every day there were rehearsals; then on Tuesday, Thursday, and Saturday nights, and twice Sundays there were performances, so Ma'am Jeanne and the white cat kept house almost always alone.\""
+    },
+    {
+      "id": "B",
+      "text": "\"There is nothing sweeter than a regular job and good music to play, music into which one can put some soul, some expression, and which one must study to understand.\""
+    },
+    {
+      "id": "C",
+      "text": "\"M'sieu Fortier stood at the corner, blinking at the beautiful ladies in their carriages. He exchanged a hearty salutation with the saloon-keeper at the corner\""
+    },
+    {
+      "id": "D",
+      "text": "\"So M'sieu Fortier, Ma'am Jeanne, and the white cat lived a peaceful, uneventful existence out on Bayou Road.\""
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** The sentence calls the work sweet and then says what makes it so: music that takes soul and expression to play and \"which one must study to understand.\"\n\n**The Full Solution:**\n- Fix the claim's two parts first: the quotation must value the work and must root that value in a demand the work makes.\n- Choice B is built that way. \"There is nothing sweeter\" carries the value; \"put some soul, some expression\" and \"must study to understand\" name the demands that earn it.\n- Eliminate quotations that report where Fortier is or how his days are filled. Schedules and settings describe the life around the work, not the worth the narrator finds in it.\n\n**Why the other choices are wrong:**\n- A: This is a schedule, listing rehearsals and performance nights; it shows how much time the work takes without saying what the work is worth.\n- C: This puts Fortier on a street corner greeting a neighbor, a scene of his ordinary evening rather than a judgment about his playing.\n- D: This sums up the household as peaceful and uneventful, which characterizes his domestic life and leaves the value of the music unstated.",
+  "source": {
+    "title": "M'sieu Fortier's Violin",
+    "author": "Alice Dunbar-Nelson",
+    "year": 1899,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/688"
+  },
+  "people": [
+    {
+      "name": "Alice Dunbar-Nelson",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/688"
+    }
+  ]
+}

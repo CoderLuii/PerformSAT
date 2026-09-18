@@ -1,0 +1,34 @@
+{
+  "id": "bank-alg-208",
+  "question": "The graph shows the temperature $y$, in degrees Celsius, of a solution $x$ minutes after it was placed in a cooling bath. If the temperature continues to change at the same rate, by how many degrees Celsius will the temperature of the solution decrease per hour?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -1.5,
+      "yIntercept": 22,
+      "xRange": [
+        0,
+        10
+      ],
+      "yRange": [
+        0,
+        26
+      ],
+      "gridInterval": 2,
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "highlightPoints": [
+        [
+          0,
+          22
+        ],
+        [
+          8,
+          10
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "90",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**The correct answer is $90$.**\n\n**The Fast Way (~20s):** From $(0, 22)$ to $(8, 10)$ the temperature drops $12$ degrees in $8$ minutes: $1.5$ degrees per minute. Per hour that is $1.5 \\times 60 = 90$ degrees.\n\n**The Full Solution:**\nStep 1: The slope of the graph is $\\dfrac{10 - 22}{8 - 0} = \\dfrac{-12}{8} = -1.5$ degrees Celsius per minute.\nStep 2: The question asks for the rate per hour, and one hour is $60$ minutes, so multiply: $1.5 \\times 60 = 90$ degrees Celsius per hour.\nStep 3: Check the units: $\\dfrac{1.5 \\text{ degrees}}{1 \\text{ minute}} \\times \\dfrac{60 \\text{ minutes}}{1 \\text{ hour}} = 90$ degrees per hour. $\\checkmark$\n\n**Common Mistakes:** Entering $1.5$ (the rate per minute, ignoring the unit change); entering $12$ (the total drop shown, not a rate); dividing by $60$ instead of multiplying to get $0.025$; entering $-90$ when the question asks for the size of the decrease.\n\n**Test Day Takeaway:** Compute the slope in the graph's units first, then convert to the units the question names. A rate per minute becomes a rate per hour by multiplying by $60$."
+}

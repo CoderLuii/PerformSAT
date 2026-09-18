@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-014",
+ "question": "A seaside inn's lobby window displays a decorative spherical glass float, a souvenir of the harbor's fishing fleet, whose radius measures $6$ inches. What is the volume, in cubic inches, of the float?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$144\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$288\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$864\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$2304\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes the surface area 4 pi r^2 = 144 pi instead of the volume",
+  "C": "drops the factor 1/3, computing 4 pi r^3 = 864 pi",
+  "D": "uses the diameter 12 in place of the radius: (4/3) pi (12)^3 = 2304 pi"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sphere Volume**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $V=\\frac{4}{3}\\pi r^3=\\frac{4}{3}\\pi(6)^3=\\frac{4}{3}\\pi(216)=288\\pi$ cubic inches.\n\n**The Full Solution:**\n\nStep 1 — Recall the formula for the volume of a sphere: $V=\\frac{4}{3}\\pi r^3$.\n\nStep 2 — Cube the radius: $6^3=216$.\n\nStep 3 — Multiply: $\\frac{4}{3}(216)=288$, so $V=288\\pi$ cubic inches. Check: $288\\pi$ is about $905$ cubic inches, a reasonable size for a $12$-inch-wide float.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($144\\pi$): this is the surface area $4\\pi r^2=4\\pi(36)$, a two-dimensional measure.\n* Choice C ($864\\pi$): this drops the $\\frac{1}{3}$, computing $4\\pi(216)$.\n* Choice D ($2304\\pi$): this cubes the diameter $12$ instead of the radius, giving $\\frac{4}{3}\\pi(1728)$.\n\n**Test Day Takeaway:** The sphere formula uses the radius, cubed, with a $\\frac{4}{3}$ out front — check each of those three details before choosing."
+}

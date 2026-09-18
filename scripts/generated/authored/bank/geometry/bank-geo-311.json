@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-311",
+ "question": "A raised-floor tile in a data hall is $w$ centimeters wide and $3$ centimeters longer than it is wide. Which expression gives the tile's area, in square centimeters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$w + 3$"
+  },
+  {
+   "id": "B",
+   "text": "$2w + 3$"
+  },
+  {
+   "id": "C",
+   "text": "$w^2 + 3$"
+  },
+  {
+   "id": "D",
+   "text": "$w^2 + 3w$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "gives the tile's length rather than its area",
+  "B": "gives half the perimeter, w + (w + 3), instead of the product",
+  "C": "multiplies w by w but adds the 3 instead of distributing it"
+ },
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice D is correct.** The length is $w + 3$, so the area is $w(w + 3) = w^2 + 3w$.\n\n**The Fast Way (~15s):** Area is width times length: $w(w + 3) = w^2 + 3w$.\n\n**The Full Solution:**\n\nStep 1: The width is $w$ and the length is $3$ more than the width, or $w + 3$.\n\nStep 2: Area of a rectangle is the product of the two dimensions: $w(w + 3)$.\n\nStep 3: Distribute: $w^2 + 3w$. Check with $w = 4$: the tile is $4$ by $7$, area $28$, and $4^2 + 3(4) = 16 + 12 = 28$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($w + 3$): gives the length, not the area.\n* Choice B ($2w + 3$): adds the two dimensions instead of multiplying them.\n* Choice C ($w^2 + 3$): multiplies $w$ by $w$ but forgets to distribute $w$ across the $3$.\n\n**Test Day Takeaway:** Translate \"longer than\" into $w + 3$ first, then multiply — and sanity-check the expression with one convenient number."
+}

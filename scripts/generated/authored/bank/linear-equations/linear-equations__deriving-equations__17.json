@@ -1,0 +1,30 @@
+{
+ "id": 17,
+ "question": "Groundwater temperature, in degrees Celsius, at a depth of $d$ meters below the surface is modeled by $T(d) = 15 + 0.028d$ for depths up to $600$ meters. Going $50$ meters deeper raises the modeled temperature by how many degrees Celsius?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.028$"
+  },
+  {
+   "id": "B",
+   "text": "$1.4$"
+  },
+  {
+   "id": "C",
+   "text": "$14$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the rise for one additional meter rather than for fifty",
+  "C": "multiplies the rate by 500 instead of by 50",
+  "D": "reports the depth step itself rather than the temperature change it produces"
+ },
+ "correctAnswer": "B",
+ "hint": "Ask what the model does across a fifty-meter step, not a one-meter step.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** The model rises $0.028$ degree per meter, so $50$ meters raise it by $0.028(50) = 1.4$ degrees.\n\n**The Full Solution:**\nStep 1: In $T(d) = 15 + 0.028d$ the coefficient $0.028$ is the change in modeled temperature for each additional meter of depth.\nStep 2: Over a $50$-meter increase the change is $0.028 \\times 50$.\nStep 3: $0.028 \\times 50 = 1.4$ degrees Celsius.\n\nCheck: $T(100) - T(50) = (15 + 2.8) - (15 + 1.4) = 1.4$ degrees. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.028$): reports the rise for a single meter and never scales it to fifty.\n* Choice C ($14$): multiplies the rate by $500$ instead of $50$, a factor-of-ten slip.\n* Choice D ($50$): reports the depth step itself rather than the temperature change it causes.\n\n**Test Day Takeaway:** The coefficient of the input is a rate per one unit; multiply it by the size of the step you are asked about."
+}

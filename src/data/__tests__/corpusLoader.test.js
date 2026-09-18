@@ -88,9 +88,9 @@ describe('corpusLoader — memoization contract', () => {
     expect(loadTrySimilar()).toBe(loadTrySimilar());
   });
 
-  test('preloadCorpus resolves all six corpus slices', async () => {
+  test('preloadCorpus resolves all seven corpus slices', async () => {
     const mods = await preloadCorpus();
-    expect(mods).toHaveLength(6);
+    expect(mods).toHaveLength(7);
     mods.forEach((mod) => expect(mod).toBeTruthy());
   });
 });

@@ -1,0 +1,29 @@
+{
+  "id": 10,
+  "question": "On a zoning map whose units are meters, a greenway path lies along the line $4x + 10y = 35$ in the $xy$-plane, and a service road meets the greenway at a right angle. What is the slope of the service road?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-\\frac{5}{2}$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{2}{5}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{2}{5}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{5}{2}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the reciprocal but keeps the negative sign",
+    "B": "reports the slope of the greenway path itself",
+    "C": "changes the sign of the greenway slope without taking the reciprocal"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice D is correct.** The greenway has slope $-\\frac{2}{5}$, so a perpendicular road has slope $\\frac{5}{2}$.\n\n**The Fast Way (~15s):** In $4x + 10y = 35$ the slope is $-\\frac{4}{10} = -\\frac{2}{5}$; flip it and change the sign to get $\\frac{5}{2}$.\n\n**The Full Solution:**\nStep 1: Solve for $y$: $10y = -4x + 35$, so $y = -\\frac{2}{5}x + \\frac{7}{2}$. The greenway's slope is $-\\frac{2}{5}$.\nStep 2: Perpendicular lines have slopes whose product is $-1$. If $m$ is the service road's slope, then $-\\frac{2}{5}m = -1$.\nStep 3: Multiply both sides by $-\\frac{5}{2}$: $m = \\frac{5}{2}$. Check: $-\\frac{2}{5} \\cdot \\frac{5}{2} = -1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{5}{2}$): turns the fraction over but leaves the sign negative. Two negative slopes multiply to a positive number, never $-1$.\n* Choice B ($-\\frac{2}{5}$): reports the greenway's own slope. A road with that slope would run parallel to the path, not across it.\n* Choice C ($\\frac{2}{5}$): changes the sign only. Its product with $-\\frac{2}{5}$ is $-\\frac{4}{25}$, not $-1$.\n\n**Test Day Takeaway:** Perpendicular means both moves: flip the fraction and change the sign. Multiply the two slopes as a check — the product must be exactly $-1$."
+}

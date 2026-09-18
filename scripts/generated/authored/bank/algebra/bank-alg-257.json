@@ -1,0 +1,6 @@
+{
+ "question": "A trail-camera study estimates $x$, the number of deer, and $y$, the number of elk, using a valley. Two independent counts give $3x + 2y = 31$ and $2x + 3y = 24$. What is the value of $x + y$?",
+ "correctAnswer": "11",
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**The correct answer is $11$.**\n\n**The Fast Way (~20s):** Adding the two counts gives $5x + 5y = 55$, so $x + y = 11$.\n\n**The Full Solution:**\n\nStep 1: Add the equations: $(3x + 2y) + (2x + 3y) = 31 + 24$.\n\nStep 2: Combine like terms: $5x + 5y = 55$.\n\nStep 3: Divide by $5$: $x + y = 11$. Check with $x = 9$ and $y = 2$: $3(9) + 2(2) = 31$ and $2(9) + 3(2) = 24$.\n\n**Common Mistakes:** Reporting $55$ without dividing by $5$; subtracting instead and reporting $x - y = 7$; solving for $x$ alone and reporting $9$.\n\n**Test Day Takeaway:** When the coefficients of $x$ and $y$ swap between the two equations, adding produces a multiple of $x + y$ in one step.",
+ "id": "bank-alg-257"
+}

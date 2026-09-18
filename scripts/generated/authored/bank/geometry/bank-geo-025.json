@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-025",
+ "question": "An aluminum channel is extruded $45$ centimeters long with a uniform cross section, and that cross section is a right triangle whose legs measure $6$ centimeters and $8$ centimeters. How many cubic centimeters of aluminum does one channel contain?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$540$"
+  },
+  {
+   "id": "B",
+   "text": "$1{,}080$"
+  },
+  {
+   "id": "C",
+   "text": "$1{,}800$"
+  },
+  {
+   "id": "D",
+   "text": "$2{,}160$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves the product a second time, once for the triangle and once again for the prism",
+  "C": "uses the hypotenuse 10 in place of the leg 6: (1/2)(8)(10)(45) = 1800",
+  "D": "multiplies the two legs by the length without halving: 6*8*45 = 2160"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Triangular Prism Volume**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The cross section has area $\\frac{1}{2}(6)(8) = 24$, so the volume is $24(45) = 1{,}080$.\n\n**The Full Solution:**\nStep 1: The legs of a right triangle are perpendicular, so the cross-sectional area is $\\frac{1}{2}(6)(8) = 24$ square centimeters.\nStep 2: A prism's volume is the area of its cross section times its length: $V = 24(45)$.\nStep 3: $24(45) = 1{,}080$ cubic centimeters.\n\nCheck: A rectangular bar with a $6$ by $8$ cross section and the same length would hold $2{,}160$ cubic centimeters, exactly twice as much. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($540$): halves the product twice, once for the triangle and once more out of habit.\n* Choice C ($1{,}800$): uses the hypotenuse $10$ instead of the leg $6$, giving $\\frac{1}{2}(8)(10)(45)$.\n* Choice D ($2{,}160$): multiplies both legs by the length without ever applying the factor $\\frac{1}{2}$.\n\n**Test Day Takeaway:** For any prism, find the cross-sectional area first, then multiply by the length exactly once."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-031",
+  "question": "In the $xy$-plane, line $k$ is parallel to the line with equation $y = -\\frac{2}{3}x + 4$ and passes through the point $(6, -1)$. Which equation defines line $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = -\\frac{2}{3}x - 1$"
+    },
+    {
+      "id": "B",
+      "text": "$y = -\\frac{2}{3}x + 3$"
+    },
+    {
+      "id": "C",
+      "text": "$y = -\\frac{2}{3}x + 4$"
+    },
+    {
+      "id": "D",
+      "text": "$y = \\frac{3}{2}x - 10$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the point's y-coordinate as the intercept",
+    "C": "keeps the given line's intercept, which is the given line itself",
+    "D": "uses the perpendicular slope"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Parallel Line Through a Point**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Parallel means slope $-\\frac{2}{3}$. Substitute $(6, -1)$: $-1 = -\\frac{2}{3}(6) + b = -4 + b$, so $b = 3$ and $y = -\\frac{2}{3}x + 3$.\n\n**The Full Solution:**\nStep 1: Parallel lines have equal slopes, so line $k$ is $y = -\\frac{2}{3}x + b$ for some $b$.\nStep 2: The point $(6, -1)$ lies on $k$: $-1 = -\\frac{2}{3}(6) + b = -4 + b$, so $b = 3$.\nStep 3: Line $k$ is $y = -\\frac{2}{3}x + 3$. Check: at $x = 6$, $y = -4 + 3 = -1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -\\frac{2}{3}x - 1$): treats the $y$-coordinate of the given point as the $y$-intercept; but the point has $x = 6$, not $x = 0$.\n* Choice C ($y = -\\frac{2}{3}x + 4$): is the given line itself; it does not pass through $(6, -1)$, since $-4 + 4 = 0 \\neq -1$.\n* Choice D ($y = \\frac{3}{2}x - 10$): uses the negative reciprocal slope, which produces a perpendicular line.\n\n**Test Day Takeaway:** Copy the slope for a parallel line, then solve for $b$ by substituting the given point; the intercept is never just the point's $y$-value unless $x = 0$."
+}

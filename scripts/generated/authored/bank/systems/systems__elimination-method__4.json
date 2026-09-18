@@ -1,0 +1,49 @@
+{
+  "id": 4,
+  "question": "A conservation group sold $150$ seedlings at a plant sale and collected $\\$630$ in all. The table gives the price of each type of seedling. How many tree seedlings did the group sell?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Seedling type",
+        "Price (dollars)"
+      ],
+      "rows": [
+        [
+          "Shrub",
+          "3"
+        ],
+        [
+          "Tree",
+          "5"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$60$"
+    },
+    {
+      "id": "B",
+      "text": "$75$"
+    },
+    {
+      "id": "C",
+      "text": "$90$"
+    },
+    {
+      "id": "D",
+      "text": "$126$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "solves the system but reports $s$, the number of shrub seedlings.",
+    "B": "assumes the two types sold in equal numbers, $\\frac{150}{2}$, which the money total does not support.",
+    "D": "divides the total by the price of a tree seedling, $\\frac{630}{5}$, as if every seedling sold were a tree."
+  },
+  "correctAnswer": "C",
+  "hint": "Write one equation for the number of seedlings and one for the money, then scale the first to match a coefficient in the second.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~40s):** With $s + t = 150$ and $3s + 5t = 630$, tripling the first and subtracting gives $2t = 180$, so $t = 90$.\n\n**The Full Solution:**\nStep 1: Let $s$ be the number of shrub seedlings and $t$ the number of tree seedlings. Then $s + t = 150$ and $3s + 5t = 630$.\nStep 2: Multiply the first equation by $3$ to get $3s + 3t = 450$, matching the $3s$ term.\nStep 3: Subtract from the money equation: $(3s + 5t) - (3s + 3t) = 630 - 450$, so $2t = 180$ and $t = 90$. Check: $s = 60$, and $3(60) + 5(90) = 180 + 450 = 630$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($60$): solves the system but reports $s$, the number of shrub seedlings.\n* Choice B ($75$): assumes the two types sold in equal numbers, $\\frac{150}{2}$, which the money total does not support.\n* Choice D ($126$): divides the total by the price of a tree seedling, $\\frac{630}{5}$, as if every seedling sold were a tree.\n\n**Test Day Takeaway:** Scale the count equation by one of the prices so a variable cancels. Then label your answer with the variable the question named."
+}

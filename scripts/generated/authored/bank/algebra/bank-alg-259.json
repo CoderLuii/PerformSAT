@@ -1,0 +1,6 @@
+{
+  "question": "A visibility index is computed as $9m - 4n$ at one airport and as $7m - 5n$ at another, from the same counts $m$ of clear hours and $n$ of foggy hours. The two indices are $70$ and $45$. What is the value of $2m + n$?",
+  "correctAnswer": "25",
+  "explanation": "**SAT Pattern: Solve for a Combination**\n\n**The correct answer is $25$.**\n\n**The Fast Way (~30s):** $(9m - 4n) - (7m - 5n) = 2m + n$, so the answer is $70 - 45 = 25$.\n\n**The Full Solution:**\n\nStep 1: Subtract the second index from the first: $(9m - 4n) - (7m - 5n)$.\n\nStep 2: Combine like terms: $9m - 7m = 2m$ and $-4n - (-5n) = n$, so the difference is $2m + n$.\n\nStep 3: The same subtraction on the values gives $70 - 45 = 25$. Check with $m = 10$ and $n = 5$: $9(10) - 4(5) = 70$ and $7(10) - 5(5) = 45$.\n\n**Common Mistakes:** Adding the indices and reporting $115$; subtracting in the other order and reporting $-25$; solving for $m$ and $n$ separately and reporting $10$.\n\n**Test Day Takeaway:** Subtracting a negative coefficient adds; write the subtraction out term by term before touching the numbers.",
+  "id": "bank-alg-259"
+}

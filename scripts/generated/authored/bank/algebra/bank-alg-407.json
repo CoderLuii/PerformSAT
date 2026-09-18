@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-407",
+ "question": "A technician records the result of a seismometer calibration check as the equation $|5x - 12| + 9 = 4$, where $x$ is the measured offset, in millimeters, of the instrument's rest position. How many measured offsets make this statement true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "None"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves 5x - 12 = -5 and counts its single value",
+  "C": "drops the negative sign and solves |5x - 12| = 5, which yields two values",
+  "D": "treats the statement as true for every offset"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Isolating gives $|5x - 12| = -5$, and an absolute value is never negative, so no offset works.\n\n**The Full Solution:**\nStep 1: Isolate the absolute value by subtracting $9$ from both sides: $|5x - 12| = 4 - 9 = -5$.\nStep 2: The absolute value of any real number is at least $0$, so $|5x - 12|$ can never equal $-5$.\nStep 3: No measured offset satisfies the statement. Check: the smallest possible left-hand side is $0 + 9 = 9$, which already exceeds $4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (Exactly one): solves $5x - 12 = -5$ and counts the single value it produces, ignoring that the bars were never isolated correctly.\n* Choice C (Exactly two): drops the negative sign and solves $|5x - 12| = 5$, which does have two solutions.\n* Choice D (Infinitely many): treats the statement as an identity rather than a condition on $x$.\n\n**Test Day Takeaway:** Isolate the bars before counting: a negative right-hand side means zero solutions, and a right-hand side of $0$ means exactly one."
+}

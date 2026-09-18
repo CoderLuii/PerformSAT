@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A student rewrites $r(x) = \\frac{x^2 + 2x - 15}{x + 5}$ in a simpler form and uses that form to solve $r(x) = -8$. Which of the following correctly describes the real solutions of the equation?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The only real solution is $x = -11$."
+  },
+  {
+   "id": "B",
+   "text": "The equation has no real solution."
+  },
+  {
+   "id": "C",
+   "text": "The only real solution is $x = -5$."
+  },
+  {
+   "id": "D",
+   "text": "The real solutions are $x = -5$ and $x = 3$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "sign slip when isolating x in x - 3 = -8, computing -8 - 3 = -11 instead of -8 + 3 = -5",
+  "C": "solves the simplified linear equation but never checks that x = -5 makes the denominator zero",
+  "D": "sets the numerator equal to zero, giving the roots -5 and 3, and ignores the right side"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rational Equation with No Solution**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** For $x \\ne -5$ the rule simplifies to $r(x) = x - 3$, so $x - 3 = -8$ gives $x = -5$ — exactly the value the denominator forbids.\n\n**The Full Solution:**\nStep 1: Factor the numerator: $x^2 + 2x - 15 = (x + 5)(x - 3)$, so $r(x) = \\frac{(x + 5)(x - 3)}{x + 5}$ and the equation is $\\frac{(x + 5)(x - 3)}{x + 5} = -8$.\nStep 2: The denominator is zero when $x = -5$, so $x = -5$ is excluded from the domain before any solving happens. For every other $x$, the common factor divides out and the equation reduces to $x - 3 = -8$.\nStep 3: Solving gives $x = -5$, which is the one value already ruled out. No number satisfies $r(x) = -8$, so the equation has no real solution. Check directly: substituting $x = -5$ makes $r(-5)$ read $\\frac{0}{0}$, which is undefined.\n\n**Why the wrong answers are tempting:**\n* Choice A ($x = -11$): solves $x - 3 = -8$ by subtracting $3$ instead of adding it. The $-3$ moves across the equals sign as $+3$, giving $-8 + 3 = -5$.\n* Choice C ($x = -5$): does the algebra correctly but skips the domain check. Dividing out $x + 5$ is legal only when $x + 5 \\ne 0$, so any candidate equal to $-5$ must be discarded.\n* Choice D ($x = -5$ and $x = 3$): sets the NUMERATOR equal to zero and lists its roots. That would answer where the left side equals $0$, not where it equals $-8$.\n\n**Test Day Takeaway:** Note the excluded values before you simplify a rational equation, then compare them with whatever you solve for. When the only candidate is an excluded value, the equation has no solution at all."
+}

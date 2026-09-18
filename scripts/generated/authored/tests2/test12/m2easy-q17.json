@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "A star tracker reports a guide star's vertical offset, in arcseconds, $t$ seconds after a correction begins as $D(t) = a(t - 4)^2 - 9$ for $0 \\le t \\le 8$, where $a$ is a constant, and the offset at $t = 0$ is $23$ arcseconds. Rewriting $D(t)$ in the form $at^2 + bt + c$, what is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-16$"
+  },
+  {
+   "id": "B",
+   "text": "$-8$"
+  },
+  {
+   "id": "C",
+   "text": "$-7$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "expands the square but never multiplies the middle term by a, reporting -2 times 4",
+  "C": "solves 16a - 9 = 23 as 16a = 14, getting a = 0.875 and then b = -7",
+  "D": "keeps the middle term positive, reporting +2 times 2 times 4"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** $D(0) = 16a - 9 = 23$ gives $a = 2$, and the middle term of $a(t - 4)^2$ is $-8at = -16t$, so $b = -16$.\n\n**The Full Solution:**\nStep 1: Use the given offset at $t = 0$: $D(0) = a(0 - 4)^2 - 9 = 16a - 9$. Setting $16a - 9 = 23$ gives $16a = 32$, so $a = 2$.\nStep 2: Expand with $a = 2$: $2(t - 4)^2 - 9 = 2(t^2 - 8t + 16) - 9 = 2t^2 - 16t + 32 - 9$.\nStep 3: Collect: $D(t) = 2t^2 - 16t + 23$, so $b = -16$. Check the constant term against the given value: $c = 23$, which is exactly $D(0)$, as it must be. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-8$): expands $(t - 4)^2$ to $t^2 - 8t + 16$ and copies the $-8$ straight down, forgetting that every term inside gets multiplied by $a = 2$.\n* Choice C ($-7$): solves $16a - 9 = 23$ by subtracting $9$ instead of adding it, getting $16a = 14$ and $a = 0.875$, then $b = -8(0.875) = -7$.\n* Choice D ($16$): expands correctly in size but drops the minus sign; $(t - 4)^2$ has a NEGATIVE middle term because the binomial is a difference.\n\n**Test Day Takeaway:** Pin the leading coefficient with a known point first, then expand the square completely before distributing. In $a(t - h)^2 + k$ the middle coefficient is always $-2ah$, sign included."
+}

@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 1,
-  "passage": "Independent critic Aruna D'Souza, an affiliate of the Williams College Graduate Program in the History of Art, argues in her book *Whitewalling* ______ that recurring controversies in American museums over works depicting Black suffering reveal that institutional ideas about whose pain is appropriate for display have lagged behind the demographic and political shifts in the public.",
+  "passage": "In 1851, the physicist Léon Foucault suspended a heavy pendulum from the dome of the Panthéon in Paris and set it swinging before a public audience. Over the following hours, the plane of the pendulum's swing appeared to rotate ______ the pendulum was actually swinging in a fixed plane the whole time, while the Earth — and everyone watching — turned beneath it.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "published in 2018"
+      "text": "steadily, however,"
     },
     {
       "id": "B",
-      "text": ", published in 2018,"
+      "text": "steadily; however,"
     },
     {
       "id": "C",
-      "text": "published in 2018,"
+      "text": "steadily however"
     },
     {
       "id": "D",
-      "text": ", published in 2018"
+      "text": "steadily, however;"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B, \", published in 2018,\". The blank holds a nonrestrictive participial phrase, \"published in 2018,\" that modifies the book title *Whitewalling*. The phrase is nonrestrictive because the title alone — *Whitewalling* — uniquely identifies the work; the publication date adds supplementary information rather than narrowing among candidates. Standard English requires a nonrestrictive modifier to be set off by a matched pair of bracketing marks. Choice B supplies paired commas, which open and close the insertion cleanly and let the matrix sentence resume with its complement clause: \"argues in her book *Whitewalling*, published in 2018, that recurring controversies…\".\n\nChoice D is incorrect. (\", published in 2018\"): — this option opens the parenthetical with a comma but never closes it, leaving the participial phrase running directly into the complement clause of \"argues\": \"…*Whitewalling*, published in 2018 that recurring controversies…\". CB conventions require bracketing punctuation to be paired in kind: when an opening comma sets off a nonrestrictive insertion, a matching closing comma is required where the insertion ends. A single comma on the front is a recognizable but unmatched form of the correct pattern. Choice C is incorrect. (\"published in 2018,\"): — a different SEC error. With no opening comma, \"published in 2018\" reads as a restrictive modifier of *Whitewalling*, which would imply that there is some other version of the book to be distinguished from a 2018 one. Worse, the closing comma then sits between the verb \"argues\" and its \"that\"-clause complement (\"…argues in her book *Whitewalling* published in 2018, that recurring controversies…\"), and Standard English does not place a comma between a verb and its direct \"that\"-clause complement. Choice A is incorrect. (\" published in 2018\"): inverse — the opposite of the correct treatment. With no boundary punctuation at all, the participial phrase fuses into the surrounding sentence: \"…argues in her book *Whitewalling* published in 2018 that recurring controversies…\". The reader cannot tell whether \"that\" begins a relative clause modifying \"2018\" or the complement of \"argues,\" and the nonrestrictive material that supplies the date is left without any matched pair of marks to set it off."
+  "explanation": "**Choice B is correct.** Two independent clauses meet at the blank, and the conjunctive adverb \"however\" joins them correctly only with a semicolon before it and a comma after it: \"...appeared to rotate steadily; however, the pendulum was actually swinging in a fixed plane...\"\n\n**The Full Solution:**\n- Both sides of the blank are independent clauses: \"the plane of the pendulum's swing appeared to rotate steadily\" and \"the pendulum was actually swinging in a fixed plane the whole time.\"\n- \"However\" is a conjunctive adverb, not a coordinating conjunction — it cannot join clauses with a comma alone.\n- The standard pattern is semicolon + conjunctive adverb + comma, which is exactly the arrangement in choice B.\n\n**Why the other choices are wrong:**\n- A: A comma before \"however\" leaves two independent clauses joined by commas alone — a comma splice; \"however\" has no power to license the comma.\n- C: With no punctuation at all, the two clauses fuse into a run-on, and \"however\" floats unanchored between them.\n- D: This places the semicolon on the wrong side of \"however,\" attaching the adverb to the first clause and then splicing the boundary itself; the semicolon must precede \"however,\" not follow it."
 }

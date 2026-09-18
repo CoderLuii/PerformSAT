@@ -1,0 +1,45 @@
+{
+  "id": "bank-alg-485",
+  "question": "A pottery studio sold a total of $84$ mugs and bowls at a craft fair. The table gives the price, in dollars, of each item. If the studio collected a total of $1{,}224$ dollars from these sales, how many bowls were sold?",
+  "questionTable": {
+    "headers": [
+      "Item",
+      "Price (dollars)"
+    ],
+    "rows": [
+      [
+        "Mug",
+        "12"
+      ],
+      [
+        "Bowl",
+        "18"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12$"
+    },
+    {
+      "id": "B",
+      "text": "$36$"
+    },
+    {
+      "id": "C",
+      "text": "$48$"
+    },
+    {
+      "id": "D",
+      "text": "$68$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the difference between the number of mugs and the number of bowls",
+    "C": "reports the number of mugs (also results from swapping the two prices)",
+    "D": "divides the total revenue by the bowl price, as if every item sold were a bowl"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** If all $84$ items had been mugs, revenue would be $12(84) = 1{,}008$ dollars. Each bowl instead of a mug adds $18 - 12 = 6$ dollars, and the actual revenue is $1{,}224 - 1{,}008 = 216$ dollars higher, so there were $\\dfrac{216}{6} = 36$ bowls.\n\n**The Full Solution:**\nStep 1: Let $m$ be the number of mugs and $b$ the number of bowls. The count gives $m + b = 84$, and the table's prices give the revenue equation $12m + 18b = 1{,}224$.\nStep 2: Solve the count equation for $m$: $m = 84 - b$. Substitute: $12(84 - b) + 18b = 1{,}224$, so $1{,}008 - 12b + 18b = 1{,}224$, giving $6b = 216$ and $b = 36$.\nStep 3: Then $m = 84 - 36 = 48$. Check the revenue: $12(48) + 18(36) = 576 + 648 = 1{,}224$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): is $48 - 36$, the difference between the two counts, not the number of bowls.\n* Choice C ($48$): is the number of mugs; it is also the bowl count you get if the prices are attached to the wrong items ($18m + 12b = 1{,}224$).\n* Choice D ($68$): divides $1{,}224$ by $18$, which assumes all $84$ items were bowls and ignores the count equation.\n\n**Test Day Takeaway:** A two-price word problem always gives two equations: one for the count and one for the money; solve the count equation for one variable and substitute into the money equation."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-103",
+ "question": "A dosing chart is consistent when $\\frac{4n + b}{3} = 2n - 4$, where $n$ is the number of daily nebulizer treatments and $b$ is a constant. For what value of $b$ is the chart consistent at $n = 9$?",
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~30s):** At $n = 9$ the right side is $14$, so $36 + b = 42$ and $b = 6$.\n\n**The Full Solution:**\n\nStep 1: Substitute $n = 9$: $\\frac{4(9) + b}{3} = 2(9) - 4$, which is $\\frac{36 + b}{3} = 14$.\n\nStep 2: Multiply both sides by $3$ to clear the denominator: $36 + b = 42$.\n\nStep 3: Subtract $36$: $b = 6$. Check: $\\frac{36 + 6}{3} = \\frac{42}{3} = 14$ and $2(9) - 4 = 14$.\n\n**Common Mistakes:**\n\n* $42$ — clearing the denominator but reporting the whole numerator instead of $b$.\n* $-22$ — subtracting $36$ from $14$ without first multiplying both sides by $3$.\n* $2$ — dividing $6$ by $3$ a second time, as though the denominator applied to $b$ alone.\n\n**Test Day Takeaway:** Clear the fraction before isolating anything; multiplying both sides by the denominator removes the most common source of error."
+}

@@ -5,30 +5,66 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
+  "module": 2,
+  "passage": "In mountain basins of the American West, winter snowpack acts as a natural reservoir, holding water that is released as meltwater through the warm months. Hydrologists summarize the reservoir each spring as the snowpack's water content measured on April 1, expressed against the long-term average. A basin manager claims that summer streamflow in one such basin tracks the April snowpack closely: thin snowpacks are followed by meager summer flows, and deep snowpacks by abundant ones.",
+  "questionTable": {
+    "type": "table",
+    "caption": "April 1 snow water content and summer streamflow in one mountain basin (percent of long-term average)",
+    "headers": [
+      "Year",
+      "April 1 snow water content (% of average)",
+      "June-August streamflow (% of average)"
+    ],
+    "rows": [
+      [
+        "2018",
+        "142",
+        "128"
+      ],
+      [
+        "2019",
+        "96",
+        "91"
+      ],
+      [
+        "2020",
+        "71",
+        "63"
+      ],
+      [
+        "2021",
+        "118",
+        "109"
+      ],
+      [
+        "2022",
+        "55",
+        "48"
+      ]
+    ]
+  },
   "question": "Which choice most effectively uses data from the table to support the claim?",
   "choices": [
     {
       "id": "A",
-      "text": "Agriculture fell from 38% of employed U.S. workers in 1900 to 2% in 2000, showing that not all sectors rose across the period."
+      "text": "Snow water content on April 1 ranged from a low of 55% of average in 2022 to a high of 142% of average in 2018."
     },
     {
       "id": "B",
-      "text": "Manufacturing's share of employed U.S. workers was 26% in 1950, the highest value the manufacturing column reaches in any year shown."
+      "text": "Summer streamflow fell below its long-term average in three of the five years shown in the table and exceeded it in the other two."
     },
     {
       "id": "C",
-      "text": "Manufacturing accounted for 22% of employed U.S. workers in 1900, rose to 26% in 1950, and then fell to 13% in 2000 — well below its 1900 share."
+      "text": "The two thinnest snowpacks, 55% and 71% of average in 2022 and 2020, were followed by the two lowest summer flows, 48% and 63%, while the deepest snowpack, 142% in 2018, was followed by the highest flow, 128%."
     },
     {
       "id": "D",
-      "text": "Services rose from 31% of employed U.S. workers in 1900 to 75% in 2000, the largest absolute increase of any sector in the table."
+      "text": "In 2019, snow water content stood at 96% of average and summer streamflow at 91% of average, the closest pairing of values in the table."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The claim is that manufacturing's share rose, peaked at mid-century, and then fell below its starting level, so the evidence must give the manufacturing values at all three dates. Choice C does this: 22% in 1900, 26% in 1950, and 13% in 2000, well below the 1900 figure. Choice B cites only the 1950 peak; choices A and D cite other sectors that do not establish what manufacturing did.",
-  "passage": "Looking back at the long arc of American occupational change, an economic essayist makes this claim: manufacturing's share of total employment first rose, peaking around mid-century, and then fell sharply, ending the period below its starting share. To document that pattern from the figures below, the essayist plans to cite the manufacturing values at the relevant points.\n\nPercent of employed U.S. workers by occupational sector (U.S. Census Bureau, Historical Statistics)\n| Sector        | 1900 | 1950 | 2000 |\n|---------------|------|------|------|\n| Agriculture   | 38%  | 12%  | 2%   |\n| Manufacturing | 22%  | 26%  | 13%  |\n| Services      | 31%  | 48%  | 75%  |\n| Other         | 9%   | 14%  | 10%  |",
+  "explanation": "**Choice C is correct.** A tracking claim needs both variables moving together across years, and C shows the correspondence at both ends of the range: thinnest snowpacks with lowest flows, deepest snowpack with highest flow.\n\n**The Full Solution:**\n- The claim pairs conditions: thin snowpack with meager flow, deep snowpack with abundant flow.\n- C matches the two low years (2022, 2020) to the two lowest flows and the high year (2018) to the highest flow.\n- Correspondence across the extremes is what demonstrates tracking.\n\n**Why the other choices are wrong:**\n- A: It reports only the snowpack's range and never mentions streamflow.\n- B: It reports only streamflow and never connects it to the snowpack.\n- D: One close pairing in a single year cannot show that the two quantities move together across years.",
   "_meta": {
-    "anchor": "U.S. Census Bureau Historical Statistics — occupational distribution; dataset qd-009"
-  },
-  "module": 2
+    "anchor": "snowpack as natural reservoir — April snow water content and summer flow; original basin table"
+  }
 }

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-104",
+ "question": "A hydroponic trough's nutrient concentration, in grams per liter, is modeled by $\\dfrac{3x^{2}-12}{x^{2}+2x}$, where $x>2$ is the flow rate in liters per minute. Which of the following is equivalent to the model?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{3(x-2)}{x}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{3(x+2)}{x}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{3x-12}{x}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{x-2}{x}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "cancels the factor x - 2 instead of the factor x + 2",
+  "C": "divides only the leading terms by x and leaves 3x - 12 over x",
+  "D": "drops the factor 3 when factoring 3x squared minus 12"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** $\\frac{3(x-2)(x+2)}{x(x+2)}$ cancels the $x+2$, leaving $\\frac{3(x-2)}{x}$.\n\n**The Full Solution:**\n\nStep 1: Factor the numerator in two stages: $3x^{2}-12=3(x^{2}-4)=3(x-2)(x+2)$.\n\nStep 2: Factor the denominator: $x^{2}+2x=x(x+2)$.\n\nStep 3: Since $x>2$, the factor $x+2$ is nonzero and cancels, leaving $\\frac{3(x-2)}{x}$. Check at $x=4$: $\\frac{48-12}{16+8}=\\frac{36}{24}=1.5$, and $\\frac{3(2)}{4}=1.5$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: cancels $x-2$, a factor the denominator does not contain.\n* Choice C: divides only the leading terms by $x$ instead of factoring.\n* Choice D: loses the common factor $3$ pulled out of the numerator.\n\n**Test Day Takeaway:** Pull out a numerical common factor first; the difference of squares is easier to spot once the coefficient is outside."
+}

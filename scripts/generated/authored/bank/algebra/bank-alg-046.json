@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-046",
+  "question": "A jeweler melts together an alloy that is $60\\%$ gold and an alloy that is $90\\%$ gold to produce $45$ grams of an alloy that is $80\\%$ gold. If $x$ is the number of grams of the $60\\%$ alloy and $y$ is the number of grams of the $90\\%$ alloy, which system of equations represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$x + y = 45$ and $0.6x + 0.9y = 0.8$"
+    },
+    {
+      "id": "B",
+      "text": "$x + y = 45$ and $0.6x + 0.9y = 36$"
+    },
+    {
+      "id": "C",
+      "text": "$x + y = 36$ and $0.6x + 0.9y = 45$"
+    },
+    {
+      "id": "D",
+      "text": "$x + y = 45$ and $0.9x + 0.6y = 36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "sets the gold total equal to the percent 0.8 instead of 0.8 times 45 grams",
+    "C": "swaps the mass total and the gold total",
+    "D": "swaps the two concentrations"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Mixture System Setup**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Mass: $x + y = 45$. Gold: $0.6x + 0.9y = 0.8(45) = 36$.\n\n**The Full Solution:**\nStep 1: The total mass of the two alloys equals the mass of the product: $x + y = 45$.\nStep 2: The gold content is conserved. The $60\\%$ alloy contributes $0.6x$ grams of gold, the $90\\%$ alloy contributes $0.9y$, and the product contains $0.8(45) = 36$ grams of gold: $0.6x + 0.9y = 36$.\nStep 3: Check by solving: $0.6x + 0.9(45 - x) = 36 \\Rightarrow 40.5 - 0.3x = 36 \\Rightarrow x = 15$, $y = 30$; then $9 + 27 = 36$ grams of gold, which is $80\\%$ of $45$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($x + y = 45$ and $0.6x + 0.9y = 0.8$): equates grams of gold to a bare percent; the right side must be $0.8$ of the $45$-gram total.\n* Choice C ($x + y = 36$ and $0.6x + 0.9y = 45$): swaps the mass total ($45$) with the gold total ($36$).\n* Choice D ($x + y = 45$ and $0.9x + 0.6y = 36$): attaches $90\\%$ to the $60\\%$ alloy's mass and vice versa.\n\n**Test Day Takeaway:** A mixture gives two conservation equations: total amount, and total of the tracked ingredient, where every term (including the product's) is concentration times amount."
+}

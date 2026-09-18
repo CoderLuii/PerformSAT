@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-265",
+ "question": "A paint-mixing sheet gives $3x + 8y = 46$ for a small batch and $9x + cy = 138$ for a triple batch, and every solution of the small-batch equation solves the triple-batch equation. What is the constant $c$?",
+ "correctAnswer": "24",
+ "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**The correct answer is $24$.**\n\n**The Fast Way (~20s):** The triple batch is $3$ times the small batch, so $c = 3(8) = 24$.\n\n**The Full Solution:**\nStep 1: Every solution of the first equation solving the second means the second is a multiple of the first.\nStep 2: Comparing $x$-coefficients gives the factor: $\\frac{9}{3} = 3$, and the constants agree because $3(46) = 138$.\nStep 3: Applying the same factor to the $y$-coefficient gives $c = 3(8) = 24$. Check: $3(3x + 8y) = 9x + 24y$ and $3(46) = 138$.\n\n**Common Mistakes:**\n* Copying $8$ leaves the $y$-coefficient unscaled while the $x$-coefficient was tripled.\n* Reporting $3$ gives the scale factor rather than the scaled coefficient.\n* Multiplying by $9$ instead of $3$ gives $72$.\n\n**Test Day Takeaway:** One scale factor must fit all three parts of the equation; find it from the terms that are already known."
+}

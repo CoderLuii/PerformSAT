@@ -1,12 +1,15 @@
 // Practice Test 8 — Reading & Writing Module 2 Easy variant (27 questions)
+// R&W seating varied 2026-09-07 (scripts/varyRWSeating.mjs): items re-dealt inside their official skill blocks with a per-test seed — block flow and per-skill counts unchanged.
 // For students routed to the easier path after Module 1 (~<60% correct).
 // Distribution: 8E / 16M / 3H. Max-score ceiling: ~600.
 // Domain mix: 8 Craft and Structure / 8 Information and Ideas /
 //   6 Standard English Conventions / 5 Expression of Ideas.
 //
-// All passages are ORIGINAL prose written for this variant. Nothing is taken
-// or paraphrased from College Board materials, prep books, or other
-// copyrighted sources, and no specific published study is cited.
+// Recreated 2026-09-01 against the official Educator Question Bank register
+// (docs/TEST_RECREATION_SPEC.md). All passages are ORIGINAL prose written for
+// this variant. Nothing is taken or paraphrased from College Board materials,
+// prep books, or other copyrighted sources, and no specific published study
+// is cited.
 
 export const practiceTest8RWM2Easy = {
   id: "rw-module-2-easy",
@@ -14,549 +17,562 @@ export const practiceTest8RWM2Easy = {
   variant: "easy",
   timeLimit: 32,
   questions: [
+    // ============================================================
+    // Q1-Q8: Craft and Structure
+    // ============================================================
     {
-      id: 855,
-      type: "multiple-choice",
-      difficulty: "easy",
-      band: 2,
-      domain: "craft-and-structure",
-      skill: "words-in-context",
-      passage: "Black peppercorns are the dried berries of a climbing vine, and the berries on a single spike do not ripen all at once. A picker therefore returns to the same vine again and again over several weeks. Growers ____ the extra trips as the price of a full harvest, since a spike cut too early yields berries that shrivel to nothing on the drying mat.",
-      question: "Which choice completes the text with the most logical and precise word or phrase?",
-      choices: [
-        { id: "A", text: "postpone" },
-        { id: "B", text: "accept" },
-        { id: "C", text: "refuse" },
-        { id: "D", text: "illustrate" }
+      "id": 856,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "craft-and-structure",
+      "skill": "words-in-context",
+      "passage": "A sundial has no spring to wind and no gears to wear out; its only moving part is a shadow. A dial of cast bronze, set correctly once, is therefore remarkably ____: it can go on marking the hours for centuries with nothing more than an occasional cleaning.",
+      "question": "Which choice completes the text with the most logical and precise word or phrase?",
+      "choices": [
+        { "id": "A", "text": "durable" },
+        { "id": "B", "text": "fragile" },
+        { "id": "C", "text": "portable" },
+        { "id": "D", "text": "expensive" }
       ],
-      correctAnswer: "B",
-      explanation: "**Choice B is correct.** The growers keep making the repeated trips because cutting a spike too early ruins the berries, so the blank needs a word meaning to take on something willingly as a necessary cost: \"accept.\"\n\n**The Full Solution:**\n- How to spot it: read past the blank to the end of the sentence, because the reason given there usually shows you what the blank means.\n- The reason: \"a spike cut too early yields berries that shrivel to nothing on the drying mat.\"\n- So the extra trips are worth making, and the phrase \"as the price of a full harvest\" tells you the growers put up with them on purpose.\n- Read each word into the blank; only \"accept\" means taking something on as a necessary cost.\n\n**Why the other choices are wrong:**\n- A: \"Postpone\" means putting the trips off, but the pickers are making them week after week.\n- C: \"Refuse\" means not making the trips at all, which would ruin the harvest the growers want.\n- D: \"Illustrate\" means showing or picturing something rather than putting up with it."
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** The words after the colon describe something that keeps working for centuries with almost no care, so the blank needs a word meaning long-lasting: \"durable.\"\n\n**The Full Solution:**\n- How to spot it: when a colon follows the blank, the words after the colon define the blank for you. Read them first.\n- After the colon: the dial \"can go on marking the hours for centuries with nothing more than an occasional cleaning.\"\n- The reason comes before: no spring to wind, no gears to wear out, no moving part but a shadow.\n- Read each word into the blank; only \"durable\" means lasting a very long time.\n\n**Why the other choices are wrong:**\n- B: \"Fragile\" means easily broken, the opposite of serving for centuries.\n- C: \"Portable\" means easy to carry, but a dial set correctly once is meant to stay put.\n- D: \"Expensive\" is about cost, which the passage never raises."
     },
     {
-      id: 856,
-      type: "multiple-choice",
-      difficulty: "easy",
-      band: 2,
-      domain: "craft-and-structure",
-      skill: "words-in-context",
-      passage: "Before an aerial act begins, a rigger climbs into the roof of the tent and checks every cable, clamp, and knot holding the trapeze and the net beneath it. A single worn fitting can give way under the sudden jolt of a catch. The inspection is therefore deliberately ____: nothing is taken on trust, and every piece of hardware is examined in turn.",
-      question: "Which choice completes the text with the most logical and precise word or phrase?",
-      choices: [
-        { id: "A", text: "thorough" },
-        { id: "B", text: "brief" },
-        { id: "C", text: "optional" },
-        { id: "D", text: "decorative" }
+      "id": 855,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "craft-and-structure",
+      "skill": "words-in-context",
+      "passage": "A window box hangs against a wall that soaks up sun all day, and the shallow soil inside it dries out far faster than a bed at ground level. Gardeners who keep one learn to ____ their watering to the spot itself, checking a box on a south-facing sill every morning while letting a box on a shaded wall wait an extra day.",
+      "question": "Which choice completes the text with the most logical and precise word or phrase?",
+      "choices": [
+        { "id": "A", "text": "delay" },
+        { "id": "B", "text": "adapt" },
+        { "id": "C", "text": "abandon" },
+        { "id": "D", "text": "announce" }
       ],
-      correctAnswer: "A",
-      explanation: "**Choice A is correct.** The words right after the blank say that \"nothing is taken on trust\" and that every piece is checked one at a time, so the blank needs a word meaning complete and careful: \"thorough.\"\n\n**The Full Solution:**\n- How to spot it: when a colon follows the blank, the words after the colon define the blank for you. Read them first.\n- After the colon: \"nothing is taken on trust, and every piece of hardware is examined in turn.\"\n- That describes an inspection that leaves nothing out, and the reason is given just before: one worn fitting can fail during a catch.\n- Read each word into the blank; only \"thorough\" means complete and careful.\n\n**Why the other choices are wrong:**\n- B: \"Brief\" means short and quick, which clashes with checking every single piece in turn.\n- C: \"Optional\" would mean the rigger could skip it, but the passage treats the check as necessary.\n- D: \"Decorative\" is about appearance and has nothing to do with safety checks."
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The gardeners water a sunny box every morning and let a shaded box wait, fitting the routine to each spot, so the blank needs a word meaning to fit behavior to circumstances: \"adapt.\"\n\n**The Full Solution:**\n- How to spot it: read the examples after the blank, because they show the action the blank names.\n- The examples: a box on a south-facing sill is checked every morning, while a box on a shaded wall waits an extra day.\n- So the watering is being fitted to each spot rather than done the same way everywhere, and the opening explains why: shallow soil against a sun-warmed wall dries fast.\n- Read each word into the blank; only \"adapt\" means fitting the routine to the situation.\n\n**Why the other choices are wrong:**\n- A: \"Delay\" means putting the watering off, but the sunny box is checked every single morning.\n- C: \"Abandon\" means giving the watering up entirely, which would kill the plants the gardeners are tending.\n- D: \"Announce\" means telling others about the watering rather than fitting it to each box."
     },
     {
-      id: 857,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "craft-and-structure",
-      skill: "words-in-context",
-      passage: "A young songbird does not produce its species' song straight away. For weeks it works through a soft, rambling stream of notes that wanders in and out of the pattern it has heard from an adult, slowly dropping the sounds that do not belong. Only after this long stretch of practice does the song ____ into the fixed form the bird will use for the rest of its life.",
-      question: "Which choice completes the text with the most logical and precise word or phrase?",
-      choices: [
-        { id: "A", text: "dissolve" },
-        { id: "B", text: "expand" },
-        { id: "C", text: "settle" },
-        { id: "D", text: "translate" }
+      "id": 858,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "craft-and-structure",
+      "skill": "words-in-context",
+      "passage": "A skipped stone leaves the hand doing two things at once: flying forward and spinning. High-speed video shows that the spin is what matters at each bounce. Like a rolling coin that stays upright, a fast-spinning stone resists tipping, so the spin ____ the stone through every slap of the water, holding its flat face at the same shallow angle.",
+      "question": "Which choice completes the text with the most logical and precise word or phrase?",
+      "choices": [
+        { "id": "A", "text": "propels" },
+        { "id": "B", "text": "shatters" },
+        { "id": "C", "text": "measures" },
+        { "id": "D", "text": "steadies" }
       ],
-      correctAnswer: "C",
-      explanation: "**Choice C is correct.** The rambling practice notes gradually narrow down until the song reaches \"the fixed form the bird will use for the rest of its life,\" so the blank needs a word meaning to come to rest in a final shape: \"settle.\"\n\n**The Full Solution:**\n- How to spot it: find the two states the sentence describes, the before and the after, then pick the word that names the move from one to the other.\n- Before: a soft, rambling stream of notes that wanders in and out of the adult pattern.\n- After: a fixed form the bird keeps for life.\n- The move is from loose and shifting to steady and final, and only \"settle\" names that.\n\n**Why the other choices are wrong:**\n- A: \"Dissolve\" means breaking apart, the opposite of arriving at a fixed form.\n- B: \"Expand\" means growing larger, but the bird is dropping sounds, so the song is narrowing rather than growing.\n- D: \"Translate\" is about moving between languages, which is not what happens to the notes."
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** The sentence compares the stone to a rolling coin that \"stays upright\" and says a fast-spinning stone \"resists tipping,\" so the blank needs a verb meaning keeps it stable: \"steadies.\"\n\n**The Full Solution:**\n- How to spot it: the sentence hands you a comparison, so use it. Whatever the coin does, the stone does.\n- The coin stays upright because it rolls; the fast-spinning stone likewise resists tipping.\n- The end of the sentence confirms it: the stone holds \"its flat face at the same shallow angle\" through every bounce.\n- Read each verb into the blank; only \"steadies\" means keeping the stone stable.\n\n**Why the other choices are wrong:**\n- A: \"Propels\" is about pushing the stone forward, but that is the flight's job, and this sentence is about not tipping over.\n- B: \"Shatters\" means breaking apart, which would end the skipping rather than carry it on.\n- C: \"Measures\" is something an observer does with instruments, not something spin does to a stone."
     },
     {
-      id: 858,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "craft-and-structure",
-      skill: "words-in-context",
-      passage: "Picture editors have long accepted that a news photograph sometimes has to be trimmed to fit the space on a page. Trimming, though, is never a neutral act. Cutting away the bystanders at the edge of a frame can ____ the meaning of the scene at its center, turning a small gathering into what looks like a crowd, or a crowd into what looks like a lone figure.",
-      question: "Which choice completes the text with the most logical and precise word or phrase?",
-      choices: [
-        { id: "A", text: "preserve" },
-        { id: "B", text: "clarify" },
-        { id: "C", text: "publicize" },
-        { id: "D", text: "alter" }
+      "id": 857,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "craft-and-structure",
+      "skill": "words-in-context",
+      "passage": "A shard of bottle glass that washes into the sea starts out sharp-edged and glossy. Years of tumbling against sand and stone gradually ____ its edges, and the same scouring frosts its surface, so that the fragment a beachcomber finally picks up is a smooth, clouded pebble.",
+      "question": "Which choice completes the text with the most logical and precise word or phrase?",
+      "choices": [
+        { "id": "A", "text": "expose" },
+        { "id": "B", "text": "brighten" },
+        { "id": "C", "text": "soften" },
+        { "id": "D", "text": "duplicate" }
       ],
-      correctAnswer: "D",
-      explanation: "**Choice D is correct.** The examples after the blank show a picture's meaning being changed by the trimming, a small gathering made to look like a crowd and a crowd made to look like one person, so the blank needs a word meaning to change: \"alter.\"\n\n**The Full Solution:**\n- How to spot it: the sentence gives examples right after the blank. Read them and ask what they show the trimming doing.\n- The examples are both switches: a small gathering looks like a crowd, and a crowd looks like a lone figure.\n- The sentence before also warns you that trimming \"is never a neutral act,\" so the blank must name a real effect on meaning.\n- Read each word into the blank; only \"alter\" means changing that meaning.\n\n**Why the other choices are wrong:**\n- A: \"Preserve\" means keeping the meaning the same, the opposite of the warning the passage gives.\n- B: \"Clarify\" means making the meaning clearer, but the examples show readers being misled.\n- C: \"Publicize\" is about spreading a photo widely, not about changing what it seems to show."
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** The fragment goes from \"sharp-edged and glossy\" to \"a smooth, clouded pebble,\" so the blank needs a verb for making edges less sharp: \"soften.\"\n\n**The Full Solution:**\n- How to spot it: find the before and the after, then pick the verb that names the change between them.\n- Before: a shard that is sharp-edged and glossy.\n- After: the smooth, clouded pebble a beachcomber picks up.\n- Years of tumbling against sand and stone wear the edges down bit by bit, and \"soften\" names exactly that change.\n\n**Why the other choices are wrong:**\n- A: \"Expose\" means uncovering something hidden, but the edges are being worn smooth, not revealed.\n- B: \"Brighten\" clashes with the rest of the sentence, which says the surface turns frosted and clouded.\n- D: \"Duplicate\" means copying the edges, which the sea is not doing."
     },
     {
-      id: 859,
-      type: "multiple-choice",
-      difficulty: "easy",
-      band: 2,
-      domain: "craft-and-structure",
-      skill: "text-structure-and-purpose",
-      passage: "More meteorites have been collected in Antarctica than anywhere else on Earth, and not because more of them land there. Ice flowing out from the interior stalls where it meets a mountain range, and the dry wind then strips away the surface layers, leaving behind the stones that the ice has carried along for thousands of years. On the bare blue-ice fields that result, a dark rock sitting on clean white ice is almost always a visitor from space.",
-      question: "Which choice best states the main purpose of the text?",
-      choices: [
-        { id: "A", text: "To describe the vehicles and equipment teams use to haul meteorites off the Antarctic ice." },
-        { id: "B", text: "To explain why so many meteorites are recovered in Antarctica even though no more of them fall there." },
-        { id: "C", text: "To argue that meteorite hunting deserves a larger share of the money spent on polar research." },
-        { id: "D", text: "To compare the chemical makeup of Antarctic meteorites with that of meteorites collected from deserts and farmland elsewhere in the world." }
-      ],
-      correctAnswer: "B",
-      explanation: "**Choice B is correct.** The passage raises a fact, that Antarctica yields the most meteorites, immediately rules out the obvious reason, and then explains what actually causes it.\n\n**The Full Solution:**\n- How to spot it: for a main-purpose question, ask what job the whole passage is doing, then check that your answer covers the beginning AND the end.\n- The first sentence sets up the fact and blocks the easy explanation: it is \"not because more of them land there.\"\n- The middle explains the real cause: flowing ice stalls at the mountains and wind strips the surface, gathering old stones in one place.\n- The last sentence adds why they are easy to see, a dark rock on clean white ice. The passage exists to explain the Antarctic count, which is what B says.\n\n**Why the other choices are wrong:**\n- A: No vehicles or equipment are mentioned anywhere in the passage.\n- C: The passage never argues about research funding.\n- D: The chemical makeup of the meteorites never comes up."
-    },
-    {
-      id: 860,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "craft-and-structure",
-      skill: "text-structure-and-purpose",
-      passage: "Concrete is very strong when it is squeezed but weak when it is pulled, so builders run steel bars through it to take the pulling loads. The pairing carries a hidden cost. Where seawater or road salt works its way in to the steel, the bars rust, and rust takes up more room than the metal it replaces, so the swelling cracks the concrete from the inside out. Engineers first answered the problem by burying the bars deeper and sealing the surface against salt. More recently, some have dropped the steel altogether in favor of bars made from glass or basalt fiber, which carry a pulling load without rusting at all.",
-      question: "Which choice best describes the overall structure of the text?",
-      choices: [
-        { id: "A", text: "It traces the career of one engineer who redesigned the foundations of coastal bridges." },
-        { id: "B", text: "It lists the ingredients of ordinary concrete and then explains where each of them is mined." },
-        { id: "C", text: "It explains why steel is added to concrete, identifies a problem the pairing creates, and then gives an earlier and a newer response to that problem." },
-        { id: "D", text: "It argues that reinforced concrete should no longer be used in any structure built near salt water, since no coating or covering can keep the steel inside it from rusting." }
-      ],
-      correctAnswer: "C",
-      explanation: "**Choice C is correct.** The passage says why steel goes into concrete, describes the rusting problem that follows, and then reports two responses, an older one and a newer one.\n\n**The Full Solution:**\n- How to spot it: label what each part of the passage DOES, then read the labels back in order.\n- Reason for the steel: concrete is strong under squeezing but weak under pulling, so steel bars take the pull.\n- Problem: salt reaches the steel, the bars rust, and the swelling rust cracks the concrete from inside.\n- Older response: bury the bars deeper and seal the surface.\n- Newer response: replace the steel with glass or basalt fiber bars that do not rust. Reason, problem, two responses, exactly what C says.\n\n**Why the other choices are wrong:**\n- A: No individual engineer or career is described.\n- B: The passage never lists concrete's ingredients or where they come from.\n- D: It reports fixes engineers use rather than arguing that reinforced concrete should be abandoned."
-    },
-    {
-      id: 861,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "craft-and-structure",
-      skill: "text-structure-and-purpose",
-      passage: "Woolen cloth came off the medieval loom loose and open, and it had to be pounded in water for hours until the fibers matted together and the cloth thickened. For a long time this pounding was done by workers treading the cloth in troughs, slow and exhausting labor. __By the twelfth and thirteenth centuries, builders in England had begun using a water wheel to lift and drop rows of heavy wooden hammers, so that a stream could do the pounding instead.__ Since the fast streams ran in the hills rather than in the old cloth towns, much of the trade drifted away from the towns whose weavers had long controlled it.",
-      question: "Which choice best describes the function of the underlined sentence in the text as a whole?",
-      choices: [
-        { id: "A", text: "It introduces the mechanical change that the final sentence then ties to a shift in where the cloth trade was carried on." },
-        { id: "B", text: "It explains the chemical process by which wool fibers lock together when they are soaked in water." },
-        { id: "C", text: "It describes the working conditions of the treaders whose skill the earlier sentences praise." },
-        { id: "D", text: "It offers evidence that the water-powered mills turned out cloth of noticeably lower quality than the older method of treading in troughs had produced." }
-      ],
-      correctAnswer: "A",
-      explanation: "**Choice A is correct.** The underlined sentence introduces the water-powered hammers, and the sentence right after it uses that change to explain why the cloth trade moved out of the old towns and into the hills.\n\n**The Full Solution:**\n- How to spot it: read the underlined sentence by itself, then read the sentence that follows it and ask what the two do together.\n- On its own, the underlined sentence reports a new machine: a water wheel lifting and dropping wooden hammers so a stream does the pounding.\n- The next sentence draws the consequence: the fast streams ran in the hills, so the trade drifted away from the towns whose weavers had controlled it.\n- So the underlined sentence supplies the change that the ending then links to the move, which is what A says.\n\n**Why the other choices are wrong:**\n- B: The sentence describes a machine, not the chemistry of how fibers mat together.\n- C: The treaders' work is described in the EARLIER sentence, not in the underlined one, and it is called exhausting rather than praised.\n- D: The passage never compares the quality of mill-finished and hand-trodden cloth."
-    },
-    {
-      id: 862,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "craft-and-structure",
-      skill: "cross-text-connections",
-      passages: [
+      "id": 862,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "craft-and-structure",
+      "skill": "cross-text-connections",
+      "passages": [
         {
-          label: "Text 1",
-          text: "Seagrass meadows shelter young fish and hold loose sediment in place, and many of them have thinned or disappeared over the past century. One restoration group works by gathering seeds from healthy meadows in late spring and broadcasting them by the million across bare seabed in a sheltered bay whose water has stayed clear since local farms cut their runoff decades ago. Where the group has sown steadily for several years, a thin scatter of shoots has filled in to become continuous meadow. The group argues that the main obstacle to recovery is simply a shortage of seed reaching bare ground."
+          "label": "Text 1",
+          "text": "Economics teachers sometimes assign a lemonade stand as a first lesson in pricing. One class ran a stand outside a busy community center on four consecutive Saturdays, charging a different price each week. Sales climbed steadily as the price came down, and at the lowest price the stand sold out before noon. The students concluded that price is the main lever a small stand controls: set it low enough, they argued, and nearly any stand will sell its pitchers dry."
         },
         {
-          label: "Text 2",
-          text: "A second team, reviewing replanting projects that failed, reports that sown plots take hold only where the water is clear enough for light to reach the bottom. In bays that still receive heavy runoff from farms and lawns, the extra nutrients feed clouds of algae that dim the water, and seedlings there die within a single season no matter how heavily the plot is sown. The team concludes that a bay's water has to be cleaned up before seeding is worth attempting at all."
+          "label": "Text 2",
+          "text": "Two researchers studying children's roadside stands recorded prices, locations, and sales at dozens of stands across one county. Foot traffic overwhelmed every other factor: stands on busy corners sold several times more than stands on quiet streets no matter what either charged, and on streets with few passersby, cups offered for pennies went unsold. The researchers concluded that where a stand sits matters far more than what it charges."
         }
       ],
-      question: "Based on the texts, how would the team in Text 2 most likely respond to the claim made by the restoration group in Text 1?",
-      choices: [
-        { id: "A", text: "The team would insist that seagrass meadows always recover on their own once they are left undisturbed, so that no seeding program of any kind is ever justified." },
-        { id: "B", text: "Citing the timing of the collection, it would argue that seeds gathered in late spring are the wrong ones to use and that a harvest taken in autumn would have produced meadow far sooner." },
-        { id: "C", text: "It would agree that a shortage of seed is the main obstacle in every bay and urge the group to sow even more heavily than it already does." },
-        { id: "D", text: "By noting that the group sowed in a bay whose water is already clear, it would caution that where runoff clouds the water, no amount of seed will bring a meadow back." }
+      "question": "Based on the texts, how would the researchers in Text 2 most likely respond to the conclusion presented in Text 1?",
+      "choices": [
+        { "id": "A", "text": "They would insist that a stand's sales cannot be increased by any decision its operators make, since customers act on their own reasons." },
+        { "id": "B", "text": "They would argue that the class should have raised its price from week to week instead of lowering it, since a higher price signals better lemonade." },
+        { "id": "C", "text": "They would agree that price is the main lever for any stand and recommend charging even less than the class did." },
+        { "id": "D", "text": "They would note that the class sold from one busy spot and caution that on an empty street a low price by itself moves few cups." }
       ],
-      correctAnswer: "D",
-      explanation: "**Choice D is correct.** Text 1 credits the group's success to sowing enough seed, but Text 2 finds that sown plots survive only in clear water, and the bay in Text 1 happens to be clear, so the natural response is to point out that limit.\n\n**The Full Solution:**\n- How to spot it: for a how-would-one-respond question, pin down each text's main claim first, then look for the detail in Text 1 that the second team would seize on.\n- Text 1's claim: the main obstacle is a shortage of seed, and heavy sowing turned bare seabed into meadow.\n- The detail: that success came in a sheltered bay \"whose water has stayed clear since local farms cut their runoff decades ago.\"\n- Text 2's finding: in bays dimmed by algae from runoff, seedlings die \"no matter how heavily the plot is sown.\"\n- So the second team would accept the result but limit it to clear-water bays, which is what D says.\n\n**Why the other choices are wrong:**\n- A: Text 2 does not reject seeding; it says the water must be cleaned up first, then seeding is worth doing.\n- B: Neither text raises the timing of seed collection.\n- C: This has the second team agreeing that seed supply is the whole problem, the opposite of its finding about water clarity."
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** Text 1's class drew its conclusion from a single stand at a busy community center, and Text 2 finds that on quiet streets sales stay low \"no matter what either charged,\" so the researchers would point out that limit.\n\n**The Full Solution:**\n- How to spot it: for a how-would-they-respond question, pin down each text's main claim first, then look for the detail in Text 1 that the other side would seize on.\n- Text 1's claim: price is the main lever, since sales climbed each week as the class charged less.\n- The detail: every one of those Saturdays was sold at the same busy community-center location.\n- Text 2's finding: location dominates, and on streets with few passersby, even cups offered for pennies went unsold.\n- So the researchers would accept the class's numbers but credit its location, which is what D says.\n\n**Why the other choices are wrong:**\n- A: Text 2 does not say operators are helpless; it says the choice of spot matters most, and a spot is something an operator picks.\n- B: Neither text suggests raising prices or says a higher price signals better lemonade.\n- C: This has the researchers agreeing that price rules, the opposite of their conclusion."
     },
     {
-      id: 863,
-      type: "multiple-choice",
-      difficulty: "easy",
-      band: 2,
-      domain: "information-and-ideas",
-      skill: "central-ideas-and-details",
-      passage: "Saffron is the dried red stigma of a crocus flower, and every flower holds exactly three. The blooms open for only a few days in autumn and have to be picked at dawn, before the sun wilts them, with the threads pulled out by hand the same day. Tens of thousands of flowers go into a single pound of the spice. Saffron is costly, then, not because the crocus itself is rare but because so much hand labor produces so small a harvest.",
-      question: "Which choice best states the main idea of the text?",
-      choices: [
-        { id: "A", text: "The saffron crocus grows only in a narrow range of climates and is hard to cultivate anywhere else." },
-        { id: "B", text: "Saffron picked at dawn has a noticeably stronger flavor than saffron gathered later in the day." },
-        { id: "C", text: "Saffron is expensive mainly because collecting it takes a great deal of hand labor for a very small yield." },
-        { id: "D", text: "Saffron is the dried red stigma of a crocus flower, and each flower on the plant produces exactly three of them." }
+      "id": 860,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "craft-and-structure",
+      "skill": "text-structure-and-purpose",
+      "passage": "Snow shoveled straight into a wall slumps under its own weight, because freshly fallen crystals barely touch one another. Packing changes that: pressing the snow shatters the crystals' points, and the broken fragments refreeze into a network of tiny ice bridges that stiffens over several hours. Builders of snow forts learn to work around the delay. They pack snow into buckets or bins, tip the blocks out in rows, and leave the wall alone overnight; by morning the bridges have locked the blocks into a single mass hard enough to carve.",
+      "question": "Which choice best describes the overall structure of the text?",
+      "choices": [
+        { "id": "A", "text": "It recounts the building of one particular snow fort from the season's first heavy snowfall to the warm afternoon it finally melted." },
+        { "id": "B", "text": "It lists the tools a builder needs and then ranks them from the most useful to the least." },
+        { "id": "C", "text": "It explains why loose snow makes a weak wall, describes how packing hardens it, and then shows how builders time their work around that hardening." },
+        { "id": "D", "text": "It argues that walls of packed snow are so much stronger than walls of stacked ice that builders should give up cutting ice blocks for their forts entirely." }
       ],
-      correctAnswer: "C",
-      explanation: "**Choice C is correct.** The passage stacks up details about the picking, all by hand, at dawn, tens of thousands of flowers per pound, and then states the point directly: saffron is costly because of the labor, not because the plant is rare.\n\n**The Full Solution:**\n- How to spot it: for a main-idea question, look for the sentence that draws everything together. It is often the last one.\n- The last sentence says saffron is costly \"not because the crocus itself is rare but because so much hand labor produces so small a harvest.\"\n- Every earlier detail supports that: three threads per flower, a few days of bloom, dawn picking by hand, tens of thousands of flowers per pound.\n- So the main idea is the labor-to-yield explanation of the price, which is what C states.\n\n**Why the other choices are wrong:**\n- A: The passage says the crocus is NOT rare, and it never discusses climate.\n- B: Dawn picking is about beating the sun, not about flavor, which the passage never mentions.\n- D: This is a true supporting detail, but it leaves out the point the whole passage builds toward."
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** The passage explains why loose snow fails, describes how packing hardens it over hours, and ends with how builders arrange their work around that delay.\n\n**The Full Solution:**\n- How to spot it: label what each part of the passage DOES, then read the labels back in order.\n- Why loose snow fails: freshly fallen crystals barely touch, so a shoveled wall slumps.\n- How packing works: pressing shatters the crystal points, and the fragments refreeze into tiny ice bridges that stiffen for hours.\n- How builders use it: pack blocks, set them in rows, and let the wall lock up overnight. Reason, process, application, exactly what C says.\n\n**Why the other choices are wrong:**\n- A: No single fort's story is told from snowfall to melt.\n- B: The passage never lists tools, let alone ranks them.\n- D: Walls of stacked ice are never mentioned, so no comparison is being argued."
     },
     {
-      id: 864,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "information-and-ideas",
-      skill: "central-ideas-and-details",
-      passage: "In the fourteenth century, raw wool was the most valuable thing England sold abroad, and the crown made the trade easy to watch. Merchants shipping wool out of the country had to bring it through a single appointed port, where officials weighed every sack and collected a duty before the wool could cross to the weaving towns of Flanders. Kings borrowed against the duties they expected to collect in order to pay for war, and Parliament discovered that it could grant those duties or withhold them. A trade in fleece thus became one of the instruments by which the crown was financed and, in time, held in check.",
-      question: "Which choice best states the main idea of the text?",
-      choices: [
-        { id: "A", text: "By routing wool exports through one taxed port, the English crown turned the wool trade into a source of revenue that also gave Parliament leverage over it." },
-        { id: "B", text: "English wool of the fourteenth century was of noticeably higher quality than the wool produced in Flanders." },
-        { id: "C", text: "Merchants preferred to ship raw fleece abroad rather than weave it into cloth at home, since raw wool sold for more." },
-        { id: "D", text: "Fourteenth-century kings paid for their wars mainly by borrowing from the great foreign banking houses of the day rather than by drawing on the duties collected from trade." }
+      "id": 859,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "craft-and-structure",
+      "skill": "text-structure-and-purpose",
+      "passage": "In nineteenth-century mining camps high in the Sierra Nevada, winter closed the wagon roads for months at a time, yet the mail still had to move. Post offices in snowbound camps were served by carriers who crossed the passes on long wooden skis, the mailbag strapped high on their backs. The trips took days each way, and the carriers read the snow as they went, resting while the midday surface softened and pushing on once the crust froze hard enough to hold them.",
+      "question": "Which choice best states the main purpose of the text?",
+      "choices": [
+        { "id": "A", "text": "To explain the training that modern postal workers receive before they are assigned to mountain routes." },
+        { "id": "B", "text": "To describe how mail was carried to snowbound mountain settlements after winter closed the roads." },
+        { "id": "C", "text": "To argue that the government should have built winter roads to the mining camps sooner than it did." },
+        { "id": "D", "text": "To compare the speed of mail delivery in the mountains with the speed of delivery on flat ground." }
       ],
-      correctAnswer: "A",
-      explanation: "**Choice A is correct.** The passage explains that funneling wool through one port made the trade taxable, that kings borrowed against those taxes, and that Parliament could grant or refuse them, so the trade both funded the crown and gave Parliament a hold on it.\n\n**The Full Solution:**\n- How to spot it: for a main-idea question, ask what point the whole passage builds toward, and check the last sentence, which often names it.\n- The setup: all exported wool had to pass through one appointed port, where it was weighed and taxed.\n- The consequence: kings borrowed against the expected duties to pay for war.\n- The turn: Parliament could grant those duties or withhold them.\n- The last sentence names the point, that the wool trade became an instrument by which the crown was \"financed and, in time, held in check,\" which is what A states.\n\n**Why the other choices are wrong:**\n- B: The passage never compares English and Flemish wool quality.\n- C: Why merchants shipped raw fleece instead of weaving it is never discussed.\n- D: This reverses the passage, which says the crown borrowed against its own trade duties."
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The passage sets up a problem, roads closed by snow while the mail still had to move, and then describes the solution at work: carriers crossing the passes on skis.\n\n**The Full Solution:**\n- How to spot it: for a main-purpose question, ask what job the whole passage is doing, then check your answer against the beginning AND the end.\n- The opening states the problem: wagon roads closed for months, yet the mail still had to move.\n- The middle gives the answer: carriers on long wooden skis serving the snowbound camps.\n- The last sentence stays on the same subject, how the carriers actually made the trips, so the passage exists to describe the winter mail service, which is what B says.\n\n**Why the other choices are wrong:**\n- A: The passage is about the nineteenth century, and no modern training program is mentioned.\n- C: The passage never argues that roads should have been built sooner.\n- D: No comparison with delivery on flat ground appears anywhere in the text."
     },
     {
-      id: 865,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "information-and-ideas",
-      skill: "central-ideas-and-details",
-      passage: "Most meteorites are picked up long after they land, weathered by years on the ground and cut off from any record of their arrival. A growing network of automatic cameras is meant to change that. Aimed at the night sky from stations set hundreds of miles apart, the cameras catch the same fireball from several angles at once, and the overlapping tracks let researchers work out both the orbit the rock followed before it reached us and the small patch of ground where the surviving pieces should have come down. A team can then reach the fall within days, before rain has begun to leach the stone.",
-      question: "According to the text, what is one advantage of recording a single fireball from several camera stations at once?",
-      choices: [
-        { id: "A", text: "It allows researchers to photograph the meteorite while it is still in orbit around the sun." },
-        { id: "B", text: "It lets researchers work out the rock's earlier orbit and the small area where its pieces came down." },
-        { id: "C", text: "It removes the need for anyone to travel to the place where the pieces landed." },
-        { id: "D", text: "It shows in advance which of the incoming rocks will survive the passage through the atmosphere and reach the ground." }
+      "id": 861,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "craft-and-structure",
+      "skill": "text-structure-and-purpose",
+      "passage": "Through most of the nineteenth century, a pencil was pointed with whatever small blade happened to be at hand, slowly and one shaving at a time. __Late in the century, manufacturers began mounting crank-driven sharpeners on classroom walls: a pair of spiral cutters spun around the pencil's tip and produced a fresh point in seconds.__ Teachers no longer had to keep a drawer of pocketknives or repair the broken points of forty students at a stretch, and the wall-mounted machine soon became a standard classroom fixture.",
+      "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+      "choices": [
+        { "id": "A", "text": "It introduces the mechanical development that the final sentence then connects to the device's adoption in classrooms." },
+        { "id": "B", "text": "It explains why teachers preferred that students bring pencils to school already pointed." },
+        { "id": "C", "text": "It describes the skill with which students of the period handled their pocketknives." },
+        { "id": "D", "text": "It offers evidence that cranked sharpeners wasted far more of each pencil than careful whittling with a pocketknife ever had." }
       ],
-      correctAnswer: "B",
-      explanation: "**Choice B is correct.** The passage says the overlapping tracks from several stations let researchers work out both \"the orbit the rock followed before it reached us\" and \"the small patch of ground where the surviving pieces should have come down.\"\n\n**The Full Solution:**\n- How to spot it: for an \"according to the text\" question, the answer has to be stated in the passage, so find the sentence that matches the question's words.\n- The question asks about recording one fireball from several stations, which points you to the sentence about cameras \"hundreds of miles apart\" catching \"the same fireball from several angles.\"\n- That sentence names two results: the rock's earlier orbit and the small landing area.\n- B repeats both of them, so B is it.\n\n**Why the other choices are wrong:**\n- A: The cameras photograph the fireball in the atmosphere; nothing is photographed out in orbit.\n- C: The passage says the opposite, that a team can now REACH the fall within days.\n- D: The cameras track rocks that have already arrived, and the passage never says which ones will survive the descent."
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** The underlined sentence introduces the crank-driven wall sharpener, and the final sentence explains what followed from it: the machine became a standard classroom fixture.\n\n**The Full Solution:**\n- How to spot it: read the underlined sentence by itself, then read the sentence that follows it and ask what the two do together.\n- On its own, the underlined sentence reports a new machine: spiral cutters, turned by a crank, that point a pencil in seconds.\n- The final sentence draws the consequence: no more drawer of pocketknives, no more broken points to repair, and the device becomes standard.\n- So the underlined sentence supplies the development that the ending ties to the sharpener's spread, which is what A says.\n\n**Why the other choices are wrong:**\n- B: The passage never mentions pencils arriving at school already pointed.\n- C: The earlier sentence describes slow work with whatever blade was at hand; no one's skill is praised.\n- D: The passage never compares how much pencil each method wasted."
+    },
+    // ============================================================
+    // Q9-Q16: Information and Ideas
+    // ============================================================
+    {
+      "id": 865,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "central-ideas-and-details",
+      "passage": "On many commuter ferries, bicycles board across the same ramp as foot passengers and are parked in racks bolted just inside the vehicle deck. Operators put the racks there for a practical reason: cyclists roll on before the cars are loaded and roll off before the cars are released, so bicycles never have to thread between moving vehicles on the deck. The racks also hold each frame upright against the wakes of passing ships, which can tilt a moored ferry without warning.",
+      "question": "According to the text, why do ferry operators place bicycle racks just inside the vehicle deck?",
+      "choices": [
+        { "id": "A", "text": "The racks keep the bicycles where foot passengers can watch them during the crossing." },
+        { "id": "B", "text": "The location lets cyclists board before the cars are loaded and leave before the cars are released." },
+        { "id": "C", "text": "The spot leaves more room on the upper decks for passengers who want to sit outside." },
+        { "id": "D", "text": "The racks protect the bicycles from the wakes of passing ships, which can suddenly tilt a moored ferry." }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The passage states the reason directly: cyclists \"roll on before the cars are loaded and roll off before the cars are released,\" so bicycles never cross paths with moving vehicles.\n\n**The Full Solution:**\n- How to spot it: for an \"according to the text\" question, the answer has to be stated in the passage, so find the sentence that matches the question's words.\n- The question asks why the racks sit just inside the vehicle deck, which points to the sentence beginning \"Operators put the racks there for a practical reason.\"\n- That sentence says cyclists board before the cars and leave before them, keeping bicycles clear of moving vehicles.\n- B repeats that stated reason, so B is it.\n\n**Why the other choices are wrong:**\n- A: Foot passengers watching the bicycles is never mentioned.\n- C: Room on the upper decks never comes up in the passage.\n- D: The racks do steady the frames against wakes, but the passage gives that as something the racks do, not as the reason for where they are placed."
     },
     {
-      id: 866,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "information-and-ideas",
-      skill: "command-of-evidence-textual",
-      passage: "A young songbird memorizes an adult's song months before it can sing anything like it, and researchers have asked what guides the long practice that follows. One team proposed that the bird improves by listening to itself: each attempt is measured against the remembered model, and the mismatch tells the bird what to adjust next. *The team's hypothesis is that a young bird has to hear its own voice in order to bring its practice song into line with the model it memorized earlier.*",
-      question: "Which finding, if true, would most strongly support the team's hypothesis?",
-      choices: [
-        { id: "A", text: "Young birds raised where they never hear an adult of their species still produce a rough, simplified song of their own." },
-        { id: "B", text: "Adult males of most songbird species sing far more often during the breeding season than at other times of year." },
-        { id: "C", text: "Young birds exposed to several different adult singers tend to memorize the song of the adult they see most often." },
-        { id: "D", text: "Young birds that memorized an adult's song normally but lost their hearing before the practice period never matched the model, while birds that kept their hearing did." }
+      "id": 866,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "command-of-evidence-textual",
+      "passage": "Why does a skipped stone sometimes carry across a dozen bounces and sometimes sink at the first? One research group filmed stones striking the water and noticed that the longest runs began with a strong flick of the wrist. *The group's hypothesis is that rapid spin, rather than sheer speed, is what keeps a stone from tipping over when it strikes the surface.*",
+      "question": "Which finding, if true, would most strongly support the group's hypothesis?",
+      "choices": [
+        { "id": "A", "text": "Stones thrown by experienced skippers travel faster on average than stones thrown by beginners." },
+        { "id": "B", "text": "Stones with flat, even bottoms skip more readily than stones with rounded or uneven ones." },
+        { "id": "C", "text": "A stone's bounces grow shorter and lower as its run across the water continues." },
+        { "id": "D", "text": "Stones launched at identical speeds skipped repeatedly when spun rapidly but flipped and sank when given almost no spin." }
       ],
-      correctAnswer: "D",
-      explanation: "**Choice D is correct.** The hypothesis is that a bird needs to hear ITSELF in order to match the model, so the strongest support compares birds that can hear their own practice with birds that cannot.\n\n**The Full Solution:**\n- How to spot it: restate the claim, then ask what comparison would test it. The claim has two parts: the bird memorized the model, and it needs to hear its own voice to reach it.\n- The right test keeps the memorizing the same and takes away only the hearing.\n- D does exactly that: both groups memorized normally, but only the birds that kept their hearing matched the model.\n- Since removing self-hearing is what blocks the match, the finding lines up with the hypothesis.\n\n**Why the other choices are wrong:**\n- A: These birds never memorized a model at all, so the finding tests something else entirely and says nothing about hearing one's own voice.\n- B: How often adults sing across the year has nothing to do with how a young bird learns.\n- C: Choosing WHICH adult to copy is about picking the model, not about hearing yourself while practicing."
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** The hypothesis separates spin from speed, so the strongest support holds speed constant and varies only the spin, which is exactly the test in D.\n\n**The Full Solution:**\n- How to spot it: restate the claim, then ask what comparison would test it. The claim says spin, not speed, keeps the stone from tipping.\n- The right test keeps speed the same for every stone and changes only how fast each one spins.\n- D reports that test: at identical speeds, rapidly spun stones skipped again and again while barely spun ones flipped and sank.\n- Since the only difference between the stones was spin, the finding ties the tipping directly to it, just as the hypothesis predicts.\n\n**Why the other choices are wrong:**\n- A: Faster throws by experienced skippers mix speed and spin together, so the finding cannot separate the two.\n- B: The shape of a stone's bottom is a different variable and says nothing about spin versus speed.\n- C: How a run winds down describes every skipped stone and compares nothing, so it cannot favor spin over speed."
     },
     {
-      id: 867,
-      type: "multiple-choice",
-      difficulty: "easy",
-      band: 2,
-      domain: "information-and-ideas",
-      skill: "command-of-evidence-quantitative",
-      passage: "Fresh concrete does not reach its full strength the moment it is poured. As the cement reacts with water, crystals grow and interlock, and the mixture goes on hardening for weeks. Builders usually quote the twenty-eight-day strength of a mix as its rated value. A student studying the test results below concludes that a concrete mix keeps gaining strength well after its first week of curing, because _______",
-      question: "Which choice most effectively uses data from the table to support the claim?",
-      choices: [
-        { id: "A", text: "the mix measured 21 megapascals at 7 days and had risen to 32 megapascals at 28 days." },
-        { id: "B", text: "the mix measured 12 megapascals at 3 days, the lowest value shown in the table." },
-        { id: "C", text: "the mix gained 9 megapascals between the 3-day test and the 7-day test." },
-        { id: "D", text: "the mix was tested at four separate points in time, from 3 days after pouring to 28 days." }
+      "id": 870,
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "band": 4,
+      "domain": "information-and-ideas",
+      "skill": "inferences",
+      "passage": "At street-painting festivals, artists work in chalk pastels on the pavement itself, and organizers long assumed that the drawings' short lives are set by the material: soft pastel, the thinking went, simply cannot hold color outdoors. Festival records complicate that view. On plazas paved with smooth polished granite, drawings blur after a single night's dew, while drawings made with the same pastels, by the same artists, on rough broomed concrete stay legible through several rainstorms. Taken together, these records suggest that how long a street painting lasts is best understood as ____",
+      "question": "Which choice most logically completes the text?",
+      "choices": [
+        { "id": "A", "text": "proof that festival drawings can be preserved indefinitely if they are sheltered from rain." },
+        { "id": "B", "text": "a property of the surface that holds the pigment rather than of the pigment itself." },
+        { "id": "C", "text": "a sign that artists who work on granite are less careful than artists who work on concrete." },
+        { "id": "D", "text": "the result of festival rules that require every drawing to be washed away when the event closes." }
       ],
-      correctAnswer: "A",
-      explanation: "**Choice A is correct.** The claim is about strength still rising AFTER the first week, so the support has to compare a measurement at or after 7 days with a later one, which is exactly what A does.\n\n**The Full Solution:**\n- How to spot it: underline the key words in the claim. Here they are \"keeps gaining strength\" and \"after its first week.\"\n- That means you need two numbers from day 7 or later, with the later one bigger.\n- The table gives 21 megapascals at 7 days and 32 megapascals at 28 days.\n- A cites both, and 32 is greater than 21, so the mix did keep gaining strength after week one.\n\n**Why the other choices are wrong:**\n- B: One value from day 3 shows no change at all, and day 3 is inside the first week.\n- C: This gain happens entirely within the first week, so it cannot show what happened afterward.\n- D: How many times the mix was tested says nothing about whether the strength went up.",
-      questionTable: {
-        type: "table",
-        caption: "Compressive strength of one concrete mix during curing",
-        headers: [
-          "Days after pouring",
-          "Compressive strength (megapascals)"
-        ],
-        rows: [
-          ["3", "12"],
-          ["7", "21"],
-          ["14", "27"],
-          ["28", "32"]
-        ]
-      }
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The same pastels in the same hands last one night on polished granite and weeks on rough concrete, so what varies is the pavement, and the lasting must be the surface's doing.\n\n**The Full Solution:**\n- How to spot it: when a passage lays two cases side by side, find what DIFFERS between them and what CHANGES with it.\n- Case one: smooth polished granite, and the drawings blur after a single night's dew.\n- Case two: rough broomed concrete, and the drawings survive several rainstorms.\n- The pastels, the artists, and the weather are the same; only the surface differs, so how long a painting lasts is a property of the surface rather than of the pigment, which is what B says.\n\n**Why the other choices are wrong:**\n- A: Dew alone ruins the granite drawings, so shelter from rain would not preserve anything indefinitely.\n- C: The same artists appear in both cases, so carelessness cannot be the difference.\n- D: No festival rule about washing drawings away is mentioned in the passage."
     },
     {
-      id: 868,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "information-and-ideas",
-      skill: "command-of-evidence-quantitative",
-      passage: "Photojournalism contests routinely disqualify entries whose image files show more retouching than the rules allow. As the number of entries has climbed, the raw count of disqualifications has climbed as well, and some commentators have taken that rising count as a sign that manipulation is spreading among working photographers. A researcher reviewing one contest's published figures argues that the count by itself is misleading, because _______",
-      question: "Which choice most effectively uses data from the table to support the claim?",
-      choices: [
-        { id: "A", text: "the number of entries disqualified rose from 40 in 2013 to 60 in 2021." },
-        { id: "B", text: "the contest received 10,000 entries in 2021, more than twice the 4,000 it received in 2013." },
-        { id: "C", text: "although disqualifications rose from 40 to 60, the share of entries disqualified fell from 1.0 percent in 2013 to 0.6 percent in 2021." },
-        { id: "D", text: "the contest disqualified 48 entries in 2017, more than the 40 it disqualified in 2013." }
+      "id": 864,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "central-ideas-and-details",
+      "passage": "When automobiles began crowding American streets in the 1920s, the walk to school turned newly dangerous, and cities looked for a guard they could post at every corner. The answer came from the schools themselves. Older students, wearing white belts that crossed the chest, were stationed at crossings to hold classmates back at the curb until the street was clear. The program cost districts almost nothing, gave the patrol members a visible responsibility, and spread within a decade from a handful of cities to schools across the country.",
+      "question": "Which choice best states the main idea of the text?",
+      "choices": [
+        { "id": "A", "text": "School safety patrols arose as a low-cost answer to growing automobile traffic and quickly spread nationwide." },
+        { "id": "B", "text": "Cities of the 1920s hired professional traffic officers to guard every crossing near a school." },
+        { "id": "C", "text": "The white belts worn by patrol members were designed to be visible to drivers at night." },
+        { "id": "D", "text": "Students of the 1920s usually walked to school in large groups so that passing drivers could see them more easily." }
       ],
-      correctAnswer: "C",
-      explanation: "**Choice C is correct.** The researcher says the raw count misleads, so the support has to set the rising count against the falling share of entries disqualified, and only C reports both.\n\n**The Full Solution:**\n- How to spot it: when a claim says a count is \"misleading,\" the answer almost always converts counts into a share or rate.\n- Work the two ends of the table: 40 out of 4,000 entries in 2013 is 1.0 percent, and 60 out of 10,000 entries in 2021 is 0.6 percent.\n- So the number of disqualified photos went up while the fraction of entries disqualified went down.\n- C states both halves, which is what shows the raw count on its own to be misleading.\n\n**Why the other choices are wrong:**\n- A: Citing only the rising count repeats the very number the researcher calls misleading.\n- B: The growth in entries alone leaves out disqualifications, so it proves nothing about the rate.\n- D: Comparing two disqualification counts still ignores how many entries each was drawn from.",
-      questionTable: {
-        type: "table",
-        caption: "Entries and disqualifications at one photojournalism contest",
-        headers: [
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** The passage presents the patrols as the answer to a 1920s problem, dangerous automobile traffic near schools, and closes with why the idea traveled: it cost almost nothing and worked at every corner.\n\n**The Full Solution:**\n- How to spot it: for a main-idea question, ask what point the whole passage builds toward, and check the last sentence, which often names it.\n- The setup: cars crowd the streets, and cities need a guard at every crossing.\n- The solution: older students in white crossed belts hold classmates at the curb until the street is clear.\n- The last sentence names the outcome: nearly free to run, the program spread within a decade to schools across the country, which is what A states.\n\n**Why the other choices are wrong:**\n- B: The passage says the guards were the schools' own older students, not hired professionals.\n- C: The white belts are described, but nothing is said about nighttime visibility or their design.\n- D: Walking to school in groups is never mentioned in the passage."
+    },
+    {
+      "id": 867,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "information-and-ideas",
+      "skill": "command-of-evidence-quantitative",
+      "passage": "In the late 1930s, many city school districts began selling milk to students at a subsidized price, and some cut the price further as outside funding grew. A student reviewing one district's records concludes that lowering the price brought milk to far more students, because _______",
+      "question": "Which choice most effectively uses data from the table to support the claim?",
+      "choices": [
+        { "id": "A", "text": "the district served 340 half-pints a day in 1938, when a half-pint cost 3 cents, and 890 a day in 1940, after the price fell to 1 cent." },
+        { "id": "B", "text": "the district's daily total rose from 310 half-pints in 1936 to 340 in 1938, while the price stayed at 3 cents." },
+        { "id": "C", "text": "the price of a half-pint in 1942 was 1 cent, the lowest price shown in the table." },
+        { "id": "D", "text": "the district's milk service was measured at four separate points between 1936 and 1942." }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** The claim links the price cut to a jump in students served, so the support has to compare service before the cut with service after it, which is exactly what A does.\n\n**The Full Solution:**\n- How to spot it: underline the key words in the claim. Here they are \"lowering the price\" and \"far more students.\"\n- That means you need one number from the 3-cent years and one from the 1-cent years, with the later one much bigger.\n- The table gives 340 half-pints a day in 1938, at 3 cents, and 890 a day in 1940, at 1 cent.\n- A cites both, and 890 is well over twice 340, so the jump lines up with the price cut just as the claim says.\n\n**Why the other choices are wrong:**\n- B: Both of those years sit at the same 3-cent price, so the comparison says nothing about what lowering the price did.\n- C: One value from 1942 shows no change at all; a single number cannot show growth.\n- D: How many times the service was measured says nothing about whether it grew.",
+      "questionTable": {
+        "type": "table",
+        "caption": "Milk service in one city school district",
+        "headers": [
           "Year",
-          "Entries submitted",
-          "Entries disqualified"
+          "Price per half-pint (cents)",
+          "Half-pints served daily"
         ],
-        rows: [
-          ["2013", "4,000", "40"],
-          ["2017", "6,000", "48"],
-          ["2021", "10,000", "60"]
+        "rows": [
+          ["1936", "3", "310"],
+          ["1938", "3", "340"],
+          ["1940", "1", "890"],
+          ["1942", "1", "950"]
         ]
       }
     },
     {
-      id: 869,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "information-and-ideas",
-      skill: "inferences",
-      passage: "A living oyster reef is not a smooth bank but a rough, uneven wall of shell standing up from the bottom. Waves running in from open water break against that roughness and lose much of their force before they reach the shore behind it. Where reefs were dredged away a century ago, the marsh grass behind them has retreated year after year as unbroken waves cut into the bank. Coastal managers rebuilding these reefs report that the retreat slows once the wall of shell is tall enough to meet the incoming waves. Their results suggest that a rebuilt oyster reef will protect a shoreline as long as ____",
-      question: "Which choice most logically completes the text?",
-      choices: [
-        { id: "A", text: "the reef is stocked with oysters bred to grow faster than wild ones do." },
-        { id: "B", text: "the marsh grass behind it is replanted at the same time the shell is laid down." },
-        { id: "C", text: "the reef is set in water deep enough that passing waves never touch it." },
-        { id: "D", text: "it stands high enough that arriving waves break against it instead of passing over it." }
+      "id": 863,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "information-and-ideas",
+      "skill": "central-ideas-and-details",
+      "passage": "Beach glass begins as trash: bottles and jars discarded near the shore, broken up by the surf, and tumbled smooth over decades. Collectors prize the frosted fragments, yet many report that good pieces grow harder to find each year. The reason lies onshore. Drinks now come mainly in plastic and aluminum, and the glass that is still used is far more likely to be recycled than thrown away. With less new glass entering the water, the supply of future beach glass is quietly running out.",
+      "question": "Which choice best states the main idea of the text?",
+      "choices": [
+        { "id": "A", "text": "Collectors disagree about which colors of beach glass are the most valuable to find." },
+        { "id": "B", "text": "The surf can tumble a broken bottle into a smooth fragment within a few seasons." },
+        { "id": "C", "text": "Beach glass is growing scarcer because less discarded glass now enters the sea." },
+        { "id": "D", "text": "Plastic and aluminum containers keep drinks fresher during shipping than glass bottles did." }
       ],
-      correctAnswer: "D",
-      explanation: "**Choice D is correct.** The passage says waves lose their force by breaking against the reef's rough wall, and that the shoreline retreat slows once the shell is \"tall enough to meet the incoming waves,\" so the protection depends on the reef's height.\n\n**The Full Solution:**\n- How to spot it: to finish a \"their results suggest\" sentence, find the condition the passage says makes the effect happen, and restate it.\n- The mechanism: waves break against the rough wall of shell and lose much of their force before reaching shore.\n- The evidence: where reefs were removed, the marsh kept retreating under unbroken waves.\n- The condition: the retreat slows once the wall is tall enough to meet the waves. So the reef works as long as it is high enough for waves to break on it, which is what D says.\n\n**Why the other choices are wrong:**\n- A: How fast the oysters grow is never raised; only the height of the shell wall is.\n- B: Replanting marsh grass is never mentioned as part of the rebuilding.\n- C: A reef the waves never touch could not break them, which is the opposite of the mechanism described."
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** The passage reports that collectors find fewer good pieces each year and traces the cause to shore: less glass is thrown away now, so less future beach glass is being made.\n\n**The Full Solution:**\n- How to spot it: for a main-idea question, look for the sentence that draws everything together. It is often the last one.\n- The last sentence says that \"with less new glass entering the water, the supply of future beach glass is quietly running out.\"\n- Every earlier detail feeds that point: beach glass begins as discarded bottles, collectors report scarcer finds, and drinks now come in plastic and aluminum.\n- So the main idea is the shrinking supply and its onshore cause, which is what C states.\n\n**Why the other choices are wrong:**\n- A: The passage never discusses colors or which ones collectors value.\n- B: The passage says the tumbling takes decades, not a few seasons.\n- D: How well each container keeps drinks fresh is never discussed."
     },
     {
-      id: 870,
-      type: "multiple-choice",
-      difficulty: "hard",
-      band: 4,
-      domain: "information-and-ideas",
-      skill: "inferences",
-      passage: "In several songbird species, the clusters of brain cells that control singing are not fixed in size. In many birds of temperate regions the clusters swell each spring, when males sing almost constantly to hold a territory, and shrink again once the breeding season ends and the singing falls off. Researchers examining tropical relatives that hold a territory and sing all year round have found that in those birds the same clusters stay near full size in every month. Taken together, the two patterns imply that the seasonal swelling and shrinking seen in temperate species is best understood as ____",
-      question: "Which choice most logically completes the text?",
-      choices: [
-        { id: "A", text: "an unavoidable effect of aging that shows up in every songbird as the years pass." },
-        { id: "B", text: "a response to how much the bird is actually singing rather than a fixed feature of songbird brains." },
-        { id: "C", text: "evidence that tropical songbirds learn their songs considerably faster than temperate ones do." },
-        { id: "D", text: "a change confined to species in which males and females sing the very same song." }
+      "id": 868,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "command-of-evidence-quantitative",
+      "passage": "Municipal pools station lifeguards through the swimming season, and every assisted swimmer is logged as a rescue. As one city's pools drew bigger crowds, the yearly count of rescues climbed, and a local columnist cited the climb as proof that the pools were becoming more dangerous. A researcher examining the city's own attendance figures argues that the raw count gives a false impression, because _______",
+      "question": "Which choice most effectively uses data from the table to support the claim?",
+      "choices": [
+        { "id": "A", "text": "the yearly count of rescues rose across the period shown, from 20 in 2013 to 28 in 2017 and then to 30 in 2021." },
+        { "id": "B", "text": "the pools drew 100,000 swimmers in 2021, two and a half times the 40,000 they had drawn in 2013." },
+        { "id": "C", "text": "although rescues rose from 20 to 30, the number of rescues for every 10,000 swimmers fell from 5 in 2013 to 3 in 2021." },
+        { "id": "D", "text": "the pools recorded 28 rescues in 2017, more than the 20 they had recorded in 2013." }
       ],
-      correctAnswer: "B",
-      explanation: "**Choice B is correct.** The clusters grow and shrink in birds whose singing rises and falls with the seasons, but stay large in relatives that sing all year, so the size tracks how much the bird sings rather than being built in.\n\n**The Full Solution:**\n- How to spot it: when a passage lays two cases side by side, find what DIFFERS between them and what CHANGES with it.\n- Temperate case: singing is heavy in spring and drops afterward, and the song clusters swell and then shrink to match.\n- Tropical case: the birds sing year-round, and the clusters stay near full size every month.\n- The one thing that differs is how much the bird sings, and the cluster size follows it. So the swelling and shrinking is a response to singing, not a fixed trait of songbird brains, which is what B says.\n\n**Why the other choices are wrong:**\n- A: Aging cannot explain it, since the temperate clusters shrink and then swell again the next spring, and the tropical birds show no such cycle.\n- C: How fast the two groups learn their songs is never measured or mentioned.\n- D: Which sex sings never comes up in the passage."
-    },
-    {
-      id: 871,
-      type: "multiple-choice",
-      difficulty: "easy",
-      band: 2,
-      domain: "standard-english-conventions",
-      skill: "boundaries",
-      passage: "Long before railways, drovers walked flocks of sheep hundreds of miles to market along wide green tracks kept clear for that ______ some of these old drove roads survive today as public footpaths.",
-      question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
-      choices: [
-        { id: "A", text: "purpose. Some" },
-        { id: "B", text: "purpose, some" },
-        { id: "C", text: "purpose some" },
-        { id: "D", text: "purpose and some" }
-      ],
-      correctAnswer: "A",
-      explanation: "**Choice A is correct.** Each side of the blank could stand alone as its own sentence, so the two need a full stop between them: \"...kept clear for that purpose. Some of these old drove roads survive today....\"\n\n**The Full Solution:**\n- How to spot it: cover the blank and test each side. If both sides are complete sentences, they cannot be glued together with only a comma or with nothing at all.\n- Side 1: \"drovers walked flocks of sheep hundreds of miles to market along wide green tracks kept clear for that purpose\" is a complete sentence.\n- Side 2: \"some of these old drove roads survive today as public footpaths\" is also a complete sentence.\n- A period ends the first and starts the second, so A is right.\n\n**Why the other choices are wrong:**\n- B: A comma alone between two complete sentences is a comma splice.\n- C: With no punctuation at all, the two sentences run together.\n- D: When \"and\" joins two complete sentences, it needs a comma in front of it, and there is none here."
-    },
-    {
-      id: 872,
-      type: "multiple-choice",
-      difficulty: "easy",
-      band: 2,
-      domain: "standard-english-conventions",
-      skill: "form-structure-and-sense",
-      passage: "In a flying trapeze act, the catcher hangs upside down from a second bar and swings in time with the flyer. The timing of the two swings ______ the whole trick: if the catcher's hands arrive even a fraction of a second late, there is nothing for the flyer to hold.",
-      question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
-      choices: [
-        { id: "A", text: "determine" },
-        { id: "B", text: "have determined" },
-        { id: "C", text: "determines" },
-        { id: "D", text: "are determining" }
-      ],
-      correctAnswer: "C",
-      explanation: "**Choice C is correct.** The subject of the blank is the singular \"The timing,\" not the plural \"swings\" sitting next to the blank, so the singular verb \"determines\" is correct.\n\n**The Full Solution:**\n- How to spot it: find the true subject by crossing out the of-phrase. \"The timing of the two swings\" becomes \"The timing,\" which is singular.\n- A singular subject takes a singular verb, so you want \"determines.\"\n- Read it back: \"The timing...determines the whole trick.\" That matches.\n\n**Why the other choices are wrong:**\n- A: \"determine\" is the plural form and would need a plural subject.\n- B: \"have determined\" is also plural and does not agree with \"The timing.\"\n- D: \"are determining\" is plural as well, so it does not agree either."
-    },
-    {
-      id: 873,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "standard-english-conventions",
-      skill: "boundaries",
-      passage: "The largest stone in the museum's meteorite hall—a mass of iron and nickel hauled off an Arctic shore by a nineteenth-century expedition ______ weighs more than thirty tons and rests on pillars sunk into the building's foundation.",
-      question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
-      choices: [
-        { id: "A", text: "expedition," },
-        { id: "B", text: "expedition;" },
-        { id: "C", text: "expedition" },
-        { id: "D", text: "expedition—" }
-      ],
-      correctAnswer: "D",
-      explanation: "**Choice D is correct.** The extra description is opened with a dash after \"hall,\" so it has to be closed with a matching dash before the sentence goes on to \"weighs more than thirty tons.\"\n\n**The Full Solution:**\n- How to spot it: when extra information is set off in the middle of a sentence, whatever mark opens it must also close it. Look back for the opening mark before you choose.\n- The opening mark here is the dash right after \"meteorite hall.\"\n- The extra information is \"a mass of iron and nickel hauled off an Arctic shore by a nineteenth-century expedition.\"\n- So the matching dash closes it, and the main sentence continues: \"The largest stone...weighs more than thirty tons.\"\n\n**Why the other choices are wrong:**\n- A: A comma cannot close a description that a dash opened; the marks have to match.\n- B: A semicolon separates complete sentences, and what comes before it here is not one.\n- C: With no closing mark at all, the extra description runs straight into the verb."
-    },
-    {
-      id: 874,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "standard-english-conventions",
-      skill: "form-structure-and-sense",
-      passage: "Cast flat on a factory floor, cured under controlled heat, and trucked to the site on a schedule set weeks in advance, the wall panels of a precast concrete building ______ into place in a matter of days, often while the ground floor is still being finished.",
-      question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
-      choices: [
-        { id: "A", text: "to rise" },
-        { id: "B", text: "rise" },
-        { id: "C", text: "rising" },
-        { id: "D", text: "having risen" }
-      ],
-      correctAnswer: "B",
-      explanation: "**Choice B is correct.** After the long opening description, the subject \"the wall panels of a precast concrete building\" still has no real action word, and only the tensed \"rise\" supplies one.\n\n**The Full Solution:**\n- How to spot it: every complete sentence needs a real, tensed action word. Forms like \"to rise,\" \"rising,\" and \"having risen\" cannot serve as the main verb and leave you with a fragment.\n- The sentence opens with a long describing phrase: \"Cast flat on a factory floor, cured under controlled heat, and trucked to the site....\"\n- The subject is \"the wall panels of a precast concrete building.\"\n- That subject needs a tensed verb, and \"rise\" gives it one: \"the wall panels...rise into place in a matter of days.\"\n\n**Why the other choices are wrong:**\n- A: \"to rise\" is not tensed, so the sentence is left without a main verb.\n- C: \"rising\" is an -ing form, which also cannot be the main verb on its own.\n- D: \"having risen\" is likewise untensed, so the fragment remains."
-    },
-    {
-      id: 875,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "standard-english-conventions",
-      skill: "boundaries",
-      passage: "Because the tangled prop roots of a mangrove slow the water moving among them and give small fish a place to hide from larger ______ a stand of mangroves along a tropical coast shelters far more young fish than an equal stretch of open shoreline.",
-      question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
-      choices: [
-        { id: "A", text: "ones," },
-        { id: "B", text: "ones" },
-        { id: "C", text: "ones;" },
-        { id: "D", text: "ones:" }
-      ],
-      correctAnswer: "A",
-      explanation: "**Choice A is correct.** The sentence opens with a lead-in that starts with \"Because,\" which cannot stand on its own, so a comma sets it off before the main sentence begins.\n\n**The Full Solution:**\n- How to spot it: when a sentence starts with because, although, when, or since, that opening chunk is incomplete and gets a comma before the real sentence starts.\n- Test it: \"Because the tangled prop roots...give small fish a place to hide from larger ones\" cannot stand alone.\n- The main sentence follows: \"a stand of mangroves along a tropical coast shelters far more young fish than an equal stretch of open shoreline.\"\n- A single comma joins the lead-in to that main sentence.\n\n**Why the other choices are wrong:**\n- B: With no mark at all, the lead-in runs straight into the main sentence.\n- C: A semicolon needs a complete sentence on both sides, and the \"Because\" chunk is not one.\n- D: A colon announces an explanation or a list, which is not the job being done here."
-    },
-    {
-      id: 876,
-      type: "multiple-choice",
-      difficulty: "hard",
-      band: 4,
-      domain: "standard-english-conventions",
-      skill: "form-structure-and-sense",
-      passage: "In several sparrow species the song a male sings differs from valley to valley, and a bird raised in one valley keeps its local pattern for life. This patchwork of neighboring dialects, along with the sharp boundaries at which the patterns change, ______ long puzzled the biologists who map them.",
-      question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
-      choices: [
-        { id: "A", text: "have" },
-        { id: "B", text: "having" },
-        { id: "C", text: "has" },
-        { id: "D", text: "having had" }
-      ],
-      correctAnswer: "C",
-      explanation: "**Choice C is correct.** The subject is the singular \"This patchwork,\" and an \"along with\" phrase does not make a singular subject plural, so the singular \"has\" is correct.\n\n**The Full Solution:**\n- How to spot it: cross out everything between the subject and the verb, then check what is left. Phrases beginning with along with, as well as, or in addition to never change the subject's number.\n- Crossing out \"along with the sharp boundaries at which the patterns change\" leaves \"This patchwork...long puzzled the biologists.\"\n- \"This patchwork\" is singular, so it takes the singular \"has.\"\n- Read it back: \"This patchwork of neighboring dialects...has long puzzled the biologists who map them.\"\n\n**Why the other choices are wrong:**\n- A: \"have\" is plural and is pulled in by the nearby plural words \"dialects\" and \"boundaries,\" neither of which is the subject.\n- B: \"having\" is not a tensed verb, so the sentence would have no main verb.\n- D: \"having had\" is likewise untensed and leaves a fragment."
-    },
-    {
-      id: 877,
-      type: "multiple-choice",
-      difficulty: "easy",
-      band: 2,
-      domain: "expression-of-ideas",
-      skill: "transitions",
-      passage: "Tons of cosmic dust drift down onto the Earth every day, but nearly all of it lands where it can never be told apart from ordinary grit. A few collectors have begun sifting the debris that gathers in the gutters of flat city roofs, drawing out the magnetic grains with a strong magnet and checking each one under a microscope. ______ tiny glassy spheres melted by their passage through the atmosphere have now been recovered from rooftops in the middle of large cities.",
-      question: "Which choice completes the text with the most logical transition?",
-      choices: [
-        { id: "A", text: "Nevertheless," },
-        { id: "B", text: "As a result," },
-        { id: "C", text: "For example," },
-        { id: "D", text: "Earlier," }
-      ],
-      correctAnswer: "B",
-      explanation: "**Choice B is correct.** The last sentence reports what the sifting turned up, so the transition has to signal an outcome: \"As a result.\"\n\n**The Full Solution:**\n- How to spot it: read the sentence before the blank and the sentence after it, then ask whether the second one FOLLOWS FROM the first, gives an example of it, or pushes against it.\n- Before the blank: collectors sift rooftop debris, pull out magnetic grains with a magnet, and check each one under a microscope.\n- After the blank: tiny melted spheres have now been recovered from city rooftops.\n- Finding the spheres is what came OUT of that sifting, so an outcome word fits, and \"As a result\" means \"and so.\"\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" signals a contrast, but the finding follows from the searching rather than opposing it.\n- C: \"For example\" would make the recovered spheres an instance of the searching method, when they are its result.\n- D: \"Earlier\" puts the recovery before the searching, which reverses the order."
-    },
-    {
-      id: 878,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "expression-of-ideas",
-      skill: "transitions",
-      passage: "The great traveling circuses of the nineteenth century filled three rings at once, and a spectator in a tent seating four thousand could not follow any single act closely. Abundance was the point: something astonishing was always happening somewhere. ______ the companies that reshaped the circus from the 1970s onward brought the audience back down to a single ring, dropped the animal acts, and built each evening around one story told by a small troupe.",
-      question: "Which choice completes the text with the most logical transition?",
-      choices: [
-        { id: "A", text: "Likewise," },
-        { id: "B", text: "Therefore," },
-        { id: "C", text: "In addition," },
-        { id: "D", text: "By contrast," }
-      ],
-      correctAnswer: "D",
-      explanation: "**Choice D is correct.** The passage sets a huge three-ring show against a later circus built on a single ring and one story, and the transition has to mark that opposition: \"By contrast.\"\n\n**The Full Solution:**\n- How to spot it: line up what each side of the blank describes and check whether they match or clash.\n- Before the blank: three rings at once, four thousand seats, and abundance as the whole point.\n- After the blank: one ring, no animal acts, a small troupe, and one story.\n- Those are opposites, and a word signaling opposition is needed, which \"By contrast\" supplies.\n\n**Why the other choices are wrong:**\n- A: \"Likewise\" says the second case matches the first, but it reverses it.\n- B: \"Therefore\" marks a result, and the passage does not say the three-ring show caused the later change.\n- C: \"In addition\" adds one more like item, but the later circus is not more of the same."
-    },
-    {
-      id: 879,
-      type: "multiple-choice",
-      difficulty: "hard",
-      band: 4,
-      domain: "expression-of-ideas",
-      skill: "transitions",
-      passage: "True cinnamon is the inner bark of a small tree, and harvesting it destroys nothing: the harvester cuts the season's shoots, scrapes off the rough outer layer, and peels away the thin inner bark, which curls into quills as it dries. The stump that is left sends up new shoots within a year. ______ the work resists machinery, since judging how deeply to cut without scoring the wood beneath takes years to learn, and a grove that yields for decades still depends on hands trained one at a time.",
-      question: "Which choice completes the text with the most logical transition?",
-      choices: [
-        { id: "A", text: "Even so," },
-        { id: "B", text: "As a result," },
-        { id: "C", text: "Similarly," },
-        { id: "D", text: "For instance," }
-      ],
-      correctAnswer: "A",
-      explanation: "**Choice A is correct.** The passage first makes the harvest sound gentle and self-renewing, then turns to a difficulty, that the work cannot be mechanized, so the transition has to concede that turn: \"Even so.\"\n\n**The Full Solution:**\n- How to spot it: name the tone of each side of the blank. If one side is favorable and the other names a catch, you need a contrast or concession word.\n- Before the blank: harvesting destroys nothing, and the stump sends up new shoots within a year, an easy, renewable picture.\n- After the blank: the work resists machinery and depends on hands trained one at a time, a real limitation.\n- \"Even so\" grants the favorable picture and then introduces the catch, which is exactly the turn the passage makes.\n\n**Why the other choices are wrong:**\n- B: \"As a result\" would mean the difficulty is CAUSED by the regrowth, and the passage draws no such cause.\n- C: \"Similarly\" claims the two points match, but the second one complicates the first.\n- D: \"For instance\" would make the difficulty an example of the regrowth, and it is not."
-    },
-    {
-      id: 880,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "expression-of-ideas",
-      skill: "rhetorical-synthesis",
-      question: "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-      choices: [
-        { id: "A", text: "The wool churches have tall towers, wide windows, and carved timber roofs of a kind rarely found in country parishes." },
-        { id: "B", text: "In the late Middle Ages, several districts of eastern England grew rich on wool and on the cloth woven from it." },
-        { id: "C", text: "Known as wool churches, these grand buildings were paid for by merchants who had grown rich on the late-medieval wool trade, and they still tower over villages that have never held more than a few hundred people." },
-        { id: "D", text: "The wool trade in these districts fell away after the sixteenth century, and the villages around the churches never grew any larger." }
-      ],
-      correctAnswer: "C",
-      explanation: "**Choice C is correct.** The goal is to explain why the churches dwarf their villages, and C gives both halves of the explanation, the merchant wealth that paid for them and the small size of the villages they stand in.\n\n**The Full Solution:**\n- How to spot it: read the GOAL first and mark exactly what it asks for. Here it asks why the buildings are so much larger than the settlements around them.\n- An answer to that has to supply two things: where the money came from, and how small the villages are.\n- C names the buildings, credits the wool merchants who funded them, and adds that the villages have never held more than a few hundred people.\n- Cause plus comparison is exactly what the goal calls for.\n\n**Why the other choices are wrong:**\n- A: It describes the churches without saying why they are so large for their villages.\n- B: It gives the background wealth but never connects it to the buildings or the villages.\n- D: It explains why the villages stayed small but leaves out who paid for the churches.",
-      studentNotes: {
-        intro: "While researching a topic, a student has taken the following notes:",
-        bullets: [
-          "In the late Middle Ages, several districts of eastern England grew rich on wool and on the cloth woven from it.",
-          "Merchants and clothiers in those districts paid to rebuild their parish churches on a grand scale.",
-          "The rebuilt churches have tall towers, wide windows, and carved timber roofs.",
-          "Many of the villages around them have never held more than a few hundred people.",
-          "Local guidebooks call these buildings \"wool churches.\"",
-          "The wool trade in these districts fell away after the sixteenth century, and the villages never grew."
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** The researcher says the raw count misleads, so the support has to set the rising number of rescues against the falling rate per swimmer, and only C reports both.\n\n**The Full Solution:**\n- How to spot it: when a claim says a count is \"misleading,\" the answer almost always converts counts into a share or rate.\n- Work the two ends of the table: 20 rescues among 40,000 swimmers in 2013 is 5 per 10,000, and 30 rescues among 100,000 swimmers in 2021 is 3 per 10,000.\n- So rescues went up while the chance that any one swimmer needed rescuing went down.\n- C states both halves, which is what shows the raw count on its own to be misleading.\n\n**Why the other choices are wrong:**\n- A: Citing only the rising count repeats the very number the researcher calls misleading.\n- B: Attendance alone leaves out rescues, so it proves nothing about the rate.\n- D: Comparing two rescue counts still ignores how many swimmers each was drawn from.",
+      "questionTable": {
+        "type": "table",
+        "caption": "Attendance and rescues at one city's outdoor pools",
+        "headers": [
+          "Year",
+          "Season attendance",
+          "Rescues"
         ],
-        goal: "The student wants to explain to an audience unfamiliar with these buildings why the churches are so much larger than the villages around them."
+        "rows": [
+          ["2013", "40,000", "20"],
+          ["2017", "70,000", "28"],
+          ["2021", "100,000", "30"]
+        ]
       }
     },
     {
-      id: 881,
-      type: "multiple-choice",
-      difficulty: "medium",
-      band: 3,
-      domain: "expression-of-ideas",
-      skill: "rhetorical-synthesis",
-      question: "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-      choices: [
-        { id: "A", text: "Making ordinary cement means heating limestone to about 1,450 degrees Celsius, a process that burns fuel and drives carbon dioxide out of the rock itself." },
-        { id: "B", text: "Blends that replace part of the cement with calcined clay, which is fired at a much lower temperature, can cut the carbon dioxide released per ton by about a third." },
-        { id: "C", text: "Cement production alone accounts for roughly 8 percent of the carbon dioxide emissions released across the world." },
-        { id: "D", text: "Blends of limestone and calcined clay are already being produced commercially in several different countries." }
+      "id": 869,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "information-and-ideas",
+      "skill": "inferences",
+      "passage": "Plans for a birdhouse always specify the width of the entrance hole, and the number is not decorative. A hole an inch and an eighth across admits house wrens but turns away the larger house sparrows that would otherwise claim the box; widen the hole by a quarter inch and the sparrows move in, and starlings follow at anything much wider. Since the rest of the box matters far less to the birds than the doorway does, a builder hoping to host one particular species should expect success as long as ____",
+      "question": "Which choice most logically completes the text?",
+      "choices": [
+        { "id": "A", "text": "the box is painted in colors that match the trees on which it is mounted." },
+        { "id": "B", "text": "a feeder stocked with that species' preferred seed hangs within sight of the box." },
+        { "id": "C", "text": "the box is built from the same kind of wood the species chooses for its nesting sites in the wild." },
+        { "id": "D", "text": "the hole admits the species it wants while shutting out the larger birds that would displace it." }
       ],
-      correctAnswer: "B",
-      explanation: "**Choice B is correct.** The goal is to emphasize how large the reduction is, and B is the only choice that reports the size of the cut, about a third of the carbon dioxide per ton.\n\n**The Full Solution:**\n- How to spot it: read the GOAL first and find the one word that pins it down. Here it is \"size of the reduction.\"\n- That means the answer must contain a number or measure of how much the emissions drop.\n- B names the blend, says the clay is fired at a much lower temperature, and gives the reduction: about a third per ton.\n- Naming the change and measuring it is exactly what the goal asks for.\n\n**Why the other choices are wrong:**\n- A: It explains why ordinary cement is carbon-heavy but never gives any reduction.\n- C: It measures the size of the PROBLEM rather than the size of the cut.\n- D: It reports where the blends are made, which says nothing about how much they reduce.",
-      studentNotes: {
-        intro: "While researching a topic, a student has taken the following notes:",
-        bullets: [
-          "Making ordinary cement requires heating limestone to about 1,450 degrees Celsius.",
-          "The heating burns fuel, and the chemical change itself drives carbon dioxide out of the limestone.",
-          "Cement production accounts for roughly 8 percent of the world's carbon dioxide emissions.",
-          "One approach replaces part of the cement with calcined clay, which is fired at a much lower temperature.",
-          "Blends of limestone and calcined clay can cut the carbon dioxide released per ton by about a third.",
-          "These blends are already produced commercially in several countries."
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** The passage says the doorway is what decides which birds can use a box, wrens at one width, sparrows a quarter inch wider, starlings beyond that, so success comes down to sizing the hole.\n\n**The Full Solution:**\n- How to spot it: to finish a \"should expect success as long as\" sentence, find the condition the passage says produces the result, and restate it.\n- The mechanism: the hole's width admits some species and turns others away.\n- The evidence: an inch and an eighth suits wrens, a quarter inch more lets sparrows move in, and starlings follow at anything much wider.\n- The passage adds that the rest of the box matters far less than the doorway, so the condition is a hole sized for the wanted bird and against the larger ones, which is what D says.\n\n**Why the other choices are wrong:**\n- A: Paint color is never mentioned, and the passage says the rest of the box matters little.\n- B: Feeders and seed never come up in the passage.\n- C: The kind of wood is exactly the sort of detail the passage says matters far less than the doorway."
+    },
+    // ============================================================
+    // Q17-Q22: Standard English Conventions
+    // ============================================================
+    {
+      "id": 872,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "standard-english-conventions",
+      "skill": "form-structure-and-sense",
+      "passage": "A tree swing is a pendulum, and it obeys a pendulum's one strict rule. The length of the ropes ______ how long each pass through the air takes: shorten the ropes and the swing quickens; lengthen them and it slows, no matter who sits on the board.",
+      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "choices": [
+        { "id": "A", "text": "decide" },
+        { "id": "B", "text": "have decided" },
+        { "id": "C", "text": "decides" },
+        { "id": "D", "text": "are deciding" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** The subject of the blank is the singular \"The length,\" not the plural \"ropes\" sitting next to the blank, so the singular verb \"decides\" is correct.\n\n**The Full Solution:**\n- How to spot it: find the true subject by crossing out the of-phrase. \"The length of the ropes\" becomes \"The length,\" which is singular.\n- A singular subject takes a singular verb, so you want \"decides.\"\n- Read it back: \"The length of the ropes...decides how long each pass through the air takes.\" That matches.\n\n**Why the other choices are wrong:**\n- A: \"decide\" is the plural form and would need a plural subject.\n- B: \"have decided\" is also plural and does not go with \"The length.\"\n- D: \"are deciding\" is plural as well, so it does not fit either."
+    },
+    {
+      "id": 876,
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "band": 4,
+      "domain": "standard-english-conventions",
+      "skill": "form-structure-and-sense",
+      "passage": "A nest box is a plain object, but its dimensions are anything but casual. The width of the entrance hole, along with the depth of the chamber beneath it, ______ which species will ever settle inside, so builders' plans give both figures to the eighth of an inch.",
+      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "choices": [
+        { "id": "A", "text": "govern" },
+        { "id": "B", "text": "governing" },
+        { "id": "C", "text": "governs" },
+        { "id": "D", "text": "have governed" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** The subject is the singular \"The width,\" and an \"along with\" phrase does not make a singular subject plural, so the singular \"governs\" is correct.\n\n**The Full Solution:**\n- How to spot it: cross out everything between the subject and the blank, then check what is left. Phrases beginning with along with, as well as, or together with never change the subject's number.\n- Crossing out \"along with the depth of the chamber beneath it\" leaves \"The width of the entrance hole ______ which species will ever settle inside.\"\n- \"The width\" is singular, so it takes the singular \"governs.\"\n- Read it back: \"The width of the entrance hole...governs which species will ever settle inside.\"\n\n**Why the other choices are wrong:**\n- A: \"govern\" is plural; it treats the width and the depth as a joined pair, but an \"along with\" phrase is an aside, not part of the subject.\n- B: \"governing\" cannot act as the sentence's working verb, so nothing would carry the statement.\n- D: \"have governed\" is plural as well, so it does not fit the singular subject."
+    },
+    {
+      "id": 871,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "standard-english-conventions",
+      "skill": "boundaries",
+      "passage": "The first popular wall-mounted pencil sharpeners held a disk of sandpaper rather than a set of ______ a student turned the crank and ground the pencil to a point against the spinning grit.",
+      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "choices": [
+        { "id": "A", "text": "blades. A" },
+        { "id": "B", "text": "blades, a" },
+        { "id": "C", "text": "blades a" },
+        { "id": "D", "text": "blades and a" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** Each side of the blank could stand alone as its own sentence, so the two need a full stop between them: \"...rather than a set of blades. A student turned the crank....\"\n\n**The Full Solution:**\n- How to spot it: cover the blank and test each side. If both sides are complete sentences, they cannot be glued together with only a comma or with nothing at all.\n- Side 1: \"The first popular wall-mounted pencil sharpeners held a disk of sandpaper rather than a set of blades\" is a complete sentence.\n- Side 2: \"a student turned the crank and ground the pencil to a point against the spinning grit\" is also a complete sentence.\n- A period ends the first and starts the second, so A is right.\n\n**Why the other choices are wrong:**\n- B: A comma alone between two complete sentences is a comma splice.\n- C: With no punctuation at all, the two sentences run together.\n- D: When \"and\" joins two complete sentences, it needs a comma in front of it, and there is none here."
+    },
+    {
+      "id": 875,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "standard-english-conventions",
+      "skill": "boundaries",
+      "passage": "Because a window box holds only a few inches of soil and hangs where the sun strikes it from morning until ______ the plants inside it can wilt in a single hot afternoon.",
+      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "choices": [
+        { "id": "A", "text": "evening," },
+        { "id": "B", "text": "evening" },
+        { "id": "C", "text": "evening;" },
+        { "id": "D", "text": "evening:" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** The sentence opens with a lead-in that starts with \"Because,\" which cannot stand on its own, so a comma sets it off before the main sentence begins.\n\n**The Full Solution:**\n- How to spot it: when a sentence starts with because, although, when, or since, that opening chunk is incomplete and gets a comma before the real sentence starts.\n- Test it: \"Because a window box holds only a few inches of soil and hangs where the sun strikes it from morning until evening\" cannot stand alone.\n- The main sentence follows: \"the plants inside it can wilt in a single hot afternoon.\"\n- A single comma joins the lead-in to that main sentence.\n\n**Why the other choices are wrong:**\n- B: With no mark at all, the lead-in runs straight into the main sentence.\n- C: A semicolon needs a complete sentence on both sides, and the \"Because\" chunk is not one.\n- D: A colon announces an explanation or a list, which is not the job being done here."
+    },
+    {
+      "id": 874,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "standard-english-conventions",
+      "skill": "form-structure-and-sense",
+      "passage": "Chosen for their patience, trained to read the pace of oncoming cars, and posted at the same corner every morning for years at a stretch, the crossing guards of a mid-century school district ______ a small ceremony out of the walk to school, greeting each child by name while holding back the traffic.",
+      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "choices": [
+        { "id": "A", "text": "to make" },
+        { "id": "B", "text": "made" },
+        { "id": "C", "text": "making" },
+        { "id": "D", "text": "having made" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** After the long opening description, the subject \"the crossing guards of a mid-century school district\" still has no real action word, and only the tensed \"made\" supplies one.\n\n**The Full Solution:**\n- How to spot it: every complete sentence needs a real, tensed action word. Forms like \"to make,\" \"making,\" and \"having made\" cannot do that job and leave you with a fragment.\n- The sentence opens with a long describing stretch: \"Chosen for their patience, trained to read the pace of oncoming cars, and posted at the same corner....\"\n- The subject is \"the crossing guards of a mid-century school district.\"\n- That subject needs a tensed action word, and \"made\" gives it one: \"the crossing guards...made a small ceremony out of the walk to school.\"\n\n**Why the other choices are wrong:**\n- A: \"to make\" is not tensed, so the sentence is left without a working action word.\n- C: \"making\" is an -ing word, which also cannot carry the sentence on its own.\n- D: \"having made\" is likewise untensed, so the fragment remains."
+    },
+    {
+      "id": 873,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "standard-english-conventions",
+      "skill": "boundaries",
+      "passage": "The load a winter mail carrier hauled over the passes—a canvas sack that often weighed more than sixty pounds at the start of a ______ rode high on the back, where it could not throw off a skier's balance on the long descents.",
+      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "choices": [
+        { "id": "A", "text": "trip," },
+        { "id": "B", "text": "trip;" },
+        { "id": "C", "text": "trip" },
+        { "id": "D", "text": "trip—" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** The extra description is opened with a dash after \"passes,\" so it has to be closed with a matching dash before the sentence goes on to \"rode high on the back.\"\n\n**The Full Solution:**\n- How to spot it: when extra information is set off in the middle of a sentence, whatever mark opens it must also close it. Look back for the opening mark before you choose.\n- The opening mark here is the dash right after \"over the passes.\"\n- The extra information is \"a canvas sack that often weighed more than sixty pounds at the start of a trip.\"\n- So the matching dash closes it, and the main sentence continues: \"The load...rode high on the back.\"\n\n**Why the other choices are wrong:**\n- A: A comma cannot close a description that a dash opened; the marks have to match.\n- B: A semicolon separates complete sentences, and what comes before it here is not one.\n- C: With no closing mark at all, the extra description runs straight into the verb."
+    },
+    // ============================================================
+    // Q23-Q27: Expression of Ideas
+    // ============================================================
+    {
+      "id": 877,
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "band": 2,
+      "domain": "expression-of-ideas",
+      "skill": "transitions",
+      "passage": "Two siblings who ran a lemonade stand on summer weekends kept a notebook of every day's sales. Looking back over a whole season, they noticed a pattern: the stand sold roughly twice as many cups on days when the town pool across the street was open as on days when it was closed. ______ the following summer, the siblings set up their stand only on days when the pool was open.",
+      "question": "Which choice completes the text with the most logical transition?",
+      "choices": [
+        { "id": "A", "text": "However," },
+        { "id": "B", "text": "Therefore," },
+        { "id": "C", "text": "For example," },
+        { "id": "D", "text": "Meanwhile," }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The last sentence reports what the siblings did because of the pattern they found, so the transition has to signal a conclusion drawn from evidence: \"Therefore.\"\n\n**The Full Solution:**\n- How to spot it: read the sentence before the blank and the sentence after it, then ask whether the second one FOLLOWS FROM the first, gives an example of it, or pushes against it.\n- Before the blank: a season of records shows the stand selling roughly twice as much on days the pool is open.\n- After the blank: the next summer, the siblings set up only on pool days.\n- The new schedule is what the pattern led them to do, so a conclusion word fits, and \"Therefore\" means \"for that reason.\"\n\n**Why the other choices are wrong:**\n- A: \"However\" signals a contrast, but the schedule follows from the pattern rather than opposing it.\n- C: \"For example\" would make the new schedule an instance of the pattern, when it is a response to it.\n- D: \"Meanwhile\" sets two things side by side in time, but the sentence is drawing a conclusion, not marking time."
+    },
+    {
+      "id": 879,
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "band": 4,
+      "domain": "expression-of-ideas",
+      "skill": "transitions",
+      "passage": "Putting bicycle racks on a commuter ferry costs an operator very little: a few lengths of pipe bolted to the bulkhead, a painted lane on the boarding ramp, and one more line in the crew's loading routine. Riders who pair a bicycle with the ferry also buy tickets year-round, in fair weather and foul. ______ many ferry lines resisted the racks for years, arguing that every foot of deck given over to bicycles was a foot taken from the cars that paid far more per crossing.",
+      "question": "Which choice completes the text with the most logical transition?",
+      "choices": [
+        { "id": "A", "text": "Even so," },
+        { "id": "B", "text": "As a result," },
+        { "id": "C", "text": "Likewise," },
+        { "id": "D", "text": "For instance," }
+      ],
+      "correctAnswer": "A",
+      "explanation": "**Choice A is correct.** The passage stacks up reasons the racks are an easy win, cheap to install and good for year-round ticket sales, then reports that many lines resisted anyway, so the transition has to concede that turn: \"Even so.\"\n\n**The Full Solution:**\n- How to spot it: name the tone of each side of the blank. If one side is favorable and the other names a catch, you need a contrast or concession word.\n- Before the blank: the racks cost almost nothing, and the riders they attract buy tickets in every season.\n- After the blank: many lines resisted for years, guarding deck space for the cars that paid more per crossing.\n- \"Even so\" grants the favorable case and then introduces the resistance, which is exactly the turn the passage makes.\n\n**Why the other choices are wrong:**\n- B: \"As a result\" would mean the low cost CAUSED the resistance, and the passage draws no such cause.\n- C: \"Likewise\" claims the two halves match, but the second one cuts against the first.\n- D: \"For instance\" would make the resistance an example of the racks' advantages, and it is not."
+    },
+    {
+      "id": 878,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "expression-of-ideas",
+      "skill": "transitions",
+      "passage": "As a timekeeper, the sundial asks for almost nothing: it has no works to wind, no parts to oil, and nothing to break in the cold. ______ it demands one thing a clock never does—the sun itself—and so it stands silent through every overcast day and all of every night.",
+      "question": "Which choice completes the text with the most logical transition?",
+      "choices": [
+        { "id": "A", "text": "Similarly," },
+        { "id": "B", "text": "As a result," },
+        { "id": "C", "text": "In fact," },
+        { "id": "D", "text": "However," }
+      ],
+      "correctAnswer": "D",
+      "explanation": "**Choice D is correct.** The passage first praises the sundial for asking nothing, then turns to the one thing it cannot do without, so the transition has to mark that turn: \"However.\"\n\n**The Full Solution:**\n- How to spot it: line up what each side of the blank describes and check whether they match or clash.\n- Before the blank: no winding, no oiling, nothing to break, a list of demands the sundial does not make.\n- After the blank: one demand a clock never makes, the sun itself, and silence on cloudy days and at night.\n- Praise followed by a drawback is a clash, and \"However\" is the word that signals it.\n\n**Why the other choices are wrong:**\n- A: \"Similarly\" says the second half matches the first, but it reverses it.\n- B: \"As a result\" would mean the drawback is caused by the low upkeep, and the passage draws no such cause.\n- C: \"In fact\" strengthens the point that came before, but the second half undercuts it instead."
+    },
+    {
+      "id": 880,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "expression-of-ideas",
+      "skill": "rhetorical-synthesis",
+      "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "choices": [
+        { "id": "A", "text": "Many garden sundials are sold as ornaments, and dials of bronze or stone can last outdoors for centuries." },
+        { "id": "B", "text": "Hobbyists who build their own sundials begin by looking up the latitude of their town." },
+        { "id": "C", "text": "Because a sundial reads correctly only when its gnomon is tilted to match its location's latitude, an ornament made for no place in particular often shows the wrong time." },
+        { "id": "D", "text": "A sundial tells time from the shadow that a fixed arm, called a gnomon, casts on a marked plate." }
+      ],
+      "correctAnswer": "C",
+      "explanation": "**Choice C is correct.** The goal is to explain why a store-bought sundial often reads wrong, and C gives both halves of the explanation, the latitude rule and the ornament that ignores it.\n\n**The Full Solution:**\n- How to spot it: read the GOAL first and mark exactly what it asks for. Here it asks why a store-bought garden sundial often shows the wrong time.\n- An answer to that has to supply two things: the rule a working dial must follow, and the way the ornament breaks it.\n- C states the rule, the gnomon's tilt must match the location's latitude, and the failure, an ornament made for no place in particular.\n- Rule plus violation is exactly the explanation the goal calls for.\n\n**Why the other choices are wrong:**\n- A: Being ornamental and lasting for centuries says nothing about why the time reads wrong.\n- B: What hobbyists look up hints at the answer but never states why the store-bought dial fails.\n- D: It describes how any sundial works without explaining why this kind shows the wrong time.",
+      "studentNotes": {
+        "intro": "While researching a topic, a student has taken the following notes:",
+        "bullets": [
+          "A sundial tells time from the shadow that a fixed arm, called a gnomon, casts on a marked plate.",
+          "A sundial reads correctly only when its gnomon is tilted to match the latitude of the place where it sits and aimed due north.",
+          "Many garden sundials are sold as ornaments, with a gnomon angle chosen for no place in particular.",
+          "Hobbyists who build their own dials begin by looking up the latitude of their town.",
+          "Dials of bronze or stone can last outdoors for centuries.",
+          "Public gardens sometimes display large dials whose hour lines were drawn for that exact spot."
         ],
-        goal: "The student wants to emphasize the size of the reduction that limestone-and-calcined-clay blends can achieve."
+        "goal": "The student wants to explain to an audience unfamiliar with sundials why a store-bought garden sundial often shows the wrong time."
+      }
+    },
+    {
+      "id": 881,
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "band": 3,
+      "domain": "expression-of-ideas",
+      "skill": "rhetorical-synthesis",
+      "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "choices": [
+        { "id": "A", "text": "A swing in steady use can put several times a rider's weight of downward force on the branch at the bottom of each pass." },
+        { "id": "B", "text": "Arborists recommend a living hardwood branch that is at least eight inches thick where the ropes attach." },
+        { "id": "C", "text": "Traditional tree swings hang from a single horizontal branch on two ropes or on chains." },
+        { "id": "D", "text": "Worn bark where the ropes attach is a sign that a swing should be moved to another branch." }
+      ],
+      "correctAnswer": "B",
+      "explanation": "**Choice B is correct.** The goal asks for the thickness a branch must have, and B is the only choice that states it: a living hardwood branch at least eight inches thick where the ropes attach.\n\n**The Full Solution:**\n- How to spot it: read the GOAL first and find the words that pin it down. Here they are \"how thick.\"\n- That means the answer must contain the measurement itself.\n- B names the kind of branch and gives the figure: at least eight inches thick where the ropes attach.\n- Naming the requirement and measuring it is exactly what the goal asks for.\n\n**Why the other choices are wrong:**\n- A: It measures the load a swing puts on a branch, not how thick the branch must be.\n- C: It describes how swings hang but includes no measurement at all.\n- D: It tells when to move a swing, which says nothing about thickness.",
+      "studentNotes": {
+        "intro": "While researching a topic, a student has taken the following notes:",
+        "bullets": [
+          "Traditional tree swings hang from a single horizontal branch on two ropes or chains.",
+          "Arborists recommend hanging a swing only from a living hardwood branch.",
+          "The branch should be at least eight inches thick where the ropes attach.",
+          "The ropes should attach several feet out from the trunk so that the swing hangs clear.",
+          "A swing in steady use can put several times a rider's weight on the branch at the bottom of each pass.",
+          "Worn bark at the attachment point is a sign that the ropes should be moved."
+        ],
+        "goal": "The student wants to specify how thick a branch must be to hold a swing safely."
       }
     }
   ]

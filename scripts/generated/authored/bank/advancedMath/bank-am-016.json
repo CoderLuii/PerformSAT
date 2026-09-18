@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-016",
+ "question": "A cheese-vat controller's error signal is modeled by $(3x-4)(x+m)$, where $m$ is a constant and $x$ is the temperature offset in degrees Celsius. The error signal is zero at two offsets whose product is $-8$. What is the value of $m$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$-6$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the given product -8 as the value of m",
+  "B": "sign slip: solves 4m/3 = -8 instead of -4m/3 = -8, giving -6",
+  "C": "drops the leading coefficient 3 and uses zeros 4 and -m, so -4m = -8 gives 2"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Product of Roots from Factors**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The zeros are $\\frac{4}{3}$ and $-m$, so their product is $-\\frac{4m}{3}=-8$, giving $m=6$.\n\n**The Full Solution:**\n\nStep 1: Set each factor to zero. From $3x-4=0$ the first offset is $x=\\frac{4}{3}$; from $x+m=0$ the second is $x=-m$.\n\nStep 2: Multiply the two zeros: $\\frac{4}{3}\\cdot(-m)=-\\frac{4m}{3}$.\n\nStep 3: Set that equal to the given product: $-\\frac{4m}{3}=-8$, so $4m=24$ and $m=6$. Check: the zeros are $\\frac{4}{3}$ and $-6$, and $\\frac{4}{3}\\cdot(-6)=-8$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-8$): copies the given product straight into the answer instead of solving for $m$.\n* Choice B ($-6$): loses the negative on $-m$ and solves $\\frac{4m}{3}=-8$.\n* Choice C ($2$): ignores the coefficient $3$, treating the zeros as $4$ and $-m$, so $-4m=-8$.\n\n**Test Day Takeaway:** Read the zeros off the factors before multiplying; a leading coefficient changes a zero, not just the sign."
+}

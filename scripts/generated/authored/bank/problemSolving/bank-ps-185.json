@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-185",
+  "question": "A print shop produced $4{,}250$ posters for an event. Of these posters, $72\\%$ were printed in color and the rest were printed in black and white. How many more posters were printed in color than in black and white?",
+  "correctAnswer": "1870",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**The correct answer is $1870$.**\n\n**The Fast Way (~15s):** Color is $72\\%$ and black and white is $28\\%$, a gap of $44\\%$. So the difference is $0.44 \\times 4250 = 1870$.\n\n**The Full Solution:**\nStep 1: Color posters: $0.72 \\times 4250 = 3060$.\nStep 2: Black-and-white posters are the rest: $4250 - 3060 = 1190$ (equivalently $0.28 \\times 4250$).\nStep 3: Difference: $3060 - 1190 = 1870$. Check: $1870 = 0.44 \\times 4250$, and $72\\% - 28\\% = 44\\%$. $\\checkmark$\n\n**Common Mistakes:** Stopping at $3060$, the number of color posters, instead of finding the difference; reporting $1190$, the number of black-and-white posters; or subtracting $72$ from $4250$ as though the percent were a count.\n\n**Test Day Takeaway:** When a question asks \"how many more,\" you can subtract the two percents first and take that single percent of the whole — one multiplication instead of two."
+}

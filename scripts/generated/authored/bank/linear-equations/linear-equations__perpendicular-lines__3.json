@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "Every line perpendicular to a conduit run has slope $-\\frac{3}{7}$, and the run itself contains the point $(21, 5)$ on a plan marked in feet. Which of the following is an equation of the conduit run?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = -\\frac{7}{3}x + 54$"
+    },
+    {
+      "id": "B",
+      "text": "$y = -\\frac{3}{7}x + 14$"
+    },
+    {
+      "id": "C",
+      "text": "$y = \\frac{3}{7}x - 4$"
+    },
+    {
+      "id": "D",
+      "text": "$y = \\frac{7}{3}x - 44$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverts the given slope but negates it a second time, giving -7/3",
+    "B": "reuses the given perpendicular slope for the run itself",
+    "C": "negates the given slope without inverting it, giving 3/7"
+  },
+  "correctAnswer": "D",
+  "hint": "Work backward from the perpendicular slope to the run's own slope.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~45s):** The run's slope is the negative reciprocal of $-\\frac{3}{7}$, namely $\\frac{7}{3}$, and $5 = \\frac{7}{3}(21) + b$ gives $b = -44$.\n\n**The Full Solution:**\nStep 1: If a perpendicular line has slope $-\\frac{3}{7}$, the conduit run's slope is the negative reciprocal: flip to $-\\frac{7}{3}$ and change the sign, giving $\\frac{7}{3}$.\nStep 2: Write $y = \\frac{7}{3}x + b$ and substitute $(21,\\ 5)$: $5 = \\frac{7}{3}(21) + b = 49 + b$.\nStep 3: Solving gives $b = -44$, so the run is $y = \\frac{7}{3}x - 44$.\n\nCheck: $\\frac{7}{3} \\times \\left(-\\frac{3}{7}\\right) = -1$, and at $x = 21$ the equation gives $49 - 44 = 5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (slope $-\\frac{7}{3}$): inverts the given slope but negates it a second time, so it is perpendicular to the wrong line.\n* Choice B (slope $-\\frac{3}{7}$): reuses the perpendicular slope for the run itself.\n* Choice C (slope $\\frac{3}{7}$): keeps the given fraction and only changes its sign, skipping the inversion.\n\n**Test Day Takeaway:** The negative-reciprocal relationship runs both directions, so you can invert from either line to the other."
+}

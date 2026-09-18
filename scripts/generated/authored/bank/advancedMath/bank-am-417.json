@@ -1,0 +1,56 @@
+{
+ "id": "bank-am-417",
+ "question": "The table gives the number of catalogued near-Earth asteroids $N$ recorded by a sky survey $t$ years after the survey began, and $N$ increases exponentially with $t$. Based on this model, the number of catalogued asteroids increases by $50\\%$ every how many months?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Years t",
+    "Catalogued asteroids N"
+   ],
+   "rows": [
+    [
+     "0",
+     "1,240"
+    ],
+    [
+     "2",
+     "1,860"
+    ],
+    [
+     "4",
+     "2,790"
+    ],
+    [
+     "6",
+     "4,185"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$36$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the 12 months of a year by the 2-year row spacing instead of multiplying, giving 6",
+  "B": "treats consecutive rows as one year apart and reports 12 months",
+  "D": "multiplies the growth factor 1.5 by 24 months to get 36"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Period of Exponential Growth — Months Interpretation**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Consecutive rows are $2$ years apart and each count is $1.5$ times the one above it, so the total grows by $50\\%$ every $2$ years, which is $24$ months.\n\n**The Full Solution:**\n\nStep 1: Divide consecutive counts: $1{,}860\\div1{,}240=1.5$, $2{,}790\\div1{,}860=1.5$, and $4{,}185\\div2{,}790=1.5$. The same factor appears each time, confirming exponential growth.\n\nStep 2: A factor of $1.5$ is an increase of $50\\%$, and each factor spans the $2$-year gap between consecutive rows.\n\nStep 3: Convert the period to months: $2\\times12=24$ months. Check: starting from $2{,}790$ and applying one more $50\\%$ increase gives $1.5\\times2{,}790=4{,}185$, exactly the entry $24$ months later.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($6$): divides $12$ by the $2$-year spacing instead of multiplying, giving $6$ months.\n* Choice B ($12$): reads consecutive rows as one year apart and reports $12$ months.\n* Choice D ($36$): multiplies the growth factor $1.5$ by $24$ months to get $36$.\n\n**Test Day Takeaway:** Get the growth factor from consecutive rows first, then convert the spacing between those rows into the units the question asks for."
+}

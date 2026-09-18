@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-358",
+ "question": "A cooling protocol requires that $-4t \\ge 52$, where $t$ is the hourly change in temperature, in degrees Celsius, of a reagent cabinet. Which inequality gives all possible values of $t$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$t \\le -13$"
+  },
+  {
+   "id": "B",
+   "text": "$t \\le 13$"
+  },
+  {
+   "id": "C",
+   "text": "$t \\ge -208$"
+  },
+  {
+   "id": "D",
+   "text": "$t \\ge -13$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "drops the negative sign of the -4 when dividing",
+  "C": "multiplies by -4 instead of dividing by it",
+  "D": "keeps the direction of the inequality after dividing by a negative number"
+ },
+ "explanation": "**SAT Pattern: One-Variable Linear Inequality**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Dividing by $-4$ reverses the inequality: $t \\le -13$.\n\n**The Full Solution:**\n\nStep 1: The inequality is $-4t \\ge 52$, and $t$ is multiplied by $-4$.\n\nStep 2: Divide both sides by $-4$. Dividing an inequality by a negative number reverses its direction.\n\nStep 3: $t \\le \\frac{52}{-4} = -13$. Check: $t = -13$ gives $-4(-13) = 52$, and $t = -20$ gives $80 \\ge 52$, while $t = 0$ gives $0 \\ge 52$, which is false.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($t \\le 13$): drops the negative sign of the $-4$ while still reversing the direction.\n* Choice C ($t \\ge -208$): multiplies $52$ by $-4$ instead of dividing by it.\n* Choice D ($t \\ge -13$): divides correctly but keeps the direction unchanged.\n\n**Test Day Takeaway:** Dividing or multiplying an inequality by a negative number flips the symbol; testing one value confirms the direction."
+}

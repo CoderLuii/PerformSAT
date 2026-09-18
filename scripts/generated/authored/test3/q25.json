@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "expression-of-ideas",
  "skill": "transitions",
+ "type": "multiple-choice",
+ "passage": "A pidgin arises when adults who share no common language improvise a stripped-down code for trade or work — a small vocabulary, little grammar, no native speakers. The children who grow up hearing that improvised code, however, do something their parents never did: they acquire it as a first language, and in acquiring it they expand it into a creole with fixed word order, verb marking, and the full expressive range of any human language. ______ the regularities of creole grammar are supplied by the children themselves, not inherited from the makeshift code their parents devised.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "As a result,"
+   "text": "Nevertheless,"
   },
   {
    "id": "B",
-   "text": "For example,"
+   "text": "By comparison,"
   },
   {
    "id": "C",
-   "text": "In contrast,"
+   "text": "For example,"
   },
   {
    "id": "D",
-   "text": "At the same time,"
+   "text": "In other words,"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D, \"At the same time,\". The passage first reads the charbagh layout symbolically, as an evocation of paradise described as a garden divided by four rivers. The sentence after the blank then gives a second, equally valid reading of the same design — that it was thoroughly practical, distributing scarce water and cooling the air. The two readings coexist rather than competing, so \"At the same time,\" is the right connector. \"As a result,\" would make the practical function a consequence of the symbolism; \"In contrast,\" would set the two readings against each other, though both hold true; and \"For example,\" would treat the practical reading as an instance of the symbolic one.",
+ "explanation": "**Choice D is correct.** The final sentence does not add a new fact; it restates the significance of the previous one — if children expand a nearly grammarless code into a full language, then the grammar must come from them. \"In other words\" is the transition that signals a restatement.\n\n**The Full Solution:**\n- The second sentence reports what happens: children acquire the pidgin and, in doing so, give it fixed word order and verb marking it never had.\n- The blank sentence says the same thing from the other direction — the grammar's source is the children, not the parents' code. Same content, sharpened phrasing: a restatement.\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" promises a concession-then-reversal, but the final sentence agrees entirely with what precedes it.\n- B: \"By comparison\" needs two things being measured against each other; the final sentence draws out one process's meaning rather than comparing two.\n- C: \"For example\" would require a specific instance of the general claim, but the final sentence is more general than the sentence before it, not more specific.",
  "_meta": {
-  "anchor": "Mughal charbagh garden design; symbolic and practical functions [theme: Mughal garden design]"
- },
- "passage": "The Mughal gardens of sixteenth- and seventeenth-century South Asia were laid out as a charbagh, a square divided into four quadrants by water channels meeting at the center. The design was partly symbolic, evoking descriptions of paradise as a garden divided by four rivers. ______ it was thoroughly practical: the raised walkways and sunken planting beds distributed scarce water evenly and cooled the air around the pavilions where the court gathered.",
- "type": "multiple-choice"
+  "anchor": "Pidgin-to-creole nativization — children as the source of grammar; restatement transition"
+ }
 }

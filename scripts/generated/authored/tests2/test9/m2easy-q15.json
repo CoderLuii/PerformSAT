@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "Two lighting trusses are hung perpendicular to each other over a stage. On the lighting plot, one truss lies along the line $3x - 12y = 24$. Which equation could describe the other truss?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -4x + 5$"
+  },
+  {
+   "id": "B",
+   "text": "$y = -\\dfrac{1}{4}x + 5$"
+  },
+  {
+   "id": "C",
+   "text": "$y = \\dfrac{1}{4}x + 5$"
+  },
+  {
+   "id": "D",
+   "text": "$y = 4x + 5$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "negates the slope 1/4 without taking the reciprocal",
+  "C": "keeps the slope 1/4, which is parallel to the first truss, not perpendicular",
+  "D": "takes the reciprocal 4 without negating it"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice A is correct.** The given truss has slope $\\tfrac{1}{4}$, so a perpendicular truss must have the negative reciprocal slope, $-4$.\n\n**The Fast Way (~20s):** Solve for $y$: $3x - 12y = 24$ becomes $y = \\tfrac{1}{4}x - 2$, slope $\\tfrac{1}{4}$. The perpendicular slope is $-4$.\n\n**The Full Solution:**\nStep 1: Put the given equation in slope-intercept form: $-12y = -3x + 24$, so $y = \\tfrac{1}{4}x - 2$.\nStep 2: The slope of the first truss is $m = \\tfrac{1}{4}$.\nStep 3: Perpendicular slopes multiply to $-1$, so the second slope is $-\\tfrac{1}{m} = -4$, and $y = -4x + 5$ is the only choice with that slope. Check: $\\tfrac{1}{4} \\times (-4) = -1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($y = -\\tfrac{1}{4}x + 5$): negates the slope but never flips it; $\\tfrac{1}{4} \\times \\left(-\\tfrac{1}{4}\\right) = -\\tfrac{1}{16}$, not $-1$.\n* Choice C ($y = \\tfrac{1}{4}x + 5$): keeps the same slope, so this truss runs parallel to the first one, never crossing it.\n* Choice D ($y = 4x + 5$): flips the slope but leaves it positive; $\\tfrac{1}{4} \\times 4 = 1$, not $-1$.\n\n**Test Day Takeaway:** Perpendicular means flip and negate — both moves, every time. Getting the equation into $y = mx + b$ first keeps the sign of the slope honest."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-239",
+ "question": "A circular garden bed has a diameter of $16$ feet. A wooden border is installed around the entire edge of the bed. To the nearest foot, what is the length of the border? (Use $\\pi \\approx 3.14$.)",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$25$"
+  },
+  {
+   "id": "B",
+   "text": "$50$"
+  },
+  {
+   "id": "C",
+   "text": "$100$"
+  },
+  {
+   "id": "D",
+   "text": "$201$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses pi r instead of pi d",
+  "C": "doubles the diameter before multiplying",
+  "D": "computes the area"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Circumference of a Circle**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The border runs along the circumference: $C = \\pi d \\approx 3.14(16) = 50.24$, which rounds to $50$ feet.\n\n**The Full Solution:**\nStep 1: A border around the edge of a circular bed has the length of the circle's circumference.\nStep 2: With the diameter given, use $C = \\pi d = 3.14(16)$.\nStep 3: $3.14(16) = 50.24$, which to the nearest foot is $50$ feet.\n\nVerification: the radius is $8$, and $2(3.14)(8) = 50.24$ as well. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($25$): uses $\\pi r = 3.14(8) = 25.12$, half the circumference.\n* Choice C ($100$): doubles the diameter first, computing $3.14(32) = 100.48$ — a second doubling that the formula $\\pi d$ has already accounted for.\n* Choice D ($201$): computes the area $\\pi r^2 = 3.14(64) = 200.96$; area is measured in square feet, not feet.\n\n**Test Day Takeaway:** Check the units the question asks for. A border is a length, so the circumference — not the area — is the quantity to compute."
+}

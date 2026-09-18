@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-365",
+  "question": "During a $30$-minute test, a filtration unit processed $900$ liters in the first $12$ minutes and $1{,}500$ liters in the remaining $18$ minutes. What was the unit's average processing rate, in liters per minute, for the test?",
+  "correctAnswer": "80",
+  "explanation": "**SAT Pattern: Average Rate**\n\n**The correct answer is $80$.**\n\n**The Fast Way (~20s):** Total volume $= 900 + 1{,}500 = 2{,}400$ liters over $30$ minutes, so the rate is $\\frac{2400}{30} = 80$.\n\n**The Full Solution:**\nStep 1: The average processing rate is the total volume processed divided by the total time.\nStep 2: Total volume $= 900 + 1{,}500 = 2{,}400$ liters; total time $= 12 + 18 = 30$ minutes.\nStep 3: Average rate $= \\frac{2400}{30} = 80$ liters per minute. Check: $80 \\times 30 = 2{,}400$. $\\checkmark$\n\n**Common Mistakes:** Averaging the two interval rates, $\\frac{75 + 83.\\overline{3}}{2} \\approx 79.17$, which ignores that the intervals differ in length; dividing the total volume by $2$, giving $1{,}200$; or reporting only the second interval's rate, $\\frac{1500}{18} \\approx 83.33$.\n\n**Test Day Takeaway:** An average rate is one division at the end: total out, total time, divide once."
+}

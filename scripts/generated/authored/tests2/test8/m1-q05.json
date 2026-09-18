@@ -1,0 +1,57 @@
+{
+  "id": 5,
+  "question": "The table summarizes 250 parcels in one district by zoning category and by distance to the nearest transit stop. If a parcel within 400 meters of a stop is selected at random, which expression gives the probability that the parcel is zoned commercial?",
+  "questionTable": {
+    "headers": [
+      "",
+      "Within 400 m",
+      "Farther than 400 m",
+      "Total"
+    ],
+    "rows": [
+      [
+        "Residential",
+        "84",
+        "96",
+        "180"
+      ],
+      [
+        "Commercial",
+        "42",
+        "28",
+        "70"
+      ],
+      [
+        "Total",
+        "126",
+        "124",
+        "250"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{42}{250}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{42}{126}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{126}{250}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{42}{70}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses all 250 parcels as the denominator, ignoring the within-400-m condition",
+    "C": "gives the probability that a parcel is within 400 m, not the conditional probability",
+    "D": "conditions on commercial zoning instead of on the distance, reversing the condition"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The phrase \"a parcel within $400$ meters\" shrinks the pool to that column's $126$ parcels, of which $42$ are commercial, so the probability is $\\frac{42}{126}$.\n\n**The Full Solution:**\nStep 1: Find the conditioning group. The selection is made only from parcels within $400$ meters of a stop, and the column total for that group is $126$.\nStep 2: Find the favorable count inside that group. The commercial row meets the \"Within 400 m\" column at $42$.\nStep 3: The probability is $\\frac{42}{126}$. Check: the other $84$ parcels in that column are residential, and $\\frac{42}{126} + \\frac{84}{126} = \\frac{126}{126} = 1$, so the two categories account for the whole conditioning group. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{42}{250}$): divides by the grand total. That answers \"what is the chance a parcel is both commercial and close to transit,\" which is a different question.\n* Choice C ($\\frac{126}{250}$): reports how much of the district is within $400$ meters, ignoring zoning entirely.\n* Choice D ($\\frac{42}{70}$): divides by the commercial row total, which answers the reversed question, \"given a commercial parcel, how likely is it to be within $400$ meters?\"\n\n**Test Day Takeaway:** The condition sets the denominator. Underline the group named after \"if\" and use that group's total, not the grand total."
+}

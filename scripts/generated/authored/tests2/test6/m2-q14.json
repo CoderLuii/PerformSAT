@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A balance that read every mass $25\\%$ too high forces a technician to rescale $15$ sample masses whose mean was $46.0$ grams and whose range was $18.0$ grams. Which pair gives the mean and the range after rescaling?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Mean $34.5$ grams, range $13.5$ grams"
+  },
+  {
+   "id": "B",
+   "text": "Mean $36.8$ grams, range $14.4$ grams"
+  },
+  {
+   "id": "C",
+   "text": "Mean $36.8$ grams, range $18.0$ grams"
+  },
+  {
+   "id": "D",
+   "text": "Mean $57.5$ grams, range $22.5$ grams"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts 25 percent of each reading (multiplies by 0.75) instead of dividing by 1.25, giving 34.5 and 13.5",
+  "C": "scales the mean but leaves the range at 18.0, treating spread as unaffected by rescaling",
+  "D": "multiplies by 1.25 instead of dividing by it, making the corrected masses larger, 57.5 and 22.5"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Scaling a Data Set by a Constant**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** Readings are $1.25$ times the true masses, so every value is multiplied by $\\frac{1}{1.25} = 0.8$. Both the mean and the range scale: $46.0(0.8) = 36.8$ and $18.0(0.8) = 14.4$.\n\n**The Full Solution:**\nStep 1: \"$25\\%$ too high\" means each reading equals $1.25$ times the true mass, so the correction multiplies every recorded mass by $\\frac{1}{1.25} = 0.8$.\nStep 2: Multiplying every value by a constant multiplies the mean by that constant: $46.0(0.8) = 36.8$ grams.\nStep 3: The range is a difference of two values, so it scales by the same constant: $18.0(0.8) = 14.4$ grams. Check with a sample pair: masses of $55$ and $37$ grams have range $18$, and rescaled they are $44$ and $29.6$, a range of $14.4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (mean $34.5$, range $13.5$): takes $25\\%$ off the readings, multiplying by $0.75$; but a reading $25\\%$ above the truth is undone by dividing by $1.25$, not by subtracting a quarter of it.\n* Choice C (mean $36.8$, range $18.0$): scales the center and leaves the spread, though shrinking every value pulls the extremes together too.\n* Choice D (mean $57.5$, range $22.5$): multiplies by $1.25$, which corrects in the wrong direction and makes a balance that already read high read higher.\n\n**Test Day Takeaway:** Multiplying a data set by a constant multiplies the mean, median, range, and standard deviation by that same constant — only adding a constant leaves the spread alone."
+}

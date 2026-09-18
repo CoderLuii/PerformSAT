@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-399",
+  "question": "The equation $(x + 7)(x - 3) = x^2 + bx - 21$ is true for all values of $x$, where $b$ is a constant. What is the value of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-21$"
+    },
+    {
+      "id": "B",
+      "text": "$-4$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$10$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the constant term instead of the x-coefficient",
+    "B": "gets the sign of the middle term wrong (-7x + 3x)",
+    "D": "adds 7 and 3 without regard to sign"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** The $x$-coefficient of $(x + 7)(x - 3)$ is $7 + (-3) = 4$, so $b = 4$.\n\n**The Full Solution:**\nStep 1: Expand the left side: $(x + 7)(x - 3) = x^2 - 3x + 7x - 21 = x^2 + 4x - 21$.\nStep 2: Since the equation holds for all $x$, the two sides are the same polynomial, so matching coefficients term by term: the $x$-coefficient on the left, $4$, equals $b$.\nStep 3: $b = 4$. Check: the constant terms also match, $-21 = -21$, and testing $x = 1$ gives $(8)(-2) = -16$ on the left and $1 + 4 - 21 = -16$ on the right. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-21$): reports the constant term, which is already given, instead of the $x$-coefficient.\n* Choice B ($-4$): computes the middle term as $-7x + 3x$, attaching the negative to the wrong factor.\n* Choice D ($10$): adds $7$ and $3$ as if both were positive.\n\n**Test Day Takeaway:** \"True for all values of $x$\" means match coefficients; the middle coefficient of $(x + p)(x + q)$ is $p + q$ with signs included."
+}

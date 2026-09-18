@@ -1,0 +1,52 @@
+{
+ "id": 1,
+ "question": "A gauge at a weather station collected rainfall at a constant rate during a storm, as shown in the table. At that rate, what was the total accumulation, in millimeters, after $12$ hours?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Time (hours)",
+    "Accumulation (centimeters)"
+   ],
+   "rows": [
+    [
+     "2",
+     "1.4"
+    ],
+    [
+     "5",
+     "3.5"
+    ],
+    [
+     "8",
+     "5.6"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8.4$"
+  },
+  {
+   "id": "B",
+   "text": "$56$"
+  },
+  {
+   "id": "C",
+   "text": "$84$"
+  },
+  {
+   "id": "D",
+   "text": "$840$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at 8.4 centimeters and never converts to millimeters",
+  "B": "converts the 8-hour reading of 5.6 cm to 56 mm and ignores the 12-hour requirement",
+  "D": "converts centimeters to millimeters with a factor of 100 instead of 10"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Proportion Solving**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Every row gives $0.7$ cm per hour, so $12$ hours yields $8.4$ cm, and $8.4 \\times 10 = 84$ mm.\n\n**The Full Solution:**\nStep 1: The accumulation is proportional to time, so the constant rate is $\\dfrac{1.4}{2} = 0.7$ centimeter per hour. The other rows agree: $\\dfrac{3.5}{5} = 0.7$ and $\\dfrac{5.6}{8} = 0.7$.\nStep 2: After $12$ hours the gauge holds $0.7 \\times 12 = 8.4$ centimeters.\nStep 3: One centimeter is $10$ millimeters, so $8.4$ cm $= 8.4 \\times 10 = 84$ millimeters.\nCheck: $\\dfrac{84 \\text{ mm}}{12 \\text{ h}} = 7$ mm per hour, and $7$ mm is $0.7$ cm. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8.4$): the correct accumulation, but left in centimeters — the question asks for millimeters.\n* Choice B ($56$): converts the last row of the table, $5.6$ cm, to $56$ mm and never extends the rate to $12$ hours.\n* Choice D ($840$): multiplies $8.4$ by $100$, the centimeter-to-millimeter factor confused with the meter-to-centimeter factor.\n\n**Test Day Takeaway:** Finish the proportion first, then convert once — and check the unit named in the last five words of the question."
+}

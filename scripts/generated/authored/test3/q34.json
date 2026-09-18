@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
+ "type": "multiple-choice",
+ "passage": "Around 1100 CE, Cahokia, near present-day St. Louis, ranked among the largest settlements north of Mexico, its earthen mounds rising above plazas that could hold tens of thousands of people. Many early observers refused to credit the site's builders: they attributed the mounds to vanished foreign colonists rather than to the ancestors of the Native peoples living in the region. Excavation has since dismantled that fiction. Tools, refuse layers, and construction stages show the mounds rising basket-load by basket-load through generations of organized local labor — the work not of mysterious outsiders but of an Indigenous metropolis whose builders' descendants the early observers had dismissed.",
  "question": "Which choice best describes the overall structure of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "It presents one widely held theory about the origins of Andean cities and then traces the long scholarly debate over who first proposed it."
+   "text": "It poses a question about how an ancient city was built and evaluates several competing answers to that question"
   },
   {
    "id": "B",
-   "text": "It compares the site of Caral with the cities of Mesopotamia in order to argue that the two arose for identical reasons."
+   "text": "It narrates the founding, growth, and eventual abandonment of an ancient city in chronological order"
   },
   {
    "id": "C",
-   "text": "It states a standard assumption about how complex societies begin, describes findings that complicate it, and offers an alternative account."
+   "text": "It describes an ancient city, presents a mistaken account of the city's origins that early observers promoted, and then details the archaeological evidence that overturned that account"
   },
   {
    "id": "D",
-   "text": "It describes the architecture of Caral and explains the techniques archaeologists used to date its mounds."
+   "text": "It summarizes a scholarly debate about an ancient city's population and concludes that the available evidence cannot resolve the debate"
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C. The passage states the standard assumption — that complex Andean society must have begun with intensive grain agriculture, as elsewhere — then reports findings from Caral that complicate it, since the inhabitants grew cotton and squash and relied on traded fish rather than staple grains. It closes with an alternative account, that a fishing-and-cotton exchange supported the earliest monumental building. A invents a debate over who first proposed a theory, which the passage does not trace. B says Caral and Mesopotamia arose for identical reasons, the opposite of the passage's point. D reduces the passage to architecture and dating methods it mentions only in passing.",
+ "explanation": "**Choice C is correct.** The text makes three moves in order: it establishes Cahokia's scale, reports the early observers' false attribution of the mounds to foreign colonists, and then presents the excavated evidence — tools, refuse, construction stages — that overturned the false account.\n\n**The Full Solution:**\n- Sentence one describes the city. Sentence two states the mistaken origin story and who promoted it.\n- \"Excavation has since dismantled that fiction\" pivots explicitly, and the final sentence itemizes the evidence and the corrected conclusion. C tracks the sequence exactly.\n\n**Why the other choices are wrong:**\n- A: No question is posed, and only one wrong account is discussed — nothing is \"evaluated\" among competing answers; the fiction is simply refuted.\n- B: The text is organized around an argument about the builders' identity, not a chronological biography of the city, and abandonment never comes up.\n- D: The text ends in resolution, not stalemate — the evidence settles who built the mounds, and the population figure is scene-setting, not the debate's subject.",
  "_meta": {
-  "anchor": "Caral / Norte Chico (Peru), ~2600 BCE; fishing-and-cotton economy [theme: Andean archaeology]"
- },
- "passage": "On the desert coast of Peru, the site of Caral preserves stone platform mounds and sunken circular plazas built around 2600 BCE — roughly when the first cities arose in Mesopotamia. For decades archaeologists assumed that complex society in the Andes must have begun with intensive grain agriculture, as it had elsewhere. Excavations at Caral complicated that assumption: the inhabitants grew cotton and squash and relied heavily on dried fish traded from the coast, with little evidence of staple grains. Researchers proposed that a fishing-and-cotton exchange, rather than cereal farming, supported the region's earliest monumental construction.",
- "type": "multiple-choice"
+  "anchor": "Cahokia — refutation of the foreign-builder myth by excavation evidence"
+ }
 }

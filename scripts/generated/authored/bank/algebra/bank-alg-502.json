@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-502",
+  "question": "$$3(x - c)^2 - 11 = 3x^2 - 30x + d$$\n\nIn the given equation, $c$ and $d$ are constants, and the equation is true for all values of $x$. What is the value of $d$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5$"
+    },
+    {
+      "id": "B",
+      "text": "$14$"
+    },
+    {
+      "id": "C",
+      "text": "$64$"
+    },
+    {
+      "id": "D",
+      "text": "$86$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports c instead of d",
+    "B": "computes c^2 - 11 = 25 - 11, forgetting the factor of 3 on c^2",
+    "D": "adds 11 instead of subtracting: 75 + 11"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Expanding the left side gives $3x^2 - 6cx + 3c^2 - 11$. Matching the $x$-coefficient, $-6c = -30$, so $c = 5$; then $d = 3(25) - 11 = 64$.\n\n**The Full Solution:**\nStep 1: Expand: $(x - c)^2 = x^2 - 2cx + c^2$, so $3(x - c)^2 - 11 = 3x^2 - 6cx + 3c^2 - 11$.\nStep 2: Two polynomials equal for all $x$ have identical coefficients. Matching the $x$-terms: $-6c = -30$, so $c = 5$.\nStep 3: Matching the constants: $d = 3c^2 - 11 = 3(25) - 11 = 75 - 11 = 64$. Check with $x = 0$: the left side is $3(25) - 11 = 64$, and the right side is $d = 64$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): is the value of $c$; the question asks for $d$.\n* Choice B ($14$): computes $c^2 - 11 = 25 - 11$, forgetting that the $3$ multiplies $c^2$ as well.\n* Choice D ($86$): adds the $11$ instead of subtracting it: $75 + 11$.\n\n**Test Day Takeaway:** \"True for all values of $x$\" means match coefficients term by term; expand fully, use the middle term to find the hidden constant, and only then read off the constant term."
+}

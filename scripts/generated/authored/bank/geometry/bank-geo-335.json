@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-335",
+ "question": "A copper heat-sink fin is stamped in the profile drawn here, with all three edge lengths given in millimeters and the right angle at vertex $B$. What is the value of $\\cos A$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     21,
+     0
+    ],
+    [
+     21,
+     20
+    ]
+   ],
+   "labels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "sideLabels": [
+    "21",
+    "20",
+    "29"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{20}{29}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{21}{29}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{20}{21}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{29}{21}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports sin A = 20/29, opposite over hypotenuse",
+  "C": "reports tan A = 20/21, opposite over adjacent",
+  "D": "inverts cos A, giving hypotenuse over adjacent"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Trig Ratio with Known Triple**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The leg beside angle $A$ is $21$ and the hypotenuse is $29$, so $\\cos A = \\frac{21}{29}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $B$, so the side opposite it, $\\overline{CA} = 29$, is the hypotenuse.\nStep 2: Angle $A$ lies between $\\overline{AB} = 21$ and the hypotenuse, so $21$ is the adjacent leg and $20$ is the opposite leg.\nStep 3: $\\cos A = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{21}{29}$.\n\nCheck: $20^2 + 21^2 = 400 + 441 = 841 = 29^2$, so $20$-$21$-$29$ is a Pythagorean triple. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{20}{29}$): uses the opposite leg over the hypotenuse, which is $\\sin A$.\n* Choice C ($\\frac{20}{21}$): divides the two legs, which is $\\tan A$.\n* Choice D ($\\frac{29}{21}$): inverts the ratio; a cosine is never greater than $1$.\n\n**Test Day Takeaway:** Find the hypotenuse first by locating the right angle, then read adjacent and opposite from the angle named."
+}

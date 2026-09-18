@@ -1,0 +1,29 @@
+{
+  "id": 13,
+  "question": "A library's summer reading log grows at a constant rate of $15$ items per week. The log recorded $120$ items in week $4$ and $300$ items in week $t$, where $t$ is a constant. What is the value of $t$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$16$"
+    },
+    {
+      "id": "D",
+      "text": "$20$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "finds the 12-week gap correctly but subtracts it from week 4 instead of adding: 12 - 4 = 8",
+    "B": "uses t rather than t - 4 in the denominator, solving 180/t = 15",
+    "D": "divides 300 by 15, ignoring the 120 items already recorded in week 4"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The log gains $300-120=180$ items at $15$ per week, which takes $12$ weeks, so $t=4+12=16$.\n\n**The Full Solution:**\nStep 1: The two readings are the points $(4,120)$ and $(t,300)$, and a constant rate of change is a slope: $\\dfrac{300-120}{t-4}=15$.\nStep 2: Simplify the numerator and clear the fraction: $\\dfrac{180}{t-4}=15$, so $180=15(t-4)$ and $t-4=12$.\nStep 3: Therefore $t=16$. Check: from week $4$ to week $16$ is $12$ weeks, and $120+15(12)=300$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): finds the $12$-week gap but subtracts it from the starting week, computing $12-4=8$ instead of $4+12$.\n* Choice B ($12$): drops the $-4$ from the denominator and solves $\\dfrac{180}{t}=15$, which finds the elapsed weeks, not the week number.\n* Choice D ($20$): divides $300$ by $15$, treating the log as starting from $0$ items at week $0$ and ignoring the week-$4$ reading.\n\n**Test Day Takeaway:** A constant rate is a slope between two points — put the value difference over the time difference, and remember the denominator is a difference of week numbers, not a week number."
+}

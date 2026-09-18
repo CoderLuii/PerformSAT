@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-361",
+ "question": "A ward's supply balance is $46 - 7d$ units after $d$ doses are given, and the ward reorders whenever that balance is at most $4$ units. Which inequality gives all possible values of $d$ for which the ward reorders?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$d \\le 4$"
+  },
+  {
+   "id": "B",
+   "text": "$d \\le 6$"
+  },
+  {
+   "id": "C",
+   "text": "$d \\ge 6$"
+  },
+  {
+   "id": "D",
+   "text": "$d \\ge 42$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "uses the constant 4 on the right side as the bound on d",
+  "B": "keeps the direction of the inequality after dividing by -7",
+  "D": "isolates -7d as -42 but never divides by 7"
+ },
+ "explanation": "**SAT Pattern: One-Variable Linear Inequality**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $-7d \\le -42$, and dividing by $-7$ reverses the symbol to give $d \\ge 6$.\n\n**The Full Solution:**\n\nStep 1: The ward reorders when $46 - 7d \\le 4$. Subtract $46$ from both sides: $-7d \\le 4 - 46 = -42$.\n\nStep 2: Divide both sides by $-7$, reversing the direction because the divisor is negative.\n\nStep 3: $d \\ge \\frac{-42}{-7} = 6$. Check: $d = 6$ gives $46 - 42 = 4$, and $d = 8$ gives $46 - 56 = -10 \\le 4$, while $d = 2$ gives $32 \\le 4$, which is false.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($d \\le 4$): copies the constant on the right side as though it were the bound on $d$.\n* Choice B ($d \\le 6$): divides by $-7$ correctly but keeps the direction unchanged.\n* Choice D ($d \\ge 42$): stops at $-7d \\le -42$ and reports $42$ without dividing by $7$.\n\n**Test Day Takeaway:** Move the constant first, then divide; the single sign flip happens only at the division by a negative coefficient."
+}

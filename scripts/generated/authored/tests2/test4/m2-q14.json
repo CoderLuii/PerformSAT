@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "In a traffic study, $g(x) = 2x^2 - 12x + k$ models the change, in seconds, in the average delay at an intersection $x$ hours after a signal retiming, where $k$ is a constant. The minimum value of $g$ is $-7$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-25$"
+  },
+  {
+   "id": "B",
+   "text": "$-7$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$11$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes k = -7 - 18 instead of k = -7 + 18 when moving the -18 across",
+  "B": "uses x = -b/2 = 6 for the vertex, dividing by 2 instead of 2a; at x = 6 the x terms cancel and g(6) = k, so the minimum itself is reported as k",
+  "C": "completes the square as 2(x - 3)^2 - 9 + k, forgetting to multiply the 9 by the leading 2"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The vertex is at $x = \\frac{12}{4} = 3$, and $g(3) = 18 - 36 + k = k - 18$. Setting $k - 18 = -7$ gives $k = 11$.\n\n**The Full Solution:**\nStep 1: The parabola opens upward ($a = 2 > 0$), so the minimum sits at the vertex, $x = -\\frac{b}{2a} = \\frac{12}{4} = 3$.\nStep 2: Evaluate: $g(3) = 2(9) - 12(3) + k = 18 - 36 + k = k - 18$.\nStep 3: The minimum is $-7$, so $k - 18 = -7$ and $k = 11$. Check: $2x^2 - 12x + 11 = 2(x - 3)^2 - 7$, whose minimum is $-7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-25$): this subtracts the $18$ instead of adding it, solving $k = -7 - 18$. Moving $-18$ across an equals sign makes it $+18$.\n* Choice B ($-7$): this uses $x = -\\frac{b}{2} = 6$ for the vertex, dividing by $2$ instead of $2a$. At $x = 6$ the two $x$ terms cancel and $g(6) = k$, so the minimum gets copied straight into $k$.\n* Choice C ($2$): this completes the square as $2(x - 3)^2 - 9 + k$, forgetting that the $-9$ inside the bracket is doubled to $-18$ when the $2$ is distributed.\n\n**Test Day Takeaway:** A stated maximum or minimum is the vertex's $y$-value. Find $x = -\\frac{b}{2a}$, substitute, and set the result equal to that value."
+}

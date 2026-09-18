@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-068",
+ "question": "The function $r$ gives the number of light-rail riders, in thousands, using a downtown line $t$ years after 2015, and $r(t) = 18 + 2.5t$ for whole-number values of $t$ from $0$ through $10$. What is the value of $r(6)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$20.5$"
+  },
+  {
+   "id": "C",
+   "text": "$33$"
+  },
+  {
+   "id": "D",
+   "text": "$123$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "drops the constant term and reports 2.5 times 6",
+  "B": "substitutes t = 1 instead of t = 6",
+  "D": "adds 18 and 2.5 first and then multiplies the sum by 6"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Basic Function Notation**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Substitute $t = 6$: $18 + 2.5(6) = 18 + 15 = 33$.\n\n**The Full Solution:**\nStep 1: The notation $r(6)$ means replace $t$ with $6$ in the rule $r(t) = 18 + 2.5t$.\nStep 2: Multiply first: $2.5(6) = 15$.\nStep 3: Then add: $18 + 15 = 33$, so $r(6) = 33$ thousand riders. Check: ridership starts at $18$ thousand and grows $2.5$ thousand per year, so after $6$ years it has grown $15$ thousand ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): reports only the growth term $2.5(6)$ and drops the starting value $18$.\n* Choice B ($20.5$): substitutes $t = 1$ instead of $t = 6$.\n* Choice D ($123$): adds $18$ and $2.5$ first and then multiplies the sum by $6$, ignoring the order of operations.\n\n**Test Day Takeaway:** Function notation is pure substitution: replace the input everywhere it appears, then follow the order of operations."
+}

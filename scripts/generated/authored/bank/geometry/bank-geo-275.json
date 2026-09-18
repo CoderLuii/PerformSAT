@@ -1,0 +1,40 @@
+{
+ "id": "bank-geo-275",
+ "question": "A circular running track has a radius of $15$ meters. A runner travels along the track through a central angle of $72°$, as shown. How many meters does the runner travel?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 72,
+   "angleLabel": "72°",
+   "radius": 15,
+   "labelCenter": "O",
+   "showRadiusLabel": true,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$6\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$30\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$45\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses pi r for the circumference",
+  "C": "gives the full circumference",
+  "D": "gives the sector area"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Arc Length**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $72^\\circ$ is $\\frac{1}{5}$ of a turn, and the full circumference is $30\\pi$, so the arc is $\\frac{1}{5}(30\\pi) = 6\\pi$ meters.\n\n**The Full Solution:**\nStep 1: The circumference of the track is $C = 2\\pi r = 2\\pi(15) = 30\\pi$ meters.\nStep 2: The runner covers $\\frac{72}{360} = \\frac{1}{5}$ of the circle.\nStep 3: Arc length $= \\frac{1}{5}(30\\pi) = 6\\pi$ meters. Check: five such runs would complete one lap, and $5(6\\pi) = 30\\pi$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($3\\pi$): uses $C = \\pi r$ instead of $2\\pi r$, halving the answer.\n* Choice C ($30\\pi$): reports the whole circumference, ignoring the $72^\\circ$ restriction.\n* Choice D ($45\\pi$): computes the sector's area $\\frac{1}{5}\\pi(15)^2$, which is an area, not a distance.\n\n**Test Day Takeaway:** Arc length uses the circumference $2\\pi r$; sector area uses $\\pi r^2$. The same fraction multiplies both."
+}

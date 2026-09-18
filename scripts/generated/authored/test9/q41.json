@@ -6,70 +6,23 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
   "module": 2,
-  "passage": "Annual exoplanet discovery counts swing sharply with the launch and retirement of dedicated survey missions, so the headline yearly totals can mislead readers about the long-run reliability of any one technique. Drawing on the NASA Exoplanet Archive, astronomers note that of the four principal detection methods, only one produced a count that rose in every year the archive reports here, uninterrupted by mission lifecycles, and that this method's record indicates _______",
+  "passage": "Rather than photographing whole colonies, long-term seabird monitoring programs count the same small cliff plots year after year, so that changes in the numbers reflect the birds rather than the method. Ecologists reviewing four decades of plot counts at two island colonies of common guillemots caution that a species can decline steeply at one site while thriving at another, so a trend measured at a single colony should not be read as the species' overall trajectory. The plot counts bear out this caution because ______",
   "questionTable": {
     "type": "table",
-    "caption": "Confirmed exoplanets discovered per year by detection method (NASA Exoplanet Archive)",
-    "headers": [
-      "Year",
-      "Transit",
-      "Radial velocity",
-      "Microlensing",
-      "Imaging"
-    ],
+    "caption": "Breeding pairs counted in fixed study plots at two guillemot colonies",
+    "headers": ["Colony", "Pairs, 1985", "Pairs, 2005", "Pairs, 2025"],
     "rows": [
-      [
-        "2009",
-        "65",
-        "28",
-        "9",
-        "6"
-      ],
-      [
-        "2014",
-        "747",
-        "48",
-        "4",
-        "3"
-      ],
-      [
-        "2016",
-        "1339",
-        "60",
-        "21",
-        "5"
-      ],
-      [
-        "2020",
-        "204",
-        "73",
-        "13",
-        "4"
-      ]
+      ["Skarvholm", "1,240", "980", "610"],
+      ["Fuglenes", "410", "520", "640"]
     ]
   },
   "question": "Which choice most effectively uses data from the table to complete the statement?",
   "choices": [
-    {
-      "id": "A",
-      "text": "the transit method produced 1,339 confirmed exoplanets in 2016 but only 204 in 2020, a drop that illustrates the technique's steady growth."
-    },
-    {
-      "id": "B",
-      "text": "the transit method's 1,339 confirmed exoplanets in 2016 was the largest single-year, single-method total recorded in the table."
-    },
-    {
-      "id": "C",
-      "text": "microlensing detections rose in every reporting year, climbing from 9 in 2009 to 13 in 2020."
-    },
-    {
-      "id": "D",
-      "text": "radial-velocity detections rose from 28 in 2009 to 48 in 2014 to 60 in 2016 to 73 in 2020, an increase in every reporting year shown."
-    }
+    { "id": "A", "text": "counts at both colonies changed by hundreds of pairs over the four decades of monitoring." },
+    { "id": "B", "text": "Skarvholm supported more breeding pairs than Fuglenes in 1985 and in 2005." },
+    { "id": "C", "text": "the combined total of breeding pairs counted at the two colonies taken together was lower in 2025 than the corresponding combined total had been in 1985." },
+    { "id": "D", "text": "plot counts at Skarvholm fell by roughly half between 1985 and 2025 while counts at Fuglenes rose by more than half over the same years." }
   ],
   "correctAnswer": "D",
-  "explanation": "The statement singles out the one method whose count rose in every reporting year. In the table only radial velocity does so—28, 48, 60, 73—which is what choice D reports. Choices A and B describe the transit method, whose count fell after 2016, and C claims microlensing rose steadily, but its count drops from 9 in 2009 to 4 in 2014.",
-  "_meta": {
-    "anchor": "NASA Exoplanet Archive, detection methods"
-  }
+  "explanation": "**Choice D is correct.** The caution is about divergence — one site declining while another thrives — and D exhibits precisely that: Skarvholm down from 1,240 to 610 as Fuglenes climbed from 410 to 640.\n\n**The Full Solution:**\n- To \"bear out\" the caution, the data must show two colonies moving in opposite directions, so that either one alone would mislead.\n- D reads both rows across the full period and reports the opposing trends in comparable terms (down by half, up by more than half).\n\n**Why the other choices are wrong:**\n- A: \"Changed by hundreds of pairs\" hides direction — the crux of the caution is that the changes ran opposite ways.\n- B: Which colony is larger is irrelevant to whether single-site trends mislead.\n- C: The combined total is exactly the kind of aggregate the caution warns against; a summed decline conceals that one colony was thriving."
 }

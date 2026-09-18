@@ -1,0 +1,45 @@
+{
+  "id": "bank-alg-090",
+  "question": "A candle burns at a constant rate. The table gives the height $h$, in centimeters, of the candle $t$ hours after it was lit, for two values of $t$. What was the height of the candle, in centimeters, at the moment it was lit?",
+  "questionTable": {
+    "headers": [
+      "Time (hours)",
+      "Height (cm)"
+    ],
+    "rows": [
+      [
+        "2",
+        "21.5"
+      ],
+      [
+        "5",
+        "17"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$18.5$"
+    },
+    {
+      "id": "B",
+      "text": "$23$"
+    },
+    {
+      "id": "C",
+      "text": "$24.5$"
+    },
+    {
+      "id": "D",
+      "text": "$26$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "steps the wrong direction from t = 2",
+    "B": "adds only one hour of burn",
+    "D": "uses 3 hours instead of 2"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Linear Extrapolation Back to t = 0**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The candle loses $21.5 - 17 = 4.5$ cm over $3$ hours, so $1.5$ cm per hour. Two hours before $t = 2$ it was $2(1.5) = 3$ cm taller: $21.5 + 3 = 24.5$.\n\n**The Full Solution:**\nStep 1: Rate from the two rows: $\\frac{17 - 21.5}{5 - 2} = \\frac{-4.5}{3} = -1.5$ cm per hour.\nStep 2: The height when lit is $h(0)$. Going back from $t = 2$ to $t = 0$ undoes $2$ hours of burning, so add $1.5 \\cdot 2 = 3$: $h(0) = 21.5 + 3 = 24.5$.\nStep 3: Check with the model $h(t) = 24.5 - 1.5t$: $h(5) = 24.5 - 7.5 = 17$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($18.5$): steps in the wrong direction from $t = 2$, subtracting $3$ instead of adding it.\n* Choice B ($23$): adds only one hour of burn, $1.5$, instead of two hours.\n* Choice D ($26$): uses the $3$-hour gap between the rows, $21.5 + 4.5$, instead of the $2$ hours back to $t = 0$.\n\n**Test Day Takeaway:** Find the rate, then move from the nearest data point to $t = 0$ by exactly that many hours, reversing the direction of change because you are going backward in time."
+}

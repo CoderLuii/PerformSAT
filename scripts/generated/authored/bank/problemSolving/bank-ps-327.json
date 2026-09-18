@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-327",
+  "question": "A linear model predicts the mass $y$, in grams, of a bar of soap after $x$ days of use: $\\hat{y} = -2.8x + 120$. According to this model, what is the predicted mass, in grams, of the bar after $15$ days of use?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$42$"
+    },
+    {
+      "id": "B",
+      "text": "$78$"
+    },
+    {
+      "id": "C",
+      "text": "$117.2$"
+    },
+    {
+      "id": "D",
+      "text": "$162$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports $2.8(15) = 42$, the predicted decrease over the $15$ days rather than the remaining mass.",
+    "C": "subtracts the slope once, $120 - 2.8$, applying the daily loss for a single day.",
+    "D": "adds the $42$-gram change instead of subtracting it, treating the negative slope as positive."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Slope of Best Fit**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Substitute $x = 15$: $-2.8(15) + 120 = -42 + 120 = 78$ grams.\n\n**The Full Solution:**\nStep 1: A predicted value comes from substituting into the model, not from the slope alone.\nStep 2: The bar loses $2.8$ grams per day, so over $15$ days it loses $2.8(15) = 42$ grams.\nStep 3: The predicted mass is $120 - 42 = 78$ grams. Check: the model starts at $120$ grams and reaches $0$ at about $x = 43$, so a value of $78$ at day $15$ is reasonable. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($42$): reports $2.8(15) = 42$, the predicted decrease over the $15$ days rather than the remaining mass.\n* Choice C ($117.2$): subtracts the slope once, $120 - 2.8$, applying the daily loss for a single day.\n* Choice D ($162$): adds the $42$-gram change instead of subtracting it, treating the negative slope as positive.\n\n**Test Day Takeaway:** A negative slope means the total change is subtracted from the intercept. Compute slope $\\times x$ first, then decide whether to add or subtract based on the sign."
+}

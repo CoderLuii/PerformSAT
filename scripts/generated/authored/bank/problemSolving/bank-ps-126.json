@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-126",
+  "question": "The mean mass of $8$ shipping crates is $45$ kilograms. One crate with a mass of $12$ kilograms is removed and replaced by a crate with a mass of $60$ kilograms. What is the mean mass, in kilograms, of the $8$ crates after the replacement?",
+  "correctAnswer": "51",
+  "explanation": "**SAT Pattern: Outlier Effect**\n\n**The correct answer is $51$.**\n\n**The Fast Way (~15s):** Swapping $12$ for $60$ raises the total by $48$ kilograms, spread over the same $8$ crates: the mean rises by $\\frac{48}{8} = 6$, to $51$.\n\n**The Full Solution:**\nStep 1: The original total is $8 \\times 45 = 360$ kilograms.\nStep 2: Remove the $12$-kilogram crate and add the $60$-kilogram crate: $360 - 12 + 60 = 408$ kilograms. The count is still $8$.\nStep 3: New mean $= \\frac{408}{8} = 51$. Check: the change in total, $60 - 12 = 48$, divided by $8$ crates is $6$, and $45 + 6 = 51$. $\\checkmark$\n\n**Common Mistakes:** Dividing $408$ by $9$ (as if a crate were added) gives $45.33$, or by $7$ (as if one were only removed) gives $58.29$; adding $60$ without removing $12$ gives $\\frac{420}{8} = 52.5$; adding the full $48$ to the mean gives $93$.\n\n**Test Day Takeaway:** A replacement changes the sum by (new $-$ old) and leaves the count alone; divide that change by $n$ to get the change in the mean."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-071",
+ "question": "A gas-detection perimeter around a compressor station is the circle $x^{2}+y^{2}+ax-18y+45=0$, whose center is $(7,9)$, with coordinates in meters. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-14$"
+  },
+  {
+   "id": "B",
+   "text": "$-7$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reverses the sign but forgets to double, reporting a = -7",
+  "C": "forgets both the sign reversal and the doubling",
+  "D": "forgets the sign reversal, solving a/2 = 7"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** The $x$-coordinate of the center is $-\\frac{a}{2}$, so $-\\frac{a}{2}=7$ and $a=-14$.\n\n**The Full Solution:**\n\nStep 1: Relate the coefficient to the center. Completing the square on $x^{2}+ax$ gives $\\left(x+\\frac{a}{2}\\right)^{2}$, so the center's $x$-coordinate is $-\\frac{a}{2}$.\n\nStep 2: Set it equal to the given value. $-\\frac{a}{2}=7$.\n\nStep 3: Solve. Multiplying both sides by $-2$ gives $a=-14$.\n\nCheck: with $a=-14$ the equation becomes $(x-7)^{2}+(y-9)^{2}=49+81-45=85$, a real circle centered at $(7,9)$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($-7$): reverses the sign but forgets to double, reporting $-7$.\n* Choice C ($7$): copies the center's coordinate directly, skipping both the sign reversal and the doubling.\n* Choice D ($14$): doubles correctly but keeps the sign, solving $\\frac{a}{2}=7$.\n\n**Test Day Takeaway:** In general form the linear coefficient is $-2$ times the center coordinate; running that backwards requires both operations."
+}

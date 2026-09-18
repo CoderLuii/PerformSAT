@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-400",
+  "question": "The table summarizes the responses of $240$ commuters, classified by mode of travel and by how often they commute. If one of these commuters is selected at random, what is the probability of selecting a commuter who travels by rail?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Daily",
+        "Less than daily",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Rail",
+          "66",
+          "30",
+          "96"
+        ],
+        [
+          "Bus",
+          "84",
+          "60",
+          "144"
+        ],
+        [
+          "Total",
+          "150",
+          "90",
+          "240"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{11}{40}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{2}{5}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{11}{25}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3}{5}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses only the $66$ rail commuters who commute daily",
+    "C": "divides the $66$ daily rail commuters by the $150$ daily commuters, a conditional probability",
+    "D": "gives the probability of selecting a bus commuter"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The rail row totals $96$ out of $240$ commuters, so the probability is $\\frac{96}{240} = \\frac{2}{5}$.\n\n**The Full Solution:**\nStep 1: A marginal probability uses a row total or a column total, not a single cell.\nStep 2: The rail row total is $66 + 30 = 96$, and the grand total is $240$.\nStep 3: The probability is $\\frac{96}{240} = \\frac{2}{5}$. Check: the bus row total is $144$, and $\\frac{96}{240} + \\frac{144}{240} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{11}{40}$): uses only the $66$ rail commuters who commute daily\n* Choice C ($\\frac{11}{25}$): divides the $66$ daily rail commuters by the $150$ daily commuters, a conditional probability\n* Choice D ($\\frac{3}{5}$): gives the probability of selecting a bus commuter\n\n**Test Day Takeaway:** Read the margin, not a cell: \"selecting a commuter who travels by rail\" places no condition on the second variable, so use the whole row over the grand total."
+}

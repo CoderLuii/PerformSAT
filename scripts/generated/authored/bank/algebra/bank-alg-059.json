@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-059",
+  "question": "A library bought $50$ books for a reading program. Each paperback cost $\\$6$ and each hardcover cost $\\$11$, and the total cost of the books was $\\$370$. How many more paperbacks than hardcovers did the library buy?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$14$"
+    },
+    {
+      "id": "B",
+      "text": "$22$"
+    },
+    {
+      "id": "C",
+      "text": "$36$"
+    },
+    {
+      "id": "D",
+      "text": "$50$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the number of hardcovers, not the difference",
+    "C": "the number of paperbacks, not the difference",
+    "D": "the total number of books"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: System Word Problem (Mixed Prices)**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** If all $50$ were paperbacks the cost would be $300$; the extra $70$ comes from hardcovers at $5$ dollars more each, so there are $14$ hardcovers and $36$ paperbacks. The difference is $36 - 14 = 22$.\n\n**The Full Solution:**\nStep 1: Let $p$ and $h$ be the numbers of paperbacks and hardcovers: $p + h = 50$ and $6p + 11h = 370$.\nStep 2: Multiply the first equation by $6$ and subtract from the second: $(6p + 11h) - (6p + 6h) = 370 - 300$, so $5h = 70$ and $h = 14$. Then $p = 36$.\nStep 3: The question asks for the difference: $p - h = 36 - 14 = 22$. Check: $6(36) + 11(14) = 216 + 154 = 370$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($14$): is the number of hardcovers; the question asks how many MORE paperbacks there were.\n* Choice C ($36$): is the number of paperbacks, again not the difference.\n* Choice D ($50$): is the total, which was given.\n\n**Test Day Takeaway:** Solve the system, then reread the question: \"how many more\" is a difference of the two unknowns, and both individual counts appear as traps."
+}

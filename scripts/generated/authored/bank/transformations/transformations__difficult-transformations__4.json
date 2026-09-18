@@ -1,0 +1,40 @@
+{
+  "id": 4,
+  "question": "The graph of $y=f(x)$ is shown in the $xy$-plane, where $f(x)=|x-c|+d$ and $c$ and $d$ are constants. The function $g$ is defined by $g(x)=-f(x+3)+4$. What is the maximum value of $g$?",
+  "diagram": {
+    "type": "absoluteValue",
+    "params": {
+      "vertex": [
+        -1,
+        6
+      ],
+      "slope": 1
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-10$"
+    },
+    {
+      "id": "B",
+      "text": "$-6$"
+    },
+    {
+      "id": "C",
+      "text": "$-2$"
+    },
+    {
+      "id": "D",
+      "text": "$10$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the constant before reflecting",
+    "B": "omits the vertical shift",
+    "D": "omits the reflection"
+  },
+  "correctAnswer": "C",
+  "hint": "A horizontal shift cannot change how high or low a graph reaches — concentrate on what the other two operations do to the extreme value.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~45s):** The least value of $f$ is $6$; negating makes it the greatest value $-6$, and adding $4$ gives $-2$.\n\n**The Full Solution:**\nStep 1: The V shown has its corner at $(-1,6)$, so the smallest value of $f$ is $6$.\nStep 2: The inside $x+3$ slides the graph left but leaves every output unchanged, so $f(x+3)$ still has least value $6$.\nStep 3: Negating turns that least value into the greatest value of $-f(x+3)$, namely $-6$; adding $4$ raises it to $-6+4=-2$. Check: at $x=-4$, $g(-4)=-f(-1)+4=-6+4=-2$, and every other input gives a smaller value. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-10$): adds $4$ before reflecting: $-(6+4)=-10$, but the $+4$ is applied after the negation.\n* Choice B ($-6$): reflects correctly but never adds the $4$.\n* Choice D ($10$): ignores the reflection and computes $6+4$, which would be the maximum only if the graph still opened upward.\n\n**Test Day Takeaway:** Reflection converts a minimum into a maximum; apply the outside constant to the reflected value, not before it."
+}

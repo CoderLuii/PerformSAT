@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 2,
-  "passage": "As mayor of Curitiba, Brazil, in the 1970s, the architect Jaime Lerner could not afford a subway, so he reengineered the bus instead. Dedicated lanes, boarding tubes where riders paid before the bus arrived, and long articulated vehicles let his system move subway-like volumes of passengers at a fraction of the cost. Cities short of capital have since ______ the model, building bus rapid transit lines that approach the speed of rail without the expense of tunneling.",
+  "passage": "Using a nocturnal required no specialized training: the observer sighted the North Star through a hole at the instrument's center, turned a pointer until it lay along the two guard stars of the Little Bear, and read the hour against a toothed ring. Manuals of the period accordingly presented the whole procedure as ______, a matter of three motions and a glance.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
-    {
-      "id": "A",
-      "text": "emulated"
-    },
-    {
-      "id": "B",
-      "text": "abandoned"
-    },
-    {
-      "id": "C",
-      "text": "questioned"
-    },
-    {
-      "id": "D",
-      "text": "postponed"
-    }
+    { "id": "A", "text": "straightforward" },
+    { "id": "B", "text": "incomprehensible" },
+    { "id": "C", "text": "tedious" },
+    { "id": "D", "text": "ingenious" }
   ],
   "correctAnswer": "A",
-  "explanation": "The sentence says cities short of capital have followed Curitiba's bus model, building lines that imitate rail. The blank needs a verb meaning to copy or take up that model, and \"emulated,\" choice A, fits. \"Abandoned\" and \"postponed\" contradict the building that follows, and \"questioned\" does not match cities that adopt the approach.",
-  "_meta": {
-    "anchor": "Jaime Lerner, Curitiba bus rapid transit"
-  }
+  "explanation": "**Choice A is correct.** The blank is restated on both sides: \"no specialized training\" before it, \"three motions and a glance\" after it. The word that sums up both is \"straightforward.\"\n\n**The Full Solution:**\n- The passage opens by declaring the procedure easy and closes by compressing it into three motions.\n- The appositive after the blank (\"a matter of three motions and a glance\") is a direct paraphrase of the missing word, so the blank must mean simple and easily done.\n\n**Why the other choices are wrong:**\n- B: \"Incomprehensible\" reverses the passage's whole point — a procedure needing \"no specialized training\" is the opposite of one that cannot be understood.\n- C: \"Tedious\" implies long, wearying effort — the opposite of three motions and a glance.\n- D: \"Ingenious\" would praise the instrument's cleverness, but the sentence characterizes how easy the procedure is for its user, not how inventive its design is."
 }

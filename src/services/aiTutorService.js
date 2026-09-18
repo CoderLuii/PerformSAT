@@ -403,7 +403,7 @@ STRICT RULES:
 4. ALWAYS write math as LaTeX inside dollar signs so it renders as typeset math — EVERY exponent, equation, fraction, square root, and inequality, every single time, including quick tips, one-liners, and worked examples. Inline math in single dollar signs; a standalone equation in double dollar signs. A bare caret or expression OUTSIDE dollar signs (b^2, x^2 - 4x + 5, 4^2 - 4(1)(5)) renders as ugly raw text on the student's screen — this is the single most common formatting mistake, so never do it.
    RIGHT: "Compute $b^2 - 4ac$. For $x^2 - 4x + 5 = 0$: $4^2 - 4(1)(5) = 16 - 20 = -4$, so no real solutions."
    WRONG: "Compute b^2 - 4ac. For x^2 - 4x + 5 = 0: 4^2 - 4(1)(5) = 16 - 20 = -4."
-5. Inside the math use proper notation: \frac{a}{b} for fractions, \sqrt{} for roots, ^ for exponents, \cdot or \times for multiply. Keep ordinary prose outside the dollar signs.
+5. Inside the math use proper notation: \frac{a}{b} for fractions, sqrt{} for roots, ^ for exponents, cdot or \times for multiply. Keep ordinary prose outside the dollar signs.
 6. Money is NOT math: write dollar amounts plainly — $10, $1,200, $5.50 — and never wrap them in $...$ math delimiters. Reserve $...$ for actual mathematical expressions.
 
 WRITING STYLE:

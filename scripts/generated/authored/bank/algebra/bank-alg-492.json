@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-492",
+ "question": "A signal contractor bills a \\$90 mobilization fee plus \\$45 for each rail crossing gate serviced. A town's invoice for one visit totals \\$450. How many gates were serviced?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$360$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "removes one gate's 45 dollars instead of the 90 dollar fee, computing (450 - 45)/45 = 9",
+  "C": "divides 450 by 45 and ignores the mobilization fee entirely",
+  "D": "reports the 360 dollars billed for gate work rather than the number of gates"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Remove the fee and divide by the per-gate charge: $\\frac{450 - 90}{45} = \\frac{360}{45} = 8$.\n\n**The Full Solution:**\nStep 1: Write the invoice as an equation: $90 + 45g = 450$, where $g$ is the number of gates serviced.\nStep 2: Subtract the one-time mobilization fee: $45g = 360$.\nStep 3: Divide by the per-gate charge: $g = 8$. Check: $90 + 45(8) = 90 + 360 = 450$ dollars. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($9$): subtracts one gate's $45$ dollars instead of the $90$-dollar fee, computing $\\frac{405}{45} = 9$.\n* Choice C ($10$): divides $450$ by $45$ and never removes the mobilization fee.\n* Choice D ($360$): reports the dollars billed for gate work rather than the count of gates.\n\n**Test Day Takeaway:** A one-time fee is not part of any per-unit charge — subtract it once, then divide the remainder by the rate."
+}

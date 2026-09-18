@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-234",
+  "question": "Researchers randomly assigned $180$ seedlings of the same species to be grown under one of two light schedules. After ten weeks, the seedlings grown under schedule 1 were on average taller than those grown under schedule 2. Which conclusion is best supported by these results?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The light schedule likely caused the difference in average height for the seedlings in this study."
+    },
+    {
+      "id": "B",
+      "text": "Taller seedlings were more likely to be assigned to schedule 1."
+    },
+    {
+      "id": "C",
+      "text": "Every seedling grown under schedule 1 was taller than every seedling grown under schedule 2."
+    },
+    {
+      "id": "D",
+      "text": "Schedule 1 would produce taller plants for any species grown in any conditions."
+    }
+  ],
+  "distractorNotes": {
+    "B": "reverses the direction of the design; assignment was random and came first",
+    "C": "turns a difference in averages into a claim about every individual",
+    "D": "generalizes beyond the species and conditions actually studied"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Observational vs Experimental Study**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Seedlings were randomly assigned to the light schedules, so this is an experiment and a cause-and-effect conclusion about these seedlings is supported.\n\n**The Full Solution:**\nStep 1: Identify the design. Random assignment to treatments makes this a controlled experiment.\nStep 2: Random assignment makes the two groups similar at the start, so the light schedule is the plausible explanation for the later difference in average height.\nStep 3: The conclusion must stay within the study: these seedlings, of this species, over ten weeks. Choice A does exactly that. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: reverses cause and effect; the seedlings were assigned before any height difference existed.\n* Choice C: a difference in group averages does not mean every individual in one group exceeds every individual in the other.\n* Choice D: extends the result to species and conditions the experiment never included.\n\n**Test Day Takeaway:** Random assignment buys causation, but only for the population and treatments the study actually used."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-118",
+  "question": "In a beverage, the ratio of the volume of concentrate to the volume of water is $2 : 9$. A container holds $3.3$ liters of this beverage. How many milliliters of concentrate does the container hold? ($1$ liter $= 1{,}000$ milliliters)",
+  "correctAnswer": "600",
+  "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**The correct answer is $600$.**\n\n**The Fast Way (~25s):** The beverage has $2 + 9 = 11$ parts, so the concentrate is $\\dfrac{2}{11}(3.3) = 0.6$ liters, or $600$ milliliters.\n\n**The Full Solution:**\nStep 1: Write the volumes as $2k$ liters of concentrate and $9k$ liters of water, so $11k = 3.3$ and $k = 0.3$.\nStep 2: The concentrate is $2k = 0.6$ liters.\nStep 3: Convert: $0.6 \\times 1{,}000 = 600$ milliliters.\nCheck: $0.6 + 2.7 = 3.3$ liters, and $0.6 : 2.7$ reduces to $2 : 9$. $\\checkmark$\n\n**Common Mistakes:** Answering $0.6$, the volume in liters, when the question asks for milliliters; using the water term as the whole, $\\dfrac{2}{9}(3.3) \\approx 0.733$ liters, or about $733$ milliliters; reporting one part, $0.3$ liters $= 300$ milliliters.\n\n**Test Day Takeaway:** Finish the ratio work in the given units, then convert once — and check which unit the question asks for."
+}

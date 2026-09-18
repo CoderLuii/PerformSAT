@@ -45,12 +45,56 @@ export const RW_SKILL_LABELS = Object.fromEntries(CB_RW_SKILLS.map(s => [s.slug,
  * @param {{skillId: string, skillName?: string, section?: string, priority?: number}} gap
  * @returns {Object} a weeks[].activities[] entry
  */
+// Plain-language reasons per error class (diagnosticEngine 6-class taxonomy).
+// These become the "why this is on YOUR plan" line under each task.
+const ERROR_PHRASES = {
+  conceptual_gap: 'the misses trace to the concept itself, not carelessness',
+  procedural_error: 'you know the idea but the steps break down mid-solve',
+  trap_susceptibility: "you're falling for the trap answers, not the content",
+  time_pressure: 'the misses cluster where you were rushing',
+  careless_error: 'you know this — the misses were slips, and slips are fixable',
+  unanswered: 'these went unanswered — a time problem, not a knowledge problem',
+};
+
+/**
+ * One evidence-grounded sentence explaining why this gap earned a spot on the
+ * plan. Built from the gap's own diagnostic fields; returns null when there is
+ * no honest evidence to cite (the UI then just omits the line).
+ *
+ * @param {{testAccuracy?:number, primaryErrorType?:string, evidenceLevel?:string, trend?:string}} gap
+ * @returns {string|null}
+ */
+export const buildBecauseLine = (gap = {}) => {
+  if (!gap) return null;
+  // Onboarding self-reports (the starter plan stamps this exact error type)
+  // have no test evidence to cite — frame the check-in instead.
+  if (String(gap.primaryErrorType || '').toLowerCase().startsWith('self-reported')) {
+    return 'You flagged this in onboarding — the diagnostic measures your real level.';
+  }
+  const parts = [];
+  if (Number.isFinite(gap.testAccuracy)) {
+    parts.push(`You scored ${Math.round(gap.testAccuracy)}% on this on your last test`);
+  }
+  const phrase = ERROR_PHRASES[String(gap.primaryErrorType || '').toLowerCase()];
+  if (phrase) parts.push(phrase);
+  // 'suspected' here means a thin sample (<4 attempted) on a real test — be
+  // honest about the evidence rather than overclaiming.
+  if (gap.evidenceLevel === 'suspected' && parts.length > 0) {
+    parts.push('small sample so far, so this session doubles as a probe');
+  }
+  if (gap.trend === 'declining') parts.push('and it slipped since the test before');
+  if (parts.length === 0) return null;
+  return `${parts.join(' — ')}.`;
+};
+
 export const buildSkillDrillActivity = (gap) => {
   const section = gap.section === 'rw' ? 'rw' : 'math';
   const label = section === 'rw'
     ? (RW_SKILL_LABELS[gap.skillId] || gap.skillName || gap.skillId)
     : (gap.skillName || gap.skillId);
+  const because = buildBecauseLine(gap);
   return {
+    ...(because ? { because } : {}),
     type: 'practice',
     activityType: 'skillDrill',
     title: `Practice: ${label}`,

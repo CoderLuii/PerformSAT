@@ -1,31 +1,31 @@
 {
-  "id": 819,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "The great caravanserais built along the Ottoman trade routes—massive stone compounds that could shelter hundreds of travelers, their pack animals, and their goods within a single fortified courtyard ______ stood roughly a day's journey apart, so that no caravan need ever camp unprotected in open country.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "courtyard,"
-    },
-    {
-      "id": "B",
-      "text": "courtyard"
-    },
-    {
-      "id": "C",
-      "text": "courtyard;"
-    },
-    {
-      "id": "D",
-      "text": "courtyard—"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The phrase \"massive stone compounds…within a single fortified courtyard\" is a supplement inserted into the main clause, and it is introduced by the em dash after \"routes.\" A paired dash has to close it, so the dash in D matches the opening mark and keeps the punctuation around the inserted phrase consistent. The comma in A pairs a dash with a comma, a mismatch that leaves the marks around the supplement uneven; B supplies no closing mark, so the inserted phrase runs straight into \"stood roughly a day's journey apart\"; and the semicolon in C cannot sit inside a single sentence this way, since a semicolon joins two independent clauses rather than closing a supplement."
+ "id": 819,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "The mold for a great bell—two nested shells of clay and loam built up by hand around a brick ______ had to dry for weeks before the founders dared to pour, since any moisture left in the loam could flash into steam and burst the casting.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "core,"
+  },
+  {
+   "id": "B",
+   "text": "core"
+  },
+  {
+   "id": "C",
+   "text": "core;"
+  },
+  {
+   "id": "D",
+   "text": "core—"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The interrupting description opens with a dash, so it must close with a matching dash before the main clause resumes.\n\n**The Full Solution:**\n- The core sentence is \"The mold for a great bell ... had to dry for weeks before the founders dared to pour.\"\n- The description \"two nested shells of clay and loam built up by hand around a brick core\" is an interruption introduced by a dash.\n- A paired punctuation mark must close as it opened: dash with dash.\n\n**Why the other choices are wrong:**\n- A: A comma cannot close an interruption that a dash opened; the marks must match.\n- B: With no closing mark, the interruption runs into the main verb and the sentence loses its boundary.\n- C: A semicolon would demand an independent clause before it, and the interrupting phrase is not one."
 }

@@ -1,0 +1,25 @@
+{
+  "id": 3,
+  "question": "A delivery drone begins a flight with its battery at $96$ percent charge, and the charge decreases by $1.5$ percentage points for each minute of flight. Which equation gives the battery charge $c$, as a percent, after $t$ minutes of flight?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$c = 96 - 1.5t$"
+    },
+    {
+      "id": "B",
+      "text": "$c = 96 - 15t$"
+    },
+    {
+      "id": "C",
+      "text": "$c = 1.5t + 96$"
+    },
+    {
+      "id": "D",
+      "text": "$c = 1.5t - 96$"
+    }
+  ],
+  "correctAnswer": "A",
+  "hint": "A quantity that falls at a steady rate has a negative rate of change; the starting value stays positive.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** The charge starts at $96$ and falls $1.5$ points per minute: $c = 96 - 1.5t$ — choice A.\n\n**The Full Solution:**\nStep 1: At $t = 0$ the charge is $96$ percent, so the constant term is $96$.\nStep 2: The charge decreases, so the rate of change is negative: $-1.5$ percentage points per minute, contributing $-1.5t$.\nStep 3: Combine: $c = 96 - 1.5t$. Check $t = 10$: $96 - 15 = 81$ percent, a drop of $15$ points across $10$ minutes at $1.5$ points per minute. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($c = 96 - 15t$): reads the rate as $15$ percentage points per minute; the battery would then be empty after $6.4$ minutes.\n* Choice C ($c = 1.5t + 96$): uses the right numbers but adds, so the battery would gain charge during the flight.\n* Choice D ($c = 1.5t - 96$): reverses both roles, starting the battery at $-96$ percent and raising it.\n\n**Test Day Takeaway:** Read the direction of change before the size of it. A decreasing quantity forces a negative coefficient on the variable, never on the starting value."
+}

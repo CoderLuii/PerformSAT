@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-114",
+  "question": "The number of monthly downloads of an app increased by $20\\%$ from 2021 to 2022 and then decreased by $25\\%$ from 2022 to 2024. There were $27{,}000$ monthly downloads in 2024. How many monthly downloads were there in 2021?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$22{,}500$"
+    },
+    {
+      "id": "B",
+      "text": "$24{,}300$"
+    },
+    {
+      "id": "C",
+      "text": "$30{,}000$"
+    },
+    {
+      "id": "D",
+      "text": "$36{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "27,000/1.2 = 22,500, undoing only the increase",
+    "B": "27,000(1.2)(0.75) = 24,300, applying both changes forward to the 2024 value",
+    "D": "27,000/0.75 = 36,000, undoing only the decrease"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The two changes multiply the 2021 value by $(1.20)(0.75) = 0.90$, so the 2021 value is $\\dfrac{27{,}000}{0.90} = 30{,}000$.\n\n**The Full Solution:**\nStep 1: Let $d$ be the number of monthly downloads in 2021. The $20\\%$ increase gives $1.20d$ in 2022.\nStep 2: The $25\\%$ decrease gives $0.75(1.20d) = 0.90d$ in 2024, so $0.90d = 27{,}000$.\nStep 3: $d = \\dfrac{27{,}000}{0.90} = 30{,}000$ monthly downloads.\nCheck: $30{,}000 \\to 36{,}000$ after the increase, and $36{,}000 - 9{,}000 = 27{,}000$ after the decrease. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($22{,}500$): This divides by $1.20$ only, undoing the increase but leaving the decrease in place.\n* Choice B ($24{,}300$): This applies both changes forward to the 2024 value instead of undoing them.\n* Choice D ($36{,}000$): This divides by $0.75$ only; $36{,}000$ is the 2022 value, not the 2021 value.\n\n**Test Day Takeaway:** Chain the multipliers first, then divide once — percent changes never add ($+20\\%$ then $-25\\%$ is $-10\\%$, not $-5\\%$)."
+}

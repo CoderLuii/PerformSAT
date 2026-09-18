@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-489",
+ "question": "A lab tests $x$ infant samples and $y$ adult samples, $150$ samples in all. Each infant sample uses $2$ milliliters of reagent and each adult sample uses $5$ milliliters, for $510$ milliliters in all. Which system represents this situation?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x + y = 150$ and $5x + 2y = 510$"
+  },
+  {
+   "id": "B",
+   "text": "$x + y = 510$ and $2x + 5y = 150$"
+  },
+  {
+   "id": "C",
+   "text": "$x + y = 150$ and $7(x + y) = 510$"
+  },
+  {
+   "id": "D",
+   "text": "$x + y = 150$ and $2x + 5y = 510$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "attaches 5 milliliters to the infant samples and 2 to the adult samples, swapping the two rates",
+  "B": "swaps the two totals, using 510 as the sample count and 150 as the reagent volume",
+  "C": "charges every sample the combined 7 milliliters, as if the two types were always tested in pairs"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The sample count gives $x + y = 150$, and the reagent volume gives $2x + 5y = 510$ because each infant sample contributes $2$ milliliters and each adult sample $5$.\n\n**The Full Solution:**\nStep 1: Count equation. There are $x$ infant samples and $y$ adult samples, and the two together number $150$: $x + y = 150$.\nStep 2: Volume equation. Each infant sample uses $2$ milliliters, so those samples use $2x$; each adult sample uses $5$ milliliters, so those use $5y$. The total is $2x + 5y = 510$.\nStep 3: Verify the system has a sensible solution: substituting $x = 150 - y$ gives $300 + 3y = 510$, so $y = 70$ adult samples and $x = 80$ infant samples, and $2(80) + 5(70) = 160 + 350 = 510$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: attaches $5$ milliliters to infant samples and $2$ to adult samples, swapping the two rates.\n* Choice B: swaps the two totals, treating $510$ as a number of samples and $150$ as a volume.\n* Choice C: charges every sample the combined $7$ milliliters, as if the two types were always run in matched pairs.\n\n**Test Day Takeaway:** Build one equation per total in the problem, and keep each rate attached to the count it multiplies — a swapped rate still produces a solvable but wrong system."
+}

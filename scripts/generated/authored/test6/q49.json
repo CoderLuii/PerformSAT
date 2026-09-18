@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
-  "passage": "The steep rice terraces carved into the mountainsides of the northern Philippines have been cultivated for many centuries, and the question of how they have survived so long has drawn researchers into the villages that tend them. Drawing on three decades of fieldwork in these highland communities, ______",
+  "passage": "Along the shores of the Salish Sea, lines of wooden stakes and low stone walls once guided salmon into holding pools on the falling tide, keeping part of each run close at hand while the rest passed on upstream to spawn. After mapping hundreds of these intertidal alignments and dating stakes preserved in the mud, ______",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "the resilience of the terraces, in these researchers' view, owes less to their original engineering than to the constant communal repair the villages carry out each year."
+      "text": "the weirs, archaeologists have concluded, were maintained continuously at some sites for well over a thousand years."
     },
     {
       "id": "B",
-      "text": "the terraces' survival was, in the researchers' view, a product of constant communal repair rather than of the original engineering that shaped them."
+      "text": "the conclusion of archaeologists is that some sites saw continuous maintenance for well over a thousand years."
     },
     {
       "id": "C",
-      "text": "the constant communal repair the villages carry out each year, the researchers contend, matters more to the terraces' survival than their original engineering does."
+      "text": "continuous maintenance at some sites, archaeologists have concluded, extended over more than a thousand years."
     },
     {
       "id": "D",
-      "text": "researchers have concluded that the resilience of the terraces owes less to their original engineering than to the constant communal repair the villages carry out."
+      "text": "archaeologists have concluded that the weirs at some sites were maintained continuously for well over a thousand years."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The sentence opens with the modifier \"Drawing on three decades of fieldwork in these highland communities,\" which has to attach to whoever carried out that fieldwork. Only choice D begins the main clause with \"researchers,\" so the people who did the fieldwork are the ones the modifier describes. Choices A, C, and D open instead with \"the resilience,\" \"the constant communal repair,\" and \"the terraces' survival,\" leaving the modifier dangling, as if an abstraction rather than a person had spent three decades doing fieldwork."
+  "explanation": "**Choice D is correct.** The opening phrase \"After mapping... and dating...\" needs a subject that did the mapping and dating; only D puts that subject — \"archaeologists\" — immediately after the modifier.\n\n**The Full Solution:**\n- An introductory participial phrase attaches to the subject of the main clause that follows.\n- The mappers and daters are the archaeologists, so \"archaeologists\" must head the main clause: \"...dating stakes preserved in the mud, archaeologists have concluded that...\"\n\n**Why the other choices are wrong:**\n- A: It makes \"the weirs\" the subject, absurdly crediting the weirs with mapping and dating themselves.\n- B: \"The conclusion of archaeologists\" is the subject, but a conclusion cannot map alignments or date stakes — the modifier dangles.\n- C: \"Continuous maintenance\" becomes the mapper, another dangling attachment; tucking \"archaeologists have concluded\" inside commas does not rescue the opening phrase."
 }

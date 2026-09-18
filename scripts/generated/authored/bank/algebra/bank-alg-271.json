@@ -1,0 +1,6 @@
+{
+  "question": "A wetland water-balance model gives $5x - 2y = 14$, where $x$ is monthly inflow and $y$ is monthly outflow in centimeters. A second model, $px + qy = 42$ with constants $p$ and $q$, is satisfied by every ordered pair $(x, y)$ that satisfies the first model. What is the value of $p - q$?",
+  "correctAnswer": "21",
+  "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**The correct answer is $21$.**\n\n**The Fast Way (~35s):** The constants scale by $\\frac{42}{14} = 3$, so $p = 15$ and $q = -6$, and $p - q = 21$.\n\n**The Full Solution:**\n\nStep 1: If every solution of the first model satisfies the second, the second equation is a nonzero multiple $r$ of the first.\n\nStep 2: Compare the constants: $14r = 42$, so $r = 3$.\n\nStep 3: Then $p = 5(3) = 15$ and $q = -2(3) = -6$, so $p - q = 15 - (-6) = 21$. Check: $15x - 6y = 42$ is $3$ times $5x - 2y = 14$.\n\n**Common Mistakes:** Dropping the sign of $q$ and computing $15 - 6 = 9$; scaling $p$ but leaving $q$ at $-2$ and reporting $17$; using $r = \\frac{14}{42}$ and reporting $p - q = \\frac{7}{3}$.\n\n**Test Day Takeaway:** Carry the sign through the scaling; a negative coefficient stays negative, and a subtraction of it becomes an addition.",
+  "id": "bank-alg-271"
+}

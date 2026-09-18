@@ -1,0 +1,41 @@
+{
+  "id": 3,
+  "question": "In the $xy$-plane, the graph of the quadratic function $f$ is shown. Which of the following statements about $f$ must be true?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        3,
+        6
+      ],
+      "a": -1,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The coefficient of $x^2$ in $f(x)$ is positive, and $f$ has a minimum value."
+    },
+    {
+      "id": "B",
+      "text": "The coefficient of $x^2$ in $f(x)$ is positive, and $f$ has a maximum value."
+    },
+    {
+      "id": "C",
+      "text": "The coefficient of $x^2$ in $f(x)$ is negative, and $f$ has a minimum value."
+    },
+    {
+      "id": "D",
+      "text": "The coefficient of $x^2$ in $f(x)$ is negative, and $f$ has a maximum value."
+    }
+  ],
+  "distractorNotes": {
+    "A": "describes an upward-opening graph",
+    "B": "positive a cannot give a maximum",
+    "C": "right sign, wrong extreme"
+  },
+  "correctAnswer": "D",
+  "hint": "The direction the arms point decides the sign of the leading coefficient, and that sign decides which extreme value exists.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~15s):** The parabola opens downward, so the leading coefficient is negative and the vertex is the highest point.\n\n**The Full Solution:**\nStep 1: The graph is a parabola whose arms point downward, away from the vertex at the top.\nStep 2: For $f(x) = ax^2 + bx + c$, the parabola opens downward exactly when $a < 0$, so the coefficient of $x^2$ is negative.\nStep 3: When the arms fall away from the vertex, no output is larger than the vertex's output, so $f$ has a maximum value and no minimum. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: describes an upward-opening parabola, which is the graph you would see if $a$ were positive.\n* Choice B: pairs a positive leading coefficient with a maximum, but a positive coefficient forces a minimum.\n* Choice C: reads the sign of the coefficient correctly but then names the wrong extreme value.\n\n**Test Day Takeaway:** Sign of $a$ and type of extreme value are locked together: $a > 0$ opens upward with a minimum, $a < 0$ opens downward with a maximum."
+}

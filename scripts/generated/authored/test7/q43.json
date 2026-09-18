@@ -1,31 +1,31 @@
 {
-  "id": 743,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 2,
-  "passage": "A recent history of the household at Thomas Jefferson's Monticello reconstructs the lives of the enslaved Hemings family in unusual detail. It does so by taking seriously two bodies of evidence that earlier accounts had largely set aside: the testimony passed down by the family's enslaved descendants and a range of legal records that previous historians had treated as marginal. Read closely, these sources document the Hemingses' kinship ties, labor, and movements about as fully as the comparable record for the Jefferson family. Because the Hemingses appear central to the documented story only once these particular sources are consulted, the reconstruction supports the inference that earlier portrayals of the family as peripheral mainly reflected ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "an oversight that, once it is corrected, makes any account of Monticello that leaves out the Hemings family unusable as serious documented history."
-    },
-    {
-      "id": "B",
-      "text": "a problem so severe that nearly every existing history of slavery in the early United States will now have to be substantially rewritten."
-    },
-    {
-      "id": "C",
-      "text": "gaps in the descendants’ testimony and the related legal records that kept earlier historians from documenting the family in comparable detail."
-    },
-    {
-      "id": "D",
-      "text": "the limited range of sources those earlier accounts relied on rather than any genuine scarcity in the surviving documentary record."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The Hemingses appear central only when the descendant testimony and legal records are consulted, which means earlier portrayals of the family as marginal reflected the narrow set of sources those accounts used, not a real lack of documentation. Choice A leaps to a sweeping methodological verdict the passage does not draw. Choice B generalizes far beyond Monticello to all histories of slavery, and Choice C blames gaps in the sources themselves, contradicting the point that the records are in fact rich once taken seriously."
+ "id": 743,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 2,
+ "passage": "Publicity photographs from ENIAC's 1946 debut show the machine flanked by men in suits, and early histories of computing mention the six women who programmed it barely or not at all. Historians revisiting the project have worked from a different record: operations logbooks, surviving wiring diagrams, and interviews with the programmers themselves. Those sources document the women designing the machine's first instruction sequences, tracing hardware faults, and inventing techniques that became standard practice. The women appear peripheral only when publicity materials serve as the principal evidence, so the fuller record supports the conclusion that their early invisibility chiefly reflected ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the destruction of the operations logbooks shortly after the machine was retired from service."
+  },
+  {
+   "id": "B",
+   "text": "a preference among the six programmers for keeping their contributions out of public view."
+  },
+  {
+   "id": "C",
+   "text": "a flaw so fundamental that historians must now set aside every account of early computing written before the reassessment."
+  },
+  {
+   "id": "D",
+   "text": "the narrow range of sources on which the early histories relied rather than the actual scope of the work the programmers performed."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The passage's hinge is conditional: the women look peripheral \"only when publicity materials serve as the principal evidence,\" while logbooks, diagrams, and interviews document central work. What varies is the sources consulted, not the work performed — so the invisibility reflected the histories' narrow evidence base.\n\n**The Full Solution:**\n- Two portraits diverge: publicity photographs minus the programmers, versus operational records documenting them designing instruction sequences and inventing standard techniques.\n- The \"only when\" clause ties each portrait to its evidence, making source selection the variable that produced the early invisibility.\n- D draws that inference and adds its proper contrast — the invisibility did not reflect the actual scope of the programmers' work, which the fuller record establishes.\n\n**Why the other choices are wrong:**\n- A: The logbooks survive — historians are using them, so their destruction cannot be the explanation.\n- B: No preference for privacy appears anywhere; the interviews suggest the programmers were willing to speak.\n- C: Discarding every earlier account overshoots a passage about correcting emphasis with fuller evidence."
 }

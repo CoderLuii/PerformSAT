@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "question": "On a solar farm's layout drawing, mounting pier $A$ is located at $(-4, 3)$ and mounting pier $B$ is located at $(k, 11)$, where $k$ is a constant. The midpoint of $\\overline{AB}$ is $(5, 7)$. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$11$"
+    },
+    {
+      "id": "D",
+      "text": "$14$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "drops the sign of the -4, solving 2(5) - 4 = 6 instead of 2(5) - (-4)",
+    "B": "forgets to double the midpoint coordinate, computing 5 - (-4) = 9",
+    "C": "applies the midpoint relation to the y-coordinates, computing 2(7) - 3 = 11"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The midpoint's $x$-coordinate is the average of $-4$ and $k$, so $k=2(5)-(-4)=14$.\n\n**The Full Solution:**\nStep 1: The midpoint of a segment has $x$-coordinate $\\dfrac{x_A+x_B}{2}$. Here that gives $\\dfrac{-4+k}{2}=5$.\nStep 2: Multiply both sides by $2$: $-4+k=10$, so $k=14$.\nStep 3: Check both coordinates: the midpoint of $(-4,3)$ and $(14,11)$ is $\\left(\\dfrac{-4+14}{2},\\dfrac{3+11}{2}\\right)=(5,7)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): drops the negative on the $-4$, computing $2(5)-4=6$ instead of $2(5)-(-4)$.\n* Choice B ($9$): forgets to double the midpoint coordinate and computes $5-(-4)=9$, treating the midpoint as if it were the full run.\n* Choice C ($11$): runs the midpoint relation on the $y$-coordinates, computing $2(7)-3=11$, which is the wrong axis.\n\n**Test Day Takeaway:** With one endpoint and the midpoint known, the missing endpoint coordinate is $2(\\text{midpoint})-(\\text{known endpoint})$ — doubling first is what most sign errors skip."
+}

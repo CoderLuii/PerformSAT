@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-198",
+  "question": "The price of a monthly transit pass was reduced by $15\\%$. After the reduction, the price of the pass was $\\$51$. What was the price of the pass, in dollars, before the reduction?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$43.35$"
+    },
+    {
+      "id": "B",
+      "text": "$58.65$"
+    },
+    {
+      "id": "C",
+      "text": "$60$"
+    },
+    {
+      "id": "D",
+      "text": "$66$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies 51 by 0.85 (applies the decrease again)",
+    "B": "multiplies 51 by 1.15 to undo a decrease",
+    "D": "adds 15 dollars instead of undoing 15%"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** A $15\\%$ decrease leaves $85\\%$: $0.85x = 51$, so $x = \\frac{51}{0.85} = 60$.\n\n**The Full Solution:**\nStep 1: Let $x$ be the original price. After a $15\\%$ reduction, the price is $(1 - 0.15)x = 0.85x$.\nStep 2: Set $0.85x = 51$ and divide: $x = \\frac{51}{0.85} = 60$.\nStep 3: Check: $15\\%$ of $\\$60$ is $\\$9$, and $60 - 9 = 51$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($43.35$): multiplies $51$ by $0.85$, applying the reduction a second time instead of undoing it.\n* Choice B ($58.65$): multiplies $51$ by $1.15$, but $15\\%$ of the original is not $15\\%$ of the reduced price.\n* Choice D ($66$): adds $\\$15$ rather than undoing a $15\\%$ decrease.\n\n**Test Day Takeaway:** To recover an original price from a discounted price, divide by $\\left(1 - \\frac{p}{100}\\right)$. Multiplying by $\\left(1 + \\frac{p}{100}\\right)$ does not reverse a decrease."
+}

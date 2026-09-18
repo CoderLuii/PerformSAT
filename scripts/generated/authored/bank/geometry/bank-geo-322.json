@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-322",
+ "question": "An autoclave's inner cavity is a rectangular prism with edges of $12$, $16$, and $21$ centimeters. What is the greatest length, in centimeters, of a straight glass rod that can lie entirely inside the cavity?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$29$"
+  },
+  {
+   "id": "C",
+   "text": "$37$"
+  },
+  {
+   "id": "D",
+   "text": "$49$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "uses only the 12 by 16 face diagonal and never accounts for the 21-centimeter edge",
+  "C": "adds the two largest edges, 16 + 21, instead of using the Pythagorean theorem",
+  "D": "adds all three edges, 12 + 16 + 21, which traces a bent path along three edges"
+ },
+ "explanation": "**SAT Pattern: Right Triangle Pythagorean**\n\n**Choice B is correct.** The longest rod lies along the space diagonal: $\\sqrt{12^2 + 16^2 + 21^2} = \\sqrt{841} = 29$ centimeters.\n\n**The Fast Way (~35s):** $144 + 256 + 441 = 841$, so the space diagonal is $29$.\n\n**The Full Solution:**\n\nStep 1: A face diagonal across the $12$-by-$16$ face measures $\\sqrt{144 + 256} = \\sqrt{400} = 20$ centimeters.\n\nStep 2: That face diagonal and the remaining $21$-centimeter edge meet at a right angle, so they are the legs of a right triangle whose hypotenuse is the space diagonal.\n\nStep 3: The space diagonal is $\\sqrt{20^2 + 21^2} = \\sqrt{400 + 441} = \\sqrt{841} = 29$ centimeters. Check: $29$ exceeds every edge and every face diagonal, as the longest interior segment must.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($20$): stops at the face diagonal and ignores the $21$-centimeter edge.\n* Choice C ($37$): adds the two largest edges instead of using the Pythagorean theorem.\n* Choice D ($49$): adds all three edges, tracing a bent path rather than a straight rod.\n\n**Test Day Takeaway:** A box's longest interior segment needs the Pythagorean theorem twice — face diagonal first, then the perpendicular edge."
+}

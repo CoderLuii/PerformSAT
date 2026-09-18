@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-078",
+ "question": "A signal chain passes each input through $g$ and then through $f$, where $g(x) = x^2 - c$ for a constant $c$ and $f(x) = 2x + 9$. When the input is $5$, the chain's final output is $51$. What is the value of $c$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Composition with Specific Input**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~30s):** $f(g(5)) = 2(25 - c) + 9 = 59 - 2c$, and setting that equal to $51$ gives $c = 4$.\n\n**The Full Solution:**\nStep 1: Apply the inner function first: $g(5) = 5^2 - c = 25 - c$.\nStep 2: Feed that into the outer function: $f(g(5)) = 2(25 - c) + 9 = 50 - 2c + 9 = 59 - 2c$.\nStep 3: Set $59 - 2c = 51$, so $2c = 8$ and $c = 4$. Check: $g(5) = 25 - 4 = 21$ and $f(21) = 42 + 9 = 51$ ✓\n\n**Common Mistakes:** Answering $8$ stops at $2c = 8$; answering $-4$ reverses the subtraction, solving $59 + 2c = 51$; answering $21$ reports the intermediate value $g(5)$ rather than the constant.\n\n**Test Day Takeaway:** Work a composition from the inside out, keeping the unknown constant symbolic until the final equation."
+}

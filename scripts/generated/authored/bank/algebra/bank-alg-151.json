@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-151",
+ "question": "A guardrail crew's two posting rules are $y = 2x + c$ and $5x - y = 13$, and they are met together only when $x$ is $6$. What is the value of the constant $c$?",
+ "correctAnswer": "5",
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~25s):** At $x = 6$ the second rule gives $30 - y = 13$, so $y = 17$; then $17 = 2(6) + c$ makes $c = 5$.\n\n**The Full Solution:**\nStep 1: The second rule contains no unknown constant, so use it first. Substituting $x = 6$ into $5x - y = 13$ gives $30 - y = 13$.\nStep 2: Solve for $y$: $-y = 13 - 30 = -17$, so $y = 17$.\nStep 3: Put both coordinates into the first rule: $17 = 2(6) + c$, so $17 = 12 + c$ and $c = 5$. Check: $y = 2(6) + 5 = 17$ and $5(6) - 17 = 13$. $\\checkmark$\n\n**Common Mistakes:** Reading $y = 13$ straight off $5x - y = 13$ and computing $13 - 12 = 1$; mishandling the sign as $y = 13 - 30 = -17$ and reporting $-29$; reporting $17$, the $y$-coordinate, instead of the constant $c$.\n\n**Test Day Takeaway:** Start with the equation that has no unknown constant; it pins the missing coordinate, and only then does the constant fall out in one step."
+}

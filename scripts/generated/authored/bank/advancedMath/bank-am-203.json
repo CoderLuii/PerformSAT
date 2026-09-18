@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-203",
+  "question": "The number of connected devices in a sensor network is modeled by $D(t) = 24 \\cdot 9^{t/6}$, where $t$ is the number of hours after the network is switched on. By what factor does the number of devices grow over a period of $15$ hours?",
+  "correctAnswer": "243",
+  "explanation": "**SAT Pattern: Exponential Growth Factor over a Period**\n\n**The correct answer is $243$.**\n\n**The Fast Way (~30s):** Over $15$ hours the exponent rises by $\\frac{15}{6} = \\frac{5}{2}$, so the factor is $9^{5/2} = 3^5 = 243$.\n\n**The Full Solution:**\nStep 1: The factor over any span of $15$ hours is $\\dfrac{D(t + 15)}{D(t)} = 9^{(t+15)/6 - t/6} = 9^{15/6}$.\nStep 2: $\\dfrac{15}{6} = \\dfrac{5}{2}$, so the factor is $9^{5/2} = \\left(9^{1/2}\\right)^5 = 3^5$.\nStep 3: $3^5 = 243$. Check from $t = 0$: $D(0) = 24$ and $D(15) = 24 \\cdot 243 = 5{,}832$. $\\checkmark$\n\n**Common Mistakes:** Answering $81$, which rounds the exponent $\\frac{5}{2}$ down to $2$. Answering $22.5$, which multiplies $9$ by $\\frac{15}{6}$ instead of raising $9$ to that power.\n\n**Test Day Takeaway:** The growth factor over a span depends only on how much the exponent changes — subtract exponents, and rewrite a half-power as a square root to keep the arithmetic exact."
+}

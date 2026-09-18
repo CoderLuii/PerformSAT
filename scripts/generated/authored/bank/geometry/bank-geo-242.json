@@ -1,0 +1,29 @@
+{
+ "question": "The circular outcrop of a salt dome has a radius of $r$ meters. Increasing the radius by $k$ meters increases the circumference by $12\\pi$ meters and the area by $156\\pi$ square meters. What is the value of $r$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports k, the increase in the radius, instead of r",
+  "C": "drops the k squared term and solves 12r = 156",
+  "D": "reports the enlarged radius r + k = 16"
+ },
+ "explanation": "**SAT Pattern: Circumference of a Circle**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** The circumference change gives $2\\pi k = 12\\pi$, so $k = 6$; then $\\pi(12r + 36) = 156\\pi$ gives $r = 10$.\n\n**The Full Solution:**\nStep 1: The circumference grows by $2\\pi(r + k) - 2\\pi r = 2\\pi k$. Setting $2\\pi k = 12\\pi$ gives $k = 6$ meters.\nStep 2: The area grows by $\\pi(r + 6)^2 - \\pi r^2 = \\pi(12r + 36)$. Setting that equal to $156\\pi$ gives $12r + 36 = 156$.\nStep 3: Solve: $12r = 120$, so $r = 10$ meters. Check: the outcrop grows from radius $10$ to $16$, and $\\pi(256 - 100) = 156\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): reports $k$, the amount the radius grew, rather than the original radius.\n* Choice C ($13$): expands $(r + 6)^2$ as $r^2 + 12r$ and drops the $36$, solving $12r = 156$.\n* Choice D ($16$): reports the enlarged radius $r + k$ instead of the original.\n\n**Test Day Takeaway:** Circumference changes linearly with the radius, so it pins the increase first; the area equation then has only one unknown left.",
+ "id": "bank-geo-242"
+}

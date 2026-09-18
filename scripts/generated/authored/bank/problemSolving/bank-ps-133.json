@@ -1,0 +1,59 @@
+{
+  "id": "bank-ps-133",
+  "question": "The scatterplot shows a laptop battery's remaining charge $y$, as a percent, after $x$ hours of use, along with the line of best fit $\\hat{y} = -12x + 98$. According to the line of best fit, what is the predicted remaining charge, as a percent, after $5$ hours of use?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          0,
+          96
+        ],
+        [
+          1,
+          88
+        ],
+        [
+          2,
+          72
+        ],
+        [
+          3,
+          64
+        ],
+        [
+          4,
+          48
+        ],
+        [
+          5,
+          40
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          7,
+          16
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 8,
+      "yMin": 0,
+      "yMax": 100,
+      "xGridStep": 1,
+      "yGridStep": 10,
+      "xLabelStep": 1,
+      "yLabelStep": 20,
+      "xLabel": "Hours of use",
+      "yLabel": "Charge (%)",
+      "bestFitLine": {
+        "slope": -12,
+        "intercept": 98
+      }
+    }
+  },
+  "correctAnswer": "38",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**The correct answer is $38$.**\n\n**The Fast Way (~10s):** $\\hat{y} = -12(5) + 98 = -60 + 98 = 38$.\n\n**The Full Solution:**\nStep 1: Substitute $x = 5$ into the equation: $-12 \\times 5 = -60$.\nStep 2: Add the intercept: $-60 + 98 = 38$ percent.\nStep 3: Check the sign and the graph: the slope is negative, so the charge falls $12$ points per hour, and the plotted point at $x = 5$ is $(5, 40)$, close to the line's $38$. $\\checkmark$\n\n**Common Mistakes:** Dropping the negative sign and computing $12(5) + 98 = 158$, which is impossible for a percent; reading the data point $40$ instead of the line's value; subtracting the slope once, $98 - 12 = 86$, instead of five times.\n\n**Test Day Takeaway:** A negative slope subtracts; multiply the slope by the full $x$-value before adding the intercept."
+}

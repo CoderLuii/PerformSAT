@@ -6,20 +6,20 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 2,
- "passage": "In the first decades of powered flight, pilots navigated largely by looking out the window and following roads, rivers, and rail lines, and there was no central system to keep aircraft safely separated from one another. A pilot who entered a cloud could quickly lose track of which way was up. ______ a dense network of radar, radio beacons, and air-traffic controllers tracks virtually every airliner from takeoff to landing, and instrument procedures let pilots fly safely through weather that would once have grounded them.",
+ "passage": "For centuries, moving cattle up to the high alpine pastures meant a slow procession on foot, families and animals climbing together over several days as the snow line retreated. ______ many herds ride at least part of the way in trucks, and the June ascent that once took most of a week can be finished in a morning, though in some valleys the autumn descent is still kept as a village festival, the returning animals garlanded with flowers.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "Therefore,"
+   "text": "However,"
   },
   {
    "id": "B",
-   "text": "Likewise,"
+   "text": "Consequently,"
   },
   {
    "id": "C",
-   "text": "For instance,"
+   "text": "Similarly,"
   },
   {
    "id": "D",
@@ -27,5 +27,5 @@
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The passage contrasts the early decades of flight—no central system, pilots navigating by landmarks—with the present, when radar, beacons, and controllers track nearly every airliner. \"Today\" marks that move from past practice to current practice. \"Therefore\" would signal a consequence, \"Likewise\" a parallel, and \"For instance\" an example, none of which captures the then-versus-now shift the sentence makes."
+ "explanation": "**Choice D is correct.** The passage pivots from the practice's long past, marked by \"For centuries,\" to its present form, trucks, a morning's ascent, and \"Today\" is the transition that signals that shift in time.\n\n**The Full Solution:**\n- Sentence one describes the traditional pattern over centuries.\n- Sentence two describes current practice: partial trucking, a compressed ascent, a surviving festival.\n- The relationship between the sentences is then-versus-now, so a time marker fits the blank best.\n\n**Why the other choices are wrong:**\n- A: \"However\" flags pure contradiction, but the second sentence updates the practice across time rather than disputing anything; the temporal signal is the one the paragraph is built on.\n- B: \"Consequently\" would make modern trucking a result of the old processions, a causal link the text never draws.\n- C: \"Similarly\" announces a parallel case, but the second sentence describes the same custom changed, not a comparable one."
 }

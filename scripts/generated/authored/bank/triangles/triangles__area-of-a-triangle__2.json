@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "In triangle $MNP$, the altitude drawn to side $\\overline{MN}$ has length $16$ centimeters. If the area of triangle $MNP$ is $176$ square centimeters, what is the length, in centimeters, of $\\overline{MN}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11$"
+  },
+  {
+   "id": "B",
+   "text": "$22$"
+  },
+  {
+   "id": "C",
+   "text": "$88$"
+  },
+  {
+   "id": "D",
+   "text": "$352$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the area by the altitude without doubling it first, effectively solving $bh = 176$",
+  "C": "halves the area and stops, never bringing the altitude into the calculation",
+  "D": "reports $2A = 352$, stopping just before the division by the altitude"
+ },
+ "correctAnswer": "B",
+ "hint": "Put what you know into the area formula and solve for the one missing factor.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** $MN = \\frac{2A}{h} = \\frac{352}{16} = 22$.\n\n**The Full Solution:**\nStep 1: The altitude to $\\overline{MN}$ is the height that pairs with base $MN$, so $A = \\frac{1}{2}(MN)(16)$.\nStep 2: Substitute the area: $176 = 8(MN)$.\nStep 3: Divide by $8$: $MN = 22$ centimeters.\n\nVerification: $\\frac{1}{2}(22)(16) = 176$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): divides the area by the altitude without doubling it first, effectively solving $bh = 176$.\n* Choice C ($88$): halves the area and stops, never bringing the altitude into the calculation.\n* Choice D ($352$): reports $2A = 352$, stopping just before the division by the altitude.\n\n**Test Day Takeaway:** A base and the altitude drawn to it are the only pair the area formula accepts — clear the $\\frac{1}{2}$ into $2A = bh$ and the rest is one division."
+}

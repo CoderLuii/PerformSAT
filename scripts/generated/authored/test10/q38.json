@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 2,
- "passage": "Early-twentieth-century astronomers could measure the apparent brightness of a star but had no general way to tell whether a faint star was dim or merely distant. Working at the Harvard College Observatory, Henrietta Swan Leavitt studied a class of pulsing stars called Cepheids and discovered a regular relationship: the longer a Cepheid takes to complete its cycle of brightening and dimming, the greater its true luminosity. Because a star's true and apparent brightness together reveal its distance, Leavitt's relationship gave astronomers their first reliable yardstick for measuring distances far beyond our own galaxy. Within little more than a decade, others used it to show that the universe extends well past the Milky Way.",
+ "passage": "In the wool trade, sorting has long been a craft of its own, because a single fleece contains many wools: fibers from the shoulder are finer and more even than those from the britch, near the hindquarters, and the gap can span several quality grades. A lot sold unsorted must be priced as though it were all of its worst wool, since a buyer cannot risk paying fine-wool prices for a bale that is partly coarse. Sorters therefore break each fleece into matched portions before sale, a step that costs labor but lets the finest fibers earn what their quality deserves.",
  "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "Henrietta Swan Leavitt spent years studying a class of pulsing stars called Cepheids while she was employed as a human computer at the Harvard College Observatory."
+   "text": "Wool taken from the shoulders of a sheep is finer, longer, and more valuable than the wool taken from any other part of the animal's fleece."
   },
   {
    "id": "B",
-   "text": "Leavitt discovered that a Cepheid's pulsation period reveals its true luminosity, giving astronomers their first reliable means of measuring distances beyond the Milky Way."
+   "text": "Sorting a fleece into matched portions lets its best wool earn the price that selling the fleece whole would deny it."
   },
   {
    "id": "C",
-   "text": "Astronomers in the early twentieth century could measure a star's apparent brightness but not its distance."
+   "text": "The labor that sorting requires has made sorted wool too expensive for most textile buyers."
   },
   {
    "id": "D",
-   "text": "Within little more than a decade, astronomers used Leavitt's work to show that the universe extends beyond our own galaxy."
+   "text": "Unsorted fleeces are usually bought by inexperienced buyers who cannot distinguish among grades of wool."
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The passage sets up a problem—astronomers could not tell whether a faint star was dim or merely distant—and presents Leavitt's discovery as the solution: a Cepheid's period reveals its true luminosity, which, with apparent brightness, yields distance, giving the first reliable yardstick beyond the galaxy. Choice B states that central achievement. Choice A reports only what she studied; Choice C states only the problem; and Choice D notes a later consequence, each capturing a part rather than the main idea."
+ "explanation": "**Choice B is correct.** The text's reasoning converges on its final sentence: because an unsorted lot is priced at its worst wool, breaking a fleece into matched portions is what lets the finest fibers \"earn what their quality deserves.\" B restates that conclusion.\n\n**The Full Solution:**\n- Premise one: a fleece spans several grades from shoulder to britch.\n- Premise two: unsorted lots are priced at the worst wool, since buyers cannot risk overpaying.\n- Conclusion: sorting recovers the value that whole-fleece selling forfeits, which is the main idea B captures.\n\n**Why the other choices are wrong:**\n- A: The shoulder-britch difference is a supporting fact, and the text never says shoulder wool beats every other part in length or value.\n- C: The text calls sorting a labor cost worth paying, never one that priced sorted wool out of the market.\n- D: Cautious pricing by buyers, not inexperience, is the text's explanation for how unsorted lots sell."
 }

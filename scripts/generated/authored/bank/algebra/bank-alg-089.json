@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-089",
+  "question": "On a site grid in which each unit represents one meter, a straight fiber-optic run is laid so that it contains the two plotted points. At what $y$-value does the run cross the $y$-axis?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -6,
+          13
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "xMin": -8,
+      "xMax": 11,
+      "yMin": -4,
+      "yMax": 15
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$13$"
+    },
+    {
+      "id": "D",
+      "text": "$17$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the y-coordinate of the right-hand point",
+    "C": "reports the y-coordinate of the left-hand point",
+    "D": "uses a slope of +2/3, giving 13 + 4"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Find y-Intercept from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** The slope is $\\frac{3 - 13}{9 + 6} = -\\frac{2}{3}$; walking $6$ meters right from $(-6, 13)$ drops the height by $4$, giving $9$.\n\n**The Full Solution:**\nStep 1: Read the two points: $(-6, 13)$ and $(9, 3)$. The slope is $\\frac{3 - 13}{9 - (-6)} = \\frac{-10}{15} = -\\frac{2}{3}$.\nStep 2: Use point-slope form from $(-6, 13)$: $y - 13 = -\\frac{2}{3}(x + 6)$.\nStep 3: Set $x = 0$: $y - 13 = -\\frac{2}{3}(6) = -4$, so $y = 9$. Check: from $(0, 9)$, moving $9$ to the right drops the height by $\\frac{2}{3}(9) = 6$, landing at $(9, 3)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reports the $y$-coordinate of the right-hand point instead of the crossing height.\n* Choice C ($13$): reports the $y$-coordinate of the left-hand point, as if the run were level.\n* Choice D ($17$): uses a slope of $+\\frac{2}{3}$, adding $4$ to $13$ instead of subtracting it.\n\n**Test Day Takeaway:** Find the slope first, then travel from a known point to $x = 0$ — the sign of the slope decides whether the height rises or falls on the way."
+}

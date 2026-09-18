@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "For a fabric mill, the daily profit, in dollars, from finishing $x$ bolts of upholstery cloth is modeled by $P(x) = -2x^2 + 114x - 1{,}080$ for $x \\ge 0$. Which inequality gives all values of $x$ for which the mill's daily profit is positive?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12 < x < 45$"
+  },
+  {
+   "id": "B",
+   "text": "$12 < x < 57$"
+  },
+  {
+   "id": "C",
+   "text": "$x < 12$ or $x > 45$"
+  },
+  {
+   "id": "D",
+   "text": "$x > 45$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "replaces the larger zero 45 with 57, the sum of the two zeros",
+  "C": "selects the outside intervals, where the downward parabola is below the x-axis and the profit is negative",
+  "D": "keeps only the branch beyond the larger zero, where P(x) is already negative"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Factor: $P(x) = -2(x - 12)(x - 45)$. A downward parabola is above the $x$-axis strictly between its zeros, so the profit is positive for $12 < x < 45$.\n\n**The Full Solution:**\nStep 1: Find the zeros. Setting $-2x^2 + 114x - 1{,}080 = 0$ and dividing by $-2$ gives $x^2 - 57x + 540 = 0$. Since $12 \\cdot 45 = 540$ and $12 + 45 = 57$, the zeros are $x = 12$ and $x = 45$.\nStep 2: Decide which side is positive. The leading coefficient $-2$ is negative, so the parabola opens downward: it lies above the $x$-axis between the zeros and below it outside them.\nStep 3: Check an interior value and an exterior one. At $x = 30$, $P(30) = -1{,}800 + 3{,}420 - 1{,}080 = 540 > 0$; at $x = 50$, $P(50) = -5{,}000 + 5{,}700 - 1{,}080 = -380 < 0$. So the profit is positive exactly on $12 < x < 45$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($12 < x < 57$): $57$ is the *sum* of the zeros (it comes from $-\\frac{b}{a}$ after dividing), not a zero itself. At $x = 50$ the profit is already $-\\$380$.\n* Choice C ($x < 12$ or $x > 45$): this is the correct answer to the opposite question. Outside the zeros a downward parabola is negative, which here means the mill loses money.\n* Choice D ($x > 45$): finishing more than $45$ bolts pushes $P(x)$ below zero, so this interval is exactly where the mill should not operate.\n\n**Test Day Takeaway:** For a quadratic inequality, factor to the zeros, then let the sign of the leading coefficient decide which side is positive: downward parabolas are positive *between* their zeros, upward parabolas *outside* them."
+}

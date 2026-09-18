@@ -1,0 +1,40 @@
+{
+ "question": "A bike path of length $30\\pi$ meters encircles a pocket park. Groundskeepers will reseed the wedge of lawn shown, whose central angle measures $144^{\\circ}$. What is the wedge's area, in square meters?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 144,
+   "angleLabel": "144°",
+   "radius": "r",
+   "labelCenter": "O",
+   "showRadiusLabel": true,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$90\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$180\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$225\\pi$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "computes the wedge's arc length, (144/360)(30 pi) = 12 pi, instead of its area",
+  "C": "uses the fraction 144/180 instead of 144/360, giving 0.8 times 225 pi",
+  "D": "reports the area of the entire park, pi times 15 squared"
+ },
+ "explanation": "**SAT Pattern: Circumference → Radius → Sector**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** From $2\\pi r = 30\\pi$ the radius is $15$, and $\\frac{144}{360} = \\frac{2}{5}$ of the park's $225\\pi$ square meters is $90\\pi$.\n\n**The Full Solution:**\nStep 1: The bike path is the circumference: $2\\pi r = 30\\pi$, so $r = 15$ meters.\nStep 2: The full park has area $\\pi r^2 = 225\\pi$ square meters.\nStep 3: A $144^{\\circ}$ wedge is $\\frac{144}{360} = \\frac{2}{5}$ of the circle, so its area is $\\frac{2}{5}(225\\pi) = 90\\pi$ square meters. Check: $\\frac{2}{5}$ of the full area should be less than half of $225\\pi$, and $90\\pi < 112.5\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($12\\pi$): applies $\\frac{2}{5}$ to the circumference, producing the wedge's arc length rather than its area.\n* Choice C ($180\\pi$): divides the central angle by $180$ instead of $360$, doubling the correct fraction.\n* Choice D ($225\\pi$): reports the whole park's area and never takes the fraction.\n\n**Test Day Takeaway:** Circumference gives the radius; the same angle fraction scales arc length off $2\\pi r$ and sector area off $\\pi r^2$ — pick the one the question asks for.",
+ "id": "bank-geo-060"
+}

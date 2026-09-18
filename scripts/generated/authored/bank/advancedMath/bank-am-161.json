@@ -1,0 +1,6 @@
+{
+  "question": "A suspension cable's profile is modeled by $y=x^{2}+kx+40$, whose graph does not intersect the $x$-axis, where $k$ is an integer. What is the least possible value of $k$?",
+  "correctAnswer": "-12",
+  "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**The correct answer is $-12$.**\n\n**The Fast Way (~25s):** $k^{2}-160<0$ gives $|k|<12.65$, so $k$ runs from $-12$ to $12$ and the least is $-12$.\n\n**The Full Solution:**\nStep 1: No $x$-intercepts means $x^{2}+kx+40=0$ has no real solutions, so $k^{2}-4(1)(40)<0$.\nStep 2: That is $k^{2}<160$, so $|k|<\\sqrt{160}\\approx 12.65$.\nStep 3: The integers satisfying this run from $-12$ to $12$, so the least is $-12$. Check: $k=-12$ gives $144-160=-16<0$, while $k=-13$ gives $169-160=9>0$ ✓\n\n**Common Mistakes:**\n* $-13$: rounded $\\sqrt{160}\\approx 12.65$ up instead of staying strictly inside the bound.\n* $12$: reported the greatest integer value rather than the least.\n* $0$: assumed a negative $k$ was impossible for a graph above the $x$-axis.\n\n**Test Day Takeaway:** $k^{2}<160$ bounds $k$ on both sides — the least value is the negative end, not $0$.",
+  "id": "bank-am-161"
+}

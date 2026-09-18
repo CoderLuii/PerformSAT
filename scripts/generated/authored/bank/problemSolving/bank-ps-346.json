@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-346",
+ "question": "Hole by hole, a golfer carded $4$, $5$, $3$, $5$, $4$, $6$, $k$, $4$, and $5$ over a nine-hole round. If $5$ is the only mode of these nine scores, what is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "makes $3$ appear twice and leaves $4$ and $5$ tied at three each, so there is no single mode",
+  "B": "makes $4$ appear four times, which would make $4$ the mode instead of $5$",
+  "D": "makes $6$ appear twice and again leaves $4$ and $5$ tied at three each"
+ },
+ "explanation": "**SAT Pattern: Mode from List**\n\n**Choice C is correct.** Without $k$, the scores $4$ and $5$ each appear three times, so only $k = 5$ breaks the tie in favor of $5$.\n\n**The Fast Way (~35s):** The eight known scores give $4$ three times and $5$ three times. To make $5$ the only mode, $k$ must be $5$.\n\n**The Full Solution:**\n\nStep 1: Tally the eight known scores: $3$ appears once, $4$ appears three times, $5$ appears three times, and $6$ appears once.\n\nStep 2: State what the condition requires. A single mode of $5$ means $5$ must occur strictly more often than every other score, so $5$ must beat $4$'s three appearances.\n\nStep 3: Test $k = 5$. Then $5$ appears four times and $4$ appears three times, so $5$ is the only mode. Check: any other value of $k$ either leaves $4$ and $5$ tied at three or, if $k = 4$, makes $4$ the mode.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3$): raises $3$ to two appearances while $4$ and $5$ stay tied at three, so the list has two modes.\n* Choice B ($4$): gives $4$ four appearances, making $4$ the mode rather than $5$.\n* Choice D ($6$): raises $6$ to two appearances and leaves the $4$-$5$ tie in place.\n\n**Test Day Takeaway:** Tally the known values before you place the unknown -- a unique mode means beating the runner-up, not just tying it."
+}

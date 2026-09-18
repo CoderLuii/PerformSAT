@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "A parabola in the $xy$-plane is the graph of $y = px^2 + qx + r$, where $p$, $q$, and $r$ are constants with $p < 0$. Which of the following must be true about this parabola?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It opens downward, and its vertex is its highest point."
+    },
+    {
+      "id": "B",
+      "text": "It opens downward, and its vertex is its lowest point."
+    },
+    {
+      "id": "C",
+      "text": "It opens upward, and its vertex is its highest point."
+    },
+    {
+      "id": "D",
+      "text": "It opens upward, and its vertex is its lowest point."
+    }
+  ],
+  "distractorNotes": {
+    "B": "downward curves have no lowest point",
+    "C": "impossible pairing",
+    "D": "describes the case p > 0"
+  },
+  "correctAnswer": "A",
+  "hint": "Only the sign of the squared term's coefficient matters here; the other two constants slide the curve but never flip it over.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** A negative leading coefficient turns the arms downward, so the vertex sits above every other point.\n\n**The Full Solution:**\nStep 1: Completing the square rewrites the equation as $y = p(x - h)^2 + k$ with the same leading constant $p$, since that step never changes it.\nStep 2: The squared quantity $(x - h)^2$ is never negative, so with $p < 0$ the product $p(x - h)^2$ is never positive, and therefore $y \\leq k$ for every $x$.\nStep 3: Equality holds only at $x = h$, so the vertex $(h, k)$ is the highest point on the curve and both arms fall away from it. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: reads the direction correctly but then calls the vertex the lowest point; a downward-opening curve has no lowest point.\n* Choice C: pairs an upward opening with a highest point, a combination no parabola can have.\n* Choice D: describes what happens when $p > 0$, the opposite of the stated condition.\n\n**Test Day Takeaway:** The constants $q$ and $r$ slide a parabola around the plane, but only the sign of the squared term's coefficient decides maximum versus minimum."
+}

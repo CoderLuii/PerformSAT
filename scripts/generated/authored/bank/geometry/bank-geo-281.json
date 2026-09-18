@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-281",
+  "question": "On a mall's planning grid, marked in feet, a proposed kiosk boundary is drawn from $x^{2}+y^{2}+6x-2y+t=0$, where $t$ is a constant. For what value of $t$ does that graph consist of exactly one point?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-10$"
+    },
+    {
+      "id": "B",
+      "text": "$1$"
+    },
+    {
+      "id": "C",
+      "text": "$9$"
+    },
+    {
+      "id": "D",
+      "text": "$10$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "solves 9 + 1 + t = 0, slipping the sign of the constant",
+    "B": "squares half the y-coefficient only, ignoring the x terms",
+    "C": "squares half the x-coefficient only, ignoring the y terms"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** The graph is a single point when $r^{2}=0$, and $r^{2}=9+1-t$, so $t=10$.\n\n**The Full Solution:**\n\nStep 1: Complete both squares. $x^{2}+6x$ contributes $9$ and $y^{2}-2y$ contributes $1$, giving $(x+3)^{2}+(y-1)^{2}=9+1-t$.\n\nStep 2: Interpret the degenerate case. A sum of two squares equals zero only at the single point where both are zero, so the graph is one point exactly when $9+1-t=0$.\n\nStep 3: Solve. $t=10$.\n\nCheck: with $t=10$ the equation is $(x+3)^{2}+(y-1)^{2}=0$, satisfied only by $(-3,1)$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-10$): solves $9+1+t=0$, slipping the sign of the constant when moving it across.\n* Choice B ($1$): squares half the $y$-coefficient only and ignores the $x$ terms.\n* Choice C ($9$): squares half the $x$-coefficient only and ignores the $y$ terms.\n\n**Test Day Takeaway:** A general-form equation degenerates to one point when the completed right side hits zero, and has no graph at all once it goes negative."
+}

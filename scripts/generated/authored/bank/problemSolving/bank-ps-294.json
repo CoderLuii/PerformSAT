@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-294",
+  "question": "A machine applies $0.4$ gram of adhesive to each component it assembles. How many kilograms of adhesive does the machine apply to $6{,}000$ components? ($1$ kilogram $= 1{,}000$ grams.)",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2.4$"
+    },
+    {
+      "id": "B",
+      "text": "$24$"
+    },
+    {
+      "id": "C",
+      "text": "$240$"
+    },
+    {
+      "id": "D",
+      "text": "$2{,}400$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides by $100$ instead of $1{,}000$",
+    "C": "divides by $10$ instead of $1{,}000$",
+    "D": "reports the total in grams without converting"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** $0.4 \\times 6{,}000 = 2{,}400$ grams, and $2{,}400 \\div 1{,}000 = 2.4$ kilograms.\n\n**The Full Solution:**\nStep 1: Find the total mass in grams: $0.4 \\text{ gram per component} \\times 6{,}000 \\text{ components} = 2{,}400$ grams.\nStep 2: Convert: $2{,}400 \\text{ grams} \\times \\frac{1 \\text{ kilogram}}{1{,}000 \\text{ grams}} = 2.4$ kilograms.\nStep 3: Check by scaling: $1{,}000$ components take $400$ grams, so $6{,}000$ take $2{,}400$ grams, which is $2.4$ kilograms. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($24$): $\\frac{2400}{100}$, a two-place decimal shift instead of three.\n* Choice C ($240$): $\\frac{2400}{10}$, a one-place shift.\n* Choice D ($2{,}400$): the correct total mass, but in grams rather than kilograms.\n\n**Test Day Takeaway:** Do the rate arithmetic first and convert last; converting halfway through is where the stray factors of $10$ come from."
+}

@@ -1,0 +1,29 @@
+{
+ "question": "A survey marker's range boundary is the circle $(x - 5)^2 + (y + 2)^2 = 25$, where each unit is one kilometer and the $y$-axis represents a straight highway. How many points does the boundary share with that highway?",
+ "hint": "How far does the center sit from the $y$-axis?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "None"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "distractorNotes": {
+  "A": "compares r^2 = 25 with the distance 5 and concludes the axis is out of reach",
+  "C": "compares the radius with the center's y-coordinate, 2, instead of its x-coordinate",
+  "D": "treats the equation as describing the axis itself rather than a circle"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** The center $(5, -2)$ sits $5$ units from the $y$-axis, exactly one radius, so the axis touches the boundary once.\n\n**The Full Solution:**\nStep 1: The equation gives center $(5, -2)$ and $r = \\sqrt{25} = 5$.\nStep 2: The distance from $(5, -2)$ to the $y$-axis is the $x$-coordinate, $5$.\nStep 3: Distance equals radius, so there is exactly one shared point. Check: setting $x = 0$ gives $25 + (y + 2)^2 = 25$, whose only solution is $y = -2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (None): compares the distance $5$ with $r^2 = 25$ and concludes the axis is out of reach.\n* Choice C (Exactly two): compares the radius with the center's $y$-coordinate, $2$, which measures the distance to the wrong axis.\n* Choice D (Infinitely many): would require the boundary to be the axis itself rather than a circle.\n\n**Test Day Takeaway:** Compare the distance from the center to a line with the radius: less gives two points, equal gives one, greater gives none."
+}

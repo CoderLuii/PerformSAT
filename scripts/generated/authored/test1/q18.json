@@ -6,26 +6,26 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 1,
- "passage": "Chien-Shiung Wu, an experimental physicist at Columbia University, designed a now-famous test of a long-held assumption in physics. In 1957, she ______ the beta decay of cobalt-60 nuclei that had been carefully polarized at extremely low temperatures. Her measurements showed that the angular distribution of the emitted electrons was asymmetric, demonstrating that parity is not conserved in the weak interaction and overturning a symmetry principle physicists had taken for granted.",
+ "passage": "At a solar thermal power station in the desert, an array of thousands of computer-guided mirrors ______ sunlight onto a receiver at the top of a central tower, heating molten salt that can drive turbines long after sunset.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "has observed"
+   "text": "concentrate"
   },
   {
    "id": "B",
-   "text": "observes"
+   "text": "have concentrated"
   },
   {
    "id": "C",
-   "text": "had observed"
+   "text": "concentrates"
   },
   {
    "id": "D",
-   "text": "observed"
+   "text": "are concentrating"
   }
  ],
- "correctAnswer": "D",
- "explanation": "The temporal anchor 'In 1957' fixes the action at a specific point in the past, and the surrounding sentences use simple past throughout ('designed,' 'showed,' 'was'). A completed historical event tied to a specific past date requires the simple past tense, so 'observed' is the correct verb form."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The true subject is the singular \"array,\" so the verb must be the singular \"concentrates.\"\n\n**The Full Solution:**\n- \"Of thousands of computer-guided mirrors\" is a prepositional phrase sitting between subject and verb; it does not change the subject's number.\n- Strip the phrase and the agreement is plain: \"an array ... concentrates.\"\n\n**Why the other choices are wrong:**\n- A: A plural form matching the nearby \"mirrors\" rather than the true subject — the classic nearest-noun agreement trap.\n- B: Same trap in a different tense; the subject is still singular.\n- D: Also plural; proximity to \"mirrors\" is what makes it tempting, but \"array\" governs the verb."
 }

@@ -1,0 +1,25 @@
+{
+  "id": 9030,
+  "passage": "English spelling was fixed on the page at roughly the moment English pronunciation was changing fastest. Printers settled on standard written forms in the fifteenth and sixteenth centuries, while the vowels and consonants of the spoken language went on shifting for another two hundred years. What look like arbitrary errors in modern spelling are often ______ of an older pronunciation: the k in knight, the gh in through, the final e in name.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "abbreviations"
+    },
+    {
+      "id": "B",
+      "text": "corrections"
+    },
+    {
+      "id": "C",
+      "text": "relics"
+    },
+    {
+      "id": "D",
+      "text": "borrowings"
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** Each of the three spellings preserves a sound speakers no longer make, and relics is the word for something surviving from an earlier state.\n\n**The Full Solution:**\n- The colon makes the three examples the definition of the blank, so read them first: a silent k, a silent gh, a silent final e.\n- The sentence before the blank says that writing was frozen while speech kept moving. A spelling left behind by that movement is a survival, and relics names it exactly.\n- The phrase of an older pronunciation is the tell: the blank must be something that points backward in time.\n\n**Why the other choices are wrong:**\n- A: An abbreviation shortens a word. None of the three examples is a shortened form; each adds a letter that is no longer sounded.\n- B: A correction repairs an error, but the text calls these spellings only apparent errors and explains them historically.\n- D: A borrowing is a word taken from another language. The examples are letters kept from an earlier stage of English itself."
+}

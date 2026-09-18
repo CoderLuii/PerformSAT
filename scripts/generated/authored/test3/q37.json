@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
+ "type": "multiple-choice",
+ "passage": "The grammatical machinery of a language is not designed; it condenses. Linguists have documented the process, called grammaticalization, in family after family: an ordinary content word is drafted into more abstract duty, its pronunciation erodes, and its old meaning fades until only a grammatical function remains. English speakers who say they are going to reconsider need not be going anywhere — a verb of motion has become a marker of future time, and its compressed spoken form has drifted still further from the original. What look like arbitrary particles and endings, on this view, are often the fossils of once-independent words.",
  "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "Reaction wheels and thrusters are the only hardware capable of correcting a space telescope's orientation during imaging."
+   "text": "The English construction involving the phrase going to is unusual among grammatical markers in having developed from a verb of motion."
   },
   {
    "id": "B",
-   "text": "The engineers concluded that the control settings inherited from earlier missions already deliver the best pointing precision that any newer combination of sensors and algorithms could realistically achieve."
+   "text": "Grammaticalization proceeds so slowly that linguists must reconstruct it indirectly rather than observing it in any living language."
   },
   {
    "id": "C",
-   "text": "Long-exposure imaging has become the single most important capability of every modern space telescope."
+   "text": "Languages abandon their grammatical markers once erosion makes the markers too short to be understood."
   },
   {
    "id": "D",
-   "text": "The engineers' work centers on the trade-off between active pointing corrections and the vibrations they cause, seeking sensor-and-algorithm combinations that make that trade-off explicit and adjustable."
+   "text": "Grammatical elements that appear arbitrary frequently originate as ordinary words whose sounds and meanings gradually wore away as they took on abstract functions."
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D. The passage is built around one engineering tension: holding a telescope's aim steady requires frequent corrections, yet each correction adds a small vibration that can blur the very long exposures the precise pointing is meant to enable. The engineers examine combinations of sensors, control algorithms, and wheel timing to keep vibrations within budget while still meeting the pointing tolerance, and their stated aim is to make the trade-off explicit and adjustable rather than buried in inherited settings. D captures both the tension and that aim. A overstates a detail about hardware. B reverses the engineers' goal. C inflates a passing reference to long-exposure imaging into a claim about all telescopes.",
+ "explanation": "**Choice D is correct.** The text's opening aphorism (grammar \"condenses\"), its account of the process (content word drafted into abstract duty, pronunciation eroding, meaning fading), and its closing image (particles as \"fossils of once-independent words\") all state one idea — the idea D restates.\n\n**The Full Solution:**\n- The passage is definition plus illustration: grammaticalization described in general terms, then shown in the English future marker derived from a motion verb.\n- The final sentence generalizes explicitly — seemingly arbitrary grammar is often the residue of ordinary words — and a main idea should match that summary sentence in scope.\n\n**Why the other choices are wrong:**\n- A: The going to example illustrates the process precisely because it is typical; the text says the process recurs \"in family after family,\" not that English is unusual.\n- B: The text presents grammaticalization as documented, and it never discusses the pace of change or any need for indirect reconstruction.\n- C: Erosion in the text wears words down into grammatical markers; nothing is said about markers being abandoned.",
  "_meta": {
-  "anchor": "Spacecraft pointing vs. vibration trade-off (unnamed engineers); attitude control for long-exposure imaging"
- },
- "passage": "Keeping a space telescope pointed precisely enough for long-exposure imaging is harder than it sounds. The reaction wheels and thrusters that correct a spacecraft's orientation must fire often to hold the aim steady, yet each correction introduces a tiny mechanical vibration — exactly the kind of disturbance that can blur the long exposures the precise pointing is meant to enable. A group of engineers studying this problem has examined how particular combinations of sensors, control algorithms, and wheel timing can hold vibrations within a budget while still meeting the pointing tolerance a given instrument requires. Their aim, they say, is to make the trade-off explicit and adjustable rather than leaving it buried in settings inherited from earlier missions.",
- "type": "multiple-choice"
+  "anchor": "Grammaticalization — content words condensing into grammatical markers (unnamed linguists)"
+ }
 }

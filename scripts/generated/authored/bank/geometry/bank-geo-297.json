@@ -1,0 +1,29 @@
+{
+ "question": "Two cylindrical bass-port tubes enclose equal volumes, and tube $A$ has twice the radius of tube $B$. Which statement about the lengths of the tubes must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Tube $A$ is one-fourth as long as tube $B$."
+  },
+  {
+   "id": "B",
+   "text": "Tube $A$ is half as long as tube $B$."
+  },
+  {
+   "id": "C",
+   "text": "Tube $A$ is twice as long as tube $B$."
+  },
+  {
+   "id": "D",
+   "text": "Tube $A$ is four times as long as tube $B$."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "scales the length by the radius factor 2 instead of its square",
+  "C": "reverses the relationship, making the wider tube longer",
+  "D": "reverses the relationship and uses the squared factor"
+ },
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Equal volumes keep $r^2 L$ constant; doubling the radius multiplies $r^2$ by $4$, so the length must be divided by $4$.\n\n**The Full Solution:**\nStep 1: Let tube $B$ have radius $r$ and length $L_B$, so tube $A$ has radius $2r$ and length $L_A$.\nStep 2: Equal volumes give $\\pi(2r)^2 L_A = \\pi r^2 L_B$, that is $4r^2 L_A = r^2 L_B$.\nStep 3: Divide by $4r^2$: $L_A = \\frac{L_B}{4}$, so tube $A$ is one-fourth as long. Check: with $r = 1$ and $L_B = 8$, tube $B$ holds $8\\pi$ and tube $A$ has radius $2$ and length $2$, holding $8\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: divides the length by $2$, using the radius factor instead of its square.\n* Choice C: makes the wider tube longer, which would give it far more volume, not the same.\n* Choice D: uses the right factor of $4$ but in the wrong direction.\n\n**Test Day Takeaway:** With volume fixed, radius and length trade off through the SQUARE of the radius factor — and the wider shape is always the shorter one.",
+ "id": "bank-geo-297"
+}

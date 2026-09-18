@@ -1,0 +1,46 @@
+{
+  "id": "bank-am-394",
+  "question": "The graph shown in the $xy$-plane is the parabola $y = a(x - h)^2 + k$, where $a$, $h$, and $k$ are constants. The vertex and one other point on the curve are marked. What is the value of $a + h + k$?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        2,
+        -6
+      ],
+      "a": 0.5,
+      "showPoints": [
+        [
+          6,
+          2
+        ]
+      ],
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-\\dfrac{15}{2}$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\dfrac{7}{2}$"
+    },
+    {
+      "id": "C",
+      "text": "$-2$"
+    },
+    {
+      "id": "D",
+      "text": "$\\dfrac{17}{2}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes $h = -2$, flipping the sign of the vertex $x$-coordinate",
+    "C": "divides by $6 - 2$ instead of its square",
+    "D": "takes $k = 6$, flipping the sign of the vertex $y$-coordinate"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** Vertex $(2, -6)$ gives $h = 2$, $k = -6$; the point $(6, 2)$ gives $16a - 6 = 2$, so $a = \\dfrac{1}{2}$ and the sum is $-\\dfrac{7}{2}$.\n\n**The Full Solution:**\nStep 1: Read the vertex from the graph: $(2, -6)$. In $y = a(x - h)^2 + k$ that means $h = 2$ and $k = -6$.\nStep 2: The second marked point is $(6, 2)$. Substitute: $2 = a(6 - 2)^2 - 6 = 16a - 6$, so $16a = 8$ and $a = \\dfrac{1}{2}$.\nStep 3: $a + h + k = \\dfrac{1}{2} + 2 - 6 = -\\dfrac{7}{2}$. Check: $y = \\dfrac{1}{2}(x - 2)^2 - 6$ gives $y = -6$ at $x = 2$ and $y = 8 - 6 = 2$ at $x = 6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\dfrac{15}{2}$): takes $h = -2$; vertex form SUBTRACTS $h$, so a vertex at $x = 2$ gives $h = +2$.\n* Choice C ($-2$): divides $8$ by $6 - 2 = 4$ instead of by $(6 - 2)^2 = 16$, producing $a = 2$.\n* Choice D ($\\dfrac{17}{2}$): takes $k = 6$ instead of $-6$, reading the vertex height with the wrong sign.\n\n**Test Day Takeaway:** Read $h$ and $k$ straight off the vertex with their own signs, then use the second point only to solve for $a$."
+}

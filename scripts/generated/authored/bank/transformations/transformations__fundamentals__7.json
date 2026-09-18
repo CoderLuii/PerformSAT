@@ -1,0 +1,30 @@
+{
+  "id": 7,
+  "question": "The function $t$ is defined by $t(x)=|x|$. In the $xy$-plane, the graph of $y=t(x+8)$ can be produced by moving the graph of $y=t(x)$ how far and in which direction?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$ units down"
+    },
+    {
+      "id": "B",
+      "text": "$8$ units left"
+    },
+    {
+      "id": "C",
+      "text": "$8$ units right"
+    },
+    {
+      "id": "D",
+      "text": "$8$ units up"
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats the inside +8 as a vertical shift down",
+    "C": "moves the graph in the direction of the sign",
+    "D": "treats the inside +8 as a vertical shift up"
+  },
+  "correctAnswer": "B",
+  "hint": "Find the input that now produces the corner of the V.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** The corner occurs where the inside expression is $0$: $x+8=0$ gives $x=-8$, so the graph slid $8$ units left.\n\n**The Full Solution:**\nStep 1: $t(x+8)=|x+8|$, and the vertex of an absolute value graph sits where the expression inside the bars equals $0$.\nStep 2: Solving $x+8=0$ gives $x=-8$, so the vertex has moved from $(0,0)$ to $(-8,0)$.\nStep 3: Every other point moves with it: the point $(3,3)$ on $y=t(x)$ corresponds to $(-5,3)$ on $y=t(x+8)$, again $8$ units left. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$ units down): a downward move needs $t(x)-8$, with the constant outside the absolute value.\n* Choice C ($8$ units right): the classic reversal: inside the function, $+8$ moves the graph in the negative direction.\n* Choice D ($8$ units up): an upward move needs $t(x)+8$; here the $8$ is inside the bars, so the change is horizontal.\n\n**Test Day Takeaway:** Inside the function the graph moves opposite to the sign: $+8$ inside means $8$ units left."
+}

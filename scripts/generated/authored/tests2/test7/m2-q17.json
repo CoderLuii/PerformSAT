@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "Two crews describe the same shipment with the expressions $7(2w - 5) + c$ and $14w + 9$, where $w$ is the number of drums on a trailer and $c$ is a constant. Whatever whole number $w$ a crew uses, the two expressions give the same value. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-44$"
+  },
+  {
+   "id": "B",
+   "text": "$-26$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$44$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves -35 + c = 9 but reports the negative, writing c = -(9 + 35)",
+  "B": "computes -35 + 9 instead of solving -35 + c = 9 for c",
+  "C": "sets c equal to the constant term on the right side without accounting for the -35"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Distributing gives $14w-35+c$; matching constants with $14w+9$ requires $-35+c=9$, so $c=44$.\n\n**The Full Solution:**\nStep 1: Distribute. $7(2w-5)+c = 14w-35+c$.\nStep 2: Match the two expressions term by term. Since they agree for every $w$, the $w$-terms already match ($14w$ on both sides), so the constant terms must match: $-35+c=9$.\nStep 3: Solve the one-step equation. Adding $35$ to both sides gives $c=44$. Check: $7(2w-5)+44 = 14w-35+44 = 14w+9$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-44$): gets the arithmetic right but flips the sign at the last step, writing $c=-(9+35)$ instead of $c=9+35$.\n* Choice B ($-26$): computes $-35+9=-26$, combining the two constants instead of solving $-35+c=9$ for $c$.\n* Choice C ($9$): sets $c$ equal to the constant on the right side, forgetting that distributing $7$ across $-5$ already contributed $-35$ to the left side.\n\n**Test Day Takeaway:** \"True for every value of the variable\" means the two sides are the same expression: match variable terms to variable terms and constants to constants. Distribute completely first — the hidden constant from the distribution is where this question is won or lost.\n"
+}

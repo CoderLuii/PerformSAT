@@ -6,35 +6,46 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
-  "passage": "Each September, the floating sea ice that covers the Arctic Ocean shrinks to its annual minimum extent before refreezing through the colder months. The National Snow and Ice Data Center has compiled monthly extent records since the late 1970s, and a research team analyzing those records by decade has argued that, although the average September extent has fallen across each successive decade, the single-year low points within each decade have fallen faster than the decadal averages have. The data shown in the table support this characterization because _______",
+  "passage": "At repair cafés, volunteers with tools and spare parts meet visitors who bring in broken household items — lamps, toasters, bicycles, torn clothing — and attempt fixes on the spot, free of charge. Coordinators of one city's five cafés, who log every item brought in over a season, have claimed that the events do more than raise awareness: at every location, they say, a clear majority of the items carried in go home working again.",
   "questionTable": {
     "type": "table",
-    "caption": "September Arctic sea ice extent (million km²) by decade (NSIDC Sea Ice Index)",
+    "caption": "Items brought to five repair cafés over one season and repair outcomes",
     "headers": [
-      "Decade",
-      "Mean September extent",
-      "Lowest year in decade"
+      "Café",
+      "Items brought in",
+      "Items repaired on site",
+      "Share repaired"
     ],
     "rows": [
       [
-        "1980s",
-        "7.2",
-        "6.9 (1985)"
+        "Northside",
+        "214",
+        "132",
+        "62%"
       ],
       [
-        "1990s",
-        "6.6",
-        "6.1 (1995)"
+        "Riverfront",
+        "183",
+        "104",
+        "57%"
       ],
       [
-        "2000s",
-        "5.8",
-        "4.3 (2007)"
+        "Old Market",
+        "246",
+        "153",
+        "62%"
       ],
       [
-        "2010s",
-        "4.6",
-        "3.6 (2012)"
+        "Garden District",
+        "158",
+        "87",
+        "55%"
+      ],
+      [
+        "Union Hall",
+        "201",
+        "119",
+        "59%"
       ]
     ]
   },
@@ -42,21 +53,21 @@
   "choices": [
     {
       "id": "A",
-      "text": "across the four decades shown, the mean September extent fell continuously, from 7.2 million km² in the 1980s to 4.6 million km² in the 2010s."
+      "text": "Old Market received 246 items over the season, more than any other café in the city."
     },
     {
       "id": "B",
-      "text": "the lowest year recorded in the 1980s, 6.9 million km² in 1985, was higher than every subsequent decadal low and every subsequent decadal mean."
+      "text": "Northside and Old Market each repaired 62% of the items that visitors brought in over the season, the highest share recorded at any of the city's five cafés."
     },
     {
       "id": "C",
-      "text": "the 2010s mean extent of 4.6 million km² is the lowest of any decade in the table, exceeding the 2010s decadal low of 3.6 million km²."
+      "text": "The five cafés together received more than 1,000 items over the course of the season."
     },
     {
       "id": "D",
-      "text": "the lowest single year of the 2000s, 4.3 million km² in 2007, fell below the mean September extent of the 2010s, 4.6 million km², even though that decade had not yet begun."
+      "text": "The share of items repaired on site exceeded half at every café, ranging from 55% at Garden District to 62% at Northside and Old Market."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The team's claim is specific: the single-year lows within each decade have fallen faster than the decadal means. To support it, a choice must compare the two columns in a way that shows the lows pulling ahead. Choice D does this directly: the 2000s low of 4.3 million km2 (2007) already falls below the 2010s mean of 4.6 million km2, so a decadal low has dropped beneath an average from a later decade, which is exactly what \"falling faster\" looks like. Choice A reports only the means falling and so speaks to one column alone. Choice C compares a mean and a low within the single 2010s decade, which says nothing about relative rates across decades. Choice B notes that the 1985 low tops every later figure, a true statement that supports a plain downward trend rather than the steeper decline of the lows."
+  "explanation": "**Choice D is correct.** The claim is about every location — \"at every location... a clear majority\" — so supporting it takes evidence spanning all five rows, and D provides exactly that: each café's repair share topped 50%, from 55% up to 62%.\n\n**The Full Solution:**\n- Restate the claim's scope: a majority of items repaired at each of the five cafés.\n- Only a choice that covers all five cafés can establish an at-every-location claim; D cites the full range and confirms the majority threshold everywhere.\n\n**Why the other choices are wrong:**\n- A: A single café's intake says nothing about repair outcomes anywhere.\n- B: Citing only the two best-performing cafés cannot establish a claim about all five.\n- C: The combined intake is volume, not outcome — it never touches the share repaired."
 }

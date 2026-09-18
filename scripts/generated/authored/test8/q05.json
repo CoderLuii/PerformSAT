@@ -1,35 +1,31 @@
 {
-  "id": 805,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "The following text is Sonnet 116 by William Shakespeare, first published in 1609. The speaker considers what sets enduring love apart from lesser attachments.\n\n__Let me not to the marriage of true minds / Admit impediments.__ Love is not love / Which alters when it alteration finds, / Or bends with the remover to remove: / O no! it is an ever-fixed mark / That looks on tempests and is never shaken; / It is the star to every wandering bark, / Whose worth's unknown, although his height be taken. / Love's not Time's fool, though rosy lips and cheeks / Within his bending sickle's compass come; / Love alters not with his brief hours and weeks, / But bears it out even to the edge of doom. / If this be error and upon me proved, / I never writ, nor no man ever loved.",
-  "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It opens with the speaker's refusal to admit any obstacle to the marriage of true minds, a general claim that the rest of the poem develops through a series of images."
-    },
-    {
-      "id": "B",
-      "text": "It poses a question about whether love can survive the passage of time, a question that the speaker spends the remaining lines answering by recalling a single romance from his own past."
-    },
-    {
-      "id": "C",
-      "text": "It records a private disappointment in love that the speaker tries to talk himself out of over the course of the later lines."
-    },
-    {
-      "id": "D",
-      "text": "It states the speaker's first reaction to a lover's betrayal he has just witnessed, a reaction that the rest of the poem goes on to revise."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The underlined opening states a broad claim—that nothing should be allowed to disturb the union of faithful minds—and the lines that follow develop it through a sequence of images: love as an \"ever-fixed mark\" that weathers tempests, as the guiding star above a wandering ship, and as something that does not bend to time. The poem builds on the opening claim rather than questioning it, retracting it, or narrating a single witnessed event, so B, C, and D each misread how the opening relates to the rest.",
-  "_meta": {
-    "quoteVerify": true,
-    "source": "William Shakespeare, Sonnet 116 (1609)"
+ "id": 805,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "The following text is adapted from William Wordsworth's 1807 poem \"I Wandered Lonely as a Cloud.\"\n\n__I wandered lonely as a cloud / That floats on high o'er vales and hills,__ / When all at once I saw a crowd, / A host, of golden daffodils; / Beside the lake, beneath the trees, / Fluttering and dancing in the breeze. // Continuous as the stars that shine / And twinkle on the milky way, / They stretched in never-ending line / Along the margin of a bay: / Ten thousand saw I at a glance, / Tossing their heads in sprightly dance.",
+ "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It establishes the speaker's solitary, directionless state, which the sudden sight of the daffodils then interrupts."
+  },
+  {
+   "id": "B",
+   "text": "It poses a question about nature's beauty that the remainder of the text sets out to answer."
+  },
+  {
+   "id": "C",
+   "text": "It describes the appearance of the daffodils that the speaker will go on to examine more closely."
+  },
+  {
+   "id": "D",
+   "text": "It voices a regret about the speaker's solitary wandering that the poem's later observations of the daffodils deepen into settled sorrow."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The underlined lines present the speaker drifting alone and aimless, the state that the sudden sight of the daffodils in the following lines interrupts and transforms.\n\n**The Full Solution:**\n- The underlined opening compares the speaker to a solitary, wandering cloud — detached, without direction or company.\n- \"When all at once\" pivots the poem: the crowd of daffodils bursts into that solitude.\n- The opening thus establishes the condition of aloneness that gives the encounter its force, exactly as choice A describes.\n\n**Why the other choices are wrong:**\n- B: No question is posed anywhere in the lines — the poem proceeds by description, not inquiry.\n- C: The lines describe the speaker's own state, not the daffodils, which have not yet appeared.\n- D: The speaker expresses no regret in the opening, and the later lines celebrate rather than revise what follows."
 }

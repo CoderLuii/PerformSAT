@@ -1,0 +1,36 @@
+{
+  "id": 9033,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "On a clear night, the stars flicker in brightness while the planets among them shine with a steady light.",
+      "The light of both crosses the same miles of atmosphere before it reaches the eye.",
+      "Air at different temperatures bends light by different amounts, and pockets of warm and cool air drift across the line of sight.",
+      "Even the nearest star is so distant that its light arrives as a single point, which one drifting pocket of air displaces all at once.",
+      "A planet is far smaller but near enough to present a tiny disc, which is in effect many neighboring points of light.",
+      "The flickers of those neighboring points are independent of one another."
+    ],
+    "goal": "The student wants to explain why the planets do not flicker as the stars do."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "A planet shows a tiny disc of many independent points of light, whose separate flickers average out into a steady glow."
+    },
+    {
+      "id": "B",
+      "text": "Stars flicker while the planets shine steadily, even though the light of both crosses the same atmosphere."
+    },
+    {
+      "id": "C",
+      "text": "Because the planets are far nearer than the stars, their light passes through less of the disturbing air."
+    },
+    {
+      "id": "D",
+      "text": "Pockets of warm and cool air drift constantly across the line of sight, bending the light that happens to pass through them."
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** The goal asks why one kind of light steadies and the other does not, and Choice A supplies the reason: a planet is a disc of many points whose separate flickers cancel one another.\n\n**The Full Solution:**\n- Separate the finding from its explanation. The finding is the difference between the flickering stars and the steady planets, so the explanation has to be a mechanism the notes offer for that difference.\n- Two bullets carry it: a planet is near enough to present a tiny disc, which amounts to many neighboring points of light, and the flickers of those points are independent of one another. Choice A joins them and draws the consequence.\n- A statement that is equally true of stars and planets cannot explain why the two look different, however accurate it is.\n\n**Why the other choices are wrong:**\n- B: A restatement of the finding. The goal asks why the planets hold steady, not that they do.\n- C: The notes close this off. The light of both crosses the same atmosphere, so the distance of the source is not what separates them.\n- D: True of everything in the sky. It explains why any light flickers, not why a planet does not."
+}

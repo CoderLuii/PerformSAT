@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-427",
+  "question": "A loom produces $12$ meters of fabric every $8$ minutes at a constant rate. At this rate, how many minutes are needed for the loom to produce $30$ meters of fabric?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2.5$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$20$"
+    },
+    {
+      "id": "D",
+      "text": "$45$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the scale factor $\\frac{30}{12}$ rather than a number of minutes.",
+    "B": "times only the extra $18$ meters and forgets the first $8$ minutes.",
+    "D": "inverts the rate, computing $30\\times\\frac{12}{8}$."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Proportion Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The loom makes $\\frac{12}{8}=1.5$ meters per minute, so $30$ meters take $\\frac{30}{1.5}=20$ minutes.\n\n**The Full Solution:**\nStep 1: Write the proportion $\\frac{12\\text{ m}}{8\\text{ min}}=\\frac{30\\text{ m}}{t\\text{ min}}$.\nStep 2: Cross multiply: $12t=8(30)=240$.\nStep 3: $t=\\frac{240}{12}=20$ minutes. Check: in $20$ minutes at $1.5$ meters per minute the loom makes $30$ meters. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.5$): computes $\\frac{30}{12}$, the number of $12$-meter runs, and reports it as minutes.\n* Choice B ($12$): times only the additional $30-12=18$ meters, at $\\frac{8}{12}$ minute per meter, and drops the first $8$ minutes.\n* Choice D ($45$): uses $\\frac{12}{8}$ as minutes per meter instead of meters per minute.\n\n**Test Day Takeaway:** Name the rate in words before computing. \"Meters per minute\" and \"minutes per meter\" are reciprocals, and only one of them fits the question asked."
+}

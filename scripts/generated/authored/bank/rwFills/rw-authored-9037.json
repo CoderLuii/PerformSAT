@@ -1,0 +1,25 @@
+{
+  "id": 9037,
+  "passage": "The collapsible metal paint tube, patented in 1841, is easy to file among the ______ inventions of the nineteenth century rather than among its consequential ones. Yet before the tube, oil color was kept in animal bladders that leaked and could not be resealed, so a painter who wanted to work outdoors had to grind and mix a day’s colors in advance and use them before they spoiled.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "minor"
+    },
+    {
+      "id": "B",
+      "text": "recent"
+    },
+    {
+      "id": "C",
+      "text": "costly"
+    },
+    {
+      "id": "D",
+      "text": "delicate"
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** The blank is set against consequential ones, so it must mean the opposite of consequential, and minor does.\n\n**The Full Solution:**\n- Locate the contrast inside the first sentence: rather than among its consequential ones. The blank names the category the tube is wrongly filed under.\n- The opposite of consequential is unimportant, so the blank must be a word for small significance. Minor is the precise fit.\n- The sentence beginning Yet then shows why the filing is wrong, which confirms that the blank understates the tube rather than describing it accurately.\n\n**Why the other choices are wrong:**\n- B: Recent describes when something appeared, not how much it mattered, and an 1841 patent is not recent in any case.\n- C: Cost is never raised; the passage compares importance, not price.\n- D: Delicate would describe the tube’s construction, which the contrast with consequential does not call for."
+}

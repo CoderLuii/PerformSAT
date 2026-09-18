@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-313",
+ "question": "A reagent bottle label measures $6.5$ centimeters along its top edge and $4$ centimeters along its side. How many square centimeters of paper does one label use?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10.5$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$21$"
+  },
+  {
+   "id": "D",
+   "text": "$26$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "adds the two dimensions, 6.5 + 4, instead of multiplying them",
+  "B": "halves the product as if the label were a triangle",
+  "C": "computes the perimeter, 2 times the sum of 6.5 and 4"
+ },
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice D is correct.** The label is a rectangle, so its area is $6.5 \\times 4 = 26$ square centimeters.\n\n**The Fast Way (~10s):** $6.5 \\times 4 = 26$.\n\n**The Full Solution:**\n\nStep 1: Adjacent edges of a rectangle are its length and width, here $6.5$ and $4$ centimeters.\n\nStep 2: Area of a rectangle is length times width: $6.5 \\times 4$.\n\nStep 3: That product is $26$ square centimeters. Check: $6 \\times 4 = 24$ and $0.5 \\times 4 = 2$, and $24 + 2 = 26$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($10.5$): adds the two dimensions instead of multiplying them.\n* Choice B ($13$): halves the product, which would be the area of a triangle with those legs.\n* Choice C ($21$): computes the perimeter, $2(6.5 + 4)$, rather than the area.\n\n**Test Day Takeaway:** Area multiplies and perimeter adds — check the units the question asks for, since square units always signal a product."
+}

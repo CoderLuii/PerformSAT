@@ -1,0 +1,46 @@
+{
+  "id": "bank-geo-177",
+  "question": "In the right triangle shown, the hypotenuse has a length of $37$ and one leg has a length of $35$. If the perimeter of the triangle is $84$, which of the following is closest to the value of $\\tan\\theta$?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "labels": [
+        "θ",
+        "",
+        ""
+      ],
+      "sideLabels": [
+        "35",
+        "",
+        "37"
+      ],
+      "rightAngleVertex": 1,
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.32$"
+    },
+    {
+      "id": "B",
+      "text": "$0.34$"
+    },
+    {
+      "id": "C",
+      "text": "$0.95$"
+    },
+    {
+      "id": "D",
+      "text": "$2.92$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "gives sin of theta instead of tan",
+    "C": "gives cos of theta instead of tan",
+    "D": "inverts the tangent ratio, adjacent over opposite"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The missing leg is $84 - 37 - 35 = 12$, and $\\theta$ is opposite it, so $\\tan\\theta = \\frac{12}{35} \\approx 0.34$.\n\n**The Full Solution:**\nStep 1: The three sides sum to the perimeter, so the unlabeled leg is $84 - 35 - 37 = 12$.\nStep 2: In the figure, $\\theta$ is opposite the leg of length $12$ and adjacent to the leg of length $35$.\nStep 3: $\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{12}{35} \\approx 0.343$, which is closest to $0.34$. Check: $12^2 + 35^2 = 144 + 1{,}225 = 1{,}369 = 37^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.32$): this is $\\frac{12}{37} \\approx 0.324$, which is $\\sin\\theta$, using the hypotenuse instead of the adjacent leg.\n* Choice C ($0.95$): this is $\\frac{35}{37} \\approx 0.946$, which is $\\cos\\theta$.\n* Choice D ($2.92$): this is $\\frac{35}{12} \\approx 2.917$, the tangent of the other acute angle.\n\n**Test Day Takeaway:** When the perimeter and two sides are given, subtract to get the third side before touching any ratio. Then let SOH-CAH-TOA pick the two sides the ratio needs."
+}

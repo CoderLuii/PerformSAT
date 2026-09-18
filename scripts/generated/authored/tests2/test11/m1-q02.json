@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "The masses, in milligrams, of nine crystals grown in a lab are $45$, $47$, $50$, $51$, $51$, $53$, $55$, $57$, and $212$. How do the mean and the median of these masses change if the crystal of mass $212$ milligrams is removed?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mean decreases, and the median stays the same."
+  },
+  {
+   "id": "B",
+   "text": "The mean stays the same, and the median decreases."
+  },
+  {
+   "id": "C",
+   "text": "Both the mean and the median decrease."
+  },
+  {
+   "id": "D",
+   "text": "Neither the mean nor the median changes."
+  }
+ ],
+ "distractorNotes": {
+  "B": "reverses the roles: says the outlier moves the median rather than the mean",
+  "C": "assumes removing any value must move the median as well as the mean",
+  "D": "assumes one value out of nine cannot change either measure"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The mean uses every value, so dropping the far-out $212$ pulls it down sharply. The median only depends on the middle of the ordered list, and the two central values are both $51$ either way.\n\n**The Full Solution:**\nStep 1: With all nine masses, the sum is $621$, so the mean is $\\frac{621}{9} = 69$ milligrams, and the fifth of the nine ordered values is the median, $51$ milligrams.\nStep 2: Without $212$, the sum is $409$ over eight values, so the mean is $\\frac{409}{8} = 51.125$ milligrams — a drop of almost $18$ milligrams.\nStep 3: The eight remaining values in order are $45$, $47$, $50$, $51$, $51$, $53$, $55$, $57$, so the median is the average of the fourth and fifth values, $\\frac{51 + 51}{2} = 51$ milligrams. Check: the median is $51$ before and $51$ after, while the mean falls from $69$ to $51.125$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (mean unchanged, median lower): this swaps the two measures. Removing a value from the sum must change the mean, while the median is protected by the repeated middle value $51$.\n* Choice C (both lower): the median is $51$ in both lists, so it does not decrease; only the mean does.\n* Choice D (neither changes): the mean is $69$ with the outlier and $51.125$ without it, so it clearly changes.\n\n**Test Day Takeaway:** An extreme value drags the mean toward itself and usually leaves the median alone — check the middle of the ordered list before claiming the median moved."
+}

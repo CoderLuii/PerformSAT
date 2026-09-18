@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-153",
+  "question": "In the $xy$-plane, the graph of $x^2 + y^2 - 10x + 24y = 0$ is a circle. The area of this circle can be written as $k\\pi$, where $k$ is a constant. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$13$"
+    },
+    {
+      "id": "B",
+      "text": "$26$"
+    },
+    {
+      "id": "C",
+      "text": "$169$"
+    },
+    {
+      "id": "D",
+      "text": "$338$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the radius instead of the coefficient of pi in the area",
+    "B": "reports the diameter instead of r squared",
+    "D": "doubles r squared, as if the area were 2 pi r squared"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Area of a Circle**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Completing both squares gives $(x - 5)^2 + (y + 12)^2 = 169$, so $r^2 = 169$ and the area is $169\\pi$.\n\n**The Full Solution:**\nStep 1: Group the variables: $(x^2 - 10x) + (y^2 + 24y) = 0$.\nStep 2: Complete each square. Half of $-10$ is $-5$, and half of $24$ is $12$, so add $25$ and $144$ to both sides: $(x - 5)^2 + (y + 12)^2 = 169$.\nStep 3: The right side is $r^2 = 169$, so the area is $\\pi r^2 = 169\\pi$ and $k = 169$. Check: $r = 13$, and the origin satisfies the original equation, so it lies on the circle - its distance from $(5, -12)$ is indeed $13$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($13$): reports the radius rather than the coefficient of $\\pi$ in the area.\n* Choice B ($26$): reports the diameter, which would be the circumference coefficient, not the area coefficient.\n* Choice D ($338$): doubles $r^2$, as though the area were $2\\pi r^2$.\n\n**Test Day Takeaway:** A circle equation with $x$ and $y$ terms is not ready to read. Complete both squares first; whatever lands on the right side is $r^2$, which is exactly the coefficient the area needs."
+}

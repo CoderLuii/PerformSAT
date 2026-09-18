@@ -9,33 +9,33 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "Rachel Carson (1907-1964) was an American marine biologist and writer.",
-      "Her 1951 book The Sea Around Us explained ocean science for a general audience and became a best seller.",
-      "Her 1962 book Silent Spring argued that the widespread use of synthetic pesticides, especially DDT, was damaging wildlife and threatening human health.",
-      "Silent Spring contended that government and industry had promoted these chemicals without adequately testing their long-term effects.",
-      "The book is widely credited with helping to launch the modern environmental movement and with prompting new restrictions on pesticide use."
+      "Most Amazonian soils are poor: heavy rains leach away nutrients, and cleared fields often become infertile within a few years.",
+      "Scattered along the Amazon and its tributaries are patches of deep black soil known as terra preta, some covering many hectares.",
+      "Terra preta is rich in charcoal, pottery fragments, and nutrients, and it remains fertile after centuries of cultivation.",
+      "The soil scientist Wim Sombroek helped show that terra preta was created by pre-Columbian communities, whose settlements enriched the ground with charcoal and organic refuse.",
+      "Researchers study terra preta as evidence that large, settled populations once farmed the Amazon basin."
     ],
-    "goal": "The student wants to introduce Carson's central argument in Silent Spring to an audience unfamiliar with the book."
+    "goal": "The student wants to introduce terra preta to an audience unfamiliar with it."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Rachel Carson, an American marine biologist and writer, published two influential books, The Sea Around Us in 1951 and Silent Spring in 1962, both of which reached a wide general readership and helped shape public conversation about the natural world."
+      "text": "Wim Sombroek helped show that pre-Columbian communities enriched Amazonian ground with charcoal and organic refuse."
     },
     {
       "id": "B",
-      "text": "In Silent Spring (1962), the biologist Rachel Carson argued that the widespread use of synthetic pesticides such as DDT was harming wildlife and human health and had been promoted without adequate testing of its long-term effects."
+      "text": "Terra preta, a deep black soil found in patches along the Amazon, remains fertile for centuries in a region whose soils are otherwise quickly exhausted."
     },
     {
       "id": "C",
-      "text": "Carson's 1951 book The Sea Around Us explained ocean science for a general audience and became a best seller."
+      "text": "Because heavy tropical rains leach nutrients from most Amazonian soils, fields cleared for farming in the region often become infertile within only a few years of cultivation."
     },
     {
       "id": "D",
-      "text": "Silent Spring is widely credited with helping to launch the modern environmental movement and with prompting new restrictions on pesticide use."
+      "text": "Researchers regard terra preta as evidence that large, settled populations once farmed the Amazon basin."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to introduce the central argument of Silent Spring to readers who do not know the book, and choice B states that argument: that the heavy use of pesticides like DDT was harming wildlife and human health and had been promoted without adequate testing. Choice A lists Carson's two books but gives neither one's argument. Choice C describes the earlier book, The Sea Around Us, not Silent Spring. Choice D reports the book's later influence rather than the argument it actually made."
+  "explanation": "**Choice B is correct.** An introduction for unfamiliar readers must name the thing, say what it is, and convey why it is notable — B does all three: the name, the definition (deep black soil in Amazonian patches), and the striking property (centuries of fertility where soils are otherwise quickly spent).\n\n**The Full Solution:**\n- The audience knows nothing, so the sentence must be self-contained: term plus identification plus significance.\n- B compresses the second and third notes into the identification and borrows the first note's contrast to make the significance legible at first read.\n\n**Why the other choices are wrong:**\n- A: It reports Sombroek's finding without ever naming or describing terra preta — an unfamiliar reader cannot tell what was enriched or why it matters.\n- C: It is all background: the region's poor soils are described, and terra preta never appears.\n- D: It states significance for researchers but assumes the reader already knows what terra preta is — the one thing this audience lacks."
 }

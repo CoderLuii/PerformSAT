@@ -433,7 +433,7 @@ const PracticeTestLayout = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [flagged, setFlagged] = useState({});
-  const [timeRemaining, setTimeRemaining] = useState(35 * 60); // 35 minutes in seconds
+  const [timeRemaining] = useState(35 * 60); // 35 minutes in seconds
 
   const currentQuestion = questions[currentIndex];
   const totalQuestions = questions.length;

@@ -5,30 +5,31 @@
  "band": 4,
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
+ "type": "multiple-choice",
+ "passage": "For decades, archaeologists could arrange the Ancestral Puebloan sites of the Southwest only in relative order, guessing at ages from styles of pottery and masonry. By matching the ring patterns of living trees to those in successively older wooden beams, the astronomer A. E. Douglass ______ an unbroken tree-ring sequence reaching back more than a thousand years, and by 1929 he could assign construction dates to hundreds of sites, sometimes to the very year a roof beam was cut.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "are already writing"
+   "text": "assembles"
   },
   {
    "id": "B",
-   "text": "already write"
+   "text": "will assemble"
   },
   {
    "id": "C",
-   "text": "have already written"
+   "text": "has assembled"
   },
   {
    "id": "D",
-   "text": "had already written"
+   "text": "had assembled"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D, \"had already written.\" The sentence relates two past events in sequence: other historians produced shorter accounts, and then, in 1982, Caro published the first volume of his life of Johnson. The phrase \"By the time … Caro published … in 1982\" fixes the later event as a reference point, so the earlier event — the other historians' work — takes the past perfect to mark its precedence. \"Have already written\" is present perfect, which links the action to the present and clashes with the 1982 frame. \"Already write\" is simple present, which removes the past sequence entirely. \"Are already writing\" is present progressive, which both misplaces the action in the present and treats finished work as ongoing.",
+ "explanation": "**Choice D is correct.** The sentence measures Douglass's work against a past reference point — \"by 1929 he could assign construction dates\" — and the past perfect \"had assembled\" is the form for an action completed before another past moment.\n\n**The Full Solution:**\n- The controlling clause is in the past (\"he could assign\"), and the assembling of the sequence is what made that past ability possible, so the assembling must be located earlier still.\n- English marks earlier-than-past with the past perfect; \"by 1929\" is the classic trigger for it.\n\n**Why the other choices are wrong:**\n- A: \"Assembles\" puts the work in the present, clashing with the past-tense frame of the sentence and the 1929 reference point.\n- B: \"Will assemble\" projects the work into the future, after the very date by which its results were already in use.\n- C: \"Has assembled\" ties the action to the present moment, but the sentence's timeline is anchored in the past; the present perfect cannot sit before \"by 1929 he could.\"",
  "_meta": {
-  "anchor": "Robert Caro — multivolume life of Lyndon Johnson (1982-); past-perfect sequence"
- },
- "passage": "By the time the biographer Robert Caro published the first volume of his sprawling multivolume life of Lyndon Johnson in 1982, several other historians ______ shorter, single-volume accounts of Johnson, but none had attempted the exhaustive, document-by-document portrait that Caro's project would eventually become.",
- "type": "multiple-choice"
+  "anchor": "A. E. Douglass — tree-ring sequence dating Puebloan sites; past perfect",
+  "rule": "past perfect for action completed before a past reference point"
+ }
 }

@@ -1,31 +1,31 @@
 {
-  "id": 1209,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "For decades, planners responded to traffic congestion by widening highways, assuming that adding lanes would let a fixed number of trips flow more freely. Transportation economists studying metropolitan road networks have challenged that assumption. Drawing on data from many cities, they find that new road capacity tends to be filled almost as quickly as it is built: lower travel times encourage people to drive more, to drive farther, and to switch from other modes, until congestion returns to roughly its former level. This pattern, sometimes called induced demand, implies that a city cannot reliably build its way out of congestion. The same researchers argue that charging more to drive at peak times does more to manage demand than expanding the roadway ever has.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Studies of road networks find that added highway capacity induces driving that restores congestion, so researchers favor peak-time pricing over expansion."
-    },
-    {
-      "id": "B",
-      "text": "Transportation economists have gathered data on traffic patterns from many different metropolitan areas over a period of several decades."
-    },
-    {
-      "id": "C",
-      "text": "Widening highways lowers travel times, which over time encourages people to drive more often and over considerably longer distances than they did before."
-    },
-    {
-      "id": "D",
-      "text": "Charging drivers more to use roads at peak times remains politically difficult, even though planners once chose to widen highways instead."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage's central claim is that extra capacity gets absorbed by induced demand, restoring congestion, which leads the economists to prefer peak-time pricing. A states exactly that. B reports only how the data were collected, a supporting detail. C describes one mechanism within the argument—why added lanes fill up—but not the conclusion the passage builds toward. D introduces the politics of pricing, which the text never discusses."
+ "id": 1209,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "When government surveyors first mapped the soils of the North American prairie in the early twentieth century, many expected the treeless grasslands to prove poorer than forested country, reasoning that land which could not support timber could not be rich. Digging revealed the opposite. Beneath the sod lay dark topsoil more than a meter deep in places, built up over thousands of years by the growth and decay of dense grass roots. The surveys recorded prairie soils among the most fertile on the continent, and later assessments confirmed the pattern: regions once passed over as barren became some of the most productive farmland in the world.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Soil surveys showed that prairie grasslands, once assumed to be poor because they supported no trees, in fact held unusually deep and fertile soils."
+  },
+  {
+   "id": "B",
+   "text": "Government surveyors produced the first detailed maps of the soils of the North American prairie in the early twentieth century."
+  },
+  {
+   "id": "C",
+   "text": "The dark topsoil that lies beneath the prairie sod was built up over many thousands of years by the growth and decay of the dense roots of prairie grasses."
+  },
+  {
+   "id": "D",
+   "text": "Farmland carved from the former prairie ultimately became more valuable than farmland in any forested region on the continent."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The passage is built around a reversal: surveyors expected poor soil under the treeless prairie, and digging \"revealed the opposite\" — deep, dark, exceptionally fertile topsoil. A captures both the expectation and the overturning.\n\n**The Full Solution:**\n- The setup: surveyors reasoned that land unable to support timber could not be rich.\n- The finding: topsoil more than a meter deep, among the most fertile on the continent.\n- The confirmation: land once passed over as barren became some of the world's most productive farmland. The main idea is that reversal, which only choice A states.\n\n**Why the other choices are wrong:**\n- B: It reports only that the mapping happened — the setup, not the point.\n- C: It gives the mechanism behind the deep topsoil, a supporting detail rather than the central reversal.\n- D: It overshoots the text, which never compares the value of prairie farmland with that of every forested region."
 }

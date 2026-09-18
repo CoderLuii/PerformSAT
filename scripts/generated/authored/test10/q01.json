@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 1,
- "passage": "In the late 1970s, the physicist John Goodenough set out to find a cathode material that could release and reabsorb lithium ions through hundreds of charging cycles without losing its structure. After working through a series of metal oxides, he ______ lithium cobalt oxide, a layered compound stable enough to survive repeated use, which soon became the standard cathode in the rechargeable batteries that power portable electronics.",
+ "passage": "Unlike most plants, mosses cannot regulate the water content of their tissues: when the surrounding air dries, they dry with it. Far from being fatal, this desiccation is a state many mosses are built to endure. A colony can pause its metabolism for weeks and then, within minutes of a rainfall, ______ photosynthesis as though the interruption had never occurred.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "concealed"
+   "text": "prolong"
   },
   {
    "id": "B",
-   "text": "identified"
+   "text": "resume"
   },
   {
    "id": "C",
-   "text": "imitated"
+   "text": "imitate"
   },
   {
    "id": "D",
-   "text": "discarded"
+   "text": "forfeit"
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The physicist is searching for a cathode material with a particular set of properties, and the sentence says that after working through a series of metal oxides he found the one that fit—lithium cobalt oxide. \"Identified\" captures the act of singling out the right compound from the candidates he tested. \"Concealed\" and \"discarded\" both run opposite to the sense of the passage, which credits him with bringing the material to attention rather than hiding or rejecting it, and \"imitated\" wrongly suggests he copied an existing material rather than settling on one."
+ "explanation": "**Choice B is correct.** The blank needs a verb meaning to start again after a pause, and \"resume\" restates exactly what the sentence describes: metabolism paused, then restarted as though never interrupted.\n\n**The Full Solution:**\n- The sentence sets up a sequence: the colony can \"pause its metabolism for weeks,\" and the blank describes what happens \"within minutes of a rainfall.\"\n- The closing phrase \"as though the interruption had never occurred\" confirms that the paused activity picks up where it left off, so the colony must resume photosynthesis.\n\n**Why the other choices are wrong:**\n- A: \"Prolong\" means to extend something already under way, but photosynthesis has been paused, not running.\n- C: \"Imitate\" would mean the moss only mimics photosynthesis rather than actually performing it, which the text never suggests.\n- D: \"Forfeit\" means to give up, the opposite of returning to activity after rain."
 }

@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "An airport shuttle service charges a flat dispatch fee of $\\$192$ plus $\\$32$ for each rider. The total cost of one run was $\\$1{,}088$. How many riders were on that run?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$28$"
+  },
+  {
+   "id": "C",
+   "text": "$34$"
+  },
+  {
+   "id": "D",
+   "text": "$40$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the dispatch fee 192 by the per-rider charge 32, using two numbers that are never divided in this model",
+  "C": "ignores the dispatch fee and divides the whole total: 1,088/32 = 34",
+  "D": "adds the dispatch fee to the total instead of subtracting it: (1,088 + 192)/32 = 40"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Linear Cost Setup**\n\n**Choice B is correct.** With $r$ riders, $32r + 192 = 1{,}088$, so $r = 28$.\n\n**The Fast Way (~25s):** Strip the dispatch fee first: $1{,}088 - 192 = 896$, then $896 \\div 32 = 28$.\n\n**The Full Solution:**\nStep 1: Let $r$ be the number of riders. The service charges $\\$32$ per rider plus a one-time $\\$192$, so the total cost is $32r + 192$.\nStep 2: Set the total equal to the amount paid: $32r + 192 = 1{,}088$. Subtracting $192$ from each side gives $32r = 896$.\nStep 3: Divide by $32$: $r = 28$. Check: $32(28) + 192 = 896 + 192 = 1{,}088$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): this divides the dispatch fee by the per-rider charge. Those two amounts are never compared to each other in this model.\n* Choice C ($34$): this divides the whole total by $32$, treating the $\\$192$ as if it were part of the per-rider charge.\n* Choice D ($40$): this adds the dispatch fee to the total instead of removing it, charging the fee once and then paying for it again.\n\n**Test Day Takeaway:** In a flat-fee-plus-rate model, remove the one-time fee before dividing — the division applies only to the part that varies with the count."
+}

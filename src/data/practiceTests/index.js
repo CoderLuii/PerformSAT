@@ -1,6 +1,9 @@
 // Practice Tests Index
 // Each test merges Reading & Writing modules followed by Math modules.
 
+import { rebalanceAnswerKey } from '../questions/bank/rebalanceAnswerKey';
+import { varyDifficultyOrder } from './varyDifficultyOrder';
+
 // Math sections (file exports `practiceTestN`; alias to *Math here so the
 // merged test can claim the public name).
 import { practiceTest1 as practiceTest1Math } from './practiceTest1';
@@ -92,6 +95,26 @@ const rwEasyVariants = {
   'practice-test-12': practiceTest12RWM2Easy,
 };
 
+// Answer-key rebalance at assembly (2026-08-13 predictability fix). The
+// on-disk math bundles skew B=56%/D=2.2% ("guess B" scored 56% on every
+// test) and the R&W keys are hard-balanced into an anti-random pattern
+// (adjacent repeat rate 9.4% vs the ~25% a real key shows). The same
+// deterministic transform the drill bank has used since June is applied
+// per-module here, seeded with test+section+module so (a) the reused ids
+// 1-27 land in different slots on every test and (b) the slot layout is
+// stable across sessions — a given test always renders the same letters,
+// so attempt snapshots, review, and telemetry stay consistent.
+// SAFETY: past attempts are unaffected — review renders from per-attempt
+// snapshots, the legacy fallback keys off the CURRENT correct letter, and
+// stored scores are never recomputed from current keys (verified 2026-08-13).
+// Seeds carry a `:v2` suffix since the 2026-09-07 freshness rebuild so that
+// returning students meet a new letter layout and a new M1/M2Easy order along
+// with the re-authored content (docs/TEST_RECREATION_V2_SPEC.md).
+const rebalanceModule = (m, seed) => ({
+  ...m,
+  questions: m.questions.map((q) => rebalanceAnswerKey(q, seed)),
+});
+
 // Build a full-length practice test from R&W + Math sections. R&W modules
 // come first, Math modules follow. Module titles are numbered WITHIN their
 // section (matching the official digital SAT), not continuously across the
@@ -101,12 +124,20 @@ const rwEasyVariants = {
 // reference sheet) appropriately.
 const buildFullTest = (id, title, rw, math) => {
   const rwModules = rw.modules.map((m, idx) => ({
-    ...m,
+    ...rebalanceModule(m, `${id}:rw:${idx}:v2`),
     section: 'reading-writing',
     title: `Reading and Writing Module ${idx + 1}`,
   }));
+  // Math Module 1 additionally gets seeded difficulty-order variation: the
+  // raw bundles share one EEEEE→M→H ramp across 11 of 12 tests (students
+  // learn the rhythm). Module 2 hard is left alone — its sequences are
+  // already genuinely varied on disk. R&W modules are NEVER reordered
+  // (official vocab-first flow is authentic and position-meaningful).
   const mathModules = math.modules.map((m, idx) => ({
-    ...m,
+    ...rebalanceModule(
+      idx === 0 ? varyDifficultyOrder(m, `${id}:math:${idx}:order:v2`) : m,
+      `${id}:math:${idx}:v2`,
+    ),
     section: 'math',
     title: `Math Module ${idx + 1}`,
   }));
@@ -138,14 +169,26 @@ export const practiceTest12 = buildFullTest('practice-test-12', 'Practice Test 1
 // Spread is intentional so the original test object stays untouched and
 // the variants are added only on the exported copy used by the app.
 // module2Easy = math M2 easy (legacy field name); rwModule2Easy = R&W M2 easy.
+// Easy variants get the same seeded key rebalance as the standard modules
+// (PT8's math M2Easy shipped 14-of-15 B before this).
 const withEasyVariant = (t) => {
   const math = easyVariants[t.id];
   const rw = rwEasyVariants[t.id];
   if (!math && !rw) return t;
+  // Math M2Easy also gets order variation — all 12 raw files share ONE
+  // identical difficulty sequence, the single worst monotony in the audit.
+  // R&W M2Easy keeps its official skill-flow order.
   return {
     ...t,
-    ...(math ? { module2Easy: math } : {}),
-    ...(rw ? { rwModule2Easy: rw } : {}),
+    ...(math
+      ? {
+          module2Easy: rebalanceModule(
+            varyDifficultyOrder(math, `${t.id}:math-m2easy:order:v2`),
+            `${t.id}:math-m2easy:v2`,
+          ),
+        }
+      : {}),
+    ...(rw ? { rwModule2Easy: rebalanceModule(rw, `${t.id}:rw-m2easy:v2`) } : {}),
   };
 };
 

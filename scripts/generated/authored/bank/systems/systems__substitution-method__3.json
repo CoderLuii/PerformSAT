@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "A stone mill blends $x$ kilograms of rye flour with $y$ kilograms of barley flour in each batch, where $y = 3x - 3$. The ingredient cost of a batch, in dollars, is given by $4x + cy = 42$, where $c$ is a constant. If a batch uses $3$ kilograms of rye flour, what is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides 42 by the 6 kilograms of barley without removing the 12 dollars of rye",
+  "C": "adds the rye cost instead of subtracting it: (42 + 12)/6 = 9",
+  "D": "divides by the rye mass 3 instead of the barley mass 6: (42 - 12)/3 = 10"
+ },
+ "correctAnswer": "A",
+ "hint": "One rule fixes both masses in the batch before any cost is computed.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~25s):** A $3$-kilogram rye batch carries $y = 3(3) - 3 = 6$ kilograms of barley, so $12 + 6c = 42$ and $c = 5$.\n\n**The Full Solution:**\nStep 1: Find the barley mass: $y = 3(3) - 3 = 6$ kilograms.\nStep 2: Substitute $x = 3$ and $y = 6$ into the cost equation: $4(3) + c(6) = 42$, or $12 + 6c = 42$.\nStep 3: Subtract $12$ and divide by $6$: $6c = 30$, so $c = 5$. Check: $4(3) + 5(6) = 12 + 30 = 42$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($7$): dividing $42$ by the $6$ kilograms of barley without first removing the $\\$12$ spent on rye.\n* Choice C ($9$): adding the rye cost instead of subtracting it, computing $\\frac{42 + 12}{6}$.\n* Choice D ($10$): dividing by the rye mass rather than the barley mass, computing $\\frac{42 - 12}{3}$.\n\n**Test Day Takeaway:** Reduce to one unknown before touching the constant: compute the second quantity, then solve the linear equation that remains."
+}

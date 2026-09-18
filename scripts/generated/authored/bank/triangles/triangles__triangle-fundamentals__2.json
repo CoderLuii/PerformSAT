@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "The side lengths of a triangle are $11$, $11$, and $17$. Which of the following best describes this triangle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Equilateral"
+  },
+  {
+   "id": "B",
+   "text": "Isosceles"
+  },
+  {
+   "id": "C",
+   "text": "Right"
+  },
+  {
+   "id": "D",
+   "text": "Scalene"
+  }
+ ],
+ "distractorNotes": {
+  "A": "requires all three side lengths to be equal, but $17 \\neq 11$",
+  "C": "would require $11^2 + 11^2 = 17^2$, and $242 \\neq 289$",
+  "D": "requires no two sides to be equal, but two sides here measure $11$"
+ },
+ "correctAnswer": "B",
+ "hint": "Count how many of the three lengths are equal to each other.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** Exactly two of the three side lengths are equal, so the triangle is isosceles.\n\n**The Full Solution:**\nStep 1: Classify by sides: equilateral means all three lengths equal, isosceles means exactly two equal, and scalene means no two equal.\nStep 2: Compare the given lengths: $11 = 11$, while $11 \\neq 17$.\nStep 3: Exactly two sides match, so the triangle is isosceles.\n\nVerification: The two equal sides force two equal angles, which is exactly what an isosceles triangle has. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (Equilateral): requires all three side lengths to be equal, but $17 \\neq 11$.\n* Choice C (Right): would require $11^2 + 11^2 = 17^2$, and $242 \\neq 289$.\n* Choice D (Scalene): requires no two sides to be equal, but two sides here measure $11$.\n\n**Test Day Takeaway:** Classify by counting how many side lengths match — three, two, or none — before testing anything else."
+}

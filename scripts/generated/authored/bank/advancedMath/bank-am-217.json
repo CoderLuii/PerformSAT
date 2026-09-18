@@ -1,0 +1,51 @@
+{
+ "id": "bank-am-217",
+ "question": "A cable is strung between two poles. The height of the cable above the ground, in feet, at a horizontal distance $x$ feet from the first pole is modeled by $y = 0.05(x - 30)^2 + 14$, and the graph of this model is shown. Which of the following is the best interpretation of the vertex of the graph in this context?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 30,
+    "k": 14
+   },
+   "a": 0.05,
+   "xRange": [
+    0,
+    60
+   ],
+   "yRange": [
+    0,
+    60
+   ],
+   "xTickInterval": 10,
+   "yTickInterval": 10,
+   "gridInterval": 10,
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The cable is attached to the first pole $14$ feet above the ground."
+  },
+  {
+   "id": "B",
+   "text": "The cable's lowest point is $30$ feet above the ground, $14$ feet from the first pole."
+  },
+  {
+   "id": "C",
+   "text": "The cable's lowest point is $14$ feet above the ground, $30$ feet from the first pole."
+  },
+  {
+   "id": "D",
+   "text": "The two poles stand $14$ feet apart."
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads the minimum height as the height at $x = 0$",
+  "B": "swaps the two coordinates of the vertex",
+  "D": "reads a height as a horizontal distance"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Interpret Vertex Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The vertex is $(30, 14)$ and $0.05>0$, so the cable dips to its lowest height, $14$ feet, at a horizontal distance of $30$ feet.\n\n**The Full Solution:**\nStep 1: The equation is in vertex form $a(x - h)^2 + k$ with $h = 30$ and $k = 14$, so the vertex is $(30, 14)$.\nStep 2: The leading coefficient $0.05$ is positive, so the parabola opens upward and the vertex is the lowest point.\nStep 3: The input is a horizontal distance in feet and the output is a height in feet: the cable's lowest point is $14$ feet up, $30$ feet from the first pole. Check the attachment height: at $x = 0$, $y = 0.05(900) + 14 = 59$ feet. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($14$ feet at the pole): at the pole $x = 0$, where the model gives $59$ feet.\n* Choice B ($30$ feet high, $14$ feet along): reverses the coordinates of the vertex.\n* Choice D (poles $14$ feet apart): $14$ is a height; the graph shows the second pole at $x = 60$ feet.\n\n**Test Day Takeaway:** With a positive leading coefficient the vertex is a MINIMUM — for hanging cables, costs, and fuel use, that lowest point is usually what the question is after."
+}

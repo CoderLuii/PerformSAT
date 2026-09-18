@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-460",
+ "question": "A strength coach times a weighted sled push and finds the athlete gaining $2.5$ meters per second of speed during each second of the push. That acceleration equals $k$ kilometers per hour squared. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$32.4$"
+  },
+  {
+   "id": "C",
+   "text": "$9{,}000$"
+  },
+  {
+   "id": "D",
+   "text": "$32{,}400$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "applies the seconds-to-hours factor once instead of squaring it, $2.5 \\cdot 3{,}600 \\div 1{,}000 = 9$",
+  "B": "divides by $1{,}000$ twice, squaring the length conversion along with the time conversion, $2.5 \\cdot 12.96 = 32.4$",
+  "C": "squares nothing and leaves the length in meters, $2.5 \\cdot 3{,}600 = 9{,}000$"
+ },
+ "explanation": "**SAT Pattern: Chained Unit Conversion — Squared Time**\n\n**Choice D is correct.** Converting $2.5$ meters per second squared multiplies by $3{,}600^2$ for the time and divides by $1{,}000$ for the length: $2.5 \\cdot \\frac{3{,}600^2}{1{,}000} = 32{,}400$.\n\n**The Fast Way (~60s):** One meter per second squared is $\\frac{3{,}600^2}{1{,}000} = 12{,}960$ kilometers per hour squared, so $2.5(12{,}960) = 32{,}400$.\n\n**The Full Solution:**\n\nStep 1: Write the rate with its units: $2.5 \\dfrac{\\text{m}}{\\text{s}^2}$.\n\nStep 2: Convert the length. Since $1$ kilometer is $1{,}000$ meters, multiply by $\\dfrac{1 \\text{ km}}{1{,}000 \\text{ m}}$, giving $0.0025 \\dfrac{\\text{km}}{\\text{s}^2}$.\n\nStep 3: Convert the time. Seconds appear squared, so the factor $\\dfrac{3{,}600 \\text{ s}}{1 \\text{ h}}$ is applied twice: $0.0025(3{,}600)(3{,}600) = 32{,}400$ kilometers per hour squared. Check: $32{,}400 \\div 12{,}960 = 2.5$, the original rate.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($9$): uses $3{,}600$ once instead of twice, $2.5(3{,}600) \\div 1{,}000 = 9$. The seconds unit is squared, so its conversion factor must be squared too.\n* Choice B ($32.4$): squares the length conversion as well, dividing by $1{,}000^2$ and computing $2.5(12.96) = 32.4$. Only the time unit carries an exponent.\n* Choice C ($9{,}000$): converts seconds to hours once and never converts meters to kilometers, $2.5(3{,}600) = 9{,}000$.\n\n**Test Day Takeaway:** Write the unit with its exponent before you convert -- every factor that touches a squared unit gets applied twice."
+}

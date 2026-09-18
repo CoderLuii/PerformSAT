@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "On a framing plan marked in meters, a roof rafter follows the line $3x + 5y = 45$, and a second rafter is drawn parallel to the first. Which of the following must be the slope of the second rafter?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{5}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{3}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{5}{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the slope, reading the coefficients in the wrong order",
+  "C": "drops the negative sign that appears when 3x moves across the equal sign",
+  "D": "gives the negative reciprocal, the slope of a perpendicular rafter"
+ },
+ "correctAnswer": "B",
+ "hint": "Rewrite the equation so the coefficient of $y$ is $1$.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** Solving $3x + 5y = 45$ for $y$ gives $y = -\\frac{3}{5}x + 9$, and a parallel line shares that slope.\n\n**The Full Solution:**\nStep 1: Subtract $3x$ from both sides: $5y = -3x + 45$.\nStep 2: Divide by $5$: $y = -\\frac{3}{5}x + 9$, so the first rafter has slope $-\\frac{3}{5}$.\nStep 3: Parallel lines have equal slopes, so the second rafter must also have slope $-\\frac{3}{5}$.\n\nCheck: The points $(0,\\ 9)$ and $(5,\\ 6)$ both satisfy $3x + 5y = 45$, and $\\frac{6-9}{5-0} = -\\frac{3}{5}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{5}{3}$): inverts the ratio, reading the coefficients in the wrong order.\n* Choice C ($\\frac{3}{5}$): drops the negative sign that appears when $3x$ crosses the equal sign.\n* Choice D ($\\frac{5}{3}$): gives the negative reciprocal, which belongs to a perpendicular rafter.\n\n**Test Day Takeaway:** From $Ax + By = C$ the slope is $-\\frac{A}{B}$; the sign is part of the answer."
+}

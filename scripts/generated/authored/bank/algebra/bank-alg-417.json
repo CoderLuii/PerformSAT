@@ -1,0 +1,29 @@
+{
+ "question": "A lab fills $x$ vials holding $8$ milliliters each and $y$ vials holding $12$ milliliters each, using $340$ milliliters of reagent in all, and there are $5$ more large vials than small vials. How many $12$-milliliter vials are filled?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$14$"
+  },
+  {
+   "id": "B",
+   "text": "$17$"
+  },
+  {
+   "id": "C",
+   "text": "$19$"
+  },
+  {
+   "id": "D",
+   "text": "$22$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports x, the number of 8-milliliter vials, instead of y",
+  "B": "divides 340 by 20 without first removing the 60 milliliters contributed by the five extra large vials",
+  "D": "adds 5 to that same 17 instead of to the correct value of x"
+ },
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**Choice C is correct.** Substituting $y=x+5$ into $8x+12y=340$ gives $20x+60=340$, so $x=14$ and $y=19$.\n\n**The Fast Way (~45s):** $8x+12(x+5)=340\\Rightarrow 20x=280\\Rightarrow x=14$, so $y=19$.\n\n**The Full Solution:**\n\nStep 1: The total volume is $8x+12y=340$ milliliters. Replace $y$ with $x+5$: $8x+12(x+5)=340$.\n\nStep 2: Distribute and combine: $8x+12x+60=340$, so $20x=280$ and $x=14$.\n\nStep 3: Then $y=14+5=19$ large vials. Check: $8(14)+12(19)=112+228=340$ milliliters.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($14$): reports $x$, the count of $8$-milliliter vials, rather than the count asked for.\n* Choice B ($17$): divides $340$ by $20$ without first subtracting the $60$ milliliters the five extra large vials contribute.\n* Choice D ($22$): adds $5$ to that incorrect $17$.\n\n**Test Day Takeaway:** Subtract the constant produced by the substitution before dividing, then convert back to the variable the question names.",
+ "id": "bank-alg-417"
+}

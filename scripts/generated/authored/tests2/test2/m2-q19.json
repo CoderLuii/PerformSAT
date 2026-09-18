@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "A science museum runs two workshop series, each scheduled over $n$ weeks. Series A holds $3n - 7$ sessions and admits $4$ visitors to each session, and Series B admits $11n + 6$ visitors in all. The two series admit the same total number of visitors. How many sessions does Series A hold?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-73$"
+  },
+  {
+   "id": "B",
+   "text": "$32$"
+  },
+  {
+   "id": "C",
+   "text": "$34$"
+  },
+  {
+   "id": "D",
+   "text": "$95$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "distributes 4 over -7 as +28, solving 12n + 28 = 11n + 6 to get n = -22 and 3n - 7 = -73",
+  "B": "multiplies only the 3n by 4, solving 12n - 7 = 11n + 6 to get n = 13 and 3n - 7 = 32",
+  "C": "solves correctly for n = 34 but reports n, the number of weeks, instead of the number of sessions, 3n - 7"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** Equal totals give $4(3n - 7) = 11n + 6$, so $12n - 28 = 11n + 6$ and $n = 34$. The number of sessions is $3(34) - 7 = 95$.\n\n**The Full Solution:**\nStep 1: Series A admits $4$ visitors in each of its $3n - 7$ sessions, or $4(3n - 7)$ visitors in all. Setting that equal to Series B's total gives $4(3n - 7) = 11n + 6$.\nStep 2: Distribute and collect like terms: $12n - 28 = 11n + 6$, so $12n - 11n = 6 + 28$ and $n = 34$.\nStep 3: The question asks for sessions, not $n$: $3(34) - 7 = 95$ sessions. Check: $4(95) = 380$ visitors, and $11(34) + 6 = 380$ visitors ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-73$): distributes the $4$ as $12n + 28$, flipping the sign of the constant. That yields $n = -22$ and $3n - 7 = -73$, a negative count of sessions — a signal to recheck the distribution.\n* Choice B ($32$): multiplies only the first term inside the parentheses, leaving $12n - 7 = 11n + 6$ and $n = 13$. The factor outside must reach every term inside.\n* Choice C ($34$): the correct value of $n$, the number of weeks each series runs. The sessions are $3n - 7$, not $n$.\n\n**Test Day Takeaway:** Distribute across every term, combine like terms once, and then reread the question — when the variable appears inside a larger expression, that expression is usually what is being asked for."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-151",
+ "question": "A projection engineer models the focus error, in millimeters, produced when a lens is offset by $x$ millimeters from its seat, using $E(x)=\\frac{x^{2}+8}{x-1}$. What is the value of $E(-5)$?",
+ "correctAnswer": "-5.5",
+ "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**The correct answer is $-5.5$.**\n\n**The Fast Way (~25s):** The numerator is $25+8=33$ and the denominator is $-5-1=-6$, so $E(-5)=\\frac{33}{-6}=-5.5$.\n\n**The Full Solution:**\nStep 1: Substitute $-5$ into the numerator: $(-5)^{2}+8=25+8=33$.\nStep 2: Substitute $-5$ into the denominator: $-5-1=-6$.\nStep 3: Divide: $\\frac{33}{-6}=-5.5$ millimeters. Check: $-5.5 \\times (-6)=33$, the numerator ✓\n\n**Common Mistakes:** Writing $(-5)^{2}$ as $-25$ gives $\\frac{-17}{-6}$, about $2.83$. Reading the denominator as $-5+1=-4$ gives $-8.25$. Dropping the sign of the denominator gives $5.5$.\n\n**Test Day Takeaway:** A negative input changes the numerator and the denominator separately — evaluate each fully before dividing."
+}

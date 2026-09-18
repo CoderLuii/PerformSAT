@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-436",
+  "question": "The price of a jacket after a $35\\%$ discount is $\\$91$. What was the price of the jacket, in dollars, before the discount was applied?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$31.85$"
+    },
+    {
+      "id": "B",
+      "text": "$59.15$"
+    },
+    {
+      "id": "C",
+      "text": "$122.85$"
+    },
+    {
+      "id": "D",
+      "text": "$140$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes $35\\%$ of the discounted price, applying the percent to the wrong base.",
+    "B": "multiplies by $0.65$ instead of dividing by it.",
+    "C": "adds $35\\%$ to the discounted price instead of undoing the discount."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Reverse Percent**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** A $35\\%$ discount leaves $65\\%$ of the original, so the original is $\\frac{91}{0.65}=140$ dollars.\n\n**The Full Solution:**\nStep 1: Let $p$ be the price before the discount. Taking $35\\%$ off leaves $65\\%$, so $0.65p=91$.\nStep 2: Divide both sides by $0.65$: $p=\\frac{91}{0.65}$.\nStep 3: $p=140$ dollars. Check: $35\\%$ of $140$ is $49$, and $140-49=91$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($31.85$): computes $0.35\\times 91$, taking the discount off the already-discounted price.\n* Choice B ($59.15$): computes $0.65\\times 91$, multiplying by the retained fraction instead of dividing.\n* Choice C ($122.85$): computes $1.35\\times 91$, adding $35\\%$ of the sale price back on. Adding a percent of the smaller number cannot undo a percent of the larger one.\n\n**Test Day Takeaway:** Percent problems that hand you the ending amount are division problems. Write $(\\text{factor})(\\text{original})=\\text{ending}$ and divide."
+}

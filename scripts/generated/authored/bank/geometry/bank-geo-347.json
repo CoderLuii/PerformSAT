@@ -1,0 +1,29 @@
+{
+ "question": "A harbor radar antenna turns counterclockwise through an angle of $\\frac{29\\pi}{6}$ radians from its rest position. What is the value of the tangent of that angle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\sqrt{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{\\sqrt{3}}{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{\\sqrt{3}}{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\sqrt{3}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the reciprocal, the tangent of 2 pi over 3",
+  "C": "drops the negative sign, treating 5 pi over 6 as a first-quadrant angle",
+  "D": "uses pi over 3 as the reference angle instead of pi over 6"
+ },
+ "explanation": "**SAT Pattern: Coterminal-Angle Reduction for Tangent**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Subtract $4\\pi = \\frac{24\\pi}{6}$ to land at $\\frac{5\\pi}{6}$, a second-quadrant angle with reference $\\frac{\\pi}{6}$, so the tangent is $-\\frac{\\sqrt{3}}{3}$.\n\n**The Full Solution:**\nStep 1: Angles that differ by a whole number of full turns share the same tangent, so subtract $4\\pi$: $\\frac{29\\pi}{6} - \\frac{24\\pi}{6} = \\frac{5\\pi}{6}$.\nStep 2: $\\frac{5\\pi}{6}$ lies in the second quadrant, where tangent is negative, and its reference angle is $\\pi - \\frac{5\\pi}{6} = \\frac{\\pi}{6}$.\nStep 3: Since $\\tan\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{3}$, the answer is $-\\frac{\\sqrt{3}}{3}$. Check: $\\frac{5\\pi}{6} = 150^{\\circ}$, and $\\tan 150^{\\circ} \\approx -0.577$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\sqrt{3}$): has the right sign but the reciprocal size; it is $\\tan\\frac{2\\pi}{3}$, not $\\tan\\frac{5\\pi}{6}$.\n* Choice C ($\\frac{\\sqrt{3}}{3}$): finds the reference value but ignores that the second quadrant makes tangent negative.\n* Choice D ($\\sqrt{3}$): uses $\\frac{\\pi}{3}$ as the reference angle and keeps it positive.\n\n**Test Day Takeaway:** Strip whole turns first, then name the quadrant and the reference angle — the quadrant fixes the sign, the reference angle fixes the size.",
+ "id": "bank-geo-347"
+}

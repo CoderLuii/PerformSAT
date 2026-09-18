@@ -1,31 +1,31 @@
 {
-  "id": 1221,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "The architectural historian Ebba Koch has organized her study of Mughal building around three kinds of evidence: the surviving structures at sites such as Fatehpur ____ the court chronicles, written by officials close to the emperor, that describe how the buildings were used; and the album paintings that show gardens and pavilions as their designers intended them to appear.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Sikri;"
-    },
-    {
-      "id": "B",
-      "text": "Sikri:"
-    },
-    {
-      "id": "C",
-      "text": "Sikri,"
-    },
-    {
-      "id": "D",
-      "text": "Sikri"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The sentence lists three kinds of evidence, and because two of the items contain internal commas, the items themselves are separated by semicolons; the first item therefore ends with a semicolon after \"Sikri.\" A colon would wrongly signal the start of a new list when one has already been introduced. A comma cannot do the separating work here, since commas are already operating inside the items, and omitting punctuation entirely fuses the first two items together."
+ "id": 1221,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "A county soil survey of the early twentieth century rested on three kinds of records: the maps drawn in the field, which traced each soil's boundaries as the survey party walked the ____ the pit descriptions, written up wherever a hole was dug, that noted the depth, color, and texture of every layer; and the laboratory reports on samples shipped back for chemical analysis.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "ground;"
+  },
+  {
+   "id": "B",
+   "text": "ground:"
+  },
+  {
+   "id": "C",
+   "text": "ground,"
+  },
+  {
+   "id": "D",
+   "text": "ground"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The sentence lists three kinds of records, and because the items themselves contain commas, the items must be separated by semicolons — so the first item ends with a semicolon after \"ground.\"\n\n**The Full Solution:**\n- The rule: when items in a list carry commas of their own, the dividers between items are promoted to semicolons so a reader can tell where one item stops and the next starts.\n- The three items are the field maps (\"which traced each soil's boundaries...\"), the pit descriptions (\"written up wherever a hole was dug...\"), and the laboratory reports — and the second item alone contains three internal commas.\n- The list's third item is already introduced by \"; and,\" confirming the semicolon pattern, so the first divider must match: \"ground;\".\n\n**Why the other choices are wrong:**\n- B: A colon here would open a second list inside the one that the colon after \"records\" has already introduced.\n- C: A comma cannot divide these items, because commas are already at work inside them.\n- D: With no punctuation, the first two items fuse into one unreadable run."
 }

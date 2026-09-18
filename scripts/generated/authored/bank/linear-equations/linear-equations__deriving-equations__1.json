@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "question": "A gym charges a one-time registration fee of \\$40 plus \\$18 for each month of membership. Which equation gives the total amount $A$, in dollars, paid for $m$ months of membership?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$A = 18m + 40$"
+    },
+    {
+      "id": "B",
+      "text": "$A = 40m + 18$"
+    },
+    {
+      "id": "C",
+      "text": "$A = 58m$"
+    },
+    {
+      "id": "D",
+      "text": "$A = 18m - 40$"
+    }
+  ],
+  "correctAnswer": "A",
+  "hint": "One of the two amounts is charged again every month and the other is charged only once — that decides which one multiplies $m$.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** The \\$18 recurs, so it multiplies $m$; the \\$40 is paid once, so it is the constant: $A = 18m + 40$ — choice A.\n\n**The Full Solution:**\nStep 1: The membership charge is \\$18 for each month, so $m$ months contribute $18m$ dollars.\nStep 2: The registration fee is paid once no matter how long the membership lasts, so it is the constant term, $40$.\nStep 3: Combine the two: $A = 18m + 40$. Check $m = 3$: $18(3)+40 = 94$, which is the \\$40 fee plus three monthly charges of \\$18. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($A = 40m + 18$): swaps the two amounts, charging \\$40 every month and \\$18 only once.\n* Choice C ($A = 58m$): adds the two amounts before multiplying, so the \\$40 fee is charged every month along with the \\$18.\n* Choice D ($A = 18m - 40$): subtracts the registration fee; a fee raises the total paid, so it must be added.\n\n**Test Day Takeaway:** In a linear model the per-unit amount is the slope and the one-time amount is the constant. Substitute a small value like $m = 3$ and count the charges by hand to confirm you have not swapped them."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-306",
+ "question": "A combine harvester's header-height error, in millimeters, at ground speed $x$ kilometers per hour is modeled by $p(x)=x^{3}+kx^{2}-2x+5$, where $k$ is a constant. Dividing $p(x)$ by $x-4$ leaves a remainder $5$ times as large as the remainder left by dividing $p(x)$ by $x+2$. What is the value of $k$?",
+ "correctAnswer": "14",
+ "explanation": "**SAT Pattern: Polynomial Remainder Theorem**\n\n**The correct answer is $14$.**\n\n**The Fast Way (~45s):** The two remainders are $p(4)=61+16k$ and $p(-2)=1+4k$; setting $61+16k=5(1+4k)$ gives $56=4k$, so $k=14$.\n\n**The Full Solution:**\n\nStep 1: The remainder on division by $x-4$ is $p(4)=64+16k-8+5=61+16k$.\n\nStep 2: The remainder on division by $x+2$ is $p(-2)=-8+4k+4+5=1+4k$.\n\nStep 3: Translate the sentence into $61+16k=5(1+4k)$, so $61+16k=5+20k$ and $56=4k$, giving $k=14$. Check: $p(4)=61+224=285$, $p(-2)=1+56=57$, and $5\\cdot57=285$.\n\n**Common Mistakes:**\n\n* Reading the divisors' constants as the inputs, using $x=-4$ and $x=2$, gives $16k-51=5(4k+9)$ and the wrong value $k=-24$.\n* Attaching the factor $5$ to the wrong remainder, $5p(4)=p(-2)$, gives $305+80k=1+4k$ and the wrong value $k=-4$.\n\n**Test Day Takeaway:** Write both remainders as expressions in the unknown constant first; the comparison sentence then becomes a one-line linear equation."
+}

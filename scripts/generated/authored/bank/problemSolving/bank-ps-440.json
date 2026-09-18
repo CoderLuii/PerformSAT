@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-440",
+  "question": "A county tuberculosis clinic screened $n$ patients in June, where $n$ is a constant. In July the same clinic screened $1{,}200$ patients, which was $20\\%$ fewer patients than it screened in June. What is the value of $n$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$960$"
+    },
+    {
+      "id": "B",
+      "text": "$1{,}000$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}440$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}500$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes 20 percent off July instead of reversing it: 1,200 x 0.8 = 960",
+    "B": "divides by 1.2 instead of 0.8: 1,200 / 1.2 = 1,000",
+    "C": "adds 20 percent of July to July: 1,200 x 1.2 = 1,440, applying the percent to the wrong base"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Reverse Percent**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** July is $80\\%$ of June, so $n = \\frac{1{,}200}{0.8} = 1{,}500$.\n\n**The Full Solution:**\nStep 1: Translate the percent. \"$20\\%$ fewer than June\" means July equals $100\\% - 20\\% = 80\\%$ of June, so $0.8n = 1{,}200$.\nStep 2: Solve for $n$. Divide both sides by $0.8$: $n = \\frac{1{,}200}{0.8} = 1{,}500$.\nStep 3: Check forward. $20\\%$ of $1{,}500$ is $300$, and $1{,}500 - 300 = 1{,}200$, the July count. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($960$): takes another $20\\%$ off July: $1{,}200 \\times 0.8 = 960$. That moves in the wrong direction.\n* Choice B ($1{,}000$): divides by $1.2$ instead of $0.8$, which reverses an increase rather than a decrease.\n* Choice C ($1{,}440$): computes $1{,}200 \\times 1.2 = 1{,}440$, applying the $20\\%$ to July. The percent is always taken of the ORIGINAL, June.\n\n**Test Day Takeaway:** A percent change is always measured against the original amount. If the new value is given, divide by $1 \\pm r$; never multiply the new value by it."
+}

@@ -1,0 +1,48 @@
+{
+ "id": 6,
+ "question": "The table gives the dimensions of panels $A$ and $B$, the two rectangular solar panels on a deep-space probe. What is the sum of the areas of the two panels, in square meters?",
+ "questionTable": {
+  "headers": [
+   "Panel",
+   "Length (meters)",
+   "Width (meters)"
+  ],
+  "rows": [
+   [
+    "$A$",
+    "$3.5$",
+    "$1.2$"
+   ],
+   [
+    "$B$",
+    "$2.4$",
+    "$1.5$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4.2$"
+  },
+  {
+   "id": "B",
+   "text": "$7.8$"
+  },
+  {
+   "id": "C",
+   "text": "$8.6$"
+  },
+  {
+   "id": "D",
+   "text": "$17.2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "finds only panel A's area, 3.5 x 1.2, and stops",
+  "C": "adds all four table entries instead of multiplying length by width within each row",
+  "D": "computes the combined perimeter, 2(3.5 + 1.2) + 2(2.4 + 1.5), instead of the combined area"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Multiply within each row and add: $3.5(1.2) = 4.2$ and $2.4(1.5) = 3.6$, so the panels cover $7.8$ square meters.\n\n**The Full Solution:**\nStep 1: Panel $A$ measures $3.5$ meters by $1.2$ meters, so its area is $3.5 \\times 1.2 = 4.2$ square meters.\nStep 2: Panel $B$ measures $2.4$ meters by $1.5$ meters, so its area is $2.4 \\times 1.5 = 3.6$ square meters.\nStep 3: The total area is $4.2 + 3.6 = 7.8$ square meters. Check the size: both panels are near $2$ meters wide and under $4$ meters long, so a total near $8$ square meters is reasonable ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4.2$): this is panel $A$ alone. The question asks for the sum, and panel $B$ adds another $3.6$ square meters.\n* Choice C ($8.6$): this adds the four table numbers, $3.5 + 1.2 + 2.4 + 1.5$. Adding a length to a width produces meters, not square meters.\n* Choice D ($17.2$): this is the total perimeter, $9.4 + 7.8$. Perimeter measures the edge, area measures the surface.\n\n**Test Day Takeaway:** When a table supplies dimensions row by row, do the row arithmetic first and combine afterward — combining the raw table entries first changes the units."
+}

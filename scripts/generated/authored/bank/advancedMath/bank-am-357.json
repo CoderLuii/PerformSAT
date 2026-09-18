@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-357",
+ "question": "In a coastal forecast the wave heights $v$, in meters, predicted by two models satisfy $v^2 - 6v + c = 0$, where the constant $c$ depends on the offshore fetch. If no such wave height exists, which statement must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$c < 9$"
+  },
+  {
+   "id": "B",
+   "text": "$c \\le 9$"
+  },
+  {
+   "id": "C",
+   "text": "$c > 9$"
+  },
+  {
+   "id": "D",
+   "text": "$c > 36$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "divides $-4c < -36$ by $-4$ without reversing the inequality sign",
+  "B": "reverses the inequality and keeps the boundary, but at $c = 9$ the height $v = 3$ meters does satisfy the equation",
+  "D": "drops the factor of $4$, solving $36 - c < 0$"
+ },
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** No real solution means $b^2 - 4ac < 0$, so $36 - 4c < 0$ and $c > 9$.\n\n**The Full Solution:**\nStep 1: Read off $a = 1$, $b = -6$, and the constant term $c$.\nStep 2: The equation has no real solution exactly when the discriminant is negative: $(-6)^2 - 4(1)(c) < 0$, or $36 - 4c < 0$.\nStep 3: Adding $4c$ to both sides gives $36 < 4c$, so $c > 9$. Check: at $c = 10$ the discriminant is $36 - 40 = -4 < 0$, while at $c = 9$ the single height $v = 3$ satisfies the equation ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($c < 9$): divides by $-4$ without reversing the inequality sign.\n* Choice B ($c \\le 9$): reverses the inequality and includes $c = 9$, where a wave height of $3$ meters does satisfy the equation.\n* Choice D ($c > 36$): treats the discriminant as $36 - c$, ignoring the coefficient $4$.\n\n**Test Day Takeaway:** Move the variable term to the positive side before dividing — that keeps the inequality pointing the right way."
+}

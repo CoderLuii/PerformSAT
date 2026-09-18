@@ -1,40 +1,40 @@
 {
-  "id": 1208,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "module": 1,
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "When paper money first circulated in China during the Song dynasty, about a thousand years ago, it began as a convenience of trade. In the Sichuan region, coins were minted from heavy iron, and merchants found it impractical to carry enough metal for large purchases. They deposited their coins with trusted shops and accepted printed receipts in return; because these receipts could be redeemed for the deposited metal, they soon passed from hand to hand as though they were money. On this account, paper currency was an invention of private commerce, a practical solution that merchants worked out among themselves before any government took an interest."
-    },
-    {
-      "label": "Text 2",
-      "text": "No one disputes that printed receipts circulated among Sichuan merchants. But to treat paper money as essentially a private invention understates how quickly, and how decisively, the state shaped it. Within a few decades the Song government restricted the right to issue notes and then claimed it outright, printing official currency backed by its own authority and using it to move tax revenue and pay troops across great distances. What made paper a true currency, on this view, was not the merchants' receipts but the government's decision to issue, regulate, and stand behind the notes, turning a local convenience into a national system."
-    }
-  ],
-  "question": "Based on the texts, how would the author of Text 2 most likely respond to the argument presented in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The author would agree that merchant receipts came first but insist that paper became a true currency only when the state took over issuing the notes."
-    },
-    {
-      "id": "B",
-      "text": "The author would deny that printed receipts played any real part in the origins of paper money, since only government-issued notes deserve the name."
-    },
-    {
-      "id": "C",
-      "text": "The author would accept that paper money was a purely private invention and that the government's later involvement was incidental to its success."
-    },
-    {
-      "id": "D",
-      "text": "The author would conclude that, because the notes began as private merchant receipts rather than state issue, paper money should not really be considered a genuine currency at all."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The author of Text 2 grants that receipts circulated among the Sichuan merchants but argues that paper became a true currency only once the Song government took over issuing and regulating the notes, so A captures both that agreement and that key qualification. B is wrong because Text 2 openly accepts that the merchants' receipts circulated. C states the very position from Text 1 that the author of Text 2 pushes against. D goes further than Text 2 ever does; the author reframes how paper money became a currency rather than denying that it is one."
+ "id": 1208,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "module": 1,
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "In the open-field villages of medieval Europe, a family's farmland was not one compact plot but dozens of narrow strips scattered across the village's great fields. To some economic historians, the scattering was a deliberate form of insurance. Hail, flooding, and blight rarely strike a whole landscape evenly, so a household whose strips lay in many different soils and situations could expect some of them to yield in almost any year. On this account, families accepted the cost of walking between distant strips because scattering protected them against the total failure of a single consolidated holding."
+  },
+  {
+   "label": "Text 2",
+   "text": "No one doubts that scattered strips spread a household's risk to some degree. But calling the scattering insurance implies that villagers designed their holdings for that purpose, when ordinary village life could produce the same pattern without any design at all. Strips changed hands piecemeal through inheritance, marriage, and sale, each transaction dividing or relocating a family's land, and neighbors who shared a plow team worked their lands in sequence rather than in one block. On this view, scattering was less a policy than a residue — the accumulated by-product of countless transactions that no one coordinated."
+  }
+ ],
+ "question": "Based on the texts, how would the author of Text 2 most likely respond to the argument presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The author would accept that scattering reduced a household's risk but deny that this benefit shows the pattern was created for that purpose."
+  },
+  {
+   "id": "B",
+   "text": "The author would object that scattering actually increased the chance that a family's entire harvest could be destroyed in a single bad year."
+  },
+  {
+   "id": "C",
+   "text": "The author would agree that villagers deliberately scattered their strips but argue that they did so to share plow teams rather than to manage risk."
+  },
+  {
+   "id": "D",
+   "text": "The author would reply that the records of inheritance, marriage, and sale are too incomplete to reveal how the strips came to be scattered."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Text 2 opens by conceding the benefit — \"No one doubts that scattered strips spread a household's risk\" — and then attacks the inference from benefit to purpose: the same pattern \"could... [arise] without any design at all.\" A keeps both the concession and the objection.\n\n**The Full Solution:**\n- Text 1's argument: scattering was deliberate insurance — families accepted the walking costs because dispersed strips protected against total failure.\n- Text 2 does not dispute that dispersed strips reduce risk; it disputes that the risk reduction explains the pattern's origin.\n- Its alternative: inheritance, marriage, sale, and shared plow teams would scatter holdings on their own, making the pattern \"a residue... that no one coordinated.\"\n- So the response is: yes, scattering helped, but that does not show it was designed to help — exactly choice A.\n\n**Why the other choices are wrong:**\n- B: It contradicts Text 2's opening concession that scattering did spread risk.\n- C: It keeps the deliberateness Text 2 rejects — the plow teams are offered as an undesigned cause, not a motive villagers acted on.\n- D: It invents a complaint about incomplete records; Text 2 relies on those very transactions as its explanation."
 }

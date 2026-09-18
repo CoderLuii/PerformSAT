@@ -1,0 +1,47 @@
+{
+  "id": 8,
+  "question": "For constants $a$ and $b$, the function $f$ satisfies $f(x)=\\dfrac{a}{x+b}$, and the curve drawn in the $xy$-plane is its graph, with marked points $(0,5)$ and $(2,3)$. The graph of $y=p(x)$ is the graph of $y=f(x)$ raised $4$ units. Which of the following defines $p$?",
+  "diagram": {
+    "type": "rationalFunction",
+    "params": {
+      "a": 15,
+      "b": 3,
+      "showPoints": [
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$p(x)=\\dfrac{15}{x+3}-4$"
+    },
+    {
+      "id": "B",
+      "text": "$p(x)=\\dfrac{15}{x+3}+4$"
+    },
+    {
+      "id": "C",
+      "text": "$p(x)=\\dfrac{15}{x+7}$"
+    },
+    {
+      "id": "D",
+      "text": "$p(x)=\\dfrac{19}{x+3}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "lowers instead of raising the graph",
+    "C": "moves the constant into the denominator",
+    "D": "adds the constant to the numerator"
+  },
+  "correctAnswer": "B",
+  "hint": "Test the choices against a height you can compute: raising a graph adds to the finished output.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~45s):** The marked points give $f(x)=\\dfrac{15}{x+3}$, and raising the graph $4$ units adds $4$ to the whole output.\n\n**The Full Solution:**\nStep 1: From $(0,5)$: $\\dfrac{a}{b}=5$, so $a=5b$. From $(2,3)$: $\\dfrac{a}{2+b}=3$, so $a=6+3b$.\nStep 2: Setting these equal gives $5b=6+3b$, so $b=3$ and $a=15$, and $f(x)=\\dfrac{15}{x+3}$.\nStep 3: Raising the graph $4$ units means $p(x)=f(x)+4=\\dfrac{15}{x+3}+4$. Check against the choices at $x=0$: $p(0)$ must be $5+4=9$, and only this equation gives $\\dfrac{15}{3}+4=9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\dfrac{15}{x+3}-4$): lowers the graph instead of raising it.\n* Choice C ($\\dfrac{15}{x+7}$): puts the $4$ into the denominator, which would shift the graph horizontally.\n* Choice D ($\\dfrac{19}{x+3}$): adds $4$ to the numerator; that changes the shape of the curve rather than lifting it.\n\n**Test Day Takeaway:** An outside constant is added to the entire fraction — it never migrates into the numerator or the denominator."
+}

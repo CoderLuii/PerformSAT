@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "Water leaves a storage tank at a constant rate. The tank held $9{,}400$ gallons when a drain valve opened and $7{,}000$ gallons $5$ hours later. The volume remaining is modeled by $g(t) = 9400 - kt$, where $t$ is the number of minutes since the valve opened. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$480$"
+  },
+  {
+   "id": "D",
+   "text": "$2{,}400$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the 2,400-gallon drop by 60 instead of by the 300 minutes elapsed",
+  "C": "computes the rate per hour, 2,400 / 5 = 480, and never converts to minutes",
+  "D": "reports the total volume lost, 2,400 gallons, rather than the rate"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The tank loses $2400$ gallons in $300$ minutes, so $k = \\frac{2400}{300} = 8$ gallons per minute.\n\n**The Full Solution:**\nStep 1: The volume drops from $9400$ to $7000$, a loss of $2400$ gallons.\nStep 2: In $g(t) = 9400 - kt$, the variable $t$ counts minutes, so the elapsed time must be in minutes: $5$ hours is $5 \\times 60 = 300$ minutes.\nStep 3: $k$ is the loss per minute: $k = \\frac{2400}{300} = 8$. Check: $g(300) = 9400 - 8(300) = 9400 - 2400 = 7000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($40$): this divides $2400$ by $60$, dividing by the conversion factor instead of by the $300$ minutes that actually elapsed.\n* Choice C ($480$): this is the rate per hour, $\\frac{2400}{5}$. The model's $t$ is in minutes, and a rate is only meaningful in the model's own unit.\n* Choice D ($2{,}400$): this is the total volume lost over the whole interval, not the amount lost each minute.\n\n**Test Day Takeaway:** A slope carries the units of the model, not the units of the sentence. Convert the elapsed time into the model's variable before dividing."
+}

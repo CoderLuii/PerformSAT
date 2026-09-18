@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-500",
+ "question": "A cargo lift's travel-time model $a(x - 4)^2 + 7$, where $a$ is a nonzero constant, expands to $ax^2 + bx + c$. In terms of $a$, what is $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8a$"
+  },
+  {
+   "id": "B",
+   "text": "$-4a$"
+  },
+  {
+   "id": "C",
+   "text": "$4a$"
+  },
+  {
+   "id": "D",
+   "text": "$8a$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses -4a, taking the shift 4 once instead of doubling it",
+  "C": "uses the shift once and keeps it positive",
+  "D": "doubles the shift but drops the negative sign"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Expanding $a(x - 4)^2$ gives $ax^2 - 8ax + 16a$, so $b = -8a$.\n\n**The Full Solution:**\nStep 1: Expand the square: $(x - 4)^2 = x^2 - 8x + 16$.\nStep 2: Multiply each term by $a$: $ax^2 - 8ax + 16a$.\nStep 3: Add $7$, which affects only the constant, so $b = -8a$ and $c = 16a + 7$. Check with $a = 1$: $(x - 4)^2 + 7 = x^2 - 8x + 23$, and $-8a = -8$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-4a$): uses the shift $4$ once instead of $2(4) = 8$.\n* Choice C ($4a$): uses the shift once and keeps it positive, ignoring the minus sign inside the square.\n* Choice D ($8a$): doubles the shift correctly but drops the sign that comes from $-4$.\n\n**Test Day Takeaway:** For $a(x - p)^2 + k$ the middle coefficient is always $-2ap$, whatever letter $a$ stands for."
+}

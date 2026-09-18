@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "In a dockside crane, the jib $ST$, the mast $TU$, and the tie $SU$ meet so that the right angle falls at $U$. The tie is $42$ meters long and $\\tan S = \\frac{20}{21}$. How long, in meters, is the jib?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40$"
+  },
+  {
+   "id": "B",
+   "text": "$58$"
+  },
+  {
+   "id": "C",
+   "text": "$82$"
+  },
+  {
+   "id": "D",
+   "text": "$84$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the mast TU instead of the jib",
+  "C": "adds the two legs, 42 + 40",
+  "D": "doubles the tie, as though the hypotenuse were twice the adjacent leg"
+ },
+ "correctAnswer": "B",
+ "hint": "The jib is the one side that the tangent of $S$ never touches.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~40s):** $\\tan S = \\frac{TU}{42} = \\frac{20}{21}$ gives $TU = 40$, and $\\sqrt{42^2 + 40^2} = 58$ meters.\n\n**The Full Solution:**\nStep 1: The right angle is at $U$, so from angle $S$ the mast $TU$ is opposite and the tie $SU$ is adjacent: $\\tan S = \\frac{TU}{42} = \\frac{20}{21}$.\nStep 2: Solving gives $TU = \\frac{20}{21}(42) = 40$ meters.\nStep 3: The jib $ST$ is the hypotenuse: $ST = \\sqrt{42^2 + 40^2} = \\sqrt{1764 + 1600} = \\sqrt{3364} = 58$ meters. Check: $\\frac{40}{42} = \\frac{20}{21}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($40$): reporting the mast $TU$, the leg the tangent produces, instead of the jib.\n* Choice C ($82$): adding the two legs, $42 + 40$, instead of using the Pythagorean theorem.\n* Choice D ($84$): doubling the tie, which assumes a $30$-$60$-$90$ relationship that does not hold here.\n\n**Test Day Takeaway:** Tangent hands you the second leg; the hypotenuse still needs the Pythagorean theorem."
+}

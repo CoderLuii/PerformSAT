@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-186",
+ "question": "An aerial survey found invasive water hyacinth covering $k$ hectares, which is $12\\%$ of a lake's surface. A removal program cleared $54$ hectares of hyacinth, leaving coverage at $7.5\\%$ of the surface measured from the same imagery. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$90$"
+  },
+  {
+   "id": "B",
+   "text": "$144$"
+  },
+  {
+   "id": "C",
+   "text": "$450$"
+  },
+  {
+   "id": "D",
+   "text": "$720$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the coverage remaining after removal, $0.075(1{,}200) = 90$ hectares",
+  "C": "divides the cleared area by the starting percent, $\\frac{54}{0.12} = 450$",
+  "D": "divides the cleared area by the ending percent, $\\frac{54}{0.075} = 720$"
+ },
+ "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice B is correct.** The $54$ hectares cleared equal $12\\% - 7.5\\% = 4.5\\%$ of the lake, so the lake is $\\frac{54}{0.045} = 1{,}200$ hectares and $k = 0.12(1{,}200) = 144$.\n\n**The Fast Way (~60s):** The removal cut coverage by $4.5$ percentage points, so $54$ hectares is $4.5\\%$ of the lake: $\\frac{54}{0.045} = 1{,}200$ hectares, and $12\\%$ of that is $144$.\n\n**The Full Solution:**\n\nStep 1: Name the lake's surface area $L$ hectares. Coverage before removal is $0.12L$ and after removal is $0.075L$.\n\nStep 2: Set the cleared area equal to the drop in coverage: $0.12L - 0.075L = 54$, so $0.045L = 54$ and $L = 1{,}200$ hectares.\n\nStep 3: Compute the original coverage: $k = 0.12(1{,}200) = 144$ hectares. Check: after removal, coverage is $144 - 54 = 90$ hectares, and $\\frac{90}{1{,}200} = 0.075$, or $7.5\\%$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($90$): is the coverage left after removal, not the coverage the survey found.\n* Choice C ($450$): divides $54$ by $12\\%$, treating the cleared area as the full original coverage's percent of the lake.\n* Choice D ($720$): divides $54$ by $7.5\\%$, using the ending percent as though it applied to the cleared area.\n\n**Test Day Takeaway:** When two percents of the same unknown whole are compared, subtract the percents first -- the difference is what the given amount actually represents."
+}

@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "question": "According to the text, what was a keyboard player reading from a figured bass expected to do?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Play only the written bass line exactly as printed, adding nothing of the player's own to it."
-    },
-    {
-      "id": "B",
-      "text": "Supply the chords' voicing, spacing, and ornamentation that the numbered shorthand did not spell out."
-    },
-    {
-      "id": "C",
-      "text": "Compose an entirely new bass line to replace the one that the composer had originally supplied."
-    },
-    {
-      "id": "D",
-      "text": "Write down the numbers above the bass line so that later performers could reproduce the performance."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage says directly that the player \"supplied the actual voicing, spacing, and ornamentation on the spot,\" filling in what the shorthand left unspecified. Choice A contradicts this, since the player added a great deal; Choice C overshoots, because the player built chords above the composer's bass rather than replacing it; and Choice D describes recording the notation rather than realizing it in performance.",
-  "passage": "In the decades around 1700, composers rarely wrote out every note a performer was expected to play. A keyboard player reading from a \"figured bass\" saw only the bass line and a shorthand of numbers indicating which chords to build above it; the player supplied the actual voicing, spacing, and ornamentation on the spot. Performances of the same piece could therefore differ substantially from one player to the next. Modern \"historically informed\" performers have revived this practice, treating the printed score not as a complete set of instructions but as a framework the performer was expected to complete in the moment of playing.",
-  "_meta": {
-    "anchor": "Baroque performance practice: figured bass / basso continuo realization"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "question": "According to the text, what determines the weave count of a Montecristi hat?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The total number of months that the weaver spends working on the hat"
   },
-  "id": 1111,
-  "module": 1
+  {
+   "id": "B",
+   "text": "How thinly the weaver splits each straw before the weaving begins"
+  },
+  {
+   "id": "C",
+   "text": "The size of the button at the center of the crown"
+  },
+  {
+   "id": "D",
+   "text": "The age of the toquilla palm from which the straw was cut"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The text states it directly: \"the count is set by how thinly the weaver splits each straw at the outset.\"\n\n**The Full Solution:**\n- The question asks for a stated detail, so the answer must be located in the text, not inferred beyond it.\n- The sentence defining weave count — rows of weave per inch — continues immediately with its determinant: the thinness of the split straws.\n- Choice B restates that sentence and nothing more.\n\n**Why the other choices are wrong:**\n- A: It reverses cause and effect — fine splitting is why a hat takes months, not the other way around.\n- C: The center button is where weaving begins, but the text never connects it to fineness.\n- D: The palm's age is never mentioned in the text.",
+ "passage": "The finest so-called panama hats are woven not in Panama but in Ecuador, from straw prepared from the leaves of the toquilla palm. In the town of Montecristi, a weaver begins at a small button at the crown's center and works outward in a spiral, adding one pair of straws at a time. The fineness of a hat is judged by its weave count — the number of rows of weave per inch — and the count is set by how thinly the weaver splits each straw at the outset. Splitting straw finely enough for the best hats can double or triple the weaving time, which is why a superfine hat may occupy its maker for months.",
+ "_meta": {
+  "anchor": "panama-hat weaving — Montecristi weave count set by straw splitting",
+  "distractors": {
+   "A": "cause-effect reversal",
+   "C": "detail present but unconnected to fineness",
+   "D": "never mentioned"
+  }
+ },
+ "id": 1111,
+ "module": 1
 }

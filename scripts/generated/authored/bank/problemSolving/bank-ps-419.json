@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-419",
+  "question": "Of the $45$ hours a technician logged in one month, $18$ hours were spent on calibration. What percent of the logged hours were spent on calibration?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2.5\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$27\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$40\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$60\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides $45$ by $18$, reversing the part and the whole",
+    "B": "reports the $27$ remaining hours as a percent",
+    "D": "reports the percent of hours not spent on calibration"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** $\\frac{18}{45} = 0.4 = 40\\%$.\n\n**The Full Solution:**\nStep 1: The part is $18$ hours and the whole is the $45$ logged hours, so compute $\\frac{18}{45}$.\nStep 2: Simplify by dividing both parts by $9$: $\\frac{18}{45} = \\frac{2}{5}$.\nStep 3: $\\frac{2}{5} = 0.4 = 40\\%$. Check: $40\\%$ of $45$ is $18$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.5\\%$): divides $45$ by $18$, reversing the part and the whole\n* Choice B ($27\\%$): reports the $27$ remaining hours as a percent\n* Choice D ($60\\%$): reports the percent of hours not spent on calibration\n\n**Test Day Takeaway:** Simplify the fraction before converting; $\\frac{2}{5}$ is easier to read as a percent than $\\frac{18}{45}$."
+}

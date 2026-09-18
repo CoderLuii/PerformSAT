@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
  "module": 1,
- "passage": "Geodesist Anny Cazenave uses satellites to measure tiny changes in the distance between Earth's surface and orbiting instruments. For decades, the gradual sinking or rising of a coastline could be tracked only by tide gauges bolted to piers, which record sea level relative to the land beneath them—and so cannot tell whether the water is rising or the land is settling. Cazenave points out that satellite measurements, fixed instead to a reference frame centered on Earth itself, separate the two motions. A coastline a tide gauge records as stable may, against that fixed frame, be quietly subsiding.",
+ "passage": "Does raising the minimum wage reduce employment at the businesses that must pay it? The question is hard to answer with national statistics, because wages, prices, and hiring all move together for many reasons. In 1992, economists David Card and Alan Krueger saw an opportunity in geography. New Jersey had just raised its minimum wage while neighboring Pennsylvania had not, so fast-food restaurants on either side of the state line — operating in essentially the same labor market — could be compared directly. Surveying hundreds of restaurants before and after the increase, the economists found no evidence that employment fell in New Jersey relative to Pennsylvania.",
  "question": "Which choice best describes the overall structure of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "It defines a single measurement technique and then lists the coastlines where that technique has so far been applied."
+   "text": "It poses an economic question, explains why it is hard to answer, and describes how researchers designed a comparison to address that difficulty."
   },
   {
    "id": "B",
-   "text": "It contrasts two researchers' competing accounts of why coastlines appear to sink and then settles their disagreement."
+   "text": "It states a widely accepted economic principle, then presents survey data that confirm the principle's predictions."
   },
   {
    "id": "C",
-   "text": "It identifies a limitation of an older measurement method and then explains how a newer method overcomes that limitation."
+   "text": "It summarizes a disagreement between two economists, then describes the study they conducted together to resolve it."
   },
   {
    "id": "D",
-   "text": "It reports a surprising discovery about coastlines and then traces the history of the instruments that produced it."
+   "text": "It describes a change in one state's employment laws, then weighs the strongest arguments for and against adopting the same change in every other state."
   }
  ],
- "correctAnswer": "C",
- "explanation": "The correct answer is C. The passage first describes what tide gauges cannot do—because they measure sea level relative to the land, they cannot separate a rising ocean from sinking ground—and then explains how satellite measurements, tied to a frame centered on Earth, resolve exactly that ambiguity. A ignores the comparison entirely and invents a list of coastlines; B frames the passage as a dispute between two named researchers, though only Cazenave appears and no quarrel is described; and D treats the closing illustration as a discovery and adds an instrument history the text does not give."
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The text presents a question, an obstacle to answering it, and a research design that gets around the obstacle — exactly the sequence choice A describes.\n\n**The Full Solution:**\n- The three moves come in order: an opening question (does a minimum-wage increase reduce employment?), an obstacle (national statistics tangle too many factors together), and a design that isolates the policy (comparing restaurants across a state line where only one state raised its wage), ending with the result.\n\n**Why the other choices are wrong:**\n- B: It fails twice — no principle is stated as accepted, and the finding runs against the expectation the question implies rather than confirming one.\n- C: It invents a disagreement: Card and Krueger worked as a team throughout.\n- D: The text never weighs arguments about extending the policy."
 }

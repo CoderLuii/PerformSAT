@@ -1,0 +1,29 @@
+{
+ "question": "Two clock generators are modeled by the equations $y=ax+2$ and $y=5x+b$, where $a$ and $b$ are constants, and this system of two equations has no solution. Which statement must be true about $a$ and $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$a=5$ and $b=2$"
+  },
+  {
+   "id": "B",
+   "text": "$a=5$ and $b\\ne 2$"
+  },
+  {
+   "id": "C",
+   "text": "$a\\ne 5$ and $b=2$"
+  },
+  {
+   "id": "D",
+   "text": "$a\\ne 5$ and $b\\ne 2$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "describes identical equations, which give infinitely many solutions rather than none",
+  "C": "leaves the slopes different, so the two graphs cross once and there is exactly one solution",
+  "D": "also leaves the slopes different, again producing exactly one solution"
+ },
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**Choice B is correct.** Substituting gives $ax+2=5x+b$; no solution requires the $x$ terms to cancel while the constants differ, so $a=5$ and $b\\ne 2$.\n\n**The Fast Way (~35s):** Parallel, non-identical lines: matching slopes ($a=5$) and different intercepts ($b\\ne 2$).\n\n**The Full Solution:**\n\nStep 1: Set the two expressions for $y$ equal: $ax+2=5x+b$, or $(a-5)x=b-2$.\n\nStep 2: If $a\\ne 5$, this has the single solution $x=\\frac{b-2}{a-5}$, so the system would have exactly one solution.\n\nStep 3: For no solution the coefficient must vanish while the right side does not: $a-5=0$ and $b-2\\ne 0$, that is, $a=5$ and $b\\ne 2$. Check: with $a=5$ and $b=9$ the equation reads $2=9$, which is false for every $x$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: makes the two equations identical, which gives infinitely many solutions, not none.\n* Choice C: with $a\\ne 5$ the lines have different slopes and cross exactly once.\n* Choice D: also leaves the slopes different, so a single solution still exists.\n\n**Test Day Takeaway:** No solution needs both halves: the variable terms must cancel and the constants must not match.",
+ "id": "bank-alg-416"
+}

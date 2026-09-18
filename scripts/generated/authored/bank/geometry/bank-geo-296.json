@@ -1,0 +1,29 @@
+{
+ "question": "Water in a community garden's cylindrical rain barrel stands $24$ inches deep and takes up $1{,}176\\pi$ cubic inches. What is the barrel's inside radius, in inches?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$14$"
+  },
+  {
+   "id": "C",
+   "text": "$24.5$"
+  },
+  {
+   "id": "D",
+   "text": "$49$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reports the diameter, 2 times 7",
+  "C": "divides 1176 by 2 times 24 instead of by 24, using a surface-area setup",
+  "D": "stops at r squared = 49 without taking the square root"
+ },
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** From $\\pi r^2(24) = 1{,}176\\pi$, $r^2 = \\frac{1{,}176}{24} = 49$, so $r = 7$ inches.\n\n**The Full Solution:**\nStep 1: The water forms a cylinder of height $24$ inches and volume $1{,}176\\pi$ cubic inches, so $\\pi r^2(24) = 1{,}176\\pi$.\nStep 2: Divide both sides by $24\\pi$: $r^2 = 49$.\nStep 3: Take the positive square root: $r = 7$ inches. Check: $\\pi(49)(24) = 1{,}176\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($14$): reports the diameter after correctly finding the radius.\n* Choice C ($24.5$): divides by $2h = 48$ instead of by $h = 24$, a surface-area style setup.\n* Choice D ($49$): stops at $r^2$ and never takes the square root.\n\n**Test Day Takeaway:** Running $\\pi r^2 h$ backwards means dividing by $\\pi h$ and then taking a square root — two undo steps, not one.",
+ "id": "bank-geo-296"
+}

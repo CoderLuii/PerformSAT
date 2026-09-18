@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-179",
+ "question": "A film-scanner control applies $j(x)=x^{2}-k$ to a gate setting and then applies $h(x)=2x+k$ to that result, where $k$ is a constant. A gate setting of $4$ produces a final output of $25$. What is the value of $k$?",
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Function Composition**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~25s):** $h(j(4))=2(16-k)+k=32-k$, so $32-k=25$ and $k=7$.\n\n**The Full Solution:**\nStep 1: The inner step gives $j(4)=4^{2}-k=16-k$.\nStep 2: The outer step doubles that and adds $k$: $h(16-k)=2(16-k)+k=32-2k+k=32-k$.\nStep 3: Setting $32-k=25$ gives $k=7$. Check: $j(4)=16-7=9$ and $h(9)=2(9)+7=25$ ✓\n\n**Common Mistakes:** Reversing the order produces $j(h(4))=(8+k)^{2}-k$, an equation with no integer solution. Dropping the $+k$ from the outer step gives $32-2k=25$ and the non-integer value $3.5$. Squaring after subtracting gives $(4-k)^{2}$ instead of $4^{2}-k$.\n\n**Test Day Takeaway:** When the same constant appears in both functions, simplify the whole composition symbolically before setting it equal to the given output."
+}

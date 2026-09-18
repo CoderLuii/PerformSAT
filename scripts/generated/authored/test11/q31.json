@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "obstacle"
-    },
-    {
-      "id": "B",
-      "text": "adaptation"
-    },
-    {
-      "id": "C",
-      "text": "illusion"
-    },
-    {
-      "id": "D",
-      "text": "inheritance"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"adaptation.\" The phrase \"not a mere holdover but an ______\" sets up a contrast, and the clause after the colon describes active adjustment—reorganizing, extending credit, rewriting contracts. \"Adaptation\" names that adjustment. \"Inheritance\" is too close to the \"holdover\" the sentence rejects; \"illusion\" denies the persistence the passage treats as real; and \"obstacle\" does not describe what the city's continued success was.",
-  "passage": "Long after sea routes around Africa drew European merchants away from the overland silk trade, the Ottoman commercial city of Aleppo remained a thriving market hub. Recent work in the city's court records suggests that its persistence was not a mere holdover but an ______: local merchants reorganized around new goods, extended credit to caravans coming from farther east, and rewrote their contracts to handle the longer settlement times the changing trade now required.",
-  "_meta": {
-    "anchor": "Ottoman trade history: Aleppo's commercial adaptation in the early modern period"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "embarrassment"
   },
-  "id": 1131,
-  "module": 2
+  {
+   "id": "B",
+   "text": "improvisation"
+  },
+  {
+   "id": "C",
+   "text": "afterthought"
+  },
+  {
+   "id": "D",
+   "text": "imitation"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The colon's list — ordinary boxcars packed with lake ice, walls rebuilt with sawdust, hatches cut for refilling — describes making do with the tools at hand \"to a problem no equipment yet existed to solve.\" That is an \"improvisation.\"\n\n**The Full Solution:**\n- The frame \"less an invention than an ______\" demands a noun that contrasts with \"invention\": something cobbled together rather than designed from scratch.\n- Every detail after the colon is adaptation of existing things — boxcars, harvested ice, sawdust — pressed into a new role.\n- \"Improvisation\" names exactly that mode of solving a problem with whatever is available.\n\n**Why the other choices are wrong:**\n- A: \"Embarrassment\" imports a negative judgment, but the passage presents the improvised car as the solution that worked, not a source of shame.\n- C: \"Afterthought\" implies neglect or low priority, while the passage shows deliberate, layered effort.\n- D: \"Imitation\" requires an original being copied, and the text says no such equipment yet existed.",
+ "passage": "When railroads first carried fresh meat and produce across the United States, the refrigerated car was less an invention than an ______: shippers packed ordinary boxcars with harvested lake ice, rebuilt the walls with sawdust insulation, and cut hatches into the roofs so that stations along the line could refill the melting bunkers, adapting the tools at hand to a problem no equipment yet existed to solve.",
+ "_meta": {
+  "anchor": "refrigerated rail cars — improvised ice-bunker boxcars",
+  "distractors": {
+   "A": "imported negative judgment",
+   "C": "wrong attitude — neglect vs. effort",
+   "D": "requires an original the text rules out"
+  }
+ },
+ "id": 1131,
+ "module": 2
 }

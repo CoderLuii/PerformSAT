@@ -1,0 +1,42 @@
+{
+ "question": "The floor of a circular reverb chamber is modeled in the $xy$-plane by $(x - 2)^2 + (y - 11)^2 = 144$, where $x$ and $y$ are in meters, and the figure shows the floor with center $O$ and radius $r$. What is the value of $r$?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 70,
+   "showAngleLabel": false,
+   "showAngleArc": false,
+   "radius": "r",
+   "showRadiusLabel": true,
+   "labelCenter": "O",
+   "labelPoint1": "P",
+   "labelPoint2": "Q"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$144$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "halves the radius, treating 12 as a diameter",
+  "C": "reports the diameter, 2 times 12",
+  "D": "reports r squared without taking the square root"
+ },
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** The right side of standard form is $r^2$, so $r = \\sqrt{144} = 12$ meters.\n\n**The Full Solution:**\nStep 1: Compare $(x - 2)^2 + (y - 11)^2 = 144$ with $(x - h)^2 + (y - k)^2 = r^2$.\nStep 2: The center is $O = (2, 11)$ and $r^2 = 144$.\nStep 3: Take the positive square root: $r = 12$ meters. Check: the point $(14, 11)$ satisfies $144 + 0 = 144$ and lies $12$ meters from $O$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): halves $12$, as if the equation had given a diameter.\n* Choice C ($24$): doubles the radius, reporting the diameter instead.\n* Choice D ($144$): copies $r^2$ off the right side without taking a square root.\n\n**Test Day Takeaway:** The lone number on the right of standard form is always $r^2$ — one square root separates it from the radius.",
+ "id": "bank-geo-288"
+}

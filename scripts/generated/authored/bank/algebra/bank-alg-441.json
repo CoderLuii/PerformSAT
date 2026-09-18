@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-441",
+ "question": "A coatings plant combines $x$ liters of solvent $A$ and $y$ liters of solvent $B$ under the conditions $8x + 6y = 480$ and $20x + ky = 900$. No combination satisfies both conditions. What is the value of the constant $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2.4$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "divides $6$ by the factor $\\frac{5}{2}$ instead of multiplying by it",
+  "B": "copies the first condition's $y$-coefficient without scaling it",
+  "D": "copies the second condition's $x$-coefficient"
+ },
+ "explanation": "**SAT Pattern: Parallel Lines No Solution**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The $x$-coefficient scales by $\\frac{20}{8} = \\frac{5}{2}$, so $k = \\frac{5}{2}(6) = 15$.\n\n**The Full Solution:**\nStep 1: No combination satisfies both conditions, so the two equations are proportional in their coefficients but not in their constants.\nStep 2: The factor from the first condition to the second is $\\frac{20}{8} = \\frac{5}{2}$.\nStep 3: Applying it to the $y$-coefficient gives $k = \\frac{5}{2}(6) = 15$; the constants disagree because $\\frac{5}{2}(480) = 1200 \\neq 900$. Check: $\\frac{20}{8} = \\frac{15}{6} = 2.5$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.4$): divides $6$ by the factor $\\frac{5}{2}$ instead of multiplying by it\n* Choice B ($6$): copies the first condition's $y$-coefficient without scaling it\n* Choice D ($20$): copies the second condition's $x$-coefficient\n\n**Test Day Takeaway:** Find the scale factor from the $x$-coefficients, apply it to the $y$-coefficient, then confirm the constants break the pattern."
+}

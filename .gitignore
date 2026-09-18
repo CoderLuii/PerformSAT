@@ -80,3 +80,11 @@ marketing/creators/payout-report*.json
 
 # nested deps (marketing tooling)
 marketing/carousel-generator/node_modules/
+
+# Flyer build: installed deps + font/QR intermediates (PDFs themselves ARE tracked)
+marketing/flyers/src/node_modules/
+marketing/flyers/src/.work/
+knowledge/reference/
+
+# Claude Code agent worktrees (local only)
+.claude/worktrees/

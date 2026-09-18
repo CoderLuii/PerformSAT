@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Memories of events are stored permanently as fixed recordings that remain entirely intact over a lifetime unless the brain tissue holding them is physically damaged."
-    },
-    {
-      "id": "B",
-      "text": "Research on memory reconsolidation has been carried out in both animals and humans rather than in only one of the two kinds of subjects."
-    },
-    {
-      "id": "C",
-      "text": "Because retrieving a memory can briefly make it open to change, the act of remembering may revise the memory rather than simply replay a fixed record."
-    },
-    {
-      "id": "D",
-      "text": "Misleading suggestions are the only kind of new information capable of altering a memory during the moment of recall."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage's point is that retrieval makes a memory briefly unstable, so recalling it can change it rather than merely replay it. Choice C captures that claim. Choice A states the fixed-recording view the passage is arguing against. Choice B reports a methodological detail, and Choice D overstates one example—misleading suggestions are mentioned as one source of change, not the only one.",
-  "passage": "When we recall an event, it can feel as though we are replaying a recording stored intact since the event occurred. Research on memory reconsolidation complicates that picture. Studies in both animals and humans indicate that retrieving a memory can return it to a temporarily unstable state, during which the memory becomes open to modification before it is stored again. In this window, new information present at the moment of recall—or even a misleading suggestion—can be folded into the memory that is then restored. The findings imply that remembering is less the retrieval of a fixed record than an act that can quietly revise the very memory being recalled.",
-  "_meta": {
-    "anchor": "cognitive science of memory: reconsolidation; remembering as reconstruction"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Sheet music sales declined once publishers began paying star performers to promote new songs."
   },
-  "id": 1110,
-  "module": 1
+  {
+   "id": "B",
+   "text": "Song pluggers were usually songwriters who had failed to sell tunes of their own."
+  },
+  {
+   "id": "C",
+   "text": "Tin Pan Alley publishers actively engineered demand for new songs rather than waiting for merit to be noticed."
+  },
+  {
+   "id": "D",
+   "text": "The publishers of Tin Pan Alley valued a song's catchy melody far more highly than the machinery of its promotion."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The text's controlling claim is that publishers \"did not wait for the public to discover a new song\" — success \"was manufactured as much as it was written.\"\n\n**The Full Solution:**\n- The opening sentence states the thesis directly: publishers made their money on sheet music and did not leave discovery to chance.\n- The middle supplies the mechanism — pluggers performing in stores, paying stars, leading rehearsed singalongs — all deliberate demand-building.\n- The closing sentence generalizes: melody mattered, \"but so did the machinery,\" confirming that engineered promotion is the idea the details serve.\n\n**Why the other choices are wrong:**\n- A: No decline in sales is reported; paying performers is presented as a promotion tactic, not a cause of falling sales.\n- B: The text says pluggers were pianists and singers; nothing marks them as failed songwriters.\n- D: It reverses the final sentence, which insists the machinery mattered alongside the melody.",
+ "passage": "Around 1900, the music publishers clustered on New York's West 28th Street — nicknamed Tin Pan Alley — made their money selling sheet music, and they did not wait for the public to discover a new song. Each firm employed \"song pluggers,\" pianists and singers whose job was to make a tune inescapable: they performed it in department stores, planted it in vaudeville acts by paying star performers to sing it, and led theater audiences in rehearsed singalongs. A song's success, publishers understood, was manufactured as much as it was written; a catchy melody mattered, but so did the machinery that put it before the public again and again.",
+ "_meta": {
+  "anchor": "Tin Pan Alley song plugging — engineered demand for sheet music",
+  "distractors": {
+   "A": "fabricated sales decline",
+   "B": "fabricated biography for pluggers",
+   "D": "reverses the closing generalization"
+  }
+ },
+ "id": 1110,
+ "module": 1
 }

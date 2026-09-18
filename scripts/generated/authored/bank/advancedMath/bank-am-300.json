@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-300",
+ "question": "The height, in millimeters, of dough in a proofing tray $x$ hours after mixing is modeled by $h(x)=x^{3}-6x^{2}+11x+7$. When $h(x)$ is divided by $x-4$, the quotient is a polynomial and the remainder is a constant. What is that constant?",
+ "correctAnswer": "19",
+ "explanation": "**SAT Pattern: Polynomial Remainder Theorem**\n\n**The correct answer is $19$.**\n\n**The Fast Way (~20s):** The constant remainder on division by $x-4$ equals $h(4)$, and $h(4)=64-96+44+7=19$.\n\n**The Full Solution:**\n\nStep 1: Write $h(x)=(x-4)q(x)+r$, where $q$ is a polynomial and $r$ is the constant remainder.\n\nStep 2: Substitute $x=4$. The product $(4-4)q(4)$ is $0$, so $r=h(4)$.\n\nStep 3: Evaluate: $4^{3}=64$, $-6(4)^{2}=-96$, $11(4)=44$, and the constant is $7$, so $h(4)=64-96+44+7=19$. Check: $64+44+7=115$ and $115-96=19$.\n\n**Common Mistakes:**\n\n* Substituting $x=-4$, the constant seen inside the divisor, gives $-64-96-44+7=-197$.\n* Dropping the constant term $+7$ gives $64-96+44=12$.\n\n**Test Day Takeaway:** Match the divisor $x-a$ to the input $x=a$; the remainder is one substitution away, never a long division."
+}

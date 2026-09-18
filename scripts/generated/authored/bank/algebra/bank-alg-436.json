@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-436",
+ "question": "Let $a$, $b$, $c$, $p$, and $q$ be constants, with $b \\neq 0$. In the $xy$-plane, a line through $(p, q)$ has the same slope as the graph of $ax + by = c$. Which of the following equations must define that line?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y - q = \\frac{a}{b}(x - p)$"
+  },
+  {
+   "id": "B",
+   "text": "$y - q = \\frac{b}{a}(x - p)$"
+  },
+  {
+   "id": "C",
+   "text": "$y - p = -\\frac{a}{b}(x - q)$"
+  },
+  {
+   "id": "D",
+   "text": "$y - q = -\\frac{a}{b}(x - p)$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "drops the negative sign produced when $ax$ moves to the right side",
+  "B": "uses $\\frac{b}{a}$, a reciprocal that belongs to the perpendicular case, not the parallel one",
+  "C": "swaps the coordinates of $(p, q)$, subtracting $p$ from $y$ and $q$ from $x$"
+ },
+ "explanation": "**SAT Pattern: Parallel Line through a Point**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Solving $ax + by = c$ for $y$ gives slope $-\\frac{a}{b}$, so point-slope form is $y - q = -\\frac{a}{b}(x - p)$.\n\n**The Full Solution:**\nStep 1: Subtracting $ax$ from both sides of $ax + by = c$ gives $by = -ax + c$.\nStep 2: Dividing by $b$, which is nonzero, gives $y = -\\frac{a}{b}x + \\frac{c}{b}$, so the slope is $-\\frac{a}{b}$.\nStep 3: A line through $(p, q)$ with that slope is $y - q = -\\frac{a}{b}(x - p)$. Check: substituting $x = p$ gives $y = q$, so the point lies on the line.\n\n**Why the wrong answers are tempting:**\n* Choice A ($y - q = \\frac{a}{b}(x - p)$): drops the negative sign produced when $ax$ moves to the right side\n* Choice B ($y - q = \\frac{b}{a}(x - p)$): uses $\\frac{b}{a}$, a reciprocal that belongs to the perpendicular case, not the parallel one\n* Choice C ($y - p = -\\frac{a}{b}(x - q)$): swaps the coordinates of $(p, q)$, subtracting $p$ from $y$ and $q$ from $x$\n\n**Test Day Takeaway:** For a line in standard form the slope is always $-\\frac{a}{b}$; memorize the sign so letter problems stay one substitution."
+}

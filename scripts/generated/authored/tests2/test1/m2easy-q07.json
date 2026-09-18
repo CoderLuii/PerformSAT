@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "An observatory logged the length, in minutes, of seven exposures: $12$, $14$, $15$, $15$, $17$, $18$, and $96$. The $96$-minute exposure is then removed. Which statement best describes the effect of that removal on the mean and on the median?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mean decreases and the median stays the same."
+  },
+  {
+   "id": "B",
+   "text": "The mean stays the same and the median decreases."
+  },
+  {
+   "id": "C",
+   "text": "Both the mean and the median decrease."
+  },
+  {
+   "id": "D",
+   "text": "Both the mean and the median stay the same."
+  }
+ ],
+ "distractorNotes": {
+  "B": "swaps the roles of the two measures — it is the median, not the mean, that resists a removed extreme value",
+  "C": "assumes removing the largest value must pull the middle value down, but the two central values of the remaining six are both 15",
+  "D": "treats the removal as a change in count only, missing that the mean falls from about 26.7 to about 15.2"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The $96$ sits far above every other value, so dropping it drags the mean down hard; the center of the list is $15$ before and after, so the median does not move.\n\n**The Full Solution:**\nStep 1: With all seven values, the sum is $12 + 14 + 15 + 15 + 17 + 18 + 96 = 187$, so the mean is $\\frac{187}{7} \\approx 26.7$ minutes. The middle value of the seven ordered lengths is the fourth, $15$ minutes.\nStep 2: Remove the $96$. The remaining six values sum to $91$, so the new mean is $\\frac{91}{6} \\approx 15.2$ minutes.\nStep 3: With six values the median is the average of the third and fourth, $\\frac{15 + 15}{2} = 15$ minutes. So the mean drops from about $26.7$ to about $15.2$ while the median holds at $15$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (mean same, median lower): exactly backwards. The mean uses every value, so an extreme value moves it; the median counts positions, so it barely notices.\n* Choice C (both decrease): plausible if you assume every summary must fall when the largest value leaves. Here the two central values are both $15$, so the median is pinned at $15$.\n* Choice D (both stay the same): true for the median only. Ignoring $96$ changes the sum by $96$ and the count by one, and the mean falls by more than $11$ minutes.\n\n**Test Day Takeaway:** One extreme value moves the mean and leaves the median nearly untouched. Before answering, check what the middle position actually is after the removal."
+}

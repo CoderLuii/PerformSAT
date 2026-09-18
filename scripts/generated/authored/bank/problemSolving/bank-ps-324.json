@@ -1,0 +1,82 @@
+{
+  "id": "bank-ps-324",
+  "question": "The scatterplot shows the volume of water $y$, in liters, in a rain barrel $x$ minutes after a steady rain began, for $8$ readings, along with the line of best fit $\\hat{y} = 0.45x + 12$. According to the line of best fit, what is the predicted increase in the volume of water, in liters, during a $20$-minute period?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          5,
+          15
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          15,
+          20
+        ],
+        [
+          25,
+          22
+        ],
+        [
+          30,
+          27
+        ],
+        [
+          40,
+          29
+        ],
+        [
+          50,
+          36
+        ],
+        [
+          60,
+          38
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 60,
+      "yMin": 0,
+      "yMax": 45,
+      "xGridStep": 5,
+      "yGridStep": 5,
+      "xLabelStep": 10,
+      "yLabelStep": 10,
+      "xLabel": "Minutes since rain began",
+      "yLabel": "Volume of water (liters)",
+      "bestFitLine": {
+        "slope": 0.45,
+        "intercept": 12
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.45$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$21$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the slope itself, the increase over $1$ minute rather than over $20$ minutes.",
+    "C": "reports the $y$-intercept, the predicted volume at the moment the rain began.",
+    "D": "evaluates the model at $x = 20$, $0.45(20) + 12 = 21$, giving a predicted volume rather than an increase."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Slope of Best Fit**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** The slope is $0.45$ liter per minute, so over $20$ minutes the predicted increase is $0.45(20) = 9$ liters.\n\n**The Full Solution:**\nStep 1: A change in the predicted value equals the slope times the change in $x$, and the intercept never enters a change calculation.\nStep 2: Here the slope is $0.45$ liter per minute and the change in $x$ is $20$ minutes.\nStep 3: The predicted increase is $0.45 \\times 20 = 9$ liters. Check: at $x = 30$ the model gives $25.5$ liters and at $x = 50$ it gives $34.5$ liters, a difference of $9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.45$): reports the slope itself, the increase over $1$ minute rather than over $20$ minutes.\n* Choice C ($12$): reports the $y$-intercept, the predicted volume at the moment the rain began.\n* Choice D ($21$): evaluates the model at $x = 20$, $0.45(20) + 12 = 21$, giving a predicted volume rather than an increase.\n\n**Test Day Takeaway:** \"How much does it change\" uses slope $\\times$ change in $x$ only. \"What is the value\" uses the whole equation, intercept included."
+}

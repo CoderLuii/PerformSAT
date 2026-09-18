@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-242",
+  "question": "A quality manager at a bottling plant selected $180$ bottles at random from all the bottles the plant produced on a certain day and measured the fill volume of each. The mean fill volume of the sample was $498$ milliliters. Which of the following is the largest group to which this estimate can be applied?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "All bottles the plant produced that day"
+    },
+    {
+      "id": "B",
+      "text": "All bottles the plant produced that year"
+    },
+    {
+      "id": "C",
+      "text": "The $180$ bottles that were measured"
+    },
+    {
+      "id": "D",
+      "text": "All bottles produced that day at every plant the company owns"
+    }
+  ],
+  "distractorNotes": {
+    "B": "extends the one-day sample to production on days that were never sampled",
+    "C": "stops at the sample itself instead of the population it was drawn from",
+    "D": "extends to other plants, which were outside the sampling frame"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The bottles were selected at random from that day's production at this plant, so the mean of $498$ milliliters estimates the mean for that day's production at this plant and nothing wider.\n\n**The Full Solution:**\nStep 1: Identify the population that was sampled: all bottles the plant produced on that one day.\nStep 2: Because the $180$ bottles were selected at random from that population, the sample mean is a reasonable estimate of the population mean.\nStep 3: The estimate applies to that population only. Check: a bottle made on a different day, or at a different plant, had no chance of being selected, so the data say nothing about it. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: production on other days was never sampled; conditions such as machine settings could differ from day to day.\n* Choice C: the $180$ measured bottles are the sample, and random selection lets the result generalize past the sample to the day's production.\n* Choice D: bottles from other plants were not in the sampling frame, so the estimate cannot reach them.\n\n**Test Day Takeaway:** The population is the group the sample was drawn from at random, not the group the researcher might wish to describe."
+}

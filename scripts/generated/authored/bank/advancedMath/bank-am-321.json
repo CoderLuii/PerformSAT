@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-321",
+ "question": "A coffee roaster's drum-charge model gives $\\sqrt{x+5}+\\sqrt{x}=5$, where $x$ is the charge mass in kilograms and $x+5$ is the mass after a top-up. Exactly one value of $x$ satisfies this equation. What is that value?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the square root of x, which is 2, instead of x itself",
+  "C": "squares each term separately, solving x + 5 + x = 25, which gives 10",
+  "D": "drops the second radical and solves the square root of x + 5 equal to 5, which gives 20"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~50s):** Moving $\\sqrt{x}$ across and squaring gives $x+5=25-10\\sqrt{x}+x$, so $10\\sqrt{x}=20$, $\\sqrt{x}=2$, and $x=4$.\n\n**The Full Solution:**\n\nStep 1: Isolate one radical: $\\sqrt{x+5}=5-\\sqrt{x}$.\n\nStep 2: Square both sides, keeping the cross term: $x+5=25-10\\sqrt{x}+x$, which reduces to $10\\sqrt{x}=20$.\n\nStep 3: So $\\sqrt{x}=2$ and $x=4$. Check: $\\sqrt{4+5}+\\sqrt{4}=3+2=5$, matching the model.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2$): stops at $\\sqrt{x}=2$ and reports the root rather than $x$.\n* Choice C ($10$): squares each term on its own, solving $x+5+x=25$.\n* Choice D ($20$): ignores $\\sqrt{x}$ and solves $\\sqrt{x+5}=5$.\n\n**Test Day Takeaway:** Two radicals means separating them before squaring, and the square of a binomial always keeps its middle term."
+}

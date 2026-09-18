@@ -1,0 +1,30 @@
+{
+  "id": 21,
+  "question": "The table gives four values of the linear function $g$, where $g(x)$ is a backup generator's fuel reserve, in liters above the required minimum, on day $x$ of an outage. By how much does the reserve change from day $4$ to day $12$?",
+  "questionTable": {
+    "headers": [
+      "$x$",
+      "$g(x)$"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$19$"
+      ],
+      [
+        "$3$",
+        "$13$"
+      ],
+      [
+        "$5$",
+        "$7$"
+      ],
+      [
+        "$7$",
+        "$1$"
+      ]
+    ]
+  },
+  "correctAnswer": "-24",
+  "explanation": "**SAT Pattern: Function Evaluation**\n\n**The correct answer is $-24$.**\n\n**The Fast Way (~35s):** The table falls $6$ for every $2$ that $x$ rises, so the rate is $-3$ per unit. Over the $8$ days from day $4$ to day $12$ the reserve changes by $8(-3) = -24$ liters.\n\n**The Full Solution:**\nStep 1: Build the rule. Consecutive rows go from $(1, 19)$ to $(3, 13)$, a change of $-6$ over $2$, so the slope is $-3$. Using $(1, 19)$: $g(x) = 19 - 3(x - 1) = 22 - 3x$.\nStep 2: Evaluate at both inputs, neither of which appears in the table: $g(4) = 22 - 12 = 10$ and $g(12) = 22 - 36 = -14$.\nStep 3: Subtract in the order the question states: $g(12) - g(4) = -14 - 10 = -24$. Check against a table value: $g(7) = 22 - 21 = 1$, which matches the last row ✓\n\n**Common Mistakes:**\n* $24$: computes the size of the change but drops the sign. The reserve falls, so the change is negative.\n* $-14$: reports $g(12)$ by itself and never subtracts $g(4) = 10$.\n* $-3$: reports the slope, the change per single unit, instead of the change across all $8$ units.\n\n**Test Day Takeaway:** A table of a linear function hands you the slope in two rows. Turn it into a rule before you evaluate anywhere outside the table, and let the question dictate the subtraction order."
+}

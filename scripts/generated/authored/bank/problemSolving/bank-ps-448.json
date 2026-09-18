@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-448",
+  "question": "A lecture hall has $460$ seats, divided between the front section and the rear section in the ratio $3 : 7$. How many of the seats are in the rear section?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$46$"
+    },
+    {
+      "id": "B",
+      "text": "$138$"
+    },
+    {
+      "id": "C",
+      "text": "$230$"
+    },
+    {
+      "id": "D",
+      "text": "$322$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the size of one share instead of the rear section.",
+    "B": "gives the front section, the $3$-part share.",
+    "C": "splits the total evenly instead of in the ratio $3 : 7$."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Sum-of-Parts Ratio**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The ratio has $3+7=10$ parts, so each part is $\\frac{460}{10}=46$ seats, and the rear section holds $7(46)=322$ seats.\n\n**The Full Solution:**\nStep 1: Write the sections as $3k$ and $7k$ seats, so $3k+7k=460$.\nStep 2: $10k=460$, so $k=46$.\nStep 3: The rear section is $7k=7(46)=322$ seats. Check: the front section is $3(46)=138$, and $138+322=460$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($46$): reports $k$, the value of a single part.\n* Choice B ($138$): gives the front section, the smaller of the two shares.\n* Choice C ($230$): halves the total, which would be right only for a $1 : 1$ ratio.\n\n**Test Day Takeaway:** Add the ratio numbers first. Dividing the total by that sum gives one part, and every share is a multiple of it."
+}

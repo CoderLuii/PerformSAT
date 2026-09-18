@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-106",
+ "question": "In a solar-sail deployment model the expression $\\dfrac{2x^{2}+kx-30}{x^{2}-25}$, where $k$ is a constant and $x>5$ is the mast extension in meters, has the same value as $\\dfrac{2x+6}{x+5}$ at every such $x$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-10$"
+  },
+  {
+   "id": "B",
+   "text": "$-4$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps only the -10x from 2x times -5 and ignores the +6x from 6 times x",
+  "C": "reports the size of the coefficient without its negative sign",
+  "D": "copies the constant 6 from the numerator of the simplified form"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** The numerator must be $(2x+6)(x-5)=2x^{2}-4x-30$, so $k=-4$.\n\n**The Full Solution:**\n\nStep 1: Factor the denominator: $x^{2}-25=(x+5)(x-5)$, so the simplified form comes from cancelling $x+5$.\n\nStep 2: Undo that cancellation: $\\frac{2x+6}{x+5}=\\frac{(2x+6)(x-5)}{(x+5)(x-5)}$, so the original numerator equals $(2x+6)(x-5)$.\n\nStep 3: Expand: $(2x+6)(x-5)=2x^{2}-10x+6x-30=2x^{2}-4x-30$. Matching gives $k=-4$, and the constant $-30$ matches as well. Check at $x=6$: $\\frac{2(36)-24-30}{36-25}=\\frac{18}{11}$, and the simplified form gives $\\frac{12+6}{11}=\\frac{18}{11}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-10$): keeps only the $-10x$ term and drops the $+6x$.\n* Choice C ($4$): reports the magnitude and loses the negative sign.\n* Choice D ($6$): copies the constant from the simplified numerator.\n\n**Test Day Takeaway:** To recover a hidden coefficient, multiply the simplified form back by the cancelled factor and match terms."
+}

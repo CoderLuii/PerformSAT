@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-192",
+ "question": "In a tram-timing study, the arrival offset $p$ is the solution to $-3x = a$ and the departure offset $q$ is the solution to $-3x = a + 12$, where $a$ is a constant. What is the value of $p - q$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~40s):** $p = -\\frac{a}{3}$ and $q = -\\frac{a + 12}{3}$, so $p - q = \\frac{12}{3} = 4$.\n\n**The Full Solution:**\n\nStep 1: Solve the first equation: $-3p = a$, so $p = -\\frac{a}{3}$.\n\nStep 2: Solve the second: $-3q = a + 12$, so $q = -\\frac{a + 12}{3} = -\\frac{a}{3} - 4$.\n\nStep 3: Subtract: $p - q = \\left(-\\frac{a}{3}\\right) - \\left(-\\frac{a}{3} - 4\\right) = 4$, so the constant $a$ cancels. Check with $a = 6$: $p = -2$, $q = -6$, and $p - q = 4$.\n\n**Common Mistakes:**\n\n* $-4$ — computing $q - p$ instead of $p - q$.\n* $-12$ — subtracting the right-hand sides, $a - (a + 12)$, without dividing by $-3$.\n* $36$ — multiplying the difference by $3$ instead of dividing by it.\n\n**Test Day Takeaway:** When two equations differ only in a constant, solve both symbolically; the unknown parameter cancels in the difference."
+}

@@ -1,0 +1,57 @@
+{
+ "id": "bank-am-227",
+ "question": "A reservoir's level, in centimeters relative to the spillway lip, is graphed against the number of hours $x$ since a release ended. The graphed line is $y=f(x)+k$, where $f(x)=2x$ and $k$ is a constant. Which equation gives the graphed line?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2,
+   "yIntercept": -6,
+   "xRange": [
+    0,
+    10
+   ],
+   "yRange": [
+    -8,
+    14
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     0,
+     -6
+    ],
+    [
+     3,
+     0
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y=2(x-6)$"
+  },
+  {
+   "id": "B",
+   "text": "$y=6-2x$"
+  },
+  {
+   "id": "C",
+   "text": "$y=2x+6$"
+  },
+  {
+   "id": "D",
+   "text": "$y=2x-6$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "shifts the input instead of the output, giving the line y = 2x - 12",
+  "B": "negates the slope as well as the constant",
+  "C": "shifts the parent line up 6 instead of down 6"
+ },
+ "explanation": "**SAT Pattern: Function from Shifted Graph**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Adding $k$ to $f(x)=2x$ only moves the line vertically; the graph crosses the vertical axis at $-6$, so $k=-6$ and the line is $y=2x-6$.\n\n**The Full Solution:**\nStep 1: The graph of $y=f(x)+k$ is the graph of $y=2x$ translated $k$ units vertically, so the slope stays 2.\nStep 2: The parent line $y=2x$ passes through the origin, while the graphed line meets the vertical axis at $-6$, so $k=-6$.\nStep 3: The equation is $y=2x-6$. Check: at $x=3$ the equation gives $0$, and the graph crosses the horizontal axis at $x=3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($y=2(x-6)$): subtracts 6 from the input, which puts the vertical intercept at $-12$.\n* Choice B ($y=6-2x$): reverses the slope, giving a line that falls instead of rises.\n* Choice C ($y=2x+6$): translates up 6 rather than down 6.\n\n**Test Day Takeaway:** Adding a constant to a function moves its graph vertically only — read the new vertical intercept to get the constant."
+}

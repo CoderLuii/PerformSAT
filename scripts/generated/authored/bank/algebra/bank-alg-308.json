@@ -1,0 +1,29 @@
+{
+ "question": "A tuning script picks the constant $a$ so that no value of $x$ makes the two expressions $a(2x-5)$ and $8x+15$ equal to each other. What value must the tuning script pick for $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "matches the constants, solving -5a = 15, instead of matching the coefficients of x",
+  "B": "divides 15 by 5 and ignores both the sign and the x terms",
+  "D": "copies the coefficient 8 without dividing by the 2 inside the parentheses"
+ },
+ "explanation": "**SAT Pattern: Linear Equation with Distribution (Solution-Count Condition)**\n\n**Choice C is correct.** Distributing gives $2ax-5a=8x+15$; no solution requires the $x$ coefficients to match while the constants differ, so $2a=8$ and $a=4$.\n\n**The Fast Way (~40s):** $2a=8$ gives $a=4$, and then $-5(4)=-20\\ne 15$, so the equation has no solution.\n\n**The Full Solution:**\n\nStep 1: Distribute the constant: $a(2x-5)=2ax-5a$, so the equation is $2ax-5a=8x+15$.\n\nStep 2: A linear equation has no solution exactly when the variable terms cancel but the constants do not. Cancelling requires $2a=8$, so $a=4$.\n\nStep 3: Check that the constants really do differ: with $a=4$ the equation reads $8x-20=8x+15$, which reduces to $-20=15$, a false statement. So no value of $x$ works.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-3$): matches the constants, solving $-5a=15$, which is the condition for the wrong pair of terms.\n* Choice B ($3$): divides $15$ by $5$ and ignores both the negative sign and the $x$ terms entirely.\n* Choice D ($8$): copies the coefficient of $x$ on the right without dividing by the $2$ inside the parentheses.\n\n**Test Day Takeaway:** No solution means matching variable coefficients and mismatched constants — always verify the second half after solving the first.",
+ "id": "bank-alg-308"
+}

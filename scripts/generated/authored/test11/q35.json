@@ -1,43 +1,48 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "question": "Based on the texts, how would Kao and Hockham (Text 2) most likely respond to the projection presented in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "They would accept that the measured loss is an inherent property of glass and argue that fibers are even less promising than Text 1 suggests, since the loss makes them unusable over even the short distances Text 1 allows."
-    },
-    {
-      "id": "B",
-      "text": "They would point out that the losses Text 1 relies on can be explained by removable impurities rather than by glass itself, so its projection rests on an assumption the evidence does not compel."
-    },
-    {
-      "id": "C",
-      "text": "They would agree that fibers cannot carry signals far enough to be useful but attribute the failure to light leaking out at bends in the fiber rather than to absorption within the glass."
-    },
-    {
-      "id": "D",
-      "text": "They would conclude that, because the loss of glass can never be measured with certainty, every projection about the future of optical fibers should be set aside as guesswork."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. Text 2 reports that Kao and Hockham traced the high losses in glass fibers to removable impurities, chiefly iron, rather than to the glass itself, and concluded that the claim that fibers were fundamentally unsuitable rested on an assumption the evidence did not require. They would therefore say that Text 1's pessimistic projection depends on treating the measured loss as a fixed property of glass when it need not be. Choice A has them embracing that very assumption and judging fibers even more hopeless, the reverse of their position; Choice C has them accepting the projection they actually reject; and Choice D inflates their measured point into a refusal to make any projection at all, which they never propose.",
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "Could a thin thread of glass carry a telephone call across a city? Through the early 1960s many engineers doubted it. When light was sent into the best optical glass then available, most of it was absorbed within a few meters; measurements put the loss at roughly a thousand decibels per kilometer. Treating that loss as a fixed property of glass, these engineers projected that optical fibers could never rival copper wires for carrying signals across the distances a telephone network spans."
-    },
-    {
-      "label": "Text 2",
-      "text": "In 1966 Charles Kao and George Hockham reexamined those measurements. The high losses, they argued, did not come from glass itself but from tiny traces of impurities — chiefly iron — dissolved in it. Light sent through a sample purified of such contaminants, they calculated, would travel far enough to carry signals over useful distances. If the observed losses could be explained by impurities that manufacturers could in principle remove, then the claim that fibers were fundamentally unsuitable rested on an assumption the evidence did not require."
-    }
-  ],
-  "_meta": {
-    "anchor": "fiber-optic communication: the 1960s assumption that glass loss is intrinsic vs. Kao & Hockham (1966) impurity explanation"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "To many eighteenth-century naturalists, the aurora borealis was a weather phenomenon like fog or lightning, unusual only in its beauty. Some proposed that auroral light was sunlight reflected from ice crystals drifting at great height; others, that it came from luminous vapors rising out of the polar earth and kindling in the upper air. Whatever the mechanism, these accounts agreed on the essential point: the aurora was a local product of the atmosphere, no different in kind from the other lights and hazes the sky occasionally produces."
   },
-  "id": 1135,
-  "module": 2
+  {
+   "label": "Text 2",
+   "text": "In 1741, the astronomer Anders Celsius and his assistant Olof Hiorter kept a compass needle under continuous watch in Uppsala. Over thousands of recorded observations, Hiorter found that on nights when auroras blazed overhead, the needle swung erratically from its usual bearing, sometimes by several degrees, and settled again as the display faded. A correspondence of that regularity, he argued, could not be coincidence: whatever produced the aurora also disturbed the magnetic force — something no fog, cloud, or vapor was known to do."
+  }
+ ],
+ "question": "Based on the texts, how would Hiorter (Text 2) most likely respond to the accounts presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "He would agree that the aurora arises within the atmosphere but insist that drifting ice crystals rather than rising vapors produce its light."
+  },
+  {
+   "id": "B",
+   "text": "He would argue that the aurora's magnetic effects set it apart from the ordinary atmospheric phenomena those accounts liken it to."
+  },
+  {
+   "id": "C",
+   "text": "He would object that eighteenth-century naturalists lacked instruments precise enough to observe the aurora in any detail."
+  },
+  {
+   "id": "D",
+   "text": "He would deny that auroral displays ever coincide with the other lights and hazes the sky occasionally produces."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Text 1's accounts converge on one essential claim: the aurora is \"no different in kind\" from ordinary atmospheric lights. Hiorter's needle evidence attacks exactly that classification — the aurora disturbs the magnetic force, \"something no fog, cloud, or vapor was known to do.\"\n\n**The Full Solution:**\n- The disagreement is not over any particular mechanism (crystals versus vapors) but over the aurora's kind: weather, or something else.\n- Hiorter's argument form is an exclusion: regular magnetic disturbance accompanies auroras; ordinary weather produces no such disturbance; therefore the aurora cannot be ordinary weather.\n- Applied to Text 1, that argument says the accounts' shared premise fails — which is what choice B states.\n\n**Why the other choices are wrong:**\n- A: It keeps Hiorter inside Text 1's framework, merely picking a side in the crystals-versus-vapors dispute his evidence bypasses.\n- C: He would not fault their instruments — his own case rests on a simple compass needle, patiently watched.\n- D: Coincidence in time with other sky phenomena is not at issue; the needle's behavior, not the sky's appearance, carries his argument.",
+ "_meta": {
+  "anchor": "aurora observation history — Celsius/Hiorter 1741 magnetic-needle observations vs. atmospheric-vapor accounts",
+  "distractors": {
+   "A": "keeps him inside the framework he rejects",
+   "C": "faults instruments his own method contradicts",
+   "D": "misplaces the issue onto co-occurrence"
+  }
+ },
+ "id": 1135,
+ "module": 2
 }

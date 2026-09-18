@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "Three type-A sensors and two type-B sensors draw a total of 39 milliamperes, and three type-A sensors and six type-B sensors draw a total of 63 milliamperes. Sensors of the same type draw the same current. What is the current, in milliamperes, drawn by one type-B sensor?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the 24-milliampere difference by 8, the sum of the two type-B counts, instead of by their difference",
+  "B": "divides the 24-milliampere difference by 6, the type-B count in the second reading, instead of by the difference 4",
+  "D": "solves for the wrong variable and gives the current drawn by one type-A sensor"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System of Equations — Elimination**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Both readings include the same $3$ type-A sensors, so the extra $4$ type-B sensors account for the extra $63-39=24$ milliamperes: $b=\\frac{24}{4}=6$.\n\n**The Full Solution:**\nStep 1: Let $a$ be the current drawn by one type-A sensor and $b$ the current drawn by one type-B sensor, in milliamperes. The two readings give $3a+2b=39$ and $3a+6b=63$.\nStep 2: The $a$-terms already match, so subtract the first equation from the second: $(3a+6b)-(3a+2b)=63-39$, which is $4b=24$.\nStep 3: Divide by $4$: $b=6$. Check: $4b=24$ leaves $3a=39-2(6)=27$, so $a=9$, and $3(9)+6(6)=27+36=63$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): divides the $24$-milliampere difference by $2+6=8$, the total number of type-B sensors in both readings, rather than by the $4$ extra sensors.\n* Choice B ($4$): divides $24$ by $6$, the type-B count in the second reading, instead of by the difference $6-2=4$.\n* Choice D ($9$): this is $a$, the current drawn by one type-A sensor — the right work stopped on the wrong variable.\n\n**Test Day Takeaway:** When one variable appears with the SAME coefficient in both equations, subtract immediately: the difference in the totals belongs entirely to the difference in the other variable's count."
+}

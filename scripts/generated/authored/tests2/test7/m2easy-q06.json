@@ -1,0 +1,32 @@
+{
+  "id": 6,
+  "question": "The figure shows a solar-panel bracket in the shape of right triangle $ABC$. Aluminum tubing $72$ inches long is bent to form all three edges of the bracket, and $\\sin A = \\frac{3}{5}$. How long, in inches, is $\\overline{BC}$?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rightAngleVertex": 1,
+      "figureNote": true
+    }
+  },
+  "correctAnswer": "18",
+  "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**The correct answer is $18$.**\n\n**The Fast Way (~25s):** $\\sin A=\\frac{3}{5}$ makes this a $3$-$4$-$5$ triangle scaled by $x$, so the perimeter is $12x=72$, giving $x=6$ and $BC=3x=18$.\n\n**The Full Solution:**\nStep 1: The right angle is at $B$, so $\\overline{AC}$ is the hypotenuse and $\\overline{BC}$ is the leg opposite $\\angle A$. Then $\\sin A=\\dfrac{BC}{AC}=\\dfrac{3}{5}$, so $BC=3x$ and $AC=5x$ for some positive $x$.\nStep 2: By the Pythagorean theorem the remaining leg is $AB=\\sqrt{(5x)^2-(3x)^2}=\\sqrt{16x^2}=4x$.\nStep 3: The three edges total $3x+4x+5x=12x=72$, so $x=6$ and $BC=3(6)=18$. Check: the sides are $18$, $24$, $30$, and $\\sin A=\\frac{18}{30}=\\frac{3}{5}$ ✓\n\n**Common Mistakes:**\n* $24$: reports $AB$, the leg adjacent to $\\angle A$, instead of the opposite leg $\\overline{BC}$.\n* $30$: reports the hypotenuse $AC=5x$ rather than the side the question asked for.\n* $43.2$: takes $\\frac{3}{5}$ of the whole $72$-inch perimeter, treating the sine ratio as a share of the perimeter.\n\n**Test Day Takeaway:** A sine or cosine of $\\frac{3}{5}$ hands you the whole side ratio $3:4:5$; add the ratio parts, set that sum equal to the perimeter, and every side follows from one scale factor."
+}

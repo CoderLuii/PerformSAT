@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-105",
+ "question": "An olive press's yield expression has numerator $x^{2}-16$ and an unknown denominator $Q(x)$, and it simplifies to $\\dfrac{x+4}{2}$ whenever $x>4$. Which of the following is $Q(x)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x-4$"
+  },
+  {
+   "id": "B",
+   "text": "$2x-8$"
+  },
+  {
+   "id": "C",
+   "text": "$2x+8$"
+  },
+  {
+   "id": "D",
+   "text": "$4x-16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "drops the factor 2 coming from the denominator of the target form",
+  "C": "cancels x - 4 instead of x + 4, leaving 2(x + 4) as the denominator",
+  "D": "multiplies by 4, the constant inside x + 4, instead of by the denominator 2"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $Q(x)=\\frac{2(x^{2}-16)}{x+4}=2(x-4)=2x-8$.\n\n**The Full Solution:**\n\nStep 1: Cross multiply the equivalence: $2(x^{2}-16)=(x+4)Q(x)$.\n\nStep 2: Factor the left side: $2(x-4)(x+4)=(x+4)Q(x)$.\n\nStep 3: Since $x>4$, divide both sides by $x+4$ to get $Q(x)=2(x-4)=2x-8$. Check at $x=6$: $\\frac{36-16}{12-8}=\\frac{20}{4}=5$, and $\\frac{6+4}{2}=5$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($x-4$): forgets the factor $2$ from the target's denominator.\n* Choice C ($2x+8$): cancels $x-4$ rather than $x+4$.\n* Choice D ($4x-16$): multiplies by $4$ instead of by $2$.\n\n**Test Day Takeaway:** Cross multiply first; the unknown polynomial then sits alone next to a factor you can cancel."
+}

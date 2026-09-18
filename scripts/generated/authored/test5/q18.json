@@ -1,34 +1,34 @@
 {
-  "id": 518,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "Working in Edo-period print workshops, the carvers who prepared the blocks for a woodblock print ______ every line of the artist's drawing by hand, cutting away the surrounding wood so that only the inked lines would print onto the paper.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "carve"
-    },
-    {
-      "id": "B",
-      "text": "carves"
-    },
-    {
-      "id": "C",
-      "text": "carved"
-    },
-    {
-      "id": "D",
-      "text": "have carved"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"carved.\" The sentence is set in the Edo period and describes a completed historical practice, signaled by the past-tense framing and the past modal \"would print,\" so the simple past \"carved\" is required. \"Carve\" and \"carves\" are present-tense forms that clash with the historical time frame, and \"carves\" is also singular while the subject \"the carvers\" is plural. \"Have carved\" is present perfect, which would extend the action toward the present rather than placing it firmly in the past the sentence describes.",
-  "_meta": {
-    "anchor": "Edo-period woodblock carvers; simple-past historical narration"
+ "id": 518,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "In the 1870s, the keepers stationed at an island lighthouse followed an unvarying evening routine: they ______ the lamp's wicks, polished the lens, and recorded the day's weather in the station log before lighting the lamp at dusk.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "trim"
+  },
+  {
+   "id": "B",
+   "text": "trims"
+  },
+  {
+   "id": "C",
+   "text": "trimmed"
+  },
+  {
+   "id": "D",
+   "text": "have trimmed"
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The sentence narrates a routine set firmly in the past — \"In the 1870s\" — and the parallel verbs \"polished\" and \"recorded\" are simple past, so the blank must be \"trimmed.\"\n\n**The Full Solution:**\n- The time frame is established at the outset: the 1870s.\n- The blank's verb is the first item in a series whose later members, \"polished\" and \"recorded,\" are both simple past.\n- Consistency of tense within the series and with the historical time frame requires the simple past \"trimmed.\"\n\n**Why the other choices are wrong:**\n- A: \"Trim\" is present tense, clashing with the past time frame and with \"polished\" and \"recorded.\"\n- B: \"Trims\" is present tense and also fails to agree with the plural subject \"they.\"\n- D: \"Have trimmed\" is present perfect, which describes a past reaching into the present — wrong for a routine confined to the 1870s and mismatched with the series.",
+ "_meta": {
+  "anchor": "1870s lighthouse keepers' evening routine; simple-past historical narration"
+ }
 }

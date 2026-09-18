@@ -432,6 +432,57 @@ describe('recordPracticeTestResult — trimAttempts', () => {
   });
 });
 
+describe('recordPracticeTestResult — first-attempt payload safety (2026-08-13 Set-object data loss)', () => {
+  // The bug: on a test's FIRST attempt the row was written WITHOUT trimAttempts,
+  // so the full diagnosticReport — carrying live Set objects from the diagnostic
+  // engine's internal skillMap — rode into the transaction. Firestore hard-
+  // rejects Sets ("Unsupported field value: a custom Set object"), the whole
+  // save failed, and the in-memory Retry replayed the same doomed payload
+  // forever. Every user's first completion of any test hit the failure banner.
+
+  const reportWithLiveSets = () => ({
+    score: { scaled: 620 },
+    skillAnalysis: {
+      weakSkills: [],
+      strongSkills: [],
+      allSkills: [{ skillId: 'percents', missedPatterns: ['percent-change'] }],
+      // Mimic the leaked internal aggregation state that caused the outage.
+      skillMap: { percents: { missedPatternsSet: new Set(['percent-change']) } },
+    },
+  });
+
+  test('FIRST attempt (new test row): diagnosticReport is stripped, so a Set inside it can never reach the write', async () => {
+    await recordPracticeTestResult('user-1', 'practice-test-9', 'Practice Test 9',
+      buildResults({ diagnosticReport: reportWithLiveSets() }));
+
+    const row = getTestRow(getStore().get('progress/user-1'), 'practice-test-9');
+    expect(row.attempts).toHaveLength(1);
+    expect(row.attempts[0].diagnosticReport).toBeUndefined();
+    // diagnosticData (trend/prediction input) survives on the latest attempt.
+    expect(row.attempts[0].diagnosticData).toBeTruthy();
+  });
+
+  test('FIRST attempt on a FRESH account (create-doc branch) also strips the report', async () => {
+    // No prior progress doc at all — exercises the tx.set branch.
+    await recordPracticeTestResult('brand-new-user', 'practice-test-1', 'Practice Test 1',
+      buildResults({ diagnosticReport: reportWithLiveSets() }));
+
+    const row = getTestRow(getStore().get('progress/brand-new-user'), 'practice-test-1');
+    expect(row.attempts).toHaveLength(1);
+    expect(row.attempts[0].diagnosticReport).toBeUndefined();
+  });
+
+  test('a Set anywhere else in the attempt payload is converted to a plain array (sanitize backstop)', async () => {
+    await recordPracticeTestResult('user-1', 'practice-test-9', 'Practice Test 9',
+      buildResults({
+        diagnosticData: { questionDetails: {}, oddFutureField: new Set(['a', 'b']) },
+      }));
+
+    const row = getTestRow(getStore().get('progress/user-1'), 'practice-test-9');
+    expect(row.attempts[0].diagnosticData.oddFutureField).toEqual(['a', 'b']);
+  });
+});
+
 describe('recordPracticeTestResult — missing snapshot', () => {
   test('logs warning and skips snapshot write when questionsSnapshot is absent', async () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {});
@@ -882,6 +933,36 @@ describe('resetPracticeTest', () => {
 
     // Onboarding mini-diagnostic plan (sourceTestId null) survives → becomes current.
     expect(getStore().get('progress/u1').currentStudyPlanArtifactId).toBe('art-mini');
+  });
+
+  test('re-points to the v2 diagnostic artifact (sourceTestId "mini-diagnostic-v1") when the last full test is reset', async () => {
+    // 2026-08-29 founder repro: the v2 diagnostic stamps MINI_DIAGNOSTIC_TEST_ID
+    // (not null). The reset used to treat it as an orphan, null the pointer,
+    // and the home fell back to the first-run "take your diagnostic" hero.
+    getStore().set('progress/u1/studyPlanArtifacts/art-test', { linkage: { sourceTestId: 'practice-test-1' }, plan: { weeks: [{}] } });
+    getStore().set('progress/u1/studyPlanArtifacts/art-diag', { linkage: { sourceTestId: 'mini-diagnostic-v1' }, plan: { weeks: [{}] } });
+    seedProgress({
+      practiceTestResults: { 'practice-test-1': { testId: 'practice-test-1', attempts: [] } },
+      currentStudyPlanArtifactId: 'art-test',
+    });
+
+    await resetPracticeTest('u1', 'practice-test-1');
+
+    expect(getStore().get('progress/u1').currentStudyPlanArtifactId).toBe('art-diag');
+  });
+
+  test('keeps the pointer on the v2 diagnostic artifact when a practice test is reset while it is current', async () => {
+    // Student took the diagnostic, then a practice test whose plan write failed
+    // (pointer still on the diagnostic's plan). Resetting the test must not churn.
+    getStore().set('progress/u1/studyPlanArtifacts/art-diag', { linkage: { sourceTestId: 'mini-diagnostic-v1' }, plan: { weeks: [{}] } });
+    seedProgress({
+      practiceTestResults: { 'practice-test-1': { testId: 'practice-test-1', attempts: [] } },
+      currentStudyPlanArtifactId: 'art-diag',
+    });
+
+    await resetPracticeTest('u1', 'practice-test-1');
+
+    expect(getStore().get('progress/u1').currentStudyPlanArtifactId).toBe('art-diag');
   });
 
   test('clears the study-plan pointer when no artifact survives the reset', async () => {

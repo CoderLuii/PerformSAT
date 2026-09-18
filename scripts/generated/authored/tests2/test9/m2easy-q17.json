@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "A county immunization program's monthly appointment total fell by $25\\%$ from January to February and then rose by $50\\%$ from February to March, ending at $720$ appointments in March. How many appointments were scheduled in January?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$480$"
+  },
+  {
+   "id": "B",
+   "text": "$576$"
+  },
+  {
+   "id": "C",
+   "text": "$640$"
+  },
+  {
+   "id": "D",
+   "text": "$960$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "undoes only the 50% increase: 720 / 1.5 = 480, the February total",
+  "B": "treats the two changes as one net 25% increase: 720 / 1.25 = 576",
+  "D": "undoes only the 25% decrease: 720 / 0.75 = 960"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**Choice C is correct.** The two changes multiply, so March $=$ January $\\times 0.75 \\times 1.5$, and January is found by dividing $720$ by that combined factor.\n\n**The Fast Way (~30s):** $0.75 \\times 1.5 = 1.125$, so January $= 720 \\div 1.125 = 640$.\n\n**The Full Solution:**\nStep 1: A $25\\%$ decrease multiplies by $1 - 0.25 = 0.75$; a $50\\%$ increase multiplies by $1 + 0.50 = 1.5$.\nStep 2: Let $J$ be the January total. Then $J(0.75)(1.5) = 720$, so $1.125J = 720$.\nStep 3: $J = 720 \\div 1.125 = 640$ appointments. Check: $640 \\times 0.75 = 480$ in February, and $480 \\times 1.5 = 720$ in March ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($480$): undoes only the $50\\%$ increase, $720 \\div 1.5 = 480$. That is the February total, not the January one.\n* Choice B ($576$): treats a $25\\%$ drop followed by a $50\\%$ rise as a single $25\\%$ net rise and computes $720 \\div 1.25 = 576$. Percent changes compound on different bases, so they never simply add or subtract.\n* Choice D ($960$): undoes only the $25\\%$ decrease, $720 \\div 0.75 = 960$, ignoring the March increase entirely.\n\n**Test Day Takeaway:** Chain percent changes as multipliers, then divide once by the product to run the chain backward — adding and subtracting the percents is the trap this item is built around."
+}

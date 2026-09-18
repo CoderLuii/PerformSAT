@@ -1,0 +1,46 @@
+{
+ "id": "bank-am-093",
+ "question": "A charging network's sessions above its daily average are given by the quadratic function $f$; on the graph shown, the curve's lowest point and the point $(8,5)$ are both marked. What is the value of $f(-2)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$21$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the minimum value of f instead of f(-2)",
+  "B": "pairs -2 with 8 by symmetry, though -2 pairs with 10",
+  "D": "adds 3 instead of subtracting it, giving 18 + 3"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The vertex is $(4,-3)$ and $(8,5)$ gives $a=0.5$, so $f(-2)=0.5(36)-3=15$.\n\n**The Full Solution:**\nStep 1: Read the vertex $(4,-3)$ from the graph, so $f(x)=a(x-4)^2-3$.\nStep 2: Use the marked point: $5=a(8-4)^2-3$, so $16a=8$ and $a=0.5$.\nStep 3: Evaluate: $f(-2)=0.5(-2-4)^2-3=0.5(36)-3=15$. Check: $-2$ is $6$ units left of the axis $x=4$, and so is $x=10$; $f(10)=0.5(36)-3=15$ as well ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-3$): reports the minimum value of $f$ rather than $f(-2)$.\n* Choice B ($5$): pairs $-2$ with $8$ by symmetry, but the partner of $-2$ about $x=4$ is $10$.\n* Choice D ($21$): computes $0.5(36)=18$ and then adds $3$ instead of subtracting it.\n\n**Test Day Takeaway:** Two conditions — the vertex and one point — pin the whole function; find $a$ first, then evaluate anywhere.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    4,
+    -3
+   ],
+   "a": 0.5,
+   "showVertex": true,
+   "showPoints": [
+    [
+     8,
+     5
+    ]
+   ]
+  }
+ }
+}

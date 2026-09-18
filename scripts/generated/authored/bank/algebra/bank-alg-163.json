@@ -1,0 +1,6 @@
+{
+ "question": "A tide gauge recorded a water level of $3.2$ meters $2$ hours after low tide and a water level of $5.6$ meters $8$ hours after low tide. Over that interval, what was the average rate of change of the water level, in meters per hour?",
+ "correctAnswer": "0.4",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**The correct answer is $0.4$.**\n\n**The Fast Way (~15s):** The level rises $2.4$ meters over $6$ hours, so the rate is $\\frac{2.4}{6} = 0.4$ meter per hour.\n\n**The Full Solution:**\n\nStep 1: Write the two readings as ordered pairs $(2, 3.2)$ and $(8, 5.6)$, with hours first.\n\nStep 2: The average rate of change is $\\frac{5.6 - 3.2}{8 - 2} = \\frac{2.4}{6}$.\n\nStep 3: That equals $0.4$ meter per hour. Check: starting at $3.2$ and adding $0.4$ for each of six hours gives $5.6$.\n\n**Common Mistakes:** Dividing by the later hour and reporting $0.3$; inverting the ratio and reporting $2.5$; reporting the change $2.4$ instead of a rate.\n\n**Test Day Takeaway:** Average rate of change is the change in the measured quantity divided by the change in time, never by the ending time.",
+ "id": "bank-alg-163"
+}

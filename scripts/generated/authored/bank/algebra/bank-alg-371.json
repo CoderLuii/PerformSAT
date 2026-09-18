@@ -1,0 +1,53 @@
+{
+  "id": "bank-alg-371",
+  "question": "The shaded region shown represents all solutions to the system of inequalities $y \\leq ax + b$ and $2y + kx \\leq 8$ in the $xy$-plane, where $a$, $b$, and $k$ are constants. What is the value of $a + b + k$?",
+  "diagram": {
+    "type": "twoLineGraph",
+    "params": {
+      "intersection": {
+        "x": 2,
+        "y": 2
+      },
+      "slope1": 2,
+      "slope2": -1,
+      "shadeRegion": "below-both",
+      "showIntersection": false,
+      "xRange": [
+        -4,
+        8
+      ],
+      "yRange": [
+        -6,
+        8
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-2$"
+    },
+    {
+      "id": "B",
+      "text": "$1$"
+    },
+    {
+      "id": "C",
+      "text": "$2$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes k = -2 from 2y = -2x + 8 without moving the x-term to the left side",
+    "B": "takes k = 1 by matching the slope -1 directly to -k, ignoring the factor of 2 on y",
+    "D": "reads the y-intercept of the rising line as +2 instead of -2"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: System of Linear Inequalities**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The falling line is $y = -x + 4$; doubling gives $2y = -2x + 8$, so $2y + 2x \\leq 8$ and $k = 2$. The rising line is $y = 2x - 2$, so $a = 2$ and $b = -2$. Then $a + b + k = 2 - 2 + 2 = 2$.\n\n**The Full Solution:**\nStep 1: Identify which drawn line goes with which inequality. Solving $2y + kx \\leq 8$ for $y$ gives $y \\leq -\\dfrac{k}{2}x + 4$, so its boundary has $y$-intercept $4$. On the graph, the line through $(0, 4)$ is the falling line, which also passes through $(4, 0)$; its slope is $-1$. Then $-\\dfrac{k}{2} = -1$, so $k = 2$.\nStep 2: The other boundary, $y = ax + b$, is the rising line. It passes through $(0, -2)$ and $(1, 0)$, so $b = -2$ and $a = \\dfrac{0 - (-2)}{1 - 0} = 2$.\nStep 3: $a + b + k = 2 + (-2) + 2 = 2$. Check the shading: the region is below both lines, matching the two \"$\\leq$\" inequalities, and the test point $(2, 0)$ satisfies $0 \\leq 2$ and $0 + 4 \\leq 8$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): writes $2y = -2x + 8$ and reads off $k = -2$, forgetting that $k$ is the coefficient after the $x$-term moves to the left side.\n* Choice B ($1$): matches the slope $-1$ to $-k$ directly, ignoring that $y$ carries a coefficient of $2$ in the given form.\n* Choice D ($6$): reads the rising line's $y$-intercept as $+2$, giving $a + b + k = 2 + 2 + 2$.\n\n**Test Day Takeaway:** Put each inequality in slope-intercept form first, use the $y$-intercepts to match equations to drawn lines, and only then read slopes from the grid."
+}

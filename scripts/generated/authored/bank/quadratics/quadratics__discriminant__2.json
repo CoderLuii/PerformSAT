@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "For a quadratic equation of the form $ax^2 + bx + c = 0$ with real coefficients and $a \\neq 0$, the value of $b^2 - 4ac$ is $0$. How many distinct real solutions does this equation have?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Zero"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two"
+    },
+    {
+      "id": "D",
+      "text": "Infinitely many"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the negative-discriminant case",
+    "C": "the positive-discriminant case",
+    "D": "impossible for a quadratic"
+  },
+  "correctAnswer": "B",
+  "hint": "The discriminant sits under the square root in the quadratic formula.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** The quadratic formula becomes $x = \\frac{-b \\pm 0}{2a}$, a single value.\n\n**The Full Solution:**\nStep 1: The quadratic formula gives $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, and the discriminant is what sits under the radical.\nStep 2: With $b^2 - 4ac = 0$, the radical contributes $\\sqrt{0} = 0$, so the plus and the minus produce the same number.\nStep 3: Both branches collapse to $x = \\frac{-b}{2a}$, so there is exactly one distinct real solution. Check the geometry: the parabola touches the $x$-axis at its vertex and does not cross. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: describes a NEGATIVE discriminant, where the radical has no real value.\n* Choice C: describes a POSITIVE discriminant, where the plus and the minus give different numbers.\n* Choice D: no quadratic equation with $a \\neq 0$ can have infinitely many solutions, since a parabola meets a line at most twice.\n\n**Test Day Takeaway:** Sign of the discriminant, not its size, sets the count: negative gives none, zero gives one, positive gives two."
+}

@@ -1,0 +1,55 @@
+{
+  "id": "bank-geo-173",
+  "question": "The sunshade fin shown is a right triangle whose leg lengths, in centimeters, are given in terms of a positive constant $t$. If $120$ centimeters of aluminum trim exactly wraps the fin, how long, in centimeters, is its longest edge?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          45,
+          0
+        ],
+        [
+          45,
+          24
+        ]
+      ],
+      "sideLabels": [
+        "15t",
+        "8t",
+        ""
+      ],
+      "rightAngleVertex": 1,
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$24$"
+    },
+    {
+      "id": "B",
+      "text": "$45$"
+    },
+    {
+      "id": "C",
+      "text": "$51$"
+    },
+    {
+      "id": "D",
+      "text": "$120$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "reports the shorter leg, 8t = 24, instead of the longest edge",
+    "B": "reports the longer leg, 15t = 45",
+    "D": "reports the perimeter, 120, rather than a single edge"
+  },
+  "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice C is correct.** The hypotenuse is $17t$, so the perimeter $40t = 120$ gives $t = 3$ and the longest edge is $17(3) = 51$ centimeters.\n\n**The Fast Way (~35s):** $8$-$15$-$17$ scaled so the perimeter is $120$ means $t = 3$; the longest edge is $51$.\n\n**The Full Solution:**\n\nStep 1: With legs $8t$ and $15t$, the hypotenuse is $\\sqrt{64t^2 + 225t^2} = \\sqrt{289t^2} = 17t$.\n\nStep 2: The trim covers all three edges: $8t + 15t + 17t = 40t = 120$, so $t = 3$.\n\nStep 3: The longest edge is the hypotenuse, $17(3) = 51$ centimeters. Check: the sides are $24$, $45$, $51$; they sum to $120$ and $24^2 + 45^2 = 576 + 2025 = 2601 = 51^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($24$): reports the shorter leg $8t$.\n* Choice B ($45$): reports the longer leg $15t$.\n* Choice D ($120$): reports the perimeter instead of a single edge.\n\n**Test Day Takeaway:** Turn the perimeter into one equation in the shared constant; the hypotenuse of an $8t$-$15t$ right triangle is always $17t$."
+}

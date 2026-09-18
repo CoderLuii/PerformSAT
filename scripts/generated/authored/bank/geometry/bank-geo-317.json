@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-317",
+ "question": "A diagonal stiffener spans a spandrel panel from corner to corner, cutting off the right triangle shown with $33$-inch and $56$-inch legs. How long, in inches, is the stiffener?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     56,
+     0
+    ],
+    [
+     56,
+     33
+    ]
+   ],
+   "sideLabels": [
+    "56 in",
+    "33 in",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$23$"
+  },
+  {
+   "id": "B",
+   "text": "$65$"
+  },
+  {
+   "id": "C",
+   "text": "$89$"
+  },
+  {
+   "id": "D",
+   "text": "$924$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "subtracts the legs, 56 - 33, instead of combining their squares",
+  "C": "adds the legs, 56 + 33, giving the path along two sides rather than the diagonal",
+  "D": "computes the area, one half times 33 times 56, instead of a length"
+ },
+ "explanation": "**SAT Pattern: Right Triangle Pythagorean**\n\n**Choice B is correct.** The stiffener is the hypotenuse: $\\sqrt{33^2 + 56^2} = \\sqrt{4225} = 65$ inches.\n\n**The Fast Way (~25s):** $33$-$56$-$65$ is a Pythagorean triple, so the stiffener is $65$ inches.\n\n**The Full Solution:**\n\nStep 1: The two legs meet at a right angle at a corner of the panel, and the stiffener joins their far ends, so it is the hypotenuse.\n\nStep 2: $33^2 + 56^2 = 1089 + 3136 = 4225$.\n\nStep 3: The stiffener measures $\\sqrt{4225} = 65$ inches. Check: $65 > 56$ and $65 < 89$, the band any hypotenuse must fall in.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($23$): subtracts the legs instead of combining their squares.\n* Choice C ($89$): adds the legs, which measures the path along two sides.\n* Choice D ($924$): computes the triangle's area rather than a length.\n\n**Test Day Takeaway:** Add the squares, then take one square root — subtracting or adding raw lengths is the single most common Pythagorean slip."
+}

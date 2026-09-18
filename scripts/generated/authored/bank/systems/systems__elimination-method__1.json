@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "Adding the two equations $x + 3y = 19$ and $x - 3y = 1$ eliminates $y$. What is the value of $x$ in the solution to this system?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$10$"
+    },
+    {
+      "id": "D",
+      "text": "$20$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "finishes the system but reports $y$ instead of $x$.",
+    "B": "subtracts the equations to get $6y = 18$ and then divides by $2$ instead of $6$.",
+    "D": "adds correctly to $2x = 20$ but stops before dividing by $2$."
+  },
+  "correctAnswer": "C",
+  "hint": "Add the two left sides and the two right sides, then finish solving for the surviving variable.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** Adding gives $2x = 20$, so $x = 10$.\n\n**The Full Solution:**\nStep 1: The $y$-terms are $3y$ and $-3y$, which are opposites, so adding the equations removes $y$.\nStep 2: Adding left sides and right sides gives $2x = 20$.\nStep 3: Divide by $2$ to get $x = 10$. Check: $10 + 3y = 19$ gives $y = 3$, and $10 - 3(3) = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): finishes the system but reports $y$ instead of $x$.\n* Choice B ($9$): subtracts the equations to get $6y = 18$ and then divides by $2$ instead of $6$.\n* Choice D ($20$): adds correctly to $2x = 20$ but stops before dividing by $2$.\n\n**Test Day Takeaway:** Elimination gives you an equation, not an answer. Divide out the leading coefficient, then check which variable was requested."
+}

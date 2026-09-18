@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A stage floor plan places one cable run along the segment joining $(2, -7)$ and $(10, 3)$. A second run, parallel to the first, passes through the point $(6, 1)$, and its graph is described by $ax - 4y = c$ for constants $a$ and $c$. What is the sum $a + c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$26$"
+  },
+  {
+   "id": "C",
+   "text": "$31$"
+  },
+  {
+   "id": "D",
+   "text": "$43$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports a alone, stopping once the slope has been matched",
+  "B": "reports c alone, stopping once the point has been substituted",
+  "D": "substitutes the endpoint (2, -7) instead of the given point (6, 1), giving c = 38 and a + c = 43"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Parallel Lines and Standard Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The first run has slope $\\frac{10}{8} = \\frac{5}{4}$, and $ax - 4y = c$ has slope $\\frac{a}{4}$, so $a = 5$. Then $5(6) - 4(1) = 26 = c$, and $a + c = 31$.\n\n**The Full Solution:**\nStep 1: Slope of the first run: $\\frac{3 - (-7)}{10 - 2} = \\frac{10}{8} = \\frac{5}{4}$.\nStep 2: Rewrite $ax - 4y = c$ as $y = \\frac{a}{4}x - \\frac{c}{4}$. Parallel lines share a slope, so $\\frac{a}{4} = \\frac{5}{4}$ and $a = 5$.\nStep 3: The second run passes through $(6, 1)$, so $5(6) - 4(1) = c$, giving $c = 26$. Then $a + c = 5 + 26 = 31$. Check: $5x - 4y = 26$ has slope $\\frac{5}{4}$ and contains $(6, 1)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): this is $a$ alone. Matching the slope is only the first of the two constants the question asks about.\n* Choice B ($26$): this is $c$ alone. Both constants are needed, and the question asks for their sum.\n* Choice D ($43$): this substitutes $(2, -7)$, an endpoint of the *first* run, giving $c = 10 + 28 = 38$. Only $(6, 1)$ is stated to lie on the second run.\n\n**Test Day Takeaway:** In $Ax + By = C$ the slope is $-\\frac{A}{B}$, so a parallel condition fixes $A$ and $B$ before any point is used. Substitute the point last, and only a point on the new line."
+}

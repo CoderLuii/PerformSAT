@@ -1,0 +1,48 @@
+{
+  "id": "bank-ps-428",
+  "question": "The table gives the mass, in grams, of three samples of the same alloy, along with the volume of each sample. All samples of this alloy have the same density. What is the mass, in grams, of a sample of this alloy with a volume of $25$ cubic centimeters?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Volume (cubic centimeters)",
+        "4",
+        "10",
+        "16"
+      ],
+      "rows": [
+        [
+          "Mass (grams)",
+          "33.6",
+          "84.0",
+          "134.4"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2.98$"
+    },
+    {
+      "id": "B",
+      "text": "$168$"
+    },
+    {
+      "id": "C",
+      "text": "$210$"
+    },
+    {
+      "id": "D",
+      "text": "$840$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the volume by the density instead of multiplying.",
+    "B": "adds the masses of the $16$ and $4$ cubic centimeter samples, reaching only $20$ cubic centimeters.",
+    "D": "treats the mass of the $4$ cubic centimeter sample as the mass of $1$ cubic centimeter."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Proportion Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Every row gives the same ratio: $\\frac{33.6}{4}=8.4$ grams per cubic centimeter. So $25$ cubic centimeters has mass $25\\times 8.4=210$ grams.\n\n**The Full Solution:**\nStep 1: Confirm the relationship is proportional: $\\frac{33.6}{4}=8.4$, $\\frac{84.0}{10}=8.4$, and $\\frac{134.4}{16}=8.4$ grams per cubic centimeter.\nStep 2: Mass is that constant times volume: $m=8.4V$.\nStep 3: $m=8.4(25)=210$ grams. Check: $\\frac{210}{25}=8.4$, matching every row of the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.98$): computes $\\frac{25}{8.4}$, dividing by the density instead of multiplying by it.\n* Choice B ($168$): adds the $16$ and $4$ cubic centimeter masses, $134.4+33.6$, which accounts for only $20$ cubic centimeters.\n* Choice D ($840$): multiplies $25\\times 33.6$, treating the first sample's mass as the mass of a single cubic centimeter.\n\n**Test Day Takeaway:** In a proportional table, divide one row pair to get the unit rate, verify it on a second pair, then scale to whatever value the question names."
+}

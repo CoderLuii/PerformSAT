@@ -1,0 +1,6 @@
+{
+  "question": "The polynomial $p$ is defined by $p(x)=(2x-5)(x+k)$, where $k$ is a constant. When $p(x)$ is expanded, its constant term is $-35$. What is the coefficient of $x$ in the expanded form of $p(x)$?",
+  "correctAnswer": "9",
+  "explanation": "**SAT Pattern: Constant Term from Factored Form**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~25s):** The constant term is $-5k=-35$, so $k=7$, and the $x$-coefficient is $2k-5=9$.\n\n**The Full Solution:**\nStep 1: Expand: $(2x-5)(x+k)=2x^{2}+2kx-5x-5k=2x^{2}+(2k-5)x-5k$.\nStep 2: Set the constant term equal to $-35$: $-5k=-35$, so $k=7$.\nStep 3: The coefficient of $x$ is $2k-5=14-5=9$. Check: $(2x-5)(x+7)=2x^{2}+9x-35$ ✓\n\n**Common Mistakes:**\n* $7$: reported $k$ instead of the coefficient of $x$.\n* $19$: used $2k+5$ instead of $2k-5$, dropping the sign of the $-5$.\n* $-35$: reported the constant term already given in the question.\n\n**Test Day Takeaway:** The constant term of a product of binomials is the product of their constants — solve for the parameter there first, then read off the middle coefficient.",
+  "id": "bank-am-058"
+}

@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A monthly transit pass costs $\\$46$, and each ride taken beyond the first $40$ rides costs an additional $\\$1.75$. Which equation gives the number of rides $r$ taken in a month when the total cost was $\\$81$, where $r > 40$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$46 + 1.75r = 81$"
+  },
+  {
+   "id": "B",
+   "text": "$46 + 1.75(r - 40) = 81$"
+  },
+  {
+   "id": "C",
+   "text": "$46(r - 40) + 1.75 = 81$"
+  },
+  {
+   "id": "D",
+   "text": "$1.75r - 46 = 81$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "charges $1.75 for every ride instead of only the rides past the first 40",
+  "C": "swaps the roles of the fixed pass price and the per-ride charge",
+  "D": "subtracts the pass price instead of adding it"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The total is the flat $\\$46$ plus $\\$1.75$ for each ride past $40$, and the number of such rides is $r - 40$. That is $46 + 1.75(r - 40) = 81$.\n\n**The Full Solution:**\nStep 1: Name the charged rides. Only rides beyond the first $40$ cost extra, so the number of charged rides is $r - 40$, not $r$.\nStep 2: Build the total. The charge for those rides is $1.75(r - 40)$ dollars, and the pass adds a flat $46$ dollars, so the total cost is $46 + 1.75(r - 40)$.\nStep 3: Set the total equal to the given cost. $46 + 1.75(r - 40) = 81$. Check by solving: $1.75(r - 40) = 35$, so $r - 40 = 20$ and $r = 60$, which does satisfy $r > 40$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($46 + 1.75r = 81$): charges $\\$1.75$ for all $r$ rides, ignoring that the first $40$ are already covered by the pass. It would give $r = 20$, contradicting $r > 40$.\n* Choice C ($46(r - 40) + 1.75 = 81$): swaps the two prices, multiplying the flat pass price by the number of extra rides and adding the per-ride charge once.\n* Choice D ($1.75r - 46 = 81$): subtracts the pass price rather than adding it, which would describe a refund instead of a purchase.\n\n**Test Day Takeaway:** When a price applies only past a threshold, the multiplier is the amount over that threshold, written as a subtraction inside the parentheses. Translate the sentence piece by piece and check the answer against any stated restriction such as $r > 40$."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-316",
+  "question": "Data set F and data set G each consist of $30$ values. The range of data set F is $12$, and the range of data set G is $36$. Neither data set contains an extreme value, and the two distributions have similar shapes. Which statement is best supported?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The standard deviation of data set F is $3$ times the standard deviation of data set G."
+    },
+    {
+      "id": "B",
+      "text": "The standard deviation of data set G is greater than the standard deviation of data set F."
+    },
+    {
+      "id": "C",
+      "text": "The mean of data set G is greater than the mean of data set F."
+    },
+    {
+      "id": "D",
+      "text": "The two data sets have the same standard deviation."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses the ratio and treats the range as an exact multiplier of the standard deviation; the wider set is G, not F.",
+    "C": "reads a spread statistic as a center statistic; the ranges say nothing about where either data set is centered.",
+    "D": "ignores the ranges entirely; equal sample size does not force equal spread."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Standard Deviation Comparison**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Same shape, same count, but G's values are spread across three times the interval. Wider spread about the mean means the larger standard deviation.\n\n**The Full Solution:**\nStep 1: Both data sets have $30$ values and similar shapes, so the only difference described is how far apart the values sit.\nStep 2: G's values occupy an interval three times as wide as F's, so typical distances from the mean are larger in G.\nStep 3: A larger typical distance from the mean is exactly a larger standard deviation, so G's standard deviation is greater. Check: nothing given locates either mean, so only the spread comparison is supported. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reverses the ratio and treats the range as an exact multiplier of the standard deviation; the wider set is G, not F.\n* Choice C: reads a spread statistic as a center statistic; the ranges say nothing about where either data set is centered.\n* Choice D: ignores the ranges entirely; equal sample size does not force equal spread.\n\n**Test Day Takeaway:** The range orders standard deviations when the shapes match, but it does not fix the exact ratio, and it never tells you anything about the mean."
+}

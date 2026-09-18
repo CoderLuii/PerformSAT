@@ -1,31 +1,31 @@
 {
-  "id": 711,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "Political scientists studying social movements have noticed a puzzling pattern: groups that face discrimination sometimes respond slowly when a crisis strikes their own most vulnerable members. To explain this, some researchers use the idea of secondary marginalization. A group working to improve its standing in society may distance itself from members who carry an added stigma—a past criminal conviction, for example—so as not to put the group's fragile gains at risk. On this account, a slow response to a crisis is not simply an oversight. It is a predictable result of the way a marginalized group decides which of its own members to defend.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Groups that face discrimination always respond quickly to crises that threaten their most vulnerable members."
-    },
-    {
-      "id": "B",
-      "text": "Secondary marginalization can occur only after a group has already secured a fully stable and protected position in society."
-    },
-    {
-      "id": "C",
-      "text": "Researchers continue to disagree sharply about whether the stigmatized members of any marginalized group ought to be actively defended during a moment of public crisis."
-    },
-    {
-      "id": "D",
-      "text": "The idea of secondary marginalization explains how a marginalized group may sideline its own stigmatized members, accounting for a slow response to a crisis affecting them."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage introduces secondary marginalization to explain why a discriminated-against group might respond slowly to a crisis: the group distances itself from members who carry an added stigma. Choice A flatly contradicts the pattern the passage sets out to explain. Choice B adds a precondition (a stable position) the text never states, and Choice C describes a scholarly disagreement that the passage does not raise."
+ "id": 711,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "In the years after the Mexican Revolution, the national government commissioned painters to cover the walls of public buildings — schools, ministries, markets — with scenes from Mexican history and daily labor. Artists including Diego Rivera and José Clemente Orozco worked at architectural scale, wrapping staircases and courtyards in compositions meant to be read by anyone passing through. A canvas locked in a private collection, the muralists argued, reached only its owner, while a wall belonged to everyone. The movement made public space itself the gallery, and it carried Mexican painting to international prominence.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Diego Rivera earned wider international recognition than any other painter associated with the Mexican mural movement."
+  },
+  {
+   "id": "B",
+   "text": "The Mexican government commissioned murals for its schools, ministries, and markets chiefly to make those public buildings more attractive to the growing numbers of foreign visitors of the period."
+  },
+  {
+   "id": "C",
+   "text": "Mexican muralists preferred painting on canvas but accepted wall commissions because the government paid for them."
+  },
+  {
+   "id": "D",
+   "text": "Supported by government commissions after the revolution, Mexican muralists turned public walls into large-scale paintings addressed to everyone rather than to private collectors."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** Every element of the passage feeds D's summary: the postrevolutionary commissions, the architectural scale, the argument that a wall \"belonged to everyone,\" and the movement's turn of public space into the gallery.\n\n**The Full Solution:**\n- The passage establishes the support: the national government commissioned murals for schools, ministries, and markets.\n- It establishes the audience: compositions \"meant to be read by anyone passing through,\" backed by the muralists' own contrast between a privately owned canvas and a public wall.\n- D joins those threads — government-backed painters making public, large-scale art for a broad audience — which is the passage's through-line.\n\n**Why the other choices are wrong:**\n- A: The text names Rivera as one example and never ranks the muralists' reputations.\n- B: It invents a motive — attracting foreign visitors — that appears nowhere in the passage.\n- C: It reverses the muralists' stated argument, which favored walls over privately held canvases."
 }

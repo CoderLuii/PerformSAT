@@ -1,31 +1,31 @@
 {
-  "id": 710,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "Before the electric spotlight, a theater had no way to throw a bright, steerable beam across its stage. That changed with limelight, developed in the 1820s by the engineer Thomas Drummond, who needed a light visible over great distances for land surveying. Heating a cylinder of lime in a flame of burning oxygen and hydrogen produced a brilliant white glow that, mounted in a reflector behind a lens, could be aimed wherever a production wanted the audience to look. Once theaters adopted the device in the 1830s, an operator could pick out a single performer from the soft, undirected wash of the gas footlights — a power so closely tied to prominence that favored actors were soon said to be \"in the limelight.\"",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Thomas Drummond invented limelight to brighten theatrical productions, and surveyors only later discovered that the device could also be useful for measuring long distances."
-    },
-    {
-      "id": "B",
-      "text": "Because limelight depended on a flame of burning oxygen and hydrogen, most nineteenth-century theaters considered the device too hazardous to install."
-    },
-    {
-      "id": "C",
-      "text": "Limelight, a surveying technology taken up by theaters, gave the nineteenth-century stage its first means of aiming an intense beam at chosen performers."
-    },
-    {
-      "id": "D",
-      "text": "The expression \"in the limelight\" entered everyday speech because audiences came to associate the device's brilliant glow with the prominence of featured performers."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage traces limelight from Drummond's surveying lamp to the stage and stresses what the technology made newly possible: an intense, steerable beam that could single out one performer, something the even wash of the gas footlights could not do. Choice A reverses the actual sequence, since Drummond built the light for surveying and theaters adopted it afterward. Choice B contradicts the text, which says theaters took up the device in the 1830s. Choice D fixes on the origin of a familiar phrase, a closing detail rather than the point the passage as a whole develops."
+ "id": 710,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "The United States census of 1880 took most of a decade to tabulate by hand, and officials feared the 1890 count would still be in progress when the next one began. The Census Office adopted a system devised by the engineer Herman Hollerith: each person's answers were punched as a pattern of holes in a card, and machines read the cards electrically, advancing counting dials automatically. Clerks processed the 1890 returns several times faster than the previous count despite a larger population, and the punched card outlived its first job, organizing payrolls, inventories, and scientific records for the next half century.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The hand tabulation of the 1880 census took so long to complete that officials doubted the 1890 count could possibly be finished in time."
+  },
+  {
+   "id": "B",
+   "text": "Hollerith's machines eliminated the need for clerks in the processing of the 1890 census returns."
+  },
+  {
+   "id": "C",
+   "text": "A machine system adopted to rescue the 1890 census sped up tabulation and became a data-processing technology used far beyond it."
+  },
+  {
+   "id": "D",
+   "text": "Punched cards proved most valuable for organizing payrolls and inventories rather than for government statistics."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage's arc runs from a crisis (hand tabulation too slow), through the fix (Hollerith's punched-card machines speeding the 1890 count), to the larger legacy (punched cards organizing data for half a century) — and only C spans all of it.\n\n**The Full Solution:**\n- The opening establishes the problem the system was adopted to solve: the 1880 count took most of a decade.\n- The middle describes the solution working — the 1890 returns were processed several times faster despite a larger population.\n- The final sentence widens the frame: the punched card \"outlived its first job,\" which C captures as a technology used far beyond the census.\n\n**Why the other choices are wrong:**\n- A: It stops at the opening problem and never reaches the solution or its legacy.\n- B: It contradicts the text, which says clerks processed the returns faster, not that clerks were eliminated.\n- D: It inflates the closing list into a ranking the text never makes — nothing says payrolls mattered more than the census."
 }

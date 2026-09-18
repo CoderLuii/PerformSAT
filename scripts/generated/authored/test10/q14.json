@@ -6,35 +6,30 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
  "module": 1,
- "passage": "Surveys of the southern Levant have long noted that the number of identifiable settlement sites fell sharply between the Middle Bronze IIB and Late Bronze I periods. Older syntheses sometimes extended that picture into a thoroughgoing collapse lasting through the entire Late Bronze Age. Drawing on site-count tabulations published by Faust (2015), other archaeologists have argued that this depiction is misleading: although Late Bronze I represents a low point, the Late Bronze II record points to a partial recovery in regional habitation that preceded the larger Iron Age I expansion. The data support this revised account because _______",
+ "passage": "On the grasslands of nineteenth-century North America, enclosing land meant hauling timber for fence rails from distant woodlands, and the farther the timber traveled, the more a fence cost. A historian of agriculture argues that barbed wire, patented in 1874, did more than lower fencing costs generally: its advantage over wooden fencing was greatest precisely where timber had to travel farthest because ______",
  "questionTable": {
   "type": "table",
-  "caption": "Number of identified settlement sites in the southern Levant by archaeological period (Faust 2015, Israel Exploration Journal)",
+  "caption": "Estimated cost of fencing a 160-acre farm in the 1870s, by region (dollars)",
   "headers": [
-   "Period",
-   "Approximate dates BCE",
-   "Sites identified"
+   "Region",
+   "Wooden rail fence",
+   "Barbed wire fence"
   ],
   "rows": [
    [
-    "Middle Bronze IIB",
-    "1750-1650",
-    "approx. 290"
+    "Wooded East",
+    "400",
+    "350"
    ],
    [
-    "Late Bronze I",
-    "1550-1400",
-    "approx. 165"
+    "Prairie margin",
+    "700",
+    "360"
    ],
    [
-    "Late Bronze II",
-    "1400-1200",
-    "approx. 240"
-   ],
-   [
-    "Iron Age I",
-    "1200-1000",
-    "approx. 380"
+    "Treeless plains",
+    "1,100",
+    "370"
    ]
   ]
  },
@@ -42,21 +37,21 @@
  "choices": [
   {
    "id": "A",
-   "text": "the number of identified sites rose from approximately 165 in Late Bronze I to approximately 240 in Late Bronze II before climbing further to approximately 380 in Iron Age I."
+   "text": "the cost of a rail fence nearly tripled from the wooded East to the treeless plains, while the cost of a wire fence stayed roughly constant across the three regions."
   },
   {
    "id": "B",
-   "text": "the number of identified sites fell from approximately 290 in Middle Bronze IIB to approximately 165 in Late Bronze I, the largest period-to-period drop shown in the table."
+   "text": "a wire fence cost 370 dollars on the treeless plains, more than a wire fence cost in either of the other two regions."
   },
   {
    "id": "C",
-   "text": "the number of identified sites declined without interruption after Middle Bronze IIB, reaching its lowest level of the four periods in Iron Age I."
+   "text": "rail fencing on the prairie margin cost 700 dollars, nearly twice what the same fencing cost in the wooded East."
   },
   {
    "id": "D",
-   "text": "Iron Age I shows approximately 380 identified sites, the highest count of any period in the table and substantially higher than the approximately 290 sites recorded for Middle Bronze IIB."
+   "text": "wire fencing was at least somewhat cheaper than rail fencing in every region listed, including the wooded East, where timber for fence rails remained comparatively plentiful and cheap to haul."
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The revised account makes a two-part claim: Late Bronze II is a partial recovery from the Late Bronze I low point, and that recovery precedes the larger Iron Age I expansion. Supporting it requires showing the count rise from Late Bronze I to Late Bronze II and then rise again into Iron Age I. Choice A traces both moves—165 to 240, then 240 to 380—preserving the rebound the older \"thoroughgoing collapse\" picture missed. Choice B reports only the initial decline, which the older synthesis already captured. Choice C contradicts the table, since the counts rise after Late Bronze I rather than falling continuously, and Iron Age I is in fact the highest count, not the lowest. Choice D jumps from Middle Bronze IIB straight to Iron Age I, erasing the within-Late-Bronze recovery the claim is about."
+ "explanation": "**Choice A is correct.** The claim is about a widening gap, wire's advantage growing with distance from timber, and A captures both halves of the mechanism: rail costs climb steeply across the regions while wire costs barely move.\n\n**The Full Solution:**\n- The historian's statement is comparative across regions: the advantage \"was greatest precisely where timber had to travel farthest.\"\n- In the table, rail fencing rises from 400 to 700 to 1,100 dollars as timber grows scarcer, while wire fencing runs 350, 360, 370, nearly flat. The advantage therefore stretches from 50 dollars in the East to 730 on the plains, which is exactly the pattern A describes.\n\n**Why the other choices are wrong:**\n- B: It cites only wire prices, whose 20-dollar spread is trivial; without the rail column there is no advantage to measure.\n- C: It tracks rail costs between two regions but never mentions wire, so it cannot establish wire's relative advantage anywhere.\n- D: A uniform advantage is the wrong shape for the claim; showing wire cheaper everywhere does not show its edge growing where timber was scarcest."
 }

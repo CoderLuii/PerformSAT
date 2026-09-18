@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-382",
+ "question": "A designer stretches the graph of $y=f(x)$ vertically by a factor of 3 and then translates the result 6 units down, and the curve produced is the graph of $y=3x^{2}+18x+3$. Which equation defines $f$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$f(x)=x^{2}+6x-1$"
+  },
+  {
+   "id": "B",
+   "text": "$f(x)=x^{2}+6x+1$"
+  },
+  {
+   "id": "C",
+   "text": "$f(x)=x^{2}+6x+3$"
+  },
+  {
+   "id": "D",
+   "text": "$f(x)=x^{2}+6x+9$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "subtracts 6 before dividing by 3: (3x^2 + 18x - 3)/3 = x^2 + 6x - 1",
+  "B": "divides by 3 without undoing the 6-unit drop: (3x^2 + 18x + 3)/3 = x^2 + 6x + 1",
+  "D": "divides only the variable terms by 3, leaving the constant 3 + 6 = 9"
+ },
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Undo the drop first, then the stretch: $\\frac{3x^{2}+18x+3+6}{3}=x^{2}+6x+3$.\n\n**The Full Solution:**\nStep 1: The two transformations give $3f(x)-6=3x^{2}+18x+3$.\nStep 2: Add 6 to both sides: $3f(x)=3x^{2}+18x+9$.\nStep 3: Divide every term by 3: $f(x)=x^{2}+6x+3$. Check: $3(x^{2}+6x+3)-6=3x^{2}+18x+9-6=3x^{2}+18x+3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($f(x)=x^{2}+6x-1$): subtracts the 6 instead of adding it back.\n* Choice B ($f(x)=x^{2}+6x+1$): divides by 3 but never undoes the vertical drop.\n* Choice D ($f(x)=x^{2}+6x+9$): divides only the variable terms, leaving the constant untouched.\n\n**Test Day Takeaway:** Undo a chain of transformations in reverse order — the last one applied is the first one removed."
+}

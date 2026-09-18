@@ -1,31 +1,31 @@
 {
-  "id": 847,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 2,
-  "passage": "A dictionary of a dying language is rarely the work of a single season. Compiled over more than twenty years from hundreds of recorded interviews with the community's last elderly speakers, ______, and today it stands as the fullest record of a language that has since fallen silent.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the last fluent generation was documented by the linguist’s dictionary"
-    },
-    {
-      "id": "B",
-      "text": "documenting the last fluent generation occupied the linguist for many years"
-    },
-    {
-      "id": "C",
-      "text": "the linguist’s dictionary preserved the words of the last fluent generation"
-    },
-    {
-      "id": "D",
-      "text": "there were finally enough recorded words to fill the linguist’s dictionary"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The opening phrase, \"Compiled over more than twenty years from hundreds of recorded interviews…,\" must modify the thing that was compiled—the dictionary. Only C makes \"the linguist's dictionary\" the subject that follows the comma, so the modifier attaches correctly and the later pronoun \"it\" has a clear antecedent. In A the phrase wrongly describes \"the last fluent generation,\" who were not compiled; in B it points to \"documenting,\" an activity rather than the compiled object; and in D the dummy \"there were\" leaves the introductory phrase with nothing sensible to modify."
+ "id": 847,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 2,
+ "passage": "A court reporter's greatest asset was often a private one. Compiled stroke by stroke from years of courtroom practice, ______, and young reporters would copy such collections by hand, absorbing shortcuts that no published manual taught.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the last reporters trained in the old pen systems inherited the stenographer's dictionary of brief forms"
+  },
+  {
+   "id": "B",
+   "text": "collecting the forms into a dictionary occupied the stenographer's final years"
+  },
+  {
+   "id": "C",
+   "text": "the stenographer's dictionary of brief forms preserved the accumulated speed of a working lifetime"
+  },
+  {
+   "id": "D",
+   "text": "there were hundreds of brief forms recorded in the stenographer's dictionary"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The opening modifier — \"Compiled stroke by stroke from years of courtroom practice\" — must attach to the thing that was compiled, and only choice C makes that thing, the stenographer's dictionary of brief forms, the subject.\n\n**The Full Solution:**\n- An introductory participial phrase modifies the subject of the clause that follows.\n- What was compiled stroke by stroke? The dictionary of brief forms — so \"the stenographer's dictionary\" must stand immediately after the comma.\n- Choice C supplies it: \"the stenographer's dictionary of brief forms preserved the accumulated speed of a working lifetime.\"\n\n**Why the other choices are wrong:**\n- A: It makes \"the reporters of the next generation\" the subject, absurdly casting them as what was compiled.\n- B: It hangs the modifier on the gerund phrase \"collecting the forms,\" leaving the compiled thing itself displaced from subject position.\n- D: The expletive \"there were\" gives the modifier no subject at all to attach to, leaving it dangling."
 }

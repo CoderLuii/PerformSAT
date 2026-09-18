@@ -1,0 +1,29 @@
+{
+ "question": "A control unit applies $f(x) = 2x + 5$ to the output of an unknown function $g$, and the combined result is $6x - 1$ for every $x$. Which expression defines $g$?",
+ "hint": "Undo what $f$ does, one step at a time.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x - 3$"
+  },
+  {
+   "id": "B",
+   "text": "$3x + 2$"
+  },
+  {
+   "id": "C",
+   "text": "$6x - 6$"
+  },
+  {
+   "id": "D",
+   "text": "$6x - 3$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "adds 5 instead of subtracting it before halving, giving (6x + 4)/2",
+  "C": "subtracts the 5 but never divides by 2",
+  "D": "divides only the constant term by 2"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** $2g(x) + 5 = 6x - 1$ gives $2g(x) = 6x - 6$, so $g(x) = 3x - 3$.\n\n**The Full Solution:**\nStep 1: Applying $f$ to $g(x)$ means $2g(x) + 5$, and that equals $6x - 1$.\nStep 2: Subtract $5$ from both sides: $2g(x) = 6x - 6$.\nStep 3: Divide by $2$: $g(x) = 3x - 3$. Check at $x = 2$: $g(2) = 3$ and $f(3) = 11$, matching $6(2) - 1 = 11$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($3x + 2$): adds the $5$ instead of subtracting it, producing $\\dfrac{6x + 4}{2}$.\n* Choice C ($6x - 6$): removes the $5$ correctly but never divides by the coefficient $2$.\n* Choice D ($6x - 3$): divides only the constant by $2$ and leaves the $x$-term untouched.\n\n**Test Day Takeaway:** To recover the inner function, undo the outer function's operations in reverse order."
+}

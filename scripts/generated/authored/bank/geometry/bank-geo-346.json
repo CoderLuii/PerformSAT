@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-346",
+ "question": "A packaging line at a fabric mill glues two identical cubical shipping cartons of edge $n$ centimeters face to face to form a single rectangular box. Which expression gives the surface area, in square centimeters, of that box?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8n^2$"
+  },
+  {
+   "id": "B",
+   "text": "$10n^2$"
+  },
+  {
+   "id": "C",
+   "text": "$11n^2$"
+  },
+  {
+   "id": "D",
+   "text": "$12n^2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "removes four faces at the joint instead of the two that actually disappear",
+  "C": "removes only one of the two faces hidden by the glued joint",
+  "D": "adds the two cubes' surface areas and never removes the glued faces"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Surface Area of Glued Prisms**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** Two cubes show $12n^2$ of face area, and gluing hides one face on each cube, so the box shows $12n^2-2n^2=10n^2$ square centimeters.\n\n**The Full Solution:**\n\nStep 1 — One cube of edge $n$ has surface area $6n^2$, so two separate cubes have $12n^2$.\n\nStep 2 — Gluing them face to face buries exactly two faces, one from each cube, removing $2n^2$ from the visible area.\n\nStep 3 — The box's surface area is $12n^2-2n^2=10n^2$ square centimeters. Check directly: the box is $n$ by $n$ by $2n$, with surface area $2(n\\cdot n)+4(n\\cdot 2n)=2n^2+8n^2=10n^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($8n^2$): this removes four faces, as if both faces on each cube vanished.\n* Choice C ($11n^2$): this removes only one face, forgetting that each cube gives up one.\n* Choice D ($12n^2$): this adds the two cubes' surface areas and ignores the joint entirely.\n\n**Test Day Takeaway:** Every glued joint hides two faces, one on each solid — subtract twice the contact area, not once."
+}

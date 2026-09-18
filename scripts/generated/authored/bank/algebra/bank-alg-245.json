@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-245",
+  "question": "A tank-monitoring sheet plots level reading against time as $y = \\frac{5}{8}x - 3$ for tank 1 and as $15x - hy = 40$ for tank 2, in which $h$ is a constant. No pair of time and level values fits both plots. What is the value of $h$?",
+  "correctAnswer": "24",
+  "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**The correct answer is $24$.**\n\n**The Fast Way (~25s):** Rewriting $15x - hy = 40$ gives slope $\\frac{15}{h}$, and $\\frac{15}{h} = \\frac{5}{8}$ gives $h = 24$.\n\n**The Full Solution:**\nStep 1: The plot for tank 1 has slope $\\frac{5}{8}$.\nStep 2: Rewrite $15x - hy = 40$ as $-hy = -15x + 40$, so $y = \\frac{15}{h}x - \\frac{40}{h}$.\nStep 3: Plots with no common pair have equal slopes, so $\\frac{15}{h} = \\frac{5}{8}$ and $h = 24$; the intercepts $-3$ and $-\\frac{5}{3}$ differ. Check: $\\frac{15}{24} = \\frac{5}{8}$.\n\n**Common Mistakes:**\n* Missing the double sign change when dividing by $-h$ gives $h = -24$.\n* Multiplying gives $15 \\cdot \\frac{5}{8} = 9.375$ instead of dividing.\n* Reporting $8$ copies the denominator of $\\frac{5}{8}$ without using the $15$.\n\n**Test Day Takeaway:** Dividing by a negative coefficient of $y$ flips two signs at once; write the step out rather than doing it mentally."
+}

@@ -1,0 +1,58 @@
+{
+  "id": 1,
+  "question": "A surveyor plots line $\\ell$ on the coordinate grid shown. A second line on the same grid crosses line $\\ell$ at a right angle. What is the slope of that second line?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -0.75,
+      "yIntercept": 3,
+      "xRange": [
+        -6,
+        8
+      ],
+      "yRange": [
+        -6,
+        8
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "highlightPoints": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "label": "ℓ"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-\\frac{4}{3}$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{3}{4}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{3}{4}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{4}{3}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the reciprocal but keeps the graphed line's negative sign, giving -4/3",
+    "B": "reports the slope of the graphed line itself, -3/4",
+    "C": "changes the sign but never takes the reciprocal, giving 3/4"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The plotted line falls $3$ units for every $4$ units it runs right, so its slope is $-\\frac{3}{4}$; the perpendicular slope is the opposite reciprocal, $\\frac{4}{3}$.\n\n**The Full Solution:**\nStep 1: Read two marked lattice points off the grid: $(0, 3)$ and $(4, 0)$. The slope of line $\\ell$ is $\\frac{0 - 3}{4 - 0} = -\\frac{3}{4}$.\nStep 2: Two lines meet at a right angle exactly when the product of their slopes is $-1$. Let $m$ be the slope of the second line, so $-\\frac{3}{4} \\cdot m = -1$.\nStep 3: Solving gives $m = \\frac{4}{3}$. Check: $-\\frac{3}{4} \\cdot \\frac{4}{3} = -\\frac{12}{12} = -1$, so the two slopes do describe perpendicular lines. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{4}{3}$): flips $\\frac{3}{4}$ to $\\frac{4}{3}$ but carries the original minus sign along, so the product of the slopes is $\\frac{3}{4} \\cdot \\frac{4}{3} \\cdot (+1) = +1$, not $-1$.\n* Choice B ($-\\frac{3}{4}$): reports the slope of the graphed line instead of the slope of the line drawn across it.\n* Choice C ($\\frac{3}{4}$): changes only the sign. The product would be $-\\frac{3}{4} \\cdot \\frac{3}{4} = -\\frac{9}{16}$, which is not $-1$.\n\n**Test Day Takeaway:** Perpendicular means flip AND negate. Do both moves, then multiply the two slopes together — the product must be exactly $-1$."
+}

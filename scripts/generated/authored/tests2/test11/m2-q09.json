@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "In grading a jacket up one size, every measurement is multiplied by $\\left(32x^{15}\\right)^{\\frac{2}{5}}$, where $x > 0$. Which of the following is equivalent to that multiplier?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2x^{6}$"
+  },
+  {
+   "id": "B",
+   "text": "$4x^{6}$"
+  },
+  {
+   "id": "C",
+   "text": "$4x^{30}$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}024x^{6}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes the fifth root of 32 but never squares it, giving 2 instead of 4",
+  "C": "multiplies the exponent 15 by 2 and never divides by 5, giving x^30",
+  "D": "squares 32 first and never takes the fifth root, giving 1,024"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Exponent Rules with Radicals**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $32 = 2^5$, so $32^{2/5} = 2^2 = 4$, and $\\left(x^{15}\\right)^{2/5} = x^{6}$. The multiplier is $4x^{6}$.\n\n**The Full Solution:**\nStep 1: Distribute the exponent across the product: $\\left(32x^{15}\\right)^{\\frac{2}{5}} = 32^{\\frac{2}{5}} \\cdot \\left(x^{15}\\right)^{\\frac{2}{5}}$.\nStep 2: Handle the number. A fractional exponent $\\frac{2}{5}$ means \"fifth root, then square\": $\\sqrt[5]{32} = 2$ and $2^2 = 4$.\nStep 3: Handle the variable by multiplying exponents: $15 \\cdot \\frac{2}{5} = 6$, so $\\left(x^{15}\\right)^{\\frac{2}{5}} = x^{6}$, and the multiplier is $4x^{6}$. Check at $x = 1$: $\\left(32\\right)^{\\frac{2}{5}} = 4$ and $4(1)^6 = 4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2x^{6}$): $\\sqrt[5]{32} = 2$ is only half the job; the numerator $2$ of the exponent still squares it to $4$.\n* Choice C ($4x^{30}$): multiplying $15$ by $2$ and forgetting to divide by $5$. A fractional exponent multiplies by the whole fraction, not just its numerator.\n* Choice D ($1{,}024x^{6}$): squaring $32$ to $1{,}024$ and stopping. The denominator $5$ still asks for a fifth root, and $\\sqrt[5]{1{,}024} = 4$.\n\n**Test Day Takeaway:** Read $a^{m/n}$ as \"$n$th root, then $m$th power,\" and apply the exponent to every factor inside the parentheses. Taking the root first keeps the arithmetic small."
+}

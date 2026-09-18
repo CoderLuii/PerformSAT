@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-135",
+ "question": "A parking garage posts its number of available spaces as $N(t) = 62 - 4t$, where $t$ is the number of hours after 7 a.m. on a weekday. Which of the following is the best interpretation of the equation $N(9) = 26$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$26$ hours after 7 a.m., $9$ parking spaces are available."
+  },
+  {
+   "id": "B",
+   "text": "The number of available spaces drops by $26$ during the first nine hours."
+  },
+  {
+   "id": "C",
+   "text": "At 7 a.m., $26$ parking spaces are available."
+  },
+  {
+   "id": "D",
+   "text": "Nine hours after 7 a.m., $26$ parking spaces are available."
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the input and the output",
+  "B": "reads the output as the change in spaces rather than the count",
+  "C": "reads N(9) as the value at t = 0"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** In $N(t)$ the input $t$ is hours after 7 a.m. and the output is the number of spaces, so $N(9) = 26$ means $26$ spaces nine hours in.\n\n**The Full Solution:**\nStep 1: The model names its variables: $t$ counts hours after 7 a.m., and $N(t)$ counts available spaces.\nStep 2: In the statement $N(9) = 26$, the $9$ sits in the input slot and the $26$ is the output.\nStep 3: So nine hours after 7 a.m. there are $26$ spaces available. Check: $N(9) = 62 - 4(9) = 62 - 36 = 26$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$ spaces at $26$ hours): swaps the input and the output.\n* Choice B (a drop of $26$): reads the output as the change in spaces; the actual drop over nine hours is $62 - 26 = 36$.\n* Choice C ($26$ spaces at 7 a.m.): reads $N(9)$ as the value at $t = 0$, which is $62$.\n\n**Test Day Takeaway:** In $N(a) = b$, the number inside the parentheses is always the input and the number after the equals sign is always the output."
+}

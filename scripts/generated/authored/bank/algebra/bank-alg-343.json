@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-343",
+ "question": "A courier charges a $\\$6$ pickup fee plus $\\$1.20$ per pound to deliver a package. For deliveries to a rural address, an additional $\\$0.30$ per pound is charged. Which function $f$ gives the total charge, in dollars, for delivering a $p$-pound package to a rural address?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$f(p) = 1.20p + 6$"
+  },
+  {
+   "id": "B",
+   "text": "$f(p) = 1.20p + 6.30$"
+  },
+  {
+   "id": "C",
+   "text": "$f(p) = 1.50p + 6$"
+  },
+  {
+   "id": "D",
+   "text": "$f(p) = 1.50p + 6.30$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "ignored the rural surcharge",
+  "B": "added the per-pound surcharge to the flat fee",
+  "D": "counted the surcharge both per pound and as a flat amount"
+ },
+ "explanation": "**SAT Pattern: Linear Cost Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Both per-pound charges combine: $1.20+0.30=1.50$ per pound. The flat fee stays $6$. So $f(p) = 1.50p + 6$.\n\n**The Full Solution:**\nStep 1: Identify what scales with weight: the base $\\$1.20$ per pound and the rural $\\$0.30$ per pound. Together they are $1.50p$.\nStep 2: Identify what is paid once: the $\\$6$ pickup fee.\nStep 3: Add: $f(p) = 1.50p + 6$.\nCheck: a $10$-pound rural package costs $6 + 12 + 3 = 21$, and $1.50(10) + 6 = 21$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($f(p) = 1.20p + 6$): is the non-rural charge; it drops the surcharge.\n* Choice B ($f(p) = 1.20p + 6.30$): adds the $\\$0.30$ to the flat fee, charging the surcharge once instead of per pound.\n* Choice D ($f(p) = 1.50p + 6.30$): applies the surcharge per pound AND again as a flat amount.\n\n**Test Day Takeaway:** Sort every charge by its unit before writing the function: \"per pound\" amounts add into the coefficient, one-time amounts add into the constant."
+}

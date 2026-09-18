@@ -1,0 +1,52 @@
+{
+ "id": "bank-am-200",
+ "question": "Otter counts recorded three years apart after a reintroduction appear in the table below, and biologists expect the same pattern of change to hold for another decade. Which statement best describes how the otter population changes over time?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Years after reintroduction",
+    "Otters counted"
+   ],
+   "rows": [
+    [
+     "0",
+     "40"
+    ],
+    [
+     "3",
+     "120"
+    ],
+    [
+     "6",
+     "360"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The population triples each year."
+  },
+  {
+   "id": "B",
+   "text": "The population increases by $80$ otters each year."
+  },
+  {
+   "id": "C",
+   "text": "The population increases by $300\\%$ every three years."
+  },
+  {
+   "id": "D",
+   "text": "The population triples every three years."
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "attaches the multiplier of $3$ to one year rather than to the three-year interval in the table",
+  "B": "spreads the first jump of $80$ otters evenly, but the next jump is $240$, not $80$",
+  "C": "turns a multiplier of $3$ into a $300\\%$ increase, which would multiply the count by $4$"
+ },
+ "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** $\\frac{120}{40} = \\frac{360}{120} = 3$, and each step in the table covers three years, so the count triples every three years.\n\n**The Full Solution:**\nStep 1: Divide consecutive counts: $120 \\div 40 = 3$ and $360 \\div 120 = 3$, a constant ratio.\nStep 2: The inputs advance by $3$ years between rows, so the multiplier of $3$ belongs to a three-year span.\nStep 3: Therefore the population triples every three years. Check: after six years the count is $40 \\cdot 3 \\cdot 3 = 360$, matching the table ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (triples each year): would give $40 \\cdot 3^{3} = 1{,}080$ otters at year $3$, far above the recorded $120$.\n* Choice B ($80$ otters each year): the increases are $80$ then $240$, so the growth is not a fixed amount.\n* Choice C ($300\\%$ every three years): a $300\\%$ increase means multiplying by $4$, which would give $160$ at year $3$.\n\n**Test Day Takeaway:** Read the ratio AND the input step together — a constant ratio describes the interval between rows, not automatically one unit."
+}

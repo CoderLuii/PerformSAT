@@ -1,31 +1,31 @@
 {
-  "id": 1219,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "For decades the street photographs of Vivian Maier existed only as undeveloped negatives stored in boxes, unknown to the public. The collection was at first valued mainly for what it documented about mid-century city ____ later critics came to study Maier's compositions in their own right, treating her framing and timing as the work of a deliberate artist rather than as an incidental record.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "streets"
-    },
-    {
-      "id": "B",
-      "text": "streets,"
-    },
-    {
-      "id": "C",
-      "text": "streets;"
-    },
-    {
-      "id": "D",
-      "text": "streets, but"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. Two independent clauses meet at the blank—\"The collection was ... valued ...\" and \"later critics came to study ...\"—and a semicolon correctly joins them without a conjunction. With no punctuation the clauses run together, and a comma alone creates a comma splice. Adding \"but\" after a comma would be acceptable grammar, but the relationship here is one of sequence and development, not contrast, so the plain semicolon is the precise choice."
+ "id": 1219,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "The modern revival of the harpsichord began with compromise instruments, built on piano-style frames so that they could survive concert touring. Performers of the early twentieth century recorded and toured with these sturdy ____ later builders carried the revival further, copying surviving eighteenth-century instruments plank by plank and finding that the light older construction produced a clearer, more speaking tone.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "hybrids"
+  },
+  {
+   "id": "B",
+   "text": "hybrids,"
+  },
+  {
+   "id": "C",
+   "text": "hybrids;"
+  },
+  {
+   "id": "D",
+   "text": "hybrids, but"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** Two independent clauses meet at the blank, and a semicolon joins them correctly without a conjunction.\n\n**The Full Solution:**\n- Test each side for independence: \"Performers of the early twentieth century recorded and toured with these sturdy hybrids\" stands alone, and so does \"later builders carried the revival further...\"\n- Two independent clauses require a period, a semicolon, or a comma plus a coordinating conjunction between them.\n- The second clause continues the revival's story rather than opposing the first — the builders \"carried the revival further\" — so the plain semicolon, which joins without forcing a relationship, is the right choice.\n\n**Why the other choices are wrong:**\n- A: With no punctuation, the two complete sentences collide (\"these sturdy hybrids later builders carried...\").\n- B: A comma alone between two independent clauses is a comma splice.\n- D: \"Hybrids, but\" is grammatical, yet \"but\" asserts a contrast, and the second clause extends the revival's progress rather than opposing it — the builders carried the same project further."
 }

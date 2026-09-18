@@ -1,0 +1,36 @@
+{
+ "id": 21,
+ "question": "The figure shows two similar triangular pennants at a stadium entrance, with $AB$ and $DE$ corresponding sides measured in inches. Pennant $DEF$ encloses $112$ square inches more than pennant $ABC$. What is the area, in square inches, enclosed by pennant $ABC$?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "labels": [
+     "A",
+     "B",
+     "C"
+    ],
+    "sideLabels": [
+     "15",
+     "",
+     ""
+    ]
+   },
+   "triangle2": {
+    "labels": [
+     "D",
+     "E",
+     "F"
+    ],
+    "sideLabels": [
+     "25",
+     "",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "63",
+ "explanation": "**SAT Pattern: Similar Triangles and Area Ratio**\n\n**The correct answer is $63$.** The sides are in the ratio $15 : 25 = 3 : 5$, so the areas are in the ratio $9 : 25$. Writing the areas as $9k$ and $25k$, the difference $16k = 112$ gives $k = 7$ and area $ABC = 63$.\n\n**The Fast Way (~35s):** Areas scale as $3^2 : 5^2 = 9 : 25$, a gap of $16$ parts. $112 \\div 16 = 7$ per part, so $ABC = 9(7) = 63$.\n\n**The Full Solution:**\nStep 1: The similarity ratio is $\\frac{15}{25} = \\frac{3}{5}$, so the ratio of areas is $\\left(\\frac{3}{5}\\right)^2 = \\frac{9}{25}$.\nStep 2: Let the areas be $9k$ and $25k$. Then $25k - 9k = 16k = 112$, so $k = 7$.\nStep 3: Check with the true areas: $ABC = 9(7) = 63$ and $DEF = 25(7) = 175$. Their difference is $175 - 63 = 112$, and $\\frac{63}{175} = \\frac{9}{25}$.\n\n**Common Mistakes:**\n* $168$: scales the areas by the side ratio $\\frac{5}{3}$ instead of its square, solving $\\frac{5}{3}A - A = 112$.\n* $175$: finds the correct pair of areas but reports the larger pennant $DEF$ rather than $ABC$.\n* $7$: stops at the value of one area part, $k$, without multiplying by the $9$ parts that make up $ABC$.\n\n**Test Day Takeaway:** Lengths scale by $r$ and areas scale by $r^2$. Turn the area ratio into parts, let the given difference fix the size of one part, then build the requested area from its own number of parts."
+}

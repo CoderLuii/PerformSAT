@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-445",
+  "question": "A stage-lighting rental house cut its fixture inventory by $20\\%$ during one season and by another $25\\%$ during the next season, finishing with $660$ fixtures. The inventory before the first cut was $m$ fixtures. What is the value of $m$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$957$"
+    },
+    {
+      "id": "B",
+      "text": "$1{,}056$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}100$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}200$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the two percents to the final count: 660 x 1.45 = 957",
+    "B": "multiplies by 1.6 instead of dividing by 0.6: 660 x 1.6 = 1,056",
+    "D": "treats the two cuts as one 45 percent cut: 660 / 0.55 = 1,200"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Reverse Percent Multi-Step**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The two cuts leave $0.8 \\times 0.75 = 0.6$ of the start, so $m = \\frac{660}{0.6} = 1{,}100$.\n\n**The Full Solution:**\nStep 1: Turn each cut into a retained fraction. A $20\\%$ cut leaves $0.8$ of the inventory; a $25\\%$ cut leaves $0.75$ of what remains.\nStep 2: Multiply the fractions and set up. $0.8 \\times 0.75 = 0.6$, so $0.6m = 660$.\nStep 3: Solve and check. $m = \\frac{660}{0.6} = 1{,}100$. Forward: $1{,}100 \\times 0.8 = 880$, and $880 \\times 0.75 = 660$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($957$): uses $660 \\times 1.45$, adding both percents to the FINAL count instead of reversing them.\n* Choice B ($1{,}056$): uses $660 \\times 1.6$. Multiplying by $1.6$ is not the same as dividing by $0.6$.\n* Choice D ($1{,}200$): treats the cuts as one $45\\%$ cut: $\\frac{660}{0.55} = 1{,}200$. Successive percent changes multiply, they do not add.\n\n**Test Day Takeaway:** Successive percent changes multiply their retained fractions. Two cuts of $20\\%$ and $25\\%$ leave $0.6$, not $0.55$."
+}

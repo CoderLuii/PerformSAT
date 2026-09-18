@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
- "question": "Which choice best states the main idea of the text?",
+ "type": "multiple-choice",
+ "passage": "Until 1994, the Wollemi pine was known only from fossils, the youngest of which are about two million years old, and botanists reasonably assumed that the lineage was extinct. That year, a parks officer exploring a remote canyon northwest of Sydney, Australia, noticed a stand of unfamiliar trees with bubbly, chocolate-brown bark and fern-like foliage. Fewer than one hundred adult trees survive in the wild, all in a handful of neighboring gorges, and their exact location is kept secret to protect the trees from disease and trampling. Botanic gardens around the world now cultivate the species as insurance against the loss of the wild population.",
+ "question": "According to the text, why is the location of the wild Wollemi pines kept secret?",
  "choices": [
   {
    "id": "A",
-   "text": "Beard contends that the lurid episodes traditionally attributed to Nero are essentially later inventions and that, once the surviving sources have been properly corrected, he emerges as a relatively mild and unobjectionable ruler."
+   "text": "To prevent rival botanists from collecting the trees' seeds for study"
   },
   {
    "id": "B",
-   "text": "Beard accepts the sources' harsh portrait of Nero but argues that, written later and in moralizing genres, they leave the historian to separate Nero from later memory and genre."
+   "text": "To protect the trees from disease and from trampling"
   },
   {
    "id": "C",
-   "text": "Beard argues that one of the three principal sources for Nero is far more reliable than the others and should be weighted accordingly."
+   "text": "To preserve the commercial value of the specimens cultivated in botanic gardens"
   },
   {
    "id": "D",
-   "text": "Beard's central claim is biographical: she holds that Nero's later years account for nearly all of the negative material the sources record."
+   "text": "To allow parks officers to monitor the trees without interference"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B. The passage frames Beard's argument as a refinement, not a denial: she grants that the sources portray Nero harshly and that some lurid episodes reflect real events, but she questions taking that portrait at face value as the record of a singular monster. She notes that the main sources were written decades or centuries later, in genres prizing vivid moral example and often under regimes happy to see the previous dynasty look catastrophic, and concludes that the cleaner question is which features belong to Nero, which to later memory, and which to genre. B integrates that stance. A reverses it into a claim that Nero was blameless. C invents a ranking of sources. D narrows the argument to a chronology of Nero's reign the passage never raises.",
+ "explanation": "**Choice B is correct.** The text states the reason outright: the location \"is kept secret to protect the trees from disease and trampling.\"\n\n**The Full Solution:**\n- Detail questions are settled by the sentence that addresses the detail; here the third sentence attaches the secrecy directly to its purpose.\n- With fewer than one hundred wild adults confined to a few gorges, both named threats — introduced disease and physical damage from visitors — could reach the whole population, which is why secrecy is the protection of choice.\n\n**Why the other choices are wrong:**\n- A: No rival botanists or seed collecting appear anywhere in the text.\n- C: Botanic-garden cultivation is described as insurance for the species, and no commercial value is mentioned at all.\n- D: Parks officers appear only in the discovery story; monitoring is never given as the reason for secrecy.",
  "_meta": {
-  "anchor": "Mary Beard — classical historian; reading the sources on Nero (Tacitus, Suetonius, Cassius Dio)"
- },
- "passage": "Modern accounts often present the Roman emperor Nero as a uniquely cruel and theatrical figure: a man who burned Rome to clear ground for his palace, persecuted Christians as scapegoats, and died in operatic excess. The classical historian Mary Beard does not deny that the surviving sources support an unflattering portrait, or that some lurid episodes reflect real events. What she questions is the move that takes that portrait at face value as the record of a singular monster. The main sources for Nero wrote decades or centuries later, in genres that prized vivid moral example, and often under regimes that found it convenient for the previous dynasty to look catastrophic. The portrait is real, on her reading, but the cleaner question is which features belong to Nero, which to later memory, and which to the conventions of the genre.",
- "type": "multiple-choice"
+  "anchor": "Wollemi pine — 1994 rediscovery and secrecy of the wild stand"
+ }
 }

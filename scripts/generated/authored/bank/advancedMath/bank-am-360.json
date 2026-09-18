@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-360",
+ "question": "In a trail-run elevation model, the polynomial $21x^3 - 14x^2 + 3mx - 10$ describes the climb after $x$ kilometers, with the course profile setting the constant $m$. For which value of $m$ does $3x - 2$ divide that polynomial with no remainder?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "quotes the $2$ inside $3x - 2$ instead of solving for $m$",
+  "C": "uses the constant term $-10$ directly, skipping the division by $-2$",
+  "D": "reports $3m$, the coefficient of $x$, rather than $m$ itself"
+ },
+ "explanation": "**SAT Pattern: Factor by Grouping**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $21x^3 - 14x^2 = 7x^2(3x - 2)$, so the second pair must be $5(3x - 2) = 15x - 10$; matching $3mx = 15x$ gives $m = 5$.\n\n**The Full Solution:**\nStep 1: Factor the first pair: $21x^3 - 14x^2 = 7x^2(3x - 2)$.\nStep 2: The second pair, $3mx - 10$, must be a multiple of $3x - 2$. Since the constant is $-10$, that multiple is $5(3x - 2)$.\nStep 3: Then $5(3x - 2) = 15x - 10$, so $3m = 15$ and $m = 5$. Check: $(7x^2 + 5)(3x - 2) = 21x^3 - 14x^2 + 15x - 10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): reads a number out of the given binomial instead of computing $m$.\n* Choice C ($10$): stops at the constant term, which is $-2$ times the multiplier.\n* Choice D ($15$): reports the whole coefficient $3m$, forgetting to divide by $3$.\n\n**Test Day Takeaway:** Match the constant first to find the multiplier, then use the $x$-term to solve for the parameter — the two must agree."
+}

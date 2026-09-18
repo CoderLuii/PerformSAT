@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-359",
+ "question": "Migration counts along a flyway are modeled by the expression $15x^3 + 10x^2 + 3kx + 2k$, in which $x$ is the week number and $k$ denotes a constant. Written as a product of two factors, that model becomes which of the following?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(5x^2 + k)(3x + 2)$"
+  },
+  {
+   "id": "B",
+   "text": "$(5x^2 + 2k)(3x + 1)$"
+  },
+  {
+   "id": "C",
+   "text": "$(5x^2 + k)(3x - 2)$"
+  },
+  {
+   "id": "D",
+   "text": "$(5x + k)(3x^2 + 2)$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "splits the constant as $2k$ and $1$, which expands to $15x^3 + 5x^2 + 6kx + 2k$",
+  "C": "flips the sign of the $2$, which turns the $10x^2$ term into $-10x^2$",
+  "D": "puts the squared variable in the wrong factor, giving $15x^3 + 10x + 3kx^2 + 2k$"
+ },
+ "explanation": "**SAT Pattern: Factor by Grouping**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** $5x^2(3x + 2) + k(3x + 2) = (5x^2 + k)(3x + 2)$.\n\n**The Full Solution:**\nStep 1: Pair the terms: $(15x^3 + 10x^2) + (3kx + 2k)$.\nStep 2: The first pair has common factor $5x^2$, giving $5x^2(3x + 2)$; the second has common factor $k$, giving $k(3x + 2)$.\nStep 3: The shared binomial is $3x + 2$, so the model is $(5x^2 + k)(3x + 2)$. Check: expanding gives $15x^3 + 10x^2 + 3kx + 2k$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($(5x^2 + 2k)(3x + 1)$): the middle terms come out as $5x^2$ and $6kx$, neither of which matches.\n* Choice C ($(5x^2 + k)(3x - 2)$): a single sign flip changes $+10x^2$ to $-10x^2$.\n* Choice D ($(5x + k)(3x^2 + 2)$): the squared variable sits in the wrong factor, so the expansion is $15x^3 + 10x + 3kx^2 + 2k$, with $10$ and $3k$ on the wrong terms.\n\n**Test Day Takeaway:** A letter constant groups exactly like a number — pull it out of its pair and look for the same binomial on both sides."
+}

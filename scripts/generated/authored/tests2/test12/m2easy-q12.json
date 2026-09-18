@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A conveyor guard is shaped as a triangle whose two shorter sides are perpendicular. One of those sides is $5\\sqrt{2}$ centimeters long and the guard's surface is $60$ square centimeters. How long, in centimeters, is the other perpendicular side?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6\\sqrt{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$12\\sqrt{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$24\\sqrt{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "omits the factor of 1/2 in the area formula, dividing 60 rather than 120 by 5 root 2",
+  "C": "drops the radical and divides 120 by 5",
+  "D": "multiplies by root 2 instead of dividing by it when clearing the radical"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $\\frac{1}{2}(5\\sqrt{2})h = 60$ gives $h = \\frac{120}{5\\sqrt{2}} = \\frac{24}{\\sqrt{2}} = 12\\sqrt{2}$.\n\n**The Full Solution:**\nStep 1: The two perpendicular sides are the legs, so the area is $\\frac{1}{2}(5\\sqrt{2})(h) = 60$, where $h$ is the unknown side.\nStep 2: Multiply both sides by $2$ and divide by $5\\sqrt{2}$: $h = \\frac{120}{5\\sqrt{2}} = \\frac{24}{\\sqrt{2}}$.\nStep 3: Rationalize: $\\frac{24}{\\sqrt{2}} \\cdot \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{24\\sqrt{2}}{2} = 12\\sqrt{2}$ centimeters. Check: $5\\sqrt{2} \\cdot 12\\sqrt{2} = 60 \\cdot 2 = 120$, and half of $120$ is $60$ square centimeters. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6\\sqrt{2}$): divides $60$ by $5\\sqrt{2}$ and skips the factor of $2$ that clearing $\\frac{1}{2}$ requires. That triangle would have area $30$ square centimeters.\n* Choice C ($24$): treats the given side as $5$ and computes $\\frac{120}{5}$, dropping the radical entirely.\n* Choice D ($24\\sqrt{2}$): multiplies $\\frac{120}{5} = 24$ by $\\sqrt{2}$ instead of dividing by it, doubling the true length.\n\n**Test Day Takeaway:** For a right triangle the legs are the base and height, so double the area before dividing by the known leg. When a radical lands in the denominator, rationalize and simplify before comparing to the choices."
+}

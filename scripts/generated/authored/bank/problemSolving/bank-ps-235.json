@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-235",
+  "question": "A public health team followed $2{,}400$ adults for four years, recording each adult's self-reported weekly walking time and measured resting heart rate. Adults who reported more walking time had lower average resting heart rates, and the team concluded that walking lowers resting heart rate. Which statement best identifies the flaw in this conclusion?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The sample of $2{,}400$ adults is too small to detect any relationship between the two variables."
+    },
+    {
+      "id": "B",
+      "text": "Resting heart rate should have been recorded in beats per minute rather than as an average."
+    },
+    {
+      "id": "C",
+      "text": "The team should have reported the median resting heart rate instead of the mean."
+    },
+    {
+      "id": "D",
+      "text": "Because the adults were not randomly assigned to amounts of walking, the data cannot establish cause and effect."
+    }
+  ],
+  "distractorNotes": {
+    "A": "faults the sample size, which is large and not the issue",
+    "B": "objects to units, which does not affect the strength of the conclusion",
+    "C": "swaps one summary statistic for another, which does not create causal evidence"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Observational vs Experimental Study**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Walking time was reported, not assigned, so the study is observational and cannot support a causal claim.\n\n**The Full Solution:**\nStep 1: Identify the design. The team recorded what the adults already did; no treatment was assigned.\nStep 2: Adults who walk more may differ systematically in other ways — diet, age, or existing fitness — and any of those could explain the lower heart rates.\nStep 3: The conclusion \"walking lowers resting heart rate\" therefore overreaches, which is exactly the flaw Choice D names. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: $2{,}400$ adults over four years is a large study; sample size is not what blocks the causal claim.\n* Choice B: the unit used to record heart rate has no bearing on whether cause and effect can be inferred.\n* Choice C: choosing the median over the mean changes a summary statistic, not the design.\n\n**Test Day Takeaway:** When asked what is wrong with a causal conclusion, look first for the missing random assignment, not for a problem with the numbers."
+}

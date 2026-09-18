@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-033",
+  "question": "A data set consists of $13$ values and has a median of $62$. The $3$ smallest values in the data set, each of which is less than $62$, are removed. Which of the following must be true about the median of the remaining $10$ values?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It is less than $62$."
+    },
+    {
+      "id": "B",
+      "text": "It is equal to $62$."
+    },
+    {
+      "id": "C",
+      "text": "It is less than or equal to $62$."
+    },
+    {
+      "id": "D",
+      "text": "It is greater than or equal to $62$."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses the direction: dropping small values cannot lower the median.",
+    "B": "assumes the median is unchanged; that happens only if the $8$th and $9$th values both equal $62$, which is not guaranteed.",
+    "C": "allows decreases that are impossible and rules out the increase that typically occurs."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Median After Removal Reasoning**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Removing values from the low end can only push the middle rightward: the new median is the average of the original $8$th and $9$th values, both at least $62$.\n\n**The Full Solution:**\nStep 1: In the ordered list of $13$ values, the median is the $7$th value, so $v_7 = 62$, every value from $v_1$ to $v_6$ is at most $62$, and every value from $v_8$ to $v_{13}$ is at least $62$.\nStep 2: Removing $v_1, v_2, v_3$ leaves the $10$ values $v_4, \\ldots, v_{13}$. The new median is the mean of the $5$th and $6$th of these, which are $v_8$ and $v_9$.\nStep 3: Since $v_8 \\ge 62$ and $v_9 \\ge 62$, their mean is at least $62$. It equals $62$ only if $v_8 = v_9 = 62$, and it exceeds $62$ otherwise, so \"greater than or equal to $62$\" is the only statement that must hold. Check with $\\{50, 51, 52, 60, 60, 61, 62, 63, 64, 70, 71, 72, 73\\}$: after removal the median is $\\frac{63 + 64}{2} = 63.5 \\ge 62$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (less than $62$): reverses the direction: dropping small values cannot lower the median.\n* Choice B (equal to $62$): assumes the median is unchanged; that happens only if the $8$th and $9$th values both equal $62$, which is not guaranteed.\n* Choice C (less than or equal to $62$): allows decreases that are impossible and rules out the increase that typically occurs.\n\n**Test Day Takeaway:** Track positions, not values: after removing $k$ values from one end, locate the new middle position(s) in the original ordered list and use the inequalities the original median guarantees."
+}

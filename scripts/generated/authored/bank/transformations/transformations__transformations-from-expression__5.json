@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A wind-tunnel probe records the pressure difference $f(x)$, in pascals, at distance $x$ centimeters from a model's nose, and $f$ equals $0$ only at $x = -8$ and $x = 12$. A second probe records $y = f(2x)$. At which values of $x$ does the second probe record $0$ pascals?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "At $x = -16$ and $x = 24$."
+  },
+  {
+   "id": "B",
+   "text": "At $x = -10$ and $x = 10$."
+  },
+  {
+   "id": "C",
+   "text": "At $x = -6$ and $x = 14$."
+  },
+  {
+   "id": "D",
+   "text": "At $x = -4$ and $x = 6$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies each distance by 2 instead of dividing",
+  "B": "subtracts 2 from each distance",
+  "C": "adds 2 to each distance"
+ },
+ "correctAnswer": "D",
+ "hint": "The second probe reaches the same two readings, just not at the same distances.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~30s):** $f(2x) = 0$ requires $2x$ to be $-8$ or $12$, so $x$ is $-4$ or $6$.\n\n**The Full Solution:**\nStep 1: The second probe reads zero exactly when $f(2x) = 0$, that is, when $2x$ is one of the two distances where $f$ is zero.\nStep 2: So $2x = -8$ or $2x = 12$.\nStep 3: Dividing each by $2$ gives $x = -4$ and $x = 6$. Check: $f(2(-4)) = f(-8) = 0$ and $f(2(6)) = f(12) = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-16$ and $24$): multiplying each distance by $2$; the doubling happens to the input, so it must be undone by dividing.\n* Choice B ($-10$ and $10$): subtracting $2$ from each distance, treating a factor as a shift.\n* Choice C ($-6$ and $14$): adding $2$ to each distance, again treating a factor as a shift.\n\n**Test Day Takeaway:** A factor inside the function compresses the graph horizontally; solve for the input that reproduces the known value."
+}

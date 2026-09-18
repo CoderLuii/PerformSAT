@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-335",
+  "question": "A warehouse ships boxes in three sizes. The number of medium boxes shipped is $4$ times the number $s$ of small boxes shipped, and the number of large boxes shipped is $15$ fewer than the number of small boxes shipped. If $285$ boxes were shipped in total, how many large boxes were shipped?",
+  "correctAnswer": "35",
+  "explanation": "**SAT Pattern: Word-Problem to Multi-Step Linear**\n\n**The correct answer is $35$.**\n\n**The Fast Way (~20s):** $s + 4s + (s - 15) = 6s - 15 = 285$, so $s = 50$ and large $= 50 - 15 = 35$.\n\n**The Full Solution:**\nStep 1: Write each count in terms of $s$: small $= s$, medium $= 4s$, large $= s - 15$.\nStep 2: Add them: $s + 4s + s - 15 = 6s - 15$. Set equal to the total: $6s - 15 = 285$, so $6s = 300$ and $s = 50$.\nStep 3: The question asks for large boxes: $s - 15 = 35$.\nCheck: $50 + 200 + 35 = 285$. $\\checkmark$\n\n**Common Mistakes:** Reporting $s = 50$ (small boxes) or $4s = 200$ (medium boxes) instead of the large count; writing \"$15$ fewer\" as $s + 15$, which gives $6s + 15 = 285$, $s = 45$, and $60$ large boxes; that total still adds to $285$, so only rereading the phrase catches the sign.\n\n**Test Day Takeaway:** \"Fewer than\" subtracts from the quantity named after it; translate each phrase, total, solve, then answer the specific count requested."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 20,
+ "question": "For one dye vat, the function $g$ gives the mass, in grams, of dye absorbed by a fabric roll after $t$ minutes in the vat, and the function $s$ gives the shade rating of a roll that has absorbed $x$ grams of dye. Which expression represents the shade rating of a roll after $2t$ minutes in the vat?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2s(g(t))$"
+  },
+  {
+   "id": "B",
+   "text": "$s(2g(t))$"
+  },
+  {
+   "id": "C",
+   "text": "$g(s(2t))$"
+  },
+  {
+   "id": "D",
+   "text": "$s(g(2t))$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "doubles the shade rating that comes out instead of doubling the number of minutes that goes in",
+  "B": "doubles the mass of dye absorbed instead of the elapsed time, which is not what 2t minutes means",
+  "C": "composes in the wrong order, feeding minutes into s and a shade rating into g"
+ },
+ "correctAnswer": "D",
+ "choiceOrderNote": "Choices are function expressions rather than numeric values, so they are ordered by where each one misplaces the factor of 2.",
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice D is correct.** Minutes go into $g$ and a mass goes into $s$, so the shade rating at $2t$ minutes is $s(g(2t))$.\n\n**The Fast Way (~30s):** Work inside out: $2t$ minutes gives the mass $g(2t)$, and feeding that mass into $s$ gives $s(g(2t))$.\n\n**The Full Solution:**\nStep 1: Identify each function's input and output. The input of $g$ is a number of minutes and its output is a mass in grams; the input of $s$ is a mass in grams and its output is a shade rating.\nStep 2: The elapsed time is $2t$ minutes, so the mass of dye absorbed at that moment is $g(2t)$ grams.\nStep 3: A shade rating comes from feeding a mass into $s$, so the rating is $s(g(2t))$. Check the units chain: minutes goes into $g$, grams comes out and goes into $s$, a shade rating comes out ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2s(g(t))$): this doubles the output rating. Nothing in the setup makes the rating proportional to time, so doubling the time need not double the rating.\n* Choice B ($s(2g(t))$): this doubles the mass absorbed in $t$ minutes. The question doubles the elapsed time, not the mass.\n* Choice C ($g(s(2t))$): this reverses the order, feeding minutes into $s$ and a shade rating into $g$, which mismatches every input and output.\n\n**Test Day Takeaway:** Compose by matching units: the inner function must output exactly what the outer function accepts, and a change to the time always belongs inside the innermost parentheses."
+}

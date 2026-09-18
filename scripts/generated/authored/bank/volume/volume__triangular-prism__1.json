@@ -1,0 +1,55 @@
+{
+  "id": 1,
+  "question": "A school woodshop cuts ramp blocks from solid maple. Each block is a prism $25$ centimeters long whose cross section is the right triangle shown. What is the volume, in cubic centimeters, of one block?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "sideLabels": [
+        "8 cm",
+        "6 cm",
+        "10 cm"
+      ],
+      "rightAngleVertex": 1
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$24$"
+    },
+    {
+      "id": "B",
+      "text": "$600$"
+    },
+    {
+      "id": "C",
+      "text": "$750$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}200$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops at the area of the triangular cross section, 24 square centimeters",
+    "C": "uses the hypotenuse 10 in place of the leg 8: (1/2)(6)(10)(25) = 750",
+    "D": "omits the factor one half, computing 8 times 6 times 25 = 1200"
+  },
+  "correctAnswer": "B",
+  "hint": "A prism is its cross section repeated along its length, so find that cross section's area before anything else.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** The cross section has area $\\frac{1}{2}(8)(6) = 24$ square centimeters, and a prism's volume is that area times its length: $24 \\cdot 25 = 600$ cubic centimeters.\n\n**The Full Solution:**\nStep 1: The cross section is a right triangle whose legs, the two sides meeting at the right angle, measure $8$ centimeters and $6$ centimeters. The $10$-centimeter side is the hypotenuse.\nStep 2: The area of that triangle is $\\frac{1}{2}(8)(6) = 24$ square centimeters.\nStep 3: A prism's volume is the area of its cross section times its length, so $V = 24 \\cdot 25 = 600$ cubic centimeters. Check: $600 \\div 25 = 24$, returning the cross-sectional area ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($24$): stops at the area of the triangular face, $24$ square centimeters, without extending it along the $25$-centimeter length.\n* Choice C ($750$): uses the hypotenuse in place of a leg, computing $\\frac{1}{2}(6)(10)(25) = 750$.\n* Choice D ($1{,}200$): omits the factor $\\frac{1}{2}$, computing $8 \\cdot 6 \\cdot 25 = 1{,}200$.\n\n**Test Day Takeaway:** For any prism, volume is cross-sectional area times length — and in a right triangle only the two legs, never the hypotenuse, belong in the area formula."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-170",
+  "question": "A data set of $12$ values has a mean of $45$. When $4$ of the values are removed, the mean of the remaining $8$ values is $51$. What is the mean of the $4$ values that were removed?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$33$"
+    },
+    {
+      "id": "C",
+      "text": "$39$"
+    },
+    {
+      "id": "D",
+      "text": "$132$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the difference between the two given means, 51 - 45",
+    "C": "subtracts that difference from the original mean, 45 - 6",
+    "D": "the sum of the four removed values, never divided by 4"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Total of all $12$: $540$. Total of the remaining $8$: $408$. The removed $4$ sum to $132$, so their mean is $\\frac{132}{4} = 33$.\n\n**The Full Solution:**\nStep 1: Original sum $= 12 \\times 45 = 540$.\nStep 2: Remaining sum $= 8 \\times 51 = 408$, so the removed values sum to $540 - 408 = 132$.\nStep 3: Mean of the removed values $= \\frac{132}{4} = 33$. Check: removing values that average $33$, below the old mean of $45$, must raise the mean of what is left, and $51 > 45$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): The difference between the two means, $51 - 45$; means do not subtract to give a third mean.\n* Choice C ($39$): Subtracts that difference from $45$; the actual gap is larger because $4$ values must offset the $6$-point rise of $8$ values ($8 \\times 6 = 48 = 4 \\times 12$).\n* Choice D ($132$): The sum of the removed values, not their mean.\n\n**Test Day Takeaway:** Convert every mean to a total, subtract totals, then divide by the count of the group you are asked about."
+}

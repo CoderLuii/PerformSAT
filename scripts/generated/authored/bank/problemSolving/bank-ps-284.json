@@ -1,0 +1,53 @@
+{
+  "id": "bank-ps-284",
+  "question": "A research group ran a pilot survey and one follow-up survey and has planned a second follow-up survey. All three surveys use the same methodology and the same confidence level, differing only in sample size. The table gives the sample size and the margin of error, in percentage points, for each survey. What is the margin of error, in percentage points, for follow-up survey 2?",
+  "questionTable": {
+    "headers": [
+      "Survey",
+      "Sample size",
+      "Margin of error"
+    ],
+    "rows": [
+      [
+        "Pilot",
+        "400",
+        "6.0"
+      ],
+      [
+        "Follow-up 1",
+        "900",
+        "4.0"
+      ],
+      [
+        "Follow-up 2",
+        "3,600",
+        "?"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.67$"
+    },
+    {
+      "id": "B",
+      "text": "$2.0$"
+    },
+    {
+      "id": "C",
+      "text": "$3.0$"
+    },
+    {
+      "id": "D",
+      "text": "$18.0$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides $6.0$ by the sample-size ratio $9$ instead of by $\\sqrt{9} = 3$",
+    "C": "pairs the pilot's margin of error with follow-up survey 1's sample size",
+    "D": "multiplies by $3$ instead of dividing"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sample Size for Margin Reduction**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** From the pilot to follow-up survey 2, the sample size is multiplied by $\\frac{3600}{400} = 9$, so the margin of error is divided by $\\sqrt{9} = 3$: $\\frac{6.0}{3} = 2.0$.\n\n**The Full Solution:**\nStep 1: Confirm the rule with the two completed surveys. Going from $400$ to $900$ multiplies the sample size by $\\frac{9}{4}$, so the margin of error is divided by $\\sqrt{\\frac{9}{4}} = \\frac{3}{2}$: $6.0 \\div \\frac{3}{2} = 4.0$, matching the table.\nStep 2: Apply the same rule from the pilot to follow-up survey 2: $\\frac{3600}{400} = 9$, and $\\sqrt{9} = 3$, so the margin of error is $\\frac{6.0}{3} = 2.0$ percentage points.\nStep 3: Check from the other completed row: $\\frac{3600}{900} = 4$, $\\sqrt{4} = 2$, and $\\frac{4.0}{2} = 2.0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.67$): $\\frac{6.0}{9}$, dividing by the sample-size ratio without taking its square root.\n* Choice C ($3.0$): $\\frac{6.0}{2}$, which uses the ratio $\\frac{3600}{900} = 4$ and its square root $2$ but keeps the pilot's margin of error, mixing rows.\n* Choice D ($18.0$): $6.0 \\times 3$; multiplying instead of dividing makes the largest sample the least precise.\n\n**Test Day Takeaway:** When a table gives two complete rows, use them to confirm the $\\frac{1}{\\sqrt{n}}$ rule before extending it to the missing entry."
+}

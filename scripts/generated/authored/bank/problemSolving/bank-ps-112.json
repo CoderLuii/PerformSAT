@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-112",
+  "question": "A regional blood center collected $468$ units of whole blood this week, which is $90\\%$ of the number of units the center collected last week. How many units of whole blood did the center collect last week?",
+  "correctAnswer": "520",
+  "explanation": "**SAT Pattern: Reverse-Percent**\n\n**The correct answer is $520$.**\n\n**The Fast Way (~15s):** $468$ is $90\\%$ of last week, so last week the center collected $\\frac{468}{0.9} = 520$ units.\n\n**The Full Solution:**\nStep 1: Translate. If last week the center collected $L$ units, this week is $90\\%$ of that: $0.9L = 468$.\nStep 2: Solve for $L$. $L = \\frac{468}{0.9} = 520$ units.\nStep 3: Check forward. $90\\%$ of $520$ is $468$, and the missing $10\\%$ is $52$ units. ✓\n\n**Common Mistakes:**\n* Computing $468 \\times 0.9 = 421.2$ takes the percent of the wrong quantity.\n* Adding $10\\%$ of this week, $468 \\times 1.1 = 514.8$, applies the percent to the new value instead of the original.\n* Dividing by $0.1$ gives $4{,}680$, which uses the fraction that is missing rather than the fraction that is present.\n\n**Test Day Takeaway:** The phrase \"is $p\\%$ of\" always points at the ORIGINAL. Divide the given value by the decimal form of $p$ to recover it."
+}

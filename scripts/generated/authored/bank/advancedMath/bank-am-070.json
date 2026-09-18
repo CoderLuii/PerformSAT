@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-070",
+  "question": "In the expression $x^2 - 18x + c$, $c$ is a constant. If the expression can be written in the form $(x - d)^2$, where $d$ is a constant, what is the value of $c$?",
+  "correctAnswer": "81",
+  "explanation": "**SAT Pattern: Complete the Square (Find Constant)**\n\n**The correct answer is $81$.**\n\n**The Fast Way (~15s):** Half of $18$ is $9$, and $9^2 = 81$, so $c = 81$ and the expression is $(x - 9)^2$.\n\n**The Full Solution:**\nStep 1: Expand the target form: $(x - d)^2 = x^2 - 2dx + d^2$.\nStep 2: Match the $x$-coefficients: $-2d = -18$, so $d = 9$.\nStep 3: Match the constants: $c = d^2 = 81$. Check: $(x - 9)^2 = x^2 - 18x + 81$. $\\checkmark$\n\n**Common Mistakes:** Reporting $9$, the value of $d$, instead of $d^2$; squaring the whole coefficient without halving it first, $18^2 = 324$; or writing $c = -81$ because the middle term is negative, even though a square is never negative.\n\n**Test Day Takeaway:** To complete the square on $x^2 + bx$, add $\\left(\\frac{b}{2}\\right)^2$. Halve first, then square — the order matters."
+}

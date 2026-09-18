@@ -1,0 +1,45 @@
+{
+ "id": 11,
+ "question": "A grain lot loses mass during drying and again during cleaning, by the percents shown in the table, and $1{,}080$ kilograms remain after both stages. What was the mass of the lot, in kilograms, before drying?",
+ "questionTable": {
+  "headers": [
+   "Stage",
+   "Percent decrease in mass"
+  ],
+  "rows": [
+   [
+    "Drying",
+    "$20\\%$"
+   ],
+   [
+    "Cleaning",
+    "$10\\%$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1{,}200$"
+  },
+  {
+   "id": "B",
+   "text": "$1{,}350$"
+  },
+  {
+   "id": "C",
+   "text": "$1{,}404$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}500$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reverses only the cleaning stage, computing 1,080 / 0.9",
+  "B": "reverses only the drying stage, computing 1,080 / 0.8",
+  "C": "adds the two percents back to the final mass, computing 1,080 x 1.30, instead of dividing"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Two decreases multiply: $0.8 \\times 0.9 = 0.72$, so the original mass is $\\frac{1{,}080}{0.72} = 1{,}500$ kilograms.\n\n**The Full Solution:**\nStep 1: A $20\\%$ decrease leaves $80\\%$, so after drying the lot is $0.8M$, where $M$ is the mass before drying.\nStep 2: A $10\\%$ decrease leaves $90\\%$ of that, so after cleaning the lot is $0.9(0.8M) = 0.72M$, and $0.72M = 1{,}080$.\nStep 3: Divide: $M = \\frac{1{,}080}{0.72} = 1{,}500$ kilograms. Check forward: $1{,}500(0.8) = 1{,}200$ after drying, and $1{,}200(0.9) = 1{,}080$ after cleaning ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1{,}200$): this undoes only the cleaning stage, $\\frac{1{,}080}{0.9}$. It is the mass after drying, an intermediate value, not the starting mass.\n* Choice B ($1{,}350$): this undoes only the drying stage, $\\frac{1{,}080}{0.8}$, leaving the cleaning loss unaccounted for.\n* Choice C ($1{,}404$): this adds $30\\%$ to the final mass, $1{,}080(1.30)$. Percent decreases are undone by dividing, and they do not simply add.\n\n**Test Day Takeaway:** Chain percent changes as a product of multipliers, then divide the final amount by that product — never add the percents and never multiply back up."
+}

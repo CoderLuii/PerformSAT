@@ -1,0 +1,49 @@
+{
+  "question": "A savings deposit of $\\$2{,}500$ grows by $8\\%$ each year, with no withdrawals. The table gives the deposit's balance, in dollars, at the end of each of its first three years. After how many whole years is the balance first greater than $\\$4{,}000$?",
+  "questionTable": {
+    "headers": [
+      "Year",
+      "Balance (dollars)"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$2{,}700.00$"
+      ],
+      [
+        "$2$",
+        "$2{,}916.00$"
+      ],
+      [
+        "$3$",
+        "$3{,}149.28$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$7$"
+    },
+    {
+      "id": "C",
+      "text": "$8$"
+    },
+    {
+      "id": "D",
+      "text": "$20$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stopped at year 6, whose balance 3,967.19 is still below 4,000",
+    "C": "treated the growth as simple interest of 200 dollars per year, solving 200t > 1500",
+    "D": "divided the required growth factor 1.6 by the rate 0.08"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compound Growth Threshold**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Continue multiplying by $1.08$: year $6$ gives $\\$3{,}967.19$ and year $7$ gives $\\$4{,}284.56$, the first balance above $\\$4{,}000$.\n\n**The Full Solution:**\nStep 1: The balance after $t$ years is $2500(1.08)^{t}$, which matches the table: $2500(1.08)^{3}=3{,}149.28$.\nStep 2: Solve $2500(1.08)^{t}>4000$, or $(1.08)^{t}>1.6$.\nStep 3: Testing whole years, $(1.08)^{6}=1.5869$ and $(1.08)^{7}=1.7138$, so the first year that works is $t=7$. Check: $2500(1.08)^{7}=4{,}284.56>4{,}000$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): stops at year $6$, whose balance $\\$3{,}967.19$ is still below $\\$4{,}000$.\n* Choice C ($8$): treats the growth as simple interest of $\\$200$ per year, solving $200t>1500$.\n* Choice D ($20$): divides the required factor $1.6$ by the rate $0.08$.\n\n**Test Day Takeaway:** Threshold questions want the first whole year past the line — check the year before it as well as the year you land on.",
+  "id": "bank-am-051"
+}

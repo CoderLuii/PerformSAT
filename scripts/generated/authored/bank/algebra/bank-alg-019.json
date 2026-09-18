@@ -1,0 +1,49 @@
+{
+  "id": "bank-alg-019",
+  "question": "The table gives the total cost $C$, in dollars, of a catering order for $n$ guests for three values of $n$. The relationship between $n$ and $C$ is linear. Which equation represents this relationship?",
+  "questionTable": {
+    "headers": [
+      "Guests, n",
+      "Total cost, C (dollars)"
+    ],
+    "rows": [
+      [
+        "10",
+        "260"
+      ],
+      [
+        "20",
+        "460"
+      ],
+      [
+        "30",
+        "660"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$C = 20n + 260$"
+    },
+    {
+      "id": "B",
+      "text": "$C = 26n$"
+    },
+    {
+      "id": "C",
+      "text": "$C = 60n + 20$"
+    },
+    {
+      "id": "D",
+      "text": "$C = 20n + 60$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the first cost, 260, as the intercept",
+    "B": "divides 260 by 10 and assumes a proportional relationship",
+    "C": "swaps the slope and the intercept"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Linear Equation from Table**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Each additional $10$ guests adds $200$ dollars, so the slope is $20$ per guest. Then $260 = 20(10) + b$ gives $b = 60$, and $C = 20n + 60$.\n\n**The Full Solution:**\nStep 1: Slope from two rows: $\\frac{460 - 260}{20 - 10} = \\frac{200}{10} = 20$ dollars per guest.\nStep 2: Find the intercept with $C = 20n + b$ and the row $(10, 260)$: $260 = 200 + b$, so $b = 60$.\nStep 3: The equation is $C = 20n + 60$. Check the third row: $20(30) + 60 = 660$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($C = 20n + 260$): has the right slope but takes the first table cost as the intercept, forgetting that it corresponds to $n = 10$, not $n = 0$.\n* Choice B ($C = 26n$): divides $260$ by $10$ and assumes cost is proportional to guests; it fails the second row ($26 \\cdot 20 = 520 \\neq 460$).\n* Choice C ($C = 60n + 20$): swaps the slope and the intercept.\n\n**Test Day Takeaway:** The intercept is the value at input $0$; when the table does not include $0$, back it out by substituting one row into $y = mx + b$, then confirm with another row."
+}

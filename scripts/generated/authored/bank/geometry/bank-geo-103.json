@@ -1,0 +1,54 @@
+{
+ "question": "A sinkhole's rim is modeled in the $xy$-plane by $(x - 9)^2 + (y - 4)^2 = r^2$, and the figure shows the horizontal and vertical offsets, in meters, from the sinkhole's center to a monitoring post on the rim. What is the value of $r^2$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     8,
+     6
+    ]
+   ],
+   "sideLabels": [
+    "8",
+    "6",
+    "r"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10$"
+  },
+  {
+   "id": "B",
+   "text": "$14$"
+  },
+  {
+   "id": "C",
+   "text": "$100$"
+  },
+  {
+   "id": "D",
+   "text": "$196$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports r = 10 instead of r squared",
+  "B": "adds the two offsets, 8 + 6 = 14, instead of using the Pythagorean theorem",
+  "D": "squares the sum of the offsets, (8 + 6) squared = 196"
+ },
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The radius is the hypotenuse of the offset triangle, so $r^2 = 8^2 + 6^2 = 100$.\n\n**The Full Solution:**\nStep 1: The monitoring post sits $8$ meters horizontally and $6$ meters vertically from the center $(9, 4)$, so it is at $(17, 10)$.\nStep 2: In standard form the right side is $r^2$, and $r^2$ equals the squared distance from the center to any rim point: $(17 - 9)^2 + (10 - 4)^2$.\nStep 3: Evaluate: $64 + 36 = 100$, so $r^2 = 100$ and the rim's radius is $10$ meters. Check: $(x - 9)^2 + (y - 4)^2 = 100$ does contain $(17, 10)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($10$): computes the radius correctly but reports $r$ when the question asks for $r^2$.\n* Choice B ($14$): adds the legs, $8 + 6$, treating the offsets as if they lay along one line.\n* Choice D ($196$): squares the sum of the legs, $(8 + 6)^2$, instead of summing the squares.\n\n**Test Day Takeaway:** The right side of standard form is the squared distance from the center — sum the squared offsets, and read the question to see whether it wants $r$ or $r^2$.",
+ "id": "bank-geo-103"
+}

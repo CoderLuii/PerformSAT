@@ -1,41 +1,41 @@
 {
-  "id": 853,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 2,
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Whereas earlier historians of science focused on the famous theorists attached to discoveries, Shapin drew attention to the unnamed assistants and technicians whose hands-on labor was essential to producing those results."
-    },
-    {
-      "id": "B",
-      "text": "Steven Shapin studied the seventeenth-century scientific revolution in England, a period that produced many celebrated discoveries."
-    },
-    {
-      "id": "C",
-      "text": "Shapin argued that the assistants, instrument makers, and technicians of the seventeenth century were rarely named in the published scientific papers of the period, despite the central part they played in the laboratory."
-    },
-    {
-      "id": "D",
-      "text": "The hands-on experimental work of the scientific revolution was carried out largely by assistants, instrument makers, and technicians."
-    }
+ "id": 853,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 2,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Eadweard Muybridge and Étienne-Jules Marey both photographed rapid motion in the late nineteenth century.",
+   "Muybridge lined up a row of cameras, each triggered in sequence as the subject passed.",
+   "Muybridge's method produced a series of separate pictures.",
+   "Marey, a physiologist, used a single camera that exposed the same plate several times in rapid succession.",
+   "Marey's method layered successive instants of a movement onto one overlapping image."
   ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The goal is to draw a contrast, and A sets earlier historians' focus on famous theorists against Shapin's focus on the unnamed workers, naming both sides of the difference. B describes only what Shapin studied, with no contrast; C reports one of his observations but not how his focus departs from earlier work; and D states a claim about who did the labor without mentioning Shapin or the earlier historians he is being compared with.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "For a long time, historians of science studied mainly the famous theorists whose names are attached to discoveries.",
-      "The historian Steven Shapin studied the seventeenth-century scientific revolution in England.",
-      "Shapin drew attention to the assistants, instrument makers, and technicians who did much of the hands-on experimental work.",
-      "These workers were rarely named in the published papers of the period.",
-      "Shapin argued that their invisible labor was essential to producing the results credited to celebrated figures."
-    ],
-    "goal": "The student wants to highlight how Shapin's focus differs from that of earlier historians of science."
+  "goal": "The student wants to emphasize a difference between Muybridge's and Marey's photographic methods."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Whereas Muybridge photographed motion with a row of cameras that produced a sequence of separate pictures, Marey used a single camera that layered successive instants on one plate."
+  },
+  {
+   "id": "B",
+   "text": "Muybridge set up a row of cameras beside a track, each one triggered in turn as his subject passed."
+  },
+  {
+   "id": "C",
+   "text": "Muybridge's sequences of separate pictures proved well suited to public display and lecture tours, while Marey's overlapping single-plate records served the precise measurements that his physiological studies of moving bodies required."
+  },
+  {
+   "id": "D",
+   "text": "Both Muybridge and Marey were drawn to movements that happen too quickly for the human eye to follow."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The goal demands the two methods set against each other, and A does it in one frame: Muybridge's row of cameras yielding a sequence of separate pictures, Marey's single camera layering successive instants on one plate.\n\n**The Full Solution:**\n- Emphasizing a difference requires both photographers' methods in the same sentence, framed as a contrast.\n- Choice A's \"Whereas\" construction pairs the defining features — many cameras, separate images versus one camera, one overlaid plate — exactly as the notes describe them.\n\n**Why the other choices are wrong:**\n- B: It describes only Muybridge's arrangement and never mentions Marey.\n- C: It reports what each man's method suited without stating how the methods themselves differed.\n- D: It emphasizes what the two shared — an interest in motion too fast for the eye — rather than a difference."
 }

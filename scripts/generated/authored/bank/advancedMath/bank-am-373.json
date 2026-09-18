@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-373",
+ "question": "An epidemiologist tracks a ward's inpatient occupancy with $b(t)=240+15t$, where $b(t)$ is the number of occupied beds $t$ months after March. Which statement best interprets the equation $b(-4)=180$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Four months before March, 180 beds were occupied."
+  },
+  {
+   "id": "B",
+   "text": "Four months after March, 180 beds were occupied."
+  },
+  {
+   "id": "C",
+   "text": "In March, 180 fewer beds were occupied than four months earlier."
+  },
+  {
+   "id": "D",
+   "text": "Occupancy fell by 4 beds per month in the months before March."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reads the negative input as months after March instead of before it",
+  "C": "treats the output 180 as a change in occupancy rather than a level",
+  "D": "reads the input -4 as a monthly rate of change instead of a time"
+ },
+ "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The input $-4$ is four months before March, and the output 180 is a bed count, so 180 beds were occupied four months before March.\n\n**The Full Solution:**\nStep 1: The variable $t$ counts months after March, so $t=-4$ names the month four months earlier.\nStep 2: The output of $b$ is the number of occupied beds, not a change in that number.\nStep 3: Therefore $b(-4)=180$ says 180 beds were occupied four months before March. Check: $240+15(-4)=240-60=180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: reads $-4$ as four months after March, reversing the direction of time.\n* Choice C: turns the output into a difference; 180 is a level, and the actual drop from March is 60 beds.\n* Choice D: reads the input $-4$ as a rate; the rate here is the coefficient 15.\n\n**Test Day Takeaway:** In an interpretation question, name the input's units and the output's units before reading the choices."
+}

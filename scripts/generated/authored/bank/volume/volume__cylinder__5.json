@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A cylindrical tank with a radius of $10$ feet holds water to a depth of $9$ feet. All of the water is poured into an empty cylindrical tank with a radius of $5$ feet. To what depth, in feet, does the water rise in the second tank?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2.25$"
+  },
+  {
+   "id": "B",
+   "text": "$4.5$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$36$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales the depth by $\\left(\\frac{5}{10}\\right)^2$, shrinking it instead of growing it",
+  "B": "scales the depth by $\\frac{5}{10}$",
+  "C": "uses the radius ratio $\\frac{10}{5}$ once instead of squaring it"
+ },
+ "correctAnswer": "D",
+ "hint": "The water keeps its volume; only the base area underneath it changes.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~60s):** The water measures $900\\pi$ cubic feet, so $25\\pi h = 900\\pi$ and $h = 36$.\n\n**The Full Solution:**\nStep 1: The water in the first tank has volume $\\pi(10^2)(9) = 900\\pi$ cubic feet.\nStep 2: Pouring changes the shape but not the amount, so $\\pi(5^2)h = 900\\pi$.\nStep 3: Divide by $\\pi$: $25h = 900$, so $h = 36$ feet.\n\nVerification: $\\pi(25)(36) = 900\\pi$, the same volume as before. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.25$): scales the depth by $\\left(\\frac{5}{10}\\right)^2$, shrinking it instead of growing it.\n* Choice B ($4.5$): scales the depth by $\\frac{5}{10}$.\n* Choice C ($18$): uses the radius ratio $\\frac{10}{5}$ once instead of squaring it.\n\n**Test Day Takeaway:** Pouring conserves volume: set the two $\\pi r^2 h$ expressions equal and solve for the unknown depth."
+}

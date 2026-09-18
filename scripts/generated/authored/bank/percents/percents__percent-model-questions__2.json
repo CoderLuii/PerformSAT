@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A saline solution is $8\\%$ salt by mass, and the rest of the solution is water. If the solution contains $276$ grams of water, what is the mass, in grams, of the salt?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$22.08$"
+    },
+    {
+      "id": "B",
+      "text": "$24$"
+    },
+    {
+      "id": "C",
+      "text": "$252$"
+    },
+    {
+      "id": "D",
+      "text": "$300$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes 8 percent of the water",
+    "C": "subtracts salt from water",
+    "D": "reports the total mass"
+  },
+  "correctAnswer": "B",
+  "hint": "The water is $92\\%$ of the whole, so it can be used to recover the total mass first.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** Water is $92\\%$ of the solution, so the total is $276 \\div 0.92 = 300$ grams and the salt is $300 - 276 = 24$ grams.\n\n**The Full Solution:**\nStep 1: Salt is $8\\%$ of the solution by mass, so water is $100\\% - 8\\% = 92\\%$ of it.\nStep 2: Let $m$ be the total mass. Then $0.92m = 276$, so $m = \\frac{276}{0.92} = 300$ grams.\nStep 3: The salt is the rest: $300 - 276 = 24$ grams. Check: $0.08 \\times 300 = 24$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($22.08$): takes $8\\%$ of the WATER mass; the $8\\%$ refers to the whole solution.\n* Choice C ($252$): subtracts the salt mass from the water mass instead of reporting the salt mass.\n* Choice D ($300$): reports the total mass of the solution rather than the mass of the salt.\n\n**Test Day Takeaway:** When a percent is stated for one component, the other component carries the complementary percent — use whichever one is given a number."
+}

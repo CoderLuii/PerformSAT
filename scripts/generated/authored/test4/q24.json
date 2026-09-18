@@ -5,6 +5,8 @@
   "band": 3,
   "domain": "expression-of-ideas",
   "skill": "transitions",
+  "module": 1,
+  "passage": "Medieval scribes had more than one way to repair a slip of the pen. A copyist who caught an error early could scrape the dried ink from the parchment with a knife and write the passage afresh. ______ a corrector could leave the faulty word in place and set a row of dots beneath its letters, a signal to readers that the word should be passed over.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
@@ -25,10 +27,8 @@
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage describes one recycling method (grinding and dissolving with strong acids) and then presents a different method that achieves the same end more gently, so \"Alternatively\" fits. \"Therefore\" (B) would mark a consequence; \"For example\" (C) would introduce an instance of the first method rather than a rival to it; and \"Similarly\" (D) wrongly suggests the two methods are alike rather than contrasting.",
-  "passage": "Recovering the valuable metals from a spent lithium-ion battery is surprisingly difficult, because the metals are bound up in complex compounds and spread across several thin layers. One common method grinds the whole battery into a powder and then dissolves the metals out of it with strong acids. ______ a newer approach uses gentler, water-based solutions and bacteria that draw the metals out of the powder, lowering both the cost and the environmental harm of the process.",
+  "explanation": "**Choice A is correct.** The passage promises \"more than one way\" to fix an error and then gives two: scraping the ink away, or dotting the word for readers to skip. The second is an alternative to the first.\n\n**The Full Solution:**\n- The opening sentence frames a menu of options.\n- Option one: physical erasure with a knife.\n- Option two: leaving the word but marking it to be passed over — a different route to the same end, which \"Alternatively\" introduces.\n\n**Why the other choices are wrong:**\n- B: \"Therefore\" would make the dotting a consequence of the scraping; the two are independent options.\n- C: \"For example\" would make dotting an instance of scraping, but it is a different technique altogether.\n- D: \"Similarly\" notes likeness of manner, yet the two methods work in opposite ways — one removes the word, the other preserves and cancels it.",
   "_meta": {
-    "anchor": "battery chemistry — lithium-ion recycling methods; alternative"
-  },
-  "module": 1
+    "anchor": "scribal error correction — erasure versus expunction; alternative transition"
+  }
 }

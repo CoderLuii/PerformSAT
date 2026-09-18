@@ -1,0 +1,59 @@
+{
+  "id": "bank-ps-088",
+  "question": "A museum plotted the run length, in days, against the recorded attendance, in hundreds of visitors, for each of its $8$ traveling exhibitions, and drew the line of best fit $y = 0.6x + 4$. What is the greatest residual, in hundreds of visitors, among the $8$ plotted exhibitions?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          10,
+          11
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          20,
+          18
+        ],
+        [
+          25,
+          18
+        ],
+        [
+          30,
+          23
+        ],
+        [
+          35,
+          24
+        ],
+        [
+          40,
+          31
+        ],
+        [
+          45,
+          30
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 50,
+      "yMin": 0,
+      "yMax": 36,
+      "xGridStep": 5,
+      "xLabelStep": 10,
+      "yGridStep": 4,
+      "yLabelStep": 8,
+      "xLabel": "Run length (days)",
+      "yLabel": "Attendance (hundreds of visitors)",
+      "bestFitLine": {
+        "slope": 0.6,
+        "intercept": 4
+      }
+    }
+  },
+  "correctAnswer": "3",
+  "explanation": "**SAT Pattern: Residual**\n\n**The correct answer is $3$.**\n\n**The Fast Way (~25s):** The largest gap above the line is at $x = 40$: the line predicts $0.6(40) + 4 = 28$ and the point sits at $31$, so the residual is $3$.\n\n**The Full Solution:**\nStep 1: Look only above the line. The greatest residual is the largest positive gap, so the four points below the line can be set aside.\nStep 2: Test the points above the line. At $x = 10$: predicted $10$, actual $11$, residual $1$. At $x = 20$: predicted $16$, actual $18$, residual $2$. At $x = 30$: predicted $22$, actual $23$, residual $1$. At $x = 40$: predicted $28$, actual $31$, residual $3$.\nStep 3: Confirm the winner. No other point sits more than $2$ hundred visitors above the line, so the greatest residual is $3$. ✓\n\n**Common Mistakes:**\n* Reading the largest attendance, $31$, reports the data value instead of its distance from the line.\n* Taking the largest gap in absolute value would still be $3$ here, but on a plot with a deep point below the line that shortcut fails — the greatest residual must be positive.\n* Using the prediction $28$ answers a different question: that is the modeled attendance, not the residual.\n\n**Test Day Takeaway:** The greatest residual is the point that sits highest ABOVE the line — scan vertically, then compute predicted and actual for the few candidates."
+}

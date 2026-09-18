@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-002",
+ "question": "Solar cells are cut from round silicon wafers. One wafer measures $16$ centimeters from its center to its rim. How much wafer surface, in square centimeters, is available for cells?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$16\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$32\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$128\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$256\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies pi by the radius instead of the radius squared",
+  "B": "gives the circumference 2 pi r = 32 pi",
+  "C": "halves the area, as though the wafer were a semicircle"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Circle Area from Radius**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Center to rim is the radius, so $A=\\pi(16)^{2}=256\\pi$ square centimeters.\n\n**The Full Solution:**\n\nStep 1: Name the given. The distance from the center to the rim is the radius, $r=16$ cm.\n\nStep 2: Apply the area formula. $A=\\pi r^{2}$.\n\nStep 3: Substitute. $A=\\pi(16)^{2}=256\\pi$ square centimeters, about $804$ square centimeters.\n\nCheck: the wafer is $32$ cm across, so it fits inside a $32$-by-$32$ square of area $1024$, and $804$ is a sensible fraction of that.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($16\\pi$): multiplies $\\pi$ by the radius instead of by the radius squared.\n* Choice B ($32\\pi$): gives the circumference $2\\pi r$, a length rather than an area.\n* Choice C ($128\\pi$): halves the area, as though only a semicircular half of the wafer were usable.\n\n**Test Day Takeaway:** \"Center to rim\" is the radius; square it once and the answer follows directly from $\\pi r^{2}$."
+}

@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-140",
+  "question": "The table summarizes the $180$ bicycles in a shop's inventory by frame material and frame size. If one of the large bicycles is selected at random, what is the probability that it has an aluminum frame?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Aluminum",
+        "Steel",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Small",
+          "48",
+          "32",
+          "80"
+        ],
+        [
+          "Large",
+          "75",
+          "25",
+          "100"
+        ],
+        [
+          "Total",
+          "123",
+          "57",
+          "180"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{4}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{5}{12}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{25}{41}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3}{4}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "25/100, the probability of steel given large (the complement)",
+    "B": "75/180, divides by all bicycles instead of the large ones",
+    "C": "75/123, conditions on aluminum instead of large (P(large | aluminum))"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Two-Way Table Conditional Probability**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Restrict to the Large row: $75$ of its $100$ bicycles are aluminum, so the probability is $\\frac{75}{100} = \\frac{3}{4}$.\n\n**The Full Solution:**\nStep 1: \"One of the large bicycles is selected\" means the sample space is the Large row, whose total is $100$.\nStep 2: Within that row, the aluminum count is $75$.\nStep 3: Probability $= \\frac{75}{100} = \\frac{3}{4}$. Check: $\\frac{3}{4}$ of $100$ is $75$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{4}$): This is $\\frac{25}{100}$, the probability that a large bicycle has a steel frame, the complement of what was asked.\n* Choice B ($\\frac{5}{12}$): This is $\\frac{75}{180}$, dividing by the grand total instead of the $100$ large bicycles.\n* Choice C ($\\frac{25}{41}$): This is $\\frac{75}{123}$, conditioning on aluminum instead of large; it answers \"given aluminum, what is the probability of large?\"\n\n**Test Day Takeaway:** The \"given\" group is the denominator; find that row or column total first, then take the matching cell as the numerator."
+}

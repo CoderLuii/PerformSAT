@@ -1,41 +1,41 @@
 {
-  "id": 726,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 1,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Eunice Newton Foote (1819–1888) was an American scientist and an advocate for women’s rights.",
-      "In an 1856 experiment, she filled glass cylinders with different gases and placed them in sunlight.",
-      "She found that a cylinder of carbon dioxide warmed more and stayed warm longer than one of ordinary air.",
-      "From this result, she suggested that an atmosphere with more carbon dioxide would give the Earth a higher temperature.",
-      "Her paper was presented at a scientific meeting in 1856 but attracted little attention for more than a century."
-    ],
-    "goal": "The student wants to explain the significance of Foote’s 1856 finding."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Eunice Newton Foote, an American scientist and advocate for women’s rights, carried out an experiment using glass cylinders filled with different gases in 1856."
-    },
-    {
-      "id": "B",
-      "text": "Foote’s 1856 experiment showed that carbon dioxide traps heat from sunlight, leading her to propose that more of the gas would raise the Earth’s temperature."
-    },
-    {
-      "id": "C",
-      "text": "Foote filled several glass cylinders with different gases and set them out in direct sunlight to compare how much each of them warmed."
-    },
-    {
-      "id": "D",
-      "text": "Foote’s 1856 paper was presented at a scientific meeting that summer but then attracted remarkably little attention for well over a hundred years afterward."
-    }
+ "id": 726,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 1,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "June Almeida (1930-2007) was a Scottish virologist who worked at a London hospital.",
+   "She was an expert in electron microscopy and developed a method that used antibodies to clump virus particles together, making them easier to see.",
+   "In 1966 she examined samples from a patient with a common cold and imaged virus particles ringed by a halo of surface projections.",
+   "The particles matched no known virus family, and the crown-like halo led Almeida and her colleagues to propose the name coronavirus.",
+   "Her images established coronaviruses as a distinct family of viruses that infect humans and animals."
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to explain why Foote's finding mattered, and B states both what she discovered (carbon dioxide traps heat) and the conclusion she drew (more of the gas would warm the Earth), which is the significance of the work. Choice A gives only biographical and procedural detail, Choice C describes the method without its result, and Choice D reports the paper's later neglect rather than the importance of the finding itself."
+  "goal": "The student wants to explain the significance of Almeida's 1966 finding."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "June Almeida, a Scottish virologist working at a London hospital, was an expert in the technique of electron microscopy."
+  },
+  {
+   "id": "B",
+   "text": "Imaging cold-sample virus particles that matched no known family, Almeida identified what became the first recognized human coronavirus, establishing coronaviruses as a distinct viral family."
+  },
+  {
+   "id": "C",
+   "text": "Almeida's method used antibodies to clump virus particles together so that they were easier to see under an electron microscope."
+  },
+  {
+   "id": "D",
+   "text": "Because the virus particles in Almeida's 1966 images were ringed by a distinctive crown-like halo of surface projections, she and her colleagues proposed for the newly recognized group the name coronavirus."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The goal asks why the 1966 finding mattered, and B answers with both the discovery (a virus matching no known family) and its lasting consequence (coronaviruses established as a distinct family) — the significance itself.\n\n**The Full Solution:**\n- Treat the goal as a checklist: state what Almeida found in 1966 AND why it was important.\n- B covers the finding — cold-sample particles matching no known family — and the importance: the first recognized human coronavirus, and a newly established viral family.\n- No other choice connects the observation to what it changed.\n\n**Why the other choices are wrong:**\n- A: It offers biography and expertise, never reaching the 1966 finding at all.\n- C: It explains her imaging method — how she saw viruses, not what the 1966 result meant.\n- D: It relates only the naming anecdote; how the group got its name is not why the finding was significant."
 }

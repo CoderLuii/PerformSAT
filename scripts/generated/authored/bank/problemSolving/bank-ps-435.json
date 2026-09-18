@@ -1,0 +1,50 @@
+{
+  "id": "bank-ps-435",
+  "question": "The table gives four data points $(x,y)$. For these data, a linear model predicts $\\hat{y}=4x-3$. What is the sum of the four values of $y-\\hat{y}$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "1",
+        "3",
+        "6",
+        "9"
+      ],
+      "rows": [
+        [
+          "y",
+          "5",
+          "12",
+          "21",
+          "36"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-10$"
+    },
+    {
+      "id": "B",
+      "text": "$2.5$"
+    },
+    {
+      "id": "C",
+      "text": "$10$"
+    },
+    {
+      "id": "D",
+      "text": "$64$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "computes $\\hat{y}-y$ at each point, reversing every subtraction.",
+    "B": "reports the mean of the four differences instead of their sum.",
+    "D": "adds the four predicted values instead of the four differences."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Residual**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The sum of the differences equals the sum of the observed values minus the sum of the predicted values: $(5+12+21+36)-(1+9+21+33)=74-64=10$.\n\n**The Full Solution:**\nStep 1: Evaluate $\\hat{y}=4x-3$ at each $x$: at $x=1$, $\\hat{y}=1$; at $x=3$, $\\hat{y}=9$; at $x=6$, $\\hat{y}=21$; at $x=9$, $\\hat{y}=33$.\nStep 2: Subtract point by point: $5-1=4$, $12-9=3$, $21-21=0$, and $36-33=3$.\nStep 3: Add the four differences: $4+3+0+3=10$. Check: $74-64=10$, the same total. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-10$): computes $\\hat{y}-y$ at every point, negating each difference.\n* Choice B ($2.5$): divides the correct total by $4$, reporting the average difference.\n* Choice D ($64$): adds the four predicted values and stops.\n\n**Test Day Takeaway:** Summing $y-\\hat{y}$ across points is the same as subtracting the total predicted from the total observed, which saves four separate subtractions."
+}

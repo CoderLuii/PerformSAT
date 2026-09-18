@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
-  "passage": "Most life on Earth depends, directly or indirectly, on energy from sunlight. The giant tube worms that crowd around deep-sea hydrothermal vents are an exception. Living in total darkness, the worms have no mouth and no gut. Instead, a specialized organ packed with bacteria fills much of the body; the bacteria draw energy from chemicals dissolved in the vent fluid and, in return, supply the worm with the organic compounds it needs to grow. The partnership lets dense colonies flourish where no plant could survive.",
-  "question": "According to the text, how do giant tube worms obtain the organic compounds they need?",
+  "passage": "Deep in a fish's inner ear sit the otoliths, small stones of calcium carbonate that grow throughout the animal's life. Their growth is not continuous but rhythmic: material is deposited more quickly by day than by night, producing microscopic bands, one per day, like tree rings compressed to the width of a hair. Counting the bands under a microscope tells a biologist a larval fish's age in days; the width of each band records how fast the fish was growing when that band formed; and chemical traces locked into the stone can reveal the temperature, and even the type of water, the fish passed through.",
+  "question": "According to the text, why do otoliths form daily bands?",
   "choices": [
     {
       "id": "A",
-      "text": "They capture small organisms that drift down from the sunlit waters above the vents."
+      "text": "Because fish alternate between feeding at the surface and resting at depth."
     },
     {
       "id": "B",
-      "text": "They rely on bacteria housed in a specialized organ, which make organic compounds from chemicals in the vent fluid."
+      "text": "Because material is deposited on the stones at different rates by day and by night."
     },
     {
       "id": "C",
-      "text": "They absorb dissolved organic compounds directly through the surface of the body."
+      "text": "Because the temperature of the water surrounding a fish typically rises by day and falls again at night."
     },
     {
       "id": "D",
-      "text": "They migrate toward sunlight during part of their life cycle in order to feed."
+      "text": "Because the stones stop growing entirely whenever a fish stops swimming."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage states that a specialized organ packed with bacteria fills much of the worm's body and that those bacteria, drawing energy from vent chemicals, supply the worm with the organic compounds it needs. Choice B restates that arrangement. Choice A imagines the worms feeding on material falling from sunlit waters, which the text does not describe. Choice C has them absorb compounds directly through the skin, and choice D has them migrate toward sunlight, neither of which the passage supports; the worms live in darkness and depend on their bacteria."
+  "explanation": "**Choice B is correct.** The text states the cause directly: growth \"is not continuous but rhythmic: material is deposited more quickly by day than by night, producing microscopic bands, one per day.\"\n\n**The Full Solution:**\n- The question asks for the stated reason the bands are daily.\n- The colon in the second sentence delivers it — a day-night difference in deposition rate — and B restates that mechanism without addition.\n\n**Why the other choices are wrong:**\n- A: Feeding and resting behavior is never mentioned in the text.\n- C: Temperature appears only as information recoverable from the stone's chemistry, not as the stated cause of banding.\n- D: The text says the otoliths grow throughout life at varying speed; it never claims growth halts when swimming stops."
 }

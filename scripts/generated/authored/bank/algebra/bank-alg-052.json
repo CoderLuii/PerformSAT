@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-052",
+  "question": "A framing shop uses $y$ mats for $x$ photographs, where $y = \\dfrac{x + 3}{3}$, and its material cost in dollars satisfies $2x + ky = 42$, where $k$ is the cost of one mat. If the shop frames $5$ more photographs than mats, what is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$6$"
+    },
+    {
+      "id": "C",
+      "text": "$15$"
+    },
+    {
+      "id": "D",
+      "text": "$24$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "back-substitutes without the denominator, taking y = x + 3 = 12 instead of 4, giving 18 + 12k = 42 and k = 2",
+    "C": "moves 18 across the equal sign without changing its sign, so 4k = 60 and k = 15",
+    "D": "stops at 4k = 24 and reports 24 without dividing by the 4 mats"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Substitution with Fraction**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** \"Five more photographs than mats\" is $x - y = 5$; substituting $y = \\frac{x + 3}{3}$ gives $x = 9$ and $y = 4$, so $18 + 4k = 42$ and $k = 6$.\n\n**The Full Solution:**\nStep 1: Substitute the fraction into the count relationship. From $x - y = 5$ and $y = \\frac{x + 3}{3}$, $x - \\frac{x + 3}{3} = 5$. Multiplying every term by $3$ clears the denominator: $3x - (x + 3) = 15$, so $2x = 18$ and $x = 9$.\nStep 2: Back-substitute to get the second value: $y = \\frac{9 + 3}{3} = \\frac{12}{3} = 4$.\nStep 3: Put both values into the cost equation: $2(9) + k(4) = 42$, so $18 + 4k = 42$, $4k = 24$, and $k = 6$. Check: $9 - 4 = 5$ photographs more than mats, and $2(9) + 6(4) = 18 + 24 = 42$ dollars. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): back-substitutes without the denominator, taking $y = x + 3 = 12$ instead of $4$, which gives $18 + 12k = 42$ and $k = 2$.\n* Choice C ($15$): carries $18$ to the right side without changing its sign, giving $4k = 18 + 42 = 60$ and $k = 15$.\n* Choice D ($24$): stops one step early at $4k = 24$ and reports $24$ instead of dividing by the $4$ mats.\n\n**Test Day Takeaway:** Clear a fractional expression by multiplying the entire equation by its denominator before substituting, then carry BOTH solved values into the equation that holds the unknown constant."
+}

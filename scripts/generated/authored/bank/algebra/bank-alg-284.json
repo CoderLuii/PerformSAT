@@ -1,0 +1,49 @@
+{
+ "question": "Two scripts compute the net change in free space, in gigabytes, after $x$ tape cartridges are retired: one returns $6(2x+k)$ and the other returns $12x-30$, where $k$ is a constant. If the two agree for every $x$, what is the value of $k$?",
+ "questionTable": {
+  "headers": [
+   "Cartridges $x$",
+   "Second script (GB)"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$-18$"
+   ],
+   [
+    "$3$",
+    "$6$"
+   ],
+   [
+    "$6$",
+    "$42$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-36$"
+  },
+  {
+   "id": "B",
+   "text": "$-30$"
+  },
+  {
+   "id": "C",
+   "text": "$-5$"
+  },
+  {
+   "id": "D",
+   "text": "$5$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "subtracts 6 from -30 instead of dividing, giving -36",
+  "B": "matches the constants without dividing by the 6 that multiplies k",
+  "D": "drops the negative sign when dividing -30 by 6"
+ },
+ "explanation": "**SAT Pattern: Identity / Contradiction — Match Coefficients**\n\n**Choice C is correct.** Distributing gives $12x+6k$, so matching constants requires $6k=-30$ and $k=-5$.\n\n**The Fast Way (~30s):** $6(2x+k)=12x+6k$. The $x$ terms already match, so $6k=-30$ and $k=-5$.\n\n**The Full Solution:**\n\nStep 1: Expand the first script's expression: $6(2x+k)=12x+6k$.\n\nStep 2: For the two expressions to agree at every $x$, the coefficients of $x$ must match (they already do, both $12$) and the constants must match: $6k=-30$.\n\nStep 3: Divide both sides by $6$: $k=-5$. Check: with $k=-5$ the first script returns $6(2x-5)=12x-30$, matching the table entries $-18$, $6$, and $42$ at $x=1$, $3$, and $6$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-36$): subtracts the $6$ from $-30$ instead of dividing by it.\n* Choice B ($-30$): sets $k$ equal to the constant on the right without undoing the multiplication by $6$.\n* Choice D ($5$): divides correctly but drops the negative sign.\n\n**Test Day Takeaway:** Distribute first, then match coefficients and constants separately; the constant inside parentheses is still multiplied by the factor outside.",
+ "id": "bank-alg-284"
+}

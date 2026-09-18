@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "A county reported $x$ cases of pertussis in 2022. Reported cases fell by $20\\%$ in 2023 and by another $25\\%$ in 2024, ending at $2{,}100$ cases. What is the value of $x$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2{,}625$"
+  },
+  {
+   "id": "B",
+   "text": "$2{,}800$"
+  },
+  {
+   "id": "C",
+   "text": "$3{,}045$"
+  },
+  {
+   "id": "D",
+   "text": "$3{,}500$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 2,100 by 0.8 only, reversing the first decrease and ignoring the second",
+  "B": "divides 2,100 by 0.75 only, reversing the second decrease and ignoring the first",
+  "C": "adds the two percents to 45% and raises 2,100 by that instead of reversing two separate decreases"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Two decreases multiply: $0.8 \\times 0.75 = 0.6$. Working backward, $x = \\frac{2100}{0.6} = 3500$.\n\n**The Full Solution:**\nStep 1: A $20\\%$ decrease multiplies by $1 - 0.20 = 0.8$; a $25\\%$ decrease multiplies by $1 - 0.25 = 0.75$.\nStep 2: The two years compose, so $0.75(0.8x) = 2100$, which is $0.6x = 2100$.\nStep 3: $x = \\frac{2100}{0.6} = 3500$. Check: $3500 \\times 0.8 = 2800$ in 2023, and $2800 \\times 0.75 = 2100$ in 2024. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2{,}625$): this is $\\frac{2100}{0.8}$, undoing only the $20\\%$ drop. The $25\\%$ drop is never reversed.\n* Choice B ($2{,}800$): this is $\\frac{2100}{0.75}$, the 2023 count, not the 2022 count. It is a real quantity in the problem, which is exactly why it is tempting.\n* Choice C ($3{,}045$): this adds the percents to $45\\%$ and computes $2100 \\times 1.45$. Percent changes multiply, and raising a number by $45\\%$ does not undo a $45\\%$ cut.\n\n**Test Day Takeaway:** Successive percent changes multiply their factors. To run them backward, divide by the product of the factors, never by their sum."
+}

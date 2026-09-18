@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "An electrical contractor installed $50$ conduit brackets, each rated at either $200$ pounds or $500$ pounds, and the installed brackets have a combined rated capacity of $16{,}000$ pounds. How many of the brackets are rated at $500$ pounds?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$20$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$32$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "divides the extra capacity 6,000 by 500 instead of by the 300-pound difference between the two ratings",
+  "C": "solves correctly but reports the number of 200-pound brackets rather than the 500-pound ones",
+  "D": "divides the total capacity 16,000 by 500, ignoring the 200-pound brackets entirely"
+ },
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** If all $50$ brackets were the $200$-pound kind the capacity would be $10{,}000$ pounds. The extra $6{,}000$ pounds comes from swapping in $500$-pound brackets, each swap adding $300$ pounds, so $6{,}000 \\div 300 = 20$ brackets.\n\n**The Full Solution:**\nStep 1: Let $x$ be the number of $200$-pound brackets and $y$ the number of $500$-pound brackets. The two facts give $x + y = 50$ and $200x + 500y = 16{,}000$.\nStep 2: Solve the first equation for $x$, giving $x = 50 - y$, and substitute into the second: $200(50 - y) + 500y = 16{,}000$, so $10{,}000 + 300y = 16{,}000$.\nStep 3: Then $300y = 6{,}000$, so $y = 20$. Check: $x = 30$, and $200(30) + 500(20) = 6{,}000 + 10{,}000 = 16{,}000$ pounds ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): divides the extra $6{,}000$ pounds by $500$ instead of by $300$. Each swap does not add a full $500$ pounds; it adds $500 - 200 = 300$.\n* Choice C ($30$): this is $x$, the number of $200$-pound brackets. The substitution finds $y$ first, and the question asks for the $500$-pound count.\n* Choice D ($32$): comes from $16{,}000 \\div 500$, as if every pound of capacity came from a $500$-pound bracket. That answer also ignores the $50$-bracket total.\n\n**Test Day Takeaway:** With two counts and two totals, substitute the count equation into the value equation — then reread the question to see which of the two unknowns it actually wants."
+}

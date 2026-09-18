@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "Planners describe a circular fountain basin by the equation $x^2 + y^2 - 10x + 24y + 144 = 0$, where $x$ and $y$ are ground distances measured in meters from a survey marker. How many meters long is the radius of the basin?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$25$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reads the 12 inside (y + 12)^2 as the radius",
+  "C": "completes both squares but never subtracts the 144 from the left side, giving the square root of 169",
+  "D": "reports r squared instead of r"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice A is correct.** Completing both squares gives $(x - 5)^2 + (y + 12)^2 = 25$, so the radius is $\\sqrt{25} = 5$ meters.\n\n**The Fast Way (~30s):** Half of $-10$ is $-5$ and half of $24$ is $12$, contributing $25 + 144 = 169$; moving the $144$ across leaves $169 - 144 = 25$, so $r = 5$.\n\n**The Full Solution:**\nStep 1: Group and move the constant: $(x^2 - 10x) + (y^2 + 24y) = -144$.\nStep 2: Complete each square. Add $\\left(\\frac{-10}{2}\\right)^2 = 25$ and $\\left(\\frac{24}{2}\\right)^2 = 144$ to both sides: $(x - 5)^2 + (y + 12)^2 = -144 + 25 + 144 = 25$.\nStep 3: In $(x - h)^2 + (y - k)^2 = r^2$, the right side is $r^2$, so $r^2 = 25$ and $r = 5$ meters. Check the point $(10, -12)$, which is $5$ meters right of the center: $100 + 144 - 100 - 288 + 144 = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($12$): grabs the $12$ from $(y + 12)^2$. That number locates the center's $y$-coordinate at $-12$; it says nothing about the radius.\n* Choice C ($13$): completes both squares but leaves the original $+144$ on the left, so the right side reads $169$ and the square root is $13$. The constant has to move across first.\n* Choice D ($25$): stops at $r^2$. The equation's right side is the square of the radius, so one more square root is needed.\n\n**Test Day Takeaway:** Move the constant first, then add the square of half of each linear coefficient to both sides. The number that survives on the right is $r^2$, never $r$."
+}

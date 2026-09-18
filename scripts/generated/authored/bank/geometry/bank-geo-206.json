@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-206",
+ "question": "On a utility easement map, a triangular gravel pad has corners $(1,2)$, $(9,2)$, and $(4,11)$, with units in meters. How many square meters does the pad cover?",
+ "correctAnswer": "36",
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**The correct answer is $36$.**\n\n**The Fast Way (~30s):** The base runs from $1$ to $9$ at height $2$, so it is $8$; the apex is $9$ above it, giving $\\frac{1}{2}(8)(9)=36$.\n\n**The Full Solution:**\n\nStep 1: Find the base. $(1,2)$ and $(9,2)$ lie on the same horizontal line, so the base is $9-1=8$ meters.\n\nStep 2: Find the height. The apex $(4,11)$ sits $11-2=9$ meters above that line.\n\nStep 3: Apply the formula. Area $=\\frac{1}{2}(8)(9)=36$ square meters.\n\nCheck: the pad is half of an $8$-by-$9$ rectangle, whose area is $72$.\n\n**Common Mistakes:**\n\n* $72$: omits the factor $\\frac{1}{2}$ and reports the surrounding rectangle's area.\n* $44$: uses the apex's $y$-coordinate $11$ as the height instead of the difference $11-2$.\n* $18$: applies the factor $\\frac{1}{2}$ twice, halving the correct area.\n\n**Test Day Takeaway:** Two vertices sharing a $y$-value hand you the base immediately; the height is the third vertex's vertical distance from that line."
+}

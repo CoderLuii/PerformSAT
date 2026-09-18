@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "The function $p$ is defined by $p(x)=x^{2}$. In the $xy$-plane, the graph of $y=p(x)-6$ is the graph of $y=p(x)$ shifted in which of the following ways?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Down $6$ units"
+    },
+    {
+      "id": "B",
+      "text": "Left $6$ units"
+    },
+    {
+      "id": "C",
+      "text": "Right $6$ units"
+    },
+    {
+      "id": "D",
+      "text": "Up $6$ units"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads the outside -6 as a horizontal move",
+    "C": "reads the outside -6 as a shift right",
+    "D": "reverses the sign of an outside constant"
+  },
+  "correctAnswer": "A",
+  "hint": "Decide first whether the $-6$ acts on the input of $p$ or on its output.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** The $-6$ sits outside $p$, so it lowers every output by $6$: the graph slides down $6$.\n\n**The Full Solution:**\nStep 1: In $p(x)-6$ the subtraction happens after $p$ has produced its output, so only $y$-values change.\nStep 2: A point $(a,b)$ on $y=p(x)$ becomes $(a,\\,b-6)$ on $y=p(x)-6$; the $x$-coordinate never moves.\nStep 3: Check with the lowest point: $(0,0)$ on $y=p(x)$ becomes $(0,-6)$, exactly $6$ units lower. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (Left $6$ units): a horizontal move requires a change inside $p$, such as $p(x+6)$; here the $6$ is outside.\n* Choice C (Right $6$ units): right $6$ would be $p(x-6)$ — the subtraction would have to be attached to $x$, not to the output.\n* Choice D (Up $6$ units): the sign is read backwards; outside constants move the graph in the direction of their own sign, so $-6$ means down.\n\n**Test Day Takeaway:** Outside the function, constants act on $y$ and read straight: $+k$ raises the graph, $-k$ lowers it."
+}

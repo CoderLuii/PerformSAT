@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-341",
+  "question": "The table gives the number of yeast cells in a culture at three times after the culture was prepared. The number of cells grows exponentially. Which function $N$ gives the number of yeast cells $t$ hours after the culture was prepared?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Time t (hours)",
+        "Number of yeast cells"
+      ],
+      "rows": [
+        [
+          "0",
+          "40"
+        ],
+        [
+          "1",
+          "120"
+        ],
+        [
+          "2",
+          "360"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$N(t) = 3(40)^t$"
+    },
+    {
+      "id": "B",
+      "text": "$N(t) = 40t^3$"
+    },
+    {
+      "id": "C",
+      "text": "$N(t) = 40 + 80t$"
+    },
+    {
+      "id": "D",
+      "text": "$N(t) = 40(3)^t$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "swaps the initial value and the growth factor",
+    "B": "uses a power function",
+    "C": "models a constant increase"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Build Exponential Model**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The count starts at $40$ and triples each hour ($40 \\to 120 \\to 360$), so $N(t) = 40(3)^t$.\n\n**The Full Solution:**\nStep 1: An exponential model has the form $N(t) = N_0(b)^t$, where $N_0$ is the value at $t = 0$. The table gives $N_0 = 40$.\nStep 2: The growth factor is the ratio of consecutive values: $\\dfrac{120}{40} = 3$ and $\\dfrac{360}{120} = 3$, so $b = 3$.\nStep 3: $N(t) = 40(3)^t$. Check: $N(2) = 40(9) = 360$, matching the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($N(t) = 3(40)^t$): swaps the initial value and the growth factor, giving $N(0) = 3$.\n* Choice B ($N(t) = 40t^3$): uses a power function instead of an exponential one, giving $N(0) = 0$.\n* Choice C ($N(t) = 40 + 80t$): models the first change, $120 - 40 = 80$, as a constant hourly increase, which fails at $t = 2$.\n\n**Test Day Takeaway:** Divide consecutive outputs, not subtract them — a constant RATIO means exponential, a constant DIFFERENCE means linear."
+}

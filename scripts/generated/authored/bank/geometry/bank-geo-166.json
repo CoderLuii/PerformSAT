@@ -1,0 +1,27 @@
+{
+  "id": "bank-geo-166",
+  "question": "Parallel lines $p$ and $q$ are crossed by transversal $r$, forming the two marked angles shown in the figure. What is the value of $x$?",
+  "diagram": {
+    "type": "parallelLines",
+    "params": {
+      "angles": {
+        "top": [
+          "(5x - 4)°",
+          ""
+        ],
+        "bottom": [
+          "",
+          "(3x + 24)°"
+        ]
+      },
+      "lineLabels": [
+        "p",
+        "q",
+        "r"
+      ],
+      "figureNote": true
+    }
+  },
+  "correctAnswer": "20",
+  "explanation": "**SAT Pattern: Angles with Parallel Lines and Transversals**\n\n**The correct answer is $20$.**\n\n**The Fast Way (~30s):** The two marked angles are supplementary, so $(5x - 4) + (3x + 24) = 180$, giving $x = 20$.\n\n**The Full Solution:**\nStep 1: The angle marked $(5x - 4)°$ at line $p$ corresponds to the angle in the matching position at line $q$, so that angle also measures $(5x - 4)°$.\nStep 2: That angle and the angle marked $(3x + 24)°$ form a linear pair at line $q$, so $(5x - 4) + (3x + 24) = 180$, which is $8x + 20 = 180$.\nStep 3: $8x = 160$, so $x = 20$. Check: the angles measure $5(20) - 4 = 96$ and $3(20) + 24 = 84$ degrees, and $96 + 84 = 180$. $\\checkmark$\n\n**Common Mistakes:**\n* Setting the two expressions equal, which gives $2x = 28$ and $x = 14$; that rule fits corresponding or alternate angles, not this pair.\n* Gridding an angle measure ($96$ or $84$) instead of the value of $x$.\n* Setting the sum to $90$, which gives $8x + 20 = 90$ and the non-integer $x = 8.75$.\n\n**Test Day Takeaway:** Two marked angles at parallel lines are either equal or supplementary. Check whether they sit on the same side of the transversal before choosing the equation."
+}

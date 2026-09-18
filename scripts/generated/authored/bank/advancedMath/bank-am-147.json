@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-147",
+ "question": "The hourly throughput of a produce packhouse, in crates, is modeled by $2w^{2}+3w$, where $w$ is the number of sorting lanes running. For how many sorting lanes is the throughput $90$ crates per hour?",
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Quadratic via Factoring**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~40s):** $2w^{2}+3w=90$ becomes $2w^{2}+3w-90=0$, which factors as $(2w+15)(w-6)$; a lane count must be positive, so $w=6$.\n\n**The Full Solution:**\n\nStep 1: Set the model equal to the target: $2w^{2}+3w=90$, so $2w^{2}+3w-90=0$.\n\nStep 2: Factor. The product $2\\cdot(-90)=-180$ needs two numbers summing to $3$: they are $15$ and $-12$, giving $2w^{2}+15w-12w-90=(2w+15)(w-6)$.\n\nStep 3: The factors give $w=-\\frac{15}{2}$ or $w=6$; only $6$ can be a number of lanes. Check: $2(6)^{2}+3(6)=72+18=90$.\n\n**Common Mistakes:**\n\n* Dividing $90$ by the sum of the coefficients, $2+3=5$, gives $18$.\n* Reporting $-\\frac{15}{2}$, the solution from the factor $2w+15$, which cannot count lanes.\n\n**Test Day Takeaway:** With a leading coefficient other than $1$, split the middle term using the product $ac$; then discard any solution the context forbids."
+}

@@ -6,26 +6,26 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 1,
- "passage": "Bioarchaeologist Kristina Killgrove analyzes strontium isotopes in Roman skeletons to trace ancient migration. Tooth enamel forms in childhood and locks in the chemical signature of where a person grew ______ bone remodels throughout life and records the signature of where that person lived as an adult.",
+ "passage": "Biologists seeking clues to limb regeneration keep returning to one animal. The ______ a salamander native to the lake system of Xochimilco in central Mexico, can regrow a severed limb complete with bone, muscle, and nerve, and it retains this ability throughout its life.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "up:"
+   "text": "axolotl"
   },
   {
    "id": "B",
-   "text": "up,"
+   "text": "axolotl,"
   },
   {
    "id": "C",
-   "text": "up;"
+   "text": "axolotl;"
   },
   {
    "id": "D",
-   "text": "up"
+   "text": "axolotl —"
   }
  ],
- "correctAnswer": "C",
- "explanation": "The correct answer is C. The material before the blank—\"Tooth enamel forms in childhood and locks in the chemical signature of where a person grew up\"—is a complete independent clause, and so is the material after it: \"bone remodels throughout life and records the signature of where that person lived as an adult.\" A semicolon is the right mark for joining two closely related independent clauses. A comma alone (B) produces a comma splice; no punctuation at all (D) fuses the two clauses into a run-on; and a colon (A) would signal that what follows explains or itemizes the first clause, which it does not—it states a parallel fact."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** A nonrestrictive appositive must be set off by paired punctuation of the same kind — and this one already closes with a comma, so it must open with one.\n\n**The Full Solution:**\n- \"A salamander native to the lake system of Xochimilco in central Mexico\" is a nonrestrictive appositive renaming \"the axolotl.\"\n- The sentence closes the appositive with a comma before \"can regrow\"; the opening mark must match it.\n\n**Why the other choices are wrong:**\n- A: It leaves the appositive unopened, breaking the pair.\n- C: A semicolon would need an independent clause on each side, and what follows is not one.\n- D: It opens with a dash that is never matched — the appositive closes with a comma, and mixed pairs are not conventional."
 }

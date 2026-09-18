@@ -1,31 +1,31 @@
 {
-  "id": 732,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "A long-standing assumption held that the deep roots of desert shrubs draw water only from the moist soil far below the surface. Researchers studying several shrub species, however, noticed that the plants seemed to thrive even after light rains that wet only the top few centimeters of ground. Measuring the water held inside the plants' tissues, they found a chemical signature matching that shallow rainwater, not the deeper reserves. The shrubs, it turned out, switch between water sources, tapping surface moisture when it is briefly available and deep water when it is not—a flexibility that helps explain how they survive in a landscape of unpredictable rainfall.",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It describes a measurement technique in detail and then lists the various desert shrub species to which that technique has so far been applied."
-    },
-    {
-      "id": "B",
-      "text": "It presents a long-held assumption, describes an observation that ran against it, and then offers a revised account that the evidence supports."
-    },
-    {
-      "id": "C",
-      "text": "It poses a question about desert ecology and then explains at length why that question cannot yet be answered with confidence."
-    },
-    {
-      "id": "D",
-      "text": "It compares two competing research teams and then explains why one team’s particular findings came to be far more widely accepted."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage opens with a long-standing assumption (deep roots draw only deep water), reports an observation that conflicts with it (the shrubs thrive after light surface rains), and then gives a revised account the measurements support (the shrubs switch between water sources). Choice A reduces the passage to technique and a species list. Choice C frames it as an unanswerable question, and Choice D invents a rivalry between two teams that the text never mentions."
+ "id": 732,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "Deep limestone caves were long assumed to be nearly lifeless: without sunlight, the reasoning went, they could support little beyond what washed in from the surface. Surveys of deep passages cut off from surface water complicated that view, finding thick microbial mats coating walls far beyond the reach of light. Chemical analyses then showed the microbes drawing energy from the rock itself, oxidizing the iron, sulfur, and ammonia that seep through the stone. Some cave ecosystems, it now appears, run on chemistry rather than sunlight, and researchers study them as models for how life might persist in other dark environments.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It describes a sampling technique in detail and then lists the cave systems to which the technique has been applied so far."
+  },
+  {
+   "id": "B",
+   "text": "It states a long-held assumption, presents observations that conflicted with it, and offers a revised account supported by further analysis."
+  },
+  {
+   "id": "C",
+   "text": "It poses a question about underground life and explains why current methods cannot yet answer that question with confidence."
+  },
+  {
+   "id": "D",
+   "text": "It summarizes a disagreement between two research teams and explains why one team's interpretation of the evidence eventually prevailed over the other's."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage runs assumption, conflict, revision: caves were assumed nearly lifeless, surveys found flourishing microbial mats beyond light's reach, and chemical analyses grounded the new account — ecosystems running on rock chemistry.\n\n**The Full Solution:**\n- Beat one: the long-held view that lightless caves support little beyond surface wash-in.\n- Beat two: the complicating observations — thick microbial mats in passages cut off from surface water.\n- Beat three: the revised account, supported by analysis showing the microbes oxidize iron, sulfur, and ammonia from the stone, plus the wider implication for life in dark places.\n\n**Why the other choices are wrong:**\n- A: No sampling technique is detailed, and no list of cave systems appears.\n- C: The passage answers its implicit question — the analyses succeed rather than fall short.\n- D: Only one line of research is described; no second team or rival interpretation ever enters."
 }

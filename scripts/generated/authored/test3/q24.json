@@ -5,19 +5,21 @@
  "band": 3,
  "domain": "expression-of-ideas",
  "skill": "transitions",
+ "type": "multiple-choice",
+ "passage": "Highway departments have long fenced roadsides to keep large animals off the pavement, and fencing does reduce collisions. Fences alone, however, seal animals off from the feeding grounds and migration routes that lie on the far side of the road. ______ many transportation agencies now pair fencing with wildlife overpasses and underpasses, which funnel animals toward safe crossing points instead of simply barring their way.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "Therefore,"
+   "text": "In contrast,"
   },
   {
    "id": "B",
-   "text": "For example,"
+   "text": "For instance,"
   },
   {
    "id": "C",
-   "text": "More recently,"
+   "text": "Consequently,"
   },
   {
    "id": "D",
@@ -25,10 +27,8 @@
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C, \"More recently,\". The first sentence describes a long-standing way of telling the history of Abstract Expressionism, centered on a few male painters in New York. The second sentence introduces a revised account in which women such as Lee Krasner and Elaine de Kooning are shown to have been central rather than peripheral. The relation between the older consensus and the newer argument is one of temporal succession, which \"More recently,\" captures. \"Therefore,\" would make the second claim a logical consequence of the first; \"Similarly,\" would treat it as agreeing with the older account; and \"For example,\" would offer it as an instance of that account, when it actually revises it.",
+ "explanation": "**Choice C is correct.** The blank introduces the practical response to the problem just described: because fencing alone cuts animals off from what they need, agencies now combine it with crossings. \"Consequently\" marks exactly that cause-and-effect step.\n\n**The Full Solution:**\n- Sentence two identifies a drawback (fences isolate animals from feeding grounds and migration routes).\n- Sentence three reports what agencies do about it (add overpasses and underpasses). The second development happens because of the first, so the transition must carry consequence.\n\n**Why the other choices are wrong:**\n- A: \"In contrast\" would oppose the two sentences, but the crossings are a remedy for the fences' drawback, not a contrary case.\n- B: \"For instance\" would make the agencies' practice an example of the isolation problem rather than a solution to it.\n- D: \"Similarly\" claims the final sentence parallels the previous one, but the sentences stand in a problem-solution relationship, not a resemblance.",
  "_meta": {
-  "anchor": "Abstract Expressionism historiography; Lee Krasner and Elaine de Kooning; temporal revision"
- },
- "passage": "For much of the twentieth century, histories of Abstract Expressionism centered on a handful of male painters in New York and treated the movement as their achievement alone. ______ art historians have shown that women such as Lee Krasner and Elaine de Kooning were central to the movement's development and its critical debates, not figures added to the story afterward.",
- "type": "multiple-choice"
+  "anchor": "Wildlife overpasses paired with roadside fencing — consequence transition"
+ }
 }

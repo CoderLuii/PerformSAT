@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-109",
+ "question": "For a mural, the function $w$ gives the width, in centimeters, of a stencil at height $x$, where $w(x)=0.5x+14$. An enlarged stencil has width $W(x)=3w(x)$. What is the value of $W(20)$?",
+ "correctAnswer": "72",
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**The correct answer is $72$.**\n\n**The Fast Way (~15s):** $w(20)=24$ centimeters, and tripling gives $3(24)=72$ centimeters.\n\n**The Full Solution:**\nStep 1: Evaluate the original width: $w(20)=0.5(20)+14=10+14=24$.\nStep 2: The enlargement multiplies every width by 3: $W(20)=3w(20)$.\nStep 3: $3(24)=72$ centimeters. Check: $W(x)=1.5x+42$, and $1.5(20)+42=72$ ✓\n\n**Common Mistakes:** Tripling only the variable term gives $1.5(20)+14=44$. Tripling the input instead of the output gives $w(60)=44$. Adding 3 rather than multiplying gives 27.\n\n**Test Day Takeaway:** A vertical stretch multiplies the entire output, constant term included."
+}

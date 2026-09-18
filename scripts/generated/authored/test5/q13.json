@@ -1,34 +1,64 @@
 {
-  "id": 513,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 1,
-  "passage": "Surveys of U.S. adult social media use, conducted by the Pew Research Center across the 2010s, let researchers compare growth across the major platforms in roughly the same population over time. A media-studies student summarizing the published data argues that Facebook's trajectory is best described as a sharp expansion in the early 2010s followed by a near-plateau, distinct from the steadier growth seen at a smaller platform. The student supports the claim with data from the table.\n\nPercentage of U.S. adults who use selected social media platforms (Pew Research Center)\n| Platform   | 2012 | 2016 | 2021 |\n|------------|------|------|------|\n| Facebook   | 54%  | 68%  | 69%  |\n| Instagram  | 13%  | 28%  | 40%  |\n| LinkedIn   | 20%  | 25%  | 28%  |\n| Twitter    | 16%  | 21%  | 23%  |",
-  "question": "Which choice most effectively uses data from the table to support the claim?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Facebook use rose 14 points from 2012 to 2016 (54% to 68%) but only 1 point from 2016 to 2021 (68% to 69%), whereas Instagram rose 12 points (28% to 40%) over that later stretch."
-    },
-    {
-      "id": "B",
-      "text": "Facebook recorded the highest use of any platform in every year shown, beginning at 54% of U.S. adults in 2012 and reaching 69% of U.S. adults by the year 2021."
-    },
-    {
-      "id": "C",
-      "text": "Instagram use more than tripled across the period, rising from 13% of U.S. adults in 2012 to 28% in 2016 and then climbing to 40% of U.S. adults by 2021."
-    },
-    {
-      "id": "D",
-      "text": "LinkedIn and Twitter both grew slowly throughout the period, with LinkedIn moving from 20% to 28% and Twitter moving from 16% to 23% between 2012 and 2021."
-    }
+ "id": 513,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 1,
+ "passage": "Star catalogs record the measured positions of stars on the sky, and their precision depends on the instruments behind them, from open-sighted quadrants to telescopes fitted with finely divided circles and, eventually, to an observatory in space. A student reviewing the history of positional astronomy claims that successive generations of instruments steadily sharpened astronomers' measurements and that the move from ground-based telescopes to a satellite produced by far the largest single improvement.",
+ "questionTable": {
+  "type": "table",
+  "caption": "Typical positional uncertainty of star positions in selected catalogs",
+  "headers": [
+   "Catalog (year)",
+   "Typical uncertainty (arcseconds)"
   ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The student's claim has two parts: Facebook expanded sharply early and then nearly leveled off, and that pattern differs from steadier growth at a smaller platform. Choice A supplies both halves—the 14-point jump from 2012 to 2016 and the 1-point change from 2016 to 2021, set against Instagram's continued 12-point rise in that later interval. Choice B reports Facebook's rank, not the shape of its growth. Choice C describes Instagram's overall increase, which does not bear on Facebook's trajectory. Choice D compares endpoint levels for two platforms but leaves the early-expansion-then-plateau pattern invisible.",
-  "_meta": {
-    "anchor": "Pew Research Center, U.S. adult social-media use 2012-2021"
+  "rows": [
+   [
+    "Tycho Brahe's catalog (1598)",
+    "about 60"
+   ],
+   [
+    "Flamsteed's catalog (1725)",
+    "about 10"
+   ],
+   [
+    "Bradley's observations (1755)",
+    "about 2"
+   ],
+   [
+    "Bessel's catalog (1830)",
+    "about 1"
+   ],
+   [
+    "Hipparcos satellite catalog (1997)",
+    "about 0.001"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to support the claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Uncertainty shrank at every step listed, from about 60 arcseconds in 1598 to about 1 arcsecond by 1830, and then fell by a factor of about a thousand with the Hipparcos satellite catalog."
+  },
+  {
+   "id": "B",
+   "text": "Flamsteed's 1725 catalog, with a typical uncertainty of about 10 arcseconds, was roughly six times as precise as Tycho Brahe's catalog of 1598."
+  },
+  {
+   "id": "C",
+   "text": "The Hipparcos satellite catalog of 1997 achieved a typical positional uncertainty of about 0.001 arcseconds."
+  },
+  {
+   "id": "D",
+   "text": "Between 1598 and 1830, the typical uncertainty of ground-based catalogs improved from about 60 arcseconds to about 1 arcsecond."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The claim has two parts — steady improvement across generations and a largest single leap from the satellite — and A alone documents both: shrinking uncertainty at every listed step, then a thousandfold drop with Hipparcos.\n\n**The Full Solution:**\n- \"Steadily sharpened\" requires the whole sequence, not one pair: A covers the full run from 60 arcseconds to 1 arcsecond across the ground-based catalogs.\n- \"By far the largest single improvement\" requires comparing the satellite step with the earlier ones: A's factor of about a thousand dwarfs the factor-of-60 improvement accumulated over the previous 232 years.\n- Only a choice that cites the trend and the final leap together can support the two-part claim.\n\n**Why the other choices are wrong:**\n- B: It documents a single early improvement, which cannot establish a steady trend or say anything about the satellite.\n- C: It reports the endpoint alone; without earlier values, no improvement of any size is demonstrated.\n- D: It covers the ground-based era but stops at 1830, omitting the satellite leap the claim singles out.",
+ "_meta": {
+  "anchor": "positional-astronomy catalogs — instrument generations shrinking measurement uncertainty"
+ }
 }

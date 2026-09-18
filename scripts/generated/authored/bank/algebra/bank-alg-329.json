@@ -1,0 +1,52 @@
+{
+  "id": "bank-alg-329",
+  "question": "The table shows the total cost, in dollars, of renting a kayak for $1$, $2$, and $3$ hours. The total cost consists of a fixed fee plus a constant hourly rate. If the total cost of a rental was $\\$62$, for how many hours was the kayak rented?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Hours",
+        "Total cost (dollars)"
+      ],
+      "rows": [
+        [
+          "1",
+          "22"
+        ],
+        [
+          "2",
+          "30"
+        ],
+        [
+          "3",
+          "38"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$8$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "used the 2-hour total (30) as the fixed fee: (62 - 30)/8",
+    "B": "used the 1-hour total (22) as the fixed fee: (62 - 22)/8",
+    "D": "divided 62 by the hourly rate and rounded up, ignoring the fee"
+  },
+  "explanation": "**SAT Pattern: Linear Cost Equation Setup**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Each extra hour adds $\\$8$ ($22 \\to 30 \\to 38$), so the fixed fee is $22 - 8 = 14$. Then $14 + 8h = 62$ gives $8h = 48$ and $h = 6$.\n\n**The Full Solution:**\nStep 1: The hourly rate is the change in cost per hour: $30 - 22 = 8$ and $38 - 30 = 8$, so the rate is $\\$8$ per hour.\nStep 2: The fixed fee is what remains after removing one hour's charge from the $1$-hour cost: $22 - 8 = 14$. The model is $C = 14 + 8h$.\nStep 3: Solve $14 + 8h = 62$: $8h = 48$, so $h = 6$.\nCheck: $14 + 8(6) = 14 + 48 = 62$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): treats the $2$-hour total $\\$30$ as the fixed fee and computes $(62 - 30) \\div 8$.\n* Choice B ($5$): treats the $1$-hour total $\\$22$ as the fixed fee; the fee is the cost at ZERO hours, which is $14$.\n* Choice D ($8$): divides $62$ by $8$ to get $7.75$ and rounds up, ignoring the fixed fee entirely.\n\n**Test Day Takeaway:** In a cost table, the fixed fee is the value at zero units, one step BELOW the first row, not the first row itself."
+}

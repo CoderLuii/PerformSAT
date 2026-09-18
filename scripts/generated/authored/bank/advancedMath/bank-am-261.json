@@ -1,0 +1,58 @@
+{
+ "id": "bank-am-261",
+ "question": "The table gives five values of the function $f$, which records a cold-storage bay's temperature deviation in degrees Celsius. A related function is given by $h(x)=-f(x-2)$. At what input does $h$ equal $1$?",
+ "diagram": {
+  "type": "table",
+  "params": {
+   "xHeader": "x",
+   "yHeader": "f(x)",
+   "rows": [
+    [
+     "-2",
+     "3"
+    ],
+    [
+     "0",
+     "-1"
+    ],
+    [
+     "2",
+     "5"
+    ],
+    [
+     "4",
+     "1"
+    ],
+    [
+     "6",
+     "-4"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2$"
+  },
+  {
+   "id": "B",
+   "text": "$0$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "shifts the wrong way, solving -f(x + 2) = 1 to get x = -2",
+  "B": "reports the input 0 where f itself equals -1, without undoing the shift",
+  "D": "ignores the negative sign and solves f(x - 2) = 1, giving x - 2 = 4 and x = 6"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Reflection of Graph**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** $h(x)=1$ means $f(x-2)=-1$, and the table gives $f(0)=-1$, so $x-2=0$ and $x=2$.\n\n**The Full Solution:**\n\nStep 1: Set the rule equal to the target: $-f(x-2)=1$, so $f(x-2)=-1$.\n\nStep 2: Find the input where $f$ takes the value $-1$: the table shows $f(0)=-1$.\n\nStep 3: Solve the inside: $x-2=0$, so $x=2$. Check: $h(2)=-f(2-2)=-f(0)=-(-1)=1$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-2$): shifts in the wrong direction, solving $-f(x+2)=1$.\n* Choice B ($0$): reports the input where $f$ equals $-1$ without undoing the shift.\n* Choice D ($6$): drops the negative sign and solves $f(x-2)=1$, which the table satisfies at $x-2=4$.\n\n**Test Day Takeaway:** Undo the transformations from the outside in: strip the sign first, look up the value, then solve the shifted input."
+}

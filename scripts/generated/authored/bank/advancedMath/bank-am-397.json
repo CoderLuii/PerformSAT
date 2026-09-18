@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-397",
+  "question": "The quadratic function $f$ satisfies the three input-output pairs listed in the table. What is the maximum value of $f(x)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)"
+      ],
+      "rows": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "10"
+        ],
+        [
+          "4",
+          "1"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$2$"
+    },
+    {
+      "id": "C",
+      "text": "$10$"
+    },
+    {
+      "id": "D",
+      "text": "$13$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the repeated output value",
+    "B": "reports the $x$-value of the vertex",
+    "C": "assumes the largest listed output is the maximum"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** $f(0) = f(4)$ puts the vertex at $x = 2$; writing $f(x) = a(x - 2)^2 + k$ and using two rows gives $a = -3$, $k = 13$.\n\n**The Full Solution:**\nStep 1: The outputs at $x = 0$ and $x = 4$ are equal, so by symmetry the axis of the parabola is $x = \\dfrac{0 + 4}{2} = 2$ and $f(x) = a(x - 2)^2 + k$.\nStep 2: Substitute two rows. From $x = 0$: $4a + k = 1$. From $x = 1$: $a + k = 10$.\nStep 3: Subtracting gives $3a = -9$, so $a = -3$ and $k = 13$. Since $a < 0$ the vertex is a maximum, so the maximum value is $13$. Check: $f(0) = -3(4) + 13 = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): reports the repeated output, which locates the axis but is not the peak.\n* Choice B ($2$): reports the $x$-value of the vertex instead of the value of $f$ there.\n* Choice C ($10$): assumes the largest number in the table must be the maximum; the vertex sits between the listed inputs.\n\n**Test Day Takeaway:** Two equal outputs pin the axis of symmetry halfway between them — the maximum lives there, usually at an $x$ the table never lists."
+}

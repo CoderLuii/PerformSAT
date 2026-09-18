@@ -65,6 +65,16 @@ export async function startCheckout(plan) {
     if (data.error === 'past_due') {
       return openBillingPortal();
     }
+    // adopted: the server found a subscription still live on this student's
+    // original Stripe customer (they deleted their account while it was
+    // running, then signed up again) and re-attached it to this account
+    // instead of selling a duplicate. The entitlement doc has already been
+    // written, so useEntitlement's onSnapshot unlocks them on its own — this
+    // is a success, not an error. Nothing to navigate to.
+    if (data.adopted) {
+      log.info('existing subscription re-attached to this account');
+      return null;
+    }
     log.error('checkout session refused (409)', data.error || '');
     throw new Error('You already have an active subscription.');
   }

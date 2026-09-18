@@ -1,34 +1,70 @@
 {
-  "id": 514,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 1,
-  "passage": "The U.S. Centers for Disease Control and Prevention have published time-series estimates of life expectancy at birth for U.S. males and females across the twentieth century. A demographic historian summarizing the data argues that the most striking pattern is not that life expectancy rose for both sexes but that the gap between female and male life expectancy widened for decades and then narrowed—a pattern the historian regards as the table's central feature. The historian supports the claim with data from the table.\n\nU.S. life expectancy at birth (years) and the female-male gap, selected years (CDC NVSR)\n| Year | Male | Female | Female-Male gap |\n|------|------|--------|-----------------|\n| 1900 | 46.3 | 48.3   | 2.0             |\n| 1930 | 58.1 | 61.6   | 3.5             |\n| 1950 | 65.6 | 71.1   | 5.5             |\n| 1970 | 67.1 | 74.7   | 7.6             |\n| 2000 | 74.1 | 79.5   | 5.4             |",
-  "question": "Which choice most effectively uses data from the table to support the claim?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Both male and female life expectancy rose at every step shown in the table, with no decadal value in either column ever lower than the one before it."
-    },
-    {
-      "id": "B",
-      "text": "The female-male gap widened at each step from 1900 to 1970 (2.0, then 3.5, then 5.5, then 7.6) and then narrowed to 5.4 by 2000."
-    },
-    {
-      "id": "C",
-      "text": "Female life expectancy reached its highest value among the years shown in 2000, at 79.5 years, while male life expectancy that same year stood at 74.1 years."
-    },
-    {
-      "id": "D",
-      "text": "Male life expectancy rose by 27.8 years between 1900 (46.3) and 2000 (74.1), the largest absolute increase recorded by any single column in the table."
-    }
+ "id": 514,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 1,
+ "passage": "Rockfall from surrounding peaks can bury a glacier's lower reaches under a blanket of debris, and a layer more than a few centimeters thick insulates the ice beneath it from summer warmth. Comparing glaciers in a single mountain range that have experienced similar warming since 2000, a glaciologist claims that heavy debris cover has slowed the retreat of glacier termini, with lightly covered glaciers pulling back far more than heavily covered ones.",
+ "questionTable": {
+  "type": "table",
+  "caption": "Debris cover and terminus retreat for five glaciers in one mountain range, 2000-2020",
+  "headers": [
+   "Glacier",
+   "Debris-covered area (%)",
+   "Terminus retreat (m)"
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The historian's claim is specifically about the female-male gap: that it widened for most of the century and then narrowed. Choice B tracks the gap across all five years, showing the rise from 2.0 to 7.6 through 1970 and the fall to 5.4 by 2000—exactly the pattern claimed. Choice A reports that both columns rose, which would support a steady-growth reading instead. Choice C gives endpoint levels rather than the gap's trajectory. Choice D reports the male column's total increase, which is true but says nothing about the gap or its reversal.",
-  "_meta": {
-    "anchor": "CDC NVSR; U.S. life expectancy by sex 1900-2000; female-male gap"
+  "rows": [
+   [
+    "A",
+    "2",
+    "640"
+   ],
+   [
+    "B",
+    "5",
+    "590"
+   ],
+   [
+    "C",
+    "38",
+    "220"
+   ],
+   [
+    "D",
+    "51",
+    "180"
+   ],
+   [
+    "E",
+    "64",
+    "150"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to support the claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "All five glaciers retreated between 2000 and 2020, by amounts ranging from 150 to 640 meters."
+  },
+  {
+   "id": "B",
+   "text": "The two glaciers with debris cover of 5% or less retreated 590 meters or more, while the three glaciers with debris cover above 35% each retreated 220 meters or less."
+  },
+  {
+   "id": "C",
+   "text": "Glacier E, with 64% of its area under debris, retreated 150 meters over the two decades."
+  },
+  {
+   "id": "D",
+   "text": "Averaged across the five glaciers, terminus retreat between 2000 and 2020 was slightly more than 350 meters."
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The claim links two variables — debris cover and retreat — and B is the only choice that pairs them, contrasting the heavy retreat of the two lightly covered glaciers with the much smaller retreat of the three heavily covered ones.\n\n**The Full Solution:**\n- Supporting the claim requires showing that retreat differs systematically with debris cover, not merely that retreat occurred.\n- B splits the table along exactly the relevant line: at or below 5% cover, retreat is 590-640 meters; above 35% cover, retreat is 150-220 meters.\n- Because the glaciers shared similar warming, that stark separation is the comparison the glaciologist's claim rests on.\n\n**Why the other choices are wrong:**\n- A: It reports that everything retreated but never touches debris cover, so it cannot connect the two variables.\n- C: It cites one heavily covered glacier; with no lightly covered glacier for contrast, slower retreat cannot be established.\n- D: An average collapses precisely the difference between groups that the claim depends on.",
+ "_meta": {
+  "anchor": "debris-covered glaciers — insulating rock cover slowing terminus retreat"
+ }
 }

@@ -1,0 +1,30 @@
+{
+ "id": 7,
+ "question": "A seed tray's sprout count on day $d$ is $N(d)$, and a tray sown three days later has count $M(d) = N(d - 3)$. The first tray holds $140$ sprouts on day $9$ and on no other day. On which day does the later tray hold $140$ sprouts?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$27$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the length of the delay rather than a day",
+  "B": "computes 9 - 3 instead of 9 + 3",
+  "D": "multiplies 9 by 3"
+ },
+ "correctAnswer": "C",
+ "hint": "Decide which of the two trays reaches a given count first.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~10s):** The later tray repeats each count three days later, so it reaches $140$ sprouts on day $9 + 3 = 12$.\n\n**The Full Solution:**\nStep 1: The later tray's count on day $d$ is $N(d - 3)$, so it holds $140$ sprouts when $N(d - 3) = 140$.\nStep 2: The first tray holds $140$ sprouts on day $9$ and on no other day, so $d - 3 = 9$.\nStep 3: Therefore $d = 12$. Check: $M(12) = N(12 - 3) = N(9) = 140$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reporting the length of the delay instead of the day asked for.\n* Choice B ($6$): computing $9 - 3$; the later tray lags, so its day is larger, not smaller.\n* Choice D ($27$): multiplying $9$ by $3$, treating the delay as a scaling.\n\n**Test Day Takeaway:** Subtracting inside the function delays the graph: solve the inside expression for the known input."
+}

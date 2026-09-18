@@ -1,0 +1,30 @@
+{
+ "id": 16,
+ "question": "A distributed cache grows exponentially, and the table lists how many entries the cache held at four recorded times, measured in hours after the cache was started. According to this growth pattern, how many entries will the cache hold $12$ hours after it was started?",
+ "questionTable": {
+  "headers": [
+   "Time (hours)",
+   "Entries"
+  ],
+  "rows": [
+   [
+    "0",
+    "64"
+   ],
+   [
+    "2",
+    "96"
+   ],
+   [
+    "4",
+    "144"
+   ],
+   [
+    "6",
+    "216"
+   ]
+  ]
+ },
+ "correctAnswer": "729",
+ "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**The correct answer is $729$.**\n\n**The Fast Way (~40s):** Each $2$-hour step multiplies the count by $1.5$. From hour $6$ to hour $12$ there are three more steps, so the count is $216(1.5)^3 = 216(3.375) = 729$.\n\n**The Full Solution:**\nStep 1: Test for a constant ratio between consecutive table entries: $\\frac{96}{64} = 1.5$, $\\frac{144}{96} = 1.5$, and $\\frac{216}{144} = 1.5$. The count is multiplied by $1.5$ every $2$ hours, which confirms exponential growth.\nStep 2: Write the model with the time step built in: $E(t) = 64(1.5)^{t/2}$, where $t$ is in hours. Check it on the table: $E(4) = 64(1.5)^2 = 64(2.25) = 144$ ✓\nStep 3: Evaluate at $t = 12$: $E(12) = 64(1.5)^{6} = 64(11.390625) = 729$. Check by stepping: $216 \\to 324 \\to 486 \\to 729$ covers hours $8$, $10$, and $12$ ✓\n\n**Common Mistakes:**\n* Answering about $8{,}304$: using $64(1.5)^{12}$ treats $1.5$ as an hourly factor. The table shows the factor applies once per $2$ hours, so the exponent is $\\frac{12}{2} = 6$.\n* Answering $432$: adding the last difference repeatedly, $216 + 72 + 72 + 72$, models linear growth. Exponential growth has a constant ratio, not a constant difference.\n* Answering $324$: this is the count at hour $8$, one step past the table. Reaching hour $12$ takes three more steps, not one.\n\n**Test Day Takeaway:** When a table's ratio is constant over an interval longer than one unit, put that interval in the exponent as $t/\\text{interval}$ — that division is where most exponential items are lost."
+}

@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 1,
-  "passage": "Working in the 1920s and 1930s, the archaeologist Julio C. Tello excavated the highland temple complex of Chavin de Huantar ______ one of the oldest ceremonial centers in the Andes, and argued that Peru's later coastal cultures had their roots in the highlands.",
+  "passage": "Because Chappe's optical telegraph depended on each operator reading the arms of the neighboring station through a ______ fog or nightfall could halt a message halfway down the line, leaving it stranded until morning.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Huantar,"
-    },
-    {
-      "id": "B",
-      "text": "Huantar;"
-    },
-    {
-      "id": "C",
-      "text": "Huantar:"
-    },
-    {
-      "id": "D",
-      "text": "Huantar"
-    }
+    { "id": "A", "text": "telescope," },
+    { "id": "B", "text": "telescope" },
+    { "id": "C", "text": "telescope;" },
+    { "id": "D", "text": "telescope:" }
   ],
   "correctAnswer": "A",
-  "explanation": "The phrase after the blank, \"one of the oldest ceremonial centers in the Andes,\" renames Chavin de Huantar and is nonessential, so it is set off with a comma—choice A. A semicolon (B) or colon (C) would wrongly treat the phrase as an independent clause or a formal introduction, and omitting punctuation (D) runs the appositive straight into the name.",
-  "_meta": {
-    "anchor": "Julio C. Tello, Chavin de Huantar"
-  }
+  "explanation": "**Choice A is correct.** The sentence opens with a dependent \"Because...\" clause, and the conventional boundary between an introductory dependent clause and the main clause is a comma.\n\n**The Full Solution:**\n- \"Because Chappe's optical telegraph depended on each operator reading the arms of the neighboring station through a telescope\" cannot stand alone — \"Because\" makes it subordinate.\n- The main clause follows: \"fog or nightfall could halt a message halfway down the line.\"\n- A comma is the mark that joins an introductory subordinate clause to the sentence it modifies.\n\n**Why the other choices are wrong:**\n- B: Omitting the comma runs the long introductory clause straight into the main clause, obscuring where one ends and the other begins.\n- C: A semicolon must separate two independent clauses, and the \"Because\" clause is not independent.\n- D: A colon must follow a complete statement that introduces what comes next; a dependent clause cannot support one."
 }

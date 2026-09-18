@@ -1,0 +1,53 @@
+{
+ "id": 16,
+ "question": "The table gives the measured density of four rock samples collected on one field survey. Based on the table, what is the density of the granite sample, in kilograms per cubic meter? ($1$ meter $= 100$ centimeters)",
+ "questionTable": {
+  "headers": [
+   "Sample",
+   "Density (grams per cubic centimeter)"
+  ],
+  "rows": [
+   [
+    "Basalt",
+    "$2.9$"
+   ],
+   [
+    "Granite",
+    "$2.7$"
+   ],
+   [
+    "Limestone",
+    "$2.4$"
+   ],
+   [
+    "Quartzite",
+    "$2.6$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.0027$"
+  },
+  {
+   "id": "B",
+   "text": "$0.27$"
+  },
+  {
+   "id": "C",
+   "text": "$27$"
+  },
+  {
+   "id": "D",
+   "text": "$2{,}700$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "converts grams to kilograms but leaves the volume in cubic centimeters",
+  "B": "multiplies by 100 once instead of 100 cubed",
+  "C": "squares the length conversion instead of cubing it"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice D is correct.** One cubic meter holds $100^3 = 1{,}000{,}000$ cubic centimeters, so $2.7$ grams per cubic centimeter is $2.7 \\times 1{,}000$ kilograms per cubic meter, or $2{,}700$.\n\n**The Fast Way (~20s):** Grams to kilograms divides by $1{,}000$; cubic centimeters to cubic meters multiplies by $1{,}000{,}000$. Net: multiply by $1{,}000$, giving $2{,}700$.\n\n**The Full Solution:**\nStep 1: Read the granite row: $2.7$ grams per cubic centimeter.\nStep 2: Convert the mass unit: $2.7$ grams $= 0.0027$ kilograms, so the density is $0.0027$ kilograms per cubic centimeter.\nStep 3: Convert the volume unit. Because $1$ meter $= 100$ centimeters, $1$ cubic meter $= 100^3 = 1{,}000{,}000$ cubic centimeters, so $0.0027 \\times 1{,}000{,}000 = 2{,}700$ kilograms per cubic meter. Check the size: water is about $1{,}000$ kilograms per cubic meter, and granite is a bit under three times as dense. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.0027$): converts grams to kilograms and stops, leaving the volume in cubic centimeters. The unit asked for is per cubic meter.\n* Choice B ($0.27$): scales the volume by $100$ rather than by $100^3$, as if a cubic meter were only one hundred cubic centimeters.\n* Choice C ($27$): squares the conversion, using $100^2$. Volume needs three factors of the length conversion, not two.\n\n**Test Day Takeaway:** A length conversion is cubed when it acts on a volume. Multiply by the conversion factor written as a fraction so the unwanted unit cancels three times."
+}

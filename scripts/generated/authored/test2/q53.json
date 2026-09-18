@@ -9,34 +9,34 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "The Antikythera mechanism is an ancient Greek device recovered from a Mediterranean shipwreck in 1901.",
-      "It is generally dated to roughly the second century BCE.",
-      "For decades, its heavily corroded bronze gears left its purpose unclear.",
-      "In the 2000s, researchers used X-ray and CT imaging to reconstruct its internal gearwork.",
-      "The imaging showed that the device could model the motions of the Sun, Moon, and planets and predict eclipses.",
-      "Researchers now describe it as the earliest known analog astronomical calculator."
+      "The Paracas culture flourished on Peru's southern coast between roughly 800 and 100 BCE.",
+      "Paracas embroiderers produced elaborate burial mantles stitched with hundreds of colorful figures.",
+      "In 1927, archaeologists excavated hundreds of mummy bundles wrapped in layered textiles on the Paracas peninsula.",
+      "The mantles survived for two millennia largely because of the desert's extreme dryness.",
+      "Conservators have found that the mantles' dyed fibers are highly sensitive to light, and every exposure causes cumulative, irreversible fading.",
+      "Museums therefore display Paracas textiles only for brief periods at low light, storing them flat in darkness the rest of the time."
     ],
-    "goal": "The student wants to explain what recent imaging revealed about the Antikythera mechanism's purpose."
+    "goal": "The student wants to explain to museum visitors why a Paracas mantle they hope to see may not be on display."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Recovered from a Mediterranean shipwreck in 1901, the Antikythera mechanism is an ancient Greek device generally dated to roughly the second century BCE."
+      "text": "Paracas embroiderers of Peru's southern coast, working between roughly 800 and 100 BCE, stitched elaborate burial mantles with hundreds of colorful figures, and the coastal desert's extreme dryness preserved many of the buried mantles for two millennia."
     },
     {
       "id": "B",
-      "text": "For decades after it was recovered from the shipwreck, the Antikythera mechanism's heavily corroded bronze gears left its original purpose unclear to researchers."
+      "text": "In 1927, archaeologists excavated hundreds of mummy bundles wrapped in layered textiles on the Paracas peninsula of Peru's southern coast."
     },
     {
       "id": "C",
-      "text": "Ancient Greek astronomers of the second century BCE were already able to predict eclipses and to model the motions of the Sun, the Moon, and the planets."
+      "text": "Museums that hold Paracas textiles store the ancient mantles flat in darkness whenever the textiles are not out on public display."
     },
     {
       "id": "D",
-      "text": "Using X-ray and CT imaging, researchers reconstructed the Antikythera mechanism's gearwork and found that it could model the motions of the Sun, Moon, and planets and predict eclipses—identifying it as the earliest known analog astronomical calculator."
+      "text": "Because every exposure to light causes cumulative, irreversible fading of their dyed fibers, Paracas mantles are displayed only briefly at low light and otherwise rest in darkness — so the mantle a visitor hopes to see may well be off view."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The goal is to explain what the imaging revealed about the device's purpose, and D does exactly that: it names the X-ray and CT imaging, reports what the reconstruction showed the mechanism could do, and states the resulting identification of its purpose. Choice A gives only background about where and when the device was found. Choice B describes the problem the imaging eventually solved, not what the imaging revealed. Choice C generalizes about ancient astronomers without mentioning the mechanism or the imaging, so it does not address the device's purpose at all."
+  "explanation": "**Choice D is correct.** The goal is to explain an absence to visitors, and D delivers the full explanation: the cause (cumulative, irreversible light damage), the resulting policy (brief, low-light display), and the consequence the visitor actually experiences (the mantle may be off view).\n\n**The Full Solution:**\n- The goal's key demand is the \"why\": a visitor must understand the reason a mantle is absent, not merely that absences occur.\n- Choice D chains the notes' logic — light sensitivity causes fading, fading dictates rotation and dark storage, rotation means the mantle may be resting — landing exactly on the visitor's situation.\n\n**Why the other choices are wrong:**\n- A: It offers history and preservation background but never touches display practices, so the visitor's question — why isn't it out? — goes unanswered.\n- B: The 1927 excavation explains where the mantles came from, not why museums withhold them from view.\n- C: It states the storage practice without the reason for it; a visitor learns what museums do but not the light-damage rationale the goal requires."
 }

@@ -5,30 +5,66 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
+  "module": 2,
+  "passage": "A media historian claims that the American broadcasting boom of the 1920s had two distinct phases: the number of licensed stations exploded within a single year and then stopped growing, while the audience kept expanding steadily, with the share of households owning a radio rising throughout the decade.",
+  "questionTable": {
+    "type": "table",
+    "caption": "Licensed broadcast stations and household radio ownership in the United States, 1921-1930",
+    "headers": [
+      "Year",
+      "Licensed stations",
+      "Households with a radio (%)"
+    ],
+    "rows": [
+      [
+        "1921",
+        "28",
+        "0.5"
+      ],
+      [
+        "1922",
+        "570",
+        "6"
+      ],
+      [
+        "1924",
+        "535",
+        "16"
+      ],
+      [
+        "1927",
+        "681",
+        "26"
+      ],
+      [
+        "1930",
+        "618",
+        "46"
+      ]
+    ]
+  },
   "question": "Which choice most effectively uses data from the table to support the claim?",
   "choices": [
     {
       "id": "A",
-      "text": "The 1980-1999 anomaly of 0.30 °C is higher than the 1960-1979 anomaly of -0.01 °C, supporting the claim that recent decades have been the warmest in the record."
+      "text": "The number of licensed stations reached its highest level in 1927, when 681 stations held licenses, and it had fallen back somewhat by 1930."
     },
     {
       "id": "B",
-      "text": "The 2000-2019 anomaly of 0.78 °C is the highest of the seven periods, and each period shown is warmer than the one immediately before it."
+      "text": "The share of households with a radio grew from 0.5% in 1921 to 46% by 1930, rising in every interval shown in the table."
     },
     {
       "id": "C",
-      "text": "The 1880-1899 anomaly of -0.21 °C is colder than the 1900-1919 anomaly of -0.24 °C, indicating that the earliest period was the coldest shown."
+      "text": "In 1922 there were 570 licensed stations on the air, but only 6% of the nation's households owned a radio in that year."
     },
     {
       "id": "D",
-      "text": "The 2000-2019 anomaly of 0.78 °C is the highest of the seven periods, yet the 1960-1979 value of -0.01 °C is lower than the 1940-1959 value of 0.02 °C, so the warming did not rise steadily from one period to the next."
+      "text": "After leaping from 28 in 1921 to 570 in 1922, the number of licensed stations never rose above 681, while the share of households with a radio climbed in every interval shown, from 0.5% to 46%."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The claim has two parts — the two most recent decades are the warmest shown, and the warming did not rise steadily from one period to the next — and choice D supports both: 2000–2019 is the highest at 0.78 °C, while the 1960–1979 value (-0.01 °C) is lower than the 1940–1959 value (0.02 °C), a dip in the rise. Choice B asserts a steady rise that the table contradicts; choice A supports only the recent peak; and choice C misreads which early period was coldest and ignores the recent peak.",
-  "passage": "A climate writer studying a record of global temperatures wants to make a two-part point: the two most recent decades in the record are the warmest of the seven periods shown, but the warming did not increase steadily from each period to the next. To support the claim using the table below, the writer needs one value showing the recent peak and one pair of neighboring values where the temperature dipped rather than rose.\n\nGlobal land-ocean temperature anomaly (°C) relative to 1951-1980 baseline, 20-year averages (NASA GISTEMP v4)\n| Period      | Anomaly (°C) |\n|-------------|--------------|\n| 1880-1899   | -0.21        |\n| 1900-1919   | -0.24        |\n| 1920-1939   | -0.06        |\n| 1940-1959   | 0.02         |\n| 1960-1979   | -0.01        |\n| 1980-1999   | 0.30         |\n| 2000-2019   | 0.78         |",
+  "explanation": "**Choice D is correct.** The claim describes two phases moving differently — stations exploding then plateauing, audience rising throughout — and D documents both: the one-year leap, the ceiling near 681, and the uninterrupted climb in ownership.\n\n**The Full Solution:**\n- Phase one: stations jump from 28 to 570 within a single year, then oscillate without exceeding 681 — explosion followed by plateau.\n- Phase two: household ownership rises in every interval, 0.5% to 46% — the steady audience growth.\n- Only a choice tracing both series across the decade can support the two-phase claim.\n\n**Why the other choices are wrong:**\n- A: It covers only the station plateau's peak and dip, saying nothing about the audience.\n- B: It covers only the audience and says nothing about the stations' explosive-then-flat pattern.\n- C: A single year's mismatch between stations and ownership illustrates neither trend.",
   "_meta": {
-    "anchor": "NASA GISTEMP v4 — 20-year temperature anomalies; dataset qd-006; jargon removed"
-  },
-  "module": 2
+    "anchor": "1920s broadcasting boom — station plateau versus rising household ownership; original compiled table"
+  }
 }

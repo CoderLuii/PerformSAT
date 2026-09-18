@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-412",
+ "question": "A traffic-count audit at an intersection reports two hourly deviations, in percent, satisfying $|2x - 9| = k$ for a positive constant $k$, and the larger deviation is $4$ times the smaller one. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.8$"
+  },
+  {
+   "id": "B",
+   "text": "$2.25$"
+  },
+  {
+   "id": "C",
+   "text": "$5.4$"
+  },
+  {
+   "id": "D",
+   "text": "$7.2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the smaller deviation instead of k",
+  "B": "divides 9 by 4, applying the ratio to the constant inside the bars",
+  "D": "reports the larger deviation instead of k"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The deviations are $\\frac{9 \\pm k}{2}$; setting $9 + k = 4(9 - k)$ gives $5k = 27$ and $k = 5.4$.\n\n**The Full Solution:**\nStep 1: Split the equation: $2x - 9 = k$ gives $x = \\frac{9 + k}{2}$, and $2x - 9 = -k$ gives $x = \\frac{9 - k}{2}$, the larger and smaller deviations respectively.\nStep 2: The larger is $4$ times the smaller, so $\\frac{9 + k}{2} = 4 \\cdot \\frac{9 - k}{2}$, which reduces to $9 + k = 36 - 4k$.\nStep 3: Then $5k = 27$ and $k = 5.4$. Check: the deviations are $\\frac{14.4}{2} = 7.2$ and $\\frac{3.6}{2} = 1.8$, and $4(1.8) = 7.2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.8$): reports the smaller deviation rather than the constant $k$.\n* Choice B ($2.25$): divides $9$ by $4$, applying the ratio to the constant inside the bars instead of to the two solutions.\n* Choice D ($7.2$): reports the larger deviation rather than the constant $k$.\n\n**Test Day Takeaway:** Write both branches in terms of the unknown constant before imposing a relationship between the solutions."
+}

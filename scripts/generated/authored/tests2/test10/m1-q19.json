@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "A photometer converts a raw count $x$ to $g(x) = 2x + k$ for a negative constant $k$, and a calibration step then applies $f(u) = u^2 - 3$. The calibrated value of a raw count of 1 is 46. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-9$"
+  },
+  {
+   "id": "B",
+   "text": "$-7$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves 2 + k = -7 and then reports -7 instead of subtracting 2 to get k",
+  "C": "takes only the positive square root, 2 + k = 7, ignoring that k is negative",
+  "D": "applies the two functions in the wrong order, solving g(f(1)) = 46"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice A is correct.** The calibrated value is $f(g(1))$. Since $g(1) = 2 + k$, the equation is $(2 + k)^2 - 3 = 46$, so $(2 + k)^2 = 49$ and $2 + k = \\pm 7$. Because $k$ is negative, $2 + k = -7$ and $k = -9$.\n\n**The Fast Way (~35s):** $(2 + k)^2 = 49$ gives $k = 5$ or $k = -9$; only $-9$ is negative.\n\n**The Full Solution:**\nStep 1: Evaluate the inner function at the raw count: $g(1) = 2(1) + k = 2 + k$.\nStep 2: Feed that into the outer function and set it equal to $46$: $(2 + k)^2 - 3 = 46$, so $(2 + k)^2 = 49$.\nStep 3: Take both square roots: $2 + k = 7$ gives $k = 5$, and $2 + k = -7$ gives $k = -9$. The constant is negative, so $k = -9$. Check: $g(1) = 2 - 9 = -7$ and $f(-7) = 49 - 3 = 46$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-7$): solves $2 + k = -7$ correctly but reports $-7$, which is the value of $g(1)$, not of $k$.\n* Choice C ($5$): keeps only the positive square root. It satisfies the equation, but the problem states that $k$ is negative.\n* Choice D ($50$): composes in the wrong order, computing $g(f(1))$: $f(1) = -2$, then $-4 + k = 46$ gives $k = 50$.\n\n**Test Day Takeaway:** Squaring produces two branches — list both, then let the stated restriction on the constant choose between them."
+}

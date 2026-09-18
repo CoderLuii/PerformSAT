@@ -24,7 +24,7 @@ import { hasQuestionsForSection, getSectionsWithQuestions } from '../data/questi
 import { getTargetedWeaknessSet as bankTargetedWeaknessSet, getQuestionsBySkillIds as bankQuestionsBySkillIds } from '../data/questions/bank';
 import { DEFAULT_GOAL_SCORE } from './selectors/goalProgress';
 import { getSkillById, skillTaxonomy } from '../data/skillTaxonomy';
-import { ERROR_TYPES, ERROR_TYPE_LABELS, ERROR_TYPE_ICONS } from './diagnosticEngine';
+import { ERROR_TYPES } from './diagnosticEngine';
 import { generatePracticeAssignments, buildAdaptiveQueueSeed, buildStrengthFocusAssignments, serializeAdaptiveState, createAdaptiveSessionState } from './practiceAssignmentService';
 // SKILL_ALIAS_MAP from aliases.js (pure constants, Stage 2a bundle split);
 // resolveQuestionById (practiceAssignmentService) dispatches by id namespace
@@ -34,11 +34,14 @@ import { resolveQuestionById } from './practiceAssignmentService';
 import { getSkillSection } from '../data/questions/rwBank/taxonomy';
 // Shared with the read-time legacy-plan upgrade (useProgress) so generated
 // and upgraded activities have one shape. planFormatUpgrade is corpus-free.
-import { buildSkillDrillActivity, PLAN_FORMAT_VERSION } from './planFormatUpgrade';
+import { buildSkillDrillActivity, buildBecauseLine, PLAN_FORMAT_VERSION } from './planFormatUpgrade';
 import { parseLocalDate } from '../utils/localDate';
 // Display-band mapping shared with the plan editor's setPacing so a
 // user-minutes override keeps intensity/label/minutes mutually consistent.
 import { intensityForMinutes } from './studyPlanEditor';
+// Schedule truth: the per-day minutes map derived from what onboarding actually
+// collected (days/week, study window, session length) or the student's edit.
+import { deriveSchedule, scheduledDayNames, testDayFor, weeklyMinutes } from './studySchedule';
 
 // R&W domain weights for gap priority — the math side reads
 // skillTaxonomy.domains[..].satWeight; the R&W taxonomy has no weight field.
@@ -70,11 +73,13 @@ const INTENSITY_LEVELS = {
 // signal to confidently schedule 10 weeks — and a 10-week wall reads as noise.
 const INITIAL_PLAN_WEEKS = 2;
 
-// A focused full plan runs 4-5 weeks, not a 10-week wall. Short cycles that
-// regenerate from each new test beat a long static schedule the student stops
-// trusting — a 10-week plan reads as noise and most of it goes stale before
-// they reach it. The first plan stays shorter still (INITIAL_PLAN_WEEKS).
-const MAX_PLAN_WEEKS = 5;
+// The plan arc now spans the student's real runway (capped here). Near weeks
+// are fully scheduled from the activity pool; far weeks render as themed
+// outlines ("Sessions unlock as you go") and fill in as each regeneration
+// approaches them — so a 10-week runway reads as a 10-week arc, not a wall of
+// stale detail. The first plan stays short (INITIAL_PLAN_WEEKS) because one
+// test is too little signal to schedule months.
+const MAX_PLAN_WEEKS = 12;
 
 // Approximate time for different activity types (in minutes)
 const ACTIVITY_DURATIONS = {
@@ -118,9 +123,6 @@ const buildSkillToModuleMap = () => {
 
 const SKILL_TO_MODULE_MAP = buildSkillToModuleMap();
 
-// Day names for the weekly schedule
-const DAY_NAMES = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-
 // ═══════════════════════════════════════════════════════════════════════════
 // MAIN STUDY PLAN GENERATOR
 // ═══════════════════════════════════════════════════════════════════════════
@@ -132,10 +134,9 @@ function computeDifficultyMix(difficultyAnalysis) {
   if (!difficultyAnalysis?.levels) {
     return { easy: 0.30, medium: 0.45, hard: 0.25 };
   }
-  const { easy, medium, hard } = difficultyAnalysis.levels;
+  const { easy, medium } = difficultyAnalysis.levels;
   const easyAcc = easy?.accuracy ?? 70;
   const medAcc = medium?.accuracy ?? 50;
-  const hardAcc = hard?.accuracy ?? 30;
   const cliff = difficultyAnalysis.difficultyCliff;
 
   if (cliff === 'easy' || easyAcc < 60) {
@@ -266,10 +267,37 @@ export const generateStudyPlan = (diagnostic, userProfile = {}, completedLessons
     intensityConfig = { ...INTENSITY_LEVELS[intensity], minutesPerDay: userMinutes };
   }
 
-  const minutesPerWeek = intensityConfig.minutesPerDay * intensityConfig.daysPerWeek;
+  // ═══ Weekly schedule: which days, how many minutes each ═══
+  // Derived from the profile (studyDaysPerWeek promise, weekend window,
+  // session length) or reused verbatim from a student edit. The generator
+  // schedules ONLY onto these days from here on.
+  const schedule = deriveSchedule(userProfile, intensityConfig, userPrefs);
+  // Keep the displayed daysPerWeek honest — it previously came from the
+  // intensity band even when the student said 3 days.
+  intensityConfig = { ...intensityConfig, daysPerWeek: scheduledDayNames(schedule).length };
+  const minutesPerWeek = weeklyMinutes(schedule) || intensityConfig.minutesPerDay * intensityConfig.daysPerWeek;
+
+  // ═══ Replay the edits ledger: student intent survives regeneration ═══
+  // A skill the student explicitly removed/de-focused stays suppressed —
+  // UNLESS the newest test shows it regressed meaningfully below where it
+  // stood when they removed it (then the evidence outranks the edit and it
+  // resurfaces). Custom tasks are re-added after distribution below.
+  const planEdits = Array.isArray(previousPlan?.planEdits) ? previousPlan.planEdits : [];
+  const suppressedSkills = new Map();
+  planEdits.forEach((e) => {
+    if ((e.type === 'remove' || e.type === 'defocus') && e.skillId) {
+      suppressedSkills.set(e.skillId, e);
+    }
+  });
 
   // ═══ Gather all skill gaps from the diagnostic ═══
-  const skillGaps = gatherSkillGaps(diagnostic);
+  const skillGaps = gatherSkillGaps(diagnostic).filter((g) => {
+    const edit = suppressedSkills.get(g.skillId);
+    if (!edit) return true;
+    const base = Number.isFinite(edit.accuracyAtEdit) ? edit.accuracyAtEdit : 100;
+    const regressed = Number.isFinite(g.testAccuracy) && g.testAccuracy <= base - 15;
+    return regressed;
+  });
 
   // ═══ Map skill gaps to specific curriculum activities ═══
   const activities = mapGapsToActivities(skillGaps, completedLessons, practiceProgress, diagnostic);
@@ -278,6 +306,22 @@ export const generateStudyPlan = (diagnostic, userProfile = {}, completedLessons
   const strategyActivities = generateStrategyActivities(diagnostic);
 
   // ═══ Distribute activities across weeks ═══
+  // ═══ Gap-aware mix: a 200-point climb and a 40-point polish are different
+  // plans, not different intensities of the same plan ═══
+  // Large gap: protect strengths with short maintenance sets so they don't
+  // decay while every session attacks weaknesses.
+  if (scoreGap !== null && scoreGap > 150) {
+    (diagnostic.skillAnalysis?.strongSkills || []).slice(0, 2).forEach((s) => {
+      if (!s?.skillId) return;
+      activities.push({
+        ...buildSkillDrillActivity({ skillId: s.skillId, skillName: s.name, section: s.section, priority: 30 }),
+        title: `Keep sharp: ${s.name || s.skillId}`,
+        subtitle: 'Maintenance set — protect a strength while the plan rebuilds weaknesses',
+        because: "You're strong here — one short set keeps it that way during a big climb.",
+      });
+    });
+  }
+
   const weeklyPlan = distributeAcrossWeeks(
     activities,
     strategyActivities,
@@ -286,8 +330,34 @@ export const generateStudyPlan = (diagnostic, userProfile = {}, completedLessons
     diagnostic,
     previousPlan,
     longitudinal,
-    isFirstPlan
+    isFirstPlan,
+    schedule,
+    scoreGap,
+    DAY_ORDER[(new Date().getDay() + 6) % 7] // JS Sunday-first → Monday-first
   );
+
+  // ═══ Replay custom tasks from the ledger into the fresh plan ═══
+  // Their ledger entries survive (carried onto the new plan below), so a task
+  // the student wrote keeps coming back until they remove it.
+  const customEdits = planEdits.filter((e) => e.type === 'custom' && e.task?.title);
+  if (customEdits.length > 0 && weeklyPlan[0]) {
+    const firstDay = scheduledDayNames(schedule)[0] || 'Monday';
+    customEdits.forEach((e) => {
+      weeklyPlan[0].activities.push({
+        type: 'custom',
+        activityType: 'customTask',
+        title: e.task.title,
+        subtitle: 'Your task',
+        duration: Number.isFinite(e.task.duration) ? e.task.duration : 20,
+        priority: 0,
+        day: e.task.day || firstDay,
+        weekPhase: 'mid',
+        ...(e.task.section === 'rw' ? { section: 'rw' } : {}),
+        custom: true,
+        userEdited: true,
+      });
+    });
+  }
 
   // ═══ Generate the executive summary ═══
   const summary = generatePlanSummary(
@@ -308,6 +378,20 @@ export const generateStudyPlan = (diagnostic, userProfile = {}, completedLessons
   // instead of resurrecting those generators (see git history).
 
   const nextAction = deriveSignalAwareNextAction(weeklyPlan, diagnostic);
+
+  // ═══ Journey arc (Plan v3 A3): the plan's visible destination ═══
+  // Phases + dated milestones + a score trajectory, so the plan reads as a
+  // route to the goal instead of a list of drills. Consumed by the plan
+  // page's mission-control header.
+  const arc = buildPlanArc({
+    weeks: weeklyPlan,
+    gapBasis,
+    currentScore,
+    targetScore,
+    testDate,
+    daysUntilTest,
+    scoreProjection: diagnostic.scoreProjection || null,
+  });
 
   const generatedAt = new Date().toISOString();
 
@@ -384,6 +468,10 @@ export const generateStudyPlan = (diagnostic, userProfile = {}, completedLessons
     weeks: weeklyPlan,
     summary,
     nextAction,
+    // Journey arc (Plan v3): phases + milestones + trajectory for the
+    // mission-control header. Older plans lack it — every reader must
+    // null-guard.
+    arc,
 
     // Adaptive practice (primary — Acely-style)
     adaptivePractice,
@@ -400,9 +488,15 @@ export const generateStudyPlan = (diagnostic, userProfile = {}, completedLessons
     // Metadata
     intensity,
     intensityConfig,
+    // The weekly schedule this plan was built around — the UI renders it and
+    // the editor mutates it (via userPrefs.schedule, which wins next time).
+    schedule,
     // Sticky pacing preference: setPacing writes this on the plan; carrying
     // it across regenerations is what makes the student's edit durable.
     userPrefs: userPrefs || null,
+    // The edits ledger rides every regeneration (suppressions + custom tasks
+    // replayed above keep working across the NEXT regeneration too).
+    planEdits,
     previousPlanCompletion: prevCompletion,
     currentScore,
     targetScore,
@@ -633,7 +727,9 @@ const mapGapsToActivities = (skillGaps, completedLessons, practiceProgress, diag
         const prevAttempts = practiceProgress[practiceKey]?.totalAttempts || 0;
         const prevBest = practiceProgress[practiceKey]?.bestScore;
 
+        const because = buildBecauseLine(gap);
         activities.push({
+          ...(because ? { because } : {}),
           type: 'practice',
           activityType: 'practiceSection',
           title: `Practice: ${section.sectionName}`,
@@ -674,51 +770,94 @@ const mapGapsToActivities = (skillGaps, completedLessons, practiceProgress, diag
 };
 
 /**
+ * Pick the skill (from allSkills) that best evidences a given error type —
+ * most occurrences of that error, tiebreak lower accuracy. Powers the
+ * unified-session rule: every strategy card launches a REAL drill built
+ * from the student's own misses, never advice-only tips.
+ */
+const topSkillForErrorType = (diagnostic, errorType) => {
+  const all = diagnostic.skillAnalysis?.allSkills || [];
+  let best = null;
+  let bestCount = 0;
+  all.forEach((s) => {
+    if (!s?.skillId || !Array.isArray(s.errorTypes)) return;
+    const count = s.errorTypes.filter((e) => e === errorType).length;
+    if (count > bestCount || (count === bestCount && count > 0 && (s.contentAccuracy ?? 100) < (best?.contentAccuracy ?? 100))) {
+      best = s;
+      bestCount = count;
+    }
+  });
+  return bestCount > 0 ? best : null;
+};
+
+/**
  * Generate strategy-focused activities based on error patterns.
+ *
+ * Unified session grammar (Plan v3): every card here is a LAUNCHABLE session
+ * with the standard card anatomy — no advice-only cards. Trap and careless
+ * patterns become real drills targeted at the student's own trap/careless
+ * skills (type 'practice' so the shared drill router serves them); pacing
+ * becomes a pacing session (activityType 'pacingDrill' → onStartPacing);
+ * the mistake review becomes a test-miss review session deep-linking the
+ * actual missed questions (activityType 'testMissReview' → onReviewTestWrong)
+ * and is only emitted when the source test's misses are reviewable (real
+ * catalog tests — a mini-diagnostic's misses have no review store).
+ * The old `tips` arrays survive as expandable coaching on the real session.
  */
 const generateStrategyActivities = (diagnostic) => {
   const activities = [];
   const errorCounts = diagnostic.errorPatterns.counts;
-  const hasRWGaps = (diagnostic.skillAnalysis?.weakSkills || []).some(s => s.section === 'rw');
 
-  // Trap avoidance drills — tips match the sections the student actually
-  // struggled in (the all-math tip list read oddly under an R&W-heavy plan).
+  // Trap-answer drill — a REAL set on the skill where the traps actually bit.
   if ((errorCounts[ERROR_TYPES.TRAP_SUSCEPTIBILITY] || 0) >= 2) {
-    activities.push({
-      type: 'strategy',
-      activityType: 'strategyDrill',
-      title: 'Trap Answer Recognition Drill',
-      subtitle: `You picked ${errorCounts[ERROR_TYPES.TRAP_SUSCEPTIBILITY]} designed-to-tempt answers last test`,
-      duration: ACTIVITY_DURATIONS.strategyDrill,
-      priority: 90,
-      icon: null,
-      tips: [
-        'Before choosing, predict what trap answers might look like',
-        'In percent problems: "increased by X%" ≠ "X% of"',
-        'In multi-step problems: check that you answered the FINAL question, not an intermediate step',
-        ...(hasRWGaps ? [
-          'In reading questions: the tempting wrong answer is usually TRUE — it just doesn\'t answer THIS question',
-          'Distrust extreme wording — "always", "never", "proves" usually overstate what the passage supports',
-        ] : []),
-        'If your answer came too easily on a hard question, it\'s probably a trap',
-      ],
-    });
+    const trapSkill = topSkillForErrorType(diagnostic, ERROR_TYPES.TRAP_SUSCEPTIBILITY);
+    if (trapSkill) {
+      activities.push({
+        ...buildSkillDrillActivity({
+          skillId: trapSkill.skillId,
+          skillName: trapSkill.name,
+          section: trapSkill.section,
+          missedPatterns: trapSkill.missedPatterns,
+          priority: 90,
+        }),
+        activityType: 'trapDrill',
+        title: `Beat the trap answers: ${trapSkill.name || trapSkill.skillId}`,
+        subtitle: `You picked ${errorCounts[ERROR_TYPES.TRAP_SUSCEPTIBILITY]} designed-to-tempt answers last test — most on this skill`,
+        because: `Your ${trapSkill.name || 'top'} misses were the designed-to-tempt answers. Predict the trap before you look at the choices.`,
+        duration: ACTIVITY_DURATIONS.strategyDrill,
+        priority: 90,
+        tips: [
+          'Before choosing, predict what trap answers might look like',
+          ...(trapSkill.section === 'rw' ? [
+            'The tempting wrong answer is usually TRUE — it just doesn\'t answer THIS question',
+            'Distrust extreme wording — "always", "never", "proves" usually overstate what the passage supports',
+          ] : [
+            'In percent problems: "increased by X%" ≠ "X% of"',
+            'In multi-step problems: check that you answered the FINAL question, not an intermediate step',
+          ]),
+          'If your answer came too easily on a hard question, it\'s probably a trap',
+        ],
+      });
+    }
   }
 
-  // Time management drills. The gate is an OR: the fade branch can fire
-  // with timeRelatedErrors at 0-2, so the subtitle must cite whichever
-  // evidence actually triggered it ("clock cost you 0 questions" was a
-  // live contradiction caught in review).
+  // Pacing session — launches the real pacing drill (buildPacingSession),
+  // not a tips card. The gate is an OR: the fade branch can fire with
+  // timeRelatedErrors at 0-2, so the subtitle must cite whichever evidence
+  // actually triggered it.
   const timePressureCount = errorCounts[ERROR_TYPES.TIME_PRESSURE] || 0;
   const fadeEffect = diagnostic.timeAnalysis.fadeEffect || 0;
   if (timePressureCount >= 3 || fadeEffect > 15) {
     activities.push({
       type: 'strategy',
-      activityType: 'strategyDrill',
-      title: 'Pacing Reset',
+      activityType: 'pacingDrill',
+      title: 'Pacing session',
       subtitle: timePressureCount >= 3
         ? `The clock cost you ${timePressureCount} question${timePressureCount === 1 ? '' : 's'} last test`
         : `Your accuracy dropped ${fadeEffect}% in the second half — pacing faded`,
+      because: timePressureCount >= 3
+        ? `The clock cost you ${timePressureCount} question${timePressureCount === 1 ? '' : 's'} last test — timed sets at target pace rebuild the rhythm.`
+        : `Your accuracy dropped ${fadeEffect}% from module start to end — timed sets rebuild the endurance.`,
       duration: ACTIVITY_DURATIONS.strategyDrill,
       priority: 85,
       icon: null,
@@ -726,43 +865,55 @@ const generateStrategyActivities = (diagnostic) => {
         'Easy: max 90 seconds. Medium: max 2 minutes. Hard: max 3 minutes.',
         'If stuck, flag it and move on — come back with fresh eyes',
         'Use the last 5 minutes to review flagged questions',
-        'Don\'t spend 4 minutes on one hard question and rush the next three',
       ],
     });
   }
 
-  // Careless error reduction
+  // Precision drill — re-drill the skill where knowing-how still went wrong.
   if ((errorCounts[ERROR_TYPES.CARELESS_ERROR] || 0) >= 2) {
-    activities.push({
-      type: 'strategy',
-      activityType: 'strategyDrill',
-      title: 'Stop the Avoidable Misses',
-      subtitle: `${errorCounts[ERROR_TYPES.CARELESS_ERROR]} questions you knew how to solve went wrong last test`,
-      duration: ACTIVITY_DURATIONS.strategyDrill,
-      priority: 95,
-      icon: null,
-      tips: [
-        'Re-read the last sentence of EVERY question before answering',
-        'After solving, plug your answer back in to verify',
-        'Circle/highlight what the question is actually asking for (x? 2x+1? y?)',
-        'For fill-in: double-check that your answer is in the right units/form',
-      ],
-    });
+    const carelessSkill = topSkillForErrorType(diagnostic, ERROR_TYPES.CARELESS_ERROR);
+    if (carelessSkill) {
+      activities.push({
+        ...buildSkillDrillActivity({
+          skillId: carelessSkill.skillId,
+          skillName: carelessSkill.name,
+          section: carelessSkill.section,
+          missedPatterns: carelessSkill.missedPatterns,
+          priority: 95,
+        }),
+        activityType: 'precisionDrill',
+        title: `Stop the avoidable misses: ${carelessSkill.name || carelessSkill.skillId}`,
+        subtitle: `${errorCounts[ERROR_TYPES.CARELESS_ERROR]} questions you knew how to solve went wrong last test`,
+        because: `You know how to solve these — ${errorCounts[ERROR_TYPES.CARELESS_ERROR]} went wrong anyway. This set is about finishing clean, not learning new content.`,
+        duration: ACTIVITY_DURATIONS.strategyDrill,
+        priority: 95,
+        tips: [
+          'Re-read the last sentence of EVERY question before answering',
+          'After solving, plug your answer back in to verify',
+          'Circle/highlight what the question is actually asking for (x? 2x+1? y?)',
+        ],
+      });
+    }
   }
 
-  // Mistake review session
-  if (diagnostic.errorPatterns.totalWrong > 5) {
+  // Test-miss review session — the real missed questions from the source
+  // test, launched through the review deep-link. Only when reviewable: a
+  // mini-diagnostic's misses have no review store to open.
+  const sourceTestId = diagnostic.testId || null;
+  const reviewable = sourceTestId && !String(sourceTestId).startsWith('mini-diagnostic');
+  if (diagnostic.errorPatterns.totalWrong > 5 && reviewable) {
     activities.push({
       type: 'review',
-      activityType: 'reviewMistakes',
-      title: 'Review Your Missed Questions',
-      subtitle: `${diagnostic.errorPatterns.totalWrong} questions to review from ${diagnostic.testTitle}`,
+      activityType: 'testMissReview',
+      testId: sourceTestId,
+      title: `Review: ${diagnostic.testTitle || 'your last test'} — ${diagnostic.errorPatterns.totalWrong} misses`,
+      subtitle: 'Walk the questions you missed, then re-drill the ones worth points',
+      because: `${diagnostic.errorPatterns.totalWrong} misses from ${diagnostic.testTitle || 'your last test'} are sitting there with your reasoning attached — understanding WHY beats new reps.`,
       duration: ACTIVITY_DURATIONS.reviewMistakes,
       priority: 100, // Always high priority
       icon: null,
       tips: [
         'For each wrong answer, understand WHY the correct answer is right',
-        'Write down what you would do differently next time',
         'Focus on questions you "almost" got right — these are your quick wins',
       ],
     });
@@ -783,8 +934,44 @@ const generateStrategyActivities = (diagnostic) => {
  * - End of week: More practice + self-assessment
  * - Every 3-4 weeks: Take a practice test
  */
-const distributeAcrossWeeks = (activities, strategyActivities, totalWeeks, minutesPerWeek, diagnostic, previousPlan, longitudinal = null, isFirstPlan = false) => {
+const DAY_ORDER = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+const distributeAcrossWeeks = (activities, strategyActivities, totalWeeks, minutesPerWeek, diagnostic, previousPlan, longitudinal = null, isFirstPlan = false, schedule = null, scoreGap = null, createdDayName = null) => {
   const weeks = [];
+
+  // ═══ SCHEDULE-AWARE DAY PLAN ═══
+  // Every activity lands on a day the student actually studies. Before this,
+  // review was always Monday, tests always Saturday, mid-week always Wed-Fri —
+  // regardless of what the student told us in onboarding.
+  const studyDays = schedule ? scheduledDayNames(schedule) : ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+  // ═══ WEEK 1 ANCHORS TO TODAY (Plan v3) ═══
+  // Week 1 shares its calendar week with the plan's creation moment. Filling
+  // it Monday-first scheduled a Thursday-born plan's whole first week into
+  // days already behind the student ("0 of 6 sessions" on day one, nothing
+  // to do today — founder-flagged). Week 1 only uses days from TODAY onward:
+  // remaining STUDY days when any exist, otherwise the remaining CALENDAR
+  // days (a Saturday-created plan under a Mon-Fri schedule schedules onto
+  // Sat/Sun — the student opening the app today is here to work today; the
+  // old fallback clamped onto the final PAST study day). Week 1's budget is
+  // also capped to its real days' capacity so a short first week never has
+  // a full week's minutes stuffed onto one or two days.
+  const createdIdx = createdDayName ? DAY_ORDER.indexOf(createdDayName) : -1;
+  const remainingStudyDays = createdIdx >= 0
+    ? studyDays.filter((d) => DAY_ORDER.indexOf(d) >= createdIdx)
+    : studyDays;
+  const remainingCalendarDays = createdIdx >= 0
+    ? DAY_ORDER.slice(createdIdx)
+    : studyDays;
+  const week1Days = remainingStudyDays.length > 0 ? remainingStudyDays : remainingCalendarDays;
+  const dayBudget = (day) => (schedule?.days?.[day] > 0 ? schedule.days[day] : 35);
+  const week1BudgetCap = week1Days.reduce((sum, d) => sum + dayBudget(d), 0);
+  const testDay = schedule ? testDayFor(schedule) : 'Saturday';
+  const phaseFor = (day) => {
+    const idx = studyDays.indexOf(day);
+    if (idx <= 0) return 'start';
+    return idx >= studyDays.length - 1 ? 'end' : 'mid';
+  };
 
   // ═══ ADAPTIVE PRIORITY ADJUSTMENT ═══
   // If we have a previous plan, adjust priorities based on what improved/worsened
@@ -817,10 +1004,17 @@ const distributeAcrossWeeks = (activities, strategyActivities, totalWeeks, minut
       }
     }
 
-    // If previous plan exists, skip activities the student already completed
-    if (previousPlan?.weeks && act.title) {
+    // If previous plan exists, deprioritize activities the student already
+    // completed. Match by skillId when both sides carry one (titles are
+    // re-worded across versions — the skill is the stable identity), falling
+    // back to the exact title for skill-less activities (strategy, review).
+    if (previousPlan?.weeks && (act.skillId || act.title)) {
       const wasCompleted = previousPlan.weeks.some(w =>
-        w.activities?.some(a => a.completed && a.title === act.title)
+        w.activities?.some(a => a.completed && (
+          (act.skillId && a.skillId)
+            ? a.skillId === act.skillId
+            : a.title === act.title
+        ))
       );
       if (wasCompleted) {
         priorityBoost -= 15; // Deprioritize already-completed activities
@@ -839,76 +1033,226 @@ const distributeAcrossWeeks = (activities, strategyActivities, totalWeeks, minut
   ].sort((a, b) => b.priority - a.priority);
 
   // Track which activities have been assigned
-  let activityPool = [...allActivities];
+  const activityPool = [...allActivities];
+
+  // ═══ SECTION BALANCE (Plan v3 A1) ═══
+  // A TRUE plan never goes single-section. Weekly skill minutes split between
+  // R&W and Math weighted toward the section carrying more gap evidence,
+  // clamped to 60/40 — so the weaker section leads but the other NEVER
+  // disappears while its pool has work. Activities without a section (module
+  // practice is math-bank by construction; strategy/review are neutral) count
+  // as math/neutral respectively.
+  const sectionOf = (a) => (a?.section === 'rw' ? 'rw' : 'math');
+  const isSkillWork = (a) => a && a.type === 'practice';
+  const gapMass = { rw: 0, math: 0 };
+  adaptedActivities.forEach((a) => {
+    if (isSkillWork(a)) gapMass[sectionOf(a)] += Math.max(1, a.priority || 1);
+  });
+  const bothSections = gapMass.rw > 0 && gapMass.math > 0;
+  const rwShare = bothSections
+    ? Math.min(0.6, Math.max(0.4, gapMass.rw / (gapMass.rw + gapMass.math)))
+    : (gapMass.rw > 0 ? 1 : 0);
+
+  // ═══ DENSITY BACKFILL POOL (Plan v3 A2) ═══
+  // When confirmed weak-flags can't fill the student's stated weekly minutes,
+  // the plan backfills with honest, personally-earned work instead of running
+  // thin: shaky skills (passed the attempt bar but sit 50-74%) get
+  // reinforcement sets, then strengths get short maintenance sets. Every
+  // entry carries a because-line naming what it is — no anonymous filler.
+  const scheduledSkillIds = new Set(
+    allActivities.map((a) => a.skillId).filter(Boolean),
+  );
+  const backfillPool = [];
+  (diagnostic.skillAnalysis?.allSkills || []).forEach((s) => {
+    if (!s?.skillId || scheduledSkillIds.has(s.skillId)) return;
+    const acc = s.contentAccuracy ?? s.testAccuracy ?? null;
+    if (acc === null || (s.attempted ?? 0) < 2) return;
+    if (acc >= 50 && acc < 75) {
+      backfillPool.push({
+        ...buildSkillDrillActivity({
+          skillId: s.skillId,
+          skillName: s.name,
+          section: s.section,
+          missedPatterns: s.missedPatterns,
+          priority: 40,
+        }),
+        title: `Push past shaky: ${s.name || s.skillId}`,
+        subtitle: 'Reinforcement set — solid start, not yet reliable',
+        because: `You're at ${acc}% here — real footing, not yet reliable. One focused set moves it from coin-flip to counted-on.`,
+        planRole: 'reinforce',
+      });
+    } else if (acc >= 80) {
+      backfillPool.push({
+        ...buildSkillDrillActivity({
+          skillId: s.skillId,
+          skillName: s.name,
+          section: s.section,
+          priority: 25,
+        }),
+        title: `Keep sharp: ${s.name || s.skillId}`,
+        subtitle: 'Maintenance set — protect a strength',
+        because: "You're strong here — one short set keeps it that way while the plan rebuilds weaknesses.",
+        planRole: 'maintain',
+      });
+    }
+  });
+  backfillPool.sort((a, b) => b.priority - a.priority);
+
+  // Measurement cadence: inside a month of test day, every week ends with a
+  // full test. On a longer arc, FULL tests land every third week (a 70-minute
+  // mock every other week is over-prescription students skip) and the
+  // short check-ins inserted below fill the gaps — so something measures
+  // the student every 1-2 weeks, but it's usually the light thing. A small
+  // score gap (final polish) doesn't add tests — it adds precision/strategy
+  // work (see the strategy slot below).
+  const smallGap = scoreGap !== null && scoreGap < 50;
+  const testCadence = totalWeeks < 4 ? 1 : 3;
 
   for (let weekNum = 1; weekNum <= totalWeeks; weekNum++) {
     const isFirstWeek = weekNum === 1;
     const isLastWeek = weekNum === totalWeeks;
-    const isTestWeek = weekNum % 3 === 0 || isLastWeek; // Test every 3 weeks + last week
+    // Week 1 never hosts a full test (the plan was just generated FROM one),
+    // so don't flag it — except a one-week plan, whose only week is the last.
+    const isTestWeek = (!isFirstWeek || totalWeeks === 1)
+      && (weekNum % testCadence === 0 || isLastWeek);
 
     const weekActivities = [];
     let weekMinutesUsed = 0;
-    const weekMinutesBudget = minutesPerWeek;
+    // Week 1 can be a partial week (created mid-week): its budget is the
+    // smaller of the weekly promise and its remaining days' real capacity.
+    const weekMinutesBudget = weekNum === 1
+      ? Math.min(minutesPerWeek, week1BudgetCap)
+      : minutesPerWeek;
+
+    // Per-day remaining minutes for this week. Activities bin into the first
+    // study day with room, so each day's load tracks the student's schedule
+    // instead of a hardcoded Mon-Fri spread. Week 1 only schedules from the
+    // plan's creation day onward (see week1Days above).
+    const weekDays = weekNum === 1 ? week1Days : studyDays;
+    const dayRemaining = {};
+    weekDays.forEach((d) => { dayRemaining[d] = dayBudget(d); });
+    const placeOn = (duration) => {
+      let day = weekDays.find((d) => dayRemaining[d] >= duration);
+      // No day fits the whole activity: put it where the most room is left —
+      // a slightly-overfull study day beats scheduling on a day the student
+      // told us they don't study.
+      if (!day) day = weekDays.reduce((a, b) => (dayRemaining[a] >= dayRemaining[b] ? a : b));
+      dayRemaining[day] -= duration;
+      return day;
+    };
 
     // ── PHASE 1: Start of week — Review + Strategy ──
     if (isFirstWeek) {
       // First week: review mistakes from the test that triggered this plan
       const reviewActivity = activityPool.find(a => a.type === 'review');
       if (reviewActivity) {
+        const day = placeOn(reviewActivity.duration);
         weekActivities.push({
           ...reviewActivity,
-          day: 'Monday',
+          day,
           weekPhase: 'start',
         });
         weekMinutesUsed += reviewActivity.duration;
-        activityPool = activityPool.filter(a => a !== reviewActivity);
+        // Same effect as `activityPool.filter(a => a !== reviewActivity)`, done
+        // in place so the pool stays a const (and the per-week helpers below
+        // are not closures over a reassignable binding).
+        for (let i = activityPool.length - 1; i >= 0; i--) {
+          if (activityPool[i] === reviewActivity) activityPool.splice(i, 1);
+        }
       }
     }
 
-    // Add one strategy activity per week (if available)
-    const strategyIdx = activityPool.findIndex(a => a.type === 'strategy');
-    if (strategyIdx !== -1 && weekMinutesUsed + activityPool[strategyIdx].duration <= weekMinutesBudget) {
+    // Add one strategy activity per week (two for small-gap students — the
+    // last 50 points are usually pacing and trap discipline, not new content)
+    const strategySlots = smallGap ? 2 : 1;
+    for (let s = 0; s < strategySlots; s++) {
+      const strategyIdx = activityPool.findIndex(a => a.type === 'strategy');
+      if (strategyIdx === -1 || weekMinutesUsed + activityPool[strategyIdx].duration > weekMinutesBudget) break;
+      const day = placeOn(activityPool[strategyIdx].duration);
       weekActivities.push({
         ...activityPool[strategyIdx],
-        day: isFirstWeek ? 'Tuesday' : 'Monday',
-        weekPhase: 'start',
+        day,
+        weekPhase: phaseFor(day),
       });
       weekMinutesUsed += activityPool[strategyIdx].duration;
       activityPool.splice(strategyIdx, 1);
     }
 
-    // ── PHASE 2: Mid-week — Lessons and Practice ──
-    const midWeekDays = isFirstWeek
-      ? ['Wednesday', 'Thursday', 'Friday']
-      : ['Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-
-    let dayIdx = 0;
-    while (activityPool.length > 0 && weekMinutesUsed < weekMinutesBudget && dayIdx < midWeekDays.length) {
-      const nextActivity = activityPool[0];
-      if (!nextActivity) break;
-
-      if (weekMinutesUsed + nextActivity.duration > weekMinutesBudget + 10) {
-        // Over budget — try to find a shorter activity
-        const shorterIdx = activityPool.findIndex(a => weekMinutesUsed + a.duration <= weekMinutesBudget + 10);
-        if (shorterIdx === -1) break;
-
-        weekActivities.push({
-          ...activityPool[shorterIdx],
-          day: midWeekDays[dayIdx % midWeekDays.length],
-          weekPhase: 'mid',
-        });
-        weekMinutesUsed += activityPool[shorterIdx].duration;
-        activityPool.splice(shorterIdx, 1);
-      } else {
-        weekActivities.push({
-          ...nextActivity,
-          day: midWeekDays[dayIdx % midWeekDays.length],
-          weekPhase: 'mid',
-        });
-        weekMinutesUsed += nextActivity.duration;
-        activityPool.shift();
+    // ── PHASE 2: Practice and drills — SECTION-AWARE fill (Plan v3 A1) ──
+    // Instead of draining one priority-sorted pool (which produced entire
+    // single-section weeks whenever one section's gaps outranked the
+    // other's), each week fills toward per-section minute targets. The
+    // section with the larger unmet target picks next; neutral work
+    // (leftover strategy/review) fills alongside. Priority order is
+    // preserved WITHIN each section.
+    const sectionMinutes = { rw: 0, math: 0 };
+    const targetFor = (sec) => Math.round(weekMinutesBudget * (sec === 'rw' ? rwShare : 1 - rwShare));
+    // First pool index of the wanted kind that fits the remaining budget
+    // (keeps the original +10 overflow tolerance and shorter-search).
+    const nextFittingIdx = (wantSection) => {
+      let firstOfKind = -1;
+      for (let i = 0; i < activityPool.length; i++) {
+        const a = activityPool[i];
+        const matches = wantSection === 'any'
+          ? true
+          : (isSkillWork(a) ? sectionOf(a) === wantSection : wantSection === 'neutral');
+        if (!matches) continue;
+        if (firstOfKind === -1) firstOfKind = i;
+        if (weekMinutesUsed + a.duration <= weekMinutesBudget + 10) return i;
       }
-      dayIdx++;
+      return firstOfKind === -1 ? -1 : -2; // -2: kind exists but nothing fits
+    };
+    while (activityPool.length > 0 && weekMinutesUsed < weekMinutesBudget) {
+      const rwDeficit = targetFor('rw') - sectionMinutes.rw;
+      const mathDeficit = targetFor('math') - sectionMinutes.math;
+      // Preference order: bigger-deficit section → other section → neutral.
+      const order = rwDeficit >= mathDeficit
+        ? ['rw', 'math', 'neutral']
+        : ['math', 'rw', 'neutral'];
+      let idx = -1;
+      for (const want of order) {
+        const found = nextFittingIdx(want);
+        if (found >= 0) { idx = found; break; }
+      }
+      if (idx === -1) {
+        // Nothing of any preferred kind fits — fall back to any fitting item.
+        const anyIdx = nextFittingIdx('any');
+        if (anyIdx < 0) break;
+        idx = anyIdx;
+      }
+      const picked = activityPool[idx];
+      const day = placeOn(picked.duration);
+      weekActivities.push({ ...picked, day, weekPhase: phaseFor(day) });
+      weekMinutesUsed += picked.duration;
+      if (isSkillWork(picked)) sectionMinutes[sectionOf(picked)] += picked.duration;
+      activityPool.splice(idx, 1);
+    }
+
+    // ── PHASE 2.5: Density floor (Plan v3 A2) ──
+    // The student promised these minutes; a thin weak-flag list must not
+    // produce a half-empty week. Fill up to ~85% of budget from the
+    // reinforcement/maintenance backfill, still section-aware.
+    while (
+      backfillPool.length > 0
+      && weekMinutesUsed < Math.round(weekMinutesBudget * 0.85)
+    ) {
+      const wantSection = (sectionMinutes.rw - targetFor('rw')) <= (sectionMinutes.math - targetFor('math')) ? 'rw' : 'math';
+      // Snapshot the running total: both predicates below read it synchronously
+      // and it is only bumped after the picks, so this is the same value.
+      const usedSoFar = weekMinutesUsed;
+      let bIdx = backfillPool.findIndex(
+        (a) => sectionOf(a) === wantSection && usedSoFar + a.duration <= weekMinutesBudget + 10,
+      );
+      if (bIdx === -1) {
+        bIdx = backfillPool.findIndex((a) => usedSoFar + a.duration <= weekMinutesBudget + 10);
+      }
+      if (bIdx === -1) break;
+      const picked = backfillPool[bIdx];
+      const day = placeOn(picked.duration);
+      weekActivities.push({ ...picked, day, weekPhase: phaseFor(day) });
+      weekMinutesUsed += picked.duration;
+      sectionMinutes[sectionOf(picked)] += picked.duration;
+      backfillPool.splice(bIdx, 1);
     }
 
     // ── PHASE 3: Test week — add practice test ──
@@ -931,7 +1275,9 @@ const distributeAcrossWeeks = (activities, strategyActivities, totalWeeks, minut
         duration: ACTIVITY_DURATIONS.practiceTest,
         priority: 100,
         icon: null,
-        day: 'Saturday',
+        // The student's biggest study day hosts the full-length test — not a
+        // hardcoded Saturday a weekday-only student would never sit.
+        day: testDay,
         weekPhase: 'end',
         tips: isUnlockCheckpoint
           ? [
@@ -979,7 +1325,132 @@ const distributeAcrossWeeks = (activities, strategyActivities, totalWeeks, minut
     });
   }
 
+  // ═══ Check-in cadence: never two consecutive weeks without a measurement ═══
+  // Full tests anchor the cadence; a short adaptive check-in fills any
+  // 2-week stretch between them so the diagnosis (and therefore every
+  // personalized piece of the plan) never goes stale. Founder decision D3.
+  let weeksSinceMeasurement = 0;
+  weeks.forEach((week) => {
+    if (week.isTestWeek) {
+      weeksSinceMeasurement = 0;
+      return;
+    }
+    weeksSinceMeasurement += 1;
+    if (weeksSinceMeasurement >= 2) {
+      const day = testDay;
+      week.activities.push({
+        type: 'test',
+        activityType: 'miniDiagnostic',
+        // Duration is deliberately loose: the v2 focused check-in runs ~20-25
+        // timed minutes, the legacy shell ~15 — the title stays untimed so a
+        // stored plan never promises a length the flag state can't deliver.
+        title: 'Quick check-in',
+        subtitle: 'A short adaptive check re-measures you and re-tunes the plan between full tests',
+        because: 'Two weeks since your last measurement — fresh evidence keeps every task on this plan honest.',
+        duration: 20,
+        priority: 100,
+        icon: null,
+        day,
+        weekPhase: 'end',
+      });
+      week.totalMinutes = (week.totalMinutes || 0) + 20;
+      week.isCheckInWeek = true;
+      weeksSinceMeasurement = 0;
+    }
+  });
+
   return weeks;
+};
+
+// ═══════════════════════════════════════════════════════════════════════════
+// JOURNEY ARC (Plan v3 A3)
+// ═══════════════════════════════════════════════════════════════════════════
+
+/** Phase label sets by phase count — the narrative spine of the plan. */
+const PHASE_LABELS = {
+  1: ['Foundation'],
+  2: ['Foundation', 'Sharpen'],
+  3: ['Foundation', 'Build', 'Sharpen'],
+};
+
+/**
+ * Build the plan's journey arc: contiguous phases over the weeks, dated
+ * milestones (check-ins, full tests, exam day), and a score trajectory.
+ * This is what makes the plan read as a ROUTE — "you're here, this is the
+ * next checkpoint, this is where it ends" — instead of a drill list.
+ *
+ * Milestones carry weekNumber + day (the UI resolves calendar dates the same
+ * way it dates weeks); the exam milestone carries the real date. Phase
+ * projectedGain splits the diagnostic's projected recovery across phases by
+ * week count, capped at the actual score gap — an honest "≈ +N pts" range,
+ * omitted entirely when no projection exists.
+ *
+ * @returns {{startScore:number|null,targetScore:number|null,gapLabel:string,
+ *   phases:Array,milestones:Array}}
+ */
+const buildPlanArc = ({ weeks, gapBasis, currentScore, targetScore, testDate, daysUntilTest, scoreProjection }) => {
+  const totalWeeks = weeks.length;
+  const phaseCount = totalWeeks <= 1 ? 1 : totalWeeks <= 3 ? 2 : 3;
+  const labels = PHASE_LABELS[phaseCount];
+
+  // Split weeks into contiguous phases, front-loading the remainder so the
+  // Foundation phase is never shorter than the ones after it.
+  const base = Math.floor(totalWeeks / phaseCount);
+  const extra = totalWeeks % phaseCount;
+  const phases = [];
+  let cursor = 1;
+  for (let p = 0; p < phaseCount; p++) {
+    const span = base + (p < extra ? 1 : 0);
+    if (span === 0) continue;
+    const phaseStart = cursor;
+    const weekNumbers = Array.from({ length: span }, (_, i) => phaseStart + i);
+    const phaseWeeks = weekNumbers.map((n) => weeks[n - 1]).filter(Boolean);
+    const focusDomains = [...new Set(phaseWeeks.flatMap((w) => w.focusDomains || []))].slice(0, 3);
+    phases.push({ index: p, label: labels[p], weekNumbers, focusDomains });
+    cursor += span;
+  }
+
+  // Honest projected trajectory: the diagnostic's top domain projections,
+  // capped at the real gap, spread across phases by week share.
+  const gap = gapBasis ? Math.max(0, gapBasis.target - gapBasis.current) : null;
+  const projectedTotal = Array.isArray(scoreProjection?.domainProjections)
+    ? scoreProjection.domainProjections.slice(0, 4).reduce((s, p) => s + Math.max(0, p.projectedPointGain || 0), 0)
+    : null;
+  const trajectoryTotal = projectedTotal !== null && gap !== null
+    ? Math.min(projectedTotal, gap)
+    : projectedTotal;
+  if (trajectoryTotal !== null && trajectoryTotal > 0) {
+    phases.forEach((phase) => {
+      const share = phase.weekNumbers.length / totalWeeks;
+      phase.projectedGain = Math.round((trajectoryTotal * share) / 10) * 10;
+    });
+  }
+
+  // Milestones from the scheduled measurement activities themselves — the
+  // arc can never disagree with what the weeks actually contain.
+  const milestones = [];
+  weeks.forEach((week) => {
+    (week.activities || []).forEach((a) => {
+      if (a.type !== 'test') return;
+      milestones.push({
+        type: a.activityType === 'miniDiagnostic' ? 'checkIn' : 'fullTest',
+        title: a.title,
+        weekNumber: week.weekNumber,
+        day: a.day || null,
+      });
+    });
+  });
+  if (testDate && Number.isFinite(daysUntilTest) && daysUntilTest >= 0) {
+    milestones.push({ type: 'exam', title: 'SAT test day', date: testDate });
+  }
+
+  return {
+    startScore: Number.isFinite(currentScore) ? currentScore : null,
+    targetScore: Number.isFinite(targetScore) ? targetScore : null,
+    gapLabel: gapBasis?.label || '',
+    phases,
+    milestones,
+  };
 };
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -1249,7 +1720,11 @@ const getDaysUntil = (dateStr) => {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   target.setHours(0, 0, 0, 0);
-  return Math.ceil((target - today) / (1000 * 60 * 60 * 24));
+  // Both ends are local midnight, so the true difference is a whole number
+  // of days ± 1 hour of DST skew. Math.round absorbs the skew; Math.ceil
+  // inflated any span crossing a fall-back boundary by a day (a 63-day
+  // runway read as 64 → a 9-week plan rendered a phantom 10th week).
+  return Math.round((target - today) / (1000 * 60 * 60 * 24));
 };
 
 const calculateIntensity = (scoreGap, daysLeft) => {

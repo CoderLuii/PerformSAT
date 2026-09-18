@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-221",
+ "question": "A materials lab records a specimen's response as the graph of $7x - 3y = 24$. Any line drawn at a right angle to that response line has what slope?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{7}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{3}{7}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3}{7}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{7}{3}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "negates the response line's slope without inverting it",
+  "C": "inverts the slope without negating it",
+  "D": "repeats the response line's own slope"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The response line has slope $\\frac{7}{3}$, so a perpendicular line has slope $-\\frac{3}{7}$.\n\n**The Full Solution:**\nStep 1: Rewrite $7x - 3y = 24$ as $-3y = -7x + 24$, so $y = \\frac{7}{3}x - 8$.\nStep 2: The response line therefore has slope $\\frac{7}{3}$.\nStep 3: A right angle requires the negative reciprocal, which is $-\\frac{3}{7}$. Check: $\\frac{7}{3}\\left(-\\frac{3}{7}\\right) = -1$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{7}{3}$): negates the response line's slope without inverting it\n* Choice C ($\\frac{3}{7}$): inverts the slope without negating it\n* Choice D ($\\frac{7}{3}$): repeats the response line's own slope\n\n**Test Day Takeaway:** Dividing by a negative coefficient of $y$ flips the sign of both remaining terms; do that step on paper."
+}

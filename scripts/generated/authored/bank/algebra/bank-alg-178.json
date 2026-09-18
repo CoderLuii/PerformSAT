@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-178",
+ "question": "A machinist's layout puts edge $E$ on the line $y = \\frac{2}{3}x + 5$ and cuts a slot perpendicular to edge $E$ through $(4, 9)$. At what $y$-value does the slot's line cross the $y$-axis?",
+ "correctAnswer": "15",
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**The correct answer is $15$.**\n\n**The Fast Way (~20s):** The slot has slope $-\\frac{3}{2}$, and $9 = -\\frac{3}{2}(4) + b$ gives $b = 15$.\n\n**The Full Solution:**\nStep 1: Edge $E$ has slope $\\frac{2}{3}$, so the slot's line has slope $-\\frac{3}{2}$.\nStep 2: Substituting $(4, 9)$ into $y = -\\frac{3}{2}x + b$ gives $9 = -6 + b$.\nStep 3: Therefore $b = 15$. Check: $-\\frac{3}{2}(4) + 15 = 9$, and $\\frac{2}{3}\\left(-\\frac{3}{2}\\right) = -1$.\n\n**Common Mistakes:**\n* Computing $b$ as $y + mx = 9 + \\left(-\\frac{3}{2}\\right)(4) = 3$ adds the term that should be subtracted.\n* Keeping edge $E$'s slope $\\frac{2}{3}$ gives $9 = \\frac{8}{3} + b$ and $b = \\frac{19}{3}$.\n* Using $-\\frac{2}{3}$, negating without inverting, gives $9 = -\\frac{8}{3} + b$ and $b = \\frac{35}{3}$.\n\n**Test Day Takeaway:** The $y$-intercept is $y - mx$ at the given point; subtracting is the whole step."
+}

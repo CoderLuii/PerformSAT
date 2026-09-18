@@ -1,0 +1,38 @@
+{
+  "id": "bank-am-403",
+  "question": "The graph of $y = g(x)$ is shown in the $xy$-plane, where $g$ is a quadratic function whose two zeros are marked. The function is defined by $g(x) = ax^2 + bx + c$, where $a$, $b$, and $c$ are nonzero constants. What is the value of $\\dfrac{b}{a}$?",
+  "diagram": {
+    "type": "quadraticIntercepts",
+    "params": {
+      "intercepts": [
+        -7,
+        3
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-21$"
+    },
+    {
+      "id": "B",
+      "text": "$-4$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$21$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports $\\frac{c}{a}$, the product of the zeros",
+    "B": "reports the sum of the zeros without the sign change",
+    "D": "reports the product of the zeros with the sign dropped"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vieta Sum & Product of Roots**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The zeros are $-7$ and $3$, so $-\\dfrac{b}{a} = -7 + 3 = -4$ and $\\dfrac{b}{a} = 4$.\n\n**The Full Solution:**\nStep 1: The marked points show the zeros of $g$ are $x = -7$ and $x = 3$.\nStep 2: For $ax^2 + bx + c = 0$ the sum of the solutions is $-\\dfrac{b}{a}$. Here that sum is $-7 + 3 = -4$.\nStep 3: So $-\\dfrac{b}{a} = -4$, giving $\\dfrac{b}{a} = 4$. Check with a concrete case: $a = 1$ gives $g(x) = (x + 7)(x - 3) = x^2 + 4x - 21$, and $\\dfrac{4}{1} = 4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-21$): reports $\\dfrac{c}{a}$, the PRODUCT of the zeros, instead of the ratio asked for.\n* Choice B ($-4$): reports the sum of the zeros itself, forgetting that the sum equals $-\\dfrac{b}{a}$, not $\\dfrac{b}{a}$.\n* Choice D ($21$): takes the product of the zeros and drops its negative sign.\n\n**Test Day Takeaway:** The sum and product rules work for any leading coefficient once you divide by it: sum $= -\\dfrac{b}{a}$ and product $= \\dfrac{c}{a}$."
+}

@@ -1,0 +1,29 @@
+{
+ "question": "A counter at a fish ladder recorded $46$ salmon $15$ minutes after dawn and $82$ salmon $45$ minutes after dawn, and the count increased at a constant rate. At that rate, how many salmon pass the ladder per hour?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.2$"
+  },
+  {
+   "id": "B",
+   "text": "$36$"
+  },
+  {
+   "id": "C",
+   "text": "$54$"
+  },
+  {
+   "id": "D",
+   "text": "$72$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports the rate per minute rather than per hour",
+  "B": "reports the change in the count, $82 - 46$, which is not a rate",
+  "C": "multiplies the per-minute rate by $45$ instead of by $60$"
+ },
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The count rises $36$ salmon in $30$ minutes, so $1.2$ per minute, or $1.2(60) = 72$ per hour.\n\n**The Full Solution:**\n\nStep 1: Write the two counts as ordered pairs $(15, 46)$ and $(45, 82)$, with minutes first.\n\nStep 2: The constant rate is $\\frac{82 - 46}{45 - 15} = \\frac{36}{30} = 1.2$ salmon per minute.\n\nStep 3: Convert to an hourly rate: $1.2(60) = 72$ salmon per hour. Check: $72$ per hour is $36$ per half hour, matching the $36$ counted between minute $15$ and minute $45$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($1.2$): stops at the per-minute rate the question does not ask for.\n\n* Choice B ($36$): reports the increase in the count over the interval, not a rate.\n\n* Choice C ($54$): multiplies $1.2$ by $45$, the ending minute, instead of by the $60$ minutes in an hour.\n\n**Test Day Takeaway:** Compute the rate in the units the data give, then convert once at the end to the units the question names.",
+ "id": "bank-alg-458"
+}

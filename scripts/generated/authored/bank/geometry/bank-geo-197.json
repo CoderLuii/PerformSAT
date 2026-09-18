@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-197",
+ "question": "Two similar pentagons have perimeters of $30$ centimeters and $42$ centimeters. What is the ratio of the area of the smaller pentagon to the area of the larger pentagon?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5:7$"
+  },
+  {
+   "id": "B",
+   "text": "$25:49$"
+  },
+  {
+   "id": "C",
+   "text": "$49:25$"
+  },
+  {
+   "id": "D",
+   "text": "$125:343$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the perimeter ratio unsquared",
+  "C": "squares but reverses the order",
+  "D": "cubes the linear ratio"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Similar Figures Area Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Perimeter is a length, so the linear ratio is $\\frac{30}{42} = \\frac{5}{7}$. Areas scale by the square: $\\frac{25}{49}$.\n\n**The Full Solution:**\nStep 1: For similar figures, corresponding sides and perimeters share the same ratio, so $k = \\frac{30}{42}$.\nStep 2: Reduce: $\\frac{30}{42} = \\frac{5}{7}$.\nStep 3: Square it for the area ratio: $\\left(\\frac{5}{7}\\right)^2 = \\frac{25}{49}$, or $25:49$.\n\nVerification: if a side of the smaller pentagon is $5u$, the corresponding side of the larger is $7u$, and the areas are proportional to $25u^2$ and $49u^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5:7$): stops at the reduced perimeter ratio instead of squaring it.\n* Choice C ($49:25$): squares correctly but reports larger to smaller.\n* Choice D ($125:343$): cubes the ratio, the scaling law for volume rather than area.\n\n**Test Day Takeaway:** Reduce the linear ratio before squaring — $\\frac{30}{42}$ squared is awkward, but $\\frac{5}{7}$ squared is immediate."
+}

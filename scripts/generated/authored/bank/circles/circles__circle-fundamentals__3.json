@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "Point $M$ is the center of a circle, and point $N$ lies on that circle. If $MN = 9.5$, what is the length of a diameter of the circle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4.75$"
+  },
+  {
+   "id": "B",
+   "text": "$9.5$"
+  },
+  {
+   "id": "C",
+   "text": "$19$"
+  },
+  {
+   "id": "D",
+   "text": "$90.25$"
+  }
+ ],
+ "correctAnswer": "C",
+ "hint": "Decide what kind of segment $\\overline{MN}$ is before you convert anything.",
+ "distractorNotes": {
+  "A": "treats MN as a diameter",
+  "B": "reports the radius",
+  "D": "squares MN"
+ },
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** $\\overline{MN}$ runs from the center to a point on the circle, so it is a radius; the diameter is $2(9.5) = 19$.\n\n**The Full Solution:**\nStep 1: A radius is a segment from the center to any point on the circle, so $MN = 9.5$ is a radius.\nStep 2: A diameter is twice a radius: $d = 2r = 2(9.5)$.\nStep 3: $d = 19$. Check: $\\frac{19}{2} = 9.5$, which matches $MN$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($4.75$): halves $MN$, treating the given segment as a diameter rather than a radius.\n* Choice B ($9.5$): reports the radius itself and skips the conversion the question asks for.\n* Choice D ($90.25$): squares $9.5$, importing the $r^2$ from the area formula into a length question.\n\n**Test Day Takeaway:** Center-to-circle is always a radius. Classify the segment first; the arithmetic afterwards is one step."
+}

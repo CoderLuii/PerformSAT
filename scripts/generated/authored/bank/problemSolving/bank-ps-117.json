@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-117",
+  "question": "In a mortar mix, the ratio of the mass of sand to the mass of cement is $3 : 5$. A batch of this mix has a mass of $96$ kilograms. What is the mass, in kilograms, of the sand in the batch?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$12$"
+    },
+    {
+      "id": "B",
+      "text": "$36$"
+    },
+    {
+      "id": "C",
+      "text": "$57.6$"
+    },
+    {
+      "id": "D",
+      "text": "$60$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "96/8 = 12, the mass of one part",
+    "C": "96(3/5) = 57.6, treating 3 : 5 as part to whole",
+    "D": "60 kilograms is the cement, the other part"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The batch has $3 + 5 = 8$ parts, so one part is $\\dfrac{96}{8} = 12$ kilograms and the sand is $3(12) = 36$ kilograms.\n\n**The Full Solution:**\nStep 1: Write the masses as $3k$ kilograms of sand and $5k$ kilograms of cement, so $3k + 5k = 96$.\nStep 2: $8k = 96$, so $k = 12$.\nStep 3: The sand has mass $3k = 36$ kilograms.\nCheck: $36 + 60 = 96$, and $36 : 60$ reduces to $3 : 5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): This is $k$, the mass of a single part, not the three parts of sand.\n* Choice C ($57.6$): This computes $\\dfrac{3}{5}$ of $96$, treating $3 : 5$ as a part-to-whole ratio; the whole is $8$ parts, not $5$.\n* Choice D ($60$): This is the mass of the cement, the $5$-part share.\n\n**Test Day Takeaway:** A ratio compares parts to parts; convert it to a part-to-whole fraction, $\\dfrac{3}{8}$ here, before multiplying."
+}

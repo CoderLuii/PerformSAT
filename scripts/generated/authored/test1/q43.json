@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "inferences",
  "module": 2,
- "passage": "In When Languages Die: The Extinction of the World's Languages and the Erosion of Human Knowledge (2007), linguist K. David Harrison argues that endangered languages typically carry detailed ethnobiological taxonomies — fine-grained vocabularies for local plants, animals, and ecological relationships that have accumulated through long observation by their speakers. Drawing on his fieldwork with small speech communities, Harrison further reports that when such communities shift to a dominant language without a corresponding effort to record these vocabularies in a systematic way, the taxonomies are not retained alongside the new language and pass out of use. Because Harrison treats those taxonomies as a body of empirical observation rather than as a matter of feeling, his account suggests that language endangerment can pose risks ______",
+ "passage": "When Nicaragua opened its first schools for deaf children in the late 1970s, students arrived with only the improvised home signs each had developed with hearing family members, and their teachers' attempts to instruct them in lipreading and fingerspelled Spanish largely failed. Within a decade, however, the students had developed a shared sign language among themselves — and linguists studying it noticed a striking generational pattern. The children who entered the community youngest, learning from older students' still-irregular signing, produced language that was more fluent and more grammatically systematic than the input they received, introducing consistent verb agreement and spatial devices their older peers' signing lacked. Since the youngest signers could not have copied these regularities from teachers, older students, or Spanish, the linguists reasoned that ______",
  "question": "Which choice most logically completes the text?",
  "choices": [
   {
    "id": "A",
-   "text": "that researchers in every field reliant on traditional knowledge must treat language documentation as the first priority of their fieldwork."
+   "text": "the youngest children's signing, though more systematic, must be considered a separate language in its own right rather than a further development of the sign language the older students had already created together."
   },
   {
    "id": "B",
-   "text": "whose seriousness does not depend on whether the affected community continues to express attachment to its ancestral language."
+   "text": "the older students must have secretly possessed a fully systematic grammar that they deliberately simplified when signing with younger children."
   },
   {
    "id": "C",
-   "text": "that any community shifting to a dominant language will, by virtue of that shift alone, have already lost access to the relevant ethnobiological knowledge."
+   "text": "sign languages develop grammatical regularity only in school settings where large numbers of deaf children are brought together for instruction."
   },
   {
    "id": "D",
-   "text": "that emerge only when speakers consciously reject the cultural identity associated with the language they once used."
+   "text": "the grammatical structure of the emerging language must have originated at least partly in the young learners themselves, whose acquisition process imposed systematicity their input did not contain."
   }
  ],
- "correctAnswer": "B",
- "explanation": "The passage establishes two premises: (1) Harrison argues that endangered languages carry detailed ethnobiological taxonomies — fine-grained vocabularies for local plants, animals, and ecological relationships — that he treats as a body of empirical observation, and (2) when communities shift to a dominant language without a corresponding effort to record these vocabularies systematically, the taxonomies are not retained and pass out of use. Because Harrison frames the loss as one of empirical observation rather than of feeling, the minimum inference the premises force is that the seriousness of language endangerment does not stand or fall with how the affected community happens to feel about its ancestral language; the empirical loss is a separate matter from the sentimental one. Choice B states exactly that hedged claim — the risks 'whose seriousness does not depend on whether the affected community continues to express attachment to its ancestral language' — without overreaching the evidence the premises actually supply.\n\nAt this difficulty, the test is sufficient-vs-necessary: the premises establish that the taxonomic knowledge is independent of sentiment and can be lost when systematic documentation is absent. They do not license sweeping claims about every community that shifts languages, every field that uses traditional knowledge, or about conscious rejection of cultural identity."
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** With every external source of the grammar eliminated, the only remaining origin for the added systematicity is the young learners' own acquisition process — and D concludes exactly that, no more.\n\n**The Full Solution:**\n- The passage eliminates external sources one by one: teachers' instruction failed; the older students' signing was \"still-irregular\" and lacked the devices in question; Spanish was inaccessible.\n- The youngest cohort's consistent verb agreement and spatial grammar exceeded all available input — so the systematicity must have come from the learners themselves.\n\n**Why the other choices are wrong:**\n- A: It turns a difference of degree into a difference of identity; the passage presents the youngest cohort's signing as a more systematic stage of the same shared language, not a new one.\n- B: It rescues an external source by inventing a hidden grammar the passage rules out — the older students' signing is described as genuinely irregular, not strategically simplified.\n- C: It generalizes far beyond the evidence — one community's history cannot establish what \"only\" school settings can do."
 }

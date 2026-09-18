@@ -1,0 +1,25 @@
+{
+  "id": 9026,
+  "passage": "For more than six centuries the English Exchequer recorded payments on notched hazel sticks. Each stick was split lengthwise, the payer keeping one half and the treasury the other, so that the two halves had to be matched before an account was settled. A single tally therefore served several ______: a receipt for money already handed over, a record the auditors could file, and a claim on future revenue that its holder could sell to someone else.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "expenses"
+    },
+    {
+      "id": "B",
+      "text": "ceremonies"
+    },
+    {
+      "id": "C",
+      "text": "functions"
+    },
+    {
+      "id": "D",
+      "text": "materials"
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** The colon introduces three different jobs one tally did — receipt, auditor’s record, saleable claim — and functions is the category word those three jobs belong to.\n\n**The Full Solution:**\n- The blank sits immediately before a colon, so the list after the colon defines it. Read the list first: a receipt, a record for the auditors, a claim its holder could sell.\n- None of those three is a substance, an occasion, or a payment. All three are things the stick did, so the blank must name a kind of use. Functions covers all three.\n- With a list after the blank, test each choice against every item. A word that fits one item and fails the others is out.\n\n**Why the other choices are wrong:**\n- A: An expense is money going out. A receipt for money already paid and a saleable claim are not expenses.\n- B: Nothing in the list is a ritual occasion; the sentence describes routine bookkeeping.\n- D: Materials would name what the tally was made from — hazel wood — rather than what it did."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 21,
+ "question": "The table lists four inputs and the corresponding outputs of a quadratic function $f$. For some constants $a$, $h$, and $k$, the equation $f(x) = a(x - h)^{2} + k$ holds for every real number $x$. What is the value of $f(9)$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "$0$",
+    "$7$"
+   ],
+   [
+    "$2$",
+    "$-5$"
+   ],
+   [
+    "$6$",
+    "$-5$"
+   ],
+   [
+    "$8$",
+    "$7$"
+   ]
+  ]
+ },
+ "correctAnswer": "16",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**The correct answer is 16.**\n\n**The Fast Way (~50s):** The equal outputs at $x = 2$ and $x = 6$ put the axis of symmetry at $h = 4$; then $4a + k = -5$ and $16a + k = 7$ give $a = 1$ and $k = -9$, so $f(9) = 25 - 9 = 16$.\n\n**The Full Solution:**\nStep 1: Find $h$. A quadratic takes equal values at inputs equally far from the axis of symmetry. Since $f(2) = f(6) = -5$, the axis is halfway between them: $h = \\frac{2 + 6}{2} = 4$.\nStep 2: Find $a$ and $k$. Substituting $x = 2$ gives $a(2 - 4)^{2} + k = -5$, or $4a + k = -5$. Substituting $x = 0$ gives $a(0 - 4)^{2} + k = 7$, or $16a + k = 7$. Subtracting, $12a = 12$, so $a = 1$ and then $k = -5 - 4 = -9$.\nStep 3: Evaluate: $f(x) = (x - 4)^{2} - 9$, so $f(9) = (9 - 4)^{2} - 9 = 25 - 9 = 16$. Check against the table: $f(8) = (8 - 4)^{2} - 9 = 16 - 9 = 7$, which matches ✓\n\n**Common Mistakes:**\n* $44$: takes the axis of symmetry to be $x = 2$ because $-5$ is the smallest tabulated output, computing $(9 - 2)^{2} - 5 = 44$. The smallest listed output is not necessarily the minimum.\n* $20$: locates the axis at $x = 4$ correctly but keeps $k = -5$ from the table instead of solving for the true minimum $-9$, computing $25 - 5 = 20$.\n* $-4$: forgets to square the difference, computing $(9 - 4) + (-9) = -4$.\n\n**Test Day Takeaway:** Two inputs with the same output hand you the axis of symmetry for free; average them to get $h$, then use any two table rows to solve for $a$ and $k$ before evaluating anywhere else."
+}

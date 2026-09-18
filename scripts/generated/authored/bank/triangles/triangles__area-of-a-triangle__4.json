@@ -1,0 +1,42 @@
+{
+ "id": 4,
+ "question": "A right triangle has a hypotenuse of length $17$ centimeters and one leg of length $8$ centimeters. What is the area, in square centimeters, of the triangle?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "sideLabels": [
+    "8",
+    "",
+    "17"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$60$"
+  },
+  {
+   "id": "B",
+   "text": "$68$"
+  },
+  {
+   "id": "C",
+   "text": "$120$"
+  },
+  {
+   "id": "D",
+   "text": "$136$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses the hypotenuse as the second leg, computing $\\frac{1}{2}(8)(17)$",
+  "C": "finds the missing leg correctly but omits the factor $\\frac{1}{2}$",
+  "D": "multiplies the leg by the hypotenuse and also omits the $\\frac{1}{2}$"
+ },
+ "correctAnswer": "A",
+ "hint": "The two perpendicular sides are the base and the height, and only one of them is given.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~35s):** The missing leg is $\\sqrt{17^2 - 8^2} = 15$, so the area is $\\frac{1}{2}(8)(15) = 60$.\n\n**The Full Solution:**\nStep 1: The legs of a right triangle are perpendicular, so they serve as base and height; find the second leg first.\nStep 2: By the Pythagorean theorem, $8^2 + b^2 = 17^2$, so $b^2 = 289 - 64 = 225$ and $b = 15$.\nStep 3: Area $= \\frac{1}{2}(8)(15) = 60$ square centimeters.\n\nVerification: $8^2 + 15^2 = 64 + 225 = 289 = 17^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($68$): uses the hypotenuse as the second leg, computing $\\frac{1}{2}(8)(17)$.\n* Choice C ($120$): finds the missing leg correctly but omits the factor $\\frac{1}{2}$.\n* Choice D ($136$): multiplies the leg by the hypotenuse and also omits the $\\frac{1}{2}$.\n\n**Test Day Takeaway:** The legs of a right triangle are its base and height — the hypotenuse is never a height."
+}

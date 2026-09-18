@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "standardized"
-    },
-    {
-      "id": "B",
-      "text": "prolonged"
-    },
-    {
-      "id": "C",
-      "text": "restored"
-    },
-    {
-      "id": "D",
-      "text": "diminished"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"diminished.\" The clause after the colon explains the blank: the same hours of daytime sleep \"yields less\" recovery, so its restorative value is reduced. \"Diminished\" names that reduction. \"Restored\" points the wrong way, since the sentence is about value lost, not regained; \"prolonged\" concerns length, not worth; and \"standardized\" describes making something uniform, which has no bearing on how much recovery the sleep provides.",
-  "passage": "Public-health researchers studying the long-term effects of shift work have begun to distinguish between the total hours a person sleeps and the timing of that sleep. A worker on a rotating night schedule may log a full eight hours during the day, yet because that sleep falls out of phase with the body's internal clock, its restorative value can be ______: the same number of hours yields less of the metabolic and cognitive recovery that nighttime sleep provides.",
-  "_meta": {
-    "anchor": "epidemiology of sleep: circadian timing vs. total sleep duration in shift work"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "recovered"
   },
-  "id": 1128,
-  "module": 2
+  {
+   "id": "B",
+   "text": "fluctuated"
+  },
+  {
+   "id": "C",
+   "text": "intensified"
+  },
+  {
+   "id": "D",
+   "text": "contracted"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The colon's explanation defines the blank: a workforce that had grown with the telephone \"now stopped growing with it.\" Demand for new operators shrank — it \"contracted.\"\n\n**The Full Solution:**\n- The subject is \"the demand for new operators\" as dial service spread — the machines were absorbing the work operators had done.\n- The clause after the colon describes the end of growth, and the adverb \"steadily\" requires a single sustained direction, not a wobble.\n- \"Contracted\" — steadily diminished — matches both the mechanism and the adverb.\n\n**Why the other choices are wrong:**\n- A: \"Recovered\" implies demand had earlier fallen and was rebounding; the text describes the opposite arc.\n- B: \"Fluctuated\" means moved up and down, which contradicts \"steadily\" and the one-way spread of dial service.\n- C: \"Intensified\" reverses the logic — machines taking over connections would not raise the need for new operators.",
+ "passage": "Telephone companies began installing automatic exchanges in the 1920s, allowing subscribers to dial numbers directly instead of asking an operator to make each connection. The new switches did not eliminate operators overnight; long-distance and directory calls still required them for decades. But as dial service spread from city to city, the demand for new operators steadily ______: a workforce that had grown with every year of the telephone's expansion now stopped growing with it.",
+ "_meta": {
+  "anchor": "telephone switchboard operators — dial conversion and shrinking demand",
+  "distractors": {
+   "A": "reversed arc — implies rebound",
+   "B": "contradicts 'steadily'",
+   "C": "reversed direction"
+  }
+ },
+ "id": 1128,
+ "module": 2
 }

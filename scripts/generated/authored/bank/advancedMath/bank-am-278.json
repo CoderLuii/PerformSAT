@@ -1,0 +1,6 @@
+{
+  "question": "An investor's account pays $4\\%$ annual interest compounded semiannually. Exactly two years after the account was opened, it holds $\\$8{,}659.46$. How many dollars were originally deposited?",
+  "correctAnswer": "8000",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**The correct answer is $8000$.**\n\n**The Fast Way (~30s):** Two years is four periods at $2\\%$, so divide: $8659.46/(1.02)^{4}=8659.46/1.08243216=8{,}000$.\n\n**The Full Solution:**\nStep 1: Semiannual compounding at $4\\%$ per year uses a periodic rate of $2\\%$, so the factor per period is $1.02$.\nStep 2: Two years contain $4$ periods, so the account value is $P(1.02)^{4}$, where $P$ is the deposit.\nStep 3: Solve $P(1.08243216)=8659.46$, giving $P=8{,}000$. Check: $8000\\cdot 1.02=8160$, then $8323.20$, then $8489.66$, then $\\$8{,}659.46$ ✓\n\n**Common Mistakes:**\n* $8006$: divided by $(1.04)^{2}$, compounding once a year instead of twice.\n* $8323$: divided by $(1.02)^{2}$, using two periods instead of four.\n* $9373$: multiplied by $(1.02)^{4}$ instead of dividing.\n\n**Test Day Takeaway:** Working backwards from a future value divides by the growth factor — and the number of periods, not the number of years, is the exponent.",
+  "id": "bank-am-278"
+}

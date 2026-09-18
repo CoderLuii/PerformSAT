@@ -1,0 +1,52 @@
+{
+ "id": 4,
+ "question": "The table gives the dimensions of two right rectangular prisms, $P$ and $Q$. The volume of prism $Q$ is $k$ times the volume of prism $P$. What is the value of $k$?",
+ "questionTable": {
+  "headers": [
+   "Prism",
+   "Length (cm)",
+   "Width (cm)",
+   "Height (cm)"
+  ],
+  "rows": [
+   [
+    "P",
+    "8",
+    "5",
+    "3"
+   ],
+   [
+    "Q",
+    "16",
+    "2.5",
+    "3"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{1}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{5}{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses only the halved width",
+  "C": "uses only the doubled length",
+  "D": "adds the two changes, $2 + \\frac{1}{2}$, instead of multiplying them"
+ },
+ "correctAnswer": "B",
+ "hint": "Work out each volume on its own before comparing them.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** Both prisms have volume $120$ cubic centimeters, so $k = 1$.\n\n**The Full Solution:**\nStep 1: Prism $P$: $V = 8 \\cdot 5 \\cdot 3 = 120$ cubic centimeters.\nStep 2: Prism $Q$: $V = 16 \\cdot 2.5 \\cdot 3 = 120$ cubic centimeters.\nStep 3: So $k = \\frac{120}{120} = 1$.\n\nVerification: The length doubled while the width was halved, and $2 \\cdot \\frac{1}{2} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{2}$): uses only the halved width.\n* Choice C ($2$): uses only the doubled length.\n* Choice D ($\\frac{5}{2}$): adds the two changes, $2 + \\frac{1}{2}$, instead of multiplying them.\n\n**Test Day Takeaway:** Scale factors on different dimensions multiply, so a doubling and a halving cancel exactly."
+}

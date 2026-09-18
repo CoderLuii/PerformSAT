@@ -1,0 +1,6 @@
+{
+  "question": "A truss analysis produces the equation $4x^{2}+7=12x$. After this equation is written in standard form, what is the value of its discriminant?",
+  "correctAnswer": "32",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**The correct answer is $32$.**\n\n**The Fast Way (~15s):** In standard form the equation is $4x^{2}-12x+7=0$, so the discriminant is $144-112=32$.\n\n**The Full Solution:**\nStep 1: Move every term to one side: $4x^{2}-12x+7=0$.\nStep 2: Read the coefficients: $a=4$, $b=-12$, $c=7$.\nStep 3: Compute $b^{2}-4ac=144-4(4)(7)=144-112=32$. Check: the solutions are $\\dfrac{12\\pm\\sqrt{32}}{8}$, which are real and distinct ✓\n\n**Common Mistakes:**\n* $-112$: left $12x$ on the right side and used $b=0$.\n* $256$: moved the terms the wrong way, using $c=-7$.\n* $144$: computed $b^{2}$ only and never subtracted $4ac$.\n\n**Test Day Takeaway:** The discriminant formula assumes standard form — rearrange first, then read $a$, $b$, and $c$ with their signs.",
+  "id": "bank-am-133"
+}

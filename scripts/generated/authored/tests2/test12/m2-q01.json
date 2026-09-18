@@ -1,0 +1,48 @@
+{
+ "id": 1,
+ "question": "Two rectangular settling basins at a water-treatment plant have the widths and perimeters listed in the table. What is the area, in square meters, of basin A?",
+ "questionTable": {
+  "headers": [
+   "Basin",
+   "Width (m)",
+   "Perimeter (m)"
+  ],
+  "rows": [
+   [
+    "A",
+    "$18$",
+    "$96$"
+   ],
+   [
+    "B",
+    "$12$",
+    "$76$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$312$"
+  },
+  {
+   "id": "B",
+   "text": "$540$"
+  },
+  {
+   "id": "C",
+   "text": "$864$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}728$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "computes the area of basin B (26 x 12 = 312) instead of basin A",
+  "C": "uses half the perimeter, 48, as the length instead of subtracting the width: 48 x 18",
+  "D": "multiplies the full perimeter by the width: 96 x 18"
+ },
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice B is correct.** Basin A has width $18$ m and perimeter $96$ m, so its length is $30$ m and its area is $540$ square meters.\n\n**The Fast Way (~20s):** Half of $96$ is $48$, and $48 - 18 = 30$. Then $30 \\times 18 = 540$.\n\n**The Full Solution:**\nStep 1: For a rectangle, $P = 2(\\ell + w)$, so $96 = 2(\\ell + 18)$ and $\\ell + 18 = 48$.\nStep 2: Subtract the width: $\\ell = 48 - 18 = 30$ meters.\nStep 3: Area $= \\ell w = 30 \\times 18 = 540$ square meters. Check: the perimeter of a $30$ by $18$ rectangle is $2(30 + 18) = 96$ meters, matching the table row for basin A. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($312$): the area of basin B, whose length is $\\frac{76}{2} - 12 = 26$ and whose area is $26 \\times 12 = 312$ — the wrong row of the table.\n* Choice C ($864$): treats half the perimeter, $48$, as the length and multiplies $48 \\times 18 = 864$, forgetting that half the perimeter is length PLUS width.\n* Choice D ($1{,}728$): multiplies the full perimeter by the width, $96 \\times 18 = 1{,}728$, which is not an area formula at all.\n\n**Test Day Takeaway:** Half a rectangle's perimeter is $\\ell + w$, not $\\ell$. Peel off the width before you multiply."
+}

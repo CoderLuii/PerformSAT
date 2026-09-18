@@ -5,30 +5,31 @@
  "band": 3,
  "domain": "standard-english-conventions",
  "skill": "boundaries",
+ "type": "multiple-choice",
+ "passage": "Cycads dominated the understories of the world's forests during the age of the ______ today the group survives only as a few hundred slow-growing species scattered across the tropics and subtropics.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "songs, and"
+   "text": "dinosaurs, but"
   },
   {
    "id": "B",
-   "text": "songs,"
+   "text": "dinosaurs but"
   },
   {
    "id": "C",
-   "text": "songs"
+   "text": "dinosaurs, however"
   },
   {
    "id": "D",
-   "text": "songs; and"
+   "text": "dinosaurs,"
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A, \"songs, and\". The blank joins two independent clauses: \"Roger Payne's 1970 recordings revealed that male humpback whales produce long, patterned songs\" and \"the discovery helped transform public attitudes toward whales.\" The standard way to join two independent clauses is a comma followed by a coordinating conjunction, which is what A supplies. A comma alone (B) makes a comma splice, and no punctuation (C) makes a run-on. A semicolon before a coordinating conjunction (D) is incorrect, because a semicolon already does the work the conjunction would do and the two should not be combined.",
+ "explanation": "**Choice A is correct.** Two independent clauses — \"Cycads dominated...\" and \"today the group survives...\" — are being joined, and a comma plus the coordinating conjunction \"but\" is one of the standard ways to join them.\n\n**The Full Solution:**\n- Both halves can stand alone as sentences, so the boundary between them needs full strength: a period, a semicolon, or a comma with a coordinating conjunction.\n- A supplies the comma-plus-conjunction option, and \"but\" fits the contrast between past dominance and present scarcity.\n\n**Why the other choices are wrong:**\n- B: A coordinating conjunction joining two independent clauses conventionally requires a comma before it; without one, the clauses run together.\n- C: \"However\" is a conjunctive adverb, not a conjunction — a comma before it cannot join two independent clauses, so this produces a comma splice.\n- D: A comma alone between the clauses is a comma splice outright.",
  "_meta": {
-  "anchor": "Roger Payne — marine biologist; 1970 humpback whale song recordings; comma plus coordinating conjunction"
- },
- "passage": "In the years before commercial whaling was widely restricted, a single set of recordings changed how the public imagined whales. Roger Payne's 1970 recordings revealed that male humpback whales produce long, patterned songs ______ the discovery helped transform public attitudes toward whales and energized the campaign against commercial whaling.",
- "type": "multiple-choice"
+  "anchor": "Cycads — Mesozoic dominance vs. relict present; comma plus coordinating conjunction",
+  "rule": "comma + coordinating conjunction between independent clauses"
+ }
 }

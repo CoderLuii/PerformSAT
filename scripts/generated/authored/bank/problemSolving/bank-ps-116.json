@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-116",
+  "question": "A printmaker mixes an ink in which the ratio of pigment to extender base is $2$ to $13$ by volume. To prepare $630$ milliliters of this ink, how many milliliters of pigment does the printmaker need?",
+  "correctAnswer": "84",
+  "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**The correct answer is $84$.**\n\n**The Fast Way (~15s):** The ink is $2 + 13 = 15$ parts, so one part is $\\frac{630}{15} = 42$ milliliters and the pigment is $2 \\times 42 = 84$.\n\n**The Full Solution:**\nStep 1: Count the parts. Pigment to extender base is $2$ to $13$, so the whole mix is $2 + 13 = 15$ parts.\nStep 2: Size one part. $\\frac{630}{15} = 42$ milliliters per part.\nStep 3: Take the pigment share and check. Pigment is $2$ parts: $2 \\times 42 = 84$ milliliters. The extender base is $13 \\times 42 = 546$, and $84 + 546 = 630$. ✓\n\n**Common Mistakes:**\n* Dividing by $2$ or by $13$ instead of by $15$ ignores that the ratio describes parts of a whole.\n* Answering $546$ gives the extender base, the other component.\n* Computing $630 \\times \\frac{2}{13}$ uses the pigment-to-base ratio instead of the pigment-to-total ratio.\n\n**Test Day Takeaway:** In a sum-of-parts ratio, divide the total by the SUM of the ratio numbers, then multiply by the part you want."
+}

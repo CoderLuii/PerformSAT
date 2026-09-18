@@ -1,0 +1,48 @@
+{
+  "id": 15,
+  "question": "The table summarizes the $180$ tape reels in a broadcast archive by tape width and by the decade in which each reel was recorded. If one of these reels is selected at random, which statement is true?",
+  "questionTable": {
+    "headers": [
+      "Tape width",
+      "1970s",
+      "1980s"
+    ],
+    "rows": [
+      [
+        "Quarter-inch",
+        "$48$",
+        "$27$"
+      ],
+      [
+        "Half-inch",
+        "$42$",
+        "$63$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The probability that the reel is half-inch is $\\frac{105}{180}$."
+    },
+    {
+      "id": "B",
+      "text": "The probability that the reel was recorded in the 1980s is $\\frac{63}{180}$."
+    },
+    {
+      "id": "C",
+      "text": "The probability that the reel is quarter-inch is $\\frac{48}{90}$."
+    },
+    {
+      "id": "D",
+      "text": "The probability that the reel was recorded in the 1970s is $\\frac{42}{105}$."
+    }
+  ],
+  "distractorNotes": {
+    "B": "keeps the grand total but counts one cell instead of the whole 1980s column",
+    "C": "divides the quarter-inch 1970s cell by the 1970s column total instead of putting the quarter-inch row total over 180",
+    "D": "divides the half-inch 1970s cell by the half-inch row total instead of putting the 1970s column total over 180"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice A is correct.** The archive holds $42 + 63 = 105$ half-inch reels among the $180$ reels, so the probability is $\\frac{105}{180}$.\n\n**The Fast Way (~25s):** A marginal probability is a whole row total over the grand total: the half-inch row sums to $105$, and the archive holds $180$ reels.\n\n**The Full Solution:**\nStep 1: Total each row and each column. Quarter-inch: $48 + 27 = 75$. Half-inch: $42 + 63 = 105$. The 1970s column: $48 + 42 = 90$. The 1980s column: $27 + 63 = 90$. All four cells sum to $180$.\nStep 2: The event \"the reel is half-inch\" covers both cells of the half-inch row, so its count is $105$, not either cell on its own.\nStep 3: Divide by the grand total: $\\frac{105}{180} = \\frac{7}{12}$. Check the complement: quarter-inch is $\\frac{75}{180} = \\frac{5}{12}$, and $\\frac{7}{12} + \\frac{5}{12} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{63}{180}$): keeps the correct grand total but counts only the half-inch reels from the 1980s. That column also holds $27$ quarter-inch reels, so its count is $90$.\n* Choice C ($\\frac{48}{90}$): divides one cell by its column total, which answers a different question — the chance that a 1970s reel is quarter-inch. The marginal probability is $\\frac{75}{180}$.\n* Choice D ($\\frac{42}{105}$): divides one cell by its row total. That gives the chance that a half-inch reel is from the 1970s, not the chance that any reel is, which is $\\frac{90}{180}$.\n\n**Test Day Takeaway:** A marginal probability always sits over the grand total with a whole row or column on top. A single cell in the numerator makes it a joint probability; a row or column total in the denominator makes it a conditional one."
+}

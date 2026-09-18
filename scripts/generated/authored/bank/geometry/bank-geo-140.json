@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-140",
+ "question": "The basin of a paint tray is a rectangular prism; its rectangular floor measures $18$ centimeters by $25$ centimeters, and the walls stand $4$ centimeters high. How many cubic centimeters does the basin hold?",
+ "correctAnswer": "1800",
+ "explanation": "**SAT Pattern: Volume of a Rectangular Prism**\n\n**The correct answer is $1800$.**\n\n**The Fast Way (~15s):** The floor covers $18 \\times 25 = 450$ square centimeters, and $450 \\times 4 = 1{,}800$.\n\n**The Full Solution:**\nStep 1: The floor is a rectangle of area $18 \\times 25 = 450$ square centimeters.\nStep 2: The basin is a prism on that floor, so its volume is the floor area times the wall height: $450 \\times 4$.\nStep 3: $450 \\times 4 = 1{,}800$ cubic centimeters.\n\nCheck: Multiplying in a different order gives the same result: $18 \\times 4 = 72$ and $72 \\times 25 = 1{,}800$. $\\checkmark$\n\n**Common Mistakes:**\n* Answering $450$ by stopping at the floor area and never multiplying by the height.\n* Answering $47$ by adding the three dimensions instead of multiplying them.\n* Answering $900$ by halving the product, a step that belongs to a triangular prism.\n\n**Test Day Takeaway:** Volume of any prism is base area times height; find the base area first and the rest is one multiplication."
+}

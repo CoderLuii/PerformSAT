@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-430",
+ "question": "A rinse-tank model uses $kx = -84$, where $x$ is the number of rinse cycles run and $k$ is the change in fabric mass, in grams, per cycle. The model is satisfied when $x = 12$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-96$"
+  },
+  {
+   "id": "B",
+   "text": "$-72$"
+  },
+  {
+   "id": "C",
+   "text": "$-7$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "subtracts 12 from -84 instead of dividing",
+  "B": "adds 12 to -84 instead of dividing",
+  "D": "divides correctly but drops the negative sign"
+ },
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Substituting gives $12k = -84$, so $k = \\frac{-84}{12} = -7$.\n\n**The Full Solution:**\n\nStep 1: Substitute $x = 12$ into the model: $k(12) = -84$.\n\nStep 2: Divide both sides by $12$: $k = \\frac{-84}{12}$.\n\nStep 3: A negative divided by a positive is negative, so $k = -7$ grams per cycle. Check: $(-7)(12) = -84$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-96$): computes $-84 - 12$, subtracting where division is required.\n* Choice B ($-72$): computes $-84 + 12$, adding where division is required.\n* Choice D ($7$): divides correctly but drops the negative sign, which would describe mass being gained rather than lost.\n\n**Test Day Takeaway:** Keep the sign with the number through the division; a negative total over a positive count stays negative."
+}

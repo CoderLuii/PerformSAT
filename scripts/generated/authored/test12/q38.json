@@ -1,31 +1,31 @@
 {
-  "id": 1238,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "When the entrepreneur Malcom McLean shipped the first load of standardized metal containers in 1956, the innovation that mattered was not the box itself but everything the box made possible. Before containerization, cargo was loaded piece by piece by large gangs of dockworkers, a slow process that kept ships idle in port for days. McLean's insight was that goods packed once into a standard container at the factory could pass from truck to ship to railcar without being unpacked along the way. Realizing the savings, however, required more than a container: it demanded standardized box sizes, redesigned ships, specialized cranes, and reorganized ports, all adopted widely enough to interlock. Economists who study trade argue that this whole system, once in place, did more to lower the cost of moving goods across oceans than decades of tariff reductions had.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Before containerization, ocean cargo had to be loaded piece by piece by large gangs of dockworkers, a slow and expensive process that kept ships sitting idle in port for days at a time."
-    },
-    {
-      "id": "B",
-      "text": "Malcom McLean began his working career in the trucking business before he eventually turned his attention to the problem of moving cargo by ship."
-    },
-    {
-      "id": "C",
-      "text": "The value of McLean's container lay in the standardized, interlocking system it required—box sizes, ships, cranes, and ports—which lowered shipping costs more than decades of tariff cuts had."
-    },
-    {
-      "id": "D",
-      "text": "Economists who study international trade have generally concluded that reducing tariffs does less to promote trade than improving transportation does."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage argues that what mattered was not the box alone but the whole interlocking system—standard sizes, ships, cranes, ports—whose combined effect on shipping costs outweighed decades of tariff cuts. C states that. A describes the old method the system replaced, a supporting detail. B gives a biographical fact about McLean. D generalizes one comparison from the passage into a broad claim about trade policy that overshoots the main point."
+ "id": 1238,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "When the maritime boards of the nineteenth century took charge of their nations' coastal lights, they confronted a problem no single lighthouse could solve. A light helps a navigator only if the navigator knows which light it is; as coasts grew crowded with towers, one white flash looked much like another, and a confident misidentification could wreck a ship as surely as darkness could. The boards' answer was to treat the coast as a system. Each tower received its own character — a distinctive rhythm of flashes for the night and, for daylight, a painted daymark of stripes, checks, or bands unlike any neighbor's — and the full assignments were published in light lists carried aboard every ship. What made any one lighthouse trustworthy, the boards had grasped, was not the power of its lamp but its difference from every other light in view.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "As nineteenth-century coasts grew crowded with lighthouses, the white flash of one tower at night could easily be mistaken for the flash of another."
+  },
+  {
+   "id": "B",
+   "text": "Painted daymarks of stripes, checks, and bands allowed navigators to tell neighboring lighthouse towers apart during the hours of daylight."
+  },
+  {
+   "id": "C",
+   "text": "Nineteenth-century maritime boards made lighthouses trustworthy by treating the coast as a system of distinct, published identities rather than as a set of individually powerful lamps."
+  },
+  {
+   "id": "D",
+   "text": "Maritime boards eventually concluded that a lighthouse's nighttime rhythm of flashes mattered far more to practicing navigators than any pattern that could be painted on its tower for daylight."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage builds to a system-over-object point, stated outright in its last sentence: a lighthouse's trustworthiness lay \"not [in] the power of its lamp but [in] its difference from every other light in view\" — a difference engineered coast-wide and published in the light lists.\n\n**The Full Solution:**\n- The problem: identical-looking lights invited fatal misidentification, and no single tower, however bright, could fix that.\n- The response: \"treat the coast as a system\" — unique flash rhythms, unique daymarks, and published assignments aboard every ship.\n- The conclusion: what made each tower useful was its coordinated difference from its neighbors. C captures the whole arc — the system, its published identities, and the demotion of raw lamp power.\n\n**Why the other choices are wrong:**\n- A: It states the problem only — the setup for the main idea, not the idea.\n- B: It describes one component (daymarks) doing one job (daylight identification), a supporting detail.\n- D: It invents a ranking of night signals over day marks that the passage never draws; the two are presented as partners in the same system."
 }

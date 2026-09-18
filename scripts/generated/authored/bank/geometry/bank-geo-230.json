@@ -1,0 +1,40 @@
+{
+ "id": "bank-geo-230",
+ "question": "Stone edging runs along arc $AB$ of a campus reflecting pool, as drawn, and the straight distance from $A$ to $B$ is $24$ feet. What is the length, in feet, of the edging?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 60,
+   "angleLabel": "60°",
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$8\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$16\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$48\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats the 24-foot chord as the diameter, using r = 12",
+  "C": "divides the central angle by 180 instead of 360, giving 16 pi",
+  "D": "reports the full circumference 2 pi (24) = 48 pi"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Arc Length**\n\n**Choice B is correct.**\n\n**The Fast Way (~55s):** A $60°$ central angle makes triangle $OAB$ equilateral, so $r=24$; the arc is $\\frac{1}{6}(48\\pi)=8\\pi$ feet.\n\n**The Full Solution:**\n\nStep 1: Use the central angle. $\\overline{OA}$ and $\\overline{OB}$ are radii, so triangle $OAB$ is isosceles, and a $60°$ vertex angle forces the base angles to be $60°$ as well.\n\nStep 2: Read off the radius. An equilateral triangle makes $OA=OB=AB=24$ feet, so $r=24$ and $C=2\\pi(24)=48\\pi$ feet.\n\nStep 3: Take the fraction. $\\frac{60}{360}=\\frac{1}{6}$, so arc $AB=\\frac{1}{6}(48\\pi)=8\\pi$ feet.\n\nCheck: six $60°$ arcs rebuild the circle, and $6(8\\pi)=48\\pi$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($4\\pi$): treats the $24$-foot chord as a diameter, using $r=12$.\n* Choice C ($16\\pi$): divides the central angle by $180$ instead of $360$, tripling the fraction to $\\frac{1}{3}$.\n* Choice D ($48\\pi$): reports the entire circumference instead of the $60°$ portion.\n\n**Test Day Takeaway:** A $60°$ central angle makes the chord equal to the radius — that is how a chord length hands you $r$ without any trigonometry."
+}

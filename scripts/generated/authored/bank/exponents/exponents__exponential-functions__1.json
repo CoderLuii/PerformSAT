@@ -1,0 +1,53 @@
+{
+ "question": "The table lists a yeast culture's mass $f(x)$, in grams, after $x$ hours. Which equation defines $f$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "$0$",
+    "$5$"
+   ],
+   [
+    "$1$",
+    "$15$"
+   ],
+   [
+    "$2$",
+    "$45$"
+   ],
+   [
+    "$3$",
+    "$135$"
+   ]
+  ]
+ },
+ "hint": "Look at what each mass is multiplied by to reach the next one.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$f(x) = 5(3)^x$"
+  },
+  {
+   "id": "B",
+   "text": "$f(x) = 5(10)^x$"
+  },
+  {
+   "id": "C",
+   "text": "$f(x) = 3(5)^x$"
+  },
+  {
+   "id": "D",
+   "text": "$f(x) = 15(3)^x$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses the difference 15 - 5 = 10 as the growth factor",
+  "C": "swaps the starting mass and the growth factor",
+  "D": "uses the mass at x = 1 as the starting mass"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** The mass starts at $5$ and triples each hour, so $f(x) = 5(3)^x$.\n\n**The Full Solution:**\nStep 1: At $x = 0$ the mass is $5$ grams, so the coefficient in front is $5$.\nStep 2: Each hour the mass multiplies by the same factor: $\\dfrac{15}{5} = 3$, $\\dfrac{45}{15} = 3$, $\\dfrac{135}{45} = 3$.\nStep 3: An exponential with start $5$ and factor $3$ is $f(x) = 5(3)^x$. Check at $x = 3$: $5(27) = 135$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($5(10)^x$): uses the first difference $15 - 5 = 10$ as the factor, which would give $50$ at $x = 1$.\n* Choice C ($3(5)^x$): swaps the starting mass and the growth factor, giving $3$ grams at $x = 0$.\n* Choice D ($15(3)^x$): starts from the mass at $x = 1$, so every value is three times too large.\n\n**Test Day Takeaway:** In a table with equal time steps, divide consecutive outputs — a constant quotient means exponential."
+}

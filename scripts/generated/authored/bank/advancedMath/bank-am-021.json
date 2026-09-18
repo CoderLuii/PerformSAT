@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-021",
+  "question": "A workshop's weekly profit, in dollars, is modeled by $P(n) = -3n^2 + 72n - 180$, where $n$ is the number of chairs built that week. What is the greatest weekly profit, in dollars, this model predicts?",
+  "correctAnswer": "252",
+  "explanation": "**SAT Pattern: Max Profit via Vertex**\n\n**The correct answer is $252$.**\n\n**The Fast Way (~25s):** The peak is at $n = -\\dfrac{72}{2(-3)} = 12$, and $P(12) = -432 + 864 - 180 = 252$ dollars.\n\n**The Full Solution:**\nStep 1: The leading coefficient $-3$ is negative, so the parabola opens downward and the vertex gives the greatest profit.\nStep 2: The vertex input is $n = -\\dfrac{b}{2a} = -\\dfrac{72}{-6} = 12$ chairs.\nStep 3: Evaluate: $P(12) = -3(144) + 72(12) - 180 = -432 + 864 - 180 = 252$. Check a neighbor: $P(11) = -363 + 792 - 180 = 249 < 252$. $\\checkmark$\n\n**Common Mistakes:** Reporting $12$, the number of chairs at which the maximum occurs, instead of the profit itself. Losing the sign in $-\\frac{b}{2a}$ and evaluating $P(-12) = -432 - 864 - 180 = -1{,}476$.\n\n**Test Day Takeaway:** \"How much\" wants the vertex's OUTPUT, so finding $-\\dfrac{b}{2a}$ is only half the work — substitute it back in."
+}

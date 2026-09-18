@@ -1,0 +1,30 @@
+{
+ "id": 18,
+ "question": "After $4$ months a payroll deduction plan has set aside \\$860, and after $9$ months it has set aside \\$1,785. Which function gives the amount $S(m)$, in dollars, set aside after $m$ months at a constant monthly rate?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$S(m) = 120m + 185$"
+  },
+  {
+   "id": "B",
+   "text": "$S(m) = 185m$"
+  },
+  {
+   "id": "C",
+   "text": "$S(m) = 215m$"
+  },
+  {
+   "id": "D",
+   "text": "$S(m) = 185m + 120$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the monthly amount and the constant term",
+  "B": "uses the correct monthly amount but drops the 120 dollar constant term",
+  "C": "divides 860 by 4 to get 215, folding the constant term into the rate"
+ },
+ "correctAnswer": "D",
+ "hint": "The two months given are five months apart.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~45s):** The plan gains $\\frac{1785 - 860}{9 - 4} = 185$ dollars a month, and $860 - 4(185) = 120$ is the amount already in place at month zero.\n\n**The Full Solution:**\nStep 1: The two data points are $(4,\\ 860)$ and $(9,\\ 1785)$, so the monthly rate is $\\frac{1{,}785 - 860}{9 - 4} = \\frac{925}{5} = 185$ dollars per month.\nStep 2: Write $S(m) = 185m + b$ and substitute $(4,\\ 860)$: $860 = 740 + b$, so $b = 120$ dollars.\nStep 3: The function is $S(m) = 185m + 120$.\n\nCheck: $S(9) = 185(9) + 120 = 1{,}665 + 120 = 1{,}785$ dollars. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($120m + 185$): swaps the monthly amount and the constant term; it gives \\$665 at month four.\n* Choice B ($185m$): has the right rate but assumes nothing was set aside before the plan's monthly transfers began.\n* Choice C ($215m$): divides \\$860 by four months, which folds the constant term into the rate; it gives \\$1,935 at month nine.\n\n**Test Day Takeaway:** Two points give the rate first; only then substitute one of them to recover the constant term."
+}

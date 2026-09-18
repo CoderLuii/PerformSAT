@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-184",
+  "question": "In the $xy$-plane, line $a$ passes through the points $(2, c)$ and $(5, c + 9)$, where $c$ is a constant. Line $b$ is perpendicular to line $a$ and passes through the point $(0, c)$. What is the slope of line $b$?",
+  "correctAnswer": "-1/3",
+  "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**The correct answer is $-\\dfrac{1}{3}$.**\n\n**The Fast Way (~20s):** The $c$ cancels in the rise: line $a$ rises $9$ over a run of $3$, so its slope is $3$. The perpendicular slope is $-\\dfrac{1}{3}$.\n\n**The Full Solution:**\nStep 1: Slope of line $a$: $\\dfrac{(c + 9) - c}{5 - 2} = \\dfrac{9}{3} = 3$. The unknown constant subtracts away.\nStep 2: Perpendicular lines have slopes whose product is $-1$, so line $b$ has slope $-\\dfrac{1}{3}$.\nStep 3: The point $(0, c)$ fixes where line $b$ sits but has no effect on its slope. Check: $3 \\cdot \\left(-\\dfrac{1}{3}\\right) = -1$. $\\checkmark$\n\n**Common Mistakes:** Entering $3$ (the slope of line $a$); entering $\\dfrac{1}{3}$ (reciprocal without the sign change); deciding the slope cannot be found because $c$ is unknown; entering $-3$ (sign change without the reciprocal).\n\n**Test Day Takeaway:** A parameter that appears in both $y$-coordinates cancels out of the slope. Compute the slope symbolically, then apply the negative reciprocal."
+}

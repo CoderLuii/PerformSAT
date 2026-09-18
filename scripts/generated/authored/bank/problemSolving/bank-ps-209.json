@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-209",
+  "question": "At a conference, $60\\%$ of the attendees are attending for the first time. Of those first-time attendees, $25\\%$ registered on site. What percent of all attendees are first-time attendees who registered on site?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$35\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$85\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the conditional percent 25% without scaling it to all attendees",
+    "C": "subtracts, 60 - 25",
+    "D": "adds the two percents, 60 + 25"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** $25\\%$ of $60\\%$ is $0.25 \\times 0.60 = 0.15$, or $15\\%$.\n\n**The Full Solution:**\nStep 1: The $25\\%$ is measured within the first-time attendees, not within all attendees, so it must be applied to the $60\\%$.\nStep 2: Multiply the two rates: $0.60 \\times 0.25 = 0.15$.\nStep 3: Convert to a percent: $15\\%$. Check with $100$ attendees: $60$ are first-time, and $25\\%$ of $60$ is $15$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($25\\%$): reports the rate within the first-time group as though it applied to everyone.\n* Choice C ($35\\%$): subtracts the percents, $60 - 25$, but \"of\" signals multiplication.\n* Choice D ($85\\%$): adds the percents, which would exceed the size of the first-time group itself.\n\n**Test Day Takeaway:** A percent of a percent multiplies. Test it on $100$ people — the joint group can never be larger than either group alone."
+}

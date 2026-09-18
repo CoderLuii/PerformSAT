@@ -1,0 +1,45 @@
+{
+  "id": "bank-alg-001",
+  "question": "The table gives the height, in centimeters, of a bamboo shoot on two days of a growth study. If the height increased at a constant rate, what was the rate of change, in centimeters per day, of the height?",
+  "questionTable": {
+    "headers": [
+      "Day",
+      "Height (cm)"
+    ],
+    "rows": [
+      [
+        "2",
+        "24"
+      ],
+      [
+        "6",
+        "48"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$6$"
+    },
+    {
+      "id": "C",
+      "text": "$8$"
+    },
+    {
+      "id": "D",
+      "text": "$24$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the change in height by the sum of the day numbers (24/8)",
+    "C": "divides the later height by the later day number (48/6)",
+    "D": "reports the change in height without dividing by the elapsed days"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Rate of Change from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The height rose $48 - 24 = 24$ centimeters over $6 - 2 = 4$ days, so the rate is $\\frac{24}{4} = 6$ centimeters per day.\n\n**The Full Solution:**\nStep 1: A constant rate of change is $\\frac{\\text{change in height}}{\\text{change in days}}$, using the two rows of the table as the points $(2, 24)$ and $(6, 48)$.\nStep 2: Change in height $= 48 - 24 = 24$ centimeters; change in days $= 6 - 2 = 4$ days.\nStep 3: Rate $= \\frac{24}{4} = 6$ centimeters per day. Check: starting at $24$ centimeters on day $2$, four more days at $6$ centimeters per day gives $24 + 4(6) = 48$ centimeters on day $6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): divides the $24$-centimeter change by $2 + 6 = 8$, the sum of the day numbers, instead of by the elapsed $4$ days.\n* Choice C ($8$): divides the later height by the later day, $\\frac{48}{6}$, which treats the relationship as proportional through the origin.\n* Choice D ($24$): stops at the change in height and never divides by the change in days.\n\n**Test Day Takeaway:** A rate from two data points is always a difference divided by a difference: subtract the outputs, subtract the inputs, then divide."
+}

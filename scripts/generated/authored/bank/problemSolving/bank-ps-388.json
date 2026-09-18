@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-388",
+  "question": "In a survey of $250$ residents, $40\\%$ own a bicycle. Of the residents who own a bicycle, $30\\%$ commute by bicycle at least once a week. How many of the residents surveyed commute by bicycle at least once a week?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$30$"
+    },
+    {
+      "id": "B",
+      "text": "$70$"
+    },
+    {
+      "id": "C",
+      "text": "$100$"
+    },
+    {
+      "id": "D",
+      "text": "$175$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "counts the bicycle owners who do not commute by bicycle, $70\\%$ of $100$",
+    "C": "stops after the first step and reports the number of bicycle owners",
+    "D": "applies $70\\%$ to all $250$ residents"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** $0.40(250) = 100$ bicycle owners, and $0.30(100) = 30$ of them commute by bicycle.\n\n**The Full Solution:**\nStep 1: Find the size of the subgroup: $40\\%$ of $250$ is $0.40(250) = 100$ bicycle owners.\nStep 2: The second percent applies to that subgroup, not to the whole survey: $30\\%$ of $100$ is $0.30(100) = 30$.\nStep 3: So $30$ residents commute by bicycle at least once a week. Check: $30$ is $12\\%$ of $250$, and $0.40(0.30) = 0.12$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($70$): counts the bicycle owners who do not commute by bicycle, $70\\%$ of $100$\n* Choice C ($100$): stops after the first step and reports the number of bicycle owners\n* Choice D ($175$): applies $70\\%$ to all $250$ residents\n\n**Test Day Takeaway:** A percent of a percent applies to the smaller group. Compute the subgroup first, then apply the second percent to it."
+}

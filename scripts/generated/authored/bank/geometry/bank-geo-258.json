@@ -1,0 +1,46 @@
+{
+ "id": "bank-geo-258",
+ "question": "The isosceles right triangle shown has a hypotenuse of length $16$. What is the area of the triangle?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "45°",
+    "",
+    "45°"
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "16"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$32$"
+  },
+  {
+   "id": "B",
+   "text": "$64$"
+  },
+  {
+   "id": "C",
+   "text": "$128$"
+  },
+  {
+   "id": "D",
+   "text": "$256$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses legs of 8",
+  "C": "omits the one-half",
+  "D": "squares the hypotenuse"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: 45-45-90 Triangle**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Each leg is $\\frac{16}{\\sqrt{2}} = 8\\sqrt{2}$, so the area is $\\frac{1}{2}(8\\sqrt{2})^2 = \\frac{1}{2}(128) = 64$.\n\n**The Full Solution:**\nStep 1: In a $45$-$45$-$90$ triangle the hypotenuse is a leg times $\\sqrt{2}$, so $s\\sqrt{2} = 16$ and $s = \\frac{16}{\\sqrt{2}} = 8\\sqrt{2}$.\nStep 2: The two legs are perpendicular, so they are the base and the height: area $= \\frac{1}{2}(8\\sqrt{2})(8\\sqrt{2})$.\nStep 3: $(8\\sqrt{2})^2 = 64 \\cdot 2 = 128$, so the area is $\\frac{1}{2}(128) = 64$. Check: $128 + 128 = 256 = 16^2$, confirming the leg length.\n\n**Why the wrong answers are tempting:**\n* Choice A ($32$): halves the hypotenuse to get legs of $8$, then computes $\\frac{1}{2}(8)(8)$.\n* Choice C ($128$): multiplies the two legs but omits the factor $\\frac{1}{2}$.\n* Choice D ($256$): squares the hypotenuse, which gives the sum of the squares of the legs, not an area.\n\n**Test Day Takeaway:** Divide the hypotenuse by $\\sqrt{2}$, never by $2$. The leg of a $45$-$45$-$90$ triangle is about $71\\%$ of the hypotenuse, not half."
+}

@@ -1,0 +1,25 @@
+{
+  "id": 2,
+  "question": "A seedling is $5$ centimeters tall when it is first measured, and it grows $2$ centimeters each week after that. Which equation gives the height $h$, in centimeters, of the seedling $w$ weeks after it is first measured?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$h = 2w$"
+    },
+    {
+      "id": "B",
+      "text": "$h = 2w + 5$"
+    },
+    {
+      "id": "C",
+      "text": "$h = 5 - 2w$"
+    },
+    {
+      "id": "D",
+      "text": "$h = 5w + 2$"
+    }
+  ],
+  "correctAnswer": "B",
+  "hint": "At $w = 0$ the seedling already has a height — the equation has to produce that value.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** Growth of $2$ centimeters per week gives $2w$, and the seedling starts at $5$: $h = 2w + 5$ — choice B.\n\n**The Full Solution:**\nStep 1: The height at the first measurement corresponds to $w = 0$, so the constant term is $5$.\nStep 2: The seedling gains $2$ centimeters each week, so $w$ weeks add $2w$ centimeters.\nStep 3: Combine: $h = 2w + 5$. Check $w = 4$: $2(4)+5 = 13$ centimeters, which is $5$ plus four weeks of $2$-centimeter growth. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($h = 2w$): ignores the height at the first measurement, so the model starts the seedling at $0$ centimeters.\n* Choice C ($h = 5 - 2w$): subtracts the weekly growth, which would make the seedling shrink over time.\n* Choice D ($h = 5w + 2$): swaps the two numbers, treating $5$ centimeters as the weekly growth and $2$ centimeters as the starting height.\n\n**Test Day Takeaway:** Evaluate a candidate equation at the input $0$: whatever it returns should be the quantity described as the starting amount."
+}

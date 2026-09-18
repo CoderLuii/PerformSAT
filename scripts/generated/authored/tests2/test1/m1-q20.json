@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "An assembly line's scrap rate, in parts per thousand, is modeled by $3x^{2} - 30x + 82$, where $x$ is the line speed in meters per minute. Written as $a(x - h)^{2} + k$, the model shows the speed $h$ that minimizes the scrap rate and the minimum rate $k$. What is the value of $h + k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$62$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports h alone, the speed that minimizes the rate, without adding the minimum rate k",
+  "B": "reports k alone, the minimum scrap rate, without adding the speed h",
+  "D": "subtracts 25 rather than 3(25) = 75 when completing the square, producing k = 57 and h + k = 62"
+ },
+ "explanation": "**SAT Pattern: Quadratic — Completing the Square**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Factoring $3$ from the first two terms gives $3(x^{2} - 10x) + 82 = 3(x - 5)^{2} - 75 + 82 = 3(x - 5)^{2} + 7$, so $h = 5$, $k = 7$, and $h + k = 12$.\n\n**The Full Solution:**\nStep 1: Factor the leading coefficient out of the variable terms only: $3x^{2} - 30x + 82 = 3\\left(x^{2} - 10x\\right) + 82$.\nStep 2: Complete the square inside the parentheses. Half of $-10$ is $-5$, and $(-5)^{2} = 25$, so $x^{2} - 10x = (x - 5)^{2} - 25$. Substituting gives $3\\left[(x - 5)^{2} - 25\\right] + 82 = 3(x - 5)^{2} - 75 + 82$.\nStep 3: Combine the constants: $3(x - 5)^{2} + 7$, so $h = 5$ and $k = 7$, and $h + k = 12$. Check at $x = 0$: the original gives $82$, and $3(0 - 5)^{2} + 7 = 75 + 7 = 82$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): reports $h$ alone. That is the line speed with the least scrap, but the question asks for the sum.\n* Choice B ($7$): reports $k$ alone, the minimum scrap rate itself.\n* Choice D ($62$): subtracts only $25$ instead of $3(25) = 75$, giving $k = 57$ and $h + k = 62$. The $25$ sits inside the parentheses, so it is multiplied by the $3$ on the way out.\n\n**Test Day Takeaway:** When the leading coefficient is not $1$, the constant you add and subtract while completing the square must be multiplied by that coefficient before it leaves the parentheses; check the finished form at $x = 0$ to confirm."
+}

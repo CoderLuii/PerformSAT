@@ -1,0 +1,6 @@
+{
+  "question": "A welding head's clearance above the workpiece, in millimeters, is $x^{2}-kx+45$, where $x$ is the time in seconds since the pass began and $k$ is a positive constant. The least clearance during the pass is $9$ millimeters. What is the value of $k$?",
+  "correctAnswer": "12",
+  "explanation": "**SAT Pattern: Completing the Square**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~25s):** The least value of $x^{2}-kx+45$ is $45-\\dfrac{k^{2}}{4}$, so $\\dfrac{k^{2}}{4}=36$, $k^{2}=144$, and $k=12$.\n\n**The Full Solution:**\nStep 1: Complete the square: $x^{2}-kx+45=\\left(x-\\dfrac{k}{2}\\right)^{2}+45-\\dfrac{k^{2}}{4}$.\nStep 2: The squared term is never negative, so the least clearance is $45-\\dfrac{k^{2}}{4}$ millimeters. Set it equal to $9$: $\\dfrac{k^{2}}{4}=36$.\nStep 3: So $k^{2}=144$ and $k=12$, since $k$ is positive. Check: $x^{2}-12x+45=(x-6)^{2}+9$, whose least value is $9$, reached $6$ seconds into the pass ✓\n\n**Common Mistakes:**\n* $6$: solved $45-k^{2}=9$, forgetting to divide $k^{2}$ by $4$.\n* $36$: reported $\\dfrac{k^{2}}{4}$ instead of $k$.\n* $-12$: took the negative square root although $k$ is given as positive.\n\n**Test Day Takeaway:** For $x^{2}-kx+c$, the least value is $c-\\dfrac{k^{2}}{4}$ — memorize it and the parameter falls out in one line.",
+  "id": "bank-am-296"
+}

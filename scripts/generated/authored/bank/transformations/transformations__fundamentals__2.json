@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "The function $q$ is defined by $q(x)=\\sqrt{x}$, and the leftmost point of the graph of $y=q(x)$ in the $xy$-plane is the origin. What is the leftmost point of the graph of $y=q(x-9)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-9,0)$"
+    },
+    {
+      "id": "B",
+      "text": "$(0,-9)$"
+    },
+    {
+      "id": "C",
+      "text": "$(0,9)$"
+    },
+    {
+      "id": "D",
+      "text": "$(9,0)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "moves the endpoint left instead of right",
+    "B": "applies the shift to the y-coordinate",
+    "C": "applies the shift to the y-coordinate with the wrong sign"
+  },
+  "correctAnswer": "D",
+  "hint": "Ask which input makes the quantity under the radical equal to $0$.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~20s):** The radical starts where $x-9=0$, so the endpoint moves from $x=0$ to $x=9$ and stays on the $x$-axis.\n\n**The Full Solution:**\nStep 1: $q(x-9)=\\sqrt{x-9}$, which is defined only when $x-9\\ge 0$, that is, when $x\\ge 9$.\nStep 2: At the smallest allowed input, $x=9$, the output is $\\sqrt{9-9}=\\sqrt{0}=0$.\nStep 3: So the leftmost point is $(9,0)$ — the origin translated $9$ units right, with no vertical movement. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-9,0)$): treats $x-9$ as a shift left; inside the function the graph moves opposite to the sign.\n* Choice B ($(0,-9)$): applies the $9$ to the output, which would require $q(x)-9$.\n* Choice C ($(0,9)$): applies the $9$ to the output and reverses its sign as well.\n\n**Test Day Takeaway:** For a change inside the function, set the inside expression equal to the old input value and solve for the new $x$."
+}

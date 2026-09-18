@@ -1,67 +1,67 @@
 {
-  "id": 1241,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 2,
-  "passage": "When engineers report that a new coating protects a family of metals, they often distinguish between a uniform direction of effect and a uniform statistical strength of effect. In one materials-testing study, a laboratory measured how long five coated aluminum alloys resisted corrosion in a standardized salt-spray test and concluded that, although the coating lengthened the time to first visible rust for every alloy, the data do not support the stronger claim that the improvement was statistically significant for every alloy, since _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Increase in mean time to first visible rust after coating, five aluminum alloys (salt-spray test)",
-    "headers": [
-      "Alloy",
-      "Increase in time to rust (%)",
-      "Statistical significance"
-    ],
-    "rows": [
-      [
-        "Alloy 2024",
-        "17",
-        "p < 0.01"
-      ],
-      [
-        "Alloy 6061",
-        "9",
-        "p < 0.05"
-      ],
-      [
-        "Alloy 7075",
-        "3",
-        "p > 0.05 (n.s.)"
-      ],
-      [
-        "Alloy 5083",
-        "11",
-        "p < 0.05"
-      ],
-      [
-        "Alloy 2219",
-        "14",
-        "p < 0.01"
-      ]
-    ]
-  },
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "alloy 7075 recorded the smallest improvement in the table, an increase of just 3 percent, and that small magnitude is itself enough to establish that the alloy's improvement was not statistically significant."
-    },
-    {
-      "id": "B",
-      "text": "alloy 2024 recorded the largest improvement in the table, a 17 percent increase in time to first rust that was statistically significant at p < 0.01."
-    },
-    {
-      "id": "C",
-      "text": "while four of the five alloys recorded improvements that reached statistical significance at p < 0.05 or better, alloy 7075's 3 percent increase was not statistically significant (p > 0.05)."
-    },
-    {
-      "id": "D",
-      "text": "all five alloys took longer to show rust after coating, with improvements ranging from 3 percent for alloy 7075 to 17 percent for alloy 2024."
-    }
+ "id": 1241,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 2,
+ "passage": "Conservators testing protective treatments distinguish between the direction of an effect and its statistical strength. In one field trial at a historic adobe site, five wall sections received a sacrificial shelter coat of mud plaster and were monitored through two rainy seasons alongside matched untreated sections. The team reported that although every treated section lost less material to erosion than its untreated counterpart did, the data do not support the stronger claim that the improvement was statistically significant for every section, since ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Reduction in surface erosion for shelter-coated adobe wall sections, relative to untreated controls",
+  "headers": [
+   "Wall section",
+   "Reduction in erosion (%)",
+   "Statistical significance"
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The statement distinguishes a uniform direction of effect from a uniform statistical strength, so it needs the case where the improvement failed to reach significance: alloy 7075, whose 3 percent increase carries p > 0.05, while the other four alloys reach p < 0.05 or better. C reports that contrast. A draws an illegitimate inference, treating the small size of 7075's improvement as itself proof of non-significance, which magnitude alone cannot establish. B and D describe the alloy that improved most or the overall direction of change, neither of which supports the point that significance was not uniform."
+  "rows": [
+   [
+    "North wall",
+    "31",
+    "p < 0.01"
+   ],
+   [
+    "East wall",
+    "24",
+    "p < 0.05"
+   ],
+   [
+    "South wall",
+    "6",
+    "p > 0.05 (n.s.)"
+   ],
+   [
+    "West wall",
+    "19",
+    "p < 0.05"
+   ],
+   [
+    "Courtyard wall",
+    "27",
+    "p < 0.01"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the south wall recorded much the smallest reduction in erosion anywhere in the table, 6 percent, and a reduction that small cannot on its own possibly amount to statistical significance."
+  },
+  {
+   "id": "B",
+   "text": "the north wall recorded the largest reduction in the table, a 31 percent decrease in erosion that was statistically significant at p < 0.01."
+  },
+  {
+   "id": "C",
+   "text": "while four of the five sections showed reductions that reached statistical significance at p < 0.05 or better, the south wall's 6 percent reduction did not (p > 0.05)."
+  },
+  {
+   "id": "D",
+   "text": "every treated section lost less material than its untreated control, with reductions ranging from 6 percent on the south wall to 31 percent on the north wall."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The sentence separates two claims — every section improved (true), and every improvement was statistically significant (not supported) — so the blank must point to the section that broke the second claim. C names it: the south wall's 6 percent reduction, marked p > 0.05, not significant.\n\n**The Full Solution:**\n- The passage's structure is \"although X, not Y\": although the direction was uniform, significance was not.\n- Scan the significance column: four sections reach p < 0.05 or better; the south wall alone is flagged \"n.s.\"\n- The claim fails on exactly one row, and effective support cites that row against the background of the other four — which is what C does.\n\n**Why the other choices are wrong:**\n- A: It reasons from the effect's size to its non-significance, but magnitude alone cannot establish that — the p-value in the table does, and A never cites it.\n- B: It showcases the strongest result, which bears on the first claim, not on the failure of the second.\n- D: It documents the uniform direction — the part of the finding that was never in question — and says nothing about significance."
 }

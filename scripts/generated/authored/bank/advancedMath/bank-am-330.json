@@ -1,0 +1,49 @@
+{
+ "id": "bank-am-330",
+ "question": "A sprint-timing rig produces the readings $R(k)$ listed in the table on trials $1$, $2$, and $3$, and $R$ is an exponential function of the trial number. For what value of $k$ does the rig read $2^{15}$?",
+ "questionTable": {
+  "headers": [
+   "Trial $k$",
+   "Reading $R(k)$"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$32$"
+   ],
+   [
+    "$2$",
+    "$128$"
+   ],
+   [
+    "$3$",
+    "$512$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4.5$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$7.5$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "divides $15$ by $2$ before subtracting the $3$, reversing the order of operations",
+  "C": "ignores the constant $3$ in the exponent, solving $2k = 15$",
+  "D": "subtracts $3$ from $15$ but never divides by the $2$"
+ },
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The readings are $2^{5}$, $2^{7}$, $2^{9}$, so $R(k) = 2^{\\,2k+3}$; setting $2k + 3 = 15$ gives $k = 6$.\n\n**The Full Solution:**\nStep 1: Write each reading as a power of $2$: $32 = 2^{5}$, $128 = 2^{7}$, and $512 = 2^{9}$.\nStep 2: The exponent climbs by $2$ per trial and equals $5$ at $k = 1$, so $R(k) = 2^{\\,2k+3}$.\nStep 3: Equal bases force $2k + 3 = 15$, so $2k = 12$ and $k = 6$. Check: $R(6) = 2^{15} = 32{,}768$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4.5$): halves before undoing the $+3$, so the two inverse steps are applied in the wrong order.\n* Choice C ($7.5$): leaves out the $+3$, which is what the first trial's exponent of $5$ pins down.\n* Choice D ($12$): undoes the $+3$ but not the coefficient $2$.\n\n**Test Day Takeaway:** From a table, read the exponent's step and its value at one input — that gives the linear rule inside the exponent in one line."
+}

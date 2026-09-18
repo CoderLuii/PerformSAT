@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-369",
+  "question": "A study models the antibody level, in units, $d$ days after a booster by $A(d)=2d+5$, and models the protection score by $P(A)=A^{2}-9$. Which expression gives the protection score $d$ days after the booster?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2d^{2}-13$"
+    },
+    {
+      "id": "B",
+      "text": "$4d^{2}+16$"
+    },
+    {
+      "id": "C",
+      "text": "$4d^{2}+20d+16$"
+    },
+    {
+      "id": "D",
+      "text": "$4d^{2}+20d+34$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "composes in the reverse order: A(P(d)) = 2(d^2 - 9) + 5 = 2d^2 - 13",
+    "B": "squares each term separately: (2d)^2 + 5^2 - 9 = 4d^2 + 16",
+    "D": "adds 9 instead of subtracting it: (2d + 5)^2 + 9 = 4d^2 + 20d + 34"
+  },
+  "explanation": "**SAT Pattern: Function Composition**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Substitute $2d+5$ for $A$: $(2d+5)^{2}-9=4d^{2}+20d+25-9=4d^{2}+20d+16$.\n\n**The Full Solution:**\nStep 1: The antibody level after $d$ days is $A(d)=2d+5$, so the protection score is $P(2d+5)$.\nStep 2: Expand the square: $(2d+5)^{2}=4d^{2}+20d+25$.\nStep 3: Subtract 9: $4d^{2}+20d+25-9=4d^{2}+20d+16$. Check at $d=1$: $A(1)=7$ and $P(7)=49-9=40$, and $4+20+16=40$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2d^{2}-13$): composes in the reverse order, $A(P(d))=2(d^{2}-9)+5$.\n* Choice B ($4d^{2}+16$): squares each term separately, $(2d)^{2}+5^{2}-9$, losing the middle term $20d$.\n* Choice D ($4d^{2}+20d+34$): adds 9 rather than subtracting it.\n\n**Test Day Takeaway:** Substituting a binomial into a square always leaves a middle term — expand, never square term by term."
+}

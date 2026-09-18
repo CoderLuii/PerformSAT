@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "A triangular support bracket has a right angle, and the tangent of one of its acute angles is $\\frac{5}{12}$. The perimeter of the bracket is $k$ times the length of the side opposite that acute angle. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2.5$"
+  },
+  {
+   "id": "B",
+   "text": "$3.4$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$6.8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the perimeter by the adjacent leg, 30/12 = 2.5, instead of by the opposite leg",
+  "B": "leaves the hypotenuse out of the perimeter, computing (5 + 12)/5 = 3.4",
+  "D": "takes the hypotenuse to be the sum of the legs, 17, giving (5 + 12 + 17)/5 = 6.8"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Tangent $\\frac{5}{12}$ makes the legs $5t$ and $12t$, so the hypotenuse is $13t$ and the perimeter is $30t$. Dividing by the opposite leg $5t$ gives $k = 6$.\n\n**The Full Solution:**\nStep 1: For an acute angle of a right triangle, tangent is opposite over adjacent. So the leg opposite the angle is $5t$ and the leg adjacent to it is $12t$, for some positive $t$.\nStep 2: Find the hypotenuse: $\\sqrt{(5t)^2 + (12t)^2} = \\sqrt{25t^2 + 144t^2} = \\sqrt{169t^2} = 13t$. The perimeter is $5t + 12t + 13t = 30t$.\nStep 3: Form the requested ratio: $k = \\frac{30t}{5t} = 6$, and the $t$ cancels, so $k$ is the same for every such bracket. Check with $t = 2$: the sides are $10$, $24$, and $26$, the perimeter is $60$, and $\\frac{60}{10} = 6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2.5$): $\\frac{30t}{12t}$ divides by the adjacent leg. Tangent's numerator, $5$, is the side opposite the angle.\n* Choice B ($3.4$): $\\frac{17t}{5t}$ adds only the two legs. Perimeter includes the hypotenuse.\n* Choice D ($6.8$): $\\frac{34t}{5t}$ uses $5t + 12t = 17t$ as the hypotenuse. The hypotenuse comes from the Pythagorean theorem, $13t$, and is always shorter than the sum of the legs.\n\n**Test Day Takeaway:** A trig ratio fixes the shape but not the size, so introduce a scale $t$, build every side from it, and let $t$ cancel in the final ratio. Recognizing $5$-$12$-$13$ saves the square roots."
+}

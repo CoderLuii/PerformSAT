@@ -1,0 +1,29 @@
+{
+ "question": "As a rotating antenna turns, its tip traces the circle $(x - 4)^2 + (y + 1)^2 = 9$, where one unit represents one meter. Which inequality gives exactly the $x$-coordinates the tip reaches?",
+ "hint": "How far left and right of the center can the tip reach?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-7 \\le x \\le -1$"
+  },
+  {
+   "id": "B",
+   "text": "$-5 \\le x \\le 13$"
+  },
+  {
+   "id": "C",
+   "text": "$-3 \\le x \\le 3$"
+  },
+  {
+   "id": "D",
+   "text": "$1 \\le x \\le 7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads the center's x-coordinate as -4",
+  "B": "uses 9 as the radius instead of 3",
+  "C": "centers the interval at the origin instead of at x = 4"
+ },
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~20s):** The center is at $x = 4$ and the radius is $3$, so $x$ runs from $1$ to $7$.\n\n**The Full Solution:**\nStep 1: Compare with $(x - h)^2 + (y - k)^2 = r^2$: the center is $(4, -1)$ and $r^2 = 9$, so $r = 3$.\nStep 2: The tip never gets farther than $3$ units from the center in any direction, so its $x$-coordinates satisfy $4 - 3 \\le x \\le 4 + 3$.\nStep 3: That is $1 \\le x \\le 7$. Check: the points $(1, -1)$ and $(7, -1)$ both satisfy the equation ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7 \\le x \\le -1$): reads the center's $x$-coordinate as $-4$ instead of $4$.\n* Choice B ($-5 \\le x \\le 13$): uses $9$ as the radius rather than as $r^2$.\n* Choice C ($-3 \\le x \\le 3$): centers the interval at the origin and ignores the shift to $x = 4$.\n\n**Test Day Takeaway:** A circle's $x$-values span one radius on each side of the center's $x$-coordinate."
+}

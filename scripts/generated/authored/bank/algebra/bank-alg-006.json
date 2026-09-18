@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-006",
+  "question": "A greenhouse heater raises the air temperature at a constant rate of $1.5$ degrees Fahrenheit per minute. The temperature was $48$ degrees Fahrenheit when the heater was turned on. Which equation gives the temperature $T$, in degrees Fahrenheit, $m$ minutes after the heater was turned on?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$T = 48 - 1.5m$"
+    },
+    {
+      "id": "B",
+      "text": "$T = 48m + 1.5$"
+    },
+    {
+      "id": "C",
+      "text": "$T = 1.5m - 48$"
+    },
+    {
+      "id": "D",
+      "text": "$T = 1.5m + 48$"
+    }
+  ],
+  "distractorNotes": {
+    "C": "subtracts the starting temperature instead of adding it",
+    "B": "swaps the rate and the starting value",
+    "A": "treats the temperature as decreasing"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Linear Model (Identify Slope and Intercept)**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Starting value $48$ plus $1.5$ for each of the $m$ minutes: $T = 1.5m + 48$.\n\n**The Full Solution:**\nStep 1: A quantity that starts at a fixed value and changes by a constant amount per unit of time is linear: $T = (\\text{rate})m + (\\text{starting value})$.\nStep 2: The rate is $1.5$ degrees per minute, and the starting value (at $m = 0$) is $48$ degrees, so $T = 1.5m + 48$.\nStep 3: Check with $m = 0$: $T = 48$, the temperature when the heater was turned on. After $10$ minutes, $T = 1.5(10) + 48 = 63$, which is $15$ degrees warmer, as expected. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($T = 48 - 1.5m$): models a temperature that falls $1.5$ degrees per minute, but the heater raises it.\n* Choice B ($T = 48m + 1.5$): swaps the roles of rate and starting value, making the temperature jump $48$ degrees every minute.\n* Choice C ($T = 1.5m - 48$): subtracts the starting temperature, giving $T = -48$ at $m = 0$, which contradicts the given start.\n\n**Test Day Takeaway:** In $y = mx + b$, the per-unit rate multiplies the variable and the starting amount stands alone; test $x = 0$ to confirm the intercept matches the story."
+}

@@ -1,0 +1,29 @@
+{
+ "question": "A sensor pair satisfies the equations $y=4x-7$ and $3x+cy=59$, where $c$ is a constant, and the two readings meet at the point $(3,5)$ in the $xy$-plane, where $x$ and $y$ are the readings. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$50$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the x-coordinate of the meeting point instead of the constant",
+  "B": "reports the y-coordinate of the meeting point instead of the constant",
+  "D": "stops at 5c = 50 without dividing by 5"
+ },
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**Choice C is correct.** Substituting $(3,5)$ into $3x+cy=59$ gives $9+5c=59$, so $c=10$.\n\n**The Fast Way (~30s):** $3(3)+c(5)=59\\Rightarrow 5c=50\\Rightarrow c=10$.\n\n**The Full Solution:**\n\nStep 1: The point $(3,5)$ satisfies both equations. Confirm it fits the first: $4(3)-7=5$.\n\nStep 2: Substitute $x=3$ and $y=5$ into the second equation: $3(3)+c(5)=59$, so $9+5c=59$.\n\nStep 3: Subtract $9$ and divide by $5$: $5c=50$, so $c=10$. Check: $3(3)+10(5)=9+50=59$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3$): reports the $x$-coordinate of the meeting point rather than the constant.\n* Choice B ($5$): reports the $y$-coordinate.\n* Choice D ($50$): stops at $5c=50$ and never divides by $5$.\n\n**Test Day Takeaway:** A given solution can be substituted into either equation; pick the one containing the unknown constant.",
+ "id": "bank-alg-195"
+}

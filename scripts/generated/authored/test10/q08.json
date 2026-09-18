@@ -9,32 +9,32 @@
  "passages": [
   {
    "label": "Text 1",
-   "text": "The coral biologists Madeleine van Oppen and Ruth Gates proposed that reef managers should no longer treat corals as fixed entities to be protected in place. As ocean temperatures rise faster than corals can adapt on their own, they argued, researchers can speed the process along—selectively breeding heat-tolerant colonies, conditioning corals to stress in the laboratory, and managing the algae and microbes that live inside coral tissue. They called this program \"assisted evolution.\" Its aim is not to replace conservation but to buy reefs time: to raise the heat tolerance of coral populations enough that they can survive the warming already locked into the coming decades."
+   "text": "In the 1850s, whale oil lit homes and lighthouses across the United States, and whaling employed tens of thousands of Americans. Within a generation the industry had nearly disappeared. The usual explanation is straightforward: kerosene, refined from petroleum after 1859, was cheaper and brighter, and it simply replaced whale oil in the nation's lamps. On this account, the discovery of petroleum doomed whaling at a stroke."
   },
   {
    "label": "Text 2",
-   "text": "The reef ecologist Terry Hughes does not dispute that corals are losing the race against warming or that heat-tolerant colonies exist. He questions, however, what intervention at the scale of nurseries and breeding programs can accomplish against a threat the size of the ocean. Mass bleaching, he points out, now strikes thousands of kilometers of reef within a single hot season, while assisted-evolution projects operate on hectares. To present such projects as a remedy, he warns, risks implying that reefs can be engineered around climate change, drawing attention and funding away from the one measure that operates at the right scale: rapid reductions in greenhouse-gas emissions."
+   "text": "Examining thousands of voyage records, the economic historians Lance Davis and Robert Gallman found that American whaling was under strain before kerosene mattered: whales had grown scarcer and harder to catch, voyages had lengthened, and rising wages ashore made crews costly to recruit. Petroleum, they conclude, accelerated a decline that these pressures had already set in motion rather than causing it single-handedly."
   }
  ],
- "question": "Based on the texts, how would Hughes (Text 2) most likely respond to the proposal presented in Text 1?",
+ "question": "Based on the texts, how would Davis and Gallman (Text 2) most likely respond to the explanation presented in Text 1?",
  "choices": [
   {
    "id": "A",
-   "text": "He would embrace assisted evolution as a complete solution, confident that breeding and laboratory conditioning can raise coral heat tolerance quickly enough to keep pace with warming oceans on their own."
+   "text": "They would deny that kerosene ever competed directly with whale oil as a fuel for household lamps."
   },
   {
    "id": "B",
-   "text": "He would accept that heat-tolerant corals exist but warn that programs working on hectares cannot answer a threat striking thousands of kilometers of reef, so emissions cuts remain essential."
+   "text": "They would grant that kerosene hastened the decline while insisting that whaling's difficulties began earlier and independently."
   },
   {
    "id": "C",
-   "text": "He would deny that corals are losing ground to rising temperatures, holding that reefs have always recovered from bleaching events without any human intervention at all."
+   "text": "They would argue that whaling collapsed chiefly because lighthouses stopped buying whale oil."
   },
   {
    "id": "D",
-   "text": "He would argue that protecting corals in place has failed completely and that breeding tolerant colonies should now replace any effort to cut greenhouse-gas emissions."
+   "text": "They would accept that petroleum alone doomed the industry but insist that its decisive effects arrived only decades after kerosene first reached the market."
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. Hughes grants the central facts of Text 1—corals are losing the race against warming, and heat-tolerant colonies exist—but presses a question of scale: assisted-evolution projects work on hectares while mass bleaching now strikes thousands of kilometers in a single season, so he treats rapid emissions cuts as the indispensable response. Choice B matches that accept-the-evidence-but-doubt-the-remedy position. Choice A has him endorsing assisted evolution as sufficient, which is the view he resists. Choice C denies the threat, but Hughes explicitly concedes it. Choice D has him rejecting emissions cuts, the reverse of his conclusion."
+ "explanation": "**Choice B is correct.** Davis and Gallman accept petroleum's role, they say it \"accelerated\" the decline, but their central finding is that scarcer whales, longer voyages, and rising wages had strained the industry before kerosene mattered.\n\n**The Full Solution:**\n- Text 1's explanation makes petroleum the sole cause: kerosene \"simply replaced whale oil,\" dooming whaling \"at a stroke.\"\n- Text 2's voyage records point to pressures that were independent of petroleum and earlier than it, and its conclusion assigns kerosene an accelerating role, not a sufficient one.\n- Choice B captures both halves of that response: concede the acceleration, reject the single cause.\n\n**Why the other choices are wrong:**\n- A: They never dispute that kerosene competed with whale oil; their point concerns what else was already going wrong.\n- C: Lighthouses appear only in Text 1's scene-setting; neither text ties the collapse to lighthouse purchases.\n- D: It concedes exactly what they deny, that petroleum acted alone, and adds a timing claim they never make."
 }

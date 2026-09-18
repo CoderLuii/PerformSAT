@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-289",
+ "question": "A burrow holds $9x^3 + 6x^2 + 12x + 8$ cubic meters of air when its entrance measures $x$ meters across, and a surveyor wants that volume expression written as a product of two binomials. Which binomial divides it evenly?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x + 4$"
+  },
+  {
+   "id": "B",
+   "text": "$3x^2 + 2$"
+  },
+  {
+   "id": "C",
+   "text": "$3x + 2$"
+  },
+  {
+   "id": "D",
+   "text": "$x + 2$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "pairs the $4$ from the quadratic factor with the $3x$ from the binomial",
+  "B": "reports the quadratic factor with the wrong constant; the true one is $3x^2 + 4$",
+  "D": "keeps the constant but drops the coefficient $3$ from the shared binomial"
+ },
+ "explanation": "**SAT Pattern: Factor by Grouping**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $3x^2(3x + 2) + 4(3x + 2) = (3x^2 + 4)(3x + 2)$, so $3x + 2$ is a factor.\n\n**The Full Solution:**\nStep 1: Pair the terms: $(9x^3 + 6x^2) + (12x + 8)$.\nStep 2: Factor each pair: $3x^2(3x + 2)$ and $4(3x + 2)$.\nStep 3: The shared binomial is $3x + 2$, and the full factorization is $(3x^2 + 4)(3x + 2)$. Check: expanding gives $9x^3 + 6x^2 + 12x + 8$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3x + 4$): mixes the $3x$ of one factor with the $4$ of the other.\n* Choice B ($3x^2 + 2$): the quadratic factor is $3x^2 + 4$; the $2$ belongs to the binomial.\n* Choice D ($x + 2$): dividing by $x + 2$ leaves a remainder, since the pairs share $3x + 2$, not $x + 2$.\n\n**Test Day Takeaway:** Grouping hands you BOTH factors at once — check a candidate by seeing whether it is the binomial the two pairs share."
+}

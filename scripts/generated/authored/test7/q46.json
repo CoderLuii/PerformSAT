@@ -1,31 +1,31 @@
 {
-  "id": 746,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "The Latin word civitas ______ lay at the heart of how the Romans defined political belonging. Over the centuries, Roman citizenship was repeatedly extended to allies, freedmen, and provincials, making Rome a continually expanding political community rather than a closed ethnic club.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "which originally referred to the body of citizens rather than to a place"
-    },
-    {
-      "id": "B",
-      "text": ", which originally referred to the body of citizens rather than to a place"
-    },
-    {
-      "id": "C",
-      "text": "which originally referred to the body of citizens rather than to a place,"
-    },
-    {
-      "id": "D",
-      "text": ", which originally referred to the body of citizens rather than to a place,"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The clause \"which originally referred to the body of citizens rather than to a place\" is a nonessential description of civitas and must be set off by a comma on each side. Choice A supplies no commas at all, fusing the clause into the sentence. Choice B opens with a comma but never closes the insertion, and Choice C closes it without opening it; only Choice D brackets the nonessential clause correctly on both sides."
+ "id": 746,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "The mineral olivine ______ gives the sand of Papakolea Beach in Hawaii its deep green color. Waves pry the dense grains loose from the surrounding rock, and while lighter fragments wash out with the tide, the olivine settles back, accumulating at the rear of the small bay.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "which weathers out of iron- and magnesium-rich rock"
+  },
+  {
+   "id": "B",
+   "text": ", which weathers out of iron- and magnesium-rich rock"
+  },
+  {
+   "id": "C",
+   "text": "which weathers out of iron- and magnesium-rich rock,"
+  },
+  {
+   "id": "D",
+   "text": ", which weathers out of iron- and magnesium-rich rock,"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The \"which\" clause is supplementary — remove it and \"The mineral olivine gives the sand...its deep green color\" still stands — so it must be set off by a comma at both its opening and its close.\n\n**The Full Solution:**\n- Test for removability: the sentence works without the clause, so the clause adds extra information rather than identifying which olivine is meant.\n- Supplementary elements are fenced on both sides by matching commas.\n- D supplies the pair — one comma before \"which,\" one after \"rock\" — sealing the aside off from the main clause.\n\n**Why the other choices are wrong:**\n- A: With no commas at all, the aside fuses into the main clause and \"olivine which weathers\" reads as restrictive.\n- B: An opening comma with no closing one leaves the aside unfinished, crashing into the verb \"gives.\"\n- C: A closing comma with no opening one is the mirror-image error — the fence needs both ends."
 }

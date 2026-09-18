@@ -43,6 +43,25 @@ function hashId(id) {
 }
 
 /**
+ * Murmur3-style avalanche finalizer. Needed for the SEEDED path only: practice
+ * tests reuse tiny sequential ids (1, 2, 3, …), and bare FNV of one/two-char
+ * strings leaves the low bits correlated with the digit — adjacent questions
+ * would nearly cycle A→B→C→D (an anti-random tell of its own) and every test
+ * would share one sequence. Finalizing decorrelates the slots. The UNSEEDED
+ * path keeps bare FNV so the drill bank's existing letter layout is untouched.
+ * @param {number} h  unsigned 32-bit hash
+ * @returns {number} unsigned 32-bit avalanched hash
+ */
+function avalanche(h) {
+  h ^= h >>> 16;
+  h = Math.imul(h, 0x85ebca6b);
+  h ^= h >>> 13;
+  h = Math.imul(h, 0xc2b2ae35);
+  h ^= h >>> 16;
+  return h >>> 0;
+}
+
+/**
  * True only when the explanation references choices EXCLUSIVELY via the
  * canonical "Choice [A-D]" form AND carries a "Choice X is correct" line that
  * matches the key. Used to gate which items are safe to remap. Geometric point
@@ -70,9 +89,14 @@ export function isCanonicalExplanation(explanation, correctLetter) {
  * Idempotent — applying twice is a no-op (the id already maps to its slot).
  *
  * @param {object} item  A bank question.
+ * @param {string} [seed]  Optional context seed (e.g. `${testId}:${section}:${moduleIdx}`).
+ *   REQUIRED when ids are not globally unique — practice tests reuse ids 1-22
+ *   across every test and module, so without a seed all tests would share one
+ *   letter sequence. Seeded slots also get an avalanche finalizer (see above).
+ *   Omitting the seed preserves the original drill-bank behavior byte-for-byte.
  * @returns {object} the rebalanced item, or `item` unchanged.
  */
-export function rebalanceAnswerKey(item) {
+export function rebalanceAnswerKey(item, seed) {
   if (!item || item.type !== 'multiple-choice') return item;
   const choices = item.choices;
   if (!Array.isArray(choices) || choices.length !== 4) return item;
@@ -84,7 +108,9 @@ export function rebalanceAnswerKey(item) {
   if (!choices.every((c, i) => c && c.id === LETTERS[i])) return item;
   if (!isCanonicalExplanation(item.explanation, correctLetter)) return item;
 
-  const targetIdx = hashId(String(item.id)) % 4;
+  const targetIdx = seed
+    ? avalanche(hashId(`${seed}:${item.id}`)) % 4
+    : hashId(String(item.id)) % 4;
   if (targetIdx === correctIdx) return item; // already balanced for this id
 
   const L1 = LETTERS[correctIdx];

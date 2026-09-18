@@ -1,0 +1,49 @@
+{
+ "id": 6,
+ "question": "The table gives the loading rate, in crates per minute, of each of three conveyors at a freight terminal. Conveyor B operates at the rate shown for $3.5$ hours without stopping. How many crates does conveyor B load during that time?",
+ "questionTable": {
+  "headers": [
+   "Conveyor",
+   "Loading rate (crates per minute)"
+  ],
+  "rows": [
+   [
+    "A",
+    "30"
+   ],
+   [
+    "B",
+    "24"
+   ],
+   [
+    "C",
+    "18"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$84$"
+  },
+  {
+   "id": "B",
+   "text": "$1{,}440$"
+  },
+  {
+   "id": "C",
+   "text": "$5{,}040$"
+  },
+  {
+   "id": "D",
+   "text": "$6{,}300$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "multiplies the per-minute rate by 3.5 without converting hours to minutes, giving 24(3.5)=84",
+  "B": "converts only one hour, computing 24(60)=1440 and ignoring the remaining 2.5 hours",
+  "D": "reads conveyor A's rate of 30 crates per minute instead of conveyor B's, giving 30(210)=6300"
+ },
+ "explanation": "**SAT Pattern: Proportion Solving**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $3.5$ hours is $3.5(60) = 210$ minutes, and conveyor B loads $24$ crates per minute, so $24(210) = 5{,}040$ crates.\n\n**The Full Solution:**\nStep 1: The rate is given per minute, so convert the running time to minutes: $3.5 \\text{ hours} \\times \\frac{60 \\text{ minutes}}{1 \\text{ hour}} = 210$ minutes.\nStep 2: Read conveyor B's row: $24$ crates per minute. Set up the proportion $\\frac{24 \\text{ crates}}{1 \\text{ minute}} = \\frac{c \\text{ crates}}{210 \\text{ minutes}}$.\nStep 3: Solve: $c = 24(210) = 5{,}040$ crates. Check the units: $\\frac{\\text{crates}}{\\text{minute}} \\times \\text{minutes} = \\text{crates}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($84$): multiplies $24$ by $3.5$ directly, mixing a per-minute rate with a time in hours. That product, $84$, is the number of crates loaded in $3.5$ minutes.\n* Choice B ($1{,}440$): converts one hour only, computing $24(60) = 1{,}440$, and never accounts for the other $2.5$ hours.\n* Choice D ($6{,}300$): uses the rate in conveyor A's row, $30$ crates per minute, giving $30(210) = 6{,}300$ crates.\n\n**Test Day Takeaway:** Make the time units match the rate's units before multiplying, and confirm you pulled the row the question actually names."
+}

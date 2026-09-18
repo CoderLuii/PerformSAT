@@ -342,7 +342,7 @@ const TwoLineContent = ({
       <line x1={line2Start.x} y1={line2Start.y} x2={line2End.x} y2={line2End.y} stroke="#000" strokeWidth="2" />
 
       {showIntersectionPoint && (
-        <circle cx={intPt.x} cy={intPt.y} r="5" fill="#cc0000" />
+        <circle cx={intPt.x} cy={intPt.y} r="4.5" fill="#000" />
       )}
 
       {intersectionLabel && (
@@ -363,8 +363,8 @@ export const validateParams = {
       return { valid: false, error: `${name} must be [min, max] array` };
     }
     const [min, max] = range;
-    if (typeof min !== 'number' || typeof max !== 'number') {
-      return { valid: false, error: `${name} values must be numbers` };
+    if (!Number.isFinite(min) || !Number.isFinite(max)) {
+      return { valid: false, error: `${name} values must be finite numbers` };
     }
     if (min >= max) {
       return { valid: false, error: `${name}[0] must be less than ${name}[1]` };
@@ -372,8 +372,8 @@ export const validateParams = {
     return { valid: true };
   },
   pointInRange: (point, xRange, yRange, name = 'point') => {
-    if (!point || typeof point.x !== 'number' || typeof point.y !== 'number') {
-      return { valid: false, error: `${name} must have numeric x and y` };
+    if (!point || !Number.isFinite(point.x) || !Number.isFinite(point.y)) {
+      return { valid: false, error: `${name} must have finite numeric x and y` };
     }
     const [xMin, xMax] = xRange;
     const [yMin, yMax] = yRange;

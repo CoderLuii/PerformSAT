@@ -1,0 +1,6 @@
+{
+ "question": "Each of the $4$ shelves in a laboratory incubator holds $x+3$ culture plates, and the incubator holds $32$ plates altogether when every shelf is full. What is the value of $x$?",
+ "correctAnswer": "5",
+ "explanation": "**SAT Pattern: Linear Equation with Distribution**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~20s):** $4(x+3)=32$, so $x+3=8$ and $x=5$.\n\n**The Full Solution:**\n\nStep 1: Four shelves of $x+3$ plates give $4(x+3)$ plates, so $4(x+3)=32$.\n\nStep 2: Divide both sides by $4$: $x+3=8$.\n\nStep 3: Subtract $3$ from both sides: $x=5$. Check: each shelf holds $5+3=8$ plates, and $4(8)=32$.\n\n**Common Mistakes:** Reporting $8$ stops at the number of plates on one shelf, which is $x+3$, not $x$. Distributing only to the variable, as in $4x+3=32$, gives $x=7.25$, not a whole number of plates.\n\n**Test Day Takeaway:** When a sum is multiplied by a number, either divide the whole equation by it first or distribute it to every term inside.",
+ "id": "bank-alg-305"
+}

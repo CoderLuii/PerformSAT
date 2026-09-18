@@ -29,9 +29,6 @@ const SATTable = ({
     });
   }
 
-  // Calculate column count
-  const colCount = finalHeaders.length || (finalRows[0] ? finalRows[0].length : 0);
-
   // Table styles
   const tableStyle = {
     borderCollapse: 'collapse',
@@ -42,7 +39,7 @@ const SATTable = ({
   };
 
   const headerStyle = {
-    backgroundColor: highlightHeader ? '#f3f4f6' : styles.colors.background,
+    backgroundColor: styles.colors.background,
     fontWeight: 'bold',
     textAlign: 'center',
     padding: `${cellPadding}px ${cellPadding + 5}px`,
@@ -62,7 +59,7 @@ const SATTable = ({
   const firstColStyle = {
     ...cellStyle,
     fontWeight: finalHeaders[0] === '' ? 'bold' : 'normal',
-    backgroundColor: finalHeaders[0] === '' ? '#f9fafb' : 'transparent',
+    backgroundColor: 'transparent',
   };
 
   return (

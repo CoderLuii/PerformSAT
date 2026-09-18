@@ -1,0 +1,29 @@
+{
+ "question": "A dockside crane's counterweight traces the graph of $x^2 + y^2 - 8x + 10y + c = 0$, where one unit is one meter and $c$ is a constant. For that trace to be a circle of positive radius, which condition must $c$ satisfy?",
+ "hint": "After both squares are completed, what has to be true of the number left on the right?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$c < 41$"
+  },
+  {
+   "id": "B",
+   "text": "$c < -41$"
+  },
+  {
+   "id": "C",
+   "text": "$c > -41$"
+  },
+  {
+   "id": "D",
+   "text": "$c > 41$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "moves 41 to the wrong side, requiring c < -41",
+  "C": "solves 41 + c > 0 instead of 41 - c > 0",
+  "D": "reverses the inequality after finding 41"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~40s):** Completing the squares gives $r^2 = 41 - c$, and $41 - c > 0$ means $c < 41$.\n\n**The Full Solution:**\nStep 1: Group the terms: $(x^2 - 8x) + (y^2 + 10y) = -c$.\nStep 2: Complete both squares by adding $16$ and $25$: $(x - 4)^2 + (y + 5)^2 = 16 + 25 - c = 41 - c$.\nStep 3: A circle with positive radius needs $41 - c > 0$, so $c < 41$. Check: $c = 40$ gives $r^2 = 1$, a genuine circle, while $c = 41$ collapses the graph to the single point $(4, -5)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($c < -41$): moves $41$ to the wrong side of the inequality.\n* Choice C ($c > -41$): treats the constant as $41 + c$ rather than $41 - c$.\n* Choice D ($c > 41$): finds $41$ correctly but reverses the direction, which makes the right side negative.\n\n**Test Day Takeaway:** A general-form equation is a real circle only while the completed-square right side stays strictly positive."
+}

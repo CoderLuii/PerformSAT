@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A harbor logged $12$, $14$, $14$, $17$, $20$, $23$, and $k$ ferry crossings on seven consecutive days. The median of the seven values is $14$. Which of the following must be true about $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$k \\le 14$"
+  },
+  {
+   "id": "B",
+   "text": "$k = 14$"
+  },
+  {
+   "id": "C",
+   "text": "$k \\ge 14$"
+  },
+  {
+   "id": "D",
+   "text": "$k \\ge 17$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "assumes the unknown value must equal the median itself, though any k at or below 14 works",
+  "C": "reverses the direction of the inequality, but k = 20 pushes the fourth value up to 17",
+  "D": "treats 17, the fourth number in the printed list, as the median and forces k above it"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Median Calculation**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** With seven values the median is the $4$th in order. The six known values put $17$ in the $4$th spot, so $k$ must slide in below $14$ to push $14$ into that spot: $k \\le 14$.\n\n**The Full Solution:**\nStep 1: Order the six known values: $12$, $14$, $14$, $17$, $20$, $23$. Adding $k$ makes seven values, and the median of seven values is the fourth one from the bottom.\nStep 2: If $k > 14$, then $12$, $14$, $14$ are still the three smallest and the fourth value is $\\min(k, 17) > 14$ — too big. So $k$ cannot exceed $14$.\nStep 3: If $k \\le 14$, the ordered list starts $k$, $12$, $14$, $14$ or $12$, $k$, $14$, $14$ or $12$, $14$, $14$, $14$, and in every case the fourth value is $14$. Check the boundary: $k = 14$ gives $12, 14, 14, 14, 17, 20, 23$ with median $14$, while $k = 15$ gives $12, 14, 14, 15, 17, 20, 23$ with median $15$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($k = 14$): one value that works, but it is not the only one — $k = 9$ also leaves the median at $14$, so this is not what must be true.\n* Choice C ($k \\ge 14$): the right boundary with the inequality flipped. Testing $k = 20$ gives the list $12, 14, 14, 17, 20, 20, 23$, whose median is $17$, not $14$.\n* Choice D ($k \\ge 17$): reads $17$ as the median because it is the fourth number printed, but the median is defined by the SORTED position of all seven values.\n\n**Test Day Takeaway:** For a median question with an unknown, sort what you know, find which position the median occupies, and test the boundary value on each side — one test kills the reversed inequality."
+}

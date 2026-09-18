@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "question": "A snowpack survey measured depths of $2d$, $3d-4$, and $d+10$ centimeters at three stakes on one ridge. The three depths total $66$ centimeters. What is the value of $d$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$10$"
+    },
+    {
+      "id": "B",
+      "text": "$11$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$22$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "drops the constant terms -4 and +10 and solves 6d = 66",
+    "C": "adds the net constant instead of subtracting it, solving 6d = 66 + 6",
+    "D": "divides the total by the number of stakes, 66 / 3, instead of by the coefficient sum"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice A is correct.** Combining the three depths gives $2d + (3d - 4) + (d + 10) = 6d + 6$, so $6d + 6 = 66$ and $d = 10$.\n\n**The Fast Way (~20s):** The $d$ terms add to $6d$ and the constants add to $+6$, so $6d = 60$ and $d = 10$.\n\n**The Full Solution:**\nStep 1: Add the three expressions: $2d + 3d + d = 6d$, and $-4 + 10 = 6$, so the total depth is $6d + 6$.\nStep 2: Set the total equal to the measured $66$: $6d + 6 = 66$, then subtract $6$ from both sides to get $6d = 60$.\nStep 3: Divide by $6$ to get $d = 10$. Check: the stakes read $2(10) = 20$, $3(10) - 4 = 26$, and $10 + 10 = 20$ centimeters, and $20 + 26 + 20 = 66$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($11$): combines only the variable terms and solves $6d = 66$. The constants $-4$ and $+10$ are part of the total and cannot be dropped.\n* Choice C ($12$): moves the $+6$ to the right side by adding, solving $6d = 72$. Undoing $+6$ requires subtracting it.\n* Choice D ($22$): divides the total by the three stakes, $66 \\div 3$, as if each stake read the same depth $d$.\n\n**Test Day Takeaway:** Collect the variable terms and the constants separately before you touch the equals sign; the arithmetic slips happen during the combining, not the solving."
+}

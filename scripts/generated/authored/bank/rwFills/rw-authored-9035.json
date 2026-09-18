@@ -1,0 +1,25 @@
+{
+  "id": 9035,
+  "passage": "Speakers who move between two languages in the middle of a sentence are often described as ______, as though each switch were a lapse in control. Yet recordings of bilingual conversation show that the switches fall at predictable grammatical boundaries: between a clause and its complement, or before a full noun phrase, but almost never between an article and the noun it introduces. Speakers reject the boundaries they never use as plainly ungrammatical.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "methodical"
+    },
+    {
+      "id": "B",
+      "text": "undisciplined"
+    },
+    {
+      "id": "C",
+      "text": "deliberate"
+    },
+    {
+      "id": "D",
+      "text": "hesitant"
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** Yet flags a reversal, so the blank must name the impression the recordings overturn — speech without rules — and undisciplined is that word.\n\n**The Full Solution:**\n- Find the pivot. Yet separates the common description from the evidence, so whatever the blank says must be the opposite of what the recordings show.\n- The recordings show switches falling at predictable boundaries that speakers can judge as right or wrong — in other words, governed by rules. The description being corrected must therefore mean ungoverned, which is undisciplined.\n- The appositive as though each switch were a lapse in control confirms the direction: the blank is a criticism, not a compliment.\n\n**Why the other choices are wrong:**\n- A: Methodical is what the evidence establishes, so putting it before Yet makes the sentence contradict itself.\n- C: Deliberate likewise agrees with the evidence rather than opposing it, and it does not describe a lapse.\n- D: Hesitant would describe the pace of the speech, not whether it follows rules, which is the question the passage raises."
+}

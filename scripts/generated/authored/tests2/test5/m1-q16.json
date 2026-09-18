@@ -1,0 +1,26 @@
+{
+ "id": 16,
+ "question": "The table gives three values of $t$ and their corresponding values of $p(t)$, where $p$ is a quadratic function that models the power drawn, in kilowatts, by a well pump $t$ minutes after it starts. What is the minimum power, in kilowatts, given by this model?",
+ "questionTable": {
+  "headers": [
+   "$t$",
+   "$p(t)$"
+  ],
+  "rows": [
+   [
+    "3",
+    "62"
+   ],
+   [
+    "5",
+    "30"
+   ],
+   [
+    "13",
+    "62"
+   ]
+  ]
+ },
+ "correctAnswer": "12",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~50s):** $p(3) = p(13)$ puts the vertex at $t = 8$; writing $p(t) = a(t - 8)^2 + k$ and using the two remaining values gives $16a = 32$, so $a = 2$ and $k = 12$.\n\n**The Full Solution:**\nStep 1: The table shows $p(3) = p(13) = 62$. A quadratic takes equal values at inputs equally distant from its axis of symmetry, so the axis is at $t = \\frac{3 + 13}{2} = 8$ and the model is $p(t) = a(t - 8)^2 + k$.\nStep 2: Substitute the two distinct data points. From $t = 3$: $a(3 - 8)^2 + k = 25a + k = 62$. From $t = 5$: $a(5 - 8)^2 + k = 9a + k = 30$. Subtracting gives $16a = 32$, so $a = 2$.\nStep 3: Back-substitute: $9(2) + k = 30$, so $k = 12$. Because $a = 2 > 0$ the parabola opens upward and $k$ is the minimum value. Check the third point: $p(13) = 2(13 - 8)^2 + 12 = 2(25) + 12 = 62$.\n\n**Common Mistakes:**\n* $8$: grids the $t$-value of the vertex instead of the power there. The axis of symmetry answers when, while the question asks how much.\n* $30$: assumes the smallest number in the table is the minimum. The table lists only three instants; the model's low point sits at $t = 8$, which is not tabulated.\n* $2$: reports the leading coefficient $a$. That number controls how steeply the power rises away from the low point, not the low point itself.\n\n**Test Day Takeaway:** Two equal outputs hand you the axis of symmetry for free — average their inputs. From there, one more point turns vertex form into two quick equations for $a$ and $k$."
+}

@@ -1,0 +1,53 @@
+{
+  "question": "A shop's weekly earnings, in hundreds of dollars, from producing $x$ dozen brass hinges are given by $E(x)=-2x^{2}+kx-36$, where $k$ is a constant, and the table gives $E(x)$ at four production levels. The shop breaks even, with $E(x)=0$, when $x=3$. For what other value of $x$ does $E(x)=0$?",
+  "questionTable": {
+    "headers": [
+      "$x$",
+      "$E(x)$"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$-20$"
+      ],
+      [
+        "$2$",
+        "$-8$"
+      ],
+      [
+        "$4$",
+        "$4$"
+      ],
+      [
+        "$5$",
+        "$4$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$6$"
+    },
+    {
+      "id": "C",
+      "text": "$9$"
+    },
+    {
+      "id": "D",
+      "text": "$12$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "repeated the break-even value already given in the stem",
+    "C": "reported the sum of the two solutions, 18/2 = 9",
+    "D": "used 36 as the product of the solutions instead of 36/2 = 18, then divided by 3"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Back-Solve Parameter, Then Find Other Root**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The table shows $E(4)=E(5)$, so the axis of symmetry is $x=4.5$ and the two break-even values are the same distance from it: $4.5+(4.5-3)=6$.\n\n**The Full Solution:**\nStep 1: Substitute the known break-even value: $E(3)=-18+3k-36=0$, so $3k=54$ and $k=18$.\nStep 2: Solve $-2x^{2}+18x-36=0$. Dividing by $-2$ gives $x^{2}-9x+18=0$.\nStep 3: Factor: $(x-3)(x-6)=0$, so the other break-even value is $x=6$. Check: $E(6)=-72+108-36=0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): repeats the break-even value already given in the stem.\n* Choice C ($9$): reports the sum of the two solutions, $-b/a=18/2=9$, instead of the second solution.\n* Choice D ($12$): treats $36$ as the product of the solutions instead of $36/2=18$, then divides by $3$.\n\n**Test Day Takeaway:** Once one root is known, the product or the sum of the roots delivers the other in one step.",
+  "id": "bank-am-013"
+}

@@ -1,0 +1,29 @@
+{
+  "id": 17,
+  "question": "A dye-mixing model uses the equations $kx + 3y = 11$ and $27x + ky = 4$, where $k$ is a constant and $x$ and $y$ are the volumes, in liters, of two stock solutions. No ordered pair $(x, y)$ satisfies both equations. What positive value must $k$ have?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$30$"
+    },
+    {
+      "id": "D",
+      "text": "$81$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes a second square root of the coefficient ratio 27/3 = 9, reporting 3",
+    "C": "adds the two known coefficients, 27 + 3 = 30",
+    "D": "solves k squared = 81 but reports k squared instead of k"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** No solution means the coefficients are proportional, so $\\frac{27}{k} = \\frac{k}{3}$, giving $k^2 = 81$ and $k = 9$ for the positive value.\n\n**The Full Solution:**\nStep 1: Two linear equations have no common solution exactly when their lines are parallel but not identical — the $x$- and $y$-coefficients are in the same ratio while the constants are not.\nStep 2: Set the coefficient ratios equal: $\\frac{27}{k} = \\frac{k}{3}$. Cross-multiplying gives $k^2 = 81$, so $k = 9$ or $k = -9$; the positive value is $9$.\nStep 3: Confirm the lines are parallel and not the same line. With $k = 9$ the equations are $9x + 3y = 11$ and $27x + 9y = 4$; the second has coefficients exactly $3$ times the first, but $3(11) = 33 \\ne 4$, so there is no solution ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): computes the ratio $27 \\div 3 = 9$ and then square-roots it again, reporting $3$. With $k = 3$ the equations are $3x + 3y = 11$ and $27x + 3y = 4$, which cross at one point.\n* Choice C ($30$): adds the two known coefficients, $27 + 3$, instead of using their ratio.\n* Choice D ($81$): solves $k^2 = 81$ correctly but reports $k^2$ rather than $k$.\n\n**Test Day Takeaway:** When the unknown constant sits in both equations, proportionality becomes a quadratic. Solve it, then check the constants — matching constants would mean infinitely many solutions instead of none."
+}

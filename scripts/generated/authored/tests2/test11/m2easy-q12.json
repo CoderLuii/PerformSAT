@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "An equipment loan is repaid on a schedule for which the amount still owed, in dollars, after $m$ months equals $9{,}250 - 385m$. Which of the following describes the meaning of $385$ in that expression?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The amount, in dollars, owed when the loan began."
+  },
+  {
+   "id": "B",
+   "text": "The amount, in dollars, by which the amount owed increases each month."
+  },
+  {
+   "id": "C",
+   "text": "The number of months needed to repay the loan."
+  },
+  {
+   "id": "D",
+   "text": "The amount, in dollars, by which the amount owed decreases each month."
+  }
+ ],
+ "distractorNotes": {
+  "A": "mistakes the coefficient of m for the constant term 9,250",
+  "B": "ignores the minus sign in front of 385 and reads the balance as growing",
+  "C": "reads 385 as a count of months rather than a rate in dollars per month; the balance actually reaches zero after about 24 months"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** $385$ multiplies $m$ and carries a minus sign, so it is the dollars removed from the balance per month.\n\n**The Full Solution:**\nStep 1: Match the expression to $y = b + mx$ form: the constant $9{,}250$ is the starting balance and $-385$ is the rate of change per month.\nStep 2: Read the units of the rate: dollars per month, since $385$ multiplies a number of months and the result is in dollars.\nStep 3: Read the sign: the term is subtracted, so each additional month lowers the balance by $\\$385$. Check: after $1$ month the balance is $9{,}250 - 385 = \\$8{,}865$, exactly $\\$385$ less ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: the amount owed at the start is the constant $9{,}250$, the value of the expression when $m = 0$.\n* Choice B: the sign is part of the meaning; because $385m$ is subtracted, the balance falls rather than rises.\n* Choice C: $385$ counts dollars, not months; the balance hits zero near $m = 24$, since $9{,}250 \\div 385 \\approx 24$.\n\n**Test Day Takeaway:** The number attached to the variable is a rate — say it with its units and its sign, and the correct interpretation writes itself."
+}

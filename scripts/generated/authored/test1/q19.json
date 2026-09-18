@@ -6,26 +6,26 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 1,
- "passage": "In 1931, while still in his early twenties, the Cambridge-trained astrophysicist Subrahmanyan Chandrasekhar published a calculation that combined three frameworks ______ to derive a strict upper bound on the mass of any stable white dwarf, a limit Eddington famously dismissed at first but that astrophysicists later accepted as foundational.",
+ "passage": "In Nairobi, the painters and sign-writers who decorate the city's privately owned minibuses treat each vehicle as a canvas. In 2019, one collective converted a single decommissioned minibus into a rolling ______ within two years its members had painted, upholstered, and relaunched dozens more, each with its own theme.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": ", quantum statistics, special relativity, and Newtonian gravity,"
+   "text": "gallery,"
   },
   {
    "id": "B",
-   "text": "—quantum statistics, special relativity, and Newtonian gravity—"
+   "text": "gallery, and"
   },
   {
    "id": "C",
-   "text": "quantum statistics, special relativity, and Newtonian gravity"
+   "text": "gallery and"
   },
   {
    "id": "D",
-   "text": "—quantum statistics, special relativity, and Newtonian gravity,"
+   "text": "gallery"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"—quantum statistics, special relativity, and Newtonian gravity—\". The blank holds a parenthetical list that names the three frameworks Chandrasekhar combined, and that list itself contains internal commas (\"quantum statistics, special relativity, and Newtonian gravity\"). When a parenthetical insertion contains its own commas, Standard English requires a stronger pair of bracketing marks—paired em-dashes (or paired parentheses)—so the reader can see where the inserted material starts and ends. Choice B supplies a matched pair of em-dashes, which cleanly opens and closes the parenthetical and lets the main sentence resume with the infinitive phrase \"to derive a strict upper bound on the mass of any stable white dwarf…\"."
+ "explanation": "**Choice B is correct.** Two independent clauses meet at the blank, and joining them requires a comma plus a coordinating conjunction: \"gallery, and.\"\n\n**The Full Solution:**\n- Both sides are complete sentences: \"one collective converted a single decommissioned minibus into a rolling gallery\" and \"within two years its members had painted, upholstered, and relaunched dozens more.\"\n- The conventional join for two independent clauses is comma + coordinating conjunction, which only choice B supplies.\n\n**Why the other choices are wrong:**\n- A: A comma splice — it fuses two complete sentences with only a comma.\n- C: It supplies the conjunction but drops the comma required between independent clauses.\n- D: It runs the clauses together with no boundary at all."
 }

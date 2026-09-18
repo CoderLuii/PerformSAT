@@ -1,0 +1,52 @@
+{
+ "id": "bank-alg-268",
+ "question": "The table gives three values of $x$ and their corresponding values of $y$ that satisfy a linear equation. A system of two linear equations consists of this equation and the equation $6x - 3y = c$, where $c$ is a constant. If the system has infinitely many solutions, what is the value of $c$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "x",
+    "y"
+   ],
+   "rows": [
+    [
+     "1",
+     "4"
+    ],
+    [
+     "3",
+     "8"
+    ],
+    [
+     "5",
+     "12"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-6$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "constant of 2x - y = -2 before scaling by 3",
+  "C": "the y-intercept copied as c",
+  "D": "sign error on the constant"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The table rises $4$ for every $2$ in $x$, so $y = 2x + 2$, or $2x - y = -2$. Multiply by $3$: $6x - 3y = -6$, so $c = -6$.\n\n**The Full Solution:**\nStep 1: Slope $= \\frac{8 - 4}{3 - 1} = 2$. Using $(1, 4)$: $4 = 2(1) + b$ gives $b = 2$, so $y = 2x + 2$.\nStep 2: Rewrite in the form of the second equation: $2x - y = -2$. To match $6x - 3y$, multiply by $3$: $6x - 3y = -6$.\nStep 3: So $c = -6$. Check with $(5, 12)$: $6(5) - 3(12) = 30 - 36 = -6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-2$): the constant of $2x - y = -2$ before scaling to match the coefficients $6$ and $-3$.\n* Choice C ($2$): the $y$-intercept of the line, not the constant of the standard-form equation.\n* Choice D ($6$): drops the sign; plugging in $(1, 4)$ gives $6 - 12 = -6$, not $6$.\n\n**Test Day Takeaway:** Any table point can serve as a check: substitute it into $6x - 3y$ and the result is $c$ directly."
+}

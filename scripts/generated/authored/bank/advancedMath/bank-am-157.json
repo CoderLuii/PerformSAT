@@ -1,0 +1,6 @@
+{
+  "question": "A heat exchanger is stable when the equation $x^{2}-6x+k=0$ has no real solution. What is the least integer $k$ that makes the exchanger stable?",
+  "correctAnswer": "10",
+  "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~20s):** $36-4k<0$ gives $k>9$, so the smallest integer is $10$.\n\n**The Full Solution:**\nStep 1: The discriminant is $(-6)^{2}-4(1)(k)=36-4k$.\nStep 2: No real solutions requires $36-4k<0$, so $4k>36$ and $k>9$.\nStep 3: The smallest integer greater than $9$ is $10$. Check: $k=10$ gives $36-40=-4<0$, while $k=9$ gives $0$, which is one solution ✓\n\n**Common Mistakes:**\n* $9$: the boundary value, which gives exactly one real solution rather than none.\n* $3$: used $k>\\dfrac{b}{2}$ instead of the discriminant condition.\n* $6$: used the coefficient $6$ from the equation without computing the discriminant.\n\n**Test Day Takeaway:** No real solutions is a strict inequality, so the boundary integer is one step too small.",
+  "id": "bank-am-157"
+}

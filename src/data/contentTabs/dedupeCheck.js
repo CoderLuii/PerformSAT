@@ -1,3 +1,4 @@
+/* eslint-disable no-eval -- offline content validator run with node; evaluates generated snippets, never user input */
 /**
  * Content Duplication & Coverage Checker
  *
@@ -261,7 +262,6 @@ function run() {
     }
   }
   
-  const MAX_SECTIONS_PER_TAB = 4;
   const MAX_TOTAL_BLOCKS_PER_TAB = 400;
 
   const oversizedTabs = [];

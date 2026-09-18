@@ -1,0 +1,6 @@
+{
+ "question": "A fabrication shop charges a $\\$180$ setup fee for each order plus $\\$24$ for every aluminum mullion it cuts. What is the total charge, in dollars, for an order of $15$ mullions?",
+ "correctAnswer": "540",
+ "explanation": "**SAT Pattern: Linear Cost Equation Setup**\n\n**The correct answer is $540$.**\n\n**The Fast Way (~20s):** $180+24(15)=180+360=540$ dollars.\n\n**The Full Solution:**\n\nStep 1: Build the model. The charge is a one-time $\\$180$ plus $\\$24$ for each mullion, so for $m$ mullions the total is $C(m)=24m+180$.\n\nStep 2: Substitute $m=15$: $C(15)=24(15)+180=360+180$.\n\nStep 3: The total charge is $\\$540$. Check: without the setup fee the cutting alone is $\\$360$, and adding the single $\\$180$ fee gives $\\$540$.\n\n**Common Mistakes:** Reporting $360$ leaves out the setup fee, which is charged once no matter how many mullions are cut. Multiplying the setup fee by the count as well, $(24+180)(15)$, gives $3{,}060$ and charges the fee fifteen times.\n\n**Test Day Takeaway:** In a fixed-fee-plus-rate model, the fee is added exactly once; only the rate is multiplied by the count.",
+ "id": "bank-alg-328"
+}

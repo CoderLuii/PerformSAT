@@ -15,7 +15,7 @@ const SATBarChart = ({
   yStep: providedYStep,
   width = 320,
   height = 280,
-  barColor = '#4a5568',
+  barColor = '#000000',
 }) => {
   const styles = SAT_GRAPH_STYLES;
 

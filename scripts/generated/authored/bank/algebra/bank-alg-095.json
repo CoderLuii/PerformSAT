@@ -1,0 +1,29 @@
+{
+ "question": "Under the old rules a gymnast's routine scores $3n + 4$ points, and under the new rules the same routine scores $3n - 6$ points, where $n$ is the number of clean elements. A routine scores $19$ points under the old rules. What does that routine score under the new rules?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$9$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "solves $3n = 15$ for $n = 5$ and reports the count of clean elements",
+  "C": "subtracts $6$ from $19$ without first removing the $+4$",
+  "D": "reports the value of $3n$ without subtracting $6$"
+ },
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The new score is $10$ less than the old one, so it is $19 - 10 = 9$.\n\n**The Full Solution:**\n\nStep 1: From the old rules, $3n + 4 = 19$, so $3n = 15$.\n\nStep 2: The new score is $3n - 6 = 15 - 6 = 9$.\n\nStep 3: Check with $n = 5$: $3(5) + 4 = 19$ and $3(5) - 6 = 9$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5$): reports $n$, the number of clean elements, instead of the new score.\n\n* Choice C ($13$): subtracts $6$ from $19$, leaving the old $+4$ in place.\n\n* Choice D ($15$): stops at $3n$ and never subtracts $6$.\n\n**Test Day Takeaway:** The gap between two expressions with the same variable term is a fixed number; find it once and apply it to the given value.",
+ "id": "bank-alg-095"
+}

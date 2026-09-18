@@ -1,0 +1,57 @@
+{
+ "question": "The line shown in the $xy$-plane is the graph of $y = f(x)$, where $f(x)$ is the number of lightning strikes, in hundreds, recorded $x$ minutes after a storm cell forms. For what value of $x$ is $f(x) = 12$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the value where the line meets the vertical axis",
+  "C": "solves $2x = 12$, ignoring the starting value of $2$",
+  "D": "repeats the output $12$ instead of giving the input"
+ },
+ "explanation": "**SAT Pattern: Solve for Input from Output**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The line reaches a height of $12$ directly above $x = 5$.\n\n**The Full Solution:**\n\nStep 1: Read the line: it passes through $(0, 2)$ and $(4, 10)$, so it rises $2$ hundred strikes per minute and $f(x) = 2x + 2$.\n\nStep 2: Set the output to $12$: $2x + 2 = 12$, so $2x = 10$.\n\nStep 3: Then $x = 5$. Check on the graph: at $x = 5$ the line sits at $12$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2$): reports the $y$-intercept, the value at $x = 0$.\n\n* Choice C ($6$): solves $2x = 12$, forgetting the $2$ already on the board at minute $0$.\n\n* Choice D ($12$): repeats the given output instead of the input that produces it.\n\n**Test Day Takeaway:** When the graph gives the output, read across to the line and then down to the axis; the answer is an input, not the height.",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2,
+   "yIntercept": 2,
+   "xRange": [
+    0,
+    10
+   ],
+   "yRange": [
+    0,
+    24
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     0,
+     2
+    ],
+    [
+     4,
+     10
+    ]
+   ]
+  }
+ },
+ "id": "bank-alg-320"
+}

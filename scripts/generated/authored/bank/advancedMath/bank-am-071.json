@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-071",
+ "question": "Drop-tower data give $y$ as a maple samara's descent speed in meters per second, and for exactly two constants $c$ the expression $9y^2 + cy + 64$ is the square of a binomial with integer coefficients. Which of the following lists both of those constants?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-48$ and $48$"
+  },
+  {
+   "id": "B",
+   "text": "$-24$ and $24$"
+  },
+  {
+   "id": "C",
+   "text": "$48$ only"
+  },
+  {
+   "id": "D",
+   "text": "$-576$ and $576$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "uses $\\sqrt{9 \\cdot 64} = 24$, omitting the factor of $2$ in $2ab$",
+  "C": "keeps only the positive constant and misses the square $(3y - 8)^2$",
+  "D": "reports $9 \\cdot 64 = 576$ without taking a square root at all"
+ },
+ "explanation": "**SAT Pattern: Find k for Perfect Square Trinomial (Both Signs)**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The square roots of the outer terms are $3y$ and $8$, and the middle term must be $\\pm 2(3y)(8) = \\pm 48y$, so $c = \\pm 48$.\n\n**The Full Solution:**\nStep 1: For $(ay + b)^2 = a^2y^2 + 2aby + b^2$, match $a^2 = 9$ and $b^2 = 64$, so $a = 3$ and $b = \\pm 8$.\nStep 2: The middle coefficient is $2ab$, which is $2(3)(8) = 48$ when $b = 8$ and $2(3)(-8) = -48$ when $b = -8$.\nStep 3: So $c = 48$ or $c = -48$. Check: $(3y + 8)^2 = 9y^2 + 48y + 64$ and $(3y - 8)^2 = 9y^2 - 48y + 64$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\pm 24$): forgets that the middle term is TWICE the product of the two square roots.\n* Choice C ($48$ only): a negative constant term inside the binomial squares to $64$ just as well, so the negative case is equally valid.\n* Choice D ($\\pm 576$): multiplies the outer coefficients without square-rooting, so the size is off by a factor of $12$.\n\n**Test Day Takeaway:** Both signs of the square root of the constant work, so a middle-coefficient question of this type always has two answers."
+}

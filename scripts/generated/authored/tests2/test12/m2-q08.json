@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "A county health department recorded $900$ confirmed cases of a respiratory illness, $540$ of them in adults and the rest in children. Hospitalization was required for $30\\%$ of the adult cases and for $15\\%$ of the child cases. If one of the $900$ cases is selected at random, what is the probability that the selected case required hospitalization?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.15$"
+  },
+  {
+   "id": "B",
+   "text": "$0.225$"
+  },
+  {
+   "id": "C",
+   "text": "$0.24$"
+  },
+  {
+   "id": "D",
+   "text": "$0.30$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the child hospitalization rate alone, ignoring the 540 adult cases",
+  "B": "averages the two rates, (0.30 + 0.15)/2, instead of weighting them by group size",
+  "D": "reports the adult hospitalization rate alone, ignoring the 360 child cases"
+ },
+ "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice C is correct.** There are $162$ adult and $54$ child hospitalizations, so $216$ of the $900$ cases required hospitalization and the probability is $\\frac{216}{900} = 0.24$.\n\n**The Fast Way (~40s):** Weight each rate by its share: $0.6(0.30) + 0.4(0.15) = 0.18 + 0.06 = 0.24$.\n\n**The Full Solution:**\nStep 1: Count the children: $900 - 540 = 360$.\nStep 2: Count hospitalizations in each group: $0.30(540) = 162$ adults and $0.15(360) = 54$ children, for $162 + 54 = 216$ in all.\nStep 3: A marginal probability is the group total over the grand total: $\\frac{216}{900} = 0.24$. Check: $216$ is a little under a quarter of $900$, and $0.24$ lands between the two group rates but closer to $0.30$ because adults are the larger group. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.15$): the child rate by itself. That is the probability of hospitalization GIVEN a child case, not the probability across all $900$ cases.\n* Choice B ($0.225$): the plain average of $0.30$ and $0.15$. Averaging rates works only when the groups are the same size, and here adults outnumber children $540$ to $360$.\n* Choice D ($0.30$): the adult rate by itself, which would be the answer only if every case were an adult case.\n\n**Test Day Takeaway:** A marginal probability puts the whole population in the denominator. When two subgroups have different rates, weight each rate by its share before combining."
+}

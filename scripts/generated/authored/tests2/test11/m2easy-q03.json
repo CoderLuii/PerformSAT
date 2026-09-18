@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "question": "A triangular brace is cut from flat stock so that its two perpendicular edges measure $a$ inches and $a\\sqrt{3}$ inches, where $a > 0$. Which expression gives the area of the brace, in square inches?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\dfrac{a^2\\sqrt{3}}{4}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\dfrac{a^2\\sqrt{3}}{2}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\dfrac{3a^2}{2}$"
+    },
+    {
+      "id": "D",
+      "text": "$a^2\\sqrt{3}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "halves one edge before substituting it into the area formula, so the factor one-half is applied twice",
+    "C": "replaces the radical with 3, squaring the square root instead of carrying it",
+    "D": "multiplies the two perpendicular edges but omits the one-half in the triangle area formula"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The two perpendicular edges are the legs, so the area is $\\frac{1}{2}(a)(a\\sqrt{3}) = \\frac{a^2\\sqrt{3}}{2}$.\n\n**The Full Solution:**\nStep 1: Perpendicular edges of a triangle are its base and height, so area $= \\frac{1}{2}(\\text{base})(\\text{height})$.\nStep 2: Substitute the given lengths: $\\frac{1}{2}(a)(a\\sqrt{3})$.\nStep 3: Multiply the coefficients and keep the radical intact: $\\frac{a^2\\sqrt{3}}{2}$. Check with $a = 2$: the legs are $2$ and $2\\sqrt{3} \\approx 3.46$, giving an area of about $3.46$, and $\\frac{4\\sqrt{3}}{2} \\approx 3.46$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{a^2\\sqrt{3}}{4}$): halves one leg before substituting it and then halves again in the formula, so the factor $\\frac{1}{2}$ is applied twice; with $a = 2$ it gives about $1.73$, exactly half the true area.\n* Choice C ($\\frac{3a^2}{2}$): turns $\\sqrt{3}$ into $3$; a square root is only squared when it is multiplied by itself, and here it is multiplied by $a$.\n* Choice D ($a^2\\sqrt{3}$): this is the area of the rectangle with those two edges — twice the triangle.\n\n**Test Day Takeaway:** A radical in a leg length changes nothing about the method: multiply the coefficients, leave the radical alone, and keep the one-half."
+}

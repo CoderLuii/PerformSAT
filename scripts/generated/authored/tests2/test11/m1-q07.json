@@ -1,0 +1,29 @@
+{
+  "id": 7,
+  "question": "A quality engineer triples every recorded latency in a set of $30$ network measurements to model performance under a heavier load. Which statement compares the mean and the standard deviation of the tripled measurements with those of the original measurements?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Both the mean and the standard deviation are $3$ times as large."
+    },
+    {
+      "id": "B",
+      "text": "The mean is $3$ times as large, and the standard deviation is unchanged."
+    },
+    {
+      "id": "C",
+      "text": "The mean is unchanged, and the standard deviation is $3$ times as large."
+    },
+    {
+      "id": "D",
+      "text": "Both the mean and the standard deviation are unchanged."
+    }
+  ],
+  "distractorNotes": {
+    "B": "treats spread as unaffected by a multiplier (that is what adding a constant does)",
+    "C": "swaps the two measures, leaving the mean alone instead of the spread",
+    "D": "assumes a common factor cancels out of both summary measures"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Scaling a Data Set by a Constant**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Multiplying every value by $3$ multiplies the average by $3$ and stretches every distance from the average by $3$, so the mean and the standard deviation are both $3$ times as large.\n\n**The Full Solution:**\nStep 1: The mean is the sum divided by the count. Tripling all $30$ latencies triples the sum while the count stays $30$, so the mean is $3$ times its original value.\nStep 2: The standard deviation measures typical distance from the mean. If a value was $d$ milliseconds above the mean, after tripling it is $3d$ above the tripled mean, so every deviation is $3$ times as large and so is their typical size.\nStep 3: Both measures scale by the same factor $3$. Check with the two-value set $20$ and $40$: the mean is $30$ and each value sits $10$ from it; tripled, the values $60$ and $120$ have mean $90 = 3(30)$ and each sits $30$ from that mean, so every deviation, and with it the standard deviation, is $3$ times as large. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (mean tripled, spread unchanged): that is what *adding* a constant does. In the check above it would keep the deviations at $10$, but $60$ and $120$ each sit $30$ from their mean.\n* Choice C (mean unchanged, spread tripled): the mean moves with the values — the tripled set of the check averages $90$, not $30$.\n* Choice D (neither changes): multiplying is not a relabeling — the tripled set has mean $90$ and deviations of $30$, three times the original mean $30$ and deviations of $10$.\n\n**Test Day Takeaway:** Multiplying every value by $k$ multiplies the mean, the median, the range, and the standard deviation by $k$; adding a constant moves the center but leaves the spread alone."
+}

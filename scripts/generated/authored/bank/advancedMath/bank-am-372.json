@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-372",
+  "question": "A water main's gauge pressure, in pounds per square inch above the district's baseline, at a point $x$ kilometers east of the pump station is modeled by $f(x)=4x+9$. What is the value of $f(-6)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-24$"
+    },
+    {
+      "id": "B",
+      "text": "$-15$"
+    },
+    {
+      "id": "C",
+      "text": "$9$"
+    },
+    {
+      "id": "D",
+      "text": "$33$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "reports only 4(-6) = -24, dropping the constant 9",
+    "C": "evaluates at x = 0, the pump station itself",
+    "D": "substitutes x = 6 instead of x = -6: 24 + 9 = 33"
+  },
+  "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $4(-6)=-24$, and $-24+9=-15$ pounds per square inch.\n\n**The Full Solution:**\nStep 1: Substitute $-6$ for $x$: $f(-6)=4(-6)+9$.\nStep 2: Multiply first: $4(-6)=-24$.\nStep 3: Add the constant: $-24+9=-15$ pounds per square inch. Check: 6 kilometers west of the pump station the pressure sits 24 units below the station's reading of 9, which is $-15$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-24$): stops at $4(-6)$ without adding the pressure at the pump station.\n* Choice C ($9$): evaluates at $x=0$ rather than at $x=-6$.\n* Choice D ($33$): treats the point as 6 kilometers east instead of 6 kilometers west.\n\n**Test Day Takeaway:** A negative input means the opposite direction; substitute it in parentheses and let the sign carry through."
+}

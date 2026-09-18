@@ -1,0 +1,58 @@
+{
+  "id": 1,
+  "question": "The graph shows the water level $L$, in meters, at a reservoir gauge $m$ months after the start of a regional drought. Which equation represents the relationship shown in the graph?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -1.5,
+      "yIntercept": 12,
+      "xRange": [
+        0,
+        8
+      ],
+      "yRange": [
+        0,
+        12
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          0,
+          12
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "label": "L"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$L = 12 - 1.5m$"
+    },
+    {
+      "id": "B",
+      "text": "$L = 12 + 1.5m$"
+    },
+    {
+      "id": "C",
+      "text": "$L = 1.5m - 12$"
+    },
+    {
+      "id": "D",
+      "text": "$L = 1.5 - 12m$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads the falling line as rising and keeps the slope positive",
+    "C": "moves the minus sign off the rate and onto the starting level, giving a rising line that starts at $-12$",
+    "D": "swaps the slope and the $y$-intercept, using $1.5$ as the starting level"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Slope-Intercept Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The line starts at $12$ on the vertical axis and falls to $0$ at $m = 8$, so the rate is $-12 \\div 8 = -1.5$ meters per month. That is $L = 12 - 1.5m$.\n\n**The Full Solution:**\nStep 1: Read the $y$-intercept. The line crosses the vertical axis at $L = 12$, so the reservoir held $12$ meters of water when the drought began.\nStep 2: Read the slope from the two marked points $(0, 12)$ and $(8, 0)$: $\\frac{0 - 12}{8 - 0} = \\frac{-12}{8} = -1.5$.\nStep 3: Write slope-intercept form $L = -1.5m + 12$, or $L = 12 - 1.5m$. Check at $m = 4$: $12 - 1.5(4) = 6$, and the graph passes through $(4, 6)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($L = 12 + 1.5m$): reads the falling line as rising. A positive slope would put the level at $24$ meters after $8$ months, but the graph shows $0$.\n* Choice C ($L = 1.5m - 12$): moves the minus sign off the rate and onto the starting level. That line rises from $-12$, so month $0$ would start with a negative water level.\n* Choice D ($L = 1.5 - 12m$): swaps the slope and the $y$-intercept, treating $1.5$ as the starting level and $-12$ as the monthly change.\n\n**Test Day Takeaway:** Read the intercept off the vertical axis first, then get the slope from two lattice points the line actually passes through — the two numbers drop straight into $y = mx + b$."
+}

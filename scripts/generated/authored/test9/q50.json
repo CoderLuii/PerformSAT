@@ -6,29 +6,14 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 2,
-  "passage": "In 1964, the physicists Arno Penzias and Robert Wilson detected a faint background hiss in their radio antenna that they could not eliminate, no matter how they cleaned or adjusted the instrument. Suspecting a fault in the equipment, they even removed pigeons that had nested inside the antenna. ______ the persistent signal proved to be radiation left over from the early universe, a discovery that confirmed a central prediction of Big Bang cosmology.",
+  "passage": "Visitors to Chavín de Huántar in the first millennium BCE did not merely look at the temple; ceremonies there were engineered for the ear as much as for the eye, archaeologists argue, with sound at the center of the experience. ______ a single gallery within the temple has yielded twenty conch-shell trumpets, their mouthpieces polished smooth by generations of players.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Therefore,"
-    },
-    {
-      "id": "B",
-      "text": "Likewise,"
-    },
-    {
-      "id": "C",
-      "text": "Meanwhile,"
-    },
-    {
-      "id": "D",
-      "text": "In fact,"
-    }
+    { "id": "A", "text": "Nonetheless," },
+    { "id": "B", "text": "Meanwhile," },
+    { "id": "C", "text": "By contrast," },
+    { "id": "D", "text": "In fact," }
   ],
   "correctAnswer": "D",
-  "explanation": "The researchers first assumed the hiss was a fault and even cleared out nesting pigeons; the sentence then corrects that assumption, revealing the signal as relic radiation from the early universe. \"In fact,\" choice D, marks that correction. \"Therefore\" would make it a consequence, \"Likewise\" a similarity, and \"Meanwhile\" mere simultaneity.",
-  "_meta": {
-    "anchor": "Penzias and Wilson, cosmic microwave background"
-  }
+  "explanation": "**Choice D is correct.** The second sentence delivers striking confirmation of the first — twenty trumpets from one gallery, worn by long use — and \"In fact\" is the transition that presents evidence as emphatic support for a claim just made.\n\n**The Full Solution:**\n- Sentence one advances the archaeologists' claim: sound was central to the temple's ceremonies.\n- Sentence two does not merely continue the thought; it intensifies it with hard evidence — instruments in quantity, polished by generations.\n- A claim followed by its most arresting piece of support takes an emphasizing transition.\n\n**Why the other choices are wrong:**\n- A: \"Nonetheless\" concedes an obstacle, but the trumpet find supports rather than resists the claim.\n- B: \"Meanwhile\" implies a second, parallel scene; both sentences concern the same site and argument.\n- C: \"By contrast\" needs two things set against each other, and the discovery agrees with the claim instead of opposing it."
 }

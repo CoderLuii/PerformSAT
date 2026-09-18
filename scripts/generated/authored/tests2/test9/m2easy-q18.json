@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "A mixing console's gain chart lists $\\dfrac{27^{2x}}{9^{x + 3}}$ beside $3^{kx - 6}$ and notes that the two agree at every setting $x$. What is the value of the constant $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the exponents, 6x / 2x = 3, instead of subtracting them",
+  "C": "rewrites 9^(x+3) as 3^(x+3), forgetting 9 = 3^2, which leaves 3^(5x-3)",
+  "D": "uses only the numerator's exponent, 6x, and never divides"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice B is correct.** Writing $27$ and $9$ as powers of $3$ turns the quotient into $3^{4x - 6}$, so $k = 4$.\n\n**The Fast Way (~30s):** $27^{2x} = 3^{6x}$ and $9^{x+3} = 3^{2x+6}$; subtracting exponents gives $3^{6x - (2x+6)} = 3^{4x-6}$, so $k = 4$.\n\n**The Full Solution:**\nStep 1: Rewrite the numerator with base $3$: $27 = 3^3$, so $27^{2x} = \\left(3^3\\right)^{2x} = 3^{6x}$.\nStep 2: Rewrite the denominator: $9 = 3^2$, so $9^{x+3} = \\left(3^2\\right)^{x+3} = 3^{2x+6}$.\nStep 3: Divide by subtracting exponents: $3^{6x - 2x - 6} = 3^{4x - 6}$. Matching this with $3^{kx-6}$ gives $k = 4$. Check at $x = 2$: $\\dfrac{27^{4}}{9^{5}} = \\dfrac{531441}{59049} = 9$, and $3^{4(2)-6} = 3^2 = 9$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): divides the exponents, $6x \\div 2x = 3$, instead of subtracting them. Division of powers subtracts exponents; it does not divide them.\n* Choice C ($5$): rewrites $9^{x+3}$ as $3^{x+3}$, forgetting that $9 = 3^2$. That leaves $3^{6x - x - 3} = 3^{5x - 3}$, whose constant term $-3$ does not even match the given $-6$.\n* Choice D ($6$): reads off the numerator's exponent $6x$ and skips the division entirely.\n\n**Test Day Takeaway:** Convert every base to the same prime first, then apply one rule at a time — power to a power multiplies, and division subtracts. The constant term is a free check that your rewrite is right."
+}

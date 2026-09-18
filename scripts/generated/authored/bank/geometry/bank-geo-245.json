@@ -1,0 +1,40 @@
+{
+ "id": "bank-geo-245",
+ "question": "In the circle with center $O$ shown, the area of the entire circle is $80\\pi$ and the area of sector $AOB$ is $30\\pi$. What is the value of $\\theta$?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 135,
+   "angleLabel": "θ°",
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$67.5°$"
+  },
+  {
+   "id": "B",
+   "text": "$108°$"
+  },
+  {
+   "id": "C",
+   "text": "$135°$"
+  },
+  {
+   "id": "D",
+   "text": "$225°$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales 180 degrees instead of 360 degrees",
+  "B": "mis-reduces 30/80 to 3/10",
+  "D": "uses the region outside the sector"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Sector Area**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The sector is $\\frac{30\\pi}{80\\pi} = \\frac{3}{8}$ of the circle, so $\\theta = \\frac{3}{8}(360^\\circ) = 135^\\circ$.\n\n**The Full Solution:**\nStep 1: The share of the circle a sector occupies equals its area divided by the circle's area: $\\frac{30\\pi}{80\\pi} = \\frac{3}{8}$.\nStep 2: A central angle takes the same share of the full $360^\\circ$ turn: $\\theta = \\frac{3}{8}(360^\\circ)$.\nStep 3: $\\frac{3}{8}(360) = 135$, so $\\theta = 135^\\circ$. Check: the remaining region has area $50\\pi$ and central angle $225^\\circ$, and $135 + 225 = 360$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($67.5^\\circ$): applies the correct fraction to $180^\\circ$ instead of to a full $360^\\circ$ turn.\n* Choice B ($108^\\circ$): mis-reduces $\\frac{30}{80}$ to $\\frac{3}{10}$ and computes $\\frac{3}{10}(360^\\circ)$.\n* Choice D ($225^\\circ$): finds the central angle of the region outside sector $AOB$, using $\\frac{50\\pi}{80\\pi}$.\n\n**Test Day Takeaway:** The radius never has to be found here. Area ratio, arc ratio, and angle ratio are all the same fraction of the circle."
+}

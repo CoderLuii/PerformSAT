@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-332",
+ "question": "The tile shown is trimmed to a right triangle whose edges, measured in inches, add to $40$. The right angle falls at vertex $B$, and angle $A$ is acute. What is the value of $\\tan A$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     8,
+     15
+    ]
+   ],
+   "labels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "sideLabels": [
+    "8",
+    "",
+    "17"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{8}{17}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{8}{15}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{15}{17}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{15}{8}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports cos A = 8/17, adjacent over hypotenuse",
+  "B": "inverts the tangent, giving adjacent over opposite",
+  "C": "reports sin A = 15/17, opposite over hypotenuse"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Trig Ratio from Perimeter**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The unlabeled leg is $40 - 8 - 17 = 15$, so $\\tan A = \\frac{15}{8}$.\n\n**The Full Solution:**\nStep 1: The perimeter is $40$ inches and two edges measure $8$ and $17$, so $\\overline{BC} = 40 - 8 - 17 = 15$ inches.\nStep 2: With the right angle at $B$, the hypotenuse is $\\overline{CA} = 17$; relative to angle $A$ the opposite leg is $\\overline{BC} = 15$ and the adjacent leg is $\\overline{AB} = 8$.\nStep 3: $\\tan A = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{15}{8}$.\n\nCheck: $8^2 + 15^2 = 64 + 225 = 289 = 17^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{8}{17}$): uses the hypotenuse, giving $\\cos A$ instead of a tangent.\n* Choice B ($\\frac{8}{15}$): inverts the ratio, dividing adjacent by opposite.\n* Choice C ($\\frac{15}{17}$): uses the hypotenuse in the denominator, giving $\\sin A$.\n\n**Test Day Takeaway:** Tangent is the only basic ratio that never touches the hypotenuse."
+}

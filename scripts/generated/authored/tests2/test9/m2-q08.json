@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "The quotient $\\frac{12x^2 + kx - 35}{2x + 5}$ reduces to a linear polynomial for every $x$ except $-\\frac{5}{2}$, where $k$ is a constant. What must the value of $k$ be?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-44$"
+  },
+  {
+   "id": "B",
+   "text": "$-16$"
+  },
+  {
+   "id": "C",
+   "text": "$-14$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "computes 2(-7) - 5(6) = -44, subtracting the outer product instead of adding it",
+  "B": "factors as (2x - 5)(6x + 7), flipping both signs inside the factors, which gives 14 - 30 = -16",
+  "C": "keeps only the inner product 2(-7) = -14 and drops the 5(6) term"
+ },
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice D is correct.** The quotient is linear only when $2x + 5$ divides the numerator, so $12x^2 + kx - 35 = (2x + 5)(6x - 7)$. Expanding gives $k = 2(-7) + 5(6) = 16$.\n\n**The Fast Way (~30s):** The other factor must be $6x - 7$ since $2x \\cdot 6x = 12x^2$ and $5(-7) = -35$; the middle term is then $-14x + 30x = 16x$.\n\n**The Full Solution:**\nStep 1: For the quotient to be a polynomial, $2x + 5$ must be a factor of $12x^2 + kx - 35$, so write $12x^2 + kx - 35 = (2x + 5)(ax + b)$.\nStep 2: Matching the ends, $2a = 12$ gives $a = 6$, and $5b = -35$ gives $b = -7$.\nStep 3: Check with the true value: $(2x + 5)(6x - 7) = 12x^2 - 14x + 30x - 35 = 12x^2 + 16x - 35$, so $k = 16$ and the quotient is $6x - 7$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-44$): builds the middle term as $2(-7) - 5(6) = -44$, subtracting one cross product instead of adding both.\n* Choice B ($-16$): writes the factorization as $(2x - 5)(6x + 7)$, flipping the signs even though the given factor is $2x + 5$; that pairing gives $14 - 30 = -16$.\n* Choice C ($-14$): stops after the first cross product, $2 \\cdot (-7) = -14$, and never adds $5 \\cdot 6 = 30$.\n\n**Test Day Takeaway:** When a rational expression is said to reduce, the denominator is a factor of the numerator. Build the missing factor from the leading and constant terms, then read the middle coefficient off both cross products."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-410",
+  "question": "The function $f$ is defined by $f(x) = (x + 9)(x - 2)(x + 4)$. In the $xy$-plane, the graph of $y = f(x) - 6$ passes through the points $(-9, y_1)$, $(-4, y_2)$, and $(2, y_3)$. Which of the following must be true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y_1 = y_2 = y_3 = 0$"
+    },
+    {
+      "id": "B",
+      "text": "$y_1 = y_2 = y_3 = -6$"
+    },
+    {
+      "id": "C",
+      "text": "$y_1 = y_2 = y_3 = 6$"
+    },
+    {
+      "id": "D",
+      "text": "$y_1$, $y_2$, and $y_3$ are three distinct negative numbers"
+    }
+  ],
+  "distractorNotes": {
+    "A": "forgets the vertical shift",
+    "C": "shifts up instead of down",
+    "D": "assumes the three outputs must differ"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Vertical Shift of a Polynomial**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Each listed input is a zero of $f$, so $f(x) = 0$ there and $y = 0 - 6 = -6$ at all three.\n\n**The Full Solution:**\nStep 1: $f$ is written in factored form, so it is zero exactly where one factor is zero: $x = -9$, $x = 2$, and $x = -4$.\nStep 2: The three given inputs are precisely those zeros, so $f(-9) = f(-4) = f(2) = 0$.\nStep 3: Subtracting $6$ lowers every output by $6$: $y_1 = y_2 = y_3 = 0 - 6 = -6$. Check one directly: $f(-4) = (5)(-6)(0) = 0$, so the shifted value is $-6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: evaluates $f$ at its zeros but forgets that the graph is $y = f(x) - 6$, not $y = f(x)$.\n* Choice C: shifts the graph up instead of down, treating $-6$ as $+6$.\n* Choice D: assumes three different inputs must give three different outputs; here all three are zeros, so the shifted values coincide.\n\n**Test Day Takeaway:** A vertical shift moves every point by the same amount, so inputs that shared an output before still share one after."
+}

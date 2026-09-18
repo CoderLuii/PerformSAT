@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-007",
+  "question": "Of the $2{,}500$ households surveyed in a county, $36\\%$ have a vegetable garden. Of the households that have a vegetable garden, $15\\%$ also keep bees. How many of the surveyed households have a vegetable garden and keep bees?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$135$"
+    },
+    {
+      "id": "B",
+      "text": "$375$"
+    },
+    {
+      "id": "C",
+      "text": "$900$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}275$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "takes $15\\%$ of all $2{,}500$ households instead of $15\\%$ of the $900$ garden households.",
+    "C": "stops after the first step and reports the number of households with a garden.",
+    "D": "adds the percents ($36\\% + 15\\% = 51\\%$) and takes $51\\%$ of $2{,}500$."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Compound Percent Of**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Take the percents in order: $0.36 \\times 2{,}500 = 900$ households have a garden, and $0.15 \\times 900 = 135$ of those keep bees.\n\n**The Full Solution:**\nStep 1: The second percent applies to the garden households only, not to all $2{,}500$. First find the garden households: $0.36 \\times 2{,}500 = 900$.\nStep 2: Then take $15\\%$ of that group: $0.15 \\times 900 = 135$.\nStep 3: Check with one combined factor: $0.36 \\times 0.15 = 0.054$, and $0.054 \\times 2{,}500 = 135$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($375$): takes $15\\%$ of all $2{,}500$ households instead of $15\\%$ of the $900$ garden households.\n* Choice C ($900$): stops after the first step and reports the number of households with a garden.\n* Choice D ($1{,}275$): adds the percents ($36\\% + 15\\% = 51\\%$) and takes $51\\%$ of $2{,}500$.\n\n**Test Day Takeaway:** \"Of those\" signals a percent of a subgroup. Multiply the percents as decimals, never add them."
+}

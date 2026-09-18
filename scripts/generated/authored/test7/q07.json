@@ -1,31 +1,31 @@
 {
-  "id": 707,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "Many animals that look silent to us are in constant acoustic conversation. Using underwater microphones, researchers recording a coral reef at night captured a dense layer of clicks, grunts, and pops produced by fish and invertebrates. When they compared healthy reefs with degraded ones, the healthy reefs proved markedly louder and more varied in their sounds. The team proposes that this \"soundscape\" could serve as a quick, inexpensive gauge of reef health—and even that broadcasting the recorded sounds of a thriving reef might help lure young fish and corals to settle on reefs being restored.",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It defines a scientific term, traces the history of that term’s use in marine biology, and then questions whether the term should be retained at all."
-    },
-    {
-      "id": "B",
-      "text": "It describes a surprising observation about reef sounds, reports a comparison the observation made possible, and then notes potential uses of the finding."
-    },
-    {
-      "id": "C",
-      "text": "It presents two competing explanations for why reefs produce sound and argues that one of them is more convincing."
-    },
-    {
-      "id": "D",
-      "text": "It recounts a single recording session and then explains why those particular results could not later be replicated."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage moves from an observation (reefs are full of sound), to a comparison that observation enabled (healthy reefs are louder and more varied than degraded ones), to possible applications (monitoring reef health and attracting settlers to restored reefs). Choice A describes a history and a debate over terminology that never appear. Choice C invents two rival explanations, and Choice D claims the results failed to replicate, which the text does not say."
+ "id": 707,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "Prairie dogs give short barking calls when a predator approaches, and for years the calls were assumed to convey little beyond the presence of danger. Recordings told a richer story: calls prompted by a hawk, a coyote, and a human differ consistently in their acoustic structure. When researchers played the recordings back to colonies with no predator in sight, the animals responded with escape behavior matched to each call type — diving into burrows at a hawk call, standing upright to scan at a coyote call. The team suggests that similar playback experiments could reveal how much information other social mammals pack into their alarm calls.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It defines a technical term, traces the term's use across several decades of research, and then questions whether it should be kept."
+  },
+  {
+   "id": "B",
+   "text": "It presents an assumption about a behavior, reports findings that revealed the behavior to be more complex, and closes with a possible extension of the research."
+  },
+  {
+   "id": "C",
+   "text": "It offers two competing explanations for a behavior and argues that the available evidence decisively favors one of them."
+  },
+  {
+   "id": "D",
+   "text": "It recounts a single season of fieldwork at one colony and then explains in detail why the results of that season could not later be replicated by other research teams."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage moves through exactly the three beats B names: the old assumption (calls mean only \"danger\"), the findings that complicated it (distinct calls per predator, and matched responses on playback), and a closing extension (the method could be tried on other species).\n\n**The Full Solution:**\n- Beat one: for years the calls \"were assumed to convey little beyond the presence of danger.\"\n- Beat two: recordings showed hawk, coyote, and human calls differ consistently, and playback with no predator present triggered escape behavior suited to each call type.\n- Beat three: the team proposes extending playback experiments to other social mammals.\n\n**Why the other choices are wrong:**\n- A: No technical term is defined or tracked through decades of use.\n- C: The passage reports one line of evidence, not a contest between two explanations.\n- D: Nothing suggests the results failed to replicate — the playback results are presented as the confirming step, not a fluke."
 }

@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
+  "module": 2,
+  "passage": "In a Renaissance workshop, a picture began long before any paint was mixed. Turning rough planks into a painting surface meant three stages in a fixed ______ joining and smoothing the seasoned poplar, sealing the wood with coats of glue size, and building up thin layers of gesso to be scraped and polished smooth.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "once, the"
+      "text": "order, joining"
     },
     {
       "id": "B",
-      "text": "once the"
+      "text": "order joining"
     },
     {
       "id": "C",
-      "text": "once; the"
+      "text": "order; joining"
     },
     {
       "id": "D",
-      "text": "once: the"
+      "text": "order: joining"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. \"Keeping them viable requires controlling three things at once\" is a complete sentence, and the list that follows explains what those three things are, so a colon is the right mark, as in choice D. A comma (A) cannot introduce the list after a complete clause here; no punctuation (B) runs the clause into the list; and a semicolon (C) is reserved for joining independent clauses, which the list is not.",
-  "passage": "A botanical garden's seed bank can hold tens of thousands of samples, and keeping them viable requires controlling three things at ______ the temperature of the storage vaults, the moisture content of the seeds themselves, and the intervals at which old samples are tested and regrown.",
+  "explanation": "**Choice D is correct.** An independent clause ends at \"a fixed order,\" and what follows is the list of the three stages — the construction a colon exists to introduce.\n\n**The Full Solution:**\n- The clause before the blank is complete: \"Turning rough planks into a painting surface meant three stages in a fixed order.\"\n- The material after the blank itemizes the promised stages: joining, sealing, building up gesso.\n- A colon after an independent clause formally introduces the list it announces.\n\n**Why the other choices are wrong:**\n- A: A comma is too weak to introduce a formal list after a complete clause and blurs where the clause ends.\n- B: With no punctuation, \"order joining\" runs the clause into the list unreadably.\n- C: A semicolon must have an independent clause on each side, and the list of stages is not a clause.",
   "_meta": {
-    "anchor": "seed-bank storage; colon before a list"
-  },
-  "module": 2
+    "anchor": "Renaissance panel preparation; colon before a list"
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-125",
+  "question": "The recorded masses, in grams, of $12$ rock samples have a mean of $37$ and a median of $40$. The scale used read $4$ grams too high, so each recorded mass is decreased by $4$. What are the mean and the median of the corrected masses?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Mean $37$, median $40$"
+    },
+    {
+      "id": "B",
+      "text": "Mean $37$, median $36$"
+    },
+    {
+      "id": "C",
+      "text": "Mean $33$, median $40$"
+    },
+    {
+      "id": "D",
+      "text": "Mean $33$, median $36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats the correction as leaving both statistics unchanged",
+    "B": "shifts the median but not the mean; the mean is built from every value, so it shifts too",
+    "C": "shifts the mean but not the median; the middle values move with everything else"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Subtracting the same $4$ from every value slides the whole data set down by $4$: the mean becomes $37 - 4 = 33$ and the median becomes $40 - 4 = 36$.\n\n**The Full Solution:**\nStep 1: The mean is the sum divided by $12$. Each of the $12$ values drops by $4$, so the sum drops by $48$ and the mean drops by $\\frac{48}{12} = 4$, to $33$.\nStep 2: Subtracting a constant does not change the order of the values, so the two middle values are still the two middle values; each drops by $4$, so their average, the median, drops by $4$, to $36$.\nStep 3: Check with a tiny example: $\\{1, 2, 9\\}$ has mean $4$ and median $2$; subtracting $4$ gives $\\{-3, -2, 5\\}$ with mean $0$ and median $-2$, both exactly $4$ lower. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (mean $37$, median $40$): Treats the correction as cosmetic; every value moved, so the summary statistics move with them.\n* Choice B (mean $37$, median $36$): Shifts the median but not the mean, yet the mean is computed from every value and every value dropped.\n* Choice C (mean $33$, median $40$): Shifts the mean but not the median; the middle values dropped by $4$ like all the others.\n\n**Test Day Takeaway:** Adding or subtracting a constant to every value shifts the mean and the median by that constant; measures of spread (range, standard deviation) do not change."
+}

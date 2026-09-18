@@ -1,0 +1,44 @@
+{
+  "id": 11,
+  "question": "In the $xy$-plane, line $\\ell$ passes through the two points plotted in the figure shown. The equation of line $\\ell$ can be written in the form $y = mx + b$, where $m$ and $b$ are constants. Which equation represents line $\\ell$?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -6,
+          9
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "xMin": -10,
+      "xMax": 10,
+      "yMin": -10,
+      "yMax": 10
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = -\\frac{4}{3}x + 1$"
+    },
+    {
+      "id": "B",
+      "text": "$y = -\\frac{4}{3}x + 9$"
+    },
+    {
+      "id": "C",
+      "text": "$y = -\\frac{3}{4}x + \\frac{9}{2}$"
+    },
+    {
+      "id": "D",
+      "text": "$y = \\frac{4}{3}x + 17$"
+    }
+  ],
+  "correctAnswer": "A",
+  "hint": "Subtracting a negative coordinate lengthens the run — write the subtraction out rather than doing it in your head.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** $m = \\frac{-3-9}{3-(-6)} = -\\frac{4}{3}$, and $-3 = -\\frac{4}{3}(3)+b$ gives $b = 1$ — choice A.\n\n**The Full Solution:**\nStep 1: Compute the slope: $m = \\frac{-3-9}{3-(-6)} = \\frac{-12}{9} = -\\frac{4}{3}$. The run is $3-(-6) = 9$, not $3$.\nStep 2: Substitute $(3, -3)$ into $y = -\\frac{4}{3}x + b$: $-3 = -4 + b$, so $b = 1$.\nStep 3: The equation is $y = -\\frac{4}{3}x + 1$. Check the other point: $-\\frac{4}{3}(-6)+1 = 8+1 = 9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($y = -\\frac{4}{3}x + 9$): takes $9$, the second coordinate of the left-hand point, as the $y$-intercept; that height occurs at $x = -6$.\n* Choice C ($y = -\\frac{3}{4}x + \\frac{9}{2}$): inverts the slope to $\\frac{3-(-6)}{-3-9} = -\\frac{3}{4}$, which then forces $b = \\frac{9}{2}$.\n* Choice D ($y = \\frac{4}{3}x + 17$): drops a negative sign in the run, computing $\\frac{-12}{-9}$; anchoring $+\\frac{4}{3}$ at $(-6, 9)$ gives $b = 17$.\n\n**Test Day Takeaway:** With negative coordinates the run is where slopes go wrong: $3 - (-6) = 9$. Compute it explicitly, then confirm the finished equation on the point you did not use."
+}

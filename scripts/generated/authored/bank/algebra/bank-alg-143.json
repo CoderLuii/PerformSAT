@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-143",
+  "question": "A biologist models the mass $M(d)$, in grams, of a young rat $d$ days after birth by $M(d) = 6 + 4.5d$ for $0 \\le d \\le 30$. Which of the following is the best interpretation of the number $4.5$ in this model?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mass of the rat at birth, in grams."
+    },
+    {
+      "id": "B",
+      "text": "The number of days it takes the mass of the rat to double."
+    },
+    {
+      "id": "C",
+      "text": "The increase in the mass of the rat, in grams, each day after birth."
+    },
+    {
+      "id": "D",
+      "text": "The increase in the mass of the rat, in grams, every $6$ days."
+    }
+  ],
+  "distractorNotes": {
+    "A": "assigns the slope to the intercept role (birth mass is 6)",
+    "B": "reads a linear model as exponential",
+    "D": "swaps the roles of 6 and 4.5"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice C is correct.**\n\n**The Fast Way (~5s):** $4.5$ multiplies $d$, so it is the rate: for each additional day, the mass increases by $4.5$ grams.\n\n**The Full Solution:**\nStep 1: The model has the form $M(d) = b + md$ with $b = 6$ and $m = 4.5$. The constant $6$ is the mass at $d = 0$, birth.\nStep 2: The coefficient $4.5$ is the slope: the change in $M$ when $d$ increases by $1$. Its units are grams per day.\nStep 3: Check: $M(1) - M(0) = 10.5 - 6 = 4.5$ grams. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: describes the constant $6$, the mass at birth, not the coefficient $4.5$.\n* Choice B: treats the model as exponential growth; a linear model adds a fixed amount, it does not double on a schedule.\n* Choice D: swaps the two numbers, treating $6$ as the time unit and $4.5$ as the change over that period.\n\n**Test Day Takeaway:** In $b + md$, the constant is the starting value and the coefficient is the per-unit change. Doubling language belongs to exponential models, never to a linear one."
+}

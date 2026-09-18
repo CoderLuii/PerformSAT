@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "question": "A supplier quotes $4(kt - 3) + 8t$ hundred dollars for $t$ tons of reinforcing steel, and a competitor quotes $2(10t + 5) - 6$ hundred dollars for the same order, where $k$ is a constant. For what value of $k$ are the two quotes never equal for any value of $t$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-3$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$7$"
+    },
+    {
+      "id": "D",
+      "text": "$12$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "solves 4k = 8 - 20 instead of 4k = 20 - 8, subtracting in the wrong direction",
+    "C": "solves 4k = 20 + 8 = 28, adding the 8 instead of subtracting it",
+    "D": "stops at 4k = 12 and reports 12 without dividing by 4"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Expanded, the quotes are $(4k + 8)t - 12$ and $20t + 4$; they can never be equal only if the $t$-coefficients match while the constants do not, so $4k + 8 = 20$ and $k = 3$.\n\n**The Full Solution:**\nStep 1: Expand each side. The supplier's quote is $4kt - 12 + 8t = (4k + 8)t - 12$, and the competitor's is $20t + 10 - 6 = 20t + 4$.\nStep 2: Setting them equal gives $(4k + 8)t - 12 = 20t + 4$, or $(4k + 8 - 20)t = 16$. This has no solution exactly when the coefficient of $t$ is zero and the constant is not, since $0 \\cdot t = 16$ is impossible.\nStep 3: Solve $4k + 8 - 20 = 0$: $4k = 12$, so $k = 3$. Check: with $k = 3$ the supplier's quote is $20t - 12$ and the competitor's is $20t + 4$, which differ by $16$ hundred dollars at every $t$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-3$): sets up $4k = 8 - 20 = -12$, subtracting in the wrong direction after moving the $8$ across.\n* Choice C ($7$): sets up $4k = 20 + 8 = 28$, adding the $8$ rather than subtracting it from $20$.\n* Choice D ($12$): reaches $4k = 12$ correctly but reports that value as $k$ without dividing by $4$.\n\n**Test Day Takeaway:** Two linear expressions are never equal exactly when their variable coefficients match and their constants do not, so collect both sides before you judge the number of solutions."
+}

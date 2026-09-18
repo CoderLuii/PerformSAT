@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-035",
+  "question": "A meteorologist recorded $9$ wind speeds, in kilometers per hour, and found that their median was $40$. After a tenth wind speed was recorded, the median of the $10$ wind speeds was $43$. Which of the following must be true about the tenth wind speed?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It is equal to $43$."
+    },
+    {
+      "id": "B",
+      "text": "It is equal to $46$."
+    },
+    {
+      "id": "C",
+      "text": "It is at least $46$."
+    },
+    {
+      "id": "D",
+      "text": "It is at most $46$."
+    }
+  ],
+  "distractorNotes": {
+    "A": "assumes the added value equals the new median; a value of $43$ would give a median of $\\frac{40 + 43}{2} = 41.5$.",
+    "B": "is possible but not necessary; the tenth value can be any number greater than $46$ if the original $6$th value is $46$.",
+    "D": "rules out larger values that also work, such as the $w = 90$ example."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Median Shift from Insertion**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Adding one value to $9$ makes the median the average of the $5$th and $6$th values. The $5$th is still $40$, so the $6$th must be $46$; the new value is either that $46$ or something even larger.\n\n**The Full Solution:**\nStep 1: In the original ordered list, the median is the $5$th value: $v_5 = 40$. With $10$ values, the median is the mean of the $5$th and $6$th values.\nStep 2: If the new value $w$ were less than $40$, the $5$th and $6$th values of the new list would be $v_4$ and $v_5$, both at most $40$, giving a median of at most $40$, not $43$. So $w \\ge 40$, and the new $5$th value stays $v_5 = 40$.\nStep 3: Then $\\frac{40 + (\\text{new 6th value})}{2} = 43$, so the new $6$th value is $46$. That $6$th value is the smaller of $w$ and $v_6$. Either $w = 46$ (with $v_6 \\ge 46$) or $v_6 = 46$ and $w > 46$. In every case $w \\ge 46$. Check: original $\\{30, 32, 35, 38, 40, 46, 50, 55, 60\\}$ with $w = 90$ gives new middle values $40$ and $46$, median $43$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (equal to $43$): assumes the added value equals the new median; a value of $43$ would give a median of $\\frac{40 + 43}{2} = 41.5$.\n* Choice B (equal to $46$): is possible but not necessary; the tenth value can be any number greater than $46$ if the original $6$th value is $46$.\n* Choice D (at most $46$): rules out larger values that also work, such as the $w = 90$ example.\n\n**Test Day Takeaway:** With an even count the median averages two middle values. Pin down the one that is known, solve for the other, and remember that the inserted value can be anything at or beyond that boundary."
+}

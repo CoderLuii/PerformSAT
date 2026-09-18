@@ -1,0 +1,53 @@
+{
+  "question": "A quadratic function $q$ is given by $q(x)=x^{2}-8x+11$, and the table shows $q(x)$ at four values of $x$. Over all real numbers $x$, what is the least value of $q(x)$?",
+  "questionTable": {
+    "headers": [
+      "$x$",
+      "$q(x)$"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$4$"
+      ],
+      [
+        "$3$",
+        "$-4$"
+      ],
+      [
+        "$5$",
+        "$-4$"
+      ],
+      [
+        "$7$",
+        "$4$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-5$"
+    },
+    {
+      "id": "B",
+      "text": "$-4$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$11$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "read the smallest value listed in the table as the least value of q",
+    "C": "reported the input x = 4 at which the least value occurs instead of the output",
+    "D": "took the constant term of q(x) as its least value"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Complete the Square (Vertex Form)**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The table shows $q(3)=q(5)$, so the vertex sits at $x=4$, and $q(4)=16-32+11=-5$.\n\n**The Full Solution:**\nStep 1: Complete the square: $q(x)=x^{2}-8x+16-16+11=(x-4)^{2}-5$.\nStep 2: Since $(x-4)^{2}\\ge 0$ for every real $x$, the smallest possible value of $q(x)$ is $-5$, reached at $x=4$.\nStep 3: The table is consistent with this: $x=3$ and $x=5$ are each one unit from $4$ and give the same output $-4$. Check: $q(4)=16-32+11=-5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-4$): the smallest value that appears in the table, but the table skips $x=4$.\n* Choice C ($4$): reports the input at which the minimum occurs instead of the output.\n* Choice D ($11$): takes the constant term of $q(x)$ as the minimum.\n\n**Test Day Takeaway:** A table of a quadratic rarely contains the vertex — use the symmetry of two equal outputs to find it.",
+  "id": "bank-am-025"
+}

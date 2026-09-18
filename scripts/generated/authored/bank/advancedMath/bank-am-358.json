@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-358",
+ "question": "A population model produces the equation $2x^2 - bx + 2b = 0$, where $b$ is a constant fixed by the habitat and $x$ is the number of years after a survey at which two predicted ground-beetle densities are equal. For which values of $b$ are the two predictions never equal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0 < b < 16$"
+  },
+  {
+   "id": "B",
+   "text": "$0 \\le b \\le 16$"
+  },
+  {
+   "id": "C",
+   "text": "$b < 0$ or $b > 16$"
+  },
+  {
+   "id": "D",
+   "text": "$b < 16$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "includes the endpoints $b = 0$ and $b = 16$, where the discriminant is zero and the densities do meet once",
+  "C": "solves $b^2 - 16b > 0$, the condition for two crossing times rather than none",
+  "D": "keeps only the upper bound and loses the requirement that $b$ be positive"
+ },
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** No real solution means $b^2 - 4(2)(2b) < 0$, so $b(b - 16) < 0$, which holds exactly on $0 < b < 16$.\n\n**The Full Solution:**\nStep 1: With $a = 2$ and constant term $2b$, the discriminant is $(-b)^2 - 4(2)(2b) = b^2 - 16b$.\nStep 2: The densities are never equal when that discriminant is negative: $b^2 - 16b < 0$, which factors as $b(b - 16) < 0$.\nStep 3: A product of two factors is negative only between their zeros, so $0 < b < 16$. Check: at $b = 8$ the discriminant is $64 - 128 = -64 < 0$, and at $b = 20$ it is $400 - 320 = 80 > 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($0 \\le b \\le 16$): at both endpoints the discriminant equals $0$, so the two predictions do meet, at a single time.\n* Choice C ($b < 0$ or $b > 16$): this is where $b^2 - 16b > 0$, the case with two crossing times.\n* Choice D ($b < 16$): reads only one factor of $b(b - 16) < 0$ and forgets that $b$ must also exceed $0$.\n\n**Test Day Takeaway:** When the discriminant itself is quadratic in the parameter, factor it and read the sign chart — a negative product lives strictly between the zeros."
+}

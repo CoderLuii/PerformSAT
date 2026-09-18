@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-051",
+  "question": "A community pool sells adult day passes for $\\$6$ each and child day passes for $\\$4$ each. A group bought $11$ day passes for a total of $\\$54$. How many adult day passes did the group buy?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5$"
+    },
+    {
+      "id": "B",
+      "text": "$6$"
+    },
+    {
+      "id": "C",
+      "text": "$9$"
+    },
+    {
+      "id": "D",
+      "text": "$11$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "the number of child passes",
+    "C": "54/6, treating every pass as an adult pass",
+    "D": "the total number of passes"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Substitution in Word Problem**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Let $a$ be adult passes; then child passes are $11 - a$. Cost: $6a + 4(11 - a) = 54$, so $2a + 44 = 54$ and $a = 5$.\n\n**The Full Solution:**\nStep 1: Let $a$ and $c$ be the numbers of adult and child passes: $a + c = 11$ and $6a + 4c = 54$.\nStep 2: Solve the first equation for $c$: $c = 11 - a$. Substitute into the second: $6a + 4(11 - a) = 54 \\Rightarrow 6a + 44 - 4a = 54 \\Rightarrow 2a = 10 \\Rightarrow a = 5$.\nStep 3: Then $c = 6$. Check: $6(5) + 4(6) = 30 + 24 = 54$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($6$): is the number of child passes, the other unknown.\n* Choice C ($9$): divides $54$ by $6$, as if all $11$ passes were adult passes; that also contradicts the count of $11$.\n* Choice D ($11$): reports the total number of passes rather than the adult count.\n\n**Test Day Takeaway:** Express one count as \"total minus the other,\" substitute into the cost equation, and finish by identifying which count the question asked for."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-428",
+ "question": "A clinic receives a delivery of $p$ packs of examination gloves and uses 34 of the packs during one week, leaving 158 packs in storage. Which of the following gives the value of $p$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$158 - 34$"
+  },
+  {
+   "id": "B",
+   "text": "$158 + 34$"
+  },
+  {
+   "id": "C",
+   "text": "$158 \\times 34$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{158}{34}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "subtracts again instead of undoing the subtraction",
+  "C": "multiplies the two counts instead of adding them",
+  "D": "divides the two counts instead of adding them"
+ },
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $p - 34 = 158$, so $p = 158 + 34$.\n\n**The Full Solution:**\n\nStep 1: Using $34$ packs from a supply of $p$ leaves $p - 34$ packs, so $p - 34 = 158$.\n\nStep 2: To isolate $p$, add $34$ to both sides.\n\nStep 3: The value of $p$ is $158 + 34$, which is $192$. Check: $192 - 34 = 158$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($158 - 34$): subtracts a second time instead of reversing the subtraction.\n* Choice C ($158 \\times 34$): multiplies the two counts, which no part of the situation calls for.\n* Choice D ($\\frac{158}{34}$): divides the two counts, which would describe splitting the storage into groups.\n\n**Test Day Takeaway:** An amount removed is recovered by adding it back; the starting supply is always larger than what remains."
+}

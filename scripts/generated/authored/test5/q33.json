@@ -1,35 +1,35 @@
 {
-  "id": 533,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "The following text is from Jane Austen's 1813 novel Pride and Prejudice. The novel opens with a reflection on marriage and money.\n\nIt is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To state a widely held social assumption—that a wealthy unmarried man will be regarded as a prospective husband—as though it were a settled and universal truth."
-    },
-    {
-      "id": "B",
-      "text": "To describe the particular financial circumstances that allow a single man of good fortune to enter and settle into a new neighbourhood."
-    },
-    {
-      "id": "C",
-      "text": "To contrast the largely unknown private feelings of a newly arrived single man with the firm and confident public expectations held by all the various families living around him."
-    },
-    {
-      "id": "D",
-      "text": "To explain the reasons that lead families in a neighbourhood to keep their unmarried daughters away from any wealthy newcomer."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage announces, in the grand voice of a universal truth, that a wealthy single man must want a wife, and then explains that the surrounding families take him to be the rightful property of one of their daughters. Its purpose is to present that social assumption as if it were a settled fact. Choice B fastens on the man's fortune as a topic the passage does not actually develop. Choice C describes a contrast between his feelings and others' expectations, but the passage treats his feelings as irrelevant rather than setting up a contrast. Choice D reverses the families' attitude, which is to claim the newcomer, not to keep their daughters away from him.",
-  "_meta": {
-    "quoteVerify": true,
-    "source": "Jane Austen, Pride and Prejudice (1813), Chapter 1, opening lines"
+ "id": 533,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "The following text is from Charlotte Perkins Gilman's 1892 short story \"The Yellow Wallpaper.\" The narrator and her husband, John, have rented a house for the summer.\n\nIt is very seldom that mere ordinary people like John and myself secure ancestral halls for the summer. A colonial mansion, a hereditary estate, I would say a haunted house, and reach the height of romantic felicity—but that would be asking too much of fate! Still I will proudly declare that there is something queer about it. Else, why should it be let so cheaply? And why have stood so long untenanted?",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To introduce the rented house while conveying the narrator's suspicion that something about it is strange"
+  },
+  {
+   "id": "B",
+   "text": "To explain the unusually favorable financial arrangements that made it possible for the couple to rent the grand house"
+  },
+  {
+   "id": "C",
+   "text": "To catalog the architectural features that distinguish colonial mansions from ordinary houses"
+  },
+  {
+   "id": "D",
+   "text": "To recount the experiences of the tenants who occupied the house in previous summers"
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The narrator presents the house — an ancestral hall unusual for \"ordinary people\" to obtain — and builds toward her declaration that \"there is something queer about it,\" backed by the suspicious cheapness and long vacancy.\n\n**The Full Solution:**\n- The opening sentences establish the situation: the couple has secured a grand summer house beyond their ordinary station.\n- The narrator plays with romantic labels — \"a haunted house\" would be \"the height of romantic felicity\" — before settling on her own claim: something about the place is genuinely odd.\n- The closing questions supply her evidence: why so cheap, and why untenanted so long? Introduction of the house plus the note of strangeness is precisely choice A.\n\n**Why the other choices are wrong:**\n- B: The low rent is mentioned only as a clue to strangeness; no arrangements are explained.\n- C: No architectural features are cataloged — the house's style is invoked, not described.\n- D: Previous tenants appear only as an absence (\"so long untenanted\"); no experiences are recounted.",
+ "_meta": {
+  "quoteVerify": true,
+  "source": "Charlotte Perkins Gilman, \"The Yellow Wallpaper\" (1892), opening lines; text verbatim per the standard published editions"
+ }
 }

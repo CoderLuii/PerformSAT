@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-023",
+ "question": "A circular garden bed with a radius of $12$ feet is divided into $6$ congruent sectors by paths that meet at the center. What is the area, in square feet, of one sector?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$24\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$96\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$144\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the circumference by 6, which gives an arc length",
+  "C": "uses the diameter as the radius",
+  "D": "reports the area of the entire circle"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sector Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The whole bed has area $\\pi(12)^2 = 144\\pi$, and one of six congruent sectors is $\\frac{144\\pi}{6} = 24\\pi$ square feet.\n\n**The Full Solution:**\nStep 1: The area of the full circle is $A = \\pi r^2 = \\pi(12)^2 = 144\\pi$ square feet.\nStep 2: Six congruent sectors each take an equal share, so each covers $\\frac{1}{6}$ of the circle. (Each central angle measures $\\frac{360}{6} = 60°$.)\nStep 3: One sector has area $\\frac{1}{6}(144\\pi) = 24\\pi$ square feet.\n\nVerification: $6(24\\pi) = 144\\pi$, the full area. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4\\pi$): divides the circumference $24\\pi$ by $6$, which gives the curved edge of a sector, not its area.\n* Choice C ($96\\pi$): uses the diameter $24$ as the radius, computing $\\frac{576\\pi}{6}$.\n* Choice D ($144\\pi$): reports the area of the entire bed and never divides by $6$.\n\n**Test Day Takeaway:** Congruent sectors split both the area and the $360°$ of central angle equally. Find the whole first, then take your share."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-459",
+  "question": "In $2021$, a laboratory spent $16\\%$ more on reagents than it spent in $2020$, and in $2022$ it spent $5\\%$ more on reagents than it spent in $2021$. If the laboratory's $2022$ spending on reagents was $k$ times its $2020$ spending, what is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.2180$"
+    },
+    {
+      "id": "B",
+      "text": "$1.2100$"
+    },
+    {
+      "id": "C",
+      "text": "$1.2180$"
+    },
+    {
+      "id": "D",
+      "text": "$2.2100$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the total percent change as a decimal instead of the multiplier.",
+    "B": "adds the two percents rather than multiplying the factors.",
+    "D": "adds the two growth factors instead of multiplying them."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Successive Percent Change**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Each increase becomes a factor: $1.16$ then $1.05$. Their product is $1.16\\times 1.05=1.2180$.\n\n**The Full Solution:**\nStep 1: Let $S$ be the $2020$ spending. A $16\\%$ increase makes the $2021$ spending $1.16S$.\nStep 2: A further $5\\%$ increase makes the $2022$ spending $1.05(1.16S)=1.2180S$.\nStep 3: Since the $2022$ spending is $k$ times the $2020$ spending, $k=1.2180$. Check: starting from $100$, the values are $116$ and then $121.80$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.2180$): reports the $21.8\\%$ total change as a decimal; a multiplier for growth must exceed $1$.\n* Choice B ($1.2100$): adds $16\\%$ and $5\\%$ to get $21\\%$, ignoring that the second increase applies to the already larger $2021$ amount.\n* Choice D ($2.2100$): adds the factors $1.16$ and $1.05$ instead of multiplying them.\n\n**Test Day Takeaway:** Successive percent changes multiply their factors. The compounded result always beats the sum of the percents, but only slightly."
+}

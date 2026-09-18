@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-323",
+  "question": "The table shows the balance, in dollars, remaining on a prepaid transit card after $n$ rides. The balance decreases by the same amount with each ride. After how many rides will the balance be $\\$12$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Rides, n",
+        "Balance (dollars)"
+      ],
+      "rows": [
+        [
+          "4",
+          "62.00"
+        ],
+        [
+          "10",
+          "47.00"
+        ],
+        [
+          "16",
+          "32.00"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "24",
+  "explanation": "**SAT Pattern: Solve for Input from Output**\n\n**The correct answer is $24$.**\n\n**The Fast Way (~25s):** Each $6$ rides drop the balance by $\\$15$, so each ride costs $\\$2.50$. From $\\$32$ at $16$ rides, another $\\$20$ must come off: $20 \\div 2.50 = 8$ more rides, so $n = 24$.\n\n**The Full Solution:**\nStep 1: Find the rate. From $n = 4$ to $n = 10$ the balance falls from $62$ to $47$, a drop of $15$ over $6$ rides, so the rate is $-2.50$ dollars per ride. The rows $10 \\to 16$ confirm it: $47 - 32 = 15$.\nStep 2: Write the model. Starting balance: $62 + 4(2.50) = 72$, so $B(n) = 72 - 2.5n$.\nStep 3: Solve $72 - 2.5n = 12$: $2.5n = 60$, so $n = 24$.\nCheck: $B(24) = 72 - 2.5(24) = 72 - 60 = 12$. $\\checkmark$\n\n**Common Mistakes:** Dividing $15$ by $4$ instead of by $6$ (the ride gap between rows is $6$, not the row number); solving $2.5n = 72$ and answering $28.8$, which is when the balance hits $0$, not $12$; or reading $12$ as a number of rides.\n\n**Test Day Takeaway:** Table rows are rarely one unit apart; compute the rate as change in output divided by change in INPUT, then solve the model for the requested output."
+}

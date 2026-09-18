@@ -1,0 +1,29 @@
+{
+  "id": 7,
+  "question": "A lake survey netted $850$ trout in a single week, and $36\\%$ of them were below the minimum length required for tagging. How many of the netted trout were long enough to be tagged?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36$"
+    },
+    {
+      "id": "B",
+      "text": "$306$"
+    },
+    {
+      "id": "C",
+      "text": "$544$"
+    },
+    {
+      "id": "D",
+      "text": "$814$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the percent 36 as though it were a count of fish",
+    "B": "computes 36% of 850 = 306, the group that was too short",
+    "D": "subtracts the percent as a count: 850 - 36 = 814"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** If $36\\%$ were too short, then $64\\%$ were long enough, and $0.64 \\times 850 = 544$.\n\n**The Full Solution:**\nStep 1: The two groups account for the whole catch, so the tagged-length percent is $100\\% - 36\\% = 64\\%$.\nStep 2: Convert to a decimal and multiply: $0.64 \\times 850 = 544$ trout.\nStep 3: Check that the parts sum to the whole: $0.36 \\times 850 = 306$ too short, and $306 + 544 = 850$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($36$): reports the percent itself as a number of fish. A percent is a rate, not a count, until it multiplies the total.\n* Choice B ($306$): computes $36\\%$ of $850$ correctly but answers for the wrong group — those are the trout that were too short.\n* Choice D ($814$): subtracts $36$ from $850$, treating the percent as though it were already a count of fish.\n\n**Test Day Takeaway:** Underline which group the question wants before you multiply. Taking the complement first, then one multiplication, beats computing the wrong part and correcting later."
+}

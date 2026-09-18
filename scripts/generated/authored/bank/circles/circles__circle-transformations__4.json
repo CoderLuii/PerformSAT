@@ -1,0 +1,43 @@
+{
+ "question": "The table gives the center and radius of circle $A$ in the $xy$-plane. Circle $B$ is the image of circle $A$ after a translation $5$ units right and $2$ units down. Which equation defines circle $B$?",
+ "questionTable": {
+  "headers": [
+   "Circle",
+   "Center",
+   "Radius"
+  ],
+  "rows": [
+   [
+    "$A$",
+    "$(-3, 6)$",
+    "$4$"
+   ]
+  ]
+ },
+ "hint": "Ask what the translation changes and what it leaves alone.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x - 2)^2 + (y - 4)^2 = 4$"
+  },
+  {
+   "id": "B",
+   "text": "$(x + 2)^2 + (y + 4)^2 = 16$"
+  },
+  {
+   "id": "C",
+   "text": "$(x - 2)^2 + (y - 4)^2 = 16$"
+  },
+  {
+   "id": "D",
+   "text": "$(x + 8)^2 + (y - 8)^2 = 16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "writes the radius 4 on the right instead of its square",
+  "B": "reverses the signs of the new center, using (-2, -4)",
+  "D": "translates 5 left and 2 up, landing the center at (-8, 8)"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** The center moves from $(-3, 6)$ to $(2, 4)$ and the radius stays $4$, so the equation is $(x - 2)^2 + (y - 4)^2 = 16$.\n\n**The Full Solution:**\nStep 1: Moving $5$ units right adds $5$ to the $x$-coordinate: $-3 + 5 = 2$.\nStep 2: Moving $2$ units down subtracts $2$ from the $y$-coordinate: $6 - 2 = 4$.\nStep 3: A translation does not resize a circle, so the radius is still $4$ and the equation is $(x - 2)^2 + (y - 4)^2 = 4^2 = 16$. Check: the center $(2, 4)$ satisfies $x - 2 = 0$ and $y - 4 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($= 4$): puts the radius on the right side instead of the radius squared, $16$.\n* Choice B: reverses the signs inside the squares, which describes a circle centered at $(-2, -4)$.\n* Choice D: translates the center the wrong way, to $(-8, 8)$.\n\n**Test Day Takeaway:** In standard form the numbers inside the parentheses are the opposite of the center's coordinates, and the right side is always the square of the radius."
+}

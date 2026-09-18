@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 1,
-  "passage": "U.S. historian Stephanie M. H. Camp, working at the University of Washington, transformed scholarship on slavery by attending to small acts of refusal: illicit movement off the plantation, secret dances, ornaments worn beneath workclothes. By the time her book Closer to Freedom appeared in 2004, scholars ______ enslaved women's resistance largely through a narrow set of public, organized acts; Camp's reframing of everyday self-fashioning as itself a politics forced the field to widen its category.",
+  "passage": "In 1637, the French mathematician Pierre de Fermat jotted a now-famous note in the margin of his copy of an ancient arithmetic text, claiming that he ______ a marvelous proof of the theorem he had just stated — a proof, he added, that the margin was too narrow to contain. Mathematicians hunted for it for more than three centuries; most now doubt that it ever existed.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "defined"
+      "text": "discovers"
     },
     {
       "id": "B",
-      "text": "were defining"
+      "text": "will discover"
     },
     {
       "id": "C",
-      "text": "had defined"
+      "text": "had discovered"
     },
     {
       "id": "D",
-      "text": "have defined"
+      "text": "would have discovered"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The sentence describes two past events in sequence: scholars defining enslaved women's resistance in a particular way, and then the 2004 appearance of Camp's book Closer to Freedom. The phrase 'By the time her book.. appeared in 2004' fixes the second event as a past reference point, and the action that occurred earlier — scholars defining resistance through a narrow set of public, organized acts — must be expressed in the past perfect ('had defined'). Standard English uses the past perfect to mark the earlier of two completed past actions when a sequence cue ('by the time.. had..') is present."
+  "explanation": "**Choice C is correct.** Fermat's claim, reported in the past tense (\"jotted... claiming\"), concerns a discovery made before the moment of writing — a past within the past — which English marks with the past perfect \"had discovered.\"\n\n**The Full Solution:**\n- Establish the timeline: the note-writing happened in 1637 (past), and the discovery Fermat claimed had to precede the note — one cannot report possessing a proof one has not yet found.\n- Reported speech in a past-tense frame pushes the earlier event back one step: \"he claimed that he had discovered.\"\n- The past perfect \"had discovered\" is the only choice that places the discovery before the past-tense claiming.\n\n**Why the other choices are wrong:**\n- A: The present tense \"discovers\" clashes with the past-tense frame of \"jotted\" and \"claiming,\" producing an ungrammatical tense shift.\n- B: \"will discover\" makes Fermat promise a future discovery, contradicting the sentence's logic — the note asserts a proof already in hand that the margin cannot contain.\n- D: \"would have discovered\" is a conditional perfect, implying the discovery never happened under some unmet condition; the sentence reports what Fermat claimed did happen, not a hypothetical."
 }

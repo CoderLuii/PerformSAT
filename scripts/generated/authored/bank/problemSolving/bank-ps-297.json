@@ -1,0 +1,52 @@
+{
+  "id": "bank-ps-297",
+  "question": "Three machines fill bottles at the constant rates given in the table. If all three machines operate simultaneously at these rates, how many bottles do the machines fill in $1$ hour? ($1$ hour $= 3{,}600$ seconds.)",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Machine",
+        "Filling rate"
+      ],
+      "rows": [
+        [
+          "A",
+          "9 bottles every 4 seconds"
+        ],
+        [
+          "B",
+          "5 bottles every 2 seconds"
+        ],
+        [
+          "C",
+          "7 bottles every 3 seconds"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$425$"
+    },
+    {
+      "id": "B",
+      "text": "$8{,}400$"
+    },
+    {
+      "id": "C",
+      "text": "$17{,}100$"
+    },
+    {
+      "id": "D",
+      "text": "$25{,}500$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "gives the number of bottles filled in $1$ minute",
+    "B": "adds the numerators and the denominators of the three rates",
+    "C": "omits machine C"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The rates are $\\frac{9}{4}$, $\\frac{5}{2}$, and $\\frac{7}{3}$ bottles per second, which total $\\frac{85}{12}$ bottles per second; $\\frac{85}{12} \\times 3{,}600 = 25{,}500$.\n\n**The Full Solution:**\nStep 1: Write each machine's rate in bottles per second: machine A gives $\\frac{9}{4} = 2.25$, machine B gives $\\frac{5}{2} = 2.5$, and machine C gives $\\frac{7}{3}$.\nStep 2: Because the machines run at the same time, the combined rate is the sum: $\\frac{9}{4} + \\frac{5}{2} + \\frac{7}{3} = \\frac{27 + 30 + 28}{12} = \\frac{85}{12}$ bottles per second.\nStep 3: Multiply by the number of seconds in an hour: $\\frac{85}{12} \\times 3{,}600 = 85 \\times 300 = 25{,}500$ bottles. Check machine by machine: $2.25 \\times 3{,}600 = 8{,}100$, $2.5 \\times 3{,}600 = 9{,}000$, and $\\frac{7}{3} \\times 3{,}600 = 8{,}400$, and $8{,}100 + 9{,}000 + 8{,}400 = 25{,}500$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($425$): $\\frac{85}{12} \\times 60$, the number of bottles filled in one minute rather than one hour.\n* Choice B ($8{,}400$): from $\\frac{9 + 5 + 7}{4 + 2 + 3} = \\frac{21}{9}$ bottles per second, which adds the rates by adding numerators and denominators.\n* Choice C ($17{,}100$): $(\\frac{9}{4} + \\frac{5}{2}) \\times 3{,}600$, the total for machines A and B only.\n\n**Test Day Takeaway:** Convert every rate to the same per-unit form before adding, then convert the time once at the end."
+}

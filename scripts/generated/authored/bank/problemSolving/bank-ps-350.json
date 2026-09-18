@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-350",
+  "question": "Over $14$ days, the mean daily volume of groundwater pumped from a construction site was $3.5$ cubic meters. Each of the $14$ daily volumes is converted to liters, where $1$ cubic meter equals $1{,}000$ liters. What is the mean daily volume, in liters?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$35$"
+    },
+    {
+      "id": "B",
+      "text": "$350$"
+    },
+    {
+      "id": "C",
+      "text": "$3{,}500$"
+    },
+    {
+      "id": "D",
+      "text": "$49{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies by 10 instead of 1,000: 3.5 x 10 = 35, two factors of ten short",
+    "B": "multiplies by 100 instead of 1,000",
+    "D": "multiplies the mean by the 14 days as well: 3.5 x 1,000 x 14 = 49,000, reporting a total rather than a mean"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Scaling a Data Set**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Every daily volume is multiplied by $1{,}000$, so the mean is too: $3.5 \\times 1{,}000 = 3{,}500$ liters.\n\n**The Full Solution:**\nStep 1: Identify the transformation. Converting cubic meters to liters multiplies each of the $14$ daily values by $1{,}000$.\nStep 2: Apply it to the mean. Scaling every value by $1{,}000$ scales the mean by $1{,}000$: $3.5 \\times 1{,}000 = 3{,}500$ liters.\nStep 3: Check with the total. The $14$ days total $14 \\times 3.5 = 49$ cubic meters, or $49{,}000$ liters, and $\\frac{49{,}000}{14} = 3{,}500$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($35$): computes $3.5 \\times 10 = 35$, using $10$ liters per cubic meter. The conversion factor is $1{,}000$, two powers of ten larger.\n* Choice B ($350$): multiplies by $100$ instead of $1{,}000$ — one factor of ten short.\n* Choice D ($49{,}000$): is the TOTAL volume in liters for all $14$ days, not the mean for one day.\n\n**Test Day Takeaway:** A unit conversion scales every value by the same factor, so the mean scales by that factor. The count of values never enters a mean-scaling question."
+}

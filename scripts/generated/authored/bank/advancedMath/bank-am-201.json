@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-201",
+  "question": "The function $B$ defined by $B(t) = a(1.04)^t$ models the balance, in dollars, of an account $t$ years after it was opened, where $a$ is a constant. The balance was $\\$1{,}352$ two years after the account was opened. What is the value of $a$?",
+  "correctAnswer": "1250",
+  "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**The correct answer is $1250$.**\n\n**The Fast Way (~30s):** $a(1.04)^2 = 1{,}352$, so $a = \\dfrac{1{,}352}{1.0816} = 1{,}250$.\n\n**The Full Solution:**\nStep 1: The constant $a$ is $B(0)$, the balance when the account was opened.\nStep 2: Two years of growth give $B(2) = a(1.04)^2 = 1.0816a$, and the stem gives $B(2) = 1{,}352$.\nStep 3: $a = \\dfrac{1{,}352}{1.0816} = 1{,}250$. Check forward: $1{,}250 \\to 1{,}300 \\to 1{,}352$. $\\checkmark$\n\n**Common Mistakes:** Answering $1{,}352$, treating the balance after two years as the starting balance. Answering $1{,}300$, which undoes only one year of growth.\n\n**Test Day Takeaway:** The coefficient in $a(b)^t$ is the value at $t = 0$; when a later value is given, divide by the growth factor once for each elapsed unit."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-075",
+  "question": "The price of a share of a company's stock decreased by $30\\%$ during one month and then increased by $k\\%$ during the following month. If the price at the end of the two months was $98\\%$ of the price at the start of the two months, what is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$28$"
+    },
+    {
+      "id": "B",
+      "text": "$32$"
+    },
+    {
+      "id": "C",
+      "text": "$40$"
+    },
+    {
+      "id": "D",
+      "text": "$140$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds percents: -30 + k = -2",
+    "B": "adds percents and reads 98% as a 2% gain: -30 + k = 2",
+    "D": "reports the multiplier 1.4 as a percent"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Net Effect of Successive Changes**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** A $30\\%$ decrease multiplies by $0.70$. For the net factor to be $0.98$, the second factor must be $\\frac{0.98}{0.70} = 1.4$, a $40\\%$ increase.\n\n**The Full Solution:**\nStep 1: Let the starting price be $P$. After a $30\\%$ decrease the price is $0.70P$.\nStep 2: An increase of $k\\%$ multiplies by $\\left(1 + \\frac{k}{100}\\right)$, so the final price is $0.70P\\left(1 + \\frac{k}{100}\\right)$, and this equals $0.98P$.\nStep 3: Divide by $0.70P$: $1 + \\frac{k}{100} = 1.4$, so $\\frac{k}{100} = 0.4$ and $k = 40$. Check: a $\\$100$ share drops to $\\$70$, then rises $40\\%$ to $\\$98$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($28$): adds percents, $-30 + k = -2$; but the $k\\%$ increase is applied to the smaller $\\$70$, so it must be larger than $28$.\n* Choice B ($32$): also adds percents, this time reading \"$98\\%$ of the start\" as a $2\\%$ GAIN, $-30 + k = 2$.\n* Choice D ($140$): reports the multiplier $1.4$ as a percent instead of the percent increase, $40\\%$.\n\n**Test Day Takeaway:** Successive percent changes multiply their factors; solve for an unknown factor by dividing, then convert the factor back to a percent change."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 846,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "By the end of the long restoration, the conservators had reached a conclusion that surprised them ______ the fresco's startling blues and greens were not the work of a later hand at all but the original colors, dimmed for centuries beneath layers of candle soot and old varnish.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "them,"
-    },
-    {
-      "id": "B",
-      "text": "them"
-    },
-    {
-      "id": "C",
-      "text": "them, but"
-    },
-    {
-      "id": "D",
-      "text": "them:"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. What follows the blank spells out the conclusion the conservators reached, so a colon is the right mark: it stands after a complete clause and introduces the explanation that follows. The comma in A joins two independent clauses without a conjunction, a splice; the bare phrase in B fuses them into a run-on; and \"them, but\" in C signals a contrast that the sentence does not intend, since the second part explains the conclusion rather than opposing it."
+ "id": 846,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "However high the flyer soars, the trick is caught at one point in space and one moment in time. The flyer's timing must answer to one constraint above ______ the catcher's hands sweep through the lowest point of their arc only once in each swing, and a release calculated for any other instant finds them out of reach.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "all,"
+  },
+  {
+   "id": "B",
+   "text": "all"
+  },
+  {
+   "id": "C",
+   "text": "all, but"
+  },
+  {
+   "id": "D",
+   "text": "all:"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The first clause is independent and announces something to be specified — a single constraint — and a colon is the conventional mark that introduces the specification.\n\n**The Full Solution:**\n- \"The flyer's timing must answer to one constraint above all\" is a complete clause that points forward: the reader now expects the constraint itself.\n- What follows names it — the catcher's hands reach the bottom of their arc only once in each swing.\n- A colon after an independent clause introduces exactly this kind of elaboration.\n\n**Why the other choices are wrong:**\n- A: A comma cannot join two independent clauses; the result is a comma splice.\n- B: With no mark, the two clauses fuse into a run-on.\n- C: \"all, but\" inserts a contrast conjunction, yet the second clause specifies the constraint rather than opposing it."
 }

@@ -1,0 +1,44 @@
+{
+ "id": 11,
+ "question": "An automated sky camera counted meteors on each of 9 consecutive nights, as shown. Adding the count from a 10th night raises the mean to 8 meteors per night. What was the count on the 10th night?",
+ "diagram": {
+  "type": "dotPlot",
+  "params": {
+   "data": [
+    {
+     "value": 3,
+     "count": 1
+    },
+    {
+     "value": 5,
+     "count": 1
+    },
+    {
+     "value": 6,
+     "count": 1
+    },
+    {
+     "value": 7,
+     "count": 2
+    },
+    {
+     "value": 8,
+     "count": 2
+    },
+    {
+     "value": 9,
+     "count": 1
+    },
+    {
+     "value": 10,
+     "count": 1
+    }
+   ],
+   "xMin": 2,
+   "xMax": 12,
+   "xLabel": "Meteors counted per night"
+  }
+ },
+ "correctAnswer": "17",
+ "explanation": "**SAT Pattern: Mean from List**\n\n**The correct answer is 17.**\n\n**The Fast Way (~40s):** The 9 nights total $63$; ten nights averaging $8$ total $80$, so the 10th night contributed $80-63=17$.\n\n**The Full Solution:**\nStep 1: Total the dot plot. The counts are $3, 5, 6, 7, 7, 8, 8, 9, 10$, and their sum is $63$ meteors over $9$ nights.\nStep 2: Find the new total. A mean of $8$ across $10$ nights means the ten counts sum to $8 \\times 10 = 80$.\nStep 3: Subtract. The 10th night contributed $80-63=17$ meteors. Check: $\\frac{63+17}{10}=\\frac{80}{10}=8$ ✓\n\n**Common Mistakes:**\n* $8$: assumes the new value must equal the new mean; a single value only equals the mean when it leaves the mean unchanged, and here the mean rose from $7$ to $8$.\n* $9$: multiplies the new mean by the OLD count, computing $8 \\times 9 = 72$ and then $72-63=9$. The new mean applies to all ten nights.\n* $80$: reports the ten-night total instead of the single missing value.\n\n**Test Day Takeaway:** Every mean question is really a question about totals. Convert each mean to a sum (mean $\\times$ count) before comparing, and be careful that the new mean multiplies the NEW number of values.\n"
+}

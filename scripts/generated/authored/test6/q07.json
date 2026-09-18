@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
-  "passage": "Choreography was for centuries preserved mainly through memory and direct teaching, passed from one dancer's body to another. In the 1920s, Rudolf Laban proposed a written notation in which symbols arranged along a vertical staff record not only the steps but the direction, level, and timing of each movement. *Unlike earlier attempts, which had tried to capture poses as a series of pictures, Laban's system treated movement as a continuous flow that could be written down as it unfolded, much as a melody is.* The notation let a dance be archived, studied, and reconstructed long after its first performers had stopped dancing.",
+  "passage": "For much of the twentieth century, sailors' reports of lone waves towering above every other wave in sight were dismissed by oceanographers as exaggeration born of fear or the distortion of memory. The skepticism rested on a tacit assumption: in the standard statistical picture of the sea surface, where many small waves add together at random, a wave of the reported size should arise perhaps once in ten thousand years, so honest witnesses had to be mistaken. __Equations that let waves interact rather than merely add later showed that no extraordinary rarity is involved — a wave group crossing the open ocean can draw energy from its neighbors and briefly concentrate it into a single giant far more often than random addition predicts.__ Instruments mounted on offshore platforms have since recorded such waves at rates matching the revised predictions.",
   "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
   "choices": [
     {
       "id": "A",
-      "text": "It introduces a doubt about whether any written system can capture the experience of a live dance."
+      "text": "It concedes that the oceanographers' doubts about the reports were reasonable given the statistics available at the time."
     },
     {
       "id": "B",
-      "text": "It lists the specific symbols that Laban placed along the vertical staff of his notation."
+      "text": "It introduces a competing set of shipboard observations that the equations discussed later in the text failed to predict."
     },
     {
       "id": "C",
-      "text": "It explains why choreography had been preserved through memory and teaching for so many centuries."
+      "text": "It restates the assumption on which the oceanographers' skepticism rested."
     },
     {
       "id": "D",
-      "text": "It clarifies what set Laban's notation apart from earlier efforts by contrasting his approach with theirs."
+      "text": "It explains why the assumption underlying the earlier skepticism — that so towering a wave must be vanishingly rare — does not hold."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The underlined sentence draws an explicit contrast: earlier attempts sketched poses as pictures, while Laban's system recorded movement as a continuous flow. That contrast is what distinguishes his notation from what came before, which is the function choice D names. The sentence raises no doubt about written systems, does not enumerate the staff's symbols, and does not address why memory and teaching had served for centuries; those are matters handled, if at all, elsewhere in the passage."
+  "explanation": "**Choice D is correct.** The skepticism depended on the assumption that a wave of the reported size must be almost impossibly rare; the underlined sentence reports the theoretical result that dissolves that assumption — waves that interact can funnel a group's energy into one brief giant far more often than random addition allows.\n\n**The Full Solution:**\n- The second sentence isolates the load-bearing assumption: under random addition, a wave that size \"should arise perhaps once in ten thousand years.\"\n- The underlined sentence answers it directly (\"no extraordinary rarity is involved\") and gives the mechanism: interacting waves concentrating a group's energy into a single short-lived giant.\n- The final sentence confirms the revised predictions against platform records, so the underlined sentence functions as the text's pivot from doubt to explanation.\n\n**Why the other choices are wrong:**\n- A: The sentence undercuts the doubts rather than conceding their reasonableness.\n- B: It reverses the actual relationship — the platform records matched the equations rather than defeating them, and the underlined sentence contains the equations, not observations.\n- C: The assumption is restated in the sentence before the underlined one; the underlined sentence refutes it."
 }

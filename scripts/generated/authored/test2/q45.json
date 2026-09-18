@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 2,
-  "passage": "Daniel Everett, a linguist at Bentley University, has spent decades among the Pirahã of the Amazon basin. In his book Don't Sleep, There Are Snakes (2008), he argues that the Pirahã language poses a challenge to universal grammar: it lacks recursion, omits abstract numerals, and ______ colors only through descriptive comparison. These features, he contends, are shaped by a cultural insistence on speaking only of immediate, eyewitness experience.",
+  "passage": "By the height of the Ming dynasty, the kiln city of Jingdezhen was producing porcelain on an industrial scale, with each piece passing through dozens of specialized hands — one artisan shaped the clay, another trimmed it, still others painted and glazed. According to a seventeenth-century account, this painstaking division of labor among so many separate workers ______ what allowed a single cup to pass through as many as seventy stages of production without flaw.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "expressing"
+      "text": "were"
     },
     {
       "id": "B",
-      "text": "has expressed"
+      "text": "are"
     },
     {
       "id": "C",
-      "text": "expresses"
+      "text": "was"
     },
     {
       "id": "D",
-      "text": "to express"
+      "text": "have been"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The blank holds the third item in a coordinated list of three predicates whose shared subject is the pronoun 'it' (referring to 'the Pirahã language'): 'it lacks recursion, omits abstract numerals, and ______ colors only through descriptive comparison.' Standard English requires the items in such a coordinated list to be parallel in grammatical form. The first two predicates ('lacks,' 'omits') are simple-present, third-person-singular finite verbs, so the third predicate must also be a simple-present, third-person-singular finite verb. Only choice C, 'expresses,' satisfies that constraint, producing the parallel sequence 'lacks.., omits.., and expresses..'"
+  "explanation": "**Choice C is correct.** The subject of the blank is the singular \"division,\" and the sentence reports a past account — so the verb must be the singular past form \"was.\"\n\n**The Full Solution:**\n- Strip away the modifiers to find the subject: \"this painstaking division [of labor] [among so many separate workers] ______.\" The head noun is \"division\" — singular.\n- The phrases \"of labor\" and \"among so many separate workers\" are prepositional modifiers; the plural \"workers\" sits closest to the blank but is not the subject.\n- The frame is past tense (\"was producing,\" \"a seventeenth-century account\"), so the singular past \"was\" completes the sentence: \"this... division... was what allowed a single cup to pass...\"\n\n**Why the other choices are wrong:**\n- A: \"were\" is plural, agreeing with the nearby \"workers\" rather than with the true subject \"division\" — the classic attraction error the intervening phrase invites.\n- B: \"are\" is both plural and present tense, failing agreement and clashing with the passage's historical frame.\n- D: \"have been\" is plural and shifts into the present perfect, breaking agreement with \"division\" and the past-tense narration alike."
 }

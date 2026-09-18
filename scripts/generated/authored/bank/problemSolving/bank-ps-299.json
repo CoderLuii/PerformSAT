@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-299",
+ "question": "A prairie restoration seed mix combines native grass seed and wildflower seed in a $7 : 3$ ratio by mass. How many kilograms of wildflower seed are in $60$ kilograms of the mix?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18$"
+  },
+  {
+   "id": "B",
+   "text": "$20$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$42$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "divides by the ratio part alone, $\\frac{60}{3} = 20$, instead of using the fraction $\\frac{3}{10}$",
+  "C": "splits the mix evenly between the two seed types, $\\frac{60}{2} = 30$",
+  "D": "reports the grass seed mass, $\\frac{7}{10}(60) = 42$"
+ },
+ "explanation": "**SAT Pattern: Mixture Problems**\n\n**Choice A is correct.** The ratio $7 : 3$ has $10$ parts, so wildflower seed is $\\frac{3}{10}$ of the mix: $\\frac{3}{10}(60) = 18$ kilograms.\n\n**The Fast Way (~25s):** Ten parts of $60$ kilograms means $6$ kilograms per part, and wildflower seed takes $3$ parts: $3(6) = 18$ kilograms.\n\n**The Full Solution:**\n\nStep 1: Total the parts. A $7 : 3$ ratio divides the mix into $7 + 3 = 10$ equal parts.\n\nStep 2: Find the mass of one part: $\\frac{60}{10} = 6$ kilograms per part.\n\nStep 3: Multiply by the wildflower share: $3(6) = 18$ kilograms. Check: grass seed is $7(6) = 42$ kilograms, and $18 + 42 = 60$ kilograms, with $\\frac{42}{18} = \\frac{7}{3}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($20$): divides the total by the wildflower part $3$ rather than by the $10$ total parts.\n* Choice C ($30$): halves the mix, which would be right only for a $1 : 1$ ratio.\n* Choice D ($42$): reports the grass seed mass, the other term of the ratio.\n\n**Test Day Takeaway:** Convert a ratio into parts of a whole before touching the total -- the denominator is the sum of the ratio terms, never one of them."
+}

@@ -6,29 +6,14 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 1,
-  "passage": "Early photographers found that salts of silver darken when light strikes them, so an image could be captured on a treated plate. The trouble was that the unexposed salts kept reacting, and a finished picture would slowly blacken until it was lost. A \"fixing\" bath solved this by dissolving away the leftover silver salts, halting the reaction and making the image permanent. ______ the very compound used in that bath, sodium thiosulfate, found a second career in industry, where it is still used to strip excess chlorine from treated water and bleached paper.",
+  "passage": "Chappe's optical telegraph could pass a short signal from Paris to Lille in well under an hour, a journey that took a courier on horseback more than a day. ______ the relay imposed a kind of security: each tower's operators merely copied the arm positions they saw through the telescope, so a message could cross the whole line without any single operator knowing what it said.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Moreover,"
-    },
-    {
-      "id": "B",
-      "text": "Therefore,"
-    },
-    {
-      "id": "C",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "D",
-      "text": "Meanwhile,"
-    }
+    { "id": "A", "text": "Moreover," },
+    { "id": "B", "text": "Instead," },
+    { "id": "C", "text": "Specifically," },
+    { "id": "D", "text": "Subsequently," }
   ],
   "correctAnswer": "A",
-  "explanation": "The passage first explains how a fixing bath made photographs permanent, then turns to a separate point: the same compound, sodium thiosulfate, is also used in industry to remove chlorine. That added fact calls for \"Moreover,\" choice A. \"Therefore\" would treat the industrial use as a consequence of fixing photographs, which it is not; \"Nevertheless\" signals a contrast that is not present; and \"Meanwhile\" implies the two uses happen at the same time, which the passage does not claim.",
-  "_meta": {
-    "anchor": "early photography chemistry: the fixing bath"
-  }
+  "explanation": "**Choice A is correct.** The passage stacks a second advantage on top of a first — speed, and then security — so the blank needs an additive transition: \"Moreover.\"\n\n**The Full Solution:**\n- Sentence one establishes one benefit of the system: startling speed compared with a courier.\n- Sentence two introduces a different, independent benefit: operators relayed positions without reading content.\n- Two parallel advantages of the same system are joined by addition, not contrast, illustration, or sequence.\n\n**Why the other choices are wrong:**\n- B: \"Instead\" would replace the first advantage with the second, but both hold at once.\n- C: \"Specifically\" promises a narrower restatement of the speed claim, and the security point is a new idea, not a restatement.\n- D: \"Subsequently\" imposes a time order on two features that coexisted from the start."
 }

@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 1,
-  "passage": "In her 2016 book From the War on Poverty to the War on Crime, the historian Elizabeth Hinton challenges a familiar account of how the United States arrived at mass incarceration. On the standard telling, the federal anti-poverty programs of President Lyndon B. Johnson's mid-1960s Great Society were later derailed by a separate, conservative War on Crime. Drawing on underused records from federal crime, urban, and welfare agencies, Hinton instead traces a continuous line from the earliest Great Society legislation through the carceral expansions that followed. The same legislation that funded job training and community programs in low-income, predominantly Black urban neighborhoods, she shows, also routed federal money and personnel into local police departments. Mass incarceration, on her account, was the Great Society's continuation by other means.",
-  "question": "According to the text, what was true of the federal legislation that funded Great Society anti-poverty programs?",
+  "passage": "Coffeehouses spread rapidly through Ottoman cities after the first ones opened in Istanbul in the mid-sixteenth century, and contemporaries recognized them as something new. Unlike the tavern, the mosque courtyard, or the private home, the coffeehouse welcomed men of different ranks and trades, who lingered for hours over an inexpensive drink. Patrons played chess, listened to storytellers, and above all talked — about business, about poetry, and, to the government's recurring alarm, about politics. Sultans and governors issued repeated orders closing the coffeehouses down; the orders' very repetition shows how completely they failed.",
+  "question": "According to the text, why did Ottoman authorities repeatedly attempt to close coffeehouses?",
   "choices": [
     {
       "id": "A",
-      "text": "It was opposed by the federal crime, urban, and welfare agencies whose records Hinton examined."
+      "text": "Coffeehouse patrons regularly disrupted trade in the surrounding markets by gathering in large and unruly crowds at busy hours."
     },
     {
       "id": "B",
-      "text": "It reduced urban poverty significantly in the mid-1960s before being dismantled by a later and entirely separate federal War on Crime."
+      "text": "Religious officials had ruled that coffee itself was a forbidden drink that no observant person could lawfully consume."
     },
     {
       "id": "C",
-      "text": "It channeled federal money and personnel into local police departments even as it funded job training and community programs."
+      "text": "The conversation in coffeehouses often turned to politics, which the government found alarming."
     },
     {
       "id": "D",
-      "text": "It applied only to predominantly Black urban neighborhoods during the mid-1960s."
+      "text": "Coffeehouses drew paying customers away from the taverns that the government taxed."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage states that the same legislation that funded job training and community programs also routed federal money and personnel into local police departments, which is exactly what C reports. Choice A misuses a detail: Hinton drew on those agencies' records; the text never says the agencies opposed the legislation. Choice B contradicts Hinton's thesis that mass incarceration continued, rather than reversed, Great Society policy. Choice D overreaches: the passage describes the programs' focus on low-income, predominantly Black neighborhoods but does not say the legislation applied only to them."
+  "explanation": "**Choice C is correct.** The text ties the government's hostility to one thing: patrons talked about politics, \"to the government's recurring alarm,\" and the closure orders follow directly in the next sentence.\n\n**The Full Solution:**\n- The text lists what patrons did — chess, storytellers, and \"above all\" talk.\n- The talk is itemized: business, poetry, and politics, with the political conversation explicitly flagged as the source of official alarm.\n- The final sentence reports the authorities' response — repeated closure orders — completing the cause-and-effect chain the question asks about.\n\n**Why the other choices are wrong:**\n- A: The text mentions no crowds, no disruption of markets, and no unruliness — patrons are shown lingering quietly over chess and conversation.\n- B: No religious ruling about coffee appears anywhere in the text; the alarm is the government's, and it concerns speech, not the drink.\n- D: Taverns are mentioned only as a contrasting kind of gathering place; nothing is said about their customers or about tax revenue."
 }

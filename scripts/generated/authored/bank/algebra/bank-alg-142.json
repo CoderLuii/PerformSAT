@@ -1,0 +1,47 @@
+{
+ "question": "The graph shows the estimated cost of a curtain-wall installation, in thousands of dollars, for a facade with $x$ glazing panels. Which statement best describes the rate at which the estimated cost changes as panels are added?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2,
+   "yIntercept": 6,
+   "xRange": [
+    -2,
+    12
+   ],
+   "yRange": [
+    -4,
+    32
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The estimated cost increases by $\\$2{,}000$ for each additional glazing panel."
+  },
+  {
+   "id": "B",
+   "text": "The estimated cost increases by $\\$6{,}000$ for each additional glazing panel."
+  },
+  {
+   "id": "C",
+   "text": "The estimated cost is $\\$2{,}000$ when no glazing panels are installed."
+  },
+  {
+   "id": "D",
+   "text": "Each additional $\\$1{,}000$ of estimated cost adds $2$ glazing panels."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "uses the vertical intercept 6 as the rate of change",
+  "C": "reports the slope 2 as the value of the graph when x = 0",
+  "D": "inverts the rate, reading panels per thousand dollars instead of thousands of dollars per panel"
+ },
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice A is correct.** The graph rises $2$ vertical units for each $1$ unit to the right, and the vertical axis is measured in thousands of dollars, so each added panel raises the estimate by $\\$2{,}000$.\n\n**The Fast Way (~20s):** Slope $=2$ thousand dollars per panel, so $\\$2{,}000$ per panel.\n\n**The Full Solution:**\n\nStep 1: Read two points on the line. It passes through $(0,6)$ and $(4,14)$.\n\nStep 2: The slope is $\\frac{14-6}{4-0}=2$. In a linear model the slope is the change in the output for each one-unit increase in the input.\n\nStep 3: The output is measured in thousands of dollars and the input in panels, so the estimated cost rises by $2$ thousand dollars, or $\\$2{,}000$, per panel. Check: at $x=2$ the graph reads $10$, and $6+2(2)=10$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: uses $6$, the value where the line meets the vertical axis, as though it were the rate.\n* Choice C: attaches the slope to the wrong feature; the estimate with no panels is $\\$6{,}000$, not $\\$2{,}000$.\n* Choice D: inverts the rate, describing panels per dollar rather than dollars per panel.\n\n**Test Day Takeaway:** The slope carries the units of the vertical axis divided by the units of the horizontal axis; the intercept carries only the vertical units.",
+ "id": "bank-alg-142"
+}

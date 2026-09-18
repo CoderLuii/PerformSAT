@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-038",
+  "question": "Line $\\ell$ is defined by $4x + 10y = 15$. Line $m$ is perpendicular to line $\\ell$ in the $xy$-plane and passes through the point $(-2, 6)$. Which of the following equations defines line $m$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2x + 5y = 26$"
+    },
+    {
+      "id": "B",
+      "text": "$2x - 5y = -34$"
+    },
+    {
+      "id": "C",
+      "text": "$5x + 2y = 2$"
+    },
+    {
+      "id": "D",
+      "text": "$5x - 2y = -22$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "parallel to l (slope -2/5) through the point",
+    "B": "slope 2/5: sign changed but fraction not flipped",
+    "C": "slope -5/2: fraction flipped but sign not changed"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Perpendicular from Standard Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Slope of $\\ell$ is $-\\frac{4}{10} = -\\frac{2}{5}$, so $m$ has slope $\\frac{5}{2}$. Every choice passes through $(-2, 6)$, so only the slope decides: $5x - 2y = -22$ has slope $-\\frac{5}{-2} = \\frac{5}{2}$.\n\n**The Full Solution:**\nStep 1: Slope of $\\ell$: from $Ax + By = C$, slope $= -\\frac{A}{B} = -\\frac{4}{10} = -\\frac{2}{5}$. The perpendicular slope is the negative reciprocal, $\\frac{5}{2}$.\nStep 2: Line $m$: $y = \\frac{5}{2}x + b$ with $6 = \\frac{5}{2}(-2) + b = -5 + b$, so $b = 11$ and $y = \\frac{5}{2}x + 11$.\nStep 3: Convert to standard form: $2y = 5x + 22$, or $5x - 2y = -22$. Check the point: $5(-2) - 2(6) = -10 - 12 = -22$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2x + 5y = 26$): has slope $-\\frac{2}{5}$, the same as $\\ell$; it is the PARALLEL line through $(-2, 6)$.\n* Choice B ($2x - 5y = -34$): has slope $\\frac{2}{5}$, the sign changed but the fraction never flipped.\n* Choice C ($5x + 2y = 2$): has slope $-\\frac{5}{2}$, the fraction flipped but the sign unchanged.\n\n**Test Day Takeaway:** When every choice passes through the given point, the point cannot discriminate; compute each choice's slope as $-\\frac{A}{B}$ and match it to the required negative reciprocal."
+}

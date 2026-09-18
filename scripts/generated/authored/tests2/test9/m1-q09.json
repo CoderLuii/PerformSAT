@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A CNC router cuts a closed path whose equation in the xy-plane is $x^2+y^2-14x+8y+16=0$, where distances are measured in centimeters. Which of the following statements about the cut path is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It is a circle with center $(-7,\\,4)$ and radius $7$."
+  },
+  {
+   "id": "B",
+   "text": "It is a circle with center $(7,\\,-4)$ and radius $\\sqrt{33}$."
+  },
+  {
+   "id": "C",
+   "text": "It is a circle with center $(7,\\,-4)$ and radius $7$."
+  },
+  {
+   "id": "D",
+   "text": "It is a circle with center $(7,\\,-4)$ and radius $9$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads the center straight off the signs in the equation, giving (-7, 4) instead of (7, -4)",
+  "B": "completes the square on x only and forgets to add 16 back for the y-terms, leaving 33",
+  "D": "moves the constant 16 to the right side as +16 instead of -16, giving 81"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Half of $-14$ is $-7$ and half of $8$ is $4$, so the center is $(7,\\,-4)$ and the radius satisfies $r^2=(-7)^2+4^2-16=49$, giving $r=7$.\n\n**The Full Solution:**\nStep 1: Group and move the constant: $x^2-14x+y^2+8y=-16$.\nStep 2: Complete both squares. For $x$: half of $-14$ is $-7$, and $(-7)^2=49$. For $y$: half of $8$ is $4$, and $4^2=16$. Add BOTH to each side: $(x-7)^2+(y+4)^2=-16+49+16$.\nStep 3: The right side is $49$, so $(x-7)^2+(y+4)^2=49$: center $(7,\\,-4)$, radius $\\sqrt{49}=7$ centimeters. Check a point that should be $7$ centimeters right of the center, $(14,\\,-4)$, in the original equation: $196+16-196-32+16=0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: copies the signs out of the equation, reporting $(-7,\\,4)$. Standard form is $(x-h)^2+(y-k)^2$, so $(x-7)^2$ means $h=+7$.\n* Choice B: adds $49$ to the right side but not the $16$ from the $y$-terms, leaving $r^2=33$.\n* Choice D: carries the $+16$ across as $+16$ instead of $-16$, giving $r^2=81$ and $r=9$.\n\n**Test Day Takeaway:** Complete the square on both variables and add BOTH new constants to the right side. The center's signs are the opposite of what you see inside the parentheses, and the radius is the square root of the right side, not the right side itself."
+}

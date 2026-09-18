@@ -1,0 +1,36 @@
+{
+ "id": "bank-geo-067",
+ "question": "The vacuum-oven door stay shown has a $40$-centimeter sloped edge, and the cosine of its marked acute angle equals $\\frac{3}{5}$. How many square centimeters does the stay's triangle cover?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     32
+    ]
+   ],
+   "labels": [
+    "θ",
+    "",
+    ""
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "40 cm"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "correctAnswer": "384",
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**The correct answer is $384$.**\n\n**The Fast Way (~45s):** $\\cos\\theta = \\frac{3}{5}$ with hypotenuse $40$ gives legs $24$ and $32$, so the area is $\\frac{1}{2}(24)(32) = 384$.\n\n**The Full Solution:**\n\nStep 1: The sloped edge is the hypotenuse, so the adjacent leg is $40\\cos\\theta = 40 \\cdot \\frac{3}{5} = 24$ centimeters.\n\nStep 2: Since $\\cos\\theta = \\frac{3}{5}$, the triangle is a $3$-$4$-$5$ family triangle and $\\sin\\theta = \\frac{4}{5}$, so the opposite leg is $40 \\cdot \\frac{4}{5} = 32$ centimeters.\n\nStep 3: Area $= \\frac{1}{2}(24)(32) = 384$ square centimeters. Check: $24^2 + 32^2 = 576 + 1024 = 1600 = 40^2$.\n\n**Common Mistakes:**\n\n* $480$ — using the $40$-centimeter hypotenuse as the height: $\\frac{1}{2}(24)(40)$.\n* $768$ — finding both legs but omitting the factor $\\frac{1}{2}$.\n* $32$ — stopping at the second leg instead of computing the area.\n\n**Test Day Takeaway:** One trig ratio plus the hypotenuse gives BOTH legs, because the Pythagorean identity fixes the other ratio immediately."
+}

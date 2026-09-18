@@ -6,29 +6,14 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-textual",
   "module": 2,
-  "passage": "Researchers have proposed that a particular repeating radio signal comes from a rapidly rotating neutron star rather than from a source within the solar system. A neutron star spins on a fixed period that changes only very slowly, so on this hypothesis the interval between pulses should hold nearly constant over long stretches of time, and the signal should arrive from a fixed point among the distant stars rather than tracking the Sun. A team set out to test the proposal by monitoring the signal across many months.",
-  "question": "Which finding, if true, would most directly support the researchers' hypothesis?",
+  "passage": "Bog bodies — human remains preserved for centuries in northern European peatlands — retain skin, hair, and even clothing in remarkable condition, and the acidity of bog water was long assumed to be the preservative. A research team instead hypothesizes that the crucial agent is sphagnan, a carbohydrate released as sphagnum moss decays, which binds the calcium that decay bacteria require and chemically tans skin much as oak bark tans leather.",
+  "question": "Which finding, if true, would most directly support the team's hypothesis?",
   "choices": [
-    {
-      "id": "A",
-      "text": "The interval between successive pulses stayed nearly constant over many months, and the signal arrived from the same fixed point among the distant stars throughout."
-    },
-    {
-      "id": "B",
-      "text": "The interval between pulses varied widely from one week to the next, with no discernible regularity."
-    },
-    {
-      "id": "C",
-      "text": "The signal grew steadily stronger over the months the team observed it."
-    },
-    {
-      "id": "D",
-      "text": "The signal disappeared whenever the antenna was pointed away from the nearest planets."
-    }
+    { "id": "A", "text": "Tissue samples in neutral solutions containing extracted sphagnan resist bacterial decay nearly as well as samples in bog water, while samples in equally acidic solutions without sphagnan decay quickly." },
+    { "id": "B", "text": "Bog bodies recovered from the most strongly acidic peatlands are on average no better preserved than bodies recovered from peatlands whose waters are only mildly acidic, according to surveys of dozens of recovered bodies." },
+    { "id": "C", "text": "Sphagnum moss grows more slowly in peatlands from which well-preserved bodies have been recovered than in peatlands containing no bodies." },
+    { "id": "D", "text": "Peatlands where sphagnum moss is absent tend to be more acidic, on average, than peatlands where the moss is abundant." }
   ],
   "correctAnswer": "A",
-  "explanation": "The hypothesis predicts a nearly constant pulse interval and a fixed celestial position. The finding in choice A matches both predictions directly, so it offers the strongest support. Choice B describes the irregularity the hypothesis rules out, C concerns brightness, which the prediction says nothing about, and D would tie the signal to the planets, pointing instead toward a solar-system source.",
-  "_meta": {
-    "anchor": "rotating neutron star hypothesis for a radio signal"
-  }
+  "explanation": "**Choice A is correct.** The hypothesis makes sphagnan, not acidity, the crucial agent. A's experiment isolates exactly that variable — sphagnan without acidity preserves; acidity without sphagnan does not — which is the most direct support a finding could give.\n\n**The Full Solution:**\n- Supporting \"sphagnan is the crucial agent\" requires showing preservation tracks sphagnan when acidity is removed from the picture.\n- A's neutral-solution condition does that, and its acid-only condition simultaneously undermines the rival explanation the team is arguing against.\n\n**Why the other choices are wrong:**\n- B: It counts against the acidity hypothesis but says nothing about sphagnan — it removes a rival without supporting the team's own agent.\n- C: Slower moss growth near preserved bodies is a correlation running in an uninformative direction; it neither isolates sphagnan nor links it to preservation.\n- D: A relationship between moss and acidity levels describes the bogs themselves, not the preservation of tissue, and so tests neither hypothesis."
 }

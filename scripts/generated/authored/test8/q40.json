@@ -1,31 +1,61 @@
 {
-  "id": 840,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 2,
-  "passage": "The National Snow and Ice Data Center compiles satellite measurements of Arctic sea ice extent, the area of ocean covered by ice. The September minimum, recorded at the end of the summer melt, is the standard yearly indicator of long-run change. Examining the record at ten-year benchmarks, climatologists have argued that although the long-run trend points downward, the contraction has been uneven: the minimum did not fall continuously from one benchmark year to the next. The data support this characterization because _______\n\n| Benchmark year | September minimum Arctic sea ice extent (million km^2) |\n|---|---|\n| 1980 | 7.67 |\n| 1990 | 6.24 |\n| 2000 | 6.32 |\n| 2010 | 4.87 |\n| 2020 | 3.92 |",
-  "question": "Which choice most effectively uses data from the table to support the claim?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "across the five benchmark years, the September minimum fell from 7.67 million km^2 in 1980 to 3.92 million km^2 in 2020."
-    },
-    {
-      "id": "B",
-      "text": "the 2010 September minimum (4.87 million km^2) was lower than the 2000 minimum (6.32 million km^2)."
-    },
-    {
-      "id": "C",
-      "text": "the 2020 September minimum (3.92 million km^2) was the lowest of the five values shown, and the 1980 minimum (7.67 million km^2) was the highest."
-    },
-    {
-      "id": "D",
-      "text": "the September minimum stood at 6.24 million km^2 in 1990 but rose to 6.32 million km^2 in 2000, even though the overall trend across the table points downward."
-    }
+ "id": 840,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 2,
+ "passage": "In the state's oldest cranberry-growing region, agricultural historians examining harvest records at twenty-year benchmarks have argued that although bog acreage contracted over the twentieth century as land values rose, the contraction was uneven: acreage did not shrink from every benchmark to the next. The record supports this characterization because _______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Harvested cranberry acreage at twenty-year benchmarks (thousand acres)",
+  "headers": [
+   "Benchmark year",
+   "Harvested acreage (thousand acres)"
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The claim is that the decline was uneven, not continuous, so the data must show a benchmark where the minimum rose rather than fell. D points to the small rise from 1990 (6.24) to 2000 (6.32) against the longer downward trend, the one interruption the table contains. A and C describe the overall drop from highest to lowest, which shows decline but not unevenness; B reports a fall between two benchmarks, which supports continuity rather than the interruption the claim requires."
+  "rows": [
+   [
+    "1930",
+    "14.2"
+   ],
+   [
+    "1950",
+    "13.1"
+   ],
+   [
+    "1970",
+    "11.6"
+   ],
+   [
+    "1990",
+    "12.4"
+   ],
+   [
+    "2010",
+    "11.3"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to support the claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "harvested acreage fell from 14.2 thousand acres in 1930 to 11.3 thousand in 2010, a net loss of nearly three thousand acres over the eighty-year span of the record."
+  },
+  {
+   "id": "B",
+   "text": "harvested acreage declined from 14.2 thousand acres in 1930 to 13.1 thousand in 1950."
+  },
+  {
+   "id": "C",
+   "text": "the 2010 figure of 11.3 thousand acres was the lowest of the five benchmarks, and the 1930 figure of 14.2 thousand was the highest."
+  },
+  {
+   "id": "D",
+   "text": "harvested acreage stood at 11.6 thousand acres in 1970 but at 12.4 thousand in 1990, a rise within a record whose overall course runs downward."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The claim is that the contraction was uneven — the acreage did not fall at every benchmark — and D cites the one interval that shows it: acreage rose from 11.6 thousand acres in 1970 to 12.4 in 1990 even though the overall course of the table runs downward.\n\n**The Full Solution:**\n- The historians' characterization has two parts: a long decline, and unevenness within it.\n- Only the 1970-to-1990 comparison documents the unevenness, since it is the sole interval in which the figure increases.\n- Choice D pairs that reversal with the downward overall trend, matching the claim exactly.\n\n**Why the other choices are wrong:**\n- A: The first-to-last decline shows the trend but nothing about its unevenness.\n- B: The 1930-to-1950 drop is simply one declining interval and cannot show a reversal.\n- C: Identifying the lowest and highest values restates the decline's endpoints without addressing how the path between them behaved."
 }

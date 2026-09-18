@@ -1,0 +1,49 @@
+{
+  "question": "The table gives the balance of a college fund at the end of each of the first three years after it was opened. The fund earns $4\\%$ interest compounded annually. What will the fund's balance be at the end of the fourth year?",
+  "questionTable": {
+    "headers": [
+      "Year",
+      "Balance (dollars)"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$5{,}200.00$"
+      ],
+      [
+        "$2$",
+        "$5{,}408.00$"
+      ],
+      [
+        "$3$",
+        "$5{,}624.32$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\$5{,}832.32$"
+    },
+    {
+      "id": "B",
+      "text": "$\\$5{,}840.64$"
+    },
+    {
+      "id": "C",
+      "text": "$\\$5{,}849.29$"
+    },
+    {
+      "id": "D",
+      "text": "$\\$6{,}083.26$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "added 4 percent of the year-1 balance, 208 dollars, instead of 4 percent of the year-3 balance",
+    "B": "added the year-3 interest of 216.32 again instead of taking 4 percent of the new balance",
+    "D": "applied the 4 percent increase twice, giving the balance at the end of year 5"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Multiply the year-$3$ balance by $1.04$: $5624.32\\cdot 1.04=5{,}849.29$.\n\n**The Full Solution:**\nStep 1: Compounding annually at $4\\%$ multiplies each year's balance by $1.04$, which the table confirms: $5408.00\\cdot 1.04=5{,}624.32$.\nStep 2: Apply the same factor once more: $5624.32\\cdot 1.04$.\nStep 3: The year-$4$ balance is $\\$5{,}849.29$. Check: the interest earned is $\\$224.97$, which is $4\\%$ of $\\$5{,}624.32$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\$5{,}832.32$): adds $4\\%$ of the year-$1$ balance, $\\$208$, instead of $4\\%$ of the year-$3$ balance.\n* Choice B ($\\$5{,}840.64$): adds the year-$3$ interest of $\\$216.32$ again.\n* Choice D ($\\$6{,}083.26$): applies the increase twice, giving the year-$5$ balance.\n\n**Test Day Takeaway:** Compound interest is a percent of the newest balance, so the yearly interest grows — never reuse an earlier year's dollar amount.",
+  "id": "bank-am-272"
+}

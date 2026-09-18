@@ -1,0 +1,42 @@
+{
+ "question": "The circle shown has center $O$ and radius $12$. A ferry sails along minor arc $AB$, a distance of $10\\pi$. Through how many degrees does angle $AOB$ turn?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 150,
+   "showAngleLabel": false,
+   "radius": 12,
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "showRadiusLabel": true,
+   "figureNote": true
+  }
+ },
+ "hint": "First ask what fraction of the whole rim the ferry covered.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$75$"
+  },
+  {
+   "id": "B",
+   "text": "$150$"
+  },
+  {
+   "id": "C",
+   "text": "$210$"
+  },
+  {
+   "id": "D",
+   "text": "$300$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 4*pi*r = 48pi as the circumference, halving the fraction",
+  "C": "reports the major arc's angle, 360 - 150",
+  "D": "uses pi*r = 12pi as the circumference"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** The rim is $24\\pi$, and $\\dfrac{10\\pi}{24\\pi} = \\dfrac{5}{12}$ of $360$ is $150$.\n\n**The Full Solution:**\nStep 1: The circumference is $2\\pi(12) = 24\\pi$.\nStep 2: The ferry covers $\\dfrac{10\\pi}{24\\pi} = \\dfrac{5}{12}$ of the rim.\nStep 3: The central angle is that same fraction of $360$: $\\dfrac{5}{12}(360) = 150$ degrees. Check: $\\dfrac{150}{360}(24\\pi) = 10\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($75$): uses $48\\pi$ as the circumference, doubling the true rim and halving the angle.\n* Choice C ($210$): gives the reflex angle $360 - 150$, which belongs to the major arc.\n* Choice D ($300$): uses $\\pi r = 12\\pi$ as the circumference, so the fraction doubles.\n\n**Test Day Takeaway:** Turn an arc length into a fraction of the circumference first; that fraction is also the fraction of $360^\\circ$."
+}

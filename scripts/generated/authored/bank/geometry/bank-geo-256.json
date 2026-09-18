@@ -1,0 +1,60 @@
+{
+ "id": "bank-geo-256",
+ "question": "The triangular corner shelf shown has two legs of equal length meeting at a right angle, with lengths in inches. What is the length of the shelf's front edge?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     14.142,
+     0
+    ],
+    [
+     14.142,
+     14.142
+    ]
+   ],
+   "rightAngleVertex": 1,
+   "labels": [
+    "",
+    "",
+    ""
+   ],
+   "sideLabels": [
+    "10√2",
+    "10√2",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5\\sqrt{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$10\\sqrt{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves a leg instead of scaling it up to the hypotenuse",
+  "B": "divides the leg by root 2 instead of multiplying",
+  "C": "restates a leg length rather than the front edge"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: 45-45-90 Triangle**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The front edge is a leg times $\\sqrt{2}$, so it is $10\\sqrt{2}\\cdot\\sqrt{2}=20$ inches.\n\n**The Full Solution:**\n\nStep 1: Classify the triangle. Two equal legs meeting at a right angle make a $45$-$45$-$90$ triangle with sides $x$, $x$, $x\\sqrt{2}$.\n\nStep 2: Identify $x$. Each leg is $10\\sqrt{2}$ inches, so $x=10\\sqrt{2}$.\n\nStep 3: Compute the hypotenuse. $x\\sqrt{2}=10\\sqrt{2}\\cdot\\sqrt{2}=10\\cdot2=20$ inches.\n\nCheck: $(10\\sqrt{2})^{2}+(10\\sqrt{2})^{2}=200+200=400=20^{2}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5\\sqrt{2}$): halves a leg instead of scaling it up to the hypotenuse.\n* Choice B ($10$): divides the leg by $\\sqrt{2}$ instead of multiplying by it.\n* Choice C ($10\\sqrt{2}$): restates the leg length already marked in the figure.\n\n**Test Day Takeaway:** A leg already written as $a\\sqrt{2}$ makes the hypotenuse fall out as $2a$ — the radicals cancel."
+}

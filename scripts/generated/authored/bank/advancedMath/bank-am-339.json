@@ -1,0 +1,29 @@
+{
+  "question": "A conveyor's throughput, in trays per hour, is $\\dfrac{w^{9}\\cdot w^{2}}{w^{4}}$, where $w>0$. Which of the following is equivalent to the throughput, in trays per hour?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$w^{5}$"
+    },
+    {
+      "id": "B",
+      "text": "$w^{7}$"
+    },
+    {
+      "id": "C",
+      "text": "$w^{14}$"
+    },
+    {
+      "id": "D",
+      "text": "$w^{15}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "ignored the factor w^2 and computed w^(9-4)",
+    "C": "multiplied the numerator exponents 9 and 2 instead of adding them",
+    "D": "added all three exponents, 9 + 2 + 4"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Add the exponents on top, then subtract the one below: $9+2-4=7$.\n\n**The Full Solution:**\nStep 1: Multiply in the numerator: $w^{9}\\cdot w^{2}=w^{11}$.\nStep 2: Divide by $w^{4}$: $w^{11-4}$.\nStep 3: The throughput is $w^{7}$ trays per hour. Check at $w=2$: $\\dfrac{512\\cdot 4}{16}=128=2^{7}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($w^{5}$): ignores the factor $w^{2}$ and computes $w^{9-4}$.\n* Choice C ($w^{14}$): multiplies the numerator's exponents, $9\\cdot 2$, then subtracts $4$.\n* Choice D ($w^{15}$): adds all three exponents, $9+2+4$.\n\n**Test Day Takeaway:** Multiplication adds exponents and division subtracts them — do the numerator completely before dividing.",
+  "id": "bank-am-339"
+}

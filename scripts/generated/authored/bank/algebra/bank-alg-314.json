@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-314",
+ "question": "A courtyard's permeable area, in square meters, is $3(2x - 7) + k(x + 4)$ for a constant $k$, where $x$ is the courtyard's width in meters. That area also equals $10x - 5$ square meters for every width. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$16$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the multiplier 3 from the first product instead of k",
+  "C": "reports the coefficient of x in the target expression",
+  "D": "stops at 4k = 16 without dividing by 4"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Combining Like Terms**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Expanding gives $(6 + k)x + (4k - 21)$; matching the $x$-terms, $6 + k = 10$, so $k = 4$.\n\n**The Full Solution:**\nStep 1: Expand both products: $3(2x - 7) = 6x - 21$ and $k(x + 4) = kx + 4k$.\nStep 2: Combine like terms: the expression equals $(6 + k)x + (4k - 21)$.\nStep 3: Because this matches $10x - 5$ for every width, the $x$-coefficients agree: $6 + k = 10$, so $k = 4$. Check: the constants then give $4(4) - 21 = -5$, which matches ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reports the multiplier $3$ that was already in front of the first parentheses.\n* Choice C ($10$): reports the coefficient of $x$ in $10x - 5$ instead of solving for $k$.\n* Choice D ($16$): matches the constants correctly, $4k - 21 = -5$, but stops at $4k = 16$ without dividing.\n\n**Test Day Takeaway:** Two expressions equal for every input have matching coefficients term by term — set up one equation per power of $x$."
+}

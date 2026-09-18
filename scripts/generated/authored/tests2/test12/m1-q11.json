@@ -1,0 +1,44 @@
+{
+  "id": 11,
+  "question": "Two straight game trails cross at a single point in a preserve, forming four angles. Three of those angles are labeled in the figure, and all measures are in degrees. Determine the value of $y$.",
+  "diagram": {
+    "type": "intersectingLines",
+    "params": {
+      "angles": [
+        "(4x - 12)°",
+        "y°",
+        "(2x + 24)°",
+        ""
+      ],
+      "lineLabels": [
+        "",
+        ""
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$18$"
+    },
+    {
+      "id": "B",
+      "text": "$60$"
+    },
+    {
+      "id": "C",
+      "text": "$80$"
+    },
+    {
+      "id": "D",
+      "text": "$120$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports x = 18 rather than the angle measure the question asks for",
+    "B": "reports the measure of the labeled angle, 60 degrees, instead of its supplement y",
+    "C": "treats the two labeled angles as supplementary rather than equal, getting x = 28 and y = 80"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice D is correct.** The two labeled expressions mark vertical angles, so $4x - 12 = 2x + 24$ gives $x = 18$ and each measures $60^\\circ$; $y$ is adjacent to one of them, so $y = 180 - 60 = 120$.\n\n**The Fast Way (~30s):** Set the vertical angles equal: $4x - 12 = 2x + 24$, so $x = 18$ and the angle is $60^\\circ$. Then $y = 180 - 60 = 120$.\n\n**The Full Solution:**\nStep 1: Two straight trails crossing form two pairs of vertical angles, and vertical angles are equal, so $4x - 12 = 2x + 24$.\nStep 2: Solve: $2x = 36$, so $x = 18$. Each labeled angle measures $4(18) - 12 = 60$ degrees, and $2(18) + 24 = 60$ degrees confirms it.\nStep 3: The angle $y$ sits next to a $60^\\circ$ angle along a straight trail, so the two are supplementary: $y = 180 - 60 = 120$. Check: the four angles are $60$, $120$, $60$, and $120$, and they total $360$ degrees. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($18$): is the value of $x$, not an angle measure. $x$ is only an intermediate result here.\n* Choice B ($60$): is the labeled angle. The question asks for $y$, which is the angle beside it, not the one equal to it.\n* Choice C ($80$): sets $4x - 12$ and $2x + 24$ supplementary instead of equal, giving $x = 28$, an angle of $100^\\circ$, and $y = 80$. Vertical angles are congruent; only adjacent angles are supplementary.\n\n**Test Day Takeaway:** At a crossing, name each angle as vertical (equal) or adjacent (summing to $180^\\circ$) before writing any equation, then check which one the question wants."
+}

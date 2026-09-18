@@ -1,42 +1,42 @@
 {
-  "id": 1227,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 1,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Naomi Oreskes is a historian of science at Harvard University.",
-      "In the early 2000s, public commentary often described the science of human-caused climate change as deeply contested among researchers.",
-      "In a 2004 Science essay, Oreskes sampled 928 peer-reviewed climate research abstracts published between 1993 and 2003.",
-      "She classified each abstract by whether it accepted, rejected, or took no position on human-caused warming.",
-      "She found that none of the 928 abstracts in her sample disputed the consensus position.",
-      "Oreskes argued any appearance of scientific dispute belonged not to the literature but to popular and political commentary."
-    ],
-    "goal": "The student wants to emphasize the methodological innovation of Oreskes's 2004 Science essay."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "In her 2004 Science essay, Naomi Oreskes argued that any appearance of genuine scientific dispute over human-caused climate change belonged to popular and political commentary rather than to the peer-reviewed research literature itself."
-    },
-    {
-      "id": "B",
-      "text": "Naomi Oreskes, a historian of science at Harvard University, has written about the apparent contrast between scientific opinion on climate change and its depiction in popular and political commentary."
-    },
-    {
-      "id": "C",
-      "text": "Oreskes's 2004 Science essay reported that, of the 928 peer-reviewed climate research abstracts published between 1993 and 2003, not one of them disputed the scientific consensus that human activity is warming the planet."
-    },
-    {
-      "id": "D",
-      "text": "Rather than gauge scientific opinion from public commentary, Oreskes in her 2004 essay sampled 928 peer-reviewed climate abstracts from 1993 to 2003 and classified each as accepting, rejecting, or taking no position on human-caused warming."
-    }
+ "id": 1227,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 1,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "C. S. Orwin (1876-1955) was an English agricultural historian.",
+   "For generations, scholars had described medieval open-field farming almost entirely from documents: court rolls, estate surveys, and legal treatises.",
+   "In the village of Laxton in Nottinghamshire, an open-field system of farming survived in continuous operation into the twentieth century.",
+   "With Christabel Orwin, he published The Open Fields (1938), a study of how strip farming actually worked.",
+   "The Orwins mapped Laxton's fields strip by strip and followed the village's farming through its working year.",
+   "Their study treated the surviving system itself as evidence, correcting details that documents alone had left unclear."
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The goal is to emphasize the methodological innovation, and D foregrounds the method: instead of reading off public commentary, Oreskes systematically sampled and classified 928 peer-reviewed abstracts. A states her conclusion rather than her method. B describes her topic in general terms without any mention of how she studied it. C reports the result of the study—that none of the abstracts dissented—but the result is the finding, not the methodological move the goal asks the student to highlight."
+  "goal": "The student wants to emphasize the methodological innovation of the Orwins' study."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The English agricultural historian C. S. Orwin published The Open Fields in 1938 with Christabel Orwin, a detailed study of how the strip farming of the medieval open-field villages actually worked in practice."
+  },
+  {
+   "id": "B",
+   "text": "In the Nottinghamshire village of Laxton, an open-field system of farming remained in continuous operation into the twentieth century, long after such systems had vanished elsewhere."
+  },
+  {
+   "id": "C",
+   "text": "The Orwins' study of Laxton corrected details of the standard account of open-field farming that generations of document-based scholarship had left unclear."
+  },
+  {
+   "id": "D",
+   "text": "Rather than reconstruct open-field farming from court rolls and treatises, the Orwins studied a living example, mapping Laxton's strips one by one and following the village's farming through its working year."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The goal is to spotlight what was new about the Orwins' METHOD, and D is built around exactly that contrast: not documents, but a living system, mapped strip by strip and observed through the working year.\n\n**The Full Solution:**\n- The methodological innovation, per the notes, is the shift in evidence: earlier scholars worked \"almost entirely from documents,\" while the Orwins \"treated the surviving system itself as evidence.\"\n- D states the old method (reconstruction from court rolls and treatises), then the new one (studying Laxton directly), then the concrete practices that made it a method — mapping every strip, following the farming year.\n- Foregrounding how the study was done, against the background of how such studies used to be done, is precisely what \"emphasize the methodological innovation\" requires.\n\n**Why the other choices are wrong:**\n- A: It announces the book and its subject but says nothing about how the study was carried out.\n- B: It states the fact that made the method possible — Laxton's survival — without mentioning the Orwins or their approach at all.\n- C: It reports the study's results (corrected details), but results are what the method produced, not the method itself."
 }

@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-104",
+ "question": "A jacquard head is balanced when $7t - 2(t - k) = 3t + 18$, where $t$ is the number of tapestry rows woven and $k$ is a constant. For what value of $k$ is the head balanced at $t = 4$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-10$"
+  },
+  {
+   "id": "B",
+   "text": "$-5$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "distributes the -2 to t only, solving 20 - k = 30",
+  "B": "keeps the sign of the -2 on k, solving 20 - 2k = 30",
+  "D": "forgets to double k and solves 20 + k = 30"
+ },
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** At $t = 4$: $28 - 2(4 - k) = 30$, so $20 + 2k = 30$ and $k = 5$.\n\n**The Full Solution:**\n\nStep 1: Substitute $t = 4$: $7(4) - 2(4 - k) = 3(4) + 18$.\n\nStep 2: Distribute the $-2$ across both terms: $28 - 8 + 2k = 12 + 18$, which simplifies to $20 + 2k = 30$.\n\nStep 3: Subtract $20$ and divide by $2$: $2k = 10$, so $k = 5$. Check: $28 - 2(4 - 5) = 28 + 2 = 30$ and $3(4) + 18 = 30$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-10$): distributes the $-2$ to the $t$ only, solving $20 - k = 30$.\n* Choice B ($-5$): keeps the minus sign on the $k$ term, solving $20 - 2k = 30$.\n* Choice D ($10$): forgets that the $-2$ doubles $k$ as well, solving $20 + k = 30$.\n\n**Test Day Takeaway:** A negative multiplier in front of parentheses changes the sign of every term inside, including the one carrying the unknown constant."
+}

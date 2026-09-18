@@ -1,0 +1,53 @@
+{
+  "id": 16,
+  "question": "The table shows the total cost, in dollars, for a cycling club to reserve one velodrome session for several numbers of riders, and the cost is a linear function of the number of riders. If the club has $\\$600$ available for a session, what is the greatest number of riders it can register?",
+  "questionTable": {
+    "headers": [
+      "Riders",
+      "Total cost (dollars)"
+    ],
+    "rows": [
+      [
+        "4",
+        "117"
+      ],
+      [
+        "6",
+        "153"
+      ],
+      [
+        "9",
+        "207"
+      ],
+      [
+        "12",
+        "261"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$30$"
+    },
+    {
+      "id": "B",
+      "text": "$31$"
+    },
+    {
+      "id": "C",
+      "text": "$33$"
+    },
+    {
+      "id": "D",
+      "text": "$35$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "rounds 30.83 up instead of down, exceeding the 600-dollar budget by 3 dollars",
+    "C": "ignores the 45-dollar reservation fee and computes 600 / 18 = 33.3, rounded down to 33",
+    "D": "adds the 45-dollar fee instead of subtracting it, computing (600 + 45) / 18 = 35.8, rounded down to 35"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Linear Cost Setup**\n\n**Choice A is correct.** The table gives a rate of $\\$18$ per rider and a fixed $\\$45$ per session, so $45 + 18n \\leq 600$ yields $n \\leq 30.8\\overline{3}$, and the greatest whole number of riders is $30$.\n\n**The Fast Way (~40s):** Cost per rider is $\\frac{153 - 117}{6 - 4} = 18$, and $117 - 4(18) = 45$ is fixed, so $n \\leq \\frac{600 - 45}{18} = 30.8$, giving $30$ riders.\n\n**The Full Solution:**\nStep 1: Find the per-rider rate from two table rows: $\\frac{153 - 117}{6 - 4} = \\frac{36}{2} = 18$ dollars per rider.\nStep 2: Find the fixed part by working one row back to zero riders: $117 - 4(18) = 45$ dollars. So the cost model is $C = 45 + 18n$, and the row $n = 12$ confirms it: $45 + 216 = 261$.\nStep 3: Solve $45 + 18n \\leq 600$, so $18n \\leq 555$ and $n \\leq 30.8\\overline{3}$. Since $n$ counts riders, $n = 30$. Check: $45 + 18(30) = 585 \\leq 600$, while $31$ riders would cost $45 + 558 = 603$, over budget. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($31$): rounds $30.8$ up. Rounding up a \"greatest number that fits\" answer always breaks the budget, here by $\\$3$.\n* Choice C ($33$): drops the fixed $\\$45$ and divides the whole budget by $18$. The reservation fee is charged once no matter how many ride.\n* Choice D ($35$): adds the fee to the budget rather than removing it, computing $\\frac{645}{18} \\approx 35.8$.\n\n**Test Day Takeaway:** Pull the rate from two rows and the fixed charge from one row, then round a \"greatest number\" answer down every time, even when the decimal looks close."
+}

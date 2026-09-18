@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "Three straight rows enclose a triangular section of an orchard. The interior angles at two corners measure $3x^\\circ$ and $(2x + 10)^\\circ$, and at the third corner the angle between one row and the extension of another beyond that corner measures $(4x + 30)^\\circ$. What is the measure, in degrees, of the interior angle at the third corner?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$60$"
+  },
+  {
+   "id": "C",
+   "text": "$70$"
+  },
+  {
+   "id": "D",
+   "text": "$110$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "stops at the value of x, 20, instead of substituting it back to find an angle measure",
+  "B": "reports the first interior angle, 3(20)=60 degrees, rather than the angle at the third corner",
+  "D": "reports the exterior angle 4(20)+30=110 degrees instead of the interior angle supplementary to it"
+ },
+ "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** An exterior angle equals the sum of the two remote interior angles, so $4x + 30 = 3x + 2x + 10$ gives $x = 20$; the exterior angle is $110^\\circ$ and the interior angle is $180 - 110 = 70^\\circ$.\n\n**The Full Solution:**\nStep 1: The angle described at the third corner lies between one side and the extension of another, so it is that corner's exterior angle and is supplementary to the interior angle there.\nStep 2: Because the three interior angles sum to $180^\\circ$, an exterior angle equals the sum of the two nonadjacent interior angles: $4x + 30 = 3x + (2x + 10)$, which simplifies to $4x + 30 = 5x + 10$, so $x = 20$.\nStep 3: The two given interior angles are $3(20) = 60^\\circ$ and $2(20) + 10 = 50^\\circ$, so the third interior angle is $180 - 60 - 50 = 70^\\circ$. Check: the exterior angle is $4(20) + 30 = 110^\\circ$, and $70 + 110 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): reports $x$ itself. Solving for $x$ is only the first move; the angle asked for is $70^\\circ$.\n* Choice B ($60$): reports $3x = 60$, the interior angle at the first corner, not the one at the corner the question names.\n* Choice D ($110$): reports the exterior angle $4(20) + 30 = 110^\\circ$. The interior angle at that corner is its supplement, $180 - 110 = 70^\\circ$.\n\n**Test Day Takeaway:** An exterior angle equals the sum of the two remote interior angles and is supplementary to its own interior angle; solve for the parameter first, then check which angle the question actually wants."
+}

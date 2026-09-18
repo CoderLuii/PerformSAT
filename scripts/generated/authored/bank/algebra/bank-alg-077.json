@@ -1,0 +1,61 @@
+{
+  "id": "bank-alg-077",
+  "question": "The table gives the values of the functions $f$ and $g$ at each integer value of $x$ from $1$ to $4$. What is the value of $f(g(4))$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)",
+        "g(x)"
+      ],
+      "rows": [
+        [
+          "1",
+          "3",
+          "2"
+        ],
+        [
+          "2",
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "4",
+          "4"
+        ],
+        [
+          "4",
+          "2",
+          "3"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "composes in the reverse order, g(f(4)) = g(2) = 1",
+    "B": "stops after the inner step g(4) = 3",
+    "D": "multiplies f(4) and g(4)"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Function Composition (Inner First)**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Inner function first: from the table, $g(4) = 3$. Then $f(3) = 4$. So $f(g(4)) = 4$.\n\n**The Full Solution:**\nStep 1: In $f(g(4))$, the innermost expression is $g(4)$. Read the $g(x)$ column at $x = 4$: $g(4) = 3$.\nStep 2: Replace $g(4)$ with $3$: $f(g(4)) = f(3)$.\nStep 3: Read the $f(x)$ column at $x = 3$: $f(3) = 4$. Check the direction: the input to $f$ is the output of $g$, which is $3$, and the row $x = 3$ gives $f(3) = 4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): composes in the reverse order, $g(f(4)) = g(2) = 1$.\n* Choice B ($3$): stops after the inner step $g(4) = 3$ and never applies $f$.\n* Choice D ($6$): multiplies the two table entries in the $x = 4$ row, $f(4) \\cdot g(4) = 2 \\cdot 3$, treating $f(g(4))$ as a product.\n\n**Test Day Takeaway:** Work from the inside out: evaluate the inner function at the given input, then use that output as the input to the outer function, reading each value from its own column."
+}

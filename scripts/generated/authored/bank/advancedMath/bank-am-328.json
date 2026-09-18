@@ -1,0 +1,49 @@
+{
+ "id": "bank-am-328",
+ "question": "The table lists $g(1)$, $g(2)$, and $g(3)$ for an exponential function $g$ used in a sediment-load model, where $g(n)$ is the load, in kilograms, carried past a gauge during month $n$. Find the value of $n$ that satisfies $g(3n) = 9\\,g(n + 6)$.",
+ "questionTable": {
+  "headers": [
+   "$n$",
+   "$g(n)$"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$3$"
+   ],
+   [
+    "$2$",
+    "$9$"
+   ],
+   [
+    "$3$",
+    "$27$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$7.5$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "drops the factor of $9$, solving $3n = n + 6$",
+  "C": "converts the factor $9$ to $3^{9}$ instead of $3^{2}$, solving $3n = n + 15$",
+  "D": "multiplies the exponents when combining $9 \\cdot 3^{\\,n+6}$, solving $3n = 2n + 12$"
+ },
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The table gives $g(n) = 3^{n}$, so the equation is $3^{3n} = 3^{2} \\cdot 3^{\\,n+6} = 3^{\\,n+8}$, and $3n = n + 8$ gives $n = 4$.\n\n**The Full Solution:**\nStep 1: The listed values $3$, $9$, $27$ are $3^{1}$, $3^{2}$, $3^{3}$, so $g(n) = 3^{n}$.\nStep 2: Then $g(3n) = 3^{3n}$, and $9\\,g(n + 6) = 3^{2} \\cdot 3^{\\,n+6} = 3^{\\,n+8}$.\nStep 3: Equal bases force $3n = n + 8$, so $2n = 8$ and $n = 4$. Check: $g(12) = 3^{12} = 531{,}441$ and $9\\,g(10) = 9 \\cdot 3^{10} = 531{,}441$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): ignores the coefficient $9$, which is worth two extra factors of $3$.\n* Choice C ($7.5$): converts the factor $9$ to $3^{9}$ rather than $3^{2}$, solving $3n = n + 15$.\n* Choice D ($12$): treats $9 \\cdot 3^{\\,n+6}$ as $3^{2(n+6)}$, multiplying the exponent instead of adding to it.\n\n**Test Day Takeaway:** A numerical coefficient in front of a power is itself a power of the same base — fold it in by ADDING to the exponent."
+}

@@ -1,0 +1,56 @@
+{
+ "id": 1,
+ "question": "The table gives the output voltage $f(x)$, in millivolts, of a pressure sensor at several input pressures $x$, in kilopascals, where $f$ is a linear function. At what input pressure is the output voltage $280$ millivolts?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Input pressure x (kilopascals)",
+    "Output voltage f(x) (millivolts)"
+   ],
+   "rows": [
+    [
+     "5",
+     "72"
+    ],
+    [
+     "10",
+     "112"
+    ],
+    [
+     "15",
+     "152"
+    ],
+    [
+     "20",
+     "192"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$31$"
+  },
+  {
+   "id": "C",
+   "text": "$35$"
+  },
+  {
+   "id": "D",
+   "text": "$39$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 280 by 8 first and subtracts 32 afterward: 35 - 32 = 3",
+  "C": "ignores the 32-millivolt offset and computes 280/8 = 35",
+  "D": "adds 32 instead of subtracting it: 312/8 = 39"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Solve $f(a) = c$**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The voltage climbs $40$ millivolts for every $5$ kilopascals, so the rate is $8$ millivolts per kilopascal, and $f(5) = 72$ forces an offset of $32$. Then $280 = 8x + 32$ gives $x = 31$.\n\n**The Full Solution:**\nStep 1: Find the rate of change from any two rows. From $x = 5$ to $x = 10$ the output rises from $72$ to $112$, so the rate is $\\frac{112 - 72}{10 - 5} = 8$ millivolts per kilopascal.\nStep 2: Find the offset. Substituting into $f(x) = 8x + b$ with $x = 5$ and $f(5) = 72$ gives $72 = 40 + b$, so $b = 32$ and $f(x) = 8x + 32$.\nStep 3: Set the output equal to $280$ and solve for the input. $8x + 32 = 280$, so $8x = 248$ and $x = 31$. Check: $8(31) + 32 = 248 + 32 = 280$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): divides before subtracting. $280 \\div 8 = 35$ and then $35 - 32 = 3$ undoes the two operations in the wrong order.\n* Choice C ($35$): ignores the $32$-millivolt offset entirely and reports $280 \\div 8 = 35$, the input that would be right only if the sensor read $0$ at $0$ kilopascals.\n* Choice D ($39$): adds the offset instead of removing it, giving $\\frac{280 + 32}{8} = 39$.\n\n**Test Day Takeaway:** When a table defines a linear function, build the rule $f(x) = mx + b$ before you answer anything. Solving $f(a) = c$ then means undoing the operations in reverse order: subtract the offset first, divide by the rate second."
+}

@@ -1,0 +1,67 @@
+{
+  "id": "bank-ps-038",
+  "question": "The dot plot shows the number of points a basketball player scored in each of $13$ games. What is the value of the mode of the data minus the median of the data?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 4,
+          "count": 1
+        },
+        {
+          "value": 5,
+          "count": 3
+        },
+        {
+          "value": 7,
+          "count": 1
+        },
+        {
+          "value": 8,
+          "count": 2
+        },
+        {
+          "value": 10,
+          "count": 1
+        },
+        {
+          "value": 12,
+          "count": 4
+        },
+        {
+          "value": 13,
+          "count": 1
+        }
+      ],
+      "xMin": 3,
+      "xMax": 14,
+      "xLabel": "Points scored"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3.3$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$7$"
+    },
+    {
+      "id": "D",
+      "text": "$9$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the mean, $\\frac{113}{13} \\approx 8.7$, from the mode instead of the median.",
+    "C": "uses the second-tallest stack, $5$, as if it were the median: $12 - 5$.",
+    "D": "computes the range, $13 - 4$, instead of mode minus median."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Mode vs Median Comparison**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The mode is the tallest stack, $12$ points, and the median is the $7$th of the $13$ dots, which is $8$. The difference is $12 - 8 = 4$.\n\n**The Full Solution:**\nStep 1: The mode is the value with the most dots: $12$ has $4$ dots, more than any other value.\nStep 2: For $13$ values, the median is the $7$th in order. Counting from the left: $4$ (1), $5$ (2, 3, 4), $7$ (5), $8$ (6, 7). The median is $8$.\nStep 3: Mode $-$ median $= 12 - 8 = 4$. Check: six dots lie below the $7$th dot and six lie above it ($10, 12, 12, 12, 12, 13$). $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3.3$): subtracts the mean, $\\frac{113}{13} \\approx 8.7$, from the mode instead of the median.\n* Choice C ($7$): uses the second-tallest stack, $5$, as if it were the median: $12 - 5$.\n* Choice D ($9$): computes the range, $13 - 4$, instead of mode minus median.\n\n**Test Day Takeaway:** Mode comes from stack height; median comes from dot position. Find each separately, then subtract in the order the question states."
+}

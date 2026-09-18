@@ -1,0 +1,29 @@
+{
+ "question": "Two monitors report $5x + 2y = c$ and $3x + 4y = 30$ from the same counts $x$ of high-ozone days and $y$ of moderate-ozone days, where $c$ is a constant. If $4x + 3y = 33$, what is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$33$"
+  },
+  {
+   "id": "C",
+   "text": "$36$"
+  },
+  {
+   "id": "D",
+   "text": "$66$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "computes $33 - 30$, forgetting that $4x + 3y$ must first be doubled",
+  "B": "copies the given value of $4x + 3y$",
+  "D": "reports the combined value $8x + 6y$ instead of the constant $c$"
+ },
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Adding the reports gives $8x + 6y = c + 30$, and $8x + 6y = 2(33) = 66$, so $c = 36$.\n\n**The Full Solution:**\n\nStep 1: Add the two reports: $(5x + 2y) + (3x + 4y) = c + 30$, so $8x + 6y = c + 30$.\n\nStep 2: Notice $8x + 6y = 2(4x + 3y) = 2(33) = 66$.\n\nStep 3: So $c + 30 = 66$ and $c = 36$. Check with $x = 6$ and $y = 3$: $3(6) + 4(3) = 30$ and $5(6) + 2(3) = 36$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3$): subtracts $30$ from $33$, treating $4x + 3y$ as if it already equaled the sum of the two reports.\n\n* Choice B ($33$): copies the value handed to you rather than the unknown constant.\n\n* Choice D ($66$): reports the doubled combination instead of solving for $c$.\n\n**Test Day Takeaway:** Add the equations, then see what multiple of the given combination the left side is; the factor is what turns the given value into a usable number.",
+ "id": "bank-alg-463"
+}

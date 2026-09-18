@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "disguise"
-    },
-    {
-      "id": "B",
-      "text": "accommodate"
-    },
-    {
-      "id": "C",
-      "text": "magnify"
-    },
-    {
-      "id": "D",
-      "text": "abandon"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"accommodate.\" The sentence sets up a contrast: rather than fight the pixel grid, Carter worked with it, shaping letters to suit the grid's limits. \"Accommodate,\" meaning to adapt to or make room for, fits that cooperative move. \"Abandon\" would mean giving up the grid, which contradicts \"not to fight ... but to,\" and \"disguise\" implies hiding the grid rather than designing around it. \"Magnify\" points the wrong way, since Carter's problem was legibility at small sizes, not enlargement.",
-  "passage": "When the typeface designer Matthew Carter set out to draw fonts for low-resolution computer screens in the 1990s, he faced a constraint print designers had never confronted: at small sizes, a screen rendered each letter as a coarse grid of square pixels, and a graceful curve that looked elegant in print became a jagged stair-step on screen. Carter's solution was not to fight the grid but to ______ it, designing letterforms whose proportions were tuned to the pixel matrix itself.",
-  "_meta": {
-    "anchor": "Matthew Carter: screen typefaces (Verdana, Georgia) tuned to the pixel grid"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "sketch"
   },
-  "id": 1103,
-  "module": 1
+  {
+   "id": "B",
+   "text": "assemble"
+  },
+  {
+   "id": "C",
+   "text": "renovate"
+  },
+  {
+   "id": "D",
+   "text": "imagine"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The sentence describes \"bolting together\" a facade from numbered, factory-made parts — the builder could \"assemble\" a storefront.\n\n**The Full Solution:**\n- The contrast is between carving ornament by hand and putting together prefabricated pieces.\n- The clause after the blank spells out the action: \"bolting together in weeks a facade\" from the catalog's parts.\n- \"Assemble\" — to construct by fitting parts together — names exactly that process.\n\n**Why the other choices are wrong:**\n- A: \"Sketch\" describes drawing a design, but the builder is physically erecting the facade, not drafting it.\n- C: \"Renovate\" means to restore something that already exists; these storefronts are being built new from parts.\n- D: \"Imagine\" describes mental picturing, which leaves the bolting and building unexplained.",
+ "passage": "In the 1850s, New York foundries began selling building fronts made of cast iron: columns, lintels, and whole facades poured in standard molds and listed in illustrated catalogs. A merchant did not need to hire a stonecutter to carve each ornament by hand; instead, a builder could simply ______ a storefront from the catalog's numbered parts, bolting together in weeks a facade that carved stone would have taken a season to produce.",
+ "_meta": {
+  "anchor": "cast-iron storefront architecture — catalog prefabrication, 1850s New York foundries",
+  "distractors": {
+   "A": "wrong stage — designing, not erecting",
+   "C": "wrong object — implies restoring an existing front",
+   "D": "wrong domain — mental, not physical"
+  }
+ },
+ "id": 1103,
+ "module": 1
 }

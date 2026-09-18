@@ -1,0 +1,52 @@
+{
+ "id": 11,
+ "question": "The mass of dissolved salt in a saline stock solution is proportional to the volume of solution drawn. The table gives the mass measured for three sample volumes. How many grams of dissolved salt are in $250$ milliliters of the stock solution?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Sample volume (mL)",
+    "Dissolved salt (mg)"
+   ],
+   "rows": [
+    [
+     "20",
+     "34"
+    ],
+    [
+     "50",
+     "85"
+    ],
+    [
+     "80",
+     "136"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.0425$"
+  },
+  {
+   "id": "B",
+   "text": "$0.425$"
+  },
+  {
+   "id": "C",
+   "text": "$4.25$"
+  },
+  {
+   "id": "D",
+   "text": "$425$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the 425 mg by 10,000 instead of by 1,000",
+  "C": "divides the 425 mg by 100 instead of by 1,000",
+  "D": "reports the mass in milligrams without converting to grams"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Proportion Solving**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** $\\frac{34}{20} = 1.7$ mg per mL, so $250$ mL holds $425$ mg, and $425 \\div 1000 = 0.425$ gram.\n\n**The Full Solution:**\nStep 1: The relationship is proportional, so the mass per milliliter is constant: $\\frac{34}{20} = \\frac{85}{50} = \\frac{136}{80} = 1.7$ milligrams per milliliter.\nStep 2: For $250$ milliliters the mass is $1.7 \\times 250 = 425$ milligrams.\nStep 3: Since $1$ gram is $1{,}000$ milligrams, $425$ milligrams $= \\frac{425}{1000} = 0.425$ gram; check by scaling the third row: $250$ mL is $3.125$ times $80$ mL, and $136 \\times 3.125 = 425$ mg ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.0425$): divides by $10{,}000$, shifting the decimal one place too far; that would make a gram equal to $10{,}000$ milligrams.\n* Choice C ($4.25$): divides by $100$, the centi- conversion, instead of the $1{,}000$ that separates milligrams from grams.\n* Choice D ($425$): computes the mass correctly but leaves it in milligrams, ignoring the \"grams\" the question asks for.\n\n**Test Day Takeaway:** Find the unit rate from any row, scale it, and convert only at the end — then reread the question to confirm which unit the answer must be in."
+}

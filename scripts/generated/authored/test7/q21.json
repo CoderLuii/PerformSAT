@@ -1,31 +1,31 @@
 {
-  "id": 721,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "A widely used public-health framework distinguishes three levels of discrimination ______ that together shape population health and constrain individual life chances across generations. Separating the levels in this way lets researchers measure inequities directly rather than merely describe them in broad qualitative terms.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "—institutionalized, personally mediated, and internalized,"
-    },
-    {
-      "id": "B",
-      "text": "—institutionalized, personally mediated, and internalized—"
-    },
-    {
-      "id": "C",
-      "text": "institutionalized, personally mediated, and internalized"
-    },
-    {
-      "id": "D",
-      "text": ", institutionalized, personally mediated, and internalized,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The list naming the three levels is a nonessential insertion, so it must be set off by a matched pair of punctuation marks — here, a dash on each side. Choice A opens with a dash but closes with a comma, mixing the marks; Choice C supplies no punctuation, leaving the insertion uncontrolled; and Choice D's surrounding commas conflict with the internal commas in the list, creating ambiguity that the dashes avoid."
+ "id": 721,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "A lichen is not a single organism but a partnership of two ______ woven together so tightly that early naturalists classified each lichen as one species. Because the partners cannot readily be separated in the field, lichens are still identified as though the fungus alone were the whole organism.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "—a fungus, which gives the body its structure, and an alga, which feeds it,"
+  },
+  {
+   "id": "B",
+   "text": "—a fungus, which gives the body its structure, and an alga, which feeds it—"
+  },
+  {
+   "id": "C",
+   "text": "a fungus, which gives the body its structure, and an alga, which feeds it"
+  },
+  {
+   "id": "D",
+   "text": ", a fungus, which gives the body its structure, and an alga, which feeds it,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The inserted phrase naming the two partners is an aside the sentence survives without, so it must be fenced by a matched pair of marks — and because the aside contains commas of its own, dashes on both ends are the pair that keeps it readable.\n\n**The Full Solution:**\n- Remove the insertion and the sentence still stands: \"...a partnership of two woven together so tightly that...\" — so the naming phrase is supplementary.\n- A supplementary insertion must open and close with the same mark: dash-dash, comma-comma, or parentheses.\n- This insertion already holds four commas, so bounding it with commas would bury its edges; the dash pair in B marks them cleanly.\n\n**Why the other choices are wrong:**\n- A: It opens with a dash but closes with a comma — mismatched marks around one aside.\n- C: With no punctuation at all, the aside collides with the sentence around it.\n- D: Comma fences disappear among the commas inside the aside, leaving its boundaries unreadable."
 }

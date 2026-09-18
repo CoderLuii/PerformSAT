@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-205",
+  "question": "The area of a pond's surface covered by duckweed doubles every $4$ days. Which type of function best models the covered area as a function of the number of days since the duckweed was first observed?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Decreasing exponential"
+    },
+    {
+      "id": "B",
+      "text": "Decreasing linear"
+    },
+    {
+      "id": "C",
+      "text": "Increasing exponential"
+    },
+    {
+      "id": "D",
+      "text": "Increasing linear"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the right family, but a decreasing model needs a factor below 1",
+    "B": "the covered area is growing, not shrinking",
+    "D": "treats doubling as adding the same area every 4 days"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Classify Physical Motion Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Doubling is multiplication by a constant factor over equal time spans — the signature of exponential growth.\n\n**The Full Solution:**\nStep 1: Let $a$ be the area first observed. After $4$ days the area is $2a$, after $8$ days $4a$, after $12$ days $8a$.\nStep 2: Equal time steps multiply the area by $2$ rather than adding a fixed area, so the model is exponential, not linear.\nStep 3: Because the factor $2$ is greater than $1$, the function increases. Check the differences: $a$, then $2a$, then $4a$ — the increases ($a$, $2a$) are not constant, so no line fits. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (decreasing exponential): the correct family, but the area grows; a decreasing model needs a factor between $0$ and $1$.\n* Choice B (decreasing linear): the area is increasing.\n* Choice D (increasing linear): a line would add the same area every $4$ days; doubling adds more and more each period.\n\n**Test Day Takeaway:** \"Doubles / halves / triples every $k$ units\" always signals an exponential model — the direction comes from whether the factor exceeds $1$."
+}

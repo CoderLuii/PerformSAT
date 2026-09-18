@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-422",
+ "question": "A reefer container's defrost model requires $\\sqrt{x+b}=x-6$, where $b$ is a constant and $x$ is the cabinet temperature in degrees Celsius. For which value of $b$ does the model have two distinct real solutions?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$-6$"
+  },
+  {
+   "id": "C",
+   "text": "$0$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "squaring gives x squared minus 13x plus 44 = 0, whose discriminant -7 is negative, so there are no real solutions at all",
+  "C": "squaring gives solutions 9 and 4, but 4 makes x - 6 negative and is extraneous, leaving one solution",
+  "D": "squaring gives solutions 11 and 2, and 2 is extraneous, leaving one solution"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Radical Equation — Extraneous Filter**\n\n**Choice B is correct.**\n\n**The Fast Way (~60s):** Squaring gives $x^{2}-13x+(36-b)=0$, and a solution counts only when $x\\ge6$; with $b=-6$ the roots are $7$ and $6$, and both pass.\n\n**The Full Solution:**\n\nStep 1: Squaring $\\sqrt{x+b}=x-6$ gives $x+b=x^{2}-12x+36$, so $x^{2}-13x+(36-b)=0$.\n\nStep 2: Because the left side of the original equation is never negative, a root counts only if $x-6\\ge0$, that is $x\\ge6$.\n\nStep 3: With $b=-6$ the quadratic is $x^{2}-13x+42=(x-6)(x-7)$, giving $x=6$ and $x=7$, both at least $6$. Check: $\\sqrt{6-6}=0=6-6$ and $\\sqrt{7-6}=1=7-6$, so both are genuine solutions.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-8$): the quadratic becomes $x^{2}-13x+44=0$, whose discriminant is $169-176=-7$, so there are no real solutions.\n* Choice C ($0$): the roots are $9$ and $4$, but $x=4$ makes $x-6=-2$ and is extraneous, leaving one solution.\n* Choice D ($14$): the roots are $11$ and $2$, and $x=2$ is extraneous for the same reason, leaving one solution.\n\n**Test Day Takeaway:** Squaring can only add solutions, never lose them, so every root has to be tested against the sign the original equation forces."
+}

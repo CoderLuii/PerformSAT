@@ -1,0 +1,60 @@
+{
+  "id": "bank-am-019",
+  "question": "A campus writing center's average wait, in minutes, during week $x$ is given by a quadratic function $f$, and the table lists $f(x)$ for five consecutive weeks. Which ordered pair gives the coordinates of the lowest point on the graph of $y=f(x)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(1,13)$"
+    },
+    {
+      "id": "B",
+      "text": "$(2,7)$"
+    },
+    {
+      "id": "C",
+      "text": "$(3,5)$"
+    },
+    {
+      "id": "D",
+      "text": "$(5,3)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the first row of the table rather than the smallest output",
+    "B": "reports the second-smallest output instead of the smallest",
+    "D": "swaps the coordinates of the vertex"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertex Coordinates**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The outputs fall to $5$ at $x=3$ and rise symmetrically on either side, so the lowest point is $(3,5)$.\n\n**The Full Solution:**\nStep 1: Scan the outputs: $13$, $7$, $5$, $7$, $13$. The smallest is $5$.\nStep 2: That value occurs at $x=3$, and the equal outputs at $x=2$ and $x=4$ confirm $x=3$ is the axis of symmetry.\nStep 3: The lowest point is therefore $(3,5)$. Check: $f(x)=2(x-3)^2+5$ reproduces every row of the table ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(1,13)$): reports the first row of the table rather than the smallest output.\n* Choice B ($(2,7)$): reports the second-smallest output instead of the smallest.\n* Choice D ($(5,3)$): swaps the two coordinates of the vertex.\n\n**Test Day Takeaway:** In a symmetric table the vertex sits at the input where the outputs turn around — read the pair in the order (input, output).",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Week (x)",
+        "Average wait, f(x)"
+      ],
+      "rows": [
+        [
+          "1",
+          "13"
+        ],
+        [
+          "2",
+          "7"
+        ],
+        [
+          "3",
+          "5"
+        ],
+        [
+          "4",
+          "7"
+        ],
+        [
+          "5",
+          "13"
+        ]
+      ]
+    }
+  }
+}

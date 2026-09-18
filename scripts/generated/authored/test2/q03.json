@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 1,
-  "passage": "Historian Erika Lee, who teaches U.S. immigration history at Harvard, argues in America for Americans (2019) that hostility toward immigrants is not an occasional lapse from an otherwise welcoming national tradition. Tracing exclusion laws, naturalization restrictions, and deportation campaigns from the early republic to the present, Lee shows that suspicion of newcomers has been written into statutes, court rulings, and federal agencies in every generation. According to Lee, xenophobia therefore ______ American immigration policy as a structural feature rather than appearing only during periodic moments of public alarm.",
+  "passage": "The \"Hawthorne effect\" — the idea that people change their behavior simply because they know they are being observed — rests largely on productivity studies conducted at a single factory in the 1920s. When two economists located the original records and ______ the famous experiments, they found the evidence far weaker than the textbook story suggests: output rose on Mondays whether or not the factory's lighting had been changed, a pattern the classic account overlooked.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "pervades"
+      "text": "reanalyzed"
     },
     {
       "id": "B",
-      "text": "infiltrates"
+      "text": "replicated"
     },
     {
       "id": "C",
-      "text": "dominates"
+      "text": "commissioned"
     },
     {
       "id": "D",
-      "text": "interrupts"
+      "text": "anticipated"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"pervades.\" The sentences before the blank establish Lee's central argument: hostility toward immigrants is \"not an occasional lapse\" but something \"written into statutes, court rulings, and federal agencies in every generation,\" reaching back to the early republic. The blank therefore needs a verb meaning to be present throughout something as a built-in feature, and the closing phrase \"as a structural feature rather than appearing only during periodic moments of public alarm\" confirms that scope. \"Pervades\" fits cleanly: it conveys diffusion through every part of immigration policy without implying either intrusion or supremacy, which matches Lee's claim that xenophobia is the institutional baseline of U.S. immigration law rather than an aberration from it.\n\nChoice B is incorrect. \"infiltrates\" collocates well with \"policy\" and shares the spreads-through flavor of the correct answer, so it feels topical. But \"infiltrates\" carries the connotation of a covert outside force secretly working its way into a system, and the passage describes the opposite picture: xenophobia is openly \"written into\" the country's statutes and agencies by Americans themselves, in every generation. The verb matches the surface pattern of \"runs through policy\" while contradicting the institutional, native-born quality the passage attributes to the phenomenon. Choice D is incorrect. \"interrupts\" reverses Lee's thesis. To say xenophobia \"interrupts\" American immigration policy would mean it breaks into an otherwise continuous, welcoming tradition — exactly the \"occasional lapse\" reading the first sentence rejects. The passage explicitly characterizes xenophobia not as a disruption of the policy tradition but as a constant thread running through it, so the inverse verb produces the opposite of what Lee argues. Choice C is incorrect. \"dominates\" is in the same general neighborhood as \"pervades\" (both describe a broad presence), but its scope is wrong. \"Dominates\" implies that xenophobia overwhelms or controls American immigration policy to the exclusion of other forces, whereas the passage describes it as \"a structural feature\" of that policy — pervasive and built in, but coexisting with the welcoming traditions and pro-immigration statutes Lee also references. The verb overshoots the passage's careful claim that xenophobia is institutionally embedded, not totalizing."
+  "explanation": "**Choice A is correct.** The economists worked with the original records of experiments run decades earlier, so what they did to those experiments was examine them afresh — \"reanalyzed.\"\n\n**The Full Solution:**\n- The sentence's setup is specific: the economists \"located the original records\" of studies from the 1920s. Whatever the blank names, it must be something one can do to old experiments using their surviving data.\n- Their finding — a Monday pattern \"the classic account overlooked\" — is the product of scrutinizing existing data, not of gathering new data. \"Reanalyzed\" captures exactly that: subjecting the old evidence to fresh analysis.\n\n**Why the other choices are wrong:**\n- B: \"replicated\" means running the experiments again from scratch; the economists worked from the original records, not from a rerun, so nothing was replicated.\n- C: \"commissioned\" means ordering work to be done — impossible here, since the experiments had been conducted decades before the economists took any interest in them.\n- D: \"anticipated\" would have the economists foreseeing experiments that predated them by decades, reversing the sentence's chronology."
 }

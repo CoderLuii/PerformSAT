@@ -6,40 +6,46 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
  "module": 1,
- "passage": "The reorganization of the U.S. labor force during the twentieth century is often summarized in textbooks as a steady migration out of farming and factories and into office and service work. Drawing on Census Bureau Historical Statistics, however, researchers have argued that this tidy narrative obscures the actual path traced by manufacturing employment, which did not decline uniformly across the century but instead rose between 1900 and 1950 before falling sharply by 2000 because _______",
+ "passage": "Lithium-ion batteries lose storage capacity as they age, but engineers disagree about what drives the loss in electric vehicles: accumulated driving or exposure to heat. A team analyzed capacity data from thousands of vehicles of a single model, grouping them by the city where they were registered. The team claims that sustained high temperature, more than accumulated driving, erodes battery capacity, noting that ______",
  "questionTable": {
   "type": "table",
-  "caption": "Share of U.S. employment by sector, selected years (Census Bureau, Historical Statistics of the United States)",
+  "caption": "Median battery capacity retained after five years for one vehicle model, by city",
   "headers": [
-   "Sector",
-   "1900",
-   "1950",
-   "2000"
+   "City",
+   "Average annual temperature (°F)",
+   "Median odometer (thousand miles)",
+   "Median capacity retained (%)"
   ],
   "rows": [
    [
-    "Agriculture",
-    "38%",
-    "12%",
-    "2%"
+    "Phoenix",
+    "75",
+    "38",
+    "84"
    ],
    [
-    "Manufacturing",
-    "22%",
-    "26%",
-    "13%"
+    "Houston",
+    "70",
+    "41",
+    "86"
    ],
    [
-    "Services",
-    "31%",
-    "48%",
-    "75%"
+    "Denver",
+    "50",
+    "43",
+    "92"
    ],
    [
-    "Other",
-    "9%",
-    "14%",
-    "10%"
+    "Seattle",
+    "53",
+    "58",
+    "91"
+   ],
+   [
+    "Minneapolis",
+    "46",
+    "36",
+    "93"
    ]
   ]
  },
@@ -47,21 +53,21 @@
  "choices": [
   {
    "id": "A",
-   "text": "manufacturing's share grew from 22 percent in 1900 to 26 percent in 1950 and then dropped to 13 percent by 2000, a midcentury rise followed by a steep late-century decline."
+   "text": "vehicles in Seattle retained 91% of capacity despite a median odometer of 58,000 miles, while vehicles in Phoenix retained only 84% at a much lower 38,000 miles."
   },
   {
    "id": "B",
-   "text": "manufacturing's share dropped between 1900 and 1950 and again between 1950 and 2000, declining in every interval the table records."
+   "text": "vehicles in Minneapolis, the coolest city listed, retained 93% of capacity, the highest value in the table."
   },
   {
    "id": "C",
-   "text": "agriculture's share moved from 38 percent in 1900 to 12 percent in 1950 to 2 percent in 2000, illustrating the reshaping of work across the century."
+   "text": "median capacity retained after five years was below 90% for vehicles registered in Phoenix and Houston but above 90% for vehicles registered in Denver, Seattle, and in Minneapolis."
   },
   {
    "id": "D",
-   "text": "manufacturing's share fell from 22 percent in 1900 to 13 percent in 2000, confirming a continuous contraction of factory employment over the century."
+   "text": "the median odometer reading varied by more than 20,000 miles across the five cities in the table."
   }
  ],
  "correctAnswer": "A",
- "explanation": "The claim is precise: manufacturing did not decline uniformly across the twentieth century — it rose between 1900 and 1950, then fell sharply by 2000. Supporting evidence must therefore (i) be about the manufacturing row, and (ii) capture both halves of that non-monotone trajectory: the early-to-mid-century rise AND the late-century fall. Choice A does exactly this: 22 percent (1900) to 26 percent (1950) is the rise, and 26 percent (1950) to 13 percent (2000) is the steep decline. The two figures together are the only way the table's data can vindicate the rise-then-fall claim."
+ "explanation": "**Choice A is correct.** The claim ranks heat above driving as the cause, and A is the only option that pulls the two factors apart — more driving but less capacity loss in the cooler city.\n\n**The Full Solution:**\n- The claim is comparative: heat matters more than mileage. Support must disentangle the two candidate causes.\n- Choice A does exactly that: Seattle's vehicles drove far more (58,000 versus 38,000 miles) yet kept more capacity (91% versus 84%) than Phoenix's — so the factor tracking the loss is the hot climate, not the mileage.\n\n**Why the other choices are wrong:**\n- B: It is consistent with the heat claim but never engages the mileage alternative, so it cannot show heat matters *more*.\n- C: It sorts cities by outcome without addressing driving at all.\n- D: It reports variation in mileage but connects it to nothing — on its own it supports neither cause."
 }

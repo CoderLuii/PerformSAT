@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "From a point $P$ outside a circle, tangent segments $\\overline{PA}$ and $\\overline{PB}$ are drawn, touching the circle at $A$ and $B$. If $PA = 4x - 5$ and $PB = 2x + 7$, what is the length of $\\overline{PA}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$19$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$38$"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "Two tangent segments drawn from the same external point are related in a way that gives you an equation.",
+ "distractorNotes": {
+  "A": "reports x",
+  "C": "drops the constant term",
+  "D": "adds both segments"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~35s):** Tangent segments from a common external point are congruent, so $4x - 5 = 2x + 7$ gives $x = 6$ and $PA = 4(6) - 5 = 19$.\n\n**The Full Solution:**\nStep 1: $\\overline{PA}$ and $\\overline{PB}$ are tangent to the same circle from the same external point, so $PA = PB$.\nStep 2: Solve $4x - 5 = 2x + 7$: subtracting $2x$ gives $2x - 5 = 7$, so $2x = 12$ and $x = 6$.\nStep 3: $PA = 4(6) - 5 = 19$. Check: $PB = 2(6) + 7 = 19$, the same length.\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): reports the value of $x$ instead of substituting it back into the expression for the length.\n* Choice C ($24$): evaluates $4x$ at $x = 6$ but drops the $-5$.\n* Choice D ($38$): adds $PA$ and $PB$, reporting the combined length of both tangent segments.\n\n**Test Day Takeaway:** Solving for $x$ is the middle of the problem, not the end. Substitute back into whatever expression the question actually names."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-276",
+  "question": "A regional planner surveyed $900$ residents selected at random from the residents of a county. Based on the survey, $47\\%$ of the county's residents would use a proposed bus route at least once each week, with an associated margin of error of $3\\%$. Which of the following conclusions is best supported by these results?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Exactly $47\\%$ of the county's residents would use the proposed route at least once each week."
+    },
+    {
+      "id": "B",
+      "text": "More than $50\\%$ of the county's residents would use the proposed route at least once each week."
+    },
+    {
+      "id": "C",
+      "text": "It is plausible that between $44\\%$ and $50\\%$ of the county's residents would use the proposed route at least once each week."
+    },
+    {
+      "id": "D",
+      "text": "Fewer than $44\\%$ of the county's residents would use the proposed route at least once each week."
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats the sample estimate as the exact population value",
+    "B": "reaches past the top of the interval",
+    "D": "reaches past the bottom of the interval"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Confidence Interval Interpretation**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** $47\\% \\pm 3\\%$ gives plausible values from $44\\%$ to $50\\%$, and the only choice that reports that interval is choice C.\n\n**The Full Solution:**\nStep 1: The estimate from the random sample is $47\\%$, with a margin of error of $3\\%$.\nStep 2: The interval of plausible values for the percent of all county residents is $47\\% - 3\\% = 44\\%$ to $47\\% + 3\\% = 50\\%$.\nStep 3: Check the other claims against that interval: $44\\%$ and $50\\%$ are both plausible, so no claim that the true percent is above $50\\%$ or below $44\\%$ is supported, and no single value inside the interval is established as exact. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: $47\\%$ is the sample's value. The margin of error exists precisely because the population value is not known exactly.\n* Choice B: $50\\%$ is the top of the interval, so \"more than $50\\%$\" sits outside the plausible values.\n* Choice D: $44\\%$ is the bottom of the interval, so \"fewer than $44\\%$\" also sits outside it.\n\n**Test Day Takeaway:** Build the interval first, then keep only the choice whose claim stays inside it."
+}

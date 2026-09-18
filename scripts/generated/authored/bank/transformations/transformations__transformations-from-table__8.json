@@ -1,0 +1,54 @@
+{
+ "id": 8,
+ "question": "The table gives a sky survey's star count $f(x)$, in thousands, for field $x$. A deeper survey counts $g(x) = f(x) + k$ stars for a constant $k$, and $g(4) = 31$ thousand. What is the value of $g(7)$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$8$"
+   ],
+   [
+    "$4$",
+    "$19$"
+   ],
+   [
+    "$7$",
+    "$26$"
+   ],
+   [
+    "$10$",
+    "$33$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$26$"
+  },
+  {
+   "id": "B",
+   "text": "$31$"
+  },
+  {
+   "id": "C",
+   "text": "$38$"
+  },
+  {
+   "id": "D",
+   "text": "$45$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports f(7) without adding the constant",
+  "B": "repeats the given value g(4)",
+  "D": "adds the constant to f(10) instead of f(7)"
+ },
+ "correctAnswer": "C",
+ "hint": "One field appears both in the table and in the deeper survey's given count.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** $k = 31 - 19 = 12$, so $g(7) = 26 + 12 = 38$ thousand.\n\n**The Full Solution:**\nStep 1: The table gives $f(4) = 19$ thousand, and $g(4) = f(4) + k = 31$ thousand, so $k = 12$ thousand.\nStep 2: The same constant applies to every field, so $g(7) = f(7) + 12$.\nStep 3: Since $f(7) = 26$, $g(7) = 26 + 12 = 38$ thousand. Check: $g(4) = 19 + 12 = 31$ thousand, matching the given value ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($26$): reporting $f(7)$ without adding the constant.\n* Choice B ($31$): repeating the value given for field $4$.\n* Choice D ($45$): adding the constant to $f(10) = 33$, the count for the wrong field.\n\n**Test Day Takeaway:** Find the constant from the one input where both counts are known, then apply it to the input asked for."
+}

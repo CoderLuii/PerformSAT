@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 2,
- "passage": "A modern microprocessor packs billions of transistors onto a single sliver of silicon, and the performance of the whole chip depends on how reliably each of those switches behaves. Each transistor must hold ______ stored charge steadily between cycles, because even a small leakage current, multiplied across billions of devices, would drain the chip's power and corrupt the data it holds.",
+ "passage": "In 1883, drought concentrated Texas cattle on shrinking ranges, and masked bands began riding out at night to cut the new barbed wire fences. The fences themselves were only the nearest target: the anger behind the cutting was directed at ______ owners, the distant syndicates that had strung wire across range the cutters regarded as open to all.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "its"
-  },
-  {
-   "id": "B",
    "text": "their"
   },
   {
+   "id": "B",
+   "text": "they're"
+  },
+  {
    "id": "C",
-   "text": "it's"
+   "text": "there"
   },
   {
    "id": "D",
-   "text": "they're"
+   "text": "it's"
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The pronoun refers back to the singular \"each transistor,\" so the singular possessive \"its\" is required. Choice B uses the plural \"their,\" which does not agree with the singular \"each transistor.\" Choice C, \"it's,\" is the contraction of \"it is,\" not a possessive, and Choice D, \"they're,\" is the contraction of \"they are,\" neither of which fits the possessive slot before \"stored charge.\""
+ "explanation": "**Choice A is correct.** The blank needs the possessive determiner referring to the plural noun \"fences\": the anger was directed at their owners, the owners of the fences.\n\n**The Full Solution:**\n- The sentence contrasts target and true object: the fences were cut, but the anger aimed at the people who owned them.\n- A possessive is required before \"owners,\" and the antecedent \"fences\" is plural, so the standard form is \"their.\"\n\n**Why the other choices are wrong:**\n- B: \"They're\" is the contraction of \"they are,\" which would read \"directed at they are owners.\"\n- C: \"There\" is an adverb of place, not a possessive, and \"there owners\" is not a standard construction.\n- D: \"It's\" is the contraction of \"it is\"; besides not being a possessive, it would mismatch the plural antecedent \"fences.\"",
+ "_meta": {
+  "rule": "possessive determiner their vs. they're/there/it's",
+  "distractors": {
+   "B": "contraction of they are",
+   "C": "place adverb homophone",
+   "D": "contraction + number mismatch"
+  }
+ }
 }

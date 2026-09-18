@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-155",
+  "question": "A wind-tunnel run models the net side force, in newtons, on a scale model of a stadium canopy at a yaw offset of $x$ degrees by $f(x)=2x^{2}+12x+7$. Exactly one yaw offset other than $-8$ degrees produces the same net side force that $-8$ degrees produces. What is that offset?",
+  "correctAnswer": "2",
+  "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**The correct answer is $2$.**\n\n**The Fast Way (~30s):** The axis of symmetry is $x=-\\frac{12}{4}=-3$, and $-8$ is 5 units to its left, so its partner is 5 units to its right, at $x=2$.\n\n**The Full Solution:**\nStep 1: For $f(x)=ax^{2}+bx+c$ the axis of symmetry is $x=-\\frac{b}{2a}=-\\frac{12}{2(2)}=-3$ degrees.\nStep 2: Two inputs with equal outputs are mirror images across that line, so the partner of $x=-8$ is $x=2(-3)-(-8)$.\nStep 3: $2(-3)+8=2$ degrees. Check: $2(-8)^{2}+12(-8)+7=39$ and $2(2)^{2}+12(2)+7=39$, the same side force ✓\n\n**Common Mistakes:** Using $-\\frac{b}{a}=-6$ as the axis gives the partner $2(-6)+8=-4$. Reporting the opposite of $-8$ gives 8, which assumes the axis is the vertical axis. Substituting $-8$ and reporting the side force 39 answers a different question.\n\n**Test Day Takeaway:** Equal outputs on a parabola sit symmetrically about $x=-\\frac{b}{2a}$; the two inputs average to that value."
+}

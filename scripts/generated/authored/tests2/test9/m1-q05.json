@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "Two anchor bolts on an engineering site plan sit at $(-6,\\,11)$ and $(14,\\,1)$ in the xy-plane, with coordinates measured in meters. A third bolt is placed halfway between them. What are the coordinates of the third bolt?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(4,\\,-5)$"
+  },
+  {
+   "id": "B",
+   "text": "$(4,\\,6)$"
+  },
+  {
+   "id": "C",
+   "text": "$(8,\\,12)$"
+  },
+  {
+   "id": "D",
+   "text": "$(10,\\,-5)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "averages the x-coordinates but halves the DIFFERENCE of the y-coordinates",
+  "C": "adds the coordinates without dividing either sum by 2",
+  "D": "halves the differences instead of the sums in both coordinates"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Average each coordinate: $\\frac{-6+14}{2}=4$ and $\\frac{11+1}{2}=6$, so the bolt goes at $(4,\\,6)$.\n\n**The Full Solution:**\nStep 1: A point halfway between two points is their midpoint, $\\left(\\frac{x_1+x_2}{2},\\ \\frac{y_1+y_2}{2}\\right)$.\nStep 2: Substitute $(-6,\\,11)$ and $(14,\\,1)$: the $x$-coordinate is $\\frac{-6+14}{2}=\\frac{8}{2}=4$.\nStep 3: The $y$-coordinate is $\\frac{11+1}{2}=\\frac{12}{2}=6$, so the third bolt is at $(4,\\,6)$. Check: from $(-6,\\,11)$ to $(4,\\,6)$ is $10$ right and $5$ down, and from $(4,\\,6)$ to $(14,\\,1)$ is also $10$ right and $5$ down ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(4,\\,-5)$): the $x$-coordinate is averaged correctly, but the $y$-coordinate uses $\\frac{1-11}{2}=-5$, a half-difference instead of a half-sum.\n* Choice C ($(8,\\,12)$): adds the coordinates, $(-6+14,\\ 11+1)$, and forgets to divide by $2$.\n* Choice D ($(10,\\,-5)$): halves both differences, $\\left(\\frac{14-(-6)}{2},\\ \\frac{1-11}{2}\\right)$ — that is half the displacement between the bolts, not the point between them.\n\n**Test Day Takeaway:** Midpoint = AVERAGE, so add then halve. If a coordinate of your answer falls outside the two given values, you subtracted where you should have added."
+}

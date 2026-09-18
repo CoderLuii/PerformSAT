@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A decathlete's first five discus throws measured $41.2$, $44.8$, $39.6$, $46.0$, and $43.4$ meters. How long must the sixth throw be for the mean of all six throws to be $44.0$ meters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$44.0$"
+  },
+  {
+   "id": "B",
+   "text": "$45.0$"
+  },
+  {
+   "id": "C",
+   "text": "$49.0$"
+  },
+  {
+   "id": "D",
+   "text": "$50.0$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "assumes the missing value must equal the target mean of 44.0",
+  "B": "adds the 1.0-meter shortfall once (44.0 + 1.0) instead of covering all five recorded throws",
+  "D": "multiplies the 1.0-meter shortfall by all six throws (44.0 + 6.0) instead of the five already recorded"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Mean from List**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Six throws averaging $44.0$ need a total of $264.0$ m; the first five total $215.0$ m, so the sixth is $49.0$ m.\n\n**The Full Solution:**\nStep 1: A mean of $44.0$ across six throws requires a total of $6 \\times 44.0 = 264.0$ meters.\nStep 2: The five recorded throws total $41.2 + 44.8 + 39.6 + 46.0 + 43.4 = 215.0$ meters.\nStep 3: The sixth throw must supply the rest: $264.0 - 215.0 = 49.0$ meters.\nCheck: $\\dfrac{215.0 + 49.0}{6} = \\dfrac{264.0}{6} = 44.0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($44.0$): assumes a value equal to the target mean keeps the mean unchanged, but the first five average only $43.0$, so the mean would stay below $44.0$.\n* Choice B ($45.0$): the five throws fall $1.0$ meter per throw short of $44.0$; this adds that shortfall once instead of five times.\n* Choice D ($50.0$): multiplies the $1.0$-meter shortfall by six throws, but only the five recorded throws are short.\n\n**Test Day Takeaway:** Turn a mean into a total before you do anything else — mean questions are addition problems in disguise."
+}

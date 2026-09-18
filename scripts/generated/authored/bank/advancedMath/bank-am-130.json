@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-130",
+ "question": "In the $xy$-plane, a transformer's cooling curve $y=x^2+10x+30$ and a load line $y=4x+t$ are graphed, where $t$ is a constant. The two graphs have no point in common. Which of the following describes every possible value of $t$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$t<21$"
+  },
+  {
+   "id": "B",
+   "text": "$t<84$"
+  },
+  {
+   "id": "C",
+   "text": "$t>21$"
+  },
+  {
+   "id": "D",
+   "text": "$t>84$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves 4t - 84 < 0 without dividing the 84 by 4",
+  "C": "uses discriminant > 0, the condition for two shared points",
+  "D": "reverses the inequality and skips the division by 4"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** Equating gives $x^2+6x+(30-t)=0$ with discriminant $4t-84$; no shared point means $4t-84<0$, so $t<21$.\n\n**The Full Solution:**\nStep 1: Set $x^2+10x+30=4x+t$, which rearranges to $x^2+6x+(30-t)=0$.\nStep 2: The discriminant is $6^2-4(1)(30-t)=36-120+4t=4t-84$.\nStep 3: No shared point means no real solution, so $4t-84<0$ and $t<21$. Check: at $t=21$ the equation is $x^2+6x+9=(x+3)^2=0$, a single touch, so values below $21$ give no contact at all ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($t<84$): solves $4t-84<0$ but never divides the $84$ by $4$.\n* Choice C ($t>21$): uses $b^2-4ac>0$, which is the condition for two shared points, not none.\n* Choice D ($t>84$): reverses the inequality and also skips dividing by $4$.\n\n**Test Day Takeaway:** Fewest solutions goes with the smallest discriminant: negative for no contact, zero for tangency, positive for two crossings."
+}

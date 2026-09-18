@@ -6,60 +6,23 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
   "module": 1,
-  "passage": "Public discussions of sea-level rise often invoke a single end-to-end figure — the total millimeters added since some baseline year — that conveys the scale of the change but not its tempo. Drawing on satellite-altimetry records compiled by NASA's Goddard Space Flight Center, climate scientists have argued that the more consequential pattern is not the cumulative rise itself but the way the rise has steadily quickened: each successive decade since 1993 has added more millimeters than the one before it, indicating that _______",
+  "passage": "When deep artesian wells were first bored into the confined aquifer beneath Paris in the nineteenth century, water rose to the surface under natural pressure alone. Hydrologists note that each new borehole drew on the same body of pressurized groundwater, and they conclude that the aquifer's pressure was falling steadily through the second half of the century because ______",
   "questionTable": {
     "type": "table",
-    "caption": "Global mean sea level change (mm) relative to 1993-2008 baseline (NASA Goddard Space Flight Center, Sea Level Change Portal)",
-    "headers": [
-      "Year",
-      "Sea level (mm)",
-      "Change from prior decade (mm)"
-    ],
+    "caption": "Flow of two artesian wells in Paris",
+    "headers": ["Well", "Year completed", "Initial flow (cubic meters per day)", "Flow in 1900 (cubic meters per day)"],
     "rows": [
-      [
-        "1993",
-        "0",
-        "—"
-      ],
-      [
-        "2003",
-        "31",
-        "+31"
-      ],
-      [
-        "2013",
-        "65",
-        "+34"
-      ],
-      [
-        "2023",
-        "105",
-        "+40"
-      ]
+      ["Grenelle", "1841", "3,600", "800"],
+      ["Passy", "1861", "17,000", "5,900"]
     ]
   },
   "question": "Which choice most effectively uses data from the table to complete the statement?",
   "choices": [
-    {
-      "id": "A",
-      "text": "global mean sea level rose by 40 millimeters between 2013 and 2023, a single-decade increase greater than the cumulative rise from 1993 to 2003."
-    },
-    {
-      "id": "B",
-      "text": "global mean sea level reached 105 millimeters above the 1993 baseline by 2023, the largest cumulative figure recorded since satellite measurements began."
-    },
-    {
-      "id": "C",
-      "text": "the decade ending in 2003 added 31 millimeters, the decade ending in 2013 added 34 millimeters, and the decade ending in 2023 added 40 millimeters, an upward step in the decadal increment each time."
-    },
-    {
-      "id": "D",
-      "text": "the decadal increases of 31, 34, and 40 millimeters are similar enough to indicate that the pace of sea-level rise has remained essentially steady since 1993."
-    }
+    { "id": "A", "text": "the Passy well's initial flow, at 17,000 cubic meters per day, was nearly five times the Grenelle well's initial flow." },
+    { "id": "B", "text": "the Grenelle well was completed twenty years before drilling of the Passy well finished." },
+    { "id": "C", "text": "by 1900 the Grenelle well's flow had fallen from 3,600 cubic meters per day to 800, and the Passy well's had fallen from 17,000 to 5,900 in barely four decades." },
+    { "id": "D", "text": "the Passy well still delivered more water in 1900 than the Grenelle well had delivered when it was first completed." }
   ],
   "correctAnswer": "C",
-  "explanation": "The sentence claims the rise has steadily quickened, decade by decade. The data that show this are the decadal increments themselves—31 mm, then 34 mm, then 40 mm—each larger than the last, which is choice C. Choice A compares a single decade to the first cumulative rise without establishing the step-by-step acceleration, B cites the cumulative total rather than the tempo, and D draws the opposite conclusion, calling the pace steady.",
-  "_meta": {
-    "anchor": "NASA Goddard, global mean sea level 1993-2023"
-  }
+  "explanation": "**Choice C is correct.** A claim about steadily falling pressure needs evidence of decline over time at the wells drawing on the aquifer, and C alone provides it: both wells' flows collapsed to a fraction of their initial rates by 1900.\n\n**The Full Solution:**\n- Flow from an artesian well is driven by aquifer pressure, so falling flow is the table's proxy for falling pressure.\n- C reads the decline out of both rows — Grenelle down almost 80 percent, Passy down two-thirds within four decades — matching the claim's scope (the aquifer, not one well).\n\n**Why the other choices are wrong:**\n- A: A comparison of the two wells' starting flows describes their size, not any change in pressure over time.\n- B: The completion dates alone contain no information about flow or pressure.\n- D: True in the table, but it invites the wrong inference — highlighting how much the Passy well still produced obscures the fact that both wells' flows were falling sharply."
 }

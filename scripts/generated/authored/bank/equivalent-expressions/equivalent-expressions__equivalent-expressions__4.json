@@ -1,0 +1,25 @@
+{
+  "id": 4,
+  "question": "The expression $9m^{2}-30m+25$ can be written in the form $(am+b)^{2}$, where $a$ and $b$ are constants and $a>0$. What is the value of $a+b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-12$"
+    },
+    {
+      "id": "B",
+      "text": "$-2$"
+    },
+    {
+      "id": "C",
+      "text": "$8$"
+    },
+    {
+      "id": "D",
+      "text": "$34$"
+    }
+  ],
+  "correctAnswer": "B",
+  "hint": "Expand $(am+b)^{2}$ in general first, then match it term by term against the given trinomial.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** $9m^{2}=(3m)^{2}$ and $25=(-5)^{2}$, and $2(3)(-5)=-30$ matches the middle term, so $a=3$, $b=-5$ and $a+b=-2$ — choice B.\n\n**The Full Solution:**\nStep 1: Expanding the target form gives $(am+b)^{2}=a^{2}m^{2}+2abm+b^{2}$.\nStep 2: Match the squared term: $a^{2}=9$, and since $a>0$, $a=3$.\nStep 3: Match the middle term: $2ab=-30$, so $2(3)b=-30$ and $b=-5$. That is consistent with $b^{2}=25$.\nStep 4: Then $a+b=3+(-5)=-2$. Check: $(3m-5)^{2}=9m^{2}-30m+25$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-12$): takes $a=3$ correctly but reads $b$ as half the middle coefficient, $\\frac{-30}{2}=-15$, giving $3+(-15)$.\n* Choice C ($8$): gets both magnitudes right but keeps $b=5$; the negative middle term forces $b$ to be negative.\n* Choice D ($34$): uses the coefficients $9$ and $25$ themselves as $a$ and $b$ rather than their square roots.\n\n**Test Day Takeaway:** To match a form, expand the form symbolically and line up coefficients. The sign of the middle term, not the constant term, is what decides the sign of $b$."
+}

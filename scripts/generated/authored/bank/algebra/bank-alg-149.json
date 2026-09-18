@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-149",
+  "question": "A ferry charges $\\$9$ per adult and $\\$5$ per child. A group of $14$ people paid a total of $\\$102$ for ferry tickets. How many children were in the group?",
+  "correctAnswer": "6",
+  "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~15s):** If all $14$ were adults the cost would be $126$. Each child instead of an adult saves $4$, and $126 - 102 = 24$, so there are $24 \\div 4 = 6$ children.\n\n**The Full Solution:**\nStep 1: Let $a$ be the number of adults and $c$ the number of children. Count: $a + c = 14$. Cost: $9a + 5c = 102$.\nStep 2: Substitute $a = 14 - c$ into the cost equation: $9(14 - c) + 5c = 102$, so $126 - 4c = 102$, giving $4c = 24$ and $c = 6$.\nStep 3: Then $a = 8$. Check: $9(8) + 5(6) = 72 + 30 = 102$. $\\checkmark$\n\n**Common Mistakes:** Entering $8$ (the number of adults); setting up $9a + 5c = 14$ by mixing the count and the cost; forgetting to distribute the $9$ over $(14 - c)$.\n\n**Test Day Takeaway:** Two totals (how many, how much) give two equations. Solve the count equation for one variable and substitute it into the cost equation."
+}

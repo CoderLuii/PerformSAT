@@ -1,0 +1,49 @@
+{
+ "id": "bank-am-380",
+ "question": "The curve in the figure crosses the horizontal axis three times and is the graph of the function $f$. What are the $x$-intercepts of the graph of $y=f(x-4)$?",
+ "diagram": {
+  "type": "cubicGraph",
+  "params": {
+   "a": 0.3,
+   "roots": [
+    -3,
+    0,
+    2
+   ],
+   "xRange": [
+    -4,
+    3
+   ],
+   "yRange": [
+    -8,
+    6
+   ],
+   "label": "y = f(x)"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1$, $4$, and $6$"
+  },
+  {
+   "id": "B",
+   "text": "$-7$, $-4$, and $-2$"
+  },
+  {
+   "id": "C",
+   "text": "$-3$, $0$, and $2$"
+  },
+  {
+   "id": "D",
+   "text": "$-12$, $0$, and $8$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "shifts left 4 instead of right 4, subtracting from each root",
+  "C": "leaves the intercepts unchanged, treating x - 4 as a vertical shift",
+  "D": "multiplies each root by 4 instead of adding 4"
+ },
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The drawn curve crosses at $-3$, $0$, and $2$; replacing $x$ with $x-4$ moves each crossing 4 units right, to $1$, $4$, and $6$.\n\n**The Full Solution:**\nStep 1: Read the three crossings from the figure: $x=-3$, $x=0$, and $x=2$.\nStep 2: The graph of $y=f(x-4)$ is zero when $x-4$ equals one of those values.\nStep 3: Solving $x-4=-3$, $x-4=0$, and $x-4=2$ gives $x=1$, $x=4$, and $x=6$. Check: the three new crossings keep the same spacing, 3 and 2 units apart ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-7$, $-4$, and $-2$): subtracts 4 from each root, shifting the curve left.\n* Choice C ($-3$, $0$, and $2$): leaves the crossings alone, as if $-4$ acted on the output.\n* Choice D ($-12$, $0$, and $8$): multiplies each root by 4 instead of translating.\n\n**Test Day Takeaway:** Replacing $x$ with $x-h$ adds $h$ to every $x$-intercept — set the inner expression equal to each original root."
+}

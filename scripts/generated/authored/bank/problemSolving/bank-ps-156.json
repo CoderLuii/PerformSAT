@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-156",
+  "question": "A paint mixture uses blue paint and white paint in the ratio $2 : 7$ by volume. If a batch of the mixture contains $28$ liters of white paint, how many liters of blue paint does it contain?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$8$"
+    },
+    {
+      "id": "C",
+      "text": "$14$"
+    },
+    {
+      "id": "D",
+      "text": "$98$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "28/7 = 4 is the size of one part; blue is two parts",
+    "C": "halves the white amount (28/2), pairing the wrong ratio number with 28",
+    "D": "inverts the ratio, 28 x 7/2"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Proportion / Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** White is $7$ parts and equals $28$ liters, so one part is $4$ liters; blue is $2$ parts, $2(4) = 8$ liters.\n\n**The Full Solution:**\nStep 1: Set up the proportion $\\frac{\\text{blue}}{\\text{white}} = \\frac{2}{7} = \\frac{b}{28}$.\nStep 2: Cross-multiply: $7b = 56$, so $b = 8$.\nStep 3: Check: $\\frac{8}{28} = \\frac{2}{7}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): The size of one part, $28 \\div 7$; blue is two parts, so this needs to be doubled.\n* Choice C ($14$): Divides $28$ by $2$, pairing the blue ratio number with the white amount.\n* Choice D ($98$): Inverts the ratio, computing $28 \\times \\frac{7}{2}$; blue is the smaller quantity, so the answer must be less than $28$.\n\n**Test Day Takeaway:** Match each ratio number to its own quantity, find the value of one part, and sanity-check which quantity should be larger."
+}

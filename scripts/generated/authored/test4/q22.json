@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
+  "module": 1,
+  "passage": "Each of the cameras ringing the upper deck of a modern arena ______ the positions of the players and the ball dozens of times every second, producing the raw feed from which analysts later reconstruct every play.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "complete"
+      "text": "record"
     },
     {
       "id": "B",
-      "text": "are completing"
+      "text": "are recording"
     },
     {
       "id": "C",
-      "text": "have completed"
+      "text": "have recorded"
     },
     {
       "id": "D",
-      "text": "completes"
+      "text": "records"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The subject is the indefinite pronoun \"Each,\" which takes a singular verb even though the plural \"volunteers\" follows it, so the singular \"completes\" agrees. The plural \"complete\" (A), the plural progressive \"are completing\" (B), and the plural \"have completed\" (C) all disagree with \"Each.\"",
-  "passage": "Each of the volunteers taking part in the long-running sleep study that researchers at the university have organized ______ a detailed diary every morning, recording the time they woke, how rested they felt, and what they had eaten the night before.",
+  "explanation": "**Choice D is correct.** The subject is the singular pronoun \"each,\" so the verb must be the singular \"records.\"\n\n**The Full Solution:**\n- Strip the prepositional phrase: \"Each ... records the positions ...\"\n- \"Of the cameras ringing the upper deck of a modern arena\" modifies \"each\" but does not change its number.\n- \"Each\" is grammatically singular even when it points at many cameras, so it takes \"records.\"\n\n**Why the other choices are wrong:**\n- A: \"Record\" is plural, agreeing with the nearby \"cameras\" rather than with the subject \"each.\"\n- B: \"Are recording\" is likewise plural and mismatches the singular subject.\n- C: \"Have recorded\" is plural, and its completed aspect also clashes with the ongoing \"dozens of times every second.\"",
   "_meta": {
-    "anchor": "sleep-study volunteers; 'each' + singular verb"
-  },
-  "module": 1
+    "anchor": "player-tracking cameras; 'each' + singular verb"
+  }
 }

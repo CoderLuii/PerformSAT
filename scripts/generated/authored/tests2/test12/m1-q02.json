@@ -1,0 +1,29 @@
+{
+  "id": 2,
+  "question": "A wildlife survey found that the trumpeter swan population at a wetland reserve decreased by $20\\%$ between 2018 and 2024. If the 2024 population was $1{,}240$ swans, what was the 2018 population?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$992$"
+    },
+    {
+      "id": "B",
+      "text": "$1{,}260$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}488$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}550$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies the 20% decrease to the 2024 count instead of reversing it: 1240 x 0.80 = 992",
+    "B": "subtracts 20 swans rather than 20 percent, so 1240 + 20 = 1260",
+    "C": "increases the 2024 count by 20% instead of dividing by 0.80: 1240 x 1.20 = 1488"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice D is correct.** A $20\\%$ decrease leaves $80\\%$ of the 2018 count, so $0.80 \\times (\\text{2018 count}) = 1{,}240$, which gives $1{,}240 \\div 0.80 = 1{,}550$ swans.\n\n**The Fast Way (~20s):** The 2024 count is $80\\%$ of the 2018 count, so divide: $1{,}240 \\div 0.8 = 1{,}550$.\n\n**The Full Solution:**\nStep 1: Let $p$ be the 2018 population. A decrease of $20\\%$ means the reserve kept $100\\% - 20\\% = 80\\%$ of it.\nStep 2: Translate: $0.80p = 1{,}240$.\nStep 3: Divide both sides by $0.80$ to get $p = 1{,}550$. Check: $20\\%$ of $1{,}550$ is $310$, and $1{,}550 - 310 = 1{,}240$, the 2024 count. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($992$): takes another $20\\%$ off the 2024 count, $1{,}240 \\times 0.80 = 992$. That moves forward in time again instead of backward.\n* Choice B ($1{,}260$): reads the $20\\%$ as $20$ swans and adds them, giving $1{,}240 + 20 = 1{,}260$. A percent is a fraction of the whole, not a count.\n* Choice C ($1{,}488$): adds $20\\%$ to the smaller number, $1{,}240 \\times 1.20 = 1{,}488$. Undoing a $20\\%$ cut requires dividing by $0.80$, not multiplying by $1.20$.\n\n**Test Day Takeaway:** To undo a percent change, divide by the multiplier that produced it; adding the same percent back always lands short."
+}

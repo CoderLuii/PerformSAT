@@ -6,40 +6,35 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
-  "passage": "Working Group I of the Intergovernmental Panel on Climate Change has summarized observed changes in annual precipitation across latitudinal bands, comparing the period 1981–2020 with the 1961–1990 baseline. A research team analyzing the IPCC's compiled estimates has argued that, although precipitation has risen across most of the latitudinal bands shown, the change has not been uniform: in particular, the tropical northern band runs against the broader pattern, registering a slight decrease while four of the five bands shown rose. The data shown in the table support this characterization because _______",
+  "passage": "Cochineal, a scarlet dye harvested from insects raised on cactus in southern Mexico, was colonial Spanish America's most valuable export after silver, and registered shipments were tallied at the port of Veracruz before the Atlantic crossing. Economic historians examining those tallies alongside European price records have argued that the dye trade's turbulence originated in Europe rather than in Mexico: production, they claim, held roughly steady across the late eighteenth century even as prices in Amsterdam swung sharply with war and peace on the shipping lanes.",
   "questionTable": {
     "type": "table",
-    "caption": "Observed annual precipitation change (% relative to 1961–1990) by latitudinal band, 1981–2020 (IPCC AR6 WG1, Chapter 8)",
+    "caption": "Registered cochineal exports from Veracruz and Amsterdam wholesale prices, five-year averages",
     "headers": [
-      "Latitudinal band",
-      "Change (%)",
-      "Confidence"
+      "Period",
+      "Exports (thousands of pounds per year)",
+      "Amsterdam price (guilders per pound)"
     ],
     "rows": [
       [
-        "60–90°N (high northern)",
-        "+8.2",
-        "high"
+        "1758-1762",
+        "720",
+        "21"
       ],
       [
-        "30–60°N (mid northern)",
-        "+1.7",
-        "medium"
+        "1776-1780",
+        "690",
+        "34"
       ],
       [
-        "0–30°N (tropical northern)",
-        "-0.4",
-        "low"
+        "1781-1785",
+        "710",
+        "19"
       ],
       [
-        "0–30°S (tropical southern)",
-        "+1.1",
-        "medium"
-      ],
-      [
-        "30–60°S (mid southern)",
-        "+2.6",
-        "medium"
+        "1793-1797",
+        "730",
+        "30"
       ]
     ]
   },
@@ -47,21 +42,21 @@
   "choices": [
     {
       "id": "A",
-      "text": "four of the five bands rose relative to baseline, while the tropical northern band, at −0.4%, was the only one to record a decrease."
+      "text": "Exports stayed between 690 and 730 thousand pounds per year across every period shown, while the Amsterdam price swung between 19 and 34 guilders per pound."
     },
     {
       "id": "B",
-      "text": "all five of the bands shown registered increases in precipitation relative to baseline, with the tropical northern band's +8.2% change running ahead of the others."
+      "text": "The Amsterdam price reached its peak of 34 guilders per pound in the period from 1776 to 1780."
     },
     {
       "id": "C",
-      "text": "the high northern band registered the largest percentage increase, +8.2% relative to baseline, more than three times the change recorded for any other band shown."
+      "text": "Registered exports of cochineal were higher in the five-year period from 1793 to 1797 than in any of the three earlier periods for which the table reports shipment figures."
     },
     {
       "id": "D",
-      "text": "across the five bands shown, the recorded change ran from a decrease of −0.4% in the tropical northern band to an increase of +8.2% in the high northern band, a total spread of about 8.6 percentage points between the two extremes."
+      "text": "The Amsterdam price rose whenever exports from Veracruz fell and fell whenever exports rose."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The team's claim has two parts: precipitation rose across most of the bands, and the tropical northern band ran against that pattern with a slight decrease. Only choice A joins both, noting that four of the five bands rose while the tropical northern band, at -0.4 percent, was the lone decrease. Choice C cites only the single largest increase, which cannot show how the bands split. Choice D reports the overall spread of values but not how many bands lie on each side of the baseline. Choice B claims all five bands rose and mistakenly assigns the +8.2 percent figure to the tropical northern band, inverting the very exception the claim depends on."
+  "explanation": "**Choice A is correct.** The claim has two coordinated parts — steady Mexican production, volatile European prices — and A documents both: exports confined to a narrow 690-730 band while prices ranged from 19 to 34 guilders.\n\n**The Full Solution:**\n- Steady production shows in the export column's tight spread (roughly six percent end to end).\n- European turbulence shows in the price column's swings (nearly doubling and falling back).\n- Placing the stable series beside the volatile one is what locates the turbulence in Europe — exactly the argument's structure.\n\n**Why the other choices are wrong:**\n- B: A single price peak shows neither sustained volatility nor anything about production.\n- C: Ranking the export periods works against the claim, which needs exports to be effectively flat, and it ignores prices altogether.\n- D: The table contradicts this tidy inverse rule — between 1781-1785 and 1793-1797, exports rose and the price rose too."
 }

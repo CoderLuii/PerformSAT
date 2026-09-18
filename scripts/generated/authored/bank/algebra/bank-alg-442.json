@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-442",
+ "question": "A flow-control model pairs the equation $4x - ny = 10$ with the equation $nx - 25y = 6$, in which $n$ is a positive constant. For what value of $n$ do these two equations have no common solution?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-10$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$29$"
+  },
+  {
+   "id": "D",
+   "text": "$100$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "is the second root of $n^2 = 100$, ruled out because the problem states $n$ is positive",
+  "C": "adds $4$ and $25$ instead of using their product",
+  "D": "stops at $n^2 = 100$ and reports the square rather than $n$"
+ },
+ "explanation": "**SAT Pattern: Parallel Lines No Solution**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Proportional coefficients give $\\frac{n}{4} = \\frac{25}{n}$, so $n^2 = 100$ and the positive value is $10$.\n\n**The Full Solution:**\nStep 1: No common solution means the coefficients of the two equations are proportional, so $\\frac{n}{4} = \\frac{25}{n}$.\nStep 2: Cross multiplying gives $n^2 = 100$, so $n = 10$ or $n = -10$; only $n = 10$ is positive.\nStep 3: With $n = 10$ the equations become $y = 0.4x - 1$ and $y = 0.4x - 0.24$, which are parallel and distinct. Check: $\\frac{10}{4} = \\frac{25}{10} = 2.5$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-10$): is the second root of $n^2 = 100$, ruled out because the problem states $n$ is positive\n* Choice C ($29$): adds $4$ and $25$ instead of using their product\n* Choice D ($100$): stops at $n^2 = 100$ and reports the square rather than $n$\n\n**Test Day Takeaway:** When the same letter sits in both coefficient slots, the proportion becomes a quadratic; check the sign condition before answering."
+}

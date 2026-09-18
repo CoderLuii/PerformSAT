@@ -6,156 +6,19 @@
  */
 
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { colors, radius } from '../design/tokens';
+import { colors } from '../design/tokens';
 import { MathText } from './MathText';
 import { isGoalAchieved, isCompositeScaleTarget, DEFAULT_GOAL_SCORE } from '../services/selectors/goalProgress';
 import { isBlankAttempt } from '../services/selectors/latestTestStats';
 import './TestResults.css';
 import { ChartBarIcon, ArrowRightIcon, BookOpenIcon, PencilIcon, BrainIcon, SearchIcon, PinIcon } from '../design/icons';
 import Avatar, { AVATAR_SIZES } from './ui/Avatar';
-import {
-  scoreTest, isAnswerCorrect, estimatePercentile,
-  inferDomain, SAT_MATH_DOMAINS, DOMAIN_DISPLAY_NAMES,
-  adaptDiagnosticForUI, mergeAiIntoReport, buildUnifiedReport, buildNarrativeFlow,
-} from '../services/scoring';
+import { scoreTest, isAnswerCorrect, estimatePercentile, adaptDiagnosticForUI, mergeAiIntoReport, buildUnifiedReport, buildNarrativeFlow } from '../services/scoring';
 import { getDomainInfo } from '../data/skillTaxonomy';
 import { buildDomainSkillTable } from '../services/selectors/domainSkillTable';
-import { buildScannable, emphasizeNumbers } from '../services/scoring/scannableProse';
+import { buildScannable } from '../services/scoring/scannableProse';
 import QuestionInsightCard from './QuestionInsightCard';
-
-/**
- * Render one paragraph of prose with its numeric phrases bolded — the
- * deciding words of a diagnosis pop without breaking the sentence.
- */
-function EmphasizedProse({ text }) {
-  const segs = emphasizeNumbers(text);
-  if (segs.length === 0) return null;
-  return segs.map((s, i) => s.bold
-    ? <strong key={i} style={{ fontWeight: 700, color: 'var(--color-slate-900)' }}><MathText>{s.text}</MathText></strong>
-    : <MathText key={i}>{s.text}</MathText>);
-}
-
-/**
- * Scannable finding: the first sentence renders as a bold lead the eye can
- * catch, the remaining sentences follow as short paragraphs with numbers
- * bolded inline. Same words, scannable shape (2026-07-19 layout ruling —
- * the diagnosis follows the tutor's TUTOR_LAYOUT, never book paragraphs).
- */
-function ScannableProse({ text, leadSize = '1.0625rem', bodySize = '1rem' }) {
-  const s = buildScannable(text);
-  if (!s) return null;
-  return (
-    <div>
-      {s.lead && (
-        <p style={{
-          fontSize: leadSize, fontWeight: 650,
-          color: 'var(--trx-text)', lineHeight: '1.55', margin: 0,
-        }}>
-          <MathText>{s.lead}</MathText>
-        </p>
-      )}
-      {s.rest.map((para, i) => (
-        <p key={i} style={{
-          fontSize: bodySize, fontWeight: 400,
-          color: 'var(--trx-text-2)', lineHeight: '1.65',
-          margin: 0, marginTop: (i === 0 && !s.lead) ? 0 : i === 0 ? '8px' : '10px',
-        }}>
-          <EmphasizedProse text={para} />
-        </p>
-      ))}
-    </div>
-  );
-}
-
-const canonKey = (t) => (t || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-
-/** Short cost stat from an estimatedImpact string ("~30 points" → "~30 pts"). */
-function shortCost(impact) {
-  const m = String(impact || '').match(/([~≈+\-]?\d[\d,]*(?:\s*[-–]\s*\d[\d,]*)?)\s*(?:points?|pts)/i);
-  return m ? `${m[1]} pts` : null;
-}
-
-/** Semicolon-cited evidence → up to 4 short data pills. */
-function evidencePills(evidence) {
-  if (!evidence || typeof evidence !== 'string') return [];
-  return evidence.split(';')
-    .map(s => s.trim().replace(/[.]$/, ''))
-    .filter(s => s.length > 1)
-    .slice(0, 4)
-    .map(s => (s.length > 64 ? `${s.slice(0, 61)}…` : s));
-}
-
-/**
- * One diagnosis finding as a structured card (2026-07-19, third round of
- * layout feedback — "still paragraph reading"): the AI already returns each
- * insight as claim + mechanism + impact + evidence citations, so render
- * those FIELDS in the trx design language — headline, short story, a "Why"
- * rule, a Bricolage cost stat, and the citations as data pills — instead of
- * flattening them back into prose. Voice untouched; structure visible.
- */
-function FindingCard({ point, index }) {
-  const isStructured = typeof point === 'object' && point !== null;
-  const claim = (isStructured ? (point.text || '') : String(point || '')).replace(/^(\(\d+\)|\d+\.)\s*/, '');
-  if (!claim.trim()) return null;
-
-  const s = buildScannable(claim) || { lead: null, rest: [claim] };
-  const cost = isStructured ? shortCost(point.estimatedImpact) : null;
-  const pills = isStructured ? evidencePills(point.evidence) : [];
-  const mech = isStructured ? String(point.causalMechanism || '').trim() : '';
-  const mechDistinct = mech.length > 15
-    && !canonKey(claim).includes(canonKey(mech).slice(0, 40))
-    && !canonKey(mech).includes(canonKey(claim).slice(0, 40));
-
-  return (
-    <div className="trx-card trx-finding">
-      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '16px' }}>
-        <div style={{ minWidth: 0, flex: 1 }}>
-          {index != null && (
-            <span style={{
-              display: 'inline-grid', placeItems: 'center', width: '24px', height: '24px', borderRadius: '8px',
-              background: 'var(--trx-purple-tint)', color: 'var(--trx-purple)',
-              fontFamily: 'var(--trx-display)', fontWeight: 700, fontSize: '13px', marginBottom: '10px',
-            }}>{index}</span>
-          )}
-          {s.lead ? (
-            <p style={{ fontSize: '16.5px', fontWeight: 700, color: 'var(--trx-text)', lineHeight: 1.45, margin: 0 }}>
-              <MathText>{s.lead}</MathText>
-            </p>
-          ) : null}
-          {s.rest.map((para, i) => (
-            <p key={i} style={{ fontSize: '14.5px', fontWeight: 400, color: 'var(--trx-text-2)', lineHeight: 1.6, margin: 0, marginTop: (i === 0 && !s.lead) ? 0 : '8px' }}>
-              <EmphasizedProse text={para} />
-            </p>
-          ))}
-        </div>
-        {cost && (
-          <div style={{ flex: 'none', textAlign: 'right' }}>
-            <div style={{ fontFamily: 'var(--trx-display)', fontWeight: 700, fontSize: '22px', lineHeight: 1, color: 'var(--trx-orange)', whiteSpace: 'nowrap', fontVariantNumeric: 'tabular-nums' }}>{cost}</div>
-            <div style={{ fontWeight: 700, fontSize: '9.5px', letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--trx-text-3)', marginTop: '5px' }}>est. cost</div>
-          </div>
-        )}
-      </div>
-      {mechDistinct && (
-        <p style={{ margin: '12px 0 0', paddingLeft: '12px', borderLeft: '2.5px solid rgba(124,92,199,.35)', fontSize: '14px', color: 'var(--trx-text-2)', lineHeight: 1.55 }}>
-          <strong style={{ fontWeight: 700, color: 'var(--trx-text)' }}>Why: </strong>
-          <MathText>{mech}</MathText>
-        </p>
-      )}
-      {pills.length > 0 && (
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '14px' }}>
-          {pills.map((pill, i) => (
-            <span key={i} style={{
-              fontSize: '11.5px', fontWeight: 600, fontVariantNumeric: 'tabular-nums',
-              padding: '4px 9px', borderRadius: '7px',
-              background: 'var(--trx-surface-2)', border: '1px solid var(--trx-line)', color: 'var(--trx-text-2)',
-              whiteSpace: 'nowrap',
-            }}>{pill}</span>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
+import { EmphasizedProse, ScannableProse, FindingCard, SectionHeader, canonKey } from './results/ReportPieces';
 
 /**
  * Resolve the scores to DISPLAY on the results screen. Prefers the authoritative
@@ -194,278 +57,9 @@ export function resolveDisplayScores(storedResult, fallbackScored) {
 // its only call sites were the per-skill expansion rows.)
 
 // Donut Chart Component for difficulty breakdown
-const DonutChart = ({ correct, incorrect, unanswered, label, size = 100 }) => {
-  const total = correct + incorrect + unanswered;
-  if (total === 0) return null;
-
-  const chartRadius = 40;
-  const circumference = 2 * Math.PI * chartRadius;
-
-  const correctPct = (correct / total) * 100;
-  const incorrectPct = (incorrect / total) * 100;
-  const unansweredPct = (unanswered / total) * 100;
-
-  const correctDash = (correctPct / 100) * circumference;
-  const incorrectDash = (incorrectPct / 100) * circumference;
-  const unansweredDash = (unansweredPct / 100) * circumference;
-
-  const correctOffset = 0;
-  const incorrectOffset = -correctDash;
-  const unansweredOffset = -(correctDash + incorrectDash);
-
-  return (
-    <div style={{ textAlign: 'center' }}>
-      <svg width={size} height={size} viewBox="0 0 100 100">
-        {/* Background circle */}
-        <circle
-          cx="50"
-          cy="50"
-          r={chartRadius}
-          fill="none"
-          stroke={colors.surface.grayDark}
-          strokeWidth="12"
-        />
-        {/* Unanswered (gray) - draw first as base */}
-        {unanswered > 0 && (
-          <circle
-            cx="50"
-            cy="50"
-            r={chartRadius}
-            fill="none"
-            stroke={colors.text.muted}
-            strokeWidth="12"
-            strokeDasharray={`${unansweredDash} ${circumference}`}
-            strokeDashoffset={unansweredOffset}
-            transform="rotate(-90 50 50)"
-          />
-        )}
-        {/* Incorrect (red) */}
-        {incorrect > 0 && (
-          <circle
-            cx="50"
-            cy="50"
-            r={chartRadius}
-            fill="none"
-            stroke={colors.semantic.error}
-            strokeWidth="12"
-            strokeDasharray={`${incorrectDash} ${circumference}`}
-            strokeDashoffset={incorrectOffset}
-            transform="rotate(-90 50 50)"
-          />
-        )}
-        {/* Correct (green) - draw last on top */}
-        {correct > 0 && (
-          <circle
-            cx="50"
-            cy="50"
-            r={chartRadius}
-            fill="none"
-            stroke={colors.semantic.success}
-            strokeWidth="12"
-            strokeDasharray={`${correctDash} ${circumference}`}
-            strokeDashoffset={correctOffset}
-            transform="rotate(-90 50 50)"
-          />
-        )}
-      </svg>
-      <p style={{
-        fontWeight: '600',
-        fontSize: '14px',
-        color: colors.text.secondary,
-        marginTop: '8px'
-      }}>
-        {label}
-      </p>
-    </div>
-  );
-};
-
 // Score Badge Component with progress bar
-const ScoreBadge = ({ score, maxScore, size = 'large' }) => {
-  const percentage = (score / maxScore) * 100;
-  const isLarge = size === 'large';
-
-  return (
-    <div style={{
-      display: 'flex',
-      alignItems: 'center',
-      gap: isLarge ? '24px' : '16px',
-      justifyContent: 'center'
-    }}>
-      {/* Score circle */}
-      <div style={{
-        width: isLarge ? '100px' : '70px',
-        height: isLarge ? '100px' : '70px',
-        borderRadius: radius.full,
-        background: colors.accent.teal,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: colors.text.inverse,
-        fontSize: isLarge ? '32px' : '22px',
-        fontWeight: '700',
-        boxShadow: '0 4px 12px rgba(13, 148, 136, 0.3)'
-      }}>
-        {score}
-      </div>
-
-      {/* Progress bar */}
-      <div style={{ flex: 1, maxWidth: isLarge ? '300px' : '200px' }}>
-        <div style={{
-          height: isLarge ? '12px' : '8px',
-          background: colors.surface.grayDark,
-          borderRadius: '6px',
-          overflow: 'hidden',
-          position: 'relative'
-        }}>
-          <div style={{
-            width: `${percentage}%`,
-            height: '100%',
-            background: colors.accent.teal,
-            borderRadius: '6px',
-            transition: 'width 0.5s ease-out'
-          }} />
-        </div>
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          marginTop: '4px',
-          fontSize: isLarge ? '13px' : '11px',
-          color: colors.text.secondary
-        }}>
-          <span>{isLarge ? '400' : '200'}</span>
-          <span>{maxScore}</span>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 // Domain Bar Component — shows per-domain accuracy percentage
-const DomainBar = ({ domain, correct, total }) => {
-  const displayName = DOMAIN_DISPLAY_NAMES[domain] || domain;
-  const accuracyPct = total > 0 ? Math.round((correct / total) * 100) : 0;
-  const barColor = accuracyPct >= 70 ? colors.semantic.success
-    : accuracyPct >= 40 ? 'var(--color-warning-600)'
-    : colors.semantic.error;
-
-  return (
-    <div style={{
-      display: 'flex',
-      alignItems: 'center',
-      gap: '16px',
-      marginBottom: '12px'
-    }}>
-      <span style={{
-        width: '220px',
-        fontSize: '14px',
-        color: colors.text.secondary,
-        flexShrink: 0
-      }}>
-        {displayName}
-      </span>
-      <div style={{
-        flex: 1,
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px'
-      }}>
-        <div style={{
-          flex: 1,
-          height: '24px',
-          background: colors.surface.grayDark,
-          borderRadius: '4px',
-          overflow: 'hidden'
-        }}>
-          <div style={{
-            width: `${accuracyPct}%`,
-            height: '100%',
-            background: barColor,
-            borderRadius: '4px',
-            transition: 'width 0.3s ease'
-          }} />
-        </div>
-        <span style={{
-          fontWeight: '700',
-          fontSize: '14px',
-          color: colors.text.secondary,
-          minWidth: '52px',
-          textAlign: 'right',
-          fontVariantNumeric: 'tabular-nums'
-        }}>
-          {accuracyPct}%
-        </span>
-        <span style={{
-          fontSize: '12px',
-          color: colors.text.muted,
-          minWidth: '36px',
-          textAlign: 'right',
-          fontVariantNumeric: 'tabular-nums'
-        }}>
-          {correct}/{total}
-        </span>
-      </div>
-    </div>
-  );
-};
-
 // Legend Component for donut charts
-const DonutLegend = () => (
-  <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '24px',
-    marginTop: '16px',
-    fontSize: '12px'
-  }}>
-    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-      <div style={{ width: '12px', height: '12px', background: colors.semantic.success, borderRadius: '2px' }} />
-      <span style={{ color: colors.text.secondary }}>Correct</span>
-    </div>
-    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-      <div style={{ width: '12px', height: '12px', background: colors.semantic.error, borderRadius: '2px' }} />
-      <span style={{ color: colors.text.secondary }}>Incorrect</span>
-    </div>
-    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-      <div style={{ width: '12px', height: '12px', background: colors.text.muted, borderRadius: '2px' }} />
-      <span style={{ color: colors.text.secondary }}>Unanswered</span>
-    </div>
-  </div>
-);
-
-// Reusable Section Header Component. `deck` is an optional one-line editorial
-// subtitle under the header — it tells the student what this section IS
-// before they read it, which is most of what "organized" feels like.
-const SectionHeader = ({ number, title, deck }) => (
-  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: deck ? '24px' : '32px' }}>
-  <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-    <div style={{
-      width: '28px', height: '28px', borderRadius: '50%',
-      background: 'var(--color-brand-primary)', color: '#fff',
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      fontSize: '13px', fontWeight: '800', flexShrink: 0
-    }}>
-      {number}
-    </div>
-    <h2 style={{
-      fontFamily: 'var(--font-ui)', fontSize: '15px', fontWeight: '800',
-      color: 'var(--color-slate-800)', textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0
-    }}>
-      {title}
-    </h2>
-    <div style={{ flex: 1, height: '1px', background: 'var(--color-slate-200)' }} />
-  </div>
-  {deck && (
-    <p style={{
-      fontFamily: 'var(--font-ui)', fontSize: '14px', fontStyle: 'italic',
-      color: 'var(--color-slate-500)', lineHeight: '1.5', margin: 0, paddingLeft: '44px',
-    }}>
-      {deck}
-    </p>
-  )}
-  </div>
-);
-
 const CollapsibleSection = ({ icon, iconBg, iconColor, label, expanded, onToggle, children }) => (
   <div style={{
     background: '#ffffff', borderRadius: 'var(--radius-xl)',
@@ -524,9 +118,12 @@ const TestResults = ({
   saveStatus = null,
   onRetrySave = null,
   onBack,
+  backLabel = 'Back to Tests',
   onRetake,
   onReview,
-  onReviewModule,
+  // 'summary' = the score overview; 'diagnosis' = the AI diagnosis screen.
+  screen = 'summary',
+  onViewDiagnosis = null,
   // Opt-in: launch a targeted drill on one weak skill through the app's
   // 3-tier drill router (passes exact missedPatterns). Only wired on the
   // past-results mount — the completion screen (test runner) leaves it
@@ -536,15 +133,7 @@ const TestResults = ({
   savedStudyPlan,
   user,
 }) => {
-  const [activeTab, setActiveTab] = useState('summary');
-  const [expandedWeakness, setExpandedWeakness] = useState(0);
-  const [showImpact, setShowImpact] = useState(false);
-  const [showProof, setShowProof] = useState(false);
-  const [showNarrativeDetails, setShowNarrativeDetails] = useState(false);
-  const [showBehaviorDetail, setShowBehaviorDetail] = useState(false);
   const [showEvidenceDetail, setShowEvidenceDetail] = useState(false);
-  const [activeDomainTab, setActiveDomainTab] = useState(null);
-  const [showQuestionInsights, setShowQuestionInsights] = useState(false);
   // Domains & Skills block: which domain rows are expanded to their skills.
   // Keyed `${section}:${domainId}`. Collapsed by default (empty set).
   const [diagEntrance, setDiagEntrance] = useState(true);
@@ -590,7 +179,6 @@ const TestResults = ({
   // AI diagnostic comes pre-populated from PracticeTest's auto-generation pipeline
   const aiStatus = aiDiagnosticState?.status || 'idle';
   const aiNarrative = aiDiagnosticState?.narrative || null;
-  const aiError = aiDiagnosticState?.error || null;
 
   // Calculate scores
   const calculateModuleScore = (moduleIndex) => {
@@ -638,32 +226,6 @@ const TestResults = ({
   };
 
   // Calculate domain breakdown for a module using the shared inferDomain helper
-  const calculateDomainBreakdown = (moduleIndex) => {
-    const module = test.modules[moduleIndex];
-    const domains = {};
-    SAT_MATH_DOMAINS.forEach(d => { domains[d] = { correct: 0, total: 0 }; });
-
-    // Math-domain axis only: R&W items carry R&W skill ids that inferDomain
-    // can't map (they'd all collapse into the 'algebra' fallback bucket), so
-    // R&W modules contribute nothing. All-zero totals keep both render sites'
-    // existing total>0 filters working unchanged.
-    const moduleSection = module.section || (test.section === 'reading-writing' ? 'reading-writing' : 'math');
-    if (moduleSection === 'reading-writing') return domains;
-
-    module.questions.forEach((q, qIdx) => {
-      const key = `${moduleIndex}-${qIdx}`;
-      const userAnswer = answers[key];
-      const domain = inferDomain(q.skills);
-      const isAnswered = userAnswer !== undefined && userAnswer !== null && userAnswer !== '';
-
-      domains[domain].total++;
-      if (isAnswered && isAnswerCorrect(q, userAnswer)) {
-        domains[domain].correct++;
-      }
-    });
-
-    return domains;
-  };
 
   const totalQuestions = test.modules.reduce((sum, m) => sum + m.questions.length, 0);
   const totalCorrect = calculateTotalScore();
@@ -683,15 +245,6 @@ const TestResults = ({
     ? 'Total Score'
     : (test.modules[0]?.section === 'reading-writing' ? 'Reading & Writing Score' : 'Math Score');
 
-  const allQuestionEntries = test.modules.flatMap((mod, modIdx) =>
-    mod.questions.map((q, qIdx) => {
-      const key = `${modIdx}-${qIdx}`;
-      const userAnswer = answers[key];
-      const isAnswered = userAnswer !== undefined && userAnswer !== null && userAnswer !== '';
-      return { key, question: q, isAnswered, isCorrect: isAnswered && isAnswerCorrect(q, userAnswer) };
-    })
-  );
-
   // Header meta: total attempt time ("1h 13m") from telemetry, when present.
   const headerTimeSeconds = Object.values(diagnosticData?.questionDetails || {})
     .reduce((s, q) => s + (q.timeSpent || 0), 0);
@@ -700,23 +253,6 @@ const TestResults = ({
       ? `${Math.floor(headerTimeSeconds / 3600)}h ${Math.round((headerTimeSeconds % 3600) / 60)}m`
       : `${Math.round(headerTimeSeconds / 60)}m`)
     : null;
-
-  // Tab navigation
-  const tabs = [
-    { id: 'summary', label: 'Test Overview' },
-    { id: 'diagnostic', label: 'Diagnostic Insights' },
-    ...test.modules.map((mod, idx) => {
-      const sec = mod.section || (test.section === 'reading-writing' ? 'reading-writing' : 'math');
-      const sectionMods = test.modules.filter(m => (m.section || test.section) === sec);
-      const idxWithinSection = sectionMods.indexOf(mod) + 1;
-      const prefix = sec === 'reading-writing' ? 'R&W' : 'Math';
-      return {
-        id: `module-${idx}`,
-        label: `${prefix}: Module ${idxWithinSection}`,
-      };
-    })
-  ];
-
 
   // ── Domains & Skills: one organized, expandable Math / R&W → domain → skill
   // accuracy block. Folds the old math-only "Domain Performance" bars and the
@@ -887,7 +423,6 @@ const TestResults = ({
     // would inflate "improvement from first" and chart on the trajectory.
     const testHistory = practiceTestResults?.[test.id];
     const attempts = (testHistory?.attempts || []).filter(a => !isBlankAttempt(a));
-    const pastAttempts = attempts.filter(a => a.scaledScore !== satScore || a.completedAt !== attempts[attempts.length - 1]?.completedAt);
     const hasHistory = attempts.length > 1;
     const bestScore = testHistory?.bestScaledScore || satScore;
     // attempts is newest-first after Firestore hydration (trimAttempts sorts
@@ -986,11 +521,16 @@ const TestResults = ({
             </div>
           </div>
           <div style={{ position: 'relative', display: 'flex', gap: '12px', marginTop: '24px', paddingTop: '22px', borderTop: '1px solid rgba(255,255,255,.1)', flexWrap: 'wrap' }}>
-            <button className="trx-hero-btn-primary" onClick={onReview}>
-              Review Answers
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            {onViewDiagnosis && (
+              <button className="trx-hero-btn-primary" onClick={onViewDiagnosis}>
+                View diagnosis
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+            )}
+            <button className={onViewDiagnosis ? 'trx-hero-btn-ghost' : 'trx-hero-btn-primary'} onClick={onReview}>
+              Review answers
             </button>
-            <button className="trx-hero-btn-ghost" onClick={onRetake}>Retake</button>
+            {onRetake && <button className="trx-hero-btn-ghost" onClick={onRetake}>Retake</button>}
           </div>
         </div>
 
@@ -1288,122 +828,6 @@ const TestResults = ({
     );
   };
 
-  const renderModuleSummary = (moduleIndex) => {
-    const module = test.modules[moduleIndex];
-    const difficultyBreakdown = calculateDifficultyBreakdown(moduleIndex);
-    const domainBreakdown = calculateDomainBreakdown(moduleIndex);
-    const moduleScore = calculateModuleScore(moduleIndex);
-
-    // Domain accuracy is now percentage-based; no max scaling needed.
-
-    // Label the module by its own section, numbered within that section — so a
-    // full SAT reads "Math: Module 1", never "Math: Module 3" (continuous count).
-    const sec = module.section || (test.section === 'reading-writing' ? 'reading-writing' : 'math');
-    const sectionMods = test.modules.filter(m => (m.section || test.section) === sec);
-    const idxWithinSection = sectionMods.indexOf(module) + 1;
-    const sectionLabel = sec === 'reading-writing' ? 'Reading & Writing' : 'Math';
-
-    return (
-      <div className="mod-summary-container">
-        {/* Module Header */}
-        <div className="mod-summary-header">
-          <div>
-            <h2 className="mod-summary-title">{sectionLabel}: Module {idxWithinSection}</h2>
-            <div className="mod-summary-subtitle">Performance breakdown and accuracy insights</div>
-          </div>
-          <button
-            onClick={() => onReviewModule ? onReviewModule(moduleIndex) : onReview()}
-            className="mod-action-btn"
-          >
-            Review Answers
-            <ArrowRightIcon size={16} color="#fff" />
-          </button>
-        </div>
-
-        {/* Score Snapshot */}
-        <div className="mod-summary-card" style={{ padding: '24px 32px', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div>
-            <h3 className="mod-summary-card-title">Module Score</h3>
-            <div style={{ fontFamily: 'var(--font-ui)', fontSize: '14px', color: 'var(--color-slate-500)', marginTop: '4px' }}>Total correct answers</div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
-            <span className="mod-summary-score-val">
-              {moduleScore.correct}/{moduleScore.total}
-            </span>
-          </div>
-        </div>
-
-        {/* Difficulty Breakdown */}
-        <div className="mod-summary-card">
-          <div>
-            <h3 className="mod-summary-card-title">Accuracy by Difficulty</h3>
-            <div style={{ fontFamily: 'var(--font-ui)', fontSize: '14px', color: 'var(--color-slate-500)', marginTop: '4px' }}>How you performed across different question levels</div>
-          </div>
-
-          <div className="mod-summary-donuts">
-            <DonutChart
-              correct={difficultyBreakdown.easy.correct}
-              incorrect={difficultyBreakdown.easy.incorrect}
-              unanswered={difficultyBreakdown.easy.unanswered}
-              label="Easy"
-            />
-            <DonutChart
-              correct={difficultyBreakdown.medium.correct}
-              incorrect={difficultyBreakdown.medium.incorrect}
-              unanswered={difficultyBreakdown.medium.unanswered}
-              label="Medium"
-            />
-            <DonutChart
-              correct={difficultyBreakdown.hard.correct}
-              incorrect={difficultyBreakdown.hard.incorrect}
-              unanswered={difficultyBreakdown.hard.unanswered}
-              label="Hard"
-            />
-          </div>
-
-          <DonutLegend />
-        </div>
-
-        {/* Domain Breakdown — math modules only: the content-domain axis is
-            the four SAT MATH domains, so it has nothing to say on an R&W tab. */}
-        {sec !== 'reading-writing' && (
-          <div className="mod-summary-card">
-            <div>
-              <h3 className="mod-summary-card-title">Accuracy by Content Domain</h3>
-              <div style={{ fontFamily: 'var(--font-ui)', fontSize: '14px', color: 'var(--color-slate-500)', marginTop: '4px' }}>Your performance across the four SAT Math areas</div>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '8px' }}>
-              {/* Stable SAT domain order */}
-              {SAT_MATH_DOMAINS.map(domainId => {
-                const data = domainBreakdown[domainId];
-                if (!data || data.total === 0) return null;
-                return (
-                  <DomainBar
-                    key={domainId}
-                    domain={domainId}
-                    correct={data.correct}
-                    total={data.total}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        )}
-
-        {/* Back to Summary */}
-        <div style={{ textAlign: 'center', marginTop: '8px' }}>
-          <button
-            onClick={() => setActiveTab('summary')}
-            className="mod-back-btn"
-          >
-            Back to Test Overview
-          </button>
-        </div>
-      </div>
-    );
-  };
-
   const renderDiagnosticView = () => {
     if (!diagUI) {
       return (
@@ -1434,19 +858,7 @@ const TestResults = ({
     const narrative = buildNarrativeFlow(uni);
     if (!narrative) return null;
 
-    const { blocks, details, meta } = narrative;
-
-    // Use Acely/PerformSAT primary orange brand colors
-    const aiGradient = 'linear-gradient(135deg, var(--color-brand-orange-500) 0%, var(--color-brand-orange-600) 100%)';
-    const aiGradientGlow = 'rgba(251, 146, 60, 0.25)'; // orange-400
-    const aiColorText = 'var(--color-brand-orange-600)';
-
-    const sevColors = {
-      critical:    { bg: 'var(--color-error-100)', border: 'rgba(239,68,68,0.2)', dot: 'var(--color-error-600)' },
-      significant: { bg: 'rgba(239,68,68,0.04)', border: 'rgba(239,68,68,0.1)', dot: 'var(--color-error-600)' },
-      moderate:    { bg: 'var(--color-warning-100)', border: 'rgba(245,158,11,0.2)', dot: 'var(--color-warning-600)' },
-      warning:     { bg: 'rgba(245,158,11,0.04)', border: 'rgba(245,158,11,0.1)', dot: 'var(--color-warning-600)' },
-    };
+    const { blocks, meta } = narrative;
 
     const renderBlock = (block, idx) => {
       if (block.id === 'context') {
@@ -1810,35 +1222,12 @@ const TestResults = ({
     };
 
     const getBlock = (id) => blocks.find(b => b.id === id);
-    const hasDetails = (details.overflowDiagnosis && details.overflowDiagnosis.length > 0) || details.uncertainties || details.qualityFailed;
-
-    const hasWhatHappened = getBlock('context') || getBlock('behaviorAmplifier');
     const hasEvidence = getBlock('evidence');
-    const hasAction = getBlock('nextMove');
-    let stepCounter = 0;
 
     // ─── Extract the #1 hero finding from context block (skip score restatements) ───
     const contextBlock = getBlock('context');
     const contextItems = contextBlock?.items || [];
     const scoreRestateRe = /^(you scored|you're scoring|your score|you got \d+\/|you are \d+ points|your percentile|scoring at the \d+)/i;
-    const heroItem = contextItems.find(item => {
-      const text = typeof item === 'string' ? item : item?.text || '';
-      return text.length > 0 && !scoreRestateRe.test(text.trim());
-    }) || contextItems[0] || null;
-    const heroIdx = heroItem ? contextItems.indexOf(heroItem) : 0;
-    const heroText = heroItem ? (typeof heroItem === 'string' ? heroItem : heroItem.text || '') : '';
-    const heroCause = heroItem?.causalMechanism || null;
-    const heroImpact = heroItem?.estimatedImpact || null;
-    const additionalFindings = contextItems.filter((_, i) => i !== heroIdx);
-
-    // Compute total recoverable points
-    const remPathBlock = getBlock('remediationPath');
-    const totalRecoverable = (remPathBlock?.items || [])
-      .reduce((sum, item) => sum + (item.estimatedGain || 0), 0);
-
-    // MetaStrip stats
-    const metaBlock = getBlock('metaStrip');
-    const metaStats = metaBlock?.items || [];
 
     // All context items are diagnosis findings (no prescriptive content)
     const allFindings = contextItems.filter(item => {
@@ -1915,11 +1304,6 @@ const TestResults = ({
     const easyWinsPts = easyMissed * 10;
     
     const weakestDomName = sortedDomains.length > 0 ? sortedDomains[0].name : 'Algebra';
-
-    const testHistory = practiceTestResults?.[test.id];
-    const attempts = (testHistory?.attempts || []).filter(a => !isBlankAttempt(a));
-    const firstAttemptScore = attempts.length > 0 ? attempts[0].scaledScore : satScore;
-    const recentTrend = satScore - firstAttemptScore;
 
     return (
       <div style={{ padding: '0 0 48px', display: 'flex', flexDirection: 'column', gap: '32px' }}>
@@ -2265,7 +1649,7 @@ const TestResults = ({
           onMouseLeave={e => { e.currentTarget.style.color = colors.text.secondary; e.currentTarget.style.background = 'none'; }}
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
-          Back to Tests
+          {backLabel}
         </button>
       </div>
 
@@ -2297,7 +1681,7 @@ const TestResults = ({
               lineHeight: 1.05,
               margin: 0,
             }}>
-              {user?.firstName ? `${user.firstName}'s results — ${test.title}` : test.title}
+              {user?.firstName ? `${user.firstName}'s ${screen === 'diagnosis' ? 'diagnosis' : 'results'} — ${test.title}` : test.title}
             </h1>
             <div style={{ fontSize: '13.5px', color: 'var(--trx-text-2)', marginTop: '4px' }}>
               Completed {new Date(test.completedAt || Date.now()).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
@@ -2308,27 +1692,11 @@ const TestResults = ({
         </div>
       </div>
 
-      {/* Tab Navigation — underline style from the 07-19 mockup */}
-      <div className="trx-tabs">
-        {tabs.map(tab => (
-          <button
-            key={tab.id}
-            className={`trx-tab${activeTab === tab.id ? ' on' : ''}`}
-            onClick={() => setActiveTab(tab.id)}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
-
-      {/* Content Area */}
+      {/* One screen at a time: the score overview, or the AI diagnosis. */}
       <div>
-        {activeTab === 'summary'
-          ? renderSummaryView()
-          : activeTab === 'diagnostic'
+        {screen === 'diagnosis'
           ? <div className={`diagnostic-ui${diagEntrance ? ' diag-entrance' : ''}`}>{renderDiagnosticView()}</div>
-          : renderModuleSummary(parseInt(activeTab.split('-')[1]))
-        }
+          : renderSummaryView()}
       </div>
     </div>
   );

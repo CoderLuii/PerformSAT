@@ -1,0 +1,23 @@
+{
+ "id": "bank-geo-250",
+ "question": "A wheelchair ramp rises at a $30°$ angle. The sloped surface of the ramp is the hypotenuse of the right triangle shown and is $16$ feet long. What is the vertical rise, in feet, of the ramp?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "30°",
+    "",
+    "60°"
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "16"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: 30-60-90 Triangle**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~10s):** The vertical rise faces the $30^\\circ$ angle, so it is half the hypotenuse: $\\frac{16}{2} = 8$ feet.\n\n**The Full Solution:**\nStep 1: The ramp, its shadow on the ground, and the vertical rise form a $30$-$60$-$90$ triangle with sides in the ratio $1 : \\sqrt{3} : 2$.\nStep 2: The hypotenuse corresponds to the $2$, so the scale factor is $\\frac{16}{2} = 8$.\nStep 3: The vertical rise is opposite the $30^\\circ$ angle, so it corresponds to the $1$ and measures $8$ feet. Check: the horizontal run is $8\\sqrt{3} \\approx 13.9$ feet, and $8^2 + (8\\sqrt{3})^2 = 64 + 192 = 256 = 16^2$.\n\n**Common Mistakes:** Reporting $32$ by doubling the hypotenuse instead of halving it; or reporting the horizontal run $8\\sqrt{3}$, the side opposite the $60^\\circ$ angle, which is not what the question asks for.\n\n**Test Day Takeaway:** Identify which angle a side faces before scaling. The side opposite $30^\\circ$ is always half the hypotenuse."
+}

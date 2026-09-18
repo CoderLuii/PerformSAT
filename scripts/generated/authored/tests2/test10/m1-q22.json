@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "Sliced mango loses 25 percent of its mass in a first drying pass, then reabsorbs moisture equal to 20 percent of its dried mass while conditioning. A conditioned batch has a mass of 630 grams. What was the batch's mass, in grams, before drying?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$525$"
+  },
+  {
+   "id": "B",
+   "text": "$567$"
+  },
+  {
+   "id": "C",
+   "text": "$700$"
+  },
+  {
+   "id": "D",
+   "text": "$840$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "undoes only the 20 percent moisture gain, computing 630 divided by 1.2",
+  "B": "multiplies 630 by 0.9 instead of dividing by 0.9",
+  "D": "undoes only the 25 percent loss, computing 630 divided by 0.75"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice C is correct.** Losing $25\\%$ multiplies the mass by $0.75$, and reabsorbing $20\\%$ of that dried mass multiplies by $1.20$. Together the mass is multiplied by $0.75 \\times 1.20 = 0.90$, so the original mass is $\\frac{630}{0.90} = 700$ grams.\n\n**The Fast Way (~30s):** The two steps combine to a single factor of $0.9$, and $\\frac{630}{0.9} = 700$ grams.\n\n**The Full Solution:**\nStep 1: Let $m$ be the mass before drying. Drying leaves $75\\%$ of it: $0.75m$ grams.\nStep 2: Conditioning adds moisture equal to $20\\%$ of the dried mass, multiplying by $1.20$: $0.75m \\times 1.20 = 0.90m$ grams.\nStep 3: Set $0.90m = 630$ and divide: $m = \\frac{630}{0.90} = 700$ grams. Check: $700 \\times 0.75 = 525$, and $525 \\times 1.20 = 630$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($525$): computes $\\frac{630}{1.2}$, undoing only the conditioning gain. That is the dried mass, one step short of the answer.\n* Choice B ($567$): multiplies by $0.9$ instead of dividing, moving forward through the process rather than backward.\n* Choice D ($840$): computes $\\frac{630}{0.75}$, undoing only the drying loss and ignoring the $20\\%$ gain.\n\n**Test Day Takeaway:** Chain percent changes into one multiplier, then divide to run the chain backward. A $25\\%$ drop followed by a $20\\%$ rise is a net $10\\%$ drop, not a wash."
+}

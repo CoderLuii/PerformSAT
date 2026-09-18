@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-377",
+  "question": "A dance company replaces the fog-machine model $b$, which gives the fog output, in grams per minute, at a dial setting of $x$, with a model that returns half of $b$'s value at every setting. Which function models the new output?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$b(0.5x)$"
+    },
+    {
+      "id": "B",
+      "text": "$0.5b(x)$"
+    },
+    {
+      "id": "C",
+      "text": "$b(x)-0.5$"
+    },
+    {
+      "id": "D",
+      "text": "$b(x-0.5)$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "halves the dial setting rather than the fog output",
+    "C": "subtracts 0.5 gram per minute from the output instead of halving it",
+    "D": "shifts the dial setting by 0.5 instead of scaling the output"
+  },
+  "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Half of the output means the whole function value is multiplied by $0.5$, giving $0.5b(x)$.\n\n**The Full Solution:**\nStep 1: The new model changes the fog output, which is the output, not the dial setting, which is the input.\nStep 2: A change to every output is written outside the function.\nStep 3: Multiplying the output by $0.5$ gives $0.5b(x)$. Check: if $b(4)=120$ grams per minute, the new model gives 60 grams per minute at the same setting ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($b(0.5x)$): halves the dial setting, which changes which output is read, not the output itself.\n* Choice C ($b(x)-0.5$): subtracts half a gram per minute instead of halving the value.\n* Choice D ($b(x-0.5)$): shifts the dial setting rather than scaling the output.\n\n**Test Day Takeaway:** Ask which quantity changed — outputs are altered outside the parentheses, inputs inside."
+}

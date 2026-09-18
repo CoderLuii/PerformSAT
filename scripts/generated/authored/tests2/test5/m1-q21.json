@@ -1,0 +1,40 @@
+{
+ "id": 21,
+ "question": "The figure shows a triangular display stand in a bookstore, with the measure of each interior angle written in terms of the constant $x$. The three measures are given in degrees. By how many degrees does the largest of the three measures exceed the smallest?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "(3x + 10)°",
+    "(2x - 5)°",
+    "(x + 55)°"
+   ],
+   "note": "Note: Figure not drawn to scale."
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$20$"
+  },
+  {
+   "id": "C",
+   "text": "$35$"
+  },
+  {
+   "id": "D",
+   "text": "$40$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the two largest angles, 75 - 70 = 5, instead of the largest and the smallest",
+  "B": "reports the value of x rather than a difference of angle measures",
+  "C": "reports the smallest angle measure, 35 degrees, without subtracting"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** The three measures sum to $180$, so $6x + 60 = 180$ and $x = 20$; the angles are $70$, $35$, and $75$, and $75 - 35 = 40$.\n\n**The Full Solution:**\nStep 1: The interior angles of a triangle sum to $180^\\circ$: $(3x + 10) + (2x - 5) + (x + 55) = 180$.\nStep 2: Combine like terms: $6x + 60 = 180$, so $6x = 120$ and $x = 20$.\nStep 3: Evaluate each expression: $3(20) + 10 = 70$, $2(20) - 5 = 35$, and $20 + 55 = 75$. The largest measure is $75^\\circ$ and the smallest is $35^\\circ$, so the difference is $75 - 35 = 40$. Check the sum: $70 + 35 + 75 = 180$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): subtracts $70$ from $75$, the two LARGEST angles. The expression with the biggest coefficient, $3x + 10$, looks like it should be the largest angle, but at $x = 20$ it is only the middle one.\n* Choice B ($20$): stops at $x = 20$. Solving for $x$ is the first step, not the answer; $x$ is not itself an angle measure here.\n* Choice C ($35$): reports the smallest angle instead of the difference. The question asks by HOW MANY degrees one exceeds the other, which requires the subtraction.\n\n**Test Day Takeaway:** Solve for the variable, then evaluate every expression before deciding which angle is largest — the biggest coefficient does not decide it. Re-read the final question so you subtract the right pair."
+}

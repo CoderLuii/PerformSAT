@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "inferences",
-  "passage": "At the Neolithic settlement of Catalhoyuk, where mud-brick houses were rebuilt on the same plots over many generations, bioarchaeologists have examined teeth from skeletons in successive layers. In the earliest layers, the molars of adult men and women alike show heavy wear and chipping of the kind that ethnographic comparisons link to grinding coarse grain on stone querns. In the later layers, that pattern persists in women's molars but largely disappears from men's. The most economical reading of the change is that, over these generations, ______",
+  "passage": "A dandelion seed rides beneath a pappus, a parachute-like disk that is mostly empty space: roughly a hundred bristles surrounding nothing. A solid disk of the same size should, by conventional aerodynamics, generate more drag, yet dandelion seeds stay aloft far longer than such reasoning predicts. Wind-tunnel studies supplied the resolution. Air threading the gaps between bristles feeds a stable ring of circulating air just above the pappus — a vortex that lowers the pressure there and adds lift. When researchers reduced the spacing between bristles, the ring destabilized and the extra lift vanished. The pappus's porosity, it appears, is not a compromise between weight and drag but ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "the work of grinding coarse grain had come to fall more heavily on women than it had in the settlement's earliest period."
+      "text": "the very feature that generates the vortex on which the seed's prolonged flight depends."
     },
     {
       "id": "B",
-      "text": "the men of the later settlement had stopped eating the coarse grain that was ground on the stone querns."
+      "text": "a flaw that natural selection has been unable to eliminate from the dandelion's design."
     },
     {
       "id": "C",
-      "text": "the stone querns used for grinding grain had been replaced by tools that left no mark on the teeth."
+      "text": "an adaptation for shedding rainwater that incidentally slows the seed's descent."
     },
     {
       "id": "D",
-      "text": "the women buried in the later layers were close biological relatives of the men buried beside them."
+      "text": "evidence that drag matters less to a drifting seed than overall weight does."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The wear pattern tied to grinding grain stays in women's molars but fades from men's, which most simply indicates that grinding had become women's work to a greater degree than before. Choice B confuses grinding with eating; men could still consume the grain without doing the grinding that wears the teeth. Choice C would predict the pattern to fade in both sexes, not just in men. Choice D introduces a claim about kinship that the dental evidence does not bear on at all."
+  "explanation": "**Choice A is correct.** The experiments tie the porosity to the lift directly: air passing through the gaps sustains the vortex, and closing the gaps destroyed it — so the porosity is the source of the flight advantage, not a trade-off.\n\n**The Full Solution:**\n- The setup poses a puzzle: a mostly-empty disk outperforms what a solid disk should do.\n- The wind-tunnel work locates the mechanism in the gaps themselves — airflow through them feeds the low-pressure vortex — and the bristle-spacing manipulation confirms the dependence: less porosity, no vortex, no extra lift.\n- The sentence's own frame (\"not a compromise... but\") demands a positive completion crediting the porosity, which is exactly choice A.\n\n**Why the other choices are wrong:**\n- B: Calling porosity a flaw inverts the finding that it produces the lift.\n- C: Rainwater is never mentioned, and the vortex evidence makes the flight benefit central, not incidental.\n- D: The passage never weighs drag against weight; it explains how porosity creates lift, a mechanism D ignores."
 }

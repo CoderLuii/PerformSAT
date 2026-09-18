@@ -7,77 +7,94 @@ export const systemsQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "A system of linear equations can have:",
+      question: "The system of equations $y = 3x - 4$ and $y = -x + 8$ is graphed in the $xy$-plane. How many solutions $(x, y)$ does this system have?",
       choices: [
-        { id: "A", text: "Exactly one solution only" },
-        { id: "B", text: "No solution or one solution only" },
-        { id: "C", text: "No solution, one solution, or infinitely many solutions" },
-        { id: "D", text: "Two solutions" }
+        // distractor: zero solutions requires parallel, distinct lines, but the slopes $3$ and $-1$ are not equal.
+        { id: "A", text: "Zero" },
+        { id: "B", text: "Exactly one" },
+        // distractor: two distinct lines meet at most once, so a system of two linear equations can never have exactly two solutions.
+        { id: "C", text: "Exactly two" },
+        // distractor: infinitely many solutions requires the two equations to describe the same line, which would force equal slopes and equal $y$-intercepts.
+        { id: "D", text: "Infinitely many" }
       ],
-      correctAnswer: "C",
-      hint: "Think about all the ways two lines can relate to each other on a graph. Can they cross, run parallel, or overlap?",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** Two lines either cross once, run parallel, or sit on top of each other — that is exactly \"no solution, one solution, or infinitely many.\" Choice C.\n\n**The Full Solution:**\nStep 1: Two distinct lines that cross meet at one point: exactly one solution.\nStep 2: Two lines with equal slopes but different intercepts never meet: no solution.\nStep 3: Two equations that describe the same line share every point: infinitely many solutions.\nThose are the only three outcomes, so C is the complete list.\n\n**Why the wrong answers are tempting:**\n* Choice A: counts only the intersecting case and ignores parallel and coincident lines.\n* Choice B: adds the parallel case but still misses the same-line case (infinitely many).\n* Choice D: two straight lines can never meet at exactly two points — if they share two points they share all of them.\n\n**Test Day Takeaway:** A linear system has $0$, $1$, or infinitely many solutions — never any other finite number.",
-      skills: ['system-solution-types']
+      correctAnswer: "B",
+      hint: "Compare the slopes of the two lines before counting anything.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** The slopes $3$ and $-1$ are different, so the lines cross exactly once and the system has one solution.\n\n**The Full Solution:**\nStep 1: Both equations are in slope-intercept form, with slopes $3$ and $-1$.\nStep 2: Two lines with different slopes are not parallel, so they intersect at exactly one point in the $xy$-plane.\nStep 3: That single intersection point is the one ordered pair satisfying both equations, so the system has exactly one solution. Check: $3x - 4 = -x + 8$ gives $4x = 12$, so $x = 3$ and $y = 5$, a single ordered pair. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: zero solutions requires parallel, distinct lines, but the slopes $3$ and $-1$ are not equal.\n* Choice C: two distinct lines meet at most once, so a system of two linear equations can never have exactly two solutions.\n* Choice D: infinitely many solutions requires the two equations to describe the same line, which would force equal slopes and equal $y$-intercepts.\n\n**Test Day Takeaway:** Count solutions from the slopes first: different slopes give one solution, equal slopes give either none or infinitely many.",
+      skills: ["system-solution-types"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "If two lines intersect at exactly one point, the system is called:",
+      question: "The graph of a system of two linear equations is shown in the $xy$-plane. Which ordered pair is the solution to this system?",
+      diagram: { type: "twoLineGraph", params: { intersection: { x: 2, y: -1 }, slope1: 1, slope2: -2, xRange: [-6, 6], yRange: [-6, 6], showIntersection: false } },
       choices: [
-        { id: "A", text: "Inconsistent" },
-        { id: "B", text: "Dependent" },
-        { id: "C", text: "Independent" },
-        { id: "D", text: "Parallel" }
+        // distractor: pairs the two $y$-intercepts, $-3$ and $3$, as if they formed a solution.
+        { id: "A", text: "$(-3, 3)$" },
+        // distractor: reverses the coordinates of the intersection point.
+        { id: "B", text: "$(-1, 2)$" },
+        { id: "C", text: "$(2, -1)$" },
+        // distractor: reads the $x$-coordinate correctly but drops the negative sign on the $y$-coordinate.
+        { id: "D", text: "$(2, 1)$" }
       ],
       correctAnswer: "C",
-      hint: "When each equation gives you unique information that the other doesn't, what does that say about their relationship?",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** One intersection point means each equation adds new information that the other doesn't — that's the definition of an independent system. Choice C.\n\n**The Full Solution:**\nStep 1: Match each label to its number of solutions. Independent (consistent) means exactly one solution.\nStep 2: Lines that cross at one point have different slopes, so neither equation is a multiple of the other — they are independent.\nStep 3: That single crossing point is the unique $(x,y)$ solution, confirming C.\n\n**Why the wrong answers are tempting:**\n* Choice A: \"Inconsistent\" means no solution (parallel lines), not one.\n* Choice B: \"Dependent\" means the equations describe the same line, giving infinitely many solutions.\n* Choice D: \"Parallel\" lines never meet, so a parallel system has no solution at all.\n\n**Test Day Takeaway:** Independent $\\Rightarrow$ different slopes $\\Rightarrow$ exactly one solution. Inconsistent $\\Rightarrow$ none; dependent $\\Rightarrow$ infinitely many.",
-      skills: ['system-solution-types']
+      hint: "The solution is the one point that lies on both lines at once.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** The two lines cross at $(2, -1)$, which is the only point on both graphs.\n\n**The Full Solution:**\nStep 1: An ordered pair solves a system of two linear equations exactly when it lies on both graphs.\nStep 2: The only point shared by the two lines is their point of intersection.\nStep 3: Reading across and up from that point gives $x = 2$ and $y = -1$, so the solution is $(2, -1)$. Check: the lines shown are $y = x - 3$ and $y = -2x + 3$, and $2 - 3 = -1$ while $-2(2) + 3 = -1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-3, 3)$): pairs the two $y$-intercepts, $-3$ and $3$, as if they formed a solution.\n* Choice B ($(-1, 2)$): reverses the coordinates of the intersection point.\n* Choice D ($(2, 1)$): reads the $x$-coordinate correctly but drops the negative sign on the $y$-coordinate.\n\n**Test Day Takeaway:** On a graphed system, the solution is the intersection point, read as $(x, y)$ in that order. Intercepts are not solutions.",
+      skills: ["system-solution-types"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "What does it mean graphically if a system has no solution?",
+      question: "One equation in a system of two linear equations is $6x - 4y = 10$. The system has no solution. Which of the following could be the other equation in this system?",
       choices: [
-        { id: "A", text: "The lines intersect at one point" },
-        { id: "B", text: "The lines are the same" },
-        { id: "C", text: "The lines are parallel" },
-        { id: "D", text: "The lines are perpendicular" }
+        // distractor: this is the given equation divided by $2$, so the two equations describe the same line and the system has infinitely many solutions.
+        { id: "A", text: "$3x - 2y = 5$" },
+        { id: "B", text: "$3x - 2y = 8$" },
+        // distractor: the sign of the $y$-coefficient changes, so the slopes differ and the lines meet at exactly one point.
+        { id: "C", text: "$3x + 2y = 8$" },
+        // distractor: the coefficients are swapped, which again changes the slope and gives exactly one solution.
+        { id: "D", text: "$2x - 3y = 8$" }
       ],
-      correctAnswer: "C",
-      hint: "If there's no solution, the lines never share a common point. What kind of lines never meet?",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** \"No solution\" means the lines never share a point, which can only happen when they are parallel — same slope, different intercept. Choice C.\n\n**The Full Solution:**\nStep 1: A solution is a point on both lines. No solution means no shared point.\nStep 2: Two distinct lines that never meet must have equal slopes: $m_1=m_2$ with $b_1 \\neq b_2$.\nStep 3: Setting $y=3x+1$ equal to $y=3x+5$ gives $1=5$, a contradiction — confirming parallel lines produce no solution.\n\n**Why the wrong answers are tempting:**\n* Choice A: lines that intersect at one point give exactly one solution, not zero.\n* Choice B: identical lines share every point, giving infinitely many solutions.\n* Choice D: perpendicular lines have slopes that are negative reciprocals and always cross once, so they give one solution.\n\n**Test Day Takeaway:** No solution $\\Leftrightarrow$ parallel lines $\\Leftrightarrow$ same slope, different intercept.",
-      skills: ['system-solution-types', 'parallel-line-slope']
+      correctAnswer: "B",
+      hint: "A system has no solution when the two lines are parallel but not identical.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~35s):** Dividing the given equation by $2$ gives $3x - 2y = 5$. Keeping those coefficients but changing the constant to $8$ produces a parallel, distinct line.\n\n**The Full Solution:**\nStep 1: A system of two linear equations has no solution exactly when its graphs are parallel and distinct.\nStep 2: Two equations in the form $ax + by = c$ are parallel when their $x$- and $y$-coefficients are proportional. Halving the given equation gives $3x - 2y = 5$, so the second equation must have coefficients proportional to $3$ and $-2$.\nStep 3: The equation $3x - 2y = 8$ has exactly those coefficients but a different constant, so the lines are parallel and distinct and the system has no solution. Check: subtracting the two equations gives $0 = -3$, which is never true. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3x - 2y = 5$): this is the given equation divided by $2$, so the two equations describe the same line and the system has infinitely many solutions.\n* Choice C ($3x + 2y = 8$): the sign of the $y$-coefficient changes, so the slopes differ and the lines meet at exactly one point.\n* Choice D ($2x - 3y = 8$): the coefficients are swapped, which again changes the slope and gives exactly one solution.\n\n**Test Day Takeaway:** For no solution, match the coefficient ratio and break the constant. Matching everything gives infinitely many solutions instead.",
+      skills: ["system-solution-types", "parallel-line-slope"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "The solution to a system of equations represents:",
+      question: "The table gives the initial fee and the hourly rate charged by each of two equipment rental companies. For each company, the total cost, in dollars, of renting for $h$ hours is modeled by a linear equation. In the $xy$-plane, the graphs of these two equations intersect at the point $(6, 102)$. What does $102$ represent in this context?",
+      diagram: { type: "dataTable", params: { headers: ["Company", "Initial fee (dollars)", "Hourly rate (dollars)"], rows: [["P", "30", "12"], ["Q", "54", "8"]] } },
       choices: [
-        { id: "A", text: "The y-intercept of both lines" },
-        { id: "B", text: "The slope of both lines" },
-        { id: "C", text: "The point(s) that satisfy all equations" },
-        { id: "D", text: "The x-intercept of the first line" }
+        // distractor: describes the first coordinate, $6$, which is the number of hours, not the cost.
+        { id: "A", text: "The number of hours for which the two companies charge the same total cost" },
+        { id: "B", text: "The total cost, in dollars, of renting from either company for $6$ hours" },
+        // distractor: at the intersection the two costs are equal, so their difference is $\$0$, not $\$102$.
+        { id: "C", text: "The difference, in dollars, between the two total costs after $6$ hours" },
+        // distractor: the hourly rates are $\$12$ and $\$8$ and they are not equal; $102$ is a total, not a rate.
+        { id: "D", text: "The hourly rate, in dollars, charged by each company" }
       ],
-      correctAnswer: "C",
-      hint: "What must be true about a solution? It needs to work when plugged into every equation in the system.",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** A solution must make every equation true at once, so it is the point(s) that satisfy all equations. Choice C.\n\n**The Full Solution:**\nStep 1: A system groups equations that must hold simultaneously.\nStep 2: A solution is an ordered pair that satisfies all of them, which is where the graphs meet.\nStep 3: For $x+y=5$ and $x-y=1$, the point $(3,2)$ works in both: $3+2=5$ and $3-2=1$. That shared point is the solution.\n\n**Why the wrong answers are tempting:**\n* Choice A: a $y$-intercept is just where one line meets the $y$-axis; it need not satisfy the other equation.\n* Choice B: slope is a rate, not a point — a solution is an ordered pair $(x,y)$.\n* Choice D: an $x$-intercept of only the first line ignores the second equation entirely.\n\n**Test Day Takeaway:** A solution to a system must satisfy every equation simultaneously — substitute it into all of them and each must be true.",
-      skills: ['system-solution-types']
+      correctAnswer: "B",
+      hint: "Decide what each axis measures before interpreting either coordinate.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~40s):** At the intersection the two costs are equal, so $102$ is the shared total cost after $6$ hours.\n\n**The Full Solution:**\nStep 1: The two cost equations are $y = 30 + 12h$ for company P and $y = 54 + 8h$ for company Q, where $h$ is hours and $y$ is total cost in dollars.\nStep 2: The intersection point satisfies both equations, so at $h = 6$ hours the two companies charge the same amount.\nStep 3: The second coordinate of the point is that shared cost, $\\$102$. Check: $30 + 12(6) = 102$ and $54 + 8(6) = 102$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: describes the first coordinate, $6$, which is the number of hours, not the cost.\n* Choice C: at the intersection the two costs are equal, so their difference is $\\$0$, not $\\$102$.\n* Choice D: the hourly rates are $\\$12$ and $\\$8$ and they are not equal; $102$ is a total, not a rate.\n\n**Test Day Takeaway:** The solution of a system in context is a pair of measurements. Name the units of each coordinate before choosing an interpretation.",
+      skills: ["system-solution-types"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "Is (2, 3) a solution to the system: x + y = 5 and 2x - y = 1?",
+      question: "An air-cargo hub charges \\$0.42 per kilogram for standard freight and \\$0.75 per kilogram for refrigerated freight. On one shift the hub moved $8{,}400$ kilograms, and had it shifted $500$ kilograms from standard to refrigerated, the charges would have totaled \\$4{,}485. How many more kilograms of standard freight than refrigerated freight did the hub move?",
       choices: [
-        { id: "A", text: "Yes" },
-        { id: "B", text: "No, it only satisfies the first equation" },
-        { id: "C", text: "No, it only satisfies the second equation" },
-        { id: "D", text: "No, it satisfies neither equation" }
+        // distractor: reports the refrigerated mass 2400 alone instead of the difference
+        { id: "A", text: "$2{,}400$" },
+        // distractor: treats 4485 as the actual charge, giving 5500 - 2900 = 2600
+        { id: "B", text: "$2{,}600$" },
+        { id: "C", text: "$3{,}600$" },
+        // distractor: reports the standard mass 6000 alone instead of the difference
+        { id: "D", text: "$6{,}000$" }
       ],
-      correctAnswer: "A",
-      hint: "Substitute x = 2 and y = 3 into both equations separately. Does each equation become a true statement?",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~20s):** Plug $(2,3)$ into both equations. $2+3=5$ holds and $2(2)-3=1$ holds, so the point satisfies the whole system. Choice A.\n\n**The Full Solution:**\nStep 1: Test equation 1: $x+y=5 \\Rightarrow 2+3=5$. $\\checkmark$\nStep 2: Test equation 2: $2x-y=1 \\Rightarrow 2(2)-3=4-3=1$. $\\checkmark$\nStep 3: Both equations are true, so $(2,3)$ is a solution to the system — answer \"Yes.\"\n\n**Why the wrong answers are tempting:**\n* Choice B: would be right only if the second equation failed, but $2(2)-3=1$ checks out.\n* Choice C: would be right only if the first equation failed, but $2+3=5$ checks out.\n* Choice D: comes from arithmetic slips like $2(2)-3=-1$ (forgetting to multiply) or $2+3=6$. Done carefully, both hold.\n\n**Test Day Takeaway:** To verify a candidate solution, substitute it into every equation — it counts only if all of them come out true.",
-      skills: ['system-solution-types', 'substitution-method']
+      correctAnswer: "C",
+      hint: "The stated total prices a shipment the hub did not actually move.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~45s):** The hypothetical shift adds $500(0.75 - 0.42) = 165$ dollars, so the real charge was $\\$4{,}320$; solving with the $8{,}400$-kilogram total gives $6{,}000$ and $2{,}400$.\n\n**The Full Solution:**\nStep 1: Moving $500$ kilograms from standard to refrigerated raises the charge by $500(0.75 - 0.42) = 165$ dollars, so the actual charge was $4485 - 165 = 4320$ dollars.\nStep 2: Let $s$ and $r$ be the standard and refrigerated masses: $s + r = 8400$ and $0.42s + 0.75r = 4320$. Substituting $s = 8400 - r$ gives $3528 + 0.33r = 4320$, so $r = 2400$.\nStep 3: Then $s = 8400 - 2400 = 6000$, and $s - r = 3600$. Check: $0.42(6000) + 0.75(2400) = 2520 + 1800 = 4320$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2{,}400$): reporting the refrigerated mass alone; the question asks for the excess of standard over refrigerated.\n* Choice B ($2{,}600$): using $\\$4{,}485$ as the actual charge, which yields $r = 2{,}900$ and $s = 5{,}500$ and a difference of $2{,}600$.\n* Choice D ($6{,}000$): reporting the standard mass alone rather than the difference.\n\n**Test Day Takeaway:** When a stem prices a hypothetical rearrangement, convert it back to the real total before writing the system.",
+      skills: ["system-solution-types", "substitution-method"]
     }
   ],
 
@@ -86,77 +103,94 @@ export const systemsQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "Adult tickets cost \\$8 and child tickets cost \\$5. Total sales were \\$95 for 14 tickets. Which system represents this?",
+      question: "A theater sold $240$ tickets for a concert and collected $\\$4{,}500$ from these tickets. The table gives the price of each type of ticket. Which system of equations, where $x$ is the number of balcony tickets sold and $y$ is the number of floor tickets sold, represents this situation?",
+      diagram: { type: "dataTable", params: { headers: ["Ticket type", "Price (dollars)"], rows: [["Balcony", "15"], ["Floor", "24"]] } },
       choices: [
-        { id: "A", text: "a + c = 95, 8a + 5c = 14" },
-        { id: "B", text: "a + c = 14, 8a + 5c = 95" },
-        { id: "C", text: "8a + 5c = 14, a + c = 95" },
-        { id: "D", text: "a + c = 14, a + c = 95" }
+        { id: "A", text: "$x + y = 240$ and $15x + 24y = 4500$" },
+        // distractor: assigns the dollar total to the count equation and the ticket total to the revenue equation, swapping the two constants.
+        { id: "B", text: "$x + y = 4500$ and $15x + 24y = 240$" },
+        // distractor: attaches each price to the wrong variable, charging $\$24$ for balcony tickets and $\$15$ for floor tickets.
+        { id: "C", text: "$x + y = 240$ and $24x + 15y = 4500$" },
+        // distractor: adds the two prices and applies the sum to every ticket, which would be correct only if each buyer bought one of each type.
+        { id: "D", text: "$x + y = 240$ and $39(x + y) = 4500$" }
       ],
-      correctAnswer: "B",
-      hint: "Write one equation for the total number of tickets, and another for the total money. Make sure the units match on each side.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** Count the tickets in one equation, count the dollars in the other: $a+c=14$ and $8a+5c=95$. Choice B.\n\n**The Full Solution:**\nStep 1: Let $a$ be adult tickets and $c$ be child tickets.\nStep 2: Quantity equation — 14 tickets total: $a+c=14$.\nStep 3: Value equation — adults bring $\\$8$ each, children $\\$5$ each, totaling $\\$95$: $8a+5c=95$. That pair is Choice B.\n\n**Why the wrong answers are tempting:**\n* Choice A: swaps the constants, claiming 95 tickets and $\\$14$ in sales — the right sides are reversed.\n* Choice C: same reversed assignment as A, with $8a+5c$ (dollars) set to $14$ and $a+c$ (tickets) set to $95$.\n* Choice D: sets $a+c$ to two different values, which is a contradiction rather than this scenario.\n\n**Test Day Takeaway:** Mixture and ticket problems need a quantity equation (how many) and a value equation (how much money); price coefficients belong only in the value equation.",
-      skills: ['setting-up-systems', 'word-problem-to-equation']
+      correctAnswer: "A",
+      hint: "One equation should count tickets and the other should total dollars.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~25s):** Tickets give $x + y = 240$; dollars give $15x + 24y = 4500$, since each balcony ticket brings $\\$15$ and each floor ticket $\\$24$.\n\n**The Full Solution:**\nStep 1: The number of tickets sold is $x + y$, and that total is $240$, so $x + y = 240$.\nStep 2: Balcony tickets bring in $15x$ dollars and floor tickets bring in $24y$ dollars.\nStep 3: The revenue equation is therefore $15x + 24y = 4500$. Check: $x = 140$ and $y = 100$ satisfy both equations, since $140 + 100 = 240$ and $15(140) + 24(100) = 2100 + 2400 = 4500$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: assigns the dollar total to the count equation and the ticket total to the revenue equation, swapping the two constants.\n* Choice C: attaches each price to the wrong variable, charging $\\$24$ for balcony tickets and $\\$15$ for floor tickets.\n* Choice D: adds the two prices and applies the sum to every ticket, which would be correct only if each buyer bought one of each type.\n\n**Test Day Takeaway:** Build one equation per quantity being totaled: a count equation and a money equation. Keep each price attached to its own variable.",
+      skills: ["setting-up-systems", "word-problem-to-equation"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "A store sells pens for \\$2 and notebooks for \\$5. Maria spent \\$29 on 8 items. If p = pens and n = notebooks, which system is correct?",
+      question: "A shipping center packs items into small cartons that each hold $4$ items and large cartons that each hold $9$ items. The center filled $32$ cartons completely and packed $218$ items in all. Which system of equations, where $s$ is the number of small cartons and $l$ is the number of large cartons, represents this situation?",
       choices: [
-        { id: "A", text: "p + n = 29, 2p + 5n = 8" },
-        { id: "B", text: "2p + 5n = 29, p + n = 8" },
-        { id: "C", text: "p + n = 8, 2p + 5n = 29" },
-        { id: "D", text: "5p + 2n = 29, p + n = 8" }
+        // distractor: swaps the two totals, using $218$ as the number of cartons and $32$ as the number of items.
+        { id: "A", text: "$s + l = 218$ and $4s + 9l = 32$" },
+        { id: "B", text: "$s + l = 32$ and $4s + 9l = 218$" },
+        // distractor: attaches each capacity to the wrong carton size.
+        { id: "C", text: "$s + l = 32$ and $9s + 4l = 218$" },
+        // distractor: adds the two capacities and applies the sum to every carton, which assumes each carton holds $13$ items.
+        { id: "D", text: "$s + l = 32$ and $13(s + l) = 218$" }
       ],
-      correctAnswer: "C",
-      hint: "One equation should count items, the other should count dollars. Make sure prices multiply with the correct variables.",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** Items go in the count equation and dollars in the value equation: $p+n=8$ and $2p+5n=29$. Choice C.\n\n**The Full Solution:**\nStep 1: Let $p$ be pens and $n$ be notebooks.\nStep 2: Quantity equation — 8 items total: $p+n=8$.\nStep 3: Value equation — pens cost $\\$2$ each, notebooks $\\$5$ each, totaling $\\$29$: $2p+5n=29$. That matches Choice C.\n\n**Why the wrong answers are tempting:**\n* Choice A: sets the count equation to $29$ (a dollar amount) and the cost equation to $8$ (a count) — the right sides are swapped.\n* Choice B: lists the same two equations as C but in the reverse order, with the value equation first; C is the conventional quantity-first form $p+n=8$, $2p+5n=29$.\n* Choice D: assigns the $\\$5$ price to pens and $\\$2$ to notebooks; pens cost $\\$2$, so the coefficient of $p$ must be $2$.\n\n**Test Day Takeaway:** Always pair each price with its own variable — $(\\text{price per item}) \\times (\\text{number of that item})$ — and put the count in a separate quantity equation.",
-      skills: ['setting-up-systems', 'word-problem-to-equation']
+      correctAnswer: "B",
+      hint: "Decide which total counts containers and which total counts contents.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~25s):** Cartons give $s + l = 32$; items give $4s + 9l = 218$.\n\n**The Full Solution:**\nStep 1: The center filled $32$ cartons altogether, so $s + l = 32$.\nStep 2: The small cartons hold $4s$ items and the large cartons hold $9l$ items.\nStep 3: Since $218$ items were packed, $4s + 9l = 218$. Check: $s = 14$ and $l = 18$ satisfy both, since $14 + 18 = 32$ and $4(14) + 9(18) = 56 + 162 = 218$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: swaps the two totals, using $218$ as the number of cartons and $32$ as the number of items.\n* Choice C: attaches each capacity to the wrong carton size.\n* Choice D: adds the two capacities and applies the sum to every carton, which assumes each carton holds $13$ items.\n\n**Test Day Takeaway:** In a two-container word problem, one equation counts the containers and the other counts what is inside them. Match each capacity to its own variable.",
+      skills: ["setting-up-systems", "word-problem-to-equation"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "The sum of two numbers is 20 and their difference is 6. Which system represents this?",
+      question: "At a botanical garden, the number of orchids is $14$ more than $3$ times the number of ferns, and there are $178$ orchids and ferns altogether. Which system of equations, where $f$ is the number of ferns and $r$ is the number of orchids, represents this situation?",
       choices: [
-        { id: "A", text: "x + y = 20, x - y = 6" },
-        { id: "B", text: "x + y = 6, x - y = 20" },
-        { id: "C", text: "xy = 20, x/y = 6" },
-        { id: "D", text: "x + y = 26, xy = 6" }
+        { id: "A", text: "$r = 3f + 14$ and $r + f = 178$" },
+        // distractor: reverses the comparison, making the ferns $14$ more than $3$ times the orchids.
+        { id: "B", text: "$f = 3r + 14$ and $r + f = 178$" },
+        // distractor: multiplies after adding, $3(f + 14)$, which triples the $14$ as well.
+        { id: "C", text: "$r = 3(f + 14)$ and $r + f = 178$" },
+        // distractor: subtracts $14$ instead of adding it, making the orchids fewer than $3$ times the ferns.
+        { id: "D", text: "$r = 3f - 14$ and $r + f = 178$" }
       ],
       correctAnswer: "A",
-      hint: "Translate 'sum' and 'difference' directly into mathematical operations. Sum means add, difference means subtract.",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~10s):** \"Sum is 20\" is $x+y=20$; \"difference is 6\" is $x-y=6$. Choice A.\n\n**The Full Solution:**\nStep 1: Translate \"the sum of two numbers is 20\" directly to $x+y=20$.\nStep 2: Translate \"their difference is 6\" to $x-y=6$.\nStep 3: Check by solving: adding gives $2x=26$, so $x=13$ and $y=7$; indeed $13+7=20$ and $13-7=6$. Choice A holds.\n\n**Why the wrong answers are tempting:**\n* Choice B: assigns the sum to $6$ and the difference to $20$, reversing the two given values.\n* Choice C: uses $xy$ and $\\frac{x}{y}$ — that's product and quotient, not sum and difference, and it's nonlinear.\n* Choice D: writes $x+y=26$ (adding the two given numbers) and $xy=6$ (a product), neither of which translates the wording.\n\n**Test Day Takeaway:** Translate keywords literally — sum $\\to +$, difference $\\to -$, product $\\to \\times$, quotient $\\to \\div$.",
-      skills: ['setting-up-systems', 'word-problem-to-equation']
+      hint: "Translate \"more than\" one phrase at a time, and check which quantity is being multiplied.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~30s):** \"Orchids is $14$ more than $3$ times ferns\" is $r = 3f + 14$, and the total gives $r + f = 178$.\n\n**The Full Solution:**\nStep 1: The phrase \"$3$ times the number of ferns\" is $3f$, and \"$14$ more than\" that quantity adds $14$, giving $r = 3f + 14$.\nStep 2: The two kinds of plants together number $178$, so $r + f = 178$.\nStep 3: These two equations form the system. Check: $f = 41$ and $r = 137$ satisfy both, since $3(41) + 14 = 137$ and $137 + 41 = 178$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: reverses the comparison, making the ferns $14$ more than $3$ times the orchids.\n* Choice C: multiplies after adding, $3(f + 14)$, which triples the $14$ as well.\n* Choice D: subtracts $14$ instead of adding it, making the orchids fewer than $3$ times the ferns.\n\n**Test Day Takeaway:** Translate a comparison left to right, and keep the added constant outside the multiplication unless the sentence groups it inside.",
+      skills: ["setting-up-systems", "word-problem-to-equation"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "A boat travels 30 miles downstream in 2 hours and 18 miles upstream in 3 hours. If b = boat speed and c = current speed, which equations are correct?",
+      question: "A cyclist rides $66$ kilometers with the wind in $2$ hours and $42$ kilometers against the wind in $2$ hours. Let $c$ be the cyclist’s speed in still air and let $w$ be the speed of the wind, both in kilometers per hour. Which system of equations represents this situation?",
       choices: [
-        { id: "A", text: "b + c = 15, b - c = 6" },
-        { id: "B", text: "b + c = 30, b - c = 18" },
-        { id: "C", text: "2(b + c) = 30, 3(b - c) = 18" },
-        { id: "D", text: "Both A and C" }
+        { id: "A", text: "$2(c + w) = 66$ and $2(c - w) = 42$" },
+        // distractor: assigns the longer distance to the trip against the wind, which would make the wind slow the cyclist down over the greater distance.
+        { id: "B", text: "$2(c + w) = 42$ and $2(c - w) = 66$" },
+        // distractor: omits the $2$ hours, equating a speed with a distance.
+        { id: "C", text: "$c + w = 66$ and $c - w = 42$" },
+        // distractor: multiplies only the cyclist’s speed by the time, leaving the wind term untimed.
+        { id: "D", text: "$2c + w = 66$ and $2c - w = 42$" }
       ],
-      correctAnswer: "D",
-      hint: "Downstream, the current helps (add speeds). Upstream, the current slows you down (subtract). Use distance = rate times time.",
-      explanation: "**Choice D is correct.**\n\n**The Fast Way (~20s):** Use $d=rt$. Downstream: $(b+c)\\cdot 2 = 30 \\Rightarrow b+c=15$. Upstream: $(b-c)\\cdot 3 = 18 \\Rightarrow b-c=6$. Choice C is the unsimplified pair, Choice A is the simplified pair — both are correct, so the answer is D.\n\n**The Full Solution:**\nStep 1: Downstream the current helps, so the effective rate is $b+c$: $2(b+c)=30$.\nStep 2: Upstream the current opposes, so the effective rate is $b-c$: $3(b-c)=18$. These two equations are exactly Choice C.\nStep 3: Divide each by its time: $b+c=15$ and $b-c=6$. Those are Choice A. Since A and C describe the same system, \"Both A and C\" — Choice D — is the answer.\n\n**Why the wrong answers are tempting:**\n* Choice A: correct, but not the only correct option, so it's incomplete.\n* Choice B: sets $b+c=30$ and $b-c=18$, confusing the distance with the rate; you must divide distance by time.\n* Choice C: also correct on its own, but again not the only correct option.\n\n**Test Day Takeaway:** For current and wind problems use $d=rt$ with effective rate $b+c$ (with) or $b-c$ (against); when \"both\" is offered, check whether two forms describe the same system.",
-      skills: ['setting-up-systems', 'word-problem-to-equation']
+      correctAnswer: "A",
+      hint: "Wind adds to the cyclist’s speed one way and subtracts from it the other way; distance is speed times time.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~35s):** With the wind the speed is $c + w$ and with $2$ hours of riding the distance is $2(c + w) = 66$; against the wind it is $2(c - w) = 42$.\n\n**The Full Solution:**\nStep 1: Riding with the wind, the cyclist’s effective speed is $c + w$; riding against it, the effective speed is $c - w$.\nStep 2: Distance equals speed times time, and each ride lasts $2$ hours, so the distances are $2(c + w)$ and $2(c - w)$.\nStep 3: Setting those equal to the given distances yields $2(c + w) = 66$ and $2(c - w) = 42$. Check: $c = 27$ and $w = 6$ give $2(33) = 66$ and $2(21) = 42$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: assigns the longer distance to the trip against the wind, which would make the wind slow the cyclist down over the greater distance.\n* Choice C: omits the $2$ hours, equating a speed with a distance.\n* Choice D: multiplies only the cyclist’s speed by the time, leaving the wind term untimed.\n\n**Test Day Takeaway:** For with-and-against problems, write the two combined speeds first, then multiply each by its own time before setting it equal to a distance.",
+      skills: ["setting-up-systems", "word-problem-to-equation"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "Coffee A costs \\$4/lb and Coffee B costs \\$7/lb. To make 10 lbs of a blend costing \\$5.50/lb, which system applies?",
+      question: "A chemist will combine two saline solutions to obtain $40$ liters of a mixture that is $24$ percent salt by volume. The table gives the concentration of each solution. Which system of equations, where $x$ and $y$ are the numbers of liters of solution A and solution B used, represents this situation?",
+      diagram: { type: "dataTable", params: { headers: ["Solution", "Concentration (percent salt by volume)"], rows: [["A", "15"], ["B", "30"]] } },
       choices: [
-        { id: "A", text: "a + b = 10, 4a + 7b = 55" },
-        { id: "B", text: "a + b = 55, 4a + 7b = 10" },
-        { id: "C", text: "a + b = 10, 4a + 7b = 5.50" },
-        { id: "D", text: "4a + 7b = 10, a + b = 55" }
+        { id: "A", text: "$x + y = 40$ and $0.15x + 0.30y = 9.6$" },
+        // distractor: sets the salt equation equal to the percent, $24$, instead of the $9.6$ liters of salt that percent represents.
+        { id: "B", text: "$x + y = 40$ and $0.15x + 0.30y = 24$" },
+        // distractor: writes the concentrations as whole percents on the left while keeping liters on the right, mixing two different units.
+        { id: "C", text: "$x + y = 40$ and $15x + 30y = 9.6$" },
+        // distractor: swaps the two totals, using the liters of salt as the total volume and the total volume as the amount of salt.
+        { id: "D", text: "$x + y = 9.6$ and $0.15x + 0.30y = 40$" }
       ],
       correctAnswer: "A",
-      hint: "The total weight is 10 lbs. For the cost equation, calculate the total value of the blend: 10 lbs times \\$5.50/lb.",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~15s):** Weight equation $a+b=10$; value equation uses total cost $10 \\times \\$5.50 = \\$55$, so $4a+7b=55$. Choice A.\n\n**The Full Solution:**\nStep 1: Let $a$ and $b$ be pounds of Coffee A and Coffee B.\nStep 2: Weight equation — the blend is 10 lbs: $a+b=10$.\nStep 3: Value equation — the blend's total cost is $10 \\times \\$5.50 = \\$55$, and A contributes $4a$, B contributes $7b$: $4a+7b=55$. That is Choice A.\n\n**Why the wrong answers are tempting:**\n* Choice B: swaps the right sides, setting the weight sum to $55$ and the cost to $10$ — units don't match.\n* Choice C: uses the per-pound price $\\$5.50$ instead of the total value $\\$55$; $4a+7b$ is total dollars, so it must equal $55$.\n* Choice D: same reversed swap as B, with the cost expression set to a weight and vice versa.\n\n**Test Day Takeaway:** In mixture problems the value equation uses total value, not unit price: $\\text{total value} = \\text{unit price} \\times \\text{total amount}$.",
-      skills: ['setting-up-systems', 'word-problem-to-equation']
+      hint: "One equation tracks liters of liquid; the other tracks liters of salt.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~50s):** Volume gives $x + y = 40$. The mixture holds $0.24(40) = 9.6$ liters of salt, so $0.15x + 0.30y = 9.6$.\n\n**The Full Solution:**\nStep 1: The two solutions together make $40$ liters, so $x + y = 40$.\nStep 2: Solution A contributes $0.15x$ liters of salt and solution B contributes $0.30y$ liters of salt.\nStep 3: The mixture is $24$ percent salt, so it contains $0.24(40) = 9.6$ liters of salt, giving $0.15x + 0.30y = 9.6$. Check: $x = 16$ and $y = 24$ satisfy both, since $16 + 24 = 40$ and $0.15(16) + 0.30(24) = 2.4 + 7.2 = 9.6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: sets the salt equation equal to the percent, $24$, instead of the $9.6$ liters of salt that percent represents.\n* Choice C: writes the concentrations as whole percents on the left while keeping liters on the right, mixing two different units.\n* Choice D: swaps the two totals, using the liters of salt as the total volume and the total volume as the amount of salt.\n\n**Test Day Takeaway:** In a mixture problem the second equation must balance the same substance on both sides. Convert the target percent into an actual amount before writing it.",
+      skills: ["setting-up-systems", "word-problem-to-equation"]
     }
   ],
 
@@ -165,77 +199,92 @@ export const systemsQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "Solve using substitution: y = 2x and x + y = 9. What is x?",
+      question: "A campus observatory schedules $x$ hours of visual observing and $y$ hours of spectroscopy each week, where $y = 24 - 3x$ and $5x + 2y = 44$. Substituting the first equation into the second gives which equation in $x$ alone?",
       choices: [
-        { id: "A", text: "2" },
-        { id: "B", text: "3" },
-        { id: "C", text: "6" },
-        { id: "D", text: "9" }
+        // distractor: drops the 5x term while distributing
+        { id: "A", text: "$-6x + 48 = 44$" },
+        // distractor: multiplies only the -3x by 2 and leaves the 24 unchanged
+        { id: "B", text: "$-x + 24 = 44$" },
+        { id: "C", text: "$-x + 48 = 44$" },
+        // distractor: adds 6x instead of subtracting it
+        { id: "D", text: "$11x + 48 = 44$" }
       ],
-      correctAnswer: "B",
-      hint: "Since y already equals 2x, replace y in the second equation with 2x, then solve for x.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** $y$ is already $2x$, so $x+2x=9 \\Rightarrow 3x=9 \\Rightarrow x=3$. Choice B.\n\n**The Full Solution:**\nStep 1: Substitute $y=2x$ into $x+y=9$: $x+2x=9$.\nStep 2: Combine: $3x=9$, so $x=3$.\nStep 3: Check: $y=2(3)=6$ and $x+y=3+6=9$. Choice B holds.\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): comes from a slip in combining terms or dividing $9$ by the wrong number.\n* Choice C ($6$): that's the value of $y$, not $x$ — solved for the wrong variable.\n* Choice D ($9$): just reads off the constant on the right side without substituting.\n\n**Test Day Takeaway:** When one variable is already isolated, substitute it straight into the other equation to collapse the system to a single unknown.",
-      skills: ['substitution-method']
+      correctAnswer: "C",
+      hint: "Every term inside the parentheses meets the $2$, and the $5x$ outside them does not go away.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** Replacing $y$ with $24 - 3x$ gives $5x + 48 - 6x$, which collapses to $-x + 48$.\n\n**The Full Solution:**\nStep 1: Substitute $24 - 3x$ for $y$ in the second equation: $5x + 2(24 - 3x) = 44$.\nStep 2: Distribute the $2$ across both terms: $5x + 48 - 6x = 44$.\nStep 3: Combine the $x$-terms: $-x + 48 = 44$. Check: this gives $x = 4$, so $y = 24 - 12 = 12$, and $5(4) + 2(12) = 44$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6x + 48 = 44$): dropping the $5x$ that was already in the equation before the substitution.\n* Choice B ($-x + 24 = 44$): multiplying only the $-3x$ by $2$ and leaving the $24$ unscaled.\n* Choice D ($11x + 48 = 44$): adding $6x$ instead of subtracting it, which ignores the minus sign inside the parentheses.\n\n**Test Day Takeaway:** Substitute the whole expression in parentheses, then distribute to every term inside before combining.",
+      skills: ["substitution-method"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "Solve: x = 3y - 1 and 2x + y = 12. What is y?",
+      question: "Over one season a field team counted $h$ hawks and $e$ eagles, where $h = 4e - 30$ and $h + e = 280$. What is the value of $e$?",
       choices: [
-        { id: "A", text: "2" },
-        { id: "B", text: "5" },
-        { id: "C", text: "7" },
-        { id: "D", text: "14" }
+        // distractor: flips the sign of the $30$, substituting $4e + 30$ and solving $5e + 30 = 280$.
+        { id: "A", text: "$50$" },
+        // distractor: drops the $-30$ when substituting, solving $4e + e = 280$.
+        { id: "B", text: "$56$" },
+        { id: "C", text: "$62$" },
+        // distractor: solves the system correctly but reports $h$, the number of hawks.
+        { id: "D", text: "$218$" }
       ],
-      correctAnswer: "A",
-      hint: "Replace x with (3y - 1) in the second equation, then simplify and solve for y.",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~15s):** Substitute $x=3y-1$ into $2x+y=12$: $2(3y-1)+y=12 \\Rightarrow 7y-2=12 \\Rightarrow y=2$. Choice A.\n\n**The Full Solution:**\nStep 1: Substitute $x=3y-1$ into $2x+y=12$: $2(3y-1)+y=12$.\nStep 2: Distribute and combine: $6y-2+y=12 \\Rightarrow 7y-2=12$.\nStep 3: Solve: $7y=14$, so $y=2$. Check: $x=3(2)-1=5$ and $2(5)+2=12$. Choice A holds.\n\n**Why the wrong answers are tempting:**\n* Choice B ($5$): that's the value of $x$, not $y$ — solved for the wrong variable.\n* Choice C ($7$): comes from failing to distribute the $2$ to the $-1$, getting $7y=13$ and then miscalculating.\n* Choice D ($14$): that's $7y$ before dividing by $7$ — stopped one step early.\n\n**Test Day Takeaway:** When distributing during substitution, multiply every term inside the parentheses: $2(3y-1)=6y-2$, not $6y-1$.",
-      skills: ['substitution-method']
+      correctAnswer: "C",
+      hint: "Replace $h$ in the total with the expression the first equation gives for it.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~20s):** Substituting $4e - 30$ for $h$ gives $(4e - 30) + e = 280$, so $5e = 310$ and $e = 62$.\n\n**The Full Solution:**\nStep 1: The first equation gives $h$ in terms of $e$, so replace $h$ in the second equation: $(4e - 30) + e = 280$.\nStep 2: Combine like terms: $5e - 30 = 280$, so $5e = 310$.\nStep 3: Divide by $5$ to get $e = 62$ eagles. Check: $h = 4(62) - 30 = 218$, and $218 + 62 = 280$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($50$): flips the sign of the $30$, substituting $4e + 30$ and solving $5e + 30 = 280$.\n* Choice B ($56$): drops the $-30$ when substituting, solving $4e + e = 280$.\n* Choice D ($218$): solves the system correctly but reports $h$, the number of hawks.\n\n**Test Day Takeaway:** Substitute the whole expression, sign and constant included, then reread which of the two quantities the question named.",
+      skills: ["substitution-method"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "Which equation is best to solve first for substitution in: 3x + y = 10 and 2x - 3y = 1?",
+      question: "A stone mill blends $x$ kilograms of rye flour with $y$ kilograms of barley flour in each batch, where $y = 3x - 3$. The ingredient cost of a batch, in dollars, is given by $4x + cy = 42$, where $c$ is a constant. If a batch uses $3$ kilograms of rye flour, what is the value of $c$?",
       choices: [
-        { id: "A", text: "Solve first equation for x" },
-        { id: "B", text: "Solve first equation for y" },
-        { id: "C", text: "Solve second equation for x" },
-        { id: "D", text: "Either equation for either variable" }
+        { id: "A", text: "$5$" },
+        // distractor: divides 42 by the 6 kilograms of barley without removing the 12 dollars of rye
+        { id: "B", text: "$7$" },
+        // distractor: adds the rye cost instead of subtracting it: (42 + 12)/6 = 9
+        { id: "C", text: "$9$" },
+        // distractor: divides by the rye mass 3 instead of the barley mass 6: (42 - 12)/3 = 10
+        { id: "D", text: "$10$" }
       ],
-      correctAnswer: "B",
-      hint: "Look for a variable with a coefficient of 1 or -1. Solving for that variable avoids fractions.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** Scan for a variable with coefficient $1$ or $-1$. In $3x + y = 10$ the $y$ has coefficient $1$, so solving the first equation for $y$ gives the cleanest substitution.\n\n**The Full Solution:**\nStep 1: List the coefficients. First equation $3x + y = 10$: $x$ has $3$, $y$ has $1$. Second equation $2x - 3y = 1$: $x$ has $2$, $y$ has $-3$.\nStep 2: Isolating a variable with coefficient $1$ avoids fractions. Only the $y$ in the first equation qualifies: $y = 10 - 3x$.\nStep 3: Every other isolation creates a fraction — for example $x = \\frac{10 - y}{3}$ or $x = \\frac{1 + 3y}{2}$ — so Choice B is the efficient pick.\n\n**Why the wrong answers are tempting:**\n* Choice A: solving $3x + y = 10$ for $x$ gives $x = \\frac{10 - y}{3}$ — a fraction from the start.\n* Choice C: solving $2x - 3y = 1$ for $x$ gives $x = \\frac{1 + 3y}{2}$ — also fractional.\n* Choice D: any equation technically works, but the question asks for the *best* first step, and the coefficient-$1$ variable is clearly fastest.\n\n**Test Day Takeaway:** For substitution, isolate the variable whose coefficient is $1$ or $-1$ first — it keeps the algebra fraction-free.",
-      skills: ['substitution-method']
+      correctAnswer: "A",
+      hint: "One rule fixes both masses in the batch before any cost is computed.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~25s):** A $3$-kilogram rye batch carries $y = 3(3) - 3 = 6$ kilograms of barley, so $12 + 6c = 42$ and $c = 5$.\n\n**The Full Solution:**\nStep 1: Find the barley mass: $y = 3(3) - 3 = 6$ kilograms.\nStep 2: Substitute $x = 3$ and $y = 6$ into the cost equation: $4(3) + c(6) = 42$, or $12 + 6c = 42$.\nStep 3: Subtract $12$ and divide by $6$: $6c = 30$, so $c = 5$. Check: $4(3) + 5(6) = 12 + 30 = 42$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($7$): dividing $42$ by the $6$ kilograms of barley without first removing the $\\$12$ spent on rye.\n* Choice C ($9$): adding the rye cost instead of subtracting it, computing $\\frac{42 + 12}{6}$.\n* Choice D ($10$): dividing by the rye mass rather than the barley mass, computing $\\frac{42 - 12}{3}$.\n\n**Test Day Takeaway:** Reduce to one unknown before touching the constant: compute the second quantity, then solve the linear equation that remains.",
+      skills: ["substitution-method"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "Solve: y = x + 4 and y = 3x - 2. What is the solution (x, y)?",
+      question: "A harbor ferry made $x$ weekday crossings and $y$ weekend crossings last month. Its logs give $y = 4x + 6$ and $3x + y = 48$. If the ferry made $30$ weekend crossings, how many weekday crossings did it make?",
       choices: [
-        { id: "A", text: "(3, 7)" },
-        { id: "B", text: "(1, 5)" },
-        { id: "C", text: "(2, 6)" },
-        { id: "D", text: "(4, 8)" }
+        { id: "A", text: "$6$" },
+        // distractor: solves 30 = 4x + 6 as 4x = 36, adding 6 instead of subtracting
+        { id: "B", text: "$9$" },
+        // distractor: divides 48 by 3 without removing the 30 weekend crossings
+        { id: "C", text: "$16$" },
+        // distractor: subtracts 30 from 48 but never divides by 3
+        { id: "D", text: "$18$" }
       ],
       correctAnswer: "A",
-      hint: "Both equations equal y, so set them equal to each other: x + 4 = 3x - 2. Solve for x first.",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~15s):** Both equations are already $y = \\ldots$, so set the right sides equal: $x + 4 = 3x - 2 \\Rightarrow x = 3$, then $y = 3 + 4 = 7$, giving $(3, 7)$.\n\n**The Full Solution:**\nStep 1: Set the expressions for $y$ equal: $x + 4 = 3x - 2$.\nStep 2: Solve: $4 + 2 = 3x - x \\Rightarrow 6 = 2x \\Rightarrow x = 3$.\nStep 3: Back-substitute into $y = x + 4$: $y = 3 + 4 = 7$. Check the other equation: $3(3) - 2 = 7$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: $(1, 5)$ satisfies $y = x + 4$ but not $y = 3x - 2$ (that gives $1$, not $5$) — a student who checks only one equation stops here.\n* Choice C: $(2, 6)$ satisfies $y = x + 4$ but $y = 3x - 2$ gives $4 \\neq 6$.\n* Choice D: $(4, 8)$ satisfies $y = x + 4$ but $y = 3x - 2$ gives $10 \\neq 8$.\n\n**Test Day Takeaway:** When both equations are solved for the same variable, set the right sides equal — the equal-values method skips a substitution step.",
-      skills: ['substitution-method']
+      hint: "Not every equation the logs give is needed.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~15s):** Putting $y = 30$ into $3x + y = 48$ leaves $3x = 18$, so $x = 6$.\n\n**The Full Solution:**\nStep 1: Substitute the known weekend count into the equation that still contains both variables: $3x + 30 = 48$.\nStep 2: Subtract $30$ from both sides: $3x = 18$, so $x = 6$.\nStep 3: Confirm with the other log: $4(6) + 6 = 30$ weekend crossings ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($9$): solving $30 = 4x + 6$ as $4x = 36$, adding the $6$ instead of subtracting it.\n* Choice C ($16$): dividing $48$ by $3$ without first removing the $30$ weekend crossings.\n* Choice D ($18$): stopping at $3x = 18$ and reporting $18$ instead of dividing by $3$.\n\n**Test Day Takeaway:** When one value is handed to you, substitute it into whichever equation is left with a single unknown.",
+      skills: ["substitution-method"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "Using substitution on 2x - y = 7 and x + 2y = 1, what is x + y?",
+      question: "For the system of equations $2x - y = 7$ and $6x + ky = 5$, where $k$ is a constant, there is exactly one solution for every value of $k$ except one. What is that value of $k$?",
       choices: [
-        { id: "A", text: "\u22122" },
-        { id: "B", text: "2" },
-        { id: "C", text: "3" },
-        { id: "D", text: "8" }
+        // distractor: inverts the slope comparison, setting $-\frac{k}{6} = 2$.
+        { id: "A", text: "$-12$" },
+        { id: "B", text: "$-3$" },
+        // distractor: drops the negative sign when reading the slope of $6x + ky = 5$, setting $\frac{6}{k} = 2$.
+        { id: "C", text: "$3$" },
+        // distractor: both inverts the ratio and drops the sign, setting $\frac{k}{6} = 2$.
+        { id: "D", text: "$12$" }
       ],
       correctAnswer: "B",
-      hint: "Solve the second equation for x (since its coefficient is 1), substitute into the first, then find both values.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~20s):** Solve the second equation for $x$ (coefficient $1$): $x = 1 - 2y$. Substitute into the first: $2(1 - 2y) - y = 7 \\Rightarrow -5y = 5 \\Rightarrow y = -1$, then $x = 3$, so $x + y = 2$.\n\n**The Full Solution:**\nStep 1: From $x + 2y = 1$, isolate $x$: $x = 1 - 2y$.\nStep 2: Substitute into $2x - y = 7$: $2(1 - 2y) - y = 7$.\nStep 3: Distribute and solve: $2 - 4y - y = 7 \\Rightarrow -5y = 5 \\Rightarrow y = -1$.\nStep 4: Find $x$: $x = 1 - 2(-1) = 3$. Then $x + y = 3 + (-1) = 2$.\nStep 5: Check both equations: $2(3) - (-1) = 7$ and $3 + 2(-1) = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): a sign slip during distribution flips the result negative.\n* Choice C ($3$): that's $x$ alone — the question asks for $x + y$, so $y = -1$ must be added.\n* Choice D ($8$): adding the two right-hand sides $7 + 1$ instead of solving the system.\n\n**Test Day Takeaway:** When a question asks for an expression like $x + y$, solve for both variables and combine — never stop at a single variable.",
-      skills: ['substitution-method']
+      hint: "The exceptional value is the one that makes substitution eliminate $x$ as well as $y$.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~55s):** Substituting $y = 2x - 7$ into the second equation gives $(6 + 2k)x = 5 + 7k$. The $x$ term vanishes when $6 + 2k = 0$, so $k = -3$.\n\n**The Full Solution:**\nStep 1: Solve the first equation for $y$: $y = 2x - 7$.\nStep 2: Substitute into the second equation: $6x + k(2x - 7) = 5$, which becomes $(6 + 2k)x = 5 + 7k$.\nStep 3: This has exactly one solution for $x$ whenever $6 + 2k \\ne 0$. The single exception is $6 + 2k = 0$, so $k = -3$. Check: with $k = -3$ the second equation is $6x - 3y = 5$, or $2x - y = \\frac{5}{3}$, which is parallel to and distinct from $2x - y = 7$, so the system has no solution. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-12$): inverts the slope comparison, setting $-\\frac{k}{6} = 2$.\n* Choice C ($3$): drops the negative sign when reading the slope of $6x + ky = 5$, setting $\\frac{6}{k} = 2$.\n* Choice D ($12$): both inverts the ratio and drops the sign, setting $\\frac{k}{6} = 2$.\n\n**Test Day Takeaway:** Carry the parameter through the substitution and watch the coefficient of the surviving variable. When it hits zero, the system stops having exactly one solution.",
+      skills: ["substitution-method"]
     }
   ],
 
@@ -244,77 +293,93 @@ export const systemsQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "Solve by elimination: x + y = 10 and x - y = 2. What is x?",
+      question: "Adding the two equations $x + 3y = 19$ and $x - 3y = 1$ eliminates $y$. What is the value of $x$ in the solution to this system?",
       choices: [
-        { id: "A", text: "4" },
-        { id: "B", text: "6" },
-        { id: "C", text: "8" },
-        { id: "D", text: "12" }
+        // distractor: finishes the system but reports $y$ instead of $x$.
+        { id: "A", text: "$3$" },
+        // distractor: subtracts the equations to get $6y = 18$ and then divides by $2$ instead of $6$.
+        { id: "B", text: "$9$" },
+        { id: "C", text: "$10$" },
+        // distractor: adds correctly to $2x = 20$ but stops before dividing by $2$.
+        { id: "D", text: "$20$" }
       ],
-      correctAnswer: "B",
-      hint: "Notice the y terms have opposite signs. Adding the equations will eliminate y.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** The $y$ terms are $+y$ and $-y$, so add the equations: $2x = 12 \\Rightarrow x = 6$.\n\n**The Full Solution:**\nStep 1: Add $x + y = 10$ and $x - y = 2$: $(x + y) + (x - y) = 12$, so $2x = 12$.\nStep 2: Divide: $x = 6$.\nStep 3: Check: $x + y = 10$ gives $y = 4$, and $x - y = 6 - 4 = 2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): that's the value of $y$, not $x$.\n* Choice C ($8$): subtracting instead of adding gives $2y = 8$, and $8$ is mistaken for the answer.\n* Choice D ($12$): stopping at $2x = 12$ without dividing by $2$.\n\n**Test Day Takeaway:** When one variable appears with opposite signs, add the equations to cancel it in a single step.",
-      skills: ['elimination-method']
+      correctAnswer: "C",
+      hint: "Add the two left sides and the two right sides, then finish solving for the surviving variable.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** Adding gives $2x = 20$, so $x = 10$.\n\n**The Full Solution:**\nStep 1: The $y$-terms are $3y$ and $-3y$, which are opposites, so adding the equations removes $y$.\nStep 2: Adding left sides and right sides gives $2x = 20$.\nStep 3: Divide by $2$ to get $x = 10$. Check: $10 + 3y = 19$ gives $y = 3$, and $10 - 3(3) = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): finishes the system but reports $y$ instead of $x$.\n* Choice B ($9$): subtracts the equations to get $6y = 18$ and then divides by $2$ instead of $6$.\n* Choice D ($20$): adds correctly to $2x = 20$ but stops before dividing by $2$.\n\n**Test Day Takeaway:** Elimination gives you an equation, not an answer. Divide out the leading coefficient, then check which variable was requested.",
+      skills: ["elimination-method"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "Solve: 3x + 2y = 12 and 3x - 2y = 0. What is y?",
+      question: "A distribution dock logs $x$ standard pallets and $y$ oversized pallets per shipment, where $x + y = 40$ counts the pallets and $2x + 3y = 96$ gives the weight in hundreds of kilograms. Which equation results from multiplying the first equation by $2$ and subtracting that result from the second?",
       choices: [
-        { id: "A", text: "2" },
-        { id: "B", text: "3" },
-        { id: "C", text: "4" },
-        { id: "D", text: "6" }
+        // distractor: subtracts in the reverse order, 80 - 96, giving -16
+        { id: "A", text: "$y = -16$" },
+        { id: "B", text: "$y = 16$" },
+        // distractor: adds the y-terms (3y + 2y) while subtracting the constants
+        { id: "C", text: "$5y = 16$" },
+        // distractor: adds the right-hand sides, 96 + 80, instead of subtracting
+        { id: "D", text: "$y = 176$" }
       ],
       correctAnswer: "B",
-      hint: "The x coefficients are the same. Subtract one equation from the other to eliminate x.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** The $x$ terms match ($3x$ in both), so subtract: $(3x + 2y) - (3x - 2y) = 12 \\Rightarrow 4y = 12 \\Rightarrow y = 3$.\n\n**The Full Solution:**\nStep 1: Subtract the second equation from the first: $(3x + 2y) - (3x - 2y) = 12 - 0$.\nStep 2: Distribute the negative: $3x + 2y - 3x + 2y = 4y = 12$.\nStep 3: Divide: $y = 3$. Check: $3x + 2(3) = 12 \\Rightarrow x = 2$, and $3(2) - 2(3) = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): that's the value of $x$, not $y$.\n* Choice C ($4$): mishandling the subtracted negative so the $y$ terms cancel instead of add.\n* Choice D ($6$): adding the equations gives $6x = 12$; $6$ is a leftover from that wrong path.\n\n**Test Day Takeaway:** Equal coefficients call for subtraction. Subtracting $(3x - 2y)$ flips both signs to $-3x + 2y$ — distribute the negative to every term.",
-      skills: ['elimination-method']
+      hint: "Every term of the first equation is affected, the constant included.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** Doubling $x + y = 40$ gives $2x + 2y = 80$; the $x$-terms now match, so subtracting leaves $y = 16$.\n\n**The Full Solution:**\nStep 1: Multiply every term of $x + y = 40$ by $2$, which gives $2x + 2y = 80$.\nStep 2: Subtract that equation from $2x + 3y = 96$ term by term: $(2x - 2x) + (3y - 2y) = 96 - 80$.\nStep 3: The $x$-terms cancel and the $y$-terms leave $y = 16$. Check: $y = 16$ forces $x = 24$, and $2(24) + 3(16) = 48 + 48 = 96$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -16$): subtracting in the reverse order, $80 - 96$, flips the sign of the constant.\n* Choice C ($5y = 16$): adding the $y$-terms while subtracting the constants; the operation must be the same on every term.\n* Choice D ($y = 176$): adding the right-hand sides, $96 + 80$, when the instruction was to subtract.\n\n**Test Day Takeaway:** Scale first so one variable's coefficients match, then apply the same operation to every term on both sides.",
+      skills: ["elimination-method"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "To eliminate x from 2x + 3y = 8 and 5x - 2y = 1, multiply the first equation by:",
+      question: "A student plans to eliminate $x$ from the system of equations $4x + 5y = 23$ and $6x - 7y = 1$ by multiplying the first equation by $3$, multiplying the second equation by a constant $c$, and then subtracting. What is the value of $c$?",
       choices: [
-        { id: "A", text: "2" },
-        { id: "B", text: "5" },
-        { id: "C", text: "\u22125" },
-        { id: "D", text: "5 and the second by 2" }
+        // distractor: inverts the comparison, using $\frac{4}{6}$ instead of matching the scaled coefficient $12$.
+        { id: "A", text: "$\\frac{2}{3}$" },
+        // distractor: uses $\frac{6}{4}$, the factor that would match the coefficients without the multiplication by $3$.
+        { id: "B", text: "$\\frac{3}{2}$" },
+        { id: "C", text: "$2$" },
+        // distractor: copies the $x$-coefficient of the first equation instead of solving $6c = 12$.
+        { id: "D", text: "$4$" }
       ],
-      correctAnswer: "B",
-      hint: "To eliminate x, you need both equations to have the same x coefficient. Find the LCM of 2 and 5.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** To kill $x$, the question asks only what to multiply the *first* equation by. Scaling $2x + 3y = 8$ by $5$ makes its $x$ term $10x$, matching the $10x$ that the second equation reaches when doubled.\n\n**The Full Solution:**\nStep 1: The $x$ coefficients are $2$ and $5$; their LCM is $10$.\nStep 2: Multiply the first equation by $\\frac{10}{2} = 5$: $5(2x + 3y = 8) \\Rightarrow 10x + 15y = 40$.\nStep 3: Pair it with the doubled second equation $10x - 4y = 2$; subtracting eliminates $x$. The factor for the first equation is $5$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): gives $4x + 6y = 16$, whose $4x$ matches nothing in $5x - 2y = 1$.\n* Choice C ($-5$): produces $-10x - 15y = -40$, but without scaling the second equation the $x$ terms don't cancel.\n* Choice D ($5$ and the second by $2$): a valid full strategy, but the question asks only for the *first* equation's factor, which is $5$.\n\n**Test Day Takeaway:** To eliminate a variable, scale each equation by $\\frac{\\text{LCM}}{\\text{its coefficient}}$ — and answer exactly what the question asks for, not the whole procedure.",
-      skills: ['elimination-method']
+      correctAnswer: "C",
+      hint: "The two $x$-terms must end up identical before the subtraction can remove them.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~35s):** Multiplying the first equation by $3$ makes the $x$-term $12x$, so $6c = 12$ and $c = 2$.\n\n**The Full Solution:**\nStep 1: Multiplying $4x + 5y = 23$ by $3$ gives $12x + 15y = 69$, so the first $x$-term becomes $12x$.\nStep 2: Multiplying $6x - 7y = 1$ by $c$ gives $6cx - 7cy = c$, so the second $x$-term is $6cx$.\nStep 3: Subtraction removes $x$ only when $6c = 12$, so $c = 2$. Check: the second equation becomes $12x - 14y = 2$, and subtracting it from $12x + 15y = 69$ gives $29y = 67$, an equation in $y$ alone. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{2}{3}$): inverts the comparison, using $\\frac{4}{6}$ instead of matching the scaled coefficient $12$.\n* Choice B ($\\frac{3}{2}$): uses $\\frac{6}{4}$, the factor that would match the coefficients without the multiplication by $3$.\n* Choice D ($4$): copies the $x$-coefficient of the first equation instead of solving $6c = 12$.\n\n**Test Day Takeaway:** Scale each equation until the targeted coefficients match exactly, then decide whether to add or subtract based on their signs.",
+      skills: ["elimination-method"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "Solve: 4x + y = 11 and 2x + 3y = 13. What is the solution?",
+      question: "A conservation group sold $150$ seedlings at a plant sale and collected $\\$630$ in all. The table gives the price of each type of seedling. How many tree seedlings did the group sell?",
+      diagram: { type: "dataTable", params: { headers: ["Seedling type", "Price (dollars)"], rows: [["Shrub", "3"], ["Tree", "5"]] } },
       choices: [
-        { id: "A", text: "(2, 3)" },
-        { id: "B", text: "(3, 2)" },
-        { id: "C", text: "(1, 7)" },
-        { id: "D", text: "(4, -5)" }
+        // distractor: solves the system but reports $s$, the number of shrub seedlings.
+        { id: "A", text: "$60$" },
+        // distractor: assumes the two types sold in equal numbers, $\frac{150}{2}$, which the money total does not support.
+        { id: "B", text: "$75$" },
+        { id: "C", text: "$90$" },
+        // distractor: divides the total by the price of a tree seedling, $\frac{630}{5}$, as if every seedling sold were a tree.
+        { id: "D", text: "$126$" }
       ],
-      correctAnswer: "A",
-      hint: "Multiply the first equation by -3 to make the y coefficients opposites, then add the equations.",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~20s):** Multiply $4x + y = 11$ by $-3$ to make the $y$ terms opposites, then add to $2x + 3y = 13$: $-10x = -20 \\Rightarrow x = 2$, and $y = 11 - 8 = 3$, giving $(2, 3)$.\n\n**The Full Solution:**\nStep 1: Scale the first equation by $-3$: $-12x - 3y = -33$.\nStep 2: Add to $2x + 3y = 13$: $(-12x - 3y) + (2x + 3y) = -33 + 13 \\Rightarrow -10x = -20$.\nStep 3: Solve: $x = 2$. Substitute into $4x + y = 11$: $8 + y = 11 \\Rightarrow y = 3$.\nStep 4: Check: $2(2) + 3(3) = 13$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: $(3, 2)$ swaps $x$ and $y$ — $4(3) + 2 = 14 \\neq 11$.\n* Choice C: $(1, 7)$ fits the first equation but $2(1) + 3(7) = 23 \\neq 13$; comes from a sign slip on the $-3$ multiplication.\n* Choice D: $(4, -5)$ fits the first equation but $2(4) + 3(-5) = -7 \\neq 13$.\n\n**Test Day Takeaway:** Scale one equation so a variable's coefficients become opposites, then add — and verify the pair in the equation you didn't use to build it.",
-      skills: ['elimination-method']
+      correctAnswer: "C",
+      hint: "Write one equation for the number of seedlings and one for the money, then scale the first to match a coefficient in the second.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~40s):** With $s + t = 150$ and $3s + 5t = 630$, tripling the first and subtracting gives $2t = 180$, so $t = 90$.\n\n**The Full Solution:**\nStep 1: Let $s$ be the number of shrub seedlings and $t$ the number of tree seedlings. Then $s + t = 150$ and $3s + 5t = 630$.\nStep 2: Multiply the first equation by $3$ to get $3s + 3t = 450$, matching the $3s$ term.\nStep 3: Subtract from the money equation: $(3s + 5t) - (3s + 3t) = 630 - 450$, so $2t = 180$ and $t = 90$. Check: $s = 60$, and $3(60) + 5(90) = 180 + 450 = 630$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($60$): solves the system but reports $s$, the number of shrub seedlings.\n* Choice B ($75$): assumes the two types sold in equal numbers, $\\frac{150}{2}$, which the money total does not support.\n* Choice D ($126$): divides the total by the price of a tree seedling, $\\frac{630}{5}$, as if every seedling sold were a tree.\n\n**Test Day Takeaway:** Scale the count equation by one of the prices so a variable cancels. Then label your answer with the variable the question named.",
+      skills: ["elimination-method"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "Using elimination on 2x + 5y = 24 and 3x + 5y = 29, what is 5x?",
+      question: "In a system of two linear equations, the first equation is $3x + 5y = 22$ and the second equation is $5x + 3y = 26$. The solution to this system is the ordered pair $(x, y)$. What is the value of $x + y$?",
       choices: [
-        { id: "A", text: "5" },
-        { id: "B", text: "10" },
-        { id: "C", text: "25" },
-        { id: "D", text: "53" }
+        // distractor: reports the value of $y$ instead of the requested sum $x + y$.
+        { id: "A", text: "$2$" },
+        // distractor: reports the value of $x$ instead of the requested sum $x + y$.
+        { id: "B", text: "$4$" },
+        { id: "C", text: "$6$" },
+        // distractor: adds the two equations correctly but stops at $8x + 8y = 48$ without dividing by $8$.
+        { id: "D", text: "$48$" }
       ],
       correctAnswer: "C",
-      hint: "The y coefficients are already equal. Subtract the equations to find x directly, then multiply by 5.",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~15s):** The $5y$ terms match, so subtract: $(3x + 5y) - (2x + 5y) = 29 - 24 \\Rightarrow x = 5$. The question wants $5x$, so $5x = 25$.\n\n**The Full Solution:**\nStep 1: Subtract the first equation from the second to cancel $y$: $(3x + 5y) - (2x + 5y) = 29 - 24$.\nStep 2: That leaves $x = 5$.\nStep 3: The question asks for $5x$, not $x$: $5x = 5(5) = 25$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): that's $x$, but the question asks for $5x$.\n* Choice B ($10$): computing $5 + 5$ (adding) instead of $5 \\times 5$ (multiplying).\n* Choice D ($53$): adding the right-hand sides $24 + 29$ instead of subtracting them.\n\n**Test Day Takeaway:** Solve for the variable, then read the target again — the SAT often asks for $5x$ or $x + y$, not $x$ itself.",
-      skills: ['elimination-method']
+      hint: "The question asks only for $x + y$, so you may not need $x$ and $y$ separately.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~50s):** Adding the two equations gives $8x + 8y = 48$, so $x + y = \\frac{48}{8} = 6$.\n\n**The Full Solution:**\nStep 1: The coefficients of $x$ and $y$ are swapped between the equations, so neither variable cancels on its own. Add the equations instead: $(3x + 5y) + (5x + 3y) = 22 + 26$.\nStep 2: The left side collects to $8x + 8y$ and the right side is $48$, so $8(x + y) = 48$.\nStep 3: Divide both sides by $8$ to get $x + y = 6$. Check: subtracting the equations gives $-2x + 2y = -4$, so $y = x - 2$; with $x + y = 6$ that gives $x = 4$ and $y = 2$, and $3(4) + 5(2) = 22$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): reports the value of $y$ instead of the requested sum $x + y$.\n* Choice B ($4$): reports the value of $x$ instead of the requested sum $x + y$.\n* Choice D ($48$): adds the two equations correctly but stops at $8x + 8y = 48$ without dividing by $8$.\n\n**Test Day Takeaway:** When a system asks for $x + y$ rather than for one variable, add the equations before solving. Swapped coefficients often collapse into a multiple of $x + y$ in a single step.",
+      skills: ["elimination-method"]
     }
   ],
 
@@ -323,77 +388,94 @@ export const systemsQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "When graphing a system in Desmos, the solution is found at:",
+      question: "Two lines are graphed in the $xy$-plane, as shown. The lines are the graphs of the two equations in a system of linear equations. What is the $x$-coordinate of the solution to that system?",
+      diagram: { type: "twoLineGraph", params: { intersection: { x: -3, y: 1 }, slope1: 2, slope2: -1, xRange: [-6, 6], yRange: [-6, 8], showIntersection: false } },
       choices: [
-        { id: "A", text: "The y-intercepts" },
-        { id: "B", text: "The x-intercepts" },
-        { id: "C", text: "The intersection point(s)" },
-        { id: "D", text: "The highest point" }
+        { id: "A", text: "$-3$" },
+        // distractor: reads the $x$-intercept of the line with negative slope instead of the intersection point.
+        { id: "B", text: "$-2$" },
+        // distractor: reports the $y$-coordinate of the intersection point.
+        { id: "C", text: "$1$" },
+        // distractor: reads the $y$-intercept of the steeper line.
+        { id: "D", text: "$7$" }
       ],
-      correctAnswer: "C",
-      hint: "The solution must satisfy both equations. On a graph, where do both lines share the same point?",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~10s):** The solution to a system is the point that lies on both graphs — the intersection point(s).\n\n**The Full Solution:**\nStep 1: A solution $(x, y)$ must satisfy every equation, so it must lie on every graph at once.\nStep 2: The only point(s) on both lines are where they cross — the intersection.\nStep 3: In Desmos, click the intersection to read the coordinates. For $y = 2x + 1$ and $y = -x + 7$, that point is $(2, 5)$: $2(2) + 1 = 5$ and $-2 + 7 = 5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: $y$-intercepts belong to each line individually (where $x = 0$), not to the system.\n* Choice B: $x$-intercepts are likewise per-line (where $y = 0$), not the shared solution.\n* Choice D: \"the highest point\" has no meaning for lines, which extend without bound.\n\n**Test Day Takeaway:** A system's solution is always the intersection of its graphs — type both equations in Desmos and click where they meet.",
-      skills: ['graphing-systems', 'system-solution-types']
+      correctAnswer: "A",
+      hint: "Find the point where the two lines cross, then read only the horizontal coordinate.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~15s):** The lines cross at $(-3, 1)$, so the $x$-coordinate of the solution is $-3$.\n\n**The Full Solution:**\nStep 1: A point is a solution to the system exactly when it lies on both lines, which happens only at the intersection.\nStep 2: The lines cross three units left of the vertical axis and one unit above the horizontal axis, at $(-3, 1)$.\nStep 3: The $x$-coordinate of that point is $-3$. Check: the lines shown are $y = 2x + 7$ and $y = -x - 2$, and $2(-3) + 7 = 1$ while $-(-3) - 2 = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-2$): reads the $x$-intercept of the line with negative slope instead of the intersection point.\n* Choice C ($1$): reports the $y$-coordinate of the intersection point.\n* Choice D ($7$): reads the $y$-intercept of the steeper line.\n\n**Test Day Takeaway:** Locate the crossing point first, then read the coordinate the question names. Intercepts belong to one line only, so they are never solutions to the system.",
+      skills: ["graphing-systems", "system-solution-types"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "In Desmos, if two lines appear parallel, the system has:",
+      question: "A graphing tool displays the line $2x + 3y = 6$ and the line $y = -\\frac{2}{3}x + 5$ in the same viewing window. How many points do these two lines have in common?",
       choices: [
-        { id: "A", text: "One solution" },
-        { id: "B", text: "Two solutions" },
-        { id: "C", text: "No solution" },
-        { id: "D", text: "Infinitely many solutions" }
+        { id: "A", text: "Zero" },
+        // distractor: assumes any two distinct lines must cross, but lines with equal slopes never do.
+        { id: "B", text: "Exactly one" },
+        // distractor: two distinct lines can share at most one point, so exactly two is impossible.
+        { id: "C", text: "Exactly two" },
+        // distractor: this happens only when the two equations describe the same line, which would require equal $y$-intercepts as well as equal slopes.
+        { id: "D", text: "Infinitely many" }
       ],
-      correctAnswer: "C",
-      hint: "Parallel lines have the same slope but different y-intercepts. Will they ever cross?",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~10s):** Parallel lines never cross, so no point satisfies both equations — the system has no solution.\n\n**The Full Solution:**\nStep 1: Parallel lines share the same slope but have different $y$-intercepts: $m_1 = m_2$, $b_1 \\neq b_2$.\nStep 2: They stay a fixed distance apart and never meet, so there is no intersection point.\nStep 3: With no common point, no $(x, y)$ satisfies both equations — the system is inconsistent. Example: $y = 2x + 1$ and $y = 2x + 5$ never intersect.\n\n**Why the wrong answers are tempting:**\n* Choice A: one solution requires the lines to cross once, which parallel lines never do.\n* Choice B: two distinct lines meet at most once, so \"two solutions\" is impossible.\n* Choice D: infinitely many solutions happens only when the lines coincide, not when they are parallel and distinct.\n\n**Test Day Takeaway:** Same slope, different intercept means parallel lines and no solution — an inconsistent system.",
-      skills: ['graphing-systems', 'system-solution-types', 'parallel-line-slope']
+      correctAnswer: "A",
+      hint: "Rewrite the first equation in slope-intercept form before comparing the two lines.",
+      explanation: "**Choice A is correct.**\n\n**The Fast Way (~25s):** Both lines have slope $-\\frac{2}{3}$ but $y$-intercepts $2$ and $5$, so they are parallel and never meet.\n\n**The Full Solution:**\nStep 1: Solve $2x + 3y = 6$ for $y$: $3y = -2x + 6$, so $y = -\\frac{2}{3}x + 2$.\nStep 2: The second line is $y = -\\frac{2}{3}x + 5$. The slopes are equal, $-\\frac{2}{3}$, but the $y$-intercepts $2$ and $5$ are different.\nStep 3: Parallel and distinct lines never intersect, so the two lines share zero points. Check: setting the right sides equal gives $2 = 5$, which is never true. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: assumes any two distinct lines must cross, but lines with equal slopes never do.\n* Choice C: two distinct lines can share at most one point, so exactly two is impossible.\n* Choice D: this happens only when the two equations describe the same line, which would require equal $y$-intercepts as well as equal slopes.\n\n**Test Day Takeaway:** Convert to slope-intercept form before judging a graph. Equal slopes with different intercepts always means no points in common.",
+      skills: ["graphing-systems", "system-solution-types", "parallel-line-slope"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "If Desmos shows the lines overlapping completely, the system has:",
+      question: "The figure shows two lines drawn in the $xy$-plane. If the ordered pair $(x, y)$ lies on both lines, what is the value of $x + y$?",
+      diagram: { type: "twoLineGraph", params: { intersection: { x: 4, y: -2 }, slope1: -1, slope2: 0.5, xRange: [-6, 6], yRange: [-6, 6], showIntersection: false } },
       choices: [
-        { id: "A", text: "No solution" },
-        { id: "B", text: "One solution" },
-        { id: "C", text: "Two solutions" },
-        { id: "D", text: "Infinitely many solutions" }
+        // distractor: reports the $y$-coordinate alone instead of the sum.
+        { id: "A", text: "$-2$" },
+        { id: "B", text: "$2$" },
+        // distractor: reports the $x$-coordinate alone instead of the sum.
+        { id: "C", text: "$4$" },
+        // distractor: computes $x - y$ instead of $x + y$, dropping the negative sign on $y$.
+        { id: "D", text: "$6$" }
       ],
-      correctAnswer: "D",
-      hint: "If the lines overlap completely, they are the same line. How many points do they share?",
-      explanation: "**Choice D is correct.**\n\n**The Fast Way (~10s):** Lines that overlap completely are the same line, so every point on it solves both equations — infinitely many solutions.\n\n**The Full Solution:**\nStep 1: If two equations graph as the same line, one is a scalar multiple of the other — for example $y = 2x + 3$ and $2y = 4x + 6$.\nStep 2: Every point on that line satisfies both equations, and a line holds infinitely many points.\nStep 3: Algebraically, elimination collapses to $0 = 0$, the signal of a dependent system. Points like $(0, 3)$, $(1, 5)$, $(2, 7)$ all work.\n\n**Why the wrong answers are tempting:**\n* Choice A: no solution describes parallel, non-meeting lines — the opposite of full overlap.\n* Choice B: one solution means a single crossing point; overlapping lines share far more.\n* Choice C: two distinct lines meet at most once, so \"two solutions\" never applies here.\n\n**Test Day Takeaway:** Coincident lines (one equation a multiple of the other) give infinitely many solutions; watch for elimination reducing to $0 = 0$.",
-      skills: ['graphing-systems', 'system-solution-types', 'infinite-solutions-condition']
+      correctAnswer: "B",
+      hint: "Read both coordinates of the crossing point before combining them.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~25s):** The lines cross at $(4, -2)$, so $x + y = 4 + (-2) = 2$.\n\n**The Full Solution:**\nStep 1: A point lying on both lines must be their point of intersection.\nStep 2: The lines cross four units right of the vertical axis and two units below the horizontal axis, so $x = 4$ and $y = -2$.\nStep 3: Therefore $x + y = 4 + (-2) = 2$. Check: the lines shown are $y = -x + 2$ and $y = \\frac{1}{2}x - 4$, and both give $y = -2$ when $x = 4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): reports the $y$-coordinate alone instead of the sum.\n* Choice C ($4$): reports the $x$-coordinate alone instead of the sum.\n* Choice D ($6$): computes $x - y$ instead of $x + y$, dropping the negative sign on $y$.\n\n**Test Day Takeaway:** Read a graphed solution as a full ordered pair, then perform the arithmetic the question asks for. Watch signs below the horizontal axis.",
+      skills: ["graphing-systems", "system-solution-types", "infinite-solutions-condition"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "When using Desmos for the SAT, it's best to:",
+      question: "A water utility offers two billing plans. Plan A charges a $\\$20$ monthly fee plus $\\$3.50$ for each hundred cubic feet of water used, and Plan B charges a $\\$48$ monthly fee plus $\\$1.75$ for each hundred cubic feet used. For how many hundred cubic feet of water used do the two plans cost the same amount?",
       choices: [
-        { id: "A", text: "Graph only one equation" },
-        { id: "B", text: "Type both equations and find their intersection" },
-        { id: "C", text: "Guess and check values" },
-        { id: "D", text: "Use only the substitution method" }
+        // distractor: divides the fee gap by Plan A rate alone: 28 / 3.50 = 8, ignoring that Plan B also charges per unit
+        { id: "A", text: "$8$" },
+        { id: "B", text: "$16$" },
+        // distractor: reports the difference in monthly fees, 48 - 20 = 28, as though it were a usage amount
+        { id: "C", text: "$28$" },
+        // distractor: reports the sum of the two monthly fees, 48 + 20 = 68
+        { id: "D", text: "$68$" }
       ],
       correctAnswer: "B",
-      hint: "Desmos can find intersection points automatically. What's the most efficient way to use this feature?",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~10s):** Desmos solves a system fastest when you type both equations and click their intersection point.\n\n**The Full Solution:**\nStep 1: On the digital SAT, Desmos is embedded — enter each equation in the expression list.\nStep 2: Desmos plots both automatically; clicking the intersection shows the exact coordinates, which is the solution.\nStep 3: This is faster than hand algebra and removes the chance of arithmetic slips.\n\n**Why the wrong answers are tempting:**\n* Choice A: graphing one equation shows a single line and reveals nothing about where the system is solved.\n* Choice C: guess-and-check is slow and error-prone when Desmos gives the exact point instantly.\n* Choice D: substitution works, but using *only* it ignores the faster built-in graphing tool.\n\n**Test Day Takeaway:** For systems on the digital SAT, type both equations into Desmos and click the intersection — exact answer, no algebra errors.",
-      skills: ['graphing-systems']
+      hint: "Graph the two cost equations and look for the crossing point.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~25s):** Setting $20 + 3.50u = 48 + 1.75u$ gives $1.75u = 28$, so $u = 16$ hundred cubic feet.\n\n**The Full Solution:**\nStep 1: Write one equation per plan. With $u$ hundred cubic feet used, Plan A costs $20 + 3.50u$ dollars and Plan B costs $48 + 1.75u$ dollars.\nStep 2: Graph both lines and find where they cross. Algebraically, the crossing is where $20 + 3.50u = 48 + 1.75u$, so $1.75u = 28$ and $u = 16$.\nStep 3: Check both plans at $u = 16$. Plan A: $20 + 3.50(16) = 20 + 56 = 76$ dollars. Plan B: $48 + 1.75(16) = 48 + 28 = 76$ dollars. The lines meet at $(16, 76)$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): divides the $28$-dollar fee gap by Plan A rate alone. Plan B charges per unit too, so the rate DIFFERENCE closes the gap.\n* Choice C ($28$): is the difference in monthly fees, in dollars, not an amount of water.\n* Choice D ($68$): adds the two monthly fees, which no crossing point uses.\n\n**Test Day Takeaway:** Two cost plans meet where the fee gap is closed by the rate difference: divide the difference in fixed fees by the difference in rates.",
+      skills: ["graphing-systems"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "A Desmos graph shows lines y = 2x + 1 and y = 2x - 3 never touching. This means:",
+      question: "In the $xy$-plane, line $\\ell$ passes through the points $(-2, -9)$ and $(4, 3)$, and line $m$ is the graph of $3x + y = 25$. The two lines intersect at the point $(a, b)$. What is the value of $a + b$?",
       choices: [
-        { id: "A", text: "The solution is (0, 1)" },
-        { id: "B", text: "The solution is (2, 1)" },
-        { id: "C", text: "There are infinitely many solutions" },
-        { id: "D", text: "The system has no solution" }
+        // distractor: reports $a$ alone instead of the requested sum.
+        { id: "A", text: "$6$" },
+        // distractor: reports $b$ alone instead of the requested sum.
+        { id: "B", text: "$7$" },
+        { id: "C", text: "$13$" },
+        // distractor: multiplies the two coordinates instead of adding them.
+        { id: "D", text: "$42$" }
       ],
-      correctAnswer: "D",
-      hint: "Compare the slopes and y-intercepts of both lines. What does it mean when lines never touch?",
-      explanation: "**Choice D is correct.**\n\n**The Fast Way (~10s):** Both lines have slope $2$ but different $y$-intercepts ($1$ and $-3$), so they are parallel and never meet. No intersection means no solution.\n\n**The Full Solution:**\nStep 1: Read the slopes and intercepts straight off slope-intercept form. Line 1: slope $2$, intercept $1$. Line 2: slope $2$, intercept $-3$.\nStep 2: Equal slopes with unequal intercepts $\\Rightarrow$ parallel lines.\nStep 3: Set them equal to confirm: $2x+1=2x-3 \\Rightarrow 1=-3$, a contradiction. No $x$ works, so the system has no solution.\n\n**Why the wrong answers are tempting:**\n* Choice A ($(0,1)$): that is the $y$-intercept of the first line only; in line 2, $2(0)-3=-3 \\neq 1$, so it satisfies just one equation.\n* Choice B ($(2,1)$): testing line 1 gives $2(2)+1=5 \\neq 1$, so this point lies on neither line.\n* Choice C (infinitely many): that requires the two lines to be identical. Same slope but different intercepts makes them parallel, not coincident.\n\n**Test Day Takeaway:** Same slope and different intercept $\\Rightarrow$ parallel $\\Rightarrow$ no solution. Same slope and same intercept $\\Rightarrow$ one line $\\Rightarrow$ infinitely many. Different slopes $\\Rightarrow$ one solution.",
-      skills: ['graphing-systems', 'system-solution-types', 'parallel-line-slope']
+      correctAnswer: "C",
+      hint: "You need an equation for line $\\ell$ before the two lines can be compared.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~55s):** Line $\\ell$ has slope $2$ and equation $y = 2x - 5$. Solving with $3x + y = 25$ gives $(6, 7)$, so $a + b = 13$.\n\n**The Full Solution:**\nStep 1: The slope of line $\\ell$ is $\\frac{3 - (-9)}{4 - (-2)} = \\frac{12}{6} = 2$, and using the point $(4, 3)$ gives $y = 2x - 5$.\nStep 2: Substitute into $3x + y = 25$: $3x + (2x - 5) = 25$, so $5x = 30$ and $x = 6$.\nStep 3: Then $y = 2(6) - 5 = 7$, so $a = 6$, $b = 7$, and $a + b = 13$. Check: $3(6) + 7 = 25$, and $(-2, -9)$ satisfies $y = 2x - 5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): reports $a$ alone instead of the requested sum.\n* Choice B ($7$): reports $b$ alone instead of the requested sum.\n* Choice D ($42$): multiplies the two coordinates instead of adding them.\n\n**Test Day Takeaway:** When a line is described by two points rather than an equation, build its equation first. Only then can it be paired with the other equation as a system.",
+      skills: ["graphing-systems", "system-solution-types", "parallel-line-slope"]
     }
   ],
 
@@ -402,77 +484,92 @@ export const systemsQuestions = {
     {
       id: 1,
       difficulty: "easy",
-      question: "The system x + y = 5 and 2x + 2y = 10 has:",
+      question: "In the $xy$-plane, the equation $y = 3x - 5$ is graphed as one line and the equation $9x - 3y = 15$ is graphed as another. Which statement about the two graphs is true?",
       choices: [
-        { id: "A", text: "No solution" },
-        { id: "B", text: "One solution" },
-        { id: "C", text: "Two solutions" },
-        { id: "D", text: "Infinitely many solutions" }
+        // distractor: notices the equal slopes but stops there; the $y$-intercepts also match, so the lines coincide instead of running parallel.
+        { id: "A", text: "They are parallel and distinct." },
+        // distractor: assumes two equations always describe two crossing lines, which fails when the equations are multiples of each other.
+        { id: "B", text: "They intersect at exactly one point." },
+        // distractor: two lines can share at most one point unless they coincide entirely, so exactly two shared points is impossible.
+        { id: "C", text: "They intersect at exactly two points." },
+        { id: "D", text: "They are the same line." }
       ],
       correctAnswer: "D",
-      hint: "Try dividing the second equation by 2. What do you notice about the two equations?",
-      explanation: "**Choice D is correct.**\n\n**The Fast Way (~10s):** Divide the second equation by $2$: $2x+2y=10 \\Rightarrow x+y=5$. That is the first equation, so both describe the same line and every point on it is a solution.\n\n**The Full Solution:**\nStep 1: Simplify $2x+2y=10$ by dividing through by $2$ to get $x+y=5$.\nStep 2: This matches the first equation exactly, so the two equations represent the same line.\nStep 3: Every $(x,y)$ on $x+y=5$ satisfies both, so there are infinitely many solutions: $(0,5)$, $(1,4)$, $(2,3)$, and so on.\n\n**Why the wrong answers are tempting:**\n* Choice A (no solution): that needs parallel-but-distinct lines (same slope, different intercept). These equations are identical, not distinct.\n* Choice B (one solution): that needs two different lines crossing at a single point. Here both equations are the same line, so no single point is unique.\n* Choice C (two solutions): a system of two linear equations can never have exactly two solutions — the count is $0$, $1$, or infinitely many.\n\n**Test Day Takeaway:** If one equation is a constant multiple of the other, the lines are identical and the system has infinitely many solutions.",
-      skills: ['infinite-solutions-condition', 'system-solution-types']
+      hint: "Rewrite the second equation in slope-intercept form and compare it with the first.",
+      explanation: "**Choice D is correct.**\n\n**The Fast Way (~20s):** Dividing $9x - 3y = 15$ by $3$ gives $3x - y = 5$, or $y = 3x - 5$, which is the first equation.\n\n**The Full Solution:**\nStep 1: Solve $9x - 3y = 15$ for $y$: $-3y = -9x + 15$, so $y = 3x - 5$.\nStep 2: That is exactly the first equation, so the two equations are equivalent.\nStep 3: Equivalent equations have identical graphs, so the two lines coincide and every point on one lies on the other. Check: the second equation is $3$ times the equation $3x - y = 5$, so no new information is added. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: notices the equal slopes but stops there; the $y$-intercepts also match, so the lines coincide instead of running parallel.\n* Choice B: assumes two equations always describe two crossing lines, which fails when the equations are multiples of each other.\n* Choice C: two lines can share at most one point unless they coincide entirely, so exactly two shared points is impossible.\n\n**Test Day Takeaway:** Before counting intersections, reduce each equation to slope-intercept form. Matching slope and intercept means one line, not two.",
+      skills: ["infinite-solutions-condition", "system-solution-types"]
     },
     {
       id: 2,
       difficulty: "easy",
-      question: "For infinite solutions, the two equations must represent:",
+      question: "A greenhouse dosing unit delivers $x$ liters of concentrate A and $y$ liters of concentrate B per batch, and the two nutrient requirements are $3x + 12y = 45$ and $x + 4y = 15$. How many solutions $(x, y)$ does this system have?",
       choices: [
-        { id: "A", text: "Parallel lines" },
-        { id: "B", text: "Perpendicular lines" },
-        { id: "C", text: "The same line" },
-        { id: "D", text: "Lines with different slopes" }
+        // distractor: reads unequal coefficients as parallel distinct lines
+        { id: "A", text: "Zero" },
+        // distractor: assumes two written equations always cross exactly once
+        { id: "B", text: "Exactly one" },
+        // distractor: treats two lines as able to meet twice
+        { id: "C", text: "Exactly two" },
+        { id: "D", text: "Infinitely many" }
       ],
-      correctAnswer: "C",
-      hint: "If every point that satisfies one equation also satisfies the other, what must be true about the lines?",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~10s):** Two lines can only share infinitely many points if they are literally the same line — every point on one is a point on the other.\n\n**The Full Solution:**\nStep 1: Infinitely many solutions means infinitely many $(x,y)$ pairs satisfy both equations at once.\nStep 2: Two distinct lines meet at most once, so the only way to get infinitely many shared points is for the lines to coincide.\nStep 3: This happens when one equation is a scalar multiple of the other; solving algebraically collapses to a true identity like $0=0$.\n\n**Why the wrong answers are tempting:**\n* Choice A (parallel lines): same slope, different intercepts — they never meet, giving no solution, the opposite of infinite.\n* Choice B (perpendicular lines): slopes are negative reciprocals ($m_1 \\cdot m_2 = -1$); they cross at exactly one point.\n* Choice D (different slopes): always intersect at exactly one point, so one solution, not infinitely many.\n\n**Test Day Takeaway:** Map slopes to solution counts — different slopes give one solution, same slope with different intercepts gives none, same slope with same intercept (the same line) gives infinitely many.",
-      skills: ['infinite-solutions-condition', 'system-solution-types']
+      correctAnswer: "D",
+      hint: "Two requirements can describe the same batches without being written the same way.",
+      explanation: "**Choice D is correct.**\n\n**The Fast Way (~10s):** Dividing $3x + 12y = 45$ by $3$ gives $x + 4y = 15$, the second requirement itself, so the two describe one line.\n\n**The Full Solution:**\nStep 1: Divide every term of $3x + 12y = 45$ by $3$: $x + 4y = 15$.\nStep 2: That is exactly the second requirement, so any batch meeting one requirement meets the other.\nStep 3: A line in the $xy$-plane holds infinitely many points, so the system has infinitely many solutions. Check: $(15, 0)$ and $(7, 2)$ each satisfy both equations ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (Zero): reading the different coefficients as two parallel lines; parallel and distinct requires the constants NOT to scale by the same factor, and here $45 = 3 \\cdot 15$ does.\n* Choice B (Exactly one): assuming two written equations always cross once; identical lines never cross at a single point.\n* Choice C (Exactly two): two straight lines meet at most once unless they coincide, in which case they share every point.\n\n**Test Day Takeaway:** Before solving, test whether one equation is a constant multiple of the other — coefficients and constant alike.",
+      skills: ["infinite-solutions-condition", "system-solution-types"]
     },
     {
       id: 3,
       difficulty: "medium",
-      question: "For what value of k does 3x - 6y = 9 and x - 2y = k have infinite solutions?",
+      question: "A dairy scale's calibration frame carries $x$ steel blocks and $y$ ballast plates. Two loading rules give $6x + ky = 30$ and $9x + 12y = 45$, where $k$ is a constant and each total is a mass in kilograms. For what value of $k$ do the two rules impose exactly the same restriction?",
       choices: [
-        { id: "A", text: "k = 3" },
-        { id: "B", text: "k = 9" },
-        { id: "C", text: "k = -3" },
-        { id: "D", text: "k = 27" }
+        // distractor: copies the first rule's x-coefficient, 6, instead of scaling 12
+        { id: "A", text: "$6$" },
+        { id: "B", text: "$8$" },
+        // distractor: copies the second rule's y-coefficient, 12, ignoring the 2/3 scaling
+        { id: "C", text: "$12$" },
+        // distractor: inverts the ratio and computes 12 times 9/6 = 18
+        { id: "D", text: "$18$" }
       ],
-      correctAnswer: "A",
-      hint: "Divide the first equation by 3 to put it in the same form as the second. What should k equal for them to be identical?",
-      explanation: "**Choice A is correct.**\n\n**The Fast Way (~15s):** Divide $3x-6y=9$ by $3$ to get $x-2y=3$. To match $x-2y=k$, you need $k=3$.\n\n**The Full Solution:**\nStep 1: For infinitely many solutions the two equations must be the same line.\nStep 2: Scale the first equation to the second's coefficients: $3x-6y=9 \\Rightarrow x-2y=3$.\nStep 3: Comparing with $x-2y=k$ forces $k=3$. Both equations then read $x-2y=3$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($k=9$): kept the constant from the unscaled first equation; you must divide by $3$ first, which gives $3$.\n* Choice C ($k=-3$): sign slip — $9 \\div 3$ is $+3$, not $-3$.\n* Choice D ($k=27$): multiplied $9 \\times 3$ instead of dividing; the first equation must be scaled down, not up.\n\n**Test Day Takeaway:** For infinitely many solutions the coefficients and constant must be proportional: $\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}$. Here $\\frac{3}{1}=\\frac{-6}{-2}=\\frac{9}{k}$ gives $k=3$.",
-      skills: ['infinite-solutions-condition', 'system-solution-types']
+      correctAnswer: "B",
+      hint: "A restriction can be written more than one way and still allow exactly the same loads.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~20s):** Scaling $9x + 12y = 45$ by $\\frac{2}{3}$ turns $9x$ into $6x$ and $45$ into $30$, so $12y$ must become $8y$.\n\n**The Full Solution:**\nStep 1: Two rules restrict the same pairs only when every term of one is the same multiple of the matching term of the other. The $x$-terms give the factor $\\frac{6}{9} = \\frac{2}{3}$.\nStep 2: The constants agree with that factor: $\\frac{30}{45} = \\frac{2}{3}$.\nStep 3: So the $y$-terms must satisfy $\\frac{k}{12} = \\frac{2}{3}$, giving $k = 8$. Check: $\\frac{2}{3}$ of $9x + 12y = 45$ is $6x + 8y = 30$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): copying the first rule's $x$-coefficient instead of scaling the $12$.\n* Choice C ($12$): copying the second rule's $y$-coefficient and ignoring the $\\frac{2}{3}$ scaling.\n* Choice D ($18$): inverting the ratio and computing $12 \\cdot \\frac{9}{6} = 18$, which scales the wrong direction.\n\n**Test Day Takeaway:** One factor must carry every term — both coefficients and the constant — or the two equations are different lines.",
+      skills: ["infinite-solutions-condition", "system-solution-types"]
     },
     {
       id: 4,
       difficulty: "medium",
-      question: "If using elimination gives 0 = 0, the system has:",
+      question: "A student solves a system of two linear equations by elimination. After combining the equations, both variables drop out and the result is the true statement $0 = 0$. Which statement about the system must be true?",
       choices: [
-        { id: "A", text: "No solution" },
-        { id: "B", text: "Exactly one solution" },
-        { id: "C", text: "Infinitely many solutions" },
-        { id: "D", text: "An error" }
+        // distractor: no solution shows up as a false statement such as $0 = 7$, not as a true one.
+        { id: "A", text: "The system has no solution." },
+        // distractor: exactly one solution appears when elimination leaves a single variable with a single value, such as $5y = 20$.
+        { id: "B", text: "The system has exactly one solution." },
+        { id: "C", text: "The system has infinitely many solutions." },
+        // distractor: a system of two linear equations can never have exactly two solutions.
+        { id: "D", text: "The system has exactly two solutions." }
       ],
       correctAnswer: "C",
-      hint: "Is 0 = 0 always true, never true, or sometimes true? What does that tell you about the equations?",
-      explanation: "**Choice C is correct.**\n\n**The Fast Way (~10s):** $0=0$ is always true, so the two equations carry the same information — a dependent system with infinitely many solutions.\n\n**The Full Solution:**\nStep 1: When elimination cancels all variable terms, you are left with a statement about constants only.\nStep 2: $0=0$ is a true identity, which means one equation is a multiple of the other and they describe the same line.\nStep 3: Because the equations are equivalent, every $(x,y)$ that satisfies one satisfies both, giving infinitely many solutions.\n\n**Why the wrong answers are tempting:**\n* Choice A (no solution): that comes from a false statement like $0=5$, not $0=0$. The two outcomes are easy to swap.\n* Choice B (exactly one solution): one solution requires isolating a variable, such as $x=3$. Reaching $0=0$ means no variable was pinned down.\n* Choice D (an error): $0=0$ is a valid, meaningful result signaling dependence, not a mistake.\n\n**Test Day Takeaway:** After elimination, $0=0$ means infinitely many solutions (dependent), while $0=c$ with $c \\neq 0$ means no solution (inconsistent).",
-      skills: ['infinite-solutions-condition', 'elimination-method']
+      hint: "Ask whether the surviving statement is always true or never true.",
+      explanation: "**Choice C is correct.**\n\n**The Fast Way (~30s):** Both variables vanishing into a true statement means the second equation adds nothing new, so every solution of one equation solves the other.\n\n**The Full Solution:**\nStep 1: Elimination combines the two equations. If both variables cancel, the second equation carried no information beyond the first.\nStep 2: The leftover statement $0 = 0$ is true for every $x$ and $y$, so no ordered pair is ruled out by the combination.\nStep 3: The two equations therefore describe the same line, and every point on that line solves the system, giving infinitely many solutions. Check: eliminating between $x + 2y = 5$ and $3x + 6y = 15$ produces $0 = 0$, and those equations are multiples of each other. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: no solution shows up as a false statement such as $0 = 7$, not as a true one.\n* Choice B: exactly one solution appears when elimination leaves a single variable with a single value, such as $5y = 20$.\n* Choice D: a system of two linear equations can never have exactly two solutions.\n\n**Test Day Takeaway:** When elimination erases both variables, read the leftover statement: true means infinitely many solutions, false means none.",
+      skills: ["infinite-solutions-condition", "elimination-method"]
     },
     {
       id: 5,
       difficulty: "hard",
-      question: "Which system has infinitely many solutions?",
+      question: "Each of the four choices gives a system of two linear equations in $x$ and $y$, where each equation is written in the form $ax + by = c$. Which of these systems has infinitely many solutions?",
       choices: [
-        { id: "A", text: "y = 2x + 3, y = 2x - 1" },
-        { id: "B", text: "y = 2x + 3, 2y = 4x + 6" },
-        { id: "C", text: "y = 2x + 3, y = 3x + 2" },
-        { id: "D", text: "y = 2x + 3, y = -2x + 3" }
+        // distractor: doubling the first equation gives $4x - 10y = 18$, not $20$, so those lines are parallel and distinct and the system has no solution.
+        { id: "A", text: "$2x - 5y = 9$ and $4x - 10y = 20$" },
+        { id: "B", text: "$3x + 7y = 12$ and $-9x - 21y = -36$" },
+        // distractor: doubling the first equation gives $2x + 8y = 12$, not $6$, so again the lines are parallel and distinct.
+        { id: "C", text: "$x + 4y = 6$ and $2x + 8y = 6$" },
+        // distractor: the sign of the $y$-coefficient changes, so the slopes differ and the lines meet at exactly one point.
+        { id: "D", text: "$5x - 2y = 8$ and $5x + 2y = 8$" }
       ],
       correctAnswer: "B",
-      hint: "Simplify each system to see if both equations reduce to the same line. Divide or multiply to compare.",
-      explanation: "**Choice B is correct.**\n\n**The Fast Way (~15s):** In Choice B, divide $2y=4x+6$ by $2$ to get $y=2x+3$ — the same line as the first equation, so infinitely many solutions.\n\n**The Full Solution:**\nStep 1: Simplify the second equation in Choice B: $2y=4x+6 \\Rightarrow y=2x+3$.\nStep 2: This is identical to the first equation $y=2x+3$, so both describe one line and every point on it is a solution.\nStep 3: Confirm the others fail: A has equal slopes but different intercepts (parallel, no solution); C and D have different slopes (one intersection each).\n\n**Why the wrong answers are tempting:**\n* Choice A: same slope $2$, intercepts $3$ and $-1$ — parallel lines with no solution, often confused with coincident lines.\n* Choice C: slopes $2$ and $3$ differ; setting $2x+3=3x+2$ gives $x=1$, $y=5$ — exactly one solution.\n* Choice D: slopes $2$ and $-2$ are opposite, not equal, so the lines cross at $(0,3)$ — one solution, not infinitely many.\n\n**Test Day Takeaway:** A system has infinitely many solutions only when one equation is a scalar multiple of the other; check that $\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}$.",
-      skills: ['infinite-solutions-condition', 'system-solution-types']
+      hint: "Test whether one equation in each pair is a single constant multiple of the other, constant term included.",
+      explanation: "**Choice B is correct.**\n\n**The Fast Way (~55s):** Multiplying $3x + 7y = 12$ by $-3$ gives $-9x - 21y = -36$, so the two equations describe the same line.\n\n**The Full Solution:**\nStep 1: A system has infinitely many solutions exactly when one equation is a nonzero multiple of the other, coefficients and constant alike.\nStep 2: In choice B the $x$-coefficients give the factor $\\frac{-9}{3} = -3$, and the $y$-coefficients agree since $-3(7) = -21$.\nStep 3: The constant also scales: $-3(12) = -36$, so the second equation is exactly $-3$ times the first and the system has infinitely many solutions. Check: dividing the second equation by $-3$ reproduces the first. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: doubling the first equation gives $4x - 10y = 18$, not $20$, so those lines are parallel and distinct and the system has no solution.\n* Choice C: doubling the first equation gives $2x + 8y = 12$, not $6$, so again the lines are parallel and distinct.\n* Choice D: the sign of the $y$-coefficient changes, so the slopes differ and the lines meet at exactly one point.\n\n**Test Day Takeaway:** Check the constant last. A pair whose coefficients scale but whose constant does not is the classic no-solution trap hiding among infinitely-many choices.",
+      skills: ["infinite-solutions-condition", "system-solution-types"]
     }
   ]
 };

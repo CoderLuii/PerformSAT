@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-193",
+ "question": "A periodicals budget balances in the two quarters $a$ and $b$ given by the solutions of $5x^2-40x+35=0$. What is the value of $\\frac{1}{a}+\\frac{1}{b}$?",
+ "correctAnswer": "8/7",
+ "explanation": "**SAT Pattern: Sum/Product of Roots — Vieta's**\n\n**The correct answer is $\\frac{8}{7}$.**\n\n**The Fast Way (~25s):** $\\frac{1}{a}+\\frac{1}{b}=\\frac{a+b}{ab}$, and Vieta's gives $a+b=8$ and $ab=7$, so the value is $\\frac{8}{7}$.\n\n**The Full Solution:**\nStep 1: From $5x^2-40x+35=0$, the sum is $-\\frac{-40}{5}=8$ and the product is $\\frac{35}{5}=7$.\nStep 2: Combine the reciprocals over a common denominator: $\\frac{1}{a}+\\frac{1}{b}=\\frac{a+b}{ab}$.\nStep 3: Substitute: $\\frac{8}{7}$. Check: the solutions are $1$ and $7$, and $\\frac{1}{1}+\\frac{1}{7}=\\frac{8}{7}$ ✓\n\n**Common Mistakes:**\n* $\\frac{7}{8}$: writes $\\frac{ab}{a+b}$, inverting the combined fraction.\n* $8$: reports the sum $a+b$ and never divides by the product.\n* $7$: reports the product $ab$ instead of the combined reciprocal.\n\n**Test Day Takeaway:** Rewrite a reciprocal sum as $\\frac{\\text{sum}}{\\text{product}}$ — both pieces come straight from the coefficients."
+}

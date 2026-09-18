@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-054",
+  "question": "The function $M$ defined by $M(t) = 320(1.15)^{t}$ models the number of members of a hiking club $t$ years after the club was founded. Which of the following is the best interpretation of $320$ in this context?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The club had $320$ members when it was founded."
+    },
+    {
+      "id": "B",
+      "text": "The club gains $320$ members each year."
+    },
+    {
+      "id": "C",
+      "text": "The number of members increases by $320\\%$ each year."
+    },
+    {
+      "id": "D",
+      "text": "The club had $320$ members one year after it was founded."
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads the initial value as a constant yearly increase",
+    "C": "confuses the initial value with the growth rate",
+    "D": "evaluates at $t = 1$ instead of $t = 0$"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Interpret Initial Value in Context**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** $M(0) = 320(1.15)^{0} = 320$, so $320$ is the membership at the founding.\n\n**The Full Solution:**\nStep 1: In $M(t) = ab^{t}$, the constant $a$ is the output when the exponent is $0$.\nStep 2: Substituting $t = 0$ gives $M(0) = 320(1.15)^{0} = 320(1) = 320$.\nStep 3: Since $t$ counts years since the club was founded, $t = 0$ is the founding, so the club began with $320$ members. Check the other constant: $1.15$ means membership grows by $15\\%$ per year. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: a fixed yearly gain would be a linear model like $320 + ct$; here the yearly gain grows every year.\n* Choice C: the growth rate is $15\\%$, carried by the base $1.15$, not by $320$.\n* Choice D: after one year the club has $M(1) = 320(1.15) = 368$ members, not $320$.\n\n**Test Day Takeaway:** In an exponential model the coefficient out front is the value at time zero; the base carries the rate. Read each constant's job before interpreting."
+}

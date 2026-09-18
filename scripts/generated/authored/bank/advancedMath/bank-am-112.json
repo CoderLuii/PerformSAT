@@ -1,0 +1,50 @@
+{
+ "id": "bank-am-112",
+ "question": "A dose-response curve $f$ is drawn in the figure, and a second preparation is modeled by $g(x)=2f(x)$. What is the $y$-coordinate of the highest point on the graph of $y=g(x)$?",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    2,
+    6
+   ],
+   "a": -1,
+   "showPoints": [
+    [
+     0,
+     2
+    ],
+    [
+     4,
+     2
+    ]
+   ],
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "divides the maximum by 2 instead of multiplying: 6/2 = 3",
+  "B": "leaves the maximum unchanged, treating the stretch as horizontal",
+  "C": "adds 2 to the maximum instead of multiplying: 6 + 2 = 8"
+ },
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The drawn curve peaks at $y=6$, and doubling every output doubles that peak to 12.\n\n**The Full Solution:**\nStep 1: The highest point of the drawn graph is $(2,6)$, so the greatest value of $f$ is 6.\nStep 2: The rule $g(x)=2f(x)$ multiplies every output by 2 and leaves inputs alone, so $g$ peaks at the same input.\nStep 3: The peak value is $2(6)=12$. Check: $f(0)=2$ from the graph, and $g(0)=4$, still below 12 ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): divides by 2, the effect of $\\frac{1}{2}f(x)$ rather than $2f(x)$.\n* Choice B ($6$): keeps the original maximum, as if the 2 acted on the input.\n* Choice C ($8$): adds 2 to the maximum instead of multiplying by 2.\n\n**Test Day Takeaway:** A coefficient outside the function scales outputs — the location of the peak stays put while its height multiplies."
+}

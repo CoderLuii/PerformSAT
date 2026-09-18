@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-052",
+  "question": "The number of deer in a preserve $t$ years after monitoring began is modeled by $D(t) = \\dfrac{5{,}400}{3 + 24e^{-0.4t}}$. As $t$ increases without bound, the value of $D(t)$ gets closer and closer to which of the following?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$200$"
+    },
+    {
+      "id": "B",
+      "text": "$900$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}800$"
+    },
+    {
+      "id": "D",
+      "text": "$5{,}400$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports $D(0) = 200$, the herd size when monitoring began",
+    "B": "reports half the ceiling, the size at the model's steepest point",
+    "D": "quotes the numerator, assuming the denominator's constant is $1$ rather than $3$"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Logistic Carrying Capacity**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** As $t \\to \\infty$, $e^{-0.4t} \\to 0$, so the denominator approaches $3$, not $1$. The value approaches $\\dfrac{5{,}400}{3} = 1{,}800$ deer.\n\n**The Full Solution:**\nStep 1: The only place $t$ appears is in $e^{-0.4t}$. Because the exponent $-0.4t$ becomes large and negative as $t$ grows, $e^{-0.4t}$ shrinks toward $0$.\nStep 2: The denominator $3 + 24e^{-0.4t}$ therefore approaches $3 + 24(0) = 3$. The constant term of the denominator survives, and here that constant is $3$ rather than the $1$ of the textbook form.\nStep 3: So $D(t)$ approaches $\\dfrac{5{,}400}{3} = 1{,}800$ deer, the largest population the model allows. Check the trend: $D(0) = \\dfrac{5{,}400}{27} = 200$, $D(10) \\approx 1{,}570$, and $D(20) \\approx 1{,}795$ — rising toward $1{,}800$ but never reaching it. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($200$): this is $D(0) = \\dfrac{5{,}400}{3 + 24}$, the starting herd size, not the long-run size.\n* Choice B ($900$): half of $1{,}800$ is the population at the model's steepest point, not its ceiling.\n* Choice D ($5{,}400$): quotes the numerator, which is the ceiling only when the denominator's constant term is $1$; here it is $3$.\n\n**Test Day Takeaway:** In $\\dfrac{N}{c + Ae^{-kt}}$ with $k > 0$ the decaying term dies out, so the long-run value is $\\dfrac{N}{c}$ — read the denominator's constant before quoting the numerator."
+}

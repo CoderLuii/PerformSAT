@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "In a random sample of $240$ vans drawn from a regional delivery fleet, the mean odometer reading was $47.6$ thousand kilometers, and the associated margin of error was $2.3$ thousand kilometers. Which statement about odometer readings is best supported?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mean odometer reading of all vans in the fleet is between $43.0$ and $52.2$ thousand kilometers."
+  },
+  {
+   "id": "B",
+   "text": "The mean odometer reading of all vans in the fleet is between $45.3$ and $47.6$ thousand kilometers."
+  },
+  {
+   "id": "C",
+   "text": "The mean odometer reading of the $240$ sampled vans is between $45.3$ and $49.9$ thousand kilometers."
+  },
+  {
+   "id": "D",
+   "text": "The mean odometer reading of all vans in the fleet is between $45.3$ and $49.9$ thousand kilometers."
+  }
+ ],
+ "distractorNotes": {
+  "A": "doubles the margin of error before building the interval, giving 47.6 plus or minus 4.6",
+  "B": "subtracts the margin but keeps the sample mean itself as the upper bound",
+  "C": "attaches the interval to the 240 sampled vans, whose mean is already known exactly to be 47.6"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The interval is the sample mean plus or minus the margin: $47.6 - 2.3 = 45.3$ and $47.6 + 2.3 = 49.9$, and it describes the whole fleet.\n\n**The Full Solution:**\nStep 1: A margin of error is applied to the sample mean in both directions to estimate the population value.\nStep 2: Lower bound $= 47.6 - 2.3 = 45.3$ thousand kilometers; upper bound $= 47.6 + 2.3 = 49.9$ thousand kilometers.\nStep 3: The population here is every van in the fleet, not the $240$ sampled, so the supported statement is that the fleet's mean lies between $45.3$ and $49.9$ thousand kilometers. Check the width: the interval spans $49.9 - 45.3 = 4.6$, which is twice the $2.3$ margin, as it must be. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($43.0$ to $52.2$): doubles the margin before applying it, using $\\pm 4.6$. The margin of error is already the full one-sided distance.\n* Choice B ($45.3$ to $47.6$): subtracts the margin but leaves the sample mean as the top of the interval, making it one-sided. A margin of error extends above the mean as well as below.\n* Choice C (the $240$ sampled vans): builds the right interval but attaches it to the sample. The sample's mean is known to be exactly $47.6$; the interval estimates the unknown population mean.\n\n**Test Day Takeaway:** Sample mean $\\pm$ margin of error, applied once in each direction, and the resulting interval always describes the POPULATION, never the sample you already measured."
+}

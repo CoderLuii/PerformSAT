@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-034",
+ "question": "At a certain time of day, a street sign $4$ meters tall casts a shadow $3$ meters long, and a nearby transmission tower casts a shadow $42$ meters long. What is the height, in meters, of the tower?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$31.5$"
+  },
+  {
+   "id": "B",
+   "text": "$43$"
+  },
+  {
+   "id": "C",
+   "text": "$56$"
+  },
+  {
+   "id": "D",
+   "text": "$168$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the proportion",
+  "B": "adds the one-meter difference to the tower shadow",
+  "D": "multiplies without dividing by the sign shadow"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Shadow Similar Triangles**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The sign is $\\frac{4}{3}$ as tall as its shadow, and the same ratio holds for the tower: $h = \\frac{4}{3}(42) = 56$ meters.\n\n**The Full Solution:**\nStep 1: The sun's rays strike both objects at the same angle, so the two object-and-shadow right triangles are similar.\nStep 2: Corresponding sides are proportional: $\\frac{4}{3} = \\frac{h}{42}$.\nStep 3: Cross multiply: $3h = 168$, so $h = 56$ meters.\n\nVerification: $\\frac{56}{42} = \\frac{4}{3}$, the same height-to-shadow ratio as the sign. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($31.5$): inverts the proportion, computing $\\frac{3}{4}(42)$; that would make the tower shorter than its shadow while the sign is taller than its own.\n* Choice B ($43$): adds the $1$-meter gap between the sign's height and shadow to $42$; similar triangles scale by multiplication, not by a constant difference.\n* Choice D ($168$): multiplies $4 \\cdot 42$ and never divides by $3$.\n\n**Test Day Takeaway:** Set the proportion up as height over shadow for both objects. Check the direction with a quick sanity test: if one object is taller than its shadow, so is the other."
+}

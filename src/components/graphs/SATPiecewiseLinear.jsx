@@ -46,10 +46,12 @@ const SATPiecewiseLinear = ({
   const xPadding = (dataXMax - dataXMin) * 0.15 || 1;
   const yPadding = (dataYMax - dataYMin) * 0.15 || 1;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- a fresh array each render, so the coordSystem useMemo below always recomputes; wrapping it would newly memoize and change render identity
   const xRange = providedXRange || [
     Math.floor(dataXMin - xPadding),
     Math.ceil(dataXMax + xPadding),
   ];
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- a fresh array each render, so the coordSystem useMemo below always recomputes; wrapping it would newly memoize and change render identity
   const yRange = providedYRange || [
     Math.floor(dataYMin - yPadding),
     Math.ceil(dataYMax + yPadding),

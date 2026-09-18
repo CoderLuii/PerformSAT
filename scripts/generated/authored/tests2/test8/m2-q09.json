@@ -1,0 +1,29 @@
+{
+  "id": 9,
+  "question": "One curtain-wall panel is rectangular, is $3$ feet wider than twice its height, and covers $90$ square feet. Trim is installed along all four edges of the panel. What total length of trim, in feet, does the panel need?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$21$"
+    },
+    {
+      "id": "B",
+      "text": "$24$"
+    },
+    {
+      "id": "C",
+      "text": "$42$"
+    },
+    {
+      "id": "D",
+      "text": "$60$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds height and width, 6 + 15, without doubling for the four edges",
+    "B": "treats the panel as a square of side 6, computing 4 times the height",
+    "D": "treats the panel as a square of side 15, computing 4 times the width"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Rectangle Area**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** With height $h$ the width is $2h + 3$, so $h(2h + 3) = 90$ gives $h = 6$ and width $15$; the trim is $2(6 + 15) = 42$ feet.\n\n**The Full Solution:**\nStep 1: Let $h$ be the height in feet. The width is $2h + 3$ feet, and the area gives $h(2h + 3) = 90$.\nStep 2: Expand and set to zero: $2h^2 + 3h - 90 = 0$. Factoring gives $(2h + 15)(h - 6) = 0$, and a height must be positive, so $h = 6$ feet and the width is $2(6) + 3 = 15$ feet.\nStep 3: Trim runs the full perimeter: $2(6 + 15) = 42$ feet. Check the givens: $6 \\times 15 = 90$ square feet, and $15$ is $3$ more than twice $6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($21$): adds the height and width once, $6 + 15$, forgetting that a rectangle has two of each.\n* Choice B ($24$): computes $4(6)$, treating the panel as a square built from the height.\n* Choice D ($60$): computes $4(15)$, treating the panel as a square built from the width.\n\n**Test Day Takeaway:** When one dimension is described in terms of the other, name that dimension, build the area equation, and solve before you touch the perimeter."
+}

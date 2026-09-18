@@ -1,31 +1,31 @@
 {
-  "id": 722,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "Combining satellite measurements of trace gases with atmospheric transport models can pinpoint where atmospheric carbon dioxide originates, identifying ______ sources and sinks across continents and oceans. The technique has become central to projections of how natural carbon reservoirs will respond to a warming climate.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "they're"
-    },
-    {
-      "id": "B",
-      "text": "its"
-    },
-    {
-      "id": "C",
-      "text": "their"
-    },
-    {
-      "id": "D",
-      "text": "it's"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The pronoun refers to the singular noun \"carbon dioxide,\" and a possessive is needed before \"sources and sinks,\" so the singular possessive \"its\" is correct. Choice C's \"their\" is plural and does not agree with the singular antecedent. Choices A and D are contractions — \"they are\" and \"it is\" — not possessives, so neither fits the grammar of the sentence."
+ "id": 722,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "Saffron commands a high price partly because the crop is so exacting. Mapping soil drainage and autumn temperatures across a hillside lets growers match ______ notoriously narrow requirements — fast-draining soil, dry summers, a cool but not freezing flowering season — to the ground most likely to satisfy them.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "they're"
+  },
+  {
+   "id": "B",
+   "text": "its"
+  },
+  {
+   "id": "C",
+   "text": "their"
+  },
+  {
+   "id": "D",
+   "text": "it's"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The blank needs a possessive pointing back to \"the crop\" — one thing — so the singular possessive \"its\" is the form that fits: the crop's notoriously narrow requirements.\n\n**The Full Solution:**\n- Identify the antecedent: the requirements belong to saffron, called \"the crop\" in the first sentence — a singular noun.\n- The slot is possessive: the word must show that the requirements belong to it, so a possessive form is required, not a contraction.\n- Apply the its/it's test: \"it is notoriously narrow requirements\" fails, confirming the possessive \"its.\"\n\n**Why the other choices are wrong:**\n- A: \"They're\" is the contraction of \"they are\" — plural and not a possessive.\n- C: \"Their\" is possessive but plural, and the antecedent \"the crop\" is singular.\n- D: \"It's\" is the contraction of \"it is,\" which the substitution test rules out."
 }

@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 1,
- "passage": "Volcanologist Katharine Cashman studies how gas escapes from magma as it rises toward the surface. When magma ascends slowly, dissolved gases have time to seep out gradually, and eruptions tend to be gentle. When magma ascends quickly, the gases stay trapped until the last moment and then expand all at once, so that an eruption that might otherwise have been mild becomes violently ______.",
+ "passage": "In the online puzzle game Foldit, players manipulate three-dimensional models of proteins, competing to find the most stable folded shapes. In 2011, players deciphered the structure of a virus enzyme that had resisted automated analysis for more than a decade. Researchers who studied the players' solutions credited their spatial ______: the best competitors invented folding strategies that the software's designers had never programmed into it.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "explosive"
+   "text": "speed"
   },
   {
    "id": "B",
-   "text": "audible"
+   "text": "caution"
   },
   {
    "id": "C",
-   "text": "frequent"
+   "text": "ingenuity"
   },
   {
    "id": "D",
-   "text": "predictable"
+   "text": "obedience"
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A. The sentence contrasts slow ascent, which lets gas leak out and produces gentle eruptions, with fast ascent, in which trapped gas suddenly expands. A word for what such a rapid release makes an eruption is needed, and \"explosive\" captures the violent, all-at-once expansion the passage describes. \"Audible\" names a sound rather than the force of the eruption; \"frequent\" describes how often eruptions occur, not how forceful one is; and \"predictable\" runs against the passage, since a sudden release is exactly what makes an eruption hard to anticipate."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** Inventing folding approaches no one supplied is a matter of creative skill, and \"ingenuity\" names exactly that quality.\n\n**The Full Solution:**\n- The colon introduces the evidence for the blank: players \"invented folding strategies that the software's designers had never programmed.\"\n- A word that credits the players must name the quality shown by inventing unprogrammed strategies — creative resourcefulness, i.e., \"ingenuity.\"\n\n**Why the other choices are wrong:**\n- A: \"Speed\" is never discussed — the enzyme resisted analysis for a decade, and the passage praises what players found, not how fast.\n- B: \"Caution\" has no support in the text.\n- D: \"Obedience\" is contradicted directly: the players succeeded by going beyond what the program prescribed."
 }

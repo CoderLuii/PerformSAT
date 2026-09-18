@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-346",
+  "question": "A restaurant buys a commercial freezer for $\\$6{,}300$. The freezer reduces the restaurant's spoilage losses by $\\$525$ each month. Which function $f$ gives the portion of the purchase price, in dollars, not yet recovered by these savings after $m$ months?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(m) = 525m - 6{,}300$"
+    },
+    {
+      "id": "B",
+      "text": "$f(m) = 6{,}300 + 525m$"
+    },
+    {
+      "id": "C",
+      "text": "$f(m) = 6{,}300 - 525(m - 1)$"
+    },
+    {
+      "id": "D",
+      "text": "$f(m) = 6{,}300 - 525m$"
+    }
+  ],
+  "correctAnswer": "D",
+  "distractorNotes": {
+    "A": "sign reversed: gives savings minus price",
+    "B": "added the savings to the price instead of subtracting",
+    "C": "skipped the first month of savings"
+  },
+  "explanation": "**SAT Pattern: Linear Cost Model**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Start at $6{,}300$ and subtract $525$ for each month: $f(m) = 6{,}300 - 525m$.\n\n**The Full Solution:**\nStep 1: At $m = 0$ nothing has been recovered, so $f(0)$ must equal the full price $6{,}300$; the constant is $6{,}300$.\nStep 2: Each month recovers $525$, which REDUCES the unrecovered amount, so the rate is $-525$ per month.\nStep 3: Combine: $f(m) = 6{,}300 - 525m$.\nCheck: after $12$ months, $6{,}300 - 525(12) = 6{,}300 - 6{,}300 = 0$; the freezer has paid for itself in exactly one year. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($f(m) = 525m - 6{,}300$): reverses the sign; it would give $-6{,}300$ at $m = 0$ and grow instead of shrink.\n* Choice B ($f(m) = 6{,}300 + 525m$): adds the savings to the price, as if each month made the freezer more expensive.\n* Choice C ($f(m) = 6{,}300 - 525(m - 1)$): delays the savings by a month; $f(0)$ would be $6{,}825$, more than the purchase price.\n\n**Test Day Takeaway:** Anchor a cost model with its value at zero, then decide whether the per-unit amount increases or decreases it; a quick $m = 0$ test kills most wrong choices."
+}

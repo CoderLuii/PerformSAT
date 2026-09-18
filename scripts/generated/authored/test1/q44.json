@@ -6,35 +6,35 @@
  "domain": "standard-english-conventions",
  "skill": "boundaries",
  "module": 2,
- "passage": "Linguist Wallace Chafe ______ argued that spoken language unfolds in short bursts called intonation units. These bursts roughly correspond to the limited focus of moment-to-moment consciousness, suggesting that even the grammatical structure of everyday talk is shaped by cognitive constraints on speaker attention rather than by purely linguistic rules.",
+ "passage": "Architect Zaha Hadid ______ designed buildings whose sweeping, fluid geometries seemed to defy conventional construction, from the Heydar Aliyev Center in Baku to the London Aquatics Centre built for the 2012 Olympic Games.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": " a longtime professor of linguistics at UC Santa Barbara,"
+   "text": " the first woman to receive the Pritzker Architecture Prize,"
   },
   {
    "id": "B",
-   "text": ", a longtime professor of linguistics at UC Santa Barbara"
+   "text": ", the first woman to receive the Pritzker Architecture Prize"
   },
   {
    "id": "C",
-   "text": " a longtime professor of linguistics at UC Santa Barbara"
+   "text": " the first woman to receive the Pritzker Architecture Prize"
   },
   {
    "id": "D",
-   "text": ", a longtime professor of linguistics at UC Santa Barbara,"
+   "text": ", the first woman to receive the Pritzker Architecture Prize,"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D, \", a longtime professor of linguistics at UC Santa Barbara,\". The blank holds a nonrestrictive appositive — extra biographical information about Wallace Chafe that could be removed without changing which person the sentence is about, since \"Wallace Chafe\" already uniquely identifies him. Standard English requires a nonrestrictive appositive to be set off from the main clause by a matched pair of bracketing marks: paired commas, paired em-dashes, or paired parentheses. Because the inserted phrase contains no internal commas of its own, the lightest matched pair — paired commas — is the canonical choice. Choice D places a comma both before and after the appositive, cleanly opening and closing the insertion so the main clause \"Linguist Wallace Chafe…argued that spoken language unfolds in short bursts…\" reads through unbroken.",
+ "explanation": "**Choice D is correct.** The blank holds a nonrestrictive appositive, which Standard English sets off with a matched pair of commas: \", the first woman to receive the Pritzker Architecture Prize,\".\n\n**The Full Solution:**\n- The phrase is supplementary — \"Architect Zaha Hadid\" already identifies her uniquely, so the appositive could be removed without changing who is meant.\n- A nonrestrictive appositive takes paired bracketing marks; with no internal commas in the phrase, paired commas are the conventional choice, letting the main clause read through unbroken.\n\n**Why the other choices are wrong:**\n- A: It supplies only the closing comma, leaving the appositive fused to the name on its left.\n- B: It supplies only the opening comma, so the appositive crashes into the verb \"designed\" with no closing boundary.\n- C: It omits both commas, treating the supplementary phrase as if it restricted which Zaha Hadid is meant.",
  "_meta": {
   "rule": "paired commas around a nonrestrictive appositive (no internal commas)",
-  "anchor": "Wallace Chafe — UC Santa Barbara linguist; intonation units / consciousness ('Discourse, Consciousness, and Time', 1994)",
+  "anchor": "Zaha Hadid — first woman to receive the Pritzker Architecture Prize (2004); Heydar Aliyev Center; London Aquatics Centre",
   "distractors": {
-   "B": "surface-match (opening comma only — looks like start of paired-comma pattern, missing close)",
-   "C": "scope-shift (closing comma only — different rule: trailing-interrupter / list-tail comma)",
-   "D": "inverse (no commas — treats appositive as restrictive)"
+   "A": "closing comma only (appositive fused to the name on the left)",
+   "B": "opening comma only (surface-match to the start of the paired pattern, missing close)",
+   "C": "no commas (treats the appositive as restrictive)"
   }
  }
 }

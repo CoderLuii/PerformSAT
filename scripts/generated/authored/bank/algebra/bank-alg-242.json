@@ -1,0 +1,58 @@
+{
+ "id": "bank-alg-242",
+ "question": "The graph shows line $c$ in the $xy$-plane. For what value of the constant $k$ does the graph of the equation $\\frac{k}{2}x + y = 9$ never meet line $c$ anywhere?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2.5,
+   "yIntercept": -1,
+   "xRange": [
+    -4,
+    4
+   ],
+   "yRange": [
+    -6,
+    8
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     -1
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "label": "c"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{5}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reports line $c$'s slope instead of solving for $k$",
+  "C": "drops the negative sign when solving $-\\frac{k}{2} = \\frac{5}{2}$",
+  "D": "copies the constant term of $\\frac{k}{2}x + y = 9$"
+ },
+ "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Line $c$ has slope $\\frac{5}{2}$, and $-\\frac{k}{2} = \\frac{5}{2}$ gives $k = -5$.\n\n**The Full Solution:**\nStep 1: Line $c$ passes through $(0, -1)$ and $(2, 4)$, so its slope is $\\frac{4 - (-1)}{2 - 0} = \\frac{5}{2}$.\nStep 2: Rewrite $\\frac{k}{2}x + y = 9$ as $y = -\\frac{k}{2}x + 9$, so its slope is $-\\frac{k}{2}$.\nStep 3: Graphs that never meet have equal slopes, so $-\\frac{k}{2} = \\frac{5}{2}$ and $k = -5$; the intercepts $9$ and $-1$ differ, so the lines are distinct. Check: $-\\frac{-5}{2} = \\frac{5}{2}$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{5}{2}$): reports line $c$'s slope instead of solving for $k$\n* Choice C ($5$): drops the negative sign when solving $-\\frac{k}{2} = \\frac{5}{2}$\n* Choice D ($9$): copies the constant term of $\\frac{k}{2}x + y = 9$\n\n**Test Day Takeaway:** Solve the given equation for $y$ before comparing slopes; the sign in front of $k$ is where these are lost."
+}

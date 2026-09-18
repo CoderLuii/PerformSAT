@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "Two constraints of a scheduling model, $6x - 9y = 15$ and $kx + 12y = 7$, apply to the same pair of quantities, yet no ordered pair $(x, y)$ meets them both. What is the value of the constant $k$ in the second constraint?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-18$"
+  },
+  {
+   "id": "B",
+   "text": "$-8$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 3/2, the reciprocal of the first constraint's slope 2/3",
+  "C": "matches the slopes but drops the minus sign that dividing by 12y introduces",
+  "D": "flips the slope to 3/2 and also drops the minus sign"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** No solution means equal slopes. The first constraint has slope $\\frac{2}{3}$ and the second has slope $-\\frac{k}{12}$, so $-\\frac{k}{12} = \\frac{2}{3}$ and $k = -8$.\n\n**The Full Solution:**\nStep 1: Solve each constraint for $y$. From $6x - 9y = 15$: $9y = 6x - 15$, so $y = \\frac{2}{3}x - \\frac{5}{3}$. From $kx + 12y = 7$: $12y = -kx + 7$, so $y = -\\frac{k}{12}x + \\frac{7}{12}$.\nStep 2: Two linear equations have no common solution exactly when their slopes are equal and their $y$-intercepts differ: $-\\frac{k}{12} = \\frac{2}{3}$.\nStep 3: Solve: $k = -12 \\cdot \\frac{2}{3} = -8$. Check the intercepts: $-\\frac{5}{3}$ and $\\frac{7}{12}$ are different, so the lines are parallel and distinct rather than identical. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-18$): sets $-\\frac{k}{12} = \\frac{3}{2}$, inverting the first slope. Reading $6x - 9y = 15$ as slope $\\frac{9}{6}$ flips rise and run.\n* Choice C ($8$): sets $\\frac{k}{12} = \\frac{2}{3}$, forgetting that moving $kx$ across the equal sign makes the slope $-\\frac{k}{12}$.\n* Choice D ($18$): combines both slips, inverting the slope and dropping the sign.\n\n**Test Day Takeaway:** Put both equations in slope-intercept form before comparing. No solution needs equal slopes AND different intercepts — always confirm the intercepts differ, or the system has infinitely many solutions instead."
+}

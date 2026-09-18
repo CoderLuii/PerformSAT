@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "A lighting technician finds that the two dimmer settings at which a fixture's measured illuminance equals its target are the two solutions of $x^2 + bx + 45 = 0$, where $b$ is a constant. Both solutions are positive and they differ by $4$. What is the value of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-14$"
+    },
+    {
+      "id": "B",
+      "text": "$-9$"
+    },
+    {
+      "id": "C",
+      "text": "$9$"
+    },
+    {
+      "id": "D",
+      "text": "$14$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "negates the larger solution, 9, instead of negating the sum of the two solutions",
+    "C": "reports the larger solution, 9, rather than a value of b",
+    "D": "reports the sum of the solutions, 14, without the minus sign that b carries"
+  },
+  "correctAnswer": "A",
+  "hint": "The two solutions multiply to 45 and their sum is tied to b.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** The two settings multiply to $45$ and differ by $4$, so they are $5$ and $9$; their sum is $14$, and $b = -14$.\n\n**The Full Solution:**\nStep 1: Use the product. For $x^2 + bx + 45 = 0$, the two solutions multiply to $45$. Positive pairs are $1$ and $45$, $3$ and $15$, $5$ and $9$.\nStep 2: Use the gap. Only $5$ and $9$ differ by $4$.\nStep 3: Convert the sum to $b$ and check. The solutions sum to $-b$, so $5 + 9 = 14$ gives $b = -14$. Then $x^2 - 14x + 45 = (x - 5)(x - 9)$, with solutions $5$ and $9$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-9$): negates the larger solution instead of the sum of the two.\n* Choice C ($9$): is the larger dimmer setting, not the coefficient $b$.\n* Choice D ($14$): is the sum of the two solutions. For $x^2 + bx + c$ the sum equals $-b$, so the sign flips.\n\n**Test Day Takeaway:** For $x^2 + bx + c = 0$: the solutions multiply to $c$ and sum to $-b$. Two positive solutions force $b$ to be negative."
+}

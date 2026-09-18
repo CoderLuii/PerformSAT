@@ -16,6 +16,9 @@
  * skill grain; per-pattern telemetry would refine it (a follow-up).
  */
 
+import { formatPatternLabel } from './missedPatternLabel';
+import { getRecentDrillStats } from './focusAreaProgress';
+
 // Fixed drill sizes by section — a targeted set is ~a dozen questions. Reading
 // sets run a touch shorter. Deliberately NOT derived from `duration`: the
 // generator's durations are inconsistent (a 5-question section is 15 min), so a
@@ -24,12 +27,14 @@ const DRILL_QUESTIONS = { math: 12, rw: 10 };
 // Minutes per question when we must estimate minutes from a question count.
 const MIN_PER_Q = { math: 1.2, rw: 1.6 };
 
-/** Humanize a kebab pattern slug into a short, title-cased round label. */
+/** Humanize a kebab pattern slug into a short round label. Delegates to the
+ *  canonical formatter (it expands R&W skill abbreviations — the local
+ *  title-caser leaked 'Fss …' to students), then caps length. */
 function humanizePattern(slug) {
   if (!slug || typeof slug !== 'string') return '';
-  const words = slug.split('-').filter(Boolean);
-  const label = words.slice(0, 4).map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-  return words.length > 4 ? `${label}…` : label;
+  const label = formatPatternLabel(slug) || '';
+  const words = label.split(' ');
+  return words.length > 5 ? `${words.slice(0, 5).join(' ')}…` : label;
 }
 
 /** Strip the redundant "Practice:" / "Drill:" prefix from an activity title. */
@@ -121,7 +126,7 @@ export function activitySummary(activity) {
  * @returns {Array<{ label: string, status: 'done'|'active'|'todo',
  *   prog: string, complete: boolean }>}  empty for non-practice activities.
  */
-export function activityBreakdown(activity, skillProgress = {}) {
+export function activityBreakdown(activity, skillProgress = {}, { sinceMs = null } = {}) {
   if (!activity || activity.type !== 'practice') return [];
 
   const patterns = Array.isArray(activity.missedPatterns)
@@ -131,11 +136,15 @@ export function activityBreakdown(activity, skillProgress = {}) {
   const totalQ = estimateActivityQuestions(activity).n || DRILL_QUESTIONS[sectionOf(activity)];
   const perRound = Math.max(3, Math.round(totalQ / roundCount));
 
+  // DRILL evidence only, and only since the plan existed (sinceMs = the
+  // plan's generatedAt). Raw skillProgress.attempts includes test/diagnostic
+  // seeding, which fabricated day-one round progress ("9/10 Q" on sessions
+  // the student never opened — founder-flagged). getRecentDrillStats filters
+  // history to entries after the cutoff.
   const sp = (activity.skillId && skillProgress) ? skillProgress[activity.skillId] : null;
-  const attempts = sp && typeof sp.attempts === 'number' ? sp.attempts : 0;
-  const mastery = sp
-    ? (typeof sp.mastery === 'number' ? sp.mastery : (attempts ? (sp.correct / attempts) * 100 : 0))
-    : 0;
+  const stats = getRecentDrillStats(sp, sinceMs ?? null);
+  const attempts = stats ? stats.attempts : 0;
+  const mastery = stats ? stats.accuracy : 0;
   const completed = !!activity.completed;
   const hasStarted = attempts > 0;
   const doneRounds = completed

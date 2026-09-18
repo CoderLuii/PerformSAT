@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 1,
- "passage": "When researchers first explored the hydrothermal vents of the Galápagos Rift in 1977, they were startled to find dense animal communities thriving in waters that never see sunlight. The base of these food webs, it turned out, was not plant matter drifting from above but bacteria that ______ energy directly from the hydrogen sulfide venting out of the seafloor, converting an inorganic chemical into the fuel that sustains an entire ecosystem.",
+ "passage": "Roman road surveyors laid out new routes with the groma, an instrument whose hanging plumb lines allowed its user to sight a perfectly straight course toward a distant marker. Because even a small error would compound over many miles, crews checked their line repeatedly, resighting from one high point to the next so that the intended alignment was ______ across valleys and broken ground rather than gradually lost in them.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "release"
+   "text": "concealed"
   },
   {
    "id": "B",
-   "text": "store"
+   "text": "shortened"
   },
   {
    "id": "C",
-   "text": "transmit"
+   "text": "debated"
   },
   {
    "id": "D",
-   "text": "extract"
+   "text": "preserved"
   }
  ],
  "correctAnswer": "D",
- "explanation": "Choice D is correct. The passage explains that the vent communities are sustained not by sunlight but by bacteria that draw usable energy out of the hydrogen sulfide in the vent water. \"Extract\" fits this idea of pulling energy from a chemical source. \"Release\" reverses the direction, since the bacteria take energy in rather than give it off; \"store\" describes holding energy rather than obtaining it; and \"transmit\" describes passing energy along rather than capturing it from the sulfide."
+ "explanation": "**Choice D is correct.** The blank must name what repeated resighting did for the alignment, and the sentence's own contrast supplies the answer: the line was kept intact \"rather than gradually lost.\"\n\n**The Full Solution:**\n- The passage explains that small errors compound over distance, which is why crews resighted the line from high point to high point.\n- The final contrast, \"rather than gradually lost,\" tells you the blank means the opposite of lost: the alignment was preserved.\n\n**Why the other choices are wrong:**\n- A: \"Concealed\" would mean the crews hid the line, but their goal was to keep it accurate, not invisible.\n- B: \"Shortened\" misstates the aim; resighting protects the line's straightness, not its length.\n- C: \"Debated\" introduces a disagreement the passage never mentions; the surveyors were checking a line, not arguing over it."
 }

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-091",
+ "question": "Two ways of recording a kayak paddle rate agree at every positive value of $x$: one logbook stores $\\left(\\sqrt[5]{x^{n}}\\right)^{3}$ and the other stores $x^{6}\\sqrt[5]{x^{3}}$, where $x$ is a stroke ratio and $n$ is a constant. What is the value of $n$?",
+ "correctAnswer": "11",
+ "explanation": "**SAT Pattern: Exponent Rules with Radicals**\n\n**The correct answer is $11$.**\n\n**The Fast Way (~35s):** The left side is $x^{3n/5}$ and the right side is $x^{33/5}$, so $3n = 33$ and $n = 11$.\n\n**The Full Solution:**\nStep 1: $\\sqrt[5]{x^{n}} = x^{n/5}$, and raising that to the third power multiplies exponents: $x^{3n/5}$.\nStep 2: On the right, $x^{6}\\sqrt[5]{x^{3}} = x^{6} \\cdot x^{3/5} = x^{6 + 3/5} = x^{33/5}$.\nStep 3: Equal bases force $\\frac{3n}{5} = \\frac{33}{5}$, so $3n = 33$ and $n = 11$. Check: $\\left(\\sqrt[5]{x^{11}}\\right)^{3} = x^{33/5}$ ✓\n\n**Common Mistakes:**\n* $10$ — dropping the $\\sqrt[5]{x^{3}}$ factor and solving $\\frac{3n}{5} = 6$.\n* $33$ — cancelling the fifths but forgetting to divide by the outer power of $3$.\n\n**Test Day Takeaway:** Give both sides the same denominator in the exponent; once the fifths match, only the whole-number equation is left."
+}

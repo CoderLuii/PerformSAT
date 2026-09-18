@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "For a linear calibration, an instrument reading is given by $f(x) = a(x - 4) + 9$, where $a$ is a constant and $x$ is the input in millivolts. The technician measures $f(10) = 33$. At what input, in millivolts, does the reading equal $-3$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-19$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$1$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "evaluates f(-3) = 4(-3 - 4) + 9 instead of solving f(x) = -3",
+  "B": "reads the output -3 as the input, reporting the number already given",
+  "D": "mishandles the sign in 4(x - 4) = -12, solving x - 4 = 3 to get x = 7"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Solve $f(a) = c$**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** $f(10)=6a+9=33$ gives $a=4$; then $4(x-4)+9=-3$ gives $x-4=-3$, so $x=1$.\n\n**The Full Solution:**\nStep 1: Pin down the constant. $f(10)=a(10-4)+9=6a+9$. Setting $6a+9=33$ gives $6a=24$, so $a=4$.\nStep 2: Write the equation the question asks about. $f(x)=-3$ means $4(x-4)+9=-3$.\nStep 3: Solve for the input. Subtracting $9$ gives $4(x-4)=-12$, so $x-4=-3$ and $x=1$. Check: $f(1)=4(1-4)+9=-12+9=-3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-19$): substitutes $-3$ for $x$ and evaluates, $4(-3-4)+9=-19$ — that answers \"what is $f(-3)$?\", the reverse of what is asked.\n* Choice B ($-3$): reports the given output as though it were the input; $-3$ is the reading, not the value of $x$ that produces it.\n* Choice D ($7$): loses the negative sign in $4(x-4)=-12$, solving $x-4=3$.\n\n**Test Day Takeaway:** Two-stage function questions ask you to find the constant first, then solve. Before answering, ask which slot the given number occupies — input or output — since the distractors are built from swapping them.\n"
+}

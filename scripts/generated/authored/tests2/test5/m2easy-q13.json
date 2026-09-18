@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "A storage rack holds $34$ drives, each with a capacity of either $4$ terabytes or $12$ terabytes, and the drives have a combined capacity of $264$ terabytes. How many of the drives have a capacity of $12$ terabytes?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$16$"
+  },
+  {
+   "id": "B",
+   "text": "$18$"
+  },
+  {
+   "id": "C",
+   "text": "$22$"
+  },
+  {
+   "id": "D",
+   "text": "$32$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves the system correctly but reports the number of 4-terabyte drives",
+  "C": "divides the total capacity by 12, assuming every drive is a 12-terabyte drive",
+  "D": "divides the extra capacity 128 by 4 instead of by the 8-terabyte difference"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** If all $34$ drives held $4$ TB the rack would hold $136$ TB; each swap to a $12$ TB drive adds $8$ TB, and $\\frac{264 - 136}{8} = 16$.\n\n**The Full Solution:**\nStep 1: Let $s$ be the number of $4$-terabyte drives and $\\ell$ the number of $12$-terabyte drives. The count gives $s + \\ell = 34$ and the capacity gives $4s + 12\\ell = 264$.\nStep 2: Substitute $s = 34 - \\ell$ into the capacity equation: $4(34 - \\ell) + 12\\ell = 264$, so $136 + 8\\ell = 264$.\nStep 3: Then $8\\ell = 128$ and $\\ell = 16$; check: $s = 18$, and $4(18) + 12(16) = 72 + 192 = 264$ terabytes ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($18$): this is $s$, the number of $4$-terabyte drives, found correctly and then reported for the wrong variable.\n* Choice C ($22$): computes $264 \\div 12 = 22$, which would be the count only if every drive were a $12$-terabyte drive — but then the rack would hold $22$ drives, not $34$.\n* Choice D ($32$): divides the extra capacity $264 - 136 = 128$ by $4$ rather than by the $8$-terabyte gap between the two drive sizes; $32$ large drives and $2$ small ones would give $4(2) + 12(32) = 392$ terabytes, far past the $264$ stated.\n\n**Test Day Takeaway:** Name both unknowns, write the count equation and the total equation, and check at the end which unknown the question actually asked for."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-327",
+ "question": "A team's training app reports a session's load index as $25^{3x}$, while the season summary sheet gives the same index as $5^{kx}$; the two agree at every positive value of $x$. What constant must $k$ be?",
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~20s):** $25^{3x} = 5^{6x}$, so matching with $5^{kx}$ gives $k = 6$.\n\n**The Full Solution:**\nStep 1: Write the left base over the shared base $5$: $25 = 5^{2}$, so $25^{3x} = \\left(5^{2}\\right)^{3x}$.\nStep 2: A power of a power multiplies exponents: $\\left(5^{2}\\right)^{3x} = 5^{6x}$.\nStep 3: Since $5^{6x} = 5^{kx}$ for every positive $x$, the exponents match and $k = 6$. Check: at $x = 2$, $25^{6} = 244{,}140{,}625$ and $5^{12} = 244{,}140{,}625$ ✓\n\n**Common Mistakes:**\n* $3$ — leaving the exponent as it stands and never converting $25$ to $5^{2}$.\n* $15$ — multiplying $5$ by $3$, using the base as though it were an exponent.\n\n**Test Day Takeaway:** Converting a base to a power of a smaller base multiplies the exponent by that power — here every exponent doubles."
+}

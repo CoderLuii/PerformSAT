@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-335",
+  "question": "A print shop's charge for an order of posters is modeled by $\\hat{y} = 2.4x + 18$, where $y$ is the total charge, in dollars, for an order of $x$ posters. Which of the following best describes the value $18$ in this model?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The charge for each poster in the order"
+    },
+    {
+      "id": "B",
+      "text": "A one-time charge applied to the order regardless of the number of posters"
+    },
+    {
+      "id": "C",
+      "text": "The number of posters included in the order at no additional charge"
+    },
+    {
+      "id": "D",
+      "text": "The total charge for an order of $1$ poster"
+    }
+  ],
+  "distractorNotes": {
+    "A": "describes the slope $2.4$, the per-poster charge.",
+    "C": "reads $18$ as a count of posters, but $18$ is a value of $y$ and $y$ is measured in dollars.",
+    "D": "evaluates the model at $x = 1$, which gives $2.4(1) + 18 = \\$20.40$, not $\\$18$."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Intercept of Best Fit**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** At $x = 0$ posters the model still charges $\\$18$, so $\\$18$ is a fixed charge that does not depend on the order size.\n\n**The Full Solution:**\nStep 1: The value $18$ is the constant term, so it is the predicted total charge when $x = 0$.\nStep 2: An order of $0$ posters incurs no per-poster charge, so everything left is charge that applies no matter how many posters are ordered.\nStep 3: That makes $\\$18$ a one-time charge on the order, with $\\$2.40$ added per poster. Check: an order of $10$ posters costs $2.4(10) + 18 = \\$42$, which is $\\$24$ of poster charges plus the $\\$18$ fixed amount. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: describes the slope $2.4$, the per-poster charge.\n* Choice C: reads $18$ as a count of posters, but $18$ is a value of $y$ and $y$ is measured in dollars.\n* Choice D: evaluates the model at $x = 1$, which gives $2.4(1) + 18 = \\$20.40$, not $\\$18$.\n\n**Test Day Takeaway:** In a \"fixed fee plus rate\" model, the constant term is the fee and the coefficient is the rate. Test a choice by substituting $x = 0$ and $x = 1$."
+}

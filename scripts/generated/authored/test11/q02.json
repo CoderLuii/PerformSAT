@@ -1,34 +1,41 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "overlooked"
-    },
-    {
-      "id": "B",
-      "text": "prevented"
-    },
-    {
-      "id": "C",
-      "text": "exaggerated"
-    },
-    {
-      "id": "D",
-      "text": "anticipated"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"overlooked.\" The passage contrasts the old method, which watched only the glacier's front, with newer surveys that reveal thinning hidden below the waterline. The older approach simply failed to register those losses, and \"overlooked\" captures that failure to notice. \"Exaggerated\" and \"anticipated\" would mean the old method saw the losses too vividly or saw them coming, the reverse of missing them, and \"prevented\" describes stopping the melt rather than detecting it.",
-  "passage": "For most of the twentieth century, glaciologists judged the health of a glacier mainly by measuring how far its front advanced or retreated each year. Recent radar and satellite surveys suggest that this surface view can mislead: a glacier may hold a steady front while thinning dramatically from below, where comparatively warm ocean water melts the ice from underneath. Such hidden losses, researchers note, were almost entirely ______ by the older method of tracking front position alone.",
-  "_meta": {
-    "anchor": "glaciology: front-position monitoring vs. basal thinning from warm ocean water"
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "shine"
   },
-  "id": 1102,
-  "module": 1
+  {
+   "id": "B",
+   "text": "wilt"
+  },
+  {
+   "id": "C",
+   "text": "scatter"
+  },
+  {
+   "id": "D",
+   "text": "grow"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** On an \"ideal\" morning, a lawn the gardener has been mowing and sweeping since dawn would gleam — the grass and rosettes \"seemed to shine.\"\n\n**The Full Solution:**\n- Every detail of the scene is glowing: the weather is \"ideal,\" the sky is veiled \"with a haze of light gold.\"\n- The gardener's dawn work — mowing and sweeping — is presented as the cause of the blank: freshly tended grass looking polished and bright.\n- \"Shine\" completes that cause-and-effect picture precisely.\n\n**Why the other choices are wrong:**\n- B: \"Wilt\" describes drooping or fading, which clashes with the perfect morning the passage builds.\n- C: \"Scatter\" would mean the grass and rosettes spread in pieces — sweeping has just tidied them, not dispersed them.\n- D: \"Grow\" is not an effect a morning's mowing and sweeping could produce; the sentence needs the immediate visual result of that care.",
+ "passage": "The following text is adapted from Katherine Mansfield's 1922 short story \"The Garden Party.\"\n\nAnd after all the weather was ideal. They could not have had a more perfect day for a garden-party if they had ordered it. Windless, warm, the sky without a cloud. Only the blue was veiled with a haze of light gold, as it is sometimes in early summer. The gardener had been up since dawn, mowing the lawns and sweeping them, until the grass and the dark flat rosettes where the daisy plants had been seemed to ______.",
+ "_meta": {
+  "anchor": "Katherine Mansfield, \"The Garden Party\" (1922) — opening paragraph",
+  "quoteVerify": true,
+  "source": "Katherine Mansfield, \"The Garden Party,\" The Garden Party and Other Stories (1922) — Project Gutenberg ebook 1429; blank replaces the original word \"shine\"",
+  "distractors": {
+   "B": "tone reversal — clashes with the ideal morning",
+   "C": "illogical result of sweeping",
+   "D": "not an effect of mowing and sweeping"
+  }
+ },
+ "id": 1102,
+ "module": 1
 }

@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "inferences",
-  "passage": "Working in lowland rain forests in the state of Veracruz, the tropical ecologist Rodolfo Dirzo has spent decades comparing forest plots that retain their full complement of large vertebrates with neighboring plots from which those animals have been hunted out. Two patterns recur across his sites. In plots without large mammals and birds, the seedlings of tree species with big seeds — which the missing animals would have carried away from the parent tree — fail at high rates and recruit poorly. Over the same intervals, the seedlings of tree species with smaller seeds, which can be moved by wind or by the small rodents and insects that remain, persist and reach maturity at rates indistinguishable from the unhunted plots. Because the patterns track seed size and the kinds of dispersers each size requires, Dirzo's combined findings suggest that ______",
+  "passage": "The small marshes called prairie potholes once dotted the upper Midwest by the millions before most were drained for farming. Restoring one would seem to demand heavy intervention, and some early projects did invest in engineered plantings of wetland species. Follow-up surveys, though, found that many of those plantings failed outright, while basins where crews did nothing more than break the buried drainage tiles refilled with the next season's rains — and wetland plants, sprouting from seeds that had lain dormant in the soil, returned on their own within a few years. The comparison suggests that ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "tropical tree species with large seeds depend exclusively on a single species of large vertebrate for dispersal and cannot be moved by any other agent."
+      "text": "wetland plants cannot establish themselves in basins that have ever been drained for farming."
     },
     {
       "id": "B",
-      "text": "any tropical forest from which large vertebrates have been removed will lose its small-seeded tree species at the same rate as its large-seeded ones, regardless of which dispersers remain."
+      "text": "restoring a drained pothole requires planting a wider variety of wetland species than early projects used."
     },
     {
       "id": "C",
-      "text": "the loss of large vertebrates in tropical forests can gradually shift the composition of the canopy toward tree species whose seeds do not depend on them for dispersal."
+      "text": "restoring the water is the decisive step, because a refilled basin can largely revegetate itself."
     },
     {
       "id": "D",
-      "text": "removing large vertebrates from a tropical forest leaves the recruitment patterns of tree seedlings essentially unchanged from those observed in the unhunted plots."
+      "text": "drainage tiles must be removed entirely rather than broken for a pothole basin to refill."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. Across Dirzo's plots, removing large animals causes big-seeded trees, whose seeds those animals once carried off, to fail and recruit poorly, while small-seeded trees keep recruiting. Over time, then, the trees that survive best are increasingly the small-seeded ones, so the makeup of the canopy gradually shifts toward them; that is what choice C states. Choice A overreaches by claiming big-seeded trees depend on a single disperser, which the passage never says. Choice B has the pattern backward, since it is the small-seeded trees that continue to do well. Choice D claims removal leaves recruitment unchanged, contradicting the central finding that big-seeded seedlings fail at high rates."
+  "explanation": "**Choice C is correct.** The comparison runs one way: engineered plantings often failed, while merely restoring the water brought plants back unaided — so the water, not the planting, is the decisive step.\n\n**The Full Solution:**\n- Line up the two outcomes: plantings without hydrological repair failed; tile-breaking without any planting produced refilled basins that revegetated from the dormant seed supply.\n- The conclusion the contrast licenses is modest and general: get the water back and the vegetation largely follows — which is choice C, and no more.\n\n**Why the other choices are wrong:**\n- A: It contradicts the evidence — plants did establish themselves in once-drained basins after refill.\n- B: The surveys undercut planting as the lever entirely; a wider plant list answers a problem the evidence does not identify.\n- D: The text says breaking the tiles sufficed — the basins refilled — so full removal is a requirement the evidence refutes rather than supports."
 }

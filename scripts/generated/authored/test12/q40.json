@@ -1,61 +1,61 @@
 {
-  "id": 1240,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 2,
-  "passage": "Archaeologists studying the Neolithic settlement of Çatalhöyük in central Anatolia track changes in raw-material procurement by chemically sourcing obsidian artifacts to specific volcanic outcrops in the Cappadocian region. In a 2008 paper in the Journal of Archaeological Science, Tristan Carter and colleagues reported the percentage of obsidian assigned to each source across three occupation phases at the site and argued that the most striking shift in procurement networks occurred late in the sequence — between Phase B and Phase C — rather than at any earlier transition, because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Percentage of obsidian artifacts from each source at Çatalhöyük by phase (Carter et al., 2008, Journal of Archaeological Science)",
-    "headers": [
-      "Source",
-      "Phase A (early)",
-      "Phase B (middle)",
-      "Phase C (late)"
-    ],
-    "rows": [
-      [
-        "Göllü Dağ East",
-        "62%",
-        "58%",
-        "39%"
-      ],
-      [
-        "Nenezi Dağ",
-        "33%",
-        "37%",
-        "55%"
-      ],
-      [
-        "Other Cappadocian",
-        "5%",
-        "5%",
-        "6%"
-      ]
-    ]
-  },
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the 'Other Cappadocian' share remained nearly constant across all three phases, moving only from 5 to 5 to 6 percent."
-    },
-    {
-      "id": "B",
-      "text": "between Phase A and Phase B, Göllü Dağ East fell from 62 to 58 percent and Nenezi Dağ rose from 33 to 37 percent, the largest reorganization of sources documented at the site."
-    },
-    {
-      "id": "C",
-      "text": "between Phase B and Phase C, Göllü Dağ East dropped from 58 to 39 percent and Nenezi Dağ rose from 37 to 55 percent, far larger shifts than either source recorded between Phase A and Phase B."
-    },
-    {
-      "id": "D",
-      "text": "Göllü Dağ East was the dominant source in Phase A at 62 percent, the highest single share recorded for any source in any phase shown."
-    }
+ "id": 1240,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 2,
+ "passage": "Historians of coastal shipping trace the sailing coaster's decline through customs records, which report the share of arriving cargo tonnage carried by sailing vessels at individual ports. At one stone-shipping port studied in detail, the records show that sail gave way to steam and rail not in a steady slide across the whole period but in an abrupt collapse late in the record — between 1900 and 1910 — rather than during the earlier decades, since ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Share of arriving cargo tonnage carried by sailing vessels at one stone-shipping port",
+  "headers": [
+   "Cargo",
+   "1880",
+   "1900",
+   "1910"
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The claim is that the sharpest change in sourcing came late, between Phase B and Phase C, and the table bears that out: Göllü Dağ East drops from 58 to 39 percent and Nenezi Dağ rises from 37 to 55 percent, swings far larger than the few-point changes between Phase A and Phase B. C reports those figures. B points to the earlier transition, which shows only small movements and so does not support a \"late\" shift. A notes the nearly flat \"Other Cappadocian\" share, which has no bearing on the timing claim. D cites a single high value in Phase A without addressing where the largest change occurs."
+  "rows": [
+   [
+    "Granite",
+    "94%",
+    "88%",
+    "41%"
+   ],
+   [
+    "Lumber",
+    "89%",
+    "81%",
+    "35%"
+   ],
+   [
+    "Firewood",
+    "78%",
+    "71%",
+    "30%"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the share of granite tonnage carried by sail stood at 94 percent in 1880, the highest figure recorded for any cargo in any year shown in the table."
+  },
+  {
+   "id": "B",
+   "text": "between 1880 and 1900, the sail-carried share of granite tonnage fell gradually from 94 to 88 percent and that of lumber from 89 to 81 percent, the first sustained declines anywhere in the record."
+  },
+  {
+   "id": "C",
+   "text": "between 1900 and 1910, the sail-carried share fell from 88 to 41 percent for granite and from 81 to 35 percent for lumber — drops several times larger than any recorded between 1880 and 1900."
+  },
+  {
+   "id": "D",
+   "text": "even in 1910, sailing vessels still carried more than a third of the granite and lumber tonnage arriving at the port."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The claim to support is about timing — an abrupt collapse between 1900 and 1910, not before — and C supplies exactly the comparison that proves it: drops of 47, 46, and 41 points in the final decade against drops of only 6 to 8 points across the previous twenty years.\n\n**The Full Solution:**\n- Reread what the blank must establish: the collapse came LATE, between 1900 and 1910, \"rather than during the earlier decades.\"\n- Compute the changes per cargo: 1880 to 1900 loses 6 points (granite), 8 (lumber), 7 (firewood); 1900 to 1910 loses 47, 46, and 41.\n- A timing claim needs both periods on the table — the small early declines and the huge late ones — and C is the only choice that presents the contrast.\n\n**Why the other choices are wrong:**\n- A: A high starting share in 1880 says nothing about when the decline happened.\n- B: It cites only the early, gentle declines — evidence for the gradual story the sentence rejects.\n- D: The share remaining in 1910 describes where the collapse stopped, not when it occurred."
 }

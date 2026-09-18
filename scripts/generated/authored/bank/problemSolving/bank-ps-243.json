@@ -1,0 +1,45 @@
+{
+  "id": "bank-ps-243",
+  "question": "A university emailed a survey to all of its alumni asking whether they would recommend the university to a prospective student. The table shows how many alumni received the survey and how many responded. Of the alumni who responded, $71\\%$ said they would recommend the university. Which of the following is the most likely reason that $71\\%$ may not be a reliable estimate for all of the university's alumni?",
+  "questionTable": {
+    "headers": [
+      "",
+      "Number of alumni"
+    ],
+    "rows": [
+      [
+        "Received the survey",
+        "12,000"
+      ],
+      [
+        "Responded to the survey",
+        "900"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Fewer than $1{,}000$ alumni responded, so the sample is too small to produce an estimate."
+    },
+    {
+      "id": "B",
+      "text": "The university emailed all of its alumni instead of selecting a random sample to email."
+    },
+    {
+      "id": "C",
+      "text": "Alumni who chose to respond may differ from alumni who did not respond."
+    },
+    {
+      "id": "D",
+      "text": "A survey sent by email cannot measure whether alumni would recommend the university."
+    }
+  ],
+  "distractorNotes": {
+    "A": "blames sample size; 900 responses is plenty if the respondents were representative",
+    "B": "blames contacting everyone, which is not itself a flaw; the flaw is who chose to answer",
+    "D": "blames the survey medium rather than the self-selection of respondents"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Only $900$ of $12{,}000$ alumni answered, and each alumnus decided for themselves whether to answer. When respondents select themselves, the ones who respond can differ systematically from the ones who do not, so the $71\\%$ may not represent all alumni.\n\n**The Full Solution:**\nStep 1: Read the table: $12{,}000$ alumni were contacted, but only $900$ responded, a response rate of $\\frac{900}{12{,}000} = 7.5\\%$.\nStep 2: The $900$ respondents were not selected at random by the university; they chose to participate. Alumni with strong feelings about the university, positive or negative, are typically more likely to respond than alumni who are indifferent.\nStep 3: A sample that selects itself does not support generalization to the whole population, so the $71\\%$ is a reliable description of the respondents only. Check: the concern is who answered, not how many answered. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: a random sample of $900$ would be large enough to estimate a proportion well; the problem is how the $900$ were obtained, not their number.\n* Choice B: emailing every alumnus does not bias the result by itself; the bias enters because response was voluntary.\n* Choice D: the medium of the survey has nothing to do with whether the respondents represent the population.\n\n**Test Day Takeaway:** Voluntary response is a sampling flaw, and a larger number of volunteers never fixes it."
+}

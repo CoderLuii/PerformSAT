@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A solid sphere with a radius of $6$ centimeters is melted and recast as a right circular cylinder with a radius of $4$ centimeters. What is the height, in centimeters, of the cylinder?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4.5$"
+  },
+  {
+   "id": "B",
+   "text": "$18$"
+  },
+  {
+   "id": "C",
+   "text": "$54$"
+  },
+  {
+   "id": "D",
+   "text": "$144$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses $\\frac{1}{3}\\pi r^3$ for the volume of the sphere",
+  "C": "omits the division by $3$ in the volume of the sphere",
+  "D": "uses the diameter $12$ of the sphere as its radius"
+ },
+ "correctAnswer": "B",
+ "hint": "Nothing is lost in the recasting, so one quantity is the same for both solids.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~60s):** The sphere holds $288\\pi$, so $16\\pi h = 288\\pi$ and $h = 18$.\n\n**The Full Solution:**\nStep 1: The sphere has volume $\\frac{4}{3}\\pi(6^3) = 288\\pi$ cubic centimeters.\nStep 2: Recasting preserves the amount of material, so $\\pi(4^2)h = 288\\pi$.\nStep 3: Divide by $\\pi$: $16h = 288$, so $h = 18$ centimeters.\n\nVerification: $\\pi(16)(18) = 288\\pi$, the volume of the original sphere. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4.5$): uses $\\frac{1}{3}\\pi r^3$ for the volume of the sphere.\n* Choice C ($54$): omits the division by $3$ in the volume of the sphere.\n* Choice D ($144$): uses the diameter $12$ of the sphere as its radius.\n\n**Test Day Takeaway:** Melting and recasting holds volume constant — equate the two formulas and solve."
+}

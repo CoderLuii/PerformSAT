@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-247",
+  "question": "An analyst wanted to estimate the proportion of commuters in a certain state who drive alone to work. The analyst selected $700$ commuters at random from the two counties in the state that contain its largest cities and found that $61\\%$ of those selected drive alone to work. Which of the following is the largest population to which this result can be generalized?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "All commuters in the state"
+    },
+    {
+      "id": "B",
+      "text": "All commuters in the state who live in a large city"
+    },
+    {
+      "id": "C",
+      "text": "The $700$ commuters who were selected"
+    },
+    {
+      "id": "D",
+      "text": "All commuters in the two counties"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the analyst's stated goal as the population, though only two counties were sampled",
+    "B": "swaps the sampled counties for a statewide category of city dwellers; the sample also includes non-city commuters in the two counties and excludes city commuters elsewhere",
+    "C": "stops at the sample instead of the population it was drawn from"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The goal was the whole state, but the random sample came only from two counties. Results generalize to the group actually sampled, so the $61\\%$ describes commuters in those two counties.\n\n**The Full Solution:**\nStep 1: Separate the intended population (commuters in the state) from the sampled population (commuters in the two counties).\nStep 2: Random selection was carried out within the two counties only, so every commuter in those counties had a chance of selection and no commuter elsewhere in the state did.\nStep 3: The largest population the result supports is all commuters in the two counties. Check: commuting patterns in rural counties may differ from those near large cities, so extending the estimate statewide would be unjustified. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the analyst wanted a statewide estimate, but wanting it does not make the sample representative of the state.\n* Choice B: the selection was made from every commuter in the two counties, whether or not that commuter lives in a large city, and no commuter living in a city elsewhere in the state could be selected; this group is neither the sampled group nor a part of it.\n* Choice C: the $700$ selected commuters are the sample; random selection supports inference to the counties they came from.\n\n**Test Day Takeaway:** When the stated goal is broader than the sampling frame, the frame wins; results reach only the group that was randomly sampled."
+}

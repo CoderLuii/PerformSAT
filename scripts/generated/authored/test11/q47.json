@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "copyists'"
-    },
-    {
-      "id": "B",
-      "text": "copyist's"
-    },
-    {
-      "id": "C",
-      "text": "copyists"
-    },
-    {
-      "id": "D",
-      "text": "copyists's"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The errors belong to the copyists, who are plural, so the possessive is formed by adding an apostrophe after the -s already present: \"the copyists' errors.\" \"Copyist's\" is the singular possessive, but the passage refers to more than one copyist; \"copyists\" with no apostrophe is the plain plural and marks no possession; and \"copyists's\" adds a second -s that the plural possessive does not require.",
-  "passage": "Before printing, the texts that circulated in Europe bore the marks of their copyists. Modern editors can sometimes reconstruct a lost original by comparing the surviving manuscripts and sorting out which readings reflect the ______ errors rather than the author's own words.",
-  "_meta": {
-    "anchor": "textual criticism / typography history: copyists' errors (generic)",
-    "rule": "plural possessive of a noun ending in -s"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "operators'"
   },
-  "id": 1147,
-  "module": 2
+  {
+   "id": "B",
+   "text": "operator's"
+  },
+  {
+   "id": "C",
+   "text": "operators"
+  },
+  {
+   "id": "D",
+   "text": "operators's"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The tallies belong to the operators as a group — the whole passage concerns an exchange's staff — so the plural possessive \"operators'\" is required before \"own tallies.\"\n\n**The Full Solution:**\n- The parallel later in the sentence confirms the pattern: \"their supervisors' estimates\" is a plural possessive of the same shape.\n- A regular plural ending in -s takes only an apostrophe to form its possessive: operators → operators'.\n- \"The operators' own tallies\" marks plural possession correctly.\n\n**Why the other choices are wrong:**\n- B: \"Operator's\" is singular, but the sentence contrasts the workforce's records with their supervisors' — both possessors are plural.\n- C: \"Operators\" carries no possessive marking, yet the noun must possess \"own tallies\"; \"own\" cannot attach to a bare plural.\n- D: \"Operators's\" adds an extra 's to a plural already ending in -s — a malformed possessive.",
+ "passage": "Telephone companies kept meticulous records of switchboard work, and labor historians mining them can often reconstruct an exchange's daily rhythm by sorting out which surviving entries reflect the ______ own tallies of calls handled rather than their supervisors' estimates.",
+ "_meta": {
+  "rule": "plural possessive of a regular -s plural",
+  "anchor": "telephone switchboard operators — call tallies vs. supervisors' estimates",
+  "distractors": {
+   "B": "singular possessive against plural context",
+   "C": "no possessive marking",
+   "D": "double-s malformed possessive"
+  }
+ },
+ "id": 1147,
+ "module": 2
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-426",
+  "question": "A copy machine uses $3$ toner cartridges to print $1{,}200$ pages. At this rate, how many toner cartridges are needed to print $4{,}000$ pages?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.9$"
+    },
+    {
+      "id": "B",
+      "text": "$3.3$"
+    },
+    {
+      "id": "C",
+      "text": "$10$"
+    },
+    {
+      "id": "D",
+      "text": "$400$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverts the proportion, computing $\\frac{1{,}200\\times 3}{4{,}000}$.",
+    "B": "finds the scale factor $\\frac{4{,}000}{1{,}200}$ and stops there.",
+    "D": "reports pages per cartridge instead of cartridges."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Proportion Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** One cartridge prints $\\frac{1{,}200}{3}=400$ pages, so $4{,}000$ pages need $\\frac{4{,}000}{400}=10$ cartridges.\n\n**The Full Solution:**\nStep 1: Write the proportion $\\frac{3\\text{ cartridges}}{1{,}200\\text{ pages}}=\\frac{c}{4{,}000\\text{ pages}}$.\nStep 2: Cross multiply: $1{,}200c=3(4{,}000)=12{,}000$.\nStep 3: $c=\\frac{12{,}000}{1{,}200}=10$ cartridges. Check: $10$ cartridges at $400$ pages each print $4{,}000$ pages. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.9$): flips the proportion, computing $\\frac{1{,}200\\times 3}{4{,}000}$, which shrinks the answer instead of growing it.\n* Choice B ($3.3$): computes $\\frac{4{,}000}{1{,}200}$, the number of $1{,}200$-page batches, and never multiplies by $3$.\n* Choice D ($400$): reports the pages printed per cartridge, answering a different question.\n\n**Test Day Takeaway:** Check the direction before you divide. More pages must require more cartridges, so the answer has to exceed $3$."
+}

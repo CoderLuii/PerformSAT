@@ -130,16 +130,19 @@ const renderMath = (inputText) => {
         const headers = parseCells(lines[0]);
         const dataRows = lines.slice(2).map(parseCells);
 
-        let html = '<table style="border-collapse:collapse;margin:12px auto;font-size:15px;">';
+        // Official table skin (2026-08-13 Bluebook-ink unification): white
+        // cells, black rules, bold sans headers, serif values — the same skin
+        // as DataTableDiagram, so stem pipe-tables match figure tables.
+        let html = '<table style="border-collapse:collapse;margin:12px auto;font-size:15px;background:#fff;color:#111;font-family:\'Times New Roman\',Georgia,serif;">';
         html += '<thead><tr>';
         for (const h of headers) {
-          html += '<th style="border:1px solid rgba(0,0,0,0.15);padding:8px 16px;background:#f5f5f7;font-weight:600;text-align:center;">' + fmtCell(h) + '</th>';
+          html += '<th style="border:1.5px solid #111;padding:7px 16px;background:#fff;font-weight:bold;font-family:system-ui,-apple-system,sans-serif;font-size:14px;text-align:center;">' + fmtCell(h) + '</th>';
         }
         html += '</tr></thead><tbody>';
         for (const row of dataRows) {
           html += '<tr>';
           for (const cell of row) {
-            html += '<td style="border:1px solid rgba(0,0,0,0.15);padding:8px 16px;text-align:center;">' + fmtCell(cell) + '</td>';
+            html += '<td style="border:1px solid #111;padding:6px 16px;text-align:center;">' + fmtCell(cell) + '</td>';
           }
           html += '</tr>';
         }

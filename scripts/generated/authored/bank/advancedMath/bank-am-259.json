@@ -1,0 +1,28 @@
+{
+ "id": "bank-am-259",
+ "question": "The parabola shown is the graph of $f$, which models a propellant tank's ullage pressure deviation in kilopascals. A backup channel records $g(x)=-f(x)$ instead. What is the greatest value of $g$?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 2,
+    "k": -6
+   },
+   "a": 1,
+   "xRange": [
+    -1,
+    5
+   ],
+   "yRange": [
+    -8,
+    4
+   ],
+   "xTickInterval": 1,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showVertex": false
+  }
+ },
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Reflection of Graph**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~25s):** The lowest point of the parabola is $-6$, and negating every output turns that minimum into the maximum $6$.\n\n**The Full Solution:**\n\nStep 1: Read the turning point from the graph: the curve bottoms out at $(2,-6)$, so the least value of $f$ is $-6$.\n\nStep 2: Because $g(x)=-f(x)$, the graph of $g$ is the graph of $f$ flipped over the horizontal axis, so $g$ opens downward and has a greatest value.\n\nStep 3: That greatest value is the opposite of the least value of $f$: $-(-6)=6$. Check: at $x=2$, $g(2)=-f(2)=-(-6)=6$, and at $x=0$, $f(0)=-2$ so $g(0)=2$, which is smaller.\n\n**Common Mistakes:**\n\n* Reporting $-6$, the least value of $f$, without applying the sign change.\n* Reporting $2$, the input at which the extreme occurs, instead of the value.\n\n**Test Day Takeaway:** Negating a function swaps minimum for maximum at the same input; read the extreme value, then flip its sign."
+}

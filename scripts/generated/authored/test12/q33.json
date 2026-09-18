@@ -1,31 +1,31 @@
 {
-  "id": 1233,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "Managers responsible for fire-prone forests face a choice that is less straightforward than it first appears. The intuitive response to wildfire is to put every fire out as quickly as possible, sparing the forest from damage. Ecologists who study these landscapes argue that a policy of total suppression can backfire over time, because fire and fuel are linked. When every small blaze is extinguished, the dead wood, brush, and crowded young trees that a periodic fire would have cleared instead build up year after year; the next fire that escapes control then has far more fuel to burn and races hotter and faster than it otherwise would. From this observation the ecologists draw a counterintuitive conclusion: in such forests the surest way to prevent a catastrophic fire may not be to suppress every blaze but to reintroduce fire deliberately, through controlled burns that thin the accumulated fuel before it can feed a larger one.",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It presents one agency's fire-suppression policy as a clear and lasting success, then lists in sequence the specific firefighting techniques said to have produced that success."
-    },
-    {
-      "id": "B",
-      "text": "It describes an intuitive solution to a problem, explains a feedback effect that undermines that solution, and then reports the counterintuitive conclusion ecologists draw from it."
-    },
-    {
-      "id": "C",
-      "text": "It compares the forest-management practices of several different regions, then ranks those practices according to how much wildfire damage each one has prevented."
-    },
-    {
-      "id": "D",
-      "text": "It traces the historical development of controlled burning, then argues that the practice has been unfairly neglected by most land managers."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage names the intuitive fix (put out every fire), explains the feedback that undermines it (suppressing fires lets fuel build up until the next fire burns far hotter), and ends with the ecologists' counterintuitive conclusion that fire must be reintroduced deliberately. A invents a successful policy that the text never describes. C claims a region-by-region comparison and ranking that the passage does not contain. D treats controlled burning as the topic, but it appears only as the closing recommendation, not as the subject of a history."
+ "id": 1233,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "Coastal towns plagued by mosquitoes once saw an obvious remedy in their salt marshes: drain the shallow pools where the insects breed. Through the early twentieth century, work crews cut long grids of parallel ditches across marsh after marsh to carry the standing water away. Ecologists who later compared ditched and unditched marshes argue that the remedy fed the very problem it targeted. The drained pools had been home to small fish that eat mosquito larvae by the thousands; when the pools went, the fish went with them, and larvae hatching in the wet patches that remained faced fewer predators than before. From this record, marsh managers draw a conclusion that would have startled the ditching crews: reopening pools on a drained marsh — deliberately giving the water back — can suppress mosquitoes more effectively than drainage ever did.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It praises the engineering behind an early public-health campaign, then lists the modern excavation techniques that have replaced hand-cut drainage ditches."
+  },
+  {
+   "id": "B",
+   "text": "It describes an intuitive remedy for a problem, explains how the remedy removed a natural check on that very problem, and ends with the reversed approach now drawn from that history."
+  },
+  {
+   "id": "C",
+   "text": "It compares mosquito control efforts in several different coastal regions, then ranks the methods used according to their expense and their lasting effects."
+  },
+  {
+   "id": "D",
+   "text": "It traces the life cycle of the salt-marsh mosquito in close detail, then argues that no deliberate alteration of the marsh habitat can meaningfully reduce the insect's numbers for long."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage moves in three labeled steps: the obvious fix (drain the breeding pools), the backfire (the pools also held the larvae-eating fish, so draining removed the mosquitoes' predators), and the reversed lesson now drawn (put the pools back).\n\n**The Full Solution:**\n- Step one is the intuitive remedy: mosquitoes breed in marsh pools, so crews ditched the marshes to drain them.\n- Step two is the mechanism that undid it: the same pools sustained small fish that ate mosquito larvae \"by the thousands\"; without pools there were no fish, and surviving larvae \"faced fewer predators than before.\" The remedy removed a natural check on the problem.\n- Step three is the counterintuitive conclusion: managers now reopen pools — \"deliberately giving the water back\" — because restoring the predators controls mosquitoes better than drainage did. That remedy-backfire-reversal order is choice B.\n\n**Why the other choices are wrong:**\n- A: The passage criticizes the ditching campaign's logic rather than praising its engineering, and no modern excavation techniques are listed.\n- C: No regions are compared and nothing is ranked by expense.\n- D: The mosquito's life cycle is never traced, and the passage concludes that altering the habitat DOES work — in the direction nobody expected."
 }

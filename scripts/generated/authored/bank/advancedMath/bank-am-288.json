@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-288",
+ "question": "A stadium-lighting model uses the polynomial $12x^3 + 8x^2 + 15x + k$, where $x$ is the mast height in meters and $k$ is a constant set by the number of fixtures on the mast. If $3x + 2$ divides that polynomial evenly, what number is $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$30$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the $5$ from the other factor rather than the product $5 \\cdot 2$",
+  "C": "quotes the coefficient of $x$ instead of the constant term",
+  "D": "pairs $15$ with the $2$ from $3x + 2$, multiplying where it should divide"
+ },
+ "explanation": "**SAT Pattern: Factor by Grouping**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $12x^3 + 8x^2 = 4x^2(3x + 2)$, so the last pair must be $5(3x + 2) = 15x + 10$, giving $k = 10$.\n\n**The Full Solution:**\nStep 1: Factor the first pair: $12x^3 + 8x^2 = 4x^2(3x + 2)$.\nStep 2: For $3x + 2$ to divide the whole polynomial, the second pair must also be a multiple of $3x + 2$. Since the $x$-term is $15x$, that multiple is $5(3x + 2)$.\nStep 3: Then $5(3x + 2) = 15x + 10$, so $k = 10$. Check: $(4x^2 + 5)(3x + 2) = 12x^3 + 8x^2 + 15x + 10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): that is the multiplier in front of $3x + 2$, not the constant it produces.\n* Choice C ($15$): the coefficient of $x$ in the same pair, one column too far left.\n* Choice D ($30$): multiplies $15$ by $2$ instead of matching $15x$ to $5(3x)$.\n\n**Test Day Takeaway:** Factor the pair you can, then force the remaining pair to carry the SAME binomial — the constant falls out of that match."
+}

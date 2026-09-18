@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-421",
+ "question": "A weather station logged a daily maximum UV index reading on each of the $365$ days last year, and $146$ of those readings were at least $8$. What percent of the year's readings were below $8$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$60\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$150\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$166.7\\%$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the percent of readings that were at least $8$, $\\frac{146}{365} = 40\\%$, the complement of what is asked",
+  "C": "compares the $219$ lower readings with the $146$ higher ones, $\\frac{219}{146} = 150\\%$, instead of with all $365$",
+  "D": "divides the total by the lower group, $\\frac{365}{219} \\approx 166.7\\%$, inverting part and whole"
+ },
+ "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice B is correct.** Readings below $8$ number $365 - 146 = 219$, and $\\frac{219}{365} = 0.60$, or $60\\%$.\n\n**The Fast Way (~30s):** $\\frac{146}{365} = 40\\%$ were at least $8$, so $100 - 40 = 60\\%$ were below $8$.\n\n**The Full Solution:**\n\nStep 1: Count the readings below $8$: $365 - 146 = 219$ readings.\n\nStep 2: Divide by the whole year of readings: $\\frac{219}{365} = 0.60$.\n\nStep 3: Convert to a percent: $0.60(100) = 60\\%$. Check: $40\\% + 60\\% = 100\\%$, and $0.60(365) = 219$ readings.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($40\\%$): is the percent of readings that were at least $8$, the group the question does not ask about.\n* Choice C ($150\\%$): compares the two groups with each other. A part of a whole can never exceed $100\\%$.\n* Choice D ($166.7\\%$): divides the total by the part, reversing the fraction.\n\n**Test Day Takeaway:** A percent of a whole must land between $0$ and $100$ -- an answer above $100$ means the whole ended up in the numerator."
+}

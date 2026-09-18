@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A kitchen-supply store's cast-iron skillet now sells for $\\$67.10$, which is $22\\%$ more than it sold for last season. To the nearest cent, what was last season's selling price, in dollars?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$30.50$"
+  },
+  {
+   "id": "B",
+   "text": "$45.10$"
+  },
+  {
+   "id": "C",
+   "text": "$52.34$"
+  },
+  {
+   "id": "D",
+   "text": "$55.00$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads a 22% increase as multiplying by 2.2 and divides 67.10 by 2.2, getting 30.50",
+  "B": "subtracts $22 instead of 22 percent, giving 67.10 - 22 = 45.10",
+  "C": "takes 78% of 67.10 instead of dividing by 1.22, giving 52.34"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Percent Increase**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The new price is $122\\%$ of the old one, so divide: $\\frac{67.10}{1.22} = 55.00$.\n\n**The Full Solution:**\nStep 1: Let $P$ be last season's price. A $22\\%$ increase multiplies $P$ by $1 + 0.22 = 1.22$, so $1.22P = 67.10$.\nStep 2: Divide both sides by $1.22$: $P = \\frac{67.10}{1.22} = 55.00$.\nStep 3: Last season's price was $\\$55.00$. Check: $22\\%$ of $55$ is $12.10$, and $55.00 + 12.10 = 67.10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($30.50$): treats \"$22\\%$ more\" as \"$2.2$ times as much\" and divides by $2.2$. A $22\\%$ increase is a factor of $1.22$; $2.2$ would be a $120\\%$ increase.\n* Choice B ($45.10$): subtracts $\\$22$ rather than $22\\%$. The percent applies to the old price, not to a fixed number of dollars.\n* Choice C ($52.34$): takes $78\\%$ of the new price. Reversing a $22\\%$ increase means dividing by $1.22$, not subtracting $22\\%$ of the larger amount; $52.34$ increased by $22\\%$ comes to about $\\$63.85$.\n\n**Test Day Takeaway:** To undo a percent increase you divide by the growth factor — subtracting the same percent from the new amount always overshoots, because the percent was taken of the smaller original."
+}

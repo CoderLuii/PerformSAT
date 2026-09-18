@@ -1,0 +1,29 @@
+{
+  "id": 15,
+  "question": "A ramp cross section is a right triangle with a horizontal run of $7m$ feet and a sloped face of $25m$ feet, where $m$ is positive. What is the tangent of the angle between the run and the sloped face?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{7}{25}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{7}{24}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{24}{25}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{24}{7}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "gives cosine of the angle, adjacent over hypotenuse",
+    "B": "inverts the tangent, using adjacent over opposite",
+    "C": "gives sine of the angle, opposite over hypotenuse"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** $7$-$24$-$25$ is a Pythagorean triple, so the vertical rise is $24m$ and $\\tan = \\frac{24m}{7m} = \\frac{24}{7}$.\n\n**The Full Solution:**\nStep 1: The sloped face is the hypotenuse and the run is the leg adjacent to the angle, so the rise is the opposite leg. By the Pythagorean theorem, rise$^2 = (25m)^2 - (7m)^2 = 625m^2 - 49m^2 = 576m^2$.\nStep 2: Take the square root: rise $= 24m$ feet. The factor $m$ appears in every side, so it cancels out of any ratio.\nStep 3: Tangent is opposite over adjacent: $\\frac{24m}{7m} = \\frac{24}{7}$. Check the triple: $7^2 + 24^2 = 49 + 576 = 625 = 25^2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{7}{25}$): uses adjacent over hypotenuse, which is the cosine of the angle, not the tangent.\n* Choice B ($\\frac{7}{24}$): flips the tangent upside down, dividing adjacent by opposite. That ratio belongs to the other acute angle.\n* Choice C ($\\frac{24}{25}$): uses opposite over hypotenuse, which is the sine of the angle.\n\n**Test Day Takeaway:** A common factor on every side cancels in every trig ratio, so a parameter like $m$ changes nothing. Find the missing leg first, then read SOH-CAH-TOA off the angle you were asked about."
+}

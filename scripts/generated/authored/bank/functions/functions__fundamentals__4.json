@@ -1,0 +1,29 @@
+{
+ "question": "The depth of brine in a curing tank, in centimeters, $t$ minutes after a drain valve opens is modeled by $h(t) = 40 - 8t$. Which statement is the best interpretation of $h(3) = 16$?",
+ "hint": "Which number is the minute count and which is the depth?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The depth is $16$ centimeters $3$ minutes after the valve opens."
+  },
+  {
+   "id": "B",
+   "text": "The depth falls $16$ centimeters during the first $3$ minutes."
+  },
+  {
+   "id": "C",
+   "text": "The depth is $3$ centimeters $16$ minutes after the valve opens."
+  },
+  {
+   "id": "D",
+   "text": "The depth falls $3$ centimeters each minute."
+  }
+ ],
+ "distractorNotes": {
+  "B": "reads the output as the change in depth, which is actually 24 centimeters",
+  "C": "swaps the input and the output",
+  "D": "reads the input 3 as the rate, which is really 8 centimeters per minute"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** The input $3$ is a time and the output $16$ is a depth, so at $3$ minutes the depth is $16$ centimeters.\n\n**The Full Solution:**\nStep 1: In $h(t)$ the input $t$ is the number of minutes since the valve opened.\nStep 2: The output $h(t)$ is the depth in centimeters at that moment.\nStep 3: So $h(3) = 16$ says the depth is $16$ centimeters at $t = 3$. Check: $40 - 8(3) = 16$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: reads the output as a drop, but the depth has fallen $40 - 16 = 24$ centimeters by then.\n* Choice C: swaps the input and output, reading $3$ as a depth and $16$ as a time.\n* Choice D: treats the input as a rate; the rate is the coefficient $8$ centimeters per minute.\n\n**Test Day Takeaway:** Attach the units to the input and the output first, and the interpretation writes itself."
+}

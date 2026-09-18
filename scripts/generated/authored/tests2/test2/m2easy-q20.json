@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A parking structure's concrete pillar is a right circular cylinder of height 3 meters and base radius 0.6 meter. Running along its axis for the full height is a cylindrical duct of radius 0.2 meter. How many cubic meters of concrete does the pillar contain?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.12\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$0.48\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$0.96\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$1.08\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes the volume of the duct alone, pi times 0.2 squared times 3",
+  "B": "subtracts the radii before squaring, using (0.6 - 0.2) squared times 3 = 0.48 pi",
+  "D": "ignores the duct and reports the volume of the solid cylinder, pi times 0.6 squared times 3"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Concrete equals the outer cylinder minus the duct: $\\pi(0.6^2 - 0.2^2)(3) = \\pi(0.32)(3) = 0.96\\pi$.\n\n**The Full Solution:**\nStep 1: The full pillar is a cylinder of radius $0.6$ and height $3$, so its volume is $\\pi(0.6)^2(3) = 1.08\\pi$ cubic meters.\nStep 2: The duct is a cylinder of radius $0.2$ running the same height, with volume $\\pi(0.2)^2(3) = 0.12\\pi$ cubic meters.\nStep 3: Concrete fills the difference: $1.08\\pi - 0.12\\pi = 0.96\\pi$ cubic meters. Check: factoring gives $3\\pi(0.36 - 0.04) = 3\\pi(0.32) = 0.96\\pi$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.12\\pi$): the duct's volume, the hole rather than the concrete around it.\n* Choice B ($0.48\\pi$): subtracts the radii first and squares afterward, using $(0.6 - 0.2)^2 = 0.16$. Squaring must happen before the subtraction, since $0.36 - 0.04 = 0.32$, not $0.16$.\n* Choice D ($1.08\\pi$): the solid cylinder, with the duct never removed.\n\n**Test Day Takeaway:** For a pipe or a drilled column, subtract volumes, not radii. Square each radius first, then take the difference."
+}

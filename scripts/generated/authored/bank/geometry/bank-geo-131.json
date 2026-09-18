@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-131",
+  "question": "In the $xy$-plane, the point $(-20, 21)$ lies on a circle whose center is the origin. What is the length of a radius of this circle?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$20.5$"
+    },
+    {
+      "id": "C",
+      "text": "$29$"
+    },
+    {
+      "id": "D",
+      "text": "$41$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the coordinates instead of combining their squares",
+    "B": "averages the two coordinates",
+    "D": "adds the coordinates, measuring the path along the axes"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** A radius reaches from the origin to the point, so its length is $\\sqrt{400 + 441} = \\sqrt{841} = 29$.\n\n**The Full Solution:**\nStep 1: Every radius runs from the center to a point on the circle, so its length is the distance from $(0, 0)$ to $(-20, 21)$.\nStep 2: $(-20)^2 + 21^2 = 400 + 441 = 841$.\nStep 3: The radius is $\\sqrt{841} = 29$. Check: $20$-$21$-$29$ satisfies $400 + 441 = 841$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): subtracts $21 - 20$, as though the two displacements lay along the same line.\n* Choice B ($20.5$): averages $20$ and $21$, which has no geometric meaning for a distance.\n* Choice D ($41$): adds $20 + 21$, the distance walked along the two axes rather than the straight-line distance.\n\n**Test Day Takeaway:** A radius is a distance. Square each displacement, add, then take the square root - never add or subtract the displacements themselves."
+}

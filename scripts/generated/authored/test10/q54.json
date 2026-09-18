@@ -9,34 +9,33 @@
  "studentNotes": {
   "intro": "While researching a topic, a student has taken the following notes:",
   "bullets": [
-   "Environmental DNA, or eDNA, consists of genetic material that organisms shed into water, soil, or air—through skin cells, scales, waste, and mucus.",
-   "Researchers can collect a water sample, sequence the DNA it contains, and identify which species have recently been present without ever seeing or capturing them.",
-   "The method can detect rare or elusive species that traditional surveys frequently miss.",
-   "It can also reveal the early arrival of invasive species before they become established and visible.",
-   "In one river survey, a single set of water samples recorded dozens of fish species, including some not seen in decades.",
-   "Because it requires only a water sample, eDNA sampling is far less disruptive to habitats than netting or trapping."
+   "For most of the twentieth century, buyers judged wool by handling sample fleeces at auction, a skill acquired over years.",
+   "Appraisals of the same wool by experienced buyers could differ by a full quality grade.",
+   "In the 1960s, laboratories introduced instruments that measure a wool sample's mean fiber diameter in microns.",
+   "Australia, the largest wool exporter, began testing lots before sale and printing the measurements in auction catalogs.",
+   "Buyers could then bid on wool they had never handled, and mills could order fiber to precise specifications."
   ],
-  "goal": "The student wants to emphasize the two complementary uses eDNA sampling serves in monitoring freshwater ecosystems."
+  "goal": "The student wants to emphasize the significance of instrument testing for the wool trade."
  },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Environmental DNA sampling, which identifies species from the genetic material they shed into water, serves two complementary purposes in freshwater monitoring: detecting rare or elusive species that traditional surveys miss, and flagging invasive species early, before they become established."
+   "text": "Instrument testing replaced fallible judgments of touch with printed measurements, letting buyers bid confidently on wool they had never handled."
   },
   {
    "id": "B",
-   "text": "Environmental DNA consists of genetic material that organisms shed into water, soil, or air through skin cells, scales, waste, and mucus."
+   "text": "Experienced buyers appraising the same wool at auction could arrive at judgments that differed from one another by a full quality grade."
   },
   {
    "id": "C",
-   "text": "In one river survey, a single set of eDNA water samples recorded dozens of fish species, including some that had not been seen in the river in decades."
+   "text": "In the 1960s, laboratories introduced precision instruments capable of measuring the mean fiber diameter of a wool sample in microns."
   },
   {
    "id": "D",
-   "text": "Because it requires only a water sample, eDNA sampling disturbs habitats far less than traditional methods such as netting or trapping."
+   "text": "Australia, which exported more wool during the twentieth century than any other country, began testing its wool lots before they were offered for sale at auction."
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The goal is to emphasize the two complementary uses eDNA sampling serves in freshwater monitoring, so the best choice names both. Choice A explains briefly what eDNA is and then pairs the two purposes: detecting rare or elusive species and flagging invasive species early. Choice B defines eDNA without naming any use. Choice C reports a single survey result, an instance of one use rather than the pair. Choice D highlights the method's low disturbance, a separate advantage that is not one of the two monitoring purposes the goal asks the student to contrast."
+ "explanation": "**Choice A is correct.** The goal asks what instrument testing changed for the trade, and A answers with the before-and-after in one sentence: inconsistent judgments of touch gave way to printed measurements, and buyers could bid on wool sight unseen.\n\n**The Full Solution:**\n- The notes' significance lies in the transformation: appraisal by handling (which varied by a full grade) versus catalog measurements that made unhandled wool biddable.\n- A compresses that transformation, method replaced and new capability gained, which is what emphasizing significance requires.\n\n**Why the other choices are wrong:**\n- B: It documents the problem, inconsistent appraisals, without mentioning instrument testing at all.\n- C: It announces the instruments' arrival but stops before any effect on the trade.\n- D: It records Australia's adoption of testing yet never says what the testing changed for buyers or mills."
 }

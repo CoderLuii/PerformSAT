@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 2,
- "passage": "Tardigrades, the microscopic animals often called water bears, live in the thin films of water that coat mosses and lichens, habitats that can dry out within hours. When their surroundings lose moisture, tardigrades do not simply wait out the drought; they remake their bodies for it. The animal draws in its legs, expels most of the water from its cells, and shrinks into a barrel-shaped form called a tun. As the water departs, the cells fill with protective molecules that move into its place, propping up delicate internal structures so they neither collapse nor tear. In this suspended state a tardigrade burns almost no energy and can endure heat, cold, and dryness that would kill it while active. Restore the water, and within hours the animal swells, unfolds, and resumes its life as though no time had passed.",
- "question": "According to the text, what happens inside a tardigrade's cells as it enters the tun state?",
+ "passage": "The glass called cristallo, perfected in fifteenth-century Venice, owed its fame to what it lacked. Ordinary glass of the period carried a green or brown cast from iron in the sand it was made from; Venetian makers instead began with carefully chosen quartz pebbles low in iron, purified their plant-ash flux by repeatedly dissolving and straining it, and added small amounts of manganese to cancel what color remained. The result was a glass nearly as colorless as rock crystal, the quartz it was named for, and thin-walled vessels of cristallo commanded prices across Europe that no rival glasshouse could match.",
+ "question": "According to the text, how did Venetian glassmakers counteract the color that impurities gave to ordinary glass?",
  "choices": [
   {
    "id": "A",
-   "text": "As water leaves the cells, protective molecules take the water's place and prop up the cell's delicate internal structures."
+   "text": "They chose raw materials low in iron, purified their flux, and added manganese to offset the tint that remained."
   },
   {
    "id": "B",
-   "text": "The cells draw in extra water from the surrounding moss and swell until the animal can seal itself against the drought."
+   "text": "They ground rock crystal into their raw materials so that the finished glass would take on the clarity of quartz."
   },
   {
    "id": "C",
-   "text": "The cells keep up their normal activity at full speed, drawing on stored energy to keep the animal moving until moisture returns."
+   "text": "They blew the walls of their vessels thin enough that any tint in the glass became too faint to notice."
   },
   {
    "id": "D",
-   "text": "The cells are broken down and rebuilt from scratch each time the animal revives, yielding a slightly altered tardigrade."
+   "text": "They imported finished colorless glass from rival glasshouses and resold it across Europe at higher prices."
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The passage explains that as a tardigrade forms a tun, most of the water is driven from its cells and protective molecules move in to take the water's place, propping up the cell's delicate internal structures so they do not collapse or tear. Choice A restates that process. Choice B reverses it, since the animal expels water rather than drawing more in. Choice C contradicts the passage, which says the suspended animal burns almost no energy rather than continuing normal activity. Choice D describes a breaking-down and rebuilding the passage never mentions."
+ "explanation": "**Choice A is correct.** The text lists three measures, and A reproduces all three: quartz pebbles chosen for low iron, flux purified by dissolving and straining, and manganese added \"to cancel what color remained.\"\n\n**The Full Solution:**\n- The question asks for the makers' method against color, which the second sentence gives as a sequence: select low-iron pebbles, purify the plant-ash flux, add manganese for the residue.\n- A is the only choice that matches the stated method rather than remixing the passage's other details.\n\n**Why the other choices are wrong:**\n- B: Rock crystal appears only as the standard of comparison that gave cristallo its name; nothing says quartz was ground into the batch to add clarity.\n- C: Thin walls are mentioned as a feature of the prized vessels, not as a technique for hiding color.\n- D: The text says rivals could not match Venetian prices; it never describes importing or reselling anyone's glass."
 }

@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "A city ordinance sets a circular quiet zone centered 5 kilometers east and 7 kilometers south of a transit hub, reaching 4 kilometers from that center in every direction. With the hub at the origin and east and north positive, which equation describes the boundary of the zone?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x - 5)^2 + (y + 7)^2 = 16$"
+  },
+  {
+   "id": "B",
+   "text": "$(x - 5)^2 + (y + 7)^2 = 4$"
+  },
+  {
+   "id": "C",
+   "text": "$(x - 5)^2 + (y + 7)^2 = 64$"
+  },
+  {
+   "id": "D",
+   "text": "$(x + 5)^2 + (y - 7)^2 = 16$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "puts the radius 4 on the right side instead of the radius squared, 16",
+  "C": "squares the diameter 8 instead of the radius 4, giving 64",
+  "D": "flips both center signs, placing the center at (-5, 7) instead of (5, -7)"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Center $(5, -7)$ and radius $4$ give $(x - 5)^2 + (y + 7)^2 = 4^2 = 16$.\n\n**The Full Solution:**\nStep 1: Translate the description into coordinates. East is positive $x$, so the center is $5$ km east; south is negative $y$, so the center is at $(5, -7)$. The zone reaches $4$ km in every direction, so $r = 4$.\nStep 2: Standard form is $(x - h)^2 + (y - k)^2 = r^2$. With $h = 5$ and $k = -7$, the binomials are $(x - 5)$ and $(y - (-7)) = (y + 7)$.\nStep 3: The right side is $r^2 = 4^2 = 16$, giving $(x - 5)^2 + (y + 7)^2 = 16$. Check: the point $(9, -7)$, exactly $4$ km east of the center, satisfies $16 + 0 = 16$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($= 4$): writes the radius on the right side. Standard form stores $r^2$, so this circle would have radius $2$.\n* Choice C ($= 64$): squares the diameter $8$ instead of the radius, describing a zone twice as wide.\n* Choice D (center $(-5, 7)$): flips both signs. Inside the binomials the sign is opposite the coordinate, so a center at $(5, -7)$ produces $(x - 5)$ and $(y + 7)$.\n\n**Test Day Takeaway:** In $(x - h)^2 + (y - k)^2 = r^2$, the signs inside flip and the right side is squared. Test one obvious boundary point before committing."
+}

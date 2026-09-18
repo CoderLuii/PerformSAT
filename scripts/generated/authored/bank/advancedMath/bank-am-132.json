@@ -1,0 +1,29 @@
+{
+  "question": "The discriminant of the quadratic equation $ax^{2}+bx+c=0$ is negative. Which of the following must be true about the graph of $y=ax^{2}+bx+c$ in the $xy$-plane?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The graph has exactly one $x$-intercept."
+    },
+    {
+      "id": "B",
+      "text": "The graph has exactly two $x$-intercepts."
+    },
+    {
+      "id": "C",
+      "text": "The graph has no $y$-intercept."
+    },
+    {
+      "id": "D",
+      "text": "The graph has no $x$-intercepts."
+    }
+  ],
+  "distractorNotes": {
+    "A": "describes a discriminant equal to 0, not a negative one",
+    "B": "describes a positive discriminant",
+    "C": "confuses x-intercepts with the y-intercept, which every such graph has at (0, c)"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** A negative discriminant means no real solutions of $ax^{2}+bx+c=0$, so the graph never meets the $x$-axis.\n\n**The Full Solution:**\nStep 1: The $x$-intercepts of $y=ax^{2}+bx+c$ are the real solutions of $ax^{2}+bx+c=0$.\nStep 2: The number of real solutions is determined by the discriminant: positive gives two, zero gives one, negative gives none.\nStep 3: Since the discriminant is negative, the graph has no $x$-intercepts. Check with $y=x^{2}+x+1$, whose discriminant is $-3$ and whose graph stays above the $x$-axis ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: describes a discriminant equal to $0$.\n* Choice B: describes a positive discriminant.\n* Choice C: confuses the $x$-intercepts with the $y$-intercept, which is always at $(0,c)$.\n\n**Test Day Takeaway:** Discriminant sign and $x$-intercept count are the same fact told two ways.",
+  "id": "bank-am-132"
+}

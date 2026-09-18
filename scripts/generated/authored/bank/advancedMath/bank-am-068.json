@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-068",
+ "question": "Beside a track, a square warm-up grid has sides of length $3w + 5$ meters, where $w$ counts the extra lane widths added to it. In square meters, the area of the grid is equivalent to which expression?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6w^2 + 30w + 25$"
+  },
+  {
+   "id": "B",
+   "text": "$9w^2 + 25$"
+  },
+  {
+   "id": "C",
+   "text": "$9w^2 + 15w + 25$"
+  },
+  {
+   "id": "D",
+   "text": "$9w^2 + 30w + 25$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "doubles $3w$ instead of squaring it, giving $6w^2$ for the leading term",
+  "B": "squares each term separately and omits the cross term entirely",
+  "C": "uses one copy of the cross product, $3w \\cdot 5 = 15w$, instead of two"
+ },
+ "explanation": "**SAT Pattern: Expand Perfect Square**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** $(3w + 5)^2 = (3w)^2 + 2(3w)(5) + 5^2 = 9w^2 + 30w + 25$.\n\n**The Full Solution:**\nStep 1: The area of a square is the side length squared, so the area is $(3w + 5)^2$.\nStep 2: Apply $(a + b)^2 = a^2 + 2ab + b^2$ with $a = 3w$ and $b = 5$: the terms are $9w^2$, $2(3w)(5) = 30w$, and $25$.\nStep 3: The area is $9w^2 + 30w + 25$ square meters. Check: at $w = 1$ the side is $8$ meters and the area is $64$, while $9 + 30 + 25 = 64$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6w^2 + 30w + 25$): squaring $3w$ gives $9w^2$, not $6w^2$; the coefficient is squared along with the variable.\n* Choice B ($9w^2 + 25$): squares each term and forgets the middle term, which is the most common error with a squared binomial.\n* Choice C ($9w^2 + 15w + 25$): writes the cross product once instead of twice, so the middle coefficient is half of what it should be.\n\n**Test Day Takeaway:** A squared binomial always has three terms, and the middle one carries a factor of $2$ — test $w = 1$ to confirm."
+}

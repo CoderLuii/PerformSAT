@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "question": "A compression utility reduces a data set to $80\\%$ of its original size. A second pass then reduces the already-compressed data by $p$ percent, and the result is $76\\%$ smaller than the original data set. What is the value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$24$"
+    },
+    {
+      "id": "B",
+      "text": "$30$"
+    },
+    {
+      "id": "C",
+      "text": "$56$"
+    },
+    {
+      "id": "D",
+      "text": "$70$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the percent of the original that survives both passes, 24, instead of the second pass's percent decrease",
+    "B": "reports the percent of the compressed data that survives the second pass, 30, rather than the percent it removes",
+    "C": "subtracts 20 from 76, treating the two percent decreases as additive"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Percent Increase**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Ending $76\\%$ smaller means $0.24$ of the original survives, and the first pass already left $0.80$; since $0.80 \\times 0.30 = 0.24$, the second pass keeps $30\\%$ and therefore removes $70\\%$.\n\n**The Full Solution:**\nStep 1: Let the original size be $x$. After the first pass the size is $0.80x$, and the second pass multiplies that by $1 - \\frac{p}{100}$.\nStep 2: A result $76\\%$ smaller than the original has size $(1 - 0.76)x = 0.24x$, so $0.80x\\left(1 - \\frac{p}{100}\\right) = 0.24x$.\nStep 3: Divide both sides by $0.80x$: $1 - \\frac{p}{100} = 0.30$, so $\\frac{p}{100} = 0.70$ and $p = 70$. Check with $x = 500$ gigabytes: the first pass leaves $400$, removing $70\\%$ of that leaves $120$, and $120$ is $76\\%$ below $500$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($24$): this is the percent of the original that survives both passes, which the stem already gave as $100 - 76$; it is not the second pass's rate.\n* Choice B ($30$): this is the fraction of the compressed data still left after the second pass, $0.30$, read as a percent removed.\n* Choice C ($56$): subtracts $20$ from $76$, treating chained percent decreases as if they add; percent changes compose by multiplying.\n\n**Test Day Takeaway:** Chained percent changes multiply their surviving fractions, so convert every stated decrease to what remains before you combine them."
+}

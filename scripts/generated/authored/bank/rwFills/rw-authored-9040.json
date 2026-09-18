@@ -1,0 +1,25 @@
+{
+  "id": 9040,
+  "passage": "Researchers who time museum visitors keep finding that people look at paintings for far less time than curators assume. In one large art museum, the median stop in front of a work lasted about seventeen seconds. The observations, though, were gathered in a single gallery of nineteenth-century European painting, on weekday afternoons, and only from visitors who were not taking part in a guided tour. Taken by themselves, the measurements can support only the conclusion that ______",
+  "question": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "museum visitors everywhere devote less attention to paintings than curators would like them to."
+    },
+    {
+      "id": "B",
+      "text": "visitors find nineteenth-century European painting less engaging than they find other kinds of art."
+    },
+    {
+      "id": "C",
+      "text": "guided tours are what allow museum visitors to spend more than a few seconds with a single work."
+    },
+    {
+      "id": "D",
+      "text": "unguided visitors to this gallery typically looked at a painting for well under a minute."
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** It keeps every limit the text places on the evidence — one gallery, unguided visitors — and claims no more than the median of seventeen seconds will bear.\n\n**The Full Solution:**\n- Mark the limits before reading the choices. The data come from one gallery, one kind of painting, weekday afternoons, and visitors outside a tour.\n- The blank follows Taken by themselves, the measurements can support only, so the answer must be the smallest conclusion the numbers license. Choice D reports the behavior of exactly the group that was watched, in exactly the place it was watched.\n- Any choice that drops a limit, or that compares the observed group with a group never observed, goes beyond the evidence.\n\n**Why the other choices are wrong:**\n- A: Everywhere abandons the limits. One gallery in one museum cannot speak for museum visitors in general.\n- B: The study looked at only one kind of painting, so it offers no comparison with other kinds of art.\n- C: Visitors on guided tours were excluded, so the text supplies no basis for a claim about what tours do."
+}

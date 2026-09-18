@@ -1,0 +1,29 @@
+{
+ "question": "In a fencing tournament the totals $kx + 3y = 11$ and $5x + 2y = 12$ are recorded, where $x$ counts bouts a fencer won on touches, $y$ counts bouts won on time, and $k$ is a constant. Adding the two totals gives $9x + 5y = 23$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "subtracts the $y$-coefficients, $5 - 3$, instead of working with the $x$-coefficients",
+  "C": "copies the coefficient of $x$ in the second total",
+  "D": "copies the coefficient of $x$ in the sum, $9x + 5y$"
+ },
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Adding the totals makes the $x$-coefficient $k + 5$, and that must be $9$, so $k = 4$.\n\n**The Full Solution:**\n\nStep 1: Add the two totals term by term: $(k + 5)x + (3 + 2)y = 11 + 12$.\n\nStep 2: The stem says the sum is $9x + 5y = 23$, and indeed $3 + 2 = 5$ and $11 + 12 = 23$, so the $y$-terms and constants already match.\n\nStep 3: Match the $x$-coefficients: $k + 5 = 9$, so $k = 4$. Check with $x = 2$ and $y = 1$: $4(2) + 3(1) = 11$ and $5(2) + 2(1) = 12$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2$): subtracts $3$ from $5$, using the $y$-column to answer an $x$-column question.\n\n* Choice C ($5$): copies the $x$-coefficient of the second total instead of solving for the first.\n\n* Choice D ($9$): copies the $x$-coefficient of the sum, ignoring the $5x$ that the second total contributes.\n\n**Test Day Takeaway:** Add the equations symbolically, then match coefficients column by column; the constants confirm you added rather than subtracted.",
+ "id": "bank-alg-260"
+}

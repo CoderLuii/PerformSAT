@@ -1,0 +1,25 @@
+{
+  "id": 9036,
+  "passage": "Before the middle of the nineteenth century, a machinist did not treat a bolt as an ______ part. Each screw was cut to fit one nut, on one machine, in one shop, so a replacement had to be filed by hand rather than taken from a drawer. The tables of thread angles and pitches published in Britain in 1841 changed that arithmetic, and the shops that adopted them could soon buy fasteners the way they bought nails.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "enduring"
+    },
+    {
+      "id": "B",
+      "text": "ornamental"
+    },
+    {
+      "id": "C",
+      "text": "expensive"
+    },
+    {
+      "id": "D",
+      "text": "interchangeable"
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** The sentence after the blank contrasts filing a replacement by hand with taking one from a drawer, so the property the early machinist did not have is the property of parts that can substitute for one another.\n\n**The Full Solution:**\n- The blank is inside a negative, so the second sentence has to supply what was missing. Read it first: each screw fit one nut, and a replacement had to be filed by hand rather than taken from a drawer.\n- Rather than marks the contrast. A part taken from a drawer works because any one of them fits, which is what interchangeable means.\n- The last sentence confirms the reading: once the thread tables existed, fasteners could be bought like nails, which are bought by the box precisely because they are identical.\n\n**Why the other choices are wrong:**\n- A: Nothing in the passage concerns how long a bolt lasted; hand-cut screws are not described as short-lived.\n- B: Ornament is never at issue. The contrast is about fit, not appearance.\n- C: Cost enters only at the end, and even there the point is availability rather than price."
+}

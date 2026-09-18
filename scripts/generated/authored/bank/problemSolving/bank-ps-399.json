@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-399",
+  "question": "A banding station weighed the $12$ sparrows captured at dawn and found a mean mass of $28.5$ grams. Including the $8$ sparrows captured later that morning, the mean mass of all $20$ birds was $26.1$ grams. What was the mean mass, in grams, of the $8$ birds captured later?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$22.5$"
+    },
+    {
+      "id": "B",
+      "text": "$23.7$"
+    },
+    {
+      "id": "C",
+      "text": "$26.1$"
+    },
+    {
+      "id": "D",
+      "text": "$27.3$"
+    }
+  ],
+  "correctAnswer": "A",
+  "distractorNotes": {
+    "B": "treats $26.1$ as the midpoint of the two group means, computing $2(26.1) - 28.5 = 23.7$",
+    "C": "repeats the overall mean of all $20$ birds as the mean of the later group",
+    "D": "averages the two given means, $\\frac{28.5 + 26.1}{2} = 27.3$, ignoring the unequal group sizes"
+  },
+  "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice A is correct.** All $20$ birds total $20(26.1) = 522$ grams and the dawn birds total $12(28.5) = 342$ grams, so the later $8$ average $\\frac{180}{8} = 22.5$ grams.\n\n**The Fast Way (~55s):** $522 - 342 = 180$ grams belong to the $8$ later birds, and $\\frac{180}{8} = 22.5$ grams.\n\n**The Full Solution:**\n\nStep 1: Convert each mean into a total mass. The $12$ dawn birds total $12(28.5) = 342$ grams, and all $20$ birds total $20(26.1) = 522$ grams.\n\nStep 2: Subtract to isolate the later group: $522 - 342 = 180$ grams for the $8$ birds captured later.\n\nStep 3: Divide by that group's size: $\\frac{180}{8} = 22.5$ grams. Check: $\\frac{342 + 180}{20} = \\frac{522}{20} = 26.1$ grams, the stated overall mean.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($23.7$): assumes the overall mean sits halfway between the two group means and computes $2(26.1) - 28.5$. That is true only when the groups are the same size.\n* Choice C ($26.1$): reports the mean of all $20$ birds instead of the mean of the $8$ captured later.\n* Choice D ($27.3$): averages $28.5$ and $26.1$. Averaging two means is only valid for equal group sizes, and one of these is the overall mean already.\n\n**Test Day Takeaway:** Turn every mean into a total before you combine groups -- totals add, means do not."
+}

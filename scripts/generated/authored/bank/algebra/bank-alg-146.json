@@ -1,0 +1,52 @@
+{
+ "id": "bank-alg-146",
+ "question": "A designer plots truss heights on the axes shown using $y = 2x - 1$ and $y = -x + 8$. At the ordered pair satisfying both, what is the value of $2y - x$?",
+ "diagram": {
+  "type": "twoLineGraph",
+  "params": {
+   "intersection": {
+    "x": 3,
+    "y": 5
+   },
+   "slope1": 2,
+   "slope2": -1,
+   "xRange": [
+    -1,
+    6
+   ],
+   "yRange": [
+    -4,
+    12
+   ],
+   "showIntersection": false,
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$13$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the x-coordinate 3 of the shared point instead of evaluating 2y - x",
+  "B": "reports the y-coordinate 5 of the shared point instead of evaluating 2y - x",
+  "D": "computes 2y + x = 10 + 3 = 13, adding x instead of subtracting it"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Substituting gives $2x - 1 = -x + 8$, so $x = 3$ and $y = 5$; then $2y - x = 10 - 3 = 7$.\n\n**The Full Solution:**\nStep 1: Both equations are already solved for $y$, so set the right sides equal: $2x - 1 = -x + 8$.\nStep 2: Add $x$ to both sides and add $1$: $3x = 9$, so $x = 3$. Substituting into $y = 2x - 1$ gives $y = 5$, which matches the point where the graphed lines meet.\nStep 3: Evaluate the requested expression: $2y - x = 2(5) - 3 = 7$. Check the second equation: $-3 + 8 = 5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reports the $x$-coordinate of the shared point and never evaluates $2y - x$.\n* Choice B ($5$): reports the $y$-coordinate of the shared point for the same reason.\n* Choice D ($13$): computes $2y + x = 10 + 3 = 13$, adding $x$ instead of subtracting it.\n\n**Test Day Takeaway:** Solve the system first, then read the question again — an expression such as $2y - x$ needs BOTH coordinates, not the point itself."
+}

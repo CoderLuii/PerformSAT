@@ -1,0 +1,57 @@
+{
+  "id": 9,
+  "question": "The functions $f$ and $g$ satisfy $g(x)=f(x)+6$ for every $x$. The table shows four values of $g$. What is the value of $f(3)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "g(x)"
+      ],
+      "rows": [
+        [
+          "1",
+          "20"
+        ],
+        [
+          "2",
+          "13"
+        ],
+        [
+          "3",
+          "8"
+        ],
+        [
+          "4",
+          "5"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$8$"
+    },
+    {
+      "id": "C",
+      "text": "$14$"
+    },
+    {
+      "id": "D",
+      "text": "$20$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "omits the shift",
+    "C": "adds instead of subtracts",
+    "D": "reads the wrong row"
+  },
+  "correctAnswer": "A",
+  "hint": "The relationship is stated in terms of $g$; rearrange it so that $f$ stands alone.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~25s):** From $g(x)=f(x)+6$, $f(x)=g(x)-6$, and the table gives $g(3)=8$, so $f(3)=2$.\n\n**The Full Solution:**\nStep 1: Solving $g(x)=f(x)+6$ for $f$ gives $f(x)=g(x)-6$.\nStep 2: The row $x=3$ of the table gives $g(3)=8$.\nStep 3: Therefore $f(3)=8-6=2$. Check: $f(3)+6=2+6=8=g(3)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($8$): reports $g(3)$ and never undoes the shift.\n* Choice C ($14$): adds $6$ instead of subtracting: the table already contains the raised values.\n* Choice D ($20$): reads the row $x=1$ rather than the row $x=3$.\n\n**Test Day Takeaway:** When the table lists the transformed function, run the transformation backwards to recover the original."
+}

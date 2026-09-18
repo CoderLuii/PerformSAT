@@ -1,0 +1,48 @@
+{
+  "id": "bank-ps-407",
+  "question": "The table gives a town's annual water use, in millions of liters, for two consecutive years. What was the percent decrease in the town's annual water use from $2022$ to $2023$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Year",
+        "Water use (millions of liters)"
+      ],
+      "rows": [
+        [
+          "2022",
+          "1,250"
+        ],
+        [
+          "2023",
+          "1,000"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$80\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$250\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides the decrease by the later value, $\\frac{250}{1000}$",
+    "C": "reports the later value as a percent of the earlier one, $\\frac{1000}{1250}$",
+    "D": "reports the raw decrease of $250$ million liters as if it were a percent"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The decrease is $1250 - 1000 = 250$, and $\\frac{250}{1250} = 0.20$, or $20\\%$.\n\n**The Full Solution:**\nStep 1: Read the two values from the table: $1{,}250$ in $2022$ and $1{,}000$ in $2023$.\nStep 2: The decrease is $1250 - 1000 = 250$ million liters, measured against the $2022$ value.\nStep 3: $\\frac{250}{1250} = 0.2 = 20\\%$. Check: $20\\%$ of $1{,}250$ is $250$, and $1250 - 250 = 1{,}000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($25\\%$): divides the decrease by the later value, $\\frac{250}{1000}$\n* Choice C ($80\\%$): reports the later value as a percent of the earlier one, $\\frac{1000}{1250}$\n* Choice D ($250\\%$): reports the raw decrease of $250$ million liters as if it were a percent\n\n**Test Day Takeaway:** When a table gives two years, the earlier year is the base. Reversing the base is what turns a $20\\%$ decrease into a $25\\%$ figure."
+}

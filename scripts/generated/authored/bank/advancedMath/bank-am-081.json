@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-081",
+ "question": "Ash concentration downwind of an eruption starts at $4{,}800$ micrograms per cubic meter and halves every $5$ days for as long as the plume lasts. Which equation gives the concentration $y$, in micrograms per cubic meter, after $t$ days?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = 4{,}800(0.5)^{5t}$"
+  },
+  {
+   "id": "B",
+   "text": "$y = 4{,}800(0.2)^{t/5}$"
+  },
+  {
+   "id": "C",
+   "text": "$y = 4{,}800(0.5)^{t/5}$"
+  },
+  {
+   "id": "D",
+   "text": "$y = 4{,}800(2)^{t/5}$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "multiplies $t$ by $5$ instead of dividing, so the concentration halves every fifth of a day",
+  "B": "reads \"halves every $5$ days\" as a multiplier of $\\frac{1}{5}$",
+  "D": "uses the reciprocal multiplier, which doubles the concentration every $5$ days"
+ },
+ "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** One halving per $5$ days means the exponent counts halvings, $\\frac{t}{5}$, so $y = 4{,}800(0.5)^{t/5}$.\n\n**The Full Solution:**\nStep 1: The concentration at $t = 0$ is $4{,}800$, so that is the coefficient.\nStep 2: Each complete $5$-day period multiplies the concentration by $0.5$, and $t$ days contain $\\frac{t}{5}$ such periods.\nStep 3: So $y = 4{,}800(0.5)^{t/5}$. Check: at $t = 5$ the exponent is $1$ and $y = 2{,}400$; at $t = 10$ it is $2$ and $y = 1{,}200$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.5^{5t}$): at $t = 5$ this gives $4{,}800(0.5)^{25}$, essentially zero.\n* Choice B ($0.2^{t/5}$): confuses the halving with a drop to one-fifth; at $t = 5$ it gives $960$.\n* Choice D ($2^{t/5}$): grows instead of decaying, giving $9{,}600$ after $5$ days.\n\n**Test Day Takeaway:** The exponent counts how many full periods have passed, so a period of length $p$ puts $\\frac{t}{p}$ upstairs."
+}

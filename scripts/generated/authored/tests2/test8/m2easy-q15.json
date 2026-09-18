@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "In a random sample of $180$ patients at a surgical center, the mean recovery time after a procedure was $11.4$ days, with an associated margin of error of $0.8$ day. Which conclusion is most appropriate?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mean recovery time for all patients at the surgical center is exactly $11.4$ days."
+  },
+  {
+   "id": "B",
+   "text": "The recovery time of every patient in the sample was between $10.6$ and $12.2$ days."
+  },
+  {
+   "id": "C",
+   "text": "It is plausible that the mean recovery time for all patients at the surgical center is between $11.4$ and $12.2$ days."
+  },
+  {
+   "id": "D",
+   "text": "It is plausible that the mean recovery time for all patients at the surgical center is between $10.6$ and $12.2$ days."
+  }
+ ],
+ "distractorNotes": {
+  "A": "ignores the margin of error and treats the sample mean 11.4 as the exact population mean",
+  "B": "applies the interval to individual patients rather than to the mean recovery time",
+  "C": "adds the margin of error but never subtracts it, using only 11.4 to 12.2"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The plausible interval for the population mean is $11.4 \\pm 0.8$, or $10.6$ to $12.2$ days.\n\n**The Full Solution:**\nStep 1: A margin of error is attached to the sample MEAN and describes the population MEAN. It says nothing about how any single patient's recovery time behaves.\nStep 2: Build the interval by subtracting and adding the margin: $11.4 - 0.8 = 10.6$ days and $11.4 + 0.8 = 12.2$ days.\nStep 3: The appropriate conclusion is that the mean recovery time for all patients at the surgical center is plausibly between $10.6$ and $12.2$ days. Check the width: the interval is centered on $11.4$ and is $1.6$ days wide, which is twice the margin, as it must be. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($11.4$ exactly): drops the margin of error entirely. A sample estimates the population mean; it does not pin it down.\n* Choice B: uses the right two endpoints but applies them to individual patients. Individual recovery times vary far more widely than the mean does.\n* Choice C ($11.4$ to $12.2$): adds the margin without subtracting it, so the interval is half as wide and is not centered on the estimate.\n\n**Test Day Takeaway:** A margin of error always builds a two-sided interval around the sample statistic, and the claim it supports is about the population MEAN — never about every individual."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 815,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 1,
-  "passage": "When deep-sea explorers first found dense communities of giant tube worms and clams clustered around hydrothermal vents, the discovery was puzzling: sunlight never reaches those depths, so the food chains that sustain life nearer the surface cannot operate there. Researchers later showed that the vent animals house bacteria in their tissues that draw energy not from light but from chemicals such as hydrogen sulfide streaming out of the vents, and they pass nutrition to their hosts. The same pattern has since turned up at cold methane seeps. Together these findings suggest that crowded animal communities can persist far below the sunlit zone, provided that ____",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "the vent animals can survive without their bacterial partners as long as chemicals such as hydrogen sulfide remain in the surrounding water."
-    },
-    {
-      "id": "B",
-      "text": "occasional scraps of organic matter sinking from the sunlit surface reach the vent communities often enough to feed them."
-    },
-    {
-      "id": "C",
-      "text": "a dependable supply of chemical energy is present at the site and the resident animals carry bacteria able to convert it into usable nutrition."
-    },
-    {
-      "id": "D",
-      "text": "the bacteria found in tube worms can also be grown in the tissues of clams under the conditions found at cold seeps."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage shows that vent and seep communities survive without sunlight because their animals host bacteria that turn local chemicals into food, so the condition that makes such communities possible is a reliable chemical energy source plus animals carrying bacteria able to exploit it. C states both halves of that condition. A drops the bacteria, which the passage makes essential; B reintroduces the surface food chains the text rules out; and D describes a narrow experimental possibility rather than the general requirement the passage points to."
+ "id": 815,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 1,
+ "passage": "The truffle is the fruiting body of an underground fungus that cannot photosynthesize; the fungus sheathes the fine roots of a partner tree and draws its sugars from them, trading mineral nutrients it gathers from the soil. Foresters have long observed that a productive truffle ground goes barren within a few seasons when its oaks are felled or die, even where the ground itself is left entirely undisturbed. Taken together, these observations suggest that ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "the soil of a truffle ground gradually loses the minerals that the fungus requires to fruit."
+  },
+  {
+   "id": "B",
+   "text": "truffles form only in partnership with a few particular species of oak and cannot establish themselves on the roots of any other kind of tree."
+  },
+  {
+   "id": "C",
+   "text": "the fungus depends on a continuing supply of nutrients from a living host tree, not merely on suitable soil."
+  },
+  {
+   "id": "D",
+   "text": "truffles cannot be cultivated deliberately and will always resist any human effort at domestication."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** If truffle grounds stop producing when their host trees die even though the soil is untouched, and the fungus cannot feed itself, the natural conclusion is that truffle production depends on a continuing supply of nutrition from a living partner tree.\n\n**The Full Solution:**\n- Premise one: the truffle fungus cannot make its own food and draws sugars from the roots of a partner tree.\n- Premise two: productive grounds go barren when their oaks are felled or die, even where the soil is left undisturbed.\n- Together these force choice C: what the truffle requires is the living partnership, not merely suitable ground.\n\n**Why the other choices are wrong:**\n- A: The soil in the abandoned grounds was unchanged, so soil chemistry cannot explain the failure.\n- B: The passage never compares oak species, and the failures follow tree death generally.\n- D: The conclusion overreaches — the passage shows dependence on living trees, not that cultivation is impossible."
 }

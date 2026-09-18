@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-213",
+  "question": "In a city bike-share program, $30\\%$ of the trips begin downtown. Of the trips that begin downtown, $65\\%$ also end downtown. What percent of all trips both begin and end downtown?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1.95\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$19.5\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$35\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$65\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "converts 65% to 0.065 and multiplies",
+    "C": "subtracts, 65 - 30",
+    "D": "reports the conditional percent within the downtown starts"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $0.30 \\times 0.65 = 0.195$, or $19.5\\%$.\n\n**The Full Solution:**\nStep 1: The $65\\%$ applies only to the trips that begin downtown, which are $30\\%$ of all trips.\nStep 2: Multiply the rates: $0.30 \\times 0.65 = 0.195$.\nStep 3: Convert to a percent: $19.5\\%$. Check with $1{,}000$ trips: $300$ begin downtown and $65\\%$ of $300$ is $195$, which is $19.5\\%$ of $1{,}000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.95\\%$): uses $0.065$ for $65\\%$, shifting the decimal one place too far.\n* Choice C ($35\\%$): subtracts the two percents instead of multiplying them.\n* Choice D ($65\\%$): reports the rate among downtown starts as though it described all trips.\n\n**Test Day Takeaway:** Percent answers that are not whole numbers are normal — do not round a product like $0.195$ to a friendlier value."
+}

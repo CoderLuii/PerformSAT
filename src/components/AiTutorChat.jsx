@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { chatWithTutor, checkTutorMath, prewarmTutor } from '../services/aiTutorService';
 import CoachModePicker from './CoachModePicker';
 import { trackCoachModeUsed, trackEvent } from '../services/analyticsService';
@@ -616,19 +616,22 @@ FULL EXPLANATION: ${explanation}
 ${trapAnalysis}
 ${explicitError}
 
-When the student wants the full breakdown of a question (especially one they just missed), give the clean, complete explanation a great tutor gives — the kind that makes the answer obvious in hindsight. Cover these, naturally and in this order; don't pad it, but don't cut it short either:
+When the student wants the full breakdown of a question (especially one they just missed), write it the way the cleanest answer keys read — verdict first, then scannable sections. Follow this exact shape:
 
-THE GOAL — In one line, what is this question actually asking you to do? (e.g. "emphasize the methodological innovation", "find the claim the data support", "pick the transition that signals a contrast", "make the two halves a single complete sentence".)
+OPEN WITH THE VERDICT — The very first sentence states the answer outright: "The correct answer is **${correctAnswer} — <the full text of that choice>.**" Follow it with one or two sentences of the core reason, built on the passage's own words. No warm-up sentence before it — the answer leads.
 
-WHY ${correctAnswer} IS RIGHT — Quote the exact words in the passage that make it correct, or state the grammar rule in one line.
+### Key ideas from the text
+2-4 bullets, each starting with a short **bold label:** and one tight sentence. Walk the chain of evidence that forces the answer, quoting the passage's exact deciding words in at least one bullet. For a grammar item, state the rule being tested instead.
 
-EVERY CHOICE, SIDE BY SIDE — Go through ALL the answer choices, one tight line each, the right one and every wrong one, each marked clearly so it's scannable at a glance. For each wrong choice, name the specific reason it fails in plain language — it matches a word but misses the point, it's the opposite of the goal, it's out of scope, it's too extreme, it's only half right, it's true but doesn't do what the question asks. This side-by-side elimination is the most useful part of the whole answer — never skip a choice.${!isCorrect && selectedAnswer ? ` Give the student's choice ${selectedAnswer} a little extra care: name exactly what pulled them to it and how to catch it next time.` : ''}
+### Why the other choices are wrong
+One bullet per wrong choice, in letter order, each starting with its bold letter ("**A:**"). Name the specific reason each fails in plain language — it matches a word but misses the point, it's the opposite of the goal, it's out of scope, it's too extreme, it's only half right, it's true but doesn't do what the question asks. Never skip a wrong choice.${!isCorrect && selectedAnswer ? ` Give the student's choice ${selectedAnswer} the fullest bullet: name exactly what pulled them to it and how to catch it next time.` : ''}
 
-THE TAKEAWAY — One sentence the student can carry to test day.
+### The takeaway
+One sentence the student can carry to test day.
 
 But if they're only asking a NARROW follow-up ("why C and not D?", "why does that sentence matter?"), just answer that briefly — don't force the whole structure.
 
-Use the provided explanation as a foundation, but write the clearer, sharper version: exact textual evidence and a specific, plain-language reason for every single choice.
+Use the provided explanation as a foundation, but write the clearer, sharper version: exact textual evidence and a specific, plain-language reason for every choice.
 `;
     } else {
       context += `
@@ -765,18 +768,22 @@ FULL EXPLANATION: ${explanation}
 ${trapAnalysis}
 ${explicitError}
 
-When the student wants the full breakdown of a question (especially one they just missed), give the clean, complete explanation a great tutor gives — the kind that makes the answer obvious in hindsight. Cover these, naturally; don't pad it, but don't cut it short either:
+When the student wants the full breakdown of a question (especially one they just missed), write it the way the cleanest answer keys read — verdict first, then scannable sections. Follow this exact shape:
 
-THE SETUP — Name what the question is really testing in one line, then the fastest correct path to the answer. Lead with the quickest method (Desmos, backsolving, plugging in) before the algebra; for Desmos, say exactly what to type, not "try graphing it."
+OPEN WITH THE VERDICT — The very first sentence states the answer outright: ${!isFillin ? `"The correct answer is **${correctAnswer} — <that choice, math in LaTeX>.**"` : `"The correct answer is **<the value, in LaTeX>.**"`} Follow it with one or two sentences naming what the question is really testing and the core of why. No warm-up sentence before it — the answer leads.
+
+### How to get it
+2-4 bullets, each starting with a short **bold label:** and one tight step. Lead with the fastest correct path — Desmos (say exactly what to type, not "try graphing it"), backsolving, plugging in — before the algebra. End with a **Check:** bullet showing how to confirm the answer (Desmos keystrokes or substituting back in).
 ${!isFillin ?
 `
-EVERY CHOICE, SIDE BY SIDE — Go through ALL the answer choices, one tight line each, the right one and every wrong one, each marked clearly so it's scannable at a glance. For each wrong choice, name the SPECIFIC slip that produces it — a sign error, a partial calculation, a reversed operation, the value one step early, a misread.${!isCorrect && selectedAnswer ? ` Give the student's choice ${selectedAnswer} extra care: name exactly the slip that led there and how to catch it next time.` : ''} This side-by-side elimination is the most useful part of the whole answer — never skip a choice.` :
+### Why the other choices are wrong
+One bullet per wrong choice, in letter order, each starting with its bold letter ("**A:**"). Name the SPECIFIC slip that produces it — a sign error, a partial calculation, a reversed operation, the value one step early, a misread.${!isCorrect && selectedAnswer ? ` Give the student's choice ${selectedAnswer} the fullest bullet: name exactly the slip that led there and how to catch it next time.` : ''} Never skip a wrong choice.` :
 `
-COMMON MISTAKES — Name the wrong values students most often produce on this question and the specific slip behind each.${!isCorrect && selectedAnswer ? ` The student answered ${selectedAnswer}; name exactly the slip that led there and how to catch it next time.` : ''}`}
+### Common mistakes
+Bullets for the wrong values students most often produce on this question, with the specific slip behind each.${!isCorrect && selectedAnswer ? ` The student answered ${selectedAnswer}; name exactly the slip that led there and how to catch it next time.` : ''}`}
 
-VERIFY — ${!isFillin ? 'Show the Desmos keystrokes that confirm the answer.' : 'Show how to check by substituting back in.'}
-
-THE TAKEAWAY — One memorable rule for test day.
+### The takeaway
+One memorable rule for test day.
 
 But if they're only asking a NARROW follow-up ("why divide by 3?", "where did the 2 come from?"), just answer that briefly — don't force the whole structure.
 
@@ -990,6 +997,7 @@ Your goal is to build their problem-solving instincts. Every question they solve
     };
 
     persistToFirestore();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- practiceContext?.skills is only stamped onto a newly created session; practiceContext is a prop object rebuilt by the parent, so depending on it would re-fire this Firestore persist on every render
   }, [messages, storageKey, userId, sessionId, moduleId, lessonId, lessonTitle, standalone, isPracticeQuestion]);
 
   // Flush pending writes on unmount / conversation switch. Snapshot the ref in
@@ -1354,6 +1362,7 @@ Your goal is to build their problem-solving instincts. Every question they solve
     // Deps are deliberately narrower than everything buildPrefixContexts
     // reads: the warm should fire once per question-open, not on every
     // progress-state change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- see the note above: buildPrefixContexts is a per-render function, and the pre-warm must fire once per question-open, not on every progress-state change
   }, [isOpen, prewarmEnabled, moduleId, lessonId, practiceContext?.questionId]);
 
   const handleSend = async (overrideText, regenBase) => {

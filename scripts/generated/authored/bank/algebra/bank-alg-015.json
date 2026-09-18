@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-015",
+  "question": "At the start of a planting season, one orchard has $640$ trees and adds $40$ trees each week. A second orchard has $1{,}000$ trees and removes $20$ trees each week. If these rates continue, after how many weeks will the two orchards have the same number of trees?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$18$"
+    },
+    {
+      "id": "D",
+      "text": "$60$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "ignores the removal rate (40w = 360)",
+    "C": "sign error on the removal (640 + 40w = 1,000 + 20w)",
+    "D": "reports the combined rate 40 + 20 instead of the time"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Set Two Linear Models Equal**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The gap of $1{,}000 - 640 = 360$ trees closes at $40 + 20 = 60$ trees per week, so it closes in $\\frac{360}{60} = 6$ weeks.\n\n**The Full Solution:**\nStep 1: Let $w$ be the number of weeks. First orchard: $640 + 40w$. Second orchard: $1{,}000 - 20w$ (removing trees is a negative rate).\nStep 2: Set them equal: $640 + 40w = 1{,}000 - 20w$. Add $20w$ to both sides and subtract $640$: $60w = 360$, so $w = 6$.\nStep 3: Check: after $6$ weeks the first orchard has $640 + 240 = 880$ trees and the second has $1{,}000 - 120 = 880$ trees. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($9$): solves $640 + 40w = 1{,}000$, ignoring that the second orchard is shrinking.\n* Choice C ($18$): writes the second orchard as $1{,}000 + 20w$, a sign error, and gets $20w = 360$.\n* Choice D ($60$): reports the combined closing rate, $40 + 20$, instead of solving for the time.\n\n**Test Day Takeaway:** When one quantity grows and another shrinks, their gap closes at the sum of the two rates; the time is the initial gap divided by that sum."
+}

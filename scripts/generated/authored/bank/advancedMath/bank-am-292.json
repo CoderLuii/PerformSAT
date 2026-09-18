@@ -1,0 +1,40 @@
+{
+  "id": "bank-am-292",
+  "question": "The graph of $y = x^2 - 6x + 2$ is shown in the $xy$-plane. Which of the following equivalent forms of the equation displays the coordinates of the vertex as constants?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        3,
+        -7
+      ],
+      "a": 1,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = (x - 3)^2 - 7$"
+    },
+    {
+      "id": "B",
+      "text": "$y = (x - 3)^2 + 2$"
+    },
+    {
+      "id": "C",
+      "text": "$y = (x - 3)^2 + 11$"
+    },
+    {
+      "id": "D",
+      "text": "$y = (x - 6)^2 - 34$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "keeps the original constant term",
+    "C": "adds $9$ instead of subtracting it",
+    "D": "uses $b = -6$ in place of $\\dfrac{b}{2} = -3$"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Completing the Square**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Half of $-6$ is $-3$, and $(x - 3)^2 = x^2 - 6x + 9$, which is $7$ too big — so $y = (x - 3)^2 - 7$, matching the low point $(3, -7)$ on the graph.\n\n**The Full Solution:**\nStep 1: Complete the square on $x^2 - 6x$: half of $-6$ is $-3$, and $(x - 3)^2 = x^2 - 6x + 9$.\nStep 2: Rewrite: $y = (x^2 - 6x + 9) - 9 + 2 = (x - 3)^2 - 7$.\nStep 3: In the form $y = (x - h)^2 + k$, the vertex is $(h, k) = (3, -7)$, which is exactly the lowest point shown on the graph. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($y = (x - 3)^2 + 2$): the constant $2$ was carried over unchanged; this expands to $x^2 - 6x + 11$ and puts the vertex at $(3, 2)$, above the $x$-axis.\n* Choice C ($y = (x - 3)^2 + 11$): the $9$ was added instead of subtracted.\n* Choice D ($y = (x - 6)^2 - 34$): the full coefficient $-6$ was used inside the square, giving a vertex at $(6, -34)$, far below the graph shown.\n\n**Test Day Takeaway:** Vertex form reads the vertex straight off. When a graph is given, match your $(h, k)$ to the picture before choosing."
+}

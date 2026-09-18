@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-162",
+  "question": "A drafting sheet shows the anchor panel of a suspension bridge tower as a rectangle measuring $6$ centimeters by $9$ centimeters, and every $1$ centimeter on the sheet stands for $4$ meters of the finished structure. What is the area, in square meters, of the finished anchor panel?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$54$"
+    },
+    {
+      "id": "B",
+      "text": "$216$"
+    },
+    {
+      "id": "C",
+      "text": "$864$"
+    },
+    {
+      "id": "D",
+      "text": "$3{,}456$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the area of the drawn rectangle, 6 x 9 = 54 square centimeters, without applying the scale",
+    "B": "scales the drawn area once, 54 x 4 = 216, instead of scaling each side length",
+    "D": "scales the drawn area by 4 cubed, 54 x 64 = 3,456, treating area like volume"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Proportion / Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Lengths scale by $4$, so areas scale by $4^2 = 16$; the drawn area is $6 \\times 9 = 54$ square centimeters, and $54 \\times 16 = 864$.\n\n**The Full Solution:**\nStep 1: Scale each side. The $6$-centimeter side represents $6 \\times 4 = 24$ meters, and the $9$-centimeter side represents $9 \\times 4 = 36$ meters.\nStep 2: Multiply the actual side lengths. The actual panel has area $24 \\times 36 = 864$ square meters.\nStep 3: Check with the area ratio. The drawn area is $6 \\times 9 = 54$ square centimeters, and $54 \\times 4^2 = 54 \\times 16 = 864$ square meters. The two routes agree. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($54$): the area of the rectangle on the sheet, in square centimeters, with the scale never applied.\n* Choice B ($216$): multiplies the drawn area by the length scale factor once: $54 \\times 4 = 216$. Area needs the factor twice.\n* Choice D ($3{,}456$): multiplies the drawn area by $4^3 = 64$: $54 \\times 64 = 3{,}456$. Cubing the scale factor is for volume, not area.\n\n**Test Day Takeaway:** When a drawing scales lengths by $k$, areas scale by $k^2$ and volumes by $k^3$ — decide which one the question asks for before multiplying."
+}

@@ -1,0 +1,29 @@
+{
+  "id": 22,
+  "question": "An equipment reserve account is opened by a contractor with \\$45,000 and pays $4.8\\%$ annual interest, compounded quarterly. Once the balance $t$ years later is written in the form $45000b^{t}$ dollars, the base $b$ is a constant. To the nearest thousandth, what is the value of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1.012$"
+    },
+    {
+      "id": "B",
+      "text": "$1.048$"
+    },
+    {
+      "id": "C",
+      "text": "$1.049$"
+    },
+    {
+      "id": "D",
+      "text": "$1.206$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the quarterly growth factor 1.012 as though the exponent counted years",
+    "B": "uses the nominal annual rate, 1 + 0.048, ignoring that interest compounds four times a year",
+    "D": "raises the annual factor 1.048 to the fourth power, compounding a full year four times"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Each quarter multiplies the balance by $1 + \\frac{0.048}{4} = 1.012$, and a year holds four quarters, so $b = 1.012^4 \\approx 1.049$.\n\n**The Full Solution:**\nStep 1: Quarterly compounding splits the annual rate into four equal periods: the periodic rate is $\\frac{0.048}{4} = 0.012$, so each quarter multiplies the balance by $1.012$.\nStep 2: In $t$ years there are $4t$ quarters, so the balance is $45000(1.012)^{4t}$.\nStep 3: Rewrite that with a yearly base: $45000\\left(1.012^4\\right)^{t}$, so $b = 1.012^4 = 1.04887\\ldots \\approx 1.049$. Check one year against the quarters: $45000(1.012)^4 = 47199.19$ dollars, and $45000(1.049) = 47205$ dollars, agreeing to the rounding used ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.012$): this is the growth for one quarter; used with a yearly exponent it under-counts the interest by a factor of four periods.\n* Choice B ($1.048$): treats $4.8\\%$ as though it were applied once a year, which ignores the interest that earns interest within the year.\n* Choice D ($1.206$): applies the fourth power to $1.048$ rather than to $1.012$, compounding a whole year four times over.\n\n**Test Day Takeaway:** Convert compounding to a yearly base by raising the periodic factor to the number of periods per year — the nominal rate is never the yearly multiplier."
+}

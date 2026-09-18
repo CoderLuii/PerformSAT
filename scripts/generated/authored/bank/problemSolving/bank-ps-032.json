@@ -1,0 +1,40 @@
+{
+  "id": "bank-ps-032",
+  "question": "The dot plot shows the number of customers served at a kiosk during each of $8$ one-hour periods. What is the median number of customers served per one-hour period?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 3,
+          "count": 1
+        },
+        {
+          "value": 5,
+          "count": 2
+        },
+        {
+          "value": 6,
+          "count": 1
+        },
+        {
+          "value": 8,
+          "count": 1
+        },
+        {
+          "value": 9,
+          "count": 2
+        },
+        {
+          "value": 12,
+          "count": 1
+        }
+      ],
+      "xMin": 2,
+      "xMax": 13,
+      "xLabel": "Customers served"
+    }
+  },
+  "correctAnswer": "7",
+  "explanation": "**SAT Pattern: Median of Even-Count Set**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~15s):** With $8$ dots, the median is the average of the $4$th and $5$th dots: $6$ and $8$. Median $= \\frac{6 + 8}{2} = 7$.\n\n**The Full Solution:**\nStep 1: For an even count, $n = 8$, the median is the mean of the two middle values, the $4$th and $5$th in order.\nStep 2: Count from the left: $3$ (1), $5$ (2, 3), $6$ (4), $8$ (5). The middle values are $6$ and $8$.\nStep 3: Median $= \\frac{6 + 8}{2} = 7$. Check: three dots lie below $6$ and three lie above $8$, so the middle pair is correct. $\\checkmark$\n\n**Common Mistakes:** Entering $6$ or $8$ (picking one of the two middle values instead of averaging them); entering $5$ or $9$ (a mode; the data have two); entering $7.125$ (the mean, $\\frac{57}{8}$). Note that the median need not be a value in the data set.\n\n**Test Day Takeaway:** Even count: average the two middle values. The median of $8$ values is the mean of the $4$th and $5$th and may not appear in the data."
+}

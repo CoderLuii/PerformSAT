@@ -1,31 +1,31 @@
 {
-  "id": 838,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "The mathematician and astronomer Caroline Herschel worked alongside her brother William, recording his observations and grinding the mirrors for his telescopes. She also swept the night sky on her own, and between 1786 and 1797 she discovered eight comets, becoming the first woman credited with such finds. Late in her life the Royal Astronomical Society awarded her its Gold Medal, an honor it would not give to another woman for more than a century. Much of her most demanding labor, however, was the patient cataloguing work that organized her brother's scattered records into a reference astronomers could actually use.",
-  "question": "According to the text, what was Caroline Herschel the first woman to do?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Grind the mirrors used in a large reflecting telescope."
-    },
-    {
-      "id": "B",
-      "text": "Be credited with the discovery of comets."
-    },
-    {
-      "id": "C",
-      "text": "Receive the Gold Medal of the Royal Astronomical Society."
-    },
-    {
-      "id": "D",
-      "text": "Publish a catalogue organizing another astronomer’s records."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage states that in discovering eight comets Herschel became \"the first woman credited with such finds.\" A names real work she did but not a first; C misreads the text, which says the Gold Medal was not given to another woman for over a century, not that Herschel was the first woman to receive it; and D describes her cataloguing work without claiming it was a first of any kind."
+ "id": 838,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "An ordinary player-piano roll stored only the notes; loudness and shading were left to the person at the instrument, who pumped the pedals and worked small levers to make the performance swell or hush. The reproducing piano, introduced in the early twentieth century, went further. Its rolls were cut from a particular pianist's playing, and alongside the note slots ran additional perforations encoding that pianist's dynamics and pedaling. Played back on a suitably equipped instrument, such a roll restored not just the notes of a performance but its individual voice — which is why collectors still study reproducing rolls cut by pianists who died before electrical recording matured.",
+ "question": "According to the text, what allowed a reproducing roll to preserve an individual pianist's performance?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The owner of the instrument could adjust the roll's speed while it played."
+  },
+  {
+   "id": "B",
+   "text": "Additional perforations on the roll encoded the pianist's dynamics and pedaling alongside the notes."
+  },
+  {
+   "id": "C",
+   "text": "The reproducing instruments used larger bellows that produced stronger suction than ordinary player pianos."
+  },
+  {
+   "id": "D",
+   "text": "Editors corrected the timing of each roll by hand after the pianist's recording session."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The text states it directly: alongside the note slots, reproducing rolls carried additional perforations that encoded the pianist's dynamics and pedaling, and that is what let a roll preserve an individual performance.\n\n**The Full Solution:**\n- The question asks what the text says allowed reproducing rolls to capture a particular pianist's playing.\n- The text contrasts ordinary rolls (notes only, expression left to the owner's levers) with reproducing rolls.\n- The stated difference: extra perforations recording loudness and pedaling — choice B.\n\n**Why the other choices are wrong:**\n- A: Roll speed is mentioned only as something ordinary owners adjusted by hand, not as what captured a performance.\n- C: The text does not attribute the capture to larger bellows or stronger suction.\n- D: The text says the rolls were cut from a pianist's actual playing, not corrected afterward by editors."
 }

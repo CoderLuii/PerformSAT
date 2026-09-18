@@ -1,0 +1,6 @@
+{
+ "question": "An electroplating line bills a fixed setup charge plus a constant amount per part. A run of $20$ parts is billed $\\$430$ and a run of $32$ parts is billed $\\$646$. What would a run of one part be billed, in dollars?",
+ "correctAnswer": "88",
+ "explanation": "**SAT Pattern: Linear Cost Equation Setup**\n\n**The correct answer is $88$.**\n\n**The Fast Way (~50s):** The extra $12$ parts add $\\$216$, so the rate is $\\$18$ per part; the setup is $430-18(20)=\\$70$, and one part costs $70+18=\\$88$.\n\n**The Full Solution:**\n\nStep 1: Model the bill as $B(p)=rp+s$, where $r$ is the per-part rate and $s$ the setup charge.\n\nStep 2: Subtract the two bills to remove $s$: $646-430=216$ for $32-20=12$ extra parts, so $r=\\frac{216}{12}=18$ dollars per part.\n\nStep 3: Use one bill to find $s$: $430=18(20)+s$ gives $s=70$. Then $B(1)=18(1)+70=88$ dollars. Check: $B(32)=18(32)+70=576+70=646$, matching the second run.\n\n**Common Mistakes:** Reporting $18$ gives only the per-part rate and omits the setup charge that every run carries. Dividing $430$ by $20$ gives $21.50$, an average that mixes the one-time setup into the per-part rate.\n\n**Test Day Takeaway:** Subtract two bills to isolate the rate, then substitute back into either bill to recover the fixed charge.",
+ "id": "bank-alg-333"
+}

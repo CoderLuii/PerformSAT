@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-434",
+ "question": "A roof-truss chord has the same slope as the graph of $2x + 5y = 30$ and contains the points $(a, 7)$ and $(0, 3)$. What is the value of the constant $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-10$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{8}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{8}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "multiplies instead of dividing, computing $4\\left(-\\frac{2}{5}\\right) = -\\frac{8}{5}$",
+  "C": "uses the negative reciprocal $\\frac{5}{2}$, solving $\\frac{4}{a} = \\frac{5}{2}$",
+  "D": "drops the negative sign, solving $\\frac{4}{a} = \\frac{2}{5}$"
+ },
+ "explanation": "**SAT Pattern: Parallel Line through a Point**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The chord's slope is $-\\frac{2}{5}$, and $\\frac{7 - 3}{a - 0} = -\\frac{2}{5}$ gives $a = -10$.\n\n**The Full Solution:**\nStep 1: Rewrite $2x + 5y = 30$ as $y = -\\frac{2}{5}x + 6$, so the shared slope is $-\\frac{2}{5}$.\nStep 2: The chord through $(a, 7)$ and $(0, 3)$ has slope $\\frac{7 - 3}{a - 0} = \\frac{4}{a}$.\nStep 3: Set $\\frac{4}{a} = -\\frac{2}{5}$, so $-2a = 20$ and $a = -10$. Check: $\\frac{7 - 3}{-10 - 0} = -\\frac{2}{5}$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($-\\frac{8}{5}$): multiplies instead of dividing, computing $4\\left(-\\frac{2}{5}\\right) = -\\frac{8}{5}$\n* Choice C ($\\frac{8}{5}$): uses the negative reciprocal $\\frac{5}{2}$, solving $\\frac{4}{a} = \\frac{5}{2}$\n* Choice D ($10$): drops the negative sign, solving $\\frac{4}{a} = \\frac{2}{5}$\n\n**Test Day Takeaway:** When one coordinate is unknown, write the slope formula as a single equation and solve it rather than guessing the point."
+}

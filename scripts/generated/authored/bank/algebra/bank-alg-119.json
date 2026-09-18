@@ -1,0 +1,51 @@
+{
+ "id": "bank-alg-119",
+ "question": "The table shows two riser setups for a choir, built from wide risers of one width and narrow risers of another. What is the width, in inches, of one narrow riser?",
+ "questionTable": {
+  "headers": [
+   "Setup",
+   "Wide risers",
+   "Narrow risers",
+   "Total width (in.)"
+  ],
+  "rows": [
+   [
+    "Concert",
+    "3",
+    "4",
+    "246"
+   ],
+   [
+    "Recital",
+    "5",
+    "2",
+    "270"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$30$"
+  },
+  {
+   "id": "B",
+   "text": "$42$"
+  },
+  {
+   "id": "C",
+   "text": "$60$"
+  },
+  {
+   "id": "D",
+   "text": "$72$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports the wide-riser width 42 instead of the narrow-riser width",
+  "C": "stops at 2n = 60 without dividing by the 2 narrow risers",
+  "D": "adds the two widths, 42 + 30 = 72"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: System of Equations — Elimination**\n\n**Choice A is correct.**\n\n**The Fast Way (~50s):** Doubling the recital row gives $10w + 4n = 540$; subtracting the concert row leaves $7w = 294$, so $w = 42$ and $2n = 270 - 210 = 60$, making $n = 30$.\n\n**The Full Solution:**\nStep 1: Let $w$ be the width of one wide riser and $n$ the width of one narrow riser. The table gives $3w + 4n = 246$ and $5w + 2n = 270$.\nStep 2: Match the $n$-coefficients by doubling the recital equation: $10w + 4n = 540$. Subtracting the concert equation gives $7w = 294$, so $w = 42$.\nStep 3: Substitute back into $5w + 2n = 270$: $210 + 2n = 270$, so $2n = 60$ and $n = 30$. Check the concert row: $3(42) + 4(30) = 126 + 120 = 246$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($42$): solves the system correctly but reports the wide-riser width instead of the narrow one.\n* Choice C ($60$): stops at $2n = 60$ and reports the combined width of the two narrow risers.\n* Choice D ($72$): adds the two solved widths, $42 + 30 = 72$, instead of reporting just the narrow one.\n\n**Test Day Takeaway:** Scale one equation to match a coefficient, subtract, then substitute back — and read the last line of the question before choosing between the two values you now have."
+}

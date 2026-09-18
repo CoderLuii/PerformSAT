@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A chemistry lab's quality log shows that $60\\%$ of the recorded samples came from batch $X$ and that $42\\%$ of all recorded samples came from batch $X$ and met the purity standard. Which expression gives the probability that a randomly selected batch $X$ sample met the standard?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{0.60}{0.42}$"
+  },
+  {
+   "id": "B",
+   "text": "$0.60 \\times 0.42$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{0.42}{0.60}$"
+  },
+  {
+   "id": "D",
+   "text": "$0.60 - 0.42$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the conditional probability, dividing the condition by the joint percent",
+  "B": "multiplies the two percents as if the events were independent",
+  "D": "subtracts to find the batch X samples that failed, 18% of all samples"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** A conditional probability is the overlap divided by the condition: $\\frac{0.42}{0.60}$.\n\n**The Full Solution:**\nStep 1: Let $X$ be the event that a sample came from batch $X$ and $M$ the event that it met the standard. The log gives $P(X) = 0.60$ and $P(X \\text{ and } M) = 0.42$.\nStep 2: The question restricts attention to batch $X$ samples, so the probability wanted is $P(M \\mid X) = \\frac{P(X \\text{ and } M)}{P(X)}$.\nStep 3: That is $\\frac{0.42}{0.60}$; check with counts for $1{,}000$ samples: $600$ came from batch $X$ and $420$ of them met the standard, and $\\frac{420}{600} = \\frac{0.42}{0.60} = 0.7$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{0.60}{0.42}$): flips the conditional and gives about $1.43$, which cannot be a probability.\n* Choice B ($0.60 \\times 0.42$): multiplies as if the two percents were independent pieces; that produces $0.252$, the share of all samples that would satisfy both conditions only if $0.42$ were already a within-batch rate.\n* Choice D ($0.60 - 0.42$): subtracts to get $0.18$, the share of all samples that came from batch $X$ and failed the standard.\n\n**Test Day Takeaway:** \"Given that\" resets the denominator — divide the overlap by the group you are told the item came from, never by the whole."
+}

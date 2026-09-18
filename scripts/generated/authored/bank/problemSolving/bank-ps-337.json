@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-337",
+  "question": "A linear model $\\hat{y} = mx + b$ relates the depth $y$, in centimeters, of sediment in a lake basin to the number of years $x$ since measurements began. The model predicts $\\hat{y} = 29$ when $x = 6$ and $\\hat{y} = 45$ when $x = 14$. What is the value of $b$?",
+  "correctAnswer": "17",
+  "explanation": "**SAT Pattern: Interpret Intercept of Best Fit**\n\n**The correct answer is $17$.**\n\n**The Fast Way (~25s):** The slope is $\\frac{45 - 29}{14 - 6} = 2$, so $b = 29 - 2(6) = 17$.\n\n**The Full Solution:**\nStep 1: Two points determine the model, so first find $m$: $m = \\frac{45 - 29}{14 - 6} = \\frac{16}{8} = 2$ centimeters per year.\nStep 2: Substitute one point into $\\hat{y} = 2x + b$. Using $(6, 29)$: $29 = 2(6) + b = 12 + b$.\nStep 3: $b = 17$ centimeters. Check with the other point: $2(14) + 17 = 28 + 17 = 45$. $\\checkmark$\n\n**Common Mistakes:** Reporting $2$ gives the slope rather than the intercept. Subtracting the $x$-value directly, $29 - 6 = 23$, skips multiplying by the slope. Adding instead of subtracting gives $29 + 12 = 41$.\n\n**Test Day Takeaway:** Find the slope first, then back out $b$ from a single point, and confirm with the other point. Two given points always allow that check."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "bank-ps-293",
+  "question": "A pipeline transports oil at a constant rate of $1.5$ cubic meters per minute. The table gives two unit conversions. At this rate, how many liters of oil does the pipeline transport in $1$ hour?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Quantity",
+        "Conversion"
+      ],
+      "rows": [
+        [
+          "Volume",
+          "1 cubic meter = 1,000 liters"
+        ],
+        [
+          "Time",
+          "1 hour = 60 minutes"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "90000",
+  "explanation": "**SAT Pattern: Unit Conversion**\n\n**The correct answer is $90{,}000$.**\n\n**The Fast Way (~20s):** $1.5 \\times 1{,}000 = 1{,}500$ liters per minute, and $1{,}500 \\times 60 = 90{,}000$ liters in an hour.\n\n**The Full Solution:**\nStep 1: Convert the volume unit using the table: $\\frac{1.5 \\text{ m}^3}{1 \\text{ min}} \\times \\frac{1{,}000 \\text{ liters}}{1 \\text{ m}^3} = \\frac{1{,}500 \\text{ liters}}{1 \\text{ min}}$.\nStep 2: Convert the time unit using the table: $\\frac{1{,}500 \\text{ liters}}{1 \\text{ min}} \\times \\frac{60 \\text{ min}}{1 \\text{ hour}} = 90{,}000$ liters per hour.\nStep 3: Check by converting the rate first: $1.5 \\times 60 = 90$ cubic meters per hour, and $90 \\times 1{,}000 = 90{,}000$ liters. $\\checkmark$\n\n**Common Mistakes:**\n* Reporting $1{,}500$: stopping after the volume conversion and answering per minute instead of per hour.\n* Reporting $90$: converting the time but leaving the answer in cubic meters.\n* Reporting $25$, from $1{,}500 \\div 60$: dividing by $60$ rather than multiplying, which converts an hourly rate to a per-minute rate.\n\n**Test Day Takeaway:** Order does not matter when the conversions are written as fractions, but every unit in the question must appear exactly once as a numerator and once as a denominator."
+}

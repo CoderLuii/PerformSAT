@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A triangular solar array at a research station is bounded by three mounting posts located at $(-4, 1)$, $(-4, 13)$, and $(6, 7)$ in a coordinate plane, where each unit represents one meter. How many square meters of ground does the array cover?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$30$"
+  },
+  {
+   "id": "B",
+   "text": "$42$"
+  },
+  {
+   "id": "C",
+   "text": "$60$"
+  },
+  {
+   "id": "D",
+   "text": "$120$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "uses the rise 6 and run 10 between (-4,1) and (6,7) as the base and height, giving (1/2)(10)(6)=30",
+  "B": "uses the y-coordinate 7 of the third post as the height instead of the horizontal distance 10, giving (1/2)(12)(7)=42",
+  "D": "multiplies base by height without the factor of one half, giving 12(10)=120"
+ },
+ "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The two posts at $x = -4$ give a vertical base of length $13 - 1 = 12$, and the third post is $6 - (-4) = 10$ units away horizontally, so the area is $\\frac{1}{2}(12)(10) = 60$.\n\n**The Full Solution:**\nStep 1: The posts $(-4, 1)$ and $(-4, 13)$ share the $x$-coordinate $-4$, so the segment joining them is vertical with length $13 - 1 = 12$ meters. Use that segment as the base.\nStep 2: The height is the perpendicular distance from the third post $(6, 7)$ to the vertical line $x = -4$, which is the horizontal distance $6 - (-4) = 10$ meters.\nStep 3: Apply the area formula: $\\frac{1}{2}(12)(10) = 60$ square meters. Check with the shoelace formula: $\\frac{1}{2}\\left| -4(13 - 7) + (-4)(7 - 1) + 6(1 - 13) \\right| = \\frac{1}{2}\\left| -24 - 24 - 72 \\right| = 60$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($30$): uses the horizontal and vertical gaps between $(-4, 1)$ and $(6, 7)$ as a base and height, computing $\\frac{1}{2}(10)(6) = 30$. Those two numbers describe one slanted side, not a base with its own perpendicular height.\n* Choice B ($42$): takes the height to be the third post's $y$-coordinate, $7$, giving $\\frac{1}{2}(12)(7) = 42$. Height is measured from the base line $x = -4$, not from the $x$-axis.\n* Choice D ($120$): computes $12(10) = 120$, the area of the rectangle built on that base and height, forgetting the factor of $\\frac{1}{2}$.\n\n**Test Day Takeaway:** When two vertices share a coordinate, use that side as the base; the height is then just the distance from the third vertex to that vertical or horizontal line."
+}

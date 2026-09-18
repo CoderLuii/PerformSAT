@@ -1,0 +1,49 @@
+{
+ "id": "bank-alg-312",
+ "question": "The table lists an expression for the length, in meters, of each of the three segments of a proposed greenway path. The total length of the path is $96$ meters. What is the value of $x$?",
+ "questionTable": {
+  "headers": [
+   "Segment",
+   "Length (meters)"
+  ],
+  "rows": [
+   [
+    "North",
+    "$4x + 9$"
+   ],
+   [
+    "Middle",
+    "$6x - 3$"
+   ],
+   [
+    "South",
+    "$2x + 6$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the constant 12 twice, solving 12x = 72",
+  "C": "ignores the constants entirely and solves 12x = 96",
+  "D": "adds the constants to the total instead of subtracting, solving 12x = 108"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Combining Like Terms — Solve for the Variable**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The three lengths add to $12x + 12$; setting $12x + 12 = 96$ gives $x = 7$.\n\n**The Full Solution:**\nStep 1: Add the three expressions: $(4x + 9) + (6x - 3) + (2x + 6)$.\nStep 2: Combine like terms: $4x + 6x + 2x = 12x$ and $9 - 3 + 6 = 12$, so the path measures $12x + 12$ meters.\nStep 3: Set $12x + 12 = 96$, giving $12x = 84$ and $x = 7$. Check: the segments measure $37$, $39$, and $20$ meters, and $37 + 39 + 20 = 96$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): subtracts the constant $12$ a second time, solving $12x = 96 - 24$.\n* Choice C ($8$): drops the constants entirely and solves $12x = 96$.\n* Choice D ($9$): adds the constants to the total instead of subtracting them, solving $12x = 108$.\n\n**Test Day Takeaway:** Collect the whole expression first, then move its constant to the other side once — before dividing by the coefficient."
+}

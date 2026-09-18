@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-001",
+  "question": "In a survey of a wetland, $0.072$ of the total surveyed area was found to be open water. What percent of the surveyed area was open water?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.0072\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$0.072\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$0.72\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$7.2\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "shifts the decimal point one place to the left, dividing by $10$ instead of multiplying by $100$.",
+    "B": "attaches a percent sign to the decimal without multiplying by $100$.",
+    "C": "shifts the decimal point only one place to the right (multiplies by $10$, not $100$)."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Decimal to Percent**\n\n**Choice D is correct.**\n\n**The Fast Way (~5s):** Multiply by $100$, which shifts the decimal point two places to the right: $0.072 \\times 100 = 7.2$, so $7.2\\%$.\n\n**The Full Solution:**\nStep 1: A percent is a number of parts per $100$, so a decimal is converted to a percent by multiplying by $100$.\nStep 2: $0.072 \\times 100 = 7.2$, so $0.072$ is $7.2\\%$.\nStep 3: Check by reversing: $7.2\\% = \\frac{7.2}{100} = 0.072$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.0072\\%$): shifts the decimal point one place to the left, dividing by $10$ instead of multiplying by $100$.\n* Choice B ($0.072\\%$): attaches a percent sign to the decimal without multiplying by $100$.\n* Choice C ($0.72\\%$): shifts the decimal point only one place to the right (multiplies by $10$, not $100$).\n\n**Test Day Takeaway:** Decimal to percent is a two-place shift to the right. A decimal near $0.07$ must land near $7\\%$, not $0.7\\%$ or $70\\%$."
+}

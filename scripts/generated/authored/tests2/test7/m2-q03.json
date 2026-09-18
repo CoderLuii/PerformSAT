@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "Two lab notebooks record the same linear relationship between the volume of syrup, $x$, and the volume of water, $y$, in a diluted juice concentrate: $8x + 20y = 12$ and $rx + sy = 21$, where $r$ and $s$ are constants. Every ordered pair that satisfies the first equation also satisfies the second. What is the value of $r - s$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-21$"
+  },
+  {
+   "id": "B",
+   "text": "$-12$"
+  },
+  {
+   "id": "C",
+   "text": "$-6$"
+  },
+  {
+   "id": "D",
+   "text": "$21$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "sets r = 8 and s = 20, assuming the coefficients themselves must match rather than being scaled",
+  "C": "scales the x-coefficient by 7/4 to get r = 14 but leaves s = 20 unscaled",
+  "D": "computes s - r = 35 - 14 instead of r - s"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The constants scale by $\\frac{21}{12}=\\frac{7}{4}$, so $r=8\\left(\\frac{7}{4}\\right)=14$ and $s=20\\left(\\frac{7}{4}\\right)=35$; $r-s=-21$.\n\n**The Full Solution:**\nStep 1: Translate the condition. If every ordered pair satisfying the first equation also satisfies the second, the two equations describe the same line, so one is a constant multiple of the other.\nStep 2: Find the multiplier from the constant terms. $8x+20y=12$ becomes $rx+sy=21$ only if every coefficient is multiplied by $k=\\frac{21}{12}=\\frac{7}{4}$.\nStep 3: Apply it to both coefficients. $r=\\frac{7}{4}(8)=14$ and $s=\\frac{7}{4}(20)=35$, so $r-s=14-35=-21$. Check: $14x+35y=21$ divided by $\\frac{7}{4}$ returns $8x+20y=12$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-12$): sets $r=8$ and $s=20$, as if identical solution sets required identical coefficients; that gives $8-20=-12$ but the constants $12$ and $21$ would then disagree.\n* Choice C ($-6$): scales only the $x$-coefficient, using $r=14$ with $s=20$, giving $14-20=-6$. One scale factor must hit every term.\n* Choice D ($21$): computes $s-r=35-14$ — the right numbers subtracted in the wrong order.\n\n**Test Day Takeaway:** \"Same solution set\" means one equation is a multiple of the other. Get the multiplier from the pair of numbers you know completely — here the constants — then apply it to every remaining term.\n"
+}

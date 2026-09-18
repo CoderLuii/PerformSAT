@@ -6,29 +6,17 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 2,
-  "passage": "The anthropologist Diamond Jenness spent two years, beginning in 1914, living among the Copper Inuit of the central Canadian Arctic as a member of the Canadian Arctic Expedition. Rather than simply collecting objects, he recorded the group's seasonal movements, kinship terms, songs, and the way tasks were divided through the year. His monograph on the Copper Inuit became a standard reference, valued less for any single discovery than for the breadth of daily life it documented at a moment when that life was beginning to change under outside contact.",
-  "question": "According to the text, what did Jenness's monograph on the Copper Inuit come to be valued for?",
+  "passage": "The emperor Frederick II devoted some three decades to De arte venandi cum avibus (The Art of Hunting with Birds), a falconry treatise completed around 1245. What set the work apart from earlier bird lore was its method. Frederick repeated received claims only after testing them: he had the legend that barnacle geese hatch from driftwood investigated and dismissed it for want of evidence, covered the eyes of vultures to learn whether they found food by sight or by smell, and corrected Aristotle wherever his own evidence disagreed. The treatise's accounts of plumage, flight, and training rest on the watching of living birds rather than on the authority of older books.",
+  "question": "According to the text, what distinguished Frederick II's treatise from earlier writing about birds?",
   "choices": [
-    {
-      "id": "A",
-      "text": "The objects he collected during the expedition."
-    },
-    {
-      "id": "B",
-      "text": "A single major discovery about Arctic kinship."
-    },
-    {
-      "id": "C",
-      "text": "Its predictions about future contact with outsiders."
-    },
-    {
-      "id": "D",
-      "text": "The breadth of daily life that it documented."
-    }
+    { "id": "A", "text": "It was the first written work to take falconry as its principal subject." },
+    { "id": "B", "text": "It was composed by a reigning monarch rather than by a scholar." },
+    { "id": "C", "text": "It described more species of birds than any earlier treatise had attempted to cover." },
+    { "id": "D", "text": "It grounded its claims in observation and testing rather than in the authority of established sources." }
   ],
   "correctAnswer": "D",
-  "explanation": "The passage says Jenness's monograph was prized \"less for any single discovery than for the breadth of daily life it documented.\" The detail the question asks for is therefore that breadth of everyday life, choice D. Choice A names the object-collecting the text says he set aside, B names the single discovery the text downplays, and C invents predictions the passage does not mention.",
+  "explanation": "**Choice D is correct.** The text names the distinction explicitly — \"What set the work apart from earlier bird lore was its method\" — and then defines that method as testing claims and trusting observation over \"the authority of older books.\"\n\n**The Full Solution:**\n- The question asks what the text says, and the second sentence answers it directly: the method.\n- The examples specify the method — the barnacle-goose legend investigated, the vulture experiment, Aristotle corrected against evidence.\n- The final sentence restates it as D does: observation of living birds over inherited authority.\n\n**Why the other choices are wrong:**\n- A: The text never claims priority for the treatise as the first on falconry.\n- B: Frederick's rank is mentioned, but the text attributes the work's distinction to its method, not its author's throne.\n- C: Breadth of coverage is never compared; the comparison drawn is about how claims were justified.",
   "_meta": {
-    "anchor": "Diamond Jenness, Copper Inuit"
+    "anchor": "Frederick II — De arte venandi cum avibus (c. 1245); work registered in literaryWorks.json; barnacle-goose and vulture tests are historically attested"
   }
 }

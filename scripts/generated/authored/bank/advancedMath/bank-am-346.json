@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-346",
+  "question": "The table gives the balance of an account when it was opened and at the end of each of the first two months. The balance grows exponentially. Which function $B$ gives the balance, in dollars, $t$ years after the account was opened?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Months after opening",
+        "Balance (dollars)"
+      ],
+      "rows": [
+        [
+          "0",
+          "500"
+        ],
+        [
+          "1",
+          "550"
+        ],
+        [
+          "2",
+          "605"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$B(t) = 500(1.1)^{t}$"
+    },
+    {
+      "id": "B",
+      "text": "$B(t) = 500(1.1)^{t/12}$"
+    },
+    {
+      "id": "C",
+      "text": "$B(t) = 500(1.1)^{12t}$"
+    },
+    {
+      "id": "D",
+      "text": "$B(t) = 6{,}000(1.1)^{12t}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "leaves the exponent in months",
+    "B": "divides by 12 instead of multiplying",
+    "D": "scales the initial deposit by 12"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Build Exponential Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~60s):** The balance multiplies by $1.1$ each MONTH, and a year holds $12$ months, so after $t$ years the factor has been applied $12t$ times: $B(t) = 500(1.1)^{12t}$.\n\n**The Full Solution:**\nStep 1: The table gives $\\dfrac{550}{500} = 1.1$ and $\\dfrac{605}{550} = 1.1$, so the monthly growth factor is $1.1$ and the opening balance is $500$.\nStep 2: In months the model is $500(1.1)^{\\text{months}}$. The question asks for $t$ in YEARS, and $t$ years is $12t$ months.\nStep 3: Substituting gives $B(t) = 500(1.1)^{12t}$. Check: at $t = \\dfrac{1}{6}$ (two months) the exponent is $2$, giving $500(1.21) = 605$, the third table row. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($B(t) = 500(1.1)^{t}$): leaves the exponent in months, so one year of growth is counted as one month.\n* Choice B ($B(t) = 500(1.1)^{t/12}$): divides by $12$ instead of multiplying, which is the conversion for going from years to months in the wrong direction.\n* Choice D ($B(t) = 6{,}000(1.1)^{12t}$): multiplies the opening balance by $12$ rather than the exponent.\n\n**Test Day Takeaway:** Convert the TIME UNIT inside the exponent, never the initial amount — $t$ years is $12t$ compounding periods when the period is a month."
+}

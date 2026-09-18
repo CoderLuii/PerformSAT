@@ -1,0 +1,36 @@
+{
+  "id": 9019,
+  "studentNotes": {
+    "intro": "While researching a topic, a student has taken the following notes:",
+    "bullets": [
+      "During the last ice age, ice sheets covered much of northern North America and northern Europe.",
+      "Eskers are long, winding ridges of sand and gravel, laid down by meltwater streams that ran in tunnels within and beneath the ice.",
+      "Drumlins are smooth, elongated hills of glacial debris, molded under ice that was moving across them.",
+      "An esker generally runs in the direction the ice was flowing, because the tunnel that formed it did.",
+      "A drumlin's long axis also lies parallel to the direction of ice flow, with its blunt end facing the ice.",
+      "Geologists map both landforms across a region to reconstruct the paths that vanished ice sheets took."
+    ],
+    "goal": "The student wants to emphasize a similarity between eskers and drumlins."
+  },
+  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Eskers are winding ridges of sand and gravel left by meltwater streams that ran in tunnels inside the ice."
+    },
+    {
+      "id": "B",
+      "text": "Drumlins are molded from debris beneath moving ice, whereas eskers are built by running meltwater."
+    },
+    {
+      "id": "C",
+      "text": "Ice sheets covered much of northern North America and northern Europe during the last ice age, and they left many landforms behind them."
+    },
+    {
+      "id": "D",
+      "text": "Eskers and drumlins are alike in lining up with the direction the ice flowed, so geologists use both to map vanished ice sheets."
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** The goal asks for a similarity, and this sentence names both landforms and the property the notes give to each: an alignment with the direction of ice flow, which is what makes both useful for mapping former ice sheets.\n\n**The Full Solution:**\n- Find the note that says the same thing twice. The fourth note aligns eskers with the flow direction and the fifth aligns drumlins with it, so alignment is the shared property.\n- Require both subjects in the sentence. \"Eskers and drumlins\" satisfies that, and \"lining up with the direction the ice flowed\" attaches the shared property to the pair.\n- Set aside how each landform is built. Origin is exactly where the two differ, so it cannot carry a similarity.\n\n**Why the other choices are wrong:**\n- A: This defines eskers only, leaving drumlins out of the sentence entirely.\n- B: \"Whereas\" signals a contrast, and the sentence goes on to state how the two landforms are made differently.\n- C: This is background about the ice age. It mentions neither landform by name and so states nothing the two share."
+}

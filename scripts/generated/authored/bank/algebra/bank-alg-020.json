@@ -1,0 +1,49 @@
+{
+  "id": "bank-alg-020",
+  "question": "The table gives the balance $B$, in dollars, of a savings account after $w$ weekly deposits of equal size, for three values of $w$. Which function models the balance after $w$ deposits?",
+  "questionTable": {
+    "headers": [
+      "Deposits, w",
+      "Balance, B (dollars)"
+    ],
+    "rows": [
+      [
+        "0",
+        "250"
+      ],
+      [
+        "1",
+        "285"
+      ],
+      [
+        "2",
+        "320"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$B(w) = 35w + 250$"
+    },
+    {
+      "id": "B",
+      "text": "$B(w) = 35w + 285$"
+    },
+    {
+      "id": "C",
+      "text": "$B(w) = 250w + 35$"
+    },
+    {
+      "id": "D",
+      "text": "$B(w) = 285w + 250$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses the balance after one deposit as the intercept",
+    "C": "swaps the deposit size and the starting balance",
+    "D": "uses a balance as the slope"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Linear Equation from Table (Intercept Given)**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The row $w = 0$ gives the intercept directly, $250$. Each deposit raises the balance by $285 - 250 = 35$, so $B(w) = 35w + 250$.\n\n**The Full Solution:**\nStep 1: The intercept is the output when the input is $0$: the table shows $B(0) = 250$.\nStep 2: The slope is the change per deposit: $\\frac{285 - 250}{1 - 0} = 35$, confirmed by $320 - 285 = 35$.\nStep 3: So $B(w) = 35w + 250$. Check $w = 2$: $35(2) + 250 = 320$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($B(w) = 35w + 285$): uses the balance after the first deposit as the starting balance; it gives $B(0) = 285$, contradicting the table.\n* Choice C ($B(w) = 250w + 35$): swaps the deposit size and the starting balance.\n* Choice D ($B(w) = 285w + 250$): uses the second row's balance as the slope instead of the difference between rows.\n\n**Test Day Takeaway:** When a table contains the input $0$, its output is the intercept with no computation; spend the effort on the slope and a one-row check."
+}

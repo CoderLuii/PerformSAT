@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "A projection technician models image brightness, in lumens per square meter above a baseline, by $h(x) = -2x^2 + 24x - 55$, where $x$ is the lens position, in centimeters. Which equivalent form of $h(x)$ displays the maximum brightness as a constant or coefficient?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$h(x) = -2(x - 6)^2 + 17$"
+    },
+    {
+      "id": "B",
+      "text": "$h(x) = -2(x - 6)^2 - 55$"
+    },
+    {
+      "id": "C",
+      "text": "$h(x) = -2(x + 6)^2 + 17$"
+    },
+    {
+      "id": "D",
+      "text": "$h(x) = -2(x - 12)^2 + 17$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "keeps the original constant -55 outside the square instead of adjusting it by +72",
+    "C": "factors to (x + 6)^2, which puts the peak at x = -6 rather than x = 6",
+    "D": "halves nothing and uses 12 inside the square, placing the peak at x = 12"
+  },
+  "correctAnswer": "A",
+  "hint": "Factor the -2 out of the first two terms before completing the square.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** $-2(x^2 - 12x) - 55 = -2(x - 6)^2 + 72 - 55 = -2(x - 6)^2 + 17$, so the maximum brightness is $17$.\n\n**The Full Solution:**\nStep 1: Factor $-2$ from the variable terms. $h(x) = -2(x^2 - 12x) - 55$.\nStep 2: Complete the square inside. $x^2 - 12x = (x - 6)^2 - 36$, so $h(x) = -2\\left[(x - 6)^2 - 36\\right] - 55 = -2(x - 6)^2 + 72 - 55$.\nStep 3: Combine and check. $h(x) = -2(x - 6)^2 + 17$. At $x = 6$ the original gives $-72 + 144 - 55 = 17$, and the squared term is never positive, so $17$ is the maximum. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-2(x - 6)^2 - 55$): keeps the original constant. Completing the square inside the bracket changes what must be added outside.\n* Choice C ($-2(x + 6)^2 + 17$): places the peak at $x = -6$; expanding it gives $-2x^2 - 24x - 55$, the wrong middle term.\n* Choice D ($-2(x - 12)^2 + 17$): uses $12$ instead of half of $12$ inside the square.\n\n**Test Day Takeaway:** When $a \\ne 1$, factor $a$ out of the first two terms FIRST; the number you add inside the bracket is multiplied by $a$ on its way out."
+}

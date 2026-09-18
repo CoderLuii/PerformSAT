@@ -1,0 +1,49 @@
+{
+  "id": "bank-ps-290",
+  "question": "A dispensing machine was tested three times. The table gives the volume of liquid, in milliliters, that the machine dispensed in each test. What was the total volume of liquid dispensed in the three tests, in liters? ($1$ liter $= 1{,}000$ milliliters.)",
+  "questionTable": {
+    "headers": [
+      "Test",
+      "Volume dispensed (milliliters)"
+    ],
+    "rows": [
+      [
+        "1",
+        "750"
+      ],
+      [
+        "2",
+        "425"
+      ],
+      [
+        "3",
+        "825"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$20$"
+    },
+    {
+      "id": "C",
+      "text": "$200$"
+    },
+    {
+      "id": "D",
+      "text": "$2{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides the total by $100$",
+    "C": "divides the total by $10$",
+    "D": "reports the total in milliliters without converting"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** $750 + 425 + 825 = 2{,}000$ milliliters, and $2{,}000 \\div 1{,}000 = 2$ liters.\n\n**The Full Solution:**\nStep 1: Add the three volumes from the table: $750 + 425 + 825 = 2{,}000$ milliliters.\nStep 2: Convert to liters by multiplying by the conversion factor $\\frac{1 \\text{ liter}}{1{,}000 \\text{ milliliters}}$: $2{,}000 \\times \\frac{1}{1{,}000} = 2$ liters.\nStep 3: Check the size of the answer: a liter is a large unit, so the number of liters must be smaller than the number of milliliters, and $2 < 2{,}000$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($20$): $2{,}000 \\div 100$, using a conversion factor of $100$ instead of $1{,}000$.\n* Choice C ($200$): $2{,}000 \\div 10$, moving the decimal point only one place.\n* Choice D ($2{,}000$): the correct total, but still in milliliters; the question asks for liters.\n\n**Test Day Takeaway:** Write the conversion as a fraction with the unwanted unit on the bottom; the units cancel and the direction of the division takes care of itself."
+}

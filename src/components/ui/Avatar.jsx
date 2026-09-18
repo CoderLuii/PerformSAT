@@ -46,7 +46,7 @@ const Avatar = ({ user, size = AVATAR_SIZES.md, background = 'var(--color-brand-
     return (
       <img
         src={user.photoDataUrl}
-        alt={`${name}'s profile photo`}
+        alt={`Avatar for ${name}`}
         onError={() => setFailedSrc(user.photoDataUrl)}
         style={{ ...common, objectFit: 'cover', display: 'block' }}
       />

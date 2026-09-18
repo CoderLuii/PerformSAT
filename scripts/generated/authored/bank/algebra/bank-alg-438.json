@@ -1,0 +1,58 @@
+{
+  "id": "bank-alg-438",
+  "question": "The graph shows line $g$. For which value of $m$ does the equation $y = mx + 9$, together with the equation of line $g$, form a system that no ordered pair satisfies?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -0.5,
+      "yIntercept": -3,
+      "xRange": [
+        -6,
+        6
+      ],
+      "yRange": [
+        -8,
+        4
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          0,
+          -3
+        ],
+        [
+          4,
+          -5
+        ]
+      ],
+      "label": "g"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-2$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{1}{2}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{1}{2}$"
+    },
+    {
+      "id": "D",
+      "text": "$2$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "reports the reciprocal of line $g$'s slope, $-2$, instead of copying the slope itself",
+    "C": "drops the negative from line $g$'s slope",
+    "D": "uses the negative reciprocal $2$, the perpendicular slope, so the lines cross instead of never meeting"
+  },
+  "explanation": "**SAT Pattern: Parallel Lines No Solution**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Line $g$ has slope $-\\frac{1}{2}$, so $m = -\\frac{1}{2}$ makes the two lines parallel and distinct.\n\n**The Full Solution:**\nStep 1: Line $g$ passes through $(0, -3)$ and $(4, -5)$, so its slope is $\\frac{-5 - (-3)}{4 - 0} = -\\frac{1}{2}$.\nStep 2: A system with no solution needs $y = mx + 9$ to have that same slope, so $m = -\\frac{1}{2}$.\nStep 3: The intercepts $9$ and $-3$ differ, so the lines never meet. Check: $-\\frac{1}{2}x + 9 = -\\frac{1}{2}x - 3$ reduces to $9 = -3$, which is impossible.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): reports the reciprocal of line $g$'s slope, $-2$, instead of copying the slope itself\n* Choice C ($\\frac{1}{2}$): drops the negative from line $g$'s slope\n* Choice D ($2$): uses the negative reciprocal $2$, the perpendicular slope, so the lines cross instead of never meeting\n\n**Test Day Takeaway:** Read the slope from two lattice points on the graph, then copy it exactly, sign included."
+}

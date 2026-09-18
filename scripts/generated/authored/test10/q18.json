@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 1,
- "passage": "The geochemist Katsuko Saruhashi developed precise methods for measuring carbon dioxide dissolved in seawater and for tracking radioactive fallout across the Pacific. The body of evidence she assembled over her career ______ that the surface ocean exchanges carbon dioxide with the atmosphere far more actively than mid-century models had assumed.",
+ "passage": "A birch-bark canoe begins with its skin. The bark of the paper birch, peeled from the trunk in wide sheets in early summer, ______ around a wooden frame without cracking, and the seams are sealed watertight with heated spruce gum.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "indicates"
+   "text": "bends"
   },
   {
    "id": "B",
-   "text": "indicate"
+   "text": "bend"
   },
   {
    "id": "C",
-   "text": "have indicated"
+   "text": "are bending"
   },
   {
    "id": "D",
-   "text": "are indicating"
+   "text": "have bent"
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The subject of the verb is the singular noun \"body\" (\"The body of evidence she assembled\"), so it takes the singular \"indicates.\" The intervening words \"of evidence she assembled over her career\" do not change the number of the subject. Choices B and D use plural verb forms that do not agree with \"body.\" Choice C, \"have indicated,\" is also plural and fails to agree with the singular subject \"body\" (which would require \"has\"); it additionally shifts into the present perfect without support from the sentence."
+ "explanation": "**Choice A is correct.** The subject of the verb is the singular noun \"bark,\" so the verb must be singular: \"The bark... bends around a wooden frame.\"\n\n**The Full Solution:**\n- Strip away the interrupting phrase \"peeled from the trunk in wide sheets in early summer,\" which modifies \"bark\" but does not change its number.\n- The core sentence is \"The bark of the paper birch bends around a wooden frame.\" \"Bark\" is singular, so it takes the singular verb \"bends.\" The nearby plural \"sheets\" sits inside a modifier and is not the subject.\n\n**Why the other choices are wrong:**\n- B: \"Bend\" is plural and would agree with \"sheets,\" a noun inside the modifying phrase, rather than with the actual subject, \"bark.\"\n- C: \"Are bending\" is also plural, and its progressive aspect clashes with the sentence's statement of general fact.\n- D: \"Have bent\" is plural as well, and the perfect tense wrongly suggests a completed past action rather than a general property.",
+ "_meta": {
+  "rule": "subject-verb agreement across an interrupting participial phrase",
+  "distractors": {
+   "B": "agrees with nearby plural inside modifier",
+   "C": "plural + wrong aspect",
+   "D": "plural + wrong tense"
+  }
+ }
 }

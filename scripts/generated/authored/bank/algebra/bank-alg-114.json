@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-114",
+  "question": "The linear function $h$ is defined for all real numbers $x$. The table shows the value of $h(x)$ for two values of $x$. What is the value of $h(12) - h(1)$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "h(x)"
+      ],
+      "rows": [
+        [
+          "-3",
+          "14"
+        ],
+        [
+          "5",
+          "-2"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-26$"
+    },
+    {
+      "id": "B",
+      "text": "$-22$"
+    },
+    {
+      "id": "C",
+      "text": "$11$"
+    },
+    {
+      "id": "D",
+      "text": "$22$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses 12 + 1 = 13 as the run",
+    "C": "subtracts the inputs without applying the slope",
+    "D": "slope sign error, +2"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Line from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Slope $= \\frac{-2 - 14}{5 - (-3)} = \\frac{-16}{8} = -2$. For a linear function, $h(12) - h(1) = \\text{slope} \\times (12 - 1) = -2(11) = -22$. No need for the intercept.\n\n**The Full Solution:**\nStep 1: Slope from the table rows: $m = \\frac{-2 - 14}{5 - (-3)} = \\frac{-16}{8} = -2$.\nStep 2: For any linear function, the change in output equals the slope times the change in input: $h(12) - h(1) = -2(12 - 1) = -22$.\nStep 3: Check by building the rule: $h(x) = -2x + b$ with $h(5) = -2$ gives $b = 8$, so $h(12) = -16$ and $h(1) = 6$; $-16 - 6 = -22$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-26$): uses $12 + 1 = 13$ as the run instead of $12 - 1 = 11$.\n* Choice C ($11$): subtracts the inputs but never multiplies by the slope.\n* Choice D ($22$): drops the negative on the slope; the outputs decrease as $x$ increases.\n\n**Test Day Takeaway:** For a linear function, a difference of outputs is slope times the difference of inputs; compute the slope from the table and skip the intercept entirely."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-211",
+ "question": "A cryostat's chamber temperature, in degrees Celsius, is modeled by $f(x) = kx + 9$, where $x$ is the elapsed hour and $k$ is a constant. The temperature at hour $4$ is $1$ degree. What is the temperature at hour $10$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-11$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$29$"
+  },
+  {
+   "id": "D",
+   "text": "$34$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reports $k$ instead of the temperature at hour $10$",
+  "C": "solves $9 - 4k = 1$, getting $k = 2$, then evaluates $2(10) + 9$",
+  "D": "solves $4k = 1 + 9$, getting $k = 2.5$, then evaluates $2.5(10) + 9$"
+ },
+ "explanation": "**SAT Pattern: Reading Slope-Intercept Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** From $4k + 9 = 1$ we get $k = -2$, so $f(10) = -20 + 9 = -11$.\n\n**The Full Solution:**\nStep 1: Substituting $x = 4$ gives $f(4) = 4k + 9$, and this equals $1$.\nStep 2: Solving $4k + 9 = 1$ gives $4k = -8$ and $k = -2$.\nStep 3: Then $f(10) = -2(10) + 9 = -11$ degrees Celsius. Check: $f(4) = -8 + 9 = 1$.\n\n**Why the wrong answers are tempting:**\n* Choice B ($-2$): reports $k$ instead of the temperature at hour $10$\n* Choice C ($29$): solves $9 - 4k = 1$, getting $k = 2$, then evaluates $2(10) + 9$\n* Choice D ($34$): solves $4k = 1 + 9$, getting $k = 2.5$, then evaluates $2.5(10) + 9$\n\n**Test Day Takeaway:** Find the parameter, then go back and answer the question actually asked."
+}

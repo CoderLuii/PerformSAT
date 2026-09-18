@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-375",
+  "question": "Each year a scenery shop's account earns interest equal to $3.5$ percent of its opening balance of $\\$26{,}000$, and that interest stays in the account but earns nothing further. What is the account's value, in dollars, at the end of $4$ years?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3{,}640$"
+    },
+    {
+      "id": "B",
+      "text": "$29{,}640$"
+    },
+    {
+      "id": "C",
+      "text": "$29{,}835.60$"
+    },
+    {
+      "id": "D",
+      "text": "$117{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the four years of interest, 3,640, without adding the opening balance",
+    "C": "compounds the interest: 26,000(1.035)^4 = 29,835.60, but the interest earns nothing further",
+    "D": "treats 3.5 percent as the factor 3.5: 26,000(3.5) + 26,000 = 117,000"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Simple Interest**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** One year earns $\\$910$, so four years earn $\\$3{,}640$, and $26{,}000 + 3{,}640 = 29{,}640$ dollars.\n\n**The Full Solution:**\nStep 1: Find one year of interest. $3.5\\%$ of $26{,}000$ is $0.035 \\times 26{,}000 = 910$ dollars.\nStep 2: Multiply by the years. Because the credited interest earns nothing further, all four years pay $910$: $4 \\times 910 = 3{,}640$ dollars.\nStep 3: Add and check. $26{,}000 + 3{,}640 = 29{,}640$ dollars, which is $26{,}000(1 + 0.035 \\times 4) = 26{,}000(1.14)$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3{,}640$): is only the interest earned. The question asks for the account value, which includes the original balance.\n* Choice C ($29{,}835.60$): compounds: $26{,}000(1.035)^4$. Here the interest earns nothing further, so the growth is linear.\n* Choice D ($117{,}000$): uses $3.5$ instead of $0.035$, inflating the rate by a factor of $100$.\n\n**Test Day Takeaway:** Simple interest adds the same dollar amount each year; if a choice is slightly larger than the simple-interest answer, it is the compounding trap."
+}

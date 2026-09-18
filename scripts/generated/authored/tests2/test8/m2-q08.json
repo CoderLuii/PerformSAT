@@ -1,0 +1,29 @@
+{
+  "id": 8,
+  "question": "On a site plan, the edge of a circular reflecting pool consists of the points satisfying $(x - 12)^2 + (y + 5)^2 = r^2$, with $r > 0$ and units in meters. The point $(20, 1)$ is on that edge. Across its widest part, how many meters wide is the pool?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$10$"
+    },
+    {
+      "id": "B",
+      "text": "$14$"
+    },
+    {
+      "id": "C",
+      "text": "$20$"
+    },
+    {
+      "id": "D",
+      "text": "$100$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the radius, 10, instead of the width across the pool",
+    "B": "adds the horizontal and vertical offsets, 8 + 6, instead of using the Pythagorean theorem",
+    "D": "reports r squared, 100, as a length"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The center is $(12, -5)$, and the given edge point is $8$ right and $6$ up from it, so $r = \\sqrt{8^2 + 6^2} = 10$ and the pool is $2r = 20$ meters across.\n\n**The Full Solution:**\nStep 1: In $(x - h)^2 + (y - k)^2 = r^2$ the center is $(h, k)$. Rewriting $(y + 5)^2$ as $(y - (-5))^2$ shows the center is $(12, -5)$.\nStep 2: Substitute the edge point $(20, 1)$: $(20 - 12)^2 + (1 + 5)^2 = 8^2 + 6^2 = 64 + 36 = 100$, so $r^2 = 100$ and $r = 10$ meters.\nStep 3: The widest distance across a circle is the diameter, $2r = 20$ meters. Check: the point $(2, -5)$, which is $10$ meters left of the center, satisfies $(2 - 12)^2 + (-5 + 5)^2 = 100$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($10$): this is the radius; the width across the pool at its widest is twice that.\n* Choice B ($14$): adds the two offsets, $8 + 6$, instead of combining them with the Pythagorean theorem, which always overstates the distance.\n* Choice D ($100$): reports $r^2$, the number the substitution produces, without taking the square root.\n\n**Test Day Takeaway:** Standard form hands you $r^2$, not $r$ — take the root, then double it if the question asks how far across."
+}

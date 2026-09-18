@@ -1,0 +1,18 @@
+{
+  "id": "bank-geo-267",
+  "question": "Two roadway centerlines meet at a highway intersection. Expressions in $x$ label two of the four angles that the crossing produces, as shown. What is the measure, in degrees, of the angle labeled $(4x + 27)^\\circ$?",
+  "diagram": {
+    "type": "intersectingLines",
+    "params": {
+      "angles": [
+        "(4x + 27)°",
+        "",
+        "(7x - 12)°",
+        ""
+      ],
+      "figureNote": true
+    }
+  },
+  "correctAnswer": "79",
+  "explanation": "**SAT Pattern: Vertical Angles**\n\n**The correct answer is $79$.**\n\n**The Fast Way (~35s):** Opposite angles are equal, so $4x + 27 = 7x - 12$ gives $x = 13$ and each angle measures $4(13) + 27 = 79$ degrees.\n\n**The Full Solution:**\nStep 1: The two labeled angles sit across the intersection from each other, so they are vertical angles and their measures are equal.\nStep 2: Setting the expressions equal gives $4x + 27 = 7x - 12$, so $39 = 3x$ and $x = 13$.\nStep 3: Substituting gives $4(13) + 27 = 79$ degrees.\n\nCheck: The other expression gives $7(13) - 12 = 79$ degrees as well. $\\checkmark$\n\n**Common Mistakes:**\n* Answering $13$ by stopping at $x$ instead of substituting it back into an angle expression.\n* Answering $87$ by treating the two angles as a linear pair, solving $11x + 15 = 180$ for $x = 15$ and then evaluating $4(15) + 27$.\n* Answering $101$ by reporting the supplement of $79$ rather than the labeled angle itself.\n\n**Test Day Takeaway:** Solving for the variable is the middle of the problem; the question almost always wants the measure."
+}

@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 1,
-  "passage": "In 1902, archaeologist Zelia Nuttall, an honorary affiliate of the Peabody Museum at Harvard University, published a facsimile edition of a previously obscure Mixtec pictorial manuscript that she had located in a private European collection. According to her commentary, the document — now known as the Codex Nuttall — ______ the genealogies and political alliances of pre-Columbian noble lineages from the Oaxaca region of Mexico, providing one of the most detailed surviving accounts of dynastic succession in the years before Spanish contact.",
+  "passage": "Muskoxen survive Arctic winters thanks to qiviut, a fine underwool that grows beneath their shaggy outer coat and insulates far more effectively than sheep's wool. Because the animals ______ the underwool naturally each spring, herders in Alaska can collect qiviut by gently combing their animals rather than by shearing them.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "summarizes"
+      "text": "retain"
     },
     {
       "id": "B",
-      "text": "conceals"
+      "text": "trim"
     },
     {
       "id": "C",
-      "text": "publishes"
+      "text": "conceal"
     },
     {
       "id": "D",
-      "text": "records"
+      "text": "shed"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"records.\" The passage describes the Codex Nuttall as a pictorial manuscript that captures the genealogies and political alliances of pre-Columbian noble lineages and offers \"one of the most detailed surviving accounts of dynastic succession\" before Spanish contact. The blank needs a verb meaning to preserve detailed information in a durable form, and \"records\" fits exactly: a manuscript records data — names, alliances, lines of succession — making it available to later readers. The verb matches both the scope (full detail, not summary) and the register (scholarly, descriptive of a primary source) that Nuttall's commentary establishes.\n\nChoice C is incorrect. \"publishes\" collocates strongly with the surrounding language. The passage explicitly says Nuttall \"published a facsimile edition,\" so the word feels topical and primed by the passage. But the subject of the verb is \"the document\" itself, and a manuscript does not publish anything; the scholar who edited it does. The word picks up a collocation already in the passage while missing what the manuscript itself actually does. Choice A is incorrect. \"summarizes\" lives in the same general family as \"records\" (both involve conveying information in writing), but its scope is wrong. To summarize is to condense or abridge, whereas the passage emphasizes that the codex provides \"one of the most detailed surviving accounts.\" A summary strips out detail; the codex preserves it. The denotation is in the right neighborhood but the specificity is the opposite of what the sentence describes. Choice B is incorrect. \"conceals\" reverses the relationship the passage establishes. The whole point of Nuttall's commentary is that the manuscript makes pre-Columbian dynastic information accessible to scholars; if the codex concealed those genealogies, it could not provide a detailed surviving account of dynastic succession. \"Conceals\" runs directly opposite to the function the passage attributes to the document."
+  "explanation": "**Choice D is correct.** The sentence explains why combing works: the underwool comes loose on its own each spring, so \"shed\" — to cast off naturally — is the word the logic requires.\n\n**The Full Solution:**\n- The second sentence links the blank to its consequence: because the animals do something to the underwool \"naturally each spring,\" herders can collect it \"by gently combing\" instead of shearing.\n- Combing only gathers wool that is already coming loose. The blank therefore needs a verb meaning to let go of or cast off — exactly what \"shed\" means when applied to an animal's coat.\n\n**Why the other choices are wrong:**\n- A: \"retain\" is the opposite of what the sentence needs — if the animals kept the underwool, combing would collect nothing, and shearing would be necessary.\n- B: \"trim\" names an action people perform with tools; animals do not trim their own wool, and trimming would make the combing explanation pointless.\n- C: \"conceal\" describes hiding, not releasing; the underwool's location beneath the outer coat is already stated, and hiding it would not allow herders to comb it out."
 }

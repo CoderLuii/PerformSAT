@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 2,
-  "passage": "The garden that fronts the Taj Mahal is laid out as a charbagh, quartered by raised walkways and water channels. The long reflecting pools set along the central axis ______ the white marble mausoleum on the still water, doubling the monument for anyone approaching from the great gateway.",
+  "passage": "Stored in the herders' cooperative archive ______ the shearing records of every chaccu held in the district since 1994, each one listing the animals gathered, the grams of fleece taken, and the herd's condition at release.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "reflects"
-    },
-    {
-      "id": "B",
-      "text": "reflect"
-    },
-    {
-      "id": "C",
-      "text": "has reflected"
-    },
-    {
-      "id": "D",
-      "text": "is reflecting"
-    }
+    { "id": "A", "text": "is" },
+    { "id": "B", "text": "are" },
+    { "id": "C", "text": "has been" },
+    { "id": "D", "text": "was" }
   ],
   "correctAnswer": "B",
-  "explanation": "The subject of the verb is \"pools,\" which is plural, so the verb is \"reflect\"—choice B. The singular \"axis\" sits inside the modifying phrase and is not the subject. \"Reflects\" and \"has reflected\" are singular, and \"is reflecting\" is singular as well.",
-  "_meta": {
-    "anchor": "Taj Mahal charbagh garden"
-  }
+  "explanation": "**Choice B is correct.** The sentence is inverted: the subject follows the verb. That subject is the plural \"records,\" so the verb must be the plural \"are.\"\n\n**The Full Solution:**\n- \"Stored in the herders' cooperative archive\" is an opening participial phrase, not a subject.\n- Restore normal order and the agreement is plain: \"The shearing records... are stored in the archive.\"\n- The plural is confirmed by \"each one listing,\" which distributes over multiple records.\n\n**Why the other choices are wrong:**\n- A: A singular verb drawn to the singular \"archive\" beside the blank — but \"archive\" sits inside the opening phrase and cannot be the subject.\n- C: Singular again, and the perfect adds an unneeded time frame to a simple statement of where the records are.\n- D: Singular, and the past tense contradicts \"since 1994,\" which carries the records up to the present."
 }

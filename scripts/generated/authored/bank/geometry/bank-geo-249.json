@@ -1,0 +1,60 @@
+{
+ "id": "bank-geo-249",
+ "question": "A rooftop solar array rests on triangular mounting wedges like the one drawn below, marked in inches. How long is the wedge edge that lies opposite its $30°$ corner?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     20.785,
+     0
+    ],
+    [
+     20.785,
+     12
+    ]
+   ],
+   "rightAngleVertex": 1,
+   "labels": [
+    "30°",
+    "",
+    ""
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "24"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$16$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$48$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "takes two-thirds of the hypotenuse, 16, instead of half",
+  "C": "restates the given hypotenuse, 24",
+  "D": "doubles the hypotenuse instead of halving it"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: 30-60-90 Triangle**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The side opposite the $30°$ angle is half the hypotenuse, so it is $\\frac{24}{2}=12$ inches.\n\n**The Full Solution:**\n\nStep 1: Label the ratio. A $30$-$60$-$90$ triangle has sides $x$, $x\\sqrt{3}$, and $2x$, with $x$ opposite the $30°$ angle.\n\nStep 2: Match the given. The hypotenuse is $2x=24$, so $x=12$ inches.\n\nStep 3: The requested edge is the one opposite $30°$, which is $x=12$ inches.\n\nCheck: the other leg is $12\\sqrt{3}\\approx20.8$, and $12^{2}+(12\\sqrt{3})^{2}=144+432=576=24^{2}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($16$): takes two-thirds of the hypotenuse instead of half.\n* Choice C ($24$): restates the hypotenuse shown in the figure rather than the side opposite $30°$.\n* Choice D ($48$): doubles the hypotenuse instead of halving it, reversing the $2x$ relationship.\n\n**Test Day Takeaway:** In a $30$-$60$-$90$ triangle the shortest side always sits opposite the $30°$ angle and equals half the hypotenuse."
+}

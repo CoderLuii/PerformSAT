@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-408",
+  "question": "The list price of a touring bicycle was reduced from $\\$180$ to $\\$153$. By what percent was the list price reduced?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$17.6\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$27\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$85\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides the reduction by the new price, $\\frac{27}{153}$",
+    "C": "reports the raw reduction of $\\$27$ as if it were a percent",
+    "D": "reports the new price as a percent of the original, $\\frac{153}{180}$"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The reduction is $180 - 153 = 27$, and $\\frac{27}{180} = 0.15$, or $15\\%$.\n\n**The Full Solution:**\nStep 1: Find the amount of the reduction: $180 - 153 = 27$ dollars.\nStep 2: Compare that reduction to the original price: $\\frac{27}{180}$.\nStep 3: $\\frac{27}{180} = 0.15 = 15\\%$. Check: $10\\%$ of $180$ is $18$ and $5\\%$ is $9$, and $18 + 9 = 27$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($17.6\\%$): divides the reduction by the new price, $\\frac{27}{153}$\n* Choice C ($27\\%$): reports the raw reduction of $\\$27$ as if it were a percent\n* Choice D ($85\\%$): reports the new price as a percent of the original, $\\frac{153}{180}$\n\n**Test Day Takeaway:** Break an awkward percent into friendly pieces to verify it: $15\\% = 10\\% + 5\\%$."
+}

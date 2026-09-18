@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-450",
+  "question": "A restoration project planted $840$ trees that are oak, maple, and birch in the ratio $2 : 3 : 7$, respectively. How many of the trees planted are birch?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$70$"
+    },
+    {
+      "id": "B",
+      "text": "$140$"
+    },
+    {
+      "id": "C",
+      "text": "$210$"
+    },
+    {
+      "id": "D",
+      "text": "$490$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the size of one part instead of the birch count.",
+    "B": "gives the number of oak trees, the $2$-part share.",
+    "C": "gives the number of maple trees, the $3$-part share."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Sum-of-Parts Ratio**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The ratio has $2+3+7=12$ parts, so one part is $\\frac{840}{12}=70$ trees, and the birch count is $7(70)=490$.\n\n**The Full Solution:**\nStep 1: Write the three counts as $2k$, $3k$, and $7k$, so $2k+3k+7k=840$.\nStep 2: $12k=840$, so $k=70$.\nStep 3: Birch trees are the $7$-part share: $7(70)=490$. Check: $140+210+490=840$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($70$): reports $k$ alone.\n* Choice B ($140$): gives the oak count, matching the ratio number $2$.\n* Choice C ($210$): gives the maple count, matching the ratio number $3$.\n\n**Test Day Takeaway:** With three-part ratios the trap is answering for the wrong category. Note which ratio number the question names before you multiply."
+}

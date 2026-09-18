@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-081",
+ "question": "A canopy tie-back forms the right triangle shown; the tie-back itself is the $25$-foot hypotenuse and the post is the $15$-foot vertical leg. What is the perimeter, in feet, of the triangle?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     20,
+     0
+    ],
+    [
+     20,
+     15
+    ]
+   ],
+   "sideLabels": [
+    "",
+    "15 ft",
+    "25 ft"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40$"
+  },
+  {
+   "id": "B",
+   "text": "$60$"
+  },
+  {
+   "id": "C",
+   "text": "$65$"
+  },
+  {
+   "id": "D",
+   "text": "$150$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "adds only the two given lengths, 15 + 25, and never finds the third side",
+  "C": "counts the 25-foot hypotenuse twice, adding 15 + 25 + 25",
+  "D": "computes the area, one half times 15 times 20, instead of the perimeter"
+ },
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**Choice B is correct.** The third side is $\\sqrt{25^2 - 15^2} = 20$, so the perimeter is $15 + 20 + 25 = 60$ feet.\n\n**The Fast Way (~25s):** $15$-$20$-$25$ is the $3$-$4$-$5$ triple times $5$; the perimeter is $60$.\n\n**The Full Solution:**\n\nStep 1: The tie-back is the hypotenuse, so the horizontal leg satisfies $b^2 = 625 - 225 = 400$.\n\nStep 2: Therefore $b = 20$ feet.\n\nStep 3: Perimeter $= 15 + 20 + 25 = 60$ feet. Check: $15^2 + 20^2 = 225 + 400 = 625 = 25^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($40$): adds only the two lengths given and never finds the third side.\n* Choice C ($65$): counts the $25$-foot hypotenuse twice.\n* Choice D ($150$): computes the area $\\frac{1}{2}(15)(20)$ instead of the distance around.\n\n**Test Day Takeaway:** Perimeter needs all three sides, so a hypotenuse-and-one-leg figure always costs you one Pythagorean step before you can add."
+}

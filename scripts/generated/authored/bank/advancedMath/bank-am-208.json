@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-208",
+  "question": "The concentration of chlorine in a sample of cooling water falls by half every $3$ days. Which type of function best models the chlorine concentration as a function of the number of days since the sample was collected?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Decreasing exponential"
+    },
+    {
+      "id": "B",
+      "text": "Decreasing linear"
+    },
+    {
+      "id": "C",
+      "text": "Increasing exponential"
+    },
+    {
+      "id": "D",
+      "text": "Increasing linear"
+    }
+  ],
+  "distractorNotes": {
+    "B": "halving removes a smaller amount each period, so the rate is not constant",
+    "C": "the concentration falls, so the factor is less than 1",
+    "D": "the concentration falls"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Classify Physical Motion Model**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Halving over equal time spans multiplies by the constant factor $\\frac{1}{2}$, which is exponential decay.\n\n**The Full Solution:**\nStep 1: Let $c$ be the concentration when the sample was collected. After $3$ days it is $\\frac{1}{2}c$, after $6$ days $\\frac{1}{4}c$, after $9$ days $\\frac{1}{8}c$.\nStep 2: Equal time steps multiply by $\\frac{1}{2}$, so the model is exponential with base $\\frac{1}{2}$.\nStep 3: A base between $0$ and $1$ makes the function decreasing. Check the drops: $\\frac{1}{2}c$, then $\\frac{1}{4}c$, then $\\frac{1}{8}c$ — the amount lost shrinks each period, so no line fits. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (decreasing linear): a line would remove the SAME amount every $3$ days; halving removes less and less.\n* Choice C (increasing exponential): the right family, but a factor of $\\frac{1}{2}$ makes it decrease.\n* Choice D (increasing linear): the concentration is falling.\n\n**Test Day Takeaway:** Half-life language always means exponential decay; the tell for linear decay is a constant amount removed per unit of time."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "A zoning district contains $4{,}800$ parcels, of which $p$ percent are zoned residential and $150$ are zoned industrial. Which expression gives the number of parcels in the district that are zoned neither residential nor industrial?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4{,}650-4{,}800p$"
+  },
+  {
+   "id": "B",
+   "text": "$4{,}650-48p$"
+  },
+  {
+   "id": "C",
+   "text": "$4{,}650-p$"
+  },
+  {
+   "id": "D",
+   "text": "$4{,}800-48p$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies by p instead of p/100, so the percent is never converted to a decimal",
+  "C": "treats p as a count of parcels rather than a percent of 4,800",
+  "D": "subtracts the residential parcels but forgets to remove the 150 industrial parcels"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** $p$ percent of $4{,}800$ is $48p$ parcels, so the parcels left over after removing those and the $150$ industrial parcels number $4{,}800-48p-150=4{,}650-48p$.\n\n**The Full Solution:**\nStep 1: Convert the percent to a count. Since $p$ percent means $\\dfrac{p}{100}$, the residential parcels number $\\dfrac{p}{100}(4{,}800)=48p$.\nStep 2: The three categories named are residential, industrial, and everything else, so subtract both named groups from the total: $4{,}800-48p-150$.\nStep 3: Combine the two constants: $4{,}800-150=4{,}650$, so the expression is $4{,}650-48p$. Check with $p=25$: a quarter of the parcels is $1{,}200$ residential, leaving $4{,}800-1{,}200-150=3{,}450$, and $4{,}650-48(25)=4{,}650-1{,}200=3{,}450$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4{,}650-4{,}800p$): skips the division by $100$. At $p=25$ it gives $4{,}650-120{,}000$, a large negative count.\n* Choice C ($4{,}650-p$): treats $p$ as a number of parcels instead of a percent. At $p=25$ it removes only $25$ parcels rather than $1{,}200$.\n* Choice D ($4{,}800-48p$): handles the percent correctly but never removes the $150$ industrial parcels, overcounting by exactly $150$.\n\n**Test Day Takeaway:** A percent of a fixed total collapses to a single coefficient — here $p$ percent of $4{,}800$ is just $48p$. Convert first, then subtract every named group the question excludes."
+}

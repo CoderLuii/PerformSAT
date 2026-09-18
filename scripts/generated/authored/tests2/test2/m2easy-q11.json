@@ -1,0 +1,30 @@
+{
+ "id": 11,
+ "question": "A drainage channel's bed lies $f(x) = x^2 - 18x + 88$ centimeters above a benchmark at the point $x$ meters along the channel. The table gives $f(x)$ at four selected values of $x$. What is the least height, in centimeters, of the bed above the benchmark?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "$2$",
+    "$56$"
+   ],
+   [
+    "$5$",
+    "$23$"
+   ],
+   [
+    "$8$",
+    "$8$"
+   ],
+   [
+    "$11$",
+    "$11$"
+   ]
+  ]
+ },
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Quadratic — Completing the Square**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~35s):** Half of $-18$ is $-9$, so $f(x) = (x - 9)^2 + 7$ and the minimum is $7$.\n\n**The Full Solution:**\nStep 1: Take half the coefficient of $x$ and square it: $\\left(\\frac{-18}{2}\\right)^2 = (-9)^2 = 81$.\nStep 2: Write $x^2 - 18x + 88 = (x^2 - 18x + 81) + 88 - 81 = (x - 9)^2 + 7$.\nStep 3: Since $(x - 9)^2$ is never negative, the least value of $f$ is $7$, reached at $x = 9$. Check: the table straddles $x = 9$, with $f(8) = 8$ and $f(11) = 11$, both above $7$. $\\checkmark$\n\n**Common Mistakes:**\n* Gridding $9$, the value of $x$ where the minimum occurs, rather than the least height itself.\n* Gridding $8$, the least value printed in the table. The table skips $x = 9$, so the true minimum never appears in it.\n* Squaring the whole coefficient instead of half of it, writing $(x - 18)^2$ and getting $88 - 324 = -236$.\n\n**Test Day Takeaway:** Completing the square turns a quadratic into vertex form, where the constant is the minimum (or maximum) value. Halve the middle coefficient before you square it."
+}

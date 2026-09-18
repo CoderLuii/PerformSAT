@@ -1,31 +1,31 @@
 {
-  "id": 848,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "Because the only manuscript of the epic poem had been copied and recopied entirely by hand for nearly a thousand years before the earliest version that survives today was finally made ______ modern editors treat even its oldest and most familiar readings with real caution.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "made,"
-    },
-    {
-      "id": "B",
-      "text": "made"
-    },
-    {
-      "id": "C",
-      "text": "made;"
-    },
-    {
-      "id": "D",
-      "text": "made:"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The sentence opens with a long introductory dependent clause beginning \"Because…,\" and a comma is needed to separate that clause from the main clause that follows, \"editors treat even its oldest readings with caution.\" Omitting the mark, as in B, runs the two together; the semicolon in C wrongly implies two independent clauses, but the \"Because\" clause cannot stand alone; and the colon in D would announce an explanation or list, which is not the relationship here."
+ "id": 848,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "Because a loaded boat traveled only as fast as the horse on the towpath could ______ canal carriers promised their customers delivery in days rather than hours, and the trade settled into the unhurried cargoes — coal, grain, brick, and clay — for which the calendar mattered more than the clock.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "walk,"
+  },
+  {
+   "id": "B",
+   "text": "walk"
+  },
+  {
+   "id": "C",
+   "text": "walk;"
+  },
+  {
+   "id": "D",
+   "text": "walk:"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The sentence opens with a dependent \"Because...\" clause, which must be joined to the main clause with a comma.\n\n**The Full Solution:**\n- The opening clause — \"Because a loaded boat traveled only as fast as the horse on the towpath could walk\" — is dependent and cannot stand alone.\n- The main clause follows: \"canal carriers promised their customers delivery in days rather than hours.\"\n- The conventional boundary between an introductory dependent clause and the main clause is a comma.\n\n**Why the other choices are wrong:**\n- B: Omitting the comma runs the dependent clause straight into the main clause without a boundary.\n- C: A semicolon requires an independent clause on each side, and the \"Because\" clause is not one.\n- D: A colon likewise needs a complete clause before it; placing one after the fragment strands it."
 }

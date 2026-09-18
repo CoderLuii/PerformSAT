@@ -1,0 +1,49 @@
+{
+ "id": "bank-alg-507",
+ "question": "The table gives three values of the linear function $f$, which gives the number of sterile gauze pads a machine has produced after $x$ minutes. For all but one value of the constant $c$, the equation $3(2x + c) = f(x)$ has no solution. What is that one value of $c$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "$0$",
+    "$21$"
+   ],
+   [
+    "$1$",
+    "$27$"
+   ],
+   [
+    "$2$",
+    "$33$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "copies the coefficient of x from inside the parentheses",
+  "B": "copies the factor outside the parentheses instead of dividing 21 by it",
+  "C": "reports the rate of change of f instead of dividing f(0) by 3"
+ },
+ "explanation": "**SAT Pattern: No-Solution Condition (Single Linear Equation)**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** $f(x) = 6x + 21$ and $3(2x + c) = 6x + 3c$, so the two sides agree only when $3c = 21$, giving $c = 7$.\n\n**The Full Solution:**\n\nStep 1: From the table, $f$ increases by $6$ each time $x$ increases by $1$, and $f(0) = 21$, so $f(x) = 6x + 21$.\n\nStep 2: Expand the left side: $3(2x + c) = 6x + 3c$. The equation becomes $6x + 3c = 6x + 21$, which reduces to $3c = 21$.\n\nStep 3: The variable has vanished, so the equation is either always true or never true. It is always true when $3c = 21$, that is $c = 7$, and never true for any other $c$. Check with $c = 7$: $3(2x + 7) = 6x + 21 = f(x)$ for every $x$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2$): copies the coefficient of $x$ from inside the parentheses.\n* Choice B ($3$): copies the factor outside the parentheses instead of dividing $21$ by it.\n* Choice C ($6$): reports the rate of change of $f$, which matches the expanded coefficient of $x$ and therefore cancels out.\n\n**Test Day Takeaway:** When the variable terms cancel, one constant makes the equation an identity and every other constant makes it a contradiction."
+}

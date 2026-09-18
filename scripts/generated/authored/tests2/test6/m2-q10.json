@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "A fracture-toughness model reduces to the equation $\\sqrt{c + 12} = c$, where $c$ is the model's dimensionless growth parameter and may be any real number. Which statement about the solutions of this equation is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$c = -3$ is the only solution."
+  },
+  {
+   "id": "B",
+   "text": "$c = 4$ is the only solution."
+  },
+  {
+   "id": "C",
+   "text": "Both $c = -3$ and $c = 4$ are solutions."
+  },
+  {
+   "id": "D",
+   "text": "The equation has no real solutions."
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps the root -3 and discards 4, but a square root is never negative, so -3 fails the original equation",
+  "C": "solves the squared equation and skips the check, so the extraneous root -3 is kept alongside 4",
+  "D": "squares only the left side, reducing the equation to c + 12 = c, and concludes no value works"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Squaring gives $c + 12 = c^2$, so $c^2 - c - 12 = (c - 4)(c + 3) = 0$. Only $c = 4$ survives the check, because the left side of the original equation is never negative.\n\n**The Full Solution:**\nStep 1: Square both sides — the whole side, not just the radical: $\\left(\\sqrt{c + 12}\\right)^2 = c^2$, so $c + 12 = c^2$.\nStep 2: Set the quadratic to zero and factor: $c^2 - c - 12 = 0$, so $(c - 4)(c + 3) = 0$ and the candidates are $c = 4$ and $c = -3$.\nStep 3: Test each candidate in the original equation. For $c = 4$: $\\sqrt{16} = 4$ ✓. For $c = -3$: $\\sqrt{9} = 3$, but the right side is $-3$, so this candidate is extraneous ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($c = -3$ only): keeps the candidate that fails the check and throws out the one that works.\n* Choice C (both roots): trusts the squared equation without testing, but squaring can create solutions the original equation never had.\n* Choice D (no solutions): comes from squaring only the radical side, which collapses the equation to $c + 12 = c$.\n\n**Test Day Takeaway:** Squaring is a one-way street — every candidate must be substituted back, and a root that makes the non-radical side negative is always extraneous."
+}

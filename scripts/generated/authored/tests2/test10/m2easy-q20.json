@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "Two water-quality readings satisfy $6x + 10y = 34$ and $9x - 4y = 32$ at the same time, where $x$ is a dissolved-oxygen level and $y$ is a turbidity index. Which equation is also satisfied by that pair of values?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15x = 66$"
+  },
+  {
+   "id": "B",
+   "text": "$22y = 166$"
+  },
+  {
+   "id": "C",
+   "text": "$57x = 228$"
+  },
+  {
+   "id": "D",
+   "text": "$57x = 66$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds the two equations as written and treats 10y - 4y as canceling",
+  "B": "scales to 18x on both equations, then adds instead of subtracting so the x terms do not cancel",
+  "D": "scales the left sides by 2 and 5 but adds the original constants 34 and 32"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System of Equations — Elimination**\n\n**Choice C is correct.** Doubling the first equation and multiplying the second by $5$ makes the $y$-terms opposites, and adding gives $57x = 228$.\n\n**The Fast Way (~35s):** $10y$ and $-4y$ share $20y$: take $2$ times the first equation and $5$ times the second, then add. The result is $57x = 228$, and $x = 4$ fits both equations.\n\n**The Full Solution:**\nStep 1: Multiply the first equation by $2$: $12x + 20y = 68$. Multiply the second by $5$: $45x - 20y = 160$. Both constants scale along with the left sides.\nStep 2: Add the two scaled equations. The $y$-terms cancel: $(12x + 45x) = 68 + 160$, so $57x = 228$.\nStep 3: That equation gives $x = 4$, and substituting into $6x + 10y = 34$ gives $10y = 10$, so $y = 1$. Check the second reading: $9(4) - 4(1) = 36 - 4 = 32$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($15x = 66$): adds the equations untouched and assumes $10y - 4y$ vanishes. It leaves $6y$ behind and gives $x = 4.4$, which fails both readings.\n* Choice B ($22y = 166$): scales to $18x$ in each equation, then adds instead of subtracting, so the $x$-terms survive rather than cancel. It gives $y \\approx 7.5$, far from $y = 1$.\n* Choice D ($57x = 66$): scales the left sides correctly but carries the original constants, adding $34 + 32$. Every term of an equation must be multiplied, constants included.\n\n**Test Day Takeaway:** To eliminate a variable, scale both equations to the least common multiple of its coefficients, multiply the constants too, and add only when the signs are opposite."
+}

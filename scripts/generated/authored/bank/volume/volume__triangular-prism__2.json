@@ -1,0 +1,42 @@
+{
+ "id": 2,
+ "question": "A right triangular prism is $9$ inches long. Each triangular face is a right triangle with legs of length $6$ inches and $8$ inches. What is the volume, in cubic inches, of the prism?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "sideLabels": [
+    "6",
+    "8",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$24$"
+  },
+  {
+   "id": "B",
+   "text": "$108$"
+  },
+  {
+   "id": "C",
+   "text": "$216$"
+  },
+  {
+   "id": "D",
+   "text": "$432$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the area of a triangular face and stops",
+  "B": "divides by $2$ a second time",
+  "D": "omits the $\\frac{1}{2}$ that the triangular face requires"
+ },
+ "correctAnswer": "C",
+ "hint": "The two legs of a right triangle serve as its base and its height.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** Each triangular face has area $\\frac{1}{2}(6)(8) = 24$, so $V = 24(9) = 216$.\n\n**The Full Solution:**\nStep 1: The face is a right triangle, so its legs act as base and height: $B = \\frac{1}{2}(6)(8) = 24$ square inches.\nStep 2: The length of the prism, $9$ inches, is the distance between the two triangular faces.\nStep 3: $V = 24(9) = 216$ cubic inches.\n\nVerification: $\\frac{216}{24} = 9$, the length of the prism. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($24$): gives the area of a triangular face and stops.\n* Choice B ($108$): divides by $2$ a second time.\n* Choice D ($432$): omits the $\\frac{1}{2}$ that the triangular face requires.\n\n**Test Day Takeaway:** For a prism resting on a side, the height in $V = Bh$ is the distance between the two identical faces."
+}

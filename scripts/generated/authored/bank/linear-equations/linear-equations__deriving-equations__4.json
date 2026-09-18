@@ -1,0 +1,25 @@
+{
+  "id": 4,
+  "question": "In a linear relationship between $x$ and $y$, each increase of $4$ in the value of $x$ corresponds to a decrease of $10$ in the value of $y$. When the value of $x$ is $6$, the value of $y$ is $1$. Which equation represents this relationship?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = -10x + 61$"
+    },
+    {
+      "id": "B",
+      "text": "$y = -2.5x + 1$"
+    },
+    {
+      "id": "C",
+      "text": "$y = -2.5x + 16$"
+    },
+    {
+      "id": "D",
+      "text": "$y = 2.5x - 14$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "A drop of $10$ across a run of $4$ is not a rate of change until you divide.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** $m = \\frac{-10}{4} = -2.5$, and $1 = -2.5(6)+b$ gives $b = 16$: $y = -2.5x + 16$ — choice C.\n\n**The Full Solution:**\nStep 1: The rate of change is the change in $y$ divided by the change in $x$: $m = \\frac{-10}{4} = -2.5$.\nStep 2: Substitute the given pair $(6, 1)$ into $y = -2.5x + b$: $1 = -15 + b$, so $b = 16$.\nStep 3: The equation is $y = -2.5x + 16$. Check by stepping $4$ units right from $x = 6$: at $x = 10$, $y = -25+16 = -9$, which is $10$ less than $1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = -10x + 61$): uses the $10$-unit drop as the rate of change without dividing by the $4$-unit run; then $1 = -10(6)+b$ forces $b = 61$.\n* Choice B ($y = -2.5x + 1$): has the correct rate of change but treats the given value $y = 1$ as the value at $x = 0$; it occurs at $x = 6$.\n* Choice D ($y = 2.5x - 14$): makes the rate of change positive, so $y$ would rise as $x$ rises; then $1 = 2.5(6)+b$ forces $b = -14$.\n\n**Test Day Takeaway:** The phrase '$y$ drops $10$ for every $4$ that $x$ rises' describes a ratio, not a slope — divide first, then anchor the line with the given point."
+}

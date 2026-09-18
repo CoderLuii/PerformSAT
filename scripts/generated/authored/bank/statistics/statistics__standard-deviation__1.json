@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "A data set consists of measured values, and its mean and standard deviation are both computed. The standard deviation of the data set describes which of the following?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "How far the values typically fall from the mean"
+    },
+    {
+      "id": "B",
+      "text": "The difference between the greatest and least values"
+    },
+    {
+      "id": "C",
+      "text": "The middle value when the values are ordered"
+    },
+    {
+      "id": "D",
+      "text": "The number of values in the data set"
+    }
+  ],
+  "distractorNotes": {
+    "B": "describes the range, which uses only the two extreme values instead of every value.",
+    "C": "describes the median, a measure of center rather than of spread.",
+    "D": "describes the size of the data set, which does not by itself say anything about spread."
+  },
+  "correctAnswer": "A",
+  "hint": "Think about which quantity would grow if the values were spread farther from the center.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** Standard deviation is a measure of spread about the mean, so it reports the typical distance of a value from the mean.\n\n**The Full Solution:**\nStep 1: Measures of center, such as the mean and median, report where the data sit; measures of spread report how far apart they are.\nStep 2: Standard deviation is computed from the differences between each value and the mean, so it is a measure of spread about the mean.\nStep 3: A data set whose values cluster tightly around the mean has a small standard deviation, and one whose values are far from the mean has a large one. Check: moving one value farther from the mean increases the standard deviation. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: describes the range, which uses only the two extreme values instead of every value.\n* Choice C: describes the median, a measure of center rather than of spread.\n* Choice D: describes the size of the data set, which does not by itself say anything about spread.\n\n**Test Day Takeaway:** Standard deviation answers \"how spread out,\" not \"where is the middle.\" Match the measure to the question before comparing data sets."
+}

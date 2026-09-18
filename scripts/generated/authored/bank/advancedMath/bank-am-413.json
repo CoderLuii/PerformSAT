@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-413",
+ "question": "The deviation of a lithium battery pack's temperature from its target, in degrees Celsius, is a quadratic function $T$ of $t$, the number of hours after 9 a.m. The deviation reaches its greatest value, $12$, at $t=3$, and $T(7)=-4$. What is the value of $T(-1)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-12$"
+  },
+  {
+   "id": "B",
+   "text": "$-4$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "negates the maximum value instead of using symmetry",
+  "C": "drops the negative sign from the given value T(7) = -4",
+  "D": "reports the maximum value, which occurs at t = 3 rather than t = -1"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex + Sign-of-Coefficient Reasoning**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The maximum at $t=3$ puts the axis of symmetry there, and $-1$ and $7$ are both $4$ units from $3$, so $T(-1)=T(7)=-4$.\n\n**The Full Solution:**\nStep 1: A quadratic with a greatest value opens downward, and its axis of symmetry passes through the maximum, so the axis is $t=3$.\nStep 2: Inputs equally far from the axis give equal outputs: $7-3=4$ and $3-(-1)=4$.\nStep 3: Therefore $T(-1)=T(7)=-4$. Check: $T(t)=-(t-3)^2+12$ fits both facts, and $T(-1)=-16+12=-4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-12$): negates the maximum value instead of using symmetry.\n* Choice C ($4$): drops the negative sign from the given output $T(7)=-4$.\n* Choice D ($12$): reports the maximum value, which occurs at $t=3$, not at $t=-1$.\n\n**Test Day Takeaway:** A stated maximum hands you the axis of symmetry for free — pair inputs across it instead of solving for the coefficients."
+}

@@ -1,0 +1,25 @@
+{
+  "id": 9015,
+  "passage": "Lungless salamanders take in oxygen through the skin, which works only while that skin stays wet. Dry air pulls water out of the animal directly, so on nights of low humidity these salamanders stay in the damp spaces beneath logs and stones instead of climbing into the leaf litter where they hunt. Rain changes the calculation within hours, raising humidity near the ground and letting the animals stay out much longer before they dry. A team walking the same forest transects on many summer nights, counting the salamanders visible on the surface, should expect that ______",
+  "question": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "counts stay at about the same level from one night to the next, whatever the weather."
+    },
+    {
+      "id": "B",
+      "text": "counts fall on the humid nights that follow rain and rise on the dry nights."
+    },
+    {
+      "id": "C",
+      "text": "counts on dry nights climb once the animals adjust to the dry conditions."
+    },
+    {
+      "id": "D",
+      "text": "counts on the humid nights after rain run well above counts on dry nights."
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** The animals come to the surface only when the air is humid enough to keep their skin wet, so a count of visible salamanders should be much higher on the humid nights that follow rain.\n\n**The Full Solution:**\n- Identify what the counts measure: salamanders on the surface, not salamanders present in the forest. Humidity governs whether they are up where a surveyor can see them.\n- Follow the rule to the prediction. Dry air drives them under logs and stones; rain lets them stay out; therefore surface counts should track humidity.\n- Check that the completion keeps the direction the text sets, with the higher counts on the wetter nights.\n\n**Why the other choices are wrong:**\n- A: Steady counts would mean humidity has no effect on surface activity, which contradicts the whole mechanism the text lays out.\n- B: This runs the relationship backward, putting the animals on the surface exactly when the air would dry their skin.\n- C: Nothing in the text suggests the salamanders acclimate to dry air; the constraint described is physical water loss through the skin, not habit."
+}

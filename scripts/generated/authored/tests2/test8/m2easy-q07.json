@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "An oral suspension contains $240$ milligrams of active drug in every $4$ milliliters. A pharmacist measures out $6$ milliliters of the suspension, which contains $k$ milligrams of the drug. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$160$"
+  },
+  {
+   "id": "B",
+   "text": "$360$"
+  },
+  {
+   "id": "C",
+   "text": "$480$"
+  },
+  {
+   "id": "D",
+   "text": "$1{,}440$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the proportion, computing 240(4)/6 = 160 milligrams",
+  "C": "scales by the 2-milliliter difference instead of the ratio, computing 240(2) = 480",
+  "D": "multiplies 240 by 6 without dividing by the 4 milliliters the 240 milligrams belongs to"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Proportion Solving**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The concentration is $240 \\div 4 = 60$ milligrams per milliliter, so $6$ milliliters carry $60(6) = 360$ milligrams.\n\n**The Full Solution:**\nStep 1: Milligrams and milliliters are proportional, so $\\frac{240}{4} = \\frac{k}{6}$, with milligrams on top in both ratios.\nStep 2: Cross multiply: $4k = 240(6) = 1{,}440$, so $k = \\frac{1{,}440}{4} = 360$.\nStep 3: Confirm with the unit rate: each milliliter carries $60$ milligrams, and $6$ milliliters carry $6(60) = 360$ milligrams. Check the direction: $6$ milliliters is more than $4$, and $360 > 240$, so the answer grew as it should. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($160$): sets up the proportion upside down, computing $\\frac{240(4)}{6}$. That would answer how much drug is in a volume SMALLER than $4$ milliliters.\n* Choice C ($480$): scales by the difference $6 - 4 = 2$ instead of the ratio $\\frac{6}{4}$, computing $240(2)$. Proportions multiply by ratios, not by gaps.\n* Choice D ($1{,}440$): stops after cross multiplying and never divides by $4$.\n\n**Test Day Takeaway:** Convert the given pair to a unit rate first. One number — milligrams per milliliter — turns every follow-up volume into a single multiplication and makes an upside-down setup obvious."
+}

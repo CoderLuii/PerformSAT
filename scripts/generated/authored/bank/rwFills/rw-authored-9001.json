@@ -1,0 +1,38 @@
+{
+  "id": 9001,
+  "passage": "In Thomas Hardy's 1874 novel Far from the Madding Crowd, the narrator devotes the opening chapter to Gabriel Oak, a young farmer, before any event of the story has taken place. The chapter moves item by item through what Oak owns and wears: his hat, his boots, the outsized watch that is the size of a small clock. A reader might argue that the narrator rarely presents a piece of Oak's outfit without also naming the practical need that shaped it.",
+  "question": "Which quotation from Far from the Madding Crowd most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "\"When Farmer Oak smiled, the corners of his mouth spread till they were within an unimportant distance of his ears\""
+    },
+    {
+      "id": "B",
+      "text": "\"He wore a low-crowned felt hat, spread out at the base by tight jamming upon the head for security in high winds\""
+    },
+    {
+      "id": "C",
+      "text": "\"His Christian name was Gabriel, and on working days he was a young man of sound judgment, easy motions, proper dress, and general good character.\""
+    },
+    {
+      "id": "D",
+      "text": "\"In his face one might notice that many of the hues and curves of youth had tarried on to manhood\""
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** The quotation names an article of clothing and, in the same sentence, the practical need behind its shape: the hat is jammed down and spread out at the base so that it will stay on in high winds.\n\n**The Full Solution:**\n- Underline both halves of the claim before reading the choices: the quotation must (1) describe something Oak wears or carries and (2) state the practical need that explains it.\n- Choice B does both. The felt hat is described physically, \"spread out at the base by tight jamming upon the head,\" and the reason follows immediately: \"for security in high winds.\"\n- Eliminate any quotation that stops at description. A vivid detail with no stated purpose satisfies only the first half of the claim, and half a claim is never enough on this question type.\n\n**Why the other choices are wrong:**\n- A: This describes Oak's smile in memorable detail, but a smile is not an article of his outfit and no practical need is named.\n- C: This summarizes Oak's weekday character, including \"proper dress\" in a list of general qualities; it explains nothing about why any particular thing he owns is made the way it is.\n- D: This concerns Oak's face and the traces of youth still in it, which is physical description without any practical purpose attached.",
+  "source": {
+    "title": "Far from the Madding Crowd",
+    "author": "Thomas Hardy",
+    "year": 1874,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/107"
+  },
+  "people": [
+    {
+      "name": "Thomas Hardy",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/107"
+    }
+  ]
+}

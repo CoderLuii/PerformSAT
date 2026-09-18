@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-026",
+ "question": "A pattern maker drafts a triangular gore for a skirt panel, and its three angle measures, in degrees, are $x$, $3x$, and $x-20$. What is the value of $x$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$22$"
+  },
+  {
+   "id": "B",
+   "text": "$32$"
+  },
+  {
+   "id": "C",
+   "text": "$36$"
+  },
+  {
+   "id": "D",
+   "text": "$40$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 90 for the angle sum: 5x - 20 = 90 gives x = 22",
+  "B": "adds 20 instead of subtracting it: 5x + 20 = 180 gives x = 32",
+  "C": "drops the -20 entirely: 5x = 180 gives x = 36"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Translate to Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The three angles sum to $180$, so $x+3x+(x-20)=180$, giving $5x=200$ and $x=40$.\n\n**The Full Solution:**\n\nStep 1 — The angle measures of any triangle add to $180$ degrees, so $x+3x+(x-20)=180$.\n\nStep 2 — Combine like terms: $5x-20=180$.\n\nStep 3 — Add $20$ and divide: $5x=200$, so $x=40$. Check: the angles are $40$, $120$, and $20$ degrees, and $40+120+20=180$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($22$): this sets the sum to $90$ instead of $180$.\n* Choice B ($32$): this moves the $-20$ to the left as $+20$, solving $5x+20=180$.\n* Choice C ($36$): this drops the $-20$ entirely and solves $5x=180$.\n\n**Test Day Takeaway:** Translate every phrase into one equation, combine like terms, and let the constant move once — the arithmetic is where these are lost."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-088",
+ "question": "A cylindrical grain bin has a volume of $320\\pi$ cubic feet and a height of $5$ feet. What is the radius, in feet, of the bin?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~25s):** $320\\pi = \\pi r^2(5)$ gives $r^2 = 64$, so $r = 8$ feet.\n\n**The Full Solution:**\nStep 1: Substitute into $V = \\pi r^2 h$: $320\\pi = \\pi r^2 (5)$.\nStep 2: Divide both sides by $5\\pi$: $r^2 = \\frac{320}{5} = 64$.\nStep 3: $r = \\sqrt{64} = 8$ feet.\n\nCheck: $\\pi(8)^2(5) = 320\\pi$ cubic feet.\n\n**Common Mistakes:**\n* Answering $64$, which is $r^2$, by skipping the square root.\n* Answering $16$ by reporting the diameter instead of the radius.\n* Dividing $320$ by $5$ and then by $2$ to get $32$, treating $r^2$ as $2r$.\n\n**Test Day Takeaway:** Isolate $r^2$ first; only after the height and $\\pi$ are gone should you take the square root."
+}

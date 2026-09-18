@@ -1,0 +1,31 @@
+{
+  "id": "bank-geo-128",
+  "question": "A chromatography plate is cut in the shape of the right triangle shown. What is the area, in square millimeters, of the plate?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          60,
+          45
+        ]
+      ],
+      "sideLabels": [
+        "",
+        "45 mm",
+        "75 mm"
+      ],
+      "rightAngleVertex": 1
+    }
+  },
+  "correctAnswer": "1350",
+  "explanation": "**SAT Pattern: Pythagorean Theorem (3-4-5 Family)**\n\n**The correct answer is $1350$.**\n\n**The Fast Way (~35s):** $45$-$60$-$75$ is the $3$-$4$-$5$ triple scaled by $15$, so the missing leg is $60$ and the area is $\\frac{1}{2}(45)(60) = 1350$.\n\n**The Full Solution:**\n\nStep 1: The $75$-millimeter edge is the hypotenuse, so the missing leg satisfies $b^2 = 75^2 - 45^2 = 5625 - 2025 = 3600$.\n\nStep 2: Therefore $b = 60$ millimeters, and the two legs are $45$ and $60$.\n\nStep 3: Area $= \\frac{1}{2}(45)(60) = 1350$ square millimeters. Check: $45^2 + 60^2 = 2025 + 3600 = 5625 = 75^2$.\n\n**Common Mistakes:**\n\n* $1687.5$ — using the hypotenuse as a leg: $\\frac{1}{2}(45)(75)$.\n* $2700$ — finding the legs correctly but omitting the factor $\\frac{1}{2}$.\n* $60$ — stopping at the missing leg instead of computing the area.\n\n**Test Day Takeaway:** The area formula uses the two LEGS; the hypotenuse never belongs in $\\frac{1}{2}bh$ for a right triangle."
+}

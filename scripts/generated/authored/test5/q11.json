@@ -1,34 +1,34 @@
 {
-  "id": 511,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 1,
-  "passage": "The common claim that everyone needs eight hours of sleep has been complicated by field studies of people who live without electric light. When researchers recorded sleep in several small-scale societies in Africa and South America, they found that adults there typically slept just under seven hours a night—less than many of their counterparts in industrialized countries—yet showed no obvious signs of chronic sleep deprivation. The researchers were careful about what this does and does not show. The finding does not prove that more sleep is useless; it suggests, more narrowly, that the figure often presented as a universal biological requirement may reflect a particular modern expectation rather than a fixed human need.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "People who live in the small-scale societies of Africa and South America sleep less than others largely because they have no access to electric light during the night."
-    },
-    {
-      "id": "B",
-      "text": "Researchers have now proven that adults need considerably less sleep than the commonly cited figure of eight hours a night."
-    },
-    {
-      "id": "C",
-      "text": "Field studies of societies without electric light suggest that the often-cited eight-hour requirement may reflect a modern expectation rather than a fixed biological need."
-    },
-    {
-      "id": "D",
-      "text": "Chronic sleep deprivation turns out to be less common in industrialized countries than in the small-scale societies without electric light."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage reports that adults in several societies without electric light slept just under seven hours without obvious harm, and it then states the careful conclusion: the eight-hour figure may reflect a modern expectation rather than a fixed biological requirement. Choice A turns a passing detail about electric light into a causal claim the passage does not make. Choice B overstates the finding, which the researchers explicitly decline to read as proof that more sleep is useless. Choice D reverses the comparison and is not what the passage asserts.",
-  "_meta": {
-    "anchor": "Sleep epidemiology; pre-industrial societies sleep ~7 hours; the eight-hour norm questioned"
+ "id": 511,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 1,
+ "passage": "Spoken language offers a newcomer no reliable pauses between words, so how do infants find where one word ends and the next begins? In a 1996 experiment, psychologist Jenny Saffran and colleagues played eight-month-olds two minutes of a continuous stream of made-up syllables in which the only clue to structure was statistical: certain syllables reliably followed one another, while other pairings occurred rarely. Afterward, the infants listened longer to the improbable sequences than to the reliable ones — evidence that they had registered the difference. From sound patterns alone, infants had begun to segment the stream, tracking which syllables belonged together well before any of it carried meaning.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Infants cannot begin learning words until caregivers deliberately insert pauses between them."
+  },
+  {
+   "id": "B",
+   "text": "A 1996 experiment showed that eight-month-olds already understand the meanings of many common words."
+  },
+  {
+   "id": "C",
+   "text": "Experimental evidence indicates that infants can use statistical patterns among syllables to find word-like units in continuous speech."
+  },
+  {
+   "id": "D",
+   "text": "Infants pay close attention to familiar syllable sequences and quickly lose interest whenever a sequence they encounter is new or improbable."
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The experiment's design and result both point to one conclusion, stated in the final sentence: from statistical patterns alone, infants \"had begun to segment the stream.\"\n\n**The Full Solution:**\n- The text opens with the segmentation problem: speech offers no reliable pauses between words.\n- The experiment removed every cue except statistics — syllable pairings that were either reliable or rare — and the infants distinguished the two afterward.\n- The closing sentence generalizes: infants tracked \"which syllables belonged together\" before meaning entered the picture. Choice C states exactly this.\n\n**Why the other choices are wrong:**\n- A: It contradicts the finding; the infants segmented speech that had no pauses at all.\n- B: It overshoots — the text says the syllables carried no meaning, so the study showed nothing about understanding words.\n- D: It reverses the data; the infants listened longer to the improbable sequences, and the listening difference was evidence, not the main point.",
+ "_meta": {
+  "anchor": "Saffran 1996 statistical-learning experiment — infants segmenting continuous speech"
+ }
 }

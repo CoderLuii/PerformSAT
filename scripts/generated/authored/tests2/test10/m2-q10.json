@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "A supplier's spreadsheet assigns each batch of $n$ canvas totes the handling value $k = \\frac{n^2 - 19n + 84}{n - 12}$, where the batch size $n$ is an integer that is at least $8$ and is not equal to $12$. Which of the following statements about $k$ is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "No batch size produces $k = 5$."
+  },
+  {
+   "id": "B",
+   "text": "No batch size produces $k = 7$."
+  },
+  {
+   "id": "C",
+   "text": "No batch size produces $k = 12$."
+  },
+  {
+   "id": "D",
+   "text": "No batch size produces $k = 84$."
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports the zero of the surviving factor n - 7 instead of the value k takes at the excluded batch size; k = 7 does occur, at n = 14",
+  "C": "reports the excluded batch size 12 itself rather than the k it would have produced; k = 12 does occur, at n = 19",
+  "D": "reports the constant term 84 from the numerator; k = 84 does occur, at n = 91"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Rational Equation with No Solution**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** The numerator factors as $(n - 12)(n - 7)$, so $k = n - 7$ for every allowed $n$. The one output that is out of reach is the one at the banned $n = 12$, namely $k = 5$.\n\n**The Full Solution:**\nStep 1: Factor the numerator. Two numbers multiplying to $84$ and adding to $-19$ are $-12$ and $-7$, so $n^2 - 19n + 84 = (n - 12)(n - 7)$.\nStep 2: Cancel the common factor: $\\frac{(n - 12)(n - 7)}{n - 12} = n - 7$ for every $n \\neq 12$. So the equation is really $k = n - 7$, but with $n = 12$ removed from the domain.\nStep 3: The value $k$ would take at the missing input is $12 - 7 = 5$, so $k = 5$ has no allowed batch size behind it. Every other value is reachable, since $k = n - 7$ can be solved for $n = k + 7$. Check: $k = 5$ forces $n = 12$, which the stem excludes ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($k = 7$): grabs the $7$ out of the surviving factor $n - 7$. That $7$ is a value of $n$, not of $k$; setting $n = 14$ gives $k = 7$, so this value is perfectly reachable.\n* Choice C ($k = 12$): reports the excluded input instead of the output it would have produced. Setting $n = 19$ gives $k = 12$.\n* Choice D ($k = 84$): copies the constant term of the numerator. Setting $n = 91$ gives $k = 84$.\n\n**Test Day Takeaway:** After a factor cancels, the simplified equation is still missing one input — the unreachable output is what the simplified form returns at the value the domain forbids."
+}

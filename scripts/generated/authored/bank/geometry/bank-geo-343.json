@@ -1,0 +1,29 @@
+{
+  "question": "A spherical cavity inside a cube of basalt just touches each of the cube's six faces. If the cube's edge measures $s$ centimeters, which expression gives the number of cubic centimeters of basalt in the block?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$s^3\\left(1 - \\frac{\\pi}{48}\\right)$"
+    },
+    {
+      "id": "B",
+      "text": "$s^3\\left(1 - \\frac{\\pi}{8}\\right)$"
+    },
+    {
+      "id": "C",
+      "text": "$s^3\\left(1 - \\frac{\\pi}{6}\\right)$"
+    },
+    {
+      "id": "D",
+      "text": "$s^3\\left(1 - \\frac{4\\pi}{3}\\right)$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "takes the sphere's radius as s/4 instead of s/2",
+    "B": "drops the 4/3 from the sphere formula, computing pi times (s/2) cubed",
+    "D": "uses the cube's full edge s as the sphere's radius"
+  },
+  "explanation": "**SAT Pattern: Composite Solid — Cube Minus Inscribed Sphere**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The sphere has radius $\\frac{s}{2}$, so its volume is $\\frac{4}{3}\\pi\\frac{s^3}{8} = \\frac{\\pi s^3}{6}$, leaving $s^3 - \\frac{\\pi s^3}{6}$.\n\n**The Full Solution:**\nStep 1: The cube's volume is $s^3$ cubic centimeters.\nStep 2: A sphere tangent to all six faces has diameter $s$, so its radius is $\\frac{s}{2}$ and its volume is $\\frac{4}{3}\\pi\\left(\\frac{s}{2}\\right)^3 = \\frac{4\\pi s^3}{24} = \\frac{\\pi s^3}{6}$.\nStep 3: Subtract: $s^3 - \\frac{\\pi s^3}{6} = s^3\\left(1 - \\frac{\\pi}{6}\\right)$. Check: $\\frac{\\pi}{6} \\approx 0.524$, so about $48\\%$ of the block remains — a positive amount, as it must be ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: halves the edge twice, using $r = \\frac{s}{4}$ and shrinking the cavity by a factor of $8$.\n* Choice B: drops the $\\frac{4}{3}$ and computes the cavity as $\\pi\\left(\\frac{s}{2}\\right)^3 = \\frac{\\pi s^3}{8}$.\n* Choice D: uses $r = s$; that sphere would not fit inside the cube at all, and the expression even turns negative.\n\n**Test Day Takeaway:** A sphere inscribed in a cube has DIAMETER equal to the edge — cube the whole fraction $\\frac{s}{2}$, denominator included.",
+  "id": "bank-geo-343"
+}

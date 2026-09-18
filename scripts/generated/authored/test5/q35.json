@@ -1,43 +1,43 @@
 {
-  "id": 535,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "module": 2,
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "For much of the twentieth century, histories of the Ottoman Empire told a story of decline. After the empire's territorial peak in the late sixteenth century, the account ran, its institutions stopped adapting: its armies fell behind those of European rivals, its craft guilds clung to old techniques, and its markets were gradually overrun by inexpensive European manufactured goods. On this reading, the empire's final three centuries form a single long unraveling, ending in its dissolution after the First World War."
-    },
-    {
-      "label": "Text 2",
-      "text": "The historian Donald Quataert, working from Ottoman court records, guild petitions, and regional studies of manufacturing, argued that decline is the wrong frame for those centuries. The empire certainly lost wars and territory, he acknowledged. But its producers did not simply collapse before European competition: many weavers survived by switching to cheaper imported yarn while keeping their workshops running, and new export industries—most famously carpet weaving for European and American buyers—grew in the nineteenth century to employ tens of thousands. Reading the period as one long unraveling, Quataert argued, projects the empire's eventual end backward onto generations of practical adjustment and obscures how differently particular regions and trades actually fared."
-    }
-  ],
-  "question": "Based on the texts, how would Quataert (Text 2) most likely respond to the account of the Ottoman Empire's final centuries presented in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "He would grant the military and territorial losses while objecting that the account compresses centuries of varied regional adjustment into a single story of decay."
-    },
-    {
-      "id": "B",
-      "text": "He would respond that the account actually understates the decline, since Ottoman manufacturing had all but disappeared by the early decades of the nineteenth century."
-    },
-    {
-      "id": "C",
-      "text": "He would agree that the empire's institutions stopped adapting after the sixteenth century but locate the cause in the craft guilds rather than in European competition."
-    },
-    {
-      "id": "D",
-      "text": "He would argue that court records and guild petitions are too fragmentary to support any general conclusions about the direction of the Ottoman economy."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. Quataert concedes the battlefield and territorial losses the older account emphasizes, so he is not rejecting its every element. What he disputes is the frame: treating three centuries as one long unraveling, he argues, reads the empire's end backward onto a record that—examined region by region and trade by trade—shows repeated practical adaptation, from weavers switching to imported yarn to carpet workshops expanding for export. Choice A captures that combination of concession and objection. Choice B reverses him, since he argues manufacturing persisted rather than vanished. Choice C endorses the older account's central claim, that adaptation stopped, which is the very point he denies. And choice D faults the sources he himself relies on.",
-  "_meta": {
-    "anchor": "Donald Quataert — revision of the Ottoman decline thesis"
+ "id": 535,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "module": 2,
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "Popular histories describe the Silk Road as antiquity's great commercial artery: caravans crossing the breadth of Eurasia laden with silk bound for Mediterranean markets, merchants growing rich on a trade of intercontinental scale, and cities rising wherever the caravans paused. In this telling, sustained long-distance commerce was the routes' defining activity and the source of their historical importance."
+  },
+  {
+   "label": "Text 2",
+   "text": "The historian Valerie Hansen, drawing on documents excavated at desert settlements along the routes, notes that the caravans they record were mostly small and their dealings mostly local. Silk itself often moved not as merchandise but as currency or army pay, and the largest flows of goods accompanied soldiers and officials rather than private traders. The routes transformed the societies along them, Hansen argues, but chiefly as corridors for technologies, religions, and ideas, not through the volume of their commerce."
   }
+ ],
+ "question": "Based on the texts, how would Hansen (Text 2) most likely respond to the account of the Silk Road presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "She would grant that goods and people moved along the routes while objecting that the account misrepresents the scale and character of the trade."
+  },
+  {
+   "id": "B",
+   "text": "She would deny that silk was transported along the routes in any significant quantity."
+  },
+  {
+   "id": "C",
+   "text": "She would agree that commerce on an intercontinental scale occurred but argue that it traveled by sea rather than over land."
+  },
+  {
+   "id": "D",
+   "text": "She would respond that excavated documents are too fragmentary to support any conclusions about the routes' history."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Hansen does not dispute that things moved along the routes — her documents record caravans, silk, soldiers, and officials — but she rejects Text 1's picture of large-scale private commerce, recasting the trade as small, local, and often not commercial at all.\n\n**The Full Solution:**\n- Text 1's account rests on two commitments: trade of intercontinental scale, and commerce as the routes' defining activity.\n- Text 2 concedes movement while contesting both commitments: recorded caravans were \"mostly small,\" dealings \"mostly local,\" silk often served as currency or pay, and the biggest flows attended armies, not merchants.\n- Hansen's positive claim — the routes mattered as corridors for technologies, religions, and ideas — replaces the character of the routes' importance without denying that they were traveled. That is the grant-plus-objection stance of choice A.\n\n**Why the other choices are wrong:**\n- B: It overshoots; Hansen says silk moved, only often as currency or pay rather than merchandise.\n- C: She relocates nothing to the sea — she shrinks and recharacterizes the overland trade itself.\n- D: It attacks her own evidentiary base; the excavated documents are the foundation of her argument, not its target.",
+ "_meta": {
+  "anchor": "Silk Road historiography — grand commercial narrative vs. Hansen's local-trade revision"
+ }
 }

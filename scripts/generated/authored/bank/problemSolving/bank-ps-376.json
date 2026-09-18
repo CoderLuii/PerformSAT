@@ -1,0 +1,71 @@
+{
+  "id": "bank-ps-376",
+  "question": "The dot plot shows the number of monarch butterflies tagged at a field station on each of $9$ days. On a $10$th day, $23$ butterflies were tagged. What is the mean number of butterflies tagged per day for all $10$ days?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 8,
+          "count": 1
+        },
+        {
+          "value": 11,
+          "count": 1
+        },
+        {
+          "value": 12,
+          "count": 1
+        },
+        {
+          "value": 13,
+          "count": 1
+        },
+        {
+          "value": 14,
+          "count": 1
+        },
+        {
+          "value": 15,
+          "count": 1
+        },
+        {
+          "value": 17,
+          "count": 1
+        },
+        {
+          "value": 18,
+          "count": 2
+        }
+      ],
+      "xMin": 7,
+      "xMax": 19,
+      "xLabel": "Butterflies tagged"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$14$"
+    },
+    {
+      "id": "B",
+      "text": "$14.9$"
+    },
+    {
+      "id": "C",
+      "text": "$16.56$"
+    },
+    {
+      "id": "D",
+      "text": "$18.5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the mean of the first $9$ days and assumes one more value cannot change it",
+    "C": "divides the new total, $149$, by $9$ instead of by $10$",
+    "D": "averages the old mean with the new value, $\\frac{14 + 23}{2}$, ignoring how many days each represents"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Mean from List**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The $9$ dots sum to $126$, so adding $23$ gives $149$ over $10$ days: $\\frac{149}{10} = 14.9$.\n\n**The Full Solution:**\nStep 1: Read the dots: $8$, $11$, $12$, $13$, $14$, $15$, $17$, $18$, $18$. Their sum is $126$.\nStep 2: Adding the $10$th day gives a new total of $126 + 23 = 149$ butterflies over $10$ days.\nStep 3: The new mean is $\\frac{149}{10} = 14.9$. Check: the first $9$ days average $\\frac{126}{9} = 14$, and one day above that average pulls the mean up slightly, to $14.9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($14$): reports the mean of the first $9$ days and assumes one more value cannot change it\n* Choice C ($16.56$): divides the new total, $149$, by $9$ instead of by $10$\n* Choice D ($18.5$): averages the old mean with the new value, $\\frac{14 + 23}{2}$, ignoring how many days each represents\n\n**Test Day Takeaway:** To add a value to a data set, go back to the sum: recover it from mean $\\times$ count, add the new value, then divide by the new count."
+}

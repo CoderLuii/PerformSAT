@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-411",
+ "question": "In a recording studio, the acceptable phase offsets $x$, in degrees, are exactly the numbers that satisfy the equation $|2x + 6| - 4 = 10$, where a negative value indicates a lag. Which of the following gives both acceptable offsets?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x = -20$ and $x = 8$"
+  },
+  {
+   "id": "B",
+   "text": "$x = -10$ and $x = 4$"
+  },
+  {
+   "id": "C",
+   "text": "$x = -8$ and $x = 2$"
+  },
+  {
+   "id": "D",
+   "text": "$x = -4$ and $x = 10$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves 2x = 8 and 2x = -20 but never divides by 2",
+  "C": "reads the right-hand side as 10 without first adding 4",
+  "D": "changes the sign inside the bars, solving |2x - 6| = 14"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Add $4$ to get $|2x + 6| = 14$, so $2x + 6 = \\pm 14$ and $x = 4$ or $x = -10$.\n\n**The Full Solution:**\nStep 1: Isolate the absolute value: $|2x + 6| - 4 = 10$ gives $|2x + 6| = 14$.\nStep 2: Split into branches: $2x + 6 = 14$ gives $2x = 8$ and $x = 4$; $2x + 6 = -14$ gives $2x = -20$ and $x = -10$.\nStep 3: The offsets are $-10$ and $4$ degrees. Check: $|2(4) + 6| - 4 = 14 - 4 = 10$ and $|2(-10) + 6| - 4 = 14 - 4 = 10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($x = -20$ and $x = 8$): stops at $2x = 8$ and $2x = -20$ without dividing by $2$.\n* Choice C ($x = -8$ and $x = 2$): reads the right-hand side as $10$ and never adds the $4$ back.\n* Choice D ($x = -4$ and $x = 10$): changes the sign inside the bars and solves $|2x - 6| = 14$ instead.\n\n**Test Day Takeaway:** Isolate the bars first, then split, then finish the algebra on each branch separately."
+}

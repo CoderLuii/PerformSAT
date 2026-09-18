@@ -1,0 +1,67 @@
+{
+  "id": "bank-ps-138",
+  "question": "Gallery staff plotted the number of radio spots aired against the attendance recorded for each of $10$ exhibitions and drew the line of best fit $y = 2.5x + 18$. What is the least integer number of radio spots for which this line predicts an attendance greater than $100$?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          4,
+          30
+        ],
+        [
+          8,
+          35
+        ],
+        [
+          12,
+          52
+        ],
+        [
+          16,
+          55
+        ],
+        [
+          20,
+          70
+        ],
+        [
+          24,
+          74
+        ],
+        [
+          28,
+          92
+        ],
+        [
+          32,
+          95
+        ],
+        [
+          36,
+          112
+        ],
+        [
+          40,
+          115
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 44,
+      "yMin": 0,
+      "yMax": 130,
+      "xGridStep": 4,
+      "xLabelStep": 8,
+      "yGridStep": 10,
+      "yLabelStep": 20,
+      "xLabel": "Radio spots aired",
+      "yLabel": "Exhibition attendance",
+      "bestFitLine": {
+        "slope": 2.5,
+        "intercept": 18
+      }
+    }
+  },
+  "correctAnswer": "33",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**The correct answer is $33$.**\n\n**The Fast Way (~25s):** Solve $2.5x + 18 > 100$ to get $x > 32.8$, so the least integer is $33$.\n\n**The Full Solution:**\nStep 1: Write the inequality. The predicted attendance exceeds $100$ when $2.5x + 18 > 100$.\nStep 2: Solve. Subtract $18$: $2.5x > 82$. Divide by $2.5$: $x > 32.8$.\nStep 3: Pick the least integer and verify. The least integer greater than $32.8$ is $33$, and $2.5(33) + 18 = 100.5 > 100$, while $2.5(32) + 18 = 98 < 100$. ✓\n\n**Common Mistakes:**\n* Rounding $32.8$ down to $32$ gives a prediction of $98$, which does not exceed $100$.\n* Dividing $100$ by $2.5$ gives $40$, which ignores the intercept $18$.\n* Using the plotted point nearest an attendance of $100$ reads the data instead of the model.\n\n**Test Day Takeaway:** For a \"least integer\" threshold, solve the inequality exactly, then test the integer you choose and the one below it."
+}

@@ -1,0 +1,46 @@
+{
+ "id": "bank-geo-251",
+ "question": "In triangle $PQR$ shown, $\\angle P$ measures $30°$, $\\angle Q$ measures $90°$, and $PQ = 15\\sqrt{3}$. What is the length of $PR$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "P",
+    "Q",
+    "R"
+   ],
+   "sideLabels": [
+    "15√3",
+    "",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$30$"
+  },
+  {
+   "id": "C",
+   "text": "$45$"
+  },
+  {
+   "id": "D",
+   "text": "$30\\sqrt{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at the short leg",
+  "C": "uses a 1:2:3 ratio",
+  "D": "doubles the long leg"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: 30-60-90 Triangle**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $PQ$ faces the $60^\\circ$ angle, so $PQ = s\\sqrt{3}$ gives $s = 15$; the hypotenuse $PR$ is $2s = 30$.\n\n**The Full Solution:**\nStep 1: Since $\\angle P = 30^\\circ$ and $\\angle Q = 90^\\circ$, the remaining angle $\\angle R = 60^\\circ$, and $PQ$ is the side opposite $\\angle R$.\nStep 2: In the ratio $1 : \\sqrt{3} : 2$, the side opposite $60^\\circ$ is $s\\sqrt{3}$. So $s\\sqrt{3} = 15\\sqrt{3}$ and $s = 15$.\nStep 3: $PR$ is the hypotenuse, opposite the right angle, so $PR = 2s = 30$. Check: $15^2 + (15\\sqrt{3})^2 = 225 + 675 = 900 = 30^2$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): stops at the short leg $QR$ instead of continuing to the hypotenuse.\n* Choice C ($45$): triples the short leg, using an invented $1 : 2 : 3$ ratio.\n* Choice D ($30\\sqrt{3}$): doubles the given side $15\\sqrt{3}$, treating the long leg as if it were the short leg.\n\n**Test Day Takeaway:** Strip the $\\sqrt{3}$ off the long leg to recover the short leg, then double it. Never double the long leg directly."
+}

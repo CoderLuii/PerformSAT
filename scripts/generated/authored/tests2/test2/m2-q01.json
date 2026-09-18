@@ -1,0 +1,48 @@
+{
+ "id": 1,
+ "question": "Two book-drop kiosks on a college campus are located at the plotted points on the coordinate grid shown, where each grid unit represents $20$ meters. What is the straight-line distance, in meters, between the two kiosks?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -3,
+     -2
+    ],
+    [
+     5,
+     4
+    ]
+   ],
+   "xMin": -6,
+   "xMax": 8,
+   "yMin": -5,
+   "yMax": 7
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$10$"
+  },
+  {
+   "id": "B",
+   "text": "$160$"
+  },
+  {
+   "id": "C",
+   "text": "$200$"
+  },
+  {
+   "id": "D",
+   "text": "$280$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "leaves the answer in grid units, reporting the distance 10 without multiplying by the 20 meters each unit represents",
+  "B": "uses only the horizontal separation of 8 units, giving 8(20) = 160 meters",
+  "D": "adds the horizontal and vertical separations, 8 + 6 = 14 units, instead of using the Pythagorean relationship, giving 14(20) = 280 meters"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The kiosks sit $8$ units apart horizontally and $6$ units apart vertically, a $6$-$8$-$10$ right triangle, so they are $10$ units apart. Each unit is $20$ meters, so the distance is $10(20) = 200$ meters.\n\n**The Full Solution:**\nStep 1: Read the two plotted points from the grid: $(-3, -2)$ and $(5, 4)$. The horizontal separation is $5 - (-3) = 8$ units and the vertical separation is $4 - (-2) = 6$ units.\nStep 2: Apply the distance formula: $d = \\sqrt{8^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10$ units.\nStep 3: Convert to meters using the scale: $10(20) = 200$ meters. Check: a right triangle with legs $8(20) = 160$ and $6(20) = 120$ meters has hypotenuse $\\sqrt{160^2 + 120^2} = \\sqrt{40000} = 200$ meters ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($10$): stops at the distance in grid units. The grid legend says each unit stands for $20$ meters, so $10$ units is $200$ meters, not $10$.\n* Choice B ($160$): uses only the horizontal separation, $8$ units, and converts it to $8(20) = 160$ meters. That is one leg of the right triangle, not the straight-line distance.\n* Choice D ($280$): adds the two separations, $8 + 6 = 14$ units, and converts to $280$ meters. Adding the legs measures the path along the grid lines, which is always longer than the direct route.\n\n**Test Day Takeaway:** When a coordinate figure carries a scale, find the distance in grid units first and convert once at the end; converting each coordinate difference separately invites arithmetic slips."
+}

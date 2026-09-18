@@ -1,0 +1,46 @@
+{
+ "id": "bank-alg-276",
+ "question": "The function $f$ is defined by $f(x) = a(x - 2)^2 - 3$, where $a$ is a constant. The graph of $y = f(x)$ in the $xy$-plane is shown and passes through the point $(0, 5)$. When $f(x)$ is written in the form $ax^2 + bx + c$, where $b$ and $c$ are constants, what is the value of $b$?",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    2,
+    -3
+   ],
+   "a": 2,
+   "showPoints": [
+    [
+     0,
+     5
+    ]
+   ],
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$-4$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses a = 1 when expanding",
+  "C": "reports a instead of b",
+  "D": "sign dropped on the cross term"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Use the point to find $a$: $a(0 - 2)^2 - 3 = 5$ gives $a = 2$. Then $b = -2ah = -2(2)(2) = -8$.\n\n**The Full Solution:**\nStep 1: Substitute $(0, 5)$: $4a - 3 = 5$, so $a = 2$ and $f(x) = 2(x - 2)^2 - 3$.\nStep 2: Expand: $2(x^2 - 4x + 4) - 3 = 2x^2 - 8x + 8 - 3 = 2x^2 - 8x + 5$.\nStep 3: So $b = -8$. Check: $c = 5$ equals the $y$-intercept marked on the graph. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-4$): expands $(x - 2)^2$ without the factor $a = 2$.\n* Choice C ($2$): the value of $a$, not $b$.\n* Choice D ($8$): drops the sign; the graph's vertex is right of the $y$-axis, so the $x$-coefficient is negative.\n\n**Test Day Takeaway:** A marked point pins down $a$; then $b = -2ah$ and $c$ is the $y$-intercept, which the graph lets you confirm."
+}

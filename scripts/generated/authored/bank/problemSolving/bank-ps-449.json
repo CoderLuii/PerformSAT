@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-449",
+  "question": "A shipment of $306$ kilograms of gravel is split between two work sites so that the amounts are in the ratio $5 : 13$. How many kilograms of gravel go to the site that receives the smaller amount?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$17$"
+    },
+    {
+      "id": "B",
+      "text": "$85$"
+    },
+    {
+      "id": "C",
+      "text": "$153$"
+    },
+    {
+      "id": "D",
+      "text": "$221$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the size of one share instead of the smaller amount.",
+    "C": "splits the shipment evenly instead of in the ratio $5 : 13$.",
+    "D": "gives the larger amount, the $13$-part share."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sum-of-Parts Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** There are $5+13=18$ parts, so one part is $\\frac{306}{18}=17$ kilograms, and the smaller site gets $5(17)=85$ kilograms.\n\n**The Full Solution:**\nStep 1: Write the two amounts as $5k$ and $13k$ kilograms, so $5k+13k=306$.\nStep 2: $18k=306$, so $k=17$.\nStep 3: The smaller amount is $5k=5(17)=85$ kilograms. Check: $13(17)=221$, and $85+221=306$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($17$): reports $k$, one part of the ratio, not a site's share.\n* Choice C ($153$): divides the shipment in half, ignoring the ratio.\n* Choice D ($221$): gives the $13$-part share, the larger amount.\n\n**Test Day Takeaway:** The smaller ratio number always names the smaller share. Compute one part, then multiply by the number the question points to."
+}

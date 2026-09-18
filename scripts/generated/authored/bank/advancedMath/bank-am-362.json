@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-362",
+ "question": "Expanding the seed-dispersal product $(4x^2 + 7)(5x - 3)$, in which $x$ is the release height in meters, produces the polynomial $20x^3 + ax^2 + 35x - 21$, where $a$ is a constant the modelers record separately for each field. What number is $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-12$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$35$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "quotes the $7$ from the first factor instead of forming a product",
+  "C": "drops the negative sign from $4x^2 \\cdot (-3)$",
+  "D": "reports the coefficient of $x$, which comes from $7 \\cdot 5x$"
+ },
+ "explanation": "**SAT Pattern: Factor by Grouping**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The only $x^2$ term comes from $4x^2 \\cdot (-3) = -12x^2$, so $a = -12$.\n\n**The Full Solution:**\nStep 1: Distribute: $4x^2(5x) = 20x^3$ and $4x^2(-3) = -12x^2$.\nStep 2: Then $7(5x) = 35x$ and $7(-3) = -21$.\nStep 3: Collecting terms gives $20x^3 - 12x^2 + 35x - 21$, so $a = -12$. Check: at $x = 1$ the product is $(11)(2) = 22$, and $20 - 12 + 35 - 21 = 22$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($7$): copies a constant out of a factor instead of multiplying.\n* Choice C ($12$): correct in size but wrong in sign, since one factor contributes $-3$.\n* Choice D ($35$): the coefficient one degree lower, from $7 \\cdot 5x$.\n\n**Test Day Takeaway:** To get one coefficient, find only the products that land in that degree — here just $4x^2$ times $-3$."
+}

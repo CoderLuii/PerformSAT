@@ -1,0 +1,53 @@
+{
+  "id": "bank-ps-028",
+  "question": "The table shows the weight of each component of a certification exam and a candidate's score on each component. The overall score is the weighted mean of the component scores. What is the candidate's overall score?",
+  "questionTable": {
+    "headers": [
+      "Component",
+      "Weight",
+      "Score"
+    ],
+    "rows": [
+      [
+        "Written",
+        "45%",
+        "82"
+      ],
+      [
+        "Practical",
+        "35%",
+        "90"
+      ],
+      [
+        "Oral",
+        "20%",
+        "75"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$68.4$"
+    },
+    {
+      "id": "B",
+      "text": "$82.3$"
+    },
+    {
+      "id": "C",
+      "text": "$83.4$"
+    },
+    {
+      "id": "D",
+      "text": "$84.2$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "omits the oral component, adding only $36.9 + 31.5$.",
+    "B": "takes the simple average $\\frac{82 + 90 + 75}{3}$, ignoring the weights.",
+    "D": "swaps the $45\\%$ and $35\\%$ weights, applying $0.45$ to the practical score and $0.35$ to the written score."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Weighted Average from Percentages**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Multiply each score by its weight and add: $0.45(82) + 0.35(90) + 0.20(75) = 36.9 + 31.5 + 15 = 83.4$.\n\n**The Full Solution:**\nStep 1: Convert the weights to decimals: $0.45$, $0.35$, $0.20$. They sum to $1$, so no further division is needed.\nStep 2: Weighted contributions: $0.45 \\times 82 = 36.9$; $0.35 \\times 90 = 31.5$; $0.20 \\times 75 = 15$.\nStep 3: Overall score $= 36.9 + 31.5 + 15 = 83.4$. Check: the result lies between the lowest score ($75$) and the highest ($90$), closest to the heavily weighted $82$ and $90$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($68.4$): omits the oral component, adding only $36.9 + 31.5$.\n* Choice B ($82.3$): takes the simple average $\\frac{82 + 90 + 75}{3}$, ignoring the weights.\n* Choice D ($84.2$): swaps the $45\\%$ and $35\\%$ weights, applying $0.45$ to the practical score and $0.35$ to the written score.\n\n**Test Day Takeaway:** A weighted mean is $\\sum (\\text{weight} \\times \\text{score})$ when the weights sum to $100\\%$. Match each weight to its own row."
+}

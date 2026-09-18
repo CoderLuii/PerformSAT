@@ -6,26 +6,26 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 1,
-  "passage": "For much of the twentieth century, scholars assumed that Native Americans who moved from reservations to cities gradually lost their tribal identities, since belonging was thought to depend on remaining close to a home community. ______ ethnographic studies of urban Native families in the San Francisco Bay Area have found that city dwellers sustain strong tribal ties through regular visits, ceremonies, and family gatherings that keep them in close contact with reservation relatives.",
+  "passage": "The earthy scent that rises when rain falls on dry ground has a chemical source: geosmin, a compound produced by soil bacteria, to which human noses are astonishingly sensitive. Raindrops striking parched soil fling geosmin-laden droplets into the air, and a storm's outflow winds carry those droplets well ahead of the rain itself. ______ people often smell a storm coming minutes before the first drops arrive.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "For example,"
+      "text": "However,"
     },
     {
       "id": "B",
-      "text": "Therefore,"
+      "text": "For instance,"
     },
     {
       "id": "C",
-      "text": "Likewise,"
+      "text": "Similarly,"
     },
     {
       "id": "D",
-      "text": "However,"
+      "text": "As a result,"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The first sentence reports the old assumption that moving to a city erodes tribal identity; the second reports findings that city dwellers in fact maintain strong tribal ties. Because the finding runs counter to the assumption, the contrast marker \"However,\" fits. \"For example,\" is wrong because the second sentence is not an instance of the assumption but a challenge to it. \"Therefore,\" signals a conclusion that follows from the first sentence, but the finding does not follow from the assumption—it contradicts it. \"Likewise,\" signals agreement between the two sentences, the opposite of their actual relationship."
+  "explanation": "**Choice D is correct.** The final sentence states the consequence of the mechanism just described — scent-carrying droplets travel ahead of the rain, so people smell the storm before it arrives — and \"As a result\" is the transition that marks a consequence.\n\n**The Full Solution:**\n- The second sentence supplies a two-step cause: raindrops loft geosmin into the air, and outflow winds carry it ahead of the storm.\n- The blank sentence reports the effect of that cause: the smell reaches people minutes before the rain does.\n- A cause-to-effect join calls for a consequence transition, and \"As a result\" is exactly that.\n\n**Why the other choices are wrong:**\n- A: \"However\" signals a contrast or reversal, but the final sentence follows from the previous one rather than opposing it.\n- B: \"For instance\" introduces an example of a general claim; the final sentence is not an instance of the wind mechanism but its outcome.\n- C: \"Similarly\" requires a second, parallel phenomenon; there is only one continuous causal chain here, not two alike things being compared."
 }

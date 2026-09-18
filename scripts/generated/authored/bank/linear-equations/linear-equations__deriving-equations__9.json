@@ -1,0 +1,42 @@
+{
+  "id": 9,
+  "question": "The graph of a line in the $xy$-plane is shown. Which equation represents this line?",
+  "diagram": {
+    "type": "simpleLine",
+    "params": {
+      "points": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          11
+        ]
+      ],
+      "xMax": 6,
+      "yMax": 14
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = 0.5x + 3$"
+    },
+    {
+      "id": "B",
+      "text": "$y = 2x + 3$"
+    },
+    {
+      "id": "C",
+      "text": "$y = 2x + 11$"
+    },
+    {
+      "id": "D",
+      "text": "$y = 3x + 2$"
+    }
+  ],
+  "correctAnswer": "B",
+  "hint": "The line crosses the vertical axis at a grid point, so one of the two constants can simply be read off.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** The line crosses the vertical axis at $3$ and rises $8$ over a run of $4$, so the slope is $2$: $y = 2x + 3$ — choice B.\n\n**The Full Solution:**\nStep 1: Read the $y$-intercept: the line passes through $(0, 3)$, so $b = 3$.\nStep 2: Compute the slope from $(0, 3)$ and $(4, 11)$: $m = \\frac{11-3}{4-0} = \\frac{8}{4} = 2$.\nStep 3: The equation is $y = 2x + 3$. Check the second point: $2(4)+3 = 11$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = 0.5x + 3$): inverts the slope, dividing the run by the rise, $\\frac{4}{8}$, instead of the rise by the run.\n* Choice C ($y = 2x + 11$): uses $11$, the height of the line at $x = 4$, as the $y$-intercept; the intercept is the height at $x = 0$.\n* Choice D ($y = 3x + 2$): swaps the slope and the $y$-intercept.\n\n**Test Day Takeaway:** When the graph crosses the vertical axis at a lattice point, read $b$ for free and spend your time only on the slope."
+}

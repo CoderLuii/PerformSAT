@@ -1,0 +1,6 @@
+{
+ "question": "A wreck marker at $(-2, 3)$ lies exactly at the edge of the $17$-meter detection circle of a sonar buoy positioned at $(6, k)$, where $k > 0$ and coordinates are in meters. What is the value of $k$?",
+ "correctAnswer": "18",
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**The correct answer is $18$.**\n\n**The Fast Way (~35s):** The marker is one radius from the buoy: $8^2 + (k - 3)^2 = 17^2$, so $(k - 3)^2 = 225$ and $k = 3 + 15 = 18$.\n\n**The Full Solution:**\nStep 1: A point on the edge is exactly $17$ meters from the center, so $(6 - (-2))^2 + (k - 3)^2 = 17^2$.\nStep 2: Simplify: $64 + (k - 3)^2 = 289$, so $(k - 3)^2 = 225$ and $k - 3 = \\pm 15$.\nStep 3: That gives $k = 18$ or $k = -12$; since $k > 0$, $k = 18$. Check: the distance from $(6, 18)$ to $(-2, 3)$ is $\\sqrt{64 + 225} = 17$ ✓\n\n**Common Mistakes:**\n* $-12$ — takes the negative root and ignores the condition $k > 0$.\n* $15$ — reports $k - 3$ instead of solving for $k$ itself.\n* $12$ — subtracts $3$ from $15$ rather than adding it.\n\n**Test Day Takeaway:** \"On the edge\" means the distance equals the radius exactly — square both sides, then check the stated sign condition before choosing a root.",
+ "id": "bank-geo-134"
+}

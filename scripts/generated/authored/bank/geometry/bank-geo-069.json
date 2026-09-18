@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-069",
+ "question": "The area reached by a campus Wi-Fi antenna is bounded by $x^{2}+y^{2}-10x-24y=0$, with coordinates in meters. Which of the following describes that circle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Center $(-5,-12)$ and radius $13$"
+  },
+  {
+   "id": "B",
+   "text": "Center $(5,12)$ and radius $169$"
+  },
+  {
+   "id": "C",
+   "text": "Center $(10,24)$ and radius $13$"
+  },
+  {
+   "id": "D",
+   "text": "Center $(5,12)$ and radius $13$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps the signs of -10 and -24 instead of reversing them for the center",
+  "B": "reports r squared = 169 as the radius",
+  "C": "uses the full coefficients 10 and 24 rather than half of each"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** Half of $10$ and half of $24$ give the center $(5,12)$, and $r^{2}=25+144=169$, so $r=13$.\n\n**The Full Solution:**\n\nStep 1: Complete the square in $x$. $x^{2}-10x$ becomes $(x-5)^{2}-25$.\n\nStep 2: Complete the square in $y$. $y^{2}-24y$ becomes $(y-12)^{2}-144$.\n\nStep 3: Rewrite. $(x-5)^{2}+(y-12)^{2}=169$, so the center is $(5,12)$ meters and the radius is $\\sqrt{169}=13$ meters.\n\nCheck: the origin satisfies the original equation, and its distance to $(5,12)$ is $\\sqrt{25+144}=13$, the radius.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: keeps the signs of $-10$ and $-24$ instead of reversing them for the center.\n* Choice B: reports $r^{2}=169$ as the radius rather than taking the square root.\n* Choice C: uses the full coefficients $10$ and $24$ instead of half of each.\n\n**Test Day Takeaway:** Halve each linear coefficient and flip its sign for the center; the completed constants add to give $r^{2}$."
+}

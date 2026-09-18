@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "A conveyor alarm sounds at every integer belt speed $x$, in meters per minute, for which $3x - 8 > k$, where $k$ is an integer constant. The least speed at which the alarm sounds is $12$ meters per minute. What is the greatest possible value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$25$"
+  },
+  {
+   "id": "B",
+   "text": "$27$"
+  },
+  {
+   "id": "C",
+   "text": "$28$"
+  },
+  {
+   "id": "D",
+   "text": "$36$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 3(11) - 8 = 25, a value of k that works but is not the greatest one",
+  "C": "uses 3(12) - 8 = 28, treating x = 12 as a solution of 3x - 8 = k rather than a strict inequality",
+  "D": "drops the -8 and computes 3(12) = 36"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Smallest Integer in an Inequality**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Solving gives $x > \\frac{k + 8}{3}$. For $12$ to be the least integer speed above that boundary, the boundary must satisfy $11 \\le \\frac{k + 8}{3} < 12$, so $25 \\le k < 28$ and the greatest integer is $27$.\n\n**The Full Solution:**\nStep 1: Isolate $x$. Adding $8$ to both sides of $3x - 8 > k$ and dividing by $3$ gives $x > \\frac{k + 8}{3}$, so the solutions are every number strictly above that boundary.\nStep 2: Say what makes $12$ the least integer speed that satisfies the inequality. The boundary must be below $12$ so that $12$ sounds the alarm, and at least $11$ so that $11$ does not, which is $11 \\le \\frac{k + 8}{3} < 12$.\nStep 3: Solve for $k$ and take the greatest integer. Multiplying by $3$ gives $33 \\le k + 8 < 36$, so $25 \\le k < 28$ and the greatest integer value is $k = 27$. Check: with $k = 27$, $x > \\frac{35}{3} \\approx 11.67$, so the least integer speed is $12$; with $k = 28$, $x > 12$ and the least integer speed becomes $13$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($25$): comes from $3(11) - 8 = 25$. That value of $k$ does make $12$ the least speed that sounds the alarm, but the question asks for the greatest such $k$, and $26$ and $27$ also work.\n* Choice C ($28$): comes from $3(12) - 8 = 28$, which treats $x = 12$ as making the two sides equal. The inequality is strict, so $x = 12$ must exceed the boundary rather than sit on it.\n* Choice D ($36$): drops the $-8$ and computes $3(12)$, solving $3x > k$ instead of $3x - 8 > k$.\n\n**Test Day Takeaway:** \"The least integer that works is $n$\" is a two-sided condition: the boundary sits at or below $n$ and strictly above $n - 1$. Write both inequalities, then read off the extreme value of the constant."
+}

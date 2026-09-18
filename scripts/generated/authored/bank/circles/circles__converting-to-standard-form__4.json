@@ -1,0 +1,45 @@
+{
+ "question": "Two circular irrigation zones have the equations listed in the table. Among all points of zone $K$, what is the largest $y$-coordinate?",
+ "questionTable": {
+  "headers": [
+   "Zone",
+   "Equation"
+  ],
+  "rows": [
+   [
+    "$K$",
+    "$x^2 + y^2 + 6x - 16y + 48 = 0$"
+   ],
+   [
+    "$L$",
+    "$x^2 + y^2 - 10x + 2y + 10 = 0$"
+   ]
+  ]
+ },
+ "hint": "Where on a circle is the $y$-coordinate largest?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$33$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the radius 5",
+  "B": "reports the y-coordinate of the center",
+  "D": "adds r^2 = 25 to the center height instead of r = 5"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~35s):** Zone $K$ is centered at $(-3, 8)$ with radius $5$, so its highest point is at $y = 8 + 5 = 13$.\n\n**The Full Solution:**\nStep 1: Group zone $K$'s equation: $(x^2 + 6x) + (y^2 - 16y) = -48$.\nStep 2: Complete both squares: $(x + 3)^2 + (y - 8)^2 = -48 + 9 + 64 = 25$, so the center is $(-3, 8)$ and the radius is $5$.\nStep 3: Every point lies within $5$ units of the center, so the greatest $y$-coordinate is $8 + 5 = 13$. Check: $(-3, 13)$ gives $0 + 25 = 25$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): reports the radius rather than a coordinate on the zone.\n* Choice B ($8$): reports the center's height, which is the middle of the zone, not its top.\n* Choice D ($33$): adds $r^2 = 25$ to the center's height instead of the radius $5$.\n\n**Test Day Takeaway:** The extreme $y$-values on a circle are the center's $y$-coordinate plus and minus the radius."
+}

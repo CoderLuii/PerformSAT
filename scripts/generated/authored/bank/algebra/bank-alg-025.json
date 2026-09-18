@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-025",
+  "question": "The function $C$ is defined by $C(n) = 10n + 11$, where $C(n)$ is the total cost, in dollars, of renting a kayak for $n$ hours. If the total cost of one rental was $\\$71$, for how many hours was the kayak rented?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$7.1$"
+    },
+    {
+      "id": "C",
+      "text": "$8.2$"
+    },
+    {
+      "id": "D",
+      "text": "$60$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "71/10, ignoring the fixed 11 dollars",
+    "C": "(71 + 11)/10, adding the fixed charge instead of subtracting it",
+    "D": "stops at 10n = 60"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Solve for Function Input**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Set the output equal to $71$: $10n + 11 = 71$, so $10n = 60$ and $n = 6$.\n\n**The Full Solution:**\nStep 1: The total cost is the output of $C$, so the condition is $C(n) = 71$, or $10n + 11 = 71$.\nStep 2: Subtract $11$ from both sides: $10n = 60$. Divide by $10$: $n = 6$.\nStep 3: Check: $C(6) = 10(6) + 11 = 71$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($7.1$): divides $71$ by $10$ without first removing the fixed $11$ dollars.\n* Choice C ($8.2$): adds $11$ to $71$ instead of subtracting it, then divides by $10$.\n* Choice D ($60$): stops at $10n = 60$ and reports the right-hand side instead of $n$.\n\n**Test Day Takeaway:** \"The cost was 71\" fixes the OUTPUT; set the rule equal to it and undo the operations in reverse order (subtract the constant, then divide by the rate)."
+}

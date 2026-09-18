@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-163",
+  "question": "In a bookstore display, a straight diagonal strap is fastened across two parallel shelf rails. At the upper rail the strap forms an angle measuring $(4x+10)°$ above the rail and to the right of the strap, and at the lower rail the angle in that same position measures $(6x-20)°$. What is the value of $x$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$19$"
+    },
+    {
+      "id": "C",
+      "text": "$30$"
+    },
+    {
+      "id": "D",
+      "text": "$70$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "treats the corresponding angles as supplementary, solving 10x - 10 = 180",
+    "C": "solves 2x = 30 and reports 2x instead of x",
+    "D": "reports the angle measure 4(15) + 10 = 70 instead of x"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Angles with Parallel Lines and Transversals**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Corresponding angles at parallel rails are equal, so $4x+10=6x-20$ and $x=15$.\n\n**The Full Solution:**\n\nStep 1: Classify the pair. Both angles sit above their rail on the same side of the strap, so they are corresponding angles and are congruent.\n\nStep 2: Set them equal. $4x+10=6x-20$.\n\nStep 3: Solve. $30=2x$, so $x=15$.\n\nCheck: $4(15)+10=70$ and $6(15)-20=70$, the same measure.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($19$): treats the corresponding angles as supplementary, solving $(4x+10)+(6x-20)=180$.\n* Choice C ($30$): solves correctly down to $2x=30$ but reports $2x$ rather than $x$.\n* Choice D ($70$): reports the angle's measure, $70°$, instead of the value of $x$.\n\n**Test Day Takeaway:** Corresponding angles at parallel lines are equal — set the expressions equal, and then answer the variable actually requested."
+}

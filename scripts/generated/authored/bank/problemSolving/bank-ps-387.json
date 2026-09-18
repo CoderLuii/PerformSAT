@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-387",
+  "question": "Of the $80$ plots surveyed in a forest, $46$ contain at least one oak, $38$ contain at least one maple, and $14$ contain at least one of each. If one of these plots is selected at random, what is the probability that the selected plot contains at least one oak or at least one maple?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{8}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{7}{40}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{23}{40}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{7}{8}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "gives the probability that the plot contains neither species",
+    "B": "gives the probability that the plot contains both species",
+    "C": "uses only the $46$ plots containing oak, ignoring the maple-only plots"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** By inclusion-exclusion, $46 + 38 - 14 = 70$ plots contain at least one of the two species, so the probability is $\\frac{70}{80} = \\frac{7}{8}$.\n\n**The Full Solution:**\nStep 1: Adding $46$ and $38$ counts the $14$ plots that contain both species twice, so subtract that overlap once.\nStep 2: The number of plots containing oak or maple is $46 + 38 - 14 = 70$.\nStep 3: The probability is $\\frac{70}{80} = \\frac{7}{8}$. Check: the remaining $80 - 70 = 10$ plots contain neither species, and $\\frac{7}{8} + \\frac{1}{8} = 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{8}$): gives the probability that the plot contains neither species\n* Choice B ($\\frac{7}{40}$): gives the probability that the plot contains both species\n* Choice C ($\\frac{23}{40}$): uses only the $46$ plots containing oak, ignoring the maple-only plots\n\n**Test Day Takeaway:** For an \"or\" question with overlap, add the two counts and subtract the overlap once; adding alone always overcounts."
+}

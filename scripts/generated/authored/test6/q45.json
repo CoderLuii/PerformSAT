@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
-  "passage": "Each of the three surviving panels from the workshop's restored fresco cycle ______ a separate episode in the saint's life, so that a visitor moving slowly along the wall reads the story in sequence from one end of the chapel to the other.",
+  "passage": "Four engrossments of Magna Carta written out in 1215 survive today: two at the British Library and one each at Lincoln and Salisbury cathedrals. Each of the four ______ small differences in wording and letter forms, because the copies were penned by different scribes working from dictation or drafts rather than reproduced from a single master text.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "illustrates"
+      "text": "preserves"
     },
     {
       "id": "B",
-      "text": "are illustrating"
+      "text": "preserve"
     },
     {
       "id": "C",
-      "text": "have illustrated"
+      "text": "are preserving"
     },
     {
       "id": "D",
-      "text": "illustrate"
+      "text": "have preserved"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"illustrates.\" The subject is \"Each,\" which is singular and takes a singular verb, even though the nearby plural \"panels\" can make a plural verb sound right. \"Illustrates\" agrees with \"Each.\" Choices B (\"are illustrating\") and D (\"illustrate\") are plural and so disagree with the singular subject, and choice C (\"have illustrated\") is also plural in form and shifts the action into the present perfect without fixing the agreement problem."
+  "explanation": "**Choice A is correct.** The subject is the singular pronoun \"Each,\" so the verb must be singular: \"Each of the four preserves.\"\n\n**The Full Solution:**\n- \"Each\" is grammatically singular even when followed by \"of the four\" — the prepositional phrase does not transfer its plural number to the subject.\n- Singular subject, singular present-tense verb: \"preserves.\"\n\n**Why the other choices are wrong:**\n- B: \"Preserve\" is plural, agreeing with the nearby \"four\" instead of the true subject \"Each.\"\n- C: \"Are preserving\" is plural as well, with the added oddity of a progressive aspect for a standing condition.\n- D: \"Have preserved\" is plural; only \"has preserved\" could pair with \"Each,\" and that option is not offered."
 }

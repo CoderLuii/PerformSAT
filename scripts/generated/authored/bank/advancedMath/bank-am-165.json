@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-165",
+  "question": "The function $V$ defined by $V(t)=-2(t-6)^2+96$ gives the volume, in liters, of water held in a greywater recycling tank $t$ hours after a rinse cycle begins, for $0\\le t\\le 12$. What is the greatest volume, in liters, the tank holds?",
+  "correctAnswer": "96",
+  "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**The correct answer is $96$.**\n\n**The Fast Way (~10s):** The squared term is subtracted, so $V$ is largest when $(t-6)^2=0$, leaving $V=96$.\n\n**The Full Solution:**\nStep 1: The expression is in vertex form with $a=-2$, $h=6$, and $k=96$.\nStep 2: Since $-2(t-6)^2$ is never positive, $V(t)$ is largest when that term is $0$, which happens at $t=6$.\nStep 3: Then $V(6)=96$ liters. Check: $V(5)=-2+96=94$ and $V(7)=94$, both below $96$ ✓\n\n**Common Mistakes:**\n* $6$: reports the time at which the greatest volume occurs, not the volume.\n* $94$: subtracts the coefficient $2$ from $96$.\n* $98$: adds $2$ to $96$ instead of recognizing that the squared term contributes nothing at the vertex.\n\n**Test Day Takeaway:** Vertex form hands you the extreme value directly: it is $k$, and the sign of $a$ says whether it is a maximum or a minimum."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "bank-am-111",
+  "question": "A rigging chart lists the trim height $d(x)$, in centimeters relative to the set line, of a batten at five positions $x$, in meters, from the proscenium, as shown in the table. The function $e$ is defined by $e(x)=-d(x)$. For what value of $x$ is $e(x)=7$?",
+  "diagram": {
+    "type": "table",
+    "params": {
+      "xHeader": "Position x (m)",
+      "yHeader": "Trim height d(x) (cm)",
+      "rows": [
+        [
+          "0",
+          "9"
+        ],
+        [
+          "2",
+          "5"
+        ],
+        [
+          "4",
+          "1"
+        ],
+        [
+          "6",
+          "-3"
+        ],
+        [
+          "8",
+          "-7"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "8",
+  "explanation": "**SAT Pattern: Function Transformation**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~20s):** $e(x)=7$ means $-d(x)=7$, so $d(x)=-7$, which the table gives at $x=8$.\n\n**The Full Solution:**\nStep 1: The rule $e(x)=-d(x)$ reflects every trim height across the horizontal axis.\nStep 2: An output of 7 for $e$ therefore requires $d(x)=-7$ centimeters.\nStep 3: The table lists $-7$ in the row $x=8$, so $x=8$ meters. Check: $e(8)=-(-7)=7$ ✓\n\n**Common Mistakes:** Looking for the trim height $7$ itself finds no row. Reading the row where $d(x)=9$ and negating gives $x=0$, whose $e$-value is $-9$. Negating the input instead of the output gives $x=-8$, which is not in the table.\n\n**Test Day Takeaway:** A leading negative sign reflects outputs, so search the table for the opposite of the value you want."
+}

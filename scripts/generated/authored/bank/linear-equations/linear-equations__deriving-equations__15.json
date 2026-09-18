@@ -1,0 +1,46 @@
+{
+  "id": 15,
+  "question": "For the linear function $f$, the table records three inputs and their corresponding outputs. If $f$ is defined by $f(x) = mx + b$, where $m$ and $b$ are constants, which equation defines $f$?",
+  "diagram": {
+    "type": "table",
+    "params": {
+      "rows": [
+        [
+          "−6",
+          20
+        ],
+        [
+          "−2",
+          14
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "xHeader": "x",
+      "yHeader": "f(x)"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(x) = -6x + 2$"
+    },
+    {
+      "id": "B",
+      "text": "$f(x) = -\\frac{3}{2}x + 11$"
+    },
+    {
+      "id": "C",
+      "text": "$f(x) = -\\frac{3}{2}x + 14$"
+    },
+    {
+      "id": "D",
+      "text": "$f(x) = \\frac{3}{2}x + 11$"
+    }
+  ],
+  "correctAnswer": "B",
+  "hint": "The inputs are unevenly spaced, so pick a pair and divide — do not read the drop between rows as the rate.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~35s):** $m = \\frac{14-20}{-2-(-6)} = -\\frac{3}{2}$, and $14 = -\\frac{3}{2}(-2)+b$ gives $b = 11$ — choice B.\n\n**The Full Solution:**\nStep 1: Rate of change from the first two rows: $m = \\frac{14-20}{-2-(-6)} = \\frac{-6}{4} = -\\frac{3}{2}$.\nStep 2: Substitute $(-2, 14)$: $14 = -\\frac{3}{2}(-2)+b = 3+b$, so $b = 11$.\nStep 3: The equation is $f(x) = -\\frac{3}{2}x + 11$. Check the last row: $-\\frac{3}{2}(6)+11 = -9+11 = 2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($f(x) = -6x + 2$): uses the $-6$ change in output between the first two rows as the rate of change; anchoring that at $(-2, 14)$ gives $2$ as the constant.\n* Choice C ($f(x) = -\\frac{3}{2}x + 14$): has the correct rate of change but takes $14$, the output at $x = -2$, as the value at $x = 0$.\n* Choice D ($f(x) = \\frac{3}{2}x + 11$): drops the negative sign on the rate of change even though the outputs fall as the inputs rise.\n\n**Test Day Takeaway:** Unevenly spaced inputs are the trap: the difference between consecutive outputs is a rate only after you divide by the difference between the inputs."
+}

@@ -6,6 +6,8 @@
 
 import { getWeakSkills, getSkillTrend } from './skillService';
 import { getSkillById, getSkillsForModule, skillTaxonomy } from '../data/skillTaxonomy';
+import { getCBSkillLabel } from '../data/questions/cbSkillTaxonomy';
+import { formatPatternLabel } from './selectors/missedPatternLabel';
 
 /**
  * A stored "persistent confusion" is only worth surfacing if it actually
@@ -200,24 +202,28 @@ export const shouldOfferProactiveHint = (skillProgress, questionSkills) => {
 
     // Offer hint if low confidence AND low mastery
     if (skillData.confidenceLevel === 'low' && skillData.mastery < 50) {
+      const displayName = skill?.name || getCBSkillLabel(skillId) || formatPatternLabel(skillId);
       return {
         offer: true,
         skillId,
-        skillName: skill?.name || skillId,
+        skillName: displayName || skillId,
         reason: 'low-confidence',
-        message: `This question involves ${skill?.name || 'a concept'} you're still learning. Would you like a hint?`
+        message: displayName
+          ? `This question involves ${displayName} — a skill you're still learning. Would you like a hint?`
+          : `This question involves a concept you're still learning. Would you like a hint?`
       };
     }
 
     // Offer hint if skill is declining
     const trend = getSkillTrend(skillData);
     if (trend === 'declining' && skillData.mastery < 70) {
+      const displayName = skill?.name || getCBSkillLabel(skillId) || formatPatternLabel(skillId);
       return {
         offer: true,
         skillId,
-        skillName: skill?.name || skillId,
+        skillName: displayName || skillId,
         reason: 'declining',
-        message: `I noticed you've been having some trouble with ${skill?.name || 'this concept'} lately. Want me to give you a hint?`
+        message: `I noticed you've been having some trouble with ${displayName || 'this concept'} lately. Want me to give you a hint?`
       };
     }
   }
@@ -487,7 +493,7 @@ const findRecurringTrapForSkills = (practiceTestResults, skillIds) => {
   return topTrap ? { trapType: topTrap[0], count: topTrap[1] } : null;
 };
 
-export default {
+const proactiveRecommendationService = {
   generateProactiveRecommendation,
   shouldOfferProactiveHint,
   getRelatedSkillSuggestions,
@@ -495,3 +501,5 @@ export default {
   buildSkillContextForAI,
   generateCrossSessionRecommendation
 };
+
+export default proactiveRecommendationService;

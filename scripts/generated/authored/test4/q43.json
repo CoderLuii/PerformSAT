@@ -5,30 +5,30 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "inferences",
+  "module": 2,
+  "passage": "In the 1920s the Russian botanist Nikolai Vavilov led collecting expeditions on five continents, gathering seeds of wheat, barley, and dozens of other crops. He found their variation strikingly uneven: for each crop, a few regions held an extravagant profusion of distinct local forms, while whole continents elsewhere grew only a handful. Two principles, Vavilov reasoned, lay behind the pattern. Varieties accumulate where a crop is grown longest, as centuries of cultivation, mutation, and selection add form after form; and when farmers carry a crop into new territory, they take only a narrow sample of what exists. If both principles hold, then for any crop, the region showing the greatest concentration of distinct varieties is likely to be ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "the plague was followed by a lasting decline in the silver production that the lead record tracks."
+      "text": "the region where the crop has been cultivated longest, and so the strongest candidate for the place where it was first domesticated."
     },
     {
       "id": "B",
-      "text": "lead simply stopped drifting to the Arctic and settling into the ice during the second century."
+      "text": "the region whose farmers imported the most varieties from the surrounding territories over the centuries."
     },
     {
       "id": "C",
-      "text": "Arctic snowfall increased so sharply during the plague that it buried the lead far more deeply than before."
+      "text": "the region with the climate best suited to the crop's wild ancestors, wherever domestication itself took place."
     },
     {
       "id": "D",
-      "text": "silver smelting across Europe reached its highest recorded level in the years during and just after the plague."
+      "text": "the region where the crop's yield per acre is highest under traditional farming methods."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. Because the lead in the ice tracks the scale of silver smelting, a sharp and lasting fall in the lead record after the plague most likely reflects a lasting decline in that smelting. Choice B contradicts the premise that lead keeps reaching the ice; choice C invents a burial effect the passage does not mention; and choice D claims a peak during the plague, the opposite of the dip described.",
-  "passage": "Smelting silver ore releases lead into the air, and some of that lead drifts to the poles and settles into the ice, where it is buried under each year's snowfall. By drilling cores from Arctic ice and measuring the lead in each annual layer, scientists can estimate how much silver was being smelted across Europe in a given year. The lead record rises through the centuries of Roman expansion, falls sharply during a well-documented plague in the second century, and does not return to its earlier levels for generations. Since the amount of lead in the ice reflects the scale of silver production, the dip in the record most likely indicates that ______",
+  "explanation": "**Choice A is correct.** The two principles jointly point one way: diversity accumulates with time in place, and migration carries diversity away in narrow samples. Peak diversity therefore marks the longest cultivation — and the longest cultivation is where domestication most plausibly began.\n\n**The Full Solution:**\n- Principle one makes diversity a clock: the longer a crop grows in a region, the more forms accumulate there.\n- Principle two rules out the rival reading: newly arrived populations are impoverished samples, so a diversity peak cannot mark a recent import.\n- The region of greatest diversity is thus the oldest home of the crop, and the best candidate for its origin — choice A, and nothing more.\n\n**Why the other choices are wrong:**\n- B: It inverts principle two — importation brings narrow samples, not profusion.\n- C: The principles concern time under cultivation, not climatic suitability; the conclusion cannot suddenly be about climate.\n- D: Yield appears nowhere in the premises and has no logical link to varietal counts.",
   "_meta": {
-    "anchor": "Arctic ice-core lead as a proxy for Roman silver production"
-  },
-  "module": 2
+    "anchor": "Nikolai Vavilov — centers of crop diversity as centers of origin; hard inference"
+  }
 }

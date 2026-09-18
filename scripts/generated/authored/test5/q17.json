@@ -1,34 +1,34 @@
 {
-  "id": 517,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "The astronomer al-Battani worked in northern Mesopotamia around the year 900, refining the measured length of the solar year to within a few minutes of the modern value ______ his tables of planetary motion were still being consulted by European astronomers more than six centuries later.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "value;"
-    },
-    {
-      "id": "B",
-      "text": "value,"
-    },
-    {
-      "id": "C",
-      "text": "value"
-    },
-    {
-      "id": "D",
-      "text": "value:"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"value;\". The blank falls between two complete independent clauses—one about al-Battani refining the length of the solar year, the other about his tables being consulted six centuries later—and a semicolon is the way Standard English joins two such clauses without a coordinating conjunction. A comma alone (choice B) creates a comma splice. No punctuation at all (choice C) fuses the two clauses into a run-on. A colon (choice D) would signal that the second clause explains or specifies the first, but it simply adds a further fact, so the semicolon is the right boundary.",
-  "_meta": {
-    "anchor": "al-Battani — medieval astronomer; solar-year measurement; influence on European astronomy"
+ "id": 517,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "The painter Rachel Ruysch specialized in flower pieces of almost scientific exactness, rendering each petal, beetle, and dewdrop with its own focused ______ collectors across Europe paid some of the highest prices of the era for her panels, and she continued painting them into her eighties.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "clarity;"
+  },
+  {
+   "id": "B",
+   "text": "clarity,"
+  },
+  {
+   "id": "C",
+   "text": "clarity"
+  },
+  {
+   "id": "D",
+   "text": "clarity:"
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Two independent clauses meet at the blank, and a semicolon is the standard way to join them without a coordinating conjunction.\n\n**The Full Solution:**\n- Before the blank stands a complete sentence: \"The painter Rachel Ruysch specialized in flower pieces... rendering each petal, beetle, and dewdrop with its own focused clarity.\"\n- After the blank stands another complete sentence: \"collectors across Europe paid some of the highest prices of the era for her panels, and she continued painting them into her eighties.\"\n- With no conjunction between them, the two independent clauses require a semicolon.\n\n**Why the other choices are wrong:**\n- B: A comma alone between two independent clauses produces a comma splice.\n- C: No punctuation at all fuses the two clauses into a run-on.\n- D: A colon signals that what follows explains or specifies what precedes; the second clause reports the market's response, a related but new statement, not an elaboration of the first clause's content.",
+ "_meta": {
+  "anchor": "Rachel Ruysch flower still lifes; semicolon between independent clauses"
+ }
 }

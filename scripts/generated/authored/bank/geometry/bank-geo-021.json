@@ -1,0 +1,60 @@
+{
+ "id": "bank-geo-021",
+ "question": "From a mezzanine rail in a university reading room, the angle of depression to a study carrel on the floor below is $28°$, as drawn, with distances in meters. To the nearest meter, how far is the carrel from the rail itself?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15.046,
+     0
+    ],
+    [
+     0,
+     8
+    ]
+   ],
+   "rightAngleVertex": 0,
+   "labels": [
+    "",
+    "28°",
+    ""
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "8"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$17$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies by the tangent instead of dividing, giving 8 tan 28 about 4.3",
+  "B": "reports the 8-meter vertical drop",
+  "C": "gives the horizontal distance, 8 / tan 28 about 15.0"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Angle of Depression**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** The $8$ m drop is opposite the $28°$ angle, so the straight-line distance is $\\frac{8}{\\sin 28°}\\approx17$ meters.\n\n**The Full Solution:**\n\nStep 1: Transfer the angle. The angle of depression from the rail equals the angle of elevation at the carrel, so the marked $28°$ sits at the carrel.\n\nStep 2: Choose the ratio. The $8$ m vertical drop is opposite that angle and the requested distance is the hypotenuse, so $\\sin 28°=\\frac{8}{d}$.\n\nStep 3: Solve. $d=\\frac{8}{\\sin 28°}=\\frac{8}{0.4695}\\approx17.0$, so $d\\approx17$ meters.\n\nCheck: the horizontal leg is $\\frac{8}{\\tan 28°}\\approx15.0$, and $15.0^{2}+8^{2}\\approx289\\approx17^{2}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($4$): multiplies by the tangent instead of dividing, giving $8\\tan 28°\\approx4.3$.\n* Choice B ($8$): reports the vertical drop already marked in the figure.\n* Choice C ($15$): gives the horizontal distance $\\frac{8}{\\tan 28°}\\approx15.0$ from the carrel to the point directly below the rail.\n\n**Test Day Takeaway:** An angle of depression from a high point equals the angle of elevation from the low point; then match the requested side to sine, cosine, or tangent."
+}

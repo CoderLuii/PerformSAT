@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-182",
+ "question": "A solar array's support rail lies on $y = \\frac{4}{5}x + 6$, and a brace perpendicular to the rail passes through $(8, 5)$. At what $x$-value does the brace's line cross the $x$-axis?",
+ "correctAnswer": "12",
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**The correct answer is $12$.**\n\n**The Fast Way (~30s):** The brace is $y = -\\frac{5}{4}x + 15$, which meets the $x$-axis at $x = 12$.\n\n**The Full Solution:**\nStep 1: The rail has slope $\\frac{4}{5}$, so the brace has slope $-\\frac{5}{4}$.\nStep 2: Substituting $(8, 5)$ into $y = -\\frac{5}{4}x + b$ gives $5 = -10 + b$, so $b = 15$.\nStep 3: Setting $y = 0$ gives $\\frac{5}{4}x = 15$ and $x = 12$. Check: $-\\frac{5}{4}(12) + 15 = 0$.\n\n**Common Mistakes:**\n* Reporting $15$ gives the brace's $y$-intercept instead of its $x$-intercept.\n* Computing $b$ as $y + mx = 5 - 10 = -5$ produces an $x$-intercept of $-4$.\n* Keeping the rail's slope $\\frac{4}{5}$ gives $b = -\\frac{7}{5}$ and an $x$-intercept of $\\frac{7}{4}$.\n\n**Test Day Takeaway:** An $x$-intercept costs one extra line of work after the equation is built; do not stop at $b$."
+}

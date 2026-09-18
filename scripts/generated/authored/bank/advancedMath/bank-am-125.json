@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-125",
+ "question": "A shop's daily sales of bicycle inner tubes above its weekly baseline are modeled by $y=x^2-8x+c$, where $x$ is the day number and $c$ is a constant. The horizontal line $y=12$ touches this graph at exactly one point. What is the value of $c$?",
+ "correctAnswer": "28",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**The correct answer is $28$.**\n\n**The Fast Way (~20s):** Setting $x^2-8x+c=12$ gives $x^2-8x+(c-12)=0$; one solution means the discriminant $64-4(c-12)$ is $0$, so $c=28$.\n\n**The Full Solution:**\nStep 1: Set the two expressions equal: $x^2-8x+c=12$, so $x^2-8x+(c-12)=0$.\nStep 2: Exactly one intersection means the discriminant is $0$: $(-8)^2-4(1)(c-12)=0$, or $64-4(c-12)=0$.\nStep 3: Solve: $c-12=16$, so $c=28$. Check: $x^2-8x+28=12$ becomes $x^2-8x+16=(x-4)^2=0$, a single solution $x=4$ ✓\n\n**Common Mistakes:**\n* $16$: drops the $-12$ and solves $64-4c=0$.\n* $12$: assumes $c$ equals the height of the horizontal line.\n* $-4$: solves $c-12=-16$, using the wrong sign after dividing by $-4$.\n\n**Test Day Takeaway:** One shared point means discriminant zero — subtract the line from the curve first, then set $b^2-4ac=0$."
+}

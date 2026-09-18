@@ -1,31 +1,31 @@
 {
-  "id": 734,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "For most of the fossil record, plants appear only as flattened impressions in rock, their soft tissues long gone. A rare set of deposits in Scotland, however, preserves an entire early ecosystem in three dimensions, its plants turned to stone so quickly that individual cells remain visible. *Because the silica-rich water of ancient hot springs flooded the plants and hardened around them before they could decay, paleobotanists can slice the fossils as thinly as living tissue and study cell walls, reproductive structures, and even the fungi that once invaded them.* The site has become a touchstone for understanding how the earliest land plants were built more than 400 million years ago.",
-  "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It raises a doubt about whether the Scottish fossils are really as well preserved as the earlier sentences had claimed."
-    },
-    {
-      "id": "B",
-      "text": "It introduces a competing fossil site that is said to preserve ancient plant tissues in even finer microscopic detail."
-    },
-    {
-      "id": "C",
-      "text": "It explains the conditions responsible for the exceptional preservation just described and specifies what that preservation allows researchers to do."
-    },
-    {
-      "id": "D",
-      "text": "It briefly summarizes the whole evolutionary history of land plants across the course of more than four hundred million years of geological time."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The sentence before it notes that the Scottish plants were preserved in three dimensions down to the cell; the underlined sentence then explains why (silica-rich spring water hardened around them before decay) and what that makes possible (slicing the fossils thinly to study cell walls and reproductive structures). Choice A claims it casts doubt, but it reinforces the preservation point. Choice B invents a rival site, and Choice D describes a sweeping evolutionary summary the sentence does not provide."
+ "id": 734,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "Medieval European manuscripts are usually studied for the texts they carry, but their pages are themselves artifacts of animal husbandry: before paper spread, books were written on parchment prepared from the skins of calves, sheep, and goats. __Because finished parchment preserves fragments of the source animal's proteins and DNA for centuries, researchers can now determine the species — and sometimes the sex and regional herd — behind each page, using nothing more invasive than the crumbs lifted by rubbing a page with an ordinary eraser.__ Early results are beginning to reveal how much livestock the production of a single large book once demanded, tying monastic libraries to the farm economies around them.",
+ "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It raises a doubt about whether parchment pages can survive long enough to be studied in the way the passage describes."
+  },
+  {
+   "id": "B",
+   "text": "It introduces a rival method of studying manuscripts that is said to yield more detail than the one the passage began with."
+  },
+  {
+   "id": "C",
+   "text": "It explains why the pages can be analyzed biologically and specifies what such analysis allows researchers to determine."
+  },
+  {
+   "id": "D",
+   "text": "It summarizes the whole history of European bookmaking from the age of parchment through the spread of paper."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The underlined sentence does two jobs: its \"Because\" clause explains what makes biological analysis possible (parchment preserves proteins and DNA), and its main clause specifies the yield — species, sometimes sex and herd, from an eraser's crumbs.\n\n**The Full Solution:**\n- The preceding sentence establishes that pages are animal products; the underlined sentence explains the consequence — biological traces survive in them for centuries.\n- It then states what researchers can determine from those traces and how gently the sampling works.\n- The following sentence builds on exactly this capability (\"Early results...\"), confirming the underlined sentence's role as the passage's enabling explanation.\n\n**Why the other choices are wrong:**\n- A: The sentence asserts that the biological material survives for centuries — the opposite of raising a doubt about survival.\n- B: No competing method appears; the analysis extends the study of manuscripts rather than rivaling it.\n- D: The sentence concerns a modern technique, not a survey of bookmaking history."
 }

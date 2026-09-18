@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-013",
+  "question": "A club printed a total of $140$ programs for an event. Each color program cost $\\$0.60$ to print and each black-and-white program cost $\\$0.25$ to print, for a total printing cost of $\\$56.00$. If $c$ is the number of color programs printed, which equation represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.60c + 0.25c = 56$"
+    },
+    {
+      "id": "B",
+      "text": "$0.60(140 - c) + 0.25c = 56$"
+    },
+    {
+      "id": "C",
+      "text": "$0.60c + 0.25(140 - c) = 56$"
+    },
+    {
+      "id": "D",
+      "text": "$0.60c + 0.25(140) = 56$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses c for both program types",
+    "B": "attaches the color price to the black-and-white count",
+    "D": "charges all 140 programs at the black-and-white price in addition to the color ones"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Word Problem to Equation Setup**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Color programs: $c$ at $0.60$ each. Black-and-white programs: the remaining $140 - c$ at $0.25$ each. Total cost: $0.60c + 0.25(140 - c) = 56$.\n\n**The Full Solution:**\nStep 1: Only one variable is defined, so express both counts with it: $c$ color programs and $140 - c$ black-and-white programs, since the two counts sum to $140$.\nStep 2: Cost is price times count for each type: $0.60c$ for color and $0.25(140 - c)$ for black-and-white. Their sum is the total, $56$.\nStep 3: Check that the equation is solvable with a sensible answer: $0.60c + 35 - 0.25c = 56 \\Rightarrow 0.35c = 21 \\Rightarrow c = 60$, so $60$ color and $80$ black-and-white programs cost $36 + 20 = 56$ dollars. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.60c + 0.25c = 56$): uses $c$ for both counts, ignoring that the black-and-white count is $140 - c$.\n* Choice B ($0.60(140 - c) + 0.25c = 56$): pairs the color price with the black-and-white count, reversing the definition of $c$.\n* Choice D ($0.60c + 0.25(140) = 56$): charges all $140$ programs at the black-and-white price and then adds the color programs again.\n\n**Test Day Takeaway:** When a total count is given and only one variable is defined, the other count is \"total minus the variable\"; write both counts before multiplying by prices."
+}

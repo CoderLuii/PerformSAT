@@ -1,0 +1,71 @@
+{
+  "id": "bank-ps-134",
+  "question": "The scatterplot shows the number of minutes $x$ each of $11$ customers spent in a store and the amount $y$, in dollars, each spent, with the line of best fit $\\hat{y} = 0.4x + 9$. For what value of $x$ does the line of best fit predict an amount spent of $\\$25$?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          5,
+          12
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          20,
+          18
+        ],
+        [
+          25,
+          17
+        ],
+        [
+          30,
+          22
+        ],
+        [
+          35,
+          24
+        ],
+        [
+          40,
+          23
+        ],
+        [
+          45,
+          28
+        ],
+        [
+          50,
+          30
+        ],
+        [
+          55,
+          32
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 60,
+      "yMin": 0,
+      "yMax": 40,
+      "xGridStep": 5,
+      "yGridStep": 5,
+      "xLabelStep": 10,
+      "yLabelStep": 10,
+      "xLabel": "Minutes in store",
+      "yLabel": "Amount spent (dollars)",
+      "bestFitLine": {
+        "slope": 0.4,
+        "intercept": 9
+      }
+    }
+  },
+  "correctAnswer": "40",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**The correct answer is $40$.**\n\n**The Fast Way (~15s):** Set $\\hat{y} = 25$: $0.4x + 9 = 25$, so $0.4x = 16$ and $x = 40$.\n\n**The Full Solution:**\nStep 1: The output is given, so solve the model backward. Set $0.4x + 9 = 25$.\nStep 2: Subtract $9$ from both sides: $0.4x = 16$.\nStep 3: Divide by $0.4$: $x = \\frac{16}{0.4} = 40$ minutes. Check: $0.4(40) + 9 = 16 + 9 = 25$. $\\checkmark$ On the plot the line passes near $(40, 25)$, with the data point $(40, 23)$ just below. $\\checkmark$\n\n**Common Mistakes:** Substituting $25$ for $x$ instead of $y$, which gives $\\hat{y} = 19$; dividing by $0.4$ before subtracting $9$, which gives $62.5 - 9 = 53.5$; multiplying $16$ by $0.4$ instead of dividing, which gives $6.4$.\n\n**Test Day Takeaway:** When the predicted value is given, undo the equation in reverse order: subtract the intercept, then divide by the slope."
+}

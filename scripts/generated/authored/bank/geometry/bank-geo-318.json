@@ -1,0 +1,60 @@
+{
+ "id": "bank-geo-318",
+ "question": "Right triangle $DEF$ has a right angle at $E$. If $DE=5$ and $DF=13$, what is the length of $\\overline{EF}$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     12
+    ]
+   ],
+   "labels": [
+    "D",
+    "E",
+    "F"
+   ],
+   "sideLabels": [
+    "5",
+    "",
+    "13"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$144$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the given lengths",
+  "C": "adds the given lengths",
+  "D": "omits the square root"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Right Triangle Pythagorean**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** The right angle at $E$ makes $\\overline{DF}=13$ the hypotenuse, and $5$, $12$, $13$ is a triple, so $EF=12$.\n\n**The Full Solution:**\nStep 1: The hypotenuse lies opposite the right angle, so $\\overline{DF}$ is the hypotenuse and $\\overline{DE}$ and $\\overline{EF}$ are the legs.\nStep 2: $5^2+EF^2=13^2$, so $EF^2=169-25=144$.\nStep 3: $EF=\\sqrt{144}=12$.\n\nCheck: $5^2+12^2=25+144=169=13^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): subtracted the given lengths, $13-5$, rather than subtracting their squares.\n* Choice C ($18$): added the given lengths; a leg cannot exceed the hypotenuse.\n* Choice D ($144$): stopped at $EF^2$ without taking the square root.\n\n**Test Day Takeaway:** Locate the right angle first. The side that does not touch it is the hypotenuse, and only the hypotenuse sits alone on one side of $a^2+b^2=c^2$."
+}

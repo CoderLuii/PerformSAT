@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A dialysis unit's water use per treatment, in liters, is modeled by $W(s) = 0.5(s - 40)^2 + 12$, where $s$ is the flow setting on the machine. Which statement correctly describes the water use predicted by this model?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The minimum water use is $12$ liters, at a flow setting of $40$."
+    },
+    {
+      "id": "B",
+      "text": "The minimum water use is $40$ liters, at a flow setting of $12$."
+    },
+    {
+      "id": "C",
+      "text": "The maximum water use is $12$ liters, at a flow setting of $40$."
+    },
+    {
+      "id": "D",
+      "text": "The minimum water use is $12$ liters, at a flow setting of $-40$."
+    }
+  ],
+  "distractorNotes": {
+    "B": "swaps the roles of 40 and 12, reading the setting as the water use",
+    "C": "calls the turning point a maximum, but the positive coefficient 0.5 opens the curve upward",
+    "D": "reads the setting as -40; the expression (s - 40)^2 is zero at s = +40"
+  },
+  "correctAnswer": "A",
+  "hint": "A squared quantity is never negative, so ask when it is zero.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** $0.5(s - 40)^2$ is never negative and equals $0$ at $s = 40$, so the least water use is $12$ liters there.\n\n**The Full Solution:**\nStep 1: Look at the squared term. $(s - 40)^2 \\ge 0$ for every setting, and $0.5$ is positive, so $0.5(s - 40)^2 \\ge 0$.\nStep 2: Find where it vanishes. The squared term is $0$ only at $s = 40$, and there $W(40) = 0 + 12 = 12$ liters.\nStep 3: Confirm it is a minimum. Any other setting adds a positive amount to $12$; for example $W(42) = 0.5(4) + 12 = 14$ liters. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (minimum $40$ at setting $12$): swaps the two numbers. In $a(s - h)^2 + k$, $h$ is the setting and $k$ is the output.\n* Choice C (maximum $12$ at setting $40$): calls the turning point a maximum. A positive coefficient opens the curve upward, so the turning point is the lowest value.\n* Choice D (minimum $12$ at setting $-40$): reads the sign inside the parentheses literally. $(s - 40)^2$ is zero at $s = 40$.\n\n**Test Day Takeaway:** In $a(x - h)^2 + k$, the turning point is at $x = h$ with value $k$, and the sign of $a$ decides whether $k$ is a minimum or a maximum."
+}

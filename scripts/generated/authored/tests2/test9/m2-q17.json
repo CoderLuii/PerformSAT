@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "During one season a goalkeeper saved $80\\%$ of the shots she faced, and $24$ of the shots she faced resulted in goals. How many shots did she face during the season?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$30$"
+  },
+  {
+   "id": "C",
+   "text": "$96$"
+  },
+  {
+   "id": "D",
+   "text": "$120$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "inverts the ratio of saves to goals, computing 24 times 20/80 = 6",
+  "B": "divides by 0.80, the save rate, instead of by the 0.20 that were not saved",
+  "C": "finds the number of shots saved, 24 times 80/20 = 96, rather than the total faced"
+ },
+ "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice D is correct.** If $80\\%$ were saved, the $24$ goals are the other $20\\%$. So $0.20s = 24$ and $s = \\frac{24}{0.20} = 120$.\n\n**The Fast Way (~20s):** $24$ is one fifth of the shots, so the total is $24 \\cdot 5 = 120$.\n\n**The Full Solution:**\nStep 1: Saves and goals account for all shots, so goals make up $100\\% - 80\\% = 20\\%$ of the shots faced.\nStep 2: Let $s$ be the number of shots faced. Then $0.20s = 24$, so $s = \\frac{24}{0.20} = 120$.\nStep 3: Check with the true total: $80\\%$ of $120$ is $96$ saves, and $120 - 96 = 24$ goals, matching the season figure.\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): inverts the relationship between saves and goals, computing $24 \\cdot \\frac{20}{80} = 6$ instead of scaling up.\n* Choice B ($30$): divides $24$ by $0.80$, applying the save rate to the goals rather than the $20\\%$ that the goals actually represent.\n* Choice C ($96$): computes $24 \\cdot \\frac{80}{20} = 96$, the number of shots saved, and stops before adding the $24$ goals.\n\n**Test Day Takeaway:** Percent-complement items give you one percent and a count belonging to the other. Convert to the percent that matches the count, then divide."
+}

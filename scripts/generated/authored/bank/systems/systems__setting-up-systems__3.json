@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "At a botanical garden, the number of orchids is $14$ more than $3$ times the number of ferns, and there are $178$ orchids and ferns altogether. Which system of equations, where $f$ is the number of ferns and $r$ is the number of orchids, represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$r = 3f + 14$ and $r + f = 178$"
+    },
+    {
+      "id": "B",
+      "text": "$f = 3r + 14$ and $r + f = 178$"
+    },
+    {
+      "id": "C",
+      "text": "$r = 3(f + 14)$ and $r + f = 178$"
+    },
+    {
+      "id": "D",
+      "text": "$r = 3f - 14$ and $r + f = 178$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reverses the comparison, making the ferns $14$ more than $3$ times the orchids.",
+    "C": "multiplies after adding, $3(f + 14)$, which triples the $14$ as well.",
+    "D": "subtracts $14$ instead of adding it, making the orchids fewer than $3$ times the ferns."
+  },
+  "correctAnswer": "A",
+  "hint": "Translate \"more than\" one phrase at a time, and check which quantity is being multiplied.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** \"Orchids is $14$ more than $3$ times ferns\" is $r = 3f + 14$, and the total gives $r + f = 178$.\n\n**The Full Solution:**\nStep 1: The phrase \"$3$ times the number of ferns\" is $3f$, and \"$14$ more than\" that quantity adds $14$, giving $r = 3f + 14$.\nStep 2: The two kinds of plants together number $178$, so $r + f = 178$.\nStep 3: These two equations form the system. Check: $f = 41$ and $r = 137$ satisfy both, since $3(41) + 14 = 137$ and $137 + 41 = 178$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: reverses the comparison, making the ferns $14$ more than $3$ times the orchids.\n* Choice C: multiplies after adding, $3(f + 14)$, which triples the $14$ as well.\n* Choice D: subtracts $14$ instead of adding it, making the orchids fewer than $3$ times the ferns.\n\n**Test Day Takeaway:** Translate a comparison left to right, and keep the added constant outside the multiplication unless the sentence groups it inside."
+}

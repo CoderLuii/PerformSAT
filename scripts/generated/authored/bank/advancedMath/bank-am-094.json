@@ -1,0 +1,23 @@
+{
+ "id": "bank-am-094",
+ "question": "A garden center models weekly sales of bird feeders above its seasonal baseline with the quadratic function $g$ whose graph is shown, and the marked point lies on that graph. If $g(x)=ax^2+bx+c$, what is the value of $c$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~30s):** The vertex $(-2,6)$ and the marked point $(2,-2)$ give $g(x)=-\\frac{1}{2}(x+2)^2+6$, whose constant term is $g(0)=4$.\n\n**The Full Solution:**\nStep 1: Read the vertex $(-2,6)$, so $g(x)=a(x+2)^2+6$.\nStep 2: Use the marked point $(2,-2)$: $-2=a(4)^2+6$, so $16a=-8$ and $a=-\\frac{1}{2}$.\nStep 3: The constant term of $ax^2+bx+c$ is $g(0)=-\\frac{1}{2}(2)^2+6=-2+6=4$. Check: expanding gives $g(x)=-\\frac{1}{2}x^2-2x+4$, so $c=4$ ✓\n\n**Common Mistakes:**\n* $6$: reports the vertex's $y$-coordinate, which is $g(-2)$, not $g(0)$.\n* $8$: expands $-\\frac{1}{2}(x+2)^2$ but adds the $2$ instead of subtracting it.\n* $-2$: reports the marked point's $y$-coordinate.\n\n**Test Day Takeaway:** In $ax^2+bx+c$ the constant $c$ is always the output at $x=0$ — evaluate rather than expand when only $c$ is wanted.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    -2,
+    6
+   ],
+   "a": -0.5,
+   "showVertex": true,
+   "showPoints": [
+    [
+     2,
+     -2
+    ]
+   ]
+  }
+ }
+}

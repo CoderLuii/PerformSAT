@@ -1,0 +1,51 @@
+{
+ "id": 21,
+ "question": "A single dose gives a plasma concentration, in milligrams per liter, of $c(t) = -3t^2 + 30t$ at $t$ hours, as graphed. The dose treats an infection only while that concentration stays at or above $48$ milligrams per liter. For how many minutes does it treat the infection?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 5,
+    "k": 75
+   },
+   "a": -3,
+   "xRange": [
+    0,
+    10
+   ],
+   "yRange": [
+    0,
+    80
+   ],
+   "xTickInterval": 1,
+   "yTickInterval": 25,
+   "gridInterval": 5,
+   "showVertex": false
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$120$"
+  },
+  {
+   "id": "B",
+   "text": "$360$"
+  },
+  {
+   "id": "C",
+   "text": "$480$"
+  },
+  {
+   "id": "D",
+   "text": "$600$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "converts only t = 2, the time the concentration first reaches 48, giving 120 minutes",
+  "C": "converts t = 8, the later time the concentration equals 48, instead of the length of the interval",
+  "D": "uses the full 10 hours during which the concentration is positive, giving 600 minutes"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice B is correct.**\n\n**The Fast Way (~50s):** Solve $-3t^2 + 30t \\ge 48$: dividing by $-3$ flips it to $t^2 - 10t + 16 \\le 0$, or $(t - 2)(t - 8) \\le 0$, so $2 \\le t \\le 8$ — six hours, or $360$ minutes.\n\n**The Full Solution:**\nStep 1: The condition is $-3t^2 + 30t \\ge 48$. Move everything to one side: $-3t^2 + 30t - 48 \\ge 0$, and divide by $-3$, reversing the inequality: $t^2 - 10t + 16 \\le 0$.\nStep 2: Factor: $(t - 2)(t - 8) \\le 0$. A product of two factors is negative or zero only between the roots, so $2 \\le t \\le 8$ — exactly the stretch where the graph sits at or above the $48$ level.\nStep 3: The interval lasts $8 - 2 = 6$ hours, which is $6(60) = 360$ minutes. Check the endpoints and the middle: $c(2) = -12 + 60 = 48$, $c(8) = -192 + 240 = 48$, and $c(5) = -75 + 150 = 75 \\ge 48$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($120$): converts $t = 2$, the moment the drug first becomes effective. That is when the window opens, not how long it lasts.\n* Choice C ($480$): converts $t = 8$, the moment the window closes. Subtracting the two crossing times is the step that turns endpoints into a duration.\n* Choice D ($600$): uses all $10$ hours the concentration is above zero, ignoring the $48$ milligrams-per-liter threshold entirely.\n\n**Test Day Takeaway:** A \"how long\" question wants the DIFFERENCE of the two crossing times, not either crossing time — and when you divide an inequality by a negative number, the sign flips."
+}

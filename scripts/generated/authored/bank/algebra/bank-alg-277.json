@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-277",
+ "question": "A kiln's power draw, in kilowatts, at airflow setting $x$ follows $f(x) = 5(x - 6)^2 + k$, and the constant term of $f$ in standard form equals $187$. What is the value of the constant $k$?",
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~20s):** The standard-form constant is $5(6)^2 + k = 180 + k$, and $180 + k = 187$ gives $k = 7$.\n\n**The Full Solution:**\nStep 1: Expand: $5(x - 6)^2 + k = 5x^2 - 60x + 180 + k$.\nStep 2: The constant term is $180 + k$; set it equal to the given value: $180 + k = 187$.\nStep 3: Subtract $180$ from both sides: $k = 7$. Check: $5(x - 6)^2 + 7 = 5x^2 - 60x + 187$, whose constant term is $187$ ✓\n\n**Common Mistakes:**\n* Subtracting only $36$ instead of $5(36)$, giving $187 - 36 = 151$.\n* Reporting $187$, the standard-form constant, as if it were $k$.\n* Adding rather than subtracting, giving $180 + 187 = 367$.\n\n**Test Day Takeaway:** Expanding $a(x - h)^2 + k$ leaves the constant $ah^2 + k$, so a known constant term fixes $k$ in one subtraction."
+}

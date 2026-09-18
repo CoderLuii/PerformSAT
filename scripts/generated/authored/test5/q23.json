@@ -1,34 +1,34 @@
 {
-  "id": 523,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "Among the gases linked to the springtime thinning of the ozone layer over Antarctica, the chlorofluorocarbons once used in refrigerants and aerosol sprays received the most public attention in the second half of the twentieth century. ______ those compounds are tightly restricted: the 1987 Montreal Protocol and its amendments have phased out their production almost entirely, and the remaining atmospheric concentrations are monitored at stations around the world.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "For example,"
-    },
-    {
-      "id": "B",
-      "text": "Therefore,"
-    },
-    {
-      "id": "C",
-      "text": "Today,"
-    },
-    {
-      "id": "D",
-      "text": "However,"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"Today,\". The first sentence describes the historical situation—the attention CFCs received in the twentieth century—and the second describes the present state of affairs, in which the compounds are tightly restricted and monitored. The relation between the two is a then-versus-now contrast, and \"Today,\" marks that shift to the present. \"However,\" would signal that the second sentence reverses a claim, but it updates rather than contradicts the first. \"Therefore,\" would make the restrictions a consequence of public attention, which is not the relation. \"For example,\" would introduce an instance, which the second sentence is not.",
-  "_meta": {
-    "anchor": "CFCs and the 1987 Montreal Protocol; historical-then-present transition"
+ "id": 523,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "In the first years of the twentieth century, reformers in American cities campaigned for supervised playgrounds, arguing that children crowded into tenement districts needed protected places to play. Cities responded by carving hundreds of small parks out of dense neighborhoods, fitting them with swings and sandboxes and staffing them with trained play leaders. ______ many of those early playgrounds, their original equipment long since replaced, still occupy the very blocks the reformers secured for them.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "In contrast,"
+  },
+  {
+   "id": "B",
+   "text": "Similarly,"
+  },
+  {
+   "id": "C",
+   "text": "Today,"
+  },
+  {
+   "id": "D",
+   "text": "For instance,"
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage moves from the early twentieth century to the present, and \"Today\" is the transition that marks that shift in time.\n\n**The Full Solution:**\n- The first two sentences narrate a historical campaign and the cities' response, both set \"in the first years of the twentieth century.\"\n- The final sentence reports the situation now: the playgrounds \"still occupy\" their blocks, with equipment \"long since replaced.\"\n- A sentence that jumps from past events to their present survival needs a time-marking transition, and \"Today\" supplies exactly that.\n\n**Why the other choices are wrong:**\n- A: \"In contrast\" requires an opposition, but the final sentence confirms the campaign's legacy rather than opposing it.\n- B: \"Similarly\" introduces a parallel case, yet the sentence continues with the same playgrounds, not a comparable new example.\n- D: \"For instance\" promises an example of a general claim, but the preceding sentences state events, not a generalization to be illustrated.",
+ "_meta": {
+  "anchor": "Progressive-era playground movement; then-to-now time transition"
+ }
 }

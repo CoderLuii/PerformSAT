@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-003",
+  "question": "Three expressions in $m$ are given below.\n\nI. $(m + 6)^2 - m^2$\nII. $(3m - 2)(m + 5)$\nIII. $\\dfrac{m^4 - m^2}{m^2}$, where $m \\neq 0$\n\nAfter simplification, which of the expressions are quadratic in $m$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "I only"
+    },
+    {
+      "id": "B",
+      "text": "II only"
+    },
+    {
+      "id": "C",
+      "text": "II and III only"
+    },
+    {
+      "id": "D",
+      "text": "I, II, and III"
+    }
+  ],
+  "distractorNotes": {
+    "A": "assumes squaring a binomial always leaves an $m^2$ term",
+    "B": "stops before reducing III, which becomes $m^2 - 1$",
+    "D": "counts I, whose $m^2$ terms cancel"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Classify After Simplification**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** I collapses to $12m + 36$ (linear). II expands to $3m^2 + 13m - 10$ and III reduces to $m^2 - 1$, both quadratic.\n\n**The Full Solution:**\nStep 1: Expression I: $(m + 6)^2 - m^2 = m^2 + 12m + 36 - m^2 = 12m + 36$. The $m^2$ terms cancel, so I is linear.\nStep 2: Expression II: $(3m - 2)(m + 5) = 3m^2 + 15m - 2m - 10 = 3m^2 + 13m - 10$, which is quadratic.\nStep 3: Expression III: $\\dfrac{m^4 - m^2}{m^2} = \\dfrac{m^2(m^2 - 1)}{m^2} = m^2 - 1$ for $m \\neq 0$, which is quadratic. So II and III only. Check at $m = 2$: I gives $60 = 12(2) + 36$, II gives $(4)(7) = 28 = 3(4) + 26 - 10$, III gives $\\frac{16 - 4}{4} = 3 = 2^2 - 1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: expanding $(m + 6)^2$ does produce an $m^2$ term, but subtracting $m^2$ removes it — I is linear.\n* Choice B: III looks like a fourth-degree expression until the common factor $m^2$ is divided out.\n* Choice D: includes I, which loses its quadratic term in the subtraction.\n\n**Test Day Takeaway:** Degree is a property of the SIMPLIFIED expression. Expand and reduce first, then read the highest surviving power."
+}

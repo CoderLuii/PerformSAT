@@ -1,0 +1,52 @@
+{
+  "id": "bank-am-184",
+  "question": "For the exponential function $g$, the table lists the value of $g(x)$ at three values of $x$. Which equation defines $g$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "g(x)"
+      ],
+      "rows": [
+        [
+          "1",
+          "12"
+        ],
+        [
+          "2",
+          "48"
+        ],
+        [
+          "3",
+          "192"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$g(x) = 3(12)^x$"
+    },
+    {
+      "id": "B",
+      "text": "$g(x) = 3(4)^x$"
+    },
+    {
+      "id": "C",
+      "text": "$g(x) = 4(12)^x$"
+    },
+    {
+      "id": "D",
+      "text": "$g(x) = 12(4)^x$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the first listed output as the growth factor",
+    "C": "swaps the roles of the growth factor and the first listed output",
+    "D": "treats $g(1) = 12$ as the value at $x = 0$"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Each step in $x$ multiplies $g$ by $48 \\div 12 = 4$, so $b = 4$; backing up from $g(1) = 12$ gives $g(0) = 3$, and $g(x) = 3(4)^x$.\n\n**The Full Solution:**\nStep 1: For $g(x) = ab^x$, the ratio of consecutive outputs is the growth factor: $\\dfrac{48}{12} = 4$ and $\\dfrac{192}{48} = 4$, so $b = 4$.\nStep 2: The value $a$ is $g(0)$, one step BELOW the first row, so $a = 12 \\div 4 = 3$.\nStep 3: $g(x) = 3(4)^x$. Check every row: $g(1) = 12$, $g(2) = 48$, $g(3) = 192$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3(12)^x$): takes $12$, the first output, as the growth factor; it gives $g(1) = 36$.\n* Choice C ($4(12)^x$): reverses the two constants, using the growth factor $4$ as the initial value and the first output $12$ as the base; it gives $g(1) = 48$, which is the $x = 2$ value, not the $x = 1$ value.\n* Choice D ($12(4)^x$): uses $g(1) = 12$ as the initial value $a$; every output is then four times too large.\n\n**Test Day Takeaway:** In $ab^x$, $a$ is the output at $x = 0$. When the table starts at $x = 1$, divide by the growth factor once to step back to $a$."
+}

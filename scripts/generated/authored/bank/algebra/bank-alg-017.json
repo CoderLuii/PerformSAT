@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-017",
+  "question": "A rooftop deck can safely support a total load of at most $3{,}600$ kilograms. Each planter on the deck has a mass of $85$ kilograms, and each bench has a mass of $140$ kilograms. If $14$ planters are already on the deck, what is the maximum number of benches that can be added without exceeding the load limit?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$17$"
+    },
+    {
+      "id": "B",
+      "text": "$18$"
+    },
+    {
+      "id": "C",
+      "text": "$25$"
+    },
+    {
+      "id": "D",
+      "text": "$28$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "rounds 17.2 up, which exceeds the limit (18 benches add 2,520 kg > 2,410 kg available)",
+    "C": "3,600/140 rounded down, ignoring the planters already on the deck",
+    "D": "2,410/85 rounded down, using the planter mass for the benches"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Inequality Word Problem (Floor)**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** The planters use $14(85) = 1{,}190$ kilograms, leaving $3{,}600 - 1{,}190 = 2{,}410$ kilograms. Since $\\frac{2{,}410}{140} \\approx 17.2$, at most $17$ benches fit.\n\n**The Full Solution:**\nStep 1: Let $n$ be the number of benches. The total load is $85(14) + 140n = 1{,}190 + 140n$, and it must satisfy $1{,}190 + 140n \\leq 3{,}600$.\nStep 2: Subtract $1{,}190$: $140n \\leq 2{,}410$, so $n \\leq 17.21\\ldots$.\nStep 3: $n$ must be a whole number, so the maximum is $17$. Check: $1{,}190 + 140(17) = 3{,}570 \\leq 3{,}600$, while $18$ benches give $3{,}710 > 3{,}600$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($18$): rounds $17.2$ up, but $18$ benches push the load to $3{,}710$ kilograms, over the limit.\n* Choice C ($25$): divides $3{,}600$ by $140$ and rounds down, ignoring the $1{,}190$ kilograms of planters already on the deck.\n* Choice D ($28$): divides the remaining $2{,}410$ kilograms by $85$, the planter mass, instead of by the bench mass.\n\n**Test Day Takeaway:** For a \"maximum number\" under a limit, subtract what is already used, divide by the per-item amount, and round DOWN; then verify one more item breaks the limit."
+}

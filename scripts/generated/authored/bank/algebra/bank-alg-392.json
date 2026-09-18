@@ -1,0 +1,29 @@
+{
+ "question": "A vacuum filtration setup collects filtrate at a steady rate, and the total volume in the flask after $m$ minutes is $V(m)=8m+c$ milliliters, where $c$ is a constant. If $V(3)=41$, what is the value of $V(7)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$49$"
+  },
+  {
+   "id": "B",
+   "text": "$56$"
+  },
+  {
+   "id": "C",
+   "text": "$73$"
+  },
+  {
+   "id": "D",
+   "text": "$97$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "adds a single increment of 8 to V(3) instead of four, giving 41 + 8 = 49",
+  "B": "forgets the constant c and reports only 8(7) = 56",
+  "D": "treats the output 41 as the constant c, computing 8(7) + 41 = 97"
+ },
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice C is correct.** The given output fixes $c=17$, and then $V(7)=8(7)+17=73$ milliliters.\n\n**The Fast Way (~30s):** From $V(3)=24+c=41$, $c=17$; then $V(7)=56+17=73$.\n\n**The Full Solution:**\n\nStep 1: Evaluate the rule at $m=3$: $V(3)=8(3)+c=24+c$.\n\nStep 2: Set that equal to the given value: $24+c=41$, so $c=17$ milliliters.\n\nStep 3: Evaluate at $m=7$: $V(7)=8(7)+17=56+17=73$. Check: from minute $3$ to minute $7$ the volume should rise by $4(8)=32$ milliliters, and $41+32=73$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($49$): adds one minute's worth of filtrate to $V(3)$ instead of four, giving $41+8$.\n* Choice B ($56$): reports $8(7)$ and leaves out the constant $c$.\n* Choice D ($97$): mistakes the output $41$ for the constant, computing $8(7)+41$.\n\n**Test Day Takeaway:** One known output pins down the unknown constant; find it first, then evaluate at the new input.",
+ "id": "bank-alg-392"
+}

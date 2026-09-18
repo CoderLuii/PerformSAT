@@ -1,0 +1,40 @@
+{
+  "id": "bank-am-096",
+  "question": "A workshop tracks leather journal covers finished per hour above its target with the quadratic function $p$ graphed in the $xy$-plane. If $p(x)=(x-3)^2+k$ for a constant $k$, what is the value of $p(-1)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-4$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$16$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the constant k instead of p(-1)",
+    "B": "evaluates x - 3 as -4 and reports its absolute value",
+    "D": "computes (-1-3)^2 = 16 and forgets to add k"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The graph's lowest point is $(3,-4)$, so $k=-4$ and $p(-1)=(-4)^2-4=12$.\n\n**The Full Solution:**\nStep 1: The form $p(x)=(x-3)^2+k$ puts the vertex at $(3,k)$; the graph shows the lowest point at $(3,-4)$, so $k=-4$.\nStep 2: Substitute $x=-1$: $p(-1)=(-1-3)^2-4$.\nStep 3: Compute: $16-4=12$. Check: $x=-1$ is $4$ units left of the axis $x=3$, and $p(7)=(4)^2-4=12$ matches ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-4$): reports the constant $k$ instead of the requested output.\n* Choice B ($4$): evaluates $x-3=-4$ and reports its absolute value without squaring.\n* Choice D ($16$): computes $(-1-3)^2=16$ and forgets to add $k=-4$.\n\n**Test Day Takeaway:** Reading one number off a graph can finish a vertex-form item — identify which constant the picture actually supplies.",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        3,
+        -4
+      ],
+      "a": 1,
+      "showVertex": true
+    }
+  }
+}

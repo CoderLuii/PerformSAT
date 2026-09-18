@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-044",
+  "question": "The temperatures, in degrees Fahrenheit, of $25$ samples have a mean of $68$ and a standard deviation of $9$. Each temperature is converted to degrees Celsius using the formula $C = \\frac{5}{9}(F - 32)$. Which of the following gives the mean and the standard deviation, in degrees Celsius, of the converted temperatures?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Mean $20$; standard deviation $5$"
+    },
+    {
+      "id": "B",
+      "text": "Mean $20$; standard deviation $9$"
+    },
+    {
+      "id": "C",
+      "text": "Mean $37.8$; standard deviation $5$"
+    },
+    {
+      "id": "D",
+      "text": "Mean $37.8$; standard deviation $9$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "leaves the standard deviation unchanged; that is correct for the subtraction of $32$ but not for the multiplication by $\\frac{5}{9}$.",
+    "C": "multiplies the mean by $\\frac{5}{9}$ without first subtracting $32$, giving $\\frac{5}{9}(68) \\approx 37.8$.",
+    "D": "combines both errors: no subtraction for the mean and no scaling for the standard deviation."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: SD Under Scaling**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The mean follows the full formula: $\\frac{5}{9}(68 - 32) = 20$. The standard deviation ignores the shift and follows only the scale factor: $\\frac{5}{9} \\times 9 = 5$.\n\n**The Full Solution:**\nStep 1: The conversion is a linear change: subtract $32$, then multiply by $\\frac{5}{9}$. The mean undergoes both steps: $\\frac{5}{9}(68 - 32) = \\frac{5}{9}(36) = 20$.\nStep 2: Subtracting $32$ from every value does not change the spread. Multiplying every value by $\\frac{5}{9}$ multiplies every distance from the mean by $\\frac{5}{9}$, so the standard deviation becomes $\\frac{5}{9} \\times 9 = 5$.\nStep 3: Check with two values one standard deviation apart in Fahrenheit, $68$ and $77$: they convert to $20$ and $25$, which are $5$ apart. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (mean $20$; SD $9$): leaves the standard deviation unchanged; that is correct for the subtraction of $32$ but not for the multiplication by $\\frac{5}{9}$.\n* Choice C (mean $37.8$; SD $5$): multiplies the mean by $\\frac{5}{9}$ without first subtracting $32$, giving $\\frac{5}{9}(68) \\approx 37.8$.\n* Choice D (mean $37.8$; SD $9$): combines both errors: no subtraction for the mean and no scaling for the standard deviation.\n\n**Test Day Takeaway:** Under $y = a x + b$, the mean transforms fully ($a \\bar{x} + b$) but the standard deviation only scales ($|a| \\cdot s$); shifts never touch spread."
+}

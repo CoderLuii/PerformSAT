@@ -5,41 +5,41 @@
  "band": 4,
  "domain": "expression-of-ideas",
  "skill": "rhetorical-synthesis",
+ "type": "multiple-choice",
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Archaeologists have traditionally mapped ancient Maya sites on foot, cutting survey lines through dense forest.",
+   "Lidar is an airborne laser-scanning technology that fires millions of pulses per second, letting researchers digitally strip away vegetation and expose the ground surface beneath.",
+   "In 2018, a lidar survey covered more than 2,100 square kilometers of northern Guatemala.",
+   "The survey revealed tens of thousands of previously unmapped structures, along with raised causeways, defensive earthworks, and extensive agricultural terracing.",
+   "Population estimates for the region's Classic period have been revised sharply upward as a result.",
+   "Ground crews must still excavate to confirm what the laser images show and to determine the ages of the structures."
+  ],
+  "goal": "The student wants to emphasize how lidar has changed archaeologists' understanding of the scale of ancient Maya settlement."
+ },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Mae Jemison, the first African American woman to fly in space, in 1992, trained as both a chemical engineer and a physician before joining the U.S. astronaut program."
+   "text": "Lidar is an airborne laser-scanning technology that fires millions of pulses per second from above the forest."
   },
   {
    "id": "B",
-   "text": "Since 2012, Jemison has led the 100 Year Starship initiative, which studies the engineering and social challenges of human interstellar travel within the next century."
+   "text": "Because dense forest covers many ancient Maya sites, archaeologists have traditionally mapped them on foot, cutting survey lines through the vegetation as they go."
   },
   {
    "id": "C",
-   "text": "Across her post-NASA work — a consulting firm, a science camp, and the 100 Year Starship initiative — Jemison argues that long-horizon science needs investment in education and institutions, and that interim advances like energy storage repay terrestrial problems even if the mission never flies."
+   "text": "A 2018 lidar survey of northern Guatemala revealed tens of thousands of previously unmapped structures, forcing archaeologists to revise the region's ancient population estimates sharply upward."
   },
   {
    "id": "D",
-   "text": "After leaving NASA in 1993, Jemison founded a technology consulting firm and a science camp for teenagers, and since 2012 she has led the 100 Year Starship initiative."
+   "text": "Although lidar images reveal structures, causeways, earthworks, and agricultural terracing beneath the forest canopy, ground crews must still excavate each site to confirm what the laser images show and to determine when the structures were built."
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C. The goal is to emphasize the argument that unifies Jemison's post-NASA work. C names her three projects and then states the through-line that runs across them: long-horizon science requires investment in education and institutions, and the interim advances such programs produce repay terrestrial problems whether or not the long mission succeeds. A introduces Jemison through her spaceflight and training but states no unifying argument. B describes only the 100 Year Starship initiative, one project rather than the whole. D lists the three projects in order but never articulates the argument they share.",
+ "explanation": "**Choice C is correct.** The goal is about changed understanding of settlement scale, and C connects the instrument to exactly that change: the survey exposed tens of thousands of unmapped structures, and population estimates were revised sharply upward as a consequence.\n\n**The Full Solution:**\n- \"Changed understanding of scale\" requires two elements: what lidar found (structures by the tens of thousands) and what the finding did to prior belief (forced estimates upward).\n- C draws both from the notes and binds them causally with \"forcing,\" which is the emphasis the goal demands.\n\n**Why the other choices are wrong:**\n- A: It explains how the technology works and stops there — no discovery, no revision, no Maya settlement at all.\n- B: It describes the old method's difficulty without mentioning lidar's findings or any change in understanding.\n- D: It leads with a concession about lidar's limits and gives its emphasis to what excavation must still do, muting the transformation the student wants front and center.",
  "_meta": {
-  "anchor": "Mae Jemison — astronaut (STS-47, 1992); chemical engineer and physician; 100 Year Starship initiative"
- },
- "studentNotes": {
-  "intro": "While researching a topic, a student has taken the following notes:",
-  "bullets": [
-   "Mae Jemison was the first African American woman to fly in space, aboard the STS-47 mission in September 1992.",
-   "She trained as a chemical engineer and as a physician before joining the U.S. astronaut program.",
-   "After leaving NASA in 1993, Jemison founded a technology consulting firm and an international science camp for teenagers.",
-   "Since 2012 she has led the 100 Year Starship initiative, which studies the engineering and social challenges of human interstellar travel within the next century.",
-   "Across these projects, Jemison has emphasized that long-horizon scientific programs require active investment in education and social institutions, not only in hardware.",
-   "She frames the initiative's interim advances — energy storage, closed-loop life support — as goods that repay terrestrial problems whether or not the long-term mission is realized."
-  ],
-  "goal": "The student wants to emphasize the unifying argument that runs across Jemison's post-NASA work."
- },
- "type": "multiple-choice"
+  "anchor": "2018 Guatemala lidar survey — Maya settlement scale revised upward"
+ }
 }

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-355",
+ "question": "Two pacing models for a distance runner agree at every pace $p$, in minutes per kilometer, that satisfies $2p^2 + k = 18p - 5$, where $k$ is a constant set by the runner's most recent lab test. What is the least integer $k$ for which the models never agree?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$35$"
+  },
+  {
+   "id": "B",
+   "text": "$36$"
+  },
+  {
+   "id": "C",
+   "text": "$41$"
+  },
+  {
+   "id": "D",
+   "text": "$77$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "takes the greatest integer below $35.5$ instead of the least integer above it",
+  "C": "leaves the $-5$ on the right side, solving $324 - 8k < 0$ and getting $k > 40.5$",
+  "D": "uses $2ac$ instead of $4ac$, solving $324 - 4(k + 5) < 0$ and getting $k > 76$"
+ },
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Standard form is $2p^2 - 18p + (k + 5) = 0$, so the discriminant is $324 - 8(k + 5) = 284 - 8k$. No agreement means $284 - 8k < 0$, or $k > 35.5$, whose least integer is $36$.\n\n**The Full Solution:**\nStep 1: Move every term to one side: $2p^2 - 18p + k + 5 = 0$, so $a = 2$, $b = -18$, and the constant term is $k + 5$.\nStep 2: The models never agree exactly when the equation has no real solution, that is, when $(-18)^2 - 4(2)(k + 5) < 0$, or $324 - 8k - 40 < 0$.\nStep 3: That simplifies to $284 < 8k$, so $k > 35.5$ and the least integer is $36$. Check: at $k = 36$ the discriminant is $284 - 288 = -4 < 0$, while at $k = 35$ it is $4 > 0$ and the paces $4$ and $5$ minutes per kilometer both work ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($35$): rounds $35.5$ down; at $k = 35$ the models still agree twice.\n* Choice C ($41$): never moves the $-5$ across, so the constant term is read as $k$ and the bound becomes $k > 40.5$.\n* Choice D ($77$): halves the $4$ in $4ac$, turning the condition into $324 - 4(k + 5) < 0$.\n\n**Test Day Takeaway:** Put the quadratic in standard form before reading $a$, $b$, and $c$ — a constant hiding on the far side changes the discriminant."
+}

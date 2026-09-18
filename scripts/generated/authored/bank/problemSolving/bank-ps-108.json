@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-108",
+  "question": "A conference received $320$ early registrations, which was $40\\%$ of all the registrations the conference received. How many registrations did the conference receive in all?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$128$"
+    },
+    {
+      "id": "B",
+      "text": "$448$"
+    },
+    {
+      "id": "C",
+      "text": "$480$"
+    },
+    {
+      "id": "D",
+      "text": "$800$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "0.40(320) = 128, multiplying instead of dividing",
+    "B": "1.40(320) = 448, increasing the part by 40%",
+    "C": "480 is the number of registrations that were not early registrations"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The part is known and the percent is known, so divide: $\\dfrac{320}{0.40} = 800$.\n\n**The Full Solution:**\nStep 1: Let $t$ be the total number of registrations. Then $0.40t = 320$.\nStep 2: Divide both sides by $0.40$: $t = \\dfrac{320}{0.40} = 800$.\nStep 3: The conference received $800$ registrations in all.\nCheck: $40\\%$ of $800$ is $320$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($128$): This computes $0.40(320)$, taking $40\\%$ of the part instead of solving for the whole.\n* Choice B ($448$): This computes $1.40(320)$, as if the $320$ registrations were to be increased by $40\\%$.\n* Choice C ($480$): This is the number of registrations that were not early registrations, the other $60\\%$ of the total.\n\n**Test Day Takeaway:** \"$320$ is $40\\%$ of what?\" is division: part $\\div$ rate, never part $\\times$ rate."
+}

@@ -1,0 +1,6 @@
+{
+  "question": "A memory array holds $\\dfrac{4^{x}}{2^{7}}$ addressable cells, and that count equals $2^{9}$ cells. What is the value of $x$?",
+  "correctAnswer": "8",
+  "explanation": "**SAT Pattern: Common-Base Exponent Simplification**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~20s):** Rewrite $4^{x}$ as $2^{2x}$: $2^{2x-7}=2^{9}$, so $2x=16$ and $x=8$.\n\n**The Full Solution:**\nStep 1: Since $4=2^{2}$, $4^{x}=(2^{2})^{x}=2^{2x}$.\nStep 2: The left side becomes $\\dfrac{2^{2x}}{2^{7}}=2^{2x-7}$, so $2x-7=9$.\nStep 3: Solve: $2x=16$, so $x=8$. Check: $4^{8}=65{,}536$ and $65{,}536/128=512=2^{9}$ ✓\n\n**Common Mistakes:**\n* $16$: solved $2x=16$ but reported $2x$ instead of $x$.\n* $-1$: subtracted in the wrong order, solving $7-2x=9$.\n* $4.5$: divided $9$ by $2$ without first adding back the $7$, solving $2x=9$.\n\n**Test Day Takeaway:** Put both sides on one base before matching exponents; $4$, $8$, and $16$ are all powers of $2$.",
+  "id": "bank-am-118"
+}

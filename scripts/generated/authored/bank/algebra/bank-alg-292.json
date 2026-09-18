@@ -1,0 +1,39 @@
+{
+ "id": "bank-alg-292",
+ "question": "The graph of $y = |x - 3| + 2$ in the $xy$-plane is shown. How many solutions does the equation $|x - 3| + 2 = 2$ have?",
+ "diagram": {
+  "type": "absoluteValue",
+  "params": {
+   "vertex": [
+    3,
+    2
+   ],
+   "slope": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "Zero"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "distractorNotes": {
+  "A": "assumes the horizontal line y = 2 misses the graph",
+  "C": "default two-case count without noticing |x - 3| = 0",
+  "D": "confuses a single touching point with overlap"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Subtract $2$: $|x - 3| = 0$, which holds only when $x = 3$. One solution.\n\n**The Full Solution:**\nStep 1: Isolate the absolute value: $|x - 3| + 2 = 2$ gives $|x - 3| = 0$.\nStep 2: An absolute value equals $0$ only when the inside is $0$: $x - 3 = 0$, so $x = 3$.\nStep 3: Graphically, the horizontal line $y = 2$ touches the graph only at the vertex $(3, 2)$, confirming exactly one solution. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (Zero): would be right if the right side were below the vertex, such as $|x - 3| + 2 = 1$; here the line meets the vertex.\n* Choice C (Exactly two): the usual two-case split, but the two cases $x - 3 = 0$ and $x - 3 = -0$ are the same equation.\n* Choice D (Infinitely many): the line $y = 2$ shares one point with the graph, not a whole segment.\n\n**Test Day Takeaway:** After isolating, compare the right side to $0$: negative means no solutions, zero means one, positive means two."
+}

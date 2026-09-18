@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-029",
+  "question": "Points $A(-4, 6)$ and $B(2, -3)$ are shown in the $xy$-plane. What is the slope of any line that is parallel to line $AB$?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -4,
+          6
+        ],
+        [
+          2,
+          -3
+        ]
+      ],
+      "xMin": -6,
+      "xMax": 6,
+      "yMin": -6,
+      "yMax": 8
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-\\frac{3}{2}$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{2}{3}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{2}{3}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3}{2}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "run over rise (inverted ratio)",
+    "C": "the perpendicular slope (negative reciprocal)",
+    "D": "drops the negative sign"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Parallel Slope from Two Points**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Slope of $AB = \\frac{-3 - 6}{2 - (-4)} = \\frac{-9}{6} = -\\frac{3}{2}$, and a parallel line shares that slope.\n\n**The Full Solution:**\nStep 1: Slope of $AB$: $\\frac{y_B - y_A}{x_B - x_A} = \\frac{-3 - 6}{2 - (-4)} = \\frac{-9}{6}$.\nStep 2: Simplify: $-\\frac{9}{6} = -\\frac{3}{2}$. The negative sign matches the plot: $B$ is lower and to the right of $A$.\nStep 3: Parallel lines have equal slopes, so any line parallel to $AB$ has slope $-\\frac{3}{2}$. Check: from $A(-4, 6)$, moving right $6$ and down $9$ lands on $(2, -3) = B$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($-\\frac{2}{3}$): inverts the ratio, dividing the run by the rise.\n* Choice C ($\\frac{2}{3}$): gives the negative reciprocal, which is the slope of a line perpendicular to $AB$.\n* Choice D ($\\frac{3}{2}$): drops the negative sign even though the line falls from left to right.\n\n**Test Day Takeaway:** Read the direction from the picture before computing: a line falling left-to-right must have a negative slope, which instantly eliminates half the choices."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-226",
+  "question": "The activity of a radioactive tracer decays exponentially with a half-life of $12$ hours. The activity of the tracer is now $5$ units. How many hours ago was the activity of the tracer $320$ units?",
+  "correctAnswer": "72",
+  "explanation": "**SAT Pattern: Reverse Exponential Back in Time**\n\n**The correct answer is $72$.**\n\n**The Fast Way (~30s):** $320 \\div 5 = 64 = 2^6$, so six half-lives have passed: $6 \\cdot 12 = 72$ hours.\n\n**The Full Solution:**\nStep 1: Each half-life divides the activity by $2$, so the number of half-lives $n$ satisfies $320 \\cdot \\left(\\frac{1}{2}\\right)^n = 5$.\nStep 2: Rearranging gives $2^n = \\dfrac{320}{5} = 64$, so $n = 6$.\nStep 3: Six half-lives of $12$ hours each is $6 \\cdot 12 = 72$ hours. Check: $320 \\to 160 \\to 80 \\to 40 \\to 20 \\to 10 \\to 5$, six halvings. $\\checkmark$\n\n**Common Mistakes:** Answering $6$, the number of half-lives, without multiplying by the $12$-hour period. Answering $64$, the factor by which the activity fell, as if it were a time.\n\n**Test Day Takeaway:** Turn the ratio into a power of the decay factor, read the exponent as a COUNT of periods, then multiply by the length of one period."
+}

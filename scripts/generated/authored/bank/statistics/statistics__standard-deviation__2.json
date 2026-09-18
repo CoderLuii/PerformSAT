@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A data set consists of $12$ values, and each of these values is equal to $47$. What is the standard deviation of this data set?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0$"
+    },
+    {
+      "id": "B",
+      "text": "$1$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$47$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "assumes a standard deviation must be positive, but identical values give no spread.",
+    "C": "reports the number of values in the data set.",
+    "D": "reports the common value, which is the mean of the data set rather than its spread."
+  },
+  "correctAnswer": "A",
+  "hint": "Ask how far a typical value sits from the mean when every value is identical.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** The mean is $47$ and every value equals the mean, so there is no spread at all and the standard deviation is $0$.\n\n**The Full Solution:**\nStep 1: The mean of the data set is $\\frac{12(47)}{12} = 47$.\nStep 2: Each value differs from the mean by $47 - 47 = 0$, so every deviation is zero.\nStep 3: A standard deviation built from deviations that are all zero is itself $0$. Check: standard deviation is zero exactly when all values are identical. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($1$): assumes a standard deviation must be positive, but identical values give no spread.\n* Choice C ($12$): reports the number of values in the data set.\n* Choice D ($47$): reports the common value, which is the mean of the data set rather than its spread.\n\n**Test Day Takeaway:** Standard deviation is never negative and equals zero only when every value is the same. It measures spread, not size."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "A greenhouse dosing unit delivers $x$ liters of concentrate A and $y$ liters of concentrate B per batch, and the two nutrient requirements are $3x + 12y = 45$ and $x + 4y = 15$. How many solutions $(x, y)$ does this system have?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Zero"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads unequal coefficients as parallel distinct lines",
+  "B": "assumes two written equations always cross exactly once",
+  "C": "treats two lines as able to meet twice"
+ },
+ "correctAnswer": "D",
+ "hint": "Two requirements can describe the same batches without being written the same way.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~10s):** Dividing $3x + 12y = 45$ by $3$ gives $x + 4y = 15$, the second requirement itself, so the two describe one line.\n\n**The Full Solution:**\nStep 1: Divide every term of $3x + 12y = 45$ by $3$: $x + 4y = 15$.\nStep 2: That is exactly the second requirement, so any batch meeting one requirement meets the other.\nStep 3: A line in the $xy$-plane holds infinitely many points, so the system has infinitely many solutions. Check: $(15, 0)$ and $(7, 2)$ each satisfy both equations ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (Zero): reading the different coefficients as two parallel lines; parallel and distinct requires the constants NOT to scale by the same factor, and here $45 = 3 \\cdot 15$ does.\n* Choice B (Exactly one): assuming two written equations always cross once; identical lines never cross at a single point.\n* Choice C (Exactly two): two straight lines meet at most once unless they coincide, in which case they share every point.\n\n**Test Day Takeaway:** Before solving, test whether one equation is a constant multiple of the other — coefficients and constant alike."
+}

@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "A data set consists of the $8$ values $5$, $9$, $12$, $12$, $16$, $21$, $27$, and $34$. The two greatest values are removed from the data set. By how much does the median decrease?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0$"
+    },
+    {
+      "id": "B",
+      "text": "$2$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$14$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "assumes removing values from the top of an ordered list cannot move the median.",
+    "C": "tracks only the upper middle value, $16 - 12$, instead of the change in the average of the two middle values.",
+    "D": "reports the original median instead of the amount it decreased."
+  },
+  "correctAnswer": "B",
+  "hint": "Find the median twice, once before the removal and once after, then compare.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~35s):** The original median is $\\frac{12 + 16}{2} = 14$; after removing $27$ and $34$ it is $\\frac{12 + 12}{2} = 12$. The decrease is $2$.\n\n**The Full Solution:**\nStep 1: The eight values are already ordered, so the original median is the average of the fourth and fifth values: $\\frac{12 + 16}{2} = 14$.\nStep 2: Removing $27$ and $34$ leaves the six values $5, 9, 12, 12, 16, 21$, whose median is the average of the third and fourth: $\\frac{12 + 12}{2} = 12$.\nStep 3: The median decreases by $14 - 12 = 2$. Check: dropping the two largest values shifts the middle position left, so a decrease is expected. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$): assumes removing values from the top of an ordered list cannot move the median.\n* Choice C ($4$): tracks only the upper middle value, $16 - 12$, instead of the change in the average of the two middle values.\n* Choice D ($14$): reports the original median instead of the amount it decreased.\n\n**Test Day Takeaway:** Removing values from one end shifts which entries sit in the middle. Recompute the median from the shortened list rather than reasoning about it in the abstract."
+}

@@ -6,26 +6,26 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 2,
- "passage": "Sediment at the bottom of a lake accumulates in fine annual layers, and each layer traps pollen grains carried in from the surrounding landscape. Because the pollen of different plants has distinctive shapes, a core drawn from such a lakebed lets researchers read off which species grew nearby in a given year. ______ a sudden drop in tree pollen accompanied by a rise in grass pollen can mark the moment a forest gave way to open land, whether through a shift in climate or clearing by people.",
+ "passage": "Silica aerogels are among the lightest solids ever produced: a typical sample is more than 99 percent air by volume, its silica forming a sparse nanoscale scaffold through which heat struggles to travel. Measurements show that the material's thermal conductivity can fall below that of the still air trapped in its own pores, approaching the theoretical limit for a porous solid. ______ a slab of aerogel resists the flow of heat even more effectively than the motionless air it is mostly made of.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "For instance,"
+   "text": "Indeed,"
   },
   {
    "id": "B",
-   "text": "Nevertheless,"
-  },
-  {
-   "id": "C",
    "text": "In contrast,"
   },
   {
+   "id": "C",
+   "text": "Meanwhile,"
+  },
+  {
    "id": "D",
-   "text": "Earlier,"
+   "text": "In other words,"
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A. The sentence before the blank states the general principle that a lakebed core lets researchers tell which plants grew nearby year by year; the sentence after it gives a concrete case of that principle—a drop in tree pollen and rise in grass pollen marking a forest's loss. That is a general-to-specific move, which \"For instance\" marks. \"Nevertheless\" and \"In contrast\" both signal opposition, but the example confirms rather than counters the principle, and \"Earlier\" would falsely imply a shift back in time."
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The final sentence translates the technical measurement into plain language rather than adding new information, and \"In other words\" is the transition that signals a restatement.\n\n**The Full Solution:**\n- The preceding sentence makes a technical claim: the aerogel's thermal conductivity can fall below that of the still air trapped in its pores.\n- The blank sentence says the same thing in everyday terms — the material resists heat flow better than the motionless air it is mostly made of. No new evidence, no contrast: a restatement.\n- \"In other words\" is the conventional signal that a sentence rephrases the one before it.\n\n**Why the other choices are wrong:**\n- A: \"Indeed\" escalates to stronger or more striking evidence, but the final sentence adds no new evidence — it rephrases the measurement already given.\n- B: \"In contrast\" requires an opposition between the sentences; the second sentence agrees with, and restates, the first.\n- C: \"Meanwhile\" marks simultaneous but separate developments; there is only one continuous point here."
 }

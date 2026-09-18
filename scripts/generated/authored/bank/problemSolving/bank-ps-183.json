@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-183",
+  "question": "In a batch of $x$ metal castings, $16\\%$ of the castings failed a stress test. If $44$ of the castings failed the test, what is the value of $x$?",
+  "correctAnswer": "275",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**The correct answer is $275$.**\n\n**The Fast Way (~10s):** $0.16x = 44$, so $x = \\frac{44}{0.16} = 275$.\n\n**The Full Solution:**\nStep 1: \"$16\\%$ of the $x$ castings failed\" translates to $0.16x = 44$.\nStep 2: Divide both sides by $0.16$: $x = \\frac{44}{0.16} = \\frac{4400}{16} = 275$.\nStep 3: Check: $16\\%$ of $275$ is $0.16 \\times 275 = 44$. $\\checkmark$\n\n**Common Mistakes:** Multiplying instead of dividing, $44 \\times 0.16 = 7.04$; dividing by $16$ instead of $0.16$, which gives $2.75$; or multiplying $44 \\times 16 = 704$ by forgetting that a percent is \"per hundred.\"\n\n**Test Day Takeaway:** Part $= \\frac{p}{100} \\times$ whole. If the part and the percent are known, the whole is the part divided by the decimal form of the percent."
+}

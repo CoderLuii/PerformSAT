@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-044",
+  "question": "A school orchestra bought $v$ violin strings at $\\$9$ each and $c$ cello strings at $\\$14$ each. The orchestra bought $26$ strings in total and paid a total of $\\$289$. Which system of equations represents this situation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$v + c = 26$ and $9v + 14c = 289$"
+    },
+    {
+      "id": "B",
+      "text": "$v + c = 289$ and $9v + 14c = 26$"
+    },
+    {
+      "id": "C",
+      "text": "$v + c = 26$ and $14v + 9c = 289$"
+    },
+    {
+      "id": "D",
+      "text": "$v - c = 26$ and $9v + 14c = 289$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "swaps the count total and the cost total",
+    "C": "swaps the two prices",
+    "D": "uses a difference instead of a sum for the count"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: System Setup (Count + Cost)**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Count equation: $v + c = 26$. Cost equation: $9v + 14c = 289$.\n\n**The Full Solution:**\nStep 1: The number of strings is the sum of the two counts: $v + c = 26$.\nStep 2: The cost is price times count for each type, added: $9v + 14c = 289$.\nStep 3: Check that the system has a sensible solution: from $v = 26 - c$, $9(26 - c) + 14c = 289 \\Rightarrow 234 + 5c = 289 \\Rightarrow c = 11$ and $v = 15$; $15 + 11 = 26$ and $135 + 154 = 289$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($v + c = 289$ and $9v + 14c = 26$): swaps the two totals, putting the dollar amount with the counts.\n* Choice C ($v + c = 26$ and $14v + 9c = 289$): pairs each price with the wrong string type.\n* Choice D ($v - c = 26$ and $9v + 14c = 289$): subtracts the counts, but \"in total\" means the counts are added.\n\n**Test Day Takeaway:** Count-and-cost stories always produce one plain-sum equation for the counts and one price-weighted equation for the money; match each total to its own equation."
+}

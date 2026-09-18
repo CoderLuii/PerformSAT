@@ -1,0 +1,56 @@
+{
+ "id": 1,
+ "question": "A mountain station records the snowpack depth $D(t)$, in centimeters, $t$ hours after midnight; the recorded values appear in the table and $D$ is a linear function. For what value of $t$ does the model give $D(t) = 52$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Time t (hours after midnight)",
+    "Depth D(t) (centimeters)"
+   ],
+   "rows": [
+    [
+     "0",
+     "100"
+    ],
+    [
+     "3",
+     "94"
+    ],
+    [
+     "6",
+     "88"
+    ],
+    [
+     "9",
+     "82"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$24$"
+  },
+  {
+   "id": "D",
+   "text": "$26$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "uses the 6-centimeter drop between consecutive rows as the hourly rate: 48/6 = 8",
+  "B": "measures only from the last tabulated row, (82-52)/2 = 15, and forgets the 9 hours already elapsed",
+  "D": "divides the target depth by the rate, 52/2 = 26, ignoring the 100-centimeter starting depth"
+ },
+ "explanation": "**SAT Pattern: Solve $f(a) = c$**\n\n**Choice C is correct.** The depth falls $6$ centimeters every $3$ hours, so the rate is $2$ centimeters per hour and $D(t) = 100 - 2t$. Setting $100 - 2t = 52$ gives $t = 24$.\n\n**The Fast Way (~20s):** The depth must fall $100 - 52 = 48$ centimeters at $2$ centimeters per hour, so $t = 48 \\div 2 = 24$.\n\n**The Full Solution:**\nStep 1: Rate $= \\frac{94 - 100}{3 - 0} = -2$ centimeters per hour, and the table gives $D(0) = 100$, so $D(t) = 100 - 2t$.\nStep 2: Solve $100 - 2t = 52$, so $2t = 48$ and $t = 24$.\nStep 3: Check with the true solution: $D(24) = 100 - 2(24) = 100 - 48 = 52$, matching the required output.\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): treats the $6$-centimeter drop between adjacent rows as the drop per hour, giving $48 \\div 6 = 8$. The rows are $3$ hours apart, so the hourly rate is $2$, not $6$.\n* Choice B ($15$): starts from the last row, $\\frac{82 - 52}{2} = 15$, which is the additional time after $t = 9$, and forgets to add those $9$ hours back.\n* Choice D ($26$): divides the target depth by the rate, $52 \\div 2 = 26$, which ignores the $100$-centimeter starting depth entirely.\n\n**Test Day Takeaway:** In a table of a linear function, the rate is the change in output divided by the change in input, not the change between adjacent rows, unless the inputs step by $1$."
+}

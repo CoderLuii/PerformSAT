@@ -1,0 +1,29 @@
+{
+  "id": 20,
+  "question": "A habitat restoration fund's only holding is $\\$8{,}000$ in an account paying $6\\%$ annual interest compounded semiannually, with no other deposits. To the nearest dollar, how much interest does that account earn in $4$ years?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1{,}920$"
+    },
+    {
+      "id": "B",
+      "text": "$2{,}100$"
+    },
+    {
+      "id": "C",
+      "text": "$2{,}134$"
+    },
+    {
+      "id": "D",
+      "text": "$4{,}751$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses simple interest, 8000 x 0.06 x 4 = 1920, so no interest ever earns interest",
+    "B": "compounds once a year instead of twice: 8000(1.06)^4 - 8000 is about 2099.82, or 2,100",
+    "D": "uses 8 compounding periods but keeps the full 6% rate in each: 8000(1.06)^8 - 8000 is about 4750.77"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice C is correct.** Semiannual compounding pays $\\frac{6\\%}{2} = 3\\%$ in each of $2(4) = 8$ periods, so the balance is $8000(1.03)^8 \\approx 10{,}134.16$ dollars and the interest earned is about $2{,}134$ dollars.\n\n**The Fast Way (~45s):** Rate per period $0.03$, periods $8$: $8000(1.03)^8 \\approx 10{,}134$, and subtracting the original $8{,}000$ leaves about $2{,}134$.\n\n**The Full Solution:**\nStep 1: Convert the annual rate to a per-period rate. Compounded semiannually, each period pays $\\frac{0.06}{2} = 0.03$.\nStep 2: Count the periods. Four years at two periods per year is $8$ periods, so the balance is $8000(1 + 0.03)^8 = 8000(1.03)^8 \\approx 10{,}134.16$ dollars.\nStep 3: The question asks for interest, not balance, so subtract the deposit: $10{,}134.16 - 8{,}000 = 2{,}134.16$, about $2{,}134$ dollars. Check: $8{,}000 + 2{,}134 = 10{,}134$, and dividing by $(1.03)^8 \\approx 1.2668$ returns $8{,}000$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1{,}920$): uses simple interest, $8000(0.06)(4)$. That never lets earned interest earn interest, so it always undershoots.\n* Choice B ($2{,}100$): compounds annually rather than semiannually, $8000(1.06)^4 - 8000 \\approx 2{,}099.82$. More frequent compounding at the same annual rate always earns a little more.\n* Choice D ($4{,}751$): uses $8$ periods but charges the full $6\\%$ in each, $8000(1.06)^8 - 8000 \\approx 4{,}750.77$. Splitting the year doubles the periods and halves the rate together.\n\n**Test Day Takeaway:** Divide the annual rate by the number of periods per year and multiply the years by that same number; then re-read whether the question wants the balance or only the interest."
+}

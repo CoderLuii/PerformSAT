@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
+ "type": "multiple-choice",
+ "passage": "Feature films dominate most accounts of cinema's past, but a growing number of archivists have turned their attention to home movies. Amateur reels shot between the 1930s and the 1960s record precisely what commercial studios rarely bothered to film: family-run shops, regional festivals, workplaces, and neighborhoods that have since been transformed or demolished. Because the footage was made for private viewing rather than for sale, it also preserves unrehearsed behavior — how people actually dressed, cooked, celebrated, and greeted one another. Archivists who catalog these reels describe them as an unintended documentary of everyday life.",
  "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "Buckland and De la Beche credited Anning's preparation methods more consistently and more generously than the other naturalists who studied and published on the marine reptile fossils she had recovered."
+   "text": "Commercial studios of the mid-twentieth century occasionally filmed everyday subjects, but the scenes they produced were staged rather than spontaneous."
   },
   {
    "id": "B",
-   "text": "Anning's discoveries settled the early-nineteenth-century debate about extinction within a few years of her first major finds."
+   "text": "Archivists prefer working with home movies because amateur reels are easier to repair and preserve than commercial films are."
   },
   {
    "id": "C",
-   "text": "Because women were excluded from scientific institutions, Anning's extinction-shaping finds entered the record through male authors who credited her unevenly, a record historians have since worked to reconstruct."
+   "text": "Home movies preserve details of ordinary life that commercial filmmaking largely ignored, which makes them valuable historical records."
   },
   {
    "id": "D",
-   "text": "Modern historians have shown that Anning authored more papers on marine reptile anatomy than any of her contemporaries."
+   "text": "Home movies are difficult for archivists to catalog because the people and places they show were rarely identified by the amateurs who filmed them."
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C. The passage moves through three stages: it establishes Anning's contribution (articulated ichthyosaur and plesiosaur skeletons that reshaped debates about extinction), then the institutional barrier she faced (exclusion from the Geological Society and from formal authorship), and finally the consequence — that her finds reached print through male colleagues who named her unevenly — along with the later historical work to reconstruct her role. C integrates all three. A treats two named geologists as more reliable creditors, a claim the passage does not make. B says her finds \"settled\" the debate, but the text says they \"reshaped\" it. D has her authoring the most papers, the opposite of the exclusion the passage documents.",
+ "explanation": "**Choice C is correct.** Every sentence advances the same claim: amateur footage captured what commercial cinema left out — vanished places and unrehearsed behavior — and archivists now treat it as \"an unintended documentary of everyday life.\"\n\n**The Full Solution:**\n- The text opens by shifting attention from feature films to home movies, then gives two reasons the amateur record matters: it shows subjects studios ignored, and it shows them unstaged.\n- The closing sentence states the resulting value in the archivists' own terms, which C restates.\n\n**Why the other choices are wrong:**\n- A: The text says studios \"rarely bothered\" with everyday subjects; it never examines the staging of what they did film.\n- B: Ease of repair and preservation is never mentioned, and no preference between formats is expressed on those grounds.\n- D: Cataloging difficulties are never raised; the archivists' cataloging work is mentioned only in passing.",
  "_meta": {
-  "anchor": "Mary Anning — paleontologist; Lyme Regis; ichthyosaur and plesiosaur specimens; institutional exclusion and uneven credit"
- },
- "passage": "Working along the cliffs of Lyme Regis in the early nineteenth century, Mary Anning extracted, prepared, and identified some of the first articulated ichthyosaur and plesiosaur skeletons known to science. Her finds reshaped debates about whether species could go extinct, and geologists such as William Buckland and Henry De la Beche relied heavily on her work. At the time, however, women were barred from the Geological Society of London and from formal authorship of scientific papers. Anning's specimens therefore entered the published record through male colleagues who named her unevenly — some explaining her methods, others calling her only a local collector. Later historians have reread their notebooks and letters to recover, fossil by fossil, the role she actually played.",
- "type": "multiple-choice"
+  "anchor": "Home movies as unintended documentary of everyday life (unnamed archivists)"
+ }
 }

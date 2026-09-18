@@ -1,0 +1,56 @@
+{
+  "id": 1,
+  "question": "The dot plot shows the number of birds recorded at each of $8$ feeding stations during a one-hour count. What is the mean number of birds recorded per station?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 2,
+          "count": 3
+        },
+        {
+          "value": 4,
+          "count": 2
+        },
+        {
+          "value": 6,
+          "count": 2
+        },
+        {
+          "value": 10,
+          "count": 1
+        }
+      ],
+      "xMin": 1,
+      "xMax": 11,
+      "xLabel": "Number of birds"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$4.5$"
+    },
+    {
+      "id": "D",
+      "text": "$9$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the value with the tallest stack of dots, which is the mode, not the mean.",
+    "B": "reports the median, the average of the fourth and fifth ordered values.",
+    "D": "divides the total by $4$, the number of distinct values marked with dots, instead of by the $8$ dots."
+  },
+  "correctAnswer": "C",
+  "hint": "Every dot is one station, so the total number of dots is the number you divide by.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** The dots give $2, 2, 2, 4, 4, 6, 6, 10$. The sum is $36$, and $\\frac{36}{8} = 4.5$.\n\n**The Full Solution:**\nStep 1: Read one value for each dot: $2, 2, 2, 4, 4, 6, 6, 10$. That is $8$ values, one per station.\nStep 2: Add them: $3(2) + 2(4) + 2(6) + 10 = 6 + 8 + 12 + 10 = 36$.\nStep 3: Divide by the number of stations: $\\frac{36}{8} = 4.5$. Check: $4.5$ lies above the cluster at $2$ because the single station with $10$ birds pulls the average up. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): reports the value with the tallest stack of dots, which is the mode, not the mean.\n* Choice B ($4$): reports the median, the average of the fourth and fifth ordered values.\n* Choice D ($9$): divides the total by $4$, the number of distinct values marked with dots, instead of by the $8$ dots.\n\n**Test Day Takeaway:** On a dot plot the divisor is the number of dots, not the number of labeled positions. Count the stacks fully before dividing."
+}

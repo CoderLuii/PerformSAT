@@ -1,0 +1,60 @@
+{
+ "id": "bank-geo-028",
+ "question": "A hardware shop sells the steel shelf bracket drawn below; its dimensions are marked in centimeters. How long is the sloped edge that runs from the wall anchor to the shelf tip?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     18,
+     0
+    ],
+    [
+     18,
+     10.392
+    ]
+   ],
+   "rightAngleVertex": 1,
+   "labels": [
+    "30°",
+    "",
+    ""
+   ],
+   "sideLabels": [
+    "18",
+    "",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6\\sqrt{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$9\\sqrt{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$12\\sqrt{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$36\\sqrt{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the short leg opposite the 30 degree angle instead of the hypotenuse",
+  "B": "treats 18 as the hypotenuse, halving to 9 and multiplying by root 3",
+  "D": "doubles 18 first and then multiplies by root 3"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: 30-60-90 Triangle**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The $18$ cm leg is the long leg, so the short leg is $\\frac{18}{\\sqrt{3}}=6\\sqrt{3}$ and the hypotenuse is $12\\sqrt{3}$ cm.\n\n**The Full Solution:**\n\nStep 1: Identify the sides. In a $30$-$60$-$90$ triangle the sides are $x$, $x\\sqrt{3}$, $2x$, and the leg adjacent to the $30°$ angle is the long leg $x\\sqrt{3}$.\n\nStep 2: Solve for $x$. $x\\sqrt{3}=18$ gives $x=\\frac{18}{\\sqrt{3}}=6\\sqrt{3}$ cm.\n\nStep 3: The hypotenuse is $2x=12\\sqrt{3}$ cm, about $20.8$ cm.\n\nCheck: $(6\\sqrt{3})^{2}+18^{2}=108+324=432=(12\\sqrt{3})^{2}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($6\\sqrt{3}$): reports the short leg opposite the $30°$ angle rather than the sloped edge.\n* Choice B ($9\\sqrt{3}$): treats $18$ as the hypotenuse, halving it to $9$ and then multiplying by $\\sqrt{3}$.\n* Choice D ($36\\sqrt{3}$): doubles $18$ to $36$ and then multiplies by $\\sqrt{3}$, applying both ratios to the same side.\n\n**Test Day Takeaway:** Name each given side before using the ratio: the leg touching the $30°$ angle is the long leg, not the hypotenuse."
+}

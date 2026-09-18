@@ -1,0 +1,29 @@
+{
+  "id": 10,
+  "question": "At a regional track meet, $600$ athletes competed. Of these athletes, $35\\%$ competed in the distance events, and $\\frac{2}{5}$ of the distance athletes set a personal best. Among the athletes who did not compete in the distance events, $150$ set a personal best. If one of the $600$ athletes is selected at random, what is the probability that the selected athlete set a personal best?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.14$"
+    },
+    {
+      "id": "B",
+      "text": "$0.25$"
+    },
+    {
+      "id": "C",
+      "text": "$0.39$"
+    },
+    {
+      "id": "D",
+      "text": "$0.60$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "counts only the 84 distance athletes who set a personal best, giving 84/600",
+    "B": "counts only the 150 non-distance athletes who set a personal best, giving 150/600",
+    "D": "adds the two rates 0.35 and 0.25 instead of building the total count first"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Distance athletes: $0.35(600) = 210$, of whom $\\frac{2}{5}(210) = 84$ set a personal best. Add the $150$ others: $\\frac{84 + 150}{600} = 0.39$.\n\n**The Full Solution:**\nStep 1: The number of distance athletes is $35\\%$ of $600$, which is $0.35(600) = 210$. The remaining $600 - 210 = 390$ athletes did not compete in the distance events.\nStep 2: Of the $210$ distance athletes, $\\frac{2}{5}$ set a personal best, so $\\frac{2}{5}(210) = 84$ did. Among the other $390$ athletes, $150$ set a personal best. In total, $84 + 150 = 234$ athletes set a personal best.\nStep 3: A marginal probability divides the total in the category by the overall total: $\\frac{234}{600} = 0.39$. Check: $234$ is less than $600$ and more than either group alone, so a value between $0.25$ and $0.60$ is expected ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.14$): uses $\\frac{84}{600}$, the joint probability of being a distance athlete and setting a personal best. It ignores the $150$ athletes from the other group.\n* Choice B ($0.25$): uses $\\frac{150}{600}$, counting only the non-distance athletes who set a personal best. It ignores the $84$.\n* Choice D ($0.60$): adds $0.35$ and $0.25$. Those two rates are taken over different groups, so adding them does not produce a probability for the whole meet.\n\n**Test Day Takeaway:** A marginal probability needs one complete count across every subgroup. Build the count group by group, add, and only then divide by the overall total."
+}

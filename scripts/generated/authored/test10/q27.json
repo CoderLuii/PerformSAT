@@ -9,34 +9,33 @@
  "studentNotes": {
   "intro": "While researching a topic, a student has taken the following notes:",
   "bullets": [
-   "Ozone is a molecule made of three oxygen atoms.",
-   "In the upper atmosphere (the stratosphere), a layer of ozone absorbs much of the Sun's ultraviolet radiation.",
-   "This stratospheric ozone shields living things on the surface from radiation that can damage DNA.",
-   "Near the ground, ozone forms when sunlight reacts with pollutants from vehicles and industry.",
-   "At ground level, ozone is a component of smog and irritates the lungs, harming people with respiratory conditions.",
-   "Scientists therefore describe ozone as beneficial high in the atmosphere but harmful where people breathe."
+   "Tea plants grown in full sun produce leaves rich in catechins, compounds that taste brisk and astringent.",
+   "For gyokuro, a prized Japanese green tea, growers cover the plants with shading screens for about three weeks before harvest.",
+   "Shading sharply reduces the light reaching the leaves.",
+   "Shaded leaves accumulate more theanine, an amino acid associated with sweetness and savoriness, and fewer catechins.",
+   "Gyokuro brews into a tea described as sweet and full-bodied rather than brisk."
   ],
-  "goal": "The student wants to emphasize the contrast between ozone's effects in the upper atmosphere and at ground level."
+  "goal": "The student wants to emphasize the difference between shaded and sun-grown tea leaves."
  },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Ozone, a molecule of three oxygen atoms, plays different roles depending on where in the atmosphere it is found."
+   "text": "Growers of gyokuro, a prized and expensive Japanese green tea, keep their plants covered with special shading screens for roughly three weeks before the harvest begins."
   },
   {
    "id": "B",
-   "text": "Stratospheric ozone shields life by absorbing the Sun's ultraviolet radiation, whereas ozone formed from pollution near the ground is a component of smog that harms the lungs."
+   "text": "Whereas sun-grown tea leaves are rich in astringent catechins, leaves shaded before harvest accumulate more theanine and brew into a sweeter, fuller-bodied tea."
   },
   {
    "id": "C",
-   "text": "High in the stratosphere, a layer of ozone absorbs ultraviolet radiation that would otherwise damage the DNA of living things on the surface."
+   "text": "Theanine is an amino acid that is associated with sweetness and savoriness in brewed tea."
   },
   {
    "id": "D",
-   "text": "Near the ground, ozone forms when sunlight reacts with pollutants released by vehicles and industry, contributing to smog."
+   "text": "Gyokuro, which is described as sweet and full-bodied rather than brisk, is among the most prized green teas produced in Japan."
   }
  ],
  "correctAnswer": "B",
- "explanation": "Choice B is correct. The goal is to emphasize the contrast between ozone's effects high in the atmosphere and at ground level, so the best choice sets the two against each other in one statement. Choice B does this: stratospheric ozone shields life by absorbing ultraviolet radiation, whereas ground-level ozone is harmful smog. Choice A gestures at \"different roles\" but states neither side of the contrast. Choice C gives only the protective, high-altitude side, and Choice D gives only the harmful, ground-level side, so neither draws the comparison the goal calls for."
+ "explanation": "**Choice B is correct.** The goal is a difference, so the sentence must put the two kinds of leaf side by side, and B does: sun-grown leaves rich in astringent catechins on one side, shaded leaves higher in theanine and sweeter in the cup on the other.\n\n**The Full Solution:**\n- The notes contrast two growing conditions (full sun versus screens), two chemistries (catechins versus theanine), and two flavors (brisk versus sweet).\n- B's \"Whereas... \" frame captures the contrast across both chemistry and flavor, using only information from the notes.\n\n**Why the other choices are wrong:**\n- A: It describes the shading practice alone, with no mention of sun-grown leaves, so no difference is drawn.\n- C: It defines theanine without comparing leaf types at all.\n- D: It characterizes gyokuro's flavor and prestige but is silent about sun-grown tea, leaving the comparison one-sided."
 }

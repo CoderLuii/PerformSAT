@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "In the $xy$-plane, the graph of $x^2 + y^2 = 8$ is a circle centered at the origin, and the line $y = x + 4$ is graphed in the same plane. At how many points do the line and the circle intersect?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Zero"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "How far is the line from the center compared with the radius?",
+ "distractorNotes": {
+  "A": "misreads the constant as no solution",
+  "C": "assumes a line always cuts twice",
+  "D": "confuses tangency with coincidence"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~40s):** Substituting gives $x^2 + (x + 4)^2 = 8$, which simplifies to $(x + 2)^2 = 0$ — a repeated root, so the line is tangent and meets the circle once.\n\n**The Full Solution:**\nStep 1: Substitute $y = x + 4$ into the circle: $x^2 + (x + 4)^2 = 8$.\nStep 2: Expand and collect: $2x^2 + 8x + 16 = 8$, so $2x^2 + 8x + 8 = 0$ and $x^2 + 4x + 4 = 0$.\nStep 3: This factors as $(x + 2)^2 = 0$, whose only solution is $x = -2$, giving the single point $(-2, 2)$. Check: the discriminant $4^2 - 4(1)(4) = 0$, the signature of tangency.\n\n**Why the wrong answers are tempting:**\n* Choice A (Zero): stops at $2x^2 + 8x + 8 = 0$ and reads the positive constant as evidence of no solution.\n* Choice C (Exactly two): assumes a line that reaches the circle must cross it twice; here the distance from the origin to the line is $2\\sqrt{2}$, exactly the radius.\n* Choice D (Infinitely many): treats a tangent line as if it lay along the circle.\n\n**Test Day Takeaway:** Substitute, collect into a quadratic, and read the discriminant: positive gives two points, zero gives one, negative gives none."
+}

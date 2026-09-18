@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-073",
+  "question": "The function $g$ is defined by $g(x) = \\frac{2x}{x - 9}$. Which of the following describes all values of $x$ for which $g(x)$ is defined?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "All real numbers"
+    },
+    {
+      "id": "B",
+      "text": "All real numbers except $-9$"
+    },
+    {
+      "id": "C",
+      "text": "All real numbers except $0$"
+    },
+    {
+      "id": "D",
+      "text": "All real numbers except $9$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "ignores the denominator",
+    "B": "sign slip solving x - 9 = 0",
+    "C": "excludes the zero of the numerator"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Domain (Denominator Restriction)**\n\n**Choice D is correct.**\n\n**The Fast Way (~5s):** A fraction is undefined only where its denominator is $0$: $x - 9 = 0$ at $x = 9$. Every other real number is allowed.\n\n**The Full Solution:**\nStep 1: The only operation in $g$ that can fail is division, which is undefined when the denominator equals $0$.\nStep 2: Solve $x - 9 = 0$: $x = 9$. At that input, $g(9) = \\frac{18}{0}$, undefined.\nStep 3: The numerator $2x$ never restricts the domain; for example, $g(0) = \\frac{0}{-9} = 0$ is a perfectly good output. So the domain is all real numbers except $9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (all real numbers): ignores the denominator; $x = 9$ produces division by zero.\n* Choice B (except $-9$): a sign slip when solving $x - 9 = 0$; the zero of the denominator is $9$, not $-9$.\n* Choice C (except $0$): excludes the zero of the numerator, but a zero numerator just makes $g(x) = 0$, which is defined.\n\n**Test Day Takeaway:** Domain restrictions come from the denominator, not the numerator: set the denominator equal to zero, solve, and exclude exactly those inputs."
+}

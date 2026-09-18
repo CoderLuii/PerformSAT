@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
- "question": "According to the text, what does Holl argue the standard single-migration narrative has obscured?",
+ "type": "multiple-choice",
+ "passage": "In the shallow lakes of the Valley of Mexico, Aztec farmers built chinampas: rectangular plots raised above the water on layers of mud and decaying vegetation, anchored by willow trees planted along their edges. The canals between plots watered the crops continuously and supplied fresh muck that farmers dredged up and spread as fertilizer, making several harvests a year possible. By the fifteenth century, chinampa fields covered thousands of acres and supplied a large share of the food eaten in Tenochtitlan, then among the largest cities in the world.",
+ "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "That communities in the region combined herding, fishing, and cereal cultivation in locally varied ways that changed over thousands of years."
+   "text": "Chinampa agriculture was a highly productive farming system that helped feed one of the largest cities of its era."
   },
   {
    "id": "B",
-   "text": "That radiocarbon dating cannot reliably establish when farming first reached the southern edge of the Sahara."
+   "text": "Aztec farmers built chinampas primarily to control seasonal flooding in the shallow lakes of the Valley of Mexico."
   },
   {
    "id": "C",
-   "text": "That the spread of farmers across West Africa happened far more rapidly than earlier scholars had assumed."
+   "text": "The canals that separated chinampas were more valuable as routes for transporting harvested crops than as sources of irrigation and fertilizer for the plots."
   },
   {
    "id": "D",
-   "text": "That pottery styles are a more trustworthy guide to the past than animal bones or radiocarbon dates."
+   "text": "Chinampa agriculture declined once the population of Tenochtitlan grew too large for locally grown food to support."
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A. The passage states that Holl rejects the picture of \"a single wave of farmers spreading southward\" and argues that this narrative has hidden \"a more complicated picture\": communities experimented with combinations of herding, fishing, and cereal cultivation, adjusting as the climate dried and new crops appeared. A restates that obscured complexity directly. B raises a doubt about radiocarbon dating the passage never voices; Holl uses such dates as evidence. C describes a faster migration, but Holl questions the single-migration story itself, not its speed. D ranks pottery above other evidence, a comparison the passage does not make, since it lists the three kinds of evidence together.",
+ "explanation": "**Choice A is correct.** The text builds to one point: the chinampa system was extraordinarily productive — continuous water, constant fertilizer, several harvests a year — and on that productivity a great city fed itself.\n\n**The Full Solution:**\n- The first two sentences explain the system's design and why it yielded so much.\n- The final sentence delivers the payoff, scaling the system up to thousands of acres and tying it to Tenochtitlan's food supply.\n- A captures both halves: how productive the system was and what that productivity accomplished.\n\n**Why the other choices are wrong:**\n- B: Flood control is never mentioned; the text presents chinampas as a way of farming the lakes, not taming them.\n- C: Transportation on the canals is never discussed, so no such ranking of the canals' uses can be the main idea.\n- D: The text describes the system at its height and says nothing about a decline.",
  "_meta": {
-  "anchor": "Augustin Holl — African archaeology; West African pastoralism and early settlement; local economic variation vs. single migration"
- },
- "passage": "In a 2018 book on early African settlements, the archaeologist Augustin Holl revisits the long history of pastoral and agricultural life along the southern edge of the Sahara. Drawing on radiocarbon dates, cattle and sheep bone assemblages, and pottery sequences from a wide range of regional excavations, Holl argues that the standard narrative — a single wave of farmers spreading southward across West Africa — has obscured a more complicated picture. Across several thousand years, communities in the region experimented with different combinations of herding, fishing, and cereal cultivation, adjusting their economies as the climate dried and as new crops became available.",
- "type": "multiple-choice"
+  "anchor": "Chinampa raised-field agriculture in the Valley of Mexico — productivity feeding Tenochtitlan"
+ }
 }

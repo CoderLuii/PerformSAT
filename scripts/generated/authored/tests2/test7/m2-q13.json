@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "A drone flies in a straight line from the point $(3, k)$ to the point $(11, 1)$ on a coordinate map, covering $10$ units, where $k$ exceeds $1$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$7$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes the negative square root, k - 1 = -6, ignoring the condition that k exceeds 1",
+  "B": "adds the coordinate differences instead of their squares, solving 8 + (k - 1) = 10",
+  "C": "solves (k - 1)^2 = 36 to get k - 1 = 6 and reports 6 instead of adding 1 back"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** The horizontal leg is $8$, so the vertical leg satisfies $8^2+(k-1)^2=10^2$; that gives $(k-1)^2=36$ and, since $k>1$, $k=7$.\n\n**The Full Solution:**\nStep 1: Set up the distance formula. $\\sqrt{(11-3)^2+(1-k)^2}=10$, so $64+(1-k)^2=100$.\nStep 2: Isolate the squared term. $(1-k)^2=36$, so $1-k=\\pm 6$ and $k=-5$ or $k=7$.\nStep 3: Apply the restriction. Only $k=7$ satisfies $k>1$. Check: $\\sqrt{8^2+6^2}=\\sqrt{64+36}=\\sqrt{100}=10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-5$): keeps the negative root $1-k=6$, which gives $k=-5$ — a real solution of the equation, but the problem states $k>1$.\n* Choice B ($3$): adds the leg lengths instead of their squares, solving $8+(k-1)=10$; distance is never the sum of the legs.\n* Choice C ($6$): solves $(k-1)^2=36$ correctly but reports $k-1=6$ rather than $k$ itself.\n\n**Test Day Takeaway:** A distance question with a variable coordinate always produces two roots. Read the restriction printed in the stem before you choose — it is there precisely because both roots satisfy the equation.\n"
+}

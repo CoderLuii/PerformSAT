@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-054",
+ "question": "A field crew records two relationships between the quantities $x$ and $y$ as $4x - 3y = 17$ and $2x + 3y = 13$. Adding the left sides of the two equations and adding their right sides eliminates one variable. Which equation results?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2x - 6y = 4$"
+  },
+  {
+   "id": "B",
+   "text": "$6x - 6y = 30$"
+  },
+  {
+   "id": "C",
+   "text": "$6x + 6y = 30$"
+  },
+  {
+   "id": "D",
+   "text": "$6x = 30$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the two equations instead of adding them",
+  "B": "adds the x-terms and constants but subtracts the y-terms",
+  "C": "adds the sizes of the y-coefficients, ignoring that -3y and 3y cancel"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Elimination by Addition**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The $y$-terms are $-3y$ and $3y$, which cancel, leaving $6x = 30$.\n\n**The Full Solution:**\nStep 1: Add the left sides: $(4x - 3y) + (2x + 3y) = 6x + 0y = 6x$.\nStep 2: Add the right sides: $17 + 13 = 30$.\nStep 3: The result is $6x = 30$. Check: this gives $x = 5$, and substituting into $2x + 3y = 13$ gives $3y = 3$, so $y = 1$, which also satisfies $4(5) - 3(1) = 17$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2x - 6y = 4$): subtracts the two equations instead of adding them, which keeps $y$ in play.\n* Choice B ($6x - 6y = 30$): adds the $x$-terms and the constants but subtracts the $y$-terms.\n* Choice C ($6x + 6y = 30$): adds the sizes of the $y$-coefficients instead of letting $-3y$ and $3y$ cancel.\n\n**Test Day Takeaway:** Addition eliminates a variable only when its coefficients are exact opposites — check the signs before adding."
+}

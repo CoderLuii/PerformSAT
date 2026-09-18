@@ -1,0 +1,48 @@
+{
+ "id": "bank-alg-252",
+ "question": "The table gives the number of grams of protein in one serving of each of two foods. A meal consists of $8$ servings of these foods and contains a total of $44$ grams of protein. How many servings of rice are in the meal?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Food",
+    "Protein per serving (grams)"
+   ],
+   "rows": [
+    [
+     "Lentils",
+     "10"
+    ],
+    [
+     "Rice",
+     "4"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$11$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "number of servings of lentils (wrong variable)",
+  "C": "the total number of servings, never split",
+  "D": "44 divided by 4 as if the meal were all rice"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Eight servings of rice alone would give $32$ g. The extra $12$ g comes from swapping rice for lentils at $+6$ g each, so $2$ servings are lentils and $6$ are rice.\n\n**The Full Solution:**\nStep 1: Let $\\ell$ be the servings of lentils and $r$ the servings of rice. Then $\\ell + r = 8$ and $10\\ell + 4r = 44$.\nStep 2: Substitute $\\ell = 8 - r$: $10(8 - r) + 4r = 44$, so $80 - 6r = 44$ and $r = 6$.\nStep 3: Then $\\ell = 2$. Check: $10(2) + 4(6) = 20 + 24 = 44$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): the number of servings of lentils, not rice.\n* Choice C ($8$): the total number of servings; the meal is a mix of the two foods.\n* Choice D ($11$): $44 \\div 4$, which assumes the whole meal is rice and ignores the $8$-serving total.\n\n**Test Day Takeaway:** Two facts, two equations: one for the count, one for the protein. Solve, then confirm you are reporting the food the question names."
+}

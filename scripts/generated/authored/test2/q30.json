@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 2,
-  "passage": "Typographers distinguish legibility, the ease with which individual letters can be told apart, from readability, the ease with which a block of text can be read at length. The two often pull in different directions: a typeface whose letters are maximally distinct in isolation can prove tiring across a full page, because comfortable reading turns out to be ______ rhythms of spacing and repetition that operate well above the level of the single character.",
+  "passage": "The ease with which a listener follows a single voice across a crowded room belies the difficulty of the underlying feat. The sound arriving at the ear is one merged waveform; nothing in the physics labels which frequencies belong to which speaker. To follow a conversation, the auditory system must ______ that mixture — grouping harmonics that rise and fall together, tracking continuities of pitch and timbre, and assigning each strand to its probable source — and it must do so continuously, revising its solution as speakers pause, overlap, and interrupt one another.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "indifferent to"
+      "text": "amplify"
     },
     {
       "id": "B",
-      "text": "predicated on"
+      "text": "parse"
     },
     {
       "id": "C",
-      "text": "interrupted by"
+      "text": "suppress"
     },
     {
       "id": "D",
-      "text": "familiar to"
+      "text": "replicate"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"predicated on.\" The sentence argues that comfortable reading depends on large-scale rhythms of spacing and repetition rather than on the distinctness of single letters; \"predicated on\" means founded or dependent on, which captures that relationship exactly. Choice A, \"indifferent to,\" reverses the point: the passage says those rhythms are what make reading comfortable, not something reading ignores. Choice C, \"interrupted by,\" wrongly casts the rhythms as a disruption, when the passage treats them as the basis of readability. Choice D, \"familiar to,\" does not fit grammatically or logically—reading is not \"familiar to\" rhythms—and misses the relationship of dependence the sentence sets up."
+  "explanation": "**Choice B is correct.** The operations listed after the dash — grouping, tracking, assigning strands to sources — describe breaking a merged whole into its meaningful parts, which is precisely what \"parse\" means.\n\n**The Full Solution:**\n- The problem is stated first: the ear receives \"one merged waveform\" with no labels attaching frequencies to speakers.\n- The material between the dashes defines the blank operationally: separate the mixture into components and assign each to its likely source.\n- \"Parse\" — to analyze something into its constituent parts and their relations — is the verb that covers exactly those operations.\n\n**Why the other choices are wrong:**\n- A: \"amplify\" only makes the mixture louder; a louder merged waveform is just as unlabeled and unseparated as before.\n- C: \"suppress\" describes discarding sound, but the task is to sort every strand, including the one the listener wants to keep — suppressing the mixture would silence the target voice along with the rest.\n- D: \"replicate\" means to copy; duplicating the merged waveform brings the listener no closer to knowing which frequencies belong to which speaker."
 }

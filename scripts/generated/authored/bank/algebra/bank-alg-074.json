@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-074",
+ "question": "A tuning routine evaluates the function $v$, defined by $v(t) = \\frac{140}{3t - 24}$, at each fader position $t$ between $0$ and $20$. At which fader position does the routine fail to produce a value?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves 3t = -24 instead of 3t = 24",
+  "B": "reports the coefficient of t rather than the position",
+  "D": "stops at 3t = 24 and reports 24 without dividing"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Find Undefined Point (Denominator Zero)**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The routine fails when the denominator is zero: $3t - 24 = 0$, so $t = 8$.\n\n**The Full Solution:**\nStep 1: A quotient has no value when its denominator is zero, so set $3t - 24 = 0$.\nStep 2: Add $24$ to both sides: $3t = 24$.\nStep 3: Divide by $3$: $t = 8$. Check: at $t = 8$ the denominator is $3(8) - 24 = 0$, while at $t = 7$ it is $-3$ and the routine returns $-\\frac{140}{3}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$): solves $3t = -24$, moving the constant the wrong way.\n* Choice B ($3$): reports the coefficient of $t$ instead of solving for $t$.\n* Choice D ($24$): stops at $3t = 24$ and never divides by $3$.\n\n**Test Day Takeaway:** Set only the denominator to zero — the numerator plays no part in where a quotient is undefined."
+}

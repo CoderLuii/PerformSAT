@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "craft-and-structure",
  "skill": "words-in-context",
+ "type": "multiple-choice",
+ "passage": "Many oak species do not bear steady annual crops of acorns; instead, whole populations across a region produce almost nothing for several years and then release an enormous crop all at once. Ecologists argue that the value of these mast years lies precisely in their ______: seed-eating animals, unable to build up their numbers during the lean years in between, are overwhelmed when the crop finally arrives, and a large fraction of the acorns escapes them.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "restore"
+   "text": "abundance"
   },
   {
    "id": "B",
-   "text": "inherit"
+   "text": "duration"
   },
   {
    "id": "C",
-   "text": "exaggerate"
+   "text": "regularity"
   },
   {
    "id": "D",
-   "text": "defy"
+   "text": "intermittency"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D, \"defy.\" The sentence contrasts the Gee's Bend quilts with conventional American quilting: critics expected humble craft but found \"bold, improvisational geometry,\" and the blank is set against \"rather than to imitate it.\" That contrast calls for a verb meaning to go against or break with the prized symmetry, and \"defy\" fits precisely. \"Imitate\" is named as the rejected option, so \"inherit\" (which points toward continuity) runs the wrong way; \"restore\" implies returning the symmetry to an earlier state; and \"exaggerate\" would mean amplifying the conventional symmetry rather than departing from it. Only \"defy\" captures the break the sentence draws.",
+ "explanation": "**Choice D is correct.** The mechanism the colon describes depends on the lean years as much as on the flood: because crops come only at intervals, predator populations stay small and are swamped when a crop arrives. That on-and-off rhythm is intermittency.\n\n**The Full Solution:**\n- The blank must name the feature of mast years in which their \"value... lies precisely.\"\n- The explanation that follows credits the gap between crops — predators \"unable to build up their numbers during the lean years\" — so the valuable feature is the alternation itself, not any single year's size.\n\n**Why the other choices are wrong:**\n- A: \"Abundance\" is the surface trap: the crop is enormous, but a crop that was abundant every year would let predator populations grow to match it, defeating the strategy the text describes.\n- B: \"Duration\" points to how long a mast year lasts, which the text never discusses.\n- C: \"Regularity\" is closer to the opposite of the boom-and-bust pattern being described.",
  "_meta": {
-  "anchor": "Gee's Bend quilters (Alabama); improvisational geometry; major museum exhibition beginning 2002 [theme: American quilt history]"
- },
- "passage": "For generations, the quilters of Gee's Bend, an isolated Black community in a bend of the Alabama River, pieced bedcovers from worn work clothes and feed sacks because little else was available. When their quilts were exhibited in major museums beginning in 2002, critics who had expected humble craft were struck instead by the bold, improvisational geometry of the designs, which seemed to ______ the careful symmetry prized in conventional American quilting rather than to imitate it.",
- "type": "multiple-choice"
+  "anchor": "Mast seeding in oaks — predator satiation via intermittent acorn crops (unnamed ecologists)"
+ }
 }

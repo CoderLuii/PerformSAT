@@ -1,0 +1,55 @@
+{
+ "id": 14,
+ "question": "A membership statement lists the total monthly charge for several numbers of guest passes, as shown in the table, and the charge rises at a constant rate for each additional pass. Which equation gives the total charge $C$, in dollars, for $n$ guest passes?",
+ "diagram": {
+  "type": "table",
+  "params": {
+   "xHeader": "Guest passes",
+   "yHeader": "Total charge (dollars)",
+   "rows": [
+    [
+     "2",
+     "34"
+    ],
+    [
+     "5",
+     "55"
+    ],
+    [
+     "9",
+     "83"
+    ],
+    [
+     "14",
+     "118"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$C = 17n$"
+  },
+  {
+   "id": "B",
+   "text": "$C = 20n + 7$"
+  },
+  {
+   "id": "C",
+   "text": "$C = 7n$"
+  },
+  {
+   "id": "D",
+   "text": "$C = 7n + 20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the first total by the first pass count, 34/2 = 17, as though there were no fixed charge",
+  "B": "swaps the per-pass rate and the fixed monthly charge",
+  "C": "uses the correct per-pass rate but drops the fixed monthly charge"
+ },
+ "correctAnswer": "D",
+ "hint": "Two rows are enough to find what one additional guest pass costs.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~45s):** From $(2,\\ 34)$ to $(5,\\ 55)$ the charge rises \\$21 over $3$ passes, so each pass costs \\$7, and $34 - 7(2) = 20$ is the fixed charge.\n\n**The Full Solution:**\nStep 1: The pass counts are not evenly spaced, so use two rows: the rate is $\\frac{55 - 34}{5 - 2} = \\frac{21}{3} = 7$ dollars per pass.\nStep 2: Write $C = 7n + b$ and substitute $(2,\\ 34)$: $34 = 14 + b$, so $b = 20$ dollars.\nStep 3: The equation is $C = 7n + 20$.\n\nCheck: At $n = 14$ the equation gives $7(14) + 20 = 98 + 20 = 118$ dollars, matching the last row. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($C = 17n$): divides the first total by the first pass count, which folds the fixed charge into the rate; at $n = 14$ it predicts \\$238.\n* Choice B ($C = 20n + 7$): swaps the per-pass rate and the fixed charge.\n* Choice C ($C = 7n$): has the right rate but leaves out the \\$20 charged regardless of passes.\n\n**Test Day Takeaway:** With unevenly spaced inputs, compute the rate from two rows before hunting for the constant term."
+}

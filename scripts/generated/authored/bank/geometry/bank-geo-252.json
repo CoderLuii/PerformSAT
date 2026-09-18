@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-252",
+ "question": "A shade sail stretched over a campus courtyard has the shape of a right triangle in which one acute angle measures $30°$ and the other measures $60°$. The shortest side of the sail measures $s$ meters, and rope trim runs along all three sides. Which expression represents the total length, in meters, of the trim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(1+\\sqrt{3})s$"
+  },
+  {
+   "id": "B",
+   "text": "$(2+\\sqrt{3})s$"
+  },
+  {
+   "id": "C",
+   "text": "$(3+\\sqrt{3})s$"
+  },
+  {
+   "id": "D",
+   "text": "$(3+2\\sqrt{3})s$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds only the two legs and omits the hypotenuse 2s",
+  "B": "adds the hypotenuse and long leg but omits the shortest side",
+  "D": "uses 2s times root 3 for the side opposite the 60 degree angle"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: 30-60-90 Triangle**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The three sides are $s$, $s\\sqrt{3}$, and $2s$, and $s+s\\sqrt{3}+2s=(3+\\sqrt{3})s$.\n\n**The Full Solution:**\n\nStep 1: Write the sides in terms of the shortest one. With shortest side $s$, the long leg is $s\\sqrt{3}$ and the hypotenuse is $2s$.\n\nStep 2: Add all three. $s+s\\sqrt{3}+2s$.\n\nStep 3: Combine like terms. The rational terms give $3s$, so the perimeter is $(3+\\sqrt{3})s$ meters.\n\nCheck: with $s=2$ the sides are $2$, $2\\sqrt{3}\\approx3.46$, and $4$, summing to about $9.46$, and $(3+\\sqrt{3})(2)\\approx9.46$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($(1+\\sqrt{3})s$): adds only the two legs and leaves the hypotenuse $2s$ out of the perimeter.\n* Choice B ($(2+\\sqrt{3})s$): adds the hypotenuse and the long leg but omits the shortest side.\n* Choice D ($(3+2\\sqrt{3})s$): uses $2s\\sqrt{3}$ for the side opposite the $60°$ angle, doubling the long leg.\n\n**Test Day Takeaway:** Express every side in terms of the shortest one first; the perimeter is then a single sum of like terms."
+}

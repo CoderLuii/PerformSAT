@@ -6,30 +6,19 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 1,
-  "passage": "The following text is adapted from Rabindranath Tagore's 1912 collection \"Gitanjali (Song Offerings).\" The speaker addresses a divine listener.\n\nWhere the mind is without fear and the head is held high; where knowledge is free; where the world has not been broken up into fragments by narrow domestic walls; where words come out from the depth of truth; where tireless striving stretches its arms towards perfection; where the clear stream of reason has not lost its way into the dreary desert sand of dead habit; where the mind is led forward by thee into ever-widening thought and action — into that heaven of freedom, my Father, let my country awake.",
+  "passage": "The following text is from Jerome K. Jerome's 1889 novel Three Men in a Boat. The narrator is spending an evening with his friends.\n\nThere were four of us—George, and William Samuel Harris, and myself, and Montmorency. We were sitting in my room, smoking, and talking about how bad we were—bad from a medical point of view I mean, of course. We were all feeling seedy, and we were getting quite nervous about it. Harris said he felt such extraordinary fits of giddiness come over him at times, that he hardly knew what he was doing; and then George said that he had fits of giddiness too, and hardly knew what he was doing.",
   "question": "Which choice best states the main purpose of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "To express the speaker's prayer that his country awaken into the freedom of mind and open thought he has just described."
-    },
-    {
-      "id": "B",
-      "text": "To describe the social and educational reforms that have already begun to transform the speaker's country."
-    },
-    {
-      "id": "C",
-      "text": "To warn the divine listener that habit and division have made it impossible for the speaker's country to change."
-    },
-    {
-      "id": "D",
-      "text": "To list the daily disciplines a person must practice in order to lead a life free of fear and dead habit."
-    }
+    { "id": "A", "text": "To introduce a group of companions by portraying, with gentle humor, their shared conviction that they are all unwell." },
+    { "id": "B", "text": "To explain the underlying medical condition responsible for the mysterious symptoms that the narrator and his two friends describe in turn." },
+    { "id": "C", "text": "To contrast the narrator's sturdy good health with the imagined ailments of his two anxious friends." },
+    { "id": "D", "text": "To recount the disagreement that arose when the friends could not agree on the cause of their dizziness." }
   ],
   "correctAnswer": "A",
-  "explanation": "The whole poem is a single address to a \"Father,\" cataloging the qualities of a free mind and culminating in the petition \"let my country awake.\" Its purpose is that prayer for awakening, which choice A captures. The country has not already begun to change (B), the speaker is hopeful rather than warning of impossibility (C), and the lines describe a hoped-for condition, not a set of daily disciplines (D).",
+  "explanation": "**Choice A is correct.** The passage's work is introduction: it names the four companions, sets the scene, and establishes the running joke — everyone is convinced he is ill, and the complaints echo one another word for word.\n\n**The Full Solution:**\n- The opening sentence performs a roll call of the group; the rest shows them at their characteristic occupation, cataloging their ailments.\n- The humor is in the repetition — George's giddiness copies Harris's down to \"hardly knew what he was doing\" — signaling that the illness is shared performance, not diagnosis.\n- Choice A captures both jobs: introducing the companions and conveying the comic self-pity that unites them.\n\n**Why the other choices are wrong:**\n- B: No condition is ever explained; the symptoms are traded, not diagnosed.\n- C: The narrator includes himself among the sufferers (\"how bad we were\"), so there is no healthy figure to contrast with.\n- D: The friends agree entirely — each claims the same complaint — and no dispute about causes occurs.",
   "_meta": {
+    "anchor": "Jerome K. Jerome — Three Men in a Boat (1889), opening; genuine public-domain excerpt",
     "quoteVerify": true,
-    "source": "Rabindranath Tagore, Gitanjali (1912), poem 35"
+    "source": "Jerome K. Jerome, Three Men in a Boat (To Say Nothing of the Dog), Chapter I (1889)"
   }
 }

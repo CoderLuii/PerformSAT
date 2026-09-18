@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-078",
+ "question": "A frog-egg count in a vernal pool is modeled by $F(t) = 90(1.44)^{t}$, with $t$ measured in years since the pool was surveyed, and the same model can be written as $F(t) = 90b^{2t}$ for a positive constant $b$. What is the value of $b$?",
+ "correctAnswer": "1.2",
+ "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**The correct answer is $1.2$.**\n\n**The Fast Way (~25s):** Matching $b^{2t}$ with $(1.44)^{t}$ gives $b^{2} = 1.44$, so $b = 1.2$.\n\n**The Full Solution:**\nStep 1: Write $b^{2t}$ as $\\left(b^{2}\\right)^{t}$, so the two models agree exactly when $b^{2} = 1.44$.\nStep 2: Since $b$ is positive, take the positive square root: $b = \\sqrt{1.44} = 1.2$.\nStep 3: The second form is $90(1.2)^{2t}$. Check: at $t = 1$, $90(1.2)^{2} = 90(1.44) = 129.6$, the same as $90(1.44)^{1}$ ✓\n\n**Common Mistakes:**\n* $0.72$ — halving $1.44$ instead of taking its square root, which is what a doubled exponent requires.\n* $2.88$ — doubling $1.44$, reversing the direction of the correction entirely.\n\n**Test Day Takeaway:** Doubling the exponent squares the base, so undoing it means a square root, never a division by $2$."
+}

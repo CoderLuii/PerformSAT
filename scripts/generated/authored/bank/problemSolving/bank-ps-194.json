@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-194",
+  "question": "The number of subscribers to a newsletter in its second year was $20\\%$ greater than the number in its first year, and the number in its third year was $25\\%$ less than the number in its second year. If the newsletter had $270$ subscribers in its third year, how many subscribers did it have in its first year?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$243$"
+    },
+    {
+      "id": "B",
+      "text": "$288$"
+    },
+    {
+      "id": "C",
+      "text": "$300$"
+    },
+    {
+      "id": "D",
+      "text": "$360$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies 270 by the net factor 0.9 instead of dividing",
+    "B": "undoes the 20% increase by multiplying 360 by 0.8",
+    "D": "stops at the second-year value, 270 ÷ 0.75"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Year 3 $=$ Year 1 $\\times 1.20 \\times 0.75 = 0.90 \\times$ Year 1. So Year 1 $= \\frac{270}{0.90} = 300$.\n\n**The Full Solution:**\nStep 1: Let $n$ be the first-year number. Second year: $1.20n$. Third year: $0.75(1.20n) = 0.90n$.\nStep 2: Set $0.90n = 270$ and solve: $n = \\frac{270}{0.90} = 300$.\nStep 3: Check forward: $300 \\times 1.20 = 360$, and $360 \\times 0.75 = 270$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($243$): multiplies $270$ by $0.90$ instead of dividing, running the net change forward a second time.\n* Choice B ($288$): finds the second-year value $360$ correctly but then multiplies by $0.80$ to \"undo\" a $20\\%$ increase; undoing requires dividing by $1.20$.\n* Choice D ($360$): stops at the second-year number, $\\frac{270}{0.75}$.\n\n**Test Day Takeaway:** Chain percent changes as multiplied factors, then divide by the product to go backward. Undoing \"$20\\%$ greater\" means dividing by $1.20$, not multiplying by $0.80$."
+}

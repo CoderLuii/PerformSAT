@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-259",
+ "question": "A square concrete pad supports a utility transformer, and a buried conduit runs in a straight line from one corner of the pad to the corner diagonally opposite. That conduit measures $26\\sqrt{2}$ feet, and a chain-link fence is to be installed along all four edges of the pad. How many feet of fencing are needed?",
+ "correctAnswer": "104",
+ "explanation": "**SAT Pattern: 45-45-90 Triangle**\n\n**The correct answer is $104$.**\n\n**The Fast Way (~35s):** The diagonal is a side times $\\sqrt{2}$, so the side is $26$ feet and the perimeter is $4(26)=104$ feet.\n\n**The Full Solution:**\n\nStep 1: Relate diagonal to side. The conduit is the hypotenuse of a $45$-$45$-$90$ triangle whose legs are sides of the square, so the diagonal is $s\\sqrt{2}$.\n\nStep 2: Solve for the side. $s\\sqrt{2}=26\\sqrt{2}$ gives $s=26$ feet.\n\nStep 3: Fence all four edges. $4s=4(26)=104$ feet.\n\nCheck: $26^{2}+26^{2}=1352$, and $(26\\sqrt{2})^{2}=676\\cdot2=1352$.\n\n**Common Mistakes:**\n\n* $26$: stops at the side length and never multiplies by the four edges.\n* $52$: doubles the side, fencing only two edges of the pad.\n* $676$: computes the pad's area, $26^{2}$, instead of its perimeter.\n\n**Test Day Takeaway:** Strip the $\\sqrt{2}$ off the diagonal to get the side, then answer the question actually asked — here, perimeter."
+}

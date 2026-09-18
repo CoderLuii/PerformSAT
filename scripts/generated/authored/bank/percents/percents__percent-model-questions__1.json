@@ -1,0 +1,61 @@
+{
+  "id": 1,
+  "question": "The bar graph shows the number of visitors to a museum on each of five days. On Thursday, $15\\%$ of the visitors bought a guidebook. How many of Thursday's visitors bought a guidebook?",
+  "diagram": {
+    "type": "barChart",
+    "params": {
+      "data": [
+        {
+          "label": "Mon",
+          "value": 120
+        },
+        {
+          "label": "Tue",
+          "value": 160
+        },
+        {
+          "label": "Wed",
+          "value": 200
+        },
+        {
+          "label": "Thu",
+          "value": 240
+        },
+        {
+          "label": "Fri",
+          "value": 280
+        }
+      ],
+      "xAxisLabel": "Day",
+      "yAxisLabel": "Number of visitors",
+      "yMax": 320,
+      "yStep": 40
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36$"
+    },
+    {
+      "id": "B",
+      "text": "$42$"
+    },
+    {
+      "id": "C",
+      "text": "$204$"
+    },
+    {
+      "id": "D",
+      "text": "$360$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads Friday's bar",
+    "C": "reports the complement",
+    "D": "multiplies by 1.5"
+  },
+  "correctAnswer": "A",
+  "hint": "Read Thursday's bar first, then apply the percent to that number only.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** Thursday's bar is at $240$, and $0.15 \\times 240 = 36$.\n\n**The Full Solution:**\nStep 1: Read the height of the Thursday bar: $240$ visitors.\nStep 2: Write the percent as a decimal and multiply: $0.15 \\times 240$.\nStep 3: $0.15 \\times 240 = 36$ visitors bought a guidebook. Check: $10\\%$ of $240$ is $24$ and $5\\%$ is $12$, and $24 + 12 = 36$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($42$): applies the percent to Friday's $280$ visitors, reading the neighboring bar.\n* Choice C ($204$): reports the $85\\%$ of Thursday's visitors who did NOT buy a guidebook.\n* Choice D ($360$): multiplies by $1.5$ instead of $0.15$, misplacing the decimal point.\n\n**Test Day Takeaway:** Identify the exact bar the question names before computing; neighboring bars are built to catch a quick glance."
+}

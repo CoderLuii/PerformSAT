@@ -5,66 +5,51 @@
  "band": 4,
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
+ "type": "multiple-choice",
+ "passage": "In change-detection experiments, an image and a slightly altered copy of it alternate on a screen. When the two versions alternate directly, viewers spot the difference almost at once, but when a brief blank screen interrupts each alternation, the change can go unnoticed for dozens of cycles. A team of cognitive scientists argued that the blank works by masking the motion signal that would otherwise drag attention straight to the changing region; attention must then search the scene piece by piece, guided by expectations about which parts of a scene matter. Their account predicts a specific pattern in the results: ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Mean alternation cycles before viewers detected the change",
+  "headers": [
+   "Change location",
+   "No blank inserted",
+   "Blank inserted"
+  ],
+  "rows": [
+   [
+    "Central to the scene's meaning",
+    "1.2",
+    "4.1"
+   ],
+   [
+    "Marginal to the scene's meaning",
+    "1.4",
+    "17.8"
+   ]
+  ]
+ },
  "question": "Which choice most effectively uses data from the table to complete the statement?",
  "choices": [
   {
    "id": "A",
-   "text": "Proteobacteria reached the single largest share recorded in the table, 41% under short-term warming, which shows that warming steadily favors the most abundant groups."
+   "text": "viewers detected central changes after an average of 1.2 cycles when no blank was inserted, the fastest detection in any condition."
   },
   {
    "id": "B",
-   "text": "the 'Other / unclassified' category, whose share held at 14% under control and short-term warming before falling to 11% in the long-term plots."
+   "text": "marginal changes took longer to detect than central changes in both conditions, by roughly the same margin in each."
   },
   {
    "id": "C",
-   "text": "Acidobacteria's share stayed essentially flat across the three categories (21%, 20%, 20%), which shows that warming has no effect on community composition."
+   "text": "inserting the blank had little effect on the detection of central changes, which shows that motion signals matter only for marginal ones."
   },
   {
    "id": "D",
-   "text": "Actinobacteria's share rose steadily with warming duration, from 26% in the control plots to 29% under short-term warming and 37% under long-term warming, while no other group shows so consistent a one-directional shift."
+   "text": "the blank slowed detection of both kinds of change, but far more for marginal changes (1.4 to 17.8 cycles) than for central ones (1.2 to 4.1) — the gap expected if attention, once deprived of motion signals, goes first to what a scene is about."
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D. The reader's claim is that warming reshapes the community most clearly when one follows a single group whose share moves steadily in one direction as warming continues. Supporting that means identifying a group with a consistent monotonic shift across the three duration columns, which D does: Actinobacteria rises 26% to 29% to 37%, and no other row moves so steadily in one direction. A cites the largest single cell (Proteobacteria at 41% under short-term warming), but a high share at one point — especially one that then falls back to 32% — says nothing about a steady one-directional shift. C correctly notes that Acidobacteria is flat but draws the unwarranted conclusion that warming has no effect, which the other rows contradict. B picks a real change in the 'Other' category, but that row (14, 14, 11) holds flat and then drops, not a steady one-directional shift.",
+ "explanation": "**Choice D is correct.** The account makes a two-part prediction — masking the motion signal should slow everything, and expectation-guided search should then favor central content — and D reads both parts off the table: detection slows in each row, and the slowdown is far larger for marginal changes (1.4 to 17.8) than for central ones (1.2 to 4.1).\n\n**The Full Solution:**\n- Without the blank, location barely matters (1.2 vs. 1.4): the motion signal finds the change either way.\n- With the blank, the interaction appears: central changes cost a few extra cycles, marginal ones more than a dozen — the signature of a piece-by-piece search that starts with what the scene is about.\n\n**Why the other choices are wrong:**\n- A: A single cell, however fast, exhibits no pattern and tests no prediction.\n- B: The table contradicts it — the margins differ enormously between conditions (0.2 cycles vs. 13.7).\n- C: A jump from 1.2 to 4.1 cycles is more than a threefold slowing, not \"little effect,\" and the account says motion signals matter for both kinds of change.",
  "_meta": {
-  "anchor": "Soil bacterial community under long-term experimental warming (unnamed research team); monotonic rise in Actinobacteria"
- },
- "passage": "At a long-term experiment, plots of forest soil have been warmed several degrees above normal using buried cables, some for as long as twenty years. Researchers tracked the relative abundance of four broad bacterial groups across plots warmed for different lengths of time. A reader argues that the data most clearly show warming reshaping the bacterial community when the comparison follows a single group whose share moves steadily in one direction as warming continues, namely _______",
- "questionTable": {
-  "type": "table",
-  "caption": "Mean relative abundance (% of total bacterial sequences) of four bacterial groups, by warming duration",
-  "headers": [
-   "Bacterial group",
-   "Control (0 yr)",
-   "Short-term (5 yr)",
-   "Long-term (20 yr)"
-  ],
-  "rows": [
-   [
-    "Actinobacteria",
-    "26",
-    "29",
-    "37"
-   ],
-   [
-    "Proteobacteria",
-    "39",
-    "41",
-    "32"
-   ],
-   [
-    "Acidobacteria",
-    "21",
-    "20",
-    "20"
-   ],
-   [
-    "Other / unclassified",
-    "14",
-    "14",
-    "11"
-   ]
-  ]
- },
- "type": "multiple-choice"
+  "anchor": "Change blindness — blank-interval slowing by change centrality (unnamed cognitive scientists)"
+ }
 }

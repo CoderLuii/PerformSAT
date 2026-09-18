@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "Volunteers at a health department have assembled 26 outbreak-response kits and assemble 18 more each hour. What is the least whole number of hours after which at least 200 kits have been assembled?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$13$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "rounds 174 divided by 18 down to 9 instead of up",
+  "C": "ignores the 26 kits already assembled and rounds 200 divided by 18 up",
+  "D": "adds the 26 kits to 200 instead of subtracting them, then rounds 226 divided by 18 up"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Smallest Integer in an Inequality**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $200 - 26 = 174$ kits are still needed, and $174 \\div 18 \\approx 9.7$. A partial hour does not finish the job, so round up to $10$ hours.\n\n**The Full Solution:**\nStep 1: After $h$ hours the volunteers have $26 + 18h$ kits, so the condition is $26 + 18h \\geq 200$.\nStep 2: Subtract $26$: $18h \\geq 174$, so $h \\geq \\frac{174}{18} = 9.67$.\nStep 3: The least whole number that is at least $9.67$ is $10$. Check: at $h = 9$ they have $26 + 162 = 188$ kits, short of $200$; at $h = 10$ they have $26 + 180 = 206$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): this rounds $9.67$ down. Rounding down lands at $188$ kits, which fails the \"at least $200$\" requirement.\n* Choice C ($12$): this is $200 \\div 18$ rounded up, which throws away the $26$ kits that were finished before the hourly count started.\n* Choice D ($13$): this is $226 \\div 18$ rounded up; the starting stock is subtracted from the target, not added to it.\n\n**Test Day Takeaway:** For a \"$\\geq$\" target, solve the inequality, then round in the direction that keeps the statement true — for a minimum requirement that always means rounding up, even when the decimal is small."
+}

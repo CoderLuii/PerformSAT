@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-053",
+  "question": "The table shows the value of the exponential function $f$ at three values of $x$. In the $xy$-plane, the graph of $y = f(x)$ intersects the $y$-axis at the point $(0, k)$. What is the value of $k$?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)"
+      ],
+      "rows": [
+        [
+          "0",
+          "400"
+        ],
+        [
+          "1",
+          "600"
+        ],
+        [
+          "2",
+          "900"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "400",
+  "explanation": "**SAT Pattern: y-intercept of Exponential**\n\n**The correct answer is $400$.**\n\n**The Fast Way (~10s):** The $y$-intercept is the output at $x = 0$, and the table gives $f(0) = 400$.\n\n**The Full Solution:**\nStep 1: A graph crosses the $y$-axis where $x = 0$, so $k = f(0)$.\nStep 2: The first row of the table gives $f(0) = 400$.\nStep 3: So the graph passes through $(0, 400)$ and $k = 400$. Check that the table really is exponential: $\\dfrac{600}{400} = 1.5$ and $\\dfrac{900}{600} = 1.5$, a constant ratio, so $f(x) = 400(1.5)^{x}$ and $f(0) = 400$. $\\checkmark$\n\n**Common Mistakes:** Reporting $600$, the value at $x = 1$ rather than at $x = 0$. Reporting $1.5$, the growth factor, which is the base rather than the initial value.\n\n**Test Day Takeaway:** For $f(x) = ab^{x}$ the $y$-intercept is always $a$, the value at $x = 0$ — the growth factor never appears in it."
+}

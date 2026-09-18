@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-231",
+ "question": "The points $(t, 4)$ and $(t + 14, s)$ both lie on a line that does not intersect the graph of $3x + 7y = 21$, where $t$ and $s$ are constants. What is the value of $s$?",
+ "correctAnswer": "-2",
+ "explanation": "**SAT Pattern: Parallel Line Through a Point**\n\n**The correct answer is $-2$.**\n\n**The Fast Way (~30s):** The slope is $-\\frac{3}{7}$, and a run of $14$ produces a rise of $-6$, so $s = 4 - 6 = -2$.\n\n**The Full Solution:**\nStep 1: Rewrite $3x + 7y = 21$ as $y = -\\frac{3}{7}x + 3$, so its slope is $-\\frac{3}{7}$.\nStep 2: A line that never intersects it has the same slope, so $\\frac{s - 4}{(t + 14) - t} = \\frac{s - 4}{14} = -\\frac{3}{7}$.\nStep 3: Then $s - 4 = -6$ and $s = -2$. Check: $\\frac{-2 - 4}{14} = -\\frac{6}{14} = -\\frac{3}{7}$.\n\n**Common Mistakes:**\n* Using $\\frac{3}{7}$ instead of $-\\frac{3}{7}$ gives $s = 4 + 6 = 10$.\n* Reporting $-6$ stops at the change in $y$ instead of adding it to the starting value $4$.\n* Trying to find $t$ first wastes time: $t$ cancels in the run, so its value is never needed.\n\n**Test Day Takeaway:** When both points share the same unknown, the run is a plain number and the unknown never has to be found."
+}

@@ -1,44 +1,44 @@
 {
-  "id": 527,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 1,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Alfred Wegener (1880–1930) was a German meteorologist and geophysicist.",
-      "In 1912 he proposed that the continents had once formed a single landmass and had since drifted apart.",
-      "He supported the idea with matching coastlines, fossil distributions, and rock formations on opposite sides of oceans.",
-      "Most geologists rejected the proposal because Wegener could not identify a force capable of moving continents.",
-      "In the 1960s, evidence of seafloor spreading led to the acceptance of continental drift within the theory of plate tectonics."
-    ],
-    "goal": "The student wants to emphasize a difference between Wegener's 1912 proposal and its eventual reception."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Wegener supported his proposal with matching coastlines, fossil distributions, and rock formations on opposite sides of the oceans."
-    },
-    {
-      "id": "B",
-      "text": "Alfred Wegener (1880–1930), a German meteorologist and geophysicist, proposed in 1912 that the continents had once formed a single landmass."
-    },
-    {
-      "id": "C",
-      "text": "Although most geologists rejected Wegener's 1912 proposal because he could name no force that could move continents, evidence of seafloor spreading led to its acceptance in the 1960s."
-    },
-    {
-      "id": "D",
-      "text": "In the 1960s, evidence of seafloor spreading led geologists to accept continental drift within the broader theory of plate tectonics."
-    }
+ "id": 527,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 1,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Before the 1880s, printers composed pages by hand, picking individual metal letters from a case and refiling each letter after printing.",
+   "A skilled hand compositor could set about 1,500 characters an hour.",
+   "Ottmar Mergenthaler's Linotype machine, introduced in 1886, cast type as complete lines of fresh metal at the touch of a keyboard.",
+   "A Linotype operator could set more than 5,000 characters an hour.",
+   "Used Linotype lines were melted down for recasting rather than refiled letter by letter."
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The goal is to emphasize the difference between Wegener's proposal and how it was received, so the sentence must set the early rejection against the later acceptance. Choice C does exactly that with \"Although…,\" pairing the geologists' rejection with the eventual acceptance in the 1960s. Choices A and B describe only the proposal and its evidence, with no reception at all. Choice D reports only the later acceptance and omits the rejection, so it cannot convey the contrast the goal requires.",
-  "_meta": {
-    "anchor": "Alfred Wegener — continental drift; early rejection then 1960s acceptance"
+  "goal": "The student wants to emphasize a difference between hand composition and composition on the Linotype machine."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Ottmar Mergenthaler introduced the Linotype machine, which cast type as complete lines of fresh metal, in 1886."
+  },
+  {
+   "id": "B",
+   "text": "Before the 1880s, printers composed every page by hand, picking individual metal letters one at a time from a case and refiling each of them after printing, with a skilled compositor setting about 1,500 characters an hour at best."
+  },
+  {
+   "id": "C",
+   "text": "Whereas a hand compositor picked and later refiled every letter individually, setting about 1,500 characters an hour, a Linotype operator cast whole lines at a keyboard at more than three times that pace."
+  },
+  {
+   "id": "D",
+   "text": "Lines of type cast on the Linotype machine were melted down for recasting once a job had been printed."
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The goal is a difference between the two methods, and C sets them against each other directly — letter-by-letter handling at 1,500 characters an hour versus whole lines at a keyboard at more than triple the speed.\n\n**The Full Solution:**\n- Emphasizing a difference requires both sides of the comparison in one statement, framed contrastively.\n- Choice C uses \"Whereas\" to oppose the two methods on matched terms: unit of work (single letters versus whole lines) and rate (about 1,500 versus more than three times that).\n- The figures come straight from the notes, and the contrastive frame does the emphasizing the goal demands.\n\n**Why the other choices are wrong:**\n- A: It describes only the Linotype, so no difference is drawn.\n- B: It describes only hand composition, leaving the comparison half made.\n- D: It reports what happened to used Linotype lines without mentioning hand composition at all.",
+ "_meta": {
+  "anchor": "hand typesetting vs. Mergenthaler's Linotype — contrast in method and speed"
+ }
 }

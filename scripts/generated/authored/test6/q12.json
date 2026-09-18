@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-textual",
-  "passage": "The major energy-handling structures inside complex cells, the mitochondria that carry out respiration and, in plants and algae, the chloroplasts that carry out photosynthesis, were once thought to have formed gradually from the host cell's own internal membranes. An older, long-neglected hypothesis held instead that these structures began as free-living bacteria that an ancestral host cell engulfed and then kept on as permanent partners. *If that hypothesis is correct, the structures should still carry traces of an independent bacterial ancestry rather than looking like ordinary products of the host cell.*",
-  "question": "Which finding from a recent molecular biology study, if true, would most directly support the hypothesis?",
+  "passage": "Students often prepare for exams by rereading their notes and textbooks, reasoning that each additional pass makes the material more familiar. Psychologists Henry Roediger and Jeffrey Karpicke have hypothesized that the act of retrieving information from memory does more to secure long-term learning than additional exposure to the material does — that testing oneself, in short, is a more powerful study tool than restudying.",
+  "question": "Which finding from a study of student learning, if true, would most directly support the hypothesis?",
   "choices": [
     {
       "id": "A",
-      "text": "Mitochondria and chloroplasts cannot survive on their own outside the host cells in which they are found."
+      "text": "Students who reread a passage several times reported feeling considerably more confident about their performance on an upcoming test than students who had read the passage only once."
     },
     {
       "id": "B",
-      "text": "The number of mitochondria in a cell varies with how much energy that cell needs to produce."
+      "text": "Students who studied in short sessions spread across several days retained more than students who studied in one long session."
     },
     {
       "id": "C",
-      "text": "Within one organism, the chloroplasts of different kinds of cells contain closely matching genetic material."
+      "text": "Students who both reread a passage and took a practice test scored higher than students who did neither."
     },
     {
       "id": "D",
-      "text": "Mitochondria and chloroplasts each carry their own small loop of DNA and bacteria-like machinery for copying and reading it."
+      "text": "A week later, students who had spent part of their study time recalling a passage from memory retained more than students who had spent equal time rereading it."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The hypothesis predicts that if these organelles descend from engulfed bacteria, they should retain traces of a separate bacterial ancestry. A finding that each carries its own DNA and its own bacteria-like machinery for using that DNA is just such a trace, since ordinary parts of the host cell would not need their own genetic apparatus. Choice A, that the organelles cannot live outside the cell, fits the rival picture of an integrated host part at least as well. Choice B concerns how organelle numbers scale with energy demand, which says nothing about ancestry, and choice C, matching genetic material across a single organism's cells, points to common descent within that organism rather than to a bacterial origin."
+  "explanation": "**Choice D is correct.** The hypothesis pits retrieval against re-exposure with everything else equal, and D is that exact comparison: equal study time, retrieval versus rereading, measured after a delay — with retrieval winning.\n\n**The Full Solution:**\n- The hypothesis has two essential parts: retrieval beats restudying, and the advantage concerns long-term learning.\n- D matches both: the same total study time isolates the retrieval variable, and the week's delay tests durable retention rather than immediate familiarity.\n\n**Why the other choices are wrong:**\n- A: It measures confidence, not retention — and reported confidence after rereading is precisely the feeling of familiarity the hypothesis says is misleading.\n- B: It compares spaced with massed study, a different variable; retrieval never enters the comparison.\n- C: Combining rereading with testing against doing neither confounds the two methods, so it cannot show which one produced the advantage."
 }

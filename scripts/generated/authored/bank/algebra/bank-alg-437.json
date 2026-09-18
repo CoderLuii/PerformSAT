@@ -1,0 +1,58 @@
+{
+ "id": "bank-alg-437",
+ "question": "Line $q$ is graphed in the $xy$-plane. A second, distinct line never meets line $q$. Which of the following equations could define the second line?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 3,
+   "yIntercept": -4,
+   "xRange": [
+    -4,
+    4
+   ],
+   "yRange": [
+    -8,
+    6
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     -4
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "label": "q"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = 3x - 4$"
+  },
+  {
+   "id": "B",
+   "text": "$y = -3x + 5$"
+  },
+  {
+   "id": "C",
+   "text": "$y = \\frac{1}{3}x + 5$"
+  },
+  {
+   "id": "D",
+   "text": "$y = 3x + 5$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "is line $q$ itself, so the two lines coincide and meet at every point",
+  "B": "negates the slope, so this line crosses line $q$ once",
+  "C": "uses the reciprocal $\\frac{1}{3}$, so this line crosses line $q$ once"
+ },
+ "explanation": "**SAT Pattern: Parallel Lines No Solution**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Line $q$ has slope $3$ and intercept $-4$; the second line needs slope $3$ with a different intercept.\n\n**The Full Solution:**\nStep 1: Line $q$ passes through $(0, -4)$ and $(2, 2)$, so its slope is $\\frac{2 - (-4)}{2 - 0} = 3$ and its equation is $y = 3x - 4$.\nStep 2: A distinct line that never meets line $q$ must have slope $3$ and a different $y$-intercept.\nStep 3: Choice D, $y = 3x + 5$, has slope $3$ and intercept $5 \\neq -4$. Check: setting $3x - 4 = 3x + 5$ gives $-4 = 5$, which is impossible.\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = 3x - 4$): is line $q$ itself, so the two lines coincide and meet at every point\n* Choice B ($y = -3x + 5$): negates the slope, so this line crosses line $q$ once\n* Choice C ($y = \\frac{1}{3}x + 5$): uses the reciprocal $\\frac{1}{3}$, so this line crosses line $q$ once\n\n**Test Day Takeaway:** Never meeting requires equal slopes and unequal intercepts; the same equation twice is not the answer."
+}

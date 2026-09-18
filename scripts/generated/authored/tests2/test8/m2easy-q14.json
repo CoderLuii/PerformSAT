@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "The quadratic function $f(x) = x^2 + bx + 36$ has two zeros, both positive, and the larger zero is $9$ times the smaller zero. What is the value of the constant $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-37$"
+  },
+  {
+   "id": "B",
+   "text": "$-20$"
+  },
+  {
+   "id": "C",
+   "text": "$-13$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the factor pair 1 and 36, whose sum is 37, ignoring that the larger zero must be 9 times the smaller",
+  "C": "uses the factor pair 4 and 9 because a 9 appears in the condition, giving a sum of 13",
+  "D": "reports the sum of the zeros, 20, instead of its opposite"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Quadratic — Vieta's Sum/Product**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The zeros multiply to $36$, so with zeros $r$ and $9r$, $9r^2 = 36$ gives $r = 2$. The zeros are $2$ and $18$, and $b$ is the opposite of their sum: $b = -20$.\n\n**The Full Solution:**\nStep 1: For $x^2 + bx + c$, the two zeros multiply to $c$ and add to $-b$. Here the product is $36$.\nStep 2: Write the zeros as $r$ and $9r$ with $r > 0$. Their product is $9r^2 = 36$, so $r^2 = 4$ and $r = 2$, making the zeros $2$ and $18$.\nStep 3: Their sum is $20$, and the sum equals $-b$, so $b = -20$. Check by factoring: $x^2 - 20x + 36 = (x - 2)(x - 18)$, whose zeros are $2$ and $18$, and $18 = 9(2)$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-37$): takes the factor pair $1$ and $36$. Those multiply to $36$, but $36$ is $36$ times $1$, not $9$ times it.\n* Choice C ($-13$): grabs the pair $4$ and $9$ because a $9$ appears in the condition. Their product is $36$, but $9$ is not $9$ times $4$.\n* Choice D ($20$): finds the correct zeros and reports their sum. The coefficient $b$ is the OPPOSITE of the sum, which the factored form $(x - 2)(x - 18)$ makes visible.\n\n**Test Day Takeaway:** Use the product first when the constant term is given and the zeros are related by a ratio — it pins the zeros in one step, and the sum then gives $b$ with a sign flip."
+}

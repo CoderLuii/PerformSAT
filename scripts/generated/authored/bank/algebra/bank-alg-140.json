@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-140",
+  "question": "The function $C(k) = 0.12k + 18$ gives the monthly cost $C(k)$, in dollars, of electricity for an apartment that uses $k$ kilowatt-hours of electricity in a month. What is the best interpretation of the number $0.12$ in this context?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The fixed monthly charge, in dollars, before any electricity is used."
+    },
+    {
+      "id": "B",
+      "text": "The cost, in dollars, of each kilowatt-hour of electricity used."
+    },
+    {
+      "id": "C",
+      "text": "The number of kilowatt-hours of electricity used in a month."
+    },
+    {
+      "id": "D",
+      "text": "The total monthly cost, in dollars, when $1$ kilowatt-hour is used."
+    }
+  ],
+  "distractorNotes": {
+    "A": "describes the constant 18, not the coefficient",
+    "C": "confuses the coefficient with the variable k",
+    "D": "describes C(1) = 18.12, not the rate"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice B is correct.**\n\n**The Fast Way (~5s):** In $C(k) = 0.12k + 18$, the number multiplied by $k$ is the rate: each additional kilowatt-hour adds $\\$0.12$ to the cost.\n\n**The Full Solution:**\nStep 1: The model is linear, $C(k) = mk + b$, with slope $m = 0.12$ and $y$-intercept $b = 18$.\nStep 2: The slope is the change in cost for each $1$-unit increase in $k$. Increasing $k$ by $1$ kilowatt-hour increases $C(k)$ by $0.12$ dollars.\nStep 3: Check: $C(1) - C(0) = 18.12 - 18 = 0.12$. $\\checkmark$ So $0.12$ is the cost per kilowatt-hour.\n\n**Why the wrong answers are tempting:**\n* Choice A: describes $18$, the cost when $k = 0$, not $0.12$.\n* Choice C: confuses the constant $0.12$ with the variable $k$, which is the quantity that changes.\n* Choice D: describes $C(1) = 18.12$, the whole bill for one kilowatt-hour, not the per-unit rate.\n\n**Test Day Takeaway:** In a linear model, the coefficient of the variable is \"dollars per unit\"; the constant is \"dollars when the variable is zero.\" Match the number to its role before reading the choices."
+}

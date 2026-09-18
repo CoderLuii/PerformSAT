@@ -1,0 +1,30 @@
+{
+ "id": 21,
+ "question": "A stage monitor's measured sound level, in decibels above a reference, at a distance of $x$ meters from the monitor is given by the linear function $f$. The table gives $f(x)$ at four selected distances. For what value of $a$ is $f(2a) = 3$?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$f(x)$"
+  ],
+  "rows": [
+   [
+    "$2$",
+    "$43$"
+   ],
+   [
+    "$5$",
+    "$31$"
+   ],
+   [
+    "$8$",
+    "$19$"
+   ],
+   [
+    "$11$",
+    "$7$"
+   ]
+  ]
+ },
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Solve $f(a) = c$**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~45s):** The table drops $12$ over every $3$ meters, so $f(x) = 51 - 4x$; $f(12) = 3$ means $2a = 12$ and $a = 6$.\n\n**The Full Solution:**\nStep 1: Find the rate. From $x = 2$ to $x = 5$, $f$ falls from $43$ to $31$, a change of $-12$ over $3$ meters, so the slope is $-4$ per meter.\nStep 2: Build the rule using the point $(2, 43)$: $f(x) = 43 - 4(x - 2) = 51 - 4x$. Setting $f(x) = 3$ gives $51 - 4x = 3$, so $4x = 48$ and $x = 12$.\nStep 3: The question sets the input to $2a$, so $2a = 12$ and $a = 6$. Check: $f(2 \\cdot 6) = f(12) = 51 - 48 = 3$. $\\checkmark$\n\n**Common Mistakes:**\n* Gridding $12$, the input that makes $f$ equal $3$. That value is $2a$, so it still has to be halved.\n* Reading the slope as $-12$, the drop between table rows, instead of $-4$ per meter; that gives $67 - 12x = 3$ and a non-integer input.\n* Doubling instead of halving at the last step, gridding $24$.\n\n**Test Day Takeaway:** Solve for the whole input first, then unwrap it. When the argument is $2a$ rather than $a$, the final step is one more division."
+}

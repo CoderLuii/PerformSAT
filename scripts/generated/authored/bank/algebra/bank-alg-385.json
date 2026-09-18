@@ -1,0 +1,45 @@
+{
+ "id": "bank-alg-385",
+ "question": "The table gives the coordinates of pin $R$ and pin $M$ on a pattern board modeled by the $xy$-plane, where $M$ is the midpoint of $\\overline{RS}$. What are the coordinates of $S$?",
+ "questionTable": {
+  "headers": [
+   "Pin",
+   "Coordinates"
+  ],
+  "rows": [
+   [
+    "$R$",
+    "$(-7, 3)$"
+   ],
+   [
+    "$M$",
+    "$(1, -1)$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(-15, 7)$"
+  },
+  {
+   "id": "B",
+   "text": "$(-3, 1)$"
+  },
+  {
+   "id": "C",
+   "text": "$(9, -5)$"
+  },
+  {
+   "id": "D",
+   "text": "$(9, 5)$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "computes 2R - M, reversing the roles of the endpoint and the midpoint",
+  "B": "averages R and M instead of extending the segment past M",
+  "D": "doubles the x-coordinate correctly but drops the negative sign on the y-coordinate"
+ },
+ "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** $S = (2(1) - (-7),\\ 2(-1) - 3) = (9, -5)$.\n\n**The Full Solution:**\n\nStep 1: If $M$ is the midpoint of $\\overline{RS}$, then $1 = \\frac{-7 + x_S}{2}$ and $-1 = \\frac{3 + y_S}{2}$.\n\nStep 2: Multiply each equation by $2$: $-7 + x_S = 2$ and $3 + y_S = -2$.\n\nStep 3: Solve: $x_S = 9$ and $y_S = -5$, so $S$ is $(9, -5)$. Check: the midpoint of $(-7, 3)$ and $(9, -5)$ is $(1, -1)$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($(-15, 7)$): computes $2R - M$, treating $R$ as the midpoint and $M$ as the endpoint.\n* Choice B ($(-3, 1)$): averages $R$ and $M$, landing halfway between them instead of continuing past $M$.\n* Choice D ($(9, 5)$): doubles and subtracts correctly for $x$ but reports $|-5|$ for $y$, dropping the negative sign.\n\n**Test Day Takeaway:** To find the far endpoint, double the midpoint and subtract the known endpoint, coordinate by coordinate."
+}

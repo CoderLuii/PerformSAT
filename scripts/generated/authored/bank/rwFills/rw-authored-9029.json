@@ -1,0 +1,25 @@
+{
+  "id": 9029,
+  "passage": "Survey researchers have learned to treat a questionnaire as an instrument that can bend its own readings. Whether a question offers a middle option, whether the response scale runs from good to bad or from bad to good, whether an item about the economy comes before or after an item about jobs — such ______ of the instrument can move a reported percentage by several points, even when the opinions being measured have not changed at all.",
+  "question": "Which choice completes the text with the most logical and precise word or phrase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "features"
+    },
+    {
+      "id": "B",
+      "text": "conclusions"
+    },
+    {
+      "id": "C",
+      "text": "misprints"
+    },
+    {
+      "id": "D",
+      "text": "endorsements"
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** A middle option, the direction of a scale, and the order of two items are all properties of the questionnaire itself, and features is the category word for them.\n\n**The Full Solution:**\n- The dash after the third example hands the list back to the blank, so the blank must name what the three examples have in common.\n- All three are deliberate design details of the instrument, not mistakes and not results. Features is the precise category, and the phrase of the instrument confirms that the blank belongs to the questionnaire rather than to the respondents.\n- The closing clause — the opinions have not changed — rules out any word that would name something the respondents supplied.\n\n**Why the other choices are wrong:**\n- B: Conclusions are what a survey produces. The listed items are inputs, not findings.\n- C: A misprint is an error. Offering a middle option or ordering two items is a choice the designer makes on purpose.\n- D: An endorsement is an expression of support, which none of the three examples is."
+}

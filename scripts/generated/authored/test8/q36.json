@@ -1,31 +1,31 @@
 {
-  "id": 836,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "The naturalist Alexander von Humboldt spent five years traveling through South America at the start of the nineteenth century, measuring temperature, altitude, soil, and the plants that grew at each elevation. Climbing the Andean volcano Chimborazo, he noticed that the bands of vegetation he passed through resembled the sequence one would meet traveling from the tropics toward the poles. From thousands of such observations he drew a larger conclusion: the natural world is not a collection of separate curiosities but a single connected system, in which climate, geography, and living things shape one another. This view, unusual in his day, helped lay the groundwork for the modern science of ecology.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Humboldt’s measurements on Chimborazo were more precise than those of any earlier traveler in South America."
-    },
-    {
-      "id": "B",
-      "text": "Humboldt believed that the study of plants should be kept separate from the study of climate and geography."
-    },
-    {
-      "id": "C",
-      "text": "Humboldt’s wide-ranging observations led him to view nature as a single connected system, an idea that helped found ecology."
-    },
-    {
-      "id": "D",
-      "text": "Humboldt spent five years traveling through South America measuring temperature, altitude, and soil at many elevations."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage moves from Humboldt's many measurements to the broad conclusion he drew from them—that nature is one connected system—and notes that this idea helped found ecology, which is its central point. A makes a precision comparison the text does not support; B reverses his view, since he tied plants, climate, and geography together rather than keeping them apart; and D restates a supporting detail, the five years of travel and measurement, without the conclusion that gives the passage its point."
+ "id": 836,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "A team of biomechanics researchers filmed circus acrobats through hundreds of practice somersaults, tracking each performer's launch velocity and rotation from takeoff to landing. The measurements taken at launch — speed, angle, initial spin — overlapped almost completely between somersaults that landed cleanly and those that failed. Where the two groups separated was in the air: successful attempts showed the tuck drawn in within a consistent fraction of a second and, just as regularly, the body opened out again at a repeatable point in the descent. The difference between landing and falling, the researchers concluded, is made less at the moment of takeoff than in the precision of what follows it.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The strength of an acrobat's initial jump is the best predictor of whether a somersault will succeed."
+  },
+  {
+   "id": "B",
+   "text": "Acrobats could avoid most failed landings by adopting training routines that concentrate on strengthening the legs and increasing the height and power of the initial jump."
+  },
+  {
+   "id": "C",
+   "text": "Measurements of acrobats' somersaults indicate that success depends less on launch power than on precisely timed control of body position in the air."
+  },
+  {
+   "id": "D",
+   "text": "Circus acrobats complete somersaults with greater rotational speed than competitive divers achieve."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** Every observation in the text converges on one conclusion, stated at the end: what separates successful somersaults is control of body shape in the air more than the raw power of the jump.\n\n**The Full Solution:**\n- The researchers filmed hundreds of practice somersaults and measured launch speed and rotation.\n- The key finding: launch measurements of successful and failed attempts overlapped almost completely, while the timing of the tuck and the opening-out did not.\n- The text's main idea is that airborne control, not launch power, distinguishes the successful attempts — choice C.\n\n**Why the other choices are wrong:**\n- A: The text reports that launch measurements barely differed between successful and failed attempts.\n- B: Training methods are never discussed, only measurements of performance.\n- D: The comparison with divers appears nowhere in the text."
 }

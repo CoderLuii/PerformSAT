@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "An extruder deposits polymer at a constant rate of 45 grams per minute. Running without interruption at that rate, it deposited 32.4 kilograms of polymer. For how many hours did the extruder run?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.2$"
+  },
+  {
+   "id": "B",
+   "text": "$1.2$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$720$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by 60 twice, converting minutes to hours a second time",
+  "B": "uses 1 kilogram = 100 grams, so 3,240 grams instead of 32,400",
+  "D": "stops at 720 minutes and reports the minutes as hours"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Proportion Solving**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** $32.4$ kilograms is $32{,}400$ grams, and $\\frac{32{,}400}{45}=720$ minutes, which is $\\frac{720}{60}=12$ hours.\n\n**The Full Solution:**\nStep 1: Put the total and the rate in the same unit of mass: $32.4$ kilograms $\\times\\ 1{,}000$ grams per kilogram $=32{,}400$ grams.\nStep 2: Set up the proportion $\\frac{45\\text{ grams}}{1\\text{ minute}}=\\frac{32{,}400\\text{ grams}}{t\\text{ minutes}}$, so $45t=32{,}400$ and $t=720$ minutes.\nStep 3: Convert to hours: $\\frac{720}{60}=12$ hours. Check forward: $45$ grams per minute $\\times\\ 60=2{,}700$ grams per hour, and $2{,}700(12)=32{,}400$ grams $=32.4$ kilograms ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.2$): divides by $60$ a second time, $\\frac{12}{60}=0.2$, converting to hours twice.\n* Choice B ($1.2$): uses $1$ kilogram $=100$ grams, so $\\frac{3{,}240}{45}=72$ minutes $=1.2$ hours.\n* Choice D ($720$): the correct time in MINUTES, reported as hours. A machine running $720$ hours is a month of nonstop operation.\n\n**Test Day Takeaway:** Fix the units before you divide, and finish by rereading the unit the question asks for. Two conversions (grams and minutes) means two places to lose a factor."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-042",
+ "question": "A comet dust collector's capture rate is proportional to $\\dfrac{3}{x^{2}\\sqrt{x}}$ for $x>0$, and that expression equals $3x^{k}$ for a constant $k$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{5}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{3}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{5}{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts the radical's exponent instead of adding it, using -(2 - 1/2) = -3/2",
+  "C": "makes the same subtraction error and then drops the negative sign",
+  "D": "forgets that a factor in the denominator produces a negative exponent"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Reciprocal as Negative Exponent**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The denominator is $x^{2}\\cdot x^{1/2}=x^{5/2}$, and moving it up flips the sign: $3x^{-5/2}$.\n\n**The Full Solution:**\n\nStep 1: Write the radical as a power: $\\sqrt{x}=x^{1/2}$.\n\nStep 2: Combine the denominator's factors by adding exponents: $x^{2}\\cdot x^{1/2}=x^{2+\\frac{1}{2}}=x^{5/2}$.\n\nStep 3: A factor in the denominator becomes a negative exponent in the numerator, so $\\frac{3}{x^{5/2}}=3x^{-5/2}$ and $k=-\\frac{5}{2}$. Check at $x=4$: $\\frac{3}{16\\cdot2}=\\frac{3}{32}$, and $3\\cdot4^{-5/2}=\\frac{3}{32}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($-\\frac{3}{2}$): subtracts the radical's exponent instead of adding it.\n* Choice C ($\\frac{3}{2}$): makes that same subtraction and then loses the negative sign.\n* Choice D ($\\frac{5}{2}$): combines the denominator correctly but forgets that moving it up negates the exponent.\n\n**Test Day Takeaway:** Add exponents to combine a denominator into one power, then negate that exponent once when you lift it into the numerator."
+}

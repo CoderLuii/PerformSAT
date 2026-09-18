@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "craft-and-structure",
  "skill": "text-structure-and-purpose",
- "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+ "type": "multiple-choice",
+ "passage": "In 1861, the photographer Carleton Watkins hauled a mammoth-plate camera — an instrument that exposed glass negatives the size of a serving tray — into California's Yosemite Valley. The prints he carried out showed granite walls and giant sequoias in astonishing detail, and they circulated among editors, scientists, and members of Congress, most of whom would never see the valley themselves. Three years later, when Congress passed the first federal law setting Yosemite aside for public protection, several lawmakers cited Watkins's photographs as evidence of what deserved saving.",
+ "question": "Which choice best states the main purpose of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "It proposes in detail the very system of standard zones that the railroad companies would adopt in 1883."
+   "text": "To explain the technical challenges of operating a mammoth-plate camera in remote and rugged terrain"
   },
   {
    "id": "B",
-   "text": "It questions whether local solar time was ever as accurate as the rest of the passage suggests it was."
+   "text": "To argue that Congress would not have voted to protect Yosemite without the testimony of scientists who had visited the valley in person"
   },
   {
    "id": "C",
-   "text": "It describes the objections that the public raised against the new system of standardized time zones."
+   "text": "To contrast the accuracy of Watkins's photographs with the exaggerated written descriptions of Yosemite circulating in the 1860s"
   },
   {
    "id": "D",
-   "text": "It explains why a once-workable practice became a problem, setting up the change the passage describes."
+   "text": "To describe how one photographer's images helped build support for the legal protection of a natural landscape"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D. The first sentence describes the old patchwork of local solar time, in which neighboring towns' clocks differed by minutes. The underlined sentence explains why that arrangement, harmless when travel was slow, turned into a hazard once railroads linked many such towns in a day, since a timetable had no single \"time\" to cite — and that problem sets up the 1883 change the passage then reports. A assigns the 1883 solution to the underlined sentence, but the solution comes afterward. B has the sentence doubting the accuracy of solar time, which it never does. C describes public objections the passage does not mention.",
+ "explanation": "**Choice D is correct.** The text follows a single thread from camera to law: Watkins made extraordinarily detailed prints, the prints reached decision-makers who could never visit the valley, and lawmakers cited them when Yosemite won federal protection. Its purpose is to describe that chain of influence.\n\n**The Full Solution:**\n- Each sentence advances the same story — making the images, circulating the images, and the images' role in the 1864 protection.\n- The closing sentence is the payoff, and D states the through-line that the whole text serves.\n\n**Why the other choices are wrong:**\n- A: The camera's unwieldiness appears in one aside; no technical challenges are actually explained.\n- B: The text says lawmakers cited the photographs — it nowhere weighs what Congress would have done without other kinds of testimony.\n- C: No written descriptions of Yosemite, exaggerated or otherwise, are mentioned, so no such contrast is drawn.",
  "_meta": {
-  "anchor": "U.S. railroad standard time zones (1883); function of an underlined sentence"
- },
- "passage": "Before the 1880s, towns across the United States kept their own local time, set by the sun, so that clocks in neighboring cities could differ by several minutes. *This patchwork was tolerable when travel was slow, but it became a hazard once railroads could carry passengers between dozens of such towns in a single day, since a printed timetable had no single \"time\" to refer to.* In 1883 the railroad companies, not the government, imposed a system of four standard zones, and most communities adopted railroad time within a few years.",
- "type": "multiple-choice"
+  "anchor": "Carleton Watkins — Yosemite mammoth-plate photographs and the 1864 protection"
+ }
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-120",
+  "question": "At a conservatory, the ratio of the number of ferns to the number of orchids to the number of succulents is $5 : 3 : 7$, respectively. The conservatory has $450$ of these plants in all. How many more succulents than ferns are there?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$30$"
+    },
+    {
+      "id": "B",
+      "text": "$60$"
+    },
+    {
+      "id": "C",
+      "text": "$120$"
+    },
+    {
+      "id": "D",
+      "text": "$210$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "30 is one part, as if the difference were 7 - 5 = 1 part",
+    "C": "120 is 4 parts, the gap between the succulents and the orchids",
+    "D": "210 is the number of succulents, not the difference"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** There are $5 + 3 + 7 = 15$ parts, so one part is $\\dfrac{450}{15} = 30$ plants, and the succulents exceed the ferns by $7 - 5 = 2$ parts: $2(30) = 60$.\n\n**The Full Solution:**\nStep 1: Write the counts as $5k$ ferns, $3k$ orchids, and $7k$ succulents, so $15k = 450$ and $k = 30$.\nStep 2: There are $7(30) = 210$ succulents and $5(30) = 150$ ferns.\nStep 3: The difference is $210 - 150 = 60$ plants.\nCheck: $150 + 90 + 210 = 450$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($30$): This is one part; the succulents lead the ferns by $2$ parts, not $1$.\n* Choice C ($120$): This is $4$ parts, the gap between the succulents and the orchids rather than the ferns.\n* Choice D ($210$): This is the number of succulents, not how many more there are than ferns.\n\n**Test Day Takeaway:** For a \"how many more\" question, subtract the ratio terms first and multiply that difference by the size of one part."
+}

@@ -9,37 +9,21 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "Khipus are knotted cord assemblages used by Andean peoples and central to Inka administration in the 15th and 16th centuries.",
-      "Spanish colonial accounts described khipus as carrying both numerical accounts and narrative content.",
-      "Through the 20th century, khipus were widely interpreted only as numerical accounting devices, with knot positions encoding base-ten quantities.",
-      "Gary Urton is an American anthropologist at Harvard University who has studied khipus since the 1990s.",
-      "Urton has argued that knot direction, cord ply, fiber color, and attachment style constitute a binary signaling system capable of carrying non-numerical information.",
-      "In *Signs of the Inka Khipu* (2003), Urton proposed that some khipus may encode narrative content alongside their numerical contents."
+      "A seabird monitoring program has counted breeding pairs in the same cliff plots every summer since the late 1950s.",
+      "Counts follow a written protocol fixing the date range, time of day, and plot boundaries used each year.",
+      "Because the method has never changed, differences between years reflect changes in the birds themselves.",
+      "The series now spans more than sixty years, longer than most instrument records of ocean conditions in the region.",
+      "Ecologists have used the series to link breeding numbers to shifts in the fish populations that seabirds depend on."
     ],
-    "goal": "The student wants to emphasize how Urton's analysis revises a long-standing scholarly understanding of khipus."
+    "goal": "The student wants to emphasize the scientific value of the census's long, unbroken record."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Gary Urton is an American anthropologist at Harvard University who has studied Andean khipus since the 1990s."
-    },
-    {
-      "id": "B",
-      "text": "Spanish colonial accounts described khipus as recording both numerical accounts and forms of narrative content, though their exact workings remained unclear."
-    },
-    {
-      "id": "C",
-      "text": "Although khipus were long read as purely numerical accounting devices, Urton argues that knot direction, cord ply, and fiber color form a binary code that could also carry narrative content."
-    },
-    {
-      "id": "D",
-      "text": "Because khipus served Inka administration in the fifteenth and sixteenth centuries, Urton's research centers on imperial accounting practices."
-    }
+    { "id": "A", "text": "A long-running seabird monitoring program has counted the breeding pairs nesting in the same small cliff plots every summer since the late 1950s, following a written protocol that fixes the date range and time of day for each count." },
+    { "id": "B", "text": "Ecologists who use the census data are interested primarily in the populations of the small fish that cliff-nesting seabirds depend on for food." },
+    { "id": "C", "text": "Counted by an unchanged protocol for over sixty years, the census offers a rare record in which trends reflect the birds themselves, long enough to tie breeding numbers to shifts in the fish they depend on." },
+    { "id": "D", "text": "A written protocol fixes the date range, the time of day, and the plot boundaries to be used in each year's counts of breeding seabirds." }
   ],
   "correctAnswer": "C",
-  "explanation": "The goal is to show how Urton revises a long-standing view of khipus. Choice C sets the older reading—khipus as purely numerical—against Urton's argument that features like knot direction, cord ply, and color form a code able to carry narrative as well. Choices A and B give biography or colonial testimony without the revision, and D narrows his work to imperial accounting, missing the point.",
-  "_meta": {
-    "anchor": "Gary Urton, Andean khipu research"
-  }
+  "explanation": "**Choice C is correct.** The value to be emphasized has two ingredients — length and unbrokenness — and C converts both into scientific payoff: trends that reflect the birds rather than the method, and a span long enough to reveal links to fish populations.\n\n**The Full Solution:**\n- \"Unchanged protocol for more than sixty years\" compresses the notes on constancy and duration.\n- \"Every trend reflects the birds themselves\" states why constancy matters scientifically.\n- The closing clause shows the record in use — the demonstrated payoff that makes the case for its value.\n\n**Why the other choices are wrong:**\n- A: It reports the counting arrangement without a word about why the record is scientifically valuable.\n- B: It drops the census entirely, mentioning only the fish.\n- D: The protocol detail alone establishes procedure, not the significance of six decades of consistent data."
 }

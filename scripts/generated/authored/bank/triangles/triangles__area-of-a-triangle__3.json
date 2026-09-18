@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "The base of a triangle is multiplied by $3$ and its height is multiplied by $\\frac{1}{2}$. The area of the resulting triangle is $k$ times the area of the original triangle. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{2}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{7}{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts both factors, using $\\frac{1}{3}$ and $2$",
+  "C": "applies only the change to the base and ignores the height",
+  "D": "adds the two factors, $3 + \\frac{1}{2}$, instead of multiplying them"
+ },
+ "correctAnswer": "B",
+ "hint": "Write the new base and new height into the area formula and compare with the original.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** Area scales by the product of the two factors: $3 \\cdot \\frac{1}{2} = \\frac{3}{2}$.\n\n**The Full Solution:**\nStep 1: The original area is $A = \\frac{1}{2}bh$.\nStep 2: The new base is $3b$ and the new height is $\\frac{1}{2}h$, so $A^{\\prime} = \\frac{1}{2}(3b)\\left(\\frac{1}{2}h\\right) = \\frac{3}{2}\\left(\\frac{1}{2}bh\\right)$.\nStep 3: Therefore $A^{\\prime} = \\frac{3}{2}A$, so $k = \\frac{3}{2}$.\n\nVerification: A triangle with $b = 4$ and $h = 6$ has area $12$; the new one has $b = 12$ and $h = 3$, area $18$, and $\\frac{18}{12} = \\frac{3}{2}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{2}{3}$): inverts both factors, using $\\frac{1}{3}$ and $2$.\n* Choice C ($3$): applies only the change to the base and ignores the height.\n* Choice D ($\\frac{7}{2}$): adds the two factors, $3 + \\frac{1}{2}$, instead of multiplying them.\n\n**Test Day Takeaway:** Scaling a base and a height multiplies the area by the product of the two scale factors, never by their sum."
+}

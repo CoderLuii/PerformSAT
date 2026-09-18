@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-273",
+ "question": "A dining car aboard a scenic railway trims each square napkin with piping that runs $88$ centimeters around the napkin's four edges. How long, in centimeters, is one edge of a napkin?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$22$"
+  },
+  {
+   "id": "B",
+   "text": "$44$"
+  },
+  {
+   "id": "C",
+   "text": "$88$"
+  },
+  {
+   "id": "D",
+   "text": "$484$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the perimeter by 2 instead of by 4: 88/2 = 44",
+  "C": "reports the perimeter itself rather than one edge",
+  "D": "squares the correct side to give the area 22^2 = 484 instead of a length"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Square Perimeter**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** A square has four equal edges, so one edge is $\\frac{88}{4}=22$ centimeters.\n\n**The Full Solution:**\n\nStep 1 — The piping traces the perimeter, so $4s=88$ where $s$ is one edge.\n\nStep 2 — Divide by $4$: $s=\\frac{88}{4}=22$ centimeters.\n\nStep 3 — Confirm the fit: four edges of $22$ centimeters total $4(22)=88$ centimeters, exactly the piping used.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($44$): this divides by $2$, the count of edges in a rectangle's length-plus-width, not the four edges of a square.\n* Choice C ($88$): this repeats the perimeter instead of one edge.\n* Choice D ($484$): this squares $22$, producing the napkin's area in square centimeters rather than a length.\n\n**Test Day Takeaway:** Read the unit the question asks for — centimeters means a length, square centimeters means an area."
+}

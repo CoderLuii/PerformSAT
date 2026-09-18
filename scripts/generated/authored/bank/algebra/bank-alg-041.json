@@ -1,0 +1,58 @@
+{
+ "id": "bank-alg-041",
+ "question": "The graph of line $n$ in the $xy$-plane is shown, where each grid unit represents one city block. Line $m$ is given by $2x + y = 9$. How many points lie on both lines?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 3,
+   "yIntercept": -4,
+   "xRange": [
+    -2,
+    6
+   ],
+   "yRange": [
+    -10,
+    14
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     0,
+     -4
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "label": "n"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "None"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one"
+  },
+  {
+   "id": "C",
+   "text": "Exactly two"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads slopes of opposite sign as meaning the lines never meet",
+  "C": "treats two straight lines as able to cross twice",
+  "D": "concludes the two lines coincide"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Classify System (Different Slopes)**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Line $n$ rises $3$ per unit and line $m$ has slope $-2$; different slopes means the lines cross exactly once.\n\n**The Full Solution:**\nStep 1: Read line $n$ from the graph: it passes through $(0, -4)$ and $(2, 2)$, so its slope is $\\frac{2 - (-4)}{2 - 0} = 3$.\nStep 2: Rewrite line $m$ as $y = -2x + 9$, so its slope is $-2$.\nStep 3: Because $3 \\ne -2$, the lines are not parallel and meet at exactly one point. Check: $3x - 4 = -2x + 9$ gives $5x = 13$, a single value of $x$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (None): reads slopes of opposite sign as meaning the lines head away from each other and never meet.\n* Choice C (Exactly two): treats two straight lines as able to cross more than once.\n* Choice D (Infinitely many): would require the two lines to be the same line, which the different slopes rule out.\n\n**Test Day Takeaway:** Compare slopes first: different slopes always give exactly one intersection, whatever the intercepts are."
+}

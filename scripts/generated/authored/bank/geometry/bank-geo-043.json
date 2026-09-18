@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-043",
+ "question": "A circular water tank of radius $r$ feet stands at the center of a circular concrete collar of radius $r+3$ feet, and the exposed collar covers $57\\pi$ square feet. What is the value of $r$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$11$"
+  },
+  {
+   "id": "D",
+   "text": "$19$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the 3-foot collar width from the correct radius, giving 8 - 3 = 5",
+  "C": "reports the outer radius r + 3 = 11 instead of r",
+  "D": "sets 3r = 57, treating the ring's area as 3 pi r"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Annulus (Ring) Area**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** The ring's area is $\\pi[(r+3)^{2}-r^{2}]=\\pi(6r+9)$, so $6r+9=57$ and $r=8$.\n\n**The Full Solution:**\n\nStep 1: Subtract areas. The exposed collar is the outer circle minus the tank: $\\pi(r+3)^{2}-\\pi r^{2}$.\n\nStep 2: Expand. $(r+3)^{2}-r^{2}=r^{2}+6r+9-r^{2}=6r+9$, so the collar covers $\\pi(6r+9)$ square feet.\n\nStep 3: Solve. $6r+9=57$ gives $6r=48$ and $r=8$ feet.\n\nCheck: the outer radius is $11$, and $\\pi(121)-\\pi(64)=57\\pi$ square feet.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($5$): solves correctly and then subtracts the $3$-foot collar width, reporting $8-3$.\n* Choice C ($11$): reports the outer radius $r+3$ rather than the tank's radius.\n* Choice D ($19$): sets $3r=57$, treating the ring's area as $3\\pi r$ instead of subtracting squares.\n\n**Test Day Takeaway:** A ring's area is the difference of two circle areas; expanding $(r+w)^{2}-r^{2}$ collapses it to a linear expression in $r$."
+}

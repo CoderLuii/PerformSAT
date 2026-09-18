@@ -5,30 +5,30 @@
   "band": 2,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
+  "module": 1,
+  "passage": "The combs inside a long-abandoned honeybee nest ______ a detailed record of the colony that built them, since wax preserves traces of the pollens the bees gathered and of the brood they raised season by season.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "to preserve"
+      "text": "to hold"
     },
     {
       "id": "B",
-      "text": "preserves"
+      "text": "holds"
     },
     {
       "id": "C",
-      "text": "preserve"
+      "text": "hold"
     },
     {
       "id": "D",
-      "text": "preserving"
+      "text": "holding"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The subject is the plural \"remains,\" and the prepositional phrases that follow do not change that, so the verb must be the plural \"preserve.\" The singular \"preserves\" (B) disagrees with the plural subject; \"to preserve\" (A) is an infinitive and \"preserving\" (D) a participle, neither of which can serve as the main verb that the subject needs.",
-  "passage": "The dental remains of populations from Iron Age and Neolithic settlements in southeastern Turkey ______ evidence of what people in those communities ate and how their food was prepared, since the wear patterns and mineral deposits that build up on teeth can survive for thousands of years.",
+  "explanation": "**Choice C is correct.** The subject of the sentence is the plural noun \"combs,\" so the verb must be the plural \"hold.\"\n\n**The Full Solution:**\n- Strip the intervening phrase: \"The combs ... hold a detailed record.\"\n- \"Inside a long-abandoned honeybee nest\" is a prepositional phrase; \"nest,\" the singular noun nearest the blank, is not the subject.\n- Plural subject, plural verb: \"combs hold.\"\n\n**Why the other choices are wrong:**\n- A: The infinitive \"to hold\" leaves the sentence without a main verb.\n- B: \"Holds\" is singular; it agrees with the nearby \"nest\" rather than with the subject \"combs.\"\n- D: The participle \"holding\" also leaves the sentence without a finite main verb.",
   "_meta": {
-    "anchor": "Anatolian dental bioarchaeology; subject-verb agreement (plural subject)"
-  },
-  "module": 1
+    "anchor": "honeybee comb as colony record; subject-verb agreement (plural subject with intervening phrase)"
+  }
 }

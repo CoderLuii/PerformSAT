@@ -1,0 +1,29 @@
+{
+ "question": "A soil-coring drill advances $k$ centimeters each second while sampling a field plot, and a technician must record the drill's rate in meters per hour. Which expression gives that recorded rate?",
+ "hint": "Convert the seconds and the centimeters one at a time.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.36k$"
+  },
+  {
+   "id": "B",
+   "text": "$3.6k$"
+  },
+  {
+   "id": "C",
+   "text": "$36k$"
+  },
+  {
+   "id": "D",
+   "text": "$360k$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses 1 meter = 10,000 centimeters",
+  "B": "uses 1 meter = 1,000 centimeters",
+  "D": "uses 1 meter = 10 centimeters"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** $k$ cm/s is $3600k$ cm/h, and dividing by $100$ gives $36k$ meters per hour.\n\n**The Full Solution:**\nStep 1: There are $3600$ seconds in an hour, so the drill advances $3600k$ centimeters per hour.\nStep 2: There are $100$ centimeters in a meter, so divide by $100$.\nStep 3: $\\dfrac{3600k}{100} = 36k$ meters per hour. Check with $k = 1$: $1$ cm/s is $36$ m/h, since $3600$ cm is $36$ m ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.36k$): divides by $10{,}000$, the number of square centimeters in a square meter.\n* Choice B ($3.6k$): divides by $1000$, treating centimeters as millimeters.\n* Choice D ($360k$): divides by $10$, as if a meter held only $10$ centimeters.\n\n**Test Day Takeaway:** Convert one unit at a time and write each conversion as a fraction so the unwanted units cancel."
+}

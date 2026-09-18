@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 2,
- "passage": "Microbial ecologist Colleen Cavanaugh studies the giant tube worm Riftia pachyptila, which thrives near deep-sea hydrothermal vents where no sunlight reaches. The worm has no mouth or gut of its own; instead, it houses dense colonies of sulfur-oxidizing bacteria inside a specialized internal organ. Cavanaugh's work in the early 1980s established that these microbes ______ the worm by converting hydrogen sulfide from vent fluid into the organic carbon their host requires to grow.",
+ "passage": "For more than a century, the kilogram was defined by a single platinum-iridium cylinder kept under nested glass bells at a laboratory outside Paris. Periodic comparisons, however, suggested that the cylinder's mass and that of its official copies were slowly drifting apart. In 2019, metrologists therefore redefined the unit in terms of Planck's constant, a fixed quantity built into the laws of physics — a change intended to ______ the standard from the vulnerabilities of any single physical object.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "nurture"
+   "text": "borrow"
   },
   {
    "id": "B",
-   "text": "sustain"
+   "text": "insulate"
   },
   {
    "id": "C",
-   "text": "cultivate"
+   "text": "estimate"
   },
   {
    "id": "D",
-   "text": "deplete"
+   "text": "dislodge"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"sustain.\" The passage establishes that the tube worm has no mouth or gut and depends entirely on its internal bacteria, which convert hydrogen sulfide from vent fluid into the organic carbon the host needs to grow. The verb in the blank must therefore mean to keep the worm alive by supplying its nutritional needs. \"Sustain\" fits exactly: in scientific writing about symbiosis, a partner sustains its host when it provides the energy or nutrients that allow the host to live, which is precisely Cavanaugh's claim about chemosynthetic bacteria inside Riftia pachyptila."
+ "explanation": "**Choice B is correct.** The redefinition was meant to protect the standard from the weaknesses of depending on one physical object, and \"insulate ... from\" means exactly that: to shield something from an outside influence.\n\n**The Full Solution:**\n- The passage sets up a problem: the old standard was one physical cylinder, and its mass appeared to be drifting — a vulnerability built into any single object.\n- The redefinition tied the unit to Planck's constant, \"a fixed quantity built into the laws of physics,\" precisely so that no single object's fate could affect the standard.\n- The blank needs a verb meaning \"shield or protect from\": \"insulate the standard from the vulnerabilities\" completes that logic precisely.\n\n**Why the other choices are wrong:**\n- A: \"Borrow ... from\" would mean taking the vulnerabilities for the standard's own use, which reverses the intended protection.\n- C: \"Estimate\" belongs to the measurement theme but cannot take this construction — one does not estimate a standard \"from\" vulnerabilities, and the goal was protection, not approximation.\n- D: \"Dislodge\" means to knock something out of position — a physical-removal idea that echoes the cylinder imagery but says nothing about shielding the standard from risk."
 }

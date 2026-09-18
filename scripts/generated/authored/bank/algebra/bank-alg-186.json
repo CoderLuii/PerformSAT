@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-186",
+ "question": "A pharmacist divides a stock bottle holding $m$ milliliters of suspension evenly into 6 identical vials, and each vial receives 21 milliliters with none left over. What is the value of $m$?",
+ "correctAnswer": "126",
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**The correct answer is $126$.**\n\n**The Fast Way (~10s):** $\\frac{m}{6} = 21$, so $m = 6(21) = 126$.\n\n**The Full Solution:**\n\nStep 1: Dividing $m$ milliliters evenly into $6$ vials gives $\\frac{m}{6}$ milliliters per vial, so $\\frac{m}{6} = 21$.\n\nStep 2: Undo the division by multiplying both sides by $6$: $m = 6(21)$.\n\nStep 3: $m = 126$. Check: $\\frac{126}{6} = 21$ milliliters per vial.\n\n**Common Mistakes:**\n\n* $27$ — adding $6$ and $21$ instead of multiplying them.\n* $15$ — subtracting $6$ from $21$.\n* $3.5$ — dividing $21$ by $6$, undoing the division a second time instead of reversing it.\n\n**Test Day Takeaway:** A quantity split evenly gives a division equation; multiply by the number of parts to recover the whole."
+}

@@ -101,7 +101,7 @@ export const mRightTriangleTrigBlocks = [
     steps: [
       { label: 'Name the sides', content: 'The height is **opposite** the $18°$ angle; the ramp itself is the **hypotenuse**.' },
       { label: 'Choose the ratio', content: 'Opposite paired with hypotenuse is sine: $\\sin(18°) = \\dfrac{h}{12}$.' },
-      { label: 'Solve for h', content: 'Multiply both sides by $12$: $h = 12\\sin(18°)$ → **(A)**. Choice (B) comes from mislabeling the height as \"adjacent\" — the wrong label is the entire error.' },
+      { label: 'Solve for h', content: 'Multiply both sides by $12$: $h = 12\\sin(18°)$ → **(A)**. Choice (B) comes from mislabeling the height as "adjacent" — the wrong label is the entire error.' },
     ],
   },
   {

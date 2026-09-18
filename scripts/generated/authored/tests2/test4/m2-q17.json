@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "Water in a cylindrical sedimentation basin stands $24$ feet deep and amounts to $21{,}600\\pi$ cubic feet. Filling the basin to its interior height of $40$ feet adds how many cubic feet, in terms of $\\pi$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8{,}640\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$14{,}400\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$21{,}600\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$36{,}000\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales the given volume by 16/40 instead of by 16/24, giving 8,640 pi",
+  "C": "reports the water already in the basin rather than the amount still needed",
+  "D": "reports the basin's full capacity, forgetting to subtract the water already there"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** $\\pi r^2(24) = 21600\\pi$ gives $r^2 = 900$. The remaining $16$ feet hold $900\\pi(16) = 14400\\pi$ cubic feet.\n\n**The Full Solution:**\nStep 1: Use $V = \\pi r^2 h$ on the water already present: $\\pi r^2 (24) = 21600\\pi$, so $r^2 = \\frac{21600}{24} = 900$.\nStep 2: The water must rise from $24$ feet to $40$ feet, a gain of $16$ feet, and the cross section never changes.\nStep 3: The added volume is $\\pi r^2(16) = 900\\pi(16) = 14400\\pi$ cubic feet. Check: full capacity is $900\\pi(40) = 36000\\pi$, and $36000\\pi - 21600\\pi = 14400\\pi$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8{,}640\\pi$): this scales $21600\\pi$ by $\\frac{16}{40}$. Volume is proportional to depth, so the correct comparison is $16$ feet against the $24$ feet the given volume describes.\n* Choice C ($21{,}600\\pi$): this is the water already in the basin. It is the number handed to you, not the number still needed.\n* Choice D ($36{,}000\\pi$): this is the basin filled to $40$ feet, with the $21600\\pi$ already present never subtracted.\n\n**Test Day Takeaway:** In a cylinder the cross section is fixed, so volume rises in direct proportion to depth. Extract $r^2$ once, then multiply by whichever height the question is really asking about."
+}

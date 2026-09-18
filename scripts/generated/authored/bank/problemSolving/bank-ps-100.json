@@ -1,0 +1,60 @@
+{
+  "id": "bank-ps-100",
+  "question": "The table summarizes the $200$ rock samples collected on a field trip by rock type and by whether the sample contains visible crystals. One of the sedimentary samples will be selected at random. What is the probability of selecting a sample that contains visible crystals?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Visible crystals",
+        "No visible crystals",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Igneous",
+          "84",
+          "36",
+          "120"
+        ],
+        [
+          "Sedimentary",
+          "24",
+          "56",
+          "80"
+        ],
+        [
+          "Total",
+          "108",
+          "92",
+          "200"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{3}{25}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{2}{9}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{3}{10}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{7}{10}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "24/200, divides by all 200 samples",
+    "B": "24/108, conditions on visible crystals instead of sedimentary",
+    "D": "56/80, the complement within the sedimentary row"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Stay in the sedimentary row: $24$ of its $80$ samples contain visible crystals, and $\\dfrac{24}{80} = \\dfrac{3}{10}$.\n\n**The Full Solution:**\nStep 1: \"One of the sedimentary samples\" restricts the sample space to the sedimentary row, whose total is $80$.\nStep 2: Within that row, $24$ samples contain visible crystals.\nStep 3: The probability is $\\dfrac{24}{80} = \\dfrac{3}{10}$.\nCheck: $\\dfrac{3}{10}$ of $80$ is $24$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3}{25}$): This is $\\dfrac{24}{200}$, dividing by all $200$ samples instead of the $80$ sedimentary ones.\n* Choice B ($\\frac{2}{9}$): This is $\\dfrac{24}{108}$, which conditions on visible crystals and answers \"given visible crystals, what is the probability the sample is sedimentary?\"\n* Choice D ($\\frac{7}{10}$): This is $\\dfrac{56}{80}$, the probability that a sedimentary sample has no visible crystals.\n\n**Test Day Takeaway:** The group named after \"given\" or \"one of the\" supplies the denominator; read that row's total first."
+}

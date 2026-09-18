@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-414",
+  "question": "A contractor's invoice lists a materials cost of $\\$68$, and a sales tax of $6\\%$ is applied to that cost. What is the amount of the sales tax, in dollars?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4.08$"
+    },
+    {
+      "id": "B",
+      "text": "$40.80$"
+    },
+    {
+      "id": "C",
+      "text": "$62$"
+    },
+    {
+      "id": "D",
+      "text": "$72.08$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "computes $60\\%$ of the materials cost instead of $6\\%$",
+    "C": "subtracts $6$ from $68$",
+    "D": "reports the invoice total including the tax rather than the tax itself"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** $6\\%$ of $68$ is $0.06(68) = 4.08$ dollars.\n\n**The Full Solution:**\nStep 1: The tax is $6\\%$ of the materials cost, so the tax is $0.06$ times $68$.\nStep 2: $0.06(68) = 4.08$.\nStep 3: The sales tax is $\\$4.08$. Check: $1\\%$ of $68$ is $0.68$, and $6(0.68) = 4.08$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($40.80$): computes $60\\%$ of the materials cost instead of $6\\%$\n* Choice C ($62$): subtracts $6$ from $68$\n* Choice D ($72.08$): reports the invoice total including the tax rather than the tax itself\n\n**Test Day Takeaway:** Compute $1\\%$ by moving the decimal two places, then scale; it makes a decimal slip obvious."
+}

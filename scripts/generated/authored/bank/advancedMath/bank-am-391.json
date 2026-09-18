@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-391",
+ "question": "The function $f$ defined by $f(x)=3(x-4)^2+7$ gives a shop's cost, in dollars, of producing one herbal tea tin in month $x$ of a contract. Which statement best interprets the number $7$ in this context?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The cost per tin is \\$7 in month $0$ of the contract."
+  },
+  {
+   "id": "B",
+   "text": "The cost per tin reaches a maximum of \\$7, in month $4$."
+  },
+  {
+   "id": "C",
+   "text": "The cost per tin is \\$4 at its lowest, in month $7$."
+  },
+  {
+   "id": "D",
+   "text": "The cost per tin reaches a minimum of \\$7, in month $4$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats 7 as f(0), which is 55, not 7",
+  "B": "reads the positive leading coefficient 3 as opening downward",
+  "C": "swaps the roles of the 4 and the 7 in vertex form"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** In $a(x-h)^2+k$ with $a=3>0$, the value $k=7$ is the least output, reached at $x=h=4$.\n\n**The Full Solution:**\nStep 1: The expression is in vertex form $a(x-h)^2+k$ with $a=3$, $h=4$, and $k=7$.\nStep 2: Because $a$ is positive, $3(x-4)^2$ is never negative and is $0$ only at $x=4$, so the smallest possible cost is $7$.\nStep 3: That smallest cost happens in month $4$. Check: $f(4)=7$, while $f(3)=10$ and $f(5)=10$ are both larger ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: treats $7$ as the month-$0$ cost, but $f(0)=3(16)+7=55$.\n* Choice B: reads the positive leading coefficient $3$ as though the graph opened downward.\n* Choice C: swaps the roles of $4$ and $7$, reporting the input as the cost.\n\n**Test Day Takeaway:** In vertex form $k$ is the extreme output and $h$ is where it happens — the sign of $a$ decides which extreme."
+}

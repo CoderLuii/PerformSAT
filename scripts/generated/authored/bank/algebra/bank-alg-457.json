@@ -1,0 +1,58 @@
+{
+  "id": "bank-alg-457",
+  "question": "The graph of the linear function $f$ is shown in the $xy$-plane. The graph has an $x$-intercept at $(5, 0)$ and a $y$-intercept at $(0, -3)$. What is the slope of the graph of $f$?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 0.6,
+      "yIntercept": -3,
+      "xRange": [
+        -4,
+        8
+      ],
+      "yRange": [
+        -6,
+        4
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "label": "f"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-\\frac{5}{3}$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{3}{5}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{3}{5}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{5}{3}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverts the ratio and mishandles the sign of -3.",
+    "B": "subtracts the coordinates in mismatched order, \\frac{-3 - 0}{5 - 0}, producing a negative slope for a rising line.",
+    "D": "puts the run 5 over the rise 3."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Between $(0, -3)$ and $(5, 0)$ the line rises $3$ over a run of $5$: slope $\\frac{3}{5}$.\n\n**The Full Solution:**\nStep 1: The two intercepts are points on the line: $(0, -3)$ and $(5, 0)$.\nStep 2: Slope $= \\frac{0 - (-3)}{5 - 0} = \\frac{3}{5}$.\nStep 3: Check: the graph rises from left to right, so the slope is positive; and $f(x) = \\frac{3}{5}x - 3$ gives $f(5) = 3 - 3 = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{5}{3}$): inverts the ratio and mishandles the sign of $-3$.\n* Choice B ($-\\frac{3}{5}$): subtracts the coordinates in mismatched order, $\\frac{-3 - 0}{5 - 0}$, producing a negative slope for a rising line.\n* Choice D ($\\frac{5}{3}$): puts the run $5$ over the rise $3$.\n\n**Test Day Takeaway:** Intercepts are just two points: $(a, 0)$ and $(0, b)$ give slope $\\frac{b - 0}{0 - a} = -\\frac{b}{a}$; here $-\\frac{-3}{5} = \\frac{3}{5}$."
+}

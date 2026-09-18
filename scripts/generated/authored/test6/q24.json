@@ -6,16 +6,16 @@
   "band": 3,
   "domain": "expression-of-ideas",
   "skill": "transitions",
-  "passage": "Beekeepers once assumed that a foraging honeybee returning to the hive simply led its nestmates back to a food source by scent. ______ close observation of the hive showed that a returning forager performs a patterned \"waggle dance\" whose angle and duration encode the direction and distance of the food, information the other bees use to fly there directly.",
+  "passage": "For two centuries, botanists explained English ivy's grip on stone and bark mechanically: the plant's clusters of rootlets were said to work like tiny hooks, lodging in crevices and holding on by shape alone. ______ chemical analysis has shown that the rootlets secrete a glue — a suspension of nanoscale particles that seeps into microscopic pores and then hardens — and that this adhesive, not any hooking action, is what anchors the vine.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "For example,"
+      "text": "For instance,"
     },
     {
       "id": "B",
-      "text": "Likewise,"
+      "text": "Meanwhile,"
     },
     {
       "id": "C",
@@ -23,9 +23,9 @@
     },
     {
       "id": "D",
-      "text": "In summary,"
+      "text": "In short,"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"Instead.\" The passage replaces the old assumption, that bees lead others back by scent, with a different account, the waggle dance that communicates direction and distance. \"Instead\" marks that substitution of one explanation for another. \"For example\" would present the dance as an instance of leading by scent, which it is not; \"Likewise\" would treat the two as parallel; and \"In summary\" would signal a recap rather than a correction."
+  "explanation": "**Choice C is correct.** The second sentence does not merely differ from the first — it replaces it: the glue explanation supplants the hook explanation (\"this adhesive, not any hooking action\"). \"Instead,\" is the transition of substitution.\n\n**The Full Solution:**\n- Before the blank: the accepted account — rootlets as mechanical hooks.\n- After the blank: analysis overturns it and supplies the true mechanism, explicitly displacing the old one.\n- When a second statement swaps in for a rejected first, \"Instead\" is the logical connector.\n\n**Why the other choices are wrong:**\n- A: \"For instance\" would offer the glue finding as an example of the hook theory it actually refutes.\n- B: \"Meanwhile\" sets two things running in parallel, but these accounts cannot coexist — one dethrones the other.\n- D: \"In short\" introduces a summary of what came before, yet the second sentence contradicts rather than condenses the first."
 }

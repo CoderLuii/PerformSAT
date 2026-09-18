@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-317",
+ "question": "For a photometer, the signal-to-noise ratio is modeled by $R(t)=\\sqrt{4t+12}$, where $t$ is the exposure time in seconds. For what exposure time is the ratio equal to $10$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$22$"
+  },
+  {
+   "id": "B",
+   "text": "$25$"
+  },
+  {
+   "id": "C",
+   "text": "$28$"
+  },
+  {
+   "id": "D",
+   "text": "$88$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "drops the constant 12 and solves 4t = 100, giving 25",
+  "C": "adds instead of subtracting, solving 4t = 100 + 12, giving 28",
+  "D": "forgets to divide by 4 and reports 100 - 12 = 88"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** $\\sqrt{4t+12}=10$ squares to $4t+12=100$, so $4t=88$ and $t=22$.\n\n**The Full Solution:**\n\nStep 1: Set the model equal to the target ratio: $\\sqrt{4t+12}=10$.\n\nStep 2: Square both sides: $4t+12=100$.\n\nStep 3: Subtract, then divide: $4t=88$ and $t=22$. Check: $4(22)+12=100$ and $\\sqrt{100}=10$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($25$): ignores the $+12$ and solves $4t=100$.\n* Choice C ($28$): adds $12$ to $100$ instead of subtracting it.\n* Choice D ($88$): stops at $4t=88$ and reports $88$ without dividing by $4$.\n\n**Test Day Takeaway:** After squaring, undo the constant before the coefficient; skipping either step lands on a listed answer."
+}

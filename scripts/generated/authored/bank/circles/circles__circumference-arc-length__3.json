@@ -1,0 +1,42 @@
+{
+ "question": "In the figure, a conveyor turn runs along minor arc $AB$; the wheel radius is $15$ and the turn subtends $72^\\circ$ at center $O$. How long is the turn?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 72,
+   "angleLabel": "72°",
+   "radius": 15,
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "showRadiusLabel": true,
+   "figureNote": true
+  }
+ },
+ "hint": "Compare the given angle with a full turn of $360^\\circ$.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$6\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$12\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$30\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses pi*r instead of 2*pi*r for the whole rim",
+  "C": "uses the diameter 30 in place of the radius",
+  "D": "reports the whole circumference 30pi"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** $72^\\circ$ is one fifth of a full turn, and one fifth of $2\\pi(15) = 30\\pi$ is $6\\pi$.\n\n**The Full Solution:**\nStep 1: The whole rim measures $2\\pi r = 2\\pi(15) = 30\\pi$.\nStep 2: The turn covers $\\dfrac{72}{360} = \\dfrac{1}{5}$ of the rim.\nStep 3: Multiply: $\\dfrac{1}{5}(30\\pi) = 6\\pi$. Check: five such turns would total $30\\pi$, the whole rim ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3\\pi$): uses $\\pi r = 15\\pi$ as the circumference, half of the true value.\n* Choice C ($12\\pi$): uses the diameter $30$ where the radius belongs, doubling the answer.\n* Choice D ($30\\pi$): reports the entire circumference instead of the fifth of it that the turn covers.\n\n**Test Day Takeaway:** An arc is the same fraction of the circumference as its central angle is of $360^\\circ$."
+}

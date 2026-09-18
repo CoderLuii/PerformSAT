@@ -194,6 +194,8 @@
 .pt-badge.is-completed { background: var(--sp-done-tint); color: var(--sp-done); }
 .pt-badge.is-progress { background: var(--sp-orange-tint); color: var(--sp-orange); }
 .pt-badge.is-notstarted { background: var(--sp-surface-2); color: var(--sp-text-3); }
+/* Diagnostic = focus purple: it is the sitting the study plan was built from. */
+.pt-badge.is-diagnostic { background: var(--sp-rw-tint); color: var(--sp-rw); }
 
 .pt-card-titlerow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .pt-card-title {
@@ -308,6 +310,7 @@
 .pt-progress-label { font-size: 12px; font-weight: 700; color: var(--sp-text-2); font-variant-numeric: tabular-nums; flex: none; white-space: nowrap; }
 /* In-progress: quiet Reset paired with the primary Continue button */
 .pt-progress-actions { display: flex; align-items: center; gap: 14px; flex: none; }
+.pt-diag-actions { display: flex; align-items: center; gap: 10px; flex: none; }
 
 /* ── Buttons ───────────────────────────────────────────────────────────── */
 .pt-btn {
@@ -324,6 +327,7 @@
   transition: background 120ms ease, border-color 120ms ease, transform 80ms ease;
 }
 .pt-btn:active { transform: translateY(1px); }
+.pt-btn:disabled { opacity: 0.55; cursor: default; transform: none; }
 .pt-btn.is-primary {
   background: var(--sp-orange);
   color: #fff;
@@ -403,6 +407,13 @@
      title and progress bar keep their space instead of wrapping to slivers. */
   .pt-card.is-progress .pt-card-row { flex-wrap: wrap; }
   .pt-card.is-progress .pt-progress-actions { width: 100%; justify-content: flex-end; }
+  /* Diagnostic: same — the View diagnosis button takes its own row. */
+  .pt-card.is-diagnostic .pt-card-row { flex-wrap: wrap; }
+  /* Completed: Retake / Review answers / View diagnosis take their own row. */
+  .pt-card-foot { flex-wrap: wrap; }
+  .pt-foot-actions { width: 100%; flex-wrap: wrap; justify-content: flex-end; }
+  .pt-card.is-diagnostic .pt-diag-actions { width: 100%; }
+  .pt-card.is-diagnostic .pt-diag-actions .pt-btn { flex: 1 1 0; min-width: 0; justify-content: center; white-space: nowrap; padding: 9px 10px; font-size: 13px; }
   .pt-secrow { flex-wrap: wrap; }
   .pt-secrow-track { width: 100%; order: 3; margin-top: 6px; }
   .pt-secrow-info { flex-basis: 60%; }

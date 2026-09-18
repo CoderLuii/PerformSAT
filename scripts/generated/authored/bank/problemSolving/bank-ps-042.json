@@ -1,0 +1,45 @@
+{
+  "id": "bank-ps-042",
+  "question": "The table gives the values in two data sets, A and B. Which of the following statements about the two data sets is true?",
+  "questionTable": {
+    "headers": [
+      "Data set",
+      "Values"
+    ],
+    "rows": [
+      [
+        "A",
+        "14, 15, 15, 16, 16, 16, 17, 17, 18"
+      ],
+      [
+        "B",
+        "8, 11, 13, 16, 16, 16, 19, 21, 24"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The standard deviation of data set A is less than the standard deviation of data set B."
+    },
+    {
+      "id": "B",
+      "text": "The standard deviation of data set A is greater than the standard deviation of data set B."
+    },
+    {
+      "id": "C",
+      "text": "The standard deviations of data set A and data set B are equal because the means of the two data sets are equal."
+    },
+    {
+      "id": "D",
+      "text": "The mean of data set A is greater than the mean of data set B."
+    }
+  ],
+  "distractorNotes": {
+    "B": "reverses the comparison; the tightly clustered set has the smaller standard deviation.",
+    "C": "confuses center with spread; equal means say nothing about equal standard deviations.",
+    "D": "is false, since both means equal $16$."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Standard Deviation Comparison**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Both sets have mean $16$, but set A's values all sit within $2$ of $16$ while set B's values reach as far as $8$ from $16$. More spread means a larger standard deviation, so A's is smaller.\n\n**The Full Solution:**\nStep 1: Compute the means. Set A: $\\frac{14 + 15 + 15 + 16 + 16 + 16 + 17 + 17 + 18}{9} = \\frac{144}{9} = 16$. Set B: $\\frac{8 + 11 + 13 + 16 + 16 + 16 + 19 + 21 + 24}{9} = \\frac{144}{9} = 16$. The means are equal.\nStep 2: Standard deviation measures how far values typically lie from the mean. Set A's distances from $16$ are $2, 1, 1, 0, 0, 0, 1, 1, 2$; set B's are $8, 5, 3, 0, 0, 0, 3, 5, 8$.\nStep 3: Every nonzero distance in set B exceeds the corresponding distance in set A, so set B is more spread out and has the larger standard deviation. Check: set A spans $14$ to $18$; set B spans $8$ to $24$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (greater): reverses the comparison; the tightly clustered set has the smaller standard deviation.\n* Choice C (equal): confuses center with spread; equal means say nothing about equal standard deviations.\n* Choice D (mean of A greater): is false, since both means equal $16$.\n\n**Test Day Takeaway:** Standard deviation is about spread around the mean, independent of the mean's value. Compare distances from the center; no formula is needed."
+}

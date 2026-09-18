@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "craft-and-structure",
  "skill": "words-in-context",
+ "type": "multiple-choice",
+ "passage": "Aquatic insects differ widely in how much pollution they can ______: caddisfly and mayfly larvae disappear from streams at the first signs of contamination, while certain midge larvae persist even in badly degraded water. Because of this difference, biologists can estimate a stream's health simply by cataloging which insect groups live in it.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "reflect"
+   "text": "produce"
   },
   {
    "id": "B",
-   "text": "absorb"
+   "text": "tolerate"
   },
   {
    "id": "C",
-   "text": "ignore"
+   "text": "measure"
   },
   {
    "id": "D",
-   "text": "manufacture"
+   "text": "conceal"
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B, \"absorb.\" The sentence says gases in the planet's atmosphere act on starlight so as to leave \"small dips at characteristic wavelengths,\" and that those dips are later matched to laboratory measurements to identify specific molecules. A dip at a characteristic wavelength is what appears when a gas takes light at that wavelength out of the beam, which is absorption. \"Ignore\" is the wrong kind of relation, since gases interact with light physically rather than disregarding it, and ignored light would leave no dip. \"Manufacture\" describes the atmosphere producing light, but the dips are losses, not new emissions. \"Reflect\" sends light back toward the star rather than leaving a gap in the spectrum that reaches Earth.",
+ "explanation": "**Choice B is correct.** The colon defines the blank with a contrast in endurance — some larvae vanish at the first contamination while others persist in degraded water — and \"tolerate\" is the word for how much pollution an organism can endure.\n\n**The Full Solution:**\n- The blank needs a verb describing the insects' relationship to pollution that varies from species to species.\n- The examples spell out that relationship: disappearing quickly versus persisting is a difference in how much pollution each group can withstand, which is what \"tolerate\" means.\n\n**Why the other choices are wrong:**\n- A: \"Produce\" makes the insects the source of the pollution, but the text treats pollution as something that happens to them.\n- C: \"Measure\" belongs to the biologists, who use the insects as indicators; the insects themselves measure nothing.\n- D: \"Conceal\" would mean the larvae hide contamination, an idea the text never raises.",
  "_meta": {
-  "anchor": "Exoplanet transmission spectroscopy (unnamed astronomers); absorption dips in transmitted starlight"
- },
- "passage": "When a planet outside our solar system passes in front of its host star, the starlight travels through a thin band of the planet's upper atmosphere before reaching telescopes on Earth. Astronomers studying these events have shown that gases in that band ______ specific colors of starlight, leaving small dips at characteristic wavelengths in the spectrum that arrives at the detector. By matching the pattern of dips to laboratory measurements, researchers can identify which molecules are present in an atmosphere many light-years away.",
- "type": "multiple-choice"
+  "anchor": "Caddisfly and midge larvae as stream water-quality indicators (unnamed biologists)"
+ }
 }

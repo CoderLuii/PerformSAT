@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-317",
+  "question": "Data set V consists of $18$ values, each equal to $64$. Data set W consists of $18$ values: six values of $58$, six values of $64$, and six values of $70$. Which statement correctly compares data set V and data set W?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The two data sets have the same mean and the same standard deviation."
+    },
+    {
+      "id": "B",
+      "text": "Data set V has the greater mean, and data set V has the greater standard deviation."
+    },
+    {
+      "id": "C",
+      "text": "The two data sets have the same mean, and data set W has the greater standard deviation."
+    },
+    {
+      "id": "D",
+      "text": "The two data sets have the same standard deviation, and data set W has the greater mean."
+    }
+  ],
+  "distractorNotes": {
+    "A": "matches the means correctly but assumes equal means force equal spread; V has no spread at all while W does.",
+    "B": "reads the repeated value $64$ as making V both larger and more variable, but every value in V equals the common mean.",
+    "D": "balances $58$ and $70$ around $64$ correctly yet reports a greater mean for W, when the two means are equal."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Standard Deviation Comparison**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** W's values are symmetric about $64$, so both means are $64$. V has zero spread, so W's standard deviation is greater.\n\n**The Full Solution:**\nStep 1: Every value of V is $64$, so the mean of V is $64$ and every distance from the mean is $0$, making the standard deviation of V equal to $0$.\nStep 2: In W the six $58$s and six $70$s balance around $64$, so the mean of W is also $64$.\nStep 3: W has twelve values that sit $6$ away from the mean, so its standard deviation is positive and therefore greater than $0$. Check: same center, different spread. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: matches the means correctly but assumes equal means force equal spread; V has no spread at all while W does.\n* Choice B: reads the repeated value $64$ as making V both larger and more variable, but every value in V equals the common mean.\n* Choice D: balances $58$ and $70$ around $64$ correctly yet reports a greater mean for W, when the two means are equal.\n\n**Test Day Takeaway:** A data set with every value identical has standard deviation $0$ — the smallest possible. Any data set with two different values beats it on spread."
+}

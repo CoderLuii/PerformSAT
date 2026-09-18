@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "The three sides of a right-triangular cross-country loop total $90$ meters, and the sine of the loop's smallest angle is $\\frac{5}{13}$. Which of the following expressions gives the length, in meters, of the side opposite that angle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{5}{12} \\cdot 90$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{5}{13} \\cdot 90$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{13}{30} \\cdot 90$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{5}{30} \\cdot 90$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the tangent ratio 5/12 and applies it to the perimeter, giving 37.5",
+  "B": "applies the sine ratio to the perimeter as if the perimeter were the hypotenuse, giving about 34.6",
+  "C": "gives the hypotenuse's share of the perimeter, 39, instead of the opposite side"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** Sine $\\frac{5}{13}$ makes the sides $5k$, $12k$, $13k$, a total of $30k$; the opposite side is $\\frac{5}{30}$ of the perimeter.\n\n**The Full Solution:**\nStep 1: Sine is opposite over hypotenuse, so the opposite side is $5k$ and the hypotenuse is $13k$ for some positive $k$.\nStep 2: The third side follows from the Pythagorean theorem: $\\sqrt{(13k)^2 - (5k)^2} = 12k$. The three sides are $5k$, $12k$, and $13k$, so the perimeter is $30k$.\nStep 3: The opposite side is therefore $\\dfrac{5k}{30k}$ of the perimeter, or $\\dfrac{5}{30} \\cdot 90 = 15$ meters.\nCheck: $k = 3$ makes the sides $15$, $36$, and $39$, which total $90$, and $\\dfrac{15}{39} = \\dfrac{5}{13}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{5}{12} \\cdot 90 = 37.5$): uses the tangent ratio, and applies it to the perimeter rather than to the adjacent side.\n* Choice B ($\\frac{5}{13} \\cdot 90 \\approx 34.6$): treats the $90$-meter perimeter as the hypotenuse; the hypotenuse is only $39$ meters.\n* Choice C ($\\frac{13}{30} \\cdot 90 = 39$): correctly splits the perimeter into $30$ parts but returns the hypotenuse instead of the opposite side.\n\n**Test Day Takeaway:** A trig ratio fixes the whole side triple up to a scale factor — add the parts, match the sum to the perimeter, and every side follows."
+}

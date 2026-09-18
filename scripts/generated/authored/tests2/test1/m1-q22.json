@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "A machinist cuts a wedge whose cross section is a right triangle. The longest side of that cross section measures $12$ millimeters, and the shortest side measures $6$ millimeters. What is the area, in square millimeters, of the cross section?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18\\sqrt{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$36$"
+  },
+  {
+   "id": "C",
+   "text": "$36\\sqrt{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$72$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "uses the hypotenuse 12 as the second leg, computing (1/2)(6)(12) = 36",
+  "C": "finds the second leg 6*sqrt(3) correctly but omits the factor of 1/2, giving 36*sqrt(3)",
+  "D": "makes both errors at once, multiplying the two given sides without halving: (6)(12) = 72"
+ },
+ "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**Choice A is correct.**\n\n**The Fast Way (~45s):** The missing leg is $\\sqrt{12^{2} - 6^{2}} = \\sqrt{108} = 6\\sqrt{3}$, so the area is $\\frac{1}{2}(6)\\left(6\\sqrt{3}\\right) = 18\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: In a right triangle the longest side is the hypotenuse, so the hypotenuse is $12$ and one leg is $6$.\nStep 2: Find the other leg with the Pythagorean theorem: $6^{2} + b^{2} = 12^{2}$, so $b^{2} = 144 - 36 = 108$ and $b = \\sqrt{108} = \\sqrt{36 \\cdot 3} = 6\\sqrt{3}$.\nStep 3: The two legs form the right angle, so the area is $\\frac{1}{2}\\left(6\\right)\\left(6\\sqrt{3}\\right) = 18\\sqrt{3}$ square millimeters. Check numerically: $18\\sqrt{3} \\approx 31.2$, which is less than the $36$ that a $6$ by $12$ right triangle would give, as it must be since $6\\sqrt{3} < 12$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($36$): multiplies the two given lengths and halves them, $\\frac{1}{2}(6)(12) = 36$, but $12$ is the hypotenuse, not a leg, so it is not one of the sides forming the right angle.\n* Choice C ($36\\sqrt{3}$): finds the missing leg correctly but leaves out the factor $\\frac{1}{2}$, reporting the product of the legs instead of half of it.\n* Choice D ($72$): makes both errors, using the hypotenuse as a leg and skipping the $\\frac{1}{2}$: $(6)(12) = 72$.\n\n**Test Day Takeaway:** The area formula uses the two legs, never the hypotenuse; find the missing leg first, simplify the radical, and sanity-check that the area is smaller than half the product of the two given lengths."
+}

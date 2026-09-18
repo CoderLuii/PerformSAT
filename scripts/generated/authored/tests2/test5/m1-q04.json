@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A right-triangular pennant hangs in a school gymnasium. Its legs measure $a\\sqrt{3}$ feet and $10\\sqrt{3}$ feet, where $a$ is a positive constant. Which expression represents the area of the pennant, in square feet?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5a$"
+  },
+  {
+   "id": "B",
+   "text": "$15a$"
+  },
+  {
+   "id": "C",
+   "text": "$30a$"
+  },
+  {
+   "id": "D",
+   "text": "$45a$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies only the coefficients and drops both radical factors: (1/2)(a)(10) = 5a",
+  "C": "computes the product of the legs, 30a, and omits the factor 1/2",
+  "D": "replaces each sqrt(3) with 3, giving (1/2)(3a)(30) = 45a"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $\\sqrt{3}\\cdot\\sqrt{3} = 3$, so the area is $\\frac{1}{2}(a)(10)(3) = 15a$.\n\n**The Full Solution:**\nStep 1: In a right triangle the two legs are the base and the height, so the area is $\\frac{1}{2}\\left(a\\sqrt{3}\\right)\\left(10\\sqrt{3}\\right)$.\nStep 2: Multiply the coefficients and the radicals separately: $a \\cdot 10 = 10a$ and $\\sqrt{3}\\cdot\\sqrt{3} = 3$. The product of the legs is therefore $30a$.\nStep 3: Apply the factor $\\frac{1}{2}$: $\\frac{1}{2}(30a) = 15a$. Check with $a = 2$: the legs are $2\\sqrt{3}$ and $10\\sqrt{3}$, the product is $20 \\cdot 3 = 60$, and half of that is $30$, which equals $15(2)$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($5a$): multiplies $\\frac{1}{2}$, $a$, and $10$ but throws the radicals away, as if $\\sqrt{3}\\cdot\\sqrt{3} = 1$. The radicals contribute a factor of $3$, so this answer is three times too small.\n* Choice C ($30a$): computes the product of the two legs correctly but forgets the $\\frac{1}{2}$. That is the area of the rectangle with those side lengths, which is twice the triangle.\n* Choice D ($45a$): replaces each $\\sqrt{3}$ with $3$, turning the legs into $3a$ and $30$ and giving $\\frac{1}{2}(3a)(30) = 45a$. Only the PRODUCT of the two radicals is $3$; neither radical equals $3$ on its own.\n\n**Test Day Takeaway:** With radical side lengths, multiply the rational parts and the radical parts separately. A pair of identical square roots collapses to the number inside — that is usually the whole trick."
+}

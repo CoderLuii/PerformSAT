@@ -1,0 +1,40 @@
+{
+  "id": "bank-am-298",
+  "question": "In the $xy$-plane, the graph of $y = x^2 + bx + c$ is shown, where $b$ and $c$ are constants and the vertex of the graph is the marked point. What is the value of $b + c$?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        -3,
+        -4
+      ],
+      "a": 1,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-7$"
+    },
+    {
+      "id": "B",
+      "text": "$-1$"
+    },
+    {
+      "id": "C",
+      "text": "$2$"
+    },
+    {
+      "id": "D",
+      "text": "$11$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses $c = k - \\dfrac{b^2}{4}$ instead of $c = k + \\dfrac{b^2}{4}$, giving $c = -13$",
+    "B": "reads $b = 2h = -6$, dropping the negative sign in $x = -\\dfrac{b}{2}$",
+    "C": "reports the vertex's $y$-coordinate as $c$ instead of the $y$-intercept"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Completing the Square**\n\n**Choice D is correct.**\n\n**The Fast Way (~50s):** The marked vertex $(-3, -4)$ and a leading coefficient of $1$ give $y = (x + 3)^2 - 4 = x^2 + 6x + 5$, so $b + c = 6 + 5 = 11$.\n\n**The Full Solution:**\nStep 1: From the graph the vertex is the marked point $(-3, -4)$, and the coefficient of $x^2$ is $1$, so the vertex form of the equation is $y = (x + 3)^2 - 4$.\nStep 2: Expand to return to standard form: $(x + 3)^2 - 4 = x^2 + 6x + 9 - 4 = x^2 + 6x + 5$. Matching coefficients with $y = x^2 + bx + c$ gives $b = 6$ and $c = 5$.\nStep 3: Therefore $b + c = 6 + 5 = 11$. Check: completing the square on $x^2 + 6x + 5$ returns $(x + 3)^2 - 4$, and the graph does cross the $y$-axis at $(0, 5)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7$): this takes $c = k - \\dfrac{b^2}{4} = -4 - 9 = -13$ and adds $6$; the $9$ that completing the square subtracts must be added BACK on the way to standard form.\n* Choice B ($-1$): this reads $b = 2(-3) = -6$ from the vertex, dropping the negative sign in $x = -\\dfrac{b}{2}$, then adds the correct $c = 5$.\n* Choice C ($2$): this uses $c = -4$, the $y$-coordinate of the vertex; $c$ is the $y$-intercept of the graph, which the figure puts at $(0, 5)$.\n\n**Test Day Takeaway:** Read the vertex form straight off the marked point, then expand. The constant term $c$ is the $y$-intercept, never the height of the vertex."
+}

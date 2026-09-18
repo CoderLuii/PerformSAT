@@ -1,0 +1,35 @@
+{
+ "id": 11,
+ "question": "The table shows, for each of two highway corridors, the number of days on which the given number of lanes was closed for repairs. For the $60$ corridor-days represented in the table, what is the mode of the number of lanes closed?",
+ "questionTable": {
+  "headers": [
+   "Lanes closed",
+   "Corridor P (days)",
+   "Corridor Q (days)"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$4$",
+    "$3$"
+   ],
+   [
+    "$2$",
+    "$11$",
+    "$5$"
+   ],
+   [
+    "$3$",
+    "$9$",
+    "$10$"
+   ],
+   [
+    "$4$",
+    "$6$",
+    "$12$"
+   ]
+  ]
+ },
+ "correctAnswer": "3",
+ "explanation": "**SAT Pattern: Mode of a Data Set**\n\n**The correct answer is $3$.**\n\n**The Fast Way (~30s):** Add the two columns row by row: $7$, $16$, $19$, $18$. The largest total, $19$, sits beside $3$ lanes.\n\n**The Full Solution:**\nStep 1: The mode of the combined data is the value that occurs on the most corridor-days, so the two columns must be added before anything is compared.\nStep 2: Row totals: $1$ lane occurs $4 + 3 = 7$ times; $2$ lanes, $11 + 5 = 16$; $3$ lanes, $9 + 10 = 19$; $4$ lanes, $6 + 12 = 18$.\nStep 3: The greatest frequency is $19$, which belongs to $3$ lanes closed, so the mode is $3$. Check: $7 + 16 + 19 + 18 = 60$, matching the $60$ corridor-days stated. $\\checkmark$\n\n**Common Mistakes:** Gridding $2$, which is the mode of Corridor P alone ($11$ days) but loses to $3$ once Corridor Q is included; gridding $4$, the mode of Corridor Q alone ($12$ days), for the same reason; gridding $19$, the frequency of the mode rather than the value that occurs most often.\n\n**Test Day Takeaway:** A mode over combined groups is never the winner of either group by default. Add the frequencies first, then read off the value beside the largest total."
+}

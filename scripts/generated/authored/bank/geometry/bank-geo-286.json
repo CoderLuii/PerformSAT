@@ -1,0 +1,42 @@
+{
+  "question": "A tsunami buoy drifts along the curve $x^2 + y^2 - 16x + 2cy + 39 = 0$ for some positive constant $c$, with $x$ and $y$ measured in kilometers east and north of a seafloor anchor. The figure shows this curve and its radius. What is $c$?",
+  "diagram": {
+    "type": "circleWithSector",
+    "params": {
+      "centralAngle": 55,
+      "showAngleLabel": false,
+      "showAngleArc": false,
+      "radius": "13",
+      "showRadiusLabel": true,
+      "labelCenter": "O",
+      "labelPoint1": "P",
+      "labelPoint2": "Q"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$24$"
+    },
+    {
+      "id": "D",
+      "text": "$144$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "treats the center as (8, -2c), solving 4c squared + 25 = 169 to get c = 6",
+    "C": "reports 2c, the coefficient printed in the equation, instead of c",
+    "D": "stops at c squared = 144 without taking the square root"
+  },
+  "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Completing the square gives $r^2 = 8^2 + c^2 - 39 = c^2 + 25$. Setting $c^2 + 25 = 13^2$ gives $c^2 = 144$, so $c = 12$.\n\n**The Full Solution:**\nStep 1: Complete the square: $x^2 - 16x = (x - 8)^2 - 64$ and $y^2 + 2cy = (y + c)^2 - c^2$, so the curve is $(x - 8)^2 + (y + c)^2 = 64 + c^2 - 39$.\nStep 2: The figure gives the radius as $13$ kilometers, so $c^2 + 25 = 169$ and $c^2 = 144$.\nStep 3: Since $c$ is positive, $c = 12$. Check: with $c = 12$ the curve is $(x - 8)^2 + (y + 12)^2 = 64 + 144 - 39 = 169$, a circle of radius $13$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): never halves the linear coefficient, treating the center as $(8, -2c)$ and solving $4c^2 + 25 = 169$.\n* Choice C ($24$): reports $2c$, the number that appears in the equation, rather than $c$ itself.\n* Choice D ($144$): stops at $c^2$ and never takes the square root.\n\n**Test Day Takeaway:** When a linear coefficient carries a letter, halve it before squaring — $2cy$ contributes $c^2$, not $4c^2$, to the radius.",
+  "id": "bank-geo-286"
+}

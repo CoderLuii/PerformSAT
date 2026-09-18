@@ -1,35 +1,41 @@
 {
-  "id": 1232,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 2,
-  "passage": "The following text is from Robert Frost's poem \"Stopping by Woods on a Snowy Evening,\" published in 1923.\n\nWhose woods these are I think I know.\nHis house is in the village though;\nHe will not see me stopping here\nTo watch his woods fill up with snow.\n\nMy little horse must think it queer\nTo stop without a farmhouse near\nBetween the woods and frozen lake\nThe darkest evening of the year.\n\nHe gives his harness bells a shake\nTo ask if there is some mistake.\nThe only other sound's the sweep\nOf easy wind and downy flake.\n\nThe woods are lovely, dark and deep,\nBut I have promises to keep,\nAnd miles to go before I sleep,\nAnd miles to go before I sleep.",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The speaker stops on a journey to watch snow fall in a quiet woods, dwells on the stillness, then turns back to his obligations and the long way still ahead."
-    },
-    {
-      "id": "B",
-      "text": "The speaker recounts buying a wooded property on the edge of a nearby village, then describes how he returns to it each winter to watch the falling snow collect among the bare trees."
-    },
-    {
-      "id": "C",
-      "text": "The speaker raises a question about why the silent woods seem so inviting, weighs several possible answers, and rejects each one before deciding to ride on."
-    },
-    {
-      "id": "D",
-      "text": "The speaker describes becoming lost in a blizzard, then explains how the sound of his horse's bells guided a farmer to lead him safely home."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The poem opens with the speaker halting by a woods to watch it \"fill up with snow,\" lingers over the hushed scene—the horse's puzzlement, the \"easy wind and downy flake\"—and closes by turning away because he has \"promises to keep\" and \"miles to go before I sleep.\" A traces that movement from pausing to lingering to moving on. B takes the passing mention of the owner's house and invents a story of buying property. C imposes a question-and-rejection pattern the poem does not follow. D supplies a tale of getting lost and being rescued that the poem never tells.",
-  "_meta": {
-    "quoteVerify": true,
-    "source": "Robert Frost, \"Stopping by Woods on a Snowy Evening\" (1923)"
+ "id": 1232,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 2,
+ "passage": "The following text is Emily Brontë's poem \"Spellbound,\" written in 1837.\n\nThe night is darkening round me,\nThe wild winds coldly blow;\nBut a tyrant spell has bound me\nAnd I cannot, cannot go.\n\nThe giant trees are bending\nTheir bare boughs weighed with snow.\nAnd the storm is fast descending,\nAnd yet I cannot go.\n\nClouds beyond clouds above me,\nWastes beyond wastes below;\nBut nothing drear can move me;\nI will not, cannot go.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The speaker describes a storm gathering force in each stanza while repeating that she cannot leave — a refusal that, in the final line, becomes her own choice."
+  },
+  {
+   "id": "B",
+   "text": "The speaker recalls being caught outdoors by a sudden storm, then describes the shelter in which she finally waited for the wind and snow to pass."
+  },
+  {
+   "id": "C",
+   "text": "The speaker pleads with an unseen companion to depart before the storm arrives, then concedes that the two of them have delayed too long to travel."
+  },
+  {
+   "id": "D",
+   "text": "The speaker surveys a wintry landscape from a safe distance, then recounts in order the storm that swept across it during the night and the destruction that it left behind."
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Each stanza darkens the storm — night and wind, then bending trees and descending snow, then clouds and wastes on every side — while the refrain holds the speaker in place; and the wording of that refrain shifts from \"I cannot, cannot go\" to \"And yet I cannot go\" to \"I will not, cannot go,\" ending on her own will.\n\n**The Full Solution:**\n- Stanza one: darkness and cold wind, with a \"tyrant spell\" binding the speaker — she \"cannot\" go.\n- Stanza two: the storm worsens (bare boughs weighed with snow, the storm \"fast descending\"), and still she cannot go.\n- Stanza three: the scene expands to \"clouds beyond clouds\" and \"wastes beyond wastes,\" and the refrain changes decisively: \"I will not, cannot go.\" The final line adds will — choice — to what had been compulsion, exactly the movement A describes.\n\n**Why the other choices are wrong:**\n- B: It invents a memory and a shelter; the poem happens in the present, and the speaker never takes cover.\n- C: It invents a companion and a plea; the speaker addresses no one and asks for nothing.\n- D: It sets the speaker at a safe distance after the fact, but the storm is descending around her as she speaks.",
+ "_meta": {
+  "anchor": "Emily Brontë, \"Spellbound\" (1837) — genuine public-domain text, complete poem verbatim",
+  "quoteVerify": true,
+  "source": "Emily Brontë, \"Spellbound\" (written November 1837; published posthumously); text verified verbatim against the Academy of American Poets (poets.org) public-domain printing",
+  "distractors": {
+   "B": "invents recollection and shelter",
+   "C": "invents a companion and a plea",
+   "D": "moves the speaker outside the storm and into aftermath"
+  }
+ }
 }

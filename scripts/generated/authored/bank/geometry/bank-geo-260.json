@@ -1,0 +1,45 @@
+{
+ "id": "bank-geo-260",
+ "question": "Triangle $DEF$ shown is an isosceles right triangle with a right angle at $F$ and an area of $50$ square units. What is the length of $DE$?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "45°",
+    "45°",
+    "90°"
+   ],
+   "vertexLabels": [
+    "D",
+    "E",
+    "F"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5\\sqrt{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$10\\sqrt{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$50\\sqrt{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$100\\sqrt{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "drops the one-half and reports the leg",
+  "C": "uses the area as a leg",
+  "D": "uses the square of the leg as a leg"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: 45-45-90 Triangle**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** $\\frac{1}{2}s^2 = 50$ gives $s = 10$, and $DE$ is the hypotenuse, so $DE = 10\\sqrt{2}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $F$, so $DF$ and $EF$ are the legs; being isosceles, they are equal. Call each one $s$.\nStep 2: Area $= \\frac{1}{2}s \\cdot s = \\frac{s^2}{2} = 50$, so $s^2 = 100$ and $s = 10$.\nStep 3: $DE$ is opposite the right angle, so $DE = s\\sqrt{2} = 10\\sqrt{2}$. Check: $10^2 + 10^2 = 200 = (10\\sqrt{2})^2$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($5\\sqrt{2}$): solves $s^2 = 50$ by dropping the $\\frac{1}{2}$, getting $s = 5\\sqrt{2}$, and reports that leg as the hypotenuse.\n* Choice C ($50\\sqrt{2}$): treats the area $50$ itself as a leg length.\n* Choice D ($100\\sqrt{2}$): uses $s^2 = 100$ as the leg length without taking the square root.\n\n**Test Day Takeaway:** For an isosceles right triangle, area $= \\frac{s^2}{2}$. Solve for the leg, then attach $\\sqrt{2}$ only at the end."
+}

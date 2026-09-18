@@ -27,7 +27,7 @@ jest.mock('firebase/firestore', () => ({
 }));
 
 import { serverTimestamp } from 'firebase/firestore';
-import { buildSignupUserDoc } from '../useAuth';
+import { buildSignupUserDoc, assertNotAlreadySignedIn, ALREADY_SIGNED_IN_MSG } from '../useAuth';
 import { TERMS_VERSION } from '../../constants/legal';
 
 // CRA's jest config sets resetMocks: true, so implementations must be
@@ -111,6 +111,22 @@ describe('buildSignupUserDoc', () => {
     expect(userDoc).not.toHaveProperty('targetScore');
     expect(userDoc).not.toHaveProperty('goalScale');
     expect(userDoc).not.toHaveProperty('onboardingProfile');
+  });
+});
+
+describe('assertNotAlreadySignedIn (funnel-while-logged-in guard)', () => {
+  // Regression guard for the bug filed 2026-08-13: the signup funnel was
+  // walkable with a live session and mutated the existing account. signup()
+  // now calls this before creating anything; the App route + LandingPage
+  // refuse the funnel earlier still (defense in depth).
+  test('throws the exact user-facing message when a session exists', () => {
+    expect(() => assertNotAlreadySignedIn({ uid: 'existing-uid' }))
+      .toThrow(ALREADY_SIGNED_IN_MSG);
+  });
+
+  test('passes through when no session exists', () => {
+    expect(() => assertNotAlreadySignedIn(null)).not.toThrow();
+    expect(() => assertNotAlreadySignedIn(undefined)).not.toThrow();
   });
 });
 

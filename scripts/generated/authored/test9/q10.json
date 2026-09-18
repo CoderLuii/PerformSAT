@@ -6,29 +6,14 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 1,
-  "passage": "A gamelan is an Indonesian musical ensemble built largely from tuned percussion—rows of bronze metallophones, hanging gongs, and drums—whose interlocking parts combine into a single shimmering texture. The instruments of any one gamelan are forged and tuned together as a matched set, adjusted to one another rather than to a fixed, universal standard of pitch. As a result, two ensembles can sound noticeably different, and an instrument borrowed from one gamelan will usually clash with the instruments of another. By long tradition, a gamelan is treated as a single object with its own identity, its instruments kept and played together rather than swapped between groups.",
-  "question": "According to the text, why is an instrument from one gamelan usually unsuitable for use in another ensemble?",
+  "passage": "Inside a harmonica or an accordion, each note is produced by a free reed — a thin metal tongue riveted over a close-fitting slot. Air blown past the tongue makes it swing back and forth through the slot, chopping the airstream into regular pulses that the ear hears as a pitch. Because that pitch is set by the tongue's own length and stiffness rather than by anything the player does, a free reed sounds the same note no matter how forcefully the air arrives: blowing harder makes the tone louder, not higher.",
+  "question": "According to the text, why does a free reed produce the same pitch regardless of how hard a player blows?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Gamelan instruments are generally too fragile and too heavy to survive being carried back and forth from one ensemble to another."
-    },
-    {
-      "id": "B",
-      "text": "Each gamelan is tuned to its own pitch rather than to a fixed, universal standard, so its instruments do not match those of other ensembles."
-    },
-    {
-      "id": "C",
-      "text": "Most gamelan instruments are carved from bamboo, a material that warps when moved between different climates."
-    },
-    {
-      "id": "D",
-      "text": "Performers in each ensemble deliberately keep their own repertoire of traditional pieces secret from the rival groups they regularly compete against."
-    }
+    { "id": "A", "text": "The slot beneath the tongue narrows automatically whenever the airstream strengthens." },
+    { "id": "B", "text": "The pitch is determined by the length and stiffness of the metal tongue itself." },
+    { "id": "C", "text": "Players adjust their technique continuously to compensate for changes in air pressure." },
+    { "id": "D", "text": "The rivet that anchors the tongue absorbs any extra force the airstream delivers." }
   ],
   "correctAnswer": "B",
-  "explanation": "The passage explains that the instruments of any one gamelan are tuned to one another rather than to a fixed, universal standard, so a borrowed instrument \"will usually clash with the instruments of another\" ensemble. Choice B states that reason. Choice C contradicts the text, which says the instruments are bronze, not bamboo; and choices A and D describe fragility and secrecy that the passage never mentions.",
-  "_meta": {
-    "anchor": "Indonesian gamelan music: matched-set tuning"
-  }
+  "explanation": "**Choice B is correct.** The text states the reason directly: the pitch \"is set by the tongue's own length and stiffness rather than by anything the player does.\"\n\n**The Full Solution:**\n- The question asks for the text's stated cause, and the third sentence supplies it in so many words.\n- The consequence follows in the same sentence: harder blowing changes loudness, not pitch — confirming that the note is fixed by the tongue's physical properties.\n\n**Why the other choices are wrong:**\n- A: The text never says the slot changes size; it is described only as \"close-fitting.\"\n- C: The explanation given is mechanical, not a matter of player skill — the text says the pitch is set \"rather than by anything the player does.\"\n- D: The rivet appears only as the tongue's mounting; no force-absorbing role is mentioned anywhere."
 }

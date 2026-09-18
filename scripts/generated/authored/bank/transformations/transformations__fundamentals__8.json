@@ -1,0 +1,30 @@
+{
+ "id": 8,
+ "question": "A meteor camera records background brightness $c(x)$, in counts, $x$ minutes after twilight. After the sensor is recalibrated the recorded brightness follows $y = c(x + 4) - 6$. How does the new graph compare with the graph of $y = c(x)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It is shifted $4$ units left and $6$ units down."
+  },
+  {
+   "id": "B",
+   "text": "It is shifted $4$ units left and $6$ units up."
+  },
+  {
+   "id": "C",
+   "text": "It is shifted $4$ units right and $6$ units down."
+  },
+  {
+   "id": "D",
+   "text": "It is shifted $4$ units right and $6$ units up."
+  }
+ ],
+ "distractorNotes": {
+  "B": "reads the -6 outside the function as an upward move",
+  "C": "reads x + 4 inside the function as a move to the right",
+  "D": "reverses both directions"
+ },
+ "correctAnswer": "A",
+ "hint": "Decide separately what the change inside the parentheses does and what the change outside it does.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** Adding $4$ inside moves the graph $4$ to the left; subtracting $6$ outside moves it $6$ down.\n\n**The Full Solution:**\nStep 1: The change $x + 4$ sits inside the function, so it acts on inputs. The new graph reaches at $x$ whatever the old graph reached at $x + 4$, which is a shift of $4$ units to the left.\nStep 2: The $-6$ sits outside the function, so it acts on outputs, lowering every value by $6$.\nStep 3: The graph is therefore $4$ units left and $6$ units down. Check: the old point $(10, 30)$ becomes $(6, 24)$, since $c(6 + 4) - 6 = 30 - 6 = 24$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (left $4$, up $6$): treating the $-6$ outside the function as an upward move; subtracting lowers every output.\n* Choice C (right $4$, down $6$): reading $x + 4$ as a move to the right; a change inside the function moves the graph the opposite way.\n* Choice D (right $4$, up $6$): reversing both directions at once.\n\n**Test Day Takeaway:** Inside the function acts on $x$ and reverses; outside the function acts on $y$ and reads straight."
+}

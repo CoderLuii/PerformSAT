@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "An observatory logged $240$ transient events last year: $156$ were stellar flares, $36$ were satellite glints, and the rest were unidentified. If one of the logged events is selected at random, what is the probability that it was unidentified?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3}{20}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{1}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{13}{20}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{4}{5}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the satellite glints, 36/240, instead of the unidentified events",
+  "C": "reports the stellar flares, 156/240, instead of the unidentified events",
+  "D": "reports the complement, 192/240, the probability that an event WAS identified"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Unidentified events number $240-156-36=48$, and $\\frac{48}{240}=\\frac{1}{5}$.\n\n**The Full Solution:**\nStep 1: Find the favorable count. \"The rest\" means everything not already named: $240-156-36=48$ unidentified events.\nStep 2: Identify the whole. One event is chosen from all $240$ logged events, so the denominator is $240$.\nStep 3: Form and reduce the ratio. $\\frac{48}{240}=\\frac{1}{5}$. Check: $\\frac{156}{240}+\\frac{36}{240}+\\frac{48}{240}=\\frac{240}{240}=1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3}{20}$): uses the $36$ satellite glints, $\\frac{36}{240}$ — the smaller named category, not the leftover one.\n* Choice C ($\\frac{13}{20}$): uses the $156$ stellar flares, $\\frac{156}{240}$, answering for the largest category instead.\n* Choice D ($\\frac{4}{5}$): computes $\\frac{156+36}{240}=\\frac{192}{240}$, the probability that the event WAS identified — the complement of what is asked.\n\n**Test Day Takeaway:** When a stem names some categories and ends with \"the rest,\" the favorable count is a subtraction, not a number printed in the problem. Compute it, then confirm the categories add back to the total.\n"
+}

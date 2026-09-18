@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-364",
+ "question": "A dune-profile study uses the expression $x^3 + 3x^2 + nx + 3n$, where $x$ is a horizontal distance in meters and $n$ is a constant that changes from dune to dune along the coast. Which of the following must be true for every value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x + 3$ is a factor for every value of $n$."
+  },
+  {
+   "id": "B",
+   "text": "$x + 3$ is a factor only when $n$ is a perfect square."
+  },
+  {
+   "id": "C",
+   "text": "$x + n$ is a factor for every value of $n$."
+  },
+  {
+   "id": "D",
+   "text": "$x^2 + 3$ is a factor for every value of $n$."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "assumes the leftover factor $x^2 + n$ must itself factor, which the question never requires",
+  "C": "reads the pulled-out constant $n$ as part of the shared binomial",
+  "D": "pairs the $3$ with $x^2$; the quadratic factor is $x^2 + n$, not $x^2 + 3$"
+ },
+ "explanation": "**SAT Pattern: Factor by Grouping**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** $x^2(x + 3) + n(x + 3) = (x^2 + n)(x + 3)$, and that grouping never used the value of $n$.\n\n**The Full Solution:**\nStep 1: Pair the terms: $(x^3 + 3x^2) + (nx + 3n)$.\nStep 2: Factor each pair: $x^2(x + 3)$ and $n(x + 3)$.\nStep 3: Both pairs carry $x + 3$, so the expression equals $(x^2 + n)(x + 3)$ for every $n$. Check: with $n = 7$, $(x^2 + 7)(x + 3) = x^3 + 3x^2 + 7x + 21$, matching the given form ✓\n\n**Why the wrong answers are tempting:**\n* Choice B (only when $n$ is a perfect square): the grouping works regardless of $n$; whether $x^2 + n$ factors further is a separate question.\n* Choice C ($x + n$): $n$ is the constant left behind by the second pair, not part of the shared binomial.\n* Choice D ($x^2 + 3$): swaps the two constants; the quadratic factor is $x^2 + n$.\n\n**Test Day Takeaway:** When a parameter appears in exactly two terms, group those two together — the parameter then factors out and the shared binomial is parameter-free."
+}

@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-textual",
-  "question": "Which finding, if true, would most directly support the mycologists' hypothesis?",
+  "module": 1,
+  "passage": "Female paper wasps of the species Polistes dominula bear black facial patches that vary strikingly from individual to individual. Behavioral ecologist Elizabeth Tibbetts has proposed that these markings serve as status signals: by advertising a wasp's fighting ability, the patches let rivals size each other up and settle contests over resources without paying the costs of an actual fight.",
+  "question": "Which finding, if true, would most directly support the researcher's hypothesis?",
   "choices": [
     {
       "id": "A",
-      "text": "Fungal species that produce the most dark pigment tend to grow more slowly than species producing little pigment, no matter where they grow."
+      "text": "The size and shape of a wasp's black facial patches are determined mainly by the quantity and quality of the nutrition the wasp happened to receive while developing as a larva in the nest."
     },
     {
       "id": "B",
-      "text": "Within a single species, individuals growing in sunlit canopy gaps contain markedly more dark pigment than individuals of that species growing in deep shade."
+      "text": "In staged encounters over food, wasps facing rivals with more broken-up facial patches — the pattern typical of strong fighters — usually retreat without fighting."
     },
     {
       "id": "C",
-      "text": "The dark pigments are chemically similar to compounds that other organisms use to store energy rather than to block light."
+      "text": "Wasps with heavily broken-up facial patches spend more of the day foraging away from the nest than wasps with plain faces do."
     },
     {
       "id": "D",
-      "text": "Forest-floor fungi that lack dark pigment are eaten by insects at about the same rate as fungi that produce a great deal of it."
+      "text": "Facial patches fade gradually as wasps age, and older wasps initiate fewer contests over resources than younger ones do."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The hypothesis is that the dark pigment shields the fungi from ultraviolet light, so it predicts more pigment where more direct sunlight reaches the forest floor; finding that individuals of one species hold more pigment in sunlit gaps than in deep shade is exactly that prediction. Choice A links pigment to growth rate rather than to sunlight; choice C points the pigment toward storing energy rather than blocking light; and choice D concerns insect damage, which the hypothesis does not address.",
-  "passage": "Some fungi that grow on the forest floor produce dark, durable pigments in their cell walls. A team of mycologists has proposed that these pigments serve mainly to shield the fungi from ultraviolet light, which is more intense in the canopy gaps where sunlight reaches the ground directly. If this hypothesis is correct, the amount of dark pigment a given species produces should depend on how much direct sunlight reaches the patches of forest where it grows.",
+  "explanation": "**Choice B is correct.** The hypothesis says the patches let rivals assess fighting ability and avoid combat; rivals retreating from strong-fighter markings without a fight is that mechanism observed in action.\n\n**The Full Solution:**\n- The hypothesis has two parts: patches advertise fighting ability, and the advertisement lets contests end without fighting.\n- Choice B supplies both: wasps read the strong-fighter pattern on a rival's face and yield before combat begins.\n- That is a direct behavioral confirmation of the signaling function.\n\n**Why the other choices are wrong:**\n- A: It explains where patches come from, not whether rivals use them to settle contests.\n- C: Foraging time has no bearing on whether patches function as signals in contests.\n- D: It pairs two facts about aging without showing that any wasp responds to another's markings.",
   "_meta": {
-    "anchor": "mycology — fungal melanin as UV protection; finding-if-true form"
-  },
-  "module": 1
+    "anchor": "Elizabeth Tibbetts — paper wasp facial badges as status signals; finding-if-true form"
+  }
 }

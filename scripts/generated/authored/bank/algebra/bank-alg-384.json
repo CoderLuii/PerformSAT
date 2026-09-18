@@ -1,0 +1,26 @@
+{
+ "id": "bank-alg-384",
+ "question": "The table gives the coordinates of two fiducial points on a radiology alignment grid and the coordinates of the midpoint of the segment joining them. What is the value of $k$?",
+ "questionTable": {
+  "headers": [
+   "Point",
+   "Coordinates"
+  ],
+  "rows": [
+   [
+    "$P$",
+    "$(3, k)$"
+   ],
+   [
+    "$Q$",
+    "$(11, 6)$"
+   ],
+   [
+    "Midpoint of $\\overline{PQ}$",
+    "$(7, -2)$"
+   ]
+  ]
+ },
+ "correctAnswer": "-10",
+ "explanation": "**SAT Pattern: Midpoint Formula**\n\n**The correct answer is $-10$.**\n\n**The Fast Way (~25s):** The midpoint's $y$-coordinate is the average of $k$ and $6$, so $\\frac{k + 6}{2} = -2$ and $k = -10$.\n\n**The Full Solution:**\n\nStep 1: The midpoint of $\\overline{PQ}$ has coordinates $\\left(\\frac{3 + 11}{2}, \\frac{k + 6}{2}\\right)$.\n\nStep 2: The $x$-coordinate checks out immediately: $\\frac{3 + 11}{2} = 7$, matching the table.\n\nStep 3: Set the $y$-coordinates equal: $\\frac{k + 6}{2} = -2$, so $k + 6 = -4$ and $k = -10$. Check: the average of $-10$ and $6$ is $-2$.\n\n**Common Mistakes:**\n\n* $-4$ — doubling the midpoint's $y$-coordinate to get $-4$ and reporting that instead of subtracting $6$.\n* $-8$ — subtracting $6$ from $-2$ without first multiplying by $2$.\n* $2$ — averaging $-2$ and $6$ instead of solving for the missing endpoint.\n\n**Test Day Takeaway:** When the midpoint is known, the missing endpoint coordinate comes from undoing the average: multiply by $2$ first, then subtract."
+}

@@ -1,0 +1,32 @@
+{
+ "id": 6,
+ "question": "Field ecologists marked a right triangular sampling plot inside a wildlife corridor; both leg lengths appear in the figure, in meters. What is the plot's area, in square meters?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     7
+    ]
+   ],
+   "sideLabels": [
+    "5√2",
+    "7√2",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "35",
+ "explanation": "**SAT Pattern: Right Triangle Area with Surds**\n\n**The correct answer is $35$.**\n\n**The Fast Way (~15s):** $\\dfrac{1}{2}(5\\sqrt{2})(7\\sqrt{2}) = \\dfrac{1}{2}(35)(2) = 35$.\n\n**The Full Solution:**\nStep 1: The two labeled sides meet at the right angle, so they are the base and the height: $5\\sqrt{2}$ and $7\\sqrt{2}$ meters.\nStep 2: Multiply them, keeping the radicals together: $(5\\sqrt{2})(7\\sqrt{2}) = 35 \\cdot (\\sqrt{2})^2 = 35 \\cdot 2 = 70$.\nStep 3: Half of that product is the area: $\\dfrac{70}{2} = 35$ square meters.\nCheck: $5\\sqrt{2} \\approx 7.07$ and $7\\sqrt{2} \\approx 9.90$, and $\\dfrac{1}{2}(7.07)(9.90) \\approx 35$. $\\checkmark$\n\n**Common Mistakes:** Multiplying $5 \\cdot 7$ and halving while dropping $\\sqrt{2} \\cdot \\sqrt{2} = 2$ gives $17.5$; multiplying the legs but forgetting the factor of $\\dfrac{1}{2}$ gives $70$; carrying one radical through and reporting $35\\sqrt{2} \\approx 49.5$.\n\n**Test Day Takeaway:** When both legs carry the same radical, multiply the radicals first — $\\sqrt{2} \\cdot \\sqrt{2} = 2$ turns a messy product into a whole number."
+}

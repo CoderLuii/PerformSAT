@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-087",
+ "question": "Rainfall intensity at a gauge is reported as $\\left(\\sqrt{q}\\right)^{5}$ divided by $q$, an amount that equals $q^{n}$ whenever the gauge reading $q$ is positive, where $n$ is a constant used on every gauge in the network. What is the value of $n$?",
+ "correctAnswer": "1.5",
+ "explanation": "**SAT Pattern: Exponent Rules with Radicals**\n\n**The correct answer is $1.5$.**\n\n**The Fast Way (~20s):** $\\left(\\sqrt{q}\\right)^{5} = q^{5/2}$, and dividing by $q$ subtracts $1$: $\\frac{5}{2} - 1 = \\frac{3}{2}$.\n\n**The Full Solution:**\nStep 1: Since $\\sqrt{q} = q^{1/2}$, raising it to the fifth power multiplies exponents: $q^{5/2}$.\nStep 2: Dividing by $q = q^{1}$ subtracts exponents: $\\frac{5}{2} - 1 = \\frac{3}{2}$.\nStep 3: So $q^{n} = q^{3/2}$ and $n = 1.5$. Check: at $q = 4$, $\\left(\\sqrt{4}\\right)^{5} \\div 4 = 32 \\div 4 = 8 = 4^{1.5}$ ✓\n\n**Common Mistakes:**\n* $2.5$ — stopping after the fifth power and never dividing by $q$.\n* $3.5$ — adding $1$ to $\\frac{5}{2}$ instead of subtracting, as if the two quantities were multiplied.\n\n**Test Day Takeaway:** Division by the base itself costs exactly one from the exponent — write the divisor as $q^{1}$ so the subtraction is visible."
+}

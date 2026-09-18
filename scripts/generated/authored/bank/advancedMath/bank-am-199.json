@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-199",
+  "question": "The area covered by a patch of lichen, in square centimeters, is modeled by $A(t) = 60(2.25)^{t/2}$, where $t$ is the number of weeks since the patch was first measured. By what percent does the area increase each week?",
+  "correctAnswer": "50",
+  "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**The correct answer is $50$.**\n\n**The Fast Way (~30s):** One week raises the exponent by $\\frac{1}{2}$, so the weekly factor is $\\sqrt{2.25} = 1.5$, a $50\\%$ increase.\n\n**The Full Solution:**\nStep 1: Replacing $t$ with $t + 1$ multiplies the area by $(2.25)^{1/2}$.\nStep 2: $(2.25)^{1/2} = 1.5$, because $1.5^2 = 2.25$.\nStep 3: A factor of $1.5$ means $1.5 - 1 = 0.5$, or a $50\\%$ increase each week. Check: $60 \\to 90 \\to 135$, and $135 = 60(2.25)$, the two-week factor. $\\checkmark$\n\n**Common Mistakes:** Answering $125$, the percent increase over $2$ weeks (the factor $2.25$), not over $1$ week. Answering $62.5$, which splits that $125\\%$ evenly between the two weeks; percent growth compounds, so the weekly factor is the SQUARE ROOT of the two-week factor, not half of it.\n\n**Test Day Takeaway:** To move from a period factor to a one-unit factor, take a root — never divide the percent."
+}

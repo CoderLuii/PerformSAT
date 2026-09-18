@@ -6,29 +6,14 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 2,
-  "passage": "Movement-notation systems are usually devised to record dance, and they tend to mark steps, jumps, and positions defined in relation to a stage and an audience. The system that Noa Eshkol developed with the architect Avraham Wachman took a different starting point: it describes the body as a set of limbs pivoting around joints, recording each movement as a change in angle relative to the body itself, with no reference to a front or a viewer. Because its notation does not assume a stage, the system has been used to record not only choreography but also the movement of animals and the gestures studied in physical therapy.",
+  "passage": "The free reed is an ancient Asian idea with a comparatively brief European history. Mouth organs built on the principle — among them the Chinese sheng and the Lao khaen — have been played for well over two thousand years. European makers took up the free reed only around the turn of the nineteenth century, after traveling instruments and written descriptions reached Western workshops; within a few decades the borrowed principle powered a wave of new inventions, from the harmonica and the accordion to the parlor harmonium. A single acoustic idea, long established in one tradition, thus seeded an entire family of instruments in another.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Eshkol developed her movement-notation system in collaboration with the architect Avraham Wachman during the 1950s."
-    },
-    {
-      "id": "B",
-      "text": "Most movement-notation systems were devised to record dance and mark steps, jumps, and positions defined in relation to a stage and its audience."
-    },
-    {
-      "id": "C",
-      "text": "Because Eshkol's system records movement as joint angles relative to the body rather than to a stage, it can document motion well beyond dance, including animals and physical-therapy gestures."
-    },
-    {
-      "id": "D",
-      "text": "The Eshkol-Wachman system has been used to record the movement of animals and the gestures studied in physical therapy."
-    }
+    { "id": "A", "text": "European instrument makers refined the free reed far beyond the designs found in the Asian instruments that inspired them." },
+    { "id": "B", "text": "The harmonica and the accordion owe their popularity to the portability that free reeds made possible." },
+    { "id": "C", "text": "The free reed, played in Asian instruments for millennia, was adopted in Europe only around 1800, where it rapidly generated a new family of instruments." },
+    { "id": "D", "text": "The sheng and the khaen remained essentially unknown to European musicians until instrument makers in Europe had already developed free-reed instruments of their own, working independently." }
   ],
   "correctAnswer": "C",
-  "explanation": "The passage contrasts ordinary dance notation, tied to a stage, with Eshkol's system, which describes movement as joint angles relative to the body and so can record motion far beyond dance. Choice C states that main idea. Choice A gives a biographical detail, B describes only the systems Eshkol departed from, and D names one application without the central point.",
-  "_meta": {
-    "anchor": "Eshkol-Wachman Movement Notation"
-  }
+  "explanation": "**Choice C is correct.** The text's spine is a transfer story: millennia of Asian use, adoption in Europe around 1800, and a burst of new instruments there — the arc C compresses into one sentence.\n\n**The Full Solution:**\n- Sentence one announces the asymmetry: ancient in Asia, brief in Europe.\n- The middle sentences supply the dates and mechanism of transfer — traveling instruments and descriptions reaching Western workshops.\n- The final sentence generalizes exactly as C does: one established idea seeding a family of instruments in a new tradition.\n\n**Why the other choices are wrong:**\n- A: The text says Europeans built new instruments from the principle, not that they surpassed the Asian designs.\n- B: Portability is never mentioned; it imports a plausible-sounding cause the text does not give.\n- D: It reverses the stated direction of influence — European adoption followed the arrival of Asian instruments and descriptions."
 }

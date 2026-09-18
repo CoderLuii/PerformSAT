@@ -1,0 +1,41 @@
+{
+ "id": 5,
+ "question": "In the figure, $O$ is the center of the circle and the measure of $\\angle AOB$ is $135^{\\circ}$. If the area of sector $AOB$ is $54\\pi$, what is the length of minor arc $AB$?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 135,
+   "showAngleLabel": true,
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{9\\pi}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$9\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$24\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$108\\pi$"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "One radius unlocks both formulas — get it out of the area before you touch the arc.",
+ "distractorNotes": {
+  "A": "uses pi r for the circumference",
+  "C": "reports the full circumference",
+  "D": "never takes the square root"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~50s):** $\\frac{135}{360} = \\frac{3}{8}$, so $\\frac{3}{8}\\pi r^2 = 54\\pi$ gives $r = 12$; the arc is then $\\frac{3}{8}(24\\pi) = 9\\pi$.\n\n**The Full Solution:**\nStep 1: The sector is $\\frac{135}{360} = \\frac{3}{8}$ of the circle, so $\\frac{3}{8}\\pi r^2 = 54\\pi$.\nStep 2: Multiply by $\\frac{8}{3}$: $\\pi r^2 = 144\\pi$, so $r^2 = 144$ and $r = 12$.\nStep 3: The circumference is $2\\pi(12) = 24\\pi$, and the arc is $\\frac{3}{8}(24\\pi) = 9\\pi$. Check: the shortcut $A = \\frac{1}{2}sr$ gives $\\frac{1}{2}(9\\pi)(12) = 54\\pi$, the given area.\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{9\\pi}{2}$): uses $\\pi r = 12\\pi$ as the circumference, halving the arc.\n* Choice C ($24\\pi$): reports the full circumference instead of the $\\frac{3}{8}$ of it that the angle cuts off.\n* Choice D ($108\\pi$): uses $r = 144$ without taking the square root: $\\frac{3}{8}(2\\pi \\cdot 144)$.\n\n**Test Day Takeaway:** The same angle fraction serves area and arc. Solve for $r$ once, then reuse it."
+}

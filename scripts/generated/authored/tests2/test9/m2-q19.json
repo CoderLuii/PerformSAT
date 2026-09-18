@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "A linear model relates a swimmer's weekly training volume $v$, in kilometers, to her predicted $200$-meter time $T$, in seconds. The model predicts $136$ seconds at a volume of $0$ kilometers, and each additional $5$ kilometers of weekly volume lowers the predicted time by $1.8$ seconds. Which equation represents the model?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$T = 136 - 9v$"
+  },
+  {
+   "id": "B",
+   "text": "$T = 136 - 5v$"
+  },
+  {
+   "id": "C",
+   "text": "$T = 136 - 0.36v$"
+  },
+  {
+   "id": "D",
+   "text": "$T = 136 + 0.36v$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "multiplies 1.8 by 5 instead of dividing, giving a rate of 9 seconds per kilometer",
+  "B": "uses the 5-kilometer interval itself as the per-kilometer rate",
+  "D": "gets the size of the rate right but adds it, turning a predicted decrease into an increase"
+ },
+ "explanation": "**SAT Pattern: Interpret Slope in Context**\n\n**Choice C is correct.** The slope is the change in predicted time per kilometer: $\\frac{-1.8}{5} = -0.36$ second per kilometer. With a predicted $136$ seconds at $v = 0$, the model is $T = 136 - 0.36v$.\n\n**The Fast Way (~20s):** Slope $= -1.8 \\div 5 = -0.36$, intercept $= 136$.\n\n**The Full Solution:**\nStep 1: The value at $v = 0$ is the intercept, so the constant term is $136$.\nStep 2: The stated change is $-1.8$ seconds for every $5$ kilometers, so per kilometer the change is $\\frac{-1.8}{5} = -0.36$.\nStep 3: Check with the true model: $T = 136 - 0.36v$ gives $T = 136$ at $v = 0$ and $T = 136 - 0.36(5) = 134.2$ at $v = 5$, which is $1.8$ seconds faster, exactly as described.\n\n**Why the wrong answers are tempting:**\n* Choice A ($T = 136 - 9v$): multiplies $1.8$ by $5$ instead of dividing, so the model loses $9$ seconds per kilometer and $45$ seconds over the first $5$ kilometers.\n* Choice B ($T = 136 - 5v$): puts the $5$-kilometer interval into the slope position, reading the width of the step as the size of the drop.\n* Choice D ($T = 136 + 0.36v$): finds the right rate but adds it, so the model predicts a slower time as training volume grows.\n\n**Test Day Takeaway:** A slope is always a per-one-unit rate, so a change stated over $5$ units must be divided by $5$, and a described decrease keeps a negative sign."
+}

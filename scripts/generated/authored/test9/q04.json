@@ -6,29 +6,19 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 1,
-  "passage": "Excavations led by the archaeologist Ruth Shady at Caral, in Peru's Supe Valley, uncovered monumental platform mounds and sunken plazas that radiocarbon dating placed at roughly 2600 BCE. Because no fortifications, weapons, or other signs of warfare appeared anywhere at the site, Shady argued that Caral's scale had been ______ not by military conquest but by an economy of trade and shared ceremony that drew people into a common civic project.",
+  "passage": "The following text is adapted from William Hazlitt's 1821 essay \"On Going a Journey.\"\n\nOne of the pleasantest things in the world is going a journey; but I like to go by myself. I can enjoy society in a room; but out of doors, nature is ______ enough for me. I am then never less alone than when alone. The soul of a journey is liberty, perfect liberty, to think, feel, do just as one pleases.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
-    {
-      "id": "A",
-      "text": "sustained"
-    },
-    {
-      "id": "B",
-      "text": "limited"
-    },
-    {
-      "id": "C",
-      "text": "recorded"
-    },
-    {
-      "id": "D",
-      "text": "disguised"
-    }
+    { "id": "A", "text": "company" },
+    { "id": "B", "text": "entertainment" },
+    { "id": "C", "text": "instruction" },
+    { "id": "D", "text": "shelter" }
   ],
   "correctAnswer": "A",
-  "explanation": "The passage contrasts two possible sources of Caral's monumental scale: conquest, which the absence of weapons rules out, and an economy of trade and shared ceremony. The blank needs a verb describing how that scale was produced or kept up, and \"sustained,\" choice A, fits. \"Limited\" reverses the meaning, \"recorded\" describes documentation rather than cause, and \"disguised\" makes no sense of the contrast.",
+  "explanation": "**Choice A is correct.** The sentence balances two settings against each other — \"society in a room\" indoors, and something nature supplies outdoors — so the blank needs the outdoor counterpart of society: \"company.\"\n\n**The Full Solution:**\n- The structure is a contrast hinged on \"but\": indoors the speaker enjoys society; outdoors, nature takes over that role.\n- The next sentence confirms the reading — \"never less alone than when alone\" — nature keeps him company so completely that solitude does not feel solitary.\n- \"Company\" is the one word that answers \"society\" directly.\n\n**Why the other choices are wrong:**\n- B: \"Entertainment\" is not the counterpart of \"society,\" and the following sentence is about aloneness, not amusement.\n- C: Nothing in the text presents nature as a teacher; \"instruction\" breaks the society-versus-solitude contrast.\n- D: \"Shelter\" is a physical protection, which reverses the scene — the speaker is happily out of doors, not seeking cover.",
   "_meta": {
-    "anchor": "Ruth Shady and Caral, Supe Valley"
+    "anchor": "William Hazlitt — \"On Going a Journey\" (Table-Talk, 1821); genuine public-domain excerpt with one word blanked",
+    "quoteVerify": true,
+    "source": "William Hazlitt, Table-Talk: Essays on Men and Manners (1821), essay \"On Going a Journey\"; blanked word is \"company\""
   }
 }

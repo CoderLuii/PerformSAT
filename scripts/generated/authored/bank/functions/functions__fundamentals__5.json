@@ -1,0 +1,29 @@
+{
+ "question": "A wind tunnel's pressure-difference model $P(t) = \\dfrac{600}{t^2 - 9t}$ gives the difference, in pascals, between two ports $t$ seconds after a fan step change. For which values of $t$ is $P$ undefined?",
+ "hint": "Where can a quotient fail to have a value at all?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0$ only"
+  },
+  {
+   "id": "B",
+   "text": "$3$ and $-3$"
+  },
+  {
+   "id": "C",
+   "text": "$0$ and $9$"
+  },
+  {
+   "id": "D",
+   "text": "$9$ only"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves only the factor t = 0 and stops",
+  "B": "reads the denominator as t^2 - 9 instead of t^2 - 9t",
+  "D": "solves only the factor t - 9 = 0"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** $t^2 - 9t = t(t - 9)$, which is zero at $t = 0$ and $t = 9$.\n\n**The Full Solution:**\nStep 1: A quotient is undefined exactly where its denominator equals zero.\nStep 2: Factor the denominator: $t^2 - 9t = t(t - 9)$.\nStep 3: A product is zero when either factor is, so $t = 0$ or $t = 9$. Check: $0^2 - 9(0) = 0$ and $9^2 - 9(9) = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$ only): stops after the first factor and misses $t - 9$.\n* Choice B ($3$ and $-3$): treats the denominator as the difference of squares $t^2 - 9$.\n* Choice D ($9$ only): solves the second factor and overlooks that $t$ itself can be zero.\n\n**Test Day Takeaway:** Factor the denominator completely — every factor that can vanish removes a value from the domain."
+}

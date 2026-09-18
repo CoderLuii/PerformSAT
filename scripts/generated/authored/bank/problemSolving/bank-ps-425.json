@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-425",
+  "question": "A pump moves water at a constant rate of $18$ liters per minute. What is this rate, in milliliters per second? (Use $1$ liter $=1{,}000$ milliliters and $1$ minute $=60$ seconds.)",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.3$"
+    },
+    {
+      "id": "B",
+      "text": "$300$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}080$"
+    },
+    {
+      "id": "D",
+      "text": "$18{,}000$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "converts minutes to seconds but never converts liters to milliliters.",
+    "C": "multiplies by $60$ instead of dividing, and skips the liters-to-milliliters step.",
+    "D": "converts liters to milliliters but leaves the rate per minute."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Proportion Ratio**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $18$ liters is $18{,}000$ milliliters, and one minute is $60$ seconds, so the rate is $\\frac{18{,}000}{60}=300$ milliliters per second.\n\n**The Full Solution:**\nStep 1: Write the rate as a fraction and multiply by conversion factors that cancel: $\\frac{18\\text{ L}}{1\\text{ min}}\\cdot\\frac{1{,}000\\text{ mL}}{1\\text{ L}}\\cdot\\frac{1\\text{ min}}{60\\text{ s}}$.\nStep 2: Liters cancel and minutes cancel, leaving $\\frac{18\\times 1{,}000}{60}$ milliliters per second.\nStep 3: $\\frac{18{,}000}{60}=300$. Check: $300$ mL/s for $60$ s is $18{,}000$ mL, which is $18$ liters. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.3$): divides by $60$ but forgets that each liter is $1{,}000$ milliliters.\n* Choice C ($1{,}080$): multiplies by $60$ rather than dividing, and also skips the volume conversion.\n* Choice D ($18{,}000$): converts to milliliters but reports the amount per minute, not per second.\n\n**Test Day Takeaway:** Build a chain of fractions so the unwanted units cancel. A rate per second must be smaller than the same rate per minute."
+}

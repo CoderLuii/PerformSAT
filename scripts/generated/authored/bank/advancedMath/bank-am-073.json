@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-073",
+ "question": "A physiologist compares two recovery scores whose ratio is $\\dfrac{8kx + 24k}{12x + 36}$, where $k$ is a nonzero constant fixed by the athlete, $x$ is the week number of the season, and $x \\neq -3$. That ratio simplifies to which of the following?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{k}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{2}{3k}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{3k}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{2k}{3}$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "factors the numerator as $4k(2x + 6)$ and cancels $2x + 6$ against $x + 3$ as though they were equal, leaving $\\frac{4k}{12}$",
+  "B": "reduces $\\frac{8k}{12}$ to $\\frac{2}{3}$ and then writes the surviving $k$ in the denominator",
+  "C": "inverts the surviving coefficient fraction, reporting $\\frac{3}{2}$ of $k$ instead of $\\frac{2}{3}$"
+ },
+ "explanation": "**SAT Pattern: Factor Out GCF then Cancel**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The numerator is $8k(x + 3)$ and the denominator is $12(x + 3)$, so the ratio is $\\frac{8k}{12} = \\frac{2k}{3}$.\n\n**The Full Solution:**\nStep 1: Factor the numerator completely: $8kx + 24k = 8k(x + 3)$.\nStep 2: Factor the denominator completely: $12x + 36 = 12(x + 3)$.\nStep 3: Since $x \\neq -3$, the identical factor $x + 3$ cancels, leaving $\\frac{8k}{12} = \\frac{2k}{3}$. Check: at $x = 1$ and $k = 3$ the original is $\\frac{24 + 72}{12 + 36} = \\frac{96}{48} = 2$, and $\\frac{2(3)}{3} = 2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{k}{3}$): pulls out only $4k$ upstairs, then cancels $2x + 6$ against $x + 3$, which are not the same factor.\n* Choice B ($\\frac{2}{3k}$): reduces the coefficients correctly but strands $k$ below the bar; $k$ was a factor of the numerator.\n* Choice C ($\\frac{3k}{2}$): inverts the coefficient fraction, using $\\frac{12}{8} = \\frac{3}{2}$ in place of $\\frac{8}{12} = \\frac{2}{3}$.\n\n**Test Day Takeaway:** Only IDENTICAL factors cancel — pull the greatest common factor out of each part first so the leftover binomials can be compared term by term."
+}

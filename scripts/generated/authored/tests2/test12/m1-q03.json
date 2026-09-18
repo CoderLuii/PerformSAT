@@ -1,0 +1,67 @@
+{
+  "id": 3,
+  "question": "Rebound totals for eleven games of one basketball season are plotted, one dot per game. What is the median of the eleven totals?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 2,
+          "count": 1
+        },
+        {
+          "value": 3,
+          "count": 1
+        },
+        {
+          "value": 4,
+          "count": 1
+        },
+        {
+          "value": 5,
+          "count": 1
+        },
+        {
+          "value": 6,
+          "count": 1
+        },
+        {
+          "value": 9,
+          "count": 3
+        },
+        {
+          "value": 10,
+          "count": 3
+        }
+      ],
+      "xMin": 0,
+      "xMax": 12,
+      "xLabel": "Rebounds in a game"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$7$"
+    },
+    {
+      "id": "C",
+      "text": "$8$"
+    },
+    {
+      "id": "D",
+      "text": "$9$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "averages only the least and greatest values: (2 + 10) / 2 = 6",
+    "B": "reports the mean, 77 / 11 = 7, instead of the median",
+    "C": "reports the range, 10 - 2 = 8, instead of the median"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Median Calculation**\n\n**Choice D is correct.** Read left to right the plotted totals are $2, 3, 4, 5, 6, 9, 9, 9, 10, 10, 10$; with $11$ values the median is the $6$th one, which is $9$.\n\n**The Fast Way (~20s):** Eleven dots means the median is the $6$th from either end. Counting up from the left: $2, 3, 4, 5, 6, 9$ — the median is $9$.\n\n**The Full Solution:**\nStep 1: Read the eleven totals off the plot from left to right, counting each stacked dot: $2, 3, 4, 5, 6, 9, 9, 9, 10, 10, 10$.\nStep 2: With an odd count $n = 11$, the median sits in position $\\frac{n + 1}{2} = 6$.\nStep 3: The $6$th value is $9$. Check: five totals ($2, 3, 4, 5, 6$) fall below it and five ($9, 9, 10, 10, 10$) fall at or above it, so $9$ splits the eleven games evenly. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): averages only the smallest and largest plotted values, $\\frac{2 + 10}{2} = 6$. That midpoint ignores where the other nine games actually fall.\n* Choice B ($7$): is the mean, $\\frac{77}{11} = 7$. The four low games pull the mean below the middle value.\n* Choice C ($8$): is the range, $10 - 2 = 8$, a measure of spread rather than of center.\n\n**Test Day Takeaway:** On a dot plot, count dots from the left rather than eyeballing the tallest stack; the median sits at position $\\frac{n + 1}{2}$, so a median question is a counting task, never an arithmetic one."
+}

@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "question": "Which finding, if true, would most directly support the team's hypothesis?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Shift workers who sleep the same number of hours as day workers nonetheless report feeling considerably less rested and more fatigued when they finally wake."
-    },
-    {
-      "id": "B",
-      "text": "Day workers and night workers consume similar total numbers of calories over the course of a full twenty-four-hour period."
-    },
-    {
-      "id": "C",
-      "text": "Among people who sleep the same total hours, those who eat and exercise at night show worse metabolic markers than those who do so by day."
-    },
-    {
-      "id": "D",
-      "text": "People who sharply reduce their total nightly sleep go on to develop metabolic problems regardless of whether their meals fall during the day or at night."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The hypothesis is that misalignment between activity and the internal clock—not sleep loss—drives the metabolic harm, so the team holds total sleep constant and varies the timing of meals and activity. A finding that, with sleep equal, night eating and exercise produce worse metabolic markers than daytime eating and exercise directly supports that claim. Choice A concerns how rested people feel, not their metabolic markers; Choice B reports equal calories, which is neutral; and Choice D points to total sleep loss, which is precisely the explanation the team is arguing against.",
-  "passage": "Shift workers, whose schedules force them to sleep during the day and work at night, have higher rates of several metabolic disorders than day workers do. One research team proposed that the cause is not lost sleep as such but circadian misalignment—eating and being active at times of day when the body's internal clock has prepared it for rest. To test this idea, the team plans to compare metabolic markers in two groups who get the same total amount of sleep but differ in whether their meals and activity align with their internal clocks.",
-  "_meta": {
-    "anchor": "epidemiology of sleep: circadian misalignment vs. sleep loss in shift work"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "question": "Which finding, if true, would most directly support the team's proposal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Medieval chroniclers tended to record auroras only when displays were bright enough to alarm the public in towns and cities alike."
   },
-  "id": 1112,
-  "module": 1
+  {
+   "id": "B",
+   "text": "Some chronicles describe other celestial events, such as comets, that modern astronomy can date precisely."
+  },
+  {
+   "id": "C",
+   "text": "Chronicles record auroras markedly more often in centuries when tree-ring isotopes independently indicate high solar activity."
+  },
+  {
+   "id": "D",
+   "text": "Aurora sightings appear in chronicles written at widely different latitudes across Europe and East Asia."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The proposal is that chronicle sightings can stand in for direct measurements of solar activity. If chronicle counts rise exactly when an independent physical proxy — tree-ring isotopes — says solar activity was high, the stand-in is validated.\n\n**The Full Solution:**\n- A stand-in earns trust by agreeing with something already trusted. The team cannot check chronicles against instruments (none existed), so the test must be another independent record of solar activity.\n- Elevated radioactive isotopes in tree rings are such a record; a match between chronicle aurora counts and isotope-inferred activity directly supports using the chronicles to trace the solar cycle.\n\n**Why the other choices are wrong:**\n- A: A brightness threshold means faint displays went unrecorded — a limitation of the record, not evidence it tracks the solar cycle.\n- B: Accurate comet reports speak to chroniclers' general reliability, not to whether aurora counts follow solar activity.\n- D: Geographic spread describes the record's breadth; it says nothing about whether sighting frequency rises and falls with the Sun.",
+ "passage": "The Sun's activity rises and falls on a roughly eleven-year cycle, but direct measurements of that cycle reach back only a few centuries. Auroras — the shimmering lights that appear when charged particles from the Sun strike the upper atmosphere — become more frequent when solar activity peaks. One team of researchers has proposed that the many aurora sightings recorded in medieval European and East Asian chronicles could serve as a stand-in for direct measurements, allowing the solar cycle to be traced through centuries that no instrument ever observed.",
+ "_meta": {
+  "anchor": "aurora observation history — medieval chronicle sightings as solar-activity proxy",
+  "distractors": {
+   "A": "limitation, not validation",
+   "B": "general reliability, wrong target",
+   "D": "breadth without correlation"
+  }
+ },
+ "id": 1112,
+ "module": 1
 }

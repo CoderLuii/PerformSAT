@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 1,
-  "passage": "Before 1900, most films were brief, single-shot records of everyday events: a train arriving, workers leaving a factory. The French magician Georges Melies, who had run a Paris theater of illusions, treated the camera instead as a device for staging the impossible. In A Trip to the Moon (1902), he combined painted sets, costumed actors, and in-camera tricks—stopping the film to swap objects, dissolving one shot into another—to narrate a fantastical lunar voyage across some thirty linked scenes. Where earlier filmmakers had asked what the camera could capture, Melies asked what it could be made to fabricate, helping turn a recording instrument into a medium for telling invented stories.",
+  "passage": "In the 1790s, the French engineer Claude Chappe built a chain of signal towers between Paris and Lille, each topped with a pair of jointed wooden arms. An operator set the arms to a coded position; the next tower, watching through a telescope, copied the position, and the signal leapt from hilltop to hilltop. A short message could cross the 230-kilometer line in about half an hour — a journey of more than a day on horseback. The system had a fatal dependence, however: it needed daylight and clear weather, and the electric telegraph, which needed neither, made Chappe's towers obsolete within half a century.",
   "question": "Which choice best describes the overall structure of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "It traces the technical steps Melies followed to complete a single film and then lists, scene by scene, the lunar voyage that resulted from them."
-    },
-    {
-      "id": "B",
-      "text": "It contrasts an earlier conception of film with Melies's approach and explains how his work redefined the medium's purpose."
-    },
-    {
-      "id": "C",
-      "text": "It praises Melies's stage career and argues that his theatrical illusions surpassed his films."
-    },
-    {
-      "id": "D",
-      "text": "It describes a dispute among early filmmakers over whether the camera should record or fabricate scenes."
-    }
+    { "id": "A", "text": "It follows a single message on its journey from Paris to Lille, pausing at each of the towers to describe the work performed there." },
+    { "id": "B", "text": "It explains how a communication system worked, illustrates its speed, and then identifies the weakness that led to its replacement." },
+    { "id": "C", "text": "It argues that a neglected invention deserves more credit than the technology that ultimately superseded it." },
+    { "id": "D", "text": "It compares two competing signaling systems of the 1790s and explains why one attracted government support." }
   ],
   "correctAnswer": "B",
-  "explanation": "The passage first describes what early films were—brief, single-shot records—and then shows how Melies used staging and in-camera tricks to tell an invented story, ending by contrasting the two conceptions of the camera. That is the structure in choice B: an earlier idea of film set against Melies's, with an account of how he redefined the medium. Choice A reduces the text to a how-to list, C invents a ranking of his stage work over his films, and D imagines a debate the passage never stages.",
-  "_meta": {
-    "anchor": "Georges Melies, A Trip to the Moon (1902)"
-  }
+  "explanation": "**Choice B is correct.** The text moves through three stages: mechanism (arms, telescopes, tower-to-tower relay), a measure of the system's power (half an hour versus a day on horseback), and finally the limitation — dependence on daylight and weather — that let the electric telegraph displace it.\n\n**The Full Solution:**\n- Sentences one through three explain how the system worked.\n- Sentence four quantifies the achievement with the horseback comparison.\n- The closing sentence pivots on \"however\" to the fatal weakness and the replacement it invited, completing the arc that choice B describes.\n\n**Why the other choices are wrong:**\n- A: No single message is followed; the tower-to-tower description is general, not a narrated journey.\n- C: The text evaluates nothing — it reports the system's strengths and weakness without pleading for its reputation.\n- D: Only one system from the 1790s appears; the electric telegraph arrives later as a successor, not a contemporary rival."
 }

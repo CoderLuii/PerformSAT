@@ -1,0 +1,53 @@
+{
+  "question": "A crystal grown in a furnace doubles in mass during each hour of growth. The table gives the mass of the crystal, in milligrams, after $t$ hours. What will the mass of the crystal be after $5$ hours?",
+  "questionTable": {
+    "headers": [
+      "Time, $t$ (hours)",
+      "Mass (milligrams)"
+    ],
+    "rows": [
+      [
+        "$0$",
+        "$6$"
+      ],
+      [
+        "$1$",
+        "$12$"
+      ],
+      [
+        "$2$",
+        "$24$"
+      ],
+      [
+        "$3$",
+        "$48$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$96$ milligrams"
+    },
+    {
+      "id": "B",
+      "text": "$144$ milligrams"
+    },
+    {
+      "id": "C",
+      "text": "$192$ milligrams"
+    },
+    {
+      "id": "D",
+      "text": "$240$ milligrams"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stopped one hour early, giving the mass at t = 4",
+    "B": "added 48 milligrams for each remaining hour, treating the growth as linear",
+    "D": "multiplied the 3-hour mass 48 by 5 instead of doubling twice"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Build Exponential Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Double the $3$-hour mass twice: $48\\rightarrow 96\\rightarrow 192$ milligrams.\n\n**The Full Solution:**\nStep 1: The table confirms the doubling: $12/6=2$, $24/12=2$, $48/24=2$.\nStep 2: The model is mass $=6(2)^{t}$ milligrams.\nStep 3: At $t=5$, mass $=6(2)^{5}=6\\cdot 32=192$ milligrams. Check: $48\\cdot 2\\cdot 2=192$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($96$ milligrams): stops one hour early, at $t=4$.\n* Choice B ($144$ milligrams): adds $48$ milligrams for each of the two remaining hours, treating doubling as a constant increase.\n* Choice D ($240$ milligrams): multiplies the $3$-hour mass by $5$ instead of doubling twice.\n\n**Test Day Takeaway:** Doubling multiplies, so extend a table by multiplying — never by adding the last increase again.",
+  "id": "bank-am-342"
+}

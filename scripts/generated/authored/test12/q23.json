@@ -1,31 +1,31 @@
 {
-  "id": 1223,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "In the cold, dry caves of the Peruvian highlands, archaeologists have recovered fragments of cotton and camelid-fiber textiles thousands of years old, preserved well enough that their original dye colors can still be identified. ______ along the desert coast of northern Chile, researchers working at equally arid sites have found bundles of patterned cloth wrapped around ancient burials, their fibers and pigments similarly intact after millennia in the rainless ground.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Likewise,"
-    },
-    {
-      "id": "B",
-      "text": "However,"
-    },
-    {
-      "id": "C",
-      "text": "For instance,"
-    },
-    {
-      "id": "D",
-      "text": "Therefore,"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The second sentence reports a parallel case—another arid setting where textiles survived for millennia—so \"Likewise\" correctly signals similarity between the two situations. \"However\" would mark a contrast, but the two cases agree rather than conflict. \"For instance\" would introduce an example of a general claim, yet the first sentence is itself a specific case, not a generalization. \"Therefore\" would mark a conclusion drawn from the first sentence, which is not the relationship here."
+ "id": 1223,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "In the adobe villages of the southwestern United States, replastering has long been a communal and seasonal task: households gather each spring to renew the protective mud coating on one another's walls before the summer storms arrive. ______ in the oasis towns along the edge of the Sahara, families maintain their earthen houses on a shared calendar, applying fresh coats of plaster together in the weeks after the date harvest and before the rains.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Likewise,"
+  },
+  {
+   "id": "B",
+   "text": "However,"
+  },
+  {
+   "id": "C",
+   "text": "For instance,"
+  },
+  {
+   "id": "D",
+   "text": "In turn,"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The second sentence presents a parallel case — another arid region where earthen walls are replastered communally on a seasonal schedule — so the similarity word \"Likewise\" fits.\n\n**The Full Solution:**\n- First sentence: in the southwestern United States, households replaster together each spring, ahead of the summer storms.\n- Second sentence: in Saharan oasis towns, families do the same kind of work together, timed after the date harvest and before the rains.\n- The two cases match point for point — communal labor, earthen walls, a weather-driven calendar — and matching cases call for a same-as-this transition: \"Likewise.\"\n\n**Why the other choices are wrong:**\n- B: \"However\" signals a clash, but the two practices agree in every particular the passage mentions.\n- C: \"For instance\" introduces an example of a general claim, but the first sentence is itself a specific case, not a generalization the second could exemplify.\n- D: \"In turn\" would make the Saharan practice a consequence flowing from the American one, but the two are independent parallel traditions, not cause and effect."
 }

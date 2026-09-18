@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-390",
+  "question": "A laboratory tested $1{,}200$ water samples. Of those samples, $30\\%$ came from wells, and $15\\%$ of the well samples contained detectable iron. How many of the samples tested were well samples containing detectable iron?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$54$"
+    },
+    {
+      "id": "B",
+      "text": "$180$"
+    },
+    {
+      "id": "C",
+      "text": "$306$"
+    },
+    {
+      "id": "D",
+      "text": "$360$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "applies $15\\%$ to all $1{,}200$ samples instead of to the well samples",
+    "C": "counts the well samples with no detectable iron, $85\\%$ of $360$",
+    "D": "reports the number of well samples and stops"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $0.30(1200) = 360$ well samples, and $0.15(360) = 54$ of them contained detectable iron.\n\n**The Full Solution:**\nStep 1: The well samples number $0.30(1200) = 360$.\nStep 2: The second percent describes only those $360$ samples: $0.15(360) = 54$.\nStep 3: So $54$ samples were well samples containing detectable iron. Check: $0.30(0.15) = 0.045$, and $0.045(1200) = 54$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($180$): applies $15\\%$ to all $1{,}200$ samples instead of to the well samples\n* Choice C ($306$): counts the well samples with no detectable iron, $85\\%$ of $360$\n* Choice D ($360$): reports the number of well samples and stops\n\n**Test Day Takeaway:** Track which group each percent describes. The second percent in a chain almost never applies to the original total."
+}

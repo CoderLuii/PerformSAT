@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-224",
+  "question": "The table gives the number of ceramic tiles fired in each of three kilns during one production run. Across the entire run, $6.5\\%$ of the tiles cracked and were discarded. How many of the tiles fired in the run were not discarded?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Kiln",
+        "Tiles fired"
+      ],
+      "rows": [
+        [
+          "Kiln 1",
+          "520"
+        ],
+        [
+          "Kiln 2",
+          "460"
+        ],
+        [
+          "Kiln 3",
+          "420"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "1309",
+  "explanation": "**SAT Pattern: Percent Complement**\n\n**The correct answer is $1309$.**\n\n**The Fast Way (~40s):** The run fired $1{,}400$ tiles, and $100\\% - 6.5\\% = 93.5\\%$ survived: $0.935 \\times 1{,}400 = 1{,}309$.\n\n**The Full Solution:**\nStep 1: Total the kilns: $520 + 460 + 420 = 1{,}400$ tiles.\nStep 2: Take the complement of the discard rate: $100 - 6.5 = 93.5$, so $93.5\\%$ of the tiles were kept.\nStep 3: Multiply: $0.935 \\times 1{,}400 = 1{,}309$. Check: $0.065 \\times 1{,}400 = 91$ discarded, and $1{,}400 - 91 = 1{,}309$. $\\checkmark$\n\n**Common Mistakes:** Reporting $91$, the discarded tiles; subtracting $6.5$ tiles rather than $6.5\\%$, giving $1{,}393.5$, which is not a whole number of tiles; or reading $6.5\\%$ as $65\\%$ and computing $0.35 \\times 1{,}400 = 490$.\n\n**Test Day Takeaway:** A percent with a decimal point converts the same way as any other: $6.5\\% = 0.065$. Sanity-check the size of your answer against the total."
+}

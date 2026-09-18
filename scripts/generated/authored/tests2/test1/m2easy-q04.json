@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "For the function $g$ defined by $g(t) = 9 + \\frac{t}{4}$, the input $t = a$ produces the output $17$ and the input $t = b$ produces the output $21$. By how much does $b$ exceed $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$80$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the output difference by 4 instead of multiplying by 4",
+  "B": "reports the difference of the outputs, 21 - 17, instead of the difference of the inputs",
+  "D": "adds the two inputs, 48 + 32, instead of subtracting them"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Solve $f(a) = c$**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Solving $9 + \\frac{a}{4} = 17$ gives $a = 32$, and solving $9 + \\frac{b}{4} = 21$ gives $b = 48$, so $b$ exceeds $a$ by $16$.\n\n**The Full Solution:**\nStep 1: Apply the rule to the first condition: $9 + \\frac{a}{4} = 17$. Subtract $9$ to get $\\frac{a}{4} = 8$, then multiply by $4$: $a = 32$.\nStep 2: Apply the rule to the second condition: $9 + \\frac{b}{4} = 21$, so $\\frac{b}{4} = 12$ and $b = 48$.\nStep 3: The question asks how much larger $b$ is: $b - a = 48 - 32 = 16$. Check both inputs in the rule: $g(32) = 9 + 8 = 17$ and $g(48) = 9 + 12 = 21$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): computing $\\frac{21 - 17}{4}$, dividing the output gap by $4$. Because $g$ divides its input by $4$, the input gap is $4$ times the output gap, not one-fourth of it.\n* Choice B ($4$): the gap between the outputs, $21 - 17$. The question asks about the inputs $a$ and $b$, and the function has already compressed their gap by a factor of $4$.\n* Choice D ($80$): adding the two inputs, $48 + 32$. Both values are found correctly and then combined with the wrong operation.\n\n**Test Day Takeaway:** Solve for the input once per condition, undoing the operations in reverse order, and only then perform the comparison the question actually names."
+}

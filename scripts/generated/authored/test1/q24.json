@@ -6,26 +6,26 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 1,
- "passage": "Ecologists argue that year-to-year climate swings can shift the timing of recurring disease outbreaks — but only when long records and careful models can separate the climate's effect from a population's own immunity cycles. ______ Mercedes Pascual's analyses of decades of Bangladeshi cholera records show that outbreak peaks there track the El Niño–Southern Oscillation closely enough for the climate signal to be statistically distinguished from the immune-driven oscillations her models recover in the very same data.",
+ "passage": "Studies that plant deliberate errors in manuscripts have found that peer reviewers catch only a fraction of them, and even careful reviewers frequently overlook statistical mistakes in work outside their specialty. ______ manuscripts that pass through peer review go on to be retracted at far lower rates than papers posted without any review, and surveys of working scientists consistently find that they regard refereed journals as more trustworthy than unrefereed outlets.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "By contrast,"
+   "text": "Accordingly,"
   },
   {
    "id": "B",
-   "text": "Likewise,"
+   "text": "Even so,"
   },
   {
    "id": "C",
-   "text": "For instance,"
+   "text": "In other words,"
   },
   {
    "id": "D",
-   "text": "Moreover,"
+   "text": "For example,"
   }
  ],
- "correctAnswer": "C",
- "explanation": "The first sentence makes a general claim: ecologists hold that year-to-year climate swings can shift the timing of recurring disease outbreaks, but only when long records and careful models let researchers separate the climate's effect from a population's own immunity cycles. The second sentence then gives a specific case that fits — Mercedes Pascual's analyses of decades of Bangladeshi cholera records, in which outbreak peaks track the El Niño–Southern Oscillation closely enough to distinguish the climate signal from the immune-driven cycles in the same data. The move from a general principle to one concrete illustration is exactly what 'For instance,' signals, so C is correct.\n\nThe cue is the shift in specificity: sentence 1 talks abstractly about 'recurring disease outbreaks' and the conditions under which a climate signal can be detected, while sentence 2 names a particular country (Bangladesh), a particular disease (cholera), and a particular climate pattern (the El Niño–Southern Oscillation) — one concrete realization of the general claim. 'By contrast,' 'Likewise,' and 'Moreover,' all misread that relationship: the second sentence neither opposes the first nor merely adds a parallel point; it exemplifies it."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The move is concessive — granting peer review's documented weaknesses while asserting its countervailing value — and \"Even so,\" does precisely that.\n\n**The Full Solution:**\n- The first sentence documents weaknesses: planted errors slip through; specialists miss out-of-field statistics.\n- The second pulls the opposite way: reviewed papers are retracted less often and scientists trust them more.\n- The needed transition concedes the first point while asserting the second.\n\n**Why the other choices are wrong:**\n- A: \"Accordingly\" claims the second sentence follows from the first, but low retraction rates cut against missed errors, not from them.\n- C: \"In other words\" promises a restatement, yet the second sentence introduces new, opposing evidence.\n- D: \"For example\" would make the retraction data an instance of reviewers missing errors, which it is not."
 }

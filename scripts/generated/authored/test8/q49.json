@@ -1,31 +1,31 @@
 {
-  "id": 849,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 2,
-  "passage": "In 1833, after years of campaigning by abolitionists, the British Parliament passed the Slavery Abolition Act. Over the following year, the law ______ slavery across most of the British Empire, though it phased in the change through a transitional system that drew sharp criticism.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "abolishes"
-    },
-    {
-      "id": "B",
-      "text": "has abolished"
-    },
-    {
-      "id": "C",
-      "text": "abolished"
-    },
-    {
-      "id": "D",
-      "text": "will abolish"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The sentence is set firmly in the past—\"In 1833\" and \"over the following year\"—and describes a completed historical action, so the simple past \"abolished\" is correct. The present \"abolishes\" in A and the future \"will abolish\" in D both clash with the past time frame, and the present perfect \"has abolished\" in B wrongly frames a clearly finished nineteenth-century event as continuing to bear on the present."
+ "id": 849,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 2,
+ "passage": "For generations the order of turns on the canal lived only in memory and custom. In 1435, after a season of quarrels, the town council ______ the rotation in a written ordinance, fixing each farm's hours by name; the document remained the authority for water disputes in the valley for more than two centuries.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "records"
+  },
+  {
+   "id": "B",
+   "text": "has recorded"
+  },
+  {
+   "id": "C",
+   "text": "recorded"
+  },
+  {
+   "id": "D",
+   "text": "will record"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The sentence reports a completed action at a stated past date — 1435 — so the verb must be the simple past \"recorded.\"\n\n**The Full Solution:**\n- The time marker \"In 1435\" fixes the action at a specific moment in the past.\n- The surrounding narrative is likewise past: the ordinance \"fixed\" each farm's hours and \"remained\" in force.\n- A single completed past action at a named date takes the simple past: \"the council recorded the rotation in a written ordinance.\"\n\n**Why the other choices are wrong:**\n- A: \"Records\" is present tense and clashes with the dated past event.\n- B: \"Has recorded\" is present perfect, which suits an unspecified time reaching the present, not an action pinned to 1435.\n- D: \"Will record\" points to the future and cannot report what happened at a past date."
 }

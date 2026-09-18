@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-236",
+  "question": "In a trial, $320$ adults with seasonal allergies were randomly assigned to receive either a new nasal spray or an identical-looking placebo, and neither the participants nor the evaluators knew the assignments. After six weeks, the nasal spray group reported significantly fewer symptom days. Which conclusion is best supported?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The nasal spray reduces symptom days for adults with any type of allergy."
+    },
+    {
+      "id": "B",
+      "text": "Adults with fewer symptom days were more likely to be assigned the nasal spray."
+    },
+    {
+      "id": "C",
+      "text": "The nasal spray likely caused the reduction in symptom days for the adults in this trial."
+    },
+    {
+      "id": "D",
+      "text": "Adults who expected relief reported fewer symptom days than adults who did not."
+    }
+  ],
+  "distractorNotes": {
+    "A": "generalizes from seasonal allergies to every type of allergy",
+    "B": "reverses the order of assignment and outcome",
+    "D": "asserts an expectation effect that the blinding was designed to remove"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Observational vs Experimental Study**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Random assignment plus blinding makes this a controlled experiment, so a causal conclusion about the participants is supported.\n\n**The Full Solution:**\nStep 1: Identify the design. Participants were randomly assigned to spray or placebo, so the groups started out comparable.\nStep 2: Blinding both participants and evaluators removes expectation as an alternative explanation for the difference.\nStep 3: The remaining explanation for significantly fewer symptom days is the spray itself, for the adults studied. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the participants all had seasonal allergies, so the result cannot be extended to every type of allergy.\n* Choice B: assignment happened first and at random, so symptom days could not have influenced who received the spray.\n* Choice D: blinding was included precisely so that expectation could not drive the result; the data do not support this claim.\n\n**Test Day Takeaway:** A causal conclusion is only as wide as the group studied — check the population before accepting the boldest choice."
+}

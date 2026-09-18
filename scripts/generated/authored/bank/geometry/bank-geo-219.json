@@ -1,0 +1,87 @@
+{
+ "id": "bank-geo-219",
+ "question": "An embroidery kit pairs a small applique with a larger one cut to the same shape. The figure gives the measurements of both pieces in centimeters, with vertex $J$ matching $M$, vertex $K$ matching $N$, and vertex $L$ matching $P$. How long, in centimeters, is $\\overline{NP}$?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "vertices": [
+     [
+      0.71,
+      4.95
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      7,
+      0
+     ]
+    ],
+    "labels": [
+     "J",
+     "K",
+     "L"
+    ],
+    "sideLabels": [
+     "5",
+     "7",
+     "8"
+    ]
+   },
+   "triangle2": {
+    "vertices": [
+     [
+      1.43,
+      9.9
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      0
+     ]
+    ],
+    "labels": [
+     "M",
+     "N",
+     "P"
+    ],
+    "sideLabels": [
+     "10",
+     "",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3.5$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$14$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by the scale factor instead of multiplying: 7 / 2 = 3.5",
+  "B": "reports KL unchanged, treating the two pieces as congruent rather than similar",
+  "C": "adds the difference 10 - 5 = 5 to 7 instead of scaling by 2"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** $\\overline{MN}$ matches $\\overline{JK}$, so the scale factor is $\\frac{10}{5}=2$, and $\\overline{NP}=2(7)=14$ centimeters.\n\n**The Full Solution:**\n\nStep 1 — Match the sides. The order $JKL \\to MNP$ pairs $\\overline{JK}$ with $\\overline{MN}$ and $\\overline{KL}$ with $\\overline{NP}$.\n\nStep 2 — Find the scale factor: $\\frac{MN}{JK}=\\frac{10}{5}=2$.\n\nStep 3 — Apply it: $NP=2(KL)=2(7)=14$ centimeters. Check: $\\frac{14}{7}=2$, the same factor that took $5$ to $10$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3.5$): this divides by $2$ instead of multiplying, shrinking the larger piece.\n* Choice B ($7$): this copies $\\overline{KL}$ unchanged, which would make the pieces congruent rather than similar.\n* Choice C ($12$): this adds $10-5=5$ to $7$; similar figures scale by a factor, not by a fixed increase.\n\n**Test Day Takeaway:** Find the scale factor from the one pair of sides you know, then multiply — every side of the larger figure uses that same factor."
+}

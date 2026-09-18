@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-179",
+  "question": "A bag contains only green chips and yellow chips. If one chip is selected at random, the probability that it is green is $0.35$. If the bag contains $39$ yellow chips, how many green chips does it contain?",
+  "correctAnswer": "21",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**The correct answer is $21$.**\n\n**The Fast Way (~15s):** Yellow chips are $1 - 0.35 = 0.65$ of the bag, so the total is $\\frac{39}{0.65} = 60$ and the green chips number $60 - 39 = 21$.\n\n**The Full Solution:**\nStep 1: Only two colors, so $P(\\text{yellow}) = 1 - 0.35 = 0.65$.\nStep 2: Let $T$ be the total: $0.65T = 39$, so $T = 60$.\nStep 3: Green chips $= T - 39 = 21$, or directly $0.35 \\times 60 = 21$. Check: $\\frac{21}{60} = 0.35$. $\\checkmark$\n\n**Common Mistakes:** Multiplying the given count by the green probability, $0.35 \\times 39 = 13.65$, which pairs the wrong color with the wrong probability; reporting the total, $60$, instead of the green chips; dividing $39$ by $0.35$ to get about $111.4$.\n\n**Test Day Takeaway:** Match each count to its own probability; the known count and its probability give the total, and the total gives everything else."
+}

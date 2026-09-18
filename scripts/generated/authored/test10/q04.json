@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 1,
- "passage": "For most of the nineteenth century, naturalists classified lichens as a single kind of organism. In 1867 the botanist Simon Schwendener advanced a startling reinterpretation: a lichen, he proposed, is not one organism but two—a fungus and an alga living in such close partnership that the pair had long been ______ for a single species. Many botanists resisted the claim for decades before accepting that the lichen was a composite.",
+ "passage": "When Webster's Third New International Dictionary appeared in 1961, many reviewers took for granted that a dictionary's task was to ______ the language, ruling on which usages deserved admission and which should be turned away. Its editor, Philip Gove, understood the task differently: a dictionary should record how English is actually written and spoken, entering even disputed words and attaching cautionary labels only sparingly.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "mistaken"
+   "text": "regulate"
   },
   {
    "id": "B",
-   "text": "credited"
+   "text": "celebrate"
   },
   {
    "id": "C",
-   "text": "substituted"
+   "text": "modernize"
   },
   {
    "id": "D",
-   "text": "prepared"
+   "text": "simplify"
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. Schwendener's claim is that what looked like one organism was really two living in close partnership, so naturalists had wrongly taken the pair for a single species. \"Mistaken for\" expresses exactly that error of identification. \"Credited\" and \"prepared\" do not fit the idiom or the sense, and \"substituted for a single species\" would imply the pair had replaced a species rather than been misread as one."
+ "explanation": "**Choice A is correct.** The reviewers' view is glossed in the very next clause, \"ruling on which usages deserved admission and which should be turned away,\" and a body that rules on admission is regulating the language.\n\n**The Full Solution:**\n- The sentence contrasts two conceptions of a dictionary. The blank names the reviewers' conception, which the appositive clause defines: making rulings, admitting some usages, excluding others.\n- Gove's opposing view, merely recording actual usage, confirms the contrast: record versus regulate.\n\n**Why the other choices are wrong:**\n- B: \"Celebrate\" carries no sense of ruling usages in or out, which is the function the clause describes.\n- C: \"Modernize\" would mean updating the language itself, but the reviewers wanted gatekeeping, not renovation.\n- D: \"Simplify\" likewise misses the gatekeeping idea; nothing in the text concerns making English simpler."
 }

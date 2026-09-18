@@ -1,0 +1,48 @@
+{
+  "id": "bank-am-276",
+  "question": "A money-market account earns interest at a constant annual rate, compounded annually. The table gives the balance in the account at the end of each of the first two years. What is the annual interest rate?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "End of year",
+        "Balance (dollars)"
+      ],
+      "rows": [
+        [
+          "1",
+          "5,400"
+        ],
+        [
+          "2",
+          "5,832"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$7.4\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$8\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$16\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "splits the one-year increase across two years",
+    "B": "divides the increase by the later balance instead of the earlier one",
+    "D": "doubles the annual rate, as if the table spanned two years of growth"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $\\dfrac{5{,}832}{5{,}400} = 1.08$, so the balance grows by $8\\%$ in one year.\n\n**The Full Solution:**\nStep 1: Consecutive balances differ by exactly one year of compounding, so their ratio is the growth multiplier $1 + r$.\nStep 2: $\\dfrac{5{,}832}{5{,}400} = 1.08$, so $1 + r = 1.08$ and $r = 0.08$.\nStep 3: As a percent, the annual rate is $8\\%$. Check: the increase is $5{,}832 - 5{,}400 = 432$, and $\\dfrac{432}{5{,}400} = 0.08$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4\\%$): this halves the $\\$432$ increase, as if it had accumulated over two years; the table already shows a single year of growth.\n* Choice B ($7.4\\%$): this computes $\\dfrac{432}{5{,}832} \\approx 0.074$, dividing by the ending balance instead of the starting one.\n* Choice D ($16\\%$): this doubles the correct rate, treating the two listed balances as two years of growth from the original deposit.\n\n**Test Day Takeaway:** For a constant compound rate, divide any balance by the one from the period before; percent change is always measured against the EARLIER amount."
+}

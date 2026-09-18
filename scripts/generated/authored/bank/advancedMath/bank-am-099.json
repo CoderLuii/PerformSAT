@@ -1,0 +1,40 @@
+{
+ "id": "bank-am-099",
+ "question": "The graph shown gives braille volume transcriptions above a library's monthly quota as the quadratic function $f$. The quadratic function $g$ has the same vertex as $f$, and $g(5)=25$. What is the value of $g(-2)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$25$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "assumes g equals f and reports the shared vertex value",
+  "B": "adds 3 to 9 instead of adding b times (-3)^2",
+  "D": "treats -2 and 5 as symmetric about the axis x = 1"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The shared vertex is $(1,9)$, so $g(x)=b(x-1)^2+9$; $g(5)=16b+9=25$ gives $b=1$, and $g(-2)=9+9=18$.\n\n**The Full Solution:**\nStep 1: Read the vertex of $f$ from the graph: $(1,9)$. Since $g$ has the same vertex, $g(x)=b(x-1)^2+9$ for some constant $b$.\nStep 2: Use $g(5)=25$: $b(5-1)^2+9=25$, so $16b=16$ and $b=1$. Note $b$ is positive even though $f$ opens downward — sharing a vertex does not mean sharing a leading coefficient.\nStep 3: Evaluate: $g(-2)=(-2-1)^2+9=9+9=18$. Check: $g(4)=(3)^2+9=18$ too, and $4$ is the mirror of $-2$ about $x=1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): assumes $g$ is the same function as $f$ and reports the shared vertex value.\n* Choice B ($12$): adds $3$ to $9$ instead of $b(-3)^2=9$.\n* Choice D ($25$): treats $-2$ and $5$ as symmetric about $x=1$; the mirror of $5$ is $-3$.\n\n**Test Day Takeaway:** A shared vertex fixes only $h$ and $k$ — the leading coefficient still has to come from the second condition, sign and all.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    1,
+    9
+   ],
+   "a": -1,
+   "showVertex": true
+  }
+ }
+}

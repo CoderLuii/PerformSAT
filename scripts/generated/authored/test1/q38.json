@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 2,
- "passage": "Migratory songbirds can hold a steady compass heading on overcast nights when neither the sun nor the stars are visible, a feat that long puzzled biologists. Working with European robins, the sensory biologist Henrik Mouritsen has gathered evidence that the birds detect Earth's magnetic field through a light-sensitive protein in their eyes. In his experiments, robins kept under dim light of certain wavelengths oriented normally, while birds exposed to other wavelengths lost their bearings entirely. Because the effect depended on light reaching the eye rather than on any structure in the beak, Mouritsen concluded that the birds' magnetic compass is tied to vision rather than to the iron-rich tissue some earlier researchers had proposed.",
- "question": "According to the text, what did Mouritsen conclude about the robins' magnetic compass?",
+ "passage": "Grid cells in the mammalian entorhinal cortex fire whenever an animal occupies any vertex of a hexagonal lattice tiling the space it moves through, a regularity that suggested the cells compute location from self-motion — counting steps and turns — rather than from what the animal sees. Neuroscientist Edvard Moser's group tested the visual alternative directly: they recorded from grid cells while rats foraged first in a lighted arena and then in total darkness. If the firing lattice were anchored to visual landmarks, extinguishing them should have dissolved or displaced it. Instead the hexagonal pattern persisted in the dark with its spacing and orientation largely intact, and Moser concluded that the grid is generated internally from the animal's own movement signals, with vision serving mainly to correct the map's slow drift rather than to construct it.",
+ "question": "According to the text, what did Moser conclude about the firing pattern of grid cells?",
  "choices": [
   {
    "id": "A",
-   "text": "It depends on light reaching the eye rather than on iron-rich tissue elsewhere in the body."
+   "text": "It arises only in animals that have first explored an arena in the light, because darkness prevents the lattice from forming at all."
   },
   {
    "id": "B",
-   "text": "It functions only on nights when the sun or the stars are also visible to the birds."
+   "text": "It dissolves completely when an arena is plunged into total darkness, which demonstrates that the hexagonal pattern is anchored to the visual landmarks available to the animal in a lighted arena."
   },
   {
    "id": "C",
-   "text": "It works equally well under light of every wavelength to which the birds were exposed."
+   "text": "It depends equally on self-motion and on vision, since removing either input displaces the hexagonal lattice."
   },
   {
    "id": "D",
-   "text": "It relies on a structure in the beak rather than on the birds' sense of vision."
+   "text": "It is produced internally from self-motion signals, with visual input serving chiefly to correct gradual drift rather than to build the pattern."
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A. The passage states that Mouritsen concluded the magnetic compass is tied to vision—because the effect required light reaching the eye—rather than to the iron-rich tissue earlier researchers had proposed, which is exactly what A says. B contradicts the opening point that the birds orient on overcast nights; C contradicts the result that some wavelengths preserved orientation while others destroyed it; and D names the beak-based explanation Mouritsen rejects."
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** Moser's stated conclusion has two parts — the grid is generated internally from movement signals, and vision mainly corrects the map's slow drift — and D reproduces both.\n\n**The Full Solution:**\n- The final sentence gives the conclusion: the grid \"is generated internally from the animal's own movement signals,\" with vision serving \"mainly to correct the map's slow drift rather than to construct it.\"\n- A correct answer must keep both the internal-generation claim and vision's limited, corrective role.\n\n**Why the other choices are wrong:**\n- A: It confuses the experimental sequence (light first, then darkness) with a claimed requirement; the text nowhere says prior lighted exploration is necessary for the lattice to form.\n- B: It states the outcome the experiment ruled out — if the lattice were visually anchored, darkness \"should have dissolved or displaced it,\" but the pattern \"persisted.\"\n- C: It invents an equal-dependence conclusion the text contradicts: the two inputs play asymmetric roles (construction versus correction)."
 }

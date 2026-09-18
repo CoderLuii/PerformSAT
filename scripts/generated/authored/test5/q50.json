@@ -1,34 +1,34 @@
 {
-  "id": 550,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "Engineers have long prized the dragline silk of orb-weaving spiders, a fiber that by weight rivals steel in tensile strength yet stretches and absorbs far more energy before it snaps. Producing the silk in quantity, however, proved stubbornly difficult: spiders are too territorial and cannibalistic to raise in colonies the way silkworms are, and the silk proteins manufactured in engineered bacteria tended to clump together rather than line up the way they do inside a spider's spinning ducts. ______ by carefully controlling the acidity and the flow of the protein solution as it was drawn into a fiber, researchers eventually spun synthetic threads whose toughness approached that of the natural silk.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "As a result,"
-    },
-    {
-      "id": "B",
-      "text": "For instance,"
-    },
-    {
-      "id": "C",
-      "text": "Likewise,"
-    },
-    {
-      "id": "D",
-      "text": "Even so,"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"Even so,\". The passage first lays out why spider silk was hard to manufacture—spiders cannot be farmed, and bacterially made proteins clumped instead of aligning—and the sentence after the blank reports that, despite those obstacles, researchers eventually spun synthetic fibers nearly as tough as the natural silk. The relationship is concessive, marking what happened in spite of the difficulties, and \"Even so,\" captures it. \"As a result,\" would wrongly make the success a consequence of the obstacles. \"For instance,\" would introduce an example, and \"Likewise,\" would signal a parallel point, neither of which fits the contrast the sentence sets up.",
-  "_meta": {
-    "anchor": "spider dragline silk biomechanics — manufacturing obstacles then synthetic-spinning success; concessive transition"
+ "id": 550,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "An animal's soft parts almost never fossilize: scavengers, bacteria, and simple exposure destroy skin, muscle, and internal organs within days of death, ages before minerals can replace them. Preservation demands an improbable conjunction of circumstances — burial that is nearly instantaneous, in sediment fine enough to seal out oxygen, in water still enough to leave the carcass undisturbed. ______ paleontologists have recovered entire buried communities of soft-bodied animals, preserved in such fidelity that eyes, gills, and even gut contents remain visible after half a billion years.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Consequently,"
+  },
+  {
+   "id": "B",
+   "text": "For example,"
+  },
+  {
+   "id": "C",
+   "text": "Similarly,"
+  },
+  {
+   "id": "D",
+   "text": "Even so,"
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The first two sentences establish how improbable soft-tissue preservation is; the final sentence reports that superb examples exist anyway. That concessive turn — despite the obstacles, the thing happened — is what \"Even so\" signals.\n\n**The Full Solution:**\n- Sentence one: soft parts are destroyed within days, so they almost never fossilize.\n- Sentence two: preservation requires a rare conjunction of burial conditions.\n- Sentence three: whole communities of soft-bodied animals have nevertheless been recovered in extraordinary detail. The logical relation is concession: the outcome defies the described odds, and \"Even so\" marks exactly that.\n\n**Why the other choices are wrong:**\n- A: \"Consequently\" would make the recoveries a result of the near-impossibility, inverting the logic.\n- B: \"For example\" would offer the recoveries as an instance of destruction and improbability, which they are not — they are the exception to it.\n- C: \"Similarly\" would present a parallel case, but the final sentence pushes against the preceding ones rather than echoing them.",
+ "_meta": {
+  "anchor": "soft-bodied fossil preservation — improbable conditions, yet exquisite deposits; concessive transition"
+ }
 }

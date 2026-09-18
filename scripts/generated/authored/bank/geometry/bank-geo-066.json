@@ -1,0 +1,41 @@
+{
+ "id": "bank-geo-066",
+ "question": "A guy wire $175$ feet long runs from the top of a vertical antenna to an anchor point on level ground, making an angle of $\\theta$ with the ground, where $\\sin\\theta = 0.28$. What is the area, in square feet, of the right triangle formed by the wire, the antenna, and the ground?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "θ",
+    "",
+    ""
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "175"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$49$"
+  },
+  {
+   "id": "B",
+   "text": "$168$"
+  },
+  {
+   "id": "C",
+   "text": "$4{,}116$"
+  },
+  {
+   "id": "D",
+   "text": "$8{,}232$"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The antenna is $175(0.28) = 49$ feet and the ground leg is $175(0.96) = 168$ feet, so the area is $\\frac{1}{2}(49)(168) = 4{,}116$ square feet.\n\n**The Full Solution:**\nStep 1: The wire is the hypotenuse. The antenna is the leg opposite $\\theta$, so $\\sin\\theta = \\frac{\\text{antenna}}{175} = 0.28$ gives an antenna height of $175(0.28) = 49$ feet.\nStep 2: $\\cos\\theta = \\sqrt{1 - 0.28^2} = \\sqrt{0.9216} = 0.96$, so the ground leg is $175(0.96) = 168$ feet.\nStep 3: The legs of a right triangle are its base and height, so the area is $\\frac{1}{2}(49)(168) = 4{,}116$ square feet.\n\nCheck: $49^2 + 168^2 = 2{,}401 + 28{,}224 = 30{,}625 = 175^2$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($49$): stops at the height of the antenna instead of computing an area.\n* Choice B ($168$): stops at the distance along the ground.\n* Choice D ($8{,}232$): multiplies the two legs but forgets the factor of $\\frac{1}{2}$ in the triangle-area formula.\n\n**Test Day Takeaway:** In a right triangle the two legs are already a base and a height — find both legs, then halve their product."
+}

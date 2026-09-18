@@ -1,0 +1,64 @@
+{
+  "id": "bank-ps-037",
+  "question": "The bar graph shows the number of pairs of shoes of each size sold at a store on one day. What is the mode of the shoe sizes sold?",
+  "diagram": {
+    "type": "barChart",
+    "params": {
+      "data": [
+        {
+          "label": "6",
+          "value": 2
+        },
+        {
+          "label": "7",
+          "value": 8
+        },
+        {
+          "label": "8",
+          "value": 5
+        },
+        {
+          "label": "9",
+          "value": 7
+        },
+        {
+          "label": "10",
+          "value": 4
+        },
+        {
+          "label": "11",
+          "value": 3
+        }
+      ],
+      "xAxisLabel": "Shoe size",
+      "yAxisLabel": "Pairs sold",
+      "yMax": 10,
+      "yStep": 2
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7$"
+    },
+    {
+      "id": "B",
+      "text": "$8$"
+    },
+    {
+      "id": "C",
+      "text": "$9$"
+    },
+    {
+      "id": "D",
+      "text": "$11$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the height of the tallest bar ($8$ pairs) instead of the size on the horizontal axis; $8$ is also the median size, not the mode.",
+    "C": "picks the second-tallest bar ($7$ pairs).",
+    "D": "reports the largest shoe size rather than the most frequently sold size."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Mode of Shoe Sizes**\n\n**Choice A is correct.**\n\n**The Fast Way (~5s):** The mode is the size with the tallest bar. The bar for size $7$ reaches $8$ pairs, the highest, so the mode is $7$.\n\n**The Full Solution:**\nStep 1: Each bar's height is the number of pairs sold of that size; the mode is the size sold most often, the tallest bar.\nStep 2: Bar heights: size $6$: $2$; size $7$: $8$; size $8$: $5$; size $9$: $7$; size $10$: $4$; size $11$: $3$.\nStep 3: The tallest bar is size $7$ with $8$ pairs, so the mode is $7$. Check: no other bar reaches $8$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($8$): reports the height of the tallest bar ($8$ pairs) instead of the size on the horizontal axis; $8$ is also the median size, not the mode.\n* Choice C ($9$): picks the second-tallest bar ($7$ pairs).\n* Choice D ($11$): reports the largest shoe size rather than the most frequently sold size.\n\n**Test Day Takeaway:** On a bar graph of counts, the mode is the CATEGORY under the tallest bar. Read the label on the horizontal axis, not the height."
+}

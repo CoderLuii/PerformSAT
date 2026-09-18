@@ -1,0 +1,29 @@
+{
+  "id": 2,
+  "question": "Two equations in $x$ and $y$ are called equivalent when every ordered pair that satisfies one of them also satisfies the other. In the xy-plane, equivalent equations have identical graphs. Which of the following is equivalent to $\\frac{5}{2}x = \\frac{3}{4}y + 6$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5x - 3y = 6$"
+    },
+    {
+      "id": "B",
+      "text": "$10x - 3y = 6$"
+    },
+    {
+      "id": "C",
+      "text": "$10x - 3y = 24$"
+    },
+    {
+      "id": "D",
+      "text": "$10x + 3y = 24$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "clears each fraction with its own denominator, multiplying 5/2 x by 2 and 3/4 y by 4, and leaves the 6 unscaled",
+    "B": "multiplies both variable terms by 4 but leaves the constant as 6 instead of 24",
+    "D": "moves the 3y term to the left side without changing its sign"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Multiply every term by $4$ to clear both denominators: $10x = 3y + 24$. Subtracting $3y$ from both sides gives $10x - 3y = 24$.\n\n**The Full Solution:**\nStep 1: Two linear equations have exactly the same solutions when one is a nonzero constant multiple of the other. The denominators here are $2$ and $4$, so multiplying the whole equation by $4$ clears both at once.\nStep 2: Multiply each of the three terms by $4$: $4 \\cdot \\frac{5}{2}x = 10x$, $4 \\cdot \\frac{3}{4}y = 3y$, and $4 \\cdot 6 = 24$. The equation becomes $10x = 3y + 24$.\nStep 3: The choices carry both variables on the left, so subtract $3y$ from both sides: $10x - 3y = 24$. Check with a point: setting $y = 0$ in the given equation gives $\\frac{5}{2}x = 6$, so $x = \\frac{12}{5}$, and $10\\left(\\frac{12}{5}\\right) - 3(0) = 24$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5x - 3y = 6$): clears each fraction with its own denominator, multiplying $\\frac{5}{2}x$ by $2$ and $\\frac{3}{4}y$ by $4$ while leaving the $6$ alone. Three different factors on three terms produce a different line.\n* Choice B ($10x - 3y = 6$): scales both variable terms by $4$ but leaves the constant at $6$. Scaling must reach every term, including the one carrying no variable.\n* Choice D ($10x + 3y = 24$): scales correctly but moves $3y$ across the equals sign without changing its sign. The result has slope $-\\frac{10}{3}$ instead of $\\frac{10}{3}$, so it is a different line.\n\n**Test Day Takeaway:** Equivalence is one factor applied to the whole equation, constant included. Clear the fractions with a single common multiple, rearrange into the form the choices use, then confirm with one easy solution point."
+}

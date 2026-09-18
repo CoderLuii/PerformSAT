@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "A circular serving tray has a diameter of $18$ inches. What is the area, in square inches, of the tray?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$81\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$162\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$324\\pi$"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "Convert before you square, not after.",
+ "distractorNotes": {
+  "A": "computes the circumference",
+  "C": "doubles the correct area",
+  "D": "uses the diameter as the radius"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** The radius is $\\frac{18}{2} = 9$, so $A = \\pi(9)^2 = 81\\pi$ square inches.\n\n**The Full Solution:**\nStep 1: The area formula needs a radius: $r = \\frac{d}{2} = \\frac{18}{2} = 9$ inches.\nStep 2: Substitute into $A = \\pi r^2$: $A = \\pi(9)^2$.\nStep 3: $A = 81\\pi$ square inches. Check: a $9$-inch radius gives a circumference of $18\\pi$, a different quantity with different units.\n\n**Why the wrong answers are tempting:**\n* Choice A ($18\\pi$): computes $2\\pi r = 18\\pi$, the distance around the tray rather than the surface it covers.\n* Choice C ($162\\pi$): doubles the correct area, as if doubling a radius doubled the area it encloses.\n* Choice D ($324\\pi$): substitutes the diameter for the radius, computing $\\pi(18)^2$.\n\n**Test Day Takeaway:** When a circle question hands you a diameter, halve it in the first line of work — before any squaring happens."
+}

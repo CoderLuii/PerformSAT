@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "The system of equations $y = 3x - 4$ and $y = -x + 8$ is graphed in the $xy$-plane. How many solutions $(x, y)$ does this system have?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Zero"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two"
+    },
+    {
+      "id": "D",
+      "text": "Infinitely many"
+    }
+  ],
+  "distractorNotes": {
+    "A": "zero solutions requires parallel, distinct lines, but the slopes $3$ and $-1$ are not equal.",
+    "C": "two distinct lines meet at most once, so a system of two linear equations can never have exactly two solutions.",
+    "D": "infinitely many solutions requires the two equations to describe the same line, which would force equal slopes and equal $y$-intercepts."
+  },
+  "correctAnswer": "B",
+  "hint": "Compare the slopes of the two lines before counting anything.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** The slopes $3$ and $-1$ are different, so the lines cross exactly once and the system has one solution.\n\n**The Full Solution:**\nStep 1: Both equations are in slope-intercept form, with slopes $3$ and $-1$.\nStep 2: Two lines with different slopes are not parallel, so they intersect at exactly one point in the $xy$-plane.\nStep 3: That single intersection point is the one ordered pair satisfying both equations, so the system has exactly one solution. Check: $3x - 4 = -x + 8$ gives $4x = 12$, so $x = 3$ and $y = 5$, a single ordered pair. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: zero solutions requires parallel, distinct lines, but the slopes $3$ and $-1$ are not equal.\n* Choice C: two distinct lines meet at most once, so a system of two linear equations can never have exactly two solutions.\n* Choice D: infinitely many solutions requires the two equations to describe the same line, which would force equal slopes and equal $y$-intercepts.\n\n**Test Day Takeaway:** Count solutions from the slopes first: different slopes give one solution, equal slopes give either none or infinitely many."
+}

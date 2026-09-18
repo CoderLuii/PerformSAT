@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-387",
+  "question": "A public-health laboratory models the bacterial colony count in a wastewater sample by $q(h)=72(3)^{h/4}$, where $q(h)$ is the number of colonies on a plate $h$ hours after the sample was collected. Which statement best interprets this model?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The count triples every hour."
+    },
+    {
+      "id": "B",
+      "text": "The count increases by 3 colonies every 4 hours."
+    },
+    {
+      "id": "C",
+      "text": "The count triples every 4 hours."
+    },
+    {
+      "id": "D",
+      "text": "The count quadruples every 3 hours."
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "ignores the divisor 4 in the exponent",
+    "B": "reads the base 3 as a number of colonies added",
+    "D": "swaps the base and the divisor in the exponent"
+  },
+  "explanation": "**SAT Pattern: Interpret Exponential Parameters**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The exponent reaches 1 when $h=4$, so the factor 3 applies once every 4 hours.\n\n**The Full Solution:**\nStep 1: The base 3 multiplies the count each time the exponent $\\frac{h}{4}$ increases by 1.\nStep 2: The exponent increases by 1 when $h$ increases by 4 hours.\nStep 3: So the count is multiplied by 3 every 4 hours. Check: $q(0)=72$ and $q(4)=72(3)=216$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: drops the divisor, which would require the model $72(3)^{h}$.\n* Choice B: treats the base as an amount added rather than a multiplier.\n* Choice D: swaps 3 and 4, describing $72(4)^{h/3}$.\n\n**Test Day Takeaway:** A divided exponent stretches the doubling or tripling time — the divisor is the length of one period."
+}

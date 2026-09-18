@@ -1,0 +1,29 @@
+{
+  "id": 2,
+  "question": "A nightly batch job takes $s$ minutes to run. After the search index is rebuilt, the job's runtime is $62\\%$ less than $s$ minutes. Which expression represents the new runtime, in minutes?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.38s$"
+    },
+    {
+      "id": "B",
+      "text": "$0.62s$"
+    },
+    {
+      "id": "C",
+      "text": "$1.38s$"
+    },
+    {
+      "id": "D",
+      "text": "$1.62s$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "gives the time removed, 62% of s, rather than the time the job still takes",
+    "C": "adds the remaining 38% to the full original runtime instead of keeping only that 38%",
+    "D": "adds the 62% instead of subtracting it, modeling a 62% increase"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** A $62\\%$ decrease leaves $100\\% - 62\\% = 38\\%$ of the original, so the rebuilt job takes $0.38s$ minutes.\n\n**The Full Solution:**\nStep 1: The time the rebuild removes is $62\\%$ of $s$, which is $0.62s$ minutes.\nStep 2: The new runtime is what is left after that removal: $s - 0.62s$.\nStep 3: Factor out $s$: $s - 0.62s = (1 - 0.62)s = 0.38s$. Check with $s = 50$: the rebuild saves $0.62(50) = 31$ minutes and the job still needs $19$, and $0.38(50) = 19$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($0.62s$): this is the time the rebuild saved, not the time the job still takes.\n* Choice C ($1.38s$): keeps the correct $38\\%$ but attaches it to the original as growth, giving a job that runs longer after the rebuild.\n* Choice D ($1.62s$): adds the $62\\%$ instead of subtracting it, which models a $62\\%$ increase.\n\n**Test Day Takeaway:** A percent decrease of $p\\%$ means multiplying by $1 - \\frac{p}{100}$ in one move; the percent itself is never the multiplier."
+}

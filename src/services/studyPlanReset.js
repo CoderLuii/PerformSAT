@@ -11,10 +11,25 @@
  */
 
 /**
+ * True for a source id that names the DIAGNOSTIC rather than a catalog
+ * practice test: null/undefined (v1 onboarding plans carried no source) or the
+ * 'mini-diagnostic-*' id finishMiniDiagnostic stamps on the v2 starter plan
+ * (MINI_DIAGNOSTIC_TEST_ID — not imported: that module drags the whole
+ * plan-generation stack in). The diagnostic never lives in practiceTestResults,
+ * so its plan can never be orphaned by a practice-test reset.
+ *
+ * @param {string|null|undefined} sourceTestId
+ * @returns {boolean}
+ */
+export const isDiagnosticSourceTestId = (sourceTestId) =>
+  sourceTestId == null || String(sourceTestId).startsWith('mini-diagnostic');
+
+/**
  * Pick the newest study-plan artifact that still belongs to existing data.
  *
- * An artifact survives a reset when EITHER it has no source test — a
- * mini-diagnostic plan carries sourceTestId == null — OR its source test is
+ * An artifact survives a reset when EITHER it was generated from the
+ * diagnostic (isDiagnosticSourceTestId — the diagnostic is never a
+ * practiceTestResults entry, so it can't be reset away) OR its source test is
  * still present in practiceTestResults. `history` is newest-first (the order
  * getStudyPlanHistory returns), so the first match is the newest survivor.
  *
@@ -28,7 +43,7 @@ export const pickSurvivingArtifactId = (history = [], remainingTestResults = {})
     (a) =>
       a &&
       a.id &&
-      (a.sourceTestId == null ||
+      (isDiagnosticSourceTestId(a.sourceTestId) ||
         Object.prototype.hasOwnProperty.call(results, a.sourceTestId)),
   );
   return survivor ? survivor.id : null;
@@ -37,7 +52,9 @@ export const pickSurvivingArtifactId = (history = [], remainingTestResults = {})
 /**
  * True when a hydrated artifact is orphaned: it was generated from a test that
  * no longer exists in practiceTestResults (e.g. the test was reset). A
- * mini-diagnostic artifact (sourceTestId == null) is never an orphan.
+ * diagnostic artifact (sourceTestId null or 'mini-diagnostic-*') is never an
+ * orphan — resetting every practice test must leave the student on the plan
+ * their diagnostic built, not on the first-run "take your diagnostic" screen.
  *
  * Used as a last-resort guard in the latest-query hydration fallback so a
  * deleted test's undeletable artifact can't re-hydrate as the current plan.
@@ -48,6 +65,6 @@ export const pickSurvivingArtifactId = (history = [], remainingTestResults = {})
  */
 export const isOrphanArtifact = (artifact, practiceTestResults = {}) => {
   const sourceTestId = artifact?.linkage?.sourceTestId;
-  if (!sourceTestId) return false;
+  if (isDiagnosticSourceTestId(sourceTestId)) return false;
   return !Object.prototype.hasOwnProperty.call(practiceTestResults || {}, sourceTestId);
 };

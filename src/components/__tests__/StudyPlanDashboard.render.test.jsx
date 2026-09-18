@@ -19,6 +19,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
 import StudyPlanDashboard from '../StudyPlanDashboard';
+import { setFeatureFlagForTest } from '../../hooks/useFeatureFlag';
 
 const todayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()];
 
@@ -98,6 +99,13 @@ function renderWith(props) {
 }
 
 describe('StudyPlanDashboard redesign render', () => {
+  // These tests pin the LEGACY two-tab plan page, which remains reachable via
+  // the planV3 kill-switch (REACT_APP_FF_PLAN_V3=false / ff:planV3=0) after
+  // the flag graduated to default-ON (2026-08-14). The v3 timeline has its own
+  // render pins; here the flag is explicitly forced OFF.
+  beforeEach(() => setFeatureFlagForTest('planV3', false));
+  afterEach(() => setFeatureFlagForTest('planV3', undefined));
+
   it('renders the Today branch (module cards) without throwing', () => {
     const text = renderWith({ variant: 'default' });
     expect(text).toContain("Demo's Study Plan");
@@ -142,5 +150,61 @@ describe('StudyPlanDashboard redesign render', () => {
   it('renders the empty state when there is no plan', () => {
     const text = renderWith({ studyPlan: null });
     expect(text).toContain('No Study Plan Yet');
+  });
+});
+
+// ── Plan v3 Today panel: the starter plan's owed diagnostic (2026-09-17) ──
+// A freshly onboarded student's check-in sits on ONE weekday of week 1. The
+// Today panel used to filter strictly by weekday, so on any other day it read
+// "Nothing is scheduled for today" and the diagnostic was nowhere on the
+// page. Until it's taken, the check-in must lead today's list every day.
+describe('StudyPlanDashboard v3 Today panel — starter-plan diagnostic', () => {
+  const otherDay = todayName === 'Monday' ? 'Tuesday' : 'Monday';
+  const STARTER_PLAN = {
+    ...STUDY_PLAN,
+    planSource: 'onboarding-starter',
+    weeks: [
+      {
+        weekNumber: 1,
+        title: 'Week 1',
+        activities: [
+          { type: 'test', activityType: 'miniDiagnostic', day: otherDay, title: 'Take your diagnostic', subtitle: '40 adaptive questions measure your real starting point.', duration: 55, completed: false, tips: [] },
+          { type: 'practice', day: otherDay, title: 'Slope-intercept drill', completed: false, skillId: 'slope-intercept-form', section: 'math', duration: 25 },
+        ],
+      },
+    ],
+  };
+
+  beforeEach(() => setFeatureFlagForTest('planV3', true));
+  afterEach(() => setFeatureFlagForTest('planV3', undefined));
+
+  it('leads Today with the owed check-in even when it was scheduled on another day', () => {
+    const onStartDiagnostic = jest.fn();
+    const { container, teardown } = mount({
+      variant: 'inline', studyPlan: STARTER_PLAN, practiceTestResults: {}, onStartDiagnostic,
+    });
+    const panel = container.querySelector('.sp-today-panel');
+    expect(panel).toBeTruthy();
+    const text = panel.textContent || '';
+    expect(text).toContain('Take your diagnostic');
+    expect(text).not.toContain('Nothing is scheduled for today');
+    // The other-day drill stays on its own day — only the diagnostic moves.
+    expect(text).not.toContain('Slope-intercept drill');
+    const start = Array.from(panel.querySelectorAll('button'))
+      .find((b) => /Start diagnostic/.test(b.textContent));
+    expect(start).toBeTruthy();
+    act(() => { start.dispatchEvent(new MouseEvent('click', { bubbles: true })); });
+    expect(onStartDiagnostic).toHaveBeenCalledTimes(1);
+    teardown();
+  });
+
+  it('a measured plan keeps its check-in on its scheduled day (no pin)', () => {
+    const { container, teardown } = mount({
+      variant: 'inline', studyPlan: { ...STARTER_PLAN, planSource: 'test-t1' }, practiceTestResults: {},
+    });
+    const panel = container.querySelector('.sp-today-panel');
+    expect(panel).toBeTruthy();
+    expect(panel.textContent).toContain('Nothing is scheduled for today');
+    teardown();
   });
 });

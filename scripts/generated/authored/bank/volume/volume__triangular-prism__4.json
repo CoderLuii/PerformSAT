@@ -1,0 +1,41 @@
+{
+ "id": 4,
+ "question": "A right prism has a height of $10$ centimeters, and its base is an equilateral triangle with side length $6$ centimeters. The area of an equilateral triangle with side length $s$ is $\\frac{s^2\\sqrt{3}}{4}$. What is the volume, in cubic centimeters, of the prism?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "60°",
+    "60°",
+    "60°"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$30\\sqrt{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$90\\sqrt{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$180\\sqrt{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$360\\sqrt{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies by $\\frac{1}{3}$, as if the solid were a pyramid",
+  "C": "divides $s^2\\sqrt{3}$ by $2$ instead of by $4$",
+  "D": "omits the division by $4$ in the base-area formula"
+ },
+ "correctAnswer": "B",
+ "hint": "Evaluate the given base-area formula at $s = 6$ before anything else.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~45s):** $B = \\frac{36\\sqrt{3}}{4} = 9\\sqrt{3}$, so $V = 9\\sqrt{3}(10) = 90\\sqrt{3}$.\n\n**The Full Solution:**\nStep 1: Evaluate the base area at $s = 6$: $B = \\frac{6^2\\sqrt{3}}{4} = \\frac{36\\sqrt{3}}{4} = 9\\sqrt{3}$ square centimeters.\nStep 2: For a prism, $V = Bh$, and here $h = 10$ centimeters.\nStep 3: $V = 9\\sqrt{3}(10) = 90\\sqrt{3}$ cubic centimeters.\n\nVerification: $9\\sqrt{3} \\approx 15.6$, and $15.6(10) \\approx 156$, which matches $90\\sqrt{3} \\approx 155.9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($30\\sqrt{3}$): multiplies by $\\frac{1}{3}$, as if the solid were a pyramid.\n* Choice C ($180\\sqrt{3}$): divides $s^2\\sqrt{3}$ by $2$ instead of by $4$.\n* Choice D ($360\\sqrt{3}$): omits the division by $4$ in the base-area formula.\n\n**Test Day Takeaway:** The prism formula never changes: get the base area exactly, then multiply by the height once."
+}

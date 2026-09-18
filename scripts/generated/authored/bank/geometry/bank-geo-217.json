@@ -1,0 +1,45 @@
+{
+ "id": "bank-geo-217",
+ "question": "In triangle $ABC$, the exterior angle at vertex $C$ measures $(3y + 10)°$, and the two remote interior angles measure $(y + 25)°$ and $(y + 5)°$. What is the measure of the interior angle at vertex $C$?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "vertexLabels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "angleLabels": [
+    "(y + 25)°",
+    "(y + 5)°",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20°$"
+  },
+  {
+   "id": "B",
+   "text": "$45°$"
+  },
+  {
+   "id": "C",
+   "text": "$70°$"
+  },
+  {
+   "id": "D",
+   "text": "$110°$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports y instead of an angle measure",
+  "B": "reports the larger remote interior angle",
+  "C": "reports the exterior angle instead of the interior one"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Exterior Angle Theorem**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** $3y + 10 = (y + 25) + (y + 5)$ gives $y = 20$, so the exterior angle is $70°$ and the interior angle at $C$ is $180 - 70 = 110$ degrees.\n\n**The Full Solution:**\nStep 1: The exterior angle at $C$ equals the sum of the remote interior angles at $A$ and $B$: $3y + 10 = (y + 25) + (y + 5)$.\nStep 2: Simplify the right side to $2y + 30$ and solve: $3y + 10 = 2y + 30$, so $y = 20$.\nStep 3: The exterior angle is $3(20) + 10 = 70°$. The interior angle at $C$ is its supplement: $180 - 70 = 110$ degrees.\n\nVerification: the remote angles are $45°$ and $25°$, and $45 + 25 + 110 = 180$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($20°$): reports $y$, the parameter, instead of an angle measure.\n* Choice B ($45°$): reports the larger remote interior angle, $(y + 25)°$.\n* Choice C ($70°$): reports the exterior angle; the question asks for the interior angle at the same vertex, which is its supplement.\n\n**Test Day Takeaway:** Solving for the parameter is the middle of the problem, not the end. Track whether the question wants $y$, the exterior angle, or its supplement."
+}

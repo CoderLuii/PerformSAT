@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
   "module": 2,
-  "passage": "In 1961, the astronomer Frank Drake wrote on a chalkboard an equation organizing the factors that bear on how many communicating civilizations might exist in our galaxy. In the decades since, researchers ______ the search Drake helped launch, scanning thousands of nearby stars for artificial radio signals without yet detecting one.",
+  "passage": "The free reed entered European workshops as a curiosity, but it did not remain one. Since the first mouth-blown prototypes appeared in the 1820s, instrument makers ______ the mechanism to an astonishing range of forms, from parlor harmoniums to the concertinas that sailors carried to sea.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "pursue"
-    },
-    {
-      "id": "B",
-      "text": "had pursued"
-    },
-    {
-      "id": "C",
-      "text": "will pursue"
-    },
-    {
-      "id": "D",
-      "text": "have pursued"
-    }
+    { "id": "A", "text": "adapt" },
+    { "id": "B", "text": "adapted" },
+    { "id": "C", "text": "would adapt" },
+    { "id": "D", "text": "have adapted" }
   ],
   "correctAnswer": "D",
-  "explanation": "\"In the decades since\" describes action that began in the past and continues into the present, which calls for the present perfect \"have pursued\"—choice D. The simple present \"pursue\" (A) loses the span of time, the past perfect \"had pursued\" (B) needs a later past reference, and the future \"will pursue\" (C) contradicts work already done.",
-  "_meta": {
-    "anchor": "Frank Drake, the search for radio signals"
-  }
+  "explanation": "**Choice D is correct.** A \"Since\" phrase marking the start of a period that runs to the present takes the present perfect: makers \"have adapted\" the mechanism from the 1820s onward.\n\n**The Full Solution:**\n- \"Since the first mouth-blown prototypes appeared in the 1820s\" defines a span beginning in the past and continuing now.\n- Action distributed across such a span, still open at the present end, is expressed by the present perfect.\n\n**Why the other choices are wrong:**\n- A: The simple present states a general habit and cannot pair with a \"Since\" phrase anchored to a past starting point.\n- B: The simple past seals the action inside a finished period, contradicting the open span that \"Since\" establishes.\n- C: \"Would adapt\" casts the action as habitual within a closed past frame or as conditional — either reading breaks the from-then-until-now sense."
 }

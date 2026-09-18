@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "The total distance $D$, in kilometers, a cyclist has logged after $w$ weeks of a training block is modeled by $D = 185w + 640$. How many kilometers had the cyclist logged when the block began?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$185$"
+  },
+  {
+   "id": "B",
+   "text": "$455$"
+  },
+  {
+   "id": "C",
+   "text": "$640$"
+  },
+  {
+   "id": "D",
+   "text": "$825$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the weekly rate 185 instead of the starting total",
+  "B": "subtracts one week of riding from the starting total: 640 - 185 = 455",
+  "D": "evaluates the model at w = 1 instead of w = 0: 185 + 640 = 825"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Slope-Intercept Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** The block begins at $w = 0$, and $D = 185(0) + 640 = 640$.\n\n**The Full Solution:**\nStep 1: In $D = 185w + 640$, the variable $w$ counts weeks since the block began, so the beginning is $w = 0$.\nStep 2: Substituting gives $D = 185(0) + 640 = 640$ kilometers.\nStep 3: In slope-intercept form the constant term is the value of the output when the input is zero, so $640$ is the distance already logged.\nCheck: after $2$ weeks the model gives $185(2) + 640 = 1{,}010$, which is $640$ plus two weeks of riding. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($185$): this is the slope, the kilometers added each week, not the amount already logged.\n* Choice B ($455$): subtracts one week of riding from $640$, as if the block began at $w = -1$.\n* Choice D ($825$): evaluates the model at $w = 1$, one week into the block rather than at its start.\n\n**Test Day Takeaway:** \"At the start\" always means substitute zero — the constant term is the answer before you write anything down."
+}

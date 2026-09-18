@@ -1,31 +1,31 @@
 {
-  "id": 837,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "module": 2,
-  "passage": "When the printing press reached Europe in the mid-fifteenth century, scholars often described its effect as the simple, rapid spread of knowledge. The historian Elizabeth Eisenstein argued that this account misses what mattered most. Before print, she observed, every copy of a text was made by hand and differed slightly from every other; a reader could never be sure that the version in front of her matched the one a distant colleague held. Print did not merely multiply copies, Eisenstein contended; it made many readers, far apart, confident that they were examining exactly the same text, and that shared, stable reference point is what allowed scholars to compare findings, catch errors, and build steadily on one another's work.",
-  "question": "Which choice best states the main idea of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "According to Eisenstein, printing mattered less because it spread texts quickly than because it gave distant readers identical, stable copies they could rely on and build upon."
-    },
-    {
-      "id": "B",
-      "text": "Eisenstein argued that hand-copied manuscripts were generally more accurate than the printed books that replaced them."
-    },
-    {
-      "id": "C",
-      "text": "Eisenstein showed that the printing press reached Europe earlier than most historians had previously believed."
-    },
-    {
-      "id": "D",
-      "text": "Eisenstein maintained that the spread of printing ultimately had very little effect on the way scholars across Europe compared their findings and checked one another’s results over the following centuries."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. Eisenstein's claim, as the passage presents it, is that print's deepest effect was not speed of distribution but the standardization of texts, which let scattered readers trust they were working from the same version and so build on each other's work. B reverses her point about hand copies, which she describes as varying from one another; C invents a claim about the date of print's arrival; and D contradicts the passage, which says the stable reference point is exactly what enabled scholars to compare findings."
+ "id": 837,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "module": 2,
+ "passage": "When phonographic shorthand entered the nineteenth-century courtroom, admirers marveled at its speed: a trained reporter could keep pace with the swiftest witness. One historian of the courtroom argues that the marveling misses what mattered. Before shorthand, the official memory of a trial was a clerk's summary — testimony compressed, reworded, inevitably judged in the compression. Once a reporter could take down every word, the exact words became available in a way they had never been: counsel could demand them read back, appellate courts could weigh them, and a summary was no longer good enough. The lasting change, on this view, was not how fast the pen moved but what a court came to expect a record to be.",
+ "question": "Which choice best states the main idea of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "According to the text, courtroom shorthand's most important effect was not rapid writing itself but the new expectation that proceedings would be preserved word for word."
+  },
+  {
+   "id": "B",
+   "text": "According to the text, shorthand's chief contribution to the courtroom was allowing reporters to write as quickly as people speak."
+  },
+  {
+   "id": "C",
+   "text": "According to the text, the summaries clerks once made of testimony were often more faithful than the verbatim transcripts that replaced them."
+  },
+  {
+   "id": "D",
+   "text": "According to the text, courtroom shorthand declined once machines could record testimony more quickly than reporters could write it."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The text grants the familiar praise — shorthand was fast — and then argues its deeper consequence: once verbatim capture was possible, the word-for-word transcript became the standard to which courts held themselves.\n\n**The Full Solution:**\n- The opening reports how contemporaries celebrated shorthand: as a marvel of speed.\n- The historian's correction follows: speed alone misses what changed — before shorthand, a summary was the best a court could expect; afterward, exact words could be demanded, quoted, and appealed to.\n- The main idea is that expectation shift, which choice A states.\n\n**Why the other choices are wrong:**\n- B: The text subordinates the speed claim rather than resting on it — speed is what the historian says mattered less.\n- C: The text never asserts that summaries were more accurate than transcripts.\n- D: Nothing in the text concerns the decline of shorthand or its replacement by machines."
 }

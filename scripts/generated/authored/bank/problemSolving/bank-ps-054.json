@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-054",
+  "question": "A rectangular mural is $9$ feet wide and $16$ feet long. What is the area of the mural in square yards? ($1$ yard $= 3$ feet)",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$16$"
+    },
+    {
+      "id": "B",
+      "text": "$48$"
+    },
+    {
+      "id": "C",
+      "text": "$144$"
+    },
+    {
+      "id": "D",
+      "text": "$432$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides the square feet by $3$ instead of by $3^2 = 9$, converting only one dimension.",
+    "C": "reports the area in square feet without converting.",
+    "D": "multiplies by $3$ instead of dividing by $9$."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Area Unit Conversion**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Area $= 9 \\times 16 = 144$ square feet. One square yard is $3 \\times 3 = 9$ square feet, so $\\frac{144}{9} = 16$ square yards.\n\n**The Full Solution:**\nStep 1: Area in square feet: $9 \\times 16 = 144$.\nStep 2: Since $1$ yard $= 3$ feet, $1$ square yard $= 3^2 = 9$ square feet. Divide: $\\frac{144}{9} = 16$ square yards.\nStep 3: Check by converting the sides first: $9$ feet $= 3$ yards and $16$ feet $= \\frac{16}{3}$ yards, and $3 \\times \\frac{16}{3} = 16$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($48$): divides the square feet by $3$ instead of by $3^2 = 9$, converting only one dimension.\n* Choice C ($144$): reports the area in square feet without converting.\n* Choice D ($432$): multiplies by $3$ instead of dividing by $9$.\n\n**Test Day Takeaway:** Square units convert with the SQUARE of the length factor: $1 \\text{ yd}^2 = 9 \\text{ ft}^2$. Converting the side lengths first avoids the trap."
+}

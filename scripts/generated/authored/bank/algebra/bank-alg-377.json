@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-377",
+  "question": "A circular plaza's diameter has its endpoints at the two plotted points on the site grid, where each grid unit is one meter of ground distance. How many meters is the plaza's radius?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -2,
+          3
+        ],
+        [
+          10,
+          -2
+        ]
+      ],
+      "xMin": -5,
+      "xMax": 12,
+      "yMin": -6,
+      "yMax": 11
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6.5$"
+    },
+    {
+      "id": "B",
+      "text": "$8.5$"
+    },
+    {
+      "id": "C",
+      "text": "$13$"
+    },
+    {
+      "id": "D",
+      "text": "$26$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "halves the sum of the two separations instead of the distance",
+    "C": "reports the diameter instead of the radius",
+    "D": "doubles the diameter instead of halving it"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The endpoints are $12$ and $5$ apart, so the diameter is $\\sqrt{12^2 + 5^2} = 13$ and the radius is $6.5$.\n\n**The Full Solution:**\nStep 1: Read the endpoints: $(-2, 3)$ and $(10, -2)$; the horizontal separation is $10 - (-2) = 12$ and the vertical separation is $3 - (-2) = 5$.\nStep 2: The diameter is $\\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13$ meters.\nStep 3: The radius is half the diameter: $\\frac{13}{2} = 6.5$ meters. Check: $12$-$5$-$13$ is a right triangle, since $144 + 25 = 169$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($8.5$): halves the sum $12 + 5$ instead of halving the actual distance.\n* Choice C ($13$): reports the diameter and never halves it.\n* Choice D ($26$): doubles the diameter instead of halving it.\n\n**Test Day Takeaway:** Compute the diameter with the distance formula first; halving is the last step, not something to fold into the separations."
+}

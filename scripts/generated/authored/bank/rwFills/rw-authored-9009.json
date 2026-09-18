@@ -1,0 +1,25 @@
+{
+  "id": 9009,
+  "passage": "Many flowering plants block self-pollination with an arrangement of parts rather than with chemistry. The common primrose, for instance, produces two kinds of flower on separate plants. In a pin flower the stigma stands at the mouth of the floral tube and the anthers sit low inside it; in a thrum flower the two positions are reversed. A bee probing a pin flower is therefore dusted with pollen low on its body, at exactly the height where a thrum flower's stigma waits, and a bee leaving a thrum flower carries pollen at the height of a pin flower's stigma. In a meadow where both forms grow, then, botanists would expect that pollen arriving on a pin flower's stigma ______",
+  "question": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "has usually been carried there from another pin flower growing nearby."
+    },
+    {
+      "id": "B",
+      "text": "has usually been carried there from a thrum flower rather than from another pin flower."
+    },
+    {
+      "id": "C",
+      "text": "cannot fertilize that flower unless a bee visits the two forms in a fixed order."
+    },
+    {
+      "id": "D",
+      "text": "is more plentiful than the pollen that arrives on the stigma of a thrum flower."
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** The text establishes that a bee picks up pollen at one height in a pin flower and at the other height in a thrum flower, and that a pin flower's stigma sits at the height where thrum pollen is carried. Pollen reaching a pin stigma is therefore most likely to have come from a thrum flower.\n\n**The Full Solution:**\n- Underline the rule before reading the blank: pollen is picked up low in a pin flower and high in a thrum flower, and a pin flower's stigma stands high, at the mouth of the tube.\n- Match the heights. Only pollen carried high on the bee, which is thrum pollen, meets a pin stigma, so the completion has to name the thrum flower as the usual source.\n- Keep the claim no stronger than the text licenses. The arrangement makes cross-form transfer far more likely; it does not make same-form transfer impossible or set any required order of visits.\n\n**Why the other choices are wrong:**\n- A: This reverses the geometry. Pollen from another pin flower rides low on the bee, which is the height that meets a thrum stigma, not a pin one.\n- C: This is stronger than the rule allows. The text describes where pollen is deposited, not a condition that must be met before fertilization can occur at all.\n- D: The text says nothing about how much pollen reaches either form, only about which form the pollen is likely to come from."
+}

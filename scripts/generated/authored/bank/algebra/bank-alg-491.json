@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-491",
+ "question": "A county lead-screening program uses $n = 480 - 24w$ for the count of children still untested $w$ weeks after the launch. The coefficient $24$ in this model describes which quantity?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The number of children still untested at the launch."
+  },
+  {
+   "id": "B",
+   "text": "The number of children tested each week."
+  },
+  {
+   "id": "C",
+   "text": "The number of weeks needed to test every child."
+  },
+  {
+   "id": "D",
+   "text": "The number of children added to the untested list each week."
+  }
+ ],
+ "distractorNotes": {
+  "A": "reads the rate as the starting value, which is the constant 480 rather than 24",
+  "C": "reads the rate as a duration; the program needs 480 / 24 = 20 weeks",
+  "D": "reverses the sign, treating the weekly decrease as an increase"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Each additional week multiplies $24$ by one more and subtracts it, so the untested count drops by $24$ per week — that is, $24$ children are tested weekly.\n\n**The Full Solution:**\nStep 1: Read the model's parts. In $n = 480 - 24w$, the constant $480$ is the value when $w = 0$, and $-24$ is the change in $n$ for each one-unit increase in $w$.\nStep 2: Interpret the sign. The coefficient is negative, so $n$ decreases as $w$ grows: each week removes $24$ children from the untested list.\nStep 3: Translate back to the context. Children leave the untested list by being tested, so $24$ is the number tested each week. Check: $n = 480$ at launch and $n = 480 - 24(1) = 456$ after one week, a drop of exactly $24$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: names the starting value, which is the constant $480$, not the coefficient.\n* Choice C: reads the rate as a length of time; the program actually needs $480 \\div 24 = 20$ weeks.\n* Choice D: keeps the size but reverses the direction, turning a weekly decrease into a weekly increase.\n\n**Test Day Takeaway:** In $y = b + mx$, the constant $b$ is the starting amount and $m$ is the per-unit change — and the sign of $m$ tells you whether the quantity is growing or shrinking."
+}

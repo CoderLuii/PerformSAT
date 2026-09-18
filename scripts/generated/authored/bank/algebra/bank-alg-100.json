@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-100",
+ "question": "A tour desk prints $4b + 7b$ meal vouchers over a weekend, where $b$ is the number of coach groups scheduled. If $88$ vouchers are printed, what is the value of $b$?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~10s):** $4b + 7b = 11b$, so $11b = 88$ and $b = 8$.\n\n**The Full Solution:**\n\nStep 1: Combine the like terms: $4b + 7b = 11b$.\n\nStep 2: Set the combined expression equal to the total number of vouchers: $11b = 88$.\n\nStep 3: Divide both sides by $11$: $b = 8$. Check: $4(8) + 7(8) = 32 + 56 = 88$.\n\n**Common Mistakes:**\n\n* $22$ — dividing $88$ by $4$ and ignoring the $7b$ term entirely.\n* $56$ — solving correctly but reporting $7b = 56$ instead of $b$.\n* $11$ — reporting the combined coefficient $4 + 7$ instead of solving for $b$.\n\n**Test Day Takeaway:** Combine like terms before doing anything else; two terms in the same variable are always one term in disguise."
+}

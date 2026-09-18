@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-313",
+  "question": "The concentration of a chemical in a tank, in milligrams per liter, $x$ hours after treatment is modeled by $C(x) = x^2 - 18x + 90$ for $0 \\le x \\le 9$. For which values of $x$ is the concentration less than $25$ milligrams per liter?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0 \\le x < 5$"
+    },
+    {
+      "id": "B",
+      "text": "$x < 5$ or $x > 13$"
+    },
+    {
+      "id": "C",
+      "text": "$5 < x < 13$"
+    },
+    {
+      "id": "D",
+      "text": "$5 < x \\le 9$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the hours before the first crossing",
+    "B": "solves the reversed inequality",
+    "C": "ignores the stated domain"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice D is correct.**\n\n**The Fast Way (~50s):** $x^2 - 18x + 90 < 25$ gives $(x - 5)(x - 13) < 0$, so $5 < x < 13$; the model only runs to $x = 9$, leaving $5 < x \\le 9$.\n\n**The Full Solution:**\nStep 1: The condition is $x^2 - 18x + 90 < 25$, or $x^2 - 18x + 65 < 0$.\nStep 2: $x^2 - 18x + 65 = (x - 5)(x - 13)$, which is negative exactly when $5 < x < 13$.\nStep 3: The model is defined only for $0 \\le x \\le 9$, so intersect: $5 < x \\le 9$. Check: $C(5) = 25 - 90 + 90 = 25$, which is not less than $25$, and $C(9) = 81 - 162 + 90 = 9$, which is. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0 \\le x < 5$): takes the hours before the first crossing, where the concentration is still above $25$.\n* Choice B ($x < 5$ or $x > 13$): solves $C(x) > 25$ instead of $C(x) < 25$.\n* Choice C ($5 < x < 13$): solves the inequality correctly but ignores the stated domain $0 \\le x \\le 9$.\n\n**Test Day Takeaway:** A model's domain is part of the answer — trim the solution set to the values the model actually covers."
+}

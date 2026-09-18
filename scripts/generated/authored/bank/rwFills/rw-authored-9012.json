@@ -1,0 +1,25 @@
+{
+  "id": 9012,
+  "passage": "Sand dunes migrate downwind. Grains are lifted up the gentle windward face, tumble over the crest, and settle on the steeper face beyond, so a dune leaves behind sets of layers that slant downward in the direction the wind was blowing. Buried and cemented into sandstone, those slanting layers survive as a record of an ancient wind. In one formation exposed along a canyon wall, every set of layers dips toward the southeast. If a single dune field under a steady wind built that formation, geologists tracing the same rock unit fifty kilometers away should expect the slanting layers there to ______",
+  "question": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "dip toward the southeast, as they do along the canyon wall."
+    },
+    {
+      "id": "B",
+      "text": "dip in the direction opposite the one seen along the canyon wall."
+    },
+    {
+      "id": "C",
+      "text": "lie flat, since dunes that far away would have been stationary."
+    },
+    {
+      "id": "D",
+      "text": "dip toward the southeast only if that area lay closer to the sea."
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Choice A is correct.** The slanting layers record the direction the wind was blowing, and the text stipulates one dune field under a steady wind, so the same unit traced elsewhere should show the same southeast dip.\n\n**The Full Solution:**\n- Fix what the layers mean: they slant downward in the direction of the wind, so their direction is a wind direction, not a distance or an age.\n- Read the condition attached to the case. \"A single dune field under a steady wind\" is what licenses carrying the southeast reading from one outcrop to another.\n- Predict the observation, not a new cause. The completion should say what the layers will look like fifty kilometers away, which is the same dip.\n\n**Why the other choices are wrong:**\n- B: A reversed dip would mean a reversed wind, and the text specifies one steady wind across the dune field.\n- C: Flat layers would mean no dune advance at all, which contradicts the description of how these layers form.\n- D: This invents a condition. Nothing in the text ties the dip direction to the position of a shoreline."
+}

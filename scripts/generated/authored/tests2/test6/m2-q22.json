@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "The cross-section of a parabolic trough is given by $f(x) = a(x - h)^2 + k$, with $a$, $h$, and $k$ constants. The trough meets its rim, where $f$ equals $0$, at $x = 2$ and at $x = 8$, and its lowest point lies $18$ centimeters below that rim. Which equation could define $f$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$f(x) = 2(x - 5)^2 - 18$"
+  },
+  {
+   "id": "B",
+   "text": "$f(x) = (x - 5)^2 - 18$"
+  },
+  {
+   "id": "C",
+   "text": "$f(x) = 2(x - 5)^2 + 18$"
+  },
+  {
+   "id": "D",
+   "text": "$f(x) = 2(x + 5)^2 - 18$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "takes a = 1 without using a rim point: (2 - 5)^2 - 18 = -9, not 0",
+  "C": "places the lowest point 18 above the rim, so the graph never reaches f = 0",
+  "D": "reads the sign in (x - h) backwards, putting the vertex at x = -5"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**Choice A is correct.**\n\n**The Fast Way (~50s):** The vertex sits halfway between the rim points, so $h = \\frac{2 + 8}{2} = 5$ and $k = -18$. Then $f(2) = 0$ forces $9a = 18$, so $a = 2$.\n\n**The Full Solution:**\nStep 1: A parabola is symmetric about its vertex, and the two rim points are equally far from it, so $h = \\frac{2 + 8}{2} = 5$.\nStep 2: The lowest point is the vertex, $18$ centimeters below the rim where $f = 0$, so $k = -18$ and $f(x) = a(x - 5)^2 - 18$.\nStep 3: Use a rim point to pin down $a$: $f(2) = a(2 - 5)^2 - 18 = 9a - 18 = 0$, so $a = 2$. Check the other rim point: $f(8) = 2(3)^2 - 18 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($a = 1$): keeps the correct vertex but never uses a rim point; it gives $f(2) = -9$, so the trough would not reach its rim at $x = 2$.\n* Choice C ($+18$): reads \"$18$ below the rim\" as a positive $k$; that parabola has a minimum of $18$ and never equals $0$.\n* Choice D ($x + 5$): flips the sign inside the square, placing the vertex at $x = -5$, nowhere near the rim points.\n\n**Test Day Takeaway:** Two symmetric zeros hand you $h$, the depth hands you $k$, and one point solves for $a$ — build vertex form in that order instead of expanding."
+}

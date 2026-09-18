@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-401",
+ "question": "A dialysis unit uses $5(2h + 9) - 3h$ liters of dialysate during $h$ hours of operation, and over one full day it uses $108$ liters. Which equation is equivalent to $5(2h + 9) - 3h = 108$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7h + 9 = 108$"
+  },
+  {
+   "id": "B",
+   "text": "$7h + 45 = 108$"
+  },
+  {
+   "id": "C",
+   "text": "$10h + 45 = 108$"
+  },
+  {
+   "id": "D",
+   "text": "$13h + 45 = 108$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "distributes the 5 to 2h only, leaving the 9 unmultiplied",
+  "C": "distributes correctly but never subtracts the 3h",
+  "D": "adds 3h to 10h instead of subtracting it"
+ },
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $5(2h + 9) = 10h + 45$, and $10h - 3h = 7h$, so the equation is $7h + 45 = 108$.\n\n**The Full Solution:**\n\nStep 1: Distribute the $5$ across both terms inside the parentheses: $5(2h + 9) = 10h + 45$.\n\nStep 2: Subtract the $3h$ that sits outside: $10h + 45 - 3h$.\n\nStep 3: Combine like terms: $7h + 45$, so the equivalent equation is $7h + 45 = 108$. Check at $h = 9$: $5(18 + 9) - 27 = 108$ and $7(9) + 45 = 108$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($7h + 9 = 108$): combines the $h$-terms correctly but never multiplies the $9$ by $5$.\n* Choice C ($10h + 45 = 108$): distributes correctly but drops the $-3h$ entirely.\n* Choice D ($13h + 45 = 108$): adds $3h$ to $10h$ instead of subtracting it.\n\n**Test Day Takeaway:** An equivalent form has to survive both operations: distribute across every term inside, then combine with what is outside."
+}

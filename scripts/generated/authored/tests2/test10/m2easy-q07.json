@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "An acoustics technician needs one pair of values $(x, y)$ to satisfy both $y = 4x - 9$ and $3x + 2y = 48$. Which equation in $x$ alone has that same $x$-value as its solution?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x + 2(4x - 9) = 48$"
+  },
+  {
+   "id": "B",
+   "text": "$3x + 8x - 9 = 48$"
+  },
+  {
+   "id": "C",
+   "text": "$3(4x - 9) + 2x = 48$"
+  },
+  {
+   "id": "D",
+   "text": "$3x + 2(4x + 9) = 48$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "multiplies only the 4x term by 2 and leaves the -9 undoubled",
+  "C": "replaces x instead of y in the second equation",
+  "D": "changes the sign of the constant, using 4x + 9 in place of 4x - 9"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice A is correct.** The first equation already gives $y$, so replacing $y$ with $4x - 9$ in $3x + 2y = 48$ yields $3x + 2(4x - 9) = 48$.\n\n**The Fast Way (~15s):** $y$ is alone in the first equation, so put $4x - 9$ everywhere $y$ appears in the second — parentheses included, since the whole expression is doubled.\n\n**The Full Solution:**\nStep 1: The first equation states that $y$ and $4x - 9$ name the same number, so either one may take the other's place.\nStep 2: In $3x + 2y = 48$, the $y$ is multiplied by $2$. Wrapping the replacement in parentheses keeps that factor on the entire expression: $3x + 2(4x - 9) = 48$.\nStep 3: That equation solves to $3x + 8x - 18 = 48$, so $11x = 66$ and $x = 6$. Check the pair: $y = 4(6) - 9 = 15$, and $3(6) + 2(15) = 18 + 30 = 48$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($3x + 8x - 9 = 48$): doubles the $4x$ but forgets to double the $-9$. It solves to $x = \\frac{57}{11}$, which does not satisfy the original pair.\n* Choice C ($3(4x - 9) + 2x = 48$): puts the replacement where $x$ sits instead of where $y$ sits. The expression $4x - 9$ equals $y$, not $x$.\n* Choice D ($3x + 2(4x + 9) = 48$): flips the sign of the constant. It solves to $x = \\frac{30}{11}$, and $4x + 9$ is not the given expression for $y$.\n\n**Test Day Takeaway:** When one equation is already solved for a variable, substitute the entire expression in parentheses so every factor outside them reaches all of it."
+}

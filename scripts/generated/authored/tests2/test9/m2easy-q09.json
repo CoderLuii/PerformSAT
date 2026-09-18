@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A costume shop logged $8$, $15$, $11$, $19$, and $10$ quick changes during the first five performances of a musical. After the sixth performance the mean for all six was $13$. How many quick changes did the sixth performance require?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$63$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies the mean by 5 instead of 6: 13 x 5 = 65, then 65 - 63 = 2",
+  "B": "assumes the sixth performance matched the mean of 13",
+  "D": "reports the sum of the five logged counts, 63"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Mean from List**\n\n**Choice C is correct.** Six values with mean $13$ must total $78$, and the five logged counts already total $63$.\n\n**The Fast Way (~20s):** $6 \\times 13 = 78$ and $8 + 15 + 11 + 19 + 10 = 63$, so the sixth count is $78 - 63 = 15$.\n\n**The Full Solution:**\nStep 1: Add the five logged counts: $8 + 15 + 11 + 19 + 10 = 63$.\nStep 2: A mean of $13$ across six performances means the six counts sum to $6 \\times 13 = 78$.\nStep 3: The sixth count is $78 - 63 = 15$. Check: $\\dfrac{63 + 15}{6} = \\dfrac{78}{6} = 13$, the stated mean ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): multiplies the mean by $5$ rather than $6$, getting a required total of $65$ and then $65 - 63 = 2$. The mean covers all six performances, so the multiplier is $6$.\n* Choice B ($13$): assumes the missing performance simply matched the mean. That is true only when the other five already average $13$, and here they average $12.6$.\n* Choice D ($63$): reports the sum of the five logged counts instead of the missing sixth count.\n\n**Test Day Takeaway:** Turn every mean into a total before you do anything else: mean times count gives the sum, and the missing value is whatever the known values leave behind."
+}

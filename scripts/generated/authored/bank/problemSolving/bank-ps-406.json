@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-406",
+  "question": "During drying, the mass of a soil sample decreased from $64$ grams to $48$ grams. What was the percent decrease in the mass of the sample?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$16\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$33.3\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$75\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the raw decrease of $16$ grams as if it were a percent",
+    "C": "divides the decrease by the new mass, $\\frac{16}{48}$, instead of by the original mass",
+    "D": "reports the new mass as a percent of the original, $\\frac{48}{64}$"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The decrease is $64 - 48 = 16$ grams, and $\\frac{16}{64} = 0.25$, or $25\\%$.\n\n**The Full Solution:**\nStep 1: Percent decrease is $\\frac{\\text{decrease}}{\\text{original}} \\times 100\\%$.\nStep 2: The decrease is $64 - 48 = 16$ grams and the original mass is $64$ grams.\nStep 3: $\\frac{16}{64} = 0.25 = 25\\%$. Check: $25\\%$ of $64$ is $16$, and $64 - 16 = 48$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($16\\%$): reports the raw decrease of $16$ grams as if it were a percent\n* Choice C ($33.3\\%$): divides the decrease by the new mass, $\\frac{16}{48}$, instead of by the original mass\n* Choice D ($75\\%$): reports the new mass as a percent of the original, $\\frac{48}{64}$\n\n**Test Day Takeaway:** The denominator of a percent change is always the value you started from."
+}

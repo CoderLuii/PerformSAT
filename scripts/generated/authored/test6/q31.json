@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
-  "passage": "Octopuses present neuroscientists with a puzzle. Roughly two-thirds of an octopus's neurons lie not in its central brain but in its arms, each of which can taste, grip, and respond to obstacles largely on its own. Some researchers therefore describe the animal's intelligence as ______ rather than centralized: cognition distributed across a body whose parts can act with a striking degree of local independence.",
+  "passage": "A test derived from the blue blood of horseshoe crabs has for decades been the standard means of detecting bacterial contamination in vaccines and other injectable drugs, and demand for the blood has put pressure on crab populations. A synthetic substitute, made without harvesting any animals, has matched the natural test in published evaluations since the early 2000s. Even so, many drug manufacturers have remained ______ about switching: until recently, adopting the substitute meant compiling extra validation paperwork for regulators, a burden few firms chose to take on.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "inherited"
+      "text": "candid"
     },
     {
       "id": "B",
-      "text": "effortless"
+      "text": "sanguine"
     },
     {
       "id": "C",
-      "text": "deliberate"
+      "text": "combative"
     },
     {
       "id": "D",
-      "text": "decentralized"
+      "text": "hesitant"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"decentralized.\" The sentence contrasts the word in the blank with \"centralized\" and explains that an octopus's cognition is spread across arms that can act on their own; \"decentralized\" names exactly that distribution of control away from a single center. \"Inherited\" concerns where a trait comes from, not how it is organized. \"Effortless\" describes ease rather than structure, and \"deliberate\" speaks to intention, neither of which captures the spread-out arrangement the passage describes."
+  "explanation": "**Choice D is correct.** \"Even so\" concedes the substitute's proven record and pivots to the manufacturers' contrary stance, which the colon then explains as reluctance in the face of regulatory burden — they remained \"hesitant.\"\n\n**The Full Solution:**\n- The second sentence establishes that the substitute works and has for years.\n- \"Even so\" signals that the manufacturers' attitude runs against that evidence, and the explanation — extra paperwork \"few firms chose to take on\" — describes holding back.\n- A word meaning reluctant to act, \"hesitant,\" completes both the contrast and the explanation.\n\n**Why the other choices are wrong:**\n- A: \"Candid\" concerns honesty of speech, not willingness to switch.\n- B: \"Sanguine\" means optimistic — it would erase the contrast \"Even so\" announces rather than deliver it.\n- C: \"Combative\" overshoots into active hostility; the colon describes quiet avoidance of a burden, not a fight."
 }

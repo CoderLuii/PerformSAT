@@ -1,0 +1,6 @@
+{
+ "question": "A pond survey counts $x$ adult frogs and $y$ tadpoles, and the two counts satisfy $x + 3y = 26$ and $x - y = 6$. What is the value of $y$?",
+ "correctAnswer": "5",
+ "explanation": "**SAT Pattern: Solving a System by Elimination**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~20s):** Subtracting the second count from the first eliminates $x$: $4y = 20$, so $y = 5$.\n\n**The Full Solution:**\n\nStep 1: Both equations have a coefficient of $1$ on $x$, so subtracting removes it.\n\nStep 2: $(x + 3y) - (x - y) = 26 - 6$ gives $4y = 20$.\n\nStep 3: So $y = 5$. Check: with $y = 5$, the second equation gives $x = 11$, and $11 + 3(5) = 26$.\n\n**Common Mistakes:** Adding instead and reporting $y = 16$ from $2x + 2y = 32$; mishandling $3y - (-y)$ as $2y$ and reporting $y = 10$; solving for $x$ and reporting $11$.\n\n**Test Day Takeaway:** When one variable already has matching coefficients, subtract the equations and the variable disappears in one step.",
+ "id": "bank-alg-055"
+}

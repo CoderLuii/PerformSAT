@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-093",
+  "question": "A random sample of $350$ guests at a hotel was surveyed. Based on the sample, it is estimated that $64\\%$ of all guests at the hotel would recommend it, with an associated margin of error of $5\\%$. Which of the following is the most appropriate conclusion based on this estimate and margin of error?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It is plausible that between $59\\%$ and $69\\%$ of all guests at the hotel would recommend it."
+    },
+    {
+      "id": "B",
+      "text": "Exactly $64\\%$ of all guests at the hotel would recommend it."
+    },
+    {
+      "id": "C",
+      "text": "It is plausible that fewer than $59\\%$ of all guests at the hotel would recommend it."
+    },
+    {
+      "id": "D",
+      "text": "Every random sample of $350$ guests at the hotel would give an estimate of $64\\%$."
+    }
+  ],
+  "distractorNotes": {
+    "B": "treats the sample estimate as an exact population value",
+    "C": "calls a value outside the interval plausible",
+    "D": "treats one sample's estimate as reproducible in every sample"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The plausible interval is $64\\% \\pm 5\\%$, or $59\\%$ to $69\\%$.\n\n**The Full Solution:**\nStep 1: A sample estimate with a margin of error describes an interval of plausible values for the population, not a single value.\nStep 2: Subtracting and adding the margin of error gives $64\\% - 5\\% = 59\\%$ and $64\\% + 5\\% = 69\\%$.\nStep 3: The appropriate conclusion is that the percent for all guests plausibly lies between $59\\%$ and $69\\%$.\nCheck: the estimate $64\\%$ sits at the center of that interval. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: The margin of error exists precisely because the sample estimate is not exact for the whole population.\n* Choice C: Values below $59\\%$ fall outside the interval, so they are the values the data make implausible.\n* Choice D: A different random sample would give a somewhat different estimate; that variability is what the margin of error measures.\n\n**Test Day Takeaway:** Read a margin of error as a range of plausible population values, never as a promise about one number."
+}

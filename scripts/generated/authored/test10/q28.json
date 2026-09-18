@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 2,
- "passage": "In a Carboniferous peat swamp some 300 million years ago, mineral-rich water seeping through the buried plant matter encased it in carbonate before it could fully decay. Cut and polished today, these \"coal balls\" ______ the internal cellular structure of ancient ferns and seed plants in three dimensions, giving paleobotanists a view of anatomy that flattened impressions in shale cannot provide.",
+ "passage": "In villages of the high Alps, the summer's milk had to be turned into cheeses large enough to age through the winter, yet no single family's herd gave enough milk in a day to fill the vat. Villages therefore ______ their milk: each evening's deliveries were weighed and recorded, and families were repaid over the season in wheels of cheese proportional to what they had brought.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "conceal"
+   "text": "concealed"
   },
   {
    "id": "B",
-   "text": "exaggerate"
+   "text": "flavored"
   },
   {
    "id": "C",
-   "text": "preserve"
+   "text": "pooled"
   },
   {
    "id": "D",
-   "text": "imitate"
+   "text": "rationed"
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The passage explains that carbonate encased the plant tissues before they could decay, so that the polished coal balls retain ancient cellular structure in three dimensions. \"Preserve\" names that retention of intact structure. \"Conceal\" runs opposite, since the coal balls reveal the anatomy rather than hide it; \"exaggerate\" wrongly implies distortion; and \"imitate\" suggests a copy rather than the genuine, original tissue the passage describes."
+ "explanation": "**Choice C is correct.** The problem is that no one herd could fill the vat, and the solution the colon goes on to describe, everyone's deliveries combined, with repayment in proportion, is pooling.\n\n**The Full Solution:**\n- \"Yet\" sets up the gap between what cheesemaking required (a full vat) and what one family could supply, and \"therefore\" signals that the blank names the village's remedy.\n- The clause after the colon spells the remedy out: deliveries from many families were weighed, recorded, and combined, with shares paid back later, which is precisely what \"pooled\" means.\n\n**Why the other choices are wrong:**\n- A: \"Concealed\" contradicts the careful public weighing and recording the text describes.\n- B: \"Flavored\" is about taste and cannot answer the problem of insufficient quantity.\n- D: \"Rationed\" means limiting how much each party receives, but the villagers were combining supplies, not restricting consumption."
 }

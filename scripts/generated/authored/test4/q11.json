@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
-  "question": "According to the text, what is one effect of earthworms' burrowing on the soil?",
+  "module": 1,
+  "passage": "Working in Heidelberg in the late 1850s, the chemist Robert Bunsen and the physicist Gustav Kirchhoff directed the light of colored flames through a prism instrument of their own design. They found that each chemical element, heated until it glows, emits light at its own fixed set of wavelengths, which their spectroscope displayed as a pattern of bright lines. The pattern proved to be a signature: it did not change with the compound in which an element arrived or the mineral from which it came. Within a year of publishing the method, the two had used unfamiliar line patterns to announce two previously unknown elements, cesium and rubidium.",
+  "question": "According to the text, why could a glowing element be identified with the spectroscope?",
   "choices": [
     {
       "id": "A",
-      "text": "It permanently keeps water and air from reaching the roots of most nearby plants."
+      "text": "Each element produces a flame whose distinctive overall color can be recognized without any special instrument."
     },
     {
       "id": "B",
-      "text": "It opens channels through the soil that allow water and air to reach plant roots."
+      "text": "Each element emits its own fixed pattern of bright lines whatever compound or mineral it arrives in."
     },
     {
       "id": "C",
-      "text": "It restores the thick litter layer that native wildflowers in northern forests depend on."
+      "text": "The brightness of a flame's light increases in proportion to the amount of the element present."
     },
     {
       "id": "D",
-      "text": "It locks carbon in the ground for far longer than it would otherwise have remained."
+      "text": "Only two elements, cesium and rubidium, produce bright lines when heated in a flame."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage states that as earthworms burrow they open channels that let water and air reach plant roots. Choice A reverses that effect; choice C describes the litter layer that earthworms strip away rather than restore; and choice D contradicts the passage, which says their activity speeds the release of carbon rather than locking it in the ground.",
-  "passage": "Earthworms are often credited with enriching soil, but their effects are more mixed than that reputation suggests. As they burrow, earthworms mix decaying leaf litter deep into the soil and open channels that let water and air reach plant roots. In doing so, however, they also speed the breakdown of organic matter, releasing carbon that might otherwise have stayed locked in the ground for decades. In some northern forests, where earthworms are not native, their recent spread has stripped away the thick layer of slowly decaying litter on which many native wildflowers and tree seedlings depend.",
+  "explanation": "**Choice B is correct.** The text states that each element's line pattern is fixed and \"did not change with the compound in which an element arrived or the mineral from which it came\" — a signature, and therefore an identifier.\n\n**The Full Solution:**\n- The instrument displays a glowing element's light as a pattern of bright lines.\n- The pattern belongs to the element itself: it is unaffected by compound or mineral of origin.\n- A property unique to each element and stable across sources is exactly what permits identification.\n\n**Why the other choices are wrong:**\n- A: The spectroscope was needed precisely because it resolves flame light into lines; the text never says overall color sufficed.\n- C: The text ties identity to the pattern's position, not to brightness or quantity.\n- D: Cesium and rubidium were discovered by the method; the text says every element emits its own pattern.",
   "_meta": {
-    "anchor": "soil ecology — earthworm bioturbation; detail stem"
-  },
-  "module": 1
+    "anchor": "Bunsen and Kirchhoff — flame spectroscopy; element line signatures; detail stem"
+  }
 }

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-016",
+ "question": "A campus map shows a circular quiet zone centered at $(-6,4)$ with a radius of $9$ units. Which equation represents the boundary of that quiet zone?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x-6)^{2}+(y+4)^{2}=9$"
+  },
+  {
+   "id": "B",
+   "text": "$(x-6)^{2}+(y+4)^{2}=81$"
+  },
+  {
+   "id": "C",
+   "text": "$(x+6)^{2}+(y-4)^{2}=9$"
+  },
+  {
+   "id": "D",
+   "text": "$(x+6)^{2}+(y-4)^{2}=81$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "copies the center's coordinates without reversing their signs and uses r instead of r squared",
+  "B": "copies the center's coordinates without reversing their signs",
+  "C": "uses the radius 9 where the square of the radius, 81, belongs"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Circle Equation Standard Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Standard form is $(x-h)^{2}+(y-k)^{2}=r^{2}$, so a center of $(-6,4)$ and radius $9$ give $(x+6)^{2}+(y-4)^{2}=81$.\n\n**The Full Solution:**\n\nStep 1: Recall the form. A circle with center $(h,k)$ and radius $r$ is $(x-h)^{2}+(y-k)^{2}=r^{2}$.\n\nStep 2: Substitute the center. With $h=-6$, $x-h$ becomes $x-(-6)=x+6$; with $k=4$, $y-k$ becomes $y-4$.\n\nStep 3: Substitute the radius. $r=9$, so the right side is $9^{2}=81$.\n\nCheck: the point $(-6,13)$ is $9$ units above the center, and $(-6+6)^{2}+(13-4)^{2}=0+81=81$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: copies the center's coordinates without reversing their signs and also uses $9$ instead of $81$.\n* Choice B: copies the center's coordinates without reversing their signs.\n* Choice C: places the radius $9$ where $r^{2}=81$ belongs.\n\n**Test Day Takeaway:** The signs inside the parentheses are the opposites of the center's coordinates, and the right side is always the radius squared."
+}

@@ -1,0 +1,61 @@
+{
+  "id": 1,
+  "question": "A survey asked each of $55$ households how many vehicles it owns. The bar graph shows the number of households that gave each response. What is the mode of the numbers of vehicles owned?",
+  "diagram": {
+    "type": "barChart",
+    "params": {
+      "data": [
+        {
+          "label": "0",
+          "value": 4
+        },
+        {
+          "label": "1",
+          "value": 17
+        },
+        {
+          "label": "2",
+          "value": 23
+        },
+        {
+          "label": "3",
+          "value": 9
+        },
+        {
+          "label": "4",
+          "value": 2
+        }
+      ],
+      "xAxisLabel": "Number of vehicles",
+      "yAxisLabel": "Number of households",
+      "yMax": 25,
+      "yStep": 5
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1$"
+    },
+    {
+      "id": "B",
+      "text": "$2$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$23$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the second-tallest bar instead of the tallest.",
+    "C": "reports the greatest response shown on the axis rather than the most frequent one.",
+    "D": "reports the height of the tallest bar, which is how often the mode occurs, not the mode itself."
+  },
+  "correctAnswer": "B",
+  "hint": "The mode is a response, not a bar height.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** The tallest bar sits above $2$ vehicles, so $2$ is the response given most often.\n\n**The Full Solution:**\nStep 1: The horizontal axis lists the possible responses and each bar height is the number of households giving that response.\nStep 2: The bar heights are $4$, $17$, $23$, $9$, and $2$ households for $0$, $1$, $2$, $3$, and $4$ vehicles.\nStep 3: The greatest height, $23$, occurs above $2$ vehicles, so the mode is $2$ vehicles. Check: $4 + 17 + 23 + 9 + 2 = 55$ households, matching the survey size. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): reads the second-tallest bar instead of the tallest.\n* Choice C ($4$): reports the greatest response shown on the axis rather than the most frequent one.\n* Choice D ($23$): reports the height of the tallest bar, which is how often the mode occurs, not the mode itself.\n\n**Test Day Takeaway:** The mode is a data value. On a bar graph read across to the axis label under the tallest bar, never up to its height."
+}

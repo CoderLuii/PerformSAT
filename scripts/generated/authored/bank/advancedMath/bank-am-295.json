@@ -1,0 +1,29 @@
+{
+  "question": "An alloy's shrinkage is modeled by $g(x)=(x-5)^{2}-31$. Written as $g(x)=x^{2}+bx+c$, with $b$ and $c$ constants, what is the value of $c-b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-21$"
+    },
+    {
+      "id": "B",
+      "text": "$-16$"
+    },
+    {
+      "id": "C",
+      "text": "$-4$"
+    },
+    {
+      "id": "D",
+      "text": "$4$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "forgot the +25 from expanding the square, using c = -31",
+    "B": "sign slip, using b = 10 instead of b = -10",
+    "C": "computed b - c instead of c - b"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Completing the Square**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Expanding gives $x^{2}-10x-6$, so $c-b=-6-(-10)=4$.\n\n**The Full Solution:**\nStep 1: Expand: $(x-5)^{2}-31=x^{2}-10x+25-31$.\nStep 2: Combine constants: $g(x)=x^{2}-10x-6$, so $b=-10$ and $c=-6$.\nStep 3: Then $c-b=-6+10=4$. Check at $x=0$: $g(0)=25-31=-6$, matching $c=-6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-21$): forgets the $+25$ from expanding the square, using $c=-31$.\n* Choice B ($-16$): sign slip, using $b=10$ instead of $-10$.\n* Choice C ($-4$): computes $b-c$ instead of $c-b$.\n\n**Test Day Takeaway:** Expanding vertex form always leaves a leftover square — that $+25$ is what makes $c$ different from the vertex's $y$-value.",
+  "id": "bank-am-295"
+}

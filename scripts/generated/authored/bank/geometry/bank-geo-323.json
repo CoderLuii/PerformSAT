@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-323",
+ "question": "After a rip cut, a triangular plywood offcut remains; it measures $34$ inches along its base and stands $15$ inches tall. How many square inches of surface does the offcut have?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$24.5$"
+  },
+  {
+   "id": "B",
+   "text": "$49$"
+  },
+  {
+   "id": "C",
+   "text": "$255$"
+  },
+  {
+   "id": "D",
+   "text": "$510$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "halves the sum of base and height, (34+15)/2 = 24.5",
+  "B": "adds the base and the height instead of multiplying, 34+15 = 49",
+  "D": "multiplies base by height without the factor 1/2, 34*15 = 510"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Triangle Area**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Area is half of base times height: $\\frac{1}{2}(34)(15) = 255$.\n\n**The Full Solution:**\nStep 1: The offcut is a triangle with base $34$ inches and height $15$ inches.\nStep 2: A triangle's area is $A = \\frac{1}{2}bh$, so $A = \\frac{1}{2}(34)(15)$.\nStep 3: $(34)(15) = 510$, and half of that is $255$ square inches.\n\nCheck: A $34$ by $15$ rectangle covers $510$ square inches, and the triangle covers exactly half. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($24.5$): halves the sum $34 + 15$ instead of halving the product.\n* Choice B ($49$): adds the base and the height, which gives a length, not an area.\n* Choice D ($510$): multiplies base by height but never applies the factor $\\frac{1}{2}$.\n\n**Test Day Takeaway:** The $\\frac{1}{2}$ in $A = \\frac{1}{2}bh$ multiplies the product, never the sum."
+}

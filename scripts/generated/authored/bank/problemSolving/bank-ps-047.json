@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-047",
+  "question": "For a survey that uses a random sample, the margin of error is inversely proportional to the square root of the sample size. A survey with a sample size of $250$ had a margin of error of $6\\%$. To reduce the margin of error to $2\\%$, approximately what sample size would be needed?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$83$"
+    },
+    {
+      "id": "B",
+      "text": "$750$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}500$"
+    },
+    {
+      "id": "D",
+      "text": "$2{,}250$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the sample size by $3$; a smaller sample makes the margin of error larger, not smaller.",
+    "B": "multiplies the sample size by $3$, forgetting that the margin of error depends on the square root of $n$, so $n$ must grow by $3^2$.",
+    "C": "multiplies by the original margin of error, $6$, rather than by the squared ratio $\\left(\\frac{6}{2}\\right)^2 = 9$."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Sample Size for Margin Reduction**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** Cutting the margin of error to $\\frac{1}{3}$ of its value requires $3^2 = 9$ times the sample size: $9 \\times 250 = 2{,}250$.\n\n**The Full Solution:**\nStep 1: Inversely proportional to the square root means $E = \\frac{k}{\\sqrt{n}}$ for some constant $k$. From the first survey, $k = 6\\sqrt{250}$.\nStep 2: Set $\\frac{6\\sqrt{250}}{\\sqrt{n}} = 2$, so $\\sqrt{n} = 3\\sqrt{250}$ and $n = 9 \\times 250 = 2{,}250$.\nStep 3: Check: $\\frac{\\sqrt{2{,}250}}{\\sqrt{250}} = \\sqrt{9} = 3$, so the margin of error is divided by $3$: $\\frac{6\\%}{3} = 2\\%$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($83$): divides the sample size by $3$; a smaller sample makes the margin of error larger, not smaller.\n* Choice B ($750$): multiplies the sample size by $3$, forgetting that the margin of error depends on the square root of $n$, so $n$ must grow by $3^2$.\n* Choice C ($1{,}500$): multiplies by the original margin of error, $6$, rather than by the squared ratio $\\left(\\frac{6}{2}\\right)^2 = 9$.\n\n**Test Day Takeaway:** To divide a margin of error by a factor $f$, multiply the sample size by $f^2$. Halving needs $4\\times$; cutting to a third needs $9\\times$."
+}

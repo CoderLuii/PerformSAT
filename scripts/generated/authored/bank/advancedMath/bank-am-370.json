@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-370",
+ "question": "An audio chain sends every input $x$ first through the preamplifier stage $g$, defined by $g(x)=x+4$, and then through a second stage $f$, and the chain's overall output is $3x+2$. Which equation defines $f$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$f(x)=3x-12$"
+  },
+  {
+   "id": "B",
+   "text": "$f(x)=3x-10$"
+  },
+  {
+   "id": "C",
+   "text": "$f(x)=3x-2$"
+  },
+  {
+   "id": "D",
+   "text": "$f(x)=3x+14$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "distributes the 3 over x - 4 but drops the constant +2: 3(x - 4) = 3x - 12",
+  "C": "subtracts 4 from the output instead of from the input: 3x + 2 - 4 = 3x - 2",
+  "D": "replaces x with x + 4 instead of x - 4: 3(x + 4) + 2 = 3x + 14"
+ },
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $f(x+4)=3x+2$; replacing $x$ with $x-4$ gives $f(x)=3(x-4)+2=3x-10$.\n\n**The Full Solution:**\nStep 1: The chain says $f(g(x))=f(x+4)=3x+2$ for every $x$.\nStep 2: Let $t=x+4$, so $x=t-4$ and $f(t)=3(t-4)+2$.\nStep 3: Simplify: $f(t)=3t-12+2=3t-10$, so $f(x)=3x-10$. Check: $f(g(1))=f(5)=15-10=5$, and $3(1)+2=5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($f(x)=3x-12$): distributes the 3 over $x-4$ but drops the $+2$.\n* Choice C ($f(x)=3x-2$): subtracts 4 from the output instead of from the input.\n* Choice D ($f(x)=3x+14$): substitutes $x+4$ where $x-4$ belongs, shifting the wrong way.\n\n**Test Day Takeaway:** To recover the outer function, rename the inner expression as a single variable and solve for the original input."
+}

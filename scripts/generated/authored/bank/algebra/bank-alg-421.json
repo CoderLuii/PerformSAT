@@ -1,0 +1,48 @@
+{
+ "id": "bank-alg-421",
+ "question": "A fabric lab plots two shrinkage tests in the $xy$-plane, where the two points shown lie on line $j$. The second test, $6x + ky = 15$, has no point in common with line $j$. What is the value of the constant $k$?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -3,
+     7
+    ],
+    [
+     3,
+     -5
+    ]
+   ],
+   "xMin": -6,
+   "xMax": 6,
+   "yMin": -8,
+   "yMax": 10
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "solves 6/k = -2, losing the minus sign that comes from moving 6x across",
+  "B": "reports the y-intercept of line j",
+  "D": "multiplies 6 by 2 instead of dividing"
+ },
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Line $j$ has slope $-2$, and $6x + ky = 15$ has slope $-\\frac{6}{k}$, so $k = 3$.\n\n**The Full Solution:**\n\nStep 1: The plotted points are $(-3, 7)$ and $(3, -5)$, so line $j$ has slope $\\frac{-5 - 7}{3 - (-3)} = \\frac{-12}{6} = -2$ and equation $y = -2x + 1$.\n\nStep 2: Solve the second test for $y$: $ky = -6x + 15$, so $y = -\\frac{6}{k}x + \\frac{15}{k}$.\n\nStep 3: Having no point in common means parallel and distinct, so $-\\frac{6}{k} = -2$ and $k = 3$. Check: $6x + 3y = 15$ reduces to $2x + y = 5$, while line $j$ is $2x + y = 1$, so the two never meet.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-3$): solves $\\frac{6}{k} = -2$, dropping the minus sign produced by moving $6x$ to the other side.\n* Choice B ($1$): reports the $y$-intercept of line $j$ rather than the constant $k$.\n* Choice D ($12$): multiplies $6$ by $2$ instead of dividing $6$ by $2$.\n\n**Test Day Takeaway:** Read the slope from the two plotted points first; then the standard-form slope $-\\frac{A}{B}$ turns the matching condition into one division."
+}

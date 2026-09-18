@@ -1,0 +1,57 @@
+{
+ "question": "Each pressure sensor carried by a weather balloon has mass $2$ kilograms and each humidity sensor has mass $3$ kilograms; the line shown gives every pair of $x$ pressure sensors and $y$ humidity sensors with total mass $12$ kilograms. If $kx + 9y = 36$ has the same graph, what is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "copies the $x$-coefficient of $2x + 3y = 12$ without scaling by $3$",
+  "B": "reports the scale factor $3$ itself instead of $2(3)$",
+  "C": "matches the constant to the $y$-coefficient, computing $36 \\div 9$"
+ },
+ "explanation": "**SAT Pattern: Same Line Infinitely Many Solutions**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The mass budget is $2x + 3y = 12$. Tripling it gives $6x + 9y = 36$, so $k = 6$.\n\n**The Full Solution:**\n\nStep 1: Each pressure sensor adds $2$ kilograms and each humidity sensor adds $3$, so the $12$-kilogram combinations satisfy $2x + 3y = 12$, matching the intercepts $(6, 0)$ and $(0, 4)$.\n\nStep 2: For $kx + 9y = 36$ to have the same graph, it must be a multiple of $2x + 3y = 12$. The $y$-coefficient goes from $3$ to $9$, a factor of $3$.\n\nStep 3: Apply that factor everywhere: $k = 2(3) = 6$, and $12(3) = 36$ confirms the constant.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2$): copies the $x$-coefficient of $2x + 3y = 12$ and never scales it.\n\n* Choice B ($3$): reports the scale factor rather than the scaled coefficient.\n\n* Choice C ($4$): divides the constant $36$ by the $y$-coefficient $9$, a ratio that has nothing to do with $k$.\n\n**Test Day Takeaway:** Get the scale factor from one matched pair of terms, then use it on the term the question asks for.",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": -0.6666667,
+   "yIntercept": 4,
+   "xRange": [
+    0,
+    8
+   ],
+   "yRange": [
+    0,
+    6
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     4
+    ],
+    [
+     6,
+     0
+    ]
+   ]
+  }
+ },
+ "id": "bank-alg-445"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-361",
+  "question": "A research vessel traveled $30$ nautical miles in $2$ hours and then traveled $75$ nautical miles in $3$ hours. What was the vessel's average speed, in nautical miles per hour, for the entire voyage?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20$"
+    },
+    {
+      "id": "B",
+      "text": "$21$"
+    },
+    {
+      "id": "C",
+      "text": "$25$"
+    },
+    {
+      "id": "D",
+      "text": "$40$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "averages the two leg speeds, $\\frac{15 + 25}{2}$, instead of dividing total distance by total time",
+    "C": "reports the speed of the second leg only, $\\frac{75}{3}$",
+    "D": "adds the two leg speeds, $15 + 25$"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Average Rate**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Total distance is $30 + 75 = 105$ nautical miles and total time is $2 + 3 = 5$ hours, so the average speed is $\\frac{105}{5} = 21$.\n\n**The Full Solution:**\nStep 1: Average speed is total distance divided by total time, not the average of the two speeds.\nStep 2: Total distance $= 30 + 75 = 105$ nautical miles; total time $= 2 + 3 = 5$ hours.\nStep 3: Average speed $= \\frac{105}{5} = 21$ nautical miles per hour. Check: the vessel spent more time on the faster leg ($25$) than on the slower leg ($15$), so the average should sit above the midpoint $20$, and $21$ does. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): averages the two leg speeds, $\\frac{15 + 25}{2}$, instead of dividing total distance by total time\n* Choice C ($25$): reports the speed of the second leg only, $\\frac{75}{3}$\n* Choice D ($40$): adds the two leg speeds, $15 + 25$\n\n**Test Day Takeaway:** Average speed is always $\\frac{\\text{total distance}}{\\text{total time}}$. Averaging the two speeds is correct only when the two times are equal."
+}

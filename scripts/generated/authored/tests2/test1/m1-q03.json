@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A household budget allots a total of $540$ dollars each month to two categories, groceries and transportation. The amount allotted to groceries is $120$ dollars more than twice the amount allotted to transportation. How many dollars does the budget allot to transportation?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$140$"
+  },
+  {
+   "id": "B",
+   "text": "$180$"
+  },
+  {
+   "id": "C",
+   "text": "$220$"
+  },
+  {
+   "id": "D",
+   "text": "$400$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "divides the total by 3 without removing the extra 120, computing 540/3 = 180",
+  "C": "reads '120 more than twice' as '120 less than twice', solving 3t - 120 = 540 to get 220",
+  "D": "solves the system correctly but reports the grocery amount, 400, instead of the transportation amount"
+ },
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** With $t$ for transportation, the two categories give $(2t + 120) + t = 540$, so $3t = 420$ and $t = 140$.\n\n**The Full Solution:**\nStep 1: Let $g$ be the grocery amount and $t$ the transportation amount. The total gives $g + t = 540$, and \"$120$ more than twice\" gives $g = 2t + 120$.\nStep 2: Substitute the second equation into the first: $(2t + 120) + t = 540$, which simplifies to $3t + 120 = 540$.\nStep 3: Subtract $120$ and divide by $3$: $3t = 420$, so $t = 140$. Check: groceries would be $2(140) + 120 = 400$, and $400 + 140 = 540$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($180$): divides the total by $3$ and stops, computing $540 \\div 3 = 180$. That would be right only if groceries were exactly twice transportation, with no extra $120$.\n* Choice C ($220$): reverses the comparison, treating groceries as $120$ less than twice transportation. That gives $3t - 120 = 540$ and $t = 220$.\n* Choice D ($400$): solves the system correctly but reports the grocery amount. The question asks for transportation.\n\n**Test Day Takeaway:** Name both unknowns, write one equation per sentence, and substitute; the constant in \"more than twice\" belongs in the equation, not in the final division."
+}

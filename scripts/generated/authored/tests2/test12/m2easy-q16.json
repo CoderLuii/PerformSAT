@@ -1,0 +1,67 @@
+{
+ "id": 16,
+ "question": "During a meteor watch, an observer logged the number of meteors visible in each of $10$ consecutive one-hour sessions, and the dot plot displays those counts. What was the mean number of meteors per session?",
+ "diagram": {
+  "type": "dotPlot",
+  "params": {
+   "data": [
+    {
+     "value": 3,
+     "count": 1
+    },
+    {
+     "value": 4,
+     "count": 2
+    },
+    {
+     "value": 6,
+     "count": 1
+    },
+    {
+     "value": 7,
+     "count": 1
+    },
+    {
+     "value": 8,
+     "count": 3
+    },
+    {
+     "value": 10,
+     "count": 1
+    },
+    {
+     "value": 12,
+     "count": 1
+    }
+   ],
+   "xMin": 2,
+   "xMax": 13,
+   "xLabel": "Meteors per session"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$7.5$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports the median, the average of the 5th and 6th dots",
+  "C": "reports the mode, the value under the tallest stack",
+  "D": "reports the range, 12 minus 3"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Mean from List**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The ten dots sum to $70$, and $\\frac{70}{10} = 7$.\n\n**The Full Solution:**\nStep 1: Read one value per dot: $3, 4, 4, 6, 7, 8, 8, 8, 10, 12$. That is $10$ values, matching the $10$ sessions.\nStep 2: Add them, using the stacks: $3 + 2(4) + 6 + 7 + 3(8) + 10 + 12 = 3 + 8 + 6 + 7 + 24 + 10 + 12 = 70$.\nStep 3: Divide by the number of sessions: $\\frac{70}{10} = 7$ meteors per session. Check: $10 \\times 7 = 70$, which is the total counted. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($7.5$): averages the $5$th and $6$th ordered values, $7$ and $8$. That is the median, which a dot plot makes easy to find but is not what the question asks for.\n* Choice C ($8$): reads off the tallest stack, the mode. Three sessions had $8$ meteors, but the mean weighs every session.\n* Choice D ($9$): computes $12 - 3$, the range. That measures spread, not center.\n\n**Test Day Takeaway:** Every dot is a separate value, so multiply each value by its stack height, add, and divide by the total number of dots — not by the number of distinct positions."
+}

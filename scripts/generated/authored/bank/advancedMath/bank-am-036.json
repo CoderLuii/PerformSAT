@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-036",
+ "question": "A spacecraft power bus stores $6x^{9}$ joules of energy and discharges it over $2x^{4}$ seconds, where $x>0$. Which expression gives the average power, in watts, of the discharge?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x^{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$3x^{13}$"
+  },
+  {
+   "id": "C",
+   "text": "$4x^{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$12x^{5}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "adds the exponents, 9 + 4 = 13, instead of subtracting them",
+  "C": "subtracts the coefficients, 6 - 2 = 4, instead of dividing them",
+  "D": "multiplies the coefficients, 6 times 2 = 12, instead of dividing them"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Quotient Rule of Exponents**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Average power is energy divided by time: $\\frac{6x^{9}}{2x^{4}}=3x^{5}$.\n\n**The Full Solution:**\n\nStep 1: Average power is the stored energy divided by the discharge time, so the expression is $\\frac{6x^{9}}{2x^{4}}$.\n\nStep 2: Divide the numerical parts: $6\\div2=3$.\n\nStep 3: For like bases, subtract the exponents: $x^{9-4}=x^{5}$, giving $3x^{5}$. Check with $x=2$: the energy is $6(512)=3{,}072$ and the time is $2(16)=32$, and $3{,}072\\div32=96=3(2)^{5}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($3x^{13}$): adds the exponents instead of subtracting them.\n* Choice C ($4x^{5}$): subtracts the coefficients rather than dividing them.\n* Choice D ($12x^{5}$): multiplies the coefficients rather than dividing them.\n\n**Test Day Takeaway:** In a quotient, coefficients divide and exponents on a common base subtract — two different operations in the same step."
+}

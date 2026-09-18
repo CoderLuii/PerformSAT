@@ -6,29 +6,14 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 1,
-  "passage": "When the emperor Babur laid out gardens across northern India in the early sixteenth century, he favored a plan called the charbagh, in which two intersecting water channels divide the enclosure into four level quarters. Later visitors sometimes dismissed the rigid symmetry as merely ______, a pleasing pattern imposed for display. Babur's own memoirs suggest otherwise: the raised walkways and graded channels distributed scarce water to every bed, so the layout performed a practical task even as it satisfied the eye.",
+  "passage": "In the desert city of Yazd, in central Iran, tall towers rise above the rooftops of many older houses. Travelers sometimes take the structures to be purely ______, but each tower is a working device: openings at its top catch passing breezes and channel them down into the rooms below, keeping the house livable through the hottest months.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
-    {
-      "id": "A",
-      "text": "functional"
-    },
-    {
-      "id": "B",
-      "text": "deliberate"
-    },
-    {
-      "id": "C",
-      "text": "ancient"
-    },
-    {
-      "id": "D",
-      "text": "ornamental"
-    }
+    { "id": "A", "text": "practical" },
+    { "id": "B", "text": "traditional" },
+    { "id": "C", "text": "fragile" },
+    { "id": "D", "text": "decorative" }
   ],
   "correctAnswer": "D",
-  "explanation": "The contrast in the sentence is between dismissing the charbagh's symmetry as mere show and Babur's point that it did real work. Modified by \"merely\" and glossed as \"a pleasing pattern imposed for display,\" the blank needs a word meaning decorative for its own sake. \"Ornamental,\" choice D, fits and sets up the \"otherwise\" that follows, where the channels turn out to serve a purpose. \"Functional\" and \"deliberate\" would undercut that contrast, and \"ancient\" speaks to age rather than purpose.",
-  "_meta": {
-    "anchor": "Babur and the Mughal charbagh garden plan"
-  }
+  "explanation": "**Choice D is correct.** The sentence sets up a contrast with \"but\": what travelers assume must be the opposite of \"a working device,\" and \"decorative\" — for show rather than for use — is that opposite.\n\n**The Full Solution:**\n- The clause after \"but\" corrects the travelers' assumption: the towers actually do a job, catching breezes and cooling the house.\n- The blank therefore needs a word meaning \"for appearance only,\" and \"purely decorative\" delivers exactly that mistaken impression.\n\n**Why the other choices are wrong:**\n- A: \"Practical\" is what the towers really are — it destroys the contrast the sentence builds with \"but.\"\n- B: The towers may well be traditional, but that quality sets up no contrast with \"a working device\" — the sentence opposes appearance to function, not old to new.\n- C: Nothing in the text concerns the towers' sturdiness, and \"fragile\" sets up no contrast with \"a working device.\""
 }

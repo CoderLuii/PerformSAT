@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "One supplier charges $\\$5$ per liter of ethanol and $\\$3$ per liter of acetone for a lab order totaling $\\$87$. A second supplier charges $\\$3$ per liter of ethanol and $\\$5$ per liter of acetone for the identical order, totaling $\\$73$. How many liters does the order contain in all?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$20$"
+  },
+  {
+   "id": "C",
+   "text": "$40$"
+  },
+  {
+   "id": "D",
+   "text": "$160$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the two equations, producing the difference in liters rather than the total",
+  "C": "divides the combined total 160 by 4 instead of by 8",
+  "D": "adds the two quoted totals and stops, reporting 8 times the number of liters"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** With $x$ liters of ethanol and $y$ liters of acetone, $5x + 3y = 87$ and $3x + 5y = 73$. Adding gives $8x + 8y = 160$, so $x + y = 20$ liters.\n\n**The Full Solution:**\nStep 1: Let $x$ be the liters of ethanol and $y$ the liters of acetone. The first quote is $5x + 3y = 87$ and the second is $3x + 5y = 73$.\nStep 2: The question asks only for $x + y$, and adding the two equations produces the symmetric combination $8x + 8y = 160$.\nStep 3: Dividing by $8$ gives $x + y = 20$ liters. Check by solving fully: subtracting the equations gives $2x - 2y = 14$, so $x - y = 7$; with $x + y = 20$ that gives $x = 13.5$ and $y = 6.5$, and $5(13.5) + 3(6.5) = 67.5 + 19.5 = 87$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): subtracting instead of adding gives $x - y = 7$, the difference between the two volumes, not the total order.\n* Choice C ($40$): this divides the combined total $160$ by $4$ rather than by the $8$ that actually multiplies $x + y$.\n* Choice D ($160$): this stops at $8x + 8y = 160$, which is eight times the number of liters, not the number of liters.\n\n**Test Day Takeaway:** When a system asks for a sum or difference rather than for each variable, add or subtract the equations and read the combination directly."
+}

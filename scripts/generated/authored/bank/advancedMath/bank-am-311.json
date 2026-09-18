@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-311",
+  "question": "A rectangular courtyard is enclosed by $48$ meters of fencing along its four sides. If the width of the courtyard is $w$ meters, for which values of $w$ is the enclosed area at least $140$ square meters?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0 < w \\le 10$"
+    },
+    {
+      "id": "B",
+      "text": "$w \\le 10$ or $w \\ge 14$"
+    },
+    {
+      "id": "C",
+      "text": "$10 \\le w \\le 14$"
+    },
+    {
+      "id": "D",
+      "text": "$10 \\le w \\le 24$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops at the first critical value",
+    "B": "does not reverse the inequality",
+    "D": "uses the semiperimeter as the upper bound"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** The perimeter forces length $= 24 - w$, so $w(24 - w) \\ge 140$ becomes $(w - 10)(w - 14) \\le 0$, giving $10 \\le w \\le 14$.\n\n**The Full Solution:**\nStep 1: A perimeter of $48$ means width plus length is $24$, so the length is $24 - w$ and the area is $w(24 - w)$.\nStep 2: $w(24 - w) \\ge 140$ gives $24w - w^2 \\ge 140$; moving everything to one side gives $w^2 - 24w + 140 \\le 0$.\nStep 3: $w^2 - 24w + 140 = (w - 10)(w - 14)$, which is at most $0$ exactly when $10 \\le w \\le 14$. Check: $w = 12$ gives $12(12) = 144 \\ge 140$, and $w = 9$ gives $9(15) = 135$, which falls short. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0 < w \\le 10$): stops at the first critical value instead of using the interval between the two.\n* Choice B ($w \\le 10$ or $w \\ge 14$): keeps the original direction after multiplying through by $-1$.\n* Choice D ($10 \\le w \\le 24$): replaces the second critical value with $24$, the sum of the width and length.\n\n**Test Day Takeaway:** When a perimeter is given, halve it first: the two adjacent sides sum to $\\dfrac{P}{2}$, not $P$."
+}

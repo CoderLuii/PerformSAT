@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "work"
-    },
-    {
-      "id": "B",
-      "text": "are working"
-    },
-    {
-      "id": "C",
-      "text": "had been working"
-    },
-    {
-      "id": "D",
-      "text": "have been working"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The phrase \"By the time ... in the 1930s\" fixes a point in the past, and the founders' design work was already under way for decades before that point. The past perfect progressive \"had been working\" marks an action ongoing before a past reference point, so it is correct. \"Have been working\" is present perfect and ties the work to the present, clashing with the 1930s frame. \"Work\" and \"are working\" are present-tense forms that cannot express an action completed relative to an earlier past moment.",
-  "passage": "By the time the first cheap paperback editions began to reach the newsstands of British and American cities in the 1930s, the major type founders ______ for several decades to design typefaces that stayed legible even when printed quickly on rough, inexpensive paper.",
-  "_meta": {
-    "anchor": "typography history: legible faces for cheap paperbacks (generic)",
-    "rule": "past perfect (progressive) with a 'by the time' sequence cue"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "strive"
   },
-  "id": 1122,
-  "module": 1
+  {
+   "id": "B",
+   "text": "are striving"
+  },
+  {
+   "id": "C",
+   "text": "had been striving"
+  },
+  {
+   "id": "D",
+   "text": "have been striving"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The sentence describes effort that was already underway before a past reference point — \"By the time phonograph records began to outsell sheet music\" — so the past perfect progressive \"had been striving\" is required.\n\n**The Full Solution:**\n- \"By the time X happened\" anchors the sentence at a moment in the past (the 1920s).\n- The publishers' campaign (\"for a generation\") stretches back before that anchor and continues up to it — the textbook territory of the past perfect progressive.\n- \"Had been striving ... for a generation\" places the ongoing effort correctly before the past milestone.\n\n**Why the other choices are wrong:**\n- A: The simple present \"strive\" cannot sit inside a sentence anchored to a past decade.\n- B: The present progressive \"are striving\" likewise clashes with the past time frame.\n- D: The present perfect progressive \"have been striving\" measures duration up to now, but the sentence measures duration up to a point in the past.",
+ "passage": "By the time phonograph records began to outsell sheet music in the 1920s, Tin Pan Alley's publishers ______ for a generation to place their newest songs with star performers, and the pluggers simply carried the same methods into the recording studios.",
+ "_meta": {
+  "rule": "past perfect progressive before a past reference point",
+  "anchor": "Tin Pan Alley song plugging — transition to the record era",
+  "distractors": {
+   "A": "simple present in past frame",
+   "B": "present progressive in past frame",
+   "D": "present perfect measures to now, not to a past point"
+  }
+ },
+ "id": 1122,
+ "module": 1
 }

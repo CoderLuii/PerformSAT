@@ -6,26 +6,26 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 2,
- "passage": "Glaciologist Richard Alley studies cores drilled from the Greenland ice sheet, whose buried layers preserve a record of past climate. The detailed chemical record that the sheet's many annual layers preserve ______ researchers to reconstruct temperatures reaching back tens of thousands of years.",
+ "passage": "Several of Iceland's most active volcanoes lie buried beneath glaciers hundreds of meters thick. Erupting through this overlying ice, ______",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "allow"
+   "text": "enormous floods of meltwater known as jökulhlaups are released downstream, sometimes carrying more water than any river on Earth."
   },
   {
    "id": "B",
-   "text": "have allowed"
+   "text": "these volcanoes melt vast chambers into the glacier above and release the water as sudden floods known as jökulhlaups, which can briefly outflow any river on Earth."
   },
   {
    "id": "C",
-   "text": "are allowing"
+   "text": "scientists have recorded sudden floods known as jökulhlaups that can briefly carry more water than any river on Earth."
   },
   {
    "id": "D",
-   "text": "allows"
+   "text": "the glacier above is melted into vast chambers, and sudden floods known as jökulhlaups are released that can briefly outflow any river on Earth."
   }
  ],
- "correctAnswer": "D",
- "explanation": "The correct answer is D. The subject of the verb is the singular noun \"record,\" not the plural \"layers\" that sits next to the blank inside the clause \"that the sheet's many annual layers preserve.\" A singular subject takes the singular verb \"allows.\" \"Allow,\" \"have allowed,\" and \"are allowing\" are all plural forms that agree with the intervening \"layers\" rather than with the true head noun, the agreement trap the sentence sets."
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The opening participial modifier \"Erupting through this overlying ice\" must sit next to what actually erupts — the volcanoes.\n\n**The Full Solution:**\n- Standard English requires an opening modifier's subject to follow it directly.\n- Only the volcanoes erupt, so the clause after the comma must begin with \"these volcanoes,\" as B does: \"these volcanoes melt vast chambers ... and release the water ....\"\n\n**Why the other choices are wrong:**\n- A: It hands the modifier to \"enormous floods of meltwater,\" but floods do not erupt through ice — they are the eruption's consequence.\n- C: It makes \"scientists\" the erupting party — the unintended absurdity typical of dangling modifiers.\n- D: It attaches the modifier to \"the glacier above,\" but the glacier is what gets melted through, not what erupts; its passive constructions also leave the true actor of \"erupting\" nowhere in the sentence."
 }

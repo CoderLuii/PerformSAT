@@ -1,0 +1,57 @@
+{
+  "id": 14,
+  "question": "The table summarizes $200$ network requests by protocol version and by whether the response was served from cache. Which expression represents the probability that a randomly selected one of these requests was served from cache?",
+  "questionTable": {
+    "headers": [
+      "Protocol",
+      "Served from cache",
+      "Not served from cache",
+      "Total"
+    ],
+    "rows": [
+      [
+        "IPv4",
+        "$96$",
+        "$44$",
+        "$140$"
+      ],
+      [
+        "IPv6",
+        "$29$",
+        "$31$",
+        "$60$"
+      ],
+      [
+        "Total",
+        "$125$",
+        "$75$",
+        "$200$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{96}{200}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{125}{200}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{96}{140}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{140}{200}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses only the IPv4-and-cached cell, 96, over the grand total instead of the whole cached column",
+    "C": "conditions on IPv4 requests by dividing 96 by 140 rather than by all 200 requests",
+    "D": "gives the probability that the request used IPv4, not that it was cached"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Cached requests total $125$ out of all $200$ requests, so the probability is $\\frac{125}{200}$.\n\n**The Full Solution:**\nStep 1: A probability is the count of favorable outcomes over the count of all outcomes in the group being selected from.\nStep 2: The selection is made from all $200$ requests, so the denominator is $200$.\nStep 3: Every cached request counts, regardless of protocol: $96 + 29 = 125$, the total of that column. The probability is $\\frac{125}{200}$. Check: the not-cached total is $44 + 31 = 75$, and $125 + 75 = 200$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{96}{200}$): counts only IPv4 requests that were cached, dropping the $29$ cached IPv6 requests.\n* Choice C ($\\frac{96}{140}$): answers a different question — the chance a request was cached *given* that it used IPv4.\n* Choice D ($\\frac{140}{200}$): uses the IPv4 row total, giving the probability of the protocol rather than of the caching outcome.\n\n**Test Day Takeaway:** A marginal probability uses a whole row or column total over the grand total; the moment the denominator is a subgroup, you have answered a conditional question instead."
+}

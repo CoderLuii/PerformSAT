@@ -1,0 +1,58 @@
+{
+  "id": "bank-alg-404",
+  "question": "The graph of line $m$ in the $xy$-plane is shown. Which of the following is the slope of a line that is perpendicular to line $m$?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -0.5,
+      "yIntercept": 3,
+      "xRange": [
+        -6,
+        6
+      ],
+      "yRange": [
+        -4,
+        6
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "label": "m"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-2$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\dfrac{1}{2}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\dfrac{1}{2}$"
+    },
+    {
+      "id": "D",
+      "text": "$2$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the reciprocal but keeps the negative sign",
+    "B": "reports the slope of line m itself",
+    "C": "changes only the sign, without taking the reciprocal"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Line $m$ drops $2$ units for every $4$ units to the right, so its slope is $-\\dfrac{1}{2}$. The perpendicular slope is the negative reciprocal, $2$.\n\n**The Full Solution:**\nStep 1: Read two points on line $m$ from the grid: $(0, 3)$ and $(4, 1)$. Slope $= \\dfrac{1 - 3}{4 - 0} = \\dfrac{-2}{4} = -\\dfrac{1}{2}$.\nStep 2: Perpendicular slopes multiply to $-1$: $m_{\\perp} \\cdot \\left(-\\dfrac{1}{2}\\right) = -1$, so $m_{\\perp} = 2$.\nStep 3: Check: $-\\dfrac{1}{2} \\cdot 2 = -1$. $\\checkmark$ A line of slope $2$ rises steeply while $m$ falls gently, consistent with a right angle between them.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$): inverts the fraction but forgets to change the sign; the product with $-\\dfrac{1}{2}$ is $+1$.\n* Choice B ($-\\dfrac{1}{2}$): is the slope of $m$ itself, the answer to a different question.\n* Choice C ($\\dfrac{1}{2}$): changes the sign but not the fraction; a slope of $\\dfrac{1}{2}$ makes a shallow angle with $m$, not a right angle.\n\n**Test Day Takeaway:** From a graph, get the slope as rise over run between two grid points first, then flip and negate it for the perpendicular line."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 1217,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "When biologists first measured the temperatures inside a beehive in winter, the finding that a honeybee colony keeps its center warm by clustering together and shivering its flight muscles seemed a small curiosity. Although that result looked at the time like a narrow specialty unlikely to reshape the ____ research on how bees generate and conserve heat has since informed broader work on how social insects regulate their internal environment.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "field"
-    },
-    {
-      "id": "B",
-      "text": "field;"
-    },
-    {
-      "id": "C",
-      "text": "field:"
-    },
-    {
-      "id": "D",
-      "text": "field,"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The sentence opens with a subordinate clause beginning \"Although,\" and a comma is needed to mark where that introductory clause ends and the main clause (\"research ... has since informed\") begins. Without any punctuation, the words run together as \"the field research,\" blurring that boundary. A semicolon and a colon each require what follows to stand as its own complete statement or list, but here the comma simply closes the introductory clause, so neither fits."
+ "id": 1217,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "In the nineteenth century, many cities moved their food markets out of the open street and into purpose-built halls of iron and glass. Although shoppers at first missed the noise and bargaining of the old outdoor ____ the new buildings kept produce out of the rain, allowed every stall to be inspected, and could be washed down at the close of each day.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "market"
+  },
+  {
+   "id": "B",
+   "text": "market;"
+  },
+  {
+   "id": "C",
+   "text": "market:"
+  },
+  {
+   "id": "D",
+   "text": "market,"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The sentence opens with a dependent clause beginning with \"Although,\" and a comma must mark where that clause ends and the main clause begins.\n\n**The Full Solution:**\n- The rule: an introductory clause led by a word like although, because, or when cannot stand alone, and it takes a comma at its end before the main clause starts.\n- Here the introductory clause is \"Although shoppers at first missed the noise and bargaining of the old outdoor market,\" and the main clause is \"the new buildings kept produce out of the rain...\"\n- Without the comma, the words run together as \"the old outdoor market the new buildings,\" hiding the boundary between the two clauses.\n\n**Why the other choices are wrong:**\n- A: With no punctuation, the dependent clause fuses into the main clause and the sentence becomes unreadable at the join.\n- B: A semicolon requires an independent clause on each side, but the \"Although\" clause cannot stand alone.\n- C: A colon must follow a complete statement that introduces what comes next, and the unfinished \"Although\" clause is not one."
 }

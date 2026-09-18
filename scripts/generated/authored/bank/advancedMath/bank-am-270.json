@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-270",
+  "question": "A rescaled bathymetric profile satisfies $E(x) = k \\cdot D(x)$ for a constant $k$, where $D$ is the function defined by $D(x) = -0.5x^2 + 6x$ and $D(x)$ gives the depth deviation, in meters, at a horizontal distance of $x$ meters. Given that $E(2) = -30$, what is the value of $E(8)$?",
+  "correctAnswer": "-48",
+  "explanation": "**SAT Pattern: Vertical Stretch**\n\n**The correct answer is $-48$.**\n\n**The Fast Way (~30s):** $D(2) = 10$ forces $k = -3$, and $D(8) = 16$, so $E(8) = -3(16) = -48$.\n\n**The Full Solution:**\nStep 1: Evaluate the base profile at the input that is given: $D(2) = -0.5(4) + 12 = -2 + 12 = 10$.\nStep 2: Since $E(2) = k \\cdot D(2) = 10k$ and $E(2) = -30$, the constant is $k = \\frac{-30}{10} = -3$.\nStep 3: Evaluate at $x = 8$: $D(8) = -0.5(64) + 48 = -32 + 48 = 16$, so $E(8) = -3(16) = -48$. Check: $\\frac{E(2)}{D(2)} = \\frac{-30}{10} = -3$ and $\\frac{-48}{16} = -3$, the same factor ✓\n\n**Common Mistakes:** Reporting $16$ skips the factor entirely; reporting $48$ finds $k = 3$ by dropping the negative sign; reporting $-120$ scales the given value $-30$ by $\\frac{8}{2}$, treating $E$ as proportional to $x$.\n\n**Test Day Takeaway:** One known input-output pair pins the stretch factor; after that the factor applies unchanged at every other input."
+}

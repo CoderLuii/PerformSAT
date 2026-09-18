@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-064",
+  "question": "A runner completes $12$ laps of a loop that is $625$ meters long. What is the total distance, in kilometers, that the runner completes? ($1$ kilometer $= 1{,}000$ meters)",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.075$"
+    },
+    {
+      "id": "B",
+      "text": "$0.75$"
+    },
+    {
+      "id": "C",
+      "text": "$7.5$"
+    },
+    {
+      "id": "D",
+      "text": "$75$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides 7,500 by 100,000 (five decimal places)",
+    "B": "divides 7,500 by 10,000 (one place too many)",
+    "D": "divides by 100 instead of 1,000"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Meters to Kilometers**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** $12 \\times 625 = 7{,}500$ meters, and dividing by $1{,}000$ gives $7.5$ kilometers.\n\n**The Full Solution:**\nStep 1: Total distance in meters: $12 \\times 625 = 7{,}500$ meters.\nStep 2: Convert using $1$ kilometer $= 1{,}000$ meters: $7{,}500 \\text{ m} \\times \\frac{1 \\text{ km}}{1{,}000 \\text{ m}} = 7.5$ kilometers.\nStep 3: Check: $7.5$ kilometers is $7{,}500$ meters, and $\\frac{7{,}500}{625} = 12$ laps. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.075$): moves the decimal five places, dividing $7{,}500$ by $100{,}000$.\n* Choice B ($0.75$): divides by $10{,}000$, one factor of $10$ too many.\n* Choice D ($75$): divides by $100$ instead of $1{,}000$, as if there were $100$ meters in a kilometer.\n\n**Test Day Takeaway:** Kilo- means $1{,}000$; meters to kilometers is always a division by $1{,}000$, three decimal places, no more and no less."
+}

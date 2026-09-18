@@ -6,46 +6,34 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-quantitative",
   "module": 2,
-  "passage": "Use of social media platforms by U.S. adults grew across the 2010s, but not every platform expanded at the same pace. Drawing on nationally representative survey data collected at multiple points across the decade, communications researchers have argued that, among the platforms that were already established by 2012, Instagram is the one whose share of U.S. adult users showed the most dramatic proportional expansion between 2012 and 2021. The data reported by Pew Research Center support this characterization because _______",
+  "passage": "An acoustics laboratory tested five wall-lining materials for use in music practice rooms, mounting a panel of each between a noise source and a measurement chamber and recording the drop in sound level the panel produced. All panels were manufactured at the same 2-centimeter thickness so the materials could be compared directly. A student reviewing the results claims that cork provided the greatest noise reduction of the materials tested because ______",
   "questionTable": {
     "type": "table",
-    "caption": "Percentage of U.S. adults reporting use of selected social media platforms, 2012, 2016, and 2021 (Pew Research Center, 2021)",
+    "caption": "Measured noise reduction for five wall-lining materials at equal panel thickness (2 cm)",
     "headers": [
-      "Platform",
-      "2012",
-      "2016",
-      "2021"
+      "Material",
+      "Noise reduction (dB)"
     ],
     "rows": [
       [
-        "Facebook",
-        "54%",
-        "68%",
-        "69%"
+        "Cork",
+        "21"
       ],
       [
-        "Instagram",
-        "13%",
-        "28%",
-        "40%"
+        "Mineral wool",
+        "18"
       ],
       [
-        "LinkedIn",
-        "20%",
-        "25%",
-        "28%"
+        "Recycled denim",
+        "17"
       ],
       [
-        "Twitter",
-        "16%",
-        "21%",
-        "23%"
+        "Gypsum board",
+        "13"
       ],
       [
-        "YouTube",
-        "—",
-        "73%",
-        "81%"
+        "Plywood",
+        "9"
       ]
     ]
   },
@@ -53,21 +41,21 @@
   "choices": [
     {
       "id": "A",
-      "text": "Instagram use among U.S. adults rose from 13% in 2012 to 40% in 2021, roughly tripling and outpacing the proportional growth of every other platform with data in 2012."
+      "text": "cork's measured reduction of 21 decibels exceeded that of every other material tested, including the next best, mineral wool, at 18 decibels."
     },
     {
       "id": "B",
-      "text": "Facebook was used by 69% of U.S. adults in 2021, the highest reported share among the platforms with data available in 2012."
+      "text": "cork reduced noise by 21 decibels, while plywood reduced it by only 9 decibels."
     },
     {
       "id": "C",
-      "text": "Instagram use among U.S. adults contracted from 13% in 2012 to a smaller share by 2021, falling more sharply than any other platform listed."
+      "text": "all five materials were tested as panels manufactured at the same 2-centimeter thickness."
     },
     {
       "id": "D",
-      "text": "LinkedIn use among U.S. adults rose from 20% in 2012 to 28% in 2021, an eight-percentage-point increase across the period."
+      "text": "the three fibrous materials in the table outperformed the two rigid ones."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The researchers' claim is a specific comparative claim: among platforms already established by 2012, Instagram exhibited the most dramatic *proportional* expansion between 2012 and 2021. To support that claim, a choice must report Instagram's 2012 and 2021 figures and frame the change as proportionally larger than what the other rows show. Choice A does exactly that: it cites 13% in 2012 and 40% in 2021 (a roughly threefold increase) and explicitly compares that proportional growth to the other platforms with 2012 data, where the largest competing relative gain (LinkedIn from 20% to 28%, or Twitter from 16% to 23%) is well short of tripling.\n\nChoice B is incorrect. Facebook's 2021 figure being numerically the highest tells you nothing about which platform expanded the most relative to its 2012 baseline. Choice D is incorrect. The numbers it cites are accurate, and LinkedIn did grow, but an eight-percentage-point rise on a 20% base is far smaller in proportional terms than Instagram's rise from 13% to 40%, so a one-row report on LinkedIn cannot establish which platform showed the most dramatic proportional expansion. Choice C is incorrect. The table shows Instagram rising from 13% in 2012 to 40% in 2021, not contracting; Choice C reverses the direction of change and therefore both misreports the data and contradicts the claim it is supposed to support."
+  "explanation": "**Choice A is correct.** A greatest-of-all claim needs cork compared against the whole field, and A supplies that: 21 decibels tops every other material, with the runner-up named and quantified.\n\n**The Full Solution:**\n- The student's claim is a superlative: cork provided \"the greatest noise reduction of the materials tested.\"\n- Establishing a superlative requires showing cork beat every alternative. Choice A asserts exactly that and cites the decisive comparison — cork's 21 decibels against mineral wool's 18, the closest competitor.\n- Scanning the table confirms it: 21 exceeds 18, 17, 13, and 9.\n\n**Why the other choices are wrong:**\n- B: Beating plywood, the weakest performer, leaves open whether cork beat mineral wool or recycled denim; a superlative cannot rest on comparison with the worst.\n- C: The equal thickness is a fact about the method that makes comparison fair, but it contains no measurement and so cannot show any material outperformed another.\n- D: A group-versus-group pattern never isolates cork; even if fibrous materials led as a class, mineral wool or denim, not cork, could have been the top performer."
 }

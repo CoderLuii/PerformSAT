@@ -5,32 +5,32 @@
   "band": 2,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
+  "module": 2,
+  "passage": "The following text is from Willa Cather's 1913 novel *O Pioneers!*.\n\nOne January day, thirty years ago, the little town of Hanover, anchored on a windy Nebraska tableland, was trying not to be blown away. A mist of fine snowflakes was curling and eddying about the cluster of low drab buildings huddled on the gray prairie, under a gray sky. The dwelling-houses were set about haphazard on the tough prairie sod; some of them looked as if they had been moved in overnight, and others as if they were straying off by themselves, headed straight for the open plain. None of them had any appearance of permanence, and the howling wind blew under them as well as over them.",
   "question": "Which choice best describes what is happening in the text?",
   "choices": [
     {
       "id": "A",
-      "text": "The speaker recounts a conversation with a Venetian boatman who explains the history of each grand building they pass along the canal."
+      "text": "The narrator recalls a conversation with a longtime resident about how a prairie town was founded."
     },
     {
       "id": "B",
-      "text": "Standing on a Venetian bridge, the speaker watches the city's structures rise from the water and dwells on the vanished glory of its former empire."
+      "text": "The narrator pictures a small prairie town on a winter day, its scattered buildings seeming barely fixed in place against the wind."
     },
     {
       "id": "C",
-      "text": "The speaker argues that Venice's surviving monuments ought to be carefully restored before the last remaining traces of the city's former grandeur are lost forever to the encroaching sea."
+      "text": "The narrator urges the residents of a prairie town to rebuild their scattered houses on more sheltered ground before the winter storms arrive."
     },
     {
       "id": "D",
-      "text": "The speaker explains how the palaces and bridges of Venice were gradually constructed across its hundred islands over the course of a thousand years."
+      "text": "The narrator gives a factual history of how a prairie town's buildings were put up over the years."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The speaker describes standing on a bridge in Venice, watching the city's buildings seem to rise out of the water, and reflecting that the empire whose glory once filled those structures has faded into the past. Choice A invents a boatman and a conversation the poem does not contain; choice C turns the speaker's reflection into an argument for restoring monuments; and choice D reduces the passage to a factual account of how Venice was built.",
-  "passage": "The following text is from Lord Byron's 1818 poem *Childe Harold's Pilgrimage*.\n\nI stood in Venice, on the Bridge of Sighs;\nA palace and a prison on each hand:\nI saw from out the wave her structures rise\nAs from the stroke of the enchanter's wand:\nA thousand years their cloudy wings expand\nAround me, and a dying Glory smiles\nO'er the far times, when many a subject land\nLook'd to the winged Lion's marble piles,\nWhere Venice sate in state, throned on her hundred isles!",
+  "explanation": "**Choice B is correct.** The text is a scene: a town on a windy tableland in January, snow eddying around huddled buildings that look temporary — \"trying not to be blown away.\"\n\n**The Full Solution:**\n- Every sentence describes the town's appearance on this one winter day: the snowfall, the gray prairie and sky, the haphazard houses.\n- The controlling impression is impermanence — houses that look moved in overnight or straying toward the plain, wind blowing under as well as over.\n- Choice B captures both the scene and that impression.\n\n**Why the other choices are wrong:**\n- A: No conversation occurs and no resident appears; the narrator describes unaided.\n- C: The narrator addresses no one and urges nothing; the text observes rather than argues.\n- D: The town's construction history is never given — the houses only look \"as if\" they had been moved in overnight.",
   "_meta": {
-    "anchor": "Lord Byron — Childe Harold's Pilgrimage, Canto IV (1818); genuine public-domain excerpt",
+    "anchor": "Willa Cather — O Pioneers! (1913), opening scene; genuine public-domain excerpt",
     "quoteVerify": true,
-    "source": "Lord Byron, Childe Harold's Pilgrimage, Canto the Fourth, Stanza I (1818)"
-  },
-  "module": 2
+    "source": "Willa Cather, O Pioneers!, Part I, Chapter I (1913); text verified against Project Gutenberg eBook #24"
+  }
 }

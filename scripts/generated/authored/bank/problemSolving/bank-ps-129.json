@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-129",
+ "question": "A reef survey recorded the diameters of $15$ coral colonies. The largest diameter is then replaced by a value $40$ centimeters greater than it, and every other diameter is left unchanged. Which of the following must be true of the revised data set?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mean increases and the median is unchanged."
+  },
+  {
+   "id": "B",
+   "text": "The mean is unchanged and the median increases."
+  },
+  {
+   "id": "C",
+   "text": "Both the mean and the median increase."
+  },
+  {
+   "id": "D",
+   "text": "Both the mean and the median are unchanged."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reverses the two measures; changing one value always changes the sum and therefore the mean",
+  "C": "assumes the median follows the largest value, but the median depends only on the eighth value in order",
+  "D": "assumes an extreme value affects neither measure, though it is part of the sum"
+ },
+ "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice A is correct.** Increasing the largest value raises the sum by $40$, so the mean rises by $\\frac{40}{15}$ centimeters, while the eighth value in order does not move, so the median is unchanged.\n\n**The Fast Way (~40s):** A bigger maximum is still the maximum: the sum grows, so the mean grows, and the middle value keeps its position.\n\n**The Full Solution:**\n\nStep 1: Track the mean. Exactly one value increases by $40$ centimeters, so the sum increases by $40$ and the mean increases by $\\frac{40}{15} \\approx 2.7$ centimeters.\n\nStep 2: Track the median. With $15$ values, the median is the eighth value in increasing order. The value that changed was already the largest and stays the largest, so the first fourteen positions are filled by the same colonies as before.\n\nStep 3: Combine. The mean increases and the median is unchanged. Check: with diameters $10$ through $24$ in steps of $1$, the median is $17$ and the mean is $17$; raising $24$ to $64$ leaves the median at $17$ and lifts the mean to about $19.7$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: has the effects backwards. Any change to one value changes the sum, so the mean cannot stay put.\n* Choice C: assumes the median tracks the largest value. Only the eighth ordered value matters, and it did not change.\n* Choice D: treats the revision as irrelevant to both measures, but it is part of the total.\n\n**Test Day Takeaway:** Ask what each statistic depends on -- the mean depends on the sum, the median on one position, so stretching a value that is already at an end moves only the mean."
+}

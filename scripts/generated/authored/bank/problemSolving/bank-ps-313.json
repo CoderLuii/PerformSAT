@@ -1,0 +1,21 @@
+{
+  "id": "bank-ps-313",
+  "question": "The box plot summarizes the protein content, in grams, of the $24$ energy bars stocked at a store. A value in a data set is classified as an outlier when it is more than $1.5$ times the interquartile range above the third quartile. For this data set, what is the value of $Q_3 + 1.5 \\cdot \\text{IQR}$, in grams?",
+  "diagram": {
+    "type": "boxPlot",
+    "params": {
+      "min": 8,
+      "q1": 14,
+      "median": 16,
+      "q3": 20,
+      "max": 27,
+      "xLabel": "Protein content (g)",
+      "xMin": 5,
+      "xMax": 32,
+      "xGridStep": 1,
+      "xLabelStep": 5
+    }
+  },
+  "correctAnswer": "29",
+  "explanation": "**SAT Pattern: Box Plot Interpretation**\n\n**The correct answer is $29$.**\n\n**The Fast Way (~20s):** $\\text{IQR} = 20 - 14 = 6$, so $Q_3 + 1.5(6) = 20 + 9 = 29$ grams.\n\n**The Full Solution:**\nStep 1: Read the box edges: $Q_1 = 14$ grams and $Q_3 = 20$ grams.\nStep 2: The interquartile range is $Q_3 - Q_1 = 20 - 14 = 6$ grams, so $1.5 \\cdot \\text{IQR} = 1.5(6) = 9$ grams.\nStep 3: The threshold is $Q_3 + 9 = 20 + 9 = 29$ grams. Check: the largest value shown is $27$ grams, which is below $29$, so this data set has no high outlier. $\\checkmark$\n\n**Common Mistakes:** Adding $1.5$ instead of $1.5 \\cdot \\text{IQR}$ gives $21.5$. Multiplying the quartile itself gives $1.5(20) = 30$. Using the range in place of the interquartile range gives $20 + 1.5(27 - 8) = 48.5$.\n\n**Test Day Takeaway:** The outlier rule always multiplies $1.5$ by the interquartile range — the box width — and then adds that product to $Q_3$ (or subtracts it from $Q_1$)."
+}

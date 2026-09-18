@@ -1,0 +1,66 @@
+{
+  "id": "bank-ps-203",
+  "question": "The two-way table gives the number of visitors to a museum over one weekend, classified by ticket type and day. If one of these visitors is selected at random, what is the probability of selecting a visitor who purchased a student ticket?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Saturday",
+        "Sunday",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Adult",
+          "84",
+          "66",
+          "150"
+        ],
+        [
+          "Student",
+          "46",
+          "44",
+          "90"
+        ],
+        [
+          "Senior",
+          "30",
+          "30",
+          "60"
+        ],
+        [
+          "Total",
+          "160",
+          "140",
+          "300"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{3}{10}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{3}{7}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{1}{2}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{23}{45}$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses 90 student visitors over the 210 non-student visitors",
+    "C": "reads the adult row instead of the student row",
+    "D": "computes 46/90, the probability of Saturday given a student ticket"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The student row total is $90$ and the grand total is $300$, so the probability is $\\frac{90}{300} = \\frac{3}{10}$.\n\n**The Full Solution:**\nStep 1: A marginal probability uses a row total (or column total) over the grand total, so read the Total column in the Student row: $46 + 44 = 90$.\nStep 2: The grand total is $300$ visitors.\nStep 3: Divide: $\\frac{90}{300} = \\frac{3}{10}$. Check: $\\frac{3}{10}$ of $300$ is $90$ student visitors. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{3}{7}$): this is $\\frac{90}{210}$, student visitors compared with non-student visitors rather than with all visitors.\n* Choice C ($\\frac{1}{2}$): this is $\\frac{150}{300}$, the probability of selecting an adult ticket — the wrong row.\n* Choice D ($\\frac{23}{45}$): this is $\\frac{46}{90}$, the conditional probability of Saturday given that the ticket is a student ticket.\n\n**Test Day Takeaway:** Marginal means \"read the margin\": one total over the grand total. If your denominator is a row total, you have computed a conditional probability instead."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 844,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "For decades, museum labels presented the Antikythera mechanism, a corroded lump of bronze gears recovered from a Roman-era shipwreck, as a simple navigational aid ______ modern imaging has shown that the device was an intricate astronomical calculator able to predict the positions of the sun and moon.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "aid, however"
-    },
-    {
-      "id": "B",
-      "text": "aid; however,"
-    },
-    {
-      "id": "C",
-      "text": "aid however,"
-    },
-    {
-      "id": "D",
-      "text": "aid, however;"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. Two independent clauses meet at the blank, and the second begins with the conjunctive adverb \"however,\" which is not a conjunction and cannot splice the clauses with a comma. The clauses must be separated by a semicolon, and \"however\" then takes a comma after it: \"aid; however, modern imaging….\" A leaves only a comma between the clauses, a splice; C drops the punctuation before \"however\" entirely, fusing the clauses; and D puts the semicolon after \"however\" rather than before it, leaving the first clause spliced to the adverb."
+ "id": 844,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "Early growers assumed a cranberry bog needed nothing more than acid peat and abundant ______ the great yields came only after growers began spreading a thin layer of sand over the vines every few winters, a practice that anchors new runners and buries the insects that overwinter in the leaf litter.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "water, however"
+  },
+  {
+   "id": "B",
+   "text": "water; however,"
+  },
+  {
+   "id": "C",
+   "text": "water however,"
+  },
+  {
+   "id": "D",
+   "text": "water, however;"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Two independent clauses meet at the blank, and the second opens with the conjunctive adverb \"however\" — the conventional boundary is a semicolon before \"however\" and a comma after it.\n\n**The Full Solution:**\n- Clause one is complete: \"Early growers assumed a cranberry bog needed nothing more than acid peat and abundant water.\"\n- Clause two is also complete: \"the great yields came only after growers began spreading sand over the vines.\"\n- \"However\" linking two independent clauses takes a semicolon before it and a comma after: \"water; however,\".\n\n**Why the other choices are wrong:**\n- A: \"water, however\" splices the two independent clauses with only a comma.\n- C: \"water however,\" runs the clauses together with no boundary before the adverb at all.\n- D: \"water, however;\" puts the marks in reverse order, stranding the semicolon where the clause has not yet ended."
 }

@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-072",
+ "question": "An auditorium ceiling speaker covers the region bounded by $x^{2}+y^{2}-6x+20y+9=0$, with coordinates in feet. What is the sum of the coordinates of the center of that region?",
+ "correctAnswer": "-7",
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**The correct answer is $-7$.**\n\n**The Fast Way (~35s):** The center is $(3,-10)$, and $3+(-10)=-7$.\n\n**The Full Solution:**\n\nStep 1: Halve and reverse the $x$-coefficient. $-6$ gives $h=3$.\n\nStep 2: Halve and reverse the $y$-coefficient. $20$ gives $k=-10$.\n\nStep 3: Add. The sum of the center's coordinates is $3+(-10)=-7$.\n\nCheck: $(x-3)^{2}+(y+10)^{2}=9+100-9=100$ expands back to the given equation, so the center is indeed $(3,-10)$.\n\n**Common Mistakes:**\n\n* $7$: reverses only one of the two signs, reporting $-3+10$.\n* $-14$: uses the full coefficients $-6$ and $20$ instead of half of each, giving $6+(-20)$.\n* $10$: reports the radius $10$ rather than the sum of the coordinates.\n\n**Test Day Takeaway:** Each center coordinate is half of its linear coefficient with the sign flipped — do both variables before adding."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-362",
+ "question": "A fabric-softener protocol requires that $x + k \\ge 5k - 12$, where $k$ is a positive constant and $x$ is the number of grams of softener added. Which inequality gives all possible values of $x$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x \\ge 4k - 12$"
+  },
+  {
+   "id": "B",
+   "text": "$x \\le 4k - 12$"
+  },
+  {
+   "id": "C",
+   "text": "$x \\ge 6k - 12$"
+  },
+  {
+   "id": "D",
+   "text": "$x \\ge 4k + 12$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reverses the direction of the inequality although no negative divisor is used",
+  "C": "adds k to both sides instead of subtracting it, giving 6k",
+  "D": "moves the -12 by adding 12 to the same side it already sits on"
+ },
+ "explanation": "**SAT Pattern: One-Variable Linear Inequality**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Subtracting $k$ from both sides leaves $x \\ge 4k - 12$.\n\n**The Full Solution:**\n\nStep 1: The protocol is $x + k \\ge 5k - 12$, and $x$ is already isolated except for the $+k$.\n\nStep 2: Subtract $k$ from both sides: $x \\ge 5k - k - 12$.\n\nStep 3: Combine the like terms in $k$: $x \\ge 4k - 12$. Check with $k = 5$: the protocol reads $x + 5 \\ge 13$, or $x \\ge 8$, and $4(5) - 12 = 8$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($x \\le 4k - 12$): reverses the symbol even though only a subtraction was performed.\n* Choice C ($x \\ge 6k - 12$): adds $k$ to the right side instead of subtracting it, producing $5k + k$.\n* Choice D ($x \\ge 4k + 12$): changes the sign of the $-12$ even though it never crossed the inequality symbol.\n\n**Test Day Takeaway:** Adding or subtracting the same expression never changes an inequality's direction, and only the terms you actually move change sign."
+}

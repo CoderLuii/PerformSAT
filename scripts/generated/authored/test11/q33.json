@@ -1,36 +1,41 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To introduce Gurov by showing how a piece of resort gossip draws his attention to an unfamiliar woman and how he comes to single her out among the new arrivals."
-    },
-    {
-      "id": "B",
-      "text": "To establish that Gurov, unlike the other visitors at the resort, actively dislikes the company of strangers and prefers to spend his entire holiday at Yalta alone."
-    },
-    {
-      "id": "C",
-      "text": "To describe the unfamiliar woman's daily routine on the sea-front in careful detail in order to suggest that she has grown unhappy with the companions she brought with her to Yalta."
-    },
-    {
-      "id": "D",
-      "text": "To compare the social customs of the resort at Yalta with those of Gurov's home city of Moscow."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage opens with the resort's gossip about \"a new person\"—a lady with a dog—then follows Gurov, who has \"begun to take an interest in new arrivals,\" as he notices her and meets her \"several times a day,\" singling her out among the visitors. Introducing Gurov through that growing attention is the passage's purpose. Choice B reverses his attitude, since he is drawn to the new arrivals rather than avoiding them; Choice C invents an unhappiness the text never reports about the woman; and Choice D promises a Yalta-Moscow comparison the passage does not make.",
-  "passage": "The following text is from Anton Chekhov's 1899 short story \"The Lady with the Dog\" (translated by Constance Garnett). Dmitri Gurov is a Moscow banker on holiday at the seaside resort of Yalta.\n\nIt was said that a new person had appeared on the sea-front: a lady with a little dog. Dmitri Dmitritch Gurov, who had by then been a fortnight at Yalta, and so was fairly at home there, had begun to take an interest in new arrivals. Sitting in Verney's pavilion, he saw, walking on the sea-front, a fair-haired young lady of medium height, wearing a beret; a white Pomeranian dog was running behind her. And afterwards he met her in the public gardens and in the square several times a day. She was walking alone, always wearing the same beret, and always with the same white dog; no one knew who she was, and every one called her simply \"the lady with the dog.\"",
-  "_meta": {
-    "anchor": "Anton Chekhov, 'The Lady with the Dog' (1899), trans. Constance Garnett",
-    "quoteVerify": true,
-    "source": "Anton Chekhov, 'The Lady with the Dog' (1899), trans. Constance Garnett — opening paragraph"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To convey a town's appeal by dwelling on the character of its setting and houses"
   },
-  "id": 1133,
-  "module": 2
+  {
+   "id": "B",
+   "text": "To contrast the cheerfulness of Dunnet's houses with the harsh landscape surrounding them"
+  },
+  {
+   "id": "C",
+   "text": "To explain why the residents of a maritime village chose to build beside the shore"
+  },
+  {
+   "id": "D",
+   "text": "To trace how a coastal town's appearance changed over the years the narrator knew it"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The text opens by naming Dunnet's peculiar attractiveness and then spends its length substantiating that appeal — the rocky shore, the dark woods, the wedged houses with their flowering gardens and gable windows \"like knowing eyes.\"\n\n**The Full Solution:**\n- Sentence one announces the subject: something about Dunnet \"made it seem more attractive than other maritime villages.\"\n- Sentence two proposes the source of the charm — acquaintance — and inventories what that acquaintance makes interesting.\n- Sentence three lingers over the houses themselves, their gardens and watchful windows. Every detail elaborates the town's appeal, which is the purpose choice A names.\n\n**Why the other choices are wrong:**\n- B: The shore and woods are presented as part of the town's interest, not as a harshness set against the houses.\n- C: The residents' reasons for building where they did are never taken up.\n- D: The description is of the town as it is; no change over time is traced.",
+ "passage": "The following text is adapted from Sarah Orne Jewett's 1896 book \"The Country of the Pointed Firs.\"\n\nThere was something about the coast town of Dunnet which made it seem more attractive than other maritime villages of eastern Maine. Perhaps it was the simple fact of acquaintance with that neighborhood which made it so attaching, and gave such interest to the rocky shore and dark woods, and the few houses which seemed to be securely wedged and tree-nailed in among the ledges by the Landing. These houses made the most of their seaward view, and there was a gayety and determined floweriness in their bits of garden ground; the small-paned high windows in the peaks of their steep gables were like knowing eyes that watched the harbor and the far sea-line beyond, or looked northward all along the shore and its background of spruces and balsam firs.",
+ "_meta": {
+  "anchor": "Sarah Orne Jewett, The Country of the Pointed Firs (1896) — opening of chapter I, \"The Return\"",
+  "quoteVerify": true,
+  "source": "Sarah Orne Jewett, The Country of the Pointed Firs (1896) — Project Gutenberg ebook 367; opening paragraph verbatim (initial capitalization normalized)",
+  "distractors": {
+   "B": "imports a contrast the text does not draw",
+   "C": "motive never discussed",
+   "D": "no change over time"
+  }
+ },
+ "id": 1133,
+ "module": 2
 }

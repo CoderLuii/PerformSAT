@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-399",
+ "question": "A mill's weekly output of wool blanket throws above its contract level is modeled by $f(x)=-3(x-b)^2+54$, where $b$ is a constant greater than $2$. If $f(2)=27$, what is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-1$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes the root ruled out by the condition b > 2",
+  "B": "reports the absolute difference 2 - b = 3 instead of b",
+  "D": "reports (2 - b)^2 = 9 instead of b"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** $f(2)=27$ gives $-3(2-b)^2=-27$, so $(2-b)^2=9$ and $b=-1$ or $5$; $b>2$ leaves $5$.\n\n**The Full Solution:**\nStep 1: Substitute $x=2$: $-3(2-b)^2+54=27$, so $-3(2-b)^2=-27$.\nStep 2: Divide by $-3$: $(2-b)^2=9$, so $2-b=3$ or $2-b=-3$, giving $b=-1$ or $b=5$.\nStep 3: The condition $b>2$ selects $b=5$. Check: $f(x)=-3(x-5)^2+54$ gives $f(2)=-27+54=27$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-1$): takes the root the condition $b>2$ rules out.\n* Choice B ($3$): reports $|2-b|=3$ rather than $b$ itself.\n* Choice D ($9$): reports $(2-b)^2=9$ without taking the square root.\n\n**Test Day Takeaway:** Working backwards from an output leaves a squared binomial — solve for both roots, then let the stated restriction choose."
+}

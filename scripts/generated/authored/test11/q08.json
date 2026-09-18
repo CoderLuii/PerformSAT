@@ -1,43 +1,48 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "question": "Based on the texts, how would the authors of Text 2 most likely respond to the explanation offered in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "They would note that the seawater reactions described in Text 1 cannot account for the durability of Roman structures built far inland, which their own lime-clast mechanism explains without any role for the sea."
-    },
-    {
-      "id": "B",
-      "text": "They would argue that the volcanic ash emphasized in Text 1 played no genuine part in the strength of any Roman concrete, since on their analysis the embedded lime clasts alone determine whether the hardened material endures over time."
-    },
-    {
-      "id": "C",
-      "text": "They would conclude that Roman concrete owes its longevity entirely to seawater, and that modern marine concrete fails only because it is not exposed to enough of it."
-    },
-    {
-      "id": "D",
-      "text": "They would accept that their lime-clast findings apply only to harbor concrete, leaving Text 1's account as the better explanation for structures built on land."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. Text 2 locates Roman durability in lime clasts that release calcium to seal cracks whenever water—any water—seeps in, and it stresses that this self-healing would protect inland structures the sea never touches. Its authors would therefore point out that Text 1's seawater mechanism, however valid for harbor concrete, cannot explain the survival of Roman buildings far from the coast, where their own mechanism still applies. Choice B overstates their view: they do not deny that volcanic ash matters, only that seawater is the whole story. Choice C attributes to them the seawater-only position they reject, and Choice D has them conceding that their findings are narrower than they actually claim.",
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "Why has Roman concrete in coastal harbors survived two thousand years of pounding waves when modern marine concrete crumbles in decades? The geologist Marie Jackson has argued that the answer lies in the Romans' volcanic ash. As seawater percolated through the ancient concrete, it slowly dissolved components of the ash and, over centuries, grew interlocking mineral crystals within the material's pores. On this account, the concrete did not merely resist the sea; it used seawater as an ingredient, becoming stronger and more cohesive with age rather than weaker."
-    },
-    {
-      "label": "Text 2",
-      "text": "Examining the white mineral lumps long dismissed as evidence of careless mixing, a team led by the engineer Admir Masic reached a different conclusion about Roman durability. The lumps, they argue, show that the Romans mixed their concrete hot, using quicklime. These lime-rich inclusions act as a built-in repair kit: when a crack forms and water seeps in, calcium dissolves out of a nearby lump and recrystallizes across the gap, sealing it. Because this self-healing depends only on the lime clasts and ordinary water, the team notes, it would protect inland structures that no seawater ever reaches."
-    }
-  ],
-  "_meta": {
-    "anchor": "Roman concrete durability: seawater/pozzolan mineral growth (Jackson) vs. hot-mixed lime-clast self-healing (Masic, Seymour)"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "Craft guilds dominated European manufacturing for five centuries, and the economic historian S. R. Epstein argued that their endurance rested on a genuine service: training. A guild apprenticeship bound a young worker to a master for a term of years, and guild rules gave the master a reason to teach rather than merely extract labor, since fees and completion requirements were enforced by the guild's own courts. In Epstein's account, guilds persisted because they solved a real problem — sustaining the costly transmission of skills from one generation to the next."
   },
-  "id": 1108,
-  "module": 1
+  {
+   "label": "Text 2",
+   "text": "Drawing on court records, petitions, and apprenticeship registers from across Europe, the economic historian Sheilagh Ogilvie has questioned admiring accounts of guilds. Guilds, she notes, also used their rules to exclude outsiders — women, migrants, religious minorities — and to limit how many workers could enter a trade, keeping prices high at consumers' expense. An institution can endure, Ogilvie argues, not because it serves the wider economy but because it rewards the insiders who hold the power to keep it in place."
+  }
+ ],
+ "question": "Based on the texts, how would Ogilvie (Text 2) most likely respond to the explanation presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "She would object that a guild's long endurance is not evidence that the guild benefited anyone beyond its own members."
+  },
+  {
+   "id": "B",
+   "text": "She would deny that guild apprenticeships involved any meaningful transmission of skills from masters to apprentices."
+  },
+  {
+   "id": "C",
+   "text": "She would agree that guilds persisted because they served the wider economy, while insisting that training was the least important such service."
+  },
+  {
+   "id": "D",
+   "text": "She would argue that apprenticeship registers are too incomplete to support general claims about how guilds operated."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Epstein's inference runs from endurance to usefulness — guilds lasted because they solved a real problem. Ogilvie attacks precisely that inference: an institution can endure \"not because it serves the wider economy but because it rewards the insiders who hold the power to keep it in place.\"\n\n**The Full Solution:**\n- Text 1's explanation has two parts: guilds provided genuine training, and that service explains their persistence.\n- Text 2 does not deny that training occurred; it supplies an alternative engine of persistence — insider benefit backed by power — and documents exclusion and price-raising as evidence.\n- Her response to Epstein would therefore target the logic: longevity by itself cannot certify a wider benefit. That is choice A.\n\n**Why the other choices are wrong:**\n- B: It overshoots — Ogilvie questions what endurance proves, not whether masters ever taught apprentices.\n- C: It miscasts her position as agreement; she explicitly rejects the claim that service to the wider economy explains guild persistence.\n- D: It reverses her method — apprenticeship registers are among the very sources she herself draws on.",
+ "_meta": {
+  "anchor": "guild apprenticeship debate — S. R. Epstein (skills transmission) vs. Sheilagh Ogilvie (rent-seeking insiders)",
+  "distractors": {
+   "B": "overshoot beyond her stated challenge",
+   "C": "miscast agreement",
+   "D": "reverses her own evidentiary method"
+  }
+ },
+ "id": 1108,
+ "module": 1
 }

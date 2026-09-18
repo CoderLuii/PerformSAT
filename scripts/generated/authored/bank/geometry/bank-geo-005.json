@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-005",
+ "question": "A rectangular solvent storage cabinet is $x$ centimeters wide, twice as deep as it is wide, and $40$ centimeters tall. Which expression gives its volume, in cubic centimeters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$80x$"
+  },
+  {
+   "id": "B",
+   "text": "$40x^2$"
+  },
+  {
+   "id": "C",
+   "text": "$80x^2$"
+  },
+  {
+   "id": "D",
+   "text": "$80x^3$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "multiplies 2 times 40 times x, using only one of the two horizontal dimensions",
+  "B": "forgets to double the depth, multiplying x times x times 40",
+  "D": "treats the 40-centimeter height as a third factor of x as well"
+ },
+ "explanation": "**SAT Pattern: Rectangular Prism Volume**\n\n**Choice C is correct.** The three dimensions are $x$, $2x$, and $40$, so the volume is $x \\cdot 2x \\cdot 40 = 80x^2$.\n\n**The Fast Way (~15s):** $x \\cdot 2x \\cdot 40 = 80x^2$.\n\n**The Full Solution:**\n\nStep 1: The width is $x$, the depth is twice the width, or $2x$, and the height is $40$ centimeters.\n\nStep 2: Volume of a rectangular prism is the product of the three dimensions: $x(2x)(40)$.\n\nStep 3: Multiply: $2 \\cdot 40 = 80$ and $x \\cdot x = x^2$, giving $80x^2$. Check with $x = 3$: the cabinet is $3$ by $6$ by $40$, volume $720$, and $80(3)^2 = 720$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($80x$): uses only one of the two horizontal dimensions, giving $2 \\cdot 40 \\cdot x$.\n* Choice B ($40x^2$): forgets that the depth is doubled.\n* Choice D ($80x^3$): treats the fixed $40$-centimeter height as another factor of $x$.\n\n**Test Day Takeaway:** Write all three dimensions in terms of the same variable before multiplying; the degree of the answer tells you how many of them actually depended on $x$."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "In the xy-plane, segment $AB$ has endpoints $(-2, 9)$ and $(5, 5)$, and segment $BC$ meets segment $AB$ at a right angle at $B$. What is the slope of segment $BC$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{7}{4}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{4}{7}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{4}{7}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{7}{4}$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "takes the reciprocal of -4/7 but keeps the negative sign instead of changing it, giving -7/4",
+  "B": "reports the slope of segment AB itself, -4/7, without any perpendicular adjustment",
+  "C": "changes the sign of AB's slope without taking the reciprocal, giving 4/7"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The slope of $AB$ is $\\frac{5 - 9}{5 - (-2)} = -\\frac{4}{7}$, and the negative reciprocal of $-\\frac{4}{7}$ is $\\frac{7}{4}$.\n\n**The Full Solution:**\nStep 1: Find the slope of segment $AB$ from its endpoints: $\\frac{5 - 9}{5 - (-2)} = \\frac{-4}{7} = -\\frac{4}{7}$.\nStep 2: Perpendicular slopes multiply to $-1$, so the slope $m$ of segment $BC$ satisfies $-\\frac{4}{7}m = -1$.\nStep 3: Solve: $m = \\frac{7}{4}$. Check: $-\\frac{4}{7} \\cdot \\frac{7}{4} = -1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{7}{4}$): flips $-\\frac{4}{7}$ but leaves it negative. The product $-\\frac{4}{7} \\cdot \\left(-\\frac{7}{4}\\right) = 1$, not $-1$, so those two lines are not perpendicular.\n* Choice B ($-\\frac{4}{7}$): reports the slope of $AB$ itself. A segment perpendicular to $AB$ cannot share its slope; equal slopes mean parallel.\n* Choice C ($\\frac{4}{7}$): changes the sign but skips the reciprocal. Here $-\\frac{4}{7} \\cdot \\frac{4}{7} = -\\frac{16}{49}$, which is not $-1$.\n\n**Test Day Takeaway:** Perpendicular means both moves at once, flip the fraction and change the sign, then verify by multiplying the two slopes to confirm you get exactly $-1$."
+}

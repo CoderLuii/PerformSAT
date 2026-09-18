@@ -46,6 +46,7 @@ const GUARDED_FILES = [
 // hybridStudyPlanService imports studyPlanGenerator.
 const FORBIDDEN_SPECIFIERS = [
   { name: 'data/questions/bank (math corpus)', pattern: /(?:^|\/)data\/questions\/bank$/ },
+  { name: 'data/questions/mathTestBank (recreated math corpus)', pattern: /(?:^|\/)data\/questions\/mathTestBank$/ },
   { name: 'data/questions/rwBank (R&W corpus)', pattern: /(?:^|\/)data\/questions\/rwBank$/ },
   { name: 'data/practiceTests (test catalog)', pattern: /(?:^|\/)data\/practiceTests$/ },
   { name: 'data/questions (topic files)', pattern: /(?:^|\/)data\/questions$/ },

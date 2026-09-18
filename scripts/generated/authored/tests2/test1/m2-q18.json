@@ -1,0 +1,29 @@
+{
+  "id": 18,
+  "question": "In the xy-plane, line $\\ell$ has the equation $2y = 5x - 8$ and line $n$ has the equation $ky = 15x + m$, where $k$ and $m$ are constants. Every point that lies on line $\\ell$ also lies on line $n$. What is the value of $k + m$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-24$"
+    },
+    {
+      "id": "B",
+      "text": "$-22$"
+    },
+    {
+      "id": "C",
+      "text": "$-18$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "finds m = -24 correctly but reports m alone instead of k + m",
+    "B": "scales the right side by 3 to get m = -24 but leaves k at 2, giving 2 + (-24) = -22",
+    "D": "finds k = 6 correctly but reports k alone instead of k + m"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Matching $5x$ to $15x$ means the whole equation was multiplied by $3$: $6y = 15x - 24$. So $k = 6$, $m = -24$, and $k + m = -18$.\n\n**The Full Solution:**\nStep 1: If every point of line $\\ell$ lies on line $n$, the two lines are identical, so one equation is a nonzero constant multiple of the other.\nStep 2: The $x$-term goes from $5x$ to $15x$, so the multiplier is $3$. Multiplying every term of $2y = 5x - 8$ by $3$ gives $6y = 15x - 24$, so $k = 6$ and $m = -24$.\nStep 3: Therefore $k + m = 6 + (-24) = -18$. Check by slope: $2y = 5x - 8$ gives $y = \\frac{5}{2}x - 4$, and $6y = 15x - 24$ gives $y = \\frac{5}{2}x - 4$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-24$): this is $m$. Both constants are found correctly, but only one is reported.\n* Choice B ($-22$): applies the multiplier of $3$ to the right side but leaves the left side as $2y$, so $k$ stays $2$. Scaling must reach every term.\n* Choice D ($6$): this is $k$, the other half of the requested sum.\n\n**Test Day Takeaway:** Identical lines means one equation is the other times a single constant. Find the multiplier from the term you can compare, apply it to every term, and then reread which combination the question wants."
+}

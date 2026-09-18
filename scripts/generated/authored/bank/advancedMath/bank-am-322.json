@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-322",
+ "question": "An irrigation controller stores the four square-root equations listed below, each a setpoint condition on the valve offset $x$ in millimeters. Which of the four equations has no real solution?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\sqrt{x+3}=0$"
+  },
+  {
+   "id": "B",
+   "text": "$\\sqrt{x-3}=2$"
+  },
+  {
+   "id": "C",
+   "text": "$\\sqrt{3-x}=5$"
+  },
+  {
+   "id": "D",
+   "text": "$\\sqrt{x+3}=-2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "assumes a principal square root cannot equal 0, but x = -3 makes the radicand 0 and the equation true",
+  "B": "assumes the radicand x - 3 is always negative, but x = 7 makes it 4",
+  "C": "assumes 3 - x is always negative, but x = -22 makes it 25"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** A principal square root is never negative, so no real $x$ can make $\\sqrt{x+3}$ equal $-2$.\n\n**The Full Solution:**\n\nStep 1: For every real number in the domain of a square root, the output of $\\sqrt{\\ }$ is greater than or equal to $0$.\n\nStep 2: In choice D the right side is $-2$, which is less than $0$, so no input can produce it.\n\nStep 3: Each other equation does have a solution: $x=-3$ solves choice A, $x=7$ solves choice B, and $x=-22$ solves choice C. Check: $\\sqrt{-3+3}=0$, $\\sqrt{7-3}=2$, and $\\sqrt{3-(-22)}=\\sqrt{25}=5$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: assumes a square root cannot equal $0$; it does, at $x=-3$.\n* Choice B: assumes $x-3$ must be negative; at $x=7$ it is $4$.\n* Choice C: assumes $3-x$ must be negative; at $x=-22$ it is $25$.\n\n**Test Day Takeaway:** Check the sign of the isolated side before doing any algebra \u2014 a negative value on the far side of a principal square root ends the question."
+}

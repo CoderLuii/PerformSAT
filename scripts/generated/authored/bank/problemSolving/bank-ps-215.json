@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-215",
+  "question": "At a testing center, $40\\%$ of the applicants take the exam in the morning and the rest take it in the afternoon. Of the morning applicants, $85\\%$ pass, and of the afternoon applicants, $70\\%$ pass. If one applicant is selected at random, what is the probability that the applicant passes the exam?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.34$"
+    },
+    {
+      "id": "B",
+      "text": "$0.42$"
+    },
+    {
+      "id": "C",
+      "text": "$0.76$"
+    },
+    {
+      "id": "D",
+      "text": "$0.775$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "keeps only the morning branch, 0.40 x 0.85",
+    "B": "keeps only the afternoon branch, 0.60 x 0.70",
+    "D": "averages the two pass rates, ignoring the unequal group sizes"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** $0.40(0.85) + 0.60(0.70) = 0.34 + 0.42 = 0.76$.\n\n**The Full Solution:**\nStep 1: An applicant can pass in two disjoint ways: morning and passing, or afternoon and passing. The afternoon share is $1 - 0.40 = 0.60$.\nStep 2: Compute each branch: $0.40 \\times 0.85 = 0.34$ and $0.60 \\times 0.70 = 0.42$.\nStep 3: Add the branches: $0.34 + 0.42 = 0.76$. Check with $100$ applicants: $34$ of the $40$ morning applicants pass and $42$ of the $60$ afternoon applicants pass, for $76$ of $100$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.34$): stops after the morning branch and never adds the afternoon passers.\n* Choice B ($0.42$): stops after the afternoon branch.\n* Choice D ($0.775$): averages $85\\%$ and $70\\%$, which would only be correct if the two groups were the same size; the larger afternoon group pulls the true value below the average.\n\n**Test Day Takeaway:** When a population splits into groups with different rates, weight each rate by its group's share and add — never average the rates."
+}

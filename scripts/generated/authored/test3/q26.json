@@ -5,40 +5,40 @@
  "band": 3,
  "domain": "expression-of-ideas",
  "skill": "rhetorical-synthesis",
+ "type": "multiple-choice",
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Alice Hamilton (1869-1970) was an American physician who studied diseases of the workplace.",
+   "In the early 1900s, she visited factories, mines, and mills to trace illnesses among workers to the lead, mercury, and other toxins they handled.",
+   "Her reports persuaded several states to pass the first laws compensating workers sickened on the job.",
+   "In 1919 she became the first woman appointed to the faculty of Harvard Medical School.",
+   "Her 1925 book on industrial poisons became a standard text in the new field of industrial medicine."
+  ],
+  "goal": "The student wants to introduce Alice Hamilton's main contribution to an audience unfamiliar with her work."
+ },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Iris Müller-Westermann, a Swedish art historian, has organized a number of major exhibitions at the Moderna Museet in Stockholm and has edited the scholarly catalogues that accompanied several of them."
+   "text": "In 1919, Alice Hamilton became the first woman ever to be appointed to the faculty of Harvard Medical School."
   },
   {
    "id": "B",
-   "text": "Müller-Westermann argues that af Klint painted large abstractions from 1906, before Kandinsky and Malevich, and that her absence from standard histories reflects the marginalization of women and esoteric subjects."
+   "text": "Physician Alice Hamilton traced illnesses among early twentieth-century workers to the toxins they handled on the job, work that persuaded states to pass the first laws compensating sickened workers."
   },
   {
    "id": "C",
-   "text": "Hilma af Klint, a Swedish painter who lived from 1862 to 1944, began producing her large nonrepresentational compositions in 1906 and continued developing them across the following two decades."
+   "text": "Alice Hamilton visited factories, mines, and mills in the early 1900s, and she also published a book in 1925."
   },
   {
    "id": "D",
-   "text": "Müller-Westermann curated a 2013 retrospective of af Klint's work at the Moderna Museet and edited the volume that accompanied that exhibition."
+   "text": "Because workers in the early 1900s handled lead, mercury, and other toxins on the job, many of them fell ill, and several states eventually responded by passing the first laws that compensated workers for illnesses they developed at work."
   }
  ],
  "correctAnswer": "B",
- "explanation": "The correct answer is B. The goal is to emphasize the historical significance of Müller-Westermann's argument. B states that argument in both its parts — that af Klint's abstractions of 1906 came before those of Kandinsky and Malevich, and that her absence from standard histories reflects the marginalization of women and of esoteric subject matter — which together explain why the argument matters. A and D report Müller-Westermann's exhibitions and editing but never state her argument, so they introduce her rather than convey its significance. C describes af Klint's own career without mentioning Müller-Westermann or her claim at all.",
+ "explanation": "**Choice B is correct.** The goal has two requirements — identify Hamilton for readers who do not know her and present her main contribution — and B satisfies both: it names her profession, states what she did (traced workers' illnesses to workplace toxins), and gives the contribution's consequence (the first compensation laws).\n\n**The Full Solution:**\n- An introduction for an unfamiliar audience must say who she was; \"Physician Alice Hamilton\" does that economically.\n- Her main contribution, per the notes, is the tracing of illness to toxins and the reforms it produced; B links the two in one sentence.\n\n**Why the other choices are wrong:**\n- A: It leads with an academic honor and never mentions the work the honor recognized.\n- C: It strings together activities (visits, a book) without saying what Hamilton discovered or why it mattered.\n- D: It narrates the era's industrial illness and reform while omitting Hamilton entirely — the one thing the goal requires the sentence to introduce.",
  "_meta": {
-  "anchor": "Iris Müller-Westermann — art historian; Moderna Museet; chronological priority of Hilma af Klint's abstraction"
- },
- "studentNotes": {
-  "intro": "While researching a topic, a student has taken the following notes:",
-  "bullets": [
-   "Iris Müller-Westermann is a Swedish art historian who has organized exhibitions at the Moderna Museet in Stockholm.",
-   "She curated a 2013 retrospective and edited the accompanying volume Hilma af Klint: A Pioneer of Abstraction.",
-   "Hilma af Klint (1862-1944) was a Swedish painter who produced large-scale nonrepresentational compositions beginning in 1906.",
-   "Müller-Westermann argues that af Klint produced these compositions years before painters such as Wassily Kandinsky and Kazimir Malevich did comparable work.",
-   "Müller-Westermann argues that af Klint's exclusion from standard histories of abstraction reflects the marginalization of women and of esoteric subject matter from mid-twentieth-century museum narratives."
-  ],
-  "goal": "The student wants to emphasize the historical significance of Müller-Westermann's argument about af Klint."
- },
- "type": "multiple-choice"
+  "anchor": "Alice Hamilton — industrial toxicology and the first workplace-compensation laws"
+ }
 }

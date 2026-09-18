@@ -1,0 +1,56 @@
+{
+ "id": "bank-am-329",
+ "question": "The table gives values of the exponential function $h$, which models the airborne pollen count, in grains per cubic meter, on day $x$ after one grass species reaches its seasonal peak. For what value of $x$ is $h(x) \\cdot 4^{3x} = 4^{16}$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Day x",
+    "h(x)"
+   ],
+   "rows": [
+    [
+     "0",
+     "256"
+    ],
+    [
+     "1",
+     "64"
+    ],
+    [
+     "2",
+     "16"
+    ],
+    [
+     "3",
+     "4"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$8$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "quotes the exponent of $h(0) = 4^{4}$ instead of solving for $x$",
+  "B": "uses $h(x) = 4^{\\,x-4}$, reversing the sign of the exponent and solving $4x - 4 = 16$",
+  "D": "drops the constant $4$ from the exponent of $h$, solving $2x = 16$"
+ },
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The table gives $h(x) = 4^{\\,4-x}$, so the left side is $4^{\\,4-x+3x} = 4^{\\,4+2x}$; setting $4 + 2x = 16$ gives $x = 6$.\n\n**The Full Solution:**\nStep 1: Written as powers of $4$, the table reads $256 = 4^{4}$, $64 = 4^{3}$, $16 = 4^{2}$, $4 = 4^{1}$, so $h(x) = 4^{\\,4-x}$.\nStep 2: Multiplying by $4^{3x}$ adds exponents: $4^{\\,4-x} \\cdot 4^{3x} = 4^{\\,4+2x}$.\nStep 3: Equal bases force $4 + 2x = 16$, so $2x = 12$ and $x = 6$. Check: $h(6) = 4^{-2}$ and $4^{-2} \\cdot 4^{18} = 4^{16}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reports the exponent at day $0$, which is a value of the function, not a solution.\n* Choice B ($5$): reads the decay as $4^{\\,x-4}$, so the exponent sum becomes $4x - 4$.\n* Choice D ($8$): forgets the leading $4$ in $4 + 2x$, solving $2x = 16$.\n\n**Test Day Takeaway:** Convert the table to a single power first, then add the exponents — a decaying table means the exponent counts DOWN as the input rises."
+}

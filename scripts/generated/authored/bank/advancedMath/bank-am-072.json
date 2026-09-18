@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-072",
+ "question": "A radio telescope's total integration time, in seconds, for a night of observing is $6x^{2}+15x$, and the night contains $3x$ scans, where $x>0$. Which expression gives the mean integration time per scan?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2x+15$"
+  },
+  {
+   "id": "B",
+   "text": "$2x^{2}+5$"
+  },
+  {
+   "id": "C",
+   "text": "$6x+5$"
+  },
+  {
+   "id": "D",
+   "text": "$2x+5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 15x by x alone instead of by 3x, leaving 15 in place of 5",
+  "B": "divides 6x squared by 3 alone instead of by 3x, leaving 2x squared in place of 2x",
+  "C": "divides 6x squared by x alone instead of by 3x, leaving 6x in place of 2x"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Simplify Rational Expression (Cancel Common Factor)**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** $\\frac{6x^{2}+15x}{3x}=\\frac{3x(2x+5)}{3x}=2x+5$.\n\n**The Full Solution:**\n\nStep 1: The mean per scan is the total time divided by the number of scans: $\\frac{6x^{2}+15x}{3x}$.\n\nStep 2: Factor the common $3x$ out of the numerator: $6x^{2}+15x=3x(2x+5)$.\n\nStep 3: Since $x>0$, the factor $3x$ is nonzero and cancels, leaving $2x+5$. Check at $x=2$: the total is $24+30=54$ over $6$ scans, and $54\\div6=9=2(2)+5$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2x+15$): divides the second term by $x$ only, keeping $15$ instead of $5$.\n* Choice B ($2x^{2}+5$): divides the first term by $3$ only, keeping $2x^{2}$ instead of $2x$.\n* Choice C ($6x+5$): divides the first term by $x$ only, keeping $6x$ instead of $2x$.\n\n**Test Day Takeaway:** Factor the common monomial out of the whole numerator first; every term has to be divided by all of $3x$, not part of it."
+}

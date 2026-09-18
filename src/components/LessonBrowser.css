@@ -295,7 +295,18 @@
   .lv-header { flex-direction: column; align-items: stretch; }
   .lv-search { width: 100%; }
   .lv-title { font-size: 34px; }
-  .lv-grid { grid-template-columns: 1fr; }
+  /* minmax(0, 1fr), not a bare 1fr: a bare `1fr` keeps the cards' automatic
+     minimum (min-width: auto), so the single column grew to a card's
+     min-content (108px thumbnail + nowrap domain badge = 403px) and pushed the
+     page to 507px inside a 390px viewport. */
+  .lv-grid { grid-template-columns: minmax(0, 1fr); }
+  .lv-card { min-width: 0; }
+  /* The card body shrinks but its title row did not: `.lv-card-domain` is
+     `flex: none; white-space: nowrap`, so title + badge stayed at max-content
+     and the badge hung ~80px past the card. Let the row wrap and the title
+     shrink; the badge keeps its nowrap and drops to its own line when needed. */
+  .lv-card-head { flex-wrap: wrap; min-width: 0; }
+  .lv-card-title { min-width: 0; }
   .lv-hero { flex-direction: column; }
   .lv-hero-tile { width: 100%; min-height: 150px; }
 }

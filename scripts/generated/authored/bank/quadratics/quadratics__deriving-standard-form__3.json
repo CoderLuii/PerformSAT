@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "A print studio models the net revenue, in hundreds of dollars, from an edition priced $x$ dollars above its base price by $R(x) = -2(x + 7)(x - 3)$. Which of the following is an equivalent form of $R(x)$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-2x^2 - 8x - 42$"
+    },
+    {
+      "id": "B",
+      "text": "$-2x^2 - 8x + 42$"
+    },
+    {
+      "id": "C",
+      "text": "$-2x^2 + 8x + 42$"
+    },
+    {
+      "id": "D",
+      "text": "$-2x^2 - 8x + 21$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies -2 by -21 as -42 instead of +42, dropping the sign of the product of the constants",
+    "C": "expands (x + 7)(x - 3) as x^2 - 4x - 21, reversing the sign of the middle term",
+    "D": "leaves the constant term at 21, never multiplying it by the -2 outside"
+  },
+  "correctAnswer": "B",
+  "hint": "Multiply the two binomials first, then hand the -2 to every term.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** $(x + 7)(x - 3) = x^2 + 4x - 21$, and multiplying by $-2$ gives $-2x^2 - 8x + 42$.\n\n**The Full Solution:**\nStep 1: Multiply the binomials. $(x + 7)(x - 3) = x^2 - 3x + 7x - 21 = x^2 + 4x - 21$.\nStep 2: Distribute the $-2$ to all three terms. $-2(x^2) = -2x^2$, $-2(4x) = -8x$, and $-2(-21) = +42$.\nStep 3: Check one value. At $x = 0$ the original gives $-2(7)(-3) = 42$, and the expanded form gives $42$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2x^2 - 8x - 42$): signs the constant as $-42$; two negatives, $-2$ and $-21$, multiply to a positive.\n* Choice C ($-2x^2 + 8x + 42$): expands the binomials to $x^2 - 4x - 21$, reversing the middle term. The $+7$ outweighs the $-3$.\n* Choice D ($-2x^2 - 8x + 21$): leaves $21$ untouched. Every term inside the parentheses gets the $-2$.\n\n**Test Day Takeaway:** Multiply the binomials completely, then distribute the outside factor to all three terms — the constant included."
+}

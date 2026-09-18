@@ -1,0 +1,25 @@
+{
+  "id": 9031,
+  "passage": "Reinforced concrete reached ordinary building sites in the 1880s along two tracks that ran side by side. In France, the arrangements of iron rods first patented for garden tubs and water tanks were being licensed to builders abroad, one system at a time. ______, engineers at a German firm were loading test beams until they broke and publishing the figures, so that the rods in a floor could be placed by calculation.",
+  "question": "Which choice completes the text with the most logical transition?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Consequently,"
+    },
+    {
+      "id": "B",
+      "text": "Meanwhile,"
+    },
+    {
+      "id": "C",
+      "text": "By contrast,"
+    },
+    {
+      "id": "D",
+      "text": "Eventually,"
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** The passage sets two developments of the 1880s side by side in two countries, and Meanwhile is the transition that holds concurrent developments together.\n\n**The Full Solution:**\n- Take the first sentence as an instruction: two tracks that ran side by side promises two strands in the same period rather than a chain of events.\n- The sentence before the blank reports what was happening in France; the sentence after reports what engineers at a German firm were doing during the same decade. Meanwhile marks that simultaneity without claiming that either strand produced the other.\n- Settle the relation before weighing the wording. When neither half causes, contradicts, or follows the other, the text needs a simultaneity transition.\n\n**Why the other choices are wrong:**\n- A: Consequently would make the German load tests an effect of the French licensing, but the passage presents the two as parallel rather than as cause and effect.\n- C: By contrast requires opposition. Both sentences describe the same technique spreading, so there is nothing for a contrast to work on.\n- D: Eventually would place the testing after the licensing in a sequence, contradicting the two tracks that ran side by side."
+}

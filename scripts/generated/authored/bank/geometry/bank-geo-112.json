@@ -1,0 +1,18 @@
+{
+ "id": "bank-geo-112",
+ "question": "A right triangle has side lengths $15$, $20$, and $25$, as shown. What is the cosine of the angle opposite the side of length $15$? Express your answer as a fraction.",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "sideLabels": [
+    "20",
+    "15",
+    "25"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "4/5",
+ "explanation": "**SAT Pattern: SOH-CAH-TOA in a 3-4-5 Triangle**\n\n**The correct answer is $\\frac{4}{5}$.**\n\n**The Fast Way (~25s):** The hypotenuse is $25$, so the angle opposite $15$ has adjacent leg $20$, and its cosine is $\\frac{20}{25} = \\frac{4}{5}$.\n\n**The Full Solution:**\nStep 1: The longest side, $25$, is the hypotenuse, and $15$ and $20$ are the legs.\nStep 2: The angle opposite the leg of length $15$ has the other leg, $20$, adjacent to it.\nStep 3: $\\cos = \\frac{20}{25} = \\frac{4}{5}$.\n\nCheck: $15^2 + 20^2 = 225 + 400 = 625 = 25^2$, and $15$, $20$, $25$ is the $3$-$4$-$5$ triple scaled by $5$.\n\n**Common Mistakes:**\n* Answering $\\frac{3}{5}$ by using $\\frac{15}{25}$, which is the sine of that angle.\n* Answering $\\frac{3}{4}$ by dividing the legs, which produces a tangent.\n* Treating $20$ as the hypotenuse and answering $\\frac{15}{20}$; the hypotenuse is always the longest side.\n\n**Test Day Takeaway:** Identify the hypotenuse before choosing a ratio; in a scaled $3$-$4$-$5$ triangle every answer reduces to fifths or fourths."
+}

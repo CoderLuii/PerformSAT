@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-031",
+ "question": "The cross section of a parabolic solar reflector is modeled by $y=2x^2+5x+4$, and a straight support strut by $y=-3x+p$, where $p$ is a constant. The strut touches the reflector at exactly one point. What is the value of $p$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves 4 - p = 8 but reports p as positive 4",
+  "C": "reports 4 - p = 8 instead of solving for p",
+  "D": "takes 4 - p = -8, the wrong sign of the square root of 64"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Tangent Line to Parabola (Discriminant Method)**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Equating gives $2x^2+8x+(4-p)=0$; tangency forces $64-8(4-p)=0$, so $4-p=8$ and $p=-4$.\n\n**The Full Solution:**\nStep 1: Set $2x^2+5x+4=-3x+p$, which rearranges to $2x^2+8x+(4-p)=0$.\nStep 2: One contact point means $8^2-4(2)(4-p)=0$, that is $64-8(4-p)=0$.\nStep 3: So $4-p=8$ and $p=-4$. Check: $2x^2+8x+8=2(x+2)^2=0$ has the single solution $x=-2$, where both graphs give $y=2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($4$): reaches $4-p=8$ but reports $p$ without the sign change.\n* Choice C ($8$): reports the value of $4-p$ rather than $p$.\n* Choice D ($12$): uses $4-p=-8$, the wrong sign of $\\sqrt{64}$.\n\n**Test Day Takeaway:** With a leading coefficient other than $1$, keep the $4a$ in $b^2-4ac$ — dropping it changes the answer entirely."
+}

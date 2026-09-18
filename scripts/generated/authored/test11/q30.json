@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "supplant"
-    },
-    {
-      "id": "B",
-      "text": "endorse"
-    },
-    {
-      "id": "C",
-      "text": "ignore"
-    },
-    {
-      "id": "D",
-      "text": "exaggerate"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"supplant.\" The astronomers judged Ptolemy's device incoherent and built new constructions to take its place while keeping his accurate predictions, so they sought to replace the device. \"Supplant,\" meaning to displace and take the place of, fits exactly. \"Endorse\" is the opposite of objecting to it; \"ignore\" contradicts the effort they put into replacing it; and \"exaggerate\" does not describe doing anything to the device at all.",
-  "passage": "The astronomers of the medieval Islamic world did not merely preserve Greek astronomy; they subjected it to sustained criticism. Confronted with Ptolemy's claim that a certain planetary motion was uniform about a point off-center from the orbit, several of them judged the device physically incoherent and worked to ______ it—not by rejecting Ptolemy's hard-won predictive accuracy, but by devising new geometric constructions that reproduced his results while honoring the principle of uniform circular motion he had compromised.",
-  "_meta": {
-    "anchor": "medieval Islamic astronomy: replacing Ptolemy's equant with new constructions"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "supersede"
   },
-  "id": 1130,
-  "module": 2
+  {
+   "id": "B",
+   "text": "ratify"
+  },
+  {
+   "id": "C",
+   "text": "conceal"
+  },
+  {
+   "id": "D",
+   "text": "replicate"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The astronomers produced \"new tables recomputed against the sky\" to take the old ones' place — they undertook to \"supersede\" them.\n\n**The Full Solution:**\n- The setup: accumulated errors produced discrepancies the astronomers \"could no longer ignore.\"\n- The correction after the dash defines the action precisely: not abandoning the underlying geometry, but issuing new tables that replace the old in use.\n- \"Supersede\" — to displace something older while inheriting its role — captures exactly that: same models, new tables, old ones retired.\n\n**Why the other choices are wrong:**\n- B: \"Ratify\" means to confirm or approve; astronomers moved by ignorable-no-longer discrepancies are correcting, not endorsing.\n- C: \"Conceal\" would mean hiding the tables, but the response to the errors was public recomputation, not suppression.\n- D: \"Replicate\" is the trap — new tables were indeed produced, but copying the old tables would reproduce their errors; the recomputation exists precisely to avoid duplication.",
+ "passage": "The Alfonsine Tables, compiled in thirteenth-century Toledo, let an astronomer calculate planetary positions without repeating decades of observation, and copies spread through Europe's universities. Yet the tables were never treated as untouchable. As small errors accumulated over generations of use, astronomers checked predicted positions against fresh observations and, facing discrepancies they could no longer ignore, undertook to ______ the aging tables — not by abandoning the geometry they were built on, but by issuing new tables recomputed against the sky as it actually appeared.",
+ "_meta": {
+  "anchor": "medieval astronomical tables — recomputing the Alfonsine Tables against observation",
+  "distractors": {
+   "B": "reversed stance — approval",
+   "C": "wrong action — suppression",
+   "D": "near-miss — new tables, but recomputed rather than copied"
+  }
+ },
+ "id": 1130,
+ "module": 2
 }

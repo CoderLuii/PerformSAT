@@ -1,0 +1,63 @@
+{
+  "id": 11,
+  "question": "Each row of the table pairs an input with the output that $f$ produces and the output that $g$ produces, and the two functions are defined only at these five inputs. Exactly one input $a$ shown satisfies $g(f(a)) = 5$. For that same input, what is the value of $f(g(a))$?",
+  "questionTable": {
+    "headers": [
+      "$x$",
+      "$f(x)$",
+      "$g(x)$"
+    ],
+    "rows": [
+      [
+        "$1$",
+        "$4$",
+        "$3$"
+      ],
+      [
+        "$2$",
+        "$1$",
+        "$5$"
+      ],
+      [
+        "$3$",
+        "$5$",
+        "$2$"
+      ],
+      [
+        "$4$",
+        "$3$",
+        "$1$"
+      ],
+      [
+        "$5$",
+        "$2$",
+        "$4$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops at f(a) = 2, the inner output found on the way to identifying a",
+    "C": "reports g(a) = 4 without applying f to it",
+    "D": "reports the input a = 5 itself instead of the requested value f(g(a))"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Function Composition**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** $g(t) = 5$ only when $t = 2$, and $f(a) = 2$ only when $a = 5$. Then $g(5) = 4$ and $f(4) = 3$.\n\n**The Full Solution:**\nStep 1: Work $g(f(a)) = 5$ from the outside in. Reading the $g(x)$ column, the only input whose $g$-output is $5$ is $x = 2$, so $f(a)$ must equal $2$.\nStep 2: Reading the $f(x)$ column, the only input whose $f$-output is $2$ is $x = 5$, so $a = 5$.\nStep 3: Now evaluate $f(g(a)) = f(g(5))$. From the table, $g(5) = 4$, and $f(4) = 3$. Check the chain forward: $f(5) = 2$ and $g(2) = 5$, confirming $a = 5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): this is $f(a)$, the inner value you find while identifying $a$. It answers the first half of the work, not the question.\n* Choice C ($4$): this is $g(a) = g(5)$. The inner function of the requested composition is evaluated, but $f$ is never applied to the result.\n* Choice D ($5$): this is $a$ itself, and it is also the value on the right side of the given equation, which makes it feel like a natural stopping point.\n\n**Test Day Takeaway:** Composition read from a table is a two-column lookup in a fixed order: inside first, then outside. Write down each intermediate value with a label so you never hand in $f(a)$ or $g(a)$ when the question asked for the full composition."
+}

@@ -1,0 +1,54 @@
+{
+  "id": "bank-ps-457",
+  "question": "The table gives the daily peak water level, in centimeters, recorded at each of six monitoring stations along a canal. A seventh station recorded a daily peak water level of $231$ centimeters, and that reading is added to form a new data set of seven levels. Which of the following correctly compares the mean of the original data set with the mean of the new data set?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Station",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "rows": [
+        [
+          "Peak water level (cm)",
+          "212",
+          "205",
+          "198",
+          "221",
+          "209",
+          "215"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mean of the new data set is less than the mean of the original data set."
+    },
+    {
+      "id": "B",
+      "text": "The mean of the new data set is greater than the mean of the original data set."
+    },
+    {
+      "id": "C",
+      "text": "The mean of the new data set is equal to the mean of the original data set."
+    },
+    {
+      "id": "D",
+      "text": "There is not enough information to compare the two means."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses the direction; a value above the mean cannot pull the mean down.",
+    "C": "assumes any added reading leaves the mean unchanged, which happens only when the reading equals the mean.",
+    "D": "treats the comparison as undetermined, though the six listed readings fix the original mean."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Mean Comparison after Adding a Value**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The six original readings average $210$ centimeters, and the added reading of $231$ is above that, so the new mean is greater.\n\n**The Full Solution:**\nStep 1: Add the six original readings: $212+205+198+221+209+215=1{,}260$, so the original mean is $\\frac{1{,}260}{6}=210$ centimeters.\nStep 2: Compare the added reading with that mean: $231>210$.\nStep 3: A value above the current mean raises the mean, so the new mean exceeds $210$. Check: $\\frac{1{,}260+231}{7}=\\frac{1{,}491}{7}=213$ centimeters, which is greater than $210$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reverses the direction, which would be correct only if the added reading were below $210$.\n* Choice C: would require the added reading to equal the mean exactly, but $231\\neq 210$.\n* Choice D: the six readings determine the original mean, so the comparison is fully decided.\n\n**Test Day Takeaway:** Compare the new value with the existing mean instead of recomputing. Above the mean raises it, below the mean lowers it, equal to it leaves it alone."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "bank-geo-007",
+  "question": "A lakeside lodge terrace is covered by a triangular shade canopy whose edge along the building wall measures $18$ meters and whose far corner stands $7$ meters out from that wall. What is the area, in square meters, of the canopy?",
+  "correctAnswer": "63",
+  "explanation": "**SAT Pattern: Triangle Area**\n\n**The correct answer is $63$.**\n\n**The Fast Way (~15s):** $A=\\frac{1}{2}(18)(7)=63$ square meters.\n\n**The Full Solution:**\n\nStep 1 — Identify the base and height. The edge along the wall, $18$ meters, is the base, and the perpendicular distance from the wall to the far corner, $7$ meters, is the height.\n\nStep 2 — Apply the triangle area formula: $A=\\frac{1}{2}bh=\\frac{1}{2}(18)(7)$.\n\nStep 3 — Compute: $\\frac{1}{2}(126)=63$ square meters. Check: a rectangle $18$ by $7$ covers $126$, and the triangle is exactly half of it.\n\n**Common Mistakes:** Answering $126$ omits the factor $\\frac{1}{2}$. Answering $25$ adds the two lengths instead of multiplying them. Answering $50$ treats $18$ and $7$ as two sides of a rectangle's perimeter, $2(18)+2(7)$.\n\n**Test Day Takeaway:** The height is the perpendicular distance from the base to the opposite corner — not a slanted edge of the triangle."
+}

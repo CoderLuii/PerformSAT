@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "In the $xy$-plane, a function $d$ is defined for every $x>0$, and its graph lies entirely in quadrants I and IV. The graph of $y=d(-x)$ lies entirely in which quadrants?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Quadrants I and II"
+    },
+    {
+      "id": "B",
+      "text": "Quadrants I and IV"
+    },
+    {
+      "id": "C",
+      "text": "Quadrants II and III"
+    },
+    {
+      "id": "D",
+      "text": "Quadrants III and IV"
+    }
+  ],
+  "distractorNotes": {
+    "A": "keeps the original quadrants and adds the mirror image",
+    "B": "treats d(-x) as leaving the graph unchanged",
+    "D": "reflects across the x-axis instead of the y-axis"
+  },
+  "correctAnswer": "C",
+  "hint": "Follow one point $(a,b)$ with $a>0$ through the substitution and watch only the sign of its first coordinate.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~35s):** Replacing $x$ with $-x$ sends $(a,b)$ to $(-a,b)$, so every point keeps its height but crosses to the left half-plane: I becomes II and IV becomes III.\n\n**The Full Solution:**\nStep 1: If $(a,b)$ is on the graph of $y=d(x)$, then $d(a)=b$. For $y=d(-x)$, the input $-a$ gives $d(-(-a))=d(a)=b$, so $(-a,b)$ is on the new graph.\nStep 2: Because $d$ is defined only for $x>0$, every original point has $a>0$, so every new point has first coordinate $-a<0$: the entire graph sits left of the $y$-axis.\nStep 3: Heights are unchanged, so points that were in quadrant I ($b>0$) move to quadrant II, and points that were in quadrant IV ($b<0$) move to quadrant III. Check: $(2,5)\\to(-2,5)$ and $(2,-5)\\to(-2,-5)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (quadrants I and II): keeps a copy of the original graph; a reflection relocates the points rather than duplicating them.\n* Choice B (quadrants I and IV): assumes $d(-x)$ leaves the graph in place, which would require $d$ to satisfy $d(-x)=d(x)$.\n* Choice D (quadrants III and IV): flips the heights instead of the inputs — that is the effect of $-d(x)$.\n\n**Test Day Takeaway:** A negative inside the function reflects across the $y$-axis: first coordinates change sign, second coordinates do not."
+}

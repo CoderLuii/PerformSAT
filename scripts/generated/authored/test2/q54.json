@@ -9,34 +9,33 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "Crystal N. Feimster is a historian of the United States at Yale University whose research addresses sexual violence and racial terror in the Civil War era and after.",
-      "Earlier histories of post-Reconstruction lynching had largely treated the violence as a story driven by men, casting women on either side as symbolic figures rather than political actors.",
-      "In *Southern Horrors: Women and the Politics of Rape and Lynching* (2009), Feimster recovers the testimonies and writings that Black and white women left behind, both as targets of sexual violence and as organizers who confronted the practice in print and from the lecture platform.",
-      "Feimster argues that white and Black women shaped the politics of lynching from opposing positions and that recovering both perspectives is necessary to explain the practice.",
-      "Drawing on the activism of Ida B. Wells and other Black women writers, Feimster shows how anti-lynching work took shape and endured specifically as a sustained Black women's movement.",
-      "Reviewers have credited *Southern Horrors* with reframing the field, treating women not as background figures in the history of lynching but as central political agents whose competing positions structured the practice itself."
+      "The octobass is a giant bowed string instrument, roughly 3.5 meters tall, built by the French instrument maker Jean-Baptiste Vuillaume around 1850.",
+      "Its three strings sound pitches at and below the bottom of the double bass's range, some near the lower limit of human hearing.",
+      "The strings are far too long and thick for a player's fingers to press down directly.",
+      "The player instead operates a system of levers and foot pedals that close padded clamps onto the strings at set positions.",
+      "Only a handful of octobasses exist today, and few orchestras have ever included one."
     ],
-    "goal": "The student wants to present Feimster's central argument in Southern Horrors."
+    "goal": "The student wants to explain how an octobass player produces different notes despite the instrument's enormous size."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
     {
       "id": "A",
-      "text": "Crystal N. Feimster is a historian at Yale University whose research addresses sexual violence and racial terror in the Civil War era and after."
+      "text": "The octobass, a giant bowed string instrument built by the French instrument maker Jean-Baptiste Vuillaume around 1850, stands roughly 3.5 meters tall."
     },
     {
       "id": "B",
-      "text": "In Southern Horrors (2009), Feimster argues that Black and white women shaped the politics of lynching from opposing positions, so that recovering both groups' perspectives is necessary to explain the violence."
+      "text": "Because the octobass's strings are far too long and thick for fingers to press down directly, the player changes notes by working levers and foot pedals that close padded clamps onto the strings at set positions."
     },
     {
       "id": "C",
-      "text": "Earlier histories of post-Reconstruction lynching largely treated the violence as a story driven by men, casting women on either side as symbolic figures rather than political actors."
+      "text": "The octobass's three strings sound pitches at and below the bottom of the double bass's range — some near the lower limit of human hearing — which helps explain why so few orchestras have ever found a place for the instrument."
     },
     {
       "id": "D",
-      "text": "Recovering the testimonies and writings that Black and white women left behind—both as targets of sexual violence and as organizers who confronted lynching in print and from the lecture platform—Feimster's Southern Horrors (2009) reframes a field that had cast women as background figures."
+      "text": "Only a handful of octobasses exist today, and few orchestras in the instrument's history since 1850 have ever included one in performance."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to state Feimster's central argument, and B does so directly: that Black and white women shaped the politics of lynching from opposing positions, so recovering both perspectives is necessary to explain the violence. Choice A offers biographical background and never states the argument. Choice C describes the earlier scholarship Feimster revised rather than her own claim. Choice D accurately describes her method of recovering women's testimonies but emphasizes how she reframed the field instead of stating the central argument the goal asks for."
+  "explanation": "**Choice B is correct.** The goal asks for the how — note production despite enormous size — and B explains the complete mechanism: fingers cannot press the huge strings, so levers and pedals close clamps at set positions instead.\n\n**The Full Solution:**\n- The goal joins a problem (the instrument's size defeats ordinary fingering) to a solution (some other way of stopping the strings).\n- Choice B renders both halves from the notes: the size problem (\"far too long and thick for fingers to press down directly\") and the mechanical answer (levers, pedals, padded clamps at set positions) that produces different notes.\n\n**Why the other choices are wrong:**\n- A: It conveys the instrument's size and maker but says nothing about how anyone plays it.\n- C: It describes the pitches the strings produce and speculates about orchestras, never explaining the mechanism a player uses to change notes.\n- D: Rarity is the notes' least relevant fact for this goal; a count of surviving instruments explains nothing about playing technique."
 }

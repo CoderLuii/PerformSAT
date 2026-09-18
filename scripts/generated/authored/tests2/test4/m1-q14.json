@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A hydrologist's two snowmelt curves cross exactly once during a thaw, which makes $2x^2 + bx + 50 = 0$ have a single repeated real root. Given that the constant $b$ is positive, what is its value?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$20$"
+  },
+  {
+   "id": "D",
+   "text": "$400$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the constant by the leading coefficient before taking the root, computing the square root of 50/2 = 25",
+  "B": "computes the square root of ac = 100 and omits the factor of 2 in b = 2 times the square root of ac",
+  "D": "stops at b squared = 4ac = 400 and never takes the square root"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** One repeated root means $b^2 = 4ac = 4(2)(50) = 400$, so the positive $b$ is $20$.\n\n**The Full Solution:**\nStep 1: A quadratic equation has exactly one real solution when its discriminant $b^2 - 4ac$ equals $0$.\nStep 2: Here $a = 2$ and $c = 50$, so $b^2 - 4(2)(50) = 0$, or $b^2 = 400$.\nStep 3: The two roots of $b^2 = 400$ are $20$ and $-20$; the problem states $b$ is positive, so $b = 20$.\nCheck: $2x^2 + 20x + 50 = 2(x + 5)^2$, which is zero only at $x = -5$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): divides $50$ by $2$ first and takes $\\sqrt{25}$, mixing up the roles of $a$ and $c$ in the discriminant.\n* Choice B ($10$): computes $\\sqrt{ac} = \\sqrt{100} = 10$ but drops the factor of $2$ in $b = 2\\sqrt{ac}$.\n* Choice D ($400$): this is $b^2$, not $b$ — the last square root never gets taken.\n\n**Test Day Takeaway:** \"Exactly one solution\" is always $b^2 = 4ac$; write that equation before touching the numbers, then finish with the square root."
+}

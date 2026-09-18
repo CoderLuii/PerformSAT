@@ -1,31 +1,31 @@
 {
-  "id": 751,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 2,
-  "passage": "For decades, scientists tracked global sea level mainly with tide gauges fixed to coastlines, instruments that could be skewed by the slow rise or sinking of the land they stood on. Since the 1990s, satellites carrying radar altimeters have measured the height of the open ocean surface directly and continuously. ______ researchers can now separate genuine changes in sea level from local movements of the land, resolving disagreements that the older coastal records had left unsettled.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Nevertheless,"
-    },
-    {
-      "id": "B",
-      "text": "As a result,"
-    },
-    {
-      "id": "C",
-      "text": "For instance,"
-    },
-    {
-      "id": "D",
-      "text": "Meanwhile,"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The satellite measurements described in the second sentence are what allow researchers to separate real sea-level change from land movement, so the third sentence states a consequence and \"As a result\" fits. \"Nevertheless\" would mark a contrast that is not present, \"For instance\" would introduce an example rather than an outcome, and \"Meanwhile\" would signal simultaneity, not the cause-and-effect link the passage draws."
+ "id": 751,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 2,
+ "passage": "Most earthquakes begin beneath the ocean, yet the seafloor has long been nearly bare of seismometers, which are costly to install and maintain offshore. Over the past decade, researchers have learned to turn ordinary telecommunications cables into sensing instruments, using laser pulses to read the minute stretching of the glass fiber as seismic waves pass. ______ stretches of seafloor that no dedicated instrument has ever monitored can now be watched using cables already lying across them.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "However,"
+  },
+  {
+   "id": "B",
+   "text": "As a result,"
+  },
+  {
+   "id": "C",
+   "text": "For example,"
+  },
+  {
+   "id": "D",
+   "text": "Meanwhile,"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The final sentence states what the cable-sensing technique makes possible — monitoring seafloor no instrument has ever covered — a direct consequence of the capability described just before it, so the causal \"As a result\" is the fitting join.\n\n**The Full Solution:**\n- The setup: offshore seismometers are scarce because they are costly, leaving the seafloor unmonitored.\n- The development: existing telecommunications cables can now be read as seismic sensors.\n- The final sentence is the payoff that follows from that development — coverage without new instruments — which is a cause-to-effect step.\n\n**Why the other choices are wrong:**\n- A: \"However\" would pit the final sentence against the technique, but the sentence delivers the technique's benefit.\n- C: \"For example\" would make the sentence one instance of the technique, yet it states the technique's general consequence, not a particular case.\n- D: \"Meanwhile\" would set the monitoring alongside the technique as a separate, simultaneous happening rather than its outcome."
 }

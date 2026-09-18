@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-238",
+ "question": "From $p$ fabric plies a cutting table yields $a(3p - 8) + b$ usable panels, where $a$ and $b$ are integers, and the same count is given by $21p - 19$ for every value of $p$. What is the value of $a + b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-12$"
+  },
+  {
+   "id": "B",
+   "text": "$-4$"
+  },
+  {
+   "id": "C",
+   "text": "$37$"
+  },
+  {
+   "id": "D",
+   "text": "$44$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "takes b to be -19 and adds it to a, ignoring that a multiplies the -8",
+  "B": "solves -8 + b = -19 without the factor a = 7",
+  "C": "finds b correctly but reports b instead of a + b"
+ },
+ "explanation": "**SAT Pattern: Matching Coefficients with Integer Constraints**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** $3a = 21$ gives $a = 7$; then $-56 + b = -19$ gives $b = 37$, so $a + b = 44$.\n\n**The Full Solution:**\n\nStep 1: Expand: $a(3p - 8) + b = 3ap - 8a + b$.\n\nStep 2: Match the coefficients of $p$: $3a = 21$, so $a = 7$, an integer as required.\n\nStep 3: Match the constants: $-8(7) + b = -19$, so $-56 + b = -19$ and $b = 37$. Then $a + b = 7 + 37 = 44$. Check with $p = 2$: $7(6 - 8) + 37 = 23$ and $21(2) - 19 = 23$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-12$): sets $b = -19$ outright, forgetting that the constant on the left is $-8a + b$, not $b$ alone; then $7 + (-19) = -12$.\n* Choice B ($-4$): solves $-8 + b = -19$, dropping the factor $a = 7$ from the $-8$; then $7 + (-11) = -4$.\n* Choice C ($37$): finds $b = 37$ correctly but reports $b$ rather than the requested sum $a + b$.\n\n**Test Day Takeaway:** The constant term of a distributed expression collects everything the multiplier touches; isolate the coefficient first, then feed it into the constant equation."
+}

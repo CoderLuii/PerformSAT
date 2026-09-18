@@ -1,31 +1,31 @@
 {
-  "id": 742,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 2,
-  "passage": "Archaeologists working in West Africa have been reexamining how the region's early complex societies arose. In one part of the southern Sahara, careful mapping of stone-built funerary monuments has revealed orderly territorial divisions consistent with a settled, organized herding society that developed locally. At sites linked to the early Ghana state, excavations document a long, homegrown sequence of farming and craft production that intensified over centuries before any centralized state appeared. Because both the structured herding landscape of the Sahara and the deep economic roots of the Ghana polity seem to have formed in place, the combined findings suggest that ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "no contact with peoples beyond the region played any part whatsoever in shaping these early West African societies."
-    },
-    {
-      "id": "B",
-      "text": "the Ghana state arose chiefly through political control that was imposed from outside by neighbouring societies in the wider region."
-    },
-    {
-      "id": "C",
-      "text": "complex societies in this part of West Africa drew substantially on local developments rather than depending mainly on outside influences."
-    },
-    {
-      "id": "D",
-      "text": "archaeological mapping of this kind can, at least in principle, settle very nearly every remaining dispute about the deeper origins of early African states."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. Both lines of evidence — the locally organized herding landscape and the homegrown economic sequence at Ghana — point to development in place, supporting the conclusion that these societies drew substantially on local developments. Choice A overstates this into a denial of any outside contact, which the evidence does not establish. Choice B contradicts the finding that the Ghana polity's roots were homegrown, and Choice D makes a sweeping claim about the method's power that the passage's specific findings cannot bear."
+ "id": 742,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 2,
+ "passage": "Obsidian, a natural glass once prized for its cutting edge, forms with a trace-element signature particular to the flow that produced it, so an artifact's raw material can be matched to its geological source. Applying such matching across central Anatolia, archaeologists found that tools at settlements several hundred kilometers from one source were made of that source's obsidian — and that such tools appear in occupation layers spanning many centuries, in quantities too large to represent stray finds. The distances also far exceed the territory any single household would have covered. Taken together, the findings suggest that ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "every settlement in central Anatolia obtained its obsidian from a single preferred source."
+  },
+  {
+   "id": "B",
+   "text": "obsidian tools were manufactured only at the source outcrops themselves and were never reworked or resharpened at the distant settlements."
+  },
+  {
+   "id": "C",
+   "text": "obsidian reached distant settlements through sustained exchange between communities rather than solely through its users' own travels."
+  },
+  {
+   "id": "D",
+   "text": "trace-element matching can resolve nearly every open question about how ancient goods moved."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** Each finding eliminates part of the alternative: centuries of persistence and large quantities rule out stray finds, and distances beyond any household's range rule out users fetching the stone themselves — leaving sustained exchange between communities, which is all C claims.\n\n**The Full Solution:**\n- The premises: distant tools traceable to one source; presence across many centuries in quantity; distances exceeding a household's territory.\n- What survives those premises is regular, repeated movement of material through other hands — exchange.\n- C is fitted to the evidence's limits: \"sustained,\" and \"rather than solely,\" claiming persistence without specifying any particular trade arrangement.\n\n**Why the other choices are wrong:**\n- A: \"Every settlement\" and \"single preferred source\" generalize far beyond findings about tools from one source at some settlements.\n- B: Where tools were made or maintained is a different question; the findings concern how the material traveled.\n- D: It inflates one method's success on one question into a sweeping promise about nearly all questions."
 }

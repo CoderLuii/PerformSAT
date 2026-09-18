@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
-  "passage": "For most of European musical history, keyboard instruments were tuned so that a few keys sounded perfectly in tune while others, more distant from them, sounded noticeably sour. A player who wandered into a remote key risked harsh, barely usable chords. Equal temperament offered a way out: by dividing the octave into twelve mathematically equal steps, it spread the unavoidable imperfection evenly, so that no interval except the octave was perfectly pure but none was badly out of tune either. The compromise cost something—purists complained that the old sweetness was gone—yet it let composers move through every key with equal ease, and music that ranged widely across keys became possible to write and to play.",
+  "passage": "The plasmodial slime mold Physarum polycephalum is a single giant cell, without brain or nervous system, that forages by extending a web of protoplasmic veins toward food. When researchers set out oat flakes in an arrangement matching the cities around Tokyo, the organism first flooded the whole space, then pruned itself back to a network of tubes linking the flakes — a web whose efficiency, fault tolerance, and cost the researchers judged comparable to the actual Tokyo rail system's. Engineers have taken note: an organism that solves network problems by local trial and reinforcement, with no central plan, offers a template for routing algorithms in settings that change faster than any planner can redraw the map.",
   "question": "Which choice best states the main purpose of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "To describe the mathematical procedure by which an octave is divided into twelve equal steps."
+      "text": "To question whether experiments performed in laboratory settings can accurately measure the problem-solving abilities of organisms that lack brains or nervous systems"
     },
     {
       "id": "B",
-      "text": "To argue that the older tuning systems produced a sweeter sound than equal temperament ever could."
+      "text": "To trace the evolutionary origins of the foraging behavior observed in plasmodial slime molds"
     },
     {
       "id": "C",
-      "text": "To trace the spread of keyboard instruments through European concert halls over several centuries."
+      "text": "To compare the growth rate of a slime mold network with the pace of railway construction around Tokyo"
     },
     {
       "id": "D",
-      "text": "To explain why musicians adopted a tuning compromise and what that compromise made possible."
+      "text": "To describe an experiment showing a brainless organism's ability to build efficient networks and the interest that ability holds for engineers"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage first sets up a problem—older tunings left remote keys sounding sour—then explains that equal temperament solved it by spreading the imperfection evenly across all twelve steps, and closes with what that compromise allowed: composers could move freely through every key. That problem-solution-consequence arc is the purpose choice D names. Choice A fixes on the dividing-the-octave detail the passage mentions only in passing; choice B treats a brief aside about purists' complaints as the text's argument, though the passage never claims the old sound was better; and choice C describes a history of instruments the text does not undertake."
+  "explanation": "**Choice D is correct.** The text introduces the organism, recounts the Tokyo-map experiment demonstrating its network-building, and closes with why engineers care — the two halves D names: the demonstration and the practical interest.\n\n**The Full Solution:**\n- The first two sentences establish the surprise: a single brainless cell pruned itself into a network judged comparable to a real rail system.\n- The final sentence converts the finding into significance: a decentralized problem-solver as a template for routing algorithms.\n- D covers both movements; each wrong answer invents a purpose the text never pursues.\n\n**Why the other choices are wrong:**\n- A: The text treats the experiment's result as credible throughout; no doubt about laboratory measurement is raised.\n- B: Evolution is never mentioned — the foraging behavior is described, not traced to origins.\n- C: The comparison drawn is between the finished networks' efficiency and cost, not between rates of growth and construction."
 }

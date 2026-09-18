@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-014",
+  "question": "In the $xy$-plane, the graph of $y = (x + 9)(x - 4)$ crosses the $x$-axis at two points. What are the $x$-coordinates of those two points?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-9$ and $-4$"
+    },
+    {
+      "id": "B",
+      "text": "$-9$ and $4$"
+    },
+    {
+      "id": "C",
+      "text": "$-4$ and $9$"
+    },
+    {
+      "id": "D",
+      "text": "$4$ and $9$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "keeps the sign of $-4$ instead of solving $x - 4 = 0$",
+    "C": "flips the sign of both numbers",
+    "D": "reads the numbers inside the parentheses as the roots"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Zero Product Property**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** The graph meets the $x$-axis where $y = 0$, so $(x + 9)(x - 4) = 0$ and $x = -9$ or $x = 4$.\n\n**The Full Solution:**\nStep 1: A point on the $x$-axis has $y = 0$, so set $(x + 9)(x - 4) = 0$.\nStep 2: A product is zero only when a factor is zero: $x + 9 = 0$ or $x - 4 = 0$.\nStep 3: Solving gives $x = -9$ and $x = 4$. Check $x = -9$: $(0)(-13) = 0$. Check $x = 4$: $(13)(0) = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-9$ and $-4$): solves the first factor correctly but copies the $-4$ straight out of the second.\n* Choice C ($-4$ and $9$): flips both signs, which would come from the factors $(x + 4)(x - 9)$.\n* Choice D ($4$ and $9$): reads $9$ and $4$ off the parentheses without changing signs.\n\n**Test Day Takeaway:** Each factor contributes one root, and that root is the value that makes the factor zero — so the sign always flips."
+}

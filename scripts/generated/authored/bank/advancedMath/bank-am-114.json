@@ -1,0 +1,40 @@
+{
+  "id": "bank-am-114",
+  "question": "The graph of the function $f$ is shown in the $xy$-plane, and the vertex of the graph is $(4, 1)$. The function $g$ is defined by $g(x) = 3f(x + 2) - 5$. Which of the following is the vertex of the graph of $y = g(x)$?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        4,
+        1
+      ],
+      "a": 1,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(-2, -2)$"
+    },
+    {
+      "id": "B",
+      "text": "$(2, -2)$"
+    },
+    {
+      "id": "C",
+      "text": "$(2, -4)$"
+    },
+    {
+      "id": "D",
+      "text": "$(6, -2)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the $+2$ inside the parentheses as the new $x$-coordinate",
+    "C": "applies the $-5$ but not the factor $3$, computing $1 - 5$",
+    "D": "shifts right by $2$ instead of left"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** The vertex moves when $x + 2 = 4$, so $x = 2$; its height becomes $3(1) - 5 = -2$. The vertex of $g$ is $(2, -2)$.\n\n**The Full Solution:**\nStep 1: The graph shows the vertex of $f$ at $(4, 1)$, so $f(4) = 1$ is the extreme output.\nStep 2: In $g(x) = 3f(x + 2) - 5$, the extreme output occurs when the inside matches $4$: $x + 2 = 4$, so $x = 2$.\nStep 3: The output is scaled by $3$ and then lowered by $5$: $g(2) = 3f(4) - 5 = 3(1) - 5 = -2$. The vertex is $(2, -2)$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-2, -2)$): reads the \"$+2$\" as the new $x$-coordinate instead of solving $x + 2 = 4$.\n* Choice C ($(2, -4)$): finds the correct $x$ but applies only the $-5$, forgetting that the output is first tripled.\n* Choice D ($(6, -2)$): computes $4 + 2$, shifting the graph right; $f(x + 2)$ shifts it left.\n\n**Test Day Takeaway:** Transform the input and the output separately: solve the inside for the new $x$, then run the old $y$-value through the outside operations in order."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-378",
+ "question": "A clinic's daily visit model $v$ gives the number of patient visits on day $d$, and after a second nurse is hired the clinic expects 18 more visits on every day. Which function models the new count?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$v(d)+18$"
+  },
+  {
+   "id": "B",
+   "text": "$v(d+18)$"
+  },
+  {
+   "id": "C",
+   "text": "$v(18d)$"
+  },
+  {
+   "id": "D",
+   "text": "$18v(d)$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "shifts the day rather than the visit count, reading 18 days ahead",
+  "C": "multiplies the day number by 18 instead of adding to the output",
+  "D": "multiplies the visit count by 18 instead of adding 18"
+ },
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** More visits on the same day is an increase in the output, so add 18 outside: $v(d)+18$.\n\n**The Full Solution:**\nStep 1: The day $d$ is unchanged; only the predicted number of visits rises.\nStep 2: The number of visits is the output of $v$, so the 18 attaches outside the function.\nStep 3: The new model is $v(d)+18$. Check: if $v(5)=140$, the new model predicts 158 visits on day 5 ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($v(d+18)$): reads the count 18 days later instead of raising each day's count.\n* Choice C ($v(18d)$): rescales the day number, a horizontal change.\n* Choice D ($18v(d)$): multiplies the count by 18 rather than adding 18 to it.\n\n**Test Day Takeaway:** 'More of the output' adds outside the function; 'later in time' changes the input inside it."
+}

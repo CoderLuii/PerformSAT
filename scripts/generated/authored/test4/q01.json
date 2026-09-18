@@ -5,30 +5,30 @@
   "band": 2,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
+  "module": 1,
+  "passage": "Many ant species guide nestmates to food by laying down trails of chemical signals. The signals are short-lived, fading within minutes unless returning foragers add fresh marks of their own. When a food source runs out, workers simply stop marking the route, and the trail soon vanishes. To keep a productive route open, then, a colony must continually ______ its trail.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "regulate"
+      "text": "conceal"
     },
     {
       "id": "B",
-      "text": "inherit"
+      "text": "imitate"
     },
     {
       "id": "C",
-      "text": "reconstruct"
+      "text": "renew"
     },
     {
       "id": "D",
-      "text": "exaggerate"
+      "text": "shorten"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage explains that stomata density in a fossil leaf tracks the carbon dioxide present when the leaf grew, so from well-preserved fossils researchers can rebuild a picture of the ancient air — that is, \"reconstruct\" the atmospheric conditions of the deep past. \"Regulate\" and \"inherit\" do not fit a researcher working out what conditions once were, and \"exaggerate\" wrongly suggests distortion rather than recovery of evidence.",
-  "passage": "Fossilized leaves preserve more than the outline of their original shape. The density of stomata — the microscopic pores through which a leaf takes in carbon dioxide — varies with the concentration of that gas in the air where the leaf grew. From well-preserved fossil leaves, then, paleobotanists can ______ the atmospheric conditions of periods millions of years before any direct measurement was possible.",
+  "explanation": "**Choice C is correct.** The trail persists only while foragers keep adding fresh marks, so keeping a route open requires continually renewing it.\n\n**The Full Solution:**\n- The text establishes that trail signals fade within minutes unless returning foragers \"add fresh marks of their own.\"\n- The blank must name what a colony does to \"keep a productive route open\" — the opposite of letting the trail vanish.\n- \"Renew\" means to restore or refresh, exactly the continual re-marking the text describes.\n\n**Why the other choices are wrong:**\n- A: \"Conceal\" means to hide the trail, the opposite of keeping it available to guide nestmates.\n- B: \"Imitate\" means to copy something else; the colony is maintaining its own trail, not copying one.\n- D: \"Shorten\" changes the route's length, but the text is about the trail's persistence, not its distance.",
   "_meta": {
-    "anchor": "paleobotany — stomatal density as a CO2 proxy in fossil leaves"
-  },
-  "module": 1
+    "anchor": "ant trail pheromones — decay and reinforcement"
+  }
 }

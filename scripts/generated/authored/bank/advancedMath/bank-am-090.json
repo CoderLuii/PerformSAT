@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-090",
+ "question": "Aquifer-pressure readings involve the quantity $\\dfrac{\\sqrt[3]{m^{7}p^{2}}}{m\\sqrt{p}}$, taken at positive values of the mass $m$ and the pressure $p$, and a technician wants that quantity rewritten with a single power of each variable before entering it in a log. Which of the following is an equivalent form?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$m^{4/3}p^{1/6}$"
+  },
+  {
+   "id": "B",
+   "text": "$m^{4/3}p^{7/6}$"
+  },
+  {
+   "id": "C",
+   "text": "$m^{7/3}p^{1/6}$"
+  },
+  {
+   "id": "D",
+   "text": "$m^{10/3}p^{1/6}$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "adds the $p$ exponents, $\\frac{2}{3} + \\frac{1}{2} = \\frac{7}{6}$, instead of subtracting them",
+  "C": "never divides by the $m$ in the denominator, leaving the exponent at $\\frac{7}{3}$",
+  "D": "adds the $m$ exponents, $\\frac{7}{3} + 1 = \\frac{10}{3}$, instead of subtracting them"
+ },
+ "explanation": "**SAT Pattern: Exponent Rules with Radicals**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** The numerator is $m^{7/3}p^{2/3}$ and the denominator is $m^{1}p^{1/2}$, so subtract: $m^{7/3 - 1}p^{2/3 - 1/2} = m^{4/3}p^{1/6}$.\n\n**The Full Solution:**\nStep 1: A cube root gives each exponent a factor of $\\frac{1}{3}$, so $\\sqrt[3]{m^{7}p^{2}} = m^{7/3}p^{2/3}$.\nStep 2: The denominator is $m^{1}p^{1/2}$, so dividing subtracts exponents on each base separately.\nStep 3: For $m$: $\\frac{7}{3} - 1 = \\frac{4}{3}$. For $p$: $\\frac{2}{3} - \\frac{1}{2} = \\frac{4}{6} - \\frac{3}{6} = \\frac{1}{6}$. The quantity is $m^{4/3}p^{1/6}$. Check: at $m = 1$ and $p = 64$ the original is $\\dfrac{\\sqrt[3]{4096}}{8} = \\dfrac{16}{8} = 2$, and $1^{4/3} \\cdot 64^{1/6} = 2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($m^{4/3}p^{7/6}$): adds $\\frac{2}{3}$ and $\\frac{1}{2}$, the error of treating a quotient as a product on the $p$ factor.\n* Choice C ($m^{7/3}p^{1/6}$): handles $p$ correctly but forgets the lone $m$ in the denominator.\n* Choice D ($m^{10/3}p^{1/6}$): adds the $m$ exponents, $\\frac{7}{3} + 1 = \\frac{10}{3}$.\n\n**Test Day Takeaway:** Convert every root to a fractional exponent, then handle one base at a time — mixing the bases is what produces all three wrong forms."
+}

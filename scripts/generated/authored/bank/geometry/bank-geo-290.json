@@ -1,0 +1,51 @@
+{
+ "question": "The table gives the endpoints of a diameter of the circular catwalk around a water tower, where coordinates are in meters. Which equation models the catwalk in the $xy$-plane?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Endpoint",
+    "x (meters)",
+    "y (meters)"
+   ],
+   "rows": [
+    [
+     "P",
+     "-5",
+     "4"
+    ],
+    [
+     "Q",
+     "7",
+     "-12"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x + 1)^2 + (y - 4)^2 = 100$"
+  },
+  {
+   "id": "B",
+   "text": "$(x - 1)^2 + (y + 4)^2 = 400$"
+  },
+  {
+   "id": "C",
+   "text": "$(x - 2)^2 + (y + 8)^2 = 100$"
+  },
+  {
+   "id": "D",
+   "text": "$(x - 1)^2 + (y + 4)^2 = 100$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "flips the signs of the center's coordinates, centering the circle at (-1, 4)",
+  "B": "uses the diameter 20 as the radius, so the right side becomes 400",
+  "C": "adds the endpoint coordinates without halving, centering the circle at (2, -8)"
+ },
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The center is the midpoint $\\left(\\frac{-5 + 7}{2}, \\frac{4 - 12}{2}\\right) = (1, -4)$, and the diameter is $\\sqrt{12^2 + 16^2} = 20$, so $r = 10$ and $r^2 = 100$.\n\n**The Full Solution:**\nStep 1: The center of a circle is the midpoint of any diameter: $(1, -4)$.\nStep 2: The diameter's length is $\\sqrt{(7 - (-5))^2 + (-12 - 4)^2} = \\sqrt{144 + 256} = \\sqrt{400} = 20$ meters, so $r = 10$ meters.\nStep 3: Standard form gives $(x - 1)^2 + (y + 4)^2 = 100$. Check: substituting $P(-5, 4)$ gives $36 + 64 = 100$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: writes $(x + 1)^2 + (y - 4)^2$, which centers the catwalk at $(-1, 4)$ instead of $(1, -4)$.\n* Choice B: keeps the diameter $20$ as the radius, so the right side is $400$ rather than $100$.\n* Choice C: adds the endpoint coordinates without dividing by $2$, placing the center at $(2, -8)$.\n\n**Test Day Takeaway:** Endpoints of a diameter give the center by midpoint and the radius by half the distance — halve before squaring.",
+ "id": "bank-geo-290"
+}

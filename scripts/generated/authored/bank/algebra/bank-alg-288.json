@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-288",
+ "question": "A tide gauge at a river mouth flags a water-level reading $r$, in centimeters, whenever the reading satisfies $|r - 214| = 26$. Which of the following gives the two readings that the gauge flags?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-26$ and $26$"
+  },
+  {
+   "id": "B",
+   "text": "$188$ and $214$"
+  },
+  {
+   "id": "C",
+   "text": "$188$ and $240$"
+  },
+  {
+   "id": "D",
+   "text": "$214$ and $240$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves |r| = 26, ignoring the 214 inside the bars",
+  "B": "subtracts 26 but pairs the result with 214 instead of adding 26",
+  "D": "adds 26 but pairs the result with 214 instead of subtracting 26"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The bars say $r$ sits $26$ from $214$, so $r = 214 - 26 = 188$ or $r = 214 + 26 = 240$.\n\n**The Full Solution:**\nStep 1: An absolute value equals $26$ when the expression inside is $26$ or $-26$, so $r - 214 = 26$ or $r - 214 = -26$.\nStep 2: Solving the first gives $r = 240$; solving the second gives $r = 188$.\nStep 3: The gauge flags $188$ and $240$ centimeters. Check: $|188 - 214| = |-26| = 26$ and $|240 - 214| = |26| = 26$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-26$ and $26$): solves $|r| = 26$ and never accounts for the $214$ inside the bars.\n* Choice B ($188$ and $214$): subtracts $26$ once and then reports the center $214$ as the second reading.\n* Choice D ($214$ and $240$): adds $26$ once and then reports the center $214$ as the second reading.\n\n**Test Day Takeaway:** $|X - c| = d$ says $X$ is $d$ away from $c$ in both directions: $c - d$ and $c + d$."
+}

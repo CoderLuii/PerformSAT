@@ -1,0 +1,29 @@
+{
+  "question": "For a prairie-dog colony survey, the number of occupied burrows $x$ and the number of abandoned burrows $y$ satisfy $5x + 2y = 26$ and $3x - 2y = 6$. Which equation results from adding the two given equations?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2x = 20$"
+    },
+    {
+      "id": "B",
+      "text": "$8x + 4y = 32$"
+    },
+    {
+      "id": "C",
+      "text": "$8x = 20$"
+    },
+    {
+      "id": "D",
+      "text": "$8x = 32$"
+    }
+  ],
+  "correctAnswer": "D",
+  "distractorNotes": {
+    "A": "subtracts the two equations but still treats the $y$-terms as cancelling, giving $2x = 20$",
+    "B": "adds the $y$-coefficients as $2 + 2$ instead of $2 + (-2)$",
+    "C": "adds the left sides but subtracts the right sides"
+  },
+  "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The $y$-terms are opposites, so adding gives $8x = 32$.\n\n**The Full Solution:**\n\nStep 1: Line up like terms: $5x + 2y = 26$ and $3x - 2y = 6$.\n\nStep 2: Add the left sides: $5x + 3x = 8x$ and $2y + (-2y) = 0$.\n\nStep 3: Add the right sides: $26 + 6 = 32$, so the sum is $8x = 32$. Check: $x = 4$ and $y = 3$ satisfy both original equations.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($2x = 20$): subtracts the two equations but still treats the $y$-terms as cancelling; subtracting actually leaves $2x + 4y = 20$.\n\n* Choice B ($8x + 4y = 32$): treats $-2y$ as $+2y$, so the $y$-terms are kept instead of cancelling.\n\n* Choice C ($8x = 20$): adds on the left but subtracts on the right, breaking the equality.\n\n**Test Day Takeaway:** Add or subtract whole equations, never one side only, and check which operation makes a variable disappear.",
+  "id": "bank-alg-256"
+}

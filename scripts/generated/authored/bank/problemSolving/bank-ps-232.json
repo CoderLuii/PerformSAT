@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-232",
+  "question": "In a forest inventory, hardwood stands make up $36\\%$ of all stands. Oak stands make up $45\\%$ of the hardwood stands, and white oak stands make up $20\\%$ of the oak stands. White oak stands make up what percent of all stands? (Report only the number, without the percent sign.)",
+  "correctAnswer": "3.24",
+  "explanation": "**SAT Pattern: Chained Percent Relationship**\n\n**The correct answer is $3.24$.**\n\n**The Fast Way (~40s):** $0.36 \\times 0.45 \\times 0.20 = 0.0324$, or $3.24\\%$.\n\n**The Full Solution:**\nStep 1: Let $n$ be the total number of stands. Hardwood stands number $0.36n$.\nStep 2: Oak stands are $45\\%$ of the hardwood stands: $0.45(0.36n) = 0.162n$.\nStep 3: White oak stands are $20\\%$ of the oak stands: $0.20(0.162n) = 0.0324n$, or $3.24\\%$ of all stands. Check with $n = 10{,}000$: $3{,}600$ hardwood, $1{,}620$ oak, $324$ white oak, and $\\frac{324}{10{,}000} = 3.24\\%$. $\\checkmark$\n\n**Common Mistakes:** Stopping after two links at $16.2$, the oak share of all stands; skipping the oak step and computing $0.36 \\times 0.20 = 0.072$ for $7.2$; or adding the three percents for $101$.\n\n**Test Day Takeaway:** Each \"of the previous group\" adds one more factor. Multiply all of them before converting to a percent."
+}

@@ -9,34 +9,33 @@
  "studentNotes": {
   "intro": "While researching a topic, a student has taken the following notes:",
   "bullets": [
-   "Anne D'Alleva is an art historian at the University of Connecticut who specializes in Pacific art history and art-historical methodology.",
-   "Iconography reads a work of art for the symbolic content carried by its motifs and identifies what those motifs depict and signify.",
-   "Formalism analyzes a work in terms of its visual elements—line, color, composition, and surface—largely apart from outside reference.",
-   "Semiotics treats a work as a system of signs and asks how meaning is generated through relations among those signs.",
-   "In *Methods and Theories of Art History* (2005), D'Alleva argues that iconography, formalism, and semiotics each frame the same object differently and produce different accounts of it.",
-   "On D'Alleva's view, the choice of method is itself an interpretive act rather than the neutral selection of an analytical tool."
+   "Art conservators repair and stabilize artworks that have been damaged by time, light, moisture, or handling.",
+   "A guiding principle of the field is reversibility: any material a conservator adds to an artwork should be removable later without harming the original.",
+   "Reversibility protects artworks from today's methods, since treatments once considered safe have sometimes proved damaging as knowledge advanced.",
+   "Conservators following the principle use adhesives that future specialists can dissolve and inpaint losses with paints that can be removed.",
+   "Varnishes chosen for reversibility can be lifted from a painting's surface decades later without disturbing the artist's own paint beneath."
   ],
-  "goal": "The student wants to correct a common misconception about art-historical methods."
+  "goal": "The student wants to explain the principle of reversibility to an audience unfamiliar with art conservation."
  },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "D'Alleva distinguishes iconography, which reads a work for the symbolic content carried by its motifs, from formalism, which analyzes a work in terms of its visual elements largely apart from outside reference."
+   "text": "In art conservation, the principle of reversibility holds that anything a conservator adds to a damaged artwork — an adhesive, a retouched patch, a varnish — should be removable later without harming the original, in case today's methods prove damaging."
   },
   {
    "id": "B",
-   "text": "In *Methods and Theories of Art History* (2005), Anne D'Alleva, a specialist in Pacific art history at the University of Connecticut, surveys iconography, formalism, and semiotics, the three principal approaches that art historians have long drawn on when they set out to study a work."
+   "text": "Conservators use adhesives that future specialists can dissolve when needed, and they inpaint losses in a damaged artwork with paints that later generations can safely remove."
   },
   {
    "id": "C",
-   "text": "Although iconography, formalism, and semiotics are often treated as neutral tools, D'Alleva argues in *Methods and Theories of Art History* (2005) that each method frames the same work differently and yields a different account, so choosing a method is itself an interpretive act."
+   "text": "Because treatments once considered safe have sometimes proved damaging, art conservators — who repair artworks damaged by time, light, moisture, or handling — face difficult decisions in their work."
   },
   {
    "id": "D",
-   "text": "Because semiotics treats a work as a system of signs and asks how meaning is generated through relations among those signs, D'Alleva argues that it offers a more rigorous foundation for art-historical analysis than either iconography or formalism."
+   "text": "Reversibility, a guiding principle of art conservation, explains why varnishes can be lifted from a painting's surface decades after they are applied."
   }
  ],
- "correctAnswer": "C",
- "explanation": "The correct answer is C. The goal is to correct a common misconception about art-historical methods. Choice C names the misconception explicitly—that iconography, formalism, and semiotics are neutral tools applied to a fixed object—and then states D'Alleva's corrective claim drawn from the notes: each method frames the same work differently and produces a different account of it, so the choice of method is itself an interpretive act. The \"although... argues that...\" construction performs the corrective rhetorical move the goal requires."
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The goal demands the principle itself, explained for readers new to conservation — and A names the field, states the principle in full, grounds it in the notes' examples, and gives its rationale.\n\n**The Full Solution:**\n- Two demands: explain the reversibility principle, and pitch it to readers who know nothing about art conservation.\n- Choice A does both: it names the field, states the principle (\"anything a conservator adds ... should be removable later without harming the original\"), makes it concrete with the notes' examples, and supplies the why (protection against methods that later prove damaging).\n\n**Why the other choices are wrong:**\n- B: It lists practices that follow from the principle without ever stating or naming it — an unfamiliar reader learns what conservators do but not the idea.\n- C: It introduces the field and a motivation but swerves to \"difficult decisions,\" a claim the notes do not contain, and never presents reversibility at all.\n- D: It names the principle but treats it as already understood, using it only to account for one fact about varnish — backwards for an audience that needs the principle explained, not applied."
 }

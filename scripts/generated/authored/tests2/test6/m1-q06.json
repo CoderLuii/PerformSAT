@@ -1,0 +1,40 @@
+{
+ "id": 6,
+ "question": "Each corner angle of the denim gusset in the figure is marked in terms of $x$. How many degrees greater than the smallest corner angle is the largest corner angle?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "(4x)°",
+    "(3x)°",
+    "(5x)°"
+   ],
+   "note": "Note: Figure not drawn to scale."
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$30$"
+  },
+  {
+   "id": "C",
+   "text": "$45$"
+  },
+  {
+   "id": "D",
+   "text": "$75$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at x = 15 and reports the value of the variable instead of a difference of angle measures",
+  "C": "reports the smallest corner angle, 3x = 45, instead of the difference",
+  "D": "reports the largest corner angle, 5x = 75, instead of the difference"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Triangle Angle Sum**\n\n**Choice B is correct.** The three marked measures add to $180$, which fixes $x$, and the largest angle exceeds the smallest by $30$ degrees.\n\n**The Fast Way (~25s):** $4x + 3x + 5x = 12x = 180$, so $x = 15$. The gap between the largest and smallest is $5x - 3x = 2x = 30$.\n\n**The Full Solution:**\nStep 1: The interior angles of a triangle sum to $180^\\circ$, so $4x + 3x + 5x = 180$, which gives $12x = 180$ and $x = 15$.\nStep 2: The three angle measures are $4(15) = 60$, $3(15) = 45$, and $5(15) = 75$ degrees. The largest is $75^\\circ$ and the smallest is $45^\\circ$.\nStep 3: The difference is $75 - 45 = 30$ degrees. Check the sum: $60 + 45 + 75 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): this is $x$ itself. Solving for $x$ is only the first step; the question asks for a difference of angle measures.\n* Choice C ($45$): this is the smallest angle, $3x$, rather than how much the largest exceeds it.\n* Choice D ($75$): this is the largest angle, $5x$. It answers \"what is the largest angle\" instead of \"how much greater.\"\n\n**Test Day Takeaway:** After solving for the variable in an angle-sum equation, reread the final sentence — SAT geometry items often ask for a difference or a sum of the angles, not for the variable."
+}

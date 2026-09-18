@@ -1,0 +1,63 @@
+{
+  "id": "bank-ps-071",
+  "question": "The dot plot shows the number of tomatoes harvested from each of $7$ tomato plants in a garden. What is the median number of tomatoes harvested from these plants?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 12,
+          "count": 1
+        },
+        {
+          "value": 14,
+          "count": 2
+        },
+        {
+          "value": 15,
+          "count": 1
+        },
+        {
+          "value": 17,
+          "count": 1
+        },
+        {
+          "value": 18,
+          "count": 1
+        },
+        {
+          "value": 22,
+          "count": 1
+        }
+      ],
+      "xMin": 10,
+      "xMax": 24,
+      "xLabel": "Number of tomatoes"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$16$"
+    },
+    {
+      "id": "C",
+      "text": "$17$"
+    },
+    {
+      "id": "D",
+      "text": "$22$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "the mean (112/7), not the median",
+    "C": "the midpoint of the range (12+22)/2",
+    "D": "the greatest value"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Median of Sorted Set**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Seven dots, so the median is the $4$th dot from the left: $12, 14, 14, \\mathbf{15}, 17, 18, 22$.\n\n**The Full Solution:**\nStep 1: A dot plot is already in order. List the values left to right, repeating stacked dots: $12, 14, 14, 15, 17, 18, 22$.\nStep 2: With $7$ values (an odd count), the median is the middle one, position $\\frac{7 + 1}{2} = 4$.\nStep 3: The $4$th value is $15$. Check: three values ($12, 14, 14$) lie below $15$ and three ($17, 18, 22$) lie above it. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($16$): is the mean, $\\frac{112}{7} = 16$, not the median.\n* Choice C ($17$): is the midpoint of the range, $\\frac{12 + 22}{2}$, which ignores how the dots are distributed.\n* Choice D ($22$): is the greatest value.\n\n**Test Day Takeaway:** On a dot plot, count dots from one end to the middle position; a stacked column counts once per dot."
+}

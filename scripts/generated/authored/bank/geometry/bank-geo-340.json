@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-340",
+ "question": "A conveyor guard panel is cut to the outline drawn here, with the hypotenuse marked in millimeters, both legs unlabeled, and the right angle at vertex $Y$. Leg $\\overline{XY}$ runs $41$ millimeters longer than leg $\\overline{YZ}$. What is the value of $\\cos Z$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     77,
+     0
+    ],
+    [
+     77,
+     36
+    ]
+   ],
+   "labels": [
+    "X",
+    "Y",
+    "Z"
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "85"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{36}{85}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{36}{77}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{77}{85}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{85}{36}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports tan Z = 36/77, the two legs divided rather than a cosine",
+  "C": "reports sin Z = 77/85, the leg opposite Z over the hypotenuse",
+  "D": "inverts cos Z, giving hypotenuse over adjacent"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Trig Ratio with Known Triple**\n\n**Choice A is correct.**\n\n**The Fast Way (~60s):** Solving $a^2 + (a+41)^2 = 85^2$ gives legs $36$ and $77$, and the leg beside angle $Z$ is $36$, so $\\cos Z = \\frac{36}{85}$.\n\n**The Full Solution:**\nStep 1: Let $\\overline{YZ} = a$, so $\\overline{XY} = a + 41$ and the hypotenuse $\\overline{ZX} = 85$.\nStep 2: The Pythagorean theorem gives $a^2 + (a+41)^2 = 7{,}225$, so $2a^2 + 82a + 1{,}681 = 7{,}225$, that is $a^2 + 41a - 2{,}772 = 0$. Factoring gives $(a - 36)(a + 77) = 0$, and a length must be positive, so $a = 36$ and the other leg is $77$ millimeters.\nStep 3: Angle $Z$ lies between $\\overline{YZ} = 36$ and the hypotenuse $85$, so $\\cos Z = \\frac{36}{85}$.\n\nCheck: $36^2 + 77^2 = 1{,}296 + 5{,}929 = 7{,}225 = 85^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{36}{77}$): divides the two legs, which gives $\\tan Z$.\n* Choice C ($\\frac{77}{85}$): uses the leg opposite $Z$ over the hypotenuse, which is $\\sin Z$ and belongs to the other acute angle's cosine.\n* Choice D ($\\frac{85}{36}$): inverts the ratio; a cosine can never exceed $1$.\n\n**Test Day Takeaway:** A stated difference between two legs plus the hypotenuse is a quadratic in disguise; solve it before touching any ratio."
+}

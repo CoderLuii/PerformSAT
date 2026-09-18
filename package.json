@@ -2,6 +2,9 @@
   "name": "seva",
   "version": "3.1.0",
   "private": true,
+  "engines": {
+    "node": ">=24"
+  },
   "dependencies": {
     "@dataconnect/generated": "file:src/dataconnect-generated",
     "@sentry/react": "^10.57.0",
@@ -67,8 +70,20 @@
       "react-app/jest"
     ],
     "rules": {
-      "react-hooks/rules-of-hooks": "warn",
-      "import/first": "warn"
-    }
+      "react-hooks/rules-of-hooks": "error",
+      "import/first": "error"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/**",
+          "**/*.test.js",
+          "**/*.test.jsx"
+        ],
+        "rules": {
+          "import/first": "off"
+        }
+      }
+    ]
   }
 }

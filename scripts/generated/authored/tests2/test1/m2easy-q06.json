@@ -1,0 +1,29 @@
+{
+ "id": 6,
+ "question": "Three of the four corners of a rectangle appear as plotted points in the $xy$-plane, and every side of that rectangle runs parallel to a coordinate axis. Using only the plotted corners, what is the area, in square units, of the rectangle?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -4,
+     -3
+    ],
+    [
+     6,
+     -3
+    ],
+    [
+     6,
+     5
+    ]
+   ],
+   "xMin": -8,
+   "xMax": 8,
+   "yMin": -8,
+   "yMax": 8
+  }
+ },
+ "correctAnswer": "80",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**The correct answer is $80$.**\n\n**The Fast Way (~25s):** The two lower vertices are $10$ units apart horizontally and the two right-hand vertices are $8$ units apart vertically, so the area is $10 \\times 8 = 80$.\n\n**The Full Solution:**\nStep 1: Read the three plotted vertices from the grid: $(-4, -3)$, $(6, -3)$, and $(6, 5)$.\nStep 2: Two of them share the $y$-coordinate $-3$, so they are endpoints of a horizontal side of length $6 - (-4) = 10$. Two of them share the $x$-coordinate $6$, so they are endpoints of a vertical side of length $5 - (-3) = 8$. These sides meet at $(6, -3)$, so they are adjacent sides.\nStep 3: The area of a rectangle is the product of two adjacent side lengths: $10 \\times 8 = 80$ square units. Check: the missing vertex must be $(-4, 5)$, and the region from $x = -4$ to $x = 6$ and from $y = -3$ to $y = 5$ measures $10$ by $8$ ✓\n\n**Common Mistakes:**\n* $36$ — computing the perimeter $2(10 + 8)$ instead of the area.\n* $40$ — halving the product, $\\frac{1}{2}(10)(8)$, as though the three plotted points were the vertices of a triangle. They are three corners of a rectangle, so no halving applies.\n* $18$ — adding the side lengths, $10 + 8$, instead of multiplying them.\n\n**Test Day Takeaway:** When a figure gives plotted points rather than labeled lengths, subtract coordinates: a shared $y$-value marks a horizontal side, a shared $x$-value a vertical side."
+}

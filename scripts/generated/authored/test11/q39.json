@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "question": "Which finding, if true, would most directly support the specialist's argument?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Impressions taken from different blocks of the same design vary in color depending on which inks each workshop preferred to use."
-    },
-    {
-      "id": "B",
-      "text": "Documentary records of ukiyo-e print runs survive for only a small fraction of the many thousands of designs that were produced during the period."
-    },
-    {
-      "id": "C",
-      "text": "Among impressions whose printing order is documented, the later ones consistently show breaks and thinning in fine lines that are still crisp in the earlier ones."
-    },
-    {
-      "id": "D",
-      "text": "Some collectors prize late impressions of a famous design more highly than early ones simply because they are rarer."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The specialist's claim is that line wear can date an impression, and the plan is to check it against impressions of known order. A finding that, among documented impressions, the later ones reliably show the predicted breaks and thinning while the earlier ones stay crisp directly supports the claim. Choice A concerns color across different blocks, a separate variable; Choice B is about how many records survive, which is neutral to the wear hypothesis; and Choice D reports collector preferences, which say nothing about whether wear marks track printing order.",
-  "passage": "Many ukiyo-e prints survive in multiple impressions that look, at a glance, identical. Yet art historians can often place these impressions in a sequence, identifying which were pulled early in a block's life and which came later. One specialist argues that the key evidence is physical wear: as a woodblock is used, its finest carved lines gradually break down, so impressions pulled later show subtle gaps and thinning in details that are crisp in early ones. To test whether wear can date an impression, the specialist plans to compare impressions whose order of printing is already known from documentary records.",
-  "_meta": {
-    "anchor": "Japanese printmaking: block wear used to sequence ukiyo-e impressions"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "question": "Which finding, if true, would most directly support the historian's argument?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Songs that became the era's biggest hits were frequently praised by newspaper critics of the day for their unusually memorable melodies and clever lyrics."
   },
-  "id": 1139,
-  "module": 2
+  {
+   "id": "B",
+   "text": "Several vaudeville stars refused publishers' payments for songs they personally admired and sang anyway."
+  },
+  {
+   "id": "C",
+   "text": "Comparable new songs given sharply different plugging budgets sold in proportion to those budgets, not to the publishers' own rankings of their quality."
+  },
+  {
+   "id": "D",
+   "text": "Publishers spent more money on plugging in years when overall sheet-music sales were rising."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The historian claims promotion, not song quality, drove sales; the skeptics reply that plugging money simply followed quality. C breaks the tie: when comparable songs got different budgets, sales tracked the budgets and ignored the publishers' own quality rankings — promotion moving sales on its own.\n\n**The Full Solution:**\n- The dispute is about direction: does plugging cause success, or does expected success attract plugging?\n- Evidence must therefore hold quality roughly constant while promotion varies. \"Comparable new songs\" with \"sharply different plugging budgets\" is that setup.\n- Sales proportional to budget, and decoupled from ranked quality, is the outcome the historian's argument predicts.\n\n**Why the other choices are wrong:**\n- A: Critical praise for hits' melodies is what the skeptics would predict — quality showing through.\n- B: Stars singing admired songs unpaid ties performance to merit, again favoring the skeptics.\n- D: Total spending rising with total sales fits either causal story and cannot distinguish them.",
+ "passage": "Publishers on Tin Pan Alley kept ledgers of their sheet-music sales, and a music historian has used the ledgers to press a claim about how hits were made. The biggest sellers, the historian argues, owed their success less to any measurable quality of the songs themselves than to plugging — the publishers' paid campaigns to place songs with star vaudeville performers. Skeptics respond that plugging money naturally flowed toward the catchiest songs, so promotion merely amplified merit that was already there.",
+ "_meta": {
+  "anchor": "Tin Pan Alley song plugging — promotion vs. merit as the driver of hits",
+  "distractors": {
+   "A": "supports the skeptics",
+   "B": "supports the skeptics",
+   "D": "consistent with both stories"
+  }
+ },
+ "id": 1139,
+ "module": 2
 }

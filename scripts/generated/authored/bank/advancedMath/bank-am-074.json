@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-074",
+  "question": "In a pharmacy protocol, the dose-adjustment factor for a patient whose weight index is $x$, where $x>2$, is the product $\\frac{2x^{2}-8}{x^{2}+5x+6} \\cdot \\frac{x^{2}+6x+9}{4x-8}$. Which expression is equivalent to that product?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{x-3}{2}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{x+3}{2}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{x+2}{2}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{x+3}{4}$"
+    }
+  ],
+  "correctAnswer": "B",
+  "distractorNotes": {
+    "A": "factors x^2 + 6x + 9 as (x + 3)(x - 3) instead of (x + 3)^2",
+    "C": "cancels the unlike factors (x + 3) and (x + 2), keeping (x + 2)",
+    "D": "drops the leading 2 when factoring 2x^2 - 8, leaving 2/4 as 1/4"
+  },
+  "explanation": "**SAT Pattern: Multiply Rational Expressions (Factor + Cancel)**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** Factor everything: $\\frac{2(x-2)(x+2)}{(x+2)(x+3)}\\cdot\\frac{(x+3)^{2}}{4(x-2)}$, and cancelling leaves $\\frac{2(x+3)}{4}=\\frac{x+3}{2}$.\n\n**The Full Solution:**\nStep 1: Factor each part: $2x^{2}-8=2(x-2)(x+2)$, $x^{2}+5x+6=(x+2)(x+3)$, $x^{2}+6x+9=(x+3)^{2}$, and $4x-8=4(x-2)$.\nStep 2: Multiply and cancel the common factors $(x-2)$, $(x+2)$, and one $(x+3)$.\nStep 3: What remains is $\\frac{2(x+3)}{4}=\\frac{x+3}{2}$. Check: at $x=3$ the original is $\\frac{10}{30}\\cdot\\frac{36}{4}=3$, and $\\frac{3+3}{2}=3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{x-3}{2}$): factors $x^{2}+6x+9$ as $(x+3)(x-3)$, so $(x-3)$ survives the cancellation.\n* Choice C ($\\frac{x+2}{2}$): cancels $(x+3)$ against $(x+2)$, which are not the same factor.\n* Choice D ($\\frac{x+3}{4}$): forgets the 2 factored out of $2x^{2}-8$, so the constants reduce to $\\frac{1}{4}$.\n\n**Test Day Takeaway:** Factor every numerator and denominator completely, numerical factors included, before a single cancellation."
+}

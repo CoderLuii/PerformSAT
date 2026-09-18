@@ -1,0 +1,29 @@
+{
+ "question": "A crate's cross-sectional area is $16x^2 + kx + 81$, and for two constants $k$ this area is the square of a binomial. What are those two values of $k$?",
+ "hint": "What binomial, when squared, could produce the first and last terms?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-72$ only"
+  },
+  {
+   "id": "B",
+   "text": "$-36$ and $36$"
+  },
+  {
+   "id": "C",
+   "text": "$-72$ and $72$"
+  },
+  {
+   "id": "D",
+   "text": "$72$ only"
+  }
+ ],
+ "distractorNotes": {
+  "A": "keeps only the negative value and discards the positive one",
+  "B": "uses the square root of 16(81) = 36 without doubling it",
+  "D": "keeps only the positive value"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~40s):** A square $(4x \\pm 9)^2$ has middle term $\\pm 2(4)(9)x = \\pm 72x$, so $k = \\pm 72$.\n\n**The Full Solution:**\nStep 1: For the trinomial to be a square, it must equal $(4x + c)^2$ with $c^2 = 81$, so $c = 9$ or $c = -9$.\nStep 2: Expanding $(4x + c)^2$ gives $16x^2 + 8cx + c^2$, so $k = 8c$.\nStep 3: With $c = 9$, $k = 72$; with $c = -9$, $k = -72$. Check: $(4x + 9)^2 = 16x^2 + 72x + 81$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-72$ only): finds the right size but discards the equally valid positive value.\n* Choice B ($-36$ and $36$): uses $\\sqrt{16 \\cdot 81} = 36$ and forgets the factor of $2$ in the middle term.\n* Choice D ($72$ only): discards the negative value, though $(4x - 9)^2$ is also a square.\n\n**Test Day Takeaway:** The middle term of a perfect square is twice the product of the two square roots — and its sign can go either way."
+}

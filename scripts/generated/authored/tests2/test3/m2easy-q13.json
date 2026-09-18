@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "Sensors are mounted at $(m, 5)$ and $(4, -3)$ on a coordinate grid marked in feet, where $m$ is a constant, and the sensors are $17$ feet apart. Which of the following could be the value of $m$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$13$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$19$"
+  },
+  {
+   "id": "D",
+   "text": "$21$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds the legs instead of squaring them, solving |m - 4| + 8 = 17",
+  "B": "reports the horizontal leg 15 rather than solving m - 4 = 15",
+  "D": "sets (m - 4)^2 = 289, ignoring the vertical leg of 8"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The vertical leg is $5 - (-3) = 8$, so the horizontal leg satisfies $8^2 + (m - 4)^2 = 17^2$. That gives $(m - 4)^2 = 225$, so $m - 4 = \\pm 15$ and $m = 19$ is one possibility.\n\n**The Full Solution:**\nStep 1: Write the distance formula for the two points. $\\sqrt{(m - 4)^2 + (5 - (-3))^2} = 17$.\nStep 2: Square both sides and simplify the known leg. $(m - 4)^2 + 8^2 = 289$, so $(m - 4)^2 + 64 = 289$ and $(m - 4)^2 = 225$.\nStep 3: Take both square roots. $m - 4 = 15$ or $m - 4 = -15$, so $m = 19$ or $m = -11$. Only $19$ appears among the choices. Check: from $(19, 5)$ to $(4, -3)$ the legs are $15$ and $8$, and $\\sqrt{225 + 64} = \\sqrt{289} = 17$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($13$): adds the legs rather than their squares, solving $|m - 4| + 8 = 17$ to get $m - 4 = 9$. Distance combines legs through squares, not through addition.\n* Choice B ($15$): stops at the horizontal leg. That $15$ is the difference $m - 4$, so the coordinate is $4 + 15$, not $15$.\n* Choice D ($21$): sets $(m - 4)^2 = 289$, using the whole distance as the horizontal leg and ignoring the $8$-foot vertical drop.\n\n**Test Day Takeaway:** A distance question is a right triangle in disguise: legs are the coordinate differences and the distance is the hypotenuse. Subtract the known leg's square before taking a root, and remember the root has two signs when a coordinate is unknown."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-319",
+ "question": "A brine tank's discharge model requires $\\sqrt{x+k}=x-3$ to hold, where $k$ is a constant and $x$ is the brine depth in centimeters. The only depth that satisfies the model is $x=7$. What is the value of $k$?",
+ "correctAnswer": "9",
+ "explanation": "**SAT Pattern: Radical Equation**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~30s):** At $x=7$ the right side is $4$, so $\\sqrt{7+k}=4$, giving $7+k=16$ and $k=9$.\n\n**The Full Solution:**\n\nStep 1: Substitute the given depth: $\\sqrt{7+k}=7-3=4$.\n\nStep 2: Square both sides: $7+k=16$.\n\nStep 3: Solve: $k=9$. Check: with $k=9$ the model reads $\\sqrt{x+9}=x-3$, and at $x=7$ both sides equal $4$.\n\n**Common Mistakes:**\n\n* Failing to square the right side, so $7+k=4$ and $k=-3$.\n* Squaring $x-3$ as $x^{2}-9$, so $7+k=49-9=40$ and $k=33$.\n\n**Test Day Takeaway:** When a solution is handed to you, substitute first — the radical becomes a number and the unknown constant falls out in one line."
+}

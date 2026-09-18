@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A circle in the $xy$-plane is translated $6$ units up with no change in its size. The image of the translated circle has equation $(x + 1)^2 + (y - 2)^2 = 49$. Which equation defines the original circle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x + 1)^2 + (y - 8)^2 = 49$"
+  },
+  {
+   "id": "B",
+   "text": "$(x + 1)^2 + (y + 4)^2 = 49$"
+  },
+  {
+   "id": "C",
+   "text": "$(x + 7)^2 + (y - 2)^2 = 49$"
+  },
+  {
+   "id": "D",
+   "text": "$(x + 1)^2 + (y - 2)^2 = 43$"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "You are being handed the destination, so run the translation backwards.",
+ "distractorNotes": {
+  "A": "translates up a second time",
+  "C": "undoes the shift horizontally",
+  "D": "changes the radius instead of the center"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** The image's center is $(-1, 2)$; undoing a $6$-unit rise puts the original center at $(-1, -4)$, so the original equation is $(x + 1)^2 + (y + 4)^2 = 49$.\n\n**The Full Solution:**\nStep 1: Read the image's center from its equation: $(-1, 2)$, with $r^2 = 49$.\nStep 2: The translation added $6$ to the original $y$-coordinate, so the original $y$-coordinate is $2 - 6 = -4$; the $x$-coordinate is unchanged.\nStep 3: The original circle is $(x + 1)^2 + (y + 4)^2 = 49$. Check: translating $(-1, -4)$ up $6$ units returns $(-1, 2)$, the image's center.\n\n**Why the wrong answers are tempting:**\n* Choice A ($(x + 1)^2 + (y - 8)^2 = 49$): translates up again instead of undoing the move, placing the center at $(-1, 8)$.\n* Choice C ($(x + 7)^2 + (y - 2)^2 = 49$): undoes the shift along the $x$-axis, moving the center to $(-7, 2)$.\n* Choice D ($(x + 1)^2 + (y - 2)^2 = 43$): subtracts $6$ from $r^2$, changing the circle's size rather than its position.\n\n**Test Day Takeaway:** When a question gives you the image, reverse the transformation. Up $6$ is undone by down $6$, and the radius never enters the arithmetic."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A dairy laboratory measured the fat content of a random sample of $240$ milk cartons and reported that the mean fat content of all cartons is between $3.42\\%$ and $3.68\\%$. What is the margin of error for this estimate?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.065\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$0.13\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$0.26\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$3.55\\%$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the interval width by 4 instead of by 2",
+  "C": "reports the full interval width, 3.68 - 3.42, as the margin of error",
+  "D": "reports the center of the interval, the sample mean, instead of the margin"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The interval spans $3.68 - 3.42 = 0.26$ percentage points, and the margin of error is half that span: $0.13\\%$.\n\n**The Full Solution:**\nStep 1: A reported interval always has the form (estimate $-$ margin) to (estimate $+$ margin), so the margin is half the width.\nStep 2: The width is $3.68 - 3.42 = 0.26$ percentage points, so the margin of error is $\\frac{0.26}{2} = 0.13$ percentage points.\nStep 3: Check by rebuilding the interval. The center is $\\frac{3.42 + 3.68}{2} = 3.55\\%$, and $3.55 \\pm 0.13$ gives exactly $3.42\\%$ to $3.68\\%$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.065\\%$): this halves the width twice, $\\frac{0.26}{4}$. Rebuilding with it gives $3.485\\%$ to $3.615\\%$, an interval narrower than the one reported.\n* Choice C ($0.26\\%$): this is the full width. Using it would stretch the interval to $3.29\\%$ to $3.81\\%$, twice as wide as reported.\n* Choice D ($3.55\\%$): this is the sample mean, the center of the interval, not the distance from the center to an endpoint.\n\n**Test Day Takeaway:** Margin of error is the radius of the interval, not its diameter: subtract the endpoints and divide by two, then rebuild the interval to confirm."
+}

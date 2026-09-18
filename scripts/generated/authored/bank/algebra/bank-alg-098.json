@@ -1,0 +1,29 @@
+{
+ "question": "For a speed-skating lap, the index $\\frac{3s + 8}{4}$ equals $11$, where $s$ is the number of hundredths of a second the skater saves on the final turn. A second index for the same lap is $9s + 24$. What is the value of the second index?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$44$"
+  },
+  {
+   "id": "B",
+   "text": "$108$"
+  },
+  {
+   "id": "C",
+   "text": "$132$"
+  },
+  {
+   "id": "D",
+   "text": "$176$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the value of $3s + 8$ and stops",
+  "B": "computes $9s = 108$ but drops the $+24$",
+  "D": "multiplies $3s + 8 = 44$ by the denominator $4$ instead of by $3$"
+ },
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** $3s + 8 = 44$, and $9s + 24$ is exactly $3(3s + 8)$, so the value is $3(44) = 132$.\n\n**The Full Solution:**\n\nStep 1: Multiply both sides of $\\frac{3s + 8}{4} = 11$ by $4$: $3s + 8 = 44$.\n\nStep 2: Notice that $9s + 24 = 3(3s + 8)$, so no value of $s$ is needed.\n\nStep 3: Therefore $9s + 24 = 3(44) = 132$. Check with $s = 12$: $\\frac{3(12) + 8}{4} = 11$ and $9(12) + 24 = 132$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($44$): stops at $3s + 8$, the value cleared of the denominator.\n\n* Choice B ($108$): computes $9s = 108$ but never adds the $24$.\n\n* Choice D ($176$): multiplies $44$ by the denominator $4$ instead of by the factor $3$ that links the two expressions.\n\n**Test Day Takeaway:** Before solving for the variable, check whether the target expression is a constant multiple of the one you already have.",
+ "id": "bank-alg-098"
+}

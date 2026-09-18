@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "On a race committee's chart of a sailing course, distances are marked in hundreds of meters. The starting line has equation $5x - 2y = 14$, and the finish line, which is perpendicular to the starting line, contains the points $(11, k)$ and $(1, 11)$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-14$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$36$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "negates the starting line's slope without inverting it, using $-\\frac{5}{2}$ and getting $k=-14$",
+  "C": "inverts the slope but keeps the sign, using $\\frac{2}{5}$ and getting $k=15$",
+  "D": "uses the starting line's own slope $\\frac{5}{2}$ for the finish line and gets $k=36$"
+ },
+ "hint": "Perpendicular lines have slopes whose product is $-1$.",
+ "explanation": "**Choice B is correct.** The finish line's slope must be $-\\frac{2}{5}$, and forcing the two given points to produce that slope gives $k = 7$.\n\n**The Fast Way (~45s):** Solving $5x - 2y = 14$ for $y$ gives slope $\\frac{5}{2}$, so the perpendicular slope is $-\\frac{2}{5}$. Then $\\frac{11 - k}{1 - 11} = -\\frac{2}{5}$ gives $11 - k = 4$, so $k = 7$.\n\n**The Full Solution:**\n\nStep 1: Put the starting line in slope-intercept form. From $5x - 2y = 14$, $-2y = -5x + 14$, so $y = \\frac{5}{2}x - 7$ and the starting line's slope is $\\frac{5}{2}$.\n\nStep 2: Take the negative reciprocal. A line perpendicular to a line of slope $\\frac{5}{2}$ has slope $-\\frac{2}{5}$.\n\nStep 3: Write the slope of the finish line from its two points and set it equal to $-\\frac{2}{5}$: $\\frac{11 - k}{1 - 11} = \\frac{11 - k}{-10} = -\\frac{2}{5}$. Multiplying both sides by $-10$ gives $11 - k = 4$, so $k = 7$. Check: the finish line then joins $(11, 7)$ and $(1, 11)$, whose slope is $\\frac{11 - 7}{1 - 11} = \\frac{4}{-10} = -\\frac{2}{5}$, and $\\frac{5}{2} \\cdot \\left(-\\frac{2}{5}\\right) = -1$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-14$): changes the sign of $\\frac{5}{2}$ without inverting it. Solving $\\frac{11 - k}{-10} = -\\frac{5}{2}$ gives $11 - k = 25$, so $k = -14$.\n* Choice C ($15$): inverts the slope but keeps it positive. Solving $\\frac{11 - k}{-10} = \\frac{2}{5}$ gives $11 - k = -4$, so $k = 15$.\n* Choice D ($36$): treats the finish line as parallel to the starting line. Solving $\\frac{11 - k}{-10} = \\frac{5}{2}$ gives $11 - k = -25$, so $k = 36$.\n\n**Test Day Takeaway:** Perpendicular means flip AND change the sign; do both steps out loud before you touch the second pair of points."
+}

@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-125",
+ "question": "A cable ladder rises $30$ centimeters over a $40$-centimeter run behind a server rack. How many centimeters of grounding strap trace the outline of the triangle it forms?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ],
+    [
+     40,
+     30
+    ]
+   ],
+   "sideLabels": [
+    "40 cm",
+    "30 cm",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$50$"
+  },
+  {
+   "id": "B",
+   "text": "$70$"
+  },
+  {
+   "id": "C",
+   "text": "$120$"
+  },
+  {
+   "id": "D",
+   "text": "$600$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the hypotenuse, 50, and stops before adding the other two sides",
+  "B": "adds only the two given legs, 30 + 40, and omits the hypotenuse",
+  "D": "computes the area, one half times 30 times 40, instead of the perimeter"
+ },
+ "explanation": "**SAT Pattern: Pythagorean Theorem (3-4-5 Family)**\n\n**Choice C is correct.** The hypotenuse is $\\sqrt{30^2 + 40^2} = 50$, so the outline measures $30 + 40 + 50 = 120$ centimeters.\n\n**The Fast Way (~25s):** $30$-$40$-$50$ is the $3$-$4$-$5$ triple scaled by $10$; the perimeter is $30 + 40 + 50 = 120$.\n\n**The Full Solution:**\n\nStep 1: The rise and run are the legs of a right triangle, so the diagonal is $\\sqrt{30^2 + 40^2} = \\sqrt{900 + 1600} = \\sqrt{2500} = 50$ centimeters.\n\nStep 2: The strap follows all three sides, so add them: $30 + 40 + 50$.\n\nStep 3: The total is $120$ centimeters. Check: $30^2 + 40^2 = 2500 = 50^2$, so the triple is consistent.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($50$): reports the diagonal alone and never adds the other two sides.\n* Choice B ($70$): adds only the two given legs, leaving out the diagonal the strap must also cover.\n* Choice D ($600$): computes the enclosed area, $\\frac{1}{2}(30)(40)$, rather than the distance around.\n\n**Test Day Takeaway:** Recognizing a scaled $3$-$4$-$5$ triple turns the Pythagorean step into mental arithmetic, but read carefully whether the question wants a side, the perimeter, or the area."
+}

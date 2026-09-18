@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-119",
+  "question": "A dry mix contains oats, seeds, and dried fruit by mass in the ratio $9 : 4 : 2$, respectively. A package of the mix contains $180$ grams of oats. What is the total mass, in grams, of the mix in the package?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$108$"
+    },
+    {
+      "id": "B",
+      "text": "$120$"
+    },
+    {
+      "id": "C",
+      "text": "$300$"
+    },
+    {
+      "id": "D",
+      "text": "$675$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "(180/15)(9) = 108, dividing by the 15 total parts instead of the 9 oat parts",
+    "B": "120 grams is the seeds and dried fruit together, not the whole package",
+    "D": "(180/4)(15) = 675, matching the given mass to the wrong term of the ratio"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The oats are $9$ parts, so one part is $\\dfrac{180}{9} = 20$ grams, and the $9 + 4 + 2 = 15$ parts total $15(20) = 300$ grams.\n\n**The Full Solution:**\nStep 1: Write the masses as $9k$, $4k$, and $2k$ grams. The oats give $9k = 180$, so $k = 20$.\nStep 2: The three parts total $9k + 4k + 2k = 15k$ grams.\nStep 3: $15(20) = 300$ grams.\nCheck: $180 + 80 + 40 = 300$, and $180 : 80 : 40$ reduces to $9 : 4 : 2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($108$): This divides $180$ by the $15$ total parts and then multiplies by $9$; the $180$ grams already corresponds to $9$ parts.\n* Choice B ($120$): This is the mass of the seeds and dried fruit, $4k + 2k$, rather than the whole package.\n* Choice D ($675$): This matches the $180$ grams to the $4$-part term, giving $k = 45$ and a total of $675$ grams.\n\n**Test Day Takeaway:** Anchor the unit part on the quantity you are given, then multiply by whichever number of parts the question asks for."
+}

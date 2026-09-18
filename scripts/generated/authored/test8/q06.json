@@ -1,31 +1,31 @@
 {
-  "id": 806,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "A finished ukiyo-e print by an artist such as Katsushika Hokusai was never the work of one pair of hands. The designer supplied a drawing, but a specialist carver pasted it to a block and cut away everything that was not line, a separate carver prepared an additional block for each color, and a printer inked the blocks in turn and pressed the paper onto them by hand, judging the registration so the colors fell exactly within the lines. The publisher, who commissioned the design and paid the workshop, coordinated the whole sequence and bore the financial risk.",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To argue that Hokusai’s designs ultimately proved more influential among European painters abroad than the finished prints made from them ever were among ordinary audiences in Japan."
-    },
-    {
-      "id": "B",
-      "text": "To explain that producing a ukiyo-e print was a coordinated workshop process involving several distinct specialists rather than a single artist."
-    },
-    {
-      "id": "C",
-      "text": "To describe the specific tools a carver used to cut a woodblock for a multicolor print."
-    },
-    {
-      "id": "D",
-      "text": "To compare the financial risks borne by publishers with those borne by the printers they employed."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage walks through the division of labor behind a single print—designer, line carver, color carvers, printer, and publisher—to make the point that the image was the product of a coordinated workshop, not one artist. A introduces an influence-abroad comparison the text never makes; C narrows the passage to a carver's tools, only one step in the sequence; and D fixes on the publisher-versus-printer risk, a detail rather than the overall purpose."
+ "id": 806,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "A cast bell seems the product of a single dramatic pour, but the pour is only one stage among many. First the founder builds the mold: an inner core of brick and loam and an outer cope, each swept to a precise curve by a wooden template pivoting on a central spindle. The finished mold must dry slowly for weeks, since trapped moisture can turn to steam and ruin the casting. Only then is the bronze melted and poured, and even a flawless pour leaves work to do — the rough casting is cleaned, and the bell is mounted on a lathe so that metal can be shaved from its inner wall to bring its tones into tune.",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To compare the tone of bells cast at rival foundries and to argue that the older workshops generally produced the finer-sounding instruments."
+  },
+  {
+   "id": "B",
+   "text": "To explain that founding a bell is a sequence of distinct crafts rather than a single act of pouring metal."
+  },
+  {
+   "id": "C",
+   "text": "To argue that tuning a finished bell demands more skill than casting it does."
+  },
+  {
+   "id": "D",
+   "text": "To describe how the high cost of bell metal shaped the decisions of medieval founders."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Every sentence of the text advances one point: casting a bell proceeds through a sequence of specialized stages — mold building, drying, pouring, fettling, and tuning — rather than a single act of pouring.\n\n**The Full Solution:**\n- The text opens by rejecting the assumption that founding is \"a single dramatic pour.\"\n- It then walks through the stages in order: the loam mold swept up on a strickle board, weeks of drying, the pour itself, and the lathe-tuning afterward.\n- The purpose is to explain that sequence, which is what choice B states.\n\n**Why the other choices are wrong:**\n- A: The text never compares one foundry's bells with another's.\n- C: Only one sentence concerns tuning; the text does not argue tuning matters more than casting.\n- D: The cost of bell metal is never mentioned."
 }

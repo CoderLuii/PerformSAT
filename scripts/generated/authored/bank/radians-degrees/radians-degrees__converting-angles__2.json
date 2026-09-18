@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A theater's revolving stage completes a scene change by turning through $\\frac{7\\pi}{6}$ radians, and the stage manager's cue sheet lists every rotation in degrees. What measure, in degrees, belongs on the cue sheet for this rotation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$105$"
+    },
+    {
+      "id": "B",
+      "text": "$210$"
+    },
+    {
+      "id": "C",
+      "text": "$420$"
+    },
+    {
+      "id": "D",
+      "text": "$630$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses 90 degrees in place of pi: 7(90)/6 = 105",
+    "C": "uses 360 degrees in place of pi: 7(360)/6 = 420",
+    "D": "divides by 2 instead of 6: 7(180)/2 = 630"
+  },
+  "correctAnswer": "B",
+  "hint": "Trade the pi for 180 degrees and simplify.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** Replace $\\pi$ with $180$ degrees: $\\frac{7(180)}{6} = 210$ degrees.\n\n**The Full Solution:**\nStep 1: Set the conversion factor. Multiply a radian measure by $\\frac{180}{\\pi}$ to get degrees.\nStep 2: Multiply and cancel. $\\frac{7\\pi}{6} \\cdot \\frac{180}{\\pi} = \\frac{7 \\cdot 180}{6} = 7 \\cdot 30 = 210$ degrees.\nStep 3: Check the size. $\\frac{7\\pi}{6}$ is a little more than $\\pi$, and $210$ degrees is a little more than $180$ degrees. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($105$): uses $90$ degrees in place of $\\pi$: $\\frac{7(90)}{6} = 105$. A half turn is $180$ degrees, not $90$.\n* Choice C ($420$): uses $360$ degrees in place of $\\pi$, doubling the conversion.\n* Choice D ($630$): divides by $2$ rather than by the denominator $6$.\n\n**Test Day Takeaway:** Substitute $180$ degrees for $\\pi$ and simplify. A radian measure just past $\\pi$ must land just past $180$ degrees."
+}

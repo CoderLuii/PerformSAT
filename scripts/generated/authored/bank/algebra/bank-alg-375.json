@@ -1,0 +1,52 @@
+{
+  "id": "bank-alg-375",
+  "question": "Three trail markers sit at the points shown in the $xy$-plane, where each unit represents one meter of ground distance, and the three markers are the vertices of a triangle. What is the perimeter, in meters, of that triangle?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -5,
+          -2
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "xMin": -10,
+      "xMax": 10,
+      "yMin": -5,
+      "yMax": 15
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$23$"
+    },
+    {
+      "id": "B",
+      "text": "$40$"
+    },
+    {
+      "id": "C",
+      "text": "$46$"
+    },
+    {
+      "id": "D",
+      "text": "$60$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds only the horizontal and vertical sides and omits the slanted side",
+    "C": "uses 23 for the slanted side instead of computing it",
+    "D": "computes the area of the triangle instead of the perimeter"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The legs measure $8$ and $15$ meters, the slanted side is $\\sqrt{8^2 + 15^2} = 17$, and $8 + 15 + 17 = 40$.\n\n**The Full Solution:**\nStep 1: Read the markers: $(-5, -2)$, $(3, -2)$, and $(3, 13)$. The first two share a $y$-value, so that side measures $3 - (-5) = 8$ meters; the last two share an $x$-value, so that side measures $13 - (-2) = 15$ meters.\nStep 2: The third side joins $(-5, -2)$ to $(3, 13)$: $\\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289} = 17$ meters.\nStep 3: Add the three sides: $8 + 15 + 17 = 40$ meters. Check: $8$-$15$-$17$ satisfies $64 + 225 = 289$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($23$): adds only the horizontal and vertical sides and omits the slanted one.\n* Choice C ($46$): uses $8 + 15 = 23$ as the slanted side instead of computing $\\sqrt{8^2 + 15^2}$.\n* Choice D ($60$): computes the area $\\frac{1}{2}(8)(15)$ instead of the perimeter.\n\n**Test Day Takeaway:** Sides parallel to an axis are read straight off the coordinates; only the slanted side needs the distance formula."
+}

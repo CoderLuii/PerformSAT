@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-080",
+ "question": "A depth converter is modeled by the function $f$, defined by $f(x) = \\frac{3x - 8}{5}$, and $f^{-1}$ denotes the inverse of $f$. For a constant $k$, the converter satisfies the equation $f^{-1}(f(k)) = 3k - 22$. What is the value of $k$?",
+ "correctAnswer": "11",
+ "explanation": "**SAT Pattern: Composition of Inverse Functions**\n\n**The correct answer is $11$.**\n\n**The Fast Way (~20s):** $f^{-1}(f(k)) = k$ for every $k$, so $k = 3k - 22$, giving $k = 11$.\n\n**The Full Solution:**\nStep 1: A function and its inverse undo each other, so $f^{-1}(f(k)) = k$ for every input $k$ in the domain of $f$.\nStep 2: The given condition therefore becomes $k = 3k - 22$.\nStep 3: Subtracting $k$ gives $22 = 2k$, so $k = 11$. Check: $f(11) = \\frac{33 - 8}{5} = 5$, and $f^{-1}(5) = \\frac{5(5) + 8}{3} = 11$, while $3(11) - 22 = 11$ ✓\n\n**Common Mistakes:** Answering $5.5$ solves $k = 3k - 22$ as $4k = 22$ by adding instead of subtracting $k$; answering $22$ stops at $2k = 22$; building $f^{-1}(x) = \\frac{5x + 8}{3}$ and composing by hand also works but wastes a minute.\n\n**Test Day Takeaway:** Recognize $f^{-1}(f(x))$ as $x$ on sight — never build the inverse when the composition already collapses."
+}

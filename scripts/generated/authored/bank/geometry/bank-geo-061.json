@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-061",
+ "question": "A curtain-wall bracing plate has the shape of right triangle $FGH$ shown, with side lengths in centimeters. What is the value of $\\cos F$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     12,
+     0
+    ],
+    [
+     12,
+     9
+    ]
+   ],
+   "labels": [
+    "F",
+    "G",
+    "H"
+   ],
+   "sideLabels": [
+    "12",
+    "9",
+    "15"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3}{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{3}{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{4}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{4}{3}$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "gives sin F, the side opposite F over the hypotenuse, 9 over 15",
+  "B": "gives tan F, opposite over adjacent, 9 over 12",
+  "D": "inverts the tangent, adjacent over opposite, 12 over 9"
+ },
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice C is correct.** $\\cos F = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{FG}{FH} = \\frac{12}{15} = \\frac{4}{5}$.\n\n**The Fast Way (~15s):** The side adjacent to $F$ is $12$ and the hypotenuse is $15$, so $\\cos F = \\frac{12}{15} = \\frac{4}{5}$.\n\n**The Full Solution:**\n\nStep 1: The right angle is at $G$, so the hypotenuse is $\\overline{FH} = 15$.\n\nStep 2: The leg adjacent to angle $F$ is $\\overline{FG} = 12$; the leg opposite $F$ is $\\overline{GH} = 9$.\n\nStep 3: Cosine is adjacent over hypotenuse: $\\frac{12}{15} = \\frac{4}{5}$. Check: $\\left(\\frac{3}{5}\\right)^2 + \\left(\\frac{4}{5}\\right)^2 = 1$, so the sine and cosine are consistent.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{3}{5}$): that is $\\sin F$, opposite over hypotenuse.\n* Choice B ($\\frac{3}{4}$): that is $\\tan F$, opposite over adjacent.\n* Choice D ($\\frac{4}{3}$): inverts the tangent, adjacent over opposite.\n\n**Test Day Takeaway:** Label the hypotenuse first — it is always opposite the right angle — and the adjacent and opposite legs sort themselves out from the named angle."
+}

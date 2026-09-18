@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-063",
+ "question": "A rectangular backdrop panel for a stage set has area $(3x-4)(2x+k)$ square feet, where $k$ is a constant and $x>2$. If that area equals $6x^{2}+bx-28$ for every value of $x$, what is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-29$"
+  },
+  {
+   "id": "B",
+   "text": "$-13$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$21$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "solves -4k = -28 as k = -7, then reports 3(-7) - 8 = -29",
+  "B": "reverses the signs when collecting the middle terms, computing 8x - 21x",
+  "D": "reports only the 3k term, dropping the -8x from the product"
+ },
+ "explanation": "**SAT Pattern: Match Coefficients of Equivalent Polynomials**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The constant term gives $-4k=-28$, so $k=7$, and the middle coefficient is $3(7)-8=13$.\n\n**The Full Solution:**\nStep 1: Expanding gives $(3x-4)(2x+k)=6x^{2}+3kx-8x-4k$.\nStep 2: Matching constant terms: $-4k=-28$, so $k=7$.\nStep 3: Matching the $x$ terms: $b=3k-8=21-8=13$. Check: $(3x-4)(2x+7)=6x^{2}+21x-8x-28=6x^{2}+13x-28$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-29$): solves $-4k=-28$ as $k=-7$, which expands to $6x^{2}-29x+28$ and does not match the constant.\n* Choice B ($-13$): flips the signs of both middle terms, computing $8x-21x$.\n* Choice D ($21$): stops at $3k$ and never subtracts the $8x$ from $-4$ times $2x$.\n\n**Test Day Takeaway:** Read the constant term first to pin the unknown, then collect both middle terms with their signs."
+}

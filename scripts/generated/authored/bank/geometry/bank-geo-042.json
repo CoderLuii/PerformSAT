@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-042",
+ "question": "A goniometer stage on an X-ray diffractometer records the orientation of a sample as a positive number $d$ of degrees, but the control software that drives the stage's motor accepts only radian measures. Which expression gives the measure, in radians, of a rotation the stage records as $d$ degrees?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{180d}{\\pi}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{d}{180\\pi}$"
+  },
+  {
+   "id": "C",
+   "text": "$180\\pi d$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{\\pi d}{180}$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "uses the reciprocal factor 180 over pi, which converts radians into degrees",
+  "B": "divides by 180 pi instead of multiplying by pi over 180",
+  "C": "multiplies by 180 pi, scaling the measure up by a factor of about 565 instead of down"
+ },
+ "explanation": "**SAT Pattern: Radian-Degree Conversion Factor**\n\n**Choice D is correct.** Since $180^\\circ = \\pi$ radians, each degree is $\\frac{\\pi}{180}$ radians, so $d$ degrees is $\\frac{\\pi d}{180}$ radians.\n\n**The Fast Way (~20s):** Multiply degrees by $\\frac{\\pi}{180}$: the answer is $\\frac{\\pi d}{180}$.\n\n**The Full Solution:**\n\nStep 1: A straight angle measures $180^\\circ$ and also $\\pi$ radians, so $\\frac{\\pi \\text{ radians}}{180 \\text{ degrees}} = 1$.\n\nStep 2: Multiplying $d$ degrees by that conversion factor cancels degrees: $d \\cdot \\frac{\\pi}{180} = \\frac{\\pi d}{180}$ radians.\n\nStep 3: Check with a value you know: $d = 90$ gives $\\frac{90\\pi}{180} = \\frac{\\pi}{2}$ radians, the correct measure of a right angle.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{180d}{\\pi}$): the reciprocal factor, which converts radians into degrees instead.\n* Choice B ($\\frac{d}{180\\pi}$): divides by $180\\pi$ rather than multiplying by $\\frac{\\pi}{180}$; testing $d = 90$ gives about $0.159$, far too small.\n* Choice C ($180\\pi d$): multiplies by $180\\pi$, scaling the measure up instead of down.\n\n**Test Day Takeaway:** Build the factor from $180^\\circ = \\pi$ radians and put the unit you want on top — degrees to radians means $\\frac{\\pi}{180}$."
+}

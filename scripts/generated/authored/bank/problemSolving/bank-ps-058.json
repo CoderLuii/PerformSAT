@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-058",
+  "question": "Two boats leave a dock at the same time and travel in the same direction along a straight canal. One boat travels at a constant speed of $22$ miles per hour, and the other travels at a constant speed of $14$ miles per hour. How many miles apart are the boats after $1.5$ hours?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$21$"
+    },
+    {
+      "id": "D",
+      "text": "$54$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the difference in speeds, in miles per hour, without multiplying by the $1.5$ hours.",
+    "C": "reports the distance the slower boat traveled rather than the gap between the boats.",
+    "D": "adds the speeds, $22 + 14 = 36$, as if the boats moved in opposite directions."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Relative Rate (Same Direction)**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Same direction, so the gap grows at the difference of the speeds: $22 - 14 = 8$ miles per hour. After $1.5$ hours the gap is $8 \\times 1.5 = 12$ miles.\n\n**The Full Solution:**\nStep 1: Distances after $1.5$ hours: faster boat $22 \\times 1.5 = 33$ miles; slower boat $14 \\times 1.5 = 21$ miles.\nStep 2: The distance between them is $33 - 21 = 12$ miles.\nStep 3: Check with the relative speed: $(22 - 14) \\times 1.5 = 8 \\times 1.5 = 12$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): reports the difference in speeds, in miles per hour, without multiplying by the $1.5$ hours.\n* Choice C ($21$): reports the distance the slower boat traveled rather than the gap between the boats.\n* Choice D ($54$): adds the speeds, $22 + 14 = 36$, as if the boats moved in opposite directions.\n\n**Test Day Takeaway:** Same direction: separation rate is the difference of the speeds; opposite directions: the sum. Then multiply by time."
+}

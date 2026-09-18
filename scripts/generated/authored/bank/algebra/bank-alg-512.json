@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-512",
+ "question": "On a rezoning map, parcel B has an area that is $30\\%$ less than the area of parcel A, and parcel C has an area that is $25\\%$ greater than the area of parcel B. Parcel C covers $2{,}100$ square meters. How many square meters does parcel A cover?",
+ "correctAnswer": "2400",
+ "explanation": "**SAT Pattern: Chained Percent Relationship**\n\n**The correct answer is $2400$.**\n\n**The Fast Way (~35s):** Chaining the multipliers gives $C = 1.25(0.70A) = 0.875A$, so $A = \\frac{2100}{0.875} = 2400$.\n\n**The Full Solution:**\nStep 1: Write each step as a multiplier: parcel B is $30\\%$ less than A, so $B = 0.70A$; parcel C is $25\\%$ more than B, so $C = 1.25B$.\nStep 2: Substitute to link C directly to A: $C = 1.25(0.70A) = 0.875A$.\nStep 3: Solve $0.875A = 2100$ to get $A = 2400$ square meters. Check: $0.70(2400) = 1680$, and $1.25(1680) = 2100$ ✓\n\n**Common Mistakes:** Answering $3000$ applies only the $30\\%$ step, computing $\\frac{2100}{0.70}$; answering $1837.5$ multiplies by $0.875$ instead of dividing; answering $2100 \\div 0.95 \\approx 2211$ treats the chain as a single $5\\%$ decrease by adding $-30$ and $+25$.\n\n**Test Day Takeaway:** Percent changes chain by multiplying, never by adding — convert each step to a multiplier before combining."
+}

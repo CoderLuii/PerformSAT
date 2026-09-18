@@ -1,0 +1,51 @@
+{
+  "id": "bank-am-307",
+  "question": "The cross section of a tunnel is modeled by $y = -\\dfrac{1}{4}x^2 + 9$, where $x$ is the horizontal distance in meters from the center of the tunnel and $y$ is the height in meters above the road. The graph of this model is shown. For which values of $x$ is the tunnel more than $5$ meters high?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": 0,
+        "k": 9
+      },
+      "a": -0.25,
+      "xRange": [
+        -8,
+        8
+      ],
+      "yRange": [
+        -2,
+        10
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 2,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-6 < x < 6$"
+    },
+    {
+      "id": "B",
+      "text": "$x < -4$ or $x > 4$"
+    },
+    {
+      "id": "C",
+      "text": "$-4 < x < 4$"
+    },
+    {
+      "id": "D",
+      "text": "$0 < x < 4$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "solves y > 0, the road-level width",
+    "B": "fails to reverse the inequality",
+    "D": "keeps only the right half"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Solve $-\\dfrac{1}{4}x^2 + 9 > 5$. Then $\\dfrac{1}{4}x^2 < 4$, so $x^2 < 16$ and $-4 < x < 4$.\n\n**The Full Solution:**\nStep 1: \"More than $5$ meters high\" means $-\\dfrac{1}{4}x^2 + 9 > 5$.\nStep 2: Subtracting $9$ gives $-\\dfrac{1}{4}x^2 > -4$. Multiplying by $-4$ reverses the inequality: $x^2 < 16$.\nStep 3: $x^2 < 16$ means $|x| < 4$, so $-4 < x < 4$. Check: at $x = 0$ the height is $9$, which is more than $5$; at $x = 5$ the height is $-6.25 + 9 = 2.75$, which is not. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6 < x < 6$): solves $y > 0$ instead of $y > 5$, giving the tunnel's full width at road level.\n* Choice B ($x < -4$ or $x > 4$): forgets to reverse the inequality when multiplying by $-4$.\n* Choice D ($0 < x < 4$): keeps only the right half of the tunnel and drops the negative distances.\n\n**Test Day Takeaway:** Multiplying an inequality by a negative number flips it, and $x^2 < k$ always produces a two-sided interval around $0$."
+}

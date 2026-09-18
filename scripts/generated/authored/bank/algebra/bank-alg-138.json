@@ -1,0 +1,6 @@
+{
+ "question": "A spoil stockpile at a building site holds $S(t)$ cubic yards of material $t$ hours after excavation begins, where $S(t)=qt+40$ and $q$ is the constant hourly rate at which spoil is added. If $S(9)-S(4)=35$, what is the value of $S(20)$?",
+ "correctAnswer": "180",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**The correct answer is $180$.**\n\n**The Fast Way (~40s):** In $S(t)=qt+40$ the constant $40$ cancels in any difference, so $S(9)-S(4)=5q=35$, giving $q=7$ and $S(20)=7(20)+40=180$.\n\n**The Full Solution:**\n\nStep 1: Write both outputs: $S(9)=9q+40$ and $S(4)=4q+40$.\n\nStep 2: Subtract. The $40$ terms cancel, leaving $S(9)-S(4)=5q$. Setting $5q=35$ gives $q=7$ cubic yards per hour.\n\nStep 3: Evaluate at $t=20$: $S(20)=7(20)+40=140+40=180$. Check: $S(9)-S(4)=103-68=35$, as required.\n\n**Common Mistakes:** Dividing $35$ by $9$ instead of by the gap $9-4=5$ gives $q\\approx 3.9$ and an answer near $118$. Reporting only $7(20)=140$ leaves out the $40$ cubic yards already stockpiled at $t=0$.\n\n**Test Day Takeaway:** A difference of two outputs of a linear function erases the constant term, so it isolates the rate in one step.",
+ "id": "bank-alg-138"
+}

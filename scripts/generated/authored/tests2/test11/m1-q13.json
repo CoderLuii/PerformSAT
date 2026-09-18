@@ -1,0 +1,57 @@
+{
+ "id": 13,
+ "question": "The table classifies $180$ concrete test cylinders by curing method and by whether the cylinder passed a compression test. Which expression gives the probability that a cylinder chosen at random from those that failed was steam cured?",
+ "questionTable": {
+  "headers": [
+   "Curing method",
+   "Passed",
+   "Failed",
+   "Total"
+  ],
+  "rows": [
+   [
+    "Steam",
+    "$72$",
+    "$18$",
+    "$90$"
+   ],
+   [
+    "Moist",
+    "$54$",
+    "$36$",
+    "$90$"
+   ],
+   [
+    "Total",
+    "$126$",
+    "$54$",
+    "$180$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{18}{180}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{18}{90}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{54}{180}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{18}{54}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by the 180 cylinders in the whole study instead of the 54 that failed",
+  "B": "divides by the 90 steam-cured cylinders, which reverses the condition",
+  "C": "gives the probability that a cylinder failed, ignoring the curing method"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The condition \"failed\" makes the $54$ failed cylinders the whole group, and $18$ of them were steam cured, so the probability is $\\frac{18}{54}$.\n\n**The Full Solution:**\nStep 1: The phrase \"chosen at random from those that failed\" restricts attention to the Failed column, whose total is $54$ cylinders.\nStep 2: Within that column, the steam-cured row contributes $18$ cylinders.\nStep 3: The probability is the part over the restricted whole: $\\frac{18}{54}$. Check the column: $18$ steam-cured failures plus $36$ moist-cured failures is $54$, so the two conditional probabilities $\\frac{18}{54}$ and $\\frac{36}{54}$ add to $1$, as they must. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{18}{180}$): this divides by every cylinder in the study, giving the probability that a randomly chosen cylinder is both steam cured and failed, which is $0.1$ rather than the required conditional probability of about $0.33$.\n* Choice B ($\\frac{18}{90}$): this divides by the steam-cured total, answering the reversed question — the probability that a steam-cured cylinder failed, which is $0.2$.\n* Choice C ($\\frac{54}{180}$): this is the overall failure rate, $0.3$, and never uses the curing method at all.\n\n**Test Day Takeaway:** In a conditional probability, the group named after \"given\" or \"from those that\" becomes the denominator — find that row or column total first."
+}

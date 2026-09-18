@@ -1,0 +1,6 @@
+{
+ "question": "In a curing test the strength $y$, in hundreds of pounds per square inch, satisfies both $y=3x+2$ and $4x-y=6$, where $x$ is the number of days since the pour. What is the value of $y$?",
+ "correctAnswer": "26",
+ "explanation": "**SAT Pattern: Linear System by Substitution**\n\n**The correct answer is $26$.**\n\n**The Fast Way (~30s):** Substituting gives $4x-(3x+2)=6$, so $x-2=6$, $x=8$, and $y=3(8)+2=26$.\n\n**The Full Solution:**\n\nStep 1: Replace $y$ in the second equation with $3x+2$: $4x-(3x+2)=6$.\n\nStep 2: Distribute the subtraction to both terms: $4x-3x-2=6$, so $x-2=6$ and $x=8$.\n\nStep 3: Return to the first equation: $y=3(8)+2=26$. Check: $4(8)-26=32-26=6$.\n\n**Common Mistakes:** Reporting $8$ gives the day number rather than the strength. Distributing the subtraction to only the first term, as in $4x-3x+2=6$, gives $x=4$ and the wrong strength $14$.\n\n**Test Day Takeaway:** When a substituted expression follows a minus sign, the minus applies to every term inside it.",
+ "id": "bank-alg-198"
+}

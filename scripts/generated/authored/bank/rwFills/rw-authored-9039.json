@@ -1,0 +1,25 @@
+{
+  "id": 9039,
+  "passage": "Most of the world’s office paper follows a standard published in Germany in 1922. The system fixes one starting area, a single square meter, and one proportion: the long side of every sheet is the square root of two times the short side. __That proportion is the only one that survives being halved, since folding a sheet of any other shape changes the relation between its sides.__ Because it survives, each fold produces the next size in the series, and the sizes nest exactly: two A4 pages cover one A3, four cover one A2. A printer can therefore enlarge a page from one size to the next without cropping the image or leaving a band of white, and a cabinet built for one size will hold the folded halves of the size above it.",
+  "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It introduces a practical problem that the standard described in the text was unable to solve."
+    },
+    {
+      "id": "B",
+      "text": "It identifies the mathematical property that makes the series of paper sizes described afterward possible."
+    },
+    {
+      "id": "C",
+      "text": "It concedes a limitation of the system before the text goes on to list that system’s advantages."
+    },
+    {
+      "id": "D",
+      "text": "It illustrates the standard by describing how one particular sheet of paper is manufactured."
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Choice B is correct.** The underlined sentence explains why the square-root-of-two proportion is unique, and every consequence the passage lists afterward depends on that uniqueness.\n\n**The Full Solution:**\n- Read the sentence in position. It follows the definition of the standard and precedes the word Because, which is the signal that what comes next follows from it.\n- What comes next is the nesting of the sizes, the fold that yields the next size down, the enlargement without cropping, and the cabinet that holds folded halves. All of these rest on the claim that only this proportion survives halving.\n- A function question asks what the sentence does for the whole text, so trace its consequences forward rather than paraphrasing it.\n\n**Why the other choices are wrong:**\n- A: No problem goes unsolved. The sentence states a property the system exploits successfully.\n- C: Nothing is conceded. Surviving being halved is the system’s strength, not a limitation.\n- D: Manufacture is never mentioned; the sentence concerns geometry, not how paper is made."
+}

@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
+  "module": 1,
+  "passage": "No map drawn at a reduced scale can carry every feature of the landscape it represents. Cartographers therefore practice what they call generalization: deciding which details a map's purpose requires and which it can afford to ______, so that the roads, rivers, and settlements that remain stay legible rather than disappearing into clutter.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "discernible"
+      "text": "omit"
     },
     {
       "id": "B",
-      "text": "concealed"
+      "text": "enlarge"
     },
     {
       "id": "C",
-      "text": "hereditary"
+      "text": "invent"
     },
     {
       "id": "D",
-      "text": "decorative"
+      "text": "duplicate"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage says the faint differences above buried walls are too subtle for the eye but show up in certain near-infrared bands, where outlines can be traced — so in those bands the differences become clearly \"discernible,\" or detectable. \"Concealed\" reverses the meaning; \"hereditary\" and \"decorative\" have no bearing on whether the differences can be seen in the imagery.",
-  "passage": "Archaeologists increasingly survey the ground from orbit. Buried stone walls and floors change the moisture and vegetation directly above them in ways too subtle for the eye, but in certain near-infrared bands of a satellite's sensor these faint differences become clearly ______, and the outlines of unexcavated settlements can be traced at sites long thought to hold nothing more to find.",
+  "explanation": "**Choice A is correct.** Generalization is a choice between details a map keeps and details it leaves out, and \"omit\" names the leaving-out.\n\n**The Full Solution:**\n- The first sentence sets the constraint: a reduced-scale map cannot carry every feature.\n- The blank is paired against \"which details a map's purpose requires\" — so it must name the fate of the details not required.\n- \"Omit,\" to leave out, completes the contrast and explains why the remaining features stay legible.\n\n**Why the other choices are wrong:**\n- B: \"Enlarge\" would add prominence to details, aggravating the clutter the sentence is trying to avoid.\n- C: \"Invent\" means to fabricate features, which describes bad mapmaking, not selective mapmaking.\n- D: \"Duplicate\" means to repeat features, which no part of the text suggests and which would also worsen clutter.",
   "_meta": {
-    "anchor": "satellite remote sensing in archaeology — near-infrared detection of buried structures"
-  },
-  "module": 1
+    "anchor": "cartographic generalization — selective omission at reduced scale"
+  }
 }

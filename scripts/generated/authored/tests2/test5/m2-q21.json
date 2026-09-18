@@ -1,0 +1,53 @@
+{
+ "id": 21,
+ "question": "A studio's uncompressed stereo master is written to disk at a constant rate of $1{,}536$ kilobits per second. Using only the conversions shown, how many megabytes of storage does a single take lasting $5$ minutes require?",
+ "questionTable": {
+  "headers": [
+   "Quantity",
+   "Equivalent"
+  ],
+  "rows": [
+   [
+    "$1$ kilobit",
+    "$1{,}000$ bits"
+   ],
+   [
+    "$1$ byte",
+    "$8$ bits"
+   ],
+   [
+    "$1$ megabyte",
+    "$1{,}000{,}000$ bytes"
+   ],
+   [
+    "$1$ minute",
+    "$60$ seconds"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7.2$"
+  },
+  {
+   "id": "B",
+   "text": "$57.6$"
+  },
+  {
+   "id": "C",
+   "text": "$460.8$"
+  },
+  {
+   "id": "D",
+   "text": "$3{,}686.4$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides by 8 a second time after the bits-to-bytes step is already done, turning 57.6 into 7.2",
+  "C": "reports 460,800,000 bits as 460.8 megabytes, skipping the division by 8 that converts bits to bytes",
+  "D": "multiplies by 8 instead of dividing when converting bits to bytes, giving 3,686,400,000 bytes"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice B is correct.**\n\n**The Fast Way (~50s):** $1{,}536$ kilobits per second is $1{,}536{,}000$ bits per second; over $300$ seconds that is $460{,}800{,}000$ bits, which is $57{,}600{,}000$ bytes, or $57.6$ megabytes.\n\n**The Full Solution:**\nStep 1: Convert the rate to bits per second. Each kilobit is $1{,}000$ bits, so the rate is $1{,}536\\times 1{,}000=1{,}536{,}000$ bits per second.\nStep 2: Convert the duration and multiply. A $5$-minute take lasts $5\\times 60=300$ seconds, so the take holds $1{,}536{,}000\\times 300=460{,}800{,}000$ bits.\nStep 3: Convert bits to megabytes. Dividing by $8$ gives $57{,}600{,}000$ bytes, and dividing by $1{,}000{,}000$ gives $57.6$ megabytes. Check by running the chain backward: $57.6\\times 1{,}000{,}000\\times 8=460{,}800{,}000$ bits, and $460{,}800{,}000\\div 300=1{,}536{,}000$ bits per second ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7.2$): applies the divide-by-$8$ step twice. Once the count is in bytes, the only conversion left is bytes to megabytes.\n* Choice C ($460.8$): stops at $460{,}800{,}000$ bits and reads the leading digits as megabytes. That number counts bits, and a byte is $8$ of them.\n* Choice D ($3{,}686.4$): multiplies by $8$ where the conversion calls for division. A byte is larger than a bit, so the count of bytes must be smaller than the count of bits.\n\n**Test Day Takeaway:** Write the chain of conversions out and let the units cancel one at a time. When one unit is larger than the other, ask whether the count should grow or shrink before choosing to multiply or divide."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-193",
+ "question": "A square-based tin for bandage rolls stands $x$ centimeters tall on a base edge of $x+4$ centimeters, and its four side panels together cover $4x^2+kx$ square centimeters. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$32$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "copies the constant 4 from the base edge without multiplying by the four panels",
+  "B": "counts only two panels: 2(x+4)x = 2x^2 + 8x",
+  "D": "counts eight panels, doubling the correct 16"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Symbolic Area or Volume**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** Each side panel is $(x+4)$ by $x$, so four of them cover $4x(x+4)=4x^2+16x$, giving $k=16$.\n\n**The Full Solution:**\n\nStep 1 — The base is a square of edge $x+4$, so every side panel is a rectangle $x+4$ centimeters wide and $x$ centimeters tall.\n\nStep 2 — One panel covers $x(x+4)=x^2+4x$ square centimeters, and there are four panels: $4(x^2+4x)=4x^2+16x$.\n\nStep 3 — Match coefficients with $4x^2+kx$: the $x^2$ terms already agree, so $k=16$. Check with $x=2$: each panel is $6$ by $2$, or $12$, and four panels give $48$, while $4(4)+16(2)=48$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($4$): this reports the constant from the base edge without multiplying by the four panels.\n* Choice B ($8$): this counts only two panels, giving $2x^2+8x$.\n* Choice D ($32$): this counts eight panels, doubling the correct coefficient.\n\n**Test Day Takeaway:** Expand fully, then match coefficients term by term — the $x^2$ terms agreeing is your signal that the setup is right."
+}

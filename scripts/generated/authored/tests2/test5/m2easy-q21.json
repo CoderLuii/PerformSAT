@@ -1,0 +1,29 @@
+{
+ "id": 21,
+ "question": "A research group's document archive grows at a constant rate as files are ingested. The table gives the archive's stored volume, in gigabytes, on three days of its first month of operation. What was the stored volume, in gigabytes, on day $0$, when ingestion began?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Day",
+    "Stored volume (GB)"
+   ],
+   "rows": [
+    [
+     "6",
+     "214"
+    ],
+    [
+     "14",
+     "302"
+    ],
+    [
+     "22",
+     "390"
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "148",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**The correct answer is $148$.**\n\n**The Fast Way (~35s):** The rate is $\\frac{302 - 214}{14 - 6} = 11$ GB per day, so day $0$ holds $214 - 6(11) = 148$ GB.\n\n**The Full Solution:**\nStep 1: Constant growth means the volume is a linear function of the day. Use two rows to find the rate: $\\frac{302 - 214}{14 - 6} = \\frac{88}{8} = 11$ gigabytes per day.\nStep 2: Day $0$ is $6$ days before the first row, so subtract $6$ days of growth from that row: $214 - 6(11) = 214 - 66 = 148$.\nStep 3: Check the third row from this start: $148 + 22(11) = 148 + 242 = 390$ gigabytes ✓\n\n**Common Mistakes:**\n* Subtracting a single day's growth gives $214 - 11 = 203$, which is the volume on day $5$, not day $0$.\n* Reporting the first listed value gives $214$, treating day $6$ as though it were the start of the record.\n* Dividing the $88$-gigabyte rise by $4$ instead of by the $8$ days between the rows gives a rate of $22$ and a start of $214 - 132 = 82$.\n\n**Test Day Takeaway:** With a constant rate, find the change per single unit first, then count how many units separate the row you have from the one you want."
+}

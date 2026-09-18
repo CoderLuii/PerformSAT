@@ -6,6 +6,19 @@ import {
 } from '../../design/icons';
 import { getUpcomingSATDates, formatSatChipLabel } from '../../data/satTestDates';
 import { FUNNEL_QUESTIONS } from './funnelConfig';
+import {
+  SECTION_OPTIONS,
+  MATH_AREA_OPTIONS,
+  RW_AREA_OPTIONS,
+  feelingBody,
+  examDateIntro,
+  scoreScreenCopy,
+  worryBody,
+  mathAreasBody,
+  rwAreasBody,
+  studyDaysBody,
+  finishPreviewLine,
+} from './innerOnboardingCopy';
 
 /**
  * InnerOnboarding — the post-signup "inner boarding" flow.
@@ -55,12 +68,12 @@ const FEELING_OPTIONS = FUNNEL_QUESTIONS
   .find((q) => q.id === 'feeling')
   .options.map(({ value, label }) => ({ value, label }));
 
-const SECTION_OPTIONS = [
-  { value: 'math', label: 'Math' },
-  { value: 'rw', label: 'Reading and Writing' },
-  { value: 'timing', label: 'Time management' },
-  { value: 'strategy', label: 'Test-taking strategy' },
-];
+// SECTION_OPTIONS / MATH_AREA_OPTIONS / RW_AREA_OPTIONS moved to
+// innerOnboardingCopy.js (persisted schema shared with starterPlanService;
+// the copy module owns them so its exhaustiveness tests can iterate the
+// values).
+
+const STUDY_DAY_CHOICES = [3, 4, 5, 6, 7];
 
 // Module scope so its identity is stable across renders — defined inline it
 // remounted the whole option subtree on every state change, cutting the
@@ -87,8 +100,35 @@ const OptionList = ({ options, selected, onSelect }) => (
   </div>
 );
 
-const InnerOnboarding = ({ user, onComplete }) => {
+// Multi-select sibling of OptionList: toggles values in an array, never
+// auto-advances (a Continue CTA confirms the set).
+const MultiOptionList = ({ options, selected, onToggle }) => (
+  <div className="io-options">
+    {options.map((o) => {
+      const isSel = selected.includes(o.value);
+      return (
+        <button
+          key={o.value}
+          type="button"
+          className={`io-option${isSel ? ' is-selected' : ''}`}
+          aria-pressed={isSel}
+          onClick={() => onToggle(o.value)}
+        >
+          <span>{o.label}</span>
+          {isSel && (
+            <CheckIcon className="io-option-check" width={20} height={20} aria-hidden="true" />
+          )}
+        </button>
+      );
+    })}
+  </div>
+);
+
+const InnerOnboarding = ({ user, onComplete, onExit }) => {
   const firstName = (user?.firstName || '').trim();
+  // The pre-signup funnel's answers ride the user doc; every variant fn
+  // falls back to the generic copy when they're absent (legacy accounts).
+  const funnelAnswers = user?.onboardingProfile?.answers || {};
 
   const initialFeeling = user?.feeling || user?.onboardingProfile?.answers?.feeling || null;
   const initialGoal = clampGoal(user?.targetScore ?? DEFAULT_GOAL);
@@ -108,6 +148,9 @@ const InnerOnboarding = ({ user, onComplete }) => {
   const [confidentArea, setConfidentArea] = useState(null);
   const [worryArea, setWorryArea] = useState(null);
   const [gradYear, setGradYear] = useState(null);
+  const [weakMathAreas, setWeakMathAreas] = useState([]);
+  const [weakRWAreas, setWeakRWAreas] = useState([]);
+  const [studyDaysPerWeek, setStudyDaysPerWeek] = useState(null);
   const [submitting, setSubmitting] = useState(false);
   // Guards the auto-advance so a double-click on an option can't queue two
   // goNext calls (which would skip an entire screen). Mirrors OnboardingFunnel.
@@ -132,7 +175,7 @@ const InnerOnboarding = ({ user, onComplete }) => {
     return rw + m;
   }, [scoreMode, totalScore, rwScore, mathScore]);
 
-  const TOTAL_STEPS = 9;
+  const TOTAL_STEPS = 12;
   const goNext = () => setStep((s) => Math.min(TOTAL_STEPS - 1, s + 1));
   const clearPendingAdvance = () => {
     if (advanceTimer.current) { clearTimeout(advanceTimer.current); advanceTimer.current = null; }
@@ -143,7 +186,7 @@ const InnerOnboarding = ({ user, onComplete }) => {
     setStep((s) => Math.max(0, s - 1));
   };
   const pick = (setter) => (value) => {
-    if (pendingAdvance) return; // ignore double-taps mid-transition
+    if (pendingAdvance || advanceTimer.current) return; // ignore double-taps mid-transition (ref = same-batch guard)
     setter(value);
     setPendingAdvance(true);
     advanceTimer.current = setTimeout(() => {
@@ -151,6 +194,29 @@ const InnerOnboarding = ({ user, onComplete }) => {
       setPendingAdvance(false);
       goNext();
     }, 160);
+  };
+
+  // Continue/skip buttons get the same double-tap protection as option
+  // picks: a rapid double-click on a goNext-wired CTA silently skipped the
+  // next screen (TODOS.md finding, now fixed for S1/S2/S7/S8).
+  const advanceOnce = (extra) => () => {
+    // advanceTimer.current is the synchronous guard: two clicks in one event
+    // batch both read pendingAdvance's stale false, but the ref is set
+    // immediately by the first.
+    if (pendingAdvance || advanceTimer.current) return;
+    if (extra) extra();
+    setPendingAdvance(true);
+    advanceTimer.current = setTimeout(() => {
+      advanceTimer.current = null;
+      setPendingAdvance(false);
+      goNext();
+    }, 60);
+  };
+
+  const toggleIn = (setter) => (value) => {
+    setter((current) => current.includes(value)
+      ? current.filter((v) => v !== value)
+      : [...current, value]);
   };
 
   const finish = () => {
@@ -164,6 +230,9 @@ const InnerOnboarding = ({ user, onComplete }) => {
       confidentArea: confidentArea || undefined,
       worryArea: worryArea || undefined,
       gradYear: gradYear || undefined,
+      weakMathAreas: weakMathAreas.length ? weakMathAreas : undefined,
+      weakRWAreas: weakRWAreas.length ? weakRWAreas : undefined,
+      studyDaysPerWeek: studyDaysPerWeek || undefined,
     });
   };
 
@@ -181,7 +250,7 @@ const InnerOnboarding = ({ user, onComplete }) => {
             <h1 className="io-title">
               {firstName ? `${firstName}, where's your head at with the SAT right now?` : "Where's your head at with the SAT right now?"}
             </h1>
-            <p className="io-body">No wrong answer. It just helps us set the tone.</p>
+            <p className="io-body">{feelingBody(funnelAnswers) || 'No wrong answer. It just helps us set the tone.'}</p>
             <OptionList options={FEELING_OPTIONS} selected={feeling} onSelect={pick(setFeeling)} />
           </div>
         );
@@ -194,7 +263,7 @@ const InnerOnboarding = ({ user, onComplete }) => {
               Your timeline
             </span>
             <h1 className="io-title">Have you locked in a test date yet?</h1>
-            <p className="io-body">Nothing's final here. You can change it whenever.</p>
+            <p className="io-body">{examDateIntro(funnelAnswers) || "Nothing's final here. You can change it whenever."}</p>
 
             {upcomingSatDates.length > 0 && (
               <>
@@ -227,24 +296,31 @@ const InnerOnboarding = ({ user, onComplete }) => {
               />
             </label>
 
-            <button type="button" className="io-cta" disabled={!testDate} onClick={goNext}>
+            <button type="button" className="io-cta" disabled={!testDate} onClick={advanceOnce()}>
               Continue
             </button>
-            <button type="button" className="io-skip" onClick={() => { setTestDate(''); goNext(); }}>
+            <button type="button" className="io-skip" onClick={advanceOnce(() => setTestDate(''))}>
               I haven't registered yet <ArrowRightIcon width={16} height={16} aria-hidden="true" />
             </button>
           </div>
         );
 
       // 2 — Current score ---------------------------------------------------
-      case 2:
+      // The question itself changes with the funnel's baseline answer: a
+      // student who already told us they took the real SAT gets asked what
+      // it gave them; a fresh starter gets skip as the PRIMARY action (the
+      // copy invites skipping, so the buttons must agree — the old deferred
+      // TODOS polish about this title asking yes/no is fixed here too).
+      case 2: {
+        const sc = scoreScreenCopy(funnelAnswers);
+        const clearScores = () => { setTotalScore(''); setRwScore(''); setMathScore(''); };
         return (
           <div className="io-step" key="currentScore">
             <span className="io-eyebrow io-eyebrow--purple">
               Where you're starting
             </span>
-            <h1 className="io-title">Have you taken the SAT or a full practice test?</h1>
-            <p className="io-body">Even a rough number helps us aim your plan. No score yet is completely fine.</p>
+            <h1 className="io-title">{sc?.title || 'Have you taken the SAT or a full practice test?'}</h1>
+            <p className="io-body">{sc?.body || 'Even a rough number helps us aim your plan. No score yet is completely fine.'}</p>
 
             <div className="io-toggle" role="radiogroup" aria-label="Score type">
               <button
@@ -298,14 +374,32 @@ const InnerOnboarding = ({ user, onComplete }) => {
               </div>
             )}
 
-            <button type="button" className="io-cta" disabled={currentScore == null} onClick={goNext}>
-              Continue
-            </button>
-            <button type="button" className="io-skip" onClick={() => { setTotalScore(''); setRwScore(''); setMathScore(''); goNext(); }}>
-              I haven't tested yet <ArrowRightIcon width={16} height={16} aria-hidden="true" />
-            </button>
+            {sc?.skipPrimary ? (
+              <>
+                {/* Skip clears any typed digits so a half-entered score never
+                    leaks into the derived currentScore / goal runway. */}
+                <button type="button" className="io-cta" onClick={advanceOnce(clearScores)}>
+                  {sc.skipLabel}
+                </button>
+                {currentScore != null && (
+                  <button type="button" className="io-skip" onClick={advanceOnce()}>
+                    Use this score <ArrowRightIcon width={16} height={16} aria-hidden="true" />
+                  </button>
+                )}
+              </>
+            ) : (
+              <>
+                <button type="button" className="io-cta" disabled={currentScore == null} onClick={advanceOnce()}>
+                  Continue
+                </button>
+                <button type="button" className="io-skip" onClick={advanceOnce(clearScores)}>
+                  {sc?.skipLabel || "I haven't tested yet"} <ArrowRightIcon width={16} height={16} aria-hidden="true" />
+                </button>
+              </>
+            )}
           </div>
         );
+      }
 
       // 3 — Goal score (pre-filled from the funnel) -------------------------
       case 3: {
@@ -350,8 +444,8 @@ const InnerOnboarding = ({ user, onComplete }) => {
               <div className="io-goal-ticks"><span>400</span><span>1600</span></div>
             </div>
 
-            <button type="button" className="io-cta" onClick={goNext}>Continue</button>
-            <button type="button" className="io-skip" onClick={() => { setGoal(DEFAULT_GOAL); goNext(); }}>
+            <button type="button" className="io-cta" onClick={advanceOnce()}>Continue</button>
+            <button type="button" className="io-skip" onClick={advanceOnce(() => setGoal(DEFAULT_GOAL))}>
               Not sure yet? Use a starting target <ArrowRightIcon width={16} height={16} aria-hidden="true" />
             </button>
           </div>
@@ -375,7 +469,7 @@ const InnerOnboarding = ({ user, onComplete }) => {
             </div>
             <h1 className="io-title">That's the picture{firstName ? `, ${firstName}` : ''}. A few more details to sharpen it.</h1>
             <p className="io-body">Your strengths and trouble spots decide where your plan starts.</p>
-            <button type="button" className="io-cta" onClick={goNext}>Keep going</button>
+            <button type="button" className="io-cta" onClick={advanceOnce()}>Keep going</button>
           </div>
         );
 
@@ -399,13 +493,70 @@ const InnerOnboarding = ({ user, onComplete }) => {
               Your focus
             </span>
             <h1 className="io-title">And what's tripping you up the most?</h1>
-            <p className="io-body">This is where we'll spend the most time together.</p>
+            <p className="io-body">{worryBody(funnelAnswers) || "This is where we'll spend the most time together."}</p>
             <OptionList options={SECTION_OPTIONS} selected={worryArea} onSelect={pick(setWorryArea)} />
           </div>
         );
 
-      // 7 — Grad year -------------------------------------------------------
+      // 7 — Weak math areas (multi) — feeds the starter plan ---------------
       case 7:
+        return (
+          <div className="io-step" key="mathAreas">
+            <span className="io-eyebrow io-eyebrow--purple">
+              Your focus
+            </span>
+            <h1 className="io-title">Which math areas feel shakiest?</h1>
+            <p className="io-body">{mathAreasBody(worryArea) || 'Pick any that apply. Your starter plan opens with these.'}</p>
+            <MultiOptionList options={MATH_AREA_OPTIONS} selected={weakMathAreas} onToggle={toggleIn(setWeakMathAreas)} />
+            <button type="button" className="io-cta" onClick={advanceOnce()}>
+              {weakMathAreas.length ? 'Continue' : 'Not sure yet, skip'}
+            </button>
+          </div>
+        );
+
+      // 8 — Weak R&W areas (multi) — feeds the starter plan ----------------
+      case 8:
+        return (
+          <div className="io-step" key="rwAreas">
+            <span className="io-eyebrow io-eyebrow--purple">
+              Your focus
+            </span>
+            <h1 className="io-title">And in Reading and Writing?</h1>
+            <p className="io-body">{rwAreasBody(worryArea) || 'Same idea. The diagnostic will confirm or correct all of this.'}</p>
+            <MultiOptionList options={RW_AREA_OPTIONS} selected={weakRWAreas} onToggle={toggleIn(setWeakRWAreas)} />
+            <button type="button" className="io-cta" onClick={advanceOnce()}>
+              {weakRWAreas.length ? 'Continue' : 'Not sure yet, skip'}
+            </button>
+          </div>
+        );
+
+      // 9 — Study days per week — paces the starter plan -------------------
+      case 9:
+        return (
+          <div className="io-step" key="studyDays">
+            <span className="io-eyebrow io-eyebrow--orange">
+              Your pace
+            </span>
+            <h1 className="io-title">How many days a week can you realistically study?</h1>
+            <p className="io-body">{studyDaysBody(funnelAnswers) || 'Honest beats ambitious. Your plan schedules exactly this many.'}</p>
+            <div className="io-chip-grid io-chip-grid--years">
+              {STUDY_DAY_CHOICES.map((d) => (
+                <button
+                  key={d}
+                  type="button"
+                  className={`io-chip${studyDaysPerWeek === d ? ' is-selected' : ''}`}
+                  aria-pressed={studyDaysPerWeek === d}
+                  onClick={() => pick(setStudyDaysPerWeek)(d)}
+                >
+                  {d} days
+                </button>
+              ))}
+            </div>
+          </div>
+        );
+
+      // 10 — Grad year ------------------------------------------------------
+      case 10:
         return (
           <div className="io-step" key="gradYear">
             <span className="io-eyebrow io-eyebrow--orange">
@@ -429,8 +580,8 @@ const InnerOnboarding = ({ user, onComplete }) => {
           </div>
         );
 
-      // 8 — Finish ----------------------------------------------------------
-      case 8:
+      // 11 — Finish ---------------------------------------------------------
+      case 11:
       default:
         return (
           <div className="io-step io-step--center" key="finish">
@@ -439,10 +590,10 @@ const InnerOnboarding = ({ user, onComplete }) => {
               {firstName ? `You're set, ${firstName}.` : "You're set."}
             </h1>
             <p className="io-body">
-              Next up: a quick 15-minute check-in on your home screen. It's how SEVA builds a study plan that's actually yours.
+              {finishPreviewLine({ weakMathAreas, weakRWAreas, studyDaysPerWeek, goal, testDate })}
             </p>
             <button type="button" className="io-cta io-cta--lg" onClick={finish} disabled={submitting}>
-              {submitting ? 'Setting things up…' : 'Take me to my check-in'}
+              {submitting ? 'Setting things up…' : 'Take me to my diagnostic'}
             </button>
           </div>
         );
@@ -463,6 +614,11 @@ const InnerOnboarding = ({ user, onComplete }) => {
           {/* Floor at 6% so the first screen shows a started bar, not an empty gray track. */}
           <div className="io-progress-fill" style={{ width: `${Math.max(progress, 6)}%` }} />
         </div>
+        {onExit && (
+          <button type="button" className="io-leave" onClick={onExit}>
+            Do this later
+          </button>
+        )}
         <div className="io-topbar-brand" aria-hidden="true"><Wordmark fontSize={20} /></div>
       </div>
       <div className="io-content">{renderStep()}</div>

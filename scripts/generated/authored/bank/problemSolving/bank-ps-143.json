@@ -1,0 +1,43 @@
+{
+  "id": "bank-ps-143",
+  "question": "The table shows the $200$ volunteers at a food bank by shift and by team. If a volunteer who is not on the delivery team is selected at random, what is the probability that the volunteer works the morning shift?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Morning",
+        "Evening",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Sorting",
+          "44",
+          "36",
+          "80"
+        ],
+        [
+          "Delivery",
+          "20",
+          "40",
+          "60"
+        ],
+        [
+          "Intake",
+          "26",
+          "34",
+          "60"
+        ],
+        [
+          "Total",
+          "90",
+          "110",
+          "200"
+        ]
+      ]
+    }
+  },
+  "correctAnswer": "1/2",
+  "explanation": "**SAT Pattern: Two-Way Table Conditional Probability**\n\n**The correct answer is $\\frac{1}{2}$.**\n\n**The Fast Way (~15s):** Not delivery means sorting or intake: $80 + 60 = 140$ volunteers. Their morning entries are $44 + 26 = 70$, so the probability is $\\frac{70}{140} = \\frac{1}{2}$.\n\n**The Full Solution:**\nStep 1: The condition excludes the Delivery row, leaving the Sorting and Intake rows with a combined total of $80 + 60 = 140$ (or $200 - 60 = 140$).\nStep 2: The morning entries in those two rows are $44$ and $26$, a total of $70$.\nStep 3: Probability $= \\frac{70}{140} = \\frac{1}{2}$, which can also be entered as $0.5$. Check: half of $140$ is $70$. $\\checkmark$\n\n**Common Mistakes:** Ignoring the condition and using the Morning column total, $\\frac{90}{200} = \\frac{9}{20}$; dividing $70$ by all $200$ volunteers to get $\\frac{7}{20}$; using the excluded Delivery row, $\\frac{20}{60} = \\frac{1}{3}$.\n\n**Test Day Takeaway:** Cross out the excluded row, then read both the denominator and the numerator from what remains."
+}

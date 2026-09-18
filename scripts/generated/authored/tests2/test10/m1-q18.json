@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "Shifting the parabola $y = f(x)$ left 6 units and down 4 units gives a parabola with vertex $(-4, -9)$. The vertex of $y = f(x)$ is $(a, b)$. What is the value of $a - b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "undoes the vertical shift but moves the x-coordinate the same way as the shift, using the vertex (-10, -5)",
+  "B": "reverses neither shift, using the vertex (-10, -13)",
+  "D": "undoes the horizontal shift but applies the vertical shift a second time, using the vertex (2, -13)"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice C is correct.** The shifted parabola's vertex is $(-4, -9)$. To recover the original vertex, undo the moves: go right $6$ and up $4$, landing at $(2, -5)$. Then $a - b = 2 - (-5) = 7$.\n\n**The Fast Way (~30s):** Undo the shift: $(-4 + 6,\\ -9 + 4) = (2, -5)$, so $a - b = 2 + 5 = 7$.\n\n**The Full Solution:**\nStep 1: The shifted parabola is $y = f(x + 6) - 4$; its vertex is given as $(-4, -9)$.\nStep 2: A left shift of $6$ subtracts $6$ from the $x$-coordinate, so the original $x$-coordinate is $-4 + 6 = 2$. A down shift of $4$ subtracts $4$ from the $y$-coordinate, so the original $y$-coordinate is $-9 + 4 = -5$. Thus $(a, b) = (2, -5)$.\nStep 3: Compute $a - b = 2 - (-5) = 7$. Check by shifting forward: $(2 - 6,\\ -5 - 4) = (-4, -9)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-5$): undoes the vertical shift correctly but moves the $x$-coordinate left again, using $(-10, -5)$ and getting $-10 - (-5)$.\n* Choice B ($3$): reverses neither shift, treating $(-10, -13)$ as the original vertex.\n* Choice D ($15$): undoes the horizontal shift but applies the vertical one a second time, using $(2, -13)$.\n\n**Test Day Takeaway:** Going backward through a transformation reverses every move. Confirm by pushing your answer forward through the stated shifts and landing on the given point."
+}

@@ -1,0 +1,33 @@
+{
+ "id": 16,
+ "question": "A tray holds $25$ capacitors sorted by grade, as the table shows. Two of the capacitors are drawn from the tray at random, one after the other, and the first is not returned. What is the probability that both are grade A?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Grade",
+    "Number of capacitors"
+   ],
+   "rows": [
+    [
+     "A",
+     "10"
+    ],
+    [
+     "B",
+     "9"
+    ],
+    [
+     "C",
+     "6"
+    ],
+    [
+     "Total",
+     "25"
+    ]
+   ]
+  }
+ },
+ "correctAnswer": "3/20",
+ "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**The correct answer is $\\frac{3}{20}$.**\n\n**The Fast Way (~25s):** The first draw is $\\frac{10}{25}$; with that capacitor gone the second is $\\frac{9}{24}$. Their product is $\\frac{90}{600} = \\frac{3}{20}$.\n\n**The Full Solution:**\nStep 1: Find the probability of the first draw. The tray holds $10$ grade A capacitors out of $25$, so the first draw is grade A with probability $\\frac{10}{25} = \\frac{2}{5}$.\nStep 2: Update both counts for the second draw. One grade A capacitor has been removed and not returned, leaving $9$ grade A among $24$ capacitors, so the second draw is grade A with probability $\\frac{9}{24} = \\frac{3}{8}$.\nStep 3: Multiply the two probabilities. $\\frac{2}{5} \\times \\frac{3}{8} = \\frac{6}{40} = \\frac{3}{20}$. Check: $\\frac{10}{25} \\times \\frac{9}{24} = \\frac{90}{600} = \\frac{3}{20}$ ✓\n\n**Common Mistakes:**\n* $\\frac{4}{25}$: uses $\\frac{10}{25} \\times \\frac{10}{25}$, treating the draws as if the first capacitor were returned. Without replacement both the favorable count and the total shrink.\n* $\\frac{1}{6}$: uses $\\frac{10}{25} \\times \\frac{10}{24}$, reducing the total to $24$ but forgetting that only $9$ grade A capacitors remain.\n* $\\frac{2}{5}$: reports the probability of a single grade A draw and never accounts for the second capacitor.\n\n**Test Day Takeaway:** Without replacement, both numerator and denominator drop by one for the second draw of the same category. Multiply the two updated fractions; \"and\" between draws always means multiply."
+}

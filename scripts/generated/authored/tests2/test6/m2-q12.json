@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A shift inspection covers $250$ castings, $40\\%$ of them poured on line A and the remainder on line B. Line A rejects $6\\%$ of its own castings and line B rejects $10\\%$ of its own. One rejected casting from that shift is picked at random. Which expression gives the probability that it was poured on line A?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{6}{100}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{21}{250}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{6}{21}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{100}{250}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the chance that a line A casting is rejected, 6 out of 100, reversing the condition",
+  "B": "gives the overall rejection rate, 21 out of all 250 castings",
+  "D": "gives the share of all castings poured on line A, 100 out of 250, ignoring that the casting was rejected"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** Line A supplies $0.06(100) = 6$ rejects and line B supplies $0.10(150) = 15$, so $21$ rejects exist and $\\frac{6}{21}$ of them came from line A.\n\n**The Full Solution:**\nStep 1: Split the shift: $40\\%$ of $250$ is $100$ castings on line A, leaving $250 - 100 = 150$ on line B.\nStep 2: Count rejects on each line: $6\\%$ of $100$ is $6$, and $10\\%$ of $150$ is $15$, for $6 + 15 = 21$ rejected castings in all.\nStep 3: The casting is drawn from the rejects only, so the denominator is $21$, not $250$: the probability is $\\frac{6}{21}$. Check that the parts add up: $\\frac{6}{21} + \\frac{15}{21} = 1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{6}{100}$): answers the reversed question — the chance a line A casting gets rejected.\n* Choice B ($\\frac{21}{250}$): gives the rejection rate for the whole shift, using every casting in the denominator.\n* Choice D ($\\frac{100}{250}$): gives line A's share of all castings, which ignores the given that the casting was rejected.\n\n**Test Day Takeaway:** When the item hands you a member of a smaller group, that group is the denominator — count the rejects first, then ask how many of them came from the line in question."
+}

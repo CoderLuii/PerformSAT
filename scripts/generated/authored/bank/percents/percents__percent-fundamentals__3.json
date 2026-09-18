@@ -1,0 +1,57 @@
+{
+ "id": 3,
+ "question": "Field crews surveyed $400$ stream transects in a coastal watershed and recorded the proportion of transects on which each amphibian species was detected, shown in the table. Expressed as a percent, how much greater is the proportion for the Pacific chorus frog than the proportion for the rough-skinned newt?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Species",
+    "Proportion of transects with a detection"
+   ],
+   "rows": [
+    [
+     "Pacific chorus frog",
+     "0.48"
+    ],
+    [
+     "Rough-skinned newt",
+     "0.32"
+    ],
+    [
+     "Red-legged frog",
+     "0.21"
+    ],
+    [
+     "Long-toed salamander",
+     "0.09"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$0.16\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$1.6\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$16\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$80\\%$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the decimal difference $0.16$ as if it were already a percent",
+  "B": "moves the decimal point one place instead of two, giving $1.6\\%$",
+  "D": "adds the two proportions instead of subtracting, giving $0.80$, or $80\\%$"
+ },
+ "hint": "A proportion written as a decimal becomes a percent when it is multiplied by $100$.",
+ "explanation": "**Choice C is correct.** The two proportions differ by $0.48 - 0.32 = 0.16$, and $0.16$ written as a percent is $16\\%$.\n\n**The Fast Way (~30s):** Subtract first, convert once: $0.48 - 0.32 = 0.16$, and $0.16 \\times 100 = 16$, so the difference is $16\\%$.\n\n**The Full Solution:**\n\nStep 1: Read the two proportions from the table. The Pacific chorus frog was detected on a proportion of $0.48$ of the transects, and the rough-skinned newt on a proportion of $0.32$.\n\nStep 2: Find how much greater one is than the other: $0.48-0.32=0.16$.\n\nStep 3: Convert the decimal to a percent by multiplying by $100$: $0.16 \\times 100 = 16$, so the difference is $16\\%$. Check with counts: $0.48(400) = 192$ transects and $0.32(400) = 128$ transects, a difference of $64$ transects, and $\\frac{64}{400} = 0.16 = 16\\%$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($0.16\\%$): stops at the decimal difference $0.16$ and writes a percent sign after it. A decimal is not already a percent.\n* Choice B ($1.6\\%$): multiplies by $10$ instead of $100$, shifting the decimal point only one place.\n* Choice D ($80\\%$): adds the two proportions, $0.48 + 0.32 = 0.80$, instead of subtracting them.\n\n**Test Day Takeaway:** Do the arithmetic in one system, then convert once at the end -- mixing decimals and percents mid-problem is what produces the factor-of-$100$ misses."
+}

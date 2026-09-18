@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-401",
+ "question": "Two elevations, in meters relative to sea level, at which a modeled rock layer meets a fault plane are the solutions $p$ and $q$ of the equation $3x^2 + 21x + 30 = 0$. Which of the following statements about $p$ and $q$ is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$p + q = -7$ and $pq = 10$"
+  },
+  {
+   "id": "B",
+   "text": "$p + q = -7$ and $pq = 30$"
+  },
+  {
+   "id": "C",
+   "text": "$p + q = 7$ and $pq = 10$"
+  },
+  {
+   "id": "D",
+   "text": "$p + q = 21$ and $pq = 30$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "uses the constant term 30 as the product without dividing by the leading coefficient 3",
+  "C": "drops the negative sign on the sum -b/a",
+  "D": "reads b = 21 and c = 30 as the sum and product, skipping the division by a = 3"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Vieta Sum & Product of Roots**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** For $ax^2 + bx + c = 0$ the solutions sum to $-\\frac{b}{a} = -\\frac{21}{3} = -7$ and multiply to $\\frac{c}{a} = \\frac{30}{3} = 10$.\n\n**The Full Solution:**\nStep 1: Read off $a = 3$, $b = 21$, and $c = 30$ from $3x^2 + 21x + 30 = 0$.\nStep 2: The sum of the solutions is $-\\frac{b}{a} = -\\frac{21}{3} = -7$, and the product is $\\frac{c}{a} = \\frac{30}{3} = 10$.\nStep 3: So $p + q = -7$ and $pq = 10$. Check: dividing by $3$ gives $x^2 + 7x + 10 = 0$, which factors as $(x + 2)(x + 5) = 0$, so the elevations are $-2$ and $-5$; they add to $-7$ and multiply to $10$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($pq = 30$): uses the constant term $30$ as the product without dividing by the leading coefficient $3$.\n* Choice C ($p + q = 7$): drops the negative sign in $-\\frac{b}{a}$.\n* Choice D ($p + q = 21$): reads $b$ and $c$ as the sum and product directly, skipping the division by $a = 3$.\n\n**Test Day Takeaway:** Sum and product of the solutions are $-\\frac{b}{a}$ and $\\frac{c}{a}$ — the leading coefficient divides both."
+}

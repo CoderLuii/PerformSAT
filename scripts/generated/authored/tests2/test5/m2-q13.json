@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "Eleven mineral grains from one outcrop were tested for Mohs hardness, with results $3$, $5$, $4$, $5$, $6$, $4$, $5$, $7$, $4$, $5$, and $8$. Which statement about this set of results is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mode is less than the median."
+  },
+  {
+   "id": "B",
+   "text": "The mode is equal to the median."
+  },
+  {
+   "id": "C",
+   "text": "The mode is greater than the mean."
+  },
+  {
+   "id": "D",
+   "text": "The mode is equal to the mean."
+  }
+ ],
+ "distractorNotes": {
+  "A": "miscounts the frequencies and calls 4 the mode; 4 appears three times but 5 appears four times",
+  "C": "leaves the largest reading, 8, out of the sum, producing a mean of 4.8 that the mode would exceed",
+  "D": "adds the eleven readings as 55 instead of 56, making the mean come out exactly 5"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Mode of a Data Set**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The value $5$ appears four times, more than any other, so the mode is $5$. Sorted, the sixth of eleven readings is also $5$, so mode and median match.\n\n**The Full Solution:**\nStep 1: Count how often each reading appears: $3$ once, $4$ three times, $5$ four times, and $6$, $7$, and $8$ once each. The mode is the most frequent value, so the mode is $5$.\nStep 2: Sort the readings: $3$, $4$, $4$, $4$, $5$, $5$, $5$, $5$, $6$, $7$, $8$. With $11$ values the median is the sixth one, which is $5$. So the mode equals the median.\nStep 3: Check the remaining comparisons before committing. The sum is $3+4+4+4+5+5+5+5+6+7+8=56$, so the mean is $\\dfrac{56}{11}\\approx 5.09$, which is greater than the mode, not less. Only the mode-median comparison in Choice B holds ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: counts $4$ as the most frequent value. It appears three times; $5$ appears four times, and the two extra $5$s are easy to miss in an unsorted list.\n* Choice C: comes from dropping the largest reading, $8$, when adding. That gives a mean of $\\dfrac{48}{10}=4.8$, below the mode of $5$.\n* Choice D: comes from an addition slip of $55$ instead of $56$, which would make the mean exactly $5$. The true mean, $\\dfrac{56}{11}$, is not an integer.\n\n**Test Day Takeaway:** Sort the list first — one pass then gives you the mode by counting runs and the median by position. Compare each offered statement against your own numbers rather than accepting the first plausible one."
+}

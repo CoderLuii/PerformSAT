@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-068",
+  "question": "A state taxes income at a rate of $3\\%$ on the first $\\$40{,}000$ of income and at a rate of $6\\%$ on any income above $\\$40{,}000$. What is the total tax, in dollars, on an income of $\\$65{,}000$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1{,}950$"
+    },
+    {
+      "id": "B",
+      "text": "$2{,}700$"
+    },
+    {
+      "id": "C",
+      "text": "$3{,}900$"
+    },
+    {
+      "id": "D",
+      "text": "$5{,}100$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies the 3% rate to the whole income",
+    "C": "applies the 6% rate to the whole income",
+    "D": "taxes the first tier correctly, then adds 6% of the FULL income (double counts)"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Tiered Commission**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $3\\%$ of $40{,}000$ is $1{,}200$; the remaining $65{,}000 - 40{,}000 = 25{,}000$ is taxed at $6\\%$, giving $1{,}500$. Total: $\\$2{,}700$.\n\n**The Full Solution:**\nStep 1: Split the income into tiers: the first $\\$40{,}000$ and the excess, $65{,}000 - 40{,}000 = \\$25{,}000$.\nStep 2: Tax each tier at its own rate: $0.03(40{,}000) = 1{,}200$ and $0.06(25{,}000) = 1{,}500$.\nStep 3: Add: $1{,}200 + 1{,}500 = 2{,}700$. Check: the overall rate is $\\frac{2{,}700}{65{,}000} \\approx 4.2\\%$, which sits between $3\\%$ and $6\\%$ as it must. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1{,}950$): applies the lower rate to the whole income, $0.03(65{,}000)$, ignoring the higher tier.\n* Choice C ($3{,}900$): applies the $6\\%$ rate to the entire $\\$65{,}000$ instead of only to the amount above $\\$40{,}000$.\n* Choice D ($5{,}100$): taxes the first tier correctly ($1{,}200$) but then adds $6\\%$ of the FULL income ($3{,}900$), double-counting the first $\\$40{,}000$.\n\n**Test Day Takeaway:** In a tiered rate, only the portion above the threshold gets the higher rate; subtract the threshold before you multiply."
+}

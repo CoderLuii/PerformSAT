@@ -1,31 +1,31 @@
 {
-  "id": 1247,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 2,
-  "passage": "Restorers who repair medieval stained glass practice the most delicate step—reattaching a cracked pane with a nearly invisible bead of resin—on discarded fragments many times before they attempt ____ on a window destined to return to a cathedral, since a single misplaced bead can leave a permanent shadow across glass that has survived for eight hundred years.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "them"
-    },
-    {
-      "id": "B",
-      "text": "those"
-    },
-    {
-      "id": "C",
-      "text": "it"
-    },
-    {
-      "id": "D",
-      "text": "these"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The pronoun stands in for \"the most delicate step,\" a singular noun phrase, so the singular \"it\" is correct. \"Them,\" \"those,\" and \"these\" are all plural and so cannot agree with the single step being practiced; there is no plural antecedent in the sentence for them to refer to."
+ "id": 1247,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 2,
+ "passage": "Players of the glass harmonica speak of the instrument's one unforgiving skill — keeping the fingertips at exactly the right dampness against the spinning glass — and students practice ____ on slow scales for months before performing, since a finger too wet slides silently over the rims and one too dry catches with a squeak.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "them"
+  },
+  {
+   "id": "B",
+   "text": "those"
+  },
+  {
+   "id": "C",
+   "text": "it"
+  },
+  {
+   "id": "D",
+   "text": "these"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The pronoun stands in for \"the instrument's one unforgiving skill,\" a single thing, so the singular pronoun \"it\" is required.\n\n**The Full Solution:**\n- The rule: a pronoun must agree in number with the word it refers back to.\n- Ask what the students practice: the skill just named — keeping the fingertips at the right dampness. That antecedent, \"skill,\" is singular.\n- \"Students practice it on slow scales\" points cleanly back to that one skill.\n- The plural nouns nearby (\"players,\" \"fingertips,\" \"rims\") can pull the ear toward a plural pronoun, but none of them is what gets practiced.\n\n**Why the other choices are wrong:**\n- A: \"Them\" is plural and has no plural antecedent doing the work — the thing practiced is one skill.\n- B: \"Those\" is plural as well and points at nothing the students could practice.\n- D: \"These\" is plural too, and nothing plural in the sentence names what is being practiced."
 }

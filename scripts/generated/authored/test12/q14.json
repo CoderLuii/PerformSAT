@@ -1,73 +1,67 @@
 {
-  "id": 1214,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 1,
-  "passage": "Conservation biologists studying Pacific salmon often summarize climate-driven shifts in run timing as a uniform advance: warmer waters, earlier spawning, across the board. Drawing on long-term records from Alaskan rivers, Ryan Kovach and colleagues argue in a 2013 Conservation Biology paper that this summary obscures an important within-river complication, since at one Alaskan stream where three coexisting species were monitored over the same span of decades, the magnitude of the timing shift varied sharply by species rather than tracking a single shared advance, suggesting that _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Mean shift in median salmon run date (days earlier) across selected Alaskan rivers (Kovach et al., 2013, Conservation Biology)",
-    "headers": [
-      "Species",
-      "River",
-      "Shift (days earlier)",
-      "Time span"
-    ],
-    "rows": [
-      [
-        "Sockeye",
-        "Kvichak",
-        "5.7",
-        "1969-2010"
-      ],
-      [
-        "Sockeye",
-        "Egegik",
-        "1.2",
-        "1965-2009"
-      ],
-      [
-        "Pink",
-        "Auke Creek",
-        "6.1",
-        "1972-2009"
-      ],
-      [
-        "Chum",
-        "Auke Creek",
-        "1.8",
-        "1972-2009"
-      ],
-      [
-        "Coho",
-        "Auke Creek",
-        "0.4",
-        "1972-2009"
-      ]
-    ]
-  },
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "across all five populations the table reports, every species shifted toward earlier median run dates over the period of record, with shifts ranging from 0.4 days for coho to 6.1 days for pink salmon."
-    },
-    {
-      "id": "B",
-      "text": "at Auke Creek, pink salmon shifted by 6.1 days earlier while chum and coho salmon at the same stream shifted by only 1.8 and 0.4 days, a more-than-tenfold spread among species sharing one river."
-    },
-    {
-      "id": "C",
-      "text": "Sockeye salmon in the Kvichak River shifted by 5.7 days earlier between 1969 and 2010, the second-largest shift in the table and clearly larger than the 1.2-day shift recorded for sockeye in the Egegik River."
-    },
-    {
-      "id": "D",
-      "text": "at Auke Creek, pink salmon shifted by 6.1 days while chum salmon shifted by only 1.8 days, a difference that suggests pink salmon at the stream have been less responsive to climate change than chum salmon."
-    }
+ "id": 1214,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 1,
+ "passage": "Manoomin, the wild rice native to shallow lakes across the north-central United States, is traditionally gathered from canoes by knocking ripe seed into the boat with wooden flails, a method that lets much of the seed fall into the water and sow the following year's stand. Resource managers reviewing harvest studies caution that this reseeding cannot be treated as a single fixed rate, since at one closely monitored lake where three harvesting methods were used on separate plots in the same season, the share of seed returned to the water differed enormously by method, suggesting that ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Share of seed returned to the water during wild rice harvest, by lake and method (single season)",
+  "headers": [
+   "Lake",
+   "Harvest method",
+   "Seed returned (%)"
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The claim is about a within-river spread in the size of the shift, so the strongest support comes from the three species sharing Auke Creek: pink at 6.1 days against chum at 1.8 and coho at 0.4, a more-than-tenfold range in one stream. A reports the overall direction across all populations but not the within-river contrast the sentence is about. C compares two sockeye populations in different rivers, which does not speak to the single-river point. D gives only two of the three Auke Creek species and then draws an unsupported conclusion about responsiveness rather than describing the spread."
+  "rows": [
+   [
+    "Bearskin Lake",
+    "hand flail, from canoe",
+    "38"
+   ],
+   [
+    "Rice Lake",
+    "hand flail, from canoe",
+    "42"
+   ],
+   [
+    "Rice Lake",
+    "push-pole skimmer",
+    "19"
+   ],
+   [
+    "Rice Lake",
+    "mechanical harvester",
+    "3"
+   ],
+   [
+    "Little Elk Lake",
+    "hand flail, from canoe",
+    "35"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "across all five plots shown in the table, at least some seed was returned to the water during harvest, with shares ranging from 3 percent to 42 percent."
+  },
+  {
+   "id": "B",
+   "text": "at Rice Lake, hand flailing returned 42 percent of seed to the water while the push-pole skimmer returned 19 percent and the mechanical harvester only 3 percent — a fourteenfold spread among methods used on one lake."
+  },
+  {
+   "id": "C",
+   "text": "hand flailing returned 42 percent of seed at Rice Lake, 38 percent at Bearskin Lake, and 35 percent at Little Elk Lake, a narrow spread across the three lakes where the method was used."
+  },
+  {
+   "id": "D",
+   "text": "at Rice Lake, hand flailing returned 42 percent of seed to the water while the mechanical harvester returned only 3 percent, a gap showing that mechanical harvesting is by far the most efficient method of gathering wild rice."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The claim is about variation BY METHOD at one lake, so the supporting data must come from the single lake where multiple methods were used. Rice Lake is that lake, and its three methods span 42, 19, and 3 percent — a fourteenfold spread in one place, in one season.\n\n**The Full Solution:**\n- Reread what the blank must support: at \"one closely monitored lake,\" the seed returned \"differed enormously by method.\"\n- Only Rice Lake appears with three methods, so the evidence must stay inside its three rows.\n- Those rows run 42 percent (hand flail), 19 percent (skimmer), and 3 percent (mechanical) — the enormous within-lake spread the sentence asserts, which is exactly what B reports.\n\n**Why the other choices are wrong:**\n- A: It pools all five plots into one overall range, mixing lakes together and losing the within-lake, method-by-method comparison.\n- C: It compares one method across three different lakes — evidence that the method is consistent, nearly the opposite of the claim about methods differing.\n- D: It uses only two of Rice Lake's three methods and then smuggles in a conclusion about efficiency the table cannot support, since seed returned is not a measure of harvest efficiency."
 }

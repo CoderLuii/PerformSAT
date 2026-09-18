@@ -1,41 +1,41 @@
 {
-  "id": 854,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 2,
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The geographer Luke Howard first documented the urban heat island effect in the city of London during the 1810s and 1820s."
-    },
-    {
-      "id": "B",
-      "text": "Pavement and buildings absorb heat from the sun during the day and release it only slowly after dark, while tall buildings and narrow streets trap the warm air and block the cooling breezes that might carry it away."
-    },
-    {
-      "id": "C",
-      "text": "City centers can be several degrees warmer than nearby rural areas, an effect that is especially pronounced after dark."
-    },
-    {
-      "id": "D",
-      "text": "An urban heat island is a built-up area that stays warmer than the surrounding countryside because pavement and buildings absorb heat by day and release it at night, leaving city centers several degrees warmer, especially after dark."
-    }
+ "id": 854,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 2,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "A lo'i is a flooded terrace used in Hawai'i to grow taro, a starchy root crop.",
+   "Lo'i are built as stepped platforms cut into a hillside.",
+   "Water diverted from a stream flows through the terraces from top to bottom and then returns to the stream.",
+   "The continuous flow keeps the water cool, which protects taro from rot.",
+   "Some lo'i complexes have been farmed for hundreds of years."
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. A reader new to the idea needs both a definition and the reason behind it, and D supplies both: it defines an urban heat island as a built-up area warmer than its surroundings and explains why, noting that the difference is largest after dark. A gives only a historical detail without defining the concept; B lists causes without naming or defining the effect; and C states the result but never explains what an urban heat island is or why it occurs.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "An \"urban heat island\" is a built-up area that stays warmer than the countryside around it.",
-      "The geographer Luke Howard documented the effect in London in the 1810s and 1820s.",
-      "Pavement and buildings absorb heat during the day and release it slowly at night.",
-      "Tall buildings and narrow streets also trap warm air and block cooling breezes.",
-      "As a result, city centers can be several degrees warmer than nearby rural areas, especially after dark."
-    ],
-    "goal": "The student wants to introduce the concept of an urban heat island to a reader who has never encountered it."
+  "goal": "The student wants to introduce the lo'i to an audience unfamiliar with it."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Some lo'i complexes in the Hawaiian Islands have remained in continuous cultivation for hundreds of years, tended by one generation of farming families after another."
+  },
+  {
+   "id": "B",
+   "text": "Water diverted from a stream passes through the terraces from top to bottom before returning to the stream below."
+  },
+  {
+   "id": "C",
+   "text": "Because the water flowing through the terraces stays cool, the taro growing in them is protected from rot."
+  },
+  {
+   "id": "D",
+   "text": "A lo'i is a flooded hillside terrace used by Hawaiian farmers to grow taro, a starchy root crop, with stream water flowing through it continuously to keep the plants cool and healthy."
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** For a reader meeting the term for the first time, D does the essential work in one sentence: it defines the lo'i, names the crop, and explains the flowing water that makes the system function.\n\n**The Full Solution:**\n- An introduction for an unfamiliar audience must define the concept, not assume it.\n- Choice D states what a lo'i is (a flooded hillside terrace in Hawai'i), what it grows (taro), and the mechanism that sustains it (stream water flowing through continuously, keeping the crop cool and healthy).\n\n**Why the other choices are wrong:**\n- A: It presumes the reader already knows what a lo'i is and reports only its longevity.\n- B: It describes the water's path without ever saying what a lo'i is or what it grows.\n- C: It states the cool-water benefit but leaves the term itself undefined for a newcomer."
 }

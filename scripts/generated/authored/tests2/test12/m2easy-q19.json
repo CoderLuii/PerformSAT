@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "At a rail yard with $n$ stacking rows, where $n$ is an integer greater than $1$, the ratio of loaded slots to empty slots is $\\frac{25n^2 - 4}{5n^2 + 8n - 4}$. Which of the following expressions is equivalent to that ratio for every such value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{n + 2}{5n + 2}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{5n - 2}{n + 2}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{5n + 2}{n - 2}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{5n + 2}{n + 2}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "inverts the simplified ratio, reporting empty slots per loaded slot",
+  "B": "keeps 5n - 2 in the numerator and cancels 5n + 2, which is not a factor of the denominator",
+  "C": "factors the denominator as (5n + 2)(n - 2), which expands to 5n^2 - 8n - 4 instead"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** The numerator is a difference of squares, $(5n - 2)(5n + 2)$, and the denominator factors as $(5n - 2)(n + 2)$. The common factor $5n - 2$ divides out, leaving $\\frac{5n + 2}{n + 2}$.\n\n**The Full Solution:**\nStep 1: Factor the numerator. $25n^2 - 4 = (5n)^2 - 2^2 = (5n - 2)(5n + 2)$.\nStep 2: Factor the denominator. Look for factors of $5n^2 + 8n - 4$: $(5n - 2)(n + 2) = 5n^2 + 10n - 2n - 4 = 5n^2 + 8n - 4$. $\\checkmark$\nStep 3: Divide out the shared factor $5n - 2$, which is nonzero because $n > 1$: $\\frac{(5n - 2)(5n + 2)}{(5n - 2)(n + 2)} = \\frac{5n + 2}{n + 2}$. Check at $n = 2$: the original is $\\frac{100 - 4}{20 + 16 - 4} = \\frac{96}{32} = 3$, and the simplified form gives $\\frac{12}{4} = 3$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{n + 2}{5n + 2}$): the correct simplification turned upside down. At $n = 2$ it equals $\\frac{1}{3}$, not $3$.\n* Choice B ($\\frac{5n - 2}{n + 2}$): cancels the wrong half of the difference of squares, keeping $5n - 2$ instead of the factor that survives. At $n = 2$ it gives $\\frac{8}{4} = 2$.\n* Choice C ($\\frac{5n + 2}{n - 2}$): comes from factoring the denominator as $(5n + 2)(n - 2)$, which multiplies out to $5n^2 - 8n - 4$ — the middle term has the wrong sign.\n\n**Test Day Takeaway:** Factor both parts completely before cancelling, and verify any factorization by multiplying it back out. A quick numerical check at one legal value catches every sign slip."
+}

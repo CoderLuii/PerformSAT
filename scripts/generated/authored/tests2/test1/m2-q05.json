@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "question": "At a community health screening, $45\\%$ of the participants were over age $50$, and $30\\%$ of the participants over age $50$ had elevated blood pressure. If one of the participants is selected at random, what is the probability that the selected participant is over age $50$ and has elevated blood pressure?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$13.5\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$15\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$30\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$75\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracts the two percents, 45 - 30 = 15, instead of multiplying them",
+    "C": "reports the conditional probability given over age 50 rather than the probability of both conditions",
+    "D": "adds the two percents, 45 + 30 = 75"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The $30\\%$ applies only inside the over-$50$ group, so multiply: $0.45 \\times 0.30 = 0.135$, which is $13.5\\%$.\n\n**The Full Solution:**\nStep 1: Suppose there are $1{,}000$ participants. Then $45\\%$ of them, or $450$, are over age $50$.\nStep 2: The $30\\%$ is a rate within that group, not within the whole screening, so the number who are over $50$ and have elevated blood pressure is $0.30 \\times 450 = 135$.\nStep 3: The probability that a randomly selected participant falls in both categories is $\\frac{135}{1{,}000} = 0.135$, or $13.5\\%$. Check: $13.5\\%$ must be smaller than both $45\\%$ and $30\\%$, since it counts only the overlap ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($15\\%$): subtracts, $45 - 30$. Subtraction would answer \"how many more,\" not \"how many are in both.\"\n* Choice C ($30\\%$): this is the probability of elevated blood pressure given that the participant is over $50$ — the conditional probability the stem hands you, not the one it asks for.\n* Choice D ($75\\%$): adds the two percents. Adding would count participants who satisfy either condition, and it is impossible here since only $45\\%$ of participants are even eligible.\n\n**Test Day Takeaway:** A percent stated \"of\" a subgroup is a rate inside that subgroup. To get the share of the whole population, multiply the two rates — and sanity-check that your answer is smaller than either one."
+}

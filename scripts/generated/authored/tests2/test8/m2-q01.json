@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "question": "The table gives the absorbance $A(c)$ recorded by a spectrophotometer for four calibration solutions of concentration $c$, in milligrams per liter. If $A$ is a linear function of $c$, what is the value of $A(15)$?",
+  "questionTable": {
+    "headers": [
+      "$c$ (mg/L)",
+      "$A(c)$"
+    ],
+    "rows": [
+      [
+        "$2$",
+        "$0.14$"
+      ],
+      [
+        "$5$",
+        "$0.32$"
+      ],
+      [
+        "$8$",
+        "$0.50$"
+      ],
+      [
+        "$11$",
+        "$0.68$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.74$"
+    },
+    {
+      "id": "B",
+      "text": "$0.86$"
+    },
+    {
+      "id": "C",
+      "text": "$0.90$"
+    },
+    {
+      "id": "D",
+      "text": "$0.92$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds one unit-step of 0.06 to 0.68, treating c = 15 as one unit past c = 11 instead of four",
+    "B": "adds one full table increment of 0.18 (three units) to 0.68 instead of four unit-steps",
+    "C": "computes 0.06(15) and drops the initial value 0.02"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Absorbance climbs $0.54$ across the $9$ units from $c = 2$ to $c = 11$, so it climbs $0.06$ per unit; four more units past $c = 11$ gives $0.68 + 4(0.06) = 0.92$.\n\n**The Full Solution:**\nStep 1: A linear function has a constant rate of change. Using the first and last rows, that rate is $\\frac{0.68 - 0.14}{11 - 2} = \\frac{0.54}{9} = 0.06$ absorbance unit per milligram per liter.\nStep 2: Write $A(c) = 0.06c + b$ and use the row $c = 2$, $A = 0.14$: $0.14 = 0.06(2) + b = 0.12 + b$, so $b = 0.02$ and $A(c) = 0.06c + 0.02$.\nStep 3: Evaluate at $c = 15$: $A(15) = 0.06(15) + 0.02 = 0.90 + 0.02 = 0.92$. Check the two middle rows against this rule: $A(5) = 0.30 + 0.02 = 0.32$ and $A(8) = 0.48 + 0.02 = 0.50$, both matching the table ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.74$): adds a single step of $0.06$ to the last table value, as though $c = 15$ were one unit past $c = 11$ rather than four.\n* Choice B ($0.86$): adds one whole table increment, $0.18$ for every three units, to $0.68$ instead of the four unit-steps the jump actually needs.\n* Choice C ($0.90$): computes $0.06(15)$ and forgets the initial value $0.02$, so every answer it produces is short by exactly that constant.\n\n**Test Day Takeaway:** A table of a linear function gives you the rate from any two rows; get the initial value from one row before you evaluate anywhere outside the table."
+}

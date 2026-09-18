@@ -1,0 +1,56 @@
+{
+ "id": "bank-am-239",
+ "question": "A media services office recorded $f(x)$, the number of lecture-capture video views above a course average, on four class days. Adding a caption track raised every one of these counts by $6$, giving $g(x)=f(x)+6$. What is the value of $g(2)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$4$"
+  },
+  {
+   "id": "D",
+   "text": "$13$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts 6 instead of adding it",
+  "B": "reports f(2) without applying the shift",
+  "D": "applies the shift to the x = 0 row instead of the x = 2 row"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertical Shift**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** The table gives $f(2)=-2$, so $g(2)=-2+6=4$.\n\n**The Full Solution:**\nStep 1: Find the row with $x=2$ in the table: $f(2)=-2$.\nStep 2: Apply the rule $g(x)=f(x)+6$ at $x=2$: $g(2)=f(2)+6$.\nStep 3: Compute: $-2+6=4$. Check: every output rises by $6$, so the four values of $g$ are $13$, $9$, $4$, and $12$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$): subtracts $6$ instead of adding it.\n* Choice B ($-2$): reports $f(2)$ and never applies the shift.\n* Choice D ($13$): applies the shift to the $x=0$ row instead of the $x=2$ row.\n\n**Test Day Takeaway:** Adding a constant outside the function changes only the outputs — locate the right row first, then shift.",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Class day (x)",
+    "f(x)"
+   ],
+   "rows": [
+    [
+     "0",
+     "7"
+    ],
+    [
+     "1",
+     "3"
+    ],
+    [
+     "2",
+     "-2"
+    ],
+    [
+     "3",
+     "6"
+    ]
+   ]
+  }
+ }
+}

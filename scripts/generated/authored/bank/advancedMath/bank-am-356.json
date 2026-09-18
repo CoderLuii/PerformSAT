@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-356",
+ "question": "A forestry model gives $9m^2 + km + 16 = 0$, where $k$ is a negative constant and each solution $m$ is a sapling height, in meters, at which two canopy-cover estimates coincide. If exactly one such height exists, what is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-576$"
+  },
+  {
+   "id": "B",
+   "text": "$-25$"
+  },
+  {
+   "id": "C",
+   "text": "$-24$"
+  },
+  {
+   "id": "D",
+   "text": "$-12$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports $-4ac = -576$ itself instead of taking its square root",
+  "B": "adds the outer coefficients, $-(9 + 16)$, instead of using the discriminant",
+  "D": "drops the factor of $4$ and computes $-\\sqrt{9 \\cdot 16} = -12$"
+ },
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Exactly one solution means $k^2 = 4ac = 4(9)(16) = 576$, so $k = \\pm 24$; the negative value is $-24$.\n\n**The Full Solution:**\nStep 1: Here $a = 9$, $b = k$, and $c = 16$.\nStep 2: A quadratic has exactly one real solution when its discriminant is zero: $k^2 - 4(9)(16) = 0$, so $k^2 = 576$.\nStep 3: Then $k = 24$ or $k = -24$, and the problem states $k$ is negative, so $k = -24$. Check: $9m^2 - 24m + 16 = (3m - 4)^2$, which is zero only at the single height $m = \\frac{4}{3}$ meters ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-576$): stops at $4ac$ and attaches the minus sign without taking a square root.\n* Choice B ($-25$): adds $9$ and $16$, a sum that has nothing to do with the discriminant.\n* Choice D ($-12$): uses $\\sqrt{ac}$ rather than $\\sqrt{4ac}$, halving the correct magnitude.\n\n**Test Day Takeaway:** A one-solution condition sets the discriminant to zero, and solving for a middle coefficient always leaves two signs — read the stem to choose between them."
+}

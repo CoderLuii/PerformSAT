@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-240",
+ "question": "The function $f$ gives the indoor temperature, in degrees Fahrenheit, at a smart thermostat $t$ hours after midnight. A new setpoint raises every one of these temperatures by $3$ degrees. Which function gives the new temperature $t$ hours after midnight?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$g(t)=3f(t)$"
+  },
+  {
+   "id": "B",
+   "text": "$g(t)=f(t)-3$"
+  },
+  {
+   "id": "C",
+   "text": "$g(t)=f(t+3)$"
+  },
+  {
+   "id": "D",
+   "text": "$g(t)=f(t)+3$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies each temperature by 3 rather than adding 3",
+  "B": "lowers each temperature by 3 instead of raising it",
+  "C": "shifts the time by 3 hours instead of the temperature"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertical Shift**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** Raising every output by $3$ adds $3$ outside the function: $g(t)=f(t)+3$.\n\n**The Full Solution:**\nStep 1: The outputs of $f$ are temperatures; the new setpoint changes those outputs, not the times.\nStep 2: Adding a constant outside the function raises every output by that constant.\nStep 3: So $g(t)=f(t)+3$. Check: if the temperature at $t=6$ was $68$, the new one is $71=f(6)+3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($g(t)=3f(t)$): multiplies each temperature by $3$ instead of adding $3$.\n* Choice B ($g(t)=f(t)-3$): lowers each temperature by $3$.\n* Choice C ($g(t)=f(t+3)$): shifts the clock by $3$ hours instead of changing the temperature.\n\n**Test Day Takeaway:** Changes to outputs live outside the parentheses; changes to inputs live inside them."
+}

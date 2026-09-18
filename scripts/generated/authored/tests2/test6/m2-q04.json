@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "The two times, in seconds, at which a launched probe passes an altitude of $40$ meters are the solutions of $5t^2 + 12 = 34t$. Which expression gives the sum of those two times?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{34}{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{5}{34}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{12}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{34}{5}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies -b/a with b = 34 instead of the rearranged b = -34, giving -34/5",
+  "B": "inverts the ratio, writing a/b as 5/34",
+  "C": "gives the product of the solutions, c/a = 12/5, instead of the sum"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Quadratic — Vieta's Sum/Product**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Rearranged, the equation is $5t^2 - 34t + 12 = 0$, so the sum of the solutions is $-\\frac{b}{a} = \\frac{34}{5}$.\n\n**The Full Solution:**\nStep 1: Standard form comes first. Subtract $34t$ from both sides: $5t^2 - 34t + 12 = 0$, so $a = 5$, $b = -34$, and $c = 12$.\nStep 2: For any quadratic with two solutions, their sum is $-\\frac{b}{a}$. Here that is $-\\frac{-34}{5} = \\frac{34}{5}$.\nStep 3: Confirm the solutions are real before trusting the shortcut: $b^2 - 4ac = 1156 - 240 = 916 > 0$, so the probe really does pass $40$ meters twice, once rising and once falling ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{34}{5}$): uses $-\\frac{b}{a}$ with $b$ read as $+34$ from the unrearranged equation, so the sign comes out negative — impossible for two positive times.\n* Choice B ($\\frac{5}{34}$): inverts the ratio and reports $\\frac{a}{b}$.\n* Choice C ($\\frac{12}{5}$): gives $\\frac{c}{a}$, which is the product of the two times, not their sum.\n\n**Test Day Takeaway:** The sum and product shortcuts only read off standard form — move every term to one side before you name $a$, $b$, and $c$."
+}

@@ -1,0 +1,29 @@
+{
+  "question": "In a control system, two different real values of $x$ satisfy $2x^{2}+kx+8=0$, where the damping constant $k$ is nonzero. Which of the following must be true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$|k|<8$"
+    },
+    {
+      "id": "B",
+      "text": "$|k|\\le 8$"
+    },
+    {
+      "id": "C",
+      "text": "$|k|>8$"
+    },
+    {
+      "id": "D",
+      "text": "$|k|\\ge 8$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "states the condition for no real solutions",
+    "B": "allows values that give no real solutions or exactly one",
+    "D": "includes |k| = 8, which gives exactly one solution rather than two"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Discriminant Inequality**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Two distinct real solutions require $k^{2}-64>0$, that is $|k|>8$.\n\n**The Full Solution:**\nStep 1: With $a=2$, $b=k$, and $c=8$, the discriminant is $k^{2}-4(2)(8)=k^{2}-64$.\nStep 2: Two different real solutions require $k^{2}-64>0$, so $k^{2}>64$.\nStep 3: Taking square roots gives $|k|>8$. Check with $k=9$: $81-64=17>0$, and with $k=8$: $64-64=0$, only one solution ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($|k|<8$): states the condition for no real solutions.\n* Choice B ($|k|\\le 8$): allows values giving no real solutions or exactly one.\n* Choice D ($|k|\\ge 8$): includes $|k|=8$, which gives exactly one solution.\n\n**Test Day Takeaway:** $k^{2}>64$ means $|k|>8$, not $k>8$ — and the boundary belongs to the one-solution case, so the inequality stays strict.",
+  "id": "bank-am-030"
+}

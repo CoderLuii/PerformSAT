@@ -1,0 +1,53 @@
+{
+  "id": "bank-ps-026",
+  "question": "The table shows a swimmer's times, in seconds, for the first $4$ trials of an event. The swimmer wants the mean time for $5$ trials to be at most $31.8$ seconds. What is the greatest possible time, in seconds, for the fifth trial?",
+  "questionTable": {
+    "headers": [
+      "Trial",
+      "Time (seconds)"
+    ],
+    "rows": [
+      [
+        "1",
+        "32.1"
+      ],
+      [
+        "2",
+        "31.7"
+      ],
+      [
+        "3",
+        "32.4"
+      ],
+      [
+        "4",
+        "31.9"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$30.9$"
+    },
+    {
+      "id": "B",
+      "text": "$31.6$"
+    },
+    {
+      "id": "C",
+      "text": "$31.8$"
+    },
+    {
+      "id": "D",
+      "text": "$32.0$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracts the current shortfall ($32.025 - 31.8 = 0.225$) from the target only once, giving about $31.6$, instead of making up the shortfall for all four earlier trials.",
+    "C": "assumes the fifth trial only needs to equal the target mean; since the first four average above $31.8$, the fifth must be faster than $31.8$.",
+    "D": "reports the current mean of the four trials, rounded, rather than solving for the fifth trial."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Constraint on Mean**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** Five trials at a mean of $31.8$ allow a total of $5 \\times 31.8 = 159$ seconds. The first four total $128.1$, so the fifth can be at most $159 - 128.1 = 30.9$.\n\n**The Full Solution:**\nStep 1: A mean of at most $31.8$ over $5$ trials means the total is at most $5 \\times 31.8 = 159$ seconds.\nStep 2: The first four trials total $32.1 + 31.7 + 32.4 + 31.9 = 128.1$ seconds.\nStep 3: The fifth time $x$ must satisfy $128.1 + x \\le 159$, so $x \\le 30.9$. Check: $\\frac{128.1 + 30.9}{5} = \\frac{159}{5} = 31.8$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($31.6$): subtracts the current shortfall ($32.025 - 31.8 = 0.225$) from the target only once, giving about $31.6$, instead of making up the shortfall for all four earlier trials.\n* Choice C ($31.8$): assumes the fifth trial only needs to equal the target mean; since the first four average above $31.8$, the fifth must be faster than $31.8$.\n* Choice D ($32.0$): reports the current mean of the four trials, rounded, rather than solving for the fifth trial.\n\n**Test Day Takeaway:** Turn a target mean into a target total: (target mean)(count). Subtract what is already banked to bound the remaining value."
+}

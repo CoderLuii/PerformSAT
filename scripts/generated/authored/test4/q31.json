@@ -5,30 +5,30 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
+  "module": 2,
+  "passage": "Written around 1400, Cennino Cennini's handbook for painters ______ the practices of the workshop in exacting detail — how to season a poplar panel, how many coats of gesso to lay and how thin, how long to mull each pigment — setting down in writing procedures that masters had previously handed to apprentices only by demonstration.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "destabilize"
+      "text": "codifies"
     },
     {
       "id": "B",
-      "text": "reinforce"
+      "text": "embellishes"
     },
     {
       "id": "C",
-      "text": "simplify"
+      "text": "disputes"
     },
     {
       "id": "D",
-      "text": "isolate"
+      "text": "predates"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. As the channels shrink, stray quantum effects let current leak across barriers that once blocked it, undermining the devices' operation — that is, they \"destabilize\" the devices. \"Reinforce\" says the opposite; \"simplify\" wrongly suggests an improvement; and \"isolate\" does not describe an effect that lets current leak through barriers.",
-  "passage": "The performance of a microchip depends on confining electric current to channels only a few atoms wide. As manufacturers have pushed these channels smaller, stray quantum effects that were once negligible have begun to ______ the devices, allowing current to leak across barriers that, at larger scales, would have blocked it completely. Designing around these effects, rather than ignoring them, has become one of the central problems of the field.",
+  "explanation": "**Choice A is correct.** The handbook takes practices that lived only in demonstration and sets them down systematically in writing — which is what \"codifies\" means.\n\n**The Full Solution:**\n- The content: workshop procedures, given \"in exacting detail\" and item by item.\n- The transformation: from knowledge \"handed to apprentices only by demonstration\" to procedures fixed in a written text.\n- Organizing practice into systematic written form is codification.\n\n**Why the other choices are wrong:**\n- B: \"Embellishes\" means to decorate or exaggerate, but exacting detail is the opposite of ornament.\n- C: \"Disputes\" would set the handbook against workshop practice, yet it records that practice faithfully.\n- D: \"Predates\" concerns chronology only, and the handbook follows the practices it describes rather than preceding them.",
   "_meta": {
-    "anchor": "semiconductor materials science — quantum tunneling at small scales (NEW)"
-  },
-  "module": 2
+    "anchor": "Cennino Cennini — workshop practice codified in writing; hard words-in-context"
+  }
 }

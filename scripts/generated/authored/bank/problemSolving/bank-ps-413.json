@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-413",
+  "question": "A marathon accepted $e$ entrants, and $18\\%$ of them completed registration during the first week. Which of the following expressions gives the number of entrants who completed registration during the first week?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{18}{e}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{e}{18}$"
+    },
+    {
+      "id": "C",
+      "text": "$18e$"
+    },
+    {
+      "id": "D",
+      "text": "$0.18e$"
+    }
+  ],
+  "correctAnswer": "D",
+  "distractorNotes": {
+    "A": "divides the percent by the total, which produces a ratio, not a count of entrants",
+    "B": "divides the total by $18$ instead of multiplying by $0.18$, giving the number that $e$ is $18$ times as large as",
+    "C": "uses $18$ rather than $0.18$, multiplying the total by eighteen instead of by eighteen percent"
+  },
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**Choice D is correct.** A percent of a quantity is that percent written as a decimal times the quantity, so $18\\%$ of $e$ is $0.18e$.\n\n**The Fast Way (~20s):** \"$18\\%$ of $e$\" translates directly to $0.18e$.\n\n**The Full Solution:**\n\nStep 1: Convert the percent to a decimal: $18\\% = \\frac{18}{100} = 0.18$.\n\nStep 2: Translate the word \"of\" as multiplication: $18\\%$ of $e$ is $0.18 \\cdot e$.\n\nStep 3: Confirm the size. Because $0.18 < 1$, the expression is smaller than $e$, as a part of the entrants must be. Check: with $e = 500$, the expression gives $90$ entrants, and $\\frac{90}{500} = 18\\%$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{18}{e}$): divides the percent by the total. That shrinks as $e$ grows, which no count of entrants should do.\n* Choice B ($\\frac{e}{18}$): finds the number that $e$ is $18$ times as large as, which is close to $5.6\\%$ of $e$, not $18\\%$.\n* Choice C ($18e$): forgets to convert the percent, giving eighteen times the entire field.\n\n**Test Day Takeaway:** Convert the percent to a decimal before you write anything else -- \"of\" is always multiplication, and the decimal keeps the answer the right size."
+}

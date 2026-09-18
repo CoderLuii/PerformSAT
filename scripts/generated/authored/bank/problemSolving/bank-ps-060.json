@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-060",
+  "question": "A photocopier prints at a constant rate of $45$ pages per minute. How many minutes does the photocopier take to print $150$ copies of a $24$-page report?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1.33$"
+    },
+    {
+      "id": "B",
+      "text": "$7.2$"
+    },
+    {
+      "id": "C",
+      "text": "$60$"
+    },
+    {
+      "id": "D",
+      "text": "$80$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "converts the $80$ minutes to hours, although the question asks for minutes.",
+    "B": "computes $\\frac{24 \\times 45}{150}$, mixing up which quantities are multiplied and divided.",
+    "C": "divides the total pages by $60$ minutes instead of by the rate of $45$ pages per minute."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Total / Rate = Time**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Total pages: $150 \\times 24 = 3{,}600$. Time $= \\frac{3{,}600}{45} = 80$ minutes.\n\n**The Full Solution:**\nStep 1: Find the total work: $150$ copies $\\times 24$ pages each $= 3{,}600$ pages.\nStep 2: Time $= \\frac{\\text{total}}{\\text{rate}} = \\frac{3{,}600 \\text{ pages}}{45 \\text{ pages per minute}} = 80$ minutes.\nStep 3: Check: $45 \\times 80 = 3{,}600$ pages. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.33$): converts the $80$ minutes to hours, although the question asks for minutes.\n* Choice B ($7.2$): computes $\\frac{24 \\times 45}{150}$, mixing up which quantities are multiplied and divided.\n* Choice C ($60$): divides the total pages by $60$ minutes instead of by the rate of $45$ pages per minute.\n\n**Test Day Takeaway:** Time $= \\frac{\\text{total amount}}{\\text{rate}}$. Build the total first (copies $\\times$ pages), then divide by the rate, and report in the unit asked."
+}

@@ -1,0 +1,35 @@
+{
+ "id": 11,
+ "question": "The graph shows a cyclist's power output, in watts, as a linear function $P$ of pedaling cadence $c$, in revolutions per minute. What is the value of $P(95)$?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2,
+   "yIntercept": 40,
+   "xRange": [
+    0,
+    90
+   ],
+   "yRange": [
+    0,
+    240
+   ],
+   "xTickInterval": 20,
+   "yTickInterval": 40,
+   "gridInterval": 20,
+   "showPoints": [
+    [
+     60,
+     160
+    ],
+    [
+     80,
+     200
+    ]
+   ],
+   "label": "P"
+  }
+ },
+ "correctAnswer": "230",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**The correct answer is $230$.** The plotted points $(60, 160)$ and $(80, 200)$ give a rate of $\\frac{200 - 160}{80 - 60} = 2$ watts per revolution per minute, so $P(c) = 2c + 40$ and $P(95) = 230$.\n\n**The Fast Way (~25s):** From $(80, 200)$, going up $15$ rpm adds $2(15) = 30$ watts: $200 + 30 = 230$.\n\n**The Full Solution:**\nStep 1: Slope $= \\frac{200 - 160}{80 - 60} = \\frac{40}{20} = 2$ watts per revolution per minute.\nStep 2: Using $(60, 160)$: $160 = 2(60) + b$, so $b = 40$ and $P(c) = 2c + 40$.\nStep 3: Check with the true rule: $P(95) = 2(95) + 40 = 190 + 40 = 230$, and $P(80) = 160 + 40 = 200$, matching the second plotted point.\n\n**Common Mistakes:**\n* $190$: applies the correct rate of $2$ to the $15$-rpm gap but starts from $160$, the power at the first plotted point rather than the second.\n* $240$: adds a full $40$-watt block, the rise across a $20$-rpm span, for a gap of only $15$ rpm.\n* $270$: finds the rate correctly but pairs the first cadence with the second power when solving for the constant, getting $b = 200 - 2(60) = 80$.\n\n**Test Day Takeaway:** Read two clean lattice points off the line, turn them into a rate, and extend from the nearer point. The rate applies to the actual gap, not to a whole grid block."
+}

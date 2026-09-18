@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "The quantity $\\frac{3x - 5}{4}$ and the quantity $\\frac{x + 9}{2}$ take the same value at exactly one real number $x$. What is that number?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-41$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$13$"
+  },
+  {
+   "id": "D",
+   "text": "$23$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies the right side by 4 as well, solving 3x - 5 = 4x + 36",
+  "B": "clears only the denominator 4 and leaves the right side as x + 9, solving 3x - 5 = x + 9",
+  "C": "drops the negative when clearing the fraction, solving 3x + 5 = 2x + 18"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Set the two quantities equal and multiply by $4$: $3x - 5 = 2x + 18$, so $x = 23$.\n\n**The Full Solution:**\nStep 1: The two quantities agree exactly when $\\frac{3x - 5}{4} = \\frac{x + 9}{2}$.\nStep 2: Multiply both sides by $4$, the least common denominator. The left becomes $3x - 5$; the right becomes $\\frac{4(x + 9)}{2} = 2(x + 9) = 2x + 18$.\nStep 3: Subtract $2x$ from both sides to get $x - 5 = 18$, then add $5$: $x = 23$. Check: $\\frac{3(23) - 5}{4} = \\frac{64}{4} = 16$ and $\\frac{23 + 9}{2} = \\frac{32}{2} = 16$, so both quantities equal $16$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-41$): multiplying the right side by $4$ rather than by $\\frac{4}{2} = 2$, giving $3x - 5 = 4x + 36$. The factor of $4$ must cancel against the denominator $2$ already present.\n* Choice B ($7$): clearing the $4$ on the left but forgetting the $2$ on the right, giving $3x - 5 = x + 9$. Both sides must be multiplied by the same number.\n* Choice C ($13$): a sign slip in the numerator, solving $3x + 5 = 2x + 18$. The numerator is $3x - 5$, so the $5$ stays negative.\n\n**Test Day Takeaway:** Clear every denominator with one common multiplier applied to both sides, distribute, then collect like terms — and confirm by evaluating both quantities at your answer."
+}

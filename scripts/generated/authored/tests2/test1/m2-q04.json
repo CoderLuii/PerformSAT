@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "question": "In the xy-plane, a straight section of water main is represented by the segment with endpoints $(-7, 4)$ and $(3, -12)$, and a shutoff valve is placed at the point of that segment that is the same distance from each endpoint. What is the product of the two coordinates of the valve?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-16$"
+    },
+    {
+      "id": "B",
+      "text": "$-4$"
+    },
+    {
+      "id": "C",
+      "text": "$-2$"
+    },
+    {
+      "id": "D",
+      "text": "$8$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "drops the negative on -12 and averages 4 and 12 to get 8, giving (-2)(8) = -16",
+    "B": "reports the y-coordinate of the midpoint instead of the product of the coordinates",
+    "C": "reports the x-coordinate of the midpoint instead of the product of the coordinates"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Midpoint Formula**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The point equidistant from both endpoints is the midpoint: $\\left(\\frac{-7 + 3}{2}, \\frac{4 + (-12)}{2}\\right) = (-2, -4)$. The product is $(-2)(-4) = 8$.\n\n**The Full Solution:**\nStep 1: A point on a segment that is the same distance from each endpoint is the midpoint of that segment, so apply the midpoint formula $\\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$.\nStep 2: The x-coordinate is $\\frac{-7 + 3}{2} = \\frac{-4}{2} = -2$, and the y-coordinate is $\\frac{4 + (-12)}{2} = \\frac{-8}{2} = -4$. The valve sits at $(-2, -4)$.\nStep 3: The product of the two coordinates is $(-2)(-4) = 8$. Check: $(-2, -4)$ is $\\sqrt{(-2 - (-7))^2 + (-4 - 4)^2} = \\sqrt{25 + 64} = \\sqrt{89}$ from one endpoint and $\\sqrt{(3 - (-2))^2 + (-12 - (-4))^2} = \\sqrt{89}$ from the other ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-16$): drops the negative sign on $-12$ and averages $4$ and $12$ to get $8$, then multiplies $(-2)(8)$. A single sign slip inside the average flips the product.\n* Choice B ($-4$): this is the y-coordinate of the valve, not the product. The last multiplication never happens.\n* Choice C ($-2$): this is the x-coordinate of the valve, again reported before the final step.\n\n**Test Day Takeaway:** \"Same distance from each endpoint\" is midpoint language. Average each coordinate separately, keeping the signs, then reread the final question — these items almost always ask for something built from the midpoint rather than the midpoint itself."
+}

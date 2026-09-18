@@ -5,30 +5,30 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
+  "module": 2,
+  "passage": "A terminal lake has no outlet to the sea; its level is set wholly by the balance between the water flowing in and the water evaporating from its surface. When one large terminal lake in the arid West fell to record lows, drought led most public discussion of the decline. Hydrologists who reconstructed a century of the basin's water budget reached a different accounting. Precipitation over the period swings widely but shows no sustained decline. What has changed steadily is the share of the rivers' flow withdrawn for irrigation and cities before it ever reaches the lake. In wet years the withdrawals are masked; in dry years they are laid bare. On the hydrologists' ledger, the lake is shrinking chiefly because its inflow is being spent upstream.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "Elephants undergo vastly more cell divisions over their long lifetimes than much smaller animals such as mice do."
+      "text": "Precipitation in the basin has declined so steadily over the past century that the lake can no longer be sustained at its former level."
     },
     {
       "id": "B",
-      "text": "Every cell division in any animal carries with it a small risk of producing a cancer-causing mutation in the dividing cell."
+      "text": "Terminal lakes are unusually sensitive to drought because evaporation is the only way water leaves them."
     },
     {
       "id": "C",
-      "text": "Although their size should make cancer common, elephants rarely develop it, and researchers have tied this resistance to their many extra copies of a gene that helps destroy damaged cells."
+      "text": "Although drought dominates public discussion, the basin's water budget indicates that the lake is shrinking mainly because so much of its inflow is diverted before reaching it."
     },
     {
       "id": "D",
-      "text": "Biologists use the term Peto's paradox to describe a genuine puzzle: why very large, long-lived animals such as elephants do not develop cancer nearly as often as their many cell divisions would predict."
+      "text": "Wet years and dry years alternate so unpredictably in the basin that no single cause of the lake's decline can be identified."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage poses Peto's paradox — large animals should get cancer more often but elephants rarely do — and reports that researchers have linked the resistance to elephants' many extra copies of a gene that helps destroy damaged cells. Choice A and choice B restate single supporting details, and choice D defines the paradox without giving the explanation that is the passage's point.",
-  "passage": "Large, long-lived animals ought to develop cancer far more often than small ones: every cell division carries a small risk of a cancer-causing mutation, and an elephant undergoes vastly more cell divisions in its lifetime than a mouse. Yet elephants rarely die of cancer — a puzzle biologists call Peto's paradox. Studying elephant DNA, one research group found that the species carries roughly twenty copies of a gene that helps damaged cells destroy themselves before they can become tumors, where humans carry only one. The extra copies, the researchers argue, give elephant tissues a more aggressive system for eliminating cells whose DNA has been damaged, which may help explain the paradox.",
+  "explanation": "**Choice C is correct.** The text sets the popular explanation (drought) against the hydrologists' accounting (steadily growing upstream withdrawals) and sides with the accounting — which is what C states.\n\n**The Full Solution:**\n- The public story: drought \"led most public discussion of the decline.\"\n- The evidence: precipitation swings but does not decline; withdrawals for irrigation and cities have grown steadily.\n- The verdict: \"the lake is shrinking chiefly because its inflow is being spent upstream.\" C compresses the contrast and the conclusion.\n\n**Why the other choices are wrong:**\n- A: It contradicts the text, which says precipitation \"shows no sustained decline.\"\n- B: A general fact about terminal lakes from the opening sentence — background, not the point.\n- D: The text identifies a chief cause; it does not throw up its hands at variability.",
   "_meta": {
-    "anchor": "cancer biology — Peto's paradox and elephant p53 copies"
-  },
-  "module": 2
+    "anchor": "terminal-lake water budget — upstream diversion versus drought"
+  }
 }

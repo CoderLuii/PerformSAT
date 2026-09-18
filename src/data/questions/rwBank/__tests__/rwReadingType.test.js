@@ -44,8 +44,8 @@ const readingItems = rwQuestionBank.filter((q) => READING_SKILLS.has(q.skill));
 const liveReadingIds = new Set(readingItems.map((q) => q.sourceQuestionId));
 
 describe('rwReadingType — authoritative reading-comprehension categorization', () => {
-  it('there are 390 live reading-comprehension items (360 from tests + 30 authored fills)', () => {
-    expect(readingItems.length).toBe(390);
+  it('there are 398 live reading-comprehension items (360 from tests + 38 authored fills)', () => {
+    expect(readingItems.length).toBe(398);
   });
 
   it('every live reading item has an authoritative entry (none falls through to Tier-3 untyped)', () => {
@@ -58,7 +58,7 @@ describe('rwReadingType — authoritative reading-comprehension categorization',
   it('the map has no stale keys — every key is a live reading item id', () => {
     const stale = Object.keys(RW_READING_TYPE_BY_ID).filter((k) => !liveReadingIds.has(Number(k)));
     expect(stale).toEqual([]);
-    expect(Object.keys(RW_READING_TYPE_BY_ID).length).toBe(390);
+    expect(Object.keys(RW_READING_TYPE_BY_ID).length).toBe(398);
   });
 
   it('every map value is a valid reading-* slug (or null)', () => {

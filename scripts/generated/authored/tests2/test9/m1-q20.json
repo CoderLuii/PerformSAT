@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A truss panel is modeled by right triangle $JKL$, where the right angle is at $K$ and $\\tan J=\\frac{2}{5}$. Which expression is equivalent to $\\cos L$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{2}{\\sqrt{29}}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{5}{\\sqrt{29}}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{5}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{\\sqrt{29}}{2}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "gives sin L: uses the leg opposite angle L instead of the leg adjacent to it",
+  "C": "gives tan L, the ratio of the two legs, rather than a cosine",
+  "D": "inverts the cosine, writing hypotenuse over the adjacent leg"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Right Triangle — Trig Ratios**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** $\\tan J=\\frac{2}{5}$ makes the legs $2$ and $5$ and the hypotenuse $\\sqrt{29}$; for angle $L$ the adjacent leg is the $2$, so $\\cos L=\\frac{2}{\\sqrt{29}}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $K$, so the legs are $JK$ and $KL$ and the hypotenuse is $JL$. From $\\tan J=\\frac{\\text{opposite}}{\\text{adjacent}}=\\frac{KL}{JK}=\\frac{2}{5}$, take $KL=2t$ and $JK=5t$ for some $t>0$.\nStep 2: By the Pythagorean theorem, $JL=\\sqrt{(2t)^2+(5t)^2}=\\sqrt{29t^2}=t\\sqrt{29}$.\nStep 3: Angle $L$ sits between side $KL$ and the hypotenuse, so $\\cos L=\\frac{KL}{JL}=\\frac{2t}{t\\sqrt{29}}=\\frac{2}{\\sqrt{29}}$. Check with the complementary-angle identity: $J$ and $L$ are complementary, and $\\sin J=\\frac{2}{\\sqrt{29}}$ as well ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($\\frac{5}{\\sqrt{29}}$): this is $\\sin L$ (equivalently $\\cos J$) — it uses $JK$, the leg OPPOSITE angle $L$.\n* Choice C ($\\frac{5}{2}$): this is $\\tan L$, leg over leg; a cosine must involve the hypotenuse.\n* Choice D ($\\frac{\\sqrt{29}}{2}$): flips the cosine upside down, hypotenuse over adjacent leg, which is $\\sec L$. Any cosine is at most $1$.\n\n**Test Day Takeaway:** Label the two legs from the given tangent, build the hypotenuse once with the Pythagorean theorem, then read the requested ratio from the OTHER angle's point of view — what is adjacent to $J$ is opposite $L$."
+}

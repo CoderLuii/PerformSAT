@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-241",
+  "question": "A city library selected $250$ of its adult cardholders at random and asked whether they had used the library's digital lending service in the past month. Of those selected, $38\\%$ said they had. Which of the following is the largest population to which the results of the survey can be generalized?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "All adult residents of the city"
+    },
+    {
+      "id": "B",
+      "text": "The $250$ adult cardholders who were selected"
+    },
+    {
+      "id": "C",
+      "text": "All cardholders of public libraries in the state"
+    },
+    {
+      "id": "D",
+      "text": "All adult cardholders of the city library"
+    }
+  ],
+  "distractorNotes": {
+    "A": "extends to residents who were never in the sampling frame (non-cardholders)",
+    "B": "stops at the sample itself, ignoring that random selection supports inference to the population",
+    "C": "extends to cardholders of other libraries, who had no chance of selection"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** A random sample supports a conclusion about exactly the group it was drawn from. The $250$ people were selected from the library's adult cardholders, so that is the largest population the $38\\%$ estimate describes.\n\n**The Full Solution:**\nStep 1: Locate the sampling frame. The library selected $250$ people at random from its adult cardholders.\nStep 2: Random selection is what allows a sample statistic to estimate the corresponding value for the population the sample came from, and for no larger group.\nStep 3: That population is all adult cardholders of the city library. Check: every adult cardholder had a chance of being selected, while non-cardholders and cardholders at other libraries had no chance at all. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: adult residents who do not hold a library card were never eligible to be selected, so the sample carries no information about them.\n* Choice B: the $250$ selected cardholders are the sample itself; random selection is precisely what lets the result reach beyond the sample to the population.\n* Choice C: cardholders of other libraries were outside the sampling frame, so the estimate cannot be extended to them.\n\n**Test Day Takeaway:** Find the phrase \"selected at random from ___\"; whatever fills the blank is the largest group the results can describe."
+}

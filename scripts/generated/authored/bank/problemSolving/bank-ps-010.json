@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-010",
+  "question": "A block of ice had a mass of $750$ grams. After several hours, the block had a mass of $615$ grams. By what percent did the mass of the block decrease?",
+  "correctAnswer": "18",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**The correct answer is $18$.**\n\n**The Fast Way (~10s):** The mass fell by $750 - 615 = 135$ grams, and $\\frac{135}{750} = 0.18$, so the decrease is $18\\%$.\n\n**The Full Solution:**\nStep 1: Percent decrease $= \\frac{\\text{original} - \\text{new}}{\\text{original}} \\times 100\\%$.\nStep 2: The decrease is $750 - 615 = 135$ grams, so the percent decrease is $\\frac{135}{750} \\times 100\\% = 18\\%$.\nStep 3: Check: $18\\%$ of $750$ is $0.18 \\times 750 = 135$, and $750 - 135 = 615$. $\\checkmark$\n\n**Common Mistakes:** Entering about $22$ (dividing $135$ by the new mass $615$, which gives $0.2195\\ldots$); entering $82$ (the percent of the original mass that remains, $\\frac{615}{750}$); entering $135$ (the decrease in grams, not a percent).\n\n**Test Day Takeaway:** Divide the decrease by the ORIGINAL amount. If the result is the fraction remaining rather than the fraction lost, subtract it from $100\\%$."
+}

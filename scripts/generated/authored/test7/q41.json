@@ -1,67 +1,67 @@
 {
-  "id": 741,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 2,
-  "passage": "Engineers testing rechargeable batteries track capacity retention — the percentage of a cell's original storage capacity that remains after repeated charge-discharge cycles. Comparing four lithium-ion cathode chemistries cycled under identical conditions, a materials scientist argues that one of them stands out for holding its capacity far better than the others over long use because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Capacity retention (percent of original capacity) of four lithium-ion cathode chemistries after selected numbers of charge-discharge cycles",
-    "headers": [
-      "Cathode chemistry",
-      "After 100 cycles",
-      "After 500 cycles",
-      "After 1,000 cycles"
-    ],
-    "rows": [
-      [
-        "NMC",
-        "97%",
-        "88%",
-        "74%"
-      ],
-      [
-        "LCO",
-        "95%",
-        "80%",
-        "61%"
-      ],
-      [
-        "LFP",
-        "99%",
-        "96%",
-        "92%"
-      ],
-      [
-        "NCA",
-        "96%",
-        "85%",
-        "70%"
-      ]
-    ]
-  },
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "after 100 cycles every chemistry still retained at least 95 percent of its original capacity, leaving little to distinguish them early in testing."
-    },
-    {
-      "id": "B",
-      "text": "LCO retained only 61 percent of its capacity after 1,000 cycles, the lowest retention of any chemistry at that stage of testing."
-    },
-    {
-      "id": "C",
-      "text": "NMC's retention fell from 97 percent after 100 cycles to 74 percent after 1,000 cycles, a decline of 23 percentage points."
-    },
-    {
-      "id": "D",
-      "text": "LFP retained 92 percent of its capacity after 1,000 cycles, while the other three chemistries had each dropped to between 61 and 74 percent."
-    }
+ "id": 741,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 2,
+ "passage": "Rain steadily erodes the leading edges of wind-turbine blades, and the resulting roughness cuts into the energy a blade can capture. A materials engineer subjected samples of four protective coatings to identical simulated-rainfall endurance tests, inspecting each sample at intervals, and argues that one coating stands out for protecting blades over the long exposures a working turbine actually faces because ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Share of each coating's leading-edge surface remaining smooth after simulated rainfall exposure (percent)",
+  "headers": [
+   "Coating",
+   "After 500 hours",
+   "After 2,000 hours",
+   "After 8,000 hours"
   ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The scientist's claim is that one chemistry holds its capacity far better than the others over long use. Choice D supplies exactly that contrast at the longest interval tested: LFP retained 92 percent of its capacity after 1,000 cycles, while the other three chemistries had each fallen to between 61 and 74 percent. Choice A speaks only to the first 100 cycles, when every chemistry still performed well, so it cannot show a long-run standout. Choice B reports the worst performer rather than the best, and Choice C traces a single chemistry's decline without comparing it against the others."
+  "rows": [
+   [
+    "Polyurethane film",
+    "97",
+    "88",
+    "64"
+   ],
+   [
+    "Epoxy gelcoat",
+    "95",
+    "76",
+    "41"
+   ],
+   [
+    "Metallic cap",
+    "98",
+    "90",
+    "71"
+   ],
+   [
+    "Elastomeric spray",
+    "99",
+    "96",
+    "93"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "after 500 hours of exposure, every coating in the test still kept at least 95 percent of its surface smooth."
+  },
+  {
+   "id": "B",
+   "text": "the epoxy gelcoat's smooth surface fell to 41 percent after 8,000 hours, the lowest figure recorded at that stage of the test."
+  },
+  {
+   "id": "C",
+   "text": "the polyurethane film's smooth surface declined steadily across the whole test, falling from 97 percent after 500 hours to 88 after 2,000 and finally to 64 after 8,000 hours of exposure."
+  },
+  {
+   "id": "D",
+   "text": "the elastomeric spray kept 93 percent of its surface smooth after 8,000 hours, while the other three coatings had fallen to between 41 and 71 percent."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The claim is that one coating stands out over long exposures, which requires comparing all four at the longest test point — and D does exactly that: 93 percent for the elastomeric spray at 8,000 hours against 41 to 71 for the rest.\n\n**The Full Solution:**\n- Unpack the claim: \"stands out\" demands a comparison across coatings, and \"long exposures\" points to the 8,000-hour column.\n- D pairs the standout's figure with the full range of the other three, establishing both the gap and its direction.\n- The 22-point margin over the next-best coating at the longest exposure is the evidence the argument needs.\n\n**Why the other choices are wrong:**\n- A: At 500 hours the coatings are nearly indistinguishable — early data cannot show a long-run standout.\n- B: The worst performer's collapse identifies a loser, not the standout the claim is about.\n- C: Tracking one middling coating's decline compares it with nothing, so no coating can stand out from it."
 }

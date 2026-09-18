@@ -5,39 +5,39 @@
  "band": 4,
  "domain": "craft-and-structure",
  "skill": "cross-text-connections",
- "question": "Based on the texts, how would the author of Text 2 most likely respond to the claim presented in Text 1?",
- "choices": [
-  {
-   "id": "A",
-   "text": "He would accept that the earliest films were exhibitionist displays and agree that narrative had no place in screen practice until after about 1906."
-  },
-  {
-   "id": "B",
-   "text": "He would question whether spectacle and storytelling were ever as separate as Text 1 implies, since exhibitors and editors shaped early programs into sequences audiences followed as stories."
-  },
-  {
-   "id": "C",
-   "text": "By objecting that too few early prints survive for any claim about the period's emphasis to rest on solid evidence."
-  },
-  {
-   "id": "D",
-   "text": "Granting that early film favored spectacle, he would still deny that the medium could achieve the emotional effects of later narrative cinema."
-  }
- ],
- "correctAnswer": "B",
- "explanation": "The correct answer is B. Text 2 does not dispute that early films courted the spectator's attention; what Musser resists is the sharp split Gunning draws between a \"cinema of attractions\" and the narrative cinema that supposedly replaced it. He argues that exhibitors arranged shots and whole programs, and that editing linked images into sequences audiences read as stories, so storytelling was present from early on rather than arriving as a later rupture. B captures that challenge to the framing. A has Musser endorsing the very break he denies; C invents a missing-evidence objection he never raises; and D concedes Gunning's premise and adds a claim about emotional incapacity that Text 2 does not make.",
- "_meta": {
-  "anchor": "Cross-text pair: Tom Gunning (cinema of attractions) vs. Charles Musser (continuity/narrative) [theme: early cinema history]"
- },
+ "type": "multiple-choice",
  "passages": [
   {
    "label": "Text 1",
-   "text": "Film historian Tom Gunning argues that the earliest cinema, from roughly 1895 to 1906, is best understood not as primitive storytelling but as a \"cinema of attractions.\" These short films, on his account, were exhibitionist: they solicited the viewer's attention directly, through spectacle, trick effects, and performers who looked straight into the camera, rather than drawing the audience into an absorbing fictional world. Narrative, where it appeared at all, was a loose thread on which to hang displays. What mattered was the act of showing. Only after about 1906, Gunning contends, did filmmakers subordinate display to story and develop the techniques of continuity that would define the narrative cinema audiences now take for granted."
+   "text": "In the 1930s, geneticist George Beadle crossed maize with teosinte, a wild Mexican grass whose hard, few-kerneled spikes look nothing like an ear of corn. The hybrids were fertile, and the traits separating the two plants appeared to be governed by a small number of genes. Beadle concluded that teosinte was maize's direct wild ancestor and that ancient farmers in Mexico, by selecting favorable variants generation after generation, could have gradually transformed so unpromising a grass into a productive crop."
   },
   {
    "label": "Text 2",
-   "text": "Charles Musser, surveying the same early period, treats the break Gunning describes as overstated. Screen practice, he argues, was bound up with storytelling long before 1906, because the meaning of any early film depended on how it was presented. Exhibitors selected and ordered short films, added spoken narration, and combined views into programs that audiences followed as connected sequences; editing within films, too, linked images into cause-and-effect relations. To set a \"cinema of attractions\" against a later \"cinema of narrative,\" on Musser's reading, is to mistake a change of degree for a change of kind, and to overlook how much narrative work the period's exhibition and editing were already doing."
+   "text": "Botanist Paul Mangelsdorf found the teosinte hypothesis difficult to accept. The seed-bearing structures of the two plants differ so radically, he argued, that early farmers would have seen nothing in teosinte worth cultivating, let alone remaking. Mangelsdorf proposed instead that maize descended from a wild maize, now extinct, and that teosinte was not the crop's ancestor at all but a later offshoot produced by crossing between cultivated maize and another wild grass."
   }
  ],
- "type": "multiple-choice"
+ "question": "Based on the texts, how would Mangelsdorf (Text 2) most likely respond to the conclusion presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "He would deny that crosses between maize and teosinte can yield fertile offspring, undermining the evidence at the center of Beadle's argument."
+  },
+  {
+   "id": "B",
+   "text": "He would object that the two plants' seed-bearing structures differ too radically for teosinte to have struck ancient farmers as a plant worth cultivating in the first place."
+  },
+  {
+   "id": "C",
+   "text": "He would accept that teosinte was maize's ancestor while arguing that the transformation must have involved many more genes than Beadle's crosses indicated."
+  },
+  {
+   "id": "D",
+   "text": "He would grant that teosinte is maize's closest wild relative but insist that the grass became a crop through natural crossing alone, without any selection by ancient farmers."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Text 2 states Mangelsdorf's objection directly: the plants' seed-bearing structures \"differ so radically\" that early farmers \"would have seen nothing in teosinte worth cultivating.\" That is precisely the response B attributes to him.\n\n**The Full Solution:**\n- Beadle's conclusion has two parts: teosinte was the ancestor, and ancient farmers transformed it through selection.\n- Mangelsdorf attacks the scenario at its starting point — no farmer would have bothered with so unpromising a plant — and offers an alternative ancestry (an extinct wild maize) on which teosinte is an offshoot, not a parent.\n\n**Why the other choices are wrong:**\n- A: It has him denying a result his own proposal depends on — his offshoot account requires that maize and wild grasses cross; he disputed Beadle's interpretation, not the crosses.\n- C: It concedes the very claim he rejects — that teosinte was the ancestor.\n- D: It swaps his actual objection for one he never makes: his target was teosinte's role as ancestor, not the involvement of human selection in maize's history.",
+ "_meta": {
+  "anchor": "Cross-text pair: George Beadle (teosinte hypothesis) vs. Paul Mangelsdorf (extinct wild maize) — maize domestication debate"
+ }
 }

@@ -1,31 +1,31 @@
 {
-  "id": 821,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "Assembled to mark a centenary, the traveling exhibition of Japanese woodblock prints drew on loans from three institutions on three continents: the Tokyo National Museum, in Ueno Park ______ the Honolulu Museum of Art, in Hawaii; and the British Museum, in London.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Park"
-    },
-    {
-      "id": "B",
-      "text": "Park, and"
-    },
-    {
-      "id": "C",
-      "text": "Park;"
-    },
-    {
-      "id": "D",
-      "text": "Park,"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. Each item in this list already contains an internal comma (\"the Tokyo National Museum, in Ueno Park\"), so the items must be separated by semicolons to keep them from blurring together; the sentence already uses a semicolon before \"and the British Museum,\" and the blank needs to match. The bare phrase in A fuses the first two items, the comma-plus-\"and\" in B breaks the parallel semicolon pattern of the series, and the lone comma in D cannot do the work of dividing items that themselves contain commas."
+ "id": 821,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "By the eighteenth century, verdigris made in the workshops around Montpellier reached painters through three great ports: Marseille, on the ______ Bordeaux, on the Atlantic coast; and Rouen, far to the north.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Mediterranean"
+  },
+  {
+   "id": "B",
+   "text": "Mediterranean, and"
+  },
+  {
+   "id": "C",
+   "text": "Mediterranean;"
+  },
+  {
+   "id": "D",
+   "text": "Mediterranean,"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The sentence lists items that contain internal commas, so semicolons must separate the items — including one after \"Mediterranean.\"\n\n**The Full Solution:**\n- Each list item pairs a port with a descriptive phrase set off by a comma: \"Marseille, on the Mediterranean\"; \"Bordeaux, on the Atlantic coast\"; \"Rouen, far to the north.\"\n- Because commas already work inside the items, the boundaries between items are promoted to semicolons.\n- The later items in the sentence confirm the pattern: the blank must match their semicolon boundary.\n\n**Why the other choices are wrong:**\n- A: With no mark, the first two items run together and the list's structure collapses.\n- B: \"Mediterranean, and\" inserts a premature conjunction one item too early in a three-item list.\n- D: A comma cannot mark the item boundary here, since commas are already in use within the items."
 }

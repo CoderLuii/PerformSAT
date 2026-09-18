@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "In a milling model the profile $y = 2x^2 + 8x + c$, where $c$ is a constant, gives the depth of cut across one pass, and the profile never meets the $x$-axis. Which statement about $c$ must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$c < 8$"
+  },
+  {
+   "id": "B",
+   "text": "$c = 8$"
+  },
+  {
+   "id": "C",
+   "text": "$c > 8$"
+  },
+  {
+   "id": "D",
+   "text": "$c > 32$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "flips the inequality when dividing, reading 64 - 8c < 0 as c < 8",
+  "B": "uses the tangent case 64 - 8c = 0, where the profile touches the axis exactly once",
+  "D": "computes the discriminant as b^2 - ac = 64 - 2c, giving c > 32"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** No $x$-intercepts means $b^2 - 4ac < 0$: $64 - 8c < 0$, so $c > 8$.\n\n**The Full Solution:**\nStep 1: The profile meets the $x$-axis where $2x^2 + 8x + c = 0$. \"Never meets\" means that equation has no real solutions.\nStep 2: No real solutions happens exactly when the discriminant is negative: $b^2 - 4ac = 8^2 - 4(2)(c) = 64 - 8c < 0$.\nStep 3: Add $8c$ to both sides and divide by $8$: $64 < 8c$, so $c > 8$. Check a value: $c = 10$ gives $64 - 80 = -16 < 0$, and $c = 6$ gives $64 - 48 = 16 > 0$, which would cross twice ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($c < 8$): reverses the inequality; $c = 6$ makes the discriminant positive, so the profile crosses the axis twice.\n* Choice B ($c = 8$): is the boundary case, where the discriminant is $0$ and the profile touches the axis once instead of missing it.\n* Choice D ($c > 32$): drops the $4$ from $4ac$ and solves $64 - 2c < 0$; it also fails as a \"must be true\" statement, since $c = 10$ works but is not greater than $32$.\n\n**Test Day Takeaway:** Translate the picture into the discriminant first — no intercepts is negative, one intercept is zero, two intercepts is positive — and keep the $4$ in $4ac$."
+}

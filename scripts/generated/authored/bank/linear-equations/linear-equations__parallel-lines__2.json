@@ -1,0 +1,25 @@
+{
+  "id": 2,
+  "question": "In the $xy$-plane, the graph of $g(x) = -\\frac{3}{4}x + 5$ is a line. Line $k$ is parallel to this line. What is the slope of line $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-\\frac{4}{3}$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{3}{4}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{3}{4}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{4}{3}$"
+    }
+  ],
+  "correctAnswer": "B",
+  "hint": "Copy the coefficient of $x$ exactly as it stands — sign included.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~10s):** Parallel lines share a slope, and the coefficient of $x$ here is $-\\frac{3}{4}$ — choice B.\n\n**The Full Solution:**\nStep 1: The equation is already in slope-intercept form, so the slope of the graph of $g$ is $-\\frac{3}{4}$.\nStep 2: Parallel lines have equal slopes.\nStep 3: Line $k$ therefore has slope $-\\frac{3}{4}$. Check the direction: a negative slope falls left to right, and any parallel line must fall at the same steepness. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{4}{3}$): flips the fraction while keeping the sign; parallel lines require no flip at all.\n* Choice C ($\\frac{3}{4}$): keeps the fraction but drops the negative sign, describing a line that rises rather than falls.\n* Choice D ($\\frac{4}{3}$): gives the negative reciprocal, the slope of a perpendicular line.\n\n**Test Day Takeaway:** Fraction slopes invite two reflexes that do not belong here — flipping and negating. Parallel means copy the coefficient exactly."
+}

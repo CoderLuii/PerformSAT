@@ -1,0 +1,41 @@
+{
+ "id": "bank-geo-058",
+ "question": "The tension plate of a circular knitting loom is the circle shown with center $P$, and a metal guard occupies sector $XPY$, whose central angle is given in radians. What is the area, in square millimeters, of the part of the plate outside the guard?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 150,
+   "angleLabel": "5π/6",
+   "radius": "18 mm",
+   "showRadiusLabel": true,
+   "labelCenter": "P",
+   "labelPoint1": "X",
+   "labelPoint2": "Y"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$54\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$135\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$189\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$324\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "drops the factor 1/2 from A = (1/2)r^2 theta, making the guard 270 pi and the remainder 54 pi",
+  "B": "gives the guard's own area instead of the region outside it",
+  "D": "gives the area of the whole plate, never subtracting the guard"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Sector Area in Radians**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** The guard covers $\\frac{5\\pi/6}{2\\pi}=\\frac{5}{12}$ of the plate, so the rest is $\\frac{7}{12}$ of $\\pi(18)^2=324\\pi$, which is $189\\pi$ square millimeters.\n\n**The Full Solution:**\n\nStep 1 — Read the figure: radius $18$ millimeters and central angle $\\frac{5\\pi}{6}$ radians.\n\nStep 2 — Find the guard's area with $A=\\frac{1}{2}r^2\\theta=\\frac{1}{2}(18)^2\\left(\\frac{5\\pi}{6}\\right)=\\frac{1}{2}(324)\\left(\\frac{5\\pi}{6}\\right)=135\\pi$ square millimeters.\n\nStep 3 — Subtract from the whole plate: $\\pi(18)^2-135\\pi=324\\pi-135\\pi=189\\pi$ square millimeters. Check: the leftover angle is $2\\pi-\\frac{5\\pi}{6}=\\frac{7\\pi}{6}$, and $\\frac{1}{2}(324)\\left(\\frac{7\\pi}{6}\\right)=189\\pi$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($54\\pi$): dropping the $\\frac{1}{2}$ makes the guard $324\\left(\\frac{5\\pi}{6}\\right)=270\\pi$, leaving $324\\pi-270\\pi=54\\pi$.\n* Choice B ($135\\pi$): this is the guard's own area, not the region outside it.\n* Choice D ($324\\pi$): this is the whole plate, with the guard never subtracted.\n\n**Test Day Takeaway:** In radians the sector formula is $A=\\frac{1}{2}r^2\\theta$ with no $360$ anywhere — and read carefully whether the question wants the sector or what is left of the circle."
+}

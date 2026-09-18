@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "expression-of-ideas",
  "skill": "transitions",
+ "type": "multiple-choice",
+ "passage": "On the high plain around Lake Titicaca, Indigenous farmers of the pre-Columbian Andes built waru waru: raised planting beds separated by water-filled canals. The canal water absorbs the day's heat and releases it through the freezing highland night, keeping the air above the beds a few degrees warmer than the surrounding plain. ______ crops growing on the raised beds can survive frosts that destroy fields planted on open ground nearby — an effect agronomists confirmed when they rebuilt sections of the ancient beds and measured the difference.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "Indeed,"
+   "text": "As a result,"
   },
   {
    "id": "B",
-   "text": "By contrast,"
+   "text": "Nevertheless,"
   },
   {
    "id": "C",
-   "text": "However,"
+   "text": "For instance,"
   },
   {
    "id": "D",
-   "text": "Previously,"
+   "text": "In comparison,"
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A, \"Indeed,\". The second sentence states the general claim that the keep-or-return framing of repatriation misses what many communities most want. The sentence after the blank supplies the supporting evidence: in case after case, repatriation requests come paired with proposals about caring for, studying, and sharing the returned objects — precisely the substance the binary framing dismisses. Because the third sentence confirms and amplifies the claim, \"Indeed,\" is the right connector. \"However,\" and \"By contrast,\" would signal that the evidence opposes the claim, which it does not; \"Previously,\" would wrongly recast current case-study material as an account of an earlier state of affairs.",
+ "explanation": "**Choice A is correct.** The passage lays out a mechanism — canal water banking daytime heat and releasing it at night — and the blank sentence states that mechanism's payoff: crops on the beds survive frosts that kill neighboring fields. Effect follows cause, so \"As a result\" is the logical connector.\n\n**The Full Solution:**\n- Sentence two explains the physics (a few degrees of nighttime warmth over the beds).\n- Sentence three reports the agricultural consequence of exactly those few degrees. The confirming experiment at the end reinforces that the relationship is causal, not merely associated.\n\n**Why the other choices are wrong:**\n- B: \"Nevertheless\" would make frost survival happen despite the warming, inverting the causal link the passage establishes.\n- C: \"For instance\" would offer the frost outcome as one example of the warming, but it is the warming's consequence — the passage gives no list of effects to exemplify.\n- D: \"In comparison\" signals a measured likeness between two items; though the sentence mentions nearby fields, its work is to state an outcome of the mechanism, and the comparison is internal to that outcome.",
  "_meta": {
-  "anchor": "Museum repatriation negotiations (unnamed anthropologists); requests paired with stewardship proposals"
- },
- "passage": "Most accounts of museum repatriation treat the return of cultural objects to source communities as a simple binary: either the museum keeps the object or it goes back. Anthropologists who have studied actual negotiations argue that this framing misses what many communities most want from the conversation. ______ in case after case, repatriation requests arrive paired with detailed proposals about how the receiving community will care for, study, and share the returned objects — proposals that the binary framing dismisses as secondary but that participants treat as the heart of the discussion.",
- "type": "multiple-choice"
+  "anchor": "Waru waru raised-field frost protection on the Titicaca altiplano — cause-effect transition"
+ }
 }

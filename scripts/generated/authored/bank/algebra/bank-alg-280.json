@@ -1,0 +1,53 @@
+{
+ "question": "A student tests whether the equation $3(x+4)=3x+12$ has a solution by evaluating each side of it at three values of $x$, with the results shown. How many values of $x$ satisfy the equation?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$3(x+4)$",
+   "$3x+12$"
+  ],
+  "rows": [
+   [
+    "$-2$",
+    "$6$",
+    "$6$"
+   ],
+   [
+    "$0$",
+    "$12$",
+    "$12$"
+   ],
+   [
+    "$5$",
+    "$27$",
+    "$27$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "No values"
+  },
+  {
+   "id": "B",
+   "text": "Exactly one value"
+  },
+  {
+   "id": "C",
+   "text": "Exactly three values"
+  },
+  {
+   "id": "D",
+   "text": "Infinitely many values"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reads the variable cancelling as a contradiction rather than an identity",
+  "B": "assumes every linear equation in one variable has exactly one solution",
+  "C": "counts the three rows of the table as the complete solution set"
+ },
+ "explanation": "**SAT Pattern: Identifying Identity / Contradiction Equations**\n\n**Choice D is correct.** Distributing the left side gives $3x+12$, the same expression as the right side, so every value of $x$ satisfies the equation.\n\n**The Fast Way (~20s):** $3(x+4)=3x+12$ is the distributive property written out, so the two sides are identical and every $x$ works.\n\n**The Full Solution:**\n\nStep 1: Distribute on the left: $3(x+4)=3x+12$.\n\nStep 2: The equation is now $3x+12=3x+12$. Subtracting $3x+12$ from both sides leaves $0=0$, a statement true for every $x$.\n\nStep 3: The table agrees: at $x=-2$, $x=0$, and $x=5$ the two columns match. Because the sides are the same expression, the match continues for every input, so there are infinitely many solutions.\n\n**Why the wrong answers are tempting:**\n\n* Choice A (No values): confuses an identity with a contradiction; the variable cancels here, but the leftover statement is true, not false.\n* Choice B (Exactly one value): applies the usual expectation that a linear equation has one solution, which fails when both sides simplify to the same expression.\n* Choice C (Exactly three values): counts the sampled rows of the table instead of recognizing that the table is only evidence.\n\n**Test Day Takeaway:** When both sides simplify to the same expression, the equation is an identity with infinitely many solutions; only a false leftover statement means no solution.",
+ "id": "bank-alg-280"
+}

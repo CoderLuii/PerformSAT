@@ -1,0 +1,6 @@
+{
+ "question": "Two weather stations model the same relationship between rainfall $x$, in inches, and measured runoff $y$, in inches, using the equations $12x - 20y = 36$ and $3x - 5y = c$, where $c$ is a constant. Every pair $(x, y)$ that satisfies one equation satisfies the other. What is the value of $c$?",
+ "correctAnswer": "9",
+ "explanation": "**SAT Pattern: Same Line (Infinitely Many Solutions)**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~25s):** Two equations share every solution only when one is a multiple of the other. Dividing $12x - 20y = 36$ by $4$ gives $3x - 5y = 9$, so $c = 9$.\n\n**The Full Solution:**\n\nStep 1: Compare the coefficients of $x$. Going from $12x$ to $3x$ divides by $4$.\n\nStep 2: The same factor must apply to every term, so $-20y$ becomes $-5y$ and $36$ becomes $\\frac{36}{4} = 9$.\n\nStep 3: Check the pair $(3, 0)$: it satisfies $12(3) - 20(0) = 36$, and $3(3) - 5(0) = 9$, so $c = 9$ is confirmed.\n\n**Common Mistakes:** Scaling only the left side and reporting $c = 36$; multiplying by $4$ instead of dividing and reporting $c = 144$; matching the constant to the $y$-coefficient and reporting $c = 5$.\n\n**Test Day Takeaway:** Infinitely many solutions means one equation is a constant multiple of the other, so find the factor from a coefficient you can see and apply it to every term.",
+ "id": "bank-alg-267"
+}

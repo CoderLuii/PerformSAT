@@ -1,0 +1,50 @@
+{
+ "id": "bank-am-034",
+ "question": "A cookware retailer's monthly cast-iron skillet sales relative to forecast are modeled by the quadratic function $f$ whose graph is shown with its vertex and both $x$-intercepts marked. If $f(x)=ax^2+bx+c$, what is the value of $b$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-6$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$0.5$"
+  },
+  {
+   "id": "D",
+   "text": "$2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the constant term c instead of b",
+  "C": "reports the leading coefficient a instead of b",
+  "D": "drops the negative sign when expanding -2ah"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form from Vertex + Intercepts**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The intercepts $-2$ and $6$ with vertex $(2,-8)$ give $a=\\frac{1}{2}$; expanding $\\frac{1}{2}(x-2)^2-8$ gives $b=-2$.\n\n**The Full Solution:**\nStep 1: The marked $x$-intercepts are $-2$ and $6$, so $f(x)=a(x+2)(x-6)$, and the vertex sits halfway between them at $x=2$.\nStep 2: The vertex output is $-8$: $a(2+2)(2-6)=-16a=-8$, so $a=\\frac{1}{2}$.\nStep 3: Expand $\\frac{1}{2}(x+2)(x-6)=\\frac{1}{2}(x^2-4x-12)=\\frac{1}{2}x^2-2x-6$, so $b=-2$. Check: $-\\frac{b}{2a}=-\\frac{-2}{1}=2$, matching the vertex's $x$-coordinate ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6$): reports the constant term $c$ instead of $b$.\n* Choice C ($0.5$): reports the leading coefficient $a$ instead of $b$.\n* Choice D ($2$): drops the negative sign when expanding, since $-4a=-2$, not $2$.\n\n**Test Day Takeaway:** Intercepts give the factored form and the vertex gives the stretch — expand once and read off whichever coefficient is asked for.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    2,
+    -8
+   ],
+   "a": 0.5,
+   "showVertex": true,
+   "showPoints": [
+    [
+     -2,
+     0
+    ],
+    [
+     6,
+     0
+    ]
+   ]
+  }
+ }
+}

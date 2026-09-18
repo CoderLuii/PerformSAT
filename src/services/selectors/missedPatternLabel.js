@@ -51,12 +51,31 @@ const SMALL_WORDS = new Set([
   'with',
 ]);
 
+// R&W pattern slugs abbreviate their parent skill as a leading token
+// ('tsp-overall-structure', 'fss-subject-verb-agreement'). Title-casing those
+// raw produced machine-speak in student-facing round labels ("Tsp Overall
+// Structure" — founder-flagged 2026-08-13). Expand the known skill
+// abbreviations; unknown tokens keep the generic path.
+const LEADING_EXPANSIONS = {
+  tsp: 'Text Structure & Purpose:',
+  fss: 'Form & Sense:',
+  ctc: 'Cross-Text:',
+  coe: 'Command of Evidence:',
+  wic: 'Words in Context:',
+  rhs: 'Rhetorical Synthesis:',
+};
+
 export const formatPatternLabel = (slug) => {
   if (!slug || typeof slug !== 'string') return null;
   const trimmed = slug.trim();
   if (!trimmed) return null;
 
   const tokens = trimmed.split('-');
+  const lead = tokens[0]?.toLowerCase();
+  if (tokens.length > 1 && LEADING_EXPANSIONS[lead]) {
+    const rest = formatPatternLabel(tokens.slice(1).join('-'));
+    return rest ? `${LEADING_EXPANSIONS[lead]} ${rest}` : LEADING_EXPANSIONS[lead].replace(/:$/, '');
+  }
   return tokens
     .map((tok, i) => {
       if (!tok) return tok;

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-004",
+  "question": "A researcher reports that the proportion of a fish population carrying a particular gene variant is $0.0042$. Which of the following is this proportion expressed as a percent?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.0042\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$0.042\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$0.42\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$4.2\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "attaches a percent sign without moving the decimal point.",
+    "B": "moves the decimal point only one place to the right.",
+    "D": "moves the decimal point three places, treating $0.0042$ as if it were $0.042$."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Small-Value Decimal to Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~5s):** Multiply by $100$: $0.0042 \\times 100 = 0.42$, so the proportion is $0.42\\%$.\n\n**The Full Solution:**\nStep 1: To express a proportion as a percent, multiply by $100$, which moves the decimal point exactly two places to the right.\nStep 2: $0.0042 \\to 0.042 \\to 0.42$, so the proportion is $0.42\\%$. The leading zeros are what make this easy to miscount.\nStep 3: Check: $0.42\\% = \\frac{0.42}{100} = 0.0042$. $\\checkmark$ (Also reasonable: $0.0042$ is a little less than $\\frac{1}{200} = 0.5\\%$.)\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.0042\\%$): attaches a percent sign without moving the decimal point.\n* Choice B ($0.042\\%$): moves the decimal point only one place to the right.\n* Choice D ($4.2\\%$): moves the decimal point three places, treating $0.0042$ as if it were $0.042$.\n\n**Test Day Takeaway:** Leading zeros do not change the rule: count exactly two places to the right. Sanity-check against a benchmark such as $0.005 = 0.5\\%$."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "A load cell reports a force of $6w - 5$ newtons for a specimen of width $w$ millimeters, and for one specimen it reports $31$ newtons. For that specimen, what is the value of $12w + 4$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40$"
+  },
+  {
+   "id": "B",
+   "text": "$66$"
+  },
+  {
+   "id": "C",
+   "text": "$72$"
+  },
+  {
+   "id": "D",
+   "text": "$76$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats 12w + 4 as (6w - 5) + 9 and adds 9 to the reported 31",
+  "B": "doubles the reported 31 and adds 4, which evaluates 12w - 6 rather than 12w + 4",
+  "C": "finds w = 6 correctly but reports 12w and drops the +4"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** $6w - 5 = 31$ gives $6w = 36$, so $12w = 72$ and $12w + 4 = 76$.\n\n**The Full Solution:**\nStep 1: Set the reported force equal to the expression: $6w - 5 = 31$.\nStep 2: Add $5$ to both sides to isolate the piece the target expression is built from: $6w = 36$. Doubling gives $12w = 72$.\nStep 3: Add the constant the question asks for: $12w + 4 = 72 + 4 = 76$. Check by solving for the width: $w = 6$, so $6(6) - 5 = 31$ newtons and $12(6) + 4 = 76$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($40$): assumes the target is the reported value plus $9$, as if $12w + 4$ were $(6w - 5) + 9$; that is only true when $6w = 9$.\n* Choice B ($66$): doubles $31$ and adds $4$, which doubles the $-5$ as well and evaluates $12w - 6$.\n* Choice C ($72$): finds $12w = 72$ and stops one step early.\n\n**Test Day Takeaway:** Build the requested expression out of the given one — double $6w$ before touching the constants, and finish with the constant the question actually names."
+}

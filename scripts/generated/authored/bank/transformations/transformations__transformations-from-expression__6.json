@@ -1,0 +1,30 @@
+{
+ "id": 6,
+ "question": "A cargo bike's load sensor reads $W(t)$ kilograms $t$ minutes into a route, and a duplicate log records $y = W(t) - 15$. The duplicate log reads $62$ kilograms at $t = 20$. What did the load sensor read at $t = 20$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$47$"
+  },
+  {
+   "id": "C",
+   "text": "$62$"
+  },
+  {
+   "id": "D",
+   "text": "$77$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the size of the adjustment rather than a load",
+  "B": "subtracts 15 again instead of adding it back",
+  "C": "reports the duplicate log's reading unchanged"
+ },
+ "correctAnswer": "D",
+ "hint": "The number you are given is the duplicate log's reading, not the sensor's.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~10s):** The duplicate reads $15$ kilograms low, so the sensor read $62 + 15 = 77$ kilograms.\n\n**The Full Solution:**\nStep 1: The duplicate's reading at minute $20$ is $W(20) - 15$.\nStep 2: Set that equal to the recorded value: $W(20) - 15 = 62$.\nStep 3: Add $15$ to both sides: $W(20) = 77$ kilograms. Check: $77 - 15 = 62$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): reporting the size of the adjustment instead of a load.\n* Choice B ($47$): subtracting $15$ again; the rule has already subtracted it once, so it must be added back.\n* Choice C ($62$): reporting the duplicate log's value, which is what the question asks you to correct.\n\n**Test Day Takeaway:** To recover the original output, undo the outside operation rather than repeating it."
+}

@@ -1,0 +1,47 @@
+{
+  "id": 1,
+  "question": "The table shows the number of units of each supply a bakery buys and the price per unit, in dollars, in terms of $x$. Which expression represents the total amount, in dollars, the bakery pays for these supplies?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Supply",
+        "Number of units",
+        "Price per unit (dollars)"
+      ],
+      "rows": [
+        [
+          "Flour sacks",
+          "4",
+          "x + 3"
+        ],
+        [
+          "Yeast packets",
+          "3",
+          "2x − 1"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$10x + 2$"
+    },
+    {
+      "id": "B",
+      "text": "$10x + 9$"
+    },
+    {
+      "id": "C",
+      "text": "$10x + 15$"
+    },
+    {
+      "id": "D",
+      "text": "$21x + 14$"
+    }
+  ],
+  "correctAnswer": "B",
+  "hint": "Each row contributes (number of units)(price per unit); distribute each product completely before you combine anything.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** $4(x+3)=4x+12$ and $3(2x-1)=6x-3$; adding gives $10x+9$ — choice B.\n\n**The Full Solution:**\nStep 1: The flour sacks cost $4(x+3)=4x+12$ dollars.\nStep 2: The yeast packets cost $3(2x-1)=6x-3$ dollars.\nStep 3: Add the two costs and combine like terms: $(4x+6x)+(12-3)=10x+9$.\nStep 4: Check with a number. At $x=2$ the unit prices are $5$ and $3$ dollars, so the bill is $4(5)+3(3)=29$ dollars, and $10(2)+9=29$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($10x + 2$): multiplies each quantity by only the $x$-term and copies the constants over untouched: $4x+3+6x-1$.\n* Choice C ($10x + 15$): distributes the $3$ across $2x-1$ as $6x+3$, losing the subtraction sign on the constant.\n* Choice D ($21x + 14$): adds the two unit prices first, $(x+3)+(2x-1)=3x+2$, then multiplies by the total number of units, $7$ — but the two supplies have different unit counts.\n\n**Test Day Takeaway:** Distribute the multiplier across every term inside the parentheses, sign included, and only then collect like terms. A quick numerical check with a convenient value of $x$ catches a dropped sign in seconds."
+}

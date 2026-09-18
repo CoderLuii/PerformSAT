@@ -1,9 +1,9 @@
 import { db } from '../firebase/config';
-import { doc, getDoc, setDoc, updateDoc, deleteField, serverTimestamp, arrayUnion, collection, addDoc, query, where, orderBy, limit, getDocs, runTransaction } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, deleteField, serverTimestamp, collection, addDoc, query, where, orderBy, limit, getDocs, runTransaction } from 'firebase/firestore';
 import { sanitizeForFirestore, restoreFromFirestore } from '../utils/firestoreSafe';
 import { TEST_REVIEW_MODULE_PREFIX } from './reviewQueueResolve';
 import { clearPendingSavesForTest, removePendingSave } from './pendingTestSaveQueue';
-import { pickSurvivingArtifactId } from './studyPlanReset';
+import { pickSurvivingArtifactId, isDiagnosticSourceTestId } from './studyPlanReset';
 import { isSafeFirestoreFieldPathKey } from './firestoreFieldPath';
 
 /**
@@ -125,6 +125,15 @@ export const recordPracticeTestResult = async (userId, testId, testTitle, result
       });
     };
 
+    // EVERY attempts array that enters the transaction goes through this:
+    // trim (strips the regenerable diagnosticReport — which historically rode
+    // in un-trimmed on a test's FIRST attempt and carried live Set objects
+    // Firestore hard-rejects, failing the whole save) and sanitize (scrubs
+    // undefined/NaN, boxes nested arrays, converts Set/Map — so the NEXT
+    // unserializable value that sneaks into scoring/diagnostic output degrades
+    // gracefully instead of losing the student's score).
+    const safeAttempts = (attempts) => sanitizeForFirestore(trimAttempts(attempts));
+
     // Build the snapshot doc payload (or null when caller didn't provide one).
     // Without a snapshot, Review Answers will fall back to the live test file —
     // acceptable during rollout, but the eventual contract is "every attempt
@@ -168,7 +177,7 @@ export const recordPracticeTestResult = async (userId, testId, testTitle, result
             [testId]: {
               testId,
               testTitle,
-              attempts: [attemptData],
+              attempts: safeAttempts([attemptData]),
               bestScaledScore: results.scaledScore ?? 0,
               bestRawScore: results.rawScore ?? 0,
               // Scale of the latest attempt, surfaced at row level so the goal
@@ -250,7 +259,7 @@ export const recordPracticeTestResult = async (userId, testId, testTitle, result
       if (existingTest) {
         // Update existing test results, trimming old attempts to stay under Firestore 1MB limit
         console.log('[practiceTestService] Updating existing test results...');
-        updates[`practiceTestResults.${testId}.attempts`] = trimAttempts([attemptData, ...(existingTest.attempts || [])]);
+        updates[`practiceTestResults.${testId}.attempts`] = safeAttempts([attemptData, ...(existingTest.attempts || [])]);
         updates[`practiceTestResults.${testId}.bestScaledScore`] = Math.max(existingTest.bestScaledScore ?? 0, results.scaledScore ?? 0);
         updates[`practiceTestResults.${testId}.bestRawScore`] = Math.max(existingTest.bestRawScore ?? 0, results.rawScore ?? 0);
         updates[`practiceTestResults.${testId}.isMultiSection`] = results.isMultiSection ?? false; // scale signal for goal comparison (1.4)
@@ -262,7 +271,7 @@ export const recordPracticeTestResult = async (userId, testId, testTitle, result
         updates[`practiceTestResults.${testId}`] = {
           testId,
           testTitle,
-          attempts: [attemptData],
+          attempts: safeAttempts([attemptData]),
           bestScaledScore: results.scaledScore ?? 0,
           bestRawScore: results.rawScore ?? 0,
           isMultiSection: results.isMultiSection ?? false, // scale signal for goal comparison (1.4)
@@ -298,6 +307,33 @@ export const recordPracticeTestResult = async (userId, testId, testTitle, result
     console.error('[practiceTestService] Error recording practice test result:', error);
     throw error;
   }
+};
+
+/**
+ * Persist a DIAGNOSTIC sitting to the same per-attempt snapshot subcollection
+ * practice tests use (progress/{uid}/attempts/{attemptId}), so the diagnosis
+ * can be rebuilt in full later (Home → "View your diagnosis"). A diagnostic
+ * never enters the progress doc's attempts arrays / score history, so this
+ * doc is the ONLY durable record of the exact questions, answers and
+ * telemetry the student produced. Flagged `isDiagnostic: true` so readers
+ * that enumerate attempts can tell it apart from a scored practice test.
+ *
+ * @param {string} userId
+ * @param {object} payload - { attemptId, testId, diagnosticVariant, completedAt,
+ *   questionsSnapshot, answers, diagnosticData, scoreBand, routes }
+ * @returns {Promise<string>} the attemptId written
+ */
+export const saveDiagnosticSittingSnapshot = async (userId, payload) => {
+  if (!userId || !payload?.attemptId) {
+    throw new Error('saveDiagnosticSittingSnapshot: userId and payload.attemptId are required');
+  }
+  const ref = doc(db, 'progress', userId, 'attempts', payload.attemptId);
+  await setDoc(ref, sanitizeForFirestore({
+    ...payload,
+    isDiagnostic: true,
+    snapshotVersion: SNAPSHOT_VERSION,
+  }));
+  return payload.attemptId;
 };
 
 /**
@@ -627,7 +663,8 @@ export const resetPracticeTest = async (userId, testId) => {
       if (data.currentStudyPlanArtifactId) {
         try {
           // Check the CURRENT artifact directly first. If its source test still
-          // exists (or it's a mini-diagnostic plan, sourceTestId null), keep the
+          // exists (or it's the diagnostic's plan — sourceTestId null or
+          // 'mini-diagnostic-*', see isDiagnosticSourceTestId), keep the
           // pointer untouched — resetting an unrelated test must not churn the
           // plan. Reading the doc by id also dodges the top-N window: an old
           // current artifact that survives is honored even past any query limit.
@@ -635,7 +672,7 @@ export const resetPracticeTest = async (userId, testId) => {
           const currentSnap = await getDoc(currentRef);
           const currentSourceTestId = currentSnap.exists() ? (currentSnap.data()?.linkage?.sourceTestId ?? null) : undefined;
           const currentSurvives = currentSnap.exists()
-            && (currentSourceTestId == null || Object.prototype.hasOwnProperty.call(results, currentSourceTestId));
+            && (isDiagnosticSourceTestId(currentSourceTestId) || Object.prototype.hasOwnProperty.call(results, currentSourceTestId));
 
           if (!currentSurvives) {
             // Current plan's source test was reset (or the artifact is gone) —

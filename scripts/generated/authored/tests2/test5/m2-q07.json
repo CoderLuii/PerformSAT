@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A loudspeaker crossover network has a response ratio equal to $\\dfrac{9x^{2}-64}{3x^{2}+20x+32}$, where $x$ is the ratio of the input frequency to the crossover frequency and $x>4$. Which of the following expressions has the same value as the response ratio for every such $x$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{3x-8}{x-4}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{3x+8}{x+4}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{3x-8}{x+4}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{9x-8}{x+4}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "factors the denominator as (3x + 8)(x - 4), a sign slip that gives 3x^2 - 4x - 32 instead of 3x^2 + 20x + 32",
+  "B": "cancels the wrong half of the difference of squares, keeping 3x + 8 in the numerator instead of 3x - 8",
+  "D": "writes 9x^2 - 64 as (9x - 8)(9x + 8), forgetting that the square root of 9x^2 is 3x, not 9x"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The numerator is a difference of squares, $(3x-8)(3x+8)$, and the denominator factors as $(3x+8)(x+4)$. The shared $(3x+8)$ divides out, leaving $\\dfrac{3x-8}{x+4}$.\n\n**The Full Solution:**\nStep 1: Factor the numerator. Since $9x^{2}=(3x)^{2}$ and $64=8^{2}$, the difference of squares pattern $a^{2}-b^{2}=(a-b)(a+b)$ gives $9x^{2}-64=(3x-8)(3x+8)$.\nStep 2: Factor the denominator. Look for two binomials $(3x+m)(x+n)$ with $mn=32$ and $m+3n=20$. Taking $m=8$ and $n=4$ works: $(3x+8)(x+4)=3x^{2}+12x+8x+32=3x^{2}+20x+32$.\nStep 3: Cancel the common factor $(3x+8)$, which is nonzero because $x>4$. The result is $\\dfrac{3x-8}{x+4}$. Check at $x=5$: the original is $\\dfrac{225-64}{75+100+32}=\\dfrac{161}{207}$, and the simplified form is $\\dfrac{7}{9}$; since $\\dfrac{161}{207}=\\dfrac{7\\cdot 23}{9\\cdot 23}=\\dfrac{7}{9}$, they agree ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3x-8}{x-4}$): factors the denominator as $(3x+8)(x-4)$. Expanding that gives $3x^{2}-4x-32$, not the denominator in the problem.\n* Choice B ($\\frac{3x+8}{x+4}$): cancels the wrong half of the difference of squares. The factor shared with the denominator is $(3x+8)$, so $(3x+8)$ is what disappears, not what survives.\n* Choice D ($\\frac{9x-8}{x+4}$): writes $9x^{2}-64$ as $(9x-8)(9x+8)$. That product is $81x^{2}-64$; the square root of $9x^{2}$ is $3x$.\n\n**Test Day Takeaway:** Factor both parts completely before cancelling anything. When the numerator is a difference of squares, the factor that matches the denominator is the one that leaves — the other one is your answer's numerator."
+}

@@ -5,30 +5,30 @@
  "band": 3,
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-textual",
- "question": "Which finding, if true, would most directly support the researchers' hypothesis?",
+ "type": "multiple-choice",
+ "passage": "The hazel dormouse, a small European rodent, rarely crosses open ground, so populations confined to isolated patches of woodland risk becoming inbred. A team of conservation biologists hypothesized that hedgerows — continuous lines of shrubs and small trees running between one woodland and another — function as corridors that let dormice move between patches and interbreed.",
+ "question": "Which finding, if true, would most directly support the biologists' hypothesis?",
  "choices": [
   {
    "id": "A",
-   "text": "In neighborhoods where mature street trees were planted, residents reported lower anxiety than residents of comparable nearby blocks that received only new benches and lighting."
+   "text": "Genetic analysis shows that dormouse populations in woodlands linked by hedgerows are more closely related to one another than are populations in similar woodlands that lack such connections."
   },
   {
    "id": "B",
-   "text": "Residents of neighborhoods with mature street trees reported spending considerably more time and money on home gardening than residents of otherwise similar blocks that had no such trees."
+   "text": "Dormice living in hedgerows build nests that are similar in size and structure to the nests that dormice build in woodlands, according to surveys conducted across several regions, regardless of the season in which the nests are built."
   },
   {
    "id": "C",
-   "text": "Cities with large central parks tended to have higher average incomes than cities without them."
+   "text": "Woodland patches that are connected by hedgerows tend to be somewhat larger on average than woodland patches that stand alone."
   },
   {
    "id": "D",
-   "text": "People who exercised regularly reported lower anxiety regardless of how many trees grew on their block."
+   "text": "Dormouse populations in isolated woodland patches have remained roughly stable in size over the past decade."
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A. The hypothesis is specifically that exposure to everyday neighborhood greenery, not green space in general, reduces residents' anxiety. A finding supports it most directly if it isolates the greenery itself, comparing blocks that gained mature trees with otherwise similar blocks that received non-green improvements, and shows lower anxiety where the trees were added. A does exactly that. B measures gardening spending rather than anxiety. C compares whole cities by income, which speaks to wealth, not to the effect of nearby greenery on anxiety. D ties lower anxiety to exercise and explicitly finds no role for trees, which would undercut the hypothesis rather than support it.",
+ "explanation": "**Choice A is correct.** The hypothesis is about movement leading to interbreeding, and interbreeding leaves a genetic signature. Finding that hedgerow-linked populations are more closely related than unlinked ones is direct evidence that dormice are actually crossing between patches and mixing.\n\n**The Full Solution:**\n- The claim has two parts: dormice use hedgerows as corridors, and the travel results in interbreeding.\n- A tests exactly the predicted outcome, with the right comparison group — similar woodlands without hedgerows — so the genetic difference can be attributed to the corridors.\n\n**Why the other choices are wrong:**\n- B: Nest similarity shows dormice can live in hedgerows, not that they travel through them to breed in other woodlands.\n- C: Patch size says nothing about movement between patches; it is a property of the woodlands, not of the animals' behavior.\n- D: Stable populations in isolated patches, if anything, cut against the premise that isolation is harmful — and stability reveals nothing about corridor use.",
  "_meta": {
-  "anchor": "Neighborhood greenery and anxiety (unnamed public-health researchers); finding-selection evidence item"
- },
- "passage": "A team of public-health researchers proposed that regular exposure to everyday neighborhood greenery — street trees and small pocket parks rather than large destination parks — measurably reduces residents' anxiety. To test the claim, they planned to compare residents of city blocks that differ in their amount of nearby greenery while holding constant income, density, and access to other services, since each of those factors could otherwise explain away any difference in how anxious residents reported feeling.",
- "type": "multiple-choice"
+  "anchor": "Hedgerow corridors and gene flow between hazel dormouse populations (unnamed conservation biologists)"
+ }
 }

@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "An engineer needs the graph of $y = x^{2} + bx + 36$ to meet the horizontal axis at two separate points, and the constant $b$ must be a positive integer. What is the smallest positive integer value of $b$ that meets both requirements?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$11$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$13$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "omits the factor of 4 in the discriminant, solving b^2 > 36 and taking the least integer above 6",
+  "B": "reverses the inequality to b^2 < 144 and reports the greatest b for which the graph misses the axis",
+  "C": "uses b^2 - 4ac >= 0, which allows b = 12 and the single repeated point of contact"
+ },
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** Two separate crossings require $b^{2} - 4(1)(36) > 0$, so $b^{2} > 144$ and $b > 12$; the least positive integer is $13$.\n\n**The Full Solution:**\nStep 1: The graph meets the horizontal axis where $x^{2} + bx + 36 = 0$, so two separate points of contact means this equation has two distinct real solutions.\nStep 2: That happens exactly when the discriminant is positive: $b^{2} - 4(1)(36) > 0$, so $b^{2} > 144$.\nStep 3: With $b$ positive, $b > 12$, and the least positive integer greater than $12$ is $13$. Check: $b = 13$ gives $169 - 144 = 25 > 0$, two distinct solutions, while $b = 12$ gives $144 - 144 = 0$, a single point of contact ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): drops the factor of $4$, solving $b^{2} > 36$ and taking the least integer above $6$. At $b = 7$ the discriminant is $49 - 144 = -95$, so the graph misses the axis entirely.\n* Choice B ($11$): reverses the inequality to $b^{2} < 144$, which describes the values of $b$ for which the graph never meets the axis.\n* Choice C ($12$): allows the discriminant to equal $0$. That gives one repeated solution and a single point of contact, not two separate points.\n\n**Test Day Takeaway:** Translate the geometry into a discriminant inequality first, then round toward the side the inequality allows; a strict inequality never permits the boundary value itself."
+}

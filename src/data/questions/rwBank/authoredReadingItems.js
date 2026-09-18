@@ -16,32 +16,45 @@ export const authoredReadingItems = [
     "band": 3,
     "domain": "information-and-ideas",
     "skill": "command-of-evidence-textual",
-    "question": "Which quotation from \"The Unhurried Stream\" most effectively illustrates the claim?",
+    "question": "Which quotation from Far from the Madding Crowd most effectively illustrates the claim?",
     "choices": [
       {
         "id": "A",
-        "text": "\"The stream is wisest when it will not race; / it teaches that to linger is to learn.\""
+        "text": "\"When Farmer Oak smiled, the corners of his mouth spread till they were within an unimportant distance of his ears\""
       },
       {
         "id": "B",
-        "text": "\"It carries no cargo, charts no course, / and asks the meadow nothing in return.\""
+        "text": "\"He wore a low-crowned felt hat, spread out at the base by tight jamming upon the head for security in high winds\""
       },
       {
         "id": "C",
-        "text": "\"Far off, the river it will someday join / roars white against the rocks and hurries on.\""
+        "text": "\"His Christian name was Gabriel, and on working days he was a young man of sound judgment, easy motions, proper dress, and general good character.\""
       },
       {
         "id": "D",
-        "text": "\"All afternoon the willows lean to watch / their shadows lengthen on the cooling bank.\""
+        "text": "\"In his face one might notice that many of the hues and curves of youth had tarried on to manhood\""
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "**Choice A is correct.** The claim is that the poem treats the stream's slowness not as a flaw but as a kind of quiet wisdom, and these lines say exactly that: the stream is \"wisest when it will not race\" and \"teaches that to linger is to learn.\"\n\n**The Full Solution:**\n- First underline the exact claim you have to match: here it is that slowness is a form of wisdom, not a weakness. The right quotation has to hit BOTH halves of that idea, not just one.\n- How to spot it: read each option and ask, \"Does this line connect being slow to being wise?\" Only A does -- \"wisest when it will not race\" ties slowness to wisdom, and \"to linger is to learn\" ties patience to insight.\n- If an option only mentions the stream, or only mentions speed, but never links the two to wisdom, cross it out.\n\n**Why the other choices are wrong:**\n- B: Only says the stream is purposeless (it \"carries no cargo, charts no course\"); it never links that slowness to wisdom.\n- C: Talks about motion and speed, but it describes the distant river that \"hurries on\" -- the opposite of the unhurried stream -- so it shows haste, not patient slowness.\n- D: Just paints the surrounding scenery (willows watching their shadows lengthen) and says nothing about slowness or wisdom.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** The quotation names an article of clothing and, in the same sentence, the practical need behind its shape: the hat is jammed down and spread out at the base so that it will stay on in high winds.\n\n**The Full Solution:**\n- Underline both halves of the claim before reading the choices: the quotation must (1) describe something Oak wears or carries and (2) state the practical need that explains it.\n- Choice B does both. The felt hat is described physically, \"spread out at the base by tight jamming upon the head,\" and the reason follows immediately: \"for security in high winds.\"\n- Eliminate any quotation that stops at description. A vivid detail with no stated purpose satisfies only the first half of the claim, and half a claim is never enough on this question type.\n\n**Why the other choices are wrong:**\n- A: This describes Oak's smile in memorable detail, but a smile is not an article of his outfit and no practical need is named.\n- C: This summarizes Oak's weekday character, including \"proper dress\" in a list of general qualities; it explains nothing about why any particular thing he owns is made the way it is.\n- D: This concerns Oak's face and the traces of youth still in it, which is physical description without any practical purpose attached.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "coe-text-illustrate-quote"
+      "authoredFor": "coe-text-illustrate-quote",
+      "source": {
+        "title": "Far from the Madding Crowd",
+        "author": "Thomas Hardy",
+        "year": 1874,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/107"
+      },
+      "people": [
+        {
+          "name": "Thomas Hardy",
+          "sourceUrl": "https://www.gutenberg.org/ebooks/107"
+        }
+      ]
     },
-    "passage": "In the contemplative nature poem \"The Unhurried Stream\" by Mirela Vance, the speaker spends a long summer afternoon beside a slow-moving brook. A reader might argue that the poem advances a pointed claim about patience: rather than admiring the stream for what it accomplishes or where it is going, the speaker insists that the water's value lies precisely in its refusal to hurry, treating its slowness not as a flaw but as a kind of quiet wisdom."
+    "passage": "In Thomas Hardy's 1874 novel Far from the Madding Crowd, the narrator devotes the opening chapter to Gabriel Oak, a young farmer, before any event of the story has taken place. The chapter moves item by item through what Oak owns and wears: his hat, his boots, the outsized watch that is the size of a small clock. A reader might argue that the narrator rarely presents a piece of Oak's outfit without also naming the practical need that shaped it."
   },
   {
     "id": 9002,
@@ -50,32 +63,45 @@ export const authoredReadingItems = [
     "band": 3,
     "domain": "information-and-ideas",
     "skill": "command-of-evidence-textual",
-    "question": "Which quotation from \"The Lent Coat\" most effectively illustrates the claim?",
+    "question": "Which quotation from Cranford most effectively illustrates the claim?",
     "choices": [
       {
         "id": "A",
-        "text": "\"I keep the gray coat you once lent / Folded still within the cedar chest.\""
+        "text": "\"Then there were rules and regulations for visiting and calls; and they were announced to any young people who might be staying in the town\""
       },
       {
         "id": "B",
-        "text": "\"Each year I tell the morning over, / And each year its colors deepen— / brighter now than the day I lived it.\""
+        "text": "\"The Cranford ladies have only an occasional little quarrel, spirited out in a few peppery words and angry jerks of the head\""
       },
       {
         "id": "C",
-        "text": "\"The clock upon the landing stopped / The hour you turned to go.\""
+        "text": "\"As everybody had this rule in their minds, whether they received or paid a call, of course no absorbing subject was ever spoken about.\""
       },
       {
         "id": "D",
-        "text": "\"I cannot say what dress you wore, / Nor whether the rain had ceased.\""
+        "text": "\"I can testify to a magnificent family red silk umbrella, under which a gentle little spinster, left alone of many brothers and sisters, used to patter to church on rainy days.\""
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "**Choice B is correct.** The claim is that memory does not simply keep the past but actively reshapes it, so the remembered moment grows more vivid than the original. These lines show exactly that: retold \"each year,\" the morning's \"colors deepen\" until it is \"brighter now than the day I lived it.\"\n\n**The Full Solution:**\n- First nail down the claim: memory does not just SAVE the moment, it CHANGES it, making it brighter than the real event. You need both the keeping and the growing.\n- How to spot it: ask of each line, \"Is the memory getting MORE vivid here, or just staying the same / fading?\" Only B shows it growing -- retelling it \"each year\" deepens the colors until the memory outshines the lived day.\n- Watch the trap of lines that lovingly KEEP a memory but never show it changing -- those are about holding on, not reshaping.\n\n**Why the other choices are wrong:**\n- A: Shows keeping, not changing -- the gray coat \"folded still within the cedar chest,\" left untouched -- which is not the active reshaping the claim needs.\n- C: The stopped clock movingly marks the moment of loss, but it shows memory as frozen and unchanged, the opposite of active reshaping.\n- D: Shows memory fading (the speaker \"cannot say what dress you wore\"), the reverse of memory growing more vivid.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** The sentence names the rule everyone keeps in mind during a call and then reports its consequence for talk itself: because the clock is always being watched, \"no absorbing subject was ever spoken about.\"\n\n**The Full Solution:**\n- The claim has two parts, so mark them: the quotation must refer to a Cranford rule and must state what follows from keeping it.\n- Choice C supplies both in one sentence. \"As everybody had this rule in their minds\" is the custom; \"of course no absorbing subject was ever spoken about\" is the effect, delivered as though it were the most ordinary thing in the world.\n- Eliminate quotations that give a custom with no consequence, or a consequence with no custom. Only one choice completes the circuit.\n\n**Why the other choices are wrong:**\n- A: This announces that rules for visiting exist, which is the first half of the claim only; the sentence never says what obeying them does to the visit.\n- B: This describes how Cranford quarrels are conducted, and no rule of visiting is in view.\n- D: This is a remembered detail about an umbrella and its owner, which illustrates the town's old-fashioned character rather than the workings of any rule.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "coe-text-illustrate-quote"
+      "authoredFor": "coe-text-illustrate-quote",
+      "source": {
+        "title": "Cranford",
+        "author": "Elizabeth Gaskell",
+        "year": 1853,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/394"
+      },
+      "people": [
+        {
+          "name": "Elizabeth Gaskell",
+          "sourceUrl": "https://www.gutenberg.org/ebooks/394"
+        }
+      ]
     },
-    "passage": "In the short lyric \"The Lent Coat\" (1911), the fictional poet Marguerite Vell reflects on a memory of a departed sister. A reader might argue that the poem suggests memory does not simply preserve the past but actively reshapes it, so that what the speaker recalls grows more vivid and more precious than the original moment ever was."
+    "passage": "In Elizabeth Gaskell's 1853 novel Cranford, a visitor narrates the life of a small English town whose households are run almost entirely by unmarried women of modest means. Much of the first chapter is given over to the town's settled customs: what may be worn, when calls may be paid, how long a caller may stay. A reader might argue that the narrator states one of these rules and, in the same even tone, the peculiar effect that obeying it has on conversation."
   },
   {
     "id": 9003,
@@ -84,32 +110,45 @@ export const authoredReadingItems = [
     "band": 3,
     "domain": "information-and-ideas",
     "skill": "command-of-evidence-textual",
-    "question": "Which quotation from \"What the Frost Kept\" most effectively illustrates the claim?",
+    "question": "Which quotation from Iola Leroy most effectively illustrates the claim?",
     "choices": [
       {
         "id": "A",
-        "text": "\"I knelt where once the gravel paths were swept, / and found the gate hung crooked on its pin.\""
+        "text": "\"I have a theory that every woman ought to know how to earn her own living.\""
       },
       {
         "id": "B",
-        "text": "\"How long the gardeners must have labored here, / to coax such order from a stubborn soil.\""
+        "text": "\"I am going to join the great rank of bread-winners. Mr. Waterman has advertised for a number of saleswomen\""
       },
       {
         "id": "C",
-        "text": "\"No hand corrects the bramble's restless sprawl; / the roses grow as briars, and the rows / the planters squared have buckled into wild— / the garden keeps no shape but what it chose.\""
+        "text": "\"Well, I think I could fill the place. At least I should like to try.\""
       },
       {
         "id": "D",
-        "text": "\"A single rose still reddens by the wall, / as though it half-remembered being loved.\""
+        "text": "\"Oh, I certainly do. But still I would rather earn my own living.\""
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "**Choice C is correct.** The claim is that nature has not just let the gardeners' careful design fade but has taken the plot over completely, growing on its own terms. These lines show exactly that: \"No hand corrects\" the growth, the roses \"grow as briars,\" the squared rows have \"buckled into wild,\" and the garden \"keeps no shape but what it chose.\"\n\n**The Full Solution:**\n- First pin the claim down: it is not just that the garden got messy, but that nature actively TOOK OVER and imposed its own shape. You need takeover, not simple decay.\n- How to spot it: ask of each line, \"Is nature actively running things here, or is this just a sad, faded scene?\" Only C shows the takeover -- no hand corrects it, planted roses turn back into briars, neat rows buckle into wild, and the garden keeps \"no shape but what it chose.\"\n- Watch the trap of pretty decay or sadness (a crooked gate, one lonely rose) -- those show loss, not nature seizing control.\n\n**Why the other choices are wrong:**\n- A: Just sets a scene of decay (the crooked gate, the swept paths now gone) without showing nature taking charge.\n- B: Praises the original gardeners' work in coaxing \"order from a stubborn soil\" -- a different idea entirely, about human effort, not nature's takeover.\n- D: The surviving rose suggests loss and lingering human affection (\"as though it half-remembered being loved\"), but it dwells on that feeling rather than on nature actively taking over the design.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "D",
+    "explanation": "**Choice D is correct.** Iola first grants her uncle's point, that she is welcome and provided for, and then sets her own preference against it: \"But still I would rather earn my own living.\"\n\n**The Full Solution:**\n- The claim turns on a contrast, so look for a quotation that acknowledges she has no need to work and states a preference anyway.\n- Choice D does exactly that in two short sentences. \"Oh, I certainly do\" concedes the comfort of her uncle's house; \"I would rather\" is the language of choice, not of necessity.\n- Eliminate quotations that announce the plan or defend her fitness for the job. Both are true of Iola, but neither weighs working against the option of not working.\n\n**Why the other choices are wrong:**\n- A: This states a general principle about what every woman ought to know, so it speaks to women at large rather than to Iola's own choice in her uncle's house.\n- B: This announces the plan and the specific advertisement she means to answer, which is a practical step rather than a preference measured against necessity.\n- C: This claims she could fill the position and would like to try, which is about her fitness for the work, not about choosing work she does not need.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "coe-text-illustrate-quote"
+      "authoredFor": "coe-text-illustrate-quote",
+      "source": {
+        "title": "Iola Leroy",
+        "author": "Frances Ellen Watkins Harper",
+        "year": 1892,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/12352"
+      },
+      "people": [
+        {
+          "name": "Frances Ellen Watkins Harper",
+          "sourceUrl": "https://www.gutenberg.org/ebooks/12352"
+        }
+      ]
     },
-    "passage": "In her poem \"What the Frost Kept,\" the fictional poet Adela Verlane revisits an abandoned estate garden decades after it was last tended. A reader might argue that the poem makes a pointed claim about nature's indifference to human effort: the careful arrangements the gardeners once imposed have not merely faded but been overwritten, as wild growth reclaims the plot on terms entirely its own."
+    "passage": "In Frances Ellen Watkins Harper's 1892 novel Iola Leroy, Iola has come North after the Civil War and is living with her uncle Robert. He tells her plainly that she is welcome in his house and has no need to go out to work; she answers that she intends to apply for a place as a saleswoman anyway. A reader might argue that Iola treats earning wages as something she would rather do, not as something her situation forces on her."
   },
   {
     "id": 9004,
@@ -118,32 +157,45 @@ export const authoredReadingItems = [
     "band": 3,
     "domain": "information-and-ideas",
     "skill": "command-of-evidence-textual",
-    "question": "Which quotation from \"The Lighthouse Keeper's Confession\" most effectively illustrates the claim?",
+    "question": "Which quotation from Life on the Mississippi most effectively illustrates the claim?",
     "choices": [
       {
         "id": "A",
-        "text": "\"Forty winters I have trimmed this wick, and trimmed it well; / the salt has gnawed the rail, the glass has fogged, but never me.\""
+        "text": "\"No, the romance and the beauty were all gone from the river. All the value any feature of it had for me now was the amount of usefulness it could furnish toward compassing the safe piloting of a steamboat.\""
       },
       {
         "id": "B",
-        "text": "\"You ask what kept me here so long alone; / it was the sound the sea makes when it has no quarrel with you.\""
+        "text": "\"Throughout the long twelve hundred miles there was never a page that was void of interest, never one that you could leave unread without loss, never one that you would want to skip, thinking you could find higher enjoyment in some other thing.\""
       },
       {
         "id": "C",
-        "text": "\"Tomorrow a younger man will climb these stairs / and learn, as I did, that the lamp is heavier than it looks.\""
+        "text": "\"I stood like one bewitched. I drank it in, in a speechless rapture. The world was new to me, and I had never seen anything like this at home.\""
       },
       {
         "id": "D",
-        "text": "\"Each captain owes his harbor to my hand— / yes, every one, save the November ship I name in sleep, / whose lights went under while mine, that hour, were dark.\""
+        "text": "\"It is the faintest and simplest expression the water ever makes, and the most hideous to a pilot's eye.\""
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "**Choice D is correct.** The claim is that the keeper's pride in his duty is tied up with a private guilt -- he cannot finish his boast without remembering the one night his light failed. These lines do exactly that: the proud claim that \"every captain owes his harbor to my hand\" is broken off by the exception \"save the November ship I name in sleep, / whose lights went under while mine, that hour, were dark.\"\n\n**The Full Solution:**\n- First read the claim carefully: it asks for TWO things bound together -- pride in the job AND guilt over a failure. One without the other is not enough.\n- How to spot it: look for the single line that does both at once. Ask, \"Does this option brag AND then admit a failure?\" Only D does -- the boast \"every captain owes his harbor to my hand\" runs straight into the ship that sank \"while mine, that hour, were dark.\"\n- A handy signal is a word like \"save\" or \"except\" that interrupts a proud statement to admit one exception -- that interruption is the guilt the claim needs.\n\n**Why the other choices are wrong:**\n- A: Shows pride with no guilt -- the salt \"has gnawed the rail,\" but \"never me\"; there is no failure here.\n- B: Describes being alone at the post (the sea's sound \"when it has no quarrel with you\"), not the mix of boast and failure.\n- C: Shows the job is hard and tiring (\"the lamp is heavier than it looks\"), but that is general weariness, not the specific guilt over a failure that undercuts a boast.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "A",
+    "explanation": "**Choice A is correct.** The quotation names the loss and the gain together: the river's \"romance and the beauty\" are gone, and what remains is the water's \"usefulness\" for piloting safely.\n\n**The Full Solution:**\n- The claim is a trade, so the quotation has to show both sides of it: something the narrator no longer sees, and the practical reading that replaced it.\n- Choice A pairs them in consecutive sentences. The first announces what is gone; the second says exactly what took its place, measuring every feature of the river by \"the amount of usefulness\" it offers a pilot.\n- Eliminate quotations that show only the beauty or only the expertise. A quotation that never puts the two in the same frame cannot illustrate a trade.\n\n**Why the other choices are wrong:**\n- B: This praises the river as endlessly interesting reading, so it records the gain in skill with no hint that anything was surrendered for it.\n- C: This captures the rapture of an early sunset, before the training took hold, and so gives the beauty without the loss.\n- D: This reads one small ripple as a danger sign, which shows the trained eye at work but says nothing about what that eye stopped seeing.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "coe-text-illustrate-quote"
+      "authoredFor": "coe-text-illustrate-quote",
+      "source": {
+        "title": "Life on the Mississippi",
+        "author": "Mark Twain",
+        "year": 1883,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/245"
+      },
+      "people": [
+        {
+          "name": "Mark Twain",
+          "sourceUrl": "https://www.gutenberg.org/ebooks/245"
+        }
+      ]
     },
-    "passage": "In Mara Olusegun's dramatic monologue \"The Lighthouse Keeper's Confession\" (2014), an aging keeper, speaking to a visitor on his final night before retirement, recalls the wrecks he watched from his tower. A reader might argue that the poem characterizes the keeper's pride in his lifelong duty as inseparable from a private guilt: even as he insists his lamp saved countless ships, he cannot finish that boast without recalling the one night the light failed and a vessel went down."
+    "passage": "In Mark Twain's 1883 memoir Life on the Mississippi, the narrator recalls his training as a steamboat pilot, when he learned to read the surface of the river the way a reader takes in a page. A dimple on the water, a floating log, a silver streak in the shade of the forest: each mark told him something about the channel below. A reader might argue that the narrator counts what that skill cost him as carefully as what it gained him."
   },
   {
     "id": 9005,
@@ -152,32 +204,45 @@ export const authoredReadingItems = [
     "band": 3,
     "domain": "information-and-ideas",
     "skill": "command-of-evidence-textual",
-    "question": "Which quotation from \"The Long Ledger of Birds\" most effectively illustrates the claim?",
+    "question": "Which quotation from \"M'sieu Fortier's Violin\" most effectively illustrates the claim?",
     "choices": [
       {
         "id": "A",
-        "text": "\"No nest is left behind them on the shore; / the warmth they knew is folded in their wings, / and where they land, that warmth unfolds again.\""
+        "text": "\"He was home but little, for on nearly every day there were rehearsals; then on Tuesday, Thursday, and Saturday nights, and twice Sundays there were performances, so Ma'am Jeanne and the white cat kept house almost always alone.\""
       },
       {
         "id": "B",
-        "text": "\"They lift in one slow wheel above the reeds, / and the lake below them whitens into glass.\""
+        "text": "\"There is nothing sweeter than a regular job and good music to play, music into which one can put some soul, some expression, and which one must study to understand.\""
       },
       {
         "id": "C",
-        "text": "\"The empty bank still holds their printed feet, / faint marks the rising water soon will take.\""
+        "text": "\"M'sieu Fortier stood at the corner, blinking at the beautiful ladies in their carriages. He exchanged a hearty salutation with the saloon-keeper at the corner\""
       },
       {
         "id": "D",
-        "text": "\"Across the dark they call from rank to rank, / each cry a thread that keeps the line from breaking.\""
+        "text": "\"So M'sieu Fortier, Ma'am Jeanne, and the white cat lived a peaceful, uneventful existence out on Bayou Road.\""
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "**Choice A is correct.** The claim is that migration is not a loss of home but a way of carrying home along the way -- belonging is something the birds keep with them rather than leave behind. These lines show exactly that: \"No nest is left behind them on the shore; / the warmth they knew is folded in their wings, / and where they land, that warmth unfolds again.\"\n\n**The Full Solution:**\n- First fix the claim in mind: home is something the birds CARRY WITH THEM and set up again, not something they lose by leaving.\n- How to spot it: ask of each line, \"Does this show home traveling along with the birds and being remade where they land?\" Only A does -- \"No nest is left behind\" rejects loss, and the warmth \"folded in their wings\" that \"unfolds again\" shows home rebuilt at the destination.\n- Watch the trap of lines about what gets LEFT BEHIND, or about the flock sticking together -- those miss the point of home traveling with them.\n\n**Why the other choices are wrong:**\n- B: Just sets the scene of leaving -- the flock lifting \"in one slow wheel above the reeds\" -- with no idea of carrying home.\n- C: Dwells on the traces left behind on the old shore (\"printed feet\" the rising water will erase), the opposite of carrying home along.\n- D: The calls that \"keep the line from breaking\" show the flock staying connected to each other, not carrying their home with them.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** The sentence calls the work sweet and then says what makes it so: music that takes soul and expression to play and \"which one must study to understand.\"\n\n**The Full Solution:**\n- Fix the claim's two parts first: the quotation must value the work and must root that value in a demand the work makes.\n- Choice B is built that way. \"There is nothing sweeter\" carries the value; \"put some soul, some expression\" and \"must study to understand\" name the demands that earn it.\n- Eliminate quotations that report where Fortier is or how his days are filled. Schedules and settings describe the life around the work, not the worth the narrator finds in it.\n\n**Why the other choices are wrong:**\n- A: This is a schedule, listing rehearsals and performance nights; it shows how much time the work takes without saying what the work is worth.\n- C: This puts Fortier on a street corner greeting a neighbor, a scene of his ordinary evening rather than a judgment about his playing.\n- D: This sums up the household as peaceful and uneventful, which characterizes his domestic life and leaves the value of the music unstated.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "coe-text-illustrate-quote"
+      "authoredFor": "coe-text-illustrate-quote",
+      "source": {
+        "title": "M'sieu Fortier's Violin",
+        "author": "Alice Dunbar-Nelson",
+        "year": 1899,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/688"
+      },
+      "people": [
+        {
+          "name": "Alice Dunbar-Nelson",
+          "sourceUrl": "https://www.gutenberg.org/ebooks/688"
+        }
+      ]
     },
-    "passage": "In her poem \"The Long Ledger of Birds\" (2014), the fictional poet Maren Okafor follows a flock of geese leaving a frozen northern lake for warmer ground. A reader might argue that the poem treats migration not as a loss of home but as a way of carrying home along the journey: for the birds, belonging is something they keep with them rather than something they leave behind."
+    "passage": "In Alice Dunbar-Nelson's 1899 story \"M'sieu Fortier's Violin,\" an elderly musician has played first violin in the orchestra of the New Orleans opera house for longer than anyone can remember. Between seasons he goes back to his trade of cigar-making, and at home there is little to fill the hours but practice. A reader might argue that the narrator locates the worth of Fortier's work in what it asks of him rather than in what it brings him."
   },
   {
     "id": 9006,
@@ -186,32 +251,45 @@ export const authoredReadingItems = [
     "band": 3,
     "domain": "information-and-ideas",
     "skill": "command-of-evidence-textual",
-    "question": "Which quotation from \"Slow Light Over Aldermere\" most effectively illustrates the claim?",
+    "question": "Which quotation from \"To Autumn\" most effectively illustrates the claim?",
     "choices": [
       {
         "id": "A",
-        "text": "\"The rooftops blush, then pale to slate, / as one by one the lamps go out.\""
+        "text": "\"Season of mists and mellow fruitfulness, / Close bosom-friend of the maturing sun;\""
       },
       {
         "id": "B",
-        "text": "\"Before a single shutter lifts, / the baker's window glows; / by the hour the city stretches and yawns, / the bread already waits in rows.\""
+        "text": "\"And sometimes like a gleaner thou dost keep / Steady thy laden head across a brook;\""
       },
       {
         "id": "C",
-        "text": "\"Above the spires the gulls wheel wide, / loud heralds of the coming light.\""
+        "text": "\"Or on a half-reap'd furrow sound asleep, / Drows'd with the fume of poppies, while thy hook / Spares the next swath and all its twined flowers:\""
       },
       {
         "id": "D",
-        "text": "\"And how the river holds the sky, / a ribbon of unhurried gold.\""
+        "text": "\"To swell the gourd, and plump the hazel shells / With a sweet kernel; to set budding more, / And still more, later flowers for the bees,\""
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "**Choice B is correct.** The claim is that the unseen work of early risers quietly gets the city ready before its residents wake, so the comfort the waking city enjoys is already paid for by others. These lines show exactly that: the baker works \"before a single shutter lifts,\" so that \"by the hour the city stretches and yawns, / the bread already waits in rows.\"\n\n**The Full Solution:**\n- First read the claim closely: it is about WORK -- comfort that someone else prepared early, before the city woke up.\n- How to spot it: ask of each line, \"Does this show a person doing work for others, ahead of time?\" Only B does -- the baker works \"before a single shutter lifts,\" so the bread \"already waits\" by the time the city wakes.\n- Watch the trap of pretty dawn scenery (light, gulls, a golden river). The claim needs human labor, so cross out any option that only paints the sunrise.\n\n**Why the other choices are wrong:**\n- A: Just describes dawn light (rooftops that \"blush, then pale to slate\"); it says nothing about work.\n- C: Describes gulls announcing the daybreak -- it suggests the early hour but shows no human labor.\n- D: Paints the river holding the sky (\"a ribbon of unhurried gold\"), pure scenery with no work done for others.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** The lines address autumn as \"thy\" and place that figure asleep on a furrow that is only half reaped, with the reaping hook idle beside the standing flowers.\n\n**The Full Solution:**\n- Track both halves of the claim: the quotation must speak to autumn as a working figure and must show the work interrupted.\n- Choice C does both at once. \"Thy hook\" makes autumn the reaper; \"half-reap'd furrow sound asleep\" and \"Spares the next swath\" show the reaping stopped partway.\n- Eliminate lines in which autumn is addressed but never shown pausing, and lines that describe the season's labor without addressing anyone.\n\n**Why the other choices are wrong:**\n- A: These opening lines address autumn directly but present it as a season of mists and ripeness, with no task under way and so nothing to interrupt.\n- B: Here autumn is addressed and is at work, keeping its laden head steady across a brook, but the figure is moving steadily rather than resting.\n- D: These lines list what the season accomplishes, swelling gourds and setting late flowers, without speaking to autumn as a figure or picturing any pause.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "coe-text-illustrate-quote"
+      "authoredFor": "coe-text-illustrate-quote",
+      "source": {
+        "title": "To Autumn",
+        "author": "John Keats",
+        "year": 1820,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/23684"
+      },
+      "people": [
+        {
+          "name": "John Keats",
+          "sourceUrl": "https://www.gutenberg.org/ebooks/23684"
+        }
+      ]
     },
-    "passage": "In the poem \"Slow Light Over Aldermere\" by Imogen Carrow, the speaker watches a city wake at dawn. A reader might argue that the poem makes a pointed claim about labor: long before the city's residents stir, it is the unseen work of early risers that quietly readies the streets for the day, so that the comfort the waking city enjoys is something already paid for by others."
+    "passage": "John Keats's 1820 poem \"To Autumn\" speaks to the season directly, as though autumn were a person who might be found somewhere about the farm. The first stanza describes the ripening the season brings on; the second goes looking for autumn among the granaries, furrows, and cider presses of the harvest. A reader might argue that the poem addresses autumn as a worker and then catches that worker resting in the middle of the task."
   },
   {
     "id": 9007,
@@ -220,32 +298,45 @@ export const authoredReadingItems = [
     "band": 3,
     "domain": "information-and-ideas",
     "skill": "command-of-evidence-textual",
-    "question": "Which quotation from \"The Long Reckoning\" most effectively illustrates the claim?",
+    "question": "Which quotation from \"My Last Duchess\" most effectively illustrates the claim?",
     "choices": [
       {
         "id": "A",
-        "text": "\"The harbor's gold had called him from the start, / a glint that fixed itself within his heart / and would not loose its hold for any cost, / until the counting of it left him lost.\""
+        "text": "\"That's my last Duchess painted on the wall, / Looking as if she were alive.\""
       },
       {
         "id": "B",
-        "text": "\"For thirty years he carved a westward road / across the swells, and bore his heavy load / through storms that split the mainmast like a reed / and seasons that no almanac could read.\""
+        "text": "\"She had / A heart--how shall I say?--too soon made glad, / Too easily impressed;\""
       },
       {
         "id": "C",
-        "text": "\"He weighed the chests of coin he'd dreamed of long, / then let them lie; the open water's song, / the salt, the watch, the wind—these were the prize / he'd sailed to find without yet knowing why.\""
+        "text": "\"Nay, we'll go / Together down, sir. Notice Neptune, though, / Taming a sea-horse, thought a rarity, / Which Claus of Innsbruck cast in bronze for me!\""
       },
       {
         "id": "D",
-        "text": "\"He stood at last upon his native shore / and found the village smaller than before, / the faces changed, the harbor strangely still, / as though the years had emptied it at will.\""
+        "text": "\"She thanked men,--good! but thanked / Somehow--I know not how--as if she ranked / My gift of a nine-hundred-years-old name / With anybody's gift.\""
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "**Choice C is correct.** The claim is that the captain comes to value the voyage itself over the wealth he set out to win -- the experience of sailing outweighs the treasure that first drew him. These lines show exactly that switch: he sets the coin aside (\"then let them lie\") and names \"the open water's song, / the salt, the watch, the wind\" as \"the prize / he'd sailed to find without yet knowing why.\"\n\n**The Full Solution:**\n- First read the claim closely: it is a COMPARISON. The journey has to end up mattering MORE than the gold that started it -- you need both sides and a winner.\n- How to spot it: ask of each line, \"Does the captain choose the voyage OVER the treasure here?\" Only C does -- facing the coin he once dreamed of, he lets it lie and picks the water, salt, watch, and wind as the real prize.\n- Watch the trap of a line that mentions gold but shows him still craving it -- that is the opposite of the claim.\n\n**Why the other choices are wrong:**\n- A: Mentions gold, but shows the opposite of the claim -- the captain still gripped by the treasure that \"called him from the start\" and \"would not loose its hold,\" until counting it \"left him lost.\"\n- B: Describes how hard and long the voyage was (\"thirty years,\" storms that \"split the mainmast\") with no comparison to wealth at all.\n- D: Shows his changed homecoming -- the village \"smaller than before,\" the harbor \"strangely still\" -- not his valuing the voyage over the fortune.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "D",
+    "explanation": "**Choice D is correct.** The duke reports his wife's thanks and then measures it against himself: she ranked his \"nine-hundred-years-old name\" no higher than \"anybody's gift.\"\n\n**The Full Solution:**\n- The claim names a specific grievance, so look for the quotation in which the duke's complaint is about his own standing rather than about her manner in general.\n- Choice D supplies it. The complaint is not that she was ungrateful; the sting is the comparison, his ancient title set beside the small courtesies of other men and found equal.\n- Eliminate quotations that describe the portrait or another object in the gallery, and eliminate the complaint that never mentions what the duke felt entitled to.\n\n**Why the other choices are wrong:**\n- A: This introduces the painting and praises its lifelike look, which is the gallery talk the duke begins with, before any grievance surfaces.\n- B: The duke does object here to a heart \"too soon made glad,\" but the objection is to her temperament in general and says nothing about his rank.\n- C: This turns the visitor's attention to a bronze Neptune, displaying the duke's pride in his collection rather than any complaint about his wife.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "coe-text-illustrate-quote"
+      "authoredFor": "coe-text-illustrate-quote",
+      "source": {
+        "title": "My Last Duchess",
+        "author": "Robert Browning",
+        "year": 1842,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/16376"
+      },
+      "people": [
+        {
+          "name": "Robert Browning",
+          "sourceUrl": "https://www.gutenberg.org/ebooks/16376"
+        }
+      ]
     },
-    "passage": "Della Hartwicke's narrative poem \"The Long Reckoning\" (a fictional work) follows a sea captain who, after years of chasing a fortune across distant waters, finally turns his ship toward home. A reader might argue that the poem's central claim is that the captain comes to value the voyage itself over the wealth he set out to win: by the journey's end, the experience of sailing has eclipsed the treasure that first drew him to sea."
+    "passage": "Robert Browning's 1842 poem \"My Last Duchess\" is spoken by a duke who is walking a visitor through his private gallery. The visitor has come to arrange the duke's next marriage. Stopping at a curtained portrait of his late wife, the duke undertakes to explain why her expression in the painting is what it is. A reader might argue that the duke's account of the picture turns into a grievance about how little his rank counted with her."
   },
   {
     "id": 9008,
@@ -254,32 +345,45 @@ export const authoredReadingItems = [
     "band": 3,
     "domain": "information-and-ideas",
     "skill": "command-of-evidence-textual",
-    "question": "Which quotation from \"Glebe and Furrow\" most effectively illustrates the claim?",
+    "question": "Which quotation from \"A New England Nun\" most effectively illustrates the claim?",
     "choices": [
       {
         "id": "A",
-        "text": "\"The orchard drowsed in afternoon, / and bees went heavy through the rows.\""
+        "text": "\"Louisa was slow and still in her movements; it took her a long time to prepare her tea; but when ready it was set forth with as much grace as if she had been a veritable guest to her own self.\""
       },
       {
         "id": "B",
-        "text": "\"At dusk the children chase the lengthening shade / and count the swallows wheeling toward the eaves.\""
+        "text": "\"Louisa Ellis could not remember that ever in her life she had mislaid one of these little feminine appurtenances, which had become, from long use and constant association, a very part of her personality.\""
       },
       {
         "id": "C",
-        "text": "\"The hills lay green and patient in their rows, / a quilt of fields stitched bright from edge to edge.\""
+        "text": "\"The little square table stood exactly in the centre of the kitchen, and was covered with a starched linen cloth whose border pattern of flowers glistened.\""
       },
       {
         "id": "D",
-        "text": "\"What stranger to the meadow calls it calm / has never bent a back from dawn to dusk, / nor felt the scythe drink dry the strongest arm.\""
+        "text": "\"Then she went into the garden with a little blue crockery bowl, to pick some currants for her tea.\""
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "**Choice D is correct.** The claim is that the poem complicates the peaceful picture of country life by insisting the land's calm is paid for by nonstop, body-wearing labor. These lines do exactly that: the \"stranger\" who \"calls it calm\" is corrected because he \"has never bent a back from dawn to dusk, / nor felt the scythe drink dry the strongest arm.\"\n\n**The Full Solution:**\n- First read the claim closely: it says the peaceful look is only the surface, and the real story underneath is exhausting work.\n- How to spot it: ask of each line, \"Does this show the hard, tiring WORK behind the calm, or just a pretty restful scene?\" Only D shows the work -- it corrects the stranger who mistakes the scene for calm, pointing to a back bent dawn to dusk and a scythe that drinks the strongest arm dry.\n- Watch the trap of a lovely landscape that hints at order but never shows anyone working hard -- the claim needs the labor named, not just suggested.\n\n**Why the other choices are wrong:**\n- A: Just paints the restful, peaceful scene the claim says the poem complicates -- the orchard that \"drowsed,\" bees moving \"heavy through the rows.\"\n- B: Shows a peaceful evening of leisure (children chasing shade, counting swallows), the very calm the claim cuts against, with no labor shown.\n- C: Its \"patient\" fields and bright quilt of farmland hint at work, but it still only describes a calm landscape rather than the exhausting labor the claim depends on.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "A",
+    "explanation": "**Choice A is correct.** The sentence describes the care Louisa takes over an ordinary supper and then names who that care is for: the table is set with as much grace \"as if she had been a veritable guest to her own self.\"\n\n**The Full Solution:**\n- The claim has two parts, so hold both in view: the quotation must show a routine performed with ceremony, and it must show that the ceremony is directed at Louisa herself.\n- Choice A supplies each part. \"It took her a long time to prepare her tea\" is the ceremony; \"a veritable guest to her own self\" makes Louisa both host and audience, which is the claim's second half exactly.\n- Eliminate quotations that record exactness alone. Order in the house is easy to find in this story, but only one quotation says whom the trouble is taken for.\n\n**Why the other choices are wrong:**\n- B: This establishes that Louisa never misplaces her sewing things, which shows lifelong habit and order but says nothing about performing that order for herself.\n- C: This describes the table and its starched cloth, a piece of setting rather than an account of what Louisa does or why.\n- D: This reports a plain errand into the garden for currants, an ordinary chore that carries none of the ceremony the claim depends on.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "coe-text-illustrate-quote"
+      "authoredFor": "coe-text-illustrate-quote",
+      "source": {
+        "title": "A New England Nun",
+        "author": "Mary E. Wilkins Freeman",
+        "year": 1891,
+        "publicDomain": true,
+        "sourceUrl": "https://en.wikisource.org/wiki/A_New_England_Nun_and_Other_Stories/A_New_England_Nun"
+      },
+      "people": [
+        {
+          "name": "Mary E. Wilkins Freeman",
+          "sourceUrl": "https://en.wikisource.org/wiki/Author:Mary_Eleanor_Wilkins_Freeman"
+        }
+      ]
     },
-    "passage": "In the pastoral poem \"Glebe and Furrow\" (1871), the fictional poet Marianne Holt depicts a farming village across a single harvest day. A reader might argue that the poem complicates the conventional image of country life as restful and idyllic: rather than picturing leisure, it insists that the land's apparent peace is purchased by relentless, body-wearing labor."
+    "passage": "Mary E. Wilkins Freeman's 1891 story \"A New England Nun\" follows Louisa Ellis, who has kept house alone for years and has grown exact about how everything in it is done. The story opens on an ordinary late afternoon: the sewing folded away, currants picked in the garden, supper laid on a small square table. A reader might argue that the narrator presents these routines as ceremonies Louisa performs for her own sake, with no visitor there to see them."
   },
   {
     "id": 9009,
@@ -292,28 +396,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "will have to supply choices about voicing and ornamentation that the figures alone do not determine, so the printed part will reflect interpretive decisions the manuscript leaves open."
+        "text": "has usually been carried there from another pin flower growing nearby."
       },
       {
         "id": "B",
-        "text": "can reconstruct the composer's own intended realization exactly, since the figures specify every note the keyboard player is meant to perform."
+        "text": "has usually been carried there from a thrum flower rather than from another pin flower."
       },
       {
         "id": "C",
-        "text": "should conclude that the manuscript is incomplete because the composer never finished notating the keyboard part before the sonata was performed."
+        "text": "cannot fertilize that flower unless a bee visits the two forms in a fixed order."
       },
       {
         "id": "D",
-        "text": "must have access to a second manuscript in which the same sonata's keyboard part was written out in full by a contemporary performer."
+        "text": "is more plentiful than the pollen that arrives on the stigma of a thrum flower."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "**Choice A is correct.** The passage tells us two things: the figures fix WHICH chords are required but not exactly how to play them, so two skilled players fill them in differently; and this sonata survives only as that bare figured bass. So an editor who prints a complete part has to add the playing choices the figures leave open -- which means the printed part reflects the editor's own decisions, not something the manuscript spelled out.\n\n**The Full Solution:**\n- How to spot it: in a 'complete the text' question, list the facts the passage gives you, then ask, \"What MUST be true if I just add these up?\" Here: the figures don't say how to play the chords, AND only the bare figures survive.\n- Put those facts together: to print a full, playable part, the editor has to supply the missing playing choices -- so the result is the editor's interpretation, not what the manuscript dictated.\n- The right answer never adds new facts; it only states what the given facts force. Choice A does exactly that.\n\n**Why the other choices are wrong:**\n- B: Contradicts a stated fact -- the figures do NOT pin down every note, so the composer's exact intended version cannot be rebuilt from them.\n- C: Wrongly treats the bare figures as an unfinished rough draft, when the passage presents them as the composer's intended (if incomplete) notation.\n- D: Makes up a need for a second, fully written-out manuscript that the passage never mentions and the facts do not require.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** The text establishes that a bee picks up pollen at one height in a pin flower and at the other height in a thrum flower, and that a pin flower's stigma sits at the height where thrum pollen is carried. Pollen reaching a pin stigma is therefore most likely to have come from a thrum flower.\n\n**The Full Solution:**\n- Underline the rule before reading the blank: pollen is picked up low in a pin flower and high in a thrum flower, and a pin flower's stigma stands high, at the mouth of the tube.\n- Match the heights. Only pollen carried high on the bee, which is thrum pollen, meets a pin stigma, so the completion has to name the thrum flower as the usual source.\n- Keep the claim no stronger than the text licenses. The arrangement makes cross-form transfer far more likely; it does not make same-form transfer impossible or set any required order of visits.\n\n**Why the other choices are wrong:**\n- A: This reverses the geometry. Pollen from another pin flower rides low on the bee, which is the height that meets a thrum stigma, not a pin one.\n- C: This is stronger than the rule allows. The text describes where pollen is deposited, not a condition that must be met before fertilization can occur at all.\n- D: The text says nothing about how much pollen reaches either form, only about which form the pollen is likely to come from.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "inf-prediction-expectation"
     },
-    "passage": "In Baroque keyboard music, performers were expected to realize a continuo part: rather than writing out every note, the composer supplied only a bass line marked with figures—numerals indicating the intervals above the bass that should sound—and left the player to flesh out the harmonies. Because the figures fix which chords are required but not how those chords are voiced or ornamented, two skilled performers working from the same figured bass will typically produce audibly different realizations. A musicologist examining a Baroque sonata observes that its surviving manuscript preserves only the figured bass for the keyboard part, with no fully written-out realization of any kind. It therefore follows that an editor who wishes to print a complete, playable keyboard part for this sonata ______"
+    "passage": "Many flowering plants block self-pollination with an arrangement of parts rather than with chemistry. The common primrose, for instance, produces two kinds of flower on separate plants. In a pin flower the stigma stands at the mouth of the floral tube and the anthers sit low inside it; in a thrum flower the two positions are reversed. A bee probing a pin flower is therefore dusted with pollen low on its body, at exactly the height where a thrum flower's stigma waits, and a bee leaving a thrum flower carries pollen at the height of a pin flower's stigma. In a meadow where both forms grow, then, botanists would expect that pollen arriving on a pin flower's stigma ______"
   },
   {
     "id": 9010,
@@ -326,28 +430,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "will reacquire their symbiotic algae within the coming weeks and regain their normal coloration."
+        "text": "holds meteorites that fell within the past few decades and no older ones."
       },
       {
         "id": "B",
-        "text": "are likely to suffer extensive mortality, since recovery depends on a prompt return to cooler water that the projection does not provide."
+        "text": "has been swept clean of meteorites by the winds that remove the snow."
       },
       {
         "id": "C",
-        "text": "demonstrate that warm water is not, in fact, the factor responsible for triggering bleaching in the first place."
+        "text": "holds far more meteorites per square kilometer than the surrounding snowfields."
       },
       {
         "id": "D",
-        "text": "must already have died at the moment they expelled their symbiotic algae rather than later."
+        "text": "holds meteorites of kinds never recovered anywhere else on Earth."
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "**Choice B is correct.** The passage gives a rule and a situation. The rule: bleached coral can survive ONLY if cooler water returns soon. The situation: this reef's water is expected to stay warm for many more weeks with no cooling. Since the one thing that would save the coral is missing, the expected result is widespread death.\n\n**The Full Solution:**\n- How to spot it: when a passage gives an 'if...then survive' rule, ask, \"Is that condition met or not?\" Here recovery needs a quick return to cool water -- and the forecast says that will NOT happen.\n- When the survival condition fails, the logical result is the bad outcome: extensive coral death. That is what the facts point to, so B fits.\n- A bleached coral is stressed but not yet dead, so the answer is about what happens NEXT, not what already happened.\n\n**Why the other choices are wrong:**\n- A: Claims recovery and normal color return -- the very outcome ruled out because no cooling is coming.\n- C: Contradicts the passage, which says long-lasting warmth is what causes bleaching in the first place.\n- D: Misreads the text -- it clearly says a bleached coral is not yet dead, so the corals did not already die when they expelled their algae.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** The text describes a mechanism that gathers meteorites from a huge upstream area and leaves them on one small patch of exposed ice, so that patch should be unusually rich in meteorites compared with ordinary snow-covered ice.\n\n**The Full Solution:**\n- State the mechanism in your own words first: flowing ice collects meteorites over a vast area, a barrier stops the flow, and wind removes the ice at the surface while the rock stays behind.\n- That is a concentrating process, so the expectation is about density, meteorites per unit area, not about their age or their type. Choice C states exactly that.\n- Check the comparison the completion invites. The natural contrast is with nearby ice where snow accumulates instead of being stripped, and that is the comparison Choice C makes.\n\n**Why the other choices are wrong:**\n- A: The text says the opposite. The ice carries meteorites that fell across hundreds of thousands of years, so the field should hold old falls as well as recent ones.\n- B: The wind removes snow and ice, not the meteorites; that is precisely why the meteorites are left sitting on the surface.\n- D: Nothing in the text bears on what kinds of meteorites arrive. The process sorts by location, not by composition.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "inf-prediction-expectation"
     },
-    "passage": "Reef-building corals derive much of their energy from symbiotic algae that live within their tissues and supply sugars produced by photosynthesis. When water stays unusually warm for an extended period, corals expel these algae, a stress response called bleaching that leaves the coral pale and without its principal food source. A bleached coral is not yet dead: if cooler conditions return promptly, it can take up new algae and recover. A marine biologist observes a reef where the corals have already bleached and where regional ocean temperatures are projected to remain elevated, with no cooling, for many more weeks. From this it follows that, absent some unaccounted-for intervention, the reef's corals ______"
+    "passage": "An ice sheet does not sit still. It creeps outward from the interior toward the coast, carrying along whatever has landed on its surface. Where a buried mountain range blocks that flow, the ice is forced upward, and dry winds sweeping the exposed surface strip snow away faster than new snow falls, laying bare old, deep ice as a field of blue. Meteorites that fell anywhere on the ice upstream over hundreds of thousands of years travel with the ice to such a barrier and are stranded at the surface as the ice around them wastes away. A survey team mapping a newly identified blue-ice field just upstream of a mountain barrier should therefore expect that the field ______"
   },
   {
     "id": 9011,
@@ -360,28 +464,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "was carrying more long-distance traffic than ever, which is why so few foreign objects had the chance to settle into the town's layers."
+        "text": "neither island has lost any of the bird species it held at separation."
       },
       {
         "id": "B",
-        "text": "demonstrates that the density of foreign goods is, in general, an unreliable guide to how heavily any route was once traveled."
+        "text": "the smaller island now holds more bird species than it held at separation."
       },
       {
         "id": "C",
-        "text": "had most likely ceased to carry significant long-distance traffic, since a still-busy route would have continued to deposit the foreign goods those layers lack."
+        "text": "the larger island has lost a greater share of its original bird species."
       },
       {
         "id": "D",
-        "text": "must have been rerouted so that travelers passed through the oasis town more frequently than the written records suggest."
+        "text": "the smaller island has lost a greater share of its original bird species."
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "**Choice C is correct.** The passage sets up a rule: a busy trade route keeps dropping foreign goods, while a dead route stops adding any. It then tells us the town's TOP (most recent) layers have almost no foreign goods. So by the time those layers formed, the route had mostly stopped carrying long-distance trade -- \"a still-busy route would have continued to deposit the foreign goods those layers lack.\"\n\n**The Full Solution:**\n- How to spot it: the passage hands you a cause-and-effect rule (busy route = foreign goods pile up; dead route = they stop). Match the clue to the rule.\n- The clue is that the newest layers are nearly empty of foreign goods. Working backward through the rule, an empty layer means the route had gone quiet by then.\n- So the logical fill-in is that the route had largely stopped carrying long-distance traffic. That is C.\n\n**Why the other choices are wrong:**\n- A: Backwards -- heavier trade would leave MORE foreign goods, not fewer, so it cannot explain the near-empty layers.\n- B: Blows up into a sweeping claim that foreign goods are generally a bad guide to traffic, which the passage never says -- it treats the clue as reliable.\n- D: Claims MORE traffic through the town, which clashes with the absence of any new foreign goods in the upper layers.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "D",
+    "explanation": "**Choice D is correct.** The text ties the rate of species loss to island area: smaller islands hold smaller populations, and smaller populations are erased sooner. Given equal time since separation, the smaller island should have lost the larger share.\n\n**The Full Solution:**\n- Separate the rule from the case. The rule is that relaxation runs faster on smaller islands; the case is two islands of very different size cut off at the same moment.\n- Because the elapsed time is the same for both, area is the only variable left, and the rule sends the loss in one direction: more of it on the smaller island.\n- Reject completions that contradict relaxation itself. The text is explicit that species are lost after separation, so any option in which nothing is lost or the count rises is out.\n\n**Why the other choices are wrong:**\n- A: Relaxation is described as an ongoing loss that follows separation, so expecting no losses at all contradicts the rule the text sets up.\n- B: An increase would require new arrivals, and the text says the isolated populations no longer receive them.\n- C: This runs the rule backward. Larger area means larger populations and slower loss, so the greater share of losses belongs to the smaller island.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "inf-prediction-expectation"
     },
-    "passage": "When a long-distance trade route flourishes, the settlements positioned along it tend to accumulate durable foreign goods—coins, pottery, and ornaments produced far away—that travelers leave behind through exchange and loss. Archaeologists treat the density of such foreign objects in a settlement's layers as a rough index of how heavily the route through it was traveled in a given period. Crucially, once a route falls into disuse, the inflow of new foreign goods stops, so layers laid down afterward contain only what was already present. One excavated oasis town sits on a corridor that records describe as a major artery for centuries, yet the town's uppermost occupied layers contain almost no foreign objects of any kind. From this it follows that, by the time those upper layers were forming, the corridor through the town ______"
+    "passage": "When rising seas cut a coastal hilltop off from the mainland, the new island is left holding more species than an island of its size can support for long. Populations once part of a much larger mainland population no longer receive new arrivals, and one by one the smallest of them wink out, a slow loss ecologists call relaxation. The rate of that loss depends on area: the smaller the island, the fewer individuals each species can maintain, and the sooner chance alone erases one. Two islands off the same coast were cut off at the same time, one of them roughly ten times the area of the other. Ecologists comparing their bird faunas today should expect that ______"
   },
   {
     "id": 9012,
@@ -394,28 +498,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "remain exactly as iconic as the founding generation's signs, since the appearance of a sign is fixed once a community begins to use it."
+        "text": "dip toward the southeast, as they do along the canyon wall."
       },
       {
         "id": "B",
-        "text": "abandon grammar altogether in favor of pantomime, making the language easier for outsiders to interpret on sight."
+        "text": "dip in the direction opposite the one seen along the canyon wall."
       },
       {
         "id": "C",
-        "text": "prove that iconic, gesture-like signs are generally incapable of conveying grammatical information in any signed language."
+        "text": "lie flat, since dunes that far away would have been stationary."
       },
       {
         "id": "D",
-        "text": "become less transparently tied to the appearance of what they represent, growing more conventional as native acquisition shapes them."
+        "text": "dip toward the southeast only if that area lay closer to the sea."
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "**Choice D is correct.** The passage describes a repeating pattern: as later generations grow up with a signed language from birth, its signs become more compact and rule-based and look LESS like the things they stand for. It then says this particular language is still at the early stage, where signs look a lot like what they mean. So the expected next step is that its signs will become \"less transparently tied to the appearance of what they represent, growing more conventional.\"\n\n**The Full Solution:**\n- How to spot it: the passage states a trend ('over generations, signs drift away from looking like their meaning'), then drops a clue about where THIS language is right now. Continue the trend.\n- The clue: this language is still young, its signs still look like what they mean. The trend says that, as kids grow up with it, the signs will look less like their meaning and become more set by rule.\n- So the logical fill-in just continues that same direction. That is D.\n\n**Why the other choices are wrong:**\n- A: Says the signs stay exactly as picture-like and never change -- which flatly contradicts the pattern of change across generations. (It tempts you because it sounds like things staying stable.)\n- B: Runs the trend backward, predicting a shift TOWARD gesture/mime, when the pattern goes toward more rule-based, less picture-like signs.\n- C: Blows up into a sweeping claim that picture-like signs generally cannot carry grammar in any signed language -- something the passage never says.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "A",
+    "explanation": "**Choice A is correct.** The slanting layers record the direction the wind was blowing, and the text stipulates one dune field under a steady wind, so the same unit traced elsewhere should show the same southeast dip.\n\n**The Full Solution:**\n- Fix what the layers mean: they slant downward in the direction of the wind, so their direction is a wind direction, not a distance or an age.\n- Read the condition attached to the case. \"A single dune field under a steady wind\" is what licenses carrying the southeast reading from one outcrop to another.\n- Predict the observation, not a new cause. The completion should say what the layers will look like fifty kilometers away, which is the same dip.\n\n**Why the other choices are wrong:**\n- B: A reversed dip would mean a reversed wind, and the text specifies one steady wind across the dune field.\n- C: Flat layers would mean no dune advance at all, which contradicts the description of how these layers form.\n- D: This invents a condition. Nothing in the text ties the dip direction to the position of a shoreline.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "inf-prediction-expectation"
     },
-    "passage": "When a community of deaf signers forms and a shared signed language emerges, that language does not stay fixed across generations. Linguists who track such languages observe a recurring pattern: the first signers often rely on broad, pantomime-like gestures whose meaning can be guessed from their resemblance to the things they depict, but as later generations acquire the language from birth, those signs tend to become more compact, systematic, and conventional, with their form governed by the grammar of the language rather than by visual resemblance. Researchers studying one young signed language note that it is still used primarily by its founding generation, whose signs remain heavily iconic and gesture-like. From this it follows that, as children born into the community acquire the language as their native one, the language's signs are likely to ______"
+    "passage": "Sand dunes migrate downwind. Grains are lifted up the gentle windward face, tumble over the crest, and settle on the steeper face beyond, so a dune leaves behind sets of layers that slant downward in the direction the wind was blowing. Buried and cemented into sandstone, those slanting layers survive as a record of an ancient wind. In one formation exposed along a canyon wall, every set of layers dips toward the southeast. If a single dune field under a steady wind built that formation, geologists tracing the same rock unit fifty kilometers away should expect the slanting layers there to ______"
   },
   {
     "id": 9013,
@@ -428,28 +532,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "should rise substantially, since most new hires will stay with the now-automatic enrollment rather than take the deliberate step of declining it."
+        "text": "carbonate-poor clay at the base of the pile and carbonate-rich ooze at the top."
       },
       {
         "id": "B",
-        "text": "will remain essentially unchanged, because the contribution rates and investment options available to new hires are the same as before."
+        "text": "carbonate-rich ooze at the base of the pile and carbonate-poor clay at the top."
       },
       {
         "id": "C",
-        "text": "must fall below the minority who enrolled under the opt-in plan, as the new arrangement makes leaving the plan easier than it had been."
+        "text": "about the same proportion of carbonate from the base of the pile to the top."
       },
       {
         "id": "D",
-        "text": "proves that workers generally prefer not to save for retirement unless an employer requires them to do so."
+        "text": "no carbonate at any level, since the site now lies below that critical depth."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "**Choice A is correct.** The passage gives a rule of human behavior -- people tend to stick with whatever option they're handed instead of actively switching -- and a change: the company is making enrollment the automatic default (you'd have to opt OUT), while keeping everything else the same. So enrollment should jump, because most new hires will just stay signed up rather than bother to decline.\n\n**The Full Solution:**\n- How to spot it: the passage states a behavior rule ('people stick with the default'), then changes the default. Apply the rule to the new default.\n- New default = automatically enrolled. By the rule, most people won't take the extra step to opt out, so they stay in. That means enrollment goes UP a lot.\n- Everything else stayed the same, so flipping the default is the ONE thing that changed -- and it points to a big rise. That is A.\n\n**Why the other choices are wrong:**\n- B: Points to the features that stayed the same and ignores the one thing that changed -- the default -- so it wrongly predicts no change.\n- C: Goes the wrong direction; and people could always leave, so leaving is no easier than before.\n- D: Blows up into a claim about what workers truly WANT (that they'd rather not save), which the 'stick with the default' rule does not support -- the rule is about defaults, not deep preferences.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** The oldest sediment settled while the crust still stood high above the compensation depth, where carbonate is preserved, and the youngest settled after the crust had sunk below it, where carbonate is not. A core reads that history from the bottom up.\n\n**The Full Solution:**\n- Put the two rules side by side: carbonate survives above the compensation depth and dissolves below it, and seafloor starts shallow at the ridge and deepens with age.\n- Order the layers in time. The bottom of a sediment pile is the oldest material, laid down when the site was shallow; the top is the youngest, laid down after subsidence carried the site into dissolving water.\n- Read the completion as a sequence, not a single value. The expectation is a change with depth in the core, from carbonate-rich below to carbonate-poor above.\n\n**Why the other choices are wrong:**\n- A: This inverts the sequence. It would require the site to have started deep and become shallow, the reverse of the subsidence the text describes.\n- C: A uniform proportion would mean the site never crossed the compensation depth, but the text says aging crust subsides steadily for tens of millions of years.\n- D: The site was not always deep. Carbonate laid down during its shallow youth is still there at the base of the pile.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "inf-prediction-expectation"
     },
-    "passage": "Economists studying retirement saving distinguish between an opt-in plan, in which employees enroll only by actively choosing to, and an opt-out plan, in which employees are enrolled automatically unless they actively decline. Because many people tend to stay with whatever option is already in place rather than make a deliberate change, the share of workers who end up saving can depend heavily on which arrangement is the default. A firm that has long used an opt-in plan, under which only a minority of new hires enroll, announces that it will switch to an opt-out plan while keeping every other feature—contribution rates, investment menu, and the freedom to leave at any time—unchanged. If the tendency described above holds for this firm's workforce, then after the switch the enrollment rate among new hires ______"
+    "passage": "Calcium carbonate dissolves more readily in cold, deep, high-pressure seawater than in warm shallows. Below a level called the carbonate compensation depth, which in most basins lies near four kilometers, the carbonate shells of plankton dissolve faster than they arrive, so the sediment gathering there is clay and the silica shells of other plankton, with almost no carbonate in it. Ocean crust also sinks as it ages: rock formed at a mid-ocean ridge stands high, then subsides steadily for tens of millions of years as it cools and drifts away from the ridge. A drill core taken through the entire sediment pile on old, deep seafloor should therefore show ______"
   },
   {
     "id": 9014,
@@ -462,28 +566,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "indicates that the magma reservoir beneath it has in fact begun to lose pressure over the months the team observed."
+        "text": "the largest cacti in the plot stand beneath shrub canopies more often than the youngest ones do."
       },
       {
         "id": "B",
-        "text": "should not be taken as reassurance, since uninterrupted inflation without any release implies that reservoir pressure is still mounting and will eventually have to find an outlet."
+        "text": "cacti of every size are spread evenly between shrub canopies and open ground."
       },
       {
         "id": "C",
-        "text": "demonstrates that surface deformation is, in general, an unreliable guide to what is happening within a magma reservoir."
+        "text": "the youngest cacti in the plot stand beneath shrub canopies more often than in the open."
       },
       {
         "id": "D",
-        "text": "must mean that the rising magma has been venting its dissolved gases steadily enough to keep pressure from building at all."
+        "text": "the youngest cacti in the open grow faster than those beneath shrub canopies."
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "**Choice B is correct.** The passage gives a rule -- steady swelling of the ground means pressure underground is building up, not easing -- and a situation: this volcano has swelled nonstop for months with no gas venting and no small quakes to let pressure off. So the calm \"should not be taken as reassurance\": the pressure is still building and will eventually have to escape.\n\n**The Full Solution:**\n- How to spot it: the passage gives a rule ('steady swelling = pressure rising') plus a clue (it's been swelling for months with nothing to release the pressure). Combine them.\n- Nothing has let the pressure out, so it keeps building. A buildup with no escape can't stay quiet forever -- it must eventually find a way out.\n- So the right fill-in says the quiet is NOT reassuring. That is B.\n\n**Why the other choices are wrong:**\n- A: Goes backward by claiming the volcano has LOST pressure, which the absence of any release directly contradicts.\n- C: Blows up into a sweeping claim that ground swelling is generally a bad guide to what's underground, which the passage never says.\n- D: Contradicts the stated lack of venting by claiming the magma has been steadily releasing its gases.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** Survival in the first years is much higher under a canopy, so the young cacti still present in the plot should be found under shrubs far more often than in open ground.\n\n**The Full Solution:**\n- Note what the shrub actually does: it raises the odds that a seedling survives. The prediction therefore concerns where surviving young plants are found, not how fast anything grows.\n- Apply the rule to the youngest size class, since those are the plants still inside the window when shade matters.\n- Watch the direction of the comparison. More young cacti under canopies than in the open is what a survival advantage produces.\n\n**Why the other choices are wrong:**\n- A: This reverses the pattern. The text notes that cacti eventually overtop their shrubs, so shelter is characteristic of the youngest plants rather than the largest.\n- B: An even spread is what you would expect if the canopy made no difference, which is the opposite of what the text establishes.\n- D: The passage links canopies to survival, not to growth rate, so a claim about which seedlings grow faster goes beyond the evidence.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "inf-prediction-expectation"
     },
-    "passage": "Beneath an active volcano, magma rising toward the surface releases dissolved gases and pushes outward on the surrounding rock, causing the ground above to swell slightly and stretch in measurable ways. Volcanologists track this swelling with instruments that detect even faint changes in the tilt and shape of the surface. Such deformation does not by itself trigger an eruption, but a sustained pattern of inflation indicates that pressure within the magma reservoir is steadily building rather than dissipating. A monitoring team reports that one long-quiet volcano has shown slow but uninterrupted surface inflation for many months, with no accompanying release of pressure through venting gas or minor tremors. From this it follows that the volcano's continued quiet ______"
+    "passage": "Desert seedlings face their hardest test in their first summers, when the soil surface can reach temperatures that kill young tissue and the top few centimeters dry out within days of a rain. A shrub canopy changes both conditions, shading the ground through the hottest hours and slowing evaporation beneath it, so a seed that germinates under a shrub is far likelier to survive than one that germinates in the open. Columnar cacti grow slowly and eventually overtop the shrubs that sheltered them. A botanist mapping the position and size of every cactus in a study plot should expect that ______"
   },
   {
     "id": 9015,
@@ -496,28 +600,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "indicates that the synthetic organic reds the artist used have in fact proven more stable under light than the conservator's note suggests."
+        "text": "counts stay at about the same level from one night to the next, whatever the weather."
       },
       {
         "id": "B",
-        "text": "proves that light exposure is, in general, an unreliable predictor of whether a painting's pigments will fade over time."
+        "text": "counts fall on the humid nights that follow rain and rise on the dry nights."
       },
       {
         "id": "C",
-        "text": "is unlikely to endure, since prolonged exposure of unusually light-sensitive reds to bright illumination implies a continued fading that the canvas must eventually show."
+        "text": "counts on dry nights climb once the animals adjust to the dry conditions."
       },
       {
         "id": "D",
-        "text": "must mean that the museum has been protecting the canvas from light more carefully in its central hall than it would in a dimmer gallery."
+        "text": "counts on the humid nights after rain run well above counts on dry nights."
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "**Choice C is correct.** The passage tells us two things: strong light fades these particular reds easily (they're among the most light-sensitive paints of their day), and the museum has kept the painting in a bright hall for decades. Put those together and the bright colors \"are unlikely to endure\" -- the reds are still fading and the canvas will eventually show it.\n\n**The Full Solution:**\n- How to spot it: the passage gives a cause (bright light fades these reds) and tells you the cause has been acting for a long time. Ask, \"What does that lead to?\"\n- Bright light + paints that fade easily + decades of exposure = ongoing fading. So the painting's current vividness cannot last.\n- The logical fill-in is that the vividness is unlikely to endure. That is C.\n\n**Why the other choices are wrong:**\n- A: Contradicts the stated fact that these reds fade easily, by suggesting they've held up better than noted.\n- B: Blows up into a sweeping claim that light is generally a bad predictor of fading, when the text clearly treats light as a cause of fading.\n- D: Flips the setup by treating the bright hall as careful protection, when bright light is exactly the fading danger.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "D",
+    "explanation": "**Choice D is correct.** The animals come to the surface only when the air is humid enough to keep their skin wet, so a count of visible salamanders should be much higher on the humid nights that follow rain.\n\n**The Full Solution:**\n- Identify what the counts measure: salamanders on the surface, not salamanders present in the forest. Humidity governs whether they are up where a surveyor can see them.\n- Follow the rule to the prediction. Dry air drives them under logs and stones; rain lets them stay out; therefore surface counts should track humidity.\n- Check that the completion keeps the direction the text sets, with the higher counts on the wetter nights.\n\n**Why the other choices are wrong:**\n- A: Steady counts would mean humidity has no effect on surface activity, which contradicts the whole mechanism the text lays out.\n- B: This runs the relationship backward, putting the animals on the surface exactly when the air would dry their skin.\n- C: Nothing in the text suggests the salamanders acclimate to dry air; the constraint described is physical water loss through the skin, not habit.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "inf-prediction-expectation"
     },
-    "passage": "When a museum acquires a large abstract painting, conservators must decide where to display it, since strong light slowly fades many pigments while dimmer conditions can leave a gallery too dark for visitors to read the work's subtle tonal shifts. A conservator notes that one mid-century canvas was painted with synthetic organic reds known to be among the most light-sensitive pigments in use at the time, and that the museum has kept the painting in a brightly lit central hall for the past several decades to showcase its scale. From this it follows that the painting's present vividness ______"
+    "passage": "Lungless salamanders take in oxygen through the skin, which works only while that skin stays wet. Dry air pulls water out of the animal directly, so on nights of low humidity these salamanders stay in the damp spaces beneath logs and stones instead of climbing into the leaf litter where they hunt. Rain changes the calculation within hours, raising humidity near the ground and letting the animals stay out much longer before they dry. A team walking the same forest transects on many summer nights, counting the salamanders visible on the surface, should expect that ______"
   },
   {
     "id": 9016,
@@ -530,28 +634,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "demonstrates that wide-orbit planets form far less frequently than planets on close orbits around the same kinds of stars."
+        "text": "the eggs laid in the ejecting host's nests match that host's eggs more closely."
       },
       {
         "id": "B",
-        "text": "shows that the transit method detects nearly all of the planets orbiting the stars in any survey it examines."
+        "text": "the eggs laid in the accepting host's nests match that host's eggs more closely."
       },
       {
         "id": "C",
-        "text": "must be due to the host stars dimming the light of any planets that happen to orbit them at great distances."
+        "text": "the eggs laid in the two hosts' nests match each host's eggs about equally well."
       },
       {
         "id": "D",
-        "text": "likely reflects the survey method's bias rather than a real shortage, since wide orbits are the least likely to be favorably aligned for transit detection."
+        "text": "the eggs laid in the ejecting host's nests are larger than those laid in the other nests."
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "**Choice D is correct.** The passage tells us this detection method only catches a small slice of planets, and that the slice gets even smaller for planets on wide orbits. So when a survey finds almost no wide-orbit planets, the smart read is that the method MISSED them, not that they're truly rare -- \"this apparent scarcity likely reflects the survey method's bias rather than a real shortage.\"\n\n**The Full Solution:**\n- How to spot it: the passage builds a 'we can only see SOME of them, and even fewer of the far-out ones' setup. When few far-out ones turn up, ask, \"Are they missing, or just hard to see?\"\n- The method only catches a planet when its orbit lines up edge-on with Earth, and wide orbits line up that way least often. So the method naturally under-counts wide-orbit planets.\n- Therefore the shortage is a flaw in the COUNTING, not proof the planets are rare. That is D.\n\n**Why the other choices are wrong:**\n- A: Treats the shortage as a real difference in how often wide-orbit planets form, ignoring the counting bias the passage builds toward.\n- B: Contradicts the stated fact that this method detects only a small fraction of the planets present.\n- C: Makes up a dimming effect -- stars dimming far-off planets' light -- that the passage never mentions.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "A",
+    "explanation": "**Choice A is correct.** Only eggs that resemble the host's own survive inspection in the ejecting host's nests, so the parasite eggs found there should be the closer match; no such filter operates in the accepting host's nests.\n\n**The Full Solution:**\n- Name the filter the text describes: mismatched eggs are removed by one host and tolerated by the other.\n- Ask what a filter leaves behind. In the ejecting host's nests, only well-matched parasite eggs remain to be compared, so the expected difference runs in that direction.\n- Confine the prediction to the trait the filter acts on. The hosts inspect color and markings, so that is the feature the completion should be about.\n\n**Why the other choices are wrong:**\n- B: This points the pressure at the wrong host. The accepting host removes nothing, so there is nothing to favor a close match in its nests.\n- C: Equal matching would mean the ejecting behavior had no consequence, which contradicts the text's account of what happens to a mismatched egg.\n- D: Size is not what the hosts are said to inspect; the text describes rejection based on color and markings.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "inf-prediction-expectation"
     },
-    "passage": "The transit method of detecting exoplanets watches a star for the slight, repeated dip in brightness that occurs when a planet passes directly between the star and the observer. Because a transit can be seen only when a planet's orbit happens to be edged on toward Earth, the method detects just a small fraction of the planets that actually orbit the stars being surveyed. The likelihood that an orbit is favorably aligned, moreover, drops as the planet's orbit grows wider, since a distant planet sweeps across only a narrow band of possible viewing angles. A team analyzing a large transit survey notes that the planets it found cluster tightly around their host stars, with very few on wide orbits. The team therefore cautions that this apparent scarcity of wide-orbit planets ______"
+    "passage": "A brood parasite lays its eggs in other species' nests and leaves the rearing of its young to the hosts. Host species differ in what they do next: some inspect the clutch and push out any egg whose color or markings depart from their own, while others accept whatever they find. Only the first kind of host puts pressure on the parasite, since a mismatched egg is thrown out before it can hatch. Suppose one parasite species lays in the nests of two hosts in the same woodland, one that ejects mismatched eggs and one that never does. Ornithologists comparing the two sets of parasite eggs should expect that ______"
   },
   {
     "id": 9017,
@@ -564,37 +668,38 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "On both the Silk Road and the Trans-Saharan routes, goods moved along a chain of oasis settlements, passing from one group of merchants to another rather than being carried the whole distance by a single party."
+        "text": "The olm lives only in the flooded limestone caves of southeastern Europe, where it finds prey without using sight."
       },
       {
         "id": "B",
-        "text": "The Silk Road was a network of overland routes that linked markets in China, Central Asia, and the Mediterranean."
+        "text": "Though they are not close relatives, the cave tetra and the olm have both lost working eyes and body pigment."
       },
       {
         "id": "C",
-        "text": "Unlike the Silk Road, which crossed the oases of Central Asia, the Trans-Saharan routes crossed the desert tracks of West and North Africa."
+        "text": "Unlike the olm, the Mexican tetra also has river populations whose members have working eyes and normal pigment."
       },
       {
         "id": "D",
-        "text": "Along the Trans-Saharan routes, traders relied on a chain of oasis settlements where goods passed from one group of merchants to another rather than being carried the entire distance by one party."
+        "text": "The Mexican tetra is a small freshwater fish found in rivers in northeastern Mexico, and the olm is a European cave salamander."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "**Choice A is correct.** The goal is to point out something the two trade networks have in COMMON, so the sentence must (1) name both and (2) say something true of both. Choice A does this: on both the Silk Road and the Trans-Saharan routes, goods moved along a chain of oasis settlements, \"passing from one group of merchants to another rather than being carried the whole distance by a single party.\"\n\n**The Full Solution:**\n- How to spot it: when the goal is to show a SIMILARITY, run two quick checks on each option -- does it name BOTH things, and does it state a feature they SHARE? You need both checks to pass.\n- Choice A passes both: it names both networks and gives the shared feature from the notes -- goods handed off merchant-to-merchant along a chain of oases.\n- Quick elimination tips: a sentence about only one of the two can't show a similarity, and a sentence starting with \"Unlike\" is showing a difference, not a similarity.\n\n**Why the other choices are wrong:**\n- B: Describes only the Silk Road (its routes linking China, Central Asia, and the Mediterranean), so it names nothing the two networks share.\n- C: Names both but frames them as different (\"Unlike the Silk Road...\"), pointing to a difference instead of a similarity.\n- D: Describes only the Trans-Saharan routes, so like B it covers just one network and states nothing in common.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** The goal is to emphasize a similarity, and this sentence names both animals and the trait they share: each has lost working eyes and body pigment despite belonging to a distant branch of the vertebrate family tree.\n\n**The Full Solution:**\n- Read the goal first. A similarity sentence has to mention both subjects and one property that holds for each of them.\n- Choice B does both. \"The cave tetra and the olm\" supplies the pair, and \"have both lost working eyes and body pigment\" supplies the shared property, drawn from the second and fourth notes.\n- Eliminate any choice that fits only one animal, and eliminate any choice built around a contrast. Both patterns are common traps on this question type.\n\n**Why the other choices are wrong:**\n- A: This reports only the olm. A fact about one subject cannot show what the two subjects have in common.\n- C: This sets the tetra against the olm, emphasizing a difference between them when the goal asks for a similarity.\n- D: This names both animals but pairs them with the details that separate them, a fish in Mexican rivers and a salamander in European caves, so no shared property is stated.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "rs-emphasize-similarity"
     },
     "studentNotes": {
       "intro": "While researching a topic, a student has taken the following notes:",
       "bullets": [
-        "The Silk Road was a network of overland routes that linked markets in China, Central Asia, and the Mediterranean.",
-        "The Trans-Saharan routes were a network of desert tracks that linked markets in West Africa with North Africa and the Mediterranean.",
-        "Along the Silk Road, traders relied on a chain of oasis towns where goods were exchanged from one merchant to the next rather than carried end to end by a single party.",
-        "Along the Trans-Saharan routes, traders likewise relied on a chain of oasis settlements where goods passed from one group of merchants to another rather than being carried the whole distance by one party.",
-        "Both networks were sustained by caravans of pack animals that could survive long stretches between water sources."
+        "The Mexican tetra is a small freshwater fish found in rivers in northeastern Mexico.",
+        "Populations of the tetra that live in caves have no working eyes and almost no body pigment; river populations of the same species have both.",
+        "The olm is a salamander that lives only in the flooded limestone caves of southeastern Europe.",
+        "The olm has undeveloped eyes covered over by skin and pale, nearly colorless skin.",
+        "Fish and salamanders are not close relatives, and their cave-dwelling forms entered caves separately.",
+        "Each animal finds prey without sight, relying on smell and on sensitivity to movement in the water."
       ],
-      "goal": "The student wants to emphasize a similarity between the Silk Road and the Trans-Saharan routes."
+      "goal": "The student wants to emphasize a similarity between the cave tetra and the olm."
     }
   },
   {
@@ -608,37 +713,38 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "Hilma af Klint (1862–1944) was a Swedish painter who began producing large abstract canvases around 1906."
+        "text": "Flowers visited mainly by nectar-feeding bats are sturdy and wide, and they hold far more nectar per flower."
       },
       {
         "id": "B",
-        "text": "Both af Klint and Kandinsky filled their canvases with nonrepresentational forms—spirals, circles, geometric shapes, and bands of color—that they described as expressing inner spiritual states rather than depicting the visible world."
+        "text": "Unlike hawkmoth flowers, which are narrow and deep, bat flowers must be wide enough to admit an animal."
       },
       {
         "id": "C",
-        "text": "Kandinsky, born in Russia, built his compositions from floating geometric shapes and bands of color rather than recognizable objects."
+        "text": "Hawkmoth flowers and bat flowers are alike in being pale, in opening after dusk, and in smelling strongly at night."
       },
       {
         "id": "D",
-        "text": "Af Klint produced her first abstract canvases as early as 1906, whereas Kandinsky did not complete his first abstract works until slightly afterward."
+        "text": "A hawkmoth hovers in front of a blossom, while a bat pushes its head into the flower to reach the nectar."
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "**Choice B is correct.** The goal is to point out something the two painters have in COMMON, so the sentence must name both and say what they shared. Choice B does this: both af Klint and Kandinsky filled their canvases with non-realistic forms \"that they described as expressing inner spiritual states rather than depicting the visible world.\"\n\n**The Full Solution:**\n- How to spot it: when the goal is a SIMILARITY, check each option twice -- does it name BOTH painters, and does it state a trait they SHARE?\n- Choice B passes both checks: it names both and gives the shared trait from the notes -- abstract shapes meant to express inner spiritual states, not the real world.\n- Quick elimination tips: an option about just one painter can't show a similarity, and \"whereas\" or \"unlike\" signals a difference instead.\n\n**Why the other choices are wrong:**\n- A: Describes only af Klint (the Swedish painter who began large abstract canvases around 1906), so it shows no similarity.\n- C: Describes only Kandinsky (his floating geometric shapes and color bands), so it too covers a single painter.\n- D: Mentions both but stresses a difference in timing (af Klint \"as early as 1906, whereas Kandinsky... slightly afterward\"), the opposite of a shared trait.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** The goal calls for a similarity between the two kinds of flower, and this sentence names both and lists the three features the notes give to each: pale color, opening after dusk, and strong night scent.\n\n**The Full Solution:**\n- Look for the properties the notes assign twice. The third and fourth notes describe hawkmoth flowers and bat flowers in nearly the same terms, and those repeated terms are the similarity.\n- Check that the sentence covers both subjects. \"Hawkmoth flowers and bat flowers\" does; a sentence about one alone cannot satisfy the goal.\n- Reject differences even when they are accurate. Width, nectar volume, and feeding posture are all in the notes, but none of them is something the two share.\n\n**Why the other choices are wrong:**\n- A: This describes bat flowers only, so it leaves the comparison the goal requires unmade.\n- B: The word \"unlike\" announces a contrast, which is the opposite of the goal.\n- D: This contrasts how the two animals feed rather than saying anything about what the flowers have in common.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "rs-emphasize-similarity"
     },
     "studentNotes": {
       "intro": "While researching a topic, a student has taken the following notes:",
       "bullets": [
-        "Hilma af Klint (1862–1944) was a Swedish painter who produced large abstract canvases beginning around 1906.",
-        "Wassily Kandinsky (1866–1944) was a Russian-born painter who produced his first abstract works in roughly the same period.",
-        "Af Klint's series The Paintings for the Temple used spirals, circles, and pale color fields rather than recognizable objects.",
-        "Kandinsky's compositions used floating geometric shapes and bands of color rather than recognizable objects.",
-        "Both painters wrote that their abstract forms were meant to express inner spiritual states instead of depicting the visible world."
+        "Hawkmoths are large moths that feed after dark, hovering in front of a flower and drawing nectar through a long tongue.",
+        "Nectar-feeding bats also visit flowers after dark, pushing their heads into the blossom to lap up nectar.",
+        "Flowers visited mainly by hawkmoths are usually white or pale, open after dusk, and give off a strong scent at night.",
+        "Flowers visited mainly by nectar bats are also pale and night-opening, with a heavy odor and far more nectar per flower.",
+        "Bat flowers tend to be sturdy and wide, since a bat would damage a slender blossom; hawkmoth flowers are narrow and deep.",
+        "Neither kind of flower relies on the bright colors that draw daytime pollinators such as bees."
       ],
-      "goal": "The student wants to emphasize a similarity between af Klint's paintings and Kandinsky's paintings."
+      "goal": "The student wants to emphasize a similarity between the flowers that hawkmoths visit and the flowers that nectar-feeding bats visit."
     }
   },
   {
@@ -652,37 +758,38 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "The transit method detects an exoplanet by recording the small, regular dips in a star's brightness that occur as the planet passes in front of the star."
+        "text": "Eskers are winding ridges of sand and gravel left by meltwater streams that ran in tunnels inside the ice."
       },
       {
         "id": "B",
-        "text": "Because astronomers usually cannot see exoplanets directly, they often detect a planet by watching the star that it orbits."
+        "text": "Drumlins are molded from debris beneath moving ice, whereas eskers are built by running meltwater."
       },
       {
         "id": "C",
-        "text": "The transit method and the radial-velocity method both detect an exoplanet by observing only its star, watching for a measurable change that repeats with each orbit."
+        "text": "Ice sheets covered much of northern North America and northern Europe during the last ice age, and they left many landforms behind them."
       },
       {
         "id": "D",
-        "text": "The radial-velocity method, unlike the transit method, detects an exoplanet through shifts in a star's light rather than through dips in the star's brightness."
+        "text": "Eskers and drumlins are alike in lining up with the direction the ice flowed, so geologists use both to map vanished ice sheets."
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "**Choice C is correct.** The goal is to point out something the two detection methods have in COMMON, so the sentence must name both and say what they share. Choice C does this: the transit and radial-velocity methods \"both detect an exoplanet by observing only its star, watching for a measurable change that repeats with each orbit.\"\n\n**The Full Solution:**\n- How to spot it: when the goal is a SIMILARITY, run two checks on each option -- does it name BOTH methods, and does it state a feature they SHARE?\n- Choice C passes both: it names both and gives the shared traits from the notes -- each watches only the star, not the planet, and each relies on a repeating, measurable change.\n- Quick elimination tips: an option about only one method can't show a similarity, and \"unlike\" signals a difference.\n\n**Why the other choices are wrong:**\n- A: Describes only the transit method (the dips in brightness as a planet crosses the star), so it shows no similarity.\n- B: States the general idea behind one approach -- watching the star because planets can't be seen directly -- without naming both methods or a shared feature.\n- D: Names both but stresses a difference (\"unlike the transit method,\" light shifts versus brightness dips), the opposite of the goal.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "D",
+    "explanation": "**Choice D is correct.** The goal asks for a similarity, and this sentence names both landforms and the property the notes give to each: an alignment with the direction of ice flow, which is what makes both useful for mapping former ice sheets.\n\n**The Full Solution:**\n- Find the note that says the same thing twice. The fourth note aligns eskers with the flow direction and the fifth aligns drumlins with it, so alignment is the shared property.\n- Require both subjects in the sentence. \"Eskers and drumlins\" satisfies that, and \"lining up with the direction the ice flowed\" attaches the shared property to the pair.\n- Set aside how each landform is built. Origin is exactly where the two differ, so it cannot carry a similarity.\n\n**Why the other choices are wrong:**\n- A: This defines eskers only, leaving drumlins out of the sentence entirely.\n- B: \"Whereas\" signals a contrast, and the sentence goes on to state how the two landforms are made differently.\n- C: This is background about the ice age. It mentions neither landform by name and so states nothing the two share.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "rs-emphasize-similarity"
     },
     "studentNotes": {
       "intro": "While researching a topic, a student has taken the following notes:",
       "bullets": [
-        "Astronomers cannot usually see exoplanets directly, so they often detect a planet by watching the star it orbits.",
-        "The transit method records small, regular dips in a star's brightness that occur when an orbiting planet passes in front of the star.",
-        "The radial-velocity method records small, regular shifts in a star's light caused by the gravitational tug of an orbiting planet.",
-        "Both methods look only at the star, not the planet, and both rely on a measurable change that repeats with each orbit.",
-        "From the timing of these repeating changes, astronomers using either method can estimate the length of the planet's orbit."
+        "During the last ice age, ice sheets covered much of northern North America and northern Europe.",
+        "Eskers are long, winding ridges of sand and gravel, laid down by meltwater streams that ran in tunnels within and beneath the ice.",
+        "Drumlins are smooth, elongated hills of glacial debris, molded under ice that was moving across them.",
+        "An esker generally runs in the direction the ice was flowing, because the tunnel that formed it did.",
+        "A drumlin's long axis also lies parallel to the direction of ice flow, with its blunt end facing the ice.",
+        "Geologists map both landforms across a region to reconstruct the paths that vanished ice sheets took."
       ],
-      "goal": "The student wants to emphasize a similarity between the transit method and the radial-velocity method."
+      "goal": "The student wants to emphasize a similarity between eskers and drumlins."
     }
   },
   {
@@ -696,37 +803,38 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "American Sign Language and British Sign Language are the natural languages used by Deaf communities in the United States and Britain, respectively."
+        "text": "Diatoms and radiolarians both build their hard parts from opaline silica, which settles on the seafloor as siliceous ooze."
       },
       {
         "id": "B",
-        "text": "Although they share a number of design features, American Sign Language and British Sign Language are mutually unintelligible, so a fluent signer of one cannot readily understand the other."
+        "text": "Diatoms are algae that photosynthesize in sunlit water, unlike radiolarians, which drift deeper and feed on other organisms."
       },
       {
         "id": "C",
-        "text": "In British Sign Language, signers use facial expressions and body movements, such as raised eyebrows or a head tilt, to mark grammatical information like questions."
+        "text": "A radiolarian builds an intricate skeleton that sits inside the cell rather than enclosing it in two parts."
       },
       {
         "id": "D",
-        "text": "Both American Sign Language and British Sign Language build their signs from the same kinds of components, including handshape, location, and movement, so that changing just one component can produce a different word."
+        "text": "Cores drilled into siliceous ooze let researchers study the plankton communities that lived millions of years ago."
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "**Choice D is correct.** The goal is to point out something the two languages have in COMMON about how they are BUILT, so the sentence must name both and say what they share. Choice D does this: both ASL and BSL \"build their signs from the same kinds of components, including handshape, location, and movement, so that changing just one component can produce a different word.\"\n\n**The Full Solution:**\n- How to spot it: the goal asks for a shared way the languages are built, so check each option twice -- does it name BOTH languages, and does it state a shared feature about how signs are made?\n- Choice D passes both: it names both and gives the shared building-block idea from the notes -- signs made from the same parts (handshape, location, movement), where swapping one part changes the word.\n- Quick elimination tips: an option about just one language can't show a similarity, and a word like \"unlike\" or one that stresses they can't understand each other is pointing to a difference.\n\n**Why the other choices are wrong:**\n- A: Gives only a background detail (the communities that use each), naming no shared building feature.\n- B: Names both but stresses a difference -- that signers of one can't understand the other -- which works against showing a similarity.\n- C: Describes only British Sign Language (its use of face and body to mark questions), so it names no shared feature.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "A",
+    "explanation": "**Choice A is correct.** The goal is a similarity, and this sentence names both organisms and the property the notes assign to each of them: hard parts made of opaline silica, which end up on the seafloor as siliceous ooze.\n\n**The Full Solution:**\n- Scan the notes for a property stated twice. The third and fourth notes both give opaline silica as the building material, once for the diatom's shell and once for the radiolarian's skeleton.\n- Write the sentence with both subjects in it. \"Diatoms and radiolarians both build their hard parts from opaline silica\" does that directly.\n- Discard the details that split the two organisms apart, such as where they drift and how they feed. Those support a contrast, not a similarity.\n\n**Why the other choices are wrong:**\n- B: The word \"unlike\" makes this a contrast between how the two organisms live rather than a statement of what they share.\n- C: This describes the radiolarian's skeleton alone and even stresses how it differs from the diatom's two-part shell.\n- D: This is about what researchers can learn from the ooze; neither organism is compared with the other.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "rs-emphasize-similarity"
     },
     "studentNotes": {
       "intro": "While researching a topic, a student has taken the following notes:",
       "bullets": [
-        "American Sign Language (ASL) and British Sign Language (BSL) are natural languages used by Deaf communities in the United States and Britain, respectively.",
-        "Each language organizes its signs from a small set of building blocks: handshape, the place on or near the body where a sign is made, and the movement of the hands.",
-        "In both ASL and BSL, changing just one of these building blocks can change a sign into a different word, much as swapping one sound changes a spoken word.",
-        "Both languages also use the face and body, such as raised eyebrows or a head tilt, to mark grammatical information like questions.",
-        "Despite these shared design features, ASL and BSL are mutually unintelligible: a fluent signer of one cannot readily understand the other."
+        "Diatoms are single-celled algae that drift in sunlit surface water and make their food by photosynthesis.",
+        "Radiolarians are single-celled plankton that drift deeper in the water column and feed on other organisms.",
+        "A diatom builds a two-part shell of opaline silica, the material that also forms opal.",
+        "A radiolarian builds an intricate internal skeleton, also of opaline silica.",
+        "When these organisms die, their silica parts sink and can pile up on the seafloor as a deposit called siliceous ooze.",
+        "Cores drilled into that ooze let researchers study plankton communities from millions of years ago."
       ],
-      "goal": "The student wants to emphasize a structural similarity between American Sign Language and British Sign Language."
+      "goal": "The student wants to emphasize a similarity between diatoms and radiolarians."
     }
   },
   {
@@ -740,37 +848,38 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "Both stratovolcanoes and shield volcanoes form gradually, built up over long spans of time as repeated eruptions add fresh layers of material to the structure."
+        "text": "Io is the most volcanically active body in the solar system, with hundreds of erupting vents on its surface."
       },
       {
         "id": "B",
-        "text": "A stratovolcano is a tall, steep-sided cone, whereas a shield volcano is a broad, gently sloping mountain that resembles a warrior's shield laid on the ground."
+        "text": "Io and Europa are both heated from within by the flexing that Jupiter's gravity produces as they orbit."
       },
       {
         "id": "C",
-        "text": "A stratovolcano grows when thick, slow-moving lava and explosive ash pile up near the vent before they can spread very far."
+        "text": "Europa's outer shell of ice is thought to cover a global ocean of liquid water beneath it."
       },
       {
         "id": "D",
-        "text": "Unlike a stratovolcano, a shield volcano forms from thin, runny lava that flows easily and travels a long way before it cools."
+        "text": "Io's surface is remade by volcanic eruptions, while Europa's is a shell of ice."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "**Choice A is correct.** The goal is to point out something the two volcano types have in COMMON about how they FORM, so the sentence must name both and give the shared process. Choice A does this: both stratovolcanoes and shield volcanoes \"form gradually, built up over long spans of time as repeated eruptions add fresh layers of material to the structure.\"\n\n**The Full Solution:**\n- How to spot it: the goal asks for a shared way they form, so check each option twice -- does it name BOTH types, and does it state a process they SHARE?\n- Choice A passes both: it names both and gives the shared process from the notes -- slow buildup over a long time as repeated eruptions add fresh layers.\n- Quick elimination tips: an option about only one type can't show a similarity, and a word like \"unlike\" or a sentence about how their shapes differ is pointing to a difference.\n\n**Why the other choices are wrong:**\n- B: Names both but stresses how their shapes differ (steep cone versus broad, gently sloping mountain), a difference rather than a shared process.\n- C: Describes only the stratovolcano (thick lava and ash piling up near the vent), so it cannot show a similarity.\n- D: Frames the shield volcano in contrast (\"Unlike a stratovolcano\"), stressing a difference in lava type rather than a shared way of forming.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** The goal asks for a similarity, and tidal heating is the one process the notes apply to both moons: each is flexed by Jupiter's gravity along a stretched orbit, and that flexing warms its interior.\n\n**The Full Solution:**\n- Sort the notes into shared and separate. The second, third, and fourth notes describe a mechanism that acts on both moons; the fifth and sixth describe what each moon looks like on its own.\n- Build the sentence from the shared column, with both subjects named: \"Io and Europa are both heated from within.\"\n- Be careful with the striking details. Volcanoes and a buried ocean are the memorable facts here, but each belongs to one moon only.\n\n**Why the other choices are wrong:**\n- A: This is about Io alone, so it says nothing about what the two moons have in common.\n- C: This is about Europa alone and leaves Io out of the comparison.\n- D: This puts the two moons side by side in order to contrast their surfaces, which is the opposite of the goal.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "rs-emphasize-similarity"
     },
     "studentNotes": {
       "intro": "While researching a topic, a student has taken the following notes:",
       "bullets": [
-        "Stratovolcanoes are tall, steep-sided cones built up from many layers of hardened lava, ash, and rock.",
-        "Shield volcanoes are broad, gently sloping mountains that resemble a warrior's shield laid on the ground.",
-        "A stratovolcano grows when thick, slow-moving lava and explosive ash pile up near the vent before they can spread far.",
-        "A shield volcano grows when thin, runny lava flows easily down the sides and travels a long way before cooling.",
-        "Both stratovolcanoes and shield volcanoes are built gradually as repeated eruptions add fresh material to the structure over long spans of time."
+        "Io and Europa are two of Jupiter's four largest moons.",
+        "Their orbits are locked in a resonance, so the moons pass one another at regular intervals and pull on each other as they do.",
+        "Those pulls keep each orbit slightly stretched, and along a stretched orbit Jupiter's gravity squeezes and releases the moon.",
+        "The repeated flexing turns into heat inside the moon, a process called tidal heating.",
+        "Io is the most volcanically active body in the solar system, with hundreds of erupting vents.",
+        "Europa's outer shell of ice is thought to lie above a global ocean of liquid water."
       ],
-      "goal": "The student wants to emphasize a similarity in how stratovolcanoes and shield volcanoes form."
+      "goal": "The student wants to emphasize a similarity between Io and Europa."
     }
   },
   {
@@ -784,37 +893,38 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "A fugue opens with a single melodic line, the subject, which is then imitated and overlapped by additional voices that enter one at a time."
+        "text": "Ice cores trap bubbles of ancient air, a record that speleothems cannot preserve at all."
       },
       {
         "id": "B",
-        "text": "Both the fugue and the chorale prelude build their texture by layering several independent melodic lines that sound at the same time, and Baroque organists prized both as a way to display contrapuntal skill."
+        "text": "A speleothem is a mineral deposit that builds up where water drips onto the floor of a cave."
       },
       {
         "id": "C",
-        "text": "Unlike a fugue, which begins from a single subject, a chorale prelude starts from a familiar hymn tune and surrounds it with newly composed accompanying lines."
+        "text": "Ice cores and speleothems both grow layer by layer, and the oxygen isotopes in those layers record past conditions."
       },
       {
         "id": "D",
-        "text": "The fugue and the chorale prelude are two compositional forms that were developed during the Baroque period, which lasted roughly from 1600 to 1750."
+        "text": "Speleothems can be dated from the decay of uranium in their calcite, over hundreds of thousands of years."
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "**Choice B is correct.** The goal is to point out something the two musical forms have in COMMON, so the sentence must name both and say what they share. Choice B does this: both \"build their texture by layering several independent melodic lines that sound at the same time,\" and both were prized by Baroque organists \"as a way to display contrapuntal skill\" -- that is, skill at weaving several tunes together at once.\n\n**The Full Solution:**\n- How to spot it: when the goal is a SIMILARITY, check each option twice -- does it name BOTH forms, and does it state a feature they SHARE?\n- Choice B passes both: it names both and gives two shared traits from the notes -- stacking several separate tunes at the same time, and being prized for showing off skill at weaving those tunes together.\n- Quick elimination tips: an option about only one form can't show a similarity, and a word like \"unlike\" is pointing to a difference.\n\n**Why the other choices are wrong:**\n- A: Describes only the fugue (its single opening tune echoed by entering voices), so it shows no similarity.\n- C: Names both but uses \"Unlike\" to stress how they differ (one starting tune versus a borrowed hymn), the opposite of a similarity.\n- D: Mentions both but only puts them in the same time period (the Baroque, roughly 1600 to 1750), a side detail rather than a shared musical feature.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** The goal is a similarity, and the notes give two properties to both records: each is built up in layers, and the oxygen isotopes in each layer preserve information about past conditions.\n\n**The Full Solution:**\n- Pair the notes. The first and third notes both describe layered growth; the fourth and fifth both describe an oxygen-isotope record. Those pairings are the similarity.\n- Name both subjects in the sentence, then attach the shared properties: \"Ice cores and speleothems both grow layer by layer.\"\n- Leave out the features the notes mark as belonging to one record only, however interesting they are.\n\n**Why the other choices are wrong:**\n- A: Trapped air is presented in the notes as something ice cores have and speleothems do not, so this is a difference.\n- B: This defines a speleothem without mentioning ice cores, so no comparison is made.\n- D: Uranium dating is a method available for speleothems alone, which again distinguishes the two records rather than joining them.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "rs-emphasize-similarity"
     },
     "studentNotes": {
       "intro": "While researching a topic, a student has taken the following notes:",
       "bullets": [
-        "The fugue and the chorale prelude are two compositional forms developed during the Baroque period (roughly 1600–1750).",
-        "A fugue opens with a single melodic line, the subject, which is then imitated and overlapped by additional voices entering one at a time.",
-        "A chorale prelude takes a familiar hymn tune and surrounds it with newly composed accompanying lines.",
-        "In both forms the composer builds the texture by layering several independent melodic lines that sound at the same time.",
-        "Both forms were prized by Baroque organists as a way to display contrapuntal skill during church services."
+        "An ice core is a cylinder drilled out of a glacier or ice sheet; each year of snowfall is preserved in it as a separate layer.",
+        "A speleothem is a mineral deposit, such as a stalagmite, that builds up where water drips onto a cave floor and leaves calcite behind.",
+        "Speleothems also grow in layers, added over hundreds or thousands of years.",
+        "The ratio of oxygen isotopes in a layer of ice reflects the temperature at the time that snow fell.",
+        "The same isotope ratio, measured in a layer of a speleothem, reflects the conditions in the rainfall that fed the drip.",
+        "Ice cores trap bubbles of ancient air, which speleothems do not; speleothems can be dated from the decay of uranium in their calcite."
       ],
-      "goal": "The student wants to emphasize a similarity between the fugue and the chorale prelude."
+      "goal": "The student wants to emphasize a similarity between ice cores and speleothems."
     }
   },
   {
@@ -828,38 +938,44 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "Cephalopod skin contains chromatophores, pigment-filled cells that expand and contract to change color in fractions of a second, layered above reflective iridophores and leucophores."
+        "text": "Cowan drew on time-use studies comparing diaries kept by American homemakers in the 1920s with diaries kept in the 1960s."
       },
       {
         "id": "B",
-        "text": "Hanlon, a marine biologist who studies octopuses, squid, and cuttlefish, points out that cephalopods are colorblind, which makes their precise color matching one of the field's enduring puzzles."
+        "text": "Mechanizing the American home changed what housework consisted of without reducing the hours a homemaker spent on it."
       },
       {
         "id": "C",
-        "text": "In *Cephalopod Behaviour* (2018), Hanlon argues that a cephalopod's camouflage is not a fixed pattern but a rapid, moment-to-moment display its nervous system generates from a few underlying components as it reads its surroundings."
+        "text": "The washing machine absorbed work that households had previously sent out to commercial laundresses."
       },
       {
         "id": "D",
-        "text": "Roger T. Hanlon is a marine biologist whose research centers on cephalopods and the skin that allows them to change color so quickly."
+        "text": "Cowan, a historian of technology, published More Work for Mother in 1983."
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "**Choice C is correct.** The goal is to state Hanlon's MAIN POINT (his main argument) about cephalopod camouflage, and Choice C does that directly: camouflage \"is not a fixed pattern but a rapid, moment-to-moment display its nervous system generates from a few underlying components as it reads its surroundings.\"\n\n**The Full Solution:**\n- How to spot it: when the goal says 'present the main claim,' look for the option that states what the person ARGUES -- not background about them, not a side fact, not a leftover problem.\n- The notes give Hanlon's argument from his 2018 book: the animal doesn't store a library of patterns; it builds a fitting display on the spot from a few basic parts.\n- Choice C says exactly that and credits it to Hanlon, so it's the main point.\n\n**Why the other choices are wrong:**\n- A: Explains how the skin works (the color-changing and reflecting cells) -- background detail, not what Hanlon argues.\n- B: Quotes Hanlon but on a side fact (that cephalopods are colorblind, an 'enduring puzzle'), not his main point.\n- D: Gives background about Hanlon (his research focus), never stating his argument.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** The notes build toward a single generalization — that mechanizing the household changed the character of housework without shortening it — and Choice B states it.\n\n**The Full Solution:**\n- The goal asks for a central claim, so underline the bullets that generalize rather than the ones that name a source, a book, or a single machine.\n- Two bullets carry the generalization together: the hours spent on housework did not fall between the 1920s and the 1960s, and the new machines raised expectations while absorbing work other people used to do. Choice B fuses both halves into one sentence.\n- Anything that reports how the evidence was gathered, where the scholar works, or what one appliance did is support for the claim, not the claim itself.\n\n**Why the other choices are wrong:**\n- A: This is the evidence Cowan worked from — the diary studies — rather than the conclusion she drew from it.\n- C: True of one appliance, but a single example cannot stand in for a claim about household technology as a whole.\n- D: Bibliographic detail. It identifies the book without saying what the book argues.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "rs-present-claim"
+      "authoredFor": "rs-present-claim",
+      "people": [
+        {
+          "name": "Ruth Schwartz Cowan",
+          "sourceUrl": "https://hss.sas.upenn.edu/people/ruth-schwartz-cowan"
+        }
+      ]
     },
     "studentNotes": {
       "intro": "While researching a topic, a student has taken the following notes:",
       "bullets": [
-        "Roger T. Hanlon is a marine biologist whose research centers on cephalopods—octopuses, squid, and cuttlefish—and their skin.",
-        "Cephalopod skin contains chromatophores, pigment-filled cells that expand and contract to change color in fractions of a second.",
-        "Beneath the chromatophores lie reflective cells called iridophores and leucophores that scatter and reflect ambient light.",
-        "In *Cephalopod Behaviour* (2018), Hanlon argues that a cephalopod's camouflage is not a fixed pattern but a rapid, moment-to-moment response generated by the animal's nervous system reading its surroundings.",
-        "On Hanlon's view, the animal does not match a background by storing a library of patterns; it produces an appropriate display on the spot from a small set of underlying components.",
-        "Hanlon notes that cephalopods are colorblind, which makes their precise color matching one of the field's enduring puzzles."
+        "Ruth Schwartz Cowan is a historian of technology at the University of Pennsylvania.",
+        "Her 1983 book More Work for Mother studies washing machines, gas ranges, vacuum cleaners, and indoor plumbing.",
+        "She drew on time-use studies that compared diaries kept by American homemakers in the 1920s with diaries kept in the 1960s.",
+        "The hours a full-time homemaker spent on housework did not fall between those decades.",
+        "The new machines raised expectations for cleanliness and absorbed tasks that laundresses, delivery drivers, and other household members had once performed.",
+        "Cowan calls the pattern the industrialization of the home."
       ],
-      "goal": "The student wants to present Hanlon's central claim about cephalopod camouflage."
+      "goal": "The student wants to present Cowan’s central claim about household technology."
     }
   },
   {
@@ -873,38 +989,44 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "Valerie Hansen, a professor of history at Yale University, specializes in premodern China and the cross-cultural exchange that took place across Asia."
+        "text": "Nochlin examined how European painters were trained in the academies and the workshops of the years before 1900."
       },
       {
         "id": "B",
-        "text": "The term \"Silk Road\" was coined in 1877 by the geographer Ferdinand von Richthofen, who imagined a single highway carrying caravans of silk between China and Rome."
+        "text": "Women who painted professionally before 1900 were often the daughters of artists."
       },
       {
         "id": "C",
-        "text": "Hansen notes that paper documents survived in the dry climate of the Taklamakan Desert oases, which is why so much of the surviving evidence about the routes comes from that region."
+        "text": "Nochlin taught art history at the Institute of Fine Arts at New York University."
       },
       {
         "id": "D",
-        "text": "In *The Silk Road: A New History* (2012), Hansen argues that the Silk Road is best understood not as a single transcontinental trade artery but as a shifting web of short, overlapping local exchanges whose importance lay in transmitting religions, technologies, and art."
+        "text": "The scarcity of celebrated women painters records institutions that withheld training, not a scarcity of talent."
       }
     ],
     "correctAnswer": "D",
-    "explanation": "**Choice D is correct.** The goal is to state Hansen's MAIN POINT (her main argument) about the Silk Road, and Choice D does that directly: the Silk Road \"is best understood not as a single transcontinental trade artery but as a shifting web of short, overlapping local exchanges whose importance lay in transmitting religions, technologies, and art.\"\n\n**The Full Solution:**\n- How to spot it: when the goal says 'present the main claim,' find the option that says what the person ARGUES -- not background about her, not where the term came from, not a side note about her sources.\n- The notes give Hansen's argument from her 2012 book: the routes were really a shifting web of short, overlapping local trades, and what mattered was the spread of religions, ideas, and art, not the amount of goods.\n- Choice D states both halves of that argument and credits it to Hansen, so it's the main point.\n\n**Why the other choices are wrong:**\n- A: Gives only background (Hansen's specialty and job at Yale), never stating her claim.\n- B: Reports where the term 'Silk Road' came from (1877) and the popular single-highway image Hansen pushes back on -- context, not her own argument.\n- C: States a true but side point about her sources (why so much evidence survives in the dry desert oases), not the main argument.",
-    "authoredBy": "performsat-reading-type-fill",
+    "explanation": "**Choice D is correct.** The notes catalog what was withheld from women and then reject the talent explanation, and Choice D states that argument directly.\n\n**The Full Solution:**\n- Underline the bullets that name something withheld: the life-drawing class, workshop apprenticeships, public commissions.\n- The final bullet fixes the second half of the argument by ruling out individual genius as the variable. Choice D keeps both halves — institutions withheld access, and talent is not the explanation.\n- Notes that describe what was studied, or how a few women trained anyway, are evidence for that argument rather than the argument.\n\n**Why the other choices are wrong:**\n- A: Describes the subject examined, not the conclusion reached about it.\n- B: A supporting observation. It explains how a handful of women trained; it does not state the claim the observation supports.\n- C: Biography. Where a scholar taught has no bearing on what she argued.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "rs-present-claim"
+      "authoredFor": "rs-present-claim",
+      "people": [
+        {
+          "name": "Linda Nochlin",
+          "sourceUrl": "https://www.nyu.edu/about/news-publications/news/2017/november/linda-nochlin.html"
+        }
+      ]
     },
     "studentNotes": {
       "intro": "While researching a topic, a student has taken the following notes:",
       "bullets": [
-        "Valerie Hansen is a historian of premodern China and a professor of history at Yale University whose work examines cross-cultural exchange in Asia.",
-        "The phrase \"Silk Road\" was coined in 1877 by the geographer Ferdinand von Richthofen and is often imagined as a single, heavily traveled highway carrying caravans of silk between China and Rome.",
-        "The surviving documentary record from sites such as Dunhuang and Turfan shows mostly small-scale, local, and regional movement of goods rather than continuous long-distance commerce.",
-        "In *The Silk Road: A New History* (2012), Hansen argues that the routes are better understood as a shifting web of short, overlapping local exchanges than as a single transcontinental trade artery.",
-        "On Hansen's view, the lasting historical significance of these routes lay in the transmission of religions, languages, technologies, and art rather than in the volume of trade itself.",
-        "Hansen notes that paper documents survived in the dry climate of the Taklamakan Desert oases, which is why so much of the evidence comes from that region."
+        "Linda Nochlin was an art historian at the Institute of Fine Arts, New York University.",
+        "In 1971 she published an essay asking why the standard histories of European art name so few women.",
+        "European academies barred women from the life-drawing class, which was the core of training for large historical paintings.",
+        "Workshop apprenticeships and public commissions were largely closed to women as well.",
+        "Women who did paint professionally before 1900 were often the daughters of artists, who could train them at home.",
+        "Nochlin rejected the idea that the question is one about individual genius."
       ],
-      "goal": "The student wants to present Hansen's central claim about the ancient Silk Road trade routes."
+      "goal": "The student wants to present Nochlin’s central claim about the scarcity of women in the canon of European painting."
     }
   },
   {
@@ -918,38 +1040,44 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "Kaltenegger argues that the starlight filtered through a transiting planet's atmosphere carries a readable chemical fingerprint, so the search for life can become an observational science rather than only speculation."
+        "text": "Speech divides into short units because only a little information is active in awareness at once."
       },
       {
         "id": "B",
-        "text": "Lisa Kaltenegger is an astronomer at Cornell University who studies the atmospheres of potentially habitable exoplanets."
+        "text": "Chafe transcribed recorded conversations and narratives for his 1994 book."
       },
       {
         "id": "C",
-        "text": "In the transit method, a planet is detected indirectly, by the slight, periodic dimming of a star as the planet passes in front of it."
+        "text": "The intonation units in Chafe’s transcripts are often set off from one another by a brief pause."
       },
       {
         "id": "D",
-        "text": "Kaltenegger notes that telling a biological signal apart from gases produced by non-living geological processes remains a central difficulty, a problem she considers far from solved."
+        "text": "Chafe spent much of his career as a linguist at the University of California, Santa Barbara."
       }
     ],
     "correctAnswer": "A",
-    "explanation": "**Choice A is correct.** The goal is to state Kaltenegger's MAIN POINT (her main argument) about the search for life on exoplanets, and Choice A does that directly: \"the starlight filtered through a transiting planet's atmosphere carries a readable chemical fingerprint, so the search for life can become an observational science rather than only speculation.\"\n\n**The Full Solution:**\n- How to spot it: when the goal says 'present the main claim,' look for the option that says what the person ARGUES -- not background about her, not a definition of a method, not a leftover difficulty.\n- The notes give Kaltenegger's argument from her 2024 book: the light passing through a planet's air carries a readable chemical 'fingerprint,' so hunting for life can become real observation instead of just guessing.\n- Choice A states that argument and credits it to Kaltenegger, so it's the main point.\n\n**Why the other choices are wrong:**\n- B: Gives background (Kaltenegger's job and research focus at Cornell), never stating her claim.\n- C: Defines the transit method (spotting a planet by a star's regular dimming) without saying what Kaltenegger argues.\n- D: Reports a true but side point -- the difficulty of telling a life-made gas from a rock-made one -- rather than her main argument.",
-    "authoredBy": "performsat-reading-type-fill",
+    "explanation": "**Choice A is correct.** The notes pair an observation about speech with a fact about attention, and Choice A joins them into the claim the notes are built to support.\n\n**The Full Solution:**\n- The goal asks for a claim about the structure of spoken language, so the answer has to explain the structure, not merely describe it.\n- The transcripts show speech arriving in short bursts that each carry one new piece of information; the last bullet supplies the reason — little information is active in awareness at a time. Choice A states that link.\n- A bullet about how the recordings were handled, or about one property of the units, is evidence and not the claim.\n\n**Why the other choices are wrong:**\n- B: The method behind the book rather than its argument.\n- C: One true feature of intonation units. It reports a pause, not a claim about why speech takes this shape.\n- D: Biography, which the goal does not ask for.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
-      "authoredFor": "rs-present-claim"
+      "authoredFor": "rs-present-claim",
+      "people": [
+        {
+          "name": "Wallace Chafe",
+          "sourceUrl": "https://www.linguistics.ucsb.edu/people/wallace-chafe"
+        }
+      ]
     },
     "studentNotes": {
       "intro": "While researching a topic, a student has taken the following notes:",
       "bullets": [
-        "Lisa Kaltenegger is an astronomer at Cornell University who studies the atmospheres of potentially habitable exoplanets.",
-        "The transit method detects a planet indirectly, by measuring the slight, periodic dimming of a star as the planet passes in front of it.",
-        "When a planet transits, a small fraction of the star's light filters through the planet's atmosphere, and different gases absorb that light at characteristic wavelengths.",
-        "In *Alien Earths* (2024), Kaltenegger argues that this filtered starlight carries a readable chemical fingerprint, so the search for life can become an observational science rather than only speculation.",
-        "On Kaltenegger's view, identifying combinations of gases that life would sustain is the key to recognizing a living world from light alone.",
-        "Kaltenegger notes that distinguishing a biological signal from gases produced by non-living geological processes remains a central difficulty for the approach."
+        "Wallace Chafe was a linguist at the University of California, Santa Barbara.",
+        "For his 1994 book Discourse, Consciousness, and Time he transcribed recordings of ordinary conversation and narration.",
+        "In the transcripts, speech arrives in short bursts of roughly five words, each with its own intonation contour.",
+        "Chafe called these bursts intonation units; they are often set off from one another by a brief pause.",
+        "Each unit tends to introduce only one new piece of information.",
+        "Studies of attention find that only a small amount of information is active in awareness at any moment."
       ],
-      "goal": "The student wants to present Kaltenegger's central claim about the search for life on exoplanets."
+      "goal": "The student wants to present Chafe’s central claim about the structure of spoken language."
     }
   },
   {
@@ -963,28 +1091,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "fragile"
+        "text": "expenses"
       },
       {
         "id": "B",
-        "text": "versatile"
+        "text": "ceremonies"
       },
       {
         "id": "C",
-        "text": "ancient"
+        "text": "functions"
       },
       {
         "id": "D",
-        "text": "decorative"
+        "text": "materials"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "**Choice B is correct.** The sentences before the blank list three different jobs a single reef does at once -- sheltering young fish, slowing waves, and feeding fishing communities -- so the blank needs a word meaning able to do many different jobs. \"Versatile\" fits exactly, and matches the closing point that the reef's value \"cannot be reduced to any single function.\"\n\n**The Full Solution:**\n- How to spot it: in a fill-in-the-word question, the surrounding sentence usually DEFINES the missing word for you with clues. Find those clues first, then pick the word that matches.\n- The clues here are three different roles (shelters fish, breaks waves, feeds people) plus the phrase \"not any single function.\" Together they point to one idea: doing many jobs.\n- \"Versatile\" means exactly that -- good at many different things -- so it's the match.\n\n**Why the other choices are wrong:**\n- A: \"Fragile\" tempts you because reefs are famously delicate, but the clues describe what the reef DOES, not how easily it breaks, so it doesn't fit.\n- C: \"Ancient\" is about age, which the listed jobs give no clue about.\n- D: \"Decorative\" suggests just for looks, the opposite of the useful roles the passage stresses.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** The colon introduces three different jobs one tally did — receipt, auditor’s record, saleable claim — and functions is the category word those three jobs belong to.\n\n**The Full Solution:**\n- The blank sits immediately before a colon, so the list after the colon defines it. Read the list first: a receipt, a record for the auditors, a claim its holder could sell.\n- None of those three is a substance, an occasion, or a payment. All three are things the stick did, so the blank must name a kind of use. Functions covers all three.\n- With a list after the blank, test each choice against every item. A word that fits one item and fails the others is out.\n\n**Why the other choices are wrong:**\n- A: An expense is money going out. A receipt for money already paid and a saleable claim are not expenses.\n- B: Nothing in the list is a ritual occasion; the sentence describes routine bookkeeping.\n- D: Materials would name what the tally was made from — hazel wood — rather than what it did.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "wic-example-or-illustration"
     },
-    "passage": "Coral reefs are often described as the rainforests of the sea, but the phrase undersells how many roles a single reef plays. A healthy reef shelters juvenile fish among its branches, breaks the force of incoming waves before they reach the shoreline, and supplies the daily catch that feeds nearby fishing communities. Marine biologists therefore treat the reef as a remarkably ______ structure, one whose value cannot be reduced to any single function."
+    "passage": "For more than six centuries the English Exchequer recorded payments on notched hazel sticks. Each stick was split lengthwise, the payer keeping one half and the treasury the other, so that the two halves had to be matched before an account was settled. A single tally therefore served several ______: a receipt for money already handed over, a record the auditors could file, and a claim on future revenue that its holder could sell to someone else."
   },
   {
     "id": 9027,
@@ -997,28 +1125,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "profitable"
+        "text": "vocabulary"
       },
       {
         "id": "B",
-        "text": "hazardous"
+        "text": "infrastructure"
       },
       {
         "id": "C",
-        "text": "cultural"
+        "text": "workforce"
       },
       {
         "id": "D",
-        "text": "ancient"
+        "text": "paperwork"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "**Choice C is correct.** The blank names what the routes were BEYOND just business, and the passage gives clear examples of non-business cargo -- papermaking know-how, Buddhist scripture, new musical instruments -- summed up as moving \"knowledge and belief.\" Those examples point straight to \"cultural\": the sharing of ideas, learning, and religion.\n\n**The Full Solution:**\n- How to spot it: notice the contrast word. \"Not merely commercial but genuinely ______\" tells you the blank must name something OTHER than trade.\n- Then read the examples that define it: papermaking, scripture, instruments -- the spread of ideas, learning, and religion.\n- The word for that is \"cultural,\" so C is the match.\n\n**Why the other choices are wrong:**\n- A: \"Profitable\" just restates the business side the sentence is contrasting AGAINST, not the new idea the examples point to.\n- B: \"Hazardous\" names a danger that the examples (knowledge, belief) do nothing to support.\n- D: \"Ancient\" is about age, unrelated to the sharing of ideas and religion the examples show.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** Cranes, chassis, rail cars, and paved docks are all fixed physical equipment, and infrastructure is the category those examples belong to.\n\n**The Full Solution:**\n- The colon signals that the list defines the blank, so read the four items before choosing: cranes, truck chassis, rail cars, paved storage.\n- Every item is a piece of built equipment that had to be replaced or resized. Infrastructure names that category precisely, and it also explains why a port that refused the expense lost its traffic.\n- Reject any word that would fit only a document, only a person, or only a name.\n\n**Why the other choices are wrong:**\n- A: Vocabulary would name words. Cranes and docks are equipment, not terminology.\n- C: A workforce is made of people. Not one item in the list is a worker.\n- D: Paperwork would name forms and records. The text lists things that had to be built, not filed.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "wic-example-or-illustration"
     },
-    "passage": "The overland routes linking Han China to the Mediterranean are often pictured as little more than channels for luxury goods. Yet the caravans that crossed them carried far more than bolts of silk, sacks of pepper, and crates of glassware: papermaking techniques, Buddhist scripture, and new musical instruments traveled the same roads. For the merchants and monks who used them, the routes were therefore not merely commercial but genuinely ______, moving knowledge and belief as readily as merchandise."
+    "passage": "When container shipping spread in the 1960s, the box itself was the cheapest part of the change. Carrying one container from a factory in one country to a warehouse in another meant rebuilding the ______ around it: cranes tall enough to lift a loaded box, truck chassis cut to its dimensions, rail cars fitted with matching locks, and docks with acres of paved storage. Ports that would not rebuild lost their traffic to ports that did."
   },
   {
     "id": 9028,
@@ -1031,28 +1159,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "narrative"
+        "text": "commission"
       },
       {
         "id": "B",
-        "text": "historical"
+        "text": "rivalry"
       },
       {
         "id": "C",
-        "text": "decorative"
+        "text": "compromise"
       },
       {
         "id": "D",
-        "text": "formal"
+        "text": "collaboration"
       }
     ],
     "correctAnswer": "D",
-    "explanation": "**Choice D is correct.** The sentence ends with a list of examples -- line, color, and shape -- as the things that create the painting's effect. \"Formal\" is the word for exactly those basic visual building blocks of a picture (its formal elements), as opposed to WHAT the picture shows.\n\n**The Full Solution:**\n- How to spot it: the blank is defined by the list right after it. The blank labels \"line, color, and shape,\" so pick the word that names those building blocks.\n- The passage also says the emotion comes \"not from any depicted scene\" -- meaning not from a story or subject, but from the visual parts themselves.\n- \"Formal\" is the word for a work's visual building blocks (line, color, shape), so D fits.\n\n**Why the other choices are wrong:**\n- A: \"Narrative\" is the main trap -- it picks up on \"scene\" and \"effect,\" but the passage says the emotion comes from NO story at all, so these elements are the opposite of narrative (story).\n- B: \"Historical\" describes neither line, color, and shape nor the direct expressive role the examples show.\n- C: \"Decorative\" suggests just-for-looks ornament, not the basic expressive parts (line, color, shape) the sentence names.",
-    "authoredBy": "performsat-reading-type-fill",
+    "explanation": "**Choice D is correct.** The list names four specialists whose separate contributions produced one sheet, and collaboration is the word for work divided that way.\n\n**The Full Solution:**\n- The blank precedes a colon, so the list defines it: publisher, designer, carver, printer.\n- Each of the four does a different job on the same object, and the last sentence stresses that they depend on one another. Collaboration is the only choice that names joint production.\n- The opening clause sets up the point — one name on the print, four hands behind it — so the blank must contradict the impression of solitary authorship.\n\n**Why the other choices are wrong:**\n- A: A commission is an order placed for a work. It names how a project is paid for, not the division of labor the list describes.\n- B: Rivalry would mean the four worked against one another; the text says they depended on one another.\n- C: A compromise is a settlement between opposed positions. Nothing in the list is a dispute.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "wic-example-or-illustration"
     },
-    "passage": "When the painter Wassily Kandinsky moved away from recognizable subjects in the early twentieth century, he came to treat the basic units of a picture as expressive in their own right. In his theoretical writings, he argued that a sharp diagonal could convey tension, that a warm yellow could seem to advance toward the viewer while a cool blue receded, and that a steady horizontal line could suggest calm. For Kandinsky, then, the painting's emotional effect arises not from any depicted scene but from these purely ______ elements—line, color, and shape—working on the viewer directly."
+    "passage": "A Japanese woodblock print of the Edo period usually carries a single artist’s name, though the sheet itself was the product of a ______: a publisher put up the money and chose the subject, a designer supplied the drawing, a carver cut that drawing into cherry-wood blocks, and a printer inked the blocks and pulled the impressions. Any one of the four could ruin the work of the other three."
   },
   {
     "id": 9029,
@@ -1065,28 +1193,28 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "indirect"
+        "text": "features"
       },
       {
         "id": "B",
-        "text": "deliberate"
+        "text": "conclusions"
       },
       {
         "id": "C",
-        "text": "visible"
+        "text": "misprints"
       },
       {
         "id": "D",
-        "text": "permanent"
+        "text": "endorsements"
       }
     ],
     "correctAnswer": "A",
-    "explanation": "**Choice A is correct.** The passage gives three examples -- a wobble, a tiny dip in brightness, and a brief brightening -- and stresses that astronomers \"rarely observe the planets themselves\" but instead \"read the subtle signatures a planet leaves on its star.\" The blank needs a word meaning the planet is found through side effects rather than seen directly, and \"indirect\" fits those examples exactly.\n\n**The Full Solution:**\n- How to spot it: the surrounding sentence defines the blank. It says astronomers don't see the planet but read clues it leaves on its STAR -- so the word should mean 'found through clues, not seen directly.'\n- The three examples are all second-hand traces (a wobble, a dip, a brief flash), never the planet itself.\n- \"Indirect\" means detecting something through its effects rather than seeing it directly, so A fits.\n\n**Why the other choices are wrong:**\n- B: \"Deliberate\" fits nothing in the examples -- the effects are natural results of gravity and light, not done on purpose.\n- C: \"Visible\" is the main trap because the passage talks about brightness and light, but it points the opposite way: it's the CLUES that are observed, not the planets.\n- D: \"Permanent\" is contradicted by the text, which calls these effects brief (\"a fraction of a percent,\" \"briefly brightens\").",
-    "authoredBy": "performsat-reading-type-fill",
+    "explanation": "**Choice A is correct.** A middle option, the direction of a scale, and the order of two items are all properties of the questionnaire itself, and features is the category word for them.\n\n**The Full Solution:**\n- The dash after the third example hands the list back to the blank, so the blank must name what the three examples have in common.\n- All three are deliberate design details of the instrument, not mistakes and not results. Features is the precise category, and the phrase of the instrument confirms that the blank belongs to the questionnaire rather than to the respondents.\n- The closing clause — the opinions have not changed — rules out any word that would name something the respondents supplied.\n\n**Why the other choices are wrong:**\n- B: Conclusions are what a survey produces. The listed items are inputs, not findings.\n- C: A misprint is an error. Offering a middle option or ordering two items is a choice the designer makes on purpose.\n- D: An endorsement is an expression of support, which none of the three examples is.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "wic-example-or-illustration"
     },
-    "passage": "Astronomers searching for planets around distant stars rarely observe the planets themselves; instead they read the subtle signatures a planet leaves on its star. A planet's gravity makes the star wobble slightly toward and away from Earth, a planet crossing in front of the star dims its light by a fraction of a percent, and the bending of light by a planet's gravity briefly brightens a more distant background star. These ______ effects—a velocity shift, a tiny dip in brightness, a fleeting magnification—are what allow researchers to infer a hidden world's presence."
+    "passage": "Survey researchers have learned to treat a questionnaire as an instrument that can bend its own readings. Whether a question offers a middle option, whether the response scale runs from good to bad or from bad to good, whether an item about the economy comes before or after an item about jobs — such ______ of the instrument can move a reported percentage by several points, even when the opinions being measured have not changed at all."
   },
   {
     "id": 9030,
@@ -1099,27 +1227,441 @@ export const authoredReadingItems = [
     "choices": [
       {
         "id": "A",
-        "text": "coercive"
+        "text": "abbreviations"
       },
       {
         "id": "B",
-        "text": "nudging"
+        "text": "corrections"
       },
       {
         "id": "C",
-        "text": "arbitrary"
+        "text": "relics"
       },
       {
         "id": "D",
-        "text": "deceptive"
+        "text": "borrowings"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "**Choice B is correct.** The passage gives three examples -- fruit at eye level, automatic retirement sign-up, energy bills that show the neighbors' use -- and each one steers a choice while \"leaving them entirely free to choose otherwise.\" The closing sentence adds that they work \"through the design of the choice rather than through mandates or financial penalties.\" The blank needs a word for gently steering people without forcing them, and \"nudging\" fits exactly.\n\n**The Full Solution:**\n- How to spot it: the surrounding sentences define the blank. They describe arrangements that point you toward a choice but still let you opt out -- gentle steering, not force.\n- The passage even rules out force directly: \"rather than through mandates or financial penalties\" (no rules, no fines).\n- \"Nudging\" means exactly that -- a gentle push that leaves you free to choose -- so B fits.\n\n**Why the other choices are wrong:**\n- A: \"Coercive\" is the main trap -- it captures the steering, but it means forcing, which clashes with the examples' freedom to opt out and the clear 'no rules, no fines.'\n- C: \"Arbitrary\" means pointless or random, but these examples are purposeful designs aimed at a goal.\n- D: \"Deceptive\" means tricking people secretly, yet the choices openly leave people free to decide, so nothing supports it.",
-    "authoredBy": "performsat-reading-type-fill",
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** Each of the three spellings preserves a sound speakers no longer make, and relics is the word for something surviving from an earlier state.\n\n**The Full Solution:**\n- The colon makes the three examples the definition of the blank, so read them first: a silent k, a silent gh, a silent final e.\n- The sentence before the blank says that writing was frozen while speech kept moving. A spelling left behind by that movement is a survival, and relics names it exactly.\n- The phrase of an older pronunciation is the tell: the blank must be something that points backward in time.\n\n**Why the other choices are wrong:**\n- A: An abbreviation shortens a word. None of the three examples is a shortened form; each adds a letter that is no longer sounded.\n- B: A correction repairs an error, but the text calls these spellings only apparent errors and explains them historically.\n- D: A borrowing is a word taken from another language. The examples are letters kept from an earlier stage of English itself.",
+    "authoredBy": "seva-rw-fill-recreation",
     "_meta": {
       "authoredFor": "wic-example-or-illustration"
     },
-    "passage": "Behavioral economists have shown that how a choice is presented can steer decisions without removing any options. A cafeteria that places fruit at eye level and tucks desserts behind the counter, a retirement plan that signs new employees up automatically unless they opt out, and a utility bill that shows a household its neighbors' average energy use all guide people toward a particular outcome while leaving them entirely free to choose otherwise. Such ______ arrangements work precisely because they shape behavior through the design of the choice rather than through mandates or financial penalties."
+    "passage": "English spelling was fixed on the page at roughly the moment English pronunciation was changing fastest. Printers settled on standard written forms in the fifteenth and sixteenth centuries, while the vowels and consonants of the spoken language went on shifting for another two hundred years. What look like arbitrary errors in modern spelling are often ______ of an older pronunciation: the k in knight, the gh in through, the final e in name."
+  },
+  {
+    "id": 9031,
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "band": 3,
+    "domain": "expression-of-ideas",
+    "skill": "transitions",
+    "question": "Which choice completes the text with the most logical transition?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Consequently,"
+      },
+      {
+        "id": "B",
+        "text": "Meanwhile,"
+      },
+      {
+        "id": "C",
+        "text": "By contrast,"
+      },
+      {
+        "id": "D",
+        "text": "Eventually,"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** The passage sets two developments of the 1880s side by side in two countries, and Meanwhile is the transition that holds concurrent developments together.\n\n**The Full Solution:**\n- Take the first sentence as an instruction: two tracks that ran side by side promises two strands in the same period rather than a chain of events.\n- The sentence before the blank reports what was happening in France; the sentence after reports what engineers at a German firm were doing during the same decade. Meanwhile marks that simultaneity without claiming that either strand produced the other.\n- Settle the relation before weighing the wording. When neither half causes, contradicts, or follows the other, the text needs a simultaneity transition.\n\n**Why the other choices are wrong:**\n- A: Consequently would make the German load tests an effect of the French licensing, but the passage presents the two as parallel rather than as cause and effect.\n- C: By contrast requires opposition. Both sentences describe the same technique spreading, so there is nothing for a contrast to work on.\n- D: Eventually would place the testing after the licensing in a sequence, contradicting the two tracks that ran side by side.",
+    "_meta": {
+      "sourceRef": "pilot-r1-transitions-meanwhile"
+    },
+    "passage": "Reinforced concrete reached ordinary building sites in the 1880s along two tracks that ran side by side. In France, the arrangements of iron rods first patented for garden tubs and water tanks were being licensed to builders abroad, one system at a time. ______, engineers at a German firm were loading test beams until they broke and publishing the figures, so that the rods in a floor could be placed by calculation.",
+    "authoredBy": "seva-rw-fill-recreation"
+  },
+  {
+    "id": 9032,
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "band": 4,
+    "domain": "expression-of-ideas",
+    "skill": "transitions",
+    "question": "Which choice completes the text with the most logical transition?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "For example,"
+      },
+      {
+        "id": "B",
+        "text": "Meanwhile,"
+      },
+      {
+        "id": "C",
+        "text": "By contrast,"
+      },
+      {
+        "id": "D",
+        "text": "As a result,"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "**Choice D is correct.** The final sentence states the consequence of the wage pressure described just before it, and As a result marks that consequence.\n\n**The Full Solution:**\n- Identify what the sentence before the blank establishes: musicians’ wages rise with factory wages because employers compete for the same workers.\n- The sentence after the blank reports what follows from that — the price of an hour of music rises without any gain in efficiency. That is an effect, so the blank takes a cause-and-effect transition.\n- Confirm the direction. The rising price is produced by the rising wages, not merely observed alongside them, so a simple time or contrast marker will not do.\n\n**Why the other choices are wrong:**\n- A: For example would make the price of music an instance of the wage claim, but it is a consequence of it.\n- B: Meanwhile places two developments side by side in time and hides the causal link the passage has just built.\n- C: By contrast requires opposition, and the final sentence agrees with what precedes it.",
+    "_meta": {
+      "sourceRef": "pilot-r2-transitions-therefore"
+    },
+    "passage": "Productivity in manufacturing rises decade after decade: the same worker, better equipped, turns out more bolts than before. Some services resist that arithmetic. A string quartet still requires four players and the same half hour it required two centuries ago. Wages in the concert hall nonetheless track wages in the factory, because employers in every sector are bidding for the same workers. ______, the price of an hour of live music climbs steadily even though the hour is no more efficient than before.",
+    "authoredBy": "seva-rw-fill-recreation"
+  },
+  {
+    "id": 9033,
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "band": 3,
+    "domain": "expression-of-ideas",
+    "skill": "rhetorical-synthesis",
+    "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "A planet shows a tiny disc of many independent points of light, whose separate flickers average out into a steady glow."
+      },
+      {
+        "id": "B",
+        "text": "Stars flicker while the planets shine steadily, even though the light of both crosses the same atmosphere."
+      },
+      {
+        "id": "C",
+        "text": "Because the planets are far nearer than the stars, their light passes through less of the disturbing air."
+      },
+      {
+        "id": "D",
+        "text": "Pockets of warm and cool air drift constantly across the line of sight, bending the light that happens to pass through them."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "**Choice A is correct.** The goal asks why one kind of light steadies and the other does not, and Choice A supplies the reason: a planet is a disc of many points whose separate flickers cancel one another.\n\n**The Full Solution:**\n- Separate the finding from its explanation. The finding is the difference between the flickering stars and the steady planets, so the explanation has to be a mechanism the notes offer for that difference.\n- Two bullets carry it: a planet is near enough to present a tiny disc, which amounts to many neighboring points of light, and the flickers of those points are independent of one another. Choice A joins them and draws the consequence.\n- A statement that is equally true of stars and planets cannot explain why the two look different, however accurate it is.\n\n**Why the other choices are wrong:**\n- B: A restatement of the finding. The goal asks why the planets hold steady, not that they do.\n- C: The notes close this off. The light of both crosses the same atmosphere, so the distance of the source is not what separates them.\n- D: True of everything in the sky. It explains why any light flickers, not why a planet does not.",
+    "_meta": {
+      "authoredFor": "rs-explain-finding",
+      "sourceRef": "pilot-r3-rhetsyn-shortest"
+    },
+    "authoredBy": "seva-rw-fill-recreation",
+    "studentNotes": {
+      "intro": "While researching a topic, a student has taken the following notes:",
+      "bullets": [
+        "On a clear night, the stars flicker in brightness while the planets among them shine with a steady light.",
+        "The light of both crosses the same miles of atmosphere before it reaches the eye.",
+        "Air at different temperatures bends light by different amounts, and pockets of warm and cool air drift across the line of sight.",
+        "Even the nearest star is so distant that its light arrives as a single point, which one drifting pocket of air displaces all at once.",
+        "A planet is far smaller but near enough to present a tiny disc, which is in effect many neighboring points of light.",
+        "The flickers of those neighboring points are independent of one another."
+      ],
+      "goal": "The student wants to explain why the planets do not flicker as the stars do."
+    }
+  },
+  {
+    "id": 9034,
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "band": 4,
+    "domain": "information-and-ideas",
+    "skill": "command-of-evidence-textual",
+    "question": "Which quotation from Ethan Frome most effectively illustrates the claim?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "“During the early part of my stay I had been struck by the contrast between the vitality of the climate and the deadness of the community.”"
+      },
+      {
+        "id": "B",
+        "text": "“Every one in Starkfield knew him and gave him a greeting tempered to his own grave mien; but his taciturnity was respected and it was only on rare occasions that one of the older men of the place detained him for a word.”"
+      },
+      {
+        "id": "C",
+        "text": "“At intervals, however, the post-master would hand him an envelope addressed to Mrs. Zenobia—or Mrs. Zeena—Frome, and usually bearing conspicuously in the upper left-hand corner the address of some manufacturer of patent medicine and the name of his specific.”"
+      },
+      {
+        "id": "D",
+        "text": "“Though Harmon Gow developed the tale as far as his mental and moral reach permitted there were perceptible gaps between his facts, and I had the sense that the deeper meaning of the story was in the gaps.”"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** The envelope is exactly the kind of ordinary object the claim describes, and what it carries — a patent-medicine address, a wife’s name — tells the reader what the household costs without any statement about it.\n\n**The Full Solution:**\n- Split the claim in two before reading the quotations: the disclosure must come through an object that passes through Frome’s hands, and it must arrive without direct commentary.\n- Choice C satisfies both halves at once. The post-master hands Frome an envelope, and the envelope is addressed to Mrs. Frome and franked by a maker of patent medicine, which reveals a sick wife and a recurring expense while the narrator explains nothing.\n- Eliminate any quotation that carries no object, or that states its meaning outright instead of leaving it in the detail.\n\n**Why the other choices are wrong:**\n- A: A generalization about the village and its weather. No object passes through Frome’s hands, and the sentence tells the reader its point rather than showing it.\n- B: This describes how the townspeople treat Frome. It is about manners rather than about anything he handles, so it misses the first half of the claim.\n- D: This is the narrator commenting explicitly on the gaps in his source — the opposite of disclosure through physical detail.",
+    "_meta": {
+      "authoredFor": "coe-text-illustrate-quote",
+      "sourceRef": "pilot-r4-coe-textual",
+      "source": {
+        "title": "Ethan Frome",
+        "author": "Edith Wharton",
+        "year": 1911,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/4517"
+      }
+    },
+    "passage": "Ethan Frome, a 1911 novel by Edith Wharton, is narrated by an outsider stranded for a winter in the New England village of Starkfield, where he slowly assembles the history of a neighbor who never speaks of himself. A reader might argue that the novel discloses the burdens of Frome’s household through the ordinary objects that pass through his hands rather than through any direct account of his circumstances.",
+    "authoredBy": "seva-rw-fill-recreation"
+  },
+  {
+    "id": 9035,
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "band": 4,
+    "domain": "craft-and-structure",
+    "skill": "words-in-context",
+    "question": "Which choice completes the text with the most logical and precise word or phrase?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "methodical"
+      },
+      {
+        "id": "B",
+        "text": "undisciplined"
+      },
+      {
+        "id": "C",
+        "text": "deliberate"
+      },
+      {
+        "id": "D",
+        "text": "hesitant"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** Yet flags a reversal, so the blank must name the impression the recordings overturn — speech without rules — and undisciplined is that word.\n\n**The Full Solution:**\n- Find the pivot. Yet separates the common description from the evidence, so whatever the blank says must be the opposite of what the recordings show.\n- The recordings show switches falling at predictable boundaries that speakers can judge as right or wrong — in other words, governed by rules. The description being corrected must therefore mean ungoverned, which is undisciplined.\n- The appositive as though each switch were a lapse in control confirms the direction: the blank is a criticism, not a compliment.\n\n**Why the other choices are wrong:**\n- A: Methodical is what the evidence establishes, so putting it before Yet makes the sentence contradict itself.\n- C: Deliberate likewise agrees with the evidence rather than opposing it, and it does not describe a lapse.\n- D: Hesitant would describe the pace of the speech, not whether it follows rules, which is the question the passage raises.",
+    "_meta": {
+      "authoredFor": "wic-contrast",
+      "sourceRef": "pilot-r5-wic-literary"
+    },
+    "passage": "Speakers who move between two languages in the middle of a sentence are often described as ______, as though each switch were a lapse in control. Yet recordings of bilingual conversation show that the switches fall at predictable grammatical boundaries: between a clause and its complement, or before a full noun phrase, but almost never between an article and the noun it introduces. Speakers reject the boundaries they never use as plainly ungrammatical.",
+    "authoredBy": "seva-rw-fill-recreation"
+  },
+  {
+    "id": 9036,
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "band": 4,
+    "domain": "craft-and-structure",
+    "skill": "words-in-context",
+    "question": "Which choice completes the text with the most logical and precise word or phrase?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "enduring"
+      },
+      {
+        "id": "B",
+        "text": "ornamental"
+      },
+      {
+        "id": "C",
+        "text": "expensive"
+      },
+      {
+        "id": "D",
+        "text": "interchangeable"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "**Choice D is correct.** The sentence after the blank contrasts filing a replacement by hand with taking one from a drawer, so the property the early machinist did not have is the property of parts that can substitute for one another.\n\n**The Full Solution:**\n- The blank is inside a negative, so the second sentence has to supply what was missing. Read it first: each screw fit one nut, and a replacement had to be filed by hand rather than taken from a drawer.\n- Rather than marks the contrast. A part taken from a drawer works because any one of them fits, which is what interchangeable means.\n- The last sentence confirms the reading: once the thread tables existed, fasteners could be bought like nails, which are bought by the box precisely because they are identical.\n\n**Why the other choices are wrong:**\n- A: Nothing in the passage concerns how long a bolt lasted; hand-cut screws are not described as short-lived.\n- B: Ornament is never at issue. The contrast is about fit, not appearance.\n- C: Cost enters only at the end, and even there the point is availability rather than price.",
+    "authoredBy": "seva-rw-fill-recreation",
+    "_meta": {
+      "authoredFor": "wic-contrast",
+      "sourceRef": "lit-r1-wic-correction-hard"
+    },
+    "passage": "Before the middle of the nineteenth century, a machinist did not treat a bolt as an ______ part. Each screw was cut to fit one nut, on one machine, in one shop, so a replacement had to be filed by hand rather than taken from a drawer. The tables of thread angles and pitches published in Britain in 1841 changed that arithmetic, and the shops that adopted them could soon buy fasteners the way they bought nails."
+  },
+  {
+    "id": 9037,
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "band": 3,
+    "domain": "craft-and-structure",
+    "skill": "words-in-context",
+    "question": "Which choice completes the text with the most logical and precise word or phrase?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "minor"
+      },
+      {
+        "id": "B",
+        "text": "recent"
+      },
+      {
+        "id": "C",
+        "text": "costly"
+      },
+      {
+        "id": "D",
+        "text": "delicate"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "**Choice A is correct.** The blank is set against consequential ones, so it must mean the opposite of consequential, and minor does.\n\n**The Full Solution:**\n- Locate the contrast inside the first sentence: rather than among its consequential ones. The blank names the category the tube is wrongly filed under.\n- The opposite of consequential is unimportant, so the blank must be a word for small significance. Minor is the precise fit.\n- The sentence beginning Yet then shows why the filing is wrong, which confirms that the blank understates the tube rather than describing it accurately.\n\n**Why the other choices are wrong:**\n- B: Recent describes when something appeared, not how much it mattered, and an 1841 patent is not recent in any case.\n- C: Cost is never raised; the passage compares importance, not price.\n- D: Delicate would describe the tube’s construction, which the contrast with consequential does not call for.",
+    "authoredBy": "seva-rw-fill-recreation",
+    "_meta": {
+      "authoredFor": "wic-contrast",
+      "sourceRef": "lit-r2-wic-concession-medium"
+    },
+    "passage": "The collapsible metal paint tube, patented in 1841, is easy to file among the ______ inventions of the nineteenth century rather than among its consequential ones. Yet before the tube, oil color was kept in animal bladders that leaked and could not be resealed, so a painter who wanted to work outdoors had to grind and mix a day’s colors in advance and use them before they spoiled."
+  },
+  {
+    "id": 9038,
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "band": 3,
+    "domain": "information-and-ideas",
+    "skill": "central-ideas-and-details",
+    "question": "Which choice best states the main idea of the text?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Mill’s father supervised each of his son’s writing exercises, including the histories Mill composed for his own amusement."
+      },
+      {
+        "id": "B",
+        "text": "Mill found the verses he was required to write more valuable than the histories he wrote on his own."
+      },
+      {
+        "id": "C",
+        "text": "Mill valued his self-directed historical writing partly because it went unread, unlike the required exercises he disliked."
+      },
+      {
+        "id": "D",
+        "text": "Mill’s boyhood histories were more accomplished than his later account of them suggests."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "**Choice C is correct.** The passage sets one kind of writing against another: histories written by choice and left unread, and verses written by command and disliked.\n\n**The Full Solution:**\n- Take the two sentences as a pair. The first explains what made the histories pleasant — the father never asked to see them, so there was no accountability and no critical eye.\n- The second sentence supplies the contrast: unlike the histories, verse writing was compulsory, and it was among the most disagreeable of the tasks. Choice C states both halves.\n- A main-idea answer must cover the whole text. Any option that describes only one sentence, or that reverses the contrast, is out.\n\n**Why the other choices are wrong:**\n- A: The reverse of what the text says. The father deliberately never asked to see the histories.\n- B: The text calls the required verses one of the most disagreeable tasks, so it does not rank them above the voluntary histories.\n- D: The passage never evaluates the quality of the histories, only the conditions under which they were written.",
+    "authoredBy": "seva-rw-fill-recreation",
+    "_meta": {
+      "authoredFor": "cid-main-idea",
+      "sourceRef": "lit-r3-cid-main-idea-medium",
+      "source": {
+        "title": "Autobiography",
+        "author": "John Stuart Mill",
+        "year": 1873,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/10378"
+      }
+    },
+    "passage": "The following text is from John Stuart Mill’s 1873 memoir Autobiography. As a boy Mill composed histories of his own for amusement, alongside the lessons his father set him.\n\nMy father encouraged me in this useful amusement, though, as I think judiciously, he never asked to see what I wrote; so that I did not feel that in writing it I was accountable to any one, nor had the chilling sensation of being under a critical eye. But though these exercises in history were never a compulsory lesson, there was another kind of composition which was so, namely, writing verses, and it was one of the most disagreeable of my tasks."
+  },
+  {
+    "id": 9039,
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "band": 4,
+    "domain": "craft-and-structure",
+    "skill": "text-structure-and-purpose",
+    "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "It introduces a practical problem that the standard described in the text was unable to solve."
+      },
+      {
+        "id": "B",
+        "text": "It identifies the mathematical property that makes the series of paper sizes described afterward possible."
+      },
+      {
+        "id": "C",
+        "text": "It concedes a limitation of the system before the text goes on to list that system’s advantages."
+      },
+      {
+        "id": "D",
+        "text": "It illustrates the standard by describing how one particular sheet of paper is manufactured."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "**Choice B is correct.** The underlined sentence explains why the square-root-of-two proportion is unique, and every consequence the passage lists afterward depends on that uniqueness.\n\n**The Full Solution:**\n- Read the sentence in position. It follows the definition of the standard and precedes the word Because, which is the signal that what comes next follows from it.\n- What comes next is the nesting of the sizes, the fold that yields the next size down, the enlargement without cropping, and the cabinet that holds folded halves. All of these rest on the claim that only this proportion survives halving.\n- A function question asks what the sentence does for the whole text, so trace its consequences forward rather than paraphrasing it.\n\n**Why the other choices are wrong:**\n- A: No problem goes unsolved. The sentence states a property the system exploits successfully.\n- C: Nothing is conceded. Surviving being halved is the system’s strength, not a limitation.\n- D: Manufacture is never mentioned; the sentence concerns geometry, not how paper is made.",
+    "authoredBy": "seva-rw-fill-recreation",
+    "_meta": {
+      "sourceRef": "lit-r4-tsp-repeated-image-hard"
+    },
+    "passage": "Most of the world’s office paper follows a standard published in Germany in 1922. The system fixes one starting area, a single square meter, and one proportion: the long side of every sheet is the square root of two times the short side. __That proportion is the only one that survives being halved, since folding a sheet of any other shape changes the relation between its sides.__ Because it survives, each fold produces the next size in the series, and the sizes nest exactly: two A4 pages cover one A3, four cover one A2. A printer can therefore enlarge a page from one size to the next without cropping the image or leaving a band of white, and a cabinet built for one size will hold the folded halves of the size above it."
+  },
+  {
+    "id": 9040,
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "band": 4,
+    "domain": "information-and-ideas",
+    "skill": "inferences",
+    "question": "Which choice most logically completes the text?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "museum visitors everywhere devote less attention to paintings than curators would like them to."
+      },
+      {
+        "id": "B",
+        "text": "visitors find nineteenth-century European painting less engaging than they find other kinds of art."
+      },
+      {
+        "id": "C",
+        "text": "guided tours are what allow museum visitors to spend more than a few seconds with a single work."
+      },
+      {
+        "id": "D",
+        "text": "unguided visitors to this gallery typically looked at a painting for well under a minute."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "**Choice D is correct.** It keeps every limit the text places on the evidence — one gallery, unguided visitors — and claims no more than the median of seventeen seconds will bear.\n\n**The Full Solution:**\n- Mark the limits before reading the choices. The data come from one gallery, one kind of painting, weekday afternoons, and visitors outside a tour.\n- The blank follows Taken by themselves, the measurements can support only, so the answer must be the smallest conclusion the numbers license. Choice D reports the behavior of exactly the group that was watched, in exactly the place it was watched.\n- Any choice that drops a limit, or that compares the observed group with a group never observed, goes beyond the evidence.\n\n**Why the other choices are wrong:**\n- A: Everywhere abandons the limits. One gallery in one museum cannot speak for museum visitors in general.\n- B: The study looked at only one kind of painting, so it offers no comparison with other kinds of art.\n- C: Visitors on guided tours were excluded, so the text supplies no basis for a claim about what tours do.",
+    "authoredBy": "seva-rw-fill-recreation",
+    "_meta": {
+      "authoredFor": "inf-generalization-conclusion",
+      "sourceRef": "lit-r5-inf-scoped-hedge-hard"
+    },
+    "passage": "Researchers who time museum visitors keep finding that people look at paintings for far less time than curators assume. In one large art museum, the median stop in front of a work lasted about seventeen seconds. The observations, though, were gathered in a single gallery of nineteenth-century European painting, on weekday afternoons, and only from visitors who were not taking part in a guided tour. Taken by themselves, the measurements can support only the conclusion that ______"
+  },
+  {
+    "id": 9041,
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "band": 4,
+    "domain": "information-and-ideas",
+    "skill": "command-of-evidence-textual",
+    "question": "Which quotation from Dubliners most effectively illustrates the claim?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "“She looked round the room, reviewing all its familiar objects which she had dusted once a week for so many years, wondering where on earth all the dust came from.”"
+      },
+      {
+        "id": "B",
+        "text": "“Her head was leaned against the window curtains and in her nostrils was the odour of dusty cretonne.”"
+      },
+      {
+        "id": "C",
+        "text": "“Then a man from Belfast bought the field and built houses in it—not like their little brown houses but bright brick houses with shining roofs.”"
+      },
+      {
+        "id": "D",
+        "text": "“The man out of the last house passed on his way home; she heard his footsteps clacking along the concrete pavement and afterwards crunching on the cinder path before the new red houses.”"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "**Choice A is correct.** The sentence puts her attachment entirely into objects she has tended — the familiar things of the room, dusted once a week for so many years — without a word about how she feels.\n\n**The Full Solution:**\n- The claim has two requirements: household objects that she herself has kept in order, and no statement of feeling. Test each quotation against both.\n- Choice A meets both. Reviewing all its familiar objects supplies the household things, which she had dusted once a week for so many years supplies the years of tending, and nothing in the sentence names an emotion.\n- Discard quotations that describe the street or the neighborhood, however atmospheric, since the claim is about objects inside the house that she has maintained.\n\n**Why the other choices are wrong:**\n- B: The curtains and the smell of cretonne are household details, but they are things she is resting against rather than things she has kept in order, so the second half of the claim goes unmet.\n- C: This describes a builder’s work on a field outside, not the interior she has tended.\n- D: A sound from the street. It records the neighborhood in the evening and involves no household object of hers at all.",
+    "authoredBy": "seva-rw-fill-recreation",
+    "_meta": {
+      "authoredFor": "coe-text-illustrate-quote",
+      "sourceRef": "lit-r6-coe-illustrate-hard",
+      "source": {
+        "title": "Dubliners",
+        "author": "James Joyce",
+        "year": 1914,
+        "publicDomain": true,
+        "sourceUrl": "https://www.gutenberg.org/ebooks/2814"
+      }
+    },
+    "passage": "Eveline, one of the stories in James Joyce’s 1914 collection Dubliners, follows a young woman through the evening on which she has decided to leave her family’s house for a life abroad. A reader might argue that the story registers her attachment to that house not in anything she says about it but in the household things she has kept in order for years."
   }
 ];

@@ -1,0 +1,29 @@
+{
+ "id": 10,
+ "question": "For a speaker array, the total length of cable used, in meters, is given by both $4(px + 5) - 3x$ and $17x + 20$ for every number of speakers $x$, where $p$ is a constant. What is the value of $p$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3.5$"
+  },
+  {
+   "id": "B",
+   "text": "$4.25$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the 3 instead of adding it back, solving 4p = 17 - 3 to get 3.5",
+  "B": "ignores the -3x term entirely, solving 4p = 17 to get 4.25",
+  "D": "reaches 4p = 20 but reports 20 without dividing by 4"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Expanding gives $(4p - 3)x + 20$, so $4p - 3 = 17$ and $p = 5$.\n\n**The Full Solution:**\nStep 1: Expand the first expression: $4(px + 5) - 3x = 4px + 20 - 3x$.\nStep 2: Collect the $x$ terms: $(4p - 3)x + 20$. Because the two expressions agree for every $x$, their $x$-coefficients must match and their constants must match. The constants already agree at $20$.\nStep 3: Set $4p - 3 = 17$, so $4p = 20$ and $p = 5$. Check: $4(5x + 5) - 3x = 20x + 20 - 3x = 17x + 20$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3.5$): moves the $-3$ the wrong way, solving $4p = 17 - 3 = 14$.\n* Choice B ($4.25$): drops the $-3x$ term before comparing, solving $4p = 17$.\n* Choice D ($20$): correct through $4p = 20$, then reports that value instead of dividing by $4$.\n\n**Test Day Takeaway:** Two expressions equal for every value of the variable means coefficient equals coefficient. Combine all like terms first, or a stray term outside the parentheses gets lost."
+}

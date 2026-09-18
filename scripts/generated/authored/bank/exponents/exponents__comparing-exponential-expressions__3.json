@@ -1,0 +1,29 @@
+{
+ "question": "A relay's transmitted pulse attenuates by the factor $\\left(\\dfrac{1}{8}\\right)^{x}$ after crossing $x$ shielding layers, and that factor equals $2^{k}$ for every $x$. Which expression gives $k$?",
+ "hint": "A reciprocal can be carried in the exponent.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3x$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\dfrac{x}{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{x}{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$3x$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "writes 1/8 as 2 to the power -1/3",
+  "C": "writes 1/8 as 2 to the power 1/3, losing the negative sign",
+  "D": "ignores that the base is a reciprocal"
+ },
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** $\\dfrac{1}{8} = 2^{-3}$, so the factor is $\\left(2^{-3}\\right)^{x} = 2^{-3x}$ and $k = -3x$.\n\n**The Full Solution:**\nStep 1: Write the base as a power of $2$: $\\dfrac{1}{8} = \\dfrac{1}{2^3} = 2^{-3}$.\nStep 2: Raise it to the $x$: $\\left(2^{-3}\\right)^{x} = 2^{-3x}$.\nStep 3: Matching exponents gives $k = -3x$. Check at $x = 1$: $\\dfrac18 = 2^{-3}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-\\dfrac{x}{3}$): writes $\\dfrac18$ as $2^{-1/3}$, confusing a cube root with a cube.\n* Choice C ($\\dfrac{x}{3}$): makes the same root error and also loses the negative sign.\n* Choice D ($3x$): treats the base as $8$ rather than $\\dfrac18$, dropping the reciprocal.\n\n**Test Day Takeaway:** A reciprocal base becomes a negative exponent, and the outer exponent then multiplies it."
+}

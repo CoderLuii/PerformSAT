@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-344",
+ "question": "A rational function $p$ is defined by $p(x)=\\dfrac{c}{x-3}$ for some constant $c$. Its graph in the $xy$-plane contains the point $(7,\\,15)$. If the graph of $y=q(x)$ is the image of the graph of $y=p(x)$ under a translation $11$ units to the left, which equation defines $q$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$q(x)=\\dfrac{60}{x-14}$"
+  },
+  {
+   "id": "B",
+   "text": "$q(x)=\\dfrac{60}{x+8}$"
+  },
+  {
+   "id": "C",
+   "text": "$q(x)=\\dfrac{60}{x+11}$"
+  },
+  {
+   "id": "D",
+   "text": "$q(x)=\\dfrac{71}{x-3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "translates right instead of left",
+  "C": "replaces the original constant with the shift",
+  "D": "adds the shift to the numerator"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Horizontal Shift of a Rational Function**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** From $\\frac{c}{7-3}=15$, $c=60$. Translating left $11$ replaces $x$ with $x+11$, so the denominator becomes $(x+11)-3=x+8$ and $q(x)=\\frac{60}{x+8}$.\n\n**The Full Solution:**\nStep 1: The point $(7,\\,15)$ is on the graph of $p$, so $p(7)=15$. Substituting gives $\\frac{c}{7-3}=15$, that is $\\frac{c}{4}=15$, so $c=60$ and $p(x)=\\frac{60}{x-3}$.\nStep 2: A translation of $11$ units to the left sends the graph of $y=p(x)$ to the graph of $y=p(x+11)$.\nStep 3: $q(x)=p(x+11)=\\frac{60}{(x+11)-3}=\\frac{60}{x+8}$.\n\nCheck: the point $(7,\\,15)$ moves to $(-4,\\,15)$, and $q(-4)=\\frac{60}{-4+8}=\\frac{60}{4}=15$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($q(x)=\\frac{60}{x-14}$): replaced $x$ with $x-11$, which translates the graph $11$ units to the right instead of left.\n* Choice C ($q(x)=\\frac{60}{x+11}$): dropped the original $-3$ and used the shift alone as the constant in the denominator.\n* Choice D ($q(x)=\\frac{71}{x-3}$): added $11$ to the numerator, which stretches the graph vertically rather than sliding it sideways.\n\n**Test Day Takeaway:** A horizontal shift acts on the input, so substitute $x+11$ for every $x$ and then simplify. The constants combine; the earlier one does not disappear."
+}

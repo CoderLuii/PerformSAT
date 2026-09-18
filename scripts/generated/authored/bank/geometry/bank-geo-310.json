@@ -1,0 +1,60 @@
+{
+ "id": "bank-geo-310",
+ "question": "In right triangle $JKL$, angle $K$ is a right angle, $JK=12$, and $JL=37$. What is the perimeter of triangle $JKL$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     12,
+     0
+    ],
+    [
+     12,
+     35
+    ]
+   ],
+   "labels": [
+    "J",
+    "K",
+    "L"
+   ],
+   "sideLabels": [
+    "12",
+    "",
+    "37"
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$49$"
+  },
+  {
+   "id": "B",
+   "text": "$61$"
+  },
+  {
+   "id": "C",
+   "text": "$84$"
+  },
+  {
+   "id": "D",
+   "text": "$210$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "adds only the two given sides",
+  "B": "uses 12 for the missing leg",
+  "D": "reports the area instead of the perimeter"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Pythagorean Triple Recognition**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** $\\overline{JL}$ is the hypotenuse, and $12$, $35$, $37$ is a Pythagorean triple, so $KL=35$ and the perimeter is $12+35+37=84$.\n\n**The Full Solution:**\nStep 1: The right angle sits at $K$, so $\\overline{JL}=37$ is the hypotenuse and $\\overline{JK}=12$ and $\\overline{KL}$ are the legs.\nStep 2: $KL^2=37^2-12^2=1369-144=1225$, so $KL=\\sqrt{1225}=35$.\nStep 3: The perimeter is the sum of all three sides: $12+35+37=84$.\n\nCheck: $12^2+35^2=144+1225=1369=37^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($49$): added only the two sides named in the question, $12+37$, and never found the third side.\n* Choice B ($61$): assumed the triangle was isosceles and reused $12$ for the missing leg, giving $12+12+37$.\n* Choice D ($210$): computed the area, $\\frac{1}{2}(12)(35)$, instead of the perimeter.\n\n**Test Day Takeaway:** When a question asks for a perimeter, the Pythagorean step is only the setup. Find the missing side, then answer the question that was actually asked."
+}

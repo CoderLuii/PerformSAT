@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "The triangular brace of a star-tracker tripod has two struts of lengths $11$ centimeters and $26$ centimeters. If the third strut must also be a whole number of centimeters long, how many different lengths could it have?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$20$"
+  },
+  {
+   "id": "C",
+   "text": "$21$"
+  },
+  {
+   "id": "D",
+   "text": "$37$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the difference 26 - 11 instead of counting lengths",
+  "B": "computes 36 - 16 and omits one endpoint",
+  "D": "reports the sum 26 + 11 instead of counting lengths"
+ },
+ "correctAnswer": "C",
+ "hint": "A count of whole numbers between two bounds is not the difference of those bounds.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~40s):** The third strut must satisfy $15 < s < 37$, so $s$ runs from $16$ to $36$: that is $21$ lengths.\n\n**The Full Solution:**\nStep 1: For three lengths to close into a triangle, the third strut must be longer than the difference of the other two and shorter than their sum: $26 - 11 < s < 26 + 11$, or $15 < s < 37$.\nStep 2: The whole numbers strictly between $15$ and $37$ run from $16$ through $36$.\nStep 3: That is $36 - 16 + 1 = 21$ lengths. Check: $16 + 11 = 27 > 26$ and $36 < 37$, so both endpoints work ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): reporting the difference $26 - 11$, which is a boundary length, not a count.\n* Choice B ($20$): computing $36 - 16$ and forgetting that both endpoints count.\n* Choice D ($37$): reporting the sum $26 + 11$, again a boundary rather than a count.\n\n**Test Day Takeaway:** Set the strict bounds first, then count inclusively: last minus first, plus one."
+}

@@ -1,41 +1,41 @@
 {
-  "id": 826,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 1,
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "William Stokoe, a linguist who taught at Gallaudet University, published his study Sign Language Structure in 1960."
-    },
-    {
-      "id": "B",
-      "text": "Stokoe argued that American Sign Language is a full, independent language with its own grammar, built from contrasting parts such as handshape, location, and movement rather than borrowed from English."
-    },
-    {
-      "id": "C",
-      "text": "Before Stokoe published his analysis, many people had assumed that American Sign Language was nothing more than a loose system of improvised gestures, or at best a simple manual code for spoken English."
-    },
-    {
-      "id": "D",
-      "text": "Stokoe showed that the signs of American Sign Language are built from a small set of contrasting parts: handshape, location, and movement."
-    }
+ "id": 826,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 1,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Joseph Talon was a farmer in Provence in the early 1800s.",
+   "In his day, truffles could only be gathered where they happened to appear in the wild.",
+   "Talon noticed that truffles were found near the roots of certain oaks.",
+   "He sowed acorns gathered beneath truffle-bearing oaks on his own stony land.",
+   "Years later, the young oaks that grew from those acorns had truffles among their roots, showing that truffles could be deliberately farmed."
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to convey what Stokoe argued about ASL, and B states his central claim—that ASL is a full, independent language with its own grammar—while including the handshape-location-movement detail that shows how he supported it. A reports only where and when he published; C describes the assumption he argued against rather than his own claim; and D gives one supporting detail without the overall argument the student wants to convey.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "William Stokoe was a linguist at Gallaudet University, a college for deaf students.",
-      "In the 1950s, many people assumed American Sign Language (ASL) was a loose system of gestures or a manual code for English.",
-      "In Sign Language Structure (1960), Stokoe argued that ASL is a full, independent language.",
-      "He showed that ASL signs are built from a small set of contrasting parts: handshape, location, and movement.",
-      "Stokoe's analysis demonstrated that ASL has its own grammar, not borrowed from English."
-    ],
-    "goal": "The student wants to explain to an audience unfamiliar with Stokoe's work what he argued about American Sign Language."
+  "goal": "The student wants to explain Talon's discovery to an audience unfamiliar with truffle growing."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Joseph Talon was a farmer who worked a stretch of stony ground in Provence in the early years of the nineteenth century."
+  },
+  {
+   "id": "B",
+   "text": "Joseph Talon, a Provençal farmer, discovered that truffles could be farmed: by sowing acorns gathered beneath truffle-bearing oaks, he raised trees whose roots in time yielded truffles of their own."
+  },
+  {
+   "id": "C",
+   "text": "Talon's acorn-sowing method spread through southeastern France, and plantations founded on it were producing most of the region's truffles by century's end."
+  },
+  {
+   "id": "D",
+   "text": "Before Talon's time, truffles could be gathered only where they happened to appear in the wild, and even the most experienced gatherers and dealers knew of no way to make new ground begin producing truffles of its own."
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The goal asks for Talon's discovery explained to readers who know nothing of truffle growing, and B does the whole job: who he was, what he did, and what it showed — that truffles could be deliberately farmed.\n\n**The Full Solution:**\n- The audience is unfamiliar, so the sentence must identify Talon and make the discovery itself plain.\n- Choice B compresses the method (sowing acorns from oaks where truffles grew) and the payoff (trees whose roots bore truffles of their own), presenting the finding as a finding: truffles could be farmed.\n\n**Why the other choices are wrong:**\n- A: It gives biographical placement but never says what Talon discovered.\n- C: It reports the method's later spread while leaving the discovery itself unexplained.\n- D: It states only the historical puzzle Talon faced, not his answer to it."
 }

@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "The vertical displacement of a piston from its centerline, in millimeters, is modeled by $h(t) = 2t^2 - 22t + 48$, where $t$ is the time in seconds since a test began. Given that $h(3) = 0$, at what other value of $t$ is the piston at its centerline?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$11$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "sign slip in factoring, writing 2(t - 3)(t + 8) instead of 2(t - 3)(t - 8)",
+  "B": "repeats the time already given instead of finding the second one",
+  "D": "uses 22/2 = 11, the sum of the two roots, as the second root"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Polynomial Factoring with Given Factor**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Since $h(3) = 0$, $t - 3$ is a factor. Factoring out the $2$ gives $h(t) = 2(t^2 - 11t + 24) = 2(t - 3)(t - 8)$, so the other zero is $t = 8$.\n\n**The Full Solution:**\nStep 1: Use the given zero. $h(3) = 0$ means $t = 3$ is a root, so $t - 3$ divides $h(t)$.\nStep 2: Factor the model. Removing the common factor $2$ gives $h(t) = 2(t^2 - 11t + 24)$, and the two numbers multiplying to $24$ and adding to $-11$ are $-3$ and $-8$, so $h(t) = 2(t - 3)(t - 8)$.\nStep 3: Read the remaining zero. Setting $2(t - 3)(t - 8) = 0$ gives $t = 3$ or $t = 8$, so the other time is $8$ seconds. Check: $h(8) = 2(64) - 22(8) + 48 = 128 - 176 + 48 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$): flips a sign while factoring, writing $2(t - 3)(t + 8)$. That product would have a middle term of $+10t$, not $-22t$.\n* Choice B ($3$): repeats the time the question already supplies. The question asks for the other zero.\n* Choice D ($11$): computes $\\frac{22}{2} = 11$, which is the sum of the two roots, not the second root. Subtracting the known root gives $11 - 3 = 8$.\n\n**Test Day Takeaway:** One known zero turns a quadratic into a one-step factoring problem. Pull out the leading coefficient first so the remaining trinomial is monic, then find the pair of numbers whose product is the constant and whose sum is the middle coefficient."
+}

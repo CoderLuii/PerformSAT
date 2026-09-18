@@ -5,6 +5,8 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "form-structure-and-sense",
+  "module": 1,
+  "passage": "By the time an electrolytic process made aluminum abundant in the late 1880s, the metal ______ already served for decades as a showpiece more precious than silver, reserved for jewelry, medals, and banquet cutlery.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
@@ -25,10 +27,8 @@
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The opening phrase fixes a past reference point — the 1999 publication — and the main clause describes a condition already in place before it, so the past perfect \"had … pulled\" is required. Present perfect \"has\" (B) ties the action to the present moment rather than to 1999; \"have\" (D) is plural and disagrees with the singular \"crisis\"; and \"is\" (C) cannot combine with the past participle to form the needed past perfect.",
-  "passage": "By the time political scientist Cathy J. Cohen published *The Boundaries of Blackness* in 1999, the AIDS crisis ______ already pulled at the resources of mainstream Black political organizations for more than a decade, straining their budgets and dividing their leaders over how openly the epidemic should be addressed.",
+  "explanation": "**Choice A is correct.** The sentence describes service that was already complete before a past reference point (\"by the time ... in the late 1880s\"), which calls for the past perfect: \"had already served.\"\n\n**The Full Solution:**\n- The reference point is in the past: the arrival of the electrolytic process in the late 1880s.\n- The metal's career as a showpiece happened before that point — \"already served for decades.\"\n- Past-before-past takes the past perfect, formed with \"had\": \"the metal had already served.\"\n\n**Why the other choices are wrong:**\n- B: \"Has served\" is present perfect, which connects to the present rather than to a completed past reference point.\n- C: \"Is\" cannot combine with the past participle \"served\" to express this time relationship.\n- D: \"Have\" is plural and would not agree with the singular subject \"the metal,\" besides failing to mark past-before-past.",
   "_meta": {
-    "anchor": "Cathy J. Cohen — The Boundaries of Blackness (entity_keep); past perfect"
-  },
-  "module": 1
+    "anchor": "aluminum before cheap electrolysis; past perfect"
+  }
 }

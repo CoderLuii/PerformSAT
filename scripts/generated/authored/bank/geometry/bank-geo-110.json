@@ -1,0 +1,23 @@
+{
+ "id": "bank-geo-110",
+ "question": "In right triangle $PQR$ shown, angle $Q$ is the right angle, $PQ = 45$, and $QR = 60$. What is the value of $\\tan P$? Express your answer as a fraction.",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "labels": [
+    "P",
+    "Q",
+    "R"
+   ],
+   "sideLabels": [
+    "45",
+    "60",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "4/3",
+ "explanation": "**SAT Pattern: SOH-CAH-TOA in a 3-4-5 Triangle**\n\n**The correct answer is $\\frac{4}{3}$.**\n\n**The Fast Way (~25s):** Tangent uses only the legs: opposite angle $P$ is $QR = 60$ and adjacent is $PQ = 45$, so $\\tan P = \\frac{60}{45} = \\frac{4}{3}$.\n\n**The Full Solution:**\nStep 1: The right angle is at $Q$, so $\\overline{PQ}$ and $\\overline{QR}$ are the legs.\nStep 2: Relative to angle $P$, the opposite leg is $\\overline{QR} = 60$ and the adjacent leg is $\\overline{PQ} = 45$.\nStep 3: $\\tan P = \\frac{60}{45} = \\frac{4}{3}$.\n\nCheck: the hypotenuse is $\\sqrt{45^2 + 60^2} = \\sqrt{5{,}625} = 75$, so the sides are the $3$-$4$-$5$ triple scaled by $15$.\n\n**Common Mistakes:**\n* Answering $\\frac{3}{4}$ by dividing adjacent by opposite, which gives the tangent of the other acute angle.\n* Answering $\\frac{4}{5}$ by computing $\\frac{60}{75}$, the sine of angle $P$.\n* Computing the hypotenuse and using it in the tangent, which the tangent ratio never involves.\n\n**Test Day Takeaway:** If a right-triangle question asks only for a tangent, you never need the hypotenuse — stop after the two legs."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-003",
+  "question": "A courier service charges a flat fee plus a constant amount for each kilogram of a package's mass. A $3$-kilogram package costs $\\$19.50$ to ship, and a $9$-kilogram package costs $\\$34.50$ to ship. What is the charge per kilogram, in dollars?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1.25$"
+    },
+    {
+      "id": "B",
+      "text": "$2.50$"
+    },
+    {
+      "id": "C",
+      "text": "$3.83$"
+    },
+    {
+      "id": "D",
+      "text": "$6.50$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the cost difference by the sum of the masses (15/12)",
+    "C": "divides one total by its mass (34.50/9), ignoring the flat fee",
+    "D": "divides the other total by its mass (19.50/3), ignoring the flat fee"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Per-Unit Rate (Slope of Cost)**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The cost rises $34.50 - 19.50 = 15.00$ dollars for $9 - 3 = 6$ extra kilograms, so the per-kilogram charge is $\\frac{15}{6} = 2.50$ dollars.\n\n**The Full Solution:**\nStep 1: The cost is linear in mass: $C = rm + F$, where $r$ is the charge per kilogram and $F$ is the flat fee. The two packages give the points $(3, 19.50)$ and $(9, 34.50)$.\nStep 2: The per-kilogram charge is the slope: $r = \\frac{34.50 - 19.50}{9 - 3} = \\frac{15}{6} = 2.50$.\nStep 3: Check by finding the flat fee: $19.50 - 2.50(3) = 12.00$, and then $12.00 + 2.50(9) = 34.50$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.25$): divides the $\\$15$ cost difference by $3 + 9 = 12$, the sum of the masses, rather than the $6$-kilogram difference.\n* Choice C ($3.83$): divides $34.50$ by $9$, treating the whole cost as per-kilogram and ignoring the flat fee.\n* Choice D ($6.50$): divides $19.50$ by $3$, the same error using the lighter package.\n\n**Test Day Takeaway:** When a flat fee is present, a single (mass, cost) pair cannot give the unit rate; subtract two pairs so the fee cancels."
+}

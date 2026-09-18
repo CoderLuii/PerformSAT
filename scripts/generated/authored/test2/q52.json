@@ -6,26 +6,26 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 2,
-  "passage": "Consumer ancestry-test companies advertise their DNA kits as a way for customers to confirm Native American heritage and to support claims of tribal membership through saliva samples and probabilistic ancestry maps. ______ anthropologist Kim TallBear of the University of Alberta argues in Native American DNA: Tribal Belonging and the False Promise of Genetic Science (2013) that tribal belonging is constituted by political and kinship relations rather than by genetic markers, so a consumer DNA result cannot establish citizenship in any tribal nation.",
+  "passage": "When Singapore began charging drivers to enter its downtown in 1975, the scheme was widely dismissed as an experiment no other government would dare repeat. The results were difficult to argue with: traffic entering the priced zone fell by nearly half, bus ridership climbed, and average travel speeds roughly doubled, all within months of the launch. ______ decades passed before another major city adopted a comparable charge — a delay that says less about the policy's effectiveness than about the politics of asking voters to pay for road space they had long treated as free.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "On the other hand,"
+      "text": "Still,"
     },
     {
       "id": "B",
-      "text": "Therefore,"
+      "text": "Accordingly,"
     },
     {
       "id": "C",
-      "text": "Moreover,"
+      "text": "In other words,"
     },
     {
       "id": "D",
-      "text": "Likewise,"
+      "text": "Granted,"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. Sentence 1 reports what consumer ancestry-test companies advertise: that their DNA kits let customers confirm Native American heritage and support claims of tribal membership through saliva samples and probabilistic ancestry maps. Sentence 2 reports what Kim TallBear, an anthropologist at the University of Alberta, argues in Native American DNA: Tribal Belonging and the False Promise of Genetic Science (2013): tribal belonging is constituted by political and kinship relations rather than by genetic markers, so a consumer DNA result cannot establish citizenship in any tribal nation. The relation between the two sentences is direct opposition between two competing accounts of what fixes tribal membership — a marketing claim that genetic markers can confirm membership, and a scholarly argument that political and kinship relations alone constitute it. 'On the other hand,' is the CB-lexicon transition for setting one side of an opposed pair against the other, and is correct (A).\n\nThe cue that selects 'On the other hand,' is the explicit 'rather than by genetic markers' in sentence 2, which points back to and rejects the genetics-confirms-membership premise of sentence 1."
+  "explanation": "**Choice A is correct.** The passage grants the scheme's compelling results, then reports the surprise: decades passed before anyone copied it. \"Still\" concedes the force of the preceding evidence while introducing the fact that runs against what that evidence would lead one to expect.\n\n**The Full Solution:**\n- The second sentence stacks up persuasive outcomes — traffic halved, ridership up, speeds doubled — creating the expectation of swift imitation.\n- The blank sentence defeats that expectation: no major city followed for decades.\n- A concessive contrast — despite the strong results, adoption lagged — is precisely the relation \"Still\" expresses, and the sentence's own diagnosis (politics, not effectiveness) confirms the tension.\n\n**Why the other choices are wrong:**\n- B: \"Accordingly\" would present the decades of non-adoption as the natural consequence of the impressive results — the reverse of the passage's logic.\n- C: \"In other words\" introduces a restatement, but the delayed adoption is new information, not the results paraphrased.\n- D: \"Granted\" concedes a point that qualifies the writer's own claim; here the concession has already happened in the second sentence, and the blank sentence delivers the counterweight, not the concession."
 }

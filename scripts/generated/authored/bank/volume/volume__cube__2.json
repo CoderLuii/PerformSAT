@@ -1,0 +1,30 @@
+{
+ "id": 2,
+ "question": "The volume of a cube is $216$ cubic centimeters. What is the length, in centimeters, of one edge of the cube?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6$"
+  },
+  {
+   "id": "B",
+   "text": "$72$"
+  },
+  {
+   "id": "C",
+   "text": "$108$"
+  },
+  {
+   "id": "D",
+   "text": "$216$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the volume by $3$ instead of taking a cube root",
+  "C": "halves the volume",
+  "D": "repeats the volume, leaving the cube undone"
+ },
+ "correctAnswer": "A",
+ "hint": "Ask which number multiplied by itself three times gives the volume.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** $6^3 = 216$, so the edge is $6$ centimeters.\n\n**The Full Solution:**\nStep 1: For a cube, $V = s^3$, so $s^3 = 216$.\nStep 2: Undo the cube by taking a cube root: $s = \\sqrt[3]{216}$.\nStep 3: Since $6 \\cdot 6 \\cdot 6 = 216$, the edge is $6$ centimeters.\n\nVerification: $6^3 = 216$, the given volume. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($72$): divides the volume by $3$ instead of taking a cube root.\n* Choice C ($108$): halves the volume.\n* Choice D ($216$): repeats the volume, leaving the cube undone.\n\n**Test Day Takeaway:** Undo a cube with a cube root; dividing by $3$ undoes multiplication, not an exponent."
+}

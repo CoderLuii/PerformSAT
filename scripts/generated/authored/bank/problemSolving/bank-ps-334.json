@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-334",
+  "question": "A linear model relates the resale value $y$, in dollars, of a used tractor to the number of hours $x$ the tractor has been operated: $\\hat{y} = -1.2x + 46{,}000$. Which of the following is the best interpretation of the $y$-intercept of this model?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The predicted resale value of a tractor that has been operated for $0$ hours is $\\$46{,}000$."
+    },
+    {
+      "id": "B",
+      "text": "The predicted resale value decreases by $\\$46{,}000$ for each hour the tractor is operated."
+    },
+    {
+      "id": "C",
+      "text": "The predicted resale value reaches $\\$0$ after $46{,}000$ hours of operation."
+    },
+    {
+      "id": "D",
+      "text": "The predicted resale value increases by $\\$1.20$ for each hour the tractor is operated."
+    }
+  ],
+  "distractorNotes": {
+    "B": "attaches the intercept to the per-hour rate; the model's hourly decrease is $\\$1.20$.",
+    "C": "reads $46{,}000$ as a number of hours; solving $-1.2x + 46{,}000 = 0$ actually gives about $38{,}333$ hours.",
+    "D": "describes the slope and drops its negative sign, so it reverses the direction of the change."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Interpret Intercept of Best Fit**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The $y$-intercept is $\\hat{y}$ at $x = 0$: a tractor with $0$ hours of operation has predicted resale value $\\$46{,}000$.\n\n**The Full Solution:**\nStep 1: In $\\hat{y} = -1.2x + 46{,}000$, the constant $46{,}000$ is the predicted value when $x = 0$.\nStep 2: The variable $x$ counts hours of operation, so $x = 0$ describes a tractor that has not been operated.\nStep 3: The model predicts a resale value of $\\$46{,}000$ for such a tractor, then subtracts $\\$1.20$ for each hour operated. Check: at $x = 1{,}000$ hours the model predicts $46{,}000 - 1{,}200 = \\$44{,}800$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: attaches the intercept to the per-hour rate; the model's hourly decrease is $\\$1.20$.\n* Choice C: reads $46{,}000$ as a number of hours; solving $-1.2x + 46{,}000 = 0$ actually gives about $38{,}333$ hours.\n* Choice D: describes the slope and drops its negative sign, so it reverses the direction of the change.\n\n**Test Day Takeaway:** Intercept answers \"how much at zero\"; slope answers \"how much per unit.\" Match each number to the question it answers before reading the choices."
+}

@@ -864,28 +864,6 @@
   font-family: var(--trx-body);
 }
 
-.trx-tabs {
-  display: flex;
-  gap: 4px;
-  border-bottom: 1px solid var(--trx-line);
-  margin-bottom: 26px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.trx-tab {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: var(--trx-body);
-  font-weight: 700;
-  font-size: 13.5px;
-  color: var(--trx-text-3);
-  padding: 11px 14px;
-  white-space: nowrap;
-  border-bottom: 2.5px solid transparent;
-  margin-bottom: -1px;
-}
-.trx-tab.on { color: var(--trx-text); border-bottom-color: var(--trx-orange); }
 
 .trx-card {
   background: var(--trx-inset);

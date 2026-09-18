@@ -1,0 +1,29 @@
+{
+ "question": "A cyclist on a circular track centered at the origin releases at $(3, 4)$ and continues along the tangent line there. What is that line's slope?",
+ "hint": "Draw the radius from the center to the release point first.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\dfrac{4}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\dfrac{3}{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{3}{4}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{4}{3}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "negates the radius slope without inverting it",
+  "C": "inverts the radius slope but keeps it positive",
+  "D": "reports the radius slope itself"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** The radius to $(3, 4)$ has slope $\\dfrac{4}{3}$, so the tangent's slope is $-\\dfrac{3}{4}$.\n\n**The Full Solution:**\nStep 1: The radius runs from $(0, 0)$ to $(3, 4)$, so its slope is $\\dfrac{4 - 0}{3 - 0} = \\dfrac{4}{3}$.\nStep 2: A tangent line is perpendicular to the radius at the point of contact.\nStep 3: The perpendicular slope is the negative reciprocal, $-\\dfrac{3}{4}$. Check: $\\dfrac{4}{3} \\cdot \\left(-\\dfrac{3}{4}\\right) = -1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\dfrac{4}{3}$): negates the radius slope without flipping it.\n* Choice C ($\\dfrac{3}{4}$): flips the radius slope but leaves it positive.\n* Choice D ($\\dfrac{4}{3}$): reports the slope of the radius itself.\n\n**Test Day Takeaway:** Tangent and radius meet at a right angle, so their slopes are negative reciprocals."
+}

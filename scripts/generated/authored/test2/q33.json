@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 2,
-  "passage": "Historians once treated the long-distance spice trade of the early modern period as essentially a European story, told through the voyages of Portuguese and Dutch ships around Africa. Recent scholarship on Ottoman commercial records complicates that account. The overland and Red Sea routes through Ottoman territory, these records show, carried large volumes of pepper and other spices well into the seventeenth century, long after the sea route was supposed to have rendered them obsolete. Merchants in Cairo and Aleppo continued to supply markets across the eastern Mediterranean, and the surviving customs ledgers document a trade that European narratives had largely written out.",
+  "passage": "In the courts of late medieval Europe, tapestries were far more than wall decoration. Woven of wool, silk, and often gold thread, a full set could cost more than a warship and occupy a workshop for years. Yet unlike frescoes or carved paneling, tapestries could be rolled, packed, and carried: a ruler traveling from castle to castle brought the hangings along, converting each bare stone hall into a furnished declaration of rank. Court inventories confirm the priority — clerks recorded tapestries alongside jewels and plate among the treasures of the realm, and the hangings changed hands as diplomatic gifts, dowries, and spoils of war.",
   "question": "Which choice best states the main purpose of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "To argue that Ottoman overland and Red Sea spice routes remained active far longer than European-centered accounts have recognized."
+      "text": "To explain that tapestries served medieval courts as portable stores and displays of wealth, not merely as decoration"
     },
     {
       "id": "B",
-      "text": "To describe the navigational challenges that Portuguese and Dutch ships faced on the trade route around Africa."
+      "text": "To describe the technical process by which medieval workshops wove costly materials into finished tapestries"
     },
     {
       "id": "C",
-      "text": "To explain why pepper became less valuable in eastern Mediterranean markets during the seventeenth century."
+      "text": "To argue that tapestries proved a poor investment for medieval rulers compared with jewels and plate"
     },
     {
       "id": "D",
-      "text": "To compare the customs records that were kept in Cairo with those that were kept in Aleppo during the early modern period."
+      "text": "To trace how the subjects depicted on tapestries changed as rulers carried them from one castle to another"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage contrasts the old European-centered story of the spice trade with recent work on Ottoman records showing that overland and Red Sea routes stayed busy into the seventeenth century; its purpose is to argue that those routes lasted longer than the standard account allows. Choice B inverts the emphasis—the European ships are background, not the focus, and navigational challenges are never discussed. Choice C contradicts the passage, which describes a continuing, substantial trade rather than declining value. Choice D mistakes a passing detail (records from Cairo and Aleppo) for the main purpose; the passage does not compare the two cities' records."
+  "explanation": "**Choice A is correct.** The text opens by rejecting the decoration-only view, then builds the case that tapestries functioned as movable wealth: enormous cost, portability that frescoes lacked, inventory listings beside jewels, and circulation as gifts, dowries, and spoils.\n\n**The Full Solution:**\n- The thesis arrives in the first sentence: tapestries were \"far more than wall decoration.\"\n- Every subsequent detail serves that thesis — the warship-level cost establishes value; the rolling and carrying establishes portability; the halls \"furnished\" into declarations of rank establishes display.\n- The closing evidence clinches the wealth function: clerks classed tapestries with jewels and plate, and they changed hands the way treasure does. Choice A gathers all of this into the text's purpose.\n\n**Why the other choices are wrong:**\n- B: The materials are named only to establish expense; no weaving process is described at any point.\n- C: The text ranks tapestries alongside jewels and plate, not below them, and offers no judgment about investment quality.\n- D: What the tapestries depicted is never mentioned, so no change in their subjects could be traced."
 }

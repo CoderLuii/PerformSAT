@@ -28,6 +28,7 @@ const SATLineGraph = ({
   const xValues = data.map(d => d.x);
   const xMin = Math.min(...xValues);
   const xMax = Math.max(...xValues);
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- a fresh array each render, so the coordSystem useMemo below always recomputes; wrapping it would newly memoize and change render identity
   const xRange = [xMin - 0.5, xMax + 0.5];
 
   // Calculate y range (auto or provided)
@@ -35,6 +36,7 @@ const SATLineGraph = ({
   const dataYMin = Math.min(...yValues);
   const dataYMax = Math.max(...yValues);
   const yPadding = (dataYMax - dataYMin) * 0.1;
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- a fresh array each render, so the coordSystem useMemo below always recomputes; wrapping it would newly memoize and change render identity
   const yRange = providedYRange || [
     Math.floor(dataYMin - yPadding),
     Math.ceil(dataYMax + yPadding),

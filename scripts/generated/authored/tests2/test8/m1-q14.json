@@ -1,0 +1,29 @@
+{
+  "id": 14,
+  "question": "On a street plan, one centerline is the graph of $8x - 6y = 21$ and another is the graph of $y = \\frac{2c}{9}x - 4$ for some constant $c$. The two centerlines never meet. What is the value of $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-6$"
+    },
+    {
+      "id": "B",
+      "text": "$6$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "drops the sign when dividing by -6, taking the first slope as -4/3 and getting c = -6",
+    "C": "ignores the factor of 2 in 2c/9, solving c/9 = 4/3 to get c = 12",
+    "D": "reads the first line's slope as 8, the coefficient of x, giving 2c/9 = 8 and c = 36"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** Solving $8x - 6y = 21$ for $y$ gives slope $\\frac{4}{3}$; setting $\\frac{2c}{9} = \\frac{4}{3}$ gives $c = 6$.\n\n**The Full Solution:**\nStep 1: Put the first centerline in slope-intercept form. From $8x - 6y = 21$, subtract $8x$ to get $-6y = -8x + 21$, then divide by $-6$: $y = \\frac{4}{3}x - \\frac{7}{2}$.\nStep 2: Lines in the same plane never meet exactly when they have equal slopes and different y-intercepts, so set $\\frac{2c}{9} = \\frac{4}{3}$.\nStep 3: Cross-multiply: $6c = 36$, so $c = 6$. Check: with $c = 6$ the second centerline is $y = \\frac{12}{9}x - 4 = \\frac{4}{3}x - 4$, whose slope matches $\\frac{4}{3}$ while its intercept $-4$ differs from $-\\frac{7}{2}$, so the two lines are parallel and distinct. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6$): divides $-8x + 21$ by $-6$ without changing the sign of the $x$-term, producing slope $-\\frac{4}{3}$ and then $c = -6$.\n* Choice C ($12$): matches $\\frac{c}{9}$ to $\\frac{4}{3}$, overlooking the $2$ multiplying $c$ in the numerator.\n* Choice D ($36$): treats $8$ as the slope of the first line, forgetting that the $-6y$ must be divided out first.\n\n**Test Day Takeaway:** Convert to $y = mx + b$ before comparing slopes, and watch the sign when you divide by a negative $y$-coefficient — that sign flip is the whole trap."
+}

@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-textual",
-  "passage": "Coaches once assumed that the fastest sprinters owe their speed mainly to taking more steps per second than their rivals. Some researchers now argue otherwise: what sets the quickest runners apart, on this view, is less how often their feet strike the track than how much force each foot delivers to the ground in the brief instant it is down. A runner who drives harder against the track, they reason, is propelled forward more powerfully with every stride. *If this account is correct, then among elite sprinters the runner who applies the greatest force to the ground per step should tend to be the fastest, even when that runner's steps come no more frequently than a competitor's.*",
-  "question": "Which finding from a recent study of elite sprinters, if true, would most directly support the claim?",
+  "passage": "Nacre, the iridescent lining of some mollusk shells, is about ninety-five percent aragonite, a brittle mineral that shatters easily in bulk form. Yet nacre itself is remarkably tough. Materials scientists attribute the difference to architecture: nacre stacks microscopic mineral tablets in staggered layers, mortared with thin sheets of pliable protein, so that a crack spreading through the material is repeatedly deflected at the soft joints instead of running straight through. On this account, the toughness comes from the arrangement, not the ingredients.",
+  "question": "Which finding from a materials-science study, if true, would most directly support the claim?",
   "choices": [
     {
       "id": "A",
-      "text": "The fastest sprinters in a timed field applied much greater force to the track with each step, though their steps came no more often than slower runners' did."
+      "text": "A synthetic composite built from a brittle ceramic arranged in staggered, polymer-mortared layers proved many times tougher than a solid block of the same ceramic."
     },
     {
       "id": "B",
-      "text": "Sprinters who spent a training season working specifically to raise the number of steps they took per second went on to record faster competition times than sprinters who did not train that way at all."
+      "text": "Aragonite crystals grown in a laboratory and compressed into solid blocks shattered just as easily under testing as crystals of aragonite extracted from natural mollusk shells."
     },
     {
       "id": "C",
-      "text": "Most coaches today still design their training programs around increasing the number of steps a sprinter takes rather than the force applied."
+      "text": "Mollusk species living in rough coastal water tend to produce thicker shells than related species living in calm water."
     },
     {
       "id": "D",
-      "text": "Audiences watching elite sprint races are usually unable to tell which runner is applying more force to the track during the race."
+      "text": "Nacre's iridescence results from the interference of light waves reflecting off its stacked mineral layers."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The claim is that what makes elite sprinters fast is the force each foot delivers to the track, not how frequently the feet strike it. A study finding that the fastest runners applied much greater force per step while taking no more steps per second is direct evidence for exactly that: speed tracked force, not frequency. Choice B describes frequency-focused training improving times, which would support the rival idea the claim rejects rather than the claim itself. Choice C reports how coaches train rather than what actually produces speed, and choice D concerns what spectators can perceive, which says nothing about the source of a sprinter's speed."
+  "explanation": "**Choice A is correct.** The claim says arrangement, not ingredients, creates the toughness — and A is the clean test: keep a brittle ingredient, impose nacre's staggered-and-mortared arrangement, and toughness appears many times over.\n\n**The Full Solution:**\n- The claim's testable content: the same brittle material should become tough once organized in nacre's architecture.\n- A realizes that experiment with a synthetic stand-in and reports the predicted result, directly confirming that the arrangement does the work.\n\n**Why the other choices are wrong:**\n- B: It shows aragonite is brittle wherever it comes from — background the claim already assumes — without ever testing an arrangement.\n- C: Shell thickness across species concerns how much material is made, not whether architecture toughens it.\n- D: It ties the layers to optics, explaining the iridescence rather than anything about resisting cracks."
 }

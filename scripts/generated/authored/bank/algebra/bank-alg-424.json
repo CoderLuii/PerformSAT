@@ -1,0 +1,48 @@
+{
+ "id": "bank-alg-424",
+ "question": "A ventilator study graphs line $\\ell$ in the $xy$-plane, shown, and a second pressure setting is described by line $t$, whose equation is $6x - 8y = -8$. Which of the following is true about the system consisting of the equations of lines $\\ell$ and $t$?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 0.75,
+   "yIntercept": 1,
+   "xRange": [
+    -8,
+    8
+   ],
+   "yRange": [
+    -6,
+    8
+   ],
+   "gridInterval": 1,
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "label": "l"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The system has no solution."
+  },
+  {
+   "id": "B",
+   "text": "The system has exactly one solution."
+  },
+  {
+   "id": "C",
+   "text": "The system has exactly two solutions."
+  },
+  {
+   "id": "D",
+   "text": "The system has infinitely many solutions."
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "notes that the slopes are equal and stops, without checking whether the constants also scale by the same factor",
+  "B": "assumes lines with different-looking coefficients must cross",
+  "C": "two distinct lines can meet at most once, so exactly two solutions is impossible for a linear system"
+ },
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** Line $\\ell$ is $y = \\frac{3}{4}x + 1$, or $3x - 4y = -4$; doubling that gives $6x - 8y = -8$, which is line $t$, so the lines coincide.\n\n**The Full Solution:**\n\nStep 1: From the graph, line $\\ell$ passes through $(0, 1)$ and $(4, 4)$, so its slope is $\\frac{4 - 1}{4 - 0} = \\frac{3}{4}$ and its equation is $y = \\frac{3}{4}x + 1$.\n\nStep 2: Clear the fraction: multiplying by $4$ gives $4y = 3x + 4$, or $3x - 4y = -4$.\n\nStep 3: Multiply that equation by $2$: $6x - 8y = -8$, which is exactly line $t$. The two equations describe the same line, so every point on line $\\ell$ satisfies both and the system has infinitely many solutions. Check with $(4, 4)$: $6(4) - 8(4) = -8$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: the slopes do match, but equal slopes give no solution only when the constants fail to scale by the same factor; here $-4$ doubles to $-8$, so the lines coincide.\n* Choice B: the coefficients look different from $\\ell$'s, but they are a constant multiple of them, so the lines do not cross at a single point.\n* Choice C: two lines in a plane meet at no point, one point, or every point; exactly two solutions is impossible for a linear system.\n\n**Test Day Takeaway:** Equal slopes is only half the no-solution test; scale one whole equation and compare the constants before deciding."
+}

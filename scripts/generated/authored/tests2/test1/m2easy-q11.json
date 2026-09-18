@@ -1,0 +1,48 @@
+{
+ "id": 11,
+ "question": "Two positions of a moving spotlight are plotted in the $xy$-plane, where one unit represents one meter. The spotlight travels along line $\\ell$, which contains both plotted positions. At which point does line $\\ell$ cross the $y$-axis?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     -2,
+     7
+    ],
+    [
+     4,
+     -5
+    ]
+   ],
+   "xMin": -8,
+   "xMax": 8,
+   "yMin": -8,
+   "yMax": 8
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(0, -3)$"
+  },
+  {
+   "id": "B",
+   "text": "$(0, 3)$"
+  },
+  {
+   "id": "C",
+   "text": "$(0, 11)$"
+  },
+  {
+   "id": "D",
+   "text": "$(3, 0)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gets the slope right but subtracts when solving for the intercept, giving -3 instead of 3",
+  "C": "uses slope +2 with the point (-2, 7), solving 7 = 2(-2) + b to get b = 11",
+  "D": "swaps the coordinates, reporting the intercept value as an x-coordinate"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Line from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The plotted positions are $(-2, 7)$ and $(4, -5)$, so the slope is $\\frac{-5 - 7}{4 - (-2)} = -2$. Backing up from $(-2, 7)$ two units in $x$ lowers $y$ by $4$, giving $(0, 3)$.\n\n**The Full Solution:**\nStep 1: Read the two plotted positions from the grid: $(-2, 7)$ and $(4, -5)$.\nStep 2: Compute the slope: $m = \\frac{-5 - 7}{4 - (-2)} = \\frac{-12}{6} = -2$.\nStep 3: Use $y = mx + b$ with one point. Substituting $(-2, 7)$: $7 = -2(-2) + b = 4 + b$, so $b = 3$ and the line crosses the $y$-axis at $(0, 3)$. Check with the other point: $-2(4) + 3 = -5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(0, -3)$): the right slope with a sign slip in the last step, solving $7 = 4 + b$ as $b = -3$. Substituting into $y = -2x - 3$ gives $1$ at $x = -2$, not $7$.\n* Choice C ($(0, 11)$): using slope $+2$ instead of $-2$, so $7 = 2(-2) + b$ and $b = 11$. The $y$-values fall as $x$ increases here, so the slope must be negative.\n* Choice D ($(3, 0)$): the correct number $3$ placed in the wrong coordinate. A point on the $y$-axis always has an $x$-coordinate of $0$.\n\n**Test Day Takeaway:** Read both points off the grid, compute rise over run, then substitute one point into $y = mx + b$ — and verify the equation with the second point before answering."
+}

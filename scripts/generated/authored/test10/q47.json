@@ -6,26 +6,34 @@
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
  "module": 2,
- "passage": "Before any object is lifted from a sunken wreck, the survey team documents the site as it lies on the seabed. Divers record the wreck by sketching the position of every timber and fitting on a measured grid, by photographing each section under floodlights, and by ______ the surrounding sediment for small artifacts that might otherwise be lost.",
+ "passage": "The great birch-bark freight canoes of the fur trade earned their place through a combination no other vessel offered: carrying several tons of cargo on open water, riding out waves that swamped smaller boats, and ______ light enough for a pair of voyageurs to carry past rapids.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "to sieve"
+   "text": "they remained"
   },
   {
    "id": "B",
-   "text": "had sieved"
+   "text": "to remain"
   },
   {
    "id": "C",
-   "text": "sieving"
+   "text": "remaining"
   },
   {
    "id": "D",
-   "text": "sieved"
+   "text": "it remained"
   }
  ],
  "correctAnswer": "C",
- "explanation": "Choice C is correct. The sentence lists three ways the team documents the site, and the first two are expressed as gerunds (\"by sketching ...,\" \"by photographing ...\"). Parallel structure requires the third item to take the same form, so \"by sieving\" is correct. Choice A switches to an infinitive, Choice B to the past perfect, and Choice D to a simple past form, each breaking the by-plus-gerund pattern the series has established."
+ "explanation": "**Choice C is correct.** The blank is the third item in a coordinated series whose first two items are the gerund phrases \"carrying several tons...\" and \"riding out waves...\"; parallel structure requires a third gerund, \"remaining light enough...\"\n\n**The Full Solution:**\n- Identify the series after the colon: item one begins \"carrying,\" item two begins \"riding,\" and \"and\" announces the final item.\n- Items in a series must share grammatical form. Only \"remaining\" matches the -ing pattern of its partners.\n\n**Why the other choices are wrong:**\n- A: \"They remained\" switches the item into a full clause, breaking the gerund series (and \"they\" would splice a clause into a list).\n- B: \"To remain\" swaps in an infinitive where its coordinated partners are gerunds.\n- D: \"It remained\" has the same clause problem as A, with a singular pronoun besides.",
+ "_meta": {
+  "rule": "parallel gerunds in a coordinated series",
+  "distractors": {
+   "A": "clause breaks gerund parallelism",
+   "B": "infinitive breaks gerund parallelism",
+   "D": "clause + number shift"
+  }
+ }
 }

@@ -1,0 +1,49 @@
+{
+ "id": "bank-alg-470",
+ "question": "A pharmacy network's distribution rule is the linear equation satisfied by every pair in the table, and a second rule reads $10x + 5y = c$ for some constant $c$. Which statement about the system of the two rules must be true?",
+ "questionTable": {
+  "headers": [
+   "Sites served, $x$",
+   "Kits held back, $y$"
+  ],
+  "rows": [
+   [
+    "0",
+    "15"
+   ],
+   [
+    "3",
+    "9"
+   ],
+   [
+    "6",
+    "3"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "The system has no solution for every value of $c$."
+  },
+  {
+   "id": "B",
+   "text": "The system has exactly one solution when $c = 75$."
+  },
+  {
+   "id": "C",
+   "text": "The system has infinitely many solutions when $c = 75$."
+  },
+  {
+   "id": "D",
+   "text": "The system has infinitely many solutions for every value of $c$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "true only when c is not 75; at c = 75 the second rule is 5 times the first and the graphs coincide",
+  "B": "at c = 75 the two graphs are the same line, so there are infinitely many solutions rather than one",
+  "D": "any c other than 75 makes the lines parallel and distinct, so the system then has no solution"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The table gives $2x + y = 15$, and $10x + 5y$ is $5$ times $2x + y$, so the rules coincide exactly when $c = 5(15) = 75$.\n\n**The Full Solution:**\nStep 1: Find the first rule from the table. As $x$ rises by $3$, $y$ falls by $6$, so the slope is $-2$ and the value at $x = 0$ is $15$: $y = -2x + 15$, or $2x + y = 15$.\nStep 2: Compare left sides. Multiplying $2x + y$ by $5$ gives $10x + 5y$, the left side of the second rule, so the two lines are parallel for every $c$.\nStep 3: The lines coincide only when the constants scale by that same factor of $5$: $c = 5(15) = 75$. For any other $c$ they are parallel and distinct. Check: $(3, 9)$ gives $10(3) + 5(9) = 30 + 45 = 75$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: correct for every $c$ EXCEPT $75$, and a \"must be true\" statement has to hold in every case.\n* Choice B: at $c = 75$ the two equations describe the same line, which gives infinitely many solutions, not exactly one.\n* Choice D: any $c$ other than $75$ leaves parallel, distinct lines with no solution at all.\n\n**Test Day Takeaway:** When the left sides are proportional, the constant alone decides between infinitely many solutions and none — solve for the single constant that completes the match."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-247",
+  "question": "A payroll worksheet lists the two constraints $6x - 9y = 24$ and $rx + 12y = s$, in which $r$ and $s$ are constants. No pair $(x, y)$ of values satisfies both constraints at once. What is the value of $r$?",
+  "correctAnswer": "-8",
+  "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**The correct answer is $-8$.**\n\n**The Fast Way (~35s):** The first constraint has slope $\\frac{2}{3}$, and $-\\frac{r}{12} = \\frac{2}{3}$ gives $r = -8$.\n\n**The Full Solution:**\nStep 1: Rewrite $6x - 9y = 24$ as $y = \\frac{2}{3}x - \\frac{8}{3}$, so its slope is $\\frac{2}{3}$.\nStep 2: Rewrite $rx + 12y = s$ as $y = -\\frac{r}{12}x + \\frac{s}{12}$, so its slope is $-\\frac{r}{12}$.\nStep 3: No pair satisfies both constraints, so the slopes match: $-\\frac{r}{12} = \\frac{2}{3}$ and $r = -8$. Check: $-\\frac{-8}{12} = \\frac{2}{3}$.\n\n**Common Mistakes:**\n* Dropping the sign produced when $12y$ moves across gives $r = 8$, which makes the lines cross.\n* Reporting $-6$ negates the first constraint's $x$-coefficient instead of scaling the $y$-coefficient.\n* Inverting the slope to $\\frac{3}{2}$ gives $r = -18$.\n\n**Test Day Takeaway:** Two constraints with no common solution must have equal slopes; the second constant $s$ only has to avoid one forbidden value."
+}

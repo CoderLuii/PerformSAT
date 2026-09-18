@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-410",
+ "question": "A bridge inspection flags a deflection reading $x$, in millimeters, whenever the reading satisfies the equation $|px - 9| = 24$, where $p$ is a positive constant. One flagged reading is $11$ millimeters. What is the other flagged reading, in millimeters?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-11$"
+  },
+  {
+   "id": "B",
+   "text": "$-5$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "negates the given reading instead of solving the second branch",
+  "C": "reports the constant p rather than a reading",
+  "D": "drops the negative sign when solving 3x = -15"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Absolute Value Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $x = 11$ forces $11p - 9 = 24$, so $p = 3$; the other branch $3x - 9 = -24$ gives $x = -5$.\n\n**The Full Solution:**\nStep 1: Substitute the flagged reading: $|11p - 9| = 24$, so $11p - 9 = 24$ or $11p - 9 = -24$.\nStep 2: The second case gives $11p = -15$, a negative $p$, which the problem rules out; the first gives $11p = 33$, so $p = 3$.\nStep 3: Now solve $|3x - 9| = 24$: the branch $3x - 9 = -24$ gives $3x = -15$ and $x = -5$ millimeters. Check: $|3(-5) - 9| = |-24| = 24$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-11$): negates the given reading instead of solving the remaining branch.\n* Choice C ($3$): reports the constant $p$ rather than a reading.\n* Choice D ($5$): solves $3x = -15$ but drops the negative sign on the result.\n\n**Test Day Takeaway:** Use the given solution to pin the unknown coefficient first; the sign restriction on that coefficient decides which branch produced it."
+}

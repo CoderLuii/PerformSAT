@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "A studio logs the peak level, in decibels, of each of $30$ takes; the levels have mean $m$ and standard deviation $s$. A processing stage replaces each level $L$ with $\\dfrac{3}{4}L-6$. Which statement describes the mean and the standard deviation of the processed levels?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The mean is $\\dfrac{3}{4}m$ and the standard deviation is $\\dfrac{3}{4}s$."
+  },
+  {
+   "id": "B",
+   "text": "The mean is $\\dfrac{3}{4}m-6$ and the standard deviation is $s$."
+  },
+  {
+   "id": "C",
+   "text": "The mean is $\\dfrac{3}{4}m-6$ and the standard deviation is $\\dfrac{3}{4}s-6$."
+  },
+  {
+   "id": "D",
+   "text": "The mean is $\\dfrac{3}{4}m-6$ and the standard deviation is $\\dfrac{3}{4}s$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the multiplier to the mean but never subtracts the 6, leaving the mean 6 decibels too high",
+  "B": "assumes multiplying every value leaves the spread alone, so the standard deviation stays s instead of shrinking to three-fourths of s",
+  "C": "subtracts the 6 from the standard deviation as well; a shift moves every value equally and leaves the spread unchanged"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Scaling a Data Set by a Constant**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** Multiplying every value by $\\dfrac{3}{4}$ scales both the mean and the standard deviation by $\\dfrac{3}{4}$; subtracting $6$ then shifts the mean down by $6$ and leaves the spread alone.\n\n**The Full Solution:**\nStep 1: Handle the multiplication. Scaling every value by $\\dfrac{3}{4}$ scales the sum by $\\dfrac{3}{4}$, so the mean becomes $\\dfrac{3}{4}m$, and it scales every distance between values by $\\dfrac{3}{4}$, so the standard deviation becomes $\\dfrac{3}{4}s$.\nStep 2: Handle the subtraction. Subtracting $6$ from every value slides the whole data set down the number line: the mean drops by $6$ to $\\dfrac{3}{4}m-6$, while every gap between values is unchanged, so the standard deviation stays $\\dfrac{3}{4}s$.\nStep 3: Combine the two effects. The processed levels have mean $\\dfrac{3}{4}m-6$ and standard deviation $\\dfrac{3}{4}s$. Check on a tiny set: $\\{8,12\\}$ has mean $10$ and spread $2$ about the mean; processed it becomes $\\{0,3\\}$, with mean $1.5=\\dfrac{3}{4}(10)-6$ and spread $1.5=\\dfrac{3}{4}(2)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: scales both measures but forgets the $-6$ entirely, reporting a mean $6$ decibels too high.\n* Choice B: treats the standard deviation as untouched by the multiplication. Stretching or shrinking every value stretches or shrinks the spread by the same factor.\n* Choice C: subtracts $6$ from the standard deviation too. A shift moves every value the same distance, so no gap between values changes.\n\n**Test Day Takeaway:** Multiplying affects center and spread alike; adding or subtracting a constant moves only the center. Split any $aL+b$ transformation into those two moves and apply each rule separately."
+}

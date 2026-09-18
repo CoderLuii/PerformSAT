@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "An almond huller's grading chute forms right triangle $PQR$, with its right angle at $Q$. If $\\sin R = \\frac{5}{13}$ and $PR = 39$ centimeters, what is the length, in centimeters, of $PQ$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$36$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the numerator of the ratio as a length",
+  "B": "reports the denominator of the ratio as a length",
+  "D": "finds QR, the other leg, instead of PQ"
+ },
+ "correctAnswer": "C",
+ "hint": "A ratio of $\\frac{5}{13}$ does not make any side $5$ or $13$ centimeters long.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** $\\sin R = \\frac{PQ}{PR}$, so $\\frac{PQ}{39} = \\frac{5}{13}$ and $PQ = 15$ centimeters.\n\n**The Full Solution:**\nStep 1: With the right angle at $Q$, the hypotenuse is $PR$ and the leg opposite angle $R$ is $PQ$.\nStep 2: So $\\sin R = \\frac{PQ}{PR} = \\frac{PQ}{39} = \\frac{5}{13}$.\nStep 3: Multiplying gives $PQ = \\frac{5}{13}(39) = 15$ centimeters. Check: $QR = \\sqrt{39^2 - 15^2} = \\sqrt{1296} = 36$, and $\\frac{15}{39} = \\frac{5}{13}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): reporting the numerator of the ratio as though it were the length itself.\n* Choice B ($13$): reporting the denominator of the ratio as though it were the length itself.\n* Choice D ($36$): computing $QR$, the leg adjacent to angle $R$, instead of the requested $PQ$.\n\n**Test Day Takeaway:** A ratio scales: multiply the hypotenuse by the sine to get the opposite leg, and name the sides before substituting."
+}

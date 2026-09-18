@@ -96,10 +96,35 @@ export function setActivitySkipped(plan, weekIndex, activityIndex, skipped) {
  * Remove an activity from its week.
  * @returns {object} new plan
  */
+// The edits ledger: student intent that must survive regeneration. The
+// generator replays it — removed/de-focused skills stay suppressed (unless
+// the newest test shows them regressing), custom tasks come back. Entries
+// carry only defined fields (Firestore rejects undefined).
+function appendEdit(next, entry) {
+  if (!Array.isArray(next.planEdits)) next.planEdits = [];
+  const cleaned = {};
+  Object.entries(entry).forEach(([k, v]) => { if (v !== undefined) cleaned[k] = v; });
+  next.planEdits.push({ ...cleaned, at: new Date().toISOString() });
+}
+
 export function removeActivity(plan, weekIndex, activityIndex) {
   if (!hasActivity(plan, weekIndex, activityIndex)) return plan;
   const next = clone(plan);
-  next.weeks[weekIndex].activities.splice(activityIndex, 1);
+  const [removed] = next.weeks[weekIndex].activities.splice(activityIndex, 1);
+  if (removed?.custom) {
+    // Removing a custom task also retires its ledger entry so it stops
+    // being replayed into future regenerations.
+    next.planEdits = (next.planEdits || []).filter(
+      (e) => !(e.type === 'custom' && e.task?.title === removed.title),
+    );
+  } else if (removed?.type === 'practice' && removed.skillId) {
+    const w = (next.weaknesses || []).find((x) => x.skillId === removed.skillId);
+    appendEdit(next, {
+      type: 'remove',
+      skillId: removed.skillId,
+      accuracyAtEdit: Number.isFinite(w?.accuracy) ? w.accuracy : undefined,
+    });
+  }
   recomputeWeekStats(next.weeks[weekIndex]);
   return next;
 }
@@ -136,6 +161,10 @@ export function addCustomActivity(plan, weekIndex, task) {
     custom: true,
     userEdited: true,
   });
+  appendEdit(next, {
+    type: 'custom',
+    task: { title, day, duration, ...(task.section === 'rw' ? { section: 'rw' } : {}) },
+  });
   recomputeWeekStats(next.weeks[weekIndex]);
   return next;
 }
@@ -160,6 +189,16 @@ export function setFocusAreas(plan, nextWeaknesses) {
   const next = clone(plan);
   const prevSkillIds = new Set((next.weaknesses || []).map((w) => w.skillId));
   const nextSkillIds = new Set(nextWeaknesses.map((w) => w.skillId));
+  // Ledger: an explicit de-focus is durable student intent.
+  (next.weaknesses || []).forEach((w) => {
+    if (w.skillId && !nextSkillIds.has(w.skillId)) {
+      appendEdit(next, {
+        type: 'defocus',
+        skillId: w.skillId,
+        accuracyAtEdit: Number.isFinite(w.accuracy) ? w.accuracy : undefined,
+      });
+    }
+  });
   next.weaknesses = nextWeaknesses.map((w) => ({ ...w }));
 
   // Drop generated practice activities ONLY for explicitly de-focused skills
@@ -221,18 +260,19 @@ export function intensityForMinutes(minutesPerDay) {
  * minutes/day naturally spreads work across more days. Completed and skipped
  * activities keep their existing day.
  */
-function redistributeWeek(week, minutesPerDay) {
+function redistributeWeek(week, minutesPerDay, dayOrder = DAY_ORDER) {
   const cap = Math.max(10, minutesPerDay);
+  const days = dayOrder.length > 0 ? dayOrder : DAY_ORDER;
   const active = (week.activities || []).filter((a) => !a.completed && !a.skipped);
   let dayIdx = 0;
   let dayTotal = 0;
   active.forEach((act) => {
     const dur = Number.isFinite(act.duration) ? act.duration : 20;
-    if (dayTotal > 0 && dayTotal + dur > cap && dayIdx < DAY_ORDER.length - 1) {
+    if (dayTotal > 0 && dayTotal + dur > cap && dayIdx < days.length - 1) {
       dayIdx += 1;
       dayTotal = 0;
     }
-    act.day = DAY_ORDER[dayIdx];
+    act.day = days[dayIdx];
     dayTotal += dur;
   });
 }
@@ -281,8 +321,65 @@ export function setPacing(plan, prefs, todayISO) {
     }
   }
 
+  // Pacing edits keep the student's day selection: update each enabled day's
+  // minutes and re-bin within those days only.
+  if (next.schedule?.days) {
+    const enabled = DAY_ORDER.filter((d) => (next.schedule.days[d] || 0) > 0);
+    enabled.forEach((d) => { next.schedule.days[d] = minutesPerDay; });
+    next.userPrefs.schedule = { days: { ...next.schedule.days }, sessionCapMinutes: next.schedule.sessionCapMinutes ?? null, edited: next.schedule.source === 'edited' || next.userPrefs.schedule?.edited || false };
+    (next.weeks || []).forEach((week) => {
+      redistributeWeek(week, minutesPerDay, enabled);
+      recomputeWeekStats(week);
+    });
+    return next;
+  }
+
   (next.weeks || []).forEach((week) => {
     redistributeWeek(week, minutesPerDay);
+    recomputeWeekStats(week);
+  });
+
+  return next;
+}
+
+/**
+ * Apply a schedule change: which days of the week hold study sessions. Writes
+ * the day map to plan.schedule AND plan.userPrefs.schedule (edited: true) so
+ * the choice survives regeneration, then re-bins every week onto the enabled
+ * days. Minimum two enabled days — a one-day plan can't hold a week's work.
+ *
+ * @param {object} plan
+ * @param {Object<string,number>} days - {Monday: minutes|0, ...} (0 = off day)
+ * @returns {object} new plan (or the original when the edit is invalid)
+ */
+export function setSchedule(plan, days) {
+  if (!plan || !days) return plan;
+  const enabled = DAY_ORDER.filter((d) => Number.isFinite(days[d]) && days[d] > 0);
+  if (enabled.length < 2) return plan;
+
+  const next = clone(plan);
+  const normalized = {};
+  DAY_ORDER.forEach((d) => {
+    normalized[d] = Number.isFinite(days[d]) && days[d] > 0 ? Math.round(days[d]) : 0;
+  });
+
+  next.schedule = {
+    days: normalized,
+    sessionCapMinutes: next.schedule?.sessionCapMinutes ?? null,
+    source: 'edited',
+  };
+  next.userPrefs = {
+    ...(next.userPrefs || {}),
+    schedule: { days: { ...normalized }, sessionCapMinutes: next.schedule.sessionCapMinutes, edited: true },
+    edited: true,
+  };
+  if (next.intensityConfig) next.intensityConfig.daysPerWeek = enabled.length;
+
+  const minutesPerDay = next.userPrefs?.minutesPerDay
+    || next.intensityConfig?.minutesPerDay
+    || Math.max(...enabled.map((d) => normalized[d]));
+  (next.weeks || []).forEach((week) => {
+    redistributeWeek(week, minutesPerDay, enabled);
     recomputeWeekStats(week);
   });
 

@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "A telescope's declination axis lies along the line $ax + 15y = 60$ and its polar axis lies along the line $y = \\frac{5}{3}x - 7$, where $a$ is a constant. The two axes are perpendicular. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-25$"
+  },
+  {
+   "id": "B",
+   "text": "$-9$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$25$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "matches the given slope 5/3 instead of using its negative reciprocal",
+  "B": "flips 5/3 to 3/5 but keeps the slope positive",
+  "D": "negates 5/3 without flipping it"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The declination axis must have slope $-\\frac{3}{5}$. Since that line's slope is $-\\frac{a}{15}$, set $-\\frac{a}{15} = -\\frac{3}{5}$ and get $a = 9$.\n\n**The Full Solution:**\nStep 1: The polar axis has slope $\\frac{5}{3}$, so a perpendicular line has slope $-\\frac{3}{5}$, the negative reciprocal.\nStep 2: Put the other line in slope-intercept form: $15y = -ax + 60$, so $y = -\\frac{a}{15}x + 4$ and its slope is $-\\frac{a}{15}$.\nStep 3: Set the slopes equal: $-\\frac{a}{15} = -\\frac{3}{5}$, so $a = \\frac{3}{5}(15) = 9$. Check: with $a = 9$ the line is $9x + 15y = 60$, or $y = -\\frac{3}{5}x + 4$, and $\\left(-\\frac{3}{5}\\right)\\left(\\frac{5}{3}\\right) = -1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-25$): sets $-\\frac{a}{15} = \\frac{5}{3}$, using the polar axis's own slope. That would make the two axes parallel, not perpendicular.\n* Choice B ($-9$): sets $-\\frac{a}{15} = \\frac{3}{5}$, flipping the fraction but forgetting the negative sign that perpendicularity requires.\n* Choice D ($25$): sets $-\\frac{a}{15} = -\\frac{5}{3}$, negating the slope without flipping it. The product of the slopes would be $-\\frac{25}{9}$, not $-1$.\n\n**Test Day Takeaway:** Perpendicular means flip AND negate. Solve for $y$ before reading the slope off a line written in $Ax + By = C$ form."
+}

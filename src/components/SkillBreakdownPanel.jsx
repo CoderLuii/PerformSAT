@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { skillTaxonomy } from '../data/skillTaxonomy';
 import { colors, radius } from '../design/tokens';
 import { cardStyles } from '../design/components';
 import { ChevronRightIcon } from '../design/icons';

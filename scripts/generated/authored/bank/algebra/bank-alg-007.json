@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-007",
+  "question": "A pottery studio charges a one-time kiln fee of $\\$45$ plus $\\$12$ for each session a member attends. Which equation gives the total cost $C$, in dollars, for a member who attends $s$ sessions?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$C = 12s - 45$"
+    },
+    {
+      "id": "B",
+      "text": "$C = 45s + 12$"
+    },
+    {
+      "id": "C",
+      "text": "$C = 12s + 45$"
+    },
+    {
+      "id": "D",
+      "text": "$C = 57s$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts the one-time fee",
+    "B": "swaps the per-session charge and the one-time fee",
+    "D": "adds the fee to the per-session charge as if the fee recurred every session"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Linear Cost Model**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** One-time fee $45$, plus $12$ per session for $s$ sessions: $C = 12s + 45$.\n\n**The Full Solution:**\nStep 1: A fixed fee plus a constant charge per session is a linear cost: $C = (\\text{cost per session})s + (\\text{fixed fee})$.\nStep 2: The cost per session is $12$ and the fixed fee is $45$, so $C = 12s + 45$.\nStep 3: Check: with $s = 0$, $C = 45$, the fee alone; with $s = 3$, $C = 36 + 45 = 81$, which is $45$ plus three sessions at $12$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($C = 12s - 45$): subtracts the kiln fee, giving a negative cost for a member with no sessions.\n* Choice B ($C = 45s + 12$): swaps the two numbers, charging $45$ per session and a $12$ fee.\n* Choice D ($C = 57s$): adds $45 + 12$ and charges it every session, as if the kiln fee recurred.\n\n**Test Day Takeaway:** A one-time fee is the $y$-intercept and a per-unit charge is the slope; a fee that is paid once never multiplies the variable."
+}

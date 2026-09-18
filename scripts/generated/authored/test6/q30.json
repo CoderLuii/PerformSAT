@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
-  "passage": "When conservators clean an old painting, they face a dilemma with no purely technical solution. Removing every later addition can return a work to something nearer its original state, but it also destroys the physical record of how the object was handled and valued by earlier owners. The most defensible cleanings, many in the field now hold, are therefore ______ ones: treatments that recover the original image without erasing the traces of the work's long life.",
+  "passage": "Utility-scale solar installations sit on land that must be kept clear of tall vegetation, since plants that shade a panel cut its output and mowing between close-set rows is slow, costly work. A growing number of operators instead contract with nearby ranchers to pasture sheep among the panels, and the arrangement has proved mutually ______: the flocks gain reliable forage and shade through the hottest part of the season, while the operators gain vegetation control in the narrow, shadowed strips beneath the panels that no mowing machine was ever designed to reach.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "exhaustive"
+      "text": "exacting"
     },
     {
       "id": "B",
-      "text": "decorative"
+      "text": "lucrative"
     },
     {
       "id": "C",
-      "text": "reversible"
+      "text": "contentious"
     },
     {
       "id": "D",
-      "text": "restrained"
+      "text": "advantageous"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"restrained.\" The passage warns that stripping away every later addition destroys part of the object's history, then endorses cleanings that recover the original image without erasing those traces; a treatment that holds back in that way is a \"restrained\" one. \"Exhaustive\" is the opposite, describing the total removal the passage cautions against. \"Decorative\" does not fit a question about how far to clean, and \"reversible,\" though a real conservation value, refers to whether a treatment can later be undone, not to the restraint the sentence is defining."
+  "explanation": "**Choice D is correct.** The colon itemizes a benefit to each side — forage and shade for the flocks, vegetation control for the operators — so the arrangement is mutually \"advantageous.\"\n\n**The Full Solution:**\n- \"Mutually ______\" must characterize the arrangement for both parties at once.\n- The elaboration after the colon is a two-sided ledger of gains (\"the flocks gain... while the operators gain...\"), which restates \"advantageous\" exactly.\n\n**Why the other choices are wrong:**\n- A: \"Exacting\" means demanding rigor or effort; the colon lists benefits, not demands.\n- B: \"Lucrative\" narrows the gain to money, but the flocks' stated gains — forage and shade — are not financial at all.\n- C: \"Contentious\" means marked by dispute, the opposite of an arrangement the text presents as serving both sides."
 }

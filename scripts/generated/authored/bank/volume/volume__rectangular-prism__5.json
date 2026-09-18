@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A carton in the shape of a right rectangular prism has interior dimensions $18$ inches by $12$ inches by $10$ inches. Cubic blocks with edge length $3$ inches are packed inside the carton with their faces parallel to the faces of the carton. What is the greatest number of whole blocks that fit inside?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$72$"
+  },
+  {
+   "id": "B",
+   "text": "$80$"
+  },
+  {
+   "id": "C",
+   "text": "$240$"
+  },
+  {
+   "id": "D",
+   "text": "$720$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the volume of the carton by the volume of a block, ignoring that $10$ is not a multiple of $3$",
+  "C": "divides the volume of the carton by $3^2$ instead of $3^3$",
+  "D": "divides the volume of the carton by $3$ instead of by $3^3$"
+ },
+ "correctAnswer": "A",
+ "hint": "Check each dimension on its own — one of them does not divide evenly.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~60s):** $18 \\div 3 = 6$ and $12 \\div 3 = 4$, but only $3$ layers fit along $10$ inches, so $6 \\cdot 4 \\cdot 3 = 72$.\n\n**The Full Solution:**\nStep 1: Blocks stack in whole rows along each edge, so count how many fit along each dimension separately.\nStep 2: Along $18$ inches, $6$ blocks fit; along $12$ inches, $4$ fit; along $10$ inches only $3$ fit, since a fourth layer would need $12$ inches.\nStep 3: The total is $6 \\cdot 4 \\cdot 3 = 72$ blocks.\n\nVerification: Those blocks fill $72(27) = 1{,}944$ cubic inches inside a carton of $2{,}160$ cubic inches, leaving a $1$-inch gap on top. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($80$): divides the volume of the carton by the volume of a block, ignoring that $10$ is not a multiple of $3$.\n* Choice C ($240$): divides the volume of the carton by $3^2$ instead of $3^3$.\n* Choice D ($720$): divides the volume of the carton by $3$ instead of by $3^3$.\n\n**Test Day Takeaway:** Packing questions count blocks along each edge and round each count down; the volume quotient overcounts whenever a dimension does not divide evenly."
+}

@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To argue that Ptolemy's planetary models were eventually abandoned once medieval astronomers discovered that they failed to predict the observed motions of the planets at all."
-    },
-    {
-      "id": "B",
-      "text": "To describe the observational instruments that astronomers in medieval Islamic observatories developed for measuring the positions of the planets."
-    },
-    {
-      "id": "C",
-      "text": "To trace the gradual spread of Greek astronomical texts into the libraries of the medieval Islamic world."
-    },
-    {
-      "id": "D",
-      "text": "To explain why some medieval Islamic astronomers sought to revise Ptolemy's planetary models even though those models predicted planetary motions accurately."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage states that Ptolemy's models were accurate but that some astronomers objected to a device within them on principled grounds, and so tried to build alternatives that kept the accurate predictions while removing that device. Explaining why they revised an accurate model is exactly the passage's purpose. Choice A says the models failed to predict planetary motion, which contradicts the passage's repeated point that they were accurate. Choice B focuses on instruments and Choice C on the transmission of texts, neither of which the passage discusses.",
-  "passage": "By the eleventh century, astronomers working in the medieval Islamic world had inherited the planetary models of the Greek astronomer Ptolemy, whose system reproduced the observed motions of the planets with impressive accuracy. Yet several of these astronomers were uneasy. Ptolemy's models, they argued, achieved their accuracy by means of a device—a point from which a planet's motion appeared uniform but around which the planet did not actually travel at a constant speed—that violated the principle of uniform circular motion the models were supposed to embody. Rather than discard Ptolemy, they set out to build alternative models that preserved his predictions while removing the offending device.",
-  "_meta": {
-    "anchor": "medieval Islamic astronomy: objection to Ptolemy's equant; alternative models"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To argue that materials grown from fungi will soon replace animal leather in most consumer products"
   },
-  "id": 1107,
-  "module": 1
+  {
+   "id": "B",
+   "text": "To explain why leather substitutes made from plastic shed fragments as they age"
+  },
+  {
+   "id": "C",
+   "text": "To compare the cost of producing fungal materials with the cost of producing animal hide"
+  },
+  {
+   "id": "D",
+   "text": "To introduce a material under development, noting its promise and a question that remains open"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The text presents mycelium sheets — how they are grown and finished — then closes by balancing early promise (\"resist tearing well for their weight\") against an unresolved issue (\"must still prove the material's durability at scale\").\n\n**The Full Solution:**\n- The opening gives the motivation: plastic substitutes wear poorly, so scientists sought an alternative.\n- The middle describes the material's production, from trays of sawdust to a supple, dyeable sheet.\n- The final sentence explicitly pairs an open question with encouraging early results — the hallmark of an introduction to a technology still in development, which is what choice D captures.\n\n**Why the other choices are wrong:**\n- A: The text predicts no replacement of leather; it reports early tests and an unproven property, not a coming triumph.\n- B: The shedding of plastic fragments is a one-sentence premise, not the subject the text develops.\n- C: Cost is never mentioned anywhere in the text.",
+ "passage": "Leather substitutes made from plastic have long been criticized for wearing poorly and for shedding synthetic fragments as they age. Materials scientists have therefore turned to an unlikely source: the root-like web of threads, called mycelium, that a fungus spreads through whatever it feeds on. Grown in trays of sawdust or agricultural waste, the mat of threads can be harvested in weeks, then compressed and treated to yield a supple sheet that can be dyed, embossed, and stitched like animal hide. Manufacturers must still prove the material's durability at scale, but early tests suggest the sheets resist tearing well for their weight.",
+ "_meta": {
+  "anchor": "fungal leather alternatives — mycelium sheet production and open durability question",
+  "distractors": {
+   "A": "overreach — text makes no replacement prediction",
+   "B": "premise mistaken for subject",
+   "C": "fabricated comparison — cost never appears"
+  }
+ },
+ "id": 1107,
+ "module": 1
 }

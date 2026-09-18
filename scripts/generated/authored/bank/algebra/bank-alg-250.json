@@ -1,0 +1,48 @@
+{
+ "id": "bank-alg-250",
+ "question": "The table gives the mass of each of two types of ceramic tile. A crate contains a total of $30$ tiles of these two types, and the total mass of the tiles in the crate is $38{,}400$ grams. How many rectangular tiles are in the crate?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Tile type",
+    "Mass (grams)"
+   ],
+   "rows": [
+    [
+     "Square",
+     "1,000"
+    ],
+    [
+     "Rectangular",
+     "1,600"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$14$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "splits the 30 tiles evenly, ignoring the mass condition",
+  "C": "number of square tiles (wrong variable reported)",
+  "D": "divides the total mass by 1,600 as if every tile were rectangular"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** If all $30$ tiles were square the mass would be $30{,}000$ g. Each swap to a rectangular tile adds $600$ g, and $38{,}400 - 30{,}000 = 8{,}400 = 14 \\cdot 600$, so $14$ tiles are rectangular.\n\n**The Full Solution:**\nStep 1: Let $s$ be the number of square tiles and $r$ the number of rectangular tiles. Then $s + r = 30$ and $1000s + 1600r = 38400$.\nStep 2: Substitute $s = 30 - r$: $1000(30 - r) + 1600r = 38400$, so $30000 + 600r = 38400$ and $r = 14$.\nStep 3: Then $s = 16$. Check: $1000(16) + 1600(14) = 16000 + 22400 = 38400$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($15$): assumes the tiles split evenly and never uses the mass equation.\n* Choice C ($16$): the number of square tiles; the question asks for rectangular tiles.\n* Choice D ($24$): $38400 \\div 1600$, which treats every tile as rectangular and ignores the count of $30$.\n\n**Test Day Takeaway:** Count equation plus value equation: substitute the count into the value equation and solve for the quantity the question actually names."
+}

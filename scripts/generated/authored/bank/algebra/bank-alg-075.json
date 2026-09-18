@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-075",
+ "question": "A response model is defined by $h(x) = \\frac{x + 5}{x^2 - 7x + k}$, where $k$ is a constant, and the model is undefined at an input of $x = 3$. At which other input value is the model undefined?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x = -4$"
+  },
+  {
+   "id": "B",
+   "text": "$x = 4$"
+  },
+  {
+   "id": "C",
+   "text": "$x = 7$"
+  },
+  {
+   "id": "D",
+   "text": "$x = 12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "flips the sign of the second factor when factoring x^2 - 7x + 12",
+  "C": "reports the sum of the two undefined values",
+  "D": "reports the constant k"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Domain with Quadratic Denominator**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $x = 3$ zeroes the denominator, so $9 - 21 + k = 0$ and $k = 12$; then $x^2 - 7x + 12 = (x - 3)(x - 4)$, so $x = 4$.\n\n**The Full Solution:**\nStep 1: A rational expression is undefined exactly where its denominator is zero, so $3^2 - 7(3) + k = 0$.\nStep 2: That gives $9 - 21 + k = 0$, so $k = 12$ and the denominator is $x^2 - 7x + 12$.\nStep 3: Factor: $x^2 - 7x + 12 = (x - 3)(x - 4)$, so the other zero is $x = 4$. Check: $4^2 - 7(4) + 12 = 16 - 28 + 12 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($x = -4$): flips the sign of the second factor, reading $(x - 3)(x + 4)$.\n* Choice C ($x = 7$): reports the sum of the two zeros, $3 + 4$, instead of the second zero.\n* Choice D ($x = 12$): reports the constant $k$ rather than a value of $x$.\n\n**Test Day Takeaway:** Use the known undefined input to pin the missing constant, then factor the completed denominator to find the rest."
+}

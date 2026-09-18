@@ -1,0 +1,56 @@
+{
+ "id": "bank-ps-070",
+ "question": "The table gives the number of active burrows counted at each of four prairie dog colonies. What is the mean number of active burrows per colony?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Colony",
+    "Active burrows"
+   ],
+   "rows": [
+    [
+     "North",
+     "84"
+    ],
+    [
+     "East",
+     "61"
+    ],
+    [
+     "South",
+     "97"
+    ],
+    [
+     "West",
+     "70"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$77$"
+  },
+  {
+   "id": "B",
+   "text": "$78$"
+  },
+  {
+   "id": "C",
+   "text": "$79$"
+  },
+  {
+   "id": "D",
+   "text": "$104$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the median, $\\frac{70 + 84}{2} = 77$, rather than the mean",
+  "C": "averages only the least and greatest counts, $\\frac{61 + 97}{2} = 79$",
+  "D": "divides the total by $3$ instead of $4$, giving $\\frac{312}{3} = 104$"
+ },
+ "explanation": "**SAT Pattern: Mean of Four Values**\n\n**Choice B is correct.** The four counts total $312$ burrows, and $\\frac{312}{4} = 78$ burrows per colony.\n\n**The Fast Way (~25s):** $84 + 61 + 97 + 70 = 312$, and $312 \\div 4 = 78$.\n\n**The Full Solution:**\n\nStep 1: Add the four tabled counts: $84 + 61 + 97 + 70 = 312$ active burrows.\n\nStep 2: Count the colonies. The table lists four.\n\nStep 3: Divide: $\\frac{312}{4} = 78$ burrows per colony. Check: four colonies averaging $78$ would hold $4(78) = 312$ burrows.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($77$): is the median of the four counts, the average of the two middle values $70$ and $84$.\n* Choice C ($79$): averages only the smallest and largest counts, which ignores the two middle colonies.\n* Choice D ($104$): divides by $3$ instead of $4$, dropping one colony from the count.\n\n**Test Day Takeaway:** The denominator of a mean is how many values there are, not how many look interesting -- count the rows before you divide."
+}

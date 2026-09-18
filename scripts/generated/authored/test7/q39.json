@@ -1,31 +1,31 @@
 {
-  "id": 739,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "module": 2,
-  "passage": "Microbes recovered from the deepest ocean trenches live under pressures hundreds of times greater than those at the surface. Researchers have proposed that some of these organisms are not merely tolerant of such pressure but actually depend on it—that their cell membranes and enzymes are tuned to work only within the narrow high-pressure range of their native habitat. To test the idea, a team has begun culturing trench-dwelling bacteria in sealed chambers in which the pressure can be raised or lowered while the bacteria's growth is measured.",
-  "question": "Which finding from the study, if true, would most strongly support the researchers' proposal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The bacteria continued to grow at roughly the same steady rate whether the chamber’s surrounding pressure was set to ordinary surface levels or instead to deep-trench levels."
-    },
-    {
-      "id": "B",
-      "text": "The bacteria multiplied steadily while the chamber was held at trench-level pressure but stopped dividing as the pressure was lowered toward that of the surface."
-    },
-    {
-      "id": "C",
-      "text": "Seawater samples drawn from the trench contained a noticeably greater variety of bacterial species than samples taken nearer the ocean surface."
-    },
-    {
-      "id": "D",
-      "text": "The bacteria survived for several days in cold storage before they were finally transferred into the high-pressure culture chambers for testing."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The proposal is that these microbes depend on high pressure, so a finding that they grow at trench-level pressure but stop dividing when the pressure drops would directly support it. Choice A shows the bacteria indifferent to pressure, which would undercut the proposal rather than support it. Choice C concerns the diversity of species in the trench, not any single organism's pressure requirement, and Choice D reports survival in storage, which says nothing about whether high pressure is needed for growth."
+ "id": 739,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "module": 2,
+ "passage": "Artificial light at night is a serious hazard for moths, which exhaust themselves circling lamps instead of feeding and mating. Ecologists have hypothesized that moth populations in brightly lit city centers, exposed to street lighting for many generations, may be evolving a weaker flight-to-light response. To test the idea, a research team has been collecting moth larvae from city centers and from dark rural sites, rearing all of them under identical indoor conditions, and then recording how the emerging adults respond to a standard lamp.",
+ "question": "Which finding from the study, if true, would most strongly support the ecologists' hypothesis?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Adult moths reared from city larvae and adult moths reared from rural larvae flew toward the test lamp at essentially the same rate."
+  },
+  {
+   "id": "B",
+   "text": "Adult moths reared from city larvae flew toward the test lamp markedly less often than adult moths reared from rural larvae did."
+  },
+  {
+   "id": "C",
+   "text": "Moths reared from rural larvae emerged as adults slightly earlier in the season than moths reared from city larvae."
+  },
+  {
+   "id": "D",
+   "text": "Adult moths of both origins were more strongly attracted to the lamp on warm nights than on cold ones."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The hypothesis predicts an evolved, population-level difference — city moths less drawn to light — and B reports that difference under the study's controlled conditions, where identical rearing leaves inheritance as the live explanation.\n\n**The Full Solution:**\n- Restate the prediction: generations under street lighting should have weakened city moths' flight-to-light response relative to rural moths.\n- The design matters: larvae from both origins are reared identically, so a behavioral gap in the adults points to inherited change rather than to individual experience of lights.\n- B is that gap, in the predicted direction — city-descended adults approaching the lamp markedly less often.\n\n**Why the other choices are wrong:**\n- A: Equal attraction across origins is the null result — it would count against the hypothesis, not for it.\n- C: Emergence timing is a different trait; the hypothesis concerns response to light, not the calendar.\n- D: A warm-night effect shared by both groups says nothing about a difference between the populations."
 }

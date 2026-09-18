@@ -1,31 +1,31 @@
 {
-  "id": 1243,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 2,
-  "passage": "Art historians dating early European panel paintings increasingly rely on dendrochronology—matching the ring patterns in the oak panel to dated reference sequences from the same region. The method establishes when the tree was felled, but it does not date the painting directly. A panel could not have been painted before its tree was cut; yet oak was often stored and seasoned for years before use, and a workshop might keep a stock of prepared panels. Researchers therefore treat a dendrochronological date as a firm earliest-possible date for a painting rather than as the date of execution. It follows that a scholar who treats the felling date of the panel as the year the picture was painted ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "will arrive at a date that is, if anything, slightly too late, since on this reasoning the paintings would usually have been executed well before their oak panels were ever cut."
-    },
-    {
-      "id": "B",
-      "text": "can be confident that the resulting estimate is exact, because oak panels were almost always painted within a few weeks of the tree being felled."
-    },
-    {
-      "id": "C",
-      "text": "has chosen the single most reliable method available for assigning a precise calendar year to an early European panel painting."
-    },
-    {
-      "id": "D",
-      "text": "risks dating the picture too early, since the wood may have been seasoned and stored for years between the felling of the tree and the painting."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. Because seasoning and storage could put years between felling and painting, the felling date marks the earliest the picture could have been made; treating it as the painting date would place the work too early. D states that. A reverses the logic, claiming the estimate would be too late, which the seasoning gap rules out. B contradicts the passage's point that the panel was often stored well before use. C praises the method's precision, but the passage stresses that it gives only an earliest-possible date, not an exact one."
+ "id": 1243,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 2,
+ "passage": "Collectors of early printed maps have long paid premiums for period color — coloring applied when a map was first published — over color added later. Dating the printing of a map is usually straightforward, since publishers recorded their editions and the paper and plates can be traced. The coloring is another matter. Pigment might have been applied in the publisher's workshop the week the sheet was printed, or by the purchaser's own colorist a generation afterward, or by a nineteenth-century dealer brightening old stock for the collectors' market; paper takes a wash of color at any age and carries no date. Catalogers therefore treat a map's edition date as settling when the sheet was printed and nothing more. It follows that a cataloger who records the date of printing as the date of the coloring ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "will err, if at all, by making the coloring seem more recent than it truly is, since many sheets were colored before they were printed."
+  },
+  {
+   "id": "B",
+   "text": "can rely on the attribution being sound, because publishers' edition records listed which copies had been colored in the workshop."
+  },
+  {
+   "id": "C",
+   "text": "has adopted the only defensible convention available, since no physical or documentary evidence of any kind can ever distinguish early coloring from the additions of later hands."
+  },
+  {
+   "id": "D",
+   "text": "risks describing the color as older than it is, since pigment may have been applied years or even centuries after the sheet left the press."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The printing date is the earliest possible moment the color could have been applied — every alternative the passage lists (a purchaser's colorist a generation on, a nineteenth-century dealer) comes later. Equating the two dates therefore errs in one direction only: it makes the color look older than it may be.\n\n**The Full Solution:**\n- A sheet cannot be colored before it exists, so the printing date is a floor for the coloring date, never a ceiling.\n- The passage's examples of later coloring — a generation afterward, or centuries later for the collectors' market — show how far above that floor the true date can sit.\n- Recording the floor as the actual date collapses that gap in one direction: the recorded age of the color can only be too great, never too small. That is D's conclusion.\n\n**Why the other choices are wrong:**\n- A: It runs the error backward and rests on an impossibility — sheets colored before they were printed.\n- B: It contradicts the passage, whose edition records date printings; the text says the paper \"carries no date\" for color.\n- C: It overreaches twice — the passage never calls the convention defensible, and \"no evidence of any kind\" goes far beyond what the catalogers' caution implies."
 }

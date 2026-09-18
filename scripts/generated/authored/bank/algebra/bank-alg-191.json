@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-191",
+ "question": "A specimen fridge's log satisfies $w + 26 = c$, where $w$ is the recorded temperature in degrees Celsius and $c$ is a constant. The log is satisfied when $w = -9$. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-35$"
+  },
+  {
+   "id": "B",
+   "text": "$17$"
+  },
+  {
+   "id": "C",
+   "text": "$35$"
+  },
+  {
+   "id": "D",
+   "text": "$234$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "computes -9 - 26, subtracting instead of adding",
+  "C": "adds the absolute values and ignores the negative sign on w",
+  "D": "multiplies -9 by -26 instead of adding 26"
+ },
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Substitute $w = -9$: $c = -9 + 26 = 17$.\n\n**The Full Solution:**\n\nStep 1: The log is $w + 26 = c$, and the value $w = -9$ satisfies it.\n\nStep 2: Substitute: $-9 + 26 = c$.\n\nStep 3: Adding a positive number to $-9$ moves right on the number line, giving $c = 17$. Check: $-9 + 26 = 17$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-35$): computes $-9 - 26$, subtracting the $26$ instead of adding it.\n* Choice C ($35$): adds $9$ and $26$, dropping the negative sign on the recorded temperature.\n* Choice D ($234$): multiplies $-9$ by $-26$ instead of adding.\n\n**Test Day Takeaway:** Substituting a negative value is safest done on a number line: adding a positive number always moves toward zero and past it."
+}

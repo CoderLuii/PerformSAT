@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "A fabricator cuts a gusset plate in the shape of a right triangle whose acute angle $P$ satisfies $\\tan P = \\frac{12}{5}$. The perimeter of the finished plate is $k$ inches. Which expression gives the length, in inches, of the longer leg of the plate?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{k}{6}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{2k}{5}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{13k}{30}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{12k}{13}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "gives the shorter leg, 5m out of a perimeter of 30m, instead of the longer leg",
+  "C": "gives the hypotenuse, 13m out of a perimeter of 30m",
+  "D": "treats k as the hypotenuse and takes 12/13 of it, ignoring that k is the perimeter"
+ },
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $\\tan P = \\frac{12}{5}$ makes the legs $12m$ and $5m$ and the hypotenuse $13m$, so the perimeter is $30m = k$. The longer leg is $12m = \\frac{12k}{30} = \\frac{2k}{5}$.\n\n**The Full Solution:**\nStep 1: Tangent is the opposite leg over the adjacent leg, so for some positive $m$ the leg opposite $P$ is $12m$ and the leg adjacent to $P$ is $5m$.\nStep 2: The Pythagorean theorem gives the hypotenuse: $\\sqrt{(12m)^2 + (5m)^2} = \\sqrt{169m^2} = 13m$. The three sides are therefore $5m$, $12m$, and $13m$, and the perimeter is $5m + 12m + 13m = 30m$.\nStep 3: Since the perimeter is $k$, $30m = k$ and $m = \\frac{k}{30}$. The longer leg is $12m = \\frac{12k}{30} = \\frac{2k}{5}$. Check with $k = 60$: the sides are $10$, $24$, and $26$, which sum to $60$, and $\\frac{2(60)}{5} = 24$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{k}{6}$): this is $5m = \\frac{5k}{30}$, the shorter leg. With $\\tan P = \\frac{12}{5}$, the leg opposite $P$ is the longer one.\n* Choice C ($\\frac{13k}{30}$): this is the hypotenuse $13m$. The hypotenuse is not a leg.\n* Choice D ($\\frac{12k}{13}$): applies the ratio $\\frac{12}{13}$ to $k$ as though $k$ were the hypotenuse. Here $k$ is the whole perimeter, so it must be split into $30$ parts, not $13$.\n\n**Test Day Takeaway:** Turn a trigonometric ratio into a scaled side triple, add the sides to get the perimeter in terms of the scale factor, then solve for that factor before answering."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-188",
+ "question": "A rectangular plot of land is $(x + 7)$ meters long and $(x + 2)$ meters wide. Which expression gives the area, in square meters, of the plot?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x^2 + 14$"
+  },
+  {
+   "id": "B",
+   "text": "$x^2 + 9x + 9$"
+  },
+  {
+   "id": "C",
+   "text": "$x^2 + 9x + 14$"
+  },
+  {
+   "id": "D",
+   "text": "$x^2 + 14x + 14$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies first and last terms only",
+  "B": "adds 7 and 2 for the constant term",
+  "D": "multiplies 7 and 2 for the middle coefficient"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Symbolic Area or Volume**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Area $= (x + 7)(x + 2) = x^2 + (7 + 2)x + (7)(2) = x^2 + 9x + 14$.\n\n**The Full Solution:**\nStep 1: The area of a rectangle is length times width, so the area is $(x + 7)(x + 2)$.\nStep 2: Expand: $x \\cdot x + x \\cdot 2 + 7 \\cdot x + 7 \\cdot 2 = x^2 + 2x + 7x + 14$.\nStep 3: Combine like terms: $x^2 + 9x + 14$.\n\nVerification: at $x = 3$ the plot is $10$ by $5$, area $50$, and $3^2 + 9(3) + 14 = 9 + 27 + 14 = 50$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($x^2 + 14$): multiplies only the first terms and only the last terms, skipping the two cross products.\n* Choice B ($x^2 + 9x + 9$): adds $7 + 2$ for the constant term instead of multiplying them.\n* Choice D ($x^2 + 14x + 14$): multiplies $7 \\cdot 2$ for the coefficient of $x$ instead of adding them.\n\n**Test Day Takeaway:** In $(x + a)(x + b)$ the middle coefficient is $a + b$ and the constant is $ab$. Testing one convenient value of $x$ eliminates the swapped versions in seconds."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 1215,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 1,
-  "passage": "Ethnographers working in the Arctic have noted that many Inuit communities maintained an unusually detailed oral knowledge of sea-ice conditions—where ice would thin first, how currents shifted beneath it, which routes stayed safe late into spring. This knowledge was not written down but passed along through hunting partnerships and storytelling, and it was tied closely to the particular stretch of coast a group used. As some communities have moved to centralized settlements and younger people have spent less time traveling on the ice, researchers who study this knowledge have observed that it can erode within a single generation, even where the language itself remains in daily use. Their observations suggest that preserving such environmental knowledge ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "depends on sustaining the practices through which it is transmitted, since the knowledge can fade even while the community's language is still spoken."
-    },
-    {
-      "id": "B",
-      "text": "is mainly a matter of recording in writing the language and vocabulary in which it is expressed, after which the knowledge itself will remain secure."
-    },
-    {
-      "id": "C",
-      "text": "is unnecessary, because sea-ice conditions have stayed stable enough that detailed local knowledge no longer offers any practical advantage at all."
-    },
-    {
-      "id": "D",
-      "text": "can be accomplished only by returning every relocated community to the exact stretch of coast that it had formerly used for hunting."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The researchers note that the knowledge erodes when the practices that carried it—hunting partnerships, travel on the ice—fall away, and that it can fade even where the language survives. The logical implication is that keeping the knowledge alive depends on keeping up those practices. B is exactly what the evidence rules out, since the knowledge declines even while the language is still spoken. C contradicts the passage, which treats the knowledge as practically valuable. D overreaches: the text never claims that returning to a specific coastline is the only possible remedy."
+ "id": 1215,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 1,
+ "passage": "The Shaker communities of nineteenth-century America furnished their own dwellings with plain, carefully joined furniture and also produced chairs by the thousand for sale to the outside world. The two streams of work came out of the same shops: the same members, using the same patterns and the same standards of workmanship, built for the meetinghouse and for the market alike, and few pieces of either kind carry a maker's name. Curators asked to determine whether a surviving chair was made for community use or for sale have found that the chair itself rarely settles the question. Their experience suggests that ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "sorting the two kinds of work depends on evidence beyond the furniture itself, such as sales ledgers and community records."
+  },
+  {
+   "id": "B",
+   "text": "chairs made for sale can usually be identified by their inferior workmanship, since pieces intended for outsiders were finished with less care."
+  },
+  {
+   "id": "C",
+   "text": "most surviving Shaker chairs must have been made for community use, since furniture sold to outsiders would rarely have been preserved."
+  },
+  {
+   "id": "D",
+   "text": "the question of a chair's original purpose should be abandoned, because the two streams of work cannot be told apart by any means."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** If identical hands, patterns, and standards produced both streams of work, and the pieces are unsigned, then the object alone cannot reveal its intended destination — so the answer must come from somewhere other than the object.\n\n**The Full Solution:**\n- The key facts: community furniture and sale furniture came from the same shops, by the same makers, to the same standards, and few pieces are marked.\n- The curators' experience confirms the consequence: \"the chair itself rarely settles the question.\"\n- What follows is that settling it requires outside evidence — documents like ledgers and community records — which is precisely choice A.\n\n**Why the other choices are wrong:**\n- B: It contradicts the passage, which says both streams were built to the same standards of workmanship.\n- C: Nothing in the text supports a claim about which chairs survived; preservation is never discussed.\n- D: It overshoots — the passage says the chair itself rarely answers the question, not that the question can never be answered at all."
 }

@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "In the quadratic equation $2x^2 + 7x + 3 = 0$, the coefficients are $a = 2$, $b = 7$, and $c = 3$. What is the value of the discriminant $b^2 - 4ac$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-25$"
+    },
+    {
+      "id": "B",
+      "text": "$25$"
+    },
+    {
+      "id": "C",
+      "text": "$37$"
+    },
+    {
+      "id": "D",
+      "text": "$73$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses the subtraction",
+    "C": "omits a from 4ac",
+    "D": "adds instead of subtracting"
+  },
+  "correctAnswer": "B",
+  "hint": "Substitute all three coefficients, and perform the subtraction last.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** $7^2 - 4(2)(3) = 49 - 24 = 25$.\n\n**The Full Solution:**\nStep 1: Square the middle coefficient: $b^2 = 7^2 = 49$.\nStep 2: Multiply the other three factors: $4ac = 4(2)(3) = 24$.\nStep 3: Subtract in the order the formula gives: $49 - 24 = 25$. Check: $25$ is a perfect square, and indeed $2x^2 + 7x + 3 = (2x + 1)(x + 3)$ has two rational solutions. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-25$): reverses the subtraction, computing $4ac - b^2 = 24 - 49$.\n* Choice C ($37$): leaves $a$ out of the product, computing $49 - 4(3) = 49 - 12$.\n* Choice D ($73$): adds the two pieces instead of subtracting, computing $49 + 24$.\n\n**Test Day Takeaway:** The discriminant is $b^2$ MINUS $4ac$, and $4ac$ uses all three coefficients — dropping one is the most common slip."
+}

@@ -1,0 +1,52 @@
+{
+ "id": "bank-am-416",
+ "question": "The table gives the number of loaded railcars dispatched from three rail yards in 2024. At each yard the 2024 total was $24\\%$ greater than that yard's 2023 total. How many loaded railcars did Yard B dispatch in 2023?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Rail yard",
+    "Loaded railcars in 2024"
+   ],
+   "rows": [
+    [
+     "A",
+     "2,604"
+    ],
+    [
+     "B",
+     "3,038"
+    ],
+    [
+     "C",
+     "3,906"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$729$"
+  },
+  {
+   "id": "B",
+   "text": "$2{,}309$"
+  },
+  {
+   "id": "C",
+   "text": "$2{,}450$"
+  },
+  {
+   "id": "D",
+   "text": "$3{,}767$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes 24% of the 2024 total: 3,038 times 0.24 = 729.12, about 729",
+  "B": "subtracts 24% of the 2024 total: 3,038 times 0.76 = 2,308.88, about 2,309",
+  "D": "multiplies by 1.24 instead of dividing: 3,038 times 1.24 = 3,767.12, about 3,767"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Reverse Percent Increase**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The 2024 total is $1.24$ times the 2023 total, so the 2023 total is $3{,}038\\div1.24=2{,}450$.\n\n**The Full Solution:**\n\nStep 1: Let $n$ be Yard B's 2023 total. A $24\\%$ increase multiplies it by $1.24$, so $1.24n=3{,}038$.\n\nStep 2: Solve for $n$: $n=\\frac{3{,}038}{1.24}$.\n\nStep 3: Divide: $n=2{,}450$. Check: $2{,}450\\times0.24=588$, and $2{,}450+588=3{,}038$, the table entry for Yard B.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($729$): computes $24\\%$ of the 2024 total, $3{,}038\\times0.24=729.12$.\n* Choice B ($2{,}309$): subtracts $24\\%$ of the 2024 total, $3{,}038\\times0.76=2{,}308.88$.\n* Choice D ($3{,}767$): multiplies by $1.24$ instead of dividing, $3{,}038\\times1.24=3{,}767.12$.\n\n**Test Day Takeaway:** An increase of $p\\%$ is a multiplication by $1+\\frac{p}{100}$; to undo it, divide by that factor rather than subtracting the percent."
+}

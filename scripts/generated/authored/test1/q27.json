@@ -9,34 +9,33 @@
  "studentNotes": {
   "intro": "While researching a topic, a student has taken the following notes:",
   "bullets": [
-   "Margaret Mead (1901-1978) was an American anthropologist trained at Columbia University who later served as curator of ethnology at the American Museum of Natural History.",
-   "Mead practiced comparative ethnography, drawing conclusions about human variation by setting fieldwork from one society alongside fieldwork from another.",
-   "In *Coming of Age in Samoa* (1928), she argued that the turbulence Western societies treat as inherent to adolescence is shaped by particular cultural arrangements rather than by biology alone.",
-   "In *Sex and Temperament in Three Primitive Societies* (1935), she reported that traits Western readers labeled masculine or feminine were distributed differently across three neighboring New Guinea societies.",
-   "Mead presented both works to mid-century American readers, who were her primary intended audience.",
-   "Across both books, Mead pressed those readers to recognize that their own assumptions about adolescence and gender were one cultural pattern among many rather than a universal human baseline."
+   "NASA's Mars rover Opportunity landed in 2004 and drew its power from solar panels.",
+   "NASA's Mars rover Curiosity landed in 2012 and is powered by a radioisotope generator that converts heat from decaying plutonium into electricity.",
+   "A radioisotope generator does not depend on sunlight reaching the rover.",
+   "In 2018, a planet-encircling dust storm darkened Martian skies for months.",
+   "Opportunity lost power during the 2018 storm and never resumed contact; Curiosity continued operating throughout the storm."
   ],
-  "goal": "The student wants to emphasize the broader claim about culture that Mead's two ethnographies together advance."
+  "goal": "The student wants to emphasize why Curiosity, unlike Opportunity, was able to keep operating during the 2018 dust storm."
  },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Margaret Mead, an American anthropologist trained at Columbia University and curator of ethnology at the American Museum of Natural History, published *Coming of Age in Samoa* in 1928 and *Sex and Temperament in Three Primitive Societies* in 1935."
+   "text": "Opportunity landed on Mars in 2004, eight years before Curiosity, and the two rovers explored different regions of the planet."
   },
   {
    "id": "B",
-   "text": "In *Sex and Temperament in Three Primitive Societies* (1935), Mead reported that the personality traits Western readers labeled masculine or feminine were distributed quite differently across three neighboring societies in New Guinea, a finding that complicates the assumption that such traits are biologically fixed."
+   "text": "In 2018, a planet-encircling dust storm darkened Martian skies for months, and Opportunity, which had been exploring the planet since its 2004 landing, never resumed contact with Earth."
   },
   {
    "id": "C",
-   "text": "Across her two ethnographies, Mead presses one comparative argument: by showing that Samoan adolescence lacked the turbulence Westerners assumed and that gender traits varied across three New Guinea societies, she urges readers to treat their assumptions as one cultural pattern, not a universal baseline."
+   "text": "Because Curiosity's radioisotope generator needs no sunlight, it kept operating through the months-long 2018 dust storm that starved the solar-powered Opportunity of energy."
   },
   {
    "id": "D",
-   "text": "Drawing on her comparative ethnographic method, Mead aimed *Coming of Age in Samoa* (1928) and *Sex and Temperament in Three Primitive Societies* (1935) at mid-century American readers, who were her primary intended audience for both books."
+   "text": "Curiosity, which landed on Mars in 2012, is powered by a generator that converts heat from decaying plutonium into electricity."
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C. The goal is to emphasize the broader claim about culture that Mead's two ethnographies together advance. Choice C does precisely that: it names both works, summarizes the specific finding each contributed (Samoan adolescence without the expected turbulence; masculine and feminine traits distributed differently across the three New Guinea societies), and then states the joint claim those findings support—that mid-century American readers' assumptions about adolescence and gender are one cultural pattern among many rather than a universal human baseline. The general argument the two books together advance is foregrounded and anchored in the specific evidence drawn from the notes."
+ "explanation": "**Choice C is correct.** The goal is to explain a contrast — why one rover survived the storm and the other did not — and C forges the causal link on both sides.\n\n**The Full Solution:**\n- Explaining the contrast requires linking each rover's power source to its fate in the darkened skies.\n- Choice C does exactly that: a sunlight-independent generator, so Curiosity endured; solar panels starved of light, so Opportunity failed.\n\n**Why the other choices are wrong:**\n- A: Timeline and geography — neither bears on the storm.\n- B: It recounts what happened to Opportunity without ever giving the reason, and omits Curiosity entirely.\n- D: It explains Curiosity's power source but never connects it to the storm or draws the contrast with Opportunity that the goal requires."
 }

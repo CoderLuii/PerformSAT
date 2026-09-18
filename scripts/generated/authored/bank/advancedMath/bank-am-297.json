@@ -1,0 +1,29 @@
+{
+  "question": "A coolant loop's temperature rise, in degrees Celsius, is $3x^{2}+12x+c$ when the control valve sits $x$ turns from its nominal position, and the least possible temperature rise is $0$ degrees Celsius. What is the value of $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$36$"
+    },
+    {
+      "id": "D",
+      "text": "$108$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "squared the vertex input b/(2a) = 2 instead of computing b^2/(4a)",
+    "C": "used b^2/4 = 36, omitting the factor a in the denominator",
+    "D": "multiplied b^2/4 = 36 by a = 3 instead of dividing by a"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Completing the Square**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The least value of $ax^{2}+bx+c$ is $c-\\dfrac{b^{2}}{4a}$, so $c-\\dfrac{144}{12}=0$ and $c=12$.\n\n**The Full Solution:**\nStep 1: Factor the leading coefficient: $3x^{2}+12x+c=3(x^{2}+4x)+c$.\nStep 2: Complete the square inside: $3\\left[(x+2)^{2}-4\\right]+c=3(x+2)^{2}-12+c$.\nStep 3: The least value is $c-12$, so $c-12=0$ and $c=12$. Check: $3x^{2}+12x+12=3(x+2)^{2}$, whose least value is $0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): squares the vertex input $\\dfrac{b}{2a}=2$ instead of computing $\\dfrac{b^{2}}{4a}$.\n* Choice C ($36$): uses $\\dfrac{b^{2}}{4}=36$, omitting the factor $a$ in the denominator.\n* Choice D ($108$): multiplies $36$ by $a=3$ instead of dividing.\n\n**Test Day Takeaway:** Factor the leading coefficient out of the $x$-terms first; forgetting it is the whole trap in this item.",
+  "id": "bank-am-297"
+}

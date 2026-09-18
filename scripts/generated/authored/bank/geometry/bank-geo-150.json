@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-150",
+ "question": "The rim of a circular solar collector is $44\\pi$ feet around, and the collector's face covers $k\\pi$ square feet. What is the value of $k$?",
+ "correctAnswer": "484",
+ "explanation": "**SAT Pattern: Area of a Circle**\n\n**The correct answer is $484$.**\n\n**The Fast Way (~30s):** $2\\pi r=44\\pi$ gives $r=22$, so the area is $\\pi(22)^{2}=484\\pi$ and $k=484$.\n\n**The Full Solution:**\n\nStep 1: Use the circumference. $C=2\\pi r=44\\pi$ feet.\n\nStep 2: Solve for the radius. Dividing both sides by $2\\pi$ gives $r=22$ feet.\n\nStep 3: Compute the area. $A=\\pi(22)^{2}=484\\pi$ square feet, so $k=484$.\n\nCheck: $2\\pi(22)=44\\pi$, matching the given rim length.\n\n**Common Mistakes:**\n\n* $22$: stops at the radius instead of squaring it for the area.\n* $44$: uses the coefficient of the circumference as the radius, reporting the diameter.\n* $1936$: squares the diameter $44$ rather than the radius $22$.\n\n**Test Day Takeaway:** A circumference given as a multiple of $\\pi$ hands you $2r$ directly — halve it before squaring."
+}

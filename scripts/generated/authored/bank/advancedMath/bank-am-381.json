@@ -1,0 +1,38 @@
+{
+  "id": "bank-am-381",
+  "question": "In the $xy$-plane, the graph of the quadratic function $f$ is shown, and the two points where it meets the $x$-axis are marked. What are the $x$-intercepts of the graph of $y = f(x + 3)$?",
+  "diagram": {
+    "type": "quadraticIntercepts",
+    "params": {
+      "intercepts": [
+        -2,
+        6
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-2$ and $6$"
+    },
+    {
+      "id": "B",
+      "text": "$-5$ and $3$"
+    },
+    {
+      "id": "C",
+      "text": "$-5$ and $9$"
+    },
+    {
+      "id": "D",
+      "text": "$1$ and $9$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies no shift at all",
+    "C": "moves the two intercepts in opposite directions",
+    "D": "shifts right instead of left"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Function Transformation**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** $f(x + 3)$ slides the graph left $3$, so $-2$ and $6$ become $-5$ and $3$.\n\n**The Full Solution:**\nStep 1: The marked points show that $f(-2) = 0$ and $f(6) = 0$.\nStep 2: $y = f(x + 3)$ is zero exactly when the inside expression equals a zero of $f$: $x + 3 = -2$ or $x + 3 = 6$.\nStep 3: Solving gives $x = -5$ and $x = 3$. Check: $f(-5 + 3) = f(-2) = 0$ and $f(3 + 3) = f(6) = 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2$ and $6$): copies the original intercepts, applying no shift at all.\n* Choice C ($-5$ and $9$): moves one intercept left and the other right; a translation moves every point the same way.\n* Choice D ($1$ and $9$): adds $3$ to each intercept, shifting right — but $f(x + 3)$ shifts left.\n\n**Test Day Takeaway:** Set the inside expression equal to each known zero and solve; that mechanical step never gets the direction backward."
+}

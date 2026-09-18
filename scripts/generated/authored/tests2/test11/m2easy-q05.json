@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "question": "The resistance of a sensing element changes linearly with temperature: it measures $4{,}120$ ohms at $15$ degrees Celsius and $3{,}040$ ohms at $42$ degrees Celsius. Which equation gives the resistance $R$, in ohms, at a temperature of $t$ degrees Celsius?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$R = -40t + 3{,}520$"
+    },
+    {
+      "id": "B",
+      "text": "$R = -40t + 4{,}120$"
+    },
+    {
+      "id": "C",
+      "text": "$R = -40t + 4{,}720$"
+    },
+    {
+      "id": "D",
+      "text": "$R = 40t + 3{,}520$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts 40 times 15 from 4,120 instead of adding it back when solving for the intercept",
+    "B": "uses the resistance measured at 15 degrees as the value at 0 degrees",
+    "D": "reverses the order of the points in the slope quotient, getting +40, and then solves for the intercept"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Line from Two Points**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The resistance falls $1{,}080$ ohms over $27$ degrees, so the slope is $-40$; running back the $15$ degrees to $t = 0$ adds $600$ ohms, giving $R = -40t + 4{,}720$.\n\n**The Full Solution:**\nStep 1: Treat the measurements as points $(15,\\ 4{,}120)$ and $(42,\\ 3{,}040)$ and compute the slope: $\\frac{3{,}040 - 4{,}120}{42 - 15} = \\frac{-1{,}080}{27} = -40$.\nStep 2: Substitute one point into $R = -40t + b$: $4{,}120 = -40(15) + b$, so $b = 4{,}120 + 600 = 4{,}720$.\nStep 3: Write the equation: $R = -40t + 4{,}720$. Check the second measurement: $-40(42) + 4{,}720 = -1{,}680 + 4{,}720 = 3{,}040$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($R = -40t + 3{,}520$): subtracts $600$ from $4{,}120$ instead of adding it; moving backward along a falling line raises the value.\n* Choice B ($R = -40t + 4{,}120$): treats the $15$-degree reading as the reading at $0$ degrees, so the whole line sits $600$ ohms too low.\n* Choice D ($R = 40t + 3{,}520$): computes the slope as $\\frac{4{,}120 - 3{,}040}{42 - 15} = 40$, which makes resistance rise with temperature — the opposite of the data.\n\n**Test Day Takeaway:** Keep the two points in the same order top and bottom of the slope fraction, then solve for the intercept with a point rather than assuming the first measurement happens at zero."
+}

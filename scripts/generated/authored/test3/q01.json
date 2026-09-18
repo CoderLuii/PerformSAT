@@ -5,30 +5,30 @@
  "band": 2,
  "domain": "craft-and-structure",
  "skill": "words-in-context",
+ "type": "multiple-choice",
+ "passage": "In many mountain parks, wildlife biologists fit reintroduced bighorn sheep with lightweight radio collars. Each collar transmits a signal several times a day, allowing researchers to ______ the animals' movements across steep terrain that would be difficult to search on foot and to learn whether the herds are reaching the seasonal pastures they need.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "approve"
+   "text": "explain"
   },
   {
    "id": "B",
-   "text": "imitate"
+   "text": "restrict"
   },
   {
    "id": "C",
-   "text": "describe"
+   "text": "imagine"
   },
   {
    "id": "D",
-   "text": "observe"
+   "text": "follow"
   }
  ],
  "correctAnswer": "D",
- "explanation": "The correct answer is D, \"observe.\" The passage says that before rope-and-walkway methods existed, scientists \"had no practical way\" to study what lives high in the canopy, so the organisms there \"remained almost completely unstudied.\" The blank needs a verb for the basic act of watching and recording living things firsthand, and \"observe\" captures exactly that. \"Describe\" presupposes that the looking has already happened, which is the very step the missing access made impossible; \"approve\" carries a faintly scientific ring but has no role in a sentence about studying organisms; and \"imitate\" points the wrong way, since the problem was studying canopy life, not copying it.",
+ "explanation": "**Choice D is correct.** The collars transmit signals so that researchers can keep track of where the sheep go, and \"follow\" names exactly that act of tracking.\n\n**The Full Solution:**\n- The sentence explains what the daily signals make possible: knowing the animals' movements across terrain too steep to search on foot.\n- What a stream of location signals lets you do with movements is follow them — the plain verb for continuous tracking.\n\n**Why the other choices are wrong:**\n- A: \"Explain\" is about accounting for why the sheep move as they do; the signals report where the animals are, not why.\n- B: \"Restrict\" reverses the collars' purpose — they observe movement rather than limit it.\n- C: \"Imagine\" contradicts the setup: the signals give researchers real data, so nothing needs to be imagined.",
  "_meta": {
-  "anchor": "Margaret Lowman — canopy biologist; rope-and-walkway methods for tropical forest canopy access"
- },
- "passage": "In her work on tropical forest canopies, biologist Margaret Lowman pioneered rope-and-walkway methods that let researchers ascend safely into the upper layers of standing trees. Before such methods existed, scientists had no practical way to ______ life in this part of the forest, and so the insects, lichens, and small vertebrates that thrive thirty meters above the ground remained almost completely unstudied.",
- "type": "multiple-choice"
+  "anchor": "Bighorn sheep radio-collar telemetry in mountain parks (unnamed wildlife biologists)"
+ }
 }

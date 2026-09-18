@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "inferences",
-  "passage": "When red hand stencils on certain European cave walls were first studied, many scholars assumed they were the work of modern humans, since no one expected such image-making from Neanderthals. Recent uranium-series dating of the thin mineral crust that had formed over several stencils returned ages older than the arrival of modern humans in the region. If those dates hold, the earlier assumption that the stencils had to be modern human work reflected ______",
+  "passage": "Lowlanders who settle at high altitude respond to the thin air by producing extra red blood cells, and Andean highlanders, whose ancestors have lived near four thousand meters for millennia, show the same trait: hemoglobin concentrations well above sea-level norms. The anthropologist Cynthia Beall found that Tibetan highlanders, established just as long at comparable altitudes, follow a different pattern — hemoglobin near sea-level values, with oxygen delivery sustained instead by faster resting breathing and by elevated nitric oxide, which widens blood vessels and speeds the flow. Blood thickened by extra red cells, moreover, moves sluggishly and carries risks in pregnancy. Taken together, these observations suggest that ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "a flaw in the uranium-series dating method, which cannot reliably measure mineral crusts as thin as these."
+      "text": "Andean highlanders would lose their elevated hemoglobin within a generation of moving to sea level."
     },
     {
       "id": "B",
-      "text": "the certainty that Neanderthals lacked the manual coordination needed to make hand stencils."
+      "text": "the Tibetan pattern arose because altitudes on the Tibetan plateau are too low to demand any physiological adjustment."
     },
     {
       "id": "C",
-      "text": "an expectation the scholars brought to the images rather than anything drawn from the images themselves."
+      "text": "evolution has produced more than one workable response to thin air, and the Tibetan response avoids costs that accompany elevated hemoglobin."
     },
     {
       "id": "D",
-      "text": "the discovery that modern humans had reached the region far earlier than once believed."
+      "text": "the extra red blood cells produced by Andean highlanders provide no benefit at high altitude."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The scholars assumed the stencils were modern human work because they did not expect Neanderthals to make images, not because of evidence in the stencils; the new dates, older than modern humans' arrival, expose that assumption as a prior expectation rather than a finding. Choice C states this. Choice A dismisses the dating as flawed, which the prompt asks us to set aside by taking the dates as holding. Choice B asserts a certainty about Neanderthal ability the passage does not support, and choice D reverses the dates' implication, which is that the art predates modern humans, not that modern humans arrived earlier."
+  "explanation": "**Choice C is correct.** Two long-established populations solved the same problem differently — more hemoglobin in the Andes, faster breathing and freer flow in Tibet — so more than one response works; and since thick blood is sluggish and risky in pregnancy, the Tibetan route sidesteps costs the other carries. C draws both halves and nothing more.\n\n**The Full Solution:**\n- Premise set one: Andeans and acclimatizing lowlanders both rely on extra red cells; Tibetans, equally long at altitude, thrive without them — establishing two distinct, functioning solutions.\n- Premise set two: elevated hemoglobin has documented downsides (sluggish flow, pregnancy risks), which the Tibetan pattern avoids by design.\n- The conclusion must combine plurality of solutions with the cost asymmetry — exactly C.\n\n**Why the other choices are wrong:**\n- A: The text says nothing about what happens when highlanders descend, or how fast any trait reverses.\n- B: It contradicts the stated facts — the altitudes are \"comparable,\" and Tibetans do adjust, just by other means.\n- D: It overreaches; the extra cells sustain Andean populations at altitude, so \"no benefit\" is refuted, only costs are established."
 }

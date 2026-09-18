@@ -1,40 +1,40 @@
 {
-  "id": 808,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "module": 1,
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "Some Roman harbor structures have stood in seawater for two thousand years. Studying drill cores from these marine concretes, the geologist Marie Jackson has argued that their durability is not merely a matter of a good initial recipe but of a chemistry that keeps working. The Romans mixed volcanic ash with lime and seawater, and over centuries seawater percolating through the material kept reacting with the ash, growing interlocking crystals of rare minerals within the cement. Far from decaying, Jackson contends, the marine concrete slowly strengthened as these crystals filled its pores—an outcome modern Portland cement, which is not designed to react further once set, does not reproduce."
-    },
-    {
-      "label": "Text 2",
-      "text": "Engineer Admir Masic and his colleagues have studied the small white mineral lumps, called lime clasts, scattered through many Roman concretes, including those on dry land. Earlier researchers had read these lumps as evidence of careless mixing. Masic's team argues instead that the Romans mixed lime in a hot, reactive form, which left these clasts behind as built-in reservoirs of calcium. When a crack opens and water seeps in, the team showed in the laboratory, the calcium dissolves and recrystallizes across the gap, sealing the crack on its own. On this account the concrete's longevity owes much to a self-repair mechanism that needs no seawater at all."
-    }
-  ],
-  "question": "Based on the texts, how would Masic (Text 2) most likely respond to the explanation offered in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "He would deny that the volcanic ash played any chemical role in the concrete, treating it as cheap filler added only to stretch the mixture further."
-    },
-    {
-      "id": "B",
-      "text": "He would dismiss Jackson’s drill-core findings as outdated, arguing that her marine evidence has been superseded by later work and should no longer figure in any explanation of why Roman concrete has lasted."
-    },
-    {
-      "id": "C",
-      "text": "Pointing to modern materials, he would claim that Portland cement already reproduces both mechanisms, so Roman concrete now offers engineers nothing further to learn."
-    },
-    {
-      "id": "D",
-      "text": "By granting that crystal growth strengthens marine concrete but noting that the seawater reaction cannot explain the durability of inland Roman structures, where his lime clasts let cracks reseal."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. Jackson locates the durability of Roman concrete in a slow seawater-driven reaction that grows strengthening crystals, a process tied to marine settings. Masic studies concrete on dry land and identifies a different mechanism—lime clasts that release calcium to reseal cracks without any seawater. The natural response is to grant that Jackson's reaction works in the sea while pointing out that it cannot account for the durability of inland structures, which his self-repair mechanism can. A contradicts Text 1's premise about the ash in a way Masic never asserts; B adopts a \"superseded, set it aside\" move that neither text supports; and C denies any lesson for modern engineers, which runs against the thrust of both texts."
+ "id": 808,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "module": 1,
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "Several cold lakes in Iceland hold not one kind of Arctic char but several: in Lake Thingvallavatn, a large fish-eating form, a smaller snail-crushing form with a blunt jaw, and two others share the same water. Ichthyologists studying the lake have explained these morphs as lineages that have genetically diverged within it, each form's distinctive jaw and body proportions reflecting a separate breeding pool adapted to its own food and depth."
+  },
+  {
+   "label": "Text 2",
+   "text": "The biologist Skúli Skúlason has tested how fixed such differences are. In rearing experiments, offspring of one char morph were raised on the diet of another; as they grew, their jaws and bodies developed measurably toward the form typical of the diet they ate, not the form of their parents. Development, he argues, responds to what a young fish encounters, so a lake's food landscape can itself mold part of the difference between morphs."
+  }
+ ],
+ "question": "Based on the texts, how would Skúli Skúlason (Text 2) most likely respond to the explanation presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "He would deny that the four forms of char actually differ in jaw structure or body proportion."
+  },
+  {
+   "id": "B",
+   "text": "He would argue that the field measurements described in Text 1 were taken from too few fish to be trusted."
+  },
+  {
+   "id": "C",
+   "text": "He would object that the lake is too young for any genetic divergence among its char to have occurred."
+  },
+  {
+   "id": "D",
+   "text": "He would caution that differences of the kind Text 1 cites can arise partly within a single generation, since diet alone shifted the form of the fish he reared."
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** Skúlason's rearing experiments show that diet alone can shift young char toward another morph's form, so he would grant the anatomical differences Text 1 describes while denying that they must reflect separate gene pools.\n\n**The Full Solution:**\n- Text 1 reads the morphs' distinct jaws and bodies as evidence of lineages that have genetically diverged within the lake.\n- Text 2 reports that offspring of one morph, reared on another morph's diet, developed toward that other form.\n- The natural response is the qualified one in choice D: the differences are real, but part of what Text 1 attributes to divergent inheritance can arise within a single generation.\n\n**Why the other choices are wrong:**\n- A: Skúlason never denies that the morphs differ — his experiments begin from those differences.\n- B: Nothing in Text 2 questions how the field measurements were taken.\n- C: Text 2 concerns development, not the age of the lake or its colonization history."
 }

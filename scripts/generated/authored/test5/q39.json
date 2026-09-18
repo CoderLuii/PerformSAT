@@ -1,34 +1,34 @@
 {
-  "id": 539,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "module": 2,
-  "passage": "Cognitive psychologists distinguish two common ways of studying for a later test: rereading the assigned material and self-testing by repeatedly trying to recall it from memory. A researcher proposes that the very act of retrieving information during self-testing, rather than the mere additional exposure to the material that self-testing also happens to provide, is what actually strengthens memory over the long term.",
-  "question": "Which finding, if true, would most directly support the researcher's proposal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Students who reread their material reported feeling noticeably more confident about it than students who tested themselves on it."
-    },
-    {
-      "id": "B",
-      "text": "Students who self-tested ended up spending more total time studying the material than students who only reread it."
-    },
-    {
-      "id": "C",
-      "text": "Students who recalled the material on a practice test remembered more of it a week later than students who spent the same amount of time rereading it."
-    },
-    {
-      "id": "D",
-      "text": "Students ended up performing noticeably better on the later test when they were allowed to keep the original study material in front of them the whole time they were answering."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The proposal is that retrieval itself, not the extra exposure self-testing happens to give, strengthens memory. A finding that students who retrieved the material remembered more a week later than students who reread it for the same amount of time isolates retrieval by holding exposure time equal—exactly what the proposal needs. Choice A concerns confidence rather than retention. Choice B introduces a difference in study time, which confounds the comparison rather than supporting the retrieval claim. Choice D describes open-book performance, which does not bear on the value of recall.",
-  "_meta": {
-    "anchor": "Testing effect; retrieval vs. mere exposure as the source of better retention"
+ "id": 539,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "module": 2,
+ "passage": "Most reef fishes begin life adrift: their larvae develop for weeks in the open ocean, and the survivors must then locate a reef on which to settle. Vision fails at any distance in open water, but the crackle of snapping shrimp and the grunts of resident fish carry for kilometers beneath the surface. A marine biologist therefore proposes that settling-stage larvae find their way to reefs in part by homing in on reef sound.",
+ "question": "Which finding, if true, would most directly support the researcher's proposal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Larval reef fish raised in aquariums grow more quickly when recordings of reef sound are played to them."
+  },
+  {
+   "id": "B",
+   "text": "The sound produced by a reef is loudest at dawn and dusk, when many resident fish are most active."
+  },
+  {
+   "id": "C",
+   "text": "At patches of open water far from any reef, traps broadcasting recorded reef sound catch significantly more settling-stage larvae than identical silent traps nearby."
+  },
+  {
+   "id": "D",
+   "text": "Larvae that settle successfully on reefs tend to have larger fins than larvae collected in the open ocean."
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The proposal is that larvae steer toward reef sound, and C is a direct behavioral test: with all else equal, sound-broadcasting traps out-collect silent ones, showing larvae moving toward the sound itself.\n\n**The Full Solution:**\n- Supporting the proposal requires evidence that reef sound influences where settling-stage larvae go — orientation, not merely exposure or correlation.\n- Choice C isolates sound as the only difference between paired traps in open water, far from confounding reef cues; the surplus of larvae at the noisy traps demonstrates attraction to the sound.\n- That is the proposal's mechanism observed in action.\n\n**Why the other choices are wrong:**\n- A: Faster growth under recorded sound concerns development, not navigation; it shows no movement toward anything.\n- B: A daily rhythm in reef loudness describes the cue's availability without showing that larvae use it.\n- D: Fin size differences say nothing about whether sound guided the successful settlers.",
+ "_meta": {
+  "anchor": "acoustic settlement cues — larval reef fish attracted to broadcast reef sound"
+ }
 }

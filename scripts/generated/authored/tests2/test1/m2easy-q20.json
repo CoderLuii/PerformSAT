@@ -1,0 +1,29 @@
+{
+ "id": 20,
+ "question": "A quadratic function $f$ assigns to each real number $x$ the value $-3(x + 4)^2 + 11$. Four candidate expressions appear below, and exactly one of them assigns the same value to every real number $x$. Which one is it?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3x^2 + 8x + 27$"
+  },
+  {
+   "id": "B",
+   "text": "$-3x^2 - 24x - 37$"
+  },
+  {
+   "id": "C",
+   "text": "$-3x^2 - 24x + 59$"
+  },
+  {
+   "id": "D",
+   "text": "$-3x^2 - 12x - 37$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "distributes the -3 to the x^2 term only, leaving +8x and +16 untouched",
+  "C": "makes a sign error on the constant, using -3 times 16 as +48 so the constant becomes 48 + 11 = 59",
+  "D": "expands (x + 4)^2 as x^2 + 4x + 16, forgetting to double the 4 in the middle term"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $(x + 4)^2 = x^2 + 8x + 16$. Multiplying by $-3$ gives $-3x^2 - 24x - 48$, and adding $11$ gives $-3x^2 - 24x - 37$.\n\n**The Full Solution:**\nStep 1: Expand the square first. $(x + 4)^2 = x^2 + 2(4)x + 16 = x^2 + 8x + 16$.\nStep 2: Distribute $-3$ across all three terms: $-3(x^2 + 8x + 16) = -3x^2 - 24x - 48$. Every term inside changes sign, including the constant.\nStep 3: Add the outside constant: $-3x^2 - 24x - 48 + 11 = -3x^2 - 24x - 37$. Check at $x = 0$: the original gives $-3(16) + 11 = -37$, and the expanded form gives $-37$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-3x^2 + 8x + 27$): the $-3$ applied only to $x^2$. At $x = 0$ it gives $27$, but $f(0) = -37$, so the middle and constant terms were never multiplied.\n* Choice C ($-3x^2 - 24x + 59$): treating $-3 \\times 16$ as $+48$, then $48 + 11 = 59$. A negative times a positive is negative, so the constant must be $-48 + 11$.\n* Choice D ($-3x^2 - 12x - 37$): expanding $(x + 4)^2$ as $x^2 + 4x + 16$. The middle term of a squared binomial is twice the product of the two terms, so it is $8x$, not $4x$.\n\n**Test Day Takeaway:** Square the binomial before distributing, double the cross term, and let the outside coefficient reach every term inside — then test $x = 0$ against both forms."
+}

@@ -1,0 +1,30 @@
+{
+  "id": 16,
+  "question": "The table shows how the wolf count changed at three preserves between 2019 and 2024, along with each preserve's 2024 count. What was the combined wolf count at the North and Ridge preserves in 2019?",
+  "questionTable": {
+    "headers": [
+      "Preserve",
+      "Change since 2019",
+      "2024 count"
+    ],
+    "rows": [
+      [
+        "North",
+        "20% decrease",
+        "168"
+      ],
+      [
+        "Ridge",
+        "12% increase",
+        "224"
+      ],
+      [
+        "Delta",
+        "35% decrease",
+        "195"
+      ]
+    ]
+  },
+  "correctAnswer": "410",
+  "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**The correct answer is $410$.**\n\n**The Fast Way (~35s):** Undo each change by dividing: $168 \\div 0.80 = 210$ and $224 \\div 1.12 = 200$, so the two preserves held $410$ wolves in $2019$.\n\n**The Full Solution:**\nStep 1: Read the two rows the question names. North fell by $20\\%$ to $168$, and Ridge rose by $12\\%$ to $224$.\nStep 2: Write each change forward with the unknown $2019$ count. For North, $0.80N = 168$, so $N = \\frac{168}{0.80} = 210$. For Ridge, $1.12R = 224$, so $R = \\frac{224}{1.12} = 200$.\nStep 3: Add the two originals: $210 + 200 = 410$ wolves. Check forward: $210 - 0.20(210) = 168$ and $200 + 0.12(200) = 224$ ✓\n\n**Common Mistakes:**\n* $392$: adds the two $2024$ counts, $168 + 224$, without undoing either percent change.\n* $434$: undoes the North decrease correctly but copies Ridge's $2024$ count of $224$ straight into the sum.\n* $210$: stops after the North preserve and never adds the Ridge count.\n\n**Test Day Takeaway:** Reversing a percent change is division by the multiplier, never addition of the percent. Undo each row on its own before you combine them."
+}

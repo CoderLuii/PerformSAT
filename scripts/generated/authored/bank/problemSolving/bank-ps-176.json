@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-176",
+  "question": "Each of the $275$ cars in a parking garage is on level $1$, level $2$, or level $3$. If one of these cars is chosen at random, the probability that it is on level $1$ is $0.36$ and the probability that it is on level $2$ is $0.4$. How many cars are on level $3$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$66$"
+    },
+    {
+      "id": "B",
+      "text": "$99$"
+    },
+    {
+      "id": "C",
+      "text": "$110$"
+    },
+    {
+      "id": "D",
+      "text": "$209$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "the level-1 count, 0.36 x 275",
+    "C": "the level-2 count, 0.4 x 275",
+    "D": "the cars on levels 1 and 2 combined, 0.76 x 275"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** $P(\\text{level } 3) = 1 - 0.36 - 0.4 = 0.24$, and $0.24 \\times 275 = 66$.\n\n**The Full Solution:**\nStep 1: The three levels account for every car, so the probabilities sum to $1$: $P(\\text{level } 3) = 1 - 0.36 - 0.40 = 0.24$.\nStep 2: Convert the probability to a count: $0.24 \\times 275 = 66$ cars.\nStep 3: Check by counting the other levels: level $1$ has $0.36 \\times 275 = 99$ cars and level $2$ has $0.40 \\times 275 = 110$ cars; $99 + 110 + 66 = 275$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($99$): The number of cars on level $1$.\n* Choice C ($110$): The number of cars on level $2$.\n* Choice D ($209$): The number of cars on levels $1$ and $2$ together, $0.76 \\times 275$; the question asks for the remaining cars.\n\n**Test Day Takeaway:** Probabilities over a complete set of categories add to $1$; find the missing probability first, then multiply by the total."
+}

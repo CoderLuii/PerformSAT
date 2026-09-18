@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-248",
+  "question": "A researcher recruited $90$ adult volunteers at a single community center and randomly assigned each volunteer to one of two stretching routines. After eight weeks, the volunteers assigned to routine 1 showed a greater mean improvement in flexibility than those assigned to routine 2. Which of the following conclusions is best supported by the design of the study?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Routine 1 caused greater improvement than routine 2 for these volunteers, but the result may not apply to all adults."
+    },
+    {
+      "id": "B",
+      "text": "Routine 1 causes greater improvement in flexibility than routine 2 for all adults."
+    },
+    {
+      "id": "C",
+      "text": "Routine 1 is associated with greater improvement, but no cause-and-effect conclusion can be drawn."
+    },
+    {
+      "id": "D",
+      "text": "No conclusion can be drawn, because the volunteers were not selected at random from all adults."
+    }
+  ],
+  "distractorNotes": {
+    "B": "generalizes to all adults although the participants were volunteers from one center",
+    "C": "denies causation although treatments were randomly assigned",
+    "D": "throws out the study; random assignment still supports a causal claim for the participants"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Random assignment supports cause and effect; random selection supports generalization. This study has the first but not the second, so the causal claim holds for the participants but cannot be extended to all adults.\n\n**The Full Solution:**\nStep 1: Check for random assignment. Each volunteer was randomly assigned to a routine, which balances other factors between the two groups and allows the difference in improvement to be attributed to the routines.\nStep 2: Check for random selection. The participants were volunteers from one community center, not a random sample of adults, so they may differ from adults in general.\nStep 3: Combine the two: a cause-and-effect conclusion is justified for the $90$ participants, but generalizing that conclusion to all adults is not. Check: choice A states exactly this pairing. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: it keeps the causal claim but wrongly extends it to all adults, ignoring that the volunteers were not randomly selected.\n* Choice C: it treats the study as observational; random assignment is what distinguishes this experiment from an observational study.\n* Choice D: the lack of random selection limits generalization, but it does not erase the causal evidence that random assignment provides.\n\n**Test Day Takeaway:** Two separate questions: Was treatment randomly assigned (causation)? Were participants randomly selected (generalization)? Answer each on its own."
+}

@@ -1,0 +1,36 @@
+{
+ "id": 6,
+ "question": "Triangular gable truss $PQR$ is similar to truss $STU$, with side $PQ$ corresponding to side $ST$. Truss $PQR$ has $PQ = 6$ feet and encloses $24$ square feet of wall, and $ST = 15$ feet. How many square feet of wall does truss $STU$ enclose?",
+ "diagram": {
+  "type": "similarTriangles",
+  "params": {
+   "triangle1": {
+    "labels": [
+     "P",
+     "Q",
+     "R"
+    ],
+    "sideLabels": [
+     "6",
+     "",
+     ""
+    ]
+   },
+   "triangle2": {
+    "labels": [
+     "S",
+     "T",
+     "U"
+    ],
+    "sideLabels": [
+     "15",
+     "",
+     ""
+    ]
+   },
+   "figureNote": true
+  }
+ },
+ "correctAnswer": "150",
+ "explanation": "**SAT Pattern: Similar Triangles and Area Ratio**\n\n**The correct answer is $150$.**\n\n**The Fast Way (~20s):** The sides scale by $\\frac{15}{6} = 2.5$, so the areas scale by $2.5^2 = 6.25$, and $24(6.25) = 150$.\n\n**The Full Solution:**\nStep 1: Corresponding sides give the scale factor $\\frac{ST}{PQ} = \\frac{15}{6} = \\frac{5}{2}$.\nStep 2: In similar figures every length is multiplied by $\\frac{5}{2}$, so every area is multiplied by $\\left(\\frac{5}{2}\\right)^2 = \\frac{25}{4}$.\nStep 3: The larger truss encloses $24 \\cdot \\frac{25}{4} = 150$ square feet; check the ratio: $\\frac{150}{24} = 6.25 = 2.5^2$ ✓\n\n**Common Mistakes:**\n* Scaling the area by the side ratio alone gives $24 \\cdot \\frac{5}{2} = 60$, which would be right for a length, not an area.\n* Cubing the ratio gives $24 \\cdot \\frac{125}{8} = 375$; the cube of a scale factor governs volume, not area.\n* Inverting the ratio gives $24 \\cdot \\frac{4}{25} = 3.84$, shrinking the larger truss instead of enlarging it.\n\n**Test Day Takeaway:** Lengths scale by $k$, areas by $k^2$, volumes by $k^3$ — decide which one the question asks for before you multiply."
+}

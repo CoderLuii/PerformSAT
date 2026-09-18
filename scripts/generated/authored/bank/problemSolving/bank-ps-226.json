@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-226",
+  "question": "The number of hardcover titles in a collection is $25\\%$ of the number of paperback titles, and the number of paperback titles is $60\\%$ of the number of audiobook titles. The number of hardcover titles is what percent of the number of audiobook titles?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$35\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$85\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$240\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracts the two percents",
+    "C": "adds the two percents",
+    "D": "divides 60 by 25"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Chained Percent Relationship**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $0.25 \\times 0.60 = 0.15$, so the hardcover count is $15\\%$ of the audiobook count.\n\n**The Full Solution:**\nStep 1: Let $a$ be the number of audiobook titles. Then the paperback count is $0.60a$.\nStep 2: The hardcover count is $25\\%$ of that: $0.25(0.60a) = 0.15a$.\nStep 3: Read the coefficient as a percent: $15\\%$. Check with $a = 200$: $120$ paperbacks and $0.25(120) = 30$ hardcovers, and $\\frac{30}{200} = 15\\%$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($35\\%$): subtracts the percents, $60 - 25$, which mixes two different wholes.\n* Choice C ($85\\%$): adds the percents; hardcovers are a slice of a slice and must be smaller than $25\\%$ of the audiobooks.\n* Choice D ($240\\%$): divides $60$ by $25$, reversing the comparison.\n\n**Test Day Takeaway:** Assign the base a friendly value such as $100$ or $200$, walk the chain forward, and read off the ratio."
+}

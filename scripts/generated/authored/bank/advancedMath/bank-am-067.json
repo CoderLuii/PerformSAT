@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-067",
+  "question": "An irrigation canal is $x^{2}-9$ meters deep and $x^{2}+9$ meters wide, and a straight reach of it runs $x^{4}+81$ meters, where $x>3$. Which expression gives the volume of water, in cubic meters, that the reach holds when full?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$x^{8}-6{,}561$"
+    },
+    {
+      "id": "B",
+      "text": "$x^{8}-81$"
+    },
+    {
+      "id": "C",
+      "text": "$x^{8}+6{,}561$"
+    },
+    {
+      "id": "D",
+      "text": "$x^{16}-6{,}561$"
+    }
+  ],
+  "correctAnswer": "A",
+  "distractorNotes": {
+    "B": "squares x^4 but leaves 81 unsquared in the second step",
+    "C": "uses a plus sign, as if (a - b)(a + b) gave a^2 + b^2",
+    "D": "multiplies the exponents, treating x^4 times x^4 as x^16"
+  },
+  "explanation": "**SAT Pattern: Nested Difference of Squares**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** $(x^{2}-9)(x^{2}+9)=x^{4}-81$, and $(x^{4}-81)(x^{4}+81)=x^{8}-6{,}561$.\n\n**The Full Solution:**\nStep 1: The depth and the width form a difference of squares: $(x^{2})^{2}-9^{2}=x^{4}-81$.\nStep 2: That result pairs with the length as a second difference of squares: $(x^{4})^{2}-81^{2}$.\nStep 3: Since $(x^{4})^{2}=x^{8}$ and $81^{2}=6{,}561$, the volume is $x^{8}-6{,}561$ cubic meters. Check: at $x=4$ the three measurements are 7, 25, and 337 meters, and $7(25)(337)=58{,}975$, while $4^{8}-6{,}561=65{,}536-6{,}561=58{,}975$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($x^{8}-81$): squares the variable part but not the 81 in the second step.\n* Choice C ($x^{8}+6{,}561$): reverses the sign; a difference of squares never produces a sum.\n* Choice D ($x^{16}-6{,}561$): multiplies the exponents instead of adding them.\n\n**Test Day Takeaway:** Each difference-of-squares step squares BOTH pieces — the variable power and the constant."
+}

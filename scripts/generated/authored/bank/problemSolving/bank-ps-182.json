@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-182",
+  "question": "A questionnaire was sent to $k$ employees of a company, and $30\\%$ of these employees returned the questionnaire. If $51$ employees returned the questionnaire, what is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15.3$"
+    },
+    {
+      "id": "B",
+      "text": "$81$"
+    },
+    {
+      "id": "C",
+      "text": "$170$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}530$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies 51 by 0.30 instead of dividing",
+    "B": "adds 30 to 51",
+    "D": "multiplies 51 by 30"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** $30\\%$ of $k$ is $51$, so $0.30k = 51$ and $k = \\frac{51}{0.30} = 170$.\n\n**The Full Solution:**\nStep 1: Translate the statement: $30\\%$ of the $k$ employees returned the questionnaire, so $0.30k = 51$.\nStep 2: Solve for $k$ by dividing both sides by $0.30$: $k = \\frac{51}{0.30} = 170$.\nStep 3: Check: $30\\%$ of $170$ is $0.30 \\times 170 = 51$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($15.3$): multiplies $51$ by $0.30$ instead of dividing, which finds $30\\%$ of $51$ rather than the whole.\n* Choice B ($81$): adds $30$ to $51$, treating the percent as a count of employees.\n* Choice D ($1{,}530$): multiplies $51$ by $30$, dropping the \"per hundred\" in the percent.\n\n**Test Day Takeaway:** When a percent of an unknown whole is given, set up $\\frac{p}{100} \\cdot (\\text{whole}) = \\text{part}$ and divide — the whole is always larger than the part when $p < 100$."
+}

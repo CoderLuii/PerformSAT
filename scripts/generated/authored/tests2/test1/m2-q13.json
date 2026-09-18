@@ -1,0 +1,29 @@
+{
+  "id": 13,
+  "question": "At a training facility, $5$ sprint sessions and $3$ recovery sessions take a total of $44$ minutes, and $3$ sprint sessions and $5$ recovery sessions take a total of $52$ minutes. How many minutes do one sprint session and one recovery session take together?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$8$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$96$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the equations to 8x + 8y = 96 but divides by 16 instead of by 8",
+    "B": "solves the system fully and reports the recovery session length alone",
+    "D": "adds the two given totals and stops, reporting 44 + 52 without dividing by 8"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Let $x$ and $y$ be the two session lengths. Adding $5x + 3y = 44$ and $3x + 5y = 52$ gives $8x + 8y = 96$, so $x + y = 12$.\n\n**The Full Solution:**\nStep 1: Let $x$ be the number of minutes for one sprint session and $y$ the number for one recovery session. The two statements give $5x + 3y = 44$ and $3x + 5y = 52$.\nStep 2: The coefficients are mirror images, so adding the equations collapses them: $(5x + 3x) + (3y + 5y) = 44 + 52$, which is $8x + 8y = 96$.\nStep 3: Factor and divide: $8(x + y) = 96$, so $x + y = 12$ minutes. Check by solving fully: $x = 4$ and $y = 8$, and $5(4) + 3(8) = 44$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): divides $96$ by $16$ instead of by $8$, doubling the count of terms on the left side.\n* Choice B ($8$): this is $y$, the length of one recovery session. Solving the system all the way is more work than needed, and it invites reporting a single variable.\n* Choice D ($96$): reports $44 + 52$, the sum of the two equations' right sides, without dividing by the common factor of $8$.\n\n**Test Day Takeaway:** When the two equations have mirrored coefficients, add or subtract them and read the combination directly. Solving for each variable separately costs time and creates a chance to hand in the wrong one."
+}

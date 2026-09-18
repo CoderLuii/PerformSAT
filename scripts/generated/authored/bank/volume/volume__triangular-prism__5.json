@@ -1,0 +1,42 @@
+{
+ "id": 5,
+ "question": "A concrete block is a right rectangular prism measuring $10$ inches by $6$ inches by $4$ inches. A groove is cut straight through the block along the $10$-inch dimension, and the cross section of the groove is a right triangle with legs of length $6$ inches and $2$ inches. What is the volume, in cubic inches, of the block that remains?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "sideLabels": [
+    "6",
+    "2",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$60$"
+  },
+  {
+   "id": "B",
+   "text": "$120$"
+  },
+  {
+   "id": "C",
+   "text": "$180$"
+  },
+  {
+   "id": "D",
+   "text": "$234$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the volume of the groove instead of what is left of the block",
+  "B": "treats the groove as a rectangular prism, subtracting $6 \\cdot 2 \\cdot 10$",
+  "D": "subtracts the cross-sectional area, $6$, rather than the volume of the groove"
+ },
+ "correctAnswer": "C",
+ "hint": "Find the whole block and the groove as two separate volumes.",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~75s):** $240 - \\frac{1}{2}(6)(2)(10) = 240 - 60 = 180$.\n\n**The Full Solution:**\nStep 1: The uncut block has volume $10(6)(4) = 240$ cubic inches.\nStep 2: The groove is itself a prism: its triangular cross section has area $\\frac{1}{2}(6)(2) = 6$ square inches and it runs $10$ inches, so its volume is $6(10) = 60$ cubic inches.\nStep 3: The remaining volume is $240 - 60 = 180$ cubic inches.\n\nVerification: $180 + 60 = 240$, the volume of the uncut block. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($60$): gives the volume of the groove instead of what is left of the block.\n* Choice B ($120$): treats the groove as a rectangular prism, subtracting $6 \\cdot 2 \\cdot 10$.\n* Choice D ($234$): subtracts the cross-sectional area, $6$, rather than the volume of the groove.\n\n**Test Day Takeaway:** In a composite solid, finish each piece as a complete volume before adding or subtracting — never mix an area with a volume."
+}

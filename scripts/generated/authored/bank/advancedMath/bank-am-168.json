@@ -1,0 +1,40 @@
+{
+ "id": "bank-am-168",
+ "question": "A geothermal well's flow above its permitted minimum is modeled by the quadratic function $f$ whose graph is shown. A revised schedule delays the flow by two weeks, giving $h(x)=f(x-2)$. What is the maximum value of $h$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the shifted axis of symmetry 3 + 2 = 5 instead of a maximum value",
+  "B": "subtracts 2 from the maximum, treating the shift as vertical",
+  "D": "adds 2 to the maximum, treating the shift as vertical"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** Replacing $x$ by $x-2$ slides the graph right without moving it up or down, so the maximum value stays $8$.\n\n**The Full Solution:**\nStep 1: The graph of $f$ peaks at $(3,8)$, so the maximum value of $f$ is $8$.\nStep 2: The rule $h(x)=f(x-2)$ shifts every point $2$ units to the right; heights are unchanged.\nStep 3: So $h$ peaks at $(5,8)$ and its maximum value is $8$. Check: $f(x)=-\\frac{1}{2}(x-3)^2+8$ gives $h(x)=-\\frac{1}{2}(x-5)^2+8$, whose greatest value is $8$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): reports the shifted axis of symmetry rather than the maximum value.\n* Choice B ($6$): subtracts $2$ from the maximum, treating a horizontal shift as vertical.\n* Choice D ($10$): adds $2$ to the maximum, making the same mistake in the other direction.\n\n**Test Day Takeaway:** A change inside the function moves the graph sideways; only a change outside it moves the extreme value.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    3,
+    8
+   ],
+   "a": -0.5,
+   "showVertex": true
+  }
+ }
+}

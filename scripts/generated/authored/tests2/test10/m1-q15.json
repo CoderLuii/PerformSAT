@@ -1,0 +1,29 @@
+{
+ "id": 15,
+ "question": "A parcel carrier's weekly profit, in thousands of dollars, at a fare of $p$ dollars is modeled by $-3p^2 + kp - 24$. The profit is zero at two positive fares, and the larger fare is twice the smaller. What is the value of the constant $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-18$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$24$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the sum-of-roots formula with a = 3 instead of a = -3, flipping the sign of k",
+  "B": "finds the sum of the two fares, 6, but never multiplies it by 3",
+  "D": "treats -24 divided by -3, which is 8, as the SUM of the fares rather than their product, giving 3 times 8"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Quadratic — Vieta's Sum/Product**\n\n**Choice C is correct.** Write the fares as $r$ and $2r$. For $-3p^2 + kp - 24 = 0$, the product of the roots is $\\frac{-24}{-3} = 8$, so $r(2r) = 8$, $r^2 = 4$, and $r = 2$. The fares are $2$ and $4$, their sum is $6$, and the sum of the roots equals $\\frac{-k}{-3} = \\frac{k}{3}$, so $k = 18$.\n\n**The Fast Way (~40s):** Product of roots $= 8 = 2r^2$ gives roots $2$ and $4$; their sum $6$ equals $\\frac{k}{3}$, so $k = 18$.\n\n**The Full Solution:**\nStep 1: For $ap^2 + bp + c = 0$, the roots multiply to $\\frac{c}{a}$. Here $\\frac{c}{a} = \\frac{-24}{-3} = 8$, so $r \\cdot 2r = 2r^2 = 8$ and $r^2 = 4$.\nStep 2: The fares are positive, so $r = 2$ and the fares are $2$ and $4$ dollars.\nStep 3: The roots add to $\\frac{-b}{a} = \\frac{-k}{-3} = \\frac{k}{3}$, and $2 + 4 = 6$, so $\\frac{k}{3} = 6$ and $k = 18$. Check: $-3(2)^2 + 18(2) - 24 = -12 + 36 - 24 = 0$ and $-3(4)^2 + 18(4) - 24 = -48 + 72 - 24 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-18$): uses $\\frac{-k}{3}$ for the sum, as though the leading coefficient were $+3$, and lands on the right size with the wrong sign.\n* Choice B ($6$): stops at the sum of the two fares, $2 + 4 = 6$, without multiplying by the leading coefficient's magnitude.\n* Choice D ($24$): treats $\\frac{-24}{-3} = 8$ as the SUM of the fares instead of their product, then reports $3(8) = 24$.\n\n**Test Day Takeaway:** When roots are related (one is twice, three times, or the negative of the other), the PRODUCT relation usually pins the roots down in one step; then the sum relation delivers the missing coefficient."
+}

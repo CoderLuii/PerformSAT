@@ -1,40 +1,40 @@
 {
-  "id": 735,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "module": 2,
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "In 1980, the physicist Luis Alvarez, the geologist Walter Alvarez, and their colleagues proposed a dramatic explanation for the mass extinction that ended the age of the dinosaurs about 66 million years ago. A thin worldwide layer of clay laid down at that moment, they found, is unusually rich in iridium, an element rare in Earth's crust but common in asteroids. The team argued that a large asteroid had struck the planet, throwing up enough dust to darken the skies, shut down photosynthesis, and trigger a global collapse of food chains. The later discovery of a buried impact crater off Mexico's Yucatán Peninsula seemed to confirm the scenario."
-    },
-    {
-      "label": "Text 2",
-      "text": "The paleontologist Gerta Keller does not dispute that an asteroid struck near the Yucatán. What she disputes is its standing as the decisive cause. For several hundred thousand years before and after the impact, she notes, the Deccan Traps in present-day India were erupting on an enormous scale, releasing gases that would have acidified the oceans and destabilized the climate well before any asteroid arrived. In the fossil sequences Keller has studied, many species were already in decline as the eruptions intensified. The impact, on her account, fell upon ecosystems that volcanism had long been stressing; to treat it as the sole or primary trigger, she argues, is to mistake a final blow for the whole story."
-    }
-  ],
-  "question": "Based on the texts, how would Keller (Text 2) most likely respond to the explanation presented in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Keller would grant that the impact occurred but deny it was the primary cause, since Deccan volcanism had already destabilized ecosystems."
-    },
-    {
-      "id": "B",
-      "text": "By attributing the worldwide iridium layer entirely to the Deccan eruptions, Keller would deny that any asteroid struck the planet at all."
-    },
-    {
-      "id": "C",
-      "text": "She would hold that the extinction had no single environmental cause and so cannot be explained by either impact or volcanism."
-    },
-    {
-      "id": "D",
-      "text": "Keller would maintain that the Yucatán crater formed long after the extinction, so the impact could not have harmed the species that vanished."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. Keller explicitly accepts that an asteroid struck the Yucatán; what she rejects is its role as the decisive cause, arguing that Deccan volcanism had already been stressing ecosystems, so the impact was a final blow rather than the primary trigger. Choice B has her denying the impact, which Text 2 says she does not dispute. Choice C makes her reject all causes, whereas she clearly favors volcanism as a leading factor, and Choice D puts a claim about the crater's timing in her mouth that Text 2 never makes."
+ "id": 735,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "module": 2,
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "In the 1990s, the geologist Paul Hoffman and his colleagues revived a startling explanation for glacial deposits preserved in rocks that formed in the tropics: around 700 million years ago, they argued, ice sheets advanced until the entire planet froze over, oceans included. This 'Snowball Earth' would have held the globe in ice for millions of years, until volcanic carbon dioxide built up in the atmosphere and forced an abrupt planetary thaw. Hoffman pointed to the distinctive 'cap' carbonate rocks lying directly atop the glacial deposits as the signature of that sudden escape from ice."
+  },
+  {
+   "label": "Text 2",
+   "text": "The geologist Nicholas Christie-Blick accepts that glaciers reached sea level in the tropics — the deposits allow no other reading — but questions the leap to a fully frozen planet. Sedimentary layers within the glacial intervals, he notes, preserve ripples and other marks of open, wave-stirred water, and they record glaciers advancing and retreating repeatedly rather than holding the world in one long freeze. In his view the evidence supports severe glaciation with persistent open seas; the hypothesis's most dramatic element — oceans sealed beneath ice — remains undemonstrated."
+  }
+ ],
+ "question": "Based on the texts, how would Christie-Blick (Text 2) most likely respond to the explanation presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "He would accept that glaciers reached the tropics but argue that sedimentary evidence of open water shows a completely frozen planet has not been established."
+  },
+  {
+   "id": "B",
+   "text": "He would deny that the tropical deposits described in Text 1 were left by glaciers at all."
+  },
+  {
+   "id": "C",
+   "text": "He would agree that the oceans froze over completely but dispute Hoffman's account of how the planet eventually thawed."
+  },
+  {
+   "id": "D",
+   "text": "He would argue that cap carbonate rocks took millions of years to form and therefore confirm a long planetary freeze."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Christie-Blick's position is a precise partial concession: tropical glaciation is beyond dispute (\"the deposits allow no other reading\"), but ripples and other marks of wave-stirred water persuade him that open seas persisted — so the fully frozen planet, the hypothesis's defining claim, \"remains undemonstrated.\"\n\n**The Full Solution:**\n- Locate the agreement: both geologists read the tropical deposits as glacial.\n- Locate the split: Hoffman infers a planet frozen \"oceans included,\" while Christie-Blick cites sedimentary structures requiring open, wave-stirred water and repeated glacial advance and retreat.\n- A reproduces exactly that shape — grant the glaciers, reject the leap to total freeze as unestablished.\n\n**Why the other choices are wrong:**\n- B: It denies the very point Text 2 concedes outright — that the deposits are glacial.\n- C: It hands Christie-Blick the frozen-ocean claim he explicitly calls undemonstrated, relocating the dispute to the thaw.\n- D: It puts Hoffman's evidence to a use Text 2 never makes — Christie-Blick nowhere treats the cap carbonates as confirming a long freeze."
 }

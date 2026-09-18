@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "complicated"
-    },
-    {
-      "id": "B",
-      "text": "replaced"
-    },
-    {
-      "id": "C",
-      "text": "abandoned"
-    },
-    {
-      "id": "D",
-      "text": "accelerated"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"accelerated.\" The sentence contrasts the old method, which \"consumed months\" of handwork, with robots that now run thousands of trials, so the robots have sped the process up. \"Accelerated\" captures that. \"Replaced\" is tempting, but the trial-and-error process still happens—just faster—so it is accelerated rather than replaced; \"abandoned\" wrongly suggests the search was given up; and \"complicated\" reverses the sense, since the robots streamline the work rather than make it harder.",
-  "passage": "Protein crystallographers face a paradox: to learn a molecule's shape, they must first coax it into a crystal, but the conditions that make a protein crystallize are notoriously unpredictable. For decades, finding those conditions was largely a matter of trial and error, with researchers mixing thousands of slightly different chemical cocktails in the hope that one would work. Robotic systems that prepare and monitor such trials by the thousand have since ______ a process that once consumed months of painstaking handwork.",
-  "_meta": {
-    "anchor": "crystallography: robotic high-throughput protein crystallization screening"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "complicated"
   },
-  "id": 1129,
-  "module": 2
+  {
+   "id": "B",
+   "text": "imperiled"
+  },
+  {
+   "id": "C",
+   "text": "predicted"
+  },
+  {
+   "id": "D",
+   "text": "transformed"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The passage contrasts an old, surface-bound method with a new one that finally reaches where \"the real work is done\" — a change of kind, not degree. The sensors have \"transformed\" the study of bores.\n\n**The Full Solution:**\n- Before: a stopwatch on the riverbank, with the interesting behavior \"below the surface, where observers could not follow.\"\n- After: anchored sensors record dozens of bores from the riverbed itself.\n- Opening a previously inaccessible domain remakes the research rather than merely adding to it; \"transformed\" carries that weight, and the sentence's \"letting researchers...\" clause confirms the change is enabling, not obstructing.\n\n**Why the other choices are wrong:**\n- A: \"Complicated\" is negative — the sentence describes new capability, not new difficulty.\n- B: \"Imperiled\" would mean the sensors endangered the field, the opposite of what follows the blank.\n- C: \"Predicted\" is something done to future events, not to a field of study; instruments cannot predict \"the study\" of waves.",
+ "passage": "For most of scientific history, studying a tidal bore meant standing on a riverbank with a stopwatch as the wave swept past. The bore's most interesting behavior — how it churns sediment up from the riverbed and mixes salt water into fresh — happens below the surface, where observers could not follow. The spread of rugged, inexpensive pressure and turbidity sensors that can be anchored to the riverbed has ______ the study of these waves, letting researchers record dozens of bores from within the very layer where the real work is done.",
+ "_meta": {
+  "anchor": "tidal bores — riverbed sensors opening subsurface study",
+  "distractors": {
+   "A": "wrong valence — difficulty vs. capability",
+   "B": "wrong valence — danger",
+   "C": "wrong object — fields are not predicted"
+  }
+ },
+ "id": 1129,
+ "module": 2
 }

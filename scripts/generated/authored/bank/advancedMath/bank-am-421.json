@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-421",
+ "question": "A funicular's brake curve is calibrated with the equation $kx^{2}+(k+8)x+9=0$, where $k$ is a positive constant. Exactly two positive values of $k$ give the equation a repeated real solution. What is the greater of those values?",
+ "correctAnswer": "16",
+ "explanation": "**SAT Pattern: Quadratic Formula — Discriminant Recovery**\n\n**The correct answer is $16$.**\n\n**The Fast Way (~45s):** A repeated solution means $(k+8)^{2}-4(k)(9)=0$, which simplifies to $k^{2}-20k+64=0$, so $k=4$ or $k=16$; the greater is $16$.\n\n**The Full Solution:**\n\nStep 1: With $a=k$, $b=k+8$, and $c=9$, the discriminant is $(k+8)^{2}-4(k)(9)$.\n\nStep 2: Expand and collect: $k^{2}+16k+64-36k=k^{2}-20k+64$.\n\nStep 3: Set the discriminant to zero and factor: $k^{2}-20k+64=(k-4)(k-16)=0$, so $k=4$ or $k=16$, and the greater value is $16$. Check: at $k=16$ the equation is $16x^{2}+24x+9=0$, which is $(4x+3)^{2}=0$ and has the single solution $x=-\\frac{3}{4}$.\n\n**Common Mistakes:**\n\n* Reporting $4$, the smaller of the two values that make the discriminant zero.\n* Using $b=k$ instead of $b=k+8$ gives $k^{2}-36k=0$ and the wrong value $36$.\n\n**Test Day Takeaway:** When the same letter sits in more than one coefficient, the discriminant becomes its own quadratic — expand fully before setting it to zero."
+}

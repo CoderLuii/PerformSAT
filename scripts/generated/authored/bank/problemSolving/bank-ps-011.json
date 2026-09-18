@@ -1,0 +1,45 @@
+{
+  "id": "bank-ps-011",
+  "question": "The table gives the number of active accounts at a credit union at the end of each of two years. By what percent did the number of active accounts decrease from the end of 2021 to the end of 2022?",
+  "questionTable": {
+    "headers": [
+      "Year",
+      "Active accounts"
+    ],
+    "rows": [
+      [
+        "2021",
+        "14,400"
+      ],
+      [
+        "2022",
+        "12,600"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$1.25\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$12.5\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$14.3\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$87.5\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "converts the decimal $0.125$ to a percent by moving the decimal point only one place.",
+    "C": "divides the decrease by the 2022 count, $\\frac{1{,}800}{12{,}600} \\approx 0.143$, instead of by the original 2021 count.",
+    "D": "reports $\\frac{12{,}600}{14{,}400}$, the percent of accounts that remained, not the percent decrease."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The decrease is $14{,}400 - 12{,}600 = 1{,}800$ accounts, and $\\frac{1{,}800}{14{,}400} = 0.125$, so $12.5\\%$.\n\n**The Full Solution:**\nStep 1: Percent decrease $= \\frac{\\text{original} - \\text{new}}{\\text{original}} \\times 100\\%$, with the 2021 count as the original.\nStep 2: The decrease is $14{,}400 - 12{,}600 = 1{,}800$, so the percent decrease is $\\frac{1{,}800}{14{,}400} = \\frac{1}{8} = 0.125$, or $12.5\\%$.\nStep 3: Check: $12.5\\%$ of $14{,}400$ is $\\frac{14{,}400}{8} = 1{,}800$, and $14{,}400 - 1{,}800 = 12{,}600$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.25\\%$): converts the decimal $0.125$ to a percent by moving the decimal point only one place.\n* Choice C ($14.3\\%$): divides the decrease by the 2022 count, $\\frac{1{,}800}{12{,}600} \\approx 0.143$, instead of by the original 2021 count.\n* Choice D ($87.5\\%$): reports $\\frac{12{,}600}{14{,}400}$, the percent of accounts that remained, not the percent decrease.\n\n**Test Day Takeaway:** With a table, identify which row is the original (earlier) value before dividing. Percent decrease uses the earlier value as the denominator."
+}

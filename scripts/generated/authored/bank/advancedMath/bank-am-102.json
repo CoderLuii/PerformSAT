@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-102",
+ "question": "In a barge-draft model the expression $\\dfrac{P(x)}{x^{2}-25}$ is equivalent to $\\dfrac{x+5}{x-5}$ for every $x>5$, where $P$ is a polynomial. Which of the following could be $P(x)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x^{2}-10x+25$"
+  },
+  {
+   "id": "B",
+   "text": "$x^{2}+10x+25$"
+  },
+  {
+   "id": "C",
+   "text": "$x^{2}+25$"
+  },
+  {
+   "id": "D",
+   "text": "$x^{2}+5x$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "expands (x + 5) squared with a sign error, producing x squared minus 10x plus 25",
+  "C": "squares x and 5 separately and drops the 10x cross term",
+  "D": "multiplies x by (x + 5) instead of multiplying (x + 5) by itself"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $P(x)=\\frac{x+5}{x-5}\\cdot(x^{2}-25)=(x+5)(x+5)=x^{2}+10x+25$.\n\n**The Full Solution:**\n\nStep 1: Factor the given denominator: $x^{2}-25=(x-5)(x+5)$.\n\nStep 2: Multiply the target by that denominator: $P(x)=\\frac{x+5}{x-5}\\cdot(x-5)(x+5)$, and the $x-5$ cancels.\n\nStep 3: What remains is $(x+5)^{2}=x^{2}+10x+25$. Check at $x=6$: $\\frac{36+60+25}{36-25}=\\frac{121}{11}=11$, and $\\frac{6+5}{6-5}=11$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($x^{2}-10x+25$): expands $(x+5)^{2}$ with the wrong sign on the middle term.\n* Choice C ($x^{2}+25$): squares each term separately and loses the cross term.\n* Choice D ($x^{2}+5x$): multiplies $x$ by $x+5$ instead of $x+5$ by itself.\n\n**Test Day Takeaway:** To recover a missing numerator, multiply the simplified form by the full factored denominator and cancel what matches."
+}

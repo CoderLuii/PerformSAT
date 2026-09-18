@@ -1,0 +1,51 @@
+{
+  "id": 16,
+  "question": "The figure shows $y = g(x)$, the cross section of the parabolic arch under a stone footbridge, measured in feet, where $g(x) = a(x - 12)^2 + 4$ for a negative constant $a$ and the curve contains the point $(8, 0)$. A larger footbridge has arch cross section $y = g(x) + 5$. Its two points of contact with the line $y = 0$ are how many feet apart?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": 12,
+        "k": 4
+      },
+      "a": -0.25,
+      "xRange": [
+        0,
+        24
+      ],
+      "yRange": [
+        -8,
+        8
+      ],
+      "xTickInterval": 4,
+      "yTickInterval": 2,
+      "gridInterval": 2,
+      "showVertex": false
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$18$"
+    },
+    {
+      "id": "D",
+      "text": "$24$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the span of the graphed arch, 16 - 8, instead of the larger arch's span",
+    "C": "reports the larger x-intercept, 18, rather than the distance between the two",
+    "D": "adds the two x-intercepts, 6 + 18, instead of subtracting them"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Distance Between x-Intercepts**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** The point $(8, 0)$ gives $16a = -4$, so $a = -0.25$; the larger arch is $-0.25(x - 12)^2 + 9 = 0$, so $(x - 12)^2 = 36$ and the intercepts $6$ and $18$ are $12$ feet apart.\n\n**The Full Solution:**\nStep 1: Find $a$. Substituting $(8, 0)$ into $g(x) = a(x - 12)^2 + 4$ gives $0 = a(-4)^2 + 4 = 16a + 4$, so $a = -0.25$.\nStep 2: The larger arch is $y = g(x) + 5 = -0.25(x - 12)^2 + 9$. Setting $y = 0$ gives $0.25(x - 12)^2 = 9$, so $(x - 12)^2 = 36$.\nStep 3: Then $x - 12 = \\pm 6$, so $x = 6$ and $x = 18$, a distance of $18 - 6 = 12$ feet. Check $x = 6$ in the larger model: $-0.25(6 - 12)^2 + 9 = -9 + 9 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): measures the graphed arch, whose intercepts are $8$ and $16$; raising the curve by $5$ widens the opening, so this span is too small.\n* Choice C ($18$): reports the larger intercept as though it were the width, ignoring that the arch starts at $x = 6$ rather than at the origin.\n* Choice D ($24$): adds the two intercepts instead of subtracting, which measures nothing on the figure.\n\n**Test Day Takeaway:** For a vertical-form parabola the intercepts sit symmetrically about $x = h$, so once $(x - h)^2$ is isolated the distance between them is twice the square root."
+}

@@ -1,0 +1,56 @@
+{
+ "id": 21,
+ "question": "The table lists four deviations of a ground surface from a reference plane, in micrometers, measured at positions $x$ centimeters from a reference mark on the surface. The deviations satisfy $f(x) = 3x^2 + bx + c$ for constants $b$ and $c$. What is the value of $b + c$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Position x (centimeters)",
+    "Deviation f(x) (micrometers)"
+   ],
+   "rows": [
+    [
+     "1",
+     "0"
+    ],
+    [
+     "2",
+     "-6"
+    ],
+    [
+     "3",
+     "-6"
+    ],
+    [
+     "4",
+     "0"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-11$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$27$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes c to be the product of the zeros, 4, instead of 3 times that product, 12",
+  "C": "takes b to be the negative of the sum of the zeros, -5, instead of -3 times the sum",
+  "D": "reverses the sign relating the sum of the zeros to b, using b = +15"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Quadratic — Vieta's Sum/Product**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The deviation is $0$ at $x = 1$ and $x = 4$, so for $3x^2 + bx + c$ the zeros sum to $-\\frac{b}{3} = 5$ and multiply to $\\frac{c}{3} = 4$, giving $b = -15$, $c = 12$, and $b + c = -3$.\n\n**The Full Solution:**\nStep 1: Read the zeros from the table: $f(1) = 0$ and $f(4) = 0$, so $1$ and $4$ are the solutions of $3x^2 + bx + c = 0$.\nStep 2: Apply the sum and product relationships for $ax^2 + bx + c$ with $a = 3$: the sum of the solutions is $-\\frac{b}{3}$, so $1 + 4 = -\\frac{b}{3}$ and $b = -15$; the product is $\\frac{c}{3}$, so $1 \\cdot 4 = \\frac{c}{3}$ and $c = 12$.\nStep 3: Add: $b + c = -15 + 12 = -3$. Check against a row the zeros did not supply: $f(2) = 3(4) - 15(2) + 12 = 12 - 30 + 12 = -6$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-11$): sets $c$ equal to the product of the zeros, $4$; the product equals $\\frac{c}{a}$, so $c$ is $3$ times as large.\n* Choice C ($7$): sets $b$ equal to $-(1 + 4) = -5$; the sum equals $-\\frac{b}{a}$, so $b$ is $3$ times as large in magnitude.\n* Choice D ($27$): uses $b = +15$, which would put the zeros at negative positions and make $f(2)$ positive instead of $-6$.\n\n**Test Day Takeaway:** Vieta's relationships carry the leading coefficient: the sum of the roots is $-\\frac{b}{a}$ and the product is $\\frac{c}{a}$, so never read $b$ and $c$ straight off the roots when $a \\ne 1$."
+}

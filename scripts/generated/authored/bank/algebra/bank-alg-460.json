@@ -1,0 +1,29 @@
+{
+ "question": "A trainer's linear model $h$ satisfies $h(2) = c$ and $h(8) = 5c$, where $c$ is a positive constant. The graph of $y = h(x)$ is a line. Which expression gives that line's slope?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3}{2c}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{c}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{2c}{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$c$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "inverts rise and run, dividing the input gap by the output gap",
+  "B": "divides by $8$ instead of by the input gap $8 - 2 = 6$",
+  "D": "adds the outputs, using $5c + c = 6c$ over a run of $6$"
+ },
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The outputs rise by $5c - c = 4c$ while the inputs rise by $6$, so the slope is $\\frac{4c}{6} = \\frac{2c}{3}$.\n\n**The Full Solution:**\n\nStep 1: The model passes through $(2, c)$ and $(8, 5c)$.\n\nStep 2: Slope is $\\frac{5c - c}{8 - 2} = \\frac{4c}{6}$.\n\nStep 3: Reduce: $\\frac{4c}{6} = \\frac{2c}{3}$. Check with $c = 3$: the points are $(2, 3)$ and $(8, 15)$, and $\\frac{15 - 3}{8 - 2} = 2 = \\frac{2(3)}{3}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{3}{2c}$): reverses the ratio, dividing the run by the rise.\n\n* Choice B ($\\frac{c}{2}$): divides $4c$ by $8$, using the ending input rather than the change in input.\n\n* Choice D ($c$): adds the two outputs instead of subtracting, giving $\\frac{6c}{6}$.\n\n**Test Day Takeaway:** A symbolic slope follows the same rule as a numeric one; subtract both coordinates, then reduce.",
+ "id": "bank-alg-460"
+}

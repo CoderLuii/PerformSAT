@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "inferences",
   "module": 2,
-  "passage": "Archaeologist Sarah Parcak of the University of Alabama at Birmingham works with multispectral satellite imagery, which records reflected light in many narrow bands, including bands beyond what the human eye can see. In her accounts of survey work in Egypt, she emphasizes two facts. First, buried walls and foundations alter the soil and plants above them, producing faint contrasts in moisture and vegetation that show up in those narrow bands but go unnoticed by an observer at the site. Second, when looters dig pits into a buried tomb, the disturbance leaves its own surface signature that registers in imagery taken after the digging but is absent from imagery of the same ground recorded before it. These observations together imply that, by comparing multispectral images of a site from different dates, an analyst working with Parcak's methods can ______",
+  "passage": "Condensation trails — the thin ice clouds that form behind aircraft — trap outgoing heat, and their total contribution to aviation's warming effect rivals that of the fuel the planes burn. The effect is strikingly uneven, however. Contrails persist only when a plane crosses a pocket of cold, humid air, so a small fraction of flights — by some estimates roughly one in twenty — produces the large majority of contrail warming. And because those atmospheric pockets tend to be shallow, a modest change in cruising altitude is often enough to miss them entirely. Taken together, these facts suggest that ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "pinpoint where buried remains have recently been looted, by noting which surface marks are new to the later image."
+      "text": "rerouting a small share of flights could eliminate a disproportionately large share of contrail warming."
     },
     {
       "id": "B",
-      "text": "estimate when the buried walls and foundations beneath a site were originally built, by reading the surface contrasts in the imagery."
+      "text": "aviation's total warming effect could be cut in half if every flight simply burned less fuel."
     },
     {
       "id": "C",
-      "text": "confirm that any recent surface changes were caused by natural erosion rather than digging, since the two leave identical signatures."
+      "text": "airlines cannot meaningfully reduce contrail warming without grounding the flights that cross cold, humid air, because altitude changes on those routes would consume prohibitive amounts of extra fuel."
     },
     {
       "id": "D",
-      "text": "determine from a single image taken on one date whether a site has ever been looted, without consulting any earlier imagery."
+      "text": "contrail warming will decline on its own as a warming atmosphere makes pockets of cold, humid air steadily rarer."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage gives two facts. First, buried walls and foundations subtly change the soil and plants above them, so they register as faint contrasts in the narrow bands of multispectral imagery. Second, a looter's pit leaves a surface signature that appears in imagery taken after the digging but not before. Comparing images of the same ground from different dates therefore lets an analyst spot a mark that is new to the later image and tie it to a buried site—that is, identify where remains have recently been looted, as A says. Choice B fails because the premises say nothing about the age of the buried structures; detecting them is not the same as dating them. Choice C contradicts the passage, which treats the looting signature as detectable, not indistinguishable from erosion. Choice D ignores the core of the second premise: without an earlier image for comparison, a single later image cannot establish that a feature is new."
+  "explanation": "**Choice A is correct.** Two premises do all the work: a small minority of flights causes most contrail warming, and a modest altitude change avoids the responsible air pockets. Together they imply that targeting just those flights would remove an outsized share of the warming.\n\n**The Full Solution:**\n- Concentration: roughly one flight in twenty \"produces the large majority of contrail warming.\"\n- Avoidability: the guilty pockets are shallow, so \"a modest change in cruising altitude is often enough to miss them entirely.\"\n- Combine them: intervene on the small guilty fraction, and the large majority of the warming goes away — a disproportionate return on a small effort, exactly as choice A concludes.\n\n**Why the other choices are wrong:**\n- B: Fuel burn is the passage's comparison point for contrail warming, not its subject; nothing in the premises quantifies what less fuel would achieve.\n- C: It contradicts the avoidability premise — the passage says a modest altitude change suffices, while this choice insists only grounding flights would work and invents a fuel cost the text never mentions.\n- D: The premises describe the present distribution of cold, humid pockets; no premise addresses how climate change will alter them, so the prediction has no support."
 }

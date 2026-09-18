@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-422",
+  "question": "A quality inspector tested $320$ concrete cylinders from a bridge project, and $272$ of these cylinders met the compressive strength standard. What percent of the cylinders tested did NOT meet the standard?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$17.6\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$48\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$85\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "divides the $48$ failing cylinders by the $272$ passing ones instead of by all $320$.",
+    "C": "reports the count of failing cylinders as if it were a percent.",
+    "D": "gives the percent of cylinders that DID meet the standard."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** $320-272=48$ cylinders failed, and $\\frac{48}{320}=0.15$, so $15\\%$ did not meet the standard.\n\n**The Full Solution:**\nStep 1: The question asks about the cylinders that did NOT meet the standard, so first find that count: $320-272=48$.\nStep 2: Divide by the total number tested: $\\frac{48}{320}=0.15$.\nStep 3: $0.15\\times 100=15$, so $15\\%$. Check: $15\\%+85\\%=100\\%$, and $85\\%$ of $320$ is $272$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($17.6\\%$): computes $\\frac{48}{272}$, using the passing cylinders as the whole instead of all $320$.\n* Choice C ($48\\%$): reports the raw count of failing cylinders as a percent.\n* Choice D ($85\\%$): finds $\\frac{272}{320}$, the percent that DID meet the standard.\n\n**Test Day Takeaway:** When a stem capitalizes NOT, compute the complement count first, then divide by the original total, never by the other part."
+}

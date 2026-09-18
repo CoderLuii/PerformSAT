@@ -1,0 +1,41 @@
+{
+ "question": "A radar sweep covers the quarter-circle sector shown, whose area is $16\\pi$ square kilometers. How long, in kilometers, is the radius?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 90,
+   "angleLabel": "90°",
+   "showRadiusLabel": false,
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "figureNote": true
+  }
+ },
+ "hint": "The area you are given belongs to only part of the circle.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$64$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves pi*r^2 = 16pi and forgets the quarter",
+  "C": "reports the coefficient 16 from the given area",
+  "D": "reports r^2 = 64 instead of r"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~25s):** A quarter of $\\pi r^2$ equals $16\\pi$, so $\\pi r^2 = 64\\pi$ and $r = 8$.\n\n**The Full Solution:**\nStep 1: A $90^\\circ$ sector is $\\dfrac{1}{4}$ of the circle, so $\\dfrac{1}{4}\\pi r^2 = 16\\pi$.\nStep 2: Multiply both sides by $4$: $\\pi r^2 = 64\\pi$, so $r^2 = 64$.\nStep 3: Take the positive root: $r = 8$ kilometers. Check: $\\dfrac{1}{4}\\pi(8)^2 = 16\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): solves $\\pi r^2 = 16\\pi$, treating the sector's area as the whole circle's.\n* Choice C ($16$): reports the number multiplying $\\pi$ in the given area.\n* Choice D ($64$): reports $r^2$ and skips the square root.\n\n**Test Day Takeaway:** Undo the fraction of the circle first; only then take the square root."
+}

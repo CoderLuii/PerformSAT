@@ -1,0 +1,55 @@
+{
+ "id": "bank-geo-129",
+ "question": "In the hip-roof rafter bracket shown, the sloped edge runs $6$ centimeters longer than the longer of the two edges that meet at the right angle. What is the perimeter, in centimeters, of the bracket?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     24,
+     0
+    ],
+    [
+     24,
+     18
+    ]
+   ],
+   "sideLabels": [
+    "4x",
+    "3x",
+    ""
+   ],
+   "rightAngleVertex": 1,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18$"
+  },
+  {
+   "id": "B",
+   "text": "$30$"
+  },
+  {
+   "id": "C",
+   "text": "$42$"
+  },
+  {
+   "id": "D",
+   "text": "$72$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports the shorter leg 3x = 18 instead of the perimeter",
+  "B": "reports the sloped edge 5x = 30 and stops",
+  "C": "adds only the two legs, 18 + 24, and leaves out the sloped edge"
+ },
+ "explanation": "**SAT Pattern: Pythagorean Theorem (3-4-5 Family)**\n\n**Choice D is correct.** With legs $3x$ and $4x$ the hypotenuse is $5x$, so $5x = 4x + 6$ gives $x = 6$ and the perimeter is $18 + 24 + 30 = 72$.\n\n**The Fast Way (~40s):** $5x - 4x = 6$, so $x = 6$; the sides are $18$, $24$, $30$ and their sum is $72$.\n\n**The Full Solution:**\n\nStep 1: The legs are $3x$ and $4x$, so the hypotenuse is $\\sqrt{(3x)^2 + (4x)^2} = 5x$.\n\nStep 2: The sloped edge exceeds the longer leg by $6$: $5x = 4x + 6$, so $x = 6$.\n\nStep 3: The sides are $3(6) = 18$, $4(6) = 24$, and $5(6) = 30$ centimeters, giving a perimeter of $72$ centimeters. Check: $30 - 24 = 6$, as stated, and $18^2 + 24^2 = 900 = 30^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($18$): reports the shorter leg $3x$ instead of the distance around the bracket.\n* Choice B ($30$): reports the sloped edge $5x$ and stops.\n* Choice C ($42$): adds only the two legs and omits the sloped edge.\n\n**Test Day Takeaway:** In a $3x$-$4x$-$5x$ triangle every side is a multiple of the same $x$, so one comparison between sides pins $x$ immediately."
+}

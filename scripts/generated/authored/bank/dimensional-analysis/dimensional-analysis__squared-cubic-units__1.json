@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "question": "A rectangular rug covers an area of $15$ square yards. Given that $1$ yard is equal to $3$ feet, what is the area of the rug, in square feet?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$45$"
+    },
+    {
+      "id": "B",
+      "text": "$90$"
+    },
+    {
+      "id": "C",
+      "text": "$135$"
+    },
+    {
+      "id": "D",
+      "text": "$405$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "A square yard is a square that is one yard on each side — picture how many one-foot squares fit inside it.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** One square yard holds $3^{2}=9$ square feet, so $15(9)=135$ square feet — choice C.\n\n**The Full Solution:**\nStep 1: A square yard is a $3$-foot by $3$-foot square, so it contains $3(3)=9$ square feet.\nStep 2: The area conversion therefore multiplies by $9$, not by $3$: $15(9)=135$ square feet.\nStep 3: Check with a concrete rug: a $5$-yard by $3$-yard rug has area $15$ square yards, and in feet it is $15$ by $9$, an area of $135$ square feet. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($45$): multiplies by the linear factor $3$ instead of its square.\n* Choice B ($90$): doubles the linear factor, using $2(3)=6$ where squaring is required.\n* Choice D ($405$): cubes the factor, $3^{3}=27$, which converts volumes rather than areas.\n\n**Test Day Takeaway:** Squaring a unit squares its conversion factor. Draw the one-unit square once and the factor of $9$ is obvious rather than memorized."
+}

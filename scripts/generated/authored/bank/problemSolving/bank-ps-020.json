@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-020",
+  "question": "An account was opened with $\\$8{,}000$. The value of the account increased by $12\\%$ during the first year and then increased by $5\\%$ during the second year. What was the value of the account, in dollars, at the end of the second year?",
+  "correctAnswer": "9408",
+  "explanation": "**SAT Pattern: Successive Percent Growth**\n\n**The correct answer is $9408$.**\n\n**The Fast Way (~15s):** Multiply by each growth factor in turn: $8{,}000 \\times 1.12 = 8{,}960$, then $8{,}960 \\times 1.05 = 9{,}408$.\n\n**The Full Solution:**\nStep 1: A $12\\%$ increase multiplies by $1.12$: $8{,}000 \\times 1.12 = 8{,}960$ dollars after the first year.\nStep 2: The $5\\%$ increase applies to the new value: $8{,}960 \\times 1.05 = 9{,}408$ dollars after the second year.\nStep 3: Check with one combined factor: $1.12 \\times 1.05 = 1.176$, and $8{,}000 \\times 1.176 = 9{,}408$. $\\checkmark$\n\n**Common Mistakes:** Entering $9{,}360$ (adding the percents to get $17\\%$ and computing $8{,}000 \\times 1.17$; the second increase acts on $8{,}960$, not $8{,}000$); entering $8{,}960$ (stopping after the first year); entering $448$ (reporting only the second-year gain, $0.05 \\times 8{,}960$).\n\n**Test Day Takeaway:** Successive percent increases multiply: $(1.12)(1.05) = 1.176$, a $17.6\\%$ total gain, not $17\\%$."
+}

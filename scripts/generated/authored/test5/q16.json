@@ -1,34 +1,34 @@
 {
-  "id": 516,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "module": 1,
-  "passage": "X-ray crystallography works because a crystal's regularly spaced layers of atoms scatter X-rays, and the scattered waves reinforce one another only at specific angles that depend on the spacing between the layers and the wavelength of the X-rays. Measuring those angles therefore lets a researcher calculate the spacing. Given this relationship, two crystals that, examined with X-rays of the same wavelength, produce their reinforced reflections at different angles ______",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "must be composed of exactly the same chemical elements combined in the same fixed proportions."
-    },
-    {
-      "id": "B",
-      "text": "must differ from each other in the spacing between their layers of atoms."
-    },
-    {
-      "id": "C",
-      "text": "would, if examined again under identical conditions, produce reflections at the same angle after all."
-    },
-    {
-      "id": "D",
-      "text": "cannot, as a rule, be analyzed by X-ray methods of the kind the passage describes."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage states that, at a fixed wavelength, the angle of reinforcement depends on the spacing between the layers of atoms. If two crystals reinforce at different angles under the same wavelength, the only quantity the passage ties to the angle must differ—namely, the layer spacing. Choice A imports a claim about chemical composition that the passage does not connect to the angle. Choice C contradicts the premise that the angles differ. Choice D denies that the crystals can be analyzed at all, which the passage gives no reason to conclude.",
-  "_meta": {
-    "anchor": "X-ray diffraction; reinforcement angle depends on layer spacing at fixed wavelength"
+ "id": 516,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "module": 1,
+ "passage": "Across Iran and Central Asia, hundreds of caravanserais — fortified courtyard inns that sheltered traveling merchants, their goods, and their animals — still line the old overland trade routes. Their spacing is strikingly regular: ruins succeed one another at intervals of roughly 25 to 35 kilometers, even across stretches of desert with no permanent water and no town within days of travel. A loaded camel caravan moving at walking pace covered about 30 kilometers between dawn and dusk. Where a route crossed settled country, the inns often stand in or near towns; where it did not, they stand alone, supplied by wells dug expressly to serve them. Taken together, these patterns suggest that ______",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "merchant caravans preferred desert routes to routes through settled country whenever a choice existed."
+  },
+  {
+   "id": "B",
+   "text": "the builders of the caravanserais placed them according to the distance a caravan traveled in a day rather than solely where settlements already existed."
+  },
+  {
+   "id": "C",
+   "text": "most caravanserais were abandoned soon after towns grew up in the territory around them."
+  },
+  {
+   "id": "D",
+   "text": "caravans of the period were unable to undertake journeys much longer than 35 kilometers in total."
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The interval between inns matches a caravan's daily range almost exactly, and the inns appear even where no settlement could explain them — so daily travel distance, not existing towns, must have governed their placement.\n\n**The Full Solution:**\n- Premise one: the inns recur every 25 to 35 kilometers with striking regularity.\n- Premise two: a loaded caravan covered about 30 kilometers per day — squarely inside that interval.\n- Premise three: the regular spacing persists across empty desert, where inns stand alone with wells dug expressly for them, so settlement locations cannot account for the pattern there.\n- The conclusion that fits all three is deliberate planning around a day's travel, with towns incorporated where they happened to lie on the route — precisely choice B's claim.\n\n**Why the other choices are wrong:**\n- A: The text describes where inns were built, not which routes merchants preferred; no comparison of route choice is made.\n- C: Abandonment is never mentioned; the ruins line the routes, but nothing dates their disuse or ties it to growing towns.\n- D: It confuses a day's stage with a whole journey — the chain of inns exists precisely because caravans strung many such days together.",
+ "_meta": {
+  "anchor": "caravanserai spacing — inns placed at one-day caravan intervals along overland routes"
+ }
 }

@@ -1,34 +1,34 @@
 {
-  "id": 548,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 2,
-  "passage": "The technique can look forbidding from the outside, but its core apparatus is straightforward. Much of crystallography depends on three pieces of equipment ______ a source that produces a beam of X-rays, a stage that slowly rotates the crystal, and a detector that records where the scattered rays land as a pattern of spots.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "equipment: a"
-    },
-    {
-      "id": "B",
-      "text": "equipment, a"
-    },
-    {
-      "id": "C",
-      "text": "equipment; a"
-    },
-    {
-      "id": "D",
-      "text": "equipment a"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"equipment: a\". The words before the blank form a complete independent clause (\"Much of crystallography depends on three pieces of equipment\"), and what follows is a list that spells out those three pieces, so a colon is the right mark to introduce the specification. A comma (choice B) is too weak to set up the list cleanly after a full clause. A semicolon (choice C) would require an independent clause after it, but a list of noun phrases follows. No punctuation (choice D) runs the clause into the list with no boundary.",
-  "_meta": {
-    "anchor": "Crystallography equipment; colon introducing a list after an independent clause"
+ "id": 548,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 2,
+ "passage": "A post mill, the earliest type of European windmill, could bring its sails to face wind from any quarter because the entire body of the mill rotated. The design depended on three essential ______ massive upright post on which the whole structure balanced, a timber body housing the millstones and gearing that pivoted around that post, and a long tailpole by which the miller levered the body into the wind.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "parts: a"
+  },
+  {
+   "id": "B",
+   "text": "parts, a"
+  },
+  {
+   "id": "C",
+   "text": "parts; a"
+  },
+  {
+   "id": "D",
+   "text": "parts a"
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** \"The design depended on three essential parts\" is a complete independent clause, and the list that specifies those parts is introduced by a colon.\n\n**The Full Solution:**\n- Before the blank stands a full clause ending in the noun phrase the list will unpack: \"three essential parts.\"\n- What follows is the enumeration itself — the post, the pivoting body, the tailpole.\n- A colon after an independent clause is the standard signal that the promised items now follow.\n\n**Why the other choices are wrong:**\n- B: A comma cannot carry the weight of introducing the enumeration; it leaves \"parts\" and \"a massive upright post\" running together as if in apposition to only the first item.\n- C: A semicolon must join two independent clauses, but the list that follows is not a clause.\n- D: With no punctuation at all, \"three essential parts a massive upright post\" is ungrammatical.",
+ "_meta": {
+  "anchor": "post windmill anatomy; colon introducing a list after an independent clause"
+ }
 }

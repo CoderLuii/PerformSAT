@@ -1,0 +1,29 @@
+{
+  "id": 10,
+  "question": "At a mountain pass the snow depth, in centimeters, is modeled by $86 - 4.5d$, where $d$ is the number of days since melting began. What is the least whole number of days after which the depth is below $50$ centimeters?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$20$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops at d = 8, where the depth is exactly 50 and not yet below it",
+    "C": "divides the threshold 50 by 4.5 instead of the drop 36, giving 11.1 rounded up",
+    "D": "divides the starting depth 86 by 4.5, ignoring the 50-centimeter threshold"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Smallest Integer in an Inequality**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The depth must fall by more than $86 - 50 = 36$ centimeters, and $36 \\div 4.5 = 8$ exactly, so the first whole day strictly past $8$ is $9$.\n\n**The Full Solution:**\nStep 1: Translate the requirement: $86 - 4.5d < 50$.\nStep 2: Subtract $86$ from both sides to get $-4.5d < -36$, then divide by $-4.5$ and reverse the inequality: $d > 8$.\nStep 3: The least whole number greater than $8$ is $9$. Check both sides: at $d = 8$ the depth is $86 - 36 = 50$, which is not below $50$, and at $d = 9$ it is $86 - 40.5 = 45.5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): treats $d > 8$ as $d \\ge 8$. At exactly $8$ days the depth is $50$ centimeters, which the word *below* excludes.\n* Choice C ($12$): divides the threshold by the rate, $50 \\div 4.5 \\approx 11.1$ rounded up to $12$, instead of dividing the required drop of $36$.\n* Choice D ($20$): divides the starting depth by the rate, $86 \\div 4.5 \\approx 19.1$ rounded up to $20$, which is when the snow would be gone entirely.\n\n**Test Day Takeaway:** Dividing by a negative number flips the inequality sign, and a strict inequality that lands on a whole number pushes the answer one step further — test the boundary value before you commit."
+}

@@ -1,31 +1,31 @@
 {
-  "id": 704,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "In a working transistor, a region of silicon is deliberately \"doped\" with trace amounts of another element, such as phosphorus or boron. These added atoms ______ the silicon's electrical behavior: even a few impurity atoms per million can turn what would otherwise be a poor conductor into a material that carries current readily. Engineers exploit this sensitivity to control exactly how and where charge moves through a chip.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "monitor"
-    },
-    {
-      "id": "B",
-      "text": "govern"
-    },
-    {
-      "id": "C",
-      "text": "transform"
-    },
-    {
-      "id": "D",
-      "text": "reverse"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The colon introduces what the added atoms actually do: they turn what would otherwise be a poor conductor into a material that carries current readily, a change of kind that \"transform\" captures precisely. \"Monitor\" would mean the atoms merely track the silicon's behavior rather than change it. \"Govern\" suggests ongoing regulation rather than the conversion the text describes, and \"reverse\" implies undoing a prior condition, which the passage does not mention."
+ "id": 704,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "An octopus can match the seafloor beneath it within a second or two, though its eyes cannot detect color. The animal's skin holds thousands of pigment sacs, each widened or narrowed by tiny muscles under the direct command of the nervous system. Working together, the sacs let the octopus ______ the pattern and brightness of nearly any background, from mottled rock to rippled sand.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "memorize"
+  },
+  {
+   "id": "B",
+   "text": "illuminate"
+  },
+  {
+   "id": "C",
+   "text": "reproduce"
+  },
+  {
+   "id": "D",
+   "text": "simplify"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The opening sentence states the feat — the octopus can \"match the seafloor beneath it\" — and the final sentence restates it through the blank: the pigment sacs let the animal \"reproduce,\" or copy, the look of its background.\n\n**The Full Solution:**\n- The first sentence supplies the meaning the blank must restate: the octopus matches its surroundings.\n- The mechanism explains how: thousands of pigment sacs widen or narrow to rebuild the background's pattern and brightness on the skin.\n- \"Reproduce\" — to make a copy of — is the precise word for re-creating a pattern on another surface.\n\n**Why the other choices are wrong:**\n- A: \"Memorize\" is about storing information in memory, but the skin displays the pattern rather than remembering it.\n- B: \"Illuminate\" means to light something up, and pigment sacs change color rather than emit light.\n- D: \"Simplify\" would mean the octopus renders a cruder version of the background, which would undercut the matching the passage describes."
 }

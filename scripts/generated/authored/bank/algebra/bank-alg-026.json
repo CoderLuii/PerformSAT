@@ -1,0 +1,6 @@
+{
+ "question": "The vertical clearance under a parabolic arch, in feet, at a horizontal distance of $x$ feet from one base is $h(x)=-0.05x^{2}+kx$, where $k$ is a constant. If the clearance is $24$ feet at $x=20$, what is the clearance, in feet, at $x=30$?",
+ "correctAnswer": "21",
+ "explanation": "**SAT Pattern: Function Evaluation (Quadratic)**\n\n**The correct answer is $21$.**\n\n**The Fast Way (~45s):** $h(20)=-20+20k=24$ gives $k=2.2$, so $h(30)=-45+66=21$ feet.\n\n**The Full Solution:**\n\nStep 1: Evaluate the rule at $x=20$: $h(20)=-0.05(400)+20k=-20+20k$.\n\nStep 2: Set that equal to the measured clearance: $-20+20k=24$, so $20k=44$ and $k=2.2$.\n\nStep 3: Evaluate at $x=30$: $h(30)=-0.05(900)+2.2(30)=-45+66=21$ feet. Check: $h(0)=0$ and $h(44)=-96.8+96.8=0$, so the arch does meet the ground at both bases, as an arch must.\n\n**Common Mistakes:** Treating $-0.05x^{2}$ as positive gives $45+66=111$ feet, taller than the arch ever gets. Solving $20k=24$ instead of $-20+20k=24$ gives $k=1.2$ and the impossible clearance $-45+36=-9$ feet.\n\n**Test Day Takeaway:** Square the input before applying the coefficient, and keep the sign attached to the squared term when you solve for a missing constant.",
+ "id": "bank-alg-026"
+}

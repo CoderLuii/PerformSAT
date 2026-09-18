@@ -1,0 +1,6 @@
+{
+ "question": "Charted in meters, a reef flat fills the disk bounded by $(x - 12)^2 + (y + 5)^2 = 196$. A survey line crosses the reef flat from west to east through its center. What length, in meters, of the survey line lies over the reef flat?",
+ "correctAnswer": "28",
+ "explanation": "**SAT Pattern: Circle in Standard Form**\n\n**The correct answer is $28$.**\n\n**The Fast Way (~15s):** The right side is $r^2 = 196$, so $r = 14$; a line through the center cuts a diameter, $2(14) = 28$ meters.\n\n**The Full Solution:**\nStep 1: Compare $(x - 12)^2 + (y + 5)^2 = 196$ with $(x - h)^2 + (y - k)^2 = r^2$: the center is $(12, -5)$ and $r^2 = 196$.\nStep 2: Take the square root: $r = 14$ meters.\nStep 3: The longest chord of a circle is the one through the center, so the survey line covers a diameter of $2(14) = 28$ meters. Check: the line $y = -5$ meets the boundary where $(x - 12)^2 = 196$, at $x = -2$ and $x = 26$, and $26 - (-2) = 28$ ✓\n\n**Common Mistakes:**\n* $14$ — reports the radius instead of the full chord through the center.\n* $196$ — uses $r^2$ as though it were the radius.\n* $7$ — halves the radius, treating $14$ as the diameter.\n\n**Test Day Takeaway:** A chord through the center is a diameter; convert $r^2$ to $r$ first, then double it.",
+ "id": "bank-geo-100"
+}

@@ -1,0 +1,28 @@
+{
+ "id": 21,
+ "question": "The figure shows the cross section of a parabolic solar reflector, modeled by $y = x^2 - 8x + 24$. A rod running along $y = 2x + c$ just grazes that cross section, meeting it once and never crossing it. What is the value of $c$?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 4,
+    "k": 8
+   },
+   "a": 1,
+   "xRange": [
+    -1,
+    9
+   ],
+   "yRange": [
+    0,
+    28
+   ],
+   "showVertex": false,
+   "gridInterval": 2,
+   "xTickInterval": 2,
+   "yTickInterval": 4
+  }
+ },
+ "correctAnswer": "-1",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**The correct answer is $-1$.**\n\n**The Fast Way (~40s):** Setting the two expressions equal gives $x^2 - 10x + (24 - c) = 0$; one intersection means the discriminant is zero, so $100 - 4(24 - c) = 0$ and $c = -1$.\n\n**The Full Solution:**\nStep 1: The rod meets the cross section where $x^2 - 8x + 24 = 2x + c$. Bringing everything to one side gives $x^2 - 10x + (24 - c) = 0$.\nStep 2: \"Meets it once and never crosses it\" means this quadratic has exactly one real solution, so its discriminant is zero: $(-10)^2 - 4(1)(24 - c) = 0$, that is, $100 - 96 + 4c = 0$.\nStep 3: Solving $4 + 4c = 0$ gives $4c = -4$ and $c = -1$. Check: with $c = -1$ the equation becomes $x^2 - 10x + 25 = (x - 5)^2 = 0$, a single solution at $x = 5$, where the parabola gives $25 - 40 + 24 = 9$ and the rod gives $2(5) - 1 = 9$ — the same point ✓\n\n**Common Mistakes:**\n* $1$: reaches $4c = -4$ but reports the value without its negative sign.\n* $9$: reports the $y$-coordinate of the point where the rod touches the reflector, $(5, 9)$, instead of where the rod's line crosses the $y$-axis.\n* $24$: copies the constant term from the reflector's equation. That is where the **parabola** meets the $y$-axis, not the rod.\n\n**Test Day Takeaway:** A line that touches a curve exactly once turns into a quadratic with a zero discriminant — set the two expressions equal, collect terms, and solve $b^2 - 4ac = 0$ for the unknown constant."
+}

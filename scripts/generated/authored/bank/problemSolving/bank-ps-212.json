@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-212",
+  "question": "In a conservatory's orchid collection, $35\\%$ of the orchids are hybrids, and $40\\%$ of the hybrid orchids are in bloom. If one orchid is selected at random from the collection, what is the probability that it is a hybrid orchid that is in bloom? Express your answer as a decimal.",
+  "correctAnswer": "0.14",
+  "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**The correct answer is $0.14$.**\n\n**The Fast Way (~20s):** $0.35 \\times 0.40 = 0.14$.\n\n**The Full Solution:**\nStep 1: The $40\\%$ in-bloom rate is measured only among hybrids, so multiply it by the hybrid share.\nStep 2: Convert both percents to decimals and multiply: $0.35 \\times 0.40 = 0.14$.\nStep 3: Check with $500$ orchids: $175$ are hybrids, $40\\%$ of $175$ is $70$, and $\\frac{70}{500} = 0.14$. $\\checkmark$\n\n**Common Mistakes:** Adding the rates for $0.75$; reporting $0.40$, the rate inside the hybrid group; or dividing, $\\frac{0.40}{0.35} \\approx 1.14$, which is not a possible probability.\n\n**Test Day Takeaway:** Chain the two rates with multiplication, then confirm the result is smaller than both."
+}

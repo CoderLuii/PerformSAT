@@ -1,0 +1,86 @@
+{
+  "id": "bank-ps-381",
+  "question": "A smoking-cessation program plotted the number of participants still enrolled during each of its first $9$ weeks, and the line of best fit for the plotted data is $y = 240 - 10x$, where $x$ is the week number. How many participants does this line predict will still be enrolled in week $12$?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          234
+        ],
+        [
+          2,
+          216
+        ],
+        [
+          3,
+          213
+        ],
+        [
+          4,
+          197
+        ],
+        [
+          5,
+          193
+        ],
+        [
+          6,
+          176
+        ],
+        [
+          7,
+          172
+        ],
+        [
+          8,
+          158
+        ],
+        [
+          9,
+          148
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 10,
+      "yMin": 0,
+      "yMax": 260,
+      "xGridStep": 1,
+      "xLabelStep": 2,
+      "yGridStep": 20,
+      "yLabelStep": 40,
+      "xLabel": "Week",
+      "yLabel": "Participants still enrolled",
+      "bestFitLine": {
+        "slope": -10,
+        "intercept": 240
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$96$"
+    },
+    {
+      "id": "B",
+      "text": "$120$"
+    },
+    {
+      "id": "C",
+      "text": "$228$"
+    },
+    {
+      "id": "D",
+      "text": "$240$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the slope as -12 and computes 240 - 12(12) = 96",
+    "C": "subtracts the week number instead of 10 times it: 240 - 12 = 228",
+    "D": "reports the week-0 value 240, the intercept, without advancing 12 weeks"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Substitute $x = 12$ into $y = 240 - 10x$: $240 - 120 = 120$ participants.\n\n**The Full Solution:**\nStep 1: Read the model. The line of best fit is $y = 240 - 10x$, so enrollment starts near $240$ and falls about $10$ participants per week.\nStep 2: Substitute the target week. $y = 240 - 10(12) = 240 - 120 = 120$ participants.\nStep 3: Check the trend. Week $9$ predicts $150$, and three more weeks at $-10$ each gives $150 - 30 = 120$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($96$): uses a slope of $-12$: $240 - 12(12) = 96$. The slope in the equation is $-10$.\n* Choice C ($228$): subtracts the week number itself: $240 - 12 = 228$, dropping the factor of $10$.\n* Choice D ($240$): is the value the model gives at week $0$, before any weeks pass.\n\n**Test Day Takeaway:** Week $12$ lies past the plotted data, so the equation is the only tool; substitute and let the slope do the work."
+}

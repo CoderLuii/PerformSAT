@@ -153,11 +153,16 @@ function buildAdaptiveLine(delta, currentAccuracy, baselineAccuracy) {
  * @param {object|null} [args.overlay]       adaptiveOverlay from reprioritizePlan
  * @returns {Array} annotated weaknesses, re-ordered
  */
-export function annotateFocusAreas({ weaknesses, skillProgress, practiceTestResults, overlay } = {}) {
+export function annotateFocusAreas({ weaknesses, skillProgress, practiceTestResults, overlay, sinceMs = null } = {}) {
   const list = Array.isArray(weaknesses) ? weaknesses : [];
   if (list.length === 0) return [];
 
-  const lastTestMs = getLastTestMs(practiceTestResults);
+  // Drill signal = practice done since the LAST MEASUREMENT. practiceTestResults
+  // alone missed the mini-diagnostic, whose skillProgress seeding then read as
+  // "drill evidence" and fabricated day-one session progress on a brand-new
+  // plan (founder-flagged). Callers pass the plan's generatedAt as sinceMs —
+  // anything at/before the plan's birth is measurement-seeded, not drilling.
+  const lastTestMs = Math.max(getLastTestMs(practiceTestResults) ?? 0, sinceMs ?? 0) || null;
   const overlayBySkill = {};
   if (overlay && Array.isArray(overlay.focusSkills)) {
     overlay.focusSkills.forEach(s => {

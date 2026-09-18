@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-283",
+ "question": "A seed drill sets its row width $x$, in centimeters, so that $\\dfrac{x+k}{x-2}=3$ for some constant $k$, and $x=5$ is the one width that works. What is the value of $k$?",
+ "correctAnswer": "4",
+ "explanation": "**SAT Pattern: Rational Equation with Extraneous Solution**\n\n**The correct answer is $4$.**\n\n**The Fast Way (~25s):** At $x=5$ the model reads $\\frac{5+k}{3}=3$, so $5+k=9$ and $k=4$.\n\n**The Full Solution:**\n\nStep 1: Substitute the given width: $\\frac{5+k}{5-2}=3$, and the denominator is $3$.\n\nStep 2: Multiply both sides by $3$: $5+k=9$.\n\nStep 3: Solve: $k=4$. Check: with $k=4$ the model is $\\frac{x+4}{x-2}=3$, which gives $x+4=3x-6$ and $x=5$, the stated width.\n\n**Common Mistakes:**\n\n* Multiplying by $x$ instead of $x-2$ gives $5+k=15$ and the wrong value $k=10$.\n* Failing to distribute the $3$, using $3x-2=13$, gives $k=8$.\n\n**Test Day Takeaway:** A stated solution turns a rational equation into arithmetic; substitute before you clear anything."
+}

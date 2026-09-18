@@ -1,31 +1,31 @@
 {
-  "id": 728,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "In a forest, the fine threads of mycorrhizal fungi link the roots of many trees into a shared underground web. Experiments using labeled carbon have shown that sugars made by one tree can turn up in the roots of a neighbor, evidence that the fungal network does not simply store nutrients in one place but actively ______ them among the trees it connects, at times moving resources toward seedlings shaded on the forest floor.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "withholds"
-    },
-    {
-      "id": "B",
-      "text": "redistributes"
-    },
-    {
-      "id": "C",
-      "text": "produces"
-    },
-    {
-      "id": "D",
-      "text": "catalogs"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage stresses that the network does not merely store nutrients but moves them \"among\" many trees and \"toward\" shaded seedlings, so \"redistributes\" — spreading resources from place to place — is precise. \"Withholds\" is the opposite of moving resources, \"produces\" wrongly makes the fungi the source of the carbon when the trees make it, and \"catalogs\" suggests recording rather than transferring."
+ "id": 728,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "At low tide, licensed searchers called mudlarks comb the exposed foreshore of the River Thames for objects that centuries of river traffic have left behind. The finds that most interest archaeologists are rarely the ______ ones. A worn shoe sole, a clay pipe stem, or a bent brass pin can document everyday habits — how ordinary people dressed, smoked, and sewed — that showier treasures reveal almost nothing about.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "identifiable"
+  },
+  {
+   "id": "B",
+   "text": "spectacular"
+  },
+  {
+   "id": "C",
+   "text": "ancient"
+  },
+  {
+   "id": "D",
+   "text": "genuine"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The contrast pits humble objects — a worn sole, a pipe stem, a bent pin — against \"showier treasures,\" so the finds archaeologists prize are rarely the \"spectacular\" ones.\n\n**The Full Solution:**\n- The sentence after the blank supplies the clue by example: the valued finds are modest, everyday items.\n- The closing phrase names their foil directly — \"showier treasures\" that reveal little about ordinary life.\n- The blank must therefore mean showy or dazzling, and \"spectacular\" is that word.\n\n**Why the other choices are wrong:**\n- A: \"Identifiable\" fails against the examples themselves — the shoe sole, pipe stem, and pin are all readily identified, so the passage cannot mean the prized finds resist recognition.\n- C: \"Ancient\" is about age, but nothing opposes old finds to recent ones; pipe stems and pins span many eras.\n- D: \"Genuine\" would imply the interesting finds are fakes, which the passage never suggests."
 }

@@ -1,4 +1,4 @@
-import { pickSurvivingArtifactId, isOrphanArtifact } from '../studyPlanReset';
+import { pickSurvivingArtifactId, isOrphanArtifact, isDiagnosticSourceTestId } from '../studyPlanReset';
 
 describe('pickSurvivingArtifactId', () => {
   // history is newest-first (getStudyPlanHistory order)
@@ -22,6 +22,17 @@ describe('pickSurvivingArtifactId', () => {
 
   test('falls back to the mini-diagnostic artifact when no full tests survive', () => {
     expect(pickSurvivingArtifactId(history, {})).toBe('art-mini');
+  });
+
+  test('falls back to the v2 diagnostic artifact (sourceTestId "mini-diagnostic-v1") when no full tests survive', () => {
+    // finishMiniDiagnostic stamps MINI_DIAGNOSTIC_TEST_ID, not null. Resetting
+    // the only practice test must land on this plan, not on null (which put a
+    // measured student back on the first-run "take your diagnostic" home).
+    const v2History = [
+      { id: 'art-test1', sourceTestId: 'practice-test-1' },
+      { id: 'art-diag', sourceTestId: 'mini-diagnostic-v1' },
+    ];
+    expect(pickSurvivingArtifactId(v2History, {})).toBe('art-diag');
   });
 
   test('returns null when nothing survives (no mini-diagnostic, no tests)', () => {
@@ -49,10 +60,31 @@ describe('isOrphanArtifact', () => {
     expect(isOrphanArtifact(art, { 'practice-test-1': {} })).toBe(false);
   });
 
+  test('false for the v2 diagnostic artifact (sourceTestId "mini-diagnostic-v1")', () => {
+    expect(isOrphanArtifact({ linkage: { sourceTestId: 'mini-diagnostic-v1' } }, {})).toBe(false);
+  });
+
   test('false for a mini-diagnostic artifact (no source test)', () => {
     expect(isOrphanArtifact({ linkage: { sourceTestId: null } }, {})).toBe(false);
     expect(isOrphanArtifact({ linkage: {} }, {})).toBe(false);
     expect(isOrphanArtifact({}, {})).toBe(false);
     expect(isOrphanArtifact(null, {})).toBe(false);
+  });
+});
+
+describe('isDiagnosticSourceTestId', () => {
+  test('null / undefined (v1 onboarding plans) count as diagnostic', () => {
+    expect(isDiagnosticSourceTestId(null)).toBe(true);
+    expect(isDiagnosticSourceTestId(undefined)).toBe(true);
+  });
+
+  test('the v2 diagnostic id and any future mini-diagnostic-* id count', () => {
+    expect(isDiagnosticSourceTestId('mini-diagnostic-v1')).toBe(true);
+    expect(isDiagnosticSourceTestId('mini-diagnostic-v2')).toBe(true);
+  });
+
+  test('catalog practice tests do not', () => {
+    expect(isDiagnosticSourceTestId('practice-test-1')).toBe(false);
+    expect(isDiagnosticSourceTestId('')).toBe(false);
   });
 });

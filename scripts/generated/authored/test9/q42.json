@@ -6,29 +6,14 @@
   "domain": "information-and-ideas",
   "skill": "inferences",
   "module": 2,
-  "passage": "In experiments on saving, behavioral economists distinguish what people choose for the distant future from what they choose for the present. Offered a plan that would raise their savings rate starting with a paycheck several months away, many workers agree readily. Offered an otherwise identical plan that would raise their savings rate beginning with their very next paycheck, far fewer accept, even when the long-run effect on their finances is the same. Researchers attribute the gap to a bias toward immediate reward: the cost of saving feels heavier when it falls on present income than when it is scheduled for a self that still seems distant. From this pattern, it follows that ______",
+  "passage": "Ogham inscriptions and the Latin memorial stones of early medieval Ireland and Britain differ in more than script. Latin stones often carry formulas — \"here lies\" — that address a reader standing at a grave, and some add phrases about the dead person's faith or office. Ogham stones typically record only a name and the name of a father or wider kin group, in a possessive form: \"of Dalagnos, son of Dallos.\" And many ogham stones stand not in cemeteries but on hillsides and at the edges of townlands mentioned in early property records. Some scholars therefore argue that, compared with the Latin memorials, ogham stones ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "workers judge a savings plan solely by its long-run financial effect and are indifferent to whether the first reduction in pay arrives now or several months from now."
-    },
-    {
-      "id": "B",
-      "text": "the only way to raise a worker's savings rate is to require the increase to begin with the very next paycheck."
-    },
-    {
-      "id": "C",
-      "text": "workers who accept a delayed savings plan will always save more over their lifetimes than workers who decline one."
-    },
-    {
-      "id": "D",
-      "text": "plans that postpone the first increase in saving to a future date are likely to win more agreement than plans that cut take-home pay right away."
-    }
+    { "id": "A", "text": "were carved by rural artisans who had little or no contact with the users and conventions of the Latin alphabet." },
+    { "id": "B", "text": "preserved fuller and more personal accounts of the people they commemorated." },
+    { "id": "C", "text": "were intended to be read aloud during burial ceremonies at gravesides." },
+    { "id": "D", "text": "may have served less as gravestones than as durable markers of a kin group's claim to land." }
   ],
   "correctAnswer": "D",
-  "explanation": "The pattern is that workers accept a savings increase scheduled for the future but balk when it starts immediately, because a present cost feels heavier. It follows that plans delaying the first increase will win more agreement than plans that cut take-home pay now—choice D. Choice A denies the timing effect the passage documents, B wrongly insists the increase must start at once, and C overgeneralizes to lifetime savings.",
-  "_meta": {
-    "anchor": "present bias in savings choices"
-  }
+  "explanation": "**Choice D is correct.** Both premises push the same comparative conclusion: the inscriptions assert possession (\"of Dalagnos\") rather than address mourners, and the stones stand at townland edges rather than in cemeteries. A possessive formula on a boundary is the language of claim, not of burial — which is just what D infers, at the properly cautious strength of \"may have served.\"\n\n**The Full Solution:**\n- The Latin stones supply the contrast case: graveside address, personal detail, cemetery setting — the equipment of memorial.\n- The ogham stones lack each element and add one the Latin stones lack: placement at recorded property boundaries.\n- The inference that fits is functional: identity plus kin plus boundary equals a claim to land, as D concludes.\n\n**Why the other choices are wrong:**\n- A: The script difference is the text's starting point, not evidence about who the carvers knew.\n- B: It runs backward — the ogham texts are the sparser ones, recording names alone.\n- C: Reading aloud at gravesides fits the Latin stones' addressed formulas; the ogham stones often stand nowhere near a grave."
 }

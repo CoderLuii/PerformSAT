@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-415",
+  "question": "A nursery's seedling count this spring is $115\\%$ of last spring's count of $240$ seedlings. How many seedlings does the nursery have this spring?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$36$"
+    },
+    {
+      "id": "B",
+      "text": "$204$"
+    },
+    {
+      "id": "C",
+      "text": "$255$"
+    },
+    {
+      "id": "D",
+      "text": "$276$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "computes only $15\\%$ of $240$, the increase, rather than the new count",
+    "B": "computes $85\\%$ of $240$, treating the change as a decrease",
+    "C": "adds $15$ to $240$ instead of adding $15\\%$ of $240$"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** $115\\%$ of $240$ is $1.15(240) = 276$ seedlings.\n\n**The Full Solution:**\nStep 1: A percent greater than $100$ converts to a decimal greater than $1$: $115\\% = 1.15$.\nStep 2: Multiply by the whole: $1.15(240)$.\nStep 3: $1.15(240) = 276$ seedlings. Check: $240 + 0.15(240) = 240 + 36 = 276$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($36$): computes only $15\\%$ of $240$, the increase, rather than the new count\n* Choice B ($204$): computes $85\\%$ of $240$, treating the change as a decrease\n* Choice C ($255$): adds $15$ to $240$ instead of adding $15\\%$ of $240$\n\n**Test Day Takeaway:** A percent over $100$ produces a result larger than the original; the increase alone is the percent above $100$, not the answer."
+}

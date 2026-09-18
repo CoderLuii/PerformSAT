@@ -1,34 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "As a result,"
-    },
-    {
-      "id": "B",
-      "text": "Likewise,"
-    },
-    {
-      "id": "C",
-      "text": "For example,"
-    },
-    {
-      "id": "D",
-      "text": "However,"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The first sentence states a long-standing assumption that everyone needs about eight hours; the second reports evidence that some people thrive on far less, which runs counter to that assumption. \"However\" marks exactly that reversal of expectation. \"As a result\" would make the finding a consequence of the assumption, \"Likewise\" would make it a parallel agreement, and \"For example\" would make it an illustration of the rule—none of which matches a sentence that cuts against the rule.",
-  "passage": "For years, sleep advice rested on the assumption that nearly everyone needs roughly eight hours a night and that consistently sleeping much less must harm a person's health. ______ studies of a small number of families have identified a rare genetic variant whose carriers feel fully rested after about six hours and show none of the health costs that short sleep usually predicts, suggesting that the eight-hour rule does not apply uniformly to everyone.",
-  "_meta": {
-    "anchor": "epidemiology of sleep: short-sleep genetic variant (generic)"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "As a result,"
   },
-  "id": 1123,
-  "module": 1
+  {
+   "id": "B",
+   "text": "In other words,"
+  },
+  {
+   "id": "C",
+   "text": "For example,"
+  },
+  {
+   "id": "D",
+   "text": "However,"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The first sentence carries the growers' like-for-like claim; the second reports independent tests finding the material \"falls short of leather in tensile strength.\" The second sentence pushes against the first, so a contrast transition — \"However,\" — is needed.\n\n**The Full Solution:**\n- Sentence 1: growers describe mycelium sheets as a like-for-like replacement, and the sheets do handle like hide in the workshop.\n- Sentence 2: testing reveals a shortfall in strength — a complication for the like-for-like claim.\n- Moving from a favorable claim to evidence that undercuts it is a contrastive move; \"However,\" signals it precisely.\n\n**Why the other choices are wrong:**\n- A: \"As a result\" would make the strength shortfall a consequence of the growers' marketing, a causal link the text does not draw.\n- B: \"In other words\" promises a restatement, but the test findings say something new — and opposed — rather than rephrasing the claim.\n- C: \"For example\" would offer the tests as an illustration of the like-for-like claim, when they in fact challenge it.",
+ "passage": "Growers of mycelium-based materials often describe their product as a like-for-like replacement for animal hide, and the sheets can indeed be dyed and stitched with standard workshop equipment. ______ independent tests have found that many early mycelium materials fall short of leather in tensile strength, suggesting that matching hide's feel has proved easier than matching its toughness.",
+ "_meta": {
+  "anchor": "fungal leather alternatives — marketing claim vs. tensile-strength tests",
+  "transitionBucket": "transitions-contrast",
+  "distractors": {
+   "A": "false causation",
+   "B": "restatement where opposition is needed",
+   "C": "illustration where opposition is needed"
+  }
+ },
+ "id": 1123,
+ "module": 1
 }

@@ -1,0 +1,30 @@
+{
+ "id": 19,
+ "question": "A traffic engineer graphs two lane-flow constraints as the lines $6x - 4y = 14$ and $ax + 10y = b$, where $a$ and $b$ are constants. The two lines never meet. Which statement about $a$ and $b$ is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$a = -15$ and $b = -35$"
+  },
+  {
+   "id": "B",
+   "text": "$a = -15$ and $b \\neq -35$"
+  },
+  {
+   "id": "C",
+   "text": "$a = 15$ and $b \\neq -35$"
+  },
+  {
+   "id": "D",
+   "text": "$a = -15$, and $b$ can be any constant"
+  }
+ ],
+ "choiceOrderNote": "choices are statements about the constants, so no numeric ordering applies",
+ "distractorNotes": {
+  "A": "b = -35 makes the two equations the same line, which meets everywhere rather than never",
+  "C": "sets a/10 = 3/2 instead of -a/10 = 3/2, so a = 15; the intercept condition b != -35 is unchanged",
+  "D": "omits the b restriction, allowing b = -35, the one value that makes the lines coincide"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** Both lines in slope-intercept form: $y = \\frac{3}{2}x - \\frac{7}{2}$ and $y = -\\frac{a}{10}x + \\frac{b}{10}$. Never meeting means equal slopes but different intercepts, so $a = -15$ and $\\frac{b}{10} \\neq -\\frac{7}{2}$.\n\n**The Full Solution:**\nStep 1: Solve the first equation for $y$: $-4y = -6x + 14$, so $y = \\frac{3}{2}x - \\frac{7}{2}$.\nStep 2: Solve the second for $y$: $10y = -ax + b$, so $y = -\\frac{a}{10}x + \\frac{b}{10}$. Parallel lines need $-\\frac{a}{10} = \\frac{3}{2}$, which gives $a = -15$.\nStep 3: Lines that never meet must also be distinct, so the intercepts differ: $\\frac{b}{10} \\neq -\\frac{7}{2}$, that is, $b \\neq -35$. Check: with $a = -15$ and $b = 0$ the second line is $y = \\frac{3}{2}x$, parallel to the first and never touching it. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($a = -15$ and $b = -35$): this is the one forbidden value of $b$. It turns the second equation into a multiple of the first, so the lines coincide and share infinitely many points.\n* Choice C ($a = 15$ and $b \\neq -35$): this matches the slope with the wrong sign. In $ax + 10y = b$ the slope is $-\\frac{a}{10}$, so a positive slope of $\\frac{3}{2}$ forces $a$ to be negative.\n* Choice D ($a = -15$, and $b$ can be any constant): this gets the slope right but drops the second condition. \"No solution\" needs equal slopes *and* different intercepts.\n\n**Test Day Takeaway:** No solution is two conditions, not one: the slopes match and the intercepts do not. Whenever a choice omits the second half, it quietly allows the same-line case."
+}

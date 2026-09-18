@@ -1,0 +1,53 @@
+{
+  "question": "A machine shop's lathe loses $15\\%$ of its value during each year of ownership. The table gives the lathe's value, in dollars, at purchase and after each of the next three years. Which of the following functions $V$ models the lathe's value, in dollars, in terms of the number of years $t$ since purchase?",
+  "questionTable": {
+    "headers": [
+      "Years since purchase, $t$",
+      "Value (dollars)"
+    ],
+    "rows": [
+      [
+        "$0$",
+        "$24{,}000$"
+      ],
+      [
+        "$1$",
+        "$20{,}400$"
+      ],
+      [
+        "$2$",
+        "$17{,}340$"
+      ],
+      [
+        "$3$",
+        "$14{,}739$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$V(t)=24000(0.15)^{t}$"
+    },
+    {
+      "id": "B",
+      "text": "$V(t)=24000(0.85)^{t}$"
+    },
+    {
+      "id": "C",
+      "text": "$V(t)=24000(1.15)^{t}$"
+    },
+    {
+      "id": "D",
+      "text": "$V(t)=20400(0.85)^{t}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "used the loss rate 0.15 as the growth factor instead of 1 - 0.15",
+    "C": "used 1.15, which increases the value by 15% each year",
+    "D": "used the year-1 value 20,400 as the value at t = 0"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compound Depreciation Model**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Losing $15\\%$ keeps $85\\%$, and the value at $t=0$ is $\\$24{,}000$, so $V(t)=24000(0.85)^{t}$.\n\n**The Full Solution:**\nStep 1: The table confirms a constant ratio: $20{,}400/24{,}000=0.85$ and $17{,}340/20{,}400=0.85$.\nStep 2: An exponential decay model is $V(t)=V_{0}(1-r)^{t}$ with $V_{0}=24{,}000$ and $r=0.15$.\nStep 3: So $V(t)=24000(0.85)^{t}$. Check at $t=3$: $24000(0.85)^{3}=14{,}739$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($V(t)=24000(0.15)^{t}$): uses the loss rate as the growth factor, giving $\\$3{,}600$ after one year.\n* Choice C ($V(t)=24000(1.15)^{t}$): increases the value by $15\\%$ each year instead of decreasing it.\n* Choice D ($V(t)=20400(0.85)^{t}$): uses the year-$1$ value as the value at $t=0$.\n\n**Test Day Takeaway:** A percent decrease becomes the factor $1-r$; the initial amount is the value when $t=0$, not the first row after it.",
+  "id": "bank-am-049"
+}

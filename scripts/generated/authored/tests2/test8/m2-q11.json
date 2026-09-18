@@ -1,0 +1,54 @@
+{
+  "id": 11,
+  "question": "A reactant concentration $C$, in millimoles per liter, is recorded every $10$ minutes after a reaction begins, as shown in the table. Which of the following equations models $C$ in terms of the elapsed time $t$, in minutes?",
+  "questionTable": {
+    "headers": [
+      "$t$ (minutes)",
+      "$C$ (mmol/L)"
+    ],
+    "rows": [
+      [
+        "$0$",
+        "$250$"
+      ],
+      [
+        "$10$",
+        "$200$"
+      ],
+      [
+        "$20$",
+        "$160$"
+      ],
+      [
+        "$30$",
+        "$128$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$C = 250(0.2)^{t/10}$"
+    },
+    {
+      "id": "B",
+      "text": "$C = 250(0.8)^{t/10}$"
+    },
+    {
+      "id": "C",
+      "text": "$C = 250(0.8)^{t}$"
+    },
+    {
+      "id": "D",
+      "text": "$C = 250(1.8)^{t/10}$"
+    }
+  ],
+  "choiceOrderNote": "choices are expressions, ordered by base and then by exponent",
+  "distractorNotes": {
+    "A": "uses the 20% lost per interval as the base instead of the 0.8 that survives",
+    "C": "treats t in minutes as the number of 10-minute intervals, so it decays ten times too fast",
+    "D": "uses 1 + 0.8 as the base, turning the decay into growth"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Each $10$-minute row multiplies the previous concentration by $\\frac{200}{250} = 0.8$, and $t$ minutes contain $\\frac{t}{10}$ such intervals, so $C = 250(0.8)^{t/10}$.\n\n**The Full Solution:**\nStep 1: Check that the ratio between consecutive rows is constant: $\\frac{200}{250} = 0.8$, $\\frac{160}{200} = 0.8$, and $\\frac{128}{160} = 0.8$, so the data are exponential with a factor of $0.8$ per $10$ minutes.\nStep 2: The initial concentration at $t = 0$ is $250$ millimoles per liter, which is the coefficient in front of the base.\nStep 3: Because the factor $0.8$ applies once every $10$ minutes, the exponent counts intervals: $\\frac{t}{10}$. The model is $C = 250(0.8)^{t/10}$. Check the last row: $250(0.8)^{30/10} = 250(0.512) = 128$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($C = 250(0.2)^{t/10}$): uses the $20\\%$ that disappears as the base, predicting $50$ at $t = 10$ instead of $200$.\n* Choice C ($C = 250(0.8)^{t}$): applies the factor once per minute, so at $t = 10$ it predicts about $26.8$, far below the recorded $200$.\n* Choice D ($C = 250(1.8)^{t/10}$): adds the surviving fraction to $1$, giving growth when the table clearly falls.\n\n**Test Day Takeaway:** Read the growth factor from the ratio of consecutive rows, then divide $t$ by the spacing of those rows so the exponent counts intervals, not raw units."
+}

@@ -1,0 +1,29 @@
+{
+ "question": "A calibration line is $f(x) = kx - 7$ for a constant $k$, and the reading at $x = 4$ equals $13$. What is the reading at $x = 1$?",
+ "hint": "Find $k$ from the reading you are given before doing anything else.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-7$"
+  },
+  {
+   "id": "B",
+   "text": "$-2$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$13$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports f(0) = -7 instead of f(1)",
+  "C": "reports the constant k = 5 rather than a reading",
+  "D": "repeats the given reading 13"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** $4k - 7 = 13$ gives $k = 5$, so $f(1) = 5 - 7 = -2$.\n\n**The Full Solution:**\nStep 1: Substitute the known reading: $f(4) = 4k - 7 = 13$.\nStep 2: Solve for the constant: $4k = 20$, so $k = 5$.\nStep 3: Evaluate at the new input: $f(1) = 5(1) - 7 = -2$. Check: $f(4) = 5(4) - 7 = 13$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7$): evaluates at $x = 0$, which returns the constant term instead of $f(1)$.\n* Choice C ($5$): reports $k$, the slope, rather than a reading.\n* Choice D ($13$): repeats the reading that was given at $x = 4$.\n\n**Test Day Takeaway:** One known input-output pair pins down an unknown coefficient; only then can another input be evaluated."
+}

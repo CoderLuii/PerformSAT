@@ -1,31 +1,31 @@
 {
-  "id": 712,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "module": 1,
-  "passage": "Some persistent synthetic pesticides do not stay where they are applied. According to a long-standing hypothesis in ecology, such chemicals grow more concentrated as they move up a food web: each predator takes in the accumulated residues stored in all the prey it eats, so that animals at the top of the chain carry the heaviest burdens. Although the best-known of these compounds have been restricted in many countries, related chemicals remain in agricultural use, and a team of ecologists has set out to test whether this \"biomagnification\" still occurs in present-day farmland food webs.",
-  "question": "Which finding from the team's study, if true, would most directly support the hypothesis?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Hawks at the top of a farmland food web carried pesticide concentrations several times higher than those found in the songbirds and small mammals they prey on."
-    },
-    {
-      "id": "B",
-      "text": "Predatory fish living downstream from treated fields contained markedly lower pesticide concentrations in their tissues than did the smaller fish and aquatic invertebrates that made up most of their diet."
-    },
-    {
-      "id": "C",
-      "text": "Pesticide residues were detected in soil and water samples collected from agricultural watersheds on three different continents."
-    },
-    {
-      "id": "D",
-      "text": "A single population of eagles nesting beside a heavily sprayed orchard showed elevated residues in its unhatched eggs over a five-year period."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The hypothesis predicts that residues should increase from prey to predator, so the finding that top predators (hawks) carry several times the concentration of their prey is exactly the comparison that would support it. Choice B shows the opposite pattern — predators with less than their prey — which would undercut the hypothesis. Choice C documents that residues are present but says nothing about increasing up the chain, and Choice D shows residues in one top predator without the prey-to-predator comparison the claim turns on."
+ "id": 712,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "module": 1,
+ "passage": "Before magma reaches the surface, the gases dissolved in it begin to escape, and different gases leave at different depths: carbon dioxide comes out of solution while magma is still deep, sulfur dioxide only much nearer the surface. Volcanologists have proposed that a rising ratio of carbon dioxide to sulfur dioxide in a volcano's emissions can therefore serve as an early warning, since it signals fresh magma beginning to move up from depth. A monitoring team plans to evaluate the proposal using continuous gas-sensor records from several frequently active volcanoes.",
+ "question": "Which finding from the team's evaluation, if true, would most directly support the proposal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "At volcanoes that erupted during the study, the carbon dioxide-to-sulfur dioxide ratio climbed in the weeks before each eruption, while at volcanoes that stayed quiet it held roughly steady."
+  },
+  {
+   "id": "B",
+   "text": "The ratio rose sharply at several volcanoes during the study, but such rises occurred about as often in ordinary quiet months as they did in the weeks immediately leading up to an eruption."
+  },
+  {
+   "id": "C",
+   "text": "The gas sensors recorded sulfur dioxide reliably in all weather but often failed to register carbon dioxide during periods of heavy rain."
+  },
+  {
+   "id": "D",
+   "text": "Most eruptions during the study were preceded by swarms of small earthquakes beneath the volcano."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The proposal predicts a specific pairing — ratio climbs, then eruption follows — and A reports exactly that pattern, complete with the control the claim needs: quiet volcanoes whose ratio stayed flat.\n\n**The Full Solution:**\n- The proposal is that a rising carbon dioxide-to-sulfur dioxide ratio warns of an eruption because it marks fresh magma rising from depth.\n- Direct support requires the warning to fire before eruptions and not to fire when no eruption comes.\n- A supplies both halves: climbs preceded every eruption, and volcanoes that stayed quiet showed no climb.\n\n**Why the other choices are wrong:**\n- B: It breaks the warning's reliability — rises that occur just as often without an eruption would undercut the proposal, not support it.\n- C: It reports a measurement problem with the sensors, which bears on data quality rather than on whether the ratio predicts eruptions.\n- D: It supports a different early-warning signal entirely — earthquakes — and says nothing about gas ratios."
 }

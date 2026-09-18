@@ -37,34 +37,56 @@ export const CB_MATH_DOMAIN_LABELS = {
  *   - slug:   Stable kebab-case ID used in the runtime
  *   - label:  Student-facing display name (CB's own wording)
  *   - short:  Short label for narrow UI surfaces
+ *   - description: One neutral sentence on what the skill covers. Shown on the
+ *                  Practice Bank's topic cards, so it is written in the catalog's
+ *                  voice (what is in the box), never addressed to the student.
  */
 export const CB_MATH_SKILLS = [
   // Algebra (5)
-  { code: 'H.A.', domain: 'algebra',         slug: 'linear-equations-one-variable',        label: 'Linear equations in one variable',         short: 'Linear equations' },
-  { code: 'H.B.', domain: 'algebra',         slug: 'linear-functions',                     label: 'Linear functions',                          short: 'Linear functions' },
-  { code: 'H.C.', domain: 'algebra',         slug: 'linear-equations-two-variables',       label: 'Linear equations in two variables',         short: 'Lines in xy-plane' },
-  { code: 'H.D.', domain: 'algebra',         slug: 'linear-systems',                       label: 'Systems of two linear equations in two variables', short: 'Linear systems' },
-  { code: 'H.E.', domain: 'algebra',         slug: 'linear-inequalities',                  label: 'Linear inequalities in one or two variables', short: 'Linear inequalities' },
+  { code: 'H.A.', domain: 'algebra',         slug: 'linear-equations-one-variable',        label: 'Linear equations in one variable',         short: 'Linear equations',
+    description: 'Single-unknown equations, from setup to solution, including cases with no solution or infinitely many.' },
+  { code: 'H.B.', domain: 'algebra',         slug: 'linear-functions',                     label: 'Linear functions',                          short: 'Linear functions',
+    description: 'Slope, intercepts, and rate of change, with linear models read from tables, graphs, and word problems.' },
+  { code: 'H.C.', domain: 'algebra',         slug: 'linear-equations-two-variables',       label: 'Linear equations in two variables',         short: 'Lines in xy-plane',
+    description: 'Lines in the xy-plane: slope-intercept and standard form, parallel and perpendicular lines, and their graphs.' },
+  { code: 'H.D.', domain: 'algebra',         slug: 'linear-systems',                       label: 'Systems of two linear equations in two variables', short: 'Linear systems',
+    description: 'Two equations in two unknowns: substitution, elimination, and the conditions for one, no, or infinitely many solutions.' },
+  { code: 'H.E.', domain: 'algebra',         slug: 'linear-inequalities',                  label: 'Linear inequalities in one or two variables', short: 'Linear inequalities',
+    description: 'Inequalities in one or two variables, the regions their graphs shade, and constraints translated from context.' },
 
   // Advanced Math (3)
-  { code: 'P.A.', domain: 'advanced-math',   slug: 'equivalent-expressions',               label: 'Equivalent expressions',                    short: 'Equivalent expressions' },
-  { code: 'P.B.', domain: 'advanced-math',   slug: 'nonlinear-equations',                  label: 'Nonlinear equations & systems',             short: 'Nonlinear equations' },
-  { code: 'P.C.', domain: 'advanced-math',   slug: 'nonlinear-functions',                  label: 'Nonlinear functions',                       short: 'Nonlinear functions' },
+  { code: 'P.A.', domain: 'advanced-math',   slug: 'equivalent-expressions',               label: 'Equivalent expressions',                    short: 'Equivalent expressions',
+    description: 'Rewriting expressions: factoring, expanding, and combining rational and radical terms into an equivalent form.' },
+  { code: 'P.B.', domain: 'advanced-math',   slug: 'nonlinear-equations',                  label: 'Nonlinear equations & systems',             short: 'Nonlinear equations',
+    description: 'Quadratic, exponential, radical, and rational equations, and systems that pair a line with a curve.' },
+  { code: 'P.C.', domain: 'advanced-math',   slug: 'nonlinear-functions',                  label: 'Nonlinear functions',                       short: 'Nonlinear functions',
+    description: 'Quadratic and exponential functions: vertex and factored forms, growth and decay, and graph features such as intercepts and extrema.' },
 
   // Problem-Solving and Data Analysis (7)
-  { code: 'Q.A.', domain: 'problem-solving', slug: 'ratios-rates-proportions',             label: 'Ratios, rates, proportional relationships, and units', short: 'Ratios & rates' },
-  { code: 'Q.B.', domain: 'problem-solving', slug: 'percentages',                          label: 'Percentages',                               short: 'Percentages' },
-  { code: 'Q.C.', domain: 'problem-solving', slug: 'one-variable-data',                    label: 'One-variable data: distributions and measures of center and spread', short: 'One-variable data' },
-  { code: 'Q.D.', domain: 'problem-solving', slug: 'two-variable-data',                    label: 'Two-variable data: models and scatterplots', short: 'Scatterplots' },
-  { code: 'Q.E.', domain: 'problem-solving', slug: 'probability',                          label: 'Probability and conditional probability',   short: 'Probability' },
-  { code: 'Q.F.', domain: 'problem-solving', slug: 'inference-margin-of-error',            label: 'Inference from sample statistics and margin of error', short: 'Margin of error' },
-  { code: 'Q.G.', domain: 'problem-solving', slug: 'statistical-claims',                   label: 'Evaluating statistical claims: observational studies and experiments', short: 'Statistical claims' },
+  { code: 'Q.A.', domain: 'problem-solving', slug: 'ratios-rates-proportions',             label: 'Ratios, rates, proportional relationships, and units', short: 'Ratios & rates',
+    description: 'Ratios, unit rates, proportional reasoning, and unit conversions, including density and scale.' },
+  { code: 'Q.B.', domain: 'problem-solving', slug: 'percentages',                          label: 'Percentages',                               short: 'Percentages',
+    description: 'Percent of a quantity, percent change, and repeated percent change, from prices to populations.' },
+  { code: 'Q.C.', domain: 'problem-solving', slug: 'one-variable-data',                    label: 'One-variable data: distributions and measures of center and spread', short: 'One-variable data',
+    description: 'Mean, median, range, and standard deviation, read from lists, dot plots, and histograms, and how an outlier moves each.' },
+  { code: 'Q.D.', domain: 'problem-solving', slug: 'two-variable-data',                    label: 'Two-variable data: models and scatterplots', short: 'Scatterplots',
+    description: 'Scatterplots and lines of best fit, with linear and exponential models and the meaning of their slopes and intercepts.' },
+  { code: 'Q.E.', domain: 'problem-solving', slug: 'probability',                          label: 'Probability and conditional probability',   short: 'Probability',
+    description: 'Probability from two-way tables and counts, including conditional probability.' },
+  { code: 'Q.F.', domain: 'problem-solving', slug: 'inference-margin-of-error',            label: 'Inference from sample statistics and margin of error', short: 'Margin of error',
+    description: 'What a sample statistic says about a population, and how margin of error and sample size limit the claim.' },
+  { code: 'Q.G.', domain: 'problem-solving', slug: 'statistical-claims',                   label: 'Evaluating statistical claims: observational studies and experiments', short: 'Statistical claims',
+    description: 'Random sampling versus random assignment, and which conclusions an observational study or an experiment can support.' },
 
   // Geometry and Trigonometry (4)
-  { code: 'S.A.', domain: 'geometry',        slug: 'area-and-volume',                      label: 'Area and volume',                           short: 'Area & volume' },
-  { code: 'S.B.', domain: 'geometry',        slug: 'lines-angles-triangles',               label: 'Lines, angles, and triangles',              short: 'Lines & angles' },
-  { code: 'S.C.', domain: 'geometry',        slug: 'right-triangles-trig',                 label: 'Right triangles and trigonometry',          short: 'Right triangles' },
-  { code: 'S.D.', domain: 'geometry',        slug: 'circles',                              label: 'Circles',                                   short: 'Circles' },
+  { code: 'S.A.', domain: 'geometry',        slug: 'area-and-volume',                      label: 'Area and volume',                           short: 'Area & volume',
+    description: 'Area of plane figures and volume of solids, including composite shapes and the effect of scaling a dimension.' },
+  { code: 'S.B.', domain: 'geometry',        slug: 'lines-angles-triangles',               label: 'Lines, angles, and triangles',              short: 'Lines & angles',
+    description: 'Angle relationships with parallel lines, triangle congruence and similarity, and angle sums in polygons.' },
+  { code: 'S.C.', domain: 'geometry',        slug: 'right-triangles-trig',                 label: 'Right triangles and trigonometry',          short: 'Right triangles',
+    description: 'The Pythagorean theorem, special right triangles, and the sine, cosine, and tangent of an acute angle.' },
+  { code: 'S.D.', domain: 'geometry',        slug: 'circles',                              label: 'Circles',                                   short: 'Circles',
+    description: 'Equations of circles in the xy-plane, arc length, sector area, and angles measured in radians.' },
 ];
 
 // ── R&W: 11 skills across 4 domains ──────────────────────────────────────────
@@ -76,18 +98,46 @@ export const CB_RW_DOMAIN_LABELS = {
   'expression-of-ideas':           'Expression of Ideas',
 };
 
+// ── Domain descriptions ──────────────────────────────────────────────────────
+// One neutral sentence per domain for the Practice Bank's domain pane: what the
+// domain covers, then its share of the section. Question ranges are the College
+// Board Digital SAT specifications per content domain (Math = 44 questions,
+// Reading and Writing = 54). Catalog voice, never addressed to the student.
+
+export const CB_DOMAIN_DESCRIPTIONS = {
+  algebra: 'Linear equations, inequalities, functions, and systems. 13 to 15 of the 44 questions on the Math section.',
+  'advanced-math': 'Equivalent expressions and nonlinear equations and functions. 13 to 15 of the 44 questions on the Math section.',
+  'problem-solving': 'Ratios, percentages, data, probability, and statistical reasoning. 5 to 7 of the 44 questions on the Math section.',
+  geometry: 'Area and volume, lines and angles, right triangles, and circles. 5 to 7 of the 44 questions on the Math section.',
+  'information-and-ideas': 'Central ideas, inferences, and command of evidence. 12 to 14 of the 54 questions on the Reading and Writing section.',
+  'craft-and-structure': 'Words in context, text structure and purpose, and cross-text connections. 13 to 15 of the 54 questions on the Reading and Writing section.',
+  'standard-english-conventions': 'Sentence boundaries and the form, structure, and sense of a sentence. 11 to 15 of the 54 questions on the Reading and Writing section.',
+  'expression-of-ideas': 'Transitions and rhetorical synthesis. 8 to 12 of the 54 questions on the Reading and Writing section.',
+};
+
 export const CB_RW_SKILLS = [
-  { slug: 'central-ideas-and-details',        domain: 'information-and-ideas',         label: 'Central Ideas and Details' },
-  { slug: 'inferences',                       domain: 'information-and-ideas',         label: 'Inferences' },
-  { slug: 'command-of-evidence-textual',      domain: 'information-and-ideas',         label: 'Command of Evidence (Textual)' },
-  { slug: 'command-of-evidence-quantitative', domain: 'information-and-ideas',         label: 'Command of Evidence (Quantitative)' },
-  { slug: 'words-in-context',                 domain: 'craft-and-structure',           label: 'Words in Context' },
-  { slug: 'text-structure-and-purpose',       domain: 'craft-and-structure',           label: 'Text Structure and Purpose' },
-  { slug: 'cross-text-connections',           domain: 'craft-and-structure',           label: 'Cross-Text Connections' },
-  { slug: 'boundaries',                       domain: 'standard-english-conventions',  label: 'Boundaries' },
-  { slug: 'form-structure-and-sense',         domain: 'standard-english-conventions',  label: 'Form, Structure, and Sense' },
-  { slug: 'transitions',                      domain: 'expression-of-ideas',           label: 'Transitions' },
-  { slug: 'rhetorical-synthesis',             domain: 'expression-of-ideas',           label: 'Rhetorical Synthesis' },
+  { slug: 'central-ideas-and-details',        domain: 'information-and-ideas',         label: 'Central Ideas and Details',
+    description: 'The main idea of a passage and the details that state or support it.' },
+  { slug: 'inferences',                       domain: 'information-and-ideas',         label: 'Inferences',
+    description: 'The conclusion a passage supports without stating, chosen to complete its reasoning.' },
+  { slug: 'command-of-evidence-textual',      domain: 'information-and-ideas',         label: 'Command of Evidence (Textual)',
+    description: 'The quotation or finding that best supports, illustrates, or weakens a stated claim.' },
+  { slug: 'command-of-evidence-quantitative', domain: 'information-and-ideas',         label: 'Command of Evidence (Quantitative)',
+    description: 'Reading a table or graph to complete a claim with the data that fits it.' },
+  { slug: 'words-in-context',                 domain: 'craft-and-structure',           label: 'Words in Context',
+    description: 'The most precise word for a blank, and the meaning of a word as the passage uses it.' },
+  { slug: 'text-structure-and-purpose',       domain: 'craft-and-structure',           label: 'Text Structure and Purpose',
+    description: 'The overall purpose of a passage and the function of one sentence within it.' },
+  { slug: 'cross-text-connections',           domain: 'craft-and-structure',           label: 'Cross-Text Connections',
+    description: 'How two authors writing on one subject agree, differ, or respond to each other.' },
+  { slug: 'boundaries',                       domain: 'standard-english-conventions',  label: 'Boundaries',
+    description: 'Punctuation between and within sentences: periods, semicolons, commas, colons, and dashes.' },
+  { slug: 'form-structure-and-sense',         domain: 'standard-english-conventions',  label: 'Form, Structure, and Sense',
+    description: 'Subject-verb agreement, verb tense, pronouns, modifiers, and parallel structure.' },
+  { slug: 'transitions',                      domain: 'expression-of-ideas',           label: 'Transitions',
+    description: 'The word or phrase that links two sentences by the logical relationship between them.' },
+  { slug: 'rhetorical-synthesis',             domain: 'expression-of-ideas',           label: 'Rhetorical Synthesis',
+    description: 'Combining a set of notes into one sentence that meets a stated rhetorical goal.' },
 ];
 
 // ── Pattern → CB Skill mapping ───────────────────────────────────────────────
@@ -289,7 +339,6 @@ export const PATTERN_TO_CB_SKILL = {
 // ── Lookup helpers ───────────────────────────────────────────────────────────
 
 const CB_MATH_BY_SLUG = new Map(CB_MATH_SKILLS.map(s => [s.slug, s]));
-const CB_RW_BY_SLUG = new Map(CB_RW_SKILLS.map(s => [s.slug, s]));
 
 /**
  * Returns the CB math skill object for a given pattern slug, or null.
@@ -301,6 +350,23 @@ export function getCBSkillForPattern(patternSlug) {
   const skillSlug = PATTERN_TO_CB_SKILL[patternSlug];
   if (!skillSlug) return null;
   return CB_MATH_BY_SLUG.get(skillSlug) || null;
+}
+
+// Canonical display label for ANY CB skill slug, both sections — the official
+// College Board names, punctuation included ("Form, Structure, and Sense").
+// Naive kebab-case de-slugging loses that punctuation, so every UI surface
+// that has only a slug should resolve it here first.
+const CB_LABEL_BY_SLUG = new Map(
+  [...CB_MATH_SKILLS, ...CB_RW_SKILLS].map((s) => [s.slug, s.label])
+);
+
+/**
+ * getCBSkillLabel — canonical display name for a CB skill slug (math or R&W).
+ * @param {string} slug  e.g. 'form-structure-and-sense'
+ * @returns {string|null} 'Form, Structure, and Sense' — null when unknown.
+ */
+export function getCBSkillLabel(slug) {
+  return CB_LABEL_BY_SLUG.get(slug) || null;
 }
 
 /**

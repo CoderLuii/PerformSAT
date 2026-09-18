@@ -1,0 +1,42 @@
+{
+  "id": 16,
+  "question": "The table shows the number of items returned late to a library on each of $7$ days. By how much does the mean of the $7$ values decrease when the value $40$ is removed from the data set?",
+  "questionTable": {
+    "headers": [
+      "Day",
+      "Items returned late"
+    ],
+    "rows": [
+      [
+        "1",
+        "$6$"
+      ],
+      [
+        "2",
+        "$2$"
+      ],
+      [
+        "3",
+        "$40$"
+      ],
+      [
+        "4",
+        "$5$"
+      ],
+      [
+        "5",
+        "$7$"
+      ],
+      [
+        "6",
+        "$4$"
+      ],
+      [
+        "7",
+        "$6$"
+      ]
+    ]
+  },
+  "correctAnswer": "5",
+  "explanation": "**SAT Pattern: Outlier Effect**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~30s):** The seven values total $70$, so the mean is $10$; dropping the $40$ leaves $30$ over $6$ days, a mean of $5$, a decrease of $5$.\n\n**The Full Solution:**\nStep 1: Add all seven values: $6+2+40+5+7+4+6=70$, so the mean of the full set is $\\dfrac{70}{7}=10$.\nStep 2: Remove the $40$. The remaining six values total $70-40=30$, so their mean is $\\dfrac{30}{6}=5$.\nStep 3: The mean falls from $10$ to $5$, a decrease of $10-5=5$. Check: every remaining value lies between $2$ and $7$, so a mean of $5$ is reasonable and a mean of $10$ was being propped up entirely by the outlier ✓\n\n**Common Mistakes:**\n* $4$: reports the gap between the original mean and the original median, $10-6=4$, rather than the change in the mean.\n* $0.5$: reports the change in the MEDIAN, which moves only from $6$ to $5.5$ — exactly the point that the median resists outliers.\n* $5.71$: divides the outlier by the original count, $\\dfrac{40}{7}$, instead of recomputing the mean from the remaining values.\n\n**Test Day Takeaway:** Removing a value changes both the sum and the count — recompute the mean from the new sum over the new count rather than adjusting the old mean."
+}

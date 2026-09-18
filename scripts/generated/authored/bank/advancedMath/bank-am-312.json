@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-312",
+  "question": "A firework is launched from the ground, and its height above the ground, in feet, $t$ seconds after launch is $h(t) = -16t^2 + 128t$. The firework is designed to explode while it is at least $240$ feet above the ground. What is the greatest whole number of seconds after launch at which it can explode?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$5$"
+    },
+    {
+      "id": "D",
+      "text": "$8$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the first time the height reaches 240",
+    "B": "reports the time of maximum height",
+    "D": "reports the time the firework returns to the ground"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** $-16t^2 + 128t \\ge 240$ divides to $t^2 - 8t + 15 \\le 0$, or $(t - 3)(t - 5) \\le 0$, so $3 \\le t \\le 5$ and the greatest whole second is $5$.\n\n**The Full Solution:**\nStep 1: The condition is $-16t^2 + 128t \\ge 240$. Dividing by $-16$ reverses the inequality: $t^2 - 8t \\le -15$, or $t^2 - 8t + 15 \\le 0$.\nStep 2: $t^2 - 8t + 15 = (t - 3)(t - 5)$, so the height is at least $240$ feet exactly when $3 \\le t \\le 5$.\nStep 3: The greatest whole number of seconds in that window is $5$. Check: $h(5) = -400 + 640 = 240$, exactly at the limit, and $h(6) = -576 + 768 = 192$, which is too low. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reports the first time the firework reaches $240$ feet rather than the last.\n* Choice B ($4$): reports the time of maximum height, $t = \\dfrac{-128}{2(-16)} = 4$.\n* Choice D ($8$): reports the time the firework returns to the ground, where $h(t) = 0$.\n\n**Test Day Takeaway:** \"At least\" includes the boundary — solve for the whole interval, then read off the end the question asks for."
+}

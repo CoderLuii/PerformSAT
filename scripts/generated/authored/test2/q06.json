@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 1,
-  "passage": "The vivid blues that saturate many nineteenth-century Japanese woodblock prints were not, as is sometimes assumed, a traditional Japanese pigment. They came from Prussian blue, a synthetic dye first compounded in early-eighteenth-century Europe and imported into Japan through limited trade channels decades later. Because the new pigment was colorfast and far cheaper than the fading plant-based blues printmakers had relied on, publishers took it up rapidly in the 1830s, and landscape series built around expansive blue skies and seas became newly possible. The celebrated wave prints of the period, in other words, owe their distinctive palette to a chemistry that originated an ocean away.",
+  "passage": "Active noise-canceling headphones do not so much muffle sound as fight it. A tiny microphone on each earcup samples incoming noise, and a processor instantly generates a second sound wave that is the mirror image of the first, its peaks aligned with the noise's troughs. When the two waves meet at the ear, they largely cancel each other out. The trick works best on steady, predictable sounds — which is why the drone of a jet engine fades to a whisper while the sudden bursts of a nearby conversation often slip through.",
   "question": "Which choice best states the main purpose of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "To argue that Japanese printmakers of the 1830s preferred plant-based blue pigments to the newly available Prussian blue."
+      "text": "To trace the development of a popular consumer technology from an early laboratory prototype to the polished device that travelers now carry onto airplanes"
     },
     {
       "id": "B",
-      "text": "To describe the chemical process by which Prussian blue was first compounded in eighteenth-century Europe."
+      "text": "To recommend a particular type of headphones to listeners who are frequently bothered by loud environments"
     },
     {
       "id": "C",
-      "text": "To compare the landscape prints of the 1830s with the portrait prints that had preceded them in Japan."
+      "text": "To compare the loudness of jet engines with the loudness of nearby conversations"
     },
     {
       "id": "D",
-      "text": "To trace how an imported synthetic pigment reshaped the palette and subject matter of nineteenth-century Japanese woodblock prints."
+      "text": "To explain the principle by which a technology cancels some sounds more effectively than others"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage explains that Prussian blue, a European synthetic dye, reached Japan and—because it was colorfast and cheap—was adopted rapidly in the 1830s, making new kinds of blue-dominated landscape prints possible. Its purpose is to trace that influence on the prints' color and subject matter. Choice A reverses the passage, which says publishers took up Prussian blue rather than preferring the older plant-based blues. Choice B is too narrow: the passage mentions where the pigment was first compounded but does not describe the chemical process. Choice C names a comparison the passage never makes; it does not set the landscape prints against earlier portrait prints."
+  "explanation": "**Choice D is correct.** The text lays out how active noise canceling works — a mirror-image wave meets the noise and cancels it — and then uses that principle to explain why steady sounds fade while sudden ones get through.\n\n**The Full Solution:**\n- The first three sentences describe the mechanism step by step: microphone samples the noise, processor generates an inverted wave, the two waves cancel at the ear.\n- The final sentence draws the consequence of that mechanism — it \"works best on steady, predictable sounds\" — and illustrates it with the jet engine and the conversation.\n- Explaining a mechanism and its characteristic limitation is precisely the purpose choice D states.\n\n**Why the other choices are wrong:**\n- A: The text contains no history — no prototype, no development, no account of how the device reached consumers.\n- B: Nothing in the text recommends anything; it describes how the technology works without urging anyone to buy it.\n- C: The jet engine and the conversation appear only as an illustration of the mechanism's limits, not as the subjects of a loudness comparison."
 }

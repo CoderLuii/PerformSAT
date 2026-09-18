@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "question": "An empty tank with a capacity of $4.5$ cubic feet is filled at a constant rate of $216$ cubic inches per second. Given that $1$ foot is equal to $12$ inches, how many seconds does it take to fill the tank?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.25$"
+    },
+    {
+      "id": "B",
+      "text": "$3$"
+    },
+    {
+      "id": "C",
+      "text": "$36$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}679{,}616$"
+    }
+  ],
+  "correctAnswer": "C",
+  "hint": "The capacity and the rate are stated in different cubic units; make them agree before you divide.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~40s):** A cubic foot is $12^{3}=1{,}728$ cubic inches, so the tank holds $4.5(1{,}728)=7{,}776$ cubic inches, and $\\frac{7{,}776}{216}=36$ seconds — choice C.\n\n**The Full Solution:**\nStep 1: A cubic foot is a $12$-inch cube, so it contains $12^{3}=1{,}728$ cubic inches.\nStep 2: Convert the capacity: $4.5(1{,}728)=7{,}776$ cubic inches.\nStep 3: Divide the capacity by the rate: $\\frac{7{,}776\\text{ cubic inches}}{216\\text{ cubic inches per second}}=36$ seconds.\nStep 4: Check: in $36$ seconds the tank receives $36(216)=7{,}776$ cubic inches, which is $\\frac{7{,}776}{1{,}728}=4.5$ cubic feet. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.25$): converts with the linear factor $12$: $\\frac{4.5(12)}{216}=\\frac{54}{216}=0.25$.\n* Choice B ($3$): converts with the square factor $144$: $\\frac{4.5(144)}{216}=\\frac{648}{216}=3$.\n* Choice D ($1{,}679{,}616$): multiplies by the rate instead of dividing by it: $7{,}776(216)=1{,}679{,}616$.\n\n**Test Day Takeaway:** When a rate and a capacity carry different units, convert first and divide second. For cubic units the factor is the linear factor cubed — $12$, $144$, and $1{,}728$ are three different answers."
+}

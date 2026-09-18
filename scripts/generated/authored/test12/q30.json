@@ -1,31 +1,31 @@
 {
-  "id": 1230,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "Anthropologists who study how communities adapt to extreme environments have long admired the engineering knowledge embedded in the snow house, or igloo. The builder cuts blocks from a single drift of wind-packed snow and sets them in an inward-spiraling ring, each course leaning a little farther toward the center. Far from being ____, the structure is the product of careful judgment: a block cut too thick will not hold its angle, and one cut too thin will not bear the weight of the courses above it.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "durable"
-    },
-    {
-      "id": "B",
-      "text": "traditional"
-    },
-    {
-      "id": "C",
-      "text": "communal"
-    },
-    {
-      "id": "D",
-      "text": "haphazard"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The phrase \"Far from being ____, the structure is the product of careful judgment\" demands a word that means careless or unplanned, the opposite of careful judgment; \"haphazard\" fits. \"Durable\" and \"traditional\" may well describe an igloo, but they do not contrast with \"careful judgment,\" so neither completes the opposition the sentence sets up. \"Communal\" concerns who is involved, which is beside the point of precision being made here."
+ "id": 1230,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "Watching a gondolier scull from the stern, a passenger might take the rowing for a leisurely push: the oar never leaves the water, and the stroke can look like idle stirring. Far from being ____, however, the technique is exact. The blade must be feathered at a precise angle on each return, and the oar must be seated against the forcola — the tall, carved wooden oarlock — at one of several distinct notches, each chosen for a particular maneuver.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "silent"
+  },
+  {
+   "id": "B",
+   "text": "modern"
+  },
+  {
+   "id": "C",
+   "text": "strenuous"
+  },
+  {
+   "id": "D",
+   "text": "casual"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The frame \"Far from being ____, however, the technique is exact\" makes the blank the opposite of \"exact\" — and specifically the false impression just described, a stroke that \"can look like idle stirring.\" \"Casual\" names that impression.\n\n**The Full Solution:**\n- \"Far from being\" announces that the blank is what the technique is NOT, in contrast to what it is: exact.\n- The passage has already supplied the mistaken appearance: a \"leisurely push,\" \"idle stirring.\" The blank should capture that look of carelessness or ease.\n- The evidence for exactness follows — a precise feathering angle, distinct notches on the forcola for particular maneuvers — confirming that the rejected idea is offhandedness, i.e., being \"casual.\"\n\n**Why the other choices are wrong:**\n- A: \"Silent\" concerns sound, which the passage never mentions and which does not contrast with exactness.\n- B: \"Modern\" concerns age, equally beside the point of the precision contrast.\n- C: \"Strenuous\" fails the logic twice — the passage's false impression is of ease, so denying strenuousness would agree with the impression rather than correct it, and effort is not the opposite of exactness."
 }

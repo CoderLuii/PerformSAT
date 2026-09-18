@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-272",
+ "question": "A bronze medallion set into a library floor is a circle measuring $C$ inches around. Which expression gives the medallion's area, in square inches?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{C^{2}}{4\\pi^{2}}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{C^{2}}{4\\pi}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{C^{2}}{2\\pi}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{C^{2}}{\\pi}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at r squared and never multiplies by pi",
+  "C": "uses r = C / (2 pi) but writes the area as 2 pi r squared",
+  "D": "solves C = pi r for the radius, giving pi (C/pi) squared"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Area of a Circle**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** $C=2\\pi r$ gives $r=\\frac{C}{2\\pi}$, so $A=\\pi r^{2}=\\frac{C^{2}}{4\\pi}$.\n\n**The Full Solution:**\n\nStep 1: Solve the circumference formula for the radius. $C=2\\pi r$, so $r=\\frac{C}{2\\pi}$ inches.\n\nStep 2: Substitute into the area formula. $A=\\pi\\left(\\frac{C}{2\\pi}\\right)^{2}=\\pi\\cdot\\frac{C^{2}}{4\\pi^{2}}$.\n\nStep 3: Simplify. One factor of $\\pi$ cancels, leaving $A=\\frac{C^{2}}{4\\pi}$ square inches.\n\nCheck: with $r=3$, $C=6\\pi$ and $\\frac{(6\\pi)^{2}}{4\\pi}=\\frac{36\\pi^{2}}{4\\pi}=9\\pi$, which is $\\pi(3)^{2}$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{C^{2}}{4\\pi^{2}}$): stops at $r^{2}$ and never multiplies by $\\pi$.\n* Choice C ($\\frac{C^{2}}{2\\pi}$): uses the right radius but writes the area as $2\\pi r^{2}$.\n* Choice D ($\\frac{C^{2}}{\\pi}$): solves $C=\\pi r$ for the radius, using the diameter formula in place of the circumference.\n\n**Test Day Takeaway:** Convert the given measurement to a radius first; substituting into $\\pi r^{2}$ then cancels one power of $\\pi$."
+}

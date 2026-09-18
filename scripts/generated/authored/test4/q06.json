@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
+  "module": 1,
+  "passage": "In the early 1890s, most geographers held that a rigid ship caught in Arctic pack ice was doomed. The Norwegian explorer Fridtjof Nansen noted that wreckage from a vessel crushed near Siberia had later surfaced off Greenland, and reasoned that a slow current must carry sea ice across the polar basin. He had a ship, the Fram, built with a rounded hull that ice pressure would lift rather than crush, sailed it into the pack, and let it freeze in deliberately. Three years later the Fram emerged, intact, on the far side of the Arctic — very nearly where Nansen's proposed current, and no other explanation, said it should be.",
   "question": "Which choice best states the main purpose of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "To argue that the older, ground-based methods of measuring glaciers and aquifers should now be abandoned in favor of the satellite readings GRACE provides."
+      "text": "To argue that the geographers who warned against entering the polar pack ice were relying on dramatic accounts whose details returning crews had greatly embellished over the years."
     },
     {
       "id": "B",
-      "text": "To describe the technical challenge of keeping the two GRACE satellites a precise, fixed distance apart as they repeatedly orbit the Earth together."
+      "text": "To explain why the wooden ships of the nineteenth century could not survive prolonged contact with pack ice."
     },
     {
       "id": "C",
-      "text": "To compare the rate at which Greenland is losing its ice with the rate at which several of the world's largest aquifers are being drained."
+      "text": "To recount the accidents that forced a polar expedition to abandon the scientific goals it had originally set."
     },
     {
       "id": "D",
-      "text": "To explain how a pair of satellites made it possible to weigh huge masses of ice and water from orbit, and what that has revealed."
+      "text": "To describe how an explorer turned a conjecture about a polar current into a test by letting a purpose-built ship freeze into the ice and drift."
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage explains how the GRACE satellites made it possible to weigh large masses from orbit and then notes what that capability has shown about ice loss and aquifer depletion. Choice A turns the passage into an argument for abandoning ground measurement, which it never makes; choice B narrows it to an engineering challenge mentioned only in passing; and choice C treats two example findings as the passage's whole subject.",
-  "passage": "For most of the twentieth century, the only way to weigh a glacier or an aquifer was to measure it from the ground, piece by piece. The pair of satellites known as GRACE, launched in 2002, changed that. As the lead satellite passes over a region with slightly more mass — a thick ice sheet, a full aquifer — it is tugged fractionally ahead of its trailing partner, and the tiny change in the distance between them can be read as a change in the mass below. By repeating these measurements month after month, scientists have tracked how fast Greenland is losing ice and how quickly some of the world's great aquifers are being drained, all without setting foot on the ground.",
+  "explanation": "**Choice D is correct.** The text moves from Nansen's inference (drifting wreckage implies a current) to his experimental design (a hull the ice would lift) to the result (the ship crossed the Arctic as predicted) — a conjecture turned into a test.\n\n**The Full Solution:**\n- The inference: wreckage crushed near Siberia surfacing off Greenland points to a trans-polar current.\n- The test: the Fram is built to survive freezing in, then deliberately frozen in.\n- The verdict: three years later it emerges where the proposed current — and nothing else — predicted. Choice D captures this arc.\n\n**Why the other choices are wrong:**\n- A: The geographers' caution is background; the text never questions their sources.\n- B: The text explains how one ship was designed to survive the ice, not why others could not.\n- C: The freezing-in was the goal, not an accident, and no aims were abandoned.",
   "_meta": {
-    "anchor": "satellite geodesy — GRACE gravimetry of ice and groundwater"
-  },
-  "module": 1
+    "anchor": "Fridtjof Nansen — the Fram drift as a test of the trans-polar current"
+  }
 }

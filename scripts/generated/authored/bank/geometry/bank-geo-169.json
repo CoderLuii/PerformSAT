@@ -1,0 +1,50 @@
+{
+ "id": "bank-geo-169",
+ "question": "A straight service road crosses two parallel rows of solar panels as drawn, where $a$ and $b$ are constants. What is the measure, in degrees, of the angle marked $(2a+2b)°$?",
+ "diagram": {
+  "type": "parallelLines",
+  "params": {
+   "angles": {
+    "top": [
+     "(7a - 2b)°",
+     "(2a + 2b)°"
+    ],
+    "bottom": [
+     "(3a + 2b)°",
+     ""
+    ]
+   },
+   "lineLabels": [
+    "ℓ",
+    "m",
+    "t"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20$"
+  },
+  {
+   "id": "B",
+   "text": "$40$"
+  },
+  {
+   "id": "C",
+   "text": "$80$"
+  },
+  {
+   "id": "D",
+   "text": "$100$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the constant b = 20 rather than an angle measure",
+  "B": "reports a + b = 40 rather than an angle measure",
+  "D": "gives the supplementary angle marked (7a - 2b) degrees, which is 100"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Angles with Parallel Lines (System of Two Conditions)**\n\n**Choice C is correct.**\n\n**The Fast Way (~55s):** The two top angles are a linear pair, so $9a=180$ and $a=20$; corresponding angles then give $b=20$, so $(2a+2b)°=80°$.\n\n**The Full Solution:**\n\nStep 1: Use the linear pair on the upper row. $(7a-2b)+(2a+2b)=180$ simplifies to $9a=180$, so $a=20$.\n\nStep 2: Use corresponding angles. The angle $(7a-2b)°$ on the upper row corresponds to $(3a+2b)°$ on the lower row, so $7a-2b=3a+2b$, giving $4a=4b$ and $b=a=20$.\n\nStep 3: Evaluate the requested angle. $(2a+2b)°=(40+40)°=80°$.\n\nCheck: the angles become $100°$, $80°$, and $100°$; the first two sum to $180°$ and the first and third are equal, as parallel lines require.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($20$): reports the constant $b$ instead of the angle it helps produce.\n* Choice B ($40$): reports $a+b$, stopping one substitution short of the angle measure.\n* Choice D ($100$): gives the angle marked $(7a-2b)°$, the supplement of the one asked for.\n\n**Test Day Takeaway:** Two labeled angles at one intersection plus one corresponding angle across the transversal give two equations — solve the system before evaluating."
+}

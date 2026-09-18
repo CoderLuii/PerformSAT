@@ -1,0 +1,29 @@
+{
+  "id": 8,
+  "question": "After a single dose of a medication is given, the amount remaining in a patient's bloodstream is cut in half every $4$ hours. Exactly $6$ hours after the dose, $320$ micrograms remain. How many micrograms remain exactly $18$ hours after the dose?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20$"
+    },
+    {
+      "id": "B",
+      "text": "$40$"
+    },
+    {
+      "id": "C",
+      "text": "$80$"
+    },
+    {
+      "id": "D",
+      "text": "$160$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "counts four halvings instead of three by counting the times 6, 10, 14, and 18 hours rather than the three gaps between them, so it divides 320 by 2 to the fourth power",
+    "C": "divides 320 by 4, the number of hours in one halving interval, instead of by 2 cubed",
+    "D": "halves only once, treating the entire 12-hour gap as a single halving interval"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** From $6$ hours to $18$ hours is $12$ hours, which is three halving intervals, so divide by $2^3 = 8$: $\\frac{320}{8} = 40$.\n\n**The Full Solution:**\nStep 1: The gap between the two times given is $18 - 6 = 12$ hours. Since the amount halves every $4$ hours, this gap contains $\\frac{12}{4} = 3$ halving intervals.\nStep 2: Three halvings multiply the amount by $\\left(\\frac{1}{2}\\right)^3 = \\frac{1}{8}$, so the amount at $18$ hours is $320 \\cdot \\frac{1}{8}$.\nStep 3: $\\frac{320}{8} = 40$ micrograms. Check by stepping forward: $320$ at $6$ hours, $160$ at $10$ hours, $80$ at $14$ hours, $40$ at $18$ hours ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($20$): counts four halvings instead of three. The times $6$, $10$, $14$, and $18$ hours are four labels but only three gaps apart, and $\\frac{320}{2^4} = 20$. The exponent counts intervals, not time stamps.\n* Choice C ($80$): divides $320$ by $4$, using the number of hours per halving as the divisor. The $4$ sets how often the halving happens; the divisor is $2$ raised to the number of halvings.\n* Choice D ($160$): halves once, treating the whole $12$-hour gap as a single interval. That is the answer for $10$ hours after the dose.\n\n**Test Day Takeaway:** For a half-life problem, count intervals first, then raise $\\frac{1}{2}$ to that count. Stepping the values forward one interval at a time takes ten seconds and catches every miscount."
+}

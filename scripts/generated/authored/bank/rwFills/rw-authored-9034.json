@@ -1,0 +1,32 @@
+{
+  "id": 9034,
+  "passage": "Ethan Frome, a 1911 novel by Edith Wharton, is narrated by an outsider stranded for a winter in the New England village of Starkfield, where he slowly assembles the history of a neighbor who never speaks of himself. A reader might argue that the novel discloses the burdens of Frome’s household through the ordinary objects that pass through his hands rather than through any direct account of his circumstances.",
+  "question": "Which quotation from Ethan Frome most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "“During the early part of my stay I had been struck by the contrast between the vitality of the climate and the deadness of the community.”"
+    },
+    {
+      "id": "B",
+      "text": "“Every one in Starkfield knew him and gave him a greeting tempered to his own grave mien; but his taciturnity was respected and it was only on rare occasions that one of the older men of the place detained him for a word.”"
+    },
+    {
+      "id": "C",
+      "text": "“At intervals, however, the post-master would hand him an envelope addressed to Mrs. Zenobia—or Mrs. Zeena—Frome, and usually bearing conspicuously in the upper left-hand corner the address of some manufacturer of patent medicine and the name of his specific.”"
+    },
+    {
+      "id": "D",
+      "text": "“Though Harmon Gow developed the tale as far as his mental and moral reach permitted there were perceptible gaps between his facts, and I had the sense that the deeper meaning of the story was in the gaps.”"
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Choice C is correct.** The envelope is exactly the kind of ordinary object the claim describes, and what it carries — a patent-medicine address, a wife’s name — tells the reader what the household costs without any statement about it.\n\n**The Full Solution:**\n- Split the claim in two before reading the quotations: the disclosure must come through an object that passes through Frome’s hands, and it must arrive without direct commentary.\n- Choice C satisfies both halves at once. The post-master hands Frome an envelope, and the envelope is addressed to Mrs. Frome and franked by a maker of patent medicine, which reveals a sick wife and a recurring expense while the narrator explains nothing.\n- Eliminate any quotation that carries no object, or that states its meaning outright instead of leaving it in the detail.\n\n**Why the other choices are wrong:**\n- A: A generalization about the village and its weather. No object passes through Frome’s hands, and the sentence tells the reader its point rather than showing it.\n- B: This describes how the townspeople treat Frome. It is about manners rather than about anything he handles, so it misses the first half of the claim.\n- D: This is the narrator commenting explicitly on the gaps in his source — the opposite of disclosure through physical detail.",
+  "source": {
+    "title": "Ethan Frome",
+    "author": "Edith Wharton",
+    "year": 1911,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/4517"
+  }
+}

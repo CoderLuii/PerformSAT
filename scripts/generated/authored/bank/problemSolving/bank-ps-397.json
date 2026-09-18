@@ -1,0 +1,56 @@
+{
+ "id": "bank-ps-397",
+ "question": "The table gives the number of active bat roosts counted at a cave in each of the first four weeks of a survey. The counts for weeks 5 and 6 are not shown; the week 6 count is $6$ greater than the week 5 count, and the mean weekly count over all six weeks is $25$. What is the week 6 count?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Week",
+    "Active roosts"
+   ],
+   "rows": [
+    [
+     "1",
+     "26"
+    ],
+    [
+     "2",
+     "19"
+    ],
+    [
+     "3",
+     "22"
+    ],
+    [
+     "4",
+     "31"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$23$"
+  },
+  {
+   "id": "B",
+   "text": "$26$"
+  },
+  {
+   "id": "C",
+   "text": "$29$"
+  },
+  {
+   "id": "D",
+   "text": "$52$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "solves correctly but reports the week 5 count, $23$, instead of the week 6 count",
+  "B": "splits the remaining $52$ roosts evenly between the two weeks, ignoring the $6$-roost difference",
+  "D": "reports the combined total for weeks 5 and 6, $150 - 98 = 52$"
+ },
+ "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice C is correct.** The six weeks total $6(25) = 150$ roosts, so weeks 5 and 6 total $52$; with week 6 exceeding week 5 by $6$, the counts are $23$ and $29$.\n\n**The Fast Way (~55s):** $150 - 98 = 52$ for the two unknown weeks. Removing the $6$-roost gap leaves $46$, so week 5 is $23$ and week 6 is $29$.\n\n**The Full Solution:**\n\nStep 1: Turn the mean into a total: $6(25) = 150$ roosts across the six weeks.\n\nStep 2: Subtract the four tabled weeks. Their sum is $26 + 19 + 22 + 31 = 98$, so weeks 5 and 6 together account for $150 - 98 = 52$ roosts.\n\nStep 3: Let $w$ be the week 5 count. Then $w + (w + 6) = 52$, so $2w = 46$ and $w = 23$, making the week 6 count $23 + 6 = 29$. Check: $98 + 23 + 29 = 150$, and $\\frac{150}{6} = 25$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($23$): is the week 5 count. The question asks for week 6, which is $6$ greater.\n* Choice B ($26$): halves the remaining $52$ roosts as though the two weeks were equal, which contradicts the stated $6$-roost difference.\n* Choice D ($52$): reports the two weeks combined instead of week 6 alone.\n\n**Test Day Takeaway:** Convert the mean to a total, subtract everything you can read, and then let the stated relationship split what is left."
+}

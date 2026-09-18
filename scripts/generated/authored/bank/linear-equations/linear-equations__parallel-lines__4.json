@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "question": "A boundary baseline appears on a plan as the graph of $y = -\\frac{2}{3}x + 7$, with distances in meters. A lot edge parallel to that baseline contains $(6, 1)$. Which of the following is an equation of the lot edge?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -\\frac{2}{3}x - 3$"
+  },
+  {
+   "id": "B",
+   "text": "$y = -\\frac{2}{3}x + 5$"
+  },
+  {
+   "id": "C",
+   "text": "$y = -\\frac{2}{3}x + 7$"
+  },
+  {
+   "id": "D",
+   "text": "$y = \\frac{3}{2}x - 8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "substitutes with the sign of the slope term reversed, computing 1 - 4 instead of 1 + 4",
+  "C": "reuses the baseline's own constant term, which describes the baseline itself rather than a separate edge",
+  "D": "uses the negative reciprocal slope, which makes the edge perpendicular to the baseline"
+ },
+ "correctAnswer": "B",
+ "hint": "Parallel lines share a slope; only the constant term is left to find.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** The edge has slope $-\\frac{2}{3}$, and $1 = -\\frac{2}{3}(6) + b$ gives $b = 5$.\n\n**The Full Solution:**\nStep 1: Parallel lines have equal slopes, so the lot edge has slope $-\\frac{2}{3}$ and takes the form $y = -\\frac{2}{3}x + b$.\nStep 2: Substituting the point $(6,\\ 1)$ gives $1 = -\\frac{2}{3}(6) + b = -4 + b$.\nStep 3: Adding $4$ to both sides gives $b = 5$, so the edge is $y = -\\frac{2}{3}x + 5$.\n\nCheck: At $x = 6$ the equation gives $-4 + 5 = 1$, so the point lies on the edge. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($b = -3$): reverses the sign when solving, computing $1 - 4$ instead of $1 + 4$.\n* Choice C ($b = 7$): keeps the baseline's own constant term, so it describes the baseline rather than a separate edge; $(6, 1)$ does not lie on it.\n* Choice D (slope $\\frac{3}{2}$): uses the negative reciprocal, which makes the edge perpendicular to the baseline.\n\n**Test Day Takeaway:** Copy the slope, then let the given point decide the constant term."
+}

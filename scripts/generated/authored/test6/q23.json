@@ -6,12 +6,12 @@
   "band": 3,
   "domain": "expression-of-ideas",
   "skill": "transitions",
-  "passage": "For most of the twentieth century, surveys of ocean life relied on samples dredged from shallow coastal waters, the only depths small boats could easily reach. These samples suggested that life thins out rapidly below the sunlit surface. ______ once researchers began making sustained dives in deep submersibles, the darker layers of the open ocean proved to hold communities as dense and varied as those near the top.",
+  "passage": "African baobabs produce growth rings only erratically, swelling and shrinking with the rains, so the ages of the biggest trees were long a matter of educated guessing — claims of a thousand years or more rested mainly on sheer girth. ______ radiocarbon dating of wood sampled from the trees' internal cavities has put the question on firmer ground: several of the largest individuals proved to be more than two thousand years old.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
       "id": "A",
-      "text": "Additionally,"
+      "text": "Furthermore,"
     },
     {
       "id": "B",
@@ -19,13 +19,13 @@
     },
     {
       "id": "C",
-      "text": "Finally,"
+      "text": "For example,"
     },
     {
       "id": "D",
-      "text": "Therefore,"
+      "text": "Consequently,"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"However.\" The first part of the passage reports the long-held impression that life thins out with depth, and the sentence after the blank overturns it with what the submersible dives revealed. That reversal calls for a contrast transition. \"Additionally\" and \"Finally\" would signal that the new information merely adds to or concludes the earlier point, and \"Therefore\" would present the dives' results as a consequence of the earlier impression rather than as a correction of it."
+  "explanation": "**Choice B is correct.** The first sentence describes an era of guesswork; the second describes measurement replacing it. That is a reversal of the earlier situation, and \"However,\" marks it.\n\n**The Full Solution:**\n- Before the blank: ages were \"educated guessing,\" resting on girth alone.\n- After the blank: radiocarbon dating \"has put the question on firmer ground\" — the opposite of guesswork.\n- The relation is contrast between the old uncertainty and the new precision, so the contrast transition fits.\n\n**Why the other choices are wrong:**\n- A: \"Furthermore\" would add more support to the guesswork era, but the second sentence displaces it.\n- C: \"For example\" would make the dating an instance of the guessing, when it is the corrective to it.\n- D: \"Consequently\" claims the dating resulted from the guessing, but nothing says the guesswork caused the radiocarbon work."
 }

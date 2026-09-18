@@ -1,0 +1,62 @@
+{
+  "id": 4,
+  "question": "The table gives the amount of water stored in each of four reservoirs and the percent of that reservoir's capacity the stored amount represents. What is the capacity, in millions of gallons, of the Cedar reservoir?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Reservoir",
+        "Water stored (millions of gallons)",
+        "Percent of capacity"
+      ],
+      "rows": [
+        [
+          "Alder",
+          "63",
+          "45%"
+        ],
+        [
+          "Birch",
+          "88",
+          "55%"
+        ],
+        [
+          "Cedar",
+          "96",
+          "40%"
+        ],
+        [
+          "Dunn",
+          "72",
+          "60%"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$38.4$"
+    },
+    {
+      "id": "B",
+      "text": "$144$"
+    },
+    {
+      "id": "C",
+      "text": "$160$"
+    },
+    {
+      "id": "D",
+      "text": "$240$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies instead of dividing",
+    "B": "reports the unused capacity",
+    "C": "divides by the empty percent"
+  },
+  "correctAnswer": "D",
+  "hint": "The stored amount is a part of the capacity, so divide it by the decimal form of its percent.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~25s):** Cedar's $96$ million gallons is $40\\%$ of capacity, so the capacity is $96 \\div 0.4 = 240$.\n\n**The Full Solution:**\nStep 1: Read Cedar's row: $96$ million gallons stored, which is $40\\%$ of its capacity.\nStep 2: Let $c$ be the capacity. Then $0.40c = 96$.\nStep 3: Divide: $c = \\frac{96}{0.40} = 240$ million gallons. Check: $40\\%$ of $240$ is $96$, and the remaining $144$ million gallons is the $60\\%$ that is empty. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($38.4$): multiplies $96$ by $0.40$ instead of dividing by it.\n* Choice B ($144$): reports how much more water the reservoir could hold, not the capacity.\n* Choice C ($160$): divides by $0.60$, the percent of the capacity that is EMPTY.\n\n**Test Day Takeaway:** Read the percent's owner carefully: $40\\%$ of capacity means the capacity is the denominator, so the stored amount gets divided."
+}

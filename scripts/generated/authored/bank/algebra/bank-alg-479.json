@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-479",
+ "question": "A drainage crew replaces $c$ culverts and $h$ headwalls in one season, where the number of headwalls is $9$ more than the number of culverts and $c + h = 41$. How many culverts are replaced?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$16$"
+  },
+  {
+   "id": "C",
+   "text": "$25$"
+  },
+  {
+   "id": "D",
+   "text": "$32$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the stated gap of 9 between the two counts",
+  "C": "reports the headwall count 25 instead of the culvert count",
+  "D": "stops at 2c = 32 without dividing by 2"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: System of Equations (Substitution)**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Replacing $h$ with $c + 9$ gives $2c + 9 = 41$, so $2c = 32$ and $c = 16$.\n\n**The Full Solution:**\nStep 1: Translate the first relationship: \"$9$ more headwalls than culverts\" means $h = c + 9$.\nStep 2: Substitute that expression into $c + h = 41$: $c + (c + 9) = 41$, which simplifies to $2c + 9 = 41$.\nStep 3: Solve: $2c = 32$, so $c = 16$. Check: $h = 16 + 9 = 25$, and $16 + 25 = 41$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): reports the stated gap between the counts rather than a count itself.\n* Choice C ($25$): reports the headwall count, which is what $c + 9$ equals, not $c$.\n* Choice D ($32$): stops at $2c = 32$ and reports that total without dividing by $2$.\n\n**Test Day Takeaway:** Substitute the \"more than\" expression, combine like terms, and then check which of the two counts the last sentence asks for."
+}

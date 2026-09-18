@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-148",
+ "question": "A tuberculosis screening program models its counts with the system $x = 3y - 7$ and $2x + 5y = 30$, where $x$ is the number of confirmed referrals and $y$ the number of screening sites. Which equation results from substituting the first equation into the second?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2(3y - 7) + 5y = 30$"
+  },
+  {
+   "id": "B",
+   "text": "$2x + 5(3y - 7) = 30$"
+  },
+  {
+   "id": "C",
+   "text": "$2(3y) - 7 + 5y = 30$"
+  },
+  {
+   "id": "D",
+   "text": "$2(3x - 7) + 5y = 30$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "puts the expression for x into the y-term, so x is still present and nothing is eliminated",
+  "C": "multiplies only the first term of 3y - 7 by 2, leaving the -7 undistributed",
+  "D": "copies the expression but keeps x inside it, so the substitution removes nothing"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The first equation gives $x$, so every $x$ in $2x + 5y = 30$ becomes $3y - 7$, wrapped in parentheses: $2(3y - 7) + 5y = 30$.\n\n**The Full Solution:**\nStep 1: Identify which variable is already isolated. The first equation reads $x = 3y - 7$, so the expression $3y - 7$ stands for $x$.\nStep 2: Replace $x$ — and only $x$ — in the second equation. The $x$-term is $2x$, so it becomes $2(3y - 7)$; the $5y$ term is untouched. The result is $2(3y - 7) + 5y = 30$.\nStep 3: Confirm the substitution is usable by solving it: $6y - 14 + 5y = 30$, so $11y = 44$ and $y = 4$; then $x = 3(4) - 7 = 5$. Check the original: $2(5) + 5(4) = 10 + 20 = 30$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: substitutes the expression into the $5y$ term instead of the $2x$ term, so $x$ remains in the equation and nothing is eliminated.\n* Choice C: drops the parentheses and multiplies only $3y$ by $2$, so the $-7$ never gets doubled.\n* Choice D: keeps the variable $x$ inside the substituted expression, producing an equation in two variables again.\n\n**Test Day Takeaway:** Substitute the isolated expression in parentheses, into the term holding THAT variable — the parentheses are what keep every term of the expression multiplied."
+}

@@ -6,26 +6,26 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 2,
-  "passage": "Most adult mammals lose the ability to digest lactose, the sugar in milk, after weaning, but in several human populations the lactase enzyme stays active throughout adulthood. Geneticist Sarah Tishkoff set out to ask whether this trait, known as lactase persistence, has a single evolutionary origin. In a 2007 study sequencing DNA from East African pastoralist communities, Tishkoff and colleagues identified three previously unknown variants near the lactase gene, none of which matched the European variant already documented in the dairying populations of northern Europe. Because each variant arose on its own genetic background and spread within communities that historically herded cattle, camels, or goats, Tishkoff argued that lactase persistence has evolved independently several times under the same dietary pressure.",
-  "question": "According to the text, what did Tishkoff and colleagues find in their 2007 study of East African pastoralists?",
+  "passage": "Most lightning concentrates over warm continental land in summer, where strong updrafts build electrical charge inside towering storms. In a study drawing on years of data from a global lightning-detection network, atmospheric scientist Robert Holzworth and colleagues examined \"superbolts\" — rare strokes that release at least a thousand times more electrical energy than an average lightning flash. The team found that superbolts follow nearly the opposite pattern from ordinary lightning: they strike most often over oceans rather than land, they cluster in regions such as the North Atlantic and the Mediterranean, and their frequency peaks in the months around the Northern Hemisphere's winter rather than its summer.",
+  "question": "According to the text, how does the occurrence of superbolts differ from that of most lightning?",
   "choices": [
     {
       "id": "A",
-      "text": "A single ancestral mutation shared by East African pastoralists and the dairying populations of northern Europe."
+      "text": "Superbolts release far less electrical energy than ordinary lightning flashes do."
     },
     {
       "id": "B",
-      "text": "That the European lactase-persistence variant was also widespread among the East African pastoralist communities they sampled."
+      "text": "Superbolts proved so rare that the detection network recorded too few of them for Holzworth and colleagues to identify any clear geographic or seasonal pattern."
     },
     {
       "id": "C",
-      "text": "Three previously unknown genetic variants near the lactase gene, none of which matched the European variant."
+      "text": "Superbolts occur mostly over oceans and peak in winter, whereas most lightning concentrates over land in summer."
     },
     {
       "id": "D",
-      "text": "That lactase persistence offered no measurable advantage to communities relying on milk from herded animals."
+      "text": "Superbolts cluster over warm continental interiors, where the updrafts inside storms are strongest."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage states that Tishkoff and colleagues identified three previously unknown variants near the lactase gene, none of which matched the European variant already documented in northern Europe. Choice A contradicts the text, which reports several distinct variants on separate genetic backgrounds rather than a single shared mutation. Choice B reverses a key detail: the East African variants did not match the European one. Choice D is unsupported, since the passage treats lactase persistence as an adaptation favored by reliance on milk, the opposite of offering no advantage."
+  "explanation": "**Choice C is correct.** The text states the contrast explicitly: ordinary lightning favors warm land in summer, while superbolts \"follow nearly the opposite pattern\" — oceans rather than land, winter rather than summer.\n\n**The Full Solution:**\n- The baseline comes first: most lightning concentrates \"over warm continental land in summer.\"\n- The findings then invert each element for superbolts: over oceans rather than land; clustered in the North Atlantic and Mediterranean; peaking around winter rather than summer.\n- Choice C pairs the two patterns exactly as the text does.\n\n**Why the other choices are wrong:**\n- A: It reverses the energy relationship — superbolts release at least a thousand times more energy than average flashes, not less.\n- B: It contradicts the study's outcome; the team identified clear geographic and seasonal patterns, which is the finding the text reports.\n- D: It assigns superbolts the distribution of ordinary lightning — warm continental interiors — which is precisely the pattern the text says superbolts do not follow."
 }

@@ -1,44 +1,49 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Atmospheric rivers are long, narrow corridors of water vapor that flow from the tropics toward the U.S. West Coast, where F. Martin Ralph and his colleagues at Scripps study them closely."
-    },
-    {
-      "id": "B",
-      "text": "Ralph's group has found that the same few strong atmospheric rivers that supply much of California's precipitation each winter also cause most of its major floods, making one class of storm both the state's main water source and its main flood risk."
-    },
-    {
-      "id": "C",
-      "text": "A few strong atmospheric rivers each winter deliver between 30 and 50 percent of California's annual precipitation, according to F. Martin Ralph and his colleagues at Scripps."
-    },
-    {
-      "id": "D",
-      "text": "The strong atmospheric rivers that reach California each winter are responsible for most of the state's major floods and for ending most of the multi-year droughts that the state's winter rains break, according to research by Ralph's group at the Scripps Institution of Oceanography."
-    }
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Launched in 1992, the TOPEX/Poseidon mission measured the height of the sea surface by timing a radar pulse's round trip from orbit to the ocean and back."
+  },
+  {
+   "id": "B",
+   "text": "A single continuous record of sea-surface height lets researchers track everything from global sea-level rise to ocean currents and El Niño."
+  },
+  {
+   "id": "C",
+   "text": "The global average sea level has risen about 3 millimeters per year over the past three decades."
+  },
+  {
+   "id": "D",
+   "text": "Regional rates of sea-level rise range from under 2 millimeters per year to more than 4."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** A generalization must rise above any single finding, and B does: it characterizes the record's value as a whole — one continuous measurement stream serving several distinct lines of research named in the notes.\n\n**The Full Solution:**\n- The goal asks for a generalization about the record's scientific value, not a report of one result.\n- The notes list separate uses: the sea-level trend, the regional rates, and the tracking of currents and El Niño.\n- B gathers those uses under a single claim about the record — the shape a generalization takes.\n\n**Why the other choices are wrong:**\n- A: It explains how one mission measured, a description of method rather than a general claim about value.\n- C: It reports a single finding — the global trend — not the record's overall usefulness.\n- D: It likewise cites one finding, the regional spread, and generalizes nothing.",
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "Satellite altimeters measure sea-surface height by timing a radar pulse's round trip from orbit to the ocean and back.",
+   "The TOPEX/Poseidon mission, launched in 1992, began a continuous altimetry record that successor missions have extended.",
+   "The record shows the global average sea level rising about 3 millimeters per year over three decades.",
+   "It also shows regional rates ranging from under 2 millimeters per year to more than 4.",
+   "Researchers use the same measurements to track ocean currents and to monitor the El Niño cycle."
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The goal is to make a generalization about what Ralph's group's research shows, and Choice B states the higher-order point the notes build toward: the same handful of storms both supply much of California's water and cause most of its flooding, so one class of storm is at once the state's main water source and its main flood risk. Choice A only defines atmospheric rivers and identifies who studies them; Choice C gives the water-supply finding alone; and Choice D reports the flood and drought findings without connecting them to the storms' role as a water source. Only B joins the findings into a single generalization.",
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Atmospheric rivers are long, narrow corridors of concentrated water vapor that flow from the tropics toward the U.S. West Coast.",
-      "F. Martin Ralph directs a research center at the Scripps Institution of Oceanography that studies atmospheric rivers.",
-      "Ralph and colleagues have found that a few strong atmospheric rivers each winter deliver 30 to 50 percent of California's annual precipitation.",
-      "The same storms cause most of California's major floods.",
-      "They also end most of the multi-year droughts that the state's winter rains break."
-    ],
-    "goal": "The student wants to make a generalization about what Ralph's group's research shows about atmospheric rivers."
-  },
-  "_meta": {
-    "anchor": "F. Martin Ralph (Scripps CW3E): atmospheric rivers as California water supply and flood risk"
-  },
-  "id": 1127,
-  "module": 1
+  "goal": "The student wants to make a generalization about the altimetry record's scientific value."
+ },
+ "_meta": {
+  "anchor": "satellite altimetry of oceans — one record serving many research uses",
+  "distractors": {
+   "A": "method description, not generalization",
+   "C": "single finding",
+   "D": "single finding"
+  }
+ },
+ "id": 1127,
+ "module": 1
 }

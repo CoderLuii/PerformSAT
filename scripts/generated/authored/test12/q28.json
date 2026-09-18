@@ -1,31 +1,31 @@
 {
-  "id": 1228,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "The pigments that Renaissance painters bound into wet plaster behave very differently from those suspended in oil. Because the color becomes chemically part of the wall as the plaster cures, a true fresco cannot easily be ____: a passage the artist wished to alter had to be chipped out and replastered before the surface dried, since once set, the bonded pigment resisted the scraping and overpainting that an oil panel would have tolerated.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "revised"
-    },
-    {
-      "id": "B",
-      "text": "interpreted"
-    },
-    {
-      "id": "C",
-      "text": "cleaned"
-    },
-    {
-      "id": "D",
-      "text": "duplicated"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The colon explains the blank: an unwanted passage \"had to be chipped out and replastered,\" because the bonded pigment \"resisted the scraping and overpainting\" that would let one change the image. The missing word therefore means altered or reworked, which is what \"revised\" names. \"Cleaned\" is tempting given the conservation flavor, but the sentence is about changing the picture, not removing dirt. \"Interpreted\" concerns a fresco's meaning, not its physical alteration. \"Duplicated\" would mean copied, which does not match the discussion of correcting a finished surface."
+ "id": 1228,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "The great market halls of the nineteenth century were framed in cast iron, and the material shaped their later fates. A cast-iron building cannot easily be ____: unlike a timber frame, which a carpenter can cut, splice, and extend on site, iron columns and trusses were cast to their final shape at the foundry, so a hall that had outgrown its trade needed new members ordered as though a second building were being begun.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "altered"
+  },
+  {
+   "id": "B",
+   "text": "inspected"
+  },
+  {
+   "id": "C",
+   "text": "imitated"
+  },
+  {
+   "id": "D",
+   "text": "maintained"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The colon defines the blank: timber can be \"cut, splice[d], and extend[ed] on site,\" but iron members came from the foundry in final form, so changing the building meant ordering new parts. The missing word must mean changed or modified — \"altered.\"\n\n**The Full Solution:**\n- A colon after a blank typically explains it, so read on and let the explanation fix the meaning.\n- The contrast is with timber, whose advantage is easy physical modification — cutting, splicing, extending.\n- Iron's members were \"cast to their final shape,\" so enlarging or reshaping a hall required what amounted to a second building. The blocked activity is alteration.\n\n**Why the other choices are wrong:**\n- B: \"Inspected\" has nothing to do with the colon's contrast about cutting and splicing.\n- C: \"Imitated\" means copied, but the sentence concerns changing the building itself, not reproducing it.\n- D: \"Maintained\" is tempting — old buildings do need upkeep — but the colon is about reshaping outgrown structures, not keeping them in repair."
 }

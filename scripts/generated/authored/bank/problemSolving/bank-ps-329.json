@@ -1,0 +1,67 @@
+{
+  "id": "bank-ps-329",
+  "question": "The scatterplot shows the mass $y$, in kilograms, of a compost pile $x$ weeks after it was started, for $10$ weekly readings. The line of best fit shown passes through the points $(3, 46)$ and $(15, 118)$. According to the line of best fit, what is the predicted mass, in kilograms, of the compost pile $12$ weeks after it was started?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          32
+        ],
+        [
+          3,
+          49
+        ],
+        [
+          5,
+          55
+        ],
+        [
+          6,
+          67
+        ],
+        [
+          8,
+          73
+        ],
+        [
+          10,
+          90
+        ],
+        [
+          11,
+          91
+        ],
+        [
+          13,
+          109
+        ],
+        [
+          15,
+          115
+        ],
+        [
+          16,
+          127
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 18,
+      "yMin": 0,
+      "yMax": 140,
+      "xGridStep": 2,
+      "yGridStep": 10,
+      "xLabelStep": 4,
+      "yLabelStep": 20,
+      "xLabel": "Weeks since started",
+      "yLabel": "Mass of compost (kg)",
+      "bestFitLine": {
+        "slope": 6,
+        "intercept": 28
+      }
+    }
+  },
+  "correctAnswer": "100",
+  "explanation": "**SAT Pattern: Interpret Slope of Best Fit**\n\n**The correct answer is $100$.**\n\n**The Fast Way (~35s):** The slope is $\\frac{118 - 46}{15 - 3} = 6$, so $46 = 6(3) + b$ gives $b = 28$ and $\\hat{y} = 6(12) + 28 = 100$ kilograms.\n\n**The Full Solution:**\nStep 1: A predicted value needs the whole equation, so start with the slope from the two given points: $\\frac{118 - 46}{15 - 3} = \\frac{72}{12} = 6$ kilograms per week.\nStep 2: Substitute $(3, 46)$ into $\\hat{y} = 6x + b$: $46 = 6(3) + b = 18 + b$, so $b = 28$ and the line of best fit is $\\hat{y} = 6x + 28$.\nStep 3: At $x = 12$ weeks, $\\hat{y} = 6(12) + 28 = 72 + 28 = 100$ kilograms. Check: the other given point fits, $6(15) + 28 = 118$, and $100$ falls between the week-$11$ and week-$13$ readings on the scatterplot. $\\checkmark$\n\n**Common Mistakes:** Reporting $6$ gives the slope, the weekly gain rather than a mass. Using the slope without the intercept gives $6(12) = 72$. Averaging the two given masses gives $\\frac{46 + 118}{2} = 82$, which is the predicted mass at week $9$, the midpoint of the two given weeks, not at week $12$.\n\n**Test Day Takeaway:** Two points give the slope, one point then gives the intercept, and only the full equation gives a prediction. Confirm the equation on the second point before substituting."
+}

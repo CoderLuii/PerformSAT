@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "In a system of two linear equations, the first equation is $3x + 5y = 22$ and the second equation is $5x + 3y = 26$. The solution to this system is the ordered pair $(x, y)$. What is the value of $x + y$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$2$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$48$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the value of $y$ instead of the requested sum $x + y$.",
+    "B": "reports the value of $x$ instead of the requested sum $x + y$.",
+    "D": "adds the two equations correctly but stops at $8x + 8y = 48$ without dividing by $8$."
+  },
+  "correctAnswer": "C",
+  "hint": "The question asks only for $x + y$, so you may not need $x$ and $y$ separately.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~50s):** Adding the two equations gives $8x + 8y = 48$, so $x + y = \\frac{48}{8} = 6$.\n\n**The Full Solution:**\nStep 1: The coefficients of $x$ and $y$ are swapped between the equations, so neither variable cancels on its own. Add the equations instead: $(3x + 5y) + (5x + 3y) = 22 + 26$.\nStep 2: The left side collects to $8x + 8y$ and the right side is $48$, so $8(x + y) = 48$.\nStep 3: Divide both sides by $8$ to get $x + y = 6$. Check: subtracting the equations gives $-2x + 2y = -4$, so $y = x - 2$; with $x + y = 6$ that gives $x = 4$ and $y = 2$, and $3(4) + 5(2) = 22$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): reports the value of $y$ instead of the requested sum $x + y$.\n* Choice B ($4$): reports the value of $x$ instead of the requested sum $x + y$.\n* Choice D ($48$): adds the two equations correctly but stops at $8x + 8y = 48$ without dividing by $8$.\n\n**Test Day Takeaway:** When a system asks for $x + y$ rather than for one variable, add the equations before solving. Swapped coefficients often collapse into a multiple of $x + y$ in a single step."
+}

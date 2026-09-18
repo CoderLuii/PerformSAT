@@ -1,31 +1,57 @@
 {
-  "id": 841,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "module": 2,
-  "passage": "Studying variable stars called Cepheids in the early twentieth century, the astronomer Henrietta Swan Leavitt found that a Cepheid's brightness pulses on a regular cycle. Because the stars she examined all lay at roughly the same distance, differences in their apparent brightness reflected real differences in how much light they give off. Leavitt argued that a Cepheid's pulsation period is tied to its intrinsic brightness, a relationship later used to measure cosmic distances, because _______\n\nSelected Cepheids (apparent magnitude: smaller number = brighter)\n| Cepheid | Pulsation period (days) | Median apparent magnitude |\n|---|---|---|\n| A | 3.0 | 13.4 |\n| B | 5.5 | 12.9 |\n| C | 12.0 | 12.1 |\n| D | 33.0 | 11.2 |",
-  "question": "Which choice most effectively uses data from the table to support the claim?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Cepheid A has the shortest period in the table, at 3.0 days, and also the faintest median apparent magnitude, at 13.4."
-    },
-    {
-      "id": "B",
-      "text": "as period increases from 3.0 days (Cepheid A) to 33.0 days (Cepheid D), the median apparent magnitude falls from 13.4 to 11.2, meaning the longer-period Cepheids are brighter."
-    },
-    {
-      "id": "C",
-      "text": "Cepheid D has the longest period in the table, at 33.0 days, far longer than the 3.0-day period of Cepheid A."
-    },
-    {
-      "id": "D",
-      "text": "the four Cepheids in the table differ in both pulsation period and median apparent magnitude."
-    }
+ "id": 841,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "module": 2,
+ "passage": "Researchers measuring how mangrove forests damp incoming waves set wave gauges along four shore-normal transects, each crossing a belt of different width, and recorded the mean height of waves arriving at the landward edge during the same monsoon season. They argue that the data show a consistent relationship — the wider the belt a wave must cross, the smaller the wave that reaches the shore — because _______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Mean wave height at the landward edge of four mangrove belts",
+  "headers": [
+   "Belt width (m)",
+   "Mean wave height at shore (cm)"
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The claim ties period to intrinsic brightness, and because these stars are about equally distant, apparent brightness stands in for intrinsic brightness. B traces the full pattern: as period rises from 3.0 to 33.0 days, apparent magnitude drops from 13.4 to 11.2, and since a smaller magnitude means a brighter star, longer-period Cepheids are brighter. A cites only one star and so shows no relationship; C compares periods alone, ignoring brightness; and D notes that the stars differ without describing how period and brightness move together."
+  "rows": [
+   [
+    "50",
+    "42"
+   ],
+   [
+    "100",
+    "31"
+   ],
+   [
+    "200",
+    "18"
+   ],
+   [
+    "400",
+    "9"
+   ]
+  ]
+ },
+ "question": "Which choice most effectively uses data from the table to support the claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "waves crossing the 50-meter belt still averaged 42 centimeters in height when they reached the shore."
+  },
+  {
+   "id": "B",
+   "text": "as belt width increases from 50 to 100 to 200 to 400 meters, mean wave height at the shore falls from 42 to 31 to 18 to 9 centimeters."
+  },
+  {
+   "id": "C",
+   "text": "mean wave height behind the 400-meter belt was 9 centimeters, well below the 42 centimeters recorded behind the 50-meter belt at the opposite end of the range."
+  },
+  {
+   "id": "D",
+   "text": "the four transects differed from one another in both belt width and mean wave height at the shore."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The claim ties wave height to belt width across the range, and B traces the full relation: as width grows from 50 to 400 meters, mean wave height at the shore falls step by step from 42 to 9 centimeters.\n\n**The Full Solution:**\n- The researchers' claim is a relationship, not a single comparison: the wider the belt, the smaller the waves behind it.\n- Choice B walks the whole table in order, showing height falling at every step as width increases — the pattern the claim asserts.\n\n**Why the other choices are wrong:**\n- A: One transect's figures cannot establish a relationship across belt widths.\n- C: Comparing only the widest and narrowest belts skips the intermediate values that show the relation holds throughout.\n- D: Saying the transects differ from one another concedes variation without connecting it to belt width at all."
 }

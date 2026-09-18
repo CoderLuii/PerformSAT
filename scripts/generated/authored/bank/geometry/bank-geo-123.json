@@ -1,0 +1,46 @@
+{
+  "id": "bank-geo-123",
+  "question": "The figure shows right triangle $DEF$, in which angle $E$ is a right angle, $DE = 16$, and $EF = 12$. What is the length of $DF$?",
+  "diagram": {
+    "type": "rightTriangle",
+    "params": {
+      "labels": [
+        "D",
+        "E",
+        "F"
+      ],
+      "sideLabels": [
+        "16",
+        "12",
+        ""
+      ],
+      "rightAngleVertex": 1,
+      "figureNote": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$14$"
+    },
+    {
+      "id": "B",
+      "text": "$20$"
+    },
+    {
+      "id": "C",
+      "text": "$28$"
+    },
+    {
+      "id": "D",
+      "text": "$400$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "averages the two legs instead of using the Pythagorean theorem",
+    "C": "adds the legs, treating the hypotenuse as the sum of the other sides",
+    "D": "stops at the square of the hypotenuse"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Pythagorean Theorem (3-4-5 Family)**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** $12$ and $16$ are $4$ times $3$ and $4$, so $DF = 4 \\times 5 = 20$.\n\n**The Full Solution:**\nStep 1: Angle $E$ is the right angle, so $DE$ and $EF$ are the legs and $DF$ is the hypotenuse: $DE^2 + EF^2 = DF^2$.\nStep 2: $16^2 + 12^2 = 256 + 144 = 400$, so $DF^2 = 400$.\nStep 3: $DF = \\sqrt{400} = 20$. Check: $12$-$16$-$20$ is the $3$-$4$-$5$ triple scaled by $4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($14$): averages the two legs, $\\frac{12 + 16}{2}$, which ignores the theorem and lands below the longer leg.\n* Choice C ($28$): adds the legs, $12 + 16$; the hypotenuse is always shorter than the sum of the legs.\n* Choice D ($400$): stops at $DF^2$ without taking the square root.\n\n**Test Day Takeaway:** The side opposite the right angle is the hypotenuse, whatever the vertices are called. Legs in the ratio $3 : 4$ make the hypotenuse $5$ parts long."
+}

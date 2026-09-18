@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-161",
+  "question": "A square has a side length of $3x - 7$, and a second square has a side length of $2x + 1$. The perimeter of the first square is $8$ greater than the perimeter of the second square. What is the value of $x$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$8$"
+    },
+    {
+      "id": "C",
+      "text": "$10$"
+    },
+    {
+      "id": "D",
+      "text": "$16$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the 8 to the first perimeter instead of the second",
+    "B": "drops the 8 and sets the two perimeters equal",
+    "D": "compares the side lengths instead of the perimeters"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Square Perimeter**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The perimeters are $12x - 28$ and $8x + 4$, so $12x - 28 = (8x + 4) + 8$ gives $4x = 40$ and $x = 10$.\n\n**The Full Solution:**\nStep 1: Each perimeter is four times its side length: the first square has perimeter $4(3x - 7) = 12x - 28$, and the second has perimeter $4(2x + 1) = 8x + 4$.\nStep 2: The comparison is between the two perimeters, so the larger one is the second plus $8$: $12x - 28 = (8x + 4) + 8$, which is $12x - 28 = 8x + 12$.\nStep 3: Subtract $8x$ and add $28$: $4x = 40$, so $x = 10$. Check: the sides are $23$ and $21$, the perimeters are $92$ and $84$, and $92 - 84 = 8$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): attaches the $8$ to the first square, solving $(12x - 28) + 8 = 8x + 4$; the first perimeter is the larger one, so the $8$ belongs on the other side.\n* Choice B ($8$): drops the $8$ and sets the perimeters equal, $12x - 28 = 8x + 4$.\n* Choice D ($16$): compares the side lengths instead of the perimeters, solving $3x - 7 = (2x + 1) + 8$.\n\n**Test Day Takeaway:** A comparison sentence applies to the quantity it names. Write both perimeters in full, then add the difference to the smaller side of the equation."
+}

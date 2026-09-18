@@ -1,0 +1,46 @@
+{
+ "id": 1,
+ "question": "The roof truss shown spans a packing shed. Rafter $AB$ meets the tie beam at $52$ degrees, and rafter $CB$ meets the same beam at $71$ degrees. What is the measure, in degrees, of the angle at the peak $B$?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "52°",
+    "71°",
+    "x°"
+   ],
+   "vertexLabels": [
+    "A",
+    "C",
+    "B"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$57$"
+  },
+  {
+   "id": "B",
+   "text": "$109$"
+  },
+  {
+   "id": "C",
+   "text": "$123$"
+  },
+  {
+   "id": "D",
+   "text": "$128$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts only the 71-degree angle from 180",
+  "C": "adds the two given angles instead of subtracting their sum from 180",
+  "D": "subtracts only the 52-degree angle from 180"
+ },
+ "correctAnswer": "A",
+ "hint": "The two rafter angles and the peak angle all belong to the same triangle.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~10s):** The three interior angles total $180$ degrees, so the peak measures $180 - 52 - 71 = 57$ degrees.\n\n**The Full Solution:**\nStep 1: The truss is a triangle, so its three interior angles sum to $180$ degrees.\nStep 2: Two of them measure $52$ and $71$ degrees, a total of $123$ degrees.\nStep 3: The peak angle is $180 - 123 = 57$ degrees. Check: $52 + 71 + 57 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($109$): subtracting only the $71$-degree angle from $180$ and forgetting the other rafter.\n* Choice C ($123$): reporting the sum of the two given angles instead of what is left of $180$.\n* Choice D ($128$): subtracting only the $52$-degree angle from $180$.\n\n**Test Day Takeaway:** Add the known angles first, then take that total away from $180$ once."
+}

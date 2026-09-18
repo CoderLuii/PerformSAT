@@ -6,29 +6,14 @@
   "domain": "expression-of-ideas",
   "skill": "transitions",
   "module": 2,
-  "passage": "When Giotto frescoed the Arena Chapel in Padua around 1305, he broke with the flat, gold-ground convention of earlier medieval painting, giving his figures weight, cast shadow, and visible emotion. ______ the cycle came to be regarded as a turning point, and painters from Masaccio onward treated Giotto's naturalism as the foundation on which Renaissance picture-making was built.",
+  "passage": "In the 1870s, salmon canneries on the Pacific Coast packed nearly everything by hand, and even a practiced crew could clean and fill only a few thousand cans in a day. Machines then claimed the line one task at a time: mechanical soldering arrived in the 1880s, and automated filling followed within a decade. ______ a cannery floor that had employed dozens of skilled workers could be run by a handful of machine tenders.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
-    {
-      "id": "A",
-      "text": "In time,"
-    },
-    {
-      "id": "B",
-      "text": "However,"
-    },
-    {
-      "id": "C",
-      "text": "For example,"
-    },
-    {
-      "id": "D",
-      "text": "Likewise,"
-    }
+    { "id": "A", "text": "Eventually," },
+    { "id": "B", "text": "However," },
+    { "id": "C", "text": "In other words," },
+    { "id": "D", "text": "In addition," }
   ],
   "correctAnswer": "A",
-  "explanation": "The passage describes Giotto's break with medieval convention and then traces how, over the following generations, his naturalism came to be seen as the foundation of Renaissance painting. \"In time,\" choice A, marks that temporal development. \"However\" signals contrast, \"For example\" an instance, and \"Likewise\" a similarity, none of which fits the move from his innovation to its later influence.",
-  "_meta": {
-    "anchor": "Giotto, Arena Chapel frescoes"
-  }
+  "explanation": "**Choice A is correct.** The passage is a timeline — the 1870s, then the 1880s, then \"within a decade\" — and the final sentence is the endpoint that timeline was building toward. \"Eventually\" places it there.\n\n**The Full Solution:**\n- The mechanization proceeds stepwise, \"one task at a time,\" with dates marking each stage.\n- The last sentence describes the situation after those steps accumulated: a floor of dozens reduced to a handful.\n- A closing state reached at the end of a dated sequence is introduced by a transition of time.\n\n**Why the other choices are wrong:**\n- B: \"However\" would set the shrunken workforce against the mechanization, but it is mechanization's direct culmination, not a reversal of it.\n- C: \"In other words\" restates; the final sentence adds a new development rather than rephrasing the 1880s ones.\n- D: \"In addition\" flattens the sequence into a list, losing the temporal arc from hand work to machine tending that the dates establish."
 }

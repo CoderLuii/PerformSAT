@@ -1,0 +1,64 @@
+{
+  "id": "bank-ps-102",
+  "question": "The table summarizes the $320$ flights scheduled to depart from an airport on one day by aircraft type and by departure status. One of the delayed flights will be selected at random. What is the probability of selecting a flight flown by a regional jet?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "On time",
+        "Delayed",
+        "Cancelled",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Regional jet",
+          "96",
+          "42",
+          "12",
+          "150"
+        ],
+        [
+          "Narrow-body",
+          "128",
+          "34",
+          "8",
+          "170"
+        ],
+        [
+          "Total",
+          "224",
+          "76",
+          "20",
+          "320"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{21}{160}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{7}{25}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{17}{38}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{21}{38}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "42/320, divides by all flights",
+    "B": "42/150, conditions on regional jet instead of delayed",
+    "C": "34/76, the narrow-body share of the delayed flights"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Conditional Probability from Two-Way Table**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The delayed column totals $76$, of which $42$ are regional jets: $\\dfrac{42}{76} = \\dfrac{21}{38}$.\n\n**The Full Solution:**\nStep 1: The flight is chosen from the delayed flights, so the denominator is the delayed column total, $76$.\nStep 2: Of those, the regional-jet cell holds $42$ flights.\nStep 3: The probability is $\\dfrac{42}{76} = \\dfrac{21}{38}$.\nCheck: $42 + 34 = 76$, so the two aircraft types account for the whole delayed column. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{21}{160}$): This is $\\dfrac{42}{320}$, the probability that a randomly selected flight is both delayed and a regional jet.\n* Choice B ($\\frac{7}{25}$): This is $\\dfrac{42}{150}$, which conditions on regional jets and gives the probability that a regional jet was delayed.\n* Choice C ($\\frac{17}{38}$): This is $\\dfrac{34}{76}$, the probability that a delayed flight was narrow-body — the other part of the same column.\n\n**Test Day Takeaway:** Conditioning on a column makes that column's total the denominator; the row you want supplies the numerator."
+}

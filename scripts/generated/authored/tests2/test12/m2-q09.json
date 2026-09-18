@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A vaccination clinic charges $x$ dollars for a first-dose visit and $y$ dollars for a booster visit. One week's charges satisfy $5x + 4y = k$ and the next week's satisfy $4x + 5y = k - 10$, where $k$ is a constant. If $x + y = 14$, what is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$58$"
+  },
+  {
+   "id": "B",
+   "text": "$63$"
+  },
+  {
+   "id": "C",
+   "text": "$68$"
+  },
+  {
+   "id": "D",
+   "text": "$126$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports k - 10, the right side of the second equation, instead of k",
+  "B": "drops the -10 and solves 2k = 126",
+  "D": "reports 9(x + y) = 126 without solving for k"
+ },
+ "explanation": "**SAT Pattern: Solve for a Combination**\n\n**Choice C is correct.** Adding the two equations gives $9x + 9y = 2k - 10$; substituting $x + y = 14$ gives $126 = 2k - 10$, so $k = 68$.\n\n**The Fast Way (~30s):** Add the equations: $9(x + y) = 2k - 10$. Then $9(14) = 126 = 2k - 10$, so $2k = 136$ and $k = 68$.\n\n**The Full Solution:**\nStep 1: Add the equations term by term: $(5x + 4x) + (4y + 5y) = k + (k - 10)$, or $9x + 9y = 2k - 10$.\nStep 2: The left side is $9(x + y)$, and $x + y = 14$, so $9(14) = 126 = 2k - 10$.\nStep 3: Solve: $2k = 136$, so $k = 68$. Check by finding the individual charges: subtracting the equations gives $x - y = 10$, so $x = 12$ and $y = 2$; then $5(12) + 4(2) = 68$ and $4(12) + 5(2) = 58 = 68 - 10$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($58$): the value of $k - 10$, the right side of the second equation. It is a real quantity in the problem, just not the one asked for.\n* Choice B ($63$): drops the $-10$ and solves $2k = 126$, which ignores that the two right sides differ.\n* Choice D ($126$): stops at $9(x + y) = 126$ and reports that sum instead of finishing the equation $126 = 2k - 10$.\n\n**Test Day Takeaway:** When the question asks for a combination, add or subtract the equations first — solving for $x$ and $y$ separately is a longer road to the same place."
+}

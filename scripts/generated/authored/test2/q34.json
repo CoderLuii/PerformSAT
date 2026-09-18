@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 2,
-  "passage": "For much of the twentieth century, the signed communication of deaf communities was widely dismissed as a crude system of pantomime—a set of gestures standing in for the \"real\" language carried by speech and writing. Beginning in the 1960s, the linguist William Stokoe challenged that view by analyzing American Sign Language as spoken languages had been analyzed. He showed that its signs are built from a small set of contrasting formational units—handshape, location, and movement—combined according to regular rules, much as spoken words are built from contrasting sounds. On the strength of that analysis, ASL came to be recognized not as gesture but as a natural language with a grammar of its own.",
+  "passage": "Does health insurance make people healthier? Simply comparing the insured with the uninsured cannot answer the question, because the two groups differ in many ways besides coverage. In 2008, the state of Oregon supplied a rare opening: with funds to extend Medicaid to only a fraction of eligible adults, it allocated the slots by lottery, creating by pure chance the treatment and control groups that a deliberate experiment would have assembled. Researchers tracking the two groups found that coverage increased use of care and virtually eliminated catastrophic medical costs, yet produced no detectable improvement, after two years, in blood pressure or cholesterol — a mixed result that both sides of the insurance debate promptly claimed as vindication.",
   "question": "Which choice best describes the overall structure of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "It defines a linguistic term, gives several examples of it, and explains why the term is difficult to apply to sign languages."
+      "text": "It presents a policy question, reviews the history of a government program, and ultimately endorses one side of a long-running dispute."
     },
     {
       "id": "B",
-      "text": "It compares American Sign Language with several other sign languages used by deaf communities around the world."
+      "text": "It describes an experiment that researchers deliberately designed, details the obstacles they overcame in recruiting and retaining participants, and summarizes results that settled a long-running scholarly controversy."
     },
     {
       "id": "C",
-      "text": "It presents a once-common view of signed communication, describes an analysis that challenged that view, and reports the reassessment that followed."
+      "text": "It poses a question, explains why straightforward comparisons cannot answer it, describes a chance event that enabled a rigorous test, and reports findings that each side of a debate read as support."
     },
     {
       "id": "D",
-      "text": "It traces a scholar's career and argues that his later work proved more influential than his early studies of grammar."
+      "text": "It poses a question, presents two competing answers to it, and concludes that the available evidence cannot distinguish between them."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The passage opens with the once-common view that signing was mere pantomime, describes Stokoe's analysis treating ASL like a spoken language, and reports the resulting reassessment of ASL as a full natural language. Choice A does not fit, because the passage is organized around a change in view, not around defining a term and listing examples. Choice B is wrong: only American Sign Language is discussed, with no comparison to other sign languages. Choice D misreads the text, which centers on a single analysis and its consequences rather than ranking the phases of Stokoe's career."
+  "explanation": "**Choice C is correct.** The text moves through exactly four steps: the opening question, the methodological obstacle, the lottery that solved it, and the mixed findings each camp claimed — the sequence choice C lays out in order.\n\n**The Full Solution:**\n- Step one: the question — \"Does health insurance make people healthier?\"\n- Step two: why comparison fails — insured and uninsured people \"differ in many ways besides coverage.\"\n- Step three: the chance event — Oregon's lottery allocation, which built experiment-quality groups \"by pure chance.\"\n- Step four: the findings — more care and fewer catastrophic costs, but no detectable change in blood pressure or cholesterol — with both sides claiming vindication.\n\n**Why the other choices are wrong:**\n- A: No program history is reviewed, and the text endorses neither side — it pointedly notes that both claimed the result.\n- B: The lottery was Oregon's budget mechanism, not a design by researchers, and no recruiting obstacles appear; far from settling the controversy, the result fed both sides.\n- D: The text presents one study's findings, not two competing answers, and it never concludes that the evidence cannot discriminate — it reports what the evidence showed and how partisans received it."
 }

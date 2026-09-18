@@ -1,34 +1,34 @@
 {
-  "id": 502,
-  "type": "multiple-choice",
-  "difficulty": "easy",
-  "band": 2,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "When French scientists devised the metric system in the 1790s, they built it so that every unit related to the others by simple powers of ten—a hundred centimeters in a meter, a thousand grams in a kilogram—and labeled the units with consistent prefixes. The result was a scheme of measurement as ______ as the decimal arithmetic on which it rested, allowing conversions to be carried out by merely shifting a decimal point.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "systematic"
-    },
-    {
-      "id": "B",
-      "text": "flexible"
-    },
-    {
-      "id": "C",
-      "text": "delicate"
-    },
-    {
-      "id": "D",
-      "text": "expansive"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"systematic.\" The passage stresses that the units were tied to one another by powers of ten and given consistent prefixes, so that conversions reduce to shifting a decimal point. The blank needs a word meaning orderly and rule-governed, which is exactly what \"systematic\" conveys, and the comparison to decimal arithmetic reinforces that sense. \"Flexible\" points the wrong way, since the emphasis is on fixed, regular relationships rather than adaptability; \"delicate\" suggests fineness or fragility, not order; and \"expansive\" concerns size or range rather than the principled regularity the sentence is describing.",
-  "_meta": {
-    "anchor": "metric system devised in 1790s France — decimal, rule-governed measurement"
+ "id": 502,
+ "type": "multiple-choice",
+ "difficulty": "easy",
+ "band": 2,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "In the 1890s, New York City reorganized its street-cleaning force: sweepers received white uniforms, each crew was assigned a fixed route, and schedules were published so residents knew when carts would pass. Reformers praised the new arrangement as ______, since every block was now swept at a predictable hour by a crew whose duties were clearly defined.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "methodical"
+  },
+  {
+   "id": "B",
+   "text": "inexpensive"
+  },
+  {
+   "id": "C",
+   "text": "temporary"
+  },
+  {
+   "id": "D",
+   "text": "lenient"
   }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The reforms described are all about order and regularity, and \"methodical\" means carried out according to a systematic plan.\n\n**The Full Solution:**\n- The text lists three changes: uniforms, fixed routes, and published schedules.\n- The clause after the blank restates the theme: predictable hours, clearly defined duties.\n- The word must capture systematic organization, which is precisely what \"methodical\" means.\n\n**Why the other choices are wrong:**\n- B: \"Inexpensive\" introduces cost, which the text never mentions.\n- C: \"Temporary\" contradicts the sense of an established routine with fixed routes and standing schedules.\n- D: \"Lenient\" describes mildness in enforcement, an idea with no basis in the text.",
+ "_meta": {
+  "anchor": "1890s New York street-cleaning reorganization — uniforms, fixed routes, published schedules"
+ }
 }

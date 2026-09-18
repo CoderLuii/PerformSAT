@@ -1,0 +1,54 @@
+{
+ "id": "bank-geo-003",
+ "question": "A gable-end tie rod $17$ feet long runs from the ridge to the eave of a wall $8$ feet high. What is the horizontal run, in feet, of the rod?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     15,
+     8
+    ]
+   ],
+   "sideLabels": [
+    "",
+    "8 ft",
+    "17 ft"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$9$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$25$"
+  },
+  {
+   "id": "D",
+   "text": "$60$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "subtracts the lengths instead of the squares: 17 - 8",
+  "C": "adds the two given lengths: 17 + 8",
+  "D": "computes the triangle's area, one half times 8 times 15, instead of a side length"
+ },
+ "explanation": "**SAT Pattern: Pythagorean Theorem**\n\n**Choice B is correct.** The horizontal run is $\\sqrt{17^2 - 8^2} = \\sqrt{225} = 15$ feet.\n\n**The Fast Way (~20s):** $8$-$15$-$17$ is a Pythagorean triple, so the missing leg is $15$.\n\n**The Full Solution:**\n\nStep 1: The rod is the hypotenuse of a right triangle whose vertical leg is the $8$-foot wall height.\n\nStep 2: Apply $a^2 + b^2 = c^2$ with $b = 8$ and $c = 17$: $a^2 = 289 - 64 = 225$.\n\nStep 3: Take the positive square root: $a = 15$ feet. Check: $8^2 + 15^2 = 64 + 225 = 289 = 17^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($9$): subtracts the lengths, $17 - 8$, instead of subtracting their squares.\n* Choice C ($25$): adds the two given lengths, which would make the hypotenuse the shortest side.\n* Choice D ($60$): computes the triangle's area, $\\frac{1}{2}(8)(15)$, instead of the requested length.\n\n**Test Day Takeaway:** Squares subtract, lengths do not — and a hypotenuse is always the longest side, which rules out any answer larger than it."
+}

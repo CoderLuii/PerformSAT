@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-237",
+ "question": "A garment press finishes $a(s + 6) + 3s$ shirts during a shift that includes $s$ setup cycles, and this expression equals $11s + 48$ shirts for every value of $s$. What is the value of $a$?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Matching Coefficients**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~20s):** The $s$-terms give $a + 3 = 11$, so $a = 8$.\n\n**The Full Solution:**\n\nStep 1: Distribute and combine: $a(s + 6) + 3s = as + 6a + 3s = (a + 3)s + 6a$.\n\nStep 2: This equals $11s + 48$ for every value of $s$, so $a + 3 = 11$ and therefore $a = 8$.\n\nStep 3: Confirm with the constants: $6a = 6(8) = 48$, matching the given constant. Check with $s = 2$: $8(8) + 6 = 70$ and $11(2) + 48 = 70$.\n\n**Common Mistakes:**\n\n* $11$ — reading the coefficient $11$ straight off the right side and ignoring the $3s$ that also carries an $s$.\n* $14$ — adding $3$ to $11$ instead of subtracting it.\n* $6$ — reporting the number inside the parentheses rather than the multiplier.\n\n**Test Day Takeaway:** Collect every term containing the variable into a single coefficient before matching; the term outside the parentheses belongs in that coefficient."
+}

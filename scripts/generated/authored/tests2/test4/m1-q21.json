@@ -1,0 +1,56 @@
+{
+ "id": 21,
+ "question": "The table gives measured snow depths at a station, and the model $S(d) = -2d^2 + 44d - 150$ fits them, where $S$ is the depth in centimeters on day $d$ of the season. On how many days does the model give a depth of at least $90$ centimeters?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Day d",
+    "Measured depth (cm)"
+   ],
+   "rows": [
+    [
+     "5",
+     "20"
+    ],
+    [
+     "8",
+     "74"
+    ],
+    [
+     "14",
+     "74"
+    ],
+    [
+     "17",
+     "20"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$3$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$13$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves S(d) = 90 and counts its two solutions, d = 10 and d = 12, instead of the days between them",
+  "C": "divides by -2 without reversing the inequality, gets d at most 10 or d at least 12, and counts the 12 whole days there with positive depth",
+  "D": "drops the 90 and solves S(d) at least 0, counting days 5 through 17"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Quadratic Inequality from Context**\n\n**Choice B is correct.**\n\n**The Fast Way (~45s):** $S(d) \\ge 90$ reduces to $(d - 10)(d - 12) \\le 0$, so $10 \\le d \\le 12$ — three days.\n\n**The Full Solution:**\nStep 1: Write the condition: $-2d^2 + 44d - 150 \\ge 90$, so $-2d^2 + 44d - 240 \\ge 0$.\nStep 2: Divide by $-2$ and reverse the inequality: $d^2 - 22d + 120 \\le 0$, which factors as $(d - 10)(d - 12) \\le 0$.\nStep 3: A product of two factors is at most zero between the roots, so $10 \\le d \\le 12$. The whole days are $10$, $11$, and $12$ — three of them.\nCheck: $S(10) = -200 + 440 - 150 = 90$, $S(11) = -242 + 484 - 150 = 92$, and $S(13) = -338 + 572 - 150 = 84$, which is below $90$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): solves the equation $S(d) = 90$ and counts its two roots, $d = 10$ and $d = 12$; the question asks for every day in between as well.\n* Choice C ($12$): divides by $-2$ without flipping the inequality sign, which reverses the solution set to $d \\le 10$ or $d \\ge 12$ and counts the $12$ days from $5$ to $17$ outside the true window.\n* Choice D ($13$): ignores the $90$-centimeter threshold and counts every day the model keeps the depth positive, days $5$ through $17$.\n\n**Test Day Takeaway:** Move everything to one side, then divide by the negative leading coefficient and flip the sign — the flip is the whole question."
+}

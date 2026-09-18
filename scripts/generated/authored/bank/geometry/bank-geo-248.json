@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-248",
+ "question": "The measure of angle $A$ is $\\frac{7\\pi}{10}$ radians. The measure of angle $B$ is $18°$ less than the measure of angle $A$. What is the measure, in degrees, of angle $B$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$108$"
+  },
+  {
+   "id": "B",
+   "text": "$126$"
+  },
+  {
+   "id": "C",
+   "text": "$144$"
+  },
+  {
+   "id": "D",
+   "text": "$234$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports angle A instead of angle B",
+  "C": "adds 18 instead of subtracting",
+  "D": "converts with 360 over pi, doubling the degree measure"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Radians ↔ Degrees Conversion**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** $\\frac{7\\pi}{10} \\cdot \\frac{180}{\\pi} = 126$ degrees, and $126 - 18 = 108$.\n\n**The Full Solution:**\nStep 1: Convert angle $A$ to degrees by multiplying by $\\frac{180}{\\pi}$, so that the $\\pi$ cancels: $\\frac{7\\pi}{10} \\cdot \\frac{180}{\\pi} = \\frac{7 \\cdot 180}{10}$.\nStep 2: $\\frac{1260}{10} = 126$, so angle $A$ measures $126^\\circ$.\nStep 3: Angle $B$ is $18^\\circ$ smaller: $126 - 18 = 108$ degrees. Check: $108^\\circ$ converts back to $\\frac{108\\pi}{180} = \\frac{3\\pi}{5}$ radians, which is less than $\\frac{7\\pi}{10}$, as it must be.\n\n**Why the wrong answers are tempting:**\n* Choice B ($126$): converts angle $A$ correctly but reports that angle instead of angle $B$.\n* Choice C ($144$): adds $18^\\circ$ to angle $A$, reading \"less than\" backwards.\n* Choice D ($234$): converts with $\\frac{360}{\\pi}$, turning $\\frac{7\\pi}{10}$ into $252^\\circ$, then subtracts $18$.\n\n**Test Day Takeaway:** Convert first, then apply the relationship. Radians become degrees through $\\frac{180}{\\pi}$ — a half turn, never a full one."
+}

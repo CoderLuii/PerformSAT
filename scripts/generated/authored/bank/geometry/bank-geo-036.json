@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-036",
+  "question": "On an irrigation field map, a circular sprinkler zone has a diameter with endpoints $(-1,5)$ and $(11,-3)$, and its boundary is $(x-h)^{2}+(y-k)^{2}=r^{2}$, with coordinates in meters. What is the value of $r^{2}$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$13$"
+    },
+    {
+      "id": "B",
+      "text": "$26$"
+    },
+    {
+      "id": "C",
+      "text": "$52$"
+    },
+    {
+      "id": "D",
+      "text": "$208$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the squared diameter by 16, halving the radius one extra time",
+    "B": "halves r squared instead of halving the diameter before squaring",
+    "D": "uses the full squared diameter 208 as r squared"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Circle from Diameter Endpoints**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** The squared diameter is $12^{2}+8^{2}=208$, and $r^{2}=\\frac{208}{4}=52$.\n\n**The Full Solution:**\n\nStep 1: Find the squared diameter. The horizontal change is $11-(-1)=12$ and the vertical change is $-3-5=-8$, so $d^{2}=12^{2}+(-8)^{2}=144+64=208$.\n\nStep 2: Halve the length, not the square. $r=\\frac{d}{2}$, so $r^{2}=\\frac{d^{2}}{4}=\\frac{208}{4}=52$.\n\nStep 3: Confirm with the center. The center is the midpoint $(5,1)$, and the distance from $(5,1)$ to $(-1,5)$ satisfies $6^{2}+4^{2}=52$.\n\nCheck: $(-1-5)^{2}+(5-1)^{2}=36+16=52$, so the endpoint lies on the circle.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($13$): divides the squared diameter by $16$, halving the radius one extra time.\n* Choice B ($26$): halves $r^{2}$ itself instead of halving the diameter before squaring.\n* Choice D ($208$): uses the squared diameter as $r^{2}$, skipping the halving entirely.\n\n**Test Day Takeaway:** Halving happens to the length, so the square gets divided by $4$ — never by $2$."
+}

@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
   "module": 1,
-  "passage": "Roman harbor structures made of concrete have survived two thousand years of immersion in seawater, while modern marine concrete often crumbles within decades. For years the durability of the Roman material was attributed simply to the quality of the volcanic ash its builders used. Examining samples from ancient breakwaters with high-resolution imaging, a team of materials scientists found something more dynamic at work: seawater percolating through the concrete had reacted with the ash over centuries to grow rare interlocking crystals, so that the very exposure that destroys modern concrete had gradually strengthened the Roman material from within.",
+  "passage": "More than a hundred small bronze objects of the same curious design — hollow twelve-sided shells, each face pierced by a round hole and each corner topped with a knob — have been unearthed across the Roman Empire's northern provinces. Proposed functions have not been in short supply: candlestick holder, surveying instrument, gauge for calibrating pipes, tool for knitting glove fingers. Yet every proposal stumbles on the same awkward facts. The holes vary in diameter from face to face with no consistent progression, the objects appear in no surviving Roman text or image, and several were found carefully deposited alongside coins, as if treasured rather than used. Until an example surfaces in a context that betrays its purpose, the dodecahedra will stand as a reminder that an abundance of artifacts is not the same as an understanding of them.",
   "question": "Which choice best describes the overall structure of the text?",
   "choices": [
     {
       "id": "A",
-      "text": "It poses a question about modern construction, answers it with a historical anecdote, and then recommends a specific building material."
+      "text": "It presents a scholarly consensus about a class of artifacts, describes a recent discovery that unsettled that consensus, and predicts which rival account will replace it."
     },
     {
       "id": "B",
-      "text": "It contrasts a durable ancient material with a less durable modern one, notes a common explanation for the contrast, and then reports a finding that revises that explanation."
+      "text": "It describes a puzzling class of artifacts, surveys proposed explanations of their function, identifies evidence that frustrates every proposal, and closes by drawing a general lesson from the impasse."
     },
     {
       "id": "C",
-      "text": "It presents two competing theories about Roman concrete and concludes that neither can currently be tested."
+      "text": "It recounts the excavation of a single unusual artifact, compares it with similar finds from other regions, and endorses the interpretation its excavators favored."
     },
     {
       "id": "D",
-      "text": "It traces the stages by which Roman builders mixed concrete and explains why the recipe was later forgotten."
+      "text": "It argues that a class of artifacts served a ceremonial purpose, concedes that the supporting evidence is thin, and calls for more systematic excavation of the relevant sites."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage first contrasts long-lasting Roman marine concrete with modern concrete that crumbles, then gives the usual explanation (the quality of the volcanic ash), and finally reports a finding that revises that explanation: seawater reacting with the ash grew crystals that strengthened the material over time. Choice A does not fit, because the passage offers no recommendation about which material to build with. Choice C is wrong because only one explanation is in play, later revised by a finding—not two untestable theories. Choice D misdescribes the passage, which is not organized as a step-by-step account of mixing concrete or a story of a lost recipe."
+  "explanation": "**Choice B is correct.** The text introduces the enigmatic dodecahedra, lists candidate functions, shows why the same facts defeat each candidate, and ends with a general moral about artifacts and understanding.\n\n**The Full Solution:**\n- Opening: the puzzling class is described in physical detail — twelve-sided bronze shells with holes and knobs, found across the northern provinces.\n- Survey: four proposed functions are listed, from candlestick holder to knitting tool.\n- Frustration: \"every proposal stumbles on the same awkward facts\" — inconsistent hole sizes, silence in texts and images, deposition with coins.\n- Close: the final sentence generalizes — abundant artifacts do not guarantee understanding. Choice B tracks all four moves in order.\n\n**Why the other choices are wrong:**\n- A: There is no consensus to unsettle — the text presents ongoing uncertainty — and no recent discovery or predicted winner appears.\n- C: The text concerns more than a hundred objects, not a single excavation, and endorses no interpretation.\n- D: The text argues for no function at all, ceremonial or otherwise; the deposition with coins is presented as an awkward fact, not a thesis, and no call for excavation is made."
 }

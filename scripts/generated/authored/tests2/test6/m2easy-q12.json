@@ -1,0 +1,6 @@
+{
+  "id": 12,
+  "question": "On a slalom course, two straight gate poles cross at a single point. The opening marked $(5x - 15)^\\circ$ lies directly across that crossing from an opening of $65^\\circ$, where $x$ is a constant. What is the value of $x$?",
+  "correctAnswer": "16",
+  "explanation": "**SAT Pattern: Vertical Angles**\n\n**The correct answer is $16$.**\n\n**The Fast Way (~15s):** Opposite angles at a crossing are equal, so $5x - 15 = 65$, giving $5x = 80$ and $x = 16$.\n\n**The Full Solution:**\nStep 1: When two straight lines cross, the two angles opposite each other are vertical angles and have equal measures.\nStep 2: Set the expressions equal: $5x - 15 = 65$.\nStep 3: Add $15$ to both sides to get $5x = 80$, then divide by $5$ to get $x = 16$. Check: $5(16) - 15 = 80 - 15 = 65$ ✓\n\n**Common Mistakes:**\n* $26$: uses the angle next to the $65^\\circ$ angle instead of the one opposite it, solving $5x - 15 = 115$.\n* $13$: divides $65$ by $5$ and forgets the $-15$ entirely.\n* $10$: subtracts $15$ from $65$ instead of adding it, computing $\\frac{65 - 15}{5}$.\n\n**Test Day Takeaway:** At a crossing, opposite angles are equal and adjacent angles add to $180^\\circ$. Decide which pair you are looking at before writing the equation — that single choice separates $16$ from $26$."
+}

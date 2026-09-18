@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-315",
+  "question": "The net thickness, in centimeters, of a shale bed at a horizontal position of $x$ meters along an outcrop is given by the expression $(9x - 4) - (4x + 11)$. At what horizontal position is the net thickness equal to $30$ centimeters?",
+  "correctAnswer": "9",
+  "explanation": "**SAT Pattern: Combining Like Terms**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~20s):** The expression simplifies to $5x - 15$; setting $5x - 15 = 30$ gives $x = 9$.\n\n**The Full Solution:**\nStep 1: Distribute the subtraction across the second group: $(9x - 4) - (4x + 11) = 9x - 4 - 4x - 11$.\nStep 2: Combine like terms: $9x - 4x = 5x$ and $-4 - 11 = -15$, so the thickness is $5x - 15$ centimeters.\nStep 3: Set $5x - 15 = 30$, so $5x = 45$ and $x = 9$. Check: $(9 \\cdot 9 - 4) - (4 \\cdot 9 + 11) = 77 - 47 = 30$ ✓\n\n**Common Mistakes:** Answering $4.6$ flips only the first term inside the second group, simplifying to $5x + 7$ and solving $5x = 23$; answering $3$ moves the $-15$ to the wrong side, solving $5x = 30 - 15$; answering $6$ solves $5x = 30$ and never accounts for the $-15$.\n\n**Test Day Takeaway:** A minus sign in front of parentheses flips every term inside, not just the first."
+}

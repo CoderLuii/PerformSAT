@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "A reaction model gives the impurity level $p(x) = x^2 - 14x + 58$, where $x$ is the reagent concentration in millimoles per liter. Which expression is equivalent to $p(x)$ and shows the concentration at which the impurity level is least?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(x - 7)^2 - 9$"
+  },
+  {
+   "id": "B",
+   "text": "$(x - 7)^2 + 9$"
+  },
+  {
+   "id": "C",
+   "text": "$(x - 7)^2 + 58$"
+  },
+  {
+   "id": "D",
+   "text": "$(x + 7)^2 + 9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes 49 - 58 = -9 instead of 58 - 49 = 9",
+  "C": "forgets to subtract the 49 that completing the square introduces",
+  "D": "uses +7 inside the square, which reproduces +14x rather than -14x"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Quadratic — Completing the Square**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Half of $-14$ is $-7$, and $(x - 7)^2$ carries an extra $+49$, so $p(x) = (x - 7)^2 + 58 - 49 = (x - 7)^2 + 9$.\n\n**The Full Solution:**\nStep 1: Take half the coefficient of $x$: $\\frac{-14}{2} = -7$, so the square to build is $(x - 7)^2 = x^2 - 14x + 49$.\nStep 2: That square supplies $49$, but the model has only $58$; write $p(x) = (x^2 - 14x + 49) + (58 - 49)$.\nStep 3: So $p(x) = (x - 7)^2 + 9$, least when the square is $0$, at $x = 7$; check at $x = 7$: the original gives $49 - 98 + 58 = 9$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(x - 7)^2 - 9$): subtracts in the wrong order, $49 - 58 = -9$, and would make the least impurity level $-9$, which the original never reaches.\n* Choice C ($(x - 7)^2 + 58$): keeps the original constant and never removes the $49$ the square introduces; at $x = 7$ it gives $58$, not $9$.\n* Choice D ($(x + 7)^2 + 9$): expands to $x^2 + 14x + 58$, which has the wrong sign on the middle term and is least at $x = -7$.\n\n**Test Day Takeaway:** Completing the square adds the square of half the linear coefficient — subtract that same amount back so the expression stays equal to the original."
+}

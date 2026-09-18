@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-444",
+  "question": "The price of a share of a stock rose $25\\%$ during one quarter and then fell $16\\%$ during the next quarter. At the end of the two quarters, the share is worth $\\$210$. What was the share worth, in dollars, at the start of the two quarters?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$168$"
+    },
+    {
+      "id": "B",
+      "text": "$192.66$"
+    },
+    {
+      "id": "C",
+      "text": "$200$"
+    },
+    {
+      "id": "D",
+      "text": "$220.50$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "undoes only the $25\\%$ rise.",
+    "B": "nets the percents to a single $9\\%$ increase instead of multiplying the factors.",
+    "D": "multiplies by the combined factor $1.05$ instead of dividing by it."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Reverse Percent Multi-Step**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The two quarters multiply to $1.25\\times 0.84=1.05$, so the starting value is $\\frac{210}{1.05}=200$ dollars.\n\n**The Full Solution:**\nStep 1: Let $s$ be the starting value. A $25\\%$ rise gives $1.25s$.\nStep 2: A $16\\%$ fall from there gives $0.84(1.25s)=1.05s$, so $1.05s=210$.\nStep 3: $s=\\frac{210}{1.05}=200$ dollars. Check: $1.25(200)=250$, and $250-0.16(250)=210$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($168$): computes $\\frac{210}{1.25}$, reversing only the first quarter.\n* Choice B ($192.66$): divides by $1.09$, treating $+25\\%$ then $-16\\%$ as a net $+9\\%$.\n* Choice D ($220.50$): computes $1.05\\times 210$, multiplying by the combined factor instead of dividing.\n\n**Test Day Takeaway:** A rise and a fall do not cancel to the difference of the percents, because the fall is taken from a larger base. Multiply the factors first."
+}

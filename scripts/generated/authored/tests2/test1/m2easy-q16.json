@@ -1,0 +1,30 @@
+{
+ "id": 16,
+ "question": "For four consecutive days, the table gives the estimated mass, in grams, of a yeast culture growing in a fermentation vessel on day $t$. The mass is modeled by $m(t) = a(b)^t$, where $a$ and $b$ are positive constants. What is the value of $a$?",
+ "questionTable": {
+  "headers": [
+   "$t$",
+   "Mass (grams)"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$96$"
+   ],
+   [
+    "$2$",
+    "$144$"
+   ],
+   [
+    "$3$",
+    "$216$"
+   ],
+   [
+    "$4$",
+    "$324$"
+   ]
+  ]
+ },
+ "correctAnswer": "64",
+ "explanation": "**SAT Pattern: Exponential Growth Model**\n\n**The correct answer is $64$.**\n\n**The Fast Way (~30s):** Consecutive masses multiply by $\\frac{144}{96} = 1.5$, so $b = 1.5$. Since $m(1) = ab = 96$, $a = \\frac{96}{1.5} = 64$.\n\n**The Full Solution:**\nStep 1: Find the growth factor. Dividing each mass by the one before it gives $\\frac{144}{96} = 1.5$, $\\frac{216}{144} = 1.5$, and $\\frac{324}{216} = 1.5$, so $b = 1.5$.\nStep 2: Use one table row. At $t = 1$, the model gives $m(1) = a(1.5)^1 = 1.5a$, and the table says this equals $96$.\nStep 3: Solve: $a = \\frac{96}{1.5} = 64$. Check another row: $m(3) = 64(1.5)^3 = 64(3.375) = 216$ grams, matching the table ✓\n\n**Common Mistakes:**\n* $96$ — reading $a$ as the first mass in the table. The constant $a$ is the value of $m$ at $t = 0$, one step before the first row, so the day-$1$ mass has already been multiplied by $b$.\n* $1.5$ — reporting the growth factor $b$ instead of the constant $a$ the question asks for.\n* $48$ — dividing $96$ by $2$ rather than by the actual growth factor $1.5$.\n\n**Test Day Takeaway:** In $m(t) = ab^t$, the constant $a$ is the value at $t = 0$. When the table starts at $t = 1$, find $b$ from consecutive ratios and divide back one step to reach $a$."
+}

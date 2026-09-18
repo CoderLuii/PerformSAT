@@ -5,7 +5,7 @@
  * routing-identical. All corpus deps are stubbed — pure-function tests.
  */
 
-import { resolveActivityDrill } from '../activityDrillRouter';
+import { resolveActivityDrill, pickModuleWeakness } from '../activityDrillRouter';
 
 const mkQ = (id) => ({ id, choices: [{ id: 'a' }, { id: 'b' }, { id: 'c' }] });
 
@@ -312,5 +312,25 @@ describe('resolveActivityDrill — section awareness (format v2 R&W activities)'
     expect(getTargetedWeaknessSet).toHaveBeenCalled();
     expect(getRWTargetedWeaknessSet).not.toHaveBeenCalled();
     expect(route).toMatchObject({ kind: 'assigned', questionIds: ['m-1'] });
+  });
+});
+
+describe('pickModuleWeakness (legacy module/section cards)', () => {
+  const W = [
+    { skillId: 'slope-intercept-form', skill: 'Slope-intercept form', modules: ['module-1'], sections: ['module-1'], errorType: 'conceptual_gap', accuracy: 40 },
+    { skillId: 'circle-equations', skill: 'Circle equations', modules: ['geometry-circles'], sections: ['geometry-circles'], accuracy: 30 },
+  ];
+  test('exact skillId wins', () => {
+    expect(pickModuleWeakness({ skillId: 'circle-equations', moduleId: 'module-1' }, W)).toBe(W[1]);
+  });
+  test('a module named in modules/sections matches when there is no skillId', () => {
+    expect(pickModuleWeakness({ moduleId: 'geometry-circles', sectionName: 'Arcs' }, W)).toBe(W[1]);
+    expect(pickModuleWeakness({ moduleId: 'module-1' }, W)).toBe(W[0]);
+  });
+  test('no match means null, never a guess', () => {
+    expect(pickModuleWeakness({ moduleId: 'linear-equations', sectionName: 'Deriving Equations' }, W)).toBeNull();
+    expect(pickModuleWeakness({ skillId: 'unknown' }, W)).toBeNull();
+    expect(pickModuleWeakness(null, W)).toBeNull();
+    expect(pickModuleWeakness({ moduleId: 'module-1' }, [])).toBeNull();
   });
 });

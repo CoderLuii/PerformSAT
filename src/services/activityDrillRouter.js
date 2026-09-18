@@ -170,3 +170,28 @@ export function resolveActivityDrill(
   // SOMEWHERE rather than a dead button.
   return moduleRoute;
 }
+
+/**
+ * Best-effort weakness for a MODULE-routed plan card (legacy activities that
+ * carry only moduleId/sectionName, no skillId). The prescriptive launcher used
+ * to hard-code `weakness: null`, so the drill's diagnostic sentence never
+ * rendered on those cards. Match conservatively — a sentence about the wrong
+ * skill is worse than none: exact skillId first, then a weakness whose
+ * `modules` / `sections` name this module.
+ *
+ * @param {object} activity   plan activity ({ skillId?, moduleId? })
+ * @param {Array}  weaknesses studyPlan.weaknesses (drill-shape)
+ * @returns {object|null}     the matching weakness, or null
+ */
+export function pickModuleWeakness(activity, weaknesses = []) {
+  if (!activity || !Array.isArray(weaknesses) || weaknesses.length === 0) return null;
+  if (activity.skillId) {
+    const exact = weaknesses.find(w => w && w.skillId === activity.skillId);
+    if (exact) return exact;
+  }
+  if (!activity.moduleId) return null;
+  return weaknesses.find(w => w && (
+    (Array.isArray(w.modules) && w.modules.includes(activity.moduleId))
+    || (Array.isArray(w.sections) && w.sections.includes(activity.moduleId))
+  )) || null;
+}

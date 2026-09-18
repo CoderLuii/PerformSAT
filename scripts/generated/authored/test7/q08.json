@@ -1,40 +1,40 @@
 {
-  "id": 708,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "craft-and-structure",
-  "skill": "cross-text-connections",
-  "module": 1,
-  "passages": [
-    {
-      "label": "Text 1",
-      "text": "In Ancient Voyagers in the Pacific (1956), the historian Andrew Sharp challenged the romantic image of Polynesian seafarers deliberately crossing thousands of miles of open ocean to settle distant islands. The navigational methods available to these voyagers, Sharp argued, were good enough for trips of a few hundred miles within sight of known landmarks but could not have kept a canoe on a fixed bearing across the vast empty stretches between island groups. Without instruments, he reasoned, small errors in course and distance would build up beyond any chance of correction. Sharp concluded that the more remote islands were reached not by planned two-way voyages but by accidental, one-way drift—canoes blown off course and carried by wind and current to land they had never sought."
-    },
-    {
-      "label": "Text 2",
-      "text": "The anthropologist Ben Finney took a different view, and tested it on the water. With the Polynesian Voyaging Society, Finney helped build Hōkūleʻa, a double-hulled canoe modeled on traditional craft, and in 1976 sailed it from Hawaiʻi to Tahiti guided only by a navigator reading the stars, the ocean swells, and the flight paths of birds—no compass, no charts. The voyage succeeded, and was repeated. For Finney, the achievement showed that traditional non-instrument navigation was precise and reliable enough to support deliberate, repeatable passages across exactly the open distances Sharp had judged impassable. The settlement of the remote Pacific, he argued, was the work of skilled navigators who could find their way out and back, not of drifting castaways."
-    }
-  ],
-  "question": "Based on the texts, how would Finney (Text 2) most likely respond to the conclusion presented in Text 1?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Finney would argue that Sharp underestimated traditional navigation: canoes could in fact hold a deliberate course across the distances Sharp judged impassable."
-    },
-    {
-      "id": "B",
-      "text": "Finney would accept that long-distance voyaging was impossible but suggest that drifting canoes reached their destinations more often than Sharp allowed."
-    },
-    {
-      "id": "C",
-      "text": "He would agree that the remote islands were settled by accident, adding only that later voyagers learned to retrace those chance routes on purpose."
-    },
-    {
-      "id": "D",
-      "text": "Finney would treat the question as unresolvable, since no record survives of how any particular island was first reached."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. Sharp's conclusion rests on the premise that non-instrument navigation could not keep a canoe on course across open ocean. Finney's Hōkūleʻa voyage was designed to test exactly that premise, and its success leads him to reject Sharp's factual assumption rather than merely soften his conclusion. Choice B has Finney conceding the very impossibility his voyage disproved. Choice C aligns him with the drift hypothesis he opposed, and Choice D makes him an agnostic, whereas Text 2 shows him drawing a confident conclusion from the voyage."
+ "id": 708,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "craft-and-structure",
+ "skill": "cross-text-connections",
+ "module": 1,
+ "passages": [
+  {
+   "label": "Text 1",
+   "text": "In experiments reported through the 1940s and 1950s, the zoologist Karl von Frisch observed that a honeybee returning from a rich food source performs a repeated figure-eight movement — a 'waggle dance' — on the comb, and that the dance's angle and duration correspond to the direction and distance of the source. Hive mates that attended the dancer, he found, arrived at the advertised site far more often than chance would predict. Von Frisch concluded that the dance is a symbolic communication system through which a forager directs nest mates to food they have never seen."
+  },
+  {
+   "label": "Text 2",
+   "text": "The biologist Adrian Wenner questioned whether recruited bees actually use the dance's spatial code. Bees are superb learners of odors, he noted, and a recruit leaving the hive carries the scent of the food the dancer collected. In his experiments, recruits often turned up at strongly scented sites that the dance, read as a code, had not indicated. Recruitment, Wenner argued, could rest on odor alone, and the dance-language conclusion would remain undemonstrated until experiments separated what the dance encodes from what the bees can smell."
+  }
+ ],
+ "question": "Based on the texts, how would Wenner (Text 2) most likely respond to the conclusion presented in Text 1?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "He would argue that it outruns the evidence, since recruits' arrivals at food sources could be guided by odors they associate with the dancer rather than by a decoded dance."
+  },
+  {
+   "id": "B",
+   "text": "He would accept that recruits decode the dance's directional information but maintain that odors determine which blossoms they visit after arriving."
+  },
+  {
+   "id": "C",
+   "text": "He would deny that returning foragers perform any repeated movement on the comb at all."
+  },
+  {
+   "id": "D",
+   "text": "He would contend that symbolic communication is common among insects and that von Frisch's finding is therefore unremarkable."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** Von Frisch's conclusion rests on recruits arriving at the advertised site; Wenner's whole case is that odor could produce those arrivals without any decoding, so the symbolic-dance conclusion \"would remain undemonstrated\" until the two cues are separated.\n\n**The Full Solution:**\n- Text 1's evidence is arrival: bees that attended the dance reached the site more often than chance, so von Frisch inferred a decoded symbolic message.\n- Text 2 supplies a rival route to the same arrivals — recruits carry the food's scent from the dancer and are superb odor learners, and in Wenner's experiments they turned up at scented sites the dance had not indicated.\n- Wenner's demand that experiments separate dance information from smell is precisely the charge that Text 1's conclusion goes beyond what its evidence shows.\n\n**Why the other choices are wrong:**\n- B: It concedes the very point Wenner disputes — that recruits decode the dance's spatial information at all.\n- C: It overshoots — Wenner questions what the dance accomplishes, not whether the movement occurs.\n- D: It attributes a claim about insects in general that Text 2 never makes, and it accepts the symbolic reading Wenner calls undemonstrated."
 }

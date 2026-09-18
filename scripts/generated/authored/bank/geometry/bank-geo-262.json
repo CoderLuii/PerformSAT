@@ -1,0 +1,45 @@
+{
+ "id": "bank-geo-262",
+ "question": "The gable bracket above a shop's window display is the isosceles right triangle shown, with angle measures in degrees. What is the value of $y$?",
+ "diagram": {
+  "type": "triangleWithAngles",
+  "params": {
+   "angleLabels": [
+    "(2y - 5)°",
+    "(y + 20)°",
+    "90°"
+   ],
+   "vertexLabels": [
+    "P",
+    "Q",
+    "R"
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$25$"
+  },
+  {
+   "id": "B",
+   "text": "$47.5$"
+  },
+  {
+   "id": "C",
+   "text": "$55$"
+  },
+  {
+   "id": "D",
+   "text": "$70$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "sets 2y - 5 equal to 90, giving y = 47.5",
+  "C": "omits the right angle from the sum, solving 3y + 15 = 180",
+  "D": "sets y + 20 equal to 90, giving y = 70"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: 45-45-90 Triangle**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The three angles sum to $180°$: $(2y-5)+(y+20)+90=180$ gives $3y=75$, so $y=25$.\n\n**The Full Solution:**\n\nStep 1: Write the angle sum. $(2y-5)+(y+20)+90=180$.\n\nStep 2: Combine like terms. $3y+105=180$, so $3y=75$ and $y=25$.\n\nStep 3: Confirm the shape. The acute angles become $2(25)-5=45$ and $25+20=45$, the equal base angles of a $45$-$45$-$90$ triangle.\n\nCheck: $45+45+90=180$, and the two base angles match, as an isosceles right triangle requires.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($47.5$): sets $2y-5=90$, assigning the right angle to the wrong vertex.\n* Choice C ($55$): leaves the $90°$ angle out of the sum, solving $3y+15=180$.\n* Choice D ($70$): sets $y+20=90$, again placing the right angle at a labeled acute vertex.\n\n**Test Day Takeaway:** With one right angle marked, the two remaining expressions must add to $90°$ — and in an isosceles right triangle they must also be equal."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "A survey drawing places a drainage channel along the line $6y = 15 - 4x$. A retaining wall crosses the channel at a right angle. What is the slope of the retaining wall?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{3}{2}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{2}{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{2}{3}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{3}{2}$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "takes the reciprocal of the channel's slope but keeps the negative sign",
+  "B": "reports the channel's own slope instead of the slope of a line perpendicular to it",
+  "C": "changes the sign of the channel's slope without taking the reciprocal"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Slope**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** The channel's slope is $-\\frac{4}{6} = -\\frac{2}{3}$, and a perpendicular line has the negative reciprocal, $\\frac{3}{2}$.\n\n**The Full Solution:**\nStep 1: Put the channel's equation in slope-intercept form. Dividing both sides of $6y = 15 - 4x$ by $6$ gives $y = -\\frac{2}{3}x + \\frac{5}{2}$.\nStep 2: The channel therefore has slope $-\\frac{2}{3}$. Two lines meet at a right angle exactly when their slopes are negative reciprocals, so multiply the slopes to $-1$.\nStep 3: The negative reciprocal of $-\\frac{2}{3}$ is $\\frac{3}{2}$. Check: $\\left(-\\frac{2}{3}\\right)\\left(\\frac{3}{2}\\right) = -1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{3}{2}$): flips $-\\frac{2}{3}$ but leaves the minus sign in place. The product of the slopes would then be $+1$, not $-1$.\n* Choice B ($-\\frac{2}{3}$): this is the channel's own slope. A wall with that slope would run parallel to the channel, never crossing it.\n* Choice C ($\\frac{2}{3}$): changes the sign only. Flipping the sign without inverting the fraction gives a line that crosses the channel, but not at $90^\\circ$.\n\n**Test Day Takeaway:** Perpendicular means two changes, not one: flip the fraction and change the sign. Multiplying your answer by the original slope should give exactly $-1$."
+}

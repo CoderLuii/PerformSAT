@@ -6,26 +6,26 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
-  "passage": "When the Lumiere brothers projected films for a paying audience in 1895, some viewers reportedly flinched at the image of an oncoming train. Early commentators treated such reactions as proof that audiences could not yet tell a moving picture from reality. Later historians find this explanation ______, noting that the same audiences calmly watched dozens of other scenes and returned for more, behavior that hardly suggests genuine confusion about what they were seeing.",
+  "passage": "Figures for the output of Roman mints recorded by ancient writers were long treated with suspicion, some scholars assuming that any such tally was little better than guesswork. The evidence of the coins themselves, however, ______ that assumption: because every hand-cut die left distinctive flaws on the coins it struck, researchers can count the dies a mint used in a given period and estimate its output, and several of the resulting estimates align closely with the recorded figures.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "persuasive"
+      "text": "echoes"
     },
     {
       "id": "B",
-      "text": "inevitable"
+      "text": "predates"
     },
     {
       "id": "C",
-      "text": "flattering"
+      "text": "conceals"
     },
     {
       "id": "D",
-      "text": "overstated"
+      "text": "belies"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"overstated.\" The second half of the passage gives evidence against the early explanation: audiences watched many scenes calmly and came back, which does not look like real confusion. To say historians find the explanation \"overstated\" is to say they think it claims more than the evidence supports, which matches that contrast. \"Persuasive\" would mean the historians accept the explanation, the opposite of the point. \"Inevitable\" and \"flattering\" describe qualities the passage never raises; the issue is whether the claim is exaggerated, not whether it is unavoidable or complimentary."
+  "explanation": "**Choice D is correct.** \"Belies\" means shows to be false, and that is the relation the sentence needs: if independent die counts match the ancient figures, the assumption that those figures were guesswork cannot stand.\n\n**The Full Solution:**\n- The blank governs the relation between the coin evidence and \"that assumption\" — the view that ancient tallies were guesswork.\n- The colon explains that die-based estimates \"align closely with the recorded figures,\" which discredits the guesswork assumption; \"however\" confirms the blank must oppose it.\n- A word meaning contradicts or gives the lie to — \"belies\" — completes the logic.\n\n**Why the other choices are wrong:**\n- A: \"Echoes\" would have the evidence repeating the assumption, but the evidence undermines it.\n- B: \"Predates\" states a chronological relation, while the sentence — flagged by \"however\" and the colon's reasoning — requires a logical one.\n- C: \"Conceals\" would mean the evidence hides the assumption, an incoherent relation between data and a scholarly view."
 }

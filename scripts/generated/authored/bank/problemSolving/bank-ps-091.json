@@ -1,0 +1,98 @@
+{
+  "id": "bank-ps-091",
+  "question": "The scatterplot shows the annual maintenance cost $y$, in hundreds of dollars, for each of $12$ machines and the age $x$, in years, of that machine, along with the line of best fit $\\hat{y} = 1.2x + 8$. For which of the following data points does the line of best fit most underestimate the actual annual maintenance cost?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          10
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          8,
+          24
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          14,
+          28
+        ],
+        [
+          16,
+          26
+        ],
+        [
+          18,
+          30
+        ],
+        [
+          19,
+          22
+        ],
+        [
+          20,
+          31
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 22,
+      "yMin": 0,
+      "yMax": 36,
+      "xGridStep": 2,
+      "yGridStep": 4,
+      "xLabelStep": 4,
+      "yLabelStep": 8,
+      "xLabel": "Age (years)",
+      "yLabel": "Maintenance cost (hundreds of dollars)",
+      "bestFitLine": {
+        "slope": 1.2,
+        "intercept": 8
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(3, 14)$"
+    },
+    {
+      "id": "B",
+      "text": "$(8, 24)$"
+    },
+    {
+      "id": "C",
+      "text": "$(14, 28)$"
+    },
+    {
+      "id": "D",
+      "text": "$(19, 22)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "smallest predicted value, not the largest underestimate",
+    "C": "greatest actual y-value among the choices",
+    "D": "greatest residual in absolute value, but the line overestimates there"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Residual**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** Underestimating means a positive residual, and the residuals are $2.4$, $6.4$, $3.2$, and $-8.8$; the largest is $6.4$ at $(8, 24)$.\n\n**The Full Solution:**\nStep 1: The line underestimates wherever $y > \\hat{y}$, so compare each point's residual $y - \\hat{y}$.\nStep 2: $\\hat{y}(3) = 11.6$, $\\hat{y}(8) = 17.6$, $\\hat{y}(14) = 24.8$, and $\\hat{y}(19) = 30.8$.\nStep 3: The residuals are $14 - 11.6 = 2.4$, $24 - 17.6 = 6.4$, $28 - 24.8 = 3.2$, and $22 - 30.8 = -8.8$. The greatest positive residual is $6.4$.\nCheck: $(8, 24)$ is the point that sits farthest above the line on the graph. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($(3, 14)$): This point has the smallest predicted value, $11.6$; a low prediction is not the same as a large underestimate. Its residual is only $2.4$.\n* Choice C ($(14, 28)$): This has the greatest actual $y$-value of the four, but the line already predicts $24.8$ there, so the miss is just $3.2$.\n* Choice D ($(19, 22)$): This has the largest residual in size, $8.8$, but it is negative: the line overestimates the cost at that point.\n\n**Test Day Takeaway:** \"Underestimates\" fixes the sign: compare positive residuals only, never absolute distances from the line."
+}

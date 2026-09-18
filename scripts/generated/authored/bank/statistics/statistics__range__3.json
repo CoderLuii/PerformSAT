@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "question": "A data set of $12$ values has a least value of $14$ and a greatest value of $53$. A thirteenth value, $9$, is then included in the data set. What is the range of the $13$ values?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$5$"
+    },
+    {
+      "id": "B",
+      "text": "$39$"
+    },
+    {
+      "id": "C",
+      "text": "$44$"
+    },
+    {
+      "id": "D",
+      "text": "$48$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports $14 - 9$, the amount the minimum dropped, instead of the new range.",
+    "B": "keeps the original range, assuming an added value cannot change it.",
+    "D": "adds the new value to the original range, $39 + 9$, instead of subtracting it from the maximum."
+  },
+  "correctAnswer": "C",
+  "hint": "Decide whether the new value replaces the old minimum, the old maximum, or neither.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** The new value $9$ is below $14$, so the minimum becomes $9$ while the maximum stays $53$: the range is $53 - 9 = 44$.\n\n**The Full Solution:**\nStep 1: The original range is $53 - 14 = 39$.\nStep 2: Since $9 < 14$, the new value becomes the least value of the data set; the greatest value is unchanged at $53$.\nStep 3: The new range is $53 - 9 = 44$. Check: $44$ exceeds the original range by exactly $14 - 9 = 5$, the amount the minimum dropped. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): reports $14 - 9$, the amount the minimum dropped, instead of the new range.\n* Choice B ($39$): keeps the original range, assuming an added value cannot change it.\n* Choice D ($48$): adds the new value to the original range, $39 + 9$, instead of subtracting it from the maximum.\n\n**Test Day Takeaway:** A value added outside the current extremes replaces one of them. Recompute maximum minus minimum rather than adjusting the old range by a guess."
+}

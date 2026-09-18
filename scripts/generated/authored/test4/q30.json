@@ -5,30 +5,30 @@
   "band": 4,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
+  "module": 2,
+  "passage": "Along one stretch of a desert river, gauges record substantially less water flowing out at the downstream end than enters upstream, with no visible channel carrying the difference away. Hydrologists do not treat the gap as evidence of waste or error but as a quantity to ______ with the rest of the basin's water budget: the missing flow, seeping down through the streambed, reappears in the ledger as recharge to the aquifer below.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "obstructive"
+      "text": "equate"
     },
     {
       "id": "B",
-      "text": "marginal"
+      "text": "discard"
     },
     {
       "id": "C",
-      "text": "ornamental"
+      "text": "inflate"
     },
     {
       "id": "D",
-      "text": "discriminating"
+      "text": "reconcile"
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D. Diaz Merced argues that the ear is well tuned to catching short patterns in noisy data and that faint features lost in a graph stand out when heard, so hearing the data can be more \"discriminating\" — better at telling fine differences apart — than seeing it. \"Obstructive\" runs the opposite way; \"marginal\" denies the very advantage she claims; and \"ornamental\" treats the method as decorative rather than as a tool for detection.",
-  "passage": "Astrophysicist Wanda Diaz Merced, who lost her sight as a graduate student, developed methods for studying time-series data from space-physics instruments by turning it into sound rather than visual displays. Sonification, as it is called, is often treated as a workaround for blind researchers. But Diaz Merced argues that for any analyst hunting faint signals, hearing the data can be more ______ than seeing it: the ear is well tuned to catching short patterns in noisy streams, and features that wash out in a graph can stand out clearly when they are played as sound.",
+  "explanation": "**Choice D is correct.** The gap between gauges looks like a contradiction in the accounts, and the hydrologists' move — tracing the missing flow to aquifer recharge — brings the figures into agreement. \"Reconcile\" is the word for squaring an apparent discrepancy with the rest of an account.\n\n**The Full Solution:**\n- The setup is bookkeeping language: a \"water budget,\" a \"ledger,\" an unexplained shortfall.\n- The resolution keeps the missing water in the accounts by entering it as recharge below the streambed.\n- Making the shortfall consistent with the budget is reconciliation, not rejection.\n\n**Why the other choices are wrong:**\n- A: \"Equate\" would assert the gap equals the budget itself, a claim that makes no sense here.\n- B: \"Discard\" is precisely what the hydrologists refuse to do with the discrepancy.\n- C: \"Inflate\" means to exaggerate the quantity, not to account for it.",
   "_meta": {
-    "anchor": "Wanda Diaz Merced — sonification of astronomical data (entity_keep); trimmed"
-  },
-  "module": 2
+    "anchor": "losing streams and aquifer recharge; hard words-in-context"
+  }
 }

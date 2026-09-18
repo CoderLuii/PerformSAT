@@ -1,0 +1,52 @@
+{
+  "id": "bank-ps-268",
+  "question": "The table shows the number of beads of each color in a pouch. Three beads will be selected at random from the pouch, one at a time without replacement. What is the probability that the three beads selected are all different colors?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Color",
+        "Number of beads"
+      ],
+      "rows": [
+        [
+          "Amber",
+          "5"
+        ],
+        [
+          "Clear",
+          "4"
+        ],
+        [
+          "Blue",
+          "3"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{22}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{3}{22}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{5}{24}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{3}{11}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "counts one color order only (5/12)(4/11)(3/10)",
+    "B": "multiplies the single-order probability by 3 instead of by 3! = 6",
+    "C": "with replacement: 6 times (5/12)(4/12)(3/12)"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** One specific order, amber then clear then blue, has probability $\\frac{5}{12} \\times \\frac{4}{11} \\times \\frac{3}{10} = \\frac{60}{1{,}320} = \\frac{1}{22}$. Three different colors can come out in $3! = 6$ orders, each with this same probability, so the answer is $6 \\times \\frac{1}{22} = \\frac{6}{22} = \\frac{3}{11}$.\n\n**The Full Solution:**\nStep 1: From the table, there are $5 + 4 + 3 = 12$ beads. For the order amber, clear, blue: $\\frac{5}{12} \\times \\frac{4}{11} \\times \\frac{3}{10} = \\frac{60}{1{,}320}$.\nStep 2: Any other order of the three colors, such as blue, amber, clear, gives the same product $\\frac{3 \\times 5 \\times 4}{12 \\times 11 \\times 10}$ because the numerators are the same three counts and the denominators are the same $12, 11, 10$. There are $3 \\times 2 \\times 1 = 6$ such orders.\nStep 3: Total probability: $6 \\times \\frac{60}{1{,}320} = \\frac{360}{1{,}320} = \\frac{3}{11}$. Check: the number of unordered 3-bead selections is $\\frac{12 \\times 11 \\times 10}{6} = 220$, and one-of-each selections number $5 \\times 4 \\times 3 = 60$; $\\frac{60}{220} = \\frac{3}{11}$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{22}$): counts only one order of the three colors; the question does not specify an order.\n* Choice B ($\\frac{3}{22}$): multiplies by $3$, the number of colors, instead of by $3! = 6$, the number of orders.\n* Choice C ($\\frac{5}{24}$): $6 \\times \\frac{5 \\times 4 \\times 3}{12^3} = \\frac{360}{1{,}728}$ keeps the denominator at $12$ for every draw, which assumes replacement.\n\n**Test Day Takeaway:** When no order is specified, compute one order's probability and multiply by the number of orders; without replacement, the denominators still step down $12, 11, 10$."
+}

@@ -9,37 +9,21 @@
   "studentNotes": {
     "intro": "While researching a topic, a student has taken the following notes:",
     "bullets": [
-      "Frans de Waal (1948-2024) was a Dutch-American primatologist at Emory University in Atlanta.",
-      "He directed the Living Links Center at the Yerkes National Primate Research Center for many years.",
-      "His 1982 book *Chimpanzee Politics* described coalition-building and reconciliation among captive chimpanzees at Arnhem Zoo.",
-      "His 1996 book *Good Natured* argued that the building blocks of human morality are visible in other primates.",
-      "De Waal's 2003 capuchin-monkey study with Sarah Brosnan reported that monkeys reject unequal pay for equal work.",
-      "He coined the term \"inequity aversion\" to describe the negative reaction primates show when a partner receives a better reward."
+      "An artesian well taps groundwater trapped under pressure between layers of impermeable rock, so the water rises on its own, without pumping.",
+      "The Grenelle well in Paris was drilled between 1833 and 1841 under the direction of the engineer Louis-Georges Mulot.",
+      "The borehole finally struck pressurized water at a depth of 548 meters.",
+      "When the drill broke through in 1841, water surged up the shaft and jetted above street level.",
+      "The well went on to supply Parisian fountains and public water needs for decades."
     ],
-    "goal": "The student wants to introduce de Waal's research to a reader unfamiliar with his work."
+    "goal": "The student wants to introduce the Grenelle well to an audience unfamiliar with it."
   },
   "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Frans de Waal was a Dutch-American primatologist whose books argued that the building blocks of human morality and social behavior are visible in other primates."
-    },
-    {
-      "id": "B",
-      "text": "In a 2003 study with Sarah Brosnan, de Waal reported that capuchin monkeys reject unequal pay for equal work, a reaction he called \"inequity aversion.\""
-    },
-    {
-      "id": "C",
-      "text": "De Waal directed the Living Links Center at the Yerkes National Primate Research Center for many years before his death in 2024."
-    },
-    {
-      "id": "D",
-      "text": "Although de Waal published widely on primates, his work centered on the captive chimpanzee colony at Arnhem Zoo rather than on broad claims about behavior."
-    }
+    { "id": "A", "text": "Completed in Paris in 1841 after eight years of drilling, the Grenelle well tapped water so deeply pressurized that it rose 548 meters to the surface without pumping." },
+    { "id": "B", "text": "The engineer Louis-Georges Mulot directed one of the most difficult and celebrated drilling projects undertaken in Europe in the nineteenth century." },
+    { "id": "C", "text": "An artesian well requires no pumping because its water is trapped under pressure between layers of impermeable rock." },
+    { "id": "D", "text": "In 1841, water from the Grenelle well jetted above street level, and the well went on to supply the fountains and public water needs of Paris for several decades afterward." }
   ],
   "correctAnswer": "A",
-  "explanation": "The goal is to introduce de Waal's research to a reader who does not know it, so the best choice names who he was and the central argument running through his major books. Choice A does this, summarizing the claim that the roots of human morality and social behavior appear in other primates. Choices B and C give a single study or an administrative role, and D narrows his work to one zoo colony, which would mislead a newcomer about its scope.",
-  "_meta": {
-    "anchor": "Frans de Waal, primatology"
-  }
+  "explanation": "**Choice A is correct.** An introduction for unfamiliar readers must say what the Grenelle well is, where and when it was made, and what made it remarkable — and A folds all three into one sentence: a Paris well finished in 1841 after eight years of drilling, drawing on water pressurized enough to rise 548 meters unaided.\n\n**The Full Solution:**\n- The goal has two demands: identify the well and make it intelligible to readers who have never heard of it.\n- A names it, places it, dates it, and explains the defining fact — water rising 548 meters to the surface with no pumping.\n\n**Why the other choices are wrong:**\n- B: It introduces the engineer, not the well — the well itself is never even named.\n- C: It defines artesian wells in general and never mentions the Grenelle well at all.\n- D: It assumes the reader already knows what the Grenelle well is, recounting its debut and its later service without ever identifying what kind of thing it was or why the water rose at all."
 }

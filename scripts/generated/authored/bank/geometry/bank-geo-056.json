@@ -1,0 +1,59 @@
+{
+ "question": "A loudspeaker's aiming line, a stage truss, and a vertical support form the right triangle in the figure, whose acute angles are marked $\\theta$ and $\\phi$. Given that $\\sin\\theta = \\frac{20}{29}$, what is $\\tan\\phi$?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     21,
+     0
+    ],
+    [
+     21,
+     20
+    ]
+   ],
+   "labels": [
+    "θ",
+    "",
+    "φ"
+   ],
+   "sideLabels": [
+    "",
+    "",
+    "29"
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{20}{29}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{21}{29}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{20}{21}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{21}{20}$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports sin theta unchanged, 20/29",
+  "B": "reports cos theta, which equals sin phi rather than tan phi",
+  "C": "reports tan theta, 20/21, instead of tan phi"
+ },
+ "explanation": "**SAT Pattern: Cofunction Identity**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The acute angles are complementary, so $\\tan\\phi = \\frac{1}{\\tan\\theta}$; with legs $20$ and $21$ against hypotenuse $29$, $\\tan\\phi = \\frac{21}{20}$.\n\n**The Full Solution:**\nStep 1: $\\sin\\theta = \\frac{20}{29}$ means the leg opposite $\\theta$ is $20$ and the hypotenuse is $29$, so the remaining leg is $\\sqrt{29^2 - 20^2} = \\sqrt{441} = 21$.\nStep 2: Because $\\theta + \\phi = 90^{\\circ}$, the leg opposite $\\theta$ is adjacent to $\\phi$ and vice versa: $\\cos\\phi = \\sin\\theta = \\frac{20}{29}$ and $\\sin\\phi = \\cos\\theta = \\frac{21}{29}$.\nStep 3: Therefore $\\tan\\phi = \\frac{\\sin\\phi}{\\cos\\phi} = \\frac{21/29}{20/29} = \\frac{21}{20}$. Check: $\\tan\\theta = \\frac{20}{21}$, and the two tangents multiply to $1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{20}{29}$): copies $\\sin\\theta$, which equals $\\cos\\phi$, not $\\tan\\phi$.\n* Choice B ($\\frac{21}{29}$): gives $\\cos\\theta$, the same as $\\sin\\phi$ — still a sine or cosine, not a tangent.\n* Choice C ($\\frac{20}{21}$): reports $\\tan\\theta$, the reciprocal of what was asked.\n\n**Test Day Takeaway:** Complementary acute angles swap opposite and adjacent, so their sines and cosines trade places and their tangents are reciprocals.",
+ "id": "bank-geo-056"
+}

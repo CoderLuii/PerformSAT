@@ -6,7 +6,7 @@
   "band": 4,
   "domain": "expression-of-ideas",
   "skill": "transitions",
-  "passage": "When a research team set out to learn why a long-planned memorial had stalled, they expected the dispute to be about money, who would pay for construction and upkeep. ______ they found that the parties agreed about funding and disagreed instead about wording: what the memorial's inscription should say had happened, and to whom.",
+  "passage": "When the warship Vasa was raised from Stockholm harbor in 1961 after more than three centuries underwater, conservators braced for the enemy they knew: rot, the fungal decay that consumes waterlogged wood once it meets the air. ______ the gravest threat emerged from within the timbers themselves — tons of sulfur absorbed from the polluted harbor had begun oxidizing into sulfuric acid, the reaction hastened by iron leached from the ship's corroded bolts.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
@@ -27,5 +27,5 @@
     }
   ],
   "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"Instead.\" The team expected a dispute about money but found a dispute about wording, so the transition must mark that the reality replaced the expectation. \"Instead\" does that. \"Moreover\" would add a further point, \"Likewise\" would signal similarity, and \"Therefore\" would make the finding a consequence of the expectation, none of which fits a result that overturned what the team anticipated."
+  "explanation": "**Choice D is correct.** The conservators prepared for one threat, and a different one materialized in its place — the expected danger displaced by an unexpected one. \"Instead,\" is the transition of substitution.\n\n**The Full Solution:**\n- Before the blank: the anticipated enemy, rot.\n- After the blank: the actual gravest threat, acid forming inside the timbers — not the thing braced for.\n- When what happens replaces what was expected, \"Instead\" marks the swap.\n\n**Why the other choices are wrong:**\n- A: \"Moreover\" would stack the acid on top of rot as an additional realized threat, but the text opposes the expectation to the outcome rather than adding to it.\n- B: \"Likewise\" asserts similarity between rot and the acid threat, missing that the second displaced the first in the conservators' reckoning.\n- C: \"Therefore\" would make the acid a consequence of the conservators' bracing for rot, a causal link that does not exist."
 }

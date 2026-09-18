@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "crystal,"
-    },
-    {
-      "id": "B",
-      "text": "crystal;"
-    },
-    {
-      "id": "C",
-      "text": "crystal"
-    },
-    {
-      "id": "D",
-      "text": "crystal:"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The blank joins two complete sentences—\"The physicists ... worked out the law ...\" and \"the younger Bragg was just twenty-five ...\"—that are closely related but with no coordinating conjunction between them. A semicolon is the mark for joining two such independent clauses, so \"crystal;\" is correct. A comma alone makes a comma splice; no punctuation makes a run-on; and a colon would wrongly promise that the second clause explains or specifies the first, when it just adds a related fact.",
-  "passage": "The physicists William Henry Bragg and his son William Lawrence Bragg worked out the law that relates the angles of scattered X-rays to the spacing of atoms in a crystal ______ the younger Bragg was just twenty-five when the two shared the Nobel Prize for the achievement in 1915.",
-  "_meta": {
-    "anchor": "W. H. and W. L. Bragg: Bragg's law, 1915 Nobel Prize",
-    "rule": "semicolon joining two independent clauses without a coordinating conjunction"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "1960s,"
   },
-  "id": 1144,
-  "module": 2
+  {
+   "id": "B",
+   "text": "1960s;"
+  },
+  {
+   "id": "C",
+   "text": "1960s"
+  },
+  {
+   "id": "D",
+   "text": "1960s:"
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** Two independent clauses meet at the blank, and with no coordinating conjunction between them, a semicolon is the conventional joint.\n\n**The Full Solution:**\n- Clause 1: \"The biologist Arthur DeVries first isolated antifreeze glycoproteins ... in the late 1960s\" — complete.\n- Clause 2: \"the proteins proved so effective that a tiny quantity could measurably lower the freezing point of a flask of water\" — also complete.\n- Related independent clauses joined without \"and,\" \"but,\" or another coordinator take a semicolon.\n\n**Why the other choices are wrong:**\n- A: A comma alone between two independent clauses is a comma splice.\n- C: No punctuation at all fuses the clauses into a run-on.\n- D: A colon signals that what follows explains or specifies what precedes; the second clause reports a further development, not an elaboration of the isolation date.",
+ "passage": "The biologist Arthur DeVries first isolated antifreeze glycoproteins from the blood of Antarctic notothenioid fish in the late ______ the proteins proved so effective that a tiny quantity could measurably lower the freezing point of a flask of water.",
+ "_meta": {
+  "rule": "semicolon between independent clauses without a coordinator",
+  "anchor": "Antarctic fish antifreeze proteins — DeVries isolation",
+  "distractors": {
+   "A": "comma splice",
+   "C": "fused run-on",
+   "D": "colon without elaborating relation"
+  }
+ },
+ "id": 1144,
+ "module": 2
 }

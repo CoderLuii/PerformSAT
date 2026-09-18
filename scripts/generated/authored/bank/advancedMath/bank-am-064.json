@@ -1,0 +1,29 @@
+{
+  "question": "A steel shim's face area, in square millimeters, is given by $9x^{2}-49$. Which of the following expressions is equivalent to that area?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$(3x-7)^{2}$"
+    },
+    {
+      "id": "B",
+      "text": "$(3x-49)(3x+49)$"
+    },
+    {
+      "id": "C",
+      "text": "$(3x-7)(3x+7)$"
+    },
+    {
+      "id": "D",
+      "text": "$(9x-7)(9x+7)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "treated the expression as a perfect square trinomial instead of a difference of squares",
+    "B": "did not take the square root of 49, using 49 in place of 7",
+    "D": "did not take the square root of 9x squared, using 9x in place of 3x"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Difference of Squares**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** $9x^{2}=(3x)^{2}$ and $49=7^{2}$, so the area factors as $(3x-7)(3x+7)$.\n\n**The Full Solution:**\nStep 1: Recognize the form $A^{2}-B^{2}$ with $A=3x$ and $B=7$.\nStep 2: The difference of squares factors as $(A-B)(A+B)$.\nStep 3: So $9x^{2}-49=(3x-7)(3x+7)$. Check by expanding: $9x^{2}+21x-21x-49=9x^{2}-49$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(3x-7)^{2}$): expands to $9x^{2}-42x+49$, a perfect square rather than a difference.\n* Choice B ($(3x-49)(3x+49)$): does not take the square root of $49$.\n* Choice D ($(9x-7)(9x+7)$): does not take the square root of $9x^{2}$.\n\n**Test Day Takeaway:** Factor a difference of squares by square-rooting each term — the middle terms cancel, which is why no $x$-term appears.",
+  "id": "bank-am-064"
+}

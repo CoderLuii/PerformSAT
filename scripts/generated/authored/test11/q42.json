@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "inferences",
-  "question": "Which choice most logically completes the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "proves beyond doubt that a person who deliberately reduces their nightly sleep below the long-sleeper range will, as a result, measurably extend their own lifespan."
-    },
-    {
-      "id": "B",
-      "text": "need not mean that long sleep causes harm, since an underlying illness could be responsible for both the extra sleep and the raised risk."
-    },
-    {
-      "id": "C",
-      "text": "shows that the amount of time a person sleeps has no relationship of any kind to that person's health."
-    },
-    {
-      "id": "D",
-      "text": "is best explained by the finding that short sleepers and long sleepers report identical rates of chronic illness."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage notes that long sleep is often a marker of an illness that itself raises mortality, so the higher death rate among long sleepers need not mean long sleep is the cause. Choice B draws exactly that hedged conclusion. Choice A leaps to a causal prescription the passage does not license; Choice C overshoots into the claim that sleep has no relation to health at all; and Choice D asserts identical illness rates, which contradicts the passage's point that illness is more common among long sleepers.",
-  "passage": "Studies that follow large groups of people over many years often find that those who report sleeping unusually little and those who report sleeping unusually much both have higher mortality than those in the middle of the range. It is tempting to read this as evidence that too much sleep is itself harmful. But researchers caution that in such studies long sleep is frequently a marker of an existing illness—chronic pain, depression, or undiagnosed disease—that both lengthens sleep and raises mortality on its own. This caution suggests that the higher mortality observed among long sleepers ______",
-  "_meta": {
-    "anchor": "epidemiology of sleep: confounding / reverse causation in long-sleep mortality studies"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "inferences",
+ "question": "Which choice most logically completes the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "gives mycelium materials their durability advantage over animal hide."
   },
-  "id": 1142,
-  "module": 2
+  {
+   "id": "B",
+   "text": "matters little while the finishing processes that set the material's working properties remain unsettled."
+  },
+  {
+   "id": "C",
+   "text": "could likely be increased still further by fine-tuning the temperature and the humidity of the growing trays."
+  },
+  {
+   "id": "D",
+   "text": "has already persuaded most shoemakers to abandon animal leather for mycelium sheets."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The passage grants the growing stage its speed, then relocates what \"matters to a shoemaker\" — flex, stitching, wear — to the post-harvest treatments, which \"are still being worked out.\" A two-week head start counts for little while the step that determines usefulness is unresolved.\n\n**The Full Solution:**\n- Premise 1: growth is fast and controllable (weeks, tunable thickness and texture).\n- Premise 2: the properties buyers care about depend \"heavily\" on finishing, not growing.\n- Premise 3: finishing is immature. \"It follows that\" demands the conclusion these premises jointly force: the speed advantage is not yet decisive — choice B.\n\n**Why the other choices are wrong:**\n- A: The passage ties working properties to finishing, not to growing speed, and claims no durability advantage over hide.\n- C: Whether growth could be made even faster is beside the argument, which is about speed's current irrelevance.\n- D: It overshoots into a mass conversion the passage nowhere reports — and finishing's immaturity argues against it.",
+ "passage": "Mycelium grows into a harvestable sheet in about two weeks, while raising a hide-bearing animal takes years, and growers can tune a sheet's thickness and texture by adjusting temperature, humidity, and the material the fungus feeds on. But the properties that matter to a shoemaker — how the material flexes, takes stitching, and wears at the toe — depend heavily on the treatments applied after harvest, and those finishing processes are still being worked out. It follows that the speed of the growing stage ______",
+ "_meta": {
+  "anchor": "fungal leather alternatives — growth speed vs. unresolved finishing processes",
+  "distractors": {
+   "A": "mislocates the source of working properties",
+   "C": "answers a question the argument does not ask",
+   "D": "overshoot contradicted by the premises"
+  }
+ },
+ "id": 1142,
+ "module": 2
 }

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-196",
+  "question": "A thermostat setting is lowered from $75$ degrees Fahrenheit to $60$ degrees Fahrenheit. The setting is decreased by $p\\%$. What is the value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$20$"
+    },
+    {
+      "id": "C",
+      "text": "$25$"
+    },
+    {
+      "id": "D",
+      "text": "$80$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the difference in degrees",
+    "C": "divides the decrease by the new value (15/60)",
+    "D": "reports the remaining percent (60/75)"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Percent Decrease**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** The decrease is $75 - 60 = 15$ degrees, out of the original $75$: $\\frac{15}{75} = 0.20$, so $p = 20$.\n\n**The Full Solution:**\nStep 1: Percent decrease $= \\frac{\\text{original} - \\text{new}}{\\text{original}} \\times 100$.\nStep 2: Substitute: $\\frac{75 - 60}{75} \\times 100 = \\frac{15}{75} \\times 100 = 20$.\nStep 3: Check: $20\\%$ of $75$ is $15$, and $75 - 15 = 60$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): reports the drop in degrees, not the percent.\n* Choice C ($25$): divides the decrease by the new value, $\\frac{15}{60}$, instead of by the original.\n* Choice D ($80$): reports $\\frac{60}{75}$, the percent that remains, rather than the percent removed.\n\n**Test Day Takeaway:** Percent decrease is the change divided by the ORIGINAL value. The denominator is always where you started."
+}

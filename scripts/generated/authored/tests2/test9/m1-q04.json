@@ -1,0 +1,29 @@
+{
+ "id": 4,
+ "question": "A casting measured 512 degrees Celsius 4 minutes after pouring and 272 degrees Celsius 24 minutes after pouring. Over this interval, what was the average rate of change of the casting temperature, in degrees Celsius per minute?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-12$"
+  },
+  {
+   "id": "B",
+   "text": "$-10$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the 240-degree drop by the final time 24 instead of by the 20-minute interval",
+  "C": "divides by the final time 24 and also drops the negative sign",
+  "D": "right size but positive: subtracts the temperatures in the reverse order from the times"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The temperature falls $240$ degrees over $20$ minutes, so the rate is $-\\frac{240}{20}=-12$ degrees Celsius per minute.\n\n**The Full Solution:**\nStep 1: Write the two measurements as points (time, temperature): $(4,\\,512)$ and $(24,\\,272)$.\nStep 2: Average rate of change is the slope, $\\frac{y_2-y_1}{x_2-x_1}=\\frac{272-512}{24-4}=\\frac{-240}{20}$.\nStep 3: $\\frac{-240}{20}=-12$ degrees Celsius per minute. Check: $512+(-12)(20)=512-240=272$, the reading at $24$ minutes ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-10$): divides the $240$-degree drop by the clock reading $24$ instead of by the elapsed time $24-4=20$.\n* Choice C ($10$): the same wrong denominator, with the sign of a decrease dropped as well.\n* Choice D ($12$): the right magnitude but positive — the temperatures were subtracted in one order and the times in the other. A cooling casting must give a negative rate.\n\n**Test Day Takeaway:** Slope uses CHANGES, not readings: subtract both coordinates in the same order, and sanity-check the sign against the story — falling quantity, negative rate."
+}

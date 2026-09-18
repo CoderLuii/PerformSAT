@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "A chemistry lab models the mass of precipitate, in grams, by $\\hat{y} = 1.8x + 22.5$, where $x$ is the reagent volume in milliliters. At $x = 25$, three trials produced masses of $62.7$, $64.5$, and $64.5$ grams. Which statement best compares the model's prediction at $x = 25$ with the mean measured mass?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The model overestimates the mean measured mass by $3.0$ grams."
+  },
+  {
+   "id": "B",
+   "text": "The model overestimates the mean measured mass by $3.6$ grams."
+  },
+  {
+   "id": "C",
+   "text": "The model overestimates the mean measured mass by $4.8$ grams."
+  },
+  {
+   "id": "D",
+   "text": "The model underestimates the mean measured mass by $3.6$ grams."
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the middle trial value 64.5 as the centre instead of the mean 63.9",
+  "C": "compares the prediction with the smallest trial, 62.7, instead of the mean",
+  "D": "reverses the comparison, subtracting the prediction from the measurement"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Residual**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The model predicts $1.8(25) + 22.5 = 67.5$ grams; the trials average $63.9$ grams, and $67.5 - 63.9 = 3.6$ above.\n\n**The Full Solution:**\nStep 1: Evaluate the model at $x = 25$: $\\hat{y} = 1.8(25) + 22.5 = 45 + 22.5 = 67.5$ grams.\nStep 2: Average the three trials: $\\frac{62.7 + 64.5 + 64.5}{3} = \\frac{191.7}{3} = 63.9$ grams.\nStep 3: The prediction exceeds the measured mean by $67.5 - 63.9 = 3.6$ grams, so the model overestimates; check the direction: $63.9 + 3.6 = 67.5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3.0$ grams): uses $64.5$, the value two of the three trials share, as the centre, giving $67.5 - 64.5 = 3.0$; the question asks for the mean, which the low trial pulls down to $63.9$.\n* Choice C ($4.8$ grams): compares the prediction with the smallest trial alone, $67.5 - 62.7 = 4.8$, instead of with the average of all three.\n* Choice D (underestimates by $3.6$ grams): gets the size right but the direction backwards; the prediction $67.5$ is larger than the measured $63.9$, so the model runs high.\n\n**Test Day Takeaway:** Compare prediction with measurement in that order — predicted minus measured positive means the model runs high — and average every trial the question lists before comparing."
+}

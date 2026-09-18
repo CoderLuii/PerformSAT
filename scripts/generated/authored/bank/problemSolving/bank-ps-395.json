@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-395",
+  "question": "The mean of the $8$ values in a data set is $46$. Seven of the values have a sum of $308$. What is the eighth value?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$44$"
+    },
+    {
+      "id": "B",
+      "text": "$46$"
+    },
+    {
+      "id": "C",
+      "text": "$60$"
+    },
+    {
+      "id": "D",
+      "text": "$368$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the mean of the seven values, $\\frac{308}{7}$",
+    "B": "assumes the eighth value equals the mean of the data set",
+    "D": "reports the sum of all eight values, stopping after the first step"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Finding a Missing Value Given the Mean**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The eight values total $8(46) = 368$, so the eighth value is $368 - 308 = 60$.\n\n**The Full Solution:**\nStep 1: The sum of all eight values is $8(46) = 368$.\nStep 2: Seven of them account for $308$ of that total.\nStep 3: The eighth value is $368 - 308 = 60$. Check: $\\frac{308 + 60}{8} = \\frac{368}{8} = 46$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($44$): reports the mean of the seven values, $\\frac{308}{7}$\n* Choice B ($46$): assumes the eighth value equals the mean of the data set\n* Choice D ($368$): reports the sum of all eight values, stopping after the first step\n\n**Test Day Takeaway:** The mean of a data set is not the value of any one member; recover the total first, then subtract what is accounted for."
+}

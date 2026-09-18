@@ -1,0 +1,57 @@
+{
+  "id": "bank-alg-213",
+  "question": "The graph of the linear function $f$ is shown in the $xy$-plane. Which equation defines $f$?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -2,
+      "yIntercept": 4,
+      "xRange": [
+        -4,
+        6
+      ],
+      "yRange": [
+        -6,
+        8
+      ],
+      "gridInterval": 1,
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "highlightPoints": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          -2
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(x) = -\\dfrac{1}{2}x + 4$"
+    },
+    {
+      "id": "B",
+      "text": "$f(x) = -2x + 4$"
+    },
+    {
+      "id": "C",
+      "text": "$f(x) = 2x + 4$"
+    },
+    {
+      "id": "D",
+      "text": "$f(x) = 4x - 2$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "inverts the slope (run over rise)",
+    "C": "drops the sign on a decreasing line",
+    "D": "swaps the slope and the y-intercept"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reading Slope-Intercept Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The line crosses the $y$-axis at $4$ and passes through $(3, -2)$: down $6$ over $3$, so the slope is $-2$. That gives $f(x) = -2x + 4$.\n\n**The Full Solution:**\nStep 1: The $y$-intercept is where the line meets the $y$-axis: $(0, 4)$, so $b = 4$.\nStep 2: Use a second marked point, $(3, -2)$: slope $= \\dfrac{-2 - 4}{3 - 0} = \\dfrac{-6}{3} = -2$.\nStep 3: In slope-intercept form, $f(x) = -2x + 4$. Check: $f(3) = -6 + 4 = -2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\dfrac{1}{2}x + 4$): divides run by rise, inverting the slope.\n* Choice C ($2x + 4$): keeps the steepness but drops the sign; the graph falls from left to right, so the slope must be negative.\n* Choice D ($4x - 2$): swaps the roles of the two numbers, using the intercept as the slope.\n\n**Test Day Takeaway:** Read $b$ off the $y$-axis, then compute $m$ from two lattice points. A line that falls left to right has a negative $m$."
+}

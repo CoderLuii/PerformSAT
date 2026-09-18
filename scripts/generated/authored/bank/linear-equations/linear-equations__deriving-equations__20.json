@@ -1,0 +1,30 @@
+{
+ "id": 20,
+ "question": "The function $F(m) = 1{,}860 - 124m$ models the balance, in dollars, of a tuition escrow account after $m$ monthly payments of equal size. According to the model, after how many monthly payments does the account balance equal one third of its starting balance?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$15$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reduces the balance BY one third, leaving 1240 dollars, and solves for that instead",
+  "C": "solves for the balance reaching zero, 1860/124 = 15",
+  "D": "halves the monthly payment to 62 dollars and solves 1240 = 62m"
+ },
+ "correctAnswer": "B",
+ "hint": "One third of the starting balance is what remains, not what is gone.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~45s):** One third of \\$1,860 is \\$620, and $1{,}860 - 124m = 620$ gives $m = 10$.\n\n**The Full Solution:**\nStep 1: At $m = 0$ the model gives $F(0) = 1{,}860$ dollars, so the starting balance is \\$1,860 and one third of it is $\\frac{1{,}860}{3} = 620$ dollars.\nStep 2: Set the model equal to that target: $1{,}860 - 124m = 620$, so $124m = 1{,}240$.\nStep 3: Dividing gives $m = 10$ monthly payments.\n\nCheck: $F(10) = 1{,}860 - 1{,}240 = 620$, which is exactly one third of $1{,}860$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5$): reduces the balance *by* one third instead of *to* one third, solving $1{,}860 - 124m = 1{,}240$.\n* Choice C ($15$): solves for the balance reaching zero, $\\frac{1{,}860}{124} = 15$.\n* Choice D ($20$): halves the monthly payment to \\$62 and then solves $1{,}240 = 62m$.\n\n**Test Day Takeaway:** Read whether a fraction describes what remains or what was removed before writing the equation."
+}

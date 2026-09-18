@@ -1,0 +1,30 @@
+{
+ "id": 11,
+ "question": "The polynomial function $p$ satisfies $p(x) = x^3 + ax^2 + bx + 30$ for constants $a$ and $b$, and $p$ has three distinct real zeros. The table gives the value of $p$ at four inputs, two of which are zeros of $p$. What is the value of the third zero?",
+ "questionTable": {
+  "headers": [
+   "$x$",
+   "$p(x)$"
+  ],
+  "rows": [
+   [
+    "$-2$",
+    "$0$"
+   ],
+   [
+    "$1$",
+    "$24$"
+   ],
+   [
+    "$2$",
+    "$12$"
+   ],
+   [
+    "$3$",
+    "$0$"
+   ]
+  ]
+ },
+ "correctAnswer": "5",
+ "explanation": "**SAT Pattern: Polynomial Factoring with Given Factor**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~30s):** The table shows $p(-2) = 0$ and $p(3) = 0$, so $p(x) = (x + 2)(x - 3)(x - r)$. Its constant term is $(2)(-3)(-r) = 6r$, and that must equal $30$, so $r = 5$.\n\n**The Full Solution:**\nStep 1: Identify the known zeros. A zero is an input where the output is $0$, so the rows $p(-2) = 0$ and $p(3) = 0$ give the zeros $-2$ and $3$. The rows $p(1) = 24$ and $p(2) = 12$ are nonzero, so those inputs are not zeros.\nStep 2: Because $p$ is a cubic with leading coefficient $1$ and three distinct real zeros, it factors as $p(x) = (x + 2)(x - 3)(x - r)$, where $r$ is the third zero.\nStep 3: Match the constant terms. Setting $x = 0$ gives $p(0) = (2)(-3)(-r) = 6r$, and the rule gives $p(0) = 30$. So $6r = 30$ and $r = 5$. Check the whole polynomial: $(x + 2)(x - 3)(x - 5) = x^3 - 6x^2 - x + 30$, and $p(1) = 1 - 6 - 1 + 30 = 24$, matching the table. $\\checkmark$\n\n**Common Mistakes:** Entering $-5$ (writing the constant term as $-6r$ and solving $-6r = 30$, a sign slip in $(2)(-3)(-r)$); entering $15$ (dividing out only the factor $x + 2$ to get $x^2 - 8x + 15$ and reporting its constant term, which is the product of the two remaining zeros, not a zero itself); entering $30$ (reporting the constant term of the rule instead of the missing zero).\n\n**Test Day Takeaway:** A table row with output $0$ hands you a factor. Once every factor but one is known, the constant term of the product pins the last zero down in one step — no long division needed."
+}

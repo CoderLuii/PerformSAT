@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-383",
+  "question": "A spinner is divided into $12$ congruent sectors numbered $1$ through $12$, and the pointer is equally likely to stop on any sector. What is the probability that the pointer stops on a number that is a multiple of $4$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{12}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{1}{6}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{1}{4}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{1}{3}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "counts only one favorable sector",
+    "B": "counts only $8$ and $12$, omitting $4$ itself",
+    "D": "counts the multiples of $3$ — $3$, $6$, $9$, and $12$ — instead of the multiples of $4$"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Basic Probability**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The multiples of $4$ from $1$ to $12$ are $4$, $8$, and $12$, so the probability is $\\frac{3}{12} = \\frac{1}{4}$.\n\n**The Full Solution:**\nStep 1: The sectors are congruent, so all $12$ outcomes are equally likely.\nStep 2: List the favorable outcomes: $4$, $8$, and $12$ are the multiples of $4$ in this range, so there are $3$ of them.\nStep 3: The probability is $\\frac{3}{12} = \\frac{1}{4}$. Check: $12 \\div 4 = 3$, confirming that exactly $3$ of the first $12$ integers are multiples of $4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{12}$): counts only one favorable sector\n* Choice B ($\\frac{1}{6}$): counts only $8$ and $12$, omitting $4$ itself\n* Choice D ($\\frac{1}{3}$): counts the multiples of $3$ — $3$, $6$, $9$, and $12$ — instead of the multiples of $4$\n\n**Test Day Takeaway:** Write out the favorable values before counting them; a number is a multiple of itself, so do not skip the first one."
+}

@@ -6,16 +6,16 @@
  "domain": "expression-of-ideas",
  "skill": "transitions",
  "module": 1,
- "passage": "Dark asphalt and concrete absorb far more of the sun's energy during the day than soil or vegetation do, and they release that stored heat slowly through the evening. In a dense city, miles of such surfaces hold warmth long after sunset. ______ many large cities stay several degrees warmer overnight than the rural land around them, an effect that intensifies during prolonged summer heat waves.",
+ "passage": "A moss mat lies almost entirely within the boundary layer, the film of still air that clings to any surface. Wind that would strip moisture from taller plants barely stirs the air a few millimeters down, so a mat loses water far more slowly than the exposed rock around it. ______ the retained moisture supports a community of microscopic animals that could not otherwise survive on a bare boulder.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "As a result,"
+   "text": "In turn,"
   },
   {
    "id": "B",
-   "text": "Nevertheless,"
+   "text": "However,"
   },
   {
    "id": "C",
@@ -23,9 +23,9 @@
   },
   {
    "id": "D",
-   "text": "Likewise,"
+   "text": "Meanwhile,"
   }
  ],
  "correctAnswer": "A",
- "explanation": "Choice A is correct. The first sentences establish a cause—dark urban surfaces absorb heat by day and release it slowly through the evening—and the sentence with the blank states the effect: cities stay warmer overnight than the surrounding countryside. \"As a result\" marks that cause-to-effect relationship. \"Nevertheless\" would signal a contrast the passage does not present; \"For example\" would introduce an instance of a prior general claim, which this is not; and \"Likewise\" would signal a parallel case rather than a consequence."
+ "explanation": "**Choice A is correct.** The final sentence describes a further consequence in a causal chain: still air lets the mat keep moisture, and that retained moisture then supports animal life. \"In turn\" signals exactly this next link in the chain.\n\n**The Full Solution:**\n- Map the logic: boundary layer calms the air, so the mat retains water; the retained water then enables a community of microscopic animals.\n- The blank connects a cause's effect to that effect's own effect, the signature of a chained consequence, which \"In turn\" marks.\n\n**Why the other choices are wrong:**\n- B: \"However\" signals a contrast, but the last sentence extends the previous point rather than opposing it.\n- C: \"For example\" would make the animal community an illustration of slow water loss, but it is a result of it, not an instance.\n- D: \"Meanwhile\" marks simultaneous but separate happenings, yet these sentences are causally linked, not merely concurrent."
 }

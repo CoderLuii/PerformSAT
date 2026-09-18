@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "The function $f$ gives the water temperature, in degrees Celsius, at a depth of $x$ meters below the surface at an ocean monitoring station. Which statement best interprets $f(250)=9$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The water temperature is $250$ degrees Celsius at a depth of $9$ meters."
+  },
+  {
+   "id": "B",
+   "text": "The water temperature is $9$ degrees Celsius at a depth of $250$ meters."
+  },
+  {
+   "id": "C",
+   "text": "The water temperature decreases by $9$ degrees Celsius for each $250$ meters of depth."
+  },
+  {
+   "id": "D",
+   "text": "The water temperature is $9$ degrees Celsius at every depth greater than $250$ meters."
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps input and output, reading 250 as the temperature and 9 as the depth",
+  "C": "reads the single output value as a rate of change instead of one temperature reading",
+  "D": "reads one ordered pair as a statement about an entire interval of depths"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Function Evaluation**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** The number inside the parentheses is the depth and the number after the equals sign is the temperature, so $250$ meters down the water is $9$ degrees Celsius.\n\n**The Full Solution:**\nStep 1: Identify the roles. It is given that $f$ takes a depth $x$, in meters, as its input and returns a water temperature, in degrees Celsius, as its output.\nStep 2: In $f(250)=9$, the input is $250$ and the output is $9$. So the depth is $250$ meters and the temperature there is $9$ degrees Celsius.\nStep 3: Match that to the choices. Choice B states exactly this pairing. Check: written as an ordered pair the statement is $(250,\\ 9)$ — depth first, temperature second — which is the order the definition of $f$ requires ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: swaps the input and the output, reporting a temperature of $250$ degrees at a depth of $9$ meters. Nothing in the definition allows the two numbers to trade places.\n* Choice C: turns the single output into a rate of change. One equation $f(250)=9$ reports one reading, not how fast temperature falls with depth.\n* Choice D: stretches one ordered pair into a claim about every depth past $250$ meters. A function value describes one input only.\n\n**Test Day Takeaway:** In an interpretation question, name the input and the output before reading the choices. The number in the parentheses always carries the input units, and the number across the equals sign always carries the output units."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-450",
+  "question": "The total mass $m$, in grams, of a beaker and the salt solution it contains is given by $m = 1.2v + 85$, where $v$ is the volume, in milliliters, of solution in the beaker. Which of the following is the best interpretation of $1.2$ in this equation?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mass, in grams, of the empty beaker"
+    },
+    {
+      "id": "B",
+      "text": "The mass, in grams, of each milliliter of solution"
+    },
+    {
+      "id": "C",
+      "text": "The volume, in milliliters, of solution that has a mass of $85$ grams"
+    },
+    {
+      "id": "D",
+      "text": "The total mass, in grams, of the beaker when it contains $1$ milliliter of solution"
+    }
+  ],
+  "distractorNotes": {
+    "A": "describes the constant 85, the mass at v = 0.",
+    "C": "treats 85 as a volume; 85 is a mass in grams, and no volume is being solved for.",
+    "D": "the total mass with 1 milliliter is m(1) = 86.2 grams, not 1.2."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**Choice B is correct.**\n\n**The Fast Way (~8s):** $1.2$ multiplies the volume, so it is the mass added per milliliter: each milliliter of solution has a mass of $1.2$ grams.\n\n**The Full Solution:**\nStep 1: The equation is linear with slope $1.2$ and constant $85$. The constant is the mass when $v = 0$, the empty beaker.\nStep 2: The slope is the change in total mass per one-milliliter increase in volume, which is the mass of one milliliter of solution.\nStep 3: Check: $m(1) - m(0) = 86.2 - 85 = 1.2$ grams per milliliter. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (The mass, in grams, of the empty beaker): describes the constant $85$, the mass at $v = 0$.\n* Choice C (The volume, in milliliters, of solution that has a mass of $85$ grams): treats $85$ as a volume; $85$ is a mass in grams, and no volume is being solved for.\n* Choice D (The total mass, in grams, of the beaker when it contains $1$ milliliter of solution): the total mass with $1$ milliliter is $m(1) = 86.2$ grams, not $1.2$.\n\n**Test Day Takeaway:** A slope's units are output units per input unit (here grams per milliliter); use that to pick the interpretation."
+}

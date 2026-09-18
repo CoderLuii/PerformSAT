@@ -1,0 +1,29 @@
+{
+  "id": 8,
+  "question": "A storage battery holds $8{,}000$ watt-hours of usable capacity when new, and its usable capacity decreases by $5\\%$ of its current value each year. To the nearest watt-hour, what is the usable capacity after $4$ years?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6{,}400$"
+    },
+    {
+      "id": "B",
+      "text": "$6{,}516$"
+    },
+    {
+      "id": "C",
+      "text": "$6{,}859$"
+    },
+    {
+      "id": "D",
+      "text": "$7{,}600$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats the decay as linear, subtracting 5% of the ORIGINAL 8,000 four times: 8,000 - 4(400) = 6,400",
+    "C": "uses an exponent of 3 instead of 4: 8,000(0.95)^3 = 6,859",
+    "D": "applies the 5% decrease only once: 8,000(0.95) = 7,600"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Losing $5\\%$ of the current value leaves $95\\%$, so the capacity is $8{,}000(0.95)^4\\approx6{,}516$ watt-hours.\n\n**The Full Solution:**\nStep 1: “Decreases by $5\\%$ of its current value” means each year multiplies the capacity by $1-0.05=0.95$, which is exponential decay, not a fixed subtraction.\nStep 2: After $t$ years the capacity is $C(t)=8{,}000(0.95)^t$, so after $4$ years it is $8{,}000(0.95)^4$.\nStep 3: $(0.95)^4=0.81450625$, so $C(4)=8{,}000(0.81450625)=6{,}516.05$, or $6{,}516$ watt-hours. Check: stepping down year by year gives $7{,}600$, $7{,}220$, $6{,}859$, $6{,}516$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6{,}400$): treats the loss as a fixed $400$ watt-hours per year: $8{,}000-4(400)=6{,}400$. That is linear decay, and it always undershoots true decay.\n* Choice C ($6{,}859$): uses an exponent of $3$, the capacity after only three years.\n* Choice D ($7{,}600$): applies the $5\\%$ decrease a single time and stops.\n\n**Test Day Takeaway:** “By $r\\%$ of its current value” is the exponential signal — build the multiplier $1-r$ once and raise it to the number of periods."
+}

@@ -1,0 +1,53 @@
+{
+ "id": 6,
+ "question": "Four automated sky cameras logged the meteor counts given in the table during a single night. What percent of that night's logged meteors did Camera D log?",
+ "questionTable": {
+  "headers": [
+   "Camera",
+   "Meteors logged"
+  ],
+  "rows": [
+   [
+    "A",
+    "78"
+   ],
+   [
+    "B",
+    "90"
+   ],
+   [
+    "C",
+    "72"
+   ],
+   [
+    "D",
+    "60"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$20\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$25\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$30\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$80\\%$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides 60 by the other three cameras' 240 instead of by the 300 total",
+  "C": "uses Camera B's count of 90 over the 300 total",
+  "D": "gives the complement, the 240 meteors the other three cameras logged, over 300"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice A is correct.** The whole is every meteor logged that night, $78 + 90 + 72 + 60 = 300$. Camera D logged $60$ of them, and $\\frac{60}{300} = 0.20$.\n\n**The Fast Way (~20s):** The four counts total $300$, and $60$ is one fifth of $300$, so $20\\%$.\n\n**The Full Solution:**\nStep 1: Add all four counts to get the whole: $78 + 90 + 72 + 60 = 300$ meteors.\nStep 2: Form the part-to-whole ratio for Camera D: $\\frac{60}{300}$.\nStep 3: Convert to a percent: $\\frac{60}{300} = 0.2 = 20\\%$. Check: $20\\%$ of $300$ is $60$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($25\\%$): divides $60$ by $240$, the other three cameras' total. That is a part-to-rest ratio, not part-to-whole.\n* Choice C ($30\\%$): computes $\\frac{90}{300}$ — Camera B's share, read off the wrong row.\n* Choice D ($80\\%$): computes $\\frac{240}{300}$, the percent logged by every camera except D.\n\n**Test Day Takeaway:** \"Percent of\" needs the whole in the denominator. When a table lists categories, sum every row before dividing."
+}

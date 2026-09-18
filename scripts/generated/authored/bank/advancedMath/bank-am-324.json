@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-324",
+ "question": "An ant supercolony on a coastal heath holds $27^{4}$ ants in total, and a monitoring app displays that same count in the compact form $9^{x}$ ants for the field crew. What is the value of $x$?",
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Exponential Equation with Common Base**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~15s):** Both sides are powers of $3$: $3^{2x} = 3^{12}$, so $2x = 12$ and $x = 6$.\n\n**The Full Solution:**\nStep 1: Write each base as a power of $3$: $9 = 3^{2}$ and $27 = 3^{3}$.\nStep 2: Then $9^{x} = 3^{2x}$ and $27^{4} = 3^{12}$.\nStep 3: Equal bases force $2x = 12$, so $x = 6$. Check: $9^{6} = 531{,}441$ and $27^{4} = 531{,}441$ ✓\n\n**Common Mistakes:**\n* $12$ — matching $x$ to the exponent $12$ without dividing by the $2$ that came from $9 = 3^{2}$.\n* $8$ — multiplying the exponents $4$ and $2$ on the wrong side, as if $27^{4}$ were $3^{4 \\cdot 2}$.\n\n**Test Day Takeaway:** Rewrite both sides over the smallest shared base; only then are the exponents safe to equate."
+}

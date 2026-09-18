@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-057",
+  "question": "A machine fills bottles at a constant rate of $18$ bottles per minute. How many bottles does the machine fill in $1.5$ hours?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$27$"
+    },
+    {
+      "id": "B",
+      "text": "$270$"
+    },
+    {
+      "id": "C",
+      "text": "$1{,}080$"
+    },
+    {
+      "id": "D",
+      "text": "$1{,}620$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies $18$ by $1.5$ without converting hours to minutes.",
+    "B": "uses $15$ minutes instead of $90$ for $1.5$ hours.",
+    "C": "computes the bottles filled in $1$ hour and ignores the extra half hour."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Rate × Time = Total**\n\n**Choice D is correct.**\n\n**The Fast Way (~10s):** $1.5$ hours is $90$ minutes, and $18 \\times 90 = 1{,}620$ bottles.\n\n**The Full Solution:**\nStep 1: The rate is per minute, so express the time in minutes: $1.5 \\times 60 = 90$ minutes.\nStep 2: Total $=$ rate $\\times$ time $= 18 \\times 90 = 1{,}620$ bottles.\nStep 3: Check: $18$ per minute is $1{,}080$ per hour, and $1.5$ hours gives $1{,}080 + 540 = 1{,}620$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($27$): multiplies $18$ by $1.5$ without converting hours to minutes.\n* Choice B ($270$): uses $15$ minutes instead of $90$ for $1.5$ hours.\n* Choice C ($1{,}080$): computes the bottles filled in $1$ hour and ignores the extra half hour.\n\n**Test Day Takeaway:** Before multiplying rate by time, put the time in the rate's unit: $1.5$ hours must become $90$ minutes for a per-minute rate."
+}

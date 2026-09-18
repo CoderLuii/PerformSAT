@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-279",
+ "question": "A parabolic radio reflector has profile $y = 4x^2 + bx + 205$ in centimeters, where $b$ is a constant and the profile reaches its lowest point at $x = 7$. What is the minimum value of $y$?",
+ "correctAnswer": "9",
+ "explanation": "**SAT Pattern: Vertex Form to Standard Form**\n\n**The correct answer is $9$.**\n\n**The Fast Way (~35s):** A lowest point at $x = 7$ forces $b = -2(4)(7) = -56$, and $4(49) - 56(7) + 205 = 9$.\n\n**The Full Solution:**\nStep 1: The profile is lowest at $x = -\\dfrac{b}{2(4)}$, so $-\\dfrac{b}{8} = 7$ and $b = -56$.\nStep 2: The profile is therefore $y = 4x^2 - 56x + 205$.\nStep 3: Evaluate at $x = 7$: $4(49) - 56(7) + 205 = 196 - 392 + 205 = 9$. Check: completing the square gives $4(x - 7)^2 + 9$, whose minimum is $9$ ✓\n\n**Common Mistakes:**\n* Reporting $205$, the value at $x = 0$, instead of the value at the lowest point.\n* Dropping the middle term and computing $4(49) + 205 = 401$.\n* Reporting $-56$, the value of $b$, rather than the minimum value of $y$.\n\n**Test Day Takeaway:** Knowing where a parabola turns fixes $b$ through $x = -b/(2a)$, and the minimum is just the function evaluated there."
+}

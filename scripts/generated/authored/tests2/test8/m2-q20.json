@@ -1,0 +1,29 @@
+{
+  "id": 20,
+  "question": "A lab protocol models the setting time $t$, in minutes, of a gel layer as $t = \\sqrt{9d + b}$, where $d$ is the thickness of the layer in millimeters and $b$ is a constant. A layer $12$ millimeters thick sets in $14$ minutes. What is the value of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$88$"
+    },
+    {
+      "id": "B",
+      "text": "$108$"
+    },
+    {
+      "id": "C",
+      "text": "$196$"
+    },
+    {
+      "id": "D",
+      "text": "$304$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports 9 times 12, the quantity that must be subtracted, rather than b itself",
+    "C": "squares 14 but never subtracts the 108 contributed by the thickness term",
+    "D": "adds 108 to 196 instead of subtracting it"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Radical Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Squaring gives $9(12) + b = 14^2$, so $108 + b = 196$ and $b = 88$.\n\n**The Full Solution:**\nStep 1: Substitute the measured pair into the model: $14 = \\sqrt{9(12) + b} = \\sqrt{108 + b}$.\nStep 2: Square both sides to remove the radical: $196 = 108 + b$.\nStep 3: Subtract $108$ to get $b = 88$. Check by substituting back: $\\sqrt{9(12) + 88} = \\sqrt{196} = 14$ minutes, and $14$ is positive, so this root is not extraneous ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($108$): reports $9(12)$, the thickness term inside the radical, instead of the constant $b$.\n* Choice C ($196$): squares the $14$ correctly but then stops, never subtracting the $108$ that the thickness already contributes.\n* Choice D ($304$): adds $108$ to $196$, treating the isolated radical as though the constant were on the other side.\n\n**Test Day Takeaway:** Square once to clear a lone radical, then finish the ordinary linear step and substitute back — the check also confirms no extraneous root slipped in."
+}

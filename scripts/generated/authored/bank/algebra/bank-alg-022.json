@@ -1,0 +1,49 @@
+{
+  "id": "bank-alg-022",
+  "question": "The table gives the remaining charge $p$, as a percent of capacity, of a drone's battery $t$ minutes after takeoff, for three values of $t$. Which linear function models $p$ in terms of $t$?",
+  "questionTable": {
+    "headers": [
+      "t (minutes)",
+      "p (percent)"
+    ],
+    "rows": [
+      [
+        "2",
+        "88"
+      ],
+      [
+        "6",
+        "76"
+      ],
+      [
+        "10",
+        "64"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$p = -3t + 94$"
+    },
+    {
+      "id": "B",
+      "text": "$p = -3t + 88$"
+    },
+    {
+      "id": "C",
+      "text": "$p = -3t + 100$"
+    },
+    {
+      "id": "D",
+      "text": "$p = 3t + 94$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses the first row's charge as the intercept",
+    "C": "assumes 100 percent at takeoff without computing the intercept",
+    "D": "drops the negative sign on the slope"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Linear Function from Table (Negative Slope)**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The charge drops $12$ points every $4$ minutes, a slope of $-3$. Then $88 = -3(2) + b$ gives $b = 94$, so $p = -3t + 94$.\n\n**The Full Solution:**\nStep 1: Slope: $\\frac{76 - 88}{6 - 2} = \\frac{-12}{4} = -3$ percent per minute. The negative sign reflects a falling charge.\nStep 2: Substitute $(2, 88)$ into $p = -3t + b$: $88 = -6 + b$, so $b = 94$.\nStep 3: The model is $p = -3t + 94$. Check $t = 10$: $-30 + 94 = 64$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($p = -3t + 88$): uses the charge at $t = 2$ as the intercept, but the intercept is the charge at $t = 0$.\n* Choice C ($p = -3t + 100$): assumes the battery was full at takeoff; the table implies it started at $94$ percent.\n* Choice D ($p = 3t + 94$): drops the negative sign, describing a charge that increases during flight.\n\n**Test Day Takeaway:** A decreasing table means a negative slope; carry that sign into the intercept calculation, because $b = y - mx$ changes when $m$ is negative."
+}

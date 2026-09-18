@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-098",
+ "question": "A university's dissertation deposits above its five-year average are modeled by $q(x)=a(x-5)^2+k$, where $a$ and $k$ are constants. Given that $q(1)=0$ and $q(8)=-21$, what is the value of $a+k$?",
+ "correctAnswer": "-45",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**The correct answer is $-45$.**\n\n**The Fast Way (~40s):** The two conditions give $16a+k=0$ and $9a+k=-21$; subtracting yields $7a=21$, so $a=3$, $k=-48$, and $a+k=-45$.\n\n**The Full Solution:**\nStep 1: Substitute $x=1$: $a(1-5)^2+k=0$, so $16a+k=0$.\nStep 2: Substitute $x=8$: $a(8-5)^2+k=-21$, so $9a+k=-21$. Subtracting the second equation from the first gives $7a=21$, so $a=3$.\nStep 3: Then $k=-16a=-48$, and $a+k=3+(-48)=-45$. Check: $q(x)=3(x-5)^2-48$ gives $q(1)=48-48=0$ and $q(8)=27-48=-21$ ✓\n\n**Common Mistakes:**\n* $3$: solves for $a$ and stops without finding $k$.\n* $-48$: reports $k$ alone instead of the requested sum.\n* $51$: adds $48$ instead of $-48$, dropping the sign of $k$.\n\n**Test Day Takeaway:** Two points and a known vertex input give a two-by-two linear system in $a$ and $k$ — eliminate $k$ by subtracting."
+}

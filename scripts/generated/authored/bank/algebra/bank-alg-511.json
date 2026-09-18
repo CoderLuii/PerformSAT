@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-511",
+ "question": "A suspension footbridge has a main cable shaped by $f(t) = t^2 + 2t + 11$ and a stay shaped by $g(t) = 6t + k$, where $k$ is a constant. There is exactly one value of $t$ for which $f(t) = g(t)$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$7$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports t = 2, the single value of t where the graphs touch, instead of k",
+  "C": "never moves 6t across, using t^2 + 2t + (11 - k) = 0 and 4 - 4(11 - k) = 0 to get 10",
+  "D": "sets the discriminant to 16 + 4(11 - k) = 0, flipping the sign of the -4ac term, and gets 15"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Tangent Line — Discriminant Equals Zero**\n\n**Choice B is correct.**\n\n**The Fast Way (~50s):** Setting $f(t) = g(t)$ gives $t^2 - 4t + (11 - k) = 0$; one solution means $(-4)^2 - 4(11 - k) = 0$, so $16 - 44 + 4k = 0$ and $k = 7$.\n\n**The Full Solution:**\nStep 1: Set the two expressions equal: $t^2 + 2t + 11 = 6t + k$. Move every term to one side: $t^2 + 2t - 6t + 11 - k = 0$, or $t^2 - 4t + (11 - k) = 0$.\nStep 2: A quadratic has exactly one real solution when its discriminant is $0$. Here $a = 1$, $b = -4$, and $c = 11 - k$, so $b^2 - 4ac = 16 - 4(11 - k)$.\nStep 3: Solve $16 - 44 + 4k = 0$: $4k = 28$, so $k = 7$. Check: with $k = 7$ the equation is $t^2 - 4t + 4 = 0$, which factors as $(t - 2)^2 = 0$ and has the single solution $t = 2$; then $f(2) = 4 + 4 + 11 = 19$ and $g(2) = 12 + 7 = 19$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): reports $t = 2$, the one place where the two shapes touch, instead of the constant $k$.\n* Choice C ($10$): forgets to subtract $6t$, working from $t^2 + 2t + (11 - k) = 0$ and solving $4 - 4(11 - k) = 0$.\n* Choice D ($15$): writes the discriminant as $16 + 4(11 - k)$, reversing the sign of the $-4ac$ term, and solves $60 - 4k = 0$.\n\n**Test Day Takeaway:** Collect every term on one side BEFORE reading off $a$, $b$, and $c$ — the linear coefficient changes when the line is moved across, and that is what the discriminant depends on."
+}

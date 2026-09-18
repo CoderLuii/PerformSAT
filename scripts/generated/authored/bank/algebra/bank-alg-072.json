@@ -1,0 +1,29 @@
+{
+ "question": "A cyclist's power output, in watts, is modeled by the linear function $P$, where $P(x)$ is the output $x$ minutes into a time trial. Given that $P(4) = 320$ and $P(16) = 284$, the function $g$ is defined by $g(x) = P(3x)$. In the $xy$-plane, what is the slope of the graph of $y = g(x)$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-9$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$-1$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reports the slope of $P$ without the factor of $3$ that $g(x) = P(3x)$ introduces",
+  "C": "divides the slope of $P$ by $3$ instead of multiplying by $3$",
+  "D": "multiplies by $3$ but subtracts in the wrong order, using $\\frac{320 - 284}{16 - 4}$"
+ },
+ "explanation": "**SAT Pattern: Slope from Function Difference**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** $P$ has slope $\\frac{284 - 320}{16 - 4} = -3$, and replacing $x$ by $3x$ triples the rate, so $g$ has slope $-9$.\n\n**The Full Solution:**\n\nStep 1: Two outputs of the linear function $P$ give its slope: $\\frac{284 - 320}{16 - 4} = \\frac{-36}{12} = -3$.\n\nStep 2: Write $P(x) = -3x + p$ for a constant $p$. Then $g(x) = P(3x) = -3(3x) + p = -9x + p$.\n\nStep 3: The graph of $y = g(x)$ therefore has slope $-9$. Check: $g(4) = P(12)$ and $g(8) = P(24)$, values $36$ apart over an input gap of $4$, which is a slope of $-9$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($-3$): gives the slope of $P$, forgetting that $g$ advances through $P$ three times as fast.\n\n* Choice C ($-1$): divides $-3$ by $3$, treating the inner $3x$ as a horizontal stretch instead of a compression.\n\n* Choice D ($9$): triples correctly but reverses the subtraction, turning the decrease into an increase.\n\n**Test Day Takeaway:** Substituting $3x$ into a linear function multiplies its slope by $3$; write the function out rather than guessing the direction.",
+ "id": "bank-alg-072"
+}

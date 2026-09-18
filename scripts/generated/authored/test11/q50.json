@@ -1,34 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "In fact,"
-    },
-    {
-      "id": "B",
-      "text": "Consequently,"
-    },
-    {
-      "id": "C",
-      "text": "Likewise,"
-    },
-    {
-      "id": "D",
-      "text": "Meanwhile,"
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The first sentence reports a common assumption—that a confident witness recalls events like a camera—and the second corrects it with what research actually shows: memory is reconstructed and easily reshaped. \"In fact\" is the connector for replacing a loose impression with the more accurate truth. \"Consequently\" would make the research a result of the assumption; \"Likewise\" would make it agree with the assumption; and \"Meanwhile\" would mark an unrelated parallel event, none of which fits a sentence that overturns the assumption.",
-  "passage": "Eyewitness testimony is often described, even by jurors, as among the most compelling evidence a trial can offer, on the assumption that a confident witness is recalling the scene much as a camera would have recorded it. ______ decades of laboratory work show that memory for a witnessed event is reconstructed each time it is recalled and can be reshaped by leading questions, by exposure to other witnesses' accounts, and by the witness's own expectations, so that a vivid, confident memory may diverge sharply from what actually occurred.",
-  "_meta": {
-    "anchor": "cognitive science of memory: eyewitness memory as reconstructive (generic)"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "In fact,"
   },
-  "id": 1150,
-  "module": 2
+  {
+   "id": "B",
+   "text": "Consequently,"
+  },
+  {
+   "id": "C",
+   "text": "Granted,"
+  },
+  {
+   "id": "D",
+   "text": "Meanwhile,"
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The first sentence reports a common belief — that the bore's height is what makes it dangerous. The second corrects it with the experts' account: speed and the following surge \"do most of the harm.\" A correction that replaces appearance with reality is the home ground of \"In fact.\"\n\n**The Full Solution:**\n- Sentence 1 frames a popular assumption, flagged by the distancing \"as though the wave's height alone were what threatens onlookers.\"\n- Sentence 2 supplies the truer picture from hydrologists, sharpening rather than merely opposing: the danger is real, but its source is different.\n- \"In fact\" performs precisely that move — deepening a claim by correcting its popular version.\n\n**Why the other choices are wrong:**\n- B: \"Consequently\" would make the hydrologists' finding a result of the guidebooks' framing, an absurd causal link.\n- C: \"Granted\" concedes a point to an opposing view, but the second sentence corrects the first rather than yielding anything to it.\n- D: \"Meanwhile\" cordons the sentences into parallel, unrelated happenings, erasing the correction that connects them.",
+ "passage": "Guidebooks often present the tidal bore on China's Qiantang River as a spectacle whose danger lies in its size, as though the wave's height alone were what threatens onlookers. ______ hydrologists who study the bore point out that its speed and the surge behind the visible front do most of the harm: the wave can outrun a sprinting adult, and the water can keep climbing for many minutes after the crest has passed.",
+ "_meta": {
+  "anchor": "tidal bores — Qiantang bore: speed and trailing surge, not height, as the danger",
+  "transitionBucket": "transitions-example-emphasis",
+  "distractors": {
+   "B": "absurd causation",
+   "C": "concession where correction is needed",
+   "D": "parallel-events reading severs the link"
+  }
+ },
+ "id": 1150,
+ "module": 2
 }

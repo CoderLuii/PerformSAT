@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-357",
+ "question": "A cable-car cabin can carry a total load of at most $1{,}050$ kilograms, and the empty cabin has a mass of $380$ kilograms. Which inequality gives all possible values of the total mass $m$, in kilograms, of the riders?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$m \\le 380$"
+  },
+  {
+   "id": "B",
+   "text": "$m \\le 670$"
+  },
+  {
+   "id": "C",
+   "text": "$m \\le 1{,}430$"
+  },
+  {
+   "id": "D",
+   "text": "$m \\ge 670$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "uses the empty cabin's mass as the limit on the riders",
+  "C": "adds the cabin's mass to the limit instead of subtracting it",
+  "D": "reverses the direction of the inequality"
+ },
+ "explanation": "**SAT Pattern: One-Variable Linear Inequality**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The cabin itself uses $380$ of the $1{,}050$ kilograms, leaving at most $670$ for the riders.\n\n**The Full Solution:**\n\nStep 1: The total load is the cabin plus the riders, so $m + 380$ is the loaded mass.\n\nStep 2: The phrase at most sets an upper limit: $m + 380 \\le 1{,}050$.\n\nStep 3: Subtract $380$ from both sides: $m \\le 670$. Check: riders totaling $670$ kilograms give a loaded mass of exactly $1{,}050$ kilograms.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($m \\le 380$): uses the empty cabin's mass as the limit on the riders rather than subtracting it from the capacity.\n* Choice C ($m \\le 1{,}430$): adds $380$ to $1{,}050$, which would let the loaded cabin exceed its capacity.\n* Choice D ($m \\ge 670$): reverses the direction, allowing loads heavier than the cabin can carry.\n\n**Test Day Takeaway:** At most means $\\le$; subtract the fixed part of the load before writing the bound on the variable part."
+}

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-282",
+ "question": "On a solar farm's site grid, marked in hundreds of meters, the glare-exclusion boundary $x^{2}+y^{2}-4x+14y+m=0$ passes through $(6,-7)$. Find the value of $m$.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-37$"
+  },
+  {
+   "id": "B",
+   "text": "$13$"
+  },
+  {
+   "id": "C",
+   "text": "$16$"
+  },
+  {
+   "id": "D",
+   "text": "$37$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves for m with the sign reversed, reporting -37",
+  "B": "drops the -4x term when substituting, solving 36 + 49 - 98 + m = 0",
+  "C": "reports r squared = 16 instead of the constant m"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice D is correct.**\n\n**The Fast Way (~45s):** Substituting $(6,-7)$ gives $36+49-24-98+m=0$, so $m=37$.\n\n**The Full Solution:**\n\nStep 1: Substitute the point. $6^{2}+(-7)^{2}-4(6)+14(-7)+m=0$.\n\nStep 2: Evaluate each term. $36+49-24-98+m=0$, which simplifies to $-37+m=0$.\n\nStep 3: Solve. $m=37$.\n\nCheck: with $m=37$ the circle is $(x-2)^{2}+(y+7)^{2}=4+49-37=16$, center $(2,-7)$ and radius $4$; the point $(6,-7)$ is exactly $4$ units from that center.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-37$): solves for $m$ with the sign reversed after collecting the numeric terms.\n* Choice B ($13$): drops the $-4x$ term while substituting, solving $36+49-98+m=0$.\n* Choice C ($16$): reports $r^{2}=16$ instead of the constant $m$ the question asks for.\n\n**Test Day Takeaway:** A point on a circle satisfies its equation — substitute the coordinates and the unknown constant falls out in one line."
+}

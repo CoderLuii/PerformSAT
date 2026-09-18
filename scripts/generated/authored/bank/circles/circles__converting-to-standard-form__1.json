@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "A circle in the $xy$-plane is defined by the equation $x^2 + y^2 - 6x + 20y + 84 = 0$. What are the coordinates of the center of this circle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(-6, 20)$"
+  },
+  {
+   "id": "B",
+   "text": "$(-3, 10)$"
+  },
+  {
+   "id": "C",
+   "text": "$(3, -10)$"
+  },
+  {
+   "id": "D",
+   "text": "$(6, -20)$"
+  }
+ ],
+ "correctAnswer": "C",
+ "hint": "Completing the square needs only half of each linear coefficient.",
+ "distractorNotes": {
+  "A": "reads the coefficients off with their signs",
+  "B": "halves but keeps the signs",
+  "D": "negates without halving"
+ },
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~30s):** Half of $-6$ is $-3$ and half of $20$ is $10$, so the completed squares are $(x - 3)^2$ and $(y + 10)^2$, putting the center at $(3, -10)$.\n\n**The Full Solution:**\nStep 1: Send the constant across and group like variables: $\\left(x^2 - 6x\\right) + \\left(y^2 + 20y\\right) = -84$.\nStep 2: Add $\\left(\\frac{-6}{2}\\right)^2 = 9$ and $\\left(\\frac{20}{2}\\right)^2 = 100$ to both sides: $(x - 3)^2 + (y + 10)^2 = -84 + 9 + 100$.\nStep 3: The right side is $25$, so the circle is $(x - 3)^2 + (y + 10)^2 = 25$, centered at $(3, -10)$ with radius $5$. Check: expanding that form returns $x^2 + y^2 - 6x + 20y + 84 = 0$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($(-6, 20)$): reads the linear coefficients straight off the equation, with no halving and no sign change.\n* Choice B ($(-3, 10)$): halves both coefficients but keeps their signs, forgetting that standard form subtracts the center.\n* Choice D ($(6, -20)$): flips the signs of the full coefficients without halving them.\n\n**Test Day Takeaway:** Halve the linear coefficient, then flip its sign. Those two moves take you from general form to the center in one pass."
+}

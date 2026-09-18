@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "The number of daily riders on a bus route rose from $400$ to $500$. What was the percent increase in the number of daily riders?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$20\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$80\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$125\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by the new value",
+    "C": "original as a percent of the new value",
+    "D": "new as a percent of the original"
+  },
+  "correctAnswer": "B",
+  "hint": "A percent change always compares the change to the original amount.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** The rise is $100$, and $\\frac{100}{400} = 25\\%$.\n\n**The Full Solution:**\nStep 1: Find the change: $500 - 400 = 100$ riders.\nStep 2: Percent increase is $\\frac{\\text{change}}{\\text{original}}$, so divide by the earlier value: $\\frac{100}{400} = 0.25$.\nStep 3: Convert: $0.25 = 25\\%$. Check: increasing $400$ by $25\\%$ adds $100$ riders and lands on $500$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($20\\%$): divides the change by the NEW value, $\\frac{100}{500}$.\n* Choice C ($80\\%$): reports the original as a percent of the new value, $\\frac{400}{500}$.\n* Choice D ($125\\%$): reports the new value as a percent of the original instead of the increase; the increase is the part above $100\\%$.\n\n**Test Day Takeaway:** Percent change divides by the STARTING value, and an answer above $100\\%$ for a modest rise is a signal you reported the ratio, not the change."
+}

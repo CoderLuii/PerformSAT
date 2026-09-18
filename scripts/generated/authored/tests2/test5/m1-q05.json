@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "A maintenance walkway crosses a row of solar panels at a right angle. In the $xy$-plane the panel row lies along $y = \\frac{3}{4}x - 2$, and the walkway contains the point $(6, -1)$. Which of the following is an equation of the walkway?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = -\\frac{4}{3}x + 7$"
+  },
+  {
+   "id": "B",
+   "text": "$y = -\\frac{3}{4}x + \\frac{7}{2}$"
+  },
+  {
+   "id": "C",
+   "text": "$y = \\frac{3}{4}x - \\frac{11}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$y = \\frac{4}{3}x - 9$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "negates the slope but does not take the reciprocal, using -3/4 through (6, -1)",
+  "C": "reuses the panel row's slope 3/4, which gives a parallel walkway, not a perpendicular one",
+  "D": "takes the reciprocal but does not negate, using 4/3 through (6, -1)"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** Flip and negate $\\frac{3}{4}$ to get slope $-\\frac{4}{3}$; at $x = 6$ that slope must give $y = -1$, and only $y = -\\frac{4}{3}x + 7$ does.\n\n**The Full Solution:**\nStep 1: The panel row has slope $\\frac{3}{4}$. A line perpendicular to it has the negative reciprocal slope, $-\\frac{4}{3}$.\nStep 2: Use the point $(6, -1)$ to find the $y$-intercept: $-1 = -\\frac{4}{3}(6) + b$, so $-1 = -8 + b$ and $b = 7$.\nStep 3: The walkway is $y = -\\frac{4}{3}x + 7$. Check the point: $-\\frac{4}{3}(6) + 7 = -8 + 7 = -1$, and the product of the slopes is $\\frac{3}{4} \\cdot \\left(-\\frac{4}{3}\\right) = -1$, which confirms the right angle.\n\n**Why the wrong answers are tempting:**\n* Choice B ($y = -\\frac{3}{4}x + \\frac{7}{2}$): negates the slope without reciprocating it. Its slope product with the row is $\\frac{3}{4}\\cdot\\left(-\\frac{3}{4}\\right) = -\\frac{9}{16}$, not $-1$, so it is not perpendicular even though it does pass through $(6, -1)$.\n* Choice C ($y = \\frac{3}{4}x - \\frac{11}{2}$): keeps the row's own slope. This line runs PARALLEL to the panel row, so it never crosses it at all.\n* Choice D ($y = \\frac{4}{3}x - 9$): reciprocates without negating. Its slope product is $\\frac{3}{4}\\cdot\\frac{4}{3} = 1$, so the two lines meet at an angle, but not a right one.\n\n**Test Day Takeaway:** Perpendicular means BOTH operations: flip the fraction and change the sign. Then use the given point only to pin down the intercept — three of the four choices usually pass through the point too."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "A random sample of trucks at a highway toll plaza gave an estimated mean idling time of $47.0$ seconds, and plausible values for the mean idling time of all trucks at the plaza run from $43.4$ to $50.6$ seconds. What is the margin of error for this estimate?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.8$"
+  },
+  {
+   "id": "B",
+   "text": "$3.6$"
+  },
+  {
+   "id": "C",
+   "text": "$7.2$"
+  },
+  {
+   "id": "D",
+   "text": "$43.4$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "halves the margin a second time, dividing the full interval width 7.2 by 4 instead of by 2",
+  "C": "reports the full width of the plausible-value interval, 50.6-43.4=7.2, instead of half of it",
+  "D": "reports the lower endpoint of the interval, 43.4, rather than the distance from the estimate to that endpoint"
+ },
+ "explanation": "**SAT Pattern: Margin of Error**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** The margin of error is the distance from the estimate to either endpoint: $47.0 - 43.4 = 3.6$.\n\n**The Full Solution:**\nStep 1: A margin of error $E$ turns an estimate into the interval from estimate $-\\,E$ to estimate $+\\,E$. Here the estimate is $47.0$ seconds and the interval runs from $43.4$ to $50.6$ seconds.\nStep 2: Subtract to find $E$ from the lower endpoint: $47.0 - 43.4 = 3.6$ seconds.\nStep 3: Confirm with the upper endpoint: $47.0 + 3.6 = 50.6$ seconds, which matches the stated interval ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.8$): halves the width once too often. The full interval is $7.2$ seconds wide; halving gives the margin $3.6$, but halving again gives $1.8$.\n* Choice C ($7.2$): reports the entire width of the interval, $50.6 - 43.4 = 7.2$. The margin of error is only the half-width, the reach on each side of the estimate.\n* Choice D ($43.4$): reports the lower endpoint itself. An endpoint is a plausible mean idling time, not a distance.\n\n**Test Day Takeaway:** Margin of error is a radius, not a diameter: it is the distance from the point estimate to an endpoint, so it is always half the width of the plausible-value interval."
+}

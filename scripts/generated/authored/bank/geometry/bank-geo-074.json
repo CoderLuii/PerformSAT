@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-074",
+ "question": "A wellhead protection area is bounded by $x^{2}+y^{2}+12x+by-20=0$, with coordinates in meters, and the boundary is a circle of radius $9$. What is the value of $b$, given that $b>0$?",
+ "correctAnswer": "10",
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**The correct answer is $10$.**\n\n**The Fast Way (~55s):** $r^{2}=36+\\frac{b^{2}}{4}+20=81$ gives $\\frac{b^{2}}{4}=25$, so $b=10$.\n\n**The Full Solution:**\n\nStep 1: Complete the square in $x$. $x^{2}+12x$ contributes $36$ to the right side.\n\nStep 2: Complete the square in $y$. $y^{2}+by$ contributes $\\left(\\frac{b}{2}\\right)^{2}=\\frac{b^{2}}{4}$.\n\nStep 3: Solve using the radius. $36+\\frac{b^{2}}{4}+20=9^{2}=81$, so $\\frac{b^{2}}{4}=25$, $b^{2}=100$, and $b=10$ because $b>0$.\n\nCheck: with $b=10$ the circle is $(x+6)^{2}+(y+5)^{2}=36+25+20=81$, radius $9$ meters.\n\n**Common Mistakes:**\n\n* $5$: stops at $\\frac{b}{2}=5$ and reports half of $b$.\n* $-10$: takes the negative square root, which the condition $b>0$ rules out.\n* $20$: doubles the correct value, applying the halving step in the wrong direction.\n\n**Test Day Takeaway:** Working backwards from a radius, remember the completed square contributes $\\left(\\frac{b}{2}\\right)^{2}$ — take the square root before undoing the halving."
+}

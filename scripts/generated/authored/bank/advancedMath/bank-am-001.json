@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-001",
+  "question": "A quadratic equation in one variable can be written in the form $ax^2 + bx + c = 0$, where $a$, $b$, and $c$ are constants and $a \\neq 0$. Which of the following is a quadratic equation in $x$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$13x - 26 = 0$"
+    },
+    {
+      "id": "B",
+      "text": "$\\dfrac{6}{x} + 4 = 0$"
+    },
+    {
+      "id": "C",
+      "text": "$2x^2 - 5x + 3 = 0$"
+    },
+    {
+      "id": "D",
+      "text": "$x^3 - 8x = 0$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "degree 1 — a linear equation",
+    "B": "variable in a denominator — not a polynomial equation at all",
+    "D": "degree 3 — a cubic equation"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Identify Quadratic Form**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** Look for a highest power of exactly $2$ with the variable in the numerator. Only $2x^2 - 5x + 3 = 0$ qualifies.\n\n**The Full Solution:**\nStep 1: A quadratic equation in $x$ has a term with $x^2$ and no higher power of $x$, and every power of $x$ must be a whole number in the numerator.\nStep 2: Test each equation. $13x - 26 = 0$ has highest power $1$. $\\dfrac{6}{x} + 4 = 0$ has $x$ in a denominator, which is the power $x^{-1}$. $x^3 - 8x = 0$ has highest power $3$.\nStep 3: $2x^2 - 5x + 3 = 0$ matches $ax^2 + bx + c = 0$ with $a = 2$, $b = -5$, $c = 3$, and $a \\neq 0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($13x - 26 = 0$): the largest power of $x$ is $1$, so this is linear, not quadratic.\n* Choice B ($\\dfrac{6}{x} + 4 = 0$): the variable sits in a denominator, so the equation is rational, not polynomial.\n* Choice D ($x^3 - 8x = 0$): the largest power of $x$ is $3$, so this is cubic.\n\n**Test Day Takeaway:** Classify by the HIGHEST power of the variable, and check that the variable never appears in a denominator or under a radical."
+}

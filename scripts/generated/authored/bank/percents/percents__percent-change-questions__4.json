@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "After a $12\\%$ increase, the monthly membership fee at a fitness center is $\\$56$. What was the monthly membership fee, in dollars, before the increase?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$44$"
+    },
+    {
+      "id": "B",
+      "text": "$49.28$"
+    },
+    {
+      "id": "C",
+      "text": "$50$"
+    },
+    {
+      "id": "D",
+      "text": "$62.72$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "treats 12 percent as 12 dollars",
+    "B": "takes 12 percent off the new fee",
+    "D": "increases again instead of reversing"
+  },
+  "correctAnswer": "C",
+  "hint": "The new fee is $112\\%$ of the old one, so undo the increase by dividing.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~25s):** $56 \\div 1.12 = 50$.\n\n**The Full Solution:**\nStep 1: Let $f$ be the fee before the increase. Raising it by $12\\%$ multiplies it by $1.12$, so $1.12f = 56$.\nStep 2: Divide both sides by $1.12$: $f = \\frac{56}{1.12} = 50$.\nStep 3: The earlier fee was $\\$50$. Check: $12\\%$ of $50$ is $6$, and $50 + 6 = 56$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($44$): subtracts $12$ from $56$, treating the percent as a number of dollars.\n* Choice B ($49.28$): takes $12\\%$ off the NEW fee, but the $12\\%$ was computed from the old fee.\n* Choice D ($62.72$): applies the increase a second time instead of reversing it.\n\n**Test Day Takeaway:** Undoing a percent increase is division by $1 + r$, never subtraction of the same percent from the new amount."
+}

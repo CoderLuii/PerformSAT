@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-363",
+ "question": "The mass of a soil core, in grams, is $14y^3 + 21y^2 + 6y + 9$ for a core of radius $y$ centimeters, and that mass factors as a product of two binomials with integer coefficients. Which product is it?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(7y + 3)(2y^2 + 3)$"
+  },
+  {
+   "id": "B",
+   "text": "$(7y^2 + 9)(2y + 1)$"
+  },
+  {
+   "id": "C",
+   "text": "$(7y^2 + 3)(2y - 3)$"
+  },
+  {
+   "id": "D",
+   "text": "$(7y^2 + 3)(2y + 3)$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "puts the square in the wrong factor, giving $14y^3 + 21y + 6y^2 + 9$",
+  "B": "regroups the constants as $9$ and $1$, which expands to $14y^3 + 7y^2 + 18y + 9$",
+  "C": "flips the sign inside the binomial, turning $+21y^2$ into $-21y^2$"
+ },
+ "explanation": "**SAT Pattern: Factor by Grouping**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** $7y^2(2y + 3) + 3(2y + 3) = (7y^2 + 3)(2y + 3)$.\n\n**The Full Solution:**\nStep 1: Pair the terms: $(14y^3 + 21y^2) + (6y + 9)$.\nStep 2: Factor each pair: $7y^2(2y + 3)$ and $3(2y + 3)$.\nStep 3: Both share $2y + 3$, so the mass is $(7y^2 + 3)(2y + 3)$. Check: expanding gives $14y^3 + 21y^2 + 6y + 9$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(7y + 3)(2y^2 + 3)$): the square sits in the wrong factor, so the expansion is $14y^3 + 21y + 6y^2 + 9$, which puts $21$ on the $y$ term.\n* Choice B ($(7y^2 + 9)(2y + 1)$): a mis-split of the constants; the middle term becomes $7y^2$.\n* Choice C ($(7y^2 + 3)(2y - 3)$): one sign flip reverses the $21y^2$ term.\n\n**Test Day Takeaway:** Check a factored answer by multiplying the two OUTER terms and the two INNER constants — those reproduce the cubic and constant terms instantly."
+}

@@ -1,0 +1,45 @@
+{
+  "id": 1,
+  "question": "A store sells wall calendars and desk planners at the prices shown. Last week it sold $45$ of these items in all and collected $\\$390$. How many desk planners did it sell?",
+  "questionTable": {
+    "headers": [
+      "Item",
+      "Price"
+    ],
+    "rows": [
+      [
+        "Wall calendar",
+        "$\\$6$"
+      ],
+      [
+        "Desk planner",
+        "$\\$10$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$20$"
+    },
+    {
+      "id": "C",
+      "text": "$30$"
+    },
+    {
+      "id": "D",
+      "text": "$39$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "gives the number of wall calendars, the other variable, instead of the number of desk planners",
+    "B": "divides the \\$120 above the all-calendar baseline by \\$6 (the calendar price) instead of by the \\$4 price difference",
+    "D": "divides the \\$390 total by the \\$10 planner price, ignoring the 45-item count entirely"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** If all $45$ items were calendars the take would be $6(45)=\\$270$, which is $\\$120$ short; each planner swapped in adds $\\$10-\\$6=\\$4$, so $120\\div4=30$ planners.\n\n**The Full Solution:**\nStep 1: Let $c$ be the number of wall calendars and $d$ the number of desk planners. The count gives $c+d=45$ and the money gives $6c+10d=390$.\nStep 2: Solve the first equation for $c$: $c=45-d$. Substitute into the second: $6(45-d)+10d=390$, so $270-6d+10d=390$, or $270+4d=390$.\nStep 3: Then $4d=120$, so $d=30$, and $c=45-30=15$. Check: $6(15)+10(30)=90+300=390$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): this is $c$, the number of wall calendars. Substitution solves for one variable first, and stopping there answers the wrong question.\n* Choice B ($20$): divides the $\\$120$ shortfall by the $\\$6$ calendar price instead of by the $\\$4$ price difference: $120\\div6=20$.\n* Choice D ($39$): divides the $\\$390$ total by the $\\$10$ planner price, which ignores the $45$-item constraint: $390\\div10=39$.\n\n**Test Day Takeaway:** In a two-item count-and-cost system, substitute the count equation into the cost equation, then read the question again to see which variable it asked for."
+}

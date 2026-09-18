@@ -70,8 +70,6 @@ export const RightTriangle = ({
     ]);
   }
 
-  const [v0, v1, v2] = scaledVerts;
-
   // Right angle marker
   const rightAngleSize = 15;
   const rv = scaledVerts[rightAngleVertex];
@@ -488,10 +486,15 @@ export const SimilarTriangles = ({
   };
 
   return (
+    // viewBox + width:100%/max-width keeps the pair pixel-identical at desktop
+    // (the card is wider than `width`) while letting this 400px-wide figure —
+    // the widest in the set — scale down inside a phone-width card.
     <svg
       width={width}
       height={height}
-      style={SAT_FIGURE_STYLE}
+      viewBox={`0 0 ${width} ${height}`}
+      preserveAspectRatio="xMidYMid meet"
+      style={{ ...SAT_FIGURE_STYLE, width: '100%', maxWidth: width, height: 'auto' }}
     >
       {renderTriangle(triangle1, 0)}
       {renderTriangle(triangle2, halfWidth + padding)}
@@ -499,4 +502,6 @@ export const SimilarTriangles = ({
   );
 };
 
-export default { RightTriangle, TriangleWithAngles, RightTriangleWithAltitude, SimilarTriangles };
+const SATTriangleDiagramsBundle = { RightTriangle, TriangleWithAngles, RightTriangleWithAltitude, SimilarTriangles };
+
+export default SATTriangleDiagramsBundle;

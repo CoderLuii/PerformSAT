@@ -1,0 +1,6 @@
+{
+  "id": "bank-alg-340",
+  "question": "In a marching band, the number of brass players is $3$ times the number $w$ of woodwind players, and the number of percussion players is $12$ fewer than the number of brass players. If the band has $128$ members in these three sections, how many percussion players does it have?",
+  "correctAnswer": "48",
+  "explanation": "**SAT Pattern: Word-Problem to Multi-Step Linear**\n\n**The correct answer is $48$.**\n\n**The Fast Way (~25s):** Brass $= 3w$, percussion $= 3w - 12$. Total: $w + 3w + 3w - 12 = 7w - 12 = 128$, so $w = 20$ and percussion $= 60 - 12 = 48$.\n\n**The Full Solution:**\nStep 1: Translate each section in terms of $w$: woodwind $= w$, brass $= 3w$, percussion $= 3w - 12$ (defined relative to brass).\nStep 2: Total: $w + 3w + (3w - 12) = 7w - 12 = 128$, so $7w = 140$ and $w = 20$.\nStep 3: Percussion $= 3(20) - 12 = 48$.\nCheck: $20 + 60 + 48 = 128$. $\\checkmark$\n\n**Common Mistakes:** Writing percussion as $w - 12$ (relative to woodwinds), which gives $5w - 12 = 128$ and $w = 28$; reporting $w = 20$ or brass $= 60$; or adding $12$ instead of subtracting.\n\n**Test Day Takeaway:** A chained comparison (\"fewer than the number of brass players\") must be built on the expression for brass, $3w$, not on the base variable."
+}

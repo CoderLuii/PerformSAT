@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-330",
+ "question": "Ecologists modeled eelgrass shoot density $d$, in shoots per square meter, in terms of water clarity $c$, measured as meters of visibility, with the linear model $d = 18 + 24c$. What is the best interpretation of $18$ in this model?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The predicted shoot density, in shoots per square meter, when visibility is $0$ meters."
+  },
+  {
+   "id": "B",
+   "text": "The predicted increase in shoot density, in shoots per square meter, for each additional meter of visibility."
+  },
+  {
+   "id": "C",
+   "text": "The visibility, in meters, predicted to produce a shoot density of $0$ shoots per square meter."
+  },
+  {
+   "id": "D",
+   "text": "The greatest shoot density, in shoots per square meter, recorded at any site in the study."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "interprets the coefficient $24$, the rate of change, instead of the constant term",
+  "C": "reads the constant as a value of $c$ rather than as the value of $d$ when $c = 0$",
+  "D": "treats the constant as a recorded maximum; a model reports predictions, not extremes"
+ },
+ "explanation": "**SAT Pattern: Interpret Intercept of Best Fit**\n\n**Choice A is correct.** Substituting $c = 0$ gives $d = 18$, so $18$ is the shoot density the model predicts when visibility is $0$ meters.\n\n**The Fast Way (~25s):** The constant term is the predicted output when the input is $0$: set $c = 0$ and read $d = 18$.\n\n**The Full Solution:**\n\nStep 1: Identify the roles in $d = 18 + 24c$. Here $c$ is the input, $d$ is the output, $24$ is the rate of change, and $18$ is the constant term.\n\nStep 2: Evaluate the model at $c = 0$: $d = 18 + 24(0) = 18$ shoots per square meter.\n\nStep 3: State the meaning in context. The model predicts $18$ shoots per square meter at a site with $0$ meters of visibility. Check: raising visibility to $1$ meter gives $d = 42$, an increase of $24$, confirming that $24$, not $18$, is the per-meter rate.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: describes $24$, the amount $d$ changes for each additional meter of visibility, not the constant term.\n* Choice C: reverses the variables, reading $18$ as a visibility in meters rather than as a shoot density.\n* Choice D: treats the constant as a recorded maximum. The model outputs predictions, and $d$ grows without bound as $c$ increases.\n\n**Test Day Takeaway:** The constant term always answers \"what does the model predict when the input is zero?\" -- substitute $0$ and the interpretation writes itself."
+}

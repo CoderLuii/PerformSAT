@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-textual",
- "question": "Which finding, if true, would most directly support the historian's hypothesis?",
+ "type": "multiple-choice",
+ "passage": "Historian of medicine Thomas McKeown argued that the steep decline in deaths from infectious disease in England between 1850 and 1950 owed little to doctors. Effective drugs against the era's great killers arrived only in the 1930s and 1940s, he observed, by which time mortality from those diseases had already fallen most of the way to modern levels. McKeown attributed the decline instead to rising standards of living — above all to better nutrition, which strengthened resistance to infection.",
+ "question": "Which finding, if true, would most directly weaken McKeown's argument?",
  "choices": [
   {
    "id": "A",
-   "text": "Diagrams in successive hand-copied manuscripts of one text drifted from each other, while the same diagrams in printed editions stayed identical across copies."
+   "text": "Local records show that death rates from waterborne diseases fell sharply in the decades immediately after towns built filtered water supplies and sewers, while deaths from diseases unrelated to water declined little until much later."
   },
   {
    "id": "B",
-   "text": "Printed books in the fifteenth century were, on average, more expensive than the manuscripts they gradually replaced across Europe."
+   "text": "Household surveys from the period show that as families' wages rose, they spent much of the increase on more and better food."
   },
   {
    "id": "C",
-   "text": "Several fifteenth-century printers had trained as goldsmiths and engravers before they entered the new book trade."
+   "text": "Deaths from infectious disease declined over the same century in several other industrializing countries whose medical professions were organized quite differently from England's and whose towns invested in comparable sanitation over the same span of decades."
   },
   {
    "id": "D",
-   "text": "Readers in the fifteenth century often annotated the margins of both manuscripts and printed books, adding their own sketches, corrections, and cross-references by hand."
+   "text": "The drugs introduced in the 1930s and 1940s proved even more effective against the era's major infectious diseases than physicians at the time recognized."
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A. The hypothesis is that printing accelerated the standardization of scientific diagrams, because a single engraving could be reproduced identically across many copies, whereas hand copying introduced errors with each new manuscript. A finding supports that most directly if it shows precisely this contrast: diagrams drifting across successive manuscripts but staying identical across printed copies. A reports exactly that. B concerns price, not the consistency of diagrams. C describes printers' backgrounds without bearing on whether printed diagrams were more uniform. D notes hand annotation in both formats, which speaks to readers' habits, not to the standardization the hypothesis is about.",
+ "explanation": "**Choice A is correct.** McKeown's positive claim is that nutrition drove the decline. A finding that mortality fell precisely where and when towns built water infrastructure — and only for waterborne diseases — points to sanitation engineering, not diet, as the cause, striking directly at his attribution.\n\n**The Full Solution:**\n- The argument has two parts: doctors get little credit (timing of drugs), and rising living standards, chiefly nutrition, get most of it.\n- A leaves the anti-doctor timing untouched but supplies a rival cause with the signature nutrition lacks: disease-specific timing keyed to public-works projects. Better food should have lowered deaths across diseases together, not just waterborne ones after sewer construction.\n\n**Why the other choices are wrong:**\n- B: Wages flowing into better food is evidence for the nutrition account, not against it.\n- C: Parallel declines abroad under different medical systems echo his point that medicine mattered little; they do not challenge the nutrition attribution.\n- D: Drug effectiveness after the 1930s does not touch the argument's foundation — that most of the decline predated the drugs.",
  "_meta": {
-  "anchor": "Print and the standardization of scientific diagrams (unnamed historian); finding-selection evidence item"
- },
- "passage": "A historian of science argues that the spread of the printed book in fifteenth-century Europe accelerated the standardization of scientific diagrams. Printers, the argument runs, could reproduce a single carefully made engraving identically across thousands of copies, whereas hand-copied manuscripts had introduced small errors with each new copy. To test the claim, the historian plans to compare diagrams in early printed editions with those in the manuscript versions that preceded them.",
- "type": "multiple-choice"
+  "anchor": "Thomas McKeown — nutrition thesis vs. sanitation-infrastructure counterevidence"
+ }
 }

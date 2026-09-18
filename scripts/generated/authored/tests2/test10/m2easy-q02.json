@@ -1,0 +1,29 @@
+{
+  "id": 2,
+  "question": "A touring crew loads $9x$ cable coils onto a truck. After $4x$ of the coils are returned to the shop, $35$ coils remain on the truck. Which expression is equal to $x$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{5}{35}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{35}{13}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{35}{5}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{35}{4}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides the coefficient by the constant, inverting the division",
+    "B": "adds the two coefficients (9 + 4 = 13) instead of subtracting them",
+    "D": "divides by 4, the coefficient of the coils returned, instead of by the difference 5"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice C is correct.** The coils left are $9x - 4x = 5x$, so $5x = 35$ and $x = \\frac{35}{5}$.\n\n**The Fast Way (~10s):** Combine $9x - 4x$ into $5x$, then undo the multiplication by dividing $35$ by $5$.\n\n**The Full Solution:**\nStep 1: Translate the sentence. Coils loaded minus coils returned equals coils remaining: $9x - 4x = 35$.\nStep 2: The left side has like terms, so $9x - 4x = 5x$ and the equation becomes $5x = 35$.\nStep 3: Divide both sides by $5$: $x = \\frac{35}{5} = 7$. Check: the crew loaded $9(7) = 63$ coils, returned $4(7) = 28$, and $63 - 28 = 35$ remain. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{5}{35}$): divides the coefficient by the constant instead of the constant by the coefficient. That value is $\\frac{1}{7}$, and $5\\left(\\frac{1}{7}\\right)$ is nowhere near $35$.\n* Choice B ($\\frac{35}{13}$): adds the coefficients instead of subtracting them, treating the return as another load and giving $13x = 35$. That value, about $2.7$, is not a whole number of coils.\n* Choice D ($\\frac{35}{4}$): divides by the coefficient of the coils returned rather than by the $5$ left after the subtraction. The $4x$ coils came off the truck, so $4$ is not what multiplies $x$ in the final equation.\n\n**Test Day Takeaway:** Combine like terms before you touch the constant. Once the variable side is a single term, one inverse operation finishes the problem."
+}

@@ -1,0 +1,49 @@
+{
+ "id": "bank-alg-471",
+ "question": "Every ordered pair in the table satisfies a toll plaza's first staffing equation, and its second staffing equation is $6x + cy = 36$. The two equations share all of their solutions. What is the value of the constant $c$?",
+ "questionTable": {
+  "headers": [
+   "Lanes converted, $x$",
+   "Attendants kept, $y$"
+  ],
+  "rows": [
+   [
+    "0",
+    "4"
+   ],
+   [
+    "3",
+    "2"
+   ],
+   [
+    "6",
+    "0"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "applies the factor 1.5 in the reverse direction, 6 / 1.5 = 4",
+  "B": "copies the first equation's y-coefficient, assuming equivalent equations share coefficients",
+  "C": "adds the gap between the x-coefficients, 6 - 4 = 2, to 6 instead of multiplying by 1.5"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** The table gives $4x + 6y = 24$; the second equation's $x$-term is $1.5$ times as large, so $c = 1.5(6) = 9$ (and $1.5 \\cdot 24 = 36$ confirms the constant).\n\n**The Full Solution:**\nStep 1: Build the first equation from the table. As $x$ rises by $3$, $y$ falls by $2$, so the slope is $-\\frac{2}{3}$ with $y = 4$ at $x = 0$: $y = -\\frac{2}{3}x + 4$, or $4x + 6y = 24$.\nStep 2: Two equations share all their solutions only when one is a fixed multiple of the other. The $x$-terms give the factor: $\\frac{6}{4} = 1.5$, and the constants agree, since $1.5(24) = 36$.\nStep 3: Apply the same factor to the $y$-term: $c = 1.5(6) = 9$. Check with a table row: $(3, 2)$ gives $6(3) + 9(2) = 18 + 18 = 36$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): applies the factor of $1.5$ backwards, computing $6 \\div 1.5 = 4$.\n* Choice B ($6$): copies the first equation's $y$-coefficient, as if equivalent equations had to share coefficients rather than scale together.\n* Choice C ($8$): adds the difference between the $x$-coefficients, $6 - 4 = 2$, to $6$ instead of multiplying by $1.5$.\n\n**Test Day Takeaway:** Confirm the scale factor on two known columns before applying it to the unknown one; a shared-solution system scales by one factor everywhere."
+}

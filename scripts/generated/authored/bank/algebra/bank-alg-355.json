@@ -1,0 +1,48 @@
+{
+  "id": "bank-alg-355",
+  "question": "A dental office is ordering toothbrush kits of the two types shown in the table. The office has a budget of $\\$690$ and must order at least $90$ kits to qualify for free delivery. What is the greatest number of electric kits the office can order?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Kit type",
+        "Cost per kit (dollars)"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "5.50"
+        ],
+        [
+          "Electric",
+          "14.00"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$22$"
+    },
+    {
+      "id": "B",
+      "text": "$23$"
+    },
+    {
+      "id": "C",
+      "text": "$49$"
+    },
+    {
+      "id": "D",
+      "text": "$68$"
+    }
+  ],
+  "correctAnswer": "A",
+  "distractorNotes": {
+    "B": "rounded 22.94 up, exceeding the budget",
+    "C": "ignored the 90-kit minimum: 690/14",
+    "D": "reported the number of standard kits, 90 - 22"
+  },
+  "explanation": "**SAT Pattern: Inequality Word Problem (Floor)**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** Order exactly $90$ kits. All standard costs $495$, leaving $195$. Each electric upgrade costs $14.00 - 5.50 = 8.50$ more, so $195 \\div 8.50 = 22.94$, and the floor is $22$.\n\n**The Full Solution:**\nStep 1: Let $e$ be the number of electric kits and $s$ the number of standard kits: $5.5s + 14e \\leq 690$ and $s + e \\geq 90$.\nStep 2: Set $s = 90 - e$: $5.5(90 - e) + 14e \\leq 690$, so $495 + 8.5e \\leq 690$ and $8.5e \\leq 195$.\nStep 3: $e \\leq 22.94$, so the greatest whole number is $22$.\nCheck: $68$ standard and $22$ electric cost $374 + 308 = 682 \\leq 690$; $23$ electric would cost $368.50 + 322 = 690.50$, over budget by fifty cents. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($23$): rounds up; $22.94$ is close to $23$, but the check shows $23$ kits cost $\\$690.50$.\n* Choice C ($49$): computes $690 \\div 14$ and ignores the $90$-kit minimum.\n* Choice D ($68$): is the number of STANDARD kits in the optimal order, not the electric count asked for.\n\n**Test Day Takeaway:** \"Close to the next integer\" is still a floor; verify the boundary case with the actual total before choosing."
+}

@@ -1,0 +1,49 @@
+{
+ "id": 1,
+ "question": "A materials laboratory analyzed a $400$-gram sample of a bronze alloy. The table gives the percent of the sample's total mass contributed by each of three metals in the sample, and the remainder of the mass is zinc. What is the mass, in grams, of the zinc in this sample?",
+ "questionTable": {
+  "headers": [
+   "Metal",
+   "Percent of sample mass"
+  ],
+  "rows": [
+   [
+    "Copper",
+    "62%"
+   ],
+   [
+    "Tin",
+    "3%"
+   ],
+   [
+    "Lead",
+    "5%"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$30$"
+  },
+  {
+   "id": "B",
+   "text": "$120$"
+  },
+  {
+   "id": "C",
+   "text": "$140$"
+  },
+  {
+   "id": "D",
+   "text": "$280$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the leftover percent (30) as a number of grams instead of taking 30% of 400",
+  "C": "omits lead from the sum of listed percents, using 100-62-3=35 and computing 0.35(400)=140",
+  "D": "finds the combined mass of the three listed metals, 0.70(400)=280, instead of the remainder"
+ },
+ "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The three listed metals account for $62 + 3 + 5 = 70$ percent of the mass, so zinc is the complement, $30\\%$. Then $0.30(400) = 120$ grams.\n\n**The Full Solution:**\nStep 1: Add the listed percents: copper, tin, and lead together make up $62\\% + 3\\% + 5\\% = 70\\%$ of the sample's mass.\nStep 2: Everything that is not one of those three metals is zinc, so zinc makes up $100\\% - 70\\% = 30\\%$ of the mass.\nStep 3: Take $30\\%$ of the $400$-gram sample: $0.30(400) = 120$ grams. Check: $120 + 0.70(400) = 120 + 280 = 400$ grams, the whole sample ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($30$): reports the leftover percent, $30$, as though it were a mass. The percent still has to be applied to the $400$-gram total, and $30\\%$ of $400$ is $120$, not $30$.\n* Choice C ($140$): leaves lead out of the sum, using $100\\% - 62\\% - 3\\% = 35\\%$ and computing $0.35(400) = 140$ grams.\n* Choice D ($280$): finds the combined mass of the three metals the table lists, $0.70(400) = 280$ grams, which is the part the question does not ask for.\n\n**Test Day Takeaway:** When a table lists parts of a whole and one part is described only as the remainder, subtract the listed percents from $100\\%$ first, then apply that percent to the total."
+}

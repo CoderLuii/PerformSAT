@@ -1,0 +1,29 @@
+{
+ "id": 7,
+ "question": "A linear model predicts the number of hotel room-nights booked in a resort town during a week, $\\hat{y}$, from the number of inbound flights that week, $x$, by $\\hat{y} = 30x + 210$. In one week the observed number of room-nights was $2{,}460$, which was $150$ greater than the number the model predicts. How many inbound flights were there that week?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$70$"
+  },
+  {
+   "id": "B",
+   "text": "$75$"
+  },
+  {
+   "id": "C",
+   "text": "$77$"
+  },
+  {
+   "id": "D",
+   "text": "$80$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "ignores the 150-room-night gap and solves 30x + 210 = 2460",
+  "C": "subtracts the gap but drops the constant 210, solving 30x = 2310",
+  "D": "adds the gap to the observed value instead of subtracting it, solving 30x + 210 = 2610"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Residual**\n\n**Choice A is correct.**\n\n**The Fast Way (~30s):** The model predicted $2460 - 150 = 2310$ room-nights, so $30x + 210 = 2310$ and $x = 70$.\n\n**The Full Solution:**\nStep 1: The difference between an observed value and the value the model predicts is the residual. Here that difference is $+150$, so observed $=$ predicted $+ \\, 150$.\nStep 2: Solve for the predicted value: $2460 = \\hat{y} + 150$, so $\\hat{y} = 2310$ room-nights.\nStep 3: Put the predicted value into the model: $30x + 210 = 2310$, so $30x = 2100$ and $x = 70$ inbound flights. Check: $30(70) + 210 = 2310$, and $2460 - 2310 = 150$ as stated. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($75$): substitutes the OBSERVED value into the model, solving $30x + 210 = 2460$, which ignores the $150$-room-night gap the stem gives you.\n* Choice C ($77$): subtracts the gap correctly but then drops the constant $210$, solving $30x = 2310$.\n* Choice D ($80$): adds the $150$ to the observed value instead of subtracting it, solving $30x + 210 = 2610$ and moving in the wrong direction.\n\n**Test Day Takeaway:** Residual $=$ observed $-$ predicted. When the stem tells you the observed value is a stated amount ABOVE the prediction, subtract that amount first, then feed the prediction into the model — the model equation never takes the observed value directly."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "On a factory floor grid a conveyor rail runs along $2x + 5y = 40$, and a bracing rail meets it at a right angle after passing through the bolt at $(10, 5)$. At what $x$-value does the bracing rail cross the $x$-axis?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-2.5$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$12$"
+  },
+  {
+   "id": "D",
+   "text": "$22.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses slope 2/5, the reciprocal without the sign change: y = 0.4x + 1 crosses at -2.5",
+  "C": "negates the reciprocal a second time, using slope -5/2: y = -2.5x + 30 crosses at 12",
+  "D": "reuses the conveyor rail's own slope -2/5: y = -0.4x + 9 crosses at 22.5"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** The conveyor rail has slope $-\\frac{2}{5}$, so the bracing rail has slope $\\frac{5}{2}$. Through $(10, 5)$ that is $y = \\frac{5}{2}x - 20$, which is $0$ at $x = 8$.\n\n**The Full Solution:**\nStep 1: Put the conveyor rail in slope-intercept form: $5y = -2x + 40$, so $y = -\\frac{2}{5}x + 8$ and its slope is $-\\frac{2}{5}$.\nStep 2: Perpendicular means the negative reciprocal: flip to $-\\frac{5}{2}$ and change the sign to get $\\frac{5}{2}$. Using the bolt, $5 = \\frac{5}{2}(10) + b$, so $b = 5 - 25 = -20$.\nStep 3: Set $y = 0$: $0 = \\frac{5}{2}x - 20$, so $x = 8$. Check the right angle: $\\left(-\\frac{2}{5}\\right)\\left(\\frac{5}{2}\\right) = -1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-2.5$): uses $\\frac{2}{5}$, the reciprocal with no sign change, giving $y = 0.4x + 1$ and a crossing at $-2.5$.\n* Choice C ($12$): negates twice and uses $-\\frac{5}{2}$, giving $y = -2.5x + 30$ and a crossing at $12$.\n* Choice D ($22.5$): keeps the conveyor rail's own slope $-\\frac{2}{5}$, which produces a parallel rail, not a perpendicular one.\n\n**Test Day Takeaway:** Perpendicular slopes multiply to $-1$ — flip and change the sign, then use the given point to pin down the intercept before answering what was actually asked."
+}

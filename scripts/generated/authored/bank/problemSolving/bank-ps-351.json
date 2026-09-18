@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-351",
+  "question": "A sensor log holds $20$ recorded bridge deck temperatures, in degrees Celsius. Each recorded temperature is later corrected by adding $4$ degrees to it. Which statement correctly describes the median and the range of the corrected temperatures?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The median increases by $4$ degrees and the range increases by $4$ degrees."
+    },
+    {
+      "id": "B",
+      "text": "The median increases by $4$ degrees and the range is unchanged."
+    },
+    {
+      "id": "C",
+      "text": "The median is unchanged and the range increases by $4$ degrees."
+    },
+    {
+      "id": "D",
+      "text": "Both the median and the range are unchanged."
+    }
+  ],
+  "distractorNotes": {
+    "A": "adds the shift to the range as well, double-counting the 4 degrees that cancel in a difference",
+    "C": "holds the median fixed, which happens under a multiplier by 1, not under a shift",
+    "D": "assumes a correction applied to every reading changes nothing at all"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Scaling a Data Set**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Adding $4$ to every reading slides the whole list up: the median rises by $4$, and the range, a difference, is untouched.\n\n**The Full Solution:**\nStep 1: Track the median. The corrected readings keep their original order, so the middle value is the original middle value plus $4$.\nStep 2: Track the range. The range is maximum minus minimum. Both endpoints rise by $4$, so $(\\text{max} + 4) - (\\text{min} + 4)$ equals the original range.\nStep 3: Test a small list. From $10$, $12$, $18$ the median is $12$ and the range is $8$; after adding $4$ the list is $14$, $16$, $22$, with median $16$ and range still $8$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (range increases by $4$): adds the shift twice — once at each endpoint — but those two additions cancel in a subtraction.\n* Choice C (median unchanged): would require the middle reading to stay put while every reading rises.\n* Choice D (both unchanged): ignores that the correction moves every value up the scale.\n\n**Test Day Takeaway:** Adding a constant moves every measure of CENTER by that constant and leaves every measure of SPREAD — range, IQR, standard deviation — alone."
+}

@@ -6,29 +6,14 @@
   "domain": "information-and-ideas",
   "skill": "central-ideas-and-details",
   "module": 1,
-  "passage": "Between 1921 and 1924, the Danish-Greenlandic ethnographer Knud Rasmussen traveled by dog sled from Greenland across Arctic North America to the Bering Strait, recording the languages, songs, and oral traditions of the Inuit communities he visited. Because he had grown up speaking Kalaallisut and could converse without interpreters, Rasmussen gathered detailed accounts of stories and rituals that earlier expeditions, dependent on translators, had captured only in fragments. His reports treated these materials not as curiosities but as evidence of a shared body of belief and narrative stretching across thousands of miles of coast, linking groups long described as isolated from one another.",
+  "passage": "The Hanseatic League, an association of trading towns around the Baltic and North Seas, dominated northern European commerce for three centuries without possessing a treasury, a standing army, or a written constitution. Its power operated through privileges: member merchants secured exclusive trading rights, exemptions from tolls, and their own walled compounds — known as kontors — in foreign ports from London to Novgorod. A town that flouted the League's decisions risked exclusion from this web of privileges, a penalty severe enough to hold hundreds of fiercely independent towns in loose but durable alignment.",
   "question": "Which choice best states the main idea of the text?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Between 1921 and 1924, Rasmussen traveled by dog sled all the way from Greenland across Arctic North America to the Bering Strait, visiting Inuit communities along the route."
-    },
-    {
-      "id": "B",
-      "text": "Earlier Arctic expeditions had depended on interpreters and so recorded Inuit stories and rituals only in fragments."
-    },
-    {
-      "id": "C",
-      "text": "Rasmussen regarded the Inuit songs and rituals he collected as curiosities rather than as serious evidence."
-    },
-    {
-      "id": "D",
-      "text": "Because he spoke an Inuit language, Rasmussen recorded oral traditions in detail and presented them as evidence of beliefs and narratives shared across widely separated Arctic communities."
-    }
+    { "id": "A", "text": "The Hanseatic League declined because it never acquired the treasury and army that its commercial rivals eventually possessed." },
+    { "id": "B", "text": "The kontors that the League maintained in foreign ports mattered more to its overall success than the exclusive trading rights that its merchants enjoyed in other places." },
+    { "id": "C", "text": "Member towns of the Hanseatic League routinely defied its decisions because the League had no formal machinery for punishing them." },
+    { "id": "D", "text": "The Hanseatic League sustained lasting commercial power not through the institutions of a state but through privileges its member towns could not afford to lose." }
   ],
   "correctAnswer": "D",
-  "explanation": "The passage builds toward a single claim: because Rasmussen could speak with the Inuit directly, he gathered full accounts and presented them as evidence of beliefs and stories shared across vast distances. Choice D states that main idea. The others are true details that miss the point—his route (A) or earlier expeditions' limits (B)—or contradict the text by calling his materials mere curiosities (C).",
-  "_meta": {
-    "anchor": "Knud Rasmussen, Fifth Thule Expedition"
-  }
+  "explanation": "**Choice D is correct.** The text's arc runs from a puzzle — three centuries of dominance with no treasury, army, or constitution — to its resolution: power \"operated through privileges,\" enforced by the threat of exclusion. Choice D restates exactly that.\n\n**The Full Solution:**\n- Sentence one sets up the paradox: dominance without the standard equipment of a state.\n- Sentences two and three resolve it — exclusive rights, toll exemptions, and kontors bound members together, and losing them was \"a penalty severe enough\" to keep towns aligned.\n- D captures both halves: not state machinery, but indispensable privileges.\n\n**Why the other choices are wrong:**\n- A: The text describes the League's lasting power, not its decline, and never presents the missing institutions as a cause of failure.\n- B: The kontors are one item in a list of privileges; the text never ranks them above the others.\n- C: It inverts the final sentence — the threat of exclusion kept towns in alignment precisely despite the absence of formal machinery."
 }

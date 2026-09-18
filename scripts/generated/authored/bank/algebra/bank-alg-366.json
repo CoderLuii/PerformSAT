@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-366",
+  "question": "A dance studio orders $p$ practice barres and $m$ mirror sections. The order must contain at least $30$ items in all, and the number of mirror sections must be no more than $12$. Which system of inequalities represents these requirements?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$p + m \\geq 30$ and $m \\leq 12$"
+    },
+    {
+      "id": "B",
+      "text": "$p + m \\leq 30$ and $m \\leq 12$"
+    },
+    {
+      "id": "C",
+      "text": "$p + m \\geq 30$ and $m \\geq 12$"
+    },
+    {
+      "id": "D",
+      "text": "$p + m \\leq 30$ and $m \\geq 12$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads at least 30 as an upper bound, reversing the first inequality",
+    "C": "reads no more than 12 as a lower bound, reversing the second inequality",
+    "D": "reverses both requirements at once"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: System of Linear Inequalities**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** \"At least $30$\" is $p + m \\geq 30$ and \"no more than $12$\" is $m \\leq 12$.\n\n**The Full Solution:**\nStep 1: Name the total. The order holds $p$ practice barres and $m$ mirror sections, so the number of items in all is $p + m$.\nStep 2: Translate the first requirement. \"At least $30$\" sets a minimum, so the total can equal $30$ or exceed it: $p + m \\geq 30$.\nStep 3: Translate the second requirement. \"No more than $12$\" sets a maximum on the mirror sections alone: $m \\leq 12$. Check a sample order: $p = 25$ and $m = 8$ gives $33 \\geq 30$ and $8 \\leq 12$, so it meets both. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: turns \"at least $30$\" into a ceiling, so an order of $40$ items would be excluded even though it clearly satisfies the requirement.\n* Choice C: turns \"no more than $12$\" into a floor, so an order with $20$ mirror sections would count as acceptable.\n* Choice D: reverses both phrases, allowing only orders with at most $30$ items and at least $12$ mirror sections.\n\n**Test Day Takeaway:** \"At least\" and \"no less than\" open upward ($\\geq$); \"at most\" and \"no more than\" close downward ($\\leq$) — and attach each phrase to the exact quantity it modifies."
+}

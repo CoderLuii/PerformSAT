@@ -1,0 +1,45 @@
+{
+  "id": "bank-alg-490",
+  "question": "A florist sold small and large bouquets at a weekend market. The table gives the price, in dollars, of each size. The florist sold $5$ more than twice as many small bouquets as large bouquets and collected a total of $880$ dollars from these sales. How many large bouquets did the florist sell?",
+  "questionTable": {
+    "headers": [
+      "Bouquet size",
+      "Price (dollars)"
+    ],
+    "rows": [
+      [
+        "Small",
+        "8"
+      ],
+      [
+        "Large",
+        "24"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$21$"
+    },
+    {
+      "id": "B",
+      "text": "$22$"
+    },
+    {
+      "id": "C",
+      "text": "$47$"
+    },
+    {
+      "id": "D",
+      "text": "$68$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "drops the \"5 more\" and uses s = 2L, giving 40L = 880",
+    "C": "reports the number of small bouquets",
+    "D": "reports the total number of bouquets"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** Write the small count in terms of the large count, $s = 2L + 5$, and put it straight into the revenue equation: $8(2L + 5) + 24L = 880$, so $40L + 40 = 880$ and $L = 21$.\n\n**The Full Solution:**\nStep 1: Let $L$ be the number of large bouquets and $s$ the number of small bouquets. \"$5$ more than twice as many small as large\" translates to $s = 2L + 5$. The table's prices give the revenue equation $8s + 24L = 880$.\nStep 2: Substitute: $8(2L + 5) + 24L = 880$, so $16L + 40 + 24L = 880$, giving $40L = 840$ and $L = 21$.\nStep 3: Then $s = 2(21) + 5 = 47$. Check the revenue: $8(47) + 24(21) = 376 + 504 = 880$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($22$): translates the relationship as $s = 2L$, losing the \"$5$ more,\" so $40L = 880$ and $L = 22$.\n* Choice C ($47$): is the number of small bouquets.\n* Choice D ($68$): is $47 + 21$, the total number of bouquets, which the question never asks for.\n\n**Test Day Takeaway:** \"$a$ more than $b$ times as many\" becomes $b(\\text{other}) + a$; translate it as a single expression, substitute into the money equation, and let the constant term do its work."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-216",
+  "question": "The function $k$ defined by $k(u) = 0.04(u - 45)^2 + 7$ gives the handling cost, in dollars, per package when $u$ packages are loaded on a pallet, where $u > 0$. Which of the following statements is true?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The handling cost per package is the same when $40$ packages are loaded as when $50$ packages are loaded."
+    },
+    {
+      "id": "B",
+      "text": "The handling cost per package decreases as $u$ increases, for every $u > 0$."
+    },
+    {
+      "id": "C",
+      "text": "The least handling cost per package occurs when $7$ packages are loaded."
+    },
+    {
+      "id": "D",
+      "text": "The handling cost per package is $\\$7$ when $1$ package is loaded."
+    }
+  ],
+  "distractorNotes": {
+    "B": "reads only the left branch of the parabola",
+    "C": "swaps the vertex coordinates, using $k$ as the input",
+    "D": "treats the constant $7$ as the value at the smallest input"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Interpret Vertex Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** $40$ and $50$ are each $5$ units from the vertex input $45$, and $(u - 45)^2$ depends only on that distance, so both give the same cost.\n\n**The Full Solution:**\nStep 1: The vertex of $k$ is $(45, 7)$, so the graph is symmetric about the vertical line $u = 45$.\nStep 2: $40$ and $50$ are the same distance from $45$: $(40 - 45)^2 = (50 - 45)^2 = 25$.\nStep 3: Therefore $k(40) = 0.04(25) + 7 = 8$ and $k(50) = 0.04(25) + 7 = 8$ — equal, as choice A states. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (always decreasing): true only for $u < 45$; past the vertex the cost rises again, reaching $k(90) = 88$.\n* Choice C (least cost at $7$ packages): reverses the vertex; the least cost, $\\$7$, occurs at $u = 45$, and $k(7) \\approx 64.76$.\n* Choice D ($\\$7$ at one package): $k(1) = 0.04(1{,}936) + 7 \\approx 84.44$, nowhere near $\\$7$.\n\n**Test Day Takeaway:** Two inputs equidistant from $h$ always give the same output — symmetry answers \"which must be true\" questions without any computation."
+}

@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 2,
- "passage": "Materials scientist Mildred Dresselhaus spent decades studying how electrons move through carbon. In bulk graphite, she observed, electrons behave much as they do in ordinary metals. But when carbon is rolled into a tube only a few atoms across, those same electrons are confined to so narrow a space that their behavior ______ from the familiar bulk pattern, shifting between metallic and semiconducting according to the exact geometry of the tube.",
+ "passage": "Geophysicists long sorted fault behavior into two categories: locked segments that store strain for centuries before rupturing in great earthquakes, and creeping segments that release strain continuously and harmlessly. The discovery of slow-slip events — episodes in which a fault slides for weeks without producing perceptible shaking — has ______ that tidy division, since the same stretch of fault can alternate between silent sliding and seismic rupture, and a slow event on one segment can load stress onto a locked neighbor.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "departs"
+   "text": "corroborated"
   },
   {
    "id": "B",
-   "text": "benefits"
+   "text": "anticipated"
   },
   {
    "id": "C",
-   "text": "recovers"
+   "text": "complicated"
   },
   {
    "id": "D",
-   "text": "results"
+   "text": "circumvented"
   }
  ],
- "correctAnswer": "A",
- "explanation": "The correct answer is A. The sentence sets the behavior of electrons in a narrow carbon tube against their behavior in bulk graphite, and the rest of the clause—shifting between metallic and semiconducting—describes how the two differ. A verb meaning to diverge is needed, and \"departs\" (departs from) conveys exactly that break from the bulk pattern. \"Benefits\" and \"recovers\" do not describe a difference at all, and \"results\" would need a cause to follow it (results from something), which the construction \"results from the familiar bulk pattern\" does not sensibly supply."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** Evidence that blurs a clean two-part scheme \"complicates\" it — makes it harder to maintain in its simple form.\n\n**The Full Solution:**\n- The passage sets up a \"tidy division\" of faults into locked and creeping categories.\n- Slow-slip events fit neither: the same fault segment can alternate between modes, and slow slip can even trigger effects on locked segments.\n- Behavior that crosses the division's boundaries makes the classification harder to keep — it complicates it.\n\n**Why the other choices are wrong:**\n- A: \"Corroborated\" would require the discovery to confirm the division, but the \"since\" clause describes behavior that crosses its boundaries.\n- B: \"Anticipated\" means foresaw, but a discovery cannot foresee a classification that preceded it.\n- D: \"Circumvented\" means deliberately avoided — but slow-slip events are not agents evading the scheme; they are evidence against its adequacy."
 }

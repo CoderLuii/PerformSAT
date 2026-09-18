@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-193",
+  "question": "The mass of a dried apricot is $32\\%$ less than the mass of the fresh apricot it was made from. If a fresh apricot has a mass of $45$ grams, what is the mass, in grams, of the dried apricot made from it?",
+  "correctAnswer": "30.6",
+  "explanation": "**SAT Pattern: Percent of a Number**\n\n**The correct answer is $30.6$.**\n\n**The Fast Way (~10s):** \"$32\\%$ less\" keeps $68\\%$: $0.68 \\times 45 = 30.6$.\n\n**The Full Solution:**\nStep 1: A $32\\%$ decrease leaves $100\\% - 32\\% = 68\\%$ of the original mass.\nStep 2: Multiply: $0.68 \\times 45 = 30.6$ grams.\nStep 3: Check: the mass lost is $0.32 \\times 45 = 14.4$ grams, and $45 - 14.4 = 30.6$. $\\checkmark$\n\n**Common Mistakes:** Reporting $14.4$, the mass lost, instead of the mass remaining; subtracting $32$ grams to get $13$; or increasing instead of decreasing, $1.32 \\times 45 = 59.4$.\n\n**Test Day Takeaway:** \"$p\\%$ less than\" a value is $\\left(1 - \\frac{p}{100}\\right)$ times that value. Multiply by what remains, not by what was removed."
+}

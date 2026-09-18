@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-274",
+  "question": "An agronomist selected $40$ fields at random from the corn fields in a county and measured the mass of one ear of corn from each selected field. The mean mass for the sample was estimated to be $285$ grams, with an associated margin of error of $12$ grams. Which of the following is the most appropriate conclusion about the mean mass of an ear of corn for all corn fields in the county?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It is between $273$ grams and $297$ grams."
+    },
+    {
+      "id": "B",
+      "text": "It is between $273$ grams and $285$ grams."
+    },
+    {
+      "id": "C",
+      "text": "It is between $285$ grams and $297$ grams."
+    },
+    {
+      "id": "D",
+      "text": "It is either less than $273$ grams or greater than $297$ grams."
+    }
+  ],
+  "distractorNotes": {
+    "B": "subtracts the margin of error but never adds it, discarding the plausible values above the estimate",
+    "C": "adds the margin of error but never subtracts it, discarding the plausible values below the estimate",
+    "D": "takes the values outside the interval as the plausible ones"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Confidence Interval Interpretation**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Plausible values run from estimate minus margin to estimate plus margin: $285 - 12 = 273$ and $285 + 12 = 297$.\n\n**The Full Solution:**\nStep 1: The estimate is $285$ grams and the margin of error is $12$ grams.\nStep 2: The margin of error extends the estimate in both directions, so the plausible values are between $285 - 12 = 273$ grams and $285 + 12 = 297$ grams.\nStep 3: Check: the interval is centered at the estimate, and its half-width is $\\frac{297 - 273}{2} = 12$ grams, the given margin of error. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($273$ to $285$ grams): only the lower half of the interval; the margin of error was subtracted but never added, so this conclusion rules out plausible values above $285$ grams.\n* Choice C ($285$ to $297$ grams): only the upper half; the margin of error was added but never subtracted, so this conclusion rules out plausible values below $285$ grams.\n* Choice D: this names the values the data make *implausible*. The interval itself is the set of plausible values.\n\n**Test Day Takeaway:** A margin of error is a $\\pm$: build the interval by moving the same distance both ways from the estimate."
+}

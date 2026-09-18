@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-235",
+ "question": "A flooring supplier's weekly shipments of hardwood sample tiles follow $y=x^2+2x+c$ for a constant $c$, and the line $y=4x+1$ shares a single point with that graph. What is the $y$-coordinate of the shared point?",
+ "correctAnswer": "5",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~30s):** Equating gives $x^2-2x+(c-1)=0$, whose double root is $x=1$; substituting into $y=4x+1$ gives $y=5$.\n\n**The Full Solution:**\nStep 1: Set $x^2+2x+c=4x+1$, which rearranges to $x^2-2x+(c-1)=0$.\nStep 2: A single shared point is a double root, located at $x=-\\frac{-2}{2(1)}=1$.\nStep 3: Put $x=1$ into the line: $y=4(1)+1=5$. Check: a double root at $1$ makes the quadratic $(x-1)^2$, so $c-1=1$ and $c=2$; then $y=1+2+2=5$ on the curve as well ✓\n\n**Common Mistakes:**\n* $1$: reports the $x$-coordinate of the shared point instead of the $y$-coordinate.\n* $4$: reports the slope of the line.\n* $3$: substitutes $x=1$ into $y=2x+1$, mixing the curve's linear term with the line.\n\n**Test Day Takeaway:** Find the tangency input from $-\\frac{b}{2a}$ of the difference quadratic, then read the output off the line — it is the easier of the two equations."
+}

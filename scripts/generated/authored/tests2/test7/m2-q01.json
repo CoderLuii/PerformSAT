@@ -1,0 +1,58 @@
+{
+ "id": 1,
+ "question": "The table shows the number of freight cars of each cargo type held at two classification yards on the same morning, with no other cars present at either yard. Of the cars at Yard B, what percent carry grain?",
+ "questionTable": {
+  "headers": [
+   "Cargo type",
+   "Yard A",
+   "Yard B"
+  ],
+  "rows": [
+   [
+    "Grain",
+    "84",
+    "63"
+   ],
+   [
+    "Lumber",
+    "56",
+    "42"
+   ],
+   [
+    "Chemicals",
+    "42",
+    "57"
+   ],
+   [
+    "Automobiles",
+    "28",
+    "48"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$30\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$35\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$40\\%$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the 63 grain cars by the 420-car two-yard total instead of the 210 cars at Yard B",
+  "C": "uses the 147 grain cars from both yards over the 420-car two-yard total",
+  "D": "reads the Yard A column instead of Yard B, computing 84 out of 210"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Yard B holds $63+42+57+48=210$ cars, and $\\frac{63}{210}=0.3$, so $30\\%$ of them carry grain.\n\n**The Full Solution:**\nStep 1: Identify the whole. The question restricts attention to Yard B, so the whole is the Yard B column only: $63+42+57+48=210$ cars.\nStep 2: Identify the part. Grain at Yard B is $63$ cars — the Yard A entry of $84$ belongs to a different whole.\nStep 3: Divide and convert. $\\frac{63}{210}=\\frac{3}{10}=0.30=30\\%$. Check: $30\\%$ of $210$ is $0.30(210)=63$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($15\\%$): divides $63$ by the two-yard total $420$ instead of by the $210$ cars at Yard B, giving $\\frac{63}{420}=15\\%$.\n* Choice C ($35\\%$): adds the grain from both yards, $84+63=147$, and divides by $420$, giving $35\\%$ — that answers a question about both yards, not about Yard B.\n* Choice D ($40\\%$): reads across the wrong column, computing $\\frac{84}{210}=40\\%$ for Yard A.\n\n**Test Day Takeaway:** In a percent-of-a-whole question the hard part is never the division — it is deciding which total is the whole. Underline the restricting phrase (\"of the cars at Yard B\") before you touch the table.\n"
+}

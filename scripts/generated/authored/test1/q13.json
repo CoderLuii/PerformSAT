@@ -6,46 +6,46 @@
  "domain": "information-and-ideas",
  "skill": "command-of-evidence-quantitative",
  "module": 1,
- "passage": "In the 1850s, the naturalist Henry David Thoreau kept careful notes on when wild plants near Concord, Massachusetts, first burst into bloom each spring. More than a century later, the ecologists Miller-Rushing and Primack revisited several of those species at the same locations, recording first-flowering dates from 2004 to 2006. The researchers conclude that warming temperatures have shifted the timing of spring blooming across the Concord plant community as a whole because _______",
+ "passage": "Beavers engineer their surroundings, building dams that pond water and create wetlands. Between 2015 and 2023, ecologists tracked five headwater stream sites in the western United States where beavers had recently established colonies, counting the ponds at each site and measuring the area of adjacent wetland habitat. The ecologists conclude that the beavers' activity expanded wetland habitat across all of the monitored sites because ______",
  "questionTable": {
   "type": "table",
-  "caption": "First-flowering dates of selected Concord plants in Thoreau's records (1852-1858) and in modern observations (2004-2006), with the shift in days (Miller-Rushing and Primack, 2008)",
+  "caption": "Beaver ponds and change in adjacent wetland area at five monitored stream sites, 2015-2023",
   "headers": [
-   "Species",
-   "1852-1858 (Thoreau)",
-   "2004-2006",
-   "Shift (days)"
+   "Site",
+   "Ponds, 2015",
+   "Ponds, 2023",
+   "Change in wetland area (%)"
   ],
   "rows": [
    [
-    "Highbush blueberry",
-    "May 11",
-    "May 1",
-    "-10"
+    "Willow Creek",
+    "2",
+    "9",
+    "+61"
    ],
    [
-    "Yellow wood sorrel",
-    "May 24",
-    "May 22",
-    "-2"
+    "Alder Fork",
+    "1",
+    "5",
+    "+34"
    ],
    [
-    "Common buttercup",
-    "May 16",
-    "May 9",
-    "-7"
+    "Granite Run",
+    "3",
+    "8",
+    "+47"
    ],
    [
-    "Lady's slipper orchid",
-    "May 30",
-    "May 27",
-    "-3"
+    "Fox Hollow",
+    "0",
+    "4",
+    "+28"
    ],
    [
-    "Marsh marigold",
-    "April 26",
-    "April 22",
-    "-4"
+    "Marsh Branch",
+    "2",
+    "6",
+    "+39"
    ]
   ]
  },
@@ -53,21 +53,21 @@
  "choices": [
   {
    "id": "A",
-   "text": "highbush blueberry, which bloomed on May 11 in Thoreau's records and on May 1 in 2004-2006, shifted by 10 days, the largest change of any species in the table."
+   "text": "Willow Creek, which gained seven ponds between 2015 and 2023, showed a 61% increase in adjacent wetland area over the same period, the largest increase of any monitored site."
   },
   {
    "id": "B",
-   "text": "each of the five species recorded by Thoreau bloomed earlier in 2004-2006 than in the 1850s, with shifts ranging from 2 days for yellow wood sorrel to 10 days for highbush blueberry."
+   "text": "every site gained ponds over the monitoring period, and wetland area increased at all five sites, by amounts ranging from 28% to 61%."
   },
   {
    "id": "C",
-   "text": "in the 2004-2006 records, marsh marigold bloomed on April 22, more than a month before lady's slipper orchid bloomed on May 27."
+   "text": "Fox Hollow, which had no ponds in 2015, supported four ponds by 2023."
   },
   {
    "id": "D",
-   "text": "lady's slipper orchid bloomed on May 30 in Thoreau's records but only on May 27 in 2004-2006, suggesting that flowering was delayed by 3 days."
+   "text": "the total number of ponds across the five sites more than doubled between 2015 and 2023."
   }
  ],
  "correctAnswer": "B",
- "explanation": "The claim is community-wide: warming has shifted the timing of spring blooming across the Concord plant community as a whole. To support that generalization, the evidence has to speak to every species in the table, not just one. Choice B does precisely that — it notes that each of the five species bloomed earlier in 2004-2006 than in the 1850s, and it bounds the magnitude of the shift (2 to 10 days) so the reader sees both that the pattern is uniform in direction and that it varies in size. Uniformly negative shifts across all five rows are exactly what licenses a community-level conclusion."
+ "explanation": "**Choice B is correct.** A claim about all monitored sites needs evidence covering every row of the table, and B alone provides it: every site gained ponds, and wetland area rose at all five.\n\n**The Full Solution:**\n- The claim's scope is total: beaver activity \"expanded wetland habitat across all\" of the monitored sites.\n- Choice B covers every site, and its 28% to 61% range shows the pattern's uniform direction with varying size — exactly what supports an all-sites claim.\n\n**Why the other choices are wrong:**\n- A: It cites only the single strongest site, which cannot establish a claim about all five.\n- C: It likewise isolates one site and never mentions wetland area.\n- D: It aggregates the pond counts but says nothing about wetland area, the quantity the conclusion is actually about."
 }

@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "Data set M has a mean of $58$ and a standard deviation of $9$. Data set N is formed by increasing each value in data set M by $12$. What is the standard deviation of data set N?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$9$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$21$"
+    },
+    {
+      "id": "D",
+      "text": "$70$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the amount added to each value rather than the spread of the new data set.",
+    "C": "adds $12$ to the standard deviation, treating spread the same way as center.",
+    "D": "reports the mean of data set N instead of its standard deviation."
+  },
+  "correctAnswer": "A",
+  "hint": "Picture sliding every dot the same distance along the number line.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** Adding the same amount to every value slides the whole distribution without stretching it, so the standard deviation stays $9$.\n\n**The Full Solution:**\nStep 1: Each value of N is a value of M plus $12$, and the mean of N is $58 + 12 = 70$.\nStep 2: Each deviation from the mean is unchanged, since $(x + 12) - (58 + 12) = x - 58$.\nStep 3: Standard deviation is built entirely from those deviations, so it is still $9$. Check: the distances between values are unchanged by a shift, so the spread cannot change. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($12$): reports the amount added to each value rather than the spread of the new data set.\n* Choice C ($21$): adds $12$ to the standard deviation, treating spread the same way as center.\n* Choice D ($70$): reports the mean of data set N instead of its standard deviation.\n\n**Test Day Takeaway:** Adding a constant moves the center and leaves the spread alone. Only the mean and median shift by that constant."
+}

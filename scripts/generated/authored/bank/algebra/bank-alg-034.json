@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-034",
+  "question": "In the $xy$-plane, line $r$ has a slope of $-6$. Line $s$ is perpendicular to line $r$. What is the slope of line $s$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-6$"
+    },
+    {
+      "id": "B",
+      "text": "$-\\frac{1}{6}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{1}{6}$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "keeps the same slope (parallel, not perpendicular)",
+    "B": "takes the reciprocal without changing the sign",
+    "D": "changes the sign without taking the reciprocal"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Perpendicular Slope (Negative Reciprocal)**\n\n**Choice C is correct.**\n\n**The Fast Way (~5s):** Perpendicular slopes are negative reciprocals: flip $-6 = -\\frac{6}{1}$ to $-\\frac{1}{6}$ and change the sign, giving $\\frac{1}{6}$.\n\n**The Full Solution:**\nStep 1: If two lines are perpendicular and neither is vertical, the product of their slopes is $-1$.\nStep 2: Let the slope of $s$ be $m$. Then $-6 \\cdot m = -1$, so $m = \\frac{-1}{-6} = \\frac{1}{6}$.\nStep 3: Check: $-6 \\cdot \\frac{1}{6} = -1$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-6$): repeats the slope of $r$, which describes a parallel line.\n* Choice B ($-\\frac{1}{6}$): takes the reciprocal but forgets to change the sign; the product $-6 \\cdot (-\\frac{1}{6}) = 1$, not $-1$.\n* Choice D ($6$): changes the sign but not the reciprocal; the product would be $-36$.\n\n**Test Day Takeaway:** Perpendicular slope = flip AND negate; verify by multiplying the two slopes to get exactly $-1$."
+}

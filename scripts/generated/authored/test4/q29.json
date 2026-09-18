@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "words-in-context",
+  "module": 2,
+  "passage": "When opera companies in the 1980s began projecting translations of the libretto onto a screen above the stage, several prominent directors objected. A strip of glowing text, they argued, would ______ the audience's attention, pulling eyes upward at exactly the moments when a singer's face and body carried the drama.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "prescribe"
+      "text": "reward"
     },
     {
       "id": "B",
-      "text": "approve"
+      "text": "divert"
     },
     {
       "id": "C",
-      "text": "dispense"
+      "text": "sharpen"
     },
     {
       "id": "D",
-      "text": "formulate"
+      "text": "sustain"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage describes a regulator deciding whether to grant a drug permission to be sold, so the reviewers can demand more evidence before they will \"approve\" it for the market. \"Prescribe\" and \"dispense\" describe what physicians and pharmacists do, not regulators; \"formulate\" describes the chemists who develop the drug. Each is plausible in a medical setting, but only \"approve\" names the regulator's licensing act.",
-  "passage": "When a pharmaceutical company applies to a national regulator for permission to sell a new drug, the agency's reviewers can require more evidence before they will ______ it for the market. In one well-documented case from the early 1960s, a reviewer's insistence on additional data about a sedative's effects on fetal development delayed its sale in the United States and spared the country a wave of severe birth defects seen elsewhere.",
+  "explanation": "**Choice B is correct.** The directors' fear is attention pulled away from the stage — \"pulling eyes upward\" — and \"divert\" means precisely to draw something off its intended course.\n\n**The Full Solution:**\n- The screen sits above the stage; the drama lives in the singer's face and body below.\n- The objection is that the glowing text competes for the audience's gaze at the crucial moments.\n- \"Divert the audience's attention\" names that redirection exactly.\n\n**Why the other choices are wrong:**\n- A: \"Reward\" would make the text a benefit to attention, not a threat to it.\n- C: \"Sharpen\" means to focus attention more keenly — the opposite of the directors' worry.\n- D: \"Sustain\" means to keep attention going, but the objection is about where attention goes, not whether it lasts.",
   "_meta": {
-    "anchor": "drug regulation — marketing approval"
-  },
-  "module": 2
+    "anchor": "opera supertitles controversy — attention drawn from the stage"
+  }
 }

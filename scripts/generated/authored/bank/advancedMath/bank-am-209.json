@@ -1,0 +1,57 @@
+{
+  "id": "bank-am-209",
+  "question": "A plant nursery gave away seedling flats at a steady rate during a spring event. The function $s$ defined by $s(w) = -6w + 48$ gives the number of flats remaining $w$ weeks into the event, and the graph of $y = s(w)$ is shown. Which statement is the best interpretation of the $y$-intercept of the graph in this context?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -6,
+      "yIntercept": 48,
+      "xRange": [
+        0,
+        10
+      ],
+      "yRange": [
+        0,
+        50
+      ],
+      "xTickInterval": 5,
+      "yTickInterval": 10,
+      "gridInterval": 5,
+      "showPoints": [
+        [
+          0,
+          48
+        ],
+        [
+          8,
+          0
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The nursery gave away $6$ flats each week."
+    },
+    {
+      "id": "B",
+      "text": "The nursery had $48$ flats when the event began."
+    },
+    {
+      "id": "C",
+      "text": "The nursery had given away $48$ flats when the event ended."
+    },
+    {
+      "id": "D",
+      "text": "The event lasted $48$ weeks."
+    }
+  ],
+  "distractorNotes": {
+    "A": "interprets the slope instead of the $y$-intercept",
+    "C": "reads the intercept as a total given away rather than a starting stock",
+    "D": "reads the intercept as a number of weeks"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Interpret Initial Value in Context**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The $y$-intercept is $s(0) = 48$, the number of flats remaining after $0$ weeks — the stock the nursery started with.\n\n**The Full Solution:**\nStep 1: The $y$-intercept of the graph is the point where $w = 0$.\nStep 2: $s(0) = -6(0) + 48 = 48$, so the graph passes through $(0, 48)$.\nStep 3: Since $s(w)$ counts flats remaining, $48$ flats remained at the moment the event began. Check the other constant: $-6$ is the weekly change, and the graph reaches $s(8) = 0$, so the flats ran out after $8$ weeks. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$ flats per week): interprets $-6$, the slope, not the intercept.\n* Choice C ($48$ given away by the end): $48$ is the count at the START; by the end the count is $0$.\n* Choice D ($48$ weeks): $48$ is measured on the vertical axis, in flats; the graph reaches zero at $w = 8$ weeks.\n\n**Test Day Takeaway:** The $y$-intercept always answers \"what was the output when the input was $0$?\" — state it in the units of the output."
+}

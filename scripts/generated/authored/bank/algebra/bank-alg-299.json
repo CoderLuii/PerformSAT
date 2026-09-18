@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-299",
+ "question": "A kiln schedule requires $9(h - 4) = 7h + q$ for its hold time $h$, in minutes, where $q$ is a constant. The kiln holds for $30$ minutes. What is the value of $q$?",
+ "correctAnswer": "24",
+ "explanation": "**SAT Pattern: Parameter Inference from a Linear Equation**\n\n**The correct answer is $24$.**\n\n**The Fast Way (~25s):** With $h = 30$, the left side is $9(26) = 234$ and the right side is $210 + q$, so $q = 24$.\n\n**The Full Solution:**\nStep 1: Substitute $h = 30$ into the left side: $9(30 - 4) = 9(26) = 234$.\nStep 2: Substitute $h = 30$ into the right side: $7(30) + q = 210 + q$.\nStep 3: Setting the sides equal gives $234 = 210 + q$, so $q = 24$. Check: $9(26) = 234$ and $7(30) + 24 = 234$.\n\n**Common Mistakes:**\n* Writing the left side as $9h - 4 = 266$ skips distributing the $9$ to the $-4$ and gives $q = 56$.\n* Subtracting in the wrong order, $210 - 234$, gives $-24$.\n* Multiplying $h - 4$ by $7$ instead of $9$ gives $182 - 210 = -28$.\n\n**Test Day Takeaway:** Substitute the given value into both sides before solving; distributing across a parenthesis is where the constant is usually lost."
+}

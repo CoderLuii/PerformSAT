@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "central-ideas-and-details",
-  "question": "Based on the text, what is true of some patients with damage to the hippocampus?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "They can improve at a new motor skill even while being unable to remember having practiced it."
-    },
-    {
-      "id": "B",
-      "text": "They permanently lose all of their previously formed motor skills at the same time that they lose their memory for recent events and conversations."
-    },
-    {
-      "id": "C",
-      "text": "They form new memories of recent events more easily than people without any such damage do."
-    },
-    {
-      "id": "D",
-      "text": "They keep a conscious recollection of facts while losing the ability to learn any new motor skill."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage states that such patients can keep improving at a mirror-tracing task day by day \"even as they deny ever having attempted it before,\" so they learn a motor skill without remembering the practice. Choice B reverses this, since the passage says motor learning is retained, not lost; Choice C contradicts the central detail that these patients cannot form new event memories; and Choice D swaps the two abilities, attributing to them a loss of motor learning the passage assigns to declarative memory instead.",
-  "passage": "Not all memory loss is loss of the same thing. Patients with damage to a brain structure called the hippocampus may be unable to form new memories of events they experience—where they went yesterday, whom they met an hour ago—and yet retain the ability to acquire new motor skills, improving at a mirror-tracing task day by day even as they deny ever having attempted it before. Findings of this kind led researchers to distinguish \"declarative\" memory, the conscious recollection of facts and events, from \"procedural\" memory, the largely unconscious learning of skills, and to conclude that the two depend on partly separate brain systems rather than on a single faculty of memory.",
-  "_meta": {
-    "anchor": "cognitive science of memory: declarative vs. procedural memory in amnesia"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "central-ideas-and-details",
+ "question": "Based on the text, what is true of astronomers who used the Alfonsine Tables outside Toledo?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "They had to adjust the tables' values using a longitude difference that was itself only roughly known."
   },
-  "id": 1138,
-  "module": 2
+  {
+   "id": "B",
+   "text": "They produced planetary predictions that were less accurate than those made by astronomers working in Toledo itself."
+  },
+  {
+   "id": "C",
+   "text": "They completed most computations quickly once the proper instructional canons were consulted."
+  },
+  {
+   "id": "D",
+   "text": "They preferred fresh observations of the sky to the values the tables provided."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The text states both halves: a user \"in Paris or Kraków first had to correct every time value for the difference in longitude,\" and that difference was \"itself a quantity known only roughly.\"\n\n**The Full Solution:**\n- The question restricts attention to users outside Toledo, and the second sentence addresses exactly them — the tables' base values were tied to Toledo's meridian.\n- The required correction (longitude difference) and its unreliability (known only roughly) are asserted in the same sentence, so choice A stays entirely inside the text.\n\n**Why the other choices are wrong:**\n- B: Tempting as an inference from the rough correction, but the text never compares the accuracy of anyone's predictions — that step goes beyond what is stated.\n- C: It contradicts the text, where the arithmetic \"could occupy an afternoon for a single planet\" and the canons are instructions, not shortcuts.\n- D: The users in the text labor to apply the tables' values; no preference for fresh observation is attributed to them.",
+ "passage": "The Alfonsine Tables gave a medieval astronomer the means to compute the position of a planet for any date — but only after considerable labor. The tables' base values were tied to the meridian of Toledo, so a user in Paris or Kraków first had to correct every time value for the difference in longitude, itself a quantity known only roughly. The arithmetic then ran through sexagesimal multiplications that could occupy an afternoon for a single planet. Surviving manuscripts show wide margins filled with intermediate calculations, and university teachers produced entire treatises, called canons, devoted to nothing but instructions for using the tables correctly.",
+ "_meta": {
+  "anchor": "medieval astronomical tables — Alfonsine Tables in use: meridian correction, sexagesimal labor, canons",
+  "distractors": {
+   "B": "unstated accuracy comparison",
+   "C": "contradicts the labor evidence",
+   "D": "fabricated preference"
+  }
+ },
+ "id": 1138,
+ "module": 2
 }

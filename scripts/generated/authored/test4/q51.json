@@ -5,6 +5,8 @@
   "band": 3,
   "domain": "expression-of-ideas",
   "skill": "transitions",
+  "module": 2,
+  "passage": "Rows of trees planted along the edges of fields blunt the wind almost as soon as they are in the ground, and fields in their shelter hold measurably more moisture through a rainless spell. ______ the maturing rows thicken into corridors dense enough to harbor the birds and predatory insects that keep crop pests in check, so a shelterbelt's protection widens as it ages.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
@@ -13,22 +15,20 @@
     },
     {
       "id": "B",
-      "text": "For example,"
+      "text": "By contrast,"
     },
     {
       "id": "C",
-      "text": "In addition,"
+      "text": "Eventually,"
     },
     {
       "id": "D",
-      "text": "By contrast,"
+      "text": "For instance,"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. The third sentence adds a second desert-plant adaptation — wide, shallow roots — to the first one already described, the waxy water-storing stems, so an addition transition fits. \"Nevertheless\" (A) marks contrast; \"For example\" (B) would treat the roots as an instance of the stems; and \"By contrast\" (D) wrongly sets the two adaptations against each other.",
-  "passage": "A desert receives less than ten inches of rain a year, so the plants that live there cannot rely on a steady water supply. Many desert plants have thick, waxy stems that store water and lose very little of it to the dry air. ______ their roots often spread out just below the surface over a wide area, ready to soak up as much as possible from the brief, infrequent rains.",
+  "explanation": "**Choice C is correct.** The first sentence describes benefits a shelterbelt delivers from the start (blunted wind \"almost as soon as they are in the ground,\" retained moisture); the second describes a benefit that emerges only later, as the rows mature. A development that arrives after time has passed calls for a sequence transition.\n\n**The Full Solution:**\n- At planting, the tree rows already blunt wind and conserve soil moisture.\n- Only as they mature do the rows thicken into corridors that harbor birds and predatory insects.\n- The closing clause — \"protection widens as it ages\" — confirms that the relationship is temporal: the habitat benefit follows the wind benefit over time. \"Eventually\" marks that later development.\n\n**Why the other choices are wrong:**\n- A: \"Nevertheless\" would set the habitat benefit against the wind benefit, but the sentences agree.\n- B: \"By contrast\" likewise demands an opposition that is not there.\n- D: \"For instance\" would make pest control an example of the wind protection, yet it is a distinct benefit that arrives later.",
   "_meta": {
-    "anchor": "desert plant adaptations; addition"
-  },
-  "module": 2
+    "anchor": "shelterbelts — immediate wind protection, then maturing rows harbor pest predators; sequence transition"
+  }
 }

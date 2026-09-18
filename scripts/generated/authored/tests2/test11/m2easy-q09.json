@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "The model $\\hat{P} = 0.85m + 14.2$ estimates the chamber pressure, in kilopascals, from the mass flow rate $m$, in grams per second. At $m = 26$ the pressure measured in the chamber was $37.7$ kilopascals. Which statement describes the model's estimate at $m = 26$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The model overestimates the measured pressure by $1.4$ kilopascals."
+  },
+  {
+   "id": "B",
+   "text": "The model underestimates the measured pressure by $1.4$ kilopascals."
+  },
+  {
+   "id": "C",
+   "text": "The model underestimates the measured pressure by $15.6$ kilopascals."
+  },
+  {
+   "id": "D",
+   "text": "The model underestimates the measured pressure by $23.5$ kilopascals."
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts in the wrong order, predicted minus measured, reversing the direction of the miss",
+  "C": "leaves out the constant 14.2, predicting 22.1 instead of 36.3",
+  "D": "uses only the constant 14.2 as the prediction, ignoring the 0.85m term"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Residual**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The model predicts $0.85(26) + 14.2 = 36.3$, and the chamber actually read $37.7$, so the measurement sits $1.4$ above the model.\n\n**The Full Solution:**\nStep 1: Evaluate the model at $m = 26$: $0.85(26) = 22.1$, and $22.1 + 14.2 = 36.3$ kilopascals.\nStep 2: Compare measured with predicted: $37.7 - 36.3 = 1.4$ kilopascals, a positive difference.\nStep 3: Interpret the sign. A positive measured-minus-predicted difference means the model's value is too small, so the model underestimates by $1.4$. Check: $36.3 + 1.4 = 37.7$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A (overestimates by $1.4$): the size is right but the direction is backwards; subtract measured minus predicted, not predicted minus measured.\n* Choice C (underestimates by $15.6$): drops the constant and predicts $22.1$, giving $37.7 - 22.1 = 15.6$.\n* Choice D (underestimates by $23.5$): uses $14.2$ alone as the prediction, giving $37.7 - 14.2 = 23.5$.\n\n**Test Day Takeaway:** Always compute measured minus predicted, in that order — the sign of that difference is what tells you whether the model runs low or high."
+}

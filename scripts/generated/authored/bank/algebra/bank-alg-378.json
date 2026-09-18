@@ -1,0 +1,48 @@
+{
+ "id": "bank-alg-378",
+ "question": "A square building pad has two of its adjacent corners at the plotted points in the $xy$-plane, where one grid unit stands for ten meters of ground distance. What is the perimeter, in meters, of the pad?",
+ "diagram": {
+  "type": "coordinatePoints",
+  "params": {
+   "points": [
+    [
+     1,
+     2
+    ],
+    [
+     5,
+     5
+    ]
+   ],
+   "xMin": -2,
+   "xMax": 8,
+   "yMin": -2,
+   "yMax": 8
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$50$"
+  },
+  {
+   "id": "B",
+   "text": "$70$"
+  },
+  {
+   "id": "C",
+   "text": "$140$"
+  },
+  {
+   "id": "D",
+   "text": "$200$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports one side length instead of the perimeter",
+  "B": "adds the horizontal and vertical separations in meters",
+  "C": "gives the perimeter of the rectangle formed by the separations"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Distance Formula**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The corners are $4$ and $3$ units apart, so the side is $5$ units, or $50$ meters, and the perimeter is $4(50) = 200$ meters.\n\n**The Full Solution:**\nStep 1: Read the corners: $(1, 2)$ and $(5, 5)$. The horizontal separation is $4$ units and the vertical separation is $3$ units.\nStep 2: The side length is $\\sqrt{4^2 + 3^2} = \\sqrt{25} = 5$ units, and each unit is ten meters, so the side measures $50$ meters.\nStep 3: A square has four equal sides, so the perimeter is $4(50) = 200$ meters. Check: $4$-$3$-$5$ satisfies $16 + 9 = 25$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($50$): reports the length of one side rather than the perimeter.\n* Choice B ($70$): adds the horizontal and vertical separations, $40 + 30$, instead of using them as legs.\n* Choice C ($140$): gives $2(40 + 30)$, the perimeter of the rectangle formed by the separations rather than of the square pad.\n\n**Test Day Takeaway:** Convert grid units to real units once, right after the distance step, then finish the geometry in real units."
+}

@@ -1,0 +1,56 @@
+{
+  "id": "bank-alg-439",
+  "question": "The table gives values of the linear functions $f$ and $g$ at three values of $x$. How many solutions does the system of equations $y = f(x)$ and $y = g(x)$ have?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "x",
+        "f(x)",
+        "g(x)"
+      ],
+      "rows": [
+        [
+          "0",
+          "-1",
+          "2"
+        ],
+        [
+          "2",
+          "3",
+          "6"
+        ],
+        [
+          "4",
+          "7",
+          "10"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "Zero"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two"
+    },
+    {
+      "id": "D",
+      "text": "Infinitely many"
+    }
+  ],
+  "distractorNotes": {
+    "B": "assumes two different lines must cross somewhere; that fails when the slopes are equal.",
+    "C": "two lines cannot intersect at exactly two points.",
+    "D": "would require f(x) = g(x) in every row, but g(x) - f(x) = 3 in each row."
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Parallel Lines No Solution**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Both functions rise by $4$ for every $2$ units of $x$ (slope $2$), but $g(x)$ is always $3$ more than $f(x)$, so the lines are parallel and never meet.\n\n**The Full Solution:**\nStep 1: Find each slope from the table. $f$: $\\frac{3 - (-1)}{2 - 0} = 2$. $g$: $\\frac{6 - 2}{2 - 0} = 2$. The slopes are equal.\nStep 2: Find the intercepts: $f(0) = -1$ and $g(0) = 2$, so $f(x) = 2x - 1$ and $g(x) = 2x + 2$. Same slope, different intercept: parallel, distinct lines.\nStep 3: Check: $2x - 1 = 2x + 2$ gives $-1 = 2$, which is false for every $x$, so the system has zero solutions. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (Exactly one): assumes two different lines must cross somewhere; that fails when the slopes are equal.\n* Choice C (Exactly two): two lines cannot intersect at exactly two points.\n* Choice D (Infinitely many): would require $f(x) = g(x)$ in every row, but $g(x) - f(x) = 3$ in each row.\n\n**Test Day Takeaway:** From a table, compute both slopes with the same two $x$-values; equal slopes plus a constant gap between the columns means no solution."
+}

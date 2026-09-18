@@ -1,0 +1,66 @@
+{
+  "id": "bank-ps-205",
+  "question": "A bicycle shop logged the $200$ repairs it completed last month by frame material and type of service, as summarized in the two-way table. If one of these repairs is selected at random, what is the probability that it was performed on a steel-frame bicycle?",
+  "diagram": {
+    "type": "twoWayTable",
+    "params": {
+      "headers": [
+        "",
+        "Tune-up",
+        "Wheel repair",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Aluminum",
+          "50",
+          "40",
+          "90"
+        ],
+        [
+          "Steel",
+          "40",
+          "30",
+          "70"
+        ],
+        [
+          "Carbon",
+          "25",
+          "15",
+          "40"
+        ],
+        [
+          "Total",
+          "115",
+          "85",
+          "200"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$\\frac{1}{5}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{7}{20}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{9}{20}$"
+    },
+    {
+      "id": "D",
+      "text": "$\\frac{4}{7}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reads the carbon row instead of the steel row",
+    "C": "reads the aluminum row instead of the steel row",
+    "D": "computes 40/70, the probability of a tune-up given a steel frame"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Marginal Probability**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The steel row totals $70$ out of $200$ repairs, so the probability is $\\frac{70}{200} = \\frac{7}{20}$.\n\n**The Full Solution:**\nStep 1: Read the Steel row: $40$ tune-ups and $30$ wheel repairs, for a row total of $70$.\nStep 2: The grand total is $200$ repairs.\nStep 3: Divide and simplify: $\\frac{70}{200} = \\frac{7}{20}$. Check: $\\frac{7}{20} = 0.35$, and $0.35 \\times 200 = 70$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{1}{5}$): this is $\\frac{40}{200}$, the probability of a carbon-frame repair — the wrong row.\n* Choice C ($\\frac{9}{20}$): this is $\\frac{90}{200}$, the probability of an aluminum-frame repair.\n* Choice D ($\\frac{4}{7}$): this is $\\frac{40}{70}$, the probability of a tune-up given a steel frame, which conditions on steel instead of asking for it.\n\n**Test Day Takeaway:** Identify the denominator before the numerator: \"selected at random\" from all repairs means the grand total goes on the bottom."
+}

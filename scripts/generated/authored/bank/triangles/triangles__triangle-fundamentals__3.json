@@ -1,0 +1,30 @@
+{
+ "id": 3,
+ "question": "A solar sail's triangular gore has a right angle at one corner, and its other two angles measure $(4k + 6)$ degrees and $(2k - 6)$ degrees. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$15$"
+  },
+  {
+   "id": "B",
+   "text": "$24$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$66$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reports the angle (2k - 6) rather than k",
+  "C": "sets the two acute angles equal to 180 instead of 90",
+  "D": "reports the angle (4k + 6) rather than k"
+ },
+ "correctAnswer": "A",
+ "hint": "One of the three angles is already known, though the stem gives no number for it.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~25s):** The two acute angles of a right triangle total $90$ degrees, so $6k = 90$ and $k = 15$.\n\n**The Full Solution:**\nStep 1: Because one angle is a right angle, the other two must total $180 - 90 = 90$ degrees.\nStep 2: So $(4k + 6) + (2k - 6) = 90$, which simplifies to $6k = 90$.\nStep 3: Therefore $k = 15$. Check: the angles are $4(15) + 6 = 66$ and $2(15) - 6 = 24$, and $66 + 24 + 90 = 180$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($24$): reporting the angle $(2k - 6)$ instead of the constant $k$.\n* Choice C ($30$): setting the two acute angles equal to $180$ degrees, which double-counts the right angle.\n* Choice D ($66$): reporting the angle $(4k + 6)$ instead of the constant $k$.\n\n**Test Day Takeaway:** A right angle uses $90$ of the $180$ degrees, so the remaining two angles share exactly $90$."
+}

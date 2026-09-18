@@ -1,0 +1,57 @@
+{
+ "id": 16,
+ "question": "Every crane at a container port unloads cargo at the same constant rate, and the table shows three completed unloadings from last week. At that same rate, how many hours do 9 cranes working together need to unload $1{,}620$ tonnes?",
+ "questionTable": {
+  "headers": [
+   "Unloading",
+   "Cranes used",
+   "Cargo unloaded (tonnes)",
+   "Time (hours)"
+  ],
+  "rows": [
+   [
+    "1",
+    "4",
+    "480",
+    "4"
+   ],
+   [
+    "2",
+    "6",
+    "720",
+    "4"
+   ],
+   [
+    "3",
+    "5",
+    "900",
+    "6"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.5$"
+  },
+  {
+   "id": "B",
+   "text": "$6$"
+  },
+  {
+   "id": "C",
+   "text": "$9$"
+  },
+  {
+   "id": "D",
+   "text": "$13.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats 720 / 6 = 120 as tonnes per crane per hour, ignoring that unloading 2 ran for 4 hours",
+  "C": "uses unloading 2's whole-crew rate of 180 tonnes per hour and never adjusts from 6 cranes to 9",
+  "D": "uses unloading 1's whole-crew rate of 120 tonnes per hour and never adjusts from 4 cranes to 9"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Proportion Solving**\n\n**Choice B is correct.**\n\n**The Fast Way (~50s):** Each crane moves $\\frac{480}{4 \\cdot 4}=30$ tonnes per hour, so $9$ cranes move $270$ tonnes per hour and $\\frac{1{,}620}{270}=6$ hours.\n\n**The Full Solution:**\nStep 1: Reduce every row to one rate. Unloading 1 gives $\\frac{480}{(4)(4)}=30$, unloading 2 gives $\\frac{720}{(6)(4)}=30$, and unloading 3 gives $\\frac{900}{(5)(6)}=30$ tonnes per crane per hour — the table is consistent.\nStep 2: Scale up to the new crew. Nine cranes move $9 \\times 30 = 270$ tonnes each hour.\nStep 3: Divide. $\\frac{1{,}620}{270}=6$ hours. Check: $9$ cranes $\\times$ $6$ hours $\\times$ $30$ tonnes $= 1{,}620$ tonnes ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.5$): computes $\\frac{720}{6}=120$ and calls it tonnes per crane per hour, dropping the $4$ hours unloading 2 took; that inflates the rate fourfold and gives $\\frac{1{,}620}{9(120)}=1.5$.\n* Choice C ($9$): uses unloading 2's crew rate of $\\frac{720}{4}=180$ tonnes per hour without noticing the new crew has $9$ cranes, not $6$.\n* Choice D ($13.5$): uses unloading 1's crew rate of $\\frac{480}{4}=120$ tonnes per hour, again skipping the crane adjustment.\n\n**Test Day Takeaway:** When a table carries two varying inputs, collapse it to a rate per unit of BOTH — here tonnes per crane per hour. Any rate that mentions only one of the two inputs cannot transfer to a crew of a different size.\n"
+}

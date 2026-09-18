@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "At a set of campus libraries, the average number of weekday visitors, $v$, is related to the number of study carrels, $c$, by the model $v = 25c + 175$. One library is predicted to draw $700$ weekday visitors and another is predicted to draw $450$. According to the model, how many more study carrels does the first library have than the second?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$10$"
+  },
+  {
+   "id": "C",
+   "text": "$21$"
+  },
+  {
+   "id": "D",
+   "text": "$32$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "subtracts the constant 175 from the visitor difference before dividing: (700 - 450 - 175)/25 = 3",
+  "C": "reports only the first library's carrel count, (700 - 175)/25 = 21, instead of the difference",
+  "D": "adds the two carrel counts instead of subtracting: 21 + 11 = 32"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Scatterplot Line of Best Fit**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** The constant $175$ cancels in a difference, so only the slope matters: $\\frac{700 - 450}{25} = 10$.\n\n**The Full Solution:**\nStep 1: Solve the model for $c$. From $v = 25c + 175$, subtract $175$ and divide by $25$ to get $c = \\frac{v - 175}{25}$.\nStep 2: For the first library, $c = \\frac{700 - 175}{25} = \\frac{525}{25} = 21$ carrels. For the second, $c = \\frac{450 - 175}{25} = \\frac{275}{25} = 11$ carrels.\nStep 3: The first library has $21 - 11 = 10$ more carrels. Check: substituting back, $25(21) + 175 = 700$ and $25(11) + 175 = 450$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): subtracts $175$ from the visitor difference before dividing, giving $\\frac{700 - 450 - 175}{25} = 3$. The constant already cancels once you take a difference; removing it a second time is a double subtraction.\n* Choice C ($21$): stops at the first library's carrel count, $\\frac{700 - 175}{25} = 21$, and never subtracts the second.\n* Choice D ($32$): adds the two carrel counts, $21 + 11 = 32$, instead of subtracting them.\n\n**Test Day Takeaway:** When a linear model is used twice and the question asks for a difference, the intercept drops out — divide the difference in outputs by the slope and you are done in one step."
+}

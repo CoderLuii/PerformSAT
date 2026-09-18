@@ -1,0 +1,29 @@
+{
+  "id": 8,
+  "question": "Two hairline scribes on a layout plate meet at a right angle. One scribe lies along $y = \\frac{3}{4}x + 2$, and the other passes through a punch mark at $(6, 5)$. Which equation represents the second scribe?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = \\frac{3}{4}x + \\frac{1}{2}$"
+    },
+    {
+      "id": "B",
+      "text": "$y = \\frac{4}{3}x - 3$"
+    },
+    {
+      "id": "C",
+      "text": "$y = -\\frac{3}{4}x + \\frac{19}{2}$"
+    },
+    {
+      "id": "D",
+      "text": "$y = -\\frac{4}{3}x + 13$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reuses the slope 3/4, giving a scribe parallel to the first rather than perpendicular to it",
+    "B": "inverts the slope to 4/3 but never negates it",
+    "C": "negates the slope to -3/4 but never inverts it"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** Perpendicular means the negative reciprocal of $\\frac{3}{4}$, which is $-\\frac{4}{3}$; through $(6, 5)$ the intercept is $5 + 8 = 13$.\n\n**The Full Solution:**\nStep 1: The first scribe has slope $\\frac{3}{4}$, so the perpendicular scribe has slope $-\\frac{4}{3}$ — flip the fraction and change the sign.\nStep 2: Substitute the point into $y = -\\frac{4}{3}x + b$: $5 = -\\frac{4}{3}(6) + b = -8 + b$.\nStep 3: Solve for the intercept: $b = 13$, so $y = -\\frac{4}{3}x + 13$. Check at $x = 6$: $-8 + 13 = 5$ ✓, and $\\frac{3}{4} \\cdot \\left(-\\frac{4}{3}\\right) = -1$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = \\frac{3}{4}x + \\frac{1}{2}$): keeps the slope $\\frac{3}{4}$, which describes a scribe parallel to the first, so the two would never meet.\n* Choice B ($y = \\frac{4}{3}x - 3$): flips the fraction but leaves it positive; the product of the slopes is $+1$, not $-1$.\n* Choice C ($y = -\\frac{3}{4}x + \\frac{19}{2}$): changes the sign but not the fraction, giving a slope product of $-\\frac{9}{16}$.\n\n**Test Day Takeaway:** Perpendicular slopes need both moves — flip and negate — and only then do you substitute the point to find the intercept."
+}

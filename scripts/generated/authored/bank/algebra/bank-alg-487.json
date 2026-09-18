@@ -1,0 +1,45 @@
+{
+  "id": "bank-alg-487",
+  "question": "A ferry sold $250$ tickets for one crossing. The table gives the price, in dollars, of each type of ticket. The total amount collected from these ticket sales was $3{,}700$ dollars. How many walk-on tickets were sold?",
+  "questionTable": {
+    "headers": [
+      "Ticket type",
+      "Price (dollars)"
+    ],
+    "rows": [
+      [
+        "Walk-on",
+        "10"
+      ],
+      [
+        "Vehicle",
+        "25"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$80$"
+    },
+    {
+      "id": "B",
+      "text": "$90$"
+    },
+    {
+      "id": "C",
+      "text": "$148$"
+    },
+    {
+      "id": "D",
+      "text": "$170$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the number of vehicle tickets",
+    "B": "reports the difference between walk-on and vehicle tickets",
+    "C": "divides the total collected by the vehicle price, ignoring the ticket count"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice D is correct.**\n\n**The Fast Way (~30s):** If all $250$ tickets were walk-on, the total would be $10(250) = 2{,}500$ dollars. The extra $3{,}700 - 2{,}500 = 1{,}200$ dollars comes from vehicle tickets at $25 - 10 = 15$ dollars more each, so there were $\\dfrac{1{,}200}{15} = 80$ vehicle tickets and $250 - 80 = 170$ walk-on tickets.\n\n**The Full Solution:**\nStep 1: Let $w$ be the number of walk-on tickets and $v$ the number of vehicle tickets. The count equation is $w + v = 250$; using the table's prices, the money equation is $10w + 25v = 3{,}700$.\nStep 2: Substitute $w = 250 - v$: $10(250 - v) + 25v = 3{,}700$, so $2{,}500 + 15v = 3{,}700$, giving $15v = 1{,}200$ and $v = 80$.\nStep 3: The question asks for walk-on tickets: $w = 250 - 80 = 170$. Check: $10(170) + 25(80) = 1{,}700 + 2{,}000 = 3{,}700$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($80$): is the number of vehicle tickets, the variable you solve for first; the question asks for walk-on tickets.\n* Choice B ($90$): is $170 - 80$, the gap between the two counts.\n* Choice C ($148$): is $3{,}700 \\div 25$, treating every ticket as a vehicle ticket and ignoring the count of $250$.\n\n**Test Day Takeaway:** In a two-equation word problem, the variable you solve for first is usually not the one asked for; substitute back and reread the question before choosing."
+}

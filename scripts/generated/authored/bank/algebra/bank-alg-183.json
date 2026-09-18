@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-183",
+ "question": "A weld seam, line $v$, meets the graph of $4x - 9y = 36$ at a right angle and includes the point $(-6, 5)$. Which of the following is an equation of line $v$ written in the form $Ax + By = C$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4x - 9y = -69$"
+  },
+  {
+   "id": "B",
+   "text": "$9x - 4y = -74$"
+  },
+  {
+   "id": "C",
+   "text": "$9x + 4y = -34$"
+  },
+  {
+   "id": "D",
+   "text": "$9x + 4y = 21$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "keeps the slope $\\frac{4}{9}$, producing a line parallel to the given one instead of perpendicular",
+  "B": "uses $\\frac{9}{4}$, the reciprocal without the negative sign",
+  "D": "uses the point $(5, -6)$, swapping the coordinates of $(-6, 5)$"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The seam has slope $-\\frac{9}{4}$; from $(-6, 5)$ that clears to $9x + 4y = -34$.\n\n**The Full Solution:**\nStep 1: Rewrite $4x - 9y = 36$ as $y = \\frac{4}{9}x - 4$, so its slope is $\\frac{4}{9}$ and the seam's slope is $-\\frac{9}{4}$.\nStep 2: Point-slope form gives $y - 5 = -\\frac{9}{4}(x + 6)$, so $4y - 20 = -9x - 54$.\nStep 3: Rearranging gives $9x + 4y = -34$. Check: $9(-6) + 4(5) = -54 + 20 = -34$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($4x - 9y = -69$): keeps the slope $\\frac{4}{9}$, producing a line parallel to the given one instead of perpendicular\n* Choice B ($9x - 4y = -74$): uses $\\frac{9}{4}$, the reciprocal without the negative sign\n* Choice D ($9x + 4y = 21$): uses the point $(5, -6)$, swapping the coordinates of $(-6, 5)$\n\n**Test Day Takeaway:** Clear the fractions from point-slope form before rearranging, and test the given point in the final equation."
+}

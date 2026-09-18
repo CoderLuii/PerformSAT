@@ -9,33 +9,33 @@
  "studentNotes": {
   "intro": "While researching a topic, a student has taken the following notes:",
   "bullets": [
-   "Hetti Perkins is an Australian art historian and curator specializing in Aboriginal Australian art at the Australian National University.",
-   "In *Art + Soul: A Journey into the World of Aboriginal Art* (2010), Perkins argues that Aboriginal Australian painting is best understood as a continuing system of Country-based knowledge transmission.",
-   "Perkins frames this painting tradition as an active body of legal and cosmological knowledge tied to specific lands.",
-   "Perkins rejects the view that Aboriginal Australian painting is decorative regional ornament adapted to Western canvas.",
-   "On Perkins's account, the work conveys ongoing relationships between artists, ancestors, and Country rather than freestanding aesthetic objects."
+   "Katsuko Saruhashi (1920-2007) was a Japanese geochemist.",
+   "In 1955 she published a method, later known as Saruhashi's Table, for determining the amount of carbonic acid substances in seawater from its temperature, pH, and salinity.",
+   "Oceanographers adopted the table as a standard tool for measuring carbon dioxide in the ocean.",
+   "Her measurements helped scientists understand how the ocean absorbs carbon dioxide from the atmosphere.",
+   "In 1980 she became the first woman elected to the Science Council of Japan."
   ],
-  "goal": "The student wants to introduce Perkins's argument to a reader unfamiliar with Aboriginal Australian art."
+  "goal": "The student wants to introduce Saruhashi's main scientific contribution to an audience unfamiliar with her work."
  },
  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
  "choices": [
   {
    "id": "A",
-   "text": "Perkins rejects the view that Aboriginal Australian painting is decorative regional ornament adapted to Western canvas."
+   "text": "Japanese geochemist Katsuko Saruhashi developed Saruhashi's Table, a method that became a standard tool for measuring carbon dioxide in seawater and clarified how the ocean absorbs the gas."
   },
   {
    "id": "B",
-   "text": "In *Art + Soul* (2010), Australian art historian Hetti Perkins argues that Aboriginal Australian painting is best understood not as decorative ornament but as a continuing system of Country-based knowledge tied to specific lands."
+   "text": "In 1980, Katsuko Saruhashi became the first woman elected to the Science Council of Japan."
   },
   {
    "id": "C",
-   "text": "Hetti Perkins is an Australian art historian and curator who specializes in Aboriginal Australian art at the Australian National University, where she published her 2010 book *Art + Soul: A Journey into the World of Aboriginal Art*."
+   "text": "Saruhashi's Table determines the amount of carbonic acid substances in seawater from its temperature, pH, and salinity."
   },
   {
    "id": "D",
-   "text": "Aboriginal Australian painting, Perkins argues, conveys ongoing relationships between artists, ancestors, and Country rather than freestanding aesthetic objects, a view that displaces the long-standing decorative reading of the tradition."
+   "text": "Katsuko Saruhashi, who lived from 1920 to 2007, published an influential scientific paper in 1955 and was elected to a prestigious scientific council in Japan twenty-five years afterward."
   }
  ],
- "correctAnswer": "B",
- "explanation": "The correct answer is B. The goal is to introduce Perkins's argument to a reader unfamiliar with Aboriginal Australian art. Choice B names Perkins and her credentials, names the 2010 book in which she makes the argument, and states the argument itself in a form a newcomer can grasp—Aboriginal Australian painting understood not as decorative ornament but as a continuing system of Country-based knowledge transmission carrying legal and cosmological content tied to specific lands. The introduction is self-contained and pitched at an unfamiliar reader."
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The goal demands two things at once — identify Saruhashi for unfamiliar readers and present her main contribution — and A alone does both.\n\n**The Full Solution:**\n- The goal: introduce who Saruhashi was AND what she contributed, for readers who do not know her.\n- Choice A packs both into one sentence: her nationality and field, the method she developed, and its significance (a standard tool that illuminated ocean carbon absorption).\n\n**Why the other choices are wrong:**\n- B: It leads with an honor, not the contribution itself.\n- C: It describes the table's technical operation but never identifies Saruhashi for an unfamiliar audience or conveys why the method mattered.\n- D: It strings together dates while omitting the one thing the goal requires: what her contribution actually was."
 }

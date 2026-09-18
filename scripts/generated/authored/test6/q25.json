@@ -6,7 +6,7 @@
   "band": 3,
   "domain": "expression-of-ideas",
   "skill": "transitions",
-  "passage": "The Nazca people of southern Peru are best known for the enormous lines and figures they scraped into the desert floor, designs so large that their full shapes are clear only from the air. ______ archaeologists have shown that the same culture built an extensive network of underground aqueducts, called puquios, that still carry water to the surface today.",
+  "passage": "The cork oak is one of the few trees that survive the harvesting of their own bark: workers strip the thick outer layer by hand each summer, and the tree regrows it, ready for another stripping nine years later, across a working life of two centuries. ______ the harvest sustains far more than the trees — kept economically valuable by the cork trade, the oak woodlands of Portugal and Spain shelter cranes, eagles, and the endangered Iberian lynx.",
   "question": "Which choice completes the text with the most logical transition?",
   "choices": [
     {
@@ -15,17 +15,17 @@
     },
     {
       "id": "B",
-      "text": "For example,"
+      "text": "However,"
     },
     {
       "id": "C",
-      "text": "Nevertheless,"
+      "text": "As a result,"
     },
     {
       "id": "D",
-      "text": "As a result,"
+      "text": "Specifically,"
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A, \"In addition.\" The passage describes the famous desert lines and then introduces a second, separate achievement of the same people, their underground aqueducts. \"In addition\" correctly signals that the aqueducts are a further accomplishment alongside the lines. \"For example\" would wrongly cast the aqueducts as an instance of the lines; \"Nevertheless\" would signal a contrast that the passage does not set up; and \"As a result\" would present the aqueducts as a consequence of the lines, which they are not."
+  "explanation": "**Choice A is correct.** The first sentence gives one remarkable fact about the harvest (the trees survive it); the second stacks on a further, compatible benefit (the woodlands it preserves shelter wildlife). Piling a second point onto a first calls for the additive \"In addition.\"\n\n**The Full Solution:**\n- Before the blank: the harvest is sustainable for the tree itself.\n- After the blank: the harvest also underwrites an entire habitat — a new benefit, in the same direction.\n- Same-direction accumulation takes an additive transition.\n\n**Why the other choices are wrong:**\n- B: \"However\" signals opposition, but the second sentence extends the good news rather than countering it.\n- C: \"As a result\" would make the wildlife benefit a consequence of the tree's bark regrowth specifically; the causal chain in the text runs through the trade's economics, and the sentence is framed as an added point, not an outcome of the first.\n- D: \"Specifically\" promises a narrower restatement of the first sentence, but the second introduces new territory instead of detailing the old."
 }

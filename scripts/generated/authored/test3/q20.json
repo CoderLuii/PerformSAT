@@ -5,30 +5,31 @@
  "band": 3,
  "domain": "standard-english-conventions",
  "skill": "form-structure-and-sense",
+ "type": "multiple-choice",
+ "passage": "The chambered nautilus, along with the octopuses and squids that are its distant relatives, ______ to a lineage of shelled animals that flourished hundreds of millions of years ago; unlike those relatives, however, the nautilus has kept its coiled external shell nearly unchanged.",
  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
  "choices": [
   {
    "id": "A",
-   "text": "depicts"
+   "text": "belongs"
   },
   {
    "id": "B",
-   "text": "depict"
+   "text": "belong"
   },
   {
    "id": "C",
-   "text": "are depicting"
+   "text": "have belonged"
   },
   {
    "id": "D",
-   "text": "have depicted"
+   "text": "are belonging"
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A, \"depicts.\" The subject of the verb is the singular noun phrase \"Faith Ringgold's painted story quilt Tar Beach.\" The phrase \"along with the children's picture book she later made from it\" adds information but does not join a second subject — phrases introduced by \"along with\" do not make a singular subject plural — so the verb stays singular. The present tense \"depicts\" describes what the work shows. \"Depict\" and \"are depicting\" both treat the subject as plural, and \"have depicted\" combines a plural form with a present-perfect shift the sentence does not need.",
+ "explanation": "**Choice A is correct.** The subject is the singular \"chambered nautilus\"; the phrase beginning \"along with\" is an add-on, not part of the grammatical subject, so the verb stays singular: \"belongs.\"\n\n**The Full Solution:**\n- Phrases introduced by \"along with,\" \"as well as,\" or \"in addition to\" do not change a subject's number the way \"and\" would.\n- Strip the interrupter: \"The chambered nautilus... belongs to a lineage of shelled animals.\" Singular subject, singular verb.\n\n**Why the other choices are wrong:**\n- B: \"Belong\" treats the subject as plural, as if \"along with\" had the joining force of \"and\" — the classic trap in this construction.\n- C: \"Have belonged\" is plural too, and its perfect tense wrongly suggests the belonging might have ended.\n- D: \"Are belonging\" is both plural and an unidiomatic progressive — belonging to a lineage is a state, not an ongoing activity.",
  "_meta": {
-  "anchor": "Faith Ringgold — painter and quilt-maker; Tar Beach; subject-verb agreement with an 'along with' phrase"
- },
- "passage": "The artist Faith Ringgold often worked across several media at once, returning to the same images in different forms. Her painted story quilt Tar Beach, along with the children's picture book she later made from it, ______ the rooftop dreams of a young girl growing up in 1930s Harlem.",
- "type": "multiple-choice"
+  "anchor": "Chambered nautilus lineage — singular subject with an along-with interrupter",
+  "rule": "subject-verb agreement across an 'along with' phrase"
+ }
 }

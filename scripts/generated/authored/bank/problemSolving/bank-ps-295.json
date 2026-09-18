@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-295",
+  "question": "A paving crew places concrete continuously at a rate of $18$ cubic yards per hour, where $1$ cubic yard equals $27$ cubic feet. At this rate, how many cubic feet of concrete does the crew place in $25$ minutes?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7.5$"
+    },
+    {
+      "id": "B",
+      "text": "$202.5$"
+    },
+    {
+      "id": "C",
+      "text": "$486$"
+    },
+    {
+      "id": "D",
+      "text": "$5{,}467.5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "stops at 18(25/60) = 7.5 cubic yards and never converts to cubic feet",
+    "C": "reports the hourly rate in cubic feet, 18 x 27 = 486, without scaling to 25 minutes",
+    "D": "multiplies by 27 a second time: 202.5 x 27 = 5,467.5"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** $18$ cubic yards per hour is $486$ cubic feet per hour, and $25$ minutes is $\\frac{25}{60}$ of an hour: $486 \\times \\frac{25}{60} = 202.5$.\n\n**The Full Solution:**\nStep 1: Convert the rate. $18 \\times 27 = 486$ cubic feet per hour.\nStep 2: Convert the time. $25$ minutes is $\\frac{25}{60} = \\frac{5}{12}$ of an hour.\nStep 3: Multiply and check. $486 \\times \\frac{5}{12} = 202.5$ cubic feet. Doing it in the other order agrees: $18 \\times \\frac{5}{12} = 7.5$ cubic yards, and $7.5 \\times 27 = 202.5$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7.5$): is the volume in CUBIC YARDS. The question asks for cubic feet.\n* Choice C ($486$): is the rate in cubic feet per hour, with the $25$-minute window never applied.\n* Choice D ($5{,}467.5$): applies the $27$ conversion twice: $202.5 \\times 27$.\n\n**Test Day Takeaway:** Chain conversions one factor at a time and check the units cancel; converting the rate and the time in either order must give the same number."
+}

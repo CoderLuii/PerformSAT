@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-229",
+  "question": "At a film festival, $45\\%$ of the entries are documentaries, and $20\\%$ of the documentary entries were produced outside the country. What percent of all entries are documentaries produced outside the country?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$9\\%$"
+    },
+    {
+      "id": "B",
+      "text": "$20\\%$"
+    },
+    {
+      "id": "C",
+      "text": "$25\\%$"
+    },
+    {
+      "id": "D",
+      "text": "$65\\%$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "reports the rate measured within the documentary entries",
+    "C": "subtracts, 45 - 20",
+    "D": "adds the two percents"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Chained Percent Relationship**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $0.45 \\times 0.20 = 0.09$, or $9\\%$.\n\n**The Full Solution:**\nStep 1: The $20\\%$ is measured within the documentary entries, which are $45\\%$ of all entries.\nStep 2: Multiply the two rates: $0.45 \\times 0.20 = 0.09$.\nStep 3: Convert to a percent: $9\\%$. Check with $400$ entries: $180$ documentaries, and $20\\%$ of $180$ is $36$, which is $9\\%$ of $400$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($20\\%$): reports the share within the documentaries as though it described all entries.\n* Choice C ($25\\%$): subtracts the percents, $45 - 20$, but the two percents describe different wholes.\n* Choice D ($65\\%$): adds the percents, which exceeds the documentary share itself.\n\n**Test Day Takeaway:** Test the result on a convenient total. If the answer is not smaller than both given percents, the chain was not multiplied."
+}

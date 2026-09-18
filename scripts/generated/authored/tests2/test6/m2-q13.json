@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "A household's water bills for nine consecutive months were \\$38, \\$41, \\$43, \\$44, \\$46, \\$47, \\$49, \\$52, and \\$207, the last of these covering a month with an undetected leak. By how many dollars does the mean of these nine bills exceed their median?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1$"
+  },
+  {
+   "id": "B",
+   "text": "$16$"
+  },
+  {
+   "id": "C",
+   "text": "$17$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "drops the \\$207 leak month before averaging (mean 45) and compares that with the median 46",
+  "B": "reads the median as 47, the sixth of the nine bills, giving 63 - 47 = 16",
+  "D": "uses 45, the median of the eight bills without the leak month, giving 63 - 45 = 18"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice C is correct.**\n\n**The Fast Way (~50s):** The nine bills total \\$567, so the mean is \\$63, while the fifth of nine ordered bills, \\$46, is the median. The mean sits $63 - 46 = 17$ dollars above it.\n\n**The Full Solution:**\nStep 1: Add the bills: $38 + 41 + 43 + 44 + 46 + 47 + 49 + 52 + 207 = 567$, so the mean is $\\frac{567}{9} = 63$ dollars.\nStep 2: The bills are already in order, and with nine values the median is the fifth one, \\$46. The single \\$207 bill drags the mean far above the middle of the data but cannot move the median.\nStep 3: Subtract: $63 - 46 = 17$ dollars. Check the pull of the outlier: without it the eight remaining bills average \\$45, just below the median ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1$): removes the leak month first, which is exactly what the question does not ask; that mean of \\$45 differs from the median by only $1$.\n* Choice B ($16$): counts to the sixth bill, \\$47, for the median; with nine values the middle position is the fifth.\n* Choice D ($18$): pairs the full mean of \\$63 with \\$45, the median of the eight ordinary bills.\n\n**Test Day Takeaway:** One extreme value moves the mean and leaves the median alone — compute each from the full data set exactly as given."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-158",
+ "question": "A square hotel courtyard covers $2{,}025$ square meters, and fencing along its edge costs $\\$18$ per meter. What is the total cost, in dollars, of fencing the courtyard's edge?",
+ "correctAnswer": "3240",
+ "explanation": "**SAT Pattern: Square Perimeter**\n\n**The correct answer is $3240$.**\n\n**The Fast Way (~30s):** $\\sqrt{2{,}025}=45$, so the perimeter is $4(45)=180$ meters and the cost is $180(18)=3{,}240$ dollars.\n\n**The Full Solution:**\n\nStep 1 — Find the side: $s^2=2{,}025$, so $s=\\sqrt{2{,}025}=45$ meters.\n\nStep 2 — Find the perimeter: $4s=4(45)=180$ meters of fencing.\n\nStep 3 — Multiply by the unit price: $180(18)=3{,}240$ dollars. Check: $45^2=2{,}025$ confirms the side, and $180$ meters at $18$ dollars each is $3{,}240$.\n\n**Common Mistakes:** Pricing the side alone gives $45(18)=810$. Pricing the area gives $2{,}025(18)=36{,}450$. Stopping at the perimeter reports $180$, a length rather than a cost.\n\n**Test Day Takeaway:** Fencing is priced per unit of length, so convert area to side to perimeter before any money enters the arithmetic."
+}

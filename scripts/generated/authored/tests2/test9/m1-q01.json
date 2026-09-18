@@ -1,0 +1,53 @@
+{
+ "id": 1,
+ "question": "A foundry weighs each metal in a 250-gram sample of an alloy and records the results in the table. Nickel accounts for what percent of the mass of the sample?",
+ "questionTable": {
+  "headers": [
+   "Metal",
+   "Mass (grams)"
+  ],
+  "rows": [
+   [
+    "Copper",
+    "150"
+   ],
+   [
+    "Zinc",
+    "55"
+   ],
+   [
+    "Nickel",
+    "30"
+   ],
+   [
+    "Tin",
+    "15"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12\\%$"
+  },
+  {
+   "id": "B",
+   "text": "$20\\%$"
+  },
+  {
+   "id": "C",
+   "text": "$22\\%$"
+  },
+  {
+   "id": "D",
+   "text": "$30\\%$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the nickel mass by the copper mass (30/150) instead of by the 250-gram total",
+  "C": "reads the zinc row instead of the nickel row (55/250)",
+  "D": "copies the nickel mass, 30 grams, straight into a percent"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Percent of a Whole**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Nickel is $30$ of the $250$ grams, and $\\frac{30}{250}=\\frac{12}{100}$, so nickel is $12\\%$ of the sample.\n\n**The Full Solution:**\nStep 1: The part is the nickel row of the table, $30$ grams. The whole is the mass of the entire sample, $250$ grams (and the four rows do sum to $250$: $150+55+30+15=250$).\nStep 2: A percent of a whole is $\\frac{\\text{part}}{\\text{whole}}\\times 100\\%$, so evaluate $\\frac{30}{250}\\times 100\\%$.\nStep 3: $\\frac{30}{250}=0.12$, so the nickel content is $12\\%$. Check by running it forward: $0.12(250)=30$ grams, which is exactly the nickel row ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($20\\%$): divides by the copper mass instead of the sample mass, $\\frac{30}{150}=0.20$. Copper is the largest row, not the whole.\n* Choice C ($22\\%$): uses the zinc row by mistake, $\\frac{55}{250}=0.22$.\n* Choice D ($30\\%$): reports the $30$ grams of nickel as $30\\%$, treating a mass as a percent.\n\n**Test Day Takeaway:** Percent of a whole is always part over the TOTAL, times $100$. Before dividing, name the whole out loud — here it is the $250$-gram sample, not the biggest row in the table."
+}

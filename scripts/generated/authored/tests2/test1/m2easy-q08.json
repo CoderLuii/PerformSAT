@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "An order at a costume shop is charged $\\$18$ for each of the $g$ garments altered, together with a one-time pattern fee of $\\$95$ and a $\\$40$ rush surcharge. Which equation can be used to find the value of $g$ for an order with a total charge of $\\$531$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18g + 95 = 531$"
+  },
+  {
+   "id": "B",
+   "text": "$18g + 135 = 531$"
+  },
+  {
+   "id": "C",
+   "text": "$135g + 18 = 531$"
+  },
+  {
+   "id": "D",
+   "text": "$153g = 531$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "leaves the $40 rush surcharge out of the fixed part of the charge",
+  "C": "trades the roles of the two amounts, treating the combined fixed fee 135 as the per-garment rate",
+  "D": "merges all three dollar amounts, 95 + 40 + 18 = 153, into a single per-garment rate"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Linear Cost Setup**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Two charges are one-time ($95 + 40 = 135$) and one is per garment ($18$ each), so the total is $18g + 135$, and setting it equal to $531$ gives $18g + 135 = 531$.\n\n**The Full Solution:**\nStep 1: Sort each dollar amount by whether it depends on $g$. The pattern fee is charged once and the rush surcharge applies to the order as a whole, so neither is multiplied by $g$.\nStep 2: Add the two fixed amounts: $95 + 40 = 135$ dollars. The alteration charge is $18$ dollars per garment, contributing $18g$ dollars.\nStep 3: Set the total expression equal to the given charge: $18g + 135 = 531$. Check: solving gives $18g = 396$, so $g = 22$, and $22(18) + 95 + 40 = 396 + 135 = 531$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($18g + 95 = 531$): the right structure with the $\\$40$ surcharge dropped. It solves to $g \\approx 24.2$, not a whole number of garments.\n* Choice C ($135g + 18 = 531$): the constant and the rate traded places, which would charge the $\\$135$ once for every garment. It solves to $g \\approx 3.8$.\n* Choice D ($153g = 531$): all three amounts folded into one per-garment rate, so the pattern fee and the surcharge get billed on each garment. It solves to $g \\approx 3.5$.\n\n**Test Day Takeaway:** Tag every amount \"once\" or \"per unit\" before writing the equation: the \"once\" amounts sum into the constant, and only the \"per unit\" amount is multiplied by the variable."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 18,
+ "question": "A dubbing studio books two kinds of recording sessions on a given day: a short session lasting $25$ minutes and a long session lasting $70$ minutes. On one day, $18$ sessions were booked, filling a total of $810$ minutes. How many more short sessions than long sessions were booked that day?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$8$"
+  },
+  {
+   "id": "C",
+   "text": "$10$"
+  },
+  {
+   "id": "D",
+   "text": "$18$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "solves the system correctly and reports the number of long sessions instead of the difference",
+  "C": "solves the system correctly and reports the number of short sessions instead of the difference",
+  "D": "reports the total number of sessions booked, the given 18"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: System of Equations — Elimination**\n\n**Choice A is correct.**\n\n**The Fast Way (~45s):** If all $18$ sessions were short, the day would fill $450$ minutes; each swap to a long session adds $45$ minutes. Since $810 - 450 = 360$ and $\\frac{360}{45} = 8$, there are $8$ long sessions and $10$ short ones, a difference of $2$.\n\n**The Full Solution:**\nStep 1: Let $s$ be the number of short sessions and $\\ell$ the number of long sessions. The counts give $s + \\ell = 18$ and the minutes give $25s + 70\\ell = 810$.\nStep 2: Eliminate $s$. Multiplying the first equation by $25$ gives $25s + 25\\ell = 450$. Subtracting this from the second equation gives $45\\ell = 360$, so $\\ell = 8$.\nStep 3: Substitute back: $s = 18 - 8 = 10$. The question asks how many more short sessions there are: $s - \\ell = 10 - 8 = 2$. Check the minutes: $25(10) + 70(8) = 250 + 560 = 810$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($8$): the number of long sessions, $\\ell$. It is the first value elimination produces, which makes it the easiest place to stop.\n* Choice C ($10$): the number of short sessions, $s$. Correct arithmetic answering a question that was not asked.\n* Choice D ($18$): the total number of sessions, copied from the stem. It answers \"how many sessions,\" not \"how many more.\"\n\n**Test Day Takeaway:** Elimination hands you one variable at a time. Write down what the question actually asks — a difference, a total, a single count — before you pick, because two of the four choices are usually the intermediate values."
+}

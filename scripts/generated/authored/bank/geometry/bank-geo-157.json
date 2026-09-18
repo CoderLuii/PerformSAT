@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-157",
+ "question": "An airport kiosk uses square floor mats, and one mat covers $A$ square inches. Which expression gives the perimeter, in inches, of that mat?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{A}{4}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\sqrt{A}$"
+  },
+  {
+   "id": "C",
+   "text": "$2\\sqrt{A}$"
+  },
+  {
+   "id": "D",
+   "text": "$4\\sqrt{A}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides the area by 4 without taking a square root first",
+  "B": "gives the side length rather than the perimeter",
+  "C": "totals only two of the mat's four edges"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Square Perimeter**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** A square of area $A$ has side $\\sqrt{A}$, so its perimeter is $4\\sqrt{A}$.\n\n**The Full Solution:**\n\nStep 1 — Let $s$ be the side length of the mat, so $s^2=A$.\n\nStep 2 — Solve for the side: $s=\\sqrt{A}$, the positive root, since $s$ is a length.\n\nStep 3 — The perimeter of a square is $4s$, so it equals $4\\sqrt{A}$ inches. Check: a mat with $A=100$ has side $10$ and perimeter $40$, and $4\\sqrt{100}=40$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($\\frac{A}{4}$): this divides the area by $4$; with $A=100$ it gives $25$, not $40$.\n* Choice B ($\\sqrt{A}$): this is one side, not the border around all four.\n* Choice C ($2\\sqrt{A}$): this adds only two edges.\n\n**Test Day Takeaway:** Test a friendly value such as $A=100$ against every expression when the answer choices are symbolic."
+}

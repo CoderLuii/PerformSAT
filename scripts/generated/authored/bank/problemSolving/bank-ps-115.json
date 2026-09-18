@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-115",
+  "question": "A laboratory reduced the volume of a reagent by $30\\%$ and then increased the reduced volume by $40\\%$. The final volume is $294$ milliliters. What was the original volume, in milliliters?",
+  "correctAnswer": "300",
+  "explanation": "**SAT Pattern: Reverse-Percent**\n\n**The correct answer is $300$.**\n\n**The Fast Way (~30s):** The two changes multiply the original by $(0.70)(1.40) = 0.98$, so the original is $\\dfrac{294}{0.98} = 300$.\n\n**The Full Solution:**\nStep 1: Let $V$ be the original volume, in milliliters. The $30\\%$ reduction leaves $0.70V$.\nStep 2: Increasing that by $40\\%$ gives $1.40(0.70V) = 0.98V$, so $0.98V = 294$.\nStep 3: $V = \\dfrac{294}{0.98} = 300$ milliliters.\nCheck: $300 \\to 210$ after the reduction, and $210 + 84 = 294$ after the increase. $\\checkmark$\n\n**Common Mistakes:** Treating the net change as $+10\\%$ and computing $\\dfrac{294}{1.10} \\approx 267.27$; applying the changes forward to the final volume, $294(0.70)(1.40) = 288.12$; undoing only the reduction, $\\dfrac{294}{0.70} = 420$.\n\n**Test Day Takeaway:** A $30\\%$ cut followed by a $40\\%$ raise is a $2\\%$ net loss, because the raise applies to the smaller amount."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-303",
+  "question": "A wildflower seed mix is $45\\%$ clover seed by mass, and the rest is grass seed. A landscaper buys $3$ bags of this mix, each with a mass of $20$ kilograms. What is the total mass, in kilograms, of grass seed in the $3$ bags?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$11$"
+    },
+    {
+      "id": "B",
+      "text": "$15$"
+    },
+    {
+      "id": "C",
+      "text": "$27$"
+    },
+    {
+      "id": "D",
+      "text": "$33$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "finds the grass seed in one bag, $0.55(20) = 11$, and stops before accounting for all three bags.",
+    "B": "subtracts the percent number from the total mass, $60 - 45$, mixing a percent with a mass.",
+    "C": "computes $0.45(60) = 27$, the mass of clover seed rather than grass seed."
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Mixture Problems**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** Grass seed is $100\\% - 45\\% = 55\\%$ of the mix, and the three bags hold $3(20) = 60$ kilograms, so $0.55(60) = 33$ kilograms.\n\n**The Full Solution:**\nStep 1: The mix has only two components, so grass seed makes up $100\\% - 45\\% = 55\\%$ of every bag.\nStep 2: The total mass of mix purchased is $3 \\times 20 = 60$ kilograms.\nStep 3: $0.55(60) = 33$ kilograms of grass seed. Check: the clover seed is $0.45(60) = 27$ kilograms, and $33 + 27 = 60$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($11$): finds the grass seed in one bag, $0.55(20) = 11$, and stops before accounting for all three bags.\n* Choice B ($15$): subtracts the percent number from the total mass, $60 - 45$, mixing a percent with a mass.\n* Choice C ($27$): computes $0.45(60) = 27$, the mass of clover seed rather than grass seed.\n\n**Test Day Takeaway:** In a two-component mix, the second component's percent is $100\\%$ minus the first. Scale to the full amount asked about before applying it."
+}

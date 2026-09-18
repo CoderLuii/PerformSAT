@@ -1,0 +1,49 @@
+{
+ "id": 1,
+ "question": "A restoration fund opened by a heritage-railway trust earns a fixed annual rate, and no money is added or removed. Three values of the fund are recorded in the table. Which equation models the fund's value $V$, in dollars, $t$ years after the fund was opened?",
+ "questionTable": {
+  "headers": [
+   "Years after opening",
+   "Fund value (dollars)"
+  ],
+  "rows": [
+   [
+    "$0$",
+    "$2{,}500$"
+   ],
+   [
+    "$1$",
+    "$2{,}600$"
+   ],
+   [
+    "$2$",
+    "$2{,}704$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$V = 2{,}500 + 100t$"
+  },
+  {
+   "id": "B",
+   "text": "$V = 2{,}500(0.04)^t$"
+  },
+  {
+   "id": "C",
+   "text": "$V = 2{,}500(1.04)^t$"
+  },
+  {
+   "id": "D",
+   "text": "$V = 2{,}500(1.4)^t$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats the first year's 100-dollar rise as a fixed yearly amount, giving a linear model that predicts 2,700 at t = 2 instead of 2,704",
+  "B": "uses the rate 0.04 as the growth factor instead of 1 + 0.04, predicting 100 dollars after one year",
+  "D": "misplaces the decimal in the growth factor, reading 1.04 as 1.4 and predicting 3,500 dollars after one year"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Compound Interest**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Divide consecutive fund values: $2{,}600 \\div 2{,}500 = 1.04$. A constant multiplier each year means $V = 2{,}500(1.04)^t$.\n\n**The Full Solution:**\nStep 1: At $t = 0$ the fund is worth $\\$2{,}500$, so any exponential model $V = a \\cdot b^{\\,t}$ has $a = 2{,}500$.\nStep 2: Find the yearly factor $b$ from the table. From year $0$ to year $1$, $\\frac{2{,}600}{2{,}500} = 1.04$; from year $1$ to year $2$, $\\frac{2{,}704}{2{,}600} = 1.04$. The same factor applies each year, so $b = 1.04$.\nStep 3: Check the model against the last row: $2{,}500(1.04)^2 = 2{,}500(1.0816) = 2{,}704$, exactly the recorded value. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($V = 2{,}500 + 100t$): the first year does rise by $\\$100$, but a fixed yearly amount predicts $2{,}500 + 100(2) = \\$2{,}700$ at $t = 2$, while the table shows $\\$2{,}704$. The extra $\\$4$ is interest earned on interest.\n* Choice B ($V = 2{,}500(0.04)^t$): this uses the rate itself as the multiplier and predicts $2{,}500(0.04) = \\$100$ after one year, a fund that nearly vanishes.\n* Choice D ($V = 2{,}500(1.4)^t$): a decimal slip turns a $4\\%$ rate into a $40\\%$ rate and predicts $2{,}500(1.4) = \\$3{,}500$ after one year.\n\n**Test Day Takeaway:** When a table of values grows by a constant ratio rather than a constant amount, the model is exponential. Divide neighbouring values to get the factor, and remember that the factor is $1 + r$, never $r$ alone."
+}

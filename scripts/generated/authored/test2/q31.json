@@ -6,26 +6,26 @@
   "domain": "craft-and-structure",
   "skill": "words-in-context",
   "module": 2,
-  "passage": "Before the development of X-ray crystallography, chemists could infer that a substance was crystalline from its regular external faces, but the internal arrangement of its atoms remained a matter of conjecture. When a beam of X-rays passes through a crystal, the orderly lattice scatters the rays into a pattern of spots whose geometry ______ the spacing and arrangement of the atoms within. By measuring those patterns, researchers could at last determine molecular structures that no microscope could reveal.",
+  "passage": "A ferrofluid is a liquid that answers to magnets: nanoscale iron particles suspended in oil let the fluid be pulled and held by magnetic fields while it continues to flow like a liquid. Bring a strong magnet near and the surface erupts into a regular landscape of spikes, each one tracing the local field lines. Because the fluid ______ whatever field is applied to it, engineers can steer it into configurations no solid magnet could adopt — a liquid seal around a spinning shaft, for instance.",
   "question": "Which choice completes the text with the most logical and precise word or phrase?",
   "choices": [
     {
       "id": "A",
-      "text": "conceals"
+      "text": "dispenses with"
     },
     {
       "id": "B",
-      "text": "imitates"
+      "text": "presides over"
     },
     {
       "id": "C",
-      "text": "reflects"
+      "text": "conforms to"
     },
     {
       "id": "D",
-      "text": "exceeds"
+      "text": "detracts from"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"reflects.\" The passage says the geometry of the scattered pattern lets researchers determine the atoms' spacing and arrangement, so the pattern must correspond to, or mirror, that internal structure; \"reflects\" expresses that correspondence. Choice A, \"conceals,\" is the opposite—the pattern reveals the structure rather than hiding it. Choice B, \"imitates,\" wrongly suggests the pattern copies the atoms deliberately, when it simply results from how the lattice scatters the rays. Choice D, \"exceeds,\" makes no sense, since a pattern cannot be more than the arrangement it encodes."
+  "explanation": "**Choice C is correct.** The passage shows the fluid taking the shape the field dictates — spikes \"tracing the local field lines\" — so the fluid \"conforms to\" whatever field is applied.\n\n**The Full Solution:**\n- The spike demonstration establishes the relationship: the fluid's surface reorganizes itself to match the magnetic field's geometry.\n- The final sentence draws the engineering consequence: because the fluid takes on the field's shape, engineers can steer it into otherwise impossible configurations.\n- \"Conforms to\" — takes the shape or pattern of — names that relationship exactly and explains why steering works.\n\n**Why the other choices are wrong:**\n- A: \"dispenses with\" means to do without; a fluid that ignored the applied field could not be steered by it at all, gutting the sentence's logic.\n- B: \"presides over\" reverses the hierarchy — the field commands the fluid, not the other way around.\n- D: \"detracts from\" means to diminish; the fluid does not weaken the field, it obeys it, and diminishment would give engineers nothing to steer with."
 }

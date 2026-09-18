@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": ", a pioneer of research on cave-dwelling microbes"
-    },
-    {
-      "id": "B",
-      "text": " a pioneer of research on cave-dwelling microbes"
-    },
-    {
-      "id": "C",
-      "text": ", a pioneer of research on cave-dwelling microbes,"
-    },
-    {
-      "id": "D",
-      "text": " a pioneer of research on cave-dwelling microbes,"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The phrase \"a pioneer of research on cave-dwelling microbes\" is a nonrestrictive appositive: it adds information about Barton, who is already fully identified by name, and could be lifted out without changing whom the sentence is about. An appositive set inside a sentence this way must be enclosed by a matched pair of commas, so the option with a comma both before and after it is correct. An opening comma with no closing one, or a closing comma with no opening one, leaves the insertion unclosed at one end, and using no commas at all wrongly treats the phrase as essential to identifying her.",
-  "passage": "Deep caves cut off from sunlight were long assumed to be nearly lifeless. The microbiologist Hazel Barton ______ has shown that the bare rock walls of such caves can support thriving communities of bacteria, which draw their energy from minerals in the stone rather than from the sun.",
-  "_meta": {
-    "anchor": "Hazel Barton: microbiology of cave-dwelling bacteria",
-    "rule": "paired commas around a nonrestrictive appositive"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": ", who published his own songs rather than selling them to established firms"
   },
-  "id": 1146,
-  "module": 2
+  {
+   "id": "B",
+   "text": " who published his own songs rather than selling them to established firms"
+  },
+  {
+   "id": "C",
+   "text": ", who published his own songs rather than selling them to established firms,"
+  },
+  {
+   "id": "D",
+   "text": " who published his own songs rather than selling them to established firms,"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The \"who\" clause is nonrestrictive — Charles K. Harris is already fully identified by name — so it must be fenced off with a comma on both sides.\n\n**The Full Solution:**\n- Test the clause: removing \"who published his own songs rather than selling them to established firms\" leaves a complete, unambiguous sentence about Harris. The clause adds information; it does not identify.\n- Nonrestrictive elements take paired commas: one where the interruption begins, one where the main clause resumes (\"credited the practice...\").\n- Only choice C supplies both commas.\n\n**Why the other choices are wrong:**\n- A: It opens the fence but never closes it, letting the aside crash into the main verb \"credited.\"\n- B: With no commas, the clause reads as restrictive — as though some other Charles K. Harris had sold his songs to established firms.\n- D: It closes a fence that was never opened; the lone trailing comma has nothing to pair with.",
+ "passage": "Song plugging could make an unknown writer famous within a single season. The songwriter Charles K. Harris ______ credited the practice with turning his sentimental ballad \"After the Ball\" into the sheet-music sensation of the 1890s.",
+ "_meta": {
+  "rule": "paired commas around a nonrestrictive relative clause",
+  "anchor": "Tin Pan Alley song plugging — Charles K. Harris, \"After the Ball\"",
+  "distractors": {
+   "A": "unclosed fence",
+   "B": "restrictive misreading",
+   "D": "unopened fence"
+  }
+ },
+ "id": 1146,
+ "module": 2
 }

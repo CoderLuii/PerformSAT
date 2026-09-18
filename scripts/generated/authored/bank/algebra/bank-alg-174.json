@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-174",
+ "question": "A stock model gives the sachets remaining in a cholera kit as $S = 960 - cw$ after $w$ weeks, where $c$ is a constant. After $15$ weeks, $285$ sachets remain. What is the value of $c$?",
+ "correctAnswer": "45",
+ "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**The correct answer is $45$.**\n\n**The Fast Way (~25s):** In $15$ weeks the stock fell by $960 - 285 = 675$ sachets, so the weekly rate is $\\frac{675}{15} = 45$.\n\n**The Full Solution:**\nStep 1: Substitute the known week and remaining count into the model: $960 - c(15) = 285$.\nStep 2: Isolate the term holding the constant: subtract $960$ from both sides to get $-15c = -675$, or $15c = 675$.\nStep 3: Divide by $15$: $c = 45$. Check: $960 - 45(15) = 960 - 675 = 285$ sachets. $\\checkmark$\n\n**Common Mistakes:** Dividing the remaining $285$ by $15$ and reporting $19$, which measures what is left rather than what was used; reporting $675$, the total sachets used, instead of the weekly rate; adding rather than subtracting and computing $\\frac{960 + 285}{15} = 83$.\n\n**Test Day Takeaway:** In a decreasing model the coefficient is the DROP per unit — subtract the ending amount from the starting amount before dividing by the elapsed time."
+}

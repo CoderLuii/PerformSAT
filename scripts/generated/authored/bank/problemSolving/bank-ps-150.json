@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-150",
+  "question": "In a survey, $36$ respondents chose option A, $64$ chose option B, and $16$ chose option C. The number of respondents who chose option A is $p\\%$ of the number who chose option B or option C. What is the value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0.45$"
+    },
+    {
+      "id": "B",
+      "text": "$45$"
+    },
+    {
+      "id": "C",
+      "text": "$56.25$"
+    },
+    {
+      "id": "D",
+      "text": "$225$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "the decimal 36/80 = 0.45, never converted to a percent",
+    "C": "36/64 as a percent, ignoring the option C respondents",
+    "D": "36/16 as a percent, ignoring the option B respondents"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** B or C is $64 + 16 = 80$ respondents. $\\frac{36}{80} = 0.45$, so $p = 45$.\n\n**The Full Solution:**\nStep 1: The base of the percent is \"B or C\": $64 + 16 = 80$.\nStep 2: Translate: $36 = \\frac{p}{100} \\times 80$, so $\\frac{p}{100} = \\frac{36}{80} = 0.45$.\nStep 3: Multiply by $100$: $p = 45$. Check: $45\\%$ of $80$ is $0.45 \\times 80 = 36$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0.45$): The decimal form of the ratio; the question asks for $p$ in \"$p\\%$\", which requires multiplying by $100$.\n* Choice C ($56.25$): $\\frac{36}{64} \\times 100$, using only option B as the base and forgetting option C.\n* Choice D ($225$): $\\frac{36}{16} \\times 100$, using only option C as the base.\n\n**Test Day Takeaway:** Build the base first (\"B or C\" means add), then $p = \\frac{\\text{part}}{\\text{base}} \\times 100$."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 10,
+ "question": "An olive mill's oil yield, in kilograms, from $p$ tonnes of fruit is $q(p)$. A larger mill sets aside the first $6$ tonnes of every delivery for curing and yields four times as much oil per tonne of the fruit it presses. Which equation defines the larger mill's yield $g$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$g(p) = 4q(p + 6)$"
+  },
+  {
+   "id": "B",
+   "text": "$g(p) = q(4p - 6)$"
+  },
+  {
+   "id": "C",
+   "text": "$g(p) = 4q(p) - 6$"
+  },
+  {
+   "id": "D",
+   "text": "$g(p) = 4q(p - 6)$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "shifts the tonnage the wrong way, adding 6 instead of removing it",
+  "B": "multiplies the tonnage by 4 rather than the yield",
+  "C": "subtracts 6 kilograms of oil instead of removing 6 tonnes of fruit"
+ },
+ "correctAnswer": "D",
+ "hint": "Decide whether the $6$ tonnes changes what the press receives or what it produces.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~25s):** Only $p - 6$ tonnes reach the press, and each pressed tonne yields four times as much, so $g(p) = 4q(p - 6)$.\n\n**The Full Solution:**\nStep 1: Setting aside the first $6$ tonnes means the press receives $p - 6$ tonnes, so the input to $q$ is $p - 6$.\nStep 2: Yielding four times as much oil multiplies the output of $q$, so the whole value is multiplied by $4$.\nStep 3: Together these give $g(p) = 4q(p - 6)$. Check: a $26$-tonne delivery presses $20$ tonnes, so $g(26) = 4q(20)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4q(p + 6)$): adding the $6$ tonnes to the delivery instead of removing them.\n* Choice B ($q(4p - 6)$): multiplying the tonnage by $4$; the four-fold gain is in oil produced, which is the output.\n* Choice C ($4q(p) - 6$): subtracting $6$ kilograms of oil at the end rather than removing $6$ tonnes of fruit at the start.\n\n**Test Day Takeaway:** Decide first whether each number changes what goes in or what comes out, then place it inside or outside the function."
+}

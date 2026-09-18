@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-040",
+ "question": "A spherical steel bearing has a diameter of $2.4$ centimeters. Which of the following is closest to the volume, in cubic centimeters, of the bearing?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$6.0$"
+  },
+  {
+   "id": "B",
+   "text": "$7.2$"
+  },
+  {
+   "id": "C",
+   "text": "$18.1$"
+  },
+  {
+   "id": "D",
+   "text": "$57.9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "squares the radius instead of cubing it",
+  "C": "computes the surface area",
+  "D": "uses the diameter as the radius"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sphere Volume Approximation**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The radius is $1.2$, so $V = \\frac{4}{3}\\pi(1.2)^3 = \\frac{4}{3}\\pi(1.728) \\approx 7.2$ cubic centimeters.\n\n**The Full Solution:**\nStep 1: Convert the diameter to a radius: $r = \\frac{2.4}{2} = 1.2$ centimeters.\nStep 2: Cube the radius: $1.2^3 = 1.728$.\nStep 3: $V = \\frac{4}{3}\\pi(1.728) = 2.304\\pi \\approx 7.24$, so about $7.2$ cubic centimeters.\n\nVerification: the bearing sits inside a cube of edge $2.4$, whose volume is $13.824$; a sphere fills about $52\\%$ of its bounding cube, and $\\frac{7.24}{13.824} \\approx 0.52$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6.0$): squares the radius instead of cubing it, computing $\\frac{4}{3}\\pi(1.44)$.\n* Choice C ($18.1$): computes the surface area $4\\pi r^2 = 4\\pi(1.44)$, a square-unit quantity.\n* Choice D ($57.9$): uses the diameter $2.4$ as the radius, inflating the volume by a factor of $8$.\n\n**Test Day Takeaway:** Halve the diameter before any sphere calculation. Because the radius is cubed, forgetting to halve multiplies the answer by $8$."
+}

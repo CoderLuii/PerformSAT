@@ -103,7 +103,16 @@ const SATBoxPlot = ({
       alignItems: 'center',
       margin: '16px 0',
     }}>
-      <svg width={width} height={height} style={{ background: styles.colors.background }}>
+      {/* viewBox + width:100%/max-width keeps the drawing pixel-identical at
+          desktop (the card is wider than `width`) while letting the 420px-wide
+          box plot scale down inside a phone-width card instead of overflowing. */}
+      <svg
+        width={width}
+        height={height}
+        viewBox={`0 0 ${width} ${height}`}
+        preserveAspectRatio="xMidYMid meet"
+        style={{ background: styles.colors.background, width: '100%', maxWidth: width, height: 'auto' }}
+      >
         {title && (
           <text x={width / 2} y={16} textAnchor="middle" fontFamily={styles.font.primary} fontSize={14} fontWeight="bold">
             {title}
@@ -221,7 +230,16 @@ const SATBoxPlotComparison = ({
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0' }}>
-      <svg width={width} height={height} style={{ background: styles.colors.background }}>
+      {/* viewBox + width:100%/max-width keeps the drawing pixel-identical at
+          desktop (the card is wider than `width`) while letting the 420px-wide
+          box plot scale down inside a phone-width card instead of overflowing. */}
+      <svg
+        width={width}
+        height={height}
+        viewBox={`0 0 ${width} ${height}`}
+        preserveAspectRatio="xMidYMid meet"
+        style={{ background: styles.colors.background, width: '100%', maxWidth: width, height: 'auto' }}
+      >
         {title && (
           <text x={width / 2} y={16} textAnchor="middle" fontFamily={styles.font.primary} fontSize={14} fontWeight="bold">
             {title}

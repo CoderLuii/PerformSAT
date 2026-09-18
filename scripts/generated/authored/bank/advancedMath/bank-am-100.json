@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-100",
+ "question": "A milling model gives the ratio $\\dfrac{x^{2}-49}{x+7}$, where $x>7$ is the roller gap in millimeters. Which expression is equivalent to this ratio?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x-7$"
+  },
+  {
+   "id": "B",
+   "text": "$x+7$"
+  },
+  {
+   "id": "C",
+   "text": "$x-49$"
+  },
+  {
+   "id": "D",
+   "text": "$x^{2}-7$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "cancels the factor x - 7 instead of the factor x + 7",
+  "C": "cancels x squared against x as if they were factors and subtracts 49 from x",
+  "D": "divides only the constant 49 by 7 and leaves x squared untouched"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Rational Expression Simplification**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** $x^{2}-49=(x-7)(x+7)$, and the $x+7$ cancels, leaving $x-7$.\n\n**The Full Solution:**\n\nStep 1: Recognize the numerator as a difference of squares: $x^{2}-49=(x-7)(x+7)$.\n\nStep 2: The ratio becomes $\\frac{(x-7)(x+7)}{x+7}$.\n\nStep 3: Since $x>7$, the factor $x+7$ is nonzero and cancels, leaving $x-7$. Check with $x=10$: $\\frac{100-49}{17}=\\frac{51}{17}=3$, and $10-7=3$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($x+7$): cancels the wrong factor, keeping $x+7$ instead of $x-7$.\n* Choice C ($x-49$): treats $x^{2}$ and $x$ as cancelling terms rather than factoring first.\n* Choice D ($x^{2}-7$): divides only the constant by $7$ and leaves $x^{2}$ alone.\n\n**Test Day Takeaway:** Factor before cancelling; only whole factors cancel, never individual terms."
+}

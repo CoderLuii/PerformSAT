@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-370",
+  "question": "$y \\leq 3x - 2$\n$y \\leq 3x + 4$\n\nWhich of the following best describes the set of all points $(x, y)$ in the $xy$-plane that are solutions to the given system of inequalities?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "All points on or below the line $y = 3x - 2$"
+    },
+    {
+      "id": "B",
+      "text": "All points on or below the line $y = 3x + 4$"
+    },
+    {
+      "id": "C",
+      "text": "All points on or between the lines $y = 3x - 2$ and $y = 3x + 4$"
+    },
+    {
+      "id": "D",
+      "text": "No points, because the two boundary lines are parallel"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses the higher line, which is the looser of the two conditions",
+    "C": "reads two \"less than or equal\" conditions as a band between the lines",
+    "D": "assumes parallel boundaries mean an empty solution set"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: System of Linear Inequalities**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** For every $x$, $3x - 2 < 3x + 4$. Any $y$ that is at most the smaller value $3x - 2$ is automatically at most $3x + 4$, so the system is just $y \\leq 3x - 2$.\n\n**The Full Solution:**\nStep 1: The two boundary lines have the same slope, $3$, so they are parallel, with $y = 3x + 4$ always $6$ units above $y = 3x - 2$.\nStep 2: A point satisfies the system when it is on or below both lines. Being on or below the lower line, $y = 3x - 2$, already places it below the upper line, so the second inequality adds no new restriction.\nStep 3: The solution set is all points on or below $y = 3x - 2$. Check with $(0, -2)$: $-2 \\leq -2$ and $-2 \\leq 4$ both hold. Check with $(0, 1)$, which is between the lines: $1 \\leq -2$ fails, so points between the lines are not solutions. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B (on or below $y = 3x + 4$): keeps the looser condition; points between the lines satisfy it but fail $y \\leq 3x - 2$.\n* Choice C (between the lines): would be correct for $3x - 2 \\leq y \\leq 3x + 4$, but here both inequalities point the same way.\n* Choice D (no points): confuses this system with a system of equations; parallel lines have no intersection, but inequalities describe regions, and these regions overlap.\n\n**Test Day Takeaway:** When both inequalities have the same direction and parallel boundaries, the stricter one wins; sketch the two lines and shade to see which region survives."
+}

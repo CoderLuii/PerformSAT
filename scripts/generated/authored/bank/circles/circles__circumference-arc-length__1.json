@@ -1,0 +1,29 @@
+{
+ "question": "A grain-bin lid has a rubber seal running around its rim, and the lid is a circle of diameter $2.8$ meters. What is the length, in meters, of the seal?",
+ "hint": "The seal follows the rim, not the surface.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.4\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$1.96\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$2.8\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$5.6\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies pi by the radius 1.4 instead of the diameter",
+  "B": "computes the area pi(1.4)^2 = 1.96pi",
+  "D": "doubles the diameter before multiplying by pi"
+ },
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.**\n\n**The Fast Way (~10s):** Circumference is $\\pi d$, so the seal is $\\pi(2.8) = 2.8\\pi$ meters.\n\n**The Full Solution:**\nStep 1: The seal runs around the rim, so its length is the circumference of the lid.\nStep 2: With the diameter given, use $C = \\pi d$ rather than $C = 2\\pi r$.\nStep 3: Substitute: $C = \\pi(2.8) = 2.8\\pi$ meters. Check: the radius is $1.4$, and $2\\pi(1.4) = 2.8\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.4\\pi$): multiplies $\\pi$ by the radius $1.4$, which is only half the rim.\n* Choice B ($1.96\\pi$): computes the area $\\pi(1.4)^2 = 1.96\\pi$, which measures the lid's surface, not its rim.\n* Choice D ($5.6\\pi$): doubles the diameter as if the given number were the radius.\n\n**Test Day Takeaway:** Check whether the number given is a radius or a diameter before choosing between $2\\pi r$ and $\\pi d$."
+}

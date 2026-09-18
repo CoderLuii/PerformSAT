@@ -1,0 +1,60 @@
+{
+ "id": "bank-ps-393",
+ "question": "The table summarizes $300$ storm cells tracked during one season by the radar that recorded each cell and by whether the cell produced measurable hail. One of these cells is selected at random. Let $p$ be the percent probability that the cell produced hail given that the inland radar recorded it, and let $q$ be the percent probability that the inland radar recorded the cell given that it produced hail. What is the value of $q - p$?",
+ "diagram": {
+  "type": "twoWayTable",
+  "params": {
+   "headers": [
+    "",
+    "Produced hail",
+    "No hail",
+    "Total"
+   ],
+   "rows": [
+    [
+     "Coastal radar",
+     "18",
+     "132",
+     "150"
+    ],
+    [
+     "Inland radar",
+     "42",
+     "108",
+     "150"
+    ],
+    [
+     "Total",
+     "60",
+     "240",
+     "300"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$28$"
+  },
+  {
+   "id": "B",
+   "text": "$42$"
+  },
+  {
+   "id": "C",
+   "text": "$70$"
+  },
+  {
+   "id": "D",
+   "text": "$98$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports $p = \\frac{42}{150} = 28\\%$ alone instead of the difference",
+  "C": "reports $q = \\frac{42}{60} = 70\\%$ alone instead of the difference",
+  "D": "adds the two conditional percents, $70 + 28$, instead of subtracting"
+ },
+ "explanation": "**SAT Pattern: Conditional Probability with Percent**\n\n**Choice B is correct.** $p = \\frac{42}{150} = 28\\%$ and $q = \\frac{42}{60} = 70\\%$, so $q - p = 42$.\n\n**The Fast Way (~60s):** Both conditionals share the numerator $42$; the denominators are the inland row total $150$ and the hail column total $60$, giving $28\\%$ and $70\\%$, a difference of $42$.\n\n**The Full Solution:**\n\nStep 1: Compute $p$. Conditioning on the inland radar restricts the sample to that row's $150$ cells, of which $42$ produced hail, so $p = \\frac{42}{150} = 0.28$, or $28$.\n\nStep 2: Compute $q$. Conditioning on hail restricts the sample to the $60$ cells in that column, of which $42$ came from the inland radar, so $q = \\frac{42}{60} = 0.70$, or $70$.\n\nStep 3: Subtract: $q - p = 70 - 28 = 42$. Check: the shared numerator is $42$, and because the hail column ($60$) is smaller than the inland row ($150$), $q$ must exceed $p$, as it does.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($28$): stops after computing $p$, the probability of hail given the inland radar.\n* Choice C ($70$): stops after computing $q$, the probability of the inland radar given hail.\n* Choice D ($98$): adds the two conditional percents instead of subtracting them.\n\n**Test Day Takeaway:** The word after \"given\" fixes the denominator -- swapping the two conditions keeps the numerator and changes only which total you divide by."
+}

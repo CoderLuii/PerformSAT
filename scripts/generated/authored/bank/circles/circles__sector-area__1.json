@@ -1,0 +1,42 @@
+{
+ "question": "A pizza stone is cut into wedges like the one in the figure, with radius $6$ inches and a $60^\\circ$ tip angle at center $O$. What is the wedge's area, in square inches?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 60,
+   "angleLabel": "60°",
+   "radius": 6,
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "showRadiusLabel": true,
+   "figureNote": true
+  }
+ },
+ "hint": "How many identical wedges make up the whole stone?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$6\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$12\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$36\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "computes the arc length (1/6)(12pi) = 2pi",
+  "C": "reports the whole circumference 12pi",
+  "D": "reports the whole stone's area 36pi"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~15s):** One sixth of the stone's area $36\\pi$ is $6\\pi$.\n\n**The Full Solution:**\nStep 1: The whole stone has area $\\pi r^2 = \\pi(6)^2 = 36\\pi$.\nStep 2: A $60^\\circ$ tip covers $\\dfrac{60}{360} = \\dfrac{1}{6}$ of the stone.\nStep 3: Multiply: $\\dfrac{1}{6}(36\\pi) = 6\\pi$ square inches. Check: six identical wedges give $6(6\\pi) = 36\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($2\\pi$): computes the arc along the crust, $\\dfrac{1}{6}(12\\pi)$, which is a length rather than an area.\n* Choice C ($12\\pi$): reports the whole circumference.\n* Choice D ($36\\pi$): reports the area of the entire stone rather than one wedge.\n\n**Test Day Takeaway:** A sector's area is the same fraction of $\\pi r^2$ as its angle is of $360^\\circ$."
+}

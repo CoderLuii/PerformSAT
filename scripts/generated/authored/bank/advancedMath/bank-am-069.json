@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-069",
+ "question": "A roof's snow load, in kilopascals, is given by $49t^2 - 56t + 16$ at temperature index $t$, and an engineer needs that load rewritten as a squared binomial before checking it against a code limit. Which of the following is that form?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(7t - 16)^2$"
+  },
+  {
+   "id": "B",
+   "text": "$(7t + 4)^2$"
+  },
+  {
+   "id": "C",
+   "text": "$(7t - 4)(7t + 4)$"
+  },
+  {
+   "id": "D",
+   "text": "$(7t - 4)^2$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "uses the constant term $16$ itself instead of its square root $4$",
+  "B": "gives a middle term of $+56t$, the wrong sign",
+  "C": "is a difference of squares, which has no middle term at all"
+ },
+ "explanation": "**SAT Pattern: Factor Perfect Square Trinomial**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** $\\sqrt{49t^2} = 7t$, $\\sqrt{16} = 4$, and $2(7t)(4) = 56t$ matches the middle term, so the load is $(7t - 4)^2$.\n\n**The Full Solution:**\nStep 1: The first and last terms are perfect squares: $49t^2 = (7t)^2$ and $16 = 4^2$.\nStep 2: For a perfect square trinomial the middle term must be $2(7t)(4) = 56t$, and here it appears as $-56t$, so the binomial carries a minus sign.\nStep 3: The load is $(7t - 4)^2$. Check: $(7t - 4)^2 = 49t^2 - 56t + 16$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($(7t - 16)^2$): squares to $49t^2 - 224t + 256$, since $16$ was never square-rooted.\n* Choice B ($(7t + 4)^2$): squares to $49t^2 + 56t + 16$, with the middle sign reversed.\n* Choice C ($(7t - 4)(7t + 4)$): expands to $49t^2 - 16$, losing the middle term entirely.\n\n**Test Day Takeaway:** Take the square roots of the outer terms, double their product, and compare with the middle term — the middle term's sign is the binomial's sign."
+}

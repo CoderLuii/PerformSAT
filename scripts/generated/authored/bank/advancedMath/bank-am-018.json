@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-018",
+ "question": "An irrigation canal's discharge above its scheduled rate, in liters per second, is modeled by $f(x)=2x^2-28x+5$, where $x$ is the hour after 6 a.m. At what value of $x$ is the discharge least?",
+ "correctAnswer": "7",
+ "explanation": "**SAT Pattern: Vertex x-coordinate Formula**\n\n**The correct answer is $7$.**\n\n**The Fast Way (~15s):** The least value of an upward parabola sits at $x=-\\frac{b}{2a}=-\\frac{-28}{4}=7$.\n\n**The Full Solution:**\nStep 1: Identify $a=2$ and $b=-28$; since $a>0$ the graph opens upward and the vertex is the lowest point.\nStep 2: The vertex's input is $x=-\\frac{b}{2a}=-\\frac{-28}{2(2)}$.\nStep 3: Simplify: $x=\\frac{28}{4}=7$. Check: $f(6)=72-168+5=-91$ and $f(8)=128-224+5=-91$, equal outputs on either side of $7$ ✓\n\n**Common Mistakes:**\n* $-7$: uses $\\frac{b}{2a}$ and keeps the sign of $b$ instead of negating it.\n* $14$: divides by $a$ rather than by $2a$.\n* $5$: reports the constant term, which is $f(0)$, not the vertex's input.\n\n**Test Day Takeaway:** The vertex input is $-\\frac{b}{2a}$ — the $2$ in the denominator is the step students skip most often."
+}

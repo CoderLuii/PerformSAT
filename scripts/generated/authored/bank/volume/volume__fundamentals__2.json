@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "A produce distributor replaces each rectangular crate of canned tomatoes with a crate whose length, width, and height are each $3$ times those of the original crate. The volume of the new crate is how many times the volume of the original crate?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$27$"
+    },
+    {
+      "id": "D",
+      "text": "$81$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "applies the scale factor once, as if volume were proportional to a single length",
+    "B": "squares the scale factor, which is how area scales, not volume",
+    "D": "multiplies by the scale factor a fourth time: 3 to the fourth power = 81"
+  },
+  "correctAnswer": "C",
+  "hint": "A crate measuring $1$ by $1$ by $1$ is the quickest case to test.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** Every one of the three dimensions is tripled, so the volume is multiplied by $3 \\cdot 3 \\cdot 3 = 27$.\n\n**The Full Solution:**\nStep 1: Let the original crate have length $\\ell$, width $w$, and height $h$, so its volume is $V = \\ell w h$.\nStep 2: The new crate has dimensions $3\\ell$, $3w$, and $3h$, so its volume is $(3\\ell)(3w)(3h) = 27\\ell w h$.\nStep 3: Dividing, $\\frac{27 \\ell w h}{\\ell w h} = 27$. Check: a $1 \\times 1 \\times 1$ crate has volume $1$ and its enlargement is $3 \\times 3 \\times 3$, with volume $27$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): applies the scale factor once, as if volume were proportional to a single length.\n* Choice B ($9$): squares the factor, giving $3^2 = 9$ — the way area scales, not volume.\n* Choice D ($81$): multiplies by the factor one time too many, giving $3^4 = 81$.\n\n**Test Day Takeaway:** Scaling every dimension by $k$ multiplies length by $k$, area by $k^2$, and volume by $k^3$ — count the dimensions, then match the exponent."
+}

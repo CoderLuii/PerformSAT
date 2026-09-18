@@ -1,34 +1,34 @@
 {
-  "id": 512,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "module": 1,
-  "passage": "Nicaraguan Sign Language arose only after a school for deaf children, opened in Managua in the late 1970s, brought together students who had previously communicated with isolated home gestures. Linguists who studied the language as it developed argue that its grammar did not appear all at once but was built up by successive groups of children, with each new cohort regularizing and elaborating what the previous one had produced. A researcher claims that the youngest signers, rather than the original founders, were the principal source of the language's growing grammatical complexity.",
-  "question": "Which finding, if true, would most directly support the researcher's claim?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "The very first group of students to attend the new school produced a larger everyday vocabulary of individual signs than any of the later groups of children did."
-    },
-    {
-      "id": "B",
-      "text": "Children who entered the school as teenagers tended to sign more slowly than children who entered it at a younger age."
-    },
-    {
-      "id": "C",
-      "text": "Grammatical devices absent from the signing of the first students appeared and became systematic in the signing of the children who entered the school later."
-    },
-    {
-      "id": "D",
-      "text": "Deaf children in Nicaragua today often begin learning the language at home before they ever enroll in a school."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The claim is that the youngest signers, not the founders, drove the growth of grammatical complexity. A finding that grammatical devices missing from the founders' signing later appeared and became systematic among the children who entered afterward speaks directly to that claim. Choice A concerns vocabulary size, not grammatical complexity, and points to the founders rather than the youngest signers. Choice B is about signing speed, which the claim does not address. Choice D describes how the language is transmitted now, which says nothing about which early cohort supplied its grammar.",
-  "_meta": {
-    "anchor": "Nicaraguan Sign Language; grammar built up across successive child cohorts"
+ "id": 512,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "module": 1,
+ "passage": "On coral reefs, small cleaner wrasses pick parasites from the skin of larger \"client\" fish. The arrangement invites cheating: a cleaner can snatch a quick bite of the client's protective mucus, a food it prefers to parasites, at the cost of an annoyed client. Because reef fish waiting nearby can watch a cleaning station before deciding whether to visit it, a researcher studying the system claims that cleaner wrasses adjust their behavior strategically, cheating less when other potential clients are watching them work.",
+ "question": "Which finding, if true, would most directly support the researcher's claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Cleaner wrasses take more mucus bites when they have gone unusually long without feeding."
+  },
+  {
+   "id": "B",
+   "text": "Client fish that are bitten during a cleaning often jolt away and end the interaction immediately."
+  },
+  {
+   "id": "C",
+   "text": "Individual cleaner wrasses take fewer mucus bites per interaction when bystander fish are present than the same individuals take when no bystanders are nearby."
+  },
+  {
+   "id": "D",
+   "text": "Cleaner wrasses spend more of their day stationed near large-bodied clients than near small ones."
   }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The claim is that cleaners cheat less when observed, and C reports precisely that contrast — the same individuals biting less with bystanders present than without.\n\n**The Full Solution:**\n- The claim has two components: cheating rate varies, and the variable driving it is the presence of an audience.\n- Choice C matches both: mucus bites (the cheating measure) drop when bystander fish are present, and the comparison is within the same individuals, ruling out differences between fish.\n- That is a direct test of audience-sensitive restraint, which is what \"adjust their behavior strategically\" requires.\n\n**Why the other choices are wrong:**\n- A: It ties cheating to hunger, a different variable; it says nothing about who is watching.\n- B: It describes how clients react to cheating, not whether cleaners cheat less when observed.\n- D: It concerns where cleaners spend time, which leaves the claim about audience-dependent honesty untouched.",
+ "_meta": {
+  "anchor": "cleaner wrasse audience effect — cheating less when bystander clients watch"
+ }
 }

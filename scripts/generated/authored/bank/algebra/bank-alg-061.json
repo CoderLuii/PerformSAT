@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-061",
+  "question": "In the $xy$-plane, the graphs of the equations $4x - 6y = 9$ and $-6x + 9y = 5$ are two lines. How many points do the two lines have in common?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Zero"
+    },
+    {
+      "id": "B",
+      "text": "Exactly one"
+    },
+    {
+      "id": "C",
+      "text": "Exactly two"
+    },
+    {
+      "id": "D",
+      "text": "Infinitely many"
+    }
+  ],
+  "distractorNotes": {
+    "B": "assumes opposite-sign coefficients mean different slopes",
+    "C": "two distinct lines cannot meet twice",
+    "D": "sees proportional left sides but never checks the constants"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Classify System (Parallel Lines)**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** Both lines have slope $\\frac{2}{3}$, but multiplying the first equation by $-\\frac{3}{2}$ gives $-6x + 9y = -\\frac{27}{2}$, not $5$. Same slope, different intercept: the lines are parallel and share no point.\n\n**The Full Solution:**\nStep 1: Put each equation in slope-intercept form. $4x - 6y = 9 \\Rightarrow y = \\frac{2}{3}x - \\frac{3}{2}$, and $-6x + 9y = 5 \\Rightarrow y = \\frac{2}{3}x + \\frac{5}{9}$.\nStep 2: The slopes are equal, so the lines are either parallel or the same line.\nStep 3: The $y$-intercepts differ ($-\\frac{3}{2} \\ne \\frac{5}{9}$), so the lines are distinct and parallel. Check: scaling the first equation by $-\\frac{3}{2}$ reproduces the left side $-6x + 9y$ but gives $-\\frac{27}{2} \\ne 5$. $\\checkmark$ No point satisfies both equations.\n\n**Why the wrong answers are tempting:**\n* Choice B (exactly one): assumes the opposite signs on the coefficients mean the slopes differ; both slopes equal $\\frac{2}{3}$.\n* Choice C (exactly two): two distinct straight lines can meet at most once, never twice.\n* Choice D (infinitely many): notices the left sides are proportional but skips the constants, which are not in the same ratio.\n\n**Test Day Takeaway:** For $Ax + By = C$ and $Dx + Ey = F$, compare the ratios $\\frac{A}{D}$, $\\frac{B}{E}$, and $\\frac{C}{F}$: equal coefficient ratios with a different constant ratio means parallel lines and no solution."
+}

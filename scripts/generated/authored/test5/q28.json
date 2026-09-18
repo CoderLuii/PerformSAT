@@ -1,34 +1,34 @@
 {
-  "id": 528,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 2,
-  "passage": "Public-health researchers who study shift work have found that the human circadian system adjusts only slowly, and often incompletely, to a reversed schedule. Night-shift nurses, for instance, rarely shift their internal clocks all the way to match their working hours; instead their bodies remain partly ______ to the daytime pattern their surroundings still signal, so that alertness dips in the small hours even after months on the schedule.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "opposed"
-    },
-    {
-      "id": "B",
-      "text": "attuned"
-    },
-    {
-      "id": "C",
-      "text": "indifferent"
-    },
-    {
-      "id": "D",
-      "text": "receptive"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"attuned.\" The sentence says the workers' bodies stay partly synchronized with the daytime pattern that their environment continues to signal, which is why alertness still drops at night. \"Attuned\" captures that lingering alignment. \"Opposed\" points the wrong way, suggesting the body works against the daytime pattern rather than remaining keyed to it. \"Indifferent\" would mean unaffected by it, the opposite of the point. \"Receptive\" suggests being open to something new, whereas the issue is a holdover alignment with the old daytime rhythm.",
-  "_meta": {
-    "anchor": "Shift work and circadian adjustment; bodies remain attuned to the daytime pattern"
+ "id": 528,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 2,
+ "passage": "On tropical reefs, certain damselfish defend small territories where a preferred species of alga grows. The fish do more than graze these patches: they actively ______ them, nipping out competing seaweeds, driving off intruding grazers, and carrying unwanted algal fragments beyond the territory's borders.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "patrol"
+  },
+  {
+   "id": "B",
+   "text": "cultivate"
+  },
+  {
+   "id": "C",
+   "text": "sample"
+  },
+  {
+   "id": "D",
+   "text": "enlarge"
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The behaviors listed — weeding out competitors, excluding other grazers, hauling away debris — amount to tending a crop, and \"cultivate\" names exactly that active care.\n\n**The Full Solution:**\n- The sentence announces that the fish \"do more than graze,\" so the blank must go beyond feeding.\n- The colon then specifies gardening behaviors: removing competing seaweeds, defending the patch, disposing of unwanted fragments.\n- Taken together these describe managing the alga's growth, which is what \"cultivate\" means.\n\n**Why the other choices are wrong:**\n- A: \"Patrol\" covers only the defensive part of the list and misses the weeding and clearing that make the care agricultural.\n- C: \"Sample\" means to try small amounts, a feeding notion the sentence has already set aside.\n- D: \"Enlarge\" concerns the territory's size, which none of the listed behaviors addresses.",
+ "_meta": {
+  "anchor": "farming damselfish — weeding and defending algal turf territories"
+ }
 }

@@ -6,26 +6,26 @@
  "domain": "information-and-ideas",
  "skill": "central-ideas-and-details",
  "module": 2,
- "passage": "Bioarchaeologist Yilmaz Selim Erdal, of Hacettepe University in Ankara, studies skeletal remains from past communities of Anatolia to ask how shifts in diet and labor shaped their bodies. In a 2012 study of the Iron Age village of Hakemi Use, Erdal examined joint disease and dental wear across the burials at the site. He found that degenerative changes in the spine, knees, and shoulders were unusually common and that the teeth showed heavy wear consistent with a diet of coarsely ground cereals. Rather than treat these as ordinary signs of aging, he read them together as evidence that life at Hakemi Use centered on demanding agricultural labor and a grain-heavy diet. The skeletal patterns, he argues, form a coordinated record of how villagers worked and ate.",
+ "passage": "By 1990, the Leaning Tower of Pisa tilted so far that engineers projected collapse within decades, and the monument was closed to visitors. An international committee led by geotechnical engineer John Burland rejected proposals to prop the tower up visibly or to dismantle and rebuild it; instead, the team slowly extracted small amounts of soil from beneath the foundation's north side — the side opposite the lean — allowing the tower to settle back toward vertical. Over three years, the method reduced the tilt by roughly ten percent: enough, the committee calculated, to stabilize the structure for centuries without altering its famous silhouette.",
  "question": "Which choice best states the main idea of the text?",
  "choices": [
   {
    "id": "A",
-   "text": "Erdal teaches at Hacettepe University in Ankara, where he specializes in the bioarchaeology of past Anatolian communities."
+   "text": "In 1990 the Leaning Tower of Pisa was closed to visitors, and it remained closed until engineers finalized a plan to dismantle the structure and rebuild it on firmer ground."
   },
   {
    "id": "B",
-   "text": "Erdal's research at Hakemi Use suggests that the joint disease and dental wear observed in the burials are best explained as ordinary effects of aging rather than as signs of demanding labor or a grain-heavy diet."
+   "text": "The Leaning Tower of Pisa tilts because the soil beneath its south side is softer than the soil beneath its north side, a difference engineers did not detect until 1990."
   },
   {
    "id": "C",
-   "text": "Erdal found that degenerative changes in the spine, knees, and shoulders were unusually common among the burials excavated at Hakemi Use."
+   "text": "To keep the Leaning Tower of Pisa from collapsing, engineers extracted soil from beneath the side opposite the lean, reducing the tilt just enough to secure the tower without changing its appearance."
   },
   {
    "id": "D",
-   "text": "Erdal's 2012 study at the Iron Age village of Hakemi Use treats joint disease and heavy dental wear as combined evidence that daily life there centered on demanding agricultural labor and a diet of coarse cereals."
+   "text": "An international committee determined that continued soil extraction could eventually return the Leaning Tower of Pisa fully to vertical if the work were extended for several more years."
   }
  ],
- "correctAnswer": "D",
- "explanation": "The correct answer is D. The passage builds its main idea across several sentences. The opening sentence introduces Erdal's broader project of using Anatolian skeletal remains to ask how shifts in subsistence shaped past bodies. The middle sentences describe the 2012 Hakemi Use study and its specific findings: unusually common joint disease in the spine, knees, and shoulders, and heavy occlusal wear consistent with coarsely ground cereals. The next sentence states Erdal's interpretive move — reading these features together as evidence of sustained agricultural labor and a grain-heavy diet rather than as ordinary signs of aging. The closing sentence frames the broader argument that bioarchaeological evidence can reconstruct how an Iron Age farming community worked and ate. Choice D captures this combined claim at the right level of generalization, naming both the kinds of evidence (joint disease and dental wear) and the lifestyle they are taken to reveal."
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The text's central idea joins the problem, the method, and the outcome: facing projected collapse, the committee removed soil from beneath the north side, and the modest reduction in tilt was calculated to secure the tower for centuries while preserving how it looks.\n\n**The Full Solution:**\n- The passage moves from a crisis (projected collapse, closure in 1990) to a chosen method (soil extraction beneath the side opposite the lean, after rejecting visible props and dismantling) to a result (tilt reduced about ten percent — enough to stabilize the tower without altering its silhouette).\n- A main-idea answer must capture that full arc at the right level of generality, and choice C states each element: the goal, the method, and the deliberately limited correction.\n\n**Why the other choices are wrong:**\n- A: The committee rejected dismantling and rebuilding — this choice promotes a discarded proposal into the adopted plan.\n- B: The text never explains why the tower leans or compares soil softness on the two sides; soil is discussed only as what the engineers removed.\n- D: The text says the committee aimed for and achieved a partial correction; nothing suggests extending the work to reach full vertical, which would contradict the goal of keeping the famous lean."
 }

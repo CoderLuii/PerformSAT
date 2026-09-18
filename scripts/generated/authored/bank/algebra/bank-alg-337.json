@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-337",
+ "question": "A courier's route has three times as many rural stops as urban stops and eight fewer express stops than urban stops. If the route has $152$ stops in all, how many urban stops does it have?",
+ "correctAnswer": "32",
+ "explanation": "**SAT Pattern: Word-Problem to Multi-Step Linear**\n\n**The correct answer is $32$.**\n\n**The Fast Way (~30s):** With $u$ urban stops the total is $5u - 8 = 152$, so $u = 32$.\n\n**The Full Solution:**\nStep 1: Let $u$ be the number of urban stops; then rural stops number $3u$ and express stops number $u - 8$.\nStep 2: Add the three counts: $u + 3u + (u - 8) = 152$, which simplifies to $5u - 8 = 152$.\nStep 3: Add $8$ to both sides and divide by $5$: $5u = 160$, so $u = 32$. Check: $32 + 96 + 24 = 152$ ✓\n\n**Common Mistakes:**\n* Reporting $96$, the number of rural stops, instead of the urban stops asked for.\n* Dividing $152$ by $5$ before restoring the $8$, which gives $30.4$.\n* Reporting $24$, the number of express stops.\n\n**Test Day Takeaway:** Name the quantity every other count is described against, write one equation for the total, then solve."
+}

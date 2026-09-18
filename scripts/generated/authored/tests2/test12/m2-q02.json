@@ -1,0 +1,29 @@
+{
+ "id": 2,
+ "question": "A contact-tracing unit has completed $900$ of the $3{,}600$ interviews it must finish. Each of the $c$ callers on the unit completes $r$ interviews per hour and works $h$ hours each day. Which expression gives the number of additional days the unit needs to finish the remaining interviews?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{2700h}{cr}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{2700}{crh}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3600}{crh}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{3600h}{cr}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "multiplies by the hours per day instead of dividing by them",
+  "C": "uses the full 3,600 interviews instead of the 2,700 that remain",
+  "D": "uses 3,600 instead of 2,700 AND multiplies by h instead of dividing"
+ },
+ "explanation": "**SAT Pattern: Word-to-Expression Translation**\n\n**Choice B is correct.** The unit still owes $3{,}600 - 900 = 2{,}700$ interviews, and it finishes $crh$ interviews per day, so it needs $\\frac{2700}{crh}$ days.\n\n**The Fast Way (~30s):** Remaining work over work per day. Remaining $= 2{,}700$; per day $= c \\cdot r \\cdot h$. Divide.\n\n**The Full Solution:**\nStep 1: Subtract what is already done: $3{,}600 - 900 = 2{,}700$ interviews remain.\nStep 2: Build the daily rate. One caller does $r$ interviews each hour for $h$ hours, or $rh$ interviews per day; $c$ callers do $crh$ interviews per day.\nStep 3: Days $=$ $\\frac{\\text{interviews remaining}}{\\text{interviews per day}} = \\frac{2700}{crh}$. Check the units: interviews divided by (interviews per day) leaves days. With $c = 5$, $r = 3$, and $h = 6$ the unit does $90$ interviews per day and needs $\\frac{2700}{90} = 30$ days, which is exactly what $\\frac{2700}{crh}$ returns. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{2700h}{cr}$): keeps the correct numerator but multiplies by $h$. More hours per day should shorten the job, so $h$ belongs in the denominator; with $c = 5$, $r = 3$, $h = 6$ this returns $1{,}080$ days.\n* Choice C ($\\frac{3600}{crh}$): divides the whole assignment by the daily rate and ignores the $900$ interviews already finished, overstating the answer by $\\frac{900}{crh}$ days.\n* Choice D ($\\frac{3600h}{cr}$): makes both errors at once — the full total in the numerator and $h$ on the wrong side of the fraction bar.\n\n**Test Day Takeaway:** In a rate translation, anything that makes the job go faster belongs in the denominator. Test your expression with easy numbers before you bubble."
+}

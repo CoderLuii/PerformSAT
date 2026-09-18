@@ -1,0 +1,49 @@
+{
+ "id": 11,
+ "question": "The table lists three unit equivalences. A backup link moves $320$ megabits of data each second at a constant rate. Using the equivalences in the table, how much data, in gigabytes, does the link move in one hour?",
+ "questionTable": {
+  "headers": [
+   "Quantity",
+   "Equivalent"
+  ],
+  "rows": [
+   [
+    "1 byte",
+    "8 bits"
+   ],
+   [
+    "1 gigabyte",
+    "1,000 megabytes"
+   ],
+   [
+    "1 hour",
+    "3,600 seconds"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$40$"
+  },
+  {
+   "id": "B",
+   "text": "$144$"
+  },
+  {
+   "id": "C",
+   "text": "$9{,}216$"
+  },
+  {
+   "id": "D",
+   "text": "$144{,}000$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "stops after converting megabits per second to megabytes per second and never multiplies by 3,600",
+  "C": "multiplies by 8 instead of dividing, treating 1 megabit as 8 megabytes",
+  "D": "carries the conversion through in megabytes and never divides by 1,000 to reach gigabytes"
+ },
+ "explanation": "**SAT Pattern: Unit Conversion**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** $320 \\div 8 = 40$ megabytes per second; $40 \\times 3{,}600 = 144{,}000$ megabytes per hour; $144{,}000 \\div 1{,}000 = 144$ gigabytes.\n\n**The Full Solution:**\nStep 1: Convert bits to bytes. Because $1$ byte is $8$ bits, $320$ megabits is $\\frac{320}{8} = 40$ megabytes, so the link moves $40$ megabytes each second.\nStep 2: Convert seconds to hours. In $3{,}600$ seconds the link moves $40 \\times 3{,}600 = 144{,}000$ megabytes.\nStep 3: Convert megabytes to gigabytes: $\\frac{144{,}000}{1{,}000} = 144$ gigabytes. Check the chain of units: $\\frac{\\text{megabits}}{\\text{second}} \\times \\frac{\\text{byte}}{8\\ \\text{bits}} \\times \\frac{3{,}600\\ \\text{s}}{\\text{hour}} \\times \\frac{\\text{gigabyte}}{1{,}000\\ \\text{megabytes}}$ leaves gigabytes per hour ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($40$): this is the rate in megabytes per second, the result after only the first conversion. It is neither an hour's worth nor measured in gigabytes.\n* Choice C ($9{,}216$): multiplying by $8$ instead of dividing gives $2{,}560$ megabytes per second and $9{,}216$ gigabytes per hour. A byte is bigger than a bit, so the count of bytes must be smaller.\n* Choice D ($144{,}000$): this is the correct number of megabytes per hour. The question asks for gigabytes, which requires one more division by $1{,}000$.\n\n**Test Day Takeaway:** Write the conversion as a chain of fractions and cancel units as you go; the unit that survives should be the one the question names."
+}

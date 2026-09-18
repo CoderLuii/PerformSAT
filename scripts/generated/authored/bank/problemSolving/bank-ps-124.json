@@ -1,0 +1,36 @@
+{
+  "id": "bank-ps-124",
+  "question": "The dot plot shows the number of eggs counted in each of $8$ bird nests. A ninth nest containing $13$ eggs is added to the data set. What is the mean number of eggs per nest for the $9$ nests?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 2,
+          "count": 1
+        },
+        {
+          "value": 3,
+          "count": 2
+        },
+        {
+          "value": 4,
+          "count": 3
+        },
+        {
+          "value": 5,
+          "count": 1
+        },
+        {
+          "value": 7,
+          "count": 1
+        }
+      ],
+      "xMin": 1,
+      "xMax": 8,
+      "xLabel": "Number of eggs"
+    }
+  },
+  "correctAnswer": "5",
+  "explanation": "**SAT Pattern: Outlier Effect**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~15s):** The $8$ nests hold $2 + 3 + 3 + 4 + 4 + 4 + 5 + 7 = 32$ eggs. Adding $13$ gives $45$ eggs in $9$ nests, so the mean is $\\frac{45}{9} = 5$.\n\n**The Full Solution:**\nStep 1: Read the dot plot by column height: one nest with $2$ eggs, two with $3$, three with $4$, one with $5$, one with $7$. The sum is $2 + 6 + 12 + 5 + 7 = 32$.\nStep 2: Add the ninth nest: the new sum is $32 + 13 = 45$, and the new count is $9$.\nStep 3: Mean $= \\frac{45}{9} = 5$. Check: the original mean was $\\frac{32}{8} = 4$; adding a value above the mean must raise it, and $5 > 4$. $\\checkmark$\n\n**Common Mistakes:** Dividing $45$ by $8$ (forgetting the count grew to $9$) gives $5.625$; averaging the old mean with the new value, $\\frac{4 + 13}{2} = 8.5$; counting each column once instead of by its height ($2 + 3 + 4 + 5 + 7 = 21$, then $\\frac{34}{9} \\approx 3.78$).\n\n**Test Day Takeaway:** Adding a value changes both the sum and the count: new mean $= \\dfrac{\\text{old sum} + \\text{new value}}{\\text{old count} + 1}$."
+}

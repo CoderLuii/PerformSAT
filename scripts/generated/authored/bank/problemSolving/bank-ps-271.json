@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-271",
+  "question": "An education researcher wants to determine whether a $20$-minute daily silent-reading period causes an increase in reading comprehension scores among the fourth-grade students in a certain district. Which of the following study designs would provide the strongest evidence of such a causal effect for the fourth-grade students in the district?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Select $200$ fourth-grade students at random from the district and record, for each student, whether the student already has a daily silent-reading period and what the student's comprehension score is."
+    },
+    {
+      "id": "B",
+      "text": "Recruit $200$ fourth-grade students in the district whose families volunteer them for a daily silent-reading period, and compare their comprehension scores with the scores of students who do not participate."
+    },
+    {
+      "id": "C",
+      "text": "Select $200$ fourth-grade students at random from one school in the district and assign the silent-reading period to the $100$ of them with the lowest comprehension scores."
+    },
+    {
+      "id": "D",
+      "text": "Select $200$ fourth-grade students at random from the district and randomly assign $100$ of them to a daily silent-reading period and the other $100$ to their usual schedule."
+    }
+  ],
+  "distractorNotes": {
+    "A": "observational: records an existing habit, so differences may be explained by other variables",
+    "B": "volunteers self-select into the treatment group",
+    "C": "assignment is by prior score, not at random, and the sample comes from one school"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Observational vs Experimental Study**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** Only a design with random assignment of the treatment supports a causal conclusion, and only a random sample of the district supports applying that conclusion to the district. Choice D is the one design with both.\n\n**The Full Solution:**\nStep 1: A cause-and-effect conclusion requires that the researcher, not the students, decide who receives the reading period, and that this decision be made at random. Random assignment makes the two groups similar on every other variable, so a difference in mean comprehension score can be attributed to the reading period.\nStep 2: A conclusion about all fourth-grade students in the district requires that the students be selected at random from that district.\nStep 3: Check each design: only choice D selects at random from the district and then assigns the treatment at random. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the random selection is there, but nothing is assigned; students who already read silently may differ from other students in ways (home support, prior skill) that also affect comprehension. This design supports association only.\n* Choice B: the students choose their own group, so the reading group is a self-selected group. Any difference could come from whatever led those families to volunteer.\n* Choice C: assigning the treatment to the $100$ lowest scorers builds a difference between the groups before the study starts, and drawing from one school limits the conclusion to that school.\n\n**Test Day Takeaway:** Random *assignment* buys cause and effect; random *selection* buys generalization. Read every design looking for those two words separately."
+}

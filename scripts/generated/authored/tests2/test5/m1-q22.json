@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "A lecture hall whiteboard is a rectangle with side lengths $m - 4$ feet and $m + 4$ feet, where $m > 4$. A strip of trim joins two opposite corners of the board. Which expression represents the length of the trim, in feet?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\sqrt{2m^2}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\sqrt{2m^2 + 16}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\sqrt{2m^2 + 32}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\sqrt{2m^2 + 16m + 32}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "squares each binomial term by term as m^2 - 16 and m^2 + 16, so the constants cancel and only 2m^2 is left",
+  "B": "squares only one of the 4s, using 16 instead of 16 + 16 = 32",
+  "D": "treats both middle terms as positive, giving +16m where -8m and +8m should cancel"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Right Triangle — Pythagorean**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** $(m - 4)^2 + (m + 4)^2 = 2m^2 + 32$, so the trim, which lies along a diagonal, is $\\sqrt{2m^2 + 32}$ feet long.\n\n**The Full Solution:**\nStep 1: A diagonal of a rectangle splits it into two right triangles whose legs are the rectangle's sides, so the diagonal $d$ satisfies $d^2 = (m - 4)^2 + (m + 4)^2$.\nStep 2: Expand each square: $(m - 4)^2 = m^2 - 8m + 16$ and $(m + 4)^2 = m^2 + 8m + 16$. Adding them, the $-8m$ and $+8m$ cancel and the constants add: $d^2 = 2m^2 + 32$.\nStep 3: Take the positive square root: $d = \\sqrt{2m^2 + 32}$. Check with $m = 5$: the sides are $1$ and $9$, so $d = \\sqrt{1 + 81} = \\sqrt{82}$, and $\\sqrt{2(25) + 32} = \\sqrt{82}$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\sqrt{2m^2}$): squares each binomial term by term, treating $(m - 4)^2$ as $m^2 - 16$ and $(m + 4)^2$ as $m^2 + 16$. Those constants then cancel instead of adding to $32$; at $m = 5$ this gives $\\sqrt{50}$, not $\\sqrt{82}$.\n* Choice B ($\\sqrt{2m^2 + 16}$): counts the constant $16$ once. Each binomial contributes its own square of $4$, so the constants total $32$; at $m = 5$ this gives $\\sqrt{66}$, not $\\sqrt{82}$.\n* Choice D ($\\sqrt{2m^2 + 16m + 32}$): adds the two middle terms as if both were positive. Squaring $m - 4$ produces $-8m$, which cancels the $+8m$ from $(m + 4)^2$ exactly.\n\n**Test Day Takeaway:** Expand both squares in full rather than guessing at the pattern. A conjugate pair such as $m - 4$ and $m + 4$ always kills its middle terms and doubles its constants."
+}

@@ -1,0 +1,49 @@
+{
+ "id": "bank-am-260",
+ "question": "An absolute value function $f$ has the V-shaped graph shown in the $xy$-plane, where it models a gantry crane hoist's lateral drift in centimeters. The graph of $g$ is the mirror image of that graph across the vertical axis. Which equation defines $g$?",
+ "diagram": {
+  "type": "absoluteValue",
+  "params": {
+   "vertex": [
+    3,
+    -2
+   ],
+   "slope": 1,
+   "showPoints": [
+    [
+     1,
+     0
+    ],
+    [
+     5,
+     0
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$g(x)=|x-3|+2$"
+  },
+  {
+   "id": "B",
+   "text": "$g(x)=-|x-3|+2$"
+  },
+  {
+   "id": "C",
+   "text": "$g(x)=|x+3|+2$"
+  },
+  {
+   "id": "D",
+   "text": "$g(x)=|x+3|-2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "negates the constant instead of the input, moving the corner up to (3, 2)",
+  "B": "reflects over the horizontal axis, turning the V upside down at (3, 2)",
+  "C": "reflects the input correctly but also negates the constant, putting the corner at (-3, 2)"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Reflection of Graph**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The corner sits at $(3,-2)$, so $f(x)=|x-3|-2$; replacing $x$ by $-x$ gives $|-x-3|-2=|x+3|-2$.\n\n**The Full Solution:**\n\nStep 1: The V has its corner at $(3,-2)$ and passes through $(1,0)$ and $(5,0)$, so $f(x)=|x-3|-2$.\n\nStep 2: Reflecting over the vertical axis replaces the input by its opposite: $g(x)=f(-x)=|-x-3|-2$.\n\nStep 3: Since $|-x-3|=|x+3|$, the equation is $g(x)=|x+3|-2$. Check: the corner of $g$ is at $(-3,-2)$, the mirror image of $(3,-2)$, and $g(-1)=|2|-2=0$ mirrors $f(1)=0$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A: negates the constant instead of the input, lifting the corner to $(3,2)$.\n* Choice B: flips the V upside down, a reflection over the horizontal axis.\n* Choice C: reflects the input but also changes the constant, moving the corner to $(-3,2)$.\n\n**Test Day Takeaway:** A reflection over the vertical axis changes only what is inside the function; the constant added outside is untouched."
+}

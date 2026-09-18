@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-158",
+  "question": "In the $xy$-plane, the graph of $y = 2x^2 - bx + 50$ has no $x$-intercepts, where $b$ is a positive integer. What is the greatest possible value of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$9$"
+    },
+    {
+      "id": "B",
+      "text": "$19$"
+    },
+    {
+      "id": "C",
+      "text": "$20$"
+    },
+    {
+      "id": "D",
+      "text": "$39$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "drops the factor of $4$, using $b^2 < ac = 100$ and stopping one integer below $10$",
+    "C": "stops at the boundary $b = 20$, where the graph touches the $x$-axis at exactly one point",
+    "D": "uses $b < 4\\sqrt{ac} = 40$ instead of $b < 2\\sqrt{ac} = 20$"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** No $x$-intercepts means $b^2 < 4(2)(50) = 400$, so $b < 20$ and the greatest integer is $19$.\n\n**The Full Solution:**\nStep 1: The graph crosses the $x$-axis where $2x^2 - bx + 50 = 0$, so having no $x$-intercepts means that equation has no real solutions.\nStep 2: With $a = 2$ and $c = 50$, the discriminant is $(-b)^2 - 4(2)(50) = b^2 - 400$, and no real solutions requires $b^2 < 400$, so for positive $b$, $b < 20$.\nStep 3: The greatest integer strictly less than $20$ is $19$. Check: $19^2 = 361 < 400$, while $20^2 = 400$ makes the discriminant zero. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): dropping the $4$ gives $b^2 < 100$ and $b < 10$.\n* Choice C ($20$): at $b = 20$ the discriminant is exactly $0$, so the graph touches the $x$-axis once rather than missing it.\n* Choice D ($39$): using $4\\sqrt{ac} = 40$ in place of $2\\sqrt{ac} = 20$ doubles the bound.\n\n**Test Day Takeaway:** A parabola misses the $x$-axis exactly when the discriminant is negative; compute $4ac$ in full, then step one integer inside the boundary."
+}

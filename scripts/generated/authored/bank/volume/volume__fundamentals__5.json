@@ -1,0 +1,46 @@
+{
+ "id": 5,
+ "question": "The table gives the volume of each of two cubes. The surface area of cube $Q$ is $k$ times the surface area of cube $P$. What is the value of $k$?",
+ "questionTable": {
+  "headers": [
+   "Cube",
+   "Volume (cubic inches)"
+  ],
+  "rows": [
+   [
+    "P",
+    "27"
+   ],
+   [
+    "Q",
+    "216"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$64$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the ratio of the edge lengths rather than of the surface areas",
+  "C": "gives the ratio of the volumes, $\\frac{216}{27}$",
+  "D": "squares the volume ratio instead of squaring the edge ratio"
+ },
+ "correctAnswer": "B",
+ "hint": "Get back to an edge length from each volume before comparing anything.",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~60s):** The edges are $3$ and $6$, so the surface areas are in the ratio $\\left(\\frac{6}{3}\\right)^2 = 4$.\n\n**The Full Solution:**\nStep 1: A cube of volume $V$ has edge $\\sqrt[3]{V}$, so cube $P$ has edge $3$ inches and cube $Q$ has edge $6$ inches.\nStep 2: The ratio of the edges is $\\frac{6}{3} = 2$.\nStep 3: Surface area scales by the square of the edge ratio, so $k = 2^2 = 4$.\n\nVerification: The surface areas are $6(3^2) = 54$ and $6(6^2) = 216$, and $\\frac{216}{54} = 4$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($2$): gives the ratio of the edge lengths rather than of the surface areas.\n* Choice C ($8$): gives the ratio of the volumes, $\\frac{216}{27}$.\n* Choice D ($64$): squares the volume ratio instead of squaring the edge ratio.\n\n**Test Day Takeaway:** Move from volume to edge with a cube root, then square that ratio to compare surface areas."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-127",
+  "question": "The side lengths of a right triangle are in the ratio $3 : 4 : 5$, and the perimeter of the triangle is $84$. What is the length of the longest side of the triangle?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$7$"
+    },
+    {
+      "id": "B",
+      "text": "$21$"
+    },
+    {
+      "id": "C",
+      "text": "$28$"
+    },
+    {
+      "id": "D",
+      "text": "$35$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the scale factor instead of a side length",
+    "B": "gives the shortest side rather than the longest",
+    "C": "gives the middle side rather than the longest"
+  },
+  "correctAnswer": "D",
+  "explanation": "**SAT Pattern: Pythagorean Theorem (3-4-5 Family)**\n\n**Choice D is correct.**\n\n**The Fast Way (~15s):** The ratio parts total $12$, so each part is $\\frac{84}{12} = 7$ and the longest side is $5(7) = 35$.\n\n**The Full Solution:**\nStep 1: Write the sides as $3k$, $4k$, and $5k$ for some positive constant $k$.\nStep 2: The perimeter gives $3k + 4k + 5k = 12k = 84$, so $k = 7$.\nStep 3: The longest side is $5k = 5(7) = 35$. Check: the sides are $21$, $28$, and $35$, and $21 + 28 + 35 = 84$, with $21^2 + 28^2 = 1{,}225 = 35^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): reports $k$, the value of one ratio part, instead of $5k$.\n* Choice B ($21$): gives $3k$, the shortest side.\n* Choice C ($28$): gives $4k$, the middle side.\n\n**Test Day Takeaway:** Turn a ratio into $3k$, $4k$, $5k$, solve for $k$ from the given total, then read off the side the question actually asks for."
+}

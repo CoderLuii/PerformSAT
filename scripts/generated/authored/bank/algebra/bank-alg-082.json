@@ -1,0 +1,50 @@
+{
+ "id": "bank-alg-082",
+ "question": "The figure gives the parabola $y = f(x)$. Its reflection across the $x$-axis is the parabola $y = g(x)$. Which equation below defines $g$?",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    3,
+    -4
+   ],
+   "a": 1,
+   "showPoints": [
+    [
+     1,
+     0
+    ],
+    [
+     5,
+     0
+    ]
+   ],
+   "showVertex": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$g(x) = (x + 3)^2 - 4$"
+  },
+  {
+   "id": "B",
+   "text": "$g(x) = (x - 3)^2 + 4$"
+  },
+  {
+   "id": "C",
+   "text": "$g(x) = -(x - 3)^2 + 4$"
+  },
+  {
+   "id": "D",
+   "text": "$g(x) = -(x - 3)^2 - 4$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reflects across the $y$-axis, moving the vertex to $(-3, -4)$ instead of flipping the outputs",
+  "B": "negates only the constant term, leaving the parabola opening upward",
+  "D": "negates only the squared term, giving vertex $(3, -4)$ rather than $(3, 4)$"
+ },
+ "explanation": "**SAT Pattern: Reflection over Axis**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** The parabola is $f(x) = (x - 3)^2 - 4$, and reflecting across the $x$-axis gives $g(x) = -(x - 3)^2 + 4$.\n\n**The Full Solution:**\nStep 1: The graph has vertex $(3, -4)$ and passes through $(1, 0)$ and $(5, 0)$, so $f(x) = (x - 3)^2 - 4$.\nStep 2: Reflecting across the $x$-axis replaces every output by its opposite, so $g(x) = -f(x)$.\nStep 3: Therefore $g(x) = -\\left[(x - 3)^2 - 4\\right] = -(x - 3)^2 + 4$. Check: $g(1) = -4 + 4 = 0$ and $g(3) = 4$, the mirror of $f(3) = -4$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($g(x) = (x + 3)^2 - 4$): reflects across the $y$-axis, moving the vertex to $(-3, -4)$ instead of flipping the outputs\n* Choice B ($g(x) = (x - 3)^2 + 4$): negates only the constant term, leaving the parabola opening upward\n* Choice D ($g(x) = -(x - 3)^2 - 4$): negates only the squared term, giving vertex $(3, -4)$ rather than $(3, 4)$\n\n**Test Day Takeaway:** A reflection across the $x$-axis negates the entire expression, constant term included."
+}

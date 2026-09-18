@@ -1,0 +1,29 @@
+{
+  "id": 10,
+  "question": "A network engineer maps a coverage zone whose edge consists of the points satisfying $x^2 + y^2 - 18x + 8y + c = 0$, for some constant $c$, where $x$ and $y$ are measured in meters from a corner of the building. One sensor lying exactly on that edge is at $(21, -4)$. What is the value of $c$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-47$"
+    },
+    {
+      "id": "B",
+      "text": "$47$"
+    },
+    {
+      "id": "C",
+      "text": "$85$"
+    },
+    {
+      "id": "D",
+      "text": "$241$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "computes 144 - 97 instead of 97 - 144, flipping the sign of c",
+    "C": "sets 97 - c equal to the distance 12 rather than to 12 squared",
+    "D": "adds, computing 97 + 144 instead of 97 - 144"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** Completing the square gives center $(9, -4)$ and $r^2 = 97 - c$; the sensor at $(21, -4)$ is $12$ meters from the center, so $97 - c = 144$ and $c = -47$.\n\n**The Full Solution:**\nStep 1: Group and complete the square: $x^2 - 18x + y^2 + 8y = -c$ becomes $(x - 9)^2 - 81 + (y + 4)^2 - 16 = -c$, so $(x - 9)^2 + (y + 4)^2 = 97 - c$.\nStep 2: The center is $(9, -4)$. The sensor $(21, -4)$ lies on the same horizontal line, $21 - 9 = 12$ meters away, so $r = 12$ and $r^2 = 144$.\nStep 3: Set $97 - c = 144$, giving $c = 97 - 144 = -47$. Check by substituting the sensor into the original equation: $441 + 16 - 378 - 32 - 47 = 0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($47$): computes $144 - 97$, reversing the subtraction and flipping the sign of $c$.\n* Choice C ($85$): sets $97 - c$ equal to the distance $12$ instead of to $12^2 = 144$, forgetting that general form stores the square of the radius.\n* Choice D ($241$): adds, $97 + 144$, which is what you get by moving $c$ across the equal sign without changing its sign.\n\n**Test Day Takeaway:** Complete the square first; the constant left on the right is $r^2$, so any radius information must be squared before you compare."
+}

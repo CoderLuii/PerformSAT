@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "The range of a data set is $24$. A new data set is formed by multiplying each value in the original data set by $4$ and then decreasing each result by $9$. What is the range of the new data set?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$15$"
+    },
+    {
+      "id": "B",
+      "text": "$24$"
+    },
+    {
+      "id": "C",
+      "text": "$87$"
+    },
+    {
+      "id": "D",
+      "text": "$96$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "subtracts $9$ from the original range, applying the shift to the spread.",
+    "B": "assumes neither operation changes the range, which is true only for the shift.",
+    "C": "scales correctly to $96$ but then also subtracts $9$, applying the shift a second time to the spread."
+  },
+  "correctAnswer": "D",
+  "hint": "Consider what each operation does to the distance between the greatest and least values.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~45s):** Multiplying every value by $4$ multiplies the range by $4$; subtracting $9$ from every value shifts the data without changing the spread. The range is $4(24) = 96$.\n\n**The Full Solution:**\nStep 1: Let $M$ be the greatest value and $m$ the least, so $M - m = 24$.\nStep 2: The new greatest and least values are $4M - 9$ and $4m - 9$, since multiplying by a positive number preserves order.\nStep 3: The new range is $(4M - 9) - (4m - 9) = 4(M - m) = 4(24) = 96$. Check: the $-9$ cancels, confirming that a shift leaves spread unchanged. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($15$): subtracts $9$ from the original range, applying the shift to the spread.\n* Choice B ($24$): assumes neither operation changes the range, which is true only for the shift.\n* Choice C ($87$): scales correctly to $96$ but then also subtracts $9$, applying the shift a second time to the spread.\n\n**Test Day Takeaway:** A shift added to every value leaves range and standard deviation alone; a multiplier scales them by its absolute value."
+}

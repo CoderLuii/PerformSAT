@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "For a chartered coach tour, the numbers of adult tickets $a$ and student tickets $s$ sold satisfy $18a + 12s = 540$. Every ordered pair $(a, s)$ that satisfies that equation also satisfies $ka + 8s = 360$, where $k$ is a constant. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$8$"
+  },
+  {
+   "id": "B",
+   "text": "$12$"
+  },
+  {
+   "id": "C",
+   "text": "$18$"
+  },
+  {
+   "id": "D",
+   "text": "$27$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "copies the student-ticket coefficient 8 into k, as if the two coefficients in an equation must match",
+  "C": "assumes the adult-ticket coefficient 18 survives the rescaling unchanged",
+  "D": "uses the reciprocal scale factor 3/2 instead of 2/3, giving 18(3/2) = 27"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** If every solution of the first equation solves the second, the two are the same equation rescaled. The student-ticket coefficient went from $12$ to $8$, a factor of $\\frac{2}{3}$, so $k = 18 \\cdot \\frac{2}{3} = 12$.\n\n**The Full Solution:**\nStep 1: Two linear equations in $a$ and $s$ share every solution only when one is a nonzero multiple of the other. Let that multiplier be $m$, so $18m = k$, $12m = 8$, and $540m = 360$.\nStep 2: Solve for $m$ two ways and confirm they agree: $12m = 8$ gives $m = \\frac{2}{3}$, and $540m = 360$ gives $m = \\frac{360}{540} = \\frac{2}{3}$ as well. The scaling is consistent, so such a $k$ exists.\nStep 3: Apply the multiplier to the first coefficient: $k = 18 \\cdot \\frac{2}{3} = 12$. Check a solution of the first equation, $(a, s) = (10, 30)$: $18(10) + 12(30) = 540$ $\\checkmark$, and $12(10) + 8(30) = 120 + 240 = 360$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): borrowing the $8$ from the student-ticket term. Then $8(10) + 8(30) = 320 \\ne 360$, so the pair $(10, 30)$ fails.\n* Choice C ($18$): leaving the adult coefficient alone while the rest of the equation shrinks. Then $18(10) + 8(30) = 420 \\ne 360$.\n* Choice D ($27$): scaling in the wrong direction with $\\frac{3}{2}$. The second equation is smaller than the first, so its coefficients must shrink, not grow.\n\n**Test Day Takeaway:** \"Every solution of one is a solution of the other\" means the equations are proportional. Find the multiplier from a term you can see, then confirm it on the constant before applying it to the unknown coefficient."
+}

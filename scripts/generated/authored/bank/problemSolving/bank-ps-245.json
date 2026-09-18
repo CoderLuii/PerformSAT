@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-245",
+  "question": "A fitness website displayed a banner inviting visitors to complete a survey about sleep. Of the $320$ visitors who clicked the banner and completed the survey, $65\\%$ reported sleeping fewer than $7$ hours per night. Which of the following is the strongest reason the $65\\%$ figure should not be generalized to all visitors to the website?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "Visitors chose whether to take the survey, so those who responded may not be representative of all visitors."
+    },
+    {
+      "id": "B",
+      "text": "A sample of $320$ visitors is too small to estimate a percentage for all visitors."
+    },
+    {
+      "id": "C",
+      "text": "The survey asked about sleep, which cannot be measured by asking people to report it."
+    },
+    {
+      "id": "D",
+      "text": "The banner appeared on a fitness website rather than on a medical website."
+    }
+  ],
+  "distractorNotes": {
+    "B": "blames sample size, which is adequate if the sample were random",
+    "C": "blames self-report measurement rather than the self-selected sample",
+    "D": "blames the site type; the question asks about generalizing to visitors of this site"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Scope of Inference**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Nobody selected these $320$ visitors at random; they selected themselves by clicking a banner. A self-selected sample can differ from the population, so the $65\\%$ describes the respondents, not all visitors.\n\n**The Full Solution:**\nStep 1: Identify how the sample was formed. Visitors saw a banner and decided on their own whether to participate.\nStep 2: Visitors who feel they sleep poorly may be more inclined to answer a sleep survey than visitors who sleep well. That would push the sample's percentage above the percentage for all visitors.\nStep 3: Because the sample was not selected at random from all visitors, the $65\\%$ cannot be generalized to all visitors. Check: the flaw lies in who chose to respond, which no larger number of volunteers would repair. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: $320$ is a reasonable sample size; a random sample of $320$ visitors would support an estimate for all visitors.\n* Choice C: self-reported sleep is imperfect, but the question is about generalizing to the population, which depends on how the sample was chosen.\n* Choice D: the population in question is visitors to this website, so the site's subject matter is not the issue.\n\n**Test Day Takeaway:** When participants volunteer, the sample may not represent the population; sample size cannot cure a self-selected sample."
+}

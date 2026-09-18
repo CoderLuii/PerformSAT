@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "In a tolerance study the constant $k$ ranges over the even positive integers, and the study keeps exactly those values of $k$ for which $3x^2+kx+12=0$ has no real solution. How many values does it keep?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$11$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "drops the leading coefficient and uses k^2 < 48 instead of k^2 < 144, leaving the even values 2, 4, 6",
+  "C": "includes k = 12, where the discriminant is 0 and there is one repeated real solution",
+  "D": "counts every positive integer from 1 to 11 and ignores the restriction to even values"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** No real solution means $k^2-4(3)(12)<0$, so $k^2<144$ and $0<k<12$; the even values in that range are $2,4,6,8,10$ — five of them.\n\n**The Full Solution:**\nStep 1: For $ax^2+bx+c=0$, the equation has no real solution exactly when the discriminant $b^2-4ac$ is negative. Here $a=3$, $b=k$, $c=12$, so the condition is $k^2-4(3)(12)<0$, that is $k^2<144$.\nStep 2: $k^2<144$ gives $-12<k<12$, and $k$ is positive, so $0<k<12$.\nStep 3: Now apply the second restriction: $k$ must be EVEN, so $k\\in\\{2,4,6,8,10\\}$, which is $5$ values. Check the endpoint: $k=10$ gives $100-144=-44<0$ (no real solution), while $k=12$ gives $144-144=0$, a repeated real solution, so $12$ is not kept ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): uses $k^2<4(12)=48$, dropping the leading coefficient $3$ out of $4ac$; that keeps only $2,4,6$.\n* Choice C ($6$): counts $k=12$ as well, but a zero discriminant gives one repeated REAL solution, so it does not qualify.\n* Choice D ($11$): counts every integer $1$ through $11$, ignoring the restriction that $k$ is even.\n\n**Test Day Takeaway:** Turn the wording into a discriminant inequality first ($<0$ none, $=0$ one, $>0$ two), solve for the bound, then filter by EVERY restriction the problem places on the constant — and test the endpoint before you count it."
+}

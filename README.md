@@ -1,4 +1,6 @@
-# PerformSAT - SAT Math Preparation Platform
+# SEVA (PerformSAT)
+
+[![CI](https://github.com/thehareshbhatia-tech/PerformSAT/actions/workflows/ci.yml/badge.svg)](https://github.com/thehareshbhatia-tech/PerformSAT/actions/workflows/ci.yml)
 
 A comprehensive SAT math preparation platform with video courses, progress tracking, and school-based administration.
 

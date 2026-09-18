@@ -1,0 +1,29 @@
+{
+  "id": 10,
+  "question": "A land-use model pairs the requirement $3x + 5y = 12$ with the requirement $9x + ky = 20$, where $x$ and $y$ are the changes, in hectares, in land zoned for housing and for retail and $k$ is a constant. No pair of values $(x, y)$ meets both requirements. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$15$"
+    },
+    {
+      "id": "D",
+      "text": "$45$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the multiplier 3 between the two equations rather than the coefficient it produces",
+    "B": "copies the first equation's y-coefficient without scaling it by 3",
+    "D": "scales the 5 by 9, the second equation's x-coefficient, instead of by the ratio 3"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The $x$-coefficients scale by $9 \\div 3 = 3$, so a no-solution system needs the $y$-coefficients to scale the same way: $k = 3 \\cdot 5 = 15$.\n\n**The Full Solution:**\nStep 1: Two linear equations have no common solution exactly when their left sides are proportional but their right sides are not — the graphs are parallel and distinct.\nStep 2: Compare the $x$-terms: $9x$ is $3$ times $3x$. For proportionality the $y$-terms must obey the same factor, so $ky = 3(5y)$ and $k = 15$.\nStep 3: Verify that the constants break the pattern: $3$ times $12$ is $36$, and the second equation's constant is $20$, not $36$. Check: with $k = 15$ the second equation is $9x + 15y = 20$; multiplying the first by $3$ gives $9x + 15y = 36$, and no pair $(x, y)$ can make the same expression equal both $20$ and $36$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reports the scale factor itself. The factor tells you what to multiply by; it is not the coefficient.\n* Choice B ($5$): copies the $y$-coefficient straight down. With $k = 5$ the equations are $3x + 5y = 12$ and $9x + 5y = 20$, which have different slopes and therefore exactly one solution.\n* Choice D ($45$): multiplies $5$ by $9$ instead of by $3$, using the second equation's coefficient rather than the ratio between the two equations.\n\n**Test Day Takeaway:** No solution means \"same left side, different right side.\" Find the factor from the $x$-terms, apply it to the $y$-terms, and confirm the constants do NOT follow it."
+}

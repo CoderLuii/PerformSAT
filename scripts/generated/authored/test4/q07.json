@@ -5,30 +5,30 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
+  "module": 1,
+  "passage": "The towering mounds built by some African termites were long described as chimneys: metabolic heat from the colony below was thought to drive a steady upward draft that vented stale air. Researchers who measured airflow inside occupied mounds have proposed a different picture, in which the mound works less like a chimney than like a lung. __When the researchers injected a tracer gas into nest chambers and followed its movement, they found air sloshing slowly back and forth through the mound's porous walls, driven by daily swings in outside temperature, rather than streaming steadily upward.__ On this account, the colony's air is exchanged by the rhythm of the surrounding day, not by the heat of the colony itself.",
   "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
   "choices": [
     {
       "id": "A",
-      "text": "It introduces the claim, developed throughout the rest of the passage, that the timing of volcanic eruptions can now be predicted to the exact day."
+      "text": "It describes the chimney model of mound ventilation that the rest of the passage goes on to defend against the objections of its critics."
     },
     {
       "id": "B",
-      "text": "It offers a specific case in which the general precursors described just before it guided a concrete decision that saved many lives."
+      "text": "It presents the measurements that support the revised account of the mound's function introduced in the sentence before it."
     },
     {
       "id": "C",
-      "text": "It concedes that the gas emissions and earthquake swarms described earlier are usually too unreliable for officials to act upon."
+      "text": "It concedes a weakness in the lung comparison that the passage's final sentence then attempts to repair."
     },
     {
       "id": "D",
-      "text": "It explains why residents near Mount Pinatubo were at first reluctant to leave the area despite the official evacuation order."
+      "text": "It explains how termites detect and repair breaches in the porous outer walls of their mounds."
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B. The passage describes general precursors to eruptions and then, in the underlined sentence, offers Mount Pinatubo as a case in which those precursors guided a decision that saved many lives. Choice A contradicts the passage, which says exact timing remains out of reach; choice C misreads a successful warning as an admission that the measurements are unreliable; and choice D invents a reluctance to evacuate that the text does not mention.",
-  "passage": "Predicting exactly when a volcano will erupt remains out of reach, but the days and weeks beforehand are rarely silent. As magma rises, it fractures rock and releases dissolved gases, producing swarms of small earthquakes and measurable changes in the gases venting at the surface. __At Mount Pinatubo in 1991, a sharp rise in sulfur dioxide emissions, together with shallow earthquake swarms, persuaded scientists to order evacuations days before the volcano's largest explosion.__ Tens of thousands of people left the area in time, and although the eruption was among the century's most violent, the death toll was far lower than the surrounding population would have suggested. Forecasters caution, however, that no two volcanoes behave alike, and that a precursor that proved decisive at one may be absent or misleading at another.",
+  "explanation": "**Choice B is correct.** The preceding sentence proposes the lung picture; the underlined sentence delivers the tracer-gas evidence — air sloshing back and forth, not streaming upward — that backs it.\n\n**The Full Solution:**\n- Sentence 2 introduces the revision: mound as lung, not chimney.\n- The underlined sentence reports the experiment behind it: tracer gas moving in slow oscillations driven by daily temperature swings.\n- The final sentence draws the conclusion the measurements license. The underline is the evidentiary middle step.\n\n**Why the other choices are wrong:**\n- A: The chimney model appears in the first sentence, and the passage undermines it rather than defending it.\n- C: The sentence strengthens the lung comparison; it concedes nothing.\n- D: Breach detection and repair are never mentioned; the porous walls figure only as the route the air takes.",
   "_meta": {
-    "anchor": "volcanology — eruption precursors and the 1991 Pinatubo evacuation (NEW)"
-  },
-  "module": 1
+    "anchor": "termite mound ventilation — lung model supported by tracer-gas measurements"
+  }
 }

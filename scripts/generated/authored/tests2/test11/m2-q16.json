@@ -1,0 +1,57 @@
+{
+ "id": 16,
+ "question": "The drawn line contains the two marked points. For exactly one constant $n$, no ordered pair $(x, y)$ satisfies both $y = (n^2 - 2n)x + 4n - 4$ and the equation of that line. What is the value of $n$?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 3,
+   "yIntercept": 8,
+   "xRange": [
+    -2,
+    6
+   ],
+   "yRange": [
+    0,
+    26
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 4,
+   "gridInterval": 2,
+   "showPoints": [
+    [
+     0,
+     8
+    ],
+    [
+     4,
+     20
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-8$"
+  },
+  {
+   "id": "B",
+   "text": "$-1$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$4$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the second line's y-intercept at n = -1, namely 4(-1) - 4 = -8, instead of n itself",
+  "C": "the other root of n^2 - 2n = 3, which also makes 4n - 4 equal 8, so the two equations describe the same line and share every point",
+  "D": "matches n^2 - 2n to the drawn line's y-intercept 8 instead of its slope 3, solving n^2 - 2n = 8 and taking the positive root"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: No-Solution Condition**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** The drawn line is $y = 3x + 8$. Equal slopes need $n^2 - 2n = 3$, so $n = 3$ or $n = -1$; $n = 3$ rebuilds the same line, so only $n = -1$ leaves no shared point.\n\n**The Full Solution:**\nStep 1: Read the drawn line from its two marked points, $(0, 8)$ and $(4, 20)$. Its slope is $\\frac{20 - 8}{4 - 0} = 3$ and its $y$-intercept is $8$, so the line is $y = 3x + 8$.\nStep 2: Two lines have no point in common exactly when their slopes are equal and their $y$-intercepts are not. Equal slopes require $n^2 - 2n = 3$, that is $n^2 - 2n - 3 = 0$, so $(n - 3)(n + 1) = 0$ and $n = 3$ or $n = -1$.\nStep 3: Test the intercepts of those two candidates. At $n = 3$ the constant is $4(3) - 4 = 8$, the drawn line's own intercept, so that equation *is* the drawn line and every point is shared. At $n = -1$ the constant is $4(-1) - 4 = -8$, and $3x + 8 = 3x - 8$ reduces to $8 = -8$, false for every $x$, so no ordered pair satisfies both. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-8$): $-8$ is the second line's $y$-intercept once $n = -1$ is found, not the constant the question asks for.\n* Choice C ($3$): this value does make the slopes match, but it also makes $4n - 4$ equal $8$. The two equations then describe one line, which shares every point — infinitely many solutions, not none.\n* Choice D ($4$): matching $n^2 - 2n$ to the intercept $8$ instead of the slope $3$ gives $n = 4$. That line, $y = 8x + 12$, crosses the drawn line at $x = -\\frac{4}{5}$.\n\n**Test Day Takeaway:** \"No solution\" is two conditions, not one: equal slopes **and** unequal intercepts. When the slope condition is quadratic in the parameter, both roots must be tested — the root that also matches the intercept produces the same line, whose system has infinitely many solutions."
+}

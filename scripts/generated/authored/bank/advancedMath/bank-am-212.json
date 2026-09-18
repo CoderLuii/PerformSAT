@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-212",
+  "question": "A lighting crew charges each production for load-in labor using the model $C(h)=45+38h$, which gives the cost, in dollars, of a call that lasts $h$ hours. What does the term $45$ represent?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The cost, in dollars, charged before any hours are billed."
+    },
+    {
+      "id": "B",
+      "text": "The cost, in dollars, of each hour of labor."
+    },
+    {
+      "id": "C",
+      "text": "The number of hours included at no charge."
+    },
+    {
+      "id": "D",
+      "text": "The cost, in dollars, of 38 hours of labor."
+    }
+  ],
+  "correctAnswer": "A",
+  "distractorNotes": {
+    "B": "reads the constant as the hourly rate; the hourly rate is 38",
+    "C": "reads a dollar amount as a number of hours",
+    "D": "pairs the constant with the coefficient instead of reading it at h = 0; a 38-hour call costs 45 + 1,444 = 1,489 dollars"
+  },
+  "explanation": "**SAT Pattern: Interpret Initial Value in Context**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** At $h=0$ the model gives $C(0)=45$, the charge before any hours are worked.\n\n**The Full Solution:**\nStep 1: Substituting $h=0$ removes the hourly term, leaving $C(0)=45$.\nStep 2: Zero hours means no labor has been billed, so 45 dollars is a fixed starting charge.\nStep 3: The term 45 is therefore the cost before any hours are billed. Check: $C(2)=45+76=121$, which is the fixed 45 plus two hours at 38 dollars ✓\n\n**Why the wrong answers are tempting:**\n* Choice B: names 45 as the hourly rate, but that role belongs to 38.\n* Choice C: converts dollars into hours.\n* Choice D: pairs the constant with the coefficient; a 38-hour call costs $45+38(38)=1{,}489$ dollars, not 45.\n\n**Test Day Takeaway:** The constant term is the output when the input is zero — say what zero input means in the situation."
+}

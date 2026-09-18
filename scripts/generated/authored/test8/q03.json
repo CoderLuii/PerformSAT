@@ -1,31 +1,31 @@
 {
-  "id": 803,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "module": 1,
-  "passage": "Glaciologists can measure how an ice sheet moves in two very different ways: by planting stakes in the surface and returning season after season to see how far they have shifted, and by training satellite radar on the same ground from orbit. Researchers increasingly argue that the field record and the satellite record are best treated as ____ measurements of a single flow rather than as competing ones, since each captures detail the other misses.",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "interchangeable"
-    },
-    {
-      "id": "B",
-      "text": "incompatible"
-    },
-    {
-      "id": "C",
-      "text": "provisional"
-    },
-    {
-      "id": "D",
-      "text": "complementary"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The sentence sets up two methods that each catch what the other cannot, joined against the idea that they compete, so the blank needs a word meaning that the two work together by supplying different parts of one picture. \"Complementary\" does that. \"Interchangeable\" would mean the two methods are equivalent and could simply replace each other, which contradicts the point that each captures detail the other misses; \"incompatible\" and \"provisional\" both run against the cooperative relationship the sentence builds."
+ "id": 803,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "module": 1,
+ "passage": "The flash lock — a single gate that loosed a rush of water to sweep boats over a shallow weir — is often described as a crude forerunner of the pound lock. Yet toll registers show flash locks operating beside pound locks on the same rivers for three centuries, evidence that millers and boatmen regarded the older device not as an obsolete relic but as a ____ solution wherever water was scarce and traffic light.",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "flawless"
+  },
+  {
+   "id": "B",
+   "text": "temporary"
+  },
+  {
+   "id": "C",
+   "text": "provisional"
+  },
+  {
+   "id": "D",
+   "text": "serviceable"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The sentence contrasts \"an obsolete relic\" with what the toll registers actually suggest, so the blank must credit the flash lock as a workable device — \"serviceable\" does precisely that.\n\n**The Full Solution:**\n- The passage sets up an expectation: the flash lock is \"often described as a crude forerunner\" of the pound lock.\n- The evidence cuts against that expectation — flash locks operated beside pound locks on the same rivers for three centuries.\n- The blank therefore needs a word affirming the older device's continued usefulness where water was scarce and traffic light: \"serviceable.\"\n\n**Why the other choices are wrong:**\n- A: \"Flawless\" overshoots — the passage rehabilitates the flash lock as workable, not perfect.\n- B: \"Temporary\" contradicts the three centuries of side-by-side use the registers document.\n- C: \"Baffling\" imports confusion the passage never expresses about how the device worked."
 }

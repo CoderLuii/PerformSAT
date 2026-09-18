@@ -1,0 +1,49 @@
+{
+ "id": "bank-alg-469",
+ "question": "A costume shop's fabric log fits one linear equation; three of its ordered pairs $(x, y)$ appear in the table. Which equation forms a system with infinitely many solutions when paired with that equation?",
+ "questionTable": {
+  "headers": [
+   "Bolts cut, $x$",
+   "Panels finished, $y$"
+  ],
+  "rows": [
+   [
+    "2",
+    "1"
+   ],
+   [
+    "5",
+    "7"
+   ],
+   [
+    "8",
+    "13"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3x - 6y = 9$"
+  },
+  {
+   "id": "B",
+   "text": "$6x - 3y = 3$"
+  },
+  {
+   "id": "C",
+   "text": "$6x - 3y = 9$"
+  },
+  {
+   "id": "D",
+   "text": "$6x + 3y = 9$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "puts the tripled coefficient on the wrong variable, giving slope 1/2 instead of 2",
+  "B": "matches the slope but not the constant, so the graphs are parallel and never meet",
+  "D": "flips the sign of the y-term, giving slope -2, so the graphs cross exactly once"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice C is correct.**\n\n**The Fast Way (~35s):** The table's rows rise $6$ for every $3$ across, so the equation is $2x - y = 3$; tripling every term gives $6x - 3y = 9$.\n\n**The Full Solution:**\nStep 1: Find the equation behind the table. From $(2, 1)$ to $(5, 7)$ the slope is $\\frac{7 - 1}{5 - 2} = 2$, and $y = 2x - 3$ also fits $(8, 13)$, so the equation is $2x - y = 3$.\nStep 2: Infinitely many solutions means the second equation must be a nonzero multiple of the first, with the SAME factor on every term including the constant.\nStep 3: Multiplying $2x - y = 3$ by $3$ gives $6x - 3y = 9$, which is choice C. Check with a table row: $(5, 7)$ gives $6(5) - 3(7) = 30 - 21 = 9$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3x - 6y = 9$): puts the tripled coefficient on the wrong variable, producing slope $\\frac{1}{2}$ instead of $2$, so the lines cross once.\n* Choice B ($6x - 3y = 3$): scales the left side by $3$ but leaves the constant at $3$, so the line is parallel to and distinct from the table's line and the system has no solution.\n* Choice D ($6x + 3y = 9$): flips the sign of the $y$-term, producing slope $-2$, so the lines cross exactly once.\n\n**Test Day Takeaway:** Turn the table into a single standard-form equation first; the equivalent partner multiplies every term, constant included, by one factor."
+}

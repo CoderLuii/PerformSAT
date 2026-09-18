@@ -1,0 +1,51 @@
+{
+  "id": "bank-am-395",
+  "question": "In the $xy$-plane, the graph of the quadratic function $g$ is shown, with its vertex marked. What is the maximum value of $g(x)$?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": 4,
+        "k": 7
+      },
+      "a": -1,
+      "xRange": [
+        -4,
+        10
+      ],
+      "yRange": [
+        -10,
+        10
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showVertex": true
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-1$"
+    },
+    {
+      "id": "B",
+      "text": "$4$"
+    },
+    {
+      "id": "C",
+      "text": "$7$"
+    },
+    {
+      "id": "D",
+      "text": "$11$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the leading coefficient",
+    "B": "reports the $x$-coordinate of the vertex",
+    "D": "adds the two vertex coordinates"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** The parabola opens downward, so its highest point is the vertex $(4, 7)$; the maximum value is $7$.\n\n**The Full Solution:**\nStep 1: The graph opens downward, so $g$ has a maximum and it occurs at the vertex.\nStep 2: The marked vertex is at $(4, 7)$.\nStep 3: The MAXIMUM VALUE is the output there, the $y$-coordinate $7$; the $x$-coordinate $4$ tells you only where the maximum happens. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-1$): reports the leading coefficient of the curve rather than a function value.\n* Choice B ($4$): reports where the maximum occurs instead of the maximum value itself.\n* Choice D ($11$): adds the two vertex coordinates, $4 + 7$.\n\n**Test Day Takeaway:** \"Maximum value\" always means the $y$-coordinate of the vertex; \"at what value of $x$\" asks for the other coordinate."
+}

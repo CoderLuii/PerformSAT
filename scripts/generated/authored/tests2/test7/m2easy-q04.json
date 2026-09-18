@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "question": "A library district's e-book loans increased by $20\\%$ from last year to this year, and this year the district recorded a total of $46{,}800$ loans. How many e-book loans did the district record last year?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$37{,}440$"
+    },
+    {
+      "id": "B",
+      "text": "$39{,}000$"
+    },
+    {
+      "id": "C",
+      "text": "$56{,}160$"
+    },
+    {
+      "id": "D",
+      "text": "$58{,}500$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes 20% off this year's 46,800 instead of reversing a 20% increase: 46,800(0.8) = 37,440",
+    "C": "applies the 20% increase a second time to this year's figure: 46,800(1.2) = 56,160",
+    "D": "divides by 0.8 instead of 1.2, reversing a 20% decrease rather than a 20% increase"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** This year is $1.2$ times last year, so last year $=46{,}800\\div1.2=39{,}000$.\n\n**The Full Solution:**\nStep 1: Let $L$ be last year's number of loans. A $20\\%$ increase multiplies $L$ by $1+0.20=1.20$, so $1.20L=46{,}800$.\nStep 2: Divide both sides by $1.20$: $L=\\dfrac{46{,}800}{1.20}=39{,}000$.\nStep 3: Check by going forward: $20\\%$ of $39{,}000$ is $7{,}800$, and $39{,}000+7{,}800=46{,}800$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($37{,}440$): subtracts $20\\%$ of this year's total instead of undoing the increase: $46{,}800(0.80)=37{,}440$. The percent was taken of the wrong base.\n* Choice C ($56{,}160$): increases this year's total by another $20\\%$: $46{,}800(1.20)=56{,}160$, running the change forward rather than backward.\n* Choice D ($58{,}500$): divides by $0.80$ instead of $1.20$, which would undo a $20\\%$ decrease.\n\n**Test Day Takeaway:** To undo a percent change, divide by the multiplier that caused it — $1.20$ for a $20\\%$ increase — never multiply by the same percent again."
+}

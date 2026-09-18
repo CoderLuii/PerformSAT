@@ -1,0 +1,29 @@
+{
+ "question": "A greenhouse's heat-loss model contains the product $x^{5} \\cdot x^{-2}$, where the pane thickness $x$ is measured in millimeters and is positive. Which expression is equivalent to that product?",
+ "hint": "Multiplying powers of one base keeps that base.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x^{-10}$"
+  },
+  {
+   "id": "B",
+   "text": "$x^{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$x^{7}$"
+  },
+  {
+   "id": "D",
+   "text": "$x^{10}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "multiplies the exponents and keeps the negative sign",
+  "C": "subtracts the exponents, 5 - (-2), instead of adding them",
+  "D": "multiplies the exponents and drops the negative sign"
+ },
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~10s):** Add the exponents: $5 + (-2) = 3$, so the product is $x^3$.\n\n**The Full Solution:**\nStep 1: Multiplying powers of the same base adds the exponents.\nStep 2: Add: $5 + (-2) = 3$.\nStep 3: The product is $x^3$. Check at $x = 2$: $32 \\cdot \\dfrac14 = 8 = 2^3$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($x^{-10}$): multiplies the exponents, which is the rule for a power of a power.\n* Choice C ($x^{7}$): subtracts the exponents, the rule for division rather than multiplication.\n* Choice D ($x^{10}$): multiplies the exponents and also loses the negative sign.\n\n**Test Day Takeaway:** Multiply powers, add exponents — a negative exponent just makes that sum smaller."
+}

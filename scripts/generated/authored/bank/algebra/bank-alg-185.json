@@ -1,0 +1,29 @@
+{
+ "id": "bank-alg-185",
+ "question": "A hostel charges the same amount for each of the $n$ nights of a stay, and the equation $47n = 611$ gives the total charge in dollars. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$13$"
+  },
+  {
+   "id": "B",
+   "text": "$47$"
+  },
+  {
+   "id": "C",
+   "text": "$564$"
+  },
+  {
+   "id": "D",
+   "text": "$658$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "reports the nightly rate that was already given",
+  "C": "subtracts 47 from 611 instead of dividing",
+  "D": "adds 47 to 611 instead of dividing"
+ },
+ "explanation": "**SAT Pattern: One-Step Linear Equation**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** Divide both sides by $47$: $n = \\frac{611}{47} = 13$.\n\n**The Full Solution:**\n\nStep 1: The equation is $47n = 611$, so $n$ is multiplied by $47$.\n\nStep 2: Undo the multiplication by dividing both sides by $47$: $n = \\frac{611}{47}$.\n\nStep 3: $\\frac{611}{47} = 13$. Check: $47(13) = 611$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($47$): reports the nightly rate, which the equation already supplies.\n* Choice C ($564$): computes $611 - 47$, subtracting where the equation calls for division.\n* Choice D ($658$): computes $611 + 47$, adding where the equation calls for division.\n\n**Test Day Takeaway:** Undo the operation attached to the variable: a coefficient calls for division, never for addition or subtraction."
+}

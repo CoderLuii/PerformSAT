@@ -1,0 +1,56 @@
+{
+ "question": "The table gives four values of the linear function $f$, where $f(x)$ is the estimated number of algal cells, in thousands per liter, $x$ days after a bloom begins. For what value of $x$ is $f(x) = 77$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$11$"
+  },
+  {
+   "id": "B",
+   "text": "$14$"
+  },
+  {
+   "id": "C",
+   "text": "$17$"
+  },
+  {
+   "id": "D",
+   "text": "$19.25$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "reports the largest input shown in the table",
+  "B": "adds one more row of $3$ past $x = 11$, where $f(14) = 65$ rather than $77$",
+  "D": "solves $4x = 77$, ignoring the constant $9$"
+ },
+ "explanation": "**SAT Pattern: Solve for Input from Output**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The table climbs $12$ for every $3$ in $x$, so $f(x) = 4x + 9$; setting $4x + 9 = 77$ gives $x = 17$.\n\n**The Full Solution:**\n\nStep 1: Two rows give the rate: $\\frac{29 - 17}{5 - 2} = \\frac{12}{3} = 4$ thousand cells per liter per day.\n\nStep 2: Back out the constant from $(2, 17)$: $17 = 4(2) + b$, so $b = 9$ and $f(x) = 4x + 9$.\n\nStep 3: Solve $4x + 9 = 77$: $4x = 68$, so $x = 17$. Check: $f(11) = 4(11) + 9 = 53$, matching the last row.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($11$): reports the last input in the table instead of extending the pattern.\n\n* Choice B ($14$): adds one more row, but $f(14) = 65$, still short of $77$.\n\n* Choice D ($19.25$): solves $4x = 77$, dropping the constant $9$.\n\n**Test Day Takeaway:** Build the linear rule from the table before extending it; stepping row by row is slower and stops at the wrong place.",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "x (days after bloom begins)",
+    "f(x) (thousands of cells per liter)"
+   ],
+   "rows": [
+    [
+     "2",
+     "17"
+    ],
+    [
+     "5",
+     "29"
+    ],
+    [
+     "8",
+     "41"
+    ],
+    [
+     "11",
+     "53"
+    ]
+   ]
+  }
+ },
+ "id": "bank-alg-324"
+}

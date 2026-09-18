@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-248",
+  "question": "The graph of $y = f(x)$ in the $xy$-plane has exactly one $x$-intercept, at $x = 4$. The function $g$ is defined by $g(x) = f(x + 7)$. At what value of $x$ does the graph of $y = g(x)$ have its $x$-intercept?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-7$"
+    },
+    {
+      "id": "B",
+      "text": "$-3$"
+    },
+    {
+      "id": "C",
+      "text": "$4$"
+    },
+    {
+      "id": "D",
+      "text": "$11$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "sets the inside expression equal to $0$, solving $x + 7 = 0$",
+    "C": "copies the intercept of $f$, assuming a horizontal shift leaves it in place",
+    "D": "computes $4 + 7$, shifting right by following the plus sign"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Horizontal Shift**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** $g(x) = 0$ when the number handed to $f$ is $4$, so $x + 7 = 4$ and $x = -3$.\n\n**The Full Solution:**\nStep 1: An $x$-intercept of $y = g(x)$ is a value of $x$ with $g(x) = 0$, and $g(x) = f(x + 7)$, so the condition is $f(x + 7) = 0$.\nStep 2: The only input that makes $f$ equal $0$ is $4$, so $x + 7 = 4$, giving $x = -3$.\nStep 3: The graph of $y = g(x)$ has its only $x$-intercept at $x = -3$. Check: $g(-3) = f(-3 + 7) = f(4) = 0$, and the intercept sits $7$ units left of $f$'s, which is what a $+7$ inside the function does. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-7$): this solves $x + 7 = 0$; the inside expression must equal $4$, the input where $f$ is zero, not $0$ itself.\n* Choice C ($4$): this copies $f$'s intercept unchanged, but a constant inside the function moves every input, intercepts included.\n* Choice D ($11$): this computes $4 + 7 = 11$, following the plus sign; a $+7$ inside the parentheses moves the graph LEFT.\n\n**Test Day Takeaway:** Zeros are inputs. Set the inside expression equal to the old zero and solve — that one equation fixes both the direction and the size of the shift."
+}

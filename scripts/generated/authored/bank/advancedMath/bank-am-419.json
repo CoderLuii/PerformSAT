@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-419",
+  "question": "When a video was first posted, it had $125$ saves. An exponential model estimates that at the end of each hour after it was posted, the number of saves was $120\\%$ more than the number at the end of the previous hour. Which equation gives the estimated number of saves, $S$, $h$ hours after the video was posted?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$S = 125(0.2)^h$"
+    },
+    {
+      "id": "B",
+      "text": "$S = 125(1.2)^h$"
+    },
+    {
+      "id": "C",
+      "text": "$S = 125(2.2)^h$"
+    },
+    {
+      "id": "D",
+      "text": "$S = 125 + 150h$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses only the decimal part of the percent",
+    "B": "reads \"120% more\" as a factor of 1.2",
+    "D": "adds the first hour's increase forever"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Build Exponential Growth — \"$p\\%$ More\" Trap**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** \"$120\\%$ more\" makes each hour $220\\%$ of the hour before, a factor of $2.2$, so $S = 125(2.2)^h$.\n\n**The Full Solution:**\nStep 1: The starting count is $125$ at $h = 0$, so the model has the form $S = 125(b)^h$.\nStep 2: Being $120\\%$ MORE than the previous hour means the new count is $100\\% + 120\\% = 220\\%$ of the old one, so $b = 2.2$.\nStep 3: $S = 125(2.2)^h$. Check: after one hour, $125(2.2) = 275$, and $275 - 125 = 150$, which is $120\\%$ of $125$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: uses $0.2$, the decimal left after discarding the $100\\%$, which would shrink the count each hour.\n* Choice B: reads \"$120\\%$ more\" as a factor of $1.2$; that factor describes a $20\\%$ increase, not a $120\\%$ one.\n* Choice D: adds the first hour's increase of $150$ every hour, which is linear rather than exponential.\n\n**Test Day Takeaway:** \"$p\\%$ MORE than\" always gives the factor $1 + \\dfrac{p}{100}$ — when $p$ exceeds $100$, that factor is greater than $2$."
+}

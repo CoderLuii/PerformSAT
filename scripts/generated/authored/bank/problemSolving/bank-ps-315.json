@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-315",
+  "question": "In section 1 of a course, all $24$ exam scores are between $79$ and $83$. In section 2 of the same course, all $24$ exam scores are between $46$ and $97$. Which statement about the standard deviations of the two sets of scores is best supported?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "The standard deviation of the section 1 scores is greater than the standard deviation of the section 2 scores."
+    },
+    {
+      "id": "B",
+      "text": "The standard deviation of the section 2 scores is greater than the standard deviation of the section 1 scores."
+    },
+    {
+      "id": "C",
+      "text": "The two standard deviations are equal because each section has $24$ scores."
+    },
+    {
+      "id": "D",
+      "text": "The standard deviation of the section 1 scores is greater because its scores are larger numbers."
+    }
+  ],
+  "distractorNotes": {
+    "A": "reverses the comparison; section 1's scores are clustered within a $4$-point band, which is the smaller spread.",
+    "C": "treats sample size as a measure of spread, but standard deviation depends on how far values sit from the mean.",
+    "D": "confuses center with spread; larger typical values do not make a data set more spread out."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Standard Deviation Comparison**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** Section 1's scores all lie within a $4$-point band; section 2's stretch across $51$ points. The wider spread has the larger standard deviation.\n\n**The Full Solution:**\nStep 1: Standard deviation measures typical distance from the mean, so a data set confined to a narrow interval has a small standard deviation.\nStep 2: Section 1 has range at most $83 - 79 = 4$, so no score sits more than $4$ points from any other.\nStep 3: Section 2 has range up to $97 - 46 = 51$, forcing much larger distances from its mean, so its standard deviation is greater. Check: even the most spread-out set inside a $4$-point band cannot have a standard deviation larger than one containing scores $51$ points apart. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: reverses the comparison; section 1's scores are clustered within a $4$-point band, which is the smaller spread.\n* Choice C: treats sample size as a measure of spread, but standard deviation depends on how far values sit from the mean.\n* Choice D: confuses center with spread; larger typical values do not make a data set more spread out.\n\n**Test Day Takeaway:** Standard deviation answers \"how far from the center,\" not \"how many\" or \"how large.\" A tight interval always beats a wide one."
+}

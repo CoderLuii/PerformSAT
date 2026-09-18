@@ -1,0 +1,57 @@
+{
+  "id": 3,
+  "question": "A random sample of $800$ residents of a town were asked which of three transit options they prefer. The table gives the number of sampled residents who chose each option. Based on this sample, which of the following is the best estimate of the number of the town’s $26{,}000$ residents who prefer option B?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Transit option",
+        "Number of sampled residents"
+      ],
+      "rows": [
+        [
+          "A",
+          "296"
+        ],
+        [
+          "B",
+          "344"
+        ],
+        [
+          "C",
+          "160"
+        ],
+        [
+          "Total",
+          "800"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$344$"
+    },
+    {
+      "id": "B",
+      "text": "$9{,}620$"
+    },
+    {
+      "id": "C",
+      "text": "$11{,}180$"
+    },
+    {
+      "id": "D",
+      "text": "$14{,}820$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the number of sampled residents choosing option B rather than the estimate for the town.",
+    "B": "applies option A’s sample proportion, $\\frac{296}{800}$, to the town.",
+    "D": "estimates the residents who did not choose option B, $\\frac{456}{800}(26{,}000)$."
+  },
+  "correctAnswer": "C",
+  "hint": "Convert the sample count to a proportion before applying it to the whole town.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~35s):** The sample proportion choosing option B is $\\frac{344}{800} = 0.43$, and $0.43(26{,}000) = 11{,}180$.\n\n**The Full Solution:**\nStep 1: Of the $800$ residents sampled, $344$ chose option B, so the sample proportion is $\\frac{344}{800} = 0.43$.\nStep 2: A random sample is used to estimate the same proportion in the whole population.\nStep 3: Apply the proportion to the town: $0.43(26{,}000) = 11{,}180$ residents. Check: $296 + 344 + 160 = 800$, so the three options account for the entire sample. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($344$): reports the number of sampled residents choosing option B rather than the estimate for the town.\n* Choice B ($9{,}620$): applies option A’s sample proportion, $\\frac{296}{800}$, to the town.\n* Choice D ($14{,}820$): estimates the residents who did not choose option B, $\\frac{456}{800}(26{,}000)$.\n\n**Test Day Takeaway:** To scale a sample result to a population, turn the count into a proportion first, then multiply by the population size."
+}

@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-010",
+ "question": "The two times at which a squall's modeled crosswind returns to zero are the solutions of $x^2 + 3x - 40 = 0$, where $x$ is the number of hours after the forecast was issued. What is the positive solution?",
+ "correctAnswer": "5",
+ "explanation": "**SAT Pattern: Factor and Solve (Fill-in)**\n\n**The correct answer is $5$.**\n\n**The Fast Way (~15s):** $x^2 + 3x - 40 = (x + 8)(x - 5)$, whose zeros are $-8$ and $5$; the positive one is $5$.\n\n**The Full Solution:**\nStep 1: Look for two numbers whose product is $-40$ and whose sum is $3$: those are $8$ and $-5$.\nStep 2: The equation therefore factors as $(x + 8)(x - 5) = 0$.\nStep 3: The zero-product property gives $x = -8$ or $x = 5$, and only $5$ is positive. Check: $5^2 + 3(5) - 40 = 25 + 15 - 40 = 0$ ✓\n\n**Common Mistakes:**\n* $8$ — reading the $8$ straight out of the factor $x + 8$ instead of solving $x + 8 = 0$.\n* $40$ — quoting the constant term, which is the product of the solutions, not a solution.\n\n**Test Day Takeaway:** The number inside a factor is the OPPOSITE of the solution it produces — set each factor to zero before reading anything off."
+}

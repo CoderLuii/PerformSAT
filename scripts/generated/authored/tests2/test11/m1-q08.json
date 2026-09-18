@@ -1,0 +1,29 @@
+{
+ "id": 8,
+ "question": "A parabolic arch rises to a height of $-0.02x^2 + 1.2x$ meters at a horizontal distance of $x$ meters from one base. What is the least integer number of meters that is greater than every height on the arch?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18$"
+  },
+  {
+   "id": "B",
+   "text": "$19$"
+  },
+  {
+   "id": "C",
+   "text": "$30$"
+  },
+  {
+   "id": "D",
+   "text": "$60$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "gives the greatest height the arch actually reaches, which is not greater than every height",
+  "C": "reports the horizontal distance at which the arch peaks instead of a height",
+  "D": "reports the distance between the two bases of the arch instead of a height"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Discriminant with Integer Bound**\n\n**Choice B is correct.**\n\n**The Fast Way (~35s):** A height $h$ occurs on the arch only if $-0.02x^2 + 1.2x = h$ has a real solution, which requires $1.44 - 0.08h \\ge 0$, or $h \\le 18$. The least integer above every reachable height is $19$.\n\n**The Full Solution:**\nStep 1: Set the height expression equal to $h$: $-0.02x^2 + 1.2x = h$, which rearranges to $0.02x^2 - 1.2x + h = 0$.\nStep 2: This quadratic has a real solution $x$ exactly when its discriminant is not negative: $(-1.2)^2 - 4(0.02)(h) = 1.44 - 0.08h \\ge 0$, so $h \\le 18$. Heights above $18$ meters never occur on the arch.\nStep 3: Every height on the arch is at most $18$, so the least integer greater than all of them is $19$. Check: at $h = 18$ the discriminant is $0$ and $x = 30$ is a real solution, so $18$ is attained and is not greater than every height, while $h = 19$ gives a discriminant of $-0.08$ and no real $x$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($18$): this is the maximum height itself, reached at $x = 30$ meters. The question asks for an integer strictly greater than every height, and $18$ is not greater than $18$.\n* Choice C ($30$): this is the horizontal distance from the base at which the peak occurs, not a height.\n* Choice D ($60$): the arch meets the ground at $x = 0$ and $x = 60$, so this is the span between the bases, again not a height.\n\n**Test Day Takeaway:** When a question asks which output values are impossible, set the expression equal to the output and let the discriminant decide when a real input exists."
+}

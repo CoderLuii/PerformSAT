@@ -1,0 +1,30 @@
+{
+ "id": 13,
+ "question": "On a wiring diagram drawn on a coordinate grid, one conduit runs along the line through $(-4, 1)$ and $(8, 10)$, and a second conduit meets it at a right angle while running through $(3, -2)$. Which of the following equations describes the second conduit?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$y = \\frac{4}{3}x - 6$"
+  },
+  {
+   "id": "B",
+   "text": "$y = \\frac{3}{4}x - \\frac{17}{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$y = -\\frac{3}{4}x + \\frac{1}{4}$"
+  },
+  {
+   "id": "D",
+   "text": "$y = -\\frac{4}{3}x + 2$"
+  }
+ ],
+ "correctAnswer": "D",
+ "choiceOrderNote": "Choices are line equations rather than single numeric values; they are listed in increasing order of y-intercept.",
+ "distractorNotes": {
+  "A": "takes the reciprocal of the slope 3/4 without changing its sign, using 4/3",
+  "B": "keeps the slope 3/4 of the first conduit, producing a parallel line rather than a perpendicular one",
+  "C": "changes the sign of the slope without taking the reciprocal, using -3/4"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Line Through Point**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** The first conduit has slope $\\frac{10 - 1}{8 - (-4)} = \\frac{3}{4}$, so the second has slope $-\\frac{4}{3}$; through $(3, -2)$ that gives $y = -\\frac{4}{3}x + 2$.\n\n**The Full Solution:**\nStep 1: Find the slope of the first conduit from its two points: $\\frac{10 - 1}{8 - (-4)} = \\frac{9}{12} = \\frac{3}{4}$.\nStep 2: Meeting at a right angle means the slopes are negative reciprocals, so the second conduit has slope $-\\frac{4}{3}$.\nStep 3: Substitute the point $(3, -2)$ into $y = -\\frac{4}{3}x + b$: $-2 = -4 + b$, so $b = 2$ and the equation is $y = -\\frac{4}{3}x + 2$. Check: $\\frac{3}{4} \\cdot \\left(-\\frac{4}{3}\\right) = -1$, the test for perpendicular lines ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = \\frac{4}{3}x - 6$): flips the fraction but keeps it positive. The product of the slopes is then $1$, not $-1$.\n* Choice B ($y = \\frac{3}{4}x - \\frac{17}{4}$): reuses the slope of the first conduit, which produces a parallel line through $(3, -2)$ instead of a perpendicular one.\n* Choice C ($y = -\\frac{3}{4}x + \\frac{1}{4}$): changes only the sign and skips the reciprocal, so the product of the slopes is $-\\frac{9}{16}$.\n\n**Test Day Takeaway:** Perpendicular means flip the fraction and change the sign; multiply the two slopes as a check, since only a product of exactly $-1$ confirms a right angle."
+}

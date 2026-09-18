@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-086",
+ "question": "Let $a$ be the constant for which the spore-count relation $\\sqrt{x^{a}} \\cdot x^{3} = x^{10}$ holds at every positive humidity ratio $x$ recorded in a bracket-fungus study. What is the value of $a$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3.5$"
+  },
+  {
+   "id": "B",
+   "text": "$14$"
+  },
+  {
+   "id": "C",
+   "text": "$20$"
+  },
+  {
+   "id": "D",
+   "text": "$26$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reads the radical as a square, solving $2a + 3 = 10$",
+  "C": "ignores the factor $x^{3}$, solving $\\frac{a}{2} = 10$",
+  "D": "adds $3$ to $10$ instead of subtracting, solving $\\frac{a}{2} = 13$"
+ },
+ "explanation": "**SAT Pattern: Exponent Rules with Radicals**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The left side is $x^{a/2 + 3}$, so $\\frac{a}{2} + 3 = 10$, giving $\\frac{a}{2} = 7$ and $a = 14$.\n\n**The Full Solution:**\nStep 1: Write the radical as a power: $\\sqrt{x^{a}} = x^{a/2}$.\nStep 2: Multiplying by $x^{3}$ adds exponents, so the left side is $x^{a/2 + 3}$; equal bases force $\\frac{a}{2} + 3 = 10$.\nStep 3: Subtracting $3$ gives $\\frac{a}{2} = 7$, so $a = 14$. Check: $\\sqrt{x^{14}} \\cdot x^{3} = x^{7} \\cdot x^{3} = x^{10}$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($3.5$): squares instead of halving, turning the left exponent into $2a + 3$.\n* Choice C ($20$): drops the $x^{3}$ factor, so the equation becomes $\\frac{a}{2} = 10$.\n* Choice D ($26$): moves the $3$ to the wrong side, giving $\\frac{a}{2} = 13$.\n\n**Test Day Takeaway:** Convert every radical to a fractional exponent first; then the whole problem is one linear equation in the unknown exponent."
+}

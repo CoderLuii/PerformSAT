@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "standard-english-conventions",
   "skill": "boundaries",
-  "passage": "Open-records laws give the public a broad right to inspect the documents that government agencies produce in the course of their work ______ they almost always exempt certain categories, such as personnel files and the records of active investigations, from any requirement to disclose them to a requester.",
+  "passage": "In Norway and Sweden, a customary right of access lets anyone walk, ski, or camp on open land regardless of who owns ______ the right carries obligations in return, requiring visitors to keep clear of houses, to leave crops and plantings untouched, and to move on after a night or two in any one spot.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": ", however,"
+      "text": "it, however,"
     },
     {
       "id": "B",
-      "text": "; however,"
+      "text": "it; however,"
     },
     {
       "id": "C",
-      "text": ", however;"
+      "text": "it, however;"
     },
     {
       "id": "D",
-      "text": "however,"
+      "text": "it however,"
     }
   ],
   "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"; however,\". Two independent clauses meet at the blank: \"Open-records laws give the public a broad right to inspect the documents that government agencies produce\" and \"they almost always exempt certain categories . . . from any requirement to disclose them.\" When a conjunctive adverb like \"however\" joins two independent clauses, a semicolon precedes it and a comma follows it. Choice A uses only commas, producing a comma splice. Choice C puts the semicolon after \"however,\" misplacing the boundary, and choice D, a comma plus \"however,\" again leaves two independent clauses joined by only a comma."
+  "explanation": "**Choice B is correct.** Two independent clauses meet here, joined by the conjunctive adverb \"however\" — and that construction takes a semicolon before \"however\" and a comma after it.\n\n**The Full Solution:**\n- Clause one: \"...a customary right of access lets anyone walk, ski, or camp on open land regardless of who owns it.\" Complete.\n- Clause two: \"the right carries obligations in return...\" Also complete.\n- \"However\" is an adverb, not a conjunction, so it cannot join clauses with commas alone; the boundary needs the semicolon, and \"however\" keeps its trailing comma.\n\n**Why the other choices are wrong:**\n- A: Commas on both sides of \"however\" leave the two independent clauses spliced together.\n- C: It puts the strong mark on the wrong side — the clause boundary falls before \"however,\" not after it.\n- D: With no punctuation before \"however,\" the clauses fuse outright."
 }

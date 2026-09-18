@@ -1,31 +1,31 @@
 {
-  "id": 1206,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "module": 1,
-  "passage": "When conservators began cleaning the frescoes of the Sistine Chapel ceiling in the 1980s, they confronted a basic question about what they were removing. Centuries of candle smoke, varnish, and earlier restorers' glue had darkened the surface, and the cleaning revealed colors far brighter than the muted tones long associated with Michelangelo's work. Some critics argued that the restorers were stripping away a deliberate final layer the artist had applied to soften his palette, so that the vivid surface left behind misrepresented his intentions. The conservation team responded that chemical analysis of the removed material matched glue and soot, not pigment, and that the bright colors were continuous with passages the artist had never coated. The episode is now cited less as a verdict on one ceiling than as an example of how a technical cleaning can force a reconsideration of what a familiar work was assumed to look like.",
-  "question": "Which choice best describes the overall structure of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "It defends one cleaning method against its critics, then concludes that the original appearance of the ceiling can never now be recovered with any certainty."
-    },
-    {
-      "id": "B",
-      "text": "It traces the long history of physical damage to a famous artwork, then ranks the various causes of that damage in order of their severity."
-    },
-    {
-      "id": "C",
-      "text": "It describes a problem raised by a cleaning project, presents the competing interpretations it provoked, and then frames the episode as a broader lesson."
-    },
-    {
-      "id": "D",
-      "text": "It introduces a disagreement between an artist and the restorers who cleaned his work, then explains in detail how that disagreement was finally resolved in the artist's favor."
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The text first lays out the problem the cleaning posed (what was being removed), then gives the two readings—critics' worry that an intended layer was being lost versus the team's chemical findings—and closes by treating the whole affair as a general lesson about reexamining familiar works. A is too narrow and gets the ending wrong: the passage does not claim the original look is unrecoverable. B invents a ranking of causes that never appears. D misstates the parties (the dispute is among modern critics and restorers, not the long-dead artist) and wrongly says it ends in the artist's favor."
+ "id": 1206,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "module": 1,
+ "passage": "Many maps printed in Europe in the sixteenth and seventeenth centuries survive in both plain and hand-colored copies, and the colored ones raise a question catalogers cannot avoid: when was the color applied? Some scholars treat the coloring on such a map as original, pointing to publishers' workshops that employed professional colorists and advertised colored copies at higher prices. Others caution that color was added to many plain copies in the nineteenth century, when dealers found that tinted maps sold better, so a map's color may be centuries younger than its paper. The disagreement has proved productive: it has pushed catalogers to describe a map's printing and its coloring as separate events, each needing its own evidence and its own date.",
+ "question": "Which choice best describes the overall structure of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "It defends the practice of coloring printed maps against modern critics, then concludes that the origin of any particular map's color can now be established with confidence."
+  },
+  {
+   "id": "B",
+   "text": "It traces the training that professional map colorists received in publishers' workshops, then ranks the pigments they used according to how well each has survived."
+  },
+  {
+   "id": "C",
+   "text": "It poses a question raised by a class of surviving objects, presents two competing answers, and then describes a productive effect the disagreement has had on cataloging."
+  },
+  {
+   "id": "D",
+   "text": "It describes a dispute between two collectors over the age of a single celebrated map, then explains in detail how scientific analysis of the paper and pigments finally resolved that dispute."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The passage opens with the catalogers' question (when was the color applied?), lays out the two scholarly answers (original workshop coloring versus nineteenth-century additions), and closes with what the disagreement accomplished — printing and coloring are now dated separately.\n\n**The Full Solution:**\n- First move: a question raised by a whole class of objects — colored copies of early printed maps.\n- Second move: two competing answers, each with its evidence — publishers' colorists and price lists on one side, dealers' later tinting on the other.\n- Third move: the payoff — the dispute \"has proved productive,\" pushing catalogers to treat printing and coloring as separate events with separate dates. That question-answers-effect sequence is exactly choice C.\n\n**Why the other choices are wrong:**\n- A: The passage takes no side and never claims a color's origin can now be established with confidence — it says each case needs its own evidence.\n- B: It invents a ranking of pigments by survival that appears nowhere in the text.\n- D: The disagreement is between groups of scholars over a whole category of maps, not two collectors over one map, and nothing in the passage says the dispute was resolved."
 }

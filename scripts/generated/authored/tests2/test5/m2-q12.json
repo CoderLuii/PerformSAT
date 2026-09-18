@@ -1,0 +1,29 @@
+{
+ "id": 12,
+ "question": "A record label's catalog held $n$ titles at the start of $2023$. The catalog grew by $35\\%$ during $2023$ and then shrank by $12\\%$ during $2024$, ending with $2{,}376$ titles. Which expression gives $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\dfrac{2{,}376}{(1.35)(1.12)}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\dfrac{2{,}376}{1.23}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\dfrac{2{,}376}{(1.35)(0.88)}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\dfrac{2{,}376}{(0.65)(1.12)}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "treats the 12 percent decrease as a 12 percent increase, using 1.12 in place of 0.88",
+  "B": "adds the two percent changes as 35 - 12 = 23 percent instead of compounding the two factors",
+  "D": "swaps which year grew and which shrank, using 1 - 0.35 = 0.65 and 1 + 0.12 = 1.12"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Reverse-Percent Multi-Step**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Forward, $n(1.35)(0.88)=2{,}376$. Running that backward means dividing, so $n=\\dfrac{2{,}376}{(1.35)(0.88)}$.\n\n**The Full Solution:**\nStep 1: Turn each percent change into a multiplier. A $35\\%$ increase multiplies by $1+0.35=1.35$; a $12\\%$ decrease multiplies by $1-0.12=0.88$.\nStep 2: Apply them in order to the starting count. After $2023$ the catalog holds $1.35n$ titles, and after $2024$ it holds $(0.88)(1.35n)$ titles. Setting that equal to the ending count gives $(1.35)(0.88)n=2{,}376$.\nStep 3: Solve for $n$ by dividing both sides by the product of the multipliers: $n=\\dfrac{2{,}376}{(1.35)(0.88)}$. Check: $(1.35)(0.88)=1.188$ and $\\dfrac{2{,}376}{1.188}=2{,}000$, and running $2{,}000$ forward gives $2{,}000(1.35)=2{,}700$, then $2{,}700(0.88)=2{,}376$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: reads the $12\\%$ decrease as an increase. It returns about $1{,}571$, and running that value forward would overshoot $2{,}376$.\n* Choice B: adds the percent changes into a single $23\\%$ increase. Percent changes compound rather than add; this one returns about $1{,}932$.\n* Choice D: reverses the roles of the two years, using $0.65$ for the growth and $1.12$ for the decline. It returns about $3{,}264$, more titles than the label ever had.\n\n**Test Day Takeaway:** Convert every percent change to a multiplier, chain the multipliers in order, and remember that finding the ORIGINAL value means dividing by the chain — not multiplying by it, and never adding the percents."
+}

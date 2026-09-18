@@ -1,0 +1,26 @@
+{
+  "id": 6,
+  "question": "A rack in a recording studio holds the microphones listed in the table. One ribbon microphone is taken from the rack and is not returned. If a second microphone is then taken at random, what is the probability that it is also a ribbon microphone?",
+  "questionTable": {
+    "headers": [
+      "Microphone type",
+      "Number in rack"
+    ],
+    "rows": [
+      [
+        "Ribbon",
+        "18"
+      ],
+      [
+        "Condenser",
+        "14"
+      ],
+      [
+        "Dynamic",
+        "8"
+      ]
+    ]
+  },
+  "correctAnswer": "17/39",
+  "explanation": "**SAT Pattern: Probability Without Replacement**\n\n**The correct answer is $\\frac{17}{39}$.**\n\n**The Fast Way (~20s):** Removing one ribbon microphone leaves $17$ ribbons in a rack of $39$, so the second draw is a ribbon with probability $\\frac{17}{39}$.\n\n**The Full Solution:**\nStep 1: Total the rack before anything is removed: $18 + 14 + 8 = 40$ microphones.\nStep 2: One ribbon microphone leaves and does not come back, so both counts drop by one: $18 - 1 = 17$ ribbons remain out of $40 - 1 = 39$ microphones.\nStep 3: The second draw is made from those $39$, so the probability is $\\frac{17}{39}$. Check: the $22$ non-ribbon microphones are untouched, and $\\frac{17}{39} + \\frac{22}{39} = \\frac{39}{39} = 1$. ✓\n\n**Common Mistakes:**\n* $\\frac{18}{40}$ ($= 0.45$): ignores the removal entirely and treats the second draw as if the rack were still full.\n* $\\frac{18}{39}$ ($\\approx 0.46$): shrinks the total to $39$ but forgets that the microphone removed was itself a ribbon, so the numerator must drop too.\n* $\\frac{17}{40}$ ($= 0.425$): shrinks the ribbon count but leaves the total at $40$, double-counting a microphone that is no longer in the rack.\n\n**Test Day Takeaway:** \"Not returned\" changes BOTH numbers. Subtract one from the total and, when the item removed matches the category asked about, subtract one from that category as well."
+}

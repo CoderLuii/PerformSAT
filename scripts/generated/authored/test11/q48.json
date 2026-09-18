@@ -1,35 +1,40 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "adult, some researchers, however,"
-    },
-    {
-      "id": "B",
-      "text": "adult; some researchers, however"
-    },
-    {
-      "id": "C",
-      "text": "adult, some researchers however"
-    },
-    {
-      "id": "D",
-      "text": "adult. Some researchers, however,"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The blank sits between two complete sentences, and \"however\" is a conjunctive adverb, not a coordinating conjunction, so it cannot join the clauses by itself. A period (with a capital) cleanly ends the first sentence and begins the second, and the paired commas around \"however\" set it off as an interrupter within that second sentence. The comma-plus-\"however\" option leaves a comma splice between the clauses; the semicolon option fixes the boundary but gives \"however\" only an opening comma; and the last comma-splice option also fails to set off \"however\" at all.",
-  "passage": "Popular sleep advice treats eight hours as the right amount of sleep for nearly every adult ______ argue that the optimal amount in fact varies from person to person and that a fixed nightly target may do more harm than good for some sleepers.",
-  "_meta": {
-    "anchor": "epidemiology of sleep: variation in optimal sleep need (generic)",
-    "rule": "sentence boundary plus a conjunctive adverb set off by paired commas"
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "rainfall, agronomists at the state experiment stations, however,"
   },
-  "id": 1148,
-  "module": 2
+  {
+   "id": "B",
+   "text": "rainfall; agronomists at the state experiment stations, however"
+  },
+  {
+   "id": "C",
+   "text": "rainfall, agronomists at the state experiment stations however"
+  },
+  {
+   "id": "D",
+   "text": "rainfall. Agronomists at the state experiment stations, however,"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** Two independent statements meet here — the promoters' promise, and the agronomists' contrary finding — and D separates them with a period while setting off the interrupting \"however\" with the required pair of commas.\n\n**The Full Solution:**\n- Statement 1: \"Promoters of dry farming toured the Great Plains promising ... on almost any rainfall.\"\n- Statement 2: \"Agronomists at the state experiment stations, however, found that ...\" — a full clause with \"however\" as a parenthetical interrupter.\n- A period is a legitimate boundary between independent clauses, and an interrupting \"however\" takes a comma on each side. D satisfies both conventions at once.\n\n**Why the other choices are wrong:**\n- A: The comma after \"rainfall\" splices the two independent statements together.\n- B: The semicolon boundary is sound, but \"however\" is fenced on only one side — the comma completing the pair is missing.\n- C: It both splices the clauses with a comma and leaves \"however\" entirely unfenced.",
+ "passage": "Promoters of dry farming toured the Great Plains promising that deep plowing and a packed dust mulch would let wheat thrive on almost any ______ found that the technique's celebrated successes owed more to runs of unusually wet years than to the methods themselves.",
+ "_meta": {
+  "rule": "period between independent clauses + paired commas around interrupting 'however'",
+  "anchor": "dry farming techniques — promoters' promises vs. experiment-station findings",
+  "distractors": {
+   "A": "comma splice",
+   "B": "half-fenced 'however'",
+   "C": "splice plus unfenced 'however'"
+  }
+ },
+ "id": 1148,
+ "module": 2
 }

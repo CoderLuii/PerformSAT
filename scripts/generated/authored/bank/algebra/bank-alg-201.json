@@ -1,0 +1,57 @@
+{
+  "id": "bank-alg-201",
+  "question": "The graph shows the amount $y$, in gallons, of fuel in a generator's tank $x$ hours after the generator is started. Which of the following is the best interpretation of the slope of the graph in this context?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -2,
+      "yIntercept": 24,
+      "xRange": [
+        0,
+        14
+      ],
+      "yRange": [
+        0,
+        28
+      ],
+      "gridInterval": 2,
+      "xTickInterval": 2,
+      "yTickInterval": 4,
+      "highlightPoints": [
+        [
+          0,
+          24
+        ],
+        [
+          12,
+          0
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The generator uses $2$ gallons of fuel per hour."
+    },
+    {
+      "id": "B",
+      "text": "The tank holds $24$ gallons of fuel when the generator is started."
+    },
+    {
+      "id": "C",
+      "text": "The generator uses $12$ gallons of fuel per hour."
+    },
+    {
+      "id": "D",
+      "text": "The generator runs for $12$ hours before the tank is empty."
+    }
+  ],
+  "distractorNotes": {
+    "B": "interprets the y-intercept, not the slope",
+    "C": "reads the x-intercept value as a rate",
+    "D": "interprets the x-intercept, not the slope"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Slope as Rate of Change in Context**\n\n**Choice A is correct.**\n\n**The Fast Way (~15s):** The line drops from $(0, 24)$ to $(12, 0)$: a change of $-24$ gallons over $12$ hours, so the slope is $-2$ gallons per hour. The generator uses $2$ gallons each hour.\n\n**The Full Solution:**\nStep 1: Slope is the change in $y$ (gallons) per one-unit change in $x$ (hours), so its units are gallons per hour.\nStep 2: Using the two marked points, slope $= \\dfrac{0 - 24}{12 - 0} = -2$.\nStep 3: A slope of $-2$ means the fuel decreases by $2$ gallons for each hour the generator runs. Check: after $12$ hours, $24 - 2(12) = 0$ gallons, matching the graph. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: describes the $y$-intercept, $24$ gallons at $x = 0$, not the rate of change.\n* Choice C: takes the $x$-intercept value $12$ and presents it as a rate; the fuel does not drop $12$ gallons per hour.\n* Choice D: describes the $x$-intercept, the time at which the fuel reaches $0$, not the slope.\n\n**Test Day Takeaway:** Slope is always \"change in the vertical quantity per one unit of the horizontal quantity.\" Read its units off the axes and compute it from two clean points on the line."
+}

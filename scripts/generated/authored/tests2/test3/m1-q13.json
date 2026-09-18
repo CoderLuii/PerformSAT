@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "A monitoring script reports the value of $4n + 9$, where $n$ is the number of active sessions on a server. At noon the script reports $61$. If the script is changed to report $12n + 27$ instead, what value will it report at noon?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$39$"
+  },
+  {
+   "id": "B",
+   "text": "$61$"
+  },
+  {
+   "id": "C",
+   "text": "$165$"
+  },
+  {
+   "id": "D",
+   "text": "$183$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "reports 3n = 39, tripling the session count instead of the reported value",
+  "B": "assumes the reported number cannot change when the expression changes",
+  "C": "triples only the variable term, computing 12(13) + 9 = 165 with the old constant"
+ },
+ "explanation": "**SAT Pattern: Shifted Output**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** $12n + 27 = 3(4n + 9)$, so the new report is exactly three times the old one: $3(61) = 183$.\n\n**The Full Solution:**\nStep 1: Factor the new expression to compare it with the old one: $12n + 27 = 3(4n + 9)$. Both the coefficient and the constant are tripled, which is what makes the whole expression triple.\nStep 2: The old expression is worth $61$ at noon, so at that same moment $3(4n + 9) = 3(61) = 183$.\nStep 3: Confirm with the session count: $4n + 9 = 61$ gives $4n = 52$ and $n = 13$. Check: $12(13) + 27 = 156 + 27 = 183$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($39$): this is $3n = 3(13)$. Tripling the number of sessions is not the same as tripling the reported value, which also includes the constant.\n* Choice B ($61$): the reported value does depend on the expression. With $n = 13$ fixed, changing the formula changes the output.\n* Choice C ($165$): computes $12(13) + 9$, tripling the coefficient but leaving the constant at $9$. The new script adds $27$, not $9$.\n\n**Test Day Takeaway:** When a second expression is a constant multiple of the first, multiply the known value directly — you rarely need to solve for the variable at all."
+}

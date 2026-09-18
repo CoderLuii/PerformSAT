@@ -1,34 +1,34 @@
 {
-  "id": 525,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "transitions",
-  "module": 1,
-  "passage": "Early studies of human memory, following Hermann Ebbinghaus, measured how quickly lists of nonsense syllables were forgotten and produced the famous forgetting curve. ______ later researchers found that meaningful material—a story, a route through a familiar city—is retained far better than nonsense syllables, and that how well something is remembered depends heavily on how it was learned in the first place.",
-  "question": "Which choice completes the text with the most logical transition?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "For example,"
-    },
-    {
-      "id": "B",
-      "text": "Therefore,"
-    },
-    {
-      "id": "C",
-      "text": "Likewise,"
-    },
-    {
-      "id": "D",
-      "text": "However,"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D, \"However,\". The first sentence reports the early finding that nonsense syllables are forgotten quickly; the second reports a later, qualifying finding that meaningful material is retained much better. The second sentence sets a limit against the first, so a contrast connector is needed, and \"However,\" supplies it. \"For example,\" would make the second sentence an instance of the first, which it is not. \"Therefore,\" would make it a consequence, and \"Likewise,\" would make it a parallel point—neither of which matches the qualifying relation.",
-  "_meta": {
-    "anchor": "Ebbinghaus forgetting curve vs. later findings on meaningful material"
+ "id": 525,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "transitions",
+ "module": 1,
+ "passage": "Interpreters of Dutch still life long treated the genre as a gallery of moral warnings: the skull, the guttering candle, and the fly on the fruit were read as reminders of mortality, and every luxurious object as a rebuke to worldly appetite. ______ some recent scholars note that inventories and sale prices show buyers prizing these pictures as showcases of painterly skill and of the very abundance they supposedly condemned, and such scholars argue that the strictly moralizing reading may reveal more about later critics than about the painters and their patrons.",
+ "question": "Which choice completes the text with the most logical transition?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Likewise,"
+  },
+  {
+   "id": "B",
+   "text": "Therefore,"
+  },
+  {
+   "id": "C",
+   "text": "Specifically,"
+  },
+  {
+   "id": "D",
+   "text": "However,"
   }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The second sentence pushes back against the long-standing moralizing interpretation described in the first, so a contrast transition is needed.\n\n**The Full Solution:**\n- Sentence one presents the established reading: still lifes as moral warnings against appetite and luxury.\n- Sentence two presents evidence and an argument against it: buyers relished the abundance, and the moralizing reading may belong to later critics rather than to the works' own world.\n- A sentence that challenges the position just described takes an adversative transition, and \"However\" marks exactly that turn.\n\n**Why the other choices are wrong:**\n- A: \"Likewise\" would make the scholars' view an extension of the moral reading, when it is a challenge to it.\n- B: \"Therefore\" would present the challenge as a conclusion drawn from the moral reading, reversing the actual logic.\n- C: \"Specifically\" would promise a more detailed version of the first sentence's claim, not evidence against it.",
+ "_meta": {
+  "anchor": "vanitas interpretation of Dutch still life vs. market-based rereading; contrast transition"
+ }
 }

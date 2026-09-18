@@ -1,42 +1,42 @@
 {
-  "id": 1253,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "expression-of-ideas",
-  "skill": "rhetorical-synthesis",
-  "module": 2,
-  "studentNotes": {
-    "intro": "While researching a topic, a student has taken the following notes:",
-    "bullets": [
-      "Linear B is a script preserved on clay tablets at Bronze Age sites in Crete and on the Greek mainland.",
-      "For decades after the tablets were unearthed, scholars could not read the script and did not know what language it recorded.",
-      "Michael Ventris, a British architect, compiled grids showing how the script's many signs related to one another.",
-      "In 1952 he demonstrated that Linear B recorded an early form of Greek.",
-      "Once the language was identified, the tablets could finally be read.",
-      "They turned out to be administrative records—inventories of goods, livestock, and workers."
-    ],
-    "goal": "The student wants to emphasize how Ventris's decipherment made it possible to read the contents of the Linear B tablets."
-  },
-  "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Linear B is a script preserved on clay tablets that were found at Bronze Age sites in Crete and on the Greek mainland."
-    },
-    {
-      "id": "B",
-      "text": "Michael Ventris, a British architect, compiled grids that showed how the many signs of the Linear B script related to one another."
-    },
-    {
-      "id": "C",
-      "text": "By showing in 1952 that Linear B recorded an early form of Greek, Ventris allowed scholars to read the tablets, which proved to be administrative inventories of goods, livestock, and workers."
-    },
-    {
-      "id": "D",
-      "text": "For decades after the tablets were unearthed, scholars could not read Linear B because they did not know what language its signs recorded."
-    }
+ "id": 1253,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "expression-of-ideas",
+ "skill": "rhetorical-synthesis",
+ "module": 2,
+ "studentNotes": {
+  "intro": "While researching a topic, a student has taken the following notes:",
+  "bullets": [
+   "In the mid-1700s, European performers gave concerts on sets of wine glasses tuned by filling each glass with a different amount of water.",
+   "The glasses had to be refilled and retuned before every performance, and a player could reach only a few glasses at a time.",
+   "Benjamin Franklin heard such a concert in England and set out to improve on the instrument.",
+   "In 1761 he introduced the glass armonica, mounting glass bowls of graduated sizes on a single rotating spindle.",
+   "Because each bowl was ground to its pitch, no water tuning was needed, and the nested bowls placed dozens of notes within reach of the player's ten fingers.",
+   "Composers including Mozart went on to write music for Franklin's instrument."
   ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The goal is to emphasize how Ventris's decipherment let scholars read the tablets, and C traces that result: by showing in 1952 that Linear B recorded an early form of Greek, Ventris made the tablets readable, and they turned out to be administrative inventories. A identifies what the script is and where it was found but never reaches the reading payoff. B describes Ventris's method without saying that it allowed the tablets to be read. D explains the problem that existed before the decipherment but stops short of the breakthrough the goal calls for."
+  "goal": "The student wants to emphasize how Franklin's design overcame the limitations of the tuned wine glasses."
+ },
+ "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "In the mid-1700s, European performers gave concerts on sets of ordinary wine glasses, each of which had to be tuned before every performance by being filled with a precisely measured amount of water."
+  },
+  {
+   "id": "B",
+   "text": "Benjamin Franklin heard a concert played on tuned wine glasses while he was in England and became convinced that he could improve on the instrument."
+  },
+  {
+   "id": "C",
+   "text": "By grinding each bowl to its pitch and nesting the bowls on one spindle, Franklin's armonica did away with water tuning and put dozens of notes within reach of the player's fingers."
+  },
+  {
+   "id": "D",
+   "text": "Composers as celebrated as Mozart went on to write music expressly for the glass armonica that Franklin introduced in 1761."
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** The goal is to show HOW the design beat the glasses' limitations, and C pairs each design feature with the limitation it removed: bowls ground to pitch ended the refilling and retuning, and the nested bowls on one spindle put dozens of notes under ten fingers where the glasses had offered only a few.\n\n**The Full Solution:**\n- The notes name two limitations of the wine glasses: constant water tuning, and only a few glasses within reach.\n- They also name the design answers: pitch ground into each bowl, and graduated bowls nested on a rotating spindle.\n- C is the only choice that connects the answers to the limitations — design, then payoff — which is exactly the emphasis the goal requests.\n\n**Why the other choices are wrong:**\n- A: It describes only the old instrument and its tuning burden, never Franklin or his design.\n- B: It sets up Franklin's ambition but stops before saying what he built or what it fixed.\n- D: It attests to the instrument's later success without mentioning a single feature of the design or the limitations it overcame."
 }

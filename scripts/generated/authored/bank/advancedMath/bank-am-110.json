@@ -1,0 +1,27 @@
+{
+  "id": "bank-am-110",
+  "question": "A stress model $f$ has the graph drawn in the figure, and after a design change the adjusted model is $g(x)=f(x+3)$. What is the value of $g(-2)$?",
+  "diagram": {
+    "type": "quadraticVertex",
+    "params": {
+      "vertex": [
+        1,
+        -4
+      ],
+      "a": 1,
+      "showPoints": [
+        [
+          -1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "showVertex": true
+    }
+  },
+  "correctAnswer": "-4",
+  "explanation": "**SAT Pattern: Function Transformation**\n\n**The correct answer is $-4$.**\n\n**The Fast Way (~20s):** $g(-2)=f(-2+3)=f(1)$, and the graph's turning point shows $f(1)=-4$.\n\n**The Full Solution:**\nStep 1: The rule $g(x)=f(x+3)$ says to add 3 to the input before using the graph.\nStep 2: For $x=-2$ the inner input is $-2+3=1$.\nStep 3: The graph's lowest point is $(1,-4)$, so $f(1)=-4$ and $g(-2)=-4$. Check: the graph is $f(x)=(x-1)^{2}-4$, and $g(-2)=(-2+3-1)^{2}-4=-4$ ✓\n\n**Common Mistakes:** Subtracting 3 gives $f(-5)$, far off the drawn curve. Reading $f(-2)$ directly ignores the shift and gives 5. Treating the rule as $f(x)+3$ adds the 3 to the output instead, giving $5+3=8$.\n\n**Test Day Takeaway:** With $f(x+3)$, do the addition inside first and then read the graph at that input."
+}

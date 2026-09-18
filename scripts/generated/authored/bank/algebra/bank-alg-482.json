@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-482",
+  "question": "$$x = 4y - 7$$\n$$3x + 2y = 21$$\n\nWhat is the value of $y$ in the solution $(x, y)$ to the given system of equations?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$0$"
+    },
+    {
+      "id": "B",
+      "text": "$2$"
+    },
+    {
+      "id": "C",
+      "text": "$3$"
+    },
+    {
+      "id": "D",
+      "text": "$5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "writes +21 instead of -21 after distributing 3 across (4y - 7), giving 14y = 0",
+    "B": "distributes the 3 to 4y only (12y - 7 + 2y = 21), giving 14y = 28",
+    "D": "reports x instead of y"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: System of Equations (Substitution)**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Replace $x$ with $4y - 7$ in the second equation: $3(4y - 7) + 2y = 21$, so $14y - 21 = 21$, $14y = 42$, and $y = 3$.\n\n**The Full Solution:**\nStep 1: The first equation gives $x$ in terms of $y$, so substitute into $3x + 2y = 21$: $3(4y - 7) + 2y = 21$.\nStep 2: Distribute the $3$ to both terms: $12y - 21 + 2y = 21$. Combine like terms: $14y - 21 = 21$, so $14y = 42$ and $y = 3$.\nStep 3: Check by finding $x = 4(3) - 7 = 5$ and testing the second equation: $3(5) + 2(3) = 15 + 6 = 21$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($0$): treats $3(-7)$ as $+21$, producing $14y + 21 = 21$ and $y = 0$.\n* Choice B ($2$): multiplies only the $4y$ by $3$ and leaves the $-7$ alone, producing $14y - 7 = 21$ and $y = 2$.\n* Choice D ($5$): is the value of $x$, which the question does not ask for.\n\n**Test Day Takeaway:** Distributing a coefficient across a two-term substitution is where these systems break; multiply both terms, then check the requested variable with the equation you did not substitute into."
+}

@@ -1,0 +1,30 @@
+{
+  "id": 10,
+  "question": "In the $xy$-plane, the graph of $y=f(x)$ crosses the $x$-axis at exactly two points, where $x=-6$ and $x=2$. At what values of $x$ does the graph of $y=f(x+4)$ cross the $x$-axis?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$x=-24$ and $x=8$"
+    },
+    {
+      "id": "B",
+      "text": "$x=-10$ and $x=-2$"
+    },
+    {
+      "id": "C",
+      "text": "$x=-6$ and $x=2$"
+    },
+    {
+      "id": "D",
+      "text": "$x=-2$ and $x=6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "multiplies the zeros by 4",
+    "C": "leaves the zeros unchanged",
+    "D": "shifts the zeros right"
+  },
+  "correctAnswer": "B",
+  "hint": "Each crossing happens when the expression inside $f$ equals a value that already made $f$ zero.",
+  "explanation": "**Choice B is correct.**\n\n**The Fast Way (~30s):** Solve $x+4=-6$ and $x+4=2$ to get $x=-10$ and $x=-2$: the whole picture slides $4$ units left.\n\n**The Full Solution:**\nStep 1: The crossings of $f$ tell you that $f(-6)=0$ and $f(2)=0$, and that $f$ has no other zeros.\nStep 2: For $y=f(x+4)$ to equal $0$, the input $x+4$ must be one of those two numbers.\nStep 3: $x+4=-6$ gives $x=-10$, and $x+4=2$ gives $x=-2$. Check: $f(-10+4)=f(-6)=0$ and $f(-2+4)=f(2)=0$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($x=-24$ and $x=8$): multiplies the crossings by $4$; the $4$ is added inside, not multiplied.\n* Choice C ($x=-6$ and $x=2$): assumes the crossings are unchanged, which holds for a vertical stretch but not for a horizontal shift.\n* Choice D ($x=-2$ and $x=6$): moves the crossings $4$ units right; a $+4$ inside the function moves the graph left.\n\n**Test Day Takeaway:** To relocate a zero after an inside change, set the inside expression equal to the old zero and solve."
+}

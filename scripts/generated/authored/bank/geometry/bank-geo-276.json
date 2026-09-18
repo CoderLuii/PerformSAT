@@ -1,0 +1,42 @@
+{
+ "id": "bank-geo-276",
+ "question": "A school library added a quarter-round reading bench whose curved face is arc $AB$ in the figure below. Distances are in feet. How long is the curved face?",
+ "diagram": {
+  "type": "circleWithSector",
+  "params": {
+   "centralAngle": 90,
+   "angleLabel": "90°",
+   "radius": 14,
+   "labelCenter": "O",
+   "labelPoint1": "A",
+   "labelPoint2": "B",
+   "showRadiusLabel": true,
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3.5\\pi$"
+  },
+  {
+   "id": "B",
+   "text": "$7\\pi$"
+  },
+  {
+   "id": "C",
+   "text": "$14\\pi$"
+  },
+  {
+   "id": "D",
+   "text": "$28\\pi$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses pi r instead of 2 pi r, halving the arc to 3.5 pi",
+  "C": "gives half the circumference, the arc of a semicircle",
+  "D": "gives the full circumference 2 pi (14) = 28 pi"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Arc Length**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** A $90°$ arc is one quarter of the circumference $28\\pi$, which is $7\\pi$ feet.\n\n**The Full Solution:**\n\nStep 1: Find the circumference. $C=2\\pi(14)=28\\pi$ feet.\n\nStep 2: Convert the angle. $\\frac{90}{360}=\\frac{1}{4}$ of the circle.\n\nStep 3: Multiply. Arc $AB=\\frac{1}{4}(28\\pi)=7\\pi$ feet, about $22$ feet.\n\nCheck: four quarter-arcs rebuild the circle, and $4(7\\pi)=28\\pi$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3.5\\pi$): uses $\\pi r$ rather than $2\\pi r$ for the circumference.\n* Choice C ($14\\pi$): gives half the circumference, the arc of a semicircle rather than a quarter circle.\n* Choice D ($28\\pi$): reports the whole circumference.\n\n**Test Day Takeaway:** A quarter circle is exactly one fourth of $2\\pi r$; write the circumference first, then scale it."
+}

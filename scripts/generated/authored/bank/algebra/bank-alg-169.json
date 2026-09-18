@@ -1,0 +1,29 @@
+{
+  "id": "bank-alg-169",
+  "question": "A crew converts streetlights at a constant daily rate after a head start of $14$ lights, so its running total is $t = 14 + 9d$ after $d$ days of work. On which day does the total reach $122$ lights?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$9$"
+    },
+    {
+      "id": "B",
+      "text": "$12$"
+    },
+    {
+      "id": "C",
+      "text": "$14$"
+    },
+    {
+      "id": "D",
+      "text": "$108$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the daily rate of 9 lights instead of the number of days",
+    "C": "reports the 14-light head start instead of the number of days",
+    "D": "stops at 9d = 108 without dividing by the rate of 9"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Two-Step Linear Equation**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Subtract the head start and divide by the rate: $\\frac{122 - 14}{9} = \\frac{108}{9} = 12$.\n\n**The Full Solution:**\nStep 1: Set the model equal to the target total: $14 + 9d = 122$.\nStep 2: Undo the addition first by subtracting $14$ from both sides: $9d = 108$.\nStep 3: Undo the multiplication by dividing both sides by $9$: $d = 12$. Check: $14 + 9(12) = 14 + 108 = 122$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($9$): reports the daily rate from the model instead of the number of days.\n* Choice C ($14$): reports the head start, the constant term, instead of the number of days.\n* Choice D ($108$): stops at $9d = 108$ and reports the lights converted rather than the days worked.\n\n**Test Day Takeaway:** Two-step equations unwind in reverse order — remove the constant term first, then divide by the coefficient."
+}

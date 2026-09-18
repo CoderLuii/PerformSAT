@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-120",
+ "question": "The length of a rectangular patio is $6$ meters less than twice its width. If the area of the patio is $80$ square meters, what is the width, in meters, of the patio?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Rectangle Area**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~45s):** With width $w$ and length $2w - 6$, the area gives $2w^2 - 6w - 80 = 0$, or $w^2 - 3w - 40 = 0$, which factors to $(w - 8)(w + 5) = 0$, so $w = 8$ meters.\n\n**The Full Solution:**\nStep 1: Let the width be $w$ meters; then the length is $2w - 6$ meters.\nStep 2: The area gives $w(2w - 6) = 80$, so $2w^2 - 6w - 80 = 0$, and dividing by $2$ gives $w^2 - 3w - 40 = 0$.\nStep 3: Factor: $(w - 8)(w + 5) = 0$, so $w = 8$ or $w = -5$. A width is positive, so $w = 8$ meters.\n\nCheck: the length is $2(8) - 6 = 10$ meters, and $8 \\cdot 10 = 80$ square meters.\n\n**Common Mistakes:**\n* Answering $10$, the length, instead of the width.\n* Answering $5$ by taking the rejected root without the negative sign.\n* Setting up a perimeter equation, $w + (2w - 6) = 80$, which gives the non-integer width $\\frac{86}{3} \\approx 28.7$.\n\n**Test Day Takeaway:** Less than reverses the order of subtraction: twice the width less $6$ is $2w - 6$, never $6 - 2w$."
+}

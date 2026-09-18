@@ -1,0 +1,47 @@
+{
+  "question": "An HVAC duct run is drawn in the $xy$-plane as the line shown, with both coordinates measured in feet from the mechanical room. Which equation defines the line containing the duct's centerline?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": -2,
+      "yIntercept": 6,
+      "xRange": [
+        -4,
+        8
+      ],
+      "yRange": [
+        -12,
+        14
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 2
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y=-2x-6$"
+    },
+    {
+      "id": "B",
+      "text": "$y=-\\frac{1}{2}x+6$"
+    },
+    {
+      "id": "C",
+      "text": "$y=-2x+6$"
+    },
+    {
+      "id": "D",
+      "text": "$y=2x+6$"
+    }
+  ],
+  "correctAnswer": "C",
+  "distractorNotes": {
+    "A": "reads the vertical intercept as -6 instead of 6",
+    "B": "divides run by rise, using -1/2 in place of the slope -2",
+    "D": "drops the negative sign, describing a line that rises instead of falls"
+  },
+  "explanation": "**SAT Pattern: Line from Two Points**\n\n**Choice C is correct.** The line crosses the vertical axis at $6$ and falls $2$ units for each unit to the right, so it is $y=-2x+6$.\n\n**The Fast Way (~25s):** Intercept $6$, slope $\\frac{-4}{2}=-2$, giving $y=-2x+6$.\n\n**The Full Solution:**\n\nStep 1: Read two points on the line: $(0,6)$ and $(2,2)$.\n\nStep 2: The slope is $\\frac{2-6}{2-0}=\\frac{-4}{2}=-2$, and the line meets the vertical axis at $(0,6)$, so the constant is $6$.\n\nStep 3: The equation is $y=-2x+6$. Check: at $x=4$ the equation gives $-8+6=-2$, and the graph passes through $(4,-2)$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($y=-2x-6$): keeps the slope but places the vertical intercept at $-6$, below the axis.\n* Choice B ($y=-\\frac{1}{2}x+6$): divides the run by the rise, producing a line far too shallow.\n* Choice D ($y=2x+6$): drops the negative sign, describing a rising line.\n\n**Test Day Takeaway:** Read the vertical intercept first, then count rise over run between two lattice points, keeping the sign of the rise.",
+  "id": "bank-alg-395"
+}

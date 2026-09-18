@@ -1,0 +1,29 @@
+{
+  "id": 17,
+  "question": "A triangular window frame with a perimeter of $80$ centimeters has two edges measuring $18$ centimeters and $28$ centimeters. A second frame, geometrically similar to the first, has a perimeter of $20$ meters. The longest edge of the second frame is how many meters long?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4.5$"
+    },
+    {
+      "id": "B",
+      "text": "$7$"
+    },
+    {
+      "id": "C",
+      "text": "$8.5$"
+    },
+    {
+      "id": "D",
+      "text": "$10$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "scales the 18-centimeter edge instead of the longest edge",
+    "B": "scales the 28-centimeter edge instead of the longest edge",
+    "D": "takes the longest edge to be half the perimeter of the second frame"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Similar Triangles Proportion**\n\n**Choice C is correct.**\n\n**The Fast Way (~45s):** The small frame's third edge is $80 - 18 - 28 = 34$ centimeters, the longest; the perimeters give a scale of $\\frac{20 \\text{ m}}{80 \\text{ cm}} = 0.25$ meter per centimeter, so the answer is $34(0.25) = 8.5$ meters.\n\n**The Full Solution:**\nStep 1: Find the missing edge of the smaller frame: $80 - (18 + 28) = 34$ centimeters. Since $34 > 28 > 18$, that edge is the longest.\nStep 2: In similar figures, every length scales by the same factor as the perimeter. The larger perimeter is $20$ meters and the smaller is $80$ centimeters, so each centimeter of the small frame becomes $\\frac{20}{80} = 0.25$ meter.\nStep 3: The longest edge of the second frame is $34(0.25) = 8.5$ meters. Check the whole frame: $18(0.25) + 28(0.25) + 8.5 = 4.5 + 7 + 8.5 = 20$ meters ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4.5$): scales the $18$-centimeter edge, the shortest one, instead of the longest.\n* Choice B ($7$): scales the $28$-centimeter edge, which is only the longest of the two edges the stem happens to name.\n* Choice D ($10$): takes the longest edge to be half of the $20$-meter perimeter, a relationship no triangle satisfies.\n\n**Test Day Takeaway:** Perimeters of similar figures share the side scale factor, so use them to get the ratio, but find the missing side first to know which edge you are actually scaling."
+}

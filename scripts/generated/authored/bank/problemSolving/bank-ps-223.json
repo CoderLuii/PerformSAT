@@ -1,0 +1,29 @@
+{
+ "id": "bank-ps-223",
+ "question": "Of the $8{,}000$ juvenile salmon released above a dam, $65\\%$ were detected at the first weir. Of the released fish not detected at the first weir, $40\\%$ were detected at the second weir. The fish detected at neither weir are $n\\%$ of all the fish released. What is the value of $n$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$14$"
+  },
+  {
+   "id": "B",
+   "text": "$21$"
+  },
+  {
+   "id": "C",
+   "text": "$35$"
+  },
+  {
+   "id": "D",
+   "text": "$60$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the percent detected at the second weir, $0.35(0.40) = 14\\%$, rather than the percent missed by both",
+  "C": "stops at the complement of the first weir, $35\\%$, ignoring the second weir entirely",
+  "D": "takes the complement of the second percent alone, $100 - 40 = 60$, applied to the whole release"
+ },
+ "explanation": "**SAT Pattern: Percent Complement**\n\n**Choice B is correct.** The fish missed by the first weir are $35\\%$ of the release, and $60\\%$ of those are also missed by the second weir, so $n = 35(0.60) = 21$.\n\n**The Fast Way (~50s):** Missing both weirs means surviving two complements: $0.35(0.60) = 0.21$, so $n = 21$.\n\n**The Full Solution:**\n\nStep 1: Take the first complement. Since $65\\%$ were detected at the first weir, $100 - 65 = 35\\%$ were not, which is $0.35(8{,}000) = 2{,}800$ fish.\n\nStep 2: Take the second complement within that group. Of those $2{,}800$ fish, $40\\%$ were detected at the second weir, so $100 - 40 = 60\\%$ were not: $0.60(2{,}800) = 1{,}680$ fish.\n\nStep 3: Compare with the whole release: $\\frac{1{,}680}{8{,}000} = 0.21$, so $n = 21$. Check: $5{,}200$ fish were detected at the first weir and $1{,}120$ at the second, and $5{,}200 + 1{,}120 + 1{,}680 = 8{,}000$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($14$): computes $0.35(0.40) = 0.14$, the percent detected at the second weir, not the percent missed by both.\n* Choice C ($35$): reports only the first complement and forgets that the second weir catches some of that group.\n* Choice D ($60$): applies the second complement to the entire release rather than to the $35\\%$ that reached the second weir.\n\n**Test Day Takeaway:** Each \"of those\" resets the base -- write the complement, multiply, and only convert back to the original whole at the end."
+}

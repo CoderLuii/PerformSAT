@@ -5,30 +5,30 @@
   "band": 4,
   "domain": "information-and-ideas",
   "skill": "inferences",
+  "module": 1,
+  "passage": "In 1828 the German chemist Friedrich Wöhler synthesized urea, a compound until then obtained only from living bodies, out of inorganic starting materials. Textbooks often cast the experiment as the decisive blow against vitalism — the doctrine that substances formed in living things require a special vital force. The record is less tidy. Wöhler presented the result to colleagues as a striking curiosity, not a refutation; prominent chemists went on invoking vital forces for decades afterward; and vitalist explanations thinned out only gradually, as laboratory syntheses of one organic compound after another accumulated through mid-century. Taken together, these facts suggest that ______",
   "question": "Which choice most logically completes the text?",
   "choices": [
     {
       "id": "A",
-      "text": "audiences in the nineteenth century had simply been unable to hear the singers over the elaborate painted backdrops behind them."
+      "text": "Wöhler's contemporaries doubted that the substance he had produced from inorganic materials was in fact identical to urea."
     },
     {
       "id": "B",
-      "text": "a realistic painted backdrop was, in nearly every production, far more expensive to build and maintain than an arrangement of plain color and shaped light."
+      "text": "textbooks are right to treat the urea synthesis as decisive, since the chemists who continued to invoke vital forces did so for reasons unconnected to chemistry."
     },
     {
       "id": "C",
-      "text": "a sparer stage could direct an audience's attention more effectively than a crowded one and could respond far more quickly to shifts in mood."
+      "text": "the retreat of vitalism was a gradual affair, driven by an accumulation of syntheses rather than settled by any single experiment."
     },
     {
       "id": "D",
-      "text": "opera houses ought to return to the detailed painted scenery that audiences had so long found reassuring and familiar."
+      "text": "vitalism would have collapsed in 1828 if Wöhler had presented his synthesis as a refutation rather than as a curiosity."
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. Reviewers found that the bare stages drew more attention to the singers and let lighting shift the mood quickly, and the designer concluded that scenery had been doing too much — so a sparer stage could focus attention and respond to mood better than a crowded one. Choice A overstates the point into a claim about audibility; choice B substitutes a claim about expense the passage does not make; and choice D reverses the designer's position.",
-  "passage": "For much of the nineteenth century, opera houses competed to make their painted backdrops as detailed and realistic as possible, crowding the stage with elaborate scenery. A designer working in the early twentieth century broke with that convention, replacing the painted detail with broad areas of plain color and shaped light. Audiences at first found the bare stages startling, but reviewers soon noticed that the singers seemed to command more attention than they had amid the old clutter, and that a simple change of lighting could signal a change of mood almost instantly. The designer argued that scenery had been doing too much, and that ______",
+  "explanation": "**Choice C is correct.** Each fact chips at the single-blow story from a different side, and together they force only the modest conclusion C draws: vitalism receded gradually, under accumulating syntheses.\n\n**The Full Solution:**\n- Wöhler himself claimed no refutation — so the experiment was not received as a decisive blow.\n- Chemists kept invoking vital forces for decades — so no blow felled the doctrine in 1828.\n- Vitalism thinned \"only gradually, as laboratory syntheses ... accumulated\" — naming the actual driver.\n- The conclusion that fits all three is gradual retreat by accumulation, exactly choice C.\n\n**Why the other choices are wrong:**\n- A: The text records no doubt about the product's identity; it questions the experiment's decisiveness, not its chemistry.\n- B: It reasserts the textbook story the three facts undermine, explaining away the holdouts with a motive the text never gives.\n- D: A speculation about presentation; the text shows persistence for decades, not a doctrine one announcement from collapse.",
   "_meta": {
-    "anchor": "opera scenography — early-twentieth-century minimal staging"
-  },
-  "module": 1
+    "anchor": "Friedrich Wöhler — urea synthesis and the gradual decline of vitalism; hard inference"
+  }
 }

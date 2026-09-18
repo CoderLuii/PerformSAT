@@ -1,0 +1,49 @@
+{
+  "id": "bank-ps-261",
+  "question": "A mosaic is made of $360$ tiles. The table gives the fraction of the tiles made of each material. If $40\\%$ of the glass tiles are blue, how many of the tiles in the mosaic are glass tiles that are not blue?",
+  "questionTable": {
+    "headers": [
+      "Material",
+      "Fraction of tiles"
+    ],
+    "rows": [
+      [
+        "Glass",
+        "$\\frac{5}{8}$"
+      ],
+      [
+        "Stone",
+        "$\\frac{1}{4}$"
+      ],
+      [
+        "Ceramic",
+        "$\\frac{1}{8}$"
+      ]
+    ]
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$90$"
+    },
+    {
+      "id": "B",
+      "text": "$135$"
+    },
+    {
+      "id": "C",
+      "text": "$144$"
+    },
+    {
+      "id": "D",
+      "text": "$216$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the blue glass tiles (40% of 225)",
+    "C": "applies 40% to all 360 tiles instead of to the glass tiles",
+    "D": "applies the 60% complement to all 360 tiles instead of to the glass tiles"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Compound Percent Of**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Glass tiles: $\\frac{5}{8}(360) = 225$. Not blue means $60\\%$ of those: $0.60 \\times 225 = 135$.\n\n**The Full Solution:**\nStep 1: From the table, $\\frac{5}{8}$ of the tiles are glass: $\\frac{5}{8} \\times 360 = 225$ glass tiles.\nStep 2: $40\\%$ of the glass tiles are blue, so $60\\%$ of the glass tiles are not blue.\nStep 3: Glass tiles that are not blue: $0.60 \\times 225 = 135$. Check: blue glass tiles are $0.40 \\times 225 = 90$, and $90 + 135 = 225$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($90$): $0.40 \\times 225$ counts the glass tiles that ARE blue.\n* Choice C ($144$): $0.40 \\times 360$ applies the $40\\%$ to every tile, but the percent was stated for glass tiles only.\n* Choice D ($216$): $0.60 \\times 360$ takes the correct complement but applies it to the whole mosaic instead of to the $225$ glass tiles.\n\n**Test Day Takeaway:** A fraction from a table and a percent in the stem are both \"of\" operators; apply them in order to successively smaller groups, using the complement when the question says \"not.\""
+}

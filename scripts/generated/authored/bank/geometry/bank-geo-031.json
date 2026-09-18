@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-031",
+ "question": "A prototype resin casting has a volume of $96$ cubic centimeters. Each linear dimension of the production casting is $2.5$ times the corresponding dimension of the prototype. What is the volume, in cubic centimeters, of the production casting?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$240$"
+  },
+  {
+   "id": "B",
+   "text": "$600$"
+  },
+  {
+   "id": "C",
+   "text": "$1{,}500$"
+  },
+  {
+   "id": "D",
+   "text": "$3{,}750$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "scales the volume by 2.5 once, as if volume grew like a length",
+  "B": "scales the volume by 2.5 squared, the factor that applies to area",
+  "D": "applies the factor 2.5 a fourth time, multiplying the correct volume by 2.5 again"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Volume Scaling by Cube of Linear Factor**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Volume scales by the cube of the linear factor: $96(2.5)^3 = 96(15.625) = 1{,}500$.\n\n**The Full Solution:**\nStep 1: Every length is multiplied by $2.5$, so each of the three dimensions of the casting grows by that factor.\nStep 2: Volume is a product of three lengths, so it is multiplied by $(2.5)^3 = 15.625$.\nStep 3: $96 \\times 15.625 = 1{,}500$ cubic centimeters.\n\nCheck: A prototype shaped as a $4$ by $4$ by $6$ block has volume $96$; scaled it becomes $10$ by $10$ by $15$, with volume $1{,}500$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($240$): multiplies by $2.5$ once, the factor that applies to a single length.\n* Choice B ($600$): multiplies by $2.5^2 = 6.25$, the factor that applies to surface area.\n* Choice D ($3{,}750$): applies the factor a fourth time, multiplying the correct volume by $2.5$ again.\n\n**Test Day Takeaway:** Lengths scale by $k$, areas by $k^2$, and volumes by $k^3$; count the dimensions before choosing the exponent."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 19,
+ "question": "A cargo aircraft is loaded with $x$ standard pallets of mass $340$ kilograms each and $y$ oversize pallets of mass $560$ kilograms each. The aircraft carries $48$ pallets with a combined mass of $18.3$ metric tons, where $1$ metric ton equals $1{,}000$ kilograms. Which system of equations represents this situation?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$x + y = 18.3$ and $340x + 560y = 48$"
+  },
+  {
+   "id": "B",
+   "text": "$x + y = 48$ and $340x + 560y = 18.3$"
+  },
+  {
+   "id": "C",
+   "text": "$x + y = 48$ and $0.34x + 0.56y = 18{,}300$"
+  },
+  {
+   "id": "D",
+   "text": "$x + y = 48$ and $340x + 560y = 18{,}300$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "swaps the two totals, counting pallets with the mass and weighing them with the count",
+  "B": "leaves the total in metric tons while the per-pallet masses are in kilograms",
+  "C": "converts the per-pallet masses to tons but leaves the total in kilograms, mixing the units the other way"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Two-Equation System from a Word Problem**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** One equation counts pallets, $x + y = 48$; the other weighs them, and $18.3$ metric tons is $18{,}300$ kilograms, so $340x + 560y = 18{,}300$.\n\n**The Full Solution:**\nStep 1: The count equation adds pallets to pallets: $x + y = 48$.\nStep 2: The mass equation adds kilograms to kilograms. The per-pallet masses are given in kilograms, so the total must be too: $18.3 \\times 1{,}000 = 18{,}300$ kilograms, giving $340x + 560y = 18{,}300$.\nStep 3: Confirm the system has a sensible solution: substituting $y = 48 - x$ gives $340x + 26{,}880 - 560x = 18{,}300$, so $220x = 8{,}580$ and $x = 39$, $y = 9$. Check: $340(39) + 560(9) = 13{,}260 + 5{,}040 = 18{,}300$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A: this reverses the two totals, so it claims the aircraft carries $18.3$ pallets weighing $48$ kilograms altogether — lighter than a single pallet.\n* Choice B: the units clash. With masses in kilograms, $340x + 560y = 18.3$ would need fewer than one pallet in total.\n* Choice C: this converts the wrong side, measuring each pallet in tons while the total stays in kilograms; reaching a total of $18{,}300$ that way would take more than $30{,}000$ pallets, not $48$.\n\n**Test Day Takeaway:** Write one equation per quantity being totaled, and make both sides of each equation carry the same unit before you commit to it — unit mismatch is the usual trap in system-setup questions."
+}

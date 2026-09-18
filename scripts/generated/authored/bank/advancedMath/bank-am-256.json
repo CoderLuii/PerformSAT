@@ -1,0 +1,57 @@
+{
+ "id": "bank-am-256",
+ "question": "The line shown in the $xy$-plane is the graph of $f$, a model of a taxiway lighting circuit's voltage drop. Reflecting that line over the vertical axis produces the graph of $g$. What is the value of $g(2)$?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 2,
+   "yIntercept": -1,
+   "xRange": [
+    -5,
+    5
+   ],
+   "yRange": [
+    -12,
+    10
+   ],
+   "xTickInterval": 1,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     0,
+     -1
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-5$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$5$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reflects over the horizontal axis instead, computing -f(2) = -3",
+  "C": "reports f(2) = 3 without reflecting at all",
+  "D": "reflects the input correctly but then also negates the output, giving 5"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Reflection of Graph**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** Reflecting over the vertical axis gives $g(x)=f(-x)$, so $g(2)=f(-2)$, and the line $y=2x-1$ gives $f(-2)=-5$.\n\n**The Full Solution:**\n\nStep 1: Read the line from the marked points $(0,-1)$ and $(3,5)$: the slope is $\\frac{5-(-1)}{3-0}=2$ and the intercept is $-1$, so $f(x)=2x-1$.\n\nStep 2: A reflection over the vertical axis replaces the input by its opposite: $g(x)=f(-x)$.\n\nStep 3: Evaluate: $g(2)=f(-2)=2(-2)-1=-5$. Check: the point $(-2,-5)$ lies on the original line, and reflecting it over the vertical axis gives $(2,-5)$, a point on the graph of $g$.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($-3$): reflects over the horizontal axis instead, computing $-f(2)=-3$.\n* Choice C ($3$): reports $f(2)$ and never reflects.\n* Choice D ($5$): reflects the input but also flips the sign of the output.\n\n**Test Day Takeaway:** A reflection over the vertical axis changes the input's sign, not the output's — look up the opposite $x$ and read straight off the graph."
+}

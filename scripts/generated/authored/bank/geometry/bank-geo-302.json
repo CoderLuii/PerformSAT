@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-302",
+ "question": "Segment $\\overline{CD}$ is a radius of a circle in the $xy$-plane. The center of the circle is $C(-8,\\,1)$, and the other endpoint of the radius is $D(-4,\\,-2)$. What is the length of $\\overline{CD}$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$7$"
+  },
+  {
+   "id": "D",
+   "text": "$10$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses only the vertical change",
+  "C": "adds the two coordinate changes",
+  "D": "reports the diameter"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Distance from Center as Radius**\n\n**Choice B is correct.**\n\n**The Fast Way (~10s):** From $C$ to $D$ the coordinates change by $4$ and $3$, and $3$, $4$, $5$ is a Pythagorean triple, so $CD=5$.\n\n**The Full Solution:**\nStep 1: A radius runs from the center to a point on the circle, so its length is the distance between $C(-8,\\,1)$ and $D(-4,\\,-2)$.\nStep 2: The horizontal change is $-4-(-8)=4$ and the vertical change is $-2-1=-3$, so $CD=\\sqrt{4^2+(-3)^2}=\\sqrt{16+9}=\\sqrt{25}$.\nStep 3: $CD=\\sqrt{25}=5$.\n\nCheck: $3^2+4^2=9+16=25=5^2$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): used only the vertical change, $|1-(-2)|=3$, as though $\\overline{CD}$ were a vertical segment. That single subtraction works only when the two endpoints share an $x$-coordinate, and here they do not.\n* Choice C ($7$): added the horizontal and vertical changes, $4+3$, instead of combining them with the distance formula.\n* Choice D ($10$): found the radius correctly and then doubled it, reporting the diameter of the circle.\n\n**Test Day Takeaway:** Check whether the two endpoints share a coordinate before reaching for a single subtraction. When both coordinates change, only the distance formula gives the length."
+}

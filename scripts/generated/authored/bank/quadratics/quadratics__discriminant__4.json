@@ -1,0 +1,30 @@
+{
+  "id": 4,
+  "question": "A signal-timing study finds that the clearance intervals, in seconds, meeting a design constraint are exactly the solutions of $2x^2 - kx + 18 = 0$ for a positive constant $k$. The study finds exactly one such interval. What is the value of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$9$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$144$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "takes the square root of ac = 36 instead of 4ac = 144",
+    "B": "divides the constant by the leading coefficient, 18 / 2 = 9, which is not the discriminant condition",
+    "D": "reports k squared, 144, instead of k"
+  },
+  "correctAnswer": "C",
+  "hint": "One solution means the two square-root branches collapse into each other.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~20s):** Exactly one solution means $k^2 - 4(2)(18) = 0$, so $k^2 = 144$ and, since $k > 0$, $k = 12$.\n\n**The Full Solution:**\nStep 1: Write the discriminant. For $2x^2 - kx + 18 = 0$ the discriminant is $(-k)^2 - 4(2)(18) = k^2 - 144$.\nStep 2: Set it to zero. Exactly one solution requires $k^2 - 144 = 0$, so $k^2 = 144$ and $k = \\pm 12$. The problem states $k$ is positive, so $k = 12$.\nStep 3: Check. $2x^2 - 12x + 18 = 2(x - 3)^2$, which is zero only at $x = 3$ — one clearance interval. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): is $\\sqrt{2 \\times 18} = \\sqrt{36}$, using $ac$ instead of $4ac$ in the discriminant.\n* Choice B ($9$): is $\\frac{18}{2}$, dividing the constant by the leading coefficient. That is not what the discriminant tests.\n* Choice D ($144$): is $k^2$. The question asks for $k$ itself.\n\n**Test Day Takeaway:** Exactly one real solution means discriminant $= 0$. Solve $b^2 = 4ac$, then take the root the problem allows."
+}

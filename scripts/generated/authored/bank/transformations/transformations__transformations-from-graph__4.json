@@ -1,0 +1,40 @@
+{
+ "id": 4,
+ "question": "The graph of $y = f(x)$ is shown, where $f(x)$ is the temperature error, in degrees Celsius, $x$ minutes into a chocolate tempering cycle. After the thermocouple is recalibrated the error follows $y = f(x) + 5$. What are the coordinates of the lowest point on the recalibrated graph?",
+ "diagram": {
+  "type": "absoluteValue",
+  "params": {
+   "vertex": [
+    2,
+    -3
+   ],
+   "slope": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$(2, 2)$"
+  },
+  {
+   "id": "B",
+   "text": "$(2, -8)$"
+  },
+  {
+   "id": "C",
+   "text": "$(2, -3)$"
+  },
+  {
+   "id": "D",
+   "text": "$(7, -3)$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts 5 from the lowest error instead of adding it",
+  "C": "reports the lowest point of the original graph, ignoring the recalibration",
+  "D": "shifts the graph 5 units to the right"
+ },
+ "correctAnswer": "A",
+ "hint": "The recalibration changes what the thermocouple reads, not when it reads it.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~20s):** The lowest point of the shown graph is $(2, -3)$; adding $5$ lifts it to $(2, 2)$.\n\n**The Full Solution:**\nStep 1: Read the lowest point of the graph of $y = f(x)$: it sits at $(2, -3)$, an error of $-3$ degrees at minute $2$.\nStep 2: Adding $5$ outside the function raises every point by $5$ degrees and leaves the minute unchanged.\nStep 3: The lowest point becomes $(2, -3 + 5) = (2, 2)$. Check: the recalibrated error at minute $2$ is $-3 + 5 = 2$, and every other point is higher ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($(2, -8)$): subtracting the $5$ from the lowest error instead of adding it.\n* Choice C ($(2, -3)$): reporting the lowest point of the original graph and ignoring the recalibration.\n* Choice D ($(7, -3)$): shifting the graph $5$ units to the right, which a constant outside the function never does.\n\n**Test Day Takeaway:** A vertical shift moves the extreme point straight up or down; its input never changes."
+}

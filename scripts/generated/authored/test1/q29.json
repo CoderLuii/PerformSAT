@@ -6,26 +6,26 @@
  "domain": "craft-and-structure",
  "skill": "words-in-context",
  "module": 2,
- "passage": "Biochemist Gertrude B. Elion, working at Burroughs Wellcome in the mid-twentieth century, designed drugs by exploiting biochemical differences between healthy host cells and the disease-causing cells that invade them. Synthesizing chemical analogs of the natural building blocks of DNA, she produced compounds that could ______ between the two — interfering with the metabolism of leukemia cells, herpes viruses, and parasites while leaving healthy tissue largely intact.",
+ "passage": "In the 1890s, physicist Wallace Sabine was asked to fix the muddled acoustics of a Harvard lecture hall. By timing how long sound lingered in rooms of different sizes and furnishings, he derived a formula relating a hall's reverberation to its volume and its sound-absorbing materials. The formula gave architects something they had never had: a way to ______ the acoustics of a concert hall while the building existed only on paper.",
  "question": "Which choice completes the text with the most logical and precise word or phrase?",
  "choices": [
   {
    "id": "A",
-   "text": "discriminate"
+   "text": "predict"
   },
   {
    "id": "B",
-   "text": "differentiate"
+   "text": "amplify"
   },
   {
    "id": "C",
-   "text": "interact"
+   "text": "commemorate"
   },
   {
    "id": "D",
-   "text": "equate"
+   "text": "overhear"
   }
  ],
  "correctAnswer": "A",
- "explanation": "The correct answer is A, \"discriminate.\" The passage tells us that Elion built her drugs by \"exploiting biochemical differences\" between host cells and disease-causing cells, and that the resulting compounds interfered with leukemia cells, herpes viruses, and parasites \"while leaving healthy tissue largely intact.\" The verb in the blank must therefore mean to act selectively on one type of cell rather than the other on the basis of those differences. \"Discriminate\" carries exactly that sense in pharmacology: a drug discriminates between target and non-target cells when it engages one and spares the other. The word matches both the technical register Elion used in describing rational drug design and the active, selectivity-based meaning the sentence requires."
+ "explanation": "**Choice A is correct.** The formula made it possible to forecast a hall's sound before the hall existed — which is precisely what \"predict\" means.\n\n**The Full Solution:**\n- The passage emphasizes that Sabine's formula related a hall's reverberation to measurable features of its design.\n- Architects could apply it \"while the building existed only on paper\" — before any sound could be produced in the hall — so the formula's gift was foreknowledge of how a hall would sound.\n\n**Why the other choices are wrong:**\n- B: \"Amplify\" means to make louder; the formula describes reverberation, it does not strengthen sound — and nothing can be amplified in an unbuilt hall.\n- C: \"Commemorate\" means to honor the memory of something, which is illogical here.\n- D: \"Overhear\" means to hear accidentally, but no sound yet exists to be heard when a building is only a design."
 }

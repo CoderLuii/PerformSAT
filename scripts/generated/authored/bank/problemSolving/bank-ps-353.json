@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-353",
+  "question": "A noise study converts each of the $15$ recorded roadside sound levels to a different index by scaling every level by the same positive constant $k$. The standard deviation of the recorded levels is $6.4$, and the standard deviation of the converted index values is $22.4$. What is the value of $k$?",
+  "correctAnswer": "3.5",
+  "explanation": "**SAT Pattern: Scaling a Data Set**\n\n**The correct answer is $3.5$.**\n\n**The Fast Way (~15s):** Scaling every level by $k$ scales the standard deviation by $k$, so $k = \\frac{22.4}{6.4} = 3.5$.\n\n**The Full Solution:**\nStep 1: State the rule. When every value is multiplied by $k$, the standard deviation is multiplied by $|k|$, so $6.4k = 22.4$.\nStep 2: Solve. $k = \\frac{22.4}{6.4} = 3.5$.\nStep 3: Check. $6.4 \\times 3.5 = 22.4$, the converted standard deviation. ✓\n\n**Common Mistakes:**\n* Subtracting the two standard deviations, $22.4 - 6.4 = 16$, treats the conversion as a shift rather than a scaling.\n* Dividing the other way, $\\frac{6.4}{22.4} = 0.2857\\ldots$, inverts the ratio.\n* Squaring first and dividing variances gives $\\frac{501.76}{40.96} = 12.25$, which is $k^2$, not $k$.\n\n**Test Day Takeaway:** A multiplier scales the standard deviation by the same factor, so the ratio of the two standard deviations IS the multiplier."
+}

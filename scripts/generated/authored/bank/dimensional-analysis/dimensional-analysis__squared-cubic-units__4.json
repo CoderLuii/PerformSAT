@@ -1,0 +1,52 @@
+{
+  "id": 4,
+  "question": "The table gives the length and the width, in feet, of each of the three rectangular sections of a lobby floor. Given that $1$ yard is equal to $3$ feet, what is the combined area of the three sections, in square yards?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Section",
+        "Length (feet)",
+        "Width (feet)"
+      ],
+      "rows": [
+        [
+          "A",
+          "12",
+          "9"
+        ],
+        [
+          "B",
+          "15",
+          "12"
+        ],
+        [
+          "C",
+          "6",
+          "9"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$38$"
+    },
+    {
+      "id": "B",
+      "text": "$114$"
+    },
+    {
+      "id": "C",
+      "text": "$342$"
+    },
+    {
+      "id": "D",
+      "text": "$3{,}078$"
+    }
+  ],
+  "correctAnswer": "A",
+  "hint": "Total the three areas in square feet first; only the last step involves yards.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~35s):** The sections total $108+180+54=342$ square feet, and $\\frac{342}{9}=38$ square yards — choice A.\n\n**The Full Solution:**\nStep 1: Find each area in square feet: $12(9)=108$, $15(12)=180$, and $6(9)=54$.\nStep 2: Add them: $108+180+54=342$ square feet.\nStep 3: A square yard is $3^{2}=9$ square feet, so divide: $\\frac{342}{9}=38$ square yards.\nStep 4: Check: $38$ square yards is $38(9)=342$ square feet, the total from step 2. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($114$): divides by the linear factor $3$ instead of $3^{2}$: $\\frac{342}{3}=114$.\n* Choice C ($342$): reports the combined area in square feet without converting to square yards.\n* Choice D ($3{,}078$): multiplies by $9$ instead of dividing: $342(9)=3{,}078$, which converts in the wrong direction.\n\n**Test Day Takeaway:** Converting to a larger unit divides, and for an area the divisor is the square of the linear factor — check the direction and the exponent separately."
+}

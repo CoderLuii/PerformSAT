@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-219",
+  "question": "The number of ants in a colony triples every $2$ weeks. The colony contains $1{,}080$ ants today. How many ants did the colony contain $2$ weeks ago?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$120$"
+    },
+    {
+      "id": "B",
+      "text": "$360$"
+    },
+    {
+      "id": "C",
+      "text": "$540$"
+    },
+    {
+      "id": "D",
+      "text": "$3{,}240$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "divides by $9$, stepping back two periods instead of one",
+    "C": "halves the count instead of dividing by the growth factor $3$",
+    "D": "multiplies by $3$, moving forward in time"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Reverse Exponential Back in Time**\n\n**Choice B is correct.**\n\n**The Fast Way (~15s):** Going back one $2$-week period undoes one tripling: $1{,}080 \\div 3 = 360$.\n\n**The Full Solution:**\nStep 1: Each $2$-week period multiplies the colony by $3$, so the count $2$ weeks ago, call it $c$, satisfies $3c = 1{,}080$.\nStep 2: Dividing both sides by $3$ gives $c = 360$.\nStep 3: Check forward: $360 \\cdot 3 = 1{,}080$ ants today. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($120$): divides by $3$ twice, which reaches $4$ weeks ago.\n* Choice C ($540$): halves the current count; the growth factor is $3$, not $2$.\n* Choice D ($3{,}240$): multiplies instead of divides, giving the count $2$ weeks from now.\n\n**Test Day Takeaway:** Going backward in time DIVIDES by the growth factor once per period — count the periods before touching the arithmetic."
+}

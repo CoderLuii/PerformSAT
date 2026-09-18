@@ -1,0 +1,53 @@
+{
+ "id": "bank-alg-049",
+ "question": "A pump station log records the depth of water, in centimeters, in two storage tanks; each depth changes at a constant rate. Based on the table, how many hours after 6 a.m. will the two depths be equal?",
+ "questionTable": {
+  "headers": [
+   "Hours after 6 a.m.",
+   "Tank A depth (cm)",
+   "Tank B depth (cm)"
+  ],
+  "rows": [
+   [
+    "0",
+    "6",
+    "30"
+   ],
+   [
+    "1",
+    "10",
+    "28"
+   ],
+   [
+    "2",
+    "14",
+    "26"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "uses the hour-1 gap 28 - 10 = 18 instead of the 24 cm starting gap: 18 / 6 = 3",
+  "C": "divides the 24 cm gap by Tank A's rate of 4 alone, ignoring that Tank B is falling",
+  "D": "divides the 24 cm gap by Tank B's rate of 2 alone, ignoring that Tank A is rising"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: System Equal to y on Both Sides**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Tank A gains $4$ cm per hour and Tank B loses $2$ cm per hour, so the $24$ cm gap closes at $6$ cm per hour: $24 \\div 6 = 4$ hours.\n\n**The Full Solution:**\nStep 1: Write each depth as a function of $t$, the hours after 6 a.m. Tank A rises from $6$ to $10$ to $14$, so $y = 6 + 4t$. Tank B falls from $30$ to $28$ to $26$, so $y = 30 - 2t$.\nStep 2: Both expressions equal the same depth $y$, so set them equal: $6 + 4t = 30 - 2t$.\nStep 3: Add $2t$ to both sides and subtract $6$: $6t = 24$, so $t = 4$. Check: at $t = 4$, Tank A is $6 + 4(4) = 22$ cm and Tank B is $30 - 2(4) = 22$ cm. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): uses the hour-$1$ gap $28 - 10 = 18$ instead of the starting gap, giving $18 \\div 6 = 3$.\n* Choice C ($6$): divides the $24$ cm gap by Tank A's rate of $4$ alone, as if Tank B held steady.\n* Choice D ($12$): divides the $24$ cm gap by Tank B's rate of $2$ alone, as if Tank A held steady.\n\n**Test Day Takeaway:** When two quantities are each given as $y = $ an expression in the same variable, set the expressions equal; the gap closes at the SUM of the two rates when one rises and the other falls."
+}

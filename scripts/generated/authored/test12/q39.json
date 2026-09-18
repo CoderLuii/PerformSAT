@@ -1,31 +1,31 @@
 {
-  "id": 1239,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "module": 2,
-  "passage": "Many songbirds sing most intensely in the hour around dawn, a phenomenon known as the dawn chorus. One long-standing explanation is acoustic: in the cool, still air of early morning, before the day's heat stirs up turbulence, sound carries farther and with less distortion, so a male's song reaches more listeners than the same song would at midday. A competing explanation is social: dawn is when territorial boundaries and overnight survival are reassessed, so singing then signals to rivals and mates that a male has held his ground through the night. The two accounts make different predictions, and a researcher who favored the acoustic explanation would want evidence tying the timing of song to conditions of sound transmission rather than to social circumstances alone.",
-  "question": "Which finding, if true, would most directly support the acoustic explanation of the dawn chorus?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "On unusually still, cool mornings a male's song was audible at substantially greater distances than on warm, breezy mornings, and males sang more on the stiller mornings."
-    },
-    {
-      "id": "B",
-      "text": "Males that had successfully defended their territory through the night went on to sing considerably more at dawn than males that had lost ground to their rivals overnight."
-    },
-    {
-      "id": "C",
-      "text": "Females were more likely to choose as mates the males that had sung earliest and most vigorously during the dawn hour."
-    },
-    {
-      "id": "D",
-      "text": "Removing a neighboring rival from an adjacent territory caused a male to noticeably increase the amount that he sang at dawn."
-    }
-  ],
-  "correctAnswer": "A",
-  "explanation": "The correct answer is A. The acoustic explanation ties singing to conditions of sound transmission, so the finding that best supports it links more singing to the very mornings when sound carries farthest—still, cool air. A makes exactly that link. B, C, and D all bear on the social explanation: defending territory, attracting mates, and responding to a rival are social circumstances, not features of how sound travels through the air. They would support the competing account, not the acoustic one."
+ "id": 1239,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "module": 2,
+ "passage": "In championship hot-air ballooning, pilots score points by dropping markers on ground targets, yet a balloon cannot be steered directly — it drifts with whatever air surrounds it. Observers offer two explanations for why a small group of pilots wins consistently. The first is meteorological: winds at different altitudes move in different directions, and the best pilots read those layers, climbing or descending to ride whichever current bends toward the target. The second is manual: expert burner control, the argument runs, lets a pilot hold any chosen altitude with unusual steadiness, and it is smooth flying rather than weather sense that separates champions from the field. The two accounts make different predictions about what the top pilots should be doing in the air.",
+ "question": "Which finding, if true, would most directly support the meteorological explanation?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "In flight records from several championships, winning pilots changed altitude more often than mid-field pilots, and their climbs and descents coincided with entries into wind layers bending toward the target."
+  },
+  {
+   "id": "B",
+   "text": "During the final approach to each target, winning pilots were found to hold their altitude within a considerably narrower band than any other group of competitors that the researchers studied."
+  },
+  {
+   "id": "C",
+   "text": "Pilots who spent an off-season training on burner-control simulators improved their standings the following year more than pilots who did no such training."
+  },
+  {
+   "id": "D",
+   "text": "Champions interviewed after major events tended to credit their success to instinct, saying they could not fully explain the choices they had made in the air."
+  }
+ ],
+ "correctAnswer": "A",
+ "explanation": "**Choice A is correct.** The meteorological explanation says winners win by reading and riding wind layers, so its telltale behavior is frequent, purposeful altitude changes tied to favorable currents — exactly what A reports in the flight records.\n\n**The Full Solution:**\n- Pin down what the meteorological account predicts: top pilots should be moving between layers, and their moves should track the winds that bend toward the target.\n- A delivers both halves: winners changed altitude more often than others, and the changes coincided with entries into target-bending layers — behavior tied to wind reading, not to smoothness.\n- The rival manual account predicts the opposite signature (steady altitude), so A's finding separates the two explanations cleanly in the meteorological account's favor.\n\n**Why the other choices are wrong:**\n- B: Rock-steady altitude is the manual explanation's prediction; it supports the rival account.\n- C: Gains from burner-control training again point to piloting mechanics, not weather sense.\n- D: Champions crediting unexplainable instinct distinguishes neither account — it offers no evidence about winds or control at all."
 }

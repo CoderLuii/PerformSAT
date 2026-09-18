@@ -1,34 +1,34 @@
 {
-  "id": 520,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "By the time the biochemist Max Perutz published his first clear X-ray images of hemoglobin in the late 1950s, he ______ on the structure of the protein for well over a decade, and the images marked the beginning of a project that would occupy him for years more.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "has worked"
-    },
-    {
-      "id": "B",
-      "text": "had worked"
-    },
-    {
-      "id": "C",
-      "text": "works"
-    },
-    {
-      "id": "D",
-      "text": "is working"
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B, \"had worked.\" The sentence's reference point is the late-1950s publication, and the work in the blank was already going on for over a decade before that point, so the past perfect \"had worked\" is required to mark an action completed before another past event. The cue \"By the time…\" is the standard signal for the past perfect. \"Has worked\" is present perfect and reaches toward the present; \"works\" is simple present; and \"is working\" is present progressive—none of which can express the before-a-past-point relation the sentence needs.",
-  "_meta": {
-    "anchor": "Max Perutz — biochemist; hemoglobin X-ray structure; past-perfect sequence"
+ "id": 520,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "By the time the London instrument maker Jesse Ramsden completed his celebrated circular dividing engine in 1775, he ______ its design for nearly a decade, and the astronomical scales the machine graduated were finer and more even than any that could be ruled by hand.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "has refined"
+  },
+  {
+   "id": "B",
+   "text": "had refined"
+  },
+  {
+   "id": "C",
+   "text": "refines"
+  },
+  {
+   "id": "D",
+   "text": "is refining"
   }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The sentence describes work that preceded a past reference point — the engine's completion in 1775 — and the past perfect \"had refined\" is the form that places one past action before another.\n\n**The Full Solution:**\n- \"By the time... completed... in 1775\" fixes a reference point in the past.\n- The blank describes refining that went on for \"nearly a decade\" leading up to that point — action earlier than the past reference.\n- English marks past-before-past with the past perfect: \"he had refined its design for nearly a decade.\"\n\n**Why the other choices are wrong:**\n- A: \"Has refined\" is present perfect, which connects past action to the present moment, not to a completed past reference point in 1775.\n- C: \"Refines\" is simple present, incompatible with the 1775 time frame.\n- D: \"Is refining\" is present progressive, describing action happening now, which the historical context rules out.",
+ "_meta": {
+  "anchor": "Jesse Ramsden's dividing engine; past perfect before a 1775 reference point"
+ }
 }

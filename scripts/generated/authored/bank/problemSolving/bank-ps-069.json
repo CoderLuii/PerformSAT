@@ -1,0 +1,6 @@
+{
+  "id": "bank-ps-069",
+  "question": "Of the $250$ shorebird nests marked on one beach during a nesting season, $60$ were washed out by high tides. What percent of the marked nests were washed out?",
+  "correctAnswer": "24",
+  "explanation": "**SAT Pattern: Percent of Total**\n\n**The correct answer is $24$.** The washed-out nests are $\\frac{60}{250} = 0.24$ of the marked nests, or $24\\%$.\n\n**The Fast Way (~20s):** $\\frac{60}{250} = \\frac{24}{100} = 24\\%$.\n\n**The Full Solution:**\n\nStep 1: Identify the part and the whole. The part is the $60$ nests washed out; the whole is the $250$ nests marked.\n\nStep 2: Write the fraction: $\\frac{60}{250}$.\n\nStep 3: Convert to a percent: $\\frac{60}{250} = 0.24$, and $0.24(100) = 24$. Check: $24\\%$ of $250$ is $0.24(250) = 60$ nests.\n\n**Common Mistakes:**\n\n* Dividing the whole by the part, $\\frac{250}{60} \\approx 4.17$, inverts the fraction and cannot be a percent of a whole.\n* Reporting $76$ gives the percent of nests that survived, the complement of what is asked.\n* Subtracting, $250 - 60 = 190$, reports a count of surviving nests rather than a percent.\n\n**Test Day Takeaway:** Percent of a total is part over whole, then times $100$ -- name the whole out loud before you divide."
+}

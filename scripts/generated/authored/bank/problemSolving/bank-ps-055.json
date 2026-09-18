@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-055",
+  "question": "A contractor will fill a rectangular trench that is $15$ feet long, $4$ feet wide, and $3$ feet deep with concrete. Concrete is sold only in whole cubic yards. What is the least number of cubic yards of concrete the contractor must buy to fill the trench? ($1$ yard $= 3$ feet)",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$7$"
+    },
+    {
+      "id": "C",
+      "text": "$20$"
+    },
+    {
+      "id": "D",
+      "text": "$60$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "drops the fractional part of $\\frac{20}{3}$ instead of rounding up; $6$ cubic yards fills only $162$ of the $180$ cubic feet.",
+    "C": "divides by $3^2 = 9$, the area factor, instead of the volume factor $3^3 = 27$.",
+    "D": "divides by $3$, the length factor, converting only one of the three dimensions."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Volume Unit Conversion**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The trench holds $15 \\times 4 \\times 3 = 180$ cubic feet, and $1$ cubic yard is $27$ cubic feet, so $\\frac{180}{27} = \\frac{20}{3}$, about $6.67$ cubic yards. Whole cubic yards only means buying $7$.\n\n**The Full Solution:**\nStep 1: Volume in cubic feet: $15 \\times 4 \\times 3 = 180$ cubic feet.\nStep 2: A cube with $1$-yard edges has $3$-foot edges, so $1 \\text{ yd}^3 = 3^3 = 27 \\text{ ft}^3$. Convert: $\\frac{180}{27} = \\frac{20}{3} \\approx 6.67$ cubic yards.\nStep 3: Concrete is sold only in whole cubic yards, and $6$ is not enough, so the contractor must buy $7$. Check: $6 \\times 27 = 162 < 180$, while $7 \\times 27 = 189 \\ge 180$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): drops the fractional part of $\\frac{20}{3}$ instead of rounding up; $6$ cubic yards fills only $162$ of the $180$ cubic feet.\n* Choice C ($20$): divides by $3^2 = 9$, the area factor, instead of the volume factor $3^3 = 27$.\n* Choice D ($60$): divides by $3$, the length factor, converting only one of the three dimensions.\n\n**Test Day Takeaway:** Cubic units convert with the CUBE of the length factor ($1 \\text{ yd}^3 = 27 \\text{ ft}^3$), and a purchase in whole units always rounds UP, never to the nearest."
+}

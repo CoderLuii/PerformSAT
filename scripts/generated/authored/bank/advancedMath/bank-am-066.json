@@ -1,0 +1,22 @@
+{
+  "question": "The table gives the side lengths of two square dies. How much greater, in square millimeters, is the face area of the larger die than the face area of the smaller die?",
+  "questionTable": {
+    "headers": [
+      "Die",
+      "Side length (millimeters)"
+    ],
+    "rows": [
+      [
+        "Larger",
+        "$53$"
+      ],
+      [
+        "Smaller",
+        "$47$"
+      ]
+    ]
+  },
+  "correctAnswer": "600",
+  "explanation": "**SAT Pattern: Difference of Squares Application**\n\n**The correct answer is $600$.**\n\n**The Fast Way (~15s):** $53^{2}-47^{2}=(53-47)(53+47)=6\\cdot 100=600$.\n\n**The Full Solution:**\nStep 1: Each face area is the square of a side, so the difference is $53^{2}-47^{2}$.\nStep 2: Factor as a difference of squares: $(53-47)(53+47)$.\nStep 3: Evaluate: $6\\cdot 100=600$ square millimeters. Check directly: $2809-2209=600$ ✓\n\n**Common Mistakes:**\n* $6$: subtracted the side lengths instead of the areas.\n* $36$: squared the difference of the sides, computing $(53-47)^{2}$.\n* $100$: reported the sum of the side lengths, stopping halfway through the factoring.\n\n**Test Day Takeaway:** A difference of two squares of nearby numbers is fastest as (difference)(sum) — no squaring required.",
+  "id": "bank-am-066"
+}

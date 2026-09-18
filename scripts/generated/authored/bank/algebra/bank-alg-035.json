@@ -1,0 +1,58 @@
+{
+ "id": "bank-alg-035",
+ "question": "In the graph, line $j$ joins the two plotted points. A flywheel's spoke lies on a line perpendicular to line $j$. What is the slope of the spoke's line?",
+ "diagram": {
+  "type": "linearGraph",
+  "params": {
+   "slope": 1.3333333,
+   "yIntercept": 0,
+   "xRange": [
+    -6,
+    6
+   ],
+   "yRange": [
+    -6,
+    6
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "showPoints": [
+    [
+     -3,
+     -4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "label": "j"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-\\frac{4}{3}$"
+  },
+  {
+   "id": "B",
+   "text": "$-\\frac{3}{4}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3}{4}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{4}{3}$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "negates line $j$'s slope without inverting it",
+  "C": "inverts line $j$'s slope without negating it",
+  "D": "repeats line $j$'s own slope"
+ },
+ "explanation": "**SAT Pattern: Perpendicular Slope from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** Line $j$ has slope $\\frac{4}{3}$, so the spoke's line has slope $-\\frac{3}{4}$.\n\n**The Full Solution:**\nStep 1: The plotted points are $(-3, -4)$ and $(3, 4)$, so line $j$ has slope $\\frac{4 - (-4)}{3 - (-3)} = \\frac{8}{6} = \\frac{4}{3}$.\nStep 2: A perpendicular line has the negative reciprocal slope.\nStep 3: Flipping $\\frac{4}{3}$ gives $\\frac{3}{4}$, and negating gives $-\\frac{3}{4}$. Check: $\\frac{4}{3}\\left(-\\frac{3}{4}\\right) = -1$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{4}{3}$): negates line $j$'s slope without inverting it\n* Choice C ($\\frac{3}{4}$): inverts line $j$'s slope without negating it\n* Choice D ($\\frac{4}{3}$): repeats line $j$'s own slope\n\n**Test Day Takeaway:** Read both plotted points off the grid, reduce the slope, then flip and negate."
+}

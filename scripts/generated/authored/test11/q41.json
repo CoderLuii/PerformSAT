@@ -1,61 +1,65 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-quantitative",
-  "question": "Which choice most effectively uses data from the table to complete the statement?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "viewing rose from 5.9 hours per day in 1970 to 6.9 hours per day in 1990, a 1.0-hour increase that exceeds the gains recorded in either the earliest or the most recent twenty-year window in the table."
-    },
-    {
-      "id": "B",
-      "text": "viewing rose from 6.9 hours per day in 1990 to 8.4 hours per day in 2010, an increase of 1.5 hours per day that is larger than the 1.3-hour rise from 1950 to 1970 and the 1.0-hour rise from 1970 to 1990."
-    },
-    {
-      "id": "C",
-      "text": "viewing rose from 4.6 hours per day in 1950 to 8.4 hours per day in 2010, a 3.8-hour increase that nearly doubles the 1950 figure across the sixty-year period."
-    },
-    {
-      "id": "D",
-      "text": "viewing rose from 4.6 hours per day in 1950 to 5.9 hours per day in 1970, a 1.3-hour increase that represents the steepest gain in the period when households were first acquiring television sets."
-    }
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-quantitative",
+ "question": "Which choice most effectively uses data from the table to complete the statement?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "fallowed land produced higher per-acre yields than continuously cropped land in every one of the season types shown in the table."
+  },
+  {
+   "id": "B",
+   "text": "fallowing's advantage swelled from 3 bushels per acre in wet seasons to 9 in dry ones, when continuous cropping neared failure."
+  },
+  {
+   "id": "C",
+   "text": "continuous cropping produced 21 bushels per acre in wet seasons, its highest figure anywhere in the table."
+  },
+  {
+   "id": "D",
+   "text": "yields under both practices fell as growing seasons became drier, with the lowest figures coming in dry seasons."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The claim is that fallowing works as drought insurance \"specifically, rather than as a means of raising yields generally.\" B cites the pattern that makes the distinction: a modest 3-bushel edge in wet seasons versus a 9-bushel edge in dry ones — 13 against a near-failure 4.\n\n**The Full Solution:**\n- Since fallowing halves the harvested acreage, the passage notes, a small per-acre edge is not worth much; the case for the practice must rest on where its edge is large.\n- The table concentrates the advantage in dry seasons: 24 vs. 21 (wet), 19 vs. 14 (average), 13 vs. 4 (dry) — the gap triples exactly when continuous cropping collapses.\n- That asymmetry is the signature of insurance — the payoff arrives in the bad state — and B is the choice that reports it.\n\n**Why the other choices are wrong:**\n- A: True but fatal to the argument's precision — a uniform advantage is what \"raising yields generally\" would look like; the claim turns on where the advantage concentrates.\n- C: A single cell about the rival practice's best year supports nothing about fallowing's role.\n- D: The shared downward slope ignores the comparison between practices entirely.",
+ "passage": "Agricultural experiment stations in the early twentieth century ran long trials comparing continuous wheat cropping with alternate-year fallow, in which land rests unplanted every other season so that two years of moisture can feed one crop. Analysts reviewing one station's records note that fallowing means harvesting only half the acreage in any year, so the practice pays only where its per-acre advantage is large. They argue that the records support fallowing as insurance against drought specifically, rather than as a means of raising yields generally, because ______",
+ "questionTable": {
+  "type": "table",
+  "caption": "Wheat yields at a Great Plains experiment station, by practice and season type (bushels per acre)",
+  "headers": [
+   "Season type",
+   "Continuous cropping",
+   "Alternate-year fallow"
   ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The claim is that the largest absolute jump came in the most recent twenty-year window, so the evidence must compare the size of each interval's change. Choice B does this: the 1990-to-2010 rise of 1.5 hours is larger than the 1.3-hour rise of 1950 to 1970 and the 1.0-hour rise of 1970 to 1990. Choice C gives the cumulative sixty-year change, which collapses three intervals into one and cannot say which window held the largest jump. Choice D names the real early-adoption rise, but that is smaller than the most recent window's. Choice A calls the 1.0-hour middle interval the largest when it is the smallest of the three.",
-  "passage": "A standard story about U.S. media history holds that television viewing rose steeply in the early postwar decades, when households were first acquiring sets, and then plateaued as the technology saturated the market. Compiling household-level figures from Nielsen historical reports and industry estimates, one media scholar challenges that account, arguing that the largest absolute jump in average daily viewing actually occurred in the most recent twenty-year window in the record rather than in the earliest decades, because _______",
-  "questionTable": {
-    "type": "table",
-    "caption": "Average daily hours of television viewing per U.S. household, selected years (Nielsen historical reports and industry estimates)",
-    "headers": [
-      "Year",
-      "Hours per day"
-    ],
-    "rows": [
-      [
-        "1950",
-        "4.6"
-      ],
-      [
-        "1970",
-        "5.9"
-      ],
-      [
-        "1990",
-        "6.9"
-      ],
-      [
-        "2010",
-        "8.4"
-      ]
-    ]
-  },
-  "_meta": {
-    "anchor": "U.S. household television viewing 1950-2010 (Nielsen historical reports / industry estimates)",
-    "dataset": "qd-018"
-  },
-  "id": 1141,
-  "module": 2
+  "rows": [
+   [
+    "Wet seasons",
+    "21",
+    "24"
+   ],
+   [
+    "Average seasons",
+    "14",
+    "19"
+   ],
+   [
+    "Dry seasons",
+    "4",
+    "13"
+   ]
+  ]
+ },
+ "_meta": {
+  "anchor": "dry farming techniques — alternate-year fallow as drought insurance in station trials",
+  "distractors": {
+   "A": "true-but-general, misses the asymmetry the claim needs",
+   "C": "single cell, wrong practice",
+   "D": "shared trend without the comparison"
+  }
+ },
+ "id": 1141,
+ "module": 2
 }

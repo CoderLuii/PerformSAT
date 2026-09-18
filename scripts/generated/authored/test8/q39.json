@@ -1,31 +1,31 @@
 {
-  "id": 839,
-  "type": "multiple-choice",
-  "difficulty": "hard",
-  "band": 4,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "module": 2,
-  "passage": "Migratory songbirds can hold a heading on overcast nights when neither the stars nor the sun is visible, and biologists have long debated what cue they use. One team studying European robins proposed that the birds sense the direction of Earth's magnetic field and that this magnetic sense depends on light striking specialized molecules in the eye, so that it works only within a certain range of wavelengths. *The team's hypothesis is that the robins' magnetic compass is light-dependent, functioning under some colors of light but failing under others.*",
-  "question": "Which finding, if true, would most strongly support the team’s hypothesis?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Robins kept in a windowless room with no light of any kind grew restless at the season when they would normally migrate."
-    },
-    {
-      "id": "B",
-      "text": "Robins tested under dim red light scattered their headings at random, whereas the same birds under dim blue-green light oriented correctly toward their migratory direction."
-    },
-    {
-      "id": "C",
-      "text": "Robins migrate at night more often than closely related species that do not undertake long migrations."
-    },
-    {
-      "id": "D",
-      "text": "Robins released near a powerful electrical installation took longer to settle on a heading than robins released in open countryside."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. The hypothesis is that the magnetic compass depends on light and works under some colors but not others, so the strongest support compares the birds' orientation across different wavelengths. B does exactly that: correct orientation under blue-green light but random headings under red light shows the compass functioning at one part of the spectrum and failing at another. A involves no light at all and so cannot test a color dependence; C concerns how often robins migrate, not how they orient; and D points to interference near electrical equipment without isolating the color of light."
+ "id": 839,
+ "type": "multiple-choice",
+ "difficulty": "hard",
+ "band": 4,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "module": 2,
+ "passage": "Along cyclone-prone coasts, a team of coastal engineers has hypothesized that intact mangrove belts materially reduce the damage storms inflict on settlements behind them, the trees' dense trunks and roots absorbing wave energy before it reaches houses and fields. The team acknowledges an obstacle: villages with thriving mangroves might differ from others in many ways — in elevation, in exposure, in how storms happen to track — so simple comparisons of damage could mislead.",
+ "question": "Which finding, if true, would most strongly support the team's hypothesis?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Mangrove belts tend to be widest and healthiest along stretches of coast that natural features already shelter from the heaviest seas a passing cyclone can raise against the shore."
+  },
+  {
+   "id": "B",
+   "text": "After a cyclone, villages behind intact belts suffered far less damage than villages of similar elevation, exposure, and distance from landfall whose belts had been cleared."
+  },
+  {
+   "id": "C",
+   "text": "Mangrove forests damaged by cyclones typically regrow to their former extent within a decade."
+  },
+  {
+   "id": "D",
+   "text": "Most residents of coastal villages surveyed believe that nearby mangrove forests protect their homes from storms."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The hypothesis credits the belts themselves with the protection, so the strongest support compares villages that differ in belt condition while matching the other factors that could explain damage — and B reports exactly that controlled contrast.\n\n**The Full Solution:**\n- The team's claim is causal: intact mangrove belts reduce storm damage by absorbing wave energy.\n- The stated worry is confounding — sheltered coasts might both keep their mangroves and suffer gentler seas.\n- Choice B breaks the confound: villages alike in elevation, exposure, and distance from landfall diverged in damage according to the state of their belts.\n\n**Why the other choices are wrong:**\n- A: It reports the confound itself — belts thriving on naturally sheltered coasts — which undermines rather than supports the causal claim.\n- C: Faster regrowth after storms says nothing about whether belts protected the villages behind them.\n- D: Residents' beliefs about the belts are testimony, not a controlled measure of protection."
 }

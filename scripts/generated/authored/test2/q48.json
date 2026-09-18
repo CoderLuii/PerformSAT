@@ -6,26 +6,26 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 2,
-  "passage": "Early radio engineers assumed that the short wavelengths fading quickly near a transmitter were useless for long-distance work, so those frequencies were left to amateur operators. The amateurs' transmitters were feeble by professional ______ under the right conditions, their weak signals could travel around the planet by bouncing off the upper atmosphere.",
+  "passage": "In early September 1859, telegraph systems across Europe and North America failed almost in unison — operators reported sparking equipment, and some who disconnected their batteries found that their lines carried current ______ the cause was a solar storm so intense that auroras were reported near the tropics.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
     {
       "id": "A",
-      "text": "standards however"
+      "text": "anyway, the"
     },
     {
       "id": "B",
-      "text": "standards, however,"
+      "text": "anyway — the"
     },
     {
       "id": "C",
-      "text": "standards; however,"
+      "text": "anyway; the"
     },
     {
       "id": "D",
-      "text": "standards, however;"
+      "text": "anyway, however, the"
     }
   ],
   "correctAnswer": "C",
-  "explanation": "The correct answer is C. Two independent clauses meet at the blank: \"The amateurs' transmitters were feeble by professional standards\" and \"under the right conditions, their weak signals could travel around the planet by bouncing off the upper atmosphere.\" The conjunctive adverb \"however\" links them by marking the contrast between the equipment's weakness and its surprising reach, and when \"however\" joins two independent clauses this way, Standard English requires a semicolon before it and a comma after it. Choice A runs the clauses together with no punctuation at all. Choice B sets \"however\" off with commas alone, producing a comma splice between the two clauses. Choice D reverses the required marks, placing the comma at the clause boundary and the semicolon after \"however,\" which strands the second clause without a grammatical connection to the first."
+  "explanation": "**Choice C is correct.** The sentence's first half is an independent clause carrying a dash-opened supplement (\"— operators reported... carried current anyway\"), and \"the cause was a solar storm...\" is a second independent clause. A semicolon is the mark that can close off the whole first statement, supplement included, and join it to the second clause.\n\n**The Full Solution:**\n- Map the architecture: main clause (\"telegraph systems... failed almost in unison\"), then a dash introducing an elaborating supplement about the operators, which runs through \"carried current anyway.\"\n- What follows the blank — \"the cause was a solar storm so intense that auroras were reported near the tropics\" — is a fresh independent clause.\n- Joining two independent statements without a conjunction requires a semicolon (or a period); the semicolon in choice C provides the boundary while keeping the cause tightly linked to the event.\n\n**Why the other choices are wrong:**\n- A: A bare comma between the two independent statements is a comma splice, no matter how much structure precedes it.\n- B: A second dash would read as closing the supplement and resuming the opening clause — but \"telegraph systems... failed almost in unison the cause was a solar storm\" fuses two clauses with no boundary at all.\n- D: Inserting \"however\" between commas adds a contrastive adverb where no contrast exists — the cause explains the failures rather than opposing them — and still leaves the underlying comma splice unrepaired."
 }

@@ -5,30 +5,30 @@
  "band": 4,
  "domain": "expression-of-ideas",
  "skill": "transitions",
+ "type": "multiple-choice",
+ "passage": "Languages carve the color spectrum into vocabulary in strikingly different ways: some supply their speakers with a dozen basic color words, others with as few as three. Surveys of vocabulary across hundreds of unrelated languages, however, find that the variation is far from arbitrary. ______ the inventories form an orderly sequence: if a language has only three basic color terms, they will name black, white, and red, and terms for green, yellow, and blue enter the vocabulary in a small number of predictable orders.",
  "question": "Which choice completes the text with the most logical transition?",
  "choices": [
   {
    "id": "A",
-   "text": "For instance,"
+   "text": "Likewise,"
   },
   {
    "id": "B",
-   "text": "As a result,"
+   "text": "In any case,"
   },
   {
    "id": "C",
-   "text": "Even so,"
+   "text": "Instead,"
   },
   {
    "id": "D",
-   "text": "In other words,"
+   "text": "Accordingly,"
   }
  ],
  "correctAnswer": "C",
- "explanation": "The correct answer is C, \"Even so,\". The passage explains that several systems exist for writing dance down, the most widely used being Labanotation, which records the direction, level, and timing of each motion. The sentence after the blank then registers a limitation: these systems remain far less standardized than musical notation, so a dance written in one often cannot be read by someone trained in another. The relation is concessive — the systems exist, yet they fall short — which \"Even so,\" marks. \"As a result,\" would make the limitation a consequence of the systems' existence; \"For instance,\" would offer it as an example; and \"In other words,\" would present it as a restatement, when it adds a new, contrasting point.",
+ "explanation": "**Choice C is correct.** The previous sentence rejects one characterization — the variation \"is far from arbitrary\" — and the blank sentence supplies the correct characterization in its place: the inventories follow an orderly, predictable sequence. \"Instead\" is the transition for substituting the right account after negating the wrong one.\n\n**The Full Solution:**\n- Track the negation: not arbitrary. What then? The next sentence answers with the positive finding (black, white, red first; green, yellow, blue in predictable orders).\n- Replacement after denial is precisely the \"not X; instead, Y\" frame.\n\n**Why the other choices are wrong:**\n- A: \"Likewise\" would add a parallel point, but the sentence replaces a rejected description rather than echoing an accepted one.\n- B: \"In any case\" waves the previous sentence aside as if it did not matter, when the blank sentence depends on it directly.\n- D: \"Accordingly\" treats the orderly sequence as a consequence of non-arbitrariness, but the sequence is not caused by the survey finding — it is the content of that finding, stated positively.",
  "_meta": {
-  "anchor": "Dance notation; Labanotation and its limits [theme: dance notation]"
- },
- "passage": "Choreography is notoriously hard to preserve: unlike a musical score, a dance lives mainly in the bodies of the performers who learn it. Several systems have been devised to write movement down, the most widely used being Labanotation, which records the direction, level, and timing of each motion on a vertical staff. ______ such systems remain far less standardized than musical notation, so a dance recorded in one system often cannot be read by someone trained in another.",
- "type": "multiple-choice"
+  "anchor": "Basic color-term hierarchies across languages — replacement transition"
+ }
 }

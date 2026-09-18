@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "text-structure-and-purpose",
-  "question": "Which choice best states the main purpose of the text?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "To argue that handwritten manuscript books were on the whole considerably more accurate than the earliest printed books, because individual scribes routinely corrected the texts that they copied."
-    },
-    {
-      "id": "B",
-      "text": "To describe the specific mechanical steps by which metal type was cast and then assembled into a printed page in the fifteenth century."
-    },
-    {
-      "id": "C",
-      "text": "To trace the spread of the printing press from its place of invention to the other major cities of fifteenth-century Europe."
-    },
-    {
-      "id": "D",
-      "text": "To explain how the identical copies produced by printing, not merely its speed, changed the way written knowledge could be shared and referred to."
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. The passage contrasts hand-copied books, where no two copies matched, with printed editions, where every sheet is identical, and argues that this fixity—not just printing's speed—changed how knowledge could be shared and cited. Choice D states that purpose. Choice A pulls out a side detail (scribes' corrections) and inflates it into a claim about accuracy the passage does not defend; Choice B focuses on how type was cast, which the passage does not cover; and Choice C concerns the press's geographic spread, another topic the passage never takes up.",
-  "passage": "Before the mid-fifteenth century, every copy of a book in Europe was written out by hand, and no two copies were exactly alike: scribes abbreviated differently, made errors, and silently corrected the texts they copied. The printing press changed the nature of a \"copy.\" Once a page had been set in metal type, every sheet pulled from it was identical, and a mistake, once set, was reproduced in every copy of the edition. Scholars have argued that this new fixity, as much as the speed of printing, transformed European intellectual life: for the first time a writer in one city could refer a reader in another to a specific page and be confident they were looking at exactly the same words.",
-  "_meta": {
-    "anchor": "typography/print history: the 'fixity' of identical printed copies (generic)"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "text-structure-and-purpose",
+ "question": "Which choice best states the main purpose of the text?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "To describe the engineering tests that first revealed cast iron's weakness in intense heat"
   },
-  "id": 1134,
-  "module": 2
+  {
+   "id": "B",
+   "text": "To argue that masonry construction deserved the reputation for fire safety that cast-iron fronts wrongly claimed"
+  },
+  {
+   "id": "C",
+   "text": "To trace the spread of cast-iron construction from warehouses into shops and lofts"
+  },
+  {
+   "id": "D",
+   "text": "To explain why a building technology stayed popular after one of its advertised advantages was discredited"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** The text sets up a puzzle — the fireproof claim was exposed as exaggeration, \"yet the fronts survived the embarrassment\" — and resolves it: the real appeal was daylight, and \"merchants kept ordering them for the light rather than the safety.\"\n\n**The Full Solution:**\n- First movement: the fireproof selling point and its public failure in the warehouse fires of the 1870s.\n- Pivot: \"Yet the fronts survived the embarrassment, because their real appeal lay elsewhere.\"\n- Second movement: slender columns, near-continuous windows, unmatched daylight — the surviving advantage. Explaining continued popularity after a discredited claim is precisely choice D.\n\n**Why the other choices are wrong:**\n- A: The weakness was revealed by actual fires, not engineering tests, and that revelation is the setup, not the point.\n- B: Masonry's sturdier showing is a supporting detail; the text mounts no case on masonry's behalf.\n- C: The path of cast iron's spread between building types is never traced.",
+ "passage": "Cast-iron fronts were sold as fireproof, and that claim helped fill the commercial districts of nineteenth-century American cities with them. Fire itself exposed the exaggeration: unprotected iron softens in intense heat, and in the great warehouse fires of the 1870s, whole facades buckled while thick masonry walls beside them stood. Yet the fronts survived the embarrassment, because their real appeal lay elsewhere. Iron columns were slender enough to open a ground floor into an almost continuous window, flooding shops and lofts with daylight no load-bearing stone wall could admit, and merchants kept ordering the fronts for the light rather than the safety.",
+ "_meta": {
+  "anchor": "cast-iron storefront architecture — fireproof claim discredited, daylight advantage sustained demand",
+  "distractors": {
+   "A": "wrong revelation mechanism, setup mistaken for point",
+   "B": "supporting detail inflated into thesis",
+   "C": "spread never traced"
+  }
+ },
+ "id": 1134,
+ "module": 2
 }

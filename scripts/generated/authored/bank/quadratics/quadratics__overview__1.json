@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "question": "Each of the following defines a function $f$ of the variable $x$. For which definition is $f$ a quadratic function?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(x) = 5x - 9$"
+    },
+    {
+      "id": "B",
+      "text": "$f(x) = 4x^3 - x$"
+    },
+    {
+      "id": "C",
+      "text": "$f(x) = 7 - 2x^2$"
+    },
+    {
+      "id": "D",
+      "text": "$f(x) = \\dfrac{6}{x^2}$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "degree 1",
+    "B": "degree 3",
+    "D": "variable in the denominator gives exponent -2"
+  },
+  "correctAnswer": "C",
+  "hint": "Look for a highest power of exactly $2$, with the variable in the numerator.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~15s):** Only $7 - 2x^2$ has a highest power of $2$ with a nonzero coefficient.\n\n**The Full Solution:**\nStep 1: A quadratic function can be written as $f(x) = ax^2 + bx + c$ with $a \\neq 0$.\nStep 2: Rewriting choice C in that order gives $f(x) = -2x^2 + 0x + 7$, so $a = -2$, $b = 0$, and $c = 7$.\nStep 3: Since $a \\neq 0$ and no higher power appears, $f$ is quadratic. Check the shape: its graph is a parabola opening downward. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A: the highest power of $x$ is $1$, so this is a linear function.\n* Choice B: the highest power is $3$, making this a cubic function even though a lower-degree term is present.\n* Choice D: the variable sits in the denominator, so the exponent is $-2$; this is a rational function, not a quadratic one.\n\n**Test Day Takeaway:** Degree is decided by the HIGHEST power of the variable, and a variable in a denominator carries a negative exponent."
+}

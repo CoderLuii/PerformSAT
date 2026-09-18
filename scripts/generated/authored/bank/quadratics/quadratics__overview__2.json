@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "question": "The quadratic function $g$ is defined by $g(x) = 9 - 5x + 6x^2$. When $g(x)$ is written in the form $ax^2 + bx + c$, what is the value of $b$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-5$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$6$"
+    },
+    {
+      "id": "D",
+      "text": "$9$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "drops the sign",
+    "C": "reports a",
+    "D": "reports c"
+  },
+  "correctAnswer": "A",
+  "hint": "Reorder the terms by descending power first, and carry each sign with its coefficient.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~10s):** Reordered, $g(x) = 6x^2 - 5x + 9$, so $b = -5$.\n\n**The Full Solution:**\nStep 1: The form $ax^2 + bx + c$ lists the terms from the highest power down, so rewrite $g(x) = 9 - 5x + 6x^2$ as $g(x) = 6x^2 - 5x + 9$.\nStep 2: Match term by term: $a = 6$, $b = -5$, and $c = 9$.\nStep 3: The coefficient of $x$ is $b = -5$. Check by evaluating both forms at $x = 1$: $9 - 5 + 6 = 10$ and $6 - 5 + 9 = 10$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($5$): reads the coefficient of $x$ but drops the minus sign that belongs to it.\n* Choice C ($6$): reports $a$, the coefficient of $x^2$.\n* Choice D ($9$): reports $c$, the constant term, which happens to be written first here.\n\n**Test Day Takeaway:** A coefficient always travels with the sign in front of it, and the order the terms happen to be printed in is not the standard-form order."
+}

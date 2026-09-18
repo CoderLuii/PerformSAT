@@ -21,12 +21,14 @@ import {
 } from './graphs/SATGraphCore';
 
 /**
- * Professional SAT-style SVG diagram components for practice questions
- * Matching Test Innovators style: gray background, white grid, -10 to 10 axes
+ * Professional SAT-style SVG diagram components for practice questions.
+ * Bluebook ink conventions (2026-08-13 restyle, founder-approved direction):
+ * white ground, faint #e0e0e0 gridlines, pure-black axes/curves/points, serif
+ * tick numbers and labels, emphasis by geometry (dash, open point) never color.
  */
 
 // =============================================================================
-// SHARED GRID COMPONENT - Test Innovators Style
+// SHARED GRID COMPONENT - official Bluebook ink style
 // =============================================================================
 const SATGrid = ({
   size = 300,
@@ -113,49 +115,49 @@ const SATGrid = ({
     <svg width={width} height={height} style={{ display: 'block', margin: '0 auto' }}>
       {/* Title (top center) */}
       {title && (
-        <text x={padLeft + gridWidth / 2} y={padTop - 6} fontSize="13" fontFamily="Arial, sans-serif" textAnchor="middle" fontWeight="600" fill="#333">{title}</text>
+        <text x={padLeft + gridWidth / 2} y={padTop - 6} fontSize="13" fontFamily="Times New Roman, Georgia, serif" textAnchor="middle" fontWeight="bold" fill="#000">{title}</text>
       )}
 
-      {/* Light gray background */}
-      <rect x={padLeft} y={padTop} width={gridWidth} height={gridHeight} fill="#e5e5e5" />
-
-      {/* White grid lines */}
+      {/* Faint gridlines on white (official ink style — no gray plate) */}
       {xGridLines.map(n => (
-        <line key={`v${n}`} x1={toX(n)} y1={padTop} x2={toX(n)} y2={padTop + gridHeight} stroke="white" strokeWidth="1" />
+        <line key={`v${n}`} x1={toX(n)} y1={padTop} x2={toX(n)} y2={padTop + gridHeight} stroke="#e0e0e0" strokeWidth="0.8" />
       ))}
       {yGridLines.map(n => (
-        <line key={`h${n}`} x1={padLeft} y1={toY(n)} x2={padLeft + gridWidth} y2={toY(n)} stroke="white" strokeWidth="1" />
+        <line key={`h${n}`} x1={padLeft} y1={toY(n)} x2={padLeft + gridWidth} y2={toY(n)} stroke="#e0e0e0" strokeWidth="0.8" />
       ))}
 
       {/* X-axis with arrow */}
-      <line x1={padLeft - 10} y1={toY(axisY)} x2={padLeft + gridWidth + 10} y2={toY(axisY)} stroke="#444" strokeWidth="1.5" />
-      <polygon points={`${padLeft + gridWidth + 18},${toY(axisY)} ${padLeft + gridWidth + 8},${toY(axisY) - 4} ${padLeft + gridWidth + 8},${toY(axisY) + 4}`} fill="#444" />
+      <line x1={padLeft - 10} y1={toY(axisY)} x2={padLeft + gridWidth + 10} y2={toY(axisY)} stroke="#000" strokeWidth="1.5" />
+      <polygon points={`${padLeft + gridWidth + 18},${toY(axisY)} ${padLeft + gridWidth + 8},${toY(axisY) - 4} ${padLeft + gridWidth + 8},${toY(axisY) + 4}`} fill="#000" />
 
       {/* Y-axis with arrow */}
-      <line x1={toX(axisX)} y1={padTop + gridHeight + 10} x2={toX(axisX)} y2={padTop - 10} stroke="#444" strokeWidth="1.5" />
-      <polygon points={`${toX(axisX)},${padTop - 18} ${toX(axisX) - 4},${padTop - 8} ${toX(axisX) + 4},${padTop - 8}`} fill="#444" />
+      <line x1={toX(axisX)} y1={padTop + gridHeight + 10} x2={toX(axisX)} y2={padTop - 10} stroke="#000" strokeWidth="1.5" />
+      <polygon points={`${toX(axisX)},${padTop - 18} ${toX(axisX) - 4},${padTop - 8} ${toX(axisX) + 4},${padTop - 8}`} fill="#000" />
 
-      {/* Y axis tick label (only when no contextual yLabel) */}
+      {/* Axis letters at the arrow tips (serif italic, official convention) */}
       {!yLabel && (
-        <text x={toX(axisX) + 8} y={padTop - 10} fontSize="14" fontFamily="Times New Roman, serif" fontStyle="italic" fill="#333">y</text>
+        <text x={toX(axisX) + 8} y={padTop - 10} fontSize="14" fontFamily="Times New Roman, serif" fontStyle="italic" fill="#000">y</text>
+      )}
+      {!xLabel && (
+        <text x={padLeft + gridWidth + 12} y={toY(axisY) + 16} fontSize="14" fontFamily="Times New Roman, serif" fontStyle="italic" fill="#000">x</text>
       )}
 
       {/* X-axis tick labels */}
       {getXLabels().map(x => (
-        <text key={`xl${x}`} x={toX(x)} y={toY(axisY) + 15} fontSize="12" fontFamily="Arial, sans-serif" textAnchor="middle" fill="#333">{x}</text>
+        <text key={`xl${x}`} x={toX(x)} y={toY(axisY) + 15} fontSize="12" fontFamily="Times New Roman, Georgia, serif" textAnchor="middle" fill="#000">{x}</text>
       ))}
 
       {/* Y-axis tick labels */}
       {getYLabels().map(y => (
-        <text key={`yl${y}`} x={toX(axisX) - 5} y={toY(y) + 4} fontSize="12" fontFamily="Arial, sans-serif" textAnchor="end" fill="#333">{y}</text>
+        <text key={`yl${y}`} x={toX(axisX) - 5} y={toY(y) + 4} fontSize="12" fontFamily="Times New Roman, Georgia, serif" textAnchor="end" fill="#000">{y}</text>
       ))}
 
-      {/* Contextual axis labels */}
+      {/* Contextual axis labels (serif upright, like official figure captions) */}
       {xLabel && (
-        <text x={padLeft + gridWidth / 2} y={height - 6} fontSize="12" fontFamily="Arial, sans-serif" textAnchor="middle" fontStyle="italic" fill="#333">{xLabel}</text>
+        <text x={padLeft + gridWidth / 2} y={height - 6} fontSize="13" fontFamily="Times New Roman, Georgia, serif" textAnchor="middle" fill="#000">{xLabel}</text>
       )}
       {yLabel && (
-        <text x={12} y={padTop + gridHeight / 2} fontSize="12" fontFamily="Arial, sans-serif" textAnchor="middle" fontStyle="italic" fill="#333" transform={`rotate(-90, 12, ${padTop + gridHeight / 2})`}>{yLabel}</text>
+        <text x={12} y={padTop + gridHeight / 2} fontSize="13" fontFamily="Times New Roman, Georgia, serif" textAnchor="middle" fill="#000" transform={`rotate(-90, 12, ${padTop + gridHeight / 2})`}>{yLabel}</text>
       )}
 
       {/* Clip path for drawing inside grid only */}
@@ -352,8 +354,6 @@ export const CoordinatePointsDiagram = ({ points = [], xMin = -10, xMax = 10, yM
 // =============================================================================
 export const QuadraticInterceptsDiagram = ({ intercepts = [0, 4], vertex = null }) => {
   const [x1, x2] = intercepts;
-  const h = (x1 + x2) / 2;
-  const k = -0.3 * Math.pow((x2 - x1) / 2, 2);
 
   const generatePath = (toX, toY) => {
     let path = '';
@@ -418,19 +418,22 @@ export const ScatterplotDiagram = ({
         const lineYAtX = (x) => bestFitLine ? bestFitLine.slope * x + bestFitLine.intercept : null;
         return (
           <g>
+            {/* Official ink: best-fit is black-dashed, the highlighted point is
+                an OPEN circle, the residual a black dashed drop — emphasis by
+                geometry, never color (Bluebook restyle 2026-08-13). */}
             {bestFitLine && (
               <line
                 x1={toX(xMin)}
                 y1={toY(bestFitLine.slope * xMin + bestFitLine.intercept)}
                 x2={toX(xMax)}
                 y2={toY(bestFitLine.slope * xMax + bestFitLine.intercept)}
-                stroke="#2563eb"
-                strokeWidth={2}
-                strokeDasharray="6,3"
+                stroke="#000"
+                strokeWidth={1.5}
+                strokeDasharray="6,4"
               />
             )}
             {points.map(([px, py], i) => (
-              <circle key={i} cx={toX(px)} cy={toY(py)} r="4" fill="#333" />
+              <circle key={i} cx={toX(px)} cy={toY(py)} r="4" fill="#000" />
             ))}
             {highlightPoint && bestFitLine && showResidual && (
               <line
@@ -438,8 +441,8 @@ export const ScatterplotDiagram = ({
                 y1={toY(highlightPoint[1])}
                 x2={toX(highlightPoint[0])}
                 y2={toY(lineYAtX(highlightPoint[0]))}
-                stroke="#ea580c"
-                strokeWidth={1.5}
+                stroke="#000"
+                strokeWidth={1.2}
                 strokeDasharray="3,3"
               />
             )}
@@ -448,18 +451,19 @@ export const ScatterplotDiagram = ({
                 <circle
                   cx={toX(highlightPoint[0])}
                   cy={toY(highlightPoint[1])}
-                  r="6"
-                  fill="#ea580c"
-                  stroke="#9a3412"
-                  strokeWidth="1"
+                  r="5.5"
+                  fill="#fff"
+                  stroke="#000"
+                  strokeWidth="1.6"
                 />
                 {highlightLabel && (
                   <text
                     x={toX(highlightPoint[0]) + 9}
                     y={toY(highlightPoint[1]) - 6}
-                    fontSize="11"
-                    fontFamily="Arial, sans-serif"
-                    fill="#9a3412"
+                    fontSize="12"
+                    fontFamily="Times New Roman, Georgia, serif"
+                    fontStyle="italic"
+                    fill="#000"
                   >
                     {highlightLabel}
                   </text>
@@ -612,26 +616,30 @@ export const GeneralFunctionDiagram = ({ points = [[0, 3], [1, -2]], xRange = [-
 
 // =============================================================================
 // TABLE DIAGRAM - For x/f(x) tables (2 columns)
+// Official x/y value-table skin: white cells, black rules, serif math-italic
+// column heads (matches the educator-bank tables — no colored fills).
 // =============================================================================
 export const TableDiagram = ({ rows = [], xHeader = "x", yHeader = "f(x)" }) => {
   return (
     <table style={{
       borderCollapse: 'collapse',
-      fontSize: '14px',
-      fontFamily: 'system-ui, -apple-system, sans-serif',
-      margin: '0 auto'
+      fontSize: '15px',
+      fontFamily: 'Times New Roman, Georgia, serif',
+      margin: '0 auto',
+      background: '#fff',
+      color: '#111',
     }}>
       <thead>
         <tr>
-          <th style={{ padding: '8px 24px', border: '1px solid #ccc', background: '#e8f4fc', fontWeight: '500', fontStyle: 'italic' }}>{xHeader}</th>
-          <th style={{ padding: '8px 24px', border: '1px solid #ccc', background: '#e8f4fc', fontWeight: '500', fontStyle: 'italic' }}>{yHeader}</th>
+          <th style={{ padding: '6px 26px', border: '1.5px solid #111', background: '#fff', fontWeight: 'normal', fontStyle: 'italic' }}>{xHeader}</th>
+          <th style={{ padding: '6px 26px', border: '1.5px solid #111', background: '#fff', fontWeight: 'normal', fontStyle: 'italic' }}>{yHeader}</th>
         </tr>
       </thead>
       <tbody>
         {rows.map((row, i) => (
           <tr key={i}>
-            <td style={{ padding: '6px 24px', border: '1px solid #ccc', textAlign: 'center' }}>{row[0]}</td>
-            <td style={{ padding: '6px 24px', border: '1px solid #ccc', textAlign: 'center' }}>{row[1]}</td>
+            <td style={{ padding: '5px 26px', border: '1px solid #111', textAlign: 'center' }}>{row[0]}</td>
+            <td style={{ padding: '5px 26px', border: '1px solid #111', textAlign: 'center' }}>{row[1]}</td>
           </tr>
         ))}
       </tbody>
@@ -641,23 +649,29 @@ export const TableDiagram = ({ rows = [], xHeader = "x", yHeader = "f(x)" }) => 
 
 // =============================================================================
 // DATA TABLE DIAGRAM - For multi-column tables (like probability tables)
+// Official data-table skin: white cells, black rules, bold sans headers,
+// serif values — one skin everywhere (Bluebook restyle 2026-08-13).
 // =============================================================================
 export const DataTableDiagram = ({ headers = [], rows = [] }) => {
   return (
     <table style={{
       borderCollapse: 'collapse',
-      fontSize: '14px',
-      fontFamily: 'system-ui, -apple-system, sans-serif',
-      margin: '0 auto'
+      fontSize: '15px',
+      fontFamily: 'Times New Roman, Georgia, serif',
+      margin: '0 auto',
+      background: '#fff',
+      color: '#111',
     }}>
       <thead>
         <tr>
           {headers.map((header, i) => (
             <th key={i} style={{
-              padding: '8px 16px',
-              border: '1px solid #ccc',
-              background: i === 0 ? '#f5f5f5' : '#e8f4fc',
-              fontWeight: '500',
+              padding: '7px 18px',
+              border: '1.5px solid #111',
+              background: '#fff',
+              fontWeight: 'bold',
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+              fontSize: '14px',
               textAlign: 'center'
             }}>
               {header}
@@ -670,9 +684,9 @@ export const DataTableDiagram = ({ headers = [], rows = [] }) => {
           <tr key={rowIdx}>
             {row.map((cell, colIdx) => (
               <td key={colIdx} style={{
-                padding: '6px 16px',
-                border: '1px solid #ccc',
-                background: colIdx === 0 ? '#f9f9f9' : '#fff',
+                padding: '5px 18px',
+                border: '1px solid #111',
+                background: '#fff',
                 textAlign: colIdx === 0 ? 'left' : 'center'
               }}>
                 {cell}
@@ -766,8 +780,11 @@ const NestedRightTrianglesDiagram = ({
   const A = [pad, pad];
   const C = [pad + 70, pad];
   const E = [width - pad, pad];
-  const B = [pad + 70, pad + 80];
   const D = [width - pad, height - pad];
+  // B is defined to lie ON segment AD (directly below C, since BC ⊥ AC), so
+  // compute it from the diagonal instead of hardcoding — a fixed y put B ~37px
+  // past the diagonal, drawing C→B overshooting the line B belongs to.
+  const B = [C[0], A[1] + ((C[0] - A[0]) * (D[1] - A[1])) / (D[0] - A[0])];
 
   const rightAngleSize = 10;
   // Interior reference for pushing side labels to the outside.
@@ -849,10 +866,40 @@ const NestedRightTrianglesDiagram = ({
 // =============================================================================
 // MAIN QUESTION DIAGRAM COMPONENT - Switch based on type
 // =============================================================================
+// Official caption under any figure whose measurements aren't to scale.
+// Authoring opt-in: diagram: { type, params: { ..., figureNote: true } }.
+// Rendered by the dispatcher so every one of the 33 types supports it
+// without per-component wiring. Serif, centered — exactly the Bluebook line.
+const FigureNote = () => (
+  <div
+    style={{
+      fontFamily: 'Times New Roman, Georgia, serif',
+      fontSize: '14px',
+      color: '#111',
+      textAlign: 'center',
+      marginTop: '8px',
+    }}
+  >
+    Note: Figure not drawn to scale.
+  </div>
+);
+
 const QuestionDiagram = ({ type, params = {} }) => {
   // Default to {} so cases that read a param before the {...params} spread
   // (e.g. 'table' → params.headers, 'parallelLines' → params.lineLabels) don't
   // throw on a diagram spec that omits params entirely.
+  // figureNote is dispatcher-level furniture, not a component param — strip it
+  // before the spread so components never see an unknown prop.
+  const { figureNote, ...rest } = params;
+  if (figureNote) {
+    return (
+      <div style={{ display: 'inline-block' }}>
+        <QuestionDiagram type={type} params={rest} />
+        <FigureNote />
+      </div>
+    );
+  }
+  params = rest;
   switch (type) {
     case 'rationalFunction':
       return <RationalFunctionDiagram {...params} />;

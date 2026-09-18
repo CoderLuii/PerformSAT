@@ -1,0 +1,58 @@
+{
+  "id": "bank-alg-455",
+  "question": "Line $n$ in the $xy$-plane is shown. The points $(-4, -1)$ and $(4, 5)$ lie on line $n$. Which of the following is the slope of line $n$?",
+  "diagram": {
+    "type": "linearGraph",
+    "params": {
+      "slope": 0.75,
+      "yIntercept": 2,
+      "xRange": [
+        -6,
+        6
+      ],
+      "yRange": [
+        -4,
+        8
+      ],
+      "xTickInterval": 2,
+      "yTickInterval": 2,
+      "gridInterval": 1,
+      "showPoints": [
+        [
+          -4,
+          -1
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "label": "n"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-\\frac{4}{3}$"
+    },
+    {
+      "id": "B",
+      "text": "$\\frac{3}{4}$"
+    },
+    {
+      "id": "C",
+      "text": "$\\frac{4}{3}$"
+    },
+    {
+      "id": "D",
+      "text": "$6$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "is the negative reciprocal (a perpendicular slope); the line rises left to right, so its slope must be positive.",
+    "C": "puts the run over the rise, \\frac{8}{6}.",
+    "D": "reports the rise 6 without dividing by the run 8."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~8s):** From $(-4, -1)$ to $(4, 5)$ the line rises $6$ over a run of $8$: slope $\\frac{6}{8} = \\frac{3}{4}$.\n\n**The Full Solution:**\nStep 1: Slope $= \\frac{y_2 - y_1}{x_2 - x_1}$. Take $(x_1, y_1) = (-4, -1)$ and $(x_2, y_2) = (4, 5)$.\nStep 2: Rise $= 5 - (-1) = 6$; run $= 4 - (-4) = 8$. Slope $= \\frac{6}{8} = \\frac{3}{4}$.\nStep 3: Check against the graph: from $(-4, -1)$, moving right $4$ should raise the line by $\\frac{3}{4}(4) = 3$, reaching $(0, 2)$, the $y$-intercept shown. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-\\frac{4}{3}$): is the negative reciprocal (a perpendicular slope); the line rises left to right, so its slope must be positive.\n* Choice C ($\\frac{4}{3}$): puts the run over the rise, $\\frac{8}{6}$.\n* Choice D ($6$): reports the rise $6$ without dividing by the run $8$.\n\n**Test Day Takeaway:** Subtract both coordinates in the same order and keep rise on top; a rising line must end up with a positive slope."
+}

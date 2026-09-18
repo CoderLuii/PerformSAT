@@ -1,0 +1,29 @@
+{
+ "question": "Two cylindrical columns in a parking structure have equal volumes. The first has radius $r$ and height $h$, and the second has radius $\\frac{2r}{3}$. Which expression gives the height of the second column?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{4h}{9}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{2h}{3}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{3h}{2}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{9h}{4}$"
+  }
+ ],
+ "correctAnswer": "D",
+ "distractorNotes": {
+  "A": "inverts the relationship, multiplying the height by 4/9 instead of 9/4",
+  "B": "scales the height by the radius factor 2/3",
+  "C": "uses the reciprocal factor 3/2 without squaring it"
+ },
+ "explanation": "**SAT Pattern: Cylinder Volume**\n\n**Choice D is correct.**\n\n**The Fast Way (~35s):** Equal volumes force $r^2 h$ to be constant, and the radius shrank by $\\frac{2}{3}$, so the height grows by $\\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4}$.\n\n**The Full Solution:**\nStep 1: Set the volumes equal: $\\pi r^2 h = \\pi\\left(\\frac{2r}{3}\\right)^2 H$, where $H$ is the second column's height.\nStep 2: Simplify the right side: $\\left(\\frac{2r}{3}\\right)^2 = \\frac{4r^2}{9}$, so $r^2 h = \\frac{4r^2}{9}H$.\nStep 3: Divide by $r^2$ and solve: $H = \\frac{9h}{4}$. Check: with $r = 3$ and $h = 4$ the first holds $36\\pi$, and the second has radius $2$ and height $9$, holding $36\\pi$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{4h}{9}$): multiplies by the radius-squared factor instead of dividing by it, shrinking a column that must grow.\n* Choice B ($\\frac{2h}{3}$): copies the radius factor onto the height and moves it the wrong way.\n* Choice C ($\\frac{3h}{2}$): inverts the factor but forgets that the radius appears squared.\n\n**Test Day Takeaway:** Constant volume means $r^2h$ is fixed — shrinking the radius by a factor multiplies the height by the SQUARE of its reciprocal.",
+ "id": "bank-geo-090"
+}

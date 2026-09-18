@@ -1,0 +1,6 @@
+{
+ "question": "Over a twelve-week training block the counts satisfy $x = 5y - 8$ and $2x + 7y = 69$, where $x$ is the number of interval sessions and $y$ is the number of long runs completed in the block. What is the value of $x + y$?",
+ "correctAnswer": "22",
+ "explanation": "**SAT Pattern: Substitution then Sum**\n\n**The correct answer is $22$.**\n\n**The Fast Way (~40s):** Substituting gives $17y = 85$, so $y = 5$, $x = 17$, and $x + y = 22$.\n\n**The Full Solution:**\n\nStep 1: Replace $x$ in the second equation: $2(5y - 8) + 7y = 69$.\n\nStep 2: Distribute and combine: $10y - 16 + 7y = 69$, so $17y = 85$ and $y = 5$.\n\nStep 3: Back-substitute: $x = 5(5) - 8 = 17$, so $x + y = 22$. Check: $2(17) + 7(5) = 34 + 35 = 69$.\n\n**Common Mistakes:** Forgetting to distribute the $2$ and solving $5y - 8 + 7y = 69$ for $y \\approx 6.4$; stopping at $y = 5$; subtracting and reporting $x - y = 12$.\n\n**Test Day Takeaway:** Distribute across the substituted expression, solve for the one remaining variable, then go back for the other before answering the question asked.",
+ "id": "bank-alg-053"
+}

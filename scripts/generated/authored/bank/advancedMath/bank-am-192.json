@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-192",
+ "question": "An e-book platform's license renewals match the prior year's count in the two months $p$ and $q$, which are the solutions of $x^2-13x+30=0$. What is the value of $p^2+q^2$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$109$"
+  },
+  {
+   "id": "B",
+   "text": "$139$"
+  },
+  {
+   "id": "C",
+   "text": "$169$"
+  },
+  {
+   "id": "D",
+   "text": "$229$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts pq = 30 once instead of 2pq = 60, giving 139",
+  "C": "reports (p+q)^2 = 169 and never subtracts 2pq",
+  "D": "adds 2pq instead of subtracting it, giving 229"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Sum/Product of Roots — Vieta's**\n\n**Choice A is correct.**\n\n**The Fast Way (~25s):** $p+q=13$ and $pq=30$, so $p^2+q^2=(p+q)^2-2pq=169-60=109$.\n\n**The Full Solution:**\nStep 1: By Vieta's, $p+q=-\\frac{-13}{1}=13$ and $pq=\\frac{30}{1}=30$.\nStep 2: Use the identity $p^2+q^2=(p+q)^2-2pq$.\nStep 3: Substitute: $13^2-2(30)=169-60=109$. Check: the solutions are $3$ and $10$, and $9+100=109$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($139$): subtracts $pq=30$ once instead of $2pq=60$.\n* Choice C ($169$): reports $(p+q)^2=169$ and never subtracts the $2pq$ term.\n* Choice D ($229$): adds $2pq=60$ to $169$ instead of subtracting it.\n\n**Test Day Takeaway:** Any symmetric expression in the two solutions can be rebuilt from their sum and product — no need to solve the quadratic."
+}

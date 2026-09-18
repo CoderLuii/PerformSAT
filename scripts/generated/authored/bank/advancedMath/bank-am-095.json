@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-095",
+ "question": "A store's daily count of reusable produce bags returned is modeled by a quadratic function $h$ of the day number $d$, where $h(3)=h(11)=20$ and the least value of $h$ is $4$. What is the value of $h(5)$?",
+ "correctAnswer": "8",
+ "explanation": "**SAT Pattern: Vertex Form from Two Conditions**\n\n**The correct answer is $8$.**\n\n**The Fast Way (~30s):** Equal outputs at $3$ and $11$ put the axis at $d=7$; then $16a+4=20$ gives $a=1$, and $h(5)=4+4=8$.\n\n**The Full Solution:**\nStep 1: Because $h(3)=h(11)$, the axis of symmetry is halfway between them: $d=\\frac{3+11}{2}=7$. The least value $4$ occurs there, so $h(d)=a(d-7)^2+4$.\nStep 2: Use $h(3)=20$: $a(3-7)^2+4=20$, so $16a=16$ and $a=1$.\nStep 3: Evaluate: $h(5)=(5-7)^2+4=4+4=8$. Check: $h(11)=(4)^2+4=20$ as required ✓\n\n**Common Mistakes:**\n* $4$: reports the least value of $h$ rather than $h(5)$.\n* $20$: assumes $d=5$ is a symmetric partner of $d=3$; the partner of $5$ is $9$.\n* $24$: adds the least value $4$ to the given output $20$.\n\n**Test Day Takeaway:** Two equal outputs locate the axis; the stated minimum supplies the vertex — together they are the two conditions you need."
+}

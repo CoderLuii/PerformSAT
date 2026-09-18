@@ -1,0 +1,52 @@
+{
+  "id": 3,
+  "question": "The height, in meters, of a drone above its launch pad $t$ seconds after takeoff is modeled by $h(t) = -2t^2 + 12t$, and the graph of this model is shown. What is the maximum height, in meters, that the drone reaches?",
+  "diagram": {
+    "type": "parabola",
+    "params": {
+      "vertex": {
+        "h": 3,
+        "k": 18
+      },
+      "a": -2,
+      "xRange": [
+        0,
+        7
+      ],
+      "yRange": [
+        0,
+        20
+      ],
+      "xTickInterval": 1,
+      "yTickInterval": 4,
+      "gridInterval": 2,
+      "showVertex": false
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$3$"
+    },
+    {
+      "id": "B",
+      "text": "$6$"
+    },
+    {
+      "id": "C",
+      "text": "$12$"
+    },
+    {
+      "id": "D",
+      "text": "$18$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reports the time, not the height",
+    "B": "reports the landing time",
+    "C": "reports the coefficient of t"
+  },
+  "correctAnswer": "D",
+  "hint": "A negative leading coefficient means the vertex is the highest point, so find the time first and then the height.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~25s):** The vertex is at $t = -\\frac{12}{2(-2)} = 3$, and $h(3) = -18 + 36 = 18$.\n\n**The Full Solution:**\nStep 1: The leading coefficient $-2$ is negative, so the parabola opens downward and the vertex gives the maximum height.\nStep 2: The vertex occurs at $t = -\\frac{b}{2a} = -\\frac{12}{2(-2)} = 3$ seconds.\nStep 3: Evaluate the model there: $h(3) = -2(3)^2 + 12(3) = -18 + 36 = 18$ meters. Check the symmetry: $h(0) = 0$ and $h(6) = -72 + 72 = 0$, and $3$ is the midpoint of $0$ and $6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($3$): reports the TIME at which the maximum occurs rather than the height.\n* Choice B ($6$): reports the time at which the drone returns to the launch pad's height.\n* Choice C ($12$): reports the coefficient of $t$ instead of evaluating the model at the vertex.\n\n**Test Day Takeaway:** A maximum-value question has two steps: find the input at the vertex, then substitute it back to get the output the question actually asks for."
+}

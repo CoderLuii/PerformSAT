@@ -1,0 +1,40 @@
+{
+ "id": "bank-am-166",
+ "question": "A utility charts natural gas meter readings above a building's baseline with the quadratic function $f$ graphed in the $xy$-plane. If $f(x)=-\\frac{1}{2}x^2+bx+c$, where $b$ and $c$ are constants, what is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-1$"
+  },
+  {
+   "id": "B",
+   "text": "$7.5$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$8.5$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the x-coordinate of the vertex",
+  "C": "reports the maximum value as c",
+  "D": "adds 0.5 to 8 instead of subtracting it"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** The vertex is $(-1,8)$, so $f(x)=-\\frac{1}{2}(x+1)^2+8$; the constant term is $f(0)=-\\frac{1}{2}+8=7.5$.\n\n**The Full Solution:**\nStep 1: Read the highest point of the graph: $(-1,8)$, so $f(x)=-\\frac{1}{2}(x+1)^2+8$.\nStep 2: In $-\\frac{1}{2}x^2+bx+c$ the constant $c$ equals $f(0)$.\nStep 3: Compute $f(0)=-\\frac{1}{2}(0+1)^2+8=-\\frac{1}{2}+8=7.5$. Check: expanding gives $-\\frac{1}{2}x^2-x+7.5$, whose constant term is $7.5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-1$): reports the vertex's $x$-coordinate instead of the constant term.\n* Choice C ($8$): reports the maximum value, which is $f(-1)$, not $f(0)$.\n* Choice D ($8.5$): adds $\\frac{1}{2}$ to $8$ instead of subtracting it.\n\n**Test Day Takeaway:** Convert a graphed vertex into vertex form, then evaluate at $x=0$ — that single substitution is the constant term.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    -1,
+    8
+   ],
+   "a": -0.5,
+   "showVertex": true
+  }
+ }
+}

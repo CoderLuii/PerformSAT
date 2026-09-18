@@ -1,0 +1,45 @@
+{
+ "question": "The circular stage of a bandshell is modeled in the $xy$-plane by $x^2 + y^2 - 12x + 16y + 51 = 0$, with units in meters, and triangular riser $ABC$ has $\\overline{AB}$ as a diameter of the stage. What is the length, in meters, of $\\overline{AB}$?",
+ "diagram": {
+  "type": "circleWithInscribedTriangle",
+  "params": {
+   "labels": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "O": "O"
+   },
+   "angleAtA": "35°",
+   "angleAtAValue": 35,
+   "showDiameter": true,
+   "showCenter": true,
+   "showRightAngleAtC": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$7$"
+  },
+  {
+   "id": "B",
+   "text": "$14$"
+  },
+  {
+   "id": "C",
+   "text": "$28$"
+  },
+  {
+   "id": "D",
+   "text": "$49$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "reports the radius 7 instead of the diameter",
+  "C": "doubles the diameter, reporting 28",
+  "D": "reports r squared, 49, instead of taking the square root"
+ },
+ "explanation": "**SAT Pattern: Circle in General Form**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Completing the square gives $(x - 6)^2 + (y + 8)^2 = 36 + 64 - 51 = 49$, so $r = 7$ and the diameter $\\overline{AB}$ is $14$.\n\n**The Full Solution:**\nStep 1: Group and complete the square: $x^2 - 12x = (x - 6)^2 - 36$ and $y^2 + 16y = (y + 8)^2 - 64$.\nStep 2: The equation becomes $(x - 6)^2 + (y + 8)^2 = 36 + 64 - 51 = 49$, so the stage has center $(6, -8)$ and radius $\\sqrt{49} = 7$ meters.\nStep 3: $\\overline{AB}$ is a diameter, so its length is $2r = 14$ meters; the point $(13, -8)$ on the stage is exactly $7$ meters from the center ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($7$): stops at the radius; the segment asked about spans the whole stage.\n* Choice C ($28$): doubles the diameter, applying the factor of $2$ twice.\n* Choice D ($49$): reports $r^2$ straight from the right side without taking the square root.\n\n**Test Day Takeaway:** After completing the square the right side is $r^2$, never $r$ — and a diameter is twice that square root.",
+ "id": "bank-geo-285"
+}

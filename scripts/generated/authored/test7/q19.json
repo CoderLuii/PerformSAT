@@ -1,31 +1,31 @@
 {
-  "id": 719,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "boundaries",
-  "module": 1,
-  "passage": "Lightweight rope-and-walkway systems now let researchers move safely through the upper layers of tropical and temperate ______ surveys conducted from these canopy walkways have revealed that ecological processes high above the ground differ substantially from those at the forest floor.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "forests,"
-    },
-    {
-      "id": "B",
-      "text": "forests; and"
-    },
-    {
-      "id": "C",
-      "text": "forests"
-    },
-    {
-      "id": "D",
-      "text": "forests, and"
-    }
-  ],
-  "correctAnswer": "D",
-  "explanation": "The correct answer is D. Two independent clauses appear here — one about the walkway systems and one about what the surveys revealed — and a comma plus the coordinating conjunction \"and\" correctly joins them. Choice A creates a comma splice with no conjunction, Choice C fuses the clauses with no punctuation at all, and Choice B is incorrect because a semicolon should not be paired with a coordinating conjunction in this way."
+ "id": 719,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "boundaries",
+ "module": 1,
+ "passage": "Coastal channels concentrate the tide into fast, predictable currents twice each ______ engineers have begun mooring underwater turbines in the narrowest passages, where the moving water carries the most energy. Unlike the wind, the tides can be forecast years in advance.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "day,"
+  },
+  {
+   "id": "B",
+   "text": "day; and"
+  },
+  {
+   "id": "C",
+   "text": "day"
+  },
+  {
+   "id": "D",
+   "text": "day, and"
+  }
+ ],
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.** Two complete sentences meet at the blank — one about the channels, one about the engineers — and a comma plus the coordinating conjunction \"and\" is a standard way to join them.\n\n**The Full Solution:**\n- Test each side for independence: \"Coastal channels concentrate the tide into fast, predictable currents twice each day\" stands alone, and so does \"engineers have begun mooring underwater turbines in the narrowest passages...\"\n- Independent clauses may be joined by a comma plus a coordinating conjunction (and, but, so...), by a semicolon, or split with a period.\n- \"day, and\" supplies exactly the comma-plus-conjunction option.\n\n**Why the other choices are wrong:**\n- A: A comma alone between two independent clauses is a comma splice.\n- B: A semicolon already joins independent clauses by itself; pairing it with \"and\" doubles the connector.\n- C: No punctuation at all fuses the two sentences into a run-on."
 }

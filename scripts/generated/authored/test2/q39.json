@@ -1,31 +1,31 @@
 {
-  "id": 239,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "information-and-ideas",
-  "skill": "command-of-evidence-textual",
-  "module": 2,
-  "passage": "It is widely observed that people who regularly sleep fewer than six hours a night have higher rates of cardiovascular disease than those who sleep seven or eight. Some researchers take this as evidence that short sleep itself damages the heart over time. Others caution that the relationship may run the other way, or through a third factor: an undiagnosed illness, for instance, might disrupt sleep and independently raise cardiovascular risk, producing the association without short sleep being its cause. To distinguish these possibilities, a research team followed initially healthy adults over many years, recording each person's habitual sleep duration at the outset and tracking who later developed heart disease.",
-  "question": "Which finding from the study, if true, would most strongly support the claim that short sleep itself raises cardiovascular risk?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "Adults who were already showing early, undiagnosed signs of heart disease at the very start of the study tended to sleep noticeably fewer hours each night than the participants who were entirely healthy when it began."
-    },
-    {
-      "id": "B",
-      "text": "Among adults healthy at the outset, those who habitually slept fewer than six hours went on to develop heart disease at higher rates than otherwise similar adults who slept seven to eight hours."
-    },
-    {
-      "id": "C",
-      "text": "Adults who slept fewer than six hours a night reported more daytime fatigue and difficulty concentrating than those who slept longer."
-    },
-    {
-      "id": "D",
-      "text": "Across the whole sample, sleep duration and the presence of heart disease were recorded at the same single point in time."
-    }
-  ],
-  "correctAnswer": "B",
-  "explanation": "The correct answer is B. To show that short sleep itself raises cardiovascular risk, the study needs people who were healthy at the start and whose later heart disease tracked their earlier sleep duration; B reports exactly that, with short sleepers developing disease at higher rates than comparable longer sleepers. Choice A actually supports the rival explanation, that existing illness causes the short sleep, since the short sleepers were already showing signs of disease. Choice C concerns fatigue and concentration, not cardiovascular outcomes, so it does not bear on the claim. Choice D describes a single-time-point design, which cannot establish that short sleep came first and so cannot support a causal claim."
+ "id": 239,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "information-and-ideas",
+ "skill": "command-of-evidence-textual",
+ "module": 2,
+ "passage": "How large a hailstone grows depends on how long it can remain aloft inside a storm, riding the rising air while layers of ice accumulate. In a multiyear study of severe thunderstorms, meteorologists claim that the strength of a storm's updraft — the column of rising air that suspends growing hailstones — is the chief factor limiting maximum hailstone size, outweighing the storm's duration, its moisture supply, and the altitude of its cloud base.",
+ "question": "Which finding from the study, if true, would most strongly support the researchers' claim?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "Storms that lasted the longest produced the greatest total number of hailstones over their lifetimes."
+  },
+  {
+   "id": "B",
+   "text": "Among storms with similar duration, moisture, and cloud-base altitude, maximum hailstone size rose consistently with measured updraft speed, and the largest stones fell only from storms with the fastest updrafts."
+  },
+  {
+   "id": "C",
+   "text": "A few storms with unusually weak updrafts producced no hailstones of any measurable size at all."
+  },
+  {
+   "id": "D",
+   "text": "Hailstones collected from a single storm often contained different numbers of ice layers, indicating that individual stones had traveled along different paths through the storm before falling, riding updrafts through the cloud repeatedly."
+  }
+ ],
+ "correctAnswer": "B",
+ "explanation": "**Choice B is correct.** The claim ranks updraft strength above duration, moisture, and altitude as the limit on hailstone size — and B tests exactly that ranking by holding the rival factors similar and showing size still tracks updraft speed.\n\n**The Full Solution:**\n- The claim has two parts: updraft strength governs maximum hailstone size, and it outweighs three named competitors.\n- Choice B controls for those competitors (\"similar duration, moisture, and cloud-base altitude\") so any size differences must come from what varies — updraft speed.\n- The consistent rise of size with updraft speed, capped by the largest stones falling only from the fastest updrafts, is the strongest possible signature of the claimed relationship.\n\n**Why the other choices are wrong:**\n- A: Total number of hailstones is a different quantity from maximum size, and tying it to duration supports one of the rival factors, not the claim.\n- C: Weak updrafts producing no hail is consistent with the claim but barely tests it — it involves no comparison of hailstone sizes and no control of the competing factors.\n- D: Varied layer counts show stones take different paths within a storm; the finding never connects updraft strength to size, so it leaves the claim untested."
 }

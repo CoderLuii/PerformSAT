@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-304",
+  "question": "A tank contains $24$ liters of a coolant mixture that is $15\\%$ antifreeze by volume. How many liters of pure antifreeze must be added to the tank so that the resulting mixture is $40\\%$ antifreeze by volume?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$6$"
+    },
+    {
+      "id": "B",
+      "text": "$9.6$"
+    },
+    {
+      "id": "C",
+      "text": "$10$"
+    },
+    {
+      "id": "D",
+      "text": "$34$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "assumes the total volume stays at $24$ liters and solves $3.6 + x = 0.40(24)$, giving $x = 6$.",
+    "B": "computes $0.40(24) = 9.6$ and reports it as the amount to add, ignoring the $3.6$ liters already present.",
+    "D": "reports the final volume of the mixture, $24 + 10 = 34$ liters, instead of the amount added."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Mixture Problems**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** With $x$ liters of pure antifreeze added, $\\frac{3.6 + x}{24 + x} = 0.40$. Then $3.6 + x = 9.6 + 0.4x$, so $0.6x = 6$ and $x = 10$.\n\n**The Full Solution:**\nStep 1: The tank starts with $0.15(24) = 3.6$ liters of antifreeze in $24$ liters of mixture.\nStep 2: Pure antifreeze adds to both the antifreeze and the total, so after adding $x$ liters the mixture is $\\frac{3.6 + x}{24 + x}$ antifreeze. Set this equal to $0.40$.\nStep 3: $3.6 + x = 0.40(24 + x) = 9.6 + 0.4x$, so $0.6x = 6$ and $x = 10$. Check: $\\frac{3.6 + 10}{24 + 10} = \\frac{13.6}{34} = 0.40$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($6$): assumes the total volume stays at $24$ liters and solves $3.6 + x = 0.40(24)$, giving $x = 6$.\n* Choice B ($9.6$): computes $0.40(24) = 9.6$ and reports it as the amount to add, ignoring the $3.6$ liters already present.\n* Choice D ($34$): reports the final volume of the mixture, $24 + 10 = 34$ liters, instead of the amount added.\n\n**Test Day Takeaway:** Adding a pure ingredient increases the numerator and the denominator by the same amount. Writing $\\frac{\\text{old amount} + x}{\\text{old total} + x}$ keeps that from slipping."
+}

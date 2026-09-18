@@ -1,0 +1,29 @@
+{
+ "id": 14,
+ "question": "On a levee profile, two survey benchmarks are plotted at $(-3, 8)$ and $(k, -4)$, where the coordinates are in meters. The segment joining the benchmarks has a slope of $-\\frac{3}{2}$. What is the value of $k$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-11$"
+  },
+  {
+   "id": "B",
+   "text": "$5$"
+  },
+  {
+   "id": "C",
+   "text": "$8$"
+  },
+  {
+   "id": "D",
+   "text": "$15$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "sets k + 3 = -8, losing the minus sign already carried by the rise of -12",
+  "C": "solves k + 3 = 8 correctly but reports 8 without subtracting the 3",
+  "D": "inverts the slope, solving (k + 3)/(-12) = -3/2 to get k + 3 = 18"
+ },
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice B is correct.** The slope is $\\frac{-4 - 8}{k - (-3)} = \\frac{-12}{k + 3}$, and setting that equal to $-\\frac{3}{2}$ gives $k + 3 = 8$, so $k = 5$.\n\n**The Fast Way (~25s):** The rise is $-12$. A slope of $-\\frac{3}{2}$ means the run is $\\frac{-12}{-3/2} = 8$, so $k = -3 + 8 = 5$.\n\n**The Full Solution:**\nStep 1: Write the slope with the unknown in place: $m = \\frac{-4 - 8}{k - (-3)} = \\frac{-12}{k + 3}$.\nStep 2: Set it equal to the given slope: $\\frac{-12}{k + 3} = -\\frac{3}{2}$. Cross-multiplying gives $-24 = -3(k + 3)$, so $k + 3 = 8$.\nStep 3: Solve: $k = 5$. Check with the two points $(-3, 8)$ and $(5, -4)$: the slope is $\\frac{-12}{8} = -\\frac{3}{2}$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-11$): sets $k + 3 = -8$, applying the minus sign a second time even though the rise of $-12$ already carries it; the points $(-3, 8)$ and $(-11, -4)$ have slope $+\\frac{3}{2}$.\n* Choice C ($8$): reaches $k + 3 = 8$ and bubbles the $8$, one subtraction short of the answer.\n* Choice D ($15$): flips the slope on the way in, solving $\\frac{k + 3}{-12} = -\\frac{3}{2}$, which produces a run of $18$ instead of $8$.\n\n**Test Day Takeaway:** Put the unknown coordinate into $\\frac{y_2 - y_1}{x_2 - x_1}$ before you touch it, and finish by isolating the variable, not the binomial that contains it."
+}

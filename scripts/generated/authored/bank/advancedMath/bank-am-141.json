@@ -1,0 +1,6 @@
+{
+  "id": "bank-am-141",
+  "question": "The equation $(x + 7)(x - 3) = 0$ has two solutions, one positive and one negative. What is the value of the negative solution?",
+  "correctAnswer": "-7",
+  "explanation": "**SAT Pattern: Quadratic via Factoring**\n\n**The correct answer is $-7$.**\n\n**The Fast Way (~15s):** A product is zero when a factor is zero, so $x = -7$ or $x = 3$; the negative one is $-7$.\n\n**The Full Solution:**\nStep 1: The zero-product property says that if a product of two factors is $0$, at least one factor is $0$. So $x + 7 = 0$ or $x - 3 = 0$.\nStep 2: Solving each gives $x = -7$ and $x = 3$.\nStep 3: The negative solution is $-7$. Check: $(-7 + 7)(-7 - 3) = (0)(-10) = 0$. $\\checkmark$\n\n**Common Mistakes:**\n* Picking the factor that already contains a minus sign, $(x - 3)$, and answering $-3$; that factor's solution is $+3$.\n* Expanding to $x^2 + 4x - 21 = 0$ and then re-factoring, which wastes time on an equation that is already factored.\n* Reporting $3$, the positive solution, when the question asks for the negative one.\n\n**Test Day Takeaway:** A factored equation is already solved: set each factor to zero and flip the sign of the constant inside it."
+}

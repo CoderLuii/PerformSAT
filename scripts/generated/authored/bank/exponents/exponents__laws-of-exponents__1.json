@@ -1,0 +1,29 @@
+{
+ "question": "An oak cask's volume model, in liters, includes the expression $(5m^2)^3$, where $m$ is the stave width in centimeters. Which of the following is equivalent to $(5m^2)^3$?",
+ "hint": "Two things sit inside those parentheses.",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5m^{6}$"
+  },
+  {
+   "id": "B",
+   "text": "$15m^{6}$"
+  },
+  {
+   "id": "C",
+   "text": "$125m^{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$125m^{6}$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "raises only the variable, leaving the coefficient 5 untouched",
+  "B": "multiplies 5 by 3 instead of cubing it",
+  "C": "adds the exponents 2 + 3 instead of multiplying them"
+ },
+ "correctAnswer": "D",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~15s):** Cube the coefficient and multiply the exponents: $5^3 = 125$ and $m^{2 \\cdot 3} = m^6$.\n\n**The Full Solution:**\nStep 1: A power of a product raises each factor: $(5m^2)^3 = 5^3 \\cdot (m^2)^3$.\nStep 2: Cube the coefficient: $5^3 = 125$.\nStep 3: Multiply the exponents: $(m^2)^3 = m^6$, so the expression equals $125m^6$. Check at $m = 1$: $(5)^3 = 125$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($5m^6$): raises only the variable and leaves the coefficient alone.\n* Choice B ($15m^6$): multiplies $5$ by the exponent $3$ instead of cubing it.\n* Choice C ($125m^5$): adds $2 + 3$, which is the rule for multiplying powers, not for a power of a power.\n\n**Test Day Takeaway:** An exponent outside parentheses hits every factor inside, coefficients included."
+}

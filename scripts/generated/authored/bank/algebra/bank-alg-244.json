@@ -1,0 +1,52 @@
+{
+ "id": "bank-alg-244",
+ "question": "The table lists three points on line $\\ell$. Line $m$ is the graph of $5x + ny = 14$, and lines $\\ell$ and $m$ have no point in common. What is the value of the constant $n$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "x",
+    "y"
+   ],
+   "rows": [
+    [
+     "0",
+     "6"
+    ],
+    [
+     "4",
+     "1"
+    ],
+    [
+     "8",
+     "-4"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$4$"
+  },
+  {
+   "id": "C",
+   "text": "$5$"
+  },
+  {
+   "id": "D",
+   "text": "$20$"
+  }
+ ],
+ "correctAnswer": "B",
+ "distractorNotes": {
+  "A": "keeps a stray negative, solving $-\\frac{5}{n} = \\frac{5}{4}$",
+  "C": "copies the coefficient of $x$ in $5x + ny = 14$",
+  "D": "multiplies $5$ by $4$ instead of matching $\\frac{5}{n}$ to $\\frac{5}{4}$"
+ },
+ "explanation": "**SAT Pattern: Parallel Lines (No Solution)**\n\n**Choice B is correct.**\n\n**The Fast Way (~25s):** The table gives slope $-\\frac{5}{4}$, and $-\\frac{5}{n} = -\\frac{5}{4}$ gives $n = 4$.\n\n**The Full Solution:**\nStep 1: From $(0, 6)$ to $(4, 1)$ the table drops $5$ over a run of $4$, so line $\\ell$ has slope $-\\frac{5}{4}$.\nStep 2: Rewrite $5x + ny = 14$ as $y = -\\frac{5}{n}x + \\frac{14}{n}$, so line $m$ has slope $-\\frac{5}{n}$.\nStep 3: Lines with no point in common have equal slopes, so $-\\frac{5}{n} = -\\frac{5}{4}$ and $n = 4$; then line $m$ has intercept $\\frac{14}{4} = 3.5 \\neq 6$, so the lines are distinct. Check: $\\frac{-4 - 6}{8 - 0} = -\\frac{5}{4}$.\n\n**Why the wrong answers are tempting:**\n* Choice A ($-4$): keeps a stray negative, solving $-\\frac{5}{n} = \\frac{5}{4}$\n* Choice C ($5$): copies the coefficient of $x$ in $5x + ny = 14$\n* Choice D ($20$): multiplies $5$ by $4$ instead of matching $\\frac{5}{n}$ to $\\frac{5}{4}$\n\n**Test Day Takeaway:** Read the slope from any two table rows, then match it to the standard-form slope $-\\frac{A}{B}$."
+}

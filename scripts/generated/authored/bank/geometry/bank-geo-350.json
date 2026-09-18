@@ -1,0 +1,6 @@
+{
+ "id": "bank-geo-350",
+ "question": "A storage array's net annual cost change, in thousands of dollars, when $x$ drives are added is modeled by $C(x) = 2x^2 + bx - 30$, where $b$ is a constant, and the change is $0$ when $x = 3$. What is the value of $C(5)$?",
+ "correctAnswer": "40",
+ "explanation": "**SAT Pattern: Recover Parameter from Known Root, then Evaluate**\n\n**The correct answer is $40$.**\n\n**The Fast Way (~40s):** $C(3) = 0$ gives $18 + 3b - 30 = 0$, so $b = 4$; then $C(5) = 50 + 20 - 30 = 40$.\n\n**The Full Solution:**\n\nStep 1: Substitute the known zero: $C(3) = 2(3)^2 + 3b - 30 = 18 + 3b - 30 = 3b - 12$.\n\nStep 2: Set $3b - 12 = 0$, so $b = 4$ and $C(x) = 2x^2 + 4x - 30$.\n\nStep 3: Evaluate at $x = 5$: $2(25) + 4(5) - 30 = 50 + 20 - 30 = 40$. Check: $C(3) = 18 + 12 - 30 = 0$, as given.\n\n**Common Mistakes:**\n\n* $0$ — a sign slip that yields $b = -4$, making $C(5) = 50 - 20 - 30 = 0$.\n* $55$ — dropping the leading coefficient $2$ when solving for $b$, which gives $b = 7$ and $C(5) = 50 + 35 - 30 = 55$.\n* $4$ — reporting the recovered constant $b$ instead of evaluating the model.\n\n**Test Day Takeaway:** A known zero is one equation in one unknown constant — solve it first, rewrite the whole function, and only then evaluate where the question points."
+}

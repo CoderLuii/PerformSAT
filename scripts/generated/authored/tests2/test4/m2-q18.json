@@ -1,0 +1,6 @@
+{
+ "id": 18,
+ "question": "A cue-timing model requires that $\\frac{2x + c}{5} - \\frac{x - 3}{2} = 4$, where $c$ is a constant, be satisfied when $x = 7$. What is the value of $c$?",
+ "correctAnswer": "16",
+ "explanation": "**SAT Pattern: Multi-Step Linear Equation**\n\n**The correct answer is $16$.**\n\n**The Fast Way (~40s):** At $x = 7$ the second fraction is $\\frac{4}{2} = 2$, so $\\frac{14 + c}{5} = 6$, giving $14 + c = 30$ and $c = 16$.\n\n**The Full Solution:**\nStep 1: Substitute $x = 7$: $\\frac{2(7) + c}{5} - \\frac{7 - 3}{2} = 4$, which is $\\frac{14 + c}{5} - \\frac{4}{2} = 4$.\nStep 2: The second fraction is a number, $2$. Add it to both sides: $\\frac{14 + c}{5} = 6$.\nStep 3: Multiply both sides by $5$: $14 + c = 30$, so $c = 16$. Check: $\\frac{14 + 16}{5} - 2 = 6 - 2 = 4$. $\\checkmark$\n\n**Common Mistakes:** Gridding $6$, from solving $\\frac{14 + c}{5} = 4$ and dropping the $\\frac{x - 3}{2}$ term altogether; gridding $-4$, from moving the $2$ to the wrong side and solving $\\frac{14 + c}{5} = 2$; gridding $30$, which is $2x + c$, the whole numerator, rather than the constant $c$ by itself.\n\n**Test Day Takeaway:** Substitute the given value before doing any algebra. Every term that no longer contains the variable collapses to a number, and a two-fraction equation becomes a one-step solve."
+}

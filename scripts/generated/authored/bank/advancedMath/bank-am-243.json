@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-243",
+  "question": "The function $q$ is defined by $q(x) = x^3 - 2x$. In the $xy$-plane, the graph of which function is the graph of $y = q(x)$ shifted down $8$ units?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$y = (x + 8)^3 - 2(x + 8)$"
+    },
+    {
+      "id": "B",
+      "text": "$y = x^3 - 2x + 8$"
+    },
+    {
+      "id": "C",
+      "text": "$y = x^3 - 2x - 8$"
+    },
+    {
+      "id": "D",
+      "text": "$y = (x - 8)^3 - 2(x - 8)$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "replaces $x$ with $x + 8$, a shift left",
+    "B": "adds $8$, a shift up",
+    "D": "replaces $x$ with $x - 8$, a shift right"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Vertical Shift**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Down $8$ means subtract $8$ from the whole output: $q(x) - 8 = x^3 - 2x - 8$.\n\n**The Full Solution:**\nStep 1: A shift down by $k$ units replaces $y = q(x)$ with $y = q(x) - k$. Here $k = 8$.\nStep 2: Substituting the rule for $q$ gives $y = (x^3 - 2x) - 8$, or $y = x^3 - 2x - 8$.\nStep 3: Check with a point. $q(0) = 0$, so $(0, 0)$ is on the original graph; the shifted graph should contain $(0, -8)$, and $0^3 - 2(0) - 8 = -8$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($y = (x + 8)^3 - 2(x + 8)$): changing the INPUT to $x + 8$ shifts the graph $8$ units left, not down.\n* Choice B ($y = x^3 - 2x + 8$): the sign is reversed; $+8$ raises the graph $8$ units.\n* Choice D ($y = (x - 8)^3 - 2(x - 8)$): changing the input to $x - 8$ shifts the graph $8$ units right.\n\n**Test Day Takeaway:** Outside the function means vertical; inside the function means horizontal. Down $8$ is the outside operation $-8$."
+}

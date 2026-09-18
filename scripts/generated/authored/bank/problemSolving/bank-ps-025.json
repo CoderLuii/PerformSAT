@@ -1,0 +1,29 @@
+{
+  "id": "bank-ps-025",
+  "question": "A biologist recorded the masses of $8$ frogs, and the mean mass was $62$ grams. After the mass of a ninth frog was recorded, the mean mass of the $9$ frogs was $64$ grams. What is the mass, in grams, of the ninth frog?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$64$"
+    },
+    {
+      "id": "B",
+      "text": "$78$"
+    },
+    {
+      "id": "C",
+      "text": "$80$"
+    },
+    {
+      "id": "D",
+      "text": "$82$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "assumes the added value equals the new mean; a value equal to the new mean would not have raised the mean from $62$.",
+    "B": "adds the $8 \\times 2 = 16$ extra grams to the old mean ($62$) instead of to the new mean ($64$).",
+    "D": "multiplies the $2$-gram shift by $9$ (the new count) instead of by the $8$ original values."
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Missing Value from Mean Shift**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Convert both means to totals: $8 \\times 62 = 496$ before and $9 \\times 64 = 576$ after. The ninth frog is the difference, $576 - 496 = 80$ grams.\n\n**The Full Solution:**\nStep 1: Mean $\\times$ count $=$ sum. Before: $8 \\times 62 = 496$ grams.\nStep 2: After: $9 \\times 64 = 576$ grams. The ninth mass is $576 - 496 = 80$ grams.\nStep 3: Check with the shift shortcut: the new frog must supply the new mean ($64$) plus $2$ extra grams for each of the $8$ original frogs: $64 + 8 \\times 2 = 80$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($64$): assumes the added value equals the new mean; a value equal to the new mean would not have raised the mean from $62$.\n* Choice B ($78$): adds the $8 \\times 2 = 16$ extra grams to the old mean ($62$) instead of to the new mean ($64$).\n* Choice D ($82$): multiplies the $2$-gram shift by $9$ (the new count) instead of by the $8$ original values.\n\n**Test Day Takeaway:** Convert every mean to a sum. The new value is (new sum) $-$ (old sum), or equivalently new mean $+$ (old count)(shift)."
+}

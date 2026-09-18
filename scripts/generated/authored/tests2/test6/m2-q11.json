@@ -1,0 +1,56 @@
+{
+ "id": 11,
+ "question": "The table gives the activity of a radioisotope sample, in microcuries, recorded by a detector every $4$ hours after the first reading. Which function models the activity $A(t)$, in microcuries, $t$ hours after that first reading?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Time (hours)",
+    "Activity (microcuries)"
+   ],
+   "rows": [
+    [
+     "0",
+     "640"
+    ],
+    [
+     "4",
+     "480"
+    ],
+    [
+     "8",
+     "360"
+    ],
+    [
+     "12",
+     "270"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$A(t) = 640(0.75)^{t/4}$"
+  },
+  {
+   "id": "B",
+   "text": "$A(t) = 640(0.75)^{4t}$"
+  },
+  {
+   "id": "C",
+   "text": "$A(t) = 640(0.75)^{t}$"
+  },
+  {
+   "id": "D",
+   "text": "$A(t) = 640(0.25)^{t/4}$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "inverts the exponent so the sample decays four times per hour: at t = 4 it predicts about 6.4 microcuries, not 480",
+  "C": "treats 0.75 as the hourly factor: at t = 4 it predicts 202.5 microcuries, not 480",
+  "D": "uses the 25 percent lost as the decay factor: at t = 4 it predicts 160 microcuries, not 480"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Exponential Growth/Decay**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** Each reading is $0.75$ times the one before, and the readings are $4$ hours apart, so the exponent counts four-hour blocks: $A(t) = 640(0.75)^{t/4}$.\n\n**The Full Solution:**\nStep 1: Check that the decay is exponential by dividing consecutive readings: $\\frac{480}{640} = 0.75$, $\\frac{360}{480} = 0.75$, and $\\frac{270}{360} = 0.75$. A constant ratio means an exponential model.\nStep 2: The factor $0.75$ applies once per $4$ hours, so the number of factors elapsed after $t$ hours is $\\frac{t}{4}$, and the model is $A(t) = 640(0.75)^{t/4}$ with $640$ as the starting activity.\nStep 3: Test the model on a row it must reproduce: $A(8) = 640(0.75)^2 = 640(0.5625) = 360$ microcuries ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($640(0.75)^{4t}$): flips the exponent, applying the factor four times an hour; at $t = 4$ it predicts about $6.4$ microcuries instead of $480$.\n* Choice C ($640(0.75)^{t}$): treats $0.75$ as the hourly factor; at $t = 4$ it predicts $202.5$ microcuries.\n* Choice D ($640(0.25)^{t/4}$): uses the $25\\%$ lost as the multiplier instead of the $75\\%$ kept; at $t = 4$ it predicts $160$ microcuries.\n\n**Test Day Takeaway:** In an exponential model the base is the fraction that remains and the exponent counts how many measurement intervals have passed — divide $t$ by the interval length."
+}

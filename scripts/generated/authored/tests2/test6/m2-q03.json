@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "A commuter's monthly transportation budget allots $m$ dollars to fuel and $t$ dollars to transit passes, where $m + t = 540$ and $m = 3t - 40$. What is the value of $t$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$125$"
+  },
+  {
+   "id": "B",
+   "text": "$135$"
+  },
+  {
+   "id": "C",
+   "text": "$145$"
+  },
+  {
+   "id": "D",
+   "text": "$395$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "flips the sign of the constant, solving m = 3t + 40, so 4t = 500 and t = 125",
+  "B": "drops the -40 and splits 540 into four equal shares: t = 135",
+  "D": "solves for m, the fuel allotment, instead of t: m = 395"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: System of Equations — Substitution**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** Replace $m$ with $3t - 40$ in the total: $(3t - 40) + t = 540$, so $4t = 580$ and $t = 145$.\n\n**The Full Solution:**\nStep 1: The second equation already isolates $m$, so substitute it into the first: $3t - 40 + t = 540$.\nStep 2: Combine like terms and undo the constant: $4t - 40 = 540$, so $4t = 580$.\nStep 3: Divide by $4$: $t = 145$. Check both equations with $m = 3(145) - 40 = 395$: $395 + 145 = 540$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($125$): reads the model as $m = 3t + 40$, which gives $4t = 500$ and misses the sign on the $40$.\n* Choice B ($135$): ignores the $-40$ and divides $540$ by $4$, which would only be right if fuel were exactly three times the pass allotment.\n* Choice D ($395$): solves the system correctly but reports $m$, the fuel dollars, instead of $t$.\n\n**Test Day Takeaway:** When one variable is already isolated, substitute immediately — then reread the question to confirm which variable it wants."
+}

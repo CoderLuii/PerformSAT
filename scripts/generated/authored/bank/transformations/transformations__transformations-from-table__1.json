@@ -1,0 +1,59 @@
+{
+ "id": 1,
+ "question": "The table gives the sap flow $f(d)$ from one tap and the flow $g(d)$ from a second tap, both in liters, on day $d$ of a maple run. Which equation relates $g$ to $f$ on the days listed?",
+ "questionTable": {
+  "headers": [
+   "$d$",
+   "$f(d)$",
+   "$g(d)$"
+  ],
+  "rows": [
+   [
+    "$1$",
+    "$18$",
+    "$26$"
+   ],
+   [
+    "$2$",
+    "$23$",
+    "$31$"
+   ],
+   [
+    "$3$",
+    "$31$",
+    "$39$"
+   ],
+   [
+    "$4$",
+    "$40$",
+    "$48$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$g(d) = f(d) + 8$"
+  },
+  {
+   "id": "B",
+   "text": "$g(d) = f(d) - 8$"
+  },
+  {
+   "id": "C",
+   "text": "$g(d) = 8f(d)$"
+  },
+  {
+   "id": "D",
+   "text": "$g(d) = f(d + 8)$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "reverses the direction of the shift",
+  "C": "multiplies by 8 instead of adding it",
+  "D": "places the 8 inside the function, shifting the day rather than the flow"
+ },
+ "correctAnswer": "A",
+ "hint": "Read across each row before you read down any column.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~15s):** Every listed day shows $g$ exactly $8$ liters above $f$, so $g(d) = f(d) + 8$.\n\n**The Full Solution:**\nStep 1: Subtract the two flows day by day: $26 - 18 = 8$, $31 - 23 = 8$, $39 - 31 = 8$, and $48 - 40 = 8$.\nStep 2: The difference is the same constant every day, so the second tap's flow is the first tap's flow plus $8$ liters.\nStep 3: That relationship is $g(d) = f(d) + 8$. Check: on day $3$, $f(3) + 8 = 31 + 8 = 39 = g(3)$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($f(d) - 8$): reversing the direction; the second tap runs higher, not lower.\n* Choice C ($8f(d)$): multiplying by $8$, which would give $8(18) = 144$ liters on day $1$, not $26$.\n* Choice D ($f(d + 8)$): placing the $8$ inside the function, which shifts the day rather than the flow.\n\n**Test Day Takeaway:** A constant difference in every row means a vertical shift; a constant ratio would mean a stretch."
+}

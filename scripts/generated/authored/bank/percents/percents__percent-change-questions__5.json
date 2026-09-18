@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "question": "A quantity is increased by $p\\%$, and the result is then decreased by $p\\%$. If the final quantity is $84\\%$ of the original quantity, what is the value of $p$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$8$"
+    },
+    {
+      "id": "B",
+      "text": "$16$"
+    },
+    {
+      "id": "C",
+      "text": "$40$"
+    },
+    {
+      "id": "D",
+      "text": "$84$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "halves the net drop",
+    "B": "treats the pair as one decrease",
+    "D": "reports the given percent"
+  },
+  "correctAnswer": "C",
+  "hint": "Multiply the two scale factors together and set the product equal to $0.84$.",
+  "explanation": "**Choice C is correct.**\n\n**The Fast Way (~40s):** $\\left(1 + \\frac{p}{100}\\right)\\left(1 - \\frac{p}{100}\\right) = 1 - \\frac{p^2}{10{,}000} = 0.84$, so $p^2 = 1{,}600$ and $p = 40$.\n\n**The Full Solution:**\nStep 1: Increasing by $p\\%$ multiplies by $1 + \\frac{p}{100}$; decreasing the result by $p\\%$ multiplies by $1 - \\frac{p}{100}$.\nStep 2: The product of those two factors is a difference of squares: $1 - \\frac{p^2}{10{,}000}$. Set it equal to $0.84$.\nStep 3: Then $\\frac{p^2}{10{,}000} = 0.16$, so $p^2 = 1{,}600$ and $p = 40$ (a percent change is positive here). Check with a starting value of $100$: $100(1.4) = 140$, and $140(0.6) = 84$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($8$): halves the net $16$-point drop, as if the two steps each contributed half of it.\n* Choice B ($16$): treats the whole process as a single decrease and solves $1 - \\frac{p}{100} = 0.84$.\n* Choice D ($84$): reports the given final percent as the value of $p$.\n\n**Test Day Takeaway:** Equal-size increases and decreases never cancel; multiplying the scale factors leaves $1 - \\frac{p^2}{10{,}000}$, always less than $1$."
+}

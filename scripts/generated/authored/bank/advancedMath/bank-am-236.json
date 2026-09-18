@@ -1,0 +1,66 @@
+{
+ "id": "bank-am-236",
+ "question": "A pottery studio's weekly output of ceramic planters above its minimum run is modeled by the quadratic function $f$ whose graph is shown. The line $y=2x-7$ touches that graph at exactly one point. What is the $x$-coordinate of the point of contact?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$1$"
+  },
+  {
+   "id": "C",
+   "text": "$2$"
+  },
+  {
+   "id": "D",
+   "text": "$4$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "reports the y-intercept of the parabola",
+  "B": "reports the axis of symmetry of f",
+  "D": "uses -b instead of -b/(2a) in x^2 - 4x + 4 = 0"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** The graph is $f(x)=(x-1)^2-4=x^2-2x-3$; setting it equal to $2x-7$ gives $(x-2)^2=0$, so $x=2$.\n\n**The Full Solution:**\nStep 1: Read the vertex $(1,-4)$ and the $x$-intercepts $-1$ and $3$ from the figure, so $f(x)=(x-1)^2-4=x^2-2x-3$.\nStep 2: Set $x^2-2x-3=2x-7$, which rearranges to $x^2-4x+4=0$.\nStep 3: Factor: $(x-2)^2=0$, so $x=2$. Check: $f(2)=4-4-3=-3$ and $2(2)-7=-3$, the same point ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-3$): reports the parabola's $y$-intercept instead of an $x$-coordinate.\n* Choice B ($1$): reports the axis of symmetry of $f$, not of the difference quadratic.\n* Choice D ($4$): uses $-b=4$ instead of $-\\frac{b}{2a}=2$ in $x^2-4x+4=0$.\n\n**Test Day Takeaway:** The contact point belongs to the difference quadratic, whose axis of symmetry is generally not the original parabola's.",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 1,
+    "k": -4
+   },
+   "a": 1,
+   "xRange": [
+    -6,
+    8
+   ],
+   "yRange": [
+    -6,
+    10
+   ],
+   "showVertex": false,
+   "highlightPoints": [
+    [
+     -1,
+     0
+    ],
+    [
+     1,
+     -4
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "label": "y = f(x)"
+  }
+ }
+}

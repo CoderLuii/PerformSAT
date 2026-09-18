@@ -6,29 +6,14 @@
   "domain": "information-and-ideas",
   "skill": "command-of-evidence-textual",
   "module": 1,
-  "passage": "Many employees who say they intend to save for retirement never enroll in their workplace plans. Behavioral economists have proposed that the chief barrier is not a lack of financial knowledge but the effort of opting in: faced with a form to complete and choices to make, people put the decision off indefinitely. On this account, simply changing the default—enrolling new employees automatically while letting them opt out—should raise participation sharply, even among workers no better informed about finance than those who must opt in. Researchers set out to test this prediction.",
-  "question": "Which finding, if true, would most directly support the behavioral economists' explanation?",
+  "passage": "Seabird ecologists commonly estimate the size of cliff-nesting colonies from photographs taken during the breeding season, counting every bird visible on the ledges. A monitoring team argues that such counts systematically understate the number of breeding pairs, since at any given moment one member of a pair is typically away from the ledge, feeding at sea.",
+  "question": "Which finding, if true, would most directly support the team's claim?",
   "choices": [
-    {
-      "id": "A",
-      "text": "Workers enrolled automatically participated at far higher rates than those required to opt in, though both groups scored similarly on a test of financial knowledge."
-    },
-    {
-      "id": "B",
-      "text": "Workers who scored highest on a financial-knowledge test enrolled at consistently higher rates than lower-scoring workers, whether they were enrolled automatically or had to complete the opt-in form themselves."
-    },
-    {
-      "id": "C",
-      "text": "Workers enrolled automatically tended to contribute smaller shares of their pay than workers who opted in deliberately."
-    },
-    {
-      "id": "D",
-      "text": "Workers offered a short financial-education seminar said they felt more confident about their retirement decisions."
-    }
+    { "id": "A", "text": "At colonies where breeding pairs were individually tracked at their nest sites, single-day ledge photographs captured only about two-thirds of the pairs known to be breeding there." },
+    { "id": "B", "text": "Photographic counts of the same colony taken in successive years often differ from one another by more than ten percent." },
+    { "id": "C", "text": "Birds visible on the ledges in photographs include some nonbreeding individuals that have not formed pairs." },
+    { "id": "D", "text": "Photographic counts of cliff colonies are generally made by two independent observers, whose totals for the same photographed image can differ from each other by several percentage points." }
   ],
   "correctAnswer": "A",
-  "explanation": "The behavioral explanation is that the effort of opting in, not a lack of knowledge, keeps people from enrolling, so switching the default should raise participation even among the equally informed. The finding in choice A isolates exactly that: automatic enrollment lifts participation while financial knowledge is held constant. Choice B supports the rival, knowledge-based account; C reports contribution size rather than participation; and D reports feelings, not enrollment.",
-  "_meta": {
-    "anchor": "automatic enrollment / opt-out defaults"
-  }
+  "explanation": "**Choice A is correct.** The claim is that photographs undercount breeding pairs. A finding that photographs captured only two-thirds of pairs independently verified at their nests is direct evidence of exactly that shortfall.\n\n**The Full Solution:**\n- To support an undercount claim, a finding must compare photographic counts against a more complete, independent measure of the same colonies.\n- Choice A supplies that comparison — tracked pairs as ground truth, photographs falling a third short — in the direction the team predicts.\n\n**Why the other choices are wrong:**\n- B: Year-to-year variation shows the counts are noisy, not that they are biased low; the differences could run in either direction.\n- C: Nonbreeders on the ledges would inflate the count of apparent breeders — evidence for an overcount, the opposite of the claim.\n- D: Disagreement between observers reading the same image is measurement noise; it says nothing about how photographic counts compare with the true number of pairs."
 }

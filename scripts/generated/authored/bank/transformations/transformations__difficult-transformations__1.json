@@ -1,0 +1,54 @@
+{
+ "id": 1,
+ "question": "The graph of $y = f(x)$ is shown, where $f(x)$ is the recorded signal strength, in decibels above baseline, of a tracking dish pointed $x$ degrees from a satellite's true bearing. For what value of $c$ does the graph of $y = f(x) + c$ have exactly one point in common with the $x$-axis?",
+ "diagram": {
+  "type": "parabola",
+  "params": {
+   "vertex": {
+    "h": 3,
+    "k": 4
+   },
+   "a": -1,
+   "xRange": [
+    -2,
+    8
+   ],
+   "yRange": [
+    -8,
+    6
+   ],
+   "showVertex": false,
+   "xTickInterval": 2,
+   "yTickInterval": 2,
+   "gridInterval": 1,
+   "xLabel": "Pointing offset (degrees)",
+   "yLabel": "Signal strength (dB)"
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-4$"
+  },
+  {
+   "id": "B",
+   "text": "$-3$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$4$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "negates the vertex's x-coordinate, 3, instead of its y-coordinate",
+  "C": "reports the offset 3 at which the peak occurs",
+  "D": "reports the peak value 4 without negating it"
+ },
+ "correctAnswer": "A",
+ "hint": "The curve shown crosses the axis twice; $c$ decides how many crossings survive.",
+ "explanation": "**Choice A is correct.**\n\n**The Fast Way (~30s):** The peak sits $4$ decibels above the axis, so every point must drop by $4$: $c = -4$.\n\n**The Full Solution:**\nStep 1: The highest point of the graph is $(3, 4)$, so the greatest value of $f$ is $4$ decibels.\nStep 2: Adding $c$ raises every point of the graph by $c$, so the greatest value of $f(x) + c$ is $4 + c$.\nStep 3: A downward-opening curve meets the $x$-axis exactly once only when its highest point lies on that axis, so $4 + c = 0$ and $c = -4$. Check: $f(x) - 4$ peaks at $(3, 0)$ and is negative for every other $x$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-3$): negating the offset $3$ at which the peak occurs instead of the peak's height.\n* Choice C ($3$): reporting the pointing offset of the peak rather than the vertical shift.\n* Choice D ($4$): reporting the peak height without the negative sign; adding $4$ lifts the curve further from the axis.\n\n**Test Day Takeaway:** Exactly one point in common with the $x$-axis means the extreme value lands on zero — set the shifted maximum equal to $0$."
+}

@@ -1,0 +1,6 @@
+{
+ "id": 14,
+ "question": "On an airport map scaled in hundreds of meters, a taxiway runs from $(-5, 8)$ to $(a, -2)$ and is bisected at $(4, 3)$, where $a$ is a constant. What is the value of $a$?",
+ "correctAnswer": "13",
+ "explanation": "**SAT Pattern: Midpoint Formula**\n\n**The correct answer is $13$.** The midpoint's $x$-coordinate is the average of the endpoints' $x$-coordinates, so $\\frac{-5 + a}{2} = 4$, giving $a = 13$.\n\n**The Fast Way (~20s):** From $-5$ to $4$ is $9$ units, so the far endpoint sits $9$ more units along: $4 + 9 = 13$.\n\n**The Full Solution:**\nStep 1: Write the midpoint condition for the $x$-coordinates: $\\frac{-5 + a}{2} = 4$.\nStep 2: Multiply both sides by $2$: $-5 + a = 8$.\nStep 3: Add $5$ to both sides: $a = 13$. Check: the midpoint of $(-5, 8)$ and $(13, -2)$ is $\\left(\\frac{-5 + 13}{2}, \\frac{8 + (-2)}{2}\\right) = (4, 3)$ ✓\n\n**Common Mistakes:**\n* $8$: doubles the midpoint's $x$-coordinate to get $8$ but never undoes the $-5$.\n* $3$: reaches $-5 + a = 8$ and then subtracts $5$ instead of adding it.\n* $-0.5$: averages the known endpoint with the midpoint, $\\frac{-5 + 4}{2}$, instead of solving for the missing endpoint.\n\n**Test Day Takeaway:** A midpoint is an average, so recovering a missing endpoint means doubling the midpoint and subtracting the endpoint you already have."
+}

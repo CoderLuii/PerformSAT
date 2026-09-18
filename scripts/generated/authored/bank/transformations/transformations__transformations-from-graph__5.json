@@ -1,0 +1,30 @@
+{
+ "id": 5,
+ "question": "A refrigerated container's interior temperature, in degrees Celsius, $t$ hours after the doors are sealed is $f(t)$, where $f(0) = 12$ and $f$ decreases over the first day. A container sealed five hours later has temperature $g(t) = f(t - 5)$. Which of the following must be true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$g(0) = 12$"
+  },
+  {
+   "id": "B",
+   "text": "$g(-5) = 12$"
+  },
+  {
+   "id": "C",
+   "text": "$g(12) = 5$"
+  },
+  {
+   "id": "D",
+   "text": "$g(5) = 12$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "ignores the five-hour delay entirely",
+  "B": "applies the delay in the wrong direction",
+  "C": "swaps the input and the output"
+ },
+ "correctAnswer": "D",
+ "hint": "Only one reading of the first container is given; find the statement that uses it.",
+ "explanation": "**Choice D is correct.**\n\n**The Fast Way (~25s):** $g(t) = f(t - 5)$ repeats each reading five hours later, so $g(5) = f(0) = 12$ degrees.\n\n**The Full Solution:**\nStep 1: Substituting $t = 5$ gives $g(5) = f(5 - 5) = f(0)$.\nStep 2: The first container's temperature at $t = 0$ is $12$ degrees, so $g(5) = 12$.\nStep 3: That statement follows from the rule alone. Check: the later container is sealed five hours after the first, so its temperature at hour $5$ matches the first container's at hour $0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($g(0) = 12$): ignoring the delay; at $t = 0$ the second container has not yet been sealed, so $g(0) = f(-5)$.\n* Choice B ($g(-5) = 12$): applying the delay in the wrong direction; $g(-5) = f(-10)$, which the given information does not fix.\n* Choice C ($g(12) = 5$): swapping the input and the output; $12$ is a temperature, not an hour.\n\n**Test Day Takeaway:** Substitute the input that makes the inside expression equal the one value you were handed."
+}

@@ -1,0 +1,49 @@
+{
+  "id": 5,
+  "question": "A chemist will combine two saline solutions to obtain $40$ liters of a mixture that is $24$ percent salt by volume. The table gives the concentration of each solution. Which system of equations, where $x$ and $y$ are the numbers of liters of solution A and solution B used, represents this situation?",
+  "diagram": {
+    "type": "dataTable",
+    "params": {
+      "headers": [
+        "Solution",
+        "Concentration (percent salt by volume)"
+      ],
+      "rows": [
+        [
+          "A",
+          "15"
+        ],
+        [
+          "B",
+          "30"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$x + y = 40$ and $0.15x + 0.30y = 9.6$"
+    },
+    {
+      "id": "B",
+      "text": "$x + y = 40$ and $0.15x + 0.30y = 24$"
+    },
+    {
+      "id": "C",
+      "text": "$x + y = 40$ and $15x + 30y = 9.6$"
+    },
+    {
+      "id": "D",
+      "text": "$x + y = 9.6$ and $0.15x + 0.30y = 40$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "sets the salt equation equal to the percent, $24$, instead of the $9.6$ liters of salt that percent represents.",
+    "C": "writes the concentrations as whole percents on the left while keeping liters on the right, mixing two different units.",
+    "D": "swaps the two totals, using the liters of salt as the total volume and the total volume as the amount of salt."
+  },
+  "correctAnswer": "A",
+  "hint": "One equation tracks liters of liquid; the other tracks liters of salt.",
+  "explanation": "**Choice A is correct.**\n\n**The Fast Way (~50s):** Volume gives $x + y = 40$. The mixture holds $0.24(40) = 9.6$ liters of salt, so $0.15x + 0.30y = 9.6$.\n\n**The Full Solution:**\nStep 1: The two solutions together make $40$ liters, so $x + y = 40$.\nStep 2: Solution A contributes $0.15x$ liters of salt and solution B contributes $0.30y$ liters of salt.\nStep 3: The mixture is $24$ percent salt, so it contains $0.24(40) = 9.6$ liters of salt, giving $0.15x + 0.30y = 9.6$. Check: $x = 16$ and $y = 24$ satisfy both, since $16 + 24 = 40$ and $0.15(16) + 0.30(24) = 2.4 + 7.2 = 9.6$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: sets the salt equation equal to the percent, $24$, instead of the $9.6$ liters of salt that percent represents.\n* Choice C: writes the concentrations as whole percents on the left while keeping liters on the right, mixing two different units.\n* Choice D: swaps the two totals, using the liters of salt as the total volume and the total volume as the amount of salt.\n\n**Test Day Takeaway:** In a mixture problem the second equation must balance the same substance on both sides. Convert the target percent into an actual amount before writing it."
+}

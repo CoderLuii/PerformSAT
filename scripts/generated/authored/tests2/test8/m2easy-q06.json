@@ -1,0 +1,41 @@
+{
+ "id": 6,
+ "question": "The figure gives the angle measures, in degrees, where two straight stitch lines cross on a fabric panel. What is the value of $y$?",
+ "diagram": {
+  "type": "intersectingLines",
+  "params": {
+   "angles": [
+    "(3x + 10)°",
+    "y°",
+    "(5x - 26)°",
+    ""
+   ],
+   "figureNote": true
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$18$"
+  },
+  {
+   "id": "B",
+   "text": "$64$"
+  },
+  {
+   "id": "C",
+   "text": "$90$"
+  },
+  {
+   "id": "D",
+   "text": "$116$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at x = 18 instead of substituting it back and taking the supplement",
+  "B": "reports 3(18) + 10 = 64, the measure of the vertical pair, rather than the angle marked y",
+  "C": "assumes the two stitch lines are perpendicular, so every angle is 90"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: Vertical Angles**\n\n**Choice D is correct.**\n\n**The Fast Way (~25s):** The two expression-marked angles are vertical, so $3x + 10 = 5x - 26$ gives $x = 18$ and an angle of $64$; $y$ sits next to it, so $y = 180 - 64 = 116$.\n\n**The Full Solution:**\nStep 1: The angles marked $(3x + 10)^\\circ$ and $(5x - 26)^\\circ$ are on opposite sides of the crossing point, so they are vertical angles and have equal measures: $3x + 10 = 5x - 26$.\nStep 2: Solve: $36 = 2x$, so $x = 18$, and each of those angles measures $3(18) + 10 = 64$ degrees.\nStep 3: The angle marked $y^\\circ$ shares a ray with the $64^\\circ$ angle and their outer rays form a straight line, so they are supplementary: $y = 180 - 64 = 116$. Check: $5(18) - 26 = 64$ as well, and the four angles total $64 + 116 + 64 + 116 = 360$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($18$): reports $x$, which is only the middle of the problem — the question asks for an angle measure.\n* Choice B ($64$): gives the measure of the vertical pair. The angle marked $y^\\circ$ is next to those angles, not across from them.\n* Choice C ($90$): assumes the crossing lines are perpendicular. Nothing in the figure says so, and the solved measures $64$ and $116$ show they are not.\n\n**Test Day Takeaway:** At a crossing there are only two distinct measures. Solve the vertical pair for $x$, then decide whether the angle you want is the same measure (across) or its supplement (next to)."
+}

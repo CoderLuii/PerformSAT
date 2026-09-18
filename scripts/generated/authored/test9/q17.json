@@ -6,29 +6,14 @@
   "domain": "standard-english-conventions",
   "skill": "boundaries",
   "module": 1,
-  "passage": "On 28 December 1895, Auguste and Louis Lumiere held what is often called the first commercial film screening, charging a Paris audience admission to a program of short actualities ______ within a year their camera operators were shooting and projecting scenes on several continents.",
+  "passage": "At Chavín de Huántar, a ceremonial center built high in the Peruvian Andes, stone-lined galleries wind through the temple mound. Researchers played the recorded tones of a conch-shell trumpet inside ______ however, listeners standing in the plaza outside could not agree on where the sound was coming from.",
   "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
   "choices": [
-    {
-      "id": "A",
-      "text": "actualities,"
-    },
-    {
-      "id": "B",
-      "text": "actualities"
-    },
-    {
-      "id": "C",
-      "text": "actualities;"
-    },
-    {
-      "id": "D",
-      "text": "actualities:"
-    }
+    { "id": "A", "text": "them," },
+    { "id": "B", "text": "them" },
+    { "id": "C", "text": "them;" },
+    { "id": "D", "text": "them, and" }
   ],
   "correctAnswer": "C",
-  "explanation": "Two independent clauses meet at the blank: the screening of \"short actualities\" and \"within a year their camera operators were shooting... on several continents.\" A semicolon correctly joins them, so choice C is right. A comma alone (A) creates a splice, no punctuation (B) fuses the clauses, and a colon (D) wrongly signals that the second clause explains or itemizes the first.",
-  "_meta": {
-    "anchor": "Lumiere brothers, first commercial screening"
-  }
+  "explanation": "**Choice C is correct.** Two independent clauses meet at the blank, and the second begins with the conjunctive adverb \"however\" — the conventional join is a semicolon before \"however\" and a comma after it.\n\n**The Full Solution:**\n- Left of the blank is a complete sentence: \"Researchers played the recorded tones of a conch-shell trumpet inside them.\"\n- Right of the blank is another: \"listeners standing in the plaza outside could not agree...\"\n- \"However\" belongs to the second clause, so the boundary must be strong enough to separate full sentences: \"them; however, listeners...\"\n\n**Why the other choices are wrong:**\n- A: A comma alone between two independent clauses is a comma splice; \"however\" cannot carry the join.\n- B: With no punctuation at all, the two sentences fuse into a run-on.\n- D: \"And\" plus \"however\" stacks two connectors on one boundary, garbling the sentence (\"them, and however, listeners...\")."
 }

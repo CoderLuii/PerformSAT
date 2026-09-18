@@ -1,0 +1,59 @@
+{
+ "id": "bank-geo-171",
+ "question": "The skylight-well brace shown has a right angle at $B$, and $\\sin A = \\frac{12}{13}$. If $90$ centimeters of steel angle forms the brace's three edges, how long is $\\overline{BC}$, in centimeters?",
+ "diagram": {
+  "type": "rightTriangle",
+  "params": {
+   "vertices": [
+    [
+     0,
+     0
+    ],
+    [
+     15,
+     0
+    ],
+    [
+     15,
+     36
+    ]
+   ],
+   "labels": [
+    "A",
+    "B",
+    "C"
+   ],
+   "sideLabels": [
+    "",
+    "",
+    ""
+   ],
+   "rightAngleVertex": 1
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$3$"
+  },
+  {
+   "id": "B",
+   "text": "$15$"
+  },
+  {
+   "id": "C",
+   "text": "$36$"
+  },
+  {
+   "id": "D",
+   "text": "$39$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "stops at the scale factor k = 3 instead of evaluating 12k",
+  "B": "reports the leg adjacent to A, 5k = 15",
+  "D": "reports the hypotenuse, 13k = 39"
+ },
+ "explanation": "**SAT Pattern: Right Triangle Trigonometry with Perimeter**\n\n**Choice C is correct.** $\\sin A = \\frac{12}{13}$ makes the sides $5k$, $12k$, $13k$; the perimeter $30k = 90$ gives $k = 3$, so $BC = 12k = 36$ centimeters.\n\n**The Fast Way (~40s):** $5$-$12$-$13$ scaled to a perimeter of $90$ means $k = 3$, so $BC = 36$.\n\n**The Full Solution:**\n\nStep 1: The right angle is at $B$, so $\\overline{AC}$ is the hypotenuse and $\\sin A = \\frac{BC}{AC} = \\frac{12}{13}$.\n\nStep 2: Write $BC = 12k$ and $AC = 13k$; then $AB = \\sqrt{169k^2 - 144k^2} = 5k$, so the perimeter is $30k$.\n\nStep 3: From $30k = 90$, $k = 3$, so $BC = 12(3) = 36$ centimeters. Check: the sides are $15$, $36$, $39$; they sum to $90$ and $15^2 + 36^2 = 1521 = 39^2$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($3$): stops at the scale factor $k$.\n* Choice B ($15$): reports $\\overline{AB}$, the leg adjacent to $A$.\n* Choice D ($39$): reports the hypotenuse $\\overline{AC}$.\n\n**Test Day Takeaway:** A sine value fixes the RATIO of the sides; a perimeter fixes their SIZE — combine the two and every side falls out at once."
+}

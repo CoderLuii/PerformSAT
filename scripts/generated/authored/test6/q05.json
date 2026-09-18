@@ -6,26 +6,26 @@
   "band": 3,
   "domain": "craft-and-structure",
   "skill": "text-structure-and-purpose",
-  "passage": "In the early 1930s, Karl Jansky, an engineer at Bell Telephone Laboratories, was asked to track down the static that interfered with transatlantic radio calls. He identified two kinds of interference from nearby and distant thunderstorms, but a third, fainter hiss puzzled him. *After months of recording, he noticed that the hiss grew strongest about four minutes earlier each day, the signature not of any source on Earth but of something fixed against the distant stars.* The hiss, he concluded, came from the direction of the center of the Milky Way.",
+  "passage": "Tens of thousands of early sound recordings survive only on wax cylinders, a medium so soft that a single playback with a stylus can shave away the very grooves it is meant to read. For decades, archivists therefore faced an unhappy choice between preserving such cylinders and hearing them. __The physicist Carl Haber and his colleagues developed a way out of the dilemma: an optical system photographs a cylinder's groove in microscopic detail, and software converts the measured shape into sound, so that a recording can be played without anything touching it.__ Cylinders once judged too fragile to handle, including some that had already cracked, have since given up their contents this way.",
   "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
   "choices": [
     {
       "id": "A",
-      "text": "It presents the observation that let Jansky rule out an earthly origin for the third signal and trace it to a source beyond the Earth."
+      "text": "It describes a method that resolved the dilemma presented in the preceding sentences."
     },
     {
       "id": "B",
-      "text": "It lists the several kinds of radio interference that Jansky had been hired by Bell Laboratories to investigate."
+      "text": "It argues that archivists were mistaken to treat wax cylinders as too fragile to play."
     },
     {
       "id": "C",
-      "text": "It questions whether Jansky's recording equipment was sensitive enough to detect a signal as faint as the third hiss that had puzzled him over months of patient recording."
+      "text": "It offers an example of a recording that was damaged by careless playback."
     },
     {
       "id": "D",
-      "text": "It explains why transatlantic radio calls in the early 1930s were so often disrupted by static."
+      "text": "It summarizes the physical properties that make wax cylinders difficult to store."
     }
   ],
   "correctAnswer": "A",
-  "explanation": "The correct answer is A. The passage builds toward Jansky's conclusion that the mysterious hiss came from the center of the galaxy, and the underlined sentence supplies the key step: the daily four-minute shift matches the motion of the stars, not anything on Earth, which is what allows him to place the source beyond the planet. The sentence does not catalog the kinds of interference (that work is done in the sentence before it), nor does it raise any doubt about his equipment. And it concerns the origin of the faint hiss, not the general problem of static on phone calls."
+  "explanation": "**Choice A is correct.** The sentence before the underlined one poses a dilemma — preserve the cylinders or hear them — and the underlined sentence supplies \"a way out of the dilemma,\" describing the optical method that lets both happen at once.\n\n**The Full Solution:**\n- The text's first two sentences build the problem: playback destroys the grooves, so preservation and listening seemed mutually exclusive.\n- The underlined sentence announces and explains the solution: photograph the groove, convert its shape to sound, touch nothing.\n- The final sentence then reports the payoff, confirming the underlined sentence's role as the turning point that resolves the problem.\n\n**Why the other choices are wrong:**\n- B: The sentence never disputes the cylinders' fragility — the optical method exists precisely because they are fragile.\n- C: No damaged recording is offered as an example; cracked cylinders appear later, as beneficiaries of the method.\n- D: Storage is never at issue, and the physical properties of wax are described before the underlined sentence, not in it."
 }

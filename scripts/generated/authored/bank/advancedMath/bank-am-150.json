@@ -1,0 +1,60 @@
+{
+ "id": "bank-am-150",
+ "question": "The table gives the horizontal deflection $D(x)$, in millimeters, of a retaining wall at five elevations $x$, in meters, relative to the ground surface. What is the value of $D(-3)-D(-6)$?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Elevation x (m)",
+    "Deflection D(x) (mm)"
+   ],
+   "rows": [
+    [
+     "-12",
+     "-20"
+    ],
+    [
+     "-9",
+     "-17"
+    ],
+    [
+     "-6",
+     "-14"
+    ],
+    [
+     "-3",
+     "-8"
+    ],
+    [
+     "0",
+     "-2"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-22$"
+  },
+  {
+   "id": "B",
+   "text": "$-6$"
+  },
+  {
+   "id": "C",
+   "text": "$6$"
+  },
+  {
+   "id": "D",
+   "text": "$22$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "adds the two readings instead of subtracting: -8 + (-14) = -22",
+  "B": "subtracts in the reverse order: D(-6) - D(-3) = -14 + 8 = -6",
+  "D": "ignores both negative signs and computes 8 + 14 = 22"
+ },
+ "explanation": "**SAT Pattern: Function Evaluation with Negative Input**\n\n**Choice C is correct.**\n\n**The Fast Way (~20s):** Read $D(-3)=-8$ and $D(-6)=-14$; subtracting gives $-8-(-14)=6$.\n\n**The Full Solution:**\nStep 1: Locate the row for the elevation $-3$: the deflection is $-8$ millimeters.\nStep 2: Locate the row for the elevation $-6$: the deflection is $-14$ millimeters.\nStep 3: Subtract in the order asked: $-8-(-14)=-8+14=6$ millimeters. Check: the wall deflects 6 mm less at $-3$ m than at $-6$ m, and the table's values do rise moving upward ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-22$): adds the two readings, $-8+(-14)$, instead of subtracting.\n* Choice B ($-6$): subtracts in the reverse order, $D(-6)-D(-3)$.\n* Choice D ($22$): drops both negative signs and adds $8+14$.\n\n**Test Day Takeaway:** Subtracting a negative table value adds its magnitude — write the parentheses before you compute."
+}

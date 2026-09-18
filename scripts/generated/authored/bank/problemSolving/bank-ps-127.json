@@ -1,0 +1,59 @@
+{
+  "id": "bank-ps-127",
+  "question": "The dot plot shows the number of service calls a technician completed on each of $7$ days. A value of $19$, for an eighth day, is added to the data set. How do the mean and the median of the $8$-day data set compare with those of the $7$-day data set?",
+  "diagram": {
+    "type": "dotPlot",
+    "params": {
+      "data": [
+        {
+          "value": 3,
+          "count": 1
+        },
+        {
+          "value": 4,
+          "count": 2
+        },
+        {
+          "value": 5,
+          "count": 1
+        },
+        {
+          "value": 6,
+          "count": 2
+        },
+        {
+          "value": 7,
+          "count": 1
+        }
+      ],
+      "xMin": 2,
+      "xMax": 8,
+      "xLabel": "Service calls completed"
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "The mean increased by more than the median increased."
+    },
+    {
+      "id": "B",
+      "text": "The median increased by more than the mean increased."
+    },
+    {
+      "id": "C",
+      "text": "The mean increased, and the median did not change."
+    },
+    {
+      "id": "D",
+      "text": "The mean and the median increased by the same amount."
+    }
+  ],
+  "distractorNotes": {
+    "B": "reverses the sizes; the median only moves to the average of two middle values (5 to 5.5) while the mean jumps 1.75",
+    "C": "the median does move, from 5 to 5.5, because the count goes from odd to even",
+    "D": "an outlier never moves the mean and the median equally"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Outlier Effect**\n\n**Choice A is correct.**\n\n**The Fast Way (~20s):** The $7$ values are $3, 4, 4, 5, 6, 6, 7$: sum $35$, mean $5$, median $5$. With $19$ added, the mean is $\\frac{54}{8} = 6.75$ and the median is $\\frac{5 + 6}{2} = 5.5$. The mean rose $1.75$; the median rose only $0.5$.\n\n**The Full Solution:**\nStep 1: Read the plot: $3, 4, 4, 5, 6, 6, 7$. Sum $= 35$, so the mean is $\\frac{35}{7} = 5$; the median is the 4th of the $7$ ordered values, $5$.\nStep 2: New data set: $3, 4, 4, 5, 6, 6, 7, 19$. Sum $= 54$, so the mean is $\\frac{54}{8} = 6.75$, an increase of $1.75$.\nStep 3: With $8$ values the median is the average of the 4th and 5th values: $\\frac{5 + 6}{2} = 5.5$, an increase of $0.5$. Check: $19$ is far above every other value, and an extreme value pulls the mean much more than the median. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B: Reverses the sizes. The median can only move to the average of the two middle values, from $5$ to $5.5$, while the mean absorbs the whole $19$.\n* Choice C: The median does change, from $5$ to $5.5$, because the count went from odd ($7$) to even ($8$) and the median is now an average of two values.\n* Choice D: An outlier never moves the mean and the median by the same amount; here $1.75$ versus $0.5$.\n\n**Test Day Takeaway:** A high outlier drags the mean a lot and the median a little or not at all; when the count changes parity, recompute the median as the average of the two middle values."
+}

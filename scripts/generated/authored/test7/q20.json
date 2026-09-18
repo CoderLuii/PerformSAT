@@ -1,31 +1,31 @@
 {
-  "id": 720,
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "standard-english-conventions",
-  "skill": "form-structure-and-sense",
-  "module": 1,
-  "passage": "By the time the results appeared in a landmark 1970 paper, years of spectroscopic measurements of stars in spiral galaxies ______ a startling pattern: stars far from a galaxy's center were moving nearly as fast as those near it, contradicting predictions based on the galaxies' visible mass.",
-  "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "are revealing"
-    },
-    {
-      "id": "B",
-      "text": "revealed"
-    },
-    {
-      "id": "C",
-      "text": "had revealed"
-    },
-    {
-      "id": "D",
-      "text": "have revealed"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C. The phrase \"By the time the results appeared\" signals an action completed before another past event, which calls for the past perfect \"had revealed.\" Choice B's simple past is the tempting option but does not capture the sequence of one past action preceding another. Choice A's present progressive and Choice D's present perfect both clash with the clearly past time frame established by \"in a landmark 1970 paper.\""
+ "id": 720,
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "standard-english-conventions",
+ "skill": "form-structure-and-sense",
+ "module": 1,
+ "passage": "By the time fountain pens that could be carried in a pocket without leaking reached shop counters in the 1880s, inventors ______ hundreds of reservoir pens over the preceding half century — most of them prone to flooding the page without warning. The successful designs owed less to the idea of storing ink in the barrel than to a feed that let air return as smoothly as the ink flowed out.",
+ "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "are patenting"
+  },
+  {
+   "id": "B",
+   "text": "patented"
+  },
+  {
+   "id": "C",
+   "text": "had patented"
+  },
+  {
+   "id": "D",
+   "text": "have patented"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** \"By the time\" sets up two past events in sequence — the patenting came before the pens' arrival in the 1880s — and the earlier of two past events takes the past perfect, \"had patented.\"\n\n**The Full Solution:**\n- The sentence anchors a reference point in the past: leak-proof fountain pens reaching shop counters in the 1880s.\n- The inventors' patenting happened \"over the preceding half century,\" wholly before that reference point.\n- Past perfect (\"had\" plus the past participle) is the verb form that places one past action before another.\n\n**Why the other choices are wrong:**\n- A: \"Are patenting\" is present progressive, impossible alongside the sentence's nineteenth-century time frame.\n- B: Simple past \"patented\" reports a past event but fails to mark that it preceded the other past event the sentence hinges on.\n- D: \"Have patented\" is present perfect, which connects a past action to the present — the wrong relationship for something finished before the 1880s."
 }

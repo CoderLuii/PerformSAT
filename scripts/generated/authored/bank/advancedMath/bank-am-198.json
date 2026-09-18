@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-198",
+  "question": "The function $N$ defined by $N(t) = 4{,}500(0.6)^{t/8}$ models the number of harbor seals counted at a monitoring site $t$ years after $2000$. Which statement best describes how the estimated number of seals changes over time?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "It decreases by $5\\%$ each year."
+    },
+    {
+      "id": "B",
+      "text": "It decreases by $40\\%$ each year."
+    },
+    {
+      "id": "C",
+      "text": "It decreases by $40\\%$ every $8$ years."
+    },
+    {
+      "id": "D",
+      "text": "It decreases by $60\\%$ every $8$ years."
+    }
+  ],
+  "distractorNotes": {
+    "A": "splits the 40% decrease evenly across the 8 years",
+    "B": "ignores the $8$ in the exponent",
+    "D": "reads the base $0.6$ as the percent decrease"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Exponential Growth Interpretation**\n\n**Choice C is correct.**\n\n**The Fast Way (~25s):** The exponent advances by $1$ when $t$ advances by $8$, so every $8$ years the count is multiplied by $0.6$ — a $40\\%$ decrease.\n\n**The Full Solution:**\nStep 1: In $N(t) = 4{,}500(0.6)^{t/8}$, replacing $t$ with $t + 8$ raises the exponent by exactly $1$.\nStep 2: So $N(t + 8) = 0.6 \\cdot N(t)$: each $8$-year span multiplies the count by $0.6$.\nStep 3: Multiplying by $0.6$ keeps $60\\%$ and loses $40\\%$. Check: $N(0) = 4{,}500$ and $N(8) = 2{,}700$, and $\\dfrac{4{,}500 - 2{,}700}{4{,}500} = 0.40$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($5\\%$ per year): divides the $40\\%$ by $8$; percent decay does not split evenly across a period.\n* Choice B ($40\\%$ per year): correct percent, wrong time frame — it ignores the $8$ in the denominator of the exponent.\n* Choice D ($60\\%$ every $8$ years): reports the base as the loss; $0.6$ is the fraction that REMAINS.\n\n**Test Day Takeaway:** In $b^{t/k}$, the quantity is multiplied by $b$ once every $k$ units of $t$ — name the period before naming the percent."
+}

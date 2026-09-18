@@ -1,0 +1,29 @@
+{
+  "question": "In the equation $ax^{2}+20x+c=0$, the constants $a$ and $c$ are positive integers, the discriminant equals $0$, and $a$ exceeds $c$ by $21$. What is the value of $a$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$4$"
+    },
+    {
+      "id": "B",
+      "text": "$10$"
+    },
+    {
+      "id": "C",
+      "text": "$25$"
+    },
+    {
+      "id": "D",
+      "text": "$100$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "reported c instead of a",
+    "B": "assumed a = c and solved a squared = 100, ignoring the difference of 21",
+    "D": "reported the product ac instead of a"
+  },
+  "correctAnswer": "C",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice C is correct.**\n\n**The Fast Way (~30s):** A zero discriminant gives $4ac=400$, so $ac=100$; the factor pair differing by $21$ is $25$ and $4$.\n\n**The Full Solution:**\nStep 1: The discriminant is $20^{2}-4ac=400-4ac$, and setting it equal to $0$ gives $ac=100$.\nStep 2: Also $a-c=21$, so $a=c+21$ and $c(c+21)=100$, or $c^{2}+21c-100=0$.\nStep 3: Factoring gives $(c+25)(c-4)=0$, so $c=4$ and $a=25$. Check: $25x^{2}+20x+4=(5x+2)^{2}$, whose discriminant is $400-400=0$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($4$): reports $c$ instead of $a$.\n* Choice B ($10$): assumes $a=c$ and solves $a^{2}=100$, ignoring the difference of $21$.\n* Choice D ($100$): reports the product $ac$.\n\n**Test Day Takeaway:** A zero discriminant fixes the product $ac$; a second condition then picks the pair — list factor pairs before reaching for the quadratic formula.",
+  "id": "bank-am-352"
+}

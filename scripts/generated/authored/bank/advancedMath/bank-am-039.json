@@ -1,0 +1,6 @@
+{
+ "id": "bank-am-039",
+ "question": "A glacier-mass model requires the quantity $y^{5k}$ divided by $y^{k+4}$ to equal $y^{20}$ at every positive value of $y$, where $y$ is an ice-density ratio and $k$ is a constant chosen once for the whole model. What is the value of $k$?",
+ "correctAnswer": "6",
+ "explanation": "**SAT Pattern: Exponent Laws — Quotient Rule + Solve**\n\n**The correct answer is $6$.**\n\n**The Fast Way (~20s):** Dividing subtracts exponents: $5k - (k + 4) = 4k - 4$, so $4k - 4 = 20$ and $k = 6$.\n\n**The Full Solution:**\nStep 1: The quotient rule gives $\\dfrac{y^{5k}}{y^{k+4}} = y^{5k - (k + 4)}$.\nStep 2: Simplify the exponent: $5k - k - 4 = 4k - 4$, so the equation of exponents is $4k - 4 = 20$.\nStep 3: Adding $4$ gives $4k = 24$, so $k = 6$. Check: the exponents become $30$ and $10$, and $30 - 10 = 20$ ✓\n\n**Common Mistakes:**\n* $4$ — subtracting only the first term of the denominator's exponent, which leaves $4k + 4 = 20$.\n* $5$ — dividing $20$ by $4$ before adding the $4$ back, which solves $4k = 20$ instead of $4k - 4 = 20$.\n\n**Test Day Takeaway:** Wrap the whole denominator exponent in parentheses before subtracting — the minus sign has to reach every term inside it."
+}

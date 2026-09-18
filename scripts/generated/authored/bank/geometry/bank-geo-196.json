@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-196",
+ "question": "Two circles are similar. The ratio of the circumference of the first circle to the circumference of the second circle is $5:2$. What is the ratio of the area of the first circle to the area of the second circle?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$4:25$"
+  },
+  {
+   "id": "B",
+   "text": "$5:2$"
+  },
+  {
+   "id": "C",
+   "text": "$25:4$"
+  },
+  {
+   "id": "D",
+   "text": "$125:8$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "squares but inverts the order",
+  "B": "reports the linear ratio unsquared",
+  "D": "cubes the ratio"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Similar Figures Area Ratio**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Circumference is proportional to radius, so the radii are also in the ratio $5:2$, and the areas are in the ratio $5^2 : 2^2 = 25:4$.\n\n**The Full Solution:**\nStep 1: $C = 2\\pi r$ is linear in $r$, so a circumference ratio of $5:2$ is also a radius ratio of $5:2$.\nStep 2: Write the radii as $5t$ and $2t$. Then the areas are $\\pi(5t)^2 = 25\\pi t^2$ and $\\pi(2t)^2 = 4\\pi t^2$.\nStep 3: The ratio of the areas is $25\\pi t^2 : 4\\pi t^2 = 25:4$.\n\nVerification: radii $5$ and $2$ give circumferences $10\\pi$ and $4\\pi$ (ratio $5:2$) and areas $25\\pi$ and $4\\pi$ (ratio $25:4$). $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($4:25$): squares correctly but reports second circle to first, reversing the order the question asks for.\n* Choice B ($5:2$): reuses the circumference ratio; circumference is a length, area is not.\n* Choice D ($125:8$): cubes the ratio, which would apply to the volumes of similar solids.\n\n**Test Day Takeaway:** Circumference, diameter, and radius all scale together at $k$; area scales at $k^2$. Any linear measurement can serve as the starting ratio."
+}

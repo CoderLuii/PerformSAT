@@ -1,0 +1,29 @@
+{
+  "question": "A weather model uses $f(x) = 12 - \\sqrt{x - 7}$ to give the departure from the seasonal average temperature, in degrees Fahrenheit, $x$ days after a front passes, where $x \\ge 7$. Which statement must be true for every $x$ in the domain of $f$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(x) \\ge 0$"
+    },
+    {
+      "id": "B",
+      "text": "$f(x) \\ge 12$"
+    },
+    {
+      "id": "C",
+      "text": "$f(x) \\le 7$"
+    },
+    {
+      "id": "D",
+      "text": "$f(x) \\le 12$"
+    }
+  ],
+  "correctAnswer": "D",
+  "distractorNotes": {
+    "A": "assumes the square root keeps the whole expression nonnegative, but a large enough $x$ drives $f(x)$ below $0$",
+    "B": "treats $-\\sqrt{x - 7}$ as adding to $12$ rather than subtracting from it",
+    "C": "uses the domain restriction $x \\ge 7$ as if it bounded the output"
+  },
+  "explanation": "**SAT Pattern: Square Root Function — Sign Reasoning**\n\n**Choice D is correct.**\n\n**The Fast Way (~40s):** A square root is never negative, so $12 - \\sqrt{x - 7}$ can never exceed $12$.\n\n**The Full Solution:**\n\nStep 1: The expression under the radical must be nonnegative, so $x \\ge 7$, matching the stated domain.\n\nStep 2: For every such $x$, $\\sqrt{x - 7} \\ge 0$.\n\nStep 3: Subtracting a nonnegative number from $12$ gives at most $12$, so $f(x) \\le 12$. Check: $f(7) = 12$ and $f(71) = 12 - 8 = 4$.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($f(x) \\ge 0$): holds only up to $x = 151$, where $f(x) = 12 - 12 = 0$; past that point the value is negative.\n\n* Choice B ($f(x) \\ge 12$): reverses the sign of the radical term; the only $x$ with $f(x) = 12$ is $x = 7$, and every other value is smaller.\n\n* Choice C ($f(x) \\le 7$): borrows the $7$ from the domain restriction, but $f(7) = 12$ already exceeds $7$.\n\n**Test Day Takeaway:** Read the sign in front of the radical: a subtracted square root caps the function at the constant, and the cap is reached only where the radicand is zero.",
+  "id": "bank-alg-509"
+}

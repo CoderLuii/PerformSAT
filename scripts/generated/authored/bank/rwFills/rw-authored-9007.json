@@ -1,0 +1,38 @@
+{
+  "id": 9007,
+  "passage": "Robert Browning's 1842 poem \"My Last Duchess\" is spoken by a duke who is walking a visitor through his private gallery. The visitor has come to arrange the duke's next marriage. Stopping at a curtained portrait of his late wife, the duke undertakes to explain why her expression in the painting is what it is. A reader might argue that the duke's account of the picture turns into a grievance about how little his rank counted with her.",
+  "question": "Which quotation from \"My Last Duchess\" most effectively illustrates the claim?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "\"That's my last Duchess painted on the wall, / Looking as if she were alive.\""
+    },
+    {
+      "id": "B",
+      "text": "\"She had / A heart--how shall I say?--too soon made glad, / Too easily impressed;\""
+    },
+    {
+      "id": "C",
+      "text": "\"Nay, we'll go / Together down, sir. Notice Neptune, though, / Taming a sea-horse, thought a rarity, / Which Claus of Innsbruck cast in bronze for me!\""
+    },
+    {
+      "id": "D",
+      "text": "\"She thanked men,--good! but thanked / Somehow--I know not how--as if she ranked / My gift of a nine-hundred-years-old name / With anybody's gift.\""
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Choice D is correct.** The duke reports his wife's thanks and then measures it against himself: she ranked his \"nine-hundred-years-old name\" no higher than \"anybody's gift.\"\n\n**The Full Solution:**\n- The claim names a specific grievance, so look for the quotation in which the duke's complaint is about his own standing rather than about her manner in general.\n- Choice D supplies it. The complaint is not that she was ungrateful; the sting is the comparison, his ancient title set beside the small courtesies of other men and found equal.\n- Eliminate quotations that describe the portrait or another object in the gallery, and eliminate the complaint that never mentions what the duke felt entitled to.\n\n**Why the other choices are wrong:**\n- A: This introduces the painting and praises its lifelike look, which is the gallery talk the duke begins with, before any grievance surfaces.\n- B: The duke does object here to a heart \"too soon made glad,\" but the objection is to her temperament in general and says nothing about his rank.\n- C: This turns the visitor's attention to a bronze Neptune, displaying the duke's pride in his collection rather than any complaint about his wife.",
+  "source": {
+    "title": "My Last Duchess",
+    "author": "Robert Browning",
+    "year": 1842,
+    "publicDomain": true,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/16376"
+  },
+  "people": [
+    {
+      "name": "Robert Browning",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/16376"
+    }
+  ]
+}

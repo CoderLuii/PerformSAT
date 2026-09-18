@@ -1,0 +1,56 @@
+{
+ "id": 1,
+ "question": "A hardware supplier posted clearance prices for four items, as listed in the table. The clearance price of the brass hinge is $60\\%$ of that item's original price. What was the original price, in dollars, of the brass hinge?",
+ "diagram": {
+  "type": "dataTable",
+  "params": {
+   "headers": [
+    "Item",
+    "Clearance price (dollars)"
+   ],
+   "rows": [
+    [
+     "Brass hinge",
+     "27.00"
+    ],
+    [
+     "Copper elbow",
+     "18.00"
+    ],
+    [
+     "Steel bracket",
+     "32.50"
+    ],
+    [
+     "Nylon washer",
+     "4.75"
+    ]
+   ]
+  }
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$16.20$"
+  },
+  {
+   "id": "B",
+   "text": "$43.20$"
+  },
+  {
+   "id": "C",
+   "text": "$45.00$"
+  },
+  {
+   "id": "D",
+   "text": "$67.50$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "takes 60% OF the clearance price (0.60 x 27 = 16.20) instead of treating 27 as the 60%",
+  "B": "adds 60% of the clearance price to the clearance price (27 + 16.20 = 43.20)",
+  "D": "divides by the complement 0.40 instead of 0.60 (27 / 0.40 = 67.50)"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Reverse-Percent**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** The clearance price is the part, not the whole. Divide: $27 \\div 0.60 = 45$.\n\n**The Full Solution:**\nStep 1: Let $p$ be the original price of the brass hinge. The table gives its clearance price as $27$ dollars, and the clearance price is $60\\%$ of the original price, so $0.60p = 27$.\nStep 2: Divide both sides by $0.60$: $p = \\frac{27}{0.60} = 45$.\nStep 3: Check by running the percent forward: $60\\%$ of $45$ is $0.60(45) = 27$, which matches the table entry.\n\n**Why the wrong answers are tempting:**\n* Choice A ($16.20$): takes $60\\%$ of the clearance price, $0.60(27) = 16.20$. That treats $27$ as the original price instead of as the reduced one, so the answer comes out smaller than the price you started with.\n* Choice B ($43.20$): adds $60\\%$ of $27$ back onto $27$, giving $27 + 16.20 = 43.20$. Adding a percent of the SMALLER number never undoes taking a percent of the LARGER one.\n* Choice D ($67.50$): divides by $0.40$ instead of $0.60$, giving $27 \\div 0.40 = 67.50$. The $40\\%$ is the part that was taken OFF; the $60\\%$ is the part that remains and is the one the $27$ represents.\n\n**Test Day Takeaway:** When a price is stated as a percent OF an unknown original, the given number is the product, so you divide by the percent. Multiplying is only correct when the whole is the number you already have."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 9,
+ "question": "A campus workshop costs $\\$60$ for materials plus $\\$4.50$ for each attendee, and at least one person attends. The organizers need the average cost per attendee to stay below $\\$7.20$. Which statement about the number of attendees, $n$, is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "The least possible value of $n$ is $22$."
+  },
+  {
+   "id": "B",
+   "text": "The least possible value of $n$ is $23$."
+  },
+  {
+   "id": "C",
+   "text": "The greatest possible value of $n$ is $22$."
+  },
+  {
+   "id": "D",
+   "text": "The greatest possible value of $n$ is $23$."
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves n > 22.2 correctly but rounds down to 22; at n = 22 the cost per attendee is about $7.23, still above the $7.20 ceiling",
+  "C": "reverses the inequality to n < 22.2 and reports 22 as a maximum",
+  "D": "reverses the inequality and then rounds up, reporting 23 as a maximum"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Smallest Integer in an Inequality**\n\n**Choice B is correct.**\n\n**The Fast Way (~40s):** $\\frac{60 + 4.5n}{n} < 7.2$ becomes $60 < 2.7n$, so $n > 22.\\overline{2}$ and the first whole number that works is $23$.\n\n**The Full Solution:**\nStep 1: The total cost of the workshop is $60 + 4.5n$ dollars, so the cost per attendee is $\\frac{60 + 4.5n}{n}$, and the requirement is $\\frac{60 + 4.5n}{n} < 7.2$.\nStep 2: Because at least one person attends, $n$ is positive, so multiplying both sides by $n$ keeps the direction: $60 + 4.5n < 7.2n$. Subtracting $4.5n$ gives $60 < 2.7n$, and dividing by $2.7$ gives $n > 22.\\overline{2}$.\nStep 3: The smallest integer greater than $22.\\overline{2}$ is $23$, and there is no upper limit, since more attendees only spread the $\\$60$ further. Check: at $n = 23$ the cost per attendee is $\\frac{60 + 103.50}{23} = \\frac{163.50}{23} \\approx \\$7.11$, which is below $\\$7.20$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($22$ as a least value): rounds $22.\\overline{2}$ down. At $n = 22$ the cost per attendee is $\\frac{60 + 99}{22} \\approx \\$7.23$, which is above the ceiling, so $22$ does not satisfy the condition.\n* Choice C ($22$ as a greatest value): reads the inequality backwards as $n < 22.\\overline{2}$. Multiplying by a positive $n$ never flips the sign.\n* Choice D ($23$ as a greatest value): reverses the direction and then rounds up, pairing the right number with the wrong word. Adding attendees drives the per-person cost down, so there is no maximum.\n\n**Test Day Takeaway:** After you isolate the variable, say the inequality out loud before rounding — \"greater than $22.2$\" rounds **up** to $23$, and only a negative multiplier flips the sign."
+}

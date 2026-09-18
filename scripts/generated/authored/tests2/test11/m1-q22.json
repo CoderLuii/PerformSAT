@@ -1,0 +1,29 @@
+{
+ "id": 22,
+ "question": "In a data pipeline, stage one applies the rule $f(n) = 2n - 5$ to a number and stage two applies the rule $g(n) = n^2 + 3$. Which expression is equivalent to $g(f(n)) - f(g(n))$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2n^2 - 20n + 27$"
+  },
+  {
+   "id": "B",
+   "text": "$-2n^2 + 20n - 27$"
+  },
+  {
+   "id": "C",
+   "text": "$2n^2 + 27$"
+  },
+  {
+   "id": "D",
+   "text": "$4n^2 - 20n + 28$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "subtracts in the reverse order, computing f(g(n)) - g(f(n))",
+  "C": "expands (2n - 5)^2 as 4n^2 + 25, dropping the -20n middle term",
+  "D": "stops after computing g(f(n)) and never subtracts f(g(n))"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Function Composition**\n\n**Choice A is correct.**\n\n**The Fast Way (~45s):** $g(f(n)) = (2n - 5)^2 + 3 = 4n^2 - 20n + 28$ and $f(g(n)) = 2(n^2 + 3) - 5 = 2n^2 + 1$, so the difference is $2n^2 - 20n + 27$.\n\n**The Full Solution:**\nStep 1: Compute $g(f(n))$ by substituting $2n - 5$ for the input of $g$: $g(f(n)) = (2n - 5)^2 + 3 = 4n^2 - 20n + 25 + 3 = 4n^2 - 20n + 28$.\nStep 2: Compute $f(g(n))$ by substituting $n^2 + 3$ for the input of $f$: $f(g(n)) = 2(n^2 + 3) - 5 = 2n^2 + 6 - 5 = 2n^2 + 1$.\nStep 3: Subtract in the order asked: $(4n^2 - 20n + 28) - (2n^2 + 1) = 2n^2 - 20n + 27$. Check at $n = 3$: $g(f(3)) = g(1) = 4$ and $f(g(3)) = f(12) = 19$, so the difference is $-15$, and $2(9) - 20(3) + 27 = 18 - 60 + 27 = -15$. ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($-2n^2 + 20n - 27$): this is the difference taken in the reverse order. At $n = 3$ it gives $+15$ instead of $-15$.\n* Choice C ($2n^2 + 27$): this expands $(2n - 5)^2$ as $4n^2 + 25$ and loses the $-20n$ middle term. At $n = 3$ it gives $45$.\n* Choice D ($4n^2 - 20n + 28$): this is $g(f(n))$ alone, with the subtraction never carried out. At $n = 3$ it gives $4$.\n\n**Test Day Takeaway:** Composition is not commutative — expand each order separately, keeping every middle term of the square, before combining."
+}

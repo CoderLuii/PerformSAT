@@ -1,0 +1,29 @@
+{
+ "id": "bank-am-285",
+ "question": "A magnetometer boom's balance condition is $\\dfrac{x+a}{x-3}=\\dfrac{6}{x-3}$, where $a$ is a constant and $x$ is the boom offset in centimeters. For which value of $a$ does the condition have no solution?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-3$"
+  },
+  {
+   "id": "B",
+   "text": "$0$"
+  },
+  {
+   "id": "C",
+   "text": "$3$"
+  },
+  {
+   "id": "D",
+   "text": "$6$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "solves 6 + a = 3 instead of 6 - a = 3, giving -3",
+  "B": "assumes no solution requires the numerator x + a to equal x, so a = 0",
+  "D": "copies the constant 6 from the right-hand numerator"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Rational Equation with Extraneous Solution**\n\n**Choice C is correct.**\n\n**The Fast Way (~40s):** Equal denominators force $x+a=6$, so $x=6-a$; the condition fails only when that candidate is the barred value $3$, which happens at $a=3$.\n\n**The Full Solution:**\n\nStep 1: Both sides have denominator $x-3$, so $x\\neq3$, and for every other $x$ the equation reduces to $x+a=6$.\n\nStep 2: The reduced equation always has exactly one candidate, $x=6-a$.\n\nStep 3: That candidate is unusable precisely when $6-a=3$, that is, when $a=3$. Check: with $a=3$ the condition is $\\frac{x+3}{x-3}=\\frac{6}{x-3}$, whose only candidate is $x=3$, an excluded input, so there is no solution.\n\n**Why the wrong answers are tempting:**\n\n* Choice A ($-3$): solves $6+a=3$ rather than $6-a=3$.\n* Choice B ($0$): assumes no solution requires the two numerators to be identical.\n* Choice D ($6$): copies the constant from the right-hand numerator.\n\n**Test Day Takeaway:** A rational equation has no solution exactly when its only candidate is an input the denominators forbid."
+}

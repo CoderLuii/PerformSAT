@@ -1,0 +1,29 @@
+{
+ "question": "A process comparison sets the count $3w+50$ equal to the count $8w+15$, where $w$ is the number of wafers processed during a shift. Which statement about the two counts is true?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "They are equal when $w=7$."
+  },
+  {
+   "id": "B",
+   "text": "They are equal when $w=13$."
+  },
+  {
+   "id": "C",
+   "text": "They are equal for every value of $w$."
+  },
+  {
+   "id": "D",
+   "text": "They are never equal."
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "adds the constants, computing (50 + 15)/5 = 13 instead of (50 - 15)/5",
+  "C": "assumes two expressions set equal must be identical expressions",
+  "D": "assumes different coefficients of w prevent the expressions from ever agreeing"
+ },
+ "explanation": "**SAT Pattern: Linear Equation with Variables on Both Sides**\n\n**Choice A is correct.** Solving $3w+50=8w+15$ gives $35=5w$, so the expressions agree at $w=7$.\n\n**The Fast Way (~25s):** $50-15=35$ and $8w-3w=5w$, so $5w=35$ and $w=7$.\n\n**The Full Solution:**\n\nStep 1: Subtract $3w$ from both sides: $50=5w+15$.\n\nStep 2: Subtract $15$ from both sides: $35=5w$.\n\nStep 3: Divide by $5$: $w=7$. Check: $3(7)+50=71$ and $8(7)+15=71$, so the two expressions agree at exactly $7$ wafers.\n\n**Why the wrong answers are tempting:**\n\n* Choice B: adds the constants instead of subtracting, computing $\\frac{50+15}{5}=13$; at $w=13$ the expressions are $89$ and $119$.\n* Choice C: would require the two expressions to be identical, but their $w$ coefficients differ.\n* Choice D: no solution requires matching $w$ coefficients, and $3$ does not equal $8$.\n\n**Test Day Takeaway:** Unequal variable coefficients guarantee exactly one point of agreement — solve for it rather than guessing \"always\" or \"never\".",
+ "id": "bank-alg-398"
+}

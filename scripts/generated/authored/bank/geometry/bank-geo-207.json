@@ -1,0 +1,29 @@
+{
+  "id": "bank-geo-207",
+  "question": "Surveyors for a school district staked a triangular athletic-field parcel at $(-4,-1)$, $(-4,8)$, and $(6,2)$, one unit per yard. How many square yards lie inside the stakes?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$45$"
+    },
+    {
+      "id": "B",
+      "text": "$60$"
+    },
+    {
+      "id": "C",
+      "text": "$90$"
+    },
+    {
+      "id": "D",
+      "text": "$120$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "uses 8 - (-4) = 12 as the base, mixing an x-coordinate into the vertical length",
+    "C": "omits the factor one half, giving the rectangle area 9 times 10",
+    "D": "omits the one half and uses the length 12, combining both errors"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Area of Triangle from Coordinates**\n\n**Choice A is correct.**\n\n**The Fast Way (~35s):** The vertical base runs from $-1$ to $8$, a length of $9$, and the apex sits $10$ yards from that line, so the area is $\\frac{1}{2}(9)(10)=45$.\n\n**The Full Solution:**\n\nStep 1: Identify the base. $(-4,-1)$ and $(-4,8)$ share the $x$-value $-4$, so they lie on the vertical line $x=-4$ and the base is $8-(-1)=9$ yards long.\n\nStep 2: Identify the height. The apex $(6,2)$ lies $6-(-4)=10$ yards from that line, measured perpendicular to it.\n\nStep 3: Compute. Area $=\\frac{1}{2}(9)(10)=45$ square yards.\n\nCheck: a $9$-by-$10$ rectangle covers $90$ square yards, and the triangle is exactly half of it.\n\n**Why the wrong answers are tempting:**\n\n* Choice B ($60$): uses $8-(-4)=12$ as the base, subtracting an $x$-coordinate from a $y$-coordinate.\n* Choice C ($90$): omits the factor $\\frac{1}{2}$ and reports the surrounding rectangle's area.\n* Choice D ($120$): drops the $\\frac{1}{2}$ and uses the length $12$, combining both errors.\n\n**Test Day Takeaway:** A vertical base is a difference of $y$-values and its height a difference of $x$-values; a length that mixes the two is always a wrong turn."
+}

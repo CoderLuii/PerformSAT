@@ -1,0 +1,30 @@
+{
+ "id": 1,
+ "question": "Each of the following expressions is a power of a positive integer. Which of these expressions has the greatest value?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$2^5$"
+  },
+  {
+   "id": "B",
+   "text": "$3^4$"
+  },
+  {
+   "id": "C",
+   "text": "$4^3$"
+  },
+  {
+   "id": "D",
+   "text": "$7^2$"
+  }
+ ],
+ "correctAnswer": "B",
+ "hint": "None of these is hard to evaluate — evaluate all four before choosing.",
+ "distractorNotes": {
+  "A": "picks the largest exponent",
+  "C": "assumes a larger base wins",
+  "D": "compares base times exponent"
+ },
+ "explanation": "**Choice B is correct.**\n\n**The Fast Way (~20s):** $2^5 = 32$, $3^4 = 81$, $4^3 = 64$, and $7^2 = 49$, so $3^4$ is the largest.\n\n**The Full Solution:**\nStep 1: Evaluate each power: $2^5 = 32$ and $3^4 = 81$.\nStep 2: Evaluate the rest: $4^3 = 64$ and $7^2 = 49$.\nStep 3: Compare $32$, $81$, $64$, and $49$; the greatest is $81$, so the answer is $3^4$. Check: $81 > 64$, the nearest competitor.\n\n**Why the wrong answers are tempting:**\n* Choice A ($2^5 = 32$): picks the expression with the largest exponent, but the smallest base holds it back.\n* Choice C ($4^3 = 64$): assumes a larger base beats a larger exponent and stops before checking $3^4$.\n* Choice D ($7^2 = 49$): compares $b \\times n$ instead of $b^n$; $7 \\times 2 = 14$ is the largest such product, but the value is not.\n\n**Test Day Takeaway:** Neither the base nor the exponent alone decides the size of a power. When the numbers are small, just compute all four."
+}

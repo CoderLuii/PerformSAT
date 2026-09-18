@@ -1,0 +1,50 @@
+{
+  "id": "bank-alg-087",
+  "question": "The table gives three values of $x$ and the corresponding values of $f(x)$ for the linear function $f$. Which of the following defines $f$?",
+  "diagram": {
+    "type": "table",
+    "params": {
+      "xHeader": "x",
+      "yHeader": "f(x)",
+      "rows": [
+        [
+          "0",
+          "-3"
+        ],
+        [
+          "5",
+          "7"
+        ],
+        [
+          "10",
+          "17"
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$f(x) = 2x - 3$"
+    },
+    {
+      "id": "B",
+      "text": "$f(x) = \\dfrac{1}{2}x - 3$"
+    },
+    {
+      "id": "C",
+      "text": "$f(x) = 2x + 7$"
+    },
+    {
+      "id": "D",
+      "text": "$f(x) = -3x + 2$"
+    }
+  ],
+  "distractorNotes": {
+    "B": "inverts the slope, 5/10",
+    "C": "uses f(5) = 7 as the intercept",
+    "D": "swaps slope and intercept"
+  },
+  "correctAnswer": "A",
+  "explanation": "**SAT Pattern: Linear Function from Two Points (y-Intercept Given)**\n\n**Choice A is correct.**\n\n**The Fast Way (~10s):** The row $x = 0$ gives the $y$-intercept, $-3$. The outputs rise $10$ for every $5$ in $x$, so the slope is $2$: $f(x) = 2x - 3$.\n\n**The Full Solution:**\nStep 1: For a linear function $f(x) = mx + b$, $b = f(0)$. The table gives $f(0) = -3$.\nStep 2: Slope from two rows: $m = \\frac{7 - (-3)}{5 - 0} = \\frac{10}{5} = 2$.\nStep 3: $f(x) = 2x - 3$. Check with the third row: $f(10) = 2(10) - 3 = 17$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($f(x) = \\frac{1}{2}x - 3$): inverts the slope, dividing the change in $x$ by the change in $f(x)$.\n* Choice C ($f(x) = 2x + 7$): uses $f(5) = 7$ as the intercept; the intercept is the output at $x = 0$.\n* Choice D ($f(x) = -3x + 2$): swaps the slope and the intercept.\n\n**Test Day Takeaway:** When a table includes $x = 0$, read the intercept directly from that row, compute the slope from any two rows, and verify the rule on a row you did not use."
+}

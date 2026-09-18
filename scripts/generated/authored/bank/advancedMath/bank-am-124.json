@@ -1,0 +1,40 @@
+{
+ "id": "bank-am-124",
+ "question": "The figure shows the graph of $y=g(x)$ for a quadratic function $g$. A horizontal line is tangent to the graph of $y=g(x)+4$ at a single point. What is the $y$-coordinate of that point?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$-9$"
+  },
+  {
+   "id": "B",
+   "text": "$-5$"
+  },
+  {
+   "id": "C",
+   "text": "$-1$"
+  },
+  {
+   "id": "D",
+   "text": "$2$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "shifts the minimum down by 4 instead of up, giving -9",
+  "B": "reports the minimum of g and never applies the +4 shift",
+  "D": "reports the x-coordinate of the vertex instead of a y-coordinate"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Tangent Line and Discriminant**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** A horizontal line meets a parabola once only at the vertex; the graph's minimum is $-5$, and adding $4$ raises it to $-1$.\n\n**The Full Solution:**\nStep 1: Read the vertex of $y=g(x)$ from the figure: $(2,-5)$, so the least value of $g$ is $-5$.\nStep 2: The graph of $y=g(x)+4$ is the same parabola raised $4$ units, so its least value is $-5+4=-1$.\nStep 3: A horizontal line touches an upward parabola at exactly one point only at that lowest point, so the $y$-coordinate is $-1$. Check: $y=-1$ meets $y=g(x)+4$ only where $g(x)=-5$, which happens at the single input $x=2$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-9$): shifts the minimum down by $4$ instead of up.\n* Choice B ($-5$): reports the minimum of $g$ itself and never applies the $+4$.\n* Choice D ($2$): reports the vertex's $x$-coordinate instead of a $y$-coordinate.\n\n**Test Day Takeaway:** A horizontal line is tangent to a parabola only at the vertex — so the tangency height is the maximum or minimum value.",
+ "diagram": {
+  "type": "quadraticVertex",
+  "params": {
+   "vertex": [
+    2,
+    -5
+   ],
+   "a": 0.5,
+   "showVertex": true
+  }
+ }
+}

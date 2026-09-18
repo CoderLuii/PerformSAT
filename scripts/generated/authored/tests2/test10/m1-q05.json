@@ -1,0 +1,29 @@
+{
+ "id": 5,
+ "question": "A 4,800-kilogram shipment is packed into two shipping containers whose masses are in the ratio 3 to 5. What is the mass, in kilograms, of the lighter container?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$600$"
+  },
+  {
+   "id": "B",
+   "text": "$1{,}800$"
+  },
+  {
+   "id": "C",
+   "text": "$2{,}400$"
+  },
+  {
+   "id": "D",
+   "text": "$3{,}000$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "stops at the value of one part, 4800 divided by 8, without multiplying by 3",
+  "C": "splits the shipment evenly, 4800 divided by 2, ignoring the 3 to 5 ratio",
+  "D": "gives the heavier container, 5 parts, instead of the lighter one"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Sum of Parts Ratio**\n\n**Choice B is correct.** The ratio $3$ to $5$ splits the shipment into $3 + 5 = 8$ equal parts. Each part is $\\frac{4{,}800}{8} = 600$ kilograms, and the lighter container holds $3$ parts.\n\n**The Fast Way (~15s):** $\\frac{3}{8}$ of $4{,}800$ is $1{,}800$ kilograms.\n\n**The Full Solution:**\nStep 1: Add the ratio numbers to find the total number of parts: $3 + 5 = 8$.\nStep 2: Divide the total mass by the number of parts: $\\frac{4{,}800}{8} = 600$ kilograms per part.\nStep 3: The lighter container holds $3$ parts: $3(600) = 1{,}800$ kilograms. Check: the other container holds $5(600) = 3{,}000$, and $1{,}800 + 3{,}000 = 4{,}800$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($600$): this is one part, $\\frac{4{,}800}{8}$, reported before multiplying by the $3$ in the ratio.\n* Choice C ($2{,}400$): this splits the shipment in half, which would require a $1$ to $1$ ratio, not $3$ to $5$.\n* Choice D ($3{,}000$): this is $5$ parts — the heavier container. The question asked for the lighter one.\n\n**Test Day Takeaway:** In a part-to-part ratio, first add the parts to get the whole, then divide once. The per-part value does the rest."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 13,
+ "question": "A funicular railway climbs at a constant rate. A carriage is $86$ meters above the base station $30$ seconds after departure and $284$ meters above the base station $2.5$ minutes after departure. What is the carriage's rate of climb, in meters per minute?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$1.65$"
+  },
+  {
+   "id": "B",
+   "text": "$99$"
+  },
+  {
+   "id": "C",
+   "text": "$113.6$"
+  },
+  {
+   "id": "D",
+   "text": "$142$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "leaves both times in seconds, giving 198/120 = 1.65 meters per second",
+  "C": "divides the later height by the later time, 284/2.5, ignoring the first reading",
+  "D": "divides the later height rather than the change in height by the elapsed 2 minutes"
+ },
+ "correctAnswer": "B",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice B is correct.**\n\n**The Fast Way (~30s):** In minutes the readings are $(0.5, 86)$ and $(2.5, 284)$, so the rate is $\\frac{284 - 86}{2.5 - 0.5} = \\frac{198}{2} = 99$.\n\n**The Full Solution:**\nStep 1: Put both times in the unit the answer asks for. $30$ seconds is $0.5$ minute, so the two readings are the points $(0.5, 86)$ and $(2.5, 284)$.\nStep 2: A constant rate of climb is the slope between those points: $\\frac{\\text{change in height}}{\\text{change in time}} = \\frac{284 - 86}{2.5 - 0.5}$.\nStep 3: That is $\\frac{198}{2} = 99$ meters per minute. Check: starting from $86$ meters at $0.5$ minute, two more minutes at $99$ meters per minute adds $198$ meters, reaching $284$ meters. ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($1.65$): keeps both times in seconds, computing $\\frac{198}{120}$. That is the rate in meters per SECOND, and the question asks for meters per minute.\n* Choice C ($113.6$): divides the later height by the later time, $\\frac{284}{2.5}$, treating the carriage as if it had started at the base station at time $0$.\n* Choice D ($142$): subtracts the times correctly but forgets to subtract the heights, computing $\\frac{284}{2}$.\n\n**Test Day Takeaway:** Convert every time to the unit named in the question BEFORE you subtract, and make sure both subtractions actually happen — a slope needs a change on top and a change on the bottom."
+}

@@ -1,0 +1,82 @@
+/* WeekPracticeStrip — Monday-to-Sunday sparks. Tokens fall back to the hv2
+   home palette so the strip reads the same anywhere it mounts. */
+.wps {
+  --wps-surface: var(--hv2-surface, #FFFFFF);
+  --wps-surface-2: var(--hv2-surface-2, #F1EEE7);
+  --wps-line: var(--hv2-line, #E7E3D9);
+  --wps-line-strong: var(--hv2-line-strong, #D9D4C7);
+  --wps-text: var(--hv2-text, #15171C);
+  --wps-text-3: var(--hv2-text-3, #9A9EA6);
+  --wps-orange: var(--hv2-orange, #EA580C);
+  --wps-orange-2: var(--hv2-orange-2, #F2865C);
+  --wps-purple: var(--hv2-purple, #7C5CC7);
+  --wps-lime: var(--hv2-lime, #C2E83A);
+  font-family: var(--hv2-font-body, 'Hanken Grotesk', 'Inter', system-ui, sans-serif);
+  background: var(--wps-surface); border: 1px solid var(--wps-line); border-radius: 18px;
+  padding: 14px 18px 12px; margin-bottom: 14px;
+  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+}
+.wps-head { display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1 1 200px; }
+.wps-eyebrow { font-weight: 700; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--wps-text-3); }
+.wps-caption { font-size: 14px; font-weight: 600; color: var(--wps-text); }
+.wps-days { display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; flex: 0 0 auto; }
+.wps-day { display: flex; flex-direction: column; align-items: center; gap: 5px; width: 40px; }
+.wps-day-icon {
+  width: 40px; height: 40px; border-radius: 999px; box-sizing: border-box;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 2px solid var(--wps-line); background: var(--wps-surface); color: var(--wps-orange-2);
+}
+.wps-day-letter { font-weight: 700; font-size: 12px; line-height: 1; letter-spacing: .04em; color: var(--wps-text-3); }
+.wps-spark { display: block; }
+.wps-spark:not(.is-ghost) { width: 46px; height: 46px; margin: -3px; }
+
+/* practiced: the spark replaces the circle and pops in, one after another */
+.wps-day.is-done .wps-day-icon, .wps-day.is-today-done .wps-day-icon { border-color: transparent; background: none; }
+.wps-day.is-done .wps-spark, .wps-day.is-today-done .wps-spark {
+  transform-origin: 50% 50%;
+  animation: wps-pop .55s cubic-bezier(.2, .9, .3, 1.35) both;
+  animation-delay: calc(var(--i, 0) * 70ms);
+}
+.wps-day.is-done .wps-day-letter, .wps-day.is-today-done .wps-day-letter { color: var(--wps-text); }
+/* today, not yet practiced: orange ring with a ghosted spark inside */
+.wps-day.is-today .wps-day-icon { border-color: var(--wps-orange); }
+.wps-day.is-today .wps-day-letter, .wps-day.is-today-done .wps-day-letter { color: var(--wps-orange); }
+.wps-day.is-today-done .wps-day-icon { box-shadow: 0 0 0 2px var(--wps-orange); border-radius: 999px; }
+/* missed: soft grey disc; ahead: hollow ring */
+.wps-day.is-missed .wps-day-icon { background: var(--wps-surface-2); border-color: var(--wps-surface-2); }
+.wps-day.is-upcoming .wps-day-icon { border-color: var(--wps-line-strong); background: transparent; }
+
+@keyframes wps-pop {
+  0% { transform: scale(0) rotate(-30deg); opacity: 0; }
+  60% { transform: scale(1.18) rotate(6deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wps-day .wps-spark { animation: none !important; }
+}
+
+/* Bare variant — no card; sits in the Home header under the tabs. */
+.wps.is-bare { background: none; border: 0; border-radius: 0; padding: 0; margin: 18px 0 0; gap: 18px; }
+.wps.is-bare .wps-head { flex: 0 1 auto; gap: 2px; }
+.wps.is-bare .wps-eyebrow { font-size: 10.5px; }
+.wps.is-bare .wps-caption { font-size: 13.5px; }
+
+/* Aside variant — under the countdown card, matching its width. Sparks
+   spread across the card width, caption beneath, no eyebrow. */
+.wps.is-aside { background: none; border: 0; border-radius: 0; padding: 2px 6px 0; margin: 0; flex-direction: column; align-items: stretch; gap: 6px; }
+.wps.is-aside .wps-days { width: 100%; max-width: 340px; justify-content: space-between; gap: 4px; }
+.wps.is-aside .wps-day { width: 36px; gap: 4px; }
+.wps.is-aside .wps-day-icon { width: 36px; height: 36px; }
+.wps.is-aside .wps-spark:not(.is-ghost) { width: 42px; height: 42px; }
+.wps.is-aside .wps-head { flex: 0 0 auto; }
+.wps.is-aside .wps-eyebrow { display: none; }
+.wps.is-aside .wps-caption { font-size: 12.5px; color: var(--hv2-text-2, #5B6068); }
+
+@media (max-width: 640px) {
+  .wps { padding: 12px 14px 12px; }
+  .wps-days { width: 100%; justify-content: space-between; gap: 4px; }
+  .wps-day { width: 36px; }
+  .wps-day-icon { width: 36px; height: 36px; }
+  .wps-spark:not(.is-ghost) { width: 42px; height: 42px; }
+  .wps.is-bare { margin-top: 14px; gap: 10px; }
+}

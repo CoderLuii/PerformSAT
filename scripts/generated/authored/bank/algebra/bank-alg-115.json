@@ -1,0 +1,6 @@
+{
+ "id": "bank-alg-115",
+ "question": "At a regional blood drive, the number of whole-blood units $w$ and plasma units $p$ collected satisfy $w + p = 48$ and $w - p = 12$. How many plasma units were collected?",
+ "correctAnswer": "18",
+ "explanation": "**SAT Pattern: System of Equations — Elimination**\n\n**The correct answer is $18$.**\n\n**The Fast Way (~15s):** Subtracting the second equation from the first eliminates $w$: $2p = 36$, so $p = 18$.\n\n**The Full Solution:**\nStep 1: Line the equations up: $w + p = 48$ and $w - p = 12$. The $w$-terms are identical, so subtracting removes them.\nStep 2: Subtract the second from the first: $(w + p) - (w - p) = 48 - 12$, which gives $2p = 36$.\nStep 3: Divide by $2$: $p = 18$. Check by back-substituting: $w = 48 - 18 = 30$, and $30 - 18 = 12$. $\\checkmark$\n\n**Common Mistakes:** Adding the equations instead, which gives $2w = 60$ and the whole-blood count $30$ rather than the plasma count; subtracting in the reverse order and reporting $-18$; halving $48$ to get $24$ and ignoring the $12$-unit difference entirely.\n\n**Test Day Takeaway:** When a variable appears with the same coefficient in both equations, subtract to eliminate it, then confirm which variable the question actually asks for."
+}

@@ -1,0 +1,29 @@
+{
+ "id": 3,
+ "question": "The equations $4x+6y=30$ and $10x+15y=c$ constrain the numbers of liters $x$ and $y$ of two solvents in a blend, and every blend allowed by one equation is allowed by the other. What is the value of $c$?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$12$"
+  },
+  {
+   "id": "B",
+   "text": "$30$"
+  },
+  {
+   "id": "C",
+   "text": "$36$"
+  },
+  {
+   "id": "D",
+   "text": "$75$"
+  }
+ ],
+ "distractorNotes": {
+  "A": "divides 30 by the multiplier 2.5 instead of multiplying",
+  "B": "assumes equivalent equations must carry the same constant",
+  "C": "adds the difference of the x-coefficients (10 - 4 = 6) to 30"
+ },
+ "correctAnswer": "D",
+ "explanation": "**SAT Pattern: System Equivalence Check**\n\n**Choice D is correct.**\n\n**The Fast Way (~20s):** $10x+15y$ is $2.5$ times $4x+6y$, so the constant must be scaled the same way: $c=2.5(30)=75$.\n\n**The Full Solution:**\nStep 1: Two linear equations have exactly the same solutions only when one is a nonzero multiple of the other, so every coefficient must be scaled by one common factor $k$.\nStep 2: Find $k$ from the $x$-terms: $10=k(4)$ gives $k=2.5$. Confirm with the $y$-terms: $2.5(6)=15$ ✓, so the left sides really are proportional.\nStep 3: Apply the same $k$ to the constant: $c=2.5(30)=75$. Check: dividing $10x+15y=75$ by $2.5$ returns $4x+6y=30$, the original equation ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($12$): divides by the multiplier, $\\frac{30}{2.5}=12$, scaling the constant the wrong direction.\n* Choice B ($30$): assumes equivalent equations must show the same constant, but the whole equation was multiplied by $2.5$.\n* Choice C ($36$): adds the coefficient gap $10-4=6$ to $30$ instead of multiplying by the common ratio.\n\n**Test Day Takeaway:** Same-solution systems are proportional lines. Find the multiplier from one pair of coefficients, verify it on the second pair, then apply that SAME multiplier to the constant."
+}

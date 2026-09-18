@@ -1,0 +1,86 @@
+{
+  "id": "bank-ps-432",
+  "question": "The scatterplot shows the concentration $y$, in micrograms per liter, of a dissolved mineral in each of $9$ water samples taken at depth $x$, in meters, along with the line of best fit $\\hat{y}=2x+5$. For the sample taken at a depth of $6$ meters, what is the value of $y-\\hat{y}$?",
+  "diagram": {
+    "type": "scatterplot",
+    "params": {
+      "points": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          6,
+          22
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          8,
+          22
+        ],
+        [
+          9,
+          22
+        ]
+      ],
+      "xMin": 0,
+      "xMax": 10,
+      "yMin": 0,
+      "yMax": 28,
+      "xGridStep": 1,
+      "yGridStep": 2,
+      "xLabelStep": 2,
+      "yLabelStep": 4,
+      "xLabel": "Depth (meters)",
+      "yLabel": "Concentration (mcg/L)",
+      "bestFitLine": {
+        "slope": 2,
+        "intercept": 5
+      }
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-5$"
+    },
+    {
+      "id": "B",
+      "text": "$5$"
+    },
+    {
+      "id": "C",
+      "text": "$10$"
+    },
+    {
+      "id": "D",
+      "text": "$17$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "computes $\\hat{y}-y$, reversing the order of subtraction.",
+    "C": "drops the constant term, using $\\hat{y}=12$.",
+    "D": "reports the predicted concentration instead of the residual."
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Residual**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** At $x=6$ the plotted point has $y=22$ and the line gives $\\hat{y}=2(6)+5=17$, so the residual is $22-17=5$.\n\n**The Full Solution:**\nStep 1: Read the observed value from the scatterplot at $x=6$: $y=22$ micrograms per liter.\nStep 2: Evaluate the line of best fit at $x=6$: $\\hat{y}=2(6)+5=17$.\nStep 3: The residual is $y-\\hat{y}=22-17=5$. Check: the point sits above the line, so a positive residual is expected. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-5$): computes $17-22$, which would describe a point below the line.\n* Choice C ($10$): uses $\\hat{y}=2(6)=12$, forgetting the $+5$ in the model.\n* Choice D ($17$): reports the predicted value read off the line rather than the gap between the point and the line.\n\n**Test Day Takeaway:** A residual is a vertical gap: point minus line. Its sign tells you which side of the line the observation falls on."
+}

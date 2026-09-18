@@ -1,0 +1,29 @@
+{
+  "question": "For exactly two constants $b$, the graph of $y=3x^{2}+bx+27$ has a single point in common with the $x$-axis. What is the sum of those two constants?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-18$"
+    },
+    {
+      "id": "B",
+      "text": "$0$"
+    },
+    {
+      "id": "C",
+      "text": "$18$"
+    },
+    {
+      "id": "D",
+      "text": "$36$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "gave only the negative value of b",
+    "C": "gave only the positive value of b",
+    "D": "added the absolute values of the two solutions instead of the solutions themselves"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Discriminant Analysis**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** One point in common means the discriminant is $0$, so $b^{2}=4(3)(27)=324$, $b=\\pm 18$, and the sum is $0$.\n\n**The Full Solution:**\nStep 1: The graph meets the $x$-axis where $3x^{2}+bx+27=0$, and a single point of contact means that equation has exactly one real solution.\nStep 2: Exactly one real solution requires $b^{2}-4(3)(27)=0$, so $b^{2}=324$ and $b=18$ or $b=-18$.\nStep 3: Their sum is $18+(-18)=0$. Check: $3x^{2}+18x+27=3(x+3)^{2}$ and $3x^{2}-18x+27=3(x-3)^{2}$, each touching the $x$-axis once ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($-18$): gives only the negative value of $b$.\n* Choice C ($18$): gives only the positive value of $b$.\n* Choice D ($36$): adds the absolute values instead of the values themselves.\n\n**Test Day Takeaway:** A squared parameter always yields a matched pair $\\pm v$, so their sum is $0$ — check whether the question wants one value or both.",
+  "id": "bank-am-351"
+}

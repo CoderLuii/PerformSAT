@@ -1,0 +1,49 @@
+{
+  "id": 9,
+  "question": "The three plotted points lie on the graph of $y=f(x)$ in the $xy$-plane, and the function $g$ is defined by $g(x)=-2f(x)+1$. What is the largest value that $g$ takes at those three inputs?",
+  "diagram": {
+    "type": "coordinatePoints",
+    "params": {
+      "points": [
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -4
+        ],
+        [
+          6,
+          1
+        ]
+      ]
+    }
+  },
+  "choices": [
+    {
+      "id": "A",
+      "text": "$-5$"
+    },
+    {
+      "id": "B",
+      "text": "$-1$"
+    },
+    {
+      "id": "C",
+      "text": "$8$"
+    },
+    {
+      "id": "D",
+      "text": "$9$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "uses the largest value of f, ignoring the sign reversal",
+    "B": "uses the largest input instead of comparing outputs",
+    "C": "omits the constant"
+  },
+  "correctAnswer": "D",
+  "hint": "Apply the rule at each plotted point before deciding which one wins.",
+  "explanation": "**Choice D is correct.**\n\n**The Fast Way (~40s):** A negative multiplier reverses the ranking, so the least output of $f$ wins: $g(2)=-2(-4)+1=9$.\n\n**The Full Solution:**\nStep 1: The plotted points give $f(-2)=3$, $f(2)=-4$, and $f(6)=1$.\nStep 2: Applying the rule at each input: $g(-2)=-2(3)+1=-5$, $g(2)=-2(-4)+1=9$, and $g(6)=-2(1)+1=-1$.\nStep 3: Comparing $-5$, $9$, and $-1$, the largest value is $9$. Check: multiplying by $-2$ reverses order, so the smallest value of $f$, namely $-4$, produces the largest value of $g$. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($-5$): starts from the greatest value of $f$, $f(-2)=3$, and computes $-2(3)+1=-5$; the negative factor changes which point wins.\n* Choice B ($-1$): evaluates at the greatest input, $x=6$, rather than comparing the three outputs: $-2(1)+1=-1$.\n* Choice C ($8$): picks the right point but stops after multiplying: $-2(-4)=8$, with the $+1$ never applied.\n\n**Test Day Takeaway:** A negative vertical stretch flips the ranking of outputs, so the minimum of $f$ becomes the maximum of the transformed function."
+}

@@ -1,34 +1,39 @@
 {
-  "type": "multiple-choice",
-  "difficulty": "medium",
-  "band": 3,
-  "domain": "craft-and-structure",
-  "skill": "words-in-context",
-  "question": "Which choice completes the text with the most logical and precise word or phrase?",
-  "choices": [
-    {
-      "id": "A",
-      "text": "vanished"
-    },
-    {
-      "id": "B",
-      "text": "originated"
-    },
-    {
-      "id": "C",
-      "text": "rippled"
-    },
-    {
-      "id": "D",
-      "text": "lingered"
-    }
-  ],
-  "correctAnswer": "C",
-  "explanation": "The correct answer is C, \"rippled.\" The phrase \"through the whole network\" calls for a verb of spreading, and the point is that a problem at one end of the route spread its effects across the entire system. \"Rippled,\" with its image of a disturbance moving outward, fits precisely. \"Vanished\" reverses the sense, since the disruption spread rather than disappeared; \"lingered\" describes staying in place rather than moving through a network; and \"originated\" names where a disruption begins, not how it travels outward.",
-  "passage": "Historians once treated the caravan routes linking Ottoman Bursa to the silk markets of Iran as a simple conduit, valued only for the goods that moved along them. Newer studies of customs ledgers and merchants' letters complicate that picture. The same routes, these studies show, also carried credit arrangements, legal conventions, and price information, so a disruption at one end ______ through the whole network in ways a purely physical account of cargo cannot explain.",
-  "_meta": {
-    "anchor": "Ottoman overland trade: routes as carriers of credit, law, price information"
+ "type": "multiple-choice",
+ "difficulty": "medium",
+ "band": 3,
+ "domain": "craft-and-structure",
+ "skill": "words-in-context",
+ "question": "Which choice completes the text with the most logical and precise word or phrase?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "appropriated"
   },
-  "id": 1104,
-  "module": 1
+  {
+   "id": "B",
+   "text": "recovered"
+  },
+  {
+   "id": "C",
+   "text": "extrapolated"
+  },
+  {
+   "id": "D",
+   "text": "withheld"
+  }
+ ],
+ "correctAnswer": "C",
+ "explanation": "**Choice C is correct.** Conclusions once \"extrapolated\" from a scattering of coastal stations — extended by inference from limited data — can now be checked against direct measurements of the open sea.\n\n**The Full Solution:**\n- The problem the passage sets up: tide gauges exist only at coastlines, leaving \"most of the ocean's surface\" without records.\n- Any claim about the whole ocean therefore had to be stretched outward from those few coastal points — precisely what \"extrapolated\" means.\n- The satellite record now covers the open ocean directly, so those extended inferences can finally be tested.\n\n**Why the other choices are wrong:**\n- A: \"Appropriated\" implies taking the stations' data as one's own, not extending limited data into claims about the unmeasured open sea.\n- B: \"Recovered\" implies retrieving something that already existed; conclusions about the unmeasured open sea were inferred, not retrieved.\n- D: \"Withheld\" implies someone refused to release the findings — no such actor appears in the passage.",
+ "passage": "Tide gauges measure sea level only where a coastline offers a place to mount them, so for most of the ocean's surface, historical records are simply blank. Satellite altimeters, which time a radar pulse's round trip from orbit to the sea surface, changed that: since the early 1990s they have swept over nearly the whole global ocean every ten days. Findings once ______ from a scattering of coastal stations can now be checked against measurements of the open sea itself.",
+ "_meta": {
+  "anchor": "satellite altimetry of oceans — coastal tide gauges vs. global radar coverage",
+  "distractors": {
+   "A": "wrong relation — taking data vs. inferring beyond it",
+   "B": "near-miss — implies retrieval of existing data rather than inference",
+   "D": "imports an actor who refuses release"
+  }
+ },
+ "id": 1104,
+ "module": 1
 }

@@ -1,0 +1,29 @@
+{
+ "id": "bank-geo-011",
+ "question": "A segment has one endpoint at the center of a circle and its other endpoint on the circle. Which term describes this segment?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "A chord"
+  },
+  {
+   "id": "B",
+   "text": "A diameter"
+  },
+  {
+   "id": "C",
+   "text": "A radius"
+  },
+  {
+   "id": "D",
+   "text": "A tangent"
+  }
+ ],
+ "distractorNotes": {
+  "A": "a chord has both endpoints on the circle",
+  "B": "a diameter passes through the center with both endpoints on the circle",
+  "D": "a tangent touches the circle at one point and is a line, not a segment to the center"
+ },
+ "correctAnswer": "C",
+ "explanation": "**SAT Pattern: Circle Vocabulary**\n\n**Choice C is correct.**\n\n**The Fast Way (~10s):** A segment from the center to a point on the circle is a radius, by definition.\n\n**The Full Solution:**\nStep 1: Every point of a circle is the same distance from the center, and that distance is the radius.\nStep 2: The described segment joins the center to one point of the circle, so its length is exactly that fixed distance.\nStep 3: The segment is therefore a radius.\n\nVerification: two radii drawn in opposite directions from the center form a diameter, which is twice as long, so the described segment cannot be the diameter. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A (A chord): a chord has both endpoints on the circle, not one at the center.\n* Choice B (A diameter): a diameter is a chord through the center; it has length $2r$, twice the described segment.\n* Choice D (A tangent): a tangent is a line that meets the circle at exactly one point and does not pass through the center.\n\n**Test Day Takeaway:** Sort circle terms by where the endpoints sit: center to circle is a radius, circle to circle is a chord, and a chord through the center is a diameter."
+}

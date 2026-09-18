@@ -1,0 +1,29 @@
+{
+  "id": "bank-am-007",
+  "question": "In the $xy$-plane, the graph of $y = (5 - k)x^2 + 8x + 3$ opens downward, where $k$ is a constant. Which of the following describes all possible values of $k$?",
+  "choices": [
+    {
+      "id": "A",
+      "text": "$k < 5$"
+    },
+    {
+      "id": "B",
+      "text": "$k > 5$"
+    },
+    {
+      "id": "C",
+      "text": "$k < -5$"
+    },
+    {
+      "id": "D",
+      "text": "$k \\neq 5$"
+    }
+  ],
+  "distractorNotes": {
+    "A": "solves the condition for opening UPWARD",
+    "C": "moves $k$ across the inequality without changing its sign correctly",
+    "D": "only rules out the case where the graph stops being a parabola"
+  },
+  "correctAnswer": "B",
+  "explanation": "**SAT Pattern: Parameter Constraint on Leading Coefficient**\n\n**Choice B is correct.**\n\n**The Fast Way (~20s):** Downward means the leading coefficient is negative: $5 - k < 0$, so $k > 5$.\n\n**The Full Solution:**\nStep 1: The leading coefficient of $y = (5 - k)x^2 + 8x + 3$ is $5 - k$.\nStep 2: A parabola opens downward exactly when its leading coefficient is negative, so $5 - k < 0$.\nStep 3: Add $k$ to both sides: $5 < k$, that is, $k > 5$. Check with $k = 9$: the coefficient is $5 - 9 = -4 < 0$, and the graph opens downward. Check with $k = 1$: the coefficient is $4 > 0$, and it opens upward. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice A ($k < 5$): this makes $5 - k > 0$, which is the upward-opening case.\n* Choice C ($k < -5$): this comes from solving $5 - k < 0$ as $-k < -5$ and then dropping the sign flip.\n* Choice D ($k \\neq 5$): $k = 5$ does have to be excluded — at $k = 5$ the graph is a line, not a parabola — but that alone allows values like $k = 1$, which open upward.\n\n**Test Day Takeaway:** When a parameter sits in the leading coefficient, translate the picture into one inequality about that whole coefficient, then solve it like any linear inequality."
+}

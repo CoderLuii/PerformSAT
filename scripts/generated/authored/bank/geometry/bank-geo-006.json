@@ -1,0 +1,29 @@
+{
+ "question": "A bathymetric survey vessel maps a seamount by running a series of straight legs, and at the end of one leg the vessel turns through an angle of $216$ degrees before beginning the next leg. The navigation log records every course change as a radian measure rather than a degree measure. What measure, in radians, does the log record for this turn?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$\\frac{3\\pi}{5}$"
+  },
+  {
+   "id": "B",
+   "text": "$\\frac{5\\pi}{6}$"
+  },
+  {
+   "id": "C",
+   "text": "$\\frac{6\\pi}{5}$"
+  },
+  {
+   "id": "D",
+   "text": "$\\frac{12\\pi}{5}$"
+  }
+ ],
+ "correctAnswer": "C",
+ "distractorNotes": {
+  "A": "divides by 360 instead of 180",
+  "B": "inverts the conversion fraction, computing 180 over 216 times pi",
+  "D": "multiplies by 2 pi and divides by 180, doubling the measure"
+ },
+ "explanation": "**SAT Pattern: Degrees to Radians**\n\n**Choice C is correct.**\n\n**The Fast Way (~15s):** Multiply by $\\frac{\\pi}{180}$: $216 \\cdot \\frac{\\pi}{180} = \\frac{6\\pi}{5}$ radians.\n\n**The Full Solution:**\nStep 1: Degrees convert to radians through $180$ degrees $= \\pi$ radians, so multiply the degree measure by $\\frac{\\pi}{180}$.\nStep 2: The log entry is $\\frac{216\\pi}{180}$ radians, and both numbers are divisible by $36$: $\\frac{216}{180} = \\frac{6}{5}$.\nStep 3: The turn is $\\frac{6\\pi}{5}$ radians. Check: $\\frac{6\\pi}{5} \\approx 3.77$, just past $\\pi \\approx 3.14$, matching a turn a little past half a circle ✓\n\n**Why the wrong answers are tempting:**\n* Choice A ($\\frac{3\\pi}{5}$): divides by $360$, the degrees in a full turn, instead of by $180$.\n* Choice B ($\\frac{5\\pi}{6}$): flips the conversion fraction and multiplies by $\\frac{180}{216}$.\n* Choice D ($\\frac{12\\pi}{5}$): multiplies by $2\\pi$ and divides by $180$, doubling the correct measure.\n\n**Test Day Takeaway:** Degrees to radians is one multiplication by $\\frac{\\pi}{180}$ — and any angle past $180$ degrees must come out larger than $\\pi$.",
+ "id": "bank-geo-006"
+}

@@ -1,0 +1,29 @@
+{
+ "id": 17,
+ "question": "In a greenhouse trial, the model $q(n) = -4n^2 + 24n + c$ predicts the yield of a tomato plot, in kilograms per square meter, when $n$ units of nitrogen per square meter are added, where $c$ is a constant. The greatest yield the model predicts is $41$ kilograms per square meter. What yield does the model predict when no nitrogen is added?",
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$32$"
+  },
+  {
+   "id": "C",
+   "text": "$41$"
+  },
+  {
+   "id": "D",
+   "text": "$149$"
+  }
+ ],
+ "correctAnswer": "A",
+ "distractorNotes": {
+  "B": "completes the square without factoring -4 out of the n-terms, solving 9+c=41 to get c=32 instead of c=5",
+  "C": "reports the greatest yield, 41, as the yield at n=0, treating the maximum as the constant term",
+  "D": "places the vertex at n=-3 by using b/(2a) with the wrong sign, solving -36-72+c=41 to get c=149"
+ },
+ "explanation": "**SAT Pattern: Vertex Form Maximum**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** The model peaks at $n = \\frac{-24}{2(-4)} = 3$, where $q(3) = 36 + c$. Then $36 + c = 41$ gives $c = 5$, and the yield with no nitrogen is $q(0) = c = 5$.\n\n**The Full Solution:**\nStep 1: The coefficient of $n^2$ is $-4$, so the graph opens downward and the greatest predicted yield occurs at the vertex, $n = \\frac{-24}{2(-4)} = 3$ units of nitrogen.\nStep 2: Evaluate there in terms of $c$: $q(3) = -4(9) + 24(3) + c = -36 + 72 + c = 36 + c$. The greatest yield is $41$ kilograms per square meter, so $36 + c = 41$ and $c = 5$.\nStep 3: No nitrogen added means $n = 0$, and $q(0) = -4(0)^2 + 24(0) + 5 = 5$ kilograms per square meter. Check by completing the square: $q(n) = -4(n - 3)^2 + 41$, which expands to $-4n^2 + 24n - 36 + 41 = -4n^2 + 24n + 5$ ✓\n\n**Why the wrong answers are tempting:**\n* Choice B ($32$): completes the square without factoring the $-4$ out of the $n$-terms, writing $-4(n - 3)^2 + 9 + c$ and solving $9 + c = 41$. The compensation is $+36$, not $+9$, because the $9$ inside the parentheses is multiplied by $-4$ on the way out.\n* Choice C ($41$): reports the greatest yield itself. That value is reached at $n = 3$ units of nitrogen, not at $n = 0$, so it cannot also be the yield with none added.\n* Choice D ($149$): puts the vertex at $n = -3$ by reading $\\frac{b}{2a}$ without the leading minus sign, then solves $-36 - 72 + c = 41$.\n\n**Test Day Takeaway:** A downward parabola takes its greatest value at $n = -\\frac{b}{2a}$: find that input, set the value there equal to the stated maximum to pin the unknown constant, and only then evaluate at the input the question actually names."
+}

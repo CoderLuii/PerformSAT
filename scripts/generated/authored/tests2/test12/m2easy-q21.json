@@ -1,0 +1,45 @@
+{
+ "id": 21,
+ "question": "A balloon-borne telescope rises at a constant rate after release from its launch pad. The table gives the instrument's altitude above sea level at two times after release. What is the telescope's rate of change of altitude, in meters per second?",
+ "questionTable": {
+  "headers": [
+   "Time since release (minutes)",
+   "Altitude above sea level (meters)"
+  ],
+  "rows": [
+   [
+    "$6.0$",
+    "$3{,}000$"
+   ],
+   [
+    "$16.0$",
+    "$6{,}000$"
+   ]
+  ]
+ },
+ "choices": [
+  {
+   "id": "A",
+   "text": "$5$"
+  },
+  {
+   "id": "B",
+   "text": "$6.25$"
+  },
+  {
+   "id": "C",
+   "text": "$50$"
+  },
+  {
+   "id": "D",
+   "text": "$300$"
+  }
+ ],
+ "distractorNotes": {
+  "B": "divides the later altitude by the later time in seconds, assuming the line passes through the origin",
+  "C": "divides the 3,000-meter rise by 60 instead of by the 600-second interval",
+  "D": "computes meters per minute and never converts to meters per second"
+ },
+ "correctAnswer": "A",
+ "explanation": "**SAT Pattern: Slope from Two Points**\n\n**Choice A is correct.**\n\n**The Fast Way (~40s):** The rise is $6{,}000 - 3{,}000 = 3{,}000$ meters over $16.0 - 6.0 = 10$ minutes, which is $600$ seconds, so the rate is $\\frac{3{,}000}{600} = 5$ meters per second.\n\n**The Full Solution:**\nStep 1: Take the two rows as the points $(6.0, 3{,}000)$ and $(16.0, 6{,}000)$, with time in minutes. The change in altitude is $6{,}000 - 3{,}000 = 3{,}000$ meters and the change in time is $16.0 - 6.0 = 10$ minutes.\nStep 2: Convert the time interval to the units the question asks for: $10$ minutes $\\times 60 = 600$ seconds.\nStep 3: Divide: $\\frac{3{,}000 \\text{ m}}{600 \\text{ s}} = 5$ meters per second. Check with the model: at $5$ meters per second the telescope gains $5(600) = 3{,}000$ meters between the two rows, matching the table. $\\checkmark$\n\n**Why the wrong answers are tempting:**\n* Choice B ($6.25$): computes $\\frac{6{,}000}{960}$, dividing the second altitude by the second time in seconds. That treats the altitude as $0$ at release; extending the line back to time $0$ gives $3{,}000 - 5(360) = 1{,}200$ meters, the pad's elevation above sea level.\n* Choice C ($50$): divides the $3{,}000$-meter rise by $60$, converting as though the interval were one minute rather than $10$ minutes.\n* Choice D ($300$): computes $\\frac{3{,}000}{10} = 300$ meters per MINUTE and stops, skipping the conversion the question requires.\n\n**Test Day Takeaway:** Slope is the change in output over the change in input — never an endpoint over an endpoint. Convert units inside the denominator before dividing, and reread the unit the answer must carry."
+}
